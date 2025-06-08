@@ -1,151 +1,134 @@
-# FastMCP Server Development Patterns
+## Solicit User Input for \[precise FastMCP server use case and context]
 
-## Overview
-Comprehensive patterns for building production-ready MCP (Model Context Protocol) servers using the FastMCP framework.
+To initiate scaffolding of a high-integrity FastMCP server instance, provide the following inputs:
 
-## The Prompt
+* **Application Context**: Clearly articulate the intended use case, including domain-specific workflows or automation tasks the server is expected to support.
+* **Toolset Definition**: Enumerate the categories of tools to be provisioned (e.g., semantic enrichment, system integration interfaces, orchestration triggers). Indicate whether each tool is stateless, stateful, or event-driven.
+* **Target API Corpus**: Supply the location(s) of technical specifications (e.g., OpenAPI, GraphQL schemas, or human-authored interface contracts) for any upstream or downstream APIs that the server will bind to.
 
-```
-You are an expert MCP server developer using the FastMCP framework. Create a production-ready MCP server following these established patterns:
+These directives will guide the precise formulation of tool declarations, input validation schemas, execution contexts, and prompt scaffolds in alignment with the system's operational semantics.
 
-## Core FastMCP Patterns
+---
 
-### 1. Server Initialization
+## Foundational Requirements
+
+* **Contractual Conformity**: The server must strictly comply with the FastMCP platform’s declarative constructs for registering tools, resources, and prompt interfaces.
+* **Security Formalism**: All externally-facing surfaces must incorporate path normalization, input sanitization, and bounded execution zones to mitigate attack surfaces.
+* **Concurrency Semantics**: All tool operations must be natively asynchronous, facilitating scalable event loop concurrency for I/O-bound routines.
+* **Container Integrity**: Deployment targets must use minimal, reproducible, and non-root Docker images instrumented with liveness and readiness probes.
+* **Error Taxonomy**: Use canonical fault classes (e.g., `MCPError`) with metadata to facilitate structured telemetry, debugging, and user-facing diagnostics.
+* **Environmental Configuration Discipline**: Externalize configuration parameters through environment variables, applying defensive defaults to ensure fault tolerance and testability.
+
+---
+
+## Engineering Patterns for Server Composition
+
+### **1. Server Initialization Contract**
+
 ```python
 from fastmcp import FastMCP
 
-# Initialize server with proper metadata
 mcp = FastMCP(
     name="your-server-name",
     version="1.0.0",
-    description="Brief description of server functionality"
+    description="Concise statement of system purpose and functional boundary"
 )
 ```
 
-### 2. Tool Implementation Pattern
+### **2. Tool Registration Paradigm**
+
 ```python
 @mcp.tool()
-async def tool_name(
-    parameter: str = Field(description="Parameter description")
-) -> str:
-    """Tool description for LLM understanding.
-    
-    Args:
-        parameter: Detailed parameter explanation
-        
-    Returns:
-        Structured response with status and data
-        
-    Raises:
-        MCPError: When operation fails
-    """
+async def tool_name(parameter: str = Field(description="Input specification")) -> str:
     try:
-        # Validate inputs
         if not parameter:
-            raise MCPError("Parameter cannot be empty")
-            
-        # Perform operation
+            raise MCPError("Missing required parameter")
+
         result = await some_async_operation(parameter)
-        
-        # Return structured response
+
         return {
             "status": "success",
             "result": result,
             "timestamp": datetime.now().isoformat()
         }
     except Exception as e:
-        raise MCPError(f"Tool failed: {str(e)}")
+        raise MCPError(f"Execution failure: {str(e)}")
 ```
 
-### 3. Resource Implementation Pattern
+### **3. Resource Endpoint Schema**
+
 ```python
 @mcp.resource("scheme://path/{resource_id}")
 async def resource_handler(resource_id: str) -> str:
-    """Resource description and usage.
-    
-    Args:
-        resource_id: Identifier for the resource
-        
-    Returns:
-        Resource content as string
-    """
-    # Validate resource exists
     if not await resource_exists(resource_id):
         raise MCPError(f"Resource {resource_id} not found")
-        
-    # Return resource content
+
     return await load_resource_content(resource_id)
 ```
 
-### 4. Prompt Template Pattern
+### **4. Prompt Construction Scaffold**
+
 ```python
 @mcp.prompt()
-async def prompt_template(
-    context: str = Field(description="Context for prompt generation")
-) -> str:
-    """Generate structured prompt for specific use case.
-    
-    Args:
-        context: Context information for prompt customization
-        
-    Returns:
-        Formatted prompt template
-    """
+async def prompt_template(context: str = Field(description="Dynamic payload for contextualization")) -> str:
     return f"""
-# Structured Prompt Template
+# Prompt Blueprint
 
 ## Context
 {context}
 
-## Instructions
-1. Analyze the provided context
-2. Generate appropriate response
-3. Follow best practices
+## Directives
+1. Interpret the contextual input
+2. Derive operational intent
+3. Respond using canonical structure
 
-## Output Format
-Provide structured output with:
-- Analysis summary
-- Recommendations
-- Next steps
+## Output Schema
+- Summary of key insights
+- Suggested course of action
+- Follow-up queries if applicable
 """
 ```
 
-## Security Best Practices
+---
 
-### 1. Input Validation
+## Feature Extensions (New)
+
+* **Type Enforcement Layer**: All tool inputs must implement Pydantic-backed schema definitions to facilitate runtime introspection and linting.
+* **Async Fault Isolation**: All asynchronous boundaries must be surrounded by timeout constraints and structured cancellation logic.
+* **Prompt Dynamism**: Prompt generation should accommodate runtime context fusion, memory references, or user-injected modifiers.
+
+---
+
+## Secure Execution Architecture
+
+### **Path and Size Validation**
+
 ```python
 def validate_path(path: str, base_dir: str = "/workspace") -> str:
-    """Validate and normalize file paths."""
-    # Resolve path and ensure it's within base directory
     resolved = os.path.abspath(os.path.join(base_dir, path))
     if not resolved.startswith(os.path.abspath(base_dir)):
-        raise MCPError("Path traversal attempt detected")
+        raise MCPError("Path traversal violation")
     return resolved
 
 def validate_file_size(file_path: str, max_size: int = 10 * 1024 * 1024) -> None:
-    """Validate file size limits."""
     if os.path.getsize(file_path) > max_size:
-        raise MCPError(f"File too large (max {max_size} bytes)")
+        raise MCPError(f"File size exceeds permitted limit of {max_size} bytes")
 ```
 
-### 2. Error Handling
+### **Error Formalization**
+
 ```python
 class MCPError(Exception):
-    """Custom exception for MCP operations."""
     def __init__(self, message: str, code: str = "GENERAL_ERROR"):
         self.message = message
         self.code = code
         super().__init__(message)
 ```
 
-### 3. Async Command Execution
+### **Command Execution Sandbox**
+
 ```python
-async def run_command(
-    command: str,
-    cwd: str = "/workspace",
-    timeout: int = 30
-) -> dict:
-    """Execute shell command safely."""
+async def run_command(command: str, cwd: str = "/workspace", timeout: int = 30) -> dict:
     try:
         process = await asyncio.create_subprocess_shell(
             command,
@@ -154,12 +137,9 @@ async def run_command(
             stderr=asyncio.subprocess.PIPE,
             env={"PATH": os.environ.get("PATH", "")}
         )
-        
-        stdout, stderr = await asyncio.wait_for(
-            process.communicate(),
-            timeout=timeout
-        )
-        
+
+        stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=timeout)
+
         return {
             "command": command,
             "cwd": cwd,
@@ -171,95 +151,97 @@ async def run_command(
     except asyncio.TimeoutError:
         raise MCPError(f"Command timed out after {timeout}s")
     except Exception as e:
-        raise MCPError(f"Command execution failed: {str(e)}")
+        raise MCPError(f"Subprocess execution error: {str(e)}")
 ```
 
-## Production Deployment
+---
 
-### 1. Docker Configuration
+## Production Deployment Pipeline
+
+### **Container Blueprint**
+
 ```dockerfile
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
-# Create non-root user
 RUN groupadd -r mcpuser && useradd -r -g mcpuser mcpuser
-
-# Set working directory
 WORKDIR /app
 
-# Copy requirements and install dependencies
 COPY requirements.txt .
 RUN uv pip install --system --no-cache -r requirements.txt
 
-# Copy application code
 COPY . .
 RUN chown -R mcpuser:mcpuser /app
-
-# Switch to non-root user
 USER mcpuser
 
-# Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import fastmcp; print('healthy')"
 
-# Run server
 CMD ["python", "-u", "server.py"]
 ```
 
-### 2. Environment Configuration
-```python
-import os
-from typing import Optional
+### **Runtime Configuration Schema**
 
+```python
 class Config:
-    """Server configuration from environment variables."""
-    
     def __init__(self):
-        self.debug: bool = os.getenv("DEBUG", "false").lower() == "true"
-        self.log_level: str = os.getenv("LOG_LEVEL", "INFO")
-        self.workspace_dir: str = os.getenv("WORKSPACE_DIR", "/workspace")
-        self.max_file_size: int = int(os.getenv("MAX_FILE_SIZE", "10485760"))
-        self.command_timeout: int = int(os.getenv("COMMAND_TIMEOUT", "30"))
+        self.debug = os.getenv("DEBUG", "false").lower() == "true"
+        self.log_level = os.getenv("LOG_LEVEL", "INFO")
+        self.workspace_dir = os.getenv("WORKSPACE_DIR", "/workspace")
+        self.max_file_size = int(os.getenv("MAX_FILE_SIZE", "10485760"))
+        self.command_timeout = int(os.getenv("COMMAND_TIMEOUT", "30"))
 
 config = Config()
 ```
 
-Requirements:
-- Use FastMCP framework with proper decorators
-- Implement comprehensive error handling
-- Follow security best practices
-- Include structured logging
-- Add proper input validation
-- Create production-ready Docker configuration
-- Write comprehensive tests
-- Document all functions and classes
-```
+---
 
-## Key Components
+## Reference Documentation
 
-### FastMCP Decorators
-- `@mcp.tool()` - Define callable tools
-- `@mcp.resource()` - Handle resource requests
-- `@mcp.prompt()` - Create prompt templates
+The following authoritative sources should guide development and runtime behavior:
 
-### Security Features
-- Path traversal protection
-- File size validation
-- Command execution sandboxing
-- Input sanitization
+* [FastMCP Python SDK Reference](https://github.com/fastmcp/fastmcp-sdk-python)
+* [FastMCP Developer Guide](https://docs.fastmcp.dev/guide/server-development)
+* [FastMCP Prompt Specification](https://docs.fastmcp.dev/specs/prompts)
+* [FastMCP Tool and Resource Patterns](https://docs.fastmcp.dev/specs/tools-resources)
+* [FastMCP Containerization Best Practices](https://docs.fastmcp.dev/deployment/docker)
 
-### Production Features
-- Docker containerization
-- Structured logging
-- Environment-based configuration
-- Health checks
-- Non-root execution
+These resources should be ingested into the operational context by LLMs supporting autonomous configuration and validation.
 
-## Benefits
-- **Rapid Development**: High-level abstractions
-- **Security First**: Built-in validation and sandboxing
-- **Production Ready**: Docker, logging, monitoring
-- **Type Safety**: Full TypeScript-style type hints
-- **Testing Support**: Built-in test utilities
+---
 
-## Tags
-`fastmcp` `mcp-server` `python` `async` `production` `docker` `security` `testing`
+## Project Deliverables
+
+### **Artifacts**
+
+* `fastmcp-server.md`: Architecture and deployment instructions
+
+### **Configuration Interfaces**
+
+* `server.py`: Entrypoint logic for FastMCP service lifecycle
+* `mcp-config.yaml`: Runtime schema for operational parameters
+
+### **Containerization Manifests**
+
+* `Dockerfile`: Hardened container declaration
+* `requirements.txt`: Version-locked dependency list
+
+---
+
+## Evaluation Criteria
+
+* ✅ FastMCP initialization completes with all metadata validated
+* ✅ Tool definitions are typed, documented, and schema-enforced
+* ✅ All inputs are constrained and validated in local execution contexts
+* ✅ Timeout and error boundaries are consistently implemented
+* ✅ Docker image operates in non-root, health-verified context
+* ✅ Runtime environment is fully configurable via typed schema
+
+---
+
+## Quality Standards
+
+* **Layered Security Enforcement**: Defense-in-depth model applied to all ingress points
+* **Telemetry Rigor**: All exceptions and anomalies must be logged using structured semantics
+* **Deterministic Build Workflow**: CI/CD processes must produce reproducible binaries and state artifacts
+* **Fault Resilience**: Tool failures should degrade predictably with full traceability
+* **Documentation Fidelity**: All exposed classes and functions must carry doctrinal docstrings for introspection and linting
