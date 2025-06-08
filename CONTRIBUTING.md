@@ -164,3 +164,5 @@ Contributions are reviewed for:
 **Thank you for contributing to the AI prompting community! 🚀**
 
 Your contributions help developers, security professionals, and AI engineers work more effectively with AI assistants.
+
+---
