@@ -1,312 +1,158 @@
-# Docker Production Patterns
+Create a **comprehensive production-ready Docker containerization solution** for `Ask User for Application/Service Type and Technology Stack`.
 
-## Overview
-Comprehensive Docker patterns for production deployments with security, performance, and reliability best practices.
+Initialize it as a **enterprise-grade, secure Docker deployment** with multi-stage builds, comprehensive security controls, monitoring integration, and scalable orchestration patterns.
 
-## The Prompt
+## Core Requirements
 
-```
-Create production-ready Docker configurations with comprehensive security and performance optimizations:
+### Container Architecture
+- **Base Images**: Minimal, security-hardened base images (Alpine, Distroless, or official slim variants)
+- **Multi-stage builds**: Optimized build process with separate build and runtime stages
+- **Image layering**: Efficient layer caching and minimal final image size
+- **Platform support**: Multi-architecture builds (AMD64, ARM64) using Docker Buildx
 
-## 1. Multi-Stage Production Dockerfile
+### Security Implementation  
+- **Non-root execution**: Dedicated application user with specific UID/GID
+- **File system security**: Read-only root filesystem with necessary writable mounts
+- **Capability management**: Minimal Linux capabilities with explicit drops and adds
+- **Security scanning**: Integrated vulnerability scanning in build pipeline
+- **Secrets management**: Proper handling of sensitive data without embedding in images
 
-```dockerfile
-# Multi-stage build for production optimization
-FROM python:3.12-slim-bookworm AS builder
+## Enhanced Security & Performance
 
-# Install build dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        build-essential \
-        curl \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+### Runtime Security Controls
+- **Security options**: `no-new-privileges`, AppArmor/SELinux integration
+- **Resource constraints**: Memory limits, CPU quotas, process limits (ulimits)
+- **Network isolation**: Custom networks with controlled communication
+- **Volume security**: Proper mount permissions and access controls
+- **Health monitoring**: Comprehensive health checks with failure handling
 
-# Install UV package manager for faster builds
-RUN pip install --no-cache-dir uv
+### Performance Optimization
+- **Build optimization**: Layer caching strategies, .dockerignore configuration
+- **Runtime efficiency**: Minimal dependencies, optimized entrypoint scripts
+- **Resource management**: Appropriate memory reservations and CPU allocations
+- **Startup optimization**: Fast container startup and graceful shutdown handling
+- **Volume management**: Persistent data handling and temporary filesystem configuration
 
-# Set working directory
-WORKDIR /build
+### Monitoring & Observability
+- **Logging configuration**: Structured logging with rotation and retention policies
+- **Metrics collection**: Application and container metrics exposure
+- **Health endpoints**: Liveness, readiness, and startup probe implementations
+- **Debugging support**: Non-production debugging capabilities with security controls
 
-# Copy requirements first for better caching
-COPY requirements.txt .
-COPY requirements-prod.txt .
+## Advanced Features (New)
 
-# Install Python dependencies
-RUN uv pip install --system --no-cache-dir -r requirements-prod.txt
+### Orchestration & Deployment
+- **Docker Compose**: Production-ready compose configuration with profiles
+- **Kubernetes manifests**: Deployment, Service, ConfigMap, and Secret resources
+- **Zero-downtime deployment**: Rolling update strategies and deployment validation
+- **Scaling patterns**: Horizontal scaling support with load balancing
 
-# Copy source code
-COPY . .
+### Development Workflow Enhancement
+- **Multi-environment support**: Development, staging, and production configurations
+- **CI/CD integration**: Automated build, test, and deployment pipelines
+- **Local development**: Developer-friendly local setup with hot reloading
+- **Testing framework**: Container testing with security and functionality validation
 
-# Build application (if needed)
-RUN python -m compileall .
+### Enterprise Integration
+- **Registry management**: Private registry integration with authentication
+- **Policy enforcement**: OPA/Gatekeeper policies for compliance
+- **Backup strategies**: Data persistence and disaster recovery planning
+- **Compliance features**: Audit logging, GDPR/HIPAA compliance considerations
 
-# Production stage
-FROM python:3.12-slim-bookworm AS production
+### Container Optimization
+- **Size optimization**: Multi-stage builds, dependency minimization
+- **Security hardening**: CIS Docker Benchmark compliance
+- **Performance tuning**: JVM tuning (if applicable), connection pooling
+- **Caching strategies**: Application-level and infrastructure caching
 
-# Security updates and minimal runtime dependencies
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y --no-install-recommends \
-        ca-certificates \
-        curl \
-        dumb-init \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/* /var/tmp/*
+## Implementation Strategy
 
-# Create non-root user with specific UID/GID
-RUN groupadd -r -g 1001 appuser && \
-    useradd -r -g appuser -u 1001 -d /app -s /bin/bash appuser && \
-    mkdir -p /app /var/log/app /tmp/app && \
-    chown -R appuser:appuser /app /var/log/app /tmp/app
+### MCP Tool Optimization
+- **Use `create_or_update_file`** for individual file creation in structured approach
+- **Leverage `push_files`** for bulk operations when creating complete solutions
+- **Handle directory structure** systematically with proper organization
+- **Systematic delivery**: Dockerfile → Compose → Kubernetes → CI/CD pipeline
 
-# Set working directory
-WORKDIR /app
+### Container Build Process
+1. **Security scan source code** for vulnerabilities and secrets
+2. **Multi-stage Dockerfile** with optimized layer structure
+3. **Build automation** with version tagging and metadata injection
+4. **Security scanning** of built images before registry push
+5. **Deployment validation** with automated testing
+6. **Documentation generation** with usage examples and troubleshooting
 
-# Copy Python packages from builder stage
-COPY --from=builder /usr/local/lib/python3.12/site-packages/ /usr/local/lib/python3.12/site-packages/
-COPY --from=builder /usr/local/bin/ /usr/local/bin/
+### Validation & Testing
+- **Dockerfile linting**: hadolint validation for best practices
+- **Security scanning**: Trivy, Clair, or similar tools for vulnerability assessment
+- **Container testing**: Docker container structure tests
+- **Integration testing**: End-to-end testing with health checks
+- **Performance testing**: Load testing and resource utilization validation
+- **Compliance validation**: Security benchmark compliance checking
 
-# Copy application code with proper ownership
-COPY --from=builder --chown=appuser:appuser /build/ .
+### Quality Assurance
+- **Build reproducibility**: Consistent builds across environments
+- **Error handling**: Meaningful error messages and recovery procedures
+- **Resource efficiency**: Optimal resource utilization patterns
+- **Documentation quality**: Comprehensive setup and troubleshooting guides
 
-# Set secure file permissions
-RUN chmod -R 755 /app && \
-    chmod -R 644 /app/*.py /app/*.txt /app/*.md 2>/dev/null || true && \
-    chmod +x /app/entrypoint.sh 2>/dev/null || true
+## Deliverables
 
-# Switch to non-root user
-USER appuser
+### Core Container Files
+- `Dockerfile` - Multi-stage production Dockerfile with security hardening
+- `docker-compose.yml` - Production compose configuration with full stack
+- `docker-compose.override.yml` - Development overrides and local configurations
+- `.dockerignore` - Optimized build context exclusions
 
-# Environment variables
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONPATH=/app \
-    PATH=/home/appuser/.local/bin:$PATH \
-    HOME=/home/appuser
+### Security & Configuration
+- `entrypoint.sh` - Secure entrypoint script with signal handling
+- `healthcheck.sh` - Comprehensive health check implementation
+- `configs/` - Configuration templates and environment-specific settings
+- `secrets/` - Secret management templates and rotation procedures
 
-# Expose port (non-privileged)
-EXPOSE 8000
+### Orchestration & Deployment
+- `k8s/` - Kubernetes manifests with best practices
+- `helm/` - Helm chart for parameterized deployments (if applicable)
+- `deploy/` - Deployment scripts and automation
+- `monitoring/` - Prometheus, Grafana, and alerting configurations
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:8000/health || exit 1
+### Documentation & Examples
+- `README.md` - Comprehensive documentation with setup and usage examples
+- `docs/SECURITY.md` - Security considerations and compliance information
+- `docs/DEPLOYMENT.md` - Deployment procedures and troubleshooting
+- `docs/DEVELOPMENT.md` - Local development setup and contribution guidelines
 
-# Use dumb-init for proper signal handling
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["python", "-u", "server.py"]
-```
+### CI/CD & Automation
+- `.github/workflows/` - GitHub Actions for automated builds and deployments
+- `scripts/` - Build, test, and deployment automation scripts
+- `tests/` - Container structure tests and integration test suites
+- `CHANGELOG.md` - Version history and breaking changes documentation
 
-## 2. Production Docker Compose
+### Validation Features
+- **Container security**: CIS Docker Benchmark compliance validation
+- **Image optimization**: Size limits, layer count optimization
+- **Runtime validation**: Health check reliability and performance
+- **Network security**: Port exposure and communication validation
+- **Data persistence**: Volume management and backup verification
 
-```yaml
-version: '3.8'
+## Success Criteria
 
-services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: production
-      args:
-        - BUILD_DATE=${BUILD_DATE:-$(date -u +'%Y-%m-%dT%H:%M:%SZ')}
-        - VCS_REF=${VCS_REF:-$(git rev-parse --short HEAD)}
-    
-    image: "myapp:${TAG:-latest}"
-    container_name: myapp-production
-    restart: unless-stopped
-    
-    ports:
-      - "127.0.0.1:8000:8000"  # Bind to localhost only
-    
-    environment:
-      - APP_ENV=production
-      - LOG_LEVEL=INFO
-      - WORKERS=4
-      - TIMEOUT=30
-    
-    volumes:
-      # Application data (read-only)
-      - ./data:/app/data:ro
-      # Logs directory
-      - app-logs:/var/log/app
-    
-    networks:
-      - app-network
-    
-    # Security configurations
-    security_opt:
-      - no-new-privileges:true
-    
-    cap_drop:
-      - ALL
-    
-    cap_add:
-      - NET_BIND_SERVICE  # Only if needed for port 80/443
-    
-    read_only: true
-    
-    tmpfs:
-      - /tmp:noexec,nosuid,size=100m
-      - /var/tmp:noexec,nosuid,size=50m
-    
-    ulimits:
-      nproc: 65535
-      nofile:
-        soft: 20000
-        hard: 40000
-    
-    # Resource limits
-    mem_limit: 512m
-    mem_reservation: 256m
-    cpus: '1.0'
-    
-    # Health check configuration
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
-    
-    # Logging configuration
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
-        labels: "service,environment"
-        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+✅ **Functional**: Container runs securely in production with all services operational  
+✅ **Secured**: Comprehensive security controls implemented with vulnerability scanning  
+✅ **Monitored**: Full observability stack with metrics, logs, and alerts configured  
+✅ **Tested**: Complete test suite covering security, functionality, and performance  
+✅ **Scalable**: Horizontal scaling capabilities with load balancing and service discovery  
+✅ **Documented**: Production-ready documentation with troubleshooting guides  
+✅ **Automated**: CI/CD pipeline with automated builds, tests, and deployments  
+✅ **Compliant**: Security standards compliance with audit trail capabilities  
+✅ **Maintainable**: Clear structure for updates, patching, and dependency management  
+✅ **Performant**: Optimized for production workloads with resource efficiency
 
-# Network definitions
-networks:
-  app-network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.20.0.0/16
-          gateway: 172.20.0.1
+## Quality Standards
 
-# Volume definitions
-volumes:
-  app-logs:
-    driver: local
-```
-
-## 3. Production Build Scripts
-
-### build.sh (Linux/macOS)
-```bash
-#!/bin/bash
-set -euo pipefail
-
-# Configuration
-IMAGE_NAME="myapp"
-REGISTRY="registry.company.com"
-TAG="${1:-latest}"
-BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-VCS_REF=$(git rev-parse --short HEAD)
-VERSION=$(cat VERSION 2>/dev/null || echo "unknown")
-
-echo "🐳 Building production Docker image..."
-echo "Image: $REGISTRY/$IMAGE_NAME:$TAG"
-echo "Build Date: $BUILD_DATE"
-echo "VCS Ref: $VCS_REF"
-echo "Version: $VERSION"
-
-# Security scan before build
-echo "🔍 Running security checks..."
-if command -v trivy &> /dev/null; then
-    trivy fs --severity HIGH,CRITICAL .
-else
-    echo "⚠️  Trivy not installed, skipping security scan"
-fi
-
-# Build multi-platform image
-echo "🔨 Building Docker image..."
-docker buildx build \
-    --platform linux/amd64,linux/arm64 \
-    --target production \
-    --build-arg BUILD_DATE="$BUILD_DATE" \
-    --build-arg VCS_REF="$VCS_REF" \
-    --build-arg VERSION="$VERSION" \
-    --label "org.opencontainers.image.created=$BUILD_DATE" \
-    --label "org.opencontainers.image.revision=$VCS_REF" \
-    --label "org.opencontainers.image.version=$VERSION" \
-    --tag "$REGISTRY/$IMAGE_NAME:$TAG" \
-    --tag "$REGISTRY/$IMAGE_NAME:$VCS_REF" \
-    --push \
-    .
-
-# Security scan of built image
-echo "🔍 Scanning built image for vulnerabilities..."
-if command -v trivy &> /dev/null; then
-    trivy image --severity HIGH,CRITICAL "$REGISTRY/$IMAGE_NAME:$TAG"
-else
-    echo "⚠️  Trivy not installed, skipping image scan"
-fi
-
-# Test the image
-echo "🧪 Testing built image..."
-docker run --rm \
-    --name "$IMAGE_NAME-test" \
-    --user 1001:1001 \
-    --read-only \
-    --tmpfs /tmp:noexec,nosuid,size=100m \
-    --security-opt no-new-privileges:true \
-    --cap-drop ALL \
-    "$REGISTRY/$IMAGE_NAME:$TAG" \
-    python -c "import sys; print(f'Python {sys.version}'); print('✅ Image test passed')"
-
-echo "✅ Build completed successfully!"
-echo "📦 Image: $REGISTRY/$IMAGE_NAME:$TAG"
-echo "🏷️  Tags: $TAG, $VCS_REF"
-```
-
-Requirements:
-- Use multi-stage builds for optimized production images
-- Implement comprehensive security controls (non-root user, read-only filesystem, capability dropping)
-- Add proper health checks and monitoring integration
-- Include resource limits and security options
-- Implement secrets management
-- Add comprehensive logging configuration
-- Include security scanning in build pipeline
-- Provide zero-downtime deployment scripts
-- Add monitoring and metrics collection
-- Follow container security best practices
-```
-
-## Key Security Features
-
-### Container Security
-- **Non-root Execution**: Dedicated user with specific UID/GID
-- **Read-only Filesystem**: Prevents runtime modifications
-- **Capability Dropping**: Removes unnecessary privileges
-- **Security Options**: No new privileges, AppArmor/SELinux
-- **Resource Limits**: Memory, CPU, and process restrictions
-
-### Network Security
-- **Custom Networks**: Isolated container communication
-- **Port Binding**: Localhost-only exposure
-- **Reverse Proxy**: SSL termination and routing
-- **Network Policies**: Traffic restriction and monitoring
-
-### Build Optimizations
-- **Multi-stage Builds**: Smaller production images
-- **Layer Caching**: Optimized build order
-- **UV Package Manager**: Faster dependency installation
-- **Multi-platform**: ARM64 and AMD64 support
-
-## Benefits
-- **Production Ready**: Enterprise-grade configurations
-- **Security First**: Comprehensive security controls
-- **Zero Downtime**: Rolling deployment support
-- **Monitoring**: Built-in observability
-- **Scalable**: Kubernetes-ready patterns
-- **Maintainable**: Clear documentation and automation
-
-## Tags
-`docker` `production` `security` `monitoring` `deployment` `containers` `devops`
+- **Security**: Every container runs as non-root with minimal privileges and regular vulnerability scanning
+- **Performance**: Optimized build times, minimal image sizes, and efficient resource utilization
+- **Reliability**: Comprehensive health checks, graceful degradation, and automated recovery procedures
+- **Documentation**: Every component documented with examples, troubleshooting, and best practices
+- **Maintainability**: Clear separation of concerns, version management, and update procedures
+- **Compliance**: Industry security standards compliance with audit logging and monitoring
+- **Automation**: Full CI/CD integration with quality gates and automated deployment validation
