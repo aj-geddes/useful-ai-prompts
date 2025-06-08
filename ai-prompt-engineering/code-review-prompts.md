@@ -1,216 +1,157 @@
-# Code Review Prompts
+Create a **comprehensive automated code review system** for `Ask User for Programming Language and Project Type` with enterprise-grade analysis capabilities.
 
-## Overview
-Structured prompts for generating comprehensive code reviews with focus on quality, security, and best practices.
+Initialize it as a **production-ready code review automation platform** with AI-powered analysis, security scanning, quality metrics, and team collaboration workflows.
 
-## The Prompt
+## Core Requirements
 
-```
-You are an expert code reviewer. Analyze the provided code and generate a comprehensive review following this structured approach:
+### Review Framework Architecture
+- **Multi-layer analysis**: Syntax, semantics, security, performance, and architectural review
+- **Language-specific rules**: Tailored analysis patterns for the specified programming language
+- **Customizable rulesets**: Configurable review criteria and severity levels
+- **Integration support**: CI/CD pipeline integration and IDE plugin compatibility
 
-## Code Review Framework
+### Analysis Categories
+- **Code quality**: Structure, readability, maintainability, and complexity analysis
+- **Security scanning**: OWASP compliance, vulnerability detection, and threat modeling
+- **Performance optimization**: Algorithm efficiency, resource usage, and bottleneck identification
+- **Best practices compliance**: Language-specific conventions and industry standards
+- **Documentation analysis**: Code comments, API documentation, and inline help quality
 
-### 1. Initial Assessment
-- **Purpose**: Understand what the code is supposed to do
-- **Scope**: Identify the components and their interactions
-- **Context**: Consider the broader application or system
+## Enhanced Security & Quality Assessment
 
-### 2. Quality Analysis
+### Advanced Security Analysis
+- **Static Application Security Testing (SAST)**: Comprehensive vulnerability scanning
+- **Dependency analysis**: Third-party library security assessment and license compliance
+- **Secrets detection**: API keys, passwords, and sensitive data exposure prevention
+- **Injection attack prevention**: SQL, NoSQL, command, and script injection vulnerability detection
+- **Authentication & authorization**: Access control and permission validation
 
-#### Code Structure & Organization
-- Is the code well-organized and logically structured?
-- Are functions and classes appropriately sized and focused?
-- Is there proper separation of concerns?
-- Are naming conventions consistent and meaningful?
+### Quality Metrics & Standards
+- **Code complexity metrics**: Cyclomatic complexity, cognitive complexity, and maintainability index
+- **Test coverage analysis**: Unit test coverage, integration test gaps, and quality assessment
+- **Technical debt measurement**: Code smells, refactoring opportunities, and legacy code assessment
+- **Performance profiling**: Memory usage patterns, execution time analysis, and optimization opportunities
+- **Architectural compliance**: Design pattern usage, SOLID principles, and modularity assessment
 
-#### Readability & Maintainability
-- Is the code self-documenting with clear variable and function names?
-- Are comments useful and not redundant?
-- Is the complexity manageable and justified?
-- Would a new developer easily understand this code?
+### Team Collaboration Features
+- **Review workflow automation**: Automated reviewer assignment and escalation protocols
+- **Knowledge sharing**: Code explanation generation and learning resource recommendations
+- **Progress tracking**: Review completion metrics, team performance analytics, and improvement trends
+- **Communication integration**: Slack, Teams, and email notification systems
 
-#### Best Practices Compliance
-- Does the code follow language-specific best practices?
-- Are design patterns used appropriately?
-- Is error handling comprehensive and appropriate?
-- Are there any code smells or anti-patterns?
+## Advanced Features (New)
 
-### 3. Security Review
+### AI-Powered Enhancement
+- **Intelligent code suggestions**: Context-aware improvement recommendations
+- **Automated fix generation**: Security patch suggestions and code optimization proposals
+- **Natural language explanations**: Plain English descriptions of complex code issues
+- **Learning system**: Adaptive rules based on team preferences and historical decisions
 
-#### Input Validation
-- Are all user inputs properly validated and sanitized?
-- Is there protection against injection attacks (SQL, command, etc.)?
-- Are file uploads and paths properly validated?
-- Is there proper bounds checking for arrays and collections?
+### Enterprise Integration
+- **LDAP/SSO integration**: Enterprise authentication and user management
+- **Compliance reporting**: SOC 2, ISO 27001, and industry-specific compliance validation
+- **Audit trail management**: Complete review history and decision tracking
+- **Custom dashboard creation**: Executive and team-level reporting interfaces
 
-#### Authentication & Authorization
-- Are authentication mechanisms implemented correctly?
-- Is authorization checked at appropriate points?
-- Are sensitive operations properly protected?
-- Is session management secure?
+### Development Workflow Optimization
+- **Pre-commit hooks**: Automated quality checks before code submission
+- **IDE integration**: Real-time feedback and inline suggestions
+- **Continuous monitoring**: Production code quality tracking and alerting
+- **Training module**: Developer education and best practices guidance
 
-#### Data Protection
-- Are passwords and secrets properly hashed/encrypted?
-- Is sensitive data properly protected in memory and storage?
-- Are cryptographic functions used correctly?
-- Is there proper data sanitization before output?
+### Advanced Analytics
+- **Predictive analysis**: Bug probability assessment and maintenance cost prediction
+- **Team performance insights**: Individual and team productivity metrics
+- **Code evolution tracking**: Codebase health trends and improvement recommendations
+- **Benchmark comparisons**: Industry standard comparisons and competitive analysis
 
-### 4. Performance Considerations
+## Implementation Strategy
 
-#### Algorithmic Efficiency
-- Are algorithms and data structures chosen appropriately?
-- Are there obvious performance bottlenecks?
-- Is there unnecessary computation or redundancy?
-- Are database queries optimized?
+### MCP Tool Optimization
+- **Use `create_or_update_file`** for individual configuration files and rule definitions
+- **Leverage `push_files`** for bulk creation of analysis scripts and documentation
+- **Handle integration setup** systematically with proper API configurations
+- **Systematic deployment**: Core engine → Rules → Integrations → Dashboard → Training
 
-#### Resource Management
-- Are resources (memory, files, connections) properly managed?
-- Is there potential for memory leaks?
-- Are expensive operations cached appropriately?
-- Is pagination implemented for large datasets?
+### Development Process
+1. **Requirements analysis** for specific language and project type characteristics
+2. **Rule engine development** with customizable analysis patterns
+3. **Integration framework** setup for CI/CD and development tools
+4. **Dashboard and reporting** system implementation
+5. **Testing and validation** with sample codebases
+6. **Documentation and training** material creation
 
-### 5. Testing & Reliability
+### Quality Assurance Process
+- **Rule validation**: Testing analysis rules against known code patterns
+- **Performance benchmarking**: System performance under various codebase sizes
+- **Integration testing**: CI/CD pipeline and IDE plugin functionality verification
+- **User acceptance testing**: Team workflow validation and usability assessment
+- **Security validation**: Review system security and access control testing
 
-#### Error Handling
-- Are all possible error conditions handled?
-- Are error messages helpful but not revealing sensitive information?
-- Is there proper logging for debugging and monitoring?
-- Are exceptions handled at appropriate levels?
+### Deployment Strategy
+- **Phased rollout**: Gradual team adoption with feedback integration
+- **Training program**: Developer onboarding and system usage education
+- **Support system**: Documentation, troubleshooting guides, and help desk setup
+- **Maintenance planning**: Update procedures and rule refinement processes
 
-#### Edge Cases
-- Are boundary conditions properly handled?
-- What happens with null/empty inputs?
-- Are there race conditions in concurrent code?
-- How does the code behave under stress?
+## Deliverables
 
-### 6. Review Output Format
+### Core Analysis Engine
+- `review-engine/` - Main analysis engine with language-specific processors
+- `rules/` - Configurable rule definitions and severity mappings
+- `plugins/` - Language-specific analysis plugins and extensions
+- `config/` - System configuration templates and environment settings
 
-## Code Review Summary
+### Security & Quality Modules
+- `security-scanner/` - SAST implementation and vulnerability detection
+- `quality-metrics/` - Code quality analysis and measurement tools
+- `dependency-analyzer/` - Third-party library security and license scanning
+- `performance-profiler/` - Performance analysis and optimization detection
 
-### Overall Assessment
-**Rating**: [Excellent/Good/Needs Improvement/Major Issues Required]
-**Summary**: [Brief overall assessment in 2-3 sentences]
+### Integration Components
+- `ci-cd-integration/` - Jenkins, GitHub Actions, GitLab CI integration scripts
+- `ide-plugins/` - VS Code, IntelliJ, and other IDE extension implementations
+- `api/` - REST API for external tool integration and data access
+- `webhooks/` - Event-driven integration for real-time notifications
 
-### Strengths
-- ✅ [List positive aspects of the code]
-- ✅ [Good practices observed]
-- ✅ [Well-implemented features]
+### User Interface & Reporting
+- `dashboard/` - Web-based review dashboard and analytics interface
+- `reports/` - Automated report generation and customizable templates
+- `notifications/` - Email, Slack, and Teams notification systems
+- `mobile/` - Mobile application for review management and approval
 
-### Issues Found
+### Documentation & Training
+- `docs/` - Comprehensive setup, configuration, and usage documentation
+- `training/` - Developer training materials and best practices guides
+- `examples/` - Sample configurations and integration examples
+- `troubleshooting/` - Common issues and resolution procedures
 
-#### 🔴 Critical Issues (Must Fix)
-- **Security**: [Security vulnerabilities that must be addressed]
-- **Bugs**: [Functional issues that could cause failures]
-- **Performance**: [Critical performance problems]
+### Testing & Validation
+- `tests/` - Comprehensive test suite for all system components
+- `benchmarks/` - Performance testing and validation scripts
+- `sample-projects/` - Test codebases for validation and demonstration
+- `compliance-tests/` - Security and compliance validation tools
 
-#### 🟡 Major Issues (Should Fix)
-- **Design**: [Architectural or design concerns]
-- **Maintainability**: [Code quality issues affecting long-term maintenance]
-- **Best Practices**: [Violations of important coding standards]
+## Success Criteria
 
-#### 🔵 Minor Issues (Consider Fixing)
-- **Style**: [Formatting and style inconsistencies]
-- **Documentation**: [Missing or inadequate comments/docs]
-- **Optimization**: [Minor performance improvements]
+✅ **Comprehensive**: Covers all aspects of code quality, security, and performance analysis  
+✅ **Automated**: Seamless integration with development workflows and CI/CD pipelines  
+✅ **Actionable**: Provides specific, implementable recommendations for code improvement  
+✅ **Scalable**: Handles codebases from small projects to enterprise-scale applications  
+✅ **Secure**: Implements robust security scanning and vulnerability detection  
+✅ **Collaborative**: Enables effective team review workflows and knowledge sharing  
+✅ **Measurable**: Provides quantifiable metrics for code quality and team performance  
+✅ **Compliant**: Meets industry standards and regulatory compliance requirements  
+✅ **Educational**: Helps developers learn and improve their coding practices  
+✅ **Maintainable**: Easy to update, configure, and extend for evolving requirements
 
-### Specific Recommendations
+## Quality Standards
 
-#### Code Changes
-```[language]
-// Before (problematic code)
-[current code]
-
-// After (improved code)
-[suggested improvement]
-```
-
-#### Security Enhancements
-- [Specific security improvements]
-- [Additional validation recommendations]
-- [Security best practices to implement]
-
-### Testing Recommendations
-- **Unit Tests**: [What should be unit tested]
-- **Integration Tests**: [Integration scenarios to test]
-- **Edge Cases**: [Specific edge cases to verify]
-- **Security Tests**: [Security testing recommendations]
-
-### Next Steps
-1. **Immediate Actions**: [Critical fixes required before merge]
-2. **Short-term Improvements**: [Issues to address in next iteration]
-3. **Long-term Considerations**: [Architectural improvements for future]
-```
-
-## Specialized Review Templates
-
-### Security-Focused Review
-```
-Focus on OWASP Top 10 vulnerabilities:
-1. Injection flaws (SQL, NoSQL, OS, LDAP)
-2. Broken authentication and session management
-3. Sensitive data exposure
-4. XML external entities (XXE)
-5. Broken access control
-6. Security misconfiguration
-7. Cross-site scripting (XSS)
-8. Insecure deserialization
-9. Using components with known vulnerabilities
-10. Insufficient logging and monitoring
-
-Security Checklist:
-- [ ] Input validation for all user inputs
-- [ ] Output encoding prevents XSS
-- [ ] Parameterized queries prevent SQL injection
-- [ ] Proper authentication and authorization
-- [ ] Encrypted sensitive data
-- [ ] No hardcoded secrets
-- [ ] Secure error handling
-- [ ] Session management security
-```
-
-### Performance Review
-```
-Analyze for performance bottlenecks:
-- Algorithm time/space complexity
-- Database query optimization
-- Memory usage patterns
-- Caching strategies
-- Concurrency and thread safety
-
-Performance Checklist:
-- [ ] Appropriate algorithm complexity
-- [ ] Optimized database queries
-- [ ] Proper resource management
-- [ ] Effective caching
-- [ ] Thread-safe concurrent operations
-```
-
-### API Review
-```
-Focus on API design and security:
-- RESTful principles and HTTP status codes
-- Input validation and sanitization
-- Consistent response formats
-- Authentication and authorization
-- Rate limiting and security headers
-- API documentation completeness
-
-API Checklist:
-- [ ] Proper HTTP methods and status codes
-- [ ] Input validation on all parameters
-- [ ] Consistent response structures
-- [ ] Authentication for protected endpoints
-- [ ] Authorization checks
-- [ ] Rate limiting implemented
-```
-
-## Benefits
-- **Comprehensive Coverage**: Systematic review of all code aspects
-- **Consistent Quality**: Standardized review process
-- **Security Focus**: Built-in security vulnerability detection
-- **Actionable Feedback**: Specific recommendations and examples
-- **Knowledge Transfer**: Educational for development teams
-- **Documentation**: Clear tracking of issues and improvements
-
-## Tags
-`code-review` `quality-assurance` `security` `best-practices` `development`
+- **Accuracy**: Review analysis must achieve >95% accuracy with minimal false positives
+- **Performance**: System must handle review requests within 30 seconds for typical code changes
+- **Reliability**: 99.9% uptime with comprehensive error handling and recovery procedures
+- **Security**: All code analysis performed in secure, isolated environments with audit trails
+- **Usability**: Intuitive interface requiring minimal training for developer adoption
+- **Extensibility**: Modular architecture supporting custom rules and third-party integrations
+- **Compliance**: Full audit trail and documentation meeting enterprise compliance requirements
+- **Scalability**: Support for teams from 5 to 500+ developers with consistent performance
