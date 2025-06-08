@@ -44,14 +44,6 @@
 - Well-tested with AI assistants
 - Professional quality output
 
-**Categories we need:**
-- Database design and optimization
-- API design and documentation
-- Frontend development patterns
-- Cloud platform specific prompts (AWS, Azure, GCP)
-- Machine learning and data science workflows
-- Mobile development patterns
-
 ### 2. Prompt Improvements
 
 **Enhancement areas:**
@@ -59,7 +51,6 @@
 - Improving clarity and structure
 - Adding edge case handling
 - Including more comprehensive error handling
-- Adding integration with additional tools
 
 ### 3. Documentation
 
@@ -67,15 +58,6 @@
 - Usage examples with different AI assistants
 - Troubleshooting guides
 - Best practices for prompt engineering
-- Integration guides with development tools
-
-### 4. Testing and Validation
-
-**Testing contributions:**
-- Test prompts with different AI assistants
-- Validate outputs for accuracy and completeness
-- Document compatibility and limitations
-- Report issues and edge cases
 
 ## 📝 Prompt Standards
 
@@ -180,3 +162,5 @@ Contributions are reviewed for:
 ---
 
 **Thank you for contributing to the AI prompting community! 🚀**
+
+Your contributions help developers, security professionals, and AI engineers work more effectively with AI assistants.
