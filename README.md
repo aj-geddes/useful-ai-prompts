@@ -17,7 +17,7 @@ Security-focused prompts for vulnerability analysis and best practices:
 
 ### 🏗️ Infrastructure
 Infrastructure and deployment automation prompts:
-- **[Terraform Module Documentation](infrastructure/terraform-module-documentation.md)** - terraform-docs formatted documentation with examples
+- **[Terraform Azure Module Documentation](infrastructure/azurerm-terraform-module-maker.md)** - terraform-docs formatted documentation with examples
 - **[Docker Production Patterns](infrastructure/docker-production-patterns.md)** - Production-ready Docker configurations with security and performance optimizations
 
 ### 🤖 AI Prompt Engineering
