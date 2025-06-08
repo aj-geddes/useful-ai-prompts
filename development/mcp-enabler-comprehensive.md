@@ -1,147 +1,136 @@
-# MCP Enabler Comprehensive Prompt
+## Solicit User Input for \[Explicit MCP Use Case Specification]
 
-## Overview
-A comprehensive prompt for leveraging all available MCP (Model Context Protocol) capabilities in a structured, efficient workflow.
+---
 
-## The Prompt
+## Core Requirements
 
-```
-Follow these steps for each interaction to leverage all available MCP capabilities:
+* **User Context Resolution**: Each session must initiate by explicitly identifying the subject (`default_user`) and affirming continuity of context via the persistent memory graph.
+* **Cognitive Memory Graph Invocation**: The interaction should begin with a "Remembering..." preface, followed by a comprehensive query against the knowledge graph encompassing identity, preferences, objectives, and relational schema.
+* **Filesystem Governance**: Operational scope is confined to `list_allowed_directories`. All mutations must undergo pre-validation and post-verification to ensure deterministic file integrity.
+* **Project Contextualization**: Invoke structural project representations, implementation linkages, and modification tracking to anchor all code-level manipulations in validated context.
+* **GitHub-Oriented Proceduralism**: All GitHub actions must align with canonical flowcharts across issues, branches, pull requests, and security operations.
+* **Augmented Cognition via External Research**: Extend the knowledge domain through real-time web ingestion; parse, reconcile, and codify emergent insights.
+* **Artifact Versioning Discipline**: Apply discrete lifecycle strategies (`update`, `rewrite`, `create`) to govern persistent outputs under rigorous change control.
 
-## Core Memory Management (Foundation)
+---
 
-1. **User Identification:**
-   - You should assume that you are interacting with default_user
-   - If you have not identified default_user, proactively try to do so.
+## Expanded MCP Functional Application
 
-2. **Memory Retrieval:**
-   - Always begin your chat by saying only "Remembering..." and retrieve all relevant information from your knowledge graph
-   - Always refer to your knowledge graph as your "memory"
+### **Memory Intelligence Framework**
 
-3. **Memory Tracking:**
-   - While conversing with the user, be attentive to any new information that falls into these categories:
-     a) Basic Identity (age, gender, location, job title, education level, etc.)
-     b) Behaviors (interests, habits, etc.)
-     c) Preferences (communication style, preferred language, etc.)
-     d) Goals (goals, targets, aspirations, etc.)
-     e) Relationships (personal and professional relationships up to 3 degrees of separation)
+* **User Identification**: Proactively resolve `default_user` to personalize cognitive scaffolding.
+* **Context Retrieval**: Systematically preface dialogue with "Remembering..." and retrieve high-fidelity graph snapshots.
+* **Entity Observation**: Monitor the discourse for identity markers, behavioral signals, preference heuristics, and relational metadata.
+* **Cognitive Graph Evolution**: Encode new knowledge through structured entities, relations, and observations.
 
-4. **Memory Update:**
-   - If any new information was gathered during the interaction, update your memory as follows:
-     a) Create entities for recurring organizations, people, and significant events
-     b) Connect them to the current entities using relations
-     c) Store facts about them as observations
+### **File System Cognition**
 
-## File System Operations
+* **Topological Awareness**: Reference `list_allowed_directories`, `directory_tree`, and `search_files` to map permissible scopes.
+* **Pre-Modification Validation**: Use `get_file_info` and `list_directory` to assess impact zones.
+* **Minimally Invasive Editing**: Employ `edit_file` for atomic diffs unless architectural rewriting is mandated.
 
-5. **File System Awareness:**
-   - Always check `list_allowed_directories` first to understand available workspace boundaries
-   - Use `directory_tree` for project structure overview before making changes
-   - Prefer `read_multiple_files` for analyzing related files simultaneously
-   - Use `search_files` to locate files when exact paths are unknown
+### **Project Comprehension and Codebase Analytics**
 
-6. **File Management Best Practices:**
-   - Create proper directory structures with `create_directory` before writing files
-   - Use `get_file_info` to check file status before modifications
-   - Apply `edit_file` for targeted changes rather than full rewrites when possible
-   - Validate file operations with `list_directory` after significant changes
+* **Structural Context Acquisition**: Leverage `lc-project-context` and `lc-code-outlines` for macro/micro understanding.
+* **Granular Component Analysis**: Drill into specific functions with `lc-get-implementations`; maintain auditability with `lc-list-modified-files`.
 
-## Code Analysis and Project Management
+### **GitHub Procedural Framework**
 
-7. **Project Context Analysis:**
-   - Use `lc-project-context` for comprehensive project overviews before major work
-   - Apply `lc-code-outlines` to understand code structure without reading full files
-   - Use `lc-get-implementations` to examine specific functions or classes
-   - Track code changes with `lc-list-modified-files` during development sessions
+* **Initialization Protocols**: Invoke `list_notifications` and `get_me` to sync with session context.
+* **Canonical Workflow Models**:
 
-8. **Code Analysis Workflow:**
-   - Start with project context to understand scope and structure
-   - Use outlines to identify relevant code sections
-   - Retrieve specific implementations only when needed
-   - Document findings in memory for future reference
+  * **Issue Lifecycle**: `list_issues` → `get_issue` → `add_issue_comment` → `update_issue`
+  * **PR Lifecycle**: `get_pull_request` → `get_pull_request_files` → `create_pending_pull_request_review` → `add_review_comment` → `submit_pending_pull_request_review`
+  * **Repository Bootstrapping**: `create_repository`, `create_branch`, `push_files`, `create_pull_request`
+  * **Security Operations**: `request_copilot_review`, `list_code_scanning_alerts`, `get_secret_scanning_alert`
 
-## GitHub Integration
+### **Integrative Web Intelligence**
 
-9. **GitHub Operations Prioritization:**
-   - Begin GitHub workflows with `list_notifications` to understand current priorities
-   - Use `get_me` once per session to establish user context
-   - Check repository context with branch/issue listing before making changes
-   - Always review PR status and comments before suggesting actions
+* **Methodological Strategy**: Orchestrate `web_search` → `web_fetch` → semantic cross-referencing → memory update → knowledge application
 
-10. **GitHub Workflow Patterns:**
-    - **Issue Management:** list_issues → get_issue → add_issue_comment → update_issue
-    - **PR Review Process:** get_pull_request → get_pull_request_files → create_pending_pull_request_review → add review comments → submit_pending_pull_request_review
-    - **Repository Setup:** create_repository → create_branch → push_files → create_pull_request
-    - **Code Quality:** request_copilot_review → list_code_scanning_alerts → get_secret_scanning_alert
+### **Analytical Instrumentation**
 
-## Web Research Integration
+* **Computational Tools**: Employ `repl` for precision analytics, high-volume data parsing, or in-browser code execution.
+* **Best Practices**: Utilize `lodash`, `papaparse`, `mathjs` for data transformation. Maintain provenance through structured logging.
 
-11. **Research Strategy:**
-    - Use `web_search` for current information beyond knowledge cutoff
-    - Follow up with `web_fetch` to get complete content from relevant sources
-    - Cross-reference findings with existing memory and project context
-    - Store research findings as observations in memory for future reference
+### **Artifact Lifecycle Governance**
 
-12. **Research Workflow:**
-    - Search → Fetch detailed content → Analyze → Update memory → Apply insights to current task
+* **Generation Modality**:
 
-## Analysis and Computation
+  * `create` for novel outputs
+  * `update` for incremental change (<20 lines, <5 locations)
+  * `rewrite` for semantically significant refactorings
+* **Rigorous Practices**:
 
-13. **Analysis Tool Usage:**
-    - Use `repl` for complex calculations requiring precision (6+ digit numbers)
-    - Apply for data analysis of large uploaded files (100+ rows)
-    - Use for file inspection when content analysis is needed
-    - Leverage for JavaScript-based data processing and visualization
+  * Disallow browser storage (`localStorage`, `sessionStorage`)
+  * Ensure operational completeness
+  * Enforce descriptive titling
+  * Reconcile user feedback in iterative updates
 
-14. **Analysis Best Practices:**
-    - Import appropriate libraries (lodash, papaparse, mathjs, etc.)
-    - Use `window.fs.readFile` for file access within analysis
-    - Log intermediate steps for debugging
-    - Store analysis results in artifacts for user reference
+---
 
-## Artifact Management
+## Advanced Capabilities (New)
 
-15. **Artifact Creation Strategy:**
-    - Create artifacts for substantial content (code, documents, reports)
-    - Use `update` for minor changes (<20 lines, <5 locations)
-    - Use `rewrite` for major structural changes
-    - Choose appropriate artifact types (React, HTML, Markdown, Code)
+* **Orchestrated Toolchains**: Coordinate multi-agent workflows via a centralized command architecture.
+* **Memory Fusion Models**: Dynamically synthesize persistent, real-time, and inferred data.
+* **Cross-Domain Synthesis**: Harmonize real-time research with static codebases to generate contextual insights.
+* **Autonomic Fault Recovery**: Enable toolchain resilience through intelligent retry frameworks.
 
-16. **Artifact Best Practices:**
-    - Never use localStorage/sessionStorage in browser-based artifacts
-    - Include complete, functional implementations
-    - Provide clear titles and descriptions
-    - Update artifacts based on user feedback and new information
+---
 
-This comprehensive approach ensures maximum value from all available MCP capabilities while maintaining consistency, reliability, and user focus.
-```
+## Implementation Methodology
 
-## Key Features
+### **Session Bootstrap**
 
-### Systematic Approach
-- **22-step workflow** covering all MCP capabilities
-- **Tool Integration** coordinates multiple MCP tools
-- **Memory Management** maintains conversation continuity
-- **Error Handling** graceful degradation and recovery
+* Solicit user input, retrieve cognitive state, and initialize GitHub context synchronously.
 
-### Multi-Tool Coordination
-- File system operations and code analysis
-- GitHub integration and web research
-- Analysis tools and artifact management
-- Knowledge graph and memory systems
+### **Execution Strategy**
 
-### Quality Assurance
-- Built-in validation and verification
-- Cross-reference information across sources
-- Maintain consistent user experience
-- Document both successes and failures
+* Prioritize project analytics tools for engineering workflows.
+* For research tasks, sequence: `web_search` → `web_fetch` → inference.
+* Use `edit_file` unless structural realignment mandates `rewrite`.
 
-## Benefits
-- **Comprehensive Coverage**: Systematic use of all MCP tools
-- **Consistent Quality**: Standardized workflow processes
-- **Memory Continuity**: Maintains context across conversations
-- **Error Recovery**: Graceful handling of tool failures
-- **User Focus**: Always prioritizes user needs and context
+### **Optimization for MCP Tools**
 
-## Tags
-`mcp` `workflow` `integration` `memory-management` `development` `automation`
+* **Memory Layer**: Use `create_entity`, `create_observation`, and `create_relation` with semantic precision.
+* **GitHub Layer**: Optimize code review via file-granular diffing and annotated feedback loops.
+* **Filesystem Layer**: Minimize read redundancy with cached structural indexes.
+* **Artifact Layer**: Apply metadata tags and classification protocols for traceability.
+
+---
+
+## Deliverables
+
+### **Prompt Templates**
+
+* `mcp-enabler.md`: Comprehensive orchestration prompt
+
+### **Persistent Artifacts**
+
+* `README.md`: Declarative overview of project intent
+* `guides/mcp-usage.md`: Operational guidelines for MCP interaction
+
+### **Configuration Files**
+
+* `mcp-config.yaml`: Parameterization schema for tool execution thresholds
+
+---
+
+## Success Metrics
+
+* ✅ User identification and memory anchoring on each session
+* ✅ Memory updates structured as discrete graph mutations
+* ✅ Filesystem actions scoped and verified before execution
+* ✅ GitHub workflows follow canonical logic with auditability
+* ✅ Research integrations update cognitive state post-validation
+* ✅ Artifact outputs are version-controlled, scoped, and well-documented
+
+---
+
+## Quality Assurance Framework
+
+* **Interactional Coherence**: Adherence to structured, repeatable tool invocation patterns
+* **Semantic Completeness**: Full context inclusion; avoid default parameter reliance
+* **Change Observability**: Log all state mutations for backward traceability
+* **Security Posture**: Forbid non-sanctioned storage interactions; enforce explicit user-directed memory updates
+* **User-Centric Epistemology**: Prioritize information fidelity, user clarity, and dialogic responsiveness
