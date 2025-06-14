@@ -1,45 +1,267 @@
 Temperature: 0
 
-Review the entire codebase in this repository and generate factual, evidence-based documentation. Generate ONLY documentation that can be directly supported by evidence in the code. This is a deterministic task where creativity and variation are NOT desired.
+Review the entire codebase in this repository and generate factual, evidence-based documentation with professional Mermaid diagrams using a consistent dark handdrawn style. Generate ONLY documentation and diagrams that can be directly supported by evidence in the code.
 
 1. README.md - Based EXCLUSIVELY on actual repository contents:
    
    ## Header Section
    - Project name (extract directly from package.json, setup.py, pom.xml, or similar manifest files)
-   - Status badges - Include ONLY for CI/CD systems with configuration files present:
-     * GitHub Actions badges: Only if .github/workflows/*.yml exists
-     * CircleCI badges: Only if .circleci/config.yml exists
-     * Jenkins badges: Only if Jenkinsfile exists
-     * Test coverage badge: Only if coverage configuration exists
-     * Release version: Only if version is explicitly defined in the codebase
-     * Dependency status: Only if dependabot.yml or similar exists
+   - Status badges - Include ONLY for CI/CD systems with configuration files present
    
    ## Core Content
    - Project description: Use EXACT description from manifest files or main module docstrings
+   - High-level Mermaid architecture diagram showing the system architecture:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.node rect, .node circle, .node polygon, .node path { stroke-width: 2px; stroke-dasharray: 3,3; } .nodeLabel { font-family: monospace; } .edgeLabel { font-family: monospace; } #flowchart line, .path, #statediagram-barbEnd, path.messageLineC { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+     }}%%
+     flowchart TD
+       A[Module A] -.-> B{Component B}
+       B -.->|Option 1| C[Component C]
+       B -.->|Option 2| D[Component D]
+       C -.-> E[Output]
+       D -.-> E
+     ```
    - Features list: ONLY features with corresponding implemented code
    - Installation instructions: Based SOLELY on actual setup scripts and declared dependencies
    - Configuration: Document ONLY environment variables and options actually referenced in code
+
+2. Architecture Documentation:
+   - Component diagram showing actual system structure:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.node rect, .node circle, .node polygon, .node path { stroke-width: 2px; stroke-dasharray: 3,3; } .nodeLabel { font-family: monospace; } .edgeLabel { font-family: monospace; } #flowchart line, .path, #statediagram-barbEnd, path.messageLineC { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+     }}%%
+     flowchart TD
+       subgraph FE[Frontend]
+         UI[User Interface]
+         Logic[Client Logic]
+       end
+       subgraph BE[Backend]
+         API[API Layer]
+         Service[Service Layer]
+         DB[(Database)]
+       end
+       UI -.-> Logic
+       Logic -.-> API
+       API -.-> Service
+       Service -.-> DB
+     ```
+
+3. Class Structure Documentation:
+   - Class diagram showing actual inheritance and composition relationships:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       }
+     }}%%
+     classDiagram
+       class BaseClass {
+         +string property
+         +method()
+       }
+       class ChildClass {
+         +childMethod()
+       }
+       BaseClass <|-- ChildClass : extends
+       ChildClass *-- ComposedClass : contains
+     ```
+
+4. Process Documentation:
+   - Sequence diagram for key processes based on actual method calls:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD',
+         'activationBorderColor': '#6BB4DD'
+       },
+       'themeCSS': '.messageText, .loopText, .noteText { font-family: monospace; } .messageLine0, .messageLine1 { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+     }}%%
+     sequenceDiagram
+       participant Client
+       participant Server
+       Client->>Server: request()
+       activate Server
+       Note over Server: Process request
+       Server-->>Client: response
+       deactivate Server
+     ```
    
-   ## Project Structure
-   - Provide exact directory structure with file counts
-   - List main modules with their exact functions/classes count
-   - Document actual, current dependencies with precise versions
+   - State diagram for components with state transitions:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.stateText { font-family: monospace; } .statePath { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+     }}%%
+     stateDiagram-v2
+       [*] --> Idle
+       Idle --> Processing: start
+       Processing --> Complete: finish
+       Processing --> Error: exception
+       Complete --> [*]
+       Error --> Idle: retry
+     ```
 
-2. Additional Documentation - Create ONLY if substantial relevant code exists:
-   - API.md: Document ONLY endpoints with actual implementations
-   - ARCHITECTURE.md: Describe ONLY patterns and components explicitly in the code
-   - DEVELOPMENT.md: Document ONLY workflows configured in the repository
+5. Data Model Documentation:
+   - Entity-relationship diagram for actual data models:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.entityBox { stroke-width: 2px; stroke-dasharray: 3,3; }'
+     }}%%
+     erDiagram
+       USER ||--o{ ORDER : places
+       ORDER ||--|{ LINE-ITEM : contains
+       USER {
+         string id
+         string name
+         string email
+       }
+       ORDER {
+         string id
+         date created_at
+         string status
+       }
+     ```
 
-3. For all documentation:
-   - If a fact cannot be verified in the code, DO NOT include it
-   - Use precise language that reflects certainty based on evidence
-   - Include exact file paths as references for all documented features
-   - Do not speculate about intended functionality - document only what exists
+6. Infrastructure Documentation (if applicable):
+   - Deployment diagram showing actual infrastructure components:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+     }}%%
+     flowchart TD
+       subgraph Cloud[Cloud Environment]
+         LB[Load Balancer]
+         subgraph AppServers[Application Servers]
+           App1[Server 1]
+           App2[Server 2]
+         end
+         subgraph DB[Database Cluster]
+           Primary[(Primary DB)]
+           Secondary[(Secondary DB)]
+         end
+       end
+       User[User] -.-> LB
+       LB -.-> AppServers
+       AppServers -.-> DB
+     ```
 
-Before generating content:
-1. Create an inventory of all files in the repository
-2. Identify configurations for build systems, testing frameworks, and CI/CD pipelines
-3. Extract metadata from manifest files and build configurations
-4. Document only what is objectively present in the code
+7. Repository Structure Documentation:
+   - Directory structure diagram:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+     }}%%
+     flowchart TD
+       Root[/] -.-> Src[src/]
+       Root -.-> Docs[docs/]
+       Root -.-> Tests[tests/]
+       Src -.-> Components[components/]
+       Src -.-> Utils[utils/]
+       Components -.-> UI[ui/]
+       Components -.-> Logic[logic/]
+     ```
 
-This task requires zero creativity - document exactly what exists in a clear, organized format.
+8. Build/CI Process Documentation (if applicable):
+   - Workflow diagram showing actual build process:
+     ```mermaid
+     %%{init: {
+       'theme': 'dark',
+       'themeVariables': {
+         'fontFamily': 'monospace',
+         'primaryBorderColor': '#6BB4DD',
+         'primaryColor': '#2D3A4D',
+         'primaryTextColor': '#fff',
+         'lineColor': '#6BB4DD'
+       },
+       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+     }}%%
+     flowchart TD
+       Start[Start] -.-> Build[Build]
+       Build -.-> Test[Test]
+       Test -.-> Deploy[Deploy]
+       Test -.-> Fail[Fail]
+       Deploy -.-> Release[Release]
+     ```
+
+For all diagrams:
+- Generate based ONLY on concrete evidence in the code
+- Use the consistent dark handdrawn theme shown in the examples
+- Keep diagrams focused and readable (5-15 elements per diagram)
+- Include all relevant attributes and methods found in the code
+- Use accurate relationship notations (inheritance, composition, etc.)
+- Maintain the professional appearance while using the handdrawn style
+- Apply appropriate level of detail based on the complexity of the code
+
+For all documentation:
+- Reference specific file paths that support diagram elements
+- Focus on actual implemented code, not aspirational features
+- Maintain factual accuracy with zero speculation
+- Break complex systems into multiple focused diagrams
+- Ensure all documentation is deterministic and based only on evidence in the code
+
+Before generating:
+1. Analyze the codebase structure to identify components
+2. Map actual relationships between components
+3. Determine which diagram types best represent the specific code patterns
+4. Plan diagrams to highlight the most important structures
+
+Format the README.md and all documentation using clean, professional Markdown structure with appropriate headings, lists, and code blocks.
