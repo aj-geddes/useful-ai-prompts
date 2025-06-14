@@ -20,14 +20,13 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.node rect, .node circle, .node polygon, .node path { stroke-width: 2px; stroke-dasharray: 3,3; } .nodeLabel { font-family: monospace; } .edgeLabel { font-family: monospace; } #flowchart line, .path, #statediagram-barbEnd, path.messageLineC { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      flowchart TD
-       A[Module A] -.-> B{Component B}
-       B -.->|Option 1| C[Component C]
-       B -.->|Option 2| D[Component D]
-       C -.-> E[Output]
+       A["Module A"] -.-> B{"Component B"}
+       B -.->|"Option 1"| C["Component C"]
+       B -.->|"Option 2"| D["Component D"]
+       C -.-> E["Output"]
        D -.-> E
      ```
    - Features list: ONLY features with corresponding implemented code
@@ -45,18 +44,17 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.node rect, .node circle, .node polygon, .node path { stroke-width: 2px; stroke-dasharray: 3,3; } .nodeLabel { font-family: monospace; } .edgeLabel { font-family: monospace; } #flowchart line, .path, #statediagram-barbEnd, path.messageLineC { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      flowchart TD
-       subgraph FE[Frontend]
-         UI[User Interface]
-         Logic[Client Logic]
+       subgraph FE["Frontend"]
+         UI["User Interface"]
+         Logic["Client Logic"]
        end
-       subgraph BE[Backend]
-         API[API Layer]
-         Service[Service Layer]
-         DB[(Database)]
+       subgraph BE["Backend"]
+         API["API Layer"]
+         Service["Service Layer"]
+         DB[("Database")]
        end
        UI -.-> Logic
        Logic -.-> API
@@ -101,8 +99,7 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD',
          'activationBorderColor': '#6BB4DD'
-       },
-       'themeCSS': '.messageText, .loopText, .noteText { font-family: monospace; } .messageLine0, .messageLine1 { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      sequenceDiagram
        participant Client
@@ -124,8 +121,7 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.stateText { font-family: monospace; } .statePath { stroke-width: 1.5px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      stateDiagram-v2
        [*] --> Idle
@@ -147,8 +143,7 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.entityBox { stroke-width: 2px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      erDiagram
        USER ||--o{ ORDER : places
@@ -176,22 +171,21 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      flowchart TD
-       subgraph Cloud[Cloud Environment]
-         LB[Load Balancer]
-         subgraph AppServers[Application Servers]
-           App1[Server 1]
-           App2[Server 2]
+       subgraph Cloud["Cloud Environment"]
+         LB["Load Balancer"]
+         subgraph AppServers["Application Servers"]
+           App1["Server 1"]
+           App2["Server 2"]
          end
-         subgraph DB[Database Cluster]
-           Primary[(Primary DB)]
-           Secondary[(Secondary DB)]
+         subgraph DB["Database Cluster"]
+           Primary[("Primary DB")]
+           Secondary[("Secondary DB")]
          end
        end
-       User[User] -.-> LB
+       User["User"] -.-> LB
        LB -.-> AppServers
        AppServers -.-> DB
      ```
@@ -207,17 +201,16 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      flowchart TD
-       Root[/] -.-> Src[src/]
-       Root -.-> Docs[docs/]
-       Root -.-> Tests[tests/]
-       Src -.-> Components[components/]
-       Src -.-> Utils[utils/]
-       Components -.-> UI[ui/]
-       Components -.-> Logic[logic/]
+       Root["Root Directory"] -.-> Src["src/"]
+       Root -.-> Docs["docs/"]
+       Root -.-> Tests["tests/"]
+       Src -.-> Components["components/"]
+       Src -.-> Utils["utils/"]
+       Components -.-> UI["ui/"]
+       Components -.-> Logic["logic/"]
      ```
 
 8. Build/CI Process Documentation (if applicable):
@@ -231,15 +224,14 @@ Review the entire codebase in this repository and generate factual, evidence-bas
          'primaryColor': '#2D3A4D',
          'primaryTextColor': '#fff',
          'lineColor': '#6BB4DD'
-       },
-       'themeCSS': '.node rect, .node circle, .node polygon { stroke-width: 2px; stroke-dasharray: 3,3; }'
+       }
      }}%%
      flowchart TD
-       Start[Start] -.-> Build[Build]
-       Build -.-> Test[Test]
-       Test -.-> Deploy[Deploy]
-       Test -.-> Fail[Fail]
-       Deploy -.-> Release[Release]
+       Start["Start"] -.-> Build["Build"]
+       Build -.-> Test["Test"]
+       Test -.-> Deploy["Deploy"]
+       Test -.-> Fail["Fail"]
+       Deploy -.-> Release["Release"]
      ```
 
 For all diagrams:
@@ -250,6 +242,8 @@ For all diagrams:
 - Use accurate relationship notations (inheritance, composition, etc.)
 - Maintain the professional appearance while using the handdrawn style
 - Apply appropriate level of detail based on the complexity of the code
+- Use quotation marks for node text to ensure GitHub compatibility
+- Avoid using special node shapes that might not be supported in GitHub
 
 For all documentation:
 - Reference specific file paths that support diagram elements
