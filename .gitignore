@@ -1,0 +1,46 @@
+# AI Helper Files
+CLAUDE.md
+.claude/
+*.claude
+
+# Memory files
+memories/
+.memories/
+
+# IDE and system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node modules (if any JS tools are used)
+node_modules/
+
+# Python (if any Python tools are used)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Project specific
+worklog.md.tmp
+.session/
+.cache/
