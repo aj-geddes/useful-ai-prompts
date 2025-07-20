@@ -87,57 +87,57 @@ DELIVER YOUR ANALYSIS AS:
 ### PREDICTIVE MODEL OVERVIEW
 
 #### Model Performance Dashboard
-```
-Model Comparison & Selection:
-┌─────────────────────────────────────────────┐
-│ ENSEMBLE MODEL PERFORMANCE                  │
-├─────────────────────────────────────────────┤
-│ Overall Accuracy: 89.3% (↑2.1% vs baseline)│
-│ RMSE: 4.23 (Best in class)                 │
-│ MAE: 3.14 (15% improvement)                │
-│ R²: 0.847 (Strong fit)                     │
-├─────────────────────────────────────────────┤
-│ Component Models:                           │
-│ • Random Forest:     █████████ 87.2%       │
-│ • XGBoost:          ██████████ 88.9%       │
-│ • Neural Network:   █████████ 86.5%        │
-│ • LSTM:             █████████ 87.8%        │
-│ • Ensemble:         ███████████ 89.3%      │
-└─────────────────────────────────────────────┘
 
-Validation Performance:
-Train Set: 91.2% (No overfitting detected)
-Validation Set: 89.3% (Stable)
-Test Set: 88.7% (Generalizes well)
-Production (3mo): 87.9% (Minimal degradation)
-```
+**Ensemble Model Performance:**
+- **Overall Accuracy**: 89.3% (↑2.1% vs baseline)
+- **RMSE**: 4.23 (Best in class)
+- **MAE**: 3.14 (15% improvement)
+- **R²**: 0.847 (Strong fit)
+
+**Component Models:**
+
+| Model | Performance | Visual |
+|-------|-------------|--------|
+| Random Forest | 87.2% | ████████░ |
+| XGBoost | 88.9% | █████████ |
+| Neural Network | 86.5% | ████████░ |
+| LSTM | 87.8% | ████████░ |
+| **Ensemble** | **89.3%** | **█████████** |
+
+**Validation Performance:**
+- **Train Set**: 91.2% (No overfitting detected)
+- **Validation Set**: 89.3% (Stable)
+- **Test Set**: 88.7% (Generalizes well)
+- **Production (3mo)**: 87.9% (Minimal degradation)
 
 #### Feature Importance Analysis
-```
-Top Predictive Features:
-                    Importance  Contribution
-1. Historical Trend  ████████████ 18.5%
-2. Seasonality      ██████████ 15.2%
-3. Price Index      █████████ 13.8%
-4. Customer Behavior ████████ 12.1%
-5. Market Indicators ███████ 10.9%
-6. Promotional Effect ██████ 8.7%
-7. Competition      █████ 7.3%
-8. Weather Patterns ████ 6.2%
-9. Economic Indicators ███ 4.8%
-10. Social Sentiment ██ 2.5%
 
-Feature Engineering Impact:
-Raw Features: 45 → Engineered: 127
-Performance Gain: +15.3%
-Interpretability: Maintained
-```
+**Top Predictive Features:**
+
+| Rank | Feature | Importance | Visual | Contribution |
+|------|---------|------------|--------|-------------|
+| 1 | Historical Trend | ████████████ | 18.5% |
+| 2 | Seasonality | ██████████ | 15.2% |
+| 3 | Price Index | █████████ | 13.8% |
+| 4 | Customer Behavior | ████████ | 12.1% |
+| 5 | Market Indicators | ███████ | 10.9% |
+| 6 | Promotional Effect | ██████ | 8.7% |
+| 7 | Competition | █████ | 7.3% |
+| 8 | Weather Patterns | ████ | 6.2% |
+| 9 | Economic Indicators | ███ | 4.8% |
+| 10 | Social Sentiment | ██ | 2.5% |
+
+**Feature Engineering Impact:**
+- **Raw Features**: 45 → **Engineered**: 127
+- **Performance Gain**: +15.3%
+- **Interpretability**: Maintained
 
 ### TIME SERIES FORECASTING
 
 #### Demand Forecast Analysis
+
+**12-Month Demand Forecast Visualization:**
 ```
-12-Month Demand Forecast:
        Actual  Forecast  95% CI
   200│        ╱─────    Upper Bound
      │       ╱  ●  ╱─── 
@@ -148,22 +148,24 @@ Interpretability: Maintained
    50│ Historical │ Forecast Period
      └────────────┼──────────────────
       J F M A M J │ J A S O N D J F
-
-Monthly Forecast Detail:
-Month    Point   Lower   Upper   Probability
-Jul'24   142.3   128.7   155.9   Base: 70%
-Aug'24   156.8   138.2   175.4   High: 25%
-Sep'24   163.2   141.5   184.9   Low: 5%
-Oct'24   171.5   146.3   196.7
-Nov'24   189.3   158.2   220.4   Peak Season
-Dec'24   198.7   162.1   235.3   Maximum
-
-Seasonality Detected:
-• Annual: Peak Dec, Trough Feb
-• Monthly: Mid-month spike
-• Weekly: Monday 20% higher
-• Daily: 2pm-4pm peak
 ```
+
+**Monthly Forecast Detail:**
+
+| Month | Point Forecast | Lower Bound | Upper Bound | Probability Scenario |
+|-------|---------------|-------------|-------------|-------------------|
+| Jul'24 | 142.3 | 128.7 | 155.9 | Base: 70% |
+| Aug'24 | 156.8 | 138.2 | 175.4 | High: 25% |
+| Sep'24 | 163.2 | 141.5 | 184.9 | Low: 5% |
+| Oct'24 | 171.5 | 146.3 | 196.7 | - |
+| Nov'24 | 189.3 | 158.2 | 220.4 | Peak Season |
+| Dec'24 | 198.7 | 162.1 | 235.3 | Maximum |
+
+**Seasonality Patterns Detected:**
+- **Annual**: Peak in December, Trough in February
+- **Monthly**: Mid-month spike patterns
+- **Weekly**: Monday shows 20% higher demand
+- **Daily**: Peak hours 2pm-4pm
 
 #### Decomposition & Components
 ```python
@@ -249,48 +251,42 @@ Product A   ████████████░░░░░░░░ 62%
 Product B   ██████░░░░░░░░░░░░░░ 31%
 Product C   ██░░░░░░░░░░░░░░░░░░  7%
 
-Customer Segment Predictions:
-┌────────────┬─────────┬─────────┬──────────┐
-│ Segment    │ Size    │ Convert%│ AOV      │
-├────────────┼─────────┼─────────┼──────────┤
-│ Hot Leads  │ 1,234   │ 72%     │ $2,450   │
-│ Warm Leads │ 3,456   │ 41%     │ $1,820   │
-│ Cool Leads │ 8,901   │ 18%     │ $1,230   │
-│ Cold Leads │ 15,234  │ 5%      │ $980     │
-└────────────┴─────────┴─────────┴──────────┘
+**Customer Segment Predictions:**
 
-Next Best Action Recommendations:
-Hot Leads → Immediate sales contact
-Warm Leads → Nurture campaign + demo
-Cool Leads → Educational content
-Cold Leads → Long-term drip campaign
+| Segment | Size | Conversion % | AOV |
+|---------|------|-------------|-----|
+| Hot Leads | 1,234 | 72% | $2,450 |
+| Warm Leads | 3,456 | 41% | $1,820 |
+| Cool Leads | 8,901 | 18% | $1,230 |
+| Cold Leads | 15,234 | 5% | $980 |
+
+**Next Best Action Recommendations:**
+- **Hot Leads** → Immediate sales contact
+- **Warm Leads** → Nurture campaign + demo
+- **Cool Leads** → Educational content
+- **Cold Leads** → Long-term drip campaign
 ```
 
 ### ADVANCED PREDICTION TECHNIQUES
 
 #### Anomaly Detection & Forecasting
-```
-Anomaly Detection System:
-┌─────────────────────────────────────────────┐
-│ REAL-TIME ANOMALY MONITORING                │
-├─────────────────────────────────────────────┤
-│ Current Status: 🟡 WARNING                  │
-│ Anomalies Detected: 3                       │
-│ Severity: Medium                            │
-├─────────────────────────────────────────────┤
-│ Detection Methods:                          │
-│ • Isolation Forest: 2 anomalies            │
-│ • LSTM Autoencoder: 3 anomalies           │
-│ • Statistical Process Control: 1 anomaly   │
-│ • Ensemble Consensus: 3 confirmed          │
-└─────────────────────────────────────────────┘
 
-Anomaly Forecast:
-Next 24hrs: 85% probability of anomaly
-Type: Traffic spike (3.2x normal)
-Cause: Predicted viral event
-Action: Scale infrastructure preemptively
-```
+**Real-Time Anomaly Monitoring:**
+- **Current Status**: 🟡 WARNING
+- **Anomalies Detected**: 3
+- **Severity**: Medium
+
+**Detection Methods:**
+- **Isolation Forest**: 2 anomalies detected
+- **LSTM Autoencoder**: 3 anomalies detected
+- **Statistical Process Control**: 1 anomaly detected
+- **Ensemble Consensus**: 3 confirmed anomalies
+
+**Anomaly Forecast:**
+- **Next 24hrs**: 85% probability of anomaly
+- **Type**: Traffic spike (3.2x normal)
+- **Predicted Cause**: Viral event
+- **Recommended Action**: Scale infrastructure preemptively
 
 #### Causal Impact Analysis
 ```python
@@ -329,8 +325,9 @@ intervention_analysis = {
 ### UNCERTAINTY QUANTIFICATION
 
 #### Prediction Intervals & Confidence
+
+**Forecast Uncertainty Analysis:**
 ```
-Forecast Uncertainty Analysis:
                     ┌─────────────┐
          95% CI     │ │ │ │ │ │ │ │ Increasing
          80% CI     │ │ │ │ │ │ │ │ uncertainty
@@ -339,63 +336,64 @@ Forecast Uncertainty Analysis:
                     └─┴─┴─┴─┴─┴─┴─┴─
                     1 2 3 4 5 6 7 8
                     Months Ahead →
-
-Uncertainty Sources:
-Model Uncertainty:      ████ 25%
-Parameter Uncertainty:  ██████ 35%
-Data Uncertainty:       ███ 20%
-External Factors:       ███ 20%
-
-Confidence Calibration:
-80% intervals contain: 79.3% (Well calibrated)
-90% intervals contain: 89.7% (Well calibrated)
-95% intervals contain: 94.8% (Well calibrated)
 ```
+
+**Uncertainty Sources:**
+
+| Source | Contribution | Visual |
+|--------|-------------|--------|
+| Parameter Uncertainty | 35% | ██████ |
+| Model Uncertainty | 25% | ████ |
+| Data Uncertainty | 20% | ███ |
+| External Factors | 20% | ███ |
+
+**Confidence Calibration:**
+- **80% intervals contain**: 79.3% (Well calibrated)
+- **90% intervals contain**: 89.7% (Well calibrated)
+- **95% intervals contain**: 94.8% (Well calibrated)
 
 #### Scenario-Based Predictions
-```
-Economic Scenario Forecasts:
-┌─────────────────────────────────────────────┐
-│ Scenario      │ Prob │ Impact │ Forecast   │
-├───────────────┼──────┼────────┼────────────┤
-│ Base Case     │ 50%  │ Normal │ +15% growth│
-│ Recession     │ 30%  │ Severe │ -10% decline│
-│ Boom          │ 15%  │ Positive│ +35% growth│
-│ Stagnation    │ 5%   │ Mild   │ +2% growth │
-└───────────────┴──────┴────────┴────────────┘
 
-Weighted Forecast: +8.5% growth
-Downside Risk: -10% (30% probability)
-Upside Potential: +35% (15% probability)
+**Economic Scenario Forecasts:**
 
-Hedging Recommendations:
-• Maintain 20% capacity buffer
-• Flexible supplier contracts
-• Scenario-based pricing
-```
+| Scenario | Probability | Impact | Forecast |
+|----------|------------|--------|----------|
+| Base Case | 50% | Normal | +15% growth |
+| Recession | 30% | Severe | -10% decline |
+| Boom | 15% | Positive | +35% growth |
+| Stagnation | 5% | Mild | +2% growth |
+
+**Forecast Summary:**
+- **Weighted Forecast**: +8.5% growth
+- **Downside Risk**: -10% (30% probability)
+- **Upside Potential**: +35% (15% probability)
+
+**Hedging Recommendations:**
+- Maintain 20% capacity buffer
+- Flexible supplier contracts
+- Scenario-based pricing
 
 ### MODEL INTERPRETABILITY
 
 #### SHAP Analysis
-```
-Individual Prediction Explanation:
-Customer ID: 12345
-Churn Probability: 78% (High Risk)
 
-Feature Contributions to Prediction:
-Support Tickets (8)     ████████ +25%
-Usage Decline (-60%)    ███████ +22%
-Contract Month-to-Month ████ +12%
-Payment Failed (1)      ███ +8%
-Tenure (3 months)       ██ +6%
-------------------------
-Base Probability        ██ 5%
-                       ═════════
-                       Total: 78%
+**Individual Prediction Explanation:**
+- **Customer ID**: 12345
+- **Churn Probability**: 78% (High Risk)
 
-Interpretation: Multiple service issues 
-combined with declining usage and flexible
-contract create high churn risk.
+**Feature Contributions to Prediction:**
+
+| Feature | Value | Contribution | Visual | Impact |
+|---------|-------|-------------|--------|--------|
+| Support Tickets | 8 | +25% | ████████ | High |
+| Usage Decline | -60% | +22% | ███████ | High |
+| Contract Type | Month-to-Month | +12% | ████ | Medium |
+| Payment Failed | 1 | +8% | ███ | Low |
+| Tenure | 3 months | +6% | ██ | Low |
+| **Base Probability** | - | 5% | ██ | - |
+| **Total Prediction** | - | **78%** | **═════════** | **High Risk** |
+
+**Interpretation**: Multiple service issues combined with declining usage and flexible contract create high churn risk.
 
 Recommended Intervention:
 1. Immediate support team outreach
