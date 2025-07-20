@@ -106,19 +106,51 @@ MODELING CONTEXT:
 
 ```
 prompts/
+├── academic/          # Research and academic roles
+├── administrative/    # Executive support professionals
 ├── business/          # Business & management roles
-│   ├── administrative/   # Executive assistants, office managers
-│   ├── finance/         # Financial analysts, accountants
-│   ├── marketing/       # Marketing managers, strategists
-│   ├── product-management/ # Product managers, owners
-│   └── project-management/ # Project managers, scrum masters
-├── technical/         # Technology roles
-│   ├── software-engineering/ # Developers, architects
-│   ├── devops/          # DevOps, SRE, platform engineers
-│   └── data-science/    # Data scientists, ML engineers
-└── creative/          # Creative roles
-    └── ux-design/       # UX designers, researchers
+│   ├── administrative/   # Office workflows and admin tasks
+│   ├── business-analysis/ # Business analysts
+│   ├── customer-success/ # Customer retention specialists
+│   ├── finance/         # Financial analysts, modelers
+│   ├── human-resources/ # HR professionals
+│   ├── legal/          # Legal and compliance
+│   ├── management/     # Business management
+│   ├── marketing/      # Marketing strategists
+│   ├── operations/     # Operations managers
+│   ├── product-management/ # Product managers
+│   ├── project-management/ # Project managers
+│   └── sales/          # Sales professionals
+├── creative/          # Creative roles
+│   ├── content-strategy/ # Content strategists
+│   ├── design/         # Graphic designers
+│   └── ux-design/      # UX designers, researchers
+├── customer-service/  # Customer service excellence
+├── development/       # Development workflows
+├── education/         # Teaching professionals
+├── engineering/       # Engineering disciplines
+├── finance/           # Financial experts
+├── healthcare/        # Healthcare professionals
+├── human-resources/   # HR leadership
+├── operations/        # Operations management
+├── project-management/ # Project tools
+├── research/          # Research methodologies
+├── security/          # Security analysis
+└── technical/         # Technology roles
+    ├── ai-engineering/   # AI/ML engineering
+    ├── architecture/     # System architects
+    ├── cybersecurity/    # Security professionals
+    ├── data-engineering/ # Data engineers
+    ├── data-science/     # Data scientists
+    ├── devops/          # DevOps engineers
+    ├── infrastructure/   # Infrastructure engineers
+    ├── mcp/             # Model Context Protocol
+    ├── quality-assurance/ # QA professionals
+    ├── security/        # Security architects
+    └── software-engineering/ # Software developers
 ```
+
+For detailed information, see [REPOSITORY_STRUCTURE.md](REPOSITORY_STRUCTURE.md).
 
 ## 🎯 Prompt Categories
 
@@ -181,11 +213,11 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## 📊 Prompt Statistics
 
-- **Total Prompts**: 19
-- **Categories**: 14
-- **Job Roles Covered**: 19
-- **Thinking Frameworks**: 30+
-- **Average Prompt Depth**: 350+ lines
+- **Total Prompts**: 69
+- **Categories**: 20+
+- **Job Roles Covered**: 50+
+- **Thinking Frameworks**: 100+
+- **Average Prompt Depth**: 600+ lines
 
 ## 🏷️ Finding Prompts by Tags
 
