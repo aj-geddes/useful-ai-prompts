@@ -28,6 +28,15 @@ A comprehensive collection of production-ready AI prompts designed for professio
 #### Marketing
 - [📢 Integrated Campaign Architect](prompts/business/marketing/integrated-campaign-architect.md) - Design multi-channel campaigns with ROI optimization
 
+#### Human Resources
+- [🎯 Talent Acquisition Strategist](prompts/business/human-resources/talent-acquisition-strategist.md) - Design effective hiring processes with candidate experience focus
+
+#### Sales
+- [📈 Sales Pipeline Optimizer](prompts/business/sales/sales-pipeline-optimizer.md) - Accelerate revenue through data-driven pipeline management
+
+#### Business Analysis
+- [📋 Requirements Engineering Expert](prompts/business/business-analysis/requirements-engineering-expert.md) - Transform business needs into actionable specifications
+
 </details>
 
 <details>
@@ -42,6 +51,12 @@ A comprehensive collection of production-ready AI prompts designed for professio
 #### Data Science
 - [📊 Model Evaluation Framework](prompts/technical/data-science/model-evaluation-framework.md) - Comprehensive ML validation beyond accuracy
 
+#### Cybersecurity
+- [🔒 Incident Response Commander](prompts/technical/cybersecurity/incident-response-commander.md) - Orchestrate security incident response and forensics
+
+#### Quality Assurance
+- [✅ Comprehensive Test Strategist](prompts/technical/quality-assurance/comprehensive-test-strategist.md) - Build quality frameworks with risk-based testing
+
 </details>
 
 <details>
@@ -49,6 +64,9 @@ A comprehensive collection of production-ready AI prompts designed for professio
 
 #### UX Design
 - [🔍 User Research Synthesizer](prompts/creative/ux-design/user-research-synthesizer.md) - Transform raw research into actionable insights
+
+#### Content Strategy
+- [📅 Editorial Calendar Architect](prompts/creative/content-strategy/editorial-calendar-architect.md) - Strategic content planning with SEO optimization
 
 </details>
 
@@ -163,11 +181,11 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## 📊 Prompt Statistics
 
-- **Total Prompts**: 13+
-- **Categories**: 9
-- **Job Roles Covered**: 13
-- **Thinking Frameworks**: 25+
-- **Average Prompt Depth**: 300+ lines
+- **Total Prompts**: 19
+- **Categories**: 14
+- **Job Roles Covered**: 19
+- **Thinking Frameworks**: 30+
+- **Average Prompt Depth**: 350+ lines
 
 ## 🏷️ Finding Prompts by Tags
 
