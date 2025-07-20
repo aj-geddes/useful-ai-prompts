@@ -1,6 +1,6 @@
-# Website Deployment Guide
+# Docs/Website Deployment Guide
 
-This directory contains a static website for browsing the Useful AI Prompts library.
+This directory contains a static website for browsing the Useful AI Prompts library. Named `docs` for easy GitHub Pages deployment.
 
 ## Features
 
@@ -30,7 +30,7 @@ This directory contains a static website for browsing the Useful AI Prompts libr
 
 4. **Open in browser**:
    ```
-   http://localhost:8080/website/
+   http://localhost:8080/docs/
    ```
 
 ## Deployment Options
@@ -38,35 +38,35 @@ This directory contains a static website for browsing the Useful AI Prompts libr
 ### Option 1: GitHub Pages
 
 1. Enable GitHub Pages in repository settings
-2. Set source to main branch, root directory
-3. Access at: `https://[username].github.io/useful-ai-prompts/website/`
+2. Set source to main branch, `/docs` folder
+3. Access at: `https://[username].github.io/useful-ai-prompts/`
 
 ### Option 2: Netlify
 
 1. Connect GitHub repository to Netlify
 2. Set build settings:
    - Build command: (leave empty)
-   - Publish directory: `website`
+   - Publish directory: `docs`
 3. Deploy
 
 ### Option 3: Vercel
 
 1. Import GitHub repository to Vercel
-2. Set root directory to `website`
+2. Set root directory to `docs`
 3. Deploy
 
 ### Option 4: Static Host
 
 Upload the following files to any static host:
-- `website/index.html`
-- `website/styles.css`
-- `website/app.js`
+- `docs/index.html`
+- `docs/styles.css`
+- `docs/app.js`
 - `PROMPT-INDEX.json` (in root)
 
 ## File Structure
 
 ```
-website/
+docs/
 ├── index.html     # Main HTML structure
 ├── styles.css     # All styling
 ├── app.js         # JavaScript functionality

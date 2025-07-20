@@ -126,6 +126,7 @@ Quick reference for programmatic selection:
 ```
 /prompts/              # Main prompt library
 /metadata/             # Framework definitions and guidelines
+/docs/                 # Website interface for browsing
 /PROMPT-INDEX.json     # Machine-readable prompt catalog
 /AI-AGENT-GUIDE.md     # Detailed integration instructions
 ```

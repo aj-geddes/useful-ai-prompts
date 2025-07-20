@@ -13,6 +13,12 @@ useful-ai-prompts/
 ├── REPOSITORY_STRUCTURE.md # This file
 ├── worklog.md            # Development history and decisions
 │
+├── docs/                 # Website interface for browsing prompts
+│   ├── index.html        # Main website page
+│   ├── styles.css        # Website styling
+│   ├── app.js           # Website functionality
+│   └── README.md        # Website deployment guide
+│
 ├── metadata/             # Prompt framework metadata and guidelines
 │   ├── job-categories.md      # Job role categorization
 │   ├── persona-profiles.md    # Persona development guidelines
