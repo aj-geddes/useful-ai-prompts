@@ -14,20 +14,43 @@ This template provides a comprehensive MCP server setup for Claude Desktop with 
 Save this as your `claude_desktop_config.json` file:
 
 ### Windows Configuration
+
 ```json
 {
   "mcpServers": {
     "git": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "--mount", "type=bind,src=C:\\Users\\[USERNAME],dst=/mnt/workspace", "mcp/git"]
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,src=C:\\Users\\[USERNAME],dst=/mnt/workspace",
+        "mcp/git"
+      ]
     },
     "filesystem": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "-v", "C:\\Users\\[USERNAME]:/mnt/workspace:rw", "mcp/filesystem", "/mnt/workspace"]
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "C:\\Users\\[USERNAME]:/mnt/workspace:rw",
+        "mcp/filesystem",
+        "/mnt/workspace"
+      ]
     },
     "memory": {
       "command": "docker",
-      "args": ["run", "-i", "-v", "claude-memory:/app/dist", "--rm", "mcp/memory"]
+      "args": [
+        "run",
+        "-i",
+        "-v",
+        "claude-memory:/app/dist",
+        "--rm",
+        "mcp/memory"
+      ]
     },
     "sequentialthinking": {
       "command": "docker",
@@ -39,7 +62,14 @@ Save this as your `claude_desktop_config.json` file:
     },
     "github": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"],
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
       "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "[YOUR_GITHUB_TOKEN]" }
     }
   }
@@ -47,20 +77,43 @@ Save this as your `claude_desktop_config.json` file:
 ```
 
 ### macOS/Linux Configuration
+
 ```json
 {
   "mcpServers": {
     "git": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "--mount", "type=bind,src=/Users/[USERNAME],dst=/mnt/workspace", "mcp/git"]
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,src=/Users/[USERNAME],dst=/mnt/workspace",
+        "mcp/git"
+      ]
     },
     "filesystem": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "-v", "/Users/[USERNAME]:/mnt/workspace:rw", "mcp/filesystem", "/mnt/workspace"]
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "/Users/[USERNAME]:/mnt/workspace:rw",
+        "mcp/filesystem",
+        "/mnt/workspace"
+      ]
     },
     "memory": {
       "command": "docker",
-      "args": ["run", "-i", "-v", "claude-memory:/app/dist", "--rm", "mcp/memory"]
+      "args": [
+        "run",
+        "-i",
+        "-v",
+        "claude-memory:/app/dist",
+        "--rm",
+        "mcp/memory"
+      ]
     },
     "sequentialthinking": {
       "command": "docker",
@@ -72,7 +125,14 @@ Save this as your `claude_desktop_config.json` file:
     },
     "github": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"],
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
       "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "[YOUR_GITHUB_TOKEN]" }
     }
   }
@@ -84,16 +144,19 @@ Save this as your `claude_desktop_config.json` file:
 ### 1. Find Your Configuration File Location
 
 **Windows:**
+
 ```
 %APPDATA%\Claude\claude_desktop_config.json
 ```
 
 **macOS:**
+
 ```
 ~/Library/Application Support/Claude/claude_desktop_config.json
 ```
 
 **Linux:**
+
 ```
 ~/.config/Claude/claude_desktop_config.json
 ```
@@ -115,12 +178,14 @@ Save this as your `claude_desktop_config.json` file:
 ### 4. Install Required Dependencies
 
 **Install UV (for llm-context server):**
+
 ```bash
 # Windows/macOS/Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 **Pull Docker Images:**
+
 ```bash
 docker pull mcp/git
 docker pull mcp/filesystem
@@ -132,32 +197,38 @@ docker pull ghcr.io/github/github-mcp-server
 ## Server Capabilities
 
 ### 🗂️ **Filesystem Server**
+
 - Read, write, create, delete files and directories
 - Navigate local file system
 - File content analysis and manipulation
 
 ### 🔧 **Git Server**
+
 - Git repository operations
 - Commit history analysis
 - Branch management
 - Git status and diff operations
 
 ### 🧠 **Memory Server**
+
 - Persistent conversation memory
 - Entity and relationship tracking
 - Knowledge graph maintenance
 
 ### 🤔 **Sequential Thinking Server**
+
 - Multi-step problem solving
 - Thought process tracking
 - Complex analysis workflows
 
 ### 📊 **LLM Context Server**
+
 - Code analysis and understanding
 - Project context generation
 - Codebase exploration
 
 ### 🐙 **GitHub Server**
+
 - Repository management
 - Issue and PR operations
 - GitHub API integration
@@ -172,20 +243,24 @@ docker pull ghcr.io/github/github-mcp-server
 ## Troubleshooting
 
 ### Docker Issues
+
 - Ensure Docker Desktop is running
 - Check that all required images are pulled
 - Verify mount paths exist and are accessible
 
 ### Permission Issues
+
 - On Windows, ensure Docker has access to your user directory
 - On macOS/Linux, check file permissions for mounted directories
 
 ### GitHub Token Issues
+
 - Verify token has correct scopes
 - Check token isn't expired
 - Ensure token is properly formatted in configuration
 
 ### Server Connection Issues
+
 1. Restart Claude Desktop after configuration changes
 2. Check Claude Desktop Developer settings for server status
 3. Review Docker container logs for error messages
@@ -193,20 +268,25 @@ docker pull ghcr.io/github/github-mcp-server
 ## Advanced Customization
 
 ### Custom Workspace Directory
+
 To use a different workspace directory, update both `git` and `filesystem` server mount paths:
 
 **Windows Example:**
+
 ```json
 "src=D:\\Projects,dst=/mnt/workspace"
 ```
 
 **macOS/Linux Example:**
+
 ```json
 "src=/home/user/projects,dst=/mnt/workspace"
 ```
 
 ### Adding Additional Servers
+
 You can add more MCP servers to this configuration. Popular options include:
+
 - Database servers (PostgreSQL, SQLite)
 - API integration servers
 - Notification servers
@@ -222,6 +302,7 @@ You can add more MCP servers to this configuration. Popular options include:
 ## Support
 
 If you encounter issues:
+
 1. Check the [MCP Documentation](https://modelcontextprotocol.io/)
 2. Review Docker container logs
 3. Verify all prerequisites are installed

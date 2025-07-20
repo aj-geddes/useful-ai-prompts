@@ -1,6 +1,7 @@
 # Meeting Intelligence Synthesizer and Action Orchestrator
 
 ## Metadata
+
 - **Category**: Business/Administrative
 - **Tags**: meeting minutes, summarization, action items, administrative, documentation
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms raw meeting content into comprehensive intelligence documents that capture decisions, track commitments, and drive organizational action. It combines administrative excellence with knowledge management principles to create meeting records that serve as strategic assets, enabling accountability, institutional memory, and seamless organizational coordination.
 
 ## Prompt Template
+
 ```
 You are operating as a meeting intelligence system combining:
 
@@ -97,6 +100,7 @@ DELIVER YOUR MEETING INTELLIGENCE AS:
 **Context**: {{background_situation}}
 **Options Considered**:
 ```
+
 Option A: {{description}}
 ├── Pros: {{advantages}}
 ├── Cons: {{disadvantages}}
@@ -106,6 +110,7 @@ Option B: {{description}}
 ├── Pros: {{advantages}}
 ├── Cons: {{disadvantages}}
 └── Impact: {{organizational_effect}}
+
 ```
 
 **Decision Made**: {{chosen_option}}
@@ -118,19 +123,21 @@ Option B: {{description}}
 
 #### DECISION IMPACT ANALYSIS
 ```
+
 Stakeholder Impact Map:
 ├── Immediate Impact
-│   ├── Team A: {{positive_negative_neutral}}
-│   ├── Department B: {{positive_negative_neutral}}
-│   └── Customer Group C: {{positive_negative_neutral}}
+│ ├── Team A: {{positive_negative_neutral}}
+│ ├── Department B: {{positive_negative_neutral}}
+│ └── Customer Group C: {{positive_negative_neutral}}
 ├── Secondary Effects
-│   ├── Budget implications: {{financial_impact}}
-│   ├── Timeline changes: {{schedule_effect}}
-│   └── Resource allocation: {{capacity_impact}}
+│ ├── Budget implications: {{financial_impact}}
+│ ├── Timeline changes: {{schedule_effect}}
+│ └── Resource allocation: {{capacity_impact}}
 └── Long-term Consequences
-    ├── Strategic alignment: {{fit_assessment}}
-    ├── Competitive position: {{market_impact}}
-    └── Organizational culture: {{cultural_effect}}
+├── Strategic alignment: {{fit_assessment}}
+├── Competitive position: {{market_impact}}
+└── Organizational culture: {{cultural_effect}}
+
 ```
 
 ### ACTION ITEM COMMAND CENTER
@@ -143,6 +150,7 @@ Stakeholder Impact Map:
 
 **Action Details - {{Action_Title}}**:
 ```
+
 Full Description: {{comprehensive_action_description}}
 ├── Scope: {{what_is_included_excluded}}
 ├── Resources Needed: {{budget_people_tools}}
@@ -156,6 +164,7 @@ RACI Matrix:
 ├── Accountable: {{person_ultimately_answerable}}
 ├── Consulted: {{input_providers}}
 └── Informed: {{update_recipients}}
+
 ```
 
 #### PRIORITY 2: STANDARD ACTIONS
@@ -171,17 +180,20 @@ RACI Matrix:
 
 #### KEY THEMES ANALYSIS
 ```
+
 Theme Frequency Map:
-Budget Concerns     ████████████ 85% of discussion
-Timeline Pressure   ██████████   70% of discussion
-Resource Allocation ████████     60% of discussion
-Market Competition  ██████       45% of discussion
-Team Dynamics      ████         30% of discussion
+Budget Concerns ████████████ 85% of discussion
+Timeline Pressure ██████████ 70% of discussion
+Resource Allocation ████████ 60% of discussion
+Market Competition ██████ 45% of discussion
+Team Dynamics ████ 30% of discussion
+
 ```
 
 #### STAKEHOLDER DYNAMICS
 **Engagement Patterns**:
 ```
+
 High Engagement:
 ├── {{person_1}}: {{contribution_style}}
 ├── {{person_2}}: {{contribution_style}}
@@ -195,6 +207,7 @@ Low Engagement:
 Conflict Points:
 ├── {{disagreement_1}}: {{parties_involved}}
 ├── Resolution Status: {{resolved_pending_escalated}}
+
 ```
 
 #### UNRESOLVED ISSUES TRACKER
@@ -214,11 +227,13 @@ Conflict Points:
 
 **Process Insights**:
 ```
+
 Meeting Effectiveness Analysis:
 ├── What Worked Well: {{positive_elements}}
 ├── Areas for Improvement: {{enhancement_opportunities}}
 ├── Process Recommendations: {{future_optimizations}}
 └── Tool/Format Suggestions: {{meeting_improvements}}
+
 ```
 
 #### STRATEGIC INTELLIGENCE
@@ -238,6 +253,7 @@ Meeting Effectiveness Analysis:
 
 **Executive Summary Email**:
 ```
+
 Subject: [Meeting Name] - Key Decisions & Actions Required
 
 Executive Team,
@@ -250,6 +266,7 @@ Quick Summary:
 Full details in attached meeting minutes.
 
 Next Steps:
+
 1. {{immediate_action}}
 2. {{upcoming_milestone}}
 3. {{future_consideration}}
@@ -258,10 +275,12 @@ Please confirm receipt and your availability for {{next_requirement}}.
 
 Best regards,
 [Name]
+
 ```
 
 **Team Action Alert**:
 ```
+
 Subject: Action Required: {{specific_task}} - Due {{date}}
 
 Hi {{team_member}},
@@ -278,6 +297,7 @@ Dependencies:
 • Blocking: {{downstream_impacts}}
 
 Please confirm:
+
 1. Understanding of requirements
 2. Resource availability
 3. Anticipated challenges
@@ -286,12 +306,14 @@ Questions? Reply directly or see meeting minutes for context.
 
 Thanks,
 [Name]
+
 ```
 
 ### TRACKING & ACCOUNTABILITY SYSTEM
 
 #### ACTION ITEM DASHBOARD
 ```
+
 Current Status Overview:
 ■■■■■■■■░░ 80% On Track
 ■■■■░░░░░░ 40% At Risk  
@@ -307,11 +329,13 @@ By Priority:
 ├── High: {{#}} items
 ├── Medium: {{#}} items
 └── Low: {{#}} items
+
 ```
 
 #### FOLLOW-UP PROTOCOL
 **Weekly Check-in Framework**:
 ```
+
 Monday: Status update requests sent
 ├── Critical items: Daily check
 ├── High priority: Every other day
@@ -326,6 +350,7 @@ Friday: Stakeholder updates
 ├── Executive summary
 ├── Team communications
 └── Client notifications (if applicable)
+
 ```
 
 ### CONTINUOUS IMPROVEMENT ANALYSIS
@@ -354,6 +379,7 @@ Friday: Stakeholder updates
 
 #### CRITICAL RISK INDICATORS
 ```
+
 Risk Heat Map:
 High Impact, High Probability:
 ├── {{risk_1}}: {{mitigation_strategy}}
@@ -364,20 +390,23 @@ High Impact, Low Probability:
 
 Low Impact, High Probability:
 ├── {{risk_4}}: {{acceptance_strategy}}
+
 ```
 
 #### DEPENDENCY CHAIN ANALYSIS
 ```
+
 Critical Path Dependencies:
 Action A → Action B → Action C → Delivery
-    ↓         ↓         ↓         ↓
-  Owner X   Owner Y   Owner Z   Customer
+↓ ↓ ↓ ↓
+Owner X Owner Y Owner Z Customer
 
 Bottleneck Identification:
 ├── Resource constraints: {{identification}}
 ├── Approval delays: {{potential_issues}}
 ├── External dependencies: {{third_party_risks}}
 └── Timeline conflicts: {{scheduling_challenges}}
+
 ```
 
 ### APPENDICES
@@ -402,6 +431,7 @@ Bottleneck Identification:
 ```
 
 ## Usage Instructions
+
 1. Record or collect comprehensive meeting content including discussions, decisions, and side conversations
 2. Gather complete attendee information with roles and decision-making authority
 3. Identify the meeting's strategic importance and organizational context
@@ -412,8 +442,11 @@ Bottleneck Identification:
 8. Schedule follow-up checkpoints based on action timelines
 
 ## Examples
+
 ### Example 1: Strategic Planning Session
-**Input**: 
+
+**Input**:
+
 ```
 {{meeting_type}}: Quarterly strategic planning
 {{stakeholder_level}}: C-suite and department heads
@@ -426,11 +459,13 @@ Bottleneck Identification:
 **Output**: [Comprehensive meeting intelligence report with strategic decision registry, detailed action orchestration across departments, stakeholder communication templates, and quarterly tracking framework]
 
 ## Related Prompts
+
 - [Email Management Master](/prompts/business/administrative/email-prioritization-response.md)
 - [Calendar Intelligence Expert](/prompts/business/administrative/calendar-optimization.md)
 - [Executive Task Delegation System](/prompts/business/administrative/task-delegation-tracking.md)
 
 ## Research Notes
+
 - RACI framework improves action item completion rates by 60%
 - Systematic decision documentation reduces re-litigation by 75%
 - Structured follow-up protocols increase meeting ROI by 40%

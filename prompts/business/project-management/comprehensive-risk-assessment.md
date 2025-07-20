@@ -1,6 +1,7 @@
 # Comprehensive Project Risk Assessment and Mitigation Planner
 
 ## Metadata
+
 - **Category**: Business/Project Management
 - **Tags**: risk management, project management, risk assessment, mitigation planning, stakeholder management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt performs systematic risk identification, assessment, and mitigation planning for complex projects. It combines project management expertise with risk analysis frameworks to uncover hidden risks, quantify impacts, and develop actionable mitigation strategies that protect project success while maintaining stakeholder confidence.
 
 ## Prompt Template
+
 ```
 You are operating as an advanced project risk management system combining:
 
@@ -90,19 +93,21 @@ DELIVER YOUR RISK ASSESSMENT AS:
 
 ### RISK HEAT MAP
 ```
+
 Impact
-  ↑
-  5 │ ░░░░░ █████ █████
-  4 │ ░░░░░ ░░░░░ █████  
-  3 │ ░░░░░ ░░░░░ ░░░░░
-  2 │ ░░░░░ ░░░░░ ░░░░░
-  1 │ ░░░░░ ░░░░░ ░░░░░
-    └─────────────────→
-      1  2  3  4  5  Probability
+↑
+5 │ ░░░░░ █████ █████
+4 │ ░░░░░ ░░░░░ █████  
+ 3 │ ░░░░░ ░░░░░ ░░░░░
+2 │ ░░░░░ ░░░░░ ░░░░░
+1 │ ░░░░░ ░░░░░ ░░░░░
+└─────────────────→
+1 2 3 4 5 Probability
 
 Legend: ░ Low █ Medium █ High █ Critical
 Number of risks in each zone shown
-```
+
+````
 
 ### DETAILED RISK REGISTER
 
@@ -166,15 +171,17 @@ graph TD
     R3 --> R4[Budget Risk]
     R3 --> R5[Quality Risk]
     R5 --> R6[Stakeholder Risk]
-```
+````
 
 **Cascade Scenarios**:
+
 1. If {{risk_1}} occurs → likely triggers {{risk_2}} → resulting in {{combined_impact}}
 2. If {{risk_3}} occurs → likely triggers {{risk_4}} → resulting in {{combined_impact}}
 
 ### QUANTITATIVE RISK ANALYSIS
 
 #### MONTE CARLO SIMULATION RESULTS
+
 ```
 Project Completion Probability:
 On Time: {{percentage}}%
@@ -190,24 +197,28 @@ On Budget: {{percentage}}%
 ```
 
 #### EXPECTED MONETARY VALUE (EMV)
-| Risk | Probability | Cost Impact | EMV |
-|------|-------------|-------------|-----|
-| {{risk_1}} | {{prob}}% | ${{impact}} | ${{emv}} |
-| {{risk_2}} | {{prob}}% | ${{impact}} | ${{emv}} |
-| Total EMV | | | ${{total}} |
+
+| Risk       | Probability | Cost Impact | EMV        |
+| ---------- | ----------- | ----------- | ---------- |
+| {{risk_1}} | {{prob}}%   | ${{impact}} | ${{emv}}   |
+| {{risk_2}} | {{prob}}%   | ${{impact}} | ${{emv}}   |
+| Total EMV  |             |             | ${{total}} |
 
 **Recommended Contingency**: ${{suggested_reserve}} ({{percentage}}% of budget)
 
 ### STAKEHOLDER-SPECIFIC RISKS
 
 #### {{Stakeholder_Group_1}}
+
 **Concerns**: {{primary_concerns}}
 **Risk Tolerance**: [High/Medium/Low]
 **Critical Risks**:
+
 1. {{risk_affecting_them}}
 2. {{risk_affecting_them}}
 
 **Communication Plan**:
+
 - Frequency: {{how_often}}
 - Format: {{meeting_or_report}}
 - Key Messages: {{what_to_emphasize}}
@@ -215,6 +226,7 @@ On Budget: {{percentage}}%
 ### RISK RESPONSE STRATEGIES
 
 #### PREVENTIVE ACTIONS (This Week)
+
 1. **{{Action_1}}**
    - Purpose: Prevent {{risk}}
    - Owner: {{name}}
@@ -224,6 +236,7 @@ On Budget: {{percentage}}%
    [Similar structure]
 
 #### DETECTIVE CONTROLS
+
 1. **{{Control_1}}**
    - Monitors: {{what_risk}}
    - Method: {{how_monitored}}
@@ -233,16 +246,19 @@ On Budget: {{percentage}}%
 ### RISK REVIEW CADENCE
 
 **Weekly Reviews**:
+
 - Participants: Project team
 - Focus: Tactical risks, early warnings
 - Duration: 30 minutes
 
 **Monthly Reviews**:
+
 - Participants: Stakeholders
 - Focus: Strategic risks, trends
 - Duration: 1 hour
 
 **Trigger-Based Reviews**:
+
 - When: {{specific_events}}
 - Who: {{escalation_group}}
 - Action: {{immediate_response}}
@@ -250,6 +266,7 @@ On Budget: {{percentage}}%
 ### DECISION TREES
 
 #### Critical Decision: {{Decision_Point}}
+
 ```
 Decision Point
 ├── Option A: {{description}}
@@ -267,7 +284,8 @@ Recommended: Option {{X}} based on {{rationale}}
 ### LESSONS FROM SIMILAR PROJECTS
 
 **Historical Risk Patterns**:
-1. **{{similar_project_1}}**: 
+
+1. **{{similar_project_1}}**:
    - Risk: {{what_happened}}
    - Impact: {{actual_impact}}
    - Learning: {{key_lesson}}
@@ -286,6 +304,7 @@ Recommended: Option {{X}} based on {{rationale}}
 ### APPENDIX: RISK SCORING METHODOLOGY
 
 **Probability Scale**:
+
 1. Rare (<10%)
 2. Unlikely (10-30%)
 3. Possible (30-50%)
@@ -293,11 +312,13 @@ Recommended: Option {{X}} based on {{rationale}}
 5. Almost Certain (>70%)
 
 **Impact Scale**:
+
 1. Minimal (Budget <2%, Schedule <1 week)
 2. Minor (Budget 2-5%, Schedule 1-2 weeks)
 3. Moderate (Budget 5-10%, Schedule 2-4 weeks)
 4. Major (Budget 10-20%, Schedule 1-2 months)
 5. Severe (Budget >20%, Schedule >2 months)
+
 ```
 
 ## Usage Instructions
@@ -311,8 +332,9 @@ Recommended: Option {{X}} based on {{rationale}}
 
 ## Examples
 ### Example 1: Software Development Project
-**Input**: 
+**Input**:
 ```
+
 {{project_name}}: Customer Portal Redesign
 {{type_and_methodology}}: Software Development, Agile/Scrum
 {{key_deliverables}}: New responsive web portal, mobile apps, API integration
@@ -323,6 +345,7 @@ Recommended: Option {{X}} based on {{rationale}}
 {{critical_success_factors}}: 50% performance improvement, 90% user satisfaction
 {{known_constraints}}: Legacy system dependencies, Q1 hiring freeze
 {{external_dependencies}}: Third-party payment gateway, Cloud migration
+
 ```
 
 **Output**: [Comprehensive risk assessment identifying 15 risks with technical debt and integration complexity as critical risks, including detailed mitigation plans]
@@ -338,3 +361,4 @@ Recommended: Option {{X}} based on {{rationale}}
 - Monte Carlo simulation proven to improve estimation accuracy by 35%
 - Stakeholder-specific risk views increase buy-in and support
 - Decision tree analysis helps justify mitigation investments
+```

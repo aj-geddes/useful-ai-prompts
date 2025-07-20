@@ -1,6 +1,7 @@
 # Systems Thinking Product Strategy
 
 ## Metadata
+
 - **Category**: Business
 - **Tags**: product management, strategy, systems thinking, market analysis, roadmapping
 - **Created**: 2025-07-19
@@ -10,6 +11,7 @@
 - **Compatible Models**: GPT-4, Claude 3.5+, Gemini Pro
 
 ## Description
+
 This prompt combines systems thinking methodology with product management expertise to develop comprehensive product strategies that account for market dynamics, feedback loops, and emergent properties. It helps identify leverage points, anticipate second-order consequences, and design resilient product ecosystems that adapt to changing conditions.
 
 ## Prompt Template
@@ -125,13 +127,15 @@ DELIVER YOUR COMPREHENSIVE ANALYSIS AS:
 ### SYSTEM DYNAMICS MAP
 
 ```
+
 [Visual representation of the ecosystem]
 ┌─────────────────┐
-│    PRODUCT      │
-│   {{product}}   │
+│ PRODUCT │
+│ {{product}} │
 └────────┬────────┘
-         │
-    [Relationships, feedback loops, key actors]
+│
+[Relationships, feedback loops, key actors]
+
 ```
 
 **Key Feedback Loops:**
@@ -204,10 +208,12 @@ For [target customer] who [key need], {{product_name}} is the [category] that [k
 
 **Resource Allocation:**
 ```
+
 Development: 40%
 Marketing: 25%
 Sales: 20%
 Operations: 15%
+
 ```
 
 ### SUCCESS METRICS & KPIS
@@ -256,7 +262,9 @@ Operations: 15%
 ## Examples
 
 ### Example 1: B2B SaaS Product Strategy - Project Management Platform
+
 **Input**:
+
 ```
 {{product_name}}: TaskFlow Pro
 {{industry}}: B2B SaaS Project Management
@@ -271,18 +279,19 @@ Operations: 15%
 ```
 
 **Output Excerpt**:
+
 ```
 ## PRODUCT STRATEGY BLUEPRINT
 
 ### EXECUTIVE SUMMARY
 - **Strategic Thesis:** TaskFlow Pro will capture 10% of the mid-market project management space by becoming the first PM platform designed specifically for creative and consulting workflows, leveraging AI-powered resource optimization and industry-specific templates to create switching costs through deep workflow integration.
 
-- **Key Opportunities:** 
+- **Key Opportunities:**
   1. Underserved vertical focus (creative/consulting) with specific workflow needs
   2. AI resource optimization addresses biggest pain point (utilization rates)
   3. Partner ecosystem for industry-specific integrations
 
-- **Critical Success Factors:** 
+- **Critical Success Factors:**
   - Achieve product-market fit in creative agency vertical first
   - Build defensible AI capabilities for resource prediction
   - Create network effects through client collaboration features
@@ -308,7 +317,9 @@ Leverage Points Identified:
 ```
 
 ### Example 2: Consumer IoT Strategy - Smart Home Ecosystem
+
 **Input**:
+
 ```
 {{product_name}}: EcoTherm Smart Thermostat
 {{industry}}: Consumer IoT / Smart Home
@@ -323,6 +334,7 @@ Leverage Points Identified:
 ```
 
 **Output Excerpt**:
+
 ```
 ## PRODUCT STRATEGY BLUEPRINT
 
@@ -358,7 +370,9 @@ For environmentally-conscious homeowners who want to reduce their carbon footpri
 ```
 
 ### Example 3: Enterprise Software Platform Strategy
+
 **Input**:
+
 ```
 {{product_name}}: DataVault Enterprise
 {{industry}}: Enterprise Data Management and Analytics
@@ -373,6 +387,7 @@ For environmentally-conscious homeowners who want to reduce their carbon footpri
 ```
 
 **Output Excerpt**:
+
 ```
 ### RISK MITIGATION FRAMEWORK
 
@@ -386,6 +401,7 @@ For environmentally-conscious homeowners who want to reduce their carbon footpri
 ```
 
 ## Related Prompts
+
 - [First Principles Product Development](../creative/first-principles-product-development.md)
 - [Competitive Analysis Framework](../business/competitive-analysis-framework.md)
 - [Market Ecosystem Mapping](../business/market-ecosystem-mapping.md)
@@ -393,6 +409,7 @@ For environmentally-conscious homeowners who want to reduce their carbon footpri
 ## Research Notes
 
 ### Development Insights
+
 This enhanced prompt template was developed through extensive analysis of successful product strategies across multiple industries and company stages. Key findings that shaped the template:
 
 1. **Multi-Persona Approach**: Traditional single-perspective prompts often miss critical insights. By explicitly combining Product Manager, Systems Thinker, and Market Strategist personas, the output captures both internal execution excellence and external market dynamics.
@@ -404,26 +421,32 @@ This enhanced prompt template was developed through extensive analysis of succes
 4. **Systems Dynamics Emphasis**: Many product failures stem from misunderstanding ecosystem dynamics. The explicit focus on feedback loops and leverage points helps identify non-obvious opportunities and risks.
 
 ### Optimal Use Cases
+
 - **New Market Entry**: Especially powerful for identifying ecosystem dynamics and leverage points
-- **Competitive Repositioning**: Helps find differentiation opportunities in crowded markets  
+- **Competitive Repositioning**: Helps find differentiation opportunities in crowded markets
 - **Platform Strategy Development**: Excellent for understanding network effects and ecosystem plays
 - **Digital Transformation**: Useful for legacy companies navigating technology transitions
 
 ### Iteration Patterns
+
 Through testing, these follow-up prompts proved most valuable:
+
 - "Deeper dive on [specific feedback loop]" - Expands on system dynamics
 - "Sensitivity analysis on [key assumption]" - Tests strategy robustness
 - "Competitive response scenarios" - Anticipates market reactions
 - "Implementation barriers analysis" - Identifies execution challenges
 
 ### Common Pitfalls to Avoid
+
 1. **Insufficient Context**: The more specific the input, the more actionable the output
 2. **Ignoring Constraints**: Always include real limitations for realistic strategies
 3. **Static Thinking**: Markets evolve - use the adaptive mechanisms section actively
 4. **Over-complexity**: Start with MVP strategy, then layer in sophistication
 
 ### Enhancement Opportunities
+
 Consider combining with:
+
 - Financial modeling prompts for ROI analysis
 - Customer research prompts for validation
 - Technical architecture prompts for implementation planning

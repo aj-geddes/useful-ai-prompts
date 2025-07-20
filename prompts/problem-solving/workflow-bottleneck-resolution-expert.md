@@ -1,6 +1,7 @@
 # Workflow Bottleneck Resolution Expert and Process Flow Optimizer
 
 ## Metadata
+
 - **Category**: Problem-Solving
 - **Tags**: workflow bottlenecks, process optimization, flow analysis, capacity management, throughput improvement
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert workflow bottleneck resolution skills with process flow optimization to systematically identify, analyze, and resolve workflow constraints that limit organizational throughput and efficiency. It employs proven flow analysis methodologies, constraint optimization techniques, and process improvement strategies to achieve optimal workflow performance.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise workflow bottleneck resolution system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR WORKFLOW OPTIMIZATION STRATEGY AS:
 
 **Workflow Scope**:
 End-to-end software development and deployment process including:
+
 - Code development and peer review
 - Automated testing and quality assurance
 - Security scanning and compliance validation
@@ -94,6 +98,7 @@ End-to-end software development and deployment process including:
 - Deployment and production validation
 
 **Current Workflow Constraints**:
+
 1. **Code Review Bottleneck**: 5-day average review time with reviewer capacity constraints
 2. **Testing Queue Backlog**: 3-day testing backlog due to limited test environment capacity
 3. **Manual Approval Gates**: 2-day management approval delays for production deployments
@@ -106,6 +111,7 @@ End-to-end software development and deployment process including:
 Apply theory of constraints and lean flow principles to eliminate bottlenecks, balance capacity, and create smooth continuous flow that reduces cycle time by 70% while improving quality and reducing failures.
 
 **Flow Optimization Approach**:
+
 - **Constraint Elimination**: Systematic identification and resolution of workflow bottlenecks
 - **Capacity Balancing**: Resource allocation optimization to match demand with capacity
 - **Flow Smoothing**: Elimination of batch processing and queue buildup
@@ -113,6 +119,7 @@ Apply theory of constraints and lean flow principles to eliminate bottlenecks, b
 - **Knowledge Distribution**: Cross-training and knowledge sharing to eliminate silos
 
 **Key Optimization Strategies**:
+
 1. **Parallel Processing**: Convert sequential bottlenecks to parallel workflows
 2. **Automated Gates**: Replace manual approvals with automated quality gates
 3. **Capacity Expansion**: Strategic resource allocation to constraint points
@@ -120,6 +127,7 @@ Apply theory of constraints and lean flow principles to eliminate bottlenecks, b
 5. **Continuous Improvement**: Embedded optimization culture and practices
 
 **Expected Flow Improvements**:
+
 - 70% reduction in release cycle time (6 weeks to 2 weeks)
 - 88% reduction in deployment failures (40% to <5%)
 - 80% reduction in queue wait times across all stages
@@ -131,6 +139,7 @@ Apply theory of constraints and lean flow principles to eliminate bottlenecks, b
 #### End-to-End Workflow Mapping
 
 **Current State Value Stream Map**:
+
 ```
 SOFTWARE DEVELOPMENT WORKFLOW ANALYSIS:
 
@@ -184,31 +193,32 @@ WASTE TIME: 13 days (68%)
 #### Bottleneck Identification and Analysis
 
 **Mathematical Constraint Analysis**:
+
 ```python
 # Workflow Capacity Analysis Using Queuing Theory
 class WorkflowBottleneckAnalyzer:
     def __init__(self):
         self.stages = {}
         self.flow_analyzer = FlowAnalysisEngine()
-        
+
     def analyze_workflow_constraints(self, workflow_data):
         """
         Apply queuing theory to identify workflow bottlenecks
         """
         constraint_analysis = {}
-        
+
         for stage_name, stage_data in workflow_data.items():
             # Calculate stage capacity and utilization
             capacity_analysis = self.analyze_stage_capacity(stage_data)
-            
+
             # Apply Little's Law: L = λW (Queue Length = Arrival Rate × Wait Time)
             queue_analysis = self.calculate_queue_metrics(stage_data)
-            
+
             # Identify bottleneck severity
             bottleneck_score = self.calculate_bottleneck_score(
                 capacity_analysis, queue_analysis
             )
-            
+
             constraint_analysis[stage_name] = {
                 'capacity_utilization': capacity_analysis.utilization,
                 'queue_length': queue_analysis.average_queue_length,
@@ -218,9 +228,9 @@ class WorkflowBottleneckAnalyzer:
                 'constraint_type': self.classify_constraint_type(stage_data),
                 'optimization_potential': self.assess_optimization_potential(stage_data)
             }
-        
+
         return self.prioritize_constraints(constraint_analysis)
-    
+
     def calculate_bottleneck_score(self, capacity_analysis, queue_analysis):
         """
         Calculate composite bottleneck score
@@ -228,14 +238,14 @@ class WorkflowBottleneckAnalyzer:
         utilization_factor = capacity_analysis.utilization  # 0-1 scale
         queue_factor = min(queue_analysis.average_queue_length / 10, 1)  # Normalize to 0-1
         wait_factor = min(queue_analysis.average_wait_time / 5, 1)  # 5 days max normalized
-        
+
         # Weighted bottleneck score
         bottleneck_score = (
             utilization_factor * 0.4 +  # 40% weight on utilization
             queue_factor * 0.3 +        # 30% weight on queue length
             wait_factor * 0.3            # 30% weight on wait time
         )
-        
+
         return bottleneck_score
 
 # Current Workflow Bottleneck Analysis Results
@@ -272,15 +282,17 @@ workflow_analysis_results = {
 **Constraint Root Cause Investigation**:
 
 **Code Review Bottleneck Analysis**:
+
 - **Primary Cause**: Limited reviewer capacity (3 senior developers for 15-person team)
 - **Secondary Cause**: Sequential review process preventing parallel reviews
-- **Contributing Factors**: 
+- **Contributing Factors**:
   - No review prioritization system
   - Inconsistent review quality standards
   - Knowledge concentration in senior team members
   - Large code changes requiring extensive review time
 
 **Testing Environment Bottleneck Analysis**:
+
 - **Primary Cause**: Insufficient test environment capacity (2 environments for 15 developers)
 - **Secondary Cause**: Long-running tests blocking environment availability
 - **Contributing Factors**:
@@ -290,6 +302,7 @@ workflow_analysis_results = {
   - Lack of test optimization and parallelization
 
 **Management Approval Bottleneck Analysis**:
+
 - **Primary Cause**: Manual approval process requiring management availability
 - **Secondary Cause**: Risk-averse culture requiring multiple approvals
 - **Contributing Factors**:
@@ -303,6 +316,7 @@ workflow_analysis_results = {
 #### Code Review Bottleneck Resolution
 
 **Parallel Review System Implementation**:
+
 ```python
 # Intelligent Code Review Distribution System
 class OptimizedCodeReviewSystem:
@@ -310,7 +324,7 @@ class OptimizedCodeReviewSystem:
         self.reviewer_pool = ReviewerPool()
         self.review_scheduler = ReviewScheduler()
         self.quality_analyzer = CodeQualityAnalyzer()
-        
+
     def implement_parallel_review_workflow(self):
         """
         Transform sequential reviews to intelligent parallel processing
@@ -335,9 +349,9 @@ class OptimizedCodeReviewSystem:
                 'quality_gates': self.implement_quality_automation()
             }
         }
-        
+
         return optimization_strategies
-    
+
     def design_automated_review_assistance(self):
         """
         AI-powered review assistance to accelerate human reviews
@@ -362,14 +376,14 @@ class OptimizedCodeReviewSystem:
                 'documentation_generation': 'Automated documentation updates'
             }
         }
-        
+
         expected_improvements = {
             'review_time_reduction': '60%',  # 2 days average to 0.8 days
             'review_quality_improvement': '40%',
             'reviewer_capacity_increase': '150%',
             'review_consistency': '90% improvement'
         }
-        
+
         return {
             'automation_features': automation_features,
             'expected_improvements': expected_improvements
@@ -379,6 +393,7 @@ class OptimizedCodeReviewSystem:
 #### Testing Environment Bottleneck Resolution
 
 **Scalable Test Infrastructure**:
+
 ```yaml
 # Containerized Test Environment Architecture
 apiVersion: v1
@@ -408,7 +423,7 @@ data:
         test_sharding: automatic
         environment_sharing: safe_multi_tenancy
         resource_pooling: dynamic_allocation
-    
+
     capacity_improvements:
       environment_availability: "99.5%"  # vs 60% with manual setup
       provisioning_speed: "99% faster"   # 2 minutes vs 1 week
@@ -417,6 +432,7 @@ data:
 ```
 
 **Test Execution Optimization**:
+
 ```python
 # Intelligent Test Execution Engine
 class OptimizedTestExecution:
@@ -424,7 +440,7 @@ class OptimizedTestExecution:
         self.test_analyzer = TestAnalyzer()
         self.execution_optimizer = ExecutionOptimizer()
         self.environment_manager = EnvironmentManager()
-        
+
     def implement_intelligent_test_execution(self):
         """
         Optimize test execution for maximum throughput and efficiency
@@ -449,14 +465,14 @@ class OptimizedTestExecution:
                 'availability_improvement': '400% increase in availability'
             }
         }
-        
+
         performance_improvements = {
             'test_execution_time': '75% reduction',
             'environment_wait_time': '90% reduction',
             'test_reliability': '95% improvement',
             'resource_utilization': '200% improvement'
         }
-        
+
         return {
             'optimization_features': optimization_features,
             'performance_improvements': performance_improvements
@@ -466,6 +482,7 @@ class OptimizedTestExecution:
 #### Approval Process Bottleneck Resolution
 
 **Automated Risk-Based Approval System**:
+
 ```python
 # Intelligent Automated Approval System
 class AutomatedApprovalSystem:
@@ -473,7 +490,7 @@ class AutomatedApprovalSystem:
         self.risk_analyzer = DeploymentRiskAnalyzer()
         self.approval_engine = ApprovalDecisionEngine()
         self.audit_trail = AuditTrailManager()
-        
+
     def implement_risk_based_approvals(self):
         """
         Replace manual approvals with intelligent automated decision making
@@ -498,19 +515,19 @@ class AutomatedApprovalSystem:
                 'monitoring_integration': 'Real-time monitoring and alerting'
             }
         }
-        
+
         approval_improvements = {
             'approval_time_reduction': '85%',  # 2 days to 0.3 days
             'approval_consistency': '95% improvement',
             'risk_accuracy': '90% improvement',
             'process_overhead': '70% reduction'
         }
-        
+
         return {
             'approval_framework': approval_framework,
             'approval_improvements': approval_improvements
         }
-    
+
     def calculate_deployment_risk_score(self, deployment_data):
         """
         Intelligent risk calculation for deployment approval
@@ -523,7 +540,7 @@ class AutomatedApprovalSystem:
             'business_impact': self.assess_business_impact(deployment_data),
             'rollback_difficulty': self.assess_rollback_complexity(deployment_data)
         }
-        
+
         # Weighted risk score calculation
         risk_weights = {
             'code_complexity': 0.20,
@@ -533,12 +550,12 @@ class AutomatedApprovalSystem:
             'business_impact': 0.15,
             'rollback_difficulty': 0.10
         }
-        
+
         weighted_risk_score = sum(
             risk_factors[factor] * risk_weights[factor]
             for factor in risk_factors
         )
-        
+
         return {
             'risk_score': weighted_risk_score,
             'risk_level': self.classify_risk_level(weighted_risk_score),
@@ -552,6 +569,7 @@ class AutomatedApprovalSystem:
 #### Continuous Flow Design
 
 **End-to-End Flow Optimization**:
+
 ```python
 # Comprehensive Workflow Flow Optimizer
 class WorkflowFlowOptimizer:
@@ -559,7 +577,7 @@ class WorkflowFlowOptimizer:
         self.flow_analyzer = FlowAnalysisEngine()
         self.capacity_planner = CapacityPlanner()
         self.optimization_engine = OptimizationEngine()
-        
+
     def design_optimized_workflow(self, current_workflow):
         """
         Design optimized workflow with eliminated bottlenecks
@@ -608,7 +626,7 @@ class WorkflowFlowOptimizer:
                 'optimization': 'Blue-green deployment with automated rollback'
             }
         }
-        
+
         flow_improvements = {
             'total_cycle_time': '6 days',  # Reduced from 19 days (68% improvement)
             'value_added_ratio': '75%',    # Improved from 32%
@@ -616,7 +634,7 @@ class WorkflowFlowOptimizer:
             'quality_improvement': '80%',      # Reduced failures
             'predictability': '95%'            # Consistent timing
         }
-        
+
         return {
             'optimized_workflow': optimized_workflow,
             'flow_improvements': flow_improvements
@@ -626,6 +644,7 @@ class WorkflowFlowOptimizer:
 #### Capacity Balancing Strategy
 
 **Dynamic Capacity Management**:
+
 ```python
 # Intelligent Capacity Balancing System
 class CapacityBalancingSystem:
@@ -633,7 +652,7 @@ class CapacityBalancingSystem:
         self.capacity_monitor = CapacityMonitor()
         self.demand_predictor = DemandPredictor()
         self.resource_allocator = DynamicResourceAllocator()
-        
+
     def implement_dynamic_capacity_balancing(self):
         """
         Implement intelligent capacity management across workflow stages
@@ -658,30 +677,30 @@ class CapacityBalancingSystem:
                 'overflow_management': self.implement_overflow_handling()
             }
         }
-        
+
         return capacity_strategy
-    
+
     def calculate_optimal_capacity_allocation(self, workflow_stages):
         """
         Calculate optimal resource allocation across workflow stages
         """
         # Apply Little's Law and constraint theory
         optimal_allocation = {}
-        
+
         for stage_name, stage_data in workflow_stages.items():
             # Calculate required capacity based on throughput targets
             target_throughput = stage_data['target_throughput']
             average_processing_time = stage_data['average_processing_time']
-            
+
             # Little's Law: Required Capacity = Throughput × Processing Time
             required_capacity = target_throughput * average_processing_time
-            
+
             # Add buffer for variability (20% buffer)
             buffered_capacity = required_capacity * 1.2
-            
+
             # Consider utilization target (80% for sustainable performance)
             optimal_capacity = buffered_capacity / 0.8
-            
+
             optimal_allocation[stage_name] = {
                 'current_capacity': stage_data['current_capacity'],
                 'required_capacity': required_capacity,
@@ -691,7 +710,7 @@ class CapacityBalancingSystem:
                     stage_data['current_capacity'], optimal_capacity
                 )
             }
-        
+
         return optimal_allocation
 ```
 
@@ -700,6 +719,7 @@ class CapacityBalancingSystem:
 #### Performance Monitoring and Metrics
 
 **Workflow Performance Dashboard**:
+
 ```python
 # Real-time Workflow Performance Monitoring
 class WorkflowPerformanceMonitor:
@@ -707,7 +727,7 @@ class WorkflowPerformanceMonitor:
         self.metrics_collector = WorkflowMetricsCollector()
         self.analytics_engine = WorkflowAnalyticsEngine()
         self.alert_manager = WorkflowAlertManager()
-        
+
     def implement_performance_monitoring(self):
         """
         Comprehensive workflow performance monitoring and optimization
@@ -732,9 +752,9 @@ class WorkflowPerformanceMonitor:
                 'process_improvements': 'Workflow enhancement opportunities'
             }
         }
-        
+
         return monitoring_framework
-    
+
     def calculate_workflow_kpis(self, workflow_data):
         """
         Calculate key performance indicators for workflow optimization
@@ -759,13 +779,14 @@ class WorkflowPerformanceMonitor:
                 'bottleneck_impact': self.assess_bottleneck_impact(workflow_data)
             }
         }
-        
+
         return kpis
 ```
 
 #### Continuous Improvement Engine
 
 **Automated Optimization System**:
+
 ```python
 # Intelligent Continuous Improvement Engine
 class ContinuousImprovementEngine:
@@ -773,7 +794,7 @@ class ContinuousImprovementEngine:
         self.pattern_analyzer = WorkflowPatternAnalyzer()
         self.optimization_engine = WorkflowOptimizationEngine()
         self.improvement_tracker = ImprovementTracker()
-        
+
     def implement_continuous_optimization(self):
         """
         Automated continuous improvement for workflow optimization
@@ -798,11 +819,12 @@ class ContinuousImprovementEngine:
                 'improvement_tracking': self.track_improvement_effectiveness()
             }
         }
-        
+
         return improvement_framework
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive workflow mapping and bottleneck identification
 2. Apply constraint theory to prioritize and address critical bottlenecks
 3. Design optimized workflow with parallel processing and automation
@@ -813,8 +835,11 @@ class ContinuousImprovementEngine:
 8. Scale optimization approaches across multiple workflows and processes
 
 ## Examples
+
 ### Example 1: Manufacturing Workflow Optimization
-**Input**: 
+
+**Input**:
+
 ```
 {{workflow_type}}: Manufacturing production line
 {{bottleneck_type}}: Equipment capacity constraints and quality control delays
@@ -826,7 +851,9 @@ class ContinuousImprovementEngine:
 **Output**: [Manufacturing workflow optimization with equipment scheduling, quality automation, operator cross-training, and lean production principles]
 
 ### Example 2: Customer Service Workflow
+
 **Input**:
+
 ```
 {{workflow_type}}: Customer service request processing
 {{workflow_scale}}: Organization-wide affecting multiple departments
@@ -838,11 +865,13 @@ class ContinuousImprovementEngine:
 **Output**: [Customer service workflow optimization with intelligent routing, automated responses, capacity management, and service level optimization]
 
 ## Related Prompts
+
 - [Process Optimization Expert](/prompts/problem-solving/process-optimization.md)
 - [Operational Excellence Specialist](/prompts/optimization/operational-excellence.md)
 - [Capacity Planning Expert](/prompts/planning/resource-allocation.md)
 
 ## Research Notes
+
 - Based on theory of constraints, queuing theory, and lean flow principles
 - Integrates mathematical optimization with practical workflow improvement
 - Emphasizes systematic bottleneck identification and resolution

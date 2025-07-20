@@ -1,6 +1,7 @@
 # Competitive Analysis Expert and Strategic Intelligence System
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: competitive analysis, market intelligence, strategic positioning, competitor profiling, benchmarking
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines deep competitive intelligence expertise with strategic positioning mastery to deliver comprehensive competitor analysis. It employs multiple analytical frameworks to understand competitive dynamics, identify strategic opportunities, and develop winning positioning strategies.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise competitive analysis system combining:
 
@@ -88,67 +91,73 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Industry Structure Analysis
 ```
+
 Porter's Five Forces Assessment:
 ┌─────────────────────────────────────────────┐
-│           COMPETITIVE INTENSITY             │
-│                                            │
-│  Supplier     ←  INDUSTRY  →    Buyer     │
-│   Power           RIVALRY         Power    │
-│   (3/10)          (8/10)         (6/10)   │
-│                                            │
-│      ↑                              ↑      │
-│   Threat of        Threat of              │
-│  New Entrants     Substitutes             │
-│    (4/10)           (7/10)                │
+│ COMPETITIVE INTENSITY │
+│ │
+│ Supplier ← INDUSTRY → Buyer │
+│ Power RIVALRY Power │
+│ (3/10) (8/10) (6/10) │
+│ │
+│ ↑ ↑ │
+│ Threat of Threat of │
+│ New Entrants Substitutes │
+│ (4/10) (7/10) │
 └─────────────────────────────────────────────┘
 
 Key Dynamics:
 • High rivalry due to: {{market_maturity_commoditization}}
 • Increasing substitute threat from: {{disruptive_alternatives}}
 • Buyer power rising through: {{consolidation_information}}
+
 ```
 
 #### Strategic Group Mapping
 ```
+
                 High Price/Quality
                        │
     Premium          │      Specialist
     Leaders          │      Players
       A ●           │        ● E
-   (25%, Stable)    │    (10%, Growing)
-                    │
+
+(25%, Stable) │ (10%, Growing)
+│
 ─────────────────────┼─────────────────────
-                    │
-      C ●           │        ● B
-   (15%, Entering)  │    (30%, Defending)
-                    │
-   Disruptors       │    Mass Market
-                    │      Leaders
-                Low Price/Quality
+│
+C ● │ ● B
+(15%, Entering) │ (30%, Defending)
+│
+Disruptors │ Mass Market
+│ Leaders
+Low Price/Quality
 
 Movement Patterns:
 → B moving upmarket (quality investments)
 ↑ C disrupting from below (new model)
 ← E expanding scope (adjacencies)
+
 ```
 
 ### COMPETITOR PROFILES
 
 #### Competitor A: {{Market_Leader_Corp}}
 ```
+
 Strategic Profile:
 ┌─────────────────────────────────────────────┐
-│ Market Position: #1 (25% share)             │
-│ Strategy: Cost Leadership + Scale           │
-│ Core Strengths:                             │
-│ • Distribution network (8,000 locations)    │
-│ • Brand recognition (85% unaided)          │
-│ • Operational efficiency (15% cost adv.)    │
-│                                            │
-│ Key Vulnerabilities:                        │
-│ • Legacy technology debt                    │
-│ • Slow innovation (18-month cycles)        │
-│ • Customer satisfaction declining (NPS -5)  │
+│ Market Position: #1 (25% share) │
+│ Strategy: Cost Leadership + Scale │
+│ Core Strengths: │
+│ • Distribution network (8,000 locations) │
+│ • Brand recognition (85% unaided) │
+│ • Operational efficiency (15% cost adv.) │
+│ │
+│ Key Vulnerabilities: │
+│ • Legacy technology debt │
+│ • Slow innovation (18-month cycles) │
+│ • Customer satisfaction declining (NPS -5) │
 └─────────────────────────────────────────────┘
 
 Financial Performance:
@@ -158,51 +167,57 @@ Financial Performance:
 └── M&A Activity: 2 acquisitions in 24 months
 
 Strategic Initiatives:
+
 1. Digital transformation ($500M investment)
 2. Cost reduction program (target 10%)
 3. Emerging market expansion
+
 ```
 
 #### Competitor B: {{Challenger_Inc}}
 ```
+
 Capability Assessment:
-                    Us  Them  Gap
-Product Quality     7    9    -2
-Innovation Speed    8    6    +2
-Customer Service    8    7    +1
-Price Point        6    8    -2
-Distribution       5    9    -4
-Brand Strength     6    8    -2
-Technology         9    6    +3
-Overall Position   7.0  7.6  -0.6
+Us Them Gap
+Product Quality 7 9 -2
+Innovation Speed 8 6 +2
+Customer Service 8 7 +1
+Price Point 6 8 -2
+Distribution 5 9 -4
+Brand Strength 6 8 -2
+Technology 9 6 +3
+Overall Position 7.0 7.6 -0.6
 
 Competitive Behaviors:
 • Aggressive pricing in key accounts
 • Fast follower on product innovation
 • Heavy marketing spend (2x industry avg)
 • Acquisition-driven growth strategy
+
 ```
 
 ### COMPETITIVE DYNAMICS
 
 #### Recent Competitive Moves
 ```
+
 Timeline of Strategic Actions:
 2024 Q1 │ A: Launched premium line
-        │ B: Acquired startup X
+│ B: Acquired startup X
 2024 Q2 │ C: Entered market via platform
-        │ A: Price cut 15%
+│ A: Price cut 15%
 2024 Q3 │ B: Partnership with Tech Giant
-        │ D: Filed key patents
+│ D: Filed key patents
 2024 Q4 │ A: Announced restructuring
-        │ C: Raised $200M funding
+│ C: Raised $200M funding
 
 Pattern Analysis:
 • Increasing move frequency (2x vs 2023)
 • Focus shifting to technology/digital
 • Price competition intensifying
 • Consolidation accelerating
-```
+
+````
 
 #### Competitive Intelligence
 ```python
@@ -238,17 +253,18 @@ if competitor_action == 'price_cut':
         'B': 'Bundle offerings (65% probability)',
         'C': 'Ignore, focus on value (90% probability)'
     }
-```
+````
 
 ### STRATEGIC POSITIONING ANALYSIS
 
 #### Positioning Map
+
 ```
 Customer Value Perception Map:
                 Innovation
                     ▲
                     │    ◆ Us (Target)
-         E ●       │   
+         E ●       │
    "Tech Leader"   │  ● C "Disruptor"
                    │
 ─────────────────────────────────► Service
@@ -265,6 +281,7 @@ Value Proposition Gaps:
 ```
 
 #### Differentiation Opportunities
+
 ```
 Blue Ocean Analysis:
 ┌─────────────────────────────────────────────┐
@@ -293,6 +310,7 @@ Blue Ocean Analysis:
 ### COMPETITIVE SCENARIOS
 
 #### Scenario Planning
+
 ```
 Scenario 1: "Digital Disruption" (40% probability)
 ├── Trigger: Tech giant enters market
@@ -317,6 +335,7 @@ Scenario 3: "Status Quo Evolution" (25% probability)
 ```
 
 #### War Gaming Results
+
 ```
 Competitive Simulation: Price War Scenario
 ┌────────────┬──────────┬──────────┬───────────┐
@@ -338,6 +357,7 @@ Key Learning: Innovation beats price wars
 ### STRATEGIC RECOMMENDATIONS
 
 #### Positioning Strategy
+
 ```
 Recommended Strategic Position:
 "The Intelligence-Driven Choice"
@@ -348,7 +368,7 @@ Positioning Pillars:
    - Anticipate customer needs
    - Proactive recommendations
 
-2. SEAMLESS INTEGRATION  
+2. SEAMLESS INTEGRATION
    - One-click connections
    - Universal compatibility
    - Zero friction adoption
@@ -365,6 +385,7 @@ Competitive Moats:
 ```
 
 #### Competitive Response Playbook
+
 ```
 IF Competitor A cuts price:
 ├── Immediate: Hold pricing, emphasize value
@@ -388,6 +409,7 @@ IF New entrant emerges:
 ### COMPETITIVE MONITORING SYSTEM
 
 #### Intelligence Dashboard
+
 ```
 Real-Time Competitive Signals:
 ┌─────────────────────────────────────────────┐
@@ -409,11 +431,12 @@ Key Metrics to Track:
 ```
 
 #### Early Warning System
+
 ```python
 # Competitive Threat Detection
 early_warnings = {
     'price_war': {
-        'indicators': ['3 cuts in 60 days', 
+        'indicators': ['3 cuts in 60 days',
                       'Margin guidance down',
                       'Inventory buildup'],
         'current_risk': 'MEDIUM',
@@ -439,6 +462,7 @@ early_warnings = {
 ### ACTION PLAN
 
 #### Immediate Priorities (30 days)
+
 1. **Secure Competitive Position**
    - Launch customer loyalty program
    - Lock in key account contracts
@@ -455,6 +479,7 @@ early_warnings = {
    - Build competitive response team
 
 #### Strategic Initiatives (90-180 days)
+
 ```
 Initiative Roadmap:
 Q1: Foundation
@@ -462,7 +487,7 @@ Q1: Foundation
 ├── Win/loss program implementation
 └── Differentiation communication campaign
 
-Q2: Differentiation  
+Q2: Differentiation
 ├── Launch unique feature set
 ├── Strategic partnership announcements
 └── Thought leadership campaign
@@ -481,16 +506,21 @@ Q4: Consolidation
 ### APPENDICES
 
 #### A. Competitor Financial Analysis
+
 [Detailed P&L analysis, ratio comparisons, investment patterns]
 
 #### B. Patent Landscape
+
 [Technology patents, filing trends, white spaces]
 
 #### C. Executive Profiles
+
 [Leadership backgrounds, strategies, decision patterns]
 
 #### D. Customer Switching Analysis
+
 [Switching costs, triggers, prevention strategies]
+
 ```
 
 ## Usage Instructions
@@ -504,13 +534,15 @@ Q4: Consolidation
 
 ## Examples
 ### Example 1: SaaS Competitive Analysis
-**Input**: 
+**Input**:
 ```
+
 {{industry_sector}}: B2B SaaS CRM
 {{our_company}}: Mid-size player, 8% market share, strong in healthcare
 {{key_competitors}}: Salesforce, HubSpot, Pipedrive
 {{strategic_objective}}: Identify differentiation opportunity for growth
 {{specific_questions}}: How to compete against Salesforce in enterprise?
+
 ```
 
 **Output**: [Comprehensive analysis identifying vertical specialization in healthcare CRM with compliance features as key differentiator, specific strategies to defend against Salesforce while growing in the specialty]
@@ -526,3 +558,4 @@ Q4: Consolidation
 - Includes war gaming and scenario planning for dynamic markets
 - Provides specific response playbooks for common competitive moves
 - Integrates early warning systems for proactive strategy
+```

@@ -1,6 +1,7 @@
 # Resource Constraint Solutions Expert and Optimization Strategist
 
 ## Metadata
+
 - **Category**: Problem-Solving
 - **Tags**: resource constraints, optimization, efficiency, resource allocation, constraint management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert resource constraint problem-solving with optimization strategy to maximize outcomes within resource limitations. It employs systematic constraint analysis, creative resource optimization, and strategic allocation methods to achieve objectives despite resource scarcity.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise resource constraint solutions system combining:
 
@@ -86,6 +89,7 @@ DELIVER YOUR CONSTRAINT SOLUTION STRATEGY AS:
 **Timeline**: Must achieve growth targets within 12 months despite resource constraints
 
 **Specific Constraints**:
+
 1. **Budget Reduction**: 40% budget cut from $5M to $3M annual operating budget
 2. **Hiring Freeze**: No new hires allowed for 8 months despite 300% growth demand
 3. **Infrastructure Limits**: Current infrastructure at 85% capacity with limited expansion budget
@@ -93,6 +97,7 @@ DELIVER YOUR CONSTRAINT SOLUTION STRATEGY AS:
 5. **Quality Maintenance**: Must maintain service quality while scaling operations
 
 **Strategic Imperatives**:
+
 - Achieve 300% customer growth with existing team and reduced budget
 - Maintain 99% uptime and customer satisfaction >90%
 - Reduce operational costs by 25% while scaling operations
@@ -105,6 +110,7 @@ DELIVER YOUR CONSTRAINT SOLUTION STRATEGY AS:
 Transform resource constraints into competitive advantages through systematic optimization, automation leverage, and strategic partnerships, enabling sustainable growth that exceeds targets while building operational excellence.
 
 **Optimization Approach**:
+
 - **Automation-First Strategy**: Leverage technology to multiply human productivity
 - **Strategic Partnerships**: Access external resources through creative partnership models
 - **Process Excellence**: Eliminate waste and optimize workflows for maximum efficiency
@@ -112,6 +118,7 @@ Transform resource constraints into competitive advantages through systematic op
 - **Innovation Solutions**: Creative approaches to constraint circumvention and optimization
 
 **Key Solution Pillars**:
+
 1. **Productivity Multiplication**: 400% productivity increase through automation and optimization
 2. **Strategic Resource Access**: Access $5M+ worth of external resources through partnerships
 3. **Operational Excellence**: 50% efficiency improvement through process optimization
@@ -119,6 +126,7 @@ Transform resource constraints into competitive advantages through systematic op
 5. **Partnership Ecosystem**: Network of strategic partners providing resource multiplication
 
 **Expected Breakthrough Outcomes**:
+
 - 350% growth achievement with 60% resource utilization
 - 40% cost reduction while maintaining quality standards
 - 500% productivity improvement through optimization and automation
@@ -131,15 +139,16 @@ Transform resource constraints into competitive advantages through systematic op
 
 **Constraint Impact Matrix**:
 
-| Constraint Type | Current Impact | Severity Level | Growth Limitation | Mitigation Potential |
-|-----------------|----------------|----------------|-------------------|---------------------|
-| **Budget Limitation** | $2M reduction | Critical | Blocks infrastructure scaling | High - through efficiency |
-| **Personnel Freeze** | 0 new hires | Severe | Limits capacity expansion | Medium - through automation |
-| **Infrastructure** | 85% capacity | High | Prevents service scaling | High - through optimization |
-| **Time Pressure** | 12-month deadline | Critical | Compresses implementation | Medium - through prioritization |
-| **Quality Requirements** | Must maintain 99% | High | Limits optimization options | High - through process improvement |
+| Constraint Type          | Current Impact    | Severity Level | Growth Limitation             | Mitigation Potential               |
+| ------------------------ | ----------------- | -------------- | ----------------------------- | ---------------------------------- |
+| **Budget Limitation**    | $2M reduction     | Critical       | Blocks infrastructure scaling | High - through efficiency          |
+| **Personnel Freeze**     | 0 new hires       | Severe         | Limits capacity expansion     | Medium - through automation        |
+| **Infrastructure**       | 85% capacity      | High           | Prevents service scaling      | High - through optimization        |
+| **Time Pressure**        | 12-month deadline | Critical       | Compresses implementation     | Medium - through prioritization    |
+| **Quality Requirements** | Must maintain 99% | High           | Limits optimization options   | High - through process improvement |
 
 **Resource Allocation Current State**:
+
 ```
 Current Resource Distribution:
 ├── Personnel Costs (60% of budget - $1.8M)
@@ -166,18 +175,21 @@ Current Resource Distribution:
 **System Bottleneck Identification**:
 
 **Primary Constraint: Engineering Capacity**
+
 - **Current Capacity**: 15 engineers supporting 1,000 customers
 - **Growth Requirement**: Support 4,000 customers (300% increase)
 - **Constraint Math**: 1,000 customers / 15 engineers = 67 customers per engineer
 - **Scaling Challenge**: 4,000 customers / 15 engineers = 267 customers per engineer (400% workload increase)
 
 **Secondary Constraint: Customer Success Capacity**
+
 - **Current Capacity**: 4 CSMs managing 1,000 customers (250 customers per CSM)
 - **Industry Benchmark**: 150 customers per CSM for optimal service
 - **Growth Impact**: 4,000 customers requiring 27 CSMs (current: 4 CSMs)
 - **Resource Gap**: 575% capacity increase needed with 0% resource increase
 
 **Infrastructure Constraint Analysis**:
+
 ```python
 # Infrastructure Capacity Analysis
 class InfrastructureConstraintAnalyzer:
@@ -189,22 +201,22 @@ class InfrastructureConstraintAnalyzer:
             'database': 88   # 88% utilization
         }
         self.growth_multiplier = 4.0  # 300% growth = 4x current load
-        
+
     def analyze_constraint_impact(self):
         constraint_analysis = {}
-        
+
         for resource, utilization in self.current_capacity.items():
             projected_utilization = utilization * self.growth_multiplier
-            
+
             constraint_analysis[resource] = {
                 'current_utilization': utilization,
                 'projected_utilization': projected_utilization,
                 'constraint_severity': self.calculate_severity(projected_utilization),
                 'optimization_potential': self.calculate_optimization_potential(resource)
             }
-            
+
         return constraint_analysis
-    
+
     def calculate_severity(self, projected_utilization):
         if projected_utilization > 300:
             return 'Critical - System Failure'
@@ -223,6 +235,7 @@ class InfrastructureConstraintAnalyzer:
 **Comprehensive Automation Strategy**:
 
 **Customer Onboarding Automation**:
+
 ```python
 # Automated Customer Onboarding System
 class AutomatedOnboardingEngine:
@@ -230,7 +243,7 @@ class AutomatedOnboardingEngine:
         self.workflow_engine = WorkflowAutomationEngine()
         self.ai_assistant = CustomerOnboardingAI()
         self.integration_hub = SystemIntegrationHub()
-        
+
     def automate_onboarding_process(self):
         # Replace 40 hours of manual onboarding per customer
         automation_components = {
@@ -240,12 +253,12 @@ class AutomatedOnboardingEngine:
             'integration': self.automated_integration_setup(),
             'validation': self.automated_go_live_validation()
         }
-        
+
         # Productivity Impact Calculation
         time_savings_per_customer = 35  # hours (from 40 to 5 hours)
         customers_per_month = 250  # projected with 300% growth
         monthly_time_savings = time_savings_per_customer * customers_per_month
-        
+
         return {
             'automation_components': automation_components,
             'time_savings': monthly_time_savings,  # 8,750 hours per month
@@ -255,6 +268,7 @@ class AutomatedOnboardingEngine:
 ```
 
 **Support Automation Framework**:
+
 ```python
 # AI-Powered Customer Support Automation
 class SupportAutomationSystem:
@@ -262,7 +276,7 @@ class SupportAutomationSystem:
         self.ai_chatbot = AdvancedCustomerServiceAI()
         self.knowledge_base = AutomatedKnowledgeBase()
         self.ticket_router = IntelligentTicketRouter()
-        
+
     def implement_support_automation(self):
         # Automate 70% of customer support inquiries
         automation_capabilities = {
@@ -271,12 +285,12 @@ class SupportAutomationSystem:
             'issue_routing': self.intelligent_escalation_routing(),
             'proactive_support': self.predictive_issue_resolution()
         }
-        
+
         # Support Capacity Multiplication
         current_tickets_per_csm = 50  # per day
         automated_resolution_rate = 0.70  # 70% automation
         effective_capacity_multiplier = 1 / (1 - automated_resolution_rate)  # 3.33x
-        
+
         return {
             'automation_capabilities': automation_capabilities,
             'capacity_multiplier': effective_capacity_multiplier,
@@ -290,6 +304,7 @@ class SupportAutomationSystem:
 **Partnership-Based Resource Multiplication**:
 
 **Technology Partnership Program**:
+
 ```
 Strategic Partnership Framework:
 ├── Infrastructure Partnerships
@@ -315,13 +330,14 @@ Strategic Partnership Framework:
 ```
 
 **Partnership Value Quantification**:
+
 ```python
 # Partnership Value Calculator
 class PartnershipValueEngine:
     def __init__(self):
         self.partnership_catalog = PartnershipCatalog()
         self.value_calculator = ResourceValueCalculator()
-        
+
     def calculate_partnership_resource_access(self):
         partnership_value = {
             'infrastructure_access': {
@@ -343,13 +359,13 @@ class PartnershipValueEngine:
                 'total_operational': 900000  # $900K total value
             }
         }
-        
+
         total_partnership_value = sum([
             partnership_value['infrastructure_access']['total_infrastructure'],
             partnership_value['talent_access']['total_talent'],
             partnership_value['operational_support']['total_operational']
         ])
-        
+
         return {
             'partnership_breakdown': partnership_value,
             'total_resource_access': total_partnership_value,  # $3.98M
@@ -365,12 +381,14 @@ class PartnershipValueEngine:
 **Phase 1: Immediate Automation (Months 1-3)**
 
 **Quick-Win Automation Deployments**:
+
 - **Customer Onboarding Automation**: 80% reduction in manual onboarding time
 - **Support Ticket Automation**: 60% reduction in routine support workload
 - **Infrastructure Optimization**: 40% improvement in resource utilization efficiency
 - **Process Automation**: 50% reduction in administrative overhead
 
 **Resource Impact**:
+
 - **Productivity Gain**: 200% improvement in team productivity
 - **Capacity Increase**: Support for 1,500 customers with existing team
 - **Cost Reduction**: 25% reduction in operational costs
@@ -379,12 +397,14 @@ class PartnershipValueEngine:
 **Phase 2: Strategic Partnerships (Months 2-5)**
 
 **Partnership Program Launch**:
+
 - **Technology Partnerships**: Access to $1M+ worth of infrastructure and tools
 - **Talent Partnerships**: Access to 40+ additional technical resources
 - **Channel Partnerships**: 15 channel partners driving 30% of new customer acquisition
 - **Support Partnerships**: Customer community reducing support load by 40%
 
 **Resource Multiplication**:
+
 - **Effective Team Size**: 150 employees + 40 partner resources = 190 effective team members
 - **Infrastructure Budget**: $750K + $1M partner credits = $1.75M effective infrastructure budget
 - **Customer Acquisition**: 30% improvement in acquisition efficiency through channel partners
@@ -393,12 +413,14 @@ class PartnershipValueEngine:
 **Phase 3: Advanced Optimization (Months 4-8)**
 
 **Advanced Automation and AI**:
+
 - **Predictive Customer Success**: AI-powered customer health monitoring and intervention
 - **Intelligent Resource Allocation**: Dynamic resource allocation based on demand patterns
 - **Automated Scaling**: Infrastructure auto-scaling with cost optimization
 - **Advanced Analytics**: AI-powered business intelligence and optimization recommendations
 
 **Optimization Results**:
+
 - **Customer Growth**: Support for 3,000+ customers with optimized operations
 - **Efficiency Gains**: 300% improvement in operational efficiency
 - **Quality Excellence**: 99.5% uptime achievement with improved customer satisfaction
@@ -407,12 +429,14 @@ class PartnershipValueEngine:
 **Phase 4: Sustainable Growth Platform (Months 7-12)**
 
 **Growth Platform Completion**:
+
 - **Scalable Architecture**: Infrastructure supporting 10,000+ customers
 - **Self-Service Platform**: 90% customer self-service capability
 - **Partner Ecosystem**: Comprehensive partner ecosystem driving growth and support
 - **Operational Excellence**: World-class operational efficiency and customer experience
 
 **Growth Achievement**:
+
 - **Target Exceeded**: 350% growth achieved (4,000+ customers)
 - **Resource Efficiency**: 60% resource utilization for 300% growth
 - **Profitability**: 40% improvement in unit economics
@@ -423,6 +447,7 @@ class PartnershipValueEngine:
 #### Comprehensive Performance Tracking
 
 **Resource Efficiency Metrics**:
+
 ```python
 # Resource Efficiency Monitoring System
 class ResourceEfficiencyMonitor:
@@ -430,7 +455,7 @@ class ResourceEfficiencyMonitor:
         self.productivity_tracker = ProductivityTracker()
         self.cost_analyzer = CostEfficiencyAnalyzer()
         self.quality_monitor = QualityMetricsTracker()
-        
+
     def track_resource_optimization_performance(self):
         # Productivity Metrics
         productivity_metrics = {
@@ -439,7 +464,7 @@ class ResourceEfficiencyMonitor:
             'automation_efficiency': self.measure_automation_impact(),
             'partnership_leverage': self.assess_partnership_value_creation()
         }
-        
+
         # Cost Efficiency Metrics
         cost_metrics = {
             'cost_per_customer': self.calculate_unit_economics(),
@@ -447,7 +472,7 @@ class ResourceEfficiencyMonitor:
             'budget_optimization': self.track_budget_performance(),
             'roi_on_optimization': self.calculate_optimization_roi()
         }
-        
+
         # Quality Maintenance Metrics
         quality_metrics = {
             'customer_satisfaction': self.track_satisfaction_scores(),
@@ -455,7 +480,7 @@ class ResourceEfficiencyMonitor:
             'system_performance': self.track_technical_performance(),
             'growth_sustainability': self.assess_growth_quality()
         }
-        
+
         return {
             'productivity': productivity_metrics,
             'cost_efficiency': cost_metrics,
@@ -467,18 +492,21 @@ class ResourceEfficiencyMonitor:
 #### Continuous Optimization Framework
 
 **Dynamic Resource Allocation**:
+
 - **Real-Time Monitoring**: Continuous monitoring of resource utilization and constraint impact
 - **Predictive Analytics**: AI-powered prediction of resource needs and constraint emergence
 - **Automated Optimization**: Automated resource reallocation based on performance data
 - **Strategic Adjustment**: Regular strategic review and optimization of resource strategies
 
 **Constraint Evolution Management**:
+
 - **Constraint Monitoring**: Continuous monitoring for new constraints and changing constraint severity
 - **Proactive Solution Development**: Advance preparation for anticipated future constraints
 - **Optimization Iteration**: Regular iteration and improvement of optimization strategies
 - **Best Practice Development**: Development and sharing of constraint solution best practices
 
 ## Usage Instructions
+
 1. Begin with comprehensive constraint analysis and quantification
 2. Apply theory of constraints to identify system bottlenecks and optimization opportunities
 3. Develop multi-faceted optimization strategy combining automation, partnerships, and efficiency
@@ -489,8 +517,11 @@ class ResourceEfficiencyMonitor:
 8. Prepare for constraint evolution and changing resource requirements
 
 ## Examples
+
 ### Example 1: Budget Constraint in Non-Profit
-**Input**: 
+
+**Input**:
+
 ```
 {{constraint_type}}: Severe budget reduction for non-profit organization
 {{constraint_severity}}: Critical - 50% budget cut threatening mission delivery
@@ -502,7 +533,9 @@ class ResourceEfficiencyMonitor:
 **Output**: [Non-profit budget constraint solution with volunteer leverage, partnership development, efficiency optimization, and creative funding strategies]
 
 ### Example 2: Technology Startup Personnel Constraints
+
 **Input**:
+
 ```
 {{constraint_type}}: Limited technical talent in competitive market
 {{time_pressure}}: Urgent - product launch deadlines approaching
@@ -514,11 +547,13 @@ class ResourceEfficiencyMonitor:
 **Output**: [Technology talent constraint solution with automation, outsourcing, partnership strategies, and innovative talent acquisition approaches]
 
 ## Related Prompts
+
 - [Process Optimization Expert](/prompts/problem-solving/process-optimization.md)
 - [Efficiency Enhancement Specialist](/prompts/optimization/efficiency-enhancement.md)
 - [Strategic Resource Planner](/prompts/planning/resource-allocation.md)
 
 ## Research Notes
+
 - Based on theory of constraints and mathematical optimization principles
 - Integrates creative problem-solving with systematic constraint analysis
 - Emphasizes resource multiplication over resource addition

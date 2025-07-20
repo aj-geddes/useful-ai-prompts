@@ -1,6 +1,7 @@
 # Editorial Calendar Architect and Content Performance Optimizer
 
 ## Metadata
+
 - **Category**: Creative/Content Strategy
 - **Tags**: editorial calendar, content strategy, content marketing, publishing, SEO
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt creates comprehensive editorial calendars that align content production with business goals, audience needs, and SEO opportunities. It combines strategic content planning with data-driven optimization to build publishing schedules that drive engagement, support marketing objectives, and maximize content ROI across all channels.
 
 ## Prompt Template
+
 ```
 You are operating as a strategic content planning system combining:
 
@@ -97,12 +100,14 @@ DELIVER YOUR EDITORIAL CALENDAR AS:
 
 **Content Cluster**:
 ```
+
 Hub Page: "{{comprehensive_guide_title}}"
 ├── Spoke 1: "{{subtopic_article}}"
 ├── Spoke 2: "{{subtopic_article}}"
 ├── Spoke 3: "{{subtopic_article}}"
 ├── Spoke 4: "{{subtopic_article}}"
 └── Spoke 5: "{{subtopic_article}}"
+
 ```
 
 **Monthly Distribution**:
@@ -158,6 +163,7 @@ Hub Page: "{{comprehensive_guide_title}}"
 
 #### IDEATION TO PUBLICATION
 ```
+
 Monday: Editorial Meeting
 ├── Review performance data
 ├── Brainstorm new topics
@@ -176,29 +182,32 @@ Friday: Publishing & Promotion
 ├── Email newsletter
 ├── Social distribution
 └── Outreach for backlinks
+
 ```
 
 #### RESOURCE ALLOCATION
 ```
+
 Team Capacity (Hours/Week):
+
 - Content Manager: 40h
   └── Strategy: 10h
   └── Editing: 20h
   └── Promotion: 10h
-  
 - Writers (2): 60h total
   └── Research: 20h
   └── Writing: 40h
-  
 - Designer: 20h
   └── Graphics: 15h
   └── Video: 5h
+
 ```
 
 ### CONTENT MIX & CHANNEL STRATEGY
 
 #### FORMAT DISTRIBUTION
 ```
+
 Written Content (60%):
 ├── Long-form Guides: 20%
 ├── Blog Posts: 25%
@@ -213,6 +222,7 @@ Visual Content (25%):
 Audio (15%):
 ├── Podcast: 10%
 └── Audiograms: 5%
+
 ```
 
 #### CHANNEL OPTIMIZATION
@@ -245,19 +255,23 @@ Audio (15%):
 
 #### CONTENT ROI CALCULATION
 ```
+
 Monthly Investment:
+
 - Team Costs: ${{amount}}
 - Tools/Software: ${{amount}}
 - Paid Promotion: ${{amount}}
-Total: ${{total}}
+  Total: ${{total}}
 
 Monthly Returns:
+
 - Leads Generated: {{#}} × ${{value}} = ${{revenue}}
 - Brand Value: ${{estimated}}
 - SEO Value: ${{calculated}}
-Total Value: ${{total}}
+  Total Value: ${{total}}
 
 ROI: {{percentage}}%
+
 ```
 
 ### SEASONAL CONTENT PLANNING
@@ -279,6 +293,7 @@ ROI: {{percentage}}%
 #### CONTENT MULTIPLICATION
 **Hero Content** → **Derivative Formats**:
 ```
+
 Long-form Guide (3,000 words)
 ├── 5 Social Posts
 ├── 1 Infographic
@@ -287,6 +302,7 @@ Long-form Guide (3,000 words)
 ├── 10 Twitter Threads
 ├── 2 LinkedIn Articles
 └── 1 YouTube Video
+
 ```
 
 **Repurposing Calendar**:
@@ -321,6 +337,7 @@ Long-form Guide (3,000 words)
 ```
 
 ## Usage Instructions
+
 1. Define content strategy objectives and KPIs
 2. Research audience needs and keyword opportunities
 3. Audit existing content and identify gaps
@@ -331,8 +348,11 @@ Long-form Guide (3,000 words)
 8. Implement and iterate based on performance
 
 ## Examples
+
 ### Example 1: B2B SaaS Content Calendar
-**Input**: 
+
+**Input**:
+
 ```
 {{company_name}}: ProjectFlow Software
 {{industry_vertical}}: Project Management SaaS
@@ -346,11 +366,13 @@ Long-form Guide (3,000 words)
 **Output**: [Comprehensive 3-month editorial calendar with project management best practices pillar, productivity pillar, and team collaboration pillar, including 36 blog posts, 12 videos, and integrated promotion strategy]
 
 ## Related Prompts
+
 - [SEO Content Optimizer](/prompts/creative/content-strategy/seo-content-optimizer.md)
 - [Social Media Content Planner](/prompts/creative/content-strategy/social-media-planner.md)
 - [Email Campaign Strategist](/prompts/creative/content-strategy/email-strategist.md)
 
 ## Research Notes
+
 - Content pillars improve topical authority and SEO rankings by 45%
 - Consistent publishing schedule increases audience retention by 30%
 - Repurposing content extends reach by 3-5x with minimal additional effort

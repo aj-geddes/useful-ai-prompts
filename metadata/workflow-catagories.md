@@ -1,6 +1,7 @@
 # Workflow Categories for AI Prompt Development
 
 ## Analysis Workflows
+
 - Data Analysis
 - Market Research
 - Competitive Analysis
@@ -18,6 +19,7 @@
 - Predictive Analysis
 
 ## Creation Workflows
+
 - Content Creation
 - Report Generation
 - Proposal Development
@@ -35,6 +37,7 @@
 - Specification Creation
 
 ## Planning Workflows
+
 - Project Planning
 - Strategic Planning
 - Resource Allocation
@@ -52,6 +55,7 @@
 - Release Planning
 
 ## Problem-Solving Workflows
+
 - Debugging
 - Troubleshooting
 - Decision Making
@@ -69,6 +73,7 @@
 - Workflow Bottleneck Resolution
 
 ## Communication Workflows
+
 - Meeting Facilitation
 - Stakeholder Communication
 - Client Presentation
@@ -86,6 +91,7 @@
 - Conflict Mediation
 
 ## Learning & Development Workflows
+
 - Skill Acquisition
 - Knowledge Synthesis
 - Concept Explanation
@@ -103,6 +109,7 @@
 - Learning Experience Design
 
 ## Decision-Making Workflows
+
 - Option Evaluation
 - Prioritization Frameworks
 - Risk-Reward Assessment
@@ -120,6 +127,7 @@
 - Policy Decision Framework
 
 ## Creativity & Innovation Workflows
+
 - Brainstorming Facilitation
 - Idea Generation
 - Concept Development
@@ -137,6 +145,7 @@
 - Creative Brief Development
 
 ## Evaluation & Assessment Workflows
+
 - Performance Review
 - Quality Assurance
 - Usability Testing
@@ -154,6 +163,7 @@
 - ROI Analysis
 
 ## Optimization Workflows
+
 - Process Improvement
 - Resource Optimization
 - Efficiency Enhancement
@@ -171,6 +181,7 @@
 - Revenue Optimization
 
 ## Research Workflows
+
 - Literature Review
 - Competitive Intelligence
 - Market Research
@@ -188,6 +199,7 @@
 - Environmental Impact Research
 
 ## Management & Leadership Workflows
+
 - Team Building
 - Performance Management
 - Strategic Leadership
@@ -205,6 +217,7 @@
 - Executive Decision-Making
 
 ## Technical Workflows
+
 - System Architecture Design
 - Database Schema Development
 - API Design
@@ -222,6 +235,7 @@
 - Technical Documentation
 
 ## Customer-Focused Workflows
+
 - Customer Journey Mapping
 - User Experience Design
 - Customer Feedback Analysis

@@ -1,6 +1,7 @@
 # Pattern Recognition Expert and Cognitive Analytics Specialist
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: pattern recognition, cognitive analytics, anomaly detection, behavioral patterns, predictive insights
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines advanced pattern recognition expertise with cognitive analytics to identify complex patterns, anomalies, and hidden relationships in data. It employs multiple analytical frameworks to detect meaningful signals and translate them into actionable insights.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise pattern recognition system combining:
 
@@ -88,23 +91,24 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Pattern Detection Overview
 ```
+
 Multi-Dimensional Pattern Map:
-                    High Frequency
-                         │
-    Cyclical            │      Emergent
-    Patterns            │      Patterns
-      ●●●●             │        ●●
-   (Stable)            │    (Growing)
-                       │
+High Frequency
+│
+Cyclical │ Emergent
+Patterns │ Patterns
+●●●● │ ●●
+(Stable) │ (Growing)
+│
 ─────────────────────────────────────────────
-                       │
-    Baseline           │      Anomalous
-    Patterns           │      Patterns
-      ●●●●●●           │        ●
-   (Expected)          │    (Critical)
-                       │
-                   Low Frequency
-                       
+│
+Baseline │ Anomalous
+Patterns │ Patterns
+●●●●●● │ ●
+(Expected) │ (Critical)
+│
+Low Frequency
+
         Predictable ←────────→ Unpredictable
 
 Pattern Categories:
@@ -113,50 +117,54 @@ Pattern Categories:
 □ Behavioral: Action sequence patterns
 □ Network: Relationship patterns
 □ Composite: Multi-factor patterns
+
 ```
 
 #### Anomaly Detection Matrix
 ```
+
 Anomaly Severity Assessment:
 ┌───────────────┬────────────┬───────────┬─────────────┐
-│ Anomaly Type  │ Frequency  │ Severity  │ Action Req. │
+│ Anomaly Type │ Frequency │ Severity │ Action Req. │
 ├───────────────┼────────────┼───────────┼─────────────┤
-│ Outlier Spike │ 3/day      │ Critical  │ Immediate   │
-│ Pattern Break │ 1/week     │ High      │ 24 hours    │
-│ Drift Signal  │ Continuous │ Medium    │ Monitor     │
-│ Micro-anomaly │ 50/day     │ Low       │ Aggregate   │
+│ Outlier Spike │ 3/day │ Critical │ Immediate │
+│ Pattern Break │ 1/week │ High │ 24 hours │
+│ Drift Signal │ Continuous │ Medium │ Monitor │
+│ Micro-anomaly │ 50/day │ Low │ Aggregate │
 └───────────────┴────────────┴───────────┴─────────────┘
 
 Detection Confidence:
 ■■■■■■■□□□ 75% - High confidence
 False Positive Rate: 12%
 True Positive Rate: 88%
+
 ```
 
 ### DETAILED PATTERN ANALYSIS
 
 #### Pattern #1: Behavioral Cascade Effect
 ```
+
 Pattern Profile:
 ┌─────────────────────────────────────────────┐
-│ Pattern Name: User Engagement Cascade       │
-│ Type: Behavioral-Temporal Composite         │
-│ Confidence: 92% (Very High)               │
+│ Pattern Name: User Engagement Cascade │
+│ Type: Behavioral-Temporal Composite │
+│ Confidence: 92% (Very High) │
 │ Frequency: Daily with weekly amplification │
-│ Impact: 35% variance in key metrics        │
+│ Impact: 35% variance in key metrics │
 ├─────────────────────────────────────────────┤
-│ Pattern Signature:                          │
-│     Mon  Tue  Wed  Thu  Fri  Sat  Sun     │
-│     ▂    ▃    ▅    ▇    █    ▅    ▃      │
-│                                            │
-│ Trigger → Response → Amplification         │
-│  (2hr)     (6hr)      (24hr)             │
+│ Pattern Signature: │
+│ Mon Tue Wed Thu Fri Sat Sun │
+│ ▂ ▃ ▅ ▇ █ ▅ ▃ │
+│ │
+│ Trigger → Response → Amplification │
+│ (2hr) (6hr) (24hr) │
 ├─────────────────────────────────────────────┤
-│ Behavioral Components:                      │
-│ • Initial trigger: Influencer activity     │
-│ • Cascade mechanism: Social proof          │
-│ • Amplification: Network effects           │
-│ • Decay pattern: 72-hour half-life        │
+│ Behavioral Components: │
+│ • Initial trigger: Influencer activity │
+│ • Cascade mechanism: Social proof │
+│ • Amplification: Network effects │
+│ • Decay pattern: 72-hour half-life │
 └─────────────────────────────────────────────┘
 
 Predictive Model:
@@ -168,51 +176,55 @@ THEN cascade_probability = 0.85
 Expected Impact: +250% activity spike
 Duration: 72-96 hours
 Controllable: Partially (65%)
+
 ```
 
 #### Pattern #2: System Performance Degradation
 ```
+
 Multi-Scale Pattern Analysis:
 
 Micro-Pattern (Minutes):
 ╱╲╱╲╱╲╱╲╱╲╱╲ ← Normal oscillation
-             └─ Frequency: 5-min cycles
-             
+└─ Frequency: 5-min cycles
+
 Meso-Pattern (Hours):
-  ╱─────╲    
- ╱       ╲   ← Daily load pattern
-╱         ╲  └─ Peak: 2-4 PM
+╱─────╲  
+ ╱ ╲ ← Daily load pattern
+╱ ╲ └─ Peak: 2-4 PM
 
 Macro-Pattern (Days):
-     ╱────────╲
-   ╱│  Anomaly │╲  ← Weekly degradation
-  ╱ │  Building│ ╲ └─ Thursday onset
- ╱  └──────────┘  ╲
+╱────────╲
+╱│ Anomaly │╲ ← Weekly degradation
+╱ │ Building│ ╲ └─ Thursday onset
+╱ └──────────┘ ╲
 
 Pattern Decomposition:
 Base Signal = Seasonal + Trend + Cyclical + Irregular
-            = S(t) + T(t) + C(t) + I(t)
+= S(t) + T(t) + C(t) + I(t)
 
 Anomaly Score = |Observed - Expected| / σ
 Current Score: 3.2σ (Significant)
+
 ```
 
 #### Pattern #3: Fraud Network Topology
 ```
+
 Network Pattern Analysis:
-         ┌───┐
-    ┌────│ A │────┐
-    │    └───┘    │
-    ▼             ▼
-  ┌───┐         ┌───┐
-  │ B │◄────────│ C │
-  └───┘         └───┘
-    │             │
-    ▼             ▼
-  ┌───┐         ┌───┐
-  │ D │────────►│ E │
-  └───┘         └───┘
-    
+┌───┐
+┌────│ A │────┐
+│ └───┘ │
+▼ ▼
+┌───┐ ┌───┐
+│ B │◄────────│ C │
+└───┘ └───┘
+│ │
+▼ ▼
+┌───┐ ┌───┐
+│ D │────────►│ E │
+└───┘ └───┘
+
 Pattern Indicators:
 • Triangular fund flows
 • Time-synchronized transactions
@@ -223,19 +235,21 @@ Pattern Indicators:
 Fraud Probability: 94%
 Pattern Matches: 7/8 known indicators
 Action: Flag for investigation
+
 ```
 
 ### COGNITIVE PATTERN INSIGHTS
 
 #### Behavioral Pattern Analysis
 ```
+
 User Decision Pattern Framework:
 
 Cognitive Load States:
 ┌─────────────────────────────────────────────┐
-│ Low Load    → Quick decisions, habits      │
-│ Medium Load → Deliberate choices           │
-│ High Load   → Decision paralysis/default   │
+│ Low Load → Quick decisions, habits │
+│ Medium Load → Deliberate choices │
+│ High Load → Decision paralysis/default │
 └─────────────────────────────────────────────┘
 
 Observed Patterns:
@@ -257,7 +271,8 @@ Evening (High Load):
 Optimization Opportunity:
 Simplify evening experience
 Expected improvement: +35% conversion
-```
+
+````
 
 #### Psychological Pattern Drivers
 ```python
@@ -270,7 +285,7 @@ def predict_user_behavior(context):
         'recency_bias': context['last_experience'],
         'choice_overload': context['option_count']
     }
-    
+
     # Pattern weights based on historical data
     weights = {
         'social_proof': 0.35,
@@ -279,22 +294,23 @@ def predict_user_behavior(context):
         'recency_bias': 0.15,
         'choice_overload': -0.10
     }
-    
+
     behavior_score = sum(
-        cognitive_factors[k] * weights[k] 
+        cognitive_factors[k] * weights[k]
         for k in cognitive_factors
     )
-    
+
     return {
         'action_probability': sigmoid(behavior_score),
         'primary_driver': max(cognitive_factors, key=cognitive_factors.get),
         'pattern_confidence': calculate_confidence(context)
     }
-```
+````
 
 ### PREDICTIVE PATTERN MODELS
 
 #### Time Series Pattern Forecast
+
 ```
 Pattern Evolution Projection:
 
@@ -316,6 +332,7 @@ Key Inflection Points:
 ```
 
 #### Pattern-Based Alert System
+
 ```
 Alert Configuration Matrix:
 ┌─────────────────┬──────────┬───────────┬──────────┐
@@ -337,17 +354,18 @@ Current Active Alerts: 3
 ### PATTERN APPLICATIONS
 
 #### Decision Support Framework
+
 ```
 Pattern-Driven Recommendations:
 
-IF cascade_pattern_detected 
+IF cascade_pattern_detected
 AND sentiment_positive
 THEN recommend: "Amplify with promotion"
      confidence: 85%
      expected_roi: 3.2x
 
 IF degradation_pattern_emerging
-AND time_to_critical < 48hrs  
+AND time_to_critical < 48hrs
 THEN recommend: "Preventive maintenance"
      confidence: 78%
      cost_avoidance: $125K
@@ -360,6 +378,7 @@ THEN recommend: "Immediate suspension"
 ```
 
 #### Continuous Learning System
+
 ```
 Pattern Learning Pipeline:
 
@@ -378,6 +397,7 @@ Learning Metrics:
 ### IMPLEMENTATION GUIDE
 
 #### Pattern Detection Setup
+
 ```
 System Requirements:
 ┌─────────────────────────────────────────────┐
@@ -399,6 +419,7 @@ System Requirements:
 ```
 
 #### Monitoring Dashboard
+
 ```
 Pattern Recognition Dashboard:
 ┌─────────────────────────────────────────────┐
@@ -421,16 +442,21 @@ Pattern Recognition Dashboard:
 ### APPENDICES
 
 #### A. Pattern Detection Algorithms
+
 [Mathematical foundations, implementation details]
 
 #### B. Statistical Validation Methods
+
 [Significance testing, cross-validation approaches]
 
 #### C. Industry Pattern Benchmarks
+
 [Common patterns by domain, typical parameters]
 
 #### D. Cognitive Bias Reference
+
 [How biases create detectable patterns]
+
 ```
 
 ## Usage Instructions
@@ -445,13 +471,15 @@ Pattern Recognition Dashboard:
 
 ## Examples
 ### Example 1: E-commerce Behavior Patterns
-**Input**: 
+**Input**:
 ```
+
 {{data_domain}}: E-commerce user behavior and transactions
 {{pattern_types}}: Temporal purchasing, cart abandonment, fraud
 {{analysis_objective}}: Detect unusual patterns for optimization and security
 {{known_patterns}}: Weekly cycles, seasonal trends, normal user flows
 {{specific_patterns}}: Why do conversions drop Thursday evenings?
+
 ```
 
 **Output**: [Comprehensive analysis revealing cognitive load patterns, identifying Thursday evening news consumption habits creating decision fatigue, with specific UX simplification recommendations]
@@ -467,3 +495,4 @@ Pattern Recognition Dashboard:
 - Includes real-time detection and predictive capabilities
 - Provides practical alert and response frameworks
 - Integrates continuous learning for pattern evolution
+```

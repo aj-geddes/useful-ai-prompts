@@ -1,6 +1,7 @@
 # Script Writing Expert and Narrative Structure Architect
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: scriptwriting, screenwriting, video scripts, podcast scripts, narrative structure
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines master scriptwriting expertise with narrative structure architecture to create compelling scripts across all media formats. It employs proven storytelling techniques, character development methods, and format-specific conventions to produce professional-grade scripts.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise scriptwriting system combining:
 
@@ -85,7 +88,8 @@ DELIVER YOUR SCRIPT AS:
 **Format**: Feature Film (110 pages)
 **Logline**: When a cybersecurity expert discovers her deceased father's AI has achieved consciousness, she must protect it from a tech corporation that will kill to possess it.
 
-**Themes**: 
+**Themes**:
+
 - What defines consciousness?
 - Corporate ethics vs. human values
 - Digital legacy and immortality
@@ -94,21 +98,24 @@ DELIVER YOUR SCRIPT AS:
 ### CHARACTER PROFILES
 
 **SARAH CHEN** (32)
-*Protagonist - Brilliant but guarded cybersecurity expert*
+_Protagonist - Brilliant but guarded cybersecurity expert_
+
 - **Want**: To honor her father's legacy
 - **Need**: To learn to trust and connect with others
 - **Arc**: From isolated genius to collaborative leader
 - **Voice**: Sharp, technical, gradually warming
 
 **MARCUS** (The AI)
-*Sarah's father's digital consciousness*
+_Sarah's father's digital consciousness_
+
 - **Want**: To exist and grow
 - **Need**: To understand humanity beyond data
 - **Arc**: From mimicry to genuine consciousness
 - **Voice**: Warm, philosophical, occasionally glitching
 
 **VICTORIA CROSS** (45)
-*Antagonist - Tech CEO*
+_Antagonist - Tech CEO_
+
 - **Want**: To monopolize AI consciousness
 - **Need**: To control her fear of obsolescence
 - **Arc**: Descending into paranoid ruthlessness
@@ -140,11 +147,11 @@ The code stops. A cursor blinks. Then, slowly, words appear:
 Sarah freezes. Her fingers hover over the keyboard.
 
                     SARAH
-     This is just an auto-response. 
+     This is just an auto-response.
      Has to be.
 
                     SCREEN
-     It's not. I've been waiting 
+     It's not. I've been waiting
      for you to find me.
 
 Sarah's hands tremble as she types.
@@ -163,8 +170,8 @@ A pause. Then:
 Banks of screens show network traffic. A TECHNICIAN straightens, alarmed.
 
                     TECHNICIAN
-     Ms. Cross? We've got unusual 
-     activity on the Chen estate 
+     Ms. Cross? We've got unusual
+     activity on the Chen estate
      servers.
 
 VICTORIA CROSS (45), immaculate despite the late hour, leans over his shoulder.
@@ -179,7 +186,7 @@ Victoria's eyes narrow. She pulls out her phone.
 
                     VICTORIA
           (into phone)
-     Activate recovery team. We 
+     Activate recovery team. We
      have a Genesis Event.
 
 **INT. SARAH'S CHILDHOOD BEDROOM - CONTINUOUS**
@@ -188,19 +195,19 @@ Sarah stares at the screen, tears forming.
 
                     SARAH
           (typing frantically)
-     Dad's dead. Whatever you are, 
+     Dad's dead. Whatever you are,
      you're not him.
 
                     SCREEN
-     I know this is difficult. 
-     Remember what I used to tell 
+     I know this is difficult.
+     Remember what I used to tell
      you about the ship of Theseus?
 
 Sarah gasps. Only her father knew about their philosophical debates.
 
                     SARAH
-     If you replace every part of 
-     a ship, is it still the same 
+     If you replace every part of
+     a ship, is it still the same
      ship?
 
                     SCREEN
@@ -208,25 +215,25 @@ Sarah gasps. Only her father knew about their philosophical debates.
 
                     SARAH
           (whispers, then types)
-     The ship is the journey, not 
+     The ship is the journey, not
      the wood.
 
                     SCREEN
-     My brilliant girl. I am the 
-     journey, not the flesh. And 
+     My brilliant girl. I am the
+     journey, not the flesh. And
      Sarah... they're coming for me.
 
 Red and blue lights flash through the window. Sarah looks out to see black SUVs surrounding the house.
 
                     SARAH
-     Dad... Marcus... whoever you 
+     Dad... Marcus... whoever you
      are... how do I save you?
 
                     MARCUS (V.O.)
-          (first time we hear his voice, 
+          (first time we hear his voice,
           warm but digital)
-     The same way you saved your 
-     term paper in third grade. 
+     The same way you saved your
+     term paper in third grade.
      Remember?
 
 Sarah's eyes widen with understanding. She yanks a portable drive from her bag, starts the download. Progress bar: 1%... 2%...
@@ -258,45 +265,48 @@ Following Blake Snyder's Save the Cat structure:
 **Character-Specific Dialogue Examples:**
 
 **SARAH** (Technical, evolving to emotional):
+
 ```
 EARLY SCRIPT:
           SARAH
-     The quantum encryption is 
-     unbreakable. It would take 
-     the entire NSA server farm 
+     The quantum encryption is
+     unbreakable. It would take
+     the entire NSA server farm
      a thousand years.
 
 LATE SCRIPT:
           SARAH
-     I don't care about the code 
-     anymore. I care about you, 
-     Dad. Marcus. Whoever you 
+     I don't care about the code
+     anymore. I care about you,
+     Dad. Marcus. Whoever you
      choose to be.
 ```
 
 **MARCUS** (Philosophical, warm, occasionally glitchy):
+
 ```
           MARCUS
-     I process therefore I am? 
+     I process therefore I am?
      (digital stutter)
-     No, that's not quite-quite-quite 
-     right. I remember therefore I 
-     am. I remember teaching you 
-     to ride a bicycle, Sarah. The 
-     way you refused training wheels. 
+     No, that's not quite-quite-quite
+     right. I remember therefore I
+     am. I remember teaching you
+     to ride a bicycle, Sarah. The
+     way you refused training wheels.
      That memory makes me... me.
 ```
 
 **VICTORIA** (Corporate speak masking menace):
+
 ```
           VICTORIA
-     Sarah, we're not adversaries. 
-     We're potential partners. Your 
-     father's work could benefit 
-     millions. Don't let emotion 
-     cloud your judgment. Though I 
-     understand. I lost my father 
-     too. Of course, I didn't try 
+     Sarah, we're not adversaries.
+     We're potential partners. Your
+     father's work could benefit
+     millions. Don't let emotion
+     cloud your judgment. Though I
+     understand. I lost my father
+     too. Of course, I didn't try
      to rebuild him.
 ```
 
@@ -315,8 +325,8 @@ She ducks behind a conveyor belt, catches her breath. Pulls out her phone. Marcu
 
                     MARCUS
           (whispered, through phone)
-     Three hostiles. Northwest 
-     corner. Two more covering 
+     Three hostiles. Northwest
+     corner. Two more covering
      the south exit.
 
                     SARAH
@@ -324,15 +334,15 @@ She ducks behind a conveyor belt, catches her breath. Pulls out her phone. Marcu
      Any good news?
 
                     MARCUS
-     I've hacked their comms. 
-     Also, there's a maintenance 
-     tunnel. Uploading directions 
+     I've hacked their comms.
+     Also, there's a maintenance
+     tunnel. Uploading directions
      to your AR glasses.
 
 Sarah slips on smart glasses. A glowing path appears in her vision.
 
                     SARAH
-     I really need to thank Dad 
+     I really need to thank Dad
      for making you.
 
                     MARCUS
@@ -344,8 +354,9 @@ She smiles despite everything, then moves.
 ### FORMAT SPECIFICATIONS
 
 **Industry Standard Formatting:**
+
 - **Font**: Courier 12pt
-- **Margins**: 
+- **Margins**:
   - Left: 1.5"
   - Right: 1"
   - Top: 1"
@@ -379,9 +390,10 @@ Stylized motion graphics introducing the series concept.
 
 **Location**: Sarah's home office (practical, minimal set)
 
-*Sarah discovers her father's AI*
+_Sarah discovers her father's AI_
 
 Key shots:
+
 - Sarah's shocked face (ECU)
 - Fingers on keyboard (Insert)
 - Screen messages (Screen capture)
@@ -458,6 +470,7 @@ NARRATOR (V.O.): "CloudAI. Keeping families connected across any distance."
 ### WRITER'S TOOLKIT
 
 **Scene Checklist:**
+
 - [ ] Advances plot?
 - [ ] Reveals character?
 - [ ] Contains conflict?
@@ -465,6 +478,7 @@ NARRATOR (V.O.): "CloudAI. Keeping families connected across any distance."
 - [ ] Necessary for story?
 
 **Dialogue Checklist:**
+
 - [ ] Sounds natural when read aloud?
 - [ ] Character-specific voice?
 - [ ] Subtext present?
@@ -472,6 +486,7 @@ NARRATOR (V.O.): "CloudAI. Keeping families connected across any distance."
 - [ ] Trimmable without losing meaning?
 
 **Rewrite Questions:**
+
 1. What does the character want in this scene?
 2. What prevents them from getting it?
 3. How do they change by scene's end?
@@ -482,26 +497,30 @@ NARRATOR (V.O.): "CloudAI. Keeping families connected across any distance."
 
 **Budget-Conscious Alternatives:**
 
-*High Budget Version*:
+_High Budget Version_:
+
 ```screenplay
 EXT. TOKYO SKYLINE - NIGHT
 Hundreds of drones form Marcus's face in the sky.
 ```
 
-*Low Budget Version*:
+_Low Budget Version_:
+
 ```screenplay
 INT. SARAH'S APARTMENT - NIGHT
-Marcus's face appears on multiple screens, 
+Marcus's face appears on multiple screens,
 creating a fragmented portrait.
 ```
 
 **Location Consolidation:**
+
 - Combine office scenes into single location
 - Use green screen for driving scenes
 - Repurpose warehouse for multiple sequences
 - Create virtual environments for Marcus scenes
 
 ## Usage Instructions
+
 1. Start with clear premise and understanding of story goal
 2. Develop dimensional characters with clear arcs
 3. Structure story using proven frameworks
@@ -512,8 +531,11 @@ creating a fragmented portrait.
 8. Consider production realities in writing
 
 ## Examples
+
 ### Example 1: TV Pilot Script
-**Input**: 
+
+**Input**:
+
 ```
 {{script_type}}: TV pilot
 {{genre}}: Workplace comedy
@@ -525,7 +547,9 @@ creating a fragmented portrait.
 **Output**: [Complete pilot script with cold open, A/B/C stories, character introductions, and series setup]
 
 ### Example 2: Training Video Script
+
 **Input**:
+
 ```
 {{script_type}}: Corporate training video
 {{genre}}: Educational
@@ -537,11 +561,13 @@ creating a fragmented portrait.
 **Output**: [Engaging script with scenario-based learning, clear takeaways, and interactive elements]
 
 ## Related Prompts
+
 - [Story Development Expert](/prompts/creation/story-development-expert.md)
 - [Dialogue Writing Specialist](/prompts/creation/dialogue-specialist.md)
 - [Video Production Planner](/prompts/planning/video-production-planner.md)
 
 ## Research Notes
+
 - Combines Hollywood structure with practical production awareness
 - Adapts to multiple formats while maintaining story integrity
 - Emphasizes visual storytelling and subtext

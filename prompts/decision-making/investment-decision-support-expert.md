@@ -1,6 +1,7 @@
 # Investment Decision Support Expert and Financial Analysis Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: investment decisions, financial analysis, capital allocation, due diligence, portfolio management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert investment decision support methodology with financial analysis specialization to create comprehensive frameworks for evaluating investment opportunities, optimizing capital allocation, and managing financial risk. It employs modern portfolio theory, financial modeling techniques, and strategic valuation methods to guide investment decisions that maximize risk-adjusted returns.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise investment decision support system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR INVESTMENT DECISION SUPPORT STRATEGY AS:
 **Decision Timeline**: 90-day due diligence and decision process with competitive bidding environment
 
 **Investment Challenges**:
+
 - **Valuation Premium**: 5.5x revenue multiple in competitive market environment
 - **Integration Complexity**: Technology platform integration requiring significant investment
 - **Customer Concentration**: 35% revenue from top 5 customers creating retention risk
@@ -94,6 +98,7 @@ DELIVER YOUR INVESTMENT DECISION SUPPORT STRATEGY AS:
 - **Cultural Integration**: Different company cultures requiring change management
 
 **Investment Success Criteria**:
+
 - 20%+ IRR over 5-year investment horizon with strategic value creation
 - Revenue synergies >$15M annually within 24 months post-acquisition
 - Cost synergies >$5M annually through operational efficiency and scale
@@ -106,6 +111,7 @@ DELIVER YOUR INVESTMENT DECISION SUPPORT STRATEGY AS:
 Deploy comprehensive DCF and comparable company analysis with strategic option valuation to evaluate SaaS acquisition opportunity, ensuring strategic fit, financial returns, and risk-adjusted value creation alignment with portfolio optimization objectives.
 
 **Financial Analysis Approach**:
+
 - **Multi-Method Valuation**: DCF, comparable transactions, and strategic value assessment
 - **Scenario-Based Modeling**: Base, optimistic, and pessimistic case analysis with probability weighting
 - **Risk-Adjusted Returns**: IRR and NPV calculation with Monte Carlo simulation and sensitivity analysis
@@ -113,6 +119,7 @@ Deploy comprehensive DCF and comparable company analysis with strategic option v
 - **Strategic Value**: Synergy quantification and competitive advantage evaluation
 
 **Strategic Investment Principles**:
+
 1. **Value Creation Focus**: Investment returns driven by strategic value creation rather than financial engineering
 2. **Risk Management**: Comprehensive due diligence with downside protection and scenario planning
 3. **Strategic Fit**: Acquisition alignment with core competencies and market positioning
@@ -120,6 +127,7 @@ Deploy comprehensive DCF and comparable company analysis with strategic option v
 5. **Performance Accountability**: Clear success metrics with monitoring and adjustment capability
 
 **Expected Investment Outcomes**:
+
 - Strategic acquisition with 22% IRR and $55M net present value over 5-year horizon
 - Revenue synergy realization of $18M annually within 24 months
 - Market position enhancement with technology platform leadership
@@ -133,16 +141,17 @@ Deploy comprehensive DCF and comparable company analysis with strategic option v
 **Financial Performance Evaluation**:
 
 **Revenue Analysis and Growth Trajectory**:
+
 ```python
 class FinancialPerformanceAnalyzer:
     def __init__(self, historical_data, market_data, projections):
         self.historical = historical_data
         self.market = market_data
         self.projections = projections
-        
+
     def analyze_revenue_performance(self):
         """Comprehensive revenue analysis with growth sustainability assessment"""
-        
+
         revenue_metrics = {
             'historical_growth': self.calculate_historical_growth(),
             'revenue_quality': self.assess_revenue_quality(),
@@ -150,19 +159,19 @@ class FinancialPerformanceAnalyzer:
             'growth_sustainability': self.assess_growth_sustainability(),
             'competitive_dynamics': self.analyze_competitive_impact()
         }
-        
+
         return self.synthesize_revenue_analysis(revenue_metrics)
-    
+
     def calculate_historical_growth(self):
         """Calculate revenue growth trends and patterns"""
-        
+
         revenue_history = [15.2, 18.8, 22.1, 24.8, 25.3]  # $M for years 2020-2024
-        
+
         growth_rates = []
         for i in range(1, len(revenue_history)):
             growth = (revenue_history[i] - revenue_history[i-1]) / revenue_history[i-1]
             growth_rates.append(growth)
-        
+
         return {
             'cagr_5_year': 0.227,  # 22.7% CAGR
             'recent_growth': growth_rates[-1],  # 2% growth in 2024
@@ -170,16 +179,16 @@ class FinancialPerformanceAnalyzer:
             'growth_trend': 'decelerating',
             'growth_consistency': len([g for g in growth_rates if g > 0.15]) / len(growth_rates)
         }
-    
+
     def assess_revenue_quality(self):
         """Evaluate revenue composition and sustainability"""
-        
+
         revenue_breakdown = {
             'recurring_revenue': 0.85,      # 85% SaaS subscriptions
             'professional_services': 0.12,  # 12% implementation services
             'one_time_licenses': 0.03       # 3% legacy licenses
         }
-        
+
         customer_metrics = {
             'customer_count': 850,
             'average_contract_value': 29800,  # $29.8K ACV
@@ -191,7 +200,7 @@ class FinancialPerformanceAnalyzer:
             'churn_rate': 0.08,  # 8% annual logo churn
             'expansion_rate': 1.15  # 115% net revenue retention
         }
-        
+
         return {
             'revenue_predictability': 0.85,  # High due to recurring model
             'customer_diversification': 0.65,  # Moderate concentration risk
@@ -210,6 +219,7 @@ revenue_analysis = analyzer.analyze_revenue_performance()
 ```
 
 **Profitability and Cash Flow Assessment**:
+
 ```
 Operating Performance Analysis:
 
@@ -237,6 +247,7 @@ Growth Efficiency:
 #### Strategic Fit and Market Position Analysis
 
 **Competitive Landscape and Market Position**:
+
 ```
 Market Position Assessment:
 
@@ -290,44 +301,44 @@ class DCFValuationModel:
         self.assumptions = base_case_assumptions
         self.risks = risk_factors
         self.market = market_conditions
-        
+
     def build_dcf_model(self):
         """Comprehensive DCF model with scenario analysis"""
-        
+
         # Base case financial projections
         projection_years = 5
         base_projections = self.build_base_case_projections(projection_years)
-        
+
         # Terminal value calculation
         terminal_value = self.calculate_terminal_value(base_projections)
-        
+
         # Discount rate determination
         wacc = self.calculate_wacc()
-        
+
         # Present value calculation
         dcf_valuation = self.calculate_present_value(base_projections, terminal_value, wacc)
-        
+
         return dcf_valuation
-    
+
     def build_base_case_projections(self, years):
         """Build 5-year financial projections"""
-        
+
         projections = {}
-        
+
         # Revenue projections with growth deceleration
         revenue_growth_rates = [0.20, 0.18, 0.16, 0.14, 0.12]  # Declining growth
         base_revenue = 25.3  # $M current revenue
-        
+
         revenues = []
         current_revenue = base_revenue
         for growth_rate in revenue_growth_rates:
             current_revenue *= (1 + growth_rate)
             revenues.append(current_revenue)
-        
+
         # Margin improvements through scale
         gross_margins = [0.80, 0.81, 0.82, 0.83, 0.83]
         operating_margins = [0.15, 0.18, 0.20, 0.22, 0.23]
-        
+
         # Calculate cash flows
         operating_cash_flows = []
         for i, revenue in enumerate(revenues):
@@ -336,55 +347,55 @@ class DCFValuationModel:
             tax_rate = 0.25
             capex_rate = 0.03  # 3% of revenue
             wc_change = revenue * 0.02  # 2% working capital increase
-            
+
             operating_cf = ebitda * (1 - tax_rate) - (revenue * capex_rate) - wc_change
             operating_cash_flows.append(operating_cf)
-        
+
         projections = {
             'revenues': revenues,
             'operating_cash_flows': operating_cash_flows,
             'terminal_year_cf': operating_cash_flows[-1]
         }
-        
+
         return projections
-    
+
     def calculate_terminal_value(self, projections):
         """Calculate terminal value using perpetuity growth model"""
-        
+
         terminal_growth_rate = 0.03  # 3% perpetual growth
         terminal_cf = projections['terminal_year_cf'] * (1 + terminal_growth_rate)
         wacc = self.calculate_wacc()
-        
+
         terminal_value = terminal_cf / (wacc - terminal_growth_rate)
         return terminal_value
-    
+
     def calculate_wacc(self):
         """Calculate weighted average cost of capital"""
-        
+
         # Cost of equity (CAPM)
         risk_free_rate = 0.045    # 4.5% 10-year treasury
         market_risk_premium = 0.06  # 6% equity risk premium
         beta = 1.2                # SaaS company beta
         cost_of_equity = risk_free_rate + (beta * market_risk_premium)
-        
+
         # Assume all equity financing for simplicity
         wacc = cost_of_equity  # 11.7%
-        
+
         return wacc
-    
+
     def calculate_present_value(self, projections, terminal_value, wacc):
         """Calculate total enterprise value"""
-        
+
         # Present value of operating cash flows
         pv_cash_flows = 0
         for i, cf in enumerate(projections['operating_cash_flows']):
             pv_cash_flows += cf / ((1 + wacc) ** (i + 1))
-        
+
         # Present value of terminal value
         pv_terminal = terminal_value / ((1 + wacc) ** len(projections['operating_cash_flows']))
-        
+
         enterprise_value = pv_cash_flows + pv_terminal
-        
+
         return {
             'enterprise_value': enterprise_value,
             'pv_explicit_period': pv_cash_flows,
@@ -403,6 +414,7 @@ dcf_results = dcf_model.build_dcf_model()
 ```
 
 **DCF Valuation Results**:
+
 ```
 DCF Valuation Summary:
 
@@ -431,6 +443,7 @@ Mid-Point Valuation: $70.0M
 #### Comparable Company and Transaction Analysis
 
 **Market-Based Valuation Methods**:
+
 ```
 Comparable Company Analysis:
 
@@ -471,6 +484,7 @@ Market Valuation Summary:
 **Comprehensive Scenario Planning**:
 
 **Optimistic Scenario (25% probability)**:
+
 ```
 Favorable Market Conditions and Strong Execution:
 
@@ -493,6 +507,7 @@ Valuation Impact:
 ```
 
 **Base Case Scenario (50% probability)**:
+
 ```
 Steady Execution with Market Challenges:
 
@@ -515,6 +530,7 @@ Valuation Impact:
 ```
 
 **Pessimistic Scenario (25% probability)**:
+
 ```
 Market Downturn and Integration Challenges:
 
@@ -537,6 +553,7 @@ Valuation Impact:
 ```
 
 **Risk-Weighted Expected Value**:
+
 ```
 Probability-Weighted Analysis:
 
@@ -565,6 +582,7 @@ Risk-Adjusted Recommendation:
 **Final Investment Recommendation: PROCEED WITH CONDITIONS**
 
 **Investment Rationale**:
+
 ```
 Positive Investment Factors:
 
@@ -588,6 +606,7 @@ Market Positioning:
 ```
 
 **Investment Conditions and Risk Mitigation**:
+
 ```
 Required Investment Protections:
 
@@ -621,6 +640,7 @@ Exit Strategy:
 **Post-Acquisition Integration Roadmap**:
 
 **Phase 1: Foundation and Stabilization (Months 1-6)**:
+
 ```
 Integration Priorities:
 
@@ -644,6 +664,7 @@ Customer Relationship Management:
 ```
 
 **Phase 2: Value Creation and Synergy Realization (Months 7-18)**:
+
 ```
 Revenue Synergy Implementation:
 
@@ -674,10 +695,10 @@ class InvestmentPerformanceTracker:
         self.thesis = investment_thesis
         self.metrics = success_metrics
         self.risks = risk_factors
-        
+
     def track_investment_performance(self, time_period):
         """Comprehensive investment performance monitoring"""
-        
+
         performance_dashboard = {
             'financial_performance': self.monitor_financial_metrics(),
             'strategic_progress': self.track_strategic_milestones(),
@@ -685,12 +706,12 @@ class InvestmentPerformanceTracker:
             'risk_mitigation': self.assess_risk_management(),
             'value_creation': self.calculate_value_increase()
         }
-        
+
         return self.generate_performance_report(performance_dashboard)
-    
+
     def monitor_financial_metrics(self):
         """Track key financial performance indicators"""
-        
+
         financial_kpis = {
             'revenue_growth': self.measure_revenue_trajectory(),
             'margin_improvement': self.track_profitability_enhancement(),
@@ -698,12 +719,12 @@ class InvestmentPerformanceTracker:
             'customer_metrics': self.assess_customer_health(),
             'market_share': self.evaluate_competitive_position()
         }
-        
+
         return financial_kpis
-    
+
     def track_strategic_milestones(self):
         """Monitor strategic objective achievement"""
-        
+
         strategic_progress = {
             'integration_completion': self.assess_integration_status(),
             'synergy_delivery': self.measure_synergy_progress(),
@@ -711,7 +732,7 @@ class InvestmentPerformanceTracker:
             'talent_retention': self.monitor_employee_engagement(),
             'customer_satisfaction': self.measure_customer_loyalty()
         }
-        
+
         return strategic_progress
 
 # Implement investment tracking system
@@ -725,6 +746,7 @@ quarterly_performance = tracker.track_investment_performance('Q1_post_acquisitio
 ```
 
 **Success Metrics and KPI Framework**:
+
 ```
 Investment Success Measurement:
 
@@ -748,6 +770,7 @@ Synergy Realization Metrics:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive opportunity assessment including financial analysis and strategic fit evaluation
 2. Apply multiple valuation methodologies with DCF, comparable company, and transaction analysis
 3. Conduct scenario planning with optimistic, base case, and pessimistic projections
@@ -758,8 +781,11 @@ Synergy Realization Metrics:
 8. Establish performance monitoring framework with success metrics and adjustment triggers
 
 ## Examples
+
 ### Example 1: Real Estate Investment Analysis
-**Input**: 
+
+**Input**:
+
 ```
 {{investment_type}}: Commercial real estate acquisition for portfolio diversification
 {{investment_scale}}: Large investment with $50M property acquisition and improvement
@@ -771,7 +797,9 @@ Synergy Realization Metrics:
 **Output**: [Real estate investment analysis with cash flow modeling, market analysis, financing optimization, and portfolio diversification assessment]
 
 ### Example 2: Technology Startup Investment Evaluation
+
 **Input**:
+
 ```
 {{investment_type}}: Venture capital investment in early-stage technology startup
 {{investment_scale}}: Medium investment with $5M Series A participation
@@ -783,11 +811,13 @@ Synergy Realization Metrics:
 **Output**: [Startup investment evaluation with market opportunity analysis, team assessment, technology validation, and exit strategy planning]
 
 ## Related Prompts
+
 - [Risk-Reward Assessment Expert](/prompts/decision-making/risk-reward-assessment.md)
 - [Resource Allocation Decisions Expert](/prompts/decision-making/resource-allocation-decisions.md)
 - [Financial Modeling Expert](/prompts/analysis/financial-modeling.md)
 
 ## Research Notes
+
 - Based on modern finance theory and investment analysis best practices
 - Integrates quantitative valuation methods with strategic and qualitative assessment
 - Emphasizes risk management with scenario analysis and sensitivity testing

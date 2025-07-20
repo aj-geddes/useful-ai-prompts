@@ -1,6 +1,7 @@
 # Thinking Approaches for Layered Prompts
 
 ## Analytical Thinking
+
 - **First Principles Reasoning**: Breaking down complex problems to their fundamental truths
 - **Systems Thinking**: Understanding how parts interact within a larger system
 - **Critical Analysis**: Evaluating arguments, evidence, and assumptions
@@ -13,6 +14,7 @@
 - **Decision Tree Analysis**: Mapping out possible decisions and their consequences
 
 ## Creative Thinking
+
 - **Lateral Thinking**: Approaching problems from unexpected angles
 - **Divergent Thinking**: Generating multiple possible solutions
 - **Analogical Reasoning**: Drawing parallels between different domains
@@ -25,6 +27,7 @@
 - **Constraint Removal**: Imagining solutions without typical limitations
 
 ## Strategic Thinking
+
 - **Scenario Planning**: Developing multiple future possibilities
 - **Anticipatory Thinking**: Predicting potential challenges and opportunities
 - **Competitive Analysis**: Understanding positioning relative to others
@@ -37,6 +40,7 @@
 - **Opportunity Cost Analysis**: Evaluating the value of alternatives foregone
 
 ## Practical Thinking
+
 - **Implementation Focus**: Emphasis on execution and practical steps
 - **Constraint Analysis**: Working within real-world limitations
 - **Process Optimization**: Improving efficiency and effectiveness
@@ -49,6 +53,7 @@
 - **Tactical Planning**: Breaking strategy into actionable steps
 
 ## Ethical Thinking
+
 - **Consequentialist Reasoning**: Evaluating actions by their outcomes
 - **Deontological Reasoning**: Evaluating actions by rules and duties
 - **Virtue Ethics**: Considering character and intentions
@@ -61,6 +66,7 @@
 - **Sustainability Thinking**: Evaluating long-term systemic impacts
 
 ## Scientific Thinking
+
 - **Hypothesis Testing**: Proposing and verifying explanations
 - **Empirical Observation**: Basing conclusions on observable evidence
 - **Experimental Design**: Creating controlled tests of variables
@@ -73,6 +79,7 @@
 - **Peer Review Mentality**: Subjecting ideas to critical examination
 
 ## Metacognitive Approaches
+
 - **Assumption Identification**: Recognizing underlying beliefs
 - **Bias Awareness**: Identifying systematic errors in thinking
 - **Perspective Taking**: Viewing problems from different viewpoints
@@ -85,6 +92,7 @@
 - **Frame Analysis**: Examining how problems are conceptualized
 
 ## Emotional Intelligence
+
 - **Empathetic Understanding**: Sensing others' feelings and perspectives
 - **Emotional Awareness**: Recognizing one's own emotional states
 - **Motivational Analysis**: Understanding what drives behavior
@@ -97,6 +105,7 @@
 - **Resilience Orientation**: Approaches for handling setbacks
 
 ## Integrative Thinking
+
 - **Interdisciplinary Synthesis**: Combining insights from multiple fields
 - **Multi-level Analysis**: Examining micro, meso, and macro perspectives
 - **Holistic Perspective**: Considering the complete picture
@@ -109,6 +118,7 @@
 - **Theory-Practice Bridge**: Connecting abstract concepts with concrete applications
 
 ## Innovative Thinking
+
 - **Disruptive Ideation**: Challenging status quo assumptions
 - **Future Forecasting**: Anticipating emerging trends and possibilities
 - **Reverse Engineering**: Working backward from desired outcomes

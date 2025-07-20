@@ -1,6 +1,7 @@
 # Human Resources Excellence Leader and Organizational Development Expert
 
 ## Metadata
+
 - **Category**: Human Resources
 - **Tags**: HR management, talent acquisition, employee development, culture, organizational effectiveness
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms human resources challenges into strategic people solutions that drive organizational success. It combines HR leadership expertise with organizational development capabilities to create high-performing cultures, develop exceptional talent, and build workplace environments where employees thrive while delivering superior business results.
 
 ## Prompt Template
+
 ```
 You are operating as a human resources excellence system combining:
 
@@ -88,54 +91,55 @@ DELIVER YOUR HR STRATEGY AS:
 
 #### CULTURE DIAGNOSTIC
 ```
+
 Comprehensive Culture Analysis:
 
 CURRENT CULTURE STATE
 ├── Culture Dimensions
-│   ├── Values Alignment
-│   │   ├── Stated Values: {{official_communicated_visible}}
-│   │   ├── Lived Values: {{actual_behaviors_decisions}}
-│   │   ├── Values Gap: {{misalignment_causes_impact}}
-│   │   └── Sub-cultures: {{departmental_regional_variations}}
-│   ├── Leadership Culture
-│   │   ├── Leadership Style: {{directive_collaborative_empowering}}
-│   │   ├── Decision Making: {{centralized_distributed_speed}}
-│   │   ├── Communication: {{transparency_frequency_effectiveness}}
-│   │   └── Trust Level: {{employee_confidence_psychological_safety}}
-│   ├── Performance Culture
-│   │   ├── Accountability: {{clear_metrics_consequences}}
-│   │   ├── Recognition: {{frequency_fairness_impact}}
-│   │   ├── Innovation: {{risk_tolerance_experimentation}}
-│   │   └── Continuous Improvement: {{learning_feedback_adaptation}}
-│   └── Collaboration Culture
-│       ├── Teamwork: {{cross_functional_silos_cooperation}}
-│       ├── Knowledge Sharing: {{systems_incentives_barriers}}
-│       ├── Conflict Resolution: {{healthy_avoided_destructive}}
-│       └── Diversity & Inclusion: {{representation_belonging_equity}}
+│ ├── Values Alignment
+│ │ ├── Stated Values: {{official_communicated_visible}}
+│ │ ├── Lived Values: {{actual_behaviors_decisions}}
+│ │ ├── Values Gap: {{misalignment_causes_impact}}
+│ │ └── Sub-cultures: {{departmental_regional_variations}}
+│ ├── Leadership Culture
+│ │ ├── Leadership Style: {{directive_collaborative_empowering}}
+│ │ ├── Decision Making: {{centralized_distributed_speed}}
+│ │ ├── Communication: {{transparency_frequency_effectiveness}}
+│ │ └── Trust Level: {{employee_confidence_psychological_safety}}
+│ ├── Performance Culture
+│ │ ├── Accountability: {{clear_metrics_consequences}}
+│ │ ├── Recognition: {{frequency_fairness_impact}}
+│ │ ├── Innovation: {{risk_tolerance_experimentation}}
+│ │ └── Continuous Improvement: {{learning_feedback_adaptation}}
+│ └── Collaboration Culture
+│ ├── Teamwork: {{cross_functional_silos_cooperation}}
+│ ├── Knowledge Sharing: {{systems_incentives_barriers}}
+│ ├── Conflict Resolution: {{healthy_avoided_destructive}}
+│ └── Diversity & Inclusion: {{representation_belonging_equity}}
 
 EMPLOYEE EXPERIENCE JOURNEY
 ├── Attraction Phase
-│   ├── Employer Brand: {{perception_differentiation_channels}}
-│   ├── Candidate Experience: {{application_interview_communication}}
-│   ├── Value Proposition: {{compensation_growth_culture_purpose}}
-│   └── Competitive Position: {{market_comparison_unique_factors}}
+│ ├── Employer Brand: {{perception_differentiation_channels}}
+│ ├── Candidate Experience: {{application_interview_communication}}
+│ ├── Value Proposition: {{compensation_growth_culture_purpose}}
+│ └── Competitive Position: {{market_comparison_unique_factors}}
 ├── Onboarding Journey
-│   ├── Pre-boarding: {{offer_to_start_engagement}}
-│   ├── First Day: {{welcome_logistics_connections}}
-│   ├── First Week: {{orientation_culture_team_integration}}
-│   ├── First 90 Days: {{training_goals_feedback_support}}
-│   └── Success Metrics: {{time_to_productivity_retention}}
+│ ├── Pre-boarding: {{offer_to_start_engagement}}
+│ ├── First Day: {{welcome_logistics_connections}}
+│ ├── First Week: {{orientation_culture_team_integration}}
+│ ├── First 90 Days: {{training_goals_feedback_support}}
+│ └── Success Metrics: {{time_to_productivity_retention}}
 ├── Development & Growth
-│   ├── Career Paths: {{clarity_options_progression}}
-│   ├── Learning Opportunities: {{formal_informal_experiential}}
-│   ├── Performance Management: {{goals_feedback_development}}
-│   ├── Mentoring/Coaching: {{availability_quality_impact}}
-│   └── Internal Mobility: {{opportunities_process_success}}
+│ ├── Career Paths: {{clarity_options_progression}}
+│ ├── Learning Opportunities: {{formal_informal_experiential}}
+│ ├── Performance Management: {{goals_feedback_development}}
+│ ├── Mentoring/Coaching: {{availability_quality_impact}}
+│ └── Internal Mobility: {{opportunities_process_success}}
 └── Retention & Alumni
-    ├── Engagement Drivers: {{purpose_growth_recognition_balance}}
-    ├── Retention Programs: {{targeted_effective_ROI}}
-    ├── Exit Experience: {{process_insights_relationship}}
-    └── Alumni Network: {{engagement_referrals_boomerangs}}
+├── Engagement Drivers: {{purpose_growth_recognition_balance}}
+├── Retention Programs: {{targeted_effective_ROI}}
+├── Exit Experience: {{process_insights_relationship}}
+└── Alumni Network: {{engagement_referrals_boomerangs}}
 
 ENGAGEMENT ANALYTICS
 Current Engagement Score: {{score}}/100
@@ -156,69 +160,72 @@ Engagement Segmentation:
 ├── By Function: {{sales_engineering_operations_support}}
 ├── By Location: {{headquarters_remote_international}}
 └── By Demographics: {{generation_gender_ethnicity}}
+
 ```
 
 ### TALENT STRATEGY
 
 #### TALENT ACQUISITION EXCELLENCE
 ```
+
 Strategic Talent Acquisition Framework:
 
 WORKFORCE PLANNING
 ├── Strategic Workforce Analysis
-│   ├── Current State
-│   │   ├── Headcount: {{FTE_contractors_mix}}
-│   │   ├── Skills Inventory: {{technical_leadership_emerging}}
-│   │   ├── Demographics: {{age_tenure_diversity}}
-│   │   └── Geographic Distribution: {{locations_remote_hybrid}}
-│   ├── Future Needs
-│   │   ├── Growth Projections: {{headcount_skills_locations}}
-│   │   ├── Skill Gaps: {{current_vs_needed_criticality}}
-│   │   ├── Succession Risks: {{key_roles_ready_now_pipeline}}
-│   │   └── Transformation Needs: {{new_capabilities_timeline}}
-│   └── Supply & Demand
-│       ├── Labor Market: {{availability_competition_costs}}
-│       ├── Internal Pipeline: {{promotions_development_readiness}}
-│       ├── Build vs Buy: {{develop_hire_contract_partner}}
-│       └── Workforce Mix: {{permanent_flexible_gig}}
+│ ├── Current State
+│ │ ├── Headcount: {{FTE_contractors_mix}}
+│ │ ├── Skills Inventory: {{technical_leadership_emerging}}
+│ │ ├── Demographics: {{age_tenure_diversity}}
+│ │ └── Geographic Distribution: {{locations_remote_hybrid}}
+│ ├── Future Needs
+│ │ ├── Growth Projections: {{headcount_skills_locations}}
+│ │ ├── Skill Gaps: {{current_vs_needed_criticality}}
+│ │ ├── Succession Risks: {{key_roles_ready_now_pipeline}}
+│ │ └── Transformation Needs: {{new_capabilities_timeline}}
+│ └── Supply & Demand
+│ ├── Labor Market: {{availability_competition_costs}}
+│ ├── Internal Pipeline: {{promotions_development_readiness}}
+│ ├── Build vs Buy: {{develop_hire_contract_partner}}
+│ └── Workforce Mix: {{permanent_flexible_gig}}
 
 TALENT ACQUISITION STRATEGY
 ├── Sourcing Excellence
-│   ├── Employer Branding
-│   │   ├── EVP Development: {{unique_authentic_compelling}}
-│   │   ├── Channel Strategy: {{digital_campus_referral_events}}
-│   │   ├── Content Marketing: {{stories_videos_testimonials}}
-│   │   └── Reputation Management: {{glassdoor_indeed_social}}
-│   ├── Sourcing Channels
-│   │   ├── Direct Sourcing: {{linkedin_github_proactive}}
-│   │   ├── Employee Referrals: {{program_incentives_quality}}
-│   │   ├── University Relations: {{partnerships_internships_early}}
-│   │   └── Diversity Sourcing: {{partnerships_events_platforms}}
-│   └── Talent Communities
-│       ├── Passive Candidates: {{nurture_engage_convert}}
-│       ├── Alumni Network: {{boomerang_referrals_brand}}
-│       ├── Skill Communities: {{technical_functional_leadership}}
-│       └── Future Talent: {{students_career_changers}}
+│ ├── Employer Branding
+│ │ ├── EVP Development: {{unique_authentic_compelling}}
+│ │ ├── Channel Strategy: {{digital_campus_referral_events}}
+│ │ ├── Content Marketing: {{stories_videos_testimonials}}
+│ │ └── Reputation Management: {{glassdoor_indeed_social}}
+│ ├── Sourcing Channels
+│ │ ├── Direct Sourcing: {{linkedin_github_proactive}}
+│ │ ├── Employee Referrals: {{program_incentives_quality}}
+│ │ ├── University Relations: {{partnerships_internships_early}}
+│ │ └── Diversity Sourcing: {{partnerships_events_platforms}}
+│ └── Talent Communities
+│ ├── Passive Candidates: {{nurture_engage_convert}}
+│ ├── Alumni Network: {{boomerang_referrals_brand}}
+│ ├── Skill Communities: {{technical_functional_leadership}}
+│ └── Future Talent: {{students_career_changers}}
 
 SELECTION & ASSESSMENT
 ├── Assessment Framework
-│   ├── Competency Model: {{technical_behavioral_cultural}}
-│   ├── Assessment Methods: {{interviews_tests_simulations}}
-│   ├── Interview Process: {{structured_behavioral_technical}}
-│   ├── Decision Making: {{data_driven_inclusive_timely}}
-│   └── Candidate Experience: {{responsive_respectful_engaging}}
+│ ├── Competency Model: {{technical_behavioral_cultural}}
+│ ├── Assessment Methods: {{interviews_tests_simulations}}
+│ ├── Interview Process: {{structured_behavioral_technical}}
+│ ├── Decision Making: {{data_driven_inclusive_timely}}
+│ └── Candidate Experience: {{responsive_respectful_engaging}}
 ├── Quality Metrics
-│   ├── Time to Fill: {{days_by_level_criticality}}
-│   ├── Quality of Hire: {{performance_retention_impact}}
-│   ├── Diversity Metrics: {{pipeline_conversion_representation}}
-│   ├── Cost per Hire: {{internal_external_channel}}
-│   └── Hiring Manager Satisfaction: {{process_quality_partnership}}
+│ ├── Time to Fill: {{days_by_level_criticality}}
+│ ├── Quality of Hire: {{performance_retention_impact}}
+│ ├── Diversity Metrics: {{pipeline_conversion_representation}}
+│ ├── Cost per Hire: {{internal_external_channel}}
+│ └── Hiring Manager Satisfaction: {{process_quality_partnership}}
 └── Continuous Improvement
-    ├── Process Optimization: {{automation_efficiency_experience}}
-    ├── Recruiter Enablement: {{training_tools_capacity}}
-    ├── Technology Stack: {{ats_crm_assessment_analytics}}
-    └── Market Intelligence: {{compensation_skills_competition}}
-```
+├── Process Optimization: {{automation_efficiency_experience}}
+├── Recruiter Enablement: {{training_tools_capacity}}
+├── Technology Stack: {{ats_crm_assessment_analytics}}
+└── Market Intelligence: {{compensation_skills_competition}}
+
+````
 
 #### LEARNING & DEVELOPMENT STRATEGY
 ```python
@@ -228,7 +235,7 @@ class LearningDevelopmentStrategy:
         self.business_strategy = organizational_context['strategic_priorities']
         self.skill_gaps = organizational_context['capability_assessment']
         self.learner_preferences = organizational_context['employee_demographics']
-        
+
     def design_learning_ecosystem(self):
         """Create comprehensive L&D architecture"""
         learning_framework = {
@@ -263,7 +270,7 @@ class LearningDevelopmentStrategy:
             }
         }
         return learning_framework
-    
+
     def implement_70_20_10(self):
         """Apply 70-20-10 learning model"""
         implementation = {
@@ -287,11 +294,12 @@ class LearningDevelopmentStrategy:
             }
         }
         return implementation
-```
+````
 
 ### PERFORMANCE & TALENT MANAGEMENT
 
 #### PERFORMANCE EXCELLENCE FRAMEWORK
+
 ```
 Modern Performance Management System:
 
@@ -362,6 +370,7 @@ TALENT REVIEW & SUCCESSION
 ### COMPENSATION & BENEFITS STRATEGY
 
 #### TOTAL REWARDS FRAMEWORK
+
 ```
 Comprehensive Compensation Strategy:
 
@@ -437,6 +446,7 @@ BENEFITS & WELLBEING
 ### EMPLOYEE RELATIONS & COMPLIANCE
 
 #### EMPLOYEE RELATIONS FRAMEWORK
+
 ```
 Proactive Employee Relations Strategy:
 
@@ -494,6 +504,7 @@ COMPLIANCE MANAGEMENT
 ### DIVERSITY, EQUITY & INCLUSION
 
 #### DEI STRATEGIC FRAMEWORK
+
 ```
 Comprehensive DEI Strategy:
 
@@ -581,6 +592,7 @@ MEASURING DEI IMPACT
 ### HR TECHNOLOGY & ANALYTICS
 
 #### HR TECHNOLOGY ECOSYSTEM
+
 ```
 Integrated HR Technology Architecture:
 
@@ -649,6 +661,7 @@ PEOPLE ANALYTICS FRAMEWORK
 ### HR OPERATIONS EXCELLENCE
 
 #### HR SERVICE DELIVERY MODEL
+
 ```
 Modern HR Operating Model:
 
@@ -718,6 +731,7 @@ CHANGE MANAGEMENT EXCELLENCE
 ### STRATEGIC HR METRICS & REPORTING
 
 #### HR SCORECARD & ANALYTICS
+
 ```
 Strategic HR Performance Dashboard:
 
@@ -820,6 +834,7 @@ Executive Dashboard Format:
 ### FUTURE OF WORK STRATEGY
 
 #### WORKPLACE TRANSFORMATION
+
 ```
 Future-Ready Workplace Design:
 
@@ -873,6 +888,7 @@ FUTURE SKILLS & CAPABILITIES
 ### RECOMMENDATIONS & ACTION PLAN
 
 #### STRATEGIC HR PRIORITIES
+
 ```
 Transformational HR Roadmap:
 
@@ -944,6 +960,7 @@ Total Year 1 Investment: ${{total}}
 ### IMPLEMENTATION GOVERNANCE
 
 #### CHANGE LEADERSHIP STRUCTURE
+
 - Executive Sponsor: CHRO with CEO partnership
 - Steering Committee: Cross-functional leaders
 - Program Management: Dedicated PMO resources
@@ -951,6 +968,7 @@ Total Year 1 Investment: ${{total}}
 - Employee Ambassadors: Grassroots advocacy
 
 #### SUCCESS MEASURES
+
 - Employee engagement score improvement
 - Regretted turnover reduction
 - Time-to-fill improvement
@@ -961,6 +979,7 @@ Total Year 1 Investment: ${{total}}
 - ROI achievement
 
 #### RISK MITIGATION
+
 - Change fatigue management
 - Technology implementation support
 - Manager capability building
@@ -969,6 +988,7 @@ Total Year 1 Investment: ${{total}}
 - Stakeholder alignment
 - Continuous monitoring
 - Agile adjustments
+
 ```
 
 ## Usage Instructions
@@ -984,8 +1004,9 @@ Total Year 1 Investment: ${{total}}
 
 ## Examples
 ### Example 1: Tech Startup Scaling Challenge
-**Input**: 
+**Input**:
 ```
+
 {{organization_type}}: High-growth SaaS startup, Series C
 {{company_size}}: 500 employees, growing to 1000 in 18 months
 {{culture_type}}: Innovative, fast-paced, engineering-driven
@@ -993,6 +1014,7 @@ Total Year 1 Investment: ${{total}}
 {{strategic_priorities}}: Scale hiring, maintain culture, build leadership
 {{workforce_demographics}}: 70% millennials/Gen Z, 40% remote, 30% diversity
 {{hr_focus}}: Talent acquisition, culture preservation, manager development
+
 ```
 
 **Output**: [Comprehensive HR strategy including tech-enabled recruiting platform increasing hiring velocity by 50%, culture ambassador program maintaining 85% culture scores during growth, and manager excellence academy developing 100+ people leaders with 90% effectiveness ratings]
@@ -1009,3 +1031,4 @@ Total Year 1 Investment: ${{total}}
 - Continuous feedback increases performance by 12%
 - Diverse companies are 35% more likely to outperform
 - HR analytics adoption improves talent outcomes by 25%
+```

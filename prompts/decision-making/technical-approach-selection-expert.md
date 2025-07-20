@@ -1,6 +1,7 @@
 # Technical Approach Selection Expert and Engineering Decision Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: technical decisions, architecture selection, technology evaluation, engineering choices, technical strategy
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert technical approach selection methodology with engineering decision specialization to create comprehensive frameworks for evaluating and selecting optimal technical solutions that balance performance, maintainability, scalability, and business requirements. It employs systematic evaluation techniques, risk assessment methodologies, and technical trade-off analysis to guide engineering decisions.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise technical approach selection system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR TECHNICAL APPROACH STRATEGY AS:
 **Business Objective**: Improve system scalability by 10x while reducing deployment time from weeks to hours
 
 **Technical Approach Challenges**:
+
 - **Legacy System Integration**: Complex monolithic codebase with tightly coupled components requiring careful decomposition
 - **Team Experience**: Mixed microservices experience requiring significant learning curve and capability development
 - **Performance Requirements**: Must maintain <200ms response times while scaling to 10x current traffic
@@ -94,6 +98,7 @@ DELIVER YOUR TECHNICAL APPROACH STRATEGY AS:
 - **Timeline Pressure**: 12-month aggressive timeline requiring parallel development and incremental migration
 
 **Technical Success Criteria**:
+
 - System scalability improvement to handle 20M+ users with linear scaling capability
 - Deployment frequency increase from monthly to multiple times daily with <1% failure rate
 - Performance maintenance with <200ms average response time and 99.9% uptime
@@ -106,6 +111,7 @@ DELIVER YOUR TECHNICAL APPROACH STRATEGY AS:
 Deploy systematic microservices evaluation framework using architecture assessment methodology and team capability analysis to select optimal technical approach, ensuring scalability requirements while managing implementation complexity and team transition.
 
 **Engineering Decision Approach**:
+
 - **Architecture-First Analysis**: Systematic evaluation of microservices patterns with quality attribute assessment
 - **Team-Centric Planning**: Implementation approach aligned with current team capabilities and growth path
 - **Risk-Driven Design**: Technical decisions prioritizing risk mitigation with incremental delivery strategy
@@ -113,6 +119,7 @@ Deploy systematic microservices evaluation framework using architecture assessme
 - **Business-Aligned Implementation**: Technical approach supporting business objectives with measurable value delivery
 
 **Strategic Technical Principles**:
+
 1. **Evolutionary Architecture**: Incremental transformation approach enabling continuous value delivery
 2. **Team Capability Optimization**: Technical choices aligned with team skills and development capacity
 3. **Performance Excellence**: Architecture decisions prioritizing system performance and user experience
@@ -120,6 +127,7 @@ Deploy systematic microservices evaluation framework using architecture assessme
 5. **Future Adaptability**: Technical foundation enabling future evolution and technology adoption
 
 **Expected Technical Outcomes**:
+
 - Optimal microservices architecture with clear service boundaries and minimal coordination overhead
 - Successful team transition with 90%+ engineer productivity during transformation period
 - Performance target achievement with demonstrated scalability and reliability improvements
@@ -133,6 +141,7 @@ Deploy systematic microservices evaluation framework using architecture assessme
 **System Requirements Analysis Framework**:
 
 **Core Functional Requirements**:
+
 ```
 E-commerce Platform Capabilities:
 
@@ -162,16 +171,17 @@ Integration Requirements:
 ```
 
 **Critical Non-Functional Requirements**:
+
 ```python
 class NonFunctionalRequirementsAnalyzer:
     def __init__(self, current_metrics, target_metrics, business_constraints):
         self.current = current_metrics
         self.targets = target_metrics
         self.constraints = business_constraints
-        
+
     def analyze_performance_requirements(self):
         """Analyze performance and scalability requirements for technical approach"""
-        
+
         performance_specifications = {
             'scalability_requirements': {
                 'current_users': 2_000_000,           # Current active users
@@ -200,48 +210,48 @@ class NonFunctionalRequirementsAnalyzer:
                 'external_dependencies': 12          # Third-party service dependencies
             }
         }
-        
+
         return self.calculate_technical_feasibility(performance_specifications)
-    
+
     def calculate_technical_feasibility(self, specs):
         """Evaluate technical feasibility of meeting requirements"""
-        
+
         feasibility_analysis = {}
-        
+
         # Scalability feasibility
         scale_factor = specs['scalability_requirements']['target_users'] / specs['scalability_requirements']['current_users']
         current_infrastructure_capacity = 2.5  # Current headroom multiplier
         required_scaling = scale_factor / current_infrastructure_capacity
-        
+
         feasibility_analysis['scalability'] = {
             'scale_factor_required': required_scaling,
             'feasibility_score': min(10, 10 / required_scaling),  # Lower score for higher scaling needs
             'architecture_impact': 'high' if required_scaling > 2 else 'medium',
             'infrastructure_changes': 'significant' if required_scaling > 3 else 'moderate'
         }
-        
+
         # Performance feasibility
         current_response_time = 150  # Current average response time
         target_response_time = specs['performance_targets']['response_time_p95']
         performance_improvement_needed = current_response_time / target_response_time
-        
+
         feasibility_analysis['performance'] = {
             'improvement_factor': performance_improvement_needed,
             'feasibility_score': 10 if performance_improvement_needed <= 1 else 10 / performance_improvement_needed,
             'optimization_requirements': 'critical' if performance_improvement_needed > 1.5 else 'important',
             'architecture_constraints': self.identify_performance_constraints()
         }
-        
+
         return {
             'requirements_specification': specs,
             'feasibility_assessment': feasibility_analysis,
             'critical_constraints': self.identify_critical_constraints(specs),
             'success_probability': self.calculate_success_likelihood(feasibility_analysis)
         }
-    
+
     def identify_performance_constraints(self):
         """Identify key performance constraints affecting architecture decisions"""
-        
+
         constraints = {
             'database_bottlenecks': {
                 'read_heavy_workload': 0.80,          # 80% read operations
@@ -262,7 +272,7 @@ class NonFunctionalRequirementsAnalyzer:
                 'search_functionality': 'high'       # Full-text search with faceting
             }
         }
-        
+
         return constraints
 
 # Execute non-functional requirements analysis
@@ -276,6 +286,7 @@ requirements_analysis = analyzer.analyze_performance_requirements()
 ```
 
 **Requirements Analysis Results**:
+
 ```
 Technical Requirements Summary:
 
@@ -309,6 +320,7 @@ Compliance and Security (HIGH):
 **Engineering Team Analysis Framework**:
 
 **Current Team Capability Assessment**:
+
 ```
 Team Composition and Skills Analysis:
 
@@ -342,15 +354,15 @@ Technical Leadership:
 
 **Technology Stack Evaluation Matrix**:
 
-| Technology Category | Current Stack | Proposed Options | Team Readiness | Learning Curve | Risk Level |
-|-------------------|---------------|------------------|----------------|----------------|------------|
-| **Application Framework** | PHP/Laravel | Node.js/Express, Java/Spring Boot, Go | Medium | 6-8 weeks | Medium |
-| **Database** | MySQL | PostgreSQL, MongoDB, DynamoDB | High | 2-4 weeks | Low |
-| **Message Queue** | None | RabbitMQ, Apache Kafka, AWS SQS | Low | 8-12 weeks | High |
-| **API Gateway** | None | Kong, AWS API Gateway, Istio | Low | 6-10 weeks | Medium |
-| **Service Mesh** | None | Istio, Linkerd, Consul Connect | Low | 12-16 weeks | High |
-| **Container Orchestration** | Docker Compose | Kubernetes, Docker Swarm, ECS | Medium | 10-14 weeks | High |
-| **Monitoring** | Basic logging | Prometheus/Grafana, ELK Stack | Medium | 4-6 weeks | Low |
+| Technology Category         | Current Stack  | Proposed Options                      | Team Readiness | Learning Curve | Risk Level |
+| --------------------------- | -------------- | ------------------------------------- | -------------- | -------------- | ---------- |
+| **Application Framework**   | PHP/Laravel    | Node.js/Express, Java/Spring Boot, Go | Medium         | 6-8 weeks      | Medium     |
+| **Database**                | MySQL          | PostgreSQL, MongoDB, DynamoDB         | High           | 2-4 weeks      | Low        |
+| **Message Queue**           | None           | RabbitMQ, Apache Kafka, AWS SQS       | Low            | 8-12 weeks     | High       |
+| **API Gateway**             | None           | Kong, AWS API Gateway, Istio          | Low            | 6-10 weeks     | Medium     |
+| **Service Mesh**            | None           | Istio, Linkerd, Consul Connect        | Low            | 12-16 weeks    | High       |
+| **Container Orchestration** | Docker Compose | Kubernetes, Docker Swarm, ECS         | Medium         | 10-14 weeks    | High       |
+| **Monitoring**              | Basic logging  | Prometheus/Grafana, ELK Stack         | Medium         | 4-6 weeks      | Low        |
 
 ### SYSTEMATIC APPROACH EVALUATION AND COMPARISON
 
@@ -366,10 +378,10 @@ class ArchitectureEvaluationEngine:
         self.requirements = requirements
         self.capabilities = team_capabilities
         self.constraints = constraints
-        
+
     def evaluate_architecture_options(self):
         """Systematic evaluation of microservices architecture approaches"""
-        
+
         architecture_options = {
             'strangler_fig_pattern': {
                 'description': 'Gradual replacement of monolith with microservices',
@@ -400,12 +412,12 @@ class ArchitectureEvaluationEngine:
                 'timeline': 14  # months
             }
         }
-        
+
         return self.score_architecture_options(architecture_options)
-    
+
     def score_architecture_options(self, options):
         """Score architecture options using weighted criteria"""
-        
+
         evaluation_criteria = {
             'technical_feasibility': 0.25,    # Team capability and complexity
             'business_value_delivery': 0.20,  # Time to value and incremental benefits
@@ -414,16 +426,16 @@ class ArchitectureEvaluationEngine:
             'maintainability': 0.10,          # Long-term maintenance and evolution
             'team_productivity': 0.10         # Development velocity and satisfaction
         }
-        
+
         scored_options = {}
-        
+
         for option_name, option_data in options.items():
             scores = self.calculate_option_scores(option_name, option_data)
             weighted_score = sum(
-                scores[criterion] * weight 
+                scores[criterion] * weight
                 for criterion, weight in evaluation_criteria.items()
             )
-            
+
             scored_options[option_name] = {
                 'option_data': option_data,
                 'criterion_scores': scores,
@@ -431,14 +443,14 @@ class ArchitectureEvaluationEngine:
                 'recommendation_level': self.determine_recommendation(weighted_score),
                 'implementation_considerations': self.generate_implementation_notes(option_name, scores)
             }
-        
+
         return self.rank_options(scored_options)
-    
+
     def calculate_option_scores(self, option_name, option_data):
         """Calculate detailed scores for each evaluation criterion"""
-        
+
         scores = {}
-        
+
         # Technical feasibility (team skills, complexity, tooling)
         if option_data['risk_level'] == 'low' and option_data['team_impact'] == 'minimal':
             scores['technical_feasibility'] = 9.0
@@ -448,16 +460,16 @@ class ArchitectureEvaluationEngine:
             scores['technical_feasibility'] = 4.0
         else:
             scores['technical_feasibility'] = 6.0
-        
+
         # Business value delivery (time to market, incremental value)
         timeline_score = max(1.0, 10.0 - (option_data['timeline'] - 12) * 0.5)
         incremental_value = 8.0 if option_data['implementation_approach'] == 'incremental' else 6.0
         scores['business_value_delivery'] = (timeline_score + incremental_value) / 2
-        
+
         # Risk management (implementation risk, operational complexity)
         risk_scores = {'low': 9.0, 'medium-low': 7.5, 'medium': 6.0, 'high': 3.0}
         scores['risk_management'] = risk_scores.get(option_data['risk_level'], 5.0)
-        
+
         # Scalability achievement (architecture scalability, performance)
         if 'microservices' in option_name or 'domain_driven' in option_name:
             scores['scalability_achievement'] = 9.0
@@ -465,7 +477,7 @@ class ArchitectureEvaluationEngine:
             scores['scalability_achievement'] = 7.0
         else:
             scores['scalability_achievement'] = 6.0
-        
+
         # Maintainability (code quality, team understanding)
         if option_data['implementation_approach'] == 'systematic':
             scores['maintainability'] = 8.0
@@ -473,11 +485,11 @@ class ArchitectureEvaluationEngine:
             scores['maintainability'] = 7.0
         else:
             scores['maintainability'] = 5.0
-        
+
         # Team productivity (development velocity, learning curve)
         productivity_impact = {'minimal': 8.5, 'moderate': 6.5, 'significant': 4.0}
         scores['team_productivity'] = productivity_impact.get(option_data['team_impact'], 5.0)
-        
+
         return scores
 
 # Execute architecture evaluation
@@ -491,6 +503,7 @@ architecture_evaluation = evaluator.evaluate_architecture_options()
 ```
 
 **Architecture Evaluation Results**:
+
 ```
 Microservices Architecture Scoring Results:
 
@@ -533,14 +546,14 @@ Microservices Architecture Scoring Results:
 
 **Primary Technology Decisions**:
 
-| Decision Category | Option A | Option B | Option C | Recommendation | Rationale |
-|------------------|----------|----------|----------|----------------|-----------|
-| **Programming Language** | Node.js | Java/Spring Boot | Go | **Java/Spring Boot** | Team familiarity, enterprise features, ecosystem |
-| **Database Strategy** | PostgreSQL + MongoDB | MySQL + Redis | Multi-DB per service | **PostgreSQL + Redis** | Performance, consistency, team experience |
-| **Message Queue** | Apache Kafka | RabbitMQ | AWS SQS | **RabbitMQ** | Learning curve, reliability, operational simplicity |
-| **API Gateway** | Kong | AWS API Gateway | Custom Solution | **Kong** | Features, control, cost-effectiveness |
-| **Container Orchestration** | Kubernetes | Docker Swarm | AWS ECS | **AWS ECS** | Team readiness, operational complexity |
-| **Monitoring Stack** | Prometheus/Grafana | ELK Stack | DataDog | **Prometheus/Grafana** | Cost, flexibility, community support |
+| Decision Category           | Option A             | Option B         | Option C             | Recommendation         | Rationale                                           |
+| --------------------------- | -------------------- | ---------------- | -------------------- | ---------------------- | --------------------------------------------------- |
+| **Programming Language**    | Node.js              | Java/Spring Boot | Go                   | **Java/Spring Boot**   | Team familiarity, enterprise features, ecosystem    |
+| **Database Strategy**       | PostgreSQL + MongoDB | MySQL + Redis    | Multi-DB per service | **PostgreSQL + Redis** | Performance, consistency, team experience           |
+| **Message Queue**           | Apache Kafka         | RabbitMQ         | AWS SQS              | **RabbitMQ**           | Learning curve, reliability, operational simplicity |
+| **API Gateway**             | Kong                 | AWS API Gateway  | Custom Solution      | **Kong**               | Features, control, cost-effectiveness               |
+| **Container Orchestration** | Kubernetes           | Docker Swarm     | AWS ECS              | **AWS ECS**            | Team readiness, operational complexity              |
+| **Monitoring Stack**        | Prometheus/Grafana   | ELK Stack        | DataDog              | **Prometheus/Grafana** | Cost, flexibility, community support                |
 
 **Build vs. Buy Analysis for Key Components**:
 
@@ -553,7 +566,7 @@ Order Management Service:
   - Development Cost: $300K
   - Ongoing Maintenance: $100K annually
   - Customization: 100% fit to business requirements
-  
+
 • Buy Option: Commercial order management platform
   - Implementation Time: 3 months
   - Licensing Cost: $150K annually
@@ -569,7 +582,7 @@ Payment Processing Service:
   - Development Cost: $400K
   - Compliance Cost: $200K (PCI DSS)
   - Ongoing Maintenance: $150K annually
-  
+
 • Buy Option: Payment service provider (Stripe, Adyen)
   - Implementation Time: 2 months
   - Transaction Fees: 2.9% + $0.30 per transaction
@@ -587,6 +600,7 @@ Rationale: Non-differentiating capability with high compliance burden and vendor
 **PRIMARY RECOMMENDATION: Strangler Fig Pattern with Domain-Driven Service Boundaries**
 
 **Technical Architecture Decision**:
+
 ```
 Recommended Technical Approach:
 
@@ -617,6 +631,7 @@ Phase 3 (Months 8-12): Advanced Services and Optimization
 ```
 
 **Decision Rationale and Supporting Evidence**:
+
 ```
 Technical Decision Justification:
 
@@ -650,6 +665,7 @@ Team Readiness:
 **Detailed Implementation Timeline**:
 
 **Phase 1: Foundation and Infrastructure (Months 1-4)**:
+
 ```
 Month 1: Infrastructure Setup and Team Preparation
 Week 1-2: Infrastructure Planning and Tool Selection
@@ -678,16 +694,17 @@ Month 4: Team Training and Capability Development
 ```
 
 **Phase 2: Service Extraction and Core Development (Months 4-8)**:
+
 ```python
 class ServiceExtractionPlan:
     def __init__(self, legacy_analysis, business_domains, team_capacity):
         self.legacy = legacy_analysis
         self.domains = business_domains
         self.capacity = team_capacity
-        
+
     def plan_service_extraction(self):
         """Plan systematic service extraction with domain boundaries"""
-        
+
         service_extraction_sequence = [
             {
                 'service_name': 'User Management Service',
@@ -742,19 +759,19 @@ class ServiceExtractionPlan:
                 }
             }
         ]
-        
+
         return self.validate_extraction_plan(service_extraction_sequence)
-    
+
     def validate_extraction_plan(self, sequence):
         """Validate service extraction plan for feasibility and dependencies"""
-        
+
         validation_results = {
             'team_capacity_check': self.validate_team_allocation(sequence),
             'dependency_analysis': self.analyze_service_dependencies(sequence),
             'risk_assessment': self.assess_extraction_risks(sequence),
             'timeline_feasibility': self.evaluate_timeline_realism(sequence)
         }
-        
+
         return {
             'extraction_plan': sequence,
             'validation_results': validation_results,
@@ -773,6 +790,7 @@ extraction_plan = extractor.plan_service_extraction()
 ```
 
 **Risk Mitigation and Contingency Planning**:
+
 ```
 Critical Risk Assessment and Mitigation:
 
@@ -781,7 +799,7 @@ High-Impact Risks:
    • Mitigation: Pair programming with experienced microservices consultant
    • Contingency: Extended timeline by 2 months with focused training
    • Monitoring: Weekly skill assessment and productivity tracking
-   
+
 2. Performance Degradation Risk (Probability: 40%, Impact: Critical)
    • Mitigation: Performance testing at each service extraction milestone
    • Contingency: Service consolidation and optimization plan
@@ -801,7 +819,7 @@ Medium-Impact Risks:
 5. Tool and Infrastructure Learning (Probability: 70%, Impact: Medium)
    • Mitigation: Infrastructure-as-code and automation focus
    • Contingency: Managed service adoption for complex components
-   
+
 6. Business Stakeholder Alignment (Probability: 30%, Impact: Medium)
    • Mitigation: Regular business domain validation sessions
    • Contingency: Service boundary adjustment based on feedback
@@ -817,10 +835,10 @@ class TechnicalPerformanceMonitor:
         self.baseline = baseline_metrics
         self.targets = target_metrics
         self.tools = monitoring_tools
-        
+
     def establish_monitoring_framework(self):
         """Comprehensive technical performance monitoring setup"""
-        
+
         monitoring_dimensions = {
             'system_performance': {
                 'response_time_metrics': {
@@ -852,12 +870,12 @@ class TechnicalPerformanceMonitor:
                 'operational_cost': {'target': '-20%', 'measurement': 'infrastructure_cost_per_transaction'}
             }
         }
-        
+
         return self.configure_monitoring_tools(monitoring_dimensions)
-    
+
     def configure_monitoring_tools(self, dimensions):
         """Configure monitoring tools and alerting for comprehensive visibility"""
-        
+
         monitoring_configuration = {
             'application_monitoring': {
                 'tool': 'Prometheus + Grafana',
@@ -884,7 +902,7 @@ class TechnicalPerformanceMonitor:
                 'locations': ['multiple_geographic_regions']
             }
         }
-        
+
         return monitoring_configuration
 
 # Implement monitoring framework
@@ -898,6 +916,7 @@ monitoring_framework = monitor.establish_monitoring_framework()
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive requirements analysis including functional, non-functional, and constraint identification
 2. Evaluate team capabilities and technology readiness with skill gap and learning curve assessment
 3. Apply systematic architecture evaluation using weighted criteria and objective scoring methodology
@@ -908,8 +927,11 @@ monitoring_framework = monitor.establish_monitoring_framework()
 8. Design feedback loops with regular assessment, adjustment, and optimization mechanisms
 
 ## Examples
+
 ### Example 1: Data Platform Architecture Selection
-**Input**: 
+
+**Input**:
+
 ```
 {{system_type}}: Real-time analytics data platform requiring high-throughput data processing
 {{scale_requirements}}: Enterprise scale with billions of events daily and sub-second query response
@@ -921,7 +943,9 @@ monitoring_framework = monitor.establish_monitoring_framework()
 **Output**: [Data platform technical approach with stream processing architecture, technology stack evaluation, team transition planning, and performance optimization strategy]
 
 ### Example 2: Mobile Application Technical Architecture
+
 **Input**:
+
 ```
 {{system_type}}: Cross-platform mobile application with offline capability and real-time synchronization
 {{team_expertise}}: Strong web development background with limited mobile development experience
@@ -933,11 +957,13 @@ monitoring_framework = monitor.establish_monitoring_framework()
 **Output**: [Mobile architecture approach with cross-platform framework selection, offline-first design, team capability development, and rapid delivery strategy]
 
 ## Related Prompts
+
 - [System Architecture Design Expert](/prompts/technical/system-architecture-design.md)
 - [Technology Evaluation Specialist](/prompts/evaluation-assessment/technology-evaluation.md)
 - [Engineering Team Development Expert](/prompts/management-leadership/engineering-team-development.md)
 
 ## Research Notes
+
 - Based on software architecture evaluation methodologies and technical decision frameworks
 - Integrates systematic evaluation with practical implementation considerations and team dynamics
 - Emphasizes risk management with incremental delivery and performance validation

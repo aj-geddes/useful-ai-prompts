@@ -1,6 +1,7 @@
 # Trend Identification Expert and Future Intelligence Analyst
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: trend analysis, future intelligence, pattern detection, forecasting, strategic foresight
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines advanced trend identification expertise with future intelligence capabilities to detect emerging patterns, weak signals, and transformative shifts. It employs multiple analytical frameworks to forecast future developments and their strategic implications.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise trend analysis system combining:
 
@@ -88,24 +91,26 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Trend Ecosystem Visualization
 ```
+
                     TRANSFORMATIVE
                          │
     Metaverse           │        Quantum
     Reality             │        Computing
        ●(H3)           │          ●(H3)
                        │
+
 ───────────────────────┼─────────────────────
-                       │
-    Remote              │        Green
-    Everything          │        Economy
-       ●(H2)           │          ●(H2)
-                       │
-    AI                  │        Digital
-    Integration         │        Health
-       ●(H1)           │          ●(H1)
-                       │
-                    INCREMENTAL
-                    
+│
+Remote │ Green
+Everything │ Economy
+●(H2) │ ●(H2)
+│
+AI │ Digital
+Integration │ Health
+●(H1) │ ●(H1)
+│
+INCREMENTAL
+
          SOCIAL/CULTURAL ← → TECH/ECONOMIC
 
 Trend Velocity:
@@ -117,26 +122,28 @@ Trend Velocity:
 H1: Horizon 1 (Current)
 H2: Horizon 2 (Emerging)
 H3: Horizon 3 (Future)
+
 ```
 
 #### Weak Signal Detection Grid
 ```
+
 Signal Strength Matrix:
 ┌─────────────┬─────────────┬─────────────┬─────────────┐
-│   STRONG    │ Sustainable │    Remote   │     AI      │
-│   SIGNALS   │ Packaging   │    Work     │ Everywhere  │
-│     (4+)    │ Mandates    │   Forever   │             │
+│ STRONG │ Sustainable │ Remote │ AI │
+│ SIGNALS │ Packaging │ Work │ Everywhere │
+│ (4+) │ Mandates │ Forever │ │
 ├─────────────┼─────────────┼─────────────┼─────────────┤
-│   MEDIUM    │   Digital   │  Synthetic  │   Space     │
-│   SIGNALS   │   Twins     │   Biology   │  Tourism    │
-│    (2-3)    │             │             │             │
+│ MEDIUM │ Digital │ Synthetic │ Space │
+│ SIGNALS │ Twins │ Biology │ Tourism │
+│ (2-3) │ │ │ │
 ├─────────────┼─────────────┼─────────────┼─────────────┤
-│    WEAK     │   Neural    │   Quantum   │  Longevity  │
-│   SIGNALS   │ Interfaces  │   Internet  │   Escape    │
-│    (0-1)    │             │             │ Velocity    │
+│ WEAK │ Neural │ Quantum │ Longevity │
+│ SIGNALS │ Interfaces │ Internet │ Escape │
+│ (0-1) │ │ │ Velocity │
 └─────────────┴─────────────┴─────────────┴─────────────┘
-     Early         Growing        Mature      Declining
-                    ADOPTION STAGE →
+Early Growing Mature Declining
+ADOPTION STAGE →
 
 Key Indicators:
 • Patent filings
@@ -144,55 +151,59 @@ Key Indicators:
 • Search trends
 • Academic papers
 • Regulatory activity
+
 ```
 
 ### DETAILED TREND ANALYSIS
 
 #### Trend #1: Ambient Computing Revolution
 ```
+
 Trend Profile:
 ┌─────────────────────────────────────────────┐
-│ Category: Technology × Behavior             │
-│ Current Stage: Early Mainstream (15%)       │
+│ Category: Technology × Behavior │
+│ Current Stage: Early Mainstream (15%) │
 │ Velocity: Accelerating (2x year-over-year) │
-│ Impact Potential: Transformative            │
-│ Certainty Level: High (85%)               │
+│ Impact Potential: Transformative │
+│ Certainty Level: High (85%) │
 ├─────────────────────────────────────────────┤
-│ Key Drivers:                                │
-│ • IoT proliferation (50B devices by 2025)  │
-│ • Edge computing maturity                  │
-│ • Voice/gesture interface advancement      │
-│ • Privacy-preserving AI                    │
+│ Key Drivers: │
+│ • IoT proliferation (50B devices by 2025) │
+│ • Edge computing maturity │
+│ • Voice/gesture interface advancement │
+│ • Privacy-preserving AI │
 ├─────────────────────────────────────────────┤
-│ Weak Signals Detected:                     │
-│ • Invisible interface patents up 300%      │
-│ • Major tech hiring ambient specialists    │
-│ • Regulation discussions beginning         │
-│ • Consumer behavior shifts observed        │
+│ Weak Signals Detected: │
+│ • Invisible interface patents up 300% │
+│ • Major tech hiring ambient specialists │
+│ • Regulation discussions beginning │
+│ • Consumer behavior shifts observed │
 └─────────────────────────────────────────────┘
 
 Adoption S-Curve:
-    │                          ╱─────── 
-100%│                      ╱─╯ Late Majority
-    │                  ╱──╯
- 75%│              ╱──╯ Early Majority
-    │          ╱──╯
- 50%│      ╱──╯
-    │   ╱─╯ Early Adopters
- 25%│ ╱╯ (We are here)
-    │╱ Innovators
-  0%└────┬────┬────┬────┬────┬────
-      2023  2024  2025  2026  2027
+│ ╱───────
+100%│ ╱─╯ Late Majority
+│ ╱──╯
+75%│ ╱──╯ Early Majority
+│ ╱──╯
+50%│ ╱──╯
+│ ╱─╯ Early Adopters
+25%│ ╱╯ (We are here)
+│╱ Innovators
+0%└────┬────┬────┬────┬────┬────
+2023 2024 2025 2026 2027
 
 Strategic Windows:
 • Innovation: NOW - 6 months
 • Investment: 6-18 months
 • Mass market: 18-36 months
 • Saturation: 3-5 years
+
 ```
 
 #### Trend #2: Regenerative Business Models
 ```
+
 STEEP Analysis:
 
 Social Dimension:
@@ -228,31 +239,33 @@ Political/Regulatory:
 Convergence Point: 2025-2026
 Critical Mass: 2027-2028
 Transformation: 2030+
+
 ```
 
 #### Trend #3: Synthetic Reality Convergence
 ```
+
 Trend Intersection Analysis:
 
 Contributing Trends:
-┌──────────────┐     ┌──────────────┐
-│     AR/VR    │     │  Generative  │
-│  Maturation  │     │      AI      │
-└──────┬───────┘     └───────┬──────┘
-       │                     │
-       └──────────┬──────────┘
-                  │
-            ┌─────▼─────┐
-            │ SYNTHETIC │
-            │  REALITY  │
-            └─────┬─────┘
-                  │
-       ┌──────────┴──────────┐
-       │                     │
-┌──────▼───────┐     ┌──────▼──────┐
-│   Digital    │     │    Real     │
-│   Twins     │     │   World     │
-└──────────────┘     └─────────────┘
+┌──────────────┐ ┌──────────────┐
+│ AR/VR │ │ Generative │
+│ Maturation │ │ AI │
+└──────┬───────┘ └───────┬──────┘
+│ │
+└──────────┬──────────┘
+│
+┌─────▼─────┐
+│ SYNTHETIC │
+│ REALITY │
+└─────┬─────┘
+│
+┌──────────┴──────────┐
+│ │
+┌──────▼───────┐ ┌──────▼──────┐
+│ Digital │ │ Real │
+│ Twins │ │ World │
+└──────────────┘ └─────────────┘
 
 Emergence Timeline:
 2024: Technical foundations
@@ -267,25 +280,28 @@ First-Mover Advantages:
 • Platform standard setting
 • Network effects capture
 • Talent concentration
+
 ```
 
 ### FUTURE SCENARIOS
 
 #### Scenario Planning Matrix
 ```
+
                 High Uncertainty
                       │
-   Wild Cards        │    Preferred
-   "Chaos"           │    Future
-                     │    "Transform"
- Low ────────────────┼──────────────── High
-Impact               │              Impact
-                     │
-   Status Quo        │    Probable
-   "Stagnate"        │    Future
-                     │    "Evolve"
-                     │
-                Low Uncertainty
+
+Wild Cards │ Preferred
+"Chaos" │ Future
+│ "Transform"
+Low ────────────────┼──────────────── High
+Impact │ Impact
+│
+Status Quo │ Probable
+"Stagnate" │ Future
+│ "Evolve"
+│
+Low Uncertainty
 
 Scenario 1: "Transform" (30% probability)
 ├── Triggers: Technology breakthroughs + policy support
@@ -314,36 +330,40 @@ Scenario 4: "Stagnate" (5% probability)
 ├── Characteristics: Slow change
 ├── Implications: Traditional advantage
 └── Indicators: Regulation, social pushback
+
 ```
 
 ### STRATEGIC IMPLICATIONS
 
 #### Opportunity/Threat Matrix
 ```
-OPPORTUNITIES                    THREATS
-┌────────────────────┐  ┌────────────────────┐
-│ Market Creation    │  │ Disruption Risk    │
-│ • New categories   │  │ • Business model   │
-│ • Unmet needs      │  │ • Value chain      │
-│ • Blue oceans      │  │ • Competition      │
-├────────────────────┤  ├────────────────────┤
-│ Innovation Paths   │  │ Capability Gaps    │
-│ • Technology fusion│  │ • Skills shortage  │
-│ • Business models  │  │ • Tech debt        │
-│ • Ecosystems       │  │ • Culture lag      │
-├────────────────────┤  ├────────────────────┤
-│ Strategic Assets   │  │ Timing Risks       │
-│ • Data advantages  │  │ • Too early/late   │
-│ • Network effects  │  │ • Investment waste │
-│ • Platform play    │  │ • Missed windows   │
-└────────────────────┘  └────────────────────┘
+
+OPPORTUNITIES THREATS
+┌────────────────────┐ ┌────────────────────┐
+│ Market Creation │ │ Disruption Risk │
+│ • New categories │ │ • Business model │
+│ • Unmet needs │ │ • Value chain │
+│ • Blue oceans │ │ • Competition │
+├────────────────────┤ ├────────────────────┤
+│ Innovation Paths │ │ Capability Gaps │
+│ • Technology fusion│ │ • Skills shortage │
+│ • Business models │ │ • Tech debt │
+│ • Ecosystems │ │ • Culture lag │
+├────────────────────┤ ├────────────────────┤
+│ Strategic Assets │ │ Timing Risks │
+│ • Data advantages │ │ • Too early/late │
+│ • Network effects │ │ • Investment waste │
+│ • Platform play │ │ • Missed windows │
+└────────────────────┘ └────────────────────┘
 
 Net Assessment: Opportunities > Threats
 Action Bias: Aggressive positioning
+
 ```
 
 #### Innovation Roadmap
 ```
+
 Innovation Horizon Planning:
 
 Horizon 1 (0-18 months): Optimize Core
@@ -368,21 +388,23 @@ Investment Allocation:
 H1: 70% → 50% (declining)
 H2: 25% → 35% (growing)
 H3: 5% → 15% (accelerating)
+
 ```
 
 ### TREND MONITORING SYSTEM
 
 #### Early Warning Dashboard
 ```
+
 Trend Velocity Tracker:
 ┌─────────────────────────────────────────────┐
 │ TREND ACCELERATION INDEX: ■■■■■■■□□□ (7/10)│
 ├─────────────────────────────────────────────┤
-│ Ambient Computing:  ▲▲ +45% momentum       │
-│ Regenerative Biz:   ▲  +22% momentum       │
-│ Synthetic Reality:  ▲▲▲ +67% momentum      │
-│ Quantum Computing:  →  Steady state        │
-│ Space Economy:      ▲  +18% momentum       │
+│ Ambient Computing: ▲▲ +45% momentum │
+│ Regenerative Biz: ▲ +22% momentum │
+│ Synthetic Reality: ▲▲▲ +67% momentum │
+│ Quantum Computing: → Steady state │
+│ Space Economy: ▲ +18% momentum │
 └─────────────────────────────────────────────┘
 
 Signal Strength Indicators:
@@ -391,7 +413,8 @@ Signal Strength Indicators:
 🟢 Talent migration: 189% above baseline
 🔴 Regulatory activity: 298% above baseline
 🟢 Consumer interest: 145% above baseline
-```
+
+````
 
 #### Trend Lifecycle Tracking
 ```python
@@ -405,7 +428,7 @@ def calculate_trend_maturity(trend_data):
         'consumer_adoption': trend_data['search_interest'],
         'regulatory_attention': trend_data['policy_mentions']
     }
-    
+
     # Weighted maturity score
     weights = {
         'media_coverage': 0.15,
@@ -415,23 +438,24 @@ def calculate_trend_maturity(trend_data):
         'consumer_adoption': 0.20,
         'regulatory_attention': 0.05
     }
-    
+
     maturity_score = sum(
-        indicators[k] * weights[k] 
+        indicators[k] * weights[k]
         for k in indicators
     )
-    
+
     return {
         'score': maturity_score,
         'stage': get_stage(maturity_score),
         'velocity': calculate_velocity(trend_data),
         'timeline_to_mainstream': estimate_timeline(maturity_score)
     }
-```
+````
 
 ### ACTION PLANNING
 
 #### Strategic Response Framework
+
 ```
 Trend Response Decision Tree:
 
@@ -457,6 +481,7 @@ Response Strategies:
 ```
 
 #### Implementation Roadmap
+
 ```
 90-Day Trend Action Plan:
 
@@ -494,16 +519,21 @@ Success Metrics:
 ### APPENDICES
 
 #### A. Trend Research Methodology
+
 [Data sources, analytical techniques, validation processes]
 
 #### B. Signal Detection Algorithms
+
 [Pattern recognition methods, weak signal indicators]
 
 #### C. Industry Trend Benchmarks
+
 [Comparative adoption rates, success patterns]
 
 #### D. Future Research Calendar
+
 [Ongoing monitoring schedule, update cycles]
+
 ```
 
 ## Usage Instructions
@@ -518,13 +548,15 @@ Success Metrics:
 
 ## Examples
 ### Example 1: Retail Industry Trend Analysis
-**Input**: 
+**Input**:
 ```
+
 {{domain_focus}}: Retail and consumer behavior
 {{time_horizon}}: 2-5 years
 {{strategic_purpose}}: Innovation and new business models
 {{industry_context}}: Traditional retail, facing digital disruption
 {{specific_trends}}: Post-pandemic shopping, sustainability, tech integration
+
 ```
 
 **Output**: [Comprehensive analysis identifying phygital retail convergence, circular commerce models, and AI-powered personalization as key trends, with specific implementation strategies for traditional retailers]
@@ -540,3 +572,4 @@ Success Metrics:
 - Includes practical implementation roadmaps
 - Provides specific monitoring metrics and dashboards
 - Integrates multiple future planning methodologies
+```

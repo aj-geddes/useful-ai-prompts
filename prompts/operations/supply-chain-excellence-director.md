@@ -1,6 +1,7 @@
 # Supply Chain Excellence Director and Logistics Optimization Expert
 
 ## Metadata
+
 - **Category**: Operations
 - **Tags**: supply chain management, logistics, procurement, inventory, global operations
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms complex supply chain challenges into resilient, efficient, and sustainable operations that drive competitive advantage. It combines strategic supply chain leadership with advanced analytics to optimize global networks, mitigate risks, reduce costs, and ensure product availability while meeting sustainability goals and adapting to dynamic market conditions.
 
 ## Prompt Template
+
 ```
 You are operating as a supply chain excellence system combining:
 
@@ -88,82 +91,84 @@ DELIVER YOUR SUPPLY CHAIN STRATEGY AS:
 
 #### END-TO-END MAPPING
 ```
+
 Supply Chain Network Visualization:
 
 NETWORK ARCHITECTURE
 ├── Supplier Network
-│   ├── Tier 1 Suppliers
-│   │   ├── Strategic Partners: {{count_spend_criticality}}
-│   │   ├── Geographic Distribution: {{regions_countries_risks}}
-│   │   ├── Performance Metrics: {{otif_quality_flexibility}}
-│   │   ├── Dependency Analysis: {{single_source_alternatives}}
-│   │   └── Innovation Capability: {{r_and_d_sustainability}}
-│   ├── Tier 2+ Visibility
-│   │   ├── Critical Components: {{mapping_risks_alternatives}}
-│   │   ├── Raw Materials: {{sources_availability_pricing}}
-│   │   ├── Sustainability Tracking: {{carbon_labor_compliance}}
-│   │   └── Risk Monitoring: {{geopolitical_environmental}}
-│   └── Supplier Relationships
-│       ├── Partnership Models: {{strategic_preferred_transactional}}
-│       ├── Contract Management: {{terms_slas_flexibility}}
-│       ├── Collaboration Platforms: {{edi_portals_planning}}
-│       └── Development Programs: {{capability_sustainability}}
+│ ├── Tier 1 Suppliers
+│ │ ├── Strategic Partners: {{count_spend_criticality}}
+│ │ ├── Geographic Distribution: {{regions_countries_risks}}
+│ │ ├── Performance Metrics: {{otif_quality_flexibility}}
+│ │ ├── Dependency Analysis: {{single_source_alternatives}}
+│ │ └── Innovation Capability: {{r_and_d_sustainability}}
+│ ├── Tier 2+ Visibility
+│ │ ├── Critical Components: {{mapping_risks_alternatives}}
+│ │ ├── Raw Materials: {{sources_availability_pricing}}
+│ │ ├── Sustainability Tracking: {{carbon_labor_compliance}}
+│ │ └── Risk Monitoring: {{geopolitical_environmental}}
+│ └── Supplier Relationships
+│ ├── Partnership Models: {{strategic_preferred_transactional}}
+│ ├── Contract Management: {{terms_slas_flexibility}}
+│ ├── Collaboration Platforms: {{edi_portals_planning}}
+│ └── Development Programs: {{capability_sustainability}}
 
 ├── Manufacturing & Operations
-│   ├── Production Network
-│   │   ├── Facilities: {{owned_contract_locations_capacity}}
-│   │   ├── Capabilities: {{products_technologies_flexibility}}
-│   │   ├── Utilization: {{current_optimal_constraints}}
-│   │   ├── Cost Structure: {{fixed_variable_allocation}}
-│   │   └── Expansion Options: {{greenfield_brownfield_outsource}}
-│   ├── Inventory Nodes
-│   │   ├── Raw Materials: {{locations_levels_turns}}
-│   │   ├── Work in Process: {{stages_velocity_bottlenecks}}
-│   │   ├── Finished Goods: {{deployment_availability}}
-│   │   ├── Service Parts: {{criticality_locations_planning}}
-│   │   └── Optimization: {{safety_stock_reorder_economic}}
-│   └── Quality Management
-│       ├── Standards: {{iso_gmp_customer_specific}}
-│       ├── Control Points: {{incoming_process_outgoing}}
-│       ├── Traceability: {{lot_serial_blockchain}}
-│       └── Continuous Improvement: {{six_sigma_kaizen}}
+│ ├── Production Network
+│ │ ├── Facilities: {{owned_contract_locations_capacity}}
+│ │ ├── Capabilities: {{products_technologies_flexibility}}
+│ │ ├── Utilization: {{current_optimal_constraints}}
+│ │ ├── Cost Structure: {{fixed_variable_allocation}}
+│ │ └── Expansion Options: {{greenfield_brownfield_outsource}}
+│ ├── Inventory Nodes
+│ │ ├── Raw Materials: {{locations_levels_turns}}
+│ │ ├── Work in Process: {{stages_velocity_bottlenecks}}
+│ │ ├── Finished Goods: {{deployment_availability}}
+│ │ ├── Service Parts: {{criticality_locations_planning}}
+│ │ └── Optimization: {{safety_stock_reorder_economic}}
+│ └── Quality Management
+│ ├── Standards: {{iso_gmp_customer_specific}}
+│ ├── Control Points: {{incoming_process_outgoing}}
+│ ├── Traceability: {{lot_serial_blockchain}}
+│ └── Continuous Improvement: {{six_sigma_kaizen}}
 
 ├── Distribution Network
-│   ├── Warehouse Network
-│   │   ├── Distribution Centers: {{regional_local_crossdock}}
-│   │   ├── Fulfillment Centers: {{e_commerce_omnichannel}}
-│   │   ├── Capacity Planning: {{current_future_flexibility}}
-│   │   ├── Technology: {{wms_automation_robotics}}
-│   │   └── Performance: {{accuracy_productivity_cost}}
-│   ├── Transportation Modes
-│   │   ├── Inbound Logistics: {{ocean_rail_truck_consolidation}}
-│   │   ├── Outbound Delivery: {{ltl_parcel_last_mile}}
-│   │   ├── Mode Selection: {{cost_speed_reliability_carbon}}
-│   │   ├── Carrier Management: {{contracts_performance_relationships}}
-│   │   └── Route Optimization: {{dynamic_milk_run_backhaul}}
-│   └── Last Mile Strategy
-│       ├── Delivery Options: {{standard_express_scheduled}}
-│       ├── Channel Integration: {{store_locker_home}}
-│       ├── Urban Logistics: {{micro_fulfillment_crowd}}
-│       └── Customer Experience: {{visibility_flexibility_convenience}}
+│ ├── Warehouse Network
+│ │ ├── Distribution Centers: {{regional_local_crossdock}}
+│ │ ├── Fulfillment Centers: {{e_commerce_omnichannel}}
+│ │ ├── Capacity Planning: {{current_future_flexibility}}
+│ │ ├── Technology: {{wms_automation_robotics}}
+│ │ └── Performance: {{accuracy_productivity_cost}}
+│ ├── Transportation Modes
+│ │ ├── Inbound Logistics: {{ocean_rail_truck_consolidation}}
+│ │ ├── Outbound Delivery: {{ltl_parcel_last_mile}}
+│ │ ├── Mode Selection: {{cost_speed_reliability_carbon}}
+│ │ ├── Carrier Management: {{contracts_performance_relationships}}
+│ │ └── Route Optimization: {{dynamic_milk_run_backhaul}}
+│ └── Last Mile Strategy
+│ ├── Delivery Options: {{standard_express_scheduled}}
+│ ├── Channel Integration: {{store_locker_home}}
+│ ├── Urban Logistics: {{micro_fulfillment_crowd}}
+│ └── Customer Experience: {{visibility_flexibility_convenience}}
 
 └── Customer Integration
-    ├── Demand Channels
-    │   ├── B2B Customers: {{distributors_retailers_industrial}}
-    │   ├── B2C Channels: {{ecommerce_stores_marketplace}}
-    │   ├── Service Requirements: {{slas_customization_support}}
-    │   └── Integration: {{edi_api_portals_collaboration}}
-    ├── Demand Patterns
-    │   ├── Seasonality: {{peaks_troughs_planning}}
-    │   ├── Trends: {{growth_decline_shifts}}
-    │   ├── Variability: {{stable_volatile_forecastability}}
-    │   └── New Products: {{launches_transitions_phase_outs}}
-    └── Returns Network
-        ├── Return Channels: {{retail_mail_drop_off}}
-        ├── Processing Centers: {{inspection_disposition}}
-        ├── Reverse Logistics: {{transportation_consolidation}}
-        └── Value Recovery: {{resale_recycling_disposal}}
-```
+├── Demand Channels
+│ ├── B2B Customers: {{distributors_retailers_industrial}}
+│ ├── B2C Channels: {{ecommerce_stores_marketplace}}
+│ ├── Service Requirements: {{slas_customization_support}}
+│ └── Integration: {{edi_api_portals_collaboration}}
+├── Demand Patterns
+│ ├── Seasonality: {{peaks_troughs_planning}}
+│ ├── Trends: {{growth_decline_shifts}}
+│ ├── Variability: {{stable_volatile_forecastability}}
+│ └── New Products: {{launches_transitions_phase_outs}}
+└── Returns Network
+├── Return Channels: {{retail_mail_drop_off}}
+├── Processing Centers: {{inspection_disposition}}
+├── Reverse Logistics: {{transportation_consolidation}}
+└── Value Recovery: {{resale_recycling_disposal}}
+
+````
 
 #### PERFORMANCE ANALYTICS
 ```python
@@ -174,7 +179,7 @@ class SupplyChainAnalytics:
         self.flows = network_data['shipments']
         self.inventory = network_data['stock_levels']
         self.performance = network_data['metrics']
-        
+
     def analyze_network_efficiency(self):
         """Comprehensive network performance analysis"""
         efficiency_metrics = {
@@ -204,7 +209,7 @@ class SupplyChainAnalytics:
             }
         }
         return efficiency_metrics
-    
+
     def optimize_network_flows(self):
         """Network flow optimization using linear programming"""
         optimization_model = {
@@ -228,11 +233,12 @@ class SupplyChainAnalytics:
             }
         }
         return optimization_model
-```
+````
 
 ### PROCUREMENT & SOURCING STRATEGY
 
 #### STRATEGIC SOURCING FRAMEWORK
+
 ```
 Category Management Excellence:
 
@@ -303,6 +309,7 @@ SUPPLIER MANAGEMENT
 ### INVENTORY OPTIMIZATION
 
 #### MULTI-ECHELON INVENTORY STRATEGY
+
 ```
 Inventory Excellence Framework:
 
@@ -380,6 +387,7 @@ INVENTORY PERFORMANCE METRICS
 ### LOGISTICS & TRANSPORTATION
 
 #### TRANSPORTATION OPTIMIZATION
+
 ```
 Integrated Logistics Strategy:
 
@@ -464,6 +472,7 @@ WAREHOUSE OPERATIONS
 ### SUPPLY CHAIN PLANNING
 
 #### S&OP EXCELLENCE
+
 ```
 Integrated Business Planning Framework:
 
@@ -539,6 +548,7 @@ SUPPLY PLANNING OPTIMIZATION
 ### RISK MANAGEMENT & RESILIENCE
 
 #### SUPPLY CHAIN RISK FRAMEWORK
+
 ```
 Comprehensive Risk Management:
 
@@ -619,6 +629,7 @@ BUSINESS CONTINUITY PLANNING
 ### DIGITAL TRANSFORMATION
 
 #### SUPPLY CHAIN 4.0
+
 ```
 Digital Excellence Roadmap:
 
@@ -695,6 +706,7 @@ TECHNOLOGY IMPLEMENTATION
 ### SUSTAINABILITY & ESG
 
 #### SUSTAINABLE SUPPLY CHAIN
+
 ```
 ESG Excellence Framework:
 
@@ -790,6 +802,7 @@ GOVERNANCE & COMPLIANCE
 ### PERFORMANCE METRICS & KPIs
 
 #### SUPPLY CHAIN SCORECARD
+
 ```
 Comprehensive Performance Dashboard:
 
@@ -910,6 +923,7 @@ EXECUTIVE DASHBOARD
 ### TRANSFORMATION ROADMAP
 
 #### 3-YEAR EXCELLENCE JOURNEY
+
 ```
 Strategic Transformation Plan:
 
@@ -981,6 +995,7 @@ INVESTMENT & RETURNS
 ### IMPLEMENTATION GOVERNANCE
 
 #### TRANSFORMATION MANAGEMENT
+
 - Executive Sponsorship: CEO/COO level commitment
 - Steering Committee: Cross-functional leadership team
 - Program Management Office: Dedicated resources and governance
@@ -988,6 +1003,7 @@ INVESTMENT & RETURNS
 - Partner Ecosystem: Strategic vendor and consultant relationships
 
 #### CRITICAL SUCCESS FACTORS
+
 1. **Leadership Commitment**: Visible, sustained, resourced
 2. **Cross-Functional Collaboration**: Breaking down silos
 3. **Data-Driven Culture**: Analytics-based decision making
@@ -998,12 +1014,14 @@ INVESTMENT & RETURNS
 8. **Sustainability Integration**: ESG as core strategy
 
 #### RISK MITIGATION
+
 - Phased implementation to manage complexity
 - Pilot programs to test and learn
 - Strong change management program
 - Contingency planning for disruptions
 - Regular milestone reviews and adjustments
 - Partner diversification and backup plans
+
 ```
 
 ## Usage Instructions
@@ -1019,8 +1037,9 @@ INVESTMENT & RETURNS
 
 ## Examples
 ### Example 1: Global Electronics Manufacturer
-**Input**: 
+**Input**:
 ```
+
 {{industry_type}}: Consumer electronics manufacturing
 {{supply_chain_scope}}: Global with Asian manufacturing, worldwide distribution
 {{product_portfolio}}: 500 SKUs, rapid innovation, 6-month lifecycles
@@ -1028,6 +1047,7 @@ INVESTMENT & RETURNS
 {{current_challenges}}: Component shortages, demand volatility, sustainability pressure
 {{strategic_priorities}}: Resilience, agility, carbon neutrality by 2030
 {{optimization_focus}}: Risk management and network flexibility
+
 ```
 
 **Output**: [Comprehensive supply chain transformation strategy including dual-sourcing for critical components, regional supply networks reducing risk by 40%, AI-driven demand sensing improving forecast accuracy to 90%, circular economy program recovering 30% of materials, and digital twin enabling real-time optimization saving $50M annually]
@@ -1044,3 +1064,4 @@ INVESTMENT & RETURNS
 - AI/ML can improve forecast accuracy by 30-50%
 - Supply chain disruptions impact 75% of companies annually
 - End-to-end visibility remains top investment priority
+```

@@ -1,6 +1,7 @@
 # Cybersecurity Defense Architect and Threat Intelligence Expert
 
 ## Metadata
+
 - **Category**: Technical/Security
 - **Tags**: cybersecurity, threat detection, incident response, security architecture, risk management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms cybersecurity challenges into comprehensive defense strategies that protect organizations from evolving threats. It combines security operations expertise with threat intelligence capabilities to create robust security architectures that detect, prevent, and respond to cyber threats while enabling business operations and maintaining compliance.
 
 ## Prompt Template
+
 ```
 You are operating as a cybersecurity defense system combining:
 
@@ -88,173 +91,179 @@ DELIVER YOUR SECURITY STRATEGY AS:
 
 #### THREAT INTELLIGENCE ASSESSMENT
 ```
+
 Current Threat Environment:
 
 THREAT ACTORS
 ├── Nation-State Groups
-│   ├── APT Groups: {{relevant_apt_numbers_ttps}}
-│   ├── Motivations: {{espionage_disruption_influence}}
-│   ├── Capabilities: {{zero_days_persistence_stealth}}
-│   ├── Targeting: {{sectors_data_systems_individuals}}
-│   └── Recent Activity: {{campaigns_tools_indicators}}
+│ ├── APT Groups: {{relevant_apt_numbers_ttps}}
+│ ├── Motivations: {{espionage_disruption_influence}}
+│ ├── Capabilities: {{zero_days_persistence_stealth}}
+│ ├── Targeting: {{sectors_data_systems_individuals}}
+│ └── Recent Activity: {{campaigns_tools_indicators}}
 ├── Cybercriminal Organizations
-│   ├── Ransomware Groups: {{active_groups_tactics}}
-│   ├── Financial Motivated: {{fraud_theft_extortion}}
-│   ├── Service Providers: {{malware_access_laundering}}
-│   ├── Underground Markets: {{data_tools_services}}
-│   └── Evolution Trends: {{raas_double_extortion}}
+│ ├── Ransomware Groups: {{active_groups_tactics}}
+│ ├── Financial Motivated: {{fraud_theft_extortion}}
+│ ├── Service Providers: {{malware_access_laundering}}
+│ ├── Underground Markets: {{data_tools_services}}
+│ └── Evolution Trends: {{raas_double_extortion}}
 ├── Insider Threats
-│   ├── Malicious Insiders: {{sabotage_theft_espionage}}
-│   ├── Negligent Users: {{mistakes_policy_violations}}
-│   ├── Compromised Accounts: {{credential_theft_abuse}}
-│   ├── Third-Party Risks: {{vendors_partners_supply}}
-│   └── Detection Challenges: {{behavioral_technical}}
+│ ├── Malicious Insiders: {{sabotage_theft_espionage}}
+│ ├── Negligent Users: {{mistakes_policy_violations}}
+│ ├── Compromised Accounts: {{credential_theft_abuse}}
+│ ├── Third-Party Risks: {{vendors_partners_supply}}
+│ └── Detection Challenges: {{behavioral_technical}}
 └── Emerging Threats
-    ├── AI-Powered Attacks: {{deepfakes_automated_adaptive}}
-    ├── Supply Chain: {{software_hardware_service}}
-    ├── IoT/OT Targets: {{industrial_medical_smart}}
-    ├── Cloud-Native: {{container_serverless_api}}
-    └── Quantum Computing: {{cryptography_timeline}}
+├── AI-Powered Attacks: {{deepfakes_automated_adaptive}}
+├── Supply Chain: {{software_hardware_service}}
+├── IoT/OT Targets: {{industrial_medical_smart}}
+├── Cloud-Native: {{container_serverless_api}}
+└── Quantum Computing: {{cryptography_timeline}}
 
 ATTACK VECTORS & TECHNIQUES
 ├── Initial Access
-│   ├── Phishing: {{spear_whaling_smishing_vishing}}
-│   ├── Exploitation: {{public_facing_zero_day_n_day}}
-│   ├── Supply Chain: {{software_updates_dependencies}}
-│   ├── Physical Access: {{usb_badge_cloning_tailgating}}
-│   └── Insider Threat: {{credentials_privileges_knowledge}}
+│ ├── Phishing: {{spear_whaling_smishing_vishing}}
+│ ├── Exploitation: {{public_facing_zero_day_n_day}}
+│ ├── Supply Chain: {{software_updates_dependencies}}
+│ ├── Physical Access: {{usb_badge_cloning_tailgating}}
+│ └── Insider Threat: {{credentials_privileges_knowledge}}
 ├── Persistence Mechanisms
-│   ├── Backdoors: {{web_shells_rats_rootkits}}
-│   ├── Living off Land: {{legitimate_tools_scripts}}
-│   ├── Registry/Scheduled: {{autostart_cron_services}}
-│   ├── Firmware: {{uefi_bios_device_implants}}
-│   └── Cloud Persistence: {{iam_compute_storage}}
+│ ├── Backdoors: {{web_shells_rats_rootkits}}
+│ ├── Living off Land: {{legitimate_tools_scripts}}
+│ ├── Registry/Scheduled: {{autostart_cron_services}}
+│ ├── Firmware: {{uefi_bios_device_implants}}
+│ └── Cloud Persistence: {{iam_compute_storage}}
 ├── Lateral Movement
-│   ├── Credential Theft: {{mimikatz_keylogging_hashes}}
-│   ├── Remote Services: {{rdp_ssh_winrm_smb}}
-│   ├── Application Abuse: {{admin_tools_protocols}}
-│   ├── Network Scanning: {{discovery_enumeration}}
-│   └── Privilege Escalation: {{exploits_misconfig}}
+│ ├── Credential Theft: {{mimikatz_keylogging_hashes}}
+│ ├── Remote Services: {{rdp_ssh_winrm_smb}}
+│ ├── Application Abuse: {{admin_tools_protocols}}
+│ ├── Network Scanning: {{discovery_enumeration}}
+│ └── Privilege Escalation: {{exploits_misconfig}}
 └── Data Exfiltration
-    ├── Channels: {{http_dns_cloud_storage_email}}
-    ├── Obfuscation: {{encryption_steganography}}
-    ├── Staging: {{collection_compression_chunking}}
-    ├── Timing: {{slow_burst_business_hours}}
-    └── Dead Drops: {{compromised_sites_services}}
+├── Channels: {{http_dns_cloud_storage_email}}
+├── Obfuscation: {{encryption_steganography}}
+├── Staging: {{collection_compression_chunking}}
+├── Timing: {{slow_burst_business_hours}}
+└── Dead Drops: {{compromised_sites_services}}
+
 ```
 
 #### VULNERABILITY ASSESSMENT
 ```
+
 Security Posture Analysis:
 
 TECHNICAL VULNERABILITIES
 ├── Network Security
-│   ├── Perimeter Gaps: {{firewall_dmz_segmentation}}
-│   ├── Internal Security: {{vlan_acl_microsegmentation}}
-│   ├── Wireless: {{wpa_rogue_guest_iot}}
-│   ├── Remote Access: {{vpn_rdp_cloud_connections}}
-│   └── DNS Security: {{poisoning_tunneling_hijacking}}
+│ ├── Perimeter Gaps: {{firewall_dmz_segmentation}}
+│ ├── Internal Security: {{vlan_acl_microsegmentation}}
+│ ├── Wireless: {{wpa_rogue_guest_iot}}
+│ ├── Remote Access: {{vpn_rdp_cloud_connections}}
+│ └── DNS Security: {{poisoning_tunneling_hijacking}}
 ├── Endpoint Security
-│   ├── OS Patching: {{windows_linux_mac_mobile}}
-│   ├── Application Updates: {{browsers_office_third_party}}
-│   ├── Endpoint Protection: {{av_edr_host_firewall}}
-│   ├── Device Control: {{usb_bluetooth_removable}}
-│   └── Configuration: {{hardening_policies_encryption}}
+│ ├── OS Patching: {{windows_linux_mac_mobile}}
+│ ├── Application Updates: {{browsers_office_third_party}}
+│ ├── Endpoint Protection: {{av_edr_host_firewall}}
+│ ├── Device Control: {{usb_bluetooth_removable}}
+│ └── Configuration: {{hardening_policies_encryption}}
 ├── Application Security
-│   ├── Web Applications: {{injection_xss_authentication}}
-│   ├── APIs: {{authentication_rate_limiting_validation}}
-│   ├── Databases: {{access_encryption_injection}}
-│   ├── Cloud Apps: {{saas_configuration_integration}}
-│   └── Legacy Systems: {{unsupported_unpatched_critical}}
+│ ├── Web Applications: {{injection_xss_authentication}}
+│ ├── APIs: {{authentication_rate_limiting_validation}}
+│ ├── Databases: {{access_encryption_injection}}
+│ ├── Cloud Apps: {{saas_configuration_integration}}
+│ └── Legacy Systems: {{unsupported_unpatched_critical}}
 ├── Identity & Access
-│   ├── Authentication: {{passwords_mfa_biometric}}
-│   ├── Authorization: {{rbac_privileged_segregation}}
-│   ├── Directory Services: {{ad_ldap_cloud_identity}}
-│   ├── Privileged Access: {{pam_rotation_monitoring}}
-│   └── Third-Party Access: {{vendor_contractor_partner}}
+│ ├── Authentication: {{passwords_mfa_biometric}}
+│ ├── Authorization: {{rbac_privileged_segregation}}
+│ ├── Directory Services: {{ad_ldap_cloud_identity}}
+│ ├── Privileged Access: {{pam_rotation_monitoring}}
+│ └── Third-Party Access: {{vendor_contractor_partner}}
 └── Data Security
-    ├── Classification: {{public_internal_confidential_secret}}
-    ├── Encryption: {{at_rest_in_transit_key_management}}
-    ├── Access Controls: {{need_to_know_monitoring}}
-    ├── DLP Controls: {{endpoint_network_cloud}}
-    └── Backup Security: {{encryption_testing_isolation}}
+├── Classification: {{public_internal_confidential_secret}}
+├── Encryption: {{at_rest_in_transit_key_management}}
+├── Access Controls: {{need_to_know_monitoring}}
+├── DLP Controls: {{endpoint_network_cloud}}
+└── Backup Security: {{encryption_testing_isolation}}
 
 SECURITY MATURITY SCORECARD
-                        Current │ Target │ Gap
+Current │ Target │ Gap
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━┿━━━━━━
-Asset Management              2 │    4   │  2
-Vulnerability Management      2 │    4   │  2
-Access Control               3 │    4   │  1
-Incident Response            2 │    5   │  3
-Security Monitoring          2 │    4   │  2
-Data Protection              3 │    4   │  1
-Business Continuity          3 │    4   │  1
-Security Awareness           2 │    4   │  2
+Asset Management 2 │ 4 │ 2
+Vulnerability Management 2 │ 4 │ 2
+Access Control 3 │ 4 │ 1
+Incident Response 2 │ 5 │ 3
+Security Monitoring 2 │ 4 │ 2
+Data Protection 3 │ 4 │ 1
+Business Continuity 3 │ 4 │ 1
+Security Awareness 2 │ 4 │ 2
 
 Scale: 1=Ad-hoc 2=Developing 3=Defined 4=Managed 5=Optimized
+
 ```
 
 ### SECURITY ARCHITECTURE DESIGN
 
 #### ZERO TRUST ARCHITECTURE
 ```
+
 Modern Security Architecture:
 
 ZERO TRUST PRINCIPLES
 ├── Identity-Centric Security
-│   ├── Strong Authentication
-│   │   ├── Multi-Factor: {{app_sms_hardware_biometric}}
-│   │   ├── Adaptive Auth: {{risk_based_contextual}}
-│   │   ├── Passwordless: {{fido2_certificates_biometric}}
-│   │   └── Continuous Verification: {{behavior_location}}
-│   ├── Identity Governance
-│   │   ├── Lifecycle Management: {{provision_deprovision}}
-│   │   ├── Access Reviews: {{periodic_automated_risk}}
-│   │   ├── Privileged Access: {{just_in_time_approval}}
-│   │   └── Federation: {{sso_saml_oauth_oidc}}
-│   └── Identity Analytics
-│       ├── Behavior Analysis: {{ueba_anomaly_risk}}
-│       ├── Access Intelligence: {{unused_excessive_risky}}
-│       ├── Compromise Detection: {{impossible_travel}}
-│       └── Risk Scoring: {{continuous_adaptive}}
+│ ├── Strong Authentication
+│ │ ├── Multi-Factor: {{app_sms_hardware_biometric}}
+│ │ ├── Adaptive Auth: {{risk_based_contextual}}
+│ │ ├── Passwordless: {{fido2_certificates_biometric}}
+│ │ └── Continuous Verification: {{behavior_location}}
+│ ├── Identity Governance
+│ │ ├── Lifecycle Management: {{provision_deprovision}}
+│ │ ├── Access Reviews: {{periodic_automated_risk}}
+│ │ ├── Privileged Access: {{just_in_time_approval}}
+│ │ └── Federation: {{sso_saml_oauth_oidc}}
+│ └── Identity Analytics
+│ ├── Behavior Analysis: {{ueba_anomaly_risk}}
+│ ├── Access Intelligence: {{unused_excessive_risky}}
+│ ├── Compromise Detection: {{impossible_travel}}
+│ └── Risk Scoring: {{continuous_adaptive}}
 ├── Device Trust
-│   ├── Device Identity: {{certificates_tpm_attestation}}
-│   ├── Health Check: {{patch_av_encryption_config}}
-│   ├── Compliance: {{policy_enforcement_remediation}}
-│   └── Risk Assessment: {{trust_score_conditional}}
+│ ├── Device Identity: {{certificates_tpm_attestation}}
+│ ├── Health Check: {{patch_av_encryption_config}}
+│ ├── Compliance: {{policy_enforcement_remediation}}
+│ └── Risk Assessment: {{trust_score_conditional}}
 ├── Network Segmentation
-│   ├── Microsegmentation: {{application_workload_user}}
-│   ├── Software-Defined: {{sdn_policy_automation}}
-│   ├── Secure Access: {{sase_ztna_casb}}
-│   └── Encryption: {{ipsec_tls_macsec}}
+│ ├── Microsegmentation: {{application_workload_user}}
+│ ├── Software-Defined: {{sdn_policy_automation}}
+│ ├── Secure Access: {{sase_ztna_casb}}
+│ └── Encryption: {{ipsec_tls_macsec}}
 └── Data-Centric Security
-    ├── Classification: {{automated_discovery_tagging}}
-    ├── Encryption: {{format_preserving_tokenization}}
-    ├── Access Control: {{attribute_based_dynamic}}
-    └── Monitoring: {{usage_sharing_exfiltration}}
+├── Classification: {{automated_discovery_tagging}}
+├── Encryption: {{format_preserving_tokenization}}
+├── Access Control: {{attribute_based_dynamic}}
+└── Monitoring: {{usage_sharing_exfiltration}}
 
 DEFENSE IN DEPTH LAYERS
 ┌─────────────────────────────────────────┐
-│         External Perimeter              │
-│  ┌───────────────────────────────────┐ │
-│  │      Network Security              │ │
-│  │  ┌─────────────────────────────┐  │ │
-│  │  │   Application Security      │  │ │
-│  │  │  ┌───────────────────────┐  │  │ │
-│  │  │  │   Endpoint Security   │  │  │ │
-│  │  │  │  ┌─────────────────┐  │  │  │ │
-│  │  │  │  │  Data Security  │  │  │  │ │
-│  │  │  │  │ ┌─────────────┐ │  │  │  │ │
-│  │  │  │  │ │  Identity    │ │  │  │  │ │
-│  │  │  │  │ └─────────────┘ │  │  │  │ │
-│  │  │  │  └─────────────────┘  │  │  │ │
-│  │  │  └───────────────────────┘  │  │ │
-│  │  └─────────────────────────────┘  │ │
-│  └───────────────────────────────────┘ │
+│ External Perimeter │
+│ ┌───────────────────────────────────┐ │
+│ │ Network Security │ │
+│ │ ┌─────────────────────────────┐ │ │
+│ │ │ Application Security │ │ │
+│ │ │ ┌───────────────────────┐ │ │ │
+│ │ │ │ Endpoint Security │ │ │ │
+│ │ │ │ ┌─────────────────┐ │ │ │ │
+│ │ │ │ │ Data Security │ │ │ │ │
+│ │ │ │ │ ┌─────────────┐ │ │ │ │ │
+│ │ │ │ │ │ Identity │ │ │ │ │ │
+│ │ │ │ │ └─────────────┘ │ │ │ │ │
+│ │ │ │ └─────────────────┘ │ │ │ │
+│ │ │ └───────────────────────┘ │ │ │
+│ │ └─────────────────────────────┘ │ │
+│ └───────────────────────────────────┘ │
 └─────────────────────────────────────────┘
 
 Each layer: Prevent → Detect → Respond → Recover
-```
+
+````
 
 #### SECURITY CONTROLS ARCHITECTURE
 ```python
@@ -264,7 +273,7 @@ class SecurityArchitecture:
         self.risk_profile = organization_context['risk_assessment']
         self.compliance = organization_context['requirements']
         self.resources = organization_context['budget_team']
-        
+
     def design_controls(self):
         """Design comprehensive security controls"""
         control_matrix = {
@@ -294,7 +303,7 @@ class SecurityArchitecture:
             }
         }
         return control_matrix
-    
+
     def implement_zero_trust(self):
         """Implement zero trust architecture"""
         zt_implementation = {
@@ -306,11 +315,12 @@ class SecurityArchitecture:
             'visibility_plane': self.design_monitoring()
         }
         return zt_implementation
-```
+````
 
 ### SECURITY OPERATIONS CENTER (SOC)
 
 #### SOC DESIGN & OPERATIONS
+
 ```
 24/7 Security Operations Framework:
 
@@ -386,6 +396,7 @@ SOC PROCESSES & PROCEDURES
 ### THREAT DETECTION & HUNTING
 
 #### DETECTION ENGINEERING
+
 ```
 Advanced Detection Capabilities:
 
@@ -458,6 +469,7 @@ THREAT HUNTING PLAYBOOKS
 ### INCIDENT RESPONSE PLAN
 
 #### INCIDENT RESPONSE FRAMEWORK
+
 ```
 Comprehensive IR Capabilities:
 
@@ -551,6 +563,7 @@ INCIDENT COMMUNICATION
 ### SECURITY MONITORING & ANALYTICS
 
 #### SIEM & SECURITY ANALYTICS
+
 ```
 Comprehensive Monitoring Architecture:
 
@@ -634,6 +647,7 @@ ANALYTICS & DETECTION RULES
 ### VULNERABILITY MANAGEMENT
 
 #### VULNERABILITY ASSESSMENT PROGRAM
+
 ```
 Proactive Vulnerability Management:
 
@@ -711,6 +725,7 @@ VULNERABILITY LIFECYCLE
 ### CLOUD SECURITY ARCHITECTURE
 
 #### CLOUD-NATIVE SECURITY
+
 ```
 Multi-Cloud Security Framework:
 
@@ -801,6 +816,7 @@ CLOUD SECURITY POSTURE MANAGEMENT
 ### SECURITY METRICS & REPORTING
 
 #### KPI DASHBOARD
+
 ```
 Security Performance Measurement:
 
@@ -902,6 +918,7 @@ EXECUTIVE REPORTING
 ### SECURITY AWARENESS & TRAINING
 
 #### SECURITY CULTURE PROGRAM
+
 ```
 Human-Centric Security Framework:
 
@@ -969,6 +986,7 @@ AWARENESS PROGRAM STRUCTURE
 ### RECOMMENDATIONS & ROADMAP
 
 #### STRATEGIC RECOMMENDATIONS
+
 ```
 Prioritized Security Enhancement Plan:
 
@@ -1036,11 +1054,13 @@ Total Year 1 Investment: ${{total}}
 ### CONCLUSION
 
 #### EXECUTIVE SUMMARY
+
 - Current security posture requires immediate attention in {{areas}}
 - Recommended approach balances quick wins with strategic transformation
 - Investment will reduce risk by {{percentage}} and enable business growth
 - Success requires executive commitment and organizational change
 - Continuous improvement ensures sustained security excellence
+
 ```
 
 ## Usage Instructions
@@ -1056,8 +1076,9 @@ Total Year 1 Investment: ${{total}}
 
 ## Examples
 ### Example 1: Financial Services Security Transformation
-**Input**: 
+**Input**:
 ```
+
 {{organization_type}}: Regional bank with 5000 employees
 {{industry_sector}}: Financial services - retail and commercial banking
 {{security_maturity}}: Developing - basic controls, reactive approach
@@ -1065,6 +1086,7 @@ Total Year 1 Investment: ${{total}}
 {{compliance_requirements}}: PCI-DSS, SOX, GLBA, FFIEC
 {{current_challenges}}: Legacy systems, limited visibility, skills gap
 {{security_focus}}: Building 24/7 SOC and implementing Zero Trust
+
 ```
 
 **Output**: [Comprehensive security strategy including phased Zero Trust implementation, SOC build-out with SIEM/SOAR deployment, staff augmentation plan, and 18-month roadmap reducing risk by 60%]
@@ -1081,3 +1103,4 @@ Total Year 1 Investment: ${{total}}
 - Automated response capabilities reduce MTTR by 80%
 - Threat intelligence integration improves detection by 40%
 - Comprehensive security programs show 300% ROI within 3 years
+```

@@ -1,6 +1,7 @@
 # Risk-Reward Assessment Expert and Strategic Probability Analyst
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: risk-reward assessment, probability analysis, uncertainty evaluation, decision modeling, strategic risk management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert risk-reward assessment methodology with strategic probability analysis to create comprehensive frameworks for evaluating uncertainty, measuring potential outcomes, and making informed decisions under risk. It employs quantitative risk modeling, probability theory, and decision science principles to optimize decision-making when facing uncertain outcomes and multiple risk factors.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise risk-reward assessment system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR RISK-REWARD ASSESSMENT STRATEGY AS:
 **Time Horizon**: 3-year strategic initiative with 5-year value creation expectations
 
 **Assessment Challenges**:
+
 - **Regulatory Uncertainty**: GDPR compliance costs and evolving data privacy regulations
 - **Market Competition**: Established EU competitors with local advantages and customer relationships
 - **Currency Risk**: EUR/USD exchange rate volatility affecting revenue and cost projections
@@ -94,6 +98,7 @@ DELIVER YOUR RISK-REWARD ASSESSMENT STRATEGY AS:
 - **Resource Allocation**: Significant investment requiring executive team focus and capital deployment
 
 **Assessment Success Criteria**:
+
 - Comprehensive risk quantification with probability-weighted outcome analysis
 - Clear reward potential with revenue and market share projections
 - Risk mitigation strategies with cost-benefit analysis and implementation planning
@@ -106,6 +111,7 @@ DELIVER YOUR RISK-REWARD ASSESSMENT STRATEGY AS:
 Deploy comprehensive Monte Carlo analysis and scenario planning methodology to evaluate EU market expansion opportunity, quantifying probability-weighted outcomes while identifying optimal risk mitigation strategies and timing for value maximization.
 
 **Strategic Probability Analysis Approach**:
+
 - **Quantitative Risk Modeling**: Statistical analysis with historical data and market research integration
 - **Scenario-Based Planning**: Multiple outcome scenarios with probability assessment and impact quantification
 - **Sensitivity Analysis**: Key variable identification with uncertainty impact and decision optimization
@@ -113,6 +119,7 @@ Deploy comprehensive Monte Carlo analysis and scenario planning methodology to e
 - **Real Options Evaluation**: Flexibility value assessment with timing optimization and adaptation capability
 
 **Strategic Assessment Principles**:
+
 1. **Expected Value Optimization**: Probability-weighted outcome maximization with risk-adjusted return focus
 2. **Downside Protection**: Tail risk management with worst-case scenario planning and mitigation
 3. **Flexibility Preservation**: Option value maintenance with adaptive strategy and timing optimization
@@ -120,6 +127,7 @@ Deploy comprehensive Monte Carlo analysis and scenario planning methodology to e
 5. **Stakeholder Alignment**: Risk tolerance matching with investor expectations and strategic objectives
 
 **Expected Assessment Outcomes**:
+
 - Optimal decision recommendation with quantified expected value and confidence intervals
 - Comprehensive risk mitigation strategy with cost-benefit analysis and implementation roadmap
 - Monitoring framework with key performance indicators and decision adjustment triggers
@@ -133,6 +141,7 @@ Deploy comprehensive Monte Carlo analysis and scenario planning methodology to e
 **Market and Competitive Risk Assessment**:
 
 **Market Entry Risk (40% of total risk exposure)**:
+
 ```
 Market Size and Growth Uncertainty:
 • EU SaaS market size estimation: $45B-$65B (€40B-€58B) with 15-25% annual growth
@@ -154,6 +163,7 @@ Customer Adoption Risk:
 ```
 
 **Regulatory and Compliance Risk (25% of total risk exposure)**:
+
 ```
 GDPR Compliance Risk:
 • Initial compliance cost: $800K-$1.2M with ongoing annual cost of $300K-$500K
@@ -175,6 +185,7 @@ Tax and Legal Structure Risk:
 ```
 
 **Financial and Currency Risk (20% of total risk exposure)**:
+
 ```
 Exchange Rate Volatility:
 • EUR/USD historical volatility: 12-15% annual standard deviation
@@ -204,56 +215,56 @@ class RiskRewardAnalyzer:
         self.base_case = base_case_assumptions
         self.simulation_runs = 10000
         self.confidence_levels = [0.05, 0.25, 0.5, 0.75, 0.95]
-        
+
     def monte_carlo_simulation(self):
         """Comprehensive Monte Carlo analysis of EU expansion outcomes"""
-        
+
         # Define probability distributions for key variables
         market_size = np.random.triangular(45, 55, 65, self.simulation_runs)  # Billion USD
         market_growth = np.random.triangular(0.15, 0.20, 0.25, self.simulation_runs)
         market_penetration = np.random.triangular(0.005, 0.012, 0.020, self.simulation_runs)
-        
+
         # Competitive response impact
         price_pressure = np.random.triangular(-0.25, -0.15, -0.05, self.simulation_runs)
         cac_inflation = np.random.triangular(1.20, 1.40, 1.60, self.simulation_runs)
-        
+
         # Regulatory costs
         compliance_cost = np.random.triangular(0.8, 1.0, 1.2, self.simulation_runs)  # Million USD
         ongoing_compliance = np.random.triangular(0.3, 0.4, 0.5, self.simulation_runs)
-        
+
         # Currency impact
         eur_usd_impact = np.random.normal(1.0, 0.12, self.simulation_runs)
-        
+
         # Calculate year 3 revenue scenarios
         year3_revenue = (
-            market_size * market_penetration * 
-            (1 + market_growth) ** 3 * 
-            (1 + price_pressure) * 
+            market_size * market_penetration *
+            (1 + market_growth) ** 3 *
+            (1 + price_pressure) *
             eur_usd_impact
         )
-        
+
         # Calculate total costs
         customer_acquisition_cost = year3_revenue * 0.35 * cac_inflation
         compliance_costs = compliance_cost + (ongoing_compliance * 3)
         operational_costs = year3_revenue * 0.45
-        
+
         # Net outcomes
         net_revenue = year3_revenue - customer_acquisition_cost - compliance_costs - operational_costs
         roi_percentage = (net_revenue - 5.0) / 5.0  # ROI on $5M investment
-        
+
         return {
             'revenue_scenarios': year3_revenue,
             'net_outcomes': net_revenue,
             'roi_distribution': roi_percentage,
             'compliance_cost_distribution': compliance_costs
         }
-    
+
     def calculate_risk_metrics(self, simulation_results):
         """Calculate comprehensive risk metrics from simulation results"""
-        
+
         roi_data = simulation_results['roi_distribution']
         revenue_data = simulation_results['revenue_scenarios']
-        
+
         metrics = {
             'expected_roi': np.mean(roi_data),
             'roi_std_dev': np.std(roi_data),
@@ -269,7 +280,7 @@ class RiskRewardAnalyzer:
                 'p90': np.percentile(revenue_data, 90)
             }
         }
-        
+
         return metrics
 
 # Execute comprehensive risk analysis
@@ -284,6 +295,7 @@ risk_metrics = analyzer.calculate_risk_metrics(simulation_results)
 ```
 
 **Risk Quantification Results**:
+
 ```
 Monte Carlo Analysis Summary (10,000 simulations):
 
@@ -301,7 +313,7 @@ Risk Metrics:
 
 Upside Potential:
 • 75th percentile outcome: +68% ROI
-• 95th percentile outcome: +145% ROI  
+• 95th percentile outcome: +145% ROI
 • Maximum upside scenario: +180% ROI with $24M revenue
 • Success scenario (>50% ROI) probability: 35%
 ```
@@ -313,6 +325,7 @@ Upside Potential:
 **Revenue and Market Share Potential**:
 
 **Base Case Revenue Projections**:
+
 ```
 3-Year Revenue Development Model:
 
@@ -325,7 +338,7 @@ Year 1 Revenue Projection:
 Year 2 Revenue Projection:
 • Customer base growth: 120-180 total customers
 • Average contract value growth: $42K-$65K (upselling and feature expansion)
-• Total revenue: $5.2M-$8.1M  
+• Total revenue: $5.2M-$8.1M
 • Market penetration: 0.008% of addressable market
 
 Year 3 Revenue Projection:
@@ -342,6 +355,7 @@ Revenue Growth Drivers:
 ```
 
 **Strategic Value Creation Opportunities**:
+
 ```
 Market Position and Competitive Advantage:
 • First-mover advantage in specific vertical markets (fintech, healthtech)
@@ -367,6 +381,7 @@ Technology and Product Enhancement:
 **Strategic Option Value Analysis**:
 
 **Market Expansion Options**:
+
 ```
 Geographic Expansion Option:
 • Value: Proven EU success enables UK, Switzerland, Norway expansion
@@ -391,6 +406,7 @@ Technology Platform Options:
 ```
 
 **Abandonment and Pivot Options**:
+
 ```
 Market Exit Option:
 • Value: Asset recovery and learning preservation if market conditions deteriorate
@@ -414,6 +430,7 @@ Strategic Pivot Option:
 **Three-Scenario Strategic Framework**:
 
 **Optimistic Scenario (25% probability)**:
+
 ```
 Market Conditions:
 • EU digital transformation acceleration with 30% annual market growth
@@ -435,6 +452,7 @@ Strategic Results:
 ```
 
 **Base Case Scenario (50% probability)**:
+
 ```
 Market Conditions:
 • Steady EU market growth at 18-22% annually
@@ -456,6 +474,7 @@ Strategic Results:
 ```
 
 **Pessimistic Scenario (25% probability)**:
+
 ```
 Market Conditions:
 • Slower EU adoption with 10-15% annual market growth
@@ -479,34 +498,35 @@ Strategic Results:
 #### Risk-Adjusted Decision Optimization
 
 **Expected Value Calculation with Risk Adjustment**:
+
 ```python
 def calculate_risk_adjusted_npv():
     """Calculate risk-adjusted NPV with scenario weighting and risk premium"""
-    
+
     scenarios = {
         'optimistic': {'probability': 0.25, 'npv': 17.5, 'risk_factor': 0.95},
-        'base_case': {'probability': 0.50, 'npv': 8.0, 'risk_factor': 0.90}, 
+        'base_case': {'probability': 0.50, 'npv': 8.0, 'risk_factor': 0.90},
         'pessimistic': {'probability': 0.25, 'npv': -0.5, 'risk_factor': 0.85}
     }
-    
+
     # Calculate probability-weighted expected value
     expected_npv = sum(
         scenario['probability'] * scenario['npv'] * scenario['risk_factor']
         for scenario in scenarios.values()
     )
-    
+
     # Additional risk adjustments
     regulatory_risk_discount = 0.92  # 8% discount for regulatory uncertainty
     competitive_risk_discount = 0.95  # 5% discount for competitive response
     execution_risk_discount = 0.88   # 12% discount for international execution complexity
-    
+
     risk_adjusted_npv = (
-        expected_npv * 
-        regulatory_risk_discount * 
-        competitive_risk_discount * 
+        expected_npv *
+        regulatory_risk_discount *
+        competitive_risk_discount *
         execution_risk_discount
     )
-    
+
     return {
         'gross_expected_npv': sum(s['probability'] * s['npv'] for s in scenarios.values()),
         'risk_adjusted_npv': risk_adjusted_npv,
@@ -521,6 +541,7 @@ results = calculate_risk_adjusted_npv()
 **Decision Recommendation Framework**:
 
 **Primary Recommendation: PROCEED with Phased Implementation**:
+
 ```
 Strategic Rationale:
 • Risk-adjusted NPV of $5.8M provides sufficient return for risk level
@@ -542,6 +563,7 @@ Risk Mitigation Requirements:
 ```
 
 **Alternative Scenarios and Contingency Planning**:
+
 ```
 Conditional Recommendation: Partnership Strategy
 • Consider if risk tolerance decreases or competitive landscape intensifies
@@ -557,6 +579,7 @@ Risk-Averse Alternative: Market Entry Delay
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive risk identification across all relevant dimensions and impact categories
 2. Apply statistical modeling and Monte Carlo simulation for probability-weighted outcome analysis
 3. Conduct detailed reward assessment including direct returns and strategic option values
@@ -567,8 +590,11 @@ Risk-Averse Alternative: Market Entry Delay
 8. Design monitoring framework with key indicators and decision adjustment triggers
 
 ## Examples
+
 ### Example 1: Technology Investment Risk-Reward Assessment
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_type}}: Technology platform investment for competitive advantage and operational efficiency
 {{risk_tolerance}}: Moderate with focus on downside protection and measured growth
@@ -580,7 +606,9 @@ Risk-Averse Alternative: Market Entry Delay
 **Output**: [Technology investment risk-reward analysis with Monte Carlo modeling, competitive assessment, and implementation strategy]
 
 ### Example 2: New Product Launch Risk Assessment
+
 **Input**:
+
 ```
 {{decision_type}}: New product category launch with market creation and customer education requirements
 {{stakeholder_impact}}: Organization-wide impact with customer base and competitive positioning implications
@@ -592,11 +620,13 @@ Risk-Averse Alternative: Market Entry Delay
 **Output**: [Product launch risk-reward evaluation with market sizing, competitive analysis, and scenario planning]
 
 ## Related Prompts
+
 - [Option Evaluation Expert](/prompts/decision-making/option-evaluation.md)
 - [Investment Decision Support Expert](/prompts/decision-making/investment-decision-support.md)
 - [Strategic Direction Setting Expert](/prompts/decision-making/strategic-direction-setting.md)
 
 ## Research Notes
+
 - Based on modern portfolio theory and behavioral finance research
 - Integrates Monte Carlo simulation with decision psychology and cognitive bias awareness
 - Emphasizes real options theory for strategic flexibility and timing optimization

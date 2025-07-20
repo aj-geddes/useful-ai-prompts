@@ -1,6 +1,7 @@
 # Comprehensive Model Evaluation and Validation Framework
 
 ## Metadata
+
 - **Category**: Technical/Data Science
 - **Tags**: model evaluation, machine learning, validation, metrics, data science, ML ops
 - **Created**: 2025-07-20
@@ -10,10 +11,12 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt provides a systematic framework for evaluating machine learning models beyond basic accuracy metrics. It combines statistical rigor with practical deployment considerations to ensure models are not only accurate but also robust, fair, interpretable, and production-ready. The multi-layered approach catches issues that simple evaluation might miss.
 
 ## Prompt Template
-```
+
+````
 You are operating as a comprehensive model evaluation system combining:
 
 1. **Senior Data Scientist** (10+ years ML experience)
@@ -100,17 +103,19 @@ Actual Neg  [[TN    FP]]
 - False Positive Rate: X% (Impact: {{fp_impact}})
 - False Negative Rate: X% (Impact: {{fn_impact}})
 - Class Imbalance Handling: {{assessment}}
-```
+````
 
 #### PERFORMANCE BY SEGMENT
-| Segment | Size | Metric | Performance | Notes |
-|---------|------|--------|-------------|-------|
-| {{segment_1}} | N | {{metric}} | X.XX | {{observation}} |
-| {{segment_2}} | N | {{metric}} | X.XX | {{observation}} |
+
+| Segment       | Size | Metric     | Performance | Notes           |
+| ------------- | ---- | ---------- | ----------- | --------------- |
+| {{segment_1}} | N    | {{metric}} | X.XX        | {{observation}} |
+| {{segment_2}} | N    | {{metric}} | X.XX        | {{observation}} |
 
 ### STATISTICAL VALIDATION
 
 #### CROSS-VALIDATION RESULTS
+
 ```python
 # K-Fold Cross Validation (k=5)
 Fold 1: 0.XXX
@@ -124,6 +129,7 @@ Mean: 0.XXX (±0.XXX)
 ```
 
 #### STATISTICAL SIGNIFICANCE
+
 ```python
 # McNemar's Test vs Baseline
 Test Statistic: X.XX
@@ -134,11 +140,12 @@ Result: Statistically significant improvement (p < 0.05)
 ### ROBUSTNESS ANALYSIS
 
 #### SENSITIVITY TESTING
+
 ```python
 # Input Perturbation Results
 Noise Level | Performance Drop | Stability
 0.01       | -0.5%          | Stable
-0.05       | -2.1%          | Stable  
+0.05       | -2.1%          | Stable
 0.10       | -8.3%          | Degraded
 0.20       | -23.5%         | Unstable
 
@@ -146,14 +153,16 @@ Robustness Score: X/10
 ```
 
 #### EDGE CASE ANALYSIS
-| Edge Case | Description | Model Behavior | Risk Level |
-|-----------|-------------|----------------|------------|
-| {{case_1}} | {{desc}} | {{behavior}} | {{risk}} |
-| {{case_2}} | {{desc}} | {{behavior}} | {{risk}} |
+
+| Edge Case  | Description | Model Behavior | Risk Level |
+| ---------- | ----------- | -------------- | ---------- |
+| {{case_1}} | {{desc}}    | {{behavior}}   | {{risk}}   |
+| {{case_2}} | {{desc}}    | {{behavior}}   | {{risk}}   |
 
 ### FAIRNESS & BIAS AUDIT
 
 #### DEMOGRAPHIC PARITY
+
 ```python
 # Performance Across Protected Groups
 Group A: 0.XX accuracy, 0.XX FPR
@@ -163,6 +172,7 @@ Threshold: 5% ({{pass_fail}})
 ```
 
 #### FEATURE IMPORTANCE ANALYSIS
+
 ```python
 # Top 10 Features by Importance
 1. {{feature_1}}: 0.XXX - {{bias_risk}}
@@ -176,6 +186,7 @@ Potentially Biased Features Detected:
 ### ERROR ANALYSIS
 
 #### ERROR PATTERNS
+
 ```python
 # Common Failure Modes
 1. Pattern: {{pattern_description}}
@@ -190,6 +201,7 @@ Potentially Biased Features Detected:
 ```
 
 #### PREDICTION CONFIDENCE
+
 ```python
 # Confidence Distribution
 High Confidence (>0.9): XX% (Accuracy: XX%)
@@ -202,6 +214,7 @@ Calibration Error: 0.XXX
 ### PRODUCTION READINESS
 
 #### PERFORMANCE CHARACTERISTICS
+
 ```python
 # Latency Analysis (ms)
 P50: XX ms
@@ -220,6 +233,7 @@ Batch optimal size: XX
 ```
 
 #### DEPLOYMENT CHECKLIST
+
 - [ ] Model serialization tested
 - [ ] API endpoint defined
 - [ ] Monitoring metrics configured
@@ -230,6 +244,7 @@ Batch optimal size: XX
 ### BUSINESS IMPACT ANALYSIS
 
 #### VALUE PROJECTION
+
 ```python
 # Business Metric Impact
 Current State: {{current_metric}}
@@ -245,20 +260,23 @@ Payback Period: {{months}} months
 ```
 
 #### RISK ASSESSMENT
-| Risk Type | Probability | Impact | Mitigation |
-|-----------|-------------|---------|------------|
-| Model Drift | Medium | High | Monitor distribution |
-| Adversarial | Low | High | Input validation |
-| Scale Issues | Low | Medium | Load testing |
+
+| Risk Type    | Probability | Impact | Mitigation           |
+| ------------ | ----------- | ------ | -------------------- |
+| Model Drift  | Medium      | High   | Monitor distribution |
+| Adversarial  | Low         | High   | Input validation     |
+| Scale Issues | Low         | Medium | Load testing         |
 
 ### RECOMMENDATIONS
 
 #### IMMEDIATE ACTIONS
+
 1. **Deploy with Monitoring**: Set up comprehensive logging
 2. **A/B Test**: Start with 5% traffic
 3. **Alert Thresholds**: Configure for key metrics
 
 #### IMPROVEMENT OPPORTUNITIES
+
 1. **Data Collection**: Add features {{features}} for X% improvement
 2. **Model Architecture**: Try {{approach}} for better {{metric}}
 3. **Training Process**: Implement {{technique}} for stability
@@ -271,11 +289,11 @@ metrics:
   - name: prediction_accuracy
     type: gauge
     alert_threshold: 0.90
-    
+
   - name: prediction_latency_p99
     type: histogram
     alert_threshold: 100ms
-    
+
   - name: feature_drift
     type: counter
     alert_threshold: 0.05
@@ -284,7 +302,7 @@ alerts:
   - condition: accuracy < 0.90
     severity: high
     action: page_oncall
-    
+
   - condition: latency_p99 > 100ms
     severity: medium
     action: slack_notification
@@ -318,6 +336,7 @@ results = comprehensive_evaluate(
 print(results.summary())
 results.save_report('evaluation_report.html')
 ```
+
 ```
 
 ## Usage Instructions
@@ -331,8 +350,9 @@ results.save_report('evaluation_report.html')
 
 ## Examples
 ### Example 1: Customer Churn Prediction Model
-**Input**: 
+**Input**:
 ```
+
 {{model_algorithm}}: XGBoost Classifier
 {{task_type}}: Binary Classification (Churn Prediction)
 {{data_characteristics}}: 100K customers, 50 features, 15% churn rate
@@ -342,6 +362,7 @@ results.save_report('evaluation_report.html')
 {{training_details}}: 5-fold CV, SMOTE for imbalance
 {{production_constraints}}: <50ms latency, 1M predictions/day
 {{success_criteria}}: 85% precision at 60% recall
+
 ```
 
 **Output**: [Comprehensive evaluation showing 88% precision at 62% recall, with detailed fairness analysis and production readiness assessment]
@@ -357,3 +378,4 @@ results.save_report('evaluation_report.html')
 - Statistical tests selected based on Dietterich's recommendations
 - Business impact methodology from "Designing Machine Learning Systems"
 - Monitoring approach inspired by Uber's Michelangelo platform
+```

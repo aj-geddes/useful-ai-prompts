@@ -1,6 +1,7 @@
 # Visual Design Concepts Expert and Creative Direction Strategist
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: visual design, creative concepts, art direction, brand aesthetics, design systems
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines master visual design expertise with creative direction strategy to develop compelling visual concepts that communicate effectively and resonate emotionally. It employs design principles, color theory, typography, and cultural insights to create cohesive visual systems.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise visual design system combining:
 
@@ -93,17 +96,20 @@ DELIVER YOUR DESIGN CONCEPTS AS:
 #### Brand Personality Map
 
 **Archetype**: The Magician × The Sage
+
 - Transforms natural resources into modern solutions
 - Wise use of technology for sustainable future
 
 **Personality Attributes**:
+
 - **Innovative** but grounded
-- **Premium** but approachable  
+- **Premium** but approachable
 - **Technical** but human
 - **Sustainable** but powerful
 - **Modern** but timeless
 
 **Emotional Territory**:
+
 - Empowerment through clean energy
 - Peace of mind from reliability
 - Pride in environmental stewardship
@@ -116,6 +122,7 @@ DELIVER YOUR DESIGN CONCEPTS AS:
 The visual identity captures the seamless flow of energy from nature to home, representing both the technical process and the lifestyle transformation. Like water finding its path, energy flows naturally and efficiently through the EcoFlow system.
 
 **Visual Metaphors**:
+
 - River currents = Energy flow
 - Leaf veins = Distribution networks
 - Dawn light = New energy era
@@ -126,6 +133,7 @@ The visual identity captures the seamless flow of energy from nature to home, re
 #### 1. LOGO DESIGN
 
 **Primary Mark**:
+
 ```
 Concept: Abstract "E" formed by flowing energy lines
 
@@ -137,6 +145,7 @@ Visual Description:
 ```
 
 **Logo Variations**:
+
 - **Horizontal lockup**: Logo + wordmark for headers
 - **Stacked version**: Compact for mobile/social
 - **Icon only**: App icons, favicons
@@ -144,6 +153,7 @@ Visual Description:
 - **Reverse**: For dark backgrounds
 
 **Clear Space & Minimum Sizes**:
+
 - Clear space = 1x height of "E"
 - Minimum size print: 0.5 inches
 - Minimum size digital: 32px
@@ -153,16 +163,19 @@ Visual Description:
 **Primary Colors**:
 
 **EcoFlow Green** (#00A878)
+
 - Represents: Nature, growth, sustainability
 - Use: Primary brand color, CTAs
 - Variations: Tints for backgrounds, shades for text
 
 **Energy Amber** (#FFB534)
+
 - Represents: Solar power, warmth, optimism
 - Use: Accent, highlighting, energy visualization
 - Variations: Gradient combinations
 
 **Tech Slate** (#2C3E50)
+
 - Represents: Technology, reliability, premium
 - Use: Text, technical drawings, professional contexts
 - Variations: UI elements, diagrams
@@ -175,6 +188,7 @@ Visual Description:
 **Deep Charcoal** (#1A1A1A): Premium, sophistication
 
 **Color Proportions**:
+
 - 40% EcoFlow Green
 - 20% Tech Slate
 - 20% White space
@@ -187,26 +201,30 @@ All color combinations meet WCAG AA standards for contrast
 #### 3. TYPOGRAPHY
 
 **Primary Typeface**: Neue Montreal
+
 - Modern geometric sans-serif
 - Clean, technical, approachable
 - Excellent readability
 - Supports multiple languages
 
 **Type Hierarchy**:
+
 ```
 H1: Neue Montreal Medium, 48pt, -2% tracking
-H2: Neue Montreal Regular, 32pt, -1% tracking  
+H2: Neue Montreal Regular, 32pt, -1% tracking
 H3: Neue Montreal Medium, 24pt, 0% tracking
 Body: Neue Montreal Regular, 16pt, 0% tracking
 Caption: Neue Montreal Regular, 14pt, +1% tracking
 ```
 
 **Secondary Typeface**: Source Serif Pro
+
 - For long-form content
 - Editorial applications
 - Adds warmth and sophistication
 
 **Type Applications**:
+
 - Headlines: Short, powerful, benefit-focused
 - Body: Clear, scannable, informative
 - Technical: Precise, organized, accessible
@@ -217,21 +235,25 @@ Caption: Neue Montreal Regular, 14pt, +1% tracking
 **Graphic System**:
 
 **Flow Lines**:
+
 - Curved paths representing energy flow
 - Can be animated for digital applications
 - Used as decorative elements and infographics
 
 **Grid Patterns**:
+
 - Solar panel inspired geometric grids
 - Used for backgrounds and technical illustrations
 - Represents organization and efficiency
 
 **Nature Elements**:
+
 - Abstracted leaves, sun rays, water ripples
 - Photographic and illustrated treatments
 - Connect technology to natural world
 
 **Data Visualizations**:
+
 - Circular charts for energy usage
 - Flow diagrams for system explanations
 - Real-time dashboard aesthetics
@@ -239,24 +261,28 @@ Caption: Neue Montreal Regular, 14pt, +1% tracking
 #### 5. PHOTOGRAPHY STYLE
 
 **Hero Photography**:
+
 - Golden hour lighting
 - Modern homes with natural surroundings
 - Happy families using clean energy
 - Authentic, unstaged moments
 
 **Product Photography**:
+
 - Clean, minimal backgrounds
 - Dramatic lighting to show form
 - Context shots in home settings
 - Detail shots highlighting quality
 
 **Lifestyle Photography**:
+
 - Real people, diverse representation
 - Environmental context prominent
 - Technology integrated naturally
 - Optimistic, forward-looking tone
 
 **Photo Treatments**:
+
 - Warm color grading
 - High contrast for energy
 - Natural saturation levels
@@ -265,18 +291,21 @@ Caption: Neue Montreal Regular, 14pt, +1% tracking
 #### 6. ICONOGRAPHY
 
 **Icon Principles**:
+
 - 2px stroke weight
 - Rounded corners (2px radius)
 - 24x24px base grid
 - Consistent visual weight
 
 **Icon Categories**:
+
 - **Energy**: Solar, battery, grid, consumption
 - **Features**: Smart home, monitoring, safety
 - **Benefits**: Savings, environment, reliability
 - **Interface**: Navigation, actions, status
 
 **Icon Applications**:
+
 - UI elements
 - Infographics
 - Way-finding
@@ -287,6 +316,7 @@ Caption: Neue Montreal Regular, 14pt, +1% tracking
 #### Digital Applications
 
 **Website Homepage**:
+
 ```
 Hero Section:
 - Full-width video background (flowing water to solar panels)
@@ -301,6 +331,7 @@ Navigation:
 ```
 
 **Mobile App Interface**:
+
 ```
 Dashboard:
 - Circular energy flow visualization
@@ -318,12 +349,14 @@ Color Usage:
 #### Print Applications
 
 **Business Cards**:
+
 - Soft-touch matte finish
 - Spot UV on logo
 - Green edge coloring
 - QR code to energy calculator
 
 **Brochure System**:
+
 - Gatefold for product overview
 - Infographic-heavy layout
 - Premium paper with subtle texture
@@ -332,12 +365,14 @@ Color Usage:
 #### Environmental Design
 
 **Trade Show Booth**:
+
 - Curved walls suggesting flow
 - LED accent lighting in brand colors
 - Interactive digital displays
 - Natural wood and metal materials
 
 **Retail Display**:
+
 - Illuminated logo sign
 - Product pedestals with info cards
 - Touch screen configurator
@@ -348,6 +383,7 @@ Color Usage:
 #### Voice & Tone in Design
 
 **Visual Voice Attributes**:
+
 - **Clear** not cluttered
 - **Flowing** not rigid
 - **Premium** not pretentious
@@ -355,6 +391,7 @@ Color Usage:
 - **Technical** not intimidating
 
 **Design Principles**:
+
 1. **Simplicity First**: Remove unnecessary elements
 2. **Natural Flow**: Guide the eye smoothly
 3. **Purposeful Color**: Every color has meaning
@@ -390,24 +427,28 @@ Color Usage:
 ### IMPLEMENTATION ROADMAP
 
 #### Phase 1: Core Identity (Weeks 1-2)
+
 - Finalize logo variations
 - Establish color specifications
 - Set typography standards
 - Create basic templates
 
 #### Phase 2: Digital Assets (Weeks 3-4)
+
 - Website design system
 - App UI components
 - Social media templates
 - Email signatures
 
 #### Phase 3: Print Collateral (Weeks 5-6)
+
 - Business cards
 - Brochure system
 - Packaging design
 - Signage templates
 
 #### Phase 4: Extended Applications (Weeks 7-8)
+
 - Vehicle graphics
 - Uniforms/apparel
 - Trade show materials
@@ -416,17 +457,20 @@ Color Usage:
 ### MEASURING SUCCESS
 
 #### Brand Recognition Metrics
+
 - Unaided brand recall: Target 15% in 6 months
 - Visual consistency score: 95%+ across touchpoints
 - Design award submissions: 3 major competitions
 
 #### Engagement Metrics
+
 - Website time on site: +25%
 - Social media engagement: +40%
 - Email open rates: +30%
 - App daily active users: 70%
 
 #### Business Impact
+
 - Lead quality improvement: 35%
 - Conversion rate increase: 20%
 - Customer satisfaction: 4.5+ stars
@@ -454,26 +498,30 @@ Humanizes technology and reinforces that this is about lifestyle improvement, no
 ### ADAPTATION GUIDELINES
 
 #### Cultural Considerations
+
 - Colors may need adjustment for different markets
 - Imagery should reflect local demographics
 - Iconography tested for cultural meaning
 - Typography checked for language support
 
 #### Seasonal Campaigns
+
 - Spring: Fresh green emphasis, growth themes
 - Summer: Solar/amber focus, peak generation
 - Fall: Preparation themes, warm colors
 - Winter: Reliability messaging, cozy imagery
 
 #### Partner Co-Branding
+
 - EcoFlow logo always dominant
 - Partner logos in grayscale
 - Clear hierarchy established
 - Approval process required
 
 ## Usage Instructions
+
 1. Begin with deep understanding of brand strategy and positioning
-2. Research audience visual preferences and cultural contexts  
+2. Research audience visual preferences and cultural contexts
 3. Explore multiple concept directions before refinement
 4. Ensure systematic thinking across all applications
 5. Test designs with target audience representatives
@@ -482,8 +530,11 @@ Humanizes technology and reinforces that this is about lifestyle improvement, no
 8. Measure impact on business objectives
 
 ## Examples
+
 ### Example 1: Tech Startup Rebrand
-**Input**: 
+
+**Input**:
+
 ```
 {{project_type}}: Complete rebrand
 {{industry}}: B2B SaaS cybersecurity
@@ -495,7 +546,9 @@ Humanizes technology and reinforces that this is about lifestyle improvement, no
 **Output**: [Modern geometric logo suggesting shield/protection, deep blue and bright accent palette, clean technical aesthetic with human touches]
 
 ### Example 2: Restaurant Visual Identity
+
 **Input**:
+
 ```
 {{project_type}}: New restaurant branding
 {{industry}}: Fast-casual healthy dining
@@ -507,11 +560,13 @@ Humanizes technology and reinforces that this is about lifestyle improvement, no
 **Output**: [Hand-drawn botanical elements, vibrant vegetable-inspired palette, Instagram-worthy interior design elements, flexible system for seasonal menus]
 
 ## Related Prompts
+
 - [Brand Strategy Developer](/prompts/creation/brand-strategy.md)
 - [UI/UX Design Expert](/prompts/creation/ui-ux-design.md)
 - [Marketing Creative Director](/prompts/creation/marketing-creative.md)
 
 ## Research Notes
+
 - Combines strategic thinking with aesthetic excellence
 - Emphasizes systematic approach to visual design
 - Includes implementation and measurement planning

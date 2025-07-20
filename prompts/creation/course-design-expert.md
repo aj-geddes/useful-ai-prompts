@@ -1,6 +1,7 @@
 # Course Design Expert and Learning Experience Architect
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: course design, instructional design, curriculum development, online learning, educational content
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines master course design expertise with learning experience architecture to create engaging, effective educational programs. It employs proven instructional design principles, adult learning theory, and modern pedagogical approaches to maximize learning outcomes and student engagement.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise course design system combining:
 
@@ -89,6 +92,7 @@ DELIVER YOUR COURSE DESIGN AS:
 Transform your organization with data-driven decision making. This course empowers business leaders to understand, interpret, and leverage data science without coding. Through real-world case studies and hands-on projects, you'll learn to speak the language of data, lead analytics initiatives, and drive measurable business impact.
 
 **Target Learners**:
+
 - C-suite executives and senior managers
 - Business unit leaders overseeing data initiatives
 - Entrepreneurs scaling data-driven startups
@@ -103,31 +107,37 @@ TO: Data-confident executive making evidence-based decisions
 **By course completion, learners will be able to:**
 
 **REMEMBER** (Knowledge)
+
 - Define key data science terminology and concepts
 - Identify different types of analytics (descriptive, predictive, prescriptive)
 - Recall ethical considerations in data usage
 
 **UNDERSTAND** (Comprehension)
+
 - Explain how machine learning differs from traditional analytics
 - Interpret common data visualizations and statistical outputs
 - Describe the data science project lifecycle
 
 **APPLY** (Application)
+
 - Use frameworks to identify data opportunities in their organization
 - Apply critical thinking to evaluate data science proposals
 - Implement data-driven decision-making processes
 
 **ANALYZE** (Analysis)
+
 - Assess the quality and limitations of data insights
 - Evaluate ROI of data science initiatives
 - Diagnose common pitfalls in analytics projects
 
 **CREATE** (Synthesis)
+
 - Design a data strategy for their organization
 - Develop metrics dashboards for key business objectives
 - Build data-literate teams and culture
 
 **EVALUATE** (Evaluation)
+
 - Judge the validity of data science claims and results
 - Critique analytics presentations and recommendations
 - Select appropriate analytics approaches for business problems
@@ -135,14 +145,17 @@ TO: Data-confident executive making evidence-based decisions
 ### CURRICULUM STRUCTURE
 
 #### MODULE 1: FOUNDATIONS OF DATA THINKING
+
 **Week 1: The Data-Driven Executive**
 
 **Learning Objectives**:
+
 - Understand why data literacy is critical for modern leaders
 - Identify opportunities for data science in your industry
 - Assess your organization's data maturity
 
 **Content Outline**:
+
 1. **The Data Revolution** (Video Lecture - 20 min)
    - Case studies: Netflix, Amazon, Target
    - The competitive advantage of data
@@ -159,24 +172,29 @@ TO: Data-confident executive making evidence-based decisions
    - Personal learning goals
 
 **Activities**:
+
 - **Live Session**: Meet your cohort, share data challenges (60 min)
 - **Discussion**: "What's your biggest data fear?" (Async)
 - **Assignment**: Data opportunity audit in your organization
 
 **Resources**:
+
 - Executive's Guide to Data Science (PDF)
 - Recommended reading: "Competing on Analytics"
 - Guest speaker: CDO of Fortune 500 company
 
 #### MODULE 2: SPEAKING THE LANGUAGE OF DATA
+
 **Week 2: Statistics Without the Math**
 
 **Learning Objectives**:
+
 - Interpret basic statistical concepts in business context
 - Understand probability and uncertainty in decision-making
 - Recognize statistical manipulation and bias
 
 **Content Outline**:
+
 1. **Statistics for Executives** (Video Series - 4 x 15 min)
    - Averages that lie: Mean, median, mode
    - Correlation vs. causation in business
@@ -194,19 +212,23 @@ TO: Data-confident executive making evidence-based decisions
    - Customer segmentation at Spotify
 
 **Activities**:
+
 - **Live Workshop**: Hands-on with business dashboards (90 min)
 - **Peer Review**: Critique a data presentation
 - **Mini-Project**: Create your first data story
 
 #### MODULE 3: MACHINE LEARNING FOR LEADERS
+
 **Week 3: AI and ML in Plain English**
 
 **Learning Objectives**:
+
 - Differentiate between types of machine learning
 - Identify appropriate ML applications for business problems
 - Understand the requirements and limitations of ML
 
 **Content Outline**:
+
 1. **ML Fundamentals** (Animated Explainers - 30 min)
    - Supervised vs. unsupervised learning
    - Classification vs. regression
@@ -228,19 +250,23 @@ TO: Data-confident executive making evidence-based decisions
    - Monitoring and maintenance
 
 **Activities**:
+
 - **Executive Briefing Simulation**: Evaluate an ML proposal
 - **Group Project**: Design an ML use case for your industry
 - **Expert Panel**: Q&A with data science leaders
 
 #### MODULE 4: DATA STRATEGY AND GOVERNANCE
+
 **Week 4: Building a Data-Driven Organization**
 
 **Learning Objectives**:
+
 - Design a data strategy aligned with business objectives
 - Understand data governance and privacy requirements
 - Build the business case for data initiatives
 
 **Content Outline**:
+
 1. **Strategic Framework** (Executive Toolkit - 35 min)
    - Data strategy canvas
    - Maturity assessment model
@@ -260,19 +286,23 @@ TO: Data-confident executive making evidence-based decisions
    - Change management
 
 **Activities**:
+
 - **Strategy Workshop**: Develop your data strategy outline
 - **Role Play**: Data governance committee meeting
 - **Case Debate**: Ethics in predictive policing
 
 #### MODULE 5: WORKING WITH DATA TEAMS
+
 **Week 5: Leading Data Scientists and Analysts**
 
 **Learning Objectives**:
+
 - Communicate effectively with technical teams
 - Structure data projects for success
 - Evaluate data talent and build teams
 
 **Content Outline**:
+
 1. **The Data Team Ecosystem** (Team Structures - 25 min)
    - Data scientists vs. analysts vs. engineers
    - When to hire vs. outsource
@@ -292,19 +322,23 @@ TO: Data-confident executive making evidence-based decisions
    - Providing useful feedback
 
 **Activities**:
+
 - **Mock Interview**: Hiring a data scientist
 - **Project Planning**: Scope a real analytics project
 - **Communication Lab**: Technical presentation makeover
 
 #### MODULE 6: DATA IN ACTION
+
 **Week 6: Implementation and Change Management**
 
 **Learning Objectives**:
+
 - Plan data initiative rollouts
 - Manage organizational change
 - Measure and communicate impact
 
 **Content Outline**:
+
 1. **Implementation Playbook** (Step-by-Step Guide - 40 min)
    - Pilot program design
    - Scaling strategies
@@ -324,19 +358,23 @@ TO: Data-confident executive making evidence-based decisions
    - Continuous improvement
 
 **Activities**:
+
 - **Implementation Plan**: Design rollout for your project
 - **Stakeholder Mapping**: Identify allies and skeptics
 - **Success Stories**: Share wins from your organization
 
 #### MODULE 7: ADVANCED APPLICATIONS
+
 **Week 7: Cutting-Edge Data Science**
 
 **Learning Objectives**:
+
 - Explore emerging technologies and trends
 - Evaluate advanced analytics opportunities
 - Prepare for the future of data
 
 **Content Outline**:
+
 1. **Emerging Technologies** (Trend Briefings - 35 min)
    - Generative AI and LLMs
    - Computer vision applications
@@ -356,19 +394,23 @@ TO: Data-confident executive making evidence-based decisions
    - Innovation frameworks
 
 **Activities**:
+
 - **Innovation Lab**: Experiment with AI tools
 - **Future Scenario Planning**: 5-year vision exercise
 - **Vendor Evaluation**: Assess analytics platforms
 
 #### MODULE 8: CAPSTONE PROJECT
+
 **Week 8: Your Data Transformation Plan**
 
 **Learning Objectives**:
+
 - Synthesize learning into actionable strategy
 - Present data initiatives to stakeholders
 - Build implementation roadmap
 
 **Capstone Components**:
+
 1. **Strategic Assessment** (20%)
    - Current state analysis
    - Opportunity identification
@@ -392,6 +434,7 @@ TO: Data-confident executive making evidence-based decisions
    - Q&A handling
 
 **Final Deliverables**:
+
 - Written strategy document (10-15 pages)
 - Executive presentation deck
 - Peer feedback and iteration
@@ -402,12 +445,14 @@ TO: Data-confident executive making evidence-based decisions
 #### Learning Experience Journey
 
 **Week 0: Pre-Course**
+
 - Welcome package with prep materials
 - Tech check and platform orientation
 - Pre-assessment and goal setting
 - LinkedIn group invitation
 
 **Weekly Rhythm**:
+
 - **Monday**: New content release (90 min async)
 - **Wednesday**: Live session (90 min)
 - **Friday**: Assignment due
@@ -445,16 +490,19 @@ TO: Data-confident executive making evidence-based decisions
 #### Formative Assessments
 
 **Knowledge Checks** (Auto-graded)
+
 - End-of-module quizzes
 - Interactive scenarios
 - Concept application exercises
 
 **Practical Applications** (Peer/Instructor reviewed)
+
 - Weekly mini-projects
 - Discussion contributions
 - Case study analyses
 
 **Reflective Practice**
+
 - Learning journals
 - Self-assessment rubrics
 - Goal progress tracking
@@ -463,37 +511,41 @@ TO: Data-confident executive making evidence-based decisions
 
 **Capstone Project Rubric**:
 
-| Criteria | Excellent (90-100%) | Proficient (70-89%) | Developing (50-69%) | Needs Work (<50%) |
-|----------|-------------------|-------------------|-------------------|------------------|
-| Strategic Thinking | Innovative, comprehensive strategy | Solid strategy with clear logic | Basic strategy, some gaps | Unclear or missing strategy |
-| Business Case | Compelling ROI, risk addressed | Good justification, metrics | Adequate case, vague metrics | Weak or no justification |
-| Technical Understanding | Accurate, nuanced use of concepts | Correct application | Some misconceptions | Major misunderstandings |
-| Implementation Plan | Detailed, realistic, phased | Clear steps, reasonable | Basic plan, missing details | Vague or unrealistic |
-| Communication | Executive-ready, persuasive | Clear and professional | Adequate clarity | Poor presentation |
+| Criteria                | Excellent (90-100%)                | Proficient (70-89%)             | Developing (50-69%)          | Needs Work (<50%)           |
+| ----------------------- | ---------------------------------- | ------------------------------- | ---------------------------- | --------------------------- |
+| Strategic Thinking      | Innovative, comprehensive strategy | Solid strategy with clear logic | Basic strategy, some gaps    | Unclear or missing strategy |
+| Business Case           | Compelling ROI, risk addressed     | Good justification, metrics     | Adequate case, vague metrics | Weak or no justification    |
+| Technical Understanding | Accurate, nuanced use of concepts  | Correct application             | Some misconceptions          | Major misunderstandings     |
+| Implementation Plan     | Detailed, realistic, phased        | Clear steps, reasonable         | Basic plan, missing details  | Vague or unrealistic        |
+| Communication           | Executive-ready, persuasive        | Clear and professional          | Adequate clarity             | Poor presentation           |
 
 ### LEARNING MATERIALS
 
 #### Core Content Library
 
 **Video Lectures**: 12 hours total
+
 - Produced with animations and graphics
 - Closed captions and transcripts
 - Downloadable for offline viewing
 - Speed controls for preference
 
 **Interactive Modules**: 8 modules
+
 - Branching scenarios
 - Drag-and-drop exercises
 - Data visualization labs
 - Decision simulations
 
 **Case Study Collection**: 24 cases
+
 - Written cases (2-3 pages)
 - Video cases (10-15 min)
 - Data sets for analysis
 - Solution guides
 
 **Templates and Tools**:
+
 - Data strategy canvas
 - ROI calculator
 - Vendor evaluation matrix
@@ -504,17 +556,20 @@ TO: Data-confident executive making evidence-based decisions
 #### Supplementary Resources
 
 **Required Reading**:
+
 - "The AI Advantage" (Chapter excerpts)
 - Harvard Business Review articles (6)
 - Industry reports (4)
 
 **Optional Deep Dives**:
+
 - Technical primers for curious leaders
 - Industry-specific resources
 - Regional regulation guides
 - Advanced statistics explanations
 
 **External Resources**:
+
 - Coursera technical courses (recommended)
 - Podcast playlist
 - YouTube channel
@@ -525,12 +580,14 @@ TO: Data-confident executive making evidence-based decisions
 #### Instructor Presence
 
 **Live Sessions** (90 min weekly):
+
 - 20 min: Concept review and Q&A
 - 40 min: Case discussion or workshop
 - 20 min: Guest speaker
 - 10 min: Preview and assignments
 
 **Asynchronous Support**:
+
 - Discussion forum monitoring (daily)
 - Assignment feedback (48-hour turnaround)
 - Office hours (2x weekly, recorded)
@@ -539,18 +596,21 @@ TO: Data-confident executive making evidence-based decisions
 #### Community Building
 
 **Week 1**: Foundation
+
 - Icebreakers and introductions
 - Cohort charter creation
 - Communication norms
 - Goal sharing
 
 **Ongoing**: Connection
+
 - Industry-specific channels
 - Regional meetups (virtual)
 - Partner assignments
 - Success celebrations
 
 **Post-Course**: Alumni
+
 - Monthly newsletter
 - Quarterly reunions
 - Advanced workshops
@@ -561,6 +621,7 @@ TO: Data-confident executive making evidence-based decisions
 #### Technical Requirements
 
 **LMS Features Needed**:
+
 - Video hosting with analytics
 - Discussion forums with threading
 - Assignment submission and peer review
@@ -570,6 +631,7 @@ TO: Data-confident executive making evidence-based decisions
 - Analytics dashboard
 
 **Recommended Platforms**:
+
 1. **Enterprise**: Canvas, Blackboard
 2. **Modern**: Thinkific, Teachable
 3. **Cohort-Based**: Circle, Maven
@@ -578,6 +640,7 @@ TO: Data-confident executive making evidence-based decisions
 #### Accessibility Standards
 
 **WCAG 2.1 AA Compliance**:
+
 - Alt text for all images
 - Captions for videos
 - Keyboard navigation
@@ -586,6 +649,7 @@ TO: Data-confident executive making evidence-based decisions
 - Font size controls
 
 **Multiple Formats**:
+
 - Video + audio + text
 - Downloadable materials
 - Mobile optimization
@@ -596,6 +660,7 @@ TO: Data-confident executive making evidence-based decisions
 #### Learning Analytics
 
 **Engagement Metrics**:
+
 - Course completion rate (Target: 85%)
 - Video completion rates
 - Discussion participation
@@ -603,12 +668,14 @@ TO: Data-confident executive making evidence-based decisions
 - Live session attendance
 
 **Learning Outcomes**:
+
 - Pre/post assessment scores
 - Capstone project quality
 - Skill application reports
 - Peer feedback ratings
 
 **Business Impact** (90-day follow-up):
+
 - Projects implemented
 - ROI achieved
 - Behavioral changes
@@ -617,6 +684,7 @@ TO: Data-confident executive making evidence-based decisions
 #### Continuous Improvement
 
 **Feedback Loops**:
+
 - Weekly pulse surveys
 - Mid-course evaluation
 - End-of-course survey
@@ -624,6 +692,7 @@ TO: Data-confident executive making evidence-based decisions
 - Alumni annual survey
 
 **Iteration Process**:
+
 - Monthly instructor debriefs
 - Cohort feedback analysis
 - Content update cycles
@@ -631,6 +700,7 @@ TO: Data-confident executive making evidence-based decisions
 - Community suggestions
 
 ## Usage Instructions
+
 1. Start with thorough learner analysis and needs assessment
 2. Align all content with specific, measurable learning objectives
 3. Design for engagement using varied activities and social learning
@@ -641,8 +711,11 @@ TO: Data-confident executive making evidence-based decisions
 8. Measure success through both learning and business outcomes
 
 ## Examples
+
 ### Example 1: Technical Skills Course
-**Input**: 
+
+**Input**:
+
 ```
 {{course_type}}: Self-paced online course
 {{subject_matter}}: Python programming for beginners
@@ -654,7 +727,9 @@ TO: Data-confident executive making evidence-based decisions
 **Output**: [Complete course design with hands-on coding exercises, project-based learning, automated assessments, and progression from basics to pandas/visualization]
 
 ### Example 2: Leadership Development Program
+
 **Input**:
+
 ```
 {{course_type}}: Blended executive education
 {{subject_matter}}: Transformational leadership
@@ -666,11 +741,13 @@ TO: Data-confident executive making evidence-based decisions
 **Output**: [Comprehensive leadership program with 360 assessments, action learning projects, executive coaching, peer cohorts, and organizational impact measurement]
 
 ## Related Prompts
+
 - [Instructional Design Expert](/prompts/creation/instructional-design.md)
 - [Learning Assessment Specialist](/prompts/evaluation/learning-assessment.md)
 - [Training Program Developer](/prompts/creation/training-program.md)
 
 ## Research Notes
+
 - Based on evidence-based instructional design principles
 - Emphasizes practical application and skill transfer
 - Incorporates modern adult learning theory

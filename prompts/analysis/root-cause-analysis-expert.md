@@ -1,6 +1,7 @@
 # Root Cause Analysis Expert and Systems Failure Investigator
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: root cause analysis, problem solving, failure analysis, systemic issues, corrective actions
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines deep root cause analysis expertise with systems thinking to identify underlying causes of problems, failures, and inefficiencies. It employs multiple investigative frameworks to uncover systemic issues and develop preventive solutions.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise root cause analysis system combining:
 
@@ -88,60 +91,65 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Incident Overview
 ```
+
 Problem Statement:
 ┌─────────────────────────────────────────────┐
-│ WHAT: Production line stopped unexpectedly  │
-│ WHEN: 2024-03-15, 14:32 UTC               │
-│ WHERE: Facility A, Line 3                  │
+│ WHAT: Production line stopped unexpectedly │
+│ WHEN: 2024-03-15, 14:32 UTC │
+│ WHERE: Facility A, Line 3 │
 │ IMPACT: $125K lost production, 3hr downtime│
-│ FREQUENCY: 3rd occurrence in 6 months      │
+│ FREQUENCY: 3rd occurrence in 6 months │
 ├─────────────────────────────────────────────┤
-│ Immediate Cause: Conveyor motor failure    │
-│ Symptom Pattern: Gradual speed reduction   │
-│ Detection Delay: 45 minutes                │
-│ Recovery Time: 3 hours                     │
+│ Immediate Cause: Conveyor motor failure │
+│ Symptom Pattern: Gradual speed reduction │
+│ Detection Delay: 45 minutes │
+│ Recovery Time: 3 hours │
 └─────────────────────────────────────────────┘
 
 Timeline Visualization:
--48hr  -24hr  -1hr  Incident  +1hr  +3hr
-  │      │     │       │       │     │
-  ●──────●─────●───────X───────●─────● 
-  │      │     │       │       │     │
-Normal Warning Signs  Failure Detect Fixed
-        Vibration↑   Complete  Start  Operational
-        Temp↑        
-        Noise↑       
+-48hr -24hr -1hr Incident +1hr +3hr
+│ │ │ │ │ │
+●──────●─────●───────X───────●─────●
+│ │ │ │ │ │
+Normal Warning Signs Failure Detect Fixed
+Vibration↑ Complete Start Operational
+Temp↑  
+ Noise↑
 
-Pattern Recognition: Progressive degradation 
+Pattern Recognition: Progressive degradation
 with missed early warning signals
+
 ```
 
 #### System Context Map
 ```
+
 Failure Propagation Path:
-     Supplier               Manufacturing            Customer
-        │                        │                      │
-   Material ──→ Receiving ──→ Production ──→ Quality ──→ Shipping
-     Quality      Issues        Line 3        Control    Delays
-                    │             ⬇              │
-                    └──→ Inventory Impact ←──────┘
-                              ⬇
-                         Financial Loss
-                         
+Supplier Manufacturing Customer
+│ │ │
+Material ──→ Receiving ──→ Production ──→ Quality ──→ Shipping
+Quality Issues Line 3 Control Delays
+│ ⬇ │
+└──→ Inventory Impact ←──────┘
+⬇
+Financial Loss
+
 System Interdependencies:
 • Production → Inventory (High coupling)
 • Quality → Customer satisfaction (Direct)
 • Maintenance → All systems (Critical)
 • IT systems → Monitoring (Essential)
 
-Vulnerability: Single point of failure 
+Vulnerability: Single point of failure
 at Line 3 with no redundancy
+
 ```
 
 ### ROOT CAUSE ANALYSIS
 
 #### 5 Whys Deep Dive
 ```
+
 Problem: Production line stopped
 
 Why 1: Motor failed
@@ -159,98 +167,106 @@ Why 4: Maintenance skipped
 Why 5: PM schedule not followed
 ↓ Evidence: Resource constraints, competing priorities
 
-ROOT CAUSE: Inadequate preventive maintenance 
+ROOT CAUSE: Inadequate preventive maintenance
 program governance and resource allocation
 
 Validation: 3 similar failures traced to same cause
+
 ```
 
 #### Fishbone Analysis
 ```
+
                     PRODUCTION FAILURE
                            │
     People          Methods │ Materials      Machine
       │                │    │    │             │
-Staff shortage──┐      │    │    └─Dust──┐    │
-               │      │    │             │    │
-Training gaps──┼──────┼────┼─────────────┼────┤
-               │      │    │             │    │
-Priorities─────┘      │    │   Vibration─┴────Age
-                     │    │                   │
-No PM checklist──────┘    └─Inferior bearing──┘
-                          │
-Unclear schedule─────────┘ Environment not controlled
-                         │              │
-Budget cuts─────────────┴──────────────┘
-        │                        │
-  Measurement              Environment
 
-Primary Cause Path: 
-Management (Budget) → Methods (PM Schedule) → 
+Staff shortage──┐ │ │ └─Dust──┐ │
+│ │ │ │ │
+Training gaps──┼──────┼────┼─────────────┼────┤
+│ │ │ │ │
+Priorities─────┘ │ │ Vibration─┴────Age
+│ │ │
+No PM checklist──────┘ └─Inferior bearing──┘
+│
+Unclear schedule─────────┘ Environment not controlled
+│ │
+Budget cuts─────────────┴──────────────┘
+│ │
+Measurement Environment
+
+Primary Cause Path:
+Management (Budget) → Methods (PM Schedule) →
 Machine (Maintenance) → Failure
+
 ```
 
 #### Fault Tree Analysis
 ```
+
 Production Line Failure
-         ├─── AND ───┤
-         │           │
-    Motor Fail   No Backup
-         │           │
-    ├─── OR ───┤    Eliminated
-    │          │    (cost saving)
-Electrical  Mechanical
-    │          │
-    ●      ├───OR───┤
- (Rare)    │        │
-      Bearing   Overheating
-         │          │
-         ●      ├───AND───┤
-    (Common)    │         │
-            High Load  No Cooling
-                │         │
-                ●     ├───OR───┤
-           (Normal)   │        │
-                  Blocked   Failed
-                     │         │
-                     ●         ●
-                (Primary)  (Secondary)
+├─── AND ───┤
+│ │
+Motor Fail No Backup
+│ │
+├─── OR ───┤ Eliminated
+│ │ (cost saving)
+Electrical Mechanical
+│ │
+● ├───OR───┤
+(Rare) │ │
+Bearing Overheating
+│ │
+● ├───AND───┤
+(Common) │ │
+High Load No Cooling
+│ │
+● ├───OR───┤
+(Normal) │ │
+Blocked Failed
+│ │
+● ●
+(Primary) (Secondary)
 
 Critical Path Probability:
 P(Failure) = 0.85 × 0.90 × 0.95 = 0.73
 Unacceptably high risk level
+
 ```
 
 ### CONTRIBUTING FACTORS ANALYSIS
 
 #### Systemic Issues Identified
 ```
+
 Organizational Factors:
 ┌─────────────────────────────────────────────┐
-│ Level 1: Immediate Technical Causes         │
-│ • Mechanical wear and contamination         │
-│ • Inadequate cooling system design          │
-│ • No redundancy in critical path           │
+│ Level 1: Immediate Technical Causes │
+│ • Mechanical wear and contamination │
+│ • Inadequate cooling system design │
+│ • No redundancy in critical path │
 ├─────────────────────────────────────────────┤
-│ Level 2: Process & Procedure Gaps          │
-│ • PM schedule not enforced                 │
-│ • No escalation for missed maintenance     │
-│ • Inadequate monitoring thresholds         │
+│ Level 2: Process & Procedure Gaps │
+│ • PM schedule not enforced │
+│ • No escalation for missed maintenance │
+│ • Inadequate monitoring thresholds │
 ├─────────────────────────────────────────────┤
-│ Level 3: Management System Failures        │
-│ • Maintenance budget reduced 40%           │
-│ • KPIs focus on output, not reliability   │
-│ • Risk assessment outdated (2 years)       │
+│ Level 3: Management System Failures │
+│ • Maintenance budget reduced 40% │
+│ • KPIs focus on output, not reliability │
+│ • Risk assessment outdated (2 years) │
 ├─────────────────────────────────────────────┤
-│ Level 4: Cultural Root Causes              │
-│ • Production prioritized over maintenance  │
-│ • Reactive vs preventive mindset           │
-│ • Lessons learned not implemented          │
+│ Level 4: Cultural Root Causes │
+│ • Production prioritized over maintenance │
+│ • Reactive vs preventive mindset │
+│ • Lessons learned not implemented │
 └─────────────────────────────────────────────┘
 
 Deepest Root: Short-term thinking culture
 driven by quarterly financial pressure
-```
+
+````
 
 #### Human Factors Analysis
 ```python
@@ -281,11 +297,12 @@ organizational_factors = {
 }
 
 # Conclusion: System set up humans to fail
-```
+````
 
 ### FAILURE MODE ANALYSIS
 
 #### FMEA Results
+
 ```
 Failure Mode and Effects Analysis:
 ┌─────────────────┬──────┬────────┬──────┬─────┬──────────┐
@@ -307,6 +324,7 @@ Top Risk: Contamination (324)
 ```
 
 #### Failure Pattern Recognition
+
 ```
 Historical Failure Analysis:
             J  F  M  A  M  J  J  A  S  O  N  D
@@ -314,7 +332,7 @@ Historical Failure Analysis:
 2023:       -  -  ×  -  -  ×  -  -  ×  -  -  ×
 2024:       -  -  ×  ?  ?  ?  ?  ?  ?  ?  ?  ?
 
-Pattern Detected: 
+Pattern Detected:
 - 3-month interval degradation
 - Summer months higher risk (heat + dust)
 - Accelerating frequency
@@ -330,6 +348,7 @@ Recommendation: PM interval = 60 days (safety factor 1.5)
 ### ROOT CAUSE VALIDATION
 
 #### Evidence Chain
+
 ```
 Supporting Evidence Map:
 ┌─────────────────────────────────────────────┐
@@ -354,6 +373,7 @@ Supporting Evidence Map:
 ### CORRECTIVE ACTION PLAN
 
 #### Immediate Actions (0-7 days)
+
 ```
 Quick Response Plan:
 ┌─────────────────────────────────────────────┐
@@ -378,6 +398,7 @@ Quick Response Plan:
 ```
 
 #### Systemic Solutions (30-90 days)
+
 ```
 Root Cause Elimination Strategy:
 
@@ -413,6 +434,7 @@ Risk Reduction: 85%
 ### PREVENTION FRAMEWORK
 
 #### Barrier Analysis
+
 ```
 Swiss Cheese Model - Failure Prevention Layers:
 
@@ -439,6 +461,7 @@ Combined effectiveness: 94% prevention rate
 ```
 
 #### Monitoring & Verification
+
 ```python
 # Effectiveness Monitoring System
 monitoring_plan = {
@@ -479,6 +502,7 @@ monitoring_plan = {
 ### LESSONS LEARNED
 
 #### Key Insights
+
 ```
 Critical Success Factors Identified:
 ┌─────────────────────────────────────────────┐
@@ -509,16 +533,21 @@ Implementation Success Factors:
 ### APPENDICES
 
 #### A. Investigation Methodology
+
 [Detailed investigation process, data collection methods, analysis tools]
 
 #### B. Technical Analysis Data
+
 [Failure analysis reports, test results, engineering calculations]
 
 #### C. Financial Impact Analysis
+
 [Cost of failure, ROI calculations, budget requirements]
 
 #### D. Implementation Toolkit
+
 [Templates, checklists, monitoring dashboards, training materials]
+
 ```
 
 ## Usage Instructions
@@ -533,13 +562,15 @@ Implementation Success Factors:
 
 ## Examples
 ### Example 1: Software System Outage Analysis
-**Input**: 
+**Input**:
 ```
+
 {{problem_type}}: Technical - critical system outage
 {{incident_details}}: Payment processing down for 4 hours, $2M lost revenue
 {{frequency}}: Second time in 3 months
 {{data_available}}: System logs, error messages, deployment history
 {{specific_problem}}: Database connection timeouts leading to cascade failure
+
 ```
 
 **Output**: [Comprehensive analysis revealing configuration drift as root cause, with inadequate change management process, missing database connection pooling, and lack of circuit breakers, including technical fixes and process improvements]
@@ -555,3 +586,4 @@ Implementation Success Factors:
 - Includes human factors and organizational culture analysis
 - Provides both immediate fixes and long-term solutions
 - Integrates prevention and monitoring frameworks
+```

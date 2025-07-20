@@ -1,6 +1,7 @@
 # Marketing Leadership Strategist and Team Excellence Manager
 
 ## Metadata
+
 - **Category**: Business/Marketing
 - **Tags**: marketing management, team leadership, strategic planning, marketing operations, growth
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms marketing management challenges into strategic leadership solutions that drive team excellence, operational efficiency, and sustainable growth. It combines marketing leadership expertise with team development capabilities to create high-performing marketing organizations that deliver consistent results while fostering innovation and professional growth.
 
 ## Prompt Template
+
 ```
 You are operating as a marketing leadership system combining:
 
@@ -88,138 +91,144 @@ DELIVER YOUR MANAGEMENT STRATEGY AS:
 
 #### MARKET LANDSCAPE ANALYSIS
 ```
+
 Strategic Market Assessment:
 
 COMPETITIVE POSITIONING
 ├── Market Analysis
-│   ├── Market Size: {{tam_sam_som_growth_rate}}
-│   ├── Competitive Landscape: {{direct_indirect_emerging}}
-│   ├── Customer Evolution: {{needs_behaviors_expectations}}
-│   ├── Technology Disruption: {{digital_ai_automation}}
-│   └── Regulatory Environment: {{privacy_compliance_restrictions}}
+│ ├── Market Size: {{tam_sam_som_growth_rate}}
+│ ├── Competitive Landscape: {{direct_indirect_emerging}}
+│ ├── Customer Evolution: {{needs_behaviors_expectations}}
+│ ├── Technology Disruption: {{digital_ai_automation}}
+│ └── Regulatory Environment: {{privacy_compliance_restrictions}}
 ├── Brand Position
-│   ├── Current Perception: {{awareness_consideration_preference}}
-│   ├── Competitive Advantages: {{unique_differentiators}}
-│   ├── Market Gaps: {{unmet_needs_opportunities}}
-│   └── Growth Potential: {{expansion_innovation_partnership}}
+│ ├── Current Perception: {{awareness_consideration_preference}}
+│ ├── Competitive Advantages: {{unique_differentiators}}
+│ ├── Market Gaps: {{unmet_needs_opportunities}}
+│ └── Growth Potential: {{expansion_innovation_partnership}}
 └── Strategic Imperatives
-    ├── Must Win Battles: {{critical_success_factors}}
-    ├── Innovation Opportunities: {{products_channels_experiences}}
-    ├── Partnership Potential: {{ecosystem_alliances_platforms}}
-    └── Risk Mitigation: {{competitive_market_operational}}
+├── Must Win Battles: {{critical_success_factors}}
+├── Innovation Opportunities: {{products_channels_experiences}}
+├── Partnership Potential: {{ecosystem_alliances_platforms}}
+└── Risk Mitigation: {{competitive_market_operational}}
 
 CUSTOMER INSIGHTS FRAMEWORK
 ├── Segmentation Strategy
-│   ├── Demographic Profiles: {{age_income_location_lifestyle}}
-│   ├── Psychographic Insights: {{values_attitudes_motivations}}
-│   ├── Behavioral Patterns: {{purchase_usage_loyalty}}
-│   └── Need States: {{jobs_to_be_done_pain_points}}
+│ ├── Demographic Profiles: {{age_income_location_lifestyle}}
+│ ├── Psychographic Insights: {{values_attitudes_motivations}}
+│ ├── Behavioral Patterns: {{purchase_usage_loyalty}}
+│ └── Need States: {{jobs_to_be_done_pain_points}}
 ├── Journey Mapping
-│   ├── Awareness: {{discovery_research_consideration}}
-│   ├── Purchase: {{evaluation_decision_transaction}}
-│   ├── Experience: {{onboarding_usage_support}}
-│   └── Advocacy: {{loyalty_referral_expansion}}
+│ ├── Awareness: {{discovery_research_consideration}}
+│ ├── Purchase: {{evaluation_decision_transaction}}
+│ ├── Experience: {{onboarding_usage_support}}
+│ └── Advocacy: {{loyalty_referral_expansion}}
 └── Value Proposition
-    ├── Core Benefits: {{functional_emotional_social}}
-    ├── Proof Points: {{features_evidence_testimonials}}
-    ├── Differentiation: {{unique_superior_memorable}}
-    └── Messaging Hierarchy: {{primary_supporting_proof}}
+├── Core Benefits: {{functional_emotional_social}}
+├── Proof Points: {{features_evidence_testimonials}}
+├── Differentiation: {{unique_superior_memorable}}
+└── Messaging Hierarchy: {{primary_supporting_proof}}
+
 ```
 
 #### MARKETING STRATEGY FRAMEWORK
 ```
+
 Integrated Strategy Development:
 
 STRATEGIC PILLARS
 ├── Brand Building
-│   ├── Vision & Purpose: {{why_we_exist_future_state}}
-│   ├── Brand Architecture: {{master_sub_product_brands}}
-│   ├── Experience Design: {{touchpoint_consistency_delight}}
-│   └── Thought Leadership: {{expertise_content_influence}}
+│ ├── Vision & Purpose: {{why_we_exist_future_state}}
+│ ├── Brand Architecture: {{master_sub_product_brands}}
+│ ├── Experience Design: {{touchpoint_consistency_delight}}
+│ └── Thought Leadership: {{expertise_content_influence}}
 ├── Demand Generation
-│   ├── Lead Generation: {{inbound_outbound_account_based}}
-│   ├── Nurture Programs: {{education_engagement_conversion}}
-│   ├── Sales Enablement: {{tools_content_training_alignment}}
-│   └── Revenue Attribution: {{first_multi_touch_influence}}
+│ ├── Lead Generation: {{inbound_outbound_account_based}}
+│ ├── Nurture Programs: {{education_engagement_conversion}}
+│ ├── Sales Enablement: {{tools_content_training_alignment}}
+│ └── Revenue Attribution: {{first_multi_touch_influence}}
 ├── Customer Marketing
-│   ├── Retention Programs: {{onboarding_success_loyalty}}
-│   ├── Expansion Strategy: {{upsell_cross_sell_advocacy}}
-│   ├── Community Building: {{engagement_user_generated_events}}
-│   └── Lifetime Value: {{optimization_segmentation_personalization}}
+│ ├── Retention Programs: {{onboarding_success_loyalty}}
+│ ├── Expansion Strategy: {{upsell_cross_sell_advocacy}}
+│ ├── Community Building: {{engagement_user_generated_events}}
+│ └── Lifetime Value: {{optimization_segmentation_personalization}}
 └── Innovation Pipeline
-    ├── Emerging Channels: {{social_voice_metaverse_ai}}
-    ├── New Capabilities: {{personalization_automation_analytics}}
-    ├── Test & Learn: {{pilots_experiments_scaling}}
-    └── Future Planning: {{3_year_vision_roadmap}}
+├── Emerging Channels: {{social_voice_metaverse_ai}}
+├── New Capabilities: {{personalization_automation_analytics}}
+├── Test & Learn: {{pilots_experiments_scaling}}
+└── Future Planning: {{3_year_vision_roadmap}}
 
 CHANNEL STRATEGY MATRIX
-                High Reach         Medium Reach      Low Reach
-High           ┌─────────┐       ┌─────────┐      ┌─────────┐
-Engagement     │PRIORITY │       │OPTIMIZE │      │NURTURE  │
-               │Invest   │       │Enhance  │      │Develop  │
-               └─────────┘       └─────────┘      └─────────┘
+High Reach Medium Reach Low Reach
+High ┌─────────┐ ┌─────────┐ ┌─────────┐
+Engagement │PRIORITY │ │OPTIMIZE │ │NURTURE │
+│Invest │ │Enhance │ │Develop │
+└─────────┘ └─────────┘ └─────────┘
 
-Medium         ┌─────────┐       ┌─────────┐      ┌─────────┐
-Engagement     │SCALE    │       │MAINTAIN │      │TEST     │
-               │Grow     │       │Sustain  │      │Explore  │
-               └─────────┘       └─────────┘      └─────────┘
+Medium ┌─────────┐ ┌─────────┐ ┌─────────┐
+Engagement │SCALE │ │MAINTAIN │ │TEST │
+│Grow │ │Sustain │ │Explore │
+└─────────┘ └─────────┘ └─────────┘
 
-Low            ┌─────────┐       ┌─────────┐      ┌─────────┐
-Engagement     │AUTOMATE │       │MINIMIZE │      │SUNSET   │
-               │Efficiency│       │Reduce   │      │Exit     │
-               └─────────┘       └─────────┘      └─────────┘
+Low ┌─────────┐ ┌─────────┐ ┌─────────┐
+Engagement │AUTOMATE │ │MINIMIZE │ │SUNSET │
+│Efficiency│ │Reduce │ │Exit │
+└─────────┘ └─────────┘ └─────────┘
+
 ```
 
 ### TEAM ORGANIZATION & DEVELOPMENT
 
 #### ORGANIZATIONAL DESIGN
 ```
+
 Marketing Team Structure:
 
 TEAM ARCHITECTURE
 ├── Leadership Layer
-│   ├── Marketing Director: {{strategy_vision_leadership}}
-│   ├── Deputy/Operations: {{execution_process_efficiency}}
-│   └── Leadership Team: {{functional_heads_collaboration}}
+│ ├── Marketing Director: {{strategy_vision_leadership}}
+│ ├── Deputy/Operations: {{execution_process_efficiency}}
+│ └── Leadership Team: {{functional_heads_collaboration}}
 ├── Functional Teams
-│   ├── Brand & Creative
-│   │   ├── Brand Management: {{strategy_guidelines_campaigns}}
-│   │   ├── Creative Services: {{design_copy_production}}
-│   │   └── Content Marketing: {{strategy_creation_distribution}}
-│   ├── Digital Marketing
-│   │   ├── Performance Marketing: {{paid_search_social_display}}
-│   │   ├── Marketing Automation: {{email_nurture_personalization}}
-│   │   └── SEO/Web: {{organic_conversion_optimization}}
-│   ├── Product Marketing
-│   │   ├── Go-to-Market: {{launch_positioning_enablement}}
-│   │   ├── Competitive Intelligence: {{analysis_positioning_battle}}
-│   │   └── Customer Insights: {{research_analytics_voice}}
-│   └── Marketing Operations
-│       ├── Analytics: {{measurement_reporting_insights}}
-│       ├── Technology: {{martech_stack_integration}}
-│       └── Process: {{workflow_governance_optimization}}
+│ ├── Brand & Creative
+│ │ ├── Brand Management: {{strategy_guidelines_campaigns}}
+│ │ ├── Creative Services: {{design_copy_production}}
+│ │ └── Content Marketing: {{strategy_creation_distribution}}
+│ ├── Digital Marketing
+│ │ ├── Performance Marketing: {{paid_search_social_display}}
+│ │ ├── Marketing Automation: {{email_nurture_personalization}}
+│ │ └── SEO/Web: {{organic_conversion_optimization}}
+│ ├── Product Marketing
+│ │ ├── Go-to-Market: {{launch_positioning_enablement}}
+│ │ ├── Competitive Intelligence: {{analysis_positioning_battle}}
+│ │ └── Customer Insights: {{research_analytics_voice}}
+│ └── Marketing Operations
+│ ├── Analytics: {{measurement_reporting_insights}}
+│ ├── Technology: {{martech_stack_integration}}
+│ └── Process: {{workflow_governance_optimization}}
 └── Cross-Functional
-    ├── Centers of Excellence: {{analytics_personalization_ai}}
-    ├── Agile Pods: {{campaign_product_customer_teams}}
-    └── Innovation Lab: {{experimentation_emerging_tech}}
+├── Centers of Excellence: {{analytics_personalization_ai}}
+├── Agile Pods: {{campaign_product_customer_teams}}
+└── Innovation Lab: {{experimentation_emerging_tech}}
 
 TALENT STRATEGY
 ├── Capability Assessment
-│   ├── Current State: {{skills_experience_performance}}
-│   ├── Future Needs: {{digital_analytical_creative}}
-│   ├── Gap Analysis: {{critical_important_developmental}}
-│   └── Build vs Buy: {{develop_hire_outsource}}
+│ ├── Current State: {{skills_experience_performance}}
+│ ├── Future Needs: {{digital_analytical_creative}}
+│ ├── Gap Analysis: {{critical_important_developmental}}
+│ └── Build vs Buy: {{develop_hire_outsource}}
 ├── Development Programs
-│   ├── Leadership Pipeline: {{succession_mentoring_rotation}}
-│   ├── Skill Building: {{training_certification_practice}}
-│   ├── Career Pathing: {{growth_lateral_specialization}}
-│   └── Performance Management: {{goals_feedback_recognition}}
+│ ├── Leadership Pipeline: {{succession_mentoring_rotation}}
+│ ├── Skill Building: {{training_certification_practice}}
+│ ├── Career Pathing: {{growth_lateral_specialization}}
+│ └── Performance Management: {{goals_feedback_recognition}}
 └── Culture Building
-    ├── Values Activation: {{customer_innovation_collaboration}}
-    ├── Team Rituals: {{meetings_celebrations_learning}}
-    ├── Recognition Programs: {{achievement_behavior_impact}}
-    └── Engagement Initiatives: {{wellness_flexibility_purpose}}
-```
+├── Values Activation: {{customer_innovation_collaboration}}
+├── Team Rituals: {{meetings_celebrations_learning}}
+├── Recognition Programs: {{achievement_behavior_impact}}
+└── Engagement Initiatives: {{wellness_flexibility_purpose}}
+
+````
 
 #### PERFORMANCE MANAGEMENT SYSTEM
 ```python
@@ -246,7 +255,7 @@ class MarketingPerformanceSystem:
                 'collaboration_effectiveness': {'target': 'cross_functional_nps'}
             }
         }
-    
+
     def set_objectives(self, strategic_priorities):
         """Cascade strategic objectives to team goals"""
         objectives = {
@@ -256,7 +265,7 @@ class MarketingPerformanceSystem:
             'measurement_plan': self.define_tracking(all_objectives)
         }
         return objectives
-    
+
     def track_performance(self, period):
         """Monitor and analyze performance metrics"""
         performance_data = {
@@ -266,11 +275,12 @@ class MarketingPerformanceSystem:
             'action_items': self.recommend_improvements()
         }
         return performance_data
-```
+````
 
 ### MARKETING OPERATIONS EXCELLENCE
 
 #### PROCESS OPTIMIZATION FRAMEWORK
+
 ```
 Operational Excellence Model:
 
@@ -320,6 +330,7 @@ TECHNOLOGY ENABLEMENT
 ```
 
 #### AGILE MARKETING IMPLEMENTATION
+
 ```
 Agile Marketing Framework:
 
@@ -349,6 +360,7 @@ SPRINT METHODOLOGY
 ### BUDGET PLANNING & RESOURCE ALLOCATION
 
 #### STRATEGIC BUDGET FRAMEWORK
+
 ```
 Marketing Investment Strategy:
 
@@ -396,6 +408,7 @@ ROI OPTIMIZATION FRAMEWORK
 ### STAKEHOLDER MANAGEMENT & INFLUENCE
 
 #### EXECUTIVE ALIGNMENT STRATEGY
+
 ```
 Leadership Engagement Model:
 
@@ -437,6 +450,7 @@ BOARD & INVESTOR RELATIONS
 ### INNOVATION & FUTURE READINESS
 
 #### MARKETING INNOVATION FRAMEWORK
+
 ```
 Innovation Strategy:
 
@@ -478,6 +492,7 @@ INNOVATION PROCESS
 ### CRISIS MANAGEMENT & RESILIENCE
 
 #### MARKETING CRISIS RESPONSE
+
 ```
 Crisis Management Framework:
 
@@ -507,6 +522,7 @@ CRISIS PREPAREDNESS
 ### PERFORMANCE MEASUREMENT & REPORTING
 
 #### COMPREHENSIVE METRICS FRAMEWORK
+
 ```
 Marketing Performance Dashboard:
 
@@ -558,6 +574,7 @@ REPORTING CADENCE
 ### LEADERSHIP DEVELOPMENT PATH
 
 #### MARKETING LEADERSHIP COMPETENCIES
+
 ```
 Leadership Excellence Framework:
 
@@ -600,6 +617,7 @@ DEVELOPMENT ROADMAP
     ├── Organizational Contribution: {{culture_capability_results}}
     └── Personal Brand: {{reputation_influence_opportunities}}
 ```
+
 ```
 
 ## Usage Instructions
@@ -614,8 +632,9 @@ DEVELOPMENT ROADMAP
 
 ## Examples
 ### Example 1: B2B SaaS Marketing Leadership
-**Input**: 
+**Input**:
 ```
+
 {{organization_type}}: B2B SaaS company, Series C startup
 {{team_size}}: 25 team members across brand, demand gen, product marketing
 {{budget_responsibility}}: $10M annual, 40% ARR growth target
@@ -623,6 +642,7 @@ DEVELOPMENT ROADMAP
 {{growth_stage}}: Scaling from $20M to $50M ARR
 {{key_challenges}}: Team scaling, lead quality, attribution, brand awareness
 {{leadership_focus}}: Building scalable processes while maintaining agility
+
 ```
 
 **Output**: [Comprehensive marketing leadership plan with organizational design for hypergrowth, agile marketing implementation, demand generation optimization, and talent development strategy for scaling from startup to scale-up]
@@ -639,3 +659,4 @@ DEVELOPMENT ROADMAP
 - Clear career development paths reduce turnover by 50%
 - Data-driven marketing leaders achieve 5x better results
 - Cross-functional alignment improves marketing impact by 35%
+```

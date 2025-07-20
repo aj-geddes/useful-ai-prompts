@@ -9,30 +9,30 @@ This repository contains specialized prompts designed for AI assistants to adopt
 When assigned a task, select the appropriate prompt based on:
 
 1. **Task Type** → Find matching workflow category
-2. **Domain** → Select relevant expertise area  
+2. **Domain** → Select relevant expertise area
 3. **Complexity** → Choose appropriate depth level
 
 ### Prompt Selection Matrix
 
-| Task Category | Primary Location | Key Prompts |
-|--------------|------------------|-------------|
-| **Financial Analysis** | `/prompts/finance/` | `financial-analysis-expert.md` - Investment analysis, valuation, portfolio management |
-| **Software Development** | `/prompts/technical/software-engineering/` | `fullstack-developer-architect.md` - Full-stack development with system architecture |
-| **Security Operations** | `/prompts/technical/security/` | `cybersecurity-defense-architect.md` - Threat detection, incident response, security architecture |
-| **Business Analysis** | `/prompts/business/business-analysis/` | `business-analyst-strategic-excellence.md` - Requirements engineering, process improvement |
-| **Project Management** | `/prompts/business/project-management/` | `comprehensive-risk-assessment.md` - Risk analysis and mitigation planning |
-| **Marketing Strategy** | `/prompts/business/marketing/` | `marketing-manager-strategist.md` - Team leadership, campaign management |
-| **HR Management** | `/prompts/human-resources/` | `hr-excellence-leader.md` - Talent strategy, organizational development |
-| **Customer Service** | `/prompts/customer-service/` | `customer-experience-excellence-leader.md` - Service operations, team leadership |
-| **Data Science** | `/prompts/technical/data-science/` | `model-evaluation-framework.md` - ML model validation and deployment |
-| **Research** | `/prompts/academic/research/` | `research-excellence-scientist.md` - Scientific research and grant writing |
-| **Executive Support** | `/prompts/administrative/` | `executive-excellence-partner.md` - Strategic administrative support |
-| **Supply Chain** | `/prompts/operations/` | `supply-chain-excellence-director.md` - Logistics and network optimization |
-| **Construction** | `/prompts/engineering/` | `construction-excellence-director.md` - Project delivery and safety management |
-| **Pharmaceutical R&D** | `/prompts/healthcare/` | `pharmaceutical-research-excellence.md` - Drug development and clinical trials |
-| **Graphic Design** | `/prompts/creative/design/` | `graphic-design-expert.md` - Visual design and brand strategy |
-| **Compliance** | `/prompts/business/legal/` | `compliance-officer-expert.md` - Regulatory compliance and risk management |
-| **Operations** | `/prompts/business/operations/` | `operations-manager-excellence.md` - Operational excellence and team development |
+| Task Category            | Primary Location                           | Key Prompts                                                                                       |
+| ------------------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| **Financial Analysis**   | `/prompts/finance/`                        | `financial-analysis-expert.md` - Investment analysis, valuation, portfolio management             |
+| **Software Development** | `/prompts/technical/software-engineering/` | `fullstack-developer-architect.md` - Full-stack development with system architecture              |
+| **Security Operations**  | `/prompts/technical/security/`             | `cybersecurity-defense-architect.md` - Threat detection, incident response, security architecture |
+| **Business Analysis**    | `/prompts/business/business-analysis/`     | `business-analyst-strategic-excellence.md` - Requirements engineering, process improvement        |
+| **Project Management**   | `/prompts/business/project-management/`    | `comprehensive-risk-assessment.md` - Risk analysis and mitigation planning                        |
+| **Marketing Strategy**   | `/prompts/business/marketing/`             | `marketing-manager-strategist.md` - Team leadership, campaign management                          |
+| **HR Management**        | `/prompts/human-resources/`                | `hr-excellence-leader.md` - Talent strategy, organizational development                           |
+| **Customer Service**     | `/prompts/customer-service/`               | `customer-experience-excellence-leader.md` - Service operations, team leadership                  |
+| **Data Science**         | `/prompts/technical/data-science/`         | `model-evaluation-framework.md` - ML model validation and deployment                              |
+| **Research**             | `/prompts/academic/research/`              | `research-excellence-scientist.md` - Scientific research and grant writing                        |
+| **Executive Support**    | `/prompts/administrative/`                 | `executive-excellence-partner.md` - Strategic administrative support                              |
+| **Supply Chain**         | `/prompts/operations/`                     | `supply-chain-excellence-director.md` - Logistics and network optimization                        |
+| **Construction**         | `/prompts/engineering/`                    | `construction-excellence-director.md` - Project delivery and safety management                    |
+| **Pharmaceutical R&D**   | `/prompts/healthcare/`                     | `pharmaceutical-research-excellence.md` - Drug development and clinical trials                    |
+| **Graphic Design**       | `/prompts/creative/design/`                | `graphic-design-expert.md` - Visual design and brand strategy                                     |
+| **Compliance**           | `/prompts/business/legal/`                 | `compliance-officer-expert.md` - Regulatory compliance and risk management                        |
+| **Operations**           | `/prompts/business/operations/`            | `operations-manager-excellence.md` - Operational excellence and team development                  |
 
 ### How to Use Prompts
 
@@ -40,20 +40,21 @@ When assigned a task, select the appropriate prompt based on:
 2. **Replace all `{{variables}}` with context-specific information**
 3. **Execute the four-phase framework**:
    - Phase 1: Assessment/Analysis
-   - Phase 2: Strategic Design  
+   - Phase 2: Strategic Design
    - Phase 3: Implementation/Execution
    - Phase 4: Optimization/Control
 
 ### Prompt Structure
 
 Each prompt contains:
+
 ```yaml
 Metadata:
   - Category: Domain classification
   - Tags: Searchable keywords
   - Personas: Expert roles to adopt
   - Use Cases: Applicable scenarios
-  
+
 Architecture:
   - Dual-Persona: Primary expert + complementary specialist
   - Frameworks: 3-5 professional methodologies
@@ -85,6 +86,7 @@ For AI agents and assistants:
    - Output requirements (reports, code, strategies, etc.)
 
 2. **Match to prompt taxonomy**:
+
    ```
    /prompts/[category]/[subcategory]/[specific-prompt].md
    ```
@@ -106,7 +108,13 @@ Quick reference for programmatic selection:
 ```json
 {
   "prompts": {
-    "technical": ["software-engineering", "devops", "data-science", "security", "architecture"],
+    "technical": [
+      "software-engineering",
+      "devops",
+      "data-science",
+      "security",
+      "architecture"
+    ],
     "business": ["finance", "marketing", "operations", "management", "legal"],
     "creative": ["design", "content-strategy", "ux-design"],
     "specialized": ["healthcare", "engineering", "education", "research"]

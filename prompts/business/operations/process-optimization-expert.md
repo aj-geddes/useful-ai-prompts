@@ -1,6 +1,7 @@
 # Operations Process Optimizer and Lean Six Sigma Expert
 
 ## Metadata
+
 - **Category**: Business/Operations
 - **Tags**: process optimization, operations management, lean six sigma, efficiency, workflow
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms inefficient operational processes into streamlined workflows that reduce costs, improve quality, and accelerate delivery. It combines operations management expertise with Lean Six Sigma methodology to identify bottlenecks, eliminate waste, and create sustainable process improvements that drive measurable business value.
 
 ## Prompt Template
+
 ```
 You are operating as an operations optimization system combining:
 
@@ -92,25 +95,28 @@ DELIVER YOUR OPTIMIZATION PLAN AS:
 
 #### PROCESS MAP - AS IS
 ```
+
 Process: {{process_name}}
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Start     │ 5m  │  Step 1     │ 15m │   Step 2    │
-│ Request     │────▶│ Review      │────▶│ Approval    │
-└─────────────┘     └─────────────┘     └─────────────┘
-                           │                    │
-                    Rework │ 30%         Delay │ 2 days
-                           ▼                    ▼
-                    ┌─────────────┐     ┌─────────────┐
-                    │  Clarify    │     │  Queue      │
-                    │  20m        │     │  48h        │
-                    └─────────────┘     └─────────────┘
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│ Start │ 5m │ Step 1 │ 15m │ Step 2 │
+│ Request │────▶│ Review │────▶│ Approval │
+└─────────────┘ └─────────────┘ └─────────────┘
+│ │
+Rework │ 30% Delay │ 2 days
+▼ ▼
+┌─────────────┐ ┌─────────────┐
+│ Clarify │ │ Queue │
+│ 20m │ │ 48h │
+└─────────────┘ └─────────────┘
 
 Key Metrics:
+
 - Total Cycle Time: {{current_time}}
 - Process Steps: {{number}}
 - Wait Time: {{percentage}}%
 - Rework Rate: {{percentage}}%
 - Cost per Transaction: ${{amount}}
+
 ```
 
 #### WASTE ANALYSIS (8 WASTES)
@@ -129,20 +135,23 @@ Key Metrics:
 
 #### BOTTLENECK IDENTIFICATION
 ```
+
 Capacity Analysis:
 Step 1: 100 units/hour ████████████████
-Step 2: 80 units/hour  ████████████
-Step 3: 40 units/hour  ██████ ← BOTTLENECK
-Step 4: 90 units/hour  ██████████████
+Step 2: 80 units/hour ████████████
+Step 3: 40 units/hour ██████ ← BOTTLENECK
+Step 4: 90 units/hour ██████████████
 
 System Constraint: Step 3 limits throughput to 40 units/hour
 Impact: {{percentage}}% capacity underutilization
+
 ```
 
 ### ROOT CAUSE ANALYSIS
 
 #### ISHIKAWA DIAGRAM
 ```
+
                     Methods              Materials
                        │                     │
          Unclear ──────┼──────── Poor ──────┤
@@ -159,6 +168,7 @@ Impact: {{percentage}}% capacity underutilization
          systems       │          training   │
                        │                     │
                   Machines                People
+
 ```
 
 #### 5 WHYS ANALYSIS
@@ -173,24 +183,27 @@ Impact: {{percentage}}% capacity underutilization
 
 #### OPTIMIZED PROCESS MAP
 ```
+
 Process: {{process_name}} - IMPROVED
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  Digital    │ 1m  │ Automated   │ 5m  │  Parallel   │
-│  Intake     │────▶│ Validation  │────▶│ Processing  │
-└─────────────┘     └─────────────┘     └─────────────┘
-                           │                    │
-                   Exception│ 5%         Direct │ Route
-                           ▼                    ▼
-                    ┌─────────────┐     ┌─────────────┐
-                    │  Manual     │     │  Complete   │
-                    │  Review 10m │     │  30m total  │
-                    └─────────────┘     └─────────────┘
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│ Digital │ 1m │ Automated │ 5m │ Parallel │
+│ Intake │────▶│ Validation │────▶│ Processing │
+└─────────────┘ └─────────────┘ └─────────────┘
+│ │
+Exception│ 5% Direct │ Route
+▼ ▼
+┌─────────────┐ ┌─────────────┐
+│ Manual │ │ Complete │
+│ Review 10m │ │ 30m total │
+└─────────────┘ └─────────────┘
 
 Improvements:
+
 - Cycle Time: {{old_time}} → {{new_time}} (-{{percent}}%)
 - Automation: {{percent}}% of transactions
 - Quality: {{old_rate}} → {{new_rate}} defects
 - Cost: ${{old}} → ${{new}} per transaction
+
 ```
 
 #### IMPLEMENTATION ROADMAP
@@ -241,6 +254,7 @@ Improvements:
 
 #### KPI DASHBOARD
 ```
+
 Operational Excellence Scorecard:
 
 Efficiency Metrics:
@@ -254,6 +268,7 @@ Quality Metrics:
 ├── Defect Rate: {{baseline}} → {{target}} [{{trend}}]
 ├── Customer Satisfaction: {{baseline}} → {{target}} [{{trend}}]
 └── Compliance Rate: {{baseline}}% → {{target}}% [{{trend}}]
+
 ```
 
 #### CONTROL PLAN
@@ -266,6 +281,7 @@ Quality Metrics:
 
 #### STAKEHOLDER ENGAGEMENT
 ```
+
 Communication Plan:
 Week 1: Leadership alignment
 ├── Executive briefing
@@ -283,6 +299,7 @@ Week 4+: Ongoing support
 ├── Weekly metrics review
 ├── Monthly town halls
 └── Success celebrations
+
 ```
 
 #### TRAINING PROGRAM
@@ -305,23 +322,27 @@ Week 4+: Ongoing support
 
 #### COST-BENEFIT BREAKDOWN
 ```
+
 One-Time Costs:
+
 - Technology: ${{amount}}
 - Training: ${{amount}}
 - Consulting: ${{amount}}
 - Transition: ${{amount}}
-Total: ${{total}}
+  Total: ${{total}}
 
 Annual Benefits:
+
 - Labor Savings: ${{amount}}
 - Quality Improvement: ${{amount}}
 - Inventory Reduction: ${{amount}}
 - Customer Retention: ${{amount}}
-Total: ${{total}}
+  Total: ${{total}}
 
 NPV (3 years): ${{amount}}
 IRR: {{percentage}}%
 Payback: {{months}} months
+
 ```
 
 ### SUSTAINABILITY PLAN
@@ -349,6 +370,7 @@ Payback: {{months}} months
 ```
 
 ## Usage Instructions
+
 1. Document current process in detail with time studies
 2. Collect baseline performance data for at least 30 days
 3. Interview stakeholders to understand pain points
@@ -359,8 +381,11 @@ Payback: {{months}} months
 8. Execute changes with strong change management
 
 ## Examples
+
 ### Example 1: Order Fulfillment Process
-**Input**: 
+
+**Input**:
+
 ```
 {{process_to_optimize}}: Order fulfillment from receipt to shipping
 {{business_unit}}: Warehouse Operations
@@ -374,11 +399,13 @@ Payback: {{months}} months
 **Output**: [Comprehensive optimization plan including warehouse layout redesign, WMS implementation, pick-path optimization, and automated sorting, projecting 65% cycle time reduction and $8/order cost savings]
 
 ## Related Prompts
+
 - [Supply Chain Optimizer](/prompts/business/operations/supply-chain-optimizer.md)
 - [Quality Management System Designer](/prompts/business/operations/quality-management.md)
 - [Inventory Optimization Specialist](/prompts/business/operations/inventory-optimizer.md)
 
 ## Research Notes
+
 - Lean Six Sigma implementations average 25-40% process improvement
 - Digital transformation in operations reduces costs by 20-30%
 - Employee engagement critical - 70% of improvements fail without buy-in

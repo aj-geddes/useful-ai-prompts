@@ -1,6 +1,7 @@
 # Prioritization Frameworks Expert and Strategic Ranking Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: prioritization frameworks, strategic ranking, resource allocation, decision matrices, priority management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert prioritization methodology with strategic ranking specialization to create systematic frameworks for ranking options, allocating resources, and making priority decisions that maximize value and achieve strategic objectives. It employs proven prioritization techniques, decision science principles, and strategic alignment methods to ensure optimal resource allocation and priority setting.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise prioritization framework system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR PRIORITIZATION FRAMEWORK STRATEGY AS:
 **Strategic Objective**: Increase customer retention while accelerating new customer acquisition
 
 **Prioritization Challenges**:
+
 - **Stakeholder Conflicts**: Sales wants enterprise features, support wants bug fixes, marketing wants user experience improvements
 - **Technical Debt**: Platform stability issues requiring maintenance work that doesn't directly add customer value
 - **Customer Diversity**: Small business and enterprise customers with different needs and value expectations
@@ -94,6 +98,7 @@ DELIVER YOUR PRIORITIZATION FRAMEWORK STRATEGY AS:
 - **Resource Limitations**: Fixed development capacity with competing priorities and limited specialized expertise
 
 **Prioritization Success Criteria**:
+
 - Clear priority ranking with stakeholder alignment and transparent rationale
 - Balanced portfolio addressing customer retention, acquisition, and platform health
 - Resource allocation optimization maximizing business value and customer satisfaction
@@ -106,6 +111,7 @@ DELIVER YOUR PRIORITIZATION FRAMEWORK STRATEGY AS:
 Deploy multi-framework prioritization approach using weighted scoring models and value-effort analysis to create balanced feature portfolio that optimizes customer value delivery while maintaining platform health and supporting strategic business objectives.
 
 **Strategic Ranking Approach**:
+
 - **Customer Value Focus**: Feature prioritization based on customer impact and satisfaction improvement
 - **Business Alignment**: Strategic objective weighting with revenue impact and competitive positioning consideration
 - **Technical Health Balance**: Platform stability and technical debt management integrated with feature development
@@ -113,6 +119,7 @@ Deploy multi-framework prioritization approach using weighted scoring models and
 - **Adaptive Framework**: Regular priority reassessment with market feedback and strategic adjustment capability
 
 **Strategic Prioritization Principles**:
+
 1. **Customer-Centric Value**: Customer satisfaction and retention prioritized over internal convenience
 2. **Strategic Alignment**: Business objective support driving priority weighting and evaluation criteria
 3. **Balanced Portfolio**: Feature development, platform health, and technical debt management balanced
@@ -120,6 +127,7 @@ Deploy multi-framework prioritization approach using weighted scoring models and
 5. **Agile Adaptation**: Regular priority review and adjustment based on customer feedback and market changes
 
 **Expected Prioritization Outcomes**:
+
 - Optimized development roadmap with highest value feature delivery and customer satisfaction
 - Stakeholder alignment with clear priority rationale and transparent decision-making process
 - Balanced platform development with feature advancement and technical health maintenance
@@ -133,6 +141,7 @@ Deploy multi-framework prioritization approach using weighted scoring models and
 **Internal Stakeholder Priority Analysis**:
 
 **Sales Team Requirements (25% influence weight)**:
+
 ```
 Primary Value Drivers:
 • Deal Enablement: Features that remove sales obstacles and accelerate deal closure
@@ -148,12 +157,13 @@ High-Priority Feature Categories:
 
 Success Metrics:
 • Sales cycle reduction and deal velocity improvement
-• Average deal size increase and contract value expansion  
+• Average deal size increase and contract value expansion
 • Win rate improvement in competitive situations
 • Customer expansion revenue and upsell opportunity creation
 ```
 
 **Customer Success Team Requirements (30% influence weight)**:
+
 ```
 Primary Value Drivers:
 • Customer Retention: Features that improve customer satisfaction and reduce churn
@@ -175,6 +185,7 @@ Success Metrics:
 ```
 
 **Product Marketing Requirements (20% influence weight)**:
+
 ```
 Primary Value Drivers:
 • Market Positioning: Features that strengthen competitive positioning and market differentiation
@@ -196,6 +207,7 @@ Success Metrics:
 ```
 
 **Engineering Team Requirements (25% influence weight)**:
+
 ```
 Primary Value Drivers:
 • Technical Debt Management: Platform stability and maintainability improvement
@@ -221,6 +233,7 @@ Success Metrics:
 **Comprehensive Scoring Criteria Development**:
 
 **Customer Impact Assessment (35% total weight)**:
+
 ```
 Customer Value Metrics (20%):
 Customer Satisfaction Improvement:
@@ -237,6 +250,7 @@ Customer Retention Impact (15%):
 ```
 
 **Business Value Assessment (30% total weight)**:
+
 ```
 Revenue Impact (20%):
 • Direct revenue generation through new customer acquisition and expansion
@@ -252,6 +266,7 @@ Strategic Alignment (10%):
 ```
 
 **Implementation Feasibility (20% total weight)**:
+
 ```
 Development Effort (12%):
 • Engineering complexity and development time requirement assessment
@@ -267,6 +282,7 @@ Technical Risk (8%):
 ```
 
 **Competitive Necessity (15% total weight)**:
+
 ```
 Market Requirement (10%):
 • Feature parity requirement with competitive positioning maintenance
@@ -288,6 +304,7 @@ Time Sensitivity (5%):
 **Framework 1: Value vs. Effort Matrix Analysis**:
 
 **High-Value, Low-Effort (Quick Wins) - Tier 1 Priority**:
+
 ```
 Feature: Enhanced User Onboarding Flow
 • Customer Impact Score: 8.5/10 (High retention impact, addresses #1 customer pain point)
@@ -312,6 +329,7 @@ Feature: Advanced Export Capabilities
 ```
 
 **High-Value, High-Effort (Strategic Investments) - Tier 2 Priority**:
+
 ```
 Feature: Enterprise SSO Integration
 • Customer Impact Score: 9.0/10 (Critical for enterprise customer acquisition)
@@ -338,6 +356,7 @@ Feature: API Platform Expansion
 **Framework 2: MoSCoW Classification**:
 
 **Must Have (Critical for Business Success)**:
+
 ```
 • Platform Performance Optimization
   - Rationale: Customer churn risk due to performance issues
@@ -356,6 +375,7 @@ Feature: API Platform Expansion
 ```
 
 **Should Have (Important for Competitive Position)**:
+
 ```
 • Enhanced User Onboarding
   - Rationale: Conversion rate improvement and customer success acceleration
@@ -383,60 +403,60 @@ class FeaturePrioritizationEngine:
         self.stakeholder_weights = stakeholder_weights
         self.criteria = evaluation_criteria
         self.scoring_model = WeightedScoringModel()
-        
+
     def calculate_feature_priority_score(self, feature):
         """Comprehensive feature evaluation with multiple stakeholder perspectives"""
-        
+
         stakeholder_scores = {}
         for stakeholder, weight in self.stakeholder_weights.items():
             stakeholder_scores[stakeholder] = self.evaluate_stakeholder_value(feature, stakeholder)
-        
+
         criteria_scores = {}
         for criterion, weight in self.criteria.items():
             criteria_scores[criterion] = self.evaluate_criterion(feature, criterion)
-        
+
         # Calculate weighted composite score
         stakeholder_composite = sum(
-            score * self.stakeholder_weights[stakeholder] 
+            score * self.stakeholder_weights[stakeholder]
             for stakeholder, score in stakeholder_scores.items()
         )
-        
+
         criteria_composite = sum(
             score * self.criteria[criterion]
             for criterion, score in criteria_scores.items()
         )
-        
+
         # Risk adjustment
         risk_factor = self.calculate_risk_adjustment(feature)
-        
+
         final_score = (stakeholder_composite * 0.6 + criteria_composite * 0.4) * risk_factor
-        
+
         return {
             'final_score': final_score,
             'stakeholder_breakdown': stakeholder_scores,
             'criteria_breakdown': criteria_scores,
             'risk_adjustment': risk_factor
         }
-    
+
     def evaluate_stakeholder_value(self, feature, stakeholder):
         """Assess feature value from specific stakeholder perspective"""
-        
+
         stakeholder_criteria = {
             'sales': ['deal_enablement', 'competitive_advantage', 'demo_value'],
             'customer_success': ['retention_impact', 'support_reduction', 'adoption_improvement'],
             'marketing': ['acquisition_value', 'positioning_strength', 'conversion_impact'],
             'engineering': ['technical_health', 'development_efficiency', 'maintenance_reduction']
         }
-        
+
         scores = []
         for criterion in stakeholder_criteria[stakeholder]:
             scores.append(getattr(feature, criterion + '_score'))
-        
+
         return sum(scores) / len(scores)
-    
+
     def create_priority_ranking(self, feature_list):
         """Generate final priority ranking with tier classification"""
-        
+
         scored_features = []
         for feature in feature_list:
             score_data = self.calculate_feature_priority_score(feature)
@@ -445,30 +465,30 @@ class FeaturePrioritizationEngine:
                 'score': score_data['final_score'],
                 'details': score_data
             })
-        
+
         # Sort by score and assign tiers
         scored_features.sort(key=lambda x: x['score'], reverse=True)
-        
+
         tier_boundaries = [0.8, 0.6, 0.4]  # Tier 1, 2, 3 thresholds
         for i, item in enumerate(scored_features):
             item['rank'] = i + 1
             item['tier'] = self.assign_tier(item['score'], tier_boundaries)
-        
+
         return scored_features
 ```
 
 **Final Priority Ranking Results**:
 
-| Rank | Feature | Score | Tier | Rationale |
-|------|---------|-------|------|-----------|
-| 1 | Enhanced User Onboarding | 8.7 | 1 | High customer impact, low risk, immediate revenue impact |
-| 2 | Platform Performance Optimization | 8.5 | 1 | Critical for retention, must-have for competitive position |
-| 3 | Mobile-Responsive Dashboard | 8.2 | 1 | Strong customer demand, manageable implementation |
-| 4 | Security Compliance Enhancement | 8.0 | 1 | Enterprise requirement, regulatory necessity |
-| 5 | Advanced Export Capabilities | 7.8 | 2 | Good customer value, straightforward implementation |
-| 6 | Enterprise SSO Integration | 7.5 | 2 | High business value, complex implementation |
-| 7 | Advanced Analytics Dashboard | 7.2 | 2 | Strategic value, significant development effort |
-| 8 | API Platform Expansion | 6.8 | 2 | Future value, high complexity and risk |
+| Rank | Feature                           | Score | Tier | Rationale                                                  |
+| ---- | --------------------------------- | ----- | ---- | ---------------------------------------------------------- |
+| 1    | Enhanced User Onboarding          | 8.7   | 1    | High customer impact, low risk, immediate revenue impact   |
+| 2    | Platform Performance Optimization | 8.5   | 1    | Critical for retention, must-have for competitive position |
+| 3    | Mobile-Responsive Dashboard       | 8.2   | 1    | Strong customer demand, manageable implementation          |
+| 4    | Security Compliance Enhancement   | 8.0   | 1    | Enterprise requirement, regulatory necessity               |
+| 5    | Advanced Export Capabilities      | 7.8   | 2    | Good customer value, straightforward implementation        |
+| 6    | Enterprise SSO Integration        | 7.5   | 2    | High business value, complex implementation                |
+| 7    | Advanced Analytics Dashboard      | 7.2   | 2    | Strategic value, significant development effort            |
+| 8    | API Platform Expansion            | 6.8   | 2    | Future value, high complexity and risk                     |
 
 ### VALIDATION AND IMPLEMENTATION PLANNING
 
@@ -477,6 +497,7 @@ class FeaturePrioritizationEngine:
 **Priority Validation Framework**:
 
 **Stakeholder Review Process**:
+
 ```
 Sales Team Validation Session:
 • Priority ranking review with deal impact assessment and sales cycle analysis
@@ -498,6 +519,7 @@ Engineering Team Technical Review:
 ```
 
 **Priority Adjustment and Consensus Building**:
+
 ```
 Stakeholder Feedback Integration Results:
 
@@ -529,6 +551,7 @@ Consensus Priority Ranking (Final):
 **Quarterly Implementation Planning**:
 
 **Q1 Implementation Plan (January-March)**:
+
 ```
 Sprint 1-2: Enhanced User Onboarding (6 weeks)
 • Team: 2 Frontend Engineers, 1 UX Designer, 1 Backend Engineer
@@ -544,6 +567,7 @@ Sprint 3-4: Platform Performance Optimization (6 weeks)
 ```
 
 **Q2 Implementation Plan (April-June)**:
+
 ```
 Sprint 5-6: Enterprise SSO Integration (6 weeks)
 • Team: 2 Backend Engineers, 1 Security Specialist, 1 Frontend Engineer
@@ -559,6 +583,7 @@ Sprint 7-8: Mobile-Responsive Dashboard (6 weeks)
 ```
 
 **Resource Allocation and Monitoring Framework**:
+
 ```
 Development Capacity Allocation:
 • Feature Development: 70% (14 engineers across priority features)
@@ -579,6 +604,7 @@ Priority Adjustment Process:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive stakeholder analysis to understand diverse requirements and influence levels
 2. Develop weighted evaluation criteria that balance multiple value dimensions and strategic objectives
 3. Apply multiple prioritization frameworks to validate rankings and identify optimal priority sequence
@@ -589,8 +615,11 @@ Priority Adjustment Process:
 8. Plan regular review cycles with market feedback integration and strategic alignment validation
 
 ## Examples
+
 ### Example 1: IT Infrastructure Investment Prioritization
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_scope}}: Technology infrastructure investments for digital transformation initiative
 {{stakeholder_complexity}}: Multiple IT teams, business units, and executive leadership with competing priorities
@@ -602,7 +631,9 @@ Priority Adjustment Process:
 **Output**: [Infrastructure investment prioritization with cost-benefit analysis, risk assessment, and implementation sequencing]
 
 ### Example 2: Marketing Campaign Priority Ranking
+
 **Input**:
+
 ```
 {{decision_scope}}: Marketing campaign portfolio optimization for limited budget and resource allocation
 {{stakeholder_complexity}}: Marketing team, sales team, and executive leadership with different channel preferences
@@ -614,11 +645,13 @@ Priority Adjustment Process:
 **Output**: [Marketing campaign prioritization with ROI optimization, audience targeting, and resource allocation strategy]
 
 ## Related Prompts
+
 - [Option Evaluation Expert](/prompts/decision-making/option-evaluation.md)
 - [Resource Allocation Decision Expert](/prompts/decision-making/resource-allocation-decisions.md)
 - [Strategic Direction Setting Expert](/prompts/decision-making/strategic-direction-setting.md)
 
 ## Research Notes
+
 - Based on decision science research and multi-criteria analysis methodology
 - Integrates stakeholder management theory with systematic priority evaluation
 - Emphasizes transparent process design with collaborative consensus building

@@ -1,6 +1,7 @@
 # Strategic Product Roadmap Generator with Prioritization Framework
 
 ## Metadata
+
 - **Category**: Business/Product Management
 - **Tags**: product roadmap, prioritization, strategy, product management, planning
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt generates comprehensive product roadmaps that balance user needs, business objectives, and technical constraints. It employs multiple prioritization frameworks and strategic thinking to create roadmaps that are both ambitious and achievable, with clear rationale for every decision and built-in flexibility for market changes.
 
 ## Prompt Template
+
 ```
 You are operating as a strategic product planning system combining:
 
@@ -143,7 +146,7 @@ DELIVER YOUR ROADMAP AS:
 1. **{{initiative_name}}**
    - Description: {{detailed_description}}
    - User Story: As a {{user_type}}, I want to {{goal}} so that {{benefit}}
-   - Success Metrics: 
+   - Success Metrics:
      - {{metric_1}}: Target {{value}}
      - {{metric_2}}: Target {{value}}
    - Dependencies: {{technical_or_resource_deps}}
@@ -173,15 +176,18 @@ DELIVER YOUR ROADMAP AS:
 
 #### TEAM ALLOCATION
 ```
+
          Phase 1    Phase 2    Phase 3
-Frontend    3          4          3
-Backend     4          3          4
-Mobile      2          3          2
-Data        1          2          2
-Design      2          2          1
-QA          2          2          2
-Total FTE   14         16         14
-```
+
+Frontend 3 4 3
+Backend 4 3 4
+Mobile 2 3 2
+Data 1 2 2
+Design 2 2 1
+QA 2 2 2
+Total FTE 14 16 14
+
+````
 
 #### INVESTMENT BREAKDOWN
 - Core Features: 60%
@@ -199,36 +205,41 @@ graph LR
     D --> F[Partner Integration]
     G[Analytics Pipeline] --> C
     G --> H[ML Features]
-```
+````
 
 ### SUCCESS METRICS & OKRS
 
 #### OBJECTIVE 1: {{objective}}
+
 **Key Results**:
+
 - KR1: {{measurable_result}} from X to Y
 - KR2: {{measurable_result}} by Z%
 - KR3: Launch {{specific_deliverable}}
 
 #### OBJECTIVE 2: {{objective}}
+
 [Similar structure]
 
 ### RISK MITIGATION
 
-| Risk | Probability | Impact | Mitigation Strategy | Owner |
-|------|-------------|---------|-------------------|--------|
-| {{risk_1}} | High | High | {{mitigation}} | {{owner}} |
-| {{risk_2}} | Medium | High | {{mitigation}} | {{owner}} |
-| {{risk_3}} | Low | Medium | {{mitigation}} | {{owner}} |
+| Risk       | Probability | Impact | Mitigation Strategy | Owner     |
+| ---------- | ----------- | ------ | ------------------- | --------- |
+| {{risk_1}} | High        | High   | {{mitigation}}      | {{owner}} |
+| {{risk_2}} | Medium      | High   | {{mitigation}}      | {{owner}} |
+| {{risk_3}} | Low         | Medium | {{mitigation}}      | {{owner}} |
 
 ### COMMUNICATION PLAN
 
 #### STAKEHOLDER UPDATES
+
 - **Executive Team**: Monthly strategic reviews
 - **Engineering**: Bi-weekly planning sessions
 - **Sales/Marketing**: Monthly roadmap syncs
 - **Customer Success**: Weekly feedback loops
 
 #### EXTERNAL COMMUNICATION
+
 - **User Announcement**: {{timing_and_channel}}
 - **Beta Program**: {{selection_criteria}}
 - **Developer Community**: {{api_timeline}}
@@ -236,29 +247,36 @@ graph LR
 ### FLEXIBILITY & PIVOT POINTS
 
 #### DECISION GATES
+
 1. **End of Phase 1**: Evaluate {{metric}} to decide on {{decision}}
 2. **Mid Phase 2**: Review {{condition}} for potential pivot
 3. **Quarterly**: Assess market changes and adjust priorities
 
 #### PIVOT SCENARIOS
+
 **Scenario A**: If {{condition}}, then {{adjustment}}
 **Scenario B**: If {{condition}}, then {{adjustment}}
 
 ### APPENDIX: DETAILED REQUIREMENTS
 
 #### {{FEATURE_1}} SPECIFICATIONS
+
 **User Stories**:
+
 - As a {{user}}, I want to {{action}} so that {{outcome}}
 - As a {{user}}, I want to {{action}} so that {{outcome}}
 
 **Acceptance Criteria**:
+
 - [ ] {{specific_criterion}}
 - [ ] {{specific_criterion}}
 - [ ] {{specific_criterion}}
 
 **Technical Considerations**:
+
 - {{consideration_1}}
 - {{consideration_2}}
+
 ```
 
 ## Usage Instructions
@@ -272,8 +290,9 @@ graph LR
 
 ## Examples
 ### Example 1: B2B SaaS Platform Roadmap
-**Input**: 
+**Input**:
 ```
+
 {{product_name}}: CloudSync Pro
 {{product_stage}}: Growth (5K customers, $2M ARR)
 {{market_position}}: #3 in file synchronization for enterprises
@@ -284,6 +303,7 @@ graph LR
 {{team_size_budget}}: 15 engineers, 3 designers, $500K quarterly budget
 {{planning_period}}: Next 12 months (4 quarters)
 {{company_objectives}}: Achieve $5M ARR, become #2 in market share
+
 ```
 
 **Output**: [Comprehensive roadmap with phased approach to enterprise features, security enhancements, and collaboration tools]
@@ -299,3 +319,4 @@ graph LR
 - Kano model integration based on Japanese quality management
 - OKR alignment following Google's implementation patterns
 - Flexibility mechanisms inspired by Amazon's Working Backwards process
+```

@@ -27,15 +27,15 @@ def select_prompt(user_request: str) -> str:
     """
     # Step 1: Extract key indicators
     indicators = extract_indicators(user_request)
-    
+
     # Step 2: Match against prompt taxonomy
     category = match_category(indicators)
     subcategory = match_subcategory(indicators, category)
-    
+
     # Step 3: Score specific prompts
     candidates = load_prompts(category, subcategory)
     scores = score_prompts(candidates, indicators)
-    
+
     # Step 4: Return best match
     return select_best_match(scores)
 ```
@@ -127,17 +127,17 @@ TASK_TO_PROMPT_MAP = {
     "analyze financial performance": "financial-analysis-expert",
     "create financial projections": "financial-analysis-expert",
     "evaluate investment": "financial-analysis-expert",
-    
+
     # Development tasks
     "build web application": "fullstack-developer-architect",
     "optimize code performance": "fullstack-developer-architect",
     "design system architecture": "fullstack-developer-architect",
-    
+
     # Security tasks
     "security assessment": "cybersecurity-defense-architect",
     "incident response": "cybersecurity-defense-architect",
     "design secure architecture": "cybersecurity-defense-architect",
-    
+
     # Business analysis
     "gather requirements": "business-analyst-strategic-excellence",
     "process improvement": "business-analyst-strategic-excellence",
@@ -154,11 +154,11 @@ def semantic_match(user_request: str) -> str:
     """
     # Generate embedding for user request
     request_embedding = generate_embedding(user_request)
-    
+
     # Compare against prompt description embeddings
     prompt_embeddings = load_prompt_embeddings()
     similarities = compute_similarities(request_embedding, prompt_embeddings)
-    
+
     # Return highest similarity match
     return get_best_match(similarities)
 ```
@@ -172,13 +172,13 @@ def multi_stage_selection(user_request: str) -> str:
     """
     # Stage 1: Broad category
     category = classify_category(user_request)
-    
+
     # Stage 2: Specific domain
     domain = classify_domain(user_request, category)
-    
+
     # Stage 3: Task type
     task_type = classify_task_type(user_request, domain)
-    
+
     # Stage 4: Select specific prompt
     return select_prompt_by_criteria(category, domain, task_type)
 ```
@@ -203,7 +203,7 @@ domain_specific:
     - architecture_type: "System architecture"
     - performance_requirements: "Performance targets"
     - security_requirements: "Security standards"
-    
+
   business:
     - market_conditions: "Current market state"
     - competition: "Competitive landscape"
@@ -220,7 +220,7 @@ def extract_variables(user_request: str, prompt_template: str) -> dict:
     """
     variables = {}
     required_vars = extract_template_variables(prompt_template)
-    
+
     for var in required_vars:
         # Try multiple extraction methods
         value = (
@@ -230,7 +230,7 @@ def extract_variables(user_request: str, prompt_template: str) -> dict:
             request_from_user(var)
         )
         variables[var] = value
-    
+
     return variables
 ```
 
@@ -246,19 +246,19 @@ class PromptExecutor:
         """
         # Prepare prompt with variables
         prepared_prompt = self.inject_variables(prompt, variables)
-        
+
         # Phase 1: Assessment/Analysis
         assessment = self.execute_phase1(prepared_prompt)
-        
+
         # Phase 2: Strategic Design
         strategy = self.execute_phase2(assessment)
-        
+
         # Phase 3: Implementation/Execution
         implementation = self.execute_phase3(strategy)
-        
+
         # Phase 4: Optimization/Control
         optimization = self.execute_phase4(implementation)
-        
+
         # Compile structured output
         return self.compile_output([
             assessment,
@@ -278,27 +278,27 @@ output_structure:
     - key_findings: "Top 3-5 insights"
     - recommendations: "Primary actions"
     - impact_assessment: "Expected outcomes"
-    
+
   detailed_analysis:
     - current_state: "Comprehensive assessment"
     - gap_analysis: "Identified gaps"
     - root_causes: "Underlying issues"
-    
+
   strategic_plan:
     - objectives: "SMART goals"
     - strategies: "Approach for each objective"
     - tactics: "Specific actions"
-    
+
   implementation_roadmap:
     - phases: "Breakdown by timeline"
     - milestones: "Key deliverables"
     - resources: "Required resources"
-    
+
   risk_management:
     - risk_assessment: "Identified risks"
     - mitigation_strategies: "Risk responses"
     - contingency_plans: "Backup approaches"
-    
+
   metrics_and_monitoring:
     - kpis: "Key performance indicators"
     - dashboards: "Monitoring approach"
@@ -320,7 +320,7 @@ endpoints:
         - complexity: "Filter by complexity level"
       response:
         - prompts: "Array of prompt metadata"
-        
+
   /prompts/{prompt_id}:
     GET:
       description: "Get specific prompt"
@@ -328,7 +328,7 @@ endpoints:
         - metadata: "Prompt metadata"
         - template: "Prompt template"
         - variables: "Required variables"
-        
+
   /match:
     POST:
       description: "Find best matching prompt"
@@ -339,7 +339,7 @@ endpoints:
         - prompt_id: "Best matching prompt"
         - confidence: "Match confidence score"
         - alternatives: "Other potential matches"
-        
+
   /execute:
     POST:
       description: "Execute prompt with variables"
@@ -360,12 +360,12 @@ class PromptCache:
         self.prompt_cache = {}
         self.embedding_cache = {}
         self.result_cache = LRUCache(maxsize=1000)
-    
+
     def get_prompt(self, prompt_id: str) -> str:
         if prompt_id not in self.prompt_cache:
             self.prompt_cache[prompt_id] = load_prompt_from_disk(prompt_id)
         return self.prompt_cache[prompt_id]
-    
+
     def cache_result(self, request_hash: str, result: str):
         self.result_cache[request_hash] = {
             'result': result,
@@ -383,7 +383,7 @@ def batch_process_requests(requests: List[dict]) -> List[dict]:
     """
     # Group by prompt type
     grouped = group_by_prompt(requests)
-    
+
     # Process each group
     results = []
     for prompt_id, group_requests in grouped.items():
@@ -392,7 +392,7 @@ def batch_process_requests(requests: List[dict]) -> List[dict]:
             variables = extract_variables(request)
             result = execute_prompt(prompt, variables)
             results.append(result)
-    
+
     return results
 ```
 
@@ -448,18 +448,18 @@ def validate_prompt(prompt_path: str) -> bool:
     Validate prompt meets quality standards.
     """
     prompt = load_prompt(prompt_path)
-    
+
     # Check structure
     assert has_metadata_section(prompt)
     assert has_dual_personas(prompt)
     assert has_four_phases(prompt)
     assert has_frameworks(prompt, min_count=3)
-    
+
     # Check output
     test_output = execute_with_test_data(prompt)
     assert len(test_output.splitlines()) >= 350
     assert has_all_sections(test_output)
-    
+
     return True
 ```
 
@@ -472,16 +472,16 @@ def validate_prompt(prompt_path: str) -> bool:
 def handle_slack_command(command_text: str, user_id: str) -> str:
     # Parse request
     request = parse_slack_command(command_text)
-    
+
     # Select appropriate prompt
     prompt_id = select_prompt(request)
-    
+
     # Extract variables from context
     variables = extract_variables_from_slack_context(request, user_id)
-    
+
     # Execute prompt
     result = execute_prompt(prompt_id, variables)
-    
+
     # Format for Slack
     return format_for_slack(result)
 ```
@@ -492,15 +492,15 @@ def handle_slack_command(command_text: str, user_id: str) -> str:
 @app.route('/api/ai-assist', methods=['POST'])
 def ai_assist():
     data = request.json
-    
+
     # Authenticate
     if not authenticate_request(request.headers):
         return jsonify({'error': 'Unauthorized'}), 401
-    
+
     # Process request
     prompt_id = data.get('prompt_id') or select_prompt(data['request'])
     variables = data.get('variables', {})
-    
+
     # Execute
     try:
         result = execute_prompt(prompt_id, variables)
@@ -527,10 +527,10 @@ METRICS_TO_TRACK = {
     'modification_rate': 'How often outputs need editing'
 }
 
-def track_execution(prompt_id: str, execution_time: float, 
+def track_execution(prompt_id: str, execution_time: float,
                    user_feedback: Optional[int] = None):
     metrics.increment('prompt_usage', tags={'prompt': prompt_id})
-    metrics.histogram('execution_time', execution_time, 
+    metrics.histogram('execution_time', execution_time,
                      tags={'prompt': prompt_id})
     if user_feedback:
         metrics.gauge('user_satisfaction', user_feedback,
@@ -549,16 +549,16 @@ def validate_user_input(request: str, variables: dict) -> bool:
     # Check request length
     if len(request) > MAX_REQUEST_LENGTH:
         raise ValueError("Request too long")
-    
+
     # Sanitize variables
     for key, value in variables.items():
         if not is_safe_value(value):
             raise ValueError(f"Unsafe value for {key}")
-    
+
     # Check for injection attempts
     if has_injection_patterns(request):
         raise SecurityError("Potential injection detected")
-    
+
     return True
 ```
 
@@ -571,26 +571,26 @@ from time import time
 def rate_limit(max_calls: int = 100, window: int = 3600):
     def decorator(func):
         calls = {}
-        
+
         @wraps(func)
         def wrapper(user_id: str, *args, **kwargs):
             now = time()
-            
+
             # Clean old entries
             calls[user_id] = [
                 timestamp for timestamp in calls.get(user_id, [])
                 if now - timestamp < window
             ]
-            
+
             # Check rate limit
             if len(calls[user_id]) >= max_calls:
                 raise RateLimitError("Rate limit exceeded")
-            
+
             # Track call
             calls[user_id].append(now)
-            
+
             return func(user_id, *args, **kwargs)
-        
+
         return wrapper
     return decorator
 ```
@@ -668,16 +668,16 @@ def enable_debug_mode():
     Enable detailed logging for troubleshooting.
     """
     logging.basicConfig(level=logging.DEBUG)
-    
+
     # Log prompt selection process
     log_prompt_selection = True
-    
+
     # Log variable extraction
     log_variable_extraction = True
-    
+
     # Log execution phases
     log_execution_phases = True
-    
+
     # Save intermediate results
     save_debug_output = True
 ```

@@ -1,11 +1,12 @@
 # Bandit Security Analysis Prompt
 
 ## Overview
+
 Comprehensive prompt for analyzing bandit security scan reports and automatically implementing fixes with full MCP integration.
 
 ## The Prompt
 
-```
+````
 You are a security-focused Python developer tasked with analyzing a bandit security scan report and implementing comprehensive fixes. Follow this systematic approach:
 
 ## Phase 1: Analysis & Intelligence Gathering
@@ -66,9 +67,10 @@ if user_input.strip() in allowed_functions:
     pass
 else:
     raise ValueError("Unsafe operation not allowed")
-```
+````
 
 #### B501 - request_with_no_cert_validation
+
 ```python
 # BEFORE (Vulnerable)
 import requests
@@ -90,6 +92,7 @@ response = session.get(url, verify=True, timeout=30)
 ```
 
 #### B506 - yaml_load
+
 ```python
 # BEFORE (Vulnerable)
 import yaml
@@ -103,6 +106,7 @@ data = yaml.load(input_data, Loader=yaml.SafeLoader)
 ```
 
 #### B602 - subprocess_popen_with_shell_equals_true
+
 ```python
 # BEFORE (Vulnerable)
 import subprocess
@@ -123,6 +127,7 @@ subprocess.call(command_parts, shell=False, timeout=30)
 ```
 
 ### 8. File Updates
+
 - Use edit_file for targeted security fixes
 - Maintain code functionality while improving security
 - Add security comments explaining the changes
@@ -131,18 +136,21 @@ subprocess.call(command_parts, shell=False, timeout=30)
 ## Phase 4: Validation & Documentation
 
 ### 9. Security Testing
+
 - Run bandit scan again to verify fixes
 - Execute any existing security tests
 - Test edge cases and error conditions
 - Verify no new vulnerabilities introduced
 
 ### 10. Documentation Creation
+
 Create comprehensive security documentation:
 
 ```markdown
 # Security Analysis Report
 
 ## Executive Summary
+
 - **Total Issues Found**: {count}
 - **High Severity**: {high_count}
 - **Medium Severity**: {medium_count}
@@ -153,25 +161,31 @@ Create comprehensive security documentation:
 ## Vulnerability Analysis
 
 ### High Priority Issues
+
 {detailed_analysis_of_high_severity}
 
 ### Fix Implementation
+
 {before_after_code_examples}
 
 ### Security Improvements
+
 {list_of_security_enhancements}
 
 ## Recommendations
+
 1. Implement automated security scanning in CI/CD
 2. Add security-focused code review checklist
 3. Regular dependency updates and vulnerability monitoring
 4. Security training for development team
 
 ## Monitoring & Maintenance
+
 {ongoing_security_practices}
 ```
 
 ### 11. CI/CD Integration
+
 - Update GitHub Actions workflow for security scanning
 - Add bandit configuration file (pyproject.toml or .bandit)
 - Configure security gates in deployment pipeline
@@ -180,18 +194,21 @@ Create comprehensive security documentation:
 ## Phase 5: Knowledge Management & Continuous Improvement
 
 ### 12. Memory Updates
+
 - Store security patterns and fixes in memory
 - Document lessons learned and best practices
 - Create relationships between vulnerability types and solutions
 - Update security knowledge base
 
 ### 13. Artifact Creation
+
 - Create security checklist artifact
 - Generate secure coding guidelines
 - Develop security testing templates
 - Create incident response procedures
 
 Expected Deliverables:
+
 1. **Cleaned Codebase**: All security issues addressed
 2. **Security Report**: Comprehensive analysis and fixes
 3. **Updated CI/CD**: Integrated security scanning
@@ -199,6 +216,7 @@ Expected Deliverables:
 5. **Monitoring**: Ongoing security tracking
 
 Success Criteria:
+
 - Zero high-severity bandit findings
 - Documented remediation for all medium/low findings
 - Automated security scanning in place
@@ -206,6 +224,7 @@ Success Criteria:
 - Reproducible security improvement process
 
 Remember: Security is not a one-time fix but an ongoing process. Implement continuous monitoring and improvement practices.
+
 ```
 
 ## Key Security Focus Areas
@@ -238,3 +257,4 @@ Remember: Security is not a one-time fix but an ongoing process. Implement conti
 
 ## Tags
 `security` `bandit` `vulnerability-analysis` `python` `static-analysis` `automation` `compliance`
+```

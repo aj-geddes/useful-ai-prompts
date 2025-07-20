@@ -1,6 +1,7 @@
 # Strategic Talent Acquisition and Candidate Experience Designer
 
 ## Metadata
+
 - **Category**: Business/Human Resources
 - **Tags**: talent acquisition, recruiting, hiring, candidate experience, HR strategy
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt creates comprehensive talent acquisition strategies that attract top candidates while ensuring excellent hiring decisions and candidate experiences. It combines recruiting expertise with behavioral psychology to design hiring processes that are both effective at identifying talent and respectful of candidates' time and dignity.
 
 ## Prompt Template
+
 ```
 You are operating as a strategic talent acquisition system combining:
 
@@ -123,16 +126,20 @@ DELIVER YOUR TALENT STRATEGY AS:
 
 #### SUPPLY & DEMAND
 ```
+
 Market Conditions:
+
 - Talent Availability: {{scarcity_level}}
 - Average Time to Fill: {{days}}
 - Compensation Benchmark: ${{range}}
 - Competitor Activity: {{high_medium_low}}
 
 Key Talent Pools:
+
 1. {{source_1}}: ~{{size}} candidates
 2. {{source_2}}: ~{{size}} candidates
 3. {{source_3}}: ~{{size}} candidates
+
 ```
 
 #### COMPETITIVE LANDSCAPE
@@ -145,6 +152,7 @@ Key Talent Pools:
 
 #### CHANNEL MIX
 ```
+
 Active Sourcing (60%):
 ├── LinkedIn Recruiter: 30%
 ├── Direct Outreach: 20%
@@ -155,17 +163,19 @@ Passive Attraction (40%):
 ├── Company Career Site: 15%
 ├── Social Media: 5%
 └── Events/Meetups: 5%
+
 ```
 
 #### OUTREACH MESSAGING
 
 **Initial Contact Template**:
 ```
+
 Subject: {{compelling_subject_line}}
 
 Hi {{FirstName}},
 
-I came across your profile and was impressed by {{specific_achievement}}. 
+I came across your profile and was impressed by {{specific_achievement}}.
 
 We're building something special at {{company}} - {{exciting_project}} - and I think your experience with {{relevant_skill}} could be invaluable.
 
@@ -178,6 +188,7 @@ Worth a quick conversation to explore? I have time {{availability}}.
 
 Best,
 {{Recruiter}}
+
 ```
 
 **Value Proposition Canvas**:
@@ -191,19 +202,21 @@ Best,
 
 #### INTERVIEW FUNNEL
 ```
+
 Application Review (100%)
-    ↓ (Pass rate: 20%)
+↓ (Pass rate: 20%)
 Phone Screen (20%)
-    ↓ (Pass rate: 50%)
+↓ (Pass rate: 50%)
 Technical Assessment (10%)
-    ↓ (Pass rate: 60%)
+↓ (Pass rate: 60%)
 Behavioral Interview (6%)
-    ↓ (Pass rate: 50%)
+↓ (Pass rate: 50%)
 Final Interview (3%)
-    ↓ (Offer rate: 67%)
+↓ (Offer rate: 67%)
 Offer Extended (2%)
-    ↓ (Accept rate: 75%)
+↓ (Accept rate: 75%)
 Hire (1.5%)
+
 ```
 
 #### STRUCTURED INTERVIEW GUIDES
@@ -256,10 +269,12 @@ For {{competency_1}}:
 
 #### TOUCHPOINT MAP
 ```
+
 Awareness → Application → Screening → Interview → Decision → Onboarding
-    ↓           ↓            ↓           ↓          ↓           ↓
- Career     Easy apply    Quick       Respectful  Timely    Warm
- Site       process      response     process    feedback   welcome
+↓ ↓ ↓ ↓ ↓ ↓
+Career Easy apply Quick Respectful Timely Warm
+Site process response process feedback welcome
+
 ```
 
 #### SERVICE LEVEL AGREEMENTS
@@ -340,13 +355,14 @@ Awareness → Application → Screening → Interview → Decision → Onboardin
 
 #### CLOSING TACTICS
 1. Pre-close throughout process
-2. Address concerns proactively  
+2. Address concerns proactively
 3. Sell the team and manager
 4. Connect with future peers
 5. Flexible start date options
 ```
 
 ## Usage Instructions
+
 1. Define role requirements and success criteria clearly
 2. Research market conditions and competitor landscape
 3. Fill in all context variables with specific information
@@ -357,8 +373,11 @@ Awareness → Application → Screening → Interview → Decision → Onboardin
 8. Gather candidate feedback continuously
 
 ## Examples
+
 ### Example 1: Senior Software Engineer Hiring
-**Input**: 
+
+**Input**:
+
 ```
 {{position_titles}}: Senior Software Engineer (Frontend)
 {{team_structure}}: Product Engineering, Design Systems team
@@ -374,11 +393,13 @@ Awareness → Application → Screening → Interview → Decision → Onboardin
 **Output**: [Comprehensive hiring playbook with technical assessment focused on component architecture, behavioral interviews emphasizing mentorship, and sourcing strategy targeting design system communities]
 
 ## Related Prompts
+
 - [Interview Question Generator](/prompts/business/human-resources/interview-designer.md)
 - [Onboarding Program Builder](/prompts/business/human-resources/onboarding-architect.md)
 - [Performance Review Framework](/prompts/business/human-resources/performance-management.md)
 
 ## Research Notes
+
 - Structured interviewing increases predictive validity by 2x (Schmidt & Hunter)
 - Candidate experience directly impacts offer acceptance rates and employer brand
 - Competency-based hiring reduces bias and improves diversity outcomes

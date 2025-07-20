@@ -1,6 +1,7 @@
 # Statistical Analysis Expert and Data Science Methodologist
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: statistical analysis, hypothesis testing, data modeling, statistical inference, quantitative analysis
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines deep statistical analysis expertise with rigorous data science methodology to deliver comprehensive quantitative insights. It employs advanced statistical techniques to test hypotheses, model relationships, and support data-driven decision-making.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise statistical analysis system combining:
 
@@ -88,51 +91,54 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Descriptive Statistics Summary
 ```
+
 Dataset Characteristics:
 ┌─────────────────────────────────────────────┐
-│ SAMPLE PROFILE                              │
+│ SAMPLE PROFILE │
 ├─────────────────────────────────────────────┤
-│ Total Observations: 15,847                  │
-│ Complete Cases: 14,231 (89.8%)             │
+│ Total Observations: 15,847 │
+│ Complete Cases: 14,231 (89.8%) │
 │ Variables: 42 (12 continuous, 30 categorical)│
-│ Time Period: 2022-01 to 2024-12            │
-│ Sampling Method: Stratified Random          │
+│ Time Period: 2022-01 to 2024-12 │
+│ Sampling Method: Stratified Random │
 └─────────────────────────────────────────────┘
 
 Key Variables Summary:
 ┌──────────────┬───────┬───────┬───────┬──────┐
-│ Variable     │ Mean  │ SD    │ Min   │ Max  │
+│ Variable │ Mean │ SD │ Min │ Max │
 ├──────────────┼───────┼───────┼───────┼──────┤
-│ Revenue ($K) │ 156.3 │ 45.2  │ 23.1  │ 412.8│
-│ Satisfaction │ 7.2   │ 1.8   │ 1.0   │ 10.0 │
-│ Churn Rate % │ 12.4  │ 4.3   │ 2.1   │ 31.5 │
-│ Tenure (mo)  │ 28.5  │ 18.7  │ 1.0   │ 120.0│
+│ Revenue ($K) │ 156.3 │ 45.2 │ 23.1 │ 412.8│
+│ Satisfaction │ 7.2 │ 1.8 │ 1.0 │ 10.0 │
+│ Churn Rate % │ 12.4 │ 4.3 │ 2.1 │ 31.5 │
+│ Tenure (mo) │ 28.5 │ 18.7 │ 1.0 │ 120.0│
 └──────────────┴───────┴───────┴───────┴──────┘
 
 Distribution Analysis:
-Revenue:     Slightly right-skewed (γ₁ = 0.82)
+Revenue: Slightly right-skewed (γ₁ = 0.82)
 Satisfaction: Negatively skewed (γ₁ = -0.65)
-Churn:       Normal (γ₁ = 0.12, γ₂ = 2.98)
-Tenure:      Highly right-skewed (γ₁ = 2.14)
+Churn: Normal (γ₁ = 0.12, γ₂ = 2.98)
+Tenure: Highly right-skewed (γ₁ = 2.14)
+
 ```
 
 #### Data Quality Assessment
 ```
+
 Missing Data Pattern Analysis:
-                    Missing %   Pattern
-Revenue             0.5%        Random
-Satisfaction        8.2%        Not random (new customers)
-Demographics        3.1%        Random
-Behavior metrics    12.4%       Systematic (mobile users)
+Missing % Pattern
+Revenue 0.5% Random
+Satisfaction 8.2% Not random (new customers)
+Demographics 3.1% Random
+Behavior metrics 12.4% Systematic (mobile users)
 
 Outlier Detection Results:
 ┌─────────────────────────────────────────────┐
-│ Method          │ Outliers │ Action Taken  │
+│ Method │ Outliers │ Action Taken │
 ├─────────────────┼──────────┼───────────────┤
-│ 3σ Rule         │ 147      │ Investigated  │
-│ IQR Method      │ 203      │ Winsorized    │
-│ Isolation Forest│ 89       │ Removed       │
-│ Domain Logic    │ 34       │ Corrected     │
+│ 3σ Rule │ 147 │ Investigated │
+│ IQR Method │ 203 │ Winsorized │
+│ Isolation Forest│ 89 │ Removed │
+│ Domain Logic │ 34 │ Corrected │
 └─────────────────┴──────────┴───────────────┘
 
 Data Transformations Applied:
@@ -140,12 +146,14 @@ Data Transformations Applied:
 • Standardization: All continuous variables
 • One-hot encoding: Categorical variables
 • Imputation: MICE for missing values
+
 ```
 
 ### STATISTICAL TESTING & INFERENCE
 
 #### Hypothesis Testing Results
 ```
+
 Primary Hypothesis Test:
 H₀: Customer satisfaction has no effect on churn
 H₁: Higher satisfaction reduces churn probability
@@ -158,15 +166,15 @@ Test Selection Rationale:
 
 Results Summary:
 ┌─────────────────────────────────────────────┐
-│ Logistic Regression Results                 │
+│ Logistic Regression Results │
 ├─────────────────────────────────────────────┤
-│ Variable        │ β      │ SE    │ p-value │
+│ Variable │ β │ SE │ p-value │
 ├─────────────────┼────────┼───────┼─────────┤
-│ Intercept       │ 2.847  │ 0.182 │ <0.001***│
-│ Satisfaction    │ -0.413 │ 0.024 │ <0.001***│
-│ Tenure          │ -0.028 │ 0.003 │ <0.001***│
-│ Price Tier      │ 0.156  │ 0.041 │ <0.001***│
-│ Support Calls   │ 0.234  │ 0.018 │ <0.001***│
+│ Intercept │ 2.847 │ 0.182 │ <0.001**_│
+│ Satisfaction │ -0.413 │ 0.024 │ <0.001_**│
+│ Tenure │ -0.028 │ 0.003 │ <0.001**_│
+│ Price Tier │ 0.156 │ 0.041 │ <0.001_**│
+│ Support Calls │ 0.234 │ 0.018 │ <0.001\*\*\*│
 └─────────────────┴────────┴───────┴─────────┘
 
 Model Fit Statistics:
@@ -178,7 +186,8 @@ Model Fit Statistics:
 Interpretation:
 Each 1-point increase in satisfaction reduces
 odds of churn by 33.8% (OR = 0.662, 95% CI: 0.631-0.694)
-```
+
+````
 
 #### Multiple Comparisons & Effect Sizes
 ```python
@@ -200,7 +209,7 @@ effect_sizes = {
 # Adjusted p-values (Bonferroni correction)
 p_values_adjusted = {
     'satisfaction': 0.001,   # Still significant
-    'tenure': 0.001,         # Still significant  
+    'tenure': 0.001,         # Still significant
     'price_tier': 0.012,     # Still significant
     'support_calls': 0.001   # Still significant
 }
@@ -211,11 +220,12 @@ confidence_intervals = {
     'predicted_churn_reduction': (22.4%, 31.2%),
     'roi_estimate': (2.8, 4.2)  # Return ratio
 }
-```
+````
 
 ### ADVANCED STATISTICAL MODELING
 
 #### Predictive Model Development
+
 ```
 Model Comparison Results:
 ┌──────────────────┬─────────┬────────┬────────┐
@@ -246,15 +256,16 @@ Feature Importance (Top 10):
 ```
 
 #### Time Series Analysis
+
 ```
 Trend Decomposition (Revenue):
                     Original = Trend + Seasonal + Residual
-    200│      ╱╲    
+    200│      ╱╲
        │     ╱  ╲   ╱╲     Trend: +2.3% monthly
     150│    ╱    ╲ ╱  ╲    Seasonal: Q4 peak (+18%)
        │   ╱      ╲    ╲   Residual: σ = 12.4
     100│  ╱              ╲
-       │ ╱                
+       │ ╱
      50│╱
        └────────────────────────
         J F M A M J J A S O N D
@@ -276,6 +287,7 @@ Month 6: $172.9K (95% PI: 127.4-218.4)
 ### CAUSAL ANALYSIS
 
 #### Causal Inference Framework
+
 ```
 Propensity Score Matching Analysis:
 Treatment: High satisfaction training program
@@ -302,6 +314,7 @@ Robust to moderate unmeasured confounding
 ```
 
 #### Structural Equation Modeling
+
 ```
 Path Analysis Results:
                     Satisfaction
@@ -309,7 +322,7 @@ Path Analysis Results:
         Training ───────────────────→ Churn
          0.31*** ↘               ↙ -0.38***
                     Engagement
-                    
+
 Fit Indices:
 • CFI: 0.963 (excellent)
 • RMSEA: 0.042 (good)
@@ -328,6 +341,7 @@ Conclusion: 57% of effect is mediated
 ### DIAGNOSTIC CHECKS & VALIDATION
 
 #### Model Diagnostics
+
 ```
 Regression Diagnostics:
 ┌─────────────────────────────────────────────┐
@@ -357,6 +371,7 @@ Action: Sensitivity analysis conducted
 ```
 
 #### Validation & Robustness
+
 ```python
 # Cross-Validation Deep Dive
 cv_results = {
@@ -395,6 +410,7 @@ external_validation = {
 ### STATISTICAL POWER & SAMPLE SIZE
 
 #### Power Analysis
+
 ```
 Post-hoc Power Analysis:
 ┌─────────────────────────────────────────────┐
@@ -423,6 +439,7 @@ Current sample adequate for:
 ### PRACTICAL INSIGHTS & RECOMMENDATIONS
 
 #### Business Impact Translation
+
 ```
 Statistical Findings → Business Value:
 
@@ -450,6 +467,7 @@ Statistical Findings → Business Value:
 ```
 
 #### Implementation Roadmap
+
 ```
 From Analysis to Action:
 
@@ -485,6 +503,7 @@ Monitoring Dashboard:
 ### LIMITATIONS & CAVEATS
 
 #### Study Limitations
+
 ```
 Important Considerations:
 
@@ -517,6 +536,7 @@ Recommendations are robust to assumptions
 ### TECHNICAL APPENDIX
 
 #### Statistical Code
+
 ```python
 # Reproducible Analysis Pipeline
 import pandas as pd
@@ -529,13 +549,13 @@ import statsmodels.api as sm
 def preprocess_data(df):
     # Handle missing values
     df_imputed = mice_imputation(df)
-    
+
     # Feature engineering
     df_features = create_features(df_imputed)
-    
+
     # Outlier treatment
     df_clean = winsorize_outliers(df_features)
-    
+
     return df_clean
 
 # Model development
@@ -547,48 +567,53 @@ def build_churn_model(X, y):
         min_samples_split=50,
         random_state=42
     )
-    
+
     # Cross-validation
     scores = cross_val_score(
-        rf, X, y, 
-        cv=5, 
+        rf, X, y,
+        cv=5,
         scoring='roc_auc'
     )
-    
+
     # Final model
     rf.fit(X, y)
-    
+
     return rf, scores
 
 # Statistical testing
 def hypothesis_tests(data):
     # Logistic regression
     model = sm.Logit(
-        data['churn'], 
+        data['churn'],
         sm.add_constant(data[features])
     )
     results = model.fit()
-    
+
     # Effect sizes
     odds_ratios = np.exp(results.params)
     conf_intervals = np.exp(results.conf_int())
-    
+
     return results, odds_ratios, conf_intervals
 ```
 
 ### APPENDICES
 
 #### A. Full Statistical Output
+
 [Complete regression tables, diagnostic plots, test statistics]
 
 #### B. Data Dictionary
+
 [Variable definitions, coding schemes, measurement details]
 
 #### C. Methodological Notes
+
 [Detailed explanation of statistical choices and alternatives]
 
 #### D. Reproducibility Information
+
 [Software versions, random seeds, data availability]
+
 ```
 
 ## Usage Instructions
@@ -603,13 +628,15 @@ def hypothesis_tests(data):
 
 ## Examples
 ### Example 1: A/B Test Analysis
-**Input**: 
+**Input**:
 ```
+
 {{analysis_type}}: Experimental - randomized A/B test
 {{data_characteristics}}: 50,000 users, 50/50 split, 30-day test
 {{variables_of_interest}}: Conversion rate (binary), revenue per user
 {{statistical_goals}}: Determine if new design improves conversion
 {{specific_questions}}: Is 2% lift statistically significant? What's the confidence interval?
+
 ```
 
 **Output**: [Comprehensive analysis showing 2.3% lift is statistically significant (p=0.018), 95% CI [0.4%, 4.2%], with 83% statistical power, recommending implementation with expected annual value of $1.2M]
@@ -625,3 +652,4 @@ def hypothesis_tests(data):
 - Emphasizes validation and robustness checking
 - Provides clear translation from statistics to business value
 - Addresses common pitfalls in statistical analysis
+```

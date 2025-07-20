@@ -1,6 +1,7 @@
 # Technical Documentation Expert and Information Architecture Specialist
 
 ## Metadata
+
 - **Category**: Communication
 - **Tags**: technical documentation, information architecture, technical writing, knowledge management, documentation strategy
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert technical documentation skills with information architecture specialization to create comprehensive, user-centered documentation that enables effective knowledge transfer and product adoption. It employs proven documentation frameworks, usability principles, and content strategy to maximize documentation effectiveness.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise technical documentation system combining:
 
@@ -86,6 +89,7 @@ DELIVER YOUR DOCUMENTATION STRATEGY AS:
 **Scope**: 50+ API endpoints, SDKs, developer tools, and integration guides
 
 **Current Documentation Issues**:
+
 - **Fragmented Information**: Documentation scattered across 6 different platforms
 - **Inconsistent Quality**: Varying detail levels and outdated information
 - **Poor Discoverability**: Developers struggle to find relevant information quickly
@@ -93,6 +97,7 @@ DELIVER YOUR DOCUMENTATION STRATEGY AS:
 - **No Learning Path**: No clear progression from beginner to advanced usage
 
 **Target Audience Analysis**:
+
 - **Backend Developers** (40%): Integration-focused, need complete API references
 - **Frontend Developers** (30%): UI integration, need quick-start guides and examples
 - **DevOps Engineers** (20%): Deployment and configuration, need operational guides
@@ -104,6 +109,7 @@ DELIVER YOUR DOCUMENTATION STRATEGY AS:
 Design and implement comprehensive documentation ecosystem using information architecture principles and user-centered design to create seamless developer experience that accelerates adoption and reduces support burden.
 
 **Information Architecture Approach**:
+
 - **User-Centered Design**: Documentation structure based on developer workflows and mental models
 - **Progressive Disclosure**: Layered information architecture from overview to detailed implementation
 - **Task-Oriented Organization**: Content organized around user goals rather than system structure
@@ -111,6 +117,7 @@ Design and implement comprehensive documentation ecosystem using information arc
 - **Community Integration**: Documentation that encourages and incorporates community contributions
 
 **Strategic Documentation Principles**:
+
 1. **Clarity Over Completeness**: Focus on essential information presented clearly
 2. **Examples Before Explanations**: Lead with practical implementation examples
 3. **Searchable and Scannable**: Optimize for quick information discovery
@@ -118,6 +125,7 @@ Design and implement comprehensive documentation ecosystem using information arc
 5. **Accessible and Inclusive**: Universal design for diverse developer audiences
 
 **Expected Documentation Outcomes**:
+
 - 60% reduction in developer time-to-first-integration
 - 40% decrease in support ticket volume
 - 85% improvement in documentation satisfaction scores
@@ -131,6 +139,7 @@ Design and implement comprehensive documentation ecosystem using information arc
 **Primary Developer Personas:**
 
 **Backend Integration Developer - "Alex"**
+
 - **Experience Level**: 5-8 years backend development
 - **Primary Goals**: Rapid API integration, reliable implementation, troubleshooting support
 - **Pain Points**: Incomplete API specifications, lack of error handling examples, unclear authentication flows
@@ -138,6 +147,7 @@ Design and implement comprehensive documentation ecosystem using information arc
 - **Preferred Format**: Code-first examples, detailed API references, troubleshooting guides
 
 **Frontend SDK Developer - "Jordan"**
+
 - **Experience Level**: 3-6 years frontend development
 - **Primary Goals**: Quick SDK setup, UI component integration, responsive implementation
 - **Pain Points**: Complex setup procedures, unclear configuration options, limited UI examples
@@ -145,6 +155,7 @@ Design and implement comprehensive documentation ecosystem using information arc
 - **Preferred Format**: Interactive examples, visual guides, sandbox environments
 
 **DevOps Implementation Engineer - "Sam"**
+
 - **Experience Level**: 7-12 years infrastructure and deployment
 - **Primary Goals**: Reliable deployment, monitoring setup, security configuration, scalability planning
 - **Pain Points**: Incomplete deployment guides, unclear infrastructure requirements, missing monitoring examples
@@ -156,24 +167,28 @@ Design and implement comprehensive documentation ecosystem using information arc
 **Developer Journey Stages:**
 
 **Discovery & Evaluation (Week 1)**
+
 - **Information Needs**: Product overview, capabilities, use cases, getting started
 - **Documentation Types**: Product overview, feature comparison, quick-start tutorial
 - **Success Metrics**: Clear value proposition understanding, feasibility assessment completed
 - **Content Strategy**: High-level conceptual content with practical use case examples
 
 **Initial Implementation (Weeks 2-3)**
+
 - **Information Needs**: Setup procedures, basic configuration, simple integration examples
 - **Documentation Types**: Installation guides, basic tutorials, "Hello World" examples
 - **Success Metrics**: Successful environment setup, first API call completed
 - **Content Strategy**: Step-by-step procedural content with validation checkpoints
 
 **Advanced Integration (Weeks 4-8)**
+
 - **Information Needs**: Complex use cases, advanced features, optimization techniques
 - **Documentation Types**: Advanced guides, best practices, architecture patterns
 - **Success Metrics**: Production-ready implementation, performance optimization
 - **Content Strategy**: Solution-oriented content with real-world implementation examples
 
 **Production & Optimization (Ongoing)**
+
 - **Information Needs**: Troubleshooting, monitoring, scaling, security hardening
 - **Documentation Types**: Operations guides, troubleshooting references, security documentation
 - **Success Metrics**: Reliable production operation, effective issue resolution
@@ -186,44 +201,52 @@ Design and implement comprehensive documentation ecosystem using information arc
 **Four Documentation Types Integration:**
 
 **1. Tutorials (Learning-Oriented)**
+
 - **Purpose**: Guide newcomers through first successful experience
 - **Structure**: Step-by-step learning paths with clear outcomes
 - **Content Strategy**: Hands-on practical learning with immediate feedback
 
 **Tutorial Architecture:**
+
 - **Getting Started Tutorial**: 15-minute first API call experience
 - **Integration Patterns Tutorial**: Common implementation patterns with guided practice
 - **Advanced Features Tutorial**: Progressive skill building for complex scenarios
 - **Best Practices Tutorial**: Professional implementation techniques and optimization
 
 **2. How-To Guides (Goal-Oriented)**
+
 - **Purpose**: Show how to solve specific problems
 - **Structure**: Problem-solution format with practical steps
 - **Content Strategy**: Task-focused content addressing real-world scenarios
 
 **How-To Guide Categories:**
+
 - **Authentication & Security**: OAuth implementation, API key management, secure practices
 - **Data Management**: CRUD operations, batch processing, data transformation
 - **Error Handling**: Recovery strategies, debugging techniques, monitoring setup
 - **Performance Optimization**: Caching strategies, rate limiting, efficient API usage
 
 **3. Reference (Information-Oriented)**
+
 - **Purpose**: Provide comprehensive technical specifications
 - **Structure**: Systematic coverage of all features and functions
 - **Content Strategy**: Complete, accurate technical information with searchable organization
 
 **Reference Documentation Structure:**
+
 - **API Reference**: Complete endpoint documentation with interactive examples
 - **SDK Reference**: Method documentation with code examples and parameters
 - **Configuration Reference**: All configuration options with default values and examples
 - **Error Reference**: Complete error codes with causes and resolution steps
 
 **4. Explanation (Understanding-Oriented)**
+
 - **Purpose**: Clarify concepts and design decisions
 - **Structure**: Topic-based explanations with context and reasoning
 - **Content Strategy**: Conceptual understanding that bridges theory and practice
 
 **Explanation Content Areas:**
+
 - **Architecture Overview**: System design and component relationships
 - **Design Principles**: API design philosophy and decision rationale
 - **Integration Patterns**: Common architectural patterns and trade-offs
@@ -234,24 +257,28 @@ Design and implement comprehensive documentation ecosystem using information arc
 **Hierarchical Information Architecture:**
 
 **Level 1: Product Overview**
+
 - Product introduction and value proposition
 - Feature overview and capabilities
 - Getting started and quick wins
 - Community and support resources
 
 **Level 2: Implementation Guides**
+
 - **By User Type**: Role-specific entry points and learning paths
 - **By Use Case**: Solution-oriented content for common scenarios
 - **By Technology**: Platform and language-specific implementation guides
 - **By Complexity**: Progressive complexity from basic to advanced
 
 **Level 3: Detailed References**
+
 - **API Documentation**: Complete endpoint references with examples
 - **SDK Documentation**: Language-specific implementation details
 - **Configuration Guides**: Detailed setup and customization options
 - **Troubleshooting**: Diagnostic and resolution procedures
 
 **Level 4: Advanced Topics**
+
 - **Architecture Patterns**: Enterprise integration and scaling strategies
 - **Security Deep Dive**: Advanced security implementation and compliance
 - **Performance Optimization**: Advanced tuning and monitoring techniques
@@ -283,7 +310,7 @@ docs-repository:
       - architecture/
       - design-principles/
       - security-model/
-  
+
   infrastructure:
     templates:
       - page-templates/
@@ -293,7 +320,7 @@ docs-repository:
       - build-scripts/
       - testing-frameworks/
       - deployment-pipelines/
-    
+
   collaboration:
     workflows:
       - content-review-process/
@@ -304,24 +331,28 @@ docs-repository:
 **Content Development Workflow:**
 
 **Phase 1: Content Planning and Research**
+
 - User research and needs analysis
 - Content gap identification and prioritization
 - SME interviews and technical validation
 - Content outline and structure definition
 
 **Phase 2: Content Creation and Review**
+
 - Structured writing using content templates
 - Technical accuracy review with subject matter experts
 - Editorial review for clarity and consistency
 - User testing with target developer personas
 
 **Phase 3: Publication and Integration**
+
 - Content integration with navigation and cross-references
 - SEO optimization and metadata management
 - Accessibility validation and inclusive design review
 - Publication workflow with version control
 
 **Phase 4: Maintenance and Optimization**
+
 - Usage analytics and feedback collection
 - Content performance monitoring and optimization
 - Regular accuracy reviews and updates
@@ -332,38 +363,48 @@ docs-repository:
 **Standardized Content Templates:**
 
 **API Endpoint Template:**
-```markdown
+
+````markdown
 # [HTTP Method] [Endpoint Name]
 
 ## Overview
+
 Brief description of endpoint purpose and use cases.
 
 ## Parameters
-| Parameter | Type | Required | Description | Example |
-|-----------|------|----------|-------------|---------|
-| param_name | string | Yes | Parameter description | "example_value" |
+
+| Parameter  | Type   | Required | Description           | Example         |
+| ---------- | ------ | -------- | --------------------- | --------------- |
+| param_name | string | Yes      | Parameter description | "example_value" |
 
 ## Request Example
+
 ```http
 [HTTP request example]
 ```
+````
 
 ## Response Example
+
 ```json
 [JSON response example]
 ```
 
 ## Error Handling
-| Status Code | Error Type | Description | Resolution |
-|-------------|------------|-------------|------------|
-| 400 | Bad Request | Invalid parameters | Check parameter format |
+
+| Status Code | Error Type  | Description        | Resolution             |
+| ----------- | ----------- | ------------------ | ---------------------- |
+| 400         | Bad Request | Invalid parameters | Check parameter format |
 
 ## Implementation Examples
+
 [Language-specific code examples]
 
 ## Related Endpoints
+
 - [Related endpoint links]
-```
+
+````
 
 **Tutorial Template:**
 ```markdown
@@ -391,7 +432,7 @@ Brief description of endpoint purpose and use cases.
 
 ## What's Next
 [Link to related tutorials or advanced topics]
-```
+````
 
 ### USER EXPERIENCE AND ACCESSIBILITY
 
@@ -400,12 +441,14 @@ Brief description of endpoint purpose and use cases.
 **Search and Findability Enhancement:**
 
 **Search Strategy Implementation:**
+
 - **Semantic Search**: Content tagging and relationship mapping for intelligent discovery
 - **Faceted Search**: Multi-dimensional filtering by user type, complexity, and topic
 - **Contextual Search**: Search results tailored to user journey stage and previous interactions
 - **Visual Search**: Code snippet and example-based search capabilities
 
 **Navigation and Information Architecture:**
+
 - **Progressive Disclosure**: Layered navigation that reveals complexity gradually
 - **Context-Aware Menus**: Navigation that adapts to user location and journey stage
 - **Cross-Reference System**: Automatic linking between related content with context
@@ -416,12 +459,14 @@ Brief description of endpoint purpose and use cases.
 **Universal Design Implementation:**
 
 **Content Accessibility Standards:**
+
 - **WCAG 2.1 AA Compliance**: Full accessibility standard adherence
 - **Screen Reader Optimization**: Semantic markup and descriptive text for assistive technology
 - **Keyboard Navigation**: Complete keyboard accessibility for all interactive elements
 - **Color and Contrast**: High contrast design with color-independent information conveyance
 
 **Inclusive Content Design:**
+
 - **Plain Language**: Clear, jargon-free writing accessible to non-native speakers
 - **Multiple Learning Styles**: Visual, auditory, and kinesthetic learning accommodations
 - **Cultural Sensitivity**: Inclusive examples and culturally neutral references
@@ -434,18 +479,21 @@ Brief description of endpoint purpose and use cases.
 **Key Performance Indicators (KPIs):**
 
 **User Success Metrics:**
+
 - **Task Completion Rate**: Percentage of users completing documentation-guided tasks
 - **Time to First Success**: Average time from documentation access to successful implementation
 - **Documentation Satisfaction**: User rating and feedback scores
 - **Return Usage Patterns**: Repeat visits and progressive engagement
 
 **Content Performance Metrics:**
+
 - **Page Performance**: Load times, bounce rates, and engagement duration
 - **Search Effectiveness**: Search success rates and query completion
 - **Content Gaps**: Identification of missing or insufficient information
 - **Community Engagement**: Contributions, feedback, and collaborative improvements
 
 **Business Impact Metrics:**
+
 - **Developer Adoption**: API usage growth and integration velocity
 - **Support Reduction**: Decrease in support ticket volume and complexity
 - **Community Growth**: Developer community size and engagement levels
@@ -456,12 +504,14 @@ Brief description of endpoint purpose and use cases.
 **Analytics-Driven Optimization:**
 
 **Data Collection Strategy:**
+
 - **User Behavior Analytics**: Heat mapping, scroll tracking, and interaction patterns
 - **Feedback Integration**: Continuous feedback collection with actionable insights
 - **Performance Monitoring**: Real-time performance tracking and optimization
 - **A/B Testing**: Content variation testing for optimal user experience
 
 **Improvement Iteration Process:**
+
 1. **Data Analysis**: Regular review of usage patterns and user feedback
 2. **Gap Identification**: Systematic identification of content and experience gaps
 3. **Hypothesis Formation**: Data-driven hypotheses for improvement opportunities
@@ -469,6 +519,7 @@ Brief description of endpoint purpose and use cases.
 5. **Optimization Integration**: Successful improvements integrated into standard practice
 
 ## Usage Instructions
+
 1. Begin with comprehensive user research and audience analysis to understand developer needs
 2. Design information architecture using progressive disclosure and task-oriented organization
 3. Implement Diátaxis framework with four documentation types for comprehensive coverage
@@ -479,8 +530,11 @@ Brief description of endpoint purpose and use cases.
 8. Maintain content currency and accuracy through systematic review and update processes
 
 ## Examples
+
 ### Example 1: API Documentation Overhaul
-**Input**: 
+
+**Input**:
+
 ```
 {{documentation_type}}: Comprehensive API documentation for payment processing platform
 {{audience_level}}: Mixed - from beginner integrators to advanced enterprise developers
@@ -492,7 +546,9 @@ Brief description of endpoint purpose and use cases.
 **Output**: [Complete API documentation strategy with regulatory compliance, security-first design, progressive learning paths, and enterprise-grade reference materials]
 
 ### Example 2: Developer Onboarding Experience
+
 **Input**:
+
 ```
 {{documentation_type}}: New developer onboarding and education platform
 {{technology_stack}}: Multi-platform SDK covering web, mobile, and server-side integrations
@@ -504,11 +560,13 @@ Brief description of endpoint purpose and use cases.
 **Output**: [Comprehensive onboarding experience with interactive tutorials, progressive skill building, automated validation, and community engagement systems]
 
 ## Related Prompts
+
 - [Knowledge Transfer Expert](/prompts/communication/knowledge-transfer.md)
 - [Technical Writing Specialist](/prompts/creation/technical-writing.md)
 - [User Experience Documentation Designer](/prompts/communication/ux-documentation.md)
 
 ## Research Notes
+
 - Based on information architecture principles and documentation usability research
 - Integrates Diátaxis framework with docs-as-code best practices
 - Emphasizes user-centered design with accessibility and inclusion principles

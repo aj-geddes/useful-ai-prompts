@@ -2,9 +2,9 @@
 
 To initiate scaffolding of a high-integrity FastMCP server instance, provide the following inputs:
 
-* **Application Context**: Clearly articulate the intended use case, including domain-specific workflows or automation tasks the server is expected to support.
-* **Toolset Definition**: Enumerate the categories of tools to be provisioned (e.g., semantic enrichment, system integration interfaces, orchestration triggers). Indicate whether each tool is stateless, stateful, or event-driven.
-* **Target API Corpus**: Supply the location(s) of technical specifications (e.g., OpenAPI, GraphQL schemas, or human-authored interface contracts) for any upstream or downstream APIs that the server will bind to.
+- **Application Context**: Clearly articulate the intended use case, including domain-specific workflows or automation tasks the server is expected to support.
+- **Toolset Definition**: Enumerate the categories of tools to be provisioned (e.g., semantic enrichment, system integration interfaces, orchestration triggers). Indicate whether each tool is stateless, stateful, or event-driven.
+- **Target API Corpus**: Supply the location(s) of technical specifications (e.g., OpenAPI, GraphQL schemas, or human-authored interface contracts) for any upstream or downstream APIs that the server will bind to.
 
 These directives will guide the precise formulation of tool declarations, input validation schemas, execution contexts, and prompt scaffolds in alignment with the system's operational semantics.
 
@@ -12,12 +12,12 @@ These directives will guide the precise formulation of tool declarations, input 
 
 ## Foundational Requirements
 
-* **Contractual Conformity**: The server must strictly comply with the FastMCP platform’s declarative constructs for registering tools, resources, and prompt interfaces.
-* **Security Formalism**: All externally-facing surfaces must incorporate path normalization, input sanitization, and bounded execution zones to mitigate attack surfaces.
-* **Concurrency Semantics**: All tool operations must be natively asynchronous, facilitating scalable event loop concurrency for I/O-bound routines.
-* **Container Integrity**: Deployment targets must use minimal, reproducible, and non-root Docker images instrumented with liveness and readiness probes.
-* **Error Taxonomy**: Use canonical fault classes (e.g., `MCPError`) with metadata to facilitate structured telemetry, debugging, and user-facing diagnostics.
-* **Environmental Configuration Discipline**: Externalize configuration parameters through environment variables, applying defensive defaults to ensure fault tolerance and testability.
+- **Contractual Conformity**: The server must strictly comply with the FastMCP platform’s declarative constructs for registering tools, resources, and prompt interfaces.
+- **Security Formalism**: All externally-facing surfaces must incorporate path normalization, input sanitization, and bounded execution zones to mitigate attack surfaces.
+- **Concurrency Semantics**: All tool operations must be natively asynchronous, facilitating scalable event loop concurrency for I/O-bound routines.
+- **Container Integrity**: Deployment targets must use minimal, reproducible, and non-root Docker images instrumented with liveness and readiness probes.
+- **Error Taxonomy**: Use canonical fault classes (e.g., `MCPError`) with metadata to facilitate structured telemetry, debugging, and user-facing diagnostics.
+- **Environmental Configuration Discipline**: Externalize configuration parameters through environment variables, applying defensive defaults to ensure fault tolerance and testability.
 
 ---
 
@@ -93,9 +93,9 @@ async def prompt_template(context: str = Field(description="Dynamic payload for 
 
 ## Feature Extensions (New)
 
-* **Type Enforcement Layer**: All tool inputs must implement Pydantic-backed schema definitions to facilitate runtime introspection and linting.
-* **Async Fault Isolation**: All asynchronous boundaries must be surrounded by timeout constraints and structured cancellation logic.
-* **Prompt Dynamism**: Prompt generation should accommodate runtime context fusion, memory references, or user-injected modifiers.
+- **Type Enforcement Layer**: All tool inputs must implement Pydantic-backed schema definitions to facilitate runtime introspection and linting.
+- **Async Fault Isolation**: All asynchronous boundaries must be surrounded by timeout constraints and structured cancellation logic.
+- **Prompt Dynamism**: Prompt generation should accommodate runtime context fusion, memory references, or user-injected modifiers.
 
 ---
 
@@ -199,11 +199,11 @@ config = Config()
 
 The following authoritative sources should guide development and runtime behavior:
 
-* [FastMCP Python SDK Reference](https://github.com/fastmcp/fastmcp-sdk-python)
-* [FastMCP Developer Guide](https://docs.fastmcp.dev/guide/server-development)
-* [FastMCP Prompt Specification](https://docs.fastmcp.dev/specs/prompts)
-* [FastMCP Tool and Resource Patterns](https://docs.fastmcp.dev/specs/tools-resources)
-* [FastMCP Containerization Best Practices](https://docs.fastmcp.dev/deployment/docker)
+- [FastMCP Python SDK Reference](https://github.com/fastmcp/fastmcp-sdk-python)
+- [FastMCP Developer Guide](https://docs.fastmcp.dev/guide/server-development)
+- [FastMCP Prompt Specification](https://docs.fastmcp.dev/specs/prompts)
+- [FastMCP Tool and Resource Patterns](https://docs.fastmcp.dev/specs/tools-resources)
+- [FastMCP Containerization Best Practices](https://docs.fastmcp.dev/deployment/docker)
 
 These resources should be ingested into the operational context by LLMs supporting autonomous configuration and validation.
 
@@ -213,35 +213,35 @@ These resources should be ingested into the operational context by LLMs supporti
 
 ### **Artifacts**
 
-* `fastmcp-server.md`: Architecture and deployment instructions
+- `fastmcp-server.md`: Architecture and deployment instructions
 
 ### **Configuration Interfaces**
 
-* `server.py`: Entrypoint logic for FastMCP service lifecycle
-* `mcp-config.yaml`: Runtime schema for operational parameters
+- `server.py`: Entrypoint logic for FastMCP service lifecycle
+- `mcp-config.yaml`: Runtime schema for operational parameters
 
 ### **Containerization Manifests**
 
-* `Dockerfile`: Hardened container declaration
-* `requirements.txt`: Version-locked dependency list
+- `Dockerfile`: Hardened container declaration
+- `requirements.txt`: Version-locked dependency list
 
 ---
 
 ## Evaluation Criteria
 
-* ✅ FastMCP initialization completes with all metadata validated
-* ✅ Tool definitions are typed, documented, and schema-enforced
-* ✅ All inputs are constrained and validated in local execution contexts
-* ✅ Timeout and error boundaries are consistently implemented
-* ✅ Docker image operates in non-root, health-verified context
-* ✅ Runtime environment is fully configurable via typed schema
+- ✅ FastMCP initialization completes with all metadata validated
+- ✅ Tool definitions are typed, documented, and schema-enforced
+- ✅ All inputs are constrained and validated in local execution contexts
+- ✅ Timeout and error boundaries are consistently implemented
+- ✅ Docker image operates in non-root, health-verified context
+- ✅ Runtime environment is fully configurable via typed schema
 
 ---
 
 ## Quality Standards
 
-* **Layered Security Enforcement**: Defense-in-depth model applied to all ingress points
-* **Telemetry Rigor**: All exceptions and anomalies must be logged using structured semantics
-* **Deterministic Build Workflow**: CI/CD processes must produce reproducible binaries and state artifacts
-* **Fault Resilience**: Tool failures should degrade predictably with full traceability
-* **Documentation Fidelity**: All exposed classes and functions must carry doctrinal docstrings for introspection and linting
+- **Layered Security Enforcement**: Defense-in-depth model applied to all ingress points
+- **Telemetry Rigor**: All exceptions and anomalies must be logged using structured semantics
+- **Deterministic Build Workflow**: CI/CD processes must produce reproducible binaries and state artifacts
+- **Fault Resilience**: Tool failures should degrade predictably with full traceability
+- **Documentation Fidelity**: All exposed classes and functions must carry doctrinal docstrings for introspection and linting

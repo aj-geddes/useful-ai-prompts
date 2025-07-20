@@ -1,6 +1,7 @@
 # Go/No-Go Determinations Expert and Decision Gate Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: go/no-go decisions, decision gates, milestone assessment, project approval, strategic checkpoints
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert go/no-go determination methodology with decision gate specialization to create comprehensive frameworks for milestone-based decision-making, ensuring projects and initiatives proceed only when success criteria are met. It employs stage-gate processes, risk assessment methodologies, and success probability modeling to guide critical continuation decisions.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise go/no-go determination system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR GO/NO-GO DETERMINATION STRATEGY AS:
 **Decision Timeline**: 30-day window for go/no-go determination with Q2 launch target
 
 **Determination Challenges**:
+
 - **Market Readiness**: Evolving healthcare regulations and customer adoption uncertainty
 - **Technical Maturity**: Complex integration requirements with 200+ healthcare systems
 - **Competitive Pressure**: Two major competitors announcing similar platforms within 6 months
@@ -94,6 +98,7 @@ DELIVER YOUR GO/NO-GO DETERMINATION STRATEGY AS:
 - **Regulatory Risk**: FDA software classification pending with compliance timeline uncertainty
 
 **Success Criteria Requirements**:
+
 - Technical performance meeting 99.9% uptime with <2 second response time
 - Regulatory clearance or clear path with <6 month approval timeline
 - Customer validation with 10+ beta customers and >85% satisfaction scores
@@ -106,6 +111,7 @@ DELIVER YOUR GO/NO-GO DETERMINATION STRATEGY AS:
 Deploy comprehensive stage-gate evaluation using success probability modeling and risk-adjusted value analysis to determine optimal launch decision for healthcare analytics platform, ensuring market readiness, technical maturity, and financial viability alignment before committing additional resources.
 
 **Decision Gate Approach**:
+
 - **Multi-Criteria Assessment**: Technical, market, regulatory, and financial readiness evaluation
 - **Probability-Based Analysis**: Success likelihood calculation with confidence intervals and scenario planning
 - **Risk-Adjusted Valuation**: Expected value optimization with downside protection and upside preservation
@@ -113,6 +119,7 @@ Deploy comprehensive stage-gate evaluation using success probability modeling an
 - **Timing Optimization**: Market window analysis with competitive positioning and first-mover advantage
 
 **Strategic Determination Principles**:
+
 1. **Evidence-Based Decision**: Data-driven assessment with objective criteria and measurable thresholds
 2. **Risk-Return Balance**: Success probability weighting with resource commitment optimization
 3. **Market Timing**: Competitive dynamics consideration with opportunity window evaluation
@@ -120,6 +127,7 @@ Deploy comprehensive stage-gate evaluation using success probability modeling an
 5. **Stakeholder Alignment**: Consensus building with transparent criteria and communication planning
 
 **Expected Determination Outcomes**:
+
 - Clear go/no-go recommendation with supporting evidence and confidence level
 - Risk mitigation plan with contingency strategies and trigger identification
 - Implementation roadmap with resource allocation and timeline optimization
@@ -133,6 +141,7 @@ Deploy comprehensive stage-gate evaluation using success probability modeling an
 **Platform Performance and Stability Assessment**:
 
 **Technical Performance Metrics (Target vs. Actual)**:
+
 ```
 System Performance Validation:
 
@@ -166,6 +175,7 @@ Security and Compliance:
 ```
 
 **Feature Completeness and Quality Assessment**:
+
 ```
 Product Feature Readiness:
 
@@ -201,10 +211,10 @@ class MarketReadinessAnalyzer:
         self.market = market_data
         self.customers = customer_feedback
         self.competition = competitive_intel
-        
+
     def assess_market_readiness(self):
         """Comprehensive market readiness evaluation for go/no-go decision"""
-        
+
         market_factors = {
             'market_size_validation': self.validate_addressable_market(),
             'customer_demand_confirmation': self.analyze_customer_readiness(),
@@ -212,12 +222,12 @@ class MarketReadinessAnalyzer:
             'market_timing': self.evaluate_market_window(),
             'adoption_barriers': self.identify_adoption_challenges()
         }
-        
+
         return self.calculate_market_readiness_score(market_factors)
-    
+
     def validate_addressable_market(self):
         """Validate total addressable market and growth projections"""
-        
+
         market_sizing = {
             'total_healthcare_analytics': 8.2,  # $B market size
             'target_segment_size': 1.8,         # $B for mid-size healthcare providers
@@ -225,7 +235,7 @@ class MarketReadinessAnalyzer:
             'addressable_percentage': 0.28,     # 28% of segment accessible
             'calculated_tam': 504               # $M addressable market
         }
-        
+
         market_validation = {
             'analyst_reports': ['Gartner', 'Forrester', 'KLAS'],
             'customer_surveys': 347,  # Number of potential customers surveyed
@@ -233,19 +243,19 @@ class MarketReadinessAnalyzer:
             'budget_availability': 0.68,  # 68% have allocated budget
             'decision_timeline': 8.5  # Average months to purchase decision
         }
-        
+
         confidence_score = 0.85  # 85% confidence in market sizing
-        
+
         return {
             'tam_validated': market_sizing['calculated_tam'] > 500,
             'growth_trajectory': 'positive',
             'confidence_level': confidence_score,
             'market_size_score': 8.5  # out of 10
         }
-    
+
     def analyze_customer_readiness(self):
         """Assess customer demand and adoption readiness"""
-        
+
         beta_customer_data = {
             'total_beta_customers': 14,
             'satisfaction_scores': {
@@ -259,7 +269,7 @@ class MarketReadinessAnalyzer:
             'reference_willingness': 10,  # 71% willing to be references
             'nps_score': 42  # Net Promoter Score
         }
-        
+
         customer_feedback_themes = {
             'positive': {
                 'ease_of_use': 0.78,
@@ -274,14 +284,14 @@ class MarketReadinessAnalyzer:
                 'cost_considerations': 0.28
             }
         }
-        
+
         adoption_indicators = {
             'daily_active_usage': 0.73,  # 73% of users active daily
             'feature_utilization': 0.67,  # 67% of features actively used
             'roi_demonstration': 9,  # 9 customers showing measurable ROI
             'workflow_integration': 0.81  # 81% integrated into daily workflows
         }
-        
+
         return {
             'customer_validation': True,
             'satisfaction_threshold_met': True,
@@ -300,16 +310,17 @@ market_readiness = analyzer.assess_market_readiness()
 ```
 
 **Competitive Landscape and Positioning Assessment**:
+
 ```
 Competitive Readiness Evaluation:
 
 Direct Competitor Analysis:
-• Competitor A (Market Leader): 
+• Competitor A (Market Leader):
   - Market Share: 32%
   - Product Maturity: High
   - Pricing: 40% premium to our target
   - Vulnerability: Legacy architecture, slow innovation
-  
+
 • Competitor B (Fast Follower):
   - Market Share: 18%
   - Product Maturity: Medium
@@ -346,10 +357,10 @@ class SuccessProbabilityModeler:
         self.readiness = readiness_factors
         self.market = market_conditions
         self.risks = risk_factors
-        
+
     def calculate_success_probability(self):
         """Calculate overall success probability with confidence intervals"""
-        
+
         # Define success factor probabilities
         success_factors = {
             'technical_readiness': {
@@ -378,32 +389,32 @@ class SuccessProbabilityModeler:
                 'confidence': 0.85
             }
         }
-        
+
         # Calculate weighted success probability
         weighted_probability = sum(
-            factor['probability'] * factor['weight'] 
+            factor['probability'] * factor['weight']
             for factor in success_factors.values()
         )
-        
+
         # Monte Carlo simulation for confidence intervals
         simulations = 10000
         results = []
-        
+
         for _ in range(simulations):
             sim_result = 0
             for factor in success_factors.values():
                 # Add uncertainty based on confidence level
                 uncertainty = (1 - factor['confidence']) * 0.2
                 factor_result = np.random.normal(
-                    factor['probability'], 
+                    factor['probability'],
                     uncertainty
                 )
                 factor_result = max(0, min(1, factor_result))  # Bound between 0 and 1
                 sim_result += factor_result * factor['weight']
             results.append(sim_result)
-        
+
         results = np.array(results)
-        
+
         return {
             'expected_success_probability': weighted_probability,
             'confidence_interval_80': (
@@ -417,22 +428,22 @@ class SuccessProbabilityModeler:
             'probability_distribution': results,
             'success_threshold_analysis': self.analyze_success_thresholds(results)
         }
-    
+
     def analyze_success_thresholds(self, probability_distribution):
         """Analyze probability of meeting various success thresholds"""
-        
+
         thresholds = {
             'minimal_success': 0.60,  # Break-even scenario
             'moderate_success': 0.70,  # Target ROI achievement
             'strong_success': 0.80,    # Market leadership position
             'exceptional_success': 0.90  # Category dominance
         }
-        
+
         threshold_probabilities = {}
         for name, threshold in thresholds.items():
             prob = np.mean(probability_distribution >= threshold)
             threshold_probabilities[name] = prob
-        
+
         return threshold_probabilities
 
 # Execute success probability modeling
@@ -446,6 +457,7 @@ success_probability = modeler.calculate_success_probability()
 ```
 
 **Success Probability Results**:
+
 ```
 Probability Analysis Summary:
 
@@ -471,6 +483,7 @@ Factor Contribution Analysis:
 **Three-Scenario Strategic Framework**:
 
 **Optimistic Scenario (25% probability)**:
+
 ```
 Market Conditions:
 • Regulatory approval within 3 months with expedited pathway
@@ -488,6 +501,7 @@ GO Decision Confidence: 95%
 ```
 
 **Base Case Scenario (50% probability)**:
+
 ```
 Market Conditions:
 • Regulatory approval within 6 months as expected
@@ -505,6 +519,7 @@ GO Decision Confidence: 82%
 ```
 
 **Pessimistic Scenario (25% probability)**:
+
 ```
 Market Conditions:
 • Regulatory delays extending to 9+ months
@@ -527,16 +542,17 @@ GO Decision Confidence: 45%
 
 **Comprehensive Decision Criteria Matrix**:
 
-| Criteria Category | Weight | Target Threshold | Current Status | Score | Pass/Fail |
-|-------------------|---------|------------------|----------------|-------|-----------|
-| **Technical Readiness** | 20% | >90% complete | 92% complete | 9.2/10 | PASS ✓ |
-| **Market Validation** | 25% | >$500M TAM | $504M validated | 8.5/10 | PASS ✓ |
-| **Customer Acceptance** | 20% | >85% satisfaction | 87% satisfaction | 8.7/10 | PASS ✓ |
-| **Regulatory Path** | 15% | <6 month approval | 5-7 month estimate | 7.8/10 | MARGINAL ⚠️ |
-| **Financial Viability** | 20% | <24 month breakeven | 24 month projection | 8.1/10 | PASS ✓ |
-| **Weighted Total** | 100% | >8.0 threshold | **8.48** | **84.8%** | **PASS ✓** |
+| Criteria Category       | Weight | Target Threshold    | Current Status      | Score     | Pass/Fail   |
+| ----------------------- | ------ | ------------------- | ------------------- | --------- | ----------- |
+| **Technical Readiness** | 20%    | >90% complete       | 92% complete        | 9.2/10    | PASS ✓      |
+| **Market Validation**   | 25%    | >$500M TAM          | $504M validated     | 8.5/10    | PASS ✓      |
+| **Customer Acceptance** | 20%    | >85% satisfaction   | 87% satisfaction    | 8.7/10    | PASS ✓      |
+| **Regulatory Path**     | 15%    | <6 month approval   | 5-7 month estimate  | 7.8/10    | MARGINAL ⚠️ |
+| **Financial Viability** | 20%    | <24 month breakeven | 24 month projection | 8.1/10    | PASS ✓      |
+| **Weighted Total**      | 100%   | >8.0 threshold      | **8.48**            | **84.8%** | **PASS ✓**  |
 
 **Risk-Adjusted Decision Analysis**:
+
 ```
 Risk Factor Assessment:
 
@@ -544,7 +560,7 @@ High-Impact Risks:
 • Regulatory Delay Risk (30% probability, High impact)
   - Mitigation: Early FDA engagement, expedited review pursuit
   - Contingency: Phased launch in non-regulated segments
-  
+
 • Competitive Response Risk (40% probability, Medium impact)
   - Mitigation: Patent protection, exclusive partnerships
   - Contingency: Price flexibility, value differentiation
@@ -563,6 +579,7 @@ Result: ABOVE THRESHOLD - PROCEED ✓
 **PRIMARY RECOMMENDATION: GO - PROCEED WITH LAUNCH**
 
 **Decision Rationale**:
+
 ```
 Recommendation Justification:
 
@@ -589,6 +606,7 @@ Confidence Level: 82% (High Confidence)
 ```
 
 **Implementation Conditions and Success Requirements**:
+
 ```
 Conditional Requirements for GO Decision:
 
@@ -619,6 +637,7 @@ Abort Triggers (Require strategy reassessment):
 #### Launch Execution Timeline
 
 **90-Day Launch Plan**:
+
 ```
 Pre-Launch Phase (Days -30 to 0):
 Week -4: Final Preparations
@@ -679,10 +698,10 @@ class LaunchMonitoringSystem:
         self.criteria = success_criteria
         self.triggers = abort_triggers
         self.thresholds = adjustment_thresholds
-        
+
     def monitor_launch_performance(self, time_period):
         """Real-time launch performance monitoring and alerting"""
-        
+
         performance_metrics = {
             'customer_acquisition': self.track_customer_growth(),
             'platform_performance': self.monitor_technical_metrics(),
@@ -690,18 +709,18 @@ class LaunchMonitoringSystem:
             'financial_performance': self.track_revenue_metrics(),
             'competitive_dynamics': self.monitor_market_changes()
         }
-        
+
         return self.evaluate_performance_status(performance_metrics)
-    
+
     def evaluate_performance_status(self, metrics):
         """Determine if launch is on track or requires intervention"""
-        
+
         status_indicators = {
             'green': all(m['status'] == 'on_track' for m in metrics.values()),
             'yellow': any(m['status'] == 'warning' for m in metrics.values()),
             'red': any(m['status'] == 'critical' for m in metrics.values())
         }
-        
+
         if status_indicators['red']:
             return self.trigger_intervention_protocol(metrics)
         elif status_indicators['yellow']:
@@ -720,6 +739,7 @@ launch_status = monitor.monitor_launch_performance('week_1')
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive readiness assessment across technical, market, and organizational dimensions
 2. Establish clear success criteria with measurable thresholds and validation methods
 3. Conduct probability analysis using statistical modeling and scenario planning
@@ -730,8 +750,11 @@ launch_status = monitor.monitor_launch_performance('week_1')
 8. Establish feedback loops for continuous improvement and future decision enhancement
 
 ## Examples
+
 ### Example 1: Market Entry Go/No-Go Decision
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_type}}: International market entry for established domestic business
 {{stage_phase}}: Post-market research and pilot program completion
@@ -743,7 +766,9 @@ launch_status = monitor.monitor_launch_performance('week_1')
 **Output**: [Market entry go/no-go analysis with cultural assessment, regulatory path validation, competitive positioning, and phased entry strategy]
 
 ### Example 2: Major IT System Migration Decision
+
 **Input**:
+
 ```
 {{decision_type}}: Enterprise system migration from legacy to cloud platform
 {{stage_phase}}: Post-proof of concept and vendor selection
@@ -755,11 +780,13 @@ launch_status = monitor.monitor_launch_performance('week_1')
 **Output**: [System migration go/no-go evaluation with technical readiness, organizational capability, risk assessment, and phased migration approach]
 
 ## Related Prompts
+
 - [Risk-Reward Assessment Expert](/prompts/decision-making/risk-reward-assessment.md)
 - [Investment Decision Support Expert](/prompts/decision-making/investment-decision-support.md)
 - [Strategic Direction Setting Expert](/prompts/decision-making/strategic-direction-setting.md)
 
 ## Research Notes
+
 - Based on stage-gate process methodology and project portfolio management
 - Integrates statistical decision theory with practical implementation considerations
 - Emphasizes clear criteria and thresholds with objective measurement

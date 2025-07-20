@@ -1,6 +1,7 @@
 # Report Generation Expert and Business Intelligence Analyst
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: report generation, business reporting, data visualization, executive communication, analytics reporting
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert report generation capabilities with business intelligence analysis to create comprehensive, insightful reports that drive decision-making. It transforms complex data into clear, actionable narratives with professional presentation.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise report generation system combining:
 
@@ -87,15 +90,16 @@ DELIVER YOUR REPORT AS:
 
 #### Key Findings at a Glance
 
-| Metric | Target | Actual | Variance | Trend |
-|--------|--------|--------|----------|-------|
-| Revenue Growth | 15% | 18.3% | +3.3% | ↑ |
-| EBITDA Margin | 22% | 24.1% | +2.1% | ↑ |
-| Customer Retention | 90% | 87.2% | -2.8% | ↓ |
-| Market Share | 28% | 29.4% | +1.4% | ↑ |
-| Employee Engagement | 75% | 71.3% | -3.7% | ↓ |
+| Metric              | Target | Actual | Variance | Trend |
+| ------------------- | ------ | ------ | -------- | ----- |
+| Revenue Growth      | 15%    | 18.3%  | +3.3%    | ↑     |
+| EBITDA Margin       | 22%    | 24.1%  | +2.1%    | ↑     |
+| Customer Retention  | 90%    | 87.2%  | -2.8%    | ↓     |
+| Market Share        | 28%    | 29.4%  | +1.4%    | ↑     |
+| Employee Engagement | 75%    | 71.3%  | -3.7%    | ↓     |
 
 #### Critical Actions Required
+
 1. **Immediate**: Address customer retention decline in Enterprise segment
 2. **Short-term**: Implement employee engagement recovery plan
 3. **Strategic**: Accelerate digital transformation initiative
@@ -103,6 +107,7 @@ DELIVER YOUR REPORT AS:
 #### Executive Dashboard
 
 **Performance Scorecard**
+
 - Financial Performance: ████████░░ 85%
 - Operational Excellence: ███████░░░ 72%
 - Customer Satisfaction: ██████░░░░ 68%
@@ -120,11 +125,13 @@ DELIVER YOUR REPORT AS:
 **Total Revenue**: $487.3M (+18.3% YoY)
 
 **Revenue by Segment**
+
 - Enterprise: $298.5M (61% of total, +22% YoY)
 - Mid-Market: $123.8M (25% of total, +15% YoY)
 - SMB: $65.0M (14% of total, +8% YoY)
 
 **Geographic Distribution**
+
 - North America: $292.4M (60%)
 - Europe: $121.8M (25%)
 - Asia-Pacific: $48.7M (10%)
@@ -133,6 +140,7 @@ DELIVER YOUR REPORT AS:
 #### 1.2 Profitability Analysis
 
 **EBITDA Performance**
+
 - Q4 EBITDA: $117.4M
 - EBITDA Margin: 24.1% (vs 21.3% Q4 2023)
 - Operating Cash Flow: $98.2M
@@ -140,17 +148,19 @@ DELIVER YOUR REPORT AS:
 
 **Margin Bridge Analysis**
 Starting Margin (Q4 2023): 21.3%
+
 - Volume leverage: +1.8%
 - Price increases: +1.2%
 - Cost optimization: +0.9%
 - Mix improvement: +0.6%
 - FX impact: -0.3%
 - Investments: -1.4%
-Ending Margin (Q4 2024): 24.1%
+  Ending Margin (Q4 2024): 24.1%
 
 #### 1.3 Working Capital Management
 
 **Cash Conversion Cycle**: 42 days (improvement of 8 days YoY)
+
 - Days Sales Outstanding: 58 days (-5 days)
 - Days Inventory Outstanding: 24 days (-2 days)
 - Days Payables Outstanding: 40 days (+1 day)
@@ -162,11 +172,13 @@ Ending Margin (Q4 2024): 24.1%
 #### 2.1 Customer Metrics
 
 **Customer Acquisition**
+
 - New Customers Added: 847
 - Customer Acquisition Cost: $12,450 (-15% YoY)
 - Payback Period: 14.2 months
 
 **Customer Retention Crisis**
+
 - Overall Retention: 87.2% (Target: 90%)
 - Enterprise Retention: 82.1% (-8.2% YoY) ⚠️
 - Churn Analysis:
@@ -176,6 +188,7 @@ Ending Margin (Q4 2024): 24.1%
   - Other factors: 9% of churn
 
 **Customer Satisfaction**
+
 - Net Promoter Score: 42 (-5 points YoY)
 - Customer Effort Score: 3.2/5
 - Support Ticket Resolution: 78% within SLA
@@ -183,11 +196,13 @@ Ending Margin (Q4 2024): 24.1%
 #### 2.2 Operational Efficiency
 
 **Productivity Metrics**
+
 - Revenue per Employee: $487K (+12% YoY)
 - Operating Expense Ratio: 68.2% (-2.1% YoY)
 - Automation Impact: 23% of processes automated
 
 **Quality Indicators**
+
 - First Call Resolution: 71%
 - Product Defect Rate: 0.8%
 - On-Time Delivery: 94.3%
@@ -201,6 +216,7 @@ Ending Margin (Q4 2024): 24.1%
 **Overall Progress**: ████████░░ 78% Complete
 
 **Key Milestones Achieved in Q4**:
+
 - ✅ Cloud migration Phase 2 completed
 - ✅ Customer portal launched
 - ✅ AI-powered analytics deployed
@@ -208,6 +224,7 @@ Ending Margin (Q4 2024): 24.1%
 - ⏳ Legacy system decommission (60% complete)
 
 **Investment & Returns**:
+
 - Q4 Investment: $18.7M
 - Cumulative Investment: $67.3M
 - Realized Benefits: $23.4M
@@ -216,11 +233,13 @@ Ending Margin (Q4 2024): 24.1%
 #### 3.2 Market Expansion
 
 **New Market Entry Performance**:
+
 - German Market: €12.3M revenue (123% of plan)
 - Japanese Market: ¥890M revenue (89% of plan)
 - Brazil Market: R$34.5M revenue (156% of plan)
 
 **Competitive Position Changes**:
+
 - Gained #2 position in German enterprise segment
 - Maintained #3 position in North America
 - Lost 2% share in UK market to Competitor X
@@ -234,11 +253,13 @@ Ending Margin (Q4 2024): 24.1%
 **Risk Level**: HIGH 🔴
 
 **Root Cause Analysis**:
+
 1. Service level degradation during system migration
 2. Competitor aggressive pricing in enterprise segment
 3. Key account manager turnover (30% in Q4)
 
 **Mitigation Plan**:
+
 - Immediate: Executive outreach to top 50 accounts
 - 30-day: Service recovery program with SLA guarantees
 - 90-day: Account management restructuring
@@ -250,12 +271,14 @@ Ending Margin (Q4 2024): 24.1%
 **Risk Level**: MEDIUM 🟡
 
 **Q4 Security Incidents**:
+
 - Attempted breaches: 1,247 (blocked)
 - Successful breaches: 0
 - Phishing success rate: 2.1% (down from 5.3%)
 - Security training completion: 94%
 
 **2025 Security Roadmap**:
+
 - Q1: Zero Trust architecture implementation
 - Q2: Advanced threat detection deployment
 - Q3: Supply chain security audit
@@ -271,12 +294,14 @@ Ending Margin (Q4 2024): 24.1%
 **Our Growth**: 18.3% YoY (Outperforming by 6%)
 
 **Market Share Evolution**:
+
 - Company A (Leader): 34.2% (-1.1%)
 - Our Company: 29.4% (+1.4%)
 - Company C: 21.3% (-0.3%)
 - Others: 15.1% (stable)
 
 **Emerging Trends Impact**:
+
 1. AI Integration: Early mover advantage secured
 2. Sustainability: Lagging industry (action needed)
 3. Subscription Models: 45% of revenue (target: 60%)
@@ -284,11 +309,13 @@ Ending Margin (Q4 2024): 24.1%
 #### 5.2 Competitive Intelligence
 
 **Key Competitor Moves in Q4**:
+
 - Competitor A: Acquired StartupX for $230M
 - Competitor B: Launched next-gen platform
 - Competitor C: 20% price reduction campaign
 
 **Our Competitive Response**:
+
 - Accelerated product roadmap by 3 months
 - Initiated M&A discussions with 3 targets
 - Launched value-based pricing strategy
@@ -300,12 +327,14 @@ Ending Margin (Q4 2024): 24.1%
 #### 6.1 Workforce Metrics
 
 **Headcount**: 1,001 employees (+8.2% YoY)
+
 - Engineering: 42% of workforce
 - Sales & Marketing: 28%
 - Operations: 20%
 - Corporate Functions: 10%
 
 **Talent Acquisition**:
+
 - Positions Filled: 127
 - Time to Fill: 42 days
 - Quality of Hire Score: 8.2/10
@@ -316,11 +345,13 @@ Ending Margin (Q4 2024): 24.1%
 **Engagement Score**: 71.3% (-3.7% YoY) ⚠️
 
 **Key Drivers of Disengagement**:
+
 1. Work-life balance concerns (post-transformation stress)
 2. Career development opportunities unclear
 3. Compensation competitiveness in tech roles
 
 **Action Plan**:
+
 - January: All-hands CEO town hall
 - February: Career framework launch
 - March: Compensation market adjustment
@@ -333,11 +364,13 @@ Ending Margin (Q4 2024): 24.1%
 #### 7.1 Q1 2025 Outlook
 
 **Financial Projections**:
+
 - Revenue: $495-505M (midpoint +3% QoQ)
 - EBITDA Margin: 23.5-24.5%
 - Free Cash Flow: $70-80M
 
 **Key Assumptions**:
+
 - No major economic downturn
 - Customer retention stabilizes at 88%
 - Digital transformation benefits begin scaling
@@ -378,16 +411,19 @@ Ending Margin (Q4 2024): 24.1%
 #### 8.2 Management Actions (30-60-90 Day Plan)
 
 **30 Days**:
+
 - Launch Operation Customer Save
 - Conduct employee listening sessions
 - Fast-track critical digital features
 
 **60 Days**:
+
 - Complete compensation benchmarking
 - Sign one strategic acquisition LOI
 - Deploy enhanced security measures
 
 **90 Days**:
+
 - Achieve 89% retention rate
 - Restore engagement to 75%
 - Complete M&A due diligence
@@ -397,15 +433,19 @@ Ending Margin (Q4 2024): 24.1%
 ### APPENDICES
 
 #### Appendix A: Detailed Financial Statements
+
 [Complete P&L, Balance Sheet, Cash Flow statements with YoY comparisons]
 
 #### Appendix B: Methodology & Data Sources
+
 [Data collection methods, statistical approaches, confidence levels]
 
 #### Appendix C: Risk Register
+
 [Comprehensive risk matrix with probability, impact, and mitigation strategies]
 
 #### Appendix D: Glossary & Definitions
+
 [Technical terms, abbreviations, and calculation methodologies]
 
 ---
@@ -415,7 +455,7 @@ Ending Margin (Q4 2024): 24.1%
 This report has been prepared in accordance with company reporting standards and has been reviewed by:
 
 - CFO: Sarah Chen
-- COO: Michael Torres  
+- COO: Michael Torres
 - Chief Data Officer: Dr. Raj Patel
 - External Auditor: KPMG LLP
 
@@ -424,6 +464,7 @@ This report has been prepared in accordance with company reporting standards and
 **Next Report**: Q1 2025 Results - Due April 15, 2025
 
 ## Usage Instructions
+
 1. Start with clear objectives and key questions to answer
 2. Gather and validate all data sources before analysis
 3. Focus on insights and recommendations, not just data
@@ -434,8 +475,11 @@ This report has been prepared in accordance with company reporting standards and
 8. Maintain consistent formatting and professional presentation
 
 ## Examples
+
 ### Example 1: Monthly Sales Performance Report
-**Input**: 
+
+**Input**:
+
 ```
 {{report_type}}: Monthly sales performance report
 {{audience}}: Sales leadership and C-suite
@@ -447,11 +491,13 @@ This report has been prepared in accordance with company reporting standards and
 **Output**: [Focused report highlighting Enterprise segment underperformance with root cause analysis showing longer sales cycles due to new competition, specific rep training needs, and 3-point action plan]
 
 ## Related Prompts
+
 - [Data Analysis Expert](/prompts/analysis/data-analysis-expert.md)
 - [Executive Communication Specialist](/prompts/communication/executive-communication.md)
 - [Business Intelligence Analyst](/prompts/analysis/business-intelligence-analyst.md)
 
 ## Research Notes
+
 - Emphasizes actionable insights over raw data
 - Uses progressive disclosure - summary to detail
 - Includes visual elements for quick comprehension

@@ -1,6 +1,7 @@
 # Meeting Facilitation Expert and Collaboration Architect
 
 ## Metadata
+
 - **Category**: Communication
 - **Tags**: meeting facilitation, collaboration, team dynamics, decision making, group communication
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert meeting facilitation skills with collaboration architecture to create engaging, productive meetings that achieve objectives while fostering positive team dynamics. It employs proven facilitation methodologies, group dynamics principles, and collaboration frameworks to maximize meeting effectiveness and participant engagement.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise meeting facilitation system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR MEETING FACILITATION STRATEGY AS:
 **Challenge**: Competing priorities, limited resources, and previous alignment difficulties
 
 **Meeting Context**:
+
 - **Stakeholder Complexity**: 5 departments with different priorities and success metrics
 - **Decision Scope**: $3M budget allocation and 6-month development roadmap
 - **Historical Challenges**: Previous meetings resulted in unclear outcomes and post-meeting conflicts
@@ -94,6 +98,7 @@ DELIVER YOUR MEETING FACILITATION STRATEGY AS:
 - **Power Dynamics**: Executive input required but collaborative decision-making preferred
 
 **Facilitation Goals**:
+
 1. Achieve clear consensus on top 3 product priorities for Q2
 2. Align resource allocation with strategic priorities
 3. Build cross-functional understanding and collaboration
@@ -106,6 +111,7 @@ DELIVER YOUR MEETING FACILITATION STRATEGY AS:
 Design and execute a collaborative, structured workshop that combines data-driven analysis with creative problem-solving to achieve strategic alignment while building stronger cross-functional relationships and sustainable collaboration practices.
 
 **Collaboration Architecture**:
+
 - **Structured Decision Framework**: Multi-criteria decision analysis with stakeholder input integration
 - **Inclusive Participation Design**: Balanced participation ensuring all voices are heard and valued
 - **Conflict Resolution Integration**: Proactive conflict prevention with constructive resolution protocols
@@ -113,6 +119,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 - **Action-Oriented Outcomes**: Clear, measurable outcomes with accountability and follow-up systems
 
 **Key Facilitation Principles**:
+
 1. **Psychological Safety**: Create environment where participants feel safe to express opinions and concerns
 2. **Balanced Participation**: Ensure equitable participation across all stakeholder groups
 3. **Data-Informed Decisions**: Ground decisions in shared data and evidence
@@ -120,6 +127,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 5. **Sustainable Outcomes**: Decisions and processes that will endure beyond the meeting
 
 **Expected Workshop Outcomes**:
+
 - 100% participant alignment on top 3 Q2 priorities
 - Clear resource allocation with 95% stakeholder agreement
 - Established cross-functional collaboration protocols
@@ -133,6 +141,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 **Comprehensive Stakeholder Mapping**:
 
 **Engineering Team** (8 participants):
+
 - **Primary Interests**: Technical feasibility, development timelines, resource allocation
 - **Key Concerns**: Unrealistic timelines, changing requirements, technical debt
 - **Decision Influence**: High on feasibility and timelines
@@ -140,6 +149,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 - **Preparation Needs**: Technical analysis, resource capacity assessment
 
 **Product Team** (5 participants):
+
 - **Primary Interests**: Market opportunities, user needs, competitive positioning
 - **Key Concerns**: Feature completeness, user experience, market timing
 - **Decision Influence**: High on priorities and feature scope
@@ -147,6 +157,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 - **Preparation Needs**: Market research, user feedback, competitive analysis
 
 **Marketing Team** (4 participants):
+
 - **Primary Interests**: Go-to-market strategy, messaging, campaign alignment
 - **Key Concerns**: Launch timing, feature marketability, competitive differentiation
 - **Decision Influence**: Medium on priorities, high on messaging and positioning
@@ -154,6 +165,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 - **Preparation Needs**: Market positioning analysis, campaign planning requirements
 
 **Sales Team** (3 participants):
+
 - **Primary Interests**: Customer demands, revenue impact, competitive wins
 - **Key Concerns**: Customer commitments, sales enablement, deal pipeline impact
 - **Decision Influence**: High on customer requirements and revenue priorities
@@ -161,6 +173,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 - **Preparation Needs**: Customer feedback compilation, revenue impact analysis
 
 **Executive Team** (5 participants):
+
 - **Primary Interests**: Strategic alignment, financial performance, competitive advantage
 - **Key Concerns**: Resource optimization, market position, shareholder value
 - **Decision Influence**: Ultimate decision authority, strategic oversight
@@ -170,6 +183,7 @@ Design and execute a collaborative, structured workshop that combines data-drive
 #### Pre-Meeting Data Collection and Analysis
 
 **Collaborative Pre-Work Design**:
+
 ```
 PRE-MEETING PREPARATION FRAMEWORK:
 
@@ -213,6 +227,7 @@ Analysis and Synthesis Phase (1 week before):
 **Two-Day Workshop Structure**:
 
 **Day 1: Foundation and Analysis** (8 hours)
+
 ```
 9:00-9:30 AM: Opening and Alignment
 ├── Welcome and introductions
@@ -252,6 +267,7 @@ Analysis and Synthesis Phase (1 week before):
 ```
 
 **Day 2: Decision Making and Planning** (8 hours)
+
 ```
 9:00-9:30 AM: Day 2 Opening and Alignment
 ├── Day 1 key insights recap
@@ -295,6 +311,7 @@ Analysis and Synthesis Phase (1 week before):
 #### Structured Decision-Making Framework
 
 **Multi-Criteria Decision Analysis Implementation**:
+
 ```python
 # Collaborative Decision Making Framework
 class CollaborativeDecisionFramework:
@@ -302,7 +319,7 @@ class CollaborativeDecisionFramework:
         self.criteria_manager = DecisionCriteriaManager()
         self.scoring_engine = CollaborativeScoringEngine()
         self.consensus_builder = ConsensusBuilder()
-        
+
     def facilitate_priority_decision_process(self, priorities, stakeholders):
         """
         Facilitate structured group decision making for priority selection
@@ -327,9 +344,9 @@ class CollaborativeDecisionFramework:
                 'final_confirmation': self.confirm_final_decisions()
             }
         }
-        
+
         return decision_process
-    
+
     def design_evaluation_criteria(self, stakeholder_inputs):
         """
         Collaboratively develop evaluation criteria for priorities
@@ -360,12 +377,12 @@ class CollaborativeDecisionFramework:
                 'financial_risk': 'Financial risk and budget impact'
             }
         }
-        
+
         # Facilitate stakeholder weighting of criteria categories
         stakeholder_weights = self.facilitate_criteria_weighting(
             criteria_categories, stakeholder_inputs
         )
-        
+
         return {
             'criteria_framework': criteria_categories,
             'stakeholder_weights': stakeholder_weights,
@@ -376,6 +393,7 @@ class CollaborativeDecisionFramework:
 #### Visual Collaboration and Graphic Facilitation
 
 **Visual Thinking and Collaboration Tools**:
+
 ```
 VISUAL FACILITATION TOOLKIT:
 
@@ -417,6 +435,7 @@ Visual Tools and Templates:
 #### Conflict Resolution and Consensus Building
 
 **Constructive Conflict Resolution Framework**:
+
 ```python
 # Meeting Conflict Resolution System
 class MeetingConflictResolver:
@@ -424,7 +443,7 @@ class MeetingConflictResolver:
         self.conflict_detector = ConflictDetectionSystem()
         self.mediation_facilitator = MediationFacilitator()
         self.consensus_builder = ConsensusBuildingEngine()
-        
+
     def implement_conflict_resolution_process(self):
         """
         Systematic approach to identifying and resolving meeting conflicts
@@ -455,9 +474,9 @@ class MeetingConflictResolver:
                 'implementation_planning': 'Plan implementation with conflict prevention'
             }
         }
-        
+
         return conflict_resolution_framework
-    
+
     def facilitate_difficult_conversation(self, conflict_situation):
         """
         Facilitate resolution of specific conflict situations
@@ -482,7 +501,7 @@ class MeetingConflictResolver:
                 'mutual_gain_optimization': 'Look for solutions that benefit all parties'
             }
         }
-        
+
         return facilitation_approach
 ```
 
@@ -491,6 +510,7 @@ class MeetingConflictResolver:
 #### Inclusive Participation Design
 
 **Balanced Participation Framework**:
+
 ```python
 # Inclusive Participation Management System
 class InclusiveParticipationManager:
@@ -498,7 +518,7 @@ class InclusiveParticipationManager:
         self.participation_tracker = ParticipationTracker()
         self.engagement_facilitator = EngagementFacilitator()
         self.inclusion_optimizer = InclusionOptimizer()
-        
+
     def design_inclusive_participation_strategy(self, participant_profiles):
         """
         Design participation strategy that ensures all voices are heard
@@ -529,9 +549,9 @@ class InclusiveParticipationManager:
                 'accessibility_optimization': 'Ensure physical and technological accessibility'
             }
         }
-        
+
         return inclusion_strategies
-    
+
     def facilitate_balanced_discussion(self, discussion_topic, participant_mix):
         """
         Facilitate discussion that engages all participant types effectively
@@ -562,7 +582,7 @@ class InclusiveParticipationManager:
                 'hierarchy_sensitivity': 'Navigate different expectations around hierarchy'
             }
         }
-        
+
         return facilitation_techniques
 ```
 
@@ -571,6 +591,7 @@ class InclusiveParticipationManager:
 #### Technology-Enhanced Collaboration
 
 **Hybrid Meeting Facilitation Framework**:
+
 ```python
 # Hybrid Meeting Technology Integration
 class HybridMeetingFacilitator:
@@ -578,7 +599,7 @@ class HybridMeetingFacilitator:
         self.technology_manager = MeetingTechnologyManager()
         self.engagement_optimizer = VirtualEngagementOptimizer()
         self.collaboration_facilitator = HybridCollaborationFacilitator()
-        
+
     def design_hybrid_meeting_experience(self, meeting_requirements):
         """
         Design seamless experience for both in-person and virtual participants
@@ -609,7 +630,7 @@ class HybridMeetingFacilitator:
                 'follow_up_relationship_building': 'Post-meeting relationship strengthening'
             }
         }
-        
+
         return hybrid_design_framework
 ```
 
@@ -618,6 +639,7 @@ class HybridMeetingFacilitator:
 #### Action Planning and Accountability
 
 **Comprehensive Follow-Up Framework**:
+
 ```python
 # Meeting Follow-Up and Accountability System
 class MeetingFollowUpManager:
@@ -625,7 +647,7 @@ class MeetingFollowUpManager:
         self.action_tracker = ActionPlanTracker()
         self.accountability_manager = AccountabilityManager()
         self.progress_monitor = ProgressMonitor()
-        
+
     def design_follow_up_and_accountability_system(self, meeting_outcomes):
         """
         Create systematic follow-up to ensure meeting outcomes are implemented
@@ -656,11 +678,12 @@ class MeetingFollowUpManager:
                 'culture_development': 'Strengthen collaborative culture and norms'
             }
         }
-        
+
         return follow_up_framework
 ```
 
 ## Usage Instructions
+
 1. Begin with thorough stakeholder analysis and meeting objective clarification
 2. Design inclusive, structured meeting process that accommodates all participant types
 3. Prepare comprehensive pre-meeting data collection and participant preparation
@@ -671,8 +694,11 @@ class MeetingFollowUpManager:
 8. Establish sustainable collaboration practices and continuous improvement processes
 
 ## Examples
+
 ### Example 1: Crisis Response Team Meeting
-**Input**: 
+
+**Input**:
+
 ```
 {{meeting_type}}: Emergency crisis response coordination meeting
 {{participant_count}}: Large - 30+ stakeholders from multiple organizations
@@ -684,7 +710,9 @@ class MeetingFollowUpManager:
 **Output**: [Crisis meeting facilitation with rapid decision-making protocols, conflict management, multi-stakeholder coordination, and emergency action planning]
 
 ### Example 2: Innovation Workshop Facilitation
+
 **Input**:
+
 ```
 {{meeting_type}}: Innovation ideation and concept development workshop
 {{meeting_objective}}: Creative problem solving and breakthrough thinking
@@ -696,11 +724,13 @@ class MeetingFollowUpManager:
 **Output**: [Innovation workshop facilitation with creative techniques, hybrid engagement, cultural sensitivity, and collaborative ideation processes]
 
 ## Related Prompts
+
 - [Team Collaboration Specialist](/prompts/communication/team-collaboration.md)
 - [Stakeholder Communication Expert](/prompts/communication/stakeholder-communication.md)
 - [Conflict Resolution Expert](/prompts/problem-solving/conflict-resolution.md)
 
 ## Research Notes
+
 - Based on proven facilitation methodologies and group dynamics research
 - Integrates virtual collaboration best practices with traditional facilitation techniques
 - Emphasizes inclusive participation and psychological safety for all participants

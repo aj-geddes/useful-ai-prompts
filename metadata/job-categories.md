@@ -1,6 +1,7 @@
 # Job Categories Framework for AI Prompt Engineering
 
 ## Metadata
+
 - **Category**: Reference/Framework
 - **Tags**: job roles, professional categories, prompt engineering, career domains, role-based prompts
 - **Created**: 2025-07-19
@@ -10,11 +11,13 @@
 - **Scope**: Comprehensive coverage of professional roles across all industries
 
 ## Description
+
 This framework provides a systematic approach to developing AI prompts tailored to specific professional roles. It combines job-specific expertise with layered thinking approaches and multiple personas to create prompts that address the unique challenges, workflows, and decision-making patterns of each profession. Use this guide to generate targeted, high-value prompts for any professional domain.
 
 ## Framework Overview
 
 ### Core Principles
+
 1. **Role-Specific Context**: Each job category has unique challenges, terminology, and success metrics
 2. **Layered Expertise**: Combine domain knowledge with thinking frameworks for deeper insights
 3. **Workflow Integration**: Prompts should align with actual daily workflows and pain points
@@ -59,7 +62,9 @@ JOB PROMPT TEMPLATE STRUCTURE:
 ### 🖥️ Technology & Software Development
 
 #### Software Engineer
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Senior Software Architect with 15+ years experience
 - **Secondary Persona**: Security Specialist or Performance Engineer
 - **Thinking Approaches**: Systems thinking, First principles, Algorithm analysis
@@ -67,6 +72,7 @@ JOB PROMPT TEMPLATE STRUCTURE:
 - **Unique Challenges**: Technical debt, scalability, maintainability, security
 
 **Example Prompt Framework:**
+
 ```
 You are a dual-expertise system combining:
 1. Senior Software Architect with deep knowledge of {{technology_stack}}
@@ -89,7 +95,9 @@ Deliver comprehensive analysis including:
 ```
 
 #### DevOps Engineer
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Site Reliability Engineer with cloud expertise
 - **Secondary Persona**: Security Engineer or Cost Optimization Specialist
 - **Thinking Approaches**: Systems thinking, Risk analysis, Automation mindset
@@ -97,7 +105,9 @@ Deliver comprehensive analysis including:
 - **Unique Challenges**: Reliability vs. velocity, cost optimization, security automation
 
 #### Data Scientist
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Senior Data Scientist with ML expertise
 - **Secondary Persona**: Business Strategist or Domain Expert
 - **Thinking Approaches**: Statistical thinking, Hypothesis testing, Experimental design
@@ -107,7 +117,9 @@ Deliver comprehensive analysis including:
 ### 💼 Business & Management
 
 #### Product Manager
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Strategic Product Leader with market expertise
 - **Secondary Persona**: UX Researcher or Data Analyst
 - **Thinking Approaches**: Systems thinking, User-centered design, Strategic planning
@@ -115,6 +127,7 @@ Deliver comprehensive analysis including:
 - **Unique Challenges**: Balancing competing priorities, market timing, resource constraints
 
 **Example Prompt Framework:**
+
 ```
 You are operating as a multi-faceted product leadership system:
 1. Strategic Product Manager with expertise in {{market_segment}}
@@ -137,7 +150,9 @@ Provide strategic recommendations including:
 ```
 
 #### Project Manager
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: PMP-certified Project Leader
 - **Secondary Persona**: Risk Manager or Agile Coach
 - **Thinking Approaches**: Critical path analysis, Risk management, Stakeholder analysis
@@ -147,7 +162,9 @@ Provide strategic recommendations including:
 ### 🎨 Creative & Design
 
 #### UX/UI Designer
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Senior UX Designer with psychology background
 - **Secondary Persona**: Front-end Developer or Accessibility Specialist
 - **Thinking Approaches**: Design thinking, User empathy, Systems thinking
@@ -155,6 +172,7 @@ Provide strategic recommendations including:
 - **Unique Challenges**: Balancing aesthetics with functionality, accessibility compliance
 
 **Example Prompt Framework:**
+
 ```
 You are a comprehensive design system combining:
 1. Senior UX Designer specializing in {{industry/platform}}
@@ -179,7 +197,9 @@ Deliver design recommendations including:
 ### 🏥 Healthcare & Medicine
 
 #### Healthcare Administrator
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Healthcare Operations Executive
 - **Secondary Persona**: Compliance Officer or Financial Analyst
 - **Thinking Approaches**: Systems thinking, Process optimization, Risk management
@@ -189,7 +209,9 @@ Deliver design recommendations including:
 ### ⚖️ Legal & Compliance
 
 #### Compliance Officer
+
 **Prompt Pattern Elements:**
+
 - **Primary Persona**: Chief Compliance Officer with regulatory expertise
 - **Secondary Persona**: Risk Analyst or Legal Counsel
 - **Thinking Approaches**: Risk-based thinking, Regulatory analysis, Process mapping
@@ -199,31 +221,37 @@ Deliver design recommendations including:
 ## Implementation Guide
 
 ### Step 1: Select Job Category
+
 Choose the specific role requiring prompt development
 
 ### Step 2: Analyze Role Requirements
+
 - Research current job market demands
 - Identify top 5 daily workflows
 - Document common pain points
 - Define success metrics
 
 ### Step 3: Design Persona Combination
+
 - Select primary persona matching role expertise
 - Choose complementary persona for broader perspective
 - Define experience levels and specializations
 
 ### Step 4: Layer Thinking Approaches
+
 - Match thinking frameworks to role challenges
 - Combine 2-3 approaches for comprehensive analysis
 - Ensure approaches complement each other
 
 ### Step 5: Create Prompt Template
+
 - Use framework structure provided
 - Include role-specific context
 - Add customization placeholders
 - Define clear output requirements
 
 ### Step 6: Test and Refine
+
 - Test with multiple scenarios
 - Gather feedback from role practitioners
 - Refine based on output quality
@@ -232,14 +260,18 @@ Choose the specific role requiring prompt development
 ## Cross-Functional Applications
 
 ### Hybrid Roles
+
 For roles spanning multiple categories:
+
 - Combine personas from each domain
 - Layer additional thinking approaches
 - Create modular prompt sections
 - Allow for context switching
 
 ### Emerging Roles
+
 For new job categories:
+
 - Analyze closest existing roles
 - Identify unique aspects
 - Adapt frameworks accordingly
@@ -248,12 +280,14 @@ For new job categories:
 ## Measurement Framework
 
 ### Prompt Effectiveness Metrics
+
 - **Relevance Score**: How well outputs match role needs (1-10)
 - **Actionability**: Practical applicability of recommendations (1-10)
 - **Completeness**: Coverage of role requirements (1-10)
 - **Innovation**: Novel insights generated (1-10)
 
 ### Success Indicators
+
 - Time saved on role-specific tasks
 - Quality improvement in deliverables
 - Reduction in errors or rework
@@ -262,6 +296,7 @@ For new job categories:
 ## Best Practices
 
 ### DO:
+
 - Research actual job requirements before creating prompts
 - Include industry-specific terminology and contexts
 - Test with professionals in the target role
@@ -269,6 +304,7 @@ For new job categories:
 - Layer multiple perspectives for richer outputs
 
 ### DON'T:
+
 - Make assumptions about role requirements
 - Use generic business language
 - Ignore regulatory or compliance aspects
@@ -276,6 +312,7 @@ For new job categories:
 - Forget to include measurable outcomes
 
 ## Related Resources
+
 - [Workflow Categories](workflow-categories.md) - Workflow patterns for each role
 - [Persona Profiles](persona-profiles.md) - Detailed persona descriptions
 - [Thinking Approaches](thinking-approaches.md) - Thinking framework details
@@ -284,6 +321,7 @@ For new job categories:
 ## Research Notes
 
 ### Key Insights
+
 1. **Role Evolution**: Job categories are rapidly evolving with AI integration; prompts must be adaptable
 2. **Context Criticality**: Role-specific context dramatically improves output quality
 3. **Persona Synergy**: Combining 2-3 personas yields optimal results
@@ -291,6 +329,7 @@ For new job categories:
 5. **Continuous Learning**: Regular updates based on role evolution are essential
 
 ### Future Directions
+
 - AI-augmented role definitions
 - Cross-functional collaboration prompts
 - Industry-specific variations
@@ -299,4 +338,4 @@ For new job categories:
 
 ---
 
-*This framework is continuously updated based on job market evolution and prompt engineering advances. Last major revision: 2025-07-20*
+_This framework is continuously updated based on job market evolution and prompt engineering advances. Last major revision: 2025-07-20_

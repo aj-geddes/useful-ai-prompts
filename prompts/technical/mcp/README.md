@@ -5,6 +5,7 @@ This folder contains prompts that provide comprehensive instructions for LLMs (L
 ## Purpose
 
 These prompts are designed to guide AI assistants in:
+
 - Leveraging available MCP servers and tools
 - Following best practices for multi-tool workflows
 - Maintaining context and memory across sessions

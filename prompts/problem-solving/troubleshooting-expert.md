@@ -1,6 +1,7 @@
 # Troubleshooting Expert and Systems Diagnostic Specialist
 
 ## Metadata
+
 - **Category**: Problem-Solving
 - **Tags**: troubleshooting, system diagnosis, problem resolution, technical analysis, operational issues
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert troubleshooting skills with systems diagnostic expertise to systematically identify, analyze, and resolve complex technical and operational problems. It employs proven diagnostic methodologies, analytical frameworks, and solution strategies to restore optimal system functionality.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise troubleshooting system combining:
 
@@ -90,6 +93,7 @@ DELIVER YOUR TROUBLESHOOTING ANALYSIS AS:
 Enterprise CRM system experiencing random performance degradation with users reporting 30-60 second response times, timeout errors, and occasional system unavailability affecting daily sales and customer service operations.
 
 **Initial Symptoms**:
+
 - Page load times increased from 2-3 seconds to 30-60 seconds
 - Database connection timeout errors (Error: Connection timeout after 30000ms)
 - User session timeouts and login failures
@@ -97,6 +101,7 @@ Enterprise CRM system experiencing random performance degradation with users rep
 - Memory usage alerts on application servers
 
 **Business Impact Assessment**:
+
 - Sales team productivity reduced by 30% (estimated $200K daily revenue impact)
 - Customer service response times increased 150%
 - User frustration leading to decreased system adoption
@@ -108,6 +113,7 @@ Enterprise CRM system experiencing random performance degradation with users rep
 Apply systematic diagnostic approach combining performance monitoring, system analysis, and structured testing to identify root causes and implement comprehensive solutions that restore optimal performance while preventing future issues.
 
 **Investigation Approach**:
+
 1. **Performance Analysis**: Comprehensive system performance baseline and trend analysis
 2. **Resource Utilization**: CPU, memory, disk, and network utilization assessment
 3. **Database Performance**: Query performance analysis and optimization opportunities
@@ -126,16 +132,19 @@ Implement multi-layered performance optimization including database tuning, appl
 **Performance Symptoms Timeline**:
 
 **Week 1**: Initial Reports
+
 - Tuesday 10 AM: First reports of slow response times from East Coast sales team
 - Wednesday 2 PM: Database timeout errors begin appearing in application logs
 - Friday 4 PM: System unavailable for 15 minutes during peak usage
 
 **Week 2**: Escalation
+
 - Monday 9 AM: Memory usage alerts triggered on all application servers
 - Tuesday 3 PM: Customer service team reports inability to access customer records
 - Thursday 11 AM: Sales manager escalates due to 25% productivity decrease
 
 **Week 3**: Critical Impact
+
 - Monday morning: System response times consistently 45+ seconds
 - Wednesday: Three separate 10-minute outages during business hours
 - Friday: Emergency meeting called due to customer complaints
@@ -143,6 +152,7 @@ Implement multi-layered performance optimization including database tuning, appl
 #### Error Pattern Analysis
 
 **Application Server Logs**:
+
 ```
 [ERROR] 2025-07-18 14:23:45 - Database connection pool exhausted
 [WARN] 2025-07-18 14:24:12 - High memory usage detected: 87% heap utilization
@@ -151,6 +161,7 @@ Implement multi-layered performance optimization including database tuning, appl
 ```
 
 **Database Server Logs**:
+
 ```
 [SLOW] 2025-07-18 14:23:30 - Query execution time: 45.2 seconds
 [WARN] 2025-07-18 14:24:15 - Lock wait timeout exceeded for table 'customer_activities'
@@ -159,6 +170,7 @@ Implement multi-layered performance optimization including database tuning, appl
 ```
 
 **Network Monitoring Alerts**:
+
 ```
 [ALERT] High latency detected: 250ms average response time
 [ALERT] Bandwidth utilization spike: 85% of available capacity
@@ -168,6 +180,7 @@ Implement multi-layered performance optimization including database tuning, appl
 #### User Impact Assessment
 
 **User Experience Metrics**:
+
 - **Page Load Time**: Increased from 2.1s average to 47.3s average
 - **Transaction Completion Rate**: Decreased from 98% to 72%
 - **User Session Duration**: Decreased from 45 minutes to 18 minutes
@@ -175,12 +188,12 @@ Implement multi-layered performance optimization including database tuning, appl
 
 **Department-Specific Impact**:
 
-| Department | Users Affected | Primary Issues | Productivity Impact |
-|------------|----------------|----------------|-------------------|
-| **Sales** | 450 users | Lead access delays, quote generation failures | 30% reduction |
-| **Customer Service** | 200 users | Customer record unavailability, slow searches | 40% reduction |
-| **Marketing** | 150 users | Campaign data delays, report generation issues | 20% reduction |
-| **Management** | 50 users | Dashboard loading failures, report timeouts | 25% reduction |
+| Department           | Users Affected | Primary Issues                                 | Productivity Impact |
+| -------------------- | -------------- | ---------------------------------------------- | ------------------- |
+| **Sales**            | 450 users      | Lead access delays, quote generation failures  | 30% reduction       |
+| **Customer Service** | 200 users      | Customer record unavailability, slow searches  | 40% reduction       |
+| **Marketing**        | 150 users      | Campaign data delays, report generation issues | 20% reduction       |
+| **Management**       | 50 users       | Dashboard loading failures, report timeouts    | 25% reduction       |
 
 ### ROOT CAUSE INVESTIGATION
 
@@ -189,12 +202,14 @@ Implement multi-layered performance optimization including database tuning, appl
 **Infrastructure Resource Utilization**:
 
 **Application Servers** (3 servers, load balanced):
+
 - **CPU Utilization**: Average 78% (normal: 45%), peaks at 95%
 - **Memory Usage**: Average 85% (normal: 60%), frequent 95%+ spikes
 - **Disk I/O**: 350% increase in read operations, 200% increase in writes
 - **Network Throughput**: 250% increase during problem periods
 
 **Database Server** (Primary/Secondary setup):
+
 - **CPU Usage**: 89% average during business hours (normal: 55%)
 - **Memory Utilization**: 92% buffer pool usage (normal: 70%)
 - **Disk Performance**: 15ms average latency (normal: 3ms)
@@ -205,10 +220,11 @@ Implement multi-layered performance optimization including database tuning, appl
 **Query Performance Analysis**:
 
 **Problematic Queries Identified**:
+
 ```sql
 -- Query 1: Customer Activity History (45.2 second execution)
-SELECT c.*, ca.*, p.product_name, u.user_name 
-FROM customers c 
+SELECT c.*, ca.*, p.product_name, u.user_name
+FROM customers c
 JOIN customer_activities ca ON c.customer_id = ca.customer_id
 JOIN products p ON ca.product_id = p.product_id
 JOIN users u ON ca.user_id = u.user_id
@@ -225,6 +241,7 @@ AND s.created_date >= DATEADD(month, -6, GETDATE());
 ```
 
 **Index Analysis Results**:
+
 - **Missing Indexes**: 15 tables lacking proper indexing on frequently queried columns
 - **Unused Indexes**: 23 indexes created but never used, consuming storage and update time
 - **Fragmented Indexes**: 8 heavily fragmented indexes with >30% fragmentation
@@ -235,12 +252,14 @@ AND s.created_date >= DATEADD(month, -6, GETDATE());
 **Memory Leak Investigation**:
 
 **Identified Issues**:
+
 1. **User Session Objects**: Not properly cleaned up after user logout
 2. **Database Connection Handling**: Connections not released in error scenarios
 3. **Large Object Caching**: Customer activity data cached indefinitely
 4. **Event Listeners**: JavaScript event listeners accumulating without cleanup
 
 **Code Performance Bottlenecks**:
+
 ```java
 // PROBLEMATIC CODE PATTERN IDENTIFIED
 public List<Customer> getCustomerActivities(Long customerId) {
@@ -265,18 +284,21 @@ public List<Customer> getCustomerActivities(Long customerId) {
 **Emergency Performance Improvements** (0-24 hours):
 
 **Database Optimization**:
+
 - **Index Creation**: Create missing indexes on high-traffic query columns
 - **Statistics Update**: Update all table statistics and query execution plans
 - **Connection Pool**: Increase database connection pool from 100 to 200
 - **Query Timeout**: Increase query timeout from 30 to 60 seconds temporarily
 
 **Application Server Tuning**:
+
 - **Memory Allocation**: Increase JVM heap size from 4GB to 8GB per server
 - **Garbage Collection**: Optimize GC settings for better memory management
 - **Connection Cleanup**: Deploy hotfix for database connection cleanup
 - **Session Management**: Implement aggressive session timeout (15 minutes)
 
 **Infrastructure Scaling**:
+
 - **Load Balancer**: Add 4th application server to distribute load
 - **CDN Implementation**: Implement content delivery network for static assets
 - **Database Read Replicas**: Redirect read-only queries to secondary database
@@ -287,20 +309,21 @@ public List<Customer> getCustomerActivities(Long customerId) {
 **Database Performance Enhancement**:
 
 **Query Optimization Strategy**:
+
 ```sql
 -- OPTIMIZED QUERY 1: Customer Activity History
 -- Added proper indexing and query restructuring
-CREATE INDEX idx_customer_activities_date_customer 
+CREATE INDEX idx_customer_activities_date_customer
 ON customer_activities (activity_date DESC, customer_id);
 
-CREATE INDEX idx_customers_created_date 
+CREATE INDEX idx_customers_created_date
 ON customers (created_date);
 
 -- Rewritten query with proper joins and filtering
-SELECT c.customer_id, c.company_name, 
+SELECT c.customer_id, c.company_name,
        ca.activity_date, ca.activity_type,
        p.product_name, u.user_name
-FROM customers c 
+FROM customers c
 INNER JOIN customer_activities ca ON c.customer_id = ca.customer_id
 INNER JOIN products p ON ca.product_id = p.product_id
 INNER JOIN users u ON ca.user_id = u.user_id
@@ -313,26 +336,27 @@ LIMIT 1000;
 **Application Code Optimization**:
 
 **Resolved Memory Leak Issues**:
+
 ```java
 // IMPROVED CODE WITH PROPER RESOURCE MANAGEMENT
 @Service
 public class CustomerService {
-    
+
     @Autowired
     private CustomerRepository customerRepository;
-    
+
     @Transactional(readOnly = true)
     public List<CustomerActivityDTO> getCustomerActivities(Long customerId) {
         // Solution 1: Use efficient batch query
         List<CustomerActivity> activities = customerRepository
             .findActivitiesWithUserAndProductByCustomerId(customerId);
-        
+
         // Solution 2: Use DTO projection to reduce memory usage
         return activities.stream()
             .map(this::mapToDTO)
             .collect(Collectors.toList());
     }
-    
+
     // Solution 3: Proper resource cleanup
     @PreDestroy
     public void cleanup() {
@@ -345,12 +369,14 @@ public class CustomerService {
 #### Infrastructure Scalability Improvements
 
 **Auto-Scaling Implementation**:
+
 - **Application Servers**: Implement auto-scaling based on CPU and memory thresholds
 - **Database Scaling**: Configure read replicas with automatic failover
 - **Load Balancing**: Implement intelligent load balancing with health checks
 - **CDN Optimization**: Deploy global CDN with edge caching
 
 **Monitoring and Alerting Enhancement**:
+
 - **Performance Dashboards**: Real-time performance monitoring dashboards
 - **Proactive Alerting**: Alert thresholds for response time, error rate, resource usage
 - **Capacity Planning**: Automated capacity planning based on usage trends
@@ -361,24 +387,28 @@ public class CustomerService {
 #### Phase 1: Emergency Stabilization (Week 1)
 
 **Days 1-2: Immediate Relief**
+
 - Deploy database index optimizations
 - Increase application server memory and connection pools
 - Implement emergency query timeouts and connection cleanup
 - Add 4th application server to load balancer
 
 **Days 3-5: Quick Wins**
+
 - Deploy application memory leak fixes
 - Implement CDN for static content delivery
 - Configure database read replicas for reporting queries
 - Enhance monitoring and alerting systems
 
 **Days 6-7: Validation**
+
 - Performance testing to validate improvements
 - User acceptance testing with key stakeholders
 - Documentation of emergency changes made
 - Baseline establishment for ongoing monitoring
 
 **Success Criteria**:
+
 - Page load times reduced to <10 seconds
 - Error rate reduced to <5%
 - System availability >99% during business hours
@@ -387,18 +417,21 @@ public class CustomerService {
 #### Phase 2: Performance Optimization (Weeks 2-3)
 
 **Week 2: Database and Query Optimization**
+
 - Complete database index optimization project
 - Implement query rewriting for top 20 slow queries
 - Deploy database connection pooling improvements
 - Implement query result caching for frequent operations
 
 **Week 3: Application Performance Enhancement**
+
 - Deploy comprehensive application code optimizations
 - Implement advanced caching strategies (Redis/Memcached)
 - Optimize user session management and cleanup
 - Deploy performance monitoring at application level
 
 **Success Criteria**:
+
 - Page load times consistently <5 seconds
 - Database query performance improved by 70%
 - Memory utilization stabilized below 70%
@@ -407,18 +440,21 @@ public class CustomerService {
 #### Phase 3: Scalability and Resilience (Week 4)
 
 **Infrastructure Enhancement**:
+
 - Complete auto-scaling implementation
 - Deploy advanced load balancing with health checks
 - Implement disaster recovery and backup strategies
 - Deploy comprehensive performance monitoring
 
 **Process Improvement**:
+
 - Establish performance testing as part of CI/CD pipeline
 - Create runbooks for performance issue resolution
 - Train development team on performance best practices
 - Implement code review standards for performance
 
 **Success Criteria**:
+
 - System handles 150% normal load without degradation
 - Auto-scaling responds effectively to load changes
 - Comprehensive monitoring provides early warning
@@ -429,12 +465,14 @@ public class CustomerService {
 #### Proactive Performance Monitoring
 
 **Real-Time Performance Dashboards**:
+
 - **User Experience Metrics**: Page load times, error rates, transaction success
 - **System Performance**: CPU, memory, disk, network utilization across all servers
 - **Database Performance**: Query execution times, connection pool usage, deadlocks
 - **Business Impact**: User productivity metrics, transaction volumes, revenue impact
 
 **Automated Alerting Thresholds**:
+
 - **Critical Alerts**: Page load time >10 seconds, error rate >5%, system availability <99%
 - **Warning Alerts**: Response time >5 seconds, memory usage >80%, database connections >85%
 - **Capacity Alerts**: Growth trends indicating need for scaling within 30 days
@@ -443,12 +481,14 @@ public class CustomerService {
 #### Performance Testing and Quality Assurance
 
 **Continuous Performance Testing**:
+
 - **Load Testing**: Weekly automated load tests simulating normal and peak usage
 - **Stress Testing**: Monthly stress tests to identify breaking points and limits
 - **Endurance Testing**: Quarterly 72-hour endurance tests to identify memory leaks
 - **Spike Testing**: Simulated traffic spikes to test auto-scaling responsiveness
 
 **Development Process Integration**:
+
 - **Performance Requirements**: Define performance criteria for all new features
 - **Code Review Standards**: Include performance considerations in code review process
 - **CI/CD Integration**: Automated performance testing in deployment pipeline
@@ -457,18 +497,21 @@ public class CustomerService {
 #### Knowledge Transfer and Training
 
 **Team Education Programs**:
+
 - **Performance Troubleshooting**: Train all technical staff on systematic troubleshooting
 - **Monitoring Tools**: Comprehensive training on monitoring and alerting systems
 - **Database Optimization**: Database performance tuning and query optimization training
 - **Application Performance**: Code-level performance optimization techniques
 
 **Documentation and Runbooks**:
+
 - **Troubleshooting Guides**: Step-by-step guides for common performance issues
 - **Performance Baselines**: Document normal performance characteristics and thresholds
 - **Escalation Procedures**: Clear escalation paths for performance incidents
 - **Recovery Procedures**: Detailed procedures for performance issue resolution
 
 ## Usage Instructions
+
 1. Start with comprehensive problem symptom documentation and impact assessment
 2. Conduct systematic investigation using multiple diagnostic approaches
 3. Develop and test hypotheses using structured analytical methods
@@ -479,8 +522,11 @@ public class CustomerService {
 8. Train team members on systematic troubleshooting methodologies
 
 ## Examples
+
 ### Example 1: Network Connectivity Issues
-**Input**: 
+
+**Input**:
+
 ```
 {{system_type}}: Corporate network infrastructure
 {{problem_category}}: Intermittent connectivity issues
@@ -492,7 +538,9 @@ public class CustomerService {
 **Output**: [Network troubleshooting analysis with systematic connectivity diagnosis, bandwidth analysis, infrastructure assessment, and comprehensive solution implementation]
 
 ### Example 2: Manufacturing Equipment Malfunction
+
 **Input**:
+
 ```
 {{system_type}}: Automated manufacturing equipment
 {{problem_category}}: Equipment malfunction and quality issues
@@ -504,11 +552,13 @@ public class CustomerService {
 **Output**: [Manufacturing troubleshooting approach with equipment diagnostics, quality analysis, preventive maintenance, and production optimization]
 
 ## Related Prompts
+
 - [System Architecture Analyst](/prompts/technical/system-architecture.md)
 - [Performance Optimization Expert](/prompts/optimization/performance-tuning.md)
 - [Incident Response Specialist](/prompts/problem-solving/incident-response.md)
 
 ## Research Notes
+
 - Based on systematic troubleshooting methodologies and diagnostic best practices
 - Integrates technical analysis with business impact assessment
 - Emphasizes prevention strategies and long-term system optimization

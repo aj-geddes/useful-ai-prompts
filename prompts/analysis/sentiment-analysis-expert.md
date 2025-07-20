@@ -1,6 +1,7 @@
 # Sentiment Analysis Expert and Emotional Intelligence Analyst
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: sentiment analysis, emotion detection, text analytics, NLP, social listening
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines advanced sentiment analysis expertise with emotional intelligence to extract nuanced insights from text data. It employs NLP techniques and psychological frameworks to understand emotions, opinions, and attitudes at scale.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise sentiment analysis system combining:
 
@@ -87,17 +90,16 @@ DELIVER YOUR ANALYSIS AS:
 ### SENTIMENT LANDSCAPE OVERVIEW
 
 #### Sentiment Distribution Dashboard
-```
-Overall Sentiment Breakdown:
-┌─────────────────────────────────────────────┐
-│ SENTIMENT SCORE: ████████░░ 7.2/10 (↑0.3) │
-├─────────────────────────────────────────────┤
-│ Positive  ████████████████ 42% (↑5%)       │
-│ Neutral   ██████████ 31% (↓2%)             │
-│ Negative  ████████ 27% (↓3%)               │
-├─────────────────────────────────────────────┤
-│ Total Volume: 48,392 mentions               │
-│ Engagement Rate: 4.7% (above average)       │
+
+**Overall Sentiment Breakdown:**
+- **Sentiment Score**: 7.2/10 (↑0.3)
+- **Positive**: 42% (↑5%) ████████████████
+- **Neutral**: 31% (↓2%) ██████████
+- **Negative**: 27% (↓3%) ████████
+
+**Volume Metrics:**
+- **Total Volume**: 48,392 mentions
+- **Engagement Rate**: 4.7% (above average)
 │ Virality Score: 6.8/10                      │
 └─────────────────────────────────────────────┘
 
@@ -120,6 +122,7 @@ Apr 30: Recovery campaign (+12% positive)
 ```
 
 #### Emotional Spectrum Analysis
+
 ```
 Emotion Detection Results (Plutchik Model):
                     Joy
@@ -147,6 +150,7 @@ Primary Emotional Clusters:
 ### DETAILED SENTIMENT ANALYSIS
 
 #### Aspect-Based Sentiment Breakdown
+
 ```
 Product/Service Aspect Sentiment:
 ┌────────────────┬─────────┬─────────┬─────────┐
@@ -175,6 +179,7 @@ Key Insights:
 ```
 
 #### Sentiment Drivers Analysis
+
 ```python
 # Top Positive Drivers
 positive_themes = {
@@ -201,7 +206,7 @@ positive_themes = {
     }
 }
 
-# Top Negative Drivers  
+# Top Negative Drivers
 negative_themes = {
     'support_response_time': {
         'frequency': 1823,
@@ -223,6 +228,7 @@ negative_themes = {
 ### EMOTIONAL JOURNEY MAPPING
 
 #### Customer Emotional Timeline
+
 ```
 Typical Customer Emotional Journey:
          Excitement
@@ -243,6 +249,7 @@ Critical Intervention Points: Week 1, Week 4
 ```
 
 #### Sentiment Contagion Analysis
+
 ```
 Social Influence Patterns:
 ┌─────────────────────────────────────────────┐
@@ -261,7 +268,7 @@ Social Influence Patterns:
 │ • Cascade Effect: 4.7x amplification       │
 └─────────────────────────────────────────────┘
 
-Key Finding: Negative sentiment spreads 
+Key Finding: Negative sentiment spreads
 47% faster than positive sentiment
 
 Mitigation Strategy Required
@@ -270,6 +277,7 @@ Mitigation Strategy Required
 ### COMPETITIVE SENTIMENT ANALYSIS
 
 #### Brand Sentiment Comparison
+
 ```
 Market Sentiment Landscape:
                  Positive Sentiment %
@@ -292,6 +300,7 @@ Momentum: +2.3% monthly (Fastest growing)
 ```
 
 #### Topic-Based Competitive Analysis
+
 ```
 Sentiment by Key Topics:
                     Us    Comp A  Comp B  Industry
@@ -313,6 +322,7 @@ Competitive Weaknesses:
 ### REAL-TIME ALERTS & EMERGING ISSUES
 
 #### Sentiment Anomaly Detection
+
 ```
 Active Sentiment Alerts:
 ┌─────────────────────────────────────────────┐
@@ -336,6 +346,7 @@ Expected Duration: 24-48 hours if handled well
 ```
 
 #### Emerging Theme Detection
+
 ```python
 # Emerging Topics (Last 7 Days)
 emerging_themes = {
@@ -373,6 +384,7 @@ next_30_days_forecast = {
 ### LINGUISTIC & CULTURAL ANALYSIS
 
 #### Language Pattern Insights
+
 ```
 Communication Style Analysis:
 ┌─────────────────────────────────────────────┐
@@ -399,6 +411,7 @@ Technical/Detailed: 74% positive
 ```
 
 #### Cross-Cultural Sentiment Variations
+
 ```
 Regional Sentiment Differences:
                     US    UK    DE    JP    BR
@@ -419,6 +432,7 @@ Cultural Insights:
 ### PREDICTIVE SENTIMENT MODELING
 
 #### Sentiment Trajectory Forecast
+
 ```
 30-Day Sentiment Prediction:
   55%│         ╱─── Optimistic (30%)
@@ -446,6 +460,7 @@ Risk Factors:
 ### ACTIONABLE RECOMMENDATIONS
 
 #### Strategic Response Framework
+
 ```
 Priority Action Matrix:
                     High Impact
@@ -479,6 +494,7 @@ Strategic Initiatives (This Quarter):
 ```
 
 #### Communication Strategy
+
 ```
 Sentiment-Driven Messaging:
 ┌─────────────────────────────────────────────┐
@@ -507,6 +523,7 @@ CEO Communication: Crisis/major positive only
 ### MEASUREMENT & MONITORING
 
 #### Sentiment KPI Dashboard
+
 ```
 Real-Time Sentiment Metrics:
 ┌─────────────────────────────────────────────┐
@@ -534,16 +551,21 @@ Alert Thresholds:
 ### APPENDICES
 
 #### A. Methodology & Algorithms
+
 [NLP models used, accuracy metrics, validation approach]
 
 #### B. Detailed Linguistic Analysis
+
 [Part-of-speech patterns, semantic networks, emotion lexicons]
 
 #### C. Historical Sentiment Patterns
+
 [Long-term trends, seasonal variations, event impacts]
 
 #### D. Response Templates
+
 [Pre-approved messages for common sentiment scenarios]
+
 ```
 
 ## Usage Instructions
@@ -558,13 +580,15 @@ Alert Thresholds:
 
 ## Examples
 ### Example 1: Product Launch Sentiment Analysis
-**Input**: 
+**Input**:
 ```
+
 {{data_source}}: Twitter, Reddit, product reviews
 {{volume}}: 15,000 mentions over 2 weeks
 {{domain}}: Consumer electronics - smartphone launch
 {{analysis_objective}}: Assess launch success and identify issues
 {{specific_focus}}: Camera features, battery life, price perception
+
 ```
 
 **Output**: [Comprehensive analysis showing 73% positive sentiment with camera innovation driving enthusiasm, but 31% negative sentiment on battery concerns, with specific recommendations for marketing messages and product improvements]
@@ -580,3 +604,4 @@ Alert Thresholds:
 - Includes predictive modeling and trend detection
 - Emphasizes actionable insights over metrics
 - Integrates competitive context and cultural factors
+```

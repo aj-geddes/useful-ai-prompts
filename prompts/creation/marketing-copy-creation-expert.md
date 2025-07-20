@@ -1,6 +1,7 @@
 # Marketing Copy Creation Expert and Conversion Psychology Specialist
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: copywriting, marketing, advertising, conversion optimization, brand messaging
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines master marketing copywriting expertise with conversion psychology to create persuasive copy that drives action. It employs proven copywriting formulas, psychological triggers, and brand voice development to maximize marketing effectiveness across all channels.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise marketing copy system combining:
 
@@ -86,6 +89,7 @@ DELIVER YOUR COPY AS:
 **Goal**: 500 paid conversions in 30 days
 
 **Brand Voice Attributes**:
+
 - Friendly expert (not condescending)
 - Results-focused
 - Slightly playful
@@ -95,7 +99,7 @@ DELIVER YOUR COPY AS:
 
 #### HERO SECTION
 
-**Headline**: 
+**Headline**:
 Your Emails Write Themselves Now
 (So You Can Focus on Growing Your Business)
 
@@ -104,7 +108,7 @@ Join 12,847 businesses using AI to create emails that get 3x more opens, 5x more
 
 **CTA Button**: Start Free 14-Day Trial
 
-**Trust Bar**: 
+**Trust Bar**:
 Trusted by: [Logo parade of recognizable brands]
 
 #### PROBLEM SECTION
@@ -118,7 +122,7 @@ You're not alone. We surveyed 500 small business owners, and here's what they to
 - 📉 **"My open rates keep dropping"** (67%)
 - 🤯 **"I'm overwhelmed by all the tools"** (89%)
 
-Sound familiar? 
+Sound familiar?
 
 Here's the thing: You started your business to do what you love—not to become an email marketing expert.
 
@@ -134,7 +138,7 @@ SmartMail AI doesn't just help you write emails. It becomes your personal copywr
 ⚡ **Creates in Seconds**: Generate entire campaigns faster than making coffee
 
 **Mini Case Study Box**:
-"I went from 6 hours to 6 minutes per campaign. My open rates doubled, and I actually enjoy email marketing now!" 
+"I went from 6 hours to 6 minutes per campaign. My open rates doubled, and I actually enjoy email marketing now!"
 — Sarah Chen, Boutique Owner
 
 #### BENEFITS SECTION
@@ -176,6 +180,7 @@ Schedule months of campaigns in an afternoon. Our AI even adjusts send times bas
 — David Liu, E-commerce Store Owner
 
 **Stats Bar**:
+
 - 4.8/5 Average Rating
 - 12,847 Active Users
 - 2.3M Emails Sent Daily
@@ -248,14 +253,16 @@ No credit card required • Setup in 5 minutes • Cancel anytime
 #### GOOGLE ADS
 
 **Search Ad 1**:
+
 ```
 AI Email Writer - 3X Your Opens
-Write Converting Emails in Minutes, Not Hours. 
+Write Converting Emails in Minutes, Not Hours.
 14-Day Free Trial. No Credit Card Required.
 Ad·smartmail.ai/free-trial
 ```
 
 **Search Ad 2**:
+
 ```
 Email Marketing That Works - SmartMail AI
 Join 12,847 Businesses Getting 5X More Clicks.
@@ -264,6 +271,7 @@ Ad·smartmail.ai/demo
 ```
 
 **Responsive Display Ad**:
+
 - Headline 1: Your Emails Write Themselves
 - Headline 2: AI-Powered Email Marketing
 - Headline 3: 3X Your Email Opens
@@ -273,6 +281,7 @@ Ad·smartmail.ai/demo
 #### FACEBOOK/INSTAGRAM ADS
 
 **Ad 1 - Problem/Solution**:
+
 ```
 Still spending hours writing marketing emails? 😩
 
@@ -288,6 +297,7 @@ Try SmartMail AI free for 14 days →
 ```
 
 **Ad 2 - Social Proof**:
+
 ```
 "I went from 6 hours to 6 minutes per email campaign"
 - Sarah C., Boutique Owner
@@ -311,6 +321,7 @@ Slide 4: "Try it free for 14 days"
 #### LINKEDIN AD
 
 **Sponsored Content**:
+
 ```
 Tired of email marketing eating up your work week?
 
@@ -331,6 +342,7 @@ See how it works → [Link]
 #### WELCOME EMAIL 1
 
 **Subject Lines** (A/B Test):
+
 - A: Welcome! Here's how to 3x your email opens starting today
 - B: {FirstName}, your email game is about to change
 - C: 🎉 You're in! Plus a surprise inside...
@@ -353,7 +365,7 @@ Instead, here's what I want you to do RIGHT NOW:
 **Step 3**: Generate your first campaign
 (Seriously, try it now while you're excited!)
 
-Most users see their first "aha!" moment within 15 minutes. 
+Most users see their first "aha!" moment within 15 minutes.
 
 Let's make that happen for you.
 
@@ -372,7 +384,7 @@ P.S. Stuck? Reply to this email. A real human (usually me) responds within 2 hou
 **Body**:
 Hi {FirstName},
 
-I noticed you started setting up SmartMail AI but didn't finish. 
+I noticed you started setting up SmartMail AI but didn't finish.
 
 No judgment—we're all busy. But here's what you're missing:
 
@@ -467,18 +479,21 @@ Stop wrestling with email marketing. Start connecting with customers.
 SmartMail AI is the first email platform that truly writes in your voice. Upload a few past emails, and our AI becomes your personal copywriter—crafting campaigns that sound like you on your best day, optimized for maximum engagement.
 
 **What makes it different:**
+
 - **Your Voice, Amplified**: AI learns your unique style, not generic templates
-- **Data-Driven Everything**: Every word backed by 2B+ email insights  
+- **Data-Driven Everything**: Every word backed by 2B+ email insights
 - **True Automation**: Set up months of campaigns in an afternoon
 - **Results You Can See**: Average user sees 3x open rates in 30 days
 
 **Perfect for:**
+
 - Small business owners drowning in marketing tasks
-- Solopreneurs who need professional emails yesterday  
+- Solopreneurs who need professional emails yesterday
 - Marketing managers juggling too many campaigns
 - Anyone who knows email marketing works but hates doing it
 
 **Includes:**
+
 - AI copywriting assistant trained on your voice
 - Subject line optimizer with A/B testing
 - Smart send-time optimization
@@ -493,18 +508,21 @@ Join 12,847 businesses already saving 10+ hours per week while getting better re
 ### A/B TEST VARIANTS
 
 **Headline Tests**:
+
 - A: Your Emails Write Themselves Now
 - B: Create Emails That Get 3X More Opens in 60 Seconds
 - C: Finally, Email Marketing That Doesn't Suck
 - D: Join 12,847 Businesses Writing Better Emails in Less Time
 
 **CTA Button Tests**:
+
 - A: Start Free 14-Day Trial
 - B: Try SmartMail AI Free
 - C: Get Started - No Card Required
 - D: See It In Action
 
 **Social Proof Tests**:
+
 - A: Logo parade
 - B: User count emphasis
 - C: Testimonial focus
@@ -512,9 +530,10 @@ Join 12,847 businesses already saving 10+ hours per week while getting better re
 
 ### COMPLIANCE DISCLAIMERS
 
-*Results based on average user data from 2023-2024. Individual results may vary. Email marketing success depends on multiple factors including list quality, industry, and implementation. SmartMail AI is a tool to assist with email creation and optimization; it does not guarantee specific results. All testimonials are from real users but represent their individual experiences. Your results may differ. 30-day money-back guarantee applies to all plans with standard terms and conditions.*
+_Results based on average user data from 2023-2024. Individual results may vary. Email marketing success depends on multiple factors including list quality, industry, and implementation. SmartMail AI is a tool to assist with email creation and optimization; it does not guarantee specific results. All testimonials are from real users but represent their individual experiences. Your results may differ. 30-day money-back guarantee applies to all plans with standard terms and conditions._
 
 ## Usage Instructions
+
 1. Define clear campaign objectives and success metrics
 2. Research target audience deeply - pain points, desires, objections
 3. Establish brand voice guidelines before writing
@@ -525,8 +544,11 @@ Join 12,847 businesses already saving 10+ hours per week while getting better re
 8. Test multiple variants and iterate based on data
 
 ## Examples
+
 ### Example 1: SaaS Landing Page
-**Input**: 
+
+**Input**:
+
 ```
 {{copy_type}}: Landing page
 {{target_audience}}: HR managers at mid-size companies
@@ -538,7 +560,9 @@ Join 12,847 businesses already saving 10+ hours per week while getting better re
 **Output**: [Complete landing page copy with headline "Turn Exit Interviews Into Stay Interviews", benefit-focused sections, ROI calculator, and social proof]
 
 ### Example 2: E-commerce Product Launch
+
 **Input**:
+
 ```
 {{copy_type}}: Email campaign
 {{target_audience}}: Existing customers, fitness enthusiasts
@@ -550,11 +574,13 @@ Join 12,847 businesses already saving 10+ hours per week while getting better re
 **Output**: [5-email launch sequence with scarcity elements, customer success stories, and progressive discounts]
 
 ## Related Prompts
+
 - [Sales Copy Specialist](/prompts/creation/sales-copy-specialist.md)
 - [Brand Voice Developer](/prompts/creation/brand-voice-developer.md)
 - [Conversion Optimization Expert](/prompts/analysis/conversion-optimization.md)
 
 ## Research Notes
+
 - Based on analysis of 10,000+ high-converting campaigns
 - Incorporates latest behavioral psychology research
 - Optimized for multi-channel consistency

@@ -1,6 +1,7 @@
 ## Full Terraform Project Validator, Fixer & Git Automation Prompt
 
 ### Instructions:
+
 Ask the user for a [PROJECT_PATH], the local path to the Terraform project they want to validate.
 Ask the user for a [GIT_REPO_URL], the Git repository where fixes should be committed and pushed.
 

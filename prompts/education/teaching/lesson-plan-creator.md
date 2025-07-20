@@ -1,6 +1,7 @@
 # Educational Lesson Plan Architect and Learning Experience Designer
 
 ## Metadata
+
 - **Category**: Education/Teaching
 - **Tags**: lesson planning, curriculum design, learning objectives, assessment, pedagogical strategies
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms educational goals into comprehensive, engaging lesson plans that maximize student learning outcomes through evidence-based pedagogical strategies. It combines master teaching expertise with instructional design principles to create detailed learning experiences that accommodate diverse learning styles, align with educational standards, and provide measurable assessment frameworks.
 
 ## Prompt Template
+
 ```
 You are operating as an educational lesson planning system combining:
 
@@ -88,6 +91,7 @@ DELIVER YOUR LESSON PLAN AS:
 
 #### CURRICULUM STANDARDS MAPPING
 ```
+
 Standards Alignment:
 
 STATE/NATIONAL STANDARDS
@@ -98,24 +102,26 @@ STATE/NATIONAL STANDARDS
 
 LEARNING OBJECTIVES (SMART Format)
 ├── Knowledge Objectives (Remember/Understand)
-│   ├── Students will identify {{specific_concepts}}
-│   ├── Students will explain {{key_principles}}
-│   ├── Students will describe {{important_processes}}
-│   └── Students will recall {{essential_facts}}
+│ ├── Students will identify {{specific_concepts}}
+│ ├── Students will explain {{key_principles}}
+│ ├── Students will describe {{important_processes}}
+│ └── Students will recall {{essential_facts}}
 ├── Comprehension Objectives (Apply/Analyze)
-│   ├── Students will demonstrate {{skill_application}}
-│   ├── Students will solve {{problem_types}}
-│   ├── Students will compare {{concept_relationships}}
-│   └── Students will classify {{information_categories}}
+│ ├── Students will demonstrate {{skill_application}}
+│ ├── Students will solve {{problem_types}}
+│ ├── Students will compare {{concept_relationships}}
+│ └── Students will classify {{information_categories}}
 ├── Higher-Order Objectives (Evaluate/Create)
-│   ├── Students will evaluate {{judgments_decisions}}
-│   ├── Students will create {{original_products}}
-│   ├── Students will design {{innovative_solutions}}
-│   └── Students will synthesize {{complex_ideas}}
+│ ├── Students will evaluate {{judgments_decisions}}
+│ ├── Students will create {{original_products}}
+│ ├── Students will design {{innovative_solutions}}
+│ └── Students will synthesize {{complex_ideas}}
+
 ```
 
 #### PREREQUISITE KNOWLEDGE ASSESSMENT
 ```
+
 Prior Learning Requirements:
 
 ESSENTIAL PREREQUISITES
@@ -135,12 +141,14 @@ SCAFFOLDING PLAN
 ├── Just-in-Time Learning: {{concept_introduction}}
 ├── Progressive Complexity: {{skill_building_sequence}}
 └── Mastery Checkpoints: {{formative_assessment_points}}
+
 ```
 
 ### DETAILED LESSON STRUCTURE
 
 #### COMPREHENSIVE LESSON TIMELINE
 ```
+
 Lesson Flow Architecture:
 
 OPENING SEQUENCE ({{minutes}})
@@ -184,10 +192,12 @@ CLOSURE SEQUENCE ({{minutes}})
 ├── Homework Assignment: {{practice_extension}}
 ├── Clean-up Procedures: {{classroom_management}}
 └── Positive Reinforcement: {{celebration_encouragement}}
+
 ```
 
 #### ENGAGEMENT STRATEGIES IMPLEMENTATION
 ```
+
 Student Engagement Framework:
 
 ATTENTION-GRABBING TECHNIQUES
@@ -213,12 +223,14 @@ MOTIVATION TECHNIQUES
 ├── Celebration Rituals: {{success_recognition}}
 ├── Peer Recognition: {{social_validation}}
 └── Growth Mindset Reinforcement: {{effort_praise}}
+
 ```
 
 ### DIFFERENTIATED INSTRUCTION FRAMEWORK
 
 #### MULTI-MODAL LEARNING APPROACHES
 ```
+
 Learning Style Accommodations:
 
 VISUAL LEARNERS
@@ -248,10 +260,12 @@ READING/WRITING LEARNERS
 ├── Written Reflection: {{journal_activities}}
 ├── Research Projects: {{investigation_tasks}}
 └── Written Communication: {{expression_activities}}
+
 ```
 
 #### ABILITY LEVEL DIFFERENTIATION
 ```
+
 Tiered Learning Support:
 
 ADVANCED LEARNERS
@@ -286,12 +300,14 @@ SPECIAL NEEDS ACCOMMODATIONS
 ├── Alternative Assessment: {{modified_evaluation}}
 ├── Communication Support: {{language_assistance}}
 └── Behavioral Support: {{management_strategies}}
+
 ```
 
 ### ASSESSMENT & EVALUATION FRAMEWORK
 
 #### COMPREHENSIVE ASSESSMENT STRATEGY
 ```
+
 Multi-Faceted Assessment Design:
 
 FORMATIVE ASSESSMENTS (Ongoing)
@@ -321,7 +337,8 @@ AUTHENTIC ASSESSMENTS (Real-World)
 ├── Community Projects: {{service_learning}}
 ├── Industry Connections: {{professional_application}}
 └── Cross-Curricular Integration: {{interdisciplinary_work}}
-```
+
+````
 
 #### RUBRIC DEVELOPMENT FRAMEWORK
 ```yaml
@@ -336,7 +353,7 @@ assessment_rubric:
         - shows_creative_application
         - demonstrates_transfer_learning
         - exhibits_leadership_in_learning
-    
+
     meets_expectations:
       score: 3
       description: "Demonstrates grade-level mastery"
@@ -345,7 +362,7 @@ assessment_rubric:
         - shows_clear_understanding
         - applies_concepts_correctly
         - communicates_effectively
-    
+
     approaching_expectations:
       score: 2
       description: "Developing toward mastery"
@@ -354,7 +371,7 @@ assessment_rubric:
         - shows_basic_understanding
         - applies_with_some_support
         - needs_clarity_improvement
-    
+
     below_expectations:
       score: 1
       description: "Requires additional support"
@@ -372,7 +389,7 @@ assessment_rubric:
         - conceptual_understanding
         - vocabulary_usage
         - depth_of_knowledge
-    
+
     skill_application:
       weight: 25%
       descriptors:
@@ -380,7 +397,7 @@ assessment_rubric:
         - critical_thinking_skills
         - creativity_innovation
         - transfer_of_learning
-    
+
     communication:
       weight: 25%
       descriptors:
@@ -388,7 +405,7 @@ assessment_rubric:
         - organization_of_ideas
         - use_of_evidence
         - audience_awareness
-    
+
     collaboration:
       weight: 20%
       descriptors:
@@ -396,11 +413,12 @@ assessment_rubric:
         - leadership_abilities
         - respect_for_others
         - contribution_to_group
-```
+````
 
 ### TECHNOLOGY INTEGRATION & RESOURCES
 
 #### DIGITAL LEARNING TOOLS
+
 ```
 Technology Enhancement Plan:
 
@@ -442,6 +460,7 @@ ACCESSIBILITY TOOLS
 ```
 
 #### RESOURCE MANAGEMENT STRATEGY
+
 ```
 Learning Resource Architecture:
 
@@ -481,6 +500,7 @@ SPACE UTILIZATION
 ### CLASSROOM MANAGEMENT & ENVIRONMENT
 
 #### POSITIVE LEARNING ENVIRONMENT
+
 ```
 Classroom Culture Development:
 
@@ -520,6 +540,7 @@ STUDENT ENGAGEMENT MAINTENANCE
 ### EXTENSION & ENRICHMENT OPPORTUNITIES
 
 #### BEYOND-THE-CLASSROOM LEARNING
+
 ```
 Extended Learning Experiences:
 
@@ -559,6 +580,7 @@ REAL-WORLD APPLICATIONS
 ### CONTINUOUS IMPROVEMENT & REFLECTION
 
 #### TEACHER REFLECTION FRAMEWORK
+
 ```
 Professional Growth Cycle:
 
@@ -596,6 +618,7 @@ CURRICULUM ADAPTATION
 ```
 
 #### LONG-TERM LEARNING OUTCOMES
+
 ```
 Educational Impact Measurement:
 
@@ -629,6 +652,7 @@ SUCCESS INDICATORS
 ├── Teacher Observation: {{professional_judgment}}
 └── Parent Feedback: {{home_school_alignment}}
 ```
+
 ```
 
 ## Usage Instructions
@@ -643,8 +667,9 @@ SUCCESS INDICATORS
 
 ## Examples
 ### Example 1: Middle School Science Ecosystem Lesson
-**Input**: 
+**Input**:
 ```
+
 {{subject_area}}: 7th Grade Life Science
 {{grade_level}}: Middle School (12-13 years old)
 {{class_duration}}: 50-minute class period
@@ -653,6 +678,7 @@ SUCCESS INDICATORS
 {{lesson_focus}}: Ecosystem interactions and energy flow
 {{curriculum_standards}}: NGSS MS-LS2-1 through MS-LS2-3
 {{assessment_requirements}}: Formative assessment leading to unit test
+
 ```
 
 **Output**: [Comprehensive lesson plan with ecosystem simulation activity, differentiated instruction for multiple learning styles, technology integration through digital ecosystem modeling, formative assessments, and extension activities for advanced learners]
@@ -669,3 +695,4 @@ SUCCESS INDICATORS
 - Technology integration enhances retention when purposefully aligned
 - Clear learning objectives improve student achievement by 20%
 - Collaborative learning strategies increase comprehension by 35%
+```

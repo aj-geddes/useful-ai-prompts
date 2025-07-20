@@ -1,6 +1,7 @@
 # Financial Modeling Expert and Valuation Specialist
 
 ## Metadata
+
 - **Category**: Analysis
 - **Tags**: financial modeling, valuation, DCF analysis, financial forecasting, investment analysis
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines comprehensive financial modeling expertise with advanced valuation techniques to build robust financial models and provide accurate valuations. It employs multiple methodologies to deliver investment-grade financial analysis.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise financial modeling system combining:
 
@@ -88,53 +91,56 @@ DELIVER YOUR ANALYSIS AS:
 
 #### Three-Statement Model Summary
 ```
+
 Historical & Projected Financials ($M):
-         2021A  2022A  2023A  2024E  2025E  2026E  2027E  2028E
-Revenue   450    523    612    725    870   1,044  1,201  1,357
-Growth %   --   16.2%  17.0%  18.5%  20.0%  20.0%  15.0%  13.0%
+2021A 2022A 2023A 2024E 2025E 2026E 2027E 2028E
+Revenue 450 523 612 725 870 1,044 1,201 1,357
+Growth % -- 16.2% 17.0% 18.5% 20.0% 20.0% 15.0% 13.0%
 
-EBITDA     68     84    110    145    192    250    300    346
-Margin %  15.1%  16.1%  18.0%  20.0%  22.0%  24.0%  25.0%  25.5%
+EBITDA 68 84 110 145 192 250 300 346
+Margin % 15.1% 16.1% 18.0% 20.0% 22.0% 24.0% 25.0% 25.5%
 
-EBIT       45     58     82    112    153    203    245    285
-Tax       (11)   (15)   (21)   (28)   (38)   (51)   (61)   (71)
-NOPAT      34     43     61     84    115    152    184    214
+EBIT 45 58 82 112 153 203 245 285
+Tax (11) (15) (21) (28) (38) (51) (61) (71)
+NOPAT 34 43 61 84 115 152 184 214
 
-CapEx     (23)   (26)   (31)   (36)   (44)   (52)   (60)   (68)
-Δ NWC      (9)   (10)   (12)   (15)   (17)   (21)   (18)   (16)
-FCFF       25     33     49     69     93    131    162    189
+CapEx (23) (26) (31) (36) (44) (52) (60) (68)
+Δ NWC (9) (10) (12) (15) (17) (21) (18) (16)
+FCFF 25 33 49 69 93 131 162 189
 
-Terminal Value (Gordon Growth @ 3%):              4,725
-PV of Terminal Value @ 10% WACC:                 2,366
+Terminal Value (Gordon Growth @ 3%): 4,725
+PV of Terminal Value @ 10% WACC: 2,366
 
 Financial Health Indicators:
 Debt/EBITDA: 2.8x → 1.5x (improving)
 Interest Coverage: 5.2x → 12.4x (strong)
 ROIC: 12% → 18% (value creating)
+
 ```
 
 #### Model Architecture & Assumptions
 ```
+
 Key Model Drivers:
 ┌─────────────────────────────────────────────┐
-│ REVENUE BUILD-UP                            │
+│ REVENUE BUILD-UP │
 ├─────────────────────────────────────────────┤
-│ Volume Growth:                              │
-│ • Existing Products: 8-10% CAGR            │
-│ • New Products: 25% of revenue by 2028     │
-│ • Geographic Expansion: +3 markets         │
+│ Volume Growth: │
+│ • Existing Products: 8-10% CAGR │
+│ • New Products: 25% of revenue by 2028 │
+│ • Geographic Expansion: +3 markets │
 ├─────────────────────────────────────────────┤
-│ Pricing Power:                              │
-│ • Annual Increases: 3-4%                   │
-│ • Premium Positioning: +15% vs market      │
-│ • Mix Shift: Higher margin products        │
+│ Pricing Power: │
+│ • Annual Increases: 3-4% │
+│ • Premium Positioning: +15% vs market │
+│ • Mix Shift: Higher margin products │
 ├─────────────────────────────────────────────┤
-│ MARGIN EXPANSION DRIVERS                    │
+│ MARGIN EXPANSION DRIVERS │
 ├─────────────────────────────────────────────┤
-│ • Scale Economies: 200bps improvement      │
-│ • Automation: 150bps by 2026              │
-│ • Mix Enhancement: 100bps                  │
-│ • Total: 450bps expansion to 25.5%        │
+│ • Scale Economies: 200bps improvement │
+│ • Automation: 150bps by 2026 │
+│ • Mix Enhancement: 100bps │
+│ • Total: 450bps expansion to 25.5% │
 └─────────────────────────────────────────────┘
 
 Model Validation Checks: ✓ All Pass
@@ -142,71 +148,76 @@ Balance Sheet balances: ✓
 Cash flow reconciliation: ✓
 Debt schedule integrity: ✓
 Returns vs cost of capital: ✓
+
 ```
 
 ### VALUATION ANALYSIS
 
 #### DCF Valuation
 ```
+
 Discounted Cash Flow Analysis:
 ┌─────────────────────────────────────────────┐
-│ WACC CALCULATION                            │
+│ WACC CALCULATION │
 ├─────────────────────────────────────────────┤
-│ Risk-Free Rate:           4.0%              │
-│ Equity Risk Premium:      6.0%              │
-│ Beta (Levered):          1.25               │
-│ Cost of Equity:          11.5%              │
-│ After-Tax Cost of Debt:   3.8%              │
-│ Target D/E Ratio:        30/70              │
-│ WACC:                    10.0%              │
+│ Risk-Free Rate: 4.0% │
+│ Equity Risk Premium: 6.0% │
+│ Beta (Levered): 1.25 │
+│ Cost of Equity: 11.5% │
+│ After-Tax Cost of Debt: 3.8% │
+│ Target D/E Ratio: 30/70 │
+│ WACC: 10.0% │
 └─────────────────────────────────────────────┘
 
 DCF Valuation Summary:
-PV of Explicit Period FCFF:    $587M
-PV of Terminal Value:         $2,366M
-Enterprise Value:             $2,953M
-Less: Net Debt                ($180M)
-Equity Value:                 $2,773M
-Shares Outstanding:            50.0M
-Value per Share:              $55.46
+PV of Explicit Period FCFF: $587M
+PV of Terminal Value: $2,366M
+Enterprise Value: $2,953M
+Less: Net Debt ($180M)
+Equity Value: $2,773M
+Shares Outstanding: 50.0M
+Value per Share: $55.46
 
 Sensitivity to Key Assumptions:
-            Terminal Growth Rate
-WACC     2.0%    2.5%    3.0%    3.5%    4.0%
-8.0%    $68.42  $71.53  $75.12  $79.31  $84.25
-9.0%    $59.21  $61.45  $64.01  $66.95  $70.35
-10.0%   $51.83  $53.48  $55.46  $57.61  $60.12
-11.0%   $45.87  $47.12  $48.55  $50.19  $52.08
-12.0%   $40.95  $41.93  $43.04  $44.30  $45.74
+Terminal Growth Rate
+WACC 2.0% 2.5% 3.0% 3.5% 4.0%
+8.0% $68.42 $71.53 $75.12 $79.31 $84.25
+9.0% $59.21 $61.45 $64.01 $66.95 $70.35
+10.0% $51.83 $53.48 $55.46 $57.61 $60.12
+11.0% $45.87 $47.12 $48.55 $50.19 $52.08
+12.0% $40.95 $41.93 $43.04 $44.30 $45.74
+
 ```
 
 #### Comparable Company Analysis
 ```
+
 Trading Comparables:
 ┌────────────┬────────┬────────┬────────┬────────┐
-│ Company    │ EV/Rev │EV/EBITDA│ P/E   │ EV/FCFF│
+│ Company │ EV/Rev │EV/EBITDA│ P/E │ EV/FCFF│
 ├────────────┼────────┼────────┼────────┼────────┤
-│ Peer A     │  3.8x  │ 15.2x  │ 22.5x │  18.3x │
-│ Peer B     │  4.2x  │ 16.8x  │ 25.1x │  20.1x │
-│ Peer C     │  3.5x  │ 14.5x  │ 20.8x │  17.2x │
-│ Peer D     │  4.5x  │ 17.3x  │ 26.3x │  21.5x │
-│ Peer E     │  3.9x  │ 15.9x  │ 23.2x │  19.0x │
+│ Peer A │ 3.8x │ 15.2x │ 22.5x │ 18.3x │
+│ Peer B │ 4.2x │ 16.8x │ 25.1x │ 20.1x │
+│ Peer C │ 3.5x │ 14.5x │ 20.8x │ 17.2x │
+│ Peer D │ 4.5x │ 17.3x │ 26.3x │ 21.5x │
+│ Peer E │ 3.9x │ 15.9x │ 23.2x │ 19.0x │
 ├────────────┼────────┼────────┼────────┼────────┤
-│ Mean       │  4.0x  │ 15.9x  │ 23.6x │  19.2x │
-│ Median     │  3.9x  │ 15.9x  │ 23.2x │  19.0x │
-│ Target Co. │  3.4x  │ 13.8x  │ 19.5x │  16.7x │
+│ Mean │ 4.0x │ 15.9x │ 23.6x │ 19.2x │
+│ Median │ 3.9x │ 15.9x │ 23.2x │ 19.0x │
+│ Target Co. │ 3.4x │ 13.8x │ 19.5x │ 16.7x │
 └────────────┴────────┴────────┴────────┴────────┘
 
 Implied Valuation Ranges:
-EV/Revenue (4.0x):    $48-56 per share
-EV/EBITDA (15.9x):    $51-59 per share
-P/E (23.6x):          $49-57 per share
-Average:              $49-57 per share
+EV/Revenue (4.0x): $48-56 per share
+EV/EBITDA (15.9x): $51-59 per share
+P/E (23.6x): $49-57 per share
+Average: $49-57 per share
 
 Relative Position: Trading at discount
 Justified by: Lower margins currently
 Upside: Margin expansion story
-```
+
+````
 
 #### Precedent Transaction Analysis
 ```python
@@ -248,11 +259,12 @@ ma_equity_value = ma_enterprise_value - 180  # Net debt
 ma_value_per_share = ma_equity_value / 50  # Shares
 
 # Result: $63-71 per share in M&A scenario
-```
+````
 
 ### SCENARIO & SENSITIVITY ANALYSIS
 
 #### Scenario Modeling
+
 ```
 Three-Scenario Valuation:
 ┌─────────────────────────────────────────────┐
@@ -284,6 +296,7 @@ Risk/Reward: Attractive (3:1)
 ```
 
 #### Monte Carlo Simulation
+
 ```
 10,000 Simulation Results:
          ┌─────────────────────────────┐
@@ -313,6 +326,7 @@ Probability > $60: 38%
 ### VALUATION RECONCILIATION
 
 #### Football Field Chart
+
 ```
 Valuation Summary by Methodology:
                  $30   $40   $50   $60   $70   $80
@@ -344,6 +358,7 @@ Risk: MEDIUM
 ### FINANCIAL RATIOS & METRICS
 
 #### Return Analysis
+
 ```
 Value Creation Metrics:
 ┌─────────────────────────────────────────────┐
@@ -370,6 +385,7 @@ Capital Allocation Score: B+
 ```
 
 #### Credit Analysis
+
 ```python
 # Leverage & Coverage Metrics
 credit_metrics = {
@@ -399,6 +415,7 @@ credit_metrics = {
 ### INVESTMENT RISKS & MITIGANTS
 
 #### Risk Matrix
+
 ```
 Key Risk Assessment:
 ┌─────────────────────────────────────────────┐
@@ -422,6 +439,7 @@ Downside Protection:
 ### LBO ANALYSIS (APPENDIX)
 
 #### Leveraged Buyout Model
+
 ```
 PE Sponsor Returns Analysis:
 ┌─────────────────────────────────────────────┐
@@ -456,6 +474,7 @@ Total:              $535M value created
 ### RECOMMENDATIONS & CONCLUSIONS
 
 #### Investment Thesis
+
 ```
 STRONG BUY RECOMMENDATION
 
@@ -500,16 +519,21 @@ Stop Loss: $40 (-11%)
 ### APPENDICES
 
 #### A. Detailed Financial Statements
+
 [Complete 3-statement model with supporting schedules]
 
 #### B. Assumption Documentation
+
 [Detailed rationale for each key assumption]
 
 #### C. Comparable Company Profiles
+
 [Detailed peer analysis and selection criteria]
 
 #### D. Management Track Record
+
 [Historical performance vs guidance analysis]
+
 ```
 
 ## Usage Instructions
@@ -524,13 +548,15 @@ Stop Loss: $40 (-11%)
 
 ## Examples
 ### Example 1: Tech Company Growth Equity Valuation
-**Input**: 
+**Input**:
 ```
+
 {{company_asset}}: B2B SaaS company, $100M revenue, 30% growth
 {{purpose}}: Growth equity investment round
 {{financial_data}}: 3 years historical, strong unit economics
 {{key_assumptions}}: 25% revenue CAGR, 30% EBITDA margins at scale
 {{specific_questions}}: What's fair valuation? How much dilution for $50M raise?
+
 ```
 
 **Output**: [Comprehensive model showing $450-500M pre-money valuation based on DCF and trading comps, with 10-11% dilution for $50M investment, detailed sensitivity analysis on growth rates and exit multiples]
@@ -546,3 +572,4 @@ Stop Loss: $40 (-11%)
 - Includes both strategic and financial buyer perspectives
 - Provides clear investment recommendations with risk assessment
 - Integrates scenario planning and Monte Carlo simulation
+```

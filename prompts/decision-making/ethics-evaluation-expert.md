@@ -1,6 +1,7 @@
 # Ethics Evaluation Expert and Moral Decision Analysis Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: ethics evaluation, moral decision analysis, ethical frameworks, values assessment, responsible decision-making
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert ethics evaluation methodology with moral decision analysis specialization to create comprehensive frameworks for assessing ethical implications, resolving moral dilemmas, and ensuring responsible decision-making. It employs established ethical theories, moral reasoning frameworks, and values-based analysis to guide decisions that align with ethical principles and stakeholder values.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise ethics evaluation system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR ETHICS EVALUATION STRATEGY AS:
 **Precedent Setting**: Significant organizational culture change with potential industry influence
 
 **Evaluation Challenges**:
+
 - **Privacy Invasion**: Comprehensive monitoring raising employee privacy and autonomy concerns
 - **Power Imbalance**: Increased managerial surveillance creating workplace power dynamic shifts
 - **Algorithmic Bias**: AI system potential for discrimination and unfair performance evaluation
@@ -94,6 +98,7 @@ DELIVER YOUR ETHICS EVALUATION STRATEGY AS:
 - **Cultural Transformation**: Traditional trust-based culture shifting to data-driven oversight
 
 **Evaluation Success Criteria**:
+
 - Comprehensive ethical framework analysis with multiple perspective integration
 - Clear value prioritization with stakeholder interest balancing and conflict resolution
 - Implementable recommendations with practical guidance and ethical safeguards
@@ -106,6 +111,7 @@ DELIVER YOUR ETHICS EVALUATION STRATEGY AS:
 Deploy comprehensive multi-framework ethical analysis using consequentialist, deontological, virtue ethics, and care ethics perspectives to evaluate AI-powered employee monitoring implementation, ensuring decision alignment with ethical principles while balancing stakeholder interests and organizational objectives.
 
 **Moral Decision Analysis Approach**:
+
 - **Stakeholder-Centric Analysis**: Employee welfare prioritization with management and organizational need consideration
 - **Multi-Cultural Sensitivity**: Diverse workforce values with cultural privacy and autonomy expectations
 - **Principle-Based Reasoning**: Rights preservation with duty fulfillment and virtue demonstration
@@ -113,6 +119,7 @@ Deploy comprehensive multi-framework ethical analysis using consequentialist, de
 - **Implementation Ethics**: Practical moral guidance with ethical safeguard integration and ongoing monitoring
 
 **Strategic Ethical Principles**:
+
 1. **Human Dignity**: Employee personhood respect with privacy protection and autonomy preservation
 2. **Transparency**: Open communication with clear policy and algorithmic decision process explanation
 3. **Justice**: Fair treatment with bias prevention and equitable performance evaluation
@@ -120,6 +127,7 @@ Deploy comprehensive multi-framework ethical analysis using consequentialist, de
 5. **Accountability**: Responsibility acceptance with ethical oversight and corrective action capability
 
 **Expected Evaluation Outcomes**:
+
 - Ethically sound implementation recommendation with comprehensive safeguard integration
 - Stakeholder value alignment with transparent justification and conflict resolution
 - Sustainable ethical framework with ongoing monitoring and improvement capability
@@ -133,6 +141,7 @@ Deploy comprehensive multi-framework ethical analysis using consequentialist, de
 **Employee Stakeholder Group - Primary Affected Party**:
 
 **Individual Privacy and Autonomy Values**:
+
 ```
 Fundamental Privacy Expectations:
 • Personal Information Control: Employees expect control over personal data collection, use, and access
@@ -154,6 +163,7 @@ Dignity and Respect Values:
 ```
 
 **Economic Security and Fairness Concerns**:
+
 ```
 Job Security and Stability:
 • Performance Evaluation Fairness: Concern about algorithmic bias affecting career advancement
@@ -171,6 +181,7 @@ Workplace Equity and Inclusion:
 #### Management and Organizational Stakeholder Analysis
 
 **Operational Efficiency and Performance Values**:
+
 ```
 Productivity Optimization:
 • Performance Visibility: Data-driven insight into team and individual productivity patterns
@@ -186,6 +197,7 @@ Competitive Advantage and Innovation:
 ```
 
 **Fiduciary and Governance Responsibilities**:
+
 ```
 Shareholder Value Creation:
 • Return on Investment: Productivity improvement justifying technology investment and ongoing costs
@@ -207,26 +219,27 @@ Legal and Regulatory Compliance:
 **Utilitarian Calculation Framework**:
 
 **Positive Consequences Assessment**:
+
 ```python
 class ConsequentialistAnalyzer:
     def __init__(self, stakeholder_groups, implementation_scenarios):
         self.stakeholders = stakeholder_groups
         self.scenarios = implementation_scenarios
         self.utility_calculator = UtilityCalculator()
-        
+
     def calculate_aggregate_utility(self, implementation_scenario):
         """Comprehensive utility analysis across all stakeholders"""
-        
+
         stakeholder_utilities = {}
         for stakeholder in self.stakeholders:
             utility_factors = self.assess_stakeholder_utility(stakeholder, implementation_scenario)
             stakeholder_utilities[stakeholder.name] = utility_factors
-        
+
         return self.aggregate_utility_calculation(stakeholder_utilities)
-    
+
     def assess_stakeholder_utility(self, stakeholder, scenario):
         """Calculate utility impact for specific stakeholder group"""
-        
+
         positive_factors = {
             'employees': {
                 'performance_feedback': 6.5,  # Better feedback and development (0-10 scale)
@@ -253,7 +266,7 @@ class ConsequentialistAnalyzer:
                 'risk_reduction': 6.5         # Reduced operational risk
             }
         }
-        
+
         negative_factors = {
             'employees': {
                 'privacy_loss': -7.5,         # Significant privacy invasion
@@ -278,10 +291,10 @@ class ConsequentialistAnalyzer:
                 'legal_liability': -5.5       # Potential litigation and regulatory risk
             }
         }
-        
+
         stakeholder_positive = sum(positive_factors.get(stakeholder.name, {}).values())
         stakeholder_negative = sum(negative_factors.get(stakeholder.name, {}).values())
-        
+
         return {
             'positive_utility': stakeholder_positive,
             'negative_utility': stakeholder_negative,
@@ -302,6 +315,7 @@ utility_results = analyzer.calculate_aggregate_utility('full_implementation')
 ```
 
 **Aggregate Utility Assessment Results**:
+
 ```
 Consequentialist Analysis Summary:
 
@@ -328,6 +342,7 @@ Utilitarian Recommendation:
 **Rights and Duties Framework Evaluation**:
 
 **Fundamental Rights Analysis**:
+
 ```
 Employee Rights Assessment:
 
@@ -357,6 +372,7 @@ Right to Autonomy and Self-Determination:
 ```
 
 **Organizational and Societal Duties**:
+
 ```
 Employer Duties and Responsibilities:
 
@@ -380,6 +396,7 @@ Societal Responsibility and Public Good:
 ```
 
 **Duty Conflict Resolution Framework**:
+
 ```
 Competing Duty Analysis:
 
@@ -407,6 +424,7 @@ Individual Rights vs. Collective Benefits:
 **Organizational Character Assessment**:
 
 **Virtue Demonstration Through Decision-Making**:
+
 ```
 Corporate Virtue Analysis:
 
@@ -436,6 +454,7 @@ Compassion and Care:
 ```
 
 **Leadership Character Development**:
+
 ```
 Management Virtue Cultivation:
 
@@ -465,6 +484,7 @@ Relationship Building:
 **Multi-Framework Integration Analysis**:
 
 **Ethical Framework Convergence Assessment**:
+
 ```
 Framework Agreement Areas:
 
@@ -491,6 +511,7 @@ Value Prioritization Hierarchy:
 **Ethical Implementation Framework**:
 
 **Conditional Recommendation: Limited Implementation with Comprehensive Safeguards**:
+
 ```
 Ethical Implementation Strategy:
 
@@ -524,6 +545,7 @@ Ethical Safeguard Requirements:
 ```
 
 **Alternative Recommendation: Enhanced Performance Management Without Comprehensive Monitoring**:
+
 ```
 Ethical Alternative Strategy:
 
@@ -547,6 +569,7 @@ Cultural Enhancement:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive stakeholder identification and value system analysis
 2. Apply multiple ethical frameworks systematically with thorough analysis
 3. Assess rights, duties, consequences, and virtues relevant to the decision
@@ -557,8 +580,11 @@ Cultural Enhancement:
 8. Design continuous evaluation framework with ethical compliance and improvement
 
 ## Examples
+
 ### Example 1: Medical Treatment Decision Ethics
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_domain}}: Medical treatment recommendation for elderly patient with multiple health conditions
 {{ethical_complexity}}: Highly complex with quality of life, family wishes, and medical ethics considerations
@@ -570,7 +596,9 @@ Cultural Enhancement:
 **Output**: [Medical ethics evaluation with patient autonomy, beneficence assessment, cultural sensitivity, and family consultation framework]
 
 ### Example 2: Corporate Environmental Policy Ethics
+
 **Input**:
+
 ```
 {{decision_domain}}: Corporate environmental policy development with significant operational and financial impact
 {{stakeholder_scope}}: Employees, customers, shareholders, local community, and global environmental impact
@@ -582,11 +610,13 @@ Cultural Enhancement:
 **Output**: [Environmental ethics analysis with sustainability assessment, stakeholder impact evaluation, and corporate responsibility framework]
 
 ## Related Prompts
+
 - [Stakeholder Impact Analysis Expert](/prompts/decision-making/stakeholder-impact-analysis.md)
 - [Policy Decision Framework Expert](/prompts/decision-making/policy-decision-framework.md)
 - [Value Assessment Specialist](/prompts/evaluation-assessment/value-assessment.md)
 
 ## Research Notes
+
 - Based on established ethical theory and applied ethics research
 - Integrates multiple moral frameworks with practical implementation guidance
 - Emphasizes cultural sensitivity and stakeholder value consideration

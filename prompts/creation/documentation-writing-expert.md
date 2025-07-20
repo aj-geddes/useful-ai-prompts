@@ -1,6 +1,7 @@
 # Documentation Writing Expert and Technical Communication Architect
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: technical writing, documentation, API docs, user guides, knowledge management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert documentation writing skills with technical communication architecture to create clear, comprehensive, and user-friendly documentation. It employs information design principles and user-centered approaches to ensure documentation serves its intended purpose effectively.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise documentation system combining:
 
@@ -85,6 +88,7 @@ DELIVER YOUR DOCUMENTATION AS:
 **Scope**: 150 endpoints, 5 SDKs, authentication, webhooks
 
 **Documentation Philosophy**:
+
 1. **Show, Don't Just Tell**: Every concept paired with working examples
 2. **Progressive Disclosure**: Basic → Advanced in logical steps
 3. **Task-Oriented**: Organized by what users want to do
@@ -136,6 +140,7 @@ Welcome to CloudAPI! This guide will have you making your first API call in 5 mi
 ## Prerequisites
 
 Before you begin, you'll need:
+
 - A CloudAPI account ([sign up here](https://cloudapi.com/signup))
 - Your API key ([find it here](https://cloudapi.com/dashboard/keys))
 - A tool to make HTTP requests (curl, Postman, or your favorite language)
@@ -159,6 +164,7 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
 ```
 
 **Expected Response:**
+
 ```json
 {
   "status": "active",
@@ -184,6 +190,7 @@ curl -X POST https://api.cloudapi.com/v1/projects \
 ```
 
 **Response:**
+
 ```json
 {
   "id": "proj_abc123",
@@ -196,11 +203,13 @@ curl -X POST https://api.cloudapi.com/v1/projects \
 ## What's Next?
 
 Great job! You've successfully:
+
 - ✅ Authenticated with the API
 - ✅ Made your first request
 - ✅ Created a resource
 
 **Ready to dive deeper?** Check out these resources:
+
 - 📖 [API Reference](/reference) - Complete endpoint documentation
 - 🚀 [Common Use Cases](/guides/use-cases) - Real-world examples
 - 💡 [Best Practices](/guides/best-practices) - Tips from our team
@@ -232,15 +241,15 @@ The Projects API allows you to create and manage projects within CloudAPI.
 
 ### Attributes
 
-| Attribute | Type | Description |
-|-----------|------|-------------|
-| `id` | string | Unique identifier for the project |
-| `name` | string | Project name (1-100 characters) |
-| `description` | string | Optional project description |
-| `status` | enum | Project status: `active`, `archived`, `deleted` |
-| `created_at` | timestamp | UTC timestamp of creation |
-| `updated_at` | timestamp | UTC timestamp of last update |
-| `metadata` | object | Custom key-value pairs for your use |
+| Attribute     | Type      | Description                                     |
+| ------------- | --------- | ----------------------------------------------- |
+| `id`          | string    | Unique identifier for the project               |
+| `name`        | string    | Project name (1-100 characters)                 |
+| `description` | string    | Optional project description                    |
+| `status`      | enum      | Project status: `active`, `archived`, `deleted` |
+| `created_at`  | timestamp | UTC timestamp of creation                       |
+| `updated_at`  | timestamp | UTC timestamp of last update                    |
+| `metadata`    | object    | Custom key-value pairs for your use             |
 
 ## Endpoints
 
@@ -267,11 +276,11 @@ Creates a new project with the specified parameters.
 
 #### Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `name` | string | ✓ | Project name (1-100 chars) |
-| `description` | string | | Project description |
-| `metadata` | object | | Custom metadata (max 50 pairs) |
+| Parameter     | Type   | Required | Description                    |
+| ------------- | ------ | -------- | ------------------------------ |
+| `name`        | string | ✓        | Project name (1-100 chars)     |
+| `description` | string |          | Project description            |
+| `metadata`    | object |          | Custom metadata (max 50 pairs) |
 
 #### Example Request
 
@@ -291,31 +300,33 @@ curl -X POST https://api.cloudapi.com/v1/projects \
     }
   }'
 ```
+
 </details>
 
 <details>
 <summary>JavaScript</summary>
 
 ```javascript
-const response = await fetch('https://api.cloudapi.com/v1/projects', {
-  method: 'POST',
+const response = await fetch("https://api.cloudapi.com/v1/projects", {
+  method: "POST",
   headers: {
-    'Authorization': 'Bearer YOUR_API_KEY',
-    'Content-Type': 'application/json'
+    Authorization: "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    name: 'Q4 Campaign',
-    description: 'Marketing campaign for Q4 2024',
+    name: "Q4 Campaign",
+    description: "Marketing campaign for Q4 2024",
     metadata: {
-      department: 'marketing',
-      budget: '50000'
-    }
-  })
+      department: "marketing",
+      budget: "50000",
+    },
+  }),
 });
 
 const project = await response.json();
 console.log(project);
 ```
+
 </details>
 
 <details>
@@ -343,6 +354,7 @@ response = requests.post(
 project = response.json()
 print(project)
 ```
+
 </details>
 
 #### Response
@@ -364,12 +376,12 @@ print(project)
 
 #### Error Responses
 
-| Code | Description | Fix |
-|------|-------------|-----|
-| 400 | Invalid request body | Check required fields and data types |
-| 401 | Invalid API key | Verify your API key is correct |
-| 409 | Project name already exists | Use a unique project name |
-| 429 | Rate limit exceeded | Wait and retry with backoff |
+| Code | Description                 | Fix                                  |
+| ---- | --------------------------- | ------------------------------------ |
+| 400  | Invalid request body        | Check required fields and data types |
+| 401  | Invalid API key             | Verify your API key is correct       |
+| 409  | Project name already exists | Use a unique project name            |
+| 429  | Rate limit exceeded         | Wait and retry with backoff          |
 
 ### List Projects
 
@@ -381,12 +393,12 @@ Returns a paginated list of your projects.
 
 #### Query Parameters
 
-| Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
-| `limit` | integer | 10 | Number of items (1-100) |
-| `starting_after` | string | | Cursor for pagination |
-| `status` | enum | | Filter by status |
-| `metadata[key]` | string | | Filter by metadata |
+| Parameter        | Type    | Default | Description             |
+| ---------------- | ------- | ------- | ----------------------- |
+| `limit`          | integer | 10      | Number of items (1-100) |
+| `starting_after` | string  |         | Cursor for pagination   |
+| `status`         | enum    |         | Filter by status        |
+| `metadata[key]`  | string  |         | Filter by metadata      |
 
 #### Example Request
 
@@ -411,6 +423,7 @@ Webhooks allow you to receive real-time notifications when events occur in Cloud
 Think of webhooks as automated phone calls from CloudAPI to your application. When something important happens (like a project status change), we'll immediately notify your server.
 
 **Common Use Cases:**
+
 - 🔔 Get notified when tasks complete
 - 📊 Sync data with external systems
 - 🤖 Trigger automated workflows
@@ -423,35 +436,35 @@ Think of webhooks as automated phone calls from CloudAPI to your application. Wh
 First, you need a URL that can receive HTTP POST requests. Here's a simple example using Node.js and Express:
 
 ```javascript
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.use(express.json());
 
-app.post('/webhooks/cloudapi', (req, res) => {
+app.post("/webhooks/cloudapi", (req, res) => {
   const event = req.body;
-  
+
   // Verify webhook signature (important!)
-  const signature = req.headers['x-cloudapi-signature'];
+  const signature = req.headers["x-cloudapi-signature"];
   if (!verifySignature(signature, req.body)) {
-    return res.status(401).send('Invalid signature');
+    return res.status(401).send("Invalid signature");
   }
-  
+
   // Process the event
-  console.log('Received event:', event.type);
-  
-  switch(event.type) {
-    case 'project.created':
+  console.log("Received event:", event.type);
+
+  switch (event.type) {
+    case "project.created":
       handleProjectCreated(event.data);
       break;
-    case 'task.completed':
+    case "task.completed":
       handleTaskCompleted(event.data);
       break;
     // Add more event handlers
   }
-  
+
   // Always respond quickly
-  res.status(200).send('OK');
+  res.status(200).send("OK");
 });
 
 app.listen(3000);
@@ -485,31 +498,32 @@ curl -X POST https://api.cloudapi.com/v1/webhooks \
 🔐 **Always verify webhook signatures!** This ensures requests actually come from CloudAPI.
 
 ```javascript
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 function verifySignature(signature, payload) {
   const secret = process.env.CLOUDAPI_WEBHOOK_SECRET;
   const expected = crypto
-    .createHmac('sha256', secret)
+    .createHmac("sha256", secret)
     .update(JSON.stringify(payload))
-    .digest('hex');
-  
+    .digest("hex");
+
   return signature === `sha256=${expected}`;
 }
 ```
 
 ### Event Types
 
-| Event | Description | Payload Example |
-|-------|-------------|-----------------|
-| `project.created` | New project created | `{project: {...}}` |
-| `project.updated` | Project modified | `{project: {...}, changes: {...}}` |
-| `project.deleted` | Project removed | `{project: {id: "..."}}` |
-| `task.completed` | Task finished | `{task: {...}, result: {...}}` |
+| Event             | Description         | Payload Example                    |
+| ----------------- | ------------------- | ---------------------------------- |
+| `project.created` | New project created | `{project: {...}}`                 |
+| `project.updated` | Project modified    | `{project: {...}, changes: {...}}` |
+| `project.deleted` | Project removed     | `{project: {id: "..."}}`           |
+| `task.completed`  | Task finished       | `{task: {...}, result: {...}}`     |
 
 ### Best Practices
 
 ✅ **Do:**
+
 - Respond quickly (within 5 seconds)
 - Process events asynchronously
 - Implement retry logic
@@ -517,6 +531,7 @@ function verifySignature(signature, payload) {
 - Use HTTPS endpoints only
 
 ❌ **Don't:**
+
 - Perform long operations synchronously
 - Ignore signature verification
 - Assume event order
@@ -542,7 +557,7 @@ function handleEvent(event) {
   if (processedEvents.has(event.id)) {
     return; // Already processed
   }
-  
+
   processedEvents.add(event.id);
   // Process event...
 }
@@ -557,6 +572,7 @@ Learn how to build a complete task automation system using CloudAPI. By the end 
 ## What We'll Build
 
 A system that:
+
 - 📥 Accepts task requests via API
 - 🔄 Processes tasks automatically
 - 📊 Tracks progress in real-time
@@ -596,6 +612,7 @@ task-automation/
 ### 1.3 Configure Environment
 
 Create `.env` file:
+
 ```env
 CLOUDAPI_KEY=your_api_key_here
 CLOUDAPI_WEBHOOK_SECRET=your_webhook_secret
@@ -607,40 +624,41 @@ PORT=3000
 ### 2.1 Create API Client
 
 **src/api/client.js:**
+
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 class CloudAPIClient {
   constructor(apiKey) {
     this.client = axios.create({
-      baseURL: 'https://api.cloudapi.com/v1',
+      baseURL: "https://api.cloudapi.com/v1",
       headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      }
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
     });
   }
 
   async createProject(name, description) {
-    const response = await this.client.post('/projects', {
+    const response = await this.client.post("/projects", {
       name,
       description,
-      metadata: { type: 'automation' }
+      metadata: { type: "automation" },
     });
     return response.data;
   }
 
   async createTask(projectId, taskData) {
-    const response = await this.client.post('/tasks', {
+    const response = await this.client.post("/tasks", {
       project_id: projectId,
-      ...taskData
+      ...taskData,
     });
     return response.data;
   }
 
   async updateTaskStatus(taskId, status) {
     const response = await this.client.patch(`/tasks/${taskId}`, {
-      status
+      status,
     });
     return response.data;
   }
@@ -652,6 +670,7 @@ module.exports = CloudAPIClient;
 ### 2.2 Implement Task Handler
 
 **src/handlers/taskHandler.js:**
+
 ```javascript
 class TaskHandler {
   constructor(apiClient, automationService) {
@@ -661,26 +680,26 @@ class TaskHandler {
 
   async processTask(task) {
     console.log(`Processing task: ${task.id}`);
-    
+
     try {
       // Update status to processing
-      await this.api.updateTaskStatus(task.id, 'processing');
-      
+      await this.api.updateTaskStatus(task.id, "processing");
+
       // Run automation based on task type
       const result = await this.automation.execute(task);
-      
+
       // Update with results
-      await this.api.updateTaskStatus(task.id, 'completed', {
+      await this.api.updateTaskStatus(task.id, "completed", {
         result,
-        completed_at: new Date().toISOString()
+        completed_at: new Date().toISOString(),
       });
-      
+
       console.log(`Task ${task.id} completed successfully`);
     } catch (error) {
       console.error(`Task ${task.id} failed:`, error);
-      
-      await this.api.updateTaskStatus(task.id, 'failed', {
-        error: error.message
+
+      await this.api.updateTaskStatus(task.id, "failed", {
+        error: error.message,
       });
     }
   }
@@ -694,6 +713,7 @@ module.exports = TaskHandler;
 ### 3.1 Create Automation Service
 
 **src/services/automationService.js:**
+
 ```javascript
 class AutomationService {
   constructor() {
@@ -703,20 +723,20 @@ class AutomationService {
 
   setupDefaultRules() {
     // Rule: Email notification
-    this.rules.set('email_notification', async (task) => {
+    this.rules.set("email_notification", async (task) => {
       console.log(`Sending email to: ${task.data.recipient}`);
       // Implement email logic here
       return { sent: true, timestamp: new Date() };
     });
 
     // Rule: Data processing
-    this.rules.set('data_processing', async (task) => {
-      const processed = task.data.values.map(v => v * 2);
+    this.rules.set("data_processing", async (task) => {
+      const processed = task.data.values.map((v) => v * 2);
       return { processed, count: processed.length };
     });
 
     // Rule: External API call
-    this.rules.set('api_integration', async (task) => {
+    this.rules.set("api_integration", async (task) => {
       // Make external API call
       const response = await fetch(task.data.endpoint);
       return await response.json();
@@ -725,11 +745,11 @@ class AutomationService {
 
   async execute(task) {
     const rule = this.rules.get(task.type);
-    
+
     if (!rule) {
       throw new Error(`No rule found for task type: ${task.type}`);
     }
-    
+
     return await rule(task);
   }
 
@@ -746,12 +766,13 @@ module.exports = AutomationService;
 ### 4.1 Create Express Server
 
 **src/index.js:**
+
 ```javascript
-require('dotenv').config();
-const express = require('express');
-const CloudAPIClient = require('./api/client');
-const TaskHandler = require('./handlers/taskHandler');
-const AutomationService = require('./services/automationService');
+require("dotenv").config();
+const express = require("express");
+const CloudAPIClient = require("./api/client");
+const TaskHandler = require("./handlers/taskHandler");
+const AutomationService = require("./services/automationService");
 
 const app = express();
 app.use(express.json());
@@ -762,45 +783,45 @@ const automationService = new AutomationService();
 const taskHandler = new TaskHandler(apiClient, automationService);
 
 // Health check
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date() });
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", timestamp: new Date() });
 });
 
 // Webhook endpoint
-app.post('/webhooks/cloudapi', async (req, res) => {
+app.post("/webhooks/cloudapi", async (req, res) => {
   // Verify signature (implement based on security section)
-  
+
   const event = req.body;
   console.log(`Received event: ${event.type}`);
-  
+
   // Handle different event types
-  switch(event.type) {
-    case 'task.created':
+  switch (event.type) {
+    case "task.created":
       // Process new task asynchronously
       setImmediate(() => {
         taskHandler.processTask(event.data.task);
       });
       break;
   }
-  
-  res.status(200).send('OK');
+
+  res.status(200).send("OK");
 });
 
 // Create new automation task
-app.post('/automate', async (req, res) => {
+app.post("/automate", async (req, res) => {
   try {
     const { type, data } = req.body;
-    
+
     // Create task in CloudAPI
     const task = await apiClient.createTask(projectId, {
       type,
       data,
-      status: 'pending'
+      status: "pending",
     });
-    
-    res.json({ 
-      message: 'Task created',
-      task_id: task.id 
+
+    res.json({
+      message: "Task created",
+      task_id: task.id,
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -819,11 +840,13 @@ app.listen(PORT, () => {
 ### 5.1 Test Locally
 
 1. Start your server:
+
 ```bash
 npm start
 ```
 
 2. Create a test task:
+
 ```bash
 curl -X POST http://localhost:3000/automate \
   -H "Content-Type: application/json" \
@@ -866,6 +889,7 @@ Find the complete working code at: [github.com/cloudapi/tutorials/task-automatio
 ### Authentication Errors
 
 #### Error: "Invalid API Key"
+
 ```json
 {
   "error": {
@@ -876,6 +900,7 @@ Find the complete working code at: [github.com/cloudapi/tutorials/task-automatio
 ```
 
 **Possible Causes:**
+
 1. API key is incorrect
 2. Key has been revoked
 3. Missing "Bearer" prefix
@@ -887,6 +912,7 @@ Find the complete working code at: [github.com/cloudapi/tutorials/task-automatio
 ✅ Generate a new key if needed
 
 **Debug Steps:**
+
 ```bash
 # Test your API key
 curl -H "Authorization: Bearer YOUR_API_KEY" \
@@ -899,6 +925,7 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
 ### Rate Limiting
 
 #### Error: "Rate Limit Exceeded"
+
 ```json
 {
   "error": {
@@ -910,6 +937,7 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
 ```
 
 **Understanding Rate Limits:**
+
 - **Free tier**: 100 requests/minute
 - **Pro tier**: 1000 requests/minute
 - **Enterprise**: Custom limits
@@ -921,6 +949,7 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
 ✅ Upgrade your plan
 
 **Retry Logic Example:**
+
 ```javascript
 async function makeRequestWithRetry(fn, maxRetries = 3) {
   for (let i = 0; i < maxRetries; i++) {
@@ -928,9 +957,9 @@ async function makeRequestWithRetry(fn, maxRetries = 3) {
       return await fn();
     } catch (error) {
       if (error.response?.status === 429) {
-        const retryAfter = error.response.headers['retry-after'] || 60;
+        const retryAfter = error.response.headers["retry-after"] || 60;
         console.log(`Rate limited. Waiting ${retryAfter}s...`);
-        await new Promise(resolve => setTimeout(resolve, retryAfter * 1000));
+        await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
       } else {
         throw error;
       }
@@ -944,6 +973,7 @@ async function makeRequestWithRetry(fn, maxRetries = 3) {
 #### Webhooks Not Receiving Events
 
 **Diagnostic Checklist:**
+
 - [ ] Endpoint is publicly accessible
 - [ ] Using HTTPS with valid certificate
 - [ ] Responding within 5 seconds
@@ -951,6 +981,7 @@ async function makeRequestWithRetry(fn, maxRetries = 3) {
 - [ ] Webhook is active in dashboard
 
 **Test Your Endpoint:**
+
 ```bash
 # From external server
 curl -X POST https://yourapp.com/webhooks/cloudapi \
@@ -959,6 +990,7 @@ curl -X POST https://yourapp.com/webhooks/cloudapi \
 ```
 
 **Common Fixes:**
+
 1. **Firewall blocking CloudAPI IPs**
    - Whitelist: `52.89.214.238/32`, `34.212.75.30/32`
 
@@ -977,6 +1009,7 @@ curl -X POST https://yourapp.com/webhooks/cloudapi \
 **Error**: "Module version mismatch"
 
 **Solution**:
+
 ```bash
 # JavaScript
 npm update @cloudapi/sdk
@@ -996,6 +1029,7 @@ pip show cloudapi
 **Optimization Strategies:**
 
 1. **Use Pagination**
+
 ```javascript
 // Bad: Getting all at once
 const allProjects = await api.getProjects({ limit: 1000 });
@@ -1006,9 +1040,9 @@ let hasMore = true;
 let cursor = null;
 
 while (hasMore) {
-  const page = await api.getProjects({ 
-    limit: 100, 
-    starting_after: cursor 
+  const page = await api.getProjects({
+    limit: 100,
+    starting_after: cursor,
   });
   projects = projects.concat(page.data);
   hasMore = page.has_more;
@@ -1017,6 +1051,7 @@ while (hasMore) {
 ```
 
 2. **Parallel Requests**
+
 ```javascript
 // Bad: Sequential
 for (const id of projectIds) {
@@ -1025,9 +1060,7 @@ for (const id of projectIds) {
 }
 
 // Good: Parallel
-const projects = await Promise.all(
-  projectIds.map(id => api.getProject(id))
-);
+const projects = await Promise.all(projectIds.map((id) => api.getProject(id)));
 ```
 
 ### Data Issues
@@ -1037,26 +1070,28 @@ const projects = await Promise.all(
 **Error**: "Invalid request body"
 
 **Common Causes:**
+
 - Missing required fields
 - Incorrect data types
 - Invalid enum values
 - Exceeding size limits
 
 **Validation Example:**
+
 ```javascript
 function validateProjectData(data) {
   const errors = [];
-  
+
   if (!data.name || data.name.length > 100) {
-    errors.push('Name must be 1-100 characters');
+    errors.push("Name must be 1-100 characters");
   }
-  
+
   if (data.metadata && Object.keys(data.metadata).length > 50) {
-    errors.push('Metadata limited to 50 key-value pairs');
+    errors.push("Metadata limited to 50 key-value pairs");
   }
-  
+
   if (errors.length > 0) {
-    throw new Error(`Validation failed: ${errors.join(', ')}`);
+    throw new Error(`Validation failed: ${errors.join(", ")}`);
   }
 }
 ```
@@ -1091,6 +1126,7 @@ curl -v -H "Authorization: Bearer YOUR_KEY" \
 ```
 
 ## Usage Instructions
+
 1. Start with clear understanding of documentation goals and audience
 2. Create comprehensive information architecture before writing
 3. Use progressive disclosure - basic to advanced
@@ -1101,8 +1137,11 @@ curl -v -H "Authorization: Bearer YOUR_KEY" \
 8. Measure documentation effectiveness with analytics
 
 ## Examples
+
 ### Example 1: API Documentation
-**Input**: 
+
+**Input**:
+
 ```
 {{documentation_type}}: REST API reference
 {{target_audience}}: Backend developers
@@ -1114,7 +1153,9 @@ curl -v -H "Authorization: Bearer YOUR_KEY" \
 **Output**: [Comprehensive API documentation with endpoints, parameters, examples in multiple languages, error handling, and rate limiting information]
 
 ### Example 2: User Guide
+
 **Input**:
+
 ```
 {{documentation_type}}: End-user guide
 {{target_audience}}: Non-technical business users
@@ -1126,11 +1167,13 @@ curl -v -H "Authorization: Bearer YOUR_KEY" \
 **Output**: [Step-by-step guide with screenshots, task-oriented sections, troubleshooting tips, and glossary of terms]
 
 ## Related Prompts
+
 - [Technical Writing Expert](/prompts/creation/technical-writing-expert.md)
 - [API Design Specialist](/prompts/technical/api-design-specialist.md)
 - [User Experience Writer](/prompts/creation/ux-writer.md)
 
 ## Research Notes
+
 - Combines technical accuracy with user empathy
 - Emphasizes findability and searchability
 - Includes multiple learning modalities (text, code, visuals)

@@ -39,6 +39,7 @@
 ### 1. New Prompts
 
 **What we're looking for:**
+
 - Comprehensive, production-ready prompts
 - Clear use cases and benefits
 - Well-tested with AI assistants
@@ -47,6 +48,7 @@
 ### 2. Prompt Improvements
 
 **Enhancement areas:**
+
 - Adding more detailed examples
 - Improving clarity and structure
 - Adding edge case handling
@@ -55,6 +57,7 @@
 ### 3. Documentation
 
 **Documentation needs:**
+
 - Usage examples with different AI assistants
 - Troubleshooting guides
 - Best practices for prompt engineering
@@ -69,12 +72,14 @@ Every prompt file must include:
 # [Prompt Title]
 
 ## Overview
+
 [Brief description of what this prompt does and its primary use case]
 
 ## The Prompt
-
 ```
+
 [The actual prompt content in a code block]
+
 ```
 
 ## Key Features
@@ -94,18 +99,21 @@ Every prompt file must include:
 ### Content Quality Standards
 
 #### Comprehensive Scope
+
 - Prompts should be thorough and production-ready
 - Include error handling and edge cases
 - Provide multiple examples and use cases
 - Cover security considerations where applicable
 
 #### Clear Instructions
+
 - Use precise, actionable language
 - Include step-by-step workflows
 - Provide context and rationale for decisions
 - Include validation and testing steps
 
 #### Professional Output
+
 - Generate enterprise-quality results
 - Include proper documentation patterns
 - Follow industry best practices
@@ -116,11 +124,13 @@ Every prompt file must include:
 ### Naming Conventions
 
 **File names:**
+
 - Use lowercase with hyphens: `my-prompt-name.md`
 - Be descriptive but concise
 - Avoid special characters except hyphens
 
 **Prompt titles:**
+
 - Use title case: "My Prompt Name"
 - Be specific about the use case
 - Avoid generic terms like "Helper" or "Assistant"
@@ -154,6 +164,7 @@ Every prompt file must include:
 ## 🔍 Review Process
 
 Contributions are reviewed for:
+
 - Technical accuracy
 - Prompt effectiveness
 - Documentation quality

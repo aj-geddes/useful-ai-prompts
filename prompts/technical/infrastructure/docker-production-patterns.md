@@ -5,12 +5,14 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 ## Core Requirements
 
 ### Container Architecture
+
 - **Base Images**: Minimal, security-hardened base images (Alpine, Distroless, or official slim variants)
 - **Multi-stage builds**: Optimized build process with separate build and runtime stages
 - **Image layering**: Efficient layer caching and minimal final image size
 - **Platform support**: Multi-architecture builds (AMD64, ARM64) using Docker Buildx
 
-### Security Implementation  
+### Security Implementation
+
 - **Non-root execution**: Dedicated application user with specific UID/GID
 - **File system security**: Read-only root filesystem with necessary writable mounts
 - **Capability management**: Minimal Linux capabilities with explicit drops and adds
@@ -20,6 +22,7 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 ## Enhanced Security & Performance
 
 ### Runtime Security Controls
+
 - **Security options**: `no-new-privileges`, AppArmor/SELinux integration
 - **Resource constraints**: Memory limits, CPU quotas, process limits (ulimits)
 - **Network isolation**: Custom networks with controlled communication
@@ -27,6 +30,7 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 - **Health monitoring**: Comprehensive health checks with failure handling
 
 ### Performance Optimization
+
 - **Build optimization**: Layer caching strategies, .dockerignore configuration
 - **Runtime efficiency**: Minimal dependencies, optimized entrypoint scripts
 - **Resource management**: Appropriate memory reservations and CPU allocations
@@ -34,6 +38,7 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 - **Volume management**: Persistent data handling and temporary filesystem configuration
 
 ### Monitoring & Observability
+
 - **Logging configuration**: Structured logging with rotation and retention policies
 - **Metrics collection**: Application and container metrics exposure
 - **Health endpoints**: Liveness, readiness, and startup probe implementations
@@ -42,24 +47,28 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 ## Advanced Features (New)
 
 ### Orchestration & Deployment
+
 - **Docker Compose**: Production-ready compose configuration with profiles
 - **Kubernetes manifests**: Deployment, Service, ConfigMap, and Secret resources
 - **Zero-downtime deployment**: Rolling update strategies and deployment validation
 - **Scaling patterns**: Horizontal scaling support with load balancing
 
 ### Development Workflow Enhancement
+
 - **Multi-environment support**: Development, staging, and production configurations
 - **CI/CD integration**: Automated build, test, and deployment pipelines
 - **Local development**: Developer-friendly local setup with hot reloading
 - **Testing framework**: Container testing with security and functionality validation
 
 ### Enterprise Integration
+
 - **Registry management**: Private registry integration with authentication
 - **Policy enforcement**: OPA/Gatekeeper policies for compliance
 - **Backup strategies**: Data persistence and disaster recovery planning
 - **Compliance features**: Audit logging, GDPR/HIPAA compliance considerations
 
 ### Container Optimization
+
 - **Size optimization**: Multi-stage builds, dependency minimization
 - **Security hardening**: CIS Docker Benchmark compliance
 - **Performance tuning**: JVM tuning (if applicable), connection pooling
@@ -68,12 +77,14 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 ## Implementation Strategy
 
 ### MCP Tool Optimization
+
 - **Use `create_or_update_file`** for individual file creation in structured approach
 - **Leverage `push_files`** for bulk operations when creating complete solutions
 - **Handle directory structure** systematically with proper organization
 - **Systematic delivery**: Dockerfile → Compose → Kubernetes → CI/CD pipeline
 
 ### Container Build Process
+
 1. **Security scan source code** for vulnerabilities and secrets
 2. **Multi-stage Dockerfile** with optimized layer structure
 3. **Build automation** with version tagging and metadata injection
@@ -82,6 +93,7 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 6. **Documentation generation** with usage examples and troubleshooting
 
 ### Validation & Testing
+
 - **Dockerfile linting**: hadolint validation for best practices
 - **Security scanning**: Trivy, Clair, or similar tools for vulnerability assessment
 - **Container testing**: Docker container structure tests
@@ -90,6 +102,7 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 - **Compliance validation**: Security benchmark compliance checking
 
 ### Quality Assurance
+
 - **Build reproducibility**: Consistent builds across environments
 - **Error handling**: Meaningful error messages and recovery procedures
 - **Resource efficiency**: Optimal resource utilization patterns
@@ -98,36 +111,42 @@ Initialize it as a **enterprise-grade, secure Docker deployment** with multi-sta
 ## Deliverables
 
 ### Core Container Files
+
 - `Dockerfile` - Multi-stage production Dockerfile with security hardening
 - `docker-compose.yml` - Production compose configuration with full stack
 - `docker-compose.override.yml` - Development overrides and local configurations
 - `.dockerignore` - Optimized build context exclusions
 
 ### Security & Configuration
+
 - `entrypoint.sh` - Secure entrypoint script with signal handling
 - `healthcheck.sh` - Comprehensive health check implementation
 - `configs/` - Configuration templates and environment-specific settings
 - `secrets/` - Secret management templates and rotation procedures
 
 ### Orchestration & Deployment
+
 - `k8s/` - Kubernetes manifests with best practices
 - `helm/` - Helm chart for parameterized deployments (if applicable)
 - `deploy/` - Deployment scripts and automation
 - `monitoring/` - Prometheus, Grafana, and alerting configurations
 
 ### Documentation & Examples
+
 - `README.md` - Comprehensive documentation with setup and usage examples
 - `docs/SECURITY.md` - Security considerations and compliance information
 - `docs/DEPLOYMENT.md` - Deployment procedures and troubleshooting
 - `docs/DEVELOPMENT.md` - Local development setup and contribution guidelines
 
 ### CI/CD & Automation
+
 - `.github/workflows/` - GitHub Actions for automated builds and deployments
 - `scripts/` - Build, test, and deployment automation scripts
 - `tests/` - Container structure tests and integration test suites
 - `CHANGELOG.md` - Version history and breaking changes documentation
 
 ### Validation Features
+
 - **Container security**: CIS Docker Benchmark compliance validation
 - **Image optimization**: Size limits, layer count optimization
 - **Runtime validation**: Health check reliability and performance

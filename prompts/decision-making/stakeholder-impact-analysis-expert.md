@@ -1,6 +1,7 @@
 # Stakeholder Impact Analysis Expert and Influence Mapping Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: stakeholder impact analysis, influence mapping, stakeholder management, decision consequences, relationship analysis
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert stakeholder impact analysis methodology with influence mapping specialization to create comprehensive frameworks for identifying, analyzing, and managing stakeholder effects in decision-making processes. It employs stakeholder theory, network analysis, and change management principles to ensure decisions account for all affected parties and optimize stakeholder value creation.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise stakeholder impact analysis system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR STAKEHOLDER IMPACT ANALYSIS STRATEGY AS:
 **Success Dependency**: Critical stakeholder support required for timeline, budget, and outcome achievement
 
 **Analysis Challenges**:
+
 - **Workforce Disruption**: Job displacement concerns with automation and skill requirement changes
 - **Customer Impact**: Service disruption risk during migration with experience continuity requirements
 - **Vendor Relationships**: Technology partner changes affecting existing contracts and relationships
@@ -94,6 +98,7 @@ DELIVER YOUR STAKEHOLDER IMPACT ANALYSIS STRATEGY AS:
 - **Cultural Resistance**: Traditional organization culture with limited technology adoption experience
 
 **Analysis Success Criteria**:
+
 - Complete stakeholder identification with accurate impact assessment and influence mapping
 - Proactive resistance management with support coalition building and opposition mitigation
 - Clear communication strategy with stakeholder-specific messaging and engagement planning
@@ -106,6 +111,7 @@ DELIVER YOUR STAKEHOLDER IMPACT ANALYSIS STRATEGY AS:
 Deploy comprehensive stakeholder mapping and influence analysis methodology to identify transformation impacts, build support coalitions, and manage resistance for successful digital transformation implementation with stakeholder value optimization.
 
 **Influence Mapping Approach**:
+
 - **Power-Interest Matrix**: Stakeholder prioritization with engagement strategy and resource allocation optimization
 - **Network Analysis**: Influence pathway identification with coalition building and communication channel optimization
 - **Impact Quantification**: Direct and indirect effect measurement with magnitude assessment and timing analysis
@@ -113,6 +119,7 @@ Deploy comprehensive stakeholder mapping and influence analysis methodology to i
 - **Dynamic Monitoring**: Relationship tracking with sentiment analysis and strategy adjustment capability
 
 **Strategic Analysis Principles**:
+
 1. **Inclusive Identification**: Comprehensive stakeholder universe mapping with direct and indirect impact consideration
 2. **Value-Centric Analysis**: Stakeholder value creation and preservation prioritized in impact assessment
 3. **Proactive Engagement**: Early stakeholder involvement with transparent communication and collaboration
@@ -120,6 +127,7 @@ Deploy comprehensive stakeholder mapping and influence analysis methodology to i
 5. **Continuous Monitoring**: Dynamic stakeholder relationship tracking with strategy adaptation and optimization
 
 **Expected Analysis Outcomes**:
+
 - Comprehensive stakeholder support with >80% positive sentiment and active endorsement
 - Effective resistance management with <15% opposition and proactive mitigation strategy
 - Clear communication success with stakeholder understanding and expectation alignment
@@ -133,6 +141,7 @@ Deploy comprehensive stakeholder mapping and influence analysis methodology to i
 **Internal Stakeholder Ecosystem**:
 
 **Executive Leadership Tier (5% of stakeholders, 40% influence weight)**:
+
 ```
 CEO and C-Suite Executives:
 • Impact: Strategic direction validation and resource allocation accountability
@@ -157,6 +166,7 @@ Board of Directors:
 ```
 
 **Management and Supervision Tier (15% of stakeholders, 35% influence weight)**:
+
 ```
 Middle Management (Directors and Senior Managers):
 • Impact: Team leadership during transition, process change implementation
@@ -174,6 +184,7 @@ Team Leads and Supervisors:
 ```
 
 **Employee Base Tier (75% of stakeholders, 20% influence weight)**:
+
 ```
 Technology and IT Staff:
 • Impact: Technical implementation, system migration, ongoing support responsibility
@@ -200,6 +211,7 @@ Customer-Facing Staff:
 #### External Stakeholder Network Analysis
 
 **Customer and Market Stakeholder Assessment**:
+
 ```
 Enterprise Customers (B2B Clients):
 • Impact: Service continuity expectations, integration requirements, contract compliance
@@ -224,6 +236,7 @@ Industry Partners and Vendors:
 ```
 
 **Regulatory and Community Stakeholder Considerations**:
+
 ```
 Regulatory Bodies and Compliance Agencies:
 • Impact: Data migration approval, process compliance validation, audit requirements
@@ -247,6 +260,7 @@ Local Community and Economic Development:
 **Workforce Impact Analysis Framework**:
 
 **Job Role and Skill Impact Assessment**:
+
 ```
 High-Impact Roles (Automation-Affected Positions):
 • Data Entry and Processing Roles: 120 positions with 70% automation potential
@@ -269,16 +283,17 @@ High-Impact Roles (Automation-Affected Positions):
 ```
 
 **Customer Experience Impact Modeling**:
+
 ```python
 class CustomerImpactAnalyzer:
     def __init__(self, customer_segments, transformation_phases):
         self.segments = customer_segments
         self.phases = transformation_phases
         self.impact_calculator = CustomerImpactCalculator()
-        
+
     def analyze_customer_journey_impact(self):
         """Comprehensive customer experience impact assessment"""
-        
+
         impact_analysis = {}
         for segment in self.segments:
             segment_analysis = {
@@ -289,35 +304,35 @@ class CustomerImpactAnalyzer:
                 'lifetime_value_impact': self.calculate_ltv_effect(segment)
             }
             impact_analysis[segment.name] = segment_analysis
-        
+
         return self.synthesize_customer_impact(impact_analysis)
-    
+
     def calculate_disruption_probability(self, segment):
         """Calculate probability and magnitude of service disruption"""
-        
+
         disruption_factors = {
             'system_migration_downtime': 0.15,  # 15% probability of significant downtime
             'process_learning_curve': 0.25,     # 25% probability of temporary efficiency loss
             'integration_complications': 0.10,   # 10% probability of third-party integration issues
             'user_training_gaps': 0.20          # 20% probability of service quality degradation
         }
-        
+
         # Calculate compound probability of customer-facing disruption
         no_disruption_prob = 1.0
         for factor, probability in disruption_factors.items():
             no_disruption_prob *= (1 - probability)
-        
+
         overall_disruption_prob = 1 - no_disruption_prob
-        
+
         # Assess magnitude based on customer segment characteristics
         magnitude_factors = {
             'enterprise_customers': 0.8,  # Higher impact due to integration complexity
             'small_business': 0.6,        # Moderate impact with simpler requirements
             'individual_consumers': 0.4   # Lower impact with self-service options
         }
-        
+
         magnitude = magnitude_factors.get(segment.type, 0.5)
-        
+
         return {
             'probability': overall_disruption_prob,
             'magnitude': magnitude,
@@ -335,6 +350,7 @@ customer_impact_results = analyzer.analyze_customer_journey_impact()
 ```
 
 **Financial and Operational Impact Assessment**:
+
 ```
 Stakeholder Financial Impact Summary:
 
@@ -364,6 +380,7 @@ Vendor and Partner Impact:
 **Stakeholder Power-Interest Analysis**:
 
 **High Power, High Interest (Manage Closely) - Tier 1 Priority**:
+
 ```
 CEO and Executive Leadership:
 • Power Assessment: Ultimate decision authority with budget and strategic control
@@ -388,6 +405,7 @@ Customer Success and Operations Leadership:
 ```
 
 **High Power, Low Interest (Keep Satisfied) - Tier 2 Priority**:
+
 ```
 Board of Directors:
 • Power Assessment: Ultimate oversight authority with investment approval and CEO accountability
@@ -409,6 +427,7 @@ Financial Leadership (CFO, Finance Directors):
 **Support Coalition Development Framework**:
 
 **Champion Network Identification and Development**:
+
 ```
 Executive Champions:
 • CEO Endorsement: Strategic vision alignment with competitive positioning and shareholder value
@@ -433,6 +452,7 @@ Coalition Building Activities:
 ```
 
 **Resistance Management and Opposition Mitigation**:
+
 ```
 Resistance Source Identification:
 
@@ -466,6 +486,7 @@ Opposition Management Tactics:
 **Multi-Channel Communication Strategy**:
 
 **Executive and Leadership Communication**:
+
 ```
 Communication Objectives:
 • Strategic alignment with business objectives and competitive positioning
@@ -487,6 +508,7 @@ Message Framework:
 ```
 
 **Employee Communication and Engagement**:
+
 ```
 Communication Objectives:
 • Change rationale with business necessity and competitive positioning
@@ -517,10 +539,10 @@ class StakeholderEngagementTracker:
         self.engagement_metrics = EngagementMetricsCollector()
         self.sentiment_analyzer = StakeholderSentimentAnalyzer()
         self.relationship_monitor = RelationshipHealthMonitor()
-        
+
     def measure_engagement_effectiveness(self, stakeholder_group, time_period):
         """Comprehensive stakeholder engagement success measurement"""
-        
+
         engagement_data = {
             'communication_reach': self.measure_communication_effectiveness(stakeholder_group),
             'sentiment_trends': self.track_sentiment_changes(stakeholder_group, time_period),
@@ -528,12 +550,12 @@ class StakeholderEngagementTracker:
             'support_levels': self.assess_support_strength(stakeholder_group),
             'resistance_indicators': self.monitor_resistance_levels(stakeholder_group)
         }
-        
+
         return self.calculate_engagement_score(engagement_data)
-    
+
     def track_sentiment_changes(self, stakeholder_group, time_period):
         """Monitor stakeholder sentiment evolution over time"""
-        
+
         sentiment_indicators = {
             'survey_responses': self.collect_survey_data(stakeholder_group, time_period),
             'meeting_participation': self.analyze_meeting_engagement(stakeholder_group),
@@ -541,7 +563,7 @@ class StakeholderEngagementTracker:
             'voluntary_advocacy': self.measure_positive_advocacy(stakeholder_group),
             'resistance_expressions': self.identify_negative_sentiment(stakeholder_group)
         }
-        
+
         return self.synthesize_sentiment_trends(sentiment_indicators)
 
 # Implementation of stakeholder tracking system
@@ -550,6 +572,7 @@ engagement_results = tracker.measure_engagement_effectiveness('all_stakeholders'
 ```
 
 **Success Metrics and KPI Framework**:
+
 ```
 Stakeholder Engagement Success Metrics:
 
@@ -579,6 +602,7 @@ Coalition Strength and Opposition Management:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive stakeholder universe identification including direct, indirect, and influential stakeholders
 2. Apply power-interest matrix analysis to prioritize engagement and resource allocation
 3. Conduct detailed impact assessment quantifying positive and negative effects across stakeholder groups
@@ -589,8 +613,11 @@ Coalition Strength and Opposition Management:
 8. Design adaptive strategy framework with regular assessment and engagement optimization
 
 ## Examples
+
 ### Example 1: Organizational Restructuring Stakeholder Analysis
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_scope}}: Major organizational restructuring with department consolidation and leadership changes
 {{stakeholder_complexity}}: Highly complex with multiple departments, union representation, and regulatory oversight
@@ -602,7 +629,9 @@ Coalition Strength and Opposition Management:
 **Output**: [Organizational restructuring stakeholder analysis with impact assessment, coalition building, and change management strategy]
 
 ### Example 2: Policy Implementation Stakeholder Assessment
+
 **Input**:
+
 ```
 {{decision_scope}}: New regulatory policy implementation affecting industry practices and compliance requirements
 {{organizational_level}}: Industry-wide impact with government agencies, businesses, and public stakeholders
@@ -614,11 +643,13 @@ Coalition Strength and Opposition Management:
 **Output**: [Policy implementation stakeholder analysis with regulatory compliance, industry coordination, and public engagement strategy]
 
 ## Related Prompts
+
 - [Option Evaluation Expert](/prompts/decision-making/option-evaluation.md)
 - [Change Management Specialist](/prompts/planning/change-management.md)
 - [Strategic Direction Setting Expert](/prompts/decision-making/strategic-direction-setting.md)
 
 ## Research Notes
+
 - Based on stakeholder theory and network analysis research
 - Integrates change management principles with influence mapping and coalition building
 - Emphasizes systematic impact assessment with quantitative and qualitative analysis

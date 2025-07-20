@@ -9,19 +9,25 @@ This library contains 69 meticulously crafted AI prompts that help you leverage 
 ## 🎯 What Makes These Prompts Special?
 
 ### 🧠 Dual-Expert System
+
 Each prompt combines TWO expert perspectives:
+
 - A primary domain expert (15+ years experience)
 - A complementary specialist for added depth
 
 ### 📊 Professional Frameworks
+
 Every prompt includes 3-5 industry-standard methodologies:
+
 - SWOT, PESTLE, Porter's Five Forces for business
 - DMAIC, Lean Six Sigma for operations
 - Agile, DevOps, SOLID for technology
 - And many more...
 
 ### 📈 Structured Outputs
+
 Get comprehensive, actionable deliverables:
+
 - Executive summaries
 - Detailed analysis reports
 - Implementation roadmaps
@@ -39,12 +45,14 @@ Browse by your profession or task:
 <summary><b>💼 Business Professionals</b></summary>
 
 #### For Executives & Managers
+
 - **[Marketing Manager](prompts/business/marketing/marketing-manager-strategist.md)** - Lead marketing teams and campaigns
 - **[Operations Manager](prompts/business/operations/operations-manager-excellence.md)** - Drive operational excellence
 - **[HR Leader](prompts/human-resources/hr-excellence-leader.md)** - Transform talent and culture
 - **[Financial Analyst](prompts/finance/financial-analysis-expert.md)** - Investment analysis and valuation
 
 #### For Analysts & Specialists
+
 - **[Business Analyst](prompts/business/business-analysis/business-analyst-strategic-excellence.md)** - Requirements and process improvement
 - **[Supply Chain Manager](prompts/operations/supply-chain-excellence-director.md)** - Optimize logistics networks
 - **[Compliance Officer](prompts/business/legal/compliance-officer-expert.md)** - Navigate regulations
@@ -55,10 +63,12 @@ Browse by your profession or task:
 <summary><b>👨‍💻 Technology Professionals</b></summary>
 
 #### For Developers
+
 - **[Full-Stack Developer](prompts/technical/software-engineering/fullstack-developer-architect.md)** - Build complete applications
 - **[DevOps Engineer](prompts/technical/devops/cicd-pipeline-optimizer.md)** - Optimize deployment pipelines
 
 #### For Security & Data
+
 - **[Security Architect](prompts/technical/security/cybersecurity-defense-architect.md)** - Design secure systems
 - **[Data Scientist](prompts/technical/data-science/model-evaluation-framework.md)** - Validate ML models
 
@@ -89,6 +99,7 @@ Each prompt has clear placeholders marked with `{{double_brackets}}`:
 
 ```markdown
 CONTEXT:
+
 - **Company**: {{company_name}} → Replace with: "Acme Corp"
 - **Industry**: {{industry}} → Replace with: "E-commerce"
 - **Challenge**: {{specific_challenge}} → Replace with: "Reduce cart abandonment"
@@ -97,6 +108,7 @@ CONTEXT:
 ### 3. Get Amazing Results
 
 The AI will deliver:
+
 - 🎯 **Executive Summary** - Key insights at a glance
 - 📊 **Detailed Analysis** - Deep dive into your challenge
 - 🗺️ **Action Plan** - Step-by-step implementation guide
@@ -112,6 +124,7 @@ The AI will deliver:
 **Using**: [Marketing Manager Strategist](prompts/business/marketing/marketing-manager-strategist.md)
 
 **You Get**:
+
 - Complete go-to-market strategy
 - Campaign timeline with milestones
 - Budget allocation framework
@@ -125,6 +138,7 @@ The AI will deliver:
 **Using**: [Full-Stack Developer Architect](prompts/technical/software-engineering/fullstack-developer-architect.md)
 
 **You Get**:
+
 - Migration strategy and phases
 - Service decomposition plan
 - Technology stack recommendations
@@ -150,6 +164,7 @@ The AI will deliver:
 ## 📚 Browse by Category
 
 ### Business Operations
+
 - Administrative workflows
 - Financial modeling
 - Marketing campaigns
@@ -158,6 +173,7 @@ The AI will deliver:
 - Legal compliance
 
 ### Technology
+
 - Software development
 - Cloud architecture
 - Data science
@@ -166,12 +182,14 @@ The AI will deliver:
 - Quality assurance
 
 ### Creative Work
+
 - Graphic design
 - UX research
 - Content strategy
 - Brand development
 
 ### Specialized Fields
+
 - Healthcare
 - Construction
 - Education
@@ -190,6 +208,7 @@ The AI will deliver:
 ### Create Prompt Templates
 
 Save your customized versions:
+
 ```markdown
 {{company_name}} = "Your Company"
 {{industry}} = "Your Industry"
@@ -199,20 +218,22 @@ Save your customized versions:
 
 ## 🌟 Success Stories
 
-> "These prompts transformed how our team uses AI. What used to take hours of back-and-forth now delivers comprehensive results in minutes." - *Tech Startup CTO*
+> "These prompts transformed how our team uses AI. What used to take hours of back-and-forth now delivers comprehensive results in minutes." - _Tech Startup CTO_
 
-> "The financial analysis prompt helped us prepare for our Series B in record time. The outputs were investor-ready." - *CFO, SaaS Company*
+> "The financial analysis prompt helped us prepare for our Series B in record time. The outputs were investor-ready." - _CFO, SaaS Company_
 
-> "I use the HR prompt weekly for everything from policy updates to performance reviews. It's like having a CHRO on demand." - *HR Director*
+> "I use the HR prompt weekly for everything from policy updates to performance reviews. It's like having a CHRO on demand." - _HR Director_
 
 ## 🤝 Community
 
 ### Share Your Experience
+
 - Star ⭐ the repository to help others discover it
 - Share your customizations and success stories
 - Request new prompts for your specific needs
 
 ### Get Updates
+
 - Watch 👁️ the repository for new prompts
 - Follow releases for major updates
 - Join discussions about prompt engineering
@@ -220,6 +241,7 @@ Save your customized versions:
 ## 📋 Quick Reference
 
 ### Prompt Components
+
 - **Metadata**: Category, tags, version
 - **Personas**: Dual expert perspectives
 - **Frameworks**: Professional methodologies
@@ -228,6 +250,7 @@ Save your customized versions:
 - **Outputs**: Structured deliverables
 
 ### Output Sections
+
 1. Executive Summary
 2. Current State Analysis
 3. Strategic Recommendations

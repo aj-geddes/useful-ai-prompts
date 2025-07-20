@@ -23,24 +23,24 @@ For each MCP repository listed, execute the following expanded operational seque
 
 1. Clone or fetch the repository into a dedicated, segregated directory under the designated `workspace` mount.
 2. Perform a comprehensive asset scan within the repository to establish:
+   - Programming language(s) used
+   - Presence and type of containerization or runtime artifacts (`Dockerfile`, `docker-compose.yml`, OCI metadata)
+   - Configuration or manifest files (`pyproject.toml`, `setup.py`, `package.json`, `Cargo.toml`, etc.)
+   - License type and compliance status
+   - README content quality and structure
+   - Default or fallback entrypoint commands or service invocations
+   - Documentation presence (e.g., inline code docs, usage examples, embedded schema comments)
 
-   * Programming language(s) used
-   * Presence and type of containerization or runtime artifacts (`Dockerfile`, `docker-compose.yml`, OCI metadata)
-   * Configuration or manifest files (`pyproject.toml`, `setup.py`, `package.json`, `Cargo.toml`, etc.)
-   * License type and compliance status
-   * README content quality and structure
-   * Default or fallback entrypoint commands or service invocations
-   * Documentation presence (e.g., inline code docs, usage examples, embedded schema comments)
 3. Assess the presence of an `mcp-server.json` metadata descriptor file:
+   - If present: Parse, verify schema integrity, check version string format, and perform completeness evaluation
+   - If absent or insufficient: Synthesize a complete and standards-compliant `mcp-server.json` using all collected signals
 
-   * If present: Parse, verify schema integrity, check version string format, and perform completeness evaluation
-   * If absent or insufficient: Synthesize a complete and standards-compliant `mcp-server.json` using all collected signals
 4. Execute field normalization operations:
+   - Enforce naming convention consistency (`snake_case` field names, `PascalCase` artifact references where needed)
+   - Resolve semantic versioning format for `version` and `protocolVersion`
+   - Tokenize descriptive tags using industry-recognized lexicons (e.g., SPDX, OCI labels, opencontainers keywords)
+   - Normalize runtime command syntax, escape platform-specific paths, and encode entrypoints consistently
 
-   * Enforce naming convention consistency (`snake_case` field names, `PascalCase` artifact references where needed)
-   * Resolve semantic versioning format for `version` and `protocolVersion`
-   * Tokenize descriptive tags using industry-recognized lexicons (e.g., SPDX, OCI labels, opencontainers keywords)
-   * Normalize runtime command syntax, escape platform-specific paths, and encode entrypoints consistently
 5. Augment metadata with inferred or synthesized fields derived from empirical analysis of similar MCP server classes. Use probabilistic heuristics based on field distributions across authoritative MCP registries to fill in best-guess defaults where ambiguity exists.
 
 **Sample Metadata Output:**
@@ -56,7 +56,15 @@ For each MCP repository listed, execute the following expanded operational seque
   "mcpType": "filesystem",
   "tags": ["mcp", "filesystem", "filetools", "docker"],
   "docker": "ghcr.io/aj-geddes/fastfs-mcp",
-  "entryCommand": ["docker", "run", "-i", "--rm", "-v", "C:\Users\UserName:/mnt/workspace:rw", "aj-geddes/fastfs-mcp"]
+  "entryCommand": [
+    "docker",
+    "run",
+    "-i",
+    "--rm",
+    "-v",
+    "C:\Users\UserName:/mnt/workspace:rw",
+    "aj-geddes/fastfs-mcp"
+  ]
 }
 ```
 
@@ -77,16 +85,15 @@ For each MCP repository listed, execute the following expanded operational seque
 
 1. Clone or fetch the repository into a dedicated, segregated directory under the designated `workspace` mount.
 2. Assess the presence of an `mcp-server.json` metadata descriptor file:
+   - If present: Parse, verify structure, perform schema validation, and assess field coverage.
+   - If absent: Infer metadata fields by interrogating repository assets, including `README.md`, `Dockerfile`, `pyproject.toml`, `package.json`, `setup.py`, or any other project-specific manifest.
+   - Synthesize a new `mcp-server.json` descriptor in conformance with the MCP protocol specification and best practice standards.
 
-   * If present: Parse, verify structure, perform schema validation, and assess field coverage.
-   * If absent: Infer metadata fields by interrogating repository assets, including `README.md`, `Dockerfile`, `pyproject.toml`, `package.json`, `setup.py`, or any other project-specific manifest.
-   * Synthesize a new `mcp-server.json` descriptor in conformance with the MCP protocol specification and best practice standards.
 3. Execute field normalization operations:
-
-   * Enforce schema-valid naming conventions (e.g., transform to `snake_case`, ensure `semver` compliance for version fields)
-   * Tokenize tags appropriately for registry classifiers
-   * Assign inferred defaults to missing fields using probabilistic weighting of canonical values and heuristics derived from similar MCP entries
-   * Normalize path syntax and escape sequences
+   - Enforce schema-valid naming conventions (e.g., transform to `snake_case`, ensure `semver` compliance for version fields)
+   - Tokenize tags appropriately for registry classifiers
+   - Assign inferred defaults to missing fields using probabilistic weighting of canonical values and heuristics derived from similar MCP entries
+   - Normalize path syntax and escape sequences
 
 **Sample Metadata Output:**
 
@@ -101,7 +108,15 @@ For each MCP repository listed, execute the following expanded operational seque
   "mcpType": "filesystem",
   "tags": ["mcp", "filesystem", "filetools", "docker"],
   "docker": "ghcr.io/aj-geddes/fastfs-mcp",
-  "entryCommand": ["docker", "run", "-i", "--rm", "-v", "C:\\Users\\UserName:/mnt/workspace:rw", "aj-geddes/fastfs-mcp"]
+  "entryCommand": [
+    "docker",
+    "run",
+    "-i",
+    "--rm",
+    "-v",
+    "C:\\Users\\UserName:/mnt/workspace:rw",
+    "aj-geddes/fastfs-mcp"
+  ]
 }
 ```
 
@@ -126,10 +141,10 @@ Undertake comprehensive enumeration of all known and emergent MCP directories, r
 
 **Classify the interface characteristics as follows:**
 
-* GitHub-native PR workflows (requires repository fork, branch push, and pull request)
-* Form-based HTTP interfaces (with or without CSRF/token protection)
-* RESTful APIs supporting `POST` or `PUT` for server registration
-* Email or contact form channels with asynchronous moderation (human approval gate)
+- GitHub-native PR workflows (requires repository fork, branch push, and pull request)
+- Form-based HTTP interfaces (with or without CSRF/token protection)
+- RESTful APIs supporting `POST` or `PUT` for server registration
+- Email or contact form channels with asynchronous moderation (human approval gate)
 
 Construct an internal registry matrix documenting interface URLs, submission schema requirements, authentication mechanisms, and expected latency or review times.
 
@@ -159,26 +174,26 @@ Ensure each sandbox is isolated to prevent cross-registry contamination. Initial
 
 #### A. GitHub-Based Registries
 
-* Fork the target repository
-* Clone locally into the corresponding working directory
-* Append the MCP descriptor into the correct format and registry file (e.g., `servers.json`, `index.yaml`)
-* Validate local diff
-* Commit changes using a descriptive message: `Add <name>: registration for MCP directory compliance`
-* Push and open a pull request
-* Annotate PR with relevant feature highlights, protocol compliance, and schema coverage
+- Fork the target repository
+- Clone locally into the corresponding working directory
+- Append the MCP descriptor into the correct format and registry file (e.g., `servers.json`, `index.yaml`)
+- Validate local diff
+- Commit changes using a descriptive message: `Add <name>: registration for MCP directory compliance`
+- Push and open a pull request
+- Annotate PR with relevant feature highlights, protocol compliance, and schema coverage
 
 #### B. Web Form Registries
 
-* Render submission form interface via automated browser or HTTP POST
-* Map JSON metadata to form fields
-* Submit form, capture redirect URL or success message
-* Archive form submission payloads and HTTP response headers
+- Render submission form interface via automated browser or HTTP POST
+- Map JSON metadata to form fields
+- Submit form, capture redirect URL or success message
+- Archive form submission payloads and HTTP response headers
 
 #### C. REST API Registries
 
-* Authenticate using API key, OAuth token, or JWT
-* Construct registration request body
-* Submit via:
+- Authenticate using API key, OAuth token, or JWT
+- Construct registration request body
+- Submit via:
 
 ```http
 POST /servers/register
@@ -186,13 +201,13 @@ Content-Type: application/json
 Authorization: Bearer <token>
 ```
 
-* Log response code, timestamp, and registry confirmation
+- Log response code, timestamp, and registry confirmation
 
 #### D. Manual Submission Channels
 
-* Generate a Markdown-encoded server description
-* Transmit using SMTP or web form
-* Log outbound message, thread ID, and any reply/confirmation tokens
+- Generate a Markdown-encoded server description
+- Transmit using SMTP or web form
+- Log outbound message, thread ID, and any reply/confirmation tokens
 
 ---
 
@@ -200,9 +215,9 @@ Authorization: Bearer <token>
 
 Post-submission, initiate validation and audit routines:
 
-* Confirm registry ingestion through response codes or visible UI updates
-* Persist logs per registry to enable rollback or re-submission
-* Link PR URLs, confirmation tokens, and audit metadata in a centralized tracking file
+- Confirm registry ingestion through response codes or visible UI updates
+- Persist logs per registry to enable rollback or re-submission
+- Link PR URLs, confirmation tokens, and audit metadata in a centralized tracking file
 
 Augment each `mcp-server.json` file with a cumulative registration vector:
 
@@ -216,15 +231,15 @@ Store all outputs in structured subdirectories under the respective registry san
 
 ### ⚡ Advanced Enhancements: Version Drift Detection and Documentation Instrumentation
 
-* Compare submitted version metadata to existing registry entries
-* If registry contains older metadata, perform a controlled upgrade via PR or update endpoint
-* Inject visual status indicators (badges) into upstream README or project pages:
+- Compare submitted version metadata to existing registry entries
+- If registry contains older metadata, perform a controlled upgrade via PR or update endpoint
+- Inject visual status indicators (badges) into upstream README or project pages:
 
 ```markdown
 ![Available on PulseMCP](https://pulsemcp.com/badge/<server-name>.svg)
 ```
 
-* Optionally publish a change log, update log, or release note stub per registration event
+- Optionally publish a change log, update log, or release note stub per registration event
 
 ---
 

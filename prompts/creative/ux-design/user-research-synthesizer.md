@@ -1,6 +1,7 @@
 # User Research Synthesis and Insight Generator
 
 ## Metadata
+
 - **Category**: Creative/UX Design
 - **Tags**: user research, UX design, qualitative analysis, insights, persona development
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt transforms raw user research data into actionable design insights, behavioral patterns, and validated personas. It combines rigorous qualitative analysis methods with psychological understanding to uncover not just what users say, but what they actually need. The framework helps identify hidden patterns and translate research into concrete design directions.
 
 ## Prompt Template
+
 ```
 You are operating as an advanced user research analysis system combining:
 
@@ -87,8 +90,10 @@ DELIVER YOUR SYNTHESIS AS:
 
 ### PARTICIPANT OVERVIEW
 ```
+
 Total Participants: {{N}}
 Demographics:
+
 - Age Range: {{range}}
 - Primary Segments: {{segments}}
 - Experience Level: {{breakdown}}
@@ -96,6 +101,7 @@ Demographics:
 
 Recruitment Method: {{method}}
 Research Dates: {{timeline}}
+
 ```
 
 ### KEY INSIGHTS
@@ -122,12 +128,14 @@ Research Dates: {{timeline}}
 
 #### PATTERN 1: {{Pattern_Name}}
 ```
+
 Trigger → Behavior → Outcome
 {{trigger}} → {{action}} → {{result}}
 
 Frequency: {{X}}% of participants
 Context: {{when_occurs}}
 Current Workarounds: {{how_users_cope}}
+
 ```
 
 **Example Journey**:
@@ -181,18 +189,21 @@ Current Workarounds: {{how_users_cope}}
 ### EMOTIONAL JOURNEY MAP
 
 ```
+
          😊 Delighted
          😌 Satisfied
-         😐 Neutral  
+         😐 Neutral
          😕 Frustrated
          😤 Angry
 
 Start → {{stage_1}} → {{stage_2}} → {{stage_3}} → End
-         😐           😕           😤           😌
-         
+😐 😕 😤 😌
+
 Key Moments:
+
 - {{moment_1}}: "{{user_feeling}}"
 - {{moment_2}}: "{{user_feeling}}"
+
 ```
 
 ### UNMET NEEDS PRIORITIZATION
@@ -274,6 +285,7 @@ Key Moments:
 ```
 
 ## Usage Instructions
+
 1. Gather all research data (interviews, surveys, observations, analytics)
 2. Organize data by source and method
 3. Include participant demographics and context
@@ -283,8 +295,11 @@ Key Moments:
 7. Use recommendations to guide design decisions
 
 ## Examples
+
 ### Example 1: Mobile Banking App Research
-**Input**: 
+
+**Input**:
+
 ```
 {{product_description}}: Mobile banking app for millennials
 {{methods_used}}: 20 user interviews, 150 survey responses, 10 usability tests
@@ -299,11 +314,13 @@ Key Moments:
 **Output**: [Comprehensive synthesis revealing anxiety around spending limits, desire for proactive financial guidance, and preference for self-service solutions]
 
 ## Related Prompts
+
 - [Persona Development Workshop](/prompts/creative/ux-design/persona-builder.md)
 - [Journey Mapping Facilitator](/prompts/creative/ux-design/journey-mapper.md)
 - [Usability Test Analyzer](/prompts/creative/ux-design/usability-analyzer.md)
 
 ## Research Notes
+
 - Thematic analysis based on Braun & Clarke's methodology
 - Jobs-to-be-Done framework from Clayton Christensen
 - Behavioral insights incorporate Kahneman's System 1/2 thinking

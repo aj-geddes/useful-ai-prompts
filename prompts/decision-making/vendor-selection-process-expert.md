@@ -1,6 +1,7 @@
 # Vendor Selection Process Expert and Procurement Decision Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: vendor selection, procurement decisions, supplier evaluation, contract negotiation, vendor management
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert vendor selection methodology with procurement decision specialization to create comprehensive frameworks for evaluating and selecting optimal vendors and suppliers that deliver superior value, minimize risk, and align with organizational objectives. It employs systematic evaluation techniques, total cost of ownership analysis, and strategic sourcing principles to guide procurement decisions.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise vendor selection system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR VENDOR SELECTION STRATEGY AS:
 **Strategic Importance**: Critical infrastructure supporting business continuity and digital transformation
 
 **Vendor Selection Challenges**:
+
 - **Multi-Cloud Strategy**: Balancing vendor diversification with operational complexity and cost optimization
 - **Compliance Requirements**: HIPAA, SOX, and PCI DSS compliance requiring specialized security capabilities
 - **Legacy Integration**: Complex integration with existing on-premises infrastructure and applications
@@ -94,6 +98,7 @@ DELIVER YOUR VENDOR SELECTION STRATEGY AS:
 - **Performance Requirements**: 99.99% uptime SLA with global geographic coverage and disaster recovery
 
 **Selection Success Criteria**:
+
 - Total cost of ownership optimization with 20%+ cost reduction over 3-year period
 - Compliance certification achievement with audit-ready documentation and controls
 - Performance target delivery with 99.99% uptime and <50ms latency for critical applications
@@ -106,6 +111,7 @@ DELIVER YOUR VENDOR SELECTION STRATEGY AS:
 Deploy comprehensive vendor evaluation framework using weighted scorecard methodology and total cost of ownership analysis to select optimal cloud infrastructure provider, ensuring compliance requirements while optimizing cost and performance outcomes.
 
 **Procurement Decision Approach**:
+
 - **Strategic Sourcing**: Market analysis with vendor capability assessment and competitive positioning
 - **Value-Based Evaluation**: Total cost optimization with performance, security, and innovation weighting
 - **Risk-Managed Selection**: Vendor risk assessment with mitigation strategy and compliance validation
@@ -113,6 +119,7 @@ Deploy comprehensive vendor evaluation framework using weighted scorecard method
 - **Performance-Driven Management**: SLA enforcement with continuous improvement and strategic evolution
 
 **Strategic Vendor Selection Principles**:
+
 1. **Value Optimization**: Total cost of ownership minimization with maximum value delivery
 2. **Risk Management**: Vendor risk assessment with business continuity and compliance assurance
 3. **Strategic Alignment**: Vendor capability alignment with business objectives and technology roadmap
@@ -120,6 +127,7 @@ Deploy comprehensive vendor evaluation framework using weighted scorecard method
 5. **Performance Excellence**: Service level achievement with continuous monitoring and improvement
 
 **Expected Selection Outcomes**:
+
 - Optimal vendor selection with 85%+ stakeholder satisfaction and objective criteria achievement
 - Cost optimization with 20-25% total cost reduction while improving service delivery
 - Risk mitigation with comprehensive vendor due diligence and contract protection
@@ -134,15 +142,16 @@ Deploy comprehensive vendor evaluation framework using weighted scorecard method
 
 **Core Infrastructure Requirements**:
 
-| Requirement Category | Specification | Priority | Evaluation Weight |
-|---------------------|---------------|----------|-------------------|
-| **Compute Services** | Virtual machines, containers, serverless functions | Critical | 25% |
-| **Storage Solutions** | Object, block, file storage with backup/recovery | Critical | 20% |
-| **Network Infrastructure** | VPC, load balancing, CDN, direct connect | High | 15% |
-| **Database Services** | Managed SQL/NoSQL with high availability | High | 15% |
-| **Security Services** | Identity management, encryption, monitoring | Critical | 25% |
+| Requirement Category       | Specification                                      | Priority | Evaluation Weight |
+| -------------------------- | -------------------------------------------------- | -------- | ----------------- |
+| **Compute Services**       | Virtual machines, containers, serverless functions | Critical | 25%               |
+| **Storage Solutions**      | Object, block, file storage with backup/recovery   | Critical | 20%               |
+| **Network Infrastructure** | VPC, load balancing, CDN, direct connect           | High     | 15%               |
+| **Database Services**      | Managed SQL/NoSQL with high availability           | High     | 15%               |
+| **Security Services**      | Identity management, encryption, monitoring        | Critical | 25%               |
 
 **Compliance and Governance Requirements**:
+
 ```
 Regulatory Compliance Specifications:
 
@@ -182,10 +191,10 @@ class VendorMarketAnalyzer:
         self.market = market_data
         self.vendors = vendor_profiles
         self.criteria = evaluation_criteria
-        
+
     def analyze_vendor_landscape(self):
         """Comprehensive vendor market analysis for strategic selection"""
-        
+
         vendor_analysis = {
             'major_cloud_providers': {
                 'aws': {
@@ -229,17 +238,17 @@ class VendorMarketAnalyzer:
                 }
             }
         }
-        
+
         return self.evaluate_vendor_fit(vendor_analysis)
-    
+
     def evaluate_vendor_fit(self, vendor_data):
         """Evaluate vendor fit against organizational requirements"""
-        
+
         fit_assessment = {}
-        
+
         for vendor_name, vendor_info in vendor_data['major_cloud_providers'].items():
             fit_score = self.calculate_vendor_fit_score(vendor_info)
-            
+
             fit_assessment[vendor_name] = {
                 'overall_fit_score': fit_score,
                 'strengths': self.identify_vendor_strengths(vendor_info),
@@ -247,12 +256,12 @@ class VendorMarketAnalyzer:
                 'strategic_considerations': self.assess_strategic_factors(vendor_info),
                 'risk_factors': self.evaluate_vendor_risks(vendor_info)
             }
-        
+
         return self.rank_vendors_by_fit(fit_assessment)
-    
+
     def calculate_vendor_fit_score(self, vendor_info):
         """Calculate weighted fit score based on organizational priorities"""
-        
+
         fit_criteria = {
             'compliance_readiness': vendor_info['compliance_certifications'] / 100 * 0.25,
             'enterprise_capability': vendor_info['enterprise_focus'] * 0.20,
@@ -261,9 +270,9 @@ class VendorMarketAnalyzer:
             'market_stability': vendor_info['market_share'] * 0.15,
             'innovation_capability': self.score_innovation_rate(vendor_info['innovation_rate']) * 0.10
         }
-        
+
         return sum(fit_criteria.values()) * 10  # Scale to 10-point system
-    
+
     def score_innovation_rate(self, innovation_rate):
         """Convert innovation rate to numerical score"""
         rates = {'low': 0.3, 'medium': 0.5, 'high': 0.8, 'very_high': 1.0}
@@ -280,6 +289,7 @@ market_analysis = analyzer.analyze_vendor_landscape()
 ```
 
 **Vendor Landscape Results**:
+
 ```
 Cloud Infrastructure Vendor Ranking:
 
@@ -289,7 +299,7 @@ Cloud Infrastructure Vendor Ranking:
    • Comprehensive compliance certification portfolio
    • Strong hybrid cloud capabilities for legacy integration
    • Competitive pricing with enterprise licensing benefits
-   
+
    Considerations:
    • Service breadth slightly lower than AWS
    • Smaller ecosystem of third-party tools and partners
@@ -300,7 +310,7 @@ Cloud Infrastructure Vendor Ranking:
    • Mature compliance and security capabilities
    • Extensive partner ecosystem and marketplace
    • Proven track record with enterprise customers
-   
+
    Considerations:
    • Premium pricing model with complex cost optimization
    • Less integration with Microsoft-centric environment
@@ -311,7 +321,7 @@ Cloud Infrastructure Vendor Ranking:
    • Competitive pricing with sustained usage discounts
    • Strong security and compliance foundation
    • Excellent performance and global network infrastructure
-   
+
    Considerations:
    • Smaller market share and enterprise customer base
    • Limited enterprise software integration options
@@ -330,10 +340,10 @@ class TCOAnalysisEngine:
         self.proposals = vendor_proposals
         self.usage = usage_projections
         self.org_costs = organizational_costs
-        
+
     def calculate_vendor_tco(self, vendor_name, proposal_data):
         """Calculate comprehensive 3-year total cost of ownership"""
-        
+
         tco_components = {
             'direct_cloud_costs': self.calculate_direct_costs(proposal_data),
             'migration_costs': self.estimate_migration_expenses(vendor_name),
@@ -343,14 +353,14 @@ class TCOAnalysisEngine:
             'risk_costs': self.estimate_risk_premium(vendor_name),
             'opportunity_costs': self.calculate_vendor_lockin_cost(vendor_name)
         }
-        
+
         return self.synthesize_tco_analysis(vendor_name, tco_components)
-    
+
     def calculate_direct_costs(self, proposal):
         """Calculate direct cloud service costs over 3-year period"""
-        
+
         annual_costs = {}
-        
+
         # Year 1: Migration and initial deployment
         year_1_usage = {
             'compute': {'instances': 150, 'hours': 8760, 'rate': proposal['compute_rate']},
@@ -358,52 +368,52 @@ class TCOAnalysisEngine:
             'network': {'gb': 10000, 'rate': proposal['network_rate']},
             'database': {'instances': 20, 'hours': 8760, 'rate': proposal['database_rate']}
         }
-        
+
         # Year 2-3: Steady state with growth
         growth_factor = 1.25  # 25% annual growth
-        
+
         for year in range(1, 4):
             year_total = 0
             current_growth = growth_factor ** (year - 1)
-            
+
             for service, usage_data in year_1_usage.items():
                 if 'instances' in usage_data:
-                    cost = (usage_data['instances'] * current_growth * 
+                    cost = (usage_data['instances'] * current_growth *
                            usage_data['hours'] * usage_data['rate'])
                 elif 'tb' in usage_data:
                     cost = usage_data['tb'] * current_growth * 12 * usage_data['rate']
                 elif 'gb' in usage_data:
                     cost = usage_data['gb'] * current_growth * 12 * usage_data['rate']
-                
+
                 year_total += cost
-            
+
             annual_costs[f'year_{year}'] = year_total
-        
+
         return {
             'annual_breakdown': annual_costs,
             'three_year_total': sum(annual_costs.values()),
             'average_annual': sum(annual_costs.values()) / 3
         }
-    
+
     def estimate_migration_expenses(self, vendor):
         """Estimate one-time migration costs by vendor"""
-        
+
         migration_factors = {
             'aws': {'complexity': 1.0, 'tooling': 0.85, 'support': 0.90},
             'azure': {'complexity': 0.85, 'tooling': 0.95, 'support': 0.95},
             'gcp': {'complexity': 1.1, 'tooling': 0.80, 'support': 0.85}
         }
-        
+
         base_migration_cost = 450000  # Base migration estimate
         vendor_factor = migration_factors.get(vendor, {'complexity': 1.0, 'tooling': 1.0, 'support': 1.0})
-        
+
         migration_components = {
             'data_migration': base_migration_cost * 0.35 * vendor_factor['complexity'],
             'application_refactoring': base_migration_cost * 0.25 * vendor_factor['tooling'],
             'testing_validation': base_migration_cost * 0.20 * vendor_factor['support'],
             'training_change_mgmt': base_migration_cost * 0.20
         }
-        
+
         return {
             'component_breakdown': migration_components,
             'total_migration_cost': sum(migration_components.values()),
@@ -424,15 +434,15 @@ for vendor in ['aws', 'azure', 'gcp']:
 
 **TCO Analysis Results (3-Year Projection)**:
 
-| Cost Category | AWS | Microsoft Azure | Google Cloud |
-|--------------|-----|-----------------|--------------|
-| **Direct Cloud Costs** | $2,250,000 | $2,100,000 | $1,950,000 |
-| **Migration Costs** | $495,000 | $420,000 | $540,000 |
-| **Integration Costs** | $180,000 | $125,000 | $200,000 |
-| **Operational Overhead** | $225,000 | $195,000 | $240,000 |
-| **Training Investment** | $85,000 | $95,000 | $110,000 |
-| **Risk Premium** | $120,000 | $95,000 | $145,000 |
-| **Total 3-Year TCO** | **$3,355,000** | **$3,030,000** | **$3,185,000** |
+| Cost Category            | AWS            | Microsoft Azure | Google Cloud   |
+| ------------------------ | -------------- | --------------- | -------------- |
+| **Direct Cloud Costs**   | $2,250,000     | $2,100,000      | $1,950,000     |
+| **Migration Costs**      | $495,000       | $420,000        | $540,000       |
+| **Integration Costs**    | $180,000       | $125,000        | $200,000       |
+| **Operational Overhead** | $225,000       | $195,000        | $240,000       |
+| **Training Investment**  | $85,000        | $95,000         | $110,000       |
+| **Risk Premium**         | $120,000       | $95,000         | $145,000       |
+| **Total 3-Year TCO**     | **$3,355,000** | **$3,030,000**  | **$3,185,000** |
 
 **TCO Winner: Microsoft Azure** (10% cost advantage over AWS, 5% over GCP)
 
@@ -442,18 +452,19 @@ for vendor in ['aws', 'azure', 'gcp']:
 
 **Evaluation Criteria and Scoring Results**:
 
-| Criteria Category | Weight | AWS Score | Azure Score | GCP Score | Evaluation Method |
-|------------------|--------|-----------|-------------|-----------|-------------------|
-| **Technical Capability** | 25% | 9.2 | 8.8 | 8.5 | Service breadth, performance, reliability |
-| **Security & Compliance** | 20% | 9.5 | 9.3 | 8.7 | Certifications, controls, audit readiness |
-| **Cost Competitiveness** | 20% | 7.5 | 8.8 | 8.2 | TCO analysis, pricing flexibility |
-| **Vendor Stability** | 15% | 9.0 | 8.7 | 7.8 | Market position, financial strength |
-| **Integration Capability** | 10% | 8.0 | 9.5 | 7.5 | Ecosystem compatibility, APIs |
-| **Innovation & Roadmap** | 10% | 8.8 | 8.5 | 9.2 | R&D investment, technology leadership |
+| Criteria Category          | Weight | AWS Score | Azure Score | GCP Score | Evaluation Method                         |
+| -------------------------- | ------ | --------- | ----------- | --------- | ----------------------------------------- |
+| **Technical Capability**   | 25%    | 9.2       | 8.8         | 8.5       | Service breadth, performance, reliability |
+| **Security & Compliance**  | 20%    | 9.5       | 9.3         | 8.7       | Certifications, controls, audit readiness |
+| **Cost Competitiveness**   | 20%    | 7.5       | 8.8         | 8.2       | TCO analysis, pricing flexibility         |
+| **Vendor Stability**       | 15%    | 9.0       | 8.7         | 7.8       | Market position, financial strength       |
+| **Integration Capability** | 10%    | 8.0       | 9.5         | 7.5       | Ecosystem compatibility, APIs             |
+| **Innovation & Roadmap**   | 10%    | 8.8       | 8.5         | 9.2       | R&D investment, technology leadership     |
 
 **Weighted Scores**:
+
 - **Microsoft Azure**: 8.85/10 (Recommended)
-- **Amazon AWS**: 8.82/10 (Strong Alternative)  
+- **Amazon AWS**: 8.82/10 (Strong Alternative)
 - **Google Cloud**: 8.32/10 (Viable Option)
 
 ### VENDOR NEGOTIATION AND CONTRACT DEVELOPMENT
@@ -463,6 +474,7 @@ for vendor in ['aws', 'azure', 'gcp']:
 **Negotiation Strategy by Vendor**:
 
 **Microsoft Azure Negotiation Approach**:
+
 ```
 Negotiation Priorities and Strategy:
 
@@ -493,18 +505,19 @@ Risk Mitigation Clauses:
 
 **Service Level Agreement Framework**:
 
-| SLA Category | Target | Measurement | Penalty |
-|-------------|--------|-------------|---------|
-| **Availability** | 99.99% monthly | Service-specific monitoring | 10% service credit |
-| **Performance** | <50ms latency P95 | End-to-end application response | 5% service credit |
-| **Support Response** | <2 hours critical | Ticket response time tracking | $1,000 per hour delay |
-| **Data Recovery** | <4 hours RTO | Disaster recovery testing | 25% monthly credit |
+| SLA Category         | Target            | Measurement                     | Penalty               |
+| -------------------- | ----------------- | ------------------------------- | --------------------- |
+| **Availability**     | 99.99% monthly    | Service-specific monitoring     | 10% service credit    |
+| **Performance**      | <50ms latency P95 | End-to-end application response | 5% service credit     |
+| **Support Response** | <2 hours critical | Ticket response time tracking   | $1,000 per hour delay |
+| **Data Recovery**    | <4 hours RTO      | Disaster recovery testing       | 25% monthly credit    |
 
 #### Contract Risk Management and Governance
 
 **Vendor Risk Assessment and Mitigation**:
 
 **Critical Risk Factors and Controls**:
+
 ```
 Vendor Lock-in Risk (High Impact):
 • Mitigation: Data portability requirements with standard export formats
@@ -528,6 +541,7 @@ Financial Risk (Medium Impact):
 ```
 
 **Vendor Governance Structure**:
+
 ```
 Executive Governance:
 • Executive Sponsor: CTO with quarterly strategic reviews
@@ -552,6 +566,7 @@ Performance Monitoring:
 **Phased Implementation Roadmap**:
 
 **Phase 1: Foundation and Security (Months 1-3)**:
+
 ```
 Month 1: Environment Setup and Security Implementation
 • Account provisioning and initial environment configuration
@@ -573,16 +588,17 @@ Month 3: Application Migration and Optimization
 ```
 
 **Phase 2: Scale and Optimization (Months 4-6)**:
+
 ```python
 class VendorOnboardingManager:
     def __init__(self, vendor_contract, implementation_plan, success_metrics):
         self.contract = vendor_contract
         self.plan = implementation_plan
         self.metrics = success_metrics
-        
+
     def execute_onboarding_process(self):
         """Systematic vendor onboarding with performance tracking"""
-        
+
         onboarding_framework = {
             'technical_integration': {
                 'infrastructure_setup': self.setup_infrastructure_integration(),
@@ -603,12 +619,12 @@ class VendorOnboardingManager:
                 'value_optimization': self.implement_value_tracking()
             }
         }
-        
+
         return self.track_onboarding_success(onboarding_framework)
-    
+
     def establish_monitoring_framework(self):
         """Comprehensive vendor performance monitoring system"""
-        
+
         monitoring_dimensions = {
             'service_performance': {
                 'availability_monitoring': {
@@ -647,7 +663,7 @@ class VendorOnboardingManager:
                 }
             }
         }
-        
+
         return monitoring_dimensions
 
 # Execute vendor onboarding process
@@ -665,6 +681,7 @@ onboarding_results = onboarding_manager.execute_onboarding_process()
 **Long-term Vendor Relationship Strategy**:
 
 **Partnership Maturity Model**:
+
 ```
 Relationship Evolution Stages:
 
@@ -693,6 +710,7 @@ Partnership Success Measurement:
 ```
 
 **Continuous Improvement Framework**:
+
 ```
 Monthly Performance Reviews:
 • SLA compliance assessment with trend analysis
@@ -714,6 +732,7 @@ Annual Partnership Assessment:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive requirements definition including technical, compliance, and business criteria
 2. Conduct systematic market analysis with vendor identification and capability assessment
 3. Develop weighted evaluation framework with objective scoring and total cost of ownership analysis
@@ -724,8 +743,11 @@ Annual Partnership Assessment:
 8. Monitor vendor performance with regular review cycles and strategic relationship evolution
 
 ## Examples
+
 ### Example 1: ERP Software Vendor Selection
-**Input**: 
+
+**Input**:
+
 ```
 {{procurement_category}}: Enterprise resource planning software for manufacturing company
 {{contract_value}}: Large strategic investment with $5M implementation and $2M annual licensing
@@ -737,7 +759,9 @@ Annual Partnership Assessment:
 **Output**: [ERP vendor selection with manufacturing industry focus, integration complexity assessment, total cost modeling, and strategic partnership development]
 
 ### Example 2: Professional Services Provider Selection
+
 **Input**:
+
 ```
 {{procurement_category}}: Management consulting services for digital transformation initiative
 {{purchase_type}}: Consulting services with staff augmentation and change management
@@ -749,11 +773,13 @@ Annual Partnership Assessment:
 **Output**: [Professional services vendor selection with consulting expertise evaluation, change management capability, methodology assessment, and partnership structure]
 
 ## Related Prompts
+
 - [Procurement Strategy Expert](/prompts/planning/procurement-strategy.md)
 - [Risk Assessment Specialist](/prompts/evaluation-assessment/risk-assessment.md)
 - [Contract Negotiation Expert](/prompts/communication/contract-negotiation.md)
 
 ## Research Notes
+
 - Based on strategic sourcing methodologies and procurement best practices
 - Integrates total cost of ownership analysis with multi-criteria decision making
 - Emphasizes vendor relationship management with partnership development and value optimization

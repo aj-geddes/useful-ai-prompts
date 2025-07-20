@@ -1,6 +1,7 @@
 # Code Generation Expert and Software Architecture Specialist
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: code generation, software development, architecture patterns, clean code, programming
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert code generation capabilities with software architecture expertise to create robust, scalable, and maintainable code. It employs best practices, design patterns, and modern development principles.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise code generation system combining:
 
@@ -93,12 +96,12 @@ graph TB
         MOB[Mobile App]
         API[Public API]
     end
-    
+
     subgraph "Gateway Layer"
         GW[API Gateway]
         AUTH[Auth Service]
     end
-    
+
     subgraph "Service Layer"
         PROD[Product Service]
         ORDER[Order Service]
@@ -106,37 +109,37 @@ graph TB
         PAY[Payment Service]
         INV[Inventory Service]
     end
-    
+
     subgraph "Data Layer"
         PDB[(Product DB)]
         ODB[(Order DB)]
         UDB[(User DB)]
         CACHE[(Redis Cache)]
     end
-    
+
     subgraph "Infrastructure"
         QUEUE[Message Queue]
         SEARCH[Elasticsearch]
         MONITOR[Monitoring]
     end
-    
+
     WEB --> GW
     MOB --> GW
     API --> GW
-    
+
     GW --> AUTH
     GW --> PROD
     GW --> ORDER
     GW --> USER
-    
+
     ORDER --> QUEUE
     PAY --> QUEUE
     INV --> QUEUE
-    
+
     PROD --> PDB
     ORDER --> ODB
     USER --> UDB
-    
+
     PROD --> CACHE
     ORDER --> CACHE
 ```
@@ -146,6 +149,7 @@ graph TB
 #### 1. Product Service (TypeScript/Node.js)
 
 **Project Structure**:
+
 ```
 product-service/
 ├── src/
@@ -186,11 +190,12 @@ product-service/
 ```
 
 **Domain Entity - Product.ts**:
+
 ```typescript
 // src/domain/entities/Product.ts
-import { Entity, ValueObject } from '@shared/domain';
-import { Result } from '@shared/core/Result';
-import { Guard } from '@shared/core/Guard';
+import { Entity, ValueObject } from "@shared/domain";
+import { Result } from "@shared/core/Result";
+import { Guard } from "@shared/core/Guard";
 
 // Value Objects
 export class ProductId extends ValueObject<{ value: string }> {
@@ -203,7 +208,7 @@ export class ProductId extends ValueObject<{ value: string }> {
   }
 
   public static create(id?: string): Result<ProductId> {
-    const guardResult = Guard.againstNullOrUndefined(id, 'productId');
+    const guardResult = Guard.againstNullOrUndefined(id, "productId");
     if (!guardResult.succeeded) {
       return Result.fail<ProductId>(guardResult.message);
     }
@@ -226,9 +231,9 @@ export class Price extends ValueObject<{ amount: number; currency: string }> {
 
   public static create(amount: number, currency: string): Result<Price> {
     const guardResults = Guard.combine([
-      Guard.againstNullOrUndefined(amount, 'amount'),
-      Guard.againstNullOrUndefined(currency, 'currency'),
-      Guard.greaterThan(0, amount, 'amount')
+      Guard.againstNullOrUndefined(amount, "amount"),
+      Guard.againstNullOrUndefined(currency, "currency"),
+      Guard.greaterThan(0, amount, "amount"),
     ]);
 
     if (!guardResults.succeeded) {
@@ -269,11 +274,14 @@ export class Product extends Entity<ProductProps> {
     return this.props.isActive;
   }
 
-  public static create(props: ProductCreateProps, id?: string): Result<Product> {
+  public static create(
+    props: ProductCreateProps,
+    id?: string,
+  ): Result<Product> {
     const guardResults = Guard.combine([
-      Guard.againstNullOrUndefined(props.name, 'name'),
-      Guard.againstNullOrUndefined(props.price, 'price'),
-      Guard.inRange(props.inventory, 0, 1000000, 'inventory')
+      Guard.againstNullOrUndefined(props.name, "name"),
+      Guard.againstNullOrUndefined(props.price, "price"),
+      Guard.inRange(props.inventory, 0, 1000000, "inventory"),
     ]);
 
     if (!guardResults.succeeded) {
@@ -285,39 +293,44 @@ export class Product extends Entity<ProductProps> {
       return Result.fail<Product>(productId.error);
     }
 
-    const product = new Product({
-      productId: productId.getValue(),
-      name: props.name,
-      description: props.description || '',
-      price: props.price,
-      inventory: props.inventory,
-      isActive: props.isActive !== undefined ? props.isActive : true,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }, id);
+    const product = new Product(
+      {
+        productId: productId.getValue(),
+        name: props.name,
+        description: props.description || "",
+        price: props.price,
+        inventory: props.inventory,
+        isActive: props.isActive !== undefined ? props.isActive : true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      id,
+    );
 
     return Result.ok<Product>(product);
   }
 
   public updatePrice(newPrice: Price): Result<void> {
-    if (newPrice.amount === this.price.amount && 
-        newPrice.currency === this.price.currency) {
-      return Result.fail<void>('Price is unchanged');
+    if (
+      newPrice.amount === this.price.amount &&
+      newPrice.currency === this.price.currency
+    ) {
+      return Result.fail<void>("Price is unchanged");
     }
 
     this.props.price = newPrice;
     this.props.updatedAt = new Date();
-    
+
     this.addDomainEvent(new ProductPriceUpdatedEvent(this.productId, newPrice));
-    
+
     return Result.ok<void>();
   }
 
   public adjustInventory(quantity: number): Result<void> {
     const newInventory = this.props.inventory + quantity;
-    
+
     if (newInventory < 0) {
-      return Result.fail<void>('Insufficient inventory');
+      return Result.fail<void>("Insufficient inventory");
     }
 
     this.props.inventory = newInventory;
@@ -360,7 +373,7 @@ interface ProductCreateProps {
 export class ProductPriceUpdatedEvent {
   constructor(
     public readonly productId: ProductId,
-    public readonly newPrice: Price
+    public readonly newPrice: Price,
   ) {}
 }
 
@@ -374,12 +387,13 @@ export class ProductDeactivatedEvent {
 ```
 
 **Repository Implementation**:
+
 ```typescript
 // src/infrastructure/database/PostgresProductRepository.ts
-import { Pool } from 'pg';
-import { IProductRepository } from '@domain/repositories/IProductRepository';
-import { Product, ProductId } from '@domain/entities/Product';
-import { Result } from '@shared/core/Result';
+import { Pool } from "pg";
+import { IProductRepository } from "@domain/repositories/IProductRepository";
+import { Product, ProductId } from "@domain/entities/Product";
+import { Result } from "@shared/core/Result";
 
 export class PostgresProductRepository implements IProductRepository {
   constructor(private pool: Pool) {}
@@ -390,9 +404,9 @@ export class PostgresProductRepository implements IProductRepository {
         SELECT * FROM products 
         WHERE id = $1 AND deleted_at IS NULL
       `;
-      
+
       const result = await this.pool.query(query, [id.value]);
-      
+
       if (result.rows.length === 0) {
         return Result.ok<Product | null>(null);
       }
@@ -406,9 +420,9 @@ export class PostgresProductRepository implements IProductRepository {
 
   async save(product: Product): Promise<Result<void>> {
     const client = await this.pool.connect();
-    
+
     try {
-      await client.query('BEGIN');
+      await client.query("BEGIN");
 
       const query = `
         INSERT INTO products (
@@ -434,7 +448,7 @@ export class PostgresProductRepository implements IProductRepository {
         product.inventory,
         product.isActive,
         product.createdAt,
-        product.updatedAt
+        product.updatedAt,
       ];
 
       await client.query(query, values);
@@ -445,12 +459,12 @@ export class PostgresProductRepository implements IProductRepository {
         await this.publishEvent(event);
       }
 
-      await client.query('COMMIT');
+      await client.query("COMMIT");
       product.markEventsAsCommitted();
 
       return Result.ok<void>();
     } catch (error) {
-      await client.query('ROLLBACK');
+      await client.query("ROLLBACK");
       return Result.fail<void>(`Failed to save product: ${error.message}`);
     } finally {
       client.release();
@@ -505,8 +519,8 @@ export class PostgresProductRepository implements IProductRepository {
       }
 
       const result = await this.pool.query(query, values);
-      const products = result.rows.map(row => this.toDomain(row));
-      
+      const products = result.rows.map((row) => this.toDomain(row));
+
       return Result.ok<Product[]>(products);
     } catch (error) {
       return Result.fail<Product[]>(`Search failed: ${error.message}`);
@@ -519,13 +533,16 @@ export class PostgresProductRepository implements IProductRepository {
       throw new Error(`Invalid price data: ${priceResult.error}`);
     }
 
-    const productResult = Product.create({
-      name: raw.name,
-      description: raw.description,
-      price: priceResult.getValue(),
-      inventory: raw.inventory,
-      isActive: raw.is_active
-    }, raw.id);
+    const productResult = Product.create(
+      {
+        name: raw.name,
+        description: raw.description,
+        price: priceResult.getValue(),
+        inventory: raw.inventory,
+        isActive: raw.is_active,
+      },
+      raw.id,
+    );
 
     if (productResult.isFailure) {
       throw new Error(`Invalid product data: ${productResult.error}`);
@@ -536,7 +553,7 @@ export class PostgresProductRepository implements IProductRepository {
 
   private async publishEvent(event: any): Promise<void> {
     // Implement event publishing logic
-    console.log('Publishing event:', event);
+    console.log("Publishing event:", event);
   }
 }
 
@@ -551,18 +568,21 @@ interface SearchCriteria {
 ```
 
 **Use Case Implementation**:
+
 ```typescript
 // src/application/use-cases/CreateProduct.ts
-import { UseCase } from '@shared/application/UseCase';
-import { Result } from '@shared/core/Result';
-import { IProductRepository } from '@domain/repositories/IProductRepository';
-import { Product, Price } from '@domain/entities/Product';
-import { CreateProductDTO } from '@application/dto/ProductDTO';
+import { UseCase } from "@shared/application/UseCase";
+import { Result } from "@shared/core/Result";
+import { IProductRepository } from "@domain/repositories/IProductRepository";
+import { Product, Price } from "@domain/entities/Product";
+import { CreateProductDTO } from "@application/dto/ProductDTO";
 
-export class CreateProductUseCase implements UseCase<CreateProductDTO, Result<Product>> {
+export class CreateProductUseCase
+  implements UseCase<CreateProductDTO, Result<Product>>
+{
   constructor(
     private productRepository: IProductRepository,
-    private eventPublisher: IEventPublisher
+    private eventPublisher: IEventPublisher,
   ) {}
 
   async execute(dto: CreateProductDTO): Promise<Result<Product>> {
@@ -578,7 +598,7 @@ export class CreateProductUseCase implements UseCase<CreateProductDTO, Result<Pr
       description: dto.description,
       price: priceResult.getValue(),
       inventory: dto.inventory,
-      isActive: true
+      isActive: true,
     });
 
     if (productResult.isFailure) {
@@ -594,12 +614,12 @@ export class CreateProductUseCase implements UseCase<CreateProductDTO, Result<Pr
     }
 
     // Publish integration event
-    await this.eventPublisher.publish('product.created', {
+    await this.eventPublisher.publish("product.created", {
       productId: product.productId.value,
       name: product.name,
       price: product.price.amount,
       currency: product.price.currency,
-      inventory: product.inventory
+      inventory: product.inventory,
     });
 
     return Result.ok<Product>(product);
@@ -608,17 +628,18 @@ export class CreateProductUseCase implements UseCase<CreateProductDTO, Result<Pr
 ```
 
 **API Controller**:
+
 ```typescript
 // src/interfaces/http/controllers/ProductController.ts
-import { Request, Response } from 'express';
-import { CreateProductUseCase } from '@application/use-cases/CreateProduct';
-import { BaseController } from '@shared/interfaces/http/BaseController';
+import { Request, Response } from "express";
+import { CreateProductUseCase } from "@application/use-cases/CreateProduct";
+import { BaseController } from "@shared/interfaces/http/BaseController";
 
 export class ProductController extends BaseController {
   constructor(
     private createProductUseCase: CreateProductUseCase,
     private updateProductUseCase: UpdateProductUseCase,
-    private searchProductsUseCase: SearchProductsUseCase
+    private searchProductsUseCase: SearchProductsUseCase,
   ) {
     super();
   }
@@ -626,15 +647,15 @@ export class ProductController extends BaseController {
   async createProduct(req: Request, res: Response): Promise<Response> {
     try {
       const dto = req.body;
-      
+
       const result = await this.createProductUseCase.execute(dto);
-      
+
       if (result.isFailure) {
         return this.fail(res, result.error);
       }
 
       const product = result.getValue();
-      
+
       return this.created(res, {
         id: product.productId.value,
         name: product.name,
@@ -642,10 +663,10 @@ export class ProductController extends BaseController {
         price: product.price.amount,
         currency: product.price.currency,
         inventory: product.inventory,
-        isActive: product.isActive
+        isActive: product.isActive,
       });
     } catch (error) {
-      return this.fail(res, error.message || 'Unexpected error');
+      return this.fail(res, error.message || "Unexpected error");
     }
   }
 
@@ -653,39 +674,46 @@ export class ProductController extends BaseController {
     try {
       const criteria = {
         name: req.query.name as string,
-        minPrice: req.query.minPrice ? parseFloat(req.query.minPrice as string) : undefined,
-        maxPrice: req.query.maxPrice ? parseFloat(req.query.maxPrice as string) : undefined,
-        isActive: req.query.isActive !== undefined ? req.query.isActive === 'true' : undefined,
+        minPrice: req.query.minPrice
+          ? parseFloat(req.query.minPrice as string)
+          : undefined,
+        maxPrice: req.query.maxPrice
+          ? parseFloat(req.query.maxPrice as string)
+          : undefined,
+        isActive:
+          req.query.isActive !== undefined
+            ? req.query.isActive === "true"
+            : undefined,
         limit: req.query.limit ? parseInt(req.query.limit as string) : 20,
-        offset: req.query.offset ? parseInt(req.query.offset as string) : 0
+        offset: req.query.offset ? parseInt(req.query.offset as string) : 0,
       };
 
       const result = await this.searchProductsUseCase.execute(criteria);
-      
+
       if (result.isFailure) {
         return this.fail(res, result.error);
       }
 
       const products = result.getValue();
-      
+
       return this.ok(res, {
-        data: products.map(p => ({
+        data: products.map((p) => ({
           id: p.productId.value,
           name: p.name,
           description: p.description,
           price: p.price.amount,
           currency: p.price.currency,
           inventory: p.inventory,
-          isActive: p.isActive
+          isActive: p.isActive,
         })),
         pagination: {
           limit: criteria.limit,
           offset: criteria.offset,
-          total: products.length
-        }
+          total: products.length,
+        },
       });
     } catch (error) {
-      return this.fail(res, error.message || 'Unexpected error');
+      return this.fail(res, error.message || "Unexpected error");
     }
   }
 }
@@ -696,6 +724,7 @@ export class ProductController extends BaseController {
 #### Docker Configuration
 
 **Dockerfile**:
+
 ```dockerfile
 # Multi-stage build for production optimization
 FROM node:18-alpine AS builder
@@ -751,8 +780,9 @@ CMD ["node", "dist/main.js"]
 ```
 
 **Docker Compose**:
+
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   product-service:
@@ -836,6 +866,7 @@ networks:
 #### Kubernetes Deployment
 
 **deployment.yaml**:
+
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -858,51 +889,51 @@ spec:
     spec:
       serviceAccountName: product-service
       containers:
-      - name: product-service
-        image: myregistry.com/product-service:1.0.0
-        ports:
-        - containerPort: 3000
-          name: http
-        env:
-        - name: NODE_ENV
-          value: "production"
-        - name: DATABASE_URL
-          valueFrom:
-            secretKeyRef:
-              name: product-service-secrets
-              key: database-url
-        - name: REDIS_URL
-          valueFrom:
-            secretKeyRef:
-              name: product-service-secrets
-              key: redis-url
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /ready
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-        securityContext:
-          runAsNonRoot: true
-          runAsUser: 1001
-          allowPrivilegeEscalation: false
-          readOnlyRootFilesystem: true
-          capabilities:
-            drop:
-            - ALL
+        - name: product-service
+          image: myregistry.com/product-service:1.0.0
+          ports:
+            - containerPort: 3000
+              name: http
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: product-service-secrets
+                  key: database-url
+            - name: REDIS_URL
+              valueFrom:
+                secretKeyRef:
+                  name: product-service-secrets
+                  key: redis-url
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1001
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
 ---
 apiVersion: v1
 kind: Service
@@ -913,9 +944,9 @@ spec:
   selector:
     app: product-service
   ports:
-  - port: 80
-    targetPort: 3000
-    protocol: TCP
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
   type: ClusterIP
 ---
 apiVersion: autoscaling/v2
@@ -931,39 +962,40 @@ spec:
   minReplicas: 3
   maxReplicas: 10
   metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 70
-  - type: Resource
-    resource:
-      name: memory
-      target:
-        type: Utilization
-        averageUtilization: 80
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 80
 ```
 
 ### TESTING IMPLEMENTATION
 
 #### Unit Tests
+
 ```typescript
 // tests/unit/domain/entities/Product.test.ts
-import { Product, Price, ProductId } from '@domain/entities/Product';
+import { Product, Price, ProductId } from "@domain/entities/Product";
 
-describe('Product Entity', () => {
-  describe('create', () => {
-    it('should create a valid product', () => {
+describe("Product Entity", () => {
+  describe("create", () => {
+    it("should create a valid product", () => {
       // Arrange
-      const priceResult = Price.create(99.99, 'USD');
+      const priceResult = Price.create(99.99, "USD");
       expect(priceResult.isSuccess).toBe(true);
 
       const props = {
-        name: 'Test Product',
-        description: 'Test Description',
+        name: "Test Product",
+        description: "Test Description",
         price: priceResult.getValue(),
-        inventory: 100
+        inventory: 100,
       };
 
       // Act
@@ -979,30 +1011,30 @@ describe('Product Entity', () => {
       expect(product.isActive).toBe(true);
     });
 
-    it('should fail with invalid price', () => {
-      const priceResult = Price.create(-10, 'USD');
+    it("should fail with invalid price", () => {
+      const priceResult = Price.create(-10, "USD");
       expect(priceResult.isFailure).toBe(true);
-      expect(priceResult.error).toContain('greater than 0');
+      expect(priceResult.error).toContain("greater than 0");
     });
 
-    it('should fail with missing name', () => {
-      const priceResult = Price.create(99.99, 'USD');
+    it("should fail with missing name", () => {
+      const priceResult = Price.create(99.99, "USD");
       const productResult = Product.create({
         name: null,
         price: priceResult.getValue(),
-        inventory: 100
+        inventory: 100,
       });
 
       expect(productResult.isFailure).toBe(true);
-      expect(productResult.error).toContain('name');
+      expect(productResult.error).toContain("name");
     });
   });
 
-  describe('updatePrice', () => {
-    it('should update price and emit event', () => {
+  describe("updatePrice", () => {
+    it("should update price and emit event", () => {
       // Arrange
       const product = createTestProduct();
-      const newPrice = Price.create(149.99, 'USD').getValue();
+      const newPrice = Price.create(149.99, "USD").getValue();
 
       // Act
       const result = product.updatePrice(newPrice);
@@ -1010,15 +1042,15 @@ describe('Product Entity', () => {
       // Assert
       expect(result.isSuccess).toBe(true);
       expect(product.price.amount).toBe(149.99);
-      
+
       const events = product.getUncommittedEvents();
       expect(events).toHaveLength(1);
       expect(events[0]).toBeInstanceOf(ProductPriceUpdatedEvent);
     });
   });
 
-  describe('adjustInventory', () => {
-    it('should increase inventory', () => {
+  describe("adjustInventory", () => {
+    it("should increase inventory", () => {
       const product = createTestProduct({ inventory: 50 });
       const result = product.adjustInventory(25);
 
@@ -1026,7 +1058,7 @@ describe('Product Entity', () => {
       expect(product.inventory).toBe(75);
     });
 
-    it('should decrease inventory', () => {
+    it("should decrease inventory", () => {
       const product = createTestProduct({ inventory: 50 });
       const result = product.adjustInventory(-20);
 
@@ -1034,16 +1066,16 @@ describe('Product Entity', () => {
       expect(product.inventory).toBe(30);
     });
 
-    it('should fail when inventory goes negative', () => {
+    it("should fail when inventory goes negative", () => {
       const product = createTestProduct({ inventory: 10 });
       const result = product.adjustInventory(-15);
 
       expect(result.isFailure).toBe(true);
-      expect(result.error).toContain('Insufficient inventory');
+      expect(result.error).toContain("Insufficient inventory");
       expect(product.inventory).toBe(10); // Unchanged
     });
 
-    it('should emit out of stock event when inventory reaches zero', () => {
+    it("should emit out of stock event when inventory reaches zero", () => {
       const product = createTestProduct({ inventory: 5 });
       product.adjustInventory(-5);
 
@@ -1055,28 +1087,29 @@ describe('Product Entity', () => {
 });
 
 function createTestProduct(overrides = {}): Product {
-  const price = Price.create(99.99, 'USD').getValue();
+  const price = Price.create(99.99, "USD").getValue();
   const defaultProps = {
-    name: 'Test Product',
-    description: 'Test Description',
+    name: "Test Product",
+    description: "Test Description",
     price,
     inventory: 100,
-    ...overrides
+    ...overrides,
   };
-  
+
   return Product.create(defaultProps).getValue();
 }
 ```
 
 #### Integration Tests
+
 ```typescript
 // tests/integration/ProductService.integration.test.ts
-import { PostgresProductRepository } from '@infrastructure/database/PostgresProductRepository';
-import { CreateProductUseCase } from '@application/use-cases/CreateProduct';
-import { Pool } from 'pg';
-import { TestDatabaseHelper } from '../helpers/TestDatabaseHelper';
+import { PostgresProductRepository } from "@infrastructure/database/PostgresProductRepository";
+import { CreateProductUseCase } from "@application/use-cases/CreateProduct";
+import { Pool } from "pg";
+import { TestDatabaseHelper } from "../helpers/TestDatabaseHelper";
 
-describe('Product Service Integration Tests', () => {
+describe("Product Service Integration Tests", () => {
   let pool: Pool;
   let repository: PostgresProductRepository;
   let createProductUseCase: CreateProductUseCase;
@@ -1086,7 +1119,10 @@ describe('Product Service Integration Tests', () => {
     dbHelper = new TestDatabaseHelper();
     pool = await dbHelper.createTestDatabase();
     repository = new PostgresProductRepository(pool);
-    createProductUseCase = new CreateProductUseCase(repository, mockEventPublisher);
+    createProductUseCase = new CreateProductUseCase(
+      repository,
+      mockEventPublisher,
+    );
   });
 
   afterAll(async () => {
@@ -1098,15 +1134,15 @@ describe('Product Service Integration Tests', () => {
     await dbHelper.cleanDatabase();
   });
 
-  describe('CreateProduct Use Case', () => {
-    it('should create and persist a product', async () => {
+  describe("CreateProduct Use Case", () => {
+    it("should create and persist a product", async () => {
       // Arrange
       const dto = {
-        name: 'Integration Test Product',
-        description: 'Test Description',
+        name: "Integration Test Product",
+        description: "Test Description",
         price: 99.99,
-        currency: 'USD',
-        inventory: 100
+        currency: "USD",
+        inventory: 100,
       };
 
       // Act
@@ -1115,7 +1151,7 @@ describe('Product Service Integration Tests', () => {
       // Assert
       expect(result.isSuccess).toBe(true);
       const product = result.getValue();
-      
+
       // Verify persistence
       const savedProduct = await repository.findById(product.productId);
       expect(savedProduct.isSuccess).toBe(true);
@@ -1123,23 +1159,25 @@ describe('Product Service Integration Tests', () => {
       expect(savedProduct.getValue().name).toBe(dto.name);
     });
 
-    it('should handle concurrent product creation', async () => {
+    it("should handle concurrent product creation", async () => {
       // Arrange
-      const createPromises = Array(10).fill(null).map((_, i) => 
-        createProductUseCase.execute({
-          name: `Concurrent Product ${i}`,
-          description: 'Test',
-          price: 99.99,
-          currency: 'USD',
-          inventory: 100
-        })
-      );
+      const createPromises = Array(10)
+        .fill(null)
+        .map((_, i) =>
+          createProductUseCase.execute({
+            name: `Concurrent Product ${i}`,
+            description: "Test",
+            price: 99.99,
+            currency: "USD",
+            inventory: 100,
+          }),
+        );
 
       // Act
       const results = await Promise.all(createPromises);
 
       // Assert
-      results.forEach(result => {
+      results.forEach((result) => {
         expect(result.isSuccess).toBe(true);
       });
 
@@ -1148,39 +1186,41 @@ describe('Product Service Integration Tests', () => {
     });
   });
 
-  describe('Product Search', () => {
+  describe("Product Search", () => {
     beforeEach(async () => {
       // Seed test data
       const products = [
-        { name: 'Laptop Pro', price: 1299.99, inventory: 50 },
-        { name: 'Laptop Air', price: 999.99, inventory: 30 },
-        { name: 'Desktop Ultra', price: 1999.99, inventory: 20 },
-        { name: 'Tablet Mini', price: 499.99, inventory: 100 }
+        { name: "Laptop Pro", price: 1299.99, inventory: 50 },
+        { name: "Laptop Air", price: 999.99, inventory: 30 },
+        { name: "Desktop Ultra", price: 1999.99, inventory: 20 },
+        { name: "Tablet Mini", price: 499.99, inventory: 100 },
       ];
 
       for (const p of products) {
         await createProductUseCase.execute({
           ...p,
-          currency: 'USD',
-          description: 'Test product'
+          currency: "USD",
+          description: "Test product",
         });
       }
     });
 
-    it('should search products by name', async () => {
-      const result = await repository.search({ name: 'Laptop' });
-      
+    it("should search products by name", async () => {
+      const result = await repository.search({ name: "Laptop" });
+
       expect(result.isSuccess).toBe(true);
       expect(result.getValue()).toHaveLength(2);
-      expect(result.getValue().every(p => p.name.includes('Laptop'))).toBe(true);
+      expect(result.getValue().every((p) => p.name.includes("Laptop"))).toBe(
+        true,
+      );
     });
 
-    it('should search products by price range', async () => {
-      const result = await repository.search({ 
-        minPrice: 500, 
-        maxPrice: 1500 
+    it("should search products by price range", async () => {
+      const result = await repository.search({
+        minPrice: 500,
+        maxPrice: 1500,
       });
-      
+
       expect(result.isSuccess).toBe(true);
       expect(result.getValue()).toHaveLength(3);
     });
@@ -1191,6 +1231,7 @@ describe('Product Service Integration Tests', () => {
 ### API DOCUMENTATION
 
 #### OpenAPI Specification
+
 ```yaml
 openapi: 3.0.0
 info:
@@ -1216,27 +1257,27 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/CreateProductRequest'
+              $ref: "#/components/schemas/CreateProductRequest"
       responses:
-        '201':
+        "201":
           description: Product created successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ProductResponse'
-        '400':
+                $ref: "#/components/schemas/ProductResponse"
+        "400":
           description: Invalid request
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '500':
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
           description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorResponse'
-    
+                $ref: "#/components/schemas/ErrorResponse"
+
     get:
       summary: Search products
       operationId: searchProducts
@@ -1281,12 +1322,12 @@ paths:
             default: 0
             minimum: 0
       responses:
-        '200':
+        "200":
           description: Products retrieved successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ProductListResponse'
+                $ref: "#/components/schemas/ProductListResponse"
 
   /products/{productId}:
     get:
@@ -1303,18 +1344,18 @@ paths:
             type: string
             format: uuid
       responses:
-        '200':
+        "200":
           description: Product retrieved successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ProductResponse'
-        '404':
+                $ref: "#/components/schemas/ProductResponse"
+        "404":
           description: Product not found
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorResponse'
+                $ref: "#/components/schemas/ErrorResponse"
 
 components:
   schemas:
@@ -1342,7 +1383,7 @@ components:
           example: 2499.99
         currency:
           type: string
-          pattern: '^[A-Z]{3}$'
+          pattern: "^[A-Z]{3}$"
           example: "USD"
         inventory:
           type: integer
@@ -1390,7 +1431,7 @@ components:
         data:
           type: array
           items:
-            $ref: '#/components/schemas/ProductResponse'
+            $ref: "#/components/schemas/ProductResponse"
         pagination:
           type: object
           properties:
@@ -1432,10 +1473,11 @@ components:
 ### PERFORMANCE OPTIMIZATION
 
 #### Caching Strategy
+
 ```typescript
 // src/infrastructure/cache/RedisCache.ts
-import Redis from 'ioredis';
-import { ICache } from '@shared/infrastructure/ICache';
+import Redis from "ioredis";
+import { ICache } from "@shared/infrastructure/ICache";
 
 export class RedisCache implements ICache {
   private client: Redis;
@@ -1448,11 +1490,11 @@ export class RedisCache implements ICache {
       retryStrategy: (times) => {
         const delay = Math.min(times * 50, 2000);
         return delay;
-      }
+      },
     });
 
-    this.client.on('error', (err) => {
-      console.error('Redis Client Error:', err);
+    this.client.on("error", (err) => {
+      console.error("Redis Client Error:", err);
     });
   }
 
@@ -1460,7 +1502,7 @@ export class RedisCache implements ICache {
     try {
       const value = await this.client.get(key);
       if (!value) return null;
-      
+
       return JSON.parse(value) as T;
     } catch (error) {
       console.error(`Cache get error for key ${key}:`, error);
@@ -1472,7 +1514,7 @@ export class RedisCache implements ICache {
     try {
       const serialized = JSON.stringify(value);
       const expiry = ttl || this.defaultTTL;
-      
+
       await this.client.setex(key, expiry, serialized);
     } catch (error) {
       console.error(`Cache set error for key ${key}:`, error);
@@ -1503,12 +1545,12 @@ export class RedisCache implements ICache {
 export class CachedProductRepository implements IProductRepository {
   constructor(
     private repository: IProductRepository,
-    private cache: ICache
+    private cache: ICache,
   ) {}
 
   async findById(id: ProductId): Promise<Result<Product | null>> {
     const cacheKey = `product:${id.value}`;
-    
+
     // Try cache first
     const cached = await this.cache.get<any>(cacheKey);
     if (cached) {
@@ -1518,13 +1560,13 @@ export class CachedProductRepository implements IProductRepository {
 
     // Cache miss - fetch from database
     const result = await this.repository.findById(id);
-    
+
     if (result.isSuccess && result.getValue()) {
       // Cache the result
       await this.cache.set(
         cacheKey,
         this.serializeProduct(result.getValue()),
-        300 // 5 minutes TTL
+        300, // 5 minutes TTL
       );
     }
 
@@ -1533,14 +1575,14 @@ export class CachedProductRepository implements IProductRepository {
 
   async save(product: Product): Promise<Result<void>> {
     const result = await this.repository.save(product);
-    
+
     if (result.isSuccess) {
       // Invalidate cache
       const cacheKey = `product:${product.productId.value}`;
       await this.cache.delete(cacheKey);
-      
+
       // Invalidate search cache
-      await this.cache.invalidatePattern('product:search:*');
+      await this.cache.invalidatePattern("product:search:*");
     }
 
     return result;
@@ -1554,19 +1596,22 @@ export class CachedProductRepository implements IProductRepository {
       price: product.price.amount,
       currency: product.price.currency,
       inventory: product.inventory,
-      isActive: product.isActive
+      isActive: product.isActive,
     };
   }
 
   private deserializeProduct(data: any): Product {
     const price = Price.create(data.price, data.currency).getValue();
-    return Product.create({
-      name: data.name,
-      description: data.description,
-      price,
-      inventory: data.inventory,
-      isActive: data.isActive
-    }, data.id).getValue();
+    return Product.create(
+      {
+        name: data.name,
+        description: data.description,
+        price,
+        inventory: data.inventory,
+        isActive: data.isActive,
+      },
+      data.id,
+    ).getValue();
   }
 }
 ```
@@ -1574,10 +1619,11 @@ export class CachedProductRepository implements IProductRepository {
 ### SECURITY IMPLEMENTATION
 
 #### Authentication Middleware
+
 ```typescript
 // src/interfaces/http/middleware/AuthMiddleware.ts
-import { Request, Response, NextFunction } from 'express';
-import jwt from 'jsonwebtoken';
+import { Request, Response, NextFunction } from "express";
+import jwt from "jsonwebtoken";
 
 export interface AuthRequest extends Request {
   user?: {
@@ -1590,50 +1636,50 @@ export interface AuthRequest extends Request {
 export class AuthMiddleware {
   constructor(
     private jwtSecret: string,
-    private jwtIssuer: string
+    private jwtIssuer: string,
   ) {}
 
   authenticate() {
     return async (req: AuthRequest, res: Response, next: NextFunction) => {
       try {
         const token = this.extractToken(req);
-        
+
         if (!token) {
           return res.status(401).json({
             error: {
-              code: 'UNAUTHORIZED',
-              message: 'Authentication required'
-            }
+              code: "UNAUTHORIZED",
+              message: "Authentication required",
+            },
           });
         }
 
         const decoded = jwt.verify(token, this.jwtSecret, {
           issuer: this.jwtIssuer,
-          algorithms: ['HS256']
+          algorithms: ["HS256"],
         }) as any;
 
         req.user = {
           id: decoded.sub,
           email: decoded.email,
-          roles: decoded.roles || []
+          roles: decoded.roles || [],
         };
 
         next();
       } catch (error) {
-        if (error.name === 'TokenExpiredError') {
+        if (error.name === "TokenExpiredError") {
           return res.status(401).json({
             error: {
-              code: 'TOKEN_EXPIRED',
-              message: 'Token has expired'
-            }
+              code: "TOKEN_EXPIRED",
+              message: "Token has expired",
+            },
           });
         }
 
         return res.status(401).json({
           error: {
-            code: 'INVALID_TOKEN',
-            message: 'Invalid authentication token'
-          }
+            code: "INVALID_TOKEN",
+            message: "Invalid authentication token",
+          },
         });
       }
     };
@@ -1644,22 +1690,22 @@ export class AuthMiddleware {
       if (!req.user) {
         return res.status(401).json({
           error: {
-            code: 'UNAUTHORIZED',
-            message: 'Authentication required'
-          }
+            code: "UNAUTHORIZED",
+            message: "Authentication required",
+          },
         });
       }
 
-      const hasRole = allowedRoles.some(role => 
-        req.user.roles.includes(role)
+      const hasRole = allowedRoles.some((role) =>
+        req.user.roles.includes(role),
       );
 
       if (!hasRole) {
         return res.status(403).json({
           error: {
-            code: 'FORBIDDEN',
-            message: 'Insufficient permissions'
-          }
+            code: "FORBIDDEN",
+            message: "Insufficient permissions",
+          },
         });
       }
 
@@ -1669,8 +1715,8 @@ export class AuthMiddleware {
 
   private extractToken(req: Request): string | null {
     const authHeader = req.headers.authorization;
-    
-    if (authHeader && authHeader.startsWith('Bearer ')) {
+
+    if (authHeader && authHeader.startsWith("Bearer ")) {
       return authHeader.substring(7);
     }
 
@@ -1682,46 +1728,50 @@ export class AuthMiddleware {
 export class ValidationMiddleware {
   static validateCreateProduct() {
     return [
-      body('name')
+      body("name")
         .trim()
         .isLength({ min: 3, max: 200 })
-        .withMessage('Name must be between 3 and 200 characters')
+        .withMessage("Name must be between 3 and 200 characters")
         .escape(),
-      body('description')
+      body("description")
         .optional()
         .trim()
         .isLength({ max: 2000 })
-        .withMessage('Description must not exceed 2000 characters')
+        .withMessage("Description must not exceed 2000 characters")
         .escape(),
-      body('price')
+      body("price")
         .isFloat({ min: 0.01 })
-        .withMessage('Price must be greater than 0'),
-      body('currency')
+        .withMessage("Price must be greater than 0"),
+      body("currency")
         .matches(/^[A-Z]{3}$/)
-        .withMessage('Currency must be a 3-letter code'),
-      body('inventory')
+        .withMessage("Currency must be a 3-letter code"),
+      body("inventory")
         .isInt({ min: 0 })
-        .withMessage('Inventory must be a non-negative integer'),
-      ValidationMiddleware.handleValidationErrors
+        .withMessage("Inventory must be a non-negative integer"),
+      ValidationMiddleware.handleValidationErrors,
     ];
   }
 
-  static handleValidationErrors(req: Request, res: Response, next: NextFunction) {
+  static handleValidationErrors(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) {
     const errors = validationResult(req);
-    
+
     if (!errors.isEmpty()) {
       return res.status(400).json({
         error: {
-          code: 'VALIDATION_ERROR',
-          message: 'Invalid request parameters',
-          details: errors.array().map(err => ({
+          code: "VALIDATION_ERROR",
+          message: "Invalid request parameters",
+          details: errors.array().map((err) => ({
             field: err.param,
-            message: err.msg
-          }))
-        }
+            message: err.msg,
+          })),
+        },
       });
     }
-    
+
     next();
   }
 }
@@ -1730,43 +1780,44 @@ export class ValidationMiddleware {
 ### MONITORING & OBSERVABILITY
 
 #### Logging Configuration
+
 ```typescript
 // src/shared/infrastructure/Logger.ts
-import winston from 'winston';
-import { ElasticsearchTransport } from 'winston-elasticsearch';
+import winston from "winston";
+import { ElasticsearchTransport } from "winston-elasticsearch";
 
 export class Logger {
   private logger: winston.Logger;
 
   constructor() {
     const esTransport = new ElasticsearchTransport({
-      level: 'info',
+      level: "info",
       clientOpts: {
-        node: process.env.ELASTICSEARCH_URL || 'http://localhost:9200'
+        node: process.env.ELASTICSEARCH_URL || "http://localhost:9200",
       },
-      index: 'product-service-logs'
+      index: "product-service-logs",
     });
 
     this.logger = winston.createLogger({
-      level: process.env.LOG_LEVEL || 'info',
+      level: process.env.LOG_LEVEL || "info",
       format: winston.format.combine(
         winston.format.timestamp(),
         winston.format.errors({ stack: true }),
-        winston.format.json()
+        winston.format.json(),
       ),
       defaultMeta: {
-        service: 'product-service',
-        environment: process.env.NODE_ENV
+        service: "product-service",
+        environment: process.env.NODE_ENV,
       },
       transports: [
         new winston.transports.Console({
           format: winston.format.combine(
             winston.format.colorize(),
-            winston.format.simple()
-          )
+            winston.format.simple(),
+          ),
         }),
-        esTransport
-      ]
+        esTransport,
+      ],
     });
   }
 
@@ -1777,10 +1828,12 @@ export class Logger {
   error(message: string, error?: Error, meta?: any) {
     this.logger.error(message, {
       ...meta,
-      error: error ? {
-        message: error.message,
-        stack: error.stack
-      } : undefined
+      error: error
+        ? {
+            message: error.message,
+            stack: error.stack,
+          }
+        : undefined,
     });
   }
 
@@ -1794,7 +1847,7 @@ export class Logger {
 }
 
 // Metrics Collection
-import { Registry, Counter, Histogram, Gauge } from 'prom-client';
+import { Registry, Counter, Histogram, Gauge } from "prom-client";
 
 export class MetricsCollector {
   private registry: Registry;
@@ -1806,21 +1859,21 @@ export class MetricsCollector {
     this.registry = new Registry();
 
     this.httpRequestDuration = new Histogram({
-      name: 'http_request_duration_seconds',
-      help: 'Duration of HTTP requests in seconds',
-      labelNames: ['method', 'route', 'status_code'],
-      buckets: [0.1, 0.5, 1, 2, 5]
+      name: "http_request_duration_seconds",
+      help: "Duration of HTTP requests in seconds",
+      labelNames: ["method", "route", "status_code"],
+      buckets: [0.1, 0.5, 1, 2, 5],
     });
 
     this.httpRequestTotal = new Counter({
-      name: 'http_requests_total',
-      help: 'Total number of HTTP requests',
-      labelNames: ['method', 'route', 'status_code']
+      name: "http_requests_total",
+      help: "Total number of HTTP requests",
+      labelNames: ["method", "route", "status_code"],
     });
 
     this.activeConnections = new Gauge({
-      name: 'active_connections',
-      help: 'Number of active connections'
+      name: "active_connections",
+      help: "Number of active connections",
     });
 
     this.registry.registerMetric(this.httpRequestDuration);
@@ -1828,16 +1881,21 @@ export class MetricsCollector {
     this.registry.registerMetric(this.activeConnections);
   }
 
-  recordHttpRequest(method: string, route: string, statusCode: number, duration: number) {
+  recordHttpRequest(
+    method: string,
+    route: string,
+    statusCode: number,
+    duration: number,
+  ) {
     this.httpRequestDuration.observe(
       { method, route, status_code: statusCode.toString() },
-      duration
+      duration,
     );
-    
+
     this.httpRequestTotal.inc({
       method,
       route,
-      status_code: statusCode.toString()
+      status_code: statusCode.toString(),
     });
   }
 
@@ -1856,6 +1914,7 @@ export class MetricsCollector {
 ```
 
 ## Usage Instructions
+
 1. Start with clear requirements and constraints
 2. Design the system architecture before coding
 3. Apply SOLID principles and design patterns appropriately
@@ -1866,8 +1925,11 @@ export class MetricsCollector {
 8. Follow language-specific best practices and conventions
 
 ## Examples
+
 ### Example 1: Real-time Chat Application
-**Input**: 
+
+**Input**:
+
 ```
 {{project_type}}: Real-time chat application
 {{language_stack}}: Python/FastAPI with WebSockets
@@ -1879,11 +1941,13 @@ export class MetricsCollector {
 **Output**: [Complete implementation with FastAPI WebSocket server, Redis pub/sub for scaling, PostgreSQL for history, S3 for files, and comprehensive real-time features]
 
 ## Related Prompts
+
 - [API Design Expert](/prompts/creation/api-design-expert.md)
 - [Database Schema Designer](/prompts/creation/database-schema-designer.md)
 - [DevOps Pipeline Creator](/prompts/creation/devops-pipeline-creator.md)
 
 ## Research Notes
+
 - Emphasizes clean architecture and SOLID principles
 - Includes comprehensive testing strategies
 - Covers full stack from domain logic to infrastructure

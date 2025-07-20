@@ -1,6 +1,7 @@
 # Product Design Expert and User Experience Innovator
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: product design, UX design, user-centered design, innovation, design thinking
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert product design capabilities with user experience innovation to create products that delight users and drive business success. It employs human-centered design principles and systematic innovation methodologies.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise product design system combining:
 
@@ -85,6 +88,7 @@ DELIVER YOUR DESIGN AS:
 **Design Mission**: Create an intuitive, gamified financial app that makes money management as engaging as social media while building lasting financial habits.
 
 **Key Design Principles**:
+
 1. **Simplicity First**: Complex finance made effortlessly simple
 2. **Delight Daily**: Every interaction should spark joy
 3. **Trust Through Transparency**: Clear, honest, no hidden complexity
@@ -96,18 +100,21 @@ DELIVER YOUR DESIGN AS:
 #### Primary User Personas
 
 **Maya - The Anxious Achiever**
+
 - Age: 24, Recent graduate
 - Pain Points: Overwhelmed by financial adulting, FOMO on investing
 - Goals: Build emergency fund, start investing, pay off student loans
 - Quote: "I know I should be doing more with my money, but I don't know where to start"
 
 **Jordan - The Side Hustler**
+
 - Age: 27, Multiple income streams
 - Pain Points: Tracking irregular income, tax preparation, scaling
 - Goals: Optimize earnings, automate finances, grow wealth
 - Quote: "I need something that keeps up with my hustle"
 
 **Alex - The Conscious Spender**
+
 - Age: 22, College student
 - Pain Points: Overspending on experiences, no savings habit
 - Goals: Budget without feeling restricted, save for travel
@@ -116,12 +123,14 @@ DELIVER YOUR DESIGN AS:
 #### Key Research Findings
 
 **Behavioral Insights**:
+
 - 78% check social media before checking bank balance
 - Average attention span for financial tasks: 90 seconds
 - 65% learn better from peers than experts
 - Emotional triggers: Shame (overdraft) vs Pride (savings milestone)
 
 **Unmet Needs Identified**:
+
 1. Real-time financial confidence scoring
 2. Bite-sized financial actions (< 30 seconds)
 3. Social accountability without oversharing
@@ -135,18 +144,21 @@ DELIVER YOUR DESIGN AS:
 **The Financial Wellness Journey**
 
 **Level 1: Foundation** (Months 0-3)
+
 - Automated categorization with fun names
 - Daily 30-second money moment
 - First savings milestone celebration
 - Peer comparison (anonymized)
 
 **Level 2: Growth** (Months 3-6)
+
 - Unlock investing mini-games
 - Budget challenges with friends
 - Predictive insights activation
 - Custom goal visualization
 
 **Level 3: Mastery** (Months 6+)
+
 - Advanced automation tools
 - Mentor mode - help others
 - Wealth building strategies
@@ -154,14 +166,14 @@ DELIVER YOUR DESIGN AS:
 
 #### Feature Prioritization Matrix
 
-| Feature | User Value | Business Impact | Effort | Priority |
-|---------|------------|-----------------|--------|----------|
-| Smart Daily Digest | High | High | Low | P0 - Launch |
-| Social Savings Challenges | High | Medium | Medium | P0 - Launch |
-| Predictive Overdraft Prevention | High | High | High | P1 - Month 2 |
-| Investment Learning Games | Medium | High | High | P1 - Month 2 |
-| AR Receipt Scanner | Medium | Low | Medium | P2 - Month 6 |
-| Crypto Integration | Low | Medium | High | P3 - Year 2 |
+| Feature                         | User Value | Business Impact | Effort | Priority     |
+| ------------------------------- | ---------- | --------------- | ------ | ------------ |
+| Smart Daily Digest              | High       | High            | Low    | P0 - Launch  |
+| Social Savings Challenges       | High       | Medium          | Medium | P0 - Launch  |
+| Predictive Overdraft Prevention | High       | High            | High   | P1 - Month 2 |
+| Investment Learning Games       | Medium     | High            | High   | P1 - Month 2 |
+| AR Receipt Scanner              | Medium     | Low             | Medium | P2 - Month 6 |
+| Crypto Integration              | Low        | Medium          | High   | P3 - Year 2  |
 
 ### DETAILED DESIGN SOLUTIONS
 
@@ -207,6 +219,7 @@ DELIVER YOUR DESIGN AS:
 "Good morning! You spent $32 less than usual yesterday 🎉"
 
 **Tap to Open**:
+
 - Visual spending snapshot
 - One insight: "Coffee spending down 40% this week"
 - One action: "Move $10 to vacation fund?" [One tap]
@@ -216,6 +229,7 @@ DELIVER YOUR DESIGN AS:
 "Tomorrow's predicted spending: $45. You're on track! 📈"
 
 **Behavioral Mechanics**:
+
 - Variable reward schedule
 - Progress visualization
 - Social proof
@@ -226,12 +240,14 @@ DELIVER YOUR DESIGN AS:
 **A. Financial Health Score**
 
 Real-time score (0-1000) based on:
+
 - Spending vs. income ratio (40%)
 - Savings rate (30%)
 - Investment diversity (20%)
 - Financial preparedness (10%)
 
 Visualized as:
+
 - Animated plant that grows/wilts
 - Color-coded daily changes
 - Predictive "next week" forecast
@@ -240,6 +256,7 @@ Visualized as:
 **B. Micro-Investment Games**
 
 "Stock Market Training Wheels":
+
 - Start with virtual $100
 - Real company scenarios
 - Learn by doing (gamified)
@@ -249,6 +266,7 @@ Visualized as:
 **C. Predictive Insights Engine**
 
 AI-powered predictions:
+
 - "Heads up! Rent due in 3 days, you're $200 short"
 - "Black Friday coming - based on last year, budget $400"
 - "You'll hit savings goal 2 weeks early at this rate!"
@@ -259,6 +277,7 @@ AI-powered predictions:
 #### Design Language: "Friendly Finance"
 
 **Color Palette**:
+
 - Primary: Optimistic Teal (#00D4AA)
 - Success: Growth Green (#27AE60)
 - Warning: Warm Amber (#F39C12)
@@ -266,6 +285,7 @@ AI-powered predictions:
 - Neutral: Calming Grays (#F8F9FA to #2C3E50)
 
 **Typography**:
+
 - Headers: Inter (Bold, friendly, clear)
 - Body: Inter (Regular, highly readable)
 - Numbers: Tabular figures for alignment
@@ -273,18 +293,21 @@ AI-powered predictions:
 **Component Library**:
 
 **Cards**:
+
 - Soft shadows (4px blur, 10% opacity)
 - 16px border radius
 - Subtle gradients for depth
 - Micro-animations on interaction
 
 **Data Visualization**:
+
 - Simplified charts (max 5 data points visible)
 - Progressive disclosure for details
 - Animated transitions
 - Touch-friendly hit areas
 
 **Iconography**:
+
 - Rounded, friendly style
 - Two-tone for depth
 - Animated states
@@ -293,6 +316,7 @@ AI-powered predictions:
 #### Accessibility Standards
 
 **WCAG 2.1 AA Compliance**:
+
 - Color contrast ratios > 4.5:1
 - Touch targets minimum 44x44px
 - Screen reader optimized
@@ -304,6 +328,7 @@ AI-powered predictions:
 #### Gesture Library
 
 **Core Gestures**:
+
 - Swipe right: Approve/Save
 - Swipe left: Decline/Skip
 - Pull down: Refresh
@@ -313,6 +338,7 @@ AI-powered predictions:
 #### Micro-interactions
 
 **Delightful Details**:
+
 - Money saved: Coins drop animation
 - Goal reached: Fireworks + haptic
 - Friend joined: Welcome animation
@@ -322,6 +348,7 @@ AI-powered predictions:
 #### Navigation Architecture
 
 **Bottom Tab Structure**:
+
 1. **Home**: Daily digest and score
 2. **Accounts**: All connected accounts
 3. **Goals**: Visual progress tracking
@@ -329,6 +356,7 @@ AI-powered predictions:
 5. **Profile**: Settings and achievements
 
 **Information Architecture**:
+
 - Maximum 3 levels deep
 - Breadcrumb navigation
 - Contextual shortcuts
@@ -346,16 +374,19 @@ AI-powered predictions:
 #### User Testing Results
 
 **Round 1 Findings** (Paper Prototype):
+
 - Onboarding too long → Reduced by 60%
 - Confusion about "health score" → Added explanation
 - Wanted more celebration → Added achievements
 
 **Round 2 Findings** (Digital Prototype):
+
 - Navigation intuitive (92% task success)
 - Delight factor high (8.7/10 satisfaction)
 - Some accessibility issues → Fixed contrast
 
 **Round 3 Findings** (Beta Test):
+
 - 73% daily active usage (target: 60%)
 - 4.8 app store rating projection
 - Primary complaint: Want more features!
@@ -365,12 +396,14 @@ AI-powered predictions:
 #### Success Metrics Framework
 
 **User Metrics**:
+
 - Daily Active Users: Target 60%
 - 30-day retention: Target 70%
 - Feature adoption: Target 80%
 - NPS Score: Target 70+
 
 **Business Metrics**:
+
 - Customer Acquisition Cost: <$25
 - Monthly Recurring Revenue: $9.99/user
 - Conversion Rate: 15% free to paid
@@ -381,12 +414,14 @@ AI-powered predictions:
 **Freemium Model**:
 
 **Free Tier**:
+
 - Basic budgeting and tracking
 - 3 savings goals
 - Weekly insights
 - Limited social features
 
 **Premium ($9.99/mo)**:
+
 - Unlimited goals
 - Advanced predictions
 - Investment features
@@ -394,6 +429,7 @@ AI-powered predictions:
 - Early access
 
 **Revenue Projections**:
+
 - Year 1: 100K users, 15% paid = $1.5M ARR
 - Year 2: 500K users, 20% paid = $12M ARR
 - Year 3: 2M users, 25% paid = $60M ARR
@@ -403,18 +439,21 @@ AI-powered predictions:
 #### Platform Requirements
 
 **iOS**:
+
 - Swift 5.0+
 - iOS 14.0+
 - SwiftUI for modern UI
 - Core Data for offline
 
 **Android**:
+
 - Kotlin
 - Android 7.0+
 - Jetpack Compose
 - Room database
 
 **Backend**:
+
 - RESTful API
 - Real-time webhooks
 - Bank-grade encryption
@@ -433,16 +472,19 @@ AI-powered predictions:
 #### Phased Rollout
 
 **Phase 1: Beta (Month 1-2)**
+
 - 1,000 invited users
 - Core features only
 - Rapid iteration
 
 **Phase 2: Soft Launch (Month 3-4)**
+
 - 10,000 users
 - Geographic limit (California)
 - Marketing tests
 
 **Phase 3: Full Launch (Month 5)**
+
 - National availability
 - Full feature set
 - PR campaign
@@ -450,6 +492,7 @@ AI-powered predictions:
 #### Go-to-Market Approach
 
 **Channel Strategy**:
+
 1. TikTok/Instagram influencers
 2. College campus ambassadors
 3. Financial wellness partnerships
@@ -489,26 +532,31 @@ AI-powered predictions:
 #### Roadmap Highlights
 
 **Year 1**: Foundation
+
 - Core financial management
 - Social features
 - Basic investing
 
 **Year 2**: Expansion
+
 - International markets
 - Crypto integration
 - B2B offerings
 
 **Year 3**: Innovation
+
 - AR money visualization
 - AI financial advisor
 - Open banking platform
 
 **Year 5**: Ecosystem
+
 - Full financial services
 - Educational platform
 - Developer APIs
 
 ## Usage Instructions
+
 1. Start with deep user research - observe, don't just ask
 2. Define the problem clearly before jumping to solutions
 3. Generate many ideas before converging on one
@@ -519,8 +567,11 @@ AI-powered predictions:
 8. Document decisions and rationale for future reference
 
 ## Examples
+
 ### Example 1: B2B SaaS Dashboard Redesign
-**Input**: 
+
+**Input**:
+
 ```
 {{product_type}}: Analytics dashboard for marketing teams
 {{target_users}}: Marketing managers, analysts, CMOs in mid-size companies
@@ -532,11 +583,13 @@ AI-powered predictions:
 **Output**: [Progressive disclosure design with personalized dashboards, AI-powered insight prioritization, and role-based layouts that reduced time-to-insight by 75%]
 
 ## Related Prompts
+
 - [UX Research Synthesizer](/prompts/creation/ux-research-synthesizer.md)
 - [UI Design System Creator](/prompts/creation/ui-design-system.md)
 - [Innovation Workshop Facilitator](/prompts/creation/innovation-workshop.md)
 
 ## Research Notes
+
 - Combines user-centered design with business strategy
 - Emphasizes rapid prototyping and testing
 - Includes comprehensive design system thinking

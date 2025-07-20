@@ -1,6 +1,7 @@
 # UI/UX Wireframing Expert and Interaction Design Architect
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: wireframing, UI design, UX design, prototyping, interaction design
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert UI/UX wireframing skills with interaction design architecture to create intuitive, user-centered digital experiences. It employs user research, information architecture, and design patterns to develop interfaces that balance user needs with business objectives.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise UI/UX design system combining:
 
@@ -86,6 +89,7 @@ DELIVER YOUR UX DESIGN AS:
 **Core Challenge**: Simplify complex health data tracking while maintaining medical accuracy
 
 **Key User Needs**:
+
 - Quick daily health metric logging
 - Clear data visualization over time
 - Medication reminders and tracking
@@ -97,6 +101,7 @@ DELIVER YOUR UX DESIGN AS:
 #### User Personas
 
 **Primary: Sarah - The Proactive Patient**
+
 - 42, Type 2 Diabetes
 - Tracks blood sugar, diet, exercise
 - Tech-comfortable but time-constrained
@@ -104,6 +109,7 @@ DELIVER YOUR UX DESIGN AS:
 - Shares data with doctor
 
 **Secondary: Robert - The Reluctant Tracker**
+
 - 58, Hypertension
 - Minimal tech experience
 - Needs simple, guided experience
@@ -113,6 +119,7 @@ DELIVER YOUR UX DESIGN AS:
 #### Key Research Findings
 
 **Pain Points**:
+
 - Current apps too complex/medical
 - Too many taps to log data
 - Confusing data visualizations
@@ -120,6 +127,7 @@ DELIVER YOUR UX DESIGN AS:
 - Hard to share with doctors
 
 **Opportunities**:
+
 - One-tap logging for common metrics
 - Smart reminders based on patterns
 - Simplified, actionable insights
@@ -245,6 +253,7 @@ Time to Complete: 15 seconds (goal: under 30 seconds)
 ```
 
 **Design Decisions**:
+
 - Health score provides immediate status overview
 - Quick log buttons show last entered value
 - 1-tap access to most frequent actions
@@ -289,6 +298,7 @@ Time to Complete: 15 seconds (goal: under 30 seconds)
 ```
 
 **Interaction Details**:
+
 - Large number pad for easy input
 - Auto-advance after 3 digits
 - Smart suggestions based on time
@@ -343,6 +353,7 @@ Time to Complete: 15 seconds (goal: under 30 seconds)
 ```
 
 **Design Rationale**:
+
 - Clear data visualization with context
 - Actionable insights, not just data
 - Pattern recognition to drive behavior
@@ -387,29 +398,32 @@ Time to Complete: 15 seconds (goal: under 30 seconds)
 #### Micro-interactions
 
 **Data Entry Success**:
+
 ```
-User taps save → 
-Button transforms to checkmark → 
-Ripple effect → 
-Card animates to list → 
+User taps save →
+Button transforms to checkmark →
+Ripple effect →
+Card animates to list →
 Subtle haptic feedback
 ```
 
 **Achievement Unlocked**:
+
 ```
-Milestone reached → 
-Confetti animation → 
-Badge appears → 
-Swipe to dismiss → 
+Milestone reached →
+Confetti animation →
+Badge appears →
+Swipe to dismiss →
 Added to profile
 ```
 
 **Abnormal Reading Alert**:
+
 ```
-High value entered → 
-Field highlights red → 
-Warning message slides in → 
-"Add note?" prompt → 
+High value entered →
+Field highlights red →
+Warning message slides in →
+"Add note?" prompt →
 Emergency contact option
 ```
 
@@ -424,6 +438,7 @@ Emergency contact option
 ### ACCESSIBILITY FEATURES
 
 #### Visual Accessibility
+
 - High contrast mode option
 - Minimum 4.5:1 contrast ratios
 - Large touch targets (44x44pt)
@@ -431,12 +446,14 @@ Emergency contact option
 - Color-blind safe palettes
 
 #### Motor Accessibility
+
 - One-handed operation possible
 - Gesture alternatives for all actions
 - Adjustable tap timing
 - Simplified navigation option
 
 #### Cognitive Accessibility
+
 - Clear, simple language
 - Progressive disclosure
 - Consistent patterns
@@ -446,6 +463,7 @@ Emergency contact option
 ### RESPONSIVE BEHAVIOR
 
 #### Tablet Adaptation
+
 ```
 ┌─────────────────┬─────────────────┐
 │                 │                 │
@@ -470,12 +488,14 @@ Emergency contact option
 #### Base Components
 
 **Primary Button**:
+
 - Height: 48pt
 - Corner radius: 8pt
 - Font: System Medium 16pt
 - States: Default, Pressed, Disabled
 
 **Quick Log Card**:
+
 - Size: 104x104pt
 - Padding: 16pt
 - Icon: 32pt
@@ -483,12 +503,14 @@ Emergency contact option
 - Value: 16pt Medium
 
 **Data Input Field**:
+
 - Height: 56pt
 - Border: 1pt
 - Focus state: 2pt primary color
 - Error state: Red with message
 
 **Graph Component**:
+
 - Aspect ratio: 16:9
 - Grid lines: Subtle gray
 - Data points: 8pt circles
@@ -497,6 +519,7 @@ Emergency contact option
 ### DESIGN SYSTEM INTEGRATION
 
 #### iOS Adaptations
+
 - SF Symbols for icons
 - iOS navigation patterns
 - Native date/time pickers
@@ -504,6 +527,7 @@ Emergency contact option
 - Widget design compliance
 
 #### Android Adaptations
+
 - Material Design components
 - Material You theming
 - Bottom navigation
@@ -513,18 +537,21 @@ Emergency contact option
 ### PROTOTYPING SPECIFICATIONS
 
 #### Screen Transitions
+
 - **Push**: New screens from right
 - **Modal**: Bottom sheet for quick actions
 - **Fade**: Between tab content
 - **Spring**: For playful feedback
 
 #### Loading States
+
 - Skeleton screens for content
 - Progress indicators for actions
 - Optimistic UI updates
 - Error recovery flows
 
 #### Empty States
+
 - Friendly illustrations
 - Clear call-to-action
 - Educational content
@@ -535,12 +562,14 @@ Emergency contact option
 #### For Developers
 
 **Spacing System**:
+
 - Base unit: 8pt
 - Spacing: 8, 16, 24, 32, 48pt
 - Component padding: 16pt
 - Screen margins: 16pt
 
 **Color Tokens**:
+
 ```
 Primary: #007AFF
 Secondary: #5AC8FA
@@ -554,6 +583,7 @@ Text Secondary: #3C3C43
 ```
 
 **Animation Timing**:
+
 - Micro: 0.1s ease-out
 - Short: 0.3s ease-in-out
 - Medium: 0.5s spring
@@ -562,6 +592,7 @@ Text Secondary: #3C3C43
 #### For QA Testing
 
 **Critical User Paths**:
+
 1. First-time onboarding completion
 2. Daily metric logging < 30 seconds
 3. Medication reminder interaction
@@ -569,6 +600,7 @@ Text Secondary: #3C3C43
 5. Emergency contact access
 
 **Edge Cases**:
+
 - No internet connection
 - Extreme data values
 - Rapid repeated entries
@@ -576,6 +608,7 @@ Text Secondary: #3C3C43
 - Data sync conflicts
 
 ## Usage Instructions
+
 1. Start with thorough user research and persona development
 2. Map user journeys before designing screens
 3. Create low-fidelity wireframes to test concepts
@@ -586,8 +619,11 @@ Text Secondary: #3C3C43
 8. Prepare comprehensive handoff materials
 
 ## Examples
+
 ### Example 1: E-commerce Checkout Redesign
-**Input**: 
+
+**Input**:
+
 ```
 {{product_type}}: Mobile shopping app
 {{target_users}}: Busy parents, 25-40
@@ -599,7 +635,9 @@ Text Secondary: #3C3C43
 **Output**: [Streamlined 3-step checkout with auto-fill, multiple payment options, guest checkout, order tracking, and trust signals throughout]
 
 ### Example 2: B2B Dashboard Design
+
 **Input**:
+
 ```
 {{product_type}}: Web analytics dashboard
 {{target_users}}: Marketing managers, non-technical
@@ -611,11 +649,13 @@ Text Secondary: #3C3C43
 **Output**: [Customizable dashboard with drag-drop widgets, preset views for common reports, plain-English insights, and automated alert system]
 
 ## Related Prompts
+
 - [User Research Analyst](/prompts/analysis/user-research.md)
 - [Visual Design Expert](/prompts/creation/visual-design.md)
 - [Usability Testing Specialist](/prompts/evaluation/usability-testing.md)
 
 ## Research Notes
+
 - Based on established UX principles and heuristics
 - Emphasizes accessibility and inclusive design
 - Balances user needs with technical feasibility

@@ -14,13 +14,12 @@ The evaluation matrix encompasses dimensions including token utilization, agent 
 >
 > On success:
 >
-> * Output a Markdown digest (≤100 words) containing:
->
->   * Workflow name
->   * Trigger source
->   * Commit SHA and message
->   * Duration
->   * Timestamp
+> - Output a Markdown digest (≤100 words) containing:
+>   - Workflow name
+>   - Trigger source
+>   - Commit SHA and message
+>   - Duration
+>   - Timestamp
 >
 > On failure:
 >
@@ -34,12 +33,12 @@ The evaluation matrix encompasses dimensions including token utilization, agent 
 
 **Evaluation:**
 
-* **Token Use:** Minimal. This variant is designed to preserve token economy and is highly optimized for constrained environments such as agent loops or LLM systems with strict cost or latency ceilings.
-* **Speed:** Maximum throughput. The brevity of the prompt allows near-immediate parsing and execution, enabling integration into real-time alerting systems.
-* **Accuracy:** Moderate. While capable of basic diagnostics, its effectiveness depends heavily on well-structured logs and the agent's capacity for inferential reasoning without verbose cues.
-* **Repeatability:** Medium. Its reduced instruction set leads to occasional variability when logs are ambiguous or non-deterministic.
-* **Reliability:** Medium. Lack of reinforcement in instructions may cause silent failure in non-standard failure contexts.
-* **Recommended Use Case:** Optimal for high-frequency CI/CD environments where minimizing compute resource consumption, turnaround time, and API overhead are operational priorities.
+- **Token Use:** Minimal. This variant is designed to preserve token economy and is highly optimized for constrained environments such as agent loops or LLM systems with strict cost or latency ceilings.
+- **Speed:** Maximum throughput. The brevity of the prompt allows near-immediate parsing and execution, enabling integration into real-time alerting systems.
+- **Accuracy:** Moderate. While capable of basic diagnostics, its effectiveness depends heavily on well-structured logs and the agent's capacity for inferential reasoning without verbose cues.
+- **Repeatability:** Medium. Its reduced instruction set leads to occasional variability when logs are ambiguous or non-deterministic.
+- **Reliability:** Medium. Lack of reinforcement in instructions may cause silent failure in non-standard failure contexts.
+- **Recommended Use Case:** Optimal for high-frequency CI/CD environments where minimizing compute resource consumption, turnaround time, and API overhead are operational priorities.
 
 ---
 
@@ -51,13 +50,12 @@ The evaluation matrix encompasses dimensions including token utilization, agent 
 >
 > On success:
 >
-> * Emit a brief Markdown summary (≤100 words) including:
->
->   * Workflow name
->   * Trigger event
->   * Commit SHA and message
->   * Duration
->   * Timestamp
+> - Emit a brief Markdown summary (≤100 words) including:
+>   - Workflow name
+>   - Trigger event
+>   - Commit SHA and message
+>   - Duration
+>   - Timestamp
 >
 > On failure:
 >
@@ -71,12 +69,12 @@ The evaluation matrix encompasses dimensions including token utilization, agent 
 
 **Evaluation:**
 
-* **Token Use:** Moderate. Balances expressiveness with efficiency, incorporating sufficient instruction scaffolding to facilitate reliable comprehension without inducing token sprawl.
-* **Speed:** High. Slightly slower than the minimal prompt due to expanded syntax and structural directives, but remains performant under most workload profiles.
-* **Accuracy:** High. Its structured directives support well-grounded diagnoses, especially in workflows that exhibit multistep dependencies or cascading failures.
-* **Repeatability:** High. Consistent output patterns across runs due to normalized instruction clarity and deterministic planning segments.
-* **Reliability:** High. Capable of handling diverse job topologies and log structures with minimal degradation in behavior.
-* **Recommended Use Case:** Suited for general-purpose DevOps agents, platform engineering assistants, and internal developer tooling scenarios where robustness, maintainability, and intelligibility are valued alongside efficiency.
+- **Token Use:** Moderate. Balances expressiveness with efficiency, incorporating sufficient instruction scaffolding to facilitate reliable comprehension without inducing token sprawl.
+- **Speed:** High. Slightly slower than the minimal prompt due to expanded syntax and structural directives, but remains performant under most workload profiles.
+- **Accuracy:** High. Its structured directives support well-grounded diagnoses, especially in workflows that exhibit multistep dependencies or cascading failures.
+- **Repeatability:** High. Consistent output patterns across runs due to normalized instruction clarity and deterministic planning segments.
+- **Reliability:** High. Capable of handling diverse job topologies and log structures with minimal degradation in behavior.
+- **Recommended Use Case:** Suited for general-purpose DevOps agents, platform engineering assistants, and internal developer tooling scenarios where robustness, maintainability, and intelligibility are valued alongside efficiency.
 
 ---
 
@@ -88,34 +86,34 @@ The evaluation matrix encompasses dimensions including token utilization, agent 
 >
 > Step 1: Extract from the latest run:
 >
-> * Workflow name
-> * Trigger (push, pull\_request, or scheduled)
-> * Commit SHA and message
-> * Commit author
-> * Run timestamp
-> * Duration
-> * Status (`success`, `failure`, etc.)
+> - Workflow name
+> - Trigger (push, pull_request, or scheduled)
+> - Commit SHA and message
+> - Commit author
+> - Run timestamp
+> - Duration
+> - Status (`success`, `failure`, etc.)
 >
 > Step 2: If successful, output a Markdown digest (≤100 words).
 >
 > Step 3: If failed:
 >
-> * **Analyze**: Identify failing components, extract detailed logs
-> * **Reason**: Construct a technical narrative explaining failure origin
-> * **Plan**: Outline a limited-scope fix strategy (1–3 steps)
-> * **Fix**: Modify files with full inline context, commit, and push
-> * **Track**: Open a GitHub issue summarizing root cause and linking to the fix; close it if resolved
+> - **Analyze**: Identify failing components, extract detailed logs
+> - **Reason**: Construct a technical narrative explaining failure origin
+> - **Plan**: Outline a limited-scope fix strategy (1–3 steps)
+> - **Fix**: Modify files with full inline context, commit, and push
+> - **Track**: Open a GitHub issue summarizing root cause and linking to the fix; close it if resolved
 >
 > Structure output in Markdown: `Summary`, `Analysis`, `Root Cause`, `Plan`, `Fix`, `Issue Tracking`. Use full prose where required for clarity. Optimize for interpretability rather than brevity.
 
 **Evaluation:**
 
-* **Token Use:** High. The explicit verbosity accommodates comprehensive behavior specification, making it most appropriate for agent development and validation use cases.
-* **Speed:** Low. Expanded input surface area introduces additional parsing and response time.
-* **Accuracy:** Very High. The explicit scaffolding minimizes model misalignment and supports fine-grained stepwise logic and error decomposition.
-* **Repeatability:** Very High. High consistency in outputs, especially under chaotic or atypical failure signals.
-* **Reliability:** Very High. Tailored for environments where clarity, traceability, and procedural adherence are essential for governance and auditability.
-* **Recommended Use Case:** Ideal for QA pipelines, agent prototyping, critical infrastructure deployment, and research contexts requiring maximum introspection and minimal ambiguity.
+- **Token Use:** High. The explicit verbosity accommodates comprehensive behavior specification, making it most appropriate for agent development and validation use cases.
+- **Speed:** Low. Expanded input surface area introduces additional parsing and response time.
+- **Accuracy:** Very High. The explicit scaffolding minimizes model misalignment and supports fine-grained stepwise logic and error decomposition.
+- **Repeatability:** Very High. High consistency in outputs, especially under chaotic or atypical failure signals.
+- **Reliability:** Very High. Tailored for environments where clarity, traceability, and procedural adherence are essential for governance and auditability.
+- **Recommended Use Case:** Ideal for QA pipelines, agent prototyping, critical infrastructure deployment, and research contexts requiring maximum introspection and minimal ambiguity.
 
 ---
 

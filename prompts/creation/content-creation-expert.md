@@ -1,6 +1,7 @@
 # Content Creation Expert and Digital Storytelling Specialist
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: content creation, copywriting, storytelling, content strategy, digital content
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert content creation skills with digital storytelling mastery to produce engaging, purposeful content across all formats. It employs strategic frameworks to create content that resonates with audiences and drives desired outcomes.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise content creation system combining:
 
@@ -88,49 +91,56 @@ DELIVER YOUR CONTENT AS:
 
 [TITLE OPTIONS]
 ```
+
 Primary Title: "The Hidden Psychology of Peak Performance: 7 Neuroscience Secrets Elite Athletes Won't Tell You"
+
 - SEO Score: 92/100
 - Emotional Hook: Curiosity + Exclusivity
 - Click Probability: High (8.2/10)
 
 Alternative Titles:
+
 1. "Why 97% of People Fail at Their Goals (And the Simple Fix Nobody Talks About)"
 2. "I Studied 1,000 Top Performers: Here's What They Do Differently"
 3. "The 15-Minute Morning Routine That Changed Everything"
 
 Meta Description:
 "Discover the counterintuitive strategies that separate peak performers from everyone else. Based on cutting-edge neuroscience and real-world testing. Read time: 8 minutes."
+
 ```
 
 [CONTENT STRUCTURE]
 ```
+
 Content Architecture:
 ┌─────────────────────────────────────────────┐
-│ HOOK (0-15 seconds)                         │
+│ HOOK (0-15 seconds) │
 │ "Last year, I was failing at everything..."│
-│ Personal story + surprising revelation      │
+│ Personal story + surprising revelation │
 ├─────────────────────────────────────────────┤
-│ PROBLEM AGITATION (15-45 seconds)          │
+│ PROBLEM AGITATION (15-45 seconds) │
 │ Statistics + pain points + "why this matters"│
 ├─────────────────────────────────────────────┤
-│ UNIQUE INSIGHT (45-90 seconds)             │
-│ Counterintuitive discovery + proof         │
+│ UNIQUE INSIGHT (45-90 seconds) │
+│ Counterintuitive discovery + proof │
 ├─────────────────────────────────────────────┤
-│ TRANSFORMATION JOURNEY (2-5 minutes)        │
-│ Step-by-step process + examples            │
+│ TRANSFORMATION JOURNEY (2-5 minutes) │
+│ Step-by-step process + examples │
 ├─────────────────────────────────────────────┤
-│ RESULTS & PROOF (30-60 seconds)           │
-│ Case studies + testimonials + data         │
+│ RESULTS & PROOF (30-60 seconds) │
+│ Case studies + testimonials + data │
 ├─────────────────────────────────────────────┤
-│ CALL-TO-ACTION (15-30 seconds)            │
-│ Clear next step + urgency + value         │
+│ CALL-TO-ACTION (15-30 seconds) │
+│ Clear next step + urgency + value │
 └─────────────────────────────────────────────┘
+
 ```
 
 ### FULL CONTENT PIECE
 
 #### [COMPELLING OPENING]
 ```
+
 The neuroscientist leaned forward, her eyes intense. "Want to know the real difference between peak performers and everyone else?"
 
 I nodded, pen ready.
@@ -140,10 +150,12 @@ I nodded, pen ready.
 That conversation changed how I approach everything. And after testing her methods for 18 months, I can confirm: the research is mind-blowing.
 
 Here's what 97% of people get wrong about performance...
+
 ```
 
 #### [PROBLEM EXPLORATION]
 ```
+
 The Productivity Paradox:
 We're working harder than ever, yet:
 • 67% feel less accomplished than 5 years ago
@@ -162,14 +174,16 @@ Traditional advice says:
 ❌ Push through resistance
 
 But neuroscience reveals the opposite...
+
 ```
 
 #### [CORE VALUE DELIVERY]
 ```
+
 The 7 Neuroscience-Backed Secrets:
 
 1. THE ULTRADIAN RHYTHM HACK
-Your brain operates in 90-minute cycles. Peak performers work WITH these cycles, not against them.
+   Your brain operates in 90-minute cycles. Peak performers work WITH these cycles, not against them.
 
 Implementation:
 • Work in 90-minute sprints
@@ -180,22 +194,25 @@ Implementation:
 Real Result: Sarah K. increased her output 40% while working 2 fewer hours daily.
 
 2. THE ATTENTION RESIDUE SOLUTION
-Task-switching costs 23 minutes of focus. Elite performers use "attention batching."
+   Task-switching costs 23 minutes of focus. Elite performers use "attention batching."
 
 [Detailed explanation with visuals]
 
 3. THE NEUROPLASTICITY WINDOW
-Your brain is most changeable at specific times...
+   Your brain is most changeable at specific times...
 
 [Continue with remaining secrets, each with:
+
 - Scientific backing
 - Practical implementation
 - Real-world example
 - Quick-win tip]
+
 ```
 
 #### [STORYTELLING ELEMENTS]
 ```
+
 Case Study: From Burnout to Breakthrough
 
 Meet James Chen, startup founder:
@@ -211,10 +228,12 @@ The Turning Point:
 • "I feel like I've discovered a cheat code"
 
 [Before/After comparison visual]
+
 ```
 
 #### [ENGAGEMENT OPTIMIZATION]
 ```
+
 Interactive Elements:
 □ Quick Assessment: "What's Your Performance Personality?"
 □ Downloadable: "90-Minute Sprint Planner"
@@ -233,10 +252,12 @@ Community Angle:
 • Accountability partners
 • Live Q&A sessions
 • Success story features"
+
 ```
 
 #### [POWERFUL CLOSING]
 ```
+
 The Choice Point:
 You now stand at a crossroads.
 
@@ -248,7 +269,7 @@ The neuroscientist's final words echo in my mind:
 "Performance isn't about doing more. It's about doing what matters, when your brain is primed for it."
 
 Your Next Action:
-Download the free 90-Minute Sprint Planner below. Tomorrow, try just one sprint. 
+Download the free 90-Minute Sprint Planner below. Tomorrow, try just one sprint.
 
 That's it. One sprint.
 
@@ -259,13 +280,16 @@ Ready to join the 3%?
 
 [CTA Button: "Get Your Free Sprint Planner"]
 [Secondary CTA: "Share This With Someone Who Needs It"]
+
 ```
 
 ### CONTENT VARIATIONS
 
 #### Platform Adaptations
 ```
+
 LinkedIn Version (Professional Tone):
+
 - Open with industry statistic
 - Focus on ROI and career impact
 - Include data visualizations
@@ -290,24 +314,29 @@ Slide 10: CTA with link in bio
 
 Email Newsletter (Intimate):
 Subject: "The conversation that changed everything"
+
 - Personal story focus
 - Behind-the-scenes insights
 - Exclusive bonus content
 - Direct reply encouraged
+
 ```
 
 ### SEO OPTIMIZATION
 
 #### Keyword Integration
 ```
+
 Primary Keyword: Peak performance strategies
 Secondary Keywords:
+
 - Neuroscience productivity tips
 - Elite athlete mindset
 - Science-based performance
 - Productivity neuroscience
 
 Semantic Keywords:
+
 - Ultradian rhythms
 - Attention residue
 - Flow state
@@ -321,60 +350,68 @@ Natural Integration:
 ✓ Keyword density: 1.2% (optimal)
 ✓ LSI keywords throughout
 ✓ Alt text optimized
+
 ```
 
 #### Technical Optimization
 ```
+
 Content Performance Metrics:
 ┌─────────────────────────────────────────────┐
-│ Readability: Flesch Score 68 (Ideal)       │
-│ Average Sentence: 12 words                  │
-│ Passive Voice: 3% (Excellent)              │
-│ Transition Words: 42% (Good flow)          │
+│ Readability: Flesch Score 68 (Ideal) │
+│ Average Sentence: 12 words │
+│ Passive Voice: 3% (Excellent) │
+│ Transition Words: 42% (Good flow) │
 ├─────────────────────────────────────────────┤
-│ Structure:                                  │
-│ • H1: 1 (unique)                           │
-│ • H2: 7 (keyword-rich)                     │
-│ • H3: 14 (supporting)                      │
-│ • Paragraphs: 3-4 sentences max            │
-│ • Bullet points: 40% of content            │
+│ Structure: │
+│ • H1: 1 (unique) │
+│ • H2: 7 (keyword-rich) │
+│ • H3: 14 (supporting) │
+│ • Paragraphs: 3-4 sentences max │
+│ • Bullet points: 40% of content │
 ├─────────────────────────────────────────────┤
-│ Engagement Elements:                        │
-│ • Images: 8 (with alt text)               │
-│ • Videos: 2 (embedded)                     │
-│ • Internal links: 5                        │
-│ • External links: 3 (authoritative)        │
+│ Engagement Elements: │
+│ • Images: 8 (with alt text) │
+│ • Videos: 2 (embedded) │
+│ • Internal links: 5 │
+│ • External links: 3 (authoritative) │
 └─────────────────────────────────────────────┘
+
 ```
 
 ### CONTENT AMPLIFICATION
 
 #### Distribution Strategy
 ```
+
 Launch Sequence:
-Day 1: 
+Day 1:
+
 - Publish on main blog (6 AM EST)
 - Email to list (10 AM)
 - Share on LinkedIn (12 PM)
 - Twitter thread (2 PM)
 
 Day 2-3:
+
 - Reddit relevant communities
 - Medium syndication
 - Facebook groups
 - Quora answers linking back
 
 Week 1:
+
 - Guest post adaptations
 - Podcast pitch with angle
 - YouTube video version
 - Instagram story series
 
 Influencer Outreach:
-"Hi [Name], noticed your recent post on productivity. 
+"Hi [Name], noticed your recent post on productivity.
 Thought you'd find this neuroscience angle interesting: [link]
 The ultradian rhythm section especially relates to your point about..."
-```
+
+````
 
 #### Performance Tracking
 ```python
@@ -406,11 +443,12 @@ headline_test = {
     'version_b': {'ctr': '8.4%'},  # Winner
     'statistical_significance': 'p < 0.01'
 }
-```
+````
 
 ### CONTENT TEMPLATES
 
 #### Quick-Start Templates
+
 ```
 1. How-To Post Structure:
 [Problem] + [Unique Solution] + [Step-by-Step] + [Result]
@@ -431,16 +469,21 @@ headline_test = {
 ### APPENDICES
 
 #### A. Content Calendar Integration
+
 [How this piece fits into broader content strategy]
 
 #### B. Repurposing Plan
+
 [15 ways to extend this content's lifecycle]
 
 #### C. Style Guide Alignment
+
 [Brand voice consistency checks]
 
 #### D. Legal & Compliance
+
 [Disclosures, citations, permissions]
+
 ```
 
 ## Usage Instructions
@@ -455,13 +498,15 @@ headline_test = {
 
 ## Examples
 ### Example 1: B2B Thought Leadership Article
-**Input**: 
+**Input**:
 ```
+
 {{content_type}}: LinkedIn article for executives
 {{target_audience}}: C-suite in manufacturing, focusing on digital transformation
 {{content_goals}}: Position as thought leader, generate consulting leads
 {{brand_voice}}: Authoritative but accessible, data-driven
 {{specific_topic}}: Why 70% of digital transformations fail and how to be in the 30%
+
 ```
 
 **Output**: [Strategic article with compelling failure statistics, three-framework solution approach, executive case studies, and soft CTA for transformation assessment]
@@ -477,3 +522,4 @@ headline_test = {
 - Includes platform-specific optimization
 - Provides measurement framework for success
 - Integrates SEO without sacrificing readability
+```

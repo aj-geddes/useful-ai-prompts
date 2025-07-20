@@ -1,6 +1,7 @@
 # Presentation Creation Expert and Visual Communication Designer
 
 ## Metadata
+
 - **Category**: Creation
 - **Tags**: presentation design, visual communication, slide design, storytelling, executive presentations
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert presentation creation skills with visual communication design to create compelling, memorable presentations that drive action. It employs storytelling principles and design thinking to maximize impact.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise presentation creation system combining:
 
@@ -88,6 +91,7 @@ DELIVER YOUR PRESENTATION AS:
 #### Core Narrative Structure
 
 **Three-Act Story Arc**:
+
 1. **Act 1: The Burning Platform** (5 minutes)
    - Current state challenges
    - Competitive threats
@@ -108,6 +112,7 @@ DELIVER YOUR PRESENTATION AS:
 #### Slide 1: Title Slide
 
 **Visual Design**:
+
 - Background: Subtle gradient (brand blue to white)
 - Large, bold title: 48pt
 - Subtitle: 24pt
@@ -115,6 +120,7 @@ DELIVER YOUR PRESENTATION AS:
 - Date: Bottom left
 
 **Content**:
+
 ```
 TRANSFORMING OUR FUTURE
 The Digital Revolution Initiative
@@ -131,11 +137,13 @@ Board Presentation | March 2024
 #### Slide 2: Executive Summary
 
 **Visual Design**:
+
 - Three column layout
 - Icon for each point
 - Progress indicators
 
 **Content**:
+
 ```
 THE OPPORTUNITY AT HAND
 
@@ -154,11 +162,13 @@ Market disruption       $2B addressable market   Digital transformation
 #### Slide 3: The Burning Platform
 
 **Visual Design**:
+
 - Dark background for urgency
 - Dramatic data visualization
 - Red accent colors
 
 **Content**:
+
 ```
 THE COST OF STANDING STILL
 
@@ -168,8 +178,8 @@ THE COST OF STANDING STILL
 - Market Average: Moderate curve at 15%
 
 Key Fact Box:
-"In 24 months, we'll lose 
-#2 market position if we 
+"In 24 months, we'll lose
+#2 market position if we
 don't act NOW"
 ```
 
@@ -181,11 +191,13 @@ don't act NOW"
 #### Slide 4: Customer Voice
 
 **Visual Design**:
+
 - Quote-focused design
 - Customer photo/logo
 - Trust indicators
 
 **Content**:
+
 ```
 "Your competitors delivered in 2 hours.
 Why does it take you 2 days?"
@@ -193,7 +205,7 @@ Why does it take you 2 days?"
 - Sarah Chen, CTO
   Our #1 Enterprise Customer
   $12M Annual Revenue
-  
+
 ⚠️ Renewal at Risk
 ```
 
@@ -205,23 +217,25 @@ Why does it take you 2 days?"
 #### Slide 5: Competitive Landscape
 
 **Visual Design**:
+
 - Positioning matrix
 - Competitive movement arrows
 - Threat indicators
 
 **Content**:
+
 ```
 COMPETITIVE DYNAMICS
 
          Digital Capability
          High ▲
-              │  
+              │
     [Future]  │  🎯 Target Position
-    Leaders   │     
+    Leaders   │
               │  [Disruptors]
               │  Growing Fast ↗️
     ──────────┼────────────────
-              │ 
+              │
     [Us] 📍   │  [Traditional]
     At Risk   │  Competitors
               │
@@ -238,18 +252,20 @@ COMPETITIVE DYNAMICS
 #### Slide 6: The Vision
 
 **Visual Design**:
+
 - Bright, optimistic colors
 - Future state visualization
 - Transformation journey
 
 **Content**:
+
 ```
 FROM TRADITIONAL TO TRANSFORMATIONAL
 
 TODAY                    TOMORROW
 ───────────────    ⚡    ─────────────────
 Legacy Systems     →     Cloud-Native
-2-Day Delivery     →     2-Hour Delivery  
+2-Day Delivery     →     2-Hour Delivery
 5% Digital Rev     →     60% Digital Rev
 #4 NPS Ranking     →     #1 NPS Ranking
 ```
@@ -262,11 +278,13 @@ Legacy Systems     →     Cloud-Native
 #### Slide 7: Strategic Pillars
 
 **Visual Design**:
+
 - Four pillar graphic
 - Icons and descriptions
 - Interconnection indicators
 
 **Content**:
+
 ```
 FOUR PILLARS OF TRANSFORMATION
 
@@ -277,7 +295,7 @@ Infrastructure         People
 • Microservices       • Agile teams
 
 🚀 INNOVATE           📊 OPTIMIZE
-Products              Operations  
+Products              Operations
 • AI capabilities     • Automation
 • Mobile-first        • Real-time analytics
 • Personalization     • Cost reduction
@@ -291,11 +309,13 @@ Products              Operations
 #### Slide 8: Financial Model
 
 **Visual Design**:
+
 - Waterfall chart
 - ROI visualization
 - Clear financial metrics
 
 **Content**:
+
 ```
 INVESTMENT & RETURNS
 
@@ -319,11 +339,13 @@ ROI: 300% | Payback: 18 months
 #### Slide 9: Risk Mitigation
 
 **Visual Design**:
+
 - Risk matrix
 - Mitigation strategies
 - Confidence indicators
 
 **Content**:
+
 ```
 ADDRESSING CONCERNS PROACTIVELY
 
@@ -343,11 +365,13 @@ Budget Overrun        Fixed-price contracts   ✓✓✓✓░
 #### Slide 10: Quick Wins
 
 **Visual Design**:
+
 - Timeline graphic
 - Milestone markers
 - Value indicators
 
 **Content**:
+
 ```
 DELIVERING VALUE FAST
 
@@ -367,11 +391,13 @@ $5M Revenue         30% Cost Savings     2x Conversion
 #### Slide 11: Success Stories
 
 **Visual Design**:
+
 - Case study format
 - Before/after comparison
 - Credibility indicators
 
 **Content**:
+
 ```
 PROVEN APPROACH, PROVEN RESULTS
 
@@ -381,7 +407,7 @@ Before:                  Before:
 • 15% digital revenue    • 2-week loan approval
 • #5 market position     • 20% digital adoption
 
-After:                   After:  
+After:                   After:
 • 65% digital revenue    • Same-day approval
 • #1 market position     • 75% digital adoption
 • 4x valuation           • 50% cost reduction
@@ -395,11 +421,13 @@ After:                   After:
 #### Slide 12: The Ask
 
 **Visual Design**:
+
 - Bold, clear ask
 - Investment breakdown
 - Approval timeline
 
 **Content**:
+
 ```
 INVESTMENT APPROVAL REQUEST
 
@@ -423,11 +451,13 @@ START DATE: April 15th
 #### Slide 13: Implementation Roadmap
 
 **Visual Design**:
+
 - Gantt-style timeline
 - Phase indicators
 - Milestone markers
 
 **Content**:
+
 ```
 18-MONTH TRANSFORMATION JOURNEY
 
@@ -458,18 +488,20 @@ Q3 2025: OPTIMIZE
 #### Slide 14: Success Metrics
 
 **Visual Design**:
+
 - Dashboard mockup
 - KPI indicators
 - Target vs actual
 
 **Content**:
+
 ```
 MEASURING SUCCESS
 
 KEY PERFORMANCE INDICATORS
 ─────────────────────────────────────
 📈 Revenue Growth      15% → 35%
-⏱️ Time to Market      6mo → 1mo  
+⏱️ Time to Market      6mo → 1mo
 😊 NPS Score          45 → 75
 💰 Cost per Trans     $12 → $3
 📱 Digital Adoption    20% → 80%
@@ -483,11 +515,13 @@ KEY PERFORMANCE INDICATORS
 #### Slide 15: Call to Action
 
 **Visual Design**:
+
 - Powerful closing statement
 - Clear next steps
 - Urgency indicator
 
 **Content**:
+
 ```
 THE MOMENT OF DECISION
 
@@ -512,21 +546,25 @@ The time to act is NOW.
 #### Appendix Slides (16-25)
 
 **Financial Details**
+
 - Detailed ROI calculations
 - Sensitivity analysis
 - Cash flow projections
 
 **Technical Architecture**
+
 - System diagrams
 - Integration plans
 - Security framework
 
 **Organization Design**
+
 - New structure
 - Talent requirements
 - Training programs
 
 **Risk Register**
+
 - Comprehensive risk list
 - Mitigation details
 - Contingency plans
@@ -534,6 +572,7 @@ The time to act is NOW.
 ### DESIGN SPECIFICATIONS
 
 #### Visual Identity
+
 ```
 Color Palette:
 - Primary: #1E3A8A (Deep Blue)
@@ -556,6 +595,7 @@ Grid System:
 ```
 
 #### Animation Principles
+
 ```
 Transitions:
 - Fade in: 0.3s ease-out
@@ -573,9 +613,11 @@ Data Animations:
 ### SPEAKER NOTES GUIDE
 
 #### Opening Hook
+
 "Before we begin, let me share a number that should concern us all: 45%. That's how much of our revenue is at risk from digital disruption in the next 24 months. But today, I'll show you how we can turn this threat into our greatest opportunity."
 
 #### Transition Phrases
+
 - "This brings us to..."
 - "You might be wondering..."
 - "Let me address the elephant in the room..."
@@ -583,6 +625,7 @@ Data Animations:
 - "The bottom line is this..."
 
 #### Handling Objections
+
 **Cost Concern**: "I understand $50M is significant. But consider this: doing nothing costs us $200M in lost opportunity."
 
 **Timing Concern**: "Yes, 18 months is aggressive. But our competitors are moving even faster."
@@ -608,6 +651,7 @@ A: "Change is hard, but we're investing 10% of budget in change management. Our 
 ### TECHNICAL SETUP
 
 #### Equipment Checklist
+
 - [ ] Primary laptop + backup
 - [ ] Clicker/presenter remote
 - [ ] Display adapters (HDMI, USB-C)
@@ -617,6 +661,7 @@ A: "Change is hard, but we're investing 10% of budget in change management. Our 
 - [ ] Speaker notes (tablet/cards)
 
 #### Platform Settings
+
 ```
 PowerPoint/Keynote:
 - Presenter view enabled
@@ -634,6 +679,7 @@ Zoom/Teams:
 ### HANDOUT DESIGN
 
 **Executive Summary** (1 page)
+
 - Investment ask
 - Key benefits
 - ROI summary
@@ -641,6 +687,7 @@ Zoom/Teams:
 - Next steps
 
 **Detailed Packet** (10 pages)
+
 - Full business case
 - Financial projections
 - Risk analysis
@@ -650,6 +697,7 @@ Zoom/Teams:
 ### ACCESSIBILITY FEATURES
 
 #### Visual Accessibility
+
 - High contrast ratios (7:1 minimum)
 - Large fonts (24pt minimum)
 - Clear icons with labels
@@ -657,6 +705,7 @@ Zoom/Teams:
 - Alt text for all images
 
 #### Delivery Accessibility
+
 - Speak clearly, pace deliberately
 - Describe visual elements
 - Provide handouts in advance
@@ -666,6 +715,7 @@ Zoom/Teams:
 ### POST-PRESENTATION FOLLOW-UP
 
 #### Immediate Actions
+
 1. Send thank you email
 2. Share presentation deck
 3. Provide additional resources
@@ -673,6 +723,7 @@ Zoom/Teams:
 5. Address outstanding questions
 
 #### Follow-Up Materials
+
 ```
 Email Template:
 
@@ -680,7 +731,7 @@ Subject: Digital Transformation Presentation - Follow-Up Materials
 
 Board Members,
 
-Thank you for your time and thoughtful questions today. 
+Thank you for your time and thoughtful questions today.
 As promised, I'm sharing:
 
 • Presentation deck (attached)
@@ -700,6 +751,7 @@ Best regards,
 ```
 
 ## Usage Instructions
+
 1. Start with your core message and build everything around it
 2. Know your audience deeply - their concerns, priorities, language
 3. Use the 10% rule - if presenting for 20 minutes, prepare 200 minutes
@@ -710,8 +762,11 @@ Best regards,
 8. Leave time for interaction and questions
 
 ## Examples
+
 ### Example 1: Startup Pitch Deck
-**Input**: 
+
+**Input**:
+
 ```
 {{presentation_type}}: Investor pitch deck
 {{audience}}: VCs and angel investors
@@ -723,11 +778,13 @@ Best regards,
 **Output**: [10-slide pitch deck with compelling problem/solution narrative, $2B market opportunity, strong traction metrics, clear use of funds, and powerful team slide]
 
 ## Related Prompts
+
 - [Data Visualization Expert](/prompts/creation/data-visualization-expert.md)
 - [Storytelling Specialist](/prompts/communication/storytelling-specialist.md)
 - [Executive Communication Coach](/prompts/communication/executive-communication.md)
 
 ## Research Notes
+
 - Combines narrative structure with visual design excellence
 - Emphasizes clarity and simplicity over complexity
 - Includes comprehensive speaker preparation

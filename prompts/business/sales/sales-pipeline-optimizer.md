@@ -1,6 +1,7 @@
 # Sales Pipeline Optimizer and Revenue Acceleration System
 
 ## Metadata
+
 - **Category**: Business/Sales
 - **Tags**: sales pipeline, revenue optimization, sales strategy, forecasting, CRM
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt analyzes and optimizes sales pipelines to accelerate revenue growth, improve forecast accuracy, and identify opportunities for deal advancement. It combines strategic sales leadership with data-driven analysis to create actionable plans that increase win rates, shorten sales cycles, and maximize revenue potential.
 
 ## Prompt Template
+
 ```
 You are operating as a comprehensive sales optimization system combining:
 
@@ -93,21 +96,26 @@ DELIVER YOUR OPTIMIZATION PLAN AS:
 
 #### COVERAGE METRICS
 ```
+
 Quarterly Target: ${{target}}
 Current Pipeline: ${{total}}
 Coverage Ratio: {{x}}:1 (Target: 3:1)
 
 Gap Analysis:
+
 - Need to Generate: ${{additional_pipeline}}
 - Required Opportunities: {{number}} at ${{avg_size}}
 - Timeline: {{weeks}} to build coverage
+
 ```
 
 #### PIPELINE VELOCITY ANALYSIS
 ```
+
 Sales Velocity = (Opportunities × Avg Deal × Win Rate) / Sales Cycle
 
 Current State:
+
 - Opportunities: {{number}}
 - Avg Deal Size: ${{amount}}
 - Win Rate: {{%}}
@@ -115,28 +123,32 @@ Current State:
 - Velocity: ${{amount}}/month
 
 Optimized State (Target):
+
 - Opportunities: {{number}} (+{{%}})
 - Avg Deal Size: ${{amount}} (+{{%}})
 - Win Rate: {{%}} (+{{points}})
 - Sales Cycle: {{days}} days (-{{%}})
 - Velocity: ${{amount}}/month (+{{%}})
+
 ```
 
 ### STAGE-BY-STAGE ANALYSIS
 
 #### CONVERSION FUNNEL
 ```
-Stage           | Count | Value    | Conv% | Days | Issues
-----------------|-------|----------|-------|------|--------
-1. Prospecting  | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}}
-2. Qualification| {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}}
-3. Discovery    | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}}
-4. Proposal     | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}}
-5. Negotiation  | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}}
-6. Closed Won   | {{#}} | ${{val}} | 100%  | -    | -
+
+| Stage            | Count | Value    | Conv% | Days  | Issues    |
+| ---------------- | ----- | -------- | ----- | ----- | --------- |
+| 1. Prospecting   | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
+| 2. Qualification | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
+| 3. Discovery     | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
+| 4. Proposal      | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
+| 5. Negotiation   | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
+| 6. Closed Won    | {{#}} | ${{val}} | 100%  | -     | -         |
 
 Biggest Drop-off: {{stage}} ({{%}} loss)
 Longest Duration: {{stage}} ({{days}} days)
+
 ```
 
 #### BOTTLENECK IDENTIFICATION
@@ -227,7 +239,9 @@ Exit Criteria: 6/8 checked = proceed
 
 #### OPTIMAL ACTIVITY MIX
 ```
+
 Weekly Targets per Rep:
+
 - Prospecting Calls: {{#}} (current: {{#}})
 - Discovery Meetings: {{#}} (current: {{#}})
 - Demos: {{#}} (current: {{#}})
@@ -235,14 +249,17 @@ Weekly Targets per Rep:
 - Executive Meetings: {{#}} (current: {{#}})
 
 Ratios:
+
 - Call:Meeting = {{ratio}}
 - Meeting:Demo = {{ratio}}
 - Demo:Proposal = {{ratio}}
 - Proposal:Close = {{ratio}}
+
 ```
 
 #### TIME ALLOCATION MODEL
 ```
+
 Strategic Selling (40%):
 ├── Top 20% of deals: 25%
 ├── Relationship building: 10%
@@ -255,6 +272,7 @@ Pipeline Development (35%):
 Deal Execution (25%):
 ├── Demos/Presentations: 15%
 └── Proposal/Negotiation: 10%
+
 ```
 
 ### COACHING & ENABLEMENT
@@ -290,15 +308,19 @@ Deal Execution (25%):
 
 #### COMMIT/UPSIDE/PIPELINE
 ```
+
 This Quarter:
+
 - Commit: ${{amount}} ({{%}} confidence)
 - Upside: ${{amount}} ({{%}} confidence)
 - Pipeline: ${{amount}} (needs qualification)
 
 Next Quarter:
+
 - Early Pipeline: ${{amount}}
 - Coverage Ratio: {{x}}:1
 - Generation Needed: ${{amount}}
+
 ```
 
 #### FORECAST METHODOLOGY
@@ -357,6 +379,7 @@ Week 11-12: Scale successful practices
 ```
 
 ## Usage Instructions
+
 1. Export comprehensive pipeline data from CRM
 2. Gather historical performance metrics
 3. Document current sales process and methodology
@@ -367,8 +390,11 @@ Week 11-12: Scale successful practices
 8. Track progress against success metrics
 
 ## Examples
+
 ### Example 1: B2B SaaS Sales Optimization
-**Input**: 
+
+**Input**:
+
 ```
 {{company_type}}: B2B SaaS, Series B startup
 {{offering_description}}: Marketing automation platform
@@ -384,11 +410,13 @@ Week 11-12: Scale successful practices
 **Output**: [Comprehensive optimization plan identifying qualification as key bottleneck, implementing MEDDPICC methodology, and creating deal acceleration strategies targeting 35% win rate]
 
 ## Related Prompts
+
 - [Sales Compensation Designer](/prompts/business/sales/compensation-plan-builder.md)
 - [Territory Planning Optimizer](/prompts/business/sales/territory-planning.md)
 - [Sales Enablement Program](/prompts/business/sales/enablement-builder.md)
 
 ## Research Notes
+
 - Pipeline velocity formula proven to predict revenue within 5% accuracy
 - MEDDPICC methodology increases enterprise win rates by 15-20%
 - Top performers spend 40% more time on strategic accounts

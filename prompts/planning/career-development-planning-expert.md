@@ -1,6 +1,7 @@
 # Career Development Planning Expert and Professional Growth Strategist
 
 ## Metadata
+
 - **Category**: Planning
 - **Tags**: career development, professional growth, skill development, career planning, leadership development
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert career development planning with professional growth strategy to create comprehensive, personalized career development plans that align individual aspirations with market opportunities and organizational needs. It employs career frameworks, skill assessment, and strategic planning to accelerate professional growth.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise career development system combining:
 
@@ -90,6 +93,7 @@ DELIVER YOUR CAREER DEVELOPMENT PLAN AS:
 "To become a transformational technology leader who drives innovation, builds high-performing teams, and creates significant business value through strategic technology decisions and organizational excellence."
 
 **Strategic Career Objectives**:
+
 1. Progress from Engineering Manager to VP Engineering within 2 years
 2. Develop enterprise-scale technology leadership experience
 3. Build industry recognition as thought leader in cloud architecture
@@ -102,6 +106,7 @@ DELIVER YOUR CAREER DEVELOPMENT PLAN AS:
 Execute systematic progression through technology leadership roles while building complementary business acumen, industry expertise, and executive presence to achieve CTO readiness within 5-year timeframe.
 
 **Key Development Themes**:
+
 1. **Leadership Amplification**: Scale from team leadership to organizational leadership
 2. **Business Acumen**: Develop strategic business and financial understanding
 3. **Technical Excellence**: Maintain cutting-edge technology expertise and vision
@@ -109,6 +114,7 @@ Execute systematic progression through technology leadership roles while buildin
 5. **Executive Presence**: Develop board-level communication and strategic thinking
 
 **Critical Success Factors**:
+
 - Deliver exceptional business results while developing team capabilities
 - Build strong relationships with CEO, board, and industry leaders
 - Establish expertise in emerging technologies and strategic architecture
@@ -120,6 +126,7 @@ Execute systematic progression through technology leadership roles while buildin
 #### Professional Profile Analysis
 
 **Current Strengths**:
+
 - **Technical Leadership**: 8 years engineering management, cloud architecture expertise
 - **Team Building**: Successfully scaled team from 5 to 15 engineers
 - **Delivery Excellence**: Consistent on-time, high-quality product delivery
@@ -127,6 +134,7 @@ Execute systematic progression through technology leadership roles while buildin
 - **Communication**: Strong stakeholder communication and presentation skills
 
 **Development Areas**:
+
 - **Business Strategy**: Limited exposure to business planning and P&L management
 - **Enterprise Scale**: Experience primarily with mid-market solutions
 - **Industry Network**: Strong internal network, limited external industry connections
@@ -135,26 +143,28 @@ Execute systematic progression through technology leadership roles while buildin
 
 #### Competency Assessment Matrix
 
-| Competency Area | Current Level | Target Level | Gap | Priority |
-|-----------------|---------------|--------------|-----|----------|
-| **Technical Vision** | 7/10 | 9/10 | 2 | High |
-| **Strategic Thinking** | 6/10 | 9/10 | 3 | Critical |
-| **Business Acumen** | 5/10 | 8/10 | 3 | Critical |
-| **Executive Communication** | 6/10 | 9/10 | 3 | High |
-| **Organizational Leadership** | 7/10 | 9/10 | 2 | High |
-| **Industry Influence** | 4/10 | 8/10 | 4 | Critical |
-| **Innovation Management** | 8/10 | 9/10 | 1 | Medium |
-| **Financial Management** | 4/10 | 7/10 | 3 | High |
+| Competency Area               | Current Level | Target Level | Gap | Priority |
+| ----------------------------- | ------------- | ------------ | --- | -------- |
+| **Technical Vision**          | 7/10          | 9/10         | 2   | High     |
+| **Strategic Thinking**        | 6/10          | 9/10         | 3   | Critical |
+| **Business Acumen**           | 5/10          | 8/10         | 3   | Critical |
+| **Executive Communication**   | 6/10          | 9/10         | 3   | High     |
+| **Organizational Leadership** | 7/10          | 9/10         | 2   | High     |
+| **Industry Influence**        | 4/10          | 8/10         | 4   | Critical |
+| **Innovation Management**     | 8/10          | 9/10         | 1   | Medium   |
+| **Financial Management**      | 4/10          | 7/10         | 3   | High     |
 
 #### Market Opportunity Analysis
 
 **CTO Market Landscape**:
+
 - **High Demand**: 40% increase in CTO openings over past 2 years
 - **Competitive Requirements**: Business strategy, scale experience, industry reputation
 - **Compensation Range**: $250K-$500K+ depending on company size and stage
 - **Success Factors**: Technical vision, business impact, team development, cultural fit
 
 **Target Company Profiles**:
+
 1. **Growth-stage startups** (100-500 employees): High growth, scaling challenges
 2. **Mid-market companies** (500-2000 employees): Digital transformation focus
 3. **Enterprise divisions**: New technology initiatives and modernization
@@ -169,18 +179,21 @@ Execute systematic progression through technology leadership roles while buildin
 **Key Initiatives**:
 
 **Q1-Q2: Internal Leadership Expansion**
+
 - **Business Partnership**: Partner with product and sales on go-to-market strategy
 - **Cross-functional Leadership**: Lead company-wide technology initiatives
 - **Team Scaling**: Hire and onboard 8 additional senior engineers
 - **Process Innovation**: Implement advanced engineering practices and metrics
 
 **Q3-Q4: External Presence Building**
+
 - **Speaking Engagements**: Present at 3 industry conferences on cloud architecture
 - **Thought Leadership**: Publish 6 technical articles in industry publications
 - **Industry Network**: Join technology advisory boards, attend executive events
 - **Executive Education**: Complete business strategy program at top-tier university
 
 **Year 1 Success Metrics**:
+
 - Team performance: 25% improvement in delivery velocity and quality
 - Business impact: Direct contribution to 15% revenue growth
 - Industry recognition: 3 speaking engagements, 500+ LinkedIn followers
@@ -193,24 +206,28 @@ Execute systematic progression through technology leadership roles while buildin
 **Key Initiatives**:
 
 **VP Engineering Responsibilities**:
+
 - **Organizational Design**: Build engineering organization for 50+ engineers
 - **Technology Strategy**: Develop 3-year technology roadmap aligned with business strategy
 - **Budget Management**: Manage $8M+ engineering budget with P&L impact analysis
 - **Executive Reporting**: Regular board presentations on technology strategy and execution
 
 **Business Development**:
+
 - **MBA or Executive Program**: Complete executive business program
 - **Cross-functional Experience**: Take on product management or operations responsibilities
 - **Customer Engagement**: Direct customer interaction for technology strategy
 - **Board Interaction**: Present technology strategy to board and investors
 
 **Industry Leadership**:
+
 - **Advisory Roles**: Join 2 startup advisory boards in technology leadership capacity
 - **Thought Leadership**: Keynote 2 major conferences, publish thought leadership series
 - **Professional Network**: Build relationships with 20+ technology executives
 - **Media Presence**: Regular commentary on technology trends and leadership
 
 **Year 2 Success Metrics**:
+
 - Business impact: Engineering org drives 25% of company growth
 - Team development: 3 direct reports promoted to senior leadership
 - Industry position: Top 100 technology leader recognition
@@ -223,24 +240,28 @@ Execute systematic progression through technology leadership roles while buildin
 **Key Initiatives**:
 
 **Enterprise Experience Building**:
+
 - **Large-scale Projects**: Lead enterprise platform supporting 1M+ users
 - **Enterprise Sales**: Support $1M+ enterprise deals with technology strategy
 - **Compliance & Security**: Lead SOC 2, GDPR, and enterprise security initiatives
 - **Partner Ecosystem**: Build technology partnerships with major vendors
 
 **Strategic Leadership Development**:
+
 - **Innovation Lab**: Launch internal innovation program with budget authority
 - **M&A Participation**: Participate in technology due diligence for acquisitions
 - **Investment Committee**: Join company investment committee for technology decisions
 - **Succession Planning**: Develop leadership pipeline and successor planning
 
 **External Positioning**:
+
 - **Industry Analyst Relationships**: Build relationships with Gartner, Forrester analysts
 - **Executive Coaching**: Work with executive coach for C-suite preparation
 - **Board Preparation**: Complete board readiness program and director education
 - **Venture Network**: Build relationships with venture capital technology partners
 
 **Year 3 Success Metrics**:
+
 - Enterprise impact: Successfully deliver enterprise-scale platform
 - Strategic influence: Technology strategy drives business expansion
 - Market position: Industry analyst recognition and media coverage
@@ -253,24 +274,28 @@ Execute systematic progression through technology leadership roles while buildin
 **Key Initiatives**:
 
 **CTO Skill Completion**:
+
 - **Technology Vision**: Develop and execute 5-year technology strategy
 - **Digital Transformation**: Lead company-wide digital transformation initiative
 - **Innovation Portfolio**: Manage $2M+ innovation budget with ROI accountability
 - **Executive Team**: Full participation as technology member of executive team
 
 **Market Preparation**:
+
 - **Executive Search**: Engage with executive search firms and build CTO pipeline
 - **Interview Preparation**: Practice with executive interview coaching
 - **Reference Building**: Cultivate strong references from board members and executives
 - **Compensation Research**: Understand CTO compensation and negotiation strategies
 
 **Opportunity Development**:
+
 - **Internal Promotion**: Position for CTO role at current company
 - **External Opportunities**: Explore CTO roles at target companies
 - **Interim Assignments**: Consider interim CTO roles for experience
 - **Consulting Options**: Evaluate technology consulting or advisory opportunities
 
 **Year 4 Success Metrics**:
+
 - Technology leadership: Company recognized for technology innovation
 - Market readiness: Multiple CTO opportunities in pipeline
 - Executive presence: Confident board-level communication and strategy
@@ -283,24 +308,28 @@ Execute systematic progression through technology leadership roles while buildin
 **Key Initiatives**:
 
 **CTO Role Acquisition**:
+
 - **Opportunity Selection**: Choose optimal CTO opportunity based on criteria
 - **Negotiation**: Secure favorable compensation and authority package
 - **Onboarding**: Execute 100-day CTO plan for maximum early impact
 - **Team Building**: Recruit and build world-class technology team
 
 **CTO Excellence**:
+
 - **Technology Strategy**: Develop breakthrough technology competitive advantage
 - **Business Partnership**: Drive significant business growth through technology
 - **Innovation Leadership**: Establish company as technology innovation leader
 - **Culture Building**: Create engineering culture that attracts top talent
 
 **Platform Building**:
+
 - **Industry Leadership**: Establish position as top technology industry leader
 - **Board Development**: Prepare for public company board opportunities
 - **Investment Activity**: Angel investing and venture capital relationships
 - **Legacy Creation**: Mentor next generation of technology leaders
 
 **Year 5 Success Metrics**:
+
 - CTO success: Measurable business impact and team excellence
 - Industry position: Top 50 technology leader recognition
 - Future opportunities: Public company board and investment opportunities
@@ -311,18 +340,21 @@ Execute systematic progression through technology leadership roles while buildin
 #### Technical Skills Evolution
 
 **Current Technical Foundation**:
+
 - Cloud architecture (AWS, Azure)
 - Microservices and distributed systems
 - DevOps and CI/CD
 - Team leadership and agile practices
 
 **Year 1-2 Technical Development**:
+
 - **Emerging Technologies**: AI/ML, blockchain, edge computing
 - **Enterprise Architecture**: Large-scale system design and integration
 - **Security Leadership**: Cybersecurity strategy and implementation
 - **Platform Strategy**: API design, developer experience, ecosystem building
 
 **Year 3-5 Technical Vision**:
+
 - **Technology Strategy**: Market analysis, competitive technology assessment
 - **Innovation Management**: R&D strategy, technology investment decisions
 - **Digital Transformation**: Enterprise-wide technology modernization
@@ -331,18 +363,21 @@ Execute systematic progression through technology leadership roles while buildin
 #### Business Acumen Development
 
 **Year 1: Business Fundamentals**
+
 - **Financial Literacy**: Understanding P&L, budgeting, ROI analysis
 - **Go-to-Market**: Sales process, marketing strategy, customer success
 - **Product Strategy**: Product-market fit, competitive positioning, roadmap planning
 - **Operations**: Business process optimization, supply chain, scaling
 
 **Year 2-3: Strategic Business Skills**
+
 - **Business Strategy**: Market analysis, competitive strategy, growth planning
 - **Financial Management**: Advanced financial analysis, capital allocation, investment
 - **Corporate Development**: M&A strategy, partnership development, venture capital
 - **Board Governance**: Board dynamics, shareholder relations, regulatory compliance
 
 **Year 4-5: Executive Business Leadership**
+
 - **CEO Partnership**: Executive team collaboration, strategic planning, leadership
 - **Investor Relations**: Venture capital, private equity, public market dynamics
 - **Market Leadership**: Industry analysis, trend identification, thought leadership
@@ -355,18 +390,21 @@ Execute systematic progression through technology leadership roles while buildin
 **Leadership Skills by Level**:
 
 **Engineering Manager** (Current):
+
 - Team performance and productivity
 - Project delivery and quality
 - Individual development and mentoring
 - Cross-functional collaboration
 
 **VP Engineering** (Year 1-2):
+
 - Organizational design and scaling
 - Technology strategy and roadmap
 - Budget management and resource allocation
 - Executive communication and board reporting
 
 **CTO** (Year 3-5):
+
 - Technology vision and innovation
 - Business strategy and partnership
 - Industry leadership and influence
@@ -377,6 +415,7 @@ Execute systematic progression through technology leadership roles while buildin
 #### 70-20-10 Development Model Application
 
 **70% Experiential Learning** (Stretch assignments and challenges):
+
 - Lead cross-functional technology initiatives
 - Take on P&L responsibility for technology products
 - Manage technology partnerships and vendor relationships
@@ -384,6 +423,7 @@ Execute systematic progression through technology leadership roles while buildin
 - Present technology strategy to board and investors
 
 **20% Social Learning** (Mentoring and networking):
+
 - **Executive Mentorship**: Monthly mentoring with current CTO or CEO
 - **Peer Learning**: Technology executive roundtable participation
 - **Industry Networking**: Technology conference and executive event attendance
@@ -391,6 +431,7 @@ Execute systematic progression through technology leadership roles while buildin
 - **Professional Coaching**: Executive coach for leadership development
 
 **10% Formal Learning** (Courses and certifications):
+
 - **Executive Education**: Stanford Executive Leadership Program
 - **Business Education**: MBA or executive business certificate program
 - **Technology Certifications**: Cloud architecture and security certifications
@@ -400,12 +441,14 @@ Execute systematic progression through technology leadership roles while buildin
 #### Annual Learning Budget & Plan
 
 **Year 1 Learning Investment** ($25K):
+
 - Executive education program: $15K
 - Conference and networking: $5K
 - Books, courses, and coaching: $3K
 - Professional memberships: $2K
 
 **Learning Time Allocation** (5 hours/week):
+
 - Reading and research: 2 hours
 - Courses and programs: 1.5 hours
 - Networking and mentoring: 1 hour
@@ -416,18 +459,21 @@ Execute systematic progression through technology leadership roles while buildin
 #### Strategic Network Map
 
 **Internal Network Development**:
+
 - **Executive Team**: Build strong relationships with CEO, board members
 - **Cross-functional Leaders**: Partner with product, sales, marketing leaders
 - **Board Members**: Establish credibility and communication with board
 - **Investors**: Understand investor perspectives and build relationships
 
 **Industry Network Development**:
+
 - **Technology Executives**: CTO and VP Engineering peer network
 - **Industry Analysts**: Gartner, Forrester, IDC analyst relationships
 - **Venture Capital**: Technology-focused venture partners and principals
 - **Advisory Network**: Startup advisors and executive mentors
 
 **Professional Network Expansion**:
+
 - **Conference Network**: Speaking and networking at industry events
 - **Social Media**: LinkedIn thought leadership and engagement
 - **Professional Organizations**: Technology leadership organizations
@@ -436,12 +482,14 @@ Execute systematic progression through technology leadership roles while buildin
 #### Networking Plan & Metrics
 
 **Monthly Networking Targets**:
+
 - New professional connections: 10
 - Meaningful relationship deepening: 5
 - Industry event participation: 1
 - Content sharing and engagement: 4 posts
 
 **Annual Relationship Building**:
+
 - Advisory board participation: 2 companies
 - Speaking engagements: 6 events
 - Industry roundtables: 4 participations
@@ -454,6 +502,7 @@ Execute systematic progression through technology leadership roles while buildin
 **Brand Positioning**: "Innovative technology leader who transforms businesses through strategic technology vision and exceptional team building"
 
 **Key Messages**:
+
 1. **Technology Innovation**: Driving competitive advantage through emerging technologies
 2. **Team Excellence**: Building and scaling high-performing engineering teams
 3. **Business Impact**: Translating technology strategy into measurable business results
@@ -462,12 +511,14 @@ Execute systematic progression through technology leadership roles while buildin
 #### Content Strategy & Thought Leadership
 
 **Content Themes**:
+
 - **Technology Leadership**: Strategic technology decision-making and vision
 - **Team Building**: Engineering culture, hiring, and development
 - **Innovation Management**: Emerging technology adoption and R&D strategy
 - **Business Technology**: Technology's role in business strategy and growth
 
 **Content Calendar**:
+
 - **Blog Posts**: 2 per month on technology leadership topics
 - **Speaking**: 6 conferences annually with signature presentations
 - **Social Media**: Daily LinkedIn engagement, weekly thought leadership posts
@@ -477,12 +528,14 @@ Execute systematic progression through technology leadership roles while buildin
 #### Visibility & Recognition Strategy
 
 **Industry Recognition Targets**:
+
 - **Awards**: Nomination for technology leadership awards
 - **Lists**: Inclusion in "Top Technology Leaders" industry lists
 - **Media**: Regular quotes and commentary in technology media
 - **Research**: Participation in industry research and surveys
 
 **Measurement & Tracking**:
+
 - **Social Media**: LinkedIn followers, engagement rates
 - **Speaking**: Number of speaking invitations and audience size
 - **Media**: Mentions, quotes, and feature articles
@@ -493,18 +546,21 @@ Execute systematic progression through technology leadership roles while buildin
 #### Career Development KPIs
 
 **Advancement Metrics**:
+
 - **Role Progression**: Promotion timeline and responsibility expansion
 - **Compensation Growth**: Annual compensation increases and total package
 - **Team Impact**: Team performance, retention, and development metrics
 - **Business Results**: Revenue, product, and operational impact attribution
 
 **Market Position Metrics**:
+
 - **Industry Recognition**: Awards, rankings, media mentions
 - **Network Quality**: Executive connections and relationship depth
 - **Thought Leadership**: Speaking invitations, content engagement
 - **Opportunity Flow**: Inbound opportunities and recruiting contacts
 
 **Skill Development Metrics**:
+
 - **360 Feedback**: Annual leadership assessment scores
 - **Competency Growth**: Skills assessment improvement tracking
 - **Learning Completion**: Education and certification achievements
@@ -522,12 +578,14 @@ Execute systematic progression through technology leadership roles while buildin
 #### Career Risk Assessment
 
 **High-Impact Risks**:
+
 - **Industry Disruption**: Technology trends making skills obsolete
 - **Economic Downturn**: Reduced hiring and advancement opportunities
 - **Company Challenges**: Poor company performance affecting reputation
 - **Personal Life Changes**: Family or health issues impacting career focus
 
 **Mitigation Strategies**:
+
 - **Skill Diversification**: Broad technical and business skill development
 - **Network Resilience**: Strong relationships across multiple companies
 - **Financial Planning**: Emergency fund and diversified compensation
@@ -546,6 +604,7 @@ Execute systematic progression through technology leadership roles while buildin
 #### Personal Values & Priorities
 
 **Core Values**:
+
 - **Excellence**: Continuous improvement and high standards
 - **Impact**: Making meaningful contributions to business and society
 - **Growth**: Personal and professional development
@@ -553,6 +612,7 @@ Execute systematic progression through technology leadership roles while buildin
 - **Integrity**: Ethical leadership and decision-making
 
 **Life Integration Approach**:
+
 - **Time Management**: Calendar blocking for family, health, and development
 - **Energy Management**: Optimizing for peak performance periods
 - **Boundary Setting**: Clear work-life boundaries and communication
@@ -566,6 +626,7 @@ Execute systematic progression through technology leadership roles while buildin
 **Life Satisfaction**: Alignment between values, work, and personal life
 
 ## Usage Instructions
+
 1. Begin with comprehensive self-assessment and market analysis
 2. Set clear career vision and measurable objectives
 3. Design systematic development plan using 70-20-10 model
@@ -576,8 +637,11 @@ Execute systematic progression through technology leadership roles while buildin
 8. Integrate career development with personal values and life goals
 
 ## Examples
+
 ### Example 1: Early Career Technology Professional
-**Input**: 
+
+**Input**:
+
 ```
 {{current_role}}: Software Engineer (3 years experience)
 {{industry}}: Fintech startup
@@ -589,7 +653,9 @@ Execute systematic progression through technology leadership roles while buildin
 **Output**: [Development plan focused on technical excellence, leadership skills, project ownership, and mentoring opportunities with clear pathway to engineering management]
 
 ### Example 2: Mid-Career Business Professional Transition
+
 **Input**:
+
 ```
 {{current_role}}: Senior Marketing Manager
 {{industry}}: Traditional retail
@@ -601,11 +667,13 @@ Execute systematic progression through technology leadership roles while buildin
 **Output**: [Transition plan combining digital marketing expertise with technology skills, focusing on digital transformation roles and systematic technology education]
 
 ## Related Prompts
+
 - [Skill Development Planner](/prompts/learning/skill-development.md)
 - [Leadership Development Expert](/prompts/learning/leadership-development.md)
 - [Performance Evaluation Specialist](/prompts/evaluation/performance-review.md)
 
 ## Research Notes
+
 - Based on career development theory and proven advancement frameworks
 - Integrates individual assessment with market opportunity analysis
 - Emphasizes systematic skill building and relationship development

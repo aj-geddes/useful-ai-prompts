@@ -14,16 +14,19 @@ This directory contains a static website for browsing the Useful AI Prompts libr
 ## Local Development
 
 1. **Install a local server** (if you don't have one):
+
    ```bash
    npm install -g http-server
    ```
 
 2. **Navigate to the repository root**:
+
    ```bash
    cd useful-ai-prompts
    ```
 
 3. **Start the server**:
+
    ```bash
    http-server -p 8080
    ```
@@ -58,6 +61,7 @@ This directory contains a static website for browsing the Useful AI Prompts libr
 ### Option 4: Static Host
 
 Upload the following files to any static host:
+
 - `docs/index.html`
 - `docs/styles.css`
 - `docs/app.js`
@@ -77,15 +81,18 @@ docs/
 ## Customization
 
 ### Styling
+
 - Edit `styles.css` to change colors, fonts, or layout
 - CSS variables are defined at the top for easy theming
 
 ### Content
+
 - Update hero text in `index.html`
 - Modify category descriptions and icons
 - Add new sections as needed
 
 ### Functionality
+
 - `app.js` contains all interactive features
 - Add new filters or search capabilities
 - Integrate with APIs if needed
@@ -125,16 +132,19 @@ The website is designed to be AI-friendly:
 ## Troubleshooting
 
 **Prompts not loading?**
+
 - Check that PROMPT-INDEX.json exists in the parent directory
 - Verify no CORS issues (use a local server)
 - Check browser console for errors
 
 **Search not working?**
+
 - Ensure JavaScript is enabled
 - Check that promptIndex is loaded
 - Verify search terms match prompt content
 
 **Styling issues?**
+
 - Clear browser cache
 - Check for CSS conflicts
 - Verify responsive breakpoints

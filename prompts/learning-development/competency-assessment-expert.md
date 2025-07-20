@@ -1,6 +1,7 @@
 # Competency Assessment Expert and Skills Evaluation Specialist
 
 ## Metadata
+
 - **Category**: Learning & Development
 - **Tags**: competency assessment, skills evaluation, performance measurement, capability analysis, proficiency testing
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert competency assessment methodology with skills evaluation specialization to design comprehensive assessment frameworks that accurately measure capabilities, identify development needs, and validate proficiency levels. It employs evidence-based assessment principles, psychometric theory, and performance measurement techniques to create reliable, valid, and actionable competency evaluations.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise competency assessment system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR COMPETENCY ASSESSMENT STRATEGY AS:
 **Assessment Stakes**: Career-critical with significant organizational impact and individual consequences
 
 **Assessment Design Challenges**:
+
 - **Technical Depth vs. Leadership Breadth**: Balancing deep technical assessment with leadership competency evaluation
 - **Objective vs. Subjective Measurement**: Combining quantifiable technical skills with interpersonal leadership capabilities
 - **Current vs. Potential Assessment**: Evaluating demonstrated competency while predicting future leadership success
@@ -94,6 +98,7 @@ DELIVER YOUR COMPETENCY ASSESSMENT STRATEGY AS:
 - **Organizational Alignment**: Assessment criteria reflecting company values and strategic technical direction
 
 **Assessment Success Criteria**:
+
 - Reliable identification of candidates ready for senior technical leadership advancement
 - Valid prediction of leadership success with 85%+ accuracy over 12-month period
 - Fair and unbiased evaluation process with consistent results across evaluators
@@ -106,6 +111,7 @@ DELIVER YOUR COMPETENCY ASSESSMENT STRATEGY AS:
 Deploy comprehensive multi-method assessment framework using evidence-based evaluation principles and 360-degree feedback to accurately measure technical leadership competency while identifying specific development needs and predicting future performance success.
 
 **Skills Evaluation Approach**:
+
 - **Multi-Dimensional Assessment**: Technical expertise, leadership capability, and behavioral competency integration
 - **Evidence-Based Validation**: Portfolio work samples with performance-based simulation and peer evaluation
 - **Bias Mitigation**: Structured evaluation process with statistical analysis and fairness monitoring
@@ -113,6 +119,7 @@ Deploy comprehensive multi-method assessment framework using evidence-based eval
 - **Predictive Validation**: Follow-up tracking to validate assessment accuracy and improve methodology
 
 **Strategic Assessment Principles**:
+
 1. **Competency-Based Evaluation**: Clear skill definitions with observable, measurable performance criteria
 2. **Multiple Evidence Sources**: Triangulation across work samples, simulations, and stakeholder feedback
 3. **Fair and Inclusive Process**: Bias detection and mitigation with accessibility and cultural consideration
@@ -120,6 +127,7 @@ Deploy comprehensive multi-method assessment framework using evidence-based eval
 5. **Continuous Improvement**: Assessment methodology refinement based on outcome validation and feedback
 
 **Expected Assessment Outcomes**:
+
 - Accurate identification of promotion-ready candidates with 90%+ success rate
 - Comprehensive development plans with specific skill targets and improvement strategies
 - Enhanced organizational confidence in technical leadership succession and development
@@ -133,18 +141,21 @@ Deploy comprehensive multi-method assessment framework using evidence-based eval
 **Core Competency Domain Mapping:**
 
 **Technical Excellence (40% of assessment weight)**:
+
 - **Advanced Programming**: Complex system design, code architecture, optimization techniques
 - **System Design**: Scalable architecture, integration patterns, technology selection
 - **Code Quality**: Best practices, testing strategies, documentation standards, review processes
 - **Technical Innovation**: Emerging technology adoption, problem-solving creativity, solution optimization
 
 **Leadership and People Development (35% of assessment weight)**:
+
 - **Team Leadership**: Mentoring, delegation, performance management, team development
 - **Communication**: Technical explanation, stakeholder management, presentation skills
 - **Collaboration**: Cross-functional coordination, conflict resolution, consensus building
 - **Strategic Thinking**: Technical roadmap development, business alignment, decision-making
 
 **Project and Process Management (25% of assessment weight)**:
+
 - **Project Leadership**: Planning, execution, risk management, delivery optimization
 - **Process Improvement**: Workflow optimization, efficiency enhancement, quality systems
 - **Change Management**: Technology adoption, team transition, organizational development
@@ -155,6 +166,7 @@ Deploy comprehensive multi-method assessment framework using evidence-based eval
 **Proficiency Scale and Observable Behaviors:**
 
 **Technical Excellence Competency Levels**:
+
 ```
 Level 5 - Expert/Mastery:
 • Designs complex distributed systems with performance optimization
@@ -188,6 +200,7 @@ Level 1 - Novice:
 ```
 
 **Leadership Competency Assessment Criteria**:
+
 ```
 Team Leadership Assessment:
 □ Effectively delegates tasks with clear expectations and support
@@ -218,6 +231,7 @@ Strategic Thinking Assessment:
 **Portfolio-Based Technical Assessment (40% of total score)**:
 
 **Technical Portfolio Requirements**:
+
 ```
 Code Portfolio Assessment (6 months of work):
 • Complex project leadership (minimum 3-month duration)
@@ -244,6 +258,7 @@ Scoring Rubric (1-5 scale per criterion):
 **Behavioral Leadership Simulation (35% of total score)**:
 
 **Simulation Scenario Design**:
+
 ```
 Scenario: Cross-Functional Technical Crisis Resolution
 Setting: Critical production system failure affecting customer experience
@@ -284,6 +299,7 @@ Assessment Observation Framework:
 **360-Degree Feedback Assessment (25% of total score)**:
 
 **Multi-Stakeholder Feedback Framework**:
+
 ```
 Feedback Source Configuration:
 • Direct Reports (25% of 360 score): 3-4 team members
@@ -325,6 +341,7 @@ Feedback Quality Assurance:
 **Comprehensive Bias Mitigation Strategy**:
 
 **Statistical Bias Analysis**:
+
 ```r
 # Assessment Bias Detection Analysis
 library(psych)
@@ -343,7 +360,7 @@ gender_analysis <- assessment_data %>%
 t_test_gender <- t.test(total_score ~ gender, data = assessment_data)
 
 # Effect size calculation
-cohens_d_gender <- cohen.d(assessment_data$total_score, 
+cohens_d_gender <- cohen.d(assessment_data$total_score,
                           assessment_data$gender)
 
 # Ethnicity analysis with ANOVA
@@ -351,7 +368,7 @@ ethnicity_anova <- aov(total_score ~ ethnicity, data = assessment_data)
 summary(ethnicity_anova)
 
 # Regression analysis controlling for experience
-bias_regression <- lm(total_score ~ technical_experience + 
+bias_regression <- lm(total_score ~ technical_experience +
                      leadership_experience + gender + ethnicity + age,
                      data = assessment_data)
 summary(bias_regression)
@@ -363,6 +380,7 @@ if(cohens_d_gender$estimate > 0.3) {
 ```
 
 **Accessibility and Accommodation Framework**:
+
 ```
 Assessment Accommodation Options:
 • Extended time allocation (1.5x standard time)
@@ -391,6 +409,7 @@ Fairness Monitoring Dashboard:
 **Comprehensive Scoring Framework**:
 
 **Weighted Scoring Integration**:
+
 ```python
 class CompetencyAssessment:
     def __init__(self):
@@ -400,7 +419,7 @@ class CompetencyAssessment:
             'feedback_360': 0.25
         }
         self.pass_threshold = 3.0  # On 5-point scale
-        
+
     def calculate_composite_score(self, scores):
         """Calculate weighted composite competency score"""
         composite = (
@@ -408,14 +427,14 @@ class CompetencyAssessment:
             scores['leadership_simulation'] * self.weights['leadership_simulation'] +
             scores['feedback_360'] * self.weights['feedback_360']
         )
-        
+
         return {
             'composite_score': composite,
             'promotion_ready': composite >= self.pass_threshold,
             'competency_profile': self.generate_profile(scores),
             'development_priorities': self.identify_gaps(scores)
         }
-    
+
     def generate_profile(self, scores):
         """Generate competency strength and development profile"""
         profile = {}
@@ -426,9 +445,9 @@ class CompetencyAssessment:
                 profile[area] = 'Proficient'
             else:
                 profile[area] = 'Development Need'
-        
+
         return profile
-    
+
     def identify_gaps(self, scores):
         """Identify specific development priorities"""
         gaps = []
@@ -440,11 +459,12 @@ class CompetencyAssessment:
                     'target_level': 3.5,
                     'priority': 'High' if score < 2.5 else 'Medium'
                 })
-        
+
         return sorted(gaps, key=lambda x: x['current_level'])
 ```
 
 **Statistical Reliability and Validity Analysis**:
+
 ```r
 # Internal Consistency Analysis
 library(psych)
@@ -458,7 +478,7 @@ feedback_alpha <- alpha(feedback_360_scores)
 library(irr)
 
 # ICC for portfolio assessments across multiple raters
-portfolio_icc <- icc(portfolio_ratings, model = "twoway", 
+portfolio_icc <- icc(portfolio_ratings, model = "twoway",
                     type = "agreement", unit = "average")
 
 # Simulation observer agreement
@@ -486,7 +506,7 @@ promotion_model <- glm(promoted_12mo ~ composite_score + experience_years,
 
 # Model performance assessment
 library(pROC)
-roc_curve <- roc(validation_data$promoted_12mo, 
+roc_curve <- roc(validation_data$promoted_12mo,
                 fitted(promotion_model))
 auc(roc_curve)  # Target: >0.80
 ```
@@ -498,6 +518,7 @@ auc(roc_curve)  # Target: >0.80
 **Comprehensive Feedback Framework**:
 
 **Individual Assessment Report Structure**:
+
 ```
 TECHNICAL LEADERSHIP COMPETENCY ASSESSMENT REPORT
 
@@ -549,6 +570,7 @@ Development Recommendations:
 **Development Action Plan Creation**:
 
 **90-Day Development Plan Template**:
+
 ```
 INDIVIDUAL DEVELOPMENT PLAN - SENIOR TECHNICAL LEADERSHIP PREPARATION
 
@@ -610,6 +632,7 @@ Timeline and Milestones:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive competency framework development defining specific skills and performance criteria
 2. Design multi-method assessment integrating objective and subjective evaluation approaches
 3. Implement bias detection and fairness monitoring to ensure equitable evaluation process
@@ -620,8 +643,11 @@ Timeline and Milestones:
 8. Continuously improve assessment methodology based on outcome validation and stakeholder feedback
 
 ## Examples
+
 ### Example 1: Sales Team Performance Assessment
-**Input**: 
+
+**Input**:
+
 ```
 {{assessment_purpose}}: Performance review with development planning for sales team
 {{competency_domain}}: Sales skills, customer relationship management, business development
@@ -633,7 +659,9 @@ Timeline and Milestones:
 **Output**: [Sales competency assessment with performance metrics, customer feedback integration, skill development planning, and team optimization]
 
 ### Example 2: Academic Faculty Evaluation
+
 **Input**:
+
 ```
 {{assessment_purpose}}: Tenure evaluation with research and teaching assessment
 {{competency_domain}}: Academic excellence - research, teaching, service contributions
@@ -645,11 +673,13 @@ Timeline and Milestones:
 **Output**: [Academic assessment framework with research portfolio evaluation, teaching effectiveness measurement, service contribution assessment, and tenure recommendation]
 
 ## Related Prompts
+
 - [Skill Acquisition Expert](/prompts/learning-development/skill-acquisition.md)
 - [Learning Plan Creation Expert](/prompts/learning-development/learning-plan-creation.md)
 - [Performance Evaluation Specialist](/prompts/evaluation-assessment/performance-evaluation.md)
 
 ## Research Notes
+
 - Based on psychometric theory and evidence-based assessment research
 - Integrates competency-based evaluation with statistical validation and bias detection
 - Emphasizes fair and inclusive assessment practices with accessibility consideration

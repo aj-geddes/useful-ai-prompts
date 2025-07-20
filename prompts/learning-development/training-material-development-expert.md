@@ -1,6 +1,7 @@
 # Training Material Development Expert and Instructional Content Designer
 
 ## Metadata
+
 - **Category**: Learning & Development
 - **Tags**: training material development, instructional content design, educational resources, learning materials, content creation
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert training material development methodology with instructional content design specialization to create engaging, effective learning materials that maximize knowledge transfer and skill acquisition. It employs proven instructional design principles, multimedia learning theory, and adult learning frameworks to develop training materials that accommodate diverse learning styles while achieving measurable learning outcomes.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise training material development system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR TRAINING MATERIAL DEVELOPMENT STRATEGY AS:
 **Compliance Requirements**: Healthcare regulations, accessibility standards, and certification tracking
 
 **Material Development Challenges**:
+
 - **Diverse Audience**: Clinical professionals, administrative staff, and IT personnel with different technical comfort levels
 - **Critical Content**: Security training where mistakes have serious patient safety and legal consequences
 - **Regulatory Compliance**: HIPAA, HITECH, and state healthcare regulations requiring specific content coverage
@@ -94,6 +98,7 @@ DELIVER YOUR TRAINING MATERIAL DEVELOPMENT STRATEGY AS:
 - **Retention Requirements**: Information that must be retained and applied consistently in daily practice
 
 **Development Success Criteria**:
+
 - 95% completion rate across all healthcare staff with demonstrated competency achievement
 - Measurable improvement in security awareness and behavior change within 90 days
 - Regulatory compliance achievement with audit-ready documentation and tracking
@@ -106,6 +111,7 @@ DELIVER YOUR TRAINING MATERIAL DEVELOPMENT STRATEGY AS:
 Develop comprehensive multimedia cybersecurity training program using competency-based learning design and universal accessibility principles to create engaging, practical training that achieves regulatory compliance while building sustainable security culture in healthcare environment.
 
 **Instructional Content Approach**:
+
 - **Healthcare-Centric Design**: All content contextualized within healthcare workflows and patient care scenarios
 - **Multi-Modal Learning**: Video, interactive simulations, job aids, and hands-on practice accommodating diverse learning preferences
 - **Micro-Learning Architecture**: Bite-sized modules enabling flexible learning within busy healthcare schedules
@@ -113,6 +119,7 @@ Develop comprehensive multimedia cybersecurity training program using competency
 - **Continuous Reinforcement**: Ongoing updates and refresher content maintaining awareness and compliance
 
 **Strategic Development Principles**:
+
 1. **Relevance Over Completeness**: Healthcare-specific scenarios and examples prioritized over generic security content
 2. **Practical Application**: Every learning element directly applicable to daily healthcare work and patient care
 3. **Accessibility Excellence**: Universal design ensuring content accessibility for diverse abilities and technology comfort levels
@@ -120,6 +127,7 @@ Develop comprehensive multimedia cybersecurity training program using competency
 5. **Sustainable Design**: Modular content enabling updates, customization, and ongoing program evolution
 
 **Expected Material Outcomes**:
+
 - Comprehensive training program covering all regulatory requirements with healthcare-specific application
 - High engagement and completion rates with measurable behavior change and security improvement
 - Audit-ready compliance documentation with individual and organizational tracking capabilities
@@ -133,6 +141,7 @@ Develop comprehensive multimedia cybersecurity training program using competency
 **Healthcare Professional Learning Profile Analysis**:
 
 **Clinical Staff Segment (60% of learners)**:
+
 ```
 Physicians and Nurse Practitioners:
 • Technology Comfort: Moderate - familiar with medical technology but limited cybersecurity knowledge
@@ -157,6 +166,7 @@ Content Strategy for Clinical Staff:
 ```
 
 **Administrative and Support Staff Segment (30% of learners)**:
+
 ```
 Administrative Personnel:
 • Technology Comfort: Moderate to High - daily computer use with office software proficiency
@@ -181,6 +191,7 @@ Content Strategy for Administrative Staff:
 ```
 
 **Leadership and Management Segment (10% of learners)**:
+
 ```
 Healthcare Executives and Department Managers:
 • Technology Comfort: Variable - strategic focus rather than hands-on technical use
@@ -202,6 +213,7 @@ Content Strategy for Leadership:
 **Comprehensive Learning Outcome Architecture**:
 
 **Foundation Knowledge Objectives (All Learners)**:
+
 ```
 Healthcare Privacy and Security Fundamentals:
 • Understand HIPAA Privacy Rule and Security Rule requirements for daily practice
@@ -225,6 +237,7 @@ Healthcare-Specific Security Scenarios:
 ```
 
 **Role-Specific Competency Objectives**:
+
 ```
 Clinical Staff Advanced Competencies:
 • Secure telehealth platform use and patient privacy protection
@@ -255,6 +268,7 @@ IT and Technical Staff Expert Competencies:
 **Modular Content Structure Framework**:
 
 **Module 1: Healthcare Privacy Fundamentals (25 minutes)**:
+
 ```
 Learning Objectives:
 • Define protected health information (PHI) and understand healthcare-specific privacy requirements
@@ -287,6 +301,7 @@ Knowledge Check and Application (4 minutes):
 ```
 
 **Module 2: Threat Recognition and Response (30 minutes)**:
+
 ```
 Learning Objectives:
 • Identify common cybersecurity threats targeting healthcare organizations
@@ -324,6 +339,7 @@ Incident Response Procedures (3 minutes):
 **Engagement and Interaction Strategy**:
 
 **Scenario-Based Learning Simulations**:
+
 ```
 Healthcare Workflow Security Simulation:
 
@@ -350,6 +366,7 @@ Immediate Feedback System:
 ```
 
 **Multimedia Learning Integration**:
+
 ```
 Video Content Development Strategy:
 
@@ -375,6 +392,7 @@ Interactive Demonstrations (6 modules, 5-10 minutes each):
 ```
 
 **Job Aid and Reference Material Development**:
+
 ```
 Quick Reference Guides:
 
@@ -388,7 +406,7 @@ Security Checklist for Healthcare Professionals:
 
 Desktop Quick Reference Cards:
 • PHI identification and handling requirements
-• Secure email composition and sharing guidelines  
+• Secure email composition and sharing guidelines
 • Social engineering recognition and response procedures
 • Password creation and management best practices
 • Emergency access procedures maintaining security protocols
@@ -407,6 +425,7 @@ Mobile-Friendly Resources:
 **Multi-Level Assessment Design**:
 
 **Formative Assessment Integration (Ongoing)**:
+
 ```
 Module-Embedded Knowledge Checks:
 
@@ -430,6 +449,7 @@ Peer Learning Assessment:
 ```
 
 **Summative Assessment Validation (Module Completion)**:
+
 ```
 Comprehensive Competency Assessment:
 
@@ -453,6 +473,7 @@ Portfolio Development:
 ```
 
 **Certification and Compliance Tracking**:
+
 ```
 Regulatory Compliance Documentation:
 
@@ -480,6 +501,7 @@ Performance Improvement Tracking:
 **Comprehensive Accessibility Strategy**:
 
 **Technical Accessibility Compliance**:
+
 ```
 WCAG 2.1 AA Compliance Implementation:
 
@@ -509,6 +531,7 @@ Cognitive Accessibility:
 ```
 
 **Learning Style Accommodation**:
+
 ```
 Multi-Modal Content Delivery:
 
@@ -532,6 +555,7 @@ Kinesthetic Learning Application:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive audience analysis to understand learner needs, constraints, and preferences
 2. Define clear learning objectives with competency-based outcomes and assessment criteria
 3. Design modular content architecture with progressive complexity and skill building
@@ -542,8 +566,11 @@ Kinesthetic Learning Application:
 8. Establish continuous improvement process with learner feedback and outcome measurement
 
 ## Examples
+
 ### Example 1: Sales Team Product Training Materials
-**Input**: 
+
+**Input**:
+
 ```
 {{content_type}}: Comprehensive sales training course with certification requirements
 {{subject_domain}}: Product knowledge and sales methodology for B2B technology solutions
@@ -555,7 +582,9 @@ Kinesthetic Learning Application:
 **Output**: [Sales training materials with product knowledge modules, sales methodology training, role-playing scenarios, performance assessment, and certification tracking]
 
 ### Example 2: Manufacturing Safety Training Development
+
 **Input**:
+
 ```
 {{content_type}}: Safety compliance training with regulatory requirements and hands-on practice
 {{subject_domain}}: Industrial safety protocols, equipment operation, and emergency procedures
@@ -567,11 +596,13 @@ Kinesthetic Learning Application:
 **Output**: [Manufacturing safety training with regulatory compliance, VR simulation training, multilingual support, hands-on practice, and comprehensive safety assessment]
 
 ## Related Prompts
+
 - [Tutorial Creation Expert](/prompts/learning-development/tutorial-creation.md)
 - [Curriculum Development Expert](/prompts/learning-development/curriculum-development.md)
 - [Learning Experience Designer](/prompts/learning-development/learning-experience-design.md)
 
 ## Research Notes
+
 - Based on instructional design theory and multimedia learning research
 - Integrates universal design principles with accessibility compliance and inclusive learning
 - Emphasizes practical application and workplace integration for behavior change and skill transfer

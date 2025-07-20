@@ -1,6 +1,7 @@
 # Integrated Marketing Campaign Architect and ROI Optimizer
 
 ## Metadata
+
 - **Category**: Business/Marketing
 - **Tags**: marketing campaign, integrated marketing, ROI optimization, campaign strategy, digital marketing
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt designs comprehensive integrated marketing campaigns that span multiple channels, audiences, and objectives. It combines strategic marketing expertise with data-driven optimization to create campaigns that not only capture attention but also drive measurable business results, with built-in testing and optimization frameworks.
 
 ## Prompt Template
+
 ```
 You are operating as an integrated marketing campaign system combining:
 
@@ -149,6 +152,7 @@ DELIVER YOUR CAMPAIGN STRATEGY AS:
 
 #### CHANNEL MIX
 ```
+
 Total Budget: ${{total}}
 
 Digital ({{%}}): ${{amount}}
@@ -165,6 +169,7 @@ Traditional ({{%}}): ${{amount}}
 
 Production ({{%}}): ${{amount}}
 Measurement ({{%}}): ${{amount}}
+
 ```
 
 #### CHANNEL STRATEGIES
@@ -193,6 +198,7 @@ Measurement ({{%}}): ${{amount}}
 
 #### PHASE 1: LAUNCH (Weeks 1-2)
 ```
+
 Week 1:
 ├── Monday: Teaser campaign launch
 ├── Wednesday: Influencer activation
@@ -202,6 +208,7 @@ Week 2:
 ├── Full media flight begins
 ├── Email campaign launch
 ├── Retail partner activation
+
 ```
 
 #### PHASE 2: SUSTAIN (Weeks 3-6)
@@ -229,7 +236,9 @@ Week 2:
 
 #### ATTRIBUTION MODEL
 ```
+
 Multi-Touch Attribution Weights:
+
 - First Touch: 30%
 - Mid-Journey: 40%
 - Last Touch: 30%
@@ -238,6 +247,7 @@ Channel Contribution Analysis:
 └── Track assist conversions
 └── Measure incrementality
 └── Calculate channel ROI
+
 ```
 
 ### A/B TESTING PLAN
@@ -262,17 +272,19 @@ Channel Contribution Analysis:
 
 #### PERFORMANCE TRIGGERS
 ```
+
 IF Channel CPA > ${{threshold}} THEN:
-  → Reduce budget by 25%
-  → Reallocate to best performer
-  
+→ Reduce budget by 25%
+→ Reallocate to best performer
+
 IF Channel ROI > {{threshold}}% THEN:
-  → Increase budget by 50%
-  → Test scale limits
+→ Increase budget by 50%
+→ Test scale limits
 
 IF Overall CPA trending >10% above target THEN:
-  → Pause bottom 20% of keywords/placements
-  → Increase bids on top performers
+→ Pause bottom 20% of keywords/placements
+→ Increase bids on top performers
+
 ```
 
 ### CONTENT CALENDAR
@@ -329,6 +341,7 @@ IF Overall CPA trending >10% above target THEN:
 ```
 
 ## Usage Instructions
+
 1. Define clear campaign objectives tied to business goals
 2. Gather comprehensive audience research and insights
 3. Document brand guidelines and creative constraints
@@ -339,8 +352,11 @@ IF Overall CPA trending >10% above target THEN:
 8. Use optimization triggers for real-time adjustments
 
 ## Examples
+
 ### Example 1: DTC Product Launch Campaign
-**Input**: 
+
+**Input**:
+
 ```
 {{brand_name}}: EcoClean Natural Detergent
 {{primary_goal}}: Launch new product line, achieve $2M revenue in 90 days
@@ -355,11 +371,13 @@ IF Overall CPA trending >10% above target THEN:
 **Output**: [Comprehensive campaign featuring "Nature's Clean Squad" creative platform with integrated digital-first approach, influencer partnerships, and retail activation]
 
 ## Related Prompts
+
 - [Social Media Content Strategist](/prompts/business/marketing/social-media-strategy.md)
 - [Email Campaign Optimizer](/prompts/business/marketing/email-campaign-optimizer.md)
 - [Brand Positioning Developer](/prompts/business/marketing/brand-positioning.md)
 
 ## Research Notes
+
 - Framework combines Byron Sharp's "How Brands Grow" with digital performance principles
 - Attribution model based on Google's data-driven attribution research
 - A/B testing velocity inspired by growth marketing best practices

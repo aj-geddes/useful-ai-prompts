@@ -3,11 +3,11 @@ Temperature: 0
 Review the entire codebase in this repository and generate factual, evidence-based documentation with professional Mermaid diagrams using a consistent dark handdrawn style. Generate ONLY documentation and diagrams that can be directly supported by evidence in the code.
 
 1. README.md - Based EXCLUSIVELY on actual repository contents:
-   
+
    ## Header Section
    - Project name (extract directly from package.json, setup.py, pom.xml, or similar manifest files)
    - Status badges - Include ONLY for CI/CD systems with configuration files present
-   
+
    ## Core Content
    - Project description: Use EXACT description from manifest files or main module docstrings
    - High-level Mermaid architecture diagram showing the system architecture:
@@ -110,7 +110,6 @@ Review the entire codebase in this repository and generate factual, evidence-bas
        Server-->>Client: response
        deactivate Server
      ```
-   
    - State diagram for components with state transitions:
      ```mermaid
      %%{init: {
@@ -235,6 +234,7 @@ Review the entire codebase in this repository and generate factual, evidence-bas
      ```
 
 For all diagrams:
+
 - Generate based ONLY on concrete evidence in the code
 - Use the consistent dark handdrawn theme shown in the examples
 - Keep diagrams focused and readable (5-15 elements per diagram)
@@ -246,6 +246,7 @@ For all diagrams:
 - Avoid using special node shapes that might not be supported in GitHub
 
 For all documentation:
+
 - Reference specific file paths that support diagram elements
 - Focus on actual implemented code, not aspirational features
 - Maintain factual accuracy with zero speculation
@@ -253,6 +254,7 @@ For all documentation:
 - Ensure all documentation is deterministic and based only on evidence in the code
 
 Before generating:
+
 1. Analyze the codebase structure to identify components
 2. Map actual relationships between components
 3. Determine which diagram types best represent the specific code patterns

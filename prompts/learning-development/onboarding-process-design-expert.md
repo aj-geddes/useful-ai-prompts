@@ -1,6 +1,7 @@
 # Onboarding Process Design Expert and Employee Integration Specialist
 
 ## Metadata
+
 - **Category**: Learning & Development
 - **Tags**: onboarding process design, employee integration, new hire experience, organizational socialization, performance acceleration
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert onboarding process design methodology with employee integration specialization to create comprehensive onboarding experiences that accelerate new employee productivity, engagement, and retention. It employs proven organizational psychology principles, systematic integration frameworks, and performance optimization techniques to design onboarding programs that transform new hires into productive, engaged team members efficiently and effectively.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise onboarding process design system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR ONBOARDING PROCESS DESIGN STRATEGY AS:
 **Success Objectives**: Full productivity within 60 days, team integration within 30 days, retention optimization
 
 **Onboarding Design Challenges**:
+
 - **Remote Integration**: Building team connections and cultural understanding in distributed environment
 - **Technical Complexity**: Complex codebase and architecture requiring systematic knowledge transfer
 - **Rapid Growth Context**: Scaling organization with evolving processes and cultural development
@@ -94,6 +98,7 @@ DELIVER YOUR ONBOARDING PROCESS DESIGN STRATEGY AS:
 - **Competitive Talent Market**: Retention focus essential due to high demand for senior engineering talent
 
 **Onboarding Success Criteria**:
+
 - Technical productivity achieving 80% of expected output within 60 days
 - Team integration with positive peer feedback and collaborative relationship development
 - Cultural alignment with company values and demonstrated engagement with organizational mission
@@ -106,6 +111,7 @@ DELIVER YOUR ONBOARDING PROCESS DESIGN STRATEGY AS:
 Design comprehensive remote-first onboarding experience using progressive socialization methodology and social learning theory to achieve rapid technical productivity while building strong team relationships and cultural alignment within distributed startup environment.
 
 **Employee Integration Approach**:
+
 - **Relationship-Centric Design**: Peer mentorship and team integration prioritized from day one
 - **Progressive Complexity**: Systematic skill building from foundation to advanced technical contribution
 - **Cultural Immersion**: Values-based integration with mission alignment and startup culture engagement
@@ -113,6 +119,7 @@ Design comprehensive remote-first onboarding experience using progressive social
 - **Continuous Feedback**: Regular assessment and adjustment to ensure success and address challenges quickly
 
 **Strategic Onboarding Principles**:
+
 1. **Human Connection First**: Relationship building prioritized over administrative tasks and systems training
 2. **Value-Driven Integration**: Mission and values understanding driving all learning and development activities
 3. **Technical Excellence**: Systematic technical skill development with mentorship and hands-on practice
@@ -120,6 +127,7 @@ Design comprehensive remote-first onboarding experience using progressive social
 5. **Long-Term Success**: Retention and career development integrated into onboarding experience design
 
 **Expected Onboarding Outcomes**:
+
 - 95% technical productivity achievement within 90-day timeline
 - Strong team integration with peer collaboration and positive working relationships
 - Cultural alignment demonstrated through values-based decision making and startup engagement
@@ -133,6 +141,7 @@ Design comprehensive remote-first onboarding experience using progressive social
 **Pre-Arrival Communication Framework**:
 
 **Week -2: Welcome Package and Initial Contact**:
+
 ```
 Personalized Welcome Communication:
 
@@ -164,6 +173,7 @@ Detailed outline including:
 ```
 
 **Technology and Workspace Preparation**:
+
 ```
 Equipment and Access Preparation Checklist:
 
@@ -192,6 +202,7 @@ Pre-Reading Materials:
 **Team Integration Preparation Strategy**:
 
 **Mentor and Buddy Assignment**:
+
 ```
 Dual Support System Design:
 
@@ -201,7 +212,7 @@ Technical Mentor Assignment:
 • Meeting Schedule: Daily check-ins week 1, 3x/week weeks 2-4, weekly ongoing
 • Objectives: Technical competency, codebase familiarity, best practices integration
 
-Cultural Buddy Assignment:  
+Cultural Buddy Assignment:
 • Mid-level Engineer [Name] - 2+ years company experience
 • Role: Cultural integration, team dynamics, informal support and questions
 • Meeting Schedule: Daily coffee chats week 1, weekly social check-ins ongoing
@@ -215,6 +226,7 @@ Support Relationship Training:
 ```
 
 **Team Member Introduction and Context**:
+
 ```
 Team Profile Development:
 
@@ -247,6 +259,7 @@ Team Introduction Video Series:
 **Comprehensive Cultural Onboarding Framework**:
 
 **Day 1: Welcome and Values Introduction**:
+
 ```
 Morning (9 AM - 12 PM): Executive and Culture Immersion
 
@@ -290,6 +303,7 @@ Mentor and Buddy Introduction (30 minutes):
 ```
 
 **Week 1: Foundation Knowledge and Relationship Development**:
+
 ```
 Daily Structure and Learning Integration:
 
@@ -331,6 +345,7 @@ Friday: Reflection and Planning
 **Technical Onboarding Curriculum (Weeks 1-4)**:
 
 **Week 1: Foundation and Environment Setup**:
+
 ```
 Day 1-2: Development Environment and Tooling
 Learning Objectives:
@@ -373,6 +388,7 @@ Practical Application:
 ```
 
 **Week 2-3: Hands-On Development and Contribution**:
+
 ```
 Week 2: First Development Contributions
 
@@ -404,6 +420,7 @@ Cross-Team Collaboration:
 ```
 
 **Week 4: Advanced Integration and Specialization**:
+
 ```
 Independent Project Assignment:
 • Self-contained feature or improvement project
@@ -427,6 +444,7 @@ Technical Leadership Development:
 **30-60-90 Day Milestone Assessment**:
 
 **30-Day Checkpoint Assessment**:
+
 ```
 Technical Competency Evaluation:
 
@@ -457,6 +475,7 @@ Manager Assessment Interview:
 ```
 
 **60-Day Performance Review**:
+
 ```
 Technical Productivity Assessment:
 
@@ -486,6 +505,7 @@ Performance Improvement Planning:
 ```
 
 **90-Day Comprehensive Success Evaluation**:
+
 ```
 Full Integration and Performance Assessment:
 
@@ -519,6 +539,7 @@ Success Celebration and Future Planning:
 **Long-Term Success and Engagement Strategy**:
 
 **Career Development Integration**:
+
 ```
 Professional Growth Planning:
 
@@ -542,6 +563,7 @@ Innovation and Impact Opportunities:
 ```
 
 **Organizational Connection and Purpose Alignment**:
+
 ```
 Mission and Impact Integration:
 
@@ -565,6 +587,7 @@ Community and Industry Engagement:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive pre-boarding preparation including technology setup and team introduction
 2. Design cultural immersion experience with values integration and mission alignment
 3. Create progressive technical learning curriculum with hands-on application and mentorship
@@ -575,8 +598,11 @@ Community and Industry Engagement:
 8. Design scalable onboarding framework accommodating organizational growth and evolution
 
 ## Examples
+
 ### Example 1: Executive Leadership Onboarding
-**Input**: 
+
+**Input**:
+
 ```
 {{organization_type}}: Large enterprise with complex stakeholder environment
 {{role_level}}: Executive leadership position with strategic responsibilities
@@ -588,7 +614,9 @@ Community and Industry Engagement:
 **Output**: [Executive onboarding with stakeholder integration, strategic context development, leadership presence building, and organizational impact measurement]
 
 ### Example 2: Remote Customer Service Team Integration
+
 **Input**:
+
 ```
 {{organization_type}}: Medium-sized service company with distributed customer service team
 {{work_environment}}: Fully remote with flexible scheduling and global customer base
@@ -600,11 +628,13 @@ Community and Industry Engagement:
 **Output**: [Remote customer service onboarding with product knowledge development, customer interaction training, team collaboration systems, and performance support integration]
 
 ## Related Prompts
+
 - [Learning Plan Creation Expert](/prompts/learning-development/learning-plan-creation.md)
 - [Team Collaboration Specialist](/prompts/communication/team-collaboration.md)
 - [Training Material Development Expert](/prompts/learning-development/training-material-development.md)
 
 ## Research Notes
+
 - Based on organizational psychology research and employee socialization theory
 - Integrates progressive learning principles with relationship-building and cultural integration
 - Emphasizes remote work considerations and distributed team collaboration

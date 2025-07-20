@@ -1,6 +1,7 @@
 # Knowledge Gap Analysis Expert and Learning Needs Assessment Specialist
 
 ## Metadata
+
 - **Category**: Learning & Development
 - **Tags**: knowledge gap analysis, learning needs assessment, skill analysis, competency mapping, development planning
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert knowledge gap analysis methodology with learning needs assessment specialization to systematically identify learning deficiencies and development opportunities across individuals, teams, and organizations. It employs proven analysis frameworks, assessment methodologies, and systematic evaluation to create comprehensive understanding of knowledge gaps with prioritized development recommendations and strategic learning plans.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise knowledge gap analysis system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR KNOWLEDGE GAP ANALYSIS STRATEGY AS:
 **Stakeholder Impact**: Development teams, technical leadership, product management, executive sponsors
 
 **Gap Analysis Challenges**:
+
 - **Rapidly Evolving Technology**: Cloud-native technologies changing quickly requiring continuous assessment updates
 - **Diverse Skill Levels**: Team members with varying experience from junior to senior requiring individualized analysis
 - **Legacy System Constraints**: Current technology stack limiting learning application and practice opportunities
@@ -94,6 +98,7 @@ DELIVER YOUR KNOWLEDGE GAP ANALYSIS STRATEGY AS:
 - **Cultural Resistance**: Some team members resistant to change requiring motivational and engagement strategies
 
 **Analysis Success Criteria**:
+
 - Comprehensive capability assessment with 95% team participation and engagement
 - Clear development roadmap with specific learning objectives and measurable outcomes
 - Strategic learning plan aligned with business transformation timeline and requirements
@@ -106,6 +111,7 @@ DELIVER YOUR KNOWLEDGE GAP ANALYSIS STRATEGY AS:
 Deploy systematic multi-dimensional competency assessment using evidence-based analysis methodology to identify cloud-native development capability gaps and create comprehensive learning strategy enabling successful digital transformation within business timeline constraints.
 
 **Learning Needs Assessment Approach**:
+
 - **Multi-Source Data Integration**: Self-assessment, peer evaluation, technical assessment, and performance data analysis
 - **Competency-Based Mapping**: Current vs. future state analysis with specific skill requirements and proficiency levels
 - **Strategic Alignment**: Development planning aligned with organizational transformation objectives and timeline
@@ -113,6 +119,7 @@ Deploy systematic multi-dimensional competency assessment using evidence-based a
 - **Systematic Prioritization**: Gap prioritization based on business impact, transformation timeline, and individual readiness
 
 **Strategic Analysis Principles**:
+
 1. **Evidence-Based Assessment**: Data-driven analysis using multiple validation sources and objective measurement
 2. **Strategic Business Alignment**: Gap analysis directly connected to organizational objectives and transformation success
 3. **Individual Development Focus**: Personalized analysis recognizing diverse backgrounds and learning needs
@@ -120,6 +127,7 @@ Deploy systematic multi-dimensional competency assessment using evidence-based a
 5. **Continuous Refinement**: Ongoing assessment and adjustment based on progress and changing requirements
 
 **Expected Analysis Outcomes**:
+
 - Detailed competency gap map with specific skill deficiencies and development priorities
 - Strategic learning plan with timeline, resources, and success metrics for transformation readiness
 - Individual development plans with personalized learning paths and support requirements
@@ -133,6 +141,7 @@ Deploy systematic multi-dimensional competency assessment using evidence-based a
 **Technical Competency Assessment Framework:**
 
 **Cloud-Native Development Skills Inventory**:
+
 ```
 Container Technologies (Current Proficiency Assessment):
 
@@ -166,6 +175,7 @@ Container Security:
 ```
 
 **Cloud Platform Competency Mapping**:
+
 ```
 AWS Services Proficiency:
 
@@ -173,7 +183,7 @@ Compute Services (EC2, Lambda, ECS):
 • Current Team Average: 2.3/5.0 (Below Intermediate)
 • Distribution:
   - Novice (1.0-2.0): 25 team members
-  - Developing (2.1-3.0): 15 team members  
+  - Developing (2.1-3.0): 15 team members
   - Proficient (3.1-4.0): 5 team members
   - Advanced (4.1-5.0): 0 team members
 
@@ -194,6 +204,7 @@ Monitoring and DevOps (CloudWatch, X-Ray, CodePipeline):
 ```
 
 **Development Methodology and Practices Assessment**:
+
 ```
 DevOps and Agile Practices:
 
@@ -221,6 +232,7 @@ Site Reliability Engineering:
 **Current Performance Metrics and Gaps**:
 
 **Development Velocity and Quality Indicators**:
+
 ```
 Baseline Performance Metrics (6-month average):
 
@@ -250,6 +262,7 @@ Mean Time to Recovery:
 ```
 
 **Team Collaboration and Knowledge Sharing Assessment**:
+
 ```
 Knowledge Distribution Analysis:
 
@@ -279,6 +292,7 @@ Collaboration Tool Proficiency:
 **Cloud-Native Development Target Competencies**:
 
 **Technical Proficiency Targets (18-month timeline)**:
+
 ```
 Container and Orchestration Mastery:
 
@@ -302,6 +316,7 @@ Container Security Implementation:
 ```
 
 **Cloud Platform Expertise Requirements**:
+
 ```
 AWS Services Competency Targets:
 
@@ -325,6 +340,7 @@ Infrastructure and Security:
 ```
 
 **Development Process and Culture Transformation**:
+
 ```
 DevOps Maturity Targets:
 
@@ -353,6 +369,7 @@ Knowledge Sharing and Collaboration:
 **Organizational Transformation Requirements**:
 
 **Business Objective Alignment**:
+
 ```
 Digital Transformation Success Criteria:
 
@@ -376,6 +393,7 @@ Innovation Capability:
 ```
 
 **Competitive Advantage Requirements**:
+
 ```
 Market Leadership Capabilities:
 
@@ -405,6 +423,7 @@ Talent and Culture:
 **Comprehensive Gap Analysis Framework**:
 
 **Technical Skills Gap Matrix**:
+
 ```
 Priority 1 - Critical Business Impact Gaps:
 
@@ -434,6 +453,7 @@ Infrastructure as Code:
 ```
 
 **Organizational Capability Gap Analysis**:
+
 ```
 Priority 2 - Process and Culture Gaps:
 
@@ -467,6 +487,7 @@ Cross-Functional Collaboration:
 **Systematic Barrier Assessment**:
 
 **Knowledge and Skill Barriers**:
+
 ```
 Technical Knowledge Gaps:
 
@@ -491,6 +512,7 @@ Resolution Strategy:
 ```
 
 **Organizational and Process Barriers**:
+
 ```
 Cultural and Process Impediments:
 
@@ -515,6 +537,7 @@ Resolution Strategy:
 ```
 
 **Resource and Infrastructure Barriers**:
+
 ```
 Learning and Development Constraints:
 
@@ -545,6 +568,7 @@ Resolution Strategy:
 **Strategic Development Framework**:
 
 **Phase 1: Foundation Building (Months 1-6)**
+
 ```
 Critical Skills Development:
 
@@ -600,6 +624,7 @@ Success Metrics:
 ```
 
 **Phase 2: Advanced Implementation (Months 7-12)**
+
 ```
 Advanced Capabilities Development:
 
@@ -626,6 +651,7 @@ Learning Objectives:
 ```
 
 **Phase 3: Mastery and Innovation (Months 13-18)**
+
 ```
 Leadership and Innovation Development:
 
@@ -647,6 +673,7 @@ Organizational Transformation Leadership:
 **Comprehensive Resource Strategy**:
 
 **Learning Resource Allocation**:
+
 ```
 Budget Allocation ($450,000 total over 18 months):
 
@@ -676,17 +703,18 @@ Time Allocation (2,025 total learning hours per person):
 ```
 
 **Progress Monitoring and Success Measurement**:
+
 ```python
 class KnowledgeGapTracker:
     def __init__(self, team_size=45):
         self.team_size = team_size
         self.competency_targets = self.load_targets()
         self.progress_metrics = {}
-        
+
     def track_monthly_progress(self, month, assessments):
         """Track team-wide competency development"""
         progress = {}
-        
+
         for competency, target in self.competency_targets.items():
             current_avg = np.mean([a[competency] for a in assessments])
             progress[competency] = {
@@ -696,18 +724,18 @@ class KnowledgeGapTracker:
                 'months_remaining': 18 - month,
                 'on_track': self.assess_progress_pace(competency, current_avg, month)
             }
-            
+
         return self.generate_progress_report(progress)
-    
+
     def assess_progress_pace(self, competency, current_level, month):
         """Determine if progress is on track for target achievement"""
         expected_progress = self.calculate_expected_progress(competency, month)
         return current_level >= expected_progress
-    
+
     def generate_development_recommendations(self, individual_scores):
         """Create personalized development recommendations"""
         recommendations = []
-        
+
         for person_id, scores in individual_scores.items():
             priority_gaps = self.identify_priority_gaps(scores)
             learning_plan = self.create_learning_plan(priority_gaps)
@@ -717,11 +745,12 @@ class KnowledgeGapTracker:
                 'learning_plan': learning_plan,
                 'estimated_timeline': self.estimate_development_time(priority_gaps)
             })
-            
+
         return recommendations
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive current state assessment using multiple data sources and validation methods
 2. Define clear desired state requirements aligned with organizational objectives and strategic goals
 3. Conduct systematic gap analysis with impact assessment and priority ranking
@@ -732,8 +761,11 @@ class KnowledgeGapTracker:
 8. Establish success measurement and validation framework for outcome achievement
 
 ## Examples
+
 ### Example 1: Marketing Team Digital Marketing Capabilities
-**Input**: 
+
+**Input**:
+
 ```
 {{analysis_scope}}: Marketing department transitioning to data-driven digital marketing
 {{assessment_purpose}}: Performance improvement with customer acquisition optimization
@@ -745,7 +777,9 @@ class KnowledgeGapTracker:
 **Output**: [Digital marketing gap analysis with analytics competency assessment, automation skills development, customer data capabilities, and performance improvement planning]
 
 ### Example 2: Healthcare Team Clinical Technology Adoption
+
 **Input**:
+
 ```
 {{analysis_scope}}: Clinical team adopting electronic health records and telemedicine
 {{assessment_purpose}}: Strategic planning for technology integration and patient care improvement
@@ -757,11 +791,13 @@ class KnowledgeGapTracker:
 **Output**: [Healthcare technology gap analysis with clinical workflow assessment, technology adoption planning, patient care integration, and quality improvement measurement]
 
 ## Related Prompts
+
 - [Competency Assessment Expert](/prompts/learning-development/competency-assessment.md)
 - [Learning Plan Creation Expert](/prompts/learning-development/learning-plan-creation.md)
 - [Skill Acquisition Expert](/prompts/learning-development/skill-acquisition.md)
 
 ## Research Notes
+
 - Based on systematic gap analysis methodology and organizational learning research
 - Integrates competency-based assessment with strategic business alignment
 - Emphasizes evidence-based analysis with multiple validation sources and objective measurement

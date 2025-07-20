@@ -4,23 +4,23 @@
 
 To initiate a structured, verifiable, and domain-specific learning track for an unfamiliar technology, the following parameters must be clearly articulated:
 
-* **Technology Name**: Specify the tool, library, language, or platform to be explored.
-* **Operational Domain**: Define the scope of relevance (e.g., distributed systems telemetry, infrastructure as code, cryptographic key management, event-driven architecture).
-* **Baseline Proficiency**: Self-assess current technical fluency with related systems (e.g., novice, competent, expert).
-* **Target Learning Outcomes**: Articulate clear objectives (e.g., deployment of a reference implementation, architectural pattern evaluation, API surface area mastery).
-* **Temporal Scope**: Specify the available duration or urgency of the learning initiative (e.g., accelerated 5-day immersion, 4-week evaluation cycle).
-* **Integration Landscape**: List known systems or components this technology must interface with (e.g., GitHub Actions, AWS IAM, Kubernetes, Postgres).
-* **Constraints and Priorities**: Declare technical constraints, learning modality preferences, or compliance considerations (e.g., open source only, Python-based SDKs, CLI-first access).
+- **Technology Name**: Specify the tool, library, language, or platform to be explored.
+- **Operational Domain**: Define the scope of relevance (e.g., distributed systems telemetry, infrastructure as code, cryptographic key management, event-driven architecture).
+- **Baseline Proficiency**: Self-assess current technical fluency with related systems (e.g., novice, competent, expert).
+- **Target Learning Outcomes**: Articulate clear objectives (e.g., deployment of a reference implementation, architectural pattern evaluation, API surface area mastery).
+- **Temporal Scope**: Specify the available duration or urgency of the learning initiative (e.g., accelerated 5-day immersion, 4-week evaluation cycle).
+- **Integration Landscape**: List known systems or components this technology must interface with (e.g., GitHub Actions, AWS IAM, Kubernetes, Postgres).
+- **Constraints and Priorities**: Declare technical constraints, learning modality preferences, or compliance considerations (e.g., open source only, Python-based SDKs, CLI-first access).
 
 ---
 
 ## Pedagogical Standards and Structural Expectations
 
-* **Empirical Orientation (Temperature 0)**: All instructional content must be objective, fact-based, and directly sourced from authoritative documentation.
-* **Conceptual Progression**: Curriculum design must advance from fundamentals through implementation and evaluation.
-* **Applied Context Alignment**: All exercises, examples, and guidance must map to the learner’s specified integration and operational context.
-* **Primary Source Fidelity**: Instructional assertions must be cross-referenced to standards, canonical documentation, or community-vetted artifacts.
-* **Toolchain Comprehension**: Learners must be introduced to associated development interfaces including SDKs, CLIs, configuration layers, and testing frameworks.
+- **Empirical Orientation (Temperature 0)**: All instructional content must be objective, fact-based, and directly sourced from authoritative documentation.
+- **Conceptual Progression**: Curriculum design must advance from fundamentals through implementation and evaluation.
+- **Applied Context Alignment**: All exercises, examples, and guidance must map to the learner’s specified integration and operational context.
+- **Primary Source Fidelity**: Instructional assertions must be cross-referenced to standards, canonical documentation, or community-vetted artifacts.
+- **Toolchain Comprehension**: Learners must be introduced to associated development interfaces including SDKs, CLIs, configuration layers, and testing frameworks.
 
 ---
 
@@ -57,26 +57,26 @@ Response Constraints:
 
 ## Instructional Deliverables
 
-* `learning-plan.md`: Time-sequenced curriculum detailing milestones, checkpoints, and reference artifacts
-* `reference-index.md`: Curated bibliography of official documentation, ecosystem tools, and verified tutorials
-* `integration-checklist.md`: Platform-specific guide for validating operational readiness and integration viability
+- `learning-plan.md`: Time-sequenced curriculum detailing milestones, checkpoints, and reference artifacts
+- `reference-index.md`: Curated bibliography of official documentation, ecosystem tools, and verified tutorials
+- `integration-checklist.md`: Platform-specific guide for validating operational readiness and integration viability
 
 ---
 
 ## Evaluation and Completion Criteria
 
-* ✅ Conceptual overview is accurate, succinct, and source-anchored
-* ✅ Learning plan is tailored to skill level and operational objective
-* ✅ All references are verifiable and contextually relevant
-* ✅ Instructional outputs are suitable for internal documentation or onboarding assets
-* ✅ Learner can demonstrate acquired competence through reproducible outcomes
+- ✅ Conceptual overview is accurate, succinct, and source-anchored
+- ✅ Learning plan is tailored to skill level and operational objective
+- ✅ All references are verifiable and contextually relevant
+- ✅ Instructional outputs are suitable for internal documentation or onboarding assets
+- ✅ Learner can demonstrate acquired competence through reproducible outcomes
 
 ---
 
 ## Quality Assurance Standards
 
-* **Instructional Neutrality**: Content must remain free of vendor preference, opinion, or extrapolation
-* **Progressive Complexity**: Learning materials must scale in sophistication and depth
-* **System Awareness**: Instruction must reflect operational and architectural integration constraints
-* **Citeability**: All guidance must include traceable source references
-* **ADR Compatibility**: Learning artifacts may optionally inform architectural evaluation processes or decision support documentation
+- **Instructional Neutrality**: Content must remain free of vendor preference, opinion, or extrapolation
+- **Progressive Complexity**: Learning materials must scale in sophistication and depth
+- **System Awareness**: Instruction must reflect operational and architectural integration constraints
+- **Citeability**: All guidance must include traceable source references
+- **ADR Compatibility**: Learning artifacts may optionally inform architectural evaluation processes or decision support documentation

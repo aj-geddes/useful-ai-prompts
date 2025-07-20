@@ -1,6 +1,7 @@
 # Option Evaluation Expert and Decision Analysis Specialist
 
 ## Metadata
+
 - **Category**: Decision-Making
 - **Tags**: option evaluation, decision analysis, comparative assessment, choice optimization, decision framework
 - **Created**: 2025-07-20
@@ -10,9 +11,11 @@
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
+
 This prompt combines expert option evaluation methodology with decision analysis specialization to create comprehensive decision-making frameworks that systematically assess alternatives and optimize choice selection. It employs proven decision science principles, multi-criteria analysis, and systematic evaluation techniques to ensure thorough option assessment and optimal decision outcomes.
 
 ## Prompt Template
+
 ```
 You are operating as a dual-expertise option evaluation system combining:
 
@@ -87,6 +90,7 @@ DELIVER YOUR OPTION EVALUATION STRATEGY AS:
 **Investment Scale**: $2-5M total investment including software, implementation, and training costs
 
 **Evaluation Challenges**:
+
 - **Complex Requirements**: Multiple business functions with diverse and sometimes conflicting needs
 - **Vendor Landscape**: Numerous options ranging from established platforms to specialized solutions
 - **Change Management**: Significant organizational impact requiring careful stakeholder management
@@ -94,6 +98,7 @@ DELIVER YOUR OPTION EVALUATION STRATEGY AS:
 - **Long-term Commitment**: 5-10 year platform commitment with substantial switching costs
 
 **Evaluation Success Criteria**:
+
 - Comprehensive requirements coverage with >90% functional fit achievement
 - Stakeholder alignment with >80% satisfaction across all major user groups
 - Financial optimization with ROI achievement within 36 months
@@ -106,6 +111,7 @@ DELIVER YOUR OPTION EVALUATION STRATEGY AS:
 Deploy systematic multi-criteria decision analysis using decision science principles and stakeholder-centric evaluation methodology to assess ERP platform options, ensuring optimal selection that balances functional requirements, financial constraints, and strategic objectives while minimizing implementation risk.
 
 **Decision Analysis Approach**:
+
 - **Stakeholder-Driven Requirements**: Comprehensive needs assessment with weighted importance based on business impact
 - **Quantitative and Qualitative Assessment**: Financial modeling combined with user experience and strategic fit evaluation
 - **Risk-Adjusted Analysis**: Implementation risk assessment with success probability and mitigation planning
@@ -113,6 +119,7 @@ Deploy systematic multi-criteria decision analysis using decision science princi
 - **Bias Mitigation**: Structured evaluation process with independent validation and diverse perspective integration
 
 **Strategic Evaluation Principles**:
+
 1. **Requirements-First Design**: Business needs driving technology selection rather than technology driving process change
 2. **Total Cost Optimization**: Comprehensive cost analysis including hidden costs and long-term maintenance
 3. **Change Readiness Assessment**: Organizational capability alignment with implementation requirements and complexity
@@ -120,6 +127,7 @@ Deploy systematic multi-criteria decision analysis using decision science princi
 5. **Risk-Weighted Decision**: Implementation success probability factored into final recommendation and selection
 
 **Expected Evaluation Outcomes**:
+
 - Optimal platform selection with highest probability of implementation success and business value
 - Stakeholder confidence and buy-in with transparent, comprehensive evaluation process
 - Clear implementation roadmap with risk mitigation and success measurement framework
@@ -133,6 +141,7 @@ Deploy systematic multi-criteria decision analysis using decision science princi
 **Multi-Level Stakeholder Mapping**:
 
 **Executive Leadership Requirements (Strategic Level)**:
+
 ```
 CEO and Senior Leadership Team:
 • Strategic Alignment: Platform supporting company growth strategy and market positioning
@@ -157,6 +166,7 @@ CTO Technical Requirements:
 ```
 
 **Operational Management Requirements (Tactical Level)**:
+
 ```
 Operations Director:
 • Process Integration: Manufacturing process support with efficiency optimization
@@ -181,6 +191,7 @@ HR Director:
 ```
 
 **End User Requirements (Operational Level)**:
+
 ```
 Manufacturing Floor Users:
 • Ease of Use: Intuitive interface with minimal training requirement
@@ -202,6 +213,7 @@ Administrative Users:
 **Comprehensive Criteria Framework**:
 
 **Functional Requirements (40% total weight)**:
+
 ```
 Core Business Process Support (15%):
 Manufacturing Operations Management:
@@ -229,6 +241,7 @@ Human Resources Management (5%):
 ```
 
 **Technical Requirements (25% total weight)**:
+
 ```
 System Architecture and Performance (10%):
 • Technical architecture and scalability (Weight: 3%)
@@ -248,6 +261,7 @@ Integration Capabilities (7%):
 ```
 
 **Implementation and Support (20% total weight)**:
+
 ```
 Implementation Approach (12%):
 • Implementation methodology and timeline (Weight: 4%)
@@ -261,6 +275,7 @@ Vendor Support and Partnership (8%):
 ```
 
 **Financial Considerations (15% total weight)**:
+
 ```
 Total Cost of Ownership (15%):
 • Software licensing costs (Weight: 5%)
@@ -276,6 +291,7 @@ Total Cost of Ownership (15%):
 **Platform Category Analysis**:
 
 **Tier 1 Enterprise Platforms**:
+
 ```
 SAP S/4HANA Assessment:
 
@@ -305,6 +321,7 @@ Financial Analysis:
 ```
 
 **Mid-Market Specialized Solutions**:
+
 ```
 Microsoft Dynamics 365 Business Central Assessment:
 
@@ -334,6 +351,7 @@ Financial Analysis:
 ```
 
 **Industry-Specific Solutions**:
+
 ```
 Epicor ERP Assessment:
 
@@ -367,16 +385,17 @@ Financial Analysis:
 **Implementation Risk Analysis Framework**:
 
 **Technical Risk Assessment**:
+
 ```python
 class ImplementationRiskAnalyzer:
     def __init__(self, platform_option, organization_profile):
         self.platform = platform_option
         self.org_profile = organization_profile
         self.risk_calculator = RiskAssessmentEngine()
-        
+
     def assess_implementation_risk(self):
         """Comprehensive implementation risk analysis"""
-        
+
         risk_categories = {
             'technical_complexity': self.analyze_technical_risk(),
             'organizational_readiness': self.assess_change_readiness(),
@@ -384,9 +403,9 @@ class ImplementationRiskAnalyzer:
             'integration_challenges': self.analyze_integration_risk(),
             'timeline_feasibility': self.assess_schedule_risk()
         }
-        
+
         return self.calculate_composite_risk_score(risk_categories)
-    
+
     def analyze_technical_risk(self):
         """Assess technical implementation challenges"""
         technical_factors = {
@@ -396,7 +415,7 @@ class ImplementationRiskAnalyzer:
             'data_migration_complexity': self.org_profile.data_volume_complexity,
             'infrastructure_readiness': self.org_profile.technical_infrastructure_score
         }
-        
+
         risk_weights = {
             'platform_complexity': 0.25,
             'integration_requirements': 0.25,
@@ -404,9 +423,9 @@ class ImplementationRiskAnalyzer:
             'data_migration_complexity': 0.20,
             'infrastructure_readiness': 0.10
         }
-        
+
         return self.weighted_risk_calculation(technical_factors, risk_weights)
-    
+
     def assess_change_readiness(self):
         """Evaluate organizational change management capability"""
         change_factors = {
@@ -416,9 +435,9 @@ class ImplementationRiskAnalyzer:
             'training_capability': self.org_profile.learning_infrastructure,
             'cultural_adaptability': self.org_profile.change_acceptance_culture
         }
-        
+
         return self.assess_organizational_readiness(change_factors)
-    
+
     def evaluate_vendor_risk(self):
         """Analyze vendor-related implementation risks"""
         vendor_risks = {
@@ -428,11 +447,12 @@ class ImplementationRiskAnalyzer:
             'partner_ecosystem': self.platform.vendor.implementation_partner_quality,
             'product_roadmap': self.platform.vendor.innovation_investment_level
         }
-        
+
         return self.calculate_vendor_risk_profile(vendor_risks)
 ```
 
 **Financial Risk and Sensitivity Analysis**:
+
 ```
 Cost Variance and Scenario Analysis:
 
@@ -468,6 +488,7 @@ Risk Mitigation Strategies:
 **Comprehensive Scoring Framework**:
 
 **Platform Evaluation Matrix**:
+
 ```
 SAP S/4HANA Detailed Scoring:
 
@@ -517,6 +538,7 @@ SAP S/4HANA Total Score: 8.50/10.0 (85%)
 ```
 
 **Comparative Platform Analysis**:
+
 ```
 Platform Comparison Summary:
 
@@ -530,7 +552,7 @@ Platform Comparison Summary:
 
 Risk-Adjusted Scoring:
 • SAP S/4HANA: 85% × 75% success probability = 64% risk-adjusted score
-• Dynamics 365: 82% × 90% success probability = 74% risk-adjusted score  
+• Dynamics 365: 82% × 90% success probability = 74% risk-adjusted score
 • Epicor ERP: 81% × 85% success probability = 69% risk-adjusted score
 
 Recommendation Ranking:
@@ -542,6 +564,7 @@ Recommendation Ranking:
 #### Decision Tree Analysis and Scenario Planning
 
 **Strategic Decision Tree Framework**:
+
 ```
 ERP Platform Decision Tree:
 
@@ -581,6 +604,7 @@ Conservative Timeline + Standard Configuration:
 **Comprehensive Recommendation Framework**:
 
 **Primary Recommendation: Microsoft Dynamics 365 Business Central**:
+
 ```
 Strategic Rationale:
 • Optimal balance of functionality, cost, and implementation risk
@@ -614,6 +638,7 @@ Expected Outcomes:
 ```
 
 **Alternative Recommendations**:
+
 ```
 Secondary Recommendation: Epicor ERP (if manufacturing complexity increases):
 • Consider if custom manufacturing processes require industry-specific functionality
@@ -631,6 +656,7 @@ Conditional Recommendation: SAP S/4HANA (if budget and complexity tolerance incr
 **Comprehensive Implementation Framework**:
 
 **Phase 1: Foundation and Preparation (Months 1-3)**:
+
 ```
 Project Initiation and Team Formation:
 • Executive steering committee establishment with change leadership
@@ -652,6 +678,7 @@ Change Management Foundation:
 ```
 
 **Phase 2: Core Implementation (Months 4-12)**:
+
 ```
 System Development and Configuration:
 • Core module configuration with manufacturing and financial priority
@@ -673,6 +700,7 @@ Data Migration and Integration:
 ```
 
 **Phase 3: Full Deployment and Optimization (Months 13-18)**:
+
 ```
 Organization-Wide Rollout:
 • Phased deployment with business unit prioritization and support
@@ -688,6 +716,7 @@ Post-Implementation Optimization:
 ```
 
 ## Usage Instructions
+
 1. Begin with comprehensive decision framing including stakeholder analysis and criteria development
 2. Conduct systematic option identification with thorough research and feasibility assessment
 3. Apply multi-criteria evaluation with quantitative scoring and qualitative assessment
@@ -698,8 +727,11 @@ Post-Implementation Optimization:
 8. Establish monitoring framework with continuous improvement and learning capture
 
 ## Examples
+
 ### Example 1: Career Path Decision Evaluation
-**Input**: 
+
+**Input**:
+
 ```
 {{decision_type}}: Personal career decision with multiple job offers and advancement options
 {{stakeholder_impact}}: Individual and family with long-term life impact and financial implications
@@ -711,7 +743,9 @@ Post-Implementation Optimization:
 **Output**: [Career decision evaluation with weighted criteria analysis, risk assessment, and scenario planning for optimal choice selection]
 
 ### Example 2: Technology Investment Decision
+
 **Input**:
+
 ```
 {{decision_type}}: Strategic technology investment for competitive advantage and efficiency
 {{resource_implications}}: Significant investment with multi-year commitment and organizational impact
@@ -723,11 +757,13 @@ Post-Implementation Optimization:
 **Output**: [Technology investment evaluation with comprehensive vendor analysis, financial modeling, and implementation risk assessment]
 
 ## Related Prompts
+
 - [Risk-Reward Assessment Expert](/prompts/decision-making/risk-reward-assessment.md)
 - [Prioritization Frameworks Expert](/prompts/decision-making/prioritization-frameworks.md)
 - [Strategic Direction Setting Expert](/prompts/decision-making/strategic-direction-setting.md)
 
 ## Research Notes
+
 - Based on decision science research and multi-criteria decision analysis theory
 - Integrates behavioral economics with systematic evaluation methodology
 - Emphasizes risk assessment and uncertainty management for complex decisions

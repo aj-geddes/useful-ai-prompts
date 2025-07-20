@@ -1,6 +1,7 @@
 # Job Categories for AI Prompt Research
 
 ## Technology & Software Development
+
 - Software Engineer
 - Frontend Developer
 - Backend Developer
@@ -23,6 +24,7 @@
 - Network Engineer
 
 ## Business & Management
+
 - Project Manager
 - Product Manager
 - Business Analyst
@@ -45,6 +47,7 @@
 - Strategic Planning Director
 
 ## Creative & Design
+
 - Graphic Designer
 - Content Creator
 - Copywriter
@@ -67,6 +70,7 @@
 - Game Designer
 
 ## Healthcare & Medicine
+
 - Physician
 - Nurse
 - Surgeon
@@ -89,6 +93,7 @@
 - Telemedicine Coordinator
 
 ## Legal & Compliance
+
 - Lawyer
 - Legal Researcher
 - Paralegal
@@ -106,6 +111,7 @@
 - Corporate Counsel
 
 ## Education & Research
+
 - Teacher (K-12)
 - University Professor
 - Education Administrator
@@ -123,6 +129,7 @@
 - Laboratory Manager
 
 ## Finance & Accounting
+
 - Accountant
 - Auditor
 - Financial Planner
@@ -140,6 +147,7 @@
 - Payroll Manager
 
 ## Marketing & Communications
+
 - Digital Marketing Specialist
 - Content Marketer
 - SEO Specialist
@@ -157,6 +165,7 @@
 - Conversion Rate Optimizer
 
 ## Science & Engineering
+
 - Civil Engineer
 - Mechanical Engineer
 - Electrical Engineer
@@ -177,6 +186,7 @@
 - Food Scientist
 
 ## Media & Entertainment
+
 - Journalist
 - News Reporter
 - Editor
@@ -197,6 +207,7 @@
 - Script Consultant
 
 ## Public Service & Government
+
 - Policy Analyst
 - Urban Planner
 - Diplomat
@@ -214,6 +225,7 @@
 - Emergency Management Coordinator
 
 ## Specialized Fields
+
 - Data Privacy Officer
 - Sustainability Consultant
 - Renewable Energy Specialist
@@ -236,6 +248,7 @@
 - Neuromarketing Researcher
 
 ## Cross-Functional Roles
+
 - Innovation Manager
 - Digital Transformation Lead
 - Cross-Functional Team Facilitator

@@ -1,0 +1,26 @@
+{
+  "name": "useful-ai-prompts",
+  "version": "1.0.0",
+  "description": "## For AI Assistants and Agents",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aj-geddes/useful-ai-prompts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aj-geddes/useful-ai-prompts/issues"
+  },
+  "homepage": "https://github.com/aj-geddes/useful-ai-prompts#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

@@ -24,6 +24,7 @@ The following instructions guide the continuous research and development of usef
 For each prompt development cycle, execute this research loop:
 
 1. **Domain & Workflow Analysis**
+
    ```
    Research current best practices for $TARGET_DOMAIN in $TARGET_WORKFLOW
    Identify key challenges and pain points
@@ -32,6 +33,7 @@ For each prompt development cycle, execute this research loop:
    ```
 
 2. **Persona & Thinking Layer Integration**
+
    ```
    Apply $PRIMARY_PERSONA perspective to workflow challenges
    Layer with $THINKING_APPROACH methodology
@@ -40,6 +42,7 @@ For each prompt development cycle, execute this research loop:
    ```
 
 3. **Prompt Development**
+
    ```
    Draft prompt with:
     - Clear context setting
@@ -52,6 +55,7 @@ For each prompt development cycle, execute this research loop:
    ```
 
 4. **Testing & Refinement**
+
    ```
    Test prompt against sample scenarios
    Identify edge cases and limitations
@@ -61,15 +65,16 @@ For each prompt development cycle, execute this research loop:
    ```
 
 5. **Documentation & Commit**
+
    ```
    Create prompt file following repository structure:
      prompts/$CATEGORY/$SUBCATEGORY/$PROMPT_NAME.md
-   
+
    Complete all metadata fields
    Add comprehensive usage instructions
    Include concrete examples
    Document research findings
-   
+
    Commit with message:
    "Add $PROMPT_NAME: $BRIEF_DESCRIPTION"
    ```
@@ -143,15 +148,18 @@ Every prompt must meet these standards:
 For each new prompt:
 
 1. Create file following naming convention:
+
    ```
    prompts/<domain>/<workflow>/<approach>-<persona>-<task>.md
    ```
 
 2. Complete prompt template with all required sections:
+
    ```markdown
    # [Prompt Title]
-   
+
    ## Metadata
+
    - **Category**: [Primary Category]
    - **Tags**: [comma, separated, relevant, tags]
    - **Created**: [YYYY-MM-DD]
@@ -159,26 +167,29 @@ For each new prompt:
    - **Personas**: [Primary persona, Secondary persona]
    - **Use Cases**: [comma separated use cases]
    - **Compatible Models**: [list of compatible models]
-   
+
    ## Description
+
    [Clear explanation of the prompt's purpose and context]
-   
+
    ## Prompt Template
    ```
+
    [Actual prompt text with {{placeholders}} for customization]
+
    ```
-   
+
    ## Usage Instructions
    [Step-by-step guidance on effective use]
-   
+
    ## Examples
    ### Example 1: [Brief description]
    **Input**: [Sample input]
    **Output**: [Example of expected output]
-   
+
    ## Related Prompts
    [Links to related prompts]
-   
+
    ## Research Notes
    [Insights from testing and development]
    ```
@@ -190,6 +201,7 @@ For each new prompt:
 ## Weekly Progress Report
 
 Generate a weekly summary including:
+
 - Number of new prompts created
 - Domains and workflows covered
 - Emerging patterns and insights

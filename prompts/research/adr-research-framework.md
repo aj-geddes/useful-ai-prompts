@@ -10,22 +10,22 @@ This framework defines a structured, evidence-oriented methodology for conductin
 
 To begin a rigorous research process, provide complete and unambiguous input for the following fields:
 
-* **Architectural Decision Topic**: Clearly define the decision or tradeoff being evaluated.
-* **Target Domain and Scope**: Specify the domain in which the decision applies (e.g., identity federation, service mesh routing, observability pipeline).
-* **Evaluation Criteria**: Enumerate the dimensions on which alternatives will be assessed (e.g., operational cost, latency guarantees, security controls, extensibility).
-* **Candidate Technologies**: Provide a comprehensive list of tools, frameworks, protocols, or platforms under consideration.
-* **Governance Requirements**: Include regulatory, policy, or internal compliance mandates relevant to the decision (e.g., FedRAMP, SOC 2, internal architecture council standards).
-* **Lifecycle Expectation**: Define the expected duration of the decision's validity and its operational horizon (e.g., stopgap vs. strategic platform commitment).
+- **Architectural Decision Topic**: Clearly define the decision or tradeoff being evaluated.
+- **Target Domain and Scope**: Specify the domain in which the decision applies (e.g., identity federation, service mesh routing, observability pipeline).
+- **Evaluation Criteria**: Enumerate the dimensions on which alternatives will be assessed (e.g., operational cost, latency guarantees, security controls, extensibility).
+- **Candidate Technologies**: Provide a comprehensive list of tools, frameworks, protocols, or platforms under consideration.
+- **Governance Requirements**: Include regulatory, policy, or internal compliance mandates relevant to the decision (e.g., FedRAMP, SOC 2, internal architecture council standards).
+- **Lifecycle Expectation**: Define the expected duration of the decision's validity and its operational horizon (e.g., stopgap vs. strategic platform commitment).
 
 ---
 
 ## Research Execution Principles
 
-* **Technology Landscape Survey**: Identify all viable solutions in the problem space, including those emerging, mature, or nearing deprecation.
-* **Multi-Dimensional Tradeoff Analysis**: Evaluate each candidate against the user-defined criteria using a normalized comparison matrix.
-* **Ecosystem and Standards Maturity**: Examine each option’s alignment with open standards, interoperability guarantees, and community activity.
-* **Precedent and Institutional History**: Reference internal ADRs, industry case studies, and relevant RFCs where applicable.
-* **Reversibility and Risk Posture**: Explicitly document the lock-in risk, escape strategies, and resiliency considerations of each option.
+- **Technology Landscape Survey**: Identify all viable solutions in the problem space, including those emerging, mature, or nearing deprecation.
+- **Multi-Dimensional Tradeoff Analysis**: Evaluate each candidate against the user-defined criteria using a normalized comparison matrix.
+- **Ecosystem and Standards Maturity**: Examine each option’s alignment with open standards, interoperability guarantees, and community activity.
+- **Precedent and Institutional History**: Reference internal ADRs, industry case studies, and relevant RFCs where applicable.
+- **Reversibility and Risk Posture**: Explicitly document the lock-in risk, escape strategies, and resiliency considerations of each option.
 
 ---
 
@@ -64,26 +64,26 @@ Response Format Requirements:
 
 ## Deliverables
 
-* `research-summary.md`: Consolidated analysis of all candidate technologies with tradeoff matrix
-* `rationale-notes.md`: Structured justifications and constraints for the decision, with source-backed commentary
-* `references.md`: Annotated citations of all supporting material, including access metadata and versioning
+- `research-summary.md`: Consolidated analysis of all candidate technologies with tradeoff matrix
+- `rationale-notes.md`: Structured justifications and constraints for the decision, with source-backed commentary
+- `references.md`: Annotated citations of all supporting material, including access metadata and versioning
 
 ---
 
 ## Success Criteria
 
-* ✅ All alternatives are analyzed with equivalent rigor
-* ✅ Comparison matrix transparently reflects user-defined evaluation criteria
-* ✅ Risks, constraints, and reversibility are articulated
-* ✅ All findings are verifiable and free from editorial bias
-* ✅ Final content is ADR-ready without additional formatting or interpretation
+- ✅ All alternatives are analyzed with equivalent rigor
+- ✅ Comparison matrix transparently reflects user-defined evaluation criteria
+- ✅ Risks, constraints, and reversibility are articulated
+- ✅ All findings are verifiable and free from editorial bias
+- ✅ Final content is ADR-ready without additional formatting or interpretation
 
 ---
 
 ## Quality Assurance Standards
 
-* **Objectivity**: No subjective language or implicit recommendations without supporting evidence
-* **Completeness**: Each dimension of evaluation must be addressed for all candidates
-* **Verifiability**: Every assertion must be backed by documentation, empirical data, or primary-source references
-* **ADR Alignment**: Structure and language must conform to Temperature 0 ADR expectations
-* **Metadata Discipline**: All cited materials must include access method, date retrieved, and version or commit hash where relevant
+- **Objectivity**: No subjective language or implicit recommendations without supporting evidence
+- **Completeness**: Each dimension of evaluation must be addressed for all candidates
+- **Verifiability**: Every assertion must be backed by documentation, empirical data, or primary-source references
+- **ADR Alignment**: Structure and language must conform to Temperature 0 ADR expectations
+- **Metadata Discipline**: All cited materials must include access method, date retrieved, and version or commit hash where relevant
