@@ -87,8 +87,9 @@ DELIVER YOUR RESEARCH AS:
 ### MARKET LANDSCAPE ANALYSIS
 
 #### Market Definition & Sizing
+
+**Market Structure:**
 ```
-Market Structure:
 ┌─────────────────────────────────────────────┐
 │ Total Addressable Market (TAM)              │
 │ ${{X}}B | CAGR: {{Y}}% | 2024-2029        │
@@ -99,57 +100,56 @@ Market Structure:
 │ Serviceable Obtainable Market (SOM)         │
 │ ${{X}}M | 5-year capture potential         │
 └─────────────────────────────────────────────┘
-
-Market Segmentation:
-By Customer Type        By Geography         By Product
-━━━━━━━━━━━━━━━        ━━━━━━━━━━━━        ━━━━━━━━━━━
-Enterprise  45%        North America 40%    Premium   30%
-Mid-Market  30%        Europe       25%    Standard  50%
-SMB         25%        APAC         35%    Basic     20%
 ```
+
+**Market Segmentation:**
+
+| By Customer Type | % | By Geography | % | By Product | % |
+|------------------|---|--------------|---|------------|---|
+| Enterprise | 45% | North America | 40% | Premium | 30% |
+| Mid-Market | 30% | Europe | 25% | Standard | 50% |
+| SMB | 25% | APAC | 35% | Basic | 20% |
 
 #### Macro Trend Analysis
-```
-PESTLE Impact Assessment:
-┌────────────┬─────────────────────────┬──────────┬───────────┐
-│ Factor     │ Key Trend               │ Impact   │ Timeline  │
-├────────────┼─────────────────────────┼──────────┼───────────┤
-│ Political  │ {{regulation_change}}   │ High (+) │ 2025      │
-│ Economic   │ {{inflation_impact}}    │ Med (-)  │ Ongoing   │
-│ Social     │ {{behavior_shift}}      │ High (+) │ 2024-2026 │
-│ Technology │ {{AI_automation}}       │ High (+) │ Now       │
-│ Legal      │ {{compliance_needs}}    │ Med (0)  │ 2025      │
-│ Environmental│{{sustainability}}      │ Med (+)  │ Growing   │
-└────────────┴─────────────────────────┴──────────┴───────────┘
-```
+
+**PESTLE Impact Assessment:**
+
+| Factor | Key Trend | Impact | Timeline |
+|--------|-----------|--------|----------|
+| Political | {{regulation_change}} | High (+) | 2025 |
+| Economic | {{inflation_impact}} | Med (-) | Ongoing |
+| Social | {{behavior_shift}} | High (+) | 2024-2026 |
+| Technology | {{AI_automation}} | High (+) | Now |
+| Legal | {{compliance_needs}} | Med (0) | 2025 |
+| Environmental | {{sustainability}} | Med (+) | Growing |
 
 ### CONSUMER INTELLIGENCE INSIGHTS
 
 #### Target Segment Profiles
-```
-Segment 1: "Digital Natives" (35% of market)
-┌─────────────────────────────────────────────┐
-│ Demographics                                │
-│ • Age: 25-40                               │
-│ • Income: $75K-150K                        │
-│ • Urban/Suburban                           │
-│ • College-educated                         │
-├─────────────────────────────────────────────┤
-│ Psychographics                             │
-│ • Value convenience over price             │
-│ • Early technology adopters                │
-│ • Sustainability-conscious                 │
-│ • Social validation important              │
-├─────────────────────────────────────────────┤
-│ Behavioral Patterns                        │
-│ • 78% research online before purchase      │
-│ • Average 3.5 touchpoints to conversion    │
-│ • Peak activity: evenings & weekends       │
-│ • Preferred channels: Mobile, Social       │
-└─────────────────────────────────────────────┘
-```
+
+**Segment 1: "Digital Natives" (35% of market)**
+
+**Demographics:**
+- Age: 25-40
+- Income: $75K-150K
+- Urban/Suburban
+- College-educated
+
+**Psychographics:**
+- Value convenience over price
+- Early technology adopters
+- Sustainability-conscious
+- Social validation important
+
+**Behavioral Patterns:**
+- 78% research online before purchase
+- Average 3.5 touchpoints to conversion
+- Peak activity: evenings & weekends
+- Preferred channels: Mobile, Social
 
 #### Consumer Journey Mapping
+
+**Customer Journey Flow:**
 ```
 Awareness → Consideration → Purchase → Usage → Loyalty
     │            │             │         │        │
@@ -158,14 +158,14 @@ Awareness → Consideration → Purchase → Usage → Loyalty
  (32%)        + [Peer Rec]   (65%)    (87%)   (45%)
               + [Search]               
                (68%)         
-
-Pain Points by Stage:
-❌ Awareness: Information overload
-❌ Consideration: Comparison difficulty  
-❌ Purchase: Checkout friction
-❌ Usage: Onboarding complexity
-❌ Loyalty: Lack of recognition
 ```
+
+**Pain Points by Stage:**
+- ❌ **Awareness**: Information overload
+- ❌ **Consideration**: Comparison difficulty  
+- ❌ **Purchase**: Checkout friction
+- ❌ **Usage**: Onboarding complexity
+- ❌ **Loyalty**: Lack of recognition
 
 #### Unmet Needs Analysis
 ```python
@@ -198,6 +198,8 @@ unmet_needs = {
 ### COMPETITIVE INTELLIGENCE
 
 #### Competitive Landscape Map
+
+**Market Position Matrix:**
 ```
                 Market Share Leader
                        │
@@ -213,33 +215,25 @@ unmet_needs = {
                       │
     Disruptor         │    Traditional
                  Challenger
-
-Strategic Groups:
-A: Premium innovation (Target acquisition)
-B: Market leader (Defend share)
-C: Legacy player (Disruption risk)
-D: New entrant (Monitor closely)
 ```
+
+**Strategic Groups:**
+- **A**: Premium innovation (Target acquisition)
+- **B**: Market leader (Defend share)
+- **C**: Legacy player (Disruption risk)
+- **D**: New entrant (Monitor closely)
 
 #### Competitor Deep Dive
-```
-┌─────────────┬───────────┬────────────┬─────────────┬──────────┐
-│ Competitor  │ Strategy  │ Strengths  │ Weaknesses  │ Response │
-├─────────────┼───────────┼────────────┼─────────────┼──────────┤
-│ Leader Corp │ Low cost  │ • Scale    │ • Slow      │ Innovate │
-│ 35% share   │ + Volume  │ • Brand    │ • Legacy IT │ around   │
-│             │           │ • Network  │ • Poor UX   │ them     │
-├─────────────┼───────────┼────────────┼─────────────┼──────────┤
-│ InnovateCo  │ Premium   │ • Tech     │ • Price     │ Partner  │
-│ 15% share   │ + Feature │ • Talent   │ • Scale     │ or       │
-│             │           │ • Agility  │ • B2B weak  │ acquire  │
-└─────────────┴───────────┴────────────┴─────────────┴──────────┘
-```
+
+| Competitor | Strategy | Strengths | Weaknesses | Response |
+|------------|----------|-----------|------------|---------|
+| **Leader Corp** (35% share) | Low cost + Volume | • Scale<br>• Brand<br>• Network | • Slow<br>• Legacy IT<br>• Poor UX | Innovate around them |
+| **InnovateCo** (15% share) | Premium + Feature | • Tech<br>• Talent<br>• Agility | • Price<br>• Scale<br>• B2B weak | Partner or acquire |
 
 #### Competitive Positioning Analysis
+
+**Perceptual Map: Price vs. Innovation**
 ```
-Perceptual Map: Price vs. Innovation
-                    
 High Innovation ▲
                │   ◆ InnovateCo
                │     "Premium Innovation"
@@ -259,6 +253,8 @@ Low Innovation │
 ### MARKET OPPORTUNITY ASSESSMENT
 
 #### Opportunity Prioritization Matrix
+
+**Opportunity Quadrant Analysis:**
 ```
                     High Market Attractiveness
                               │
@@ -279,135 +275,127 @@ Low Innovation │
     Fill-ins                │         Question Marks
                             │
                    Low Market Attractiveness
-
-Selection Criteria:
-• Market Size: Minimum $100M opportunity
-• Growth Rate: >15% CAGR
-• Competitive Intensity: Medium or lower
-• Capability Fit: >70% existing capabilities
 ```
+
+**Selection Criteria:**
+- Market Size: Minimum $100M opportunity
+- Growth Rate: >15% CAGR
+- Competitive Intensity: Medium or lower
+- Capability Fit: >70% existing capabilities
 
 #### Go-to-Market Strategy Canvas
-```
-VALUE PROPOSITION DESIGN
-┌────────────────────────────────────────────────┐
-│ For: Digital-first professionals               │
-│ Who: Struggle with workflow integration        │
-│ Our: Seamless automation platform              │
-│ Provides: 75% time savings                     │
-│ Unlike: Point solutions requiring manual work  │
-│ We: Integrate intelligently across tools       │
-└────────────────────────────────────────────────┘
 
-Channel Strategy:           Pricing Strategy:
-├── Direct (40%)           ├── Freemium entry
-│   ├── Inside sales       │   └── 10K users/mo
-│   └── Web self-serve     ├── Pro tier: $29/mo
-├── Partner (35%)          │   └── 80% convert
-│   ├── Tech integrations  └── Enterprise: Custom
-│   └── Consultancies          └── $50K+ ACV
-└── Digital (25%)
-    ├── Content marketing
-    └── Paid acquisition
-```
+**VALUE PROPOSITION DESIGN**
+
+**For**: Digital-first professionals  
+**Who**: Struggle with workflow integration  
+**Our**: Seamless automation platform  
+**Provides**: 75% time savings  
+**Unlike**: Point solutions requiring manual work  
+**We**: Integrate intelligently across tools
+
+**Channel Strategy:**
+- **Direct (40%)**
+  - Inside sales
+  - Web self-serve
+- **Partner (35%)**
+  - Tech integrations
+  - Consultancies
+- **Digital (25%)**
+  - Content marketing
+  - Paid acquisition
+
+**Pricing Strategy:**
+- **Freemium entry**: 10K users/mo
+- **Pro tier**: $29/mo (80% convert)
+- **Enterprise**: Custom pricing ($50K+ ACV)
 
 ### STRATEGIC RECOMMENDATIONS
 
 #### Market Entry Strategy
-```
-Phase 1: Beachhead (Months 1-6)
-┌─────────────────────────────────────┐
-│ • Target: Digital Natives segment   │
-│ • Product: MVP with 3 core features │
-│ • Price: Freemium model            │
-│ • Channel: Direct digital           │
-│ • Goal: 10K active users           │
-└─────────────────────────────────────┘
-           ↓
-Phase 2: Expand (Months 7-12)
-┌─────────────────────────────────────┐
-│ • Target: Add SMB segment          │
-│ • Product: Full feature set        │
-│ • Price: Introduce Pro tier       │
-│ • Channel: Add inside sales       │
-│ • Goal: $2M ARR                   │
-└─────────────────────────────────────┘
-           ↓
-Phase 3: Scale (Months 13-24)
-┌─────────────────────────────────────┐
-│ • Target: Enterprise segment       │
-│ • Product: Platform + Services     │
-│ • Price: Enterprise pricing       │
-│ • Channel: Partner ecosystem      │
-│ • Goal: $10M ARR                 │
-└─────────────────────────────────────┘
-```
+
+**Phase 1: Beachhead (Months 1-6)**
+- Target: Digital Natives segment
+- Product: MVP with 3 core features
+- Price: Freemium model
+- Channel: Direct digital
+- Goal: 10K active users
+
+**Phase 2: Expand (Months 7-12)**
+- Target: Add SMB segment
+- Product: Full feature set
+- Price: Introduce Pro tier
+- Channel: Add inside sales
+- Goal: $2M ARR
+
+**Phase 3: Scale (Months 13-24)**
+- Target: Enterprise segment
+- Product: Platform + Services
+- Price: Enterprise pricing
+- Channel: Partner ecosystem
+- Goal: $10M ARR
 
 #### Competitive Differentiation Plan
-```
-Differentiation Strategy:
-1. Technical: AI-powered automation (competitors manual)
-2. Business Model: Usage-based pricing (competitors seat-based)
-3. Experience: Mobile-first design (competitors desktop-only)
-4. Ecosystem: Open API platform (competitors closed systems)
 
-Positioning Statement:
-"The only AI-powered platform that learns your workflow
-and automates repetitive tasks across all your tools,
-saving digital professionals 10+ hours per week."
+**Differentiation Strategy:**
+1. **Technical**: AI-powered automation (competitors manual)
+2. **Business Model**: Usage-based pricing (competitors seat-based)
+3. **Experience**: Mobile-first design (competitors desktop-only)
+4. **Ecosystem**: Open API platform (competitors closed systems)
 
-Proof Points:
-✓ 75% automation rate (vs. 20% industry average)
-✓ 5-minute setup (vs. 2-hour competitor average)
-✓ 150+ integrations (vs. 50 competitor average)
-✓ $2,400 annual time value saved per user
-```
+**Positioning Statement:**
+"The only AI-powered platform that learns your workflow and automates repetitive tasks across all your tools, saving digital professionals 10+ hours per week."
+
+**Proof Points:**
+- ✓ 75% automation rate (vs. 20% industry average)
+- ✓ 5-minute setup (vs. 2-hour competitor average)
+- ✓ 150+ integrations (vs. 50 competitor average)
+- ✓ $2,400 annual time value saved per user
 
 ### IMPLEMENTATION ROADMAP
 
 #### 90-Day Action Plan
-```
-Week 1-2: Foundation
-├── Validate findings with 20 target customers
-├── Finalize positioning and messaging
-└── Secure budget and resources
 
-Week 3-4: Product Alignment
-├── Define MVP feature set
-├── Create product roadmap
-└── Establish success metrics
+**Week 1-2: Foundation**
+- Validate findings with 20 target customers
+- Finalize positioning and messaging
+- Secure budget and resources
 
-Week 5-8: Go-to-Market Preparation
-├── Develop marketing materials
-├── Build sales enablement tools
-├── Set up analytics and tracking
-└── Recruit beta customers
+**Week 3-4: Product Alignment**
+- Define MVP feature set
+- Create product roadmap
+- Establish success metrics
 
-Week 9-12: Launch and Learn
-├── Soft launch to beta group
-├── Gather feedback and iterate
-├── Scale marketing campaigns
-└── Optimize conversion funnel
-```
+**Week 5-8: Go-to-Market Preparation**
+- Develop marketing materials
+- Build sales enablement tools
+- Set up analytics and tracking
+- Recruit beta customers
+
+**Week 9-12: Launch and Learn**
+- Soft launch to beta group
+- Gather feedback and iterate
+- Scale marketing campaigns
+- Optimize conversion funnel
 
 ### RESEARCH METHODOLOGY
 
 #### Data Sources & Methods
-```
-Primary Research (40% of insights):
-• In-depth interviews: n=45 target customers
-• Focus groups: 6 sessions, 48 participants
-• Surveys: n=1,200 responses, ±3% margin
-• Ethnographic studies: 20 customer observations
 
-Secondary Research (60% of insights):
-• Industry reports: IBISWorld, Forrester, Gartner
-• Competitive intelligence: Web scraping, mystery shopping
-• Social listening: 50K+ mentions analyzed
-• Search trends: 2-year keyword analysis
+**Primary Research (40% of insights):**
+- In-depth interviews: n=45 target customers
+- Focus groups: 6 sessions, 48 participants
+- Surveys: n=1,200 responses, ±3% margin
+- Ethnographic studies: 20 customer observations
 
-Validation Methods:
-✓ Triangulation across sources
+**Secondary Research (60% of insights):**
+- Industry reports: IBISWorld, Forrester, Gartner
+- Competitive intelligence: Web scraping, mystery shopping
+- Social listening: 50K+ mentions analyzed
+- Search trends: 2-year keyword analysis
+
+**Validation Methods:**
+- ✓ Triangulation across sources
 ✓ Expert interviews (n=10)
 ✓ Statistical significance testing
 ✓ Scenario planning workshops
@@ -448,7 +436,6 @@ tam_calculation = {
 - Competitive response may accelerate
 - Regulatory changes could impact timeline
 - Technology adoption rates based on historical analogs
-```
 
 ## Usage Instructions
 1. Replace all {{variables}} with specific market context
