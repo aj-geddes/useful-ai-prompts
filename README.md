@@ -1,185 +1,203 @@
-# 🤖 Useful AI Prompts
+# 🤖 Useful AI Prompts Library
 
-A comprehensive collection of enterprise-grade AI prompts for software development, security analysis, infrastructure automation, and professional workflows. These battle-tested prompts generate production-ready solutions with comprehensive documentation, security controls, and industry best practices.
+A comprehensive collection of production-ready AI prompts designed for professionals across all industries. Each prompt combines multiple expert personas with advanced thinking frameworks to deliver exceptional results.
 
-## 🌟 Project Overview
+## 🎯 Quick Navigation
 
-This repository contains **professional-grade AI prompts** organized across **7 specialized categories**, each designed to generate **enterprise-quality solutions** with built-in security, compliance, and best practices. Whether you're developing software, managing infrastructure, or optimizing workflows, these prompts provide comprehensive automation and intelligence.
+### Find Your Prompt by Role
 
-## 📚 Repository Categories
+<details>
+<summary><b>💼 Business Professionals</b></summary>
 
-### 🛠️ [Development](development/)
-Professional software development, framework implementation, and technical workflows
-- **[FastMCP Server Patterns](development/fastmcp-server-patterns.md)** - Production-ready MCP server development with security and containerization
-- **[MCP Enabler Comprehensive](development/mcp-enabler-comprehensive.md)** - Complete 22-step workflow for leveraging all MCP capabilities
-- **[Python Project CI/CD](development/python-project-ci-cd.md)** - Enterprise GitHub Actions workflows with comprehensive quality checks
+#### Administrative
+- [📧 Email Prioritization & Response](prompts/business/administrative/email-prioritization-response.md) - Manage high-volume inboxes with AI-powered triage
+- [📅 Calendar Optimization](prompts/business/administrative/calendar-optimization.md) - Transform chaotic schedules into productivity engines
+- [📝 Meeting Minutes Summarization](prompts/business/administrative/meeting-minutes-summarization.md) - Convert discussions into actionable documentation
+- [🗂️ Document Organization System](prompts/business/administrative/document-organization-filing.md) - Create intelligent filing systems with compliance
+- [✅ Task Delegation Tracking](prompts/business/administrative/task-delegation-tracking.md) - Optimize team workload and accountability
 
-### 🔒 [Security](security/)
-Comprehensive security analysis, vulnerability assessment, and compliance validation
-- **[Bandit Security Analysis](security/bandit-security-analysis.md)** - Automated Python security analysis with OWASP compliance and fix implementation
+#### Product Management
+- [🗺️ Strategic Roadmap Generator](prompts/business/product-management/strategic-roadmap-generator.md) - Data-driven product planning with RICE/Kano frameworks
 
-### 🏗️ [Infrastructure](infrastructure/)
-Infrastructure as code, containerization, and enterprise deployment patterns
-- **[Azure Terraform Module Maker](infrastructure/azurerm-terraform-module-maker.md)** - Production-ready Terraform modules with comprehensive validation
-- **[Docker Production Patterns](infrastructure/docker-production-patterns.md)** - Enterprise container security and orchestration patterns
+#### Project Management  
+- [⚠️ Comprehensive Risk Assessment](prompts/business/project-management/comprehensive-risk-assessment.md) - Identify and mitigate project risks systematically
 
-### 🤖 [AI Prompt Engineering](ai-prompt-engineering/)
-Advanced AI techniques, memory management, and intelligent automation systems
-- **[Memory Management Patterns](ai-prompt-engineering/memory-management-patterns.md)** - Knowledge graph organization for persistent AI context
-- **[Code Review Prompts](ai-prompt-engineering/code-review-prompts.md)** - Enterprise automated code review with security and quality analysis
+#### Finance
+- [💰 Financial Model Builder](prompts/business/finance/financial-model-builder.md) - Create DCF valuations with scenario analysis
 
-### 📈 [Project Management](project-management/)
-Workflow automation, repository management, and team collaboration
-- **[Repository Setup Automation](project-management/repository-setup-automation.md)** - Professional GitHub repository creation with enterprise configurations
+#### Marketing
+- [📢 Integrated Campaign Architect](prompts/business/marketing/integrated-campaign-architect.md) - Design multi-channel campaigns with ROI optimization
 
-### 🧠 [Research](research/)
-Structured research frameworks, decision-making, and learning acceleration
-- **[ADR Record Generation](research/adr-record-generation.md)** - Architectural Decision Record creation with rigorous methodology
-- **[ADR Research Framework](research/adr-research-framework.md)** - Systematic technical research for architectural decisions
-- **[Teaching Frameworks](research/)** - Structured learning prompts for beginner to advanced skill development
+</details>
 
-### 📋 [MCP Instructions](mcp-instructions/)
-Advanced Model Context Protocol workflows and AI assistant optimization
-- **[Claude with MCPs](mcp-instructions/claude-with-mcps.md)** - Comprehensive 30-section MCP workflow guide for maximum tool utilization
+<details>
+<summary><b>👨‍💻 Technical Professionals</b></summary>
 
-### ⚙️ [Claude Configs](claude-configs/)
-Professional Claude Desktop MCP configuration templates and setup guides
-- **[Claude MCP Example](claude-configs/claude-mcp-example.md)** - Complete MCP server setup with cross-platform support
+#### Software Engineering
+- [🐛 Advanced Debugging Analyzer](prompts/technical/software-engineering/advanced-debugging-analyzer.md) - Systematic root cause analysis for complex bugs
 
-## 🎯 Key Features
+#### DevOps
+- [🚀 CI/CD Pipeline Optimizer](prompts/technical/devops/cicd-pipeline-optimizer.md) - Transform slow builds into efficient deployments
 
-### 🏆 Enterprise-Grade Quality
-- **Production-Ready Solutions**: All prompts generate enterprise-quality output with professional standards
-- **Comprehensive Security**: Built-in security controls, vulnerability scanning, and compliance validation
-- **Industry Best Practices**: Adherence to OWASP, CIS, ISO standards, and regulatory requirements
-- **Professional Documentation**: Complete documentation with examples, troubleshooting, and maintenance guides
+#### Data Science
+- [📊 Model Evaluation Framework](prompts/technical/data-science/model-evaluation-framework.md) - Comprehensive ML validation beyond accuracy
 
-### 🚀 Advanced Automation
-- **Multi-Tool Coordination**: Sophisticated workflows leveraging multiple AI tools and systems
-- **Memory & Context Management**: Persistent knowledge graphs and intelligent context preservation
-- **CI/CD Integration**: Automated deployment, testing, and quality assurance pipelines
-- **Workflow Orchestration**: Complex multi-step automation with error handling and recovery
+</details>
 
-### 🔧 Technical Excellence
-- **Comprehensive Validation**: Multi-layer testing, security scanning, and quality assurance
-- **Scalable Architecture**: Patterns that scale from individual projects to enterprise organizations
-- **Cross-Platform Support**: Solutions that work across Windows, macOS, Linux, and cloud platforms
-- **Performance Optimization**: Efficient algorithms, resource management, and optimization strategies
+<details>
+<summary><b>🎨 Creative Professionals</b></summary>
 
-## 🚀 Quick Start Guide
+#### UX Design
+- [🔍 User Research Synthesizer](prompts/creative/ux-design/user-research-synthesizer.md) - Transform raw research into actionable insights
 
-### 1. Choose Your Category
-Navigate to the relevant category based on your use case:
-- **Development**: Software engineering and framework implementation
-- **Security**: Vulnerability analysis and compliance validation
-- **Infrastructure**: Cloud deployment and container orchestration
-- **AI Engineering**: Advanced AI workflows and memory management
+</details>
 
-### 2. Select Your Prompt
-Each category contains specialized prompts with:
-- **Clear Use Case Description**: Understanding when and why to use each prompt
-- **Comprehensive Examples**: Real-world implementation examples and outcomes
-- **Professional Standards**: Enterprise-grade quality and security requirements
-- **Integration Guidance**: How to integrate with existing workflows and tools
+## 🚀 How to Use These Prompts
 
-### 3. Customize & Implement
-All prompts include:
-- **Configuration Templates**: Ready-to-use configuration files and examples
-- **Best Practice Guidelines**: Industry standards and optimization recommendations  
-- **Troubleshooting Support**: Common issues and resolution procedures
-- **Validation Frameworks**: Testing and quality assurance methodologies
+### 1. Find Your Prompt
+- **By Role**: Use the navigation above to find prompts for your profession
+- **By Task**: Browse categories to find specific workflow solutions
+- **By Search**: Use GitHub's search to find keywords in prompt descriptions
 
-## 🎯 Use Case Matrix
+### 2. Understand the Structure
+Each prompt includes:
+- **Metadata**: Category, tags, and use cases
+- **Description**: What the prompt does and when to use it
+- **Prompt Template**: The actual prompt with `{{variables}}` to customize
+- **Usage Instructions**: Step-by-step guide
+- **Examples**: Real-world scenarios with sample inputs/outputs
 
-| Role / Need | Development | Security | Infrastructure | AI Engineering | Project Mgmt |
-|-------------|-------------|----------|----------------|----------------|--------------|
-| **Software Engineer** | ✅ FastMCP, CI/CD | ✅ Code Security | ✅ Container Deploy | ✅ Code Review AI | ✅ Repo Setup |
-| **DevOps Engineer** | ✅ Automation | ✅ Vuln Scanning | ✅ IaC, Docker | ✅ Memory Systems | ✅ Workflows |
-| **Security Engineer** | ✅ Secure Coding | ✅ OWASP Analysis | ✅ Security Hardening | ✅ AI Security | ✅ Compliance |
-| **Platform Engineer** | ✅ Framework Design | ✅ Infrastructure Security | ✅ Cloud Architecture | ✅ Intelligent Ops | ✅ Standardization |
-| **Technical Lead** | ✅ Team Standards | ✅ Security Policies | ✅ Architecture | ✅ AI Integration | ✅ Team Processes |
-| **Enterprise Architect** | ✅ System Design | ✅ Compliance Framework | ✅ Cloud Strategy | ✅ AI Governance | ✅ Enterprise Standards |
+### 3. Customize for Your Needs
+1. Copy the prompt template section
+2. Replace all `{{variables}}` with your specific information
+3. Include as much context as possible for better results
+4. Run with your preferred AI assistant (GPT-4, Claude, etc.)
 
-## 🏷️ Technology Coverage
+### 4. Example Usage
 
-### **Programming Languages & Frameworks**
-`Python` `JavaScript` `TypeScript` `Go` `Java` `FastMCP` `FastAPI` `React` `Node.js` `Vue.js`
+```markdown
+# From the Financial Model Builder prompt:
 
-### **Infrastructure & Cloud**
-`Docker` `Kubernetes` `Terraform` `Azure` `AWS` `GCP` `GitHub Actions` `GitLab CI` `Jenkins`
+MODELING CONTEXT:
+- **Company/Project**: {{company_name}}  → Replace with: "TechStartup Inc."
+- **Industry**: {{industry_sector}}       → Replace with: "SaaS B2B"
+- **Model Purpose**: {{valuation_budgeting_ma}} → Replace with: "Series A fundraising"
+```
 
-### **Security & Compliance**
-`OWASP` `Bandit` `SAST` `DAST` `SOC 2` `ISO 27001` `CIS Benchmarks` `Vulnerability Analysis`
+## 📁 Repository Structure
 
-### **AI & Automation**
-`Claude` `GPT-4` `MCP Tools` `Knowledge Graphs` `Memory Management` `Workflow Automation`
+```
+prompts/
+├── business/          # Business & management roles
+│   ├── administrative/   # Executive assistants, office managers
+│   ├── finance/         # Financial analysts, accountants
+│   ├── marketing/       # Marketing managers, strategists
+│   ├── product-management/ # Product managers, owners
+│   └── project-management/ # Project managers, scrum masters
+├── technical/         # Technology roles
+│   ├── software-engineering/ # Developers, architects
+│   ├── devops/          # DevOps, SRE, platform engineers
+│   └── data-science/    # Data scientists, ML engineers
+└── creative/          # Creative roles
+    └── ux-design/       # UX designers, researchers
+```
 
-### **Development Tools**
-`Git` `GitHub` `GitLab` `VS Code` `pytest` `Jest` `ESLint` `Black` `MyPy`
+## 🎯 Prompt Categories
 
-## 🏆 Success Metrics
+### By Workflow Type
+- **Analysis**: Data analysis, market research, risk assessment
+- **Creation**: Content creation, design, development
+- **Planning**: Strategic planning, roadmapping, scheduling
+- **Optimization**: Process improvement, performance tuning
+- **Communication**: Reporting, documentation, presentations
 
-### **Quality Assurance**
-- ✅ **95%+ Accuracy**: All prompts tested with multiple AI assistants for consistent, high-quality output
-- ✅ **Enterprise Standards**: Adherence to industry best practices and compliance requirements
-- ✅ **Production-Ready**: Solutions deployable in enterprise environments without modification
-- ✅ **Comprehensive Testing**: Multi-layer validation including security, performance, and functionality
+### By Thinking Approach
+- **Systems Thinking**: Holistic analysis of complex systems
+- **First Principles**: Breaking down problems to fundamentals
+- **Data-Driven**: Quantitative analysis and metrics
+- **User-Centered**: Focus on human needs and experiences
+- **Strategic**: Long-term planning and positioning
 
-### **Professional Standards**
-- ✅ **Security-First Design**: Built-in security controls and vulnerability prevention
-- ✅ **Documentation Excellence**: Complete documentation with examples and troubleshooting
-- ✅ **Scalable Architecture**: Patterns that scale from individual to enterprise use
-- ✅ **Continuous Improvement**: Regular updates based on industry evolution and user feedback
+## 🌟 Key Features
 
-## 🤝 Contributing
+### Multi-Persona Approach
+Each prompt combines 2-3 expert perspectives:
+- Primary expert in the specific domain
+- Complementary perspective for depth
+- Analytical or strategic overlay
 
-We welcome contributions from the community! Our [Contributing Guidelines](CONTRIBUTING.md) cover:
+### Layered Thinking Frameworks
+- Multiple analytical frameworks per prompt
+- Structured problem-solving approaches
+- Industry best practices integrated
 
-### **Contribution Types**
-- **New Prompts**: Professional-quality prompts with comprehensive testing
-- **Prompt Enhancement**: Improvements to existing prompts with additional features
-- **Documentation**: Usage examples, troubleshooting guides, and best practices
-- **Quality Assurance**: Testing, validation, and performance optimization
+### Comprehensive Outputs
+- Detailed, actionable deliverables
+- Professional formatting
+- Ready-to-use templates
+- Measurement frameworks
 
-### **Quality Standards**
-- **Professional Quality**: Enterprise-grade output with comprehensive validation
-- **Security Integration**: Built-in security controls and best practices
-- **Comprehensive Testing**: Multi-tool testing with consistent results
-- **Documentation Excellence**: Complete documentation with examples and guides
+## 💡 Best Practices
 
-## 📄 License
+### Getting Great Results
+1. **Provide Context**: The more specific information you provide, the better the output
+2. **Use Examples**: Include samples of what you're working with
+3. **Iterate**: Use the output as a starting point and refine
+4. **Combine Prompts**: Use multiple prompts for complex projects
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+### Customization Tips
+- Adjust personas based on your specific needs
+- Add industry-specific requirements
+- Modify output formats to match your templates
+- Include company-specific constraints
 
-## 🔗 Related Projects & Resources
+## 🔄 Contributing
 
-### **Companion Repositories**
-- **[Useful AI Prompts (Token-Efficient)](https://github.com/aj-geddes/useful-ai-promots)** - Optimized shortcuts for rapid development
-- **[FastMCP Framework](https://github.com/jlowin/fastmcp)** - High-level MCP server development framework
-- **[MCP Official Servers](https://github.com/modelcontextprotocol/servers)** - Official Model Context Protocol implementations
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-### **Technical Resources**
-- **[MCP Documentation](https://modelcontextprotocol.io/)** - Official Model Context Protocol documentation
-- **[OWASP Security Guidelines](https://owasp.org/)** - Web application security best practices
-- **[Terraform Best Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/)** - Infrastructure as code standards
-- **[Docker Security](https://docs.docker.com/engine/security/)** - Container security best practices
+### What We're Looking For
+- New job role prompts
+- Industry-specific variations
+- Workflow optimizations
+- International/cultural adaptations
 
-## 📊 Repository Statistics
+## 📊 Prompt Statistics
 
-- **7 Major Categories** with specialized AI prompts
-- **15+ Professional Prompts** covering enterprise development workflows
-- **Production-Ready Solutions** with comprehensive validation and testing
-- **Cross-Platform Support** for Windows, macOS, and Linux environments
-- **Enterprise Integration** with security, compliance, and audit capabilities
+- **Total Prompts**: 13+
+- **Categories**: 9
+- **Job Roles Covered**: 13
+- **Thinking Frameworks**: 25+
+- **Average Prompt Depth**: 300+ lines
+
+## 🏷️ Finding Prompts by Tags
+
+Common tags to search:
+- `#analysis` - Analytical workflows
+- `#planning` - Planning and strategy
+- `#automation` - Process automation
+- `#optimization` - Performance improvement
+- `#communication` - Writing and reporting
+- `#decision-making` - Choice frameworks
+- `#troubleshooting` - Problem solving
+
+## 📈 Success Stories
+
+These prompts are designed based on real-world professional workflows and have been optimized for:
+- **Accuracy**: Validated against industry standards
+- **Completeness**: Comprehensive coverage of use cases
+- **Usability**: Clear instructions and examples
+- **Flexibility**: Adaptable across industries
+
+## 🤝 Support
+
+- **Issues**: Report problems via [GitHub Issues](https://github.com/aj-geddes/useful-ai-prompts/issues)
+- **Discussions**: Share experiences and tips in [Discussions](https://github.com/aj-geddes/useful-ai-prompts/discussions)
+- **Updates**: Star the repo to get notified of new prompts
 
 ---
 
-**⭐ Star this repository if you find these prompts valuable for your development workflow!**
+**⭐ Star this repository** to help others discover these productivity-enhancing prompts!
 
-**🔄 Watch for updates as we continue to add new enterprise-grade prompts and enhance existing ones.**
+**🔄 Watch for updates** as we continuously add new prompts for emerging roles and workflows.
 
-**🤝 Contribute your own professional prompts to help the community build better AI-assisted workflows.**
-
----
-
-*Built with ❤️ for the AI engineering community. These prompts represent hundreds of hours of development, testing, and refinement to provide the highest quality AI-assisted development experience.*
+**🤝 Share your success** stories and prompt adaptations with the community!
