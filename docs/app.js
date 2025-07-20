@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load the prompt index from JSON
 async function loadPromptIndex() {
     try {
-        // Use absolute path from repository root for GitHub Pages
-        const response = await fetch('/useful-ai-prompts/PROMPT-INDEX.json');
+        // Load from same directory (docs folder)
+        const response = await fetch('./PROMPT-INDEX.json');
         const data = await response.json();
         promptIndex = data;
         currentPrompts = data.prompts;

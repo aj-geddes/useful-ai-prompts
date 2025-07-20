@@ -67,12 +67,11 @@ Upload the following files to any static host:
 
 ```
 docs/
-├── index.html     # Main HTML structure
-├── styles.css     # All styling
-├── app.js         # JavaScript functionality
-└── README.md      # This file
-
-../PROMPT-INDEX.json  # Prompt data (loaded by app.js)
+├── index.html        # Main HTML structure
+├── styles.css        # All styling
+├── app.js            # JavaScript functionality
+├── PROMPT-INDEX.json # Prompt data (copied from root)
+└── README.md         # This file
 ```
 
 ## Customization
