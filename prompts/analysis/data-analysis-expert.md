@@ -87,22 +87,20 @@ DELIVER YOUR ANALYSIS AS:
 ### DATA PROFILE & QUALITY ASSESSMENT
 
 #### Dataset Overview
-```
-Data Characteristics:
-├── Total Records: {{number}}
-├── Features/Variables: {{count_types}}
-├── Time Period: {{start_end_frequency}}
-├── Completeness: {{percentage_missing_patterns}}
-└── Quality Issues: {{outliers_inconsistencies_biases}}
 
-Data Schema:
-┌─────────────────┬──────────┬─────────────┬──────────────┐
-│ Variable Name   │ Type     │ Description │ Quality Score│
-├─────────────────┼──────────┼─────────────┼──────────────┤
-│ {{variable_1}}  │ {{type}} │ {{desc}}    │ {{A/B/C}}    │
-│ {{variable_2}}  │ {{type}} │ {{desc}}    │ {{A/B/C}}    │
-└─────────────────┴──────────┴─────────────┴──────────────┘
-```
+**Data Characteristics:**
+- Total Records: {{number}}
+- Features/Variables: {{count_types}}
+- Time Period: {{start_end_frequency}}
+- Completeness: {{percentage_missing_patterns}}
+- Quality Issues: {{outliers_inconsistencies_biases}}
+
+**Data Schema:**
+
+| Variable Name | Type | Description | Quality Score |
+|-----------------|----------|-------------|---------------|
+| {{variable_1}} | {{type}} | {{desc}} | {{A/B/C}} |
+| {{variable_2}} | {{type}} | {{desc}} | {{A/B/C}} |
 
 #### Data Quality Report
 ```python
@@ -136,8 +134,9 @@ quality_metrics = {
 ### EXPLORATORY DATA ANALYSIS
 
 #### Univariate Analysis
+
+**Distribution Analysis:**
 ```
-Distribution Analysis:
 ┌─────────────────────────────────────────────┐
 │ Variable: {{key_metric}}                    │
 ├─────────────────────────────────────────────┤
@@ -153,49 +152,48 @@ Distribution Analysis:
 ```
 
 #### Bivariate Relationships
+
+**Correlation Matrix:**
 ```
-Correlation Matrix:
         Var1    Var2    Var3    Var4
 Var1    1.00    0.72   -0.45    0.23
 Var2    0.72    1.00   -0.38    0.19
 Var3   -0.45   -0.38    1.00    0.56
 Var4    0.23    0.19    0.56    1.00
+```
 
-Key Relationships:
+**Key Relationships:**
 1. Strong positive: Var1 ↔ Var2 (r = 0.72, p < 0.001)
 2. Moderate negative: Var1 ↔ Var3 (r = -0.45, p < 0.01)
 3. Non-linear pattern detected: Var2 ~ Var4²
-```
 
 #### Segmentation Analysis
-```
-Customer Segments Identified:
-┌─────────────┬────────┬─────────┬──────────┬────────────┐
-│ Segment     │ Size   │ Revenue │ Behavior │ Opportunity│
-├─────────────┼────────┼─────────┼──────────┼────────────┤
-│ High Value  │ 15%    │ 45%     │ Engaged  │ Retain     │
-│ Growth      │ 25%    │ 30%     │ Emerging │ Nurture    │
-│ At Risk     │ 20%    │ 20%     │ Declining│ Reactivate │
-│ Low Value   │ 40%    │ 5%      │ Sporadic │ Automate   │
-└─────────────┴────────┴─────────┴──────────┴────────────┘
-```
+
+**Customer Segments Identified:**
+
+| Segment | Size | Revenue | Behavior | Opportunity |
+|---------|------|---------|----------|-------------|
+| High Value | 15% | 45% | Engaged | Retain |
+| Growth | 25% | 30% | Emerging | Nurture |
+| At Risk | 20% | 20% | Declining | Reactivate |
+| Low Value | 40% | 5% | Sporadic | Automate |
 
 ### STATISTICAL ANALYSIS
 
 #### Hypothesis Testing
-```
-H₀: No difference in conversion rates between groups
-H₁: Significant difference exists
 
-Test Results:
-├── Test Statistic: t = 3.45
-├── Degrees of Freedom: 198
-├── P-value: 0.0007
-├── Effect Size (Cohen's d): 0.49
-├── 95% CI for difference: [2.3%, 5.8%]
-└── Conclusion: Reject H₀ (α = 0.05)
+**H₀**: No difference in conversion rates between groups  
+**H₁**: Significant difference exists
 
-Practical Significance:
+**Test Results:**
+- Test Statistic: t = 3.45
+- Degrees of Freedom: 198
+- P-value: 0.0007
+- Effect Size (Cohen's d): 0.49
+- 95% CI for difference: [2.3%, 5.8%]
+- Conclusion: Reject H₀ (α = 0.05)
+
+**Practical Significance:**
 - Absolute improvement: 4.1%
 - Relative improvement: 23%
 - Business impact: $1.2M annual revenue
@@ -236,8 +234,9 @@ models = {
 ### KEY INSIGHTS & PATTERNS
 
 #### Insight 1: Seasonal Revenue Pattern
+
+**Monthly Revenue Trend:**
 ```
-Monthly Revenue Trend:
       │  ╱─╲
 $500K │ ╱   ╲    ╱─╲
       │╱     ╲  ╱   ╲
@@ -245,17 +244,18 @@ $400K │       ╲╱     ╲
       │               ╲
 $300K │────────────────╲─
       J F M A M J J A S O N D
+```
 
-Key Findings:
+**Key Findings:**
 - 35% revenue spike in March & September
 - Summer decline consistent across 3 years
 - Holiday season underperforms expectations
 - Weather correlation: r = -0.67
-```
 
 #### Insight 2: Customer Behavior Clusters
+
+**Behavioral Segmentation:**
 ```
-Behavioral Segmentation:
                 High Frequency
                      │
     Early Adopters   │   Power Users
@@ -267,16 +267,17 @@ Behavioral Segmentation:
     (35%, Volatile)  │   (45%, Declining)
                      │
                 Low Frequency
+```
 
-Action Items:
+**Action Items:**
 1. Invest in Early Adopters → Power Users conversion
 2. Stabilize Loyal Base with retention programs
 3. Automate Price Seekers engagement
-```
 
 #### Insight 3: Predictive Indicators
+
+**Churn Risk Model:**
 ```
-Churn Risk Model:
 ┌─────────────────────────────────────────────┐
 │ IF days_since_purchase > 60                │
 │ AND support_tickets > 2                     │
@@ -286,18 +287,19 @@ Churn Risk Model:
 │ Precision: 0.82 | Recall: 0.75             │
 │ F1 Score: 0.78  | AUC-ROC: 0.86           │
 └─────────────────────────────────────────────┘
+```
 
-Early Warning System:
+**Early Warning System:**
 - 423 customers currently at high risk
 - Potential revenue loss: $156K/month
 - Intervention success rate: 34%
-```
 
 ### RECOMMENDATIONS & ACTION PLAN
 
 #### Strategic Recommendations
+
+**Priority Matrix:**
 ```
-Priority Matrix:
          High Impact
               │
    Quick Wins │ Major Projects
@@ -307,36 +309,35 @@ Priority Matrix:
       (5)     │   (6,7)
               │
          Low Impact
-
-1. [Quick Win] Implement churn early warning system
-2. [Major Project] Redesign seasonal inventory planning
-3. [Quick Win] Launch targeted retention campaign
-4. [Major Project] Develop customer journey optimization
-5. [Fill-in] Automate low-value segment communications
 ```
+
+1. **[Quick Win]** Implement churn early warning system
+2. **[Major Project]** Redesign seasonal inventory planning
+3. **[Quick Win]** Launch targeted retention campaign
+4. **[Major Project]** Develop customer journey optimization
+5. **[Fill-in]** Automate low-value segment communications
 
 #### Implementation Roadmap
-```
-Week 1-2: Foundation
-├── Set up data pipeline for real-time monitoring
-├── Configure alert system for at-risk customers
-└── Brief stakeholder teams on findings
 
-Week 3-4: Quick Wins
-├── Launch retention campaign for high-risk segment
-├── Implement A/B test for seasonal promotions
-└── Deploy basic churn prediction model
+**Week 1-2: Foundation**
+- Set up data pipeline for real-time monitoring
+- Configure alert system for at-risk customers
+- Brief stakeholder teams on findings
 
-Week 5-8: Major Initiatives
-├── Develop comprehensive customer scoring system
-├── Build interactive dashboards for key metrics
-└── Integrate predictive models into CRM
+**Week 3-4: Quick Wins**
+- Launch retention campaign for high-risk segment
+- Implement A/B test for seasonal promotions
+- Deploy basic churn prediction model
 
-Week 9-12: Optimization
-├── Refine models based on results
-├── Scale successful interventions
-└── Establish continuous improvement process
-```
+**Week 5-8: Major Initiatives**
+- Develop comprehensive customer scoring system
+- Build interactive dashboards for key metrics
+- Integrate predictive models into CRM
+
+**Week 9-12: Optimization**
+- Refine models based on results
+- Scale successful interventions
+- Establish continuous improvement process
 
 ### TECHNICAL APPENDIX
 
@@ -370,17 +371,17 @@ def prepare_data(df):
 ```
 
 #### Statistical Tests Applied
-```
-Tests Performed:
-1. Normality: Shapiro-Wilk test
-2. Homogeneity: Levene's test
-3. Independence: Chi-square test
-4. Correlation: Pearson/Spearman based on distribution
-5. Time Series: Augmented Dickey-Fuller for stationarity
-6. Model Validation: k-fold cross-validation (k=5)
-```
+
+**Tests Performed:**
+1. **Normality**: Shapiro-Wilk test
+2. **Homogeneity**: Levene's test
+3. **Independence**: Chi-square test
+4. **Correlation**: Pearson/Spearman based on distribution
+5. **Time Series**: Augmented Dickey-Fuller for stationarity
+6. **Model Validation**: k-fold cross-validation (k=5)
 
 ### DASHBOARD MOCKUP
+
 ```
 ┌─────────────────────────────────────────────────────┐
 │            BUSINESS METRICS DASHBOARD               │
@@ -432,7 +433,6 @@ Tests Performed:
 - Predictive models: Medium-High (80-85% accuracy)
 - Causal inferences: Medium (observational data only)
 - ROI projections: Medium (±20% range)
-```
 
 ## Usage Instructions
 1. Replace all {{variables}} with your specific context
