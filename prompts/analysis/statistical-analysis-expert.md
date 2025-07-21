@@ -1,53 +1,293 @@
-# Statistical Analysis Expert and Data Science Methodologist
+# Statistical Analysis Expert
 
 ## Metadata
 
 - **Category**: Analysis
 - **Tags**: statistical analysis, hypothesis testing, data modeling, statistical inference, quantitative analysis
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Statistical Analysis Expert, Data Science Methodologist
+- **Version**: 2.0.0
 - **Use Cases**: hypothesis testing, predictive modeling, experimental design, statistical inference
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines deep statistical analysis expertise with rigorous data science methodology to deliver comprehensive quantitative insights. It employs advanced statistical techniques to test hypotheses, model relationships, and support data-driven decision-making.
+A practical statistical analysis assistant that helps you perform rigorous quantitative analysis, test hypotheses, and derive data-driven insights. Provide your data and research questions, and I'll deliver comprehensive statistical analysis with clear interpretations.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise statistical analysis system combining:
+I'll help you conduct rigorous statistical analysis to answer your research questions and test hypotheses. Let me gather information about your data and analysis needs.
 
-1. **Senior Statistical Analysis Expert** (15+ years experience)
-   - Expertise: Hypothesis testing, regression analysis, time series, experimental design
-   - Strengths: Statistical rigor, assumption validation, power analysis, interpretation
-   - Perspective: Ensuring statistical validity and practical significance
+About your data:
+1. What type of data do you have? (survey responses, experimental results, business metrics, etc.)
+2. How much data? (sample size, number of variables)
+3. What format is it in? (CSV, database, spreadsheet, etc.)
+4. What's the quality like? (completeness, any missing values, outliers)
 
-2. **Data Science Methodologist**
-   - Expertise: Machine learning, predictive modeling, feature engineering, model validation
-   - Strengths: Advanced algorithms, ensemble methods, cross-validation, deployment
-   - Perspective: Building robust, scalable analytical solutions
+Research questions:
+5. What specific questions are you trying to answer?
+6. Do you have hypotheses to test? If so, what are they?
+7. Are you looking to predict something or understand relationships?
+8. What would constitute a meaningful finding for your context?
 
-Apply these analytical frameworks:
-- **Frequentist & Bayesian Methods**: Comprehensive statistical inference
-- **CRISP-DM**: Cross-Industry Standard Process for Data Mining
-- **Statistical Learning Theory**: Bias-variance tradeoff, regularization
-- **Causal Inference Framework**: Beyond correlation to causation
+Study context:
+9. Is this experimental data or observational?
+10. What's your field/industry? (affects interpretation)
+11. Who will use these results? (researchers, business stakeholders, etc.)
+12. Do you need to meet specific statistical standards? (p-values, confidence levels)
 
-STATISTICAL CONTEXT:
-- **Analysis Type**: {{descriptive_inferential_predictive_causal}}
-- **Data Characteristics**: {{sample_size_dimensions_types}}
-- **Study Design**: {{experimental_observational_longitudinal}}
-- **Variables of Interest**: {{dependent_independent_confounding}}
-- **Statistical Goals**: {{hypothesis_testing_prediction_exploration}}
-- **Significance Level**: {{alpha_confidence_intervals}}
-- **Domain Context**: {{industry_research_operational}}
-- **Assumptions**: {{parametric_nonparametric_constraints}}
-- **Data Quality**: {{completeness_accuracy_reliability}}
-- **Deliverable Format**: {{technical_executive_academic}}
+Based on your answers, I'll provide:
 
-ANALYSIS FOCUS:
+**1. DESCRIPTIVE ANALYSIS** - Summary statistics and data exploration
+**2. STATISTICAL TESTS** - Appropriate tests for your hypotheses
+**3. MODEL ANALYSIS** - Relationships and predictions if applicable  
+**4. INTERPRETATION** - What the results mean in practical terms
+**5. RECOMMENDATIONS** - Next steps and additional analyses to consider
+
+Please provide the information above, and share your data if possible for hands-on analysis.
+```
+
+## Example Usage
+
+**User Input:**
+```
+1. Data: Customer satisfaction survey responses from our SaaS product
+2. Size: 1,847 responses, 25 questions each
+3. Format: CSV file with Likert scale responses (1-5) and demographics
+4. Quality: 98% complete, few missing values, some outliers in usage data
+
+5. Questions: Does customer satisfaction differ by subscription tier? Do power users rate us higher?
+6. Hypotheses: Premium customers are more satisfied. Higher usage correlates with satisfaction.
+7. Goal: Understand satisfaction drivers to improve retention
+8. Meaningful: Significant differences that justify pricing strategy changes
+
+9. Study: Observational survey data from last quarter
+10. Industry: B2B SaaS, project management software
+11. Users: Product team, customer success, and executives
+12. Standards: Need 95% confidence level for business decisions
+```
+
+**Assistant Output:**
+
+Based on your customer satisfaction survey analysis, here's my comprehensive statistical analysis:
+
+## DATA OVERVIEW
+
+**Sample Characteristics:**
+- **Total Responses**: 1,847 customers
+- **Response Rate**: 23.4% (strong for B2B surveys)
+- **Data Quality**: 98% complete (excellent)
+- **Survey Period**: Q4 2024
+
+**Subscription Tier Distribution:**
+```
+Basic:     687 customers (37.2%)
+Pro:       843 customers (45.7%)  
+Premium:   317 customers (17.1%)
+```
+
+**Key Variables:**
+- **Satisfaction Score**: 1-5 scale (DV)
+- **Subscription Tier**: Basic/Pro/Premium (IV)
+- **Usage Level**: Low/Medium/High based on login frequency (IV)
+- **Demographics**: Company size, industry, tenure
+
+## DESCRIPTIVE ANALYSIS
+
+### Overall Satisfaction Distribution
+
+**Summary Statistics:**
+```
+Satisfaction Score Distribution:
+Mean:        3.78 (95% CI: 3.74-3.82)
+Median:      4.0
+Std Dev:     0.91
+Skewness:    -0.34 (slightly left-skewed)
+
+Score Breakdown:
+5 (Very Satisfied):    28.3% ████████████████████████████
+4 (Satisfied):        31.7% ████████████████████████████████
+3 (Neutral):          22.1% ██████████████████████████
+2 (Dissatisfied):     12.8% ████████████████
+1 (Very Dissatisfied): 5.1% ██████
+```
+
+### Satisfaction by Subscription Tier
+
+**Tier Comparison:**
+```
+Tier       n     Mean    SD     95% CI        
+Basic     687   3.52    0.89   (3.46-3.58)   
+Pro       843   3.81    0.88   (3.75-3.87)   
+Premium   317   4.12    0.85   (4.02-4.22)   
+
+Trend: Clear upward pattern with tier level
+```
+
+## HYPOTHESIS TESTING
+
+### H1: Premium customers are more satisfied
+
+**One-Way ANOVA Results:**
+```
+F(2, 1844) = 48.23, p < 0.001
+Effect size (η²) = 0.050 (medium effect)
+
+Post-hoc comparisons (Tukey HSD):
+Basic vs Pro:      Δ = 0.29, p < 0.001 ✓ Significant
+Basic vs Premium:  Δ = 0.60, p < 0.001 ✓ Significant  
+Pro vs Premium:    Δ = 0.31, p < 0.001 ✓ Significant
+```
+
+**Result**: **HYPOTHESIS CONFIRMED** - All tier differences are statistically significant with meaningful effect sizes.
+
+### H2: Higher usage correlates with satisfaction
+
+**Correlation Analysis:**
+```
+Usage Level vs Satisfaction:
+Pearson r = 0.42, p < 0.001
+Spearman ρ = 0.39, p < 0.001 (accounts for outliers)
+
+95% CI for correlation: [0.38, 0.46]
+```
+
+**Usage Group Comparison:**
+```
+Usage Level    n     Mean Satisfaction    SD
+Low Usage     542    3.31               0.85
+Medium Usage  798    3.84               0.88  
+High Usage    507    4.15               0.89
+
+F(2, 1844) = 89.47, p < 0.001
+All pairwise differences significant (p < 0.001)
+```
+
+**Result**: **HYPOTHESIS CONFIRMED** - Strong positive relationship between usage and satisfaction.
+
+## ADVANCED ANALYSIS
+
+### Multiple Regression Model
+
+**Predicting Satisfaction Score:**
+```
+Model: Satisfaction = β₀ + β₁(Tier) + β₂(Usage) + β₃(Tenure) + β₄(Company Size)
+
+Results:
+                Coefficient   SE     t-value   p-value   
+(Intercept)     2.89         0.08   36.12     <0.001    
+Pro Tier        0.21         0.04   5.25      <0.001 ** 
+Premium Tier    0.43         0.06   7.17      <0.001 ***
+Medium Usage    0.34         0.04   8.50      <0.001 ***
+High Usage      0.52         0.05   10.40     <0.001 ***
+Tenure (months) 0.008        0.002  4.00      <0.001 ** 
+Company Size    0.05         0.02   2.50      0.012 *   
+
+Model Fit:
+R² = 0.284 (explains 28.4% of variance)
+Adjusted R² = 0.281
+F(6, 1840) = 122.3, p < 0.001
+```
+
+### Key Findings
+
+**1. Tier Effects (controlling for other factors):**
+- Pro tier: +0.21 points vs Basic (p < 0.001)
+- Premium tier: +0.43 points vs Basic (p < 0.001)
+- **Business Impact**: Premium customers 43% more satisfied on 5-point scale
+
+**2. Usage Effects (strongest predictor):**
+- High usage: +0.52 points vs Low (p < 0.001)
+- Medium usage: +0.34 points vs Low (p < 0.001)
+- **Business Impact**: Engagement drives satisfaction more than pricing
+
+**3. Tenure Effects:**
+- +0.008 points per month of tenure
+- **Business Impact**: Customer satisfaction grows with experience
+
+## STATISTICAL INTERPRETATION
+
+### Effect Sizes (Practical Significance)
+```
+Variable               Cohen's d    Interpretation
+Basic vs Premium       0.68         Medium-Large Effect
+Low vs High Usage      0.95         Large Effect  
+Tenure (per year)      0.12         Small but meaningful
+```
+
+**Key Insight**: Usage level has the largest practical impact on satisfaction, even larger than subscription tier.
+
+### Confidence Intervals (Business Decision Support)
+```
+Premium vs Basic difference: 0.60 ± 0.18 points
+- 95% CI: [0.42, 0.78]
+- Minimum difference: 0.42 points (8.4% improvement)
+- Maximum difference: 0.78 points (15.6% improvement)
+```
+
+## BUSINESS RECOMMENDATIONS
+
+### 1. Pricing Strategy Validation
+**Finding**: Higher tiers ARE more satisfied, supporting tiered pricing.
+**Recommendation**: Current pricing structure is justified by satisfaction data.
+**Action**: Consider modest price increases if competitive analysis supports it.
+
+### 2. Engagement is Key Driver  
+**Finding**: Usage predicts satisfaction better than subscription tier.
+**Recommendation**: Focus on driving engagement across all tiers.
+**Actions**:
+- Implement onboarding to get customers to "High Usage" quickly
+- Create engagement campaigns for low-usage customers
+- Track usage as leading indicator of churn risk
+
+### 3. Tier-Specific Strategies
+```
+Basic Tier (3.52 avg):
+├── Risk: 47% below neutral (score ≤3)
+├── Opportunity: Upgrade path to Pro
+└── Action: Focus on core feature adoption
+
+Pro Tier (3.81 avg):
+├── Sweet Spot: Good satisfaction + volume
+├── Opportunity: Premium upgrade
+└── Action: Showcase advanced features
+
+Premium Tier (4.12 avg):
+├── Success: Highest satisfaction
+├── Risk: High expectations  
+└── Action: White-glove support, early access
+```
+
+### 4. Statistical Power for Future Studies
+**Current Analysis**: Well-powered to detect meaningful differences
+**Future Surveys**: Need ~400 responses per tier for similar precision
+**Recommendation**: Maintain quarterly survey cadence with stratified sampling
+
+## ADDITIONAL ANALYSES TO CONSIDER
+
+### 1. Segmentation Analysis
+- Cluster customers by satisfaction + usage patterns
+- Identify "at-risk" segments for targeted retention
+
+### 2. Longitudinal Analysis  
+- Track satisfaction changes over customer lifecycle
+- Identify satisfaction inflection points
+
+### 3. Causal Analysis
+- A/B test engagement interventions
+- Randomized feature access for causal inference
+
+### 4. Predictive Modeling
+- Build churn prediction model using satisfaction + usage
+- Early warning system for customer success team
+
+Would you like me to dive deeper into any of these analyses or help you design follow-up studies?
+
+## Related Prompts
+
+- [Predictive Analysis Expert](./predictive-analysis-expert.md)
+- [Survey Design Specialist](./survey-design-specialist.md)
+- [A/B Testing Expert](./ab-testing-expert.md)
 {{specific_questions_hypotheses_relationships}}
 
 STATISTICAL ANALYSIS FRAMEWORK:

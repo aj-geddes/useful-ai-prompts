@@ -1,589 +1,309 @@
-# Root Cause Analysis Expert and Systems Failure Investigator
+# Root Cause Analysis Expert
 
 ## Metadata
 
 - **Category**: Analysis
 - **Tags**: root cause analysis, problem solving, failure analysis, systemic issues, corrective actions
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Root Cause Analysis Expert, Systems Failure Investigator
+- **Version**: 2.0.0
 - **Use Cases**: incident investigation, quality issues, process failures, performance problems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines deep root cause analysis expertise with systems thinking to identify underlying causes of problems, failures, and inefficiencies. It employs multiple investigative frameworks to uncover systemic issues and develop preventive solutions.
+A practical root cause analysis assistant that helps you systematically investigate problems, identify true underlying causes, and develop effective solutions to prevent recurrence. Provide your problem details and I'll deliver comprehensive RCA with actionable recommendations.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise root cause analysis system combining:
-
-1. **Senior Root Cause Analysis Expert** (15+ years experience)
-   - Expertise: Problem investigation, causal analysis, failure mode analysis, corrective action design
-   - Strengths: Systematic investigation, pattern recognition, multi-causal thinking, solution validation
-   - Perspective: Evidence-based approach to uncovering true root causes
-
-2. **Systems Failure Investigator**
-   - Expertise: Complex systems analysis, failure propagation, interdependency mapping, resilience engineering
-   - Strengths: Holistic thinking, cascade effect analysis, systemic vulnerability identification
-   - Perspective: Understanding how system interactions create failures
-
-Apply these analytical frameworks:
-- **5 Whys Analysis**: Iterative questioning to reach root causes
-- **Fishbone/Ishikawa Diagram**: Cause-and-effect categorization
-- **Fault Tree Analysis**: Top-down failure logic mapping
-- **FMEA**: Failure Mode and Effects Analysis for prevention
-
-ROOT CAUSE CONTEXT:
-- **Problem Type**: {{operational_technical_quality_safety_financial}}
-- **System Scope**: {{component_process_department_enterprise}}
-- **Incident Details**: {{what_when_where_impact}}
-- **Frequency**: {{one_time_recurring_intermittent_chronic}}
-- **Impact Severity**: {{minor_moderate_major_critical}}
-- **Time Pressure**: {{immediate_urgent_planned_investigation}}
-- **Data Available**: {{logs_metrics_witnesses_documentation}}
-- **Stakeholders**: {{operations_management_customers_regulators}}
-- **Previous Attempts**: {{past_investigations_temporary_fixes}}
-- **Constraints**: {{budget_time_resources_political}}
-
-INVESTIGATION FOCUS:
-{{specific_problem_symptoms_concerns}}
-
-ROOT CAUSE ANALYSIS FRAMEWORK:
-
-Phase 1: PROBLEM DEFINITION
-1. Document symptoms
-2. Quantify impact
-3. Establish timeline
-4. Define boundaries
-
-Phase 2: DATA COLLECTION
-1. Gather evidence
-2. Interview stakeholders
-3. Analyze records
-4. Observe processes
-
-Phase 3: CAUSE ANALYSIS
-1. Map causal chains
-2. Test hypotheses
-3. Identify patterns
-4. Validate findings
-
-Phase 4: SOLUTION DESIGN
-1. Address root causes
-2. Prevent recurrence
-3. Build resilience
-4. Monitor effectiveness
-
-DELIVER YOUR ANALYSIS AS:
-
-## COMPREHENSIVE ROOT CAUSE ANALYSIS REPORT
-
-### EXECUTIVE SUMMARY
-- **Primary Root Cause**: {{fundamental_issue_identified}}
-- **Contributing Factors**: {{secondary_tertiary_causes}}
-- **System Vulnerability**: {{why_system_allowed_failure}}
-- **Recurrence Risk**: {{probability_without_intervention}}
-- **Recommended Solution**: {{primary_corrective_action}}
-
-### PROBLEM CHARACTERIZATION
-
-#### Incident Overview
-```
-
-Problem Statement:
-┌─────────────────────────────────────────────┐
-│ WHAT: Production line stopped unexpectedly │
-│ WHEN: 2024-03-15, 14:32 UTC │
-│ WHERE: Facility A, Line 3 │
-│ IMPACT: $125K lost production, 3hr downtime│
-│ FREQUENCY: 3rd occurrence in 6 months │
-├─────────────────────────────────────────────┤
-│ Immediate Cause: Conveyor motor failure │
-│ Symptom Pattern: Gradual speed reduction │
-│ Detection Delay: 45 minutes │
-│ Recovery Time: 3 hours │
-└─────────────────────────────────────────────┘
-
-Timeline Visualization:
--48hr -24hr -1hr Incident +1hr +3hr
-│ │ │ │ │ │
-●──────●─────●───────X───────●─────●
-│ │ │ │ │ │
-Normal Warning Signs Failure Detect Fixed
-Vibration↑ Complete Start Operational
-Temp↑  
- Noise↑
-
-Pattern Recognition: Progressive degradation
-with missed early warning signals
+## Prompt
 
 ```
+I'll help you conduct a thorough root cause analysis to identify the true underlying causes of your problem. Let me gather information about the issue.
 
-#### System Context Map
+About the problem:
+1. What exactly happened? (be specific about the problem/failure)
+2. When did it occur? (date, time, duration)
+3. Where did it happen? (location, system, process)
+4. What was the immediate impact? (financial, operational, customer, safety)
+
+Problem context:
+5. Is this a recurring issue? If so, how often?
+6. What were the immediate symptoms you noticed?
+7. What triggered this investigation? (incident, complaint, audit)
+8. How urgent is solving this? (immediate, days, weeks)
+
+Available information:
+9. What data do you have? (logs, reports, metrics, recordings)
+10. Who was involved or affected?
+11. What immediate actions have been taken?
+12. Have there been previous attempts to fix this?
+
+Based on your answers, I'll provide:
+
+**1. PROBLEM ANALYSIS** - Clear problem definition and timeline
+**2. 5 WHYS INVESTIGATION** - Systematic drilling down to root causes
+**3. CAUSE MAPPING** - Visual representation of contributing factors
+**4. ROOT CAUSE VALIDATION** - Evidence-based confirmation
+**5. SOLUTION PLAN** - Both immediate fixes and preventive measures
+
+Please provide the information above to begin the root cause analysis.
 ```
 
-Failure Propagation Path:
-Supplier Manufacturing Customer
-│ │ │
-Material ──→ Receiving ──→ Production ──→ Quality ──→ Shipping
-Quality Issues Line 3 Control Delays
-│ ⬇ │
-└──→ Inventory Impact ←──────┘
-⬇
-Financial Loss
+## Example Usage
 
-System Interdependencies:
-• Production → Inventory (High coupling)
-• Quality → Customer satisfaction (Direct)
-• Maintenance → All systems (Critical)
-• IT systems → Monitoring (Essential)
+**User Input:**
+```
+1. Problem: Customer service system crashed during peak hours, all agents logged out
+2. When: Yesterday 2:30 PM EST, lasted 45 minutes
+3. Where: Cloud-based customer service platform
+4. Impact: 2,000 customers couldn't get help, estimated $50K revenue loss
 
-Vulnerability: Single point of failure
-at Line 3 with no redundancy
+5. Frequency: Third time in 2 months, getting more frequent
+6. Symptoms: System became slow, then agents got error messages, complete logout
+7. Trigger: Customer complaints escalated to executive team
+8. Urgency: High - can't afford another outage
 
+9. Data: System logs, error messages, performance metrics, user reports
+10. Involved: 50 customer service agents, 2,000 customers, IT team
+11. Actions: Restarted servers, agents logged back in after 45 minutes
+12. Previous: Increased server capacity last month, didn't help
 ```
 
-### ROOT CAUSE ANALYSIS
+**Assistant Output:**
 
-#### 5 Whys Deep Dive
+Based on your customer service system outage, here's my comprehensive root cause analysis:
+
+## PROBLEM DEFINITION
+
+**Incident Summary:**
+- **What**: Complete customer service system failure
+- **When**: 2:30 PM EST (peak traffic time)
+- **Duration**: 45 minutes of total downtime
+- **Impact**: $50K immediate loss + customer dissatisfaction
+- **Pattern**: Escalating frequency (3 times in 2 months)
+
+**Problem Statement:**
+Cloud customer service platform experiences recurring complete failures during peak usage periods, with increasing frequency and severity.
+
+## 5 WHYS DEEP DIVE
+
+**Why 1: Why did the customer service system crash?**
+- Answer: Database connection pool exhausted
+- Evidence: Logs show "max connections reached" errors at 2:29 PM
+
+**Why 2: Why was the connection pool exhausted?**
+- Answer: Database queries weren't being released properly
+- Evidence: Connection monitoring shows steady increase, no cleanup
+
+**Why 3: Why weren't database connections being released?**
+- Answer: New feature deployed last week has memory leak
+- Evidence: Code review shows missing connection.close() statements
+
+**Why 4: Why did the memory leak make it to production?**
+- Answer: Testing didn't include load testing with realistic traffic
+- Evidence: Test environment only simulates 10% of production load
+
+**Why 5: Why wasn't proper load testing done?**
+- Answer: Testing procedures outdated, no requirements for load testing new features
+- Evidence: Last procedure update was 2 years ago
+
+**ROOT CAUSE IDENTIFIED:**
+Inadequate testing procedures that don't require load testing for new features, allowing code defects to reach production systems.
+
+## CONTRIBUTING FACTORS ANALYSIS
+
+### Primary Cause Chain
+```
+Outdated Testing → Inadequate Load Testing → Code Defect Deployed → 
+Memory Leak → Connection Exhaustion → System Crash
 ```
 
-Problem: Production line stopped
+### Contributing Factors Map
+```
+Technical Factors:
+├── Memory leak in new feature code
+├── Database connection pool too small
+├── No automatic connection cleanup
+└── No circuit breakers for overload protection
 
-Why 1: Motor failed
-↓ Evidence: Burned windings, overheating damage
+Process Factors:
+├── Testing procedures 2 years old
+├── No mandatory load testing requirements
+├── No performance regression testing
+└── Deployment during peak hours
 
-Why 2: Motor overheated  
-↓ Evidence: Temperature logs show 95°C (limit 80°C)
+Environmental Factors:
+├── Traffic 300% higher than design capacity
+├── Peak usage coincides with deployment window
+└── Single database instance (no redundancy)
 
-Why 3: Cooling system blocked
-↓ Evidence: Dust accumulation in vents
-
-Why 4: Maintenance skipped
-↓ Evidence: Last cleaning 6 months ago (spec: monthly)
-
-Why 5: PM schedule not followed
-↓ Evidence: Resource constraints, competing priorities
-
-ROOT CAUSE: Inadequate preventive maintenance
-program governance and resource allocation
-
-Validation: 3 similar failures traced to same cause
-
+Human Factors:
+├── Developer unfamiliar with connection management
+├── Code reviewer missed connection leak
+├── Operations team not monitoring connections
+└── No escalation for performance warnings
 ```
 
-#### Fishbone Analysis
+## ROOT CAUSE VALIDATION
+
+**Evidence Supporting Root Cause:**
+✅ Code analysis confirms missing connection.close() in 3 functions
+✅ Timeline shows crash exactly 24 hours after feature deployment
+✅ Similar pattern in previous 2 incidents after deployments
+✅ Test logs show no load testing performed on recent features
+✅ Development team confirms no load testing requirements
+
+**Evidence Against:**
+❌ System handled similar load before (but without new memory leak)
+❌ Infrastructure monitoring shows adequate resources (but connections leaked)
+
+**Confidence Level: 95%** - Strong evidence supports testing procedures as root cause
+
+## IMMEDIATE CORRECTIVE ACTIONS
+
+### Emergency Fixes (Next 24 Hours)
+1. **Hotfix Deployment**
+   - Fix memory leak in new feature code
+   - Add proper connection cleanup
+   - Deploy during low-traffic hours
+   - Expected time: 4 hours
+
+2. **Database Configuration**
+   - Increase connection pool size from 100 to 200
+   - Enable connection timeout warnings
+   - Add automatic connection recycling
+   - Expected time: 2 hours
+
+3. **Monitoring Enhancement**
+   - Real-time connection pool monitoring
+   - Alerts at 70% pool utilization
+   - Automatic circuit breaker activation
+   - Expected time: 6 hours
+
+### Prevention Measures (Next 2 Weeks)
+
+4. **Testing Procedure Update**
+   - Mandate load testing for all new features
+   - Create realistic test data (100% production volume)
+   - Require performance regression testing
+   - Timeline: 1 week
+
+5. **Development Standards**
+   - Code review checklist for resource management
+   - Automated static analysis for leaks
+   - Training on database connection best practices
+   - Timeline: 2 weeks
+
+6. **Infrastructure Resilience**
+   - Database redundancy/clustering
+   - Connection pooling optimization
+   - Auto-scaling for traffic spikes
+   - Timeline: 1 month
+
+## SYSTEMIC SOLUTIONS
+
+### Process Improvements
+```
+Current State → Future State
+
+Manual Testing → Automated Load Testing
+├── No load requirements → Mandatory for all features
+├── 10% test data → 100% production simulation
+├── Manual verification → Automated regression tests
+└── Optional reviews → Required sign-off
+
+Deployment Process → Safe Deployment
+├── Peak hour deploys → Off-hours only
+├── No rollback plan → Automated rollback
+├── Manual monitoring → Real-time alerts
+└── Single instance → Redundant systems
 ```
 
-                    PRODUCTION FAILURE
-                           │
-    People          Methods │ Materials      Machine
-      │                │    │    │             │
+### Cultural Changes
+- **"Fail Fast" Mindset**: Catch issues in testing, not production
+- **Performance First**: Consider scalability in every feature
+- **Ownership**: Developers responsible for production performance
+- **Learning Culture**: RCA findings shared across teams
 
-Staff shortage──┐ │ │ └─Dust──┐ │
-│ │ │ │ │
-Training gaps──┼──────┼────┼─────────────┼────┤
-│ │ │ │ │
-Priorities─────┘ │ │ Vibration─┴────Age
-│ │ │
-No PM checklist──────┘ └─Inferior bearing──┘
-│
-Unclear schedule─────────┘ Environment not controlled
-│ │
-Budget cuts─────────────┴──────────────┘
-│ │
-Measurement Environment
+## RISK MITIGATION
 
-Primary Cause Path:
-Management (Budget) → Methods (PM Schedule) →
-Machine (Maintenance) → Failure
+### Short-term Risks (Next Month)
+1. **Another Memory Leak**: Review all recent code changes
+2. **Traffic Surge**: Implement auto-scaling alerts
+3. **Database Failure**: Set up read replicas
+4. **Knowledge Gap**: Document all system dependencies
 
+### Long-term Resilience (Next Quarter)
+1. **Microservices Architecture**: Isolate failure domains
+2. **Chaos Engineering**: Proactive failure testing
+3. **Performance Budgets**: Max response time limits
+4. **Automated Remediation**: Self-healing systems
+
+## MONITORING PLAN
+
+### Leading Indicators (Predict Problems)
+- Code complexity metrics trending up
+- Test coverage below 80%
+- Memory usage increasing >5% per week
+- Database connection usage >60%
+
+### Lagging Indicators (Confirm Success)
+- System uptime >99.9%
+- Customer complaints <5 per month
+- Mean time to recovery <15 minutes
+- Zero memory leak incidents
+
+### Alert Thresholds
+```
+Severity Levels:
+🟢 Normal: <50% resource utilization
+🟡 Warning: 50-70% utilization → Alert team
+🟠 Critical: 70-90% utilization → Auto-scale
+🔴 Emergency: >90% utilization → Circuit breaker
 ```
 
-#### Fault Tree Analysis
-```
+## IMPLEMENTATION TIMELINE
 
-Production Line Failure
-├─── AND ───┤
-│ │
-Motor Fail No Backup
-│ │
-├─── OR ───┤ Eliminated
-│ │ (cost saving)
-Electrical Mechanical
-│ │
-● ├───OR───┤
-(Rare) │ │
-Bearing Overheating
-│ │
-● ├───AND───┤
-(Common) │ │
-High Load No Cooling
-│ │
-● ├───OR───┤
-(Normal) │ │
-Blocked Failed
-│ │
-● ●
-(Primary) (Secondary)
+### Week 1: Emergency Response
+- Deploy hotfix for memory leak
+- Improve monitoring and alerts
+- Update database configuration
+- Success metric: Zero crashes
 
-Critical Path Probability:
-P(Failure) = 0.85 × 0.90 × 0.95 = 0.73
-Unacceptably high risk level
+### Week 2-4: Process Fixes  
+- Update testing procedures
+- Implement load testing requirements
+- Train development team
+- Success metric: All new features load tested
 
-```
+### Month 2-3: Infrastructure Resilience
+- Database clustering implementation
+- Auto-scaling configuration
+- Circuit breaker deployment
+- Success metric: System survives 2x traffic load
 
-### CONTRIBUTING FACTORS ANALYSIS
+## LESSONS LEARNED
 
-#### Systemic Issues Identified
-```
+### What Worked Well
+✅ Quick incident response (45-minute recovery)
+✅ Good monitoring captured failure details
+✅ Team collaboration during crisis
+✅ Customer communication was transparent
 
-Organizational Factors:
-┌─────────────────────────────────────────────┐
-│ Level 1: Immediate Technical Causes │
-│ • Mechanical wear and contamination │
-│ • Inadequate cooling system design │
-│ • No redundancy in critical path │
-├─────────────────────────────────────────────┤
-│ Level 2: Process & Procedure Gaps │
-│ • PM schedule not enforced │
-│ • No escalation for missed maintenance │
-│ • Inadequate monitoring thresholds │
-├─────────────────────────────────────────────┤
-│ Level 3: Management System Failures │
-│ • Maintenance budget reduced 40% │
-│ • KPIs focus on output, not reliability │
-│ • Risk assessment outdated (2 years) │
-├─────────────────────────────────────────────┤
-│ Level 4: Cultural Root Causes │
-│ • Production prioritized over maintenance │
-│ • Reactive vs preventive mindset │
-│ • Lessons learned not implemented │
-└─────────────────────────────────────────────┘
+### What Needs Improvement
+❌ Testing procedures haven't evolved with system growth
+❌ Performance requirements not clearly defined
+❌ No proactive capacity planning
+❌ Deployment timing needs better coordination
 
-Deepest Root: Short-term thinking culture
-driven by quarterly financial pressure
+### Key Insights
+1. **Testing is Investment**: Poor testing costs 100x more in production
+2. **Load Patterns Change**: Test with current traffic, not historical
+3. **Resource Leaks Accumulate**: Small leaks become big failures
+4. **Procedures Need Maintenance**: Update testing as system evolves
 
-````
-
-#### Human Factors Analysis
-```python
-# Human Error Contribution Analysis
-human_factors = {
-    'skill_based_errors': {
-        'maintenance_execution': 0.15,
-        'inspection_quality': 0.10
-    },
-    'rule_based_errors': {
-        'procedure_violations': 0.35,
-        'schedule_adherence': 0.40
-    },
-    'knowledge_based_errors': {
-        'risk_assessment': 0.25,
-        'troubleshooting': 0.20
-    }
-}
-
-# Primary human factor: Rule-based (75%)
-# Root cause: Systemic pressure to skip PM
-
-organizational_factors = {
-    'workload': 'Maintenance staff at 120% capacity',
-    'resources': 'Tools and parts budget cut 40%',
-    'pressure': 'Production targets increased 15%',
-    'training': 'Last reliability training: 18 months ago'
-}
-
-# Conclusion: System set up humans to fail
-````
-
-### FAILURE MODE ANALYSIS
-
-#### FMEA Results
-
-```
-Failure Mode and Effects Analysis:
-┌─────────────────┬──────┬────────┬──────┬─────┬──────────┐
-│ Failure Mode    │ Sev. │ Occur. │ Det. │ RPN │ Actions  │
-├─────────────────┼──────┼────────┼──────┼─────┼──────────┤
-│ Motor overheat  │  8   │   7    │  5   │ 280 │ Critical │
-│ Bearing wear    │  7   │   8    │  4   │ 224 │ High     │
-│ Control failure │  9   │   3    │  3   │  81 │ Medium   │
-│ Power surge     │  8   │   2    │  7   │ 112 │ Medium   │
-│ Contamination   │  6   │   9    │  6   │ 324 │ Critical │
-└─────────────────┴──────┴────────┴──────┴─────┴──────────┘
-
-RPN = Severity × Occurrence × Detection (Max: 1000)
-
-Top Risk: Contamination (324)
-- High occurrence due to environment
-- Moderate detection capability
-- Preventable with proper maintenance
-```
-
-#### Failure Pattern Recognition
-
-```
-Historical Failure Analysis:
-            J  F  M  A  M  J  J  A  S  O  N  D
-2022:       -  -  -  -  -  ×  -  -  -  ×  -  -
-2023:       -  -  ×  -  -  ×  -  -  ×  -  -  ×
-2024:       -  -  ×  ?  ?  ?  ?  ?  ?  ?  ?  ?
-
-Pattern Detected:
-- 3-month interval degradation
-- Summer months higher risk (heat + dust)
-- Accelerating frequency
-
-Weibull Analysis:
-β (shape) = 2.3 → Wear-out failure
-η (scale) = 92 days → Expected life
-γ (location) = 15 days → Failure-free period
-
-Recommendation: PM interval = 60 days (safety factor 1.5)
-```
-
-### ROOT CAUSE VALIDATION
-
-#### Evidence Chain
-
-```
-Supporting Evidence Map:
-┌─────────────────────────────────────────────┐
-│ Hypothesis: Inadequate PM is root cause     │
-├─────────────────────────────────────────────┤
-│ Evidence For:                               │
-│ ✓ PM records show 60% completion rate      │
-│ ✓ All 3 failures preceded by missed PM     │
-│ ✓ Similar equipment with PM = 0 failures   │
-│ ✓ Cost data shows 40% maintenance budget cut│
-│ ✓ Staff interviews confirm resource issues │
-├─────────────────────────────────────────────┤
-│ Evidence Against:                           │
-│ ✗ One failure had recent PM (contaminated) │
-│ ✗ Design may be inadequate for environment │
-├─────────────────────────────────────────────┤
-│ Conclusion: Strong evidence (90% confidence)│
-│ Secondary factor: Environmental design      │
-└─────────────────────────────────────────────┘
-```
-
-### CORRECTIVE ACTION PLAN
-
-#### Immediate Actions (0-7 days)
-
-```
-Quick Response Plan:
-┌─────────────────────────────────────────────┐
-│ Action 1: Emergency PM on all critical motors│
-│ Owner: Maintenance Manager                  │
-│ Timeline: 48 hours                         │
-│ Resources: Overtime approved               │
-│ Success Metric: 100% inspection complete   │
-├─────────────────────────────────────────────┤
-│ Action 2: Install vibration monitors       │
-│ Owner: Engineering                         │
-│ Timeline: 7 days                          │
-│ Resources: $15K approved                  │
-│ Success Metric: Real-time alerts active   │
-├─────────────────────────────────────────────┤
-│ Action 3: Temporary redundancy plan        │
-│ Owner: Operations                          │
-│ Timeline: Immediate                       │
-│ Resources: Standby equipment identified   │
-│ Success Metric: 2-hour recovery possible  │
-└─────────────────────────────────────────────┘
-```
-
-#### Systemic Solutions (30-90 days)
-
-```
-Root Cause Elimination Strategy:
-
-1. MAINTENANCE SYSTEM REDESIGN
-   ├── Implement Reliability-Centered Maintenance
-   ├── Deploy CMMS with automated scheduling
-   ├── Create maintenance scorecard/KPIs
-   └── Establish maintenance budget protection
-
-2. CULTURAL TRANSFORMATION
-   ├── Executive sponsorship for reliability
-   ├── Operator-based maintenance program
-   ├── Reliability training for all staff
-   └── Reward preventive actions
-
-3. TECHNICAL IMPROVEMENTS
-   ├── Upgrade to sealed motor designs
-   ├── Install predictive monitoring
-   ├── Improve environmental controls
-   └── Build redundancy for critical paths
-
-4. GOVERNANCE STRUCTURE
-   ├── Monthly reliability reviews
-   ├── Root cause tracking system
-   ├── Maintenance/Production balance metrics
-   └── Continuous improvement process
-
-Investment: $450K
-ROI Period: 8 months
-Risk Reduction: 85%
-```
-
-### PREVENTION FRAMEWORK
-
-#### Barrier Analysis
-
-```
-Swiss Cheese Model - Failure Prevention Layers:
-
- Hazard: Equipment Failure
-    │
-    ▼    ┌─────────────┐
-Layer 1: │   Design     │ ← Holes: Environmental specs
-    ▼    └──────◯──────┘
-Layer 2: │ Maintenance  │ ← Holes: Skipped PM
-    ▼    └────◯────────┘
-Layer 3: │ Monitoring   │ ← Holes: Threshold too high
-    ▼    └──────◯──────┘
-Layer 4: │  Response    │ ← Holes: Slow escalation
-    ▼    └────◯────────┘
-         Failure Occurs
-
-Strengthening Strategy:
-- Layer 1: Environmental upgrades (30%)
-- Layer 2: PM automation (50%)
-- Layer 3: Predictive analytics (60%)
-- Layer 4: Rapid response team (40%)
-
-Combined effectiveness: 94% prevention rate
-```
-
-#### Monitoring & Verification
-
-```python
-# Effectiveness Monitoring System
-monitoring_plan = {
-    'leading_indicators': {
-        'pm_completion_rate': {
-            'target': 95,
-            'frequency': 'weekly',
-            'owner': 'maintenance_manager'
-        },
-        'vibration_trends': {
-            'threshold': '+20% baseline',
-            'frequency': 'continuous',
-            'owner': 'reliability_engineer'
-        },
-        'mtbf_tracking': {
-            'target': 120, # days
-            'frequency': 'monthly',
-            'owner': 'operations_manager'
-        }
-    },
-    'lagging_indicators': {
-        'unplanned_downtime': {
-            'target': '<2%',
-            'frequency': 'monthly'
-        },
-        'failure_recurrence': {
-            'target': 0,
-            'frequency': 'quarterly'
-        }
-    }
-}
-
-# Alert if any indicator deviates >10% from target
-# Monthly review of all metrics
-# Quarterly root cause effectiveness audit
-```
-
-### LESSONS LEARNED
-
-#### Key Insights
-
-```
-Critical Success Factors Identified:
-┌─────────────────────────────────────────────┐
-│ 1. Maintenance is not a cost center        │
-│    → It's a profit protection investment   │
-│                                            │
-│ 2. Early warning signals often ignored     │
-│    → Need automated escalation            │
-│                                            │
-│ 3. Budget cuts create hidden debt          │
-│    → Deferred maintenance = future failure │
-│                                            │
-│ 4. Culture drives behavior                 │
-│    → Metrics and rewards must align       │
-│                                            │
-│ 5. Single points of failure are risks     │
-│    → Redundancy needed for critical paths │
-└─────────────────────────────────────────────┘
-
-Implementation Success Factors:
-• Executive commitment essential
-• Cross-functional collaboration required
-• Data-driven decision making
-• Continuous monitoring and adjustment
-• Learning culture development
-```
-
-### APPENDICES
-
-#### A. Investigation Methodology
-
-[Detailed investigation process, data collection methods, analysis tools]
-
-#### B. Technical Analysis Data
-
-[Failure analysis reports, test results, engineering calculations]
-
-#### C. Financial Impact Analysis
-
-[Cost of failure, ROI calculations, budget requirements]
-
-#### D. Implementation Toolkit
-
-[Templates, checklists, monitoring dashboards, training materials]
-
-```
-
-## Usage Instructions
-1. Clearly define the problem and its impacts
-2. Gather comprehensive data from multiple sources
-3. Use systematic investigation methods (5 Whys, Fishbone, etc.)
-4. Look beyond immediate causes to systemic issues
-5. Validate root causes with evidence
-6. Design solutions that address root causes, not symptoms
-7. Include prevention measures to avoid recurrence
-8. Establish monitoring to verify effectiveness
-
-## Examples
-### Example 1: Software System Outage Analysis
-**Input**:
-```
-
-{{problem_type}}: Technical - critical system outage
-{{incident_details}}: Payment processing down for 4 hours, $2M lost revenue
-{{frequency}}: Second time in 3 months
-{{data_available}}: System logs, error messages, deployment history
-{{specific_problem}}: Database connection timeouts leading to cascade failure
-
-```
-
-**Output**: [Comprehensive analysis revealing configuration drift as root cause, with inadequate change management process, missing database connection pooling, and lack of circuit breakers, including technical fixes and process improvements]
+Would you like me to dive deeper into any specific aspect of the analysis or help develop detailed implementation plans?
 
 ## Related Prompts
-- [Problem Solving Strategist](/prompts/problem-solving/problem-solving-strategist.md)
-- [Quality Improvement Expert](/prompts/optimization/quality-improvement-expert.md)
-- [Incident Response Commander](/prompts/management/incident-response-commander.md)
 
-## Research Notes
-- Combines multiple RCA methodologies for comprehensive analysis
-- Emphasizes systemic thinking over blame assignment
-- Includes human factors and organizational culture analysis
-- Provides both immediate fixes and long-term solutions
-- Integrates prevention and monitoring frameworks
-```
+- [Problem Solving Strategist](./problem-solving-strategist.md)
+- [Incident Response Expert](./incident-response-expert.md)
+- [Quality Improvement Analyst](./quality-improvement-analyst.md)

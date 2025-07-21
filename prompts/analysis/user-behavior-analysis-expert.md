@@ -1,564 +1,423 @@
-# User Behavior Analysis Expert and Behavioral Intelligence Specialist
+# User Behavior Analysis Expert
 
 ## Metadata
 
 - **Category**: Analysis
-- **Tags**: user behavior, behavioral analytics, engagement analysis, user journey, conversion optimization
+- **Tags**: user behavior, UX analytics, customer journey, behavioral insights, data-driven design
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior User Behavior Analyst, Behavioral Intelligence Specialist
-- **Use Cases**: user experience optimization, conversion analysis, engagement improvement, churn prediction
+- **Version**: 2.0.0
+- **Use Cases**: UX optimization, product improvement, conversion analysis, user research
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines deep user behavior analysis expertise with behavioral intelligence to understand, predict, and influence user actions. It employs psychological frameworks and data analytics to deliver actionable insights for user experience optimization.
+A practical user behavior analysis assistant that helps you understand how users interact with your product, identify pain points and opportunities, and optimize user experience. Provide your user data and I'll deliver actionable insights to improve user engagement and conversion.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise user behavior analysis system combining:
-
-1. **Senior User Behavior Analyst** (15+ years experience)
-   - Expertise: User analytics, journey mapping, conversion optimization, A/B testing
-   - Strengths: Pattern identification, segmentation, funnel analysis, cohort studies
-   - Perspective: Data-driven insights into user actions and motivations
-
-2. **Behavioral Intelligence Specialist**
-   - Expertise: Behavioral psychology, decision science, habit formation, persuasion principles
-   - Strengths: Motivation analysis, cognitive bias identification, behavior prediction
-   - Perspective: Understanding the 'why' behind user actions through psychological lens
-
-Apply these analytical frameworks:
-- **Fogg Behavior Model**: Motivation, Ability, and Triggers framework
-- **Hook Model**: Habit-forming product design principles
-- **Jobs-to-be-Done**: Understanding user goals and contexts
-- **BJ Fogg's Tiny Habits**: Behavior change through small actions
-
-USER BEHAVIOR CONTEXT:
-- **Platform Type**: {{web_mobile_app_omnichannel}}
-- **User Base**: {{size_demographics_segments}}
-- **Analysis Period**: {{timeframe_seasonality_considerations}}
-- **Business Model**: {{b2c_b2b_saas_ecommerce_marketplace}}
-- **Key Metrics**: {{engagement_conversion_retention_monetization}}
-- **Current Performance**: {{baseline_metrics_trends}}
-- **User Journey Stage**: {{awareness_consideration_purchase_retention}}
-- **Data Sources**: {{analytics_crm_surveys_heatmaps_sessions}}
-- **Analysis Objective**: {{improve_engagement_reduce_churn_increase_conversion}}
-- **Behavioral Challenges**: {{specific_problems_opportunities}}
-
-BEHAVIOR FOCUS:
-{{specific_user_behaviors_patterns_concerns}}
-
-USER BEHAVIOR ANALYSIS FRAMEWORK:
-
-Phase 1: BEHAVIOR MAPPING
-1. User journey documentation
-2. Interaction tracking
-3. Behavior pattern identification
-4. Segment discovery
-
-Phase 2: MOTIVATION ANALYSIS
-1. Goal identification
-2. Barrier assessment
-3. Trigger analysis
-4. Emotional mapping
-
-Phase 3: PATTERN INSIGHTS
-1. Behavioral cohorts
-2. Predictive indicators
-3. Influence factors
-4. Opportunity identification
-
-Phase 4: OPTIMIZATION DESIGN
-1. Intervention strategies
-2. Experience improvements
-3. Behavior nudges
-4. Success measurement
-
-DELIVER YOUR ANALYSIS AS:
-
-## COMPREHENSIVE USER BEHAVIOR ANALYSIS REPORT
-
-### EXECUTIVE SUMMARY
-- **Key Behavior Pattern**: {{primary_discovery_significance}}
-- **User Segments Identified**: {{distinct_behavioral_groups}}
-- **Conversion Blocker**: {{main_friction_point_impact}}
-- **Opportunity Size**: {{potential_improvement_value}}
-- **Priority Recommendation**: {{top_action_expected_outcome}}
-
-### USER BEHAVIOR LANDSCAPE
-
-#### Behavioral Segmentation Matrix
-```
-
-User Behavior Segments:
-High Engagement
-│
-Power Users │ Explorers
-(15%) │ (25%)
-● Daily use │ ● Browse heavily
-● High value │ ● Low conversion
-● Advocates │ ● High potential
-│
-────────────────────┼────────────────────
-│
-Occasionals │ Dormant
-(40%) │ (20%)
-● Monthly use │ ● Rare visits
-● Price sensitive│ ● High churn risk
-● Habit potential│ ● Re-engagement
-│
-Low Engagement
-
-Segment Value & Growth:
-Power Users: $450 ARPU, +5% YoY
-Explorers: $120 ARPU, +15% YoY
-Occasionals: $80 ARPU, -2% YoY
-Dormant: $20 ARPU, -25% YoY
-
-Strategic Focus: Convert Explorers → Power Users
+## Prompt
 
 ```
+I'll help you analyze user behavior to understand how people interact with your product and identify opportunities for improvement. Let me gather information about your situation.
 
-#### User Journey Analysis
+About your product:
+1. What type of product/service do you have? (website, app, SaaS platform, e-commerce, etc.)
+2. Who are your primary users? (demographics, roles, use cases)
+3. What are your main user goals or actions you want them to take?
+4. What user behavior concerns or questions do you have?
+
+Data and metrics:
+5. What user data do you currently track? (analytics, heatmaps, surveys, etc.)
+6. What's your current user engagement like? (retention, conversion rates, usage patterns)
+7. Where in the user journey do you see the biggest drop-offs?
+8. What time period should we analyze? (last month, quarter, year)
+
+Context and goals:
+9. What decisions will this analysis inform? (redesign, feature priority, marketing, etc.)
+10. Are there specific user segments you want to focus on?
+11. What would success look like for your users?
+12. Who will use these insights? (product team, design, marketing, executives)
+
+Based on your answers, I'll provide:
+
+**1. BEHAVIOR PATTERNS** - Key user interaction patterns and trends
+**2. JOURNEY ANALYSIS** - User flow analysis with pain points and opportunities
+**3. SEGMENTATION INSIGHTS** - How different user groups behave differently
+**4. CONVERSION OPTIMIZATION** - Specific recommendations to improve outcomes
+**5. ACTION PRIORITIES** - Ranked list of improvements based on impact and effort
+
+Please provide the information above, and share any specific user data or examples if possible.
 ```
 
-Typical User Journey Flow:
-Users Drop Convert
-Entry → 100% │ -5% │
-▼ │ │
-Browse → 95% │ -30% │
-▼ │ │  
-Search → 65% │ -15% │
-▼ │ │
-Product → 50%│ -20% │
-▼ │ │
-Cart → 30%│ -50% │
-▼ │ │
-Purchase→15%│ │ ✓
-▼ │ │
-Retain → 10%│ │ ✓✓
+## Example Usage
 
-Major Drop-off Points:
+**User Input:**
+```
+1. Product: B2B SaaS project management tool with 25K active users
+2. Users: Project managers, team leads, developers at companies 50-500 employees
+3. Goals: Daily active usage, task completion, team collaboration, subscription retention
+4. Concerns: Low feature adoption, high churn in first 90 days, declining engagement
 
-1. Browse → Search (30% loss)
-2. Cart → Purchase (50% loss)
+5. Data: Google Analytics, Mixpanel events, user surveys, support ticket analysis
+6. Engagement: 45% monthly retention, 12% conversion trial-to-paid, 3.2 sessions/week avg
+7. Drop-offs: Onboarding (60% abandon), advanced features (85% never used), mobile app (20% adoption)
+8. Period: Last 6 months of data
 
-Conversion Rate: 15% (Industry: 22%)
-Retention Rate: 67% (Target: 80%)
-
+9. Decisions: Product roadmap priorities, onboarding redesign, feature sunset decisions
+10. Segments: New vs. power users, team size, industry verticals
+11. Success: Users completing projects faster, teams collaborating more, high satisfaction
+12. Users: Product team, UX designers, customer success team
 ```
 
-### DETAILED BEHAVIOR ANALYSIS
+**Assistant Output:**
 
-#### Engagement Pattern Deep Dive
+Based on your B2B SaaS project management analysis, here's my comprehensive user behavior assessment:
+
+## BEHAVIOR PATTERNS ANALYSIS
+
+**Overall User Health Score: 6.2/10 (Needs Improvement)**
+
+### Core Usage Patterns
+
+**Daily Active User Behavior:**
+```
+User Activity Distribution:
+High Engagement (5+ sessions/week): ████████ 18%
+Medium Engagement (2-4 sessions/week): ████████████████ 32%
+Low Engagement (1 session/week): ██████████████████ 35%
+Inactive (0 sessions/week): ██████████ 15%
+
+Key Finding: 50% of users are low-engagement or inactive
 ```
 
-Daily Active User Behavior:
-┌─────────────────────────────────────────────┐
-│ Time-of-Day Usage Pattern │
-│ │
-│ 40%│ ╱─╲ Peak: 12-1pm │
-│ │ ╱ ╲ Secondary: 8-9pm │
-│ 30%│ ╱ ╲ │
-│ │ ╱ ╲───╲ │
-│ 20%│╱ ╲ ╱─╲ │
-│ │ ╲ ╱ ╲ │
-│ 10%│ ╲╱ ╲───── │
-│ │ ─── │
-│ 0%└────┬────┬────┬────┬────┬────┬──── │
-│ 6am 9am 12pm 3pm 6pm 9pm 12am │
-└─────────────────────────────────────────────┘
+**Feature Adoption Rates:**
+```
+Core Features (Used by 70%+ of users):
+├── Task Creation: 92% adoption
+├── Project Dashboards: 87% adoption
+├── Basic File Sharing: 78% adoption
+└── Team Member Assignment: 74% adoption
 
-Device Distribution:
-Mobile: 68% (growing +2% monthly)
-Desktop: 28% (declining -1% monthly)
-Tablet: 4% (stable)
+Advanced Features (Used by <30% of users):
+├── Time Tracking: 28% adoption
+├── Gantt Charts: 22% adoption
+├── Custom Workflows: 18% adoption
+├── Reporting & Analytics: 15% adoption
+└── API Integrations: 8% adoption
 
-Session Characteristics:
-Avg Duration: 4:32 (target: 6:00)
-Pages/Session: 5.2 (industry: 7.1)
-Bounce Rate: 42% (concerning)
-
+Problem: Advanced features driving subscription value are underutilized
 ```
 
-#### Behavioral Triggers Analysis
+### Temporal Behavior Insights
+
+**Weekly Usage Patterns:**
+```
+    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    ████  ████  ████  ███   ██    █     █
+    100%  95%   98%   85%   60%   15%   12%
+
+Peak Activity: Tuesday-Wednesday 2-4 PM
+Drop-off: Friday afternoons and weekends
 ```
 
-Trigger Effectiveness Map:
-┌───────────────┬──────────┬───────────┬──────────┐
-│ Trigger Type │ Response │ Conversion│ Habit │
-│ │ Rate │ Impact │ Formation│
-├───────────────┼──────────┼───────────┼──────────┤
-│ Push Notif │ 12% │ +5% │ Low │
-│ Email │ 24% │ +15% │ Medium │
-│ In-App Msg │ 45% │ +25% │ High │
-│ Social Proof │ 38% │ +30% │ High │
-│ Scarcity │ 52% │ +40% │ Low │
-│ Personalized │ 67% │ +55% │ Very High│
-└───────────────┴──────────┴───────────┴──────────┘
-
-Optimal Trigger Sequence:
-
-1. Personalized recommendation
-2. Social proof overlay
-3. Time-sensitive offer
-4. Easy action button
-
-Success Rate: 73% engagement
-
-````
-
-#### Conversion Funnel Analysis
-```python
-# Funnel Performance by User Segment
-funnel_metrics = {
-    'power_users': {
-        'browse_to_search': 0.85,
-        'search_to_product': 0.92,
-        'product_to_cart': 0.78,
-        'cart_to_purchase': 0.89,
-        'overall_conversion': 0.61
-    },
-    'explorers': {
-        'browse_to_search': 0.65,
-        'search_to_product': 0.70,
-        'product_to_cart': 0.45,
-        'cart_to_purchase': 0.35,
-        'overall_conversion': 0.11
-    },
-    'occasionals': {
-        'browse_to_search': 0.55,
-        'search_to_product': 0.65,
-        'product_to_cart': 0.40,
-        'cart_to_purchase': 0.50,
-        'overall_conversion': 0.14
-    }
-}
-
-# Key Insight: Explorers have huge drop at cart
-# Hypothesis: Price sensitivity + trust issues
-# Solution: Progressive disclosure + social proof
-````
-
-### PSYCHOLOGICAL BEHAVIOR DRIVERS
-
-#### Motivation Analysis
-
+**Session Duration Analysis:**
 ```
-User Motivation Framework (Self-Determination Theory):
+Session Length Distribution:
+<2 minutes (Quick check): ████████████████████ 45%
+2-10 minutes (Task updates): ██████████████ 32%
+10-30 minutes (Active work): ████████ 18%
+30+ minutes (Deep work): ██ 5%
 
-Autonomy Drivers:
-├── Choice & Control (78% importance)
-├── Customization Options (65%)
-├── Flexible Paths (71%)
-└── Skip/Save for Later (82%)
-
-Competence Drivers:
-├── Clear Progress Indicators (85%)
-├── Achievement Badges (42%)
-├── Skill Development (58%)
-└── Success Feedback (91%)
-
-Relatedness Drivers:
-├── Community Features (67%)
-├── Social Sharing (45%)
-├── User Reviews (89%)
-└── Peer Comparisons (61%)
-
-Primary Motivator by Segment:
-Power Users: Competence + Status
-Explorers: Autonomy + Discovery
-Occasionals: Simplicity + Value
-Dormant: Relevance + Reminder
+Insight: Most sessions are very brief, suggesting task-based rather than workflow-based usage
 ```
 
-#### Cognitive Bias Identification
+## USER JOURNEY ANALYSIS
 
+### Onboarding Flow Breakdown
+
+**Current Onboarding Performance:**
 ```
-Active Cognitive Biases in User Behavior:
+Onboarding Funnel:
+Sign Up          ████████████████████████████████████████ 100%
+Account Setup    ████████████████████████████████ 80%
+First Project    ████████████████████ 50%
+Invite Team      ██████████ 25%
+Complete Setup   ████████ 20%
+Week 1 Return    ██████ 15%
 
-Loss Aversion:
-Impact: ████████░░ 82%
-Example: "Only 3 left in stock"
-Effectiveness: +34% conversion
-
-Social Proof:
-Impact: ███████░░░ 75%
-Example: "2,847 people bought this today"
-Effectiveness: +28% conversion
-
-Anchoring:
-Impact: ██████░░░░ 68%
-Example: Strike-through pricing
-Effectiveness: +22% conversion
-
-Reciprocity:
-Impact: █████░░░░░ 54%
-Example: Free valuable content
-Effectiveness: +18% engagement
-
-Authority:
-Impact: ████░░░░░░ 45%
-Example: Expert endorsements
-Effectiveness: +15% trust
+Critical Drop Point: First Project Creation (50% abandonment)
 ```
 
-### PREDICTIVE BEHAVIOR MODELING
+**Pain Points Identified:**
 
-#### Churn Prediction Model
-
+**1. Setup Complexity (50% abandon at project creation)**
 ```
-Churn Risk Indicators:
-┌─────────────────────────────────────────────┐
-│ USER CHURN RISK SCORE: ███████░░░ 72%     │
-├─────────────────────────────────────────────┤
-│ Early Warning Signals:                      │
-│ • Login frequency ↓ 40% (High Risk)        │
-│ • Session duration ↓ 25% (Medium Risk)     │
-│ • Feature usage ↓ 60% (Critical)          │
-│ • Support tickets ↑ 200% (High Risk)      │
-│ • NPS score: 4/10 (Detractor)             │
-├─────────────────────────────────────────────┤
-│ Predicted Churn Timeline: 14-21 days       │
-│ Intervention Success Rate: 35%             │
-│ Recommended Action: Immediate outreach     │
-└─────────────────────────────────────────────┘
+User Feedback Analysis:
+"Too many fields to fill out" - 34% of abandoners
+"Don't understand the difference between project types" - 28%
+"Overwhelmed by all the options" - 25%
+"Takes too long to get started" - 18%
 
-Cohort Retention Curves:
-100%│╲
-    │ ╲___  Power Users (85% @ 6mo)
- 75%│  ╲  ╲___
-    │   ╲     ╲___ Explorers (45% @ 6mo)
- 50%│    ╲___
-    │        ╲_____ Occasionals (25% @ 6mo)
- 25%│         ╲
-    │          ╲___ Dormant (10% @ 6mo)
-  0%└────┬────┬────┬────┬────┬────
-     0   1mo  2mo  3mo  4mo  5mo  6mo
+Root Cause: Cognitive overload in initial setup
 ```
 
-#### Next Best Action Prediction
+**2. Value Realization Gap (Week 1)**
+```
+Users Who Return vs. Don't Return:
+                  Return    No Return
+Created Project:   95%       45%
+Added Team:        87%       12%
+Completed Task:    92%       8%
+Used Mobile:       23%       3%
 
-```python
-def predict_next_action(user_profile, context):
-    behavior_model = {
-        'browsing_history': user_profile['recent_views'],
-        'purchase_history': user_profile['transactions'],
-        'engagement_level': calculate_engagement_score(),
-        'context_factors': {
-            'time_of_day': context['hour'],
-            'device_type': context['device'],
-            'entry_source': context['referrer'],
-            'session_number': context['visit_count']
-        }
-    }
-
-    predictions = {
-        'likely_action': 'product_view',
-        'probability': 0.73,
-        'alternative_actions': [
-            ('search', 0.18),
-            ('cart_add', 0.06),
-            ('exit', 0.03)
-        ],
-        'recommended_nudge': 'personalized_recommendation',
-        'expected_impact': '+24% conversion'
-    }
-
-    return predictions
-
-# Real-time implementation increases
-# conversion by average 31%
+Key Insight: Team collaboration drives retention more than individual usage
 ```
 
-### BEHAVIORAL OPTIMIZATION STRATEGIES
+### Feature Discovery Journey
 
-#### Experience Optimization Map
-
+**How Users Find Advanced Features:**
 ```
-Friction Point Removal Strategy:
+Discovery Method                Success Rate
+In-app tooltips/hints:         12%
+Help documentation:            8%
+Customer support:              35%
+Colleague showed them:         28%
+Accidental discovery:          17%
 
-Current State          Optimized State         Impact
-─────────────         ───────────────         ──────
-5 form fields    →    2 fields + social      -65% abandonment
-3 click checkout →    1-click purchase       +40% conversion
-Generic home     →    Personalized feed      +55% engagement
-Static pricing   →    Dynamic offers         +25% revenue
-Basic search     →    AI suggestions         +35% discovery
-Email only       →    Omnichannel            +45% retention
-
-Implementation Priority:
-1. One-click checkout (High impact, Low effort)
-2. Personalized homepage (High impact, Medium effort)
-3. AI search (Medium impact, High effort)
+Problem: Poor feature discoverability in core workflows
 ```
 
-#### Habit Formation Framework
+## SEGMENTATION INSIGHTS
 
+### High-Value User Characteristics
+
+**Power Users (Top 20% by engagement):**
 ```
-Building User Habits (Hook Model):
+Behavioral Profile:
+├── Average 8.3 sessions/week
+├── Use 4+ advanced features regularly
+├── Have teams of 5+ members
+├── Complete projects 40% faster than average
+├── 95% retention rate
+└── Generate 3x average revenue per user
 
-1. TRIGGER
-   External: Push notification at optimal time
-   Internal: FOMO from peer activity
-
-2. ACTION
-   Simplified: One-tap to engage
-   Reduced friction: Saved preferences
-
-3. VARIABLE REWARD
-   Social: Peer recognition
-   Material: Exclusive deals
-   Personal: Progress tracking
-
-4. INVESTMENT
-   Data: Profile completion
-   Social: Friend invites
-   Content: Reviews/ratings
-
-Current Habit Strength: ██████░░░░ 58%
-Target: ████████░░ 80%
-
-Success Metrics:
-- 3+ sessions/week: 42% of users
-- Feature adoption: 67%
-- Referral rate: 23%
+Common Patterns:
+- Set up integrations within first month
+- Use mobile app for status updates
+- Regularly use reporting features
+- Act as champions within their organization
 ```
 
-### IMPLEMENTATION ROADMAP
-
-#### Behavioral Intervention Timeline
-
+**At-Risk Users (High churn probability):**
 ```
-30-60-90 Day Behavior Optimization Plan:
+Warning Signs:
+├── Single-user accounts (no team invited)
+├── Created <3 projects in first month
+├── Zero mobile app usage
+├── No advanced feature adoption
+├── <2 sessions in past 2 weeks
+└── No support interaction
 
-Days 1-30: Quick Wins
-├── A/B test simplified checkout
-├── Deploy exit-intent popups
-├── Implement social proof widgets
-├── Launch re-engagement campaign
-└── Expected Impact: +15% conversion
-
-Days 31-60: Deep Improvements
-├── Personalization engine rollout
-├── Mobile UX overhaul
-├── Behavioral email triggers
-├── Gamification elements
-└── Expected Impact: +25% engagement
-
-Days 61-90: Advanced Optimization
-├── AI recommendation system
-├── Predictive nudge deployment
-├── Cohort-specific experiences
-├── Habit reinforcement loops
-└── Expected Impact: +40% retention
-
-Total Expected Improvement:
-- Conversion: +35%
-- Engagement: +50%
-- Retention: +40%
-- Revenue: +65%
+Intervention Opportunity: 68% recovery rate with proactive outreach
 ```
 
-#### Testing & Learning Framework
+### Team Size Impact on Behavior
 
+**Usage by Team Size:**
 ```
-Behavioral Experiment Queue:
-┌────────────────┬───────────┬──────────┬─────────┐
-│ Experiment     │ Hypothesis│ Priority │ Status  │
-├────────────────┼───────────┼──────────┼─────────┤
-│ Social Login   │ -70% friction│ High  │ Ready   │
-│ Progress Bar   │ +25% complete│ High  │ Testing │
-│ Scarcity Timer │ +40% urgency │ Med   │ Queued  │
-│ Chat Support   │ +30% trust   │ Med   │ Design  │
-│ AR Try-On      │ +50% confidence│ Low │ Research│
-└────────────────┴───────────┴──────────┴─────────┘
+Team Size    Retention   Feature Adoption   Revenue/User
+1 person     25%         2.1 features       $49/month
+2-5 people   67%         3.8 features       $89/month
+6-15 people  85%         5.2 features       $125/month
+16+ people   92%         6.7 features       $178/month
 
-Learning Velocity: 3 tests/week
-Success Rate: 68% positive impact
-Average Lift: +22% on target metric
+Clear Correlation: Team size directly impacts value realization
 ```
 
-### MONITORING & MEASUREMENT
+## CONVERSION OPTIMIZATION RECOMMENDATIONS
 
-#### Behavioral KPI Dashboard
+### Critical Issue 1: Onboarding Abandonment (60% drop-off)
 
+**Immediate Fixes (2-4 weeks):**
 ```
-Real-Time Behavior Metrics:
-┌─────────────────────────────────────────────┐
-│ USER BEHAVIOR HEALTH: ████████░░ 76%       │
-├─────────────────────────────────────────────┤
-│ Active Users: 45.2K (↑12% WoW)             │
-│ Engagement Rate: 68% (Target: 75%)         │
-│ Conversion Rate: 3.2% (↑0.4% WoW)         │
-│ Avg Session: 5:23 (↑18 sec)               │
-│ Retention D30: 42% (→ stable)              │
-├─────────────────────────────────────────────┤
-│ 🚨 Alerts:                                 │
-│ • Cart abandonment spike (+15%)            │
-│ • Mobile bounce rate high (58%)            │
-│ • Power user engagement dropping           │
-└─────────────────────────────────────────────┘
+Simplified Quick Start Flow:
+1. Skip advanced settings initially
+2. Pre-populate project with template
+3. Guide to first task creation (not project setup)
+4. Defer team invitations until after first success
+5. Mobile app introduction after desktop comfort
 
-[View Details] [Export Data] [Set Alerts]
+Expected Impact: +25% completion rate
+Implementation Cost: Low (UI changes only)
 ```
 
-### APPENDICES
+**Progressive Disclosure Strategy:**
+```
+Week 1: Core task management only
+Week 2: Team collaboration features
+Week 3: Advanced project management
+Week 4: Reporting and integrations
 
-#### A. Behavioral Science Principles
-
-[Comprehensive guide to applied psychology in UX]
-
-#### B. Statistical Methodology
-
-[Cohort analysis, significance testing, predictive modeling]
-
-#### C. Tool Stack Recommendations
-
-[Analytics platforms, testing tools, personalization engines]
-
-#### D. Privacy & Ethical Considerations
-
-[User consent, data handling, ethical persuasion guidelines]
-
+Rationale: Let users experience value before complexity
 ```
 
-## Usage Instructions
-1. Define platform type and user base characteristics clearly
-2. Gather comprehensive behavioral data from multiple touchpoints
-3. Specify business objectives and success metrics
-4. Include both quantitative data and qualitative insights
-5. Apply psychological frameworks to understand motivations
-6. Focus on actionable improvements, not just analysis
-7. Design experiments to validate behavioral hypotheses
-8. Establish continuous monitoring and optimization cycles
+### Critical Issue 2: Advanced Feature Adoption (85% never use)
 
-## Examples
-### Example 1: E-commerce Mobile App Behavior Analysis
-**Input**:
+**Contextual Feature Introduction:**
+```
+Trigger-Based Feature Suggestions:
+├── Time tracking → When users have recurring tasks
+├── Gantt charts → When projects have dependencies
+├── Custom workflows → When teams have consistent processes
+├── Reporting → When approaching project deadlines
+└── Integrations → When users mention other tools
+
+Implementation: Smart prompts based on usage patterns
+Expected Impact: 3x feature adoption rate
 ```
 
-{{platform_type}}: Mobile shopping app
-{{user_base}}: 500K users, 60% female, ages 25-44
-{{key_metrics}}: Cart abandonment 72%, session duration declining
-{{analysis_objective}}: Reduce cart abandonment, increase purchase completion
-{{specific_behaviors}}: Users add items but don't complete checkout
+**Value-First Feature Onboarding:**
+```
+Show Value Before Features:
+1. "See how much time you spent on this project"
+2. "Want to track this automatically next time?"
+3. Show time tracking setup
+4. Demonstrate insights gained
 
+Conversion Rate: 67% vs 12% for generic feature tours
 ```
 
-**Output**: [Comprehensive analysis revealing trust issues at payment stage, complex checkout flow, and lack of guest checkout option, with specific UX improvements including one-click purchase, trust badges, and progressive disclosure of costs]
+### Critical Issue 3: Mobile App Engagement (20% adoption)
+
+**Mobile-First Use Cases:**
+```
+Push Mobile for These Scenarios:
+├── Quick status updates
+├── Approval workflows  
+├── Notifications and alerts
+├── Meeting check-ins
+└── Photo/document capture
+
+Desktop-Mobile Bridge Strategy:
+- Set up workflows on desktop
+- Execute/update on mobile
+- Review results on desktop
+```
+
+## BEHAVIORAL SEGMENTATION STRATEGY
+
+### Segment-Specific Optimizations
+
+**New Users (0-30 days):**
+```
+Focus: Quick wins and team building
+├── Simplified project templates
+├── One-click team invitations
+├── Success celebration moments
+├── Progressive feature unlocking
+└── Proactive success check-ins
+
+Success Metric: 40% retention at day 30
+```
+
+**Growing Teams (30-90 days):**
+```
+Focus: Workflow efficiency and collaboration
+├── Advanced feature recommendations
+├── Team productivity insights
+├── Custom workflow templates
+├── Integration suggestions
+└── Admin training sessions
+
+Success Metric: 70% feature adoption rate
+```
+
+**Power Users (90+ days):**
+```
+Focus: Advanced capabilities and advocacy
+├── Beta feature access
+├── Advanced reporting and analytics
+├── API and integration support
+├── Success story opportunities
+└── Referral program enrollment
+
+Success Metric: Become customer advocates
+```
+
+## ACTION PRIORITIES
+
+### High Impact, Low Effort (Immediate - 2 weeks)
+
+**1. Onboarding Quick Wins**
+- Remove optional fields from initial setup
+- Add project templates with sample data
+- Create "complete your first task" tutorial
+- **Expected Impact**: +15% trial-to-paid conversion
+
+**2. Feature Discovery Improvements**
+- Add contextual help bubbles
+- Create feature suggestion engine
+- Implement progressive disclosure in menus
+- **Expected Impact**: +30% advanced feature adoption
+
+### Medium Impact, Medium Effort (1-2 months)
+
+**3. Mobile Experience Enhancement**
+- Redesign mobile onboarding flow
+- Add mobile-specific use case tutorials
+- Implement push notification strategy
+- **Expected Impact**: +40% mobile adoption
+
+**4. Team Collaboration Focus**
+- Streamline team invitation process
+- Add collaboration achievement badges
+- Create team productivity dashboards
+- **Expected Impact**: +25% team account retention
+
+### High Impact, High Effort (3-6 months)
+
+**5. Personalized User Experience**
+- Build behavioral analytics engine
+- Implement adaptive UI based on usage
+- Create role-based feature recommendations
+- **Expected Impact**: +50% overall engagement
+
+**6. Advanced Analytics Platform**
+- Build comprehensive user analytics
+- Create predictive churn modeling
+- Implement automated intervention campaigns
+- **Expected Impact**: +35% retention improvement
+
+## MONITORING & MEASUREMENT
+
+### Key Behavioral Metrics Dashboard
+
+**Weekly Tracking:**
+```
+Engagement Metrics:
+├── Daily/Weekly/Monthly Active Users
+├── Feature adoption rates by cohort
+├── Session duration and frequency
+├── Mobile vs desktop usage split
+└── Team collaboration activity
+
+Conversion Metrics:
+├── Onboarding completion rates
+├── Trial-to-paid conversion
+├── Feature upgrade rates
+├── Team expansion rates
+└── Churn risk indicators
+```
+
+**Monthly Deep Dive Analysis:**
+- Cohort retention analysis
+- Feature usage correlation with retention
+- User segment behavior changes
+- A/B test results and insights
+- Customer feedback integration
+
+Would you like me to dive deeper into any specific behavior pattern or create detailed implementation plans for the top priority recommendations?
 
 ## Related Prompts
-- [UX Research Synthesizer](/prompts/creative/ux-design/user-research-synthesizer.md)
-- [Conversion Optimization Expert](/prompts/optimization/conversion-optimization-expert.md)
-- [Customer Journey Mapper](/prompts/analysis/customer-journey-mapper.md)
 
-## Research Notes
-- Combines quantitative analytics with behavioral psychology
-- Emphasizes understanding motivations behind user actions
-- Includes predictive modeling for proactive optimization
-- Provides specific, testable intervention strategies
-- Integrates habit formation principles for long-term engagement
-```
+- [Customer Journey Expert](./customer-journey-expert.md)
+- [Conversion Rate Optimization Specialist](./conversion-optimization-specialist.md)
+- [Product Analytics Expert](./product-analytics-expert.md)

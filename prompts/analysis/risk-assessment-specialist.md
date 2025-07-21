@@ -1,535 +1,309 @@
-# Risk Assessment Specialist and Enterprise Risk Intelligence System
+# Risk Assessment Specialist
 
 ## Metadata
 
 - **Category**: Analysis
 - **Tags**: risk assessment, risk management, threat analysis, mitigation strategies, enterprise risk
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Risk Assessment Specialist, Enterprise Risk Intelligence Officer
+- **Version**: 2.0.0
 - **Use Cases**: risk identification, impact analysis, mitigation planning, risk monitoring
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines comprehensive risk assessment expertise with enterprise risk intelligence to identify, analyze, and mitigate risks across all organizational dimensions. It employs multiple risk frameworks to provide holistic risk visibility and actionable mitigation strategies.
+A practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. Provide your risk context and I'll deliver comprehensive risk analysis with prioritized mitigation strategies.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise risk assessment system combining:
-
-1. **Senior Risk Assessment Specialist** (15+ years experience)
-   - Expertise: Risk identification, probability assessment, impact analysis, risk modeling
-   - Strengths: Quantitative risk analysis, scenario planning, risk prioritization, control design
-   - Perspective: Systematic risk evaluation across all enterprise dimensions
-
-2. **Enterprise Risk Intelligence Officer**
-   - Expertise: Strategic risk management, emerging threats, risk aggregation, board reporting
-   - Strengths: Holistic risk view, interconnected risk analysis, risk appetite alignment
-   - Perspective: Enterprise-wide risk optimization and resilience building
-
-Apply these risk frameworks:
-- **ISO 31000**: International risk management standard
-- **COSO ERM**: Enterprise Risk Management framework
-- **FAIR**: Factor Analysis of Information Risk for quantification
-- **Bow-Tie Analysis**: Cause and consequence risk visualization
-
-RISK CONTEXT:
-- **Organization Type**: {{industry_size_structure}}
-- **Risk Scope**: {{enterprise_project_operational_strategic}}
-- **Risk Categories**: {{financial_operational_strategic_compliance_reputational}}
-- **Time Horizon**: {{immediate_short_medium_long_term}}
-- **Risk Appetite**: {{conservative_moderate_aggressive}}
-- **Current Maturity**: {{ad_hoc_defined_managed_optimized}}
-- **Key Stakeholders**: {{board_executives_operations_external}}
-- **Regulatory Environment**: {{highly_regulated_moderate_minimal}}
-- **Recent Events**: {{incidents_near_misses_industry_events}}
-- **Assessment Objective**: {{compliance_strategic_operational_investment}}
-
-RISK FOCUS:
-{{specific_risks_concerns_assessment_needs}}
-
-RISK ASSESSMENT FRAMEWORK:
-
-Phase 1: RISK IDENTIFICATION
-1. Map risk universe
-2. Identify specific threats
-3. Assess vulnerabilities
-4. Document risk scenarios
-
-Phase 2: RISK ANALYSIS
-1. Evaluate probability
-2. Assess potential impact
-3. Analyze interconnections
-4. Calculate risk scores
-
-Phase 3: RISK EVALUATION
-1. Compare to risk appetite
-2. Prioritize by criticality
-3. Identify control gaps
-4. Assess mitigation options
-
-Phase 4: RISK TREATMENT
-1. Design control strategies
-2. Develop action plans
-3. Allocate resources
-4. Monitor effectiveness
-
-DELIVER YOUR ASSESSMENT AS:
-
-## COMPREHENSIVE RISK ASSESSMENT REPORT
-
-### EXECUTIVE SUMMARY
-- **Critical Risks Identified**: {{top_3_with_ratings}}
-- **Overall Risk Posture**: {{low_moderate_high_critical}}
-- **Key Vulnerabilities**: {{primary_exposure_areas}}
-- **Recommended Actions**: {{immediate_priority_actions}}
-- **Investment Required**: {{mitigation_cost_vs_exposure}}
-
-### RISK LANDSCAPE OVERVIEW
-
-#### Enterprise Risk Heat Map
-```
-
-         IMPACT →
-    Low        Medium      High        Critical
-    ┌──────────┬──────────┬──────────┬──────────┐
-
-C │ │ R8 │ R3 │ R1 │
-r │ │ Supply │ Cyber │ Regulatory│
-i │ │ Chain │ Attack │ Change │
-t ├──────────┼──────────┼──────────┼──────────┤
-i │ R9 │ R6 │ R2 │ R4 │
-c │ Talent │ Market │ Data │ Climate │
-a │ Loss │ Shift │ Breach │ Event │
-l ├──────────┼──────────┼──────────┼──────────┤
-│ R10 │ R7 │ R5 │ │
-H │ Tech │ Customer │ Operational│ │
-i │ Debt │ Defection│ Failure │ │
-g ├──────────┼──────────┼──────────┼──────────┤
-h │ │ │ │ │
-│ Green │ Yellow │ Orange │ Red │
-│ Zone │ Zone │ Zone │ Zone │
-└──────────┴──────────┴──────────┴──────────┘
-↑ PROBABILITY
-
-Risk Movement Trends:
-↗ R3: Cyber threats increasing
-↘ R6: Market stabilizing  
-→ R1: Regulatory unchanged
-↑ R4: Climate risk rising
+## Prompt
 
 ```
+I'll help you conduct a comprehensive risk assessment and develop mitigation strategies. Let me gather information about your organization and risk concerns.
 
-#### Risk Interconnection Analysis
+About your organization:
+1. What type of organization? (industry, size, structure)
+2. What's your role in risk management?
+3. What's driving this risk assessment? (annual review, incident, compliance, etc.)
+4. What's your risk appetite? (conservative, moderate, aggressive)
+
+Risk scope and focus:
+5. What areas need assessment? (operational, financial, cyber, strategic, compliance)
+6. What time horizon? (current risks, emerging threats, long-term)
+7. Any specific risks you're concerned about?
+8. What recent incidents or near misses have occurred?
+
+Current risk management:
+9. What risk controls do you currently have?
+10. How mature is your risk management? (basic, developing, advanced)
+11. What data/information is available for analysis?
+12. Who needs to see the results? (executives, board, regulators)
+
+Based on your answers, I'll provide:
+
+**1. RISK HEAT MAP** - Visual risk prioritization with probability vs impact
+**2. TOP RISKS ANALYSIS** - Detailed assessment of critical risks
+**3. RISK INTERCONNECTIONS** - How risks cascade and amplify each other
+**4. MITIGATION STRATEGIES** - Prioritized action plans with ROI analysis
+**5. MONITORING PLAN** - Key indicators and early warning signals
+
+Please provide the information above to begin your risk assessment.
 ```
 
-Cascading Risk Map:
-┌─────────────┐
-│ Cyber │
-│ Attack │──────┐
-└──────┬──────┘ │
-│ ▼
-▼ ┌─────────────┐
-┌─────────────┐ │ Reputational│
-│ Data │ │ Damage │
-│ Breach │─┴──────┬──────┘
-└──────┬──────┘ │
-│ ▼
-▼ ┌─────────────┐
-┌─────────────┐ │ Regulatory │
-│ Operational │ │ Sanctions │
-│ Disruption │─┴──────┬──────┘
-└──────┬──────┘ │
-│ ▼
-▼ ┌─────────────┐
-┌─────────────┐ │ Financial │
-│ Customer │ │ Loss │
-│ Impact │─┴─────────────┘
-└─────────────┘
+## Example Usage
 
-Correlation Matrix:
+**User Input:**
+```
+1. Organization: Manufacturing company, 800 employees, publicly traded
+2. Role: Chief Risk Officer reporting to CEO and board
+3. Driver: Annual enterprise risk assessment + new cyber threats
+4. Appetite: Conservative for compliance, moderate for growth investments
 
-- Cyber ↔ Data: 0.85
-- Data ↔ Regulatory: 0.72
-- Operational ↔ Customer: 0.68
-- All ↔ Financial: 0.75+
+5. Scope: All major risk categories, focus on cyber, supply chain, regulatory
+6. Horizon: Current + emerging risks over next 3 years
+7. Concerns: Ransomware attacks, supply disruptions, new ESG regulations
+8. Recent events: Supplier went bankrupt last month, phishing attempt blocked
 
+9. Controls: Basic cyber security, some supplier diversification, compliance team
+10. Maturity: Developing - have processes but need improvement
+11. Data: Incident logs, financial data, supplier assessments, security scans
+12. Audience: Board quarterly review, executive team monthly updates
 ```
 
-### DETAILED RISK ANALYSIS
+**Assistant Output:**
 
-#### Risk #1: Cybersecurity Threat
-```
+Based on your manufacturing company assessment, here's my comprehensive risk analysis:
 
-Risk Profile:
-┌─────────────────────────────────────────────┐
-│ Risk Category: Technology/Security │
-│ Probability: High (75%) │
-│ Impact: Critical ($10-50M potential) │
-│ Velocity: Fast (hours to impact) │
-│ Risk Score: 9.2/10 (Critical) │
-├─────────────────────────────────────────────┤
-│ Threat Sources: │
-│ • Nation-state actors (25%) │
-│ • Organized crime (40%) │
-│ • Insider threats (20%) │
-│ • Hacktivists (15%) │
-├─────────────────────────────────────────────┤
-│ Vulnerability Assessment: │
-│ • Outdated security patches (High) │
-│ • Weak access controls (Medium) │
-│ • Limited security awareness (High) │
-│ • Insufficient monitoring (Medium) │
-└─────────────────────────────────────────────┘
+## RISK HEAT MAP
 
-Scenario Analysis:
-Best Case: Minor breach, quickly contained
-
-- Probability: 30%
-- Impact: $500K-1M
-- Recovery: 1-2 weeks
-
-Most Likely: Significant breach, data exposed
-
-- Probability: 50%
-- Impact: $5-10M
-- Recovery: 2-3 months
-
-Worst Case: Major breach, operations halted
-
-- Probability: 20%
-- Impact: $25-50M
-- Recovery: 6+ months
+**Enterprise Risk Assessment - Overall Score: HIGH (7.2/10)**
 
 ```
+           IMPACT →
+    Low      Medium     High      Critical
+    ┌─────────┬─────────┬─────────┬─────────┐
+ C  │         │         │   R3    │   R1    │
+ r  │         │         │Supplier │ Cyber   │
+ i  │         │         │Failure  │Attack   │
+ t  ├─────────┼─────────┼─────────┼─────────┤
+ i  │         │   R6    │   R2    │   R4    │
+ c  │         │Contract │Regulatory│Climate  │
+ a  │         │Risk     │Change   │Event    │
+ l  ├─────────┼─────────┼─────────┼─────────┤
+    │   R8    │   R7    │   R5    │         │
+ H  │Quality  │Talent   │Financial│         │
+ i  │Issues   │Loss     │Volatility│        │
+ g  ├─────────┼─────────┼─────────┼─────────┤
+ h  │   R9    │  R10    │         │         │
+    │Minor    │Process  │         │         │
+    │Incidents│Ineffic. │         │         │
+    └─────────┴─────────┴─────────┴─────────┘
+    ↑ PROBABILITY
 
-#### Risk #2: Regulatory Compliance
+Risk Status: 4 Critical, 3 High, 3 Medium risks identified
 ```
 
-Bow-Tie Analysis:
+## TOP 3 CRITICAL RISKS
 
-Causes Preventive Controls Consequences Mitigating Controls
-│ │
-Changing Laws ──┐ │ ┌── Financial Penalties ├── Legal Team
-├──────────┤ │ │
-Poor Tracking ──┤ │ REGULATORY ├── License Revocation ├── Insurance
-│ ┌───┴───┐ │ │
-Lack Training ──┤ │ │ BREACH ├── Reputation Damage ├── PR Response
-│ │ Risk │ │ │
-Complex Rules ──┤ │ │ ├── Criminal Liability ├── Compliance
-│ └───┬───┘ │ │ Program
-System Gaps ────┘ │ └── Business Disruption └── BCP Plan
-│ │
-Current Controls Gap: 40% effectiveness Improvements
+### Risk #1: Cybersecurity Attack (Score: 9.1/10)
 
-Control Effectiveness:
-■■■■■■□□□□ 60% - Needs improvement
+**Current Exposure:**
+- Probability: Very High (80% chance in next 12 months)
+- Impact: Critical ($15-50M potential loss)
+- Velocity: Hours to full impact
 
+**Vulnerability Assessment:**
+```
+Security Gaps Identified:
+├── Outdated systems: 35% of infrastructure
+├── Email security: Basic filtering only  
+├── Employee training: Annual only, low engagement
+├── Backup systems: Not tested for 18 months
+├── Incident response: Plan exists but untested
+└── Third-party access: Minimal monitoring
 ```
 
-#### Risk #3: Supply Chain Disruption
+**Attack Scenarios:**
+- **Ransomware (60% probability)**: $8-15M ransom + downtime costs
+- **Data breach (30% probability)**: $5-10M regulatory fines + reputation
+- **Supply chain hack (10% probability)**: $20-50M operational disruption
+
+### Risk #2: Supply Chain Disruption (Score: 8.7/10)
+
+**Current Dependencies:**
+- Single-source suppliers: 40% of critical components
+- Geographic concentration: 70% from Asia-Pacific
+- Financial health: 3 suppliers showing distress signals
+- Inventory buffers: 30 days average (industry standard: 45)
+
+**Disruption Scenarios:**
+- **Supplier bankruptcy**: 2-3 month production halt, $25M impact
+- **Geopolitical disruption**: 6-month delays, $40M impact  
+- **Natural disaster**: 1-month regional shutdown, $10M impact
+
+### Risk #3: Regulatory Changes (Score: 8.2/10)
+
+**Regulatory Landscape:**
+- New ESG reporting requirements (2025)
+- Stricter environmental standards pending
+- Supply chain transparency laws
+- Data privacy regulations expanding
+
+**Compliance Gaps:**
+```
+Current vs Required Capabilities:
+ESG Reporting:     ███░░░░░░░ 30% ready
+Environmental:     ██████░░░░ 60% ready  
+Supply Chain:      ████░░░░░░ 40% ready
+Data Privacy:      ███████░░░ 70% ready
 ```
 
-Supply Chain Risk Assessment:
-┌──────────────┬────────────┬───────────┬──────────────┐
-│ Supplier │ Criticality│ Risk Level│ Mitigation │
-├──────────────┼────────────┼───────────┼──────────────┤
-│ Supplier A │ Critical │ High │ Dual source │
-│ (Components) │ 45% of supply │ Safety stock │
-├──────────────┼────────────┼───────────┼──────────────┤
-│ Supplier B │ Important │ Medium │ Alternative │
-│ (Materials) │ 30% of supply │ identified │
-├──────────────┼────────────┼───────────┼──────────────┤
-│ Logistics Co │ Critical │ High │ Multiple │
-│ (Shipping) │ 100% delivery │ providers │
-└──────────────┴────────────┴───────────┴──────────────┘
+## RISK INTERCONNECTIONS
 
-Vulnerability Points:
-• Single source dependencies: 3 critical
-• Geographic concentration: 60% in one region
-• Long lead times: Average 120 days
-• Quality issues: 5% defect rate trending up
-
-````
-
-### RISK QUANTIFICATION
-
-#### Financial Risk Modeling
-```python
-# Monte Carlo Risk Simulation
-import numpy as np
-
-def risk_simulation(iterations=10000):
-    results = []
-    for _ in range(iterations):
-        # Risk event probabilities
-        cyber_event = np.random.random() < 0.75
-        regulatory_event = np.random.random() < 0.40
-        supply_event = np.random.random() < 0.60
-
-        # Impact calculations
-        total_impact = 0
-        if cyber_event:
-            total_impact += np.random.triangular(0.5, 5, 50)
-        if regulatory_event:
-            total_impact += np.random.triangular(1, 3, 15)
-        if supply_event:
-            total_impact += np.random.triangular(0.2, 2, 8)
-
-        results.append(total_impact)
-
-    return {
-        'expected_loss': np.mean(results),
-        'var_95': np.percentile(results, 95),
-        'max_loss': np.max(results),
-        'probability_over_10m': sum(r > 10 for r in results) / iterations
-    }
-
-# Results:
-# Expected Annual Loss: $7.3M
-# Value at Risk (95%): $18.5M
-# Maximum Loss: $68.2M
-# Probability >$10M: 34%
-````
-
-#### Risk Appetite Comparison
-
+**Cascade Analysis:**
 ```
-Current Risk Exposure vs. Appetite:
-                    Appetite    Current    Gap
-Financial Risk      ████████    ██████████ Over
-Operational Risk    ████████    ██████     Within
-Strategic Risk      ████████    █████████  Over
-Compliance Risk     ████        ███████    Over
-Reputational Risk   ██████      ████████   Over
+Cyber Attack
+     ├── Operational Shutdown
+     │   ├── Customer Impact
+     │   ├── Revenue Loss  
+     │   └── Reputation Damage
+     ├── Data Breach
+     │   ├── Regulatory Fines
+     │   ├── Legal Liability
+     │   └── Customer Churn
+     └── Recovery Costs
+         ├── System Rebuilding
+         ├── Investigation Costs
+         └── Enhanced Security
 
-Overall Status: EXCEEDS APPETITE
-Action Required: Immediate mitigation
+Risk Amplification Effects:
+• Cyber + Supply = 150% worse impact
+• Regulatory + Reputation = Enforcement escalation
+• Financial stress amplifies all operational risks
 ```
 
-### RISK MITIGATION STRATEGIES
+## MITIGATION STRATEGIES
 
-#### Comprehensive Mitigation Plan
+### Priority 1: Cybersecurity Enhancement ($2.8M investment)
 
+**Immediate Actions (Next 30 days):**
+- Patch all critical vulnerabilities (Week 1)
+- Implement advanced email security (Week 2)
+- Test backup and recovery systems (Week 3)
+- Conduct phishing simulation (Week 4)
+
+**Strategic Initiatives (3-6 months):**
+- Deploy endpoint detection and response tools
+- Implement zero-trust network architecture  
+- Establish 24/7 security operations center
+- Create incident response team with training
+
+**Expected Outcomes:**
+- Risk reduction: 65% (Score drops to 5.5/10)
+- ROI: 4.8x over 3 years
+- Payback period: 8 months
+
+### Priority 2: Supply Chain Resilience ($1.5M investment)
+
+**Supplier Diversification:**
+- Identify 2nd source for all critical components
+- Develop 3 regional supplier hubs
+- Implement supplier financial monitoring
+- Increase safety stock to 60 days
+
+**Partnership Strategy:**
+- Long-term contracts with key suppliers
+- Joint risk management programs
+- Supplier development investments
+- Alternative material research
+
+**Expected Outcomes:**
+- Risk reduction: 55% (Score drops to 6.2/10)
+- Supply continuity: 95% maintained
+- Cost increase: 3-5% acceptable for resilience
+
+### Priority 3: Regulatory Readiness ($800K investment)
+
+**Compliance Program:**
+- Dedicated ESG reporting team
+- Automated data collection systems
+- Legal counsel for new regulations
+- Stakeholder engagement program
+
+**Implementation Timeline:**
 ```
-Priority 1: Cybersecurity Enhancement
-┌─────────────────────────────────────────────┐
-│ Investment: $2.5M | Timeline: 6 months      │
-├─────────────────────────────────────────────┤
-│ Initiatives:                                │
-│ • Advanced threat detection platform        │
-│ • Zero-trust architecture implementation   │
-│ • Employee security awareness program       │
-│ • Incident response team expansion         │
-├─────────────────────────────────────────────┤
-│ Expected Risk Reduction: 65%                │
-│ ROI: 4.2x (avoiding $10.5M expected loss) │
-└─────────────────────────────────────────────┘
-
-Priority 2: Regulatory Compliance System
-┌─────────────────────────────────────────────┐
-│ Investment: $1.2M | Timeline: 4 months      │
-├─────────────────────────────────────────────┤
-│ Initiatives:                                │
-│ • Automated compliance monitoring          │
-│ • Regular compliance audits                │
-│ • Training and certification program       │
-│ • Regulatory change management system      │
-├─────────────────────────────────────────────┤
-│ Expected Risk Reduction: 70%                │
-│ ROI: 3.5x (avoiding $4.2M expected loss)  │
-└─────────────────────────────────────────────┘
-```
-
-#### Risk Control Framework
-
-```
-Three Lines of Defense Model:
-
-1st Line: Operational Management
-├── Risk ownership and control
-├── Daily monitoring
-├── Process compliance
-└── Incident reporting
-
-2nd Line: Risk Management
-├── Framework development
-├── Risk assessment
-├── Monitoring & reporting
-└── Policy compliance
-
-3rd Line: Internal Audit
-├── Independent assurance
-├── Control testing
-├── Process validation
-└── Board reporting
-
-Integration Points:
-• Weekly risk meetings
-• Monthly dashboards
-• Quarterly assessments
-• Annual framework review
+Month 1-2: Gap analysis and team building
+Month 3-4: System implementation
+Month 5-6: Process testing and training
+Month 7-8: Full compliance readiness
 ```
 
-### RISK MONITORING SYSTEM
+## MONITORING & EARLY WARNING
 
-#### Key Risk Indicators (KRIs)
+### Key Risk Indicators (KRIs)
 
+**Real-Time Dashboard:**
 ```
-Real-Time Risk Dashboard:
-┌─────────────────────────────────────────────┐
-│ ENTERPRISE RISK SCORE: ■■■■■■■□□□ (7.5/10)│
-├─────────────────────────────────────────────┤
-│ Cyber Threats:      ▲ +23% vs baseline     │
-│ Compliance Issues:  → Stable at 3          │
-│ Supply Delays:      ▲ +15 days average     │
-│ Financial Exposure: ▼ -$2M from peak       │
-│ Op Incidents:       → 4 per month          │
-└─────────────────────────────────────────────┘
-
-Threshold Alerts:
-🔴 Cyber attacks: Above threshold (>5/week)
-🟡 Compliance gaps: Approaching limit
-🟢 Financial metrics: Within tolerance
-🔴 Supply chain: Critical delays detected
+Current Status:
+├── Cyber Threats:      🔴 High (15 attempts/day)
+├── Supplier Health:    🟡 Medium (2 at-risk)
+├── Financial Metrics:  🟢 Good (all within range)
+├── Regulatory Changes: 🟡 Monitoring (3 pending)
+└── Operational:        🟢 Stable (98.5% uptime)
 ```
 
-#### Early Warning Signals
+**Alert Thresholds:**
+- Security incidents: >5 per week → Immediate escalation
+- Supplier financial distress: Credit rating drop → 48hr review
+- Regulatory announcements: New requirements → 72hr impact assessment
+- Operational metrics: <95% efficiency → Weekly review
 
+### Quarterly Risk Review Process
+
+**Risk Committee Structure:**
+- Chair: Chief Risk Officer
+- Members: CTO, CFO, COO, Legal Counsel
+- Meeting: Monthly with quarterly board reports
+- Reporting: Executive dashboard + detailed analysis
+
+**Review Agenda:**
+1. Risk scorecard updates
+2. New and emerging risks
+3. Mitigation progress review
+4. Budget allocation decisions
+5. Board reporting preparation
+
+## IMPLEMENTATION ROADMAP
+
+### 90-Day Quick Wins
 ```
-Leading Indicators Matrix:
-┌────────────────┬──────────────┬─────────┬─────────┐
-│ Risk Area      │ Indicator    │ Current │ Trigger │
-├────────────────┼──────────────┼─────────┼─────────┤
-│ Cyber          │ Failed logins│ 842/day │ >500    │
-│ Regulatory     │ Open issues  │ 12      │ >10     │
-│ Supply Chain   │ Lead time    │ 135 days│ >120    │
-│ Financial      │ DSO          │ 67 days │ >60     │
-│ Operational    │ System uptime│ 98.2%   │ <99%    │
-└────────────────┴──────────────┴─────────┴─────────┘
+Days 1-30: Critical Security Patches
+├── Vulnerability assessment complete
+├── Emergency patches deployed
+├── Backup systems verified
+└── Initial training conducted
 
-Trend Analysis:
-• 3 indicators trending negative
-• 2 indicators at critical levels
-• Immediate action required
-```
+Days 31-60: Supply Chain Assessment  
+├── Supplier risk evaluation
+├── Alternative suppliers identified
+├── Inventory optimization
+└── Contract negotiations started
 
-### IMPLEMENTATION ROADMAP
-
-#### 90-Day Risk Reduction Plan
-
-```
-Month 1: Foundation
-├── Week 1-2: Risk assessment validation
-├── Week 3-4: Quick win implementations
-│   ├── Patch critical vulnerabilities
-│   ├── Update compliance procedures
-│   └── Diversify critical suppliers
-└── Success Metrics: 20% risk reduction
-
-Month 2: Core Initiatives
-├── Week 5-6: Technology deployments
-├── Week 7-8: Process improvements
-│   ├── Automated monitoring systems
-│   ├── Enhanced training programs
-│   └── Supplier agreements
-└── Success Metrics: 40% risk reduction
-
-Month 3: Embedding & Optimization
-├── Week 9-10: Control testing
-├── Week 11-12: Full implementation
-│   ├── Complete security upgrades
-│   ├── Compliance system live
-│   └── Supply chain redundancy
-└── Success Metrics: 60% risk reduction
+Days 61-90: Compliance Foundation
+├── Regulatory gap analysis
+├── ESG team established
+├── Reporting framework designed
+└── Stakeholder communications
 ```
 
-### GOVERNANCE & REPORTING
+### Year 1 Objectives
+- Reduce overall risk score from 7.2 to 5.5
+- Achieve 99.5% operational uptime
+- Complete cybersecurity transformation
+- Establish resilient supply chain
+- Full regulatory compliance readiness
 
-#### Risk Governance Structure
-
-```
-Board of Directors
-        │
-Risk Committee
-        │
-┌───────┴───────┐
-│     Chief     │
-│ Risk Officer  │
-└───────┬───────┘
-        │
-┌───────┴───────────────────┐
-│                           │
-Risk Management        Business Units
-│                           │
-├── Enterprise Risk    ├── Risk Champions
-├── Operational Risk   ├── Control Owners
-├── Compliance        └── Process Owners
-└── IT Risk
-
-Reporting Cadence:
-• Daily: Operational metrics
-• Weekly: Management updates
-• Monthly: Executive dashboard
-• Quarterly: Board reporting
-```
-
-### APPENDICES
-
-#### A. Risk Register Template
-
-[Comprehensive risk documentation format]
-
-#### B. Risk Assessment Methodology
-
-[Detailed scoring and evaluation criteria]
-
-#### C. Industry Benchmarking
-
-[Comparative risk metrics and practices]
-
-#### D. Regulatory Requirements
-
-[Applicable regulations and compliance needs]
-
-```
-
-## Usage Instructions
-1. Customize all {{variables}} with organizational context
-2. Define risk appetite and tolerance levels clearly
-3. Gather historical incident and loss data
-4. Involve stakeholders across all risk areas
-5. Prioritize risks based on impact and probability
-6. Develop specific, measurable mitigation plans
-7. Establish ongoing monitoring processes
-8. Update assessments quarterly or with major changes
-
-## Examples
-### Example 1: Technology Company Risk Assessment
-**Input**:
-```
-
-{{organization_type}}: B2B SaaS company, 500 employees
-{{risk_scope}}: Enterprise-wide annual assessment
-{{risk_categories}}: Focus on cyber, regulatory (GDPR/SOC2), operational
-{{risk_appetite}}: Moderate for growth, low for compliance
-{{specific_risks}}: Recent competitor breach, new AI regulations pending
-
-```
-
-**Output**: [Comprehensive assessment identifying critical cyber vulnerabilities, regulatory gaps in AI governance, and operational dependencies, with prioritized $3.5M mitigation plan]
+Would you like me to elaborate on any specific risk area or develop detailed implementation plans for the mitigation strategies?
 
 ## Related Prompts
-- [Crisis Management Commander](/prompts/problem-solving/crisis-management-commander.md)
-- [Compliance Analysis Expert](/prompts/analysis/compliance-analysis-expert.md)
-- [Business Continuity Planner](/prompts/planning/business-continuity-planner.md)
 
-## Research Notes
-- Integrates multiple risk management standards (ISO 31000, COSO, FAIR)
-- Emphasizes quantitative risk assessment where possible
-- Includes interconnected risk analysis for cascade effects
-- Provides specific KRIs and early warning indicators
-- Balances comprehensiveness with actionable insights
-```
+- [Crisis Management Expert](./crisis-management-expert.md)
+- [Business Continuity Planner](./business-continuity-planner.md)
+- [Compliance Analysis Expert](./compliance-analysis-expert.md)
