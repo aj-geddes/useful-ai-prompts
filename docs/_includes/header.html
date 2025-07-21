@@ -1,0 +1,62 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="site-title">
+                <a href="{{ '/' | relative_url }}">
+                    <i class="fas fa-robot"></i>
+                    {{ site.title }}
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="nav-menu" id="navMenu">
+                    <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                    <a href="{{ '/categories/' | relative_url }}" class="nav-link">Categories</a>
+                    <a href="{{ '/search/' | relative_url }}" class="nav-link">Search</a>
+                    <a href="{{ site.github_url }}" class="nav-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                
+                <div class="header-controls">
+                    {% if site.search %}
+                    <div class="search-toggle">
+                        <button id="searchToggle" class="search-btn" aria-label="Toggle search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    {% endif %}
+                    
+                    <div class="theme-toggle">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon dark-icon"></i>
+                            <i class="fas fa-sun light-icon"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="mobile-menu-toggle">
+                        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        {% if site.search %}
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search prompts..." autocomplete="off">
+                    <button id="searchClose" class="search-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</header>

@@ -1,0 +1,55 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>{{ site.title }}</h3>
+                <p>{{ site.description }}</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/categories/' | relative_url }}">Browse Categories</a></li>
+                    <li><a href="{{ '/search/' | relative_url }}">Search Prompts</a></li>
+                    <li><a href="{{ site.github_url }}/blob/main/README.md" target="_blank">Documentation</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="{{ '/categories/analysis/' | relative_url }}">Analysis</a></li>
+                    <li><a href="{{ '/categories/creation/' | relative_url }}">Creation</a></li>
+                    <li><a href="{{ '/categories/planning/' | relative_url }}">Planning</a></li>
+                    <li><a href="{{ '/categories/communication/' | relative_url }}">Communication</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="{{ site.github_url }}" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a></li>
+                    <li><a href="{{ site.github_url }}/issues" target="_blank">
+                        <i class="fas fa-bug"></i> Report Issues
+                    </a></li>
+                    <li><a href="{{ site.github_url }}/blob/main/CONTRIBUTING.md" target="_blank">
+                        <i class="fas fa-hands-helping"></i> Contributing
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. Open source under MIT License.</p>
+                <div class="footer-links">
+                    <a href="{{ site.github_url }}/blob/main/LICENSE" target="_blank">License</a>
+                    <a href="{{ site.github_url }}/graphs/contributors" target="_blank">Contributors</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

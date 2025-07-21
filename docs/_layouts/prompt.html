@@ -1,0 +1,154 @@
+---
+layout: default
+---
+
+<div class="prompt-page">
+    <div class="container">
+        <div class="prompt-header">
+            <div class="breadcrumb">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <span>/</span>
+                <a href="{{ '/categories/' | append: page.category | append: '/' | relative_url }}">{{ page.category | capitalize }}</a>
+                <span>/</span>
+                <span>{{ page.title }}</span>
+            </div>
+            
+            <h1 class="prompt-title">{{ page.title }}</h1>
+            
+            <div class="prompt-meta">
+                <div class="meta-item">
+                    <i class="fas fa-tag"></i>
+                    <strong>Category:</strong> 
+                    <a href="{{ '/categories/' | append: page.category | append: '/' | relative_url }}" class="category-link">
+                        {{ page.category | capitalize }}
+                    </a>
+                </div>
+                
+                {% if page.tags %}
+                <div class="meta-item">
+                    <i class="fas fa-tags"></i>
+                    <strong>Tags:</strong>
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if page.compatible_models %}
+                <div class="meta-item">
+                    <i class="fas fa-robot"></i>
+                    <strong>Compatible Models:</strong> {{ page.compatible_models | join: ", " }}
+                </div>
+                {% endif %}
+                
+                {% if page.use_cases %}
+                <div class="meta-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <strong>Use Cases:</strong> {{ page.use_cases | join: ", " }}
+                </div>
+                {% endif %}
+                
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <strong>Last Updated:</strong> {{ page.date | date: '%B %d, %Y' }}
+                </div>
+                
+                {% if site.edit_page %}
+                <div class="meta-item">
+                    <a href="{{ site.github_url }}/edit/main/prompts/{{ page.category }}/{{ page.slug }}.md" 
+                       target="_blank" class="edit-link">
+                        <i class="fas fa-edit"></i> Edit on GitHub
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="prompt-content">
+            <div class="prompt-description">
+                {% if page.description %}
+                    <p class="description">{{ page.description }}</p>
+                {% endif %}
+            </div>
+            
+            <div class="prompt-main">
+                <div class="prompt-code-section">
+                    <div class="code-header">
+                        <h2>Prompt</h2>
+                        <button class="copy-btn" data-clipboard-target="#promptCode">
+                            <i class="fas fa-copy"></i>
+                            Copy Prompt
+                        </button>
+                    </div>
+                    <div class="code-container">
+                        <pre><code id="promptCode" class="language-markdown">{{ page.prompt | strip }}</code></pre>
+                    </div>
+                </div>
+                
+                {% if page.examples %}
+                <div class="examples-section">
+                    <h2>Examples</h2>
+                    {% for example in page.examples %}
+                    <div class="example-item">
+                        <h3>{{ example.title }}</h3>
+                        {% if example.input %}
+                        <div class="example-input">
+                            <h4>Input:</h4>
+                            <div class="code-container">
+                                <pre><code class="language-text">{{ example.input }}</code></pre>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if example.output %}
+                        <div class="example-output">
+                            <h4>Expected Output:</h4>
+                            <div class="code-container">
+                                <pre><code class="language-text">{{ example.output }}</code></pre>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                {% if page.tips %}
+                <div class="tips-section">
+                    <h2>Tips for Effective Use</h2>
+                    <ul>
+                    {% for tip in page.tips %}
+                        <li>{{ tip }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                
+                {% if content %}
+                <div class="additional-content">
+                    {{ content }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        {% if page.related_prompts %}
+        <div class="related-prompts">
+            <h2>Related Prompts</h2>
+            <div class="related-grid">
+                {% for related in page.related_prompts limit:6 %}
+                    {% assign related_prompt = site.prompts | where: "slug", related %}
+                    {% for prompt in related_prompt %}
+                    <div class="related-item">
+                        <a href="{{ prompt.url | relative_url }}">
+                            <h3>{{ prompt.title }}</h3>
+                            <p>{{ prompt.description | truncate: 100 }}</p>
+                            <span class="category-badge">{{ prompt.category | capitalize }}</span>
+                        </a>
+                    </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

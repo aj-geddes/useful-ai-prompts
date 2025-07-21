@@ -1,0 +1,69 @@
+# Site settings
+title: "Useful AI Prompts"
+description: "A comprehensive collection of practical, ready-to-use AI prompts for professionals across all industries and workflows."
+baseurl: "/useful-ai-prompts"
+url: "https://aj-geddes.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  prompts:
+    output: true
+    permalink: /:collection/:path/
+  categories:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "prompts"
+    values:
+      layout: "prompt"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+
+# Custom variables
+repository: "aj-geddes/useful-ai-prompts"
+github_url: "https://github.com/aj-geddes/useful-ai-prompts"
+edit_page: true
+
+# Pagination
+paginate: 12
+paginate_path: "/page:num/"
+
+# Search
+search: true
+lunr:
+  enabled: true
+
+# Social links
+github_username: aj-geddes
+
+# Analytics (optional)
+google_analytics: # Add GA tracking ID if needed

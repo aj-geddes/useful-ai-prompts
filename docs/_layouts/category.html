@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+<div class="category-page">
+    <div class="container">
+        <div class="category-header">
+            <div class="breadcrumb">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <span>/</span>
+                <a href="{{ '/categories/' | relative_url }}">Categories</a>
+                <span>/</span>
+                <span>{{ page.title }}</span>
+            </div>
+            
+            <h1 class="category-title">
+                <i class="{{ page.icon | default: 'fas fa-folder' }}"></i>
+                {{ page.title }}
+            </h1>
+            
+            {% if page.description %}
+            <p class="category-description">{{ page.description }}</p>
+            {% endif %}
+            
+            {% assign category_prompts = site.prompts | where: "category", page.slug %}
+            <div class="category-stats">
+                <span class="prompt-count">{{ category_prompts.size }} prompts</span>
+                {% if page.tags %}
+                <div class="category-tags">
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="category-content">
+            {% if content %}
+            <div class="category-intro">
+                {{ content }}
+            </div>
+            {% endif %}
+            
+            <div class="prompts-section">
+                <div class="section-header">
+                    <h2>Available Prompts</h2>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                {% if category_prompts.size > 0 %}
+                <div class="prompts-grid" id="promptsContainer">
+                    {% assign sorted_prompts = category_prompts | sort: 'title' %}
+                    {% for prompt in sorted_prompts %}
+                    <div class="prompt-card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <a href="{{ prompt.url | relative_url }}">{{ prompt.title }}</a>
+                            </h3>
+                            {% if prompt.version %}
+                            <span class="version-badge">v{{ prompt.version }}</span>
+                            {% endif %}
+                        </div>
+                        
+                        {% if prompt.description %}
+                        <p class="card-description">{{ prompt.description | truncate: 120 }}</p>
+                        {% endif %}
+                        
+                        <div class="card-meta">
+                            {% if prompt.tags %}
+                            <div class="card-tags">
+                                {% for tag in prompt.tags limit:3 %}
+                                    <span class="tag">{{ tag }}</span>
+                                {% endfor %}
+                                {% if prompt.tags.size > 3 %}
+                                    <span class="tag-more">+{{ prompt.tags.size | minus: 3 }}</span>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                            
+                            {% if prompt.compatible_models %}
+                            <div class="model-support">
+                                <i class="fas fa-robot" title="Compatible Models"></i>
+                                <span>{{ prompt.compatible_models | join: ", " | truncate: 30 }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="{{ prompt.url | relative_url }}" class="btn btn-primary">
+                                View Prompt
+                            </a>
+                            {% if prompt.prompt %}
+                            <button class="btn btn-secondary copy-btn" 
+                                    data-clipboard-text="{{ prompt.prompt | strip }}">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="no-prompts">
+                    <i class="fas fa-search"></i>
+                    <h3>No prompts found</h3>
+                    <p>This category doesn't have any prompts yet.</p>
+                    <a href="{{ site.github_url }}/issues/new" class="btn btn-primary">
+                        Suggest a Prompt
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
