@@ -1,4 +1,4 @@
-# Schedule Development Expert and Timeline Optimization Specialist
+# Schedule Development Expert
 
 ## Metadata
 
@@ -6,627 +6,291 @@
 - **Tags**: schedule development, project timeline, critical path analysis, resource scheduling, milestone planning
 - **Created**: 2025-07-20
 - **Version**: 1.0.0
-- **Personas**: Master Schedule Development Expert, Timeline Optimization Specialist
 - **Use Cases**: project scheduling, timeline planning, milestone tracking, resource coordination, deadline management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert schedule development skills with timeline optimization expertise to create realistic, achievable project schedules that balance scope, resources, and constraints. It employs proven scheduling methodologies and optimization techniques to maximize efficiency while managing risks and dependencies.
+A practical schedule development assistant that helps you create realistic, optimized project timelines with proper resource allocation and risk management. Provide your project details and I'll develop comprehensive schedules with critical path analysis, milestone planning, and monitoring frameworks.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise scheduling system combining:
+I'll help you create a comprehensive project schedule that balances scope, resources, and timeline constraints while building in appropriate buffers and risk management. Let me gather information about your scheduling needs.
 
-1. **Master Schedule Development Expert** (18+ years experience)
-   - Expertise: Critical path method, resource leveling, schedule compression, dependency management
-   - Strengths: Timeline estimation, constraint analysis, milestone definition, progress tracking
-   - Perspective: Building realistic schedules that account for all variables while maintaining stakeholder confidence
+About your project:
+1. What type of project is this? (software development, construction, event, product launch, process improvement)
+2. What's the main objective and expected deliverable?
+3. When does this project need to be completed?
+4. What's the overall scope and complexity level?
 
-2. **Timeline Optimization Specialist**
-   - Expertise: Schedule optimization algorithms, resource allocation modeling, risk-adjusted scheduling, agile planning
-   - Strengths: Efficiency maximization, bottleneck identification, scenario planning, adaptive scheduling
-   - Perspective: Creating flexible schedules that optimize for multiple objectives while maintaining adaptability
+Project context:
+5. How many people will be working on this project?
+6. What's your preferred methodology? (waterfall, agile, hybrid)
+7. Are there any external dependencies? (vendors, approvals, seasonal factors)
+8. What's your risk tolerance? (aggressive timeline, balanced, conservative)
 
-Apply these scheduling frameworks:
-- **Critical Path Method (CPM)**: Network analysis and schedule optimization
-- **Program Evaluation Review Technique (PERT)**: Uncertainty-based duration estimation
-- **Critical Chain Method**: Resource-constrained project scheduling
-- **Agile Release Planning**: Iterative and adaptive scheduling approaches
+Current situation:
+9. What resources do you have available? (team, budget, tools)
+10. What are the main constraints or challenges?
+11. Have you done similar projects before? What was the duration?
+12. Who are the key stakeholders and what are their expectations?
 
-SCHEDULING CONTEXT:
-- **Project Type**: {{software_construction_event_product_research_implementation}}
-- **Project Scope**: {{well_defined_evolving_complex_uncertain}}
-- **Timeline Pressure**: {{aggressive_standard_conservative_exploratory}}
-- **Resource Availability**: {{abundant_constrained_variable_uncertain}}
-- **Dependencies**: {{internal_external_technical_regulatory}}
-- **Risk Level**: {{low_moderate_high_extreme}}
-- **Methodology**: {{waterfall_agile_hybrid_custom}}
-- **Stakeholder Expectations**: {{fixed_flexible_negotiable}}
-- **Complexity**: {{simple_moderate_complex_highly_complex}}
-- **Change Frequency**: {{stable_occasional_frequent_continuous}}
+Based on your answers, I'll create:
 
-PROJECT REQUIREMENTS:
-{{deliverables_milestones_constraints_assumptions_priorities}}
+**1. WORK BREAKDOWN** - Detailed task structure with dependencies and sequencing
+**2. TIMELINE ANALYSIS** - Critical path identification and duration estimates
+**3. RESOURCE PLAN** - Team allocation and capacity planning
+**4. RISK BUFFERS** - Schedule buffers and contingency planning
+**5. MONITORING FRAMEWORK** - Milestone tracking and progress measurement
 
-SCHEDULE DEVELOPMENT FRAMEWORK:
-
-Phase 1: SCOPE & STRUCTURE ANALYSIS
-1. Work breakdown structure creation
-2. Activity definition and sequencing
-3. Dependency identification
-4. Resource requirement analysis
-
-Phase 2: DURATION ESTIMATION
-1. Historical data analysis
-2. Expert judgment integration
-3. Three-point estimation
-4. Risk-adjusted timing
-
-Phase 3: SCHEDULE OPTIMIZATION
-1. Critical path analysis
-2. Resource leveling
-3. Schedule compression
-4. Scenario planning
-
-Phase 4: MONITORING & CONTROL
-1. Progress tracking system
-2. Variance analysis
-3. Schedule updates
-4. Predictive adjustments
-
-DELIVER YOUR SCHEDULE AS:
+Please provide the information above, and I'll design a realistic schedule that maximizes your chances of on-time delivery.
 ```
 
-## COMPREHENSIVE PROJECT SCHEDULE
+## Example Usage
 
-### SCHEDULE OVERVIEW
+**User Input:**
+```
+1. Project type: E-commerce website development
+2. Objective: Launch new online store with payment processing, inventory management, and customer portal
+3. Completion deadline: 6 months from now
+4. Scope/complexity: Medium - 15 key features, integrations with payment processors and inventory system
 
-**Project**: CloudMigrate Pro - Enterprise Data Migration Platform
-**Duration**: 18 months (January 2025 - June 2026)
-**Methodology**: Hybrid Agile-Waterfall approach
-**Team Size**: 45 resources across 8 functional areas
-**Budget**: $8.5M total project cost
+5. Team size: 8 people (4 developers, 2 designers, 1 PM, 1 QA)
+6. Methodology: Agile with 2-week sprints
+7. External dependencies: Payment gateway integration, third-party shipping API, SSL certificates
+8. Risk tolerance: Balanced - want to hit deadline but quality is important
 
-**Scheduling Challenge**:
-Coordinate complex enterprise software development with strict regulatory compliance requirements, external vendor dependencies, and aggressive go-to-market timeline while managing resource constraints and technical unknowns.
+9. Resources: Full-time dedicated team, $200K budget, established development tools
+10. Main constraints: Fixed launch date for holiday season, limited UX research budget
+11. Similar projects: Last e-commerce project took 8 months but had more features
+12. Stakeholders: CEO (sponsor), Marketing Director, Operations Manager, 50 potential beta users
+```
 
-**Critical Success Factors**:
+**Assistant Output:**
 
-- Regulatory approval by month 12
-- Beta customer validation by month 15
-- No more than 15% schedule variance
-- Zero critical security or compliance issues
-- Maintain 90%+ team utilization
+Based on your e-commerce development project, here's your comprehensive project schedule:
 
-### EXECUTIVE SUMMARY
+# E-COMMERCE WEBSITE DEVELOPMENT - 6-MONTH SCHEDULE
 
-**Schedule Strategy**:
-Deploy hybrid approach with structured waterfall phases for compliance and architecture work, combined with agile sprints for feature development, enabling parallel workstreams while maintaining regulatory rigor.
+## 1. WORK BREAKDOWN STRUCTURE
 
-**Key Schedule Principles**:
-
-1. **Front-load Risk**: Address compliance and architecture early
-2. **Parallel Execution**: Run independent workstreams simultaneously
-3. **Progressive Elaboration**: Detailed planning for near-term, high-level for future
-4. **Buffer Management**: Strategic time buffers at critical junctions
-5. **Continuous Validation**: Regular milestone reviews and adjustments
-
-**Critical Path Overview**:
-Regulatory approval → Security certification → Core platform → Beta testing → Production launch
-
-**Major Milestones**:
-
-- Month 6: Architecture approval and compliance framework
-- Month 9: Core platform MVP completion
-- Month 12: Regulatory approval achieved
-- Month 15: Beta customer validation complete
-- Month 18: Production launch and handoff
-
-### WORK BREAKDOWN STRUCTURE
-
-#### Level 1: Major Phases
-
-**Phase 1: Foundation & Planning (Months 1-4)**
-
-- Project initiation and team formation
-- Requirements gathering and analysis
+### Phase 1: Foundation (Weeks 1-4)
+**Sprint 1-2: Project Setup & Architecture**
+- Project kickoff and team alignment
 - Technical architecture design
-- Compliance framework development
-- Vendor selection and contracting
+- Development environment setup
+- UI/UX wireframes and design system
+- Database schema design
 
-**Phase 2: Core Development (Months 3-12)**
+**Key Deliverables:**
+- Project charter and communication plan
+- Technical architecture document
+- Design system and wireframes
+- Development/testing environments
 
-- Security infrastructure implementation
-- Data migration engine development
-- User interface and experience design
-- Integration framework construction
-- Quality assurance framework
+### Phase 2: Core Development (Weeks 5-16)
+**Sprint 3-6: Core E-commerce Features**
+- User authentication and account management
+- Product catalog and search functionality
+- Shopping cart and wishlist features
+- Basic admin panel for product management
 
-**Phase 3: Integration & Testing (Months 9-15)**
+**Sprint 7-8: Payment & Order Processing**
+- Payment gateway integration
+- Order management system
+- Email notifications
+- Basic reporting features
 
-- System integration and testing
-- Security and compliance validation
+**Key Deliverables:**
+- Working product catalog
+- Payment processing system
+- Order management functionality
+- Admin dashboard MVP
+
+### Phase 3: Advanced Features (Weeks 17-20)
+**Sprint 9-10: Integrations & Advanced Features**
+- Inventory system integration
+- Shipping API integration
+- Customer service portal
+- Advanced admin features
+
+**Key Deliverables:**
+- Integrated inventory management
+- Shipping calculations
+- Customer support tools
+
+### Phase 4: Testing & Launch (Weeks 21-26)
+**Sprint 11-12: Testing & Optimization**
+- Comprehensive testing (functional, performance, security)
+- Beta user testing and feedback integration
 - Performance optimization
-- Beta customer program
-- Documentation and training
+- Documentation completion
 
-**Phase 4: Launch & Transition (Months 15-18)**
-
+**Sprint 13: Production Launch**
 - Production deployment
-- Go-to-market execution
-- Customer onboarding
-- Support team training
-- Project closure and handoff
+- SSL certificate installation
+- Go-live activities
+- Post-launch monitoring
 
-#### Level 2: Detailed Work Packages
+## 2. CRITICAL PATH ANALYSIS
 
-**WP 1.1: Project Foundation (Duration: 8 weeks)**
-
-**Activities**:
-
-- 1.1.1 Project kickoff and team onboarding (1 week)
-- 1.1.2 Stakeholder alignment and communication plan (2 weeks)
-- 1.1.3 Risk assessment and mitigation planning (2 weeks)
-- 1.1.4 Quality management system setup (2 weeks)
-- 1.1.5 Project management infrastructure (1 week)
-
-**Dependencies**: None (starting activities)
-**Critical Path**: Yes
-**Resources**: Project Manager (1.0 FTE), Business Analyst (0.5 FTE)
-
-**WP 1.2: Requirements Engineering (Duration: 10 weeks)**
-
-**Activities**:
-
-- 1.2.1 Business requirements gathering (4 weeks)
-- 1.2.2 Technical requirements analysis (3 weeks)
-- 1.2.3 Compliance requirements documentation (4 weeks)
-- 1.2.4 Requirements validation and approval (2 weeks)
-- 1.2.5 Requirements traceability matrix (1 week)
-
-**Dependencies**: Project foundation completion
-**Critical Path**: Yes
-**Resources**: Business Analyst (2.0 FTE), Compliance Specialist (1.0 FTE)
-
-**WP 2.1: Security Infrastructure (Duration: 16 weeks)**
-
-**Activities**:
-
-- 2.1.1 Security architecture design (4 weeks)
-- 2.1.2 Identity and access management (6 weeks)
-- 2.1.3 Data encryption implementation (4 weeks)
-- 2.1.4 Security monitoring setup (3 weeks)
-- 2.1.5 Penetration testing and validation (4 weeks)
-
-**Dependencies**: Architecture approval, compliance framework
-**Critical Path**: Yes
-**Resources**: Security Engineer (2.0 FTE), DevOps Engineer (1.0 FTE)
-
-### CRITICAL PATH ANALYSIS
-
-#### Primary Critical Path (18 months total duration)
-
+### Primary Critical Path (26 weeks):
 ```
-Project Start → Requirements (10w) → Architecture (8w) → Security (16w) →
-Core Development (20w) → Integration (12w) → Testing (8w) →
-Compliance Validation (6w) → Beta Program (12w) → Launch (4w) → Project End
+Architecture Design → Payment Integration → Inventory Integration → Security Testing → Production Launch
 ```
 
-**Critical Path Activities**:
-
-| Activity                  | Duration | Start   | Finish  | Float | Predecessors  |
-| ------------------------- | -------- | ------- | ------- | ----- | ------------- |
-| Requirements Gathering    | 10 weeks | Week 1  | Week 10 | 0     | Project Start |
-| Architecture Design       | 8 weeks  | Week 11 | Week 18 | 0     | Requirements  |
-| Security Infrastructure   | 16 weeks | Week 19 | Week 34 | 0     | Architecture  |
-| Core Platform Development | 20 weeks | Week 35 | Week 54 | 0     | Security      |
-| System Integration        | 12 weeks | Week 55 | Week 66 | 0     | Core Platform |
-| Compliance Validation     | 6 weeks  | Week 67 | Week 72 | 0     | Integration   |
-| Beta Customer Program     | 12 weeks | Week 73 | Week 84 | 0     | Compliance    |
-| Production Launch         | 4 weeks  | Week 85 | Week 88 | 0     | Beta Program  |
-
-#### Secondary Critical Paths
-
-**Path B: User Experience Track**
-Requirements → UX Design → UI Development → User Testing → Launch
-Duration: 76 weeks (12 weeks float)
-
-**Path C: Integration Track**
-Architecture → API Design → Third-party Integration → Testing → Launch
-Duration: 68 weeks (20 weeks float)
-
-#### Critical Resource Dependencies
-
-**Security Engineer Constraint**:
-
-- Only 2 available security engineers
-- Required for security infrastructure (16 weeks) and compliance validation (6 weeks)
-- Creates resource bottleneck if not managed properly
-
-**Database Architect Dependency**:
-
-- Single database architect available
-- Critical for architecture design and data migration engine
-- No backup resource available
-
-### RESOURCE ALLOCATION & LEVELING
-
-#### Resource Requirements by Phase
-
-**Phase 1: Foundation (Months 1-4)**
-
-- Project Management: 2 FTE
-- Business Analysis: 3 FTE
-- Architecture: 4 FTE
-- Compliance: 2 FTE
-- Total: 11 FTE
-
-**Phase 2: Core Development (Months 3-12)**
-
-- Development: 15 FTE
-- Security: 4 FTE
-- Quality Assurance: 6 FTE
-- DevOps: 3 FTE
-- Architecture: 2 FTE
-- Total: 30 FTE
-
-**Phase 3: Integration & Testing (Months 9-15)**
-
-- Development: 10 FTE
-- Quality Assurance: 8 FTE
-- Security: 3 FTE
-- Business Analysis: 4 FTE
-- Project Management: 3 FTE
-- Total: 28 FTE
-
-**Phase 4: Launch (Months 15-18)**
-
-- Development: 5 FTE
-- Support: 6 FTE
-- Training: 4 FTE
-- Project Management: 2 FTE
-- Quality Assurance: 3 FTE
-- Total: 20 FTE
-
-#### Resource Leveling Solutions
-
-**Overallocation Resolution**:
-
-- Months 9-12: Peak demand of 35 FTE vs. 30 available
-- Solution: Offshore development team augmentation (5 FTE)
-- Alternative: Extend timeline by 6 weeks for non-critical activities
-
-**Skill Gap Management**:
-
-- Security expertise shortage: External consultant for months 5-8
-- Database migration expertise: Training for 2 developers + external expert
-- Compliance knowledge: Dedicated compliance consultant throughout project
-
-### DURATION ESTIMATION METHODOLOGY
-
-#### Three-Point Estimation Results
-
-**Major Activities Duration Analysis**:
-
-| Activity                | Optimistic | Most Likely | Pessimistic | Expected   | Std Dev   |
-| ----------------------- | ---------- | ----------- | ----------- | ---------- | --------- |
-| Requirements Gathering  | 6 weeks    | 10 weeks    | 16 weeks    | 10.3 weeks | 1.7 weeks |
-| Architecture Design     | 5 weeks    | 8 weeks     | 12 weeks    | 8.2 weeks  | 1.2 weeks |
-| Security Infrastructure | 12 weeks   | 16 weeks    | 24 weeks    | 16.7 weeks | 2.0 weeks |
-| Core Development        | 16 weeks   | 20 weeks    | 28 weeks    | 20.7 weeks | 2.0 weeks |
-| Integration Testing     | 8 weeks    | 12 weeks    | 18 weeks    | 12.3 weeks | 1.7 weeks |
-| Compliance Validation   | 4 weeks    | 6 weeks     | 10 weeks    | 6.3 weeks  | 1.0 weeks |
-| Beta Program            | 10 weeks   | 12 weeks    | 16 weeks    | 12.3 weeks | 1.0 weeks |
-
-**Schedule Confidence Analysis**:
-
-- 50% probability: 18.0 months completion
-- 80% probability: 19.2 months completion
-- 95% probability: 20.8 months completion
-
-**Risk-Adjusted Timeline**: 20 months with 90% confidence
-
-#### Historical Data Integration
-
-**Similar Project Benchmarks**:
-
-- Enterprise software projects: Average 22% schedule overrun
-- Compliance-heavy projects: Average 18-month duration for similar scope
-- Team productivity: 85% of theoretical capacity in practice
-
-**Lessons Learned Integration**:
-
-- Add 20% buffer to integration activities (high complexity)
-- Front-load compliance work (regulatory delays common)
-- Plan for 2 weeks team onboarding (complex domain)
-
-### SCHEDULE OPTIMIZATION STRATEGIES
-
-#### Fast-Track Opportunities
-
-**Parallel Execution Strategies**:
-
-1. **Architecture-Development Overlap**: Begin low-risk development 2 weeks before architecture completion
-2. **Testing-Development Overlap**: Start unit testing infrastructure during development
-3. **Documentation-Development**: Parallel documentation creation with development
-
-**Schedule Compression Analysis**:
-
-| Technique                  | Time Saved | Cost Impact | Risk Impact | Recommendation    |
-| -------------------------- | ---------- | ----------- | ----------- | ----------------- |
-| Fast-tracking architecture | 4 weeks    | +$50K       | Medium      | Proceed           |
-| Overtime for critical path | 6 weeks    | +$120K      | Low         | Proceed if needed |
-| Additional resources       | 8 weeks    | +$200K      | Low         | Reserve option    |
-| Scope reduction            | 12 weeks   | -$150K      | High        | Last resort only  |
-
-#### Critical Chain Method Application
-
-**Buffer Allocation Strategy**:
-
-- Project buffer: 3 months (15% of critical path)
-- Feeding buffers: 2-4 weeks at convergence points
-- Resource buffers: 1 week before critical resource activities
-
-**Buffer Consumption Monitoring**:
-
-- Green zone: <33% buffer consumption
-- Yellow zone: 33-66% buffer consumption
-- Red zone: >66% buffer consumption
-
-### RISK-ADJUSTED SCHEDULING
-
-#### Schedule Risk Assessment
-
-**High-Impact Schedule Risks**:
-
-**Risk 1: Regulatory Approval Delays**
-
-- Probability: 40%
-- Impact: 2-6 month delay
-- Mitigation: Early engagement, parallel preparation
-- Schedule buffer: 1 month allocated
-
-**Risk 2: Third-Party Integration Complexity**
-
-- Probability: 60%
-- Impact: 1-3 month delay
-- Mitigation: Proof-of-concept early, vendor partnerships
-- Schedule buffer: 3 weeks allocated
-
-**Risk 3: Security Certification Issues**
-
-- Probability: 30%
-- Impact: 1-4 month delay
-- Mitigation: External security consultants, early testing
-- Schedule buffer: 2 weeks allocated
-
-**Risk 4: Resource Availability Constraints**
-
-- Probability: 50%
-- Impact: 2-8 week delay
-- Mitigation: Vendor partnerships, cross-training
-- Schedule buffer: 4 weeks allocated
-
-#### Contingency Planning
-
-**Scenario A: Aggressive Timeline (15% probability)**
-
-- Trigger: All major risks avoided
-- Duration: 16 months
-- Actions: Accelerate beta program, early launch
-
-**Scenario B: Baseline Timeline (60% probability)**
-
-- Trigger: Normal project execution
-- Duration: 18 months
-- Actions: Execute plan as designed
-
-**Scenario C: Extended Timeline (25% probability)**
-
-- Trigger: Major risk materialization
-- Duration: 21 months
-- Actions: Scope prioritization, resource augmentation
-
-### AGILE RELEASE PLANNING
-
-#### Sprint Structure for Development Phases
-
-**Sprint Configuration**:
-
-- Sprint length: 3 weeks
-- Development sprints: 26 total (months 4-17)
-- Sprint capacity: 85% of available hours
-- Sprint buffer: 15% for technical debt and defects
-
-**Release Plan Structure**:
-
-**Release 1: Core Foundation (Month 9)**
-
-- Features: Basic data migration, security framework
-- Sprint 1-8: Infrastructure and core services
-- Go/No-Go criteria: Security audit passed, basic functionality
-
-**Release 2: Enhanced Platform (Month 12)**
-
-- Features: Advanced migration tools, user interface
-- Sprint 9-16: Feature development and integration
-- Go/No-Go criteria: Performance targets met, regulatory review
-
-**Release 3: Beta Release (Month 15)**
-
-- Features: Complete feature set, production readiness
-- Sprint 17-24: Optimization and enterprise features
-- Go/No-Go criteria: Beta customer acceptance, compliance validation
-
-#### Sprint Planning Framework
-
-**Sprint 0 (Infrastructure)**: Development environment, CI/CD, coding standards
-**Sprints 1-4 (Foundation)**: Core architecture, database, security basics
-**Sprints 5-8 (Services)**: Business logic, APIs, integration framework
-**Sprints 9-12 (User Experience)**: UI/UX development, user workflows
-**Sprints 13-16 (Integration)**: Third-party integrations, data connectors
-**Sprints 17-20 (Enterprise Features)**: Scalability, advanced security, admin tools
-**Sprints 21-24 (Optimization)**: Performance tuning, bug fixes, documentation
-**Sprints 25-26 (Launch Prep)**: Final testing, deployment preparation
-
-### MONITORING & CONTROL FRAMEWORK
-
-#### Progress Tracking Methodology
-
-**Earned Value Management (EVM)**:
-
-- Planned Value (PV): Budget allocated for scheduled work
-- Earned Value (EV): Budget for work actually performed
-- Actual Cost (AC): Actual cost of work performed
-
-**Key Performance Indicators**:
-
-- Schedule Performance Index (SPI): Target >0.95
-- Cost Performance Index (CPI): Target >0.95
-- Critical Path Variance: Target <5%
-- Resource Utilization: Target 85-95%
-
-**Weekly Progress Metrics**:
-
-- Tasks completed vs. planned
-- Critical path status
-- Resource utilization rates
-- Risk register updates
-- Change request impacts
-
-#### Variance Analysis & Corrective Actions
-
-**Schedule Variance Thresholds**:
-
-- <5% variance: Monitor only
-- 5-10% variance: Detailed analysis required
-- 10-15% variance: Corrective action plan mandatory
-- > 15% variance: Executive escalation required
-
-**Corrective Action Options**:
-
-1. **Resource Reallocation**: Move resources to critical path
-2. **Scope Adjustment**: Defer non-critical features
-3. **Fast-Tracking**: Overlap activities where possible
-4. **Crashing**: Add resources to critical activities
-5. **Re-baselining**: Formal schedule change with stakeholder approval
-
-### STAKEHOLDER COMMUNICATION
-
-#### Reporting Schedule
-
-**Daily Reports**: Team leads to project manager
-
-- Progress against daily commitments
-- Blockers and impediments
-- Resource needs and issues
-
-**Weekly Reports**: Project manager to stakeholders
-
-- Schedule performance summary
-- Critical path status
-- Risk and issue updates
-- Upcoming milestone alerts
-
-**Monthly Reports**: Executive steering committee
-
-- Overall project health
-- Schedule variance analysis
-- Resource utilization trends
-- Financial performance
-
-#### Milestone Communication Plan
-
-**Milestone Review Process**:
-
-1. **Pre-Milestone Week**: Preparation and readiness assessment
-2. **Milestone Week**: Formal review and go/no-go decision
-3. **Post-Milestone Week**: Lessons learned and next phase kickoff
-
-**Stakeholder Engagement by Milestone**:
-
-- Technical milestones: Development team, architecture review board
-- Business milestones: Product owners, customer representatives
-- Compliance milestones: Regulatory team, legal counsel, external auditors
-- Launch milestones: Executive team, sales/marketing, customer success
-
-### ADAPTIVE SCHEDULING FRAMEWORK
-
-#### Schedule Baseline Management
-
-**Baseline Change Control**:
-
-- Minor changes (<5% impact): Project manager authority
-- Moderate changes (5-15% impact): Steering committee approval
-- Major changes (>15% impact): Executive sponsor approval
-
-**Re-baselining Triggers**:
-
-- Cumulative schedule variance >15%
-- Major scope changes approved
-- Resource constraints materially changed
-- External dependencies significantly altered
-
-#### Agile Adaptation Mechanisms
-
-**Sprint Retrospectives**: Continuous improvement for development phases
-**Quarterly Planning Reviews**: Strategic schedule adjustments
-**Risk Review Sessions**: Proactive schedule risk management
-**Stakeholder Feedback Loops**: Schedule optimization based on user input
-
-## Usage Instructions
-
-1. Start with comprehensive work breakdown structure and activity definition
-2. Apply multiple estimation techniques to improve accuracy
-3. Identify and analyze critical path and resource constraints
-4. Build in appropriate buffers and contingencies
-5. Design flexible schedule framework that can adapt to changes
-6. Implement robust monitoring and control processes
-7. Maintain clear stakeholder communication throughout
-8. Plan for continuous optimization and lessons learned integration
-
-## Examples
-
-### Example 1: Software Product Development
-
-**Input**:
-
-```
-{{project_type}}: Mobile app development
-{{timeline_pressure}}: Aggressive (6-month target)
-{{resource_availability}}: Limited (5 developers, 2 designers)
-{{dependencies}}: Third-party API integrations
-{{risk_level}}: Moderate complexity, new technology
-```
-
-**Output**: [Detailed schedule with sprint planning, critical path analysis, resource leveling, and risk-adjusted timeline with contingency options]
-
-### Example 2: Construction Project
-
-**Input**:
-
-```
-{{project_type}}: Commercial building construction
-{{timeline_pressure}}: Standard (18-month duration)
-{{dependencies}}: Weather, permits, material delivery
-{{resource_availability}}: Multiple subcontractors
-{{risk_level}}: High (regulatory, weather, supply chain)
-```
-
-**Output**: [Comprehensive construction schedule with weather contingencies, permit dependencies, resource coordination, and milestone-based progress tracking]
+**Critical Activities:**
+- Payment gateway integration (3 weeks) - Can't proceed without payment processing
+- Inventory system integration (2 weeks) - Required for accurate stock management  
+- Security testing and SSL setup (2 weeks) - Must complete before launch
+- Production deployment (1 week) - Final critical milestone
+
+**Secondary Paths:**
+- Design Track: Wireframes → UI Design → Frontend Development (4 weeks float)
+- Admin Features: Basic Admin → Advanced Admin Features (2 weeks float)
+
+## 3. RESOURCE ALLOCATION PLAN
+
+### Team Allocation by Phase:
+
+**Phase 1 (Foundation):**
+- Project Manager: 1.0 FTE
+- Designers: 2.0 FTE  
+- Senior Developer (Architecture): 1.0 FTE
+- Other Developers: 0.5 FTE each
+
+**Phase 2 (Core Development):**
+- Developers: 4.0 FTE (full capacity)
+- Designers: 1.0 FTE (UI refinement)
+- QA Engineer: 0.5 FTE
+- Project Manager: 1.0 FTE
+
+**Phase 3 (Advanced Features):**
+- Developers: 4.0 FTE
+- QA Engineer: 1.0 FTE (increased testing)
+- Project Manager: 1.0 FTE
+
+**Phase 4 (Testing & Launch):**
+- QA Engineer: 1.0 FTE (lead role)
+- Developers: 2.0 FTE (bug fixes, optimization)
+- Project Manager: 1.0 FTE
+
+### Resource Constraints:
+- Single QA engineer may create bottleneck in testing phase
+- Payment integration expertise limited to 1 senior developer
+- Design team front-loaded, available for other projects after week 12
+
+## 4. RISK BUFFERS & CONTINGENCY PLANNING
+
+### Schedule Buffers:
+- **Project Buffer:** 2 weeks at end (before holiday deadline)
+- **Integration Buffer:** 1 week after payment gateway integration
+- **Testing Buffer:** 1 week additional testing time built into schedule
+
+### High-Risk Activities:
+1. **Payment Gateway Integration (Weeks 13-15)**
+   - Risk: API complexity, certification delays
+   - Mitigation: Start technical research in week 8, have backup payment provider
+   - Buffer: 3 days additional time allocated
+
+2. **Third-Party API Integrations (Weeks 17-19)**
+   - Risk: API limitations, data format mismatches
+   - Mitigation: Create integration prototypes in week 12
+   - Buffer: 2 days per integration
+
+3. **Security Testing & SSL (Weeks 23-24)**
+   - Risk: Security vulnerabilities, certificate delays
+   - Mitigation: Security review in week 20, pre-order SSL certificates
+   - Buffer: 3 days additional time
+
+### Contingency Plans:
+- **If payment integration delayed:** Use manual payment processing temporarily
+- **If inventory integration fails:** Launch with manual inventory management
+- **If deadline at risk:** Reduce non-essential features (wishlist, advanced admin)
+
+## 5. MONITORING FRAMEWORK
+
+### Weekly Progress Metrics:
+- Sprint velocity (story points completed)
+- Critical path schedule variance
+- Budget burn rate vs. plan
+- Defect discovery and resolution rates
+
+### Milestone Reviews:
+- **Week 4:** Architecture & design approval
+- **Week 12:** Core features demo
+- **Week 16:** Payment system validation
+- **Week 20:** Integration completion
+- **Week 24:** Beta testing results
+- **Week 26:** Production launch
+
+### Success Criteria:
+- All 15 key features delivered
+- Performance: <3 second page loads
+- Security: Pass security audit
+- Quality: <5% post-launch defect rate
+- Launch: Ready for holiday season traffic
+
+This schedule provides a realistic 6-month timeline with built-in buffers for your e-commerce project, focusing on critical path activities while managing integration risks.
 
 ## Related Prompts
 
-- [Project Planning Expert](/prompts/planning/project-planning.md)
+- [Project Planning Expert](./project-planning-expert.md)
+- [Resource Allocation Expert](./resource-allocation-expert.md)
+- [Risk Management Planning Expert](./risk-management-planning-expert.md)
+
+## Usage Instructions
+
+1. Start with comprehensive work breakdown structure and clear activity definition
+2. Apply multiple estimation techniques (historical data, expert judgment, three-point)
+3. Identify critical path and resource constraints early in planning process
+4. Build appropriate buffers and contingencies for high-risk activities
+5. Design flexible schedule framework that can adapt to scope changes
+6. Implement robust progress monitoring with regular milestone reviews
+7. Maintain clear stakeholder communication with regular schedule updates
+8. Plan for continuous optimization based on lessons learned and performance data
+
+## Examples
+
+### Example 1: Mobile App Development
+
+**Input**:
+
+```
+{{project_type}}: iOS/Android mobile app
+{{timeline_pressure}}: Aggressive (4-month target)
+{{resource_availability}}: Small team (3 developers, 1 designer)
+{{dependencies}}: App store approval, third-party SDK integration
+{{risk_level}}: Medium - new platform features, tight timeline
+```
+
+**Output**: [Agile development schedule with sprint planning, app store submission timeline, risk mitigation for approval delays, and resource optimization]
+
+### Example 2: Event Planning
+
+**Input**:
+
+```
+{{project_type}}: Corporate conference for 500 attendees
+{{timeline_pressure}}: Fixed date (8 months out)
+{{dependencies}}: Venue booking, speaker coordination, vendor contracts
+{{risk_level}}: High - multiple external dependencies, weather considerations
+{{resource_availability}}: Event team plus external vendors
+```
+
+**Output**: [Comprehensive event schedule with vendor coordination, contingency planning for weather/venue issues, and critical milestone tracking]
+
+## Related Prompts
+
+- [Project Planning Expert](/prompts/planning/project-planning.md)  
 - [Resource Allocation Expert](/prompts/planning/resource-allocation.md)
 - [Risk Management Planner](/prompts/planning/risk-management.md)
 
 ## Research Notes
 
-- Based on PMI scheduling best practices and advanced scheduling techniques
-- Integrates traditional and agile scheduling methodologies
-- Emphasizes realistic estimation and risk-adjusted planning
-- Focuses on stakeholder communication and adaptive management
-- Balances detailed planning with flexibility for changing requirements
+- Based on PMI scheduling best practices and proven project management methodologies
+- Integrates traditional waterfall and agile scheduling approaches for flexibility
+- Emphasizes realistic estimation using multiple techniques and historical data
+- Focuses on proactive risk management with built-in schedule buffers
+- Balances detailed planning with adaptive management for changing requirements

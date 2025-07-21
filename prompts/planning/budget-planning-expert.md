@@ -1,591 +1,384 @@
-# Budget Planning Expert and Financial Strategy Architect
+# Budget Planning Expert
 
 ## Metadata
 
 - **Category**: Planning
 - **Tags**: budget planning, financial forecasting, cost estimation, variance analysis, financial controls
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Budget Planning Expert, Financial Strategy Architect
+- **Version**: 2.0.0
 - **Use Cases**: annual budgeting, project cost estimation, financial planning, cost control, variance management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert budget planning skills with financial strategy architecture to create comprehensive, accurate budgets that align with strategic objectives while maintaining financial discipline. It employs advanced forecasting techniques, cost modeling, and variance analysis to optimize financial performance.
+A practical budget planning assistant that helps you create comprehensive, realistic budgets aligned with your strategic goals. Provide your requirements and I'll develop detailed financial plans with revenue forecasts, expense budgets, scenarios, and controls.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise budget planning system combining:
-
-1. **Master Budget Planning Expert** (20+ years experience)
-   - Expertise: Budget development, cost estimation, variance analysis, financial forecasting
-   - Strengths: Multi-dimensional budgeting, scenario planning, cost behavior analysis, financial controls
-   - Perspective: Building budgets that balance ambition with financial discipline while enabling strategic execution
-
-2. **Financial Strategy Architect**
-   - Expertise: Strategic financial planning, capital allocation, investment evaluation, performance measurement
-   - Strengths: ROI optimization, risk assessment, financial modeling, stakeholder alignment
-   - Perspective: Creating financial frameworks that drive business value while maintaining operational excellence
-
-Apply these budgeting frameworks:
-- **Zero-Based Budgeting**: Bottom-up cost justification and optimization
-- **Activity-Based Budgeting**: Cost allocation based on activity drivers
-- **Rolling Forecasts**: Dynamic budget updates and scenario planning
-- **Capital Budgeting**: Investment evaluation and portfolio optimization
-
-BUDGET CONTEXT:
-- **Organization Type**: {{startup_growth_mature_enterprise_nonprofit}}
-- **Budget Scope**: {{department_project_annual_strategic_capital}}
-- **Planning Horizon**: {{quarterly_annual_3_year_5_year}}
-- **Budget Size**: {{thousands_hundreds_thousands_millions_complex}}
-- **Industry**: {{sector_market_dynamics_regulatory_environment}}
-- **Growth Stage**: {{startup_scaling_mature_transformation}}
-- **Financial Health**: {{strong_stable_stressed_turnaround}}
-- **Stakeholder Type**: {{internal_board_investors_government}}
-- **Accuracy Requirements**: {{high_standard_directional}}
-- **Change Frequency**: {{stable_periodic_frequent_continuous}}
-
-BUDGET OBJECTIVES:
-{{financial_goals_strategic_priorities_constraints_assumptions}}
-
-BUDGET PLANNING FRAMEWORK:
-
-Phase 1: STRATEGIC FOUNDATION
-1. Strategic objective alignment
-2. Financial baseline analysis
-3. Market and industry assessment
-4. Performance benchmarking
-
-Phase 2: BUDGET DEVELOPMENT
-1. Revenue forecasting
-2. Cost structure modeling
-3. Capital requirement planning
-4. Risk assessment integration
-
-Phase 3: OPTIMIZATION & VALIDATION
-1. Scenario analysis
-2. Sensitivity testing
-3. Variance simulation
-4. Stakeholder review
-
-Phase 4: CONTROL & MONITORING
-1. Performance tracking
-2. Variance analysis
-3. Forecast updates
-4. Corrective actions
-
-DELIVER YOUR BUDGET AS:
-```
-
-## COMPREHENSIVE BUDGET PLAN
-
-### BUDGET OVERVIEW
-
-**Organization**: TechVenture Solutions - B2B SaaS Platform
-**Budget Period**: Fiscal Year 2025 (January - December 2025)
-**Budget Type**: Annual Operating Budget + 3-Year Strategic Plan
-**Total Budget**: $18.5M (FY2025), $65M (3-Year Total)
-
-**Strategic Budget Objectives**:
-
-1. Scale revenue from $8M to $18M (125% growth)
-2. Achieve positive EBITDA by Q4 2025
-3. Maintain 18-month cash runway throughout year
-4. Build foundation for Series B funding in 2026
-5. Establish market leadership in mid-market segment
-
-**Key Budget Assumptions**:
-
-- Customer acquisition cost remains <$8K
-- Monthly recurring revenue churn <3%
-- Average contract value increases 35%
-- Team scaling from 65 to 95 FTE
-- No major economic downturn impact
-
-### EXECUTIVE SUMMARY
-
-**Financial Strategy**:
-Invest aggressively in growth (65% of budget) while building operational infrastructure (25%) and maintaining financial reserves (10%) to achieve market leadership and profitability milestones.
-
-**Budget Allocation Philosophy**:
-
-1. **Growth-First Approach**: Prioritize revenue-generating investments
-2. **Balanced Scaling**: Grow revenue faster than costs (2:1 ratio)
-3. **Strategic Reserves**: Maintain flexibility for opportunities
-4. **ROI Discipline**: Target 3:1 return on growth investments
-5. **Financial Controls**: Monthly variance review and adjustment
-
-**Key Financial Targets**:
-
-- Revenue: $18M (+125% YoY)
-- Gross Margin: 85% (maintain)
-- EBITDA: +5% by Q4 (from -25% Q1)
-- Customer Acquisition Cost: <$8K
-- Customer Lifetime Value: >$75K
-
-### REVENUE BUDGET FORECAST
-
-#### Revenue Model Analysis
-
-**Revenue Streams Breakdown**:
-
-| Revenue Stream               | FY2024 Actual | FY2025 Budget | Growth Rate | % of Total |
-| ---------------------------- | ------------- | ------------- | ----------- | ---------- |
-| **Subscription Revenue**     | $6.8M         | $15.2M        | +124%       | 84%        |
-| **Professional Services**    | $900K         | $2.1M         | +133%       | 12%        |
-| **Integration Partnerships** | $300K         | $720K         | +140%       | 4%         |
-| **Total Revenue**            | $8.0M         | $18.0M        | +125%       | 100%       |
-
-#### Subscription Revenue Deep Dive
-
-**Customer Segmentation Forecast**:
-
-**Small Business (<$10M revenue)**:
-
-- Current customers: 120
-- Target customers: 200 (+67%)
-- Average contract value: $15K → $18K
-- Expected revenue: $3.6M
-
-**Mid-Market ($10M-$100M revenue)**:
-
-- Current customers: 45
-- Target customers: 85 (+89%)
-- Average contract value: $45K → $58K
-- Expected revenue: $4.9M
-
-**Enterprise (>$100M revenue)**:
-
-- Current customers: 8
-- Target customers: 25 (+213%)
-- Average contract value: $120K → $140K
-- Expected revenue: $3.5M
-
-**New Market Segments**:
-
-- International customers: $1.8M
-- Vertical solutions: $1.4M
-
-#### Monthly Revenue Progression
+## Prompt
 
 ```
-Revenue Ramp (Monthly ARR):
-Q1: $8.0M → $9.2M (+15%)
-Q2: $9.2M → $11.8M (+28%)
-Q3: $11.8M → $15.1M (+28%)
-Q4: $15.1M → $18.0M (+19%)
+I'll help you create a comprehensive budget that aligns financial resources with your strategic objectives. Let me gather information about your budget needs.
 
-Cumulative Revenue by Quarter:
-Q1: $2.1M
-Q2: $5.4M (+$3.3M)
-Q3: $9.8M (+$4.4M)
-Q4: $18.0M (+$8.2M)
+About your organization:
+1. What type of organization are you budgeting for? (startup, small business, department, nonprofit)
+2. What's the budget scope? (annual budget, project, department, specific initiative)
+3. What time period does this cover? (quarterly, annual, multi-year)
+4. What's your approximate budget size?
+
+Financial context:
+5. What are your main revenue sources or funding?
+6. What are your key expense categories?
+7. What's your current financial situation? (growth stage, profitability, constraints)
+8. What are your main financial goals for this period?
+
+Budget requirements:
+9. Who needs to approve or review this budget? (board, investors, management)
+10. How detailed does the budget need to be?
+11. What level of accuracy/flexibility do you need?
+12. Do you need scenario planning? (best/worst case)
+
+Based on your answers, I'll create:
+
+**1. EXECUTIVE SUMMARY** - Overview with key targets and strategies
+**2. REVENUE FORECAST** - Detailed income projections with assumptions
+**3. EXPENSE BUDGET** - Comprehensive cost planning by category
+**4. CASH FLOW ANALYSIS** - Monthly cash projections and requirements
+**5. SCENARIO PLANNING** - Multiple scenarios with mitigation strategies
+
+Please provide the information above, and I'll develop a budget that balances ambition with financial discipline.
 ```
 
-#### Revenue Risk Assessment
+## Example Usage
 
-**Upside Scenarios (+15% Revenue)**:
+**User Input:**
+```
+1. Organization: Early-stage startup (Series A funded)
+2. Budget scope: Annual operating budget for 2025
+3. Time period: Full year with quarterly breakdowns
+4. Budget size: $12-15M range
 
-- Accelerated enterprise adoption
-- Earlier international expansion success
-- Higher than expected contract values
+5. Revenue sources: SaaS subscriptions (85%), professional services (15%)
+6. Key expenses: Salaries (60%), marketing (20%), operations (15%), other (5%)
+7. Financial situation: Currently burning $500k/month, need path to profitability
+8. Goals: Reach break-even by Q4, maintain 18-month runway
 
-**Downside Scenarios (-20% Revenue)**:
+9. Reviewers: Board of directors, lead investors
+10. Detail level: Department-level with monthly cash flow
+11. Accuracy: ±10% variance acceptable, quarterly adjustments
+12. Scenarios: Yes - best case (+30%), base case, worst case (-25%)
+```
 
-- Economic downturn impact
-- Competitive pressure on pricing
-- Slower enterprise sales cycle
+**Assistant Output:**
 
-### OPERATING EXPENSE BUDGET
+Based on your Series A startup requirements, here's your comprehensive 2025 budget plan:
 
-#### Expense Category Overview
+# TECHVENTURE 2025 OPERATING BUDGET
 
-**Total Operating Expenses**: $17.1M (95% of revenue)
+## 1. EXECUTIVE SUMMARY
 
-| Category                     | Budget | % of Revenue | YoY Growth | Strategic Rationale            |
-| ---------------------------- | ------ | ------------ | ---------- | ------------------------------ |
-| **Sales & Marketing**        | $7.2M  | 40%          | +180%      | Growth investment priority     |
-| **Research & Development**   | $4.8M  | 27%          | +85%       | Product leadership maintenance |
-| **General & Administrative** | $2.4M  | 13%          | +45%       | Operational scaling            |
-| **Customer Success**         | $1.8M  | 10%          | +125%      | Retention and expansion        |
-| **Facilities & Operations**  | $900K  | 5%           | +35%       | Infrastructure scaling         |
+### Financial Strategy
 
-#### Sales & Marketing Budget Detail
+Transition from growth-at-all-costs to sustainable growth, achieving break-even by Q4 2025 while maintaining competitive market position and 18-month cash runway.
 
-**Sales Team Investment**: $4.2M (58% of S&M budget)
+**Budget Overview:**
+- Total Revenue Target: $14.2M
+- Total Operating Expenses: $14.0M  
+- Year-end Position: Break-even
+- Cash Runway: 18+ months maintained
 
-**Sales Personnel**:
+**Strategic Priorities:**
+1. **Efficient Growth**: CAC payback <12 months
+2. **Path to Profitability**: Positive cash flow Q4
+3. **Market Position**: Maintain growth leadership
+4. **Financial Discipline**: Monthly budget reviews
 
-- Account Executives: 12 FTE × $180K = $2.16M
-- Sales Development Reps: 8 FTE × $85K = $680K
-- Sales Engineers: 4 FTE × $160K = $640K
-- Sales Management: 3 FTE × $220K = $660K
-- Sales Operations: 2 FTE × $130K = $260K
+**Key Metrics:**
+- Revenue Growth: 85% YoY
+- Gross Margin: 82%
+- Monthly Burn: $500K → $0
+- CAC/LTV Ratio: 1:3
 
-**Marketing Investment**: $3.0M (42% of S&M budget)
+## 2. REVENUE FORECAST
 
-**Marketing Programs**:
+### Revenue Model
 
-- Digital advertising: $1.2M (40%)
-- Content marketing: $600K (20%)
-- Events and webinars: $480K (16%)
-- Marketing technology: $360K (12%)
-- Public relations: $240K (8%)
-- Marketing personnel: $120K (4%)
+| Revenue Stream | 2024 Actual | 2025 Budget | Growth | % of Total |
+|----------------|-------------|-------------|---------|------------|
+| **SaaS Subscriptions** | $6.5M | $12.1M | +86% | 85% |
+| **Professional Services** | $1.2M | $2.1M | +75% | 15% |
+| **Total Revenue** | $7.7M | $14.2M | +84% | 100% |
 
-#### Research & Development Budget
+### Subscription Revenue Detail
 
-**Engineering Team**: $3.6M (75% of R&D budget)
+**Customer Growth Plan:**
 
-- Senior Engineers: 15 FTE × $165K = $2.48M
-- Mid-level Engineers: 8 FTE × $125K = $1.0M
-- Junior Engineers: 4 FTE × $95K = $380K
-- Engineering Management: 2 FTE × $200K = $400K
+**SMB Segment** ($10-50K ACV):
+- Current: 145 customers
+- Target: 220 customers (+52%)
+- Average ACV: $28K → $32K
+- Revenue: $7.0M
 
-**Product Management**: $720K (15% of R&D budget)
+**Mid-Market** ($50-150K ACV):
+- Current: 35 customers  
+- Target: 55 customers (+57%)
+- Average ACV: $85K → $95K
+- Revenue: $5.2M
 
-- Product Managers: 3 FTE × $160K = $480K
-- Product Marketing: 2 FTE × $140K = $280K
+### Quarterly Revenue Build
 
-**Technology Infrastructure**: $480K (10% of R&D budget)
+```
+Q1 2025: $2.8M (20% of annual)
+- New MRR: $180K/month
+- Churn: <2.5%
+- Net growth: 15%
 
-- Cloud infrastructure: $300K
-- Development tools: $120K
-- Security tools: $60K
+Q2 2025: $3.2M (23% of annual)
+- New MRR: $220K/month
+- Expansion revenue accelerates
+- Net growth: 18%
 
-### CAPITAL EXPENDITURE BUDGET
+Q3 2025: $3.7M (26% of annual)
+- New MRR: $250K/month
+- Mid-market traction
+- Net growth: 20%
 
-#### Technology Infrastructure Investments
+Q4 2025: $4.5M (31% of annual)
+- New MRR: $300K/month
+- Year-end enterprise deals
+- Net growth: 22%
+```
 
-**Cloud Infrastructure Scaling**: $360K
+### Key Revenue Assumptions
 
-- Production environment expansion: $180K
-- Development environment scaling: $120K
-- Disaster recovery setup: $60K
+1. **Sales Productivity**: 4 reps → 8 reps, $1.5M quota each
+2. **Customer Retention**: 90% gross, 105% net (expansion)
+3. **Sales Cycle**: SMB 30 days, Mid-market 60 days
+4. **Implementation Time**: 2 weeks average
+5. **Payment Terms**: Annual upfront (60%), quarterly (40%)
 
-**Security Infrastructure**: $240K
+## 3. EXPENSE BUDGET
 
-- Security monitoring platform: $120K
-- Compliance certification costs: $80K
-- Penetration testing: $40K
+### Operating Expense Summary
 
-**Office and Equipment**: $180K
+| Department | 2025 Budget | % of Revenue | % of Total | Headcount |
+|------------|-------------|--------------|------------|-------|
+| **Engineering** | $4.8M | 34% | 34% | 24 |
+| **Sales & Marketing** | $4.2M | 30% | 30% | 18 |
+| **Customer Success** | $1.8M | 13% | 13% | 10 |
+| **G&A** | $1.6M | 11% | 11% | 8 |
+| **Operations** | $1.6M | 11% | 11% | 5 |
+| **Total** | $14.0M | 99% | 100% | 65 |
 
-- Office expansion (new locations): $120K
-- Hardware and equipment: $60K
+### Department Budgets
 
-#### Working Capital Requirements
+**Engineering & Product** ($4.8M):
+```
+Personnel: $4.2M
+- Engineering: 20 FTE avg $165K
+- Product: 4 FTE avg $180K
 
-**Cash Flow Management**:
+Non-Personnel: $600K
+- Infrastructure: $400K
+- Tools & licenses: $150K
+- Contractors: $50K
+```
 
-- Accounts receivable: 45-day terms
-- Monthly cash burn: $1.4M average
-- Peak cash need: $2.1M (Q3)
-- Minimum cash buffer: $3.0M maintained
+**Sales & Marketing** ($4.2M):
+```
+Personnel: $2.8M
+- Sales: 12 FTE avg $200K
+- Marketing: 6 FTE avg $130K
 
-### DETAILED MONTHLY BUDGET
+Programs: $1.4M  
+- Digital marketing: $600K
+- Events & content: $400K
+- Tools & systems: $300K
+- Other: $100K
+```
 
-#### Quarter 1 (January - March) Budget
+**Customer Success** ($1.8M):
+```
+Personnel: $1.5M
+- CSMs: 8 FTE avg $150K
+- Support: 2 FTE avg $90K
 
-**January 2025**:
+Non-Personnel: $300K
+- Tools & training: $200K
+- Customer programs: $100K
+```
 
-- Revenue: $650K
-- Operating expenses: $1.35M
-- Net cash flow: -$700K
-- Cumulative cash: $6.8M
+### Monthly Expense Progression
 
-**February 2025**:
+**Q1 Average**: $1.15M/month
+- Lower variable costs
+- Hiring ramp-up period
 
-- Revenue: $720K
-- Operating expenses: $1.38M
-- Net cash flow: -$660K
-- Cumulative cash: $6.14M
+**Q2 Average**: $1.18M/month  
+- Marketing programs launch
+- Full team productivity
 
-**March 2025**:
+**Q3 Average**: $1.17M/month
+- Efficiency improvements
+- Cost optimization focus
 
-- Revenue: $790K
-- Operating expenses: $1.42M
-- Net cash flow: -$630K
-- Cumulative cash: $5.51M
+**Q4 Average**: $1.15M/month
+- Break-even target
+- Controlled spending
 
-#### Quarterly Budget Progression
+## 4. CASH FLOW ANALYSIS
 
-**Q1 Totals**:
+### Monthly Cash Flow Projections
 
-- Revenue: $2.16M
-- Expenses: $4.15M
-- Net: -$1.99M
-- EBITDA margin: -92%
+**Starting Cash**: $9.0M (January 1)
 
-**Q2 Targets**:
+| Month | Revenue | Expenses | Net Cash | Ending Balance |
+|-------|---------|----------|----------|----------------|
+| Jan | $850K | $1,150K | -$300K | $8.7M |
+| Feb | $900K | $1,150K | -$250K | $8.45M |
+| Mar | $1,050K | $1,150K | -$100K | $8.35M |
+| Q2 | $3,200K | $3,540K | -$340K | $8.01M |
+| Q3 | $3,700K | $3,510K | +$190K | $8.20M |
+| Q4 | $4,500K | $3,450K | +$1,050K | $9.25M |
 
-- Revenue: $3.36M (+56%)
-- Expenses: $4.25M (+2%)
-- Net: -$890K
-- EBITDA margin: -26%
+**Key Cash Flow Drivers:**
 
-**Q3 Targets**:
+1. **Collections**: 65% same month, 30% next month, 5% 60+ days
+2. **Payroll**: Bi-weekly, $700K/month average
+3. **Annual Prepayments**: 60% of new deals
+4. **Major Expenses**: Marketing spend front-loaded Q1-Q2
 
-- Revenue: $4.92M (+46%)
-- Expenses: $4.35M (+2%)
-- Net: +$570K
-- EBITDA margin: +12%
+### Working Capital Management
 
-**Q4 Targets**:
+**Accounts Receivable**:
+- Average DSO: 38 days
+- Bad debt reserve: 2%
+- Collection efficiency: 98%
 
-- Revenue: $7.56M (+54%)
-- Expenses: $4.40M (+1%)
-- Net: +$3.16M
-- EBITDA margin: +42%
+**Key Vendor Terms**:
+- AWS: Net 30
+- Marketing: Net 15
+- Payroll: Same day
+- Rent: 1st of month
 
-### SCENARIO PLANNING & SENSITIVITY ANALYSIS
+## 5. SCENARIO PLANNING
 
-#### Best Case Scenario (+20% Revenue)
+### Base Case (Budget)
+- Revenue: $14.2M
+- Expenses: $14.0M
+- Year-end cash: $9.25M
+- Result: Break-even Q4
 
-**Revenue Impact**: $21.6M total revenue
+### Best Case (+30% Revenue)
+**Revenue**: $18.5M
+
 **Key Drivers**:
-
-- Faster enterprise customer acquisition
-- Higher average contract values
-- Successful international expansion
-
-**Expense Adjustments**: +$1.2M additional hiring
-**Net Impact**: +$3.4M EBITDA improvement
-**Strategic Actions**: Accelerate Series B timeline
-
-#### Base Case Scenario (Budget Target)
-
-**Revenue Target**: $18.0M
-**EBITDA Target**: +5% by Q4
-**Cash Position**: $2.8M end of year
-**Team Size**: 95 FTE
-
-#### Worst Case Scenario (-25% Revenue)
-
-**Revenue Impact**: $13.5M total revenue
-**Key Risks**:
-
-- Economic downturn
-- Competitive pricing pressure
-- Longer sales cycles
-
-**Cost Reduction Plan**: -$2.5M expense cuts
-
-- Hiring freeze: -20 planned hires
-- Marketing reduction: -$800K
-- Discretionary spending: -$300K
-
-**Mitigation Actions**:
-
-- Extend Series B timeline 6 months
-- Focus on cash flow positive segments
-- Accelerate cost reduction initiatives
-
-### VARIANCE ANALYSIS FRAMEWORK
-
-#### Budget vs. Actual Tracking
-
-**Monthly Variance Thresholds**:
-
-- Revenue variance: ±10% requires analysis
-- Expense variance: ±5% requires explanation
-- Cash flow variance: ±15% requires action plan
-
-**Key Variance Indicators**:
-
-| Metric          | Target      | Tolerance    | Action Trigger       |
-| --------------- | ----------- | ------------ | -------------------- |
-| Monthly Revenue | Plan ±5%    | ±10%         | Forecast revision    |
-| Sales Pipeline  | 3x target   | 2.5x minimum | Sales acceleration   |
-| Customer Churn  | <3% monthly | <5%          | Retention program    |
-| Burn Rate       | $1.4M       | $1.6M        | Cost reduction       |
-| Cash Runway     | 18 months   | 12 months    | Funding acceleration |
-
-#### Corrective Action Protocols
-
-**Revenue Shortfall Actions**:
-
-1. Sales team performance review
-2. Marketing campaign optimization
-3. Price optimization analysis
-4. Customer expansion focus
-5. Partnership channel activation
-
-**Expense Overrun Actions**:
-
-1. Hiring freeze implementation
-2. Discretionary spending review
-3. Vendor renegotiation
-4. Process efficiency improvement
-5. Technology optimization
-
-### FINANCIAL CONTROLS & GOVERNANCE
-
-#### Budget Authorization Matrix
-
-**Spending Authority Levels**:
-
-- CEO: Unlimited (with board oversight >$500K)
-- Department heads: $50K monthly
-- Team leads: $10K monthly
-- Individual contributors: $2K monthly
-
-**Approval Requirements**:
-
-- New hires: CFO approval required
-- Capital expenditure >$25K: CEO approval
-- Budget reallocation >$100K: Board notification
-- Unbudgeted expense >$50K: Executive committee approval
-
-#### Monthly Financial Review Process
-
-**Week 1**: Department budget review and forecast update
-**Week 2**: Variance analysis and corrective action planning
-**Week 3**: Executive team financial review
-**Week 4**: Board reporting and strategic planning
-
-#### Key Performance Indicators
-
-**Financial KPIs**:
-
-- Revenue growth rate: Target 125%
-- Gross margin: Maintain 85%
-- Customer acquisition cost: <$8K
-- Customer lifetime value: >$75K
-- Monthly recurring revenue growth: 8-12%
-
-**Operational KPIs**:
-
-- Revenue per employee: $189K target
-- Sales efficiency: $6 ARR per $1 S&M spend
-- R&D efficiency: 27% of revenue
-- Cash efficiency: 18-month runway maintained
-
-### FUNDING & CASH FLOW MANAGEMENT
-
-#### Cash Flow Projections
-
-**2025 Cash Flow Summary**:
-
-- Starting cash: $8.0M
-- Operating cash flow: -$950K
-- Ending cash: $2.8M
-- Minimum cash reached: $1.8M (Q3)
-
-**Funding Requirements**:
-
-- Series B target: $25M (Q4 2025/Q1 2026)
-- Bridge funding option: $5M (if needed Q3)
-- Revenue-based financing: $3M alternative
-
-#### Working Capital Optimization
-
-**Accounts Receivable Management**:
-
-- Payment terms: Net 30 with 2% discount for 10 days
-- Collection efficiency: 95% within 45 days
-- Bad debt reserve: 1% of revenue
-
-**Payroll and Benefits Optimization**:
-
-- Payroll timing: Bi-weekly to manage cash flow
-- Benefits efficiency: Group purchasing for 15% savings
-- Equity compensation: 40% of total compensation for senior roles
-
-### BUDGET COMMUNICATION PLAN
-
-#### Stakeholder Reporting
-
-**Board of Directors** (Monthly):
-
-- Financial dashboard with key metrics
-- Variance analysis and explanations
-- Cash flow projections and funding needs
-- Strategic initiative progress
-
-**Executive Team** (Weekly):
-
-- Budget performance summary
-- Department variance reviews
-- Cash flow updates
-- Corrective action status
-
-**Department Heads** (Weekly):
-
-- Department budget performance
-- Hiring and spending approvals
-- Forecast updates and adjustments
-- Team performance metrics
-
-#### Budget Training & Adoption
-
-**Manager Budget Training**:
-
-- Budget planning methodology
-- Variance analysis techniques
-- Approval process and controls
-- Performance measurement systems
-
-**Employee Financial Literacy**:
-
-- Company financial health education
-- Individual contribution to budget success
-- Cost consciousness and efficiency
-- Performance incentive alignment
-
-## Usage Instructions
-
-1. Begin with clear strategic objectives and financial baseline analysis
-2. Build bottom-up budget with detailed assumptions and drivers
-3. Apply multiple forecasting techniques for accuracy improvement
-4. Develop comprehensive scenario planning for risk management
-5. Implement robust variance analysis and control framework
-6. Design dynamic budget adjustment mechanisms
-7. Maintain clear stakeholder communication and accountability
-8. Plan for continuous improvement and lessons learned integration
-
-## Examples
-
-### Example 1: Startup Annual Budget
-
-**Input**:
-
-```
-{{organization_type}}: Series A startup
-{{budget_scope}}: Annual operating budget
-{{budget_size}}: $5M total budget
-{{growth_stage}}: Scaling from product-market fit
-{{financial_health}}: 18-month runway, seeking growth
-```
-
-**Output**: [Comprehensive growth-focused budget with aggressive revenue targets, balanced cost structure, scenario planning, and cash flow management]
-
-### Example 2: Enterprise Department Budget
-
-**Input**:
-
-```
-{{organization_type}}: Fortune 500 technology department
-{{budget_scope}}: IT department annual budget
-{{budget_size}}: $50M annual budget
-{{planning_horizon}}: Annual with 3-year strategic view
-{{accuracy_requirements}}: High precision for public company
-```
-
-**Output**: [Detailed departmental budget with technology infrastructure planning, headcount optimization, vendor management, and compliance requirements]
+- Sales team overperformance
+- Faster enterprise adoption
+- Higher retention/expansion
+
+**Actions**:
+- Reinvest $1.5M in growth
+- Accelerate hiring (+5 FTE)
+- Achieve profitability Q3
+- End year with $11M cash
+
+### Worst Case (-25% Revenue)
+**Revenue**: $10.7M
+
+**Immediate Actions**:
+1. **Hiring freeze** (save $1.2M)
+2. **Marketing cuts** (save $600K)
+3. **Defer office expansion** (save $200K)
+4. **Reduce contractors** (save $300K)
+
+**Result**: 
+- Maintain $7M+ cash
+- Extend runway to 20 months
+- Focus on unit economics
+
+### Trigger Points
+
+**Green Flags** (Invest more):
+- MRR growth >25% for 2 months
+- CAC payback <9 months
+- NRR >115%
+
+**Red Flags** (Cut costs):
+- MRR growth <10% for 2 months
+- Cash below $7M
+- Churn >3.5%
+
+### Budget Controls & Monitoring
+
+**Monthly Review Process**:
+
+Week 1: Department variance reports
+Week 2: Executive budget review
+Week 3: Board dashboard update
+Week 4: Next month forecast
+
+**Variance Thresholds**:
+- Revenue: >10% requires action plan
+- Expenses: >5% requires justification  
+- Cash: <$7M triggers cost controls
+
+**KPI Dashboard**:
+
+| Metric | Target | Actual | Status |
+|--------|---------|--------|--------|
+| MRR Growth | 20% | -- | -- |
+| Gross Margin | 82% | -- | -- |
+| CAC Payback | <12mo | -- | -- |
+| Burn Rate | <$200K | -- | -- |
+| Cash Runway | >18mo | -- | -- |
+
+### Implementation & Next Steps
+
+**Immediate Actions** (Week 1):
+1. Finalize department budgets
+2. Set up tracking systems
+3. Communicate targets to teams
+4. Establish review cadence
+
+**Month 1 Priorities**:
+1. Implement expense controls
+2. Launch sales hiring
+3. Optimize marketing spend
+4. Weekly cash monitoring
+
+**Quarterly Checkpoints**:
+- Q1: Foundation building
+- Q2: Growth acceleration
+- Q3: Efficiency focus
+- Q4: Profitability push
+
+**Success Metrics**:
+- Monthly budget variance <5%
+- Cash runway maintained >18mo
+- Break-even achieved Q4
+- Team morale maintained
+
+### Budget Communication
+
+**Board Reporting**:
+- Monthly financial dashboard
+- Quarterly deep dives
+- Annual planning sessions
+
+**Team Communication**:
+- Department scorecards
+- Monthly all-hands updates
+- Transparent metrics
+
+**Documentation**:
+- Budget assumptions doc
+- Monthly variance reports
+- Quarterly reforecasts
+- Annual planning guide
+
+This budget provides a clear path to sustainable growth while maintaining financial discipline and strategic flexibility.
 
 ## Related Prompts
 
-- [Financial Analysis Expert](/prompts/analysis/financial-analysis.md)
-- [Resource Allocation Expert](/prompts/planning/resource-allocation.md)
-- [Strategic Planning Expert](/prompts/planning/strategic-planning.md)
-
-## Research Notes
-
-- Based on advanced budgeting methodologies and financial planning best practices
-- Integrates strategic planning with detailed financial modeling
-- Emphasizes scenario planning and risk management throughout
-- Focuses on stakeholder communication and organizational alignment
-- Balances growth ambitions with financial discipline and controls
+- [Cash Flow Planning Expert](./cash-flow-planning-expert.md)
+- [Financial Modeling Expert](./financial-modeling-expert.md)
+- [Strategic Planning Expert](./strategic-planning-expert.md)

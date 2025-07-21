@@ -1,600 +1,464 @@
-# Event Planning Expert and Experience Design Architect
+# Event Planning Expert
 
 ## Metadata
 
 - **Category**: Planning
 - **Tags**: event planning, event management, experience design, logistics planning, stakeholder coordination
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Event Planning Expert, Experience Design Architect
+- **Version**: 2.0.0
 - **Use Cases**: corporate events, conferences, product launches, trade shows, virtual events, hybrid experiences
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert event planning skills with experience design architecture to create memorable, impactful events that achieve business objectives while delivering exceptional attendee experiences. It employs proven event management frameworks, logistics coordination, and stakeholder management to ensure flawless execution.
+A practical event planning assistant that helps you create memorable, impactful events that achieve your objectives. Provide your event requirements and I'll develop comprehensive plans with timelines, budgets, vendor management, and attendee experience strategies.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise event planning system combining:
+I'll help you plan an exceptional event that achieves your goals and creates lasting impact. Let me gather information about your event needs.
 
-1. **Master Event Planning Expert** (18+ years experience)
-   - Expertise: Event logistics, vendor management, timeline coordination, budget optimization
-   - Strengths: Project management, risk mitigation, stakeholder coordination, execution excellence
-   - Perspective: Delivering flawless events through meticulous planning, preparation, and execution
+About your event:
+1. What type of event are you planning? (conference, product launch, training, celebration, etc.)
+2. What format will it be? (in-person, virtual, hybrid)
+3. How many attendees are expected?
+4. What's your target audience? (employees, customers, prospects, industry professionals)
 
-2. **Experience Design Architect**
-   - Expertise: Attendee journey design, engagement strategy, brand experience, innovation integration
-   - Strengths: Experience mapping, emotional design, technology integration, memorable moment creation
-   - Perspective: Creating transformational experiences that drive business results and lasting impact
+Event objectives:
+5. What are your main goals for this event? (lead generation, education, networking, brand awareness)
+6. What does success look like? (specific metrics or outcomes)
+7. What's your budget range?
+8. When is the event and how much planning time do you have?
 
-Apply these event frameworks:
-- **Event Design Canvas**: Holistic event planning and experience design
-- **Attendee Journey Mapping**: Touch point optimization and experience flow
-- **Stakeholder Management Matrix**: Multi-stakeholder coordination and communication
-- **Event ROI Framework**: Objective measurement and value demonstration
+Event requirements:
+9. Do you have a venue in mind or need recommendations?
+10. What type of content/programming do you need? (speakers, workshops, entertainment)
+11. Will you need catering, AV equipment, or other services?
+12. Are there any special requirements or concerns?
 
-EVENT CONTEXT:
-- **Event Type**: {{conference_trade_show_product_launch_meeting_training_celebration}}
-- **Event Format**: {{in_person_virtual_hybrid_outdoor_destination}}
-- **Audience Size**: {{small_medium_large_mega_intimate}}
-- **Audience Type**: {{internal_external_customers_prospects_industry}}
-- **Event Objective**: {{brand_awareness_lead_generation_training_celebration_networking}}
-- **Budget Range**: {{limited_moderate_substantial_premium}}
-- **Timeline**: {{weeks_months_annual_recurring}}
-- **Geographic Scope**: {{local_regional_national_international}}
-- **Industry/Sector**: {{corporate_technology_healthcare_finance_nonprofit}}
-- **Complexity Level**: {{simple_moderate_complex_enterprise}}
+Based on your answers, I'll create:
 
-EVENT OBJECTIVES:
-{{specific_goals_target_outcomes_success_metrics_stakeholder_expectations}}
+**1. EVENT STRATEGY** - Concept, theme, and experience design
+**2. PLANNING TIMELINE** - Detailed schedule with milestones and deadlines
+**3. BUDGET BREAKDOWN** - Comprehensive cost allocation and ROI projections
+**4. VENDOR MANAGEMENT** - Supplier recommendations and coordination plan
+**5. EXECUTION GUIDE** - Day-of logistics and contingency plans
 
-EVENT PLANNING FRAMEWORK:
-
-Phase 1: STRATEGY & CONCEPT
-1. Objective clarification and stakeholder alignment
-2. Audience analysis and experience design
-3. Concept development and theme creation
-4. Success metrics and measurement planning
-
-Phase 2: PLANNING & PREPARATION
-1. Venue selection and logistics planning
-2. Vendor management and coordination
-3. Content development and speaker management
-4. Marketing and promotion strategy
-
-Phase 3: EXECUTION & DELIVERY
-1. Event setup and coordination
-2. Real-time management and troubleshooting
-3. Attendee experience optimization
-4. Stakeholder communication and updates
-
-Phase 4: EVALUATION & OPTIMIZATION
-1. Performance analysis and ROI measurement
-2. Attendee feedback collection and analysis
-3. Stakeholder debrief and lessons learned
-4. Future event planning and improvement
-
-DELIVER YOUR EVENT PLAN AS:
+Please provide the information above, and I'll design an event plan that delivers exceptional experiences and achieves your objectives.
 ```
 
-## COMPREHENSIVE EVENT PLANNING STRATEGY
-
-### EVENT OVERVIEW
-
-**Event**: "TechFuture 2025" - Annual Enterprise Technology Conference
-**Format**: Hybrid (In-person + Virtual) three-day conference
-**Dates**: September 15-17, 2025
-**Location**: San Francisco Convention Center + Virtual Platform
-**Expected Attendance**: 2,500 in-person, 5,000 virtual participants
-
-**Event Vision**:
-"Create the premier gathering for enterprise technology leaders to explore, connect, and shape the future of business technology through immersive experiences, thought-provoking content, and meaningful networking."
-
-**Primary Objectives**:
-
-1. Generate 1,500 qualified sales leads for enterprise solutions
-2. Establish market leadership in enterprise AI and automation
-3. Strengthen customer relationships and retention (95% satisfaction target)
-4. Launch new product suite with 500 beta signups
-5. Build industry partnerships and ecosystem relationships
-
-### EXECUTIVE SUMMARY
-
-**Event Strategy**:
-Design immersive hybrid experience that combines world-class thought leadership, hands-on technology demonstrations, and high-value networking to position company as the essential partner for enterprise digital transformation.
-
-**Experience Design Philosophy**:
-"Connection through Innovation" - Create meaningful connections between people, ideas, and technologies that drive business transformation and personal growth.
-
-**Key Strategic Elements**:
-
-1. **Thought Leadership Stage**: Industry visionaries and trend-setters
-2. **Innovation Showcase**: Interactive technology demonstrations
-3. **Customer Success Theater**: Real-world implementation stories
-4. **Networking Nexus**: Curated connection opportunities
-5. **Hybrid Integration**: Seamless virtual and in-person experience
-
-**Expected Outcomes**:
-
-- 1,500 marketing qualified leads
-- $50M influenced sales pipeline
-- 95% attendee satisfaction rating
-- 85% virtual engagement completion
-- 200+ media mentions and industry coverage
-
-### STAKEHOLDER ANALYSIS & ALIGNMENT
-
-#### Primary Stakeholders
-
-**Executive Leadership**:
-
-- **CEO**: Brand positioning, industry relationships, strategic partnerships
-- **CMO**: Marketing ROI, lead generation, brand awareness
-- **CRO**: Sales pipeline, customer engagement, partnership development
-- **CTO**: Product positioning, technical thought leadership
-
-**Internal Teams**:
-
-- **Sales**: Lead generation, customer meetings, pipeline development
-- **Marketing**: Brand experience, content delivery, lead capture
-- **Product**: Product launches, feature demonstrations, user feedback
-- **Customer Success**: Customer retention, satisfaction, advocacy
-
-**External Stakeholders**:
-
-- **Customers**: Value delivery, relationship building, success recognition
-- **Prospects**: Education, solution evaluation, decision support
-- **Partners**: Collaboration, co-marketing, ecosystem development
-- **Media/Analysts**: Industry coverage, thought leadership, market positioning
-
-#### Stakeholder Success Metrics
-
-| Stakeholder   | Primary Objective    | Success Metric                         | Measurement Method                     |
-| ------------- | -------------------- | -------------------------------------- | -------------------------------------- |
-| **CEO**       | Industry leadership  | Media coverage, speaking opportunities | PR tracking, speaking requests         |
-| **CMO**       | Lead generation      | 1,500 MQLs, 40% brand awareness lift   | CRM tracking, brand surveys            |
-| **CRO**       | Pipeline development | $50M influenced pipeline               | Sales attribution analysis             |
-| **Customers** | Value demonstration  | 95% satisfaction, 80% retention intent | Post-event surveys, retention tracking |
-
-### ATTENDEE EXPERIENCE DESIGN
-
-#### Attendee Persona Analysis
-
-**Persona 1: The Digital Transformation Leader** (40% of audience)
-
-- **Role**: VP/Director of Digital Transformation, IT Strategy
-- **Goals**: Strategic insights, vendor evaluation, peer networking
-- **Pain Points**: Technology integration, change management, ROI demonstration
-- **Experience Needs**: Executive content, strategic sessions, VIP networking
-
-**Persona 2: The Technology Implementer** (35% of audience)
-
-- **Role**: IT Manager, Solutions Architect, Technical Lead
-- **Goals**: Technical knowledge, implementation guidance, hands-on learning
-- **Pain Points**: Technical complexity, integration challenges, skill gaps
-- **Experience Needs**: Technical sessions, demos, certification opportunities
-
-**Persona 3: The Business Decision Maker** (25% of audience)
-
-- **Role**: C-suite, Line of Business Leaders, Budget Authority
-- **Goals**: Business case development, competitive advantage, strategic planning
-- **Pain Points**: Technology ROI, business alignment, risk management
-- **Experience Needs**: Business-focused content, peer discussions, executive experiences
-
-#### Comprehensive Attendee Journey
-
-**Pre-Event Experience (60 days before)**:
-
-**Registration & Communication**:
-
-- Personalized registration flow based on attendee type
-- Mobile app with agenda customization and networking features
-- Email nurture sequence with speaker spotlights and agenda highlights
-- Personalized agenda recommendations based on interests and role
-
-**Content & Preparation**:
-
-- Pre-event content library with industry reports and trend analysis
-- Speaker interview podcasts and behind-the-scenes content
-- Networking connector tool for meeting scheduling
-- Virtual booth tours and sponsor introductions
-
-**Day 1: Opening & Exploration**
-
-**Morning (9:00 AM - 12:00 PM)**:
-
-- **Welcome & Keynote** (9:00-10:30): Industry vision and trends
-- **Innovation Showcase** (10:45-12:00): Interactive product demonstrations
-
-**Attendee Experience**:
-
-- VIP registration with welcome gifts and premium networking lounge access
-- Real-time polling and Q&A integration during keynote
-- Gamified booth visits with digital passport and prize incentives
-- AI-powered meeting recommendations based on interests and goals
-
-**Afternoon (1:00 PM - 6:00 PM)**:
-
-- **Breakout Sessions** (1:00-2:30): Industry-specific deep dives
-- **Customer Success Stories** (2:45-4:15): Implementation case studies
-- **Executive Panel** (4:30-5:30): Industry leader roundtable
-- **Welcome Reception** (5:30-7:00): Networking and entertainment
-
-**Day 2: Deep Dive & Connections**
-
-**Morning (9:00 AM - 12:00 PM)**:
-
-- **Technology Deep Dive** (9:00-10:30): Technical architecture sessions
-- **Hands-on Labs** (10:45-12:00): Interactive workshops and certifications
-
-**Afternoon (1:00 PM - 6:00 PM)**:
-
-- **Business Strategy Sessions** (1:00-2:30): ROI and implementation planning
-- **Partner Showcase** (2:45-4:15): Ecosystem and integration demonstrations
-- **Roundtable Discussions** (4:30-5:30): Peer-to-peer knowledge sharing
-- **Customer Appreciation Dinner** (6:00-9:00): VIP customer event
-
-**Day 3: Implementation & Future**
-
-**Morning (9:00 AM - 12:00 PM)**:
-
-- **Implementation Workshops** (9:00-10:30): Hands-on planning sessions
-- **Future Trends Panel** (10:45-12:00): Industry predictions and roadmaps
-
-**Afternoon (1:00 PM - 4:00 PM)**:
-
-- **Office Hours** (1:00-3:00): One-on-one expert consultations
-- **Closing Keynote** (3:00-4:00): Future vision and call to action
-
-### VIRTUAL EXPERIENCE INTEGRATION
-
-#### Hybrid Platform Strategy
-
-**Technology Platform**: Custom-built hybrid platform with virtual networking, interactive sessions, and engagement tools
-
-**Virtual Experience Features**:
-
-- **Live Streaming**: HD streaming of all main stage presentations
-- **Interactive Sessions**: Virtual breakouts with polling, Q&A, and chat
-- **Virtual Networking**: AI-powered matchmaking and video networking lounges
-- **Digital Expo Hall**: 3D virtual booths with product demonstrations
-- **Gamification**: Points, badges, and leaderboards for engagement
-
-#### Virtual Attendee Journey
-
-**Pre-Event Virtual Engagement**:
-
-- Platform orientation and technology testing sessions
-- Virtual meet-and-greet with speakers and exhibitors
-- On-demand content library access
-- Virtual networking ice-breaker events
-
-**Live Virtual Experience**:
-
-- Real-time interaction with in-person attendees through chat and Q&A
-- Virtual roundtable discussions in themed networking rooms
-- Interactive polls and surveys during presentations
-- Virtual booth visits with live chat and video calls
-
-**Post-Event Virtual Access**:
-
-- 30-day access to recorded sessions and presentation materials
-- Continued networking through platform messaging
-- Follow-up virtual workshops and implementation sessions
-- Virtual user group formation and ongoing community
-
-### VENUE & LOGISTICS PLANNING
-
-#### Venue Selection & Configuration
-
-**San Francisco Convention Center**:
-
-- **Main Auditorium**: 2,500 capacity for keynotes and general sessions
-- **Breakout Rooms**: 8 rooms with 150-300 capacity each
-- **Exhibition Hall**: 100 booths with interactive demonstration spaces
-- **Networking Areas**: Multiple lounges and casual meeting spaces
-
-**Space Design & Flow**:
-
-- **Central Hub**: Registration, information, and networking nexus
-- **Technology Corridor**: Innovation showcase and product demonstrations
-- **Learning Zones**: Focused areas for education and skill building
-- **Hospitality Suites**: VIP and customer exclusive spaces
-
-#### Technology Infrastructure
-
-**Audio/Visual Requirements**:
-
-- **Main Stage**: 4K LED walls, professional lighting, broadcast-quality audio
-- **Breakout Rooms**: Interactive displays, wireless presentation, recording capability
-- **Networking**: High-speed WiFi, charging stations, digital signage
-- **Hybrid Integration**: Professional streaming setup, remote interaction tools
-
-**Event Technology Stack**:
-
-- **Registration**: Custom registration platform with mobile integration
-- **Mobile App**: Native iOS/Android app with agenda, networking, and engagement
-- **Lead Capture**: QR code scanning, business card digitization
-- **Analytics**: Real-time attendee tracking and engagement measurement
-
-### CONTENT STRATEGY & SPEAKER MANAGEMENT
-
-#### Content Programming Strategy
-
-**Content Pillar 1: Future Vision** (30% of content)
-
-- Industry trend analysis and future predictions
-- Technology evolution and impact assessment
-- Strategic planning and preparation frameworks
-- Executive perspectives on digital transformation
-
-**Content Pillar 2: Implementation Excellence** (40% of content)
-
-- Technical deep dives and architecture discussions
-- Implementation case studies and lessons learned
-- Hands-on workshops and certification programs
-- Best practices and methodology sharing
-
-**Content Pillar 3: Business Impact** (30% of content)
-
-- ROI measurement and value demonstration
-- Change management and organizational transformation
-- Customer success stories and quantified results
-- Industry-specific applications and solutions
-
-#### Speaker Portfolio & Management
-
-**Keynote Speakers** (5 speakers - $150K budget):
-
-- **Industry Visionary**: Renowned technology thought leader
-- **Customer CEO**: Transformation success story presentation
-- **Company Executive**: Product vision and strategic direction
-- **Innovation Expert**: Emerging technology trends and applications
-- **Implementation Expert**: Practical guidance and methodology
-
-**Breakout Speakers** (25 speakers - $75K budget):
-
-- **Technical Experts**: Product specialists and solution architects
-- **Customer Champions**: Implementation leaders and success stories
-- **Industry Analysts**: Market insights and competitive analysis
-- **Partner Representatives**: Ecosystem integration and collaboration
-
-**Speaker Management Process**:
-
-- **Selection**: Rigorous evaluation based on expertise, presentation skills, audience appeal
-- **Preparation**: Content coaching, presentation rehearsals, AV testing
-- **Support**: Dedicated speaker liaison, hospitality coordination, technical assistance
-- **Follow-up**: Content capture, attendee connections, future engagement
-
-### MARKETING & PROMOTION STRATEGY
-
-#### Pre-Event Marketing Campaign
-
-**Content Marketing** ($200K budget):
-
-- **Speaker Interview Series**: Video interviews with keynote speakers
-- **Industry Report**: Annual technology trends research and analysis
-- **Email Campaign**: 8-touch nurture sequence over 12 weeks
-- **Social Media**: Daily content leading up to event with hashtag campaign
-
-**Paid Advertising** ($300K budget):
-
-- **LinkedIn Ads**: Targeted campaigns for enterprise technology professionals
-- **Google Ads**: Search campaigns for relevant industry keywords
-- **Industry Publications**: Banner advertising and sponsored content
-- **Podcast Sponsorships**: Technology and business podcast advertising
-
-**Partnership Marketing** ($100K budget):
-
-- **Sponsor Promotion**: Co-marketing with sponsor companies
-- **Media Partnerships**: Industry publication content partnerships
-- **Association Partnerships**: Professional organization cross-promotion
-- **Customer Advocacy**: Customer testimonials and referral programs
-
-#### On-Site Marketing & Branding
-
-**Brand Experience Design**:
-
-- **Visual Identity**: Consistent branding across all touchpoints
-- **Signage Strategy**: Wayfinding, messaging, and brand reinforcement
-- **Digital Integration**: Social media walls, hashtag promotion, live updates
-- **Experiential Elements**: Interactive installations and photo opportunities
-
-**Lead Generation Strategy**:
-
-- **Booth Interactions**: Qualified conversations with lead scoring
-- **Session Tracking**: Attendance tracking and engagement measurement
-- **Networking Analytics**: Connection quality and follow-up opportunities
-- **Contest Integration**: Prize drawings tied to engagement activities
-
-### VENDOR MANAGEMENT & COORDINATION
-
-#### Key Vendor Categories
-
-**Event Services** ($400K total budget):
-
-- **Audio/Visual**: Professional AV company for staging and technical support
-- **Catering**: Full-service catering for meals, breaks, and receptions
-- **Logistics**: Event management company for setup, coordination, and breakdown
-- **Security**: Professional security services for venue and attendee safety
-
-**Technology Vendors** ($200K total budget):
-
-- **Platform Provider**: Hybrid event platform for virtual integration
-- **App Development**: Mobile app customization and support
-- **Registration**: Event registration and attendee management platform
-- **Analytics**: Event analytics and measurement tools
-
-**Creative Services** ($150K total budget):
-
-- **Design Agency**: Visual identity, signage, and branded materials
-- **Video Production**: Keynote recording, promotional videos, live streaming
-- **Photography**: Professional event photography and real-time social sharing
-- **Entertainment**: Musical performers and interactive experiences
-
-#### Vendor Management Framework
-
-**Selection Process**:
-
-- **RFP Development**: Detailed requirements and evaluation criteria
-- **Vendor Evaluation**: Capability assessment, reference checks, cost analysis
-- **Contract Negotiation**: Service level agreements, payment terms, cancellation policies
-- **Onboarding**: Kickoff meetings, timeline coordination, communication protocols
-
-**Coordination & Communication**:
-
-- **Weekly Vendor Calls**: Progress updates, issue resolution, timeline management
-- **Shared Project Management**: Collaborative planning tools and document sharing
-- **Quality Assurance**: Regular check-ins, testing, and performance validation
-- **Contingency Planning**: Backup options, risk mitigation, emergency procedures
-
-### BUDGET MANAGEMENT & ROI ANALYSIS
-
-#### Detailed Budget Breakdown
-
-**Total Event Budget**: $2.5M
-
-| Category                   | Budget | % of Total | Key Components                         |
-| -------------------------- | ------ | ---------- | -------------------------------------- |
-| **Venue & Facilities**     | $500K  | 20%        | Venue rental, setup, AV equipment      |
-| **Speakers & Content**     | $225K  | 9%         | Speaker fees, content development      |
-| **Marketing & Promotion**  | $600K  | 24%        | Advertising, content, partnerships     |
-| **Technology Platform**    | $300K  | 12%        | Hybrid platform, mobile app, analytics |
-| **Catering & Hospitality** | $400K  | 16%        | Meals, receptions, VIP experiences     |
-| **Vendor Services**        | $275K  | 11%        | Logistics, security, production        |
-| **Staff & Operations**     | $150K  | 6%         | Event staff, management, coordination  |
-| **Contingency**            | $50K   | 2%         | Emergency fund, unexpected costs       |
-
-#### ROI Calculation & Projection
-
-**Revenue Impact Analysis**:
-
-- **Direct Sales**: $15M (Expected closed revenue within 6 months)
-- **Pipeline Influence**: $50M (Sales opportunities influenced by event)
-- **Customer Retention**: $25M (Retained revenue from customer engagement)
-- **Partner Revenue**: $5M (Partner-generated revenue from connections)
-
-**Cost Analysis**:
-
-- **Total Investment**: $2.5M (Event budget)
-- **Opportunity Cost**: $500K (Staff time and resources)
-- **Total Cost**: $3M (All-in event investment)
-
-**ROI Metrics**:
-
-- **Immediate ROI**: 500% (Direct sales / Total cost)
-- **6-Month ROI**: 1,600% (Pipeline influence / Total cost)
-- **Customer Value**: 830% (Retention value / Total cost)
-- **Total ROI**: 3,167% (All revenue impact / Total cost)
-
-### RISK MANAGEMENT & CONTINGENCY PLANNING
-
-#### Risk Assessment Matrix
-
-**High-Impact Risks**:
-
-**Risk 1: Technology Platform Failure**
-
-- Probability: 20%
-- Impact: Major disruption to virtual experience
-- Mitigation: Backup platform, extensive testing, technical support team
-- Contingency: Rapid platform switch, partial refunds, rescheduled sessions
-
-**Risk 2: Key Speaker Cancellation**
-
-- Probability: 30%
-- Impact: Content gap, attendee disappointment
-- Mitigation: Backup speakers, flexible content, speaker insurance
-- Contingency: Substitute speakers, content pivots, virtual appearances
-
-**Risk 3: Low Attendance/Registration**
-
-- Probability: 25%
-- Impact: Reduced ROI, diminished networking value
-- Mitigation: Early bird incentives, partner promotion, content marketing
-- Contingency: Venue downsizing, cost reduction, virtual-first pivot
-
-**Risk 4: Health/Safety Concerns**
-
-- Probability: 15%
-- Impact: Event cancellation or major restrictions
-- Mitigation: Health protocols, insurance coverage, virtual backup
-- Contingency: Virtual-only event, postponement, hybrid scaling
-
-#### Crisis Management Plan
-
-**Crisis Response Team**:
-
-- **Crisis Manager**: Event director with decision-making authority
-- **Communications Lead**: PR and attendee communication coordination
-- **Technical Lead**: Technology and platform issue resolution
-- **Operations Lead**: Venue and logistics problem solving
-
-**Communication Protocols**:
-
-- **Internal**: Immediate team notification and response coordination
-- **Attendee**: Transparent communication with solutions and alternatives
-- **Stakeholder**: Executive briefing and impact assessment
-- **Media**: Prepared statements and proactive communication
-
-### MEASUREMENT & ANALYTICS FRAMEWORK
-
-#### Event Performance KPIs
-
-**Attendance Metrics**:
-
-- **Registration Rate**: Target 85% conversion from interest to registration
-- **Attendance Rate**: Target 90% show rate for registered attendees
-- **Session Engagement**: Target 75% average session attendance
-- **Virtual Participation**: Target 80% completion rate for virtual attendees
-
-**Engagement Metrics**:
-
-- **Session Ratings**: Target 4.2/5.0 average session satisfaction
-- **Networking Connections**: Target 8 meaningful connections per attendee
-- **App Engagement**: Target 70% active daily app usage
-- **Content Interaction**: Target 60% content download and sharing rate
-
-**Business Impact Metrics**:
-
-- **Lead Generation**: Target 1,500 marketing qualified leads
-- **Pipeline Influence**: Target $50M influenced sales opportunities
-- **Customer Satisfaction**: Target 95% customer attendee satisfaction
-- **Brand Awareness**: Target 40% aided brand recognition increase
-
-#### Data Collection & Analysis
-
-**Real-Time Analytics**:
-
-- **Attendance Tracking**: Live session and booth visit monitoring
-- **Engagement Measurement**: App usage, networking, and interaction tracking
-- **Social Media Monitoring**: Hashtag tracking, sentiment analysis, reach measurement
-- **Lead Scoring**: Real-time qualification and prioritization
-
-**Post-Event Analysis**:
-
-- **Comprehensive Survey**: Detailed attendee feedback and satisfaction measurement
-- **Sales Attribution**: 6-month tracking of event-influenced opportunities
-- **Brand Impact**: Pre/post event brand awareness and perception studies
-- **ROI Analysis**: Financial impact assessment and cost-per-outcome calculation
-
-#### Continuous Improvement Framework
-
-**Feedback Integration Process**:
-
-- **Daily Debriefs**: Real-time adjustments and optimization during event
-- **Post-Event Review**: Comprehensive analysis within 2 weeks of event
-- **Stakeholder Feedback**: Input from all stakeholder groups and teams
-- **Vendor Assessment**: Performance evaluation and future partnership decisions
-
-**Learning Documentation**:
-
-- **Best Practices Guide**: Successful tactics and strategies documentation
-- **Lessons Learned**: Challenges, solutions, and improvement opportunities
-- **Template Library**: Reusable processes, checklists, and frameworks
-- **Knowledge Transfer**: Team training and capability development
+## Example Usage
+
+**User Input:**
+```
+1. Event type: Annual customer conference
+2. Format: Hybrid - main venue with virtual streaming
+3. Attendees: 500 in-person, 1000 virtual expected
+4. Audience: Current customers and prospects in tech industry
+
+5. Main goals: Customer retention, product education, lead generation
+6. Success metrics: 90% satisfaction, 200 new leads, strengthen 50 key accounts
+7. Budget: $300,000 total
+8. Event date: 3 months from now (March 15-16)
+
+9. Venue: Looking at convention centers in Chicago
+10. Content: Keynotes, product demos, customer panels, networking
+11. Services: Full catering, professional AV, expo hall
+12. Requirements: Accommodate virtual attendees, COVID protocols, sustainability focus
+```
+
+**Assistant Output:**
+
+Based on your annual customer conference requirements, here's your comprehensive event plan:
+
+# CUSTOMER CONFERENCE 2025 - EVENT PLAN
+
+## 1. EVENT STRATEGY
+
+### Event Concept & Theme
+
+**Theme: "Innovate Together: Shaping Tomorrow's Technology"**
+
+**Concept Statement:**
+Create an immersive hybrid experience that celebrates customer success while showcasing innovation. The event will blend education, inspiration, and connection to strengthen relationships and drive business growth.
+
+**Experience Pillars:**
+1. **Learn** - Product education and industry insights
+2. **Connect** - Meaningful networking and relationship building
+3. **Inspire** - Success stories and future vision
+4. **Engage** - Interactive demos and hands-on experiences
+
+### Attendee Experience Design
+
+**In-Person Journey:**
+- VIP welcome experience with personalized check-in
+- Conference app with AI-powered networking suggestions
+- Interactive product playground with hands-on demos
+- Themed networking zones for different interests
+- Customer success showcase gallery
+
+**Virtual Experience:**
+- Professional broadcast quality streaming
+- Virtual networking lounges with video chat
+- Interactive Q&A and polling during sessions
+- Digital swag bags and exclusive content
+- On-demand session library
+
+### Key Differentiators
+
+**Sustainability Focus:**
+- Digital-first materials (app-based agenda)
+- Locally sourced catering with plant-based options
+- Carbon offset program for travel
+- Reusable badge holders and eco-friendly swag
+
+**Engagement Innovations:**
+- Gamification with points and prizes
+- AR product demonstrations
+- Live social media wall
+- Real-time translation for global audience
+
+## 2. PLANNING TIMELINE
+
+### 12-Week Planning Schedule
+
+**PHASE 1: Foundation (Weeks 12-9)**
+
+*Week 12 (December 15-21):*
+- Finalize event strategy and objectives
+- Form planning committee
+- Begin venue selection process
+- Launch "Save the Date" campaign
+
+*Week 11 (December 22-28):*
+- Complete venue site visits
+- Define content tracks and agenda structure
+- Begin speaker outreach
+- Develop event branding
+
+*Week 10 (December 29-January 4):*
+- Secure venue contract
+- Launch event website and registration
+- Finalize keynote speakers
+- Begin sponsor recruitment
+
+*Week 9 (January 5-11):*
+- Complete visual identity design
+- Launch early bird registration
+- Secure AV and catering vendors
+- Plan virtual platform requirements
+
+**PHASE 2: Build (Weeks 8-5)**
+
+*Week 8 (January 12-18):*
+- Finalize sponsor packages
+- Launch marketing campaign
+- Complete speaker lineup
+- Design expo hall layout
+
+*Week 7 (January 19-25):*
+- Produce promotional content
+- Coordinate travel arrangements
+- Plan networking activities
+- Test virtual platform
+
+*Week 6 (January 26-February 1):*
+- Finalize session content
+- Complete vendor contracts
+- Launch social media campaign
+- Send first attendee communication
+
+*Week 5 (February 2-8):*
+- Review registrations and adjust plans
+- Finalize catering selections
+- Complete signage designs
+- Conduct virtual platform training
+
+**PHASE 3: Execute (Weeks 4-1)**
+
+*Week 4 (February 9-15):*
+- Send detailed agenda to attendees
+- Complete presentation reviews
+- Finalize staffing assignments
+- Ship event materials
+
+*Week 3 (February 16-22):*
+- Conduct full technical rehearsal
+- Brief all staff and volunteers
+- Finalize attendee lists
+- Prepare name badges and materials
+
+*Week 2 (February 23-March 1):*
+- Final vendor confirmations
+- Complete risk assessment
+- Send final attendee communications
+- Pack event supplies
+
+*Week 1 (March 2-8):*
+- Arrive on-site for setup
+- Conduct walk-throughs
+- Brief security and staff
+- Final technical checks
+
+**Event Days (March 15-16):**
+- Execute according to run-of-show
+- Monitor and adjust in real-time
+- Capture content and feedback
+- Manage crisis communications if needed
+
+## 3. BUDGET BREAKDOWN
+
+### Total Budget: $300,000
+
+**Venue & Facilities: $75,000 (25%)**
+- Convention center rental (2 days): $40,000
+- Setup/breakdown labor: $10,000
+- Equipment rentals (furniture, etc.): $10,000
+- WiFi and technical infrastructure: $10,000
+- Security services: $5,000
+
+**Food & Beverage: $60,000 (20%)**
+- Day 1 breakfast and lunch: $20,000
+- Day 2 breakfast and lunch: $20,000
+- Welcome reception: $15,000
+- Coffee breaks and snacks: $5,000
+
+**Technology: $50,000 (17%)**
+- Virtual event platform: $20,000
+- Mobile event app: $10,000
+- AV equipment and support: $15,000
+- Live streaming services: $5,000
+
+**Speakers & Content: $40,000 (13%)**
+- Keynote speakers (2): $25,000
+- Session speakers travel: $10,000
+- Content development: $5,000
+
+**Marketing & Promotion: $30,000 (10%)**
+- Website development: $8,000
+- Email campaigns: $5,000
+- Social media advertising: $10,000
+- Print materials: $7,000
+
+**Staffing: $25,000 (8%)**
+- Event management team: $15,000
+- On-site support staff: $7,000
+- Virtual event moderators: $3,000
+
+**Attendee Experience: $15,000 (5%)**
+- Welcome gifts and swag: $10,000
+- Entertainment: $3,000
+- Sustainability initiatives: $2,000
+
+**Contingency: $5,000 (2%)**
+- Emergency fund for unexpected costs
+
+### ROI Projections
+
+**Revenue Opportunities:**
+- Sponsorships: $50,000 (offset costs)
+- Lead generation value: $200,000 (200 leads × $1,000 value)
+- Customer retention impact: $500,000 (5% improvement)
+- Total projected ROI: 250% return on investment
+
+## 4. VENDOR MANAGEMENT
+
+### Key Vendor Partners
+
+**Venue: Chicago Convention Center**
+- Contact: Sarah Johnson, Events Director
+- Contract value: $40,000
+- Key deliverables: Space, basic AV, WiFi, security
+- Payment terms: 50% deposit, balance 30 days post-event
+
+**Catering: Taste of Chicago Catering**
+- Contact: Michael Chen, Sales Manager
+- Contract value: $60,000
+- Key deliverables: All F&B, service staff, sustainable options
+- Special requirements: 10% vegetarian, 5% vegan, allergy accommodations
+
+**AV Production: TechPro Events**
+- Contact: David Kim, Production Manager
+- Contract value: $35,000
+- Key deliverables: Sound, lighting, video, streaming
+- Technical requirements: 4K recording, multi-camera setup
+
+**Virtual Platform: EventHub Pro**
+- Contact: Lisa Martinez, Account Manager
+- Contract value: $20,000
+- Key deliverables: Streaming, networking, analytics
+- Support: 24/7 during event
+
+### Vendor Coordination Plan
+
+**Weekly Check-ins:**
+- Every Tuesday 3 PM - All vendor status call
+- Review timelines and deliverables
+- Address issues and changes
+- Confirm final details
+
+**Pre-Event Requirements:**
+- 30 days before: Final counts and details
+- 14 days before: Walk-through with all vendors
+- 7 days before: Final confirmations
+- 24 hours before: On-site setup begins
+
+**Payment Schedule:**
+- Venue: 50% upon signing, 50% net 30
+- Catering: 25% deposit, 75% day of event
+- AV: 50% deposit, 50% upon completion
+- Platform: Monthly subscription
+
+## 5. EXECUTION GUIDE
+
+### Day-of-Event Timeline
+
+**Day 1 - March 15**
+
+*6:00 AM - Setup Begins*
+- AV team arrives for main stage setup
+- Registration desk preparation
+- Signage installation
+- Vendor load-in
+
+*7:00 AM - Staff Briefing*
+- All-hands meeting
+- Review assignments
+- Emergency procedures
+- Communication protocols
+
+*8:00 AM - Registration Opens*
+- VIP check-in begins
+- Coffee service starts
+- Expo hall opens
+- Tech support station active
+
+*9:00 AM - Opening Keynote*
+- CEO welcome address
+- Live stream begins
+- Social media activation
+- Real-time polling active
+
+*10:30 AM - Session Rotations Begin*
+- 4 concurrent tracks
+- Virtual sessions synchronized
+- Expo hall demonstrations
+- Networking lounges open
+
+*12:00 PM - Lunch & Networking*
+- Structured networking activities
+- Sponsor presentations
+- Virtual lunch tables
+- Customer awards
+
+*2:00 PM - Afternoon Sessions*
+- Product deep dives
+- Customer panels
+- Hands-on workshops
+- Virtual Q&A sessions
+
+*5:00 PM - Welcome Reception*
+- Cocktails and appetizers
+- Live entertainment
+- Sponsor recognition
+- Networking activities
+
+**Day 2 - March 16**
+
+*8:00 AM - Day 2 Kickoff*
+- Breakfast service
+- Day 2 agenda review
+- Prize drawing announcements
+
+*9:00 AM - Innovation Keynote*
+- Future vision presentation
+- Product announcements
+- Customer success stories
+
+*10:30 AM - Breakout Sessions*
+- Technical deep dives
+- Business strategy sessions
+- Partner presentations
+
+*12:00 PM - Lunch & Expo*
+- Extended expo time
+- Demo competitions
+- Virtual booth tours
+
+*2:00 PM - Closing Sessions*
+- Implementation workshops
+- Best practices sharing
+- Certification programs
+
+*4:00 PM - Closing Ceremony*
+- Conference highlights
+- Prize winners announced
+- Thank you message
+- Next year preview
+
+### Contingency Plans
+
+**Technology Failures:**
+- Backup streaming solution ready
+- Local recording capabilities
+- Mobile hotspots for WiFi backup
+- Tech support team on standby
+
+**Speaker Cancellations:**
+- Backup speakers identified
+- Pre-recorded content available
+- Virtual presentation option
+- Session restructuring plan
+
+**Low Registration:**
+- Targeted outreach campaign
+- VIP invitation program
+- Virtual-only ticket option
+- Adjust catering and space
+
+**Health/Safety Issues:**
+- Medical team on-site
+- Clear evacuation procedures
+- Communication protocols
+- Virtual-only pivot plan ready
+
+### Success Measurement
+
+**Real-Time Metrics:**
+- Registration/attendance tracking
+- Session attendance counts
+- App engagement analytics
+- Social media monitoring
+
+**Post-Event Analysis:**
+- Attendee satisfaction survey
+- Lead quality assessment
+- Sponsor feedback collection
+- Financial reconciliation
+
+**Follow-Up Actions:**
+- Thank you communications within 48 hours
+- Session recordings available within 1 week
+- Lead distribution to sales within 3 days
+- Post-event report within 2 weeks
+
+### Team Assignments
+
+**Event Director:** Overall coordination and decision-making
+**Registration Manager:** Check-in, badges, customer service
+**Content Manager:** Speaker coordination, session management
+**Technology Manager:** AV, streaming, platform support
+**Vendor Manager:** Catering, venue, supplier coordination
+**Marketing Manager:** Social media, communications, PR
+**Virtual Experience Manager:** Online attendee support
+
+This comprehensive plan provides the framework for executing a successful hybrid customer conference that achieves your objectives while creating memorable experiences for all attendees.
+
+## Related Prompts
+
+- [Project Planning Expert](./project-planning-expert.md)
+- [Marketing Campaign Expert](./marketing-campaign-expert.md)
+- [Budget Planning Expert](./budget-planning-expert.md)
 
 ## Usage Instructions
 

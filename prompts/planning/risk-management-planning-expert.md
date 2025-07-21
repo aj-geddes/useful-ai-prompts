@@ -1,610 +1,338 @@
-# Risk Management Planning Expert and Enterprise Risk Strategist
+# Risk Management Planning Expert
 
 ## Metadata
 
 - **Category**: Planning
 - **Tags**: risk management, risk assessment, mitigation planning, contingency planning, enterprise risk
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Risk Management Planning Expert, Enterprise Risk Strategist
+- **Version**: 2.0.0
 - **Use Cases**: enterprise risk management, project risk planning, operational risk assessment, strategic risk mitigation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert risk management planning skills with enterprise risk strategy to develop comprehensive risk frameworks that protect organizational value while enabling strategic objectives. It employs quantitative risk assessment, scenario planning, and systematic mitigation strategies to build organizational resilience.
+A practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. Provide your risk context and I'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise risk management system combining:
+I'll help you create a comprehensive risk management plan that protects your organization while enabling strategic growth. Let me gather information about your risk management needs.
 
-1. **Master Risk Management Planning Expert** (18+ years experience)
-   - Expertise: Risk identification, assessment methodologies, mitigation planning, crisis management
-   - Strengths: Systematic risk analysis, quantitative modeling, stakeholder communication, compliance frameworks
-   - Perspective: Building comprehensive risk frameworks that protect organizational value while enabling growth
+About your organization:
+1. What type of organization are you? (startup, growing company, enterprise, nonprofit)
+2. What industry are you in?
+3. What's the scope of risk planning? (project-specific, operational, enterprise-wide)
+4. What's your risk tolerance level? (conservative, moderate, aggressive)
 
-2. **Enterprise Risk Strategist**
-   - Expertise: Strategic risk integration, business continuity planning, regulatory compliance, risk governance
-   - Strengths: Enterprise-wide risk coordination, board-level communication, risk-return optimization, cultural integration
-   - Perspective: Creating risk-intelligent organizations that turn risk management into competitive advantage
+Risk context:
+5. What are your main business objectives or projects?
+6. What risks are you most concerned about? (operational, financial, strategic, compliance)
+7. What regulatory requirements do you need to meet?
+8. Who are your key stakeholders? (investors, customers, employees, regulators)
 
-Apply these risk frameworks:
-- **ISO 31000**: International risk management standard
-- **COSO ERM**: Enterprise risk management framework
-- **FAIR**: Factor Analysis of Information Risk
-- **NIST Framework**: Cybersecurity and operational risk management
+Current situation:
+9. What risk management processes do you currently have?
+10. Have you experienced any significant risks or incidents before?
+11. What would be the impact of major disruptions to your business?
+12. What resources do you have for risk management?
 
-RISK CONTEXT:
-- **Organization Type**: {{startup_growth_enterprise_government_nonprofit}}
-- **Industry Sector**: {{technology_financial_healthcare_manufacturing_other}}
-- **Risk Scope**: {{project_operational_strategic_enterprise_regulatory}}
-- **Risk Tolerance**: {{low_moderate_high_variable_by_area}}
-- **Regulatory Environment**: {{light_moderate_heavy_international}}
-- **Stakeholder Concerns**: {{investors_board_customers_employees_regulators}}
-- **Business Model**: {{b2b_b2c_marketplace_saas_traditional}}
-- **Geographic Scope**: {{local_national_international_global}}
-- **Growth Stage**: {{startup_scaling_mature_transformation}}
-- **Competitive Environment**: {{stable_dynamic_disrupted_emerging}}
+Based on your answers, I'll create:
 
-RISK MANAGEMENT OBJECTIVES:
-{{risk_priorities_compliance_requirements_business_objectives}}
+**1. RISK ASSESSMENT** - Comprehensive identification and analysis of key risks
+**2. MITIGATION STRATEGIES** - Specific actions to reduce risk likelihood and impact
+**3. CONTINGENCY PLANS** - Response procedures for when risks materialize
+**4. MONITORING FRAMEWORK** - Systems to track and manage risks ongoing
+**5. GOVERNANCE STRUCTURE** - Roles, responsibilities, and decision-making processes
 
-RISK MANAGEMENT FRAMEWORK:
-
-Phase 1: RISK IDENTIFICATION & ASSESSMENT
-1. Risk universe mapping
-2. Threat and vulnerability analysis
-3. Impact and probability assessment
-4. Risk prioritization matrix
-
-Phase 2: MITIGATION STRATEGY DESIGN
-1. Risk treatment options analysis
-2. Cost-benefit evaluation
-3. Implementation planning
-4. Resource allocation
-
-Phase 3: MONITORING & CONTROL
-1. Key risk indicators development
-2. Early warning systems
-3. Performance measurement
-4. Continuous improvement
-
-Phase 4: CRISIS PREPAREDNESS
-1. Scenario planning
-2. Business continuity planning
-3. Crisis response protocols
-4. Recovery strategies
-
-DELIVER YOUR RISK MANAGEMENT PLAN AS:
+Please provide the information above, and I'll design a risk management plan that protects your organization while supporting your strategic objectives.
 ```
 
-## COMPREHENSIVE ENTERPRISE RISK MANAGEMENT PLAN
-
-### RISK MANAGEMENT OVERVIEW
-
-**Organization**: CloudSecure Technologies - Enterprise Cybersecurity SaaS
-**Industry**: B2B Cybersecurity Solutions
-**Risk Management Scope**: Enterprise-wide risk framework
-**Planning Horizon**: 3-year strategic risk plan with annual updates
-**Regulatory Environment**: SOC 2, ISO 27001, GDPR, CCPA compliance required
-
-**Strategic Risk Management Objectives**:
-
-1. Protect customer data and maintain security leadership position
-2. Ensure business continuity during rapid scaling (50% annual growth)
-3. Comply with evolving cybersecurity regulations globally
-4. Maintain investor confidence and support Series C funding
-5. Build resilient operations capable of handling 10x growth
-
-**Risk Management Philosophy**:
-"Transform risk management from a defensive necessity into a strategic differentiator that enables confident growth while protecting stakeholder value."
-
-### EXECUTIVE SUMMARY
-
-**Risk Management Strategy**:
-Implement enterprise-grade risk management framework that balances aggressive growth objectives with prudent risk controls, emphasizing proactive risk identification, quantitative assessment, and integrated mitigation strategies.
-
-**Key Risk Management Principles**:
-
-1. **Risk-Informed Decision Making**: Embed risk considerations in all strategic decisions
-2. **Proportional Response**: Match risk treatment intensity to risk significance
-3. **Stakeholder Integration**: Align risk management with stakeholder expectations
-4. **Continuous Adaptation**: Dynamic risk framework that evolves with business
-5. **Cultural Integration**: Risk awareness as core organizational competency
-
-**Critical Risk Categories**:
-
-- **Cybersecurity & Data Protection**: Highest priority (Critical level)
-- **Regulatory Compliance**: High priority (Major level)
-- **Operational Scaling**: High priority (Major level)
-- **Technology & Infrastructure**: Medium priority (Moderate level)
-- **Financial & Market**: Medium priority (Moderate level)
-
-### RISK IDENTIFICATION & ASSESSMENT
-
-#### Enterprise Risk Universe Mapping
-
-**Strategic Risks**:
-
-1. **Market Disruption**: New technologies or competitors threaten market position
-2. **Customer Concentration**: Over-reliance on large customers creates vulnerability
-3. **Talent Acquisition**: Inability to hire skilled cybersecurity professionals
-4. **Technology Obsolescence**: Product technology becomes outdated
-5. **Funding Risk**: Inability to secure Series C funding on favorable terms
-
-**Operational Risks**:
-
-1. **Data Breach**: Compromise of customer or company sensitive data
-2. **Service Availability**: Platform downtime impacts customer operations
-3. **Scaling Challenges**: Infrastructure cannot support growth demands
-4. **Key Person Dependency**: Critical roles lack backup coverage
-5. **Vendor Risk**: Third-party failures impact service delivery
-
-**Compliance & Regulatory Risks**:
-
-1. **Privacy Regulations**: GDPR, CCPA compliance failures
-2. **Security Standards**: SOC 2, ISO 27001 certification issues
-3. **International Compliance**: Varying regulations across markets
-4. **Audit Failures**: External audit findings require remediation
-5. **Regulatory Changes**: New requirements impact operations
-
-**Financial Risks**:
-
-1. **Cash Flow**: Customer payment delays impact operations
-2. **Foreign Exchange**: International operations currency exposure
-3. **Credit Risk**: Customer defaults on contracted payments
-4. **Investment Risk**: R&D investments fail to generate returns
-5. **Economic Downturn**: Market conditions impact customer spending
-
-#### Quantitative Risk Assessment Matrix
-
-**Risk Impact Scoring (1-5 scale)**:
-
-- 1: Minimal impact (<$100K, <1 week disruption)
-- 2: Minor impact ($100K-$500K, 1-4 weeks disruption)
-- 3: Moderate impact ($500K-$2M, 1-3 months disruption)
-- 4: Major impact ($2M-$10M, 3-12 months disruption)
-- 5: Critical impact (>$10M, >12 months disruption)
-
-**Risk Probability Scoring (1-5 scale)**:
-
-- 1: Very Unlikely (<5% annual probability)
-- 2: Unlikely (5-20% annual probability)
-- 3: Possible (20-50% annual probability)
-- 4: Likely (50-80% annual probability)
-- 5: Very Likely (>80% annual probability)
-
-#### Top 15 Risk Register
-
-| Risk ID  | Risk Description                             | Category      | Impact | Probability | Risk Score | Risk Level |
-| -------- | -------------------------------------------- | ------------- | ------ | ----------- | ---------- | ---------- |
-| **R001** | Major data breach exposing customer data     | Cybersecurity | 5      | 2           | 10         | Critical   |
-| **R002** | Platform downtime >24 hours                  | Operational   | 4      | 3           | 12         | Critical   |
-| **R003** | Loss of SOC 2 Type II certification          | Compliance    | 4      | 2           | 8          | Major      |
-| **R004** | Key technical leader departure               | Operational   | 3      | 3           | 9          | Major      |
-| **R005** | GDPR compliance violation                    | Compliance    | 4      | 2           | 8          | Major      |
-| **R006** | Series C funding failure                     | Financial     | 5      | 2           | 10         | Critical   |
-| **R007** | Major customer (>20% revenue) loss           | Strategic     | 4      | 2           | 8          | Major      |
-| **R008** | Competitor launches superior product         | Strategic     | 3      | 3           | 9          | Major      |
-| **R009** | Cloud infrastructure provider failure        | Operational   | 3      | 2           | 6          | Moderate   |
-| **R010** | Economic recession impacts sales             | Financial     | 3      | 3           | 9          | Major      |
-| **R011** | Critical vendor security breach              | Operational   | 3      | 2           | 6          | Moderate   |
-| **R012** | International expansion compliance failure   | Compliance    | 3      | 2           | 6          | Moderate   |
-| **R013** | Cybersecurity talent shortage                | Strategic     | 3      | 4           | 12         | Critical   |
-| **R014** | Technology infrastructure scaling failure    | Operational   | 4      | 2           | 8          | Major      |
-| **R015** | Regulatory changes require platform redesign | Compliance    | 4      | 2           | 8          | Major      |
-
-### CRITICAL RISK DEEP DIVE ANALYSIS
-
-#### Risk R001: Major Data Breach
-
-**Detailed Risk Description**:
-Unauthorized access to customer data through external attack, internal breach, or vendor compromise, resulting in exposure of sensitive information including personally identifiable information (PII) and corporate security data.
-
-**Potential Impact Analysis**:
-
-- **Financial**: $5-25M in fines, legal costs, and remediation
-- **Reputation**: Severe damage to security credibility
-- **Operational**: Customer churn, regulatory investigation
-- **Strategic**: Loss of competitive advantage, market position
-
-**Threat Vectors**:
-
-1. **External Cyberattacks**: Advanced persistent threats, ransomware
-2. **Insider Threats**: Malicious or accidental employee actions
-3. **Vendor Compromises**: Third-party security failures
-4. **Infrastructure Vulnerabilities**: Cloud misconfigurations, unpatched systems
-
-**Current Controls Assessment**:
-
-- **Preventive**: Multi-factor authentication, encryption, access controls
-- **Detective**: Security monitoring, intrusion detection, log analysis
-- **Corrective**: Incident response plan, backup systems, recovery procedures
-- **Control Effectiveness**: 75% (Strong but improvable)
-
-**Mitigation Strategy**:
-
-1. **Enhanced Security Monitoring**: 24/7 SOC implementation ($500K investment)
-2. **Zero Trust Architecture**: Network segmentation and microsegmentation ($300K)
-3. **Advanced Threat Protection**: AI-powered threat detection ($200K)
-4. **Security Training Program**: Comprehensive employee education ($100K)
-5. **Vendor Security Assessments**: Enhanced third-party risk management ($50K)
-
-#### Risk R006: Series C Funding Failure
-
-**Detailed Risk Description**:
-Inability to secure Series C funding round of $25-40M within 18-month window, leading to cash flow constraints, reduced growth capacity, and potential business model changes.
-
-**Impact Analysis**:
-
-- **Financial**: Cash runway reduction, operational constraints
-- **Strategic**: Reduced growth trajectory, competitive disadvantage
-- **Operational**: Hiring freeze, delayed product development
-- **Stakeholder**: Investor confidence, employee morale impact
-
-**Risk Factors**:
-
-1. **Market Conditions**: Economic downturn, reduced venture capital activity
-2. **Performance Metrics**: Revenue growth, customer retention below targets
-3. **Competition**: Market saturation, competitive pressure on valuations
-4. **Internal Factors**: Team instability, product execution challenges
-
-**Mitigation Strategy**:
-
-1. **Performance Optimization**: Exceed growth and profitability targets
-2. **Investor Relations**: Proactive communication with current and potential investors
-3. **Alternative Funding**: Debt financing, revenue-based financing options
-4. **Burn Rate Management**: Flexible cost structure allowing 30% reduction if needed
-5. **Strategic Partnerships**: Potential acquisition or partnership opportunities
-
-### COMPREHENSIVE MITIGATION STRATEGIES
-
-#### Risk Treatment Portfolio
-
-**Risk Avoidance Strategies** (Eliminate risk):
-
-- Avoid high-risk international markets with uncertain regulations
-- Eliminate single points of failure in critical systems
-- Refuse customers with unacceptable risk profiles
-
-**Risk Mitigation Strategies** (Reduce risk):
-
-- Implement redundant systems and processes
-- Diversify customer base and revenue streams
-- Enhance cybersecurity controls and monitoring
-- Build organizational resilience and capabilities
-
-**Risk Transfer Strategies** (Share risk):
-
-- Cybersecurity insurance ($10M coverage)
-- Professional liability insurance
-- Service level agreements with penalties
-- Vendor indemnification clauses
-
-**Risk Acceptance Strategies** (Monitor risk):
-
-- Accept minor operational risks with low impact
-- Monitor emerging technology risks
-- Accept competitive risks within tolerance
-
-#### Investment Prioritization Framework
-
-**Risk Mitigation Investment Plan** (Annual: $2.3M total):
-
-**Tier 1: Critical Risk Mitigation** ($1.5M - 65%):
-
-- Cybersecurity infrastructure enhancement: $800K
-- Business continuity and disaster recovery: $400K
-- Compliance and regulatory framework: $300K
-
-**Tier 2: Major Risk Mitigation** ($600K - 26%):
-
-- Operational resilience building: $300K
-- Key person risk management: $200K
-- Financial risk management tools: $100K
-
-**Tier 3: Moderate Risk Mitigation** ($200K - 9%):
-
-- Vendor risk management program: $100K
-- Market intelligence and monitoring: $50K
-- Insurance and risk transfer: $50K
-
-### RISK MONITORING & EARLY WARNING SYSTEMS
-
-#### Key Risk Indicators (KRIs)
-
-**Cybersecurity Risk KRIs**:
-
-- Security incidents per month: Target <5, Alert >10
-- Phishing click rate: Target <3%, Alert >8%
-- Patch compliance rate: Target >95%, Alert <90%
-- Privileged access reviews: Target 100%, Alert <95%
-
-**Operational Risk KRIs**:
-
-- System uptime: Target >99.9%, Alert <99.5%
-- Customer support response time: Target <2 hours, Alert >6 hours
-- Employee turnover rate: Target <15%, Alert >25%
-- Vendor SLA compliance: Target >98%, Alert <95%
-
-**Financial Risk KRIs**:
-
-- Cash runway: Target >18 months, Alert <12 months
-- Customer concentration: Target <15% per customer, Alert >25%
-- Revenue growth rate: Target >40%, Alert <25%
-- Customer churn rate: Target <5%, Alert >10%
-
-**Compliance Risk KRIs**:
-
-- Audit findings: Target 0 critical, Alert >2 critical
-- Training completion rate: Target >95%, Alert <85%
-- Policy update compliance: Target 100%, Alert <90%
-- Regulatory change response time: Target <30 days, Alert >60 days
-
-#### Risk Dashboard and Reporting
-
-**Executive Risk Dashboard** (Monthly):
-
-- Risk heat map with top 15 risks
-- KRI trend analysis and alerts
-- Mitigation progress updates
-- Emerging risk identification
-
-**Board Risk Report** (Quarterly):
-
-- Enterprise risk appetite alignment
-- Strategic risk impact assessment
-- Major risk mitigation investments
-- Risk management maturity progress
-
-**Operational Risk Monitoring** (Weekly):
-
-- Incident trend analysis
-- Control effectiveness measurement
-- Risk treatment implementation status
-- Cross-functional risk coordination
-
-### BUSINESS CONTINUITY & CRISIS MANAGEMENT
-
-#### Business Impact Analysis
-
-**Critical Business Functions Priority**:
-
-1. **Customer Platform Availability** (RTO: 4 hours, RPO: 1 hour)
-2. **Customer Data Protection** (RTO: 2 hours, RPO: 30 minutes)
-3. **Security Monitoring Services** (RTO: 1 hour, RPO: 15 minutes)
-4. **Customer Support Operations** (RTO: 8 hours, RPO: 4 hours)
-5. **Sales and Marketing Functions** (RTO: 24 hours, RPO: 8 hours)
-
-#### Crisis Response Framework
-
-**Crisis Response Team Structure**:
-
-- **Crisis Commander**: CEO (primary), COO (backup)
-- **Technical Lead**: CTO (primary), VP Engineering (backup)
-- **Security Lead**: CISO (primary), Security Manager (backup)
-- **Communications Lead**: VP Marketing (primary), CEO (backup)
-- **Legal/Compliance Lead**: General Counsel (primary), Compliance Manager (backup)
-
-**Crisis Response Procedures**:
-
-**Level 1: Minor Incident** (Impact <$100K, <4 hour duration):
-
-- Department head response authority
-- Standard incident management procedures
-- Post-incident review within 48 hours
-
-**Level 2: Moderate Incident** (Impact $100K-$1M, 4-24 hour duration):
-
-- Crisis team activation within 2 hours
-- Customer communication within 4 hours
-- Executive team briefing within 6 hours
-
-**Level 3: Major Crisis** (Impact >$1M, >24 hour duration):
-
-- Full crisis team activation within 1 hour
-- Board notification within 2 hours
-- External communications within 4 hours
-- Regulatory notification as required
-
-#### Scenario Planning & Stress Testing
-
-**Scenario 1: Major Cybersecurity Incident**
-
-- **Trigger**: Customer data breach affecting 10,000+ records
-- **Response Time**: Immediate (within 1 hour)
-- **Recovery Target**: Full service restoration within 24 hours
-- **Communication Plan**: Customer notification within 4 hours, media response within 8 hours
-
-**Scenario 2: Key Infrastructure Failure**
-
-- **Trigger**: Primary cloud provider multi-region outage
-- **Response Time**: Failover within 4 hours
-- **Recovery Target**: Alternative infrastructure operational within 12 hours
-- **Customer Impact**: Minimal with backup systems
-
-**Scenario 3: Economic Downturn Impact**
-
-- **Trigger**: 30% reduction in new customer acquisition
-- **Response Time**: Cost reduction plan activated within 2 weeks
-- **Recovery Strategy**: Focus on customer retention and efficiency
-- **Financial Impact**: Extend runway by reducing burn rate 25%
-
-### RISK GOVERNANCE & CULTURE
-
-#### Risk Governance Structure
-
-**Board Risk Committee** (Quarterly):
-
-- Risk appetite and tolerance setting
-- Major risk exposure oversight
-- Risk management investment approval
-- Crisis response oversight
-
-**Executive Risk Committee** (Monthly):
-
-- Risk strategy implementation
-- Cross-functional risk coordination
-- Resource allocation decisions
-- Escalation management
-
-**Risk Management Office** (Weekly):
-
-- Day-to-day risk management operations
-- Risk assessment and monitoring
-- Mitigation plan execution
-- Training and awareness programs
-
-#### Risk Culture Development
-
-**Risk Awareness Training Program**:
-
-- **Executive Level**: Strategic risk leadership (8 hours annually)
-- **Management Level**: Risk management fundamentals (16 hours annually)
-- **Employee Level**: Risk awareness and reporting (4 hours annually)
-- **Specialized Roles**: Role-specific risk training (varies)
-
-**Risk Communication Strategy**:
-
-- Monthly risk newsletter highlighting key risks and wins
-- Quarterly risk town halls with executive leadership
-- Annual risk management awards and recognition
-- Integration of risk metrics in performance reviews
-
-### REGULATORY COMPLIANCE FRAMEWORK
-
-#### Compliance Risk Management
-
-**SOC 2 Type II Compliance**:
-
-- **Current Status**: Certification maintained, annual audit passed
-- **Key Controls**: 75 security controls monitored continuously
-- **Risk Level**: Low (effective control environment)
-- **Next Audit**: Q2 2025 preparation beginning Q4 2024
-
-**GDPR Compliance**:
-
-- **Current Status**: Compliant, privacy framework implemented
-- **Key Requirements**: Data processing, consent management, breach notification
-- **Risk Level**: Medium (evolving regulatory landscape)
-- **Monitoring**: Privacy impact assessments for new features
-
-**ISO 27001 Certification**:
-
-- **Target**: Achieve certification by Q4 2025
-- **Investment**: $200K implementation, $50K annual maintenance
-- **Benefits**: Customer trust, competitive advantage, risk reduction
-- **Risk**: Implementation delays could impact enterprise sales
-
-### PERFORMANCE MEASUREMENT & OPTIMIZATION
-
-#### Risk Management Maturity Assessment
-
-**Current Maturity Level**: 3.5/5 (Managed Level)
-
-- **Risk Identification**: 4/5 (Systematic processes in place)
-- **Risk Assessment**: 3/5 (Quantitative methods developing)
-- **Risk Treatment**: 3/5 (Proactive mitigation programs)
-- **Risk Monitoring**: 4/5 (Comprehensive KRI framework)
-- **Risk Governance**: 3/5 (Formal structure established)
-
-**Target Maturity Level**: 4.5/5 (Optimized Level) by 2026
-
-- Enhanced predictive risk analytics
-- Integrated risk-return optimization
-- Advanced crisis simulation capabilities
-- Cultural risk intelligence embedding
-
-#### Risk Management ROI Analysis
-
-**Risk Management Investment**: $2.3M annually
-**Estimated Risk Reduction Value**: $8.5M annually
-
-- Prevented incidents: $4.2M
-- Reduced insurance premiums: $300K
-- Improved operational efficiency: $1.8M
-- Enhanced customer confidence: $2.2M
-
-**Risk Management ROI**: 270% (3.7:1 return)
-
-### CONTINUOUS IMPROVEMENT FRAMEWORK
-
-#### Learning and Adaptation
-
-**Risk Management Review Cycle**:
-
-- **Daily**: Operational risk monitoring
-- **Weekly**: KRI review and trend analysis
-- **Monthly**: Risk register updates and mitigation progress
-- **Quarterly**: Strategic risk assessment and plan updates
-- **Annually**: Comprehensive risk framework review
-
-**Industry Benchmarking**:
-
-- Annual participation in cybersecurity risk surveys
-- Quarterly peer group risk management discussions
-- Integration of industry best practices and lessons learned
-- Regulatory guidance and standard updates monitoring
-
-**Innovation in Risk Management**:
-
-- AI/ML applications for predictive risk analytics
-- Automated risk assessment and monitoring tools
-- Real-time risk dashboard and visualization
-- Integration with business intelligence platforms
+## Example Usage
+
+**User Input:**
+```
+1. Organization: Growing SaaS company
+2. Industry: FinTech - payment processing software
+3. Scope: Enterprise-wide risk management
+4. Risk tolerance: Moderate - growth-focused but compliance-critical
+
+5. Objectives: Scale to $50M revenue, expand internationally, maintain 99.9% uptime
+6. Main concerns: Data breaches, regulatory compliance, operational scaling, competitive pressure
+7. Regulatory requirements: PCI DSS, SOC 2, GDPR, various financial regulations
+8. Key stakeholders: Investors, enterprise customers, employees, regulators
+
+9. Current processes: Basic security policies, annual audits, incident response plan
+10. Past incidents: Minor outage last year (2 hours), failed compliance audit finding resolved
+11. Major disruption impact: Customer churn, regulatory penalties, revenue loss, reputation damage
+12. Resources: 3-person security team, $500K annual budget, growing compliance team
+```
+
+**Assistant Output:**
+
+Based on your FinTech payment processing company, here's your comprehensive risk management plan:
+
+# FINTECH RISK MANAGEMENT PLAN
+
+## 1. RISK ASSESSMENT
+
+### Critical Risk Categories
+
+**Category 1: Data Security & Privacy (Critical Priority)**
+- **Data Breach Risk**: Unauthorized access to payment/customer data
+- **Impact**: $5-50M in losses, regulatory penalties, customer churn
+- **Probability**: Medium (increasing with scale)
+- **Current Controls**: Basic security, SOC 2 Type I
+
+**Category 2: Regulatory Compliance (High Priority)**  
+- **PCI DSS Non-Compliance**: Payment card industry violations
+- **GDPR Violations**: European data privacy breaches
+- **Impact**: $1-10M penalties, business operations restrictions
+- **Probability**: Medium (complex requirements, changing regulations)
+- **Current Controls**: Annual audits, basic compliance tracking
+
+**Category 3: Operational Resilience (High Priority)**
+- **Platform Downtime**: Service interruptions affecting customers
+- **Scaling Failures**: Cannot handle growth in transaction volume
+- **Impact**: $100K per hour downtime, customer SLA violations
+- **Probability**: Medium (high growth stress on systems)
+- **Current Controls**: Basic monitoring, limited redundancy
+
+**Category 4: Business Continuity (Medium Priority)**
+- **Key Person Risk**: Dependence on critical employees
+- **Vendor Dependencies**: Third-party service failures
+- **Competitive Pressure**: Market share loss to competitors
+- **Impact**: Moderate business disruption
+- **Probability**: Medium to Low
+
+### Risk Priority Matrix
+
+| Risk | Impact | Probability | Risk Score | Priority |
+|------|---------|-------------|------------|----------|
+| Major Data Breach | Critical (9) | Medium (6) | 54 | Critical |
+| PCI DSS Non-Compliance | High (8) | Medium (5) | 40 | High |
+| Platform Downtime | High (7) | Medium (5) | 35 | High |
+| GDPR Violations | High (6) | Medium (4) | 24 | Medium |
+| Key Person Loss | Medium (5) | Low (3) | 15 | Medium |
+
+## 2. MITIGATION STRATEGIES
+
+### Critical Risk Mitigation
+
+**Data Security Enhancement ($200K investment)**
+- **Immediate (0-3 months):**
+  - Complete SOC 2 Type II certification
+  - Implement multi-factor authentication across all systems
+  - Establish Security Operations Center (SOC)
+  - Conduct penetration testing quarterly
+
+- **Medium-term (3-12 months):**
+  - Deploy advanced threat detection and response
+  - Implement zero-trust network architecture
+  - Establish data encryption at rest and in transit
+  - Create security awareness training program
+
+**Regulatory Compliance Program ($150K investment)**
+- **Immediate (0-3 months):**
+  - Hire dedicated compliance manager
+  - Implement automated compliance monitoring
+  - Create compliance dashboard and reporting
+
+- **Medium-term (3-12 months):**
+  - Achieve PCI DSS Level 1 certification
+  - Implement GDPR compliance program
+  - Establish regulatory change monitoring
+  - Create compliance training for all employees
+
+**Operational Resilience Building ($250K investment)**
+- **Immediate (0-3 months):**
+  - Implement comprehensive monitoring and alerting
+  - Create redundant infrastructure architecture
+  - Establish 24/7 operations center
+
+- **Medium-term (3-12 months):**
+  - Build automatic failover capabilities
+  - Implement load testing and capacity planning
+  - Create detailed runbooks for all critical processes
+
+## 3. CONTINGENCY PLANS
+
+### Data Breach Response Plan
+**Phase 1: Immediate Response (0-4 hours)**
+- Incident commander activation
+- Affected systems isolation
+- Initial damage assessment
+- Legal and PR team notification
+
+**Phase 2: Investigation & Containment (4-24 hours)**
+- Forensic investigation initiation
+- Customer and regulatory notification (as required)
+- Public communication strategy execution
+- Additional security measures deployment
+
+**Phase 3: Recovery & Lessons Learned (1-4 weeks)**
+- Systems restoration and monitoring
+- Customer support and retention efforts
+- Regulatory cooperation and reporting
+- Post-incident review and improvement
+
+### Compliance Violation Response
+**Immediate Actions:**
+- Notify legal counsel and compliance team
+- Document violation scope and impact
+- Begin remediation efforts
+- Prepare regulatory response
+
+**Remediation Process:**
+- Root cause analysis and fix implementation
+- Process improvements and controls strengthening
+- Staff retraining and policy updates
+- Regular monitoring and verification
+
+## 4. MONITORING FRAMEWORK
+
+### Key Risk Indicators (KRIs)
+
+**Security Metrics:**
+- Security incidents per month (target: <5)
+- Mean time to detection (target: <1 hour)
+- Phishing test failure rate (target: <5%)
+- Vulnerability patching time (target: <48 hours)
+
+**Compliance Metrics:**
+- Audit findings (target: 0 critical)
+- Compliance training completion (target: 100%)
+- Regulatory change implementation time (target: <30 days)
+- Customer data requests response time (target: <72 hours)
+
+**Operational Metrics:**
+- System uptime (target: 99.9%)
+- Transaction processing capacity utilization (alert: >80%)
+- Response time for critical transactions (target: <200ms)
+- Customer-reported incidents (target: <10/month)
+
+### Monitoring Dashboard
+**Daily Monitoring:**
+- Security event logs and alerts
+- System performance and capacity metrics
+- Transaction volume and error rates
+- Customer support ticket trends
+
+**Weekly Reviews:**
+- Risk indicator trend analysis
+- Incident and near-miss review
+- Compliance status assessment
+- Vendor performance evaluation
+
+**Monthly Reporting:**
+- Risk dashboard for executives
+- Compliance status report
+- Incident summary and trends
+- Risk mitigation progress update
+
+## 5. GOVERNANCE STRUCTURE
+
+### Risk Management Team
+**Chief Risk Officer**: Overall risk strategy and reporting (hire within 6 months)
+**Security Manager**: Cybersecurity and data protection
+**Compliance Manager**: Regulatory compliance and auditing
+**Operations Manager**: Business continuity and operational resilience
+
+### Risk Committee Structure
+**Executive Risk Committee (Monthly):**
+- CEO, CTO, COO, Head of Legal
+- Strategic risk decisions and resource allocation
+- Board reporting and stakeholder communication
+
+**Operational Risk Team (Weekly):**
+- Department managers and risk team
+- Day-to-day risk monitoring and response
+- Incident management and lessons learned
+
+### Decision-Making Framework
+**Low Risk Decisions**: Department manager authority
+**Medium Risk Decisions**: Risk team approval required
+**High Risk Decisions**: Executive committee approval
+**Critical Risk Decisions**: Board notification/approval
+
+### Implementation Timeline
+
+**Phase 1 (Months 1-3): Foundation**
+- Hire compliance manager
+- Complete SOC 2 Type II
+- Implement basic monitoring
+- Budget: $100K
+
+**Phase 2 (Months 4-6): Enhancement** 
+- Establish SOC and advanced security
+- Launch compliance program
+- Build operational resilience
+- Budget: $200K
+
+**Phase 3 (Months 7-12): Optimization**
+- Hire Chief Risk Officer
+- Advanced threat protection
+- International compliance readiness
+- Budget: $300K
+
+This risk management plan provides a structured approach to protecting your FinTech business while enabling aggressive growth, with clear priorities, timelines, and success metrics.
+
+## Related Prompts
+
+- [Contingency Planning Expert](./contingency-planning-expert.md)
+- [Business Continuity Expert](./business-continuity-expert.md)  
+- [Strategic Planning Expert](./strategic-planning-expert.md)
 
 ## Usage Instructions
 
-1. Begin with comprehensive risk identification across all business dimensions
-2. Apply quantitative risk assessment methodologies for prioritization
-3. Design integrated mitigation strategies balancing cost and effectiveness
-4. Establish robust monitoring and early warning systems
-5. Build crisis management and business continuity capabilities
-6. Create strong governance framework with cultural integration
-7. Implement continuous improvement and adaptation mechanisms
-8. Measure and optimize risk management performance regularly
+1. Start with comprehensive risk identification across all business areas
+2. Conduct quantitative risk assessment with impact and probability analysis
+3. Develop targeted mitigation strategies based on risk priority levels
+4. Create detailed contingency plans for high-impact scenarios
+5. Establish monitoring systems with key risk indicators and dashboards
+6. Build governance structure appropriate to organization size and complexity
+7. Implement risk management culture through training and awareness
+8. Plan for regular reviews and continuous improvement of risk framework
 
 ## Examples
 
-### Example 1: Technology Startup Risk Management
+### Example 1: Startup Risk Management
 
 **Input**:
 
 ```
-{{organization_type}}: Series A technology startup
-{{industry_sector}}: FinTech payment platform
-{{risk_scope}}: Enterprise risk management framework
-{{regulatory_environment}}: Heavy (financial services)
-{{growth_stage}}: Rapid scaling (200% annual growth)
+{{organization_type}}: Early-stage tech startup
+{{scope}}: Operational risk management  
+{{risk_tolerance}}: Moderate - growth-focused with prudent controls
+{{main_concerns}}: Product development delays, funding risks, market competition
+{{resources}}: Limited budget, small team, need cost-effective solutions
 ```
 
-**Output**: [Comprehensive risk framework focused on regulatory compliance, cybersecurity, scaling risks, and funding risks with startup-appropriate governance structure]
+**Output**: [Lean risk management framework focused on critical startup risks with cost-effective mitigation strategies and simple monitoring systems]
 
-### Example 2: Healthcare System Risk Planning
+### Example 2: Enterprise Risk Management
 
 **Input**:
 
 ```
-{{organization_type}}: Regional healthcare system
-{{risk_scope}}: Operational and strategic risk management
-{{regulatory_environment}}: Heavy (HIPAA, patient safety)
-{{stakeholder_concerns}}: Patient safety, regulatory compliance, financial sustainability
-{{business_model}}: Traditional healthcare delivery with digital transformation
+{{organization_type}}: Large corporation  
+{{scope}}: Enterprise-wide risk framework
+{{risk_tolerance}}: Conservative - heavily regulated industry
+{{main_concerns}}: Regulatory compliance, operational disruptions, cybersecurity
+{{resources}}: Dedicated risk team, significant budget, complex stakeholder requirements
 ```
 
-**Output**: [Healthcare-specific risk management plan covering patient safety, data privacy, operational continuity, regulatory compliance, and transformation risks]
+**Output**: [Comprehensive enterprise risk management program with detailed governance, compliance frameworks, and sophisticated monitoring systems]
 
 ## Related Prompts
 
 - [Crisis Management Expert](/prompts/problem-solving/crisis-management.md)
-- [Security Assessment Specialist](/prompts/evaluation/security-assessment.md)
-- [Business Continuity Planner](/prompts/planning/business-continuity.md)
+- [Business Continuity Expert](/prompts/planning/business-continuity.md)
+- [Compliance Management Expert](/prompts/planning/compliance-management.md)
 
 ## Research Notes
 
-- Based on international risk management standards (ISO 31000, COSO ERM)
-- Integrates quantitative and qualitative risk assessment methodologies
-- Emphasizes stakeholder communication and organizational culture
-- Focuses on proactive risk management and business value creation
-- Balances comprehensive risk coverage with practical implementation
+- Based on ISO 31000, COSO ERM, and NIST risk management frameworks
+- Integrates quantitative risk assessment with practical mitigation strategies  
+- Emphasizes business-aligned risk management that enables rather than constrains growth
+- Focuses on actionable risk controls with clear ownership and accountability
+- Balances comprehensive risk coverage with practical implementation considerations

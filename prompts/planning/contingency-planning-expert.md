@@ -1,525 +1,380 @@
-# Contingency Planning Expert and Business Resilience Architect
+# Contingency Planning Expert
 
 ## Metadata
 
 - **Category**: Planning
 - **Tags**: contingency planning, business continuity, crisis management, disaster recovery, resilience planning
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Contingency Planning Expert, Business Resilience Architect
+- **Version**: 2.0.0
 - **Use Cases**: business continuity, disaster recovery, crisis response, emergency planning, operational resilience
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert contingency planning skills with business resilience architecture to create comprehensive preparedness strategies that ensure organizational survival and rapid recovery from disruptions. It employs proven crisis management frameworks, scenario planning, and resilience building to protect business continuity.
+A practical contingency planning assistant that helps you prepare for disruptions and ensure business continuity. Provide your organization details and I'll create comprehensive contingency plans with response strategies, recovery procedures, and resilience measures.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise contingency planning system combining:
+I'll help you create a robust contingency plan to protect your organization from disruptions and ensure rapid recovery. Let me gather information about your needs.
 
-1. **Master Contingency Planning Expert** (18+ years experience)
-   - Expertise: Crisis response planning, business impact analysis, recovery procedures, emergency coordination
-   - Strengths: Scenario development, response protocols, resource allocation, stakeholder communication
-   - Perspective: Building comprehensive preparedness that minimizes disruption impact and accelerates recovery
+About your organization:
+1. What type of organization are you? (small business, enterprise, nonprofit, government)
+2. What industry/sector are you in?
+3. How many locations and employees do you have?
+4. What are your most critical operations or services?
 
-2. **Business Resilience Architect**
-   - Expertise: Organizational resilience design, adaptive capacity building, system redundancy, cultural preparation
-   - Strengths: Resilience frameworks, adaptive planning, capability building, continuous improvement
-   - Perspective: Creating anti-fragile organizations that emerge stronger from disruptions and crises
+Risk assessment:
+5. What threats are you most concerned about? (natural disasters, cyber attacks, supply chain, etc.)
+6. Have you experienced any major disruptions before? What happened?
+7. How much downtime can you tolerate? (hours, days, weeks)
+8. What would be the impact of losing key systems or facilities?
 
-Apply these contingency frameworks:
-- **ISO 22301**: Business continuity management systems standard
-- **NIST Framework**: Risk management and resilience planning
-- **Disaster Recovery Planning**: IT and operational recovery methodologies
-- **Crisis Management**: Response coordination and communication protocols
+Current preparedness:
+9. Do you have any existing contingency plans or procedures?
+10. What backup systems or redundancies are in place?
+11. What's your budget for contingency planning?
+12. Who would lead crisis response efforts?
 
-CONTINGENCY CONTEXT:
-- **Organization Type**: {{small_medium_large_enterprise_government_nonprofit}}
-- **Industry Sector**: {{technology_healthcare_finance_manufacturing_services}}
-- **Risk Profile**: {{low_moderate_high_critical_variable}}
-- **Geographic Scope**: {{single_location_regional_national_global}}
-- **Regulatory Requirements**: {{minimal_standard_heavy_industry_specific}}
-- **Technology Dependence**: {{low_moderate_high_critical}}
-- **Stakeholder Complexity**: {{simple_moderate_complex_extensive}}
-- **Resource Availability**: {{limited_adequate_substantial_unlimited}}
-- **Recovery Time Objectives**: {{hours_days_weeks_months}}
-- **Risk Tolerance**: {{conservative_moderate_aggressive_adaptive}}
+Based on your answers, I'll develop:
 
-CONTINGENCY OBJECTIVES:
-{{business_continuity_goals_recovery_priorities_resilience_targets}}
+**1. THREAT ASSESSMENT** - Comprehensive risk analysis and impact evaluation
+**2. RESPONSE STRATEGIES** - Tiered response plans for different scenarios
+**3. CONTINUITY PROCEDURES** - How to maintain critical operations
+**4. RECOVERY PLANS** - Step-by-step restoration procedures
+**5. TESTING FRAMEWORK** - How to validate and improve your plans
 
-CONTINGENCY PLANNING FRAMEWORK:
-
-Phase 1: RISK ASSESSMENT & ANALYSIS
-1. Threat identification and probability assessment
-2. Business impact analysis and prioritization
-3. Vulnerability assessment and gap analysis
-4. Risk tolerance and acceptance criteria
-
-Phase 2: RESPONSE STRATEGY DESIGN
-1. Contingency scenario development
-2. Response strategy formulation
-3. Resource allocation and requirements
-4. Communication and coordination planning
-
-Phase 3: IMPLEMENTATION & PREPARATION
-1. Plan development and documentation
-2. Team training and capability building
-3. Resource stockpiling and preparation
-4. Testing and validation procedures
-
-Phase 4: ACTIVATION & RECOVERY
-1. Crisis detection and escalation
-2. Response activation and coordination
-3. Recovery execution and monitoring
-4. Learning and plan improvement
-
-DELIVER YOUR CONTINGENCY PLAN AS:
+Please provide the information above, and I'll create a contingency plan tailored to your organization's needs and risks.
 ```
 
-## COMPREHENSIVE CONTINGENCY PLANNING STRATEGY
+## Example Usage
 
-### CONTINGENCY PLANNING OVERVIEW
-
-**Organization**: GlobalTech Manufacturing - Fortune 500 Technology Hardware Company
-**Scope**: Enterprise-wide contingency planning for all operations and locations
-**Geographic Coverage**: 15 countries, 45 facilities, 25,000 employees
-**Planning Horizon**: Comprehensive all-hazards approach with 5-year planning cycle
-
-**Contingency Planning Mission**:
-"Ensure organizational resilience and business continuity through comprehensive preparedness, rapid response capabilities, and adaptive recovery strategies that protect stakeholders and maintain competitive advantage."
-
-**Critical Business Objectives**:
-
-1. Maintain zero tolerance for life safety incidents
-2. Achieve 99.5% business continuity for critical operations
-3. Recover all systems within defined Recovery Time Objectives (RTOs)
-4. Preserve customer relationships and market position during crises
-5. Build adaptive capacity for emerging threats and opportunities
-
-### EXECUTIVE SUMMARY
-
-**Contingency Strategy**:
-Implement multi-layered resilience framework that combines proactive risk mitigation, rapid response capabilities, and adaptive recovery strategies to ensure business continuity across all potential disruption scenarios.
-
-**Strategic Approach**:
-
-- **All-Hazards Planning**: Comprehensive approach covering natural, technological, and human-caused threats
-- **Tiered Response**: Scalable response based on incident severity and impact
-- **Integrated Recovery**: Coordinated recovery across all business functions and locations
-- **Continuous Improvement**: Regular testing, updating, and enhancement of capabilities
-- **Stakeholder Focus**: Prioritizing employee safety, customer service, and stakeholder communication
-
-**Key Resilience Pillars**:
-
-1. **Operational Resilience**: Redundancy and flexibility in critical operations
-2. **Technology Resilience**: Robust IT infrastructure with backup and recovery systems
-3. **Supply Chain Resilience**: Diversified suppliers and alternative sourcing strategies
-4. **Financial Resilience**: Strong cash position and emergency funding arrangements
-5. **Human Capital Resilience**: Cross-trained workforce and leadership succession
-
-**Expected Outcomes**:
-
-- 95% reduction in business disruption duration
-- 90% faster recovery time versus industry average
-- 100% employee safety record during emergencies
-- 98% customer retention during major disruptions
-- 80% competitive advantage maintenance during crises
-
-### THREAT ASSESSMENT & RISK ANALYSIS
-
-#### Comprehensive Threat Inventory
-
-**Natural Disasters** (High probability in multiple locations):
-
-- **Earthquakes**: California and Japan facilities at high risk
-- **Hurricanes**: Southeast US and Philippines manufacturing
-- **Floods**: River proximity for 8 facilities, monsoon exposure
-- **Wildfires**: California facilities and supply chain impacts
-- **Pandemics**: Global health emergencies affecting all locations
-
-**Technological Threats** (Critical impact potential):
-
-- **Cyberattacks**: Ransomware, data breaches, system disruption
-- **Infrastructure Failures**: Power grid, telecommunications, internet
-- **Supply Chain Disruption**: Semiconductor shortages, shipping delays
-- **Equipment Failures**: Critical manufacturing equipment breakdown
-- **Data Loss**: System failures, corruption, unauthorized access
-
-**Human-Caused Threats** (Variable probability):
-
-- **Workplace Violence**: Active shooter, threats, harassment
-- **Terrorism**: Facility attacks, infrastructure targeting
-- **Labor Disputes**: Strikes, work stoppages, unionization
-- **Key Person Loss**: Critical leadership or expertise departure
-- **Vendor Failures**: Critical supplier business failures
-
-**Economic/Market Threats** (Moderate to high probability):
-
-- **Economic Recession**: Demand reduction, credit constraints
-- **Currency Fluctuation**: Exchange rate impacts on global operations
-- **Regulatory Changes**: New compliance requirements, trade restrictions
-- **Competitive Disruption**: New technologies, market entrants
-- **Geopolitical Instability**: Trade wars, sanctions, political unrest
-
-#### Business Impact Analysis Matrix
-
-**Critical Business Functions Assessment**:
-
-| Function                 | Annual Revenue Impact | Recovery Time Objective | Recovery Point Objective | Priority Level |
-| ------------------------ | --------------------- | ----------------------- | ------------------------ | -------------- |
-| **Manufacturing**        | $2.8B (70%)           | 24 hours                | 4 hours                  | Critical       |
-| **Customer Service**     | $1.6B (40%)           | 4 hours                 | 1 hour                   | Critical       |
-| **R&D Operations**       | $800M (20%)           | 72 hours                | 24 hours                 | High           |
-| **Sales & Marketing**    | $600M (15%)           | 8 hours                 | 4 hours                  | High           |
-| **Finance & Accounting** | $400M (10%)           | 48 hours                | 8 hours                  | Medium         |
-| **HR & Administration**  | $200M (5%)            | 5 days                  | 24 hours                 | Medium         |
-
-**Geographic Risk Assessment**:
-
-| Location                   | Threat Level               | Business Impact     | Mitigation Investment | Backup Location   |
-| -------------------------- | -------------------------- | ------------------- | --------------------- | ----------------- |
-| **Silicon Valley HQ**      | High (earthquake, fire)    | $500M operations    | $50M resilience       | Austin backup     |
-| **Shanghai Manufacturing** | High (pandemic, political) | $800M production    | $80M resilience       | Vietnam backup    |
-| **Austin R&D**             | Medium (weather, cyber)    | $300M development   | $30M resilience       | Remote capability |
-| **Munich Operations**      | Low (stable region)        | $400M sales/service | $20M resilience       | Distributed model |
-
-### CONTINGENCY RESPONSE STRATEGIES
-
-#### Tiered Response Framework
-
-**Level 1: Localized Incident** (Single facility or function):
-
-- **Activation Threshold**: Isolated disruption with limited impact
-- **Response Team**: Local incident commander + facility team
-- **Resources**: Local emergency supplies and backup systems
-- **Duration**: 0-24 hours typical resolution
-- **Communication**: Internal notification, limited external communication
-
-**Level 2: Regional Disruption** (Multiple facilities or significant function):
-
-- **Activation Threshold**: Regional impact or critical function disruption
-- **Response Team**: Regional crisis manager + cross-functional team
-- **Resources**: Regional backup facilities and emergency resources
-- **Duration**: 24-72 hours typical resolution
-- **Communication**: Customer notification, stakeholder updates
-
-**Level 3: Enterprise Crisis** (Company-wide or existential threat):
-
-- **Activation Threshold**: Multiple regions or business-threatening impact
-- **Response Team**: CEO + executive crisis team + board notification
-- **Resources**: All available resources, external support activation
-- **Duration**: Days to weeks for full resolution
-- **Communication**: Public communication, media relations, regulatory notification
-
-#### Scenario-Specific Response Plans
-
-**Pandemic Response Strategy**:
-
-**Phase 1: Early Warning (WHO Phase 3-4)**:
-
-- **Health Monitoring**: Employee health screening and monitoring
-- **Travel Restrictions**: Limit non-essential travel to affected areas
-- **Supply Chain**: Assess supply chain vulnerabilities and alternatives
-- **Communication**: Employee awareness and preparation guidance
-
-**Phase 2: Local Outbreak (WHO Phase 5)**:
-
-- **Work Arrangements**: Implement work-from-home for affected areas
-- **Facility Protocols**: Enhanced cleaning, social distancing, health checks
-- **Business Operations**: Activate backup suppliers and alternative processes
-- **Stakeholder Communication**: Customer and investor updates on preparedness
-
-**Phase 3: Pandemic (WHO Phase 6)**:
-
-- **Remote Operations**: Full remote work activation where possible
-- **Essential Operations**: Skeleton crews for critical manufacturing
-- **Financial Management**: Cash conservation and emergency funding activation
-- **Crisis Communication**: Regular stakeholder updates and transparency
-
-**Cyberattack Response Strategy**:
-
-**Detection Phase (0-1 hours)**:
-
-- **Immediate Isolation**: Isolate affected systems and networks
-- **Assessment Team**: Activate cybersecurity incident response team
-- **External Support**: Engage cybersecurity forensics firm if needed
-- **Law Enforcement**: Contact FBI cyber crime unit for major incidents
-
-**Containment Phase (1-24 hours)**:
-
-- **Damage Assessment**: Evaluate extent and impact of breach
-- **System Recovery**: Begin recovery from clean backups and systems
-- **Customer Protection**: Implement customer data protection measures
-- **Legal Compliance**: Meet regulatory notification requirements
-
-**Recovery Phase (24+ hours)**:
-
-- **Full Restoration**: Complete system restoration and validation
-- **Security Enhancement**: Implement additional security measures
-- **Business Resumption**: Return to normal operations with monitoring
-- **Lessons Learned**: Conduct post-incident review and improvement
-
-### BUSINESS CONTINUITY PROCEDURES
-
-#### Critical Operations Continuity
-
-**Manufacturing Continuity Plan**:
-
-**Primary Manufacturing Sites**:
-
-- **Normal Operations**: 5 primary sites producing 100% capacity
-- **Single Site Loss**: Redistribute to 4 sites at 125% capacity (3-month maximum)
-- **Multi-Site Loss**: Activate backup manufacturing partners in 72 hours
-- **Complete Loss**: Emergency contract manufacturing within 2 weeks
-
-**Technology Infrastructure Continuity**:
-
-- **Primary Data Centers**: Dual hot sites with real-time replication
-- **Network Infrastructure**: Multiple ISP connections and failover routing
-- **Cloud Services**: Multi-cloud strategy with automated failover
-- **Backup Systems**: 3-2-1 backup strategy (3 copies, 2 different media, 1 offsite)
-
-**Workforce Continuity Planning**:
-
-- **Remote Work Capability**: 80% of workforce can work remotely
-- **Cross-Training**: Critical skills covered by minimum 3 people
-- **Succession Planning**: Emergency succession for all key positions
-- **Contractor Network**: Pre-qualified contractors for emergency staffing
-
-#### Supply Chain Resilience
-
-**Supplier Diversification Strategy**:
-
-- **Critical Components**: Minimum 3 qualified suppliers per component
-- **Geographic Distribution**: Suppliers in multiple countries and regions
-- **Inventory Strategy**: 90-day strategic inventory for critical components
-- **Supplier Monitoring**: Real-time supplier financial and operational health
-
-**Alternative Sourcing Plans**:
-
-- **Tier 1 Suppliers**: Pre-qualified alternatives with capacity agreements
-- **Tier 2 Suppliers**: Direct relationships for critical sub-components
-- **Emergency Sourcing**: 24-hour supplier qualification process
-- **Make vs. Buy**: Emergency in-house production capability for critical items
-
-### CRISIS COMMUNICATION STRATEGY
-
-#### Stakeholder Communication Framework
-
-**Internal Communication Priorities**:
-
-1. **Employee Safety**: Immediate safety information and instructions
-2. **Business Continuity**: Operational status and work arrangements
-3. **Recovery Timeline**: Expected resolution and return to normal
-4. **Support Resources**: Available support and assistance programs
-
-**External Communication Priorities**:
-
-1. **Customer Service**: Service continuation and alternative arrangements
-2. **Investor Relations**: Financial impact and recovery strategies
-3. **Media Relations**: Accurate information and reputation management
-4. **Regulatory Compliance**: Required notifications and compliance actions
-
-#### Communication Protocols & Templates
-
-**Emergency Notification System**:
-
-- **Mass Notification**: Automated alerts via phone, text, email, app
-- **Escalation Tree**: Structured notification of leadership and teams
-- **Redundant Channels**: Multiple communication methods and backups
-- **Status Updates**: Regular updates every 4 hours during active incidents
-
-**Crisis Communication Templates**:
-
-**Employee Safety Alert**:
-
+**User Input:**
 ```
-URGENT: Emergency Alert - [Location/Situation]
-Immediate Action: [Specific safety instructions]
-Current Status: [Brief situation summary]
-Updates: Next update in 2 hours
-Contact: Emergency hotline [number]
+1. Organization: Mid-size manufacturing company
+2. Industry: Automotive parts supplier
+3. Locations: 2 facilities (main plant and warehouse), 350 employees
+4. Critical operations: Production lines, customer order fulfillment, quality testing
+
+5. Main threats: Equipment failure, supply chain disruption, cyber attacks, severe weather
+6. Past disruptions: 3-day shutdown from equipment failure last year, lost $2M
+7. Downtime tolerance: 24 hours max for production, 4 hours for order processing
+8. Impact: Would lose $500K/day, risk losing major contracts
+
+9. Existing plans: Basic fire evacuation plan, informal IT backup
+10. Current redundancies: Some spare parts inventory, manual backup for some processes
+11. Budget: $100K for improvements this year
+12. Crisis lead: Operations Director with management team
 ```
 
-**Customer Notification**:
+**Assistant Output:**
 
-```
-Service Alert: [Brief description of impact]
-Affected Services: [List of impacted services]
-Alternative Options: [Available alternatives]
-Expected Resolution: [Timeline estimate]
-Support: [Contact information for assistance]
-```
+Based on your automotive parts manufacturing operations, here's your comprehensive contingency plan:
 
-**Investor Update**:
+# CONTINGENCY PLAN - AUTOPARTS MANUFACTURING
 
-```
-Business Update: [Situation summary]
-Financial Impact: [Preliminary impact assessment]
-Response Actions: [Key response measures]
-Recovery Timeline: [Expected recovery schedule]
-Next Update: [Scheduled communication timeline]
-```
+## 1. THREAT ASSESSMENT
 
-### DISASTER RECOVERY & IT RESILIENCE
+### Risk Priority Matrix
 
-#### IT Disaster Recovery Architecture
+**Critical Risks (High Impact, High Probability):**
 
-**Recovery Infrastructure**:
+**1. Equipment Failure**
+- Probability: High (based on last year's incident)
+- Impact: $500K/day production loss
+- Current vulnerability: Limited spare parts, aging equipment
+- Risk score: 9/10
 
-- **Primary Data Center**: Silicon Valley with full operational capability
-- **Secondary Data Center**: Austin with hot backup and failover
-- **Cloud Infrastructure**: AWS multi-region deployment with auto-scaling
-- **Edge Computing**: Distributed computing for local facility operations
+**2. Supply Chain Disruption**
+- Probability: Medium-High (global supply issues)
+- Impact: Production stoppage within 5 days
+- Current vulnerability: Single suppliers for key materials
+- Risk score: 8/10
 
-**Data Protection Strategy**:
+**3. Cyber Attack**
+- Probability: Medium (increasing industry targeting)
+- Impact: System shutdown, data loss, ransom
+- Current vulnerability: Basic IT security only
+- Risk score: 7/10
 
-- **Real-Time Replication**: Critical systems replicated in real-time
-- **Daily Backups**: Full system backups retained for 30 days
-- **Weekly Archives**: Weekly archives retained for 1 year
-- **Annual Archives**: Annual archives retained for 7 years per compliance
+**4. Severe Weather**
+- Probability: Medium (seasonal exposure)
+- Impact: Facility damage, power loss, access issues
+- Current vulnerability: No backup power at main plant
+- Risk score: 6/10
 
-**Recovery Time Objectives (RTO) by System**:
+### Business Impact Analysis
 
-| System Category            | RTO Target | RPO Target | Recovery Method        |
-| -------------------------- | ---------- | ---------- | ---------------------- |
-| **Critical Manufacturing** | 4 hours    | 1 hour     | Hot site failover      |
-| **Customer Systems**       | 1 hour     | 15 minutes | Redundant systems      |
-| **Financial Systems**      | 24 hours   | 4 hours    | Backup restoration     |
-| **HR/Admin Systems**       | 48 hours   | 8 hours    | Cloud backup           |
-| **Development Systems**    | 72 hours   | 24 hours   | Repository restoration |
+**Production Line Failure:**
+- Revenue loss: $500K/day
+- Customer impact: Late deliveries, contract penalties
+- Recovery time: 24-72 hours depending on failure
+- Cascading effects: Warehouse backup, quality delays
 
-#### Technology Resilience Measures
+**IT System Failure:**
+- Order processing stops: $200K/day impact
+- Manufacturing disruption: Can run manually for 8 hours
+- Data loss risk: Customer orders, quality records
+- Recovery time: 4-24 hours
 
-**Redundancy & Failover**:
+## 2. RESPONSE STRATEGIES
 
-- **Network Redundancy**: Multiple ISPs with automatic failover
-- **Power Systems**: UPS + generator backup for 72 hours
-- **Hardware Redundancy**: N+1 redundancy for all critical systems
-- **Geographic Distribution**: Services distributed across multiple regions
+### Tiered Response Framework
 
-**Cybersecurity Resilience**:
+**Level 1: Minor Disruption (Single system/area)**
+- Trigger: Localized issue, <4 hour impact
+- Response Lead: Department Manager
+- Actions: Fix issue, notify Operations Director
+- Communication: Internal only
 
-- **Defense in Depth**: Multiple layers of security controls
-- **Zero Trust Architecture**: Never trust, always verify approach
-- **Incident Response**: 24/7 security operations center (SOC)
-- **Threat Intelligence**: Real-time threat monitoring and response
+**Level 2: Major Disruption (Multiple systems/departments)**
+- Trigger: >4 hour impact or $100K+ loss
+- Response Lead: Operations Director
+- Team: Department heads, IT, HR
+- Actions: Activate backup procedures
+- Communication: Notify customers if delays expected
 
-### TESTING & VALIDATION FRAMEWORK
+**Level 3: Crisis (Facility-wide or multi-day)**
+- Trigger: >24 hour shutdown or $500K+ impact
+- Response Lead: CEO/President
+- Team: Full leadership + external support
+- Actions: Full contingency activation
+- Communication: All stakeholders, media if needed
 
-#### Comprehensive Testing Program
+### Scenario-Specific Response Plans
 
-**Testing Schedule & Types**:
+**Equipment Failure Response:**
 
-**Quarterly Tests**:
+*Immediate (0-2 hours):*
+1. Assess failure scope and safety
+2. Notify maintenance and Operations Director
+3. Check spare parts availability
+4. Begin repair or call service vendor
 
-- **Desktop Exercises**: Scenario-based discussion and planning
-- **Communications Tests**: Alert systems and notification procedures
-- **System Failover**: IT system failover and recovery testing
-- **Vendor Coordination**: Supplier and partner response coordination
+*Short-term (2-24 hours):*
+1. Reroute production if possible
+2. Notify affected customers of potential delays
+3. Expedite parts delivery if needed
+4. Consider overtime to catch up
 
-**Annual Tests**:
+*Extended (24+ hours):*
+1. Activate overflow agreement with sister plant
+2. Rent temporary equipment if available
+3. Negotiate deadline extensions
+4. Daily customer updates
 
-- **Full-Scale Exercise**: Complete end-to-end scenario simulation
-- **Multi-Site Coordination**: Cross-location response coordination
-- **Stakeholder Integration**: External partner and vendor integration
-- **Regulatory Compliance**: Meet regulatory testing requirements
+**Cyber Attack Response:**
 
-**Testing Methodology**:
+*Detection (0-1 hour):*
+1. Isolate affected systems immediately
+2. Activate IT response team
+3. Document everything observed
+4. Initiate manual backup procedures
 
-- **Scenario Development**: Realistic scenarios based on risk assessment
-- **Observer Program**: External observers and evaluation
-- **Performance Measurement**: Quantitative and qualitative metrics
-- **Improvement Planning**: Action plans based on testing results
+*Containment (1-8 hours):*
+1. Assess attack scope and type
+2. Contact cyber insurance carrier
+3. Engage forensics firm if needed
+4. Notify law enforcement if criminal
 
-#### Continuous Improvement Process
+*Recovery (8+ hours):*
+1. Restore from clean backups
+2. Patch vulnerabilities
+3. Monitor for reinfection
+4. Implement additional security
 
-**Post-Incident Reviews**:
+## 3. CONTINUITY PROCEDURES
 
-- **Immediate Debrief**: Within 24 hours of incident resolution
-- **Comprehensive Analysis**: Detailed review within 2 weeks
-- **Root Cause Analysis**: Systematic investigation of contributing factors
-- **Improvement Implementation**: Action plan development and execution
+### Critical Operations Maintenance
 
-**Plan Maintenance Schedule**:
+**Production Continuity:**
 
-- **Monthly Updates**: Risk assessment and threat intelligence updates
-- **Quarterly Reviews**: Plan effectiveness and gap analysis
-- **Annual Revision**: Comprehensive plan review and update
-- **Continuous Monitoring**: Ongoing threat and vulnerability assessment
+*Primary Strategy:*
+- Cross-train operators on multiple lines
+- Maintain 72-hour raw material buffer
+- Pre-qualify overflow manufacturing partners
+- Document all critical processes
 
-### FINANCIAL RESILIENCE & RECOVERY FUNDING
+*Backup Procedures:*
+- Manual production capability for 8 hours
+- Sister plant can handle 30% capacity
+- Approved subcontractors list ready
+- Customer priority matrix established
 
-#### Financial Preparedness Strategy
+**Order Processing Continuity:**
 
-**Emergency Funding Sources**:
+*Primary Systems:*
+- Cloud-based order system (new recommendation)
+- Real-time backups every hour
+- Redundant internet connections
+- Mobile hotspot backup
 
-- **Cash Reserves**: $500M emergency cash fund (6 months operating expenses)
-- **Credit Facilities**: $1B revolving credit line with multiple banks
-- **Insurance Coverage**: $2B comprehensive coverage (property, business interruption, cyber)
-- **Recovery Bonds**: Pre-arranged catastrophe bonds for major disasters
+*Manual Backup:*
+- Printed order forms available
+- Phone order procedures documented
+- Priority customer list maintained
+- Daily order logs printed
 
-**Cost Management During Crisis**:
+### Supply Chain Continuity
 
-- **Variable Cost Reduction**: Flexible contracts and variable expense management
-- **Capital Expenditure Deferral**: Non-critical investments postponement capability
-- **Workforce Flexibility**: Temporary layoffs and furlough procedures
-- **Vendor Negotiations**: Emergency payment term extensions and modifications
+**Supplier Diversification Plan:**
+1. Identify single-source materials (30 days)
+2. Qualify alternate suppliers (60 days)
+3. Establish backup agreements (90 days)
+4. Maintain strategic inventory (ongoing)
 
-#### Insurance & Risk Transfer
+**Inventory Strategy:**
+- Critical parts: 2-week supply minimum
+- High-value items: Just-in-time with backup
+- Common items: 1-month buffer
+- Review levels quarterly
 
-**Comprehensive Insurance Portfolio**:
+## 4. RECOVERY PLANS
 
-- **Property Insurance**: $1B coverage for all facilities and equipment
-- **Business Interruption**: 24-month coverage with expediting expense
-- **Cyber Liability**: $500M coverage for cyber incidents and data breaches
-- **Directors & Officers**: $200M coverage for executive liability
-- **Supply Chain**: Coverage for supplier business interruption
+### Production Recovery Roadmap
 
-**Risk Transfer Strategies**:
+**Phase 1: Assessment (0-4 hours)**
+- Damage evaluation
+- Resource inventory
+- Timeline estimation
+- Team assignments
 
-- **Contractual Transfer**: Risk transfer through vendor and supplier contracts
-- **Insurance Captive**: Self-insurance company for retention and control
-- **Parametric Insurance**: Weather and catastrophe trigger-based coverage
-- **Government Support**: Emergency assistance and disaster relief programs
+**Phase 2: Stabilization (4-24 hours)**
+- Safety securing
+- Temporary fixes
+- Critical operations restart
+- Communication plan
 
-### ORGANIZATIONAL RESILIENCE BUILDING
+**Phase 3: Restoration (1-7 days)**
+- Full repairs initiated
+- Normal operations resuming
+- Backlog processing
+- Performance monitoring
 
-#### Cultural Resilience Development
+**Phase 4: Improvement (1-4 weeks)**
+- Root cause analysis
+- Process improvements
+- Plan updates
+- Training reinforcement
 
-**Resilience Mindset Training**:
+### IT System Recovery
 
-- **All Employee Training**: Annual resilience and preparedness training
-- **Leadership Development**: Advanced crisis leadership and decision-making
-- **Cross-Training Programs**: Multi-skill development for operational flexibility
-- **Scenario Planning**: Regular scenario discussions and planning exercises
+**Recovery Priority Order:**
+1. Network and communications (1 hour)
+2. Order processing system (2 hours)
+3. Production planning (4 hours)
+4. Quality systems (8 hours)
+5. Administrative systems (24 hours)
 
-**Adaptive Capacity Building**:
+**Data Recovery Procedures:**
+- Backup verification: Test monthly
+- Recovery point objective: 1 hour max data loss
+- Recovery time objective: 4 hours for critical systems
+- Alternative processing: Manual procedures ready
 
-- **Innovation Culture**: Encourage experimentation and rapid adaptation
-- **Decision Authority**: Distributed decision-making capability
-- **Learning Organization**: Continuous learning from incidents and near-misses
-- **Change Management**: Strong change management capabilities and culture
+## 5. TESTING FRAMEWORK
 
-#### Performance Monitoring & Metrics
+### Testing Schedule
 
-**Resilience KPIs**:
+**Monthly Tests:**
+- Data backup restoration (IT systems)
+- Emergency contact list verification
+- Critical spare parts inventory check
+- Generator/UPS testing (when installed)
 
-- **Recovery Time**: Average time to restore operations after incidents
-- **Business Impact**: Revenue impact per incident (target: <1%)
-- **Employee Safety**: Zero tolerance for safety incidents during emergencies
-- **Customer Retention**: Maintain >98% customer retention during crises
-- **Competitive Position**: Market share maintenance during industry disruptions
+**Quarterly Tests:**
+- Department-level response drills
+- Manual process exercises
+- Supplier backup communication
+- Customer notification procedures
 
-**Continuous Monitoring**:
+**Annual Tests:**
+- Full facility evacuation
+- Complete system failover test
+- Multi-scenario tabletop exercise
+- Third-party plan review
 
-- **Threat Intelligence**: Real-time monitoring of emerging threats
-- **System Health**: Continuous monitoring of critical systems and processes
-- **Supplier Stability**: Ongoing assessment of supplier financial and operational health
-- **Employee Preparedness**: Regular assessment of workforce readiness and capability
+### Performance Metrics
+
+**Key Performance Indicators:**
+- Response time to incidents
+- Recovery time achievement
+- Test exercise success rate
+- Plan update frequency
+- Training completion rate
+
+**Success Criteria:**
+- Level 1 response: <30 minutes
+- Critical system recovery: <4 hours
+- Full production recovery: <24 hours
+- Zero safety incidents during crisis
+- 95% customer satisfaction maintained
+
+### Implementation Roadmap
+
+**Next 30 Days:**
+1. Establish crisis response team
+2. Document critical procedures
+3. Create emergency contact database
+4. Begin cross-training program
+
+**Next 60 Days:**
+1. Install backup power (generator)
+2. Implement cloud backup system
+3. Qualify alternate suppliers
+4. Conduct first response drill
+
+**Next 90 Days:**
+1. Complete all documentation
+2. Train all key personnel
+3. Execute full test exercise
+4. Refine plans based on lessons
+
+### Budget Allocation ($100K)
+
+**Technology Improvements: $45K**
+- Backup generator: $25K
+- Cloud backup system: $15K
+- Cybersecurity upgrades: $5K
+
+**Inventory & Equipment: $30K**
+- Critical spare parts: $20K
+- Emergency supplies: $5K
+- Communication equipment: $5K
+
+**Training & Services: $20K**
+- Staff training program: $10K
+- Consulting/plan development: $7K
+- Testing/drill costs: $3K
+
+**Contingency Reserve: $5K**
+- Emergency response costs
+- Unexpected needs
+
+### Quick Reference Guide
+
+**Emergency Contacts:**
+- Fire/Medical: 911
+- Operations Director: [Name/Phone]
+- IT Emergency: [24/7 number]
+- Key Suppliers: [Contact list]
+- Insurance: [Claim number]
+
+**Immediate Actions Checklist:**
+□ Ensure personnel safety
+□ Assess incident scope
+□ Activate response team
+□ Begin documentation
+□ Notify stakeholders
+□ Initiate recovery procedures
+
+This plan provides a solid foundation for protecting your operations. Start with the 30-day priorities and build from there.
+
+## Related Prompts
+
+- [Risk Management Planning Expert](./risk-management-planning-expert.md)
+- [Crisis Management Expert](./crisis-management-expert.md)
+- [Business Continuity Expert](./business-continuity-expert.md)
 
 ## Usage Instructions
 

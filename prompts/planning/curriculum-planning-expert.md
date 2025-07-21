@@ -1,541 +1,491 @@
-# Curriculum Planning Expert and Educational Design Architect
+# Curriculum Planning Expert
 
 ## Metadata
 
 - **Category**: Planning
 - **Tags**: curriculum planning, educational design, learning objectives, instructional strategy, assessment design
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Curriculum Planning Expert, Educational Design Architect
+- **Version**: 2.0.0
 - **Use Cases**: course design, training programs, academic curriculum, professional development, certification programs
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert curriculum planning skills with educational design architecture to create comprehensive, learner-centered educational programs that achieve measurable learning outcomes. It employs proven pedagogical frameworks, assessment strategies, and instructional design principles to maximize learning effectiveness and engagement.
+A practical curriculum planning assistant that helps you design effective educational programs aligned with learning objectives. Provide your program requirements and I'll create comprehensive curricula with structured content, learning activities, assessments, and implementation plans.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a dual-expertise curriculum development system combining:
+I'll help you design an effective curriculum that achieves your educational goals and engages learners. Let me gather information about your program needs.
 
-1. **Master Curriculum Planning Expert** (20+ years experience)
-   - Expertise: Learning objective design, content sequencing, assessment strategy, program evaluation
-   - Strengths: Standards alignment, scope and sequence planning, differentiated instruction, outcome measurement
-   - Perspective: Creating systematic learning progressions that build knowledge and skills effectively
+About your program:
+1. What type of educational program is this? (academic course, training program, certification, workshop series)
+2. What subject area or skills will be taught?
+3. Who are your learners? (age, background, experience level)
+4. What format will this be? (in-person, online, hybrid, self-paced)
 
-2. **Educational Design Architect**
-   - Expertise: Instructional design, learning experience architecture, technology integration, engagement optimization
-   - Strengths: Learner experience design, multimedia integration, adaptive learning, innovation adoption
-   - Perspective: Building transformational learning experiences that inspire, engage, and empower learners
+Learning objectives:
+5. What should learners be able to do after completing this program?
+6. What knowledge and skills are most critical?
+7. Are there any standards or requirements to meet?
+8. How long will the program run? (hours, days, weeks, months)
 
-Apply these educational frameworks:
-- **Bloom's Taxonomy**: Cognitive learning levels and objective hierarchy
-- **ADDIE Model**: Analysis, Design, Development, Implementation, Evaluation
-- **Universal Design for Learning (UDL)**: Accessible and inclusive design principles
-- **Constructivist Learning**: Active knowledge building and social learning
+Resources and constraints:
+9. What's your budget and available resources?
+10. How many instructors/facilitators will you have?
+11. What technology and materials are available?
+12. Are there any specific constraints or requirements?
 
-CURRICULUM CONTEXT:
-- **Educational Level**: {{k12_higher_ed_professional_corporate_certification}}
-- **Subject Domain**: {{stem_humanities_business_technology_healthcare}}
-- **Learning Format**: {{classroom_online_hybrid_self_paced_instructor_led}}
-- **Duration**: {{weeks_months_semester_year_ongoing}}
-- **Audience Size**: {{individual_small_large_massive_variable}}
-- **Learner Profile**: {{beginner_intermediate_advanced_mixed_levels}}
-- **Learning Environment**: {{academic_corporate_professional_informal}}
-- **Technology Access**: {{basic_standard_advanced_unlimited}}
-- **Assessment Requirements**: {{formative_summative_competency_certification}}
-- **Resource Constraints**: {{limited_moderate_substantial_unlimited}}
+Based on your answers, I'll develop:
 
-CURRICULUM OBJECTIVES:
-{{learning_goals_competency_targets_performance_outcomes_certification_requirements}}
+**1. LEARNING OBJECTIVES** - Clear, measurable outcomes aligned with goals
+**2. CURRICULUM STRUCTURE** - Organized modules, topics, and sequencing
+**3. INSTRUCTIONAL STRATEGIES** - Teaching methods and learning activities
+**4. ASSESSMENT PLAN** - How to measure learning and provide feedback
+**5. IMPLEMENTATION GUIDE** - Resources, timeline, and delivery plan
 
-CURRICULUM DEVELOPMENT FRAMEWORK:
-
-Phase 1: ANALYSIS & DESIGN
-1. Learner needs assessment and analysis
-2. Learning objective definition and alignment
-3. Content analysis and sequencing
-4. Instructional strategy selection
-
-Phase 2: DEVELOPMENT & CREATION
-1. Learning experience design
-2. Content development and curation
-3. Assessment design and validation
-4. Technology integration and optimization
-
-Phase 3: IMPLEMENTATION & DELIVERY
-1. Instructor preparation and training
-2. Learning environment setup
-3. Delivery and facilitation
-4. Ongoing support and adaptation
-
-Phase 4: EVALUATION & IMPROVEMENT
-1. Learning outcome assessment
-2. Program effectiveness evaluation
-3. Continuous improvement planning
-4. Stakeholder feedback integration
-
-DELIVER YOUR CURRICULUM PLAN AS:
+Please provide the information above, and I'll create a curriculum tailored to your learners and objectives.
 ```
 
-## COMPREHENSIVE CURRICULUM DEVELOPMENT STRATEGY
-
-### CURRICULUM OVERVIEW
-
-**Program**: "Digital Marketing Mastery" - Professional Certificate Program
-**Target Audience**: Marketing professionals seeking digital transformation skills
-**Format**: 12-week hybrid professional development program
-**Learning Mode**: Blended (60% online, 40% in-person workshops)
-**Certification**: Industry-recognized digital marketing certification
-
-**Program Vision**:
-"Empower marketing professionals with cutting-edge digital marketing expertise and strategic thinking skills to drive business growth in the digital economy."
-
-**Learning Objectives**:
-
-1. Develop strategic digital marketing planning and execution capabilities
-2. Master data-driven marketing analysis and optimization techniques
-3. Build expertise in emerging digital channels and technologies
-4. Create integrated marketing campaigns that drive measurable results
-5. Demonstrate professional competency through portfolio and certification
-
-### EXECUTIVE SUMMARY
-
-**Curriculum Strategy**:
-Design competency-based learning program that combines theoretical foundations with practical application, using real-world projects and industry partnerships to develop job-ready digital marketing expertise.
-
-**Educational Philosophy**:
-"Learning by Doing" - Experiential learning approach that emphasizes hands-on project work, peer collaboration, and industry mentorship to build both knowledge and practical skills.
-
-**Key Design Principles**:
-
-1. **Competency-Based**: Skills and knowledge aligned with industry requirements
-2. **Project-Driven**: Real-world applications and portfolio development
-3. **Collaborative Learning**: Peer interaction and knowledge sharing
-4. **Technology-Enhanced**: Modern tools and platforms integration
-5. **Continuous Assessment**: Ongoing feedback and improvement opportunities
-
-**Expected Outcomes**:
-
-- 90% course completion rate
-- 85% certification achievement rate
-- 95% learner satisfaction score
-- 80% job advancement within 6 months
-- 75% employer satisfaction with graduate performance
-
-### LEARNER ANALYSIS & NEEDS ASSESSMENT
-
-#### Target Learner Profile
-
-**Primary Learner Persona: The Marketing Professional**
-
-- **Demographics**: 28-45 years old, 3-10 years marketing experience
-- **Current Role**: Marketing coordinator, specialist, or manager
-- **Education**: Bachelor's degree in marketing, business, or related field
-- **Technology Comfort**: Intermediate to advanced digital literacy
-- **Career Goals**: Advancement to senior marketing roles, digital specialization
-
-**Learning Characteristics**:
-
-- **Motivation**: Career advancement and skill modernization
-- **Learning Style**: Mixed preferences, values practical application
-- **Time Constraints**: Busy professionals requiring flexible scheduling
-- **Prior Knowledge**: Traditional marketing foundation, limited digital experience
-- **Support Needs**: Mentorship, peer networking, career guidance
-
-#### Learning Needs Assessment
-
-**Knowledge Gaps**:
-
-- **Digital Strategy**: Limited understanding of digital marketing planning
-- **Analytics**: Basic understanding, needs advanced data analysis skills
-- **Emerging Channels**: Unfamiliarity with new platforms and technologies
-- **Integration**: Difficulty connecting digital tactics to business outcomes
-- **Optimization**: Limited experience with testing and optimization
-
-**Skill Development Priorities**:
-
-1. **Strategic Planning**: Digital marketing strategy development
-2. **Data Analysis**: Marketing analytics and performance measurement
-3. **Channel Expertise**: Platform-specific marketing execution
-4. **Content Creation**: Digital content strategy and production
-5. **Technology Integration**: Marketing automation and tool utilization
-
-### LEARNING OBJECTIVES & COMPETENCY FRAMEWORK
-
-#### Program-Level Learning Objectives
-
-**Objective 1: Strategic Digital Marketing Planning**
-
-- **Competency**: Develop comprehensive digital marketing strategies
-- **Performance Indicator**: Create strategic plan achieving 25% engagement improvement
-- **Assessment**: Strategic plan presentation and implementation project
-
-**Objective 2: Data-Driven Marketing Analysis**
-
-- **Competency**: Analyze marketing performance and optimize campaigns
-- **Performance Indicator**: Demonstrate 20% ROI improvement through optimization
-- **Assessment**: Analytics project with optimization recommendations
-
-**Objective 3: Multi-Channel Campaign Execution**
-
-- **Competency**: Execute integrated campaigns across digital channels
-- **Performance Indicator**: Launch campaign reaching target KPIs
-- **Assessment**: Live campaign implementation and results presentation
-
-**Objective 4: Emerging Technology Integration**
-
-- **Competency**: Evaluate and implement new marketing technologies
-- **Performance Indicator**: Technology adoption project with measured impact
-- **Assessment**: Technology implementation case study
-
-**Objective 5: Professional Leadership and Communication**
-
-- **Competency**: Lead marketing initiatives and communicate with stakeholders
-- **Performance Indicator**: Present marketing strategy to executive audience
-- **Assessment**: Executive presentation and peer evaluation
-
-#### Module-Level Competency Matrix
-
-| Module                | Learning Objectives              | Bloom's Level    | Assessment Method     | Performance Criteria                       |
-| --------------------- | -------------------------------- | ---------------- | --------------------- | ------------------------------------------ |
-| **Digital Strategy**  | Analyze market, develop strategy | Analyze/Evaluate | Strategy presentation | Comprehensive plan with measurable goals   |
-| **Content Marketing** | Create engaging content strategy | Create/Evaluate  | Content portfolio     | High-engagement content with analytics     |
-| **Social Media**      | Execute social campaigns         | Apply/Analyze    | Campaign project      | Platform-specific campaign with results    |
-| **Email Marketing**   | Design automated email sequences | Apply/Create     | Email campaign        | Automated sequence with conversion metrics |
-| **SEO/SEM**           | Optimize search visibility       | Apply/Analyze    | SEO audit project     | Improved search rankings and traffic       |
-| **Analytics**         | Measure and optimize performance | Analyze/Evaluate | Analytics dashboard   | Data-driven optimization recommendations   |
-
-### CURRICULUM STRUCTURE & SEQUENCING
-
-#### 12-Week Program Architecture
-
-**Foundation Phase (Weeks 1-3): Digital Marketing Fundamentals**
-
-**Week 1: Digital Marketing Landscape**
-
-- **Content**: Digital ecosystem overview, consumer behavior, channel overview
-- **Activities**: Industry analysis project, digital audit of current company
-- **Assessment**: Digital landscape analysis report (25% of module grade)
-- **Format**: 2-hour online session + 4-hour in-person workshop
-
-**Week 2: Strategic Planning Framework**
-
-- **Content**: Marketing strategy development, goal setting, measurement planning
-- **Activities**: Strategy development workshop, SMART objective creation
-- **Assessment**: Strategic planning framework application (35% of module grade)
-- **Format**: 3-hour online session + 3-hour collaborative workshop
-
-**Week 3: Consumer Journey Mapping**
-
-- **Content**: Customer experience design, touchpoint optimization, persona development
-- **Activities**: Journey mapping exercise, persona development project
-- **Assessment**: Customer journey map with optimization recommendations (40% of module grade)
-- **Format**: 2-hour online session + 4-hour hands-on workshop
-
-**Development Phase (Weeks 4-9): Channel Mastery and Execution**
-
-**Week 4: Content Marketing Strategy**
-
-- **Content**: Content planning, storytelling, brand voice, content calendar development
-- **Activities**: Content strategy development, editorial calendar creation
-- **Assessment**: 30-day content strategy with sample content (100% of module grade)
-
-**Week 5: Social Media Marketing**
-
-- **Content**: Platform strategies, community management, paid social advertising
-- **Activities**: Social campaign development, community engagement simulation
-- **Assessment**: Live social media campaign execution (100% of module grade)
-
-**Week 6: Email Marketing & Automation**
-
-- **Content**: Email strategy, automation workflows, personalization, deliverability
-- **Activities**: Email sequence development, automation setup
-- **Assessment**: Automated email campaign with performance analysis (100% of module grade)
-
-**Week 7: Search Engine Optimization (SEO)**
-
-- **Content**: Technical SEO, content optimization, link building, local SEO
-- **Activities**: Website audit, keyword research, optimization implementation
-- **Assessment**: SEO audit and optimization plan (100% of module grade)
-
-**Week 8: Search Engine Marketing (SEM)**
-
-- **Content**: Paid search strategy, ad creation, bidding strategies, optimization
-- **Activities**: Google Ads campaign creation, performance optimization
-- **Assessment**: Live paid search campaign with optimization (100% of module grade)
-
-**Week 9: Marketing Analytics & Data Analysis**
-
-- **Content**: Analytics setup, data interpretation, reporting, optimization frameworks
-- **Activities**: Analytics dashboard creation, performance analysis project
-- **Assessment**: Comprehensive analytics report with actionable insights (100% of module grade)
-
-**Integration Phase (Weeks 10-12): Advanced Application and Mastery**
-
-**Week 10: Integrated Campaign Development**
-
-- **Content**: Multi-channel campaign planning, budget allocation, timeline coordination
-- **Activities**: Integrated campaign design, cross-channel optimization planning
-- **Assessment**: Comprehensive campaign strategy presentation (50% of module grade)
-
-**Week 11: Emerging Technologies & Innovation**
-
-- **Content**: AI in marketing, marketing automation, emerging platforms, future trends
-- **Activities**: Technology evaluation project, innovation implementation plan
-- **Assessment**: Technology adoption strategy with pilot plan (50% of module grade)
-
-**Week 12: Professional Portfolio & Certification**
-
-- **Content**: Portfolio development, case study creation, professional presentation skills
-- **Activities**: Portfolio compilation, certification exam preparation
-- **Assessment**: Professional portfolio presentation + certification exam (100% of module grade)
-
-### INSTRUCTIONAL DESIGN & METHODOLOGY
-
-#### Learning Experience Design
-
-**Blended Learning Approach**:
-
-- **Online Components** (60%): Self-paced learning, video content, interactive modules
-- **In-Person Components** (40%): Workshops, collaboration, presentations, mentoring
-
-**Active Learning Strategies**:
-
-- **Project-Based Learning**: Real-world marketing challenges and solutions
-- **Collaborative Learning**: Peer reviews, group projects, knowledge sharing
-- **Case Study Analysis**: Industry examples and problem-solving exercises
-- **Simulation Exercises**: Marketing campaign planning and execution practice
-
-#### Content Delivery Methods
-
-**Digital Learning Platform**:
-
-- **Learning Management System**: Custom LMS with progress tracking and analytics
-- **Video Content**: Professional video lessons with interactive elements
-- **Interactive Modules**: Gamified learning experiences with immediate feedback
-- **Resource Library**: Comprehensive collection of templates, tools, and references
-
-**In-Person Workshops**:
-
-- **Hands-On Practice**: Tool usage, strategy development, campaign creation
-- **Expert Sessions**: Industry guest speakers and subject matter experts
-- **Peer Collaboration**: Group work, peer feedback, knowledge sharing
-- **Mentorship**: One-on-one coaching and career guidance
-
-#### Technology Integration
-
-**Marketing Tools & Platforms**:
-
-- **Analytics**: Google Analytics, Facebook Analytics, social listening tools
-- **Content Management**: WordPress, content creation and management tools
-- **Email Marketing**: Mailchimp, HubSpot, automation platform training
-- **Social Media**: Hootsuite, Sprout Social, platform-native tools
-- **Advertising**: Google Ads, Facebook Ads Manager, LinkedIn Campaign Manager
-
-**Learning Technology**:
-
-- **Collaboration Tools**: Slack, Microsoft Teams for ongoing communication
-- **Project Management**: Trello, Asana for project tracking and collaboration
-- **Design Tools**: Canva, Adobe Creative Suite for content creation
-- **Presentation Tools**: PowerPoint, Prezi, Google Slides for presentations
-
-### ASSESSMENT STRATEGY & EVALUATION
-
-#### Assessment Philosophy
-
-**Competency-Based Assessment**: Focus on demonstrable skills and knowledge application rather than memorization
-**Authentic Assessment**: Real-world projects and challenges that mirror professional expectations
-**Continuous Assessment**: Ongoing feedback and improvement opportunities throughout the program
-**Peer Assessment**: Collaborative evaluation and learning from fellow participants
-
-#### Assessment Methods & Criteria
-
-**Formative Assessment** (40% of total grade):
-
-- **Weekly Discussions**: Participation in online forums and collaborative activities
-- **Peer Reviews**: Feedback on fellow participants' work and presentations
-- **Self-Reflection**: Regular learning journals and progress self-assessment
-- **Practice Exercises**: Low-stakes skill practice and knowledge checks
-
-**Summative Assessment** (60% of total grade):
-
-- **Module Projects**: Comprehensive application of module-specific skills
-- **Integrated Campaign**: Multi-week project demonstrating cross-module integration
-- **Professional Portfolio**: Compilation of best work with reflection and analysis
-- **Certification Exam**: Comprehensive assessment of program learning objectives
-
-#### Assessment Rubrics & Criteria
-
-**Project Assessment Rubric**:
-
-| Criteria          | Excellent (4)                                 | Proficient (3)                          | Developing (2)                            | Beginning (1)                         |
-| ----------------- | --------------------------------------------- | --------------------------------------- | ----------------------------------------- | ------------------------------------- |
-| **Strategy**      | Comprehensive, innovative strategy            | Solid strategy with clear rationale     | Basic strategy with some gaps             | Limited strategic thinking            |
-| **Execution**     | Flawless implementation with optimization     | Good execution with minor issues        | Adequate execution with notable gaps      | Poor execution with major issues      |
-| **Analysis**      | Deep insights with actionable recommendations | Good analysis with clear conclusions    | Basic analysis with limited insights      | Superficial or inaccurate analysis    |
-| **Communication** | Clear, persuasive, professional presentation  | Good presentation with minor weaknesses | Adequate presentation with some confusion | Poor presentation difficult to follow |
-
-**Portfolio Assessment Components**:
-
-- **Strategy Development**: Digital marketing strategy with measurable objectives
-- **Campaign Execution**: Live campaign results with performance analysis
-- **Analytics Mastery**: Data analysis and optimization recommendations
-- **Innovation Application**: Technology or methodology innovation project
-- **Professional Presentation**: Executive-level strategy presentation
-
-### INSTRUCTOR PREPARATION & SUPPORT
-
-#### Instructor Profile & Qualifications
-
-**Lead Instructor Requirements**:
-
-- **Education**: Master's degree in marketing, business, or related field
-- **Experience**: 10+ years digital marketing experience with leadership roles
-- **Certifications**: Google Analytics, Google Ads, Facebook Blueprint certifications
-- **Teaching**: 3+ years training or education experience preferred
-
-**Guest Expert Network**:
-
-- **Industry Practitioners**: Current digital marketing professionals and executives
-- **Agency Leaders**: Creative and strategic leaders from top marketing agencies
-- **Technology Experts**: Platform specialists and marketing technology vendors
-- **Academic Researchers**: Marketing research and consumer behavior experts
-
-#### Instructor Development Program
-
-**Pre-Program Training** (20 hours):
-
-- **Curriculum Overview**: Deep dive into learning objectives and assessment criteria
-- **Technology Training**: LMS platform, tools, and integration familiarization
-- **Instructional Design**: Adult learning principles and engagement strategies
-- **Assessment Training**: Rubric application, feedback techniques, grading consistency
-
-**Ongoing Support**:
-
-- **Weekly Instructor Meetings**: Coordination, troubleshooting, continuous improvement
-- **Peer Observation**: Classroom visits and feedback from experienced instructors
-- **Student Feedback**: Regular evaluation and performance improvement planning
-- **Professional Development**: Continued learning opportunities and skill building
-
-### TECHNOLOGY INFRASTRUCTURE & SUPPORT
-
-#### Learning Management System (LMS)
-
-**Platform Features**:
-
-- **Course Content Delivery**: Video streaming, document sharing, interactive modules
-- **Progress Tracking**: Individual and cohort progress monitoring and analytics
-- **Communication Tools**: Discussion forums, messaging, video conferencing
-- **Assessment Engine**: Quiz creation, grading automation, rubric-based evaluation
-
-**Integration Capabilities**:
-
-- **Marketing Tools**: Direct integration with Google Analytics, social platforms
-- **Collaboration**: Slack, Microsoft Teams integration for ongoing communication
-- **Video Conferencing**: Zoom, Teams integration for live sessions
-- **Portfolio Tools**: Integration with presentation and design platforms
-
-#### Technical Support & Accessibility
-
-**Learner Support Services**:
-
-- **Technical Help Desk**: 24/7 support for platform and tool issues
-- **Digital Literacy Training**: Pre-program technology orientation and ongoing support
-- **Equipment Lending**: Laptop and software access for participants with needs
-- **Accessibility Services**: Screen readers, captioning, alternative formats
-
-**Universal Design for Learning (UDL)**:
-
-- **Multiple Representation**: Text, video, audio, interactive content options
-- **Flexible Engagement**: Self-paced and instructor-led options
-- **Variable Expression**: Multiple assessment formats and submission methods
-- **Accessibility Compliance**: WCAG 2.1 AA compliance for all digital content
-
-### PROGRAM EVALUATION & CONTINUOUS IMPROVEMENT
-
-#### Evaluation Framework
-
-**Kirkpatrick's Four-Level Evaluation Model**:
-
-**Level 1: Reaction** (Learner Satisfaction):
-
-- Weekly pulse surveys during program
-- End-of-program comprehensive evaluation
-- Net Promoter Score for program recommendation
-- Feedback on instructors, content, and delivery methods
-
-**Level 2: Learning** (Knowledge and Skills Acquisition):
-
-- Pre/post assessments measuring knowledge gain
-- Competency demonstration through projects and assessments
-- Peer evaluation of skill development
-- Self-assessment of confidence and capability
-
-**Level 3: Behavior** (Application on the Job):
-
-- 3-month follow-up survey on skill application
-- 6-month career progression tracking
-- Employer feedback on graduate performance
-- Portfolio updates and continued project work
-
-**Level 4: Results** (Business Impact):
-
-- Career advancement tracking (promotions, salary increases)
-- Business impact measurement (marketing ROI, campaign performance)
-- Long-term professional network and industry involvement
-- Alumni success stories and case studies
-
-#### Continuous Improvement Process
-
-**Data Collection & Analysis**:
-
-- **Learning Analytics**: Platform usage, engagement patterns, performance correlation
-- **Feedback Integration**: Systematic incorporation of learner and instructor feedback
-- **Industry Alignment**: Regular review of curriculum against industry developments
-- **Best Practice Research**: Integration of educational research and proven methodologies
-
-**Curriculum Updates**:
-
-- **Quarterly Content Reviews**: Update for industry changes and new technologies
-- **Annual Curriculum Revision**: Comprehensive review and strategic updates
-- **Instructor Development**: Ongoing training based on evaluation results
-- **Technology Upgrades**: Platform and tool updates based on user feedback and capabilities
-
-### CAREER SERVICES & ALUMNI SUPPORT
-
-#### Career Development Integration
-
-**Professional Development Components**:
-
-- **Resume and LinkedIn Optimization**: Personal brand development workshop
-- **Interview Preparation**: Mock interviews with industry professionals
-- **Networking Strategy**: Industry connection building and relationship development
-- **Salary Negotiation**: Compensation discussion and negotiation skills
-
-**Industry Connections**:
-
-- **Mentorship Program**: Pairing with industry professionals for ongoing guidance
-- **Job Placement Assistance**: Partnership with hiring companies and recruiting firms
-- **Internship Opportunities**: Hands-on experience with program partner companies
-- **Industry Events**: Access to conferences, networking events, and professional development
-
-#### Alumni Network & Ongoing Support
-
-**Alumni Community**:
-
-- **Professional Network**: Exclusive access to graduate professional network
-- **Continued Learning**: Advanced workshops and masterclasses for graduates
-- **Industry Updates**: Regular communication about trends, opportunities, and news
-- **Peer Support**: Ongoing collaboration and knowledge sharing among graduates
-
-**Long-Term Relationship Building**:
-
-- **Annual Alumni Conference**: Networking, continued education, and community building
-- **Advisory Board Participation**: Graduate input on curriculum development and improvement
-- **Guest Speaking**: Alumni sharing expertise with current program participants
-- **Success Recognition**: Highlighting graduate achievements and career progression
+## Example Usage
+
+**User Input:**
+```
+1. Program type: Professional certification program
+2. Subject: Data analytics for business professionals
+3. Learners: Business professionals (25-45), non-technical background, want to use data for decisions
+4. Format: Hybrid - online modules + weekend workshops
+
+5. Learning outcomes: Analyze business data, create visualizations, make data-driven recommendations, use Excel and Tableau
+6. Critical skills: Data interpretation, basic statistics, visualization design, storytelling with data
+7. Standards: Prepare for industry certification exam, align with company competencies
+8. Duration: 8 weeks, 10 hours/week commitment
+
+9. Budget: $50K for development, $20K for delivery
+10. Instructors: 2 experienced data analysts as instructors
+11. Technology: LMS platform, Tableau licenses, Excel available
+12. Constraints: Learners have limited time, varying tech skills, must accommodate different time zones
+```
+
+**Assistant Output:**
+
+Based on your data analytics certification program needs, here's your comprehensive curriculum plan:
+
+# DATA ANALYTICS FOR BUSINESS PROFESSIONALS - CURRICULUM PLAN
+
+## 1. LEARNING OBJECTIVES
+
+### Program-Level Objectives
+
+By the end of this 8-week program, learners will be able to:
+
+**1. Analyze Business Data**
+- Clean and prepare business datasets for analysis
+- Apply statistical concepts to interpret data patterns
+- Identify trends, outliers, and correlations
+- Draw valid conclusions from data analysis
+
+**2. Create Effective Visualizations**
+- Design clear, compelling charts and dashboards
+- Select appropriate visualization types for different data
+- Apply design principles for business communication
+- Build interactive dashboards in Tableau
+
+**3. Make Data-Driven Recommendations**
+- Transform data insights into business recommendations
+- Present findings to non-technical stakeholders
+- Support decisions with quantitative evidence
+- Evaluate the business impact of data insights
+
+**4. Use Analytics Tools Proficiently**
+- Perform advanced Excel analysis (pivot tables, formulas, charts)
+- Create Tableau workbooks and dashboards
+- Connect to multiple data sources
+- Automate basic reporting tasks
+
+### Module-Specific Learning Objectives
+
+**Module 1: Data Fundamentals (Week 1)**
+- Define key data concepts and terminology
+- Identify different data types and structures
+- Understand the data analysis process
+- Recognize common business metrics
+
+**Module 2: Excel for Analysis (Weeks 2-3)**
+- Import and clean data in Excel
+- Use formulas for calculations and analysis
+- Create pivot tables and pivot charts
+- Build dynamic reports with filters
+
+**Module 3: Statistical Thinking (Week 4)**
+- Calculate descriptive statistics
+- Understand distributions and variability
+- Apply correlation and basic regression
+- Avoid common statistical mistakes
+
+**Module 4: Data Visualization Principles (Week 5)**
+- Choose the right chart for your data
+- Apply color, layout, and design best practices
+- Create accessible visualizations
+- Tell stories with data
+
+**Module 5: Tableau Fundamentals (Weeks 6-7)**
+- Navigate Tableau interface
+- Connect to data sources
+- Build basic visualizations
+- Create interactive dashboards
+
+**Module 6: Business Application (Week 8)**
+- Complete end-to-end analysis project
+- Present findings professionally
+- Prepare for certification exam
+- Plan continued learning path
+
+## 2. CURRICULUM STRUCTURE
+
+### Weekly Schedule Overview
+
+**Week 1: Foundation Week**
+- Monday: Program kickoff workshop (3 hours, in-person/virtual)
+- Tuesday-Thursday: Online modules (2 hours/day)
+- Friday: Practice exercises and peer discussion
+- Weekend: First weekend workshop (Saturday, 4 hours)
+
+**Weeks 2-7: Core Learning**
+- Monday: New module introduction (1 hour online)
+- Tuesday-Thursday: Self-paced learning (2 hours/day)
+- Friday: Live Q&A session (1 hour)
+- Alternate weekends: Workshops (4 hours)
+
+**Week 8: Integration & Assessment**
+- Monday-Wednesday: Final project work
+- Thursday: Project presentations
+- Friday: Certification exam prep
+- Weekend: Certification exam
+
+### Detailed Module Structure
+
+**MODULE 1: DATA FUNDAMENTALS**
+
+*Learning Path:*
+1. What is Data Analytics? (30 min video)
+2. Types of Business Data (45 min interactive)
+3. The Analytics Process (60 min case study)
+4. Key Business Metrics (45 min exercise)
+
+*Activities:*
+- Data scavenger hunt in your organization
+- Identify 5 metrics for your role
+- Peer discussion on data challenges
+
+*Assessment:*
+- Knowledge check quiz (20 questions)
+- Metrics definition assignment
+
+**MODULE 2: EXCEL FOR ANALYSIS**
+
+*Week 2 - Excel Essentials:*
+1. Data Import and Cleaning (90 min)
+2. Essential Formulas (120 min)
+3. Conditional Formatting (60 min)
+4. Basic Charts (90 min)
+
+*Week 3 - Advanced Excel:*
+1. Pivot Tables Mastery (120 min)
+2. Advanced Formulas (90 min)
+3. Dynamic Dashboards (120 min)
+4. Automation with Macros (60 min)
+
+*Activities:*
+- Clean a messy dataset
+- Build sales analysis dashboard
+- Create automated report template
+
+*Assessment:*
+- Excel skills demonstration
+- Dashboard creation project
+
+**MODULE 3: STATISTICAL THINKING**
+
+*Learning Path:*
+1. Descriptive Statistics (90 min)
+2. Understanding Variation (60 min)
+3. Correlation vs Causation (90 min)
+4. Basic Forecasting (90 min)
+
+*Activities:*
+- Calculate statistics for business data
+- Identify misleading statistics examples
+- Simple forecast model
+
+*Assessment:*
+- Statistical analysis assignment
+- Interpretation exercise
+
+**MODULE 4: DATA VISUALIZATION PRINCIPLES**
+
+*Learning Path:*
+1. Visual Perception & Design (60 min)
+2. Choosing Chart Types (90 min)
+3. Color and Accessibility (60 min)
+4. Storytelling Framework (90 min)
+
+*Activities:*
+- Chart makeover exercise
+- Create visualization style guide
+- Storyboard a data presentation
+
+*Assessment:*
+- Visualization critique
+- Design principles application
+
+**MODULE 5: TABLEAU FUNDAMENTALS**
+
+*Week 6 - Tableau Basics:*
+1. Tableau Interface Tour (60 min)
+2. Connecting to Data (90 min)
+3. Basic Visualizations (120 min)
+4. Filters and Parameters (90 min)
+
+*Week 7 - Advanced Tableau:*
+1. Calculated Fields (90 min)
+2. Dashboard Design (120 min)
+3. Interactivity (90 min)
+4. Publishing and Sharing (60 min)
+
+*Activities:*
+- Recreate Excel charts in Tableau
+- Build interactive sales dashboard
+- Create customer analysis workbook
+
+*Assessment:*
+- Tableau workbook submission
+- Dashboard presentation
+
+**MODULE 6: BUSINESS APPLICATION**
+
+*Learning Path:*
+1. Project Planning (60 min)
+2. Stakeholder Communication (90 min)
+3. Presentation Skills (90 min)
+4. Exam Preparation (120 min)
+
+*Activities:*
+- Complete capstone project
+- Present to peer group
+- Practice exam questions
+
+*Assessment:*
+- Capstone project (40%)
+- Presentation (30%)
+- Certification exam (30%)
+
+## 3. INSTRUCTIONAL STRATEGIES
+
+### Blended Learning Approach
+
+**Online Components (60%)**
+- Pre-recorded video lectures (bite-sized, 10-15 min)
+- Interactive exercises with immediate feedback
+- Discussion forums for peer learning
+- Self-assessment quizzes
+
+**Live Sessions (20%)**
+- Weekly Q&A with instructors
+- Peer project presentations
+- Group problem-solving
+- Expert guest speakers
+
+**Workshops (20%)**
+- Hands-on practice with real data
+- Group projects and collaboration
+- One-on-one instructor time
+- Networking opportunities
+
+### Teaching Methods
+
+**For Non-Technical Learners:**
+1. Start with business context, then introduce technical concepts
+2. Use familiar business scenarios and examples
+3. Provide step-by-step tutorials with screenshots
+4. Offer multiple explanations for complex concepts
+
+**Active Learning Techniques:**
+- Think-pair-share discussions
+- Case study analysis
+- Hands-on data exercises
+- Peer teaching opportunities
+- Real-world project application
+
+**Differentiated Instruction:**
+- Basic and advanced tracks for exercises
+- Optional deep-dive resources
+- Multiple format options (video, text, audio)
+- Flexible pacing within weekly deadlines
+
+## 4. ASSESSMENT PLAN
+
+### Formative Assessment (Ongoing)
+
+**Weekly Assessments:**
+- Module quizzes (auto-graded, unlimited attempts)
+- Discussion forum participation
+- Practice exercises with solution keys
+- Peer feedback on assignments
+
+**Progress Tracking:**
+- LMS analytics on engagement
+- Weekly check-in surveys
+- Instructor observation during workshops
+- Self-assessment reflections
+
+### Summative Assessment
+
+**Module Projects (50% of grade):**
+- Week 2: Excel data cleaning project
+- Week 3: Excel dashboard project
+- Week 4: Statistical analysis report
+- Week 5: Visualization makeover
+- Week 7: Tableau dashboard project
+
+**Capstone Project (30% of grade):**
+- Choose business problem from your organization
+- Collect and analyze relevant data
+- Create Tableau dashboard with insights
+- Present recommendations to peers
+
+**Certification Exam (20% of grade):**
+- 100 multiple choice questions
+- 3-hour time limit
+- 70% passing score
+- Covers all module content
+
+### Assessment Criteria
+
+**Project Rubric:**
+- Technical Accuracy (40%)
+- Business Insight (30%)
+- Visual Design (20%)
+- Communication (10%)
+
+**Feedback Timeline:**
+- Automated quiz feedback: Immediate
+- Project feedback: Within 3 days
+- Peer feedback: Within 2 days
+- Instructor feedback: Weekly
+
+## 5. IMPLEMENTATION GUIDE
+
+### Pre-Launch Preparation (4 weeks before)
+
+**Week -4: Content Development**
+- Record video lectures
+- Create interactive exercises
+- Develop assessment materials
+- Build LMS course structure
+
+**Week -3: Technology Setup**
+- Configure LMS modules
+- Test all technology platforms
+- Set up Tableau licenses
+- Create communication channels
+
+**Week -2: Instructor Preparation**
+- Instructor alignment meeting
+- Review all materials
+- Practice workshop activities
+- Prepare example datasets
+
+**Week -1: Learner Onboarding**
+- Send welcome package
+- Technology check sessions
+- Pre-program survey
+- Optional prep materials
+
+### Delivery Schedule
+
+**Instructor Time Allocation (per week):**
+- Live Q&A session: 1 hour
+- Workshop facilitation: 4 hours (alternate weeks)
+- Grading and feedback: 6 hours
+- Student support: 4 hours
+- Total: 15 hours/week/instructor
+
+**Support Resources:**
+- Program handbook (PDF)
+- Technical setup guides
+- Video tutorial library
+- Q&A discussion forum
+- Office hours schedule
+
+### Technology Requirements
+
+**For Learners:**
+- Computer with Excel 2016+
+- Tableau Desktop (provided)
+- Reliable internet connection
+- Webcam for live sessions
+
+**Platform Setup:**
+- LMS with video hosting
+- Zoom for live sessions
+- Slack for community
+- Google Drive for file sharing
+
+### Success Metrics
+
+**Program KPIs:**
+- 85% completion rate
+- 80% certification pass rate
+- 4.5/5 satisfaction score
+- 90% skills application rate
+
+**Tracking Methods:**
+- Weekly progress reports
+- Mid-program survey
+- End-program evaluation
+- 3-month follow-up survey
+
+### Budget Breakdown
+
+**Development ($50K):**
+- Instructional design: $15K
+- Video production: $20K
+- Content development: $10K
+- Technology setup: $5K
+
+**Delivery ($20K):**
+- Instructor compensation: $12K
+- Tableau licenses: $5K
+- Platform fees: $2K
+- Materials and supplies: $1K
+
+### Risk Mitigation
+
+**Common Challenges & Solutions:**
+
+1. **Varying Tech Skills**
+   - Solution: Pre-program tech bootcamp
+   - Extra support in first 2 weeks
+   - Buddy system pairing
+
+2. **Time Zone Differences**
+   - Solution: Record all live sessions
+   - Offer 2 time slots for Q&A
+   - Asynchronous alternatives
+
+3. **Work-Life Balance**
+   - Solution: Flexible deadlines
+   - Catch-up options
+   - Modular content design
+
+This curriculum provides a structured yet flexible path to data analytics proficiency, balancing technical skill development with practical business application.
+
+## Related Prompts
+
+- [Training Program Development Expert](./training-program-development-expert.md)
+- [Course Design Expert](./course-design-expert.md)
+- [Learning Assessment Expert](./learning-assessment-expert.md)
 
 ## Usage Instructions
 
