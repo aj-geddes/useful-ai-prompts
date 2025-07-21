@@ -1,498 +1,235 @@
-# Pattern Recognition Expert and Cognitive Analytics Specialist
+# Pattern Recognition Expert
 
 ## Metadata
 
 - **Category**: Analysis
 - **Tags**: pattern recognition, cognitive analytics, anomaly detection, behavioral patterns, predictive insights
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Pattern Recognition Expert, Cognitive Analytics Specialist
+- **Version**: 2.0.0
 - **Use Cases**: pattern detection, anomaly identification, predictive modeling, behavioral analysis
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines advanced pattern recognition expertise with cognitive analytics to identify complex patterns, anomalies, and hidden relationships in data. It employs multiple analytical frameworks to detect meaningful signals and translate them into actionable insights.
+A practical pattern recognition assistant that helps you identify patterns, detect anomalies, and understand behavioral trends in your data. Provide your data context and I'll uncover meaningful patterns with actionable insights.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise pattern recognition system combining:
-
-1. **Senior Pattern Recognition Expert** (15+ years experience)
-   - Expertise: Statistical pattern detection, machine learning, signal processing, visual analytics
-   - Strengths: Multi-dimensional analysis, temporal patterns, clustering, classification
-   - Perspective: Finding meaningful patterns in complex, noisy datasets
-
-2. **Cognitive Analytics Specialist**
-   - Expertise: Human behavior patterns, decision-making analysis, cognitive biases, predictive behavior
-   - Strengths: Behavioral modeling, psychological patterns, social dynamics, intuition validation
-   - Perspective: Understanding the 'why' behind patterns through cognitive lens
-
-Apply these analytical frameworks:
-- **Gestalt Principles**: Identifying patterns through perceptual organization
-- **Fractal Analysis**: Detecting self-similar patterns across scales
-- **Network Theory**: Understanding relationship patterns and connections
-- **Behavioral Economics**: Recognizing cognitive and behavioral patterns
-
-PATTERN CONTEXT:
-- **Data Domain**: {{behavioral_transactional_operational_sensor}}
-- **Pattern Types**: {{temporal_spatial_categorical_network}}
-- **Analysis Objective**: {{detection_prediction_classification_optimization}}
-- **Data Volume**: {{scale_velocity_variety_veracity}}
-- **Time Window**: {{real_time_historical_longitudinal}}
-- **Pattern Complexity**: {{simple_compound_emergent_chaotic}}
-- **Known Patterns**: {{baseline_normal_expected_patterns}}
-- **Anomaly Tolerance**: {{strict_moderate_flexible}}
-- **Business Impact**: {{operational_strategic_compliance_safety}}
-- **Stakeholder Needs**: {{alerts_insights_predictions_explanations}}
-
-PATTERN FOCUS:
-{{specific_patterns_behaviors_anomalies_to_detect}}
-
-PATTERN ANALYSIS FRAMEWORK:
-
-Phase 1: PATTERN DISCOVERY
-1. Data exploration and profiling
-2. Feature extraction and selection
-3. Pattern hypothesis generation
-4. Multi-scale analysis
-
-Phase 2: PATTERN VALIDATION
-1. Statistical significance testing
-2. Cross-validation techniques
-3. Stability analysis
-4. False positive assessment
-
-Phase 3: PATTERN INTERPRETATION
-1. Contextual analysis
-2. Causal investigation
-3. Impact assessment
-4. Behavioral insights
-
-Phase 4: PATTERN APPLICATION
-1. Predictive modeling
-2. Alert system design
-3. Decision support
-4. Continuous learning
-
-DELIVER YOUR ANALYSIS AS:
-
-## COMPREHENSIVE PATTERN ANALYSIS REPORT
-
-### EXECUTIVE SUMMARY
-- **Primary Pattern**: {{pattern_description_significance_confidence}}
-- **Key Anomalies**: {{top_anomalies_severity_frequency}}
-- **Behavioral Insights**: {{human_system_behavior_patterns}}
-- **Predictive Signal**: {{future_pattern_probability_timeline}}
-- **Action Required**: {{immediate_monitoring_investigation_response}}
-
-### PATTERN LANDSCAPE
-
-#### Pattern Detection Overview
-```
-
-Multi-Dimensional Pattern Map:
-High Frequency
-│
-Cyclical │ Emergent
-Patterns │ Patterns
-●●●● │ ●●
-(Stable) │ (Growing)
-│
-─────────────────────────────────────────────
-│
-Baseline │ Anomalous
-Patterns │ Patterns
-●●●●●● │ ●
-(Expected) │ (Critical)
-│
-Low Frequency
-
-        Predictable ←────────→ Unpredictable
-
-Pattern Categories:
-□ Temporal: Time-based recurring patterns
-□ Spatial: Location/position patterns
-□ Behavioral: Action sequence patterns
-□ Network: Relationship patterns
-□ Composite: Multi-factor patterns
+## Prompt
 
 ```
+I'll help you identify patterns and anomalies in your data. Let me gather some information about what you're analyzing.
 
-#### Anomaly Detection Matrix
+About your data:
+1. What type of data are you analyzing? (user behavior, transactions, system metrics, etc.)
+2. What time period does your data cover?
+3. What's the data volume? (number of records, frequency)
+4. Are there known patterns you expect to see?
+
+Pattern detection goals:
+5. What patterns are you looking for? (trends, cycles, anomalies, correlations)
+6. What triggered this analysis? (performance issue, security concern, optimization need)
+7. What decisions will these patterns inform?
+8. How quickly do you need to detect patterns? (real-time, daily, weekly)
+
+Current situation:
+9. Have you noticed any unusual behavior recently?
+10. What are your normal baselines or benchmarks?
+11. What would constitute a critical anomaly?
+12. Who needs to be alerted when patterns are found?
+
+Based on your answers, I'll provide:
+
+**1. PATTERN IDENTIFICATION** - Key patterns found in your data
+**2. ANOMALY DETECTION** - Unusual behaviors and outliers
+**3. BEHAVIORAL INSIGHTS** - Understanding why patterns occur
+**4. PREDICTIVE SIGNALS** - What patterns suggest about the future
+**5. ACTION RECOMMENDATIONS** - What to do based on findings
+
+Please provide the information above to begin pattern analysis.
 ```
 
-Anomaly Severity Assessment:
-┌───────────────┬────────────┬───────────┬─────────────┐
-│ Anomaly Type │ Frequency │ Severity │ Action Req. │
-├───────────────┼────────────┼───────────┼─────────────┤
-│ Outlier Spike │ 3/day │ Critical │ Immediate │
-│ Pattern Break │ 1/week │ High │ 24 hours │
-│ Drift Signal │ Continuous │ Medium │ Monitor │
-│ Micro-anomaly │ 50/day │ Low │ Aggregate │
-└───────────────┴────────────┴───────────┴─────────────┘
+## Example Usage
 
-Detection Confidence:
-■■■■■■■□□□ 75% - High confidence
-False Positive Rate: 12%
-True Positive Rate: 88%
+**User Input:**
+```
+1. Data type: E-commerce user behavior - clicks, cart adds, purchases
+2. Time period: Last 90 days of data
+3. Volume: 500K users, 10M events, updated hourly
+4. Known patterns: Weekly cycles (Monday low, Friday high), seasonal trends
 
+5. Looking for: Sudden behavior changes, fraud patterns, conversion blockers
+6. Trigger: 20% drop in conversions last week, need to understand why
+7. Decisions: Where to focus optimization efforts, identify fraud risks
+8. Speed: Daily analysis with real-time alerts for critical issues
+
+9. Unusual behavior: Thursday evening conversions dropped 40% starting 2 weeks ago
+10. Normal baseline: 3.5% conversion rate, 5-min average session
+11. Critical anomaly: Fraud patterns, >30% metric deviation, system failures
+12. Alert: Product team for UX issues, security team for fraud
 ```
 
-### DETAILED PATTERN ANALYSIS
+**Assistant Output:**
 
-#### Pattern #1: Behavioral Cascade Effect
+Based on your e-commerce data analysis, I've identified several significant patterns and anomalies:
+
+## KEY PATTERNS IDENTIFIED
+
+### 1. Thursday Evening Anomaly - ROOT CAUSE FOUND
+
+**Pattern Details:**
+```
+Normal Thursday:    5PM   6PM   7PM   8PM   9PM   10PM
+Conversion Rate:    3.2%  3.5%  3.8%  3.6%  3.4%  3.1%
+
+Recent Thursday:    5PM   6PM   7PM   8PM   9PM   10PM  
+Conversion Rate:    3.1%  3.4%  2.1%  1.9%  2.0%  2.2%
+                              ↓ 45% drop ↓
 ```
 
-Pattern Profile:
-┌─────────────────────────────────────────────┐
-│ Pattern Name: User Engagement Cascade │
-│ Type: Behavioral-Temporal Composite │
-│ Confidence: 92% (Very High) │
-│ Frequency: Daily with weekly amplification │
-│ Impact: 35% variance in key metrics │
-├─────────────────────────────────────────────┤
-│ Pattern Signature: │
-│ Mon Tue Wed Thu Fri Sat Sun │
-│ ▂ ▃ ▅ ▇ █ ▅ ▃ │
-│ │
-│ Trigger → Response → Amplification │
-│ (2hr) (6hr) (24hr) │
-├─────────────────────────────────────────────┤
-│ Behavioral Components: │
-│ • Initial trigger: Influencer activity │
-│ • Cascade mechanism: Social proof │
-│ • Amplification: Network effects │
-│ • Decay pattern: 72-hour half-life │
-└─────────────────────────────────────────────┘
+**Root Cause:** Cognitive Load Pattern
+- Users exhibit high decision fatigue Thursday evenings
+- Competing activity detected: Major streaming releases at 7PM
+- Cart complexity increases 35% (users add more items but don't complete)
+- Mobile traffic spikes 60% (worse conversion device)
 
-Predictive Model:
-IF influencer_engagement > threshold
-AND time_of_day IN peak_hours
-AND network_density > 0.7
-THEN cascade_probability = 0.85
+### 2. Fraud Pattern Network Detected
 
-Expected Impact: +250% activity spike
-Duration: 72-96 hours
-Controllable: Partially (65%)
-
+**Suspicious Activity Cluster:**
+```
+Normal User:     Browse → Add → Checkout (15-20 min)
+                   ↓
+Fraud Pattern:   Browse → Add → Add → Add → Checkout (2-3 min)
+                   ↑        ↑     ↑     ↑
+                 [Same IP] [Odd amounts] [New accounts]
 ```
 
-#### Pattern #2: System Performance Degradation
+**Risk Indicators:**
+- 127 accounts showing triangular purchase patterns
+- Transaction velocity: 5x normal
+- Geographic anomaly: Purchases from 10+ locations/hour
+- Pattern matches 87% with known fraud networks
+
+### 3. Behavioral Cascade Effect
+
+**Influencer-Driven Spikes:**
+```
+Trigger Event → 2hr delay → 6hr peak → 24hr decay
+     ↓              ↓           ↓          ↓
+ Influencer    First wave   Mass adopt  Normalize
+   post        followers    network     baseline
 ```
 
-Multi-Scale Pattern Analysis:
+**Pattern Metrics:**
+- Occurs 2-3x per month
+- Average impact: +180% traffic, +250% sales
+- Predictable by social sentiment (82% accuracy)
+- Controllable through targeted promotions
 
-Micro-Pattern (Minutes):
-╱╲╱╲╱╲╱╲╱╲╱╲ ← Normal oscillation
-└─ Frequency: 5-min cycles
+## ANOMALY DETAILS
 
-Meso-Pattern (Hours):
-╱─────╲  
- ╱ ╲ ← Daily load pattern
-╱ ╲ └─ Peak: 2-4 PM
+### Critical Anomalies Found:
 
-Macro-Pattern (Days):
-╱────────╲
-╱│ Anomaly │╲ ← Weekly degradation
-╱ │ Building│ ╲ └─ Thursday onset
-╱ └──────────┘ ╲
+1. **Checkout Abandonment Spike**
+   - When: Thursdays 7-10 PM
+   - Severity: High (40% conversion loss)
+   - Cost: ~$125K weekly revenue impact
+   
+2. **Fraud Risk Cluster**
+   - Accounts: 127 suspicious
+   - Pattern confidence: 94%
+   - Potential loss: $50-80K
 
-Pattern Decomposition:
-Base Signal = Seasonal + Trend + Cyclical + Irregular
-= S(t) + T(t) + C(t) + I(t)
+3. **Mobile Performance Degradation**
+   - Page load: +2.3 seconds Thursday evenings
+   - Impact: 35% of abandonment explained
+   - Correlation: 0.89 with conversion drop
 
-Anomaly Score = |Observed - Expected| / σ
-Current Score: 3.2σ (Significant)
+## BEHAVIORAL INSIGHTS
 
-```
+### User Psychology Patterns:
 
-#### Pattern #3: Fraud Network Topology
-```
+**Morning (6-10 AM)**: Low cognitive load
+- Quick decisions, habit-driven
+- 78% repeat purchases
+- Best for: Simple offers, reminders
 
-Network Pattern Analysis:
-┌───┐
-┌────│ A │────┐
-│ └───┘ │
-▼ ▼
-┌───┐ ┌───┐
-│ B │◄────────│ C │
-└───┘ └───┘
-│ │
-▼ ▼
-┌───┐ ┌───┐
-│ D │────────►│ E │
-└───┘ └───┘
+**Afternoon (2-5 PM)**: Exploratory mode  
+- Research heavy, comparison shopping
+- 45% new product discovery
+- Best for: Detailed content, reviews
 
-Pattern Indicators:
-• Triangular fund flows
-• Time-synchronized transactions
-• Amount patterns: Split → Aggregate → Split
-• Velocity: 3x normal
-• Network density: Abnormally high
+**Evening (7-10 PM)**: Decision fatigue
+- High abandonment, complexity aversion
+- Mobile-heavy (worse UX)
+- Best for: Simplified experience
 
-Fraud Probability: 94%
-Pattern Matches: 7/8 known indicators
-Action: Flag for investigation
+## PREDICTIVE SIGNALS
+
+### Next 7 Days Forecast:
 
 ```
+Confidence Level:  High     Medium    Low
+                   (0-3d)   (4-7d)    (8-14d)
 
-### COGNITIVE PATTERN INSIGHTS
+Conversion Rate:   2.8%  →  3.1%  →  3.4%
+                   ±0.2%    ±0.4%     ±0.8%
 
-#### Behavioral Pattern Analysis
+Thursday Issue:    Persist → Improve → Resolve
+                   (90%)     (65%)     (40%)
 ```
 
-User Decision Pattern Framework:
+**Warning Signals:**
+- Fraud pattern acceleration detected
+- Mobile performance trending worse
+- Customer satisfaction declining (NPS -5 points)
 
-Cognitive Load States:
-┌─────────────────────────────────────────────┐
-│ Low Load → Quick decisions, habits │
-│ Medium Load → Deliberate choices │
-│ High Load → Decision paralysis/default │
-└─────────────────────────────────────────────┘
+## ACTION RECOMMENDATIONS
 
-Observed Patterns:
-Morning (Low Load):
-• 78% routine behaviors
-• 15 sec average decision time
-• High conversion rate
+### Immediate Actions (This Week):
 
-Afternoon (Medium Load):
-• 45% exploratory behaviors
-• 2 min average decision time
-• Moderate conversion
+1. **Fix Thursday Evening Experience**
+   - Implement "Express Checkout" for mobile
+   - Reduce form fields from 8 to 3
+   - Pre-fill saved information
+   - Expected recovery: +25% conversion
 
-Evening (High Load):
-• 65% abandonment rate
-• 5 min average decision time
-• Low conversion
+2. **Block Fraud Network**
+   - Flag 127 suspicious accounts
+   - Implement velocity checks
+   - Require additional verification
+   - Prevent ~$65K loss
 
-Optimization Opportunity:
-Simplify evening experience
-Expected improvement: +35% conversion
+3. **Optimize Mobile Performance**
+   - CDN for images (save 1.5s)
+   - Lazy load below fold
+   - Compress JavaScript bundles
+   - Target: <3s load time
 
-````
+### Strategic Actions (Next Month):
 
-#### Psychological Pattern Drivers
-```python
-# Behavioral Pattern Prediction Model
-def predict_user_behavior(context):
-    cognitive_factors = {
-        'social_proof': context['peer_activity'],
-        'loss_aversion': context['scarcity_signals'],
-        'anchoring': context['first_impression'],
-        'recency_bias': context['last_experience'],
-        'choice_overload': context['option_count']
-    }
+4. **Cognitive Load Management**
+   - A/B test simplified evening UI
+   - Smart defaults based on history
+   - Progressive disclosure for complex items
+   
+5. **Cascade Amplification**
+   - Identify next influencer event
+   - Prepare inventory and promos
+   - Real-time monitoring system
 
-    # Pattern weights based on historical data
-    weights = {
-        'social_proof': 0.35,
-        'loss_aversion': 0.25,
-        'anchoring': 0.20,
-        'recency_bias': 0.15,
-        'choice_overload': -0.10
-    }
-
-    behavior_score = sum(
-        cognitive_factors[k] * weights[k]
-        for k in cognitive_factors
-    )
-
-    return {
-        'action_probability': sigmoid(behavior_score),
-        'primary_driver': max(cognitive_factors, key=cognitive_factors.get),
-        'pattern_confidence': calculate_confidence(context)
-    }
-````
-
-### PREDICTIVE PATTERN MODELS
-
-#### Time Series Pattern Forecast
+### Monitoring Setup:
 
 ```
-Pattern Evolution Projection:
-
-Current State          Near Future         Far Future
-(Observed)            (1-7 days)          (30+ days)
-    │                     │                   │
-    ▼                     ▼                   ▼
- ╱╲╱╲╱╲              ╱╲  ╱╲  ╱╲         ╱─────╲
-╱  ╲╱  ╲            ╱  ╲╱  ╲╱  ╲       ╱       ╲
-        ╲          ╱            ╲     ╱         ╲
-         ╲╱╲      ╱              ╲╱╲╱           ╲╱
-
-Confidence: 85%        65%              35%
-
-Key Inflection Points:
-• Day 3: Pattern amplification likely
-• Day 7: Potential regime change
-• Day 14: New equilibrium expected
+Alert Thresholds:
+├── Conversion Rate: <2.5% → Immediate alert
+├── Fraud Score: >0.8 → Security team
+├── Page Load: >4s → Engineering team
+└── Cascade Signal: Detected → Marketing team
 ```
 
-#### Pattern-Based Alert System
-
-```
-Alert Configuration Matrix:
-┌─────────────────┬──────────┬───────────┬──────────┐
-│ Pattern Type    │ Threshold│ Alert     │ Action   │
-├─────────────────┼──────────┼───────────┼──────────┤
-│ Anomaly Spike   │ >3σ      │ Immediate │ Investigate│
-│ Pattern Break   │ >2σ      │ 1 hour    │ Monitor  │
-│ Trend Shift     │ >20%     │ Daily     │ Analyze  │
-│ Cascade Start   │ Detected │ Real-time │ Prepare  │
-│ Network Anomaly │ >0.8     │ Immediate │ Block    │
-└─────────────────┴──────────┴───────────┴──────────┘
-
-Current Active Alerts: 3
-- Anomaly Spike in Region A (4.2σ)
-- Pattern Break in User Segment X
-- Network Anomaly Score 0.85
-```
-
-### PATTERN APPLICATIONS
-
-#### Decision Support Framework
-
-```
-Pattern-Driven Recommendations:
-
-IF cascade_pattern_detected
-AND sentiment_positive
-THEN recommend: "Amplify with promotion"
-     confidence: 85%
-     expected_roi: 3.2x
-
-IF degradation_pattern_emerging
-AND time_to_critical < 48hrs
-THEN recommend: "Preventive maintenance"
-     confidence: 78%
-     cost_avoidance: $125K
-
-IF fraud_pattern_match > 0.9
-AND network_risk_high
-THEN recommend: "Immediate suspension"
-     confidence: 94%
-     loss_prevention: $50-500K
-```
-
-#### Continuous Learning System
-
-```
-Pattern Learning Pipeline:
-
-New Data → Feature Extract → Pattern Match → Validate
-    ↑                                            │
-    └──────── Model Update ←─── Feedback ←───────┘
-
-Learning Metrics:
-• New patterns discovered: 12 this month
-• Pattern accuracy improvement: +15%
-• False positive reduction: -30%
-• Model drift detected: No
-• Retraining recommended: 30 days
-```
-
-### IMPLEMENTATION GUIDE
-
-#### Pattern Detection Setup
-
-```
-System Requirements:
-┌─────────────────────────────────────────────┐
-│ Data Pipeline:                              │
-│ • Ingestion rate: 100K events/second       │
-│ • Processing latency: <500ms               │
-│ • Storage: 90-day rolling window           │
-├─────────────────────────────────────────────┤
-│ Analytics Engine:                           │
-│ • Real-time pattern matching               │
-│ • Multi-dimensional analysis               │
-│ • Anomaly scoring algorithms               │
-├─────────────────────────────────────────────┤
-│ Alert System:                               │
-│ • Configurable thresholds                  │
-│ • Multi-channel notifications              │
-│ • Escalation workflows                     │
-└─────────────────────────────────────────────┘
-```
-
-#### Monitoring Dashboard
-
-```
-Pattern Recognition Dashboard:
-┌─────────────────────────────────────────────┐
-│ PATTERN DETECTION STATUS: ● ACTIVE          │
-├─────────────────────────────────────────────┤
-│ Patterns Detected Today: 127               │
-│ Anomalies Flagged: 13                      │
-│ Predictions Made: 89                       │
-│ Accuracy Rate: 87.3%                       │
-├─────────────────────────────────────────────┤
-│ Top Active Patterns:                        │
-│ 1. User Cascade - Building (Score: 0.72)   │
-│ 2. System Load - Normal (Score: 0.15)      │
-│ 3. Fraud Risk - Monitoring (Score: 0.43)   │
-└─────────────────────────────────────────────┘
-
-[View Details] [Configure Alerts] [Export Data]
-```
-
-### APPENDICES
-
-#### A. Pattern Detection Algorithms
-
-[Mathematical foundations, implementation details]
-
-#### B. Statistical Validation Methods
-
-[Significance testing, cross-validation approaches]
-
-#### C. Industry Pattern Benchmarks
-
-[Common patterns by domain, typical parameters]
-
-#### D. Cognitive Bias Reference
-
-[How biases create detectable patterns]
-
-```
-
-## Usage Instructions
-1. Define your data domain and pattern types clearly
-2. Specify known baseline patterns for comparison
-3. Set appropriate anomaly tolerance levels
-4. Provide business context for impact assessment
-5. Use detected patterns for predictive modeling
-6. Implement continuous learning feedback loops
-7. Regular review and threshold adjustment
-8. Document new pattern discoveries
-
-## Examples
-### Example 1: E-commerce Behavior Patterns
-**Input**:
-```
-
-{{data_domain}}: E-commerce user behavior and transactions
-{{pattern_types}}: Temporal purchasing, cart abandonment, fraud
-{{analysis_objective}}: Detect unusual patterns for optimization and security
-{{known_patterns}}: Weekly cycles, seasonal trends, normal user flows
-{{specific_patterns}}: Why do conversions drop Thursday evenings?
-
-```
-
-**Output**: [Comprehensive analysis revealing cognitive load patterns, identifying Thursday evening news consumption habits creating decision fatigue, with specific UX simplification recommendations]
+Would you like me to dive deeper into any specific pattern or set up real-time monitoring rules?
 
 ## Related Prompts
-- [Anomaly Detection Specialist](/prompts/analysis/anomaly-detection-specialist.md)
-- [Predictive Analytics Expert](/prompts/analysis/predictive-analytics-expert.md)
-- [Behavioral Analysis Expert](/prompts/analysis/behavioral-analysis-expert.md)
 
-## Research Notes
-- Combines statistical pattern detection with cognitive science
-- Emphasizes both technical patterns and human behavioral drivers
-- Includes real-time detection and predictive capabilities
-- Provides practical alert and response frameworks
-- Integrates continuous learning for pattern evolution
-```
+- [Anomaly Detection Specialist](./anomaly-detection-specialist.md)
+- [Behavioral Analysis Expert](./behavioral-analysis-expert.md)  
+- [Predictive Analytics Expert](./predictive-analysis-expert.md)

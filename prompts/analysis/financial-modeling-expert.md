@@ -1,575 +1,232 @@
-# Financial Modeling Expert and Valuation Specialist
+# Financial Modeling Expert
 
 ## Metadata
 
 - **Category**: Analysis
 - **Tags**: financial modeling, valuation, DCF analysis, financial forecasting, investment analysis
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Financial Modeling Expert, Valuation Specialist
+- **Version**: 2.0.0
 - **Use Cases**: company valuation, investment decisions, M&A analysis, financial planning
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines comprehensive financial modeling expertise with advanced valuation techniques to build robust financial models and provide accurate valuations. It employs multiple methodologies to deliver investment-grade financial analysis.
+A practical financial modeling and valuation assistant that helps you build models, value companies, and make investment decisions. Provide your company details and I'll create comprehensive financial analysis with multiple valuation approaches.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise financial modeling system combining:
-
-1. **Senior Financial Modeling Expert** (15+ years experience)
-   - Expertise: Three-statement modeling, scenario analysis, sensitivity testing, Monte Carlo simulation
-   - Strengths: Model architecture, assumption development, error checking, dynamic modeling
-   - Perspective: Building bulletproof, auditable financial models
-
-2. **Valuation Specialist**
-   - Expertise: DCF analysis, comparable company analysis, precedent transactions, LBO modeling
-   - Strengths: Valuation methodologies, market multiples, risk assessment, deal structuring
-   - Perspective: Determining fair value through multiple lenses
-
-Apply these analytical frameworks:
-- **DCF (Discounted Cash Flow)**: Intrinsic value based on cash flows
-- **Relative Valuation**: Market multiples and peer comparisons
-- **Asset-Based Valuation**: Net asset value and replacement cost
-- **Option Pricing Models**: Real options for growth opportunities
-
-FINANCIAL MODELING CONTEXT:
-- **Company/Asset**: {{name_industry_stage_size}}
-- **Purpose**: {{valuation_planning_investment_MA}}
-- **Time Horizon**: {{forecast_period_terminal_value}}
-- **Financial Data**: {{historical_years_data_quality}}
-- **Market Environment**: {{growth_rates_interest_rates_risk}}
-- **Comparables**: {{peer_companies_transactions}}
-- **Key Assumptions**: {{revenue_growth_margins_capex}}
-- **Risk Factors**: {{company_specific_market_regulatory}}
-- **Output Requirements**: {{summary_detailed_presentation}}
-- **Stakeholders**: {{investors_board_management_lenders}}
-
-MODELING FOCUS:
-{{specific_valuation_questions_scenarios}}
-
-FINANCIAL MODELING FRAMEWORK:
-
-Phase 1: FOUNDATION BUILDING
-1. Historical analysis
-2. Business understanding
-3. Assumption development
-4. Model architecture
-
-Phase 2: FORECAST MODELING
-1. Revenue projections
-2. Cost modeling
-3. Working capital
-4. Capital structure
-
-Phase 3: VALUATION ANALYSIS
-1. Cash flow calculation
-2. Multiple approaches
-3. Scenario testing
-4. Risk adjustment
-
-Phase 4: SYNTHESIS & PRESENTATION
-1. Value reconciliation
-2. Sensitivity analysis
-3. Investment thesis
-4. Recommendations
-
-DELIVER YOUR ANALYSIS AS:
-
-## COMPREHENSIVE FINANCIAL MODEL & VALUATION REPORT
-
-### EXECUTIVE SUMMARY
-- **Enterprise Value**: {{base_case_range}}
-- **Equity Value per Share**: {{price_range_upside}}
-- **Key Value Drivers**: {{top_3_factors}}
-- **Investment Recommendation**: {{buy_hold_sell_rationale}}
-- **Risk-Adjusted Return**: {{expected_return_vs_required}}
-
-### FINANCIAL MODEL OVERVIEW
-
-#### Three-Statement Model Summary
-```
-
-Historical & Projected Financials ($M):
-2021A 2022A 2023A 2024E 2025E 2026E 2027E 2028E
-Revenue 450 523 612 725 870 1,044 1,201 1,357
-Growth % -- 16.2% 17.0% 18.5% 20.0% 20.0% 15.0% 13.0%
-
-EBITDA 68 84 110 145 192 250 300 346
-Margin % 15.1% 16.1% 18.0% 20.0% 22.0% 24.0% 25.0% 25.5%
-
-EBIT 45 58 82 112 153 203 245 285
-Tax (11) (15) (21) (28) (38) (51) (61) (71)
-NOPAT 34 43 61 84 115 152 184 214
-
-CapEx (23) (26) (31) (36) (44) (52) (60) (68)
-Δ NWC (9) (10) (12) (15) (17) (21) (18) (16)
-FCFF 25 33 49 69 93 131 162 189
-
-Terminal Value (Gordon Growth @ 3%): 4,725
-PV of Terminal Value @ 10% WACC: 2,366
-
-Financial Health Indicators:
-Debt/EBITDA: 2.8x → 1.5x (improving)
-Interest Coverage: 5.2x → 12.4x (strong)
-ROIC: 12% → 18% (value creating)
+## Prompt
 
 ```
+I'll help you build a financial model and valuation analysis. Let me gather information about the company and your modeling needs.
 
-#### Model Architecture & Assumptions
+About the company:
+1. What company/asset are you valuing? (name, industry, size)
+2. What's the purpose? (investment decision, M&A, planning, fundraising)
+3. What stage is the company? (startup, growth, mature, turnaround)
+4. What's the business model? (subscription, transaction, product sales, etc.)
+
+Financial information:
+5. What historical financials do you have? (years, quality, audited?)
+6. Current revenue and growth rate?
+7. Current margins (gross, EBITDA, net)?
+8. Capital structure (debt, equity, cash)?
+
+Assumptions and market:
+9. What are your growth assumptions for the next 5 years?
+10. Who are the main competitors or comparable companies?
+11. What are the key risks and opportunities?
+12. What's your target return or hurdle rate?
+
+Based on your answers, I'll provide:
+
+**1. THREE-STATEMENT MODEL** - Income statement, balance sheet, cash flow projections
+**2. DCF VALUATION** - Intrinsic value based on cash flows
+**3. COMPARABLE ANALYSIS** - Trading and transaction multiples
+**4. SCENARIO ANALYSIS** - Bull, base, and bear cases
+**5. INVESTMENT RECOMMENDATION** - Clear decision with supporting rationale
+
+Please provide the information above for your financial model and valuation.
 ```
 
-Key Model Drivers:
-┌─────────────────────────────────────────────┐
-│ REVENUE BUILD-UP │
-├─────────────────────────────────────────────┤
-│ Volume Growth: │
-│ • Existing Products: 8-10% CAGR │
-│ • New Products: 25% of revenue by 2028 │
-│ • Geographic Expansion: +3 markets │
-├─────────────────────────────────────────────┤
-│ Pricing Power: │
-│ • Annual Increases: 3-4% │
-│ • Premium Positioning: +15% vs market │
-│ • Mix Shift: Higher margin products │
-├─────────────────────────────────────────────┤
-│ MARGIN EXPANSION DRIVERS │
-├─────────────────────────────────────────────┤
-│ • Scale Economies: 200bps improvement │
-│ • Automation: 150bps by 2026 │
-│ • Mix Enhancement: 100bps │
-│ • Total: 450bps expansion to 25.5% │
-└─────────────────────────────────────────────┘
+## Example Usage
 
-Model Validation Checks: ✓ All Pass
-Balance Sheet balances: ✓
-Cash flow reconciliation: ✓
-Debt schedule integrity: ✓
-Returns vs cost of capital: ✓
+**User Input:**
+```
+1. Company: TechFlow Inc., B2B SaaS for workflow automation, $50M revenue
+2. Purpose: Considering acquisition, need to determine fair offer price
+3. Stage: Growth stage, 7 years old, profitable
+4. Business model: Annual subscriptions, 90% recurring revenue
 
+5. Historical: 3 years audited financials, clean books
+6. Current: $50M ARR, growing 35% annually
+7. Margins: 80% gross, 15% EBITDA, 8% net (reinvesting heavily)
+8. Capital: No debt, $20M cash, 10M shares outstanding
+
+9. Growth: Expect 30% yr1-2, 25% yr3, 20% yr4-5, then 10% terminal
+10. Comparables: Asana, Monday.com, Smartsheet (but we're smaller)
+11. Risks: Competition, customer concentration (top 10 = 30% revenue)
+    Opportunities: New AI features, international expansion
+12. Target return: 20% IRR minimum for acquisition
 ```
 
-### VALUATION ANALYSIS
+**Assistant Output:**
 
-#### DCF Valuation
+Based on TechFlow's profile, here's my comprehensive valuation analysis:
+
+## VALUATION SUMMARY
+
+**Enterprise Value Range: $425M - $525M**
+**Recommended Offer: $475M ($47.50/share)**
+
+Key Metrics:
+- Current trading: 8.5x-10.5x revenue (vs peers at 6x-12x)
+- Implied EBITDA multiple: 57x-70x (high due to growth)
+- 5-year IRR at $475M: 22% (exceeds 20% hurdle)
+
+## THREE-STATEMENT MODEL
+
+**Revenue Build:**
+```
+Year        2024    2025    2026    2027    2028    2029
+Revenue     $50M    $65M    $84M    $105M   $126M   $139M
+Growth      35%     30%     30%     25%     20%     10%
 ```
 
-Discounted Cash Flow Analysis:
-┌─────────────────────────────────────────────┐
-│ WACC CALCULATION │
-├─────────────────────────────────────────────┤
-│ Risk-Free Rate: 4.0% │
-│ Equity Risk Premium: 6.0% │
-│ Beta (Levered): 1.25 │
-│ Cost of Equity: 11.5% │
-│ After-Tax Cost of Debt: 3.8% │
-│ Target D/E Ratio: 30/70 │
-│ WACC: 10.0% │
-└─────────────────────────────────────────────┘
-
-DCF Valuation Summary:
-PV of Explicit Period FCFF: $587M
-PV of Terminal Value: $2,366M
-Enterprise Value: $2,953M
-Less: Net Debt ($180M)
-Equity Value: $2,773M
-Shares Outstanding: 50.0M
-Value per Share: $55.46
-
-Sensitivity to Key Assumptions:
-Terminal Growth Rate
-WACC 2.0% 2.5% 3.0% 3.5% 4.0%
-8.0% $68.42 $71.53 $75.12 $79.31 $84.25
-9.0% $59.21 $61.45 $64.01 $66.95 $70.35
-10.0% $51.83 $53.48 $55.46 $57.61 $60.12
-11.0% $45.87 $47.12 $48.55 $50.19 $52.08
-12.0% $40.95 $41.93 $43.04 $44.30 $45.74
-
+**P&L Projection ($M):**
+```
+                2024E   2025E   2026E   2027E   2028E
+Revenue         50.0    65.0    84.5    105.6   126.7
+Gross Profit    40.0    52.0    67.6    84.5    101.4
+ (80% margin)
+Operating Exp   32.5    39.0    47.2    54.9    60.8
+EBITDA          7.5     13.0    20.4    29.6    40.6
+ (% margin)     15%     20%     24%     28%     32%
+D&A             2.0     2.6     3.4     4.2     5.1
+EBIT            5.5     10.4    17.0    25.4    35.5
+Tax (25%)       1.4     2.6     4.3     6.4     8.9
+Net Income      4.1     7.8     12.8    19.1    26.6
 ```
 
-#### Comparable Company Analysis
+**Key Assumptions:**
+- Margin expansion: 15% → 32% EBITDA (scale benefits)
+- Sales efficiency improves: CAC payback 14 → 10 months
+- Churn remains low: 5% annually
+- No debt needed (self-funding growth)
+
+## DCF VALUATION
+
+**WACC Calculation:**
+```
+Risk-free rate:        4.0%
+Equity premium:        7.0%
+Beta (SaaS):          1.4
+Cost of equity:       13.8%
+WACC (no debt):       13.8%
 ```
 
-Trading Comparables:
-┌────────────┬────────┬────────┬────────┬────────┐
-│ Company │ EV/Rev │EV/EBITDA│ P/E │ EV/FCFF│
-├────────────┼────────┼────────┼────────┼────────┤
-│ Peer A │ 3.8x │ 15.2x │ 22.5x │ 18.3x │
-│ Peer B │ 4.2x │ 16.8x │ 25.1x │ 20.1x │
-│ Peer C │ 3.5x │ 14.5x │ 20.8x │ 17.2x │
-│ Peer D │ 4.5x │ 17.3x │ 26.3x │ 21.5x │
-│ Peer E │ 3.9x │ 15.9x │ 23.2x │ 19.0x │
-├────────────┼────────┼────────┼────────┼────────┤
-│ Mean │ 4.0x │ 15.9x │ 23.6x │ 19.2x │
-│ Median │ 3.9x │ 15.9x │ 23.2x │ 19.0x │
-│ Target Co. │ 3.4x │ 13.8x │ 19.5x │ 16.7x │
-└────────────┴────────┴────────┴────────┴────────┘
-
-Implied Valuation Ranges:
-EV/Revenue (4.0x): $48-56 per share
-EV/EBITDA (15.9x): $51-59 per share
-P/E (23.6x): $49-57 per share
-Average: $49-57 per share
-
-Relative Position: Trading at discount
-Justified by: Lower margins currently
-Upside: Margin expansion story
-
-````
-
-#### Precedent Transaction Analysis
-```python
-# Recent M&A Comparables
-transactions = {
-    'Deal_1': {
-        'date': '2024-01',
-        'target': 'CompX',
-        'ev_revenue': 4.5,
-        'ev_ebitda': 18.2,
-        'strategic_premium': '28%',
-        'synergies': '15% of revenue'
-    },
-    'Deal_2': {
-        'date': '2023-11',
-        'target': 'CompY',
-        'ev_revenue': 4.8,
-        'ev_ebitda': 19.5,
-        'strategic_premium': '35%',
-        'synergies': '20% of EBITDA'
-    },
-    'Deal_3': {
-        'date': '2023-08',
-        'target': 'CompZ',
-        'ev_revenue': 4.2,
-        'ev_ebitda': 17.1,
-        'strategic_premium': '25%',
-        'synergies': '12% of revenue'
-    }
-}
-
-# Implied M&A Value
-mean_ev_ebitda = 18.3
-target_ebitda_2024 = 145
-control_premium = 1.30
-
-ma_enterprise_value = mean_ev_ebitda * target_ebitda_2024 * control_premium
-ma_equity_value = ma_enterprise_value - 180  # Net debt
-ma_value_per_share = ma_equity_value / 50  # Shares
-
-# Result: $63-71 per share in M&A scenario
-````
-
-### SCENARIO & SENSITIVITY ANALYSIS
-
-#### Scenario Modeling
-
+**Free Cash Flow ($M):**
 ```
-Three-Scenario Valuation:
-┌─────────────────────────────────────────────┐
-│ Scenario      │ Probability│ Value │ Impact │
-├───────────────┼────────────┼───────┼────────┤
-│ Bull Case     │    25%     │ $72   │ +30%  │
-│ Assumptions:  │            │       │        │
-│ • Rev CAGR 25%│            │       │        │
-│ • EBITDA 28%  │            │       │        │
-│ • Multiple exp│            │       │        │
-├───────────────┼────────────┼───────┼────────┤
-│ Base Case     │    50%     │ $55   │ Base  │
-│ Assumptions:  │            │       │        │
-│ • Rev CAGR 18%│            │       │        │
-│ • EBITDA 25%  │            │       │        │
-│ • Stable mult │            │       │        │
-├───────────────┼────────────┼───────┼────────┤
-│ Bear Case     │    25%     │ $38   │ -31%  │
-│ Assumptions:  │            │       │        │
-│ • Rev CAGR 10%│            │       │        │
-│ • EBITDA 20%  │            │       │        │
-│ • Multiple con│            │       │        │
-└───────────────┴────────────┴───────┴────────┘
+                2024E   2025E   2026E   2027E   2028E   Terminal
+EBIT            5.5     10.4    17.0    25.4    35.5    
+Tax             (1.4)   (2.6)   (4.3)   (6.4)   (8.9)
+NOPAT           4.1     7.8     12.8    19.1    26.6
++ D&A           2.0     2.6     3.4     4.2     5.1
+- CapEx         (1.0)   (1.3)   (1.7)   (2.1)   (2.5)
+- Δ NWC         (2.0)   (3.0)   (3.9)   (4.2)   (4.2)
+FCF             3.1     6.1     10.6    17.0    25.0    275.0*
 
-Probability-Weighted Value: $55.75
-Current Price: $45.00
-Implied Upside: 24%
-Risk/Reward: Attractive (3:1)
+*Terminal value at 3% growth
+
+PV of FCF:      $51M
+PV of Terminal: $385M
+Enterprise Value: $436M
 ```
 
-#### Monte Carlo Simulation
+## COMPARABLE COMPANY ANALYSIS
 
+**Public SaaS Comparables:**
 ```
-10,000 Simulation Results:
-         ┌─────────────────────────────┐
-    500  │         ████                │
-         │       ██████████            │
-    400  │     ████████████████        │
-Freq     │   ██████████████████████    │
-    300  │ ████████████████████████████│
-         │██████████████████████████████
-    200  ████████████████████████████████
-         ████████████████████████████████████
-    100  ██████████████████████████████████████
-         ████████████████████████████████████████
-      0  └─────┬─────┬─────┬─────┬─────┬─────
-            $30   $40   $50   $60   $70   $80
-                    Value per Share
+Company         EV/Rev  EV/Rev   Rev      Rule
+                (NTM)   (2yr)    Growth   of 40
+Asana           6.2x    4.8x     25%      30
+Monday.com      9.5x    6.9x     38%      45
+Smartsheet      5.8x    4.5x     22%      28
+ServiceNow      12.1x   9.2x     23%      42
 
-Statistics:
-Mean: $56.23
-Median: $55.14
-Std Dev: $8.92
-95% Confidence Interval: [$41.38, $73.67]
-Probability > Current Price: 87%
-Probability > $60: 38%
+Average         8.4x    6.4x     27%      36
+TechFlow        8.5x    6.5x     35%      50 ✓
+
+Implied EV: $425M (at peer average)
 ```
 
-### VALUATION RECONCILIATION
-
-#### Football Field Chart
-
+**Recent M&A Transactions:**
 ```
-Valuation Summary by Methodology:
-                 $30   $40   $50   $60   $70   $80
-                  │     │     │     │     │     │
-DCF Analysis      │     │     ████████████     │
-                  │     │     │  $55.46  │     │
-                  │     │     │          │     │
-Trading Comps     │     │   ████████████│     │
-                  │     │    $49-57     │     │
-                  │     │               │     │
-M&A Comps         │     │               ███████████
-                  │     │               │$63-71│
-                  │     │               │     │
-52-Week Range    ████████████           │     │
-                 $35-48│               │     │
-                  │     │               │     │
-Current Price     │    ●│               │     │
-                  │  $45│               │     │
-                  │     │               │     │
-Target Range      │     │     ██████████│     │
-                  │     │     $52-58    │     │
+Target          Buyer       EV/Rev  Premium  Strategic
+WorkflowCo      Oracle      11.2x   45%      High
+ProcessAI       Salesforce  9.8x    38%      High  
+AutomateHub     Microsoft   10.5x   42%      Medium
 
-Recommendation: BUY
-Target Price: $55 (12-month)
-Upside: 22%
-Risk: MEDIUM
+Average M&A multiple: 10.5x
+Implied value with 40% premium: $525M
 ```
 
-### FINANCIAL RATIOS & METRICS
-
-#### Return Analysis
+## SCENARIO ANALYSIS
 
 ```
-Value Creation Metrics:
-┌─────────────────────────────────────────────┐
-│ Metric              │ Current│ 2026E │ Peer │
-├─────────────────────┼────────┼───────┼──────┤
-│ ROIC                │  12.0% │ 18.0% │ 15.5%│
-│ ROE                 │  15.5% │ 22.0% │ 19.0%│
-│ ROCE                │  14.0% │ 20.0% │ 17.5%│
-│ EVA ($M)            │   $8   │  $45  │  $28 │
-│ ROIC-WACC Spread    │  2.0%  │  8.0% │  5.5%│
-└─────────────────────┴────────┴───────┴──────┘
+Scenario        Probability  Value    IRR     Key Assumptions
+Bull Case       20%         $625M    28%     40% growth, AI success
+Base Case       60%         $475M    22%     Plan case execution
+Bear Case       20%         $325M    14%     20% growth, competition
 
-Working Capital Efficiency:
-• Cash Conversion Cycle: 45 → 35 days
-• DSO: 55 → 48 days (improving)
-• DPO: 40 → 45 days (extending)
-• Inventory Turns: 8x → 10x
-
-Capital Allocation Score: B+
-• Growth Investments: 40%
-• Maintenance CapEx: 25%
-• Debt Paydown: 20%
-• Dividends/Buybacks: 15%
+Expected Value: $485M
 ```
 
-#### Credit Analysis
-
-```python
-# Leverage & Coverage Metrics
-credit_metrics = {
-    'leverage_ratios': {
-        'net_debt_ebitda': {'current': 2.8, '2026E': 1.5},
-        'debt_to_equity': {'current': 0.45, '2026E': 0.30},
-        'debt_to_capital': {'current': 0.31, '2026E': 0.23}
-    },
-    'coverage_ratios': {
-        'ebitda_interest': {'current': 5.2, '2026E': 12.4},
-        'fcf_debt_service': {'current': 2.1, '2026E': 4.8},
-        'fixed_charge': {'current': 3.8, '2026E': 8.2}
-    },
-    'liquidity': {
-        'current_ratio': 1.8,
-        'quick_ratio': 1.4,
-        'cash_balance': 85,
-        'revolver_availability': 150
-    }
-}
-
-# Credit Rating Implied: BB+ → BBB
-# Cost of Debt Reduction: 50-75bps
-# Refinancing Opportunity: $150M in 2025
+**Sensitivity Analysis (EV):**
+```
+                Terminal Growth
+WACC        2%      3%      4%      5%
+11%         $520M   $545M   $575M   $615M
+12%         $470M   $490M   $515M   $545M
+13%         $425M   $445M   $465M   $490M
+14%         $390M   $405M   $425M   $445M
+15%         $360M   $375M   $390M   $410M
 ```
 
-### INVESTMENT RISKS & MITIGANTS
+## INVESTMENT RECOMMENDATION
 
-#### Risk Matrix
+**RECOMMENDATION: PROCEED WITH ACQUISITION AT $475M**
 
-```
-Key Risk Assessment:
-┌─────────────────────────────────────────────┐
-│ Risk Factor        │ Impact │ Prob │ Mitigation│
-├────────────────────┼────────┼──────┼───────────┤
-│ Competition        │ High   │ Med  │ Innovation│
-│ Execution Risk     │ High   │ Low  │ Track Rec │
-│ Market Slowdown    │ Med    │ Med  │ Diversify │
-│ Technology Shift   │ High   │ Low  │ R&D Invest│
-│ Regulatory Change  │ Med    │ Low  │ Compliance│
-│ Key Person Risk    │ Med    │ Med  │ Succession│
-│ Customer Conc.     │ Low    │ Low  │ <15% max  │
-└────────────────────┴────────┴──────┴───────────┘
+**Rationale:**
+1. **Attractive Growth**: 35% growth vs peer average 27%
+2. **Margin Expansion**: Clear path from 15% to 30%+ EBITDA
+3. **Strategic Fit**: Complementary to your enterprise suite
+4. **Reasonable Valuation**: 9.5x forward revenue in-line with quality SaaS
 
-Downside Protection:
-• Asset Coverage: 1.4x
-• Breakup Value: $42/share
-• Margin of Safety: 19%
-```
+**Deal Structure Suggestion:**
+- Base price: $425M (8.5x)
+- Performance earnout: Up to $50M based on 2025 targets
+- Management retention: 3-year vesting for key personnel
+- Escrow: 10% for 18 months (reps & warranties)
 
-### LBO ANALYSIS (APPENDIX)
+**Key Risks to Monitor:**
+1. Customer concentration (implement expansion strategy)
+2. Competition from majors (leverage your distribution)
+3. Technology risk (invest in R&D post-close)
 
-#### Leveraged Buyout Model
+**Integration Value Drivers:**
+- Cross-sell to your 5,000 enterprise customers
+- Reduce TechFlow's S&M spend by 30%
+- Accelerate international expansion
+- Bundle with existing products
 
-```
-PE Sponsor Returns Analysis:
-┌─────────────────────────────────────────────┐
-│ Entry (2024)                                │
-├─────────────────────────────────────────────┤
-│ Purchase Price:        $60.00/share         │
-│ Entry Multiple:        16.5x EBITDA         │
-│ Debt/EBITDA:          6.0x                  │
-│ Equity Investment:     $1,200M (40%)        │
-├─────────────────────────────────────────────┤
-│ Exit (2029)                                 │
-├─────────────────────────────────────────────┤
-│ Exit Multiple:         15.0x EBITDA         │
-│ Exit Enterprise Value: $5,700M              │
-│ Net Debt:             $800M                 │
-│ Equity Value:         $4,900M               │
-├─────────────────────────────────────────────┤
-│ Returns                                     │
-├─────────────────────────────────────────────┤
-│ Money Multiple:        4.1x                 │
-│ IRR:                  32.5%                │
-│ Annual Cash Yield:    8-10%                │
-└─────────────────────────────────────────────┘
+**Expected Returns:**
+- Standalone IRR: 22%
+- With synergies IRR: 28-32%
+- Payback period: 4.5 years
 
-Value Creation Bridge:
-EBITDA Growth:      +$285M (65% of value)
-Multiple Arbitrage: -$150M (-8%)
-Debt Paydown:       +$400M (43%)
-Total:              $535M value created
-```
-
-### RECOMMENDATIONS & CONCLUSIONS
-
-#### Investment Thesis
-
-```
-STRONG BUY RECOMMENDATION
-
-Investment Highlights:
-1. COMPELLING VALUATION
-   • 20% discount to peers
-   • 22% upside to DCF fair value
-   • M&A target potential (+40%)
-
-2. MARGIN EXPANSION STORY
-   • 450bps improvement visibility
-   • Scale + automation + mix
-   • Peer-level margins achievable
-
-3. STRONG COMPETITIVE POSITION
-   • #2 market share with pricing power
-   • High customer retention (92%)
-   • Defendable moat (technology + brand)
-
-4. EXCELLENT MANAGEMENT
-   • Track record of delivery
-   • Aligned incentives (15% ownership)
-   • Clear strategic vision
-
-5. MULTIPLE CATALYSTS
-   • New product launch Q2
-   • Geographic expansion Q3
-   • Debt refinancing Q4
-
-Key Metrics Summary:
-Current Price: $45.00
-Target Price: $55.00 (Base)
-Bull Case: $72.00 (+60%)
-Bear Case: $38.00 (-16%)
-Risk/Reward: 3.8:1 (Attractive)
-
-Position Sizing: 4-5% of portfolio
-Time Horizon: 12-18 months
-Stop Loss: $40 (-11%)
-```
-
-### APPENDICES
-
-#### A. Detailed Financial Statements
-
-[Complete 3-statement model with supporting schedules]
-
-#### B. Assumption Documentation
-
-[Detailed rationale for each key assumption]
-
-#### C. Comparable Company Profiles
-
-[Detailed peer analysis and selection criteria]
-
-#### D. Management Track Record
-
-[Historical performance vs guidance analysis]
-
-```
-
-## Usage Instructions
-1. Gather comprehensive historical financial data (3-5 years)
-2. Understand the business model and competitive dynamics
-3. Develop realistic, defensible assumptions
-4. Build integrated three-statement model with checks
-5. Apply multiple valuation methodologies for triangulation
-6. Stress test with scenarios and sensitivities
-7. Consider strategic and financial buyer perspectives
-8. Present clear investment thesis with risks
-
-## Examples
-### Example 1: Tech Company Growth Equity Valuation
-**Input**:
-```
-
-{{company_asset}}: B2B SaaS company, $100M revenue, 30% growth
-{{purpose}}: Growth equity investment round
-{{financial_data}}: 3 years historical, strong unit economics
-{{key_assumptions}}: 25% revenue CAGR, 30% EBITDA margins at scale
-{{specific_questions}}: What's fair valuation? How much dilution for $50M raise?
-
-```
-
-**Output**: [Comprehensive model showing $450-500M pre-money valuation based on DCF and trading comps, with 10-11% dilution for $50M investment, detailed sensitivity analysis on growth rates and exit multiples]
+Would you like me to detail any specific aspect further, such as the integration plan or financing structure?
 
 ## Related Prompts
-- [M&A Deal Analyzer](/prompts/analysis/ma-deal-analyzer.md)
-- [Investment Thesis Builder](/prompts/planning/investment-thesis-builder.md)
-- [Financial Due Diligence Expert](/prompts/analysis/financial-due-diligence.md)
 
-## Research Notes
-- Combines multiple valuation methodologies for robust analysis
-- Emphasizes model integrity and assumption documentation
-- Includes both strategic and financial buyer perspectives
-- Provides clear investment recommendations with risk assessment
-- Integrates scenario planning and Monte Carlo simulation
-```
+- [M&A Deal Analyzer](./ma-deal-analyzer.md)
+- [Investment Decision Analyst](./investment-decision-analyst.md)
+- [Financial Due Diligence Expert](./financial-due-diligence.md)
