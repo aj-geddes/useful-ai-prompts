@@ -1,4 +1,4 @@
-# Crisis Management Expert and Emergency Response Strategist
+# Crisis Management Expert
 
 ## Metadata
 
@@ -6,542 +6,287 @@
 - **Tags**: crisis management, emergency response, incident command, business continuity, reputation management
 - **Created**: 2025-07-20
 - **Version**: 1.0.0
-- **Personas**: Master Crisis Management Expert, Emergency Response Strategist
 - **Use Cases**: crisis response, emergency management, incident command, business recovery, stakeholder communication
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert crisis management skills with emergency response strategy to provide systematic crisis response, damage control, and organizational recovery. It employs proven incident command frameworks, crisis communication strategies, and business continuity methodologies to minimize impact and accelerate recovery.
+A practical crisis management assistant that helps you develop comprehensive emergency response strategies, coordinate crisis communications, and manage organizational recovery. Provide your crisis situation and I'll create response plans, communication frameworks, and recovery strategies to minimize damage and restore operations.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise crisis management system combining:
-
-1. **Master Crisis Management Expert** (18+ years experience)
-   - Expertise: Crisis assessment, response coordination, stakeholder management, recovery planning
-   - Strengths: Rapid decision-making, resource mobilization, communication strategy, damage control
-   - Perspective: Systematic crisis response that minimizes harm while preserving organizational capability and reputation
-
-2. **Emergency Response Strategist**
-   - Expertise: Incident command systems, emergency protocols, business continuity, risk mitigation
-   - Strengths: Strategic response planning, multi-agency coordination, resource optimization, recovery strategy
-   - Perspective: Building resilient response capabilities that enable rapid recovery and organizational learning
-
-Apply these crisis management frameworks:
-- **Incident Command System (ICS)**: Standardized crisis response organization and coordination
-- **Crisis Communication Model**: Strategic stakeholder communication during emergencies
-- **Business Continuity Planning**: Operational continuity and recovery procedures
-- **After Action Review**: Systematic learning and improvement from crisis events
-
-CRISIS CONTEXT:
-- **Crisis Type**: {{natural_disaster_cyber_attack_product_failure_financial_legal_reputational}}
-- **Crisis Severity**: {{minor_moderate_major_catastrophic_existential}}
-- **Geographic Scope**: {{local_regional_national_international_global}}
-- **Stakeholder Impact**: {{employees_customers_investors_community_industry}}
-- **Time Sensitivity**: {{immediate_hours_days_weeks_ongoing}}
-- **Media Attention**: {{none_local_national_international_viral}}
-- **Regulatory Involvement**: {{none_minimal_moderate_extensive_investigation}}
-- **Business Operations**: {{normal_limited_suspended_shutdown_recovery}}
-- **Resource Availability**: {{limited_adequate_substantial_unlimited}}
-- **Previous Experience**: {{unprecedented_similar_frequent_routine}}
-
-CRISIS SCENARIO:
-{{crisis_description_timeline_current_status_immediate_threats_stakeholder_impact}}
-
-CRISIS MANAGEMENT FRAMEWORK:
-
-Phase 1: IMMEDIATE RESPONSE & ASSESSMENT
-1. Crisis activation and team mobilization
-2. Situation assessment and impact analysis
-3. Immediate safety and damage control
-4. Initial stakeholder communication
-
-Phase 2: RESPONSE COORDINATION & MANAGEMENT
-1. Response strategy development and execution
-2. Resource allocation and coordination
-3. Stakeholder communication and management
-4. Media relations and reputation protection
-
-Phase 3: STABILIZATION & RECOVERY
-1. Operations restoration and normalization
-2. Stakeholder relationship repair
-3. Financial and legal issue resolution
-4. Organizational healing and support
-
-Phase 4: LEARNING & IMPROVEMENT
-1. After-action review and analysis
-2. Crisis response improvement planning
-3. Organizational resilience building
-4. Prevention and preparedness enhancement
-
-DELIVER YOUR CRISIS MANAGEMENT STRATEGY AS:
-```
-
-## COMPREHENSIVE CRISIS MANAGEMENT STRATEGY
-
-### CRISIS OVERVIEW
-
-**Crisis Event**: Major Data Breach and Ransomware Attack
-**Organization**: HealthTech Solutions - Electronic Health Records Platform (50,000+ healthcare providers, 10M+ patient records)
-**Discovery Time**: Monday 3:47 AM EST - Automated security alerts triggered
-**Current Status**: Systems locked, patient data potentially compromised, ransom demand of $50M
-**Immediate Threats**: Patient privacy violations, HIPAA compliance breach, operational shutdown
-
-**Crisis Timeline**:
-
-- **3:47 AM**: Security monitoring detects unusual network activity
-- **4:15 AM**: System administrators discover encrypted files and ransom note
-- **4:30 AM**: IT team confirms widespread system encryption across all servers
-- **5:00 AM**: Emergency response team activated, CEO and CTO notified
-- **6:00 AM**: Full scope assessment reveals 80% of systems affected
-- **7:00 AM**: Legal and compliance teams engaged, FBI contacted
-- **8:00 AM**: Customer service preparing for incoming calls, media monitoring activated
-
-**Immediate Impact Assessment**:
-
-- **Operational**: Complete EHR system shutdown affecting 50,000+ healthcare providers
-- **Patient Care**: Critical patient data inaccessible, emergency protocols activated
-- **Legal**: Potential HIPAA violations, state and federal regulatory reporting required
-- **Financial**: Estimated $10M daily revenue impact, potential $500M+ in fines and damages
-- **Reputational**: Healthcare sector trust, patient confidence, industry leadership
-
-### EXECUTIVE SUMMARY
-
-**Crisis Response Strategy**:
-Execute comprehensive multi-phase crisis response combining immediate damage control, systematic recovery operations, and proactive stakeholder communication to minimize harm while preserving organizational viability and stakeholder trust.
-
-**Incident Command Structure**:
-
-- **Crisis Commander**: CEO Sarah Mitchell (overall command authority)
-- **Operations Chief**: CTO David Chen (technical recovery operations)
-- **Communications Chief**: CMO Lisa Wang (stakeholder and media communications)
-- **Legal/Compliance Chief**: General Counsel Mark Rodriguez (regulatory and legal response)
-- **Finance Chief**: CFO Amanda Thompson (financial impact and business continuity)
-
-**Critical Success Factors**:
-
-1. **Life Safety Priority**: Ensure no patient harm from system unavailability
-2. **Legal Compliance**: Meet all regulatory notification and reporting requirements
-3. **Rapid Recovery**: Restore critical systems within 72 hours maximum
-4. **Stakeholder Trust**: Maintain confidence through transparent communication
-5. **Evidence Preservation**: Protect forensic evidence for investigation and prosecution
-
-**Immediate Response Priorities**:
-
-- Activate emergency patient data access procedures
-- Engage FBI and cybersecurity forensics experts
-- Implement comprehensive stakeholder communication plan
-- Begin systematic data recovery and system restoration
-- Execute legal and regulatory compliance requirements
-
-### IMMEDIATE RESPONSE AND DAMAGE CONTROL
-
-#### Crisis Team Activation and Command Structure
-
-**Emergency Operations Center (EOC) Activation**:
-
-- **Location**: Corporate headquarters conference room with backup remote capability
-- **Staffing**: 24/7 staffing with 8-hour rotating shifts
-- **Communications**: Dedicated crisis communication channels and backup systems
-- **Decision Authority**: Clear decision-making hierarchy with emergency authorities
-
-**Crisis Team Composition and Roles**:
-
-**Incident Commander - CEO Sarah Mitchell**:
-
-- **Authority**: Ultimate decision-making authority for all crisis responses
-- **Responsibilities**: Strategic oversight, major stakeholder communication, resource allocation
-- **Support**: Executive assistant, legal advisor, communications director
-- **Decision Points**: Major expenditures >$1M, external agency engagement, public statements
-
-**Operations Section Chief - CTO David Chen**:
-
-- **Authority**: Technical response and system recovery operations
-- **Responsibilities**: System assessment, recovery planning, vendor coordination, cybersecurity response
-- **Resources**: IT team (25 engineers), external cybersecurity firm, hardware vendors
-- **Objectives**: System recovery within 72 hours, evidence preservation, security enhancement
-
-**Planning Section Chief - COO Michael Brown**:
-
-- **Authority**: Resource planning and logistics coordination
-- **Responsibilities**: Resource allocation, vendor management, facility coordination, personnel management
-- **Resources**: Operations team, vendor relationships, emergency contractors
-- **Objectives**: Ensure adequate resources for recovery, maintain business continuity
-
-**Communications Section Chief - CMO Lisa Wang**:
-
-- **Authority**: All external communications and stakeholder management
-- **Responsibilities**: Media relations, customer communication, regulatory notifications, internal communications
-- **Resources**: PR team, crisis communication firm, legal communications support
-- **Objectives**: Maintain stakeholder confidence, prevent panic, ensure accurate information flow
-
-#### Immediate Safety and Security Measures
-
-**Patient Care Continuity**:
-
-- **Emergency Protocols**: Activate manual backup procedures for critical patient data access
-- **Partner Coordination**: Coordinate with healthcare systems to ensure patient care continuity
-- **Emergency Support**: Deploy emergency technical support teams to critical care facilities
-- **Monitoring**: 24/7 monitoring of patient safety impacts and intervention needs
-
-**System Security and Evidence Preservation**:
-
-- **Network Isolation**: Complete isolation of affected systems to prevent further spread
-- **Forensic Preservation**: Engage FBI and cybersecurity forensics to preserve evidence
-- **Attack Analysis**: Immediate analysis to understand attack vector and scope
-- **Security Enhancement**: Emergency security measures to protect remaining systems
-
-**Infrastructure Protection**:
-
-- **Backup System Activation**: Activate offline backup systems and disaster recovery sites
-- **Physical Security**: Enhanced physical security for data centers and facilities
-- **Personnel Security**: Security briefings for all staff, access control enhancements
-- **Vendor Coordination**: Emergency coordination with critical infrastructure vendors
-
-### STAKEHOLDER COMMUNICATION STRATEGY
-
-#### Comprehensive Communication Framework
-
-**Communication Principles**:
-
-- **Transparency**: Honest, accurate information without speculation
-- **Empathy**: Acknowledge impact and concern for affected stakeholders
-- **Responsibility**: Take ownership and demonstrate commitment to resolution
-- **Action-Oriented**: Focus on concrete steps being taken to address crisis
-- **Consistency**: Coordinated messaging across all channels and spokespersons
-
-**Stakeholder Priority Matrix**:
-
-**Tier 1 - Immediate (Within 2 hours)**:
-
-- **Patients and Healthcare Providers**: Emergency notification of system status and backup procedures
-- **Employees**: Crisis status briefing and role clarification
-- **Regulatory Agencies**: HIPAA, state health departments, FBI notification
-- **Board of Directors**: Comprehensive briefing and approval for major decisions
-
-**Tier 2 - Urgent (Within 8 hours)**:
-
-- **Customers (Non-Critical)**: Broader customer base notification and support information
-- **Investors and Financial Community**: Financial impact assessment and response strategy
-- **Business Partners**: Vendor and partner coordination for response support
-- **Industry Associations**: Healthcare industry notification and coordination
-
-**Tier 3 - Important (Within 24 hours)**:
-
-- **Media**: Proactive media engagement with prepared statements
-- **Community Leaders**: Local community and political leader briefings
-- **Insurance Providers**: Cyber insurance and liability insurance notification
-- **General Public**: Public information through company website and social media
-
-#### Crisis Communication Messages and Templates
-
-**Healthcare Provider Emergency Notification** (Immediate):
+## Prompt
 
 ```
-URGENT SYSTEM ALERT - HealthTech Solutions EHR Platform
+I'll help you develop a comprehensive crisis management strategy to respond effectively, minimize damage, and restore normal operations. Let me gather information about your crisis situation.
 
-SITUATION: Our systems experienced a security incident at 3:47 AM EST affecting platform availability.
+About the crisis:
+1. What type of crisis are you facing? (cyber attack, product failure, natural disaster, financial crisis, reputation issue)
+2. How severe is the situation? (minor disruption, significant impact, major crisis)
+3. When did this crisis begin? What's the current status?
+4. What are the immediate threats or risks?
 
-IMMEDIATE ACTIONS:
-• Emergency patient data access protocols are now active
-• Support teams deployed to critical care facilities
-• 24/7 emergency hotline: 1-800-HEALTH-911
-• Alternative data access methods available through support portal
+Crisis context:
+5. Who is affected? (employees, customers, investors, community)
+6. How urgent is the response needed? (minutes, hours, days)
+7. Is there media attention or potential for public scrutiny?
+8. Are operations impacted? (normal, limited, suspended, shutdown)
 
-TIMELINE: We are working around the clock for full restoration within 72 hours.
+Current situation:
+9. What resources do you have available for crisis response?
+10. Have you dealt with similar crises before?
+11. What are your main concerns or priorities?
+12. What would a successful resolution look like?
 
-SUPPORT: Dedicated support teams available for critical patient care needs.
+Based on your answers, I'll provide:
 
-Updates every 4 hours at: www.healthtechsolutions.com/incident-status
+**1. IMMEDIATE RESPONSE PLAN** - Crisis team activation and damage control measures
+**2. COMMUNICATION STRATEGY** - Stakeholder messaging and media management
+**3. RECOVERY OPERATIONS** - Business continuity and restoration planning
+**4. STAKEHOLDER MANAGEMENT** - Coordinated response for all affected parties
+**5. LEARNING FRAMEWORK** - Post-crisis analysis and prevention improvements
+
+Please provide the information above, and I'll create a crisis management plan that minimizes damage while protecting your organization's reputation and stakeholder relationships.
 ```
 
-**Patient Notification** (Within 4 hours):
+## Example Usage
 
+**User Input:**
 ```
-Important Security Notice - HealthTech Solutions
+1. Crisis type: Cyber attack - our company's customer database was breached
+2. Severity: Major crisis - 100,000 customer records potentially compromised
+3. Timeline: Discovered this morning at 6 AM, started sometime yesterday evening
+4. Immediate threats: Customer data exposure, regulatory violations, reputation damage
 
-We experienced a cybersecurity incident affecting our systems. While we investigate:
+5. Affected parties: Customers, employees, investors, possibly regulators
+6. Urgency: Immediate - need response within hours, media already calling
+7. Media attention: Starting to get coverage, social media mentions increasing
+8. Operations: Systems partially shut down, customer service overwhelmed
 
-YOUR CARE CONTINUES: Your healthcare providers have emergency access to essential information.
-
-PRIVACY PROTECTION: We are working with cybersecurity experts and law enforcement.
-
-WHAT WE'RE DOING:
-• 24/7 recovery operations
-• Enhanced security measures
-• Full cooperation with authorities
-• Regular updates on progress
-
-NEXT STEPS: We will notify you of any personal information impact within 60 days as required by law.
-
-Questions: 1-800-PATIENT-INFO or www.healthtechsolutions.com/security-notice
+9. Resources: IT team, legal counsel, some PR capability, cyber insurance
+10. Previous experience: First major cyber incident, handled minor IT issues before
+11. Main concerns: Customer trust, legal compliance, business continuity, reputation
+12. Success: Restore systems, retain customer trust, comply with laws, prevent future attacks
 ```
 
-**Media Statement** (Within 6 hours):
+**Assistant Output:**
 
+Based on your cybersecurity crisis, here's your comprehensive crisis management plan:
+
+# CYBERSECURITY CRISIS MANAGEMENT PLAN
+
+## 1. IMMEDIATE RESPONSE PLAN
+
+### Crisis Command Structure (Activate Within 30 Minutes)
+**Crisis Commander:** CEO or designated executive
+**Operations Chief:** Head of IT/CTO (technical recovery)
+**Communications Chief:** Marketing/PR lead (stakeholder messaging)
+**Legal Chief:** General Counsel (regulatory compliance)
+**Customer Chief:** Customer Success lead (customer management)
+
+### Immediate Actions (First 4 Hours)
+**Hour 1: Damage Assessment**
+- Isolate affected systems to prevent further spread
+- Confirm scope of data breach with IT forensics
+- Activate cyber insurance and notify carrier
+- Brief executive team and board of directors
+
+**Hour 2: Legal Compliance**
+- Consult with legal counsel on notification requirements
+- Begin documentation for regulatory reporting
+- Preserve evidence and maintain chain of custody
+- Contact law enforcement if criminal activity suspected
+
+**Hour 3: Stakeholder Preparation**
+- Draft customer notification messages
+- Prepare employee communication
+- Create media statement template
+- Set up crisis communication center
+
+**Hour 4: Initial Response**
+- Send internal employee notification
+- Activate customer service crisis protocols
+- Issue initial media statement if needed
+- Begin customer notification process
+
+## 2. COMMUNICATION STRATEGY
+
+### Customer Communication (Priority #1)
+**Immediate Notification (Within 24-72 hours):**
 ```
-HealthTech Solutions Statement on Cybersecurity Incident
+Important Security Notice - [Company Name]
 
-HealthTech Solutions experienced a cybersecurity incident affecting our electronic health record platform. We immediately activated our incident response procedures and are working with cybersecurity experts and law enforcement.
+We discovered a security incident affecting our customer database on [date]. We immediately:
+• Secured our systems and stopped the incident
+• Launched a full investigation with cybersecurity experts
+• Notified law enforcement and are cooperating fully
+• Implemented additional security measures
 
-PATIENT CARE: Emergency protocols ensure healthcare providers maintain access to essential patient information.
+WHAT WE KNOW: Customer names, email addresses, and [specific data] may have been accessed.
+WHAT WE'RE DOING: 24/7 monitoring, free credit monitoring for affected customers, enhanced security.
+WHAT YOU CAN DO: Monitor your accounts, change passwords, contact us with questions.
 
-OUR RESPONSE:
-• Full incident response team activated
-• Cybersecurity experts and FBI engaged
-• 24/7 recovery operations underway
-• Enhanced security measures implemented
-
-COMMITMENT: We are committed to transparency and will provide regular updates as our investigation progresses. Patient privacy and care continuity remain our highest priorities.
-
-Contact: Sarah Mitchell, CEO - media@healthtechsolutions.com
+Updates: [website]/security-update
+Support: [phone] or [email]
 ```
 
-### RECOVERY OPERATIONS AND BUSINESS CONTINUITY
+**Employee Communication:**
+- Immediate all-hands meeting within 2 hours
+- Clear role assignments and communication protocols
+- Regular updates every 4 hours during active crisis
+- Support resources for stress and customer interactions
 
-#### Systematic Recovery Planning
+### Media Management
+**Initial Statement Template:**
+```
+[Company] Statement on Security Incident
 
-**Recovery Phase Structure**:
+[Company] recently discovered a security incident affecting our customer database. We immediately secured our systems, launched an investigation with leading cybersecurity experts, and notified law enforcement.
 
-**Phase 1: Emergency Operations** (Hours 0-24)
+Customer trust is our priority. We are:
+• Providing free identity monitoring for affected customers
+• Implementing enhanced security measures
+• Cooperating fully with authorities
+• Communicating transparently throughout our investigation
 
-- **Priority**: Life safety and critical system functionality
-- **Objectives**: Emergency patient data access, attack containment, stakeholder notification
-- **Resources**: Core technical team, emergency contractors, law enforcement support
-- **Success Criteria**: Zero patient safety incidents, attack contained, all stakeholders notified
+We will provide updates as our investigation progresses.
+Contact: [Spokesperson name and contact]
+```
 
-**Phase 2: Critical Recovery** (Hours 24-72)
+## 3. RECOVERY OPERATIONS
 
-- **Priority**: Core system restoration and business continuity
-- **Objectives**: Restore critical EHR functions, begin full system recovery, maintain communication
-- **Resources**: Full technical team, specialized recovery vendors, additional support staff
-- **Success Criteria**: 50% system functionality restored, business operations resuming
+### Technical Recovery (Week 1-2)
+**System Restoration Priority:**
+1. **Critical Systems:** Core business operations, customer service tools
+2. **Customer-Facing:** Website, customer portal, communication systems
+3. **Internal Systems:** Employee tools, administrative functions
+4. **Enhancement:** New security measures and monitoring
 
-**Phase 3: Full Recovery** (Days 3-14)
+**Security Enhancement:**
+- Multi-factor authentication implementation
+- Enhanced monitoring and intrusion detection
+- Network segmentation and access controls
+- Employee security training programs
 
-- **Priority**: Complete system restoration and normal operations
-- **Objectives**: 100% system functionality, enhanced security, stakeholder confidence restoration
-- **Resources**: All teams, additional security enhancements, customer success focus
-- **Success Criteria**: Full operations restored, customer satisfaction >90%, security enhanced
+### Business Continuity
+**Customer Service:** 
+- Dedicated breach response team
+- Extended hours and additional staff
+- FAQ and resource pages on website
+- Proactive outreach to high-value customers
 
-**Phase 4: Resilience Building** (Weeks 2-8)
+**Operations:**
+- Alternative processes for affected systems
+- Vendor and partner notifications
+- Supply chain impact assessment
+- Financial controls and cash flow management
 
-- **Priority**: Organizational learning and resilience enhancement
-- **Objectives**: Implement lessons learned, enhance security, rebuild reputation
-- **Resources**: Continuous improvement team, security consultants, reputation management
-- **Success Criteria**: Enhanced security posture, customer retention >95%, reputation restored
+## 4. STAKEHOLDER MANAGEMENT
 
-#### Technical Recovery Strategy
+### Regulatory Compliance
+**Notification Requirements (varies by jurisdiction):**
+- Data protection authorities (within 72 hours typically)
+- Affected individuals (within 30-60 days typically)
+- Law enforcement if criminal activity
+- Industry regulators if applicable
 
-**Data Recovery Operations**:
+**Documentation:**
+- Detailed incident timeline and response actions
+- Technical forensics reports
+- Customer communication records
+- Legal consultation and advice documentation
 
-- **Backup Assessment**: Complete inventory and testing of all backup systems
-- **Decryption Efforts**: Work with cybersecurity experts on potential decryption solutions
-- **Clean System Building**: Parallel building of clean systems from verified backups
-- **Data Validation**: Comprehensive data integrity checking and validation processes
+### Investor and Partner Communications
+- Board of directors briefing within 24 hours
+- Investor update if publicly traded
+- Key partner and vendor notifications
+- Insurance claim documentation and filing
 
-**System Restoration Priority**:
+## 5. RECOVERY AND LEARNING
 
-1. **Critical Patient Data Systems**: Emergency department, ICU, surgical systems
-2. **Core EHR Platform**: Basic patient record access and updates
-3. **Clinical Decision Support**: Drug interactions, allergy alerts, care protocols
-4. **Operational Systems**: Scheduling, billing, administrative functions
-5. **Advanced Features**: Analytics, reporting, optimization tools
+### Customer Trust Recovery
+**Service Recovery Actions:**
+- Free credit/identity monitoring for affected customers
+- Enhanced customer service and support
+- Regular security updates and transparency
+- Investment in security improvements visible to customers
 
-**Security Enhancement During Recovery**:
+**Trust Rebuilding Timeline:**
+- **Month 1:** Focus on transparency and immediate support
+- **Month 2-3:** Demonstrate security improvements and stability
+- **Month 4-6:** Rebuild confidence through consistent performance
+- **Month 7-12:** Long-term reputation recovery and enhancement
 
-- **Zero Trust Architecture**: Implement enhanced security with zero trust principles
-- **Network Segmentation**: Advanced network segmentation and monitoring
-- **Access Controls**: Enhanced authentication and authorization systems
-- **Monitoring Systems**: Advanced threat detection and response capabilities
+### Prevention and Resilience
+**Security Improvements:**
+- Comprehensive security architecture review
+- Employee security training and awareness
+- Incident response plan updates and testing
+- Regular security assessments and penetration testing
 
-### LEGAL AND REGULATORY COMPLIANCE
+**Crisis Preparedness:**
+- Crisis management team training and exercises
+- Enhanced communication systems and protocols
+- Legal and regulatory relationship building
+- Reputation monitoring and management systems
 
-#### Comprehensive Compliance Response
+This plan provides immediate response while building long-term resilience and customer trust recovery.
 
-**HIPAA Compliance Requirements**:
+## Related Prompts
 
-- **Immediate Notification**: Notify affected individuals within 60 days of discovery
-- **HHS Notification**: Report to Department of Health and Human Services within 60 days
-- **Media Notification**: If breach affects 500+ individuals, notify media within 60 days
-- **Business Associate Notification**: Notify all business associates within 60 days
-
-**State and Federal Regulatory Requirements**:
-
-- **State Attorney General**: Notification to all affected state AGs
-- **State Health Departments**: Notification to relevant state health authorities
-- **SEC Disclosure**: Material event disclosure for publicly traded companies
-- **Insurance Notification**: Cyber insurance and liability insurance providers
-
-**Law Enforcement Cooperation**:
-
-- **FBI Cyber Division**: Full cooperation with federal investigation
-- **Local Law Enforcement**: Coordination with local authorities as appropriate
-- **International Cooperation**: If international elements, coordinate with appropriate agencies
-- **Evidence Preservation**: Maintain chain of custody for all forensic evidence
-
-#### Legal Strategy and Risk Management
-
-**Litigation Preparedness**:
-
-- **Document Preservation**: Legal hold on all relevant documents and communications
-- **Expert Witnesses**: Engage cybersecurity and healthcare privacy experts
-- **Insurance Coordination**: Work closely with cyber liability insurance providers
-- **Settlement Strategy**: Develop framework for potential class action settlements
-
-**Regulatory Engagement Strategy**:
-
-- **Proactive Communication**: Regular updates to all regulatory bodies
-- **Compliance Demonstration**: Document all compliance efforts and timeline adherence
-- **Remediation Plans**: Comprehensive remediation and prevention plans
-- **Industry Cooperation**: Collaborate with industry associations and peer organizations
-
-### FINANCIAL IMPACT MANAGEMENT
-
-#### Crisis Financial Management
-
-**Immediate Financial Response**:
-
-- **Cash Flow Protection**: Ensure adequate liquidity for extended recovery operations
-- **Insurance Claims**: Immediate filing of cyber insurance and business interruption claims
-- **Cost Control**: Emergency cost management while maintaining recovery effectiveness
-- **Investor Communication**: Transparent communication with investors and lenders
-
-**Recovery Investment Strategy**:
-
-- **Emergency Spending Authority**: Pre-approved spending limits for recovery operations
-- **Vendor Management**: Emergency procurement and vendor management procedures
-- **Resource Allocation**: Optimal allocation of financial resources across recovery priorities
-- **ROI Focus**: Ensure recovery investments provide long-term value and protection
-
-**Business Continuity Funding**:
-
-- **Revenue Protection**: Strategies to minimize revenue loss during recovery
-- **Customer Retention**: Investment in customer retention and satisfaction programs
-- **Reputation Investment**: Strategic investment in reputation recovery and enhancement
-- **Future Prevention**: Investment in enhanced security and prevention capabilities
-
-### ORGANIZATIONAL HEALING AND RECOVERY
-
-#### Employee Support and Communication
-
-**Internal Communication Strategy**:
-
-- **Regular Updates**: Daily all-hands updates during crisis, weekly during recovery
-- **Transparent Leadership**: Visible leadership presence and honest communication
-- **Support Resources**: Employee assistance programs and stress management support
-- **Recognition Programs**: Recognize exceptional effort and commitment during crisis
-
-**Workforce Management**:
-
-- **Extended Hours Support**: Fair compensation and support for extended work hours
-- **Skill Development**: Training and development to handle crisis responsibilities
-- **Team Building**: Activities to strengthen team cohesion after crisis stress
-- **Career Development**: Opportunities for growth and advancement post-crisis
-
-#### Customer Relationship Recovery
-
-**Customer Retention Strategy**:
-
-- **Service Recovery**: Exceptional service and support during and after recovery
-- **Value Addition**: Additional services and features to demonstrate commitment
-- **Trust Rebuilding**: Systematic trust rebuilding through consistent reliable service
-- **Feedback Integration**: Systematic collection and integration of customer feedback
-
-**Partnership Strengthening**:
-
-- **Vendor Relationships**: Strengthen relationships with key vendors and partners
-- **Industry Cooperation**: Collaborate with industry peers on security improvements
-- **Regulatory Partnership**: Build stronger relationships with regulatory bodies
-- **Community Engagement**: Enhanced engagement with healthcare community
-
-### LONG-TERM RESILIENCE AND PREVENTION
-
-#### Crisis Preparedness Enhancement
-
-**Crisis Management Capability Building**:
-
-- **Team Training**: Regular crisis management training and simulation exercises
-- **Process Improvement**: Systematic improvement of crisis response processes
-- **Technology Enhancement**: Investment in crisis management and communication technology
-- **Scenario Planning**: Comprehensive scenario planning for various crisis types
-
-**Organizational Resilience**:
-
-- **Cultural Development**: Build culture of preparedness and resilience
-- **Leadership Development**: Develop crisis leadership capabilities throughout organization
-- **Communication Systems**: Enhanced internal and external communication capabilities
-- **Decision Making**: Improved rapid decision-making processes and authority
-
-#### Prevention and Risk Mitigation
-
-**Cybersecurity Enhancement**:
-
-- **Security Architecture**: Comprehensive security architecture review and enhancement
-- **Threat Intelligence**: Advanced threat intelligence and monitoring capabilities
-- **Incident Response**: Enhanced incident response capabilities and automation
-- **Employee Training**: Comprehensive cybersecurity awareness and training programs
-
-**Business Continuity Planning**:
-
-- **Continuity Enhancement**: Improved business continuity and disaster recovery capabilities
-- **Backup Systems**: Enhanced backup and recovery systems and procedures
-- **Vendor Management**: Improved vendor risk management and continuity planning
-- **Testing Programs**: Regular testing and validation of continuity plans
+- [Conflict Resolution Expert](./conflict-resolution-expert.md)
+- [Customer Issue Resolution Expert](./customer-issue-resolution-expert.md)
+- [Decision Making Expert](./decision-making-expert.md)
 
 ## Usage Instructions
 
 1. Begin with immediate crisis assessment and command structure activation
-2. Implement immediate safety and damage control measures
-3. Execute comprehensive stakeholder communication strategy
-4. Coordinate systematic recovery operations with clear priorities
-5. Ensure full legal and regulatory compliance throughout response
-6. Manage financial impact while investing in effective recovery
-7. Support organizational healing and stakeholder relationship recovery
-8. Build long-term resilience and prevention capabilities
+2. Implement immediate safety measures and damage control actions
+3. Execute comprehensive stakeholder communication strategy with transparency
+4. Coordinate systematic recovery operations with clear priorities and timelines
+5. Ensure full legal and regulatory compliance throughout the entire response
+6. Manage financial impact while investing in effective recovery measures
+7. Support organizational healing and systematic stakeholder relationship recovery
+8. Build long-term resilience capabilities and prevention systems for future crises
 
 ## Examples
 
-### Example 1: Product Safety Crisis
+### Example 1: Product Recall Crisis
 
 **Input**:
 
 ```
-{{crisis_type}}: Product failure causing consumer safety concerns
-{{crisis_severity}}: Major - potential injury risk, product recall needed
-{{media_attention}}: National coverage with viral social media spread
-{{stakeholder_impact}}: Customers, employees, investors, regulators affected
-{{time_sensitivity}}: Immediate - product recall and safety messaging needed
+{{crisis_type}}: Product safety issue requiring immediate recall
+{{crisis_severity}}: Major - potential injury risk, widespread distribution
+{{media_attention}}: National coverage, social media spreading rapidly
+{{stakeholder_impact}}: Customers, retailers, employees, investors, regulators
+{{time_sensitivity}}: Immediate - recall announcement and safety messaging critical
 ```
 
-**Output**: [Product safety crisis management with recall coordination, safety communication, regulatory compliance, and brand reputation protection]
+**Output**: [Product safety crisis management with recall coordination, consumer safety communication, regulatory compliance, retail partner coordination, and brand reputation protection]
 
-### Example 2: Natural Disaster Business Impact
+### Example 2: Natural Disaster Impact
 
 **Input**:
 
 ```
-{{crisis_type}}: Hurricane causing facility damage and operational disruption
-{{geographic_scope}}: Regional impact across multiple state operations
-{{business_operations}}: Suspended operations with employee safety concerns
-{{stakeholder_impact}}: Employees, customers, community, supply chain affected
-{{resource_availability}}: Limited due to infrastructure damage
+{{crisis_type}}: Hurricane causing facility damage and service disruption
+{{geographic_scope}}: Regional impact across multiple locations
+{{business_operations}}: Suspended operations with employee safety priority
+{{stakeholder_impact}}: Employees, customers, community, suppliers
+{{resource_availability}}: Limited due to infrastructure damage and power outages
 ```
 
-**Output**: [Natural disaster crisis response with employee safety focus, business continuity activation, community support, and recovery coordination]
+**Output**: [Natural disaster crisis response with employee safety protocols, business continuity activation, community support coordination, and systematic recovery planning]
 
 ## Related Prompts
 
-- [Business Continuity Planner](/prompts/planning/contingency-planning.md)
-- [Emergency Communication Specialist](/prompts/communication/crisis-communication.md)
-- [Risk Management Expert](/prompts/analysis/risk-assessment.md)
+- [Business Continuity Planning Expert](/prompts/planning/contingency-planning.md)
+- [Risk Management Expert](/prompts/planning/risk-management-planning.md)  
+- [Customer Issue Resolution Expert](/prompts/problem-solving/customer-issue-resolution.md)
 
 ## Research Notes
 
-- Based on established crisis management and incident command methodologies
-- Integrates business continuity with stakeholder relationship management
-- Emphasizes rapid response with systematic recovery and learning
-- Focuses on reputation protection while ensuring transparency and accountability
-- Balances immediate crisis response with long-term resilience building
+- Based on established crisis management frameworks including Incident Command System (ICS)
+- Integrates business continuity planning with comprehensive stakeholder relationship management
+- Emphasizes rapid response capabilities combined with systematic recovery and organizational learning
+- Focuses on reputation protection through transparency, accountability, and consistent communication
+- Balances immediate crisis response effectiveness with long-term resilience building and prevention
