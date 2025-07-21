@@ -62,8 +62,8 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <div class="feature-icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <h3>Professional Grade</h3>
-                <p>Crafted by experts for real-world business and professional applications.</p>
+                <h3>Real-World Ready</h3>
+                <p>Tested and refined for actual business tasks and daily workflows.</p>
             </div>
             
             <div class="feature-item">

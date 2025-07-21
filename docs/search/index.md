@@ -116,10 +116,10 @@ description: "Search through 200+ AI prompts to find exactly what you need. Filt
                 <div class="help-item">
                     <h3><i class="fas fa-tags"></i> Browse by Category</h3>
                     <ul>
-                        <li><a href="/categories/">View all categories</a></li>
-                        <li><a href="/categories/analysis/">Analysis prompts</a></li>
-                        <li><a href="/categories/creation/">Creation prompts</a></li>
-                        <li><a href="/categories/technical-workflows/">Technical prompts</a></li>
+                        <li><a href="{{ '/categories/' | relative_url }}">View all categories</a></li>
+                        <li><a href="{{ '/categories/analysis/' | relative_url }}">Analysis prompts</a></li>
+                        <li><a href="{{ '/categories/creation/' | relative_url }}">Creation prompts</a></li>
+                        <li><a href="{{ '/categories/technical-workflows/' | relative_url }}">Technical prompts</a></li>
                     </ul>
                 </div>
             </div>
