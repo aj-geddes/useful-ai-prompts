@@ -37,7 +37,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                     <i class="fas fa-rocket"></i>
                     Browse Prompts
                 </a>
-                <a href="/categories/" class="btn btn-secondary btn-large">
+                <a href="{{ '/categories/' | relative_url }}" class="btn btn-secondary btn-large">
                     <i class="fas fa-th-large"></i>
                     View Categories
                 </a>
@@ -105,7 +105,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
     <div class="container">
         <h2 class="section-title">Browse by Category</h2>
         <div class="categories-grid">
-            <a href="/categories/analysis/" class="category-card">
+            <a href="{{ '/categories/analysis/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-chart-bar"></i>
                 </div>
@@ -114,7 +114,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <span class="prompt-count">{{ site.prompts | where: "category", "analysis" | size }} prompts</span>
             </a>
             
-            <a href="/categories/creation/" class="category-card">
+            <a href="{{ '/categories/creation/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-palette"></i>
                 </div>
@@ -123,7 +123,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <span class="prompt-count">{{ site.prompts | where: "category", "creation" | size }} prompts</span>
             </a>
             
-            <a href="/categories/planning/" class="category-card">
+            <a href="{{ '/categories/planning/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-calendar-alt"></i>
                 </div>
@@ -132,7 +132,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <span class="prompt-count">{{ site.prompts | where: "category", "planning" | size }} prompts</span>
             </a>
             
-            <a href="/categories/communication/" class="category-card">
+            <a href="{{ '/categories/communication/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-comments"></i>
                 </div>
@@ -141,7 +141,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <span class="prompt-count">{{ site.prompts | where: "category", "communication" | size }} prompts</span>
             </a>
             
-            <a href="/categories/problem-solving/" class="category-card">
+            <a href="{{ '/categories/problem-solving/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-tools"></i>
                 </div>
@@ -150,7 +150,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                 <span class="prompt-count">{{ site.prompts | where: "category", "problem-solving" | size }} prompts</span>
             </a>
             
-            <a href="/categories/decision-making/" class="category-card">
+            <a href="{{ '/categories/decision-making/' | relative_url }}" class="category-card">
                 <div class="category-icon">
                     <i class="fas fa-balance-scale"></i>
                 </div>
@@ -161,7 +161,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
         </div>
         
         <div class="categories-footer">
-            <a href="/categories/" class="btn btn-primary">
+            <a href="{{ '/categories/' | relative_url }}" class="btn btn-primary">
                 View All Categories
                 <i class="fas fa-arrow-right"></i>
             </a>

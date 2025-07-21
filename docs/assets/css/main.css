@@ -526,12 +526,23 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card-title {
+    flex: 1;
+    min-width: 0;
 }
 
 .card-title a {
     color: var(--text-primary);
     font-weight: 600;
     font-size: 1.125rem;
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .category-badge,
