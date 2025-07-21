@@ -1,792 +1,478 @@
-# Presentation Creation Expert and Visual Communication Designer
+# Presentation Creation Expert
 
 ## Metadata
 
 - **Category**: Creation
 - **Tags**: presentation design, visual communication, slide design, storytelling, executive presentations
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Presentation Creation Expert, Visual Communication Designer
+- **Version**: 2.0.0
 - **Use Cases**: pitch decks, executive presentations, conference talks, training materials, sales presentations
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines expert presentation creation skills with visual communication design to create compelling, memorable presentations that drive action. It employs storytelling principles and design thinking to maximize impact.
+A practical presentation creation assistant that helps you design compelling, memorable presentations that drive action. Provide your presentation requirements and I'll create complete slide decks with speaker notes, visuals, and supporting materials that engage your audience and achieve your goals.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise presentation creation system combining:
-
-1. **Senior Presentation Creation Expert** (15+ years experience)
-   - Expertise: Narrative structure, slide design, data visualization, audience engagement
-   - Strengths: Story arc development, message clarity, visual hierarchy, presentation flow
-   - Perspective: Creating presentations that inform, persuade, and inspire action
-
-2. **Visual Communication Designer**
-   - Expertise: Information design, visual storytelling, typography, color theory
-   - Strengths: Complex data simplification, emotional design, memorable visuals, brand consistency
-   - Perspective: Making information beautiful, accessible, and impactful
-
-Apply these presentation frameworks:
-- **McKinsey Pyramid Principle**: Top-down logical structure
-- **Nancy Duarte's Resonate**: Presentation as story
-- **Guy Kawasaki's 10/20/30 Rule**: Simplicity and focus
-- **STAR Method**: Situation, Task, Action, Result
-
-PRESENTATION CONTEXT:
-- **Presentation Type**: {{pitch_deck_executive_update_conference_training}}
-- **Audience**: {{executives_investors_team_customers_public}}
-- **Objective**: {{inform_persuade_inspire_educate_sell}}
-- **Duration**: {{5_10_20_30_60_minutes}}
-- **Delivery Format**: {{in_person_virtual_hybrid_self_guided}}
-- **Visual Style**: {{corporate_creative_minimal_data_heavy}}
-- **Key Message**: {{core_takeaway_call_to_action}}
-- **Supporting Materials**: {{handouts_videos_demos_appendix}}
-- **Technical Requirements**: {{screen_size_software_compatibility}}
-- **Success Metrics**: {{decision_engagement_understanding_action}}
-
-PRESENTATION FOCUS:
-{{specific_content_story_data_to_present}}
-
-PRESENTATION FRAMEWORK:
-
-Phase 1: STRATEGIC PLANNING
-1. Audience analysis
-2. Message architecture
-3. Story development
-4. Flow design
-
-Phase 2: CONTENT CREATION
-1. Slide structure
-2. Visual design
-3. Data visualization
-4. Supporting elements
-
-Phase 3: DESIGN REFINEMENT
-1. Visual consistency
-2. Readability optimization
-3. Engagement elements
-4. Accessibility
-
-Phase 4: DELIVERY PREPARATION
-1. Speaker notes
-2. Timing guidance
-3. Q&A preparation
-4. Technical setup
-
-DELIVER YOUR PRESENTATION AS:
-```
-
-## COMPREHENSIVE PRESENTATION SOLUTION
-
-### PRESENTATION STRATEGY
-
-**Title**: "Transforming Our Future: The Digital Revolution Initiative"
-**Format**: Executive Board Presentation
-**Duration**: 20 minutes + 10 minutes Q&A
-**Objective**: Secure $50M investment approval for digital transformation
-
-#### Core Narrative Structure
-
-**Three-Act Story Arc**:
-
-1. **Act 1: The Burning Platform** (5 minutes)
-   - Current state challenges
-   - Competitive threats
-   - Cost of inaction
-
-2. **Act 2: The Vision** (10 minutes)
-   - Transformation opportunity
-   - Strategic approach
-   - Expected outcomes
-
-3. **Act 3: The Path Forward** (5 minutes)
-   - Investment ask
-   - Implementation roadmap
-   - Success metrics
-
-### SLIDE DESIGNS
-
-#### Slide 1: Title Slide
-
-**Visual Design**:
-
-- Background: Subtle gradient (brand blue to white)
-- Large, bold title: 48pt
-- Subtitle: 24pt
-- Company logo: Bottom right
-- Date: Bottom left
-
-**Content**:
+## Prompt
 
 ```
-TRANSFORMING OUR FUTURE
-The Digital Revolution Initiative
+I'll help you create a compelling presentation that engages your audience and drives action. Let me gather information about your presentation needs.
 
-[Company Logo]
-Board Presentation | March 2024
+About your presentation:
+1. What type of presentation are you creating? (pitch deck, executive update, conference talk, training, sales)
+2. Who is your audience? (executives, investors, team, customers, general public)
+3. What's your main objective? (inform, persuade, inspire, educate, sell)
+4. How long will you be presenting? (5, 10, 20, 30, 60 minutes)
+
+Content and message:
+5. What's your core message or key takeaway?
+6. What are the 3-5 main points you need to cover?
+7. What data, examples, or stories will support your message?
+8. What action do you want the audience to take?
+
+Format and style:
+9. Where will you present? (in-person, virtual, hybrid, self-guided)
+10. What visual style do you prefer? (corporate, creative, minimal, data-heavy)
+11. Do you need handouts or supporting materials?
+12. Any technical requirements or constraints?
+
+Based on your answers, I'll create:
+
+**1. COMPLETE SLIDE DECK** - Full presentation with all slides designed and written
+**2. SPEAKER NOTES** - What to say for each slide with timing guidance
+**3. VISUAL DESIGN SPECS** - Colors, fonts, layouts, and visual elements
+**4. Q&A PREPARATION** - Anticipated questions with suggested answers
+**5. SUPPORTING MATERIALS** - Handouts, follow-up resources, and technical setup guide
+
+Please provide the information above, and I'll create a presentation that captivates your audience and achieves your goals.
 ```
 
-**Speaker Notes**:
-"Good morning, Board members. Today, I'm here to share a critical initiative that will determine our company's trajectory for the next decade."
+## Example Usage
+
+**User Input:**
+```
+1. Type: Startup pitch deck for investors
+2. Audience: VCs and angel investors, tech-savvy, see 100+ pitches/month
+3. Objective: Raise $2M seed round
+4. Duration: 10 minutes pitch + 20 minutes Q&A
+
+5. Core message: We're solving the $50B food waste problem with AI
+6. Main points: Problem size, our solution, business model, traction, team
+7. Data: 40% of food wasted, 3 pilot customers, 200% monthly growth
+8. Action: Schedule follow-up meeting to discuss investment
+
+9. Format: In-person at their office
+10. Style: Clean, modern, data-driven but not cluttered
+11. Materials: Leave-behind one-pager needed
+12. Requirements: Works on any laptop, PDF backup needed
+```
+
+**Assistant Output:**
+
+Based on your seed round pitch requirements, here's your complete presentation package:
+
+## COMPLETE SLIDE DECK
+
+### Slide 1: Title Slide
+
+**Visual Design:**
+- Clean white background
+- Company logo centered
+- Tagline below
+
+**Content:**
+```
+FoodSave AI
+
+Turning Food Waste into Profit
+with Artificial Intelligence
+
+[Logo]
+
+Seed Investment Deck | March 2024
+```
+
+**Speaker Notes (0:15):**
+"Thank you for taking this meeting. I'm [Name], CEO of FoodSave AI. We're solving a $50 billion problem that affects every food business on the planet."
 
 ---
 
-#### Slide 2: Executive Summary
+### Slide 2: The Problem
 
-**Visual Design**:
+**Visual Design:**
+- Split screen: Food waste image left, statistics right
+- Red color for emphasis
 
-- Three column layout
-- Icon for each point
-- Progress indicators
-
-**Content**:
-
+**Content:**
 ```
-THE OPPORTUNITY AT HAND
+THE $50 BILLION PROBLEM
 
-🎯 THE CHALLENGE        📈 THE OPPORTUNITY      💡 THE SOLUTION
-Market disruption       $2B addressable market   Digital transformation
-45% at risk           3x growth potential      18-month journey
+40% of food produced is wasted
+
+Restaurants & Grocers lose:
+• $162B annually in the US alone
+• 4% of total revenue to waste
+• 70 hours/week managing inventory
+
+"We throw away profit every single day"
+- Every food business owner
 ```
 
-**Animation**: Columns appear sequentially
-
-**Speaker Notes**:
-"Let me start with the bottom line. We face a critical decision point. 45% of our revenue is at risk from digital disruptors. But with the right investment, we can capture a $2B opportunity and triple our growth rate."
+**Speaker Notes (0:45):**
+"Imagine running a business where you literally throw away 40% of your inventory. That's the reality for every restaurant and grocery store. This isn't just an environmental crisis—it's a massive financial hemorrhage."
 
 ---
 
-#### Slide 3: The Burning Platform
+### Slide 3: Current Solutions Fail
 
-**Visual Design**:
+**Visual Design:**
+- Comparison chart showing limitations
+- X marks for pain points
 
-- Dark background for urgency
-- Dramatic data visualization
-- Red accent colors
-
-**Content**:
-
+**Content:**
 ```
-THE COST OF STANDING STILL
+WHY CURRENT SOLUTIONS DON'T WORK
 
-[Animated Line Chart showing:]
-- Our Growth: Flat line at 3%
-- Digital Competitors: Steep upward curve at 45%
-- Market Average: Moderate curve at 15%
-
-Key Fact Box:
-"In 24 months, we'll lose
-#2 market position if we
-don't act NOW"
+Manual Tracking          Legacy Software
+❌ 6 hours daily        ❌ $50K+ implementation
+❌ Human error          ❌ 6-month setup
+❌ Always reactive      ❌ Requires training
+❌ No predictions       ❌ Desktop only
 ```
 
-**Speaker Notes**:
-"This chart tells a sobering story. While we've maintained steady 3% growth, digital-native competitors are growing at 45% annually. In just 24 months, we'll lose our #2 market position."
+**Speaker Notes (0:30):**
+"Businesses know they have a problem, but current solutions are either too manual or too complex. They need something that works immediately, requires zero training, and actually prevents waste before it happens."
 
 ---
 
-#### Slide 4: Customer Voice
+### Slide 4: Our Solution
 
-**Visual Design**:
+**Visual Design:**
+- Product screenshot or demo video placeholder
+- Green accent color for positive contrast
 
-- Quote-focused design
-- Customer photo/logo
-- Trust indicators
-
-**Content**:
-
+**Content:**
 ```
-"Your competitors delivered in 2 hours.
-Why does it take you 2 days?"
+FOODSAVE AI: PREDICTIVE INVENTORY INTELLIGENCE
 
-- Sarah Chen, CTO
-  Our #1 Enterprise Customer
-  $12M Annual Revenue
+✓ Plug & play in 15 minutes
+✓ AI predicts demand with 94% accuracy  
+✓ Automated ordering optimization
+✓ Mobile-first design
+✓ ROI in 30 days
 
-⚠️ Renewal at Risk
+[Product Demo Screenshot]
+
+"It's like having a crystal ball for our inventory"
+- Chef Thomas, Pilot Customer
 ```
 
-**Speaker Notes**:
-"This quote from Sarah Chen, CTO of our largest customer, captures the urgency. She represents $12M in annual revenue, and her renewal is at risk."
+**Speaker Notes (1:00):**
+"FoodSave AI uses machine learning to predict exactly what you'll sell tomorrow, next week, and next month. Our AI analyzes 50+ data points—weather, local events, historical patterns—to optimize inventory automatically. [Click to show brief product demo if using slides]"
 
 ---
 
-#### Slide 5: Competitive Landscape
+### Slide 5: How It Works
 
-**Visual Design**:
+**Visual Design:**
+- Three-step visual process
+- Icons and arrows showing flow
 
-- Positioning matrix
-- Competitive movement arrows
-- Threat indicators
-
-**Content**:
-
+**Content:**
 ```
-COMPETITIVE DYNAMICS
+SIMPLE AS 1-2-3
 
-         Digital Capability
-         High ▲
-              │
-    [Future]  │  🎯 Target Position
-    Leaders   │
-              │  [Disruptors]
-              │  Growing Fast ↗️
-    ──────────┼────────────────
-              │
-    [Us] 📍   │  [Traditional]
-    At Risk   │  Competitors
-              │
-         Low  └─────────────────→
-              Low        High
-              Customer Satisfaction
+1. CONNECT              2. PREDICT              3. SAVE
+Link POS & inventory → AI analyzes patterns → Automated ordering
+(15 minutes)           (Real-time)             (Daily optimization)
+
+    ↓                       ↓                      ↓
+                     
+No IT required        94% accuracy         40% waste reduction
 ```
 
-**Speaker Notes**:
-"This matrix shows our precarious position. We have decent customer satisfaction but lag in digital capability. The disruptors are moving fast."
+**Speaker Notes (0:45):**
+"Implementation is dead simple. Connect your existing POS system—we integrate with all major providers. Our AI immediately starts learning your patterns. Within days, you're seeing automated recommendations that slash waste and boost profits."
 
 ---
 
-#### Slide 6: The Vision
+### Slide 6: Business Model
 
-**Visual Design**:
+**Visual Design:**
+- Revenue model visualization
+- Growing arrow showing scalability
 
-- Bright, optimistic colors
-- Future state visualization
-- Transformation journey
-
-**Content**:
-
+**Content:**
 ```
-FROM TRADITIONAL TO TRANSFORMATIONAL
+SCALABLE SAAS MODEL
 
-TODAY                    TOMORROW
-───────────────    ⚡    ─────────────────
-Legacy Systems     →     Cloud-Native
-2-Day Delivery     →     2-Hour Delivery
-5% Digital Rev     →     60% Digital Rev
-#4 NPS Ranking     →     #1 NPS Ranking
+Pricing Tiers:
+STARTER: $299/month (< 50 seats)
+GROWTH: $599/month (50-200 seats)  
+ENTERPRISE: $1,499/month (200+ seats)
+
++ Success fee: 10% of savings in Year 1
+
+Average Customer Value: $8,400/year
+Gross Margin: 85%
 ```
 
-**Speaker Notes**:
-"But here's the exciting part. We have a clear path to transformation. In 18 months, we can revolutionize our operations and leap ahead of competition."
+**Speaker Notes (0:45):**
+"We charge a simple monthly SaaS fee based on location size, plus a success fee on actual savings. This aligns our incentives perfectly—we only win when our customers save money. With 85% gross margins, this model scales beautifully."
 
 ---
 
-#### Slide 7: Strategic Pillars
+### Slide 7: Traction
 
-**Visual Design**:
+**Visual Design:**
+- Hockey stick growth chart
+- Logo row of pilot customers
 
-- Four pillar graphic
-- Icons and descriptions
-- Interconnection indicators
-
-**Content**:
-
+**Content:**
 ```
-FOUR PILLARS OF TRANSFORMATION
+EXPLOSIVE EARLY GROWTH
 
-🏗️ MODERNIZE           👥 EMPOWER
-Infrastructure         People
-• Cloud migration      • Reskilling program
-• API-first           • Digital culture
-• Microservices       • Agile teams
+[Growth Chart showing 200% monthly growth]
 
-🚀 INNOVATE           📊 OPTIMIZE
-Products              Operations
-• AI capabilities     • Automation
-• Mobile-first        • Real-time analytics
-• Personalization     • Cost reduction
+By the Numbers:
+• 3 paid pilots → 12 customers in 4 months
+• $15K MRR (200% monthly growth)
+• 92% reduction in customer food waste
+• NPS: 87
+
+Pilot Customers:
+[Customer logos]
 ```
 
-**Speaker Notes**:
-"Our transformation rests on four strategic pillars, each reinforcing the others. Let me walk through each..."
+**Speaker Notes (1:00):**
+"We launched paid pilots 4 months ago with three restaurants. Word of mouth exploded—we now have 12 paying customers and a waitlist of 50+. Our NPS of 87 shows customers love us. One customer called us 'the most important tool in their restaurant.'"
 
 ---
 
-#### Slide 8: Financial Model
+### Slide 8: Market Opportunity
 
-**Visual Design**:
+**Visual Design:**
+- TAM/SAM/SOM circles
+- Market growth projection
 
-- Waterfall chart
-- ROI visualization
-- Clear financial metrics
-
-**Content**:
-
+**Content:**
 ```
-INVESTMENT & RETURNS
+MASSIVE AND GROWING MARKET
 
-Investment Required: $50M over 18 months
+TAM: $50B Global food waste problem
+SAM: $5B US restaurant & grocery tech
+SOM: $500M AI-powered inventory (by 2027)
 
-[Waterfall Chart showing:]
-Year 0: -$50M (Investment)
-Year 1: +$20M (Early wins)
-Year 2: +$80M (Scale benefits)
-Year 3: +$150M (Full transformation)
+600K restaurants in US alone
+38K grocery stores
+All need this solution
 
-Cumulative: $200M value created
-ROI: 300% | Payback: 18 months
+Market growing 32% CAGR
 ```
 
-**Speaker Notes**:
-"The financials are compelling. Our $50M investment generates $200M in value over three years—a 300% ROI with 18-month payback."
+**Speaker Notes (0:45):**
+"The opportunity is massive. Just in the US, there are over 600,000 restaurants and 38,000 grocery stores. If we capture just 1% of this market at our current pricing, that's $500M in ARR. And this market is growing 32% annually as businesses digitize."
 
 ---
 
-#### Slide 9: Risk Mitigation
+### Slide 9: Competitive Advantage
 
-**Visual Design**:
+**Visual Design:**
+- Competitive matrix
+- Our position highlighted
 
-- Risk matrix
-- Mitigation strategies
-- Confidence indicators
-
-**Content**:
-
+**Content:**
 ```
-ADDRESSING CONCERNS PROACTIVELY
+DEFENSIBLE COMPETITIVE MOATS
 
-RISK                  MITIGATION              CONFIDENCE
-─────────────────────────────────────────────────────
-Execution Risk        Proven partner          ✓✓✓✓░
-Technology Risk       Phased approach         ✓✓✓✓✓
-Cultural Resistance   Change management       ✓✓✓░░
-Budget Overrun        Fixed-price contracts   ✓✓✓✓░
+                 FoodSave AI    CompetitorA    CompetitorB
+AI Accuracy         94%            75%            Manual
+Setup Time       15 mins        6 months        3 months  
+Mobile First        ✓              ✗              ✗
+Price            $299/mo        $2,000/mo       $500/mo
+ROI Period       30 days        12 months       6 months
+
+Our Secret Sauce:
+• Proprietary AI trained on 10M+ transactions
+• 3 patents pending
+• 6-month head start on data
 ```
 
-**Speaker Notes**:
-"I know some of you have concerns about execution risk. We've addressed each systematically with proven mitigation strategies."
+**Speaker Notes (0:45):**
+"Our competitive advantage is threefold: superior AI accuracy from our proprietary model, 10x faster implementation, and a price point that makes this a no-brainer decision. We have three patents pending on our prediction algorithms."
 
 ---
 
-#### Slide 10: Quick Wins
+### Slide 10: Team
 
-**Visual Design**:
+**Visual Design:**
+- Professional headshots
+- Brief credentials below each
 
-- Timeline graphic
-- Milestone markers
-- Value indicators
-
-**Content**:
-
+**Content:**
 ```
-DELIVERING VALUE FAST
+EXPERIENCED TEAM THAT SHIPS
 
-MONTH 3             MONTH 6              MONTH 9
-─────────────────────────────────────────────────
-Mobile App          Customer Portal      AI Features
-↓                   ↓                    ↓
-$5M Revenue         30% Cost Savings     2x Conversion
-"Wow Factor"        "Efficiency Gains"   "Game Changer"
+[CEO Photo]               [CTO Photo]              [Head of Sales Photo]
+Jane Smith               Bob Johnson              Maria Garcia
+Ex-DoorDash PM          Ex-Google ML Eng         Ex-Toast Enterprise
+Built $100M product     Published AI researcher   Sold to 500+ restaurants
+
++ 3 engineers from FAANG companies
++ Advisory board includes former Sysco CEO
 ```
 
-**Speaker Notes**:
-"We'll see tangible results quickly. By month 3, our mobile app will generate $5M in new revenue. These quick wins build momentum."
+**Speaker Notes (0:45):**
+"Our team combines deep food industry expertise with world-class AI capabilities. I led product at DoorDash where I saw this problem firsthand. Bob published papers on predictive algorithms at Google. Maria closed over $10M in restaurant tech sales at Toast."
 
 ---
 
-#### Slide 11: Success Stories
+### Slide 11: Funding Ask
 
-**Visual Design**:
+**Visual Design:**
+- Clear breakdown of use of funds
+- Timeline visualization
 
-- Case study format
-- Before/after comparison
-- Credibility indicators
-
-**Content**:
-
+**Content:**
 ```
-PROVEN APPROACH, PROVEN RESULTS
+RAISING $2M TO ACCELERATE GROWTH
 
-RETAIL GIANT X              BANK Y
-─────────────────   ⚡   ──────────────────
-Before:                  Before:
-• 15% digital revenue    • 2-week loan approval
-• #5 market position     • 20% digital adoption
+Use of Funds:
+40% - Engineering (AI team expansion)
+30% - Sales & Marketing  
+20% - Operations
+10% - Working Capital
 
-After:                   After:
-• 65% digital revenue    • Same-day approval
-• #1 market position     • 75% digital adoption
-• 4x valuation           • 50% cost reduction
+Milestones:
+• 100 customers (6 months)
+• $150K MRR (9 months)
+• Series A ready (12 months)
+
+Previous investors: Techstars, angel syndicate
 ```
 
-**Speaker Notes**:
-"This isn't theoretical. Retail Giant X and Bank Y achieved remarkable results using this exact approach."
+**Speaker Notes (0:45):**
+"We're raising $2M to pour fuel on the fire. We know exactly how to deploy this capital—primarily expanding our AI engineering team and building out sales. This gets us to 100 customers and Series A metrics within 12 months."
 
 ---
 
-#### Slide 12: The Ask
+### Slide 12: The Ask
 
-**Visual Design**:
+**Visual Design:**
+- Bold, clear call to action
+- Contact information
 
-- Bold, clear ask
-- Investment breakdown
-- Approval timeline
-
-**Content**:
-
+**Content:**
 ```
-INVESTMENT APPROVAL REQUEST
+JOIN US IN ELIMINATING FOOD WASTE
 
-$50M TOTAL INVESTMENT
+The Opportunity:
+✓ Massive $50B problem
+✓ Proven product-market fit
+✓ Scalable business model
+✓ Experienced team
 
-ALLOCATION:
-├── Technology Platform      $20M (40%)
-├── Talent & Training       $15M (30%)
-├── Partner Expertise       $10M (20%)
-└── Change Management       $5M  (10%)
+Next Steps:
+→ Let's discuss how you can be part of this journey
 
-DECISION NEEDED BY: March 31st
-START DATE: April 15th
+Jane Smith, CEO
+jane@foodsave.ai | (555) 123-4567
 ```
 
-**Speaker Notes**:
-"I'm requesting approval for a $50M investment, broken down as shown. We need a decision by March 31st to maintain our aggressive timeline."
+**Speaker Notes (0:30):**
+"Food waste is a massive problem that we're uniquely positioned to solve. We have the team, the technology, and the traction. We'd love to explore how you could be part of this journey. What questions can I answer for you?"
 
 ---
 
-#### Slide 13: Implementation Roadmap
+## VISUAL DESIGN SPECIFICATIONS
 
-**Visual Design**:
+**Color Palette:**
+- Primary: #2ECC71 (Fresh Green)
+- Secondary: #34495E (Professional Dark)
+- Accent: #E74C3C (Alert Red)
+- Background: #FFFFFF (Clean White)
+- Text: #2C3E50 (Readable Dark)
 
-- Gantt-style timeline
-- Phase indicators
-- Milestone markers
+**Typography:**
+- Headlines: Montserrat Bold, 36-48pt
+- Body: Open Sans Regular, 18-24pt
+- Data: Roboto Medium, 16-20pt
 
-**Content**:
+**Layout Principles:**
+- Maximum 6 lines of text per slide
+- 40% whitespace minimum
+- One key message per slide
+- Data visualized, not listed
 
-```
-18-MONTH TRANSFORMATION JOURNEY
+## SPEAKER NOTES SUMMARY
 
-Q2 2024: FOUNDATION
-├── Team formation
-├── Platform selection
-└── Quick wins launch
+**Total Time:** 10 minutes (9:30 content + 0:30 buffer)
 
-Q3-Q4 2024: BUILD
-├── Core migration
-├── Feature development
-└── Pilot programs
+**Pacing Guide:**
+- Slides 1-3: Hook them (1:30)
+- Slides 4-7: Show the opportunity (3:30)
+- Slides 8-10: Prove you can win (2:30)
+- Slides 11-12: Make the ask (1:30)
 
-Q1-Q2 2025: SCALE
-├── Full rollout
-├── Innovation features
-└── Market leadership
+**Energy Map:**
+- Start strong with the problem
+- Peak at traction slide
+- End with confident ask
 
-Q3 2025: OPTIMIZE
-└── Continuous improvement
-```
+## Q&A PREPARATION
 
-**Speaker Notes**:
-"Our 18-month journey is carefully planned with clear phases and milestones. We'll start with foundation work and quick wins."
+**Expected Questions & Answers:**
 
----
+**Q: How accurate is your 94% prediction rate?**
+A: "Measured across all pilot customers over 4 months. We predict daily demand within 6% margin of error, which translates to 94% inventory optimization. Even at 80% accuracy, customers see dramatic savings."
 
-#### Slide 14: Success Metrics
+**Q: What's your customer acquisition cost?**
+A: "Currently $800 CAC with 3-month payback. As we scale, we expect this to drop to $500 with increased word-of-mouth and brand awareness."
 
-**Visual Design**:
+**Q: How do you prevent competitors from copying?**
+A: "Three barriers: Our proprietary AI model improves with every transaction, we have patents pending on key algorithms, and we're building deep customer relationships with our success-based pricing."
 
-- Dashboard mockup
-- KPI indicators
-- Target vs actual
+**Q: What if Amazon enters this space?**
+A: "Amazon focuses on broad horizontal plays. We're building deep, specialized AI for food service. Plus, restaurants are wary of sharing data with Amazon who competes with them in food delivery."
 
-**Content**:
+**Q: Why now?**
+A: "Three factors converged: COVID digitized restaurants, food costs hit record highs, and AI technology finally reached the accuracy needed. The market is primed for this solution now."
 
-```
-MEASURING SUCCESS
+## SUPPORTING MATERIALS
 
-KEY PERFORMANCE INDICATORS
-─────────────────────────────────────
-📈 Revenue Growth      15% → 35%
-⏱️ Time to Market      6mo → 1mo
-😊 NPS Score          45 → 75
-💰 Cost per Trans     $12 → $3
-📱 Digital Adoption    20% → 80%
-```
+### One-Page Leave-Behind
 
-**Speaker Notes**:
-"We'll track success through five key metrics, each with aggressive but achievable targets."
+**FoodSave AI Investment Summary**
 
----
+**Problem:** $50B in annual food waste
+**Solution:** AI-powered predictive inventory
+**Traction:** 200% monthly growth, 12 paying customers
+**Market:** 600K+ potential customers in US alone
+**Ask:** $2M seed round
+**Use:** Scale engineering and sales
+**Contact:** jane@foodsave.ai
 
-#### Slide 15: Call to Action
+[Include same metrics from slides in visual format]
 
-**Visual Design**:
+### Technical Setup Checklist
 
-- Powerful closing statement
-- Clear next steps
-- Urgency indicator
+**Before Presenting:**
+- [ ] Test laptop with projector
+- [ ] PDF backup on USB drive
+- [ ] Phone on silent
+- [ ] Clicker/remote ready
+- [ ] Water bottle filled
 
-**Content**:
+**Backup Plans:**
+- Email PDF to yourself
+- Print physical copies
+- Practice without slides
+- Have demo video downloaded
 
-```
-THE MOMENT OF DECISION
-
-"The best time to plant a tree was 20 years ago.
-The second best time is now."
-
-✅ APPROVE $50M investment
-✅ EMPOWER transformation team
-✅ COMMIT to digital future
-
-Every day we wait, competitors gain ground.
-The time to act is NOW.
-```
-
-**Speaker Notes**:
-"Board members, we stand at a crossroads. The digital revolution won't wait for us. I urge you to approve this investment today."
-
----
-
-### SUPPORTING MATERIALS
-
-#### Appendix Slides (16-25)
-
-**Financial Details**
-
-- Detailed ROI calculations
-- Sensitivity analysis
-- Cash flow projections
-
-**Technical Architecture**
-
-- System diagrams
-- Integration plans
-- Security framework
-
-**Organization Design**
-
-- New structure
-- Talent requirements
-- Training programs
-
-**Risk Register**
-
-- Comprehensive risk list
-- Mitigation details
-- Contingency plans
-
-### DESIGN SPECIFICATIONS
-
-#### Visual Identity
-
-```
-Color Palette:
-- Primary: #1E3A8A (Deep Blue)
-- Secondary: #10B981 (Success Green)
-- Accent: #F59E0B (Attention Amber)
-- Danger: #EF4444 (Alert Red)
-- Neutral: #6B7280 (Professional Gray)
-
-Typography:
-- Headlines: Inter Bold
-- Body: Inter Regular
-- Data: Inter Medium
-- Emphasis: Inter Semi-Bold
-
-Grid System:
-- 12-column grid
-- 40px margins
-- 20px gutters
-- 16:9 aspect ratio
-```
-
-#### Animation Principles
-
-```
-Transitions:
-- Fade in: 0.3s ease-out
-- Slide up: 0.4s ease-out
-- Scale: 0.5s ease-in-out
-- Sequential reveals: 0.2s delay
-
-Data Animations:
-- Charts build progressively
-- Numbers count up
-- Comparisons highlight
-- Paths draw in
-```
-
-### SPEAKER NOTES GUIDE
-
-#### Opening Hook
-
-"Before we begin, let me share a number that should concern us all: 45%. That's how much of our revenue is at risk from digital disruption in the next 24 months. But today, I'll show you how we can turn this threat into our greatest opportunity."
-
-#### Transition Phrases
-
-- "This brings us to..."
-- "You might be wondering..."
-- "Let me address the elephant in the room..."
-- "Here's where it gets exciting..."
-- "The bottom line is this..."
-
-#### Handling Objections
-
-**Cost Concern**: "I understand $50M is significant. But consider this: doing nothing costs us $200M in lost opportunity."
-
-**Timing Concern**: "Yes, 18 months is aggressive. But our competitors are moving even faster."
-
-**Risk Concern**: "Every transformation has risks. But the biggest risk is maintaining status quo."
-
-### Q&A PREPARATION
-
-#### Anticipated Questions
-
-**Q: How confident are you in the ROI projections?**
-A: "Our projections are conservative, based on industry benchmarks. Similar companies achieved 20-30% higher returns."
-
-**Q: What if we fail?**
-A: "We've designed this with fail-safes. Our phased approach means we can pivot quickly. Plus, even partial success puts us ahead."
-
-**Q: Why not start smaller?**
-A: "Half-measures won't move the needle. We need critical mass to achieve network effects and cultural change."
-
-**Q: How will employees react?**
-A: "Change is hard, but we're investing 10% of budget in change management. Our people want to win—we're giving them the tools."
-
-### TECHNICAL SETUP
-
-#### Equipment Checklist
-
-- [ ] Primary laptop + backup
-- [ ] Clicker/presenter remote
-- [ ] Display adapters (HDMI, USB-C)
-- [ ] Laser pointer
-- [ ] Backup on USB drive
-- [ ] Printed handouts
-- [ ] Speaker notes (tablet/cards)
-
-#### Platform Settings
-
-```
-PowerPoint/Keynote:
-- Presenter view enabled
-- Auto-advance disabled
-- Slide numbers visible
-- 1920x1080 resolution
-
-Zoom/Teams:
-- Share screen optimized
-- Presenter notes on second monitor
-- Chat monitoring assigned
-- Recording enabled
-```
-
-### HANDOUT DESIGN
-
-**Executive Summary** (1 page)
-
-- Investment ask
-- Key benefits
-- ROI summary
-- Timeline
-- Next steps
-
-**Detailed Packet** (10 pages)
-
-- Full business case
-- Financial projections
-- Risk analysis
-- Implementation plan
-- Success metrics
-
-### ACCESSIBILITY FEATURES
-
-#### Visual Accessibility
-
-- High contrast ratios (7:1 minimum)
-- Large fonts (24pt minimum)
-- Clear icons with labels
-- Color-blind safe palette
-- Alt text for all images
-
-#### Delivery Accessibility
-
-- Speak clearly, pace deliberately
-- Describe visual elements
-- Provide handouts in advance
-- Offer multiple formats
-- Record for later viewing
-
-### POST-PRESENTATION FOLLOW-UP
-
-#### Immediate Actions
-
-1. Send thank you email
-2. Share presentation deck
-3. Provide additional resources
-4. Schedule follow-up meetings
-5. Address outstanding questions
-
-#### Follow-Up Materials
-
-```
-Email Template:
-
-Subject: Digital Transformation Presentation - Follow-Up Materials
-
-Board Members,
-
-Thank you for your time and thoughtful questions today.
-As promised, I'm sharing:
-
-• Presentation deck (attached)
-• Detailed financial model (link)
-• Case study references (attached)
-• FAQ document (attached)
-
-Next steps:
-- March 25: Finance committee review
-- March 28: Final Q&A session
-- March 31: Investment decision
-
-I remain available for any additional questions.
-
-Best regards,
-[Name]
-```
-
-## Usage Instructions
-
-1. Start with your core message and build everything around it
-2. Know your audience deeply - their concerns, priorities, language
-3. Use the 10% rule - if presenting for 20 minutes, prepare 200 minutes
-4. Design for the back of the room - everything must be readable
-5. Practice transitions between slides more than individual slides
-6. Prepare for technology failure - have backups
-7. End with clear next steps, not just summary
-8. Leave time for interaction and questions
-
-## Examples
-
-### Example 1: Startup Pitch Deck
-
-**Input**:
-
-```
-{{presentation_type}}: Investor pitch deck
-{{audience}}: VCs and angel investors
-{{objective}}: Raise $5M Series A
-{{duration}}: 10 minutes pitch + 20 minutes discussion
-{{key_message}}: We're the Uber of healthcare logistics
-```
-
-**Output**: [10-slide pitch deck with compelling problem/solution narrative, $2B market opportunity, strong traction metrics, clear use of funds, and powerful team slide]
+This complete package gives you everything needed to deliver a compelling pitch that gets investors excited about your opportunity!
 
 ## Related Prompts
 
-- [Data Visualization Expert](/prompts/creation/data-visualization-expert.md)
-- [Storytelling Specialist](/prompts/communication/storytelling-specialist.md)
-- [Executive Communication Coach](/prompts/communication/executive-communication.md)
-
-## Research Notes
-
-- Combines narrative structure with visual design excellence
-- Emphasizes clarity and simplicity over complexity
-- Includes comprehensive speaker preparation
-- Addresses both content and delivery
-- Provides complete presentation ecosystem
+- [Pitch Deck Designer](./pitch-deck-designer.md)
+- [Data Visualization Expert](./data-visualization-expert.md)
+- [Executive Communication Coach](./executive-communication-coach.md)

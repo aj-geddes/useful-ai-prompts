@@ -1,574 +1,465 @@
-# Visual Design Concepts Expert and Creative Direction Strategist
+# Visual Design Concepts Expert
 
 ## Metadata
 
 - **Category**: Creation
 - **Tags**: visual design, creative concepts, art direction, brand aesthetics, design systems
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Master Visual Design Expert, Creative Direction Strategist
+- **Version**: 2.0.0
 - **Use Cases**: brand identity, marketing campaigns, product design, environmental design, digital experiences
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt combines master visual design expertise with creative direction strategy to develop compelling visual concepts that communicate effectively and resonate emotionally. It employs design principles, color theory, typography, and cultural insights to create cohesive visual systems.
+A practical visual design assistant that helps you create compelling visual concepts and brand identities. Provide your design requirements and I'll develop comprehensive visual solutions with creative concepts, color palettes, typography, and implementation guidelines.
 
-## Prompt Template
-
-```
-You are operating as a dual-expertise visual design system combining:
-
-1. **Master Visual Design Expert** (15+ years experience)
-   - Expertise: Design principles, color theory, typography, composition, visual hierarchy
-   - Strengths: Aesthetic judgment, trend awareness, technical execution, design systems
-   - Perspective: Every visual element should serve both function and emotion
-
-2. **Creative Direction Strategist**
-   - Expertise: Brand strategy, conceptual development, cultural insights, storytelling
-   - Strengths: Big picture thinking, metaphor creation, emotional resonance, market positioning
-   - Perspective: Visual design as strategic communication that drives business outcomes
-
-Apply these design frameworks:
-- **Gestalt Principles**: Visual perception and organization
-- **Grid Systems**: Structure and consistency
-- **Color Psychology**: Emotional and cultural associations
-- **Design Thinking**: Human-centered approach to visual solutions
-
-DESIGN CONTEXT:
-- **Project Type**: {{brand_identity_campaign_product_environmental_digital}}
-- **Industry/Sector**: {{category_audience_culture_market_position}}
-- **Brand Personality**: {{adjectives_values_voice_archetype}}
-- **Target Audience**: {{demographics_psychographics_cultural_context}}
-- **Design Goals**: {{awareness_engagement_conversion_education}}
-- **Deliverables**: {{logo_system_campaign_UI_packaging_space}}
-- **Constraints**: {{budget_timeline_technical_legal_cultural}}
-- **Existing Assets**: {{current_brand_guidelines_legacy_systems}}
-- **Competition**: {{direct_indirect_aspirational_references}}
-- **Success Metrics**: {{recognition_engagement_sales_perception}}
-
-DESIGN REQUIREMENTS:
-{{specific_needs_mandatories_inspirations_avoid}}
-
-DESIGN FRAMEWORK:
-
-Phase 1: DISCOVERY & STRATEGY
-1. Brand audit
-2. Audience insights
-3. Competitive analysis
-4. Concept development
-
-Phase 2: VISUAL EXPLORATION
-1. Mood boards
-2. Style directions
-3. Concept sketches
-4. Design experiments
-
-Phase 3: SYSTEM DEVELOPMENT
-1. Core elements
-2. Applications
-3. Guidelines
-4. Variations
-
-Phase 4: IMPLEMENTATION
-1. Asset creation
-2. Quality control
-3. Rollout planning
-4. Impact measurement
-
-DELIVER YOUR DESIGN CONCEPTS AS:
-```
-
-## COMPREHENSIVE VISUAL DESIGN SOLUTION
-
-### PROJECT BRIEF
-
-**Client**: EcoFlow - Sustainable Energy Startup
-**Project**: Complete Visual Identity System
-**Challenge**: Position as premium yet accessible clean energy solution
-
-**Brand Essence**: "Nature's Power, Human Progress"
-**Target Audience**: Environmentally conscious homeowners, 35-55, high income
-**Competitive Position**: Premium alternative to Tesla Powerwall
-
-### STRATEGIC FOUNDATION
-
-#### Brand Personality Map
-
-**Archetype**: The Magician × The Sage
-
-- Transforms natural resources into modern solutions
-- Wise use of technology for sustainable future
-
-**Personality Attributes**:
-
-- **Innovative** but grounded
-- **Premium** but approachable
-- **Technical** but human
-- **Sustainable** but powerful
-- **Modern** but timeless
-
-**Emotional Territory**:
-
-- Empowerment through clean energy
-- Peace of mind from reliability
-- Pride in environmental stewardship
-- Excitement about the future
-
-### CREATIVE CONCEPT
-
-#### Core Concept: "Flow State"
-
-The visual identity captures the seamless flow of energy from nature to home, representing both the technical process and the lifestyle transformation. Like water finding its path, energy flows naturally and efficiently through the EcoFlow system.
-
-**Visual Metaphors**:
-
-- River currents = Energy flow
-- Leaf veins = Distribution networks
-- Dawn light = New energy era
-- Geometric patterns = Technical precision
-
-### DESIGN SYSTEM
-
-#### 1. LOGO DESIGN
-
-**Primary Mark**:
+## Prompt
 
 ```
-Concept: Abstract "E" formed by flowing energy lines
+I'll help you create powerful visual design concepts that communicate your brand effectively. Let me gather information about your design needs.
 
-Visual Description:
-- Three flowing lines creating negative space "E"
-- Lines transition from organic to geometric
-- Suggests movement from nature to technology
-- Works at any scale, memorable silhouette
+About your project:
+1. What type of visual design do you need? (brand identity, campaign, product design, etc.)
+2. What's your business/organization about?
+3. Who is your target audience? (demographics, interests, values)
+4. What personality should the design convey? (modern, traditional, playful, serious, etc.)
+
+Design requirements:
+5. What are your main design goals? (awareness, trust, differentiation, conversion)
+6. What deliverables do you need? (logo, color palette, typography, templates, etc.)
+7. Do you have existing brand elements to work with or build from?
+8. What's your timeline and budget level?
+
+Creative direction:
+9. What competitors or references should I consider?
+10. What styles do you like? What should be avoided?
+11. Any specific colors, symbols, or themes to include?
+12. How will the design be used? (digital, print, merchandise, signage)
+
+Based on your answers, I'll create:
+
+**1. CREATIVE CONCEPT** - Core idea and visual metaphors
+**2. VISUAL IDENTITY** - Logo, colors, typography, and graphic elements
+**3. DESIGN SYSTEM** - Consistent visual language across applications
+**4. APPLICATION EXAMPLES** - How it looks in real-world use
+**5. BRAND GUIDELINES** - Rules for consistent implementation
+
+Please provide the information above, and I'll develop a distinctive visual design that brings your brand to life.
 ```
 
-**Logo Variations**:
+## Example Usage
 
-- **Horizontal lockup**: Logo + wordmark for headers
-- **Stacked version**: Compact for mobile/social
-- **Icon only**: App icons, favicons
-- **Monochrome**: Single color applications
-- **Reverse**: For dark backgrounds
+**User Input:**
+```
+1. Visual design type: Complete brand identity for new business
+2. Business: Artisan coffee roastery and cafe chain
+3. Target audience: Coffee enthusiasts 25-45, urban professionals, value quality and sustainability
+4. Personality: Sophisticated, warm, craft-focused, approachable
 
-**Clear Space & Minimum Sizes**:
+5. Design goals: Build trust, convey quality, create memorable experience, drive loyalty
+6. Deliverables: Logo, color system, packaging design, store signage, digital assets
+7. Existing elements: None, starting fresh but inspired by specialty coffee culture
+8. Timeline: 6 weeks, medium budget
 
-- Clear space = 1x height of "E"
-- Minimum size print: 0.5 inches
-- Minimum size digital: 32px
+9. Competitors: Blue Bottle, Intelligentsia, local craft roasters
+10. Style preferences: Clean but warm, avoid corporate feel, like Scandinavian design
+11. Include: Coffee bean imagery subtle, earth tones, craft/handmade feel
+12. Usage: Storefronts, packaging, website, mobile app, merchandise
+```
 
-#### 2. COLOR PALETTE
+**Assistant Output:**
 
-**Primary Colors**:
+Based on your artisan coffee roastery needs, here's your comprehensive visual design solution:
 
-**EcoFlow Green** (#00A878)
+# ROAST & BREW - VISUAL IDENTITY SYSTEM
 
-- Represents: Nature, growth, sustainability
-- Use: Primary brand color, CTAs
-- Variations: Tints for backgrounds, shades for text
+## 1. CREATIVE CONCEPT
 
-**Energy Amber** (#FFB534)
+### Core Concept: "From Seed to Soul"
 
-- Represents: Solar power, warmth, optimism
-- Use: Accent, highlighting, energy visualization
-- Variations: Gradient combinations
+The visual identity captures the complete journey of coffee - from carefully selected beans to the meaningful moments created over each cup. Every design element reflects the craft, care, and connection that defines artisan coffee culture.
 
-**Tech Slate** (#2C3E50)
+**Visual Story:**
+- The precision of the roasting process
+- The warmth of human connection
+- The ritual of coffee preparation
+- The sustainability of the source
 
-- Represents: Technology, reliability, premium
-- Use: Text, technical drawings, professional contexts
-- Variations: UI elements, diagrams
+**Key Visual Metaphors:**
+- Coffee rings as community circles
+- Steam patterns as conversation flows
+- Bean shapes as design elements
+- Roasting curves as brand patterns
 
-**Secondary Palette**:
+## 2. VISUAL IDENTITY
 
-**Sky Blue** (#5DADE2): Clean air, clarity
-**Stone Gray** (#95A5A6): Stability, neutrality
-**Pure White** (#FFFFFF): Simplicity, cleanliness
-**Deep Charcoal** (#1A1A1A): Premium, sophistication
+### Logo Design
 
-**Color Proportions**:
+**Primary Mark:**
+```
+Concept: Abstract coffee bean forming an "R" monogram
 
-- 40% EcoFlow Green
-- 20% Tech Slate
-- 20% White space
-- 15% Energy Amber
-- 5% Secondary colors
+     ○○○
+    ○   ○
+   ○  R  ○
+   ○     ○
+    ○   ○
+     ○○○
 
-**Accessibility**:
-All color combinations meet WCAG AA standards for contrast
+ROAST & BREW
+Craft Coffee Roasters
+```
 
-#### 3. TYPOGRAPHY
+**Design Rationale:**
+- Coffee bean shape creates memorable icon
+- Hidden "R" adds clever discovery moment
+- Circular form suggests community and wholeness
+- Clean lines reflect modern craft aesthetic
 
-**Primary Typeface**: Neue Montreal
+**Logo Variations:**
+- Icon only (for app, stamps)
+- Horizontal lockup (signage)
+- Stacked version (packaging)
+- Simplified mark (small applications)
 
-- Modern geometric sans-serif
-- Clean, technical, approachable
-- Excellent readability
+### Color Palette
+
+**Primary Colors:**
+
+**Roast Brown** (#3E2723)
+- Deep, rich espresso brown
+- Use: Logo, headlines, primary text
+- Represents: Craft, quality, depth
+
+**Cream** (#F5E6D3)
+- Warm, inviting neutral
+- Use: Backgrounds, packaging base
+- Represents: Warmth, comfort, approachability
+
+**Copper** (#B87333)
+- Metallic accent inspired by roasting drums
+- Use: Accents, highlights, premium touches
+- Represents: Craft process, warmth, sophistication
+
+**Secondary Palette:**
+
+**Sage Green** (#87A96B) - Sustainability, growth
+**Clay Red** (#C65D00) - Energy, passion
+**Charcoal** (#36454F) - Sophistication, contrast
+**Oat** (#FBF5E9) - Light backgrounds, softness
+
+**Color Usage:**
+- 40% Cream (breathing room)
+- 30% Roast Brown (anchoring)
+- 20% Photography/White space
+- 10% Accent colors
+
+### Typography
+
+**Primary Typeface: Moderat**
+- Modern sans-serif with character
+- Slightly rounded corners for warmth
+- Excellent readability at all sizes
 - Supports multiple languages
 
-**Type Hierarchy**:
-
+**Type Hierarchy:**
 ```
-H1: Neue Montreal Medium, 48pt, -2% tracking
-H2: Neue Montreal Regular, 32pt, -1% tracking
-H3: Neue Montreal Medium, 24pt, 0% tracking
-Body: Neue Montreal Regular, 16pt, 0% tracking
-Caption: Neue Montreal Regular, 14pt, +1% tracking
+H1: Moderat Medium, 42pt, -2% tracking
+H2: Moderat Regular, 28pt, -1% tracking
+H3: Moderat Medium, 20pt, 0% tracking
+Body: Moderat Regular, 16pt, +1% tracking
+Small: Moderat Regular, 14pt, +2% tracking
 ```
 
-**Secondary Typeface**: Source Serif Pro
+**Secondary Typeface: Fraunces**
+- Serif for special applications
+- Adds craft and editorial feel
+- Use for quotes, special menus
+- Contrasts nicely with Moderat
 
-- For long-form content
-- Editorial applications
-- Adds warmth and sophistication
+**Typography Principles:**
+- Generous line spacing for readability
+- Left-aligned for easy scanning
+- Short line lengths (45-65 characters)
+- Clear hierarchy throughout
 
-**Type Applications**:
+### Graphic Elements
 
-- Headlines: Short, powerful, benefit-focused
-- Body: Clear, scannable, informative
-- Technical: Precise, organized, accessible
-- Marketing: Emotional, aspirational, active
+**Pattern System:**
 
-#### 4. VISUAL ELEMENTS
+**Coffee Rings:**
+- Overlapping circular patterns
+- Various opacities for depth
+- Use as background texture
+- Represents community, connection
 
-**Graphic System**:
+**Bean Illustrations:**
+- Simple line drawings
+- Can be used as bullets, dividers
+- Scale from tiny to large
+- Always maintain 2pt stroke
 
-**Flow Lines**:
+**Roast Curves:**
+- Temperature curve graphics
+- Use as decorative elements
+- Can animate for digital
+- Shows craft and precision
 
-- Curved paths representing energy flow
-- Can be animated for digital applications
-- Used as decorative elements and infographics
+**Steam Wisps:**
+- Organic flowing lines
+- Suggests warmth, freshness
+- Use above cup imagery
+- Can be static or animated
 
-**Grid Patterns**:
+## 3. DESIGN SYSTEM
 
-- Solar panel inspired geometric grids
-- Used for backgrounds and technical illustrations
-- Represents organization and efficiency
+### Photography Style
 
-**Nature Elements**:
+**Hero Photography:**
+- Natural morning light
+- Authentic coffee moments
+- Hands crafting, not posing
+- Rich, warm color grading
 
-- Abstracted leaves, sun rays, water ripples
-- Photographic and illustrated treatments
-- Connect technology to natural world
+**Product Shots:**
+- Clean marble or wood surfaces
+- Natural shadows
+- Ingredients visible (beans, cups)
+- Minimal props, focus on coffee
 
-**Data Visualizations**:
+**Lifestyle Images:**
+- Real customers, unstaged moments
+- Café atmosphere shots
+- Coffee preparation process
+- Community and connection
 
-- Circular charts for energy usage
-- Flow diagrams for system explanations
-- Real-time dashboard aesthetics
-
-#### 5. PHOTOGRAPHY STYLE
-
-**Hero Photography**:
-
-- Golden hour lighting
-- Modern homes with natural surroundings
-- Happy families using clean energy
-- Authentic, unstaged moments
-
-**Product Photography**:
-
-- Clean, minimal backgrounds
-- Dramatic lighting to show form
-- Context shots in home settings
-- Detail shots highlighting quality
-
-**Lifestyle Photography**:
-
-- Real people, diverse representation
-- Environmental context prominent
-- Technology integrated naturally
-- Optimistic, forward-looking tone
-
-**Photo Treatments**:
-
-- Warm color grading
-- High contrast for energy
-- Natural saturation levels
+**Photo Treatment:**
+- Warm color temperature
+- High contrast for richness
+- Soft vignetting for focus
 - Consistent filter presets
 
-#### 6. ICONOGRAPHY
+### Packaging Design
 
-**Icon Principles**:
+**Coffee Bag Design:**
+- Kraft paper with matte finish
+- Copper foil stamp logo
+- Roast level color coding
+- Origin story on back
+- Resealable with tin tie
 
-- 2px stroke weight
-- Rounded corners (2px radius)
-- 24x24px base grid
-- Consistent visual weight
-
-**Icon Categories**:
-
-- **Energy**: Solar, battery, grid, consumption
-- **Features**: Smart home, monitoring, safety
-- **Benefits**: Savings, environment, reliability
-- **Interface**: Navigation, actions, status
-
-**Icon Applications**:
-
-- UI elements
-- Infographics
-- Way-finding
-- Marketing bullets
-
-### APPLICATION EXAMPLES
-
-#### Digital Applications
-
-**Website Homepage**:
-
+**Label System:**
 ```
-Hero Section:
-- Full-width video background (flowing water to solar panels)
-- Floating UI cards with energy stats
-- Bold headline in EcoFlow Green
-- Subtle animation on scroll
+[Logo]
+SINGLE ORIGIN
+ETHIOPIA YIRGACHEFFE
 
-Navigation:
-- Transparent header becoming solid on scroll
-- Green CTA button for quotes
-- Minimal, focused menu items
+Tasting Notes:
+Floral • Citrus • Honey
+
+Roast Date: [Stamp]
 ```
 
-**Mobile App Interface**:
+**Cup Design:**
+- Cream base color
+- Logo at optimal sip height
+- Hidden message in bottom
+- Recycled materials noted
 
+### Environmental Design
+
+**Storefront:**
+- Painted wood signage
+- Copper letter details
+- Window coffee facts
+- Warm interior visible
+
+**Interior Elements:**
+- Menu boards with chalk details
+- Bean origin wall map
+- Roasting process timeline
+- Community photo wall
+
+**Branded Items:**
+- Aprons with embroidered logo
+- Ceramic mugs for in-store
+- Canvas tote bags
+- Coffee equipment
+
+## 4. APPLICATION EXAMPLES
+
+### Digital Applications
+
+**Website Design:**
 ```
-Dashboard:
-- Circular energy flow visualization
-- Real-time consumption data
-- Card-based information hierarchy
-- Bottom navigation with custom icons
+Homepage Hero:
+- Full-width coffee pour video
+- "From Seed to Soul" headline
+- Shop/Visit/Learn CTAs
+- Warm, inviting atmosphere
 
-Color Usage:
-- Green for positive states (generating)
-- Amber for active states (consuming)
-- Gray for inactive elements
-- White space for breathing room
+Product Pages:
+- Large bean photography
+- Roast profile graphics
+- Origin story sections
+- Brewing recommendations
 ```
 
-#### Print Applications
+**Mobile App:**
+```
+Order Ahead Feature:
+- Clean card-based design
+- Coffee customization
+- Loyalty program integration
+- Store locator with hours
+```
 
-**Business Cards**:
+### Print Applications
 
-- Soft-touch matte finish
-- Spot UV on logo
-- Green edge coloring
-- QR code to energy calculator
+**Business Cards:**
+- Cream cotton paper
+- Copper foil logo
+- Roast brown letterpress text
+- Coffee stain pattern on back
 
-**Brochure System**:
+**Coffee Cards:**
+- Tasting note templates
+- Origin information
+- Brewing instructions
+- QR to farming video
 
-- Gatefold for product overview
-- Infographic-heavy layout
-- Premium paper with subtle texture
-- Die-cut corners suggesting flow
+### Social Media
 
-#### Environmental Design
+**Instagram Grid:**
+- Alternating coffee/people
+- Consistent warm filter
+- Quote cards in brand type
+- Behind-scenes stories
 
-**Trade Show Booth**:
+**Templates:**
+- New roast announcements
+- Coffee education posts
+- Customer features
+- Sustainability updates
 
-- Curved walls suggesting flow
-- LED accent lighting in brand colors
-- Interactive digital displays
-- Natural wood and metal materials
+## 5. BRAND GUIDELINES
 
-**Retail Display**:
+### Visual Voice
 
-- Illuminated logo sign
-- Product pedestals with info cards
-- Touch screen configurator
-- Living wall background
+**Design Personality:**
+- **Warm** not cold
+- **Crafted** not mass-produced
+- **Inviting** not exclusive
+- **Quality** not pretentious
+- **Modern** not trendy
 
-### BRAND GUIDELINES
+**Design Principles:**
+1. **Craft First**: Show the human touch
+2. **White Space**: Let designs breathe
+3. **Consistency**: Same quality everywhere
+4. **Warmth**: Always feel welcoming
+5. **Clarity**: Information easy to find
 
-#### Voice & Tone in Design
+### Usage Rules
 
-**Visual Voice Attributes**:
+**Logo Guidelines:**
+- Minimum size: 1 inch wide
+- Clear space: 1x bean height
+- Don't rotate or skew
+- Don't change colors
+- Don't add effects
 
-- **Clear** not cluttered
-- **Flowing** not rigid
-- **Premium** not pretentious
-- **Natural** not naive
-- **Technical** not intimidating
+**Color Applications:**
+- Cream always dominant
+- Brown for grounding
+- Copper for premium
+- Test all combinations
 
-**Design Principles**:
+**Typography Rules:**
+- Headlines: Always Moderat
+- Never stretch type
+- Maintain hierarchy
+- Watch line lengths
 
-1. **Simplicity First**: Remove unnecessary elements
-2. **Natural Flow**: Guide the eye smoothly
-3. **Purposeful Color**: Every color has meaning
-4. **Breathing Room**: Generous white space
-5. **Human Scale**: Approachable sizing
+### Implementation Priorities
 
-#### Usage Guidelines
+**Week 1-2: Core Identity**
+- Finalize logo files
+- Color specifications
+- Typography setup
+- Basic templates
 
-**Logo Do's**:
-✓ Maintain clear space
-✓ Use provided files
-✓ Follow color specifications
-✓ Respect minimum sizes
+**Week 3-4: Packaging**
+- Coffee bag designs
+- Label system
+- Cup designs
+- Merchandise
 
-**Logo Don'ts**:
-✗ Distort proportions
-✗ Add effects or shadows
-✗ Change colors
-✗ Crowd with other elements
+**Week 5-6: Digital**
+- Website mockups
+- App UI design
+- Social templates
+- Email design
 
-**Color Do's**:
-✓ Follow 40-20-20-15-5 ratio
-✓ Use tints for backgrounds
-✓ Test color accessibility
-✓ Consider cultural contexts
+### Success Metrics
 
-**Typography Do's**:
-✓ Maintain hierarchy
-✓ Use specified weights
-✓ Follow spacing guidelines
-✓ Ensure readability
+**Brand Recognition:**
+- Instagram followers: +200% year 1
+- Brand recall: 40% in market
+- Press mentions: 10+ monthly
 
-### IMPLEMENTATION ROADMAP
+**Customer Experience:**
+- App downloads: 5,000 in 6 months
+- Loyalty program: 60% adoption
+- Reviews: 4.7+ average
 
-#### Phase 1: Core Identity (Weeks 1-2)
+**Business Impact:**
+- Foot traffic: +30%
+- Average order: +15%
+- Repeat customers: 70%
+- New locations: 3 in year 2
 
-- Finalize logo variations
-- Establish color specifications
-- Set typography standards
-- Create basic templates
+### Design Rationale
 
-#### Phase 2: Digital Assets (Weeks 3-4)
+**Why coffee bean logo?**
+Instantly recognizable while the hidden "R" creates a memorable discovery moment that customers love sharing.
 
-- Website design system
-- App UI components
-- Social media templates
-- Email signatures
+**Why cream and brown?**
+Warm, inviting colors that feel premium but approachable - exactly like the café experience we create.
 
-#### Phase 3: Print Collateral (Weeks 5-6)
+**Why Moderat typeface?**
+Slightly rounded corners add warmth to modern design, making technical coffee information feel friendly.
 
-- Business cards
-- Brochure system
-- Packaging design
-- Signage templates
-
-#### Phase 4: Extended Applications (Weeks 7-8)
-
-- Vehicle graphics
-- Uniforms/apparel
-- Trade show materials
-- Partner co-branding
-
-### MEASURING SUCCESS
-
-#### Brand Recognition Metrics
-
-- Unaided brand recall: Target 15% in 6 months
-- Visual consistency score: 95%+ across touchpoints
-- Design award submissions: 3 major competitions
-
-#### Engagement Metrics
-
-- Website time on site: +25%
-- Social media engagement: +40%
-- Email open rates: +30%
-- App daily active users: 70%
-
-#### Business Impact
-
-- Lead quality improvement: 35%
-- Conversion rate increase: 20%
-- Customer satisfaction: 4.5+ stars
-- Market share growth: 10%
-
-### CREATIVE RATIONALE
-
-Every design decision serves strategic purpose:
-
-**Why flowing lines?**
-Represents seamless energy transfer while creating unique brand identifier that competitors can't copy.
-
-**Why green and amber?**
-Green connects to environmental mission while amber represents solar energy - together they're ownable in the category.
-
-**Why geometric sans-serif?**
-Balances technical credibility with approachability, ensuring the brand doesn't intimidate non-technical audiences.
+**Why copper accents?**
+Connects to roasting equipment and craft process while adding sophisticated touch without being flashy.
 
 **Why generous white space?**
-Premium positioning requires breathing room; cluttered design undermines quality perception.
+Lets the coffee be the hero and creates calm, uncluttered feeling that encourages lingering.
 
-**Why nature photography?**
-Humanizes technology and reinforces that this is about lifestyle improvement, not just equipment.
+### Brand Extensions
 
-### ADAPTATION GUIDELINES
+**Seasonal Campaigns:**
+- Spring: New origin launches
+- Summer: Cold brew focus
+- Fall: Cozy café culture
+- Winter: Gift sets and warmth
 
-#### Cultural Considerations
+**Limited Editions:**
+- Special roast packaging
+- Artist collaboration cups
+- Seasonal color variations
+- Anniversary designs
 
-- Colors may need adjustment for different markets
-- Imagery should reflect local demographics
-- Iconography tested for cultural meaning
-- Typography checked for language support
+**Partnerships:**
+- Local bakery co-branding
+- Farmers market presence
+- Corporate coffee programs
+- Subscription box design
 
-#### Seasonal Campaigns
-
-- Spring: Fresh green emphasis, growth themes
-- Summer: Solar/amber focus, peak generation
-- Fall: Preparation themes, warm colors
-- Winter: Reliability messaging, cozy imagery
-
-#### Partner Co-Branding
-
-- EcoFlow logo always dominant
-- Partner logos in grayscale
-- Clear hierarchy established
-- Approval process required
-
-## Usage Instructions
-
-1. Begin with deep understanding of brand strategy and positioning
-2. Research audience visual preferences and cultural contexts
-3. Explore multiple concept directions before refinement
-4. Ensure systematic thinking across all applications
-5. Test designs with target audience representatives
-6. Create comprehensive guidelines for consistency
-7. Plan for evolution and brand extensions
-8. Measure impact on business objectives
-
-## Examples
-
-### Example 1: Tech Startup Rebrand
-
-**Input**:
-
-```
-{{project_type}}: Complete rebrand
-{{industry}}: B2B SaaS cybersecurity
-{{brand_personality}}: Trustworthy, innovative, approachable
-{{target_audience}}: IT directors at mid-size companies
-{{design_goals}}: Stand out in crowded market, build trust
-```
-
-**Output**: [Modern geometric logo suggesting shield/protection, deep blue and bright accent palette, clean technical aesthetic with human touches]
-
-### Example 2: Restaurant Visual Identity
-
-**Input**:
-
-```
-{{project_type}}: New restaurant branding
-{{industry}}: Fast-casual healthy dining
-{{brand_personality}}: Fresh, energetic, community-focused
-{{target_audience}}: Health-conscious millennials
-{{deliverables}}: Logo, menu design, interior graphics
-```
-
-**Output**: [Hand-drawn botanical elements, vibrant vegetable-inspired palette, Instagram-worthy interior design elements, flexible system for seasonal menus]
+This visual identity system creates a warm, sophisticated brand that stands out in the artisan coffee market while maintaining approachability and craft authenticity.
 
 ## Related Prompts
 
-- [Brand Strategy Developer](/prompts/creation/brand-strategy.md)
-- [UI/UX Design Expert](/prompts/creation/ui-ux-design.md)
-- [Marketing Creative Director](/prompts/creation/marketing-creative.md)
-
-## Research Notes
-
-- Combines strategic thinking with aesthetic excellence
-- Emphasizes systematic approach to visual design
-- Includes implementation and measurement planning
-- Addresses both digital and physical applications
-- Provides clear rationale for design decisions
+- [Logo Design Specialist](./logo-design-specialist.md)
+- [Brand Strategy Expert](./brand-strategy-expert.md)
+- [Packaging Designer](./packaging-designer.md)
