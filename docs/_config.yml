@@ -7,11 +7,11 @@ url: "https://aj-geddes.github.io"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Collections
 collections:
