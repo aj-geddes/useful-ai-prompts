@@ -39,14 +39,24 @@ layout: default
                 {% if page.compatible_models %}
                 <div class="meta-item">
                     <i class="fas fa-robot"></i>
-                    <strong>Compatible Models:</strong> {{ page.compatible_models | join: ", " }}
+                    <strong>Compatible Models:</strong>
+                    <div class="meta-tags">
+                        {% for model in page.compatible_models %}
+                            <span class="tag">{{ model }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
                 
                 {% if page.use_cases %}
                 <div class="meta-item">
                     <i class="fas fa-lightbulb"></i>
-                    <strong>Use Cases:</strong> {{ page.use_cases | join: ", " }}
+                    <strong>Use Cases:</strong>
+                    <div class="meta-tags">
+                        {% for use_case in page.use_cases %}
+                            <span class="tag">{{ use_case }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
                 
