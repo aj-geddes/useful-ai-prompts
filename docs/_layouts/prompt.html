@@ -28,9 +28,11 @@ layout: default
                 <div class="meta-item">
                     <i class="fas fa-tags"></i>
                     <strong>Tags:</strong>
-                    {% for tag in page.tags %}
-                        <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-                    {% endfor %}
+                    <div class="meta-tags">
+                        {% for tag in page.tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
                 
