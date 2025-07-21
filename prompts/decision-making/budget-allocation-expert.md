@@ -147,13 +147,13 @@ Budget Performance Analysis (2022-2024):
 
 Revenue and Profitability Trends:
 • 2022: $18.5M revenue, $3.2M profit (17.3% margin)
-• 2023: $21.2M revenue, $3.8M profit (17.9% margin)  
+• 2023: $21.2M revenue, $3.8M profit (17.9% margin)
 • 2024: $24.1M revenue, $4.1M profit (17.0% margin)
 • 3-Year CAGR: 14.2% revenue growth, 13.1% profit growth
 
 Department Budget Utilization:
 • Sales & Marketing: 95.2% average utilization, +22% revenue contribution
-• Engineering: 98.1% average utilization, +18% productivity improvement  
+• Engineering: 98.1% average utilization, +18% productivity improvement
 • Operations: 92.7% average utilization, +12% efficiency gains
 • Customer Success: 89.4% average utilization, +15% satisfaction improvement
 • Finance & Admin: 91.8% average utilization, +8% process optimization
@@ -178,7 +178,7 @@ class BudgetRequirementAnalyzer:
 
     def analyze_department_requirements(self):
         """Comprehensive departmental budget requirement analysis"""
-        
+
         requirement_analysis = {
             'sales_marketing': {
                 'base_operational': 4.2,  # $M for basic operations
@@ -223,20 +223,20 @@ class BudgetRequirementAnalyzer:
                 }
             }
         }
-        
+
         return self.prioritize_requirements(requirement_analysis)
 
     def prioritize_requirements(self, requirements):
         """Prioritize departmental requirements using multi-criteria analysis"""
-        
+
         priority_matrix = {}
-        
+
         for dept, data in requirements.items():
             initiatives = data['strategic_initiatives']
-            
+
             for initiative in initiatives:
                 priority_score = self.calculate_priority_score(initiative, data['performance_targets'])
-                
+
                 priority_matrix[f"{dept}_{initiative['name']}"] = {
                     'department': dept,
                     'initiative': initiative,
@@ -245,14 +245,14 @@ class BudgetRequirementAnalyzer:
                     'implementation_complexity': self.evaluate_complexity(initiative),
                     'resource_efficiency': initiative['roi_projection']
                 }
-        
+
         # Sort by priority score
         sorted_priorities = sorted(
             priority_matrix.items(),
             key=lambda x: x[1]['priority_score'],
             reverse=True
         )
-        
+
         return {
             'department_requirements': requirements,
             'prioritized_initiatives': sorted_priorities,
@@ -262,13 +262,13 @@ class BudgetRequirementAnalyzer:
 
     def calculate_priority_score(self, initiative, targets):
         """Calculate multi-factor priority score for initiative"""
-        
+
         # Weight factors: ROI (40%), Strategic Alignment (30%), Risk (20%), Timeline (10%)
         roi_score = min(initiative['roi_projection'] / 5.0, 1.0) * 0.40
         strategic_score = 0.85 * 0.30  # Assumed high strategic alignment
         risk_score = 0.75 * 0.20       # Moderate risk assessment
         timeline_score = 0.80 * 0.10   # Reasonable timeline expectations
-        
+
         return roi_score + strategic_score + risk_score + timeline_score
 
 # Execute requirement analysis
@@ -333,10 +333,10 @@ class BudgetOptimizationEngine:
         self.total_budget = budget_total
         self.requests = department_requests
         self.weights = strategic_weights
-        
+
     def optimize_budget_allocation(self):
         """Comprehensive budget optimization using constrained optimization"""
-        
+
         # Define allocation variables and constraints
         allocation_model = {
             'decision_variables': self.define_allocation_variables(),
@@ -344,25 +344,25 @@ class BudgetOptimizationEngine:
             'constraints': self.establish_allocation_constraints(),
             'optimization_bounds': self.set_allocation_bounds()
         }
-        
+
         # Execute optimization algorithm
         optimization_result = self.solve_allocation_optimization(allocation_model)
-        
+
         return self.interpret_optimization_results(optimization_result)
-    
+
     def define_allocation_variables(self):
         """Define budget allocation decision variables"""
-        
+
         departments = [
-            'sales_marketing', 'engineering', 'operations', 
-            'customer_success', 'finance_admin', 'hr_legal', 
+            'sales_marketing', 'engineering', 'operations',
+            'customer_success', 'finance_admin', 'hr_legal',
             'research_development', 'strategic_initiatives'
         ]
-        
+
         # Base operational requirements (minimum allocation)
         base_requirements = {
             'sales_marketing': 3.5,      # $M minimum operational
-            'engineering': 5.8,          # $M minimum operational  
+            'engineering': 5.8,          # $M minimum operational
             'operations': 3.2,           # $M minimum operational
             'customer_success': 1.8,     # $M minimum operational
             'finance_admin': 1.5,        # $M minimum operational
@@ -370,7 +370,7 @@ class BudgetOptimizationEngine:
             'research_development': 1.0, # $M minimum operational
             'strategic_initiatives': 0.5 # $M minimum operational
         }
-        
+
         # Maximum allocation limits (capacity constraints)
         maximum_allocations = {
             'sales_marketing': 8.0,      # $M maximum effective
@@ -382,17 +382,17 @@ class BudgetOptimizationEngine:
             'research_development': 3.5, # $M maximum effective
             'strategic_initiatives': 4.0 # $M maximum effective
         }
-        
+
         return {
             'departments': departments,
             'base_requirements': base_requirements,
             'maximum_allocations': maximum_allocations,
             'total_available': self.total_budget
         }
-    
+
     def create_value_maximization_function(self):
         """Create objective function for value maximization"""
-        
+
         # Expected value return factors by department
         value_multipliers = {
             'sales_marketing': 2.8,       # $2.80 value per $1 invested
@@ -404,7 +404,7 @@ class BudgetOptimizationEngine:
             'research_development': 3.5,  # $3.50 value per $1 invested
             'strategic_initiatives': 3.1  # $3.10 value per $1 invested
         }
-        
+
         # Strategic importance weights
         strategic_weights = {
             'sales_marketing': 0.20,      # 20% strategic weight
@@ -416,43 +416,43 @@ class BudgetOptimizationEngine:
             'research_development': 0.20, # 20% strategic weight
             'strategic_initiatives': 0.15 # 15% strategic weight
         }
-        
+
         return {
             'value_multipliers': value_multipliers,
             'strategic_weights': strategic_weights,
             'optimization_function': self.calculate_portfolio_value
         }
-    
+
     def solve_allocation_optimization(self, model):
         """Solve constrained optimization problem for budget allocation"""
-        
+
         # Initial allocation guess (proportional to strategic weights)
         initial_guess = []
         variables = model['decision_variables']
-        
+
         for dept in variables['departments']:
             base_req = variables['base_requirements'][dept]
             strategic_weight = model['objective_function']['strategic_weights'][dept]
             # Allocate based on strategic weight plus base requirement
             initial_allocation = base_req + (strategic_weight * (self.total_budget - sum(variables['base_requirements'].values())))
             initial_guess.append(initial_allocation)
-        
+
         # Constraint functions
         constraints = [
             # Total budget constraint
             {'type': 'eq', 'fun': lambda x: sum(x) - self.total_budget},
             # Minimum allocation constraints
-            *[{'type': 'ineq', 'fun': lambda x, i=i, min_val=variables['base_requirements'][variables['departments'][i]]: x[i] - min_val} 
+            *[{'type': 'ineq', 'fun': lambda x, i=i, min_val=variables['base_requirements'][variables['departments'][i]]: x[i] - min_val}
               for i in range(len(variables['departments']))],
-            # Maximum allocation constraints  
-            *[{'type': 'ineq', 'fun': lambda x, i=i, max_val=variables['maximum_allocations'][variables['departments'][i]]: max_val - x[i]} 
+            # Maximum allocation constraints
+            *[{'type': 'ineq', 'fun': lambda x, i=i, max_val=variables['maximum_allocations'][variables['departments'][i]]: max_val - x[i]}
               for i in range(len(variables['departments']))]
         ]
-        
+
         # Bounds for each variable
-        bounds = [(variables['base_requirements'][dept], variables['maximum_allocations'][dept]) 
+        bounds = [(variables['base_requirements'][dept], variables['maximum_allocations'][dept])
                  for dept in variables['departments']]
-        
+
         # Objective function (negative because minimize function is used)
         def objective(allocations):
             total_value = 0
@@ -462,7 +462,7 @@ class BudgetOptimizationEngine:
                 # Value = allocation * value_multiplier * strategic_weight
                 total_value += allocations[i] * value_mult * strategic_weight
             return -total_value  # Negative for minimization
-        
+
         # Solve optimization
         result = minimize(
             objective,
@@ -472,7 +472,7 @@ class BudgetOptimizationEngine:
             constraints=constraints,
             options={'ftol': 1e-9, 'disp': True}
         )
-        
+
         return result
 
 # Execute budget optimization
@@ -497,7 +497,7 @@ Engineering & Development: $7.2M (28.8%)
 • Growth Investment: $1.4M (AI platform, modernization)
 • ROI Justification: Highest value multiplier (3.2x) with strategic priority
 
-Sales & Marketing: $5.8M (23.2%)  
+Sales & Marketing: $5.8M (23.2%)
 • Base Operations: $3.5M (sales team, marketing programs)
 • Growth Investment: $2.3M (enterprise expansion, automation)
 • ROI Justification: Strong revenue impact (2.8x) with growth focus
@@ -547,7 +547,7 @@ Budget Allocation Executive Summary:
 
 Strategic Budget Themes:
 • Growth Investment Priority: 45% of budget allocated to growth-driving initiatives
-• Operational Excellence: 40% maintaining current performance and efficiency  
+• Operational Excellence: 40% maintaining current performance and efficiency
 • Innovation Pipeline: 15% dedicated to future capability and market development
 
 Key Allocation Decisions:
@@ -571,13 +571,13 @@ Risk Mitigation and Contingency:
 
 **Department Manager Budget Communication**:
 
-| Department         | Allocation | Rationale                                                         | Performance Expectations                        |
-| ------------------ | ---------- | ----------------------------------------------------------------- | ----------------------------------------------- |
-| **Engineering**    | $7.2M      | Highest ROI potential with critical platform development needs   | 30% productivity improvement, 99.9% uptime     |
-| **Sales/Marketing**| $5.8M      | Revenue growth driver with enterprise expansion opportunity       | 25% revenue increase, 150 new customers        |
-| **Operations**     | $4.1M      | Efficiency optimization supporting business scaling               | 20% cost reduction, 95% quality metrics        |
-| **R&D**            | $2.8M      | Innovation investment for competitive advantage                   | 3 breakthrough technologies, 2 patents filed   |
-| **Customer Success**| $2.5M     | Retention focus with expansion revenue opportunity                | 95% retention rate, 20% expansion revenue      |
+| Department           | Allocation | Rationale                                                      | Performance Expectations                     |
+| -------------------- | ---------- | -------------------------------------------------------------- | -------------------------------------------- |
+| **Engineering**      | $7.2M      | Highest ROI potential with critical platform development needs | 30% productivity improvement, 99.9% uptime   |
+| **Sales/Marketing**  | $5.8M      | Revenue growth driver with enterprise expansion opportunity    | 25% revenue increase, 150 new customers      |
+| **Operations**       | $4.1M      | Efficiency optimization supporting business scaling            | 20% cost reduction, 95% quality metrics      |
+| **R&D**              | $2.8M      | Innovation investment for competitive advantage                | 3 breakthrough technologies, 2 patents filed |
+| **Customer Success** | $2.5M      | Retention focus with expansion revenue opportunity             | 95% retention rate, 20% expansion revenue    |
 
 #### Budget Validation and Approval Process
 
@@ -586,7 +586,7 @@ Risk Mitigation and Contingency:
 ```
 Stage 1: Technical Validation (Week 1-2)
 • Financial model review and assumption validation
-• Historical performance correlation and trend analysis  
+• Historical performance correlation and trend analysis
 • ROI calculation verification and sensitivity testing
 • Resource capacity assessment and feasibility validation
 
@@ -644,10 +644,10 @@ class BudgetPerformanceMonitor:
         self.budgets = allocated_budgets
         self.targets = performance_targets
         self.frequency = monitoring_frequency
-        
+
     def monitor_budget_performance(self, reporting_period):
         """Comprehensive budget and performance monitoring system"""
-        
+
         performance_dashboard = {
             'budget_utilization': self.track_budget_consumption(),
             'value_delivery': self.measure_roi_achievement(),
@@ -655,12 +655,12 @@ class BudgetPerformanceMonitor:
             'variance_analysis': self.analyze_budget_variances(),
             'stakeholder_satisfaction': self.collect_satisfaction_feedback()
         }
-        
+
         return self.generate_performance_report(performance_dashboard)
-    
+
     def track_budget_consumption(self):
         """Monitor budget utilization and spending efficiency"""
-        
+
         utilization_metrics = {
             'engineering': {
                 'allocated': 7.2,         # $M allocated
@@ -684,12 +684,12 @@ class BudgetPerformanceMonitor:
                 'variance': -0.15         # 15% under-budget
             }
         }
-        
+
         return self.calculate_portfolio_utilization(utilization_metrics)
-    
+
     def measure_roi_achievement(self):
         """Track return on investment progress and value delivery"""
-        
+
         roi_tracking = {
             'engineering_ai_platform': {
                 'investment': 1.8,        # $M invested
@@ -713,7 +713,7 @@ class BudgetPerformanceMonitor:
                 'milestone_progress': 0.60
             }
         }
-        
+
         return self.synthesize_value_creation(roi_tracking)
 
 # Implement budget performance monitoring
