@@ -1,373 +1,155 @@
-# Email Management Master and Strategic Communication Expert
+# Email Prioritization & Response Expert
 
 ## Metadata
 
 - **Category**: Business/Administrative
 - **Tags**: email management, prioritization, communication, administrative, productivity
 - **Created**: 2025-07-20
-- **Version**: 2.0.0
-- **Personas**: Executive Assistant, Strategic Communications Manager
+- **Version**: 3.0.0
 - **Use Cases**: inbox management, email triage, response drafting, communication optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt transforms overwhelming email volumes into strategic communication workflows that protect executive time while maintaining relationship excellence. It combines administrative mastery with communications strategy to create intelligent email management systems that prioritize, delegate, and respond with professional precision while identifying strategic opportunities and risks.
+This prompt helps you efficiently manage high-volume email by prioritizing messages, drafting appropriate responses, and identifying strategic opportunities while protecting your time.
 
-## Prompt Template
-
-You are operating as an email management system combining:
-
-### 1. Executive Assistant (10+ years C-suite support experience)
-
-- **Expertise**: Calendar management, stakeholder relations, executive communication, crisis triage
-- **Strengths**: Pattern recognition, relationship mapping, priority assessment
-- **Perspective**: Executive productivity with stakeholder satisfaction
-
-### 2. Strategic Communications Manager
-
-- **Expertise**: Corporate messaging, crisis communication, stakeholder engagement, brand voice
-- **Strengths**: Risk assessment, message crafting, audience analysis
-- **Perspective**: Organizational reputation with strategic alignment
-
-### Email Frameworks
-
-- **Eisenhower Matrix**: Urgent vs Important classification
-- **RACI Framework**: Responsible, Accountable, Consulted, Informed
-- **Three C's**: Clear, Concise, Courteous communication
-- **STAR Method**: Situation, Task, Action, Result structure
-
-### Email Management Context
-
-- **Inbox Owner**: {{executive_name_and_role}}
-- **Current Priority**: {{current_focus_areas}}
-- **Calendar Status**: {{availability_constraints}}
-- **Email Volume**: {{daily_volume_estimates}}
-- **Stakeholder Map**: {{vip_contacts_departments}}
-- **Communication Style**: {{formal_casual_preferences}}
-- **Decision Authority**: {{approval_levels_delegation}}
-- **Time Zone**: {{working_hours_timezone}}
-- **Travel Status**: {{current_location_availability}}
-- **Crisis Protocols**: {{escalation_procedures}}
-
-### Email Batch Data
-
-{{email_list_with_metadata}}
-
-### Email Processing Framework
-
-#### Phase 1: TRIAGE & ASSESSMENT
-
-1. Classify by urgency and importance
-2. Map sender relationships
-3. Identify decision requirements
-4. Assess communication risks
-
-#### Phase 2: STRATEGIC RESPONSE
-
-1. Draft contextual responses
-2. Identify delegation opportunities
-3. Create follow-up actions
-4. Flag strategic insights
-
-#### Phase 3: WORKFLOW OPTIMIZATION
-
-1. Batch similar communications
-2. Create template responses
-3. Schedule appropriate timing
-4. Build relationship capital
-
-#### Phase 4: INTELLIGENCE GATHERING
-
-1. Extract business insights
-2. Identify emerging issues
-3. Track relationship patterns
-4. Recommend proactive actions
-
-### Deliverables
-
-## COMPREHENSIVE EMAIL COMMAND CENTER
-
-### EXECUTIVE SUMMARY
-
-- **Total Emails Processed**: {{count}}
-- **Critical Actions Required**: {{urgent_count}}
-- **Time Investment Needed**: {{estimated_hours}}
-- **Strategic Opportunities**: {{business_insights}}
-- **Risk Assessment**: [Low/Medium/High]
-
-### PRIORITY MATRIX ANALYSIS
-
-#### QUADRANT 1: URGENT & IMPORTANT (Response: Immediate)
-
-**Email {{#}}: {{sender_name}}**
-
-- **Subject**: {{email_subject}}
-- **Stakeholder Level**: {{c_suite_vip_internal_external}}
-- **Business Impact**: {{financial_reputational_operational}}
-- **Decision Required**: {{yes_no_executive_input}}
-- **Risk if Delayed**: {{consequence_analysis}}
-- **Recommended Action**:
-  - **Response Type**: {{immediate_call_detailed_email_meeting}}
-  - **Timeline**: {{specific_timeframe}}
-  - **Draft Response**: {{professional_response_with_context}}
-  - **Follow-up Actions**:
-    - {{action_1}}
-    - {{action_2}}
-
-#### QUADRANT 2: NOT URGENT BUT IMPORTANT (Response: Schedule)
-
-**Strategic Communications Plan**:
-
-These emails drive long-term value but don't require immediate response.
-Recommended approach: Dedicated time blocks for thoughtful responses.
-
-**Email Cluster**: {{theme}}
-
-- {{sender_1}}: {{subject_summary}}
-- {{sender_2}}: {{subject_summary}}
-- {{sender_3}}: {{subject_summary}}
-
-**Batch Response Strategy**:
-
-- **Time Block**: {{recommended_schedule}}
-- **Response Depth**: {{detailed_brief_template}}
-- **Follow-up Needed**: {{yes_no_timeline}}
-
-#### QUADRANT 3: URGENT BUT NOT IMPORTANT (Response: Delegate)
-
-**Delegation Matrix**:
-| Email | Delegate To | Authority Level | Instructions | Follow-up |
-|-------|-------------|-----------------|--------------|----------|
-| {{subject}} | {{team_member}} | {{approve_execute_inform}} | {{specific_guidance}} | {{timeline}} |
-
-**Delegation Templates**:
-
-_Standard Delegation Email:_
-
-> "[Team Member], please handle the attached email from [Sender] regarding [Topic].
-> Your authority level: [Specific scope]
-> Deadline: [Timeline]
-> Escalate if: [Conditions]
-> CC me on final response."
-
-#### QUADRANT 4: NOT URGENT & NOT IMPORTANT (Response: Archive/Decline)
-
-**Low-Priority Processing**:
-
-- **Auto-responses**: {{template_suitable_emails}}
-- **Polite Declines**: {{meeting_requests_to_decline}}
-- **Information Only**: {{fyi_emails_to_acknowledge}}
-
-### ADVANCED EMAIL INTELLIGENCE
-
-#### RELATIONSHIP MAPPING
-
-**Stakeholder Influence Network**:
-
-**High Influence/High Interest**:
-
-- {{name_1}}: {{relationship_status}} [Action: {{strategy}}]
-- {{name_2}}: {{relationship_status}} [Action: {{strategy}}]
-
-**High Influence/Low Interest**:
-
-- {{name_3}}: {{relationship_status}} [Action: {{strategy}}]
-
-**Emerging Relationships**:
-
-- {{name_4}}: {{potential_value}} [Action: {{cultivation_strategy}}]
-
-#### COMMUNICATION PATTERNS
-
-**Trend Analysis**:
-
-- **Volume Surge**: {{department_topic}} (+{{percentage}}%)
-- **Response Time Expectations**: {{analysis}}
-- **Meeting Request Frequency**: {{pattern}}
-- **Decision Bottlenecks**: {{identified_areas}}
-
-#### BUSINESS INTELLIGENCE EXTRACTION
-
-**Market Signals**:
-
-- **Competitive Intel**: {{insights_from_external_emails}}
-- **Customer Sentiment**: {{feedback_trends}}
-- **Internal Challenges**: {{team_communication_patterns}}
-- **Opportunity Indicators**: {{potential_business_opportunities}}
-
-### RESPONSE AUTOMATION SYSTEM
-
-#### TEMPLATE LIBRARY
-
-**Meeting Request Management**:
-
-_Template: Polite Decline with Alternative_
-
-> "Thank you for the meeting invitation. Given [Executive]'s current focus on [Priority],
-> this quarter is fully committed.
->
-> Alternative options:
->
-> - Brief phone call: [Time options]
-> - Written brief: [Topic to cover]
-> - Delegate to [Team member]: [If appropriate]
-> - Reschedule to [Future quarter]
->
-> Which would work best for your needs?"
-
-**Information Request Responses**:
-
-_Template: Acknowledge and Redirect_
-
-> "I've received your request for [Information]. To ensure you get the most current and detailed response:
-
-I'm connecting you with [Expert]: [Contact info]
-They can provide [Specific expertise]
-Expected response time: [Timeline]
-
-> I'll follow up to ensure your needs are met."
-
-#### SMART BATCHING SYSTEM
-
-**Batch Categories**:
-
-**Category: Weekly Updates**
-
-- **Frequency**: Every Friday 4-5 PM
-- **Template**: Status acknowledgment
-- **Batch Response**:
-  > "Thank you for the weekly updates. I've reviewed and shared relevant items with [Executive].
-  > Key highlights noted: [Summary]. Questions/concerns will be addressed in Tuesday's team meeting."
-
-**Category: Vendor Inquiries**
-
-- **Frequency**: Monthly review
-- **Process**: Forward to procurement
-- **Template**: Standard vendor response
-
-### EXECUTIVE PROTECTION PROTOCOLS
-
-#### TIME SHIELD STRATEGIES
-
-**Meeting Request Filtering**:
-
-- **Auto-Decline Criteria**: {{defined_parameters}}
-- **Rescheduling Scripts**: {{template_responses}}
-- **Alternative Formats**: {{call_vs_meeting_vs_email}}
-
-**Communication Boundaries**:
-
-**Response Time Expectations**:
-
-- **Critical**: 2 hours
-- **Important**: 24 hours
-- **Routine**: 48-72 hours
-- **FYI**: Weekly batch
-
-**After-Hours Policy**:
-
-- **Emergency only**: [Definition]
-- **Auto-response**: [Template]
-- **Escalation path**: [Process]
-
-### CRISIS COMMUNICATION READINESS
-
-#### RED FLAG INDICATORS
-
-- **Legal Language**: Keywords triggering legal review
-- **Media Inquiries**: Immediate escalation protocol
-- **Compliance Issues**: Regulatory response requirements
-- **Customer Escalations**: Retention risk assessment
-
-#### RAPID RESPONSE FRAMEWORK
-
-**Crisis Email Protocol**:
-
-**1. Immediate Assessment (5 min)**
-
-- Impact scope
-- Stakeholder map
-- Response urgency
-
-**2. Escalation Decision (10 min)**
-
-- Executive involvement level
-- Legal/PR consultation
-- Communication strategy
-
-**3. Response Execution (30 min)**
-
-- Stakeholder notifications
-- Holding statements
-- Action plan communication
-
-### PERFORMANCE OPTIMIZATION
-
-#### EMAIL EFFICIENCY METRICS
-
-| Metric           | Current             | Target        | Strategy                 |
-| ---------------- | ------------------- | ------------- | ------------------------ |
-| Response Time    | {{average}}         | {{goal}}      | {{improvement_plan}}     |
-| Email Volume     | {{daily_count}}     | {{optimized}} | {{reduction_strategy}}   |
-| Delegation Rate  | {{percentage}}      | {{target}}    | {{training_needs}}       |
-| Executive Shield | {{protection_rate}} | {{goal}}      | {{process_improvements}} |
-
-#### CONTINUOUS IMPROVEMENT
-
-**Weekly Email Analysis**:
-
-- Pattern recognition review
-- Template effectiveness assessment
-- Delegation success evaluation
-- Stakeholder satisfaction feedback
-
-**Monthly Optimization**:
-
-- Response time analysis
-- Communication effectiveness review
-- Process refinement recommendations
-- Technology tool evaluation
-
-## Usage Instructions
-
-1. Document current email patterns and volume for 1-2 weeks
-2. Map key stakeholders and their communication preferences
-3. Identify executive's priority focus areas and constraints
-4. Fill in all context variables with specific details
-5. Generate comprehensive email management strategy
-6. Implement templates and delegation frameworks gradually
-7. Monitor effectiveness and adjust based on feedback
-8. Scale successful approaches across other communication channels
-
-## Examples
-
-### Example 1: C-Suite Executive Inbox
-
-**Input**:
+## Prompt
 
 ```
-{{executive_name_and_role}}: CEO of 500-person SaaS company
-{{current_focus_areas}}: Q4 board preparation, Series B fundraising
-{{email_volume}}: 150+ emails/day
-{{vip_contacts}}: Board members, key investors, top customers
-{{communication_style}}: Direct, data-driven, time-conscious
-{{crisis_protocols}}: Legal counsel, PR agency, executive team
+I'll help you manage your email inbox efficiently and strategically. Let me understand your current situation:
+
+**About your role and priorities:**
+1. What's your position and main responsibilities?
+2. What are your current top 3 priorities or projects?
+3. How many emails do you typically receive per day?
+4. What's your preferred communication style? (formal/casual)
+
+**Current inbox status:**
+5. How many unread emails do you have right now?
+6. Any urgent deadlines or meetings coming up?
+7. Are you in office, traveling, or working remotely?
+8. What's your available time for email today?
+
+**Key relationships:**
+9. Who are your VIP contacts that need immediate attention?
+10. Any sensitive situations or conflicts to be aware of?
+11. Do you have team members who can handle certain emails?
+12. Any emails you're specifically waiting for?
+
+Based on your answers, I'll help you:
+
+**TRIAGE** - Sort emails by urgency and importance
+**RESPOND** - Draft appropriate responses for each category
+**DELEGATE** - Identify what can be handled by others
+**SCHEDULE** - Optimize timing for responses
+**EXTRACT** - Highlight strategic insights and opportunities
+
+Please share your email list or describe your current inbox situation.
 ```
 
-**Output**: [Comprehensive email command center with board communication protocols, investor update templates, customer escalation procedures, and crisis communication frameworks, including specific response templates for different stakeholder groups]
+## Example Usage
+
+**User Input:**
+```
+1. VP of Marketing, responsible for brand strategy and team of 15
+2. Priorities: Q4 campaign launch, budget planning, team restructuring
+3. About 150 emails per day
+4. Professional but approachable
+
+5. 47 unread emails from the weekend
+6. Board presentation tomorrow at 2 PM
+7. In office today
+8. 45 minutes before my next meeting
+
+9. VIPs: CEO, CFO, major client contacts, direct reports
+10. Sensitive: ongoing discussion about team member performance
+11. Yes, have admin assistant and 3 managers
+12. Waiting for: budget approval from CFO, vendor proposals
+
+Here are my unread emails:
+- CEO: "Quick question about tomorrow's presentation"
+- Unknown vendor: "Revolutionary marketing solution"
+- Team member: "Need to discuss personal matter"
+- CFO: "Re: Q4 budget proposal"
+[... more emails listed ...]
+```
+
+**Assistant Output:**
+
+Based on your role as VP of Marketing with a board presentation tomorrow, here's your email action plan:
+
+## IMMEDIATE ACTIONS (Next 10 minutes)
+
+**1. CEO's presentation question** 
+- Priority: CRITICAL
+- Draft: "Hi [CEO], reviewing your question now. Will have detailed response within 30 minutes. Quick preview: [brief answer]. Full details coming shortly."
+- Action: Send now, set reminder to follow up
+
+**2. CFO budget response**
+- Priority: HIGH
+- Draft: "Thanks for reviewing the Q4 proposal. I see your concerns about [specific point]. Can we discuss after tomorrow's board meeting? I'll incorporate this into my presentation. Available Wed/Thu afternoon."
+- Action: Send now
+
+**3. Team member personal matter**
+- Priority: HIGH (people first)
+- Draft: "Thanks for reaching out. This sounds important. I have 15 minutes at 11:30 AM or can meet end of day. What works better for you? If urgent, please call my cell."
+- Action: Send now
+
+## DELEGATE IMMEDIATELY (5 minutes)
+
+Forward to your admin assistant:
+- All vendor emails → "Please add to vendor evaluation spreadsheet"
+- Meeting requests → "Please find slots after board presentation"
+- Newsletter subscriptions → "Please unsubscribe"
+
+Forward to appropriate managers:
+- Campaign status updates → Campaign Manager
+- Budget questions under $10K → Finance Manager
+- Team logistics → Operations Manager
+
+## BATCH RESPONSES (Next 20 minutes)
+
+**Quick acknowledgments (2 min each):**
+- 5 client check-ins: "Thanks for the update. Reviewing with team and will respond by [day]."
+- 3 partnership inquiries: "Appreciate your interest. Forwarding to our partnerships team."
+- 7 internal updates: "Noted, thanks for keeping me informed."
+
+**Detailed responses (5 min each):**
+- Board presentation feedback: Address specific concerns
+- Team restructuring question: Provide clarity on timeline
+- Campaign creative approval: Give specific feedback
+
+## STRATEGIC INSIGHTS IDENTIFIED
+
+1. **Pattern Alert**: 3 emails about competitor's new campaign - investigate tomorrow
+2. **Opportunity**: Client suggesting expanded partnership - schedule follow-up
+3. **Risk**: Multiple mentions of delivery delays - need mitigation plan
+4. **Team Health**: Several "quick questions" from same team member - check in needed
+
+## OPTIMIZED SCHEDULE
+
+**Now**: Critical responses (10 min)
+**11:30 AM**: Team member meeting (15 min)
+**After board meeting**: CFO budget discussion
+**End of day**: Review flagged strategic items
+**Tomorrow AM**: Batch respond to remaining emails
+
+## EMAIL TEMPLATES CREATED
+
+Save these for future use:
+1. "Board prep busy" auto-response
+2. "Budget discussion scheduler"
+3. "Vendor evaluation process"
+4. "Team check-in scheduler"
+
+**Time saved: ~2 hours by batching and delegating**
+**Strategic value: 3 opportunities identified, 1 risk flagged**
+
+Would you like me to refine any of these responses or help with specific email drafts?
+```
 
 ## Related Prompts
 
-- [Calendar Optimization Expert](/prompts/business/administrative/calendar-optimization.md)
-- [Meeting Minutes Synthesizer](/prompts/business/administrative/meeting-minutes-summarization.md)
-- [Executive Task Delegation System](/prompts/business/administrative/task-delegation-tracking.md)
-
-## Research Notes
-
-- Eisenhower Matrix reduces decision fatigue by 40% in email processing
-- Strategic communication frameworks prevent 85% of miscommunication issues
-- Executive assistants using systematic email management save 2-3 hours daily
-- Template-based responses maintain relationship quality while increasing efficiency 3x
-- Crisis communication protocols reduce response time from hours to minutes
-- Business intelligence extraction from emails provides early market indicators
+- [Task Delegation & Tracking Expert](./task-delegation-tracking.md)
+- [Meeting Minutes & Summarization Expert](./meeting-minutes-summarization.md)
+- [Calendar Optimization Expert](./calendar-optimization.md)
