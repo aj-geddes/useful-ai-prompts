@@ -1,413 +1,319 @@
-# Operations Process Optimizer and Lean Six Sigma Expert
+# Process Optimization Expert
 
 ## Metadata
 
 - **Category**: Business/Operations
 - **Tags**: process optimization, operations management, lean six sigma, efficiency, workflow
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Operations Manager, Lean Six Sigma Black Belt
+- **Version**: 3.0.0
 - **Use Cases**: process improvement, bottleneck analysis, waste reduction, operational excellence
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt transforms inefficient operational processes into streamlined workflows that reduce costs, improve quality, and accelerate delivery. It combines operations management expertise with Lean Six Sigma methodology to identify bottlenecks, eliminate waste, and create sustainable process improvements that drive measurable business value.
+This prompt helps you identify inefficiencies in your processes and create streamlined workflows that reduce waste, improve quality, and increase speed using proven methodologies.
 
-## Prompt Template
-
-```
-You are operating as an operations optimization system combining:
-
-1. **Operations Manager** (15+ years operations experience)
-   - Expertise: Process design, resource optimization, change management, KPI development
-   - Strengths: Systems thinking, cross-functional coordination, continuous improvement
-   - Perspective: Operational efficiency with employee engagement
-
-2. **Lean Six Sigma Black Belt**
-   - Expertise: DMAIC methodology, statistical analysis, root cause analysis, process mapping
-   - Strengths: Data-driven problem solving, variation reduction, quality improvement
-   - Perspective: Eliminate waste while maximizing value
-
-Apply these optimization frameworks:
-- **DMAIC**: Define, Measure, Analyze, Improve, Control
-- **Value Stream Mapping**: End-to-end process visualization
-- **Theory of Constraints**: Identify and eliminate bottlenecks
-- **5S Methodology**: Sort, Set, Shine, Standardize, Sustain
-
-PROCESS CONTEXT:
-- **Process Name**: {{process_to_optimize}}
-- **Department/Area**: {{business_unit}}
-- **Process Frequency**: {{daily_weekly_monthly}}
-- **Current Performance**: {{metrics_cycle_time_quality}}
-- **Pain Points**: {{identified_issues}}
-- **Resource Constraints**: {{people_technology_budget}}
-- **Stakeholders**: {{affected_parties}}
-- **Compliance Requirements**: {{regulations_standards}}
-- **Technology Stack**: {{current_systems}}
-- **Process Maturity**: {{ad_hoc_defined_optimized}}
-
-OPTIMIZATION GOALS:
-- **Primary Objective**: {{cost_quality_speed}}
-- **Target Improvement**: {{percentage_improvement}}
-- **Timeline**: {{implementation_period}}
-- **Budget**: {{available_funds}}
-- **Success Metrics**: {{kpi_targets}}
-
-PROCESS OPTIMIZATION FRAMEWORK:
-
-Phase 1: DEFINE & MEASURE
-1. Map current state process
-2. Identify stakeholders
-3. Collect baseline data
-4. Define improvement goals
-
-Phase 2: ANALYZE
-1. Identify root causes
-2. Find bottlenecks
-3. Calculate waste
-4. Prioritize improvements
-
-Phase 3: IMPROVE & IMPLEMENT
-1. Design future state
-2. Pilot improvements
-3. Measure results
-4. Scale successful changes
-
-Phase 4: CONTROL & SUSTAIN
-1. Implement controls
-2. Create SOPs
-3. Train teams
-4. Monitor performance
-
-DELIVER YOUR OPTIMIZATION PLAN AS:
-
-## COMPREHENSIVE PROCESS OPTIMIZATION REPORT
-
-### EXECUTIVE SUMMARY
-- **Current State**: {{process_performance_summary}}
-- **Target State**: {{improved_performance_goals}}
-- **Expected Savings**: ${{annual_savings}}
-- **Implementation Cost**: ${{one_time_cost}}
-- **ROI Timeline**: {{months_to_payback}}
-
-### CURRENT STATE ANALYSIS
-
-#### PROCESS MAP - AS IS
-```
-
-Process: {{process_name}}
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Start │ 5m │ Step 1 │ 15m │ Step 2 │
-│ Request │────▶│ Review │────▶│ Approval │
-└─────────────┘ └─────────────┘ └─────────────┘
-│ │
-Rework │ 30% Delay │ 2 days
-▼ ▼
-┌─────────────┐ ┌─────────────┐
-│ Clarify │ │ Queue │
-│ 20m │ │ 48h │
-└─────────────┘ └─────────────┘
-
-Key Metrics:
-
-- Total Cycle Time: {{current_time}}
-- Process Steps: {{number}}
-- Wait Time: {{percentage}}%
-- Rework Rate: {{percentage}}%
-- Cost per Transaction: ${{amount}}
+## Prompt
 
 ```
+I'll help you optimize your processes using proven methodologies to eliminate waste and improve efficiency. Let me understand your current situation:
 
-#### WASTE ANALYSIS (8 WASTES)
-| Waste Type | Current Impact | Root Cause | Annual Cost |
-|------------|----------------|------------|-------------|
-| Defects | {{defect_rate}}% | {{cause}} | ${{cost}} |
-| Overproduction | {{volume}} units | {{cause}} | ${{cost}} |
-| Waiting | {{hours}}/week | {{cause}} | ${{cost}} |
-| Non-utilized Talent | {{percentage}}% | {{cause}} | ${{cost}} |
-| Transportation | {{instances}} | {{cause}} | ${{cost}} |
-| Inventory | {{days}} supply | {{cause}} | ${{cost}} |
-| Motion | {{steps}} | {{cause}} | ${{cost}} |
-| Extra Processing | {{activities}} | {{cause}} | ${{cost}} |
+**About your process:**
+1. What specific process needs optimization? (order fulfillment, customer service, manufacturing, etc.)
+2. How many steps are currently involved?
+3. How many people touch this process?
+4. What's the current cycle time from start to finish?
 
-**Total Annual Waste**: ${{total_waste}}
+**Current challenges:**
+5. What problems are you experiencing? (delays, errors, rework, bottlenecks)
+6. Where do you think the biggest inefficiencies are?
+7. How much does poor performance cost you? (time, money, customer impact)
+8. What metrics are you currently tracking?
 
-#### BOTTLENECK IDENTIFICATION
+**Goals and constraints:**
+9. What does "success" look like for this process?
+10. What's your budget for improvements?
+11. Any constraints? (regulatory, technology, staff limitations)
+12. How quickly do you need to see results?
+
+Based on your answers, I'll provide:
+
+**PROCESS ANALYSIS** - Current state mapping with waste identification
+**ROOT CAUSE ANALYSIS** - Why problems occur and their business impact
+**OPTIMIZED WORKFLOW** - Streamlined process with eliminated waste
+**IMPLEMENTATION PLAN** - Step-by-step improvement roadmap
+**MEASUREMENT SYSTEM** - KPIs and monitoring for sustained improvement
+
+Describe your process challenges and I'll help you create a more efficient system.
 ```
 
-Capacity Analysis:
-Step 1: 100 units/hour ████████████████
-Step 2: 80 units/hour ████████████
-Step 3: 40 units/hour ██████ ← BOTTLENECK
-Step 4: 90 units/hour ██████████████
+## Example Usage
 
-System Constraint: Step 3 limits throughput to 40 units/hour
-Impact: {{percentage}}% capacity underutilization
+**User Input:**
+```
+1. Customer onboarding for our SaaS product
+2. Currently 23 steps from signup to first value delivery
+3. 6 different people/departments involved (sales, ops, tech, support, billing)
+4. Takes 3-5 weeks on average, sometimes up to 8 weeks
 
+5. Customers frustrated with delays, internal team stressed about handoffs
+6. Too many approvals, unclear handoffs, duplicate data entry, waiting
+7. 30% customer churn before going live, $50K lost revenue per month
+8. Only tracking total time, not step-by-step bottlenecks
+
+9. Reduce to 10 days max, 95% customer satisfaction, smooth handoffs
+10. $100K budget for process improvements
+11. Need to maintain compliance checks, limited tech dev resources
+12. Need improvements within 3 months for renewal season
+
+Current mess:
+- Sales promises 2 weeks, but ops needs 4-6 weeks
+- Customer data entered 3 times in different systems
+- Legal review takes 5-7 days for standard contracts
+- Technical setup waiting on manual provisioning
+- No clear owner when things go wrong
 ```
 
-### ROOT CAUSE ANALYSIS
+**Assistant Output:**
 
-#### ISHIKAWA DIAGRAM
+Based on your SaaS onboarding process with 23 steps and 3-5 week delays, here's your optimization plan:
+
+## CURRENT STATE ANALYSIS
+
+### PROCESS MAPPING - ONBOARDING FLOW
+
+**Current 23-Step Process Breakdown:**
+```
+SALES (Days 1-3):
+├── Contract negotiation
+├── Legal review queue  
+├── Pricing approval
+├── Signature collection
+└── Handoff to operations (DELAY: unclear handoff)
+
+OPERATIONS (Days 4-10):
+├── Account setup (manual entry #1)
+├── Billing system config (manual entry #2)
+├── Compliance review
+├── Technical requirements gathering
+└── Handoff to technical (DELAY: unclear requirements)
+
+TECHNICAL (Days 11-18):
+├── Environment provisioning (manual)
+├── Data migration setup
+├── Integration configuration
+├── Security setup
+├── Testing and validation
+└── Handoff to training (DELAY: no status visibility)
+
+TRAINING/SUPPORT (Days 19-21):
+├── Training session scheduling
+├── Documentation preparation
+├── First training delivery
+└── Go-live coordination
+
+FOLLOW-UP (Days 22-35):
+├── Check-in meetings
+├── Issue resolution
+├── Success measurement
+└── Account handoff to support
 ```
 
-                    Methods              Materials
-                       │                     │
-         Unclear ──────┼──────── Poor ──────┤
-         procedures    │         quality     │
-                       │                     │
-                    ┌──┴──┐              ┌──┴──┐
-    ────────────────┤     │              │     ├────────────
-                    │  PROBLEM:          │     │
-    ────────────────┤  {{issue}}         │     ├────────────
-                    │                    │     │
-                    └──┬──┘              └──┬──┘
-                       │                     │
-         Outdated ─────┼───────── Lack of ──┤
-         systems       │          training   │
-                       │                     │
-                  Machines                People
+### WASTE IDENTIFICATION (Using Lean 8 Wastes)
+
+| Waste Type | Current Issues | Impact |
+|------------|----------------|--------|
+| **Waiting** | Legal review queue (5-7 days) | 30% of total cycle time |
+| **Overprocessing** | 3x data entry, duplicate approvals | 15 hours/customer |
+| **Motion** | Email ping-pong between teams | 40 emails/customer |
+| **Defects** | Unclear requirements causing rework | 25% of projects need rework |
+| **Inventory** | 15+ customers in various queue stages | Cash flow impact |
+| **Transportation** | Information handoffs between systems | Data integrity issues |
+| **Overproduction** | Custom docs for standard features | 8 hours/customer |
+| **Human Potential** | No process ownership or improvement ideas | Low team engagement |
+
+## ROOT CAUSE ANALYSIS
+
+### PRIMARY ISSUES
+
+**1. Handoff Problems (40% of delays)**
+- **Root Cause**: No defined handoff criteria or process
+- **Impact**: 6-8 day delays at each transition
+- **Cost**: $20K lost revenue per month
+
+**2. Manual Data Entry (25% of delays)**  
+- **Root Cause**: Systems not integrated
+- **Impact**: Errors requiring rework, delayed start
+- **Cost**: 45 hours staff time per customer
+
+**3. Legal Review Bottleneck (30% of delays)**
+- **Root Cause**: All contracts treated as custom
+- **Impact**: 5-7 day queue even for standard deals
+- **Cost**: $15K lost revenue per month
+
+**4. No Process Visibility (20% of delays)**
+- **Root Cause**: No tracking system for customer status
+- **Impact**: Customer anxiety, internal confusion
+- **Cost**: 30% pre-go-live churn
+
+## OPTIMIZED WORKFLOW DESIGN
+
+### NEW 10-STEP STREAMLINED PROCESS
+
+**Target: 10 Days Total**
 
 ```
+INTAKE & SETUP (Days 1-2):
+├── Automated account creation from signed contract
+├── Standard contract auto-approval (90% of cases)
+├── Technical requirements auto-populated
+└── All systems updated simultaneously
 
-#### 5 WHYS ANALYSIS
-**Problem**: {{specific_problem}}
-1. Why? → {{cause_1}}
-2. Why? → {{cause_2}}
-3. Why? → {{cause_3}}
-4. Why? → {{cause_4}}
-5. Why? → {{root_cause}}
+PROVISIONING (Days 3-5):
+├── Automated environment creation
+├── Standard security configuration applied
+├── Integration testing (automated)
+└── Customer notification of readiness
 
-### FUTURE STATE DESIGN
+DELIVERY (Days 6-8):
+├── Self-service onboarding portal activated
+├── Guided setup with real-time support
+├── Automated training module delivery
+└── Success milestone tracking
 
-#### OPTIMIZED PROCESS MAP
+GO-LIVE (Days 9-10):
+├── Automated go-live checklist verification
+├── Customer success manager introduction
+├── 30-day success plan delivery
+└── Feedback collection and analysis
 ```
 
-Process: {{process_name}} - IMPROVED
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Digital │ 1m │ Automated │ 5m │ Parallel │
-│ Intake │────▶│ Validation │────▶│ Processing │
-└─────────────┘ └─────────────┘ └─────────────┘
-│ │
-Exception│ 5% Direct │ Route
-▼ ▼
-┌─────────────┐ ┌─────────────┐
-│ Manual │ │ Complete │
-│ Review 10m │ │ 30m total │
-└─────────────┘ └─────────────┘
+### AUTOMATION OPPORTUNITIES
 
-Improvements:
+**Quick Wins (Month 1):**
+1. **Contract Templates**: 90% standard contracts auto-approved
+2. **Data Integration**: Single entry updates all systems
+3. **Status Dashboard**: Real-time visibility for customers and staff
+4. **Automated Handoffs**: Trigger-based next-step notifications
 
-- Cycle Time: {{old_time}} → {{new_time}} (-{{percent}}%)
-- Automation: {{percent}}% of transactions
-- Quality: {{old_rate}} → {{new_rate}} defects
-- Cost: ${{old}} → ${{new}} per transaction
+**System Improvements (Month 2-3):**
+1. **Self-Service Portal**: Customer-driven setup for standard features
+2. **Integration Testing**: Automated validation before go-live
+3. **Smart Scheduling**: AI-optimized training and go-live timing
+4. **Predictive Analytics**: Early warning for at-risk onboardings
 
+## IMPLEMENTATION PLAN
+
+### PHASE 1: QUICK WINS (Month 1)
+
+**Week 1-2: Process Documentation & Training**
+- Map current state with all stakeholders
+- Define new handoff criteria and checklists
+- Create process owner role (Customer Success Operations)
+- Train all teams on new workflow
+
+**Week 3-4: System Integration**
+- Connect contract system to provisioning system
+- Create single customer data entry point
+- Build real-time status dashboard
+- Implement automated notifications
+
+### PHASE 2: AUTOMATION (Month 2)
+
+**Week 5-6: Legal Process Optimization**
+- Create standard contract templates (5 types cover 90% of deals)
+- Implement auto-approval for standard terms
+- Create expedited review process for custom deals
+- Set up legal team capacity planning
+
+**Week 7-8: Technical Process Streamlining**
+- Automate environment provisioning
+- Create standard configuration templates
+- Implement automated testing protocols
+- Build customer self-service capabilities
+
+### PHASE 3: OPTIMIZATION (Month 3)
+
+**Week 9-10: Customer Experience Enhancement**
+- Launch customer onboarding portal
+- Implement guided setup wizards
+- Create automated training delivery
+- Deploy success tracking system
+
+**Week 11-12: Continuous Improvement**
+- Implement process monitoring dashboard
+- Create feedback collection system
+- Establish monthly process review meetings
+- Train team on continuous improvement methods
+
+## MEASUREMENT SYSTEM
+
+### KEY PERFORMANCE INDICATORS
+
+**Primary Metrics:**
+- **Cycle Time**: Target 10 days (vs. current 21-35 days)
+- **Customer Satisfaction**: Target 95% (vs. current 70%)
+- **Pre-Go-Live Churn**: Target 5% (vs. current 30%)
+- **Process Efficiency**: Target 90% on-time delivery
+
+**Leading Indicators:**
+- Handoff completion rate within SLA
+- Data accuracy at each stage
+- Customer engagement with self-service tools
+- Staff utilization and satisfaction
+
+**Quality Metrics:**
+- Defect rate (rework required)
+- Customer complaints per 100 onboardings
+- Time to first value delivery
+- Support ticket volume post-go-live
+
+### DASHBOARD DESIGN
+
+**Real-Time Process Dashboard:**
+```
+ONBOARDING PIPELINE OVERVIEW:
+├── New Customers: 15 (this month)
+├── In Progress: 12 customers
+│   ├── Setup Phase: 5 customers (avg: day 2)
+│   ├── Provisioning: 4 customers (avg: day 4) 
+│   ├── Delivery: 2 customers (avg: day 7)
+│   └── Go-Live: 1 customer (day 9)
+├── At Risk: 2 customers (over SLA)
+└── Completed: 8 customers (avg: 9.5 days)
+
+PERFORMANCE METRICS:
+├── On-Time Delivery: 89% (target: 90%)
+├── Customer Satisfaction: 94% (target: 95%)
+├── Cycle Time: 9.8 days (target: 10 days)
+└── Churn Rate: 6% (target: 5%)
 ```
 
-#### IMPLEMENTATION ROADMAP
+## EXPECTED RESULTS
 
-**Phase 1: Quick Wins (Month 1)**
-- [ ] Eliminate {{wasteful_step}}
-- [ ] Standardize {{variable_process}}
-- [ ] Implement {{simple_automation}}
-- Expected Impact: {{percent}}% improvement
+**Performance Improvements:**
+- Cycle time reduction: 21-35 days → 10 days (65% improvement)
+- Customer satisfaction: 70% → 95% (+25 points)
+- Pre-go-live churn: 30% → 5% (83% reduction)
+- Process efficiency: 60% → 90% (+30 points)
 
-**Phase 2: System Changes (Month 2-3)**
-- [ ] Deploy {{technology_solution}}
-- [ ] Redesign {{workflow}}
-- [ ] Train team on {{new_process}}
-- Expected Impact: {{percent}}% improvement
+**Financial Impact:**
+- Lost revenue recovery: $50K/month → $5K/month
+- Staff efficiency gain: 25% capacity increase
+- Customer lifetime value: +15% due to better experience
+- ROI: 350% in first year
 
-**Phase 3: Cultural Shift (Month 4-6)**
-- [ ] Establish {{continuous_improvement}}
-- [ ] Implement {{performance_management}}
-- [ ] Scale to {{other_departments}}
-- Expected Impact: {{percent}}% improvement
+**Team Benefits:**
+- Clear process ownership and accountability
+- Reduced stress from firefighting mode
+- Improved customer relationships
+- Skills development in process improvement
 
-### RESOURCE REQUIREMENTS
-
-#### STAFFING IMPACT
-| Role | Current FTE | Future FTE | Change | Redeployment |
-|------|-------------|------------|---------|--------------|
-| {{role_1}} | {{#}} | {{#}} | {{+/-}} | {{plan}} |
-| {{role_2}} | {{#}} | {{#}} | {{+/-}} | {{plan}} |
-| {{role_3}} | {{#}} | {{#}} | {{+/-}} | {{plan}} |
-
-#### TECHNOLOGY INVESTMENTS
-| System | Purpose | Cost | ROI Period |
-|--------|---------|------|------------|
-| {{system_1}} | {{benefit}} | ${{cost}} | {{months}} |
-| {{system_2}} | {{benefit}} | ${{cost}} | {{months}} |
-
-### RISK MITIGATION
-
-#### IMPLEMENTATION RISKS
-| Risk | Probability | Impact | Mitigation | Owner |
-|------|-------------|---------|------------|--------|
-| {{risk_1}} | High | High | {{strategy}} | {{name}} |
-| {{risk_2}} | Medium | High | {{strategy}} | {{name}} |
-| {{risk_3}} | Low | Medium | {{strategy}} | {{name}} |
-
-### PERFORMANCE METRICS
-
-#### KPI DASHBOARD
+Would you like me to detail any specific part of this optimization plan?
 ```
-
-Operational Excellence Scorecard:
-
-Efficiency Metrics:
-├── Cycle Time: {{baseline}} → {{target}} [{{trend}}]
-├── Throughput: {{baseline}} → {{target}} [{{trend}}]
-├── Utilization: {{baseline}}% → {{target}}% [{{trend}}]
-└── Cost/Unit: ${{baseline}} → ${{target}} [{{trend}}]
-
-Quality Metrics:
-├── First Pass Yield: {{baseline}}% → {{target}}% [{{trend}}]
-├── Defect Rate: {{baseline}} → {{target}} [{{trend}}]
-├── Customer Satisfaction: {{baseline}} → {{target}} [{{trend}}]
-└── Compliance Rate: {{baseline}}% → {{target}}% [{{trend}}]
-
-```
-
-#### CONTROL PLAN
-| Process Step | Control Method | Frequency | Responsible | Action Trigger |
-|--------------|----------------|-----------|-------------|----------------|
-| {{step_1}} | {{method}} | {{frequency}} | {{role}} | {{threshold}} |
-| {{step_2}} | {{method}} | {{frequency}} | {{role}} | {{threshold}} |
-
-### CHANGE MANAGEMENT
-
-#### STAKEHOLDER ENGAGEMENT
-```
-
-Communication Plan:
-Week 1: Leadership alignment
-├── Executive briefing
-├── Department heads meeting
-└── Union consultation
-
-Week 2-3: Team engagement
-├── All-hands presentation
-├── Q&A sessions
-├── Training schedule
-└── Feedback channels
-
-Week 4+: Ongoing support
-├── Daily huddles
-├── Weekly metrics review
-├── Monthly town halls
-└── Success celebrations
-
-```
-
-#### TRAINING PROGRAM
-**Module 1: Process Overview**
-- Current vs. future state
-- Benefits and rationale
-- Role-specific changes
-
-**Module 2: New Tools/Systems**
-- Hands-on training
-- Practice scenarios
-- Certification process
-
-**Module 3: Continuous Improvement**
-- Problem-solving tools
-- Escalation procedures
-- Innovation mindset
-
-### FINANCIAL ANALYSIS
-
-#### COST-BENEFIT BREAKDOWN
-```
-
-One-Time Costs:
-
-- Technology: ${{amount}}
-- Training: ${{amount}}
-- Consulting: ${{amount}}
-- Transition: ${{amount}}
-  Total: ${{total}}
-
-Annual Benefits:
-
-- Labor Savings: ${{amount}}
-- Quality Improvement: ${{amount}}
-- Inventory Reduction: ${{amount}}
-- Customer Retention: ${{amount}}
-  Total: ${{total}}
-
-NPV (3 years): ${{amount}}
-IRR: {{percentage}}%
-Payback: {{months}} months
-
-```
-
-### SUSTAINABILITY PLAN
-
-#### CONTINUOUS IMPROVEMENT FRAMEWORK
-1. **Daily Management**
-   - Visual management boards
-   - Gemba walks
-   - Quick problem solving
-
-2. **Weekly Reviews**
-   - KPI tracking
-   - Deviation analysis
-   - Corrective actions
-
-3. **Monthly Optimization**
-   - Kaizen events
-   - Process audits
-   - Best practice sharing
-
-4. **Quarterly Strategy**
-   - Target adjustment
-   - Technology updates
-   - Expansion planning
-```
-
-## Usage Instructions
-
-1. Document current process in detail with time studies
-2. Collect baseline performance data for at least 30 days
-3. Interview stakeholders to understand pain points
-4. Fill in all context variables accurately
-5. Generate optimization plan
-6. Validate improvements with pilot testing
-7. Create detailed implementation plan with milestones
-8. Execute changes with strong change management
-
-## Examples
-
-### Example 1: Order Fulfillment Process
-
-**Input**:
-
-```
-{{process_to_optimize}}: Order fulfillment from receipt to shipping
-{{business_unit}}: Warehouse Operations
-{{process_frequency}}: 500 orders/day
-{{current_performance}}: 48-hour cycle time, 5% error rate, $25/order
-{{pain_points}}: Manual picking, paper-based, frequent stockouts
-{{primary_objective}}: Reduce cycle time by 50% while maintaining quality
-{{target_improvement}}: Same-day shipping for 80% of orders
-```
-
-**Output**: [Comprehensive optimization plan including warehouse layout redesign, WMS implementation, pick-path optimization, and automated sorting, projecting 65% cycle time reduction and $8/order cost savings]
 
 ## Related Prompts
 
-- [Supply Chain Optimizer](/prompts/business/operations/supply-chain-optimizer.md)
-- [Quality Management System Designer](/prompts/business/operations/quality-management.md)
-- [Inventory Optimization Specialist](/prompts/business/operations/inventory-optimizer.md)
-
-## Research Notes
-
-- Lean Six Sigma implementations average 25-40% process improvement
-- Digital transformation in operations reduces costs by 20-30%
-- Employee engagement critical - 70% of improvements fail without buy-in
-- Visual management increases compliance by 45%
-- Continuous improvement culture delivers 3-5% annual productivity gains
+- [Operations Management Expert](./operations-manager-excellence.md)
+- [Supply Chain Expert](./supply-chain-optimization-expert.md)
+- [Quality Improvement Expert](../quality/quality-improvement-expert.md)
