@@ -207,7 +207,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
                     </a>
                     {% if prompt.prompt %}
                     <button class="btn btn-secondary copy-btn" 
-                            data-clipboard-text="{{ prompt.prompt | strip }}">
+                            data-clipboard-text="{{ prompt.prompt | strip | escape }}">
                         <i class="fas fa-copy"></i>
                     </button>
                     {% endif %}
