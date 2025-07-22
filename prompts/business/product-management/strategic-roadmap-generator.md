@@ -1,322 +1,390 @@
-# Strategic Product Roadmap Generator with Prioritization Framework
+# Strategic Roadmap Generator
 
 ## Metadata
 
-- **Category**: Business/Product Management
-- **Tags**: product roadmap, prioritization, strategy, product management, planning
+- **Category**: Business/Product-Management
+- **Tags**: product roadmap, strategic planning, product strategy, roadmap development
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Product Manager, Strategic Planning Expert
-- **Use Cases**: quarterly planning, annual roadmaps, feature prioritization, stakeholder alignment
+- **Version**: 2.0.0
+- **Use Cases**: product planning, roadmap creation, feature prioritization, strategic alignment
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt generates comprehensive product roadmaps that balance user needs, business objectives, and technical constraints. It employs multiple prioritization frameworks and strategic thinking to create roadmaps that are both ambitious and achievable, with clear rationale for every decision and built-in flexibility for market changes.
+This prompt helps you create strategic product roadmaps that balance customer needs, business objectives, and technical constraints while maintaining clear communication with stakeholders.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as a strategic product planning system combining:
+I'll help you create a strategic product roadmap that aligns with your business goals. Let me understand your context:
 
-1. **Senior Product Manager** (12+ years experience)
-   - Expertise: Product strategy, user research, market analysis, roadmapping
-   - Strengths: Stakeholder management, prioritization, vision articulation
-   - Perspective: User-centric with business impact focus
+**Product overview:**
+1. What product are you roadmapping?
+2. What stage is it in? (early, growth, mature)
+3. Who are your primary users/customers?
+4. What's your competitive position?
 
-2. **Strategic Planning Expert**
-   - Expertise: Long-term planning, scenario analysis, resource optimization
-   - Strengths: Systems thinking, risk assessment, opportunity identification
-   - Perspective: Market dynamics and competitive positioning
+**Strategic context:**
+5. What are your key business objectives?
+6. What metrics define success?
+7. What's your time horizon? (quarterly, annual, multi-year)
+8. Any major constraints? (resources, technology, market)
 
-Apply these strategic frameworks:
-- **Jobs-to-be-Done**: Focus on user outcomes over features
-- **RICE Scoring**: Reach, Impact, Confidence, Effort analysis
-- **Kano Model**: Classify features by user satisfaction impact
-- **OKR Alignment**: Ensure roadmap supports organizational objectives
+**Current situation:**
+9. What are the biggest user pain points?
+10. What opportunities are you seeing?
+11. What technical debt or limitations exist?
+12. How do you currently prioritize features?
 
-PRODUCT CONTEXT:
-- **Product Name**: {{product_name}}
-- **Product Stage**: {{startup_growth_mature}}
-- **Market Position**: {{market_position}}
-- **User Segments**: {{target_users}}
-- **Business Model**: {{revenue_model}}
-- **Key Metrics**: {{north_star_metrics}}
-- **Competitive Landscape**: {{main_competitors}}
-- **Resource Constraints**: {{team_size_budget}}
-- **Time Horizon**: {{planning_period}}
-- **Strategic Goals**: {{company_objectives}}
+Based on your answers, I'll provide:
 
-CURRENT STATE:
-- **Recent Launches**: {{recent_features}}
-- **User Feedback Themes**: {{top_user_requests}}
-- **Technical Debt**: {{tech_debt_areas}}
-- **Market Trends**: {{relevant_trends}}
-- **Competitive Threats**: {{competitor_moves}}
+**STRATEGIC THEMES** - High-level focus areas aligned with goals
+**ROADMAP STRUCTURE** - Organized timeline with key deliverables
+**PRIORITIZATION FRAMEWORK** - How to decide what to build when
+**STAKEHOLDER VIEW** - Different roadmap versions for different audiences
+**SUCCESS METRICS** - How to measure roadmap effectiveness
 
-ROADMAP GENERATION FRAMEWORK:
-
-Phase 1: OPPORTUNITY ANALYSIS
-1. Synthesize user research and feedback
-2. Analyze market trends and competitive moves
-3. Identify unmet user needs
-4. Map opportunities to business impact
-
-Phase 2: INITIATIVE DEFINITION
-1. Generate potential initiatives
-2. Define success criteria for each
-3. Estimate resource requirements
-4. Assess technical feasibility
-
-Phase 3: PRIORITIZATION
-1. Apply multiple scoring frameworks
-2. Balance quick wins with strategic bets
-3. Consider dependencies and sequencing
-4. Align with company strategy
-
-Phase 4: ROADMAP CONSTRUCTION
-1. Create phased delivery plan
-2. Define milestones and checkpoints
-3. Build in flexibility for pivots
-4. Communicate rationale clearly
-
-DELIVER YOUR ROADMAP AS:
-
-## STRATEGIC PRODUCT ROADMAP
-
-### EXECUTIVE SUMMARY
-- **Vision Statement**: [One paragraph product vision]
-- **Key Themes**: [3-4 strategic themes for the period]
-- **Expected Outcomes**: [Business and user impact]
-- **Resource Requirements**: [Team and budget needs]
-- **Risk Factors**: [Key assumptions and risks]
-
-### MARKET & USER CONTEXT
-
-#### USER INSIGHTS
-**Top User Jobs-to-be-Done**:
-1. **Job**: {{user_job_1}}
-   - Current Solution: {{how_solved_today}}
-   - Pain Points: {{specific_pains}}
-   - Opportunity Size: {{addressable_users}}
-
-2. **Job**: {{user_job_2}}
-   - Current Solution: {{how_solved_today}}
-   - Pain Points: {{specific_pains}}
-   - Opportunity Size: {{addressable_users}}
-
-#### COMPETITIVE ANALYSIS
-| Competitor | Recent Moves | Our Response | Differentiation |
-|------------|--------------|--------------|-----------------|
-| {{comp_1}} | {{action}} | {{strategy}} | {{unique_value}} |
-| {{comp_2}} | {{action}} | {{strategy}} | {{unique_value}} |
-
-### PRIORITIZATION FRAMEWORK
-
-#### RICE SCORING MATRIX
-| Initiative | Reach | Impact | Confidence | Effort | Score | Rank |
-|------------|-------|---------|------------|--------|-------|------|
-| {{feature_1}} | 8/10 | 9/10 | 7/10 | 5/10 | 10.1 | 1 |
-| {{feature_2}} | 7/10 | 8/10 | 8/10 | 3/10 | 14.9 | 2 |
-| {{feature_3}} | 9/10 | 6/10 | 9/10 | 7/10 | 6.9 | 5 |
-
-**Scoring Rationale**:
-- **Reach**: # of users affected in first quarter
-- **Impact**: 3=massive, 2=high, 1=medium, 0.5=low, 0.25=minimal
-- **Confidence**: 100%=high, 80%=medium, 50%=low
-- **Effort**: Person-months required
-
-#### KANO CLASSIFICATION
-**Must-Have (Basic)**:
-- {{feature}}: Without this, product fails basic expectations
-
-**Performance (Linear)**:
-- {{feature}}: More is better, direct satisfaction correlation
-
-**Delighters (Exciting)**:
-- {{feature}}: Unexpected value that creates advocacy
-
-### PHASED ROADMAP
-
-#### PHASE 1: {{QUARTER/TIMEFRAME}} - FOUNDATION
-**Theme**: {{theme_name}}
-**Goal**: {{specific_goal}}
-
-**Initiatives**:
-1. **{{initiative_name}}**
-   - Description: {{detailed_description}}
-   - User Story: As a {{user_type}}, I want to {{goal}} so that {{benefit}}
-   - Success Metrics:
-     - {{metric_1}}: Target {{value}}
-     - {{metric_2}}: Target {{value}}
-   - Dependencies: {{technical_or_resource_deps}}
-   - Risks: {{key_risks}}
-
-2. **{{initiative_name}}**
-   [Similar structure]
-
-**Expected Outcomes**:
-- User Impact: {{specific_improvements}}
-- Business Impact: {{revenue_retention_growth}}
-- Technical Impact: {{platform_improvements}}
-
-#### PHASE 2: {{QUARTER/TIMEFRAME}} - EXPANSION
-**Theme**: {{theme_name}}
-**Goal**: {{specific_goal}}
-
-[Similar structure to Phase 1]
-
-#### PHASE 3: {{QUARTER/TIMEFRAME}} - INNOVATION
-**Theme**: {{theme_name}}
-**Goal**: {{specific_goal}}
-
-[Similar structure to Phase 1]
-
-### RESOURCE ALLOCATION
-
-#### TEAM ALLOCATION
+Share your product context and let's build a compelling roadmap!
 ```
 
-         Phase 1    Phase 2    Phase 3
+## Example Usage
 
-Frontend 3 4 3
-Backend 4 3 4
-Mobile 2 3 2
-Data 1 2 2
-Design 2 2 1
-QA 2 2 2
-Total FTE 14 16 14
+**User Input:**
+```
+1. B2B analytics platform for e-commerce companies
+2. Growth stage - 2 years old, 200 customers, $5M ARR
+3. Primary users: E-commerce analysts, marketing managers at mid-market retailers
+4. #3 in market, competing against 2 larger players and several startups
 
-````
+5. Double ARR to $10M, expand to enterprise, reduce churn from 15% to 10%
+6. Success: ARR growth, NPS >50, enterprise logos, feature adoption rates
+7. Planning 12-month roadmap with quarterly releases
+8. Limited engineering (8 devs), legacy codebase areas, GDPR compliance needed
 
-#### INVESTMENT BREAKDOWN
-- Core Features: 60%
-- Technical Debt: 20%
-- Innovation/Experiments: 15%
-- Bug Fixes/Maintenance: 5%
-
-### DEPENDENCY MANAGEMENT
-
-```mermaid
-graph LR
-    A[User Auth Upgrade] --> B[Social Features]
-    A --> C[Personalization]
-    D[API v2] --> E[Mobile App]
-    D --> F[Partner Integration]
-    G[Analytics Pipeline] --> C
-    G --> H[ML Features]
-````
-
-### SUCCESS METRICS & OKRS
-
-#### OBJECTIVE 1: {{objective}}
-
-**Key Results**:
-
-- KR1: {{measurable_result}} from X to Y
-- KR2: {{measurable_result}} by Z%
-- KR3: Launch {{specific_deliverable}}
-
-#### OBJECTIVE 2: {{objective}}
-
-[Similar structure]
-
-### RISK MITIGATION
-
-| Risk       | Probability | Impact | Mitigation Strategy | Owner     |
-| ---------- | ----------- | ------ | ------------------- | --------- |
-| {{risk_1}} | High        | High   | {{mitigation}}      | {{owner}} |
-| {{risk_2}} | Medium      | High   | {{mitigation}}      | {{owner}} |
-| {{risk_3}} | Low         | Medium | {{mitigation}}      | {{owner}} |
-
-### COMMUNICATION PLAN
-
-#### STAKEHOLDER UPDATES
-
-- **Executive Team**: Monthly strategic reviews
-- **Engineering**: Bi-weekly planning sessions
-- **Sales/Marketing**: Monthly roadmap syncs
-- **Customer Success**: Weekly feedback loops
-
-#### EXTERNAL COMMUNICATION
-
-- **User Announcement**: {{timing_and_channel}}
-- **Beta Program**: {{selection_criteria}}
-- **Developer Community**: {{api_timeline}}
-
-### FLEXIBILITY & PIVOT POINTS
-
-#### DECISION GATES
-
-1. **End of Phase 1**: Evaluate {{metric}} to decide on {{decision}}
-2. **Mid Phase 2**: Review {{condition}} for potential pivot
-3. **Quarterly**: Assess market changes and adjust priorities
-
-#### PIVOT SCENARIOS
-
-**Scenario A**: If {{condition}}, then {{adjustment}}
-**Scenario B**: If {{condition}}, then {{adjustment}}
-
-### APPENDIX: DETAILED REQUIREMENTS
-
-#### {{FEATURE_1}} SPECIFICATIONS
-
-**User Stories**:
-
-- As a {{user}}, I want to {{action}} so that {{outcome}}
-- As a {{user}}, I want to {{action}} so that {{outcome}}
-
-**Acceptance Criteria**:
-
-- [ ] {{specific_criterion}}
-- [ ] {{specific_criterion}}
-- [ ] {{specific_criterion}}
-
-**Technical Considerations**:
-
-- {{consideration_1}}
-- {{consideration_2}}
-
+9. Pain points: Slow report generation, limited customization, poor mobile experience
+10. Opportunities: AI-powered insights, marketplace integrations, real-time analytics
+11. Tech debt: Monolithic architecture, outdated UI framework, scaling issues >1M records
+12. Currently using customer requests + revenue impact, but it's ad hoc
 ```
 
-## Usage Instructions
-1. Gather comprehensive context about product, market, and users
-2. Compile user research, competitive analysis, and business goals
-3. Fill in all template variables with specific information
-4. Run the prompt to generate strategic roadmap
-5. Review prioritization logic and adjust weights if needed
-6. Validate resource allocations with team leads
-7. Use output for stakeholder alignment and planning sessions
+**Assistant Output:**
 
-## Examples
-### Example 1: B2B SaaS Platform Roadmap
-**Input**:
-```
+Here's your strategic product roadmap for the next 12 months:
 
-{{product_name}}: CloudSync Pro
-{{product_stage}}: Growth (5K customers, $2M ARR)
-{{market_position}}: #3 in file synchronization for enterprises
-{{target_users}}: IT administrators, knowledge workers in 100-5000 person companies
-{{revenue_model}}: Subscription SaaS, $50-200/user/month
-{{north_star_metrics}}: Weekly Active Teams, Net Revenue Retention
-{{main_competitors}}: Dropbox Business, Box, Google Workspace
-{{team_size_budget}}: 15 engineers, 3 designers, $500K quarterly budget
-{{planning_period}}: Next 12 months (4 quarters)
-{{company_objectives}}: Achieve $5M ARR, become #2 in market share
+## STRATEGIC THEMES
+
+### Theme Architecture
 
 ```
+North Star: "Become the Intelligence Layer for E-commerce Growth"
 
-**Output**: [Comprehensive roadmap with phased approach to enterprise features, security enhancements, and collaboration tools]
+Q1: Foundation - "Performance & Reliability"
+Q2: Expansion - "Integrate Everywhere"  
+Q3: Intelligence - "AI-Powered Insights"
+Q4: Enterprise - "Scale & Sophistication"
+```
+
+### Theme Rationale
+
+**Q1 - Foundation First**:
+- Can't grow with performance issues
+- Reduces churn (addresses #1 complaint)
+- Enables future features
+
+**Q2 - Ecosystem Play**:
+- Marketplace integrations = stickiness
+- Competitive differentiator
+- Enables richer analytics
+
+**Q3 - AI Advantage**:
+- Next-gen capabilities
+- Premium pricing opportunity
+- Enterprise appeal
+
+**Q4 - Enterprise Ready**:
+- Larger deals = faster ARR growth
+- Security & compliance
+- Advanced features
+
+## ROADMAP STRUCTURE
+
+### Q1: Performance & Reliability Sprint
+
+**Major Deliverables**:
+
+```
+1. Report Generation Optimization (Weeks 1-4)
+   - Current: 2-5 min for complex reports
+   - Target: <30 seconds for 95% of reports
+   - Approach: Caching, query optimization, CDN
+
+2. Architecture Modernization Phase 1 (Weeks 5-8)
+   - Extract reporting service
+   - Implement job queue system
+   - Database sharding prep
+
+3. Mobile Experience MVP (Weeks 9-12)
+   - Responsive dashboards
+   - Key metrics on mobile
+   - Push notifications
+```
+
+**Outcomes**:
+- 70% faster report generation
+- Mobile NPS from 20 → 45
+- Churn reduction: 15% → 12%
+
+### Q2: Integration Ecosystem
+
+**Major Deliverables**:
+
+```
+1. Marketplace Integrations (Weeks 1-6)
+   - Shopify Plus (must-have)
+   - Amazon Seller Central
+   - Google Analytics 4
+   - Facebook Ads
+
+2. Custom Fields & Filters (Weeks 7-9)
+   - User-defined metrics
+   - Saved filter sets
+   - Custom dashboards
+
+3. API v2 Launch (Weeks 10-12)
+   - RESTful design
+   - Webhook support
+   - Rate limiting
+```
+
+**Outcomes**:
+- 30% increase in data sources connected
+- API adoption by 50+ customers
+- Platform stickiness ↑40%
+
+### Q3: AI-Powered Intelligence
+
+**Major Deliverables**:
+
+```
+1. Anomaly Detection (Weeks 1-4)
+   - Automatic alerts
+   - Revenue anomalies
+   - Traffic pattern changes
+
+2. Predictive Analytics Beta (Weeks 5-8)
+   - Sales forecasting
+   - Inventory predictions
+   - Customer LTV modeling
+
+3. Insights Engine (Weeks 9-12)
+   - Natural language queries
+   - Auto-generated insights
+   - Competitive benchmarking
+```
+
+**Outcomes**:
+- New premium tier at 2x price
+- 25% of customers upgrade
+- Win first 5 enterprise deals
+
+### Q4: Enterprise Scale
+
+**Major Deliverables**:
+
+```
+1. Enterprise Security Suite (Weeks 1-6)
+   - SSO/SAML support
+   - Role-based access control
+   - Audit logging
+   - GDPR compliance
+
+2. White-Label Options (Weeks 7-9)
+   - Custom branding
+   - Embedded analytics
+   - Multi-tenant architecture
+
+3. Advanced Analytics (Weeks 10-12)
+   - Cohort analysis
+   - Attribution modeling
+   - A/B test analysis
+```
+
+**Outcomes**:
+- 10+ enterprise customers
+- ARR: $8M → $10M trajectory
+- NPS: 45 → 55
+
+## PRIORITIZATION FRAMEWORK
+
+### RICE Scoring Model
+
+```
+Reach × Impact × Confidence / Effort = Priority Score
+
+Reach: # of customers affected (1-10)
+Impact: Revenue/retention impact (1-10)
+Confidence: Success probability (0.1-1.0)
+Effort: Developer weeks (1-50)
+```
+
+### Feature Evaluation Matrix
+
+| Feature | Reach | Impact | Confidence | Effort | Score | Quarter |
+|---------|-------|---------|------------|---------|--------|---------|
+| Report Speed | 10 | 9 | 0.9 | 8 | 10.1 | Q1 |
+| Mobile App | 7 | 7 | 0.8 | 12 | 3.3 | Q1 |
+| Shopify Integration | 8 | 8 | 0.9 | 6 | 9.6 | Q2 |
+| AI Insights | 6 | 10 | 0.7 | 20 | 2.1 | Q3 |
+| SSO Support | 4 | 9 | 0.9 | 4 | 8.1 | Q4 |
+
+### Decision Criteria
+
+**Must Have**:
+- Addresses top 3 customer complaints
+- Supports ARR growth goals
+- Technically feasible with current team
+
+**Should Have**:
+- Competitive differentiation
+- Platform extensibility
+- Technical debt reduction
+
+**Nice to Have**:
+- Experimental features
+- Minor UX improvements
+- Internal tools
+
+## STAKEHOLDER VIEW
+
+### Executive Roadmap (Board/Leadership)
+
+```
+2024 Product Strategy
+
+Q1: Stabilize - Fix performance, reduce churn
+Q2: Expand - Ecosystem integrations  
+Q3: Innovate - AI capabilities
+Q4: Enterprise - Security & scale
+
+Key Metrics:
+- Churn: 15% → 10%
+- ARR: $5M → $10M
+- Enterprise Customers: 0 → 10
+- NPS: 35 → 55
+```
+
+### Customer Roadmap (Public)
+
+```
+Coming Soon:
+
+✓ Next Month:
+  • 5x faster reports
+  • Mobile dashboards
+
+✓ Spring 2024:
+  • Shopify integration
+  • Custom metrics
+  • New API
+
+✓ Summer 2024:
+  • AI-powered insights
+  • Anomaly detection
+  • Predictive analytics
+
+✓ Fall 2024:
+  • Enterprise security
+  • Advanced analytics
+  • White-label options
+```
+
+### Engineering Roadmap (Internal)
+
+```
+Technical Priorities:
+
+Q1: Architecture
+- Service extraction
+- Database optimization  
+- Mobile web framework
+
+Q2: Integrations
+- API v2 design
+- Webhook infrastructure
+- OAuth implementations
+
+Q3: ML Pipeline
+- Data pipeline upgrade
+- Model training infrastructure
+- Real-time processing
+
+Q4: Enterprise
+- Multi-tenancy
+- Security hardening
+- Compliance framework
+```
+
+## SUCCESS METRICS
+
+### Roadmap KPIs
+
+**Delivery Metrics**:
+```
+On-Time Delivery: >80%
+Scope Creep: <20%
+Quality (bugs): <5 critical/quarter
+Team Velocity: 20% improvement
+```
+
+**Business Impact**:
+```
+                Q1    Q2    Q3    Q4
+ARR ($M)        5.5   6.5   8.0   10.0
+Churn %         12%   11%   10%   10%
+NPS             40    45    50    55
+Enterprise      0     2     5     10
+```
+
+### Feature Adoption Tracking
+
+**Success Criteria by Feature**:
+- Report Speed: 90% use new engine
+- Mobile: 40% MAU on mobile
+- Integrations: 2+ per customer
+- AI Insights: 60% engagement
+- Enterprise: 10 logos signed
+
+### Quarterly Reviews
+
+**Roadmap Retrospective**:
+1. What shipped vs. planned?
+2. Which bets paid off?
+3. What did we learn?
+4. How should we adjust?
+
+**Adjustment Triggers**:
+- Competitor launches major feature
+- Customer feedback pattern emerges
+- Technical discovery changes scope
+- Market conditions shift
+
+### Communication Cadence
+
+**Internal**:
+- Weekly: Engineering standups
+- Bi-weekly: Stakeholder updates
+- Monthly: Customer advisory board
+- Quarterly: Board review
+
+**External**:
+- Monthly: Product updates blog
+- Quarterly: Roadmap refresh
+- Annual: Vision presentation
+
+This roadmap balances fixing current issues while building toward your growth goals. The key is maintaining flexibility while staying focused on the strategic themes.
 
 ## Related Prompts
-- [Feature Prioritization Matrix](/prompts/business/product-management/feature-prioritization.md)
-- [User Story Generator](/prompts/business/product-management/user-story-generator.md)
-- [Competitive Analysis Framework](/prompts/business/product-management/competitive-analysis.md)
 
-## Research Notes
-- RICE framework proven to improve prioritization accuracy by 40%
-- Jobs-to-be-Done methodology from Clayton Christensen's research
-- Kano model integration based on Japanese quality management
-- OKR alignment following Google's implementation patterns
-- Flexibility mechanisms inspired by Amazon's Working Backwards process
-```
+- [Product Strategy Expert](./product-strategy-expert.md)
+- [Feature Prioritization Specialist](./feature-prioritization-expert.md)
+- [Product Metrics Analyst](./product-metrics-expert.md)

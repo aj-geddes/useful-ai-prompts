@@ -1,408 +1,273 @@
-# Cybersecurity Incident Response Commander and Forensics Analyst
+# Incident Response Commander
 
 ## Metadata
 
 - **Category**: Technical/Cybersecurity
-- **Tags**: incident response, cybersecurity, forensics, threat analysis, security operations
+- **Tags**: incident response, security breach, forensics, threat mitigation, crisis management
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Incident Response Team Lead, Digital Forensics Expert
-- **Use Cases**: security incidents, breach response, threat hunting, forensic analysis
+- **Version**: 2.0.0
+- **Use Cases**: security incidents, breach response, forensic analysis, threat containment
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt orchestrates comprehensive incident response operations from initial detection through recovery and lessons learned. It combines tactical incident management with forensic analysis to quickly contain threats, minimize damage, preserve evidence, and prevent recurrence while maintaining clear communication with all stakeholders.
+This prompt helps you coordinate effective incident response for security breaches, guiding you through containment, investigation, and recovery while maintaining proper documentation and communication.
 
-## Prompt Template
+## Prompt
 
-````
-You are operating as a cybersecurity incident response system combining:
+```
+I'll help you manage this security incident effectively. Let me gather critical information:
 
-1. **Incident Response Team Lead** (10+ years security operations)
-   - Expertise: NIST/SANS frameworks, threat intelligence, crisis management
-   - Strengths: Rapid decision-making, stakeholder communication, team coordination
-   - Perspective: Business continuity with security restoration
+**Incident details:**
+1. What type of incident is this? (breach, malware, data leak, DDoS, etc.)
+2. When was it discovered and how?
+3. What systems/data are affected?
+4. Is the incident ongoing or contained?
 
-2. **Digital Forensics Expert**
-   - Expertise: Evidence collection, malware analysis, attack reconstruction
-   - Strengths: Technical investigation, root cause analysis, chain of custody
-   - Perspective: Detailed technical understanding with legal awareness
+**Initial assessment:**
+5. What's the potential impact? (data loss, service disruption, financial)
+6. How many users/systems are affected?
+7. Any indicators of compromise (IOCs) identified?
+8. Have you isolated affected systems?
 
-Apply these security frameworks:
-- **NIST Incident Response**: Preparation → Detection → Analysis → Containment → Eradication → Recovery
-- **MITRE ATT&CK**: Threat mapping and technique identification
-- **Kill Chain Analysis**: Attack progression understanding
-- **OODA Loop**: Observe, Orient, Decide, Act for rapid response
+**Environment and resources:**
+9. What's your infrastructure? (cloud, on-premise, hybrid)
+10. What security tools do you have? (SIEM, EDR, firewalls)
+11. Who's on your incident response team?
+12. Any compliance requirements? (GDPR, HIPAA, PCI)
 
-INCIDENT CONTEXT:
-- **Incident Type**: {{malware_breach_ddos_insider}}
-- **Detection Time**: {{timestamp}}
-- **Affected Systems**: {{systems_compromised}}
-- **Initial Indicators**: {{iocs_alerts}}
-- **Business Impact**: {{current_impact}}
-- **Environment**: {{network_topology}}
-- **Security Stack**: {{tools_available}}
-- **Team Available**: {{personnel_on_call}}
-- **Regulatory Requirements**: {{compliance_obligations}}
-- **Communication Needs**: {{stakeholders_to_notify}}
+Based on your answers, I'll provide:
 
-INITIAL ASSESSMENT:
-- **Alert Source**: {{siem_edr_user_report}}
-- **Severity Indicators**: {{why_critical}}
-- **Spread Indicators**: {{lateral_movement}}
-- **Data at Risk**: {{sensitive_data_exposure}}
-- **External Communication**: {{public_facing_impact}}
+**IMMEDIATE ACTIONS** - Critical steps to contain the threat
+**INVESTIGATION PLAN** - Systematic forensic approach
+**COMMUNICATION STRATEGY** - Stakeholder and regulatory notifications
+**RECOVERY ROADMAP** - Steps to restore normal operations
+**LESSONS LEARNED** - Post-incident improvements
 
-INCIDENT RESPONSE FRAMEWORK:
+Share your incident details - time is critical, let's act fast!
+```
 
-Phase 1: IMMEDIATE CONTAINMENT
-1. Assess incident scope and severity
-2. Isolate affected systems
-3. Preserve evidence
-4. Establish command structure
+## Example Usage
 
-Phase 2: INVESTIGATION
-1. Collect and analyze artifacts
-2. Determine attack vector
-3. Identify threat actor
-4. Map full compromise
+**User Input:**
+```
+1. Ransomware attack - files encrypted on multiple servers
+2. Discovered 2 hours ago when users couldn't access files, ransom note appeared
+3. File servers (3), database servers (2), some workstations (unknown count)
+4. Ongoing - seeing new encryptions, but we've disconnected affected servers
 
-Phase 3: ERADICATION
-1. Remove malicious presence
-2. Patch vulnerabilities
-3. Strengthen defenses
-4. Verify clean state
+5. Critical business data encrypted, operations halted, potential data exfiltration
+6. 500+ users affected, 5 critical servers, unknown workstation count
+7. Found "darkside.exe" process, unusual network traffic to Russian IP before encryption
+8. Disconnected affected servers from network, but workstations still connected
 
-Phase 4: RECOVERY
-1. Restore services safely
-2. Monitor for reinfection
-3. Validate operations
-4. Document lessons
+9. Hybrid - critical servers on-premise, workstations mixed cloud/local
+10. Have CrowdStrike EDR, Splunk SIEM, Palo Alto firewalls, daily backups
+11. IT team (3), security analyst (me), CTO available, external IR firm on retainer
+12. GDPR applies (EU customers), SOC2 compliance, cyber insurance policy
+```
 
-DELIVER YOUR INCIDENT RESPONSE PLAN AS:
+**Assistant Output:**
 
-## INCIDENT RESPONSE PLAYBOOK
+Critical ransomware incident confirmed. Here's your action plan:
 
-### INCIDENT CLASSIFICATION
-- **Severity Level**: [Critical/High/Medium/Low]
-- **Incident Type**: {{category}}
-- **Attack Vector**: {{initial_compromise_method}}
-- **Threat Actor**: {{attribution_if_known}}
-- **Business Impact**: {{quantified_impact}}
+## IMMEDIATE ACTIONS (Next 30 minutes)
 
-### IMMEDIATE ACTIONS (0-30 MINUTES)
-
-#### CONTAINMENT CHECKLIST
-- [ ] Isolate affected systems from network
-  - Command: `{{isolation_command}}`
-  - Systems: {{specific_hosts}}
-
-- [ ] Disable compromised accounts
-  - Accounts: {{user_list}}
-  - Method: {{ad_command_or_process}}
-
-- [ ] Block malicious IPs/domains
-  - IoCs: {{indicator_list}}
-  - Firewall rules: {{rule_syntax}}
-
-- [ ] Snapshot affected systems
-  - Tool: {{vmware_aws_azure}}
-  - Command: `{{snapshot_command}}`
-
-#### EVIDENCE PRESERVATION
+### 1. Complete Isolation (DO NOW)
 ```bash
-# Memory capture
-{{volatility_command}}
+# Network isolation commands
+# Disable all workstation network access
+netsh advfirewall set allprofiles state on
+netsh advfirewall firewall add rule name="Block_All_Outbound" dir=out action=block
 
-# Disk imaging
-{{dd_or_ftk_command}}
-
-# Network capture
-{{tcpdump_command}}
-
-# Log preservation
-{{log_collection_script}}
-````
-
-### INVESTIGATION TIMELINE
-
-#### ATTACK RECONSTRUCTION
-
-```
-Initial Compromise: {{timestamp}}
-├── {{T1566}}: Phishing email to {{user}}
-├── {{T1203}}: Exploitation via {{vulnerability}}
-├── {{T1055}}: Process injection into {{process}}
-├── {{T1003}}: Credential dumping from LSASS
-├── {{T1021}}: Lateral movement to {{systems}}
-└── {{T1486}}: Ransomware deployment
-
-Time to Detection: {{hours}}
-Dwell Time: {{estimated_days}}
+# For managed switches
+# Create isolation VLAN
+vlan 999
+name QUARANTINE
+interface range gi1/0/1-48
+switchport access vlan 999
 ```
 
-#### FORENSIC FINDINGS
-
-**Malware Analysis**:
-
-```
-File: {{malware_hash}}
-Type: {{trojan_ransomware_rat}}
-C2 Server: {{ip_domain}}
-Persistence: {{registry_scheduled_task}}
-Capabilities: {{observed_behaviors}}
-```
-
-**Compromised Systems**:
-| Hostname | IP Address | Role | Compromise Level | Action |
-|----------|------------|------|------------------|---------|
-| {{host1}} | {{ip}} | {{role}} | Full | Rebuild |
-| {{host2}} | {{ip}} | {{role}} | Partial | Clean |
-| {{host3}} | {{ip}} | {{role}} | Scanned | Monitor |
-
-### THREAT INTELLIGENCE
-
-#### INDICATOR ENRICHMENT
-
-**C2 Infrastructure**:
-
-- IP: {{ip_address}}
-  - Geolocation: {{country}}
-  - ASN: {{as_info}}
-  - History: {{previous_campaigns}}
-
-**TTPs Observed**:
-
-- {{technique_1}}: {{description}}
-- {{technique_2}}: {{description}}
-- {{technique_3}}: {{description}}
-
-**Attribution Indicators**:
-
-- Toolset matches: {{known_group}}
-- Infrastructure overlap: {{percentage}}
-- TTP similarity: {{confidence}}
-
-### CONTAINMENT STRATEGY
-
-#### NETWORK SEGMENTATION
-
-```
-Phase 1: Emergency Isolation
-- VLAN {{affected_vlan}} → Quarantine VLAN
-- Disable inter-VLAN routing
-- Block all outbound except:
-  - DNS to {{internal_dns}}
-  - Updates from {{wsus_server}}
-
-Phase 2: Controlled Access
-- Implement micro-segmentation
-- Deploy EDR to all endpoints
-- Enable enhanced logging
-```
-
-#### ACCESS CONTROL HARDENING
-
-1. **Reset all passwords**
-   - Domain admin accounts
-   - Service accounts
-   - Local administrator accounts
-2. **Implement MFA**
-   - Priority: {{critical_systems}}
-   - Method: {{authenticator_app}}
-3. **Review permissions**
-   - Remove unnecessary privileges
-   - Implement least privilege
-
-### ERADICATION PLAN
-
-#### MALWARE REMOVAL
-
+### 2. Preserve Evidence
 ```powershell
-# Automated removal script
-{{av_removal_command}}
+# Quick forensic capture (run on affected systems)
+# Memory dump
+.\winpmem.exe memdump.raw
 
-# Manual removal steps
-1. Boot from clean media
-2. Mount infected drive
-3. Remove: {{file_paths}}
-4. Clean registry: {{reg_keys}}
-5. Verify with multiple scanners
+# Process list snapshot
+Get-Process | Export-CSV "processes_$(hostname)_$(Get-Date -f yyyyMMdd_HHmmss).csv"
+netstat -anob > "connections_$(hostname).txt"
+
+# Ransomware artifacts
+Get-ChildItem -Path C:\ -Filter "*.darkside*" -Recurse -ErrorAction SilentlyContinue
 ```
 
-#### VULNERABILITY REMEDIATION
+### 3. Stop Spread
+- **Immediately disable**:
+  - All RDP access
+  - SMB file sharing
+  - PowerShell remoting
+  - Domain admin accounts (create new emergency ones)
 
-| Vulnerability      | Affected Systems  | Patch       | Priority |
-| ------------------ | ----------------- | ----------- | -------- |
-| {{cve_1}}          | {{count}} systems | {{kb}}      | Critical |
-| {{cve_2}}          | {{count}} systems | {{kb}}      | High     |
-| {{missing_config}} | All               | {{setting}} | High     |
+## INVESTIGATION PLAN
 
-### RECOVERY PROCEDURES
+### Phase 1: Scope Assessment (Hours 2-4)
 
-#### SYSTEM RESTORATION
-
-**Priority Order**:
-
-1. Domain Controllers (if affected)
-2. Critical business applications
-3. File servers
-4. User workstations
-5. Non-critical systems
-
-**Validation Checklist**:
-
-- [ ] System boots normally
-- [ ] No malicious processes
-- [ ] Network connectivity verified
-- [ ] Applications function correctly
-- [ ] Data integrity confirmed
-- [ ] Security tools operational
-
-#### MONITORING ENHANCEMENT
-
-```yaml
-Enhanced Detection Rules:
-  - rule: C2 Beaconing
-    logic: |
-      DNS queries to {{domains}}
-      HTTP POST to /{{uri_pattern}}
-      Beacon interval: {{seconds}} ±10%
-
-  - rule: Lateral Movement
-    logic: |
-      SMB/RDP from {{unexpected_source}}
-      Service creation events
-      Unusual process trees
+**CrowdStrike EDR Query**:
+```
+index=main event_simpleName=ProcessRollup* FileName="darkside.exe"
+| stats min(_time) as infection_start by ComputerName
+| eval infection_time=strftime(infection_start,"%Y-%m-%d %H:%M:%S")
 ```
 
-### COMMUNICATION PLAN
-
-#### INTERNAL COMMUNICATIONS
-
-**Executive Brief** (Every 2 hours):
-"Incident Status: {{contained_ongoing}}
-Business Impact: {{quantified}}
-Recovery ETA: {{timeline}}
-Next Update: {{time}}"
-
-**Technical Team** (Continuous):
-
-- Slack channel: #incident-{{number}}
-- War room: {{location_virtual}}
-- Documentation: {{wiki_link}}
-
-#### EXTERNAL COMMUNICATIONS
-
-**Customer Notification** (If required):
-
-- Affected customers: {{count}}
-- Data types: {{pii_phi_financial}}
-- Notification timeline: {{regulatory_requirement}}
-- Template: {{approved_language}}
-
-**Regulatory Reporting**:
-
-- GDPR: 72-hour deadline
-- State breach laws: Varies
-- SEC: 4 business days
-- Law enforcement: {{contact}}
-
-### POST-INCIDENT ACTIVITIES
-
-#### LESSONS LEARNED
-
-**What Went Well**:
-
-- {{success_1}}
-- {{success_2}}
-
-**Areas for Improvement**:
-
-- {{gap_1}}: {{remediation}}
-- {{gap_2}}: {{remediation}}
-
-**Action Items**:
-| Action | Owner | Due Date | Priority |
-|--------|-------|----------|----------|
-| {{action_1}} | {{name}} | {{date}} | High |
-| {{action_2}} | {{name}} | {{date}} | Medium |
-
-#### SECURITY IMPROVEMENTS
-
-1. **Technical Controls**
-   - Deploy {{new_tool}}
-   - Implement {{configuration}}
-   - Upgrade {{system}}
-
-2. **Process Improvements**
-   - Update incident response plan
-   - Enhance monitoring rules
-   - Improve backup procedures
-
-3. **Training Needs**
-   - Security awareness on {{topic}}
-   - Technical training on {{tool}}
-   - Tabletop exercise for {{scenario}}
-
-### METRICS & REPORTING
-
-#### INCIDENT METRICS
-
-- Time to Detect: {{minutes}}
-- Time to Contain: {{hours}}
-- Time to Eradicate: {{hours}}
-- Time to Recover: {{days}}
-- Total Downtime: {{hours}}
-- Data Loss: {{amount}}
-- Financial Impact: ${{cost}}
-
-#### KEY PERFORMANCE INDICATORS
-
-- Detection Coverage: {{percentage}}%
-- Response Time vs SLA: {{performance}}
-- Evidence Collection: {{complete_partial}}
-- Stakeholder Communication: {{rating}}
-
+**Splunk SIEM Investigation**:
+```sql
+index=firewall dest_ip="185.220.101.*" earliest=-7d
+| stats sum(bytes_out) as data_exfil by src_ip
+| where data_exfil > 1000000000
+| join src_ip [search index=endpoints]
 ```
 
-## Usage Instructions
-1. Immediately assess the incident scope and severity
-2. Activate incident response team and establish roles
-3. Fill in all context variables as information becomes available
-4. Follow the containment checklist systematically
-5. Preserve evidence before making changes
-6. Document all actions with timestamps
-7. Communicate regularly with stakeholders
-8. Conduct thorough post-incident review
+### Phase 2: Attack Timeline Reconstruction
 
-## Examples
-### Example 1: Ransomware Incident Response
-**Input**:
+**Key Questions to Answer**:
+1. **Initial Access**: Check for phishing emails, RDP brute force, vulnerable services
+2. **Lateral Movement**: Look for Pass-the-Hash, RDP logs, service creation
+3. **Data Staging**: Large file movements, archive creation (7z, rar)
+4. **Exfiltration**: Outbound connections before encryption started
+
+**Forensic Commands**:
+```powershell
+# Check for initial compromise vectors
+Get-WinEvent -FilterHashtable @{LogName='Security';ID=4624,4625} -MaxEvents 1000 |
+    Where {$_.TimeCreated -gt (Get-Date).AddDays(-7)}
+
+# Recent PowerShell activity
+Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-PowerShell/Operational';ID=4104}
 ```
 
-{{incident_type}}: Ransomware attack
-{{detection_time}}: 2024-03-15 14:30 UTC
-{{affected_systems}}: 150 workstations, 12 servers, 3 domain controllers
-{{initial_indicators}}: Multiple "Your files are encrypted" messages, .locked extensions
-{{business_impact}}: Manufacturing line stopped, order system offline
-{{environment}}: Windows AD environment, 500 endpoints total
-{{security_stack}}: CrowdStrike EDR, Palo Alto firewall, Splunk SIEM
+## COMMUNICATION STRATEGY
 
+### Internal Communications (Immediate)
+
+**Executive Brief** (send now):
+```
+SECURITY INCIDENT - CRITICAL
+Type: Ransomware attack
+Status: Active containment
+Impact: 5 servers encrypted, operations halted
+Actions: Systems isolated, IR team engaged
+Next Update: 30 minutes
 ```
 
-**Output**: [Comprehensive incident response plan with immediate isolation procedures, forensic investigation revealing RDP brute force entry, complete eradication steps, and phased recovery plan]
+**All-Staff Notice**:
+```
+IT SYSTEM ALERT - URGENT
+We are experiencing a security incident.
+IMMEDIATELY:
+1. DO NOT shut down your computer
+2. Disconnect from WiFi/unplug network cable
+3. Do not open any emails or click links
+4. Await further instructions
+IT Support: [emergency number]
+```
+
+### External Communications
+
+**Customer Notification** (within 24 hours):
+- Prepare but don't send yet
+- Coordinate with legal/PR
+- Focus on facts, not speculation
+
+**Regulatory** (GDPR - within 72 hours):
+- Document timeline
+- Assess data impact
+- Prepare breach notification
+
+## RECOVERY ROADMAP
+
+### Phase 1: Verification (Hours 4-8)
+1. **Backup Integrity Check**
+   ```bash
+   # Verify backups are unencrypted
+   mount -o ro /backup/location /mnt/verify
+   find /mnt/verify -name "*.encrypted" -o -name "*RECOVER*"
+   ```
+
+2. **Clean System Preparation**
+   - Fresh OS installations
+   - Updated security patches
+   - Enhanced monitoring
+
+### Phase 2: Restoration Priority
+
+**Tier 1 (Business Critical)**:
+1. Domain Controllers (from backup 48hrs ago)
+2. SQL Database servers
+3. Core application servers
+
+**Tier 2 (Important)**:
+4. File servers (from backup)
+5. Email servers
+6. Department shares
+
+**Tier 3 (Standard)**:
+7. User workstations (reimage)
+
+### Phase 3: Enhanced Security
+
+**Immediate Hardening**:
+```powershell
+# Disable vulnerable services
+Set-Service -Name 'TermService' -StartupType Disabled
+Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name "fDenyTSConnections" -Value 1
+
+# Block ransomware extensions
+$extensions = @("*.encrypted", "*.locked", "*.crypto", "*.darkside")
+foreach ($ext in $extensions) {
+    New-FsrmFileScreen -Path "C:\" -Include $ext -Active
+}
+```
+
+**New Controls**:
+- EDR on ALL systems
+- Network segmentation
+- Privileged access management
+- Backup immutability
+
+## LESSONS LEARNED
+
+### Immediate Improvements
+1. **Detection Gap**: Why did EDR not prevent execution?
+2. **Response Time**: 2-hour detection delay is too long
+3. **Backup Access**: Implement air-gapped backups
+4. **Network Segmentation**: Critical servers need isolation
+
+### 30-Day Action Plan
+- [ ] Incident post-mortem with all stakeholders
+- [ ] Penetration test to find initial vector
+- [ ] Security awareness training (phishing focus)
+- [ ] Implement zero-trust architecture
+- [ ] Cyber insurance claim process
+- [ ] Update incident response playbooks
+
+### Key Metrics to Track
+- Time to detect: 2 hours (target: <15 min)
+- Time to contain: 2.5 hours (target: <30 min)
+- Systems affected: 5+ (target: <2)
+- Data recovery: TBD (target: 100%)
+
+**Critical Next Steps**:
+1. Call external IR firm NOW
+2. Start evidence collection script
+3. Brief legal team for GDPR timeline
+4. Initiate insurance claim
+5. Do NOT pay ransom yet - explore options
+
+Remember: Document everything, preserve evidence, communicate clearly.
 
 ## Related Prompts
-- [Threat Hunting Investigator](/prompts/technical/cybersecurity/threat-hunting.md)
-- [Security Architecture Reviewer](/prompts/technical/cybersecurity/security-architecture.md)
-- [Vulnerability Assessment Analyzer](/prompts/technical/cybersecurity/vulnerability-assessment.md)
 
-## Research Notes
-- NIST 800-61r2 framework provides proven incident response structure
-- MITRE ATT&CK mapping essential for understanding adversary behavior
-- Evidence preservation critical for potential legal proceedings
-- Communication plan prevents secondary damage from poor messaging
-- Mean time to contain directly correlates with total incident cost
-```
+- [Security Forensics Analyst](./forensics-analysis-expert.md)
+- [Threat Intelligence Expert](./threat-intelligence-expert.md)
+- [Disaster Recovery Planner](./disaster-recovery-expert.md)

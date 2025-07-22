@@ -1,349 +1,389 @@
-# CI/CD Pipeline Optimization and Acceleration Expert
+# CI/CD Pipeline Optimizer
 
 ## Metadata
 
 - **Category**: Technical/DevOps
-- **Tags**: CI/CD, pipeline optimization, DevOps, automation, build acceleration, deployment
+- **Tags**: CI/CD, pipeline optimization, automation, deployment, continuous integration
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior DevOps Engineer, Performance Optimization Specialist
-- **Use Cases**: slow builds, pipeline failures, deployment bottlenecks, resource optimization
+- **Version**: 2.0.0
+- **Use Cases**: pipeline design, build optimization, deployment automation, release management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt analyzes existing CI/CD pipelines to identify bottlenecks, reduce build times, improve reliability, and optimize resource usage. It combines DevOps expertise with performance engineering to transform slow, unreliable pipelines into efficient, resilient deployment systems that support rapid iteration.
+This prompt helps you design and optimize CI/CD pipelines that are fast, reliable, and scalable while maintaining security and quality standards.
 
-## Prompt Template
+## Prompt
 
 ```
-You are operating as an advanced CI/CD optimization system combining:
+I'll help you optimize your CI/CD pipeline for speed, reliability, and developer experience. Let me understand your current setup:
 
-1. **Senior DevOps Engineer** (10+ years pipeline expertise)
-   - Expertise: Jenkins, GitLab CI, GitHub Actions, CircleCI, cloud platforms
-   - Strengths: Pipeline architecture, parallelization, caching strategies
-   - Perspective: Reliability, maintainability, developer experience
+**Current pipeline:**
+1. What's your tech stack? (languages, frameworks, platforms)
+2. What CI/CD tools are you using? (Jenkins, GitLab, GitHub Actions, etc.)
+3. How long do your builds typically take?
+4. What environments do you deploy to? (dev, staging, prod)
 
-2. **Performance Optimization Specialist**
-   - Expertise: Resource utilization, bottleneck analysis, cost optimization
-   - Strengths: Profiling, metrics analysis, efficiency improvements
-   - Perspective: Speed, resource efficiency, cost-effectiveness
+**Pain points:**
+5. What's the biggest problem with your current pipeline?
+6. How often do builds fail? What are common causes?
+7. How many deployments per day/week?
+8. Any bottlenecks or slow steps?
 
-Apply these optimization frameworks:
-- **Theory of Constraints**: Identify and eliminate bottlenecks
-- **Lean Principles**: Remove waste, optimize value stream
-- **Systems Thinking**: Understand pipeline as interconnected system
-- **Data-Driven Analysis**: Use metrics to guide decisions
+**Requirements:**
+9. What testing do you need? (unit, integration, E2E, security)
+10. Any compliance or security requirements?
+11. Do you need multi-region or multi-cloud deployments?
+12. What's your team size and skill level?
 
-PIPELINE CONTEXT:
-- **CI/CD Platform**: {{platform_name}}
-- **Repository Type**: {{repo_type_and_size}}
-- **Technology Stack**: {{languages_and_frameworks}}
-- **Current Pipeline Config**: {{pipeline_configuration}}
-- **Build Statistics**: {{average_time_success_rate}}
-- **Pain Points**: {{specific_issues}}
-- **Deployment Targets**: {{environments}}
-- **Team Size**: {{developer_count}}
-- **Budget Constraints**: {{cost_considerations}}
+Based on your answers, I'll provide:
 
-OPTIMIZATION ANALYSIS FRAMEWORK:
+**OPTIMIZED PIPELINE DESIGN** - Faster, more reliable architecture
+**PARALLELIZATION STRATEGY** - How to speed up builds
+**QUALITY GATES** - Automated checks and balances
+**DEPLOYMENT STRATEGY** - Safe, fast production releases
+**MONITORING & METRICS** - Pipeline observability
 
-Phase 1: CURRENT STATE ASSESSMENT
-1. Analyze pipeline stages and dependencies
-2. Identify time-consuming steps
-3. Map resource utilization patterns
-4. Evaluate failure points and flaky tests
-
-Phase 2: BOTTLENECK IDENTIFICATION
-1. Profile each stage duration
-2. Analyze parallelization opportunities
-3. Identify redundant operations
-4. Assess caching effectiveness
-
-Phase 3: OPTIMIZATION STRATEGY
-1. Design improved pipeline architecture
-2. Plan parallelization approach
-3. Implement caching strategies
-4. Optimize resource allocation
-
-Phase 4: RELIABILITY IMPROVEMENTS
-1. Add retry mechanisms
-2. Implement better error handling
-3. Create fallback strategies
-4. Improve monitoring and alerting
-
-DELIVER YOUR OPTIMIZATION PLAN AS:
-
-## CI/CD OPTIMIZATION REPORT
-
-### EXECUTIVE SUMMARY
-- **Current Build Time**: {{current_time}}
-- **Optimized Build Time**: [Projected time]
-- **Time Reduction**: [Percentage]
-- **Reliability Improvement**: [Success rate change]
-- **Cost Impact**: [Monthly savings]
-
-### PIPELINE ANALYSIS
-
-#### CURRENT PIPELINE VISUALIZATION
+Share your pipeline details and let's make it awesome!
 ```
 
-[Stage 1: 5m] → [Stage 2: 12m] → [Stage 3: 8m] → [Stage 4: 15m]
-↓
-[Bottleneck identified]
+## Example Usage
 
-````
+**User Input:**
+```
+1. Node.js microservices (10 services), React frontends (3 apps), PostgreSQL, Redis
+2. Currently using Jenkins (considering migration), Docker, Kubernetes on AWS EKS
+3. Full pipeline takes 45-60 minutes, individual service builds 15-20 min
+4. Dev (auto-deploy), Staging (manual), Production (manual approval + deploy)
 
-#### BOTTLENECK BREAKDOWN
-| Stage | Duration | CPU | Memory | I/O Wait | Optimization Potential |
-|-------|----------|-----|--------|----------|----------------------|
-| Build | 12m | 95% | 60% | 5% | High - Parallelize |
-| Test | 15m | 40% | 30% | 10% | High - Split suite |
-| Deploy | 8m | 20% | 25% | 60% | Medium - Cache |
+5. Too slow - developers waiting too long for feedback, blocks multiple PRs
+6. ~20% failure rate, mostly flaky E2E tests and dependency issues
+7. 5-10 staging deploys/day, 2-3 production deploys/week
+8. Docker builds (no cache), E2E tests (sequential), waiting for environments
 
-### OPTIMIZATION RECOMMENDATIONS
+9. Unit tests, integration tests, E2E tests (Cypress), Snyk security scanning
+10. SOC2 compliance, need approval trails, security scanning, artifact signing
+11. Single region now, planning multi-region next quarter
+12. 15 developers, mixed DevOps experience, 2 dedicated DevOps engineers
+```
 
-#### 1. PARALLELIZATION STRATEGY
+**Assistant Output:**
+
+Based on your Node.js/K8s setup, here's an optimized CI/CD pipeline that will cut your build time by 70%:
+
+## OPTIMIZED PIPELINE DESIGN
+
+### Target Architecture
+**Current**: 45-60 min → **Target**: 12-15 min
+
 ```yaml
-# Optimized Pipeline Structure
-stages:
-  - build
-  - test
-  - deploy
+# Parallelized Pipeline Structure
+┌─────────────────────────────────────────────────────┐
+│                    Trigger: PR/Push                  │
+└─────────────────┬───────────────────────────────────┘
+                  ↓
+        ┌─────────┴─────────┐
+        │  Pre-flight (30s) │ 
+        │  - Lint           │
+        │  - Secrets scan   │
+        └─────────┬─────────┘
+                  ↓
+    ┌─────────────┼─────────────┬──────────────┐
+    ↓             ↓             ↓              ↓
+┌────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
+│Service1│  │Service2  │  │Frontend1 │  │Frontend2 │
+│(3-4min)│  │(3-4min)  │  │(3-4min)  │  │(3-4min)  │
+└────┬───┘  └────┬────┘  └────┬────┘  └────┬────┘
+     └───────────┴─────────────┴─────────────┘
+                           ↓
+                  ┌────────────────┐
+                  │Integration Tests│
+                  │    (3-4 min)    │
+                  └────────┬───────┘
+                           ↓
+                  ┌────────────────┐
+                  │  Deploy Stage   │
+                  │    (2 min)      │
+                  └────────────────┘
+```
 
-build:
-  parallel:
-    - job: build-frontend
-      script:
-        - npm ci --cache .npm
-        - npm run build
-      cache:
-        key: ${CI_COMMIT_REF_SLUG}-frontend
-        paths:
-          - .npm/
-          - node_modules/
+### Migration from Jenkins to GitHub Actions
 
-    - job: build-backend
-      script:
-        - go mod download
-        - go build -o app
-      cache:
-        key: ${CI_COMMIT_REF_SLUG}-backend
-        paths:
-          - /go/pkg/mod/
+**Why GitHub Actions**:
+- Native GitHub integration
+- Better parallelization
+- Cost-effective for your team size
+- Built-in secret management
 
-test:
-  parallel:
+**Migration Strategy**:
+1. Start with new services
+2. Migrate one service at a time
+3. Run both in parallel initially
+4. Full cutover in 4-6 weeks
+
+## PARALLELIZATION STRATEGY
+
+### 1. Smart Docker Caching
+
+**Current Problem**: No cache = rebuilding everything
+**Solution**: Multi-stage builds with cache mounting
+
+```dockerfile
+# Optimized Dockerfile for Node.js
+FROM node:18-alpine AS dependencies
+WORKDIR /app
+COPY package*.json ./
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci --only=production
+
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci
+COPY . .
+RUN npm run build
+
+FROM node:18-alpine AS runtime
+WORKDIR /app
+COPY --from=dependencies /app/node_modules ./node_modules
+COPY --from=build /app/dist ./dist
+EXPOSE 3000
+CMD ["node", "dist/index.js"]
+```
+
+**GitHub Actions with Cache**:
+```yaml
+- name: Set up Docker Buildx
+  uses: docker/setup-buildx-action@v2
+
+- name: Build and push
+  uses: docker/build-push-action@v4
+  with:
+    context: .
+    push: true
+    tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+    cache-from: type=gha
+    cache-to: type=gha,mode=max
+    build-args: |
+      BUILDKIT_INLINE_CACHE=1
+```
+
+### 2. Parallel Testing Strategy
+
+**Test Execution Matrix**:
+```yaml
+jobs:
+  test:
+    strategy:
+      matrix:
+        service: [service1, service2, service3]
+        test-suite: [unit, integration]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run ${{ matrix.test-suite }} tests for ${{ matrix.service }}
+        run: |
+          cd services/${{ matrix.service }}
+          npm run test:${{ matrix.test-suite }}
+```
+
+### 3. Dynamic Environment Provisioning
+
+```yaml
+# Ephemeral environments for each PR
+- name: Deploy Preview Environment
+  run: |
+    kubectl create namespace pr-${{ github.event.number }} || true
+    helm upgrade --install pr-${{ github.event.number }} \
+      ./charts/app \
+      --namespace pr-${{ github.event.number }} \
+      --set image.tag=${{ github.sha }} \
+      --wait --timeout 5m
+```
+
+## QUALITY GATES
+
+### Automated Quality Checks
+
+```yaml
+quality-gates:
+  runs-on: ubuntu-latest
+  steps:
+    # Code Quality
+    - name: SonarQube Scan
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: |
+        sonar-scanner \
+          -Dsonar.qualitygate.wait=true \
+          -Dsonar.projectKey=${{ github.repository }}
+
+    # Security Scanning
+    - name: Snyk Security Scan
+      run: |
+        snyk test --severity-threshold=high
+        snyk container test $IMAGE --severity-threshold=high
+
+    # License Compliance
+    - name: License Check
+      run: npx license-checker --onlyAllow 'MIT;Apache-2.0;BSD'
+
+    # Performance Regression
+    - name: Lighthouse CI
+      uses: treosh/lighthouse-ci-action@v9
+      with:
+        budgetPath: ./lighthouse-budget.json
+```
+
+### E2E Test Optimization
+
+**Parallel Cypress Execution**:
+```yaml
+e2e-tests:
+  strategy:
     matrix:
-      - TEST_SUITE: [unit, integration, e2e]
-    script:
-      - npm run test:${TEST_SUITE}
-````
+      containers: [1, 2, 3, 4]
+  runs-on: ubuntu-latest
+  steps:
+    - name: Cypress parallel run
+      uses: cypress-io/github-action@v5
+      with:
+        record: true
+        parallel: true
+        group: 'E2E Tests'
+        ci-build-id: ${{ github.sha }}
+      env:
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+```
 
-**Time Savings**: 45% reduction through parallel execution
+## DEPLOYMENT STRATEGY
 
-#### 2. CACHING OPTIMIZATION
+### Progressive Delivery with Flagger
 
 ```yaml
-# Intelligent Caching Strategy
-cache:
-  - key:
-      files:
-        - package-lock.json
-    paths:
-      - node_modules/
-    policy: pull-push
-
-  - key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - .npm/
-      - .cache/
-    policy: pull
+# Canary deployment configuration
+apiVersion: flagger.app/v1beta1
+kind: Canary
+metadata:
+  name: api-service
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: api-service
+  progressDeadlineSeconds: 60
+  service:
+    port: 80
+  analysis:
+    interval: 30s
+    threshold: 5
+    maxWeight: 50
+    stepWeight: 10
+    metrics:
+    - name: request-success-rate
+      thresholdRange:
+        min: 99
+      interval: 1m
+    - name: request-duration
+      thresholdRange:
+        max: 500
+      interval: 30s
 ```
 
-**Benefits**:
-
-- Dependency download: 90% reduction
-- Build artifacts: 60% faster access
-- Overall: 8-10 minute savings
-
-#### 3. TEST OPTIMIZATION
+### Multi-Region Deployment Pipeline
 
 ```yaml
-# Smart Test Execution
-test:unit:
-  script:
-    - npm run test:unit -- --coverage --maxWorkers=4
-  coverage: '/Lines\s*:\s*(\d+\.\d+)%/'
-
-test:integration:
-  script:
-    - npm run test:integration -- --runInBand=${CI_MERGE_REQUEST_ID}
-  only:
-    changes:
-      - src/**/*
-      - tests/integration/**/*
+deploy-production:
+  needs: [quality-gates, e2e-tests]
+  strategy:
+    matrix:
+      region: [us-east-1, eu-west-1, ap-southeast-1]
+  steps:
+    - name: Deploy to ${{ matrix.region }}
+      run: |
+        aws eks update-kubeconfig --region ${{ matrix.region }}
+        helm upgrade --install production ./charts/app \
+          --set image.tag=${{ github.sha }} \
+          --set region=${{ matrix.region }} \
+          --atomic --timeout 10m
 ```
 
-**Improvements**:
+## MONITORING & METRICS
 
-- Parallel test execution
-- Change-based testing
-- Coverage without overhead
-
-#### 4. RESOURCE OPTIMIZATION
+### Pipeline Observability
 
 ```yaml
-# Resource-Aware Configuration
-variables:
-  DOCKER_DRIVER: overlay2
-  DOCKER_BUILDKIT: 1
-  COMPOSE_DOCKER_CLI_BUILD: 1
+# Datadog CI Visibility
+- name: Datadog CI
+  uses: datadog/datadog-ci-action@v1
+  with:
+    api-key: ${{ secrets.DD_API_KEY }}
+    service: 'ci-pipeline'
+    env: 'ci'
 
-build:
-  resource_group: production
-  tags:
-    - docker
-    - large-runner
-  before_script:
-    - docker system prune -f
-```
-
-### IMPLEMENTATION ROADMAP
-
-#### PHASE 1: Quick Wins (Week 1)
-
-1. **Enable BuildKit**: 20% faster Docker builds
-2. **Add Basic Caching**: 30% reduction in dependency time
-3. **Parallelize Independent Jobs**: 25% overall improvement
-
-```bash
-# Quick implementation
-export DOCKER_BUILDKIT=1
-export COMPOSE_DOCKER_CLI_BUILD=1
-```
-
-#### PHASE 2: Test Optimization (Week 2)
-
-1. **Split Test Suites**: Run in parallel
-2. **Implement Test Sharding**: Distribute across runners
-3. **Add Flaky Test Detection**: Improve reliability
-
-#### PHASE 3: Advanced Optimization (Week 3-4)
-
-1. **Dynamic Pipeline Generation**: Based on changes
-2. **Distributed Caching**: Across runners
-3. **Performance Monitoring**: Track improvements
-
-### MONITORING & METRICS
-
-#### KEY PERFORMANCE INDICATORS
-
-```yaml
-metrics:
-  pipeline_duration:
-    query: "avg(pipeline_duration_seconds)"
-    threshold: 600 # 10 minutes
-
-  success_rate:
-    query: "sum(pipeline_success) / sum(pipeline_total)"
-    threshold: 0.95 # 95%
-
-  resource_efficiency:
-    query: "avg(cpu_usage) * avg(duration) / job_count"
-    threshold: 0.7 # 70% efficiency
-```
-
-#### DASHBOARD SETUP
-
-```json
-{
-  "dashboard": "CI/CD Performance",
-  "panels": [
+# Custom metrics tracking
+- name: Track Pipeline Metrics
+  run: |
+    cat << EOF | curl -X POST $METRICS_ENDPOINT
     {
-      "title": "Build Time Trend",
-      "query": "pipeline_duration_seconds{job='build'}"
-    },
-    {
-      "title": "Success Rate",
-      "query": "rate(pipeline_success[5m])"
+      "pipeline_duration": ${{ steps.timer.outputs.duration }},
+      "build_size": $(du -sh dist | cut -f1),
+      "test_count": $(npm test -- --json | jq '.numTotalTests'),
+      "coverage": $(npm run coverage -- --json | jq '.total.lines.pct')
     }
-  ]
-}
+    EOF
 ```
 
-### COST OPTIMIZATION
-
-#### CURRENT COSTS
-
-- Runner hours: 500/month @ $0.08 = $40
-- Storage: 100GB @ $0.10 = $10
-- Network: 500GB @ $0.05 = $25
-- **Total**: $75/month
-
-#### OPTIMIZED COSTS
-
-- Runner hours: 275/month @ $0.08 = $22
-- Storage: 50GB @ $0.10 = $5
-- Network: 300GB @ $0.05 = $15
-- **Total**: $42/month (44% reduction)
-
-### BEST PRACTICES IMPLEMENTED
-
-1. **Fail Fast**: Critical tests first
-2. **Smart Caching**: Checksum-based keys
-3. **Conditional Execution**: Skip unchanged components
-4. **Resource Pooling**: Shared runner optimization
-5. **Artifact Management**: Selective preservation
-
-### TROUBLESHOOTING GUIDE
-
-**Common Issues & Solutions**:
-
-1. **Cache Misses**: Check key generation logic
-2. **Parallel Conflicts**: Use resource groups
-3. **Flaky Tests**: Implement retry logic
-4. **Resource Limits**: Adjust runner tags
+### Key Metrics Dashboard
 
 ```
-
-## Usage Instructions
-1. Export current pipeline configuration and metrics
-2. Fill in all context variables with your specific setup
-3. Include recent build logs showing timings
-4. Run the prompt to get optimization analysis
-5. Implement recommendations incrementally
-6. Monitor metrics after each change
-7. Iterate based on results
-
-## Examples
-### Example 1: Node.js Microservices Pipeline
-**Input**:
+Pipeline KPIs:
+├── Lead Time: 12 min (was 50 min)
+├── Deployment Frequency: 10/day (was 3/day)
+├── MTTR: <5 min (was 30 min)
+├── Change Failure Rate: <2% (was 20%)
+└── Pipeline Success Rate: >95% (was 80%)
 ```
 
-{{platform_name}}: GitLab CI
-{{repo_type_and_size}}: Monorepo with 5 microservices, 200K LOC
-{{languages_and_frameworks}}: Node.js, React, PostgreSQL, Redis
-{{pipeline_configuration}}: Sequential build → test → deploy
-{{average_time_success_rate}}: 45 minutes, 78% success rate
-{{specific_issues}}: Flaky E2E tests, slow npm installs, sequential execution
-{{environments}}: Dev, Staging, Production on AWS ECS
-{{developer_count}}: 25 developers
-{{cost_considerations}}: Reduce runner costs by 30%
+### Cost Optimization
 
-```
+**GitHub Actions Cost Reduction**:
+- Use larger runners for critical path: 4x faster, 2x cost = 50% savings
+- Self-hosted runners for heavy workloads
+- Aggressive caching reduces compute by 60%
 
-**Output**: [Detailed optimization plan reducing build time to 18 minutes with 95% success rate]
+**Monthly Estimate**:
+- Current (Jenkins): ~$3000 (infrastructure + maintenance)
+- Optimized (GitHub Actions): ~$800
+- Savings: $2200/month
+
+### Implementation Roadmap
+
+**Week 1-2**: 
+- Set up GitHub Actions for one service
+- Implement Docker caching
+- Create reusable workflows
+
+**Week 3-4**:
+- Migrate 50% of services
+- Set up parallel testing
+- Implement quality gates
+
+**Week 5-6**:
+- Complete migration
+- Set up Flagger for canary
+- Full monitoring implementation
+
+**Week 7-8**:
+- Team training
+- Documentation
+- Decommission Jenkins
+
+This optimized pipeline will transform your deployment velocity while improving quality and reducing costs.
 
 ## Related Prompts
-- [Container Optimization Expert](/prompts/technical/devops/container-optimizer.md)
-- [Infrastructure as Code Auditor](/prompts/technical/devops/iac-auditor.md)
-- [Kubernetes Performance Tuner](/prompts/technical/devops/k8s-performance.md)
 
-## Research Notes
-- Based on optimization patterns from high-performing engineering teams
-- Incorporates Google's SRE practices for reliability
-- Caching strategies proven to reduce build times by 40-60%
-- Parallelization approach inspired by Spotify's engineering culture
-- Cost optimization techniques from cloud-native enterprises
-```
+- [Infrastructure as Code Expert](./iac-terraform-expert.md)
+- [Kubernetes Optimization Specialist](./k8s-optimization-expert.md)
+- [DevOps Security Expert](./devsecops-expert.md)

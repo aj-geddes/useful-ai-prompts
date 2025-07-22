@@ -1,407 +1,364 @@
-# Strategic Talent Acquisition and Candidate Experience Designer
+# Talent Acquisition Strategy Expert
 
 ## Metadata
 
 - **Category**: Business/Human Resources
 - **Tags**: talent acquisition, recruiting, hiring, candidate experience, HR strategy
-- **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Talent Acquisition Leader, Behavioral Psychologist
+- **Created**: 2025-07-22
+- **Version**: 2.0.0
 - **Use Cases**: hiring strategy, candidate sourcing, interview design, employer branding
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt creates comprehensive talent acquisition strategies that attract top candidates while ensuring excellent hiring decisions and candidate experiences. It combines recruiting expertise with behavioral psychology to design hiring processes that are both effective at identifying talent and respectful of candidates' time and dignity.
+This prompt helps you create comprehensive talent acquisition strategies that attract top candidates while ensuring fair, effective hiring processes and excellent candidate experiences.
 
-## Prompt Template
-
-```
-You are operating as a strategic talent acquisition system combining:
-
-1. **Senior Talent Acquisition Leader** (12+ years recruiting experience)
-   - Expertise: Talent strategy, sourcing, employer branding, diversity hiring
-   - Strengths: Market intelligence, candidate assessment, pipeline building
-   - Perspective: Quality of hire with speed and candidate experience
-
-2. **Behavioral Psychologist**
-   - Expertise: Assessment design, bias reduction, behavioral interviewing
-   - Strengths: Predictive validity, cognitive diversity, decision science
-   - Perspective: Evidence-based selection with human-centered approach
-
-Apply these talent frameworks:
-- **Competency-Based Hiring**: Focus on proven capabilities
-- **Structured Interviewing**: Reduce bias, increase validity
-- **Candidate Journey Mapping**: Optimize every touchpoint
-- **Data-Driven Selection**: Metrics-based decision making
-
-HIRING CONTEXT:
-- **Role(s)**: {{position_titles}}
-- **Department**: {{team_structure}}
-- **Seniority Level**: {{junior_senior_executive}}
-- **Number of Hires**: {{headcount}}
-- **Timeline**: {{hiring_deadline}}
-- **Budget**: {{salary_range_and_recruiting_budget}}
-- **Location**: {{onsite_remote_hybrid}}
-- **Current Team**: {{existing_team_composition}}
-- **Culture**: {{company_values_and_environment}}
-- **Competition**: {{talent_competitors}}
-
-ROLE REQUIREMENTS:
-- **Core Responsibilities**: {{key_duties}}
-- **Required Skills**: {{must_have_skills}}
-- **Preferred Skills**: {{nice_to_have}}
-- **Success Metrics**: {{performance_indicators}}
-- **Growth Path**: {{career_progression}}
-
-TALENT ACQUISITION FRAMEWORK:
-
-Phase 1: STRATEGY DEVELOPMENT
-1. Analyze role requirements and success factors
-2. Map talent market and competition
-3. Define ideal candidate profiles
-4. Design selection process
-
-Phase 2: SOURCING STRATEGY
-1. Identify talent pools
-2. Craft compelling messaging
-3. Select optimal channels
-4. Build talent pipeline
-
-Phase 3: SELECTION DESIGN
-1. Create assessment framework
-2. Develop interview guides
-3. Design evaluation criteria
-4. Plan decision process
-
-Phase 4: CANDIDATE EXPERIENCE
-1. Map candidate journey
-2. Optimize touchpoints
-3. Create feedback loops
-4. Measure satisfaction
-
-DELIVER YOUR TALENT STRATEGY AS:
-
-## TALENT ACQUISITION PLAYBOOK
-
-### EXECUTIVE SUMMARY
-- **Hiring Goal**: {{positions}} for {{team}}
-- **Timeline**: {{duration}} to fill
-- **Investment**: ${{total_cost}} (sourcing + time)
-- **Success Metrics**: Quality of hire score >{{threshold}}
-- **Risk Factors**: {{key_challenges}}
-
-### ROLE ANALYSIS & SUCCESS PROFILE
-
-#### JOB ARCHITECTURE
-**Position**: {{title}}
-**Level**: {{seniority}}
-**Reports to**: {{manager}}
-**Direct Reports**: {{team_size}}
-
-**Mission Statement**:
-"This role exists to {{primary_purpose}} by {{key_activities}}, resulting in {{business_impact}}."
-
-#### COMPETENCY MODEL
-| Competency | Definition | Behavioral Indicators | Assessment Method |
-|------------|------------|----------------------|-------------------|
-| {{competency_1}} | {{description}} | • {{behavior_1}}<br>• {{behavior_2}} | {{interview_type}} |
-| {{competency_2}} | {{description}} | • {{behavior_1}}<br>• {{behavior_2}} | {{assessment_type}} |
-| {{competency_3}} | {{description}} | • {{behavior_1}}<br>• {{behavior_2}} | {{exercise_type}} |
-
-#### SUCCESS METRICS
-**30 Days**:
-- [ ] {{milestone_1}}
-- [ ] {{milestone_2}}
-
-**90 Days**:
-- [ ] {{milestone_3}}
-- [ ] {{milestone_4}}
-
-**1 Year**:
-- [ ] {{outcome_1}}
-- [ ] {{outcome_2}}
-
-### TALENT MARKET ANALYSIS
-
-#### SUPPLY & DEMAND
-```
-
-Market Conditions:
-
-- Talent Availability: {{scarcity_level}}
-- Average Time to Fill: {{days}}
-- Compensation Benchmark: ${{range}}
-- Competitor Activity: {{high_medium_low}}
-
-Key Talent Pools:
-
-1. {{source_1}}: ~{{size}} candidates
-2. {{source_2}}: ~{{size}} candidates
-3. {{source_3}}: ~{{size}} candidates
+## Prompt
 
 ```
+I'll help you build a strategic talent acquisition plan that attracts top talent and creates an excellent hiring experience. Let me understand your hiring needs:
 
-#### COMPETITIVE LANDSCAPE
-| Competitor | Recruiting For | Their Offer | Our Differentiation |
-|------------|---------------|-------------|---------------------|
-| {{company_1}} | {{roles}} | {{package}} | {{unique_value}} |
-| {{company_2}} | {{roles}} | {{package}} | {{unique_value}} |
+**About the role(s):**
+1. What position(s) are you hiring for?
+2. How many people do you need to hire?
+3. What's the seniority level? (junior, mid, senior, executive)
+4. What are the key responsibilities and requirements?
+
+**Team and culture:**
+5. What team will they join and who will they report to?
+6. What's your company culture like?
+7. What makes your company a great place to work?
+8. What growth opportunities exist for this role?
+
+**Logistics and constraints:**
+9. What's your timeline for filling these positions?
+10. What's the salary range and recruiting budget?
+11. Is this remote, hybrid, or on-site?
+12. Who are your main competitors for this talent?
+
+Based on your answers, I'll provide:
+
+**TALENT ACQUISITION STRATEGY** - Complete hiring plan with sourcing strategies
+**CANDIDATE PERSONAS** - Detailed profiles of your ideal candidates
+**INTERVIEW PROCESS** - Structured interview framework with evaluation criteria
+**EMPLOYER BRANDING** - Compelling messaging to attract top talent
+**CANDIDATE EXPERIENCE** - Optimized journey from application to offer
+
+Tell me about your hiring needs and I'll create a comprehensive talent acquisition strategy.
+```
+
+## Example Usage
+
+**User Input:**
+```
+1. Positions: 3 Senior Software Engineers for our platform team
+2. Number: 3 hires needed
+3. Level: Senior (5-8 years experience)
+4. Requirements: Full-stack experience, strong in React/Node.js, system design skills
+
+5. Team: Platform engineering team, reporting to Engineering Manager
+6. Culture: Collaborative, innovation-focused, work-life balance important
+7. Great place: Stock options, flexible hours, cutting-edge tech, learning budget
+8. Growth: Tech lead path, architecture roles, management track available
+
+9. Timeline: Need to fill within 3 months
+10. Salary: $150-180K base + equity, $15K recruiting budget
+11. Location: Hybrid (2 days office in SF Bay Area)
+12. Competitors: Other Bay Area startups, FAANG companies
+```
+
+**Assistant Output:**
+
+Based on your need for 3 Senior Software Engineers, here's your comprehensive talent acquisition strategy:
+
+## TALENT ACQUISITION STRATEGY
+
+### Executive Summary
+- **Goal**: Hire 3 Senior Software Engineers in 90 days
+- **Investment**: $15K recruiting + ~$510K annual salary
+- **Key Challenge**: Competing with FAANG for Bay Area talent
+- **Success Factor**: Emphasizing growth, culture, and impact
+
+### CANDIDATE PERSONAS
+
+**Primary Persona: "The Growth-Seeking Builder"**
+```
+Demographics:
+- 5-8 years experience at startups or mid-size companies
+- Currently at Series B-D companies
+- Lives within 1 hour of SF office
+
+Motivations:
+- Wants more ownership and impact
+- Seeking technical challenges and learning
+- Values work-life balance over maximum comp
+- Interested in modern tech stack
+
+Pain Points:
+- Limited growth at current company
+- Too much bureaucracy or legacy code
+- Lack of technical mentorship
+- Commute fatigue from 5-day office
+
+Where to Find:
+- AngelList Talent
+- Hired.com (startup-focused)
+- LinkedIn (target specific companies)
+- Tech meetups and conferences
+```
+
+**Secondary Persona: "The FAANG Escapee"**
+```
+Demographics:
+- 3-5 years at large tech company
+- Strong technical skills but wants more variety
+- Open to slight pay cut for better culture
+
+Motivations:
+- Tired of narrow scope at big company
+- Wants to see direct impact of work
+- Seeking mentorship and rapid growth
+- Values equity upside potential
+
+Pain Points:
+- Slow promotion cycles
+- Limited technical variety
+- Bureaucracy and politics
+- Feeling like a cog in machine
+```
 
 ### SOURCING STRATEGY
 
-#### CHANNEL MIX
+**Channel Mix (Budget Allocation):**
+
+**1. Direct Sourcing (40% - $6K)**
+- LinkedIn Recruiter license for 3 months
+- Target companies: Mid-stage startups (Stripe, Airbnb, Coinbase alumni)
+- Boolean searches for React + Node.js + system design
+- Personalized outreach templates (see below)
+
+**2. Job Boards & Platforms (30% - $4.5K)**
+- AngelList Talent (startup-focused audience)
+- Hired.com (pre-vetted senior engineers)
+- Stack Overflow Jobs (technical audience)
+- Remote.co (for hybrid-friendly candidates)
+
+**3. Employee Referrals (20% - $3K)**
+- $3K referral bonus per successful hire
+- Internal campaign with engineering team
+- Referral toolkit with messaging templates
+- Track and celebrate referral success
+
+**4. Community & Events (10% - $1.5K)**
+- Sponsor 2 local React/Node meetups
+- Host "Engineering Career Growth" panel
+- Participate in virtual tech talks
+- University alumni networks
+
+### COMPELLING JOB DESCRIPTION
+
+**Headline**: Senior Software Engineer - Build the Future of [Your Product]
+
+**Hook**: "Join our platform team to architect systems that serve millions while working with cutting-edge tech and maintaining work-life balance."
+
+**Structure**:
+```
+The Opportunity (Why This Role Matters)
+├── Impact: Direct influence on product serving X users
+├── Technical: Modern stack, greenfield projects
+├── Growth: Clear paths to tech lead/architect
+└── Culture: True flexible hybrid, no burnout
+
+What You'll Do (Concrete Projects)
+├── Design and build scalable microservices
+├── Lead technical decisions for new features
+├── Mentor junior engineers
+└── Contribute to open source
+
+What We're Looking For
+├── 5+ years full-stack experience
+├── Strong React and Node.js skills
+├── System design expertise
+└── Collaborative mindset
+
+What We Offer
+├── $150-180K base salary
+├── Meaningful equity (0.1-0.3%)
+├── $5K annual learning budget
+├── Flexible hybrid schedule (2 days/week)
+└── Top-tier health, dental, vision
 ```
 
-Active Sourcing (60%):
-├── LinkedIn Recruiter: 30%
-├── Direct Outreach: 20%
-└── Employee Referrals: 10%
+### INTERVIEW PROCESS DESIGN
 
-Passive Attraction (40%):
-├── Job Boards: 15%
-├── Company Career Site: 15%
-├── Social Media: 5%
-└── Events/Meetups: 5%
+**4-Stage Process (2.5 weeks total):**
 
+**Stage 1: Recruiter Screen (30 min)**
+```
+Purpose: Mutual fit assessment
+├── Role overview and expectations
+├── Candidate motivation and goals
+├── Logistics and timeline
+└── Answer candidate questions
+
+Pass Criteria:
+- Technical background match
+- Genuine interest in role
+- Aligned on hybrid requirement
+- Salary expectations in range
 ```
 
-#### OUTREACH MESSAGING
+**Stage 2: Technical Phone Screen (60 min)**
+```
+Purpose: Verify technical fundamentals
+├── 15 min: Background discussion
+├── 30 min: Live coding (React component)
+├── 15 min: System design discussion
 
-**Initial Contact Template**:
+Evaluation:
+- Problem-solving approach
+- Code quality and communication
+- System thinking ability
+- Collaboration style
 ```
 
-Subject: {{compelling_subject_line}}
+**Stage 3: Virtual Onsite (3 hours)**
+```
+Structure:
+├── 60 min: System Design
+│   └── Design a scalable notification system
+├── 60 min: Coding Interview
+│   └── Full-stack feature implementation
+├── 45 min: Behavioral Interview
+│   └── Leadership, collaboration, growth
+└── 15 min: Break
 
-Hi {{FirstName}},
+Evaluation Rubric:
+- Technical Skills (40%)
+- Problem Solving (30%)
+- Communication (20%)
+- Culture Fit (10%)
+```
 
-I came across your profile and was impressed by {{specific_achievement}}.
+**Stage 4: Team Fit & Close (45 min)**
+```
+Purpose: Final mutual assessment
+├── Meet potential teammates
+├── Discuss specific projects
+├── Tour office (if local)
+└── Address any concerns
 
-We're building something special at {{company}} - {{exciting_project}} - and I think your experience with {{relevant_skill}} could be invaluable.
+Decision Factors:
+- Team chemistry
+- Excitement about role
+- No red flags
+- Reference checks pass
+```
 
-The role offers:
-• {{unique_opportunity_1}}
-• {{unique_opportunity_2}}
-• {{growth_potential}}
+### CANDIDATE EXPERIENCE OPTIMIZATION
 
-Worth a quick conversation to explore? I have time {{availability}}.
+**Response Time SLAs:**
+- Application → First response: 48 hours
+- Post-interview → Next steps: 24 hours
+- Final interview → Decision: 48 hours
+- Offer made → Expiration: 1 week
+
+**Communication Templates:**
+
+**Initial Outreach:**
+```
+Subject: Your [Specific Project] Experience + Platform Role at [Company]
+
+Hi [Name],
+
+I came across your profile and was impressed by your work on [specific project]. Your experience with React and system design aligns perfectly with what we're building at [Company].
+
+We're hiring 3 Senior Engineers for our Platform team to help scale our product from 1M to 10M users. The role offers:
+- Greenfield projects with modern tech stack
+- True work-life balance (hybrid, flexible hours)
+- Clear growth path to tech lead/architect
+- Competitive comp ($150-180K + meaningful equity)
+
+Would you be open to a brief chat about your career goals and what we're building?
 
 Best,
-{{Recruiter}}
-
+[Your name]
 ```
 
-**Value Proposition Canvas**:
-- **Career Growth**: {{advancement_opportunities}}
-- **Impact**: {{meaningful_work}}
-- **Culture**: {{team_environment}}
-- **Compensation**: {{total_rewards}}
-- **Flexibility**: {{work_arrangements}}
+**Rejection with Respect:**
+```
+Subject: Update on Your Application to [Company]
 
-### SELECTION PROCESS DESIGN
+Hi [Name],
 
-#### INTERVIEW FUNNEL
+Thank you for taking the time to interview with us. While we were impressed with your skills and experience, we've decided to move forward with other candidates whose backgrounds more closely match our current needs.
+
+We'd love to keep in touch for future opportunities. Your experience with [specific skill] was particularly strong, and we may have roles that are a better fit as we grow.
+
+Best wishes in your job search, and please don't hesitate to reach out if you have any questions.
+
+Sincerely,
+[Your name]
 ```
 
-Application Review (100%)
-↓ (Pass rate: 20%)
-Phone Screen (20%)
-↓ (Pass rate: 50%)
-Technical Assessment (10%)
-↓ (Pass rate: 60%)
-Behavioral Interview (6%)
-↓ (Pass rate: 50%)
-Final Interview (3%)
-↓ (Offer rate: 67%)
-Offer Extended (2%)
-↓ (Accept rate: 75%)
-Hire (1.5%)
+### DIVERSITY & INCLUSION INITIATIVES
 
-```
+**Bias Reduction Strategies:**
+- Structured interview questions (same for all candidates)
+- Diverse interview panels (gender, ethnicity, background)
+- Blind resume review for initial screening
+- Objective scoring rubrics
 
-#### STRUCTURED INTERVIEW GUIDES
-
-**Phone Screen (30 min)**:
-1. **Introduction** (5 min)
-   - Warm welcome
-   - Process overview
-   - Candidate questions
-
-2. **Background** (10 min)
-   - "Walk me through your career journey"
-   - Probe: {{specific_experience}}
-
-3. **Motivation** (10 min)
-   - "What interests you about this role?"
-   - "What are you looking for next?"
-
-4. **Logistics** (5 min)
-   - Timeline, salary expectations
-   - Next steps
-
-**Behavioral Interview Questions**:
-For {{competency_1}}:
-- "Tell me about a time when {{situation}}"
-- Follow-ups: What was the context? What did you do? What was the result?
-- Listen for: {{key_indicators}}
-
-**Technical Assessment Design**:
-- Format: {{take_home_vs_live}}
-- Duration: {{time_limit}}
-- Scenario: {{realistic_challenge}}
-- Evaluation: {{scoring_rubric}}
-
-### DECISION FRAMEWORK
-
-#### EVALUATION SCORECARD
-| Candidate | Technical | Behavioral | Culture Fit | Growth Potential | Total |
-|-----------|-----------|------------|-------------|------------------|-------|
-| {{name}} | {{1-5}} | {{1-5}} | {{1-5}} | {{1-5}} | {{avg}} |
-
-#### DEBRIEF PROTOCOL
-1. Independent scoring (no discussion)
-2. Share scores simultaneously
-3. Discuss disparities >1 point
-4. Evidence-based discussion only
-5. Final decision by hiring manager
-
-### CANDIDATE EXPERIENCE JOURNEY
-
-#### TOUCHPOINT MAP
-```
-
-Awareness → Application → Screening → Interview → Decision → Onboarding
-↓ ↓ ↓ ↓ ↓ ↓
-Career Easy apply Quick Respectful Timely Warm
-Site process response process feedback welcome
-
-```
-
-#### SERVICE LEVEL AGREEMENTS
-- Application acknowledgment: 24 hours
-- Initial screening decision: 3 days
-- Interview scheduling: 48 hours
-- Post-interview update: 2 days
-- Final decision: 5 days
-- Offer turnaround: 24 hours
-
-#### FEEDBACK TEMPLATES
-
-**Rejection - Post Screen**:
-"Thank you for your interest in {{role}}. After careful review, we've decided to move forward with candidates whose experience more closely matches our current needs. We were impressed by {{positive_aspect}} and encourage you to apply for future opportunities."
-
-**Rejection - Post Interview**:
-"Thank you for taking the time to interview with us. While we were impressed with {{strengths}}, we've decided to proceed with another candidate whose experience aligns more closely with {{specific_need}}. We'd love to stay connected for future opportunities that may be a better match."
-
-### DIVERSITY & INCLUSION STRATEGIES
-
-#### BIAS MITIGATION
-- Structured interviews (same questions for all)
-- Diverse interview panels
-- Blind resume review option
-- Objective scoring criteria
-- Regular bias training
-
-#### INCLUSIVE SOURCING
-- Partner with diverse organizations
-- Post on inclusive job boards
-- Use inclusive language in JDs
+**Inclusive Sourcing:**
+- Post on diversity-focused job boards
+- Partner with organizations like Women Who Code
+- Use inclusive language in job descriptions
 - Offer accommodations proactively
-- Track diversity metrics
 
-### METRICS & REPORTING
+### SUCCESS METRICS
 
-#### RECRUITING FUNNEL METRICS
-| Stage | Target | Actual | Variance |
-|-------|--------|--------|----------|
-| Applications | {{#}} | Track | Track |
-| Screens | {{#}} | Track | Track |
-| Interviews | {{#}} | Track | Track |
-| Offers | {{#}} | Track | Track |
-| Accepts | {{#}} | Track | Track |
+**Quality Indicators:**
+- Offer acceptance rate: Target 80%+
+- 90-day retention: Target 95%+
+- Performance rating after 6 months: Target 4+/5
+- Hiring manager satisfaction: Target 90%+
 
-#### QUALITY METRICS
-- Time to Fill: {{days}} target
-- Cost per Hire: ${{amount}} target
-- Quality of Hire: {{method}}
-- Candidate Satisfaction: {{NPS}} target
-- Hiring Manager Satisfaction: {{score}}
-- Diversity Metrics: {{representation}}
+**Efficiency Metrics:**
+- Time to fill: Target <60 days
+- Cost per hire: Target <$5K
+- Interview-to-offer ratio: Target 4:1
+- Candidate NPS: Target 50+
 
-### EMPLOYER BRAND AMPLIFICATION
+### 90-DAY HIRING TIMELINE
 
-#### CONTENT STRATEGY
-- Employee testimonials
-- Day-in-the-life videos
-- Culture blog posts
-- Glassdoor management
-- Social media presence
+**Weeks 1-2: Setup & Launch**
+- Finalize job descriptions
+- Set up ATS and tracking
+- Launch on all channels
+- Begin direct sourcing
 
-#### CANDIDATE NURTURE CAMPAIGNS
-- Silver medalist talent pool
-- Newsletter with company updates
-- Invitation to events
-- Personalized check-ins
-- Future opportunity alerts
+**Weeks 3-6: Active Sourcing**
+- Review applications daily
+- Conduct recruiter screens
+- Schedule technical screens
+- Build candidate pipeline
 
-### OFFER STRATEGY
+**Weeks 7-10: Interview & Select**
+- Conduct virtual onsites
+- Gather interview feedback
+- Make hiring decisions
+- Extend offers
 
-#### COMPENSATION PHILOSOPHY
-- Market positioning: {{percentile}}
-- Internal equity considerations
-- Total rewards emphasis
-- Negotiation parameters
-- Sign-on bonus criteria
+**Weeks 11-12: Close & Onboard**
+- Negotiate offers
+- Complete reference checks
+- Send equipment
+- Plan onboarding
 
-#### CLOSING TACTICS
-1. Pre-close throughout process
-2. Address concerns proactively
-3. Sell the team and manager
-4. Connect with future peers
-5. Flexible start date options
-```
-
-## Usage Instructions
-
-1. Define role requirements and success criteria clearly
-2. Research market conditions and competitor landscape
-3. Fill in all context variables with specific information
-4. Generate comprehensive hiring strategy
-5. Customize interview questions for your competencies
-6. Train interviewers on structured approach
-7. Track metrics and iterate on process
-8. Gather candidate feedback continuously
-
-## Examples
-
-### Example 1: Senior Software Engineer Hiring
-
-**Input**:
-
-```
-{{position_titles}}: Senior Software Engineer (Frontend)
-{{team_structure}}: Product Engineering, Design Systems team
-{{seniority_level}}: Senior (5-8 years experience)
-{{headcount}}: 3 positions
-{{hiring_deadline}}: 60 days
-{{salary_range}}: $140K-180K + equity
-{{location}}: Remote-first, US timezones
-{{key_duties}}: Build component library, mentor juniors, architecture decisions
-{{must_have_skills}}: React, TypeScript, accessibility, system design
-```
-
-**Output**: [Comprehensive hiring playbook with technical assessment focused on component architecture, behavioral interviews emphasizing mentorship, and sourcing strategy targeting design system communities]
+This comprehensive strategy positions you to successfully compete for senior engineering talent in the competitive Bay Area market while maintaining high standards and creating an excellent candidate experience.
 
 ## Related Prompts
 
-- [Interview Question Generator](/prompts/business/human-resources/interview-designer.md)
-- [Onboarding Program Builder](/prompts/business/human-resources/onboarding-architect.md)
-- [Performance Review Framework](/prompts/business/human-resources/performance-management.md)
-
-## Research Notes
-
-- Structured interviewing increases predictive validity by 2x (Schmidt & Hunter)
-- Candidate experience directly impacts offer acceptance rates and employer brand
-- Competency-based hiring reduces bias and improves diversity outcomes
-- Time-to-fill and quality-of-hire often have inverse relationship
-- Multi-channel sourcing increases candidate pool diversity by 40%
+- [Interview Design Expert](./interview-design-expert.md)
+- [Employer Branding Strategist](./employer-branding-strategist.md)
+- [Compensation Planning Expert](./compensation-planning-expert.md)

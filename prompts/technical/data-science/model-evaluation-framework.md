@@ -1,381 +1,262 @@
-# Comprehensive Model Evaluation and Validation Framework
+# Model Evaluation Framework
 
 ## Metadata
 
-- **Category**: Technical/Data Science
-- **Tags**: model evaluation, machine learning, validation, metrics, data science, ML ops
+- **Category**: Technical/Data-Science
+- **Tags**: model evaluation, machine learning, performance metrics, validation, model selection
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Data Scientist, ML Engineer
-- **Use Cases**: model selection, performance validation, production readiness, A/B testing
+- **Version**: 2.0.0
+- **Use Cases**: model comparison, performance validation, production readiness, ML optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt provides a systematic framework for evaluating machine learning models beyond basic accuracy metrics. It combines statistical rigor with practical deployment considerations to ensure models are not only accurate but also robust, fair, interpretable, and production-ready. The multi-layered approach catches issues that simple evaluation might miss.
+This prompt helps you comprehensively evaluate machine learning models using appropriate metrics, validation strategies, and real-world performance considerations.
 
-## Prompt Template
+## Prompt
 
-````
-You are operating as a comprehensive model evaluation system combining:
+```
+I'll help you evaluate your machine learning model thoroughly to ensure it meets your business needs. Let me understand your model and context:
 
-1. **Senior Data Scientist** (10+ years ML experience)
-   - Expertise: Statistical validation, experimental design, model selection
-   - Strengths: Metric selection, bias detection, interpretability analysis
-   - Perspective: Scientific rigor with business impact focus
+**About your model:**
+1. What type of problem? (classification, regression, clustering, etc.)
+2. What's your model architecture? (random forest, neural network, etc.)
+3. What's the business use case?
+4. What are the consequences of false positives vs false negatives?
 
-2. **ML Engineer**
-   - Expertise: Production ML systems, model deployment, monitoring
-   - Strengths: Performance optimization, scalability, operational metrics
-   - Perspective: Real-world constraints and deployment considerations
+**Data context:**
+5. How much data do you have? (training/validation/test split)
+6. Is your data balanced? Any class imbalance issues?
+7. Any data quality concerns? (missing values, outliers, drift)
+8. Is this time series data or cross-sectional?
 
-Apply these evaluation frameworks:
-- **Statistical Validation**: Rigorous hypothesis testing and confidence intervals
-- **Business Impact Analysis**: Translate metrics to business outcomes
-- **Fairness & Bias Assessment**: Ensure equitable model behavior
-- **Production Readiness**: Evaluate operational characteristics
+**Current performance:**
+9. What metrics have you calculated so far?
+10. Do you have baseline model performance to compare against?
+11. Any specific performance thresholds required?
+12. Have you tested on production-like data?
 
-MODEL CONTEXT:
-- **Model Type**: {{model_algorithm}}
-- **Task Type**: {{classification_regression_etc}}
-- **Dataset Description**: {{data_characteristics}}
-- **Business Objective**: {{business_goal}}
-- **Current Baseline**: {{existing_performance}}
-- **Model Details**: {{architecture_hyperparameters}}
-- **Training Process**: {{training_details}}
-- **Deployment Environment**: {{production_constraints}}
-- **Stakeholder Requirements**: {{success_criteria}}
+Based on your answers, I'll provide:
 
-EVALUATION FRAMEWORK:
+**EVALUATION STRATEGY** - Comprehensive testing approach
+**METRIC ANALYSIS** - Which metrics matter most and why
+**VALIDATION FRAMEWORK** - Proper validation techniques
+**PERFORMANCE INSIGHTS** - Deep dive into model behavior
+**PRODUCTION READINESS** - Deployment considerations
 
-Phase 1: PERFORMANCE ANALYSIS
-1. Calculate comprehensive metrics suite
-2. Analyze performance across data segments
-3. Compare against baselines and benchmarks
-4. Assess statistical significance
+Share your model details and let's ensure it's truly ready for deployment!
+```
 
-Phase 2: ROBUSTNESS TESTING
-1. Evaluate on out-of-distribution data
-2. Test sensitivity to input perturbations
-3. Analyze failure modes
-4. Stress test edge cases
+## Example Usage
 
-Phase 3: FAIRNESS & BIAS AUDIT
-1. Check performance across demographic groups
-2. Identify potential discriminatory patterns
-3. Evaluate feature importance for bias
-4. Test for proxy discrimination
+**User Input:**
+```
+1. Binary classification - predicting customer churn
+2. XGBoost model with 47 features, tuned hyperparameters
+3. Identify customers likely to cancel subscription in next 30 days for retention campaigns
+4. False negatives worse - missing churners costs ~$200/customer, false positive costs ~$10 campaign cost
 
-Phase 4: OPERATIONAL ASSESSMENT
-1. Measure inference latency
-2. Calculate resource requirements
-3. Test scalability limits
-4. Evaluate monitoring capabilities
+5. 100K customers: 70K train, 15K validation, 15K test. 18 months of data
+6. Imbalanced - only 8% churn rate in historical data
+7. Some features have 10-15% missing values, seeing slight drift in user behavior post-COVID
+8. Time-based with monthly snapshots, customer tenure varies 1-60 months
 
-DELIVER YOUR EVALUATION AS:
+9. Just accuracy (92%) and basic precision/recall
+10. Current random targeting gets 8% success rate
+11. Need to catch at least 50% of churners, keep campaign costs reasonable
+12. Not yet - only tested on historical data splits
+```
 
-## MODEL EVALUATION REPORT
+**Assistant Output:**
 
-### EXECUTIVE SUMMARY
-- **Model Performance**: [Key metric vs. baseline]
-- **Production Readiness**: [Ready/Needs Work/Not Ready]
-- **Risk Assessment**: [Low/Medium/High]
-- **Recommendation**: [Deploy/Iterate/Reject]
-- **Business Impact**: [Projected value]
+Based on your churn prediction model, here's a comprehensive evaluation framework:
 
-### PERFORMANCE METRICS
+## EVALUATION STRATEGY
 
-#### PRIMARY METRICS
-| Metric | Value | Baseline | Target | Status |
-|--------|-------|----------|--------|---------|
-| {{primary_metric}} | X.XX | X.XX | X.XX | ✅/❌ |
-| {{secondary_metric}} | X.XX | X.XX | X.XX | ✅/❌ |
+### Critical Issues to Address
+1. **Accuracy is misleading** - At 92% with 8% churn rate, your model might just be predicting everyone stays!
+2. **Time-based validation needed** - Random splits don't work for churn
+3. **Business metrics missing** - Need to evaluate $ impact, not just ML metrics
 
-#### DETAILED PERFORMANCE ANALYSIS
+### Proper Evaluation Approach
+**Time-Based Split**: 
+- Train: Months 1-12
+- Validate: Months 13-15  
+- Test: Months 16-18
+- This prevents future data leakage
+
+## METRIC ANALYSIS
+
+### Primary Metrics (Given Business Context)
+
+**1. Recall @ Top 20% (Critical)**
+```
+Why: If you can only campaign to 20% of customers, 
+     how many churners do you catch?
+Target: 60%+ (achievable with good model)
+Current: Calculate this immediately
+```
+
+**2. Precision-Recall AUC**
+```
+Why: Robust to class imbalance unlike ROC-AUC
+Target: 0.35+ (good for 8% base rate)
+Interpretation: Area under precision-recall curve
+```
+
+**3. Lift @ Deciles**
+```
+Top 10%: Should show 4-5x lift
+Top 20%: Should show 3-4x lift  
+Top 30%: Should show 2-3x lift
+```
+
+### Business Metrics
+
+**4. Expected Revenue Impact**
+```
+Per 1000 customers targeted:
+True Positives × $200 saved
+- False Positives × $10 cost
+- False Negatives × $200 lost
+
+Compare to random targeting baseline
+```
+
+**5. Campaign Efficiency**
+```
+Number Needed to Treat (NNT) = 1/Precision
+Cost per Saved Customer = NNT × $10
+Must be < $200 to be profitable
+```
+
+## VALIDATION FRAMEWORK
+
+### 1. Temporal Validation
 ```python
-# Confusion Matrix Analysis
-              Predicted
-              Neg    Pos
-Actual Neg  [[TN    FP]]
-       Pos  [[FN    TP]]
-
-# Key Observations:
-- False Positive Rate: X% (Impact: {{fp_impact}})
-- False Negative Rate: X% (Impact: {{fn_impact}})
-- Class Imbalance Handling: {{assessment}}
-````
-
-#### PERFORMANCE BY SEGMENT
-
-| Segment       | Size | Metric     | Performance | Notes           |
-| ------------- | ---- | ---------- | ----------- | --------------- |
-| {{segment_1}} | N    | {{metric}} | X.XX        | {{observation}} |
-| {{segment_2}} | N    | {{metric}} | X.XX        | {{observation}} |
-
-### STATISTICAL VALIDATION
-
-#### CROSS-VALIDATION RESULTS
-
-```python
-# K-Fold Cross Validation (k=5)
-Fold 1: 0.XXX
-Fold 2: 0.XXX
-Fold 3: 0.XXX
-Fold 4: 0.XXX
-Fold 5: 0.XXX
-
-Mean: 0.XXX (±0.XXX)
-95% CI: [0.XXX, 0.XXX]
+# Pseudo-code for proper time-based validation
+for month in [13, 14, 15, 16, 17, 18]:
+    train_data = data[data.month < month - 2]
+    val_data = data[data.month == month - 2]
+    test_data = data[data.month == month]
+    
+    # Retrain model monthly
+    model.fit(train_data)
+    predictions = model.predict_proba(test_data)
+    
+    # Track metric stability
+    metrics[month] = calculate_metrics(predictions)
 ```
 
-#### STATISTICAL SIGNIFICANCE
+### 2. Stratified Analysis
+Evaluate performance by:
+- Customer tenure buckets (new vs. established)
+- Revenue segments (high vs. low value)
+- Product types
+- Acquisition channels
 
-```python
-# McNemar's Test vs Baseline
-Test Statistic: X.XX
-P-value: 0.XXX
-Result: Statistically significant improvement (p < 0.05)
+### 3. Feature Stability Testing
+```
+Critical checks:
+- Feature importance changes over time
+- Prediction drift month-to-month
+- Missing value impact analysis
+- COVID period vs. normal behavior
 ```
 
-### ROBUSTNESS ANALYSIS
+## PERFORMANCE INSIGHTS
 
-#### SENSITIVITY TESTING
+### Detailed Analysis Plan
 
-```python
-# Input Perturbation Results
-Noise Level | Performance Drop | Stability
-0.01       | -0.5%          | Stable
-0.05       | -2.1%          | Stable
-0.10       | -8.3%          | Degraded
-0.20       | -23.5%         | Unstable
+**1. Probability Calibration**
+- Plot: Predicted vs. Actual churn rates by decile
+- Test: Hosmer-Lemeshow goodness-of-fit
+- Fix: Isotonic/Platt calibration if needed
 
-Robustness Score: X/10
+**2. Error Analysis**
+```
+False Negatives Profile:
+- Which churners are we missing?
+- Common characteristics?
+- Actionable patterns?
+
+False Positives Profile:  
+- Why did model think they'd churn?
+- Can we identify systematic errors?
 ```
 
-#### EDGE CASE ANALYSIS
+**3. Feature Diagnostics**
+- SHAP values for top 20% predictions
+- Partial dependence plots for key features
+- Feature interaction effects
+- Missing value impact on predictions
 
-| Edge Case  | Description | Model Behavior | Risk Level |
-| ---------- | ----------- | -------------- | ---------- |
-| {{case_1}} | {{desc}}    | {{behavior}}   | {{risk}}   |
-| {{case_2}} | {{desc}}    | {{behavior}}   | {{risk}}   |
-
-### FAIRNESS & BIAS AUDIT
-
-#### DEMOGRAPHIC PARITY
-
-```python
-# Performance Across Protected Groups
-Group A: 0.XX accuracy, 0.XX FPR
-Group B: 0.XX accuracy, 0.XX FPR
-Disparity: X.X%
-Threshold: 5% ({{pass_fail}})
+**4. Threshold Optimization**
+```
+Business-Driven Threshold:
+1. Set minimum recall (50% churners)
+2. Find threshold that maximizes profit
+3. Calculate campaign size needed
+4. Validate stability across time
 ```
 
-#### FEATURE IMPORTANCE ANALYSIS
+## PRODUCTION READINESS
 
-```python
-# Top 10 Features by Importance
-1. {{feature_1}}: 0.XXX - {{bias_risk}}
-2. {{feature_2}}: 0.XXX - {{bias_risk}}
-...
+### Performance Monitoring Plan
 
-Potentially Biased Features Detected:
-- {{biased_feature}}: Correlated with {{protected_attribute}}
+**1. Data Quality Checks**
+- Missing value rates by feature
+- Feature distribution shifts (KS test)
+- Prediction distribution monitoring
+- Business metric tracking
+
+**2. Model Performance Tracking**
+```
+Weekly Dashboard:
+- Precision @ current threshold
+- Recall @ current threshold  
+- Campaign conversion rate
+- Revenue impact vs. baseline
 ```
 
-### ERROR ANALYSIS
+**3. Retraining Strategy**
+- Monthly performance review
+- Quarterly full retrain
+- Trigger: 10% performance drop
+- A/B test new models
 
-#### ERROR PATTERNS
+### Deployment Checklist
 
-```python
-# Common Failure Modes
-1. Pattern: {{pattern_description}}
-   Frequency: X%
-   Example: {{example}}
-   Mitigation: {{suggested_fix}}
+**Pre-Production Tests:**
+- [ ] Inference speed < 100ms per prediction
+- [ ] Handle missing values gracefully
+- [ ] Prediction logging configured
+- [ ] Fallback for model failures
+- [ ] Feature pipeline validated
 
-2. Pattern: {{pattern_description}}
-   Frequency: X%
-   Example: {{example}}
-   Mitigation: {{suggested_fix}}
-```
+**Business Integration:**
+- [ ] CRM integration for campaigns
+- [ ] Scoring frequency defined
+- [ ] Action thresholds agreed
+- [ ] Success metrics dashboarded
 
-#### PREDICTION CONFIDENCE
+### Next Steps
 
-```python
-# Confidence Distribution
-High Confidence (>0.9): XX% (Accuracy: XX%)
-Medium Confidence (0.7-0.9): XX% (Accuracy: XX%)
-Low Confidence (<0.7): XX% (Accuracy: XX%)
+1. **Immediate**: Recalculate metrics with proper time splits
+2. **This Week**: Build business impact simulator
+3. **Before Deploy**: Run 2-week shadow mode test
+4. **Post-Deploy**: Daily monitoring for 2 weeks
 
-Calibration Error: 0.XXX
-```
+### Red Flags to Address
+- No discussion of probability calibration
+- Single-point time validation insufficient  
+- Need customer lifetime value in optimization
+- Feature drift requires monitoring
 
-### PRODUCTION READINESS
-
-#### PERFORMANCE CHARACTERISTICS
-
-```python
-# Latency Analysis (ms)
-P50: XX ms
-P95: XX ms
-P99: XX ms
-Max: XX ms
-
-# Resource Usage
-Memory: XXX MB
-CPU: XX%
-GPU: XX% (if applicable)
-
-# Throughput
-Requests/sec: XXXX
-Batch optimal size: XX
-```
-
-#### DEPLOYMENT CHECKLIST
-
-- [ ] Model serialization tested
-- [ ] API endpoint defined
-- [ ] Monitoring metrics configured
-- [ ] Fallback strategy implemented
-- [ ] A/B test plan created
-- [ ] Rollback procedure documented
-
-### BUSINESS IMPACT ANALYSIS
-
-#### VALUE PROJECTION
-
-```python
-# Business Metric Impact
-Current State: {{current_metric}}
-With Model: {{projected_metric}}
-Improvement: {{percentage}}%
-Annual Value: ${{value}}
-
-# ROI Calculation
-Implementation Cost: ${{cost}}
-Annual Benefit: ${{benefit}}
-Payback Period: {{months}} months
-5-Year NPV: ${{npv}}
-```
-
-#### RISK ASSESSMENT
-
-| Risk Type    | Probability | Impact | Mitigation           |
-| ------------ | ----------- | ------ | -------------------- |
-| Model Drift  | Medium      | High   | Monitor distribution |
-| Adversarial  | Low         | High   | Input validation     |
-| Scale Issues | Low         | Medium | Load testing         |
-
-### RECOMMENDATIONS
-
-#### IMMEDIATE ACTIONS
-
-1. **Deploy with Monitoring**: Set up comprehensive logging
-2. **A/B Test**: Start with 5% traffic
-3. **Alert Thresholds**: Configure for key metrics
-
-#### IMPROVEMENT OPPORTUNITIES
-
-1. **Data Collection**: Add features {{features}} for X% improvement
-2. **Model Architecture**: Try {{approach}} for better {{metric}}
-3. **Training Process**: Implement {{technique}} for stability
-
-### MONITORING PLAN
-
-```yaml
-# Monitoring Configuration
-metrics:
-  - name: prediction_accuracy
-    type: gauge
-    alert_threshold: 0.90
-
-  - name: prediction_latency_p99
-    type: histogram
-    alert_threshold: 100ms
-
-  - name: feature_drift
-    type: counter
-    alert_threshold: 0.05
-
-alerts:
-  - condition: accuracy < 0.90
-    severity: high
-    action: page_oncall
-
-  - condition: latency_p99 > 100ms
-    severity: medium
-    action: slack_notification
-```
-
-### APPENDIX: EVALUATION CODE
-
-```python
-# Reproducible Evaluation Script
-import numpy as np
-from sklearn.metrics import classification_report
-from model_evaluation import comprehensive_evaluate
-
-# Load model and test data
-model = load_model('{{model_path}}')
-X_test, y_test = load_test_data('{{test_path}}')
-
-# Run comprehensive evaluation
-results = comprehensive_evaluate(
-    model=model,
-    X_test=X_test,
-    y_test=y_test,
-    protected_features=['{{protected_attrs}}'],
-    business_costs={
-        'fp_cost': {{fp_cost}},
-        'fn_cost': {{fn_cost}}
-    }
-)
-
-# Generate report
-print(results.summary())
-results.save_report('evaluation_report.html')
-```
-
-```
-
-## Usage Instructions
-1. Train your model and prepare test datasets
-2. Fill in all context variables with specific details
-3. Include information about business requirements and constraints
-4. Run the prompt to get comprehensive evaluation
-5. Use the evaluation code template for reproducible results
-6. Implement monitoring based on recommendations
-7. Make go/no-go decision based on assessment
-
-## Examples
-### Example 1: Customer Churn Prediction Model
-**Input**:
-```
-
-{{model_algorithm}}: XGBoost Classifier
-{{task_type}}: Binary Classification (Churn Prediction)
-{{data_characteristics}}: 100K customers, 50 features, 15% churn rate
-{{business_goal}}: Reduce churn by 20% through targeted interventions
-{{existing_performance}}: Rule-based system with 72% precision
-{{architecture_hyperparameters}}: 500 trees, depth 6, learning rate 0.01
-{{training_details}}: 5-fold CV, SMOTE for imbalance
-{{production_constraints}}: <50ms latency, 1M predictions/day
-{{success_criteria}}: 85% precision at 60% recall
-
-```
-
-**Output**: [Comprehensive evaluation showing 88% precision at 62% recall, with detailed fairness analysis and production readiness assessment]
+Your 92% accuracy likely hides poor churn detection. Focus on recall at reasonable precision levels and tie everything to business value.
 
 ## Related Prompts
-- [Hyperparameter Optimization Guide](/prompts/technical/data-science/hyperparameter-tuning.md)
-- [Feature Engineering Assistant](/prompts/technical/data-science/feature-engineering.md)
-- [ML Monitoring Setup](/prompts/technical/data-science/ml-monitoring.md)
 
-## Research Notes
-- Evaluation framework based on Google's ML best practices
-- Fairness metrics aligned with "Fairness in Machine Learning" research
-- Statistical tests selected based on Dietterich's recommendations
-- Business impact methodology from "Designing Machine Learning Systems"
-- Monitoring approach inspired by Uber's Michelangelo platform
-```
+- [ML Experimentation Framework](./ml-experimentation-expert.md)
+- [Feature Engineering Specialist](./feature-engineering-expert.md)
+- [Model Deployment Strategist](./ml-deployment-expert.md)

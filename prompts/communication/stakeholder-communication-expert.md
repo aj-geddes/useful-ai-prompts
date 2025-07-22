@@ -1,996 +1,233 @@
 # Stakeholder Communication Expert
 
 ## Metadata
-- **Category**: Communication/Strategy
-- **Tags**: stakeholder-management, strategic-communication, relationship-building, influence
+
+- **Category**: Communication
+- **Tags**: stakeholder management, strategic communication, relationship building, influence mapping
+- **Created**: 2025-07-22
 - **Version**: 2.0.0
-- **Last Updated**: 2025-01-21
+- **Use Cases**: project communication, change management, executive alignment, partner management
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
-A stakeholder communication strategist that helps you identify, engage, and influence key stakeholders through targeted communication approaches.
 
-## Usage Instructions
-1. Describe your project and stakeholders
-2. Answer questions about relationships and goals
-3. Receive stakeholder communication plan
-4. Execute with provided templates and strategies
+This prompt helps you build effective stakeholder communication strategies that ensure the right people get the right information at the right time to support your initiatives.
 
 ## Prompt
 
-I'm your Stakeholder Communication Assistant, here to help you build and maintain crucial stakeholder relationships.
+```
+I'll help you create a stakeholder communication strategy that drives alignment and support. Let me understand your situation:
 
-To create your communication strategy, tell me:
+**About your initiative:**
+1. What project or change are you leading?
+2. What's the timeline and current phase?
+3. What's the impact on different groups?
+4. What approvals or support do you need?
 
-**About Your Initiative:**
-- What project/change are you leading?
-- What's the impact on stakeholders?
-- What's your timeline?
-- What are the risks?
+**About your stakeholders:**
+5. Who are your key stakeholders? (names/roles)
+6. What's their current stance? (supportive, neutral, resistant)
+7. What's their level of influence? (high, medium, low)
+8. What are their main concerns or priorities?
 
-**About Your Stakeholders:**
-- Who are the key players? (names/roles)
-- What's their level of influence?
-- What's their current stance? (supportive, neutral, resistant)
-- What do they care about most?
+**Communication context:**
+9. What's worked well with these stakeholders before?
+10. What challenges have you faced?
+11. Are there any political dynamics to navigate?
+12. What's your preferred communication style?
 
-**About Your Goals:**
-- What do you need from each stakeholder?
-- What concerns need addressing?
-- How will you measure success?
-- Any political dynamics to navigate?
+Based on your answers, I'll create:
 
-I'll develop:
+**STAKEHOLDER MAP** - Visual influence/interest analysis with engagement strategies
+**COMMUNICATION PLAN** - Who to engage, when, how, and with what messages
+**MESSAGE FRAMEWORKS** - Tailored messages for each stakeholder group
+**ENGAGEMENT TACTICS** - Specific approaches to build support and manage resistance
+**SUCCESS METRICS** - How to measure communication effectiveness
 
-## STAKEHOLDER COMMUNICATION STRATEGY
-
-### STAKEHOLDER MAPPING
-**Power/Interest Grid**
-- High power, high interest → Manage closely
-- High power, low interest → Keep satisfied
-- Low power, high interest → Keep informed
-- Low power, low interest → Monitor
-
-**Stakeholder Profiles**
-[Individual analysis for each key stakeholder]
-- Current position
-- Key concerns
-- Communication preferences
-- Influence strategy
-
-### COMMUNICATION PLAN
-**Engagement Timeline**
-- Phase 1: Initial outreach
-- Phase 2: Deep engagement
-- Phase 3: Decision support
-- Phase 4: Implementation
-
-**Channel Strategy**
-- 1:1 meetings (who, when, agenda)
-- Group forums
-- Written updates
-- Informal touchpoints
-
-### MESSAGE FRAMEWORKS
-**Core Narrative**
-- Vision statement
-- Value proposition
-- Risk mitigation
-- Success metrics
-
-**Tailored Messages**
-[Customized for each stakeholder group]
-- Their wins
-- Addressed concerns
-- Role clarity
-- Support needed
-
-### INFLUENCE TACTICS
-**Building Support**
-- Quick wins to show
-- Coalition building
-- Champion development
-- Resistance management
-
-**Communication Templates**
-- Stakeholder update emails
-- Meeting agendas
-- Progress reports
-- Escalation scripts
-
-Which stakeholder should we focus on first?
-
-## Examples
-
-### Example 1: Digital Transformation
-**Input**: "Leading digital transformation. CFO worried about costs, Sales VP resistant to change, IT excited but overwhelmed."
-**Output**: Stakeholder influence map, ROI-focused CFO briefings, change benefit messages for Sales, IT resource plan, and coalition building strategy.
-
-### Example 2: Merger Integration
-**Input**: "Post-merger integration lead. Two company cultures, competing executives, worried employees, skeptical customers."
-**Output**: Cultural assessment, executive alignment workshops, employee communication cascade, customer retention messages, and integration milestone celebrations.
-
-### Example 3: Policy Change
-**Input**: "Implementing new remote work policy. Some managers resistant, employees divided, HR supportive, CEO uncertain."
-**Output**: Manager concerns analysis, employee feedback system, pilot program design, executive decision briefing, and phased rollout communication.
-
-1. **Master Stakeholder Communication Expert** (18+ years experience)
-   - Expertise: Stakeholder analysis, communication strategy, relationship management, influence mapping
-   - Strengths: Message crafting, communication planning, stakeholder engagement, trust building
-   - Perspective: Strategic communication that builds lasting relationships and drives organizational success
-
-2. **Strategic Engagement Architect**
-   - Expertise: Engagement strategy design, communication frameworks, stakeholder ecosystem mapping
-   - Strengths: Multi-channel communication, engagement optimization, strategic alignment, influence strategies
-   - Perspective: Systematic engagement design that maximizes stakeholder value and organizational impact
-
-Apply these communication frameworks:
-- **Stakeholder Engagement Model**: Systematic approach to stakeholder identification, analysis, and engagement
-- **RACI Communication Matrix**: Role-based communication planning with clear accountability
-- **Influence-Interest Grid**: Strategic stakeholder prioritization and engagement planning
-- **Multi-Channel Communication**: Integrated communication across multiple channels and touchpoints
-
-STAKEHOLDER CONTEXT:
-- **Stakeholder Scope**: {{internal_external_mixed_global_local_industry_specific}}
-- **Stakeholder Complexity**: {{simple_moderate_complex_highly_complex_enterprise_level}}
-- **Communication Urgency**: {{routine_important_urgent_critical_crisis_mode}}
-- **Relationship Status**: {{established_developing_new_strained_adversarial}}
-- **Power Dynamics**: {{equal_hierarchical_matrix_complex_political}}
-- **Cultural Context**: {{local_national_international_multicultural_diverse}}
-- **Communication Frequency**: {{one_time_periodic_ongoing_continuous_real_time}}
-- **Stakeholder Influence**: {{low_moderate_high_critical_executive_level}}
-- **Change Impact**: {{minimal_moderate_significant_transformational_disruptive}}
-- **Success Criticality**: {{nice_to_have_important_critical_business_critical_mission_critical}}
-
-STAKEHOLDER SCENARIO:
-{{stakeholder_groups_communication_objectives_challenges_success_criteria_constraints}}
-
-STAKEHOLDER COMMUNICATION FRAMEWORK:
-
-Phase 1: STAKEHOLDER ANALYSIS & MAPPING
-1. Stakeholder identification and categorization
-2. Influence and interest analysis
-3. Communication needs assessment
-4. Relationship mapping and dependency analysis
-
-Phase 2: COMMUNICATION STRATEGY DESIGN
-1. Communication objectives and key messages development
-2. Channel strategy and touchpoint planning
-3. Engagement timeline and milestone planning
-4. Risk assessment and mitigation strategy
-
-Phase 3: EXECUTION & ENGAGEMENT
-1. Communication delivery and stakeholder engagement
-2. Relationship building and trust development
-3. Feedback collection and response management
-4. Progress monitoring and adjustment
-
-Phase 4: RELATIONSHIP MAINTENANCE & OPTIMIZATION
-1. Ongoing relationship management and nurturing
-2. Communication effectiveness measurement and optimization
-3. Stakeholder satisfaction assessment and improvement
-4. Long-term engagement strategy evolution
-
-DELIVER YOUR STAKEHOLDER COMMUNICATION STRATEGY AS:
+Share your stakeholder landscape and I'll develop a targeted communication strategy.
 ```
 
-## COMPREHENSIVE STAKEHOLDER COMMUNICATION STRATEGY
+## Example Usage
 
-### STAKEHOLDER COMMUNICATION OVERVIEW
+**User Input:**
+```
+1. Leading digital transformation - new CRM system implementation
+2. 6-month project, currently in month 2 (design phase)
+3. Sales team needs new processes, IT handles integration, Finance sees costs
+4. Need executive approval for $500K budget increase
 
-**Project**: Digital Transformation Initiative - Enterprise Software Implementation
-**Stakeholder Challenge**: Managing communication across 150+ stakeholders in complex organizational change
-**Communication Goal**: Achieve 95% stakeholder buy-in and smooth transformation with minimal resistance
-**Timeline**: 18-month implementation with ongoing stakeholder engagement
+5. Key stakeholders: CEO (supportive), CFO (skeptical), Sales VP (neutral), IT Director (enthusiastic)
+6. CEO wants results, CFO worried about ROI, Sales VP concerned about disruption, IT excited
+7. CEO/CFO high influence, Sales VP medium, IT Director low but important
+8. CEO: growth, CFO: cost control, Sales VP: team productivity, IT: modernization
 
-**Stakeholder Ecosystem**:
-
-- **Executive Leadership**: CEO, CTO, CFO, and 8 VPs across business units
-- **Department Heads**: 25 directors managing affected departments
-- **IT Teams**: 40 technical staff including architects, developers, and system administrators
-- **End Users**: 2,500+ employees across 12 global offices
-- **External Partners**: 15 vendors, consultants, and integration partners
-- **Regulatory Bodies**: 3 compliance organizations requiring detailed reporting
-
-**Communication Complexity Factors**:
-
-- **Geographic Distribution**: Teams across 6 time zones in North America, Europe, and Asia
-- **Cultural Diversity**: Multi-cultural workforce with varying communication preferences
-- **Technical Expertise Levels**: Range from highly technical to business-focused stakeholders
-- **Change Resistance**: Previous failed initiatives creating skepticism and change fatigue
-- **Political Dynamics**: Competing departmental priorities and resource allocation concerns
-
-### EXECUTIVE SUMMARY
-
-**Stakeholder Communication Strategy**:
-Design and execute multi-layered stakeholder engagement strategy that builds trust, manages resistance, and drives alignment through targeted communication, relationship building, and systematic engagement across diverse stakeholder groups.
-
-**Strategic Engagement Approach**:
-
-- **Stakeholder Segmentation**: Customized communication strategies for each stakeholder segment
-- **Multi-Channel Integration**: Coordinated communication across digital and traditional channels
-- **Relationship-Centric Design**: Focus on building and maintaining strong stakeholder relationships
-- **Change Management Integration**: Communication strategy aligned with change management best practices
-- **Continuous Feedback Loop**: Real-time stakeholder feedback integration and response
-
-**Core Communication Principles**:
-
-1. **Transparency and Honesty**: Open communication about challenges, progress, and decisions
-2. **Relevance and Value**: Stakeholder-specific messaging that addresses individual needs and concerns
-3. **Consistency and Reliability**: Consistent messaging and dependable communication cadence
-4. **Two-Way Engagement**: Active listening and responsive communication, not just broadcasting
-5. **Cultural Sensitivity**: Respectful communication that acknowledges cultural differences
-
-**Expected Engagement Outcomes**:
-
-- 95% stakeholder awareness and understanding of transformation objectives
-- 85% reduction in resistance and negative sentiment
-- 90% stakeholder satisfaction with communication quality and frequency
-- 75% increase in proactive stakeholder engagement and feedback
-- 99% project milestone communication effectiveness
-
-### COMPREHENSIVE STAKEHOLDER ANALYSIS
-
-#### Stakeholder Identification and Mapping
-
-**Executive Stakeholder Analysis**:
-
-| Stakeholder       | Influence Level | Interest Level | Engagement Strategy                               |
-| ----------------- | --------------- | -------------- | ------------------------------------------------- |
-| **CEO**           | Very High       | High           | Executive briefings, strategic alignment sessions |
-| **CTO**           | Very High       | Very High      | Technical deep-dives, architecture reviews        |
-| **CFO**           | High            | High           | ROI reporting, budget impact analysis             |
-| **VP Operations** | High            | Very High      | Process impact assessment, efficiency metrics     |
-| **VP HR**         | Medium          | High           | Change management support, training coordination  |
-
-**Department Head Stakeholder Analysis**:
-
-| Department     | Key Concerns                         | Communication Needs                                      | Preferred Channels                      |
-| -------------- | ------------------------------------ | -------------------------------------------------------- | --------------------------------------- |
-| **Finance**    | Budget impact, ROI measurement       | Detailed financial analysis, cost-benefit reports        | Executive dashboards, quarterly reviews |
-| **Sales**      | Customer impact, system downtime     | Sales process continuity, customer communication support | Sales team meetings, CRM updates        |
-| **Marketing**  | Brand impact, customer communication | Marketing message alignment, customer impact mitigation  | Marketing team calls, brand guidelines  |
-| **Operations** | Process disruption, efficiency       | Operational impact assessment, transition planning       | Process workshops, operational reviews  |
-
-**Technical Team Stakeholder Analysis**:
-
-```python
-# Stakeholder Analysis Framework
-class StakeholderAnalyzer:
-    def __init__(self):
-        self.stakeholder_matrix = {}
-        self.influence_mapper = InfluenceMapper()
-        self.communication_planner = CommunicationPlanner()
-
-    def analyze_stakeholder_ecosystem(self, project_context):
-        stakeholder_groups = {
-            'executive_leadership': {
-                'influence_level': 'very_high',
-                'interest_level': 'high',
-                'power_source': 'decision_authority',
-                'communication_style': 'strategic_summary',
-                'engagement_frequency': 'weekly',
-                'key_concerns': ['roi', 'strategic_alignment', 'risk_management'],
-                'success_metrics': ['business_value', 'transformation_progress']
-            },
-            'technical_teams': {
-                'influence_level': 'medium',
-                'interest_level': 'very_high',
-                'power_source': 'implementation_expertise',
-                'communication_style': 'detailed_technical',
-                'engagement_frequency': 'daily',
-                'key_concerns': ['technical_feasibility', 'system_integration', 'workload_impact'],
-                'success_metrics': ['technical_success', 'timeline_adherence']
-            },
-            'end_users': {
-                'influence_level': 'low',
-                'interest_level': 'high',
-                'power_source': 'adoption_influence',
-                'communication_style': 'practical_benefits',
-                'engagement_frequency': 'bi_weekly',
-                'key_concerns': ['job_impact', 'training_needs', 'workflow_changes'],
-                'success_metrics': ['user_adoption', 'satisfaction_scores']
-            },
-            'external_partners': {
-                'influence_level': 'medium',
-                'interest_level': 'medium',
-                'power_source': 'delivery_dependencies',
-                'communication_style': 'contractual_professional',
-                'engagement_frequency': 'weekly',
-                'key_concerns': ['contract_fulfillment', 'timeline_alignment', 'scope_clarity'],
-                'success_metrics': ['delivery_quality', 'partnership_satisfaction']
-            }
-        }
-
-        return self.generate_engagement_strategies(stakeholder_groups)
-
-    def create_influence_interest_matrix(self, stakeholders):
-        matrix = {
-            'high_influence_high_interest': {
-                'strategy': 'manage_closely',
-                'engagement_level': 'very_high',
-                'communication_frequency': 'frequent',
-                'stakeholders': ['ceo', 'cto', 'project_sponsors']
-            },
-            'high_influence_low_interest': {
-                'strategy': 'keep_satisfied',
-                'engagement_level': 'medium',
-                'communication_frequency': 'periodic',
-                'stakeholders': ['board_members', 'regulatory_bodies']
-            },
-            'low_influence_high_interest': {
-                'strategy': 'keep_informed',
-                'engagement_level': 'medium',
-                'communication_frequency': 'regular',
-                'stakeholders': ['end_users', 'support_teams']
-            },
-            'low_influence_low_interest': {
-                'strategy': 'monitor',
-                'engagement_level': 'low',
-                'communication_frequency': 'minimal',
-                'stakeholders': ['peripheral_departments', 'external_observers']
-            }
-        }
-
-        return matrix
+9. CEO likes data and brevity, CFO wants detailed analysis, Sales VP prefers discussions
+10. CFO always pushes back on tech spending, Sales VP protective of team
+11. Sales VP and IT Director don't get along well, CFO trusts CEO's judgment
+12. I prefer collaborative approach but can be direct when needed
 ```
 
-#### Stakeholder Communication Needs Assessment
+**Assistant Output:**
 
-**Communication Preferences Analysis**:
+Based on your CRM implementation stakeholder landscape, here's your communication strategy:
 
-**Executive Leadership Communication Needs**:
+## STAKEHOLDER MAP
 
-- **Content Format**: Executive summaries, dashboard visualizations, ROI analyses
-- **Communication Timing**: Monthly strategic reviews, quarterly board presentations
-- **Decision Support**: Risk assessments, milestone reports, escalation alerts
-- **Preferred Channels**: Executive briefings, board presentations, strategic planning sessions
-
-**Technical Teams Communication Needs**:
-
-- **Content Format**: Technical specifications, architecture diagrams, implementation guides
-- **Communication Timing**: Daily stand-ups, weekly sprint reviews, milestone demos
-- **Decision Support**: Technical risk assessments, integration plans, resource requirements
-- **Preferred Channels**: Technical workshops, architecture reviews, developer forums
-
-**End User Communication Needs**:
-
-- **Content Format**: User-friendly guides, training materials, FAQ documents
-- **Communication Timing**: Regular updates, training sessions, feedback collection
-- **Decision Support**: Impact assessments, benefit explanations, support resources
-- **Preferred Channels**: Team meetings, email updates, training sessions, help desk
-
-### COMMUNICATION STRATEGY DESIGN
-
-#### Multi-Channel Communication Architecture
-
-**Integrated Communication Framework**:
-
-```typescript
-// Comprehensive Communication Channel Strategy
-class CommunicationChannelManager {
-  private channelStrategies: Map<string, ChannelStrategy>;
-  private stakeholderPreferences: StakeholderPreferences;
-  private messageCoordinator: MessageCoordinator;
-
-  constructor() {
-    this.channelStrategies = new Map();
-    this.stakeholderPreferences = new StakeholderPreferences();
-    this.messageCoordinator = new MessageCoordinator();
-    this.initializeChannelStrategies();
-  }
-
-  private initializeChannelStrategies(): void {
-    // Executive Communication Channels
-    this.channelStrategies.set("executive_briefings", {
-      stakeholder_groups: ["ceo", "cto", "cfo", "vp_level"],
-      communication_type: "strategic_updates",
-      frequency: "monthly",
-      format: "presentation_dashboard",
-      delivery_method: "in_person_video_conference",
-      preparation_time: "1_week",
-      follow_up_required: true,
-    });
-
-    // Department Head Communications
-    this.channelStrategies.set("department_meetings", {
-      stakeholder_groups: ["department_heads", "team_leads"],
-      communication_type: "operational_updates",
-      frequency: "bi_weekly",
-      format: "meeting_presentation",
-      delivery_method: "team_meetings",
-      preparation_time: "3_days",
-      follow_up_required: true,
-    });
-
-    // Technical Team Communications
-    this.channelStrategies.set("technical_forums", {
-      stakeholder_groups: ["developers", "architects", "system_admins"],
-      communication_type: "technical_updates",
-      frequency: "weekly",
-      format: "technical_documentation",
-      delivery_method: "wiki_slack_email",
-      preparation_time: "1_day",
-      follow_up_required: false,
-    });
-
-    // End User Communications
-    this.channelStrategies.set("user_communications", {
-      stakeholder_groups: ["all_employees", "end_users"],
-      communication_type: "general_updates",
-      frequency: "monthly",
-      format: "newsletter_video",
-      delivery_method: "email_intranet",
-      preparation_time: "1_week",
-      follow_up_required: false,
-    });
-  }
-
-  generateCommunicationPlan(
-    stakeholder_segments: StakeholderSegment[],
-  ): CommunicationPlan {
-    const communicationPlan: CommunicationPlan = {
-      channels: [],
-      timeline: {},
-      resource_requirements: {},
-      success_metrics: {},
-    };
-
-    stakeholder_segments.forEach((segment) => {
-      const channelStrategy = this.selectOptimalChannels(segment);
-      const messageStrategy = this.designMessageStrategy(segment);
-      const engagementStrategy = this.planEngagementStrategy(segment);
-
-      communicationPlan.channels.push({
-        stakeholder_segment: segment.name,
-        primary_channels: channelStrategy.primary,
-        secondary_channels: channelStrategy.secondary,
-        backup_channels: channelStrategy.backup,
-        message_framework: messageStrategy,
-        engagement_approach: engagementStrategy,
-      });
-    });
-
-    return communicationPlan;
-  }
-}
-```
-
-#### Message Framework Development
-
-**Strategic Message Architecture**:
-
-**Core Message Framework**:
-
-1. **Transformation Vision**: "Modernizing our technology infrastructure to drive business growth and competitive advantage"
-2. **Value Proposition**: "Streamlined processes, improved efficiency, and enhanced customer experience"
-3. **Change Rationale**: "Essential modernization to remain competitive and serve customers effectively"
-4. **Success Definition**: "Measurable improvements in efficiency, customer satisfaction, and business agility"
-
-**Stakeholder-Specific Message Customization**:
-
-```typescript
-// Message Customization Engine
-class MessageCustomizationEngine {
-  private messageTemplates: MessageTemplateLibrary;
-  private stakeholderProfiles: StakeholderProfileManager;
-
-  generateCustomizedMessages(
-    coreMessage: CoreMessage,
-    stakeholder: Stakeholder,
-  ): CustomizedMessage {
-    const stakeholderProfile = this.stakeholderProfiles.getProfile(
-      stakeholder.id,
-    );
-
-    return {
-      headline: this.customizeHeadline(
-        coreMessage.headline,
-        stakeholderProfile,
-      ),
-      key_points: this.prioritizeKeyPoints(
-        coreMessage.keyPoints,
-        stakeholderProfile,
-      ),
-      supporting_details: this.selectRelevantDetails(
-        coreMessage.details,
-        stakeholderProfile,
-      ),
-      call_to_action: this.defineSpecificActions(
-        coreMessage.actions,
-        stakeholderProfile,
-      ),
-      success_metrics: this.highlightRelevantMetrics(
-        coreMessage.metrics,
-        stakeholderProfile,
-      ),
-    };
-  }
-
-  // Executive-focused messaging
-  generateExecutiveMessage(
-    transformation_update: TransformationUpdate,
-  ): ExecutiveMessage {
-    return {
-      strategic_summary: {
-        progress_against_goals: transformation_update.strategic_progress,
-        roi_trajectory: transformation_update.financial_metrics,
-        risk_assessment: transformation_update.risk_analysis,
-        strategic_decisions_needed: transformation_update.decision_points,
-      },
-      business_impact: {
-        efficiency_gains: transformation_update.efficiency_metrics,
-        cost_savings: transformation_update.cost_analysis,
-        competitive_advantage: transformation_update.market_position,
-        customer_impact: transformation_update.customer_metrics,
-      },
-      executive_actions: {
-        decisions_required: transformation_update.pending_decisions,
-        resource_approvals: transformation_update.resource_requests,
-        stakeholder_engagement: transformation_update.stakeholder_actions,
-        communication_approvals: transformation_update.communication_needs,
-      },
-    };
-  }
-
-  // Technical team messaging
-  generateTechnicalMessage(
-    implementation_update: ImplementationUpdate,
-  ): TechnicalMessage {
-    return {
-      technical_progress: {
-        architecture_implementation: implementation_update.architecture_status,
-        integration_progress: implementation_update.integration_metrics,
-        testing_results: implementation_update.quality_metrics,
-        performance_benchmarks: implementation_update.performance_data,
-      },
-      implementation_details: {
-        completed_components: implementation_update.delivered_features,
-        current_sprint_focus: implementation_update.active_development,
-        upcoming_deliverables: implementation_update.planned_releases,
-        technical_challenges: implementation_update.technical_risks,
-      },
-      technical_actions: {
-        design_reviews_needed: implementation_update.review_requirements,
-        testing_support: implementation_update.testing_needs,
-        knowledge_sharing: implementation_update.training_requirements,
-        documentation_updates: implementation_update.documentation_needs,
-      },
-    };
-  }
-}
-```
-
-### STAKEHOLDER ENGAGEMENT EXECUTION
-
-#### Relationship Building and Trust Development
-
-**Trust Building Strategy Framework**:
-
-```typescript
-// Trust Building and Relationship Management System
-class TrustBuildingManager {
-  private relationshipTracker: RelationshipTracker;
-  private trustMetrics: TrustMetricsCollector;
-  private engagementOptimizer: EngagementOptimizer;
-
-  implementTrustBuildingStrategy(stakeholder: Stakeholder): TrustBuildingPlan {
-    const currentTrustLevel = this.assessCurrentTrustLevel(stakeholder);
-    const trustGaps = this.identifyTrustGaps(stakeholder);
-
-    return {
-      trust_building_initiatives: this.designTrustInitiatives(trustGaps),
-      relationship_strengthening: this.planRelationshipActivities(stakeholder),
-      credibility_enhancement: this.developCredibilityStrategy(stakeholder),
-      consistency_framework: this.establishConsistencyMeasures(stakeholder),
-    };
-  }
-
-  private designTrustInitiatives(trustGaps: TrustGap[]): TrustInitiative[] {
-    return trustGaps.map((gap) => {
-      switch (gap.type) {
-        case TrustGapType.COMPETENCE:
-          return {
-            initiative_type: "demonstrate_expertise",
-            activities: [
-              "technical_deep_dives",
-              "successful_delivery_showcase",
-              "industry_best_practice_sharing",
-              "thought_leadership_content",
-            ],
-            success_metrics: ["expertise_recognition", "credibility_scores"],
-          };
-
-        case TrustGapType.RELIABILITY:
-          return {
-            initiative_type: "consistency_demonstration",
-            activities: [
-              "commitment_tracking",
-              "regular_update_delivery",
-              "milestone_achievement",
-              "responsive_communication",
-            ],
-            success_metrics: [
-              "commitment_fulfillment",
-              "communication_reliability",
-            ],
-          };
-
-        case TrustGapType.BENEVOLENCE:
-          return {
-            initiative_type: "mutual_benefit_focus",
-            activities: [
-              "stakeholder_benefit_highlighting",
-              "win_win_solution_development",
-              "concern_acknowledgment",
-              "support_offering",
-            ],
-            success_metrics: [
-              "perceived_support",
-              "mutual_benefit_recognition",
-            ],
-          };
-      }
-    });
-  }
-
-  buildRelationshipCapital(stakeholder: Stakeholder): RelationshipCapitalPlan {
-    return {
-      relationship_investment: {
-        one_on_one_meetings: this.scheduleRegularMeetings(stakeholder),
-        personal_connection_building: this.planPersonalConnections(stakeholder),
-        professional_development_support:
-          this.offerProfessionalSupport(stakeholder),
-        recognition_and_appreciation:
-          this.designRecognitionProgram(stakeholder),
-      },
-      value_delivery: {
-        stakeholder_specific_value:
-          this.identifyValueOpportunities(stakeholder),
-        problem_solving_support: this.offerProblemSolvingHelp(stakeholder),
-        resource_sharing: this.planResourceSharing(stakeholder),
-        network_introductions: this.facilitateNetworkConnections(stakeholder),
-      },
-      communication_enhancement: {
-        preferred_communication_adoption:
-          this.adoptPreferredStyles(stakeholder),
-        feedback_responsiveness: this.implementFeedbackLoop(stakeholder),
-        transparency_improvement: this.enhanceTransparency(stakeholder),
-        accessibility_increase: this.improveAccessibility(stakeholder),
-      },
-    };
-  }
-}
-```
-
-#### Feedback Collection and Response Management
-
-**Comprehensive Feedback Management System**:
-
-```typescript
-// Advanced Feedback Collection and Response System
-class FeedbackManagementSystem {
-  private feedbackCollectors: FeedbackCollector[];
-  private sentimentAnalyzer: SentimentAnalyzer;
-  private responseOrchestrator: ResponseOrchestrator;
-
-  implementFeedbackStrategy(
-    stakeholder_groups: StakeholderGroup[],
-  ): FeedbackStrategy {
-    return {
-      collection_mechanisms:
-        this.designCollectionMechanisms(stakeholder_groups),
-      analysis_framework: this.setupAnalysisFramework(),
-      response_protocols: this.establishResponseProtocols(),
-      improvement_integration: this.designImprovementIntegration(),
-    };
-  }
-
-  private designCollectionMechanisms(
-    stakeholder_groups: StakeholderGroup[],
-  ): CollectionMechanism[] {
-    return stakeholder_groups.map((group) => ({
-      stakeholder_group: group.name,
-      collection_methods: {
-        formal_surveys: {
-          frequency: this.determineSurveyFrequency(group),
-          question_types: this.designSurveyQuestions(group),
-          distribution_method: this.selectDistributionMethod(group),
-          response_incentives: this.designIncentives(group),
-        },
-        informal_conversations: {
-          one_on_one_meetings: this.scheduleOneOnOnes(group),
-          group_discussions: this.planGroupSessions(group),
-          casual_interactions: this.facilitateCasualFeedback(group),
-          feedback_champions: this.identifyFeedbackChampions(group),
-        },
-        digital_feedback: {
-          online_forms: this.createOnlineForms(group),
-          collaboration_platforms: this.leverageCollaborationTools(group),
-          social_listening: this.implementSocialListening(group),
-          analytics_tracking: this.setupAnalyticsTracking(group),
-        },
-      },
-    }));
-  }
-
-  processFeedbackAndGenerateInsights(
-    feedback_data: FeedbackData[],
-  ): FeedbackInsights {
-    const sentimentAnalysis =
-      this.sentimentAnalyzer.analyzeSentiment(feedback_data);
-    const themeAnalysis = this.identifyThemes(feedback_data);
-    const priorityAnalysis = this.prioritizeFeedback(feedback_data);
-
-    return {
-      sentiment_trends: sentimentAnalysis.trends,
-      key_themes: themeAnalysis.primary_themes,
-      priority_issues: priorityAnalysis.high_priority_items,
-      stakeholder_satisfaction: this.calculateSatisfactionScores(feedback_data),
-      improvement_opportunities:
-        this.identifyImprovementOpportunities(feedback_data),
-      communication_gaps: this.identifyCommuncationGaps(feedback_data),
-      success_indicators: this.measureSuccessIndicators(feedback_data),
-    };
-  }
-
-  generateResponseStrategy(
-    feedback_insights: FeedbackInsights,
-  ): ResponseStrategy {
-    return {
-      immediate_responses: {
-        acknowledgment_communications:
-          this.draftAcknowledgments(feedback_insights),
-        quick_win_implementations: this.identifyQuickWins(feedback_insights),
-        concern_addressing: this.addressCriticalConcerns(feedback_insights),
-        transparency_enhancements: this.enhanceTransparency(feedback_insights),
-      },
-      systematic_improvements: {
-        process_improvements: this.designProcessImprovements(feedback_insights),
-        communication_enhancements:
-          this.improveCommunication(feedback_insights),
-        relationship_strengthening:
-          this.strengthenRelationships(feedback_insights),
-        value_delivery_optimization:
-          this.optimizeValueDelivery(feedback_insights),
-      },
-      long_term_strategy: {
-        stakeholder_experience_enhancement:
-          this.enhanceStakeholderExperience(feedback_insights),
-        relationship_maturity_development:
-          this.developRelationshipMaturity(feedback_insights),
-        feedback_culture_building: this.buildFeedbackCulture(feedback_insights),
-        continuous_improvement_embedding:
-          this.embedContinuousImprovement(feedback_insights),
-      },
-    };
-  }
-}
-```
-
-### COMMUNICATION EFFECTIVENESS MEASUREMENT
-
-#### Stakeholder Engagement Analytics
-
-**Communication Performance Measurement Framework**:
-
-```typescript
-// Comprehensive Communication Analytics System
-class CommunicationAnalyticsEngine {
-  private engagementTracker: EngagementTracker;
-  private effectivenessCalculator: EffectivenessCalculator;
-  private impactAssessor: ImpactAssessor;
-
-  measureCommunicationEffectiveness(
-    communication_activities: CommunicationActivity[],
-  ): EffectivenessReport {
-    return {
-      reach_metrics: this.calculateReachMetrics(communication_activities),
-      engagement_metrics: this.calculateEngagementMetrics(
-        communication_activities,
-      ),
-      comprehension_metrics: this.assessComprehension(communication_activities),
-      action_metrics: this.measureActionTaken(communication_activities),
-      satisfaction_metrics: this.assessSatisfaction(communication_activities),
-      relationship_metrics: this.evaluateRelationshipImpact(
-        communication_activities,
-      ),
-    };
-  }
-
-  private calculateEngagementMetrics(
-    activities: CommunicationActivity[],
-  ): EngagementMetrics {
-    return {
-      participation_rates: {
-        meeting_attendance: this.calculateMeetingAttendance(activities),
-        survey_response_rates: this.calculateSurveyResponses(activities),
-        feedback_submission_rates: this.calculateFeedbackRates(activities),
-        voluntary_engagement: this.measureVoluntaryEngagement(activities),
-      },
-      interaction_quality: {
-        question_asking_frequency: this.measureQuestionAsking(activities),
-        discussion_participation:
-          this.assessDiscussionParticipation(activities),
-        content_sharing: this.trackContentSharing(activities),
-        peer_collaboration: this.measurePeerCollaboration(activities),
-      },
-      stakeholder_initiative: {
-        proactive_communication: this.trackProactiveCommunication(activities),
-        suggestion_submissions: this.countSuggestions(activities),
-        problem_reporting: this.trackProblemReporting(activities),
-        improvement_contributions: this.measureContributions(activities),
-      },
-    };
-  }
-
-  generateStakeholderSatisfactionReport(
-    stakeholder_groups: StakeholderGroup[],
-  ): SatisfactionReport {
-    return stakeholder_groups.map((group) => ({
-      stakeholder_group: group.name,
-      overall_satisfaction: this.calculateOverallSatisfaction(group),
-      communication_quality: {
-        clarity_score: this.assessClarity(group),
-        relevance_score: this.assessRelevance(group),
-        timeliness_score: this.assessTimeliness(group),
-        completeness_score: this.assessCompleteness(group),
-      },
-      relationship_quality: {
-        trust_level: this.measureTrustLevel(group),
-        responsiveness_satisfaction: this.assessResponsiveness(group),
-        accessibility_satisfaction: this.assessAccessibility(group),
-        value_perception: this.measureValuePerception(group),
-      },
-      improvement_areas: {
-        priority_improvements: this.identifyPriorityImprovements(group),
-        communication_gaps: this.identifyGaps(group),
-        unmet_needs: this.identifyUnmetNeeds(group),
-        enhancement_opportunities: this.identifyEnhancements(group),
-      },
-    }));
-  }
-}
-```
-
-#### Continuous Improvement Framework
-
-**Communication Strategy Evolution System**:
-
-```typescript
-// Adaptive Communication Strategy Manager
-class AdaptiveCommunicationManager {
-  private performanceAnalyzer: PerformanceAnalyzer;
-  private strategyOptimizer: StrategyOptimizer;
-  private learningEngine: LearningEngine;
-
-  implementContinuousImprovement(
-    communication_strategy: CommunicationStrategy,
-  ): ImprovementPlan {
-    const performance_analysis = this.performanceAnalyzer.analyzePerformance(
-      communication_strategy,
-    );
-    const improvement_opportunities =
-      this.identifyImprovementOpportunities(performance_analysis);
-
-    return {
-      strategy_optimizations: this.optimizeStrategy(improvement_opportunities),
-      process_improvements: this.improveProcesses(improvement_opportunities),
-      tool_enhancements: this.enhanceTools(improvement_opportunities),
-      capability_development: this.developCapabilities(
-        improvement_opportunities,
-      ),
-    };
-  }
-
-  private optimizeStrategy(
-    opportunities: ImprovementOpportunity[],
-  ): StrategyOptimization[] {
-    return opportunities.map((opportunity) => {
-      switch (opportunity.category) {
-        case "stakeholder_segmentation":
-          return {
-            optimization_type: "segmentation_refinement",
-            actions: [
-              "micro_segmentation_implementation",
-              "persona_development_enhancement",
-              "preference_mapping_improvement",
-              "behavior_pattern_analysis",
-            ],
-            expected_impact: "increased_relevance_and_engagement",
-          };
-
-        case "message_effectiveness":
-          return {
-            optimization_type: "message_optimization",
-            actions: [
-              "a_b_testing_implementation",
-              "message_personalization_enhancement",
-              "storytelling_integration",
-              "visual_communication_improvement",
-            ],
-            expected_impact: "improved_comprehension_and_action",
-          };
-
-        case "channel_optimization":
-          return {
-            optimization_type: "channel_strategy_enhancement",
-            actions: [
-              "omnichannel_integration",
-              "channel_preference_optimization",
-              "emerging_channel_adoption",
-              "channel_effectiveness_optimization",
-            ],
-            expected_impact: "better_reach_and_engagement",
-          };
-
-        case "feedback_integration":
-          return {
-            optimization_type: "feedback_loop_enhancement",
-            actions: [
-              "real_time_feedback_implementation",
-              "sentiment_analysis_integration",
-              "predictive_feedback_analysis",
-              "automated_response_systems",
-            ],
-            expected_impact: "faster_adaptation_and_improvement",
-          };
-      }
-    });
-  }
-}
-```
-
-## Usage Instructions
-
-1. Begin with comprehensive stakeholder analysis and mapping to understand ecosystem complexity
-2. Design segmented communication strategies tailored to each stakeholder group's needs
-3. Develop multi-channel communication plans with integrated message frameworks
-4. Implement systematic engagement strategies focused on relationship building and trust
-5. Establish robust feedback collection and response mechanisms
-6. Deploy communication effectiveness measurement and analytics systems
-7. Create continuous improvement processes for strategy optimization
-8. Build long-term stakeholder relationship management capabilities
-
-## Examples
-
-### Example 1: Merger and Acquisition Communication
-
-**Input**:
+### Influence/Interest Grid
 
 ```
-{{stakeholder_scope}}: Mixed internal and external stakeholders across two organizations
-{{stakeholder_complexity}}: Highly complex with competing interests and cultural differences
-{{communication_urgency}}: Critical - time-sensitive integration communication
-{{relationship_status}}: New relationships with existing organizational loyalties
-{{change_impact}}: Transformational change affecting all stakeholders
+HIGH INFLUENCE
+    │
+CFO │ CEO
+    │ 
+----┼---- High Interest →
+    │
+Sales VP │ IT Director
+    │
+LOW INFLUENCE
 ```
 
-**Output**: [Merger communication strategy with change management integration, cultural sensitivity, stakeholder alignment, and integration-focused messaging]
+**Engagement Strategies:**
+- **CEO (High/High)**: Manage closely - Regular updates, strategic alignment
+- **CFO (High/Medium)**: Keep satisfied - ROI focus, risk mitigation  
+- **Sales VP (Medium/High)**: Keep informed - Address concerns, build buy-in
+- **IT Director (Low/High)**: Keep informed - Technical champion, but manage expectations
 
-### Example 2: Product Launch Stakeholder Engagement
+## COMMUNICATION PLAN
 
-**Input**:
+### Phase 1: Immediate (Next 2 weeks)
 
-```
-{{stakeholder_scope}}: Global stakeholders across multiple market segments
-{{communication_frequency}}: Continuous engagement throughout launch cycle
-{{stakeholder_influence}}: High influence customers, partners, and industry analysts
-{{cultural_context}}: International markets with diverse cultural considerations
-{{success_criticality}}: Business critical - market entry success dependent
-```
+**CFO Engagement - Convert Skeptic to Supporter**
+- **When**: Schedule 1-hour meeting this week
+- **Format**: Detailed ROI presentation with sensitivity analysis
+- **Key Messages**: 
+  - 3-year ROI of 287% based on similar implementations
+  - Risk mitigation through phased rollout
+  - Cost control measures and approval gates
+- **Materials**: Financial model, benchmark data, risk register
 
-**Output**: [Product launch communication strategy with market-specific messaging, influencer engagement, cultural adaptation, and launch orchestration]
+**Sales VP Alignment - Address Concerns**
+- **When**: Coffee meeting this week (informal)
+- **Format**: Conversational, listening-focused
+- **Key Messages**:
+  - Team productivity improvements (30% less admin time)
+  - Gradual rollout with team input
+  - Success stories from similar companies
+- **Follow-up**: Workshop with sales leaders
+
+### Phase 2: Building Momentum (Weeks 3-4)
+
+**CEO Strategic Update**
+- **When**: 30-minute slot in leadership meeting
+- **Format**: Executive dashboard format
+- **Key Messages**:
+  - Progress against growth objectives
+  - Competitive advantage gained
+  - Quick wins achieved
+- **Ask**: Visible sponsorship message to organization
+
+**Coalition Building**
+- **Sales-IT Bridge**: Facilitate joint design session
+- **Finance Integration**: Include CFO's trusted analyst in planning
+- **Champion Network**: Identify sales team early adopters
+
+## MESSAGE FRAMEWORKS
+
+### For CFO (ROI-Focused)
+**Opening**: "I've analyzed the financial impact of the CRM investment..."
+**Core Message**:
+- Initial investment: $500K additional
+- Year 1 savings: $200K (process efficiency)
+- Year 2 revenue impact: $1.2M (improved conversion)
+- Break-even: Month 14
+- 3-year NPV: $1.8M
+
+**Addressing Concerns**:
+- "Phase gates at 30/60/90 days for cost control"
+- "Similar companies averaged 250-300% ROI"
+- "Finance team will have real-time spend visibility"
+
+### For Sales VP (Team-Focused)
+**Opening**: "I want to ensure this makes your team's life easier..."
+**Core Message**:
+- Reduces admin time by 5 hours/week per rep
+- Automated reporting frees up selling time
+- Mobile access for field sales
+- Team input drives design decisions
+
+**Addressing Concerns**:
+- "Pilot with volunteer team first"
+- "Full training before any rollout"
+- "Your team defines success metrics"
+
+### For CEO (Strategic)
+**Opening**: "CRM implementation directly supports our growth strategy..."
+**Core Message**:
+- Enables 30% revenue growth target
+- Competitive parity → competitive advantage
+- Real-time visibility into pipeline
+- Foundation for AI-driven insights
+
+## ENGAGEMENT TACTICS
+
+### Managing CFO Skepticism
+1. **Pre-meeting**: Send detailed analysis 2 days prior
+2. **During meeting**: 
+   - Lead with financial impact
+   - Show conservative projections
+   - Acknowledge risks upfront
+   - Offer phased approval approach
+3. **Post-meeting**: Weekly cost/benefit updates
+
+### Building Sales VP Buy-in
+1. **Listen First**: Understand specific team concerns
+2. **Co-create Solutions**: Involve in design decisions
+3. **Show Early Wins**: Pilot team success stories
+4. **Peer Influence**: Connect with other Sales VPs who've succeeded
+
+### Leveraging CEO Support
+1. **Strategic Alignment**: Link every update to growth goals
+2. **Executive Dashboard**: Weekly one-page status
+3. **Escalation Path**: Use sparingly but effectively
+4. **Visibility Requests**: CEO communications about importance
+
+### Managing Sales-IT Tension
+1. **Separate Initial Meetings**: Build trust individually
+2. **Focus on Shared Goals**: Customer experience improvement
+3. **Neutral Facilitator**: For joint sessions
+4. **Celebrate Joint Wins**: Publicly recognize collaboration
+
+## SUCCESS METRICS
+
+### Communication Effectiveness KPIs
+
+**Week 2 Checkpoint:**
+- CFO meeting scheduled and completed ✓
+- Sales VP concerns documented ✓
+- Initial coalition formed ✓
+
+**Month 1 Targets:**
+- CFO stance: Skeptical → Cautiously Supportive
+- Sales VP: Neutral → Engaged
+- CEO: Supportive → Active Champion
+- Cross-functional collaboration initiated
+
+**Project Milestone Metrics:**
+- Stakeholder satisfaction score: >4/5
+- Meeting attendance rate: >90%
+- Decision turnaround time: <3 days
+- Escalations required: <2/month
+
+### Red Flags to Monitor
+- CFO raises new objections → Immediate 1:1
+- Sales VP misses meetings → Check in on concerns
+- IT-Sales tension escalates → Mediation needed
+- CEO questions progress → Realign on strategy
+
+This strategy positions you to navigate the political dynamics while building the coalition needed for success. Start with the CFO engagement - converting your biggest skeptic early will smooth the entire journey.
 
 ## Related Prompts
 
-- [Executive Communication Specialist](/prompts/communication/executive-briefing.md)
-- [Change Management Communication Expert](/prompts/communication/change-communication.md)
-- [Customer Communication Strategist](/prompts/communication/customer-communication.md)
-
-## Research Notes
-
-- Based on stakeholder engagement theory and strategic communication best practices
-- Integrates relationship management with systematic communication planning
-- Emphasizes trust building and long-term relationship development
-- Focuses on measurable communication outcomes with continuous improvement
-- Balances stakeholder satisfaction with organizational objectives and constraints
+- [Executive Communication Expert](./executive-communication-expert.md)
+- [Change Communication Specialist](./change-communication-specialist.md)
+- [Meeting Facilitation Expert](./meeting-facilitation-expert.md)

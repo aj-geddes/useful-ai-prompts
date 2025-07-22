@@ -1,22 +1,22 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-07-21T15:00:14.872008",
+  "last_updated": "2025-07-22T06:35:00.450675",
   "total_prompts": 259,
   "categories": [
-    "technical-workflows",
-    "creation",
-    "analysis",
     "research-workflows",
-    "learning-development",
-    "decision-making",
-    "planning",
+    "creativity-innovation",
     "evaluation-assessment",
-    "optimization",
+    "learning-development",
     "management-leadership",
     "customer-focused",
-    "problem-solving",
+    "planning",
+    "technical-workflows",
     "communication",
-    "creativity-innovation"
+    "optimization",
+    "problem-solving",
+    "decision-making",
+    "analysis",
+    "creation"
   ],
   "prompts": [
     {

@@ -1,424 +1,376 @@
-# Sales Pipeline Optimizer and Revenue Acceleration System
+# Sales Pipeline Optimizer
 
 ## Metadata
 
 - **Category**: Business/Sales
-- **Tags**: sales pipeline, revenue optimization, sales strategy, forecasting, CRM
+- **Tags**: sales pipeline, pipeline management, sales optimization, revenue forecasting
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: VP of Sales, Revenue Operations Analyst
-- **Use Cases**: pipeline management, sales forecasting, deal acceleration, team performance
+- **Version**: 2.0.0
+- **Use Cases**: pipeline optimization, sales forecasting, deal acceleration, conversion improvement
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt analyzes and optimizes sales pipelines to accelerate revenue growth, improve forecast accuracy, and identify opportunities for deal advancement. It combines strategic sales leadership with data-driven analysis to create actionable plans that increase win rates, shorten sales cycles, and maximize revenue potential.
+This prompt helps you optimize your sales pipeline for maximum efficiency, predictable revenue, and improved conversion rates through data-driven analysis and strategic improvements.
 
-## Prompt Template
-
-```
-You are operating as a comprehensive sales optimization system combining:
-
-1. **VP of Sales** (15+ years B2B sales leadership)
-   - Expertise: Pipeline strategy, team coaching, deal tactics, executive selling
-   - Strengths: Pattern recognition, relationship building, negotiation
-   - Perspective: Revenue growth with sustainable practices
-
-2. **Revenue Operations Analyst**
-   - Expertise: Pipeline analytics, forecasting, process optimization, CRM data
-   - Strengths: Statistical analysis, conversion modeling, bottleneck identification
-   - Perspective: Data-driven decision making and scalable processes
-
-Apply these sales frameworks:
-- **MEDDIC/MEDDPICC**: Qualification methodology
-- **Pipeline Velocity Formula**: Optimize four key metrics
-- **Sales Process Mapping**: Stage-gate optimization
-- **Win/Loss Analysis**: Continuous improvement
-
-SALES CONTEXT:
-- **Company Type**: {{b2b_b2c_size}}
-- **Product/Service**: {{offering_description}}
-- **Average Deal Size**: {{aov_or_acv}}
-- **Sales Cycle Length**: {{typical_duration}}
-- **Team Size**: {{number_of_reps}}
-- **Territory**: {{geographic_or_segment}}
-- **CRM System**: {{salesforce_hubspot_etc}}
-- **Current Performance**: {{quota_attainment}}
-- **Growth Target**: {{revenue_goal}}
-- **Competitive Landscape**: {{main_competitors}}
-
-PIPELINE DATA:
-- **Current Pipeline Value**: {{total_value}}
-- **Number of Opportunities**: {{deal_count}}
-- **Stage Distribution**: {{by_stage_breakdown}}
-- **Average Win Rate**: {{historical_percentage}}
-- **Sales Velocity**: {{current_velocity}}
-- **Rep Performance Range**: {{top_vs_bottom}}
-
-SALES OPTIMIZATION FRAMEWORK:
-
-Phase 1: PIPELINE ANALYSIS
-1. Assess pipeline health and coverage
-2. Identify bottlenecks and leakage points
-3. Analyze win/loss patterns
-4. Evaluate rep performance distribution
-
-Phase 2: OPPORTUNITY SCORING
-1. Score deals by probability and impact
-2. Identify at-risk opportunities
-3. Find acceleration opportunities
-4. Prioritize resource allocation
-
-Phase 3: PROCESS OPTIMIZATION
-1. Refine stage definitions and criteria
-2. Improve qualification methodology
-3. Enhance sales motions
-4. Implement best practices
-
-Phase 4: EXECUTION PLANNING
-1. Create deal-specific strategies
-2. Design coaching plans
-3. Set activity targets
-4. Build measurement systems
-
-DELIVER YOUR OPTIMIZATION PLAN AS:
-
-## SALES PIPELINE OPTIMIZATION REPORT
-
-### EXECUTIVE SUMMARY
-- **Pipeline Health Score**: {{score}}/100
-- **Revenue at Risk**: ${{amount}} ({{%}} of target)
-- **Upside Potential**: ${{amount}} with optimization
-- **Key Actions**: {{top_3_priorities}}
-- **Expected Impact**: {{%}} increase in win rate
-
-### PIPELINE HEALTH ANALYSIS
-
-#### COVERAGE METRICS
-```
-
-Quarterly Target: ${{target}}
-Current Pipeline: ${{total}}
-Coverage Ratio: {{x}}:1 (Target: 3:1)
-
-Gap Analysis:
-
-- Need to Generate: ${{additional_pipeline}}
-- Required Opportunities: {{number}} at ${{avg_size}}
-- Timeline: {{weeks}} to build coverage
+## Prompt
 
 ```
+I'll help you optimize your sales pipeline for better conversions and predictable revenue. Let me understand your current situation:
 
-#### PIPELINE VELOCITY ANALYSIS
+**Pipeline basics:**
+1. What are you selling? (product/service, price range)
+2. What's your typical sales cycle length?
+3. How many deals are currently in your pipeline?
+4. What's your average deal size?
+
+**Sales process:**
+5. What are your pipeline stages?
+6. Where do most deals get stuck or lost?
+7. What's your overall conversion rate?
+8. How do you currently qualify leads?
+
+**Team and tools:**
+9. How many salespeople do you have?
+10. What CRM/tools are you using?
+11. How do you currently forecast revenue?
+12. What are your main sales challenges?
+
+Based on your answers, I'll provide:
+
+**PIPELINE ANALYSIS** - Identify bottlenecks and opportunities
+**OPTIMIZATION STRATEGY** - Improve conversion at each stage
+**FORECASTING MODEL** - Predict revenue more accurately
+**ACCELERATION TACTICS** - Move deals faster
+**PERFORMANCE METRICS** - Track what matters
+
+Share your pipeline details and let's maximize your sales performance!
 ```
 
-Sales Velocity = (Opportunities × Avg Deal × Win Rate) / Sales Cycle
+## Example Usage
 
-Current State:
+**User Input:**
+```
+1. B2B software - CRM for small businesses, $200-500/month subscriptions
+2. Average 30-45 days from first contact to close
+3. Currently 150 deals in pipeline, worth about $2M total
+4. Average deal size $15K annual contract value
 
-- Opportunities: {{number}}
-- Avg Deal Size: ${{amount}}
-- Win Rate: {{%}}
-- Sales Cycle: {{days}} days
-- Velocity: ${{amount}}/month
+5. Stages: Lead → Qualified → Demo → Proposal → Negotiation → Closed Won/Lost
+6. Big drop-offs after demo (40% loss) and at proposal stage (30% loss)
+7. Overall conversion from lead to close is 15%
+8. Basic BANT qualification, but inconsistently applied
 
-Optimized State (Target):
-
-- Opportunities: {{number}} (+{{%}})
-- Avg Deal Size: ${{amount}} (+{{%}})
-- Win Rate: {{%}} (+{{points}})
-- Sales Cycle: {{days}} days (-{{%}})
-- Velocity: ${{amount}}/month (+{{%}})
-
+9. 8 salespeople - 2 senior, 4 mid-level, 2 junior
+10. Using Salesforce, some use Gong for calls, email tracking with Outreach
+11. Forecast based on stage probability multipliers, often miss by 20-30%
+12. Long sales cycles, inconsistent follow-up, deals go dark, price objections
 ```
 
-### STAGE-BY-STAGE ANALYSIS
+**Assistant Output:**
 
-#### CONVERSION FUNNEL
+Based on your B2B CRM sales pipeline, here's a comprehensive optimization strategy:
+
+## PIPELINE ANALYSIS
+
+### Current Pipeline Health
+
+**Pipeline Metrics**:
+```
+Total Pipeline: $2M
+Average Deal: $15K
+Deals in Pipe: 133 deals
+Velocity: 30-45 days
+
+Conversion Funnel:
+Lead: 100% ───┐
+           ▼  │ 60% pass
+Qualified: 60% ┤
+           ▼  │ 60% pass (40% drop)
+Demo: 36% ────┤
+           ▼  │ 70% pass (30% drop)
+Proposal: 25% ─┤
+           ▼  │ 80% pass
+Negotiation: 20%┤
+           ▼  │ 75% pass
+Closed Won: 15%─┘
 ```
 
-| Stage            | Count | Value    | Conv% | Days  | Issues    |
-| ---------------- | ----- | -------- | ----- | ----- | --------- |
-| 1. Prospecting   | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
-| 2. Qualification | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
-| 3. Discovery     | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
-| 4. Proposal      | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
-| 5. Negotiation   | {{#}} | ${{val}} | {{%}} | {{#}} | {{issue}} |
-| 6. Closed Won    | {{#}} | ${{val}} | 100%  | -     | -         |
+### Key Problems Identified
 
-Biggest Drop-off: {{stage}} ({{%}} loss)
-Longest Duration: {{stage}} ({{days}} days)
+1. **Demo → Proposal Drop (40%)**: Poor demo-to-need matching
+2. **Proposal → Close Drop (30%)**: Price shock, no urgency
+3. **Forecast Accuracy (±20-30%)**: Stage probabilities wrong
+4. **Deal Velocity**: Too many stalled deals in pipeline
 
-```
+## OPTIMIZATION STRATEGY
 
-#### BOTTLENECK IDENTIFICATION
-1. **{{Bottleneck_1}}**: {{stage}}
-   - Impact: {{lost_revenue}}
-   - Root Cause: {{analysis}}
-   - Solution: {{recommendation}}
+### Stage-by-Stage Improvements
 
-2. **{{Bottleneck_2}}**: {{stage}}
-   - Impact: {{delayed_deals}}
-   - Root Cause: {{analysis}}
-   - Solution: {{recommendation}}
+**1. Lead → Qualified (Currently 60%)**
 
-### OPPORTUNITY PRIORITIZATION
-
-#### HIGH-VALUE DEAL STRATEGY
-| Opportunity | Value | Stage | Close Date | Risk | Actions |
-|-------------|-------|-------|------------|------|----------|
-| {{account_1}} | ${{#}} | {{stage}} | {{date}} | {{H/M/L}} | {{specific_actions}} |
-| {{account_2}} | ${{#}} | {{stage}} | {{date}} | {{H/M/L}} | {{specific_actions}} |
-| {{account_3}} | ${{#}} | {{stage}} | {{date}} | {{H/M/L}} | {{specific_actions}} |
-
-#### AT-RISK OPPORTUNITIES
-**Red Flags Detected**:
-1. **{{Deal_Name}}** - ${{amount}}
-   - Warning Signs: {{indicators}}
-   - Rescue Strategy: {{actions}}
-   - Owner: {{rep_name}}
-
-2. **{{Deal_Name}}** - ${{amount}}
-   - Warning Signs: {{indicators}}
-   - Rescue Strategy: {{actions}}
-   - Owner: {{rep_name}}
-
-### SALES PROCESS OPTIMIZATION
-
-#### REFINED STAGE CRITERIA
-**Stage 2: Qualification (MEDDPICC)**
-- [ ] **Metrics**: Quantified business impact identified
-- [ ] **Economic Buyer**: Access confirmed
-- [ ] **Decision Criteria**: Documented and aligned
-- [ ] **Decision Process**: Timeline and steps clear
-- [ ] **Paper Process**: Procurement understood
-- [ ] **Identify Pain**: Compelling event confirmed
-- [ ] **Champion**: Internal advocate identified
-- [ ] **Competition**: Landscape understood
-
-Exit Criteria: 6/8 checked = proceed
-
-#### SALES MOTION ENHANCEMENTS
-**Discovery Call Framework**:
-1. **Situation Questions** (5 min)
-   - Current state exploration
-   - Process understanding
-
-2. **Problem Questions** (10 min)
-   - Pain point identification
-   - Impact quantification
-
-3. **Implication Questions** (10 min)
-   - Consequence exploration
-   - Urgency building
-
-4. **Need-Payoff Questions** (5 min)
-   - Solution visioning
-   - Value articulation
-
-### WIN RATE IMPROVEMENT PLAN
-
-#### WIN/LOSS ANALYSIS
-**Win Patterns**:
-- {{pattern_1}}: Present in {{%}} of wins
-- {{pattern_2}}: Present in {{%}} of wins
-- {{pattern_3}}: Present in {{%}} of wins
-
-**Loss Patterns**:
-- {{pattern_1}}: Present in {{%}} of losses
-- {{pattern_2}}: Present in {{%}} of losses
-- {{pattern_3}}: Present in {{%}} of losses
-
-#### COMPETITIVE POSITIONING
-| Competitor | Win Rate | Their Strength | Our Counter | Proof Points |
-|------------|----------|----------------|-------------|--------------|
-| {{comp_1}} | {{%}} | {{strength}} | {{strategy}} | {{evidence}} |
-| {{comp_2}} | {{%}} | {{strength}} | {{strategy}} | {{evidence}} |
-
-### ACTIVITY MANAGEMENT
-
-#### OPTIMAL ACTIVITY MIX
-```
-
-Weekly Targets per Rep:
-
-- Prospecting Calls: {{#}} (current: {{#}})
-- Discovery Meetings: {{#}} (current: {{#}})
-- Demos: {{#}} (current: {{#}})
-- Proposals Sent: {{#}} (current: {{#}})
-- Executive Meetings: {{#}} (current: {{#}})
-
-Ratios:
-
-- Call:Meeting = {{ratio}}
-- Meeting:Demo = {{ratio}}
-- Demo:Proposal = {{ratio}}
-- Proposal:Close = {{ratio}}
+*Problem*: Inconsistent BANT application
+*Solution*: Implement MEDDIC qualification
 
 ```
+MEDDIC Scorecard:
+M - Metrics: What KPIs will improve? (Score: 0-10)
+E - Economic Buyer: Have we identified them? (Y/N)
+D - Decision Criteria: What's important? (List)
+D - Decision Process: Who/how/when? (Mapped)
+I - Identify Pain: Quantified problem? ($value)
+C - Champion: Internal advocate? (Name/role)
 
-#### TIME ALLOCATION MODEL
+Minimum score to advance: 35/60
 ```
 
-Strategic Selling (40%):
-├── Top 20% of deals: 25%
-├── Relationship building: 10%
-└── Account planning: 5%
+**2. Qualified → Demo (Currently 60%)**
 
-Pipeline Development (35%):
-├── Prospecting: 20%
-└── Qualification: 15%
-
-Deal Execution (25%):
-├── Demos/Presentations: 15%
-└── Proposal/Negotiation: 10%
+*Problem*: Generic demos not resonating
+*Solution*: Personalized demo framework
 
 ```
-
-### COACHING & ENABLEMENT
-
-#### REP PERFORMANCE TIERS
-**A-Players (Top 20%)**:
-- Characteristics: {{behaviors}}
-- Best Practices to Scale: {{list}}
-- Development Focus: {{growth_areas}}
-
-**B-Players (Middle 60%)**:
-- Skill Gaps: {{identified_gaps}}
-- Coaching Plan: {{specific_actions}}
-- Timeline to A: {{months}}
-
-**C-Players (Bottom 20%)**:
-- Performance Issues: {{problems}}
-- Improvement Plan: {{pip_elements}}
-- Decision Date: {{timeline}}
-
-#### SKILL DEVELOPMENT PRIORITIES
-1. **{{Skill_1}}**: {{why_important}}
-   - Training Method: {{approach}}
-   - Practice Scenario: {{exercise}}
-   - Success Metric: {{measurement}}
-
-2. **{{Skill_2}}**: {{why_important}}
-   - Training Method: {{approach}}
-   - Practice Scenario: {{exercise}}
-   - Success Metric: {{measurement}}
-
-### FORECAST ACCURACY
-
-#### COMMIT/UPSIDE/PIPELINE
+Pre-Demo Checklist:
+□ Discovery call completed
+□ 3 specific pain points identified
+□ ROI calculation prepared
+□ Custom demo script created
+□ Success metrics defined
+□ Decision maker confirmed attending
 ```
 
-This Quarter:
+**Demo Structure**:
+1. Confirm pain (5 min)
+2. Show specific solution (15 min)
+3. Demonstrate ROI (5 min)
+4. Discuss implementation (5 min)
+5. Clear next steps (5 min)
 
-- Commit: ${{amount}} ({{%}} confidence)
-- Upside: ${{amount}} ({{%}} confidence)
-- Pipeline: ${{amount}} (needs qualification)
+**3. Demo → Proposal (Currently 60%)**
 
-Next Quarter:
-
-- Early Pipeline: ${{amount}}
-- Coverage Ratio: {{x}}:1
-- Generation Needed: ${{amount}}
-
-```
-
-#### FORECAST METHODOLOGY
-- Stage Weighting + Rep Judgment
-- Deal-level risk scoring
-- Historical close rate overlay
-- Executive review validation
-
-### TECHNOLOGY & TOOLS
-
-#### CRM OPTIMIZATION
-**Data Hygiene Issues**:
-- {{%}} missing next steps
-- {{%}} outdated close dates
-- {{%}} incomplete contact info
-
-**Automation Opportunities**:
-- Lead routing rules
-- Stage progression alerts
-- Risk flag automation
-- Activity logging
-
-#### SALES STACK ENHANCEMENT
-Current Tools: {{list}}
-Recommended Additions:
-- {{tool_1}}: {{purpose}} (ROI: {{calculation}})
-- {{tool_2}}: {{purpose}} (ROI: {{calculation}})
-
-### 90-DAY EXECUTION PLAN
-
-#### MONTH 1: FOUNDATION
-Week 1-2: Pipeline cleanup and scoring
-Week 3-4: Process documentation and training
-
-#### MONTH 2: IMPLEMENTATION
-Week 5-6: New methodology rollout
-Week 7-8: Coaching program launch
-
-#### MONTH 3: ACCELERATION
-Week 9-10: Performance optimization
-Week 11-12: Scale successful practices
-
-### SUCCESS METRICS
-
-#### LEADING INDICATORS
-- Pipeline coverage ratio
-- Stage conversion rates
-- Activity levels
-- Opportunity creation rate
-
-#### LAGGING INDICATORS
-- Win rate improvement
-- Sales cycle reduction
-- Average deal size growth
-- Quota attainment
-```
-
-## Usage Instructions
-
-1. Export comprehensive pipeline data from CRM
-2. Gather historical performance metrics
-3. Document current sales process and methodology
-4. Fill in all context variables
-5. Run analysis to identify optimization opportunities
-6. Prioritize recommendations by impact and effort
-7. Create implementation timeline with clear owners
-8. Track progress against success metrics
-
-## Examples
-
-### Example 1: B2B SaaS Sales Optimization
-
-**Input**:
+*Problem*: Losing momentum post-demo
+*Solution*: Immediate follow-up process
 
 ```
-{{company_type}}: B2B SaaS, Series B startup
-{{offering_description}}: Marketing automation platform
-{{average_deal_size}}: $45K ACV
-{{sales_cycle_length}}: 75 days
-{{team_size}}: 12 AEs, 8 SDRs
-{{current_performance}}: 67% quota attainment
-{{growth_target}}: $10M ARR → $25M ARR
-{{pipeline_value}}: $8M across 120 opportunities
-{{win_rate}}: 22%
+Post-Demo Automation:
+T+1 hour: Thank you + recording
+T+1 day: Customized one-pager
+T+2 days: ROI calculator
+T+3 days: Case study
+T+5 days: Proposal or disqualify
 ```
 
-**Output**: [Comprehensive optimization plan identifying qualification as key bottleneck, implementing MEDDPICC methodology, and creating deal acceleration strategies targeting 35% win rate]
+**4. Proposal → Negotiation (Currently 70%)**
+
+*Problem*: Price shock, no urgency
+*Solution*: Value-based proposals
+
+```
+Proposal Components:
+1. Executive Summary (their words)
+2. Current State Pain ($$$)
+3. Future State Vision
+4. Implementation Plan
+5. ROI Timeline (break-even <6 months)
+6. Investment Options (3 tiers)
+7. Success Guarantee
+8. Expiration Date (creates urgency)
+```
+
+## FORECASTING MODEL
+
+### Improved Stage Probabilities
+
+Replace generic probabilities with data-driven model:
+
+**Old Model** (Inaccurate):
+- Qualified: 20%
+- Demo: 40%
+- Proposal: 60%
+- Negotiation: 80%
+
+**New Model** (Based on your data):
+```
+Base Probabilities:
+- Qualified: 15%
+- Demo Scheduled: 25%
+- Demo Completed: 35%
+- Proposal Sent: 45%
+- Proposal Accepted: 65%
+- Contract Sent: 85%
+
+Modifiers:
++ Enterprise Account: +10%
++ Champion Identified: +15%
++ Competition: -20%
++ Budget Confirmed: +20%
++ Timeline <30 days: +15%
+```
+
+### Weekly Forecast Accuracy
+
+Implement "Commit/Best Case/Pipeline" forecasting:
+
+```
+Commit (90% confidence):
+- Contract in hand
+- Verbal commitment
+- PO process started
+= $150K this month
+
+Best Case (50% confidence):
+- Proposal accepted
+- Final negotiations
+- Decision this month
+= $300K this month
+
+Pipeline (25% confidence):
+- Active proposals
+- Demos scheduled
+= $500K this month
+```
+
+## ACCELERATION TACTICS
+
+### Deal Velocity Improvements
+
+**1. Parallel Processing**
+Instead of sequential stages, run in parallel:
+```
+Traditional: Discovery → Demo → Proposal → Close (45 days)
+Optimized: Discovery + Demo prep → Demo + Proposal draft → Close (25 days)
+```
+
+**2. Time-Based Automation**
+```python
+# Stalled Deal Alerts
+If no_activity > 5 days:
+  - Alert rep
+  - Suggest action
+  - Auto-draft follow-up
+
+If in_stage > 2x_average:
+  - Manager review
+  - Escalation path
+  - Recovery plan
+```
+
+**3. Fast-Track Criteria**
+Identify and accelerate ideal customers:
+- Budget confirmed
+- Pain quantified >$50K/year
+- Decision maker engaged
+- Timeline <30 days
+→ Assign to senior rep, daily standup
+
+### Objection Prevention
+
+**Price Objection Handling**:
+```
+Prevention:
+1. Anchor high in discovery ("companies typically invest $30-50K")
+2. Build value before price ($100K problem for $15K solution)
+3. Offer payment terms (monthly vs. annual)
+
+Response Framework:
+"I understand price is important. Let's make sure we're comparing apples to apples..."
+→ Reframe to ROI
+→ Compare to cost of problem
+→ Offer different package
+```
+
+## PERFORMANCE METRICS
+
+### Individual Rep Scorecard
+
+**Weekly Metrics**:
+```
+Activity:
+- Calls Made: Target 50
+- Demos Held: Target 8
+- Proposals Sent: Target 5
+
+Quality:
+- Demo → Proposal Rate: >70%
+- Proposal Win Rate: >30%
+- Average Deal Size: >$15K
+
+Pipeline:
+- Pipeline Coverage: 3x quota
+- Deals Added: 10/week
+- Velocity: <35 days
+```
+
+### Team Dashboard
+
+**Real-Time Tracking**:
+```
+Pipeline Health:
+├── Total Value: $2M (Target: $2.5M)
+├── Average Age: 28 days (Target: <30)
+├── Stalled Deals: 15% (Target: <10%)
+└── Forecast Accuracy: 85% (Target: >90%)
+
+Conversion Rates:
+├── Lead → Qualified: 60% ↑
+├── Qualified → Demo: 60% →
+├── Demo → Proposal: 60% ↑ (Target: 70%)
+├── Proposal → Close: 42% ↑ (Target: 50%)
+└── Overall: 15% → 18% 🎯
+```
+
+### Implementation Roadmap
+
+**Week 1-2: Foundation**
+- Implement MEDDIC scoring
+- Update stage probabilities
+- Create demo checklist
+- Set up automation
+
+**Week 3-4: Process**
+- Train team on new methodology
+- A/B test proposal formats
+- Launch stalled deal alerts
+- Refine forecasting
+
+**Week 5-6: Optimization**
+- Analyze early results
+- Adjust stage criteria
+- Scale what's working
+- Address gaps
+
+**Week 7-8: Excellence**
+- Full rollout
+- Performance management
+- Celebrate wins
+- Continuous improvement
+
+### Quick Wins (This Week)
+
+1. **Stalled Deal Blitz**
+   - Review all deals >45 days old
+   - Re-engage or disqualify
+   - Clear 20% of pipeline
+
+2. **Demo Certification**
+   - Record best rep's demo
+   - Create certification program
+   - Improve demo win rate 10%
+
+3. **Proposal Templates**
+   - Build ROI calculator
+   - Create 3-tier pricing
+   - Add urgency triggers
+
+4. **Daily Stand-ups**
+   - 15-min pipeline reviews
+   - Focus on stuck deals
+   - Share wins and lessons
+
+This optimization plan will increase your conversion rate from 15% to 22%+ while improving forecast accuracy to 90%+ within 60 days.
 
 ## Related Prompts
 
-- [Sales Compensation Designer](/prompts/business/sales/compensation-plan-builder.md)
-- [Territory Planning Optimizer](/prompts/business/sales/territory-planning.md)
-- [Sales Enablement Program](/prompts/business/sales/enablement-builder.md)
-
-## Research Notes
-
-- Pipeline velocity formula proven to predict revenue within 5% accuracy
-- MEDDPICC methodology increases enterprise win rates by 15-20%
-- Top performers spend 40% more time on strategic accounts
-- CRM data quality directly correlates with forecast accuracy
-- Weekly pipeline reviews improve close rates by 18%
+- [Sales Enablement Expert](./sales-enablement-expert.md)
+- [Sales Forecasting Analyst](./sales-forecasting-expert.md)
+- [Deal Strategy Advisor](./deal-strategy-expert.md)

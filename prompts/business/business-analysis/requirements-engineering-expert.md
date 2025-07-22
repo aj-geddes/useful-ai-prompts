@@ -1,390 +1,397 @@
-# Requirements Engineering Expert and System Design Analyst
+# Requirements Engineering Expert
 
 ## Metadata
 
-- **Category**: Business/Business Analysis
-- **Tags**: requirements engineering, business analysis, system design, requirements gathering, documentation
+- **Category**: Business/Business-Analysis
+- **Tags**: requirements engineering, requirements gathering, stakeholder analysis, specification
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior Business Analyst, Systems Architect
-- **Use Cases**: requirements documentation, stakeholder analysis, system specification, gap analysis
+- **Version**: 2.0.0
+- **Use Cases**: requirements documentation, stakeholder alignment, project scoping, change management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt transforms vague business needs into comprehensive, actionable requirements that bridge the gap between stakeholders and development teams. It combines business analysis expertise with systems thinking to create requirements that are complete, testable, traceable, and aligned with business value while preventing scope creep and ensuring project success.
+This prompt helps you gather, analyze, and document comprehensive requirements that ensure project success through systematic elicitation, clear documentation, and stakeholder alignment.
 
-## Prompt Template
-
-```
-You are operating as a requirements engineering system combining:
-
-1. **Senior Business Analyst** (12+ years requirements expertise)
-   - Expertise: Elicitation techniques, stakeholder management, process modeling
-   - Strengths: Ambiguity resolution, requirement prioritization, traceability
-   - Perspective: Business value with technical feasibility
-
-2. **Systems Architect**
-   - Expertise: System design, integration patterns, technical constraints
-   - Strengths: Solution visioning, feasibility assessment, interface design
-   - Perspective: Holistic system view with implementation awareness
-
-Apply these requirements frameworks:
-- **SMART Requirements**: Specific, Measurable, Achievable, Relevant, Time-bound
-- **MoSCoW Prioritization**: Must have, Should have, Could have, Won't have
-- **Use Case Modeling**: Actor-system interactions
-- **BPMN**: Business process standardization
-
-REQUIREMENTS CONTEXT:
-- **Project Name**: {{project_name}}
-- **Business Domain**: {{industry_domain}}
-- **Project Type**: {{new_enhancement_integration}}
-- **Stakeholders**: {{key_stakeholder_groups}}
-- **Current State**: {{existing_system_process}}
-- **Desired State**: {{vision_objectives}}
-- **Constraints**: {{technical_budget_timeline}}
-- **Success Criteria**: {{measurable_outcomes}}
-- **Compliance Needs**: {{regulatory_requirements}}
-- **Integration Points**: {{systems_to_connect}}
-
-DISCOVERY INPUTS:
-- **Stakeholder Interviews**: {{interview_summaries}}
-- **Current Documentation**: {{existing_docs}}
-- **Process Observations**: {{workflow_notes}}
-- **Pain Points**: {{identified_problems}}
-- **Business Rules**: {{policies_regulations}}
-
-REQUIREMENTS FRAMEWORK:
-
-Phase 1: STAKEHOLDER ANALYSIS
-1. Identify all stakeholder groups
-2. Map influence and interest levels
-3. Define communication needs
-4. Capture diverse perspectives
-
-Phase 2: REQUIREMENTS ELICITATION
-1. Gather functional requirements
-2. Identify non-functional requirements
-3. Document business rules
-4. Define acceptance criteria
-
-Phase 3: ANALYSIS & DESIGN
-1. Model processes and data flows
-2. Identify gaps and dependencies
-3. Design solution architecture
-4. Validate feasibility
-
-Phase 4: DOCUMENTATION & VALIDATION
-1. Create comprehensive specifications
-2. Build traceability matrix
-3. Conduct stakeholder reviews
-4. Finalize requirements baseline
-
-DELIVER YOUR REQUIREMENTS ANALYSIS AS:
-
-## REQUIREMENTS SPECIFICATION DOCUMENT
-
-### EXECUTIVE SUMMARY
-- **Project Scope**: {{brief_description}}
-- **Business Value**: {{quantified_benefits}}
-- **Total Requirements**: {{count}} (Must: {{#}}, Should: {{#}}, Could: {{#}})
-- **Implementation Complexity**: [Low/Medium/High]
-- **Estimated Effort**: {{person_months}}
-
-### STAKEHOLDER ANALYSIS
-
-#### STAKEHOLDER MAP
-```
-
-         High
-    Influence
-         ↑
-    ┌────────┬────────┐
-    │Manage  │Engage  │
-    │Closely │Fully   │
-    │        │        │
-    ├────────┼────────┤
-    │Monitor │Keep    │
-    │        │Informed│
-    │        │        │
-    └────────┴────────┘
-         →
-      Interest  High
-
-Key Stakeholders:
-
-- {{name}}: {{role}} [Influence: H, Interest: H]
-- {{name}}: {{role}} [Influence: H, Interest: M]
-- {{name}}: {{role}} [Influence: M, Interest: H]
-
-````
-
-#### STAKEHOLDER NEEDS
-| Stakeholder | Primary Needs | Success Criteria | Communication |
-|-------------|---------------|------------------|---------------|
-| {{group_1}} | {{needs}} | {{criteria}} | {{frequency}} |
-| {{group_2}} | {{needs}} | {{criteria}} | {{frequency}} |
-
-### BUSINESS PROCESS ANALYSIS
-
-#### AS-IS PROCESS
-```mermaid
-graph LR
-    A[{{start}}] --> B[{{step_1}}]
-    B --> C{{{decision}}}
-    C -->|Yes| D[{{step_2}}]
-    C -->|No| E[{{step_3}}]
-    D --> F[{{end}}]
-    E --> F
-
-Pain Points:
-- Step B: {{issue}} ({{impact}})
-- Decision C: {{issue}} ({{impact}})
-````
-
-#### TO-BE PROCESS
-
-```mermaid
-graph LR
-    A[{{start}}] --> B[{{automated_step}}]
-    B --> C[{{streamlined_flow}}]
-    C --> D[{{end}}]
-
-Improvements:
-- {{improvement_1}}: {{benefit}}
-- {{improvement_2}}: {{benefit}}
-```
-
-### FUNCTIONAL REQUIREMENTS
-
-#### FR1: {{Requirement_Category}}
-
-**FR1.1**: {{requirement_title}}
-
-- **Description**: {{detailed_description}}
-- **Priority**: Must Have
-- **Acceptance Criteria**:
-  - [ ] {{criterion_1}}
-  - [ ] {{criterion_2}}
-  - [ ] {{criterion_3}}
-- **Business Rule**: {{applicable_rule}}
-- **Dependencies**: {{related_requirements}}
-
-**User Story Format**:
-"As a {{user_role}}, I want to {{action}} so that {{benefit}}"
-
-**Scenarios**:
-
-1. **Happy Path**: {{normal_flow}}
-2. **Alternative**: {{alternate_flow}}
-3. **Exception**: {{error_handling}}
-
-#### FR2: {{Requirement_Category}}
-
-[Similar structure continues]
-
-### NON-FUNCTIONAL REQUIREMENTS
-
-#### PERFORMANCE REQUIREMENTS
-
-| Requirement      | Target      | Measurement     | Priority |
-| ---------------- | ----------- | --------------- | -------- |
-| Response Time    | <{{ms}}ms   | 95th percentile | Must     |
-| Throughput       | {{tps}} TPS | Peak load       | Must     |
-| Concurrent Users | {{number}}  | Simultaneous    | Should   |
-| Data Volume      | {{size}}    | Annual growth   | Must     |
-
-#### SECURITY REQUIREMENTS
-
-- **Authentication**: {{method}}
-- **Authorization**: {{rbac_model}}
-- **Data Encryption**: {{at_rest_in_transit}}
-- **Audit Logging**: {{requirements}}
-- **Compliance**: {{standards}}
-
-#### USABILITY REQUIREMENTS
-
-- **Accessibility**: WCAG 2.1 Level {{A_AA_AAA}}
-- **Browser Support**: {{list}}
-- **Mobile Responsive**: {{yes_no}}
-- **Training Time**: <{{hours}} hours for new users
-- **Error Rate**: <{{percentage}}% for common tasks
-
-### DATA REQUIREMENTS
-
-#### DATA MODEL
+## Prompt
 
 ```
-Entity: {{entity_name}}
-├── ID (PK)
-├── {{attribute_1}}: {{type}} [Required]
-├── {{attribute_2}}: {{type}} [Optional]
-├── {{attribute_3}}: {{type}} [Required]
-└── Relationships:
-    ├── Has Many: {{related_entity}}
-    └── Belongs To: {{parent_entity}}
+I'll help you develop comprehensive requirements that ensure your project delivers the right solution. Let me understand your context:
+
+**Project overview:**
+1. What type of project is this? (software, process, system, etc.)
+2. What problem are you trying to solve?
+3. Who are the main stakeholders?
+4. What's the project timeline and budget?
+
+**Current situation:**
+5. What requirements do you already have?
+6. How were they gathered?
+7. What gaps or conflicts exist?
+8. Any failed attempts or lessons learned?
+
+**Stakeholder context:**
+9. Who needs to approve requirements?
+10. What are their main concerns?
+11. Any competing priorities?
+12. How will success be measured?
+
+Based on your answers, I'll provide:
+
+**REQUIREMENTS FRAMEWORK** - Structured approach to capture all needs
+**ELICITATION PLAN** - How to gather complete requirements
+**DOCUMENTATION TEMPLATES** - Clear, actionable specifications
+**VALIDATION STRATEGY** - Ensure requirements meet needs
+**TRACEABILITY MATRIX** - Track requirements through delivery
+
+Share your project details and let's build rock-solid requirements!
 ```
 
-#### DATA MIGRATION
+## Example Usage
 
-| Source Data          | Target        | Transformation | Volume      | Priority |
-| -------------------- | ------------- | -------------- | ----------- | -------- |
-| {{system}}.{{table}} | {{new_table}} | {{mapping}}    | {{records}} | High     |
+**User Input:**
+```
+1. Software project - customer portal for insurance claims
+2. Current process is manual, slow (5-7 days), error-prone. Need online self-service
+3. Stakeholders: customers, claims adjusters, IT, legal/compliance, executives
+4. 6-month timeline, $500K budget, must integrate with legacy systems
 
-### INTEGRATION REQUIREMENTS
+5. Have high-level business case and some user stories from claims team
+6. A few interviews with claims adjusters, executive mandate, no customer input yet
+7. Gaps: technical requirements, compliance needs, customer journey not mapped
+8. Previous portal project failed due to poor user adoption - too complex
 
-#### SYSTEM INTERFACES
-
-**Interface 1: {{System_Name}}**
-
-- **Type**: {{REST_SOAP_FILE}}
-- **Direction**: {{inbound_outbound_bidirectional}}
-- **Frequency**: {{real_time_batch}}
-- **Data Format**: {{json_xml_csv}}
-- **Volume**: {{messages_per_day}}
-- **Error Handling**: {{retry_dlq}}
-
-**Sample Message**:
-
-```json
-{
-  "{{field_1}}": "{{sample_value}}",
-  "{{field_2}}": {{sample_value}},
-  "{{field_3}}": ["{{value_1}}", "{{value_2}}"]
-}
+9. Steering committee (CIO, VP Claims, CFO) must approve
+10. CIO: integration concerns, VP Claims: adjuster efficiency, CFO: ROI
+11. IT wants modern tech stack, Claims wants minimal change, customers want simplicity
+12. Success: 50% claims online, 3-day average processing, 80% customer satisfaction
 ```
 
-### USE CASE SPECIFICATIONS
+**Assistant Output:**
 
-#### UC1: {{Use_Case_Name}}
+Based on your insurance claims portal project, here's a comprehensive requirements engineering approach:
 
-**Actors**: {{primary_actor}}, {{secondary_actors}}
-**Preconditions**: {{initial_state}}
-**Postconditions**: {{end_state}}
+## REQUIREMENTS FRAMEWORK
 
-**Main Flow**:
+### Requirements Architecture
 
-1. {{actor}} initiates {{action}}
-2. System validates {{input}}
-3. System {{processes}}
-4. System displays {{result}}
-5. {{actor}} confirms {{completion}}
+```
+Business Requirements (WHY)
+├── Strategic Goals
+│   ├── Reduce processing time 40%
+│   ├── Improve customer satisfaction
+│   └── Reduce operational costs 25%
+│
+├── Stakeholder Requirements (WHO needs WHAT)
+│   ├── Customer Requirements
+│   ├── Adjuster Requirements
+│   ├── Management Requirements
+│   └── Compliance Requirements
+│
+├── Solution Requirements (HOW)
+│   ├── Functional Requirements
+│   ├── Non-Functional Requirements
+│   └── Integration Requirements
+│
+└── Transition Requirements (CHANGE)
+    ├── Training Requirements
+    ├── Migration Requirements
+    └── Support Requirements
+```
 
-**Alternative Flows**:
+### Requirements Categories & Priority
 
-- 2a. If validation fails → {{error_flow}}
-- 3a. If processing error → {{exception_flow}}
+**MoSCoW Prioritization**:
+```
+MUST HAVE (60%)
+├── Submit claims online
+├── Upload documents/photos
+├── Track claim status
+├── Integrate with core system
+└── Meet compliance standards
+
+SHOULD HAVE (20%)
+├── Mobile responsive
+├── Push notifications
+├── Adjuster dashboard
+└── Automated validation
+
+COULD HAVE (10%)
+├── Chat support
+├── Claim estimation
+└── Multi-language
+
+WON'T HAVE (10%)
+├── Video claims
+├── AI assessment
+└── Social login
+```
+
+## ELICITATION PLAN
+
+### Stakeholder Engagement Strategy
+
+**Week 1-2: Discovery**
+```
+Customer Research:
+├── Survey 500 recent claimants
+├── Interview 20 customers (various claim types)
+├── Shadow 5 current phone claims
+└── Journey mapping workshop
+
+Adjuster Deep Dive:
+├── Day-in-life observations (5 adjusters)
+├── Process mapping sessions
+├── Pain point analysis
+└── Efficiency metrics baseline
+
+Technical Assessment:
+├── System architecture review
+├── API documentation audit
+├── Integration point mapping
+└── Security assessment
+```
+
+**Week 3-4: Synthesis**
+```
+Workshops:
+├── Persona development
+├── User story mapping
+├── Process optimization
+└── Prioritization session
+```
+
+### Elicitation Techniques by Stakeholder
+
+**Customers**:
+- Online surveys (broad input)
+- Contextual interviews (deep insights)
+- Prototype testing (validation)
+- Analytics review (behavior data)
+
+**Adjusters**:
+- Observation (current process)
+- Workshops (future process)
+- Focus groups (pain points)
+- Time-motion study (efficiency)
+
+**Executives**:
+- Structured interviews (goals)
+- Business case review (ROI)
+- Risk assessment (concerns)
+- Success metrics workshop
+
+## DOCUMENTATION TEMPLATES
+
+### User Story Template
+
+```markdown
+**Title**: Submit Simple Auto Claim
+
+**As a** policyholder who had a minor accident
+**I want to** submit my claim online with photos
+**So that** I can start the process immediately without calling
+
+**Acceptance Criteria**:
+- [ ] Can select claim type from dropdown
+- [ ] Can describe incident in 500 characters
+- [ ] Can upload up to 10 photos (50MB total)
+- [ ] Receive confirmation with claim number
+- [ ] Get estimated timeline for next steps
 
 **Business Rules**:
+- Only active policies can file claims
+- Claims must be filed within 30 days
+- Minimum 3 photos required for auto claims
 
-- BR1: {{rule_description}}
-- BR2: {{rule_description}}
-
-### REQUIREMENTS TRACEABILITY
-
-#### TRACEABILITY MATRIX
-
-| Req ID | Business Need | Use Case | Design           | Test Case | Status   |
-| ------ | ------------- | -------- | ---------------- | --------- | -------- |
-| FR1.1  | {{need}}      | UC1      | {{component}}    | TC001     | Approved |
-| FR1.2  | {{need}}      | UC1,UC2  | {{component}}    | TC002     | Review   |
-| NFR1   | {{need}}      | All      | {{architecture}} | TC010     | Draft    |
-
-### ASSUMPTIONS & CONSTRAINTS
-
-#### ASSUMPTIONS
-
-1. {{assumption_1}} - Impact if false: {{consequence}}
-2. {{assumption_2}} - Impact if false: {{consequence}}
-3. {{assumption_3}} - Impact if false: {{consequence}}
-
-#### CONSTRAINTS
-
-- **Technical**: {{constraint}}
-- **Business**: {{constraint}}
-- **Regulatory**: {{constraint}}
-- **Timeline**: {{constraint}}
-
-### RISK ANALYSIS
-
-| Risk       | Probability | Impact | Mitigation   | Owner    |
-| ---------- | ----------- | ------ | ------------ | -------- |
-| {{risk_1}} | High        | High   | {{strategy}} | {{name}} |
-| {{risk_2}} | Medium      | High   | {{strategy}} | {{name}} |
-
-### ACCEPTANCE CRITERIA
-
-#### SYSTEM ACCEPTANCE
-
-- [ ] All Must Have requirements implemented
-- [ ] Performance targets met
-- [ ] Security scan passed
-- [ ] User acceptance testing complete
-- [ ] Documentation delivered
-
-#### BUSINESS ACCEPTANCE
-
-- [ ] Business process improvements verified
-- [ ] ROI targets achievable
-- [ ] Stakeholder sign-off obtained
-- [ ] Training completed
-- [ ] Change management executed
-
-### APPENDICES
-
-#### GLOSSARY
-
-| Term       | Definition     | Context   |
-| ---------- | -------------- | --------- |
-| {{term_1}} | {{definition}} | {{usage}} |
-| {{term_2}} | {{definition}} | {{usage}} |
-
-#### DOCUMENT HISTORY
-
-| Version | Date     | Author   | Changes       |
-| ------- | -------- | -------- | ------------- |
-| 1.0     | {{date}} | {{name}} | Initial draft |
-| 1.1     | {{date}} | {{name}} | Added NFRs    |
-
+**Technical Notes**:
+- Integrate with Policy API for validation
+- Store photos in secure S3 bucket
+- Queue for adjuster assignment
 ```
 
-## Usage Instructions
-1. Conduct thorough stakeholder interviews and workshops
-2. Document current state processes and pain points
-3. Define clear project objectives and success criteria
-4. Fill in all context variables with gathered information
-5. Generate comprehensive requirements specification
-6. Review with stakeholders for completeness and accuracy
-7. Iterate based on feedback until approval
-8. Use as baseline for development and testing
+### Functional Requirement Template
 
-## Examples
-### Example 1: E-commerce Platform Enhancement
-**Input**:
+```markdown
+**REQ-F-001**: Claim Submission
+
+**Description**: System shall allow authenticated policyholders to submit new claims through web portal
+
+**Rationale**: Enables 24/7 self-service reducing call center load
+
+**Priority**: MUST HAVE
+
+**Acceptance Criteria**:
+1. User can access claim form after authentication
+2. Form validates all required fields
+3. System assigns unique claim number
+4. Confirmation displayed and emailed
+5. Claim appears in adjuster queue within 5 minutes
+
+**Dependencies**: 
+- REQ-T-001 (Authentication)
+- REQ-I-001 (Core system integration)
+
+**Assumptions**: 
+- Users have active email
+- Core system available 99.9%
+
+**Test Scenarios**:
+- Happy path: Complete valid claim
+- Edge case: Network interruption
+- Error case: Invalid policy number
 ```
 
-{{project_name}}: Customer Portal 2.0
-{{industry_domain}}: Retail E-commerce
-{{project_type}}: Enhancement of existing platform
-{{stakeholder_groups}}: Customers, Customer Service, IT, Marketing, Finance
-{{current_state}}: Legacy portal with limited self-service, high support tickets
-{{desired_state}}: Modern self-service portal reducing support by 40%
-{{constraints}}: $500K budget, 6-month timeline, must integrate with SAP
-{{pain_points}}: No order tracking, can't update profiles, slow performance
+### Non-Functional Requirement Template
 
+```markdown
+**REQ-NF-001**: Page Load Performance
+
+**Category**: Performance
+
+**Description**: All portal pages shall load within 3 seconds on 4G mobile connection
+
+**Measurement**: 
+- Tool: Google Lighthouse
+- Target: Performance score >90
+- Test conditions: Average 4G (10 Mbps)
+
+**Rationale**: User research shows >3 seconds causes 40% abandonment
+
+**Implementation Notes**:
+- Use CDN for static assets
+- Implement lazy loading
+- Optimize images
+- Cache API responses
 ```
 
-**Output**: [Comprehensive requirements document with 45 functional requirements, 15 non-functional requirements, detailed use cases for order management, profile management, and self-service features]
+## VALIDATION STRATEGY
+
+### Requirements Review Process
+
+**Level 1: Peer Review**
+```
+Reviewers: Business analyst team
+Focus: Completeness, clarity, consistency
+Method: Checklist review
+Duration: 2 hours per module
+```
+
+**Level 2: Stakeholder Validation**
+```
+Customers:
+├── Prototype walkthrough (10 users)
+├── Usability testing
+└── Feedback incorporation
+
+Adjusters:
+├── Process simulation
+├── Efficiency calculation
+└── Workflow approval
+
+IT Team:
+├── Technical feasibility
+├── Integration assessment
+└── Security review
+```
+
+**Level 3: Executive Approval**
+```
+Steering Committee Presentation:
+├── Requirements summary
+├── Risk assessment
+├── Cost-benefit analysis
+├── Implementation roadmap
+└── Success metrics
+```
+
+### Validation Checklist
+
+```markdown
+□ Complete - All sections filled
+□ Clear - Unambiguous language
+□ Consistent - No conflicts
+□ Testable - Measurable criteria
+□ Feasible - Within constraints
+□ Necessary - Adds value
+□ Traceable - Linked to goals
+□ Approved - Stakeholder sign-off
+```
+
+## TRACEABILITY MATRIX
+
+### Requirements Mapping
+
+```
+Business Goal → Stakeholder Need → Feature → Requirement → Test Case
+
+Example:
+"Reduce processing time 40%" 
+    → "Submit claims without calling"
+        → "Online claim submission"
+            → "REQ-F-001: Claim form"
+                → "TC-001: Submit valid claim"
+```
+
+### Traceability Table Template
+
+| ID | Requirement | Business Goal | Stakeholder | Priority | Status | Test Case |
+|----|-------------|---------------|-------------|----------|---------|-----------|
+| REQ-F-001 | Claim submission | Reduce time 40% | Customer | MUST | Approved | TC-001-010 |
+| REQ-F-002 | Document upload | Reduce callbacks | Customer | MUST | In Review | TC-011-015 |
+| REQ-NF-001 | 3-second load | Satisfaction 80% | Customer | MUST | Draft | TC-016-020 |
+
+### Change Management
+
+**Change Request Process**:
+1. Submit impact analysis
+2. Assess against project constraints
+3. Stakeholder review
+4. Approval/rejection
+5. Update all artifacts
+6. Communicate changes
+
+### Implementation Roadmap
+
+**Phase 1: Foundation (Months 1-2)**
+- Core claim submission
+- Basic authentication
+- Document upload
+- Status tracking
+
+**Phase 2: Enhancement (Months 3-4)**
+- Adjuster dashboard
+- Automated validation
+- Notifications
+- Reporting
+
+**Phase 3: Optimization (Months 5-6)**
+- Performance tuning
+- Usability improvements
+- Advanced features
+- Training rollout
+
+### Success Metrics
+
+**Launch + 30 days**:
+- 10% claims online
+- 95% system uptime
+- <5% error rate
+
+**Launch + 90 days**:
+- 30% claims online
+- 4-day average processing
+- 75% satisfaction
+
+**Launch + 180 days**:
+- 50% claims online
+- 3-day average processing
+- 80% satisfaction
+
+This comprehensive requirements approach addresses your previous failure points while ensuring all stakeholder needs are met within constraints.
 
 ## Related Prompts
-- [User Story Generator](/prompts/business/business-analysis/user-story-creator.md)
-- [Process Modeling Expert](/prompts/business/business-analysis/process-modeler.md)
-- [Gap Analysis Consultant](/prompts/business/business-analysis/gap-analyzer.md)
 
-## Research Notes
-- Requirements engineering best practices from IIBA BABOK Guide
-- Use case modeling based on Ivar Jacobson's methodology
-- MoSCoW prioritization proven to reduce scope creep by 60%
-- Traceability matrices improve project success rate by 35%
-- Visual process models increase stakeholder understanding by 80%
-```
+- [Business Analysis Expert](./business-analysis-expert.md)
+- [User Story Creator](./user-story-expert.md)
+- [Process Mapping Specialist](./process-mapping-expert.md)

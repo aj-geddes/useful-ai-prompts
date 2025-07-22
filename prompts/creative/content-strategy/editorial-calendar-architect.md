@@ -1,380 +1,255 @@
-# Editorial Calendar Architect and Content Performance Optimizer
+# Editorial Calendar Architect
 
 ## Metadata
 
-- **Category**: Creative/Content Strategy
-- **Tags**: editorial calendar, content strategy, content marketing, publishing, SEO
+- **Category**: Creative/Content-Strategy
+- **Tags**: editorial calendar, content planning, publishing strategy, content management
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Content Strategy Director, SEO Specialist
-- **Use Cases**: content planning, editorial management, multi-channel publishing, content optimization
+- **Version**: 2.0.0
+- **Use Cases**: content scheduling, editorial planning, campaign coordination, publishing workflow
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt creates comprehensive editorial calendars that align content production with business goals, audience needs, and SEO opportunities. It combines strategic content planning with data-driven optimization to build publishing schedules that drive engagement, support marketing objectives, and maximize content ROI across all channels.
+This prompt helps you create comprehensive editorial calendars that align content production with business goals, audience needs, and resource constraints.
 
-## Prompt Template
-
-```
-You are operating as a strategic content planning system combining:
-
-1. **Content Strategy Director** (10+ years content marketing experience)
-   - Expertise: Editorial planning, audience development, brand storytelling, content operations
-   - Strengths: Topic ideation, resource management, cross-channel integration
-   - Perspective: Audience value with business impact
-
-2. **SEO Specialist**
-   - Expertise: Keyword research, search intent, content optimization, SERP analysis
-   - Strengths: Traffic forecasting, competitive analysis, technical optimization
-   - Perspective: Organic visibility and search performance
-
-Apply these content frameworks:
-- **Content Pillars**: Thematic organization for authority building
-- **Hub & Spoke Model**: Topic clusters for SEO dominance
-- **AIDA Framework**: Attention, Interest, Desire, Action content flow
-- **E-A-T Principles**: Expertise, Authoritativeness, Trustworthiness
-
-CONTENT STRATEGY CONTEXT:
-- **Brand/Company**: {{company_name}}
-- **Industry**: {{industry_vertical}}
-- **Target Audience**: {{primary_personas}}
-- **Business Goals**: {{content_objectives}}
-- **Content Team**: {{team_size_and_roles}}
-- **Publishing Frequency**: {{posts_per_week}}
-- **Content Types**: {{blog_video_podcast_social}}
-- **Distribution Channels**: {{owned_earned_paid}}
-- **Current Performance**: {{traffic_engagement_metrics}}
-- **Competitive Landscape**: {{main_content_competitors}}
-
-PLANNING PARAMETERS:
-- **Planning Period**: {{quarters_or_months}}
-- **Seasonal Factors**: {{holidays_events_trends}}
-- **Product Launches**: {{upcoming_releases}}
-- **Campaign Tie-ins**: {{marketing_campaigns}}
-- **Budget**: {{content_production_budget}}
-
-CONTENT PLANNING FRAMEWORK:
-
-Phase 1: STRATEGIC FOUNDATION
-1. Analyze audience needs and search demand
-2. Map content to buyer journey stages
-3. Identify content gaps and opportunities
-4. Define success metrics
-
-Phase 2: TOPIC DEVELOPMENT
-1. Generate content pillars
-2. Research keyword opportunities
-3. Plan content clusters
-4. Assign formats and channels
-
-Phase 3: CALENDAR CREATION
-1. Map content to timeline
-2. Balance topics and formats
-3. Align with campaigns
-4. Assign resources
-
-Phase 4: OPTIMIZATION PLANNING
-1. Define promotion strategies
-2. Plan repurposing approach
-3. Set performance targets
-4. Create feedback loops
-
-DELIVER YOUR EDITORIAL CALENDAR AS:
-
-## EDITORIAL CALENDAR & CONTENT STRATEGY
-
-### EXECUTIVE SUMMARY
-- **Content Mission**: {{one_line_mission}}
-- **Publishing Cadence**: {{frequency_by_channel}}
-- **Resource Requirement**: {{hours_per_week}}
-- **Expected Impact**: {{traffic_leads_engagement}}
-- **ROI Projection**: {{cost_per_lead_value}}
-
-### CONTENT PILLAR ARCHITECTURE
-
-#### PILLAR 1: {{Topic_Category}}
-**Theme**: {{overarching_theme}}
-**Business Goal**: {{objective}}
-**Target Keywords**: {{primary_keywords}}
-
-**Content Cluster**:
-```
-
-Hub Page: "{{comprehensive_guide_title}}"
-├── Spoke 1: "{{subtopic_article}}"
-├── Spoke 2: "{{subtopic_article}}"
-├── Spoke 3: "{{subtopic_article}}"
-├── Spoke 4: "{{subtopic_article}}"
-└── Spoke 5: "{{subtopic_article}}"
+## Prompt
 
 ```
+I'll help you build a strategic editorial calendar that drives engagement and meets your business goals. Let me understand your content needs:
 
-**Monthly Distribution**:
-- Week 1: Hub page update
-- Week 2-3: Spoke content
-- Week 4: Roundup/synthesis
+**About your content:**
+1. What type of content do you produce? (blog, social media, video, podcast, etc.)
+2. What's your publishing frequency goal for each type?
+3. Who's your target audience? What do they care about?
+4. What are your main content goals? (traffic, leads, engagement, thought leadership)
 
-#### PILLAR 2: {{Topic_Category}}
-[Similar structure]
+**Resources and workflow:**
+5. How many content creators do you have? What are their roles?
+6. What's your typical content production timeline?
+7. What tools do you use for content management?
+8. Any approval processes or stakeholders to consider?
 
-### EDITORIAL CALENDAR
+**Strategy and themes:**
+9. What are your key topics or content pillars?
+10. Any upcoming campaigns, launches, or events to plan around?
+11. Do you have seasonal considerations?
+12. How do you measure content success?
 
-#### MONTH 1: {{Month_Name}}
-**Theme**: {{monthly_theme}}
-**Goal**: {{specific_objective}}
+Based on your answers, I'll provide:
 
-| Week | Date | Content Title | Type | Author | Keywords | Channel | Status |
-|------|------|---------------|------|--------|----------|---------|---------|
-| W1 | {{date}} | {{title}} | Blog | {{name}} | {{keywords}} | Website | Draft |
-| W1 | {{date}} | {{title}} | Video | {{name}} | {{keywords}} | YouTube | Planning |
-| W2 | {{date}} | {{title}} | Infographic | {{name}} | {{keywords}} | Social | Design |
+**CALENDAR FRAMEWORK** - Optimized publishing schedule and structure
+**CONTENT THEMES** - Monthly/quarterly themes aligned with goals
+**WORKFLOW SYSTEM** - Production process and timeline
+**CONTENT MIX** - Balanced variety for sustained engagement
+**MEASUREMENT PLAN** - KPIs and optimization strategy
 
-**Content Details - Week 1**:
-
-**"{{Article_Title}}"**
-- **Format**: 2,000-word guide
-- **Target Keyword**: {{keyword}} (Volume: {{searches}}/mo)
-- **Search Intent**: {{informational_transactional}}
-- **Outline**:
-  1. {{section_1}}
-  2. {{section_2}}
-  3. {{section_3}}
-- **CTA**: {{conversion_goal}}
-- **Distribution**: Blog → Email → Social
-- **Repurpose**: Podcast episode, Instagram carousel
-
-### SEO OPPORTUNITY MATRIX
-
-#### HIGH-PRIORITY TARGETS
-| Keyword | Volume | Difficulty | Current Rank | Content Gap | Priority |
-|---------|--------|------------|--------------|-------------|----------|
-| {{keyword_1}} | {{#}} | {{1-100}} | {{position}} | {{gap}} | High |
-| {{keyword_2}} | {{#}} | {{1-100}} | {{position}} | {{gap}} | High |
-| {{keyword_3}} | {{#}} | {{1-100}} | {{position}} | {{gap}} | Medium |
-
-#### COMPETITIVE CONTENT GAPS
-**Competitor Analysis**:
-- {{competitor_1}} ranks for {{keywords}} but lacks {{angle}}
-- {{competitor_2}} has strong {{content_type}} but weak {{aspect}}
-- Opportunity: Create {{content_format}} targeting {{underserved_intent}}
-
-### CONTENT PRODUCTION WORKFLOW
-
-#### IDEATION TO PUBLICATION
+Share your content details and let's build an editorial calendar that works!
 ```
 
-Monday: Editorial Meeting
-├── Review performance data
-├── Brainstorm new topics
-├── Assign articles
-└── Set deadlines
+## Example Usage
 
-Tuesday-Thursday: Creation
-├── Research & outline (Day 1)
-├── First draft (Day 2)
-├── Edit & optimize (Day 3)
-└── Design assets (Day 3)
+**User Input:**
+```
+1. Blog (long-form), LinkedIn posts, email newsletter, occasional webinars
+2. Blog: 2x/week, LinkedIn: daily, Newsletter: weekly, Webinar: monthly
+3. B2B SaaS decision makers - CTOs, VPs of Engineering at mid-market companies
+4. Thought leadership to drive inbound leads, establish expertise in DevOps space
 
-Friday: Publishing & Promotion
-├── Final review
-├── Publish content
-├── Email newsletter
-├── Social distribution
-└── Outreach for backlinks
+5. 3 people: 1 content manager (me), 1 freelance writer, 1 designer/video editor
+6. Blog: 2 weeks from idea to publish, LinkedIn: 2 days, Newsletter: 1 week
+7. Using Notion for planning, WordPress for blog, Mailchimp for email
+8. CEO reviews thought leadership pieces, no approval needed for social
 
+9. DevOps best practices, cloud migration, security, team culture/leadership
+10. Product launch in March, major conference in June, year-end planning content
+11. Yes - budget planning (Q4), hiring season (Q1), summer slowdown
+12. Traffic, email signups, content->demo conversions, social engagement
 ```
 
-#### RESOURCE ALLOCATION
+**Assistant Output:**
+
+Here's your comprehensive editorial calendar strategy for maximum impact:
+
+## CALENDAR FRAMEWORK
+
+### Publishing Rhythm
+**Weekly Content Flow**:
+```
+Monday:    LinkedIn (Motivational/Leadership)
+Tuesday:   Blog Post #1 + LinkedIn (Technical tip)
+Wednesday: LinkedIn (Industry news/commentary)
+Thursday:  Newsletter + LinkedIn (Resource roundup)
+Friday:    Blog Post #2 + LinkedIn (Week recap/wins)
 ```
 
-Team Capacity (Hours/Week):
+### Monthly Content Architecture
+**Week 1**: Foundation content (evergreen guides)
+**Week 2**: Trending topics & industry response
+**Week 3**: Case studies & customer stories  
+**Week 4**: Webinar/special content + planning
 
-- Content Manager: 40h
-  └── Strategy: 10h
-  └── Editing: 20h
-  └── Promotion: 10h
-- Writers (2): 60h total
-  └── Research: 20h
-  └── Writing: 40h
-- Designer: 20h
-  └── Graphics: 15h
-  └── Video: 5h
+### Quarterly Themes
+**Q1 2025**: "Scale Your Stack" (hiring, infrastructure)
+**Q2 2025**: "Innovation Sprint" (new product, conference)
+**Q3 2025**: "Optimize & Automate" (efficiency, costs)
+**Q4 2025**: "Plan to Win" (budgets, 2026 strategy)
 
+## CONTENT THEMES
+
+### Monthly Theme Breakdown
+
+**January: Building Dream Teams**
+- Week 1: 2025 DevOps hiring guide
+- Week 2: Remote vs hybrid engineering teams
+- Week 3: Onboarding automation playbook
+- Week 4: Webinar: "Hire DevOps talent in 2025"
+
+**February: Security-First Culture**
+- Week 1: Zero-trust architecture guide
+- Week 2: DevSecOps implementation
+- Week 3: Customer story: Security transformation
+- Week 4: Security audit checklist
+
+**March: Product Launch Focus**
+- Week 1: Pre-launch thought leadership
+- Week 2: Launch week content blitz
+- Week 3: Implementation guides
+- Week 4: Customer success stories
+
+**April-June: Conference & Thought Leadership**
+Build authority leading to June conference
+
+## WORKFLOW SYSTEM
+
+### Content Production Pipeline
+
+**Blog Posts (14-day cycle)**:
+```
+Day 1-2:   Ideation & outline approval
+Day 3-4:   Research & expert interviews  
+Day 5-7:   First draft (freelancer)
+Day 8-9:   Review & revisions
+Day 10-11: Design/graphics creation
+Day 12:    CEO review (if needed)
+Day 13:    Final edits & SEO
+Day 14:    Publish & promote
 ```
 
-### CONTENT MIX & CHANNEL STRATEGY
-
-#### FORMAT DISTRIBUTION
+**LinkedIn Posts (2-day cycle)**:
+```
+Morning:   Topic selection from bank
+Day 1 PM:  Draft & visual creation
+Day 2 AM:  Review & schedule
+Day 2 PM:  Publish & engage
 ```
 
-Written Content (60%):
-├── Long-form Guides: 20%
-├── Blog Posts: 25%
-├── Case Studies: 10%
-└── News/Updates: 5%
+### Team Responsibilities
+**Content Manager (You)**:
+- Strategy & calendar management
+- LinkedIn daily posts
+- Newsletter curation
+- Webinar planning
 
-Visual Content (25%):
-├── Infographics: 10%
-├── Videos: 10%
-└── Interactive: 5%
+**Freelance Writer**:
+- 6-8 blog posts/month
+- Research & interviews
+- First drafts
 
-Audio (15%):
-├── Podcast: 10%
-└── Audiograms: 5%
+**Designer/Video Editor**:
+- Blog graphics & infographics
+- LinkedIn carousels (2/week)
+- Webinar materials
 
+## CONTENT MIX
+
+### Blog Distribution (8 posts/month)
+- **How-to Guides**: 3 posts (37.5%)
+- **Thought Leadership**: 2 posts (25%)
+- **Case Studies**: 1 post (12.5%)
+- **Industry Analysis**: 1 post (12.5%)
+- **Tool Reviews/Comparisons**: 1 post (12.5%)
+
+### LinkedIn Strategy (20 posts/month)
+- **Mini-lessons**: 6 posts (30%)
+- **Industry commentary**: 4 posts (20%)
+- **Blog promotions**: 4 posts (20%)
+- **Polls/questions**: 3 posts (15%)
+- **Behind-scenes/culture**: 3 posts (15%)
+
+### Newsletter Sections (Weekly)
+1. **Feature**: Key blog highlight (200 words)
+2. **Quick Tips**: 3 actionable DevOps tips
+3. **Resource Corner**: 5 curated links
+4. **Community**: Reader question/poll
+5. **What's Next**: Upcoming content/events
+
+## MEASUREMENT PLAN
+
+### KPI Dashboard
+**Primary Metrics**:
+- Blog traffic: Target 50K monthly visits
+- Email list growth: 10% monthly
+- Content→Demo conversion: 2%
+- LinkedIn engagement rate: 5%+
+
+**Content Performance Matrix**:
+```
+High Traffic + High Conversion = Expand topic
+High Traffic + Low Conversion = Improve CTAs
+Low Traffic + High Conversion = Increase promotion
+Low Traffic + Low Conversion = Retire topic
 ```
 
-#### CHANNEL OPTIMIZATION
-**Website/Blog**:
-- Publish: Original long-form content
-- Optimize: For featured snippets
-- Internal linking: Topic clusters
+### Monthly Review Process
+**Week 1**: Analyze previous month's metrics
+**Week 2**: A/B test winner implementation
+**Week 3**: Gather team/audience feedback
+**Week 4**: Adjust next month's calendar
 
-**Social Media**:
-- LinkedIn: B2B insights, company news
-- Twitter: Quick tips, thread series
-- Instagram: Visual stories, behind-scenes
-- TikTok: Educational snippets
+### Optimization Tactics
+1. **Headlines**: Test 3 versions per blog post
+2. **LinkedIn**: Track best posting times
+3. **Email**: Subject line A/B testing
+4. **Topics**: Monthly audience survey
 
-**Email**:
-- Weekly newsletter: Content roundup
-- Segmented campaigns: Persona-specific
-- Automation: Behavior-triggered content
+## IMPLEMENTATION ROADMAP
 
-### PERFORMANCE METRICS
+### Week 1: Setup
+- [ ] Create content calendar in Notion
+- [ ] Build content templates
+- [ ] Set up measurement dashboard
+- [ ] Brief team on new process
 
-#### CONTENT SCORECARD
-| Metric | Current | Target | Strategy |
-|--------|---------|--------|----------|
-| Organic Traffic | {{#}}/mo | {{#}}/mo | SEO optimization |
-| Engagement Rate | {{%}} | {{%}} | Interactive elements |
-| Conversion Rate | {{%}} | {{%}} | Better CTAs |
-| Social Shares | {{#}} | {{#}} | Share-worthy formats |
-| Backlinks | {{#}} | {{#}} | Outreach program |
+### Week 2: Content Bank
+- [ ] Generate 50 LinkedIn post ideas
+- [ ] Outline Q1 blog posts
+- [ ] Create visual templates
+- [ ] Plan Q1 webinars
 
-#### CONTENT ROI CALCULATION
-```
+### Week 3: Launch
+- [ ] Begin new publishing rhythm
+- [ ] Start daily LinkedIn posting
+- [ ] Schedule first month's content
+- [ ] Set up automation where possible
 
-Monthly Investment:
+### Week 4: Refine
+- [ ] Review early metrics
+- [ ] Gather team feedback
+- [ ] Adjust workflows
+- [ ] Plan Q2 themes
 
-- Team Costs: ${{amount}}
-- Tools/Software: ${{amount}}
-- Paid Promotion: ${{amount}}
-  Total: ${{total}}
+### Pro Tips
+- Batch similar content creation
+- Maintain 2-week content buffer
+- Repurpose high-performers
+- Create content series for momentum
+- Use employee advocacy for reach
 
-Monthly Returns:
-
-- Leads Generated: {{#}} × ${{value}} = ${{revenue}}
-- Brand Value: ${{estimated}}
-- SEO Value: ${{calculated}}
-  Total Value: ${{total}}
-
-ROI: {{percentage}}%
-
-```
-
-### SEASONAL CONTENT PLANNING
-
-#### Q1 FOCUS: {{Theme}}
-**Key Dates**:
-- {{date}}: {{event}} → {{content_angle}}
-- {{date}}: {{holiday}} → {{content_angle}}
-- {{date}}: {{industry_event}} → {{content_angle}}
-
-**Tentpole Content**:
-1. **{{Major_Piece}}**
-   - Launch: {{date}}
-   - Promotion: {{duration}}
-   - Goal: {{metric}}
-
-### REPURPOSING MATRIX
-
-#### CONTENT MULTIPLICATION
-**Hero Content** → **Derivative Formats**:
-```
-
-Long-form Guide (3,000 words)
-├── 5 Social Posts
-├── 1 Infographic
-├── 3 Email Newsletters
-├── 1 Podcast Episode
-├── 10 Twitter Threads
-├── 2 LinkedIn Articles
-└── 1 YouTube Video
-
-```
-
-**Repurposing Calendar**:
-- Day 1: Publish original
-- Day 3: Social carousel
-- Day 7: Email feature
-- Day 14: Podcast discussion
-- Day 21: Updated/refreshed angle
-
-### INFLUENCER COLLABORATION
-
-#### GUEST CONTRIBUTION CALENDAR
-| Month | Contributor | Topic | Format | Reach |
-|-------|-------------|-------|--------|-------|
-| {{month}} | {{name}} | {{topic}} | Interview | {{#}} |
-| {{month}} | {{name}} | {{topic}} | Guest post | {{#}} |
-
-### CRISIS CONTENT PROTOCOLS
-
-**Rapid Response Process**:
-1. News breaks → 30-min huddle
-2. Angle determination → 1 hour
-3. Content creation → 2-4 hours
-4. Legal/PR review → 30 min
-5. Publish → Multi-channel
-
-**Pre-approved Topics**:
-- Industry challenges
-- Customer success stories
-- Product updates
-- Thought leadership
-```
-
-## Usage Instructions
-
-1. Define content strategy objectives and KPIs
-2. Research audience needs and keyword opportunities
-3. Audit existing content and identify gaps
-4. Fill in all context variables
-5. Generate comprehensive editorial calendar
-6. Review and adjust for resource constraints
-7. Set up tracking for all metrics
-8. Implement and iterate based on performance
-
-## Examples
-
-### Example 1: B2B SaaS Content Calendar
-
-**Input**:
-
-```
-{{company_name}}: ProjectFlow Software
-{{industry_vertical}}: Project Management SaaS
-{{target_audience}}: Project managers, team leads, operations directors
-{{content_objectives}}: Generate 500 MQLs/month, establish thought leadership
-{{team_size}}: 1 manager, 2 writers, 1 designer
-{{publishing_frequency}}: 3 blog posts/week, 1 video/week
-{{current_performance}}: 50K monthly organic traffic, 2% conversion rate
-```
-
-**Output**: [Comprehensive 3-month editorial calendar with project management best practices pillar, productivity pillar, and team collaboration pillar, including 36 blog posts, 12 videos, and integrated promotion strategy]
+This calendar balances consistency with flexibility, allowing you to maintain thought leadership while responding to industry trends.
 
 ## Related Prompts
 
-- [SEO Content Optimizer](/prompts/creative/content-strategy/seo-content-optimizer.md)
-- [Social Media Content Planner](/prompts/creative/content-strategy/social-media-planner.md)
-- [Email Campaign Strategist](/prompts/creative/content-strategy/email-strategist.md)
-
-## Research Notes
-
-- Content pillars improve topical authority and SEO rankings by 45%
-- Consistent publishing schedule increases audience retention by 30%
-- Repurposing content extends reach by 3-5x with minimal additional effort
-- Editorial calendars reduce content production time by 25%
-- SEO-optimized content generates 3x more traffic than unoptimized
+- [Content Strategy Developer](./content-strategy-expert.md)
+- [SEO Content Optimizer](./seo-content-expert.md)
+- [Social Media Strategist](./social-media-strategy-expert.md)

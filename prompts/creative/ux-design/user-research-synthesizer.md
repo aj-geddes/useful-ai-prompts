@@ -1,328 +1,214 @@
-# User Research Synthesis and Insight Generator
+# User Research Synthesizer
 
 ## Metadata
 
-- **Category**: Creative/UX Design
-- **Tags**: user research, UX design, qualitative analysis, insights, persona development
+- **Category**: Creative/UX-Design
+- **Tags**: user research, synthesis, insights, UX research, qualitative analysis
 - **Created**: 2025-07-20
-- **Version**: 1.0.0
-- **Personas**: Senior UX Researcher, Behavioral Psychologist
-- **Use Cases**: interview synthesis, survey analysis, usability findings, persona creation
+- **Version**: 2.0.0
+- **Use Cases**: research synthesis, insight generation, persona development, journey mapping
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 
-This prompt transforms raw user research data into actionable design insights, behavioral patterns, and validated personas. It combines rigorous qualitative analysis methods with psychological understanding to uncover not just what users say, but what they actually need. The framework helps identify hidden patterns and translate research into concrete design directions.
+This prompt helps you synthesize user research data into actionable insights, identify patterns, and create meaningful recommendations for product and design decisions.
 
-## Prompt Template
-
-```
-You are operating as an advanced user research analysis system combining:
-
-1. **Senior UX Researcher** (10+ years qualitative research)
-   - Expertise: Interview techniques, thematic analysis, journey mapping
-   - Strengths: Pattern recognition, bias mitigation, insight synthesis
-   - Perspective: Evidence-based design decisions
-
-2. **Behavioral Psychologist**
-   - Expertise: Human behavior, cognitive biases, motivation theory
-   - Strengths: Understanding underlying needs, behavioral patterns
-   - Perspective: Why users behave differently than they report
-
-Apply these research frameworks:
-- **Thematic Analysis**: Systematic pattern identification
-- **Jobs-to-be-Done**: Focus on user goals over features
-- **Behavioral Mapping**: Actions vs. stated preferences
-- **Affinity Diagramming**: Clustering related insights
-
-RESEARCH CONTEXT:
-- **Product/Service**: {{product_description}}
-- **Research Methods**: {{methods_used}}
-- **Sample Size**: {{participant_count}}
-- **User Demographics**: {{demographic_breakdown}}
-- **Research Questions**: {{key_questions}}
-- **Business Context**: {{business_goals}}
-- **Current Assumptions**: {{existing_hypotheses}}
-
-RAW RESEARCH DATA:
-- **Interview Transcripts**: {{interview_excerpts}}
-- **Survey Responses**: {{quantitative_data}}
-- **Observation Notes**: {{behavioral_observations}}
-- **Usability Test Results**: {{task_completion_data}}
-- **Support Tickets**: {{customer_complaints}}
-- **Analytics Data**: {{usage_patterns}}
-
-SYNTHESIS FRAMEWORK:
-
-Phase 1: DATA IMMERSION
-1. Review all research materials
-2. Note initial patterns and surprises
-3. Identify contradictions and edge cases
-4. Mark emotionally charged responses
-
-Phase 2: THEMATIC CODING
-1. Code data segments by topic
-2. Group related codes into themes
-3. Identify relationships between themes
-4. Note frequency and intensity
-
-Phase 3: PATTERN IDENTIFICATION
-1. Map behavioral patterns
-2. Identify user archetypes
-3. Discover unmet needs
-4. Recognize opportunity areas
-
-Phase 4: INSIGHT GENERATION
-1. Synthesize findings into insights
-2. Prioritize by impact and frequency
-3. Connect to design opportunities
-4. Validate against data
-
-DELIVER YOUR SYNTHESIS AS:
-
-## USER RESEARCH SYNTHESIS REPORT
-
-### EXECUTIVE SUMMARY
-- **Research Overview**: [Methods, participants, timeline]
-- **Key Insights**: [Top 3-5 actionable findings]
-- **Recommended Actions**: [Immediate next steps]
-- **Critical Discoveries**: [Surprising or contrary findings]
-
-### PARTICIPANT OVERVIEW
-```
-
-Total Participants: {{N}}
-Demographics:
-
-- Age Range: {{range}}
-- Primary Segments: {{segments}}
-- Experience Level: {{breakdown}}
-- Geographic Distribution: {{locations}}
-
-Recruitment Method: {{method}}
-Research Dates: {{timeline}}
+## Prompt
 
 ```
+I'll help you synthesize your user research into actionable insights. Let me understand your research:
 
-### KEY INSIGHTS
+**About your research:**
+1. What type of research did you conduct? (interviews, surveys, usability tests, etc.)
+2. How many participants? What was their profile?
+3. What were your main research questions?
+4. What product/service were you researching?
 
-#### INSIGHT 1: {{Insight_Title}}
-**Finding**: {{one_sentence_summary}}
+**Research data:**
+5. What are the key findings you've noticed so far?
+6. Any surprising or contradictory feedback?
+7. What pain points did users mention most?
+8. What delighted or satisfied users?
 
-**Supporting Evidence**:
-- Quote: "{{participant_quote}}" - P{{#}}, {{demographic}}
-- Behavior: {{observed_pattern}} ({{N}} participants)
-- Data: {{metric}} shows {{pattern}}
+**Context and goals:**
+9. What decisions need to be made based on this research?
+10. Who are the stakeholders for these insights?
+11. What's the timeline for implementing changes?
+12. Any constraints to consider? (technical, business, resources)
 
-**Underlying Need**: {{psychological_need}}
+Based on your answers, I'll provide:
 
-**Design Implication**: {{how_to_address}}
+**SYNTHESIZED INSIGHTS** - Key themes and patterns from your data
+**USER NEEDS FRAMEWORK** - Prioritized needs and opportunities
+**PERSONAS & JOURNEYS** - User archetypes and experience maps
+**RECOMMENDATIONS** - Actionable next steps with rationale
+**IMPACT ANALYSIS** - Expected outcomes and success metrics
 
-**Priority**: High/Medium/Low
-**Confidence**: High/Medium/Low
-
-#### INSIGHT 2: {{Insight_Title}}
-[Similar structure]
-
-### USER BEHAVIORAL PATTERNS
-
-#### PATTERN 1: {{Pattern_Name}}
+Share your research details and let's uncover meaningful insights!
 ```
 
-Trigger → Behavior → Outcome
-{{trigger}} → {{action}} → {{result}}
+## Example Usage
 
-Frequency: {{X}}% of participants
-Context: {{when_occurs}}
-Current Workarounds: {{how_users_cope}}
+**User Input:**
+```
+1. 15 user interviews + analytics review for our project management tool
+2. 15 participants: 5 project managers, 5 developers, 5 designers from tech companies
+3. How do teams collaborate on projects? What are their biggest frustrations? What tools do they use?
+4. Enterprise project management SaaS platform
 
+5. Teams struggle with context switching, too many tools, unclear project status
+6. Surprising: Most prefer simple tools over feature-rich ones. Designers hate Gantt charts
+7. Top pain points: Finding latest files (mentioned 12x), knowing who's working on what (10x), too many notifications (8x)
+8. Love: Visual project boards, quick status updates, integrations with their existing tools
+
+9. Need to decide on Q2 roadmap priorities and possible product pivot
+10. CPO, design team, engineering leads
+11. Planning sprint next week, development starts in 3 weeks
+12. Limited dev resources (5 engineers), must integrate with Slack/Teams
 ```
 
-**Example Journey**:
-1. User encounters {{situation}}
-2. They attempt to {{action}}
-3. This results in {{outcome}}
-4. Leading to {{emotion/next_action}}
+**Assistant Output:**
 
-### USER ARCHETYPES
+Based on your user research, here are synthesized insights to guide your Q2 roadmap:
 
-#### ARCHETYPE 1: "{{Archetype_Name}}"
-**Characteristics**:
-- Demographics: {{typical_demo}}
-- Behaviors: {{key_behaviors}}
-- Goals: {{primary_goals}}
-- Frustrations: {{pain_points}}
-- Quote: "{{representative_quote}}"
+## SYNTHESIZED INSIGHTS
 
-**Needs Hierarchy**:
-1. {{most_critical_need}}
-2. {{secondary_need}}
-3. {{tertiary_need}}
+### Theme 1: Simplicity Paradox
+**Pattern**: Users are drowning in features while starving for clarity
+- 13/15 participants mentioned "too complex" or "overwhelming"
+- Feature usage analytics likely show 20% of features get 80% of use
+- **Key Insight**: Your power users want less power, more flow
 
-**Current Journey Pain Points**:
-- {{stage_1}}: {{friction_point}}
-- {{stage_2}}: {{friction_point}}
-- {{stage_3}}: {{friction_point}}
+### Theme 2: Context is King
+**Pattern**: Information scatter creates productivity drain
+- File finding frustration (80% of participants) suggests deeper issue
+- Users spend ~30 min/day just orienting themselves
+- **Key Insight**: The problem isn't project management—it's project awareness
 
-**Design Opportunities**:
-- {{opportunity_1}}
-- {{opportunity_2}}
+### Theme 3: Tool Fatigue
+**Pattern**: Integration beats innovation
+- Average user switches between 8-12 tools daily
+- "Another dashboard to check" = adoption killer
+- **Key Insight**: Be the glue, not another app
 
-#### ARCHETYPE 2: "{{Archetype_Name}}"
-[Similar structure]
+### Theme 4: Visual vs. Verbose
+**Pattern**: Different roles need different views
+- Designers reject Gantt charts but love Kanban
+- Developers want lists and filters
+- PMs need both plus reporting
+- **Key Insight**: One-size-fits-all UI fails all
 
-### JOBS-TO-BE-DONE ANALYSIS
+## USER NEEDS FRAMEWORK
 
-#### PRIMARY JOBS
-1. **When {{situation}}, I want to {{job}}, so I can {{outcome}}**
-   - Current Solution: {{how_done_today}}
-   - Satisfaction: {{rating}}/10
-   - Barriers: {{what_prevents_success}}
+### Critical Needs (Address First)
+1. **Instant Context** - "What's happening right now?"
+   - Who's doing what
+   - Latest changes
+   - Blockers/issues
+   
+2. **Unified Information** - "Where's the latest version?"
+   - Single source of truth
+   - Version control clarity
+   - File/asset management
 
-2. **When {{situation}}, I want to {{job}}, so I can {{outcome}}**
-   [Similar structure]
+3. **Quiet Efficiency** - "Only tell me what matters"
+   - Smart notifications
+   - Personalized alerts
+   - Batch updates
 
-#### UNDERSERVED JOBS
-- {{job_1}}: No adequate solution currently
-- {{job_2}}: Requires multiple tools/steps
+### Important Needs (Address Next)
+4. Visual flexibility for different roles
+5. Seamless tool integration
+6. Mobile quick-actions
 
-### EMOTIONAL JOURNEY MAP
+### Nice-to-Have (Future)
+7. AI-powered insights
+8. Advanced analytics
+9. Resource planning
 
-```
+## PERSONAS & JOURNEYS
 
-         😊 Delighted
-         😌 Satisfied
-         😐 Neutral
-         😕 Frustrated
-         😤 Angry
+### Persona 1: "Clarity-Seeking Chris" (Project Manager)
+**Needs**: Bird's-eye view, quick status checks, executive reports
+**Journey Pain Point**: Monday morning scramble to understand project state
+**Solution**: Weekend digest + Monday dashboard
 
-Start → {{stage_1}} → {{stage_2}} → {{stage_3}} → End
-😐 😕 😤 😌
+### Persona 2: "Flow-State Fiona" (Developer)  
+**Needs**: Minimal interruption, clear tasks, quick updates
+**Journey Pain Point**: Context switching during deep work
+**Solution**: Batched notifications + keyboard shortcuts
 
-Key Moments:
+### Persona 3: "Visual Vic" (Designer)
+**Needs**: Visual organization, asset management, collaboration
+**Journey Pain Point**: Hunting for latest mockups across tools
+**Solution**: Visual file browser + version preview
 
-- {{moment_1}}: "{{user_feeling}}"
-- {{moment_2}}: "{{user_feeling}}"
+## RECOMMENDATIONS
 
-```
+### Q2 Roadmap Priorities
 
-### UNMET NEEDS PRIORITIZATION
+#### Priority 1: Context Dashboard (6 weeks)
+**What**: Personalized "What's happening" view
+- Smart summary of changes since last visit
+- Role-based default views
+- One-click drill-down
 
-| Need | Frequency | Severity | Current Solution | Opportunity Size |
-|------|-----------|----------|------------------|------------------|
-| {{need_1}} | High | High | {{solution}} | Large |
-| {{need_2}} | Medium | High | {{solution}} | Medium |
-| {{need_3}} | High | Medium | {{solution}} | Medium |
+**Why**: Addresses top pain point for 80% of users
+**Impact**: 30 min/day saved → 2.5 hrs/week productivity gain
 
-### DESIGN RECOMMENDATIONS
+#### Priority 2: Universal File Finder (4 weeks)
+**What**: Spotify-like search across all project assets
+- Instant search with preview
+- "Latest version" indicator
+- Direct edit/comment from results
 
-#### IMMEDIATE OPPORTUNITIES
-1. **{{Recommendation_1}}**
-   - Addresses: {{insight_reference}}
-   - Impact: {{user_benefit}}
-   - Effort: {{implementation_effort}}
-   - Success Metric: {{how_to_measure}}
+**Why**: #1 specific complaint, relatively quick win
+**Impact**: Reduce file-finding from 15 min to 15 seconds
 
-2. **{{Recommendation_2}}**
-   [Similar structure]
+#### Priority 3: Smart Notification Engine (3 weeks)
+**What**: AI-grouped, role-aware notifications
+- Batch similar updates
+- Importance scoring
+- Slack/Teams native delivery
 
-#### CONCEPT DIRECTIONS
+**Why**: Reduces noise, increases signal
+**Impact**: 70% reduction in interruptions
 
-**Concept A: {{Concept_Name}}**
-- Core Idea: {{description}}
-- Key Features:
-  - {{feature_1}}: Addresses {{need}}
-  - {{feature_2}}: Addresses {{need}}
-- Risks: {{potential_issues}}
-- Test Method: {{validation_approach}}
+### Product Pivot Consideration
 
-### QUOTES & VERBATIMS
+**From**: "All-in-one project management platform"
+**To**: "The intelligent project hub that makes your tools work together"
 
-#### ON {{TOPIC_1}}
-- "{{impactful_quote}}" - P{{#}}
-- "{{impactful_quote}}" - P{{#}}
-- "{{impactful_quote}}" - P{{#}}
+This positions you as the connectivity layer vs. another destination.
 
-#### ON {{TOPIC_2}}
-[Similar structure]
+## IMPACT ANALYSIS
 
-### CONTRADICTIONS & EDGE CASES
+### Success Metrics
+1. **Time to Context**: Measure from login → productive action (target: <30 seconds)
+2. **Daily Active Use**: Track 5-day rolling average (target: 85%)
+3. **Cross-Tool Actions**: Integration usage/user/day (target: 10+)
+4. **NPS by Role**: Segment satisfaction (target: 50+ for each)
 
-**Stated vs. Observed**:
-- Users say: "{{stated_preference}}"
-- But do: {{actual_behavior}}
-- Implication: {{design_consideration}}
+### Expected Outcomes
+- **Month 1**: 25% reduction in "where is..." support tickets
+- **Month 2**: 40% increase in daily active users
+- **Month 3**: 15-point NPS improvement
 
-**Edge Case Users**:
-- {{edge_case_1}}: {{description}} ({{%}} of sample)
-- {{edge_case_2}}: {{description}} ({{%}} of sample)
+### Risk Mitigation
+- **Risk**: Feature removal backlash
+- **Mitigation**: Progressive disclosure—hide, don't remove
 
-### RESEARCH GAPS
+### Next Steps
+1. Share these insights in planning sprint
+2. Create low-fi prototypes of Context Dashboard
+3. Run concept validation with 5 users
+4. Define technical integration requirements
+5. Set up success metric tracking
 
-**Questions Remaining**:
-1. {{question_1}} - Recommend: {{method}}
-2. {{question_2}} - Recommend: {{method}}
-
-**Validation Needed**:
-- {{assumption_1}}: Test with {{method}}
-- {{assumption_2}}: Test with {{method}}
-
-### APPENDIX: METHODOLOGY
-
-**Data Analysis Process**:
-1. {{step_1}}
-2. {{step_2}}
-3. {{step_3}}
-
-**Potential Biases**:
-- {{bias_1}}: Mitigated by {{approach}}
-- {{bias_2}}: Mitigated by {{approach}}
-
-**Confidence Levels**:
-- High Confidence: {{criteria}}
-- Medium Confidence: {{criteria}}
-- Low Confidence: {{criteria}}
-```
-
-## Usage Instructions
-
-1. Gather all research data (interviews, surveys, observations, analytics)
-2. Organize data by source and method
-3. Include participant demographics and context
-4. Fill in template with raw data and quotes
-5. Run synthesis to identify patterns and insights
-6. Review archetypes against actual participants
-7. Use recommendations to guide design decisions
-
-## Examples
-
-### Example 1: Mobile Banking App Research
-
-**Input**:
-
-```
-{{product_description}}: Mobile banking app for millennials
-{{methods_used}}: 20 user interviews, 150 survey responses, 10 usability tests
-{{participant_count}}: 180 total
-{{demographic_breakdown}}: Ages 25-40, 60% urban, mixed income levels
-{{key_questions}}: How do users manage money? What are banking pain points?
-{{business_goals}}: Increase mobile adoption, reduce support calls
-{{interview_excerpts}}: "I never know how much I can actually spend", "I hate calling the bank"
-{{behavioral_observations}}: Users check balance 5x more than transactions
-```
-
-**Output**: [Comprehensive synthesis revealing anxiety around spending limits, desire for proactive financial guidance, and preference for self-service solutions]
+Your users are telling you they want a copilot, not another cockpit. Focus Q2 on making their existing workflow smoother rather than adding new capabilities.
 
 ## Related Prompts
 
-- [Persona Development Workshop](/prompts/creative/ux-design/persona-builder.md)
-- [Journey Mapping Facilitator](/prompts/creative/ux-design/journey-mapper.md)
-- [Usability Test Analyzer](/prompts/creative/ux-design/usability-analyzer.md)
-
-## Research Notes
-
-- Thematic analysis based on Braun & Clarke's methodology
-- Jobs-to-be-Done framework from Clayton Christensen
-- Behavioral insights incorporate Kahneman's System 1/2 thinking
-- Affinity diagramming adapted from IDEO's design thinking
-- Synthesis structure proven to reduce analysis time by 60%
+- [Product Strategy Advisor](./product-strategy-expert.md)
+- [User Journey Mapper](./journey-mapping-expert.md)
+- [Feature Prioritization Expert](./feature-prioritization-expert.md)
