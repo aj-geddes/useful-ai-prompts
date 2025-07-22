@@ -224,7 +224,7 @@ description: "Discover 200+ practical, ready-to-use AI prompts organized by work
             <h2>Ready to Supercharge Your Workflow?</h2>
             <p>Join thousands of professionals using our AI prompts to enhance their productivity.</p>
             <div class="cta-actions">
-                <a href="/categories/" class="btn btn-primary btn-large">
+                <a href="{{ '/categories/' | relative_url }}" class="btn btn-primary btn-large">
                     Start Browsing
                     <i class="fas fa-arrow-right"></i>
                 </a>
