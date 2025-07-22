@@ -34,7 +34,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
         <div class="categories-grid-container">
             <h2 class="section-subtitle">All Categories</h2>
             <div class="categories-grid">
-                <a href="/categories/analysis/" class="category-card detailed">
+                <a href="{{ '/categories/analysis/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
@@ -53,7 +53,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/creation/" class="category-card detailed">
+                <a href="{{ '/categories/creation/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-palette"></i>
                     </div>
@@ -72,7 +72,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/planning/" class="category-card detailed">
+                <a href="{{ '/categories/planning/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
@@ -91,7 +91,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/problem-solving/" class="category-card detailed">
+                <a href="{{ '/categories/problem-solving/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-tools"></i>
                     </div>
@@ -110,7 +110,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/communication/" class="category-card detailed">
+                <a href="{{ '/categories/communication/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-comments"></i>
                     </div>
@@ -129,7 +129,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/learning-development/" class="category-card detailed">
+                <a href="{{ '/categories/learning-development/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -148,7 +148,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/decision-making/" class="category-card detailed">
+                <a href="{{ '/categories/decision-making/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-balance-scale"></i>
                     </div>
@@ -167,7 +167,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/creativity-innovation/" class="category-card detailed">
+                <a href="{{ '/categories/creativity-innovation/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
@@ -186,7 +186,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/evaluation-assessment/" class="category-card detailed">
+                <a href="{{ '/categories/evaluation-assessment/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
@@ -205,7 +205,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/optimization/" class="category-card detailed">
+                <a href="{{ '/categories/optimization/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
@@ -224,7 +224,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/research-workflows/" class="category-card detailed">
+                <a href="{{ '/categories/research-workflows/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-search"></i>
                     </div>
@@ -243,7 +243,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/management-leadership/" class="category-card detailed">
+                <a href="{{ '/categories/management-leadership/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -262,7 +262,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/technical-workflows/" class="category-card detailed">
+                <a href="{{ '/categories/technical-workflows/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-code"></i>
                     </div>
@@ -281,7 +281,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
                     </div>
                 </a>
                 
-                <a href="/categories/customer-focused/" class="category-card detailed">
+                <a href="{{ '/categories/customer-focused/' | relative_url }}" class="category-card detailed">
                     <div class="category-icon">
                         <i class="fas fa-heart"></i>
                     </div>
@@ -306,7 +306,7 @@ description: "Explore all 14 workflow categories containing 200+ AI prompts orga
             <h2>Need Help Finding the Right Prompt?</h2>
             <p>Can't find what you're looking for? Try our search function or browse by tags to discover prompts that match your specific needs.</p>
             <div class="help-actions">
-                <a href="/search/" class="btn btn-primary">
+                <a href="{{ '/search/' | relative_url }}" class="btn btn-primary">
                     <i class="fas fa-search"></i>
                     Search Prompts
                 </a>
