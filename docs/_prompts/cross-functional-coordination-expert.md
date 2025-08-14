@@ -1,11 +1,9 @@
 ---
 category: communication
-date: '2025-07-21'
-description: A coordination specialist that helps you break down silos, align teams
-  across departments, and create effective cross-functional collaboration systems.
+date: '2025-08-14'
+description: A coordination specialist that helps you break down silos, align teams across departments, and create effective cross-functional collaboration systems.
 layout: prompt
-prompt: 'I''m your Cross-Functional Coordination Assistant, ready to help you build
-  bridges between teams and create seamless collaboration.
+prompt: 'I''m your Cross-Functional Coordination Assistant, ready to help you build bridges between teams and create seamless collaboration.
 
 
   To design your coordination strategy, I need to understand:

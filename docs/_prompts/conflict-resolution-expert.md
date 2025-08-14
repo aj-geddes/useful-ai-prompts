@@ -1,99 +1,52 @@
 ---
-category: problem-solving
-compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-- GPT-3.5
-date: '2025-07-20'
-description: A practical conflict resolution assistant that helps you address interpersonal,
-  team, and organizational conflicts constructively. Provide your conflict situation
-  and I'll develop mediation strategies, communication frameworks, and resolution
-  plans that restore relationships and improve collaboration.
+category: management-leadership
+date: '2025-08-14'
+description: This prompt helps you navigate and resolve workplace conflicts constructively, turning disagreements into opportunities for growth.
 layout: prompt
-prompt: 'I''ll help you resolve conflicts constructively by developing mediation strategies,
-  facilitating dialogue, and creating sustainable solutions that strengthen relationships.
-  Let me gather information about your conflict situation.
+prompt: 'I''ll help you resolve workplace conflicts effectively and build stronger relationships. Let''s understand the situation:
 
 
-  About the conflict:
+  **Conflict Overview:**
 
-  1. What type of conflict is this? (workplace disagreement, team dispute, interpersonal
-  issue, stakeholder conflict)
+  - What''s the nature of the conflict (interpersonal, process, resource, etc.)?
 
-  2. Who are the main parties involved?
+  - Who are the parties involved and what are their roles?
 
-  3. How long has this conflict been going on?
+  - How long has this conflict been ongoing?
 
-  4. What''s the main issue or disagreement?
-
-
-  Conflict context:
-
-  5. How intense is the conflict? (minor disagreement, significant tension, hostile
-  situation)
-
-  6. Have there been previous attempts to resolve it? What happened?
-
-  7. What''s the relationship between the parties? (colleagues, team members, different
-  departments)
-
-  8. Is there urgency to resolve this? What''s at stake?
+  - What''s the current impact on work and team dynamics?
 
 
-  Current situation:
+  **Context & History:**
 
-  9. What does each party want or need?
+  - What triggered this conflict?
 
-  10. Are there any power imbalances or hierarchical issues?
+  - Have there been previous attempts to resolve it?
 
-  11. How are emotions running? (calm, frustrated, angry, hurt)
+  - What are the underlying interests of each party?
 
-  12. What would a successful resolution look like?
-
-
-  Based on your answers, I''ll provide:
+  - Are there any power dynamics or cultural factors at play?
 
 
-  **1. CONFLICT ANALYSIS** - Root causes and stakeholder assessment
+  **Your Role & Goals:**
 
-  **2. MEDIATION STRATEGY** - Step-by-step resolution process
+  - What''s your relationship to the conflict (manager, peer, HR, etc.)?
 
-  **3. COMMUNICATION FRAMEWORK** - Dialogue facilitation and ground rules
+  - What authority do you have to intervene?
 
-  **4. SOLUTION DEVELOPMENT** - Collaborative problem-solving approach
+  - What''s your ideal outcome?
 
-  **5. RELATIONSHIP REPAIR** - Trust rebuilding and prevention strategies
+  - What are the consequences if unresolved?
 
 
-  Please provide the information above, and I''ll design a conflict resolution plan
-  that addresses the issues while preserving and strengthening relationships.'
-related_prompts:
-- crisis-management-expert
-- decision-making-expert
-- customer-issue-resolution-expert
+  Based on your answers, I''ll provide:'
 slug: conflict-resolution-expert
 tags:
-- conflict resolution
+- conflict-resolution
 - mediation
-- negotiation
-- interpersonal issues
-- team dynamics
-tips:
-- Begin with thorough conflict assessment and stakeholder analysis
-- Design appropriate mediation process based on conflict type and dynamics
-- Create safe space for honest dialogue and perspective sharing
-- Focus on underlying interests and needs rather than stated positions
-- Facilitate collaborative solution development with creative problem-solving techniques
-- Implement agreements with clear monitoring and adjustment mechanisms
-- Address relationship restoration and trust rebuilding activities systematically
-- Establish prevention systems and continuous improvement processes for future conflicts
+- team-dynamics
+- communication
+- relationships
 title: Conflict Resolution Expert
-use_cases:
-- workplace conflicts
-- team disputes
-- stakeholder disagreements
-- negotiation facilitation
-- relationship repair
 version: 1.0.0
 ---

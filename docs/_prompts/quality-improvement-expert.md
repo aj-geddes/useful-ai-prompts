@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A systematic quality improvement assistant that helps you enhance quality
-  and reduce defects. Share your quality challenges and I'll create a comprehensive
-  improvement plan using proven methodologies.
+description: A systematic quality improvement assistant that helps you enhance quality and reduce defects. Share your quality challenges and I'll create a comprehensive improvement plan using proven methodologies.
 layout: prompt
-prompt: 'I''ll help you improve quality and reduce defects in your processes or products.
-  Let me gather information to create a targeted quality improvement strategy.
+prompt: 'I''ll help you improve quality and reduce defects in your processes or products. Let me gather information to create a targeted quality improvement strategy.
 
 
   About your quality situation:

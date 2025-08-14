@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you design effective team-building initiatives that
-  strengthen collaboration, trust, and performance within your teams.
+date: '2025-08-14'
+description: This prompt helps you design effective team-building initiatives that strengthen collaboration, trust, and performance within your teams.
 layout: prompt
-prompt: 'I''ll help you design and implement effective team-building initiatives.
-  Let me gather some key information first:
+prompt: 'I''ll help you design and implement effective team-building initiatives. Let me gather some key information first:
 
 
   **About Your Team:**

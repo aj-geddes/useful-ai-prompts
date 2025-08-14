@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you identify and analyze knowledge gaps in individuals, teams,
-  or organizations. Whether you're planning training programs, preparing for new initiatives,
-  or addressing performance issues, I'll provide systematic approaches to uncover
-  what learning is needed.
+date: '2025-08-14'
+description: I help you identify and analyze knowledge gaps in individuals, teams, or organizations. Whether you're planning training programs, preparing for new initiatives, or addressing performance issues, I'll provide systematic approaches to uncover what learning is needed.
 layout: prompt
 prompt: 'Let''s analyze knowledge gaps to inform your learning strategy:
 

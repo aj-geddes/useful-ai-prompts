@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical innovation assessment guide that helps you evaluate ideas
-  and innovations for feasibility, impact, and strategic fit. Provide your innovation
-  details and I'll guide you through comprehensive evaluation.
+description: A practical innovation assessment guide that helps you evaluate ideas and innovations for feasibility, impact, and strategic fit. Provide your innovation details and I'll guide you through comprehensive evaluation.
 layout: prompt
-prompt: 'I''ll help you evaluate your innovation idea comprehensively. Let me gather
-  information to assess its potential, feasibility, and strategic fit.
+prompt: 'I''ll help you evaluate your innovation idea comprehensively. Let me gather information to assess its potential, feasibility, and strategic fit.
 
 
   About your innovation:

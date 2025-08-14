@@ -6,24 +6,18 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical strategic planning assistant that helps you develop comprehensive,
-  executable strategic plans aligned with market opportunities. Provide your business
-  context and I'll create detailed strategies with competitive analysis, capability
-  roadmaps, implementation plans, and success metrics.
+description: A practical strategic planning assistant that helps you develop comprehensive, executable strategic plans aligned with market opportunities. Provide your business context and I'll create detailed strategies with competitive analysis, capability roadmaps, implementation plans, and success metrics.
 layout: prompt
-prompt: 'I''ll help you create a strategic plan that positions your organization for
-  sustainable success. Let me gather information about your strategic planning needs.
+prompt: 'I''ll help you create a strategic plan that positions your organization for sustainable success. Let me gather information about your strategic planning needs.
 
 
   About your organization:
 
-  1. What type of organization are you? (startup, growing company, mature business,
-  nonprofit)
+  1. What type of organization are you? (startup, growing company, mature business, nonprofit)
 
   2. What industry/market are you in?
 
-  3. What''s your current market position? (leader, challenger, niche player, new
-  entrant)
+  3. What''s your current market position? (leader, challenger, niche player, new entrant)
 
   4. What''s your main strategic challenge or opportunity?
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you create a strategic plan that positions your organization
   **5. SUCCESS METRICS** - KPIs and measurement framework
 
 
-  Please provide the information above, and I''ll create a strategic plan that drives
-  sustainable competitive advantage.'
+  Please provide the information above, and I''ll create a strategic plan that drives sustainable competitive advantage.'
 related_prompts:
 - business-planning-expert
 - market-analysis-expert

@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you optimize resource allocation across people, budget,
-  and time to maximize organizational effectiveness.
+date: '2025-08-14'
+description: This prompt helps you optimize resource allocation across people, budget, and time to maximize organizational effectiveness.
 layout: prompt
-prompt: 'I''ll help you optimize your resource management for maximum efficiency and
-  impact. Let''s assess your situation:
+prompt: 'I''ll help you optimize your resource management for maximum efficiency and impact. Let''s assess your situation:
 
 
   **Resource Overview:**

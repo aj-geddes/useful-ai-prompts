@@ -1,17 +1,31 @@
 ---
 layout: default
 title: Search Prompts
-description: "Search through 200+ AI prompts to find exactly what you need. Filter by category, tags, or keywords."
+description: "Search through 278+ enterprise-grade AI prompts across 18 specialized sectors. Filter by high-value sectors, categories, tags, or keywords."
 ---
 
 <div class="search-page">
     <div class="container">
         <div class="search-header">
-            <h1 class="page-title">Search Prompts</h1>
+            <h1 class="page-title">Search 278+ Enterprise AI Prompts</h1>
             <p class="page-description">
-                Find the perfect AI prompt from our collection of 200+ professional prompts. 
-                Search by keyword, category, or tag to discover exactly what you need.
+                Discover the perfect AI prompt from our massive collection spanning 18 specialized sectors from Biotechnology to Space Economy. 
+                Search across $50+ trillion in market opportunities with dual-persona expert prompts.
             </p>
+            <div class="search-stats">
+                <div class="search-stat">
+                    <span class="stat-number">278+</span>
+                    <span class="stat-label">Expert Prompts</span>
+                </div>
+                <div class="search-stat">
+                    <span class="stat-number">18</span>
+                    <span class="stat-label">Specialized Sectors</span>
+                </div>
+                <div class="search-stat">
+                    <span class="stat-number">350+</span>
+                    <span class="stat-label">Lines Per Output</span>
+                </div>
+            </div>
         </div>
         
         <div class="search-main">
@@ -33,25 +47,49 @@ description: "Search through 200+ AI prompts to find exactly what you need. Filt
             
             <div class="search-filters">
                 <div class="filter-section">
-                    <h3>Quick Filters</h3>
+                    <h3>🚀 High-Value New Sectors</h3>
+                    <div class="quick-filters high-value-sectors">
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='biotechnology'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            🧬 Biotechnology
+                        </button>
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='space economy'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            🚀 Space Economy
+                        </button>
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='renewable energy'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            ⚡ Renewable Energy
+                        </button>
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='quantum computing'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            ⚛️ Quantum Computing
+                        </button>
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='blockchain'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            🔗 Blockchain
+                        </button>
+                        <button class="filter-btn new-sector" onclick="document.getElementById('searchPageInput').value='government digital'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            🏛️ Government Digital
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Core Business Categories</h3>
                     <div class="quick-filters">
                         <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='analysis'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
                             <i class="fas fa-chart-bar"></i> Analysis
                         </button>
-                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='creation'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                            <i class="fas fa-palette"></i> Creation
+                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='management leadership'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            <i class="fas fa-users-cog"></i> Management & Leadership
                         </button>
-                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='planning'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                            <i class="fas fa-calendar-alt"></i> Planning
+                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='technical workflows'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            <i class="fas fa-code"></i> Technical Workflows
                         </button>
                         <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='communication'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
                             <i class="fas fa-comments"></i> Communication
                         </button>
-                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='problem solving'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                            <i class="fas fa-tools"></i> Problem Solving
-                        </button>
                         <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='decision making'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
                             <i class="fas fa-balance-scale"></i> Decision Making
+                        </button>
+                        <button class="filter-btn" onclick="document.getElementById('searchPageInput').value='customer focused'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
+                            <i class="fas fa-heart"></i> Customer-Focused
                         </button>
                     </div>
                 </div>
@@ -135,6 +173,55 @@ description: "Search through 200+ AI prompts to find exactly what you need. Filt
 .search-header {
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.search-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 12px;
+}
+
+.search-stat {
+    text-align: center;
+}
+
+.search-stat .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.search-stat .stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+.high-value-sectors {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+    border-radius: 12px;
+    border: 2px solid #10b981;
+}
+
+.filter-btn.new-sector {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.filter-btn.new-sector:hover {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    transform: translateY(-2px);
 }
 
 .search-input-container {

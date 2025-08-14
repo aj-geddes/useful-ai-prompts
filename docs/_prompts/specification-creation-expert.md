@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical specification creation assistant that helps you develop clear,
-  comprehensive technical specifications. Provide your requirements and I'll create
-  detailed specifications with all necessary sections, compliance standards, and implementation
-  guidance.
+description: A practical specification creation assistant that helps you develop clear, comprehensive technical specifications. Provide your requirements and I'll create detailed specifications with all necessary sections, compliance standards, and implementation guidance.
 layout: prompt
-prompt: 'I''ll help you create professional technical specifications that clearly
-  define requirements and guide implementation. Let me gather information about your
-  specification needs.
+prompt: 'I''ll help you create professional technical specifications that clearly define requirements and guide implementation. Let me gather information about your specification needs.
 
 
   About your specification:
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create professional technical specifications that clearl
   **5. IMPLEMENTATION GUIDE** - Development approach and best practices
 
 
-  Please provide the information above, and I''ll create a comprehensive specification
-  that ensures clear understanding and successful implementation.'
+  Please provide the information above, and I''ll create a comprehensive specification that ensures clear understanding and successful implementation.'
 related_prompts:
 - api-design-expert
 - system-architecture-designer

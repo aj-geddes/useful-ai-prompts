@@ -27,7 +27,10 @@ class JekyllValidator:
         'analysis', 'communication', 'creation', 'creativity-innovation',
         'customer-focused', 'decision-making', 'evaluation-assessment',
         'learning-development', 'management-leadership', 'optimization',
-        'planning', 'problem-solving', 'research-workflows', 'technical-workflows'
+        'planning', 'problem-solving', 'research-workflows', 'technical-workflows',
+        'biotechnology', 'blockchain', 'government-digital', 'healthcare-digital',
+        'quantum-computing', 'renewable-energy', 'space-economy', 'supply-chain',
+        'business-workflows'
     }
     
     def __init__(self, prompts_dir: str = "docs/_prompts", categories_dir: str = "docs/_categories"):

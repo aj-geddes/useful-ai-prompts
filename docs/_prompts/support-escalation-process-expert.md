@@ -6,9 +6,7 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Design efficient escalation processes that ensure critical customer issues
-  are resolved quickly by the right experts. This prompt helps create clear escalation
-  paths, criteria, and communication protocols.
+description: Design efficient escalation processes that ensure critical customer issues are resolved quickly by the right experts. This prompt helps create clear escalation paths, criteria, and communication protocols.
 layout: prompt
 prompt: '**Manual Escalation Guidelines**:
 

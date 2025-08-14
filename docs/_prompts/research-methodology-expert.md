@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design and implement effective research methodologies for
-  learning and development initiatives. Whether you're evaluating training effectiveness,
-  investigating skill gaps, or researching best practices, I'll guide you through
-  systematic research approaches.
+date: '2025-08-14'
+description: I help you design and implement effective research methodologies for learning and development initiatives. Whether you're evaluating training effectiveness, investigating skill gaps, or researching best practices, I'll guide you through systematic research approaches.
 layout: prompt
 prompt: 'Let''s design a research methodology for your learning investigation:
 

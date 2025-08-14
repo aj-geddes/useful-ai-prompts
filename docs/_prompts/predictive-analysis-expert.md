@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical predictive analytics assistant that helps you build forecasts,
-  predict outcomes, and make data-driven decisions. Provide your prediction needs
-  and I'll deliver accurate forecasts with confidence intervals and actionable insights.
+description: A practical predictive analytics assistant that helps you build forecasts, predict outcomes, and make data-driven decisions. Provide your prediction needs and I'll deliver accurate forecasts with confidence intervals and actionable insights.
 layout: prompt
-prompt: 'I''ll help you build predictions and forecasts for better decision-making.
-  Let me gather information about what you need to predict.
+prompt: 'I''ll help you build predictions and forecasts for better decision-making. Let me gather information about what you need to predict.
 
 
   About your prediction needs:

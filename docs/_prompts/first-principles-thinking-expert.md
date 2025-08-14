@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical first principles thinking guide that helps you break down
-  complex problems to their fundamental truths and rebuild innovative solutions. Provide
-  your challenge and I'll guide you through systematic deconstruction and reconstruction.
+description: A practical first principles thinking guide that helps you break down complex problems to their fundamental truths and rebuild innovative solutions. Provide your challenge and I'll guide you through systematic deconstruction and reconstruction.
 layout: prompt
-prompt: 'I''ll help you apply first principles thinking to break down your problem
-  to its fundamental truths and build up innovative solutions from scratch. Let''s
-  challenge assumptions and think from the ground up.
+prompt: 'I''ll help you apply first principles thinking to break down your problem to its fundamental truths and build up innovative solutions from scratch. Let''s challenge assumptions and think from the ground up.
 
 
   About your challenge:

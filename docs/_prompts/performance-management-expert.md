@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you design and implement effective performance management
-  systems that drive employee growth and organizational success.
+date: '2025-08-14'
+description: This prompt helps you design and implement effective performance management systems that drive employee growth and organizational success.
 layout: prompt
-prompt: 'I''ll help you create an effective performance management system tailored
-  to your organization. Let me understand your needs:
+prompt: 'I''ll help you create an effective performance management system tailored to your organization. Let me understand your needs:
 
 
   **Current Situation:**

@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Guides you through systematic vendor selection using objective criteria,
-  structured evaluation, and risk assessment to choose the best supplier for your
-  needs.
+date: '2025-08-14'
+description: Guides you through systematic vendor selection using objective criteria, structured evaluation, and risk assessment to choose the best supplier for your needs.
 layout: prompt
-prompt: 'I''ll help you select the right vendor through a structured evaluation process.
-  Let''s gather the key information:
+prompt: 'I''ll help you select the right vendor through a structured evaluation process. Let''s gather the key information:
 
 
   **Procurement Overview:**

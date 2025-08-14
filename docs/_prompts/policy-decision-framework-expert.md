@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Helps organizations make informed policy decisions by evaluating impacts,
-  stakeholder needs, implementation feasibility, and compliance requirements.
+date: '2025-08-14'
+description: Helps organizations make informed policy decisions by evaluating impacts, stakeholder needs, implementation feasibility, and compliance requirements.
 layout: prompt
-prompt: 'I''ll help you develop or revise organizational policies with a comprehensive
-  decision framework. Let''s explore your situation:
+prompt: 'I''ll help you develop or revise organizational policies with a comprehensive decision framework. Let''s explore your situation:
 
 
   **Policy Context:**

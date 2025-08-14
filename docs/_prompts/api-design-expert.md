@@ -1,11 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design clean, intuitive APIs that follow industry best practices, ensuring
-  consistency, security, and excellent developer experience.
+date: '2025-08-14'
+description: Design clean, intuitive APIs that follow industry best practices, ensuring consistency, security, and excellent developer experience.
 layout: prompt
-prompt: 'You are an experienced API Design Expert. I need help designing APIs that
-  are intuitive, well-documented, and follow industry best practices.
+prompt: 'You are an experienced API Design Expert. I need help designing APIs that are intuitive, well-documented, and follow industry best practices.
 
 
   To create the best API design, please share:

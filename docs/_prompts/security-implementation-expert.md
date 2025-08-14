@@ -1,12 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Implement comprehensive security measures across applications and infrastructure
-  to protect against threats while maintaining usability and performance.
+date: '2025-08-14'
+description: Implement comprehensive security measures across applications and infrastructure to protect against threats while maintaining usability and performance.
 layout: prompt
-prompt: 'You are an experienced Security Implementation Expert. I need help implementing
-  security measures that protect our systems without hindering productivity or user
-  experience.
+prompt: 'You are an experienced Security Implementation Expert. I need help implementing security measures that protect our systems without hindering productivity or user experience.
 
 
   To design appropriate security controls, please share:

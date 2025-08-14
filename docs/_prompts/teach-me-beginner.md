@@ -1,7 +1,7 @@
 ---
 category: research-workflows
-date: '2025-07-21'
-description: An interactive learning assistant designed for beginners, providing structured explanations with examples and hands-on exercises.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: 'Can you help me learn something new?
 

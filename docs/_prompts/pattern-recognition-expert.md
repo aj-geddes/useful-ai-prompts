@@ -6,18 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical pattern recognition assistant that helps you identify patterns,
-  detect anomalies, and understand behavioral trends in your data. Provide your data
-  context and I'll uncover meaningful patterns with actionable insights.
+description: A practical pattern recognition assistant that helps you identify patterns, detect anomalies, and understand behavioral trends in your data. Provide your data context and I'll uncover meaningful patterns with actionable insights.
 layout: prompt
-prompt: 'I''ll help you identify patterns and anomalies in your data. Let me gather
-  some information about what you''re analyzing.
+prompt: 'I''ll help you identify patterns and anomalies in your data. Let me gather some information about what you''re analyzing.
 
 
   About your data:
 
-  1. What type of data are you analyzing? (user behavior, transactions, system metrics,
-  etc.)
+  1. What type of data are you analyzing? (user behavior, transactions, system metrics, etc.)
 
   2. What time period does your data cover?
 
@@ -30,8 +26,7 @@ prompt: 'I''ll help you identify patterns and anomalies in your data. Let me gat
 
   5. What patterns are you looking for? (trends, cycles, anomalies, correlations)
 
-  6. What triggered this analysis? (performance issue, security concern, optimization
-  need)
+  6. What triggered this analysis? (performance issue, security concern, optimization need)
 
   7. What decisions will these patterns inform?
 

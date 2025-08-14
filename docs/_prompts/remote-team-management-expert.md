@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you build and manage high-performing remote teams with
-  strong culture, clear communication, and effective collaboration.
+date: '2025-08-14'
+description: This prompt helps you build and manage high-performing remote teams with strong culture, clear communication, and effective collaboration.
 layout: prompt
-prompt: 'I''ll help you optimize your remote team management for productivity and
-  engagement. Let''s explore your setup:
+prompt: 'I''ll help you optimize your remote team management for productivity and engagement. Let''s explore your setup:
 
 
   **Remote Team Structure:**

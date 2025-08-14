@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Design customer onboarding experiences that drive rapid time-to-value
-  and long-term success. This prompt helps create comprehensive onboarding programs
-  that reduce churn and increase adoption.
+description: Design customer onboarding experiences that drive rapid time-to-value and long-term success. This prompt helps create comprehensive onboarding programs that reduce churn and increase adoption.
 layout: prompt
-prompt: 'I''ll help you create an exceptional customer onboarding experience. Let''s
-  understand your needs:
+prompt: 'I''ll help you create an exceptional customer onboarding experience. Let''s understand your needs:
 
 
   PRODUCT/SERVICE CONTEXT:

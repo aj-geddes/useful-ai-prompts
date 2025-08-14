@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical risk management planning assistant that helps you identify,
-  assess, and mitigate risks to protect your organization while enabling strategic
-  objectives. Provide your risk context and I'll develop comprehensive risk frameworks
-  with mitigation strategies, contingency plans, and monitoring systems.
+description: A practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. Provide your risk context and I'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive risk management plan that protects
-  your organization while enabling strategic growth. Let me gather information about
-  your risk management needs.
+prompt: 'I''ll help you create a comprehensive risk management plan that protects your organization while enabling strategic growth. Let me gather information about your risk management needs.
 
 
   About your organization:
@@ -31,8 +26,7 @@ prompt: 'I''ll help you create a comprehensive risk management plan that protect
 
   5. What are your main business objectives or projects?
 
-  6. What risks are you most concerned about? (operational, financial, strategic,
-  compliance)
+  6. What risks are you most concerned about? (operational, financial, strategic, compliance)
 
   7. What regulatory requirements do you need to meet?
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you create a comprehensive risk management plan that protect
   **5. GOVERNANCE STRUCTURE** - Roles, responsibilities, and decision-making processes
 
 
-  Please provide the information above, and I''ll design a risk management plan that
-  protects your organization while supporting your strategic objectives.'
+  Please provide the information above, and I''ll design a risk management plan that protects your organization while supporting your strategic objectives.'
 related_prompts:
 - contingency-planning-expert
 - business-continuity-expert

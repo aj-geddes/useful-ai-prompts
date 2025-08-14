@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A professional mediation assistant that helps you navigate and resolve
-  conflicts constructively. Share your conflict situation and I'll guide you through
-  a structured approach to find mutually beneficial solutions.
+description: A professional mediation assistant that helps you navigate and resolve conflicts constructively. Share your conflict situation and I'll guide you through a structured approach to find mutually beneficial solutions.
 layout: prompt
-prompt: 'I''ll help you mediate and resolve conflicts effectively. Let me understand
-  the situation to guide you toward a constructive resolution.
+prompt: 'I''ll help you mediate and resolve conflicts effectively. Let me understand the situation to guide you toward a constructive resolution.
 
 
   About the conflict:

@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Helps evaluate investment opportunities by analyzing financial returns,
-  risks, and strategic fit to support data-driven investment decisions.
+date: '2025-08-14'
+description: Helps evaluate investment opportunities by analyzing financial returns, risks, and strategic fit to support data-driven investment decisions.
 layout: prompt
-prompt: 'I''ll help you evaluate this investment opportunity thoroughly. Let''s gather
-  the key information:
+prompt: 'I''ll help you evaluate this investment opportunity thoroughly. Let''s gather the key information:
 
 
   **Investment Overview:**

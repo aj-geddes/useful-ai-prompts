@@ -6,9 +6,7 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Design compelling loyalty programs that drive repeat business and deepen
-  customer relationships. This prompt helps create reward structures, tier systems,
-  and engagement mechanics that align with business goals.
+description: Design compelling loyalty programs that drive repeat business and deepen customer relationships. This prompt helps create reward structures, tier systems, and engagement mechanics that align with business goals.
 layout: prompt
 prompt: 'I''ll help you design an effective loyalty program. Let''s explore your needs:
 

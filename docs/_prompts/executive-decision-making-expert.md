@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps executives make better decisions through structured
-  frameworks, comprehensive analysis, and strategic thinking.
+date: '2025-08-14'
+description: This prompt helps executives make better decisions through structured frameworks, comprehensive analysis, and strategic thinking.
 layout: prompt
-prompt: 'I''ll help you make well-informed executive decisions using proven frameworks
-  and strategic analysis. Let''s explore your decision:
+prompt: 'I''ll help you make well-informed executive decisions using proven frameworks and strategic analysis. Let''s explore your decision:
 
 
   **Decision Context:**

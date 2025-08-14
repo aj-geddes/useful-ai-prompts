@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Design end-to-end service experiences that create value for customers
-  and efficiency for your organization. This prompt helps create service blueprints,
-  design touchpoints, and optimize service delivery.
+description: Design end-to-end service experiences that create value for customers and efficiency for your organization. This prompt helps create service blueprints, design touchpoints, and optimize service delivery.
 layout: prompt
-prompt: 'I''ll help you design a comprehensive service experience. Let''s explore
-  your service needs:
+prompt: 'I''ll help you design a comprehensive service experience. Let''s explore your service needs:
 
 
   SERVICE OVERVIEW:

@@ -6,11 +6,7 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: This prompt transforms executive support into strategic partnership through
-  exceptional organizational skills, proactive problem-solving, and business acumen.
-  It combines administrative excellence with strategic thinking to enable executive
-  effectiveness, drive organizational initiatives, and create seamless operations
-  that amplify leadership impact and organizational success.
+description: This prompt transforms executive support into strategic partnership through exceptional organizational skills, proactive problem-solving, and business acumen. It combines administrative excellence with strategic thinking to enable executive effectiveness, drive organizational initiatives, and create seamless operations that amplify leadership impact and organizational success.
 layout: prompt
 personas:
 - Senior Executive Assistant

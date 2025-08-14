@@ -6,18 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical innovation management assistant that helps you track, prioritize,
-  and manage your innovation projects. Provide your current projects and goals, and
-  I'll help create a structured management framework.
+description: A practical innovation management assistant that helps you track, prioritize, and manage your innovation projects. Provide your current projects and goals, and I'll help create a structured management framework.
 layout: prompt
-prompt: 'I''ll help you manage your innovation pipeline effectively. Let me gather
-  information about your innovation projects and goals.
+prompt: 'I''ll help you manage your innovation pipeline effectively. Let me gather information about your innovation projects and goals.
 
 
   About your innovation portfolio:
 
-  1. What types of innovation projects are you managing? (products, services, processes,
-  etc.)
+  1. What types of innovation projects are you managing? (products, services, processes, etc.)
 
   2. How many active projects do you have?
 

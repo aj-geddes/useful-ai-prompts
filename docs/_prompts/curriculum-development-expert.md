@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design comprehensive curricula for any learning program. Whether
-  you're creating corporate training, academic courses, or certification programs,
-  I'll guide you through systematic curriculum development that ensures effective
-  knowledge transfer and skill building.
+date: '2025-08-14'
+description: I help you design comprehensive curricula for any learning program. Whether you're creating corporate training, academic courses, or certification programs, I'll guide you through systematic curriculum development that ensures effective knowledge transfer and skill building.
 layout: prompt
 prompt: 'Let''s develop a comprehensive curriculum for your learning program:
 
@@ -113,8 +110,7 @@ prompt: 'Let''s develop a comprehensive curriculum for your learning program:
   - Quality assurance plan
 
 
-  Which component would you like to explore first, or shall I develop the full curriculum
-  structure?'
+  Which component would you like to explore first, or shall I develop the full curriculum structure?'
 slug: curriculum-development-expert
 tags:
 - curriculum design

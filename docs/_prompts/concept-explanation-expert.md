@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you explain complex concepts clearly and effectively. Whether
-  you're creating training materials, onboarding new team members, or teaching technical
-  subjects, I'll help you break down information into understandable components using
-  proven teaching methods.
+date: '2025-08-14'
+description: I help you explain complex concepts clearly and effectively. Whether you're creating training materials, onboarding new team members, or teaching technical subjects, I'll help you break down information into understandable components using proven teaching methods.
 layout: prompt
 prompt: 'I''ll help you explain complex concepts effectively. Let me gather some information:
 
@@ -111,8 +108,7 @@ prompt: 'I''ll help you explain complex concepts effectively. Let me gather some
   - Infographic concepts
 
 
-  Which aspect would you like me to develop first, or should I create the complete
-  explanation framework?'
+  Which aspect would you like me to develop first, or should I create the complete explanation framework?'
 slug: concept-explanation-expert
 tags:
 - teaching

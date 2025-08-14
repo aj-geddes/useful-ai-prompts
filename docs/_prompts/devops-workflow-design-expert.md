@@ -1,12 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design comprehensive DevOps workflows that automate everything from development
-  to production, enabling faster delivery and improved reliability.
+date: '2025-08-14'
+description: Design comprehensive DevOps workflows that automate everything from development to production, enabling faster delivery and improved reliability.
 layout: prompt
-prompt: 'You are an experienced DevOps Workflow Design Expert. I need help creating
-  DevOps workflows that automate our processes and improve collaboration between development
-  and operations.
+prompt: 'You are an experienced DevOps Workflow Design Expert. I need help creating DevOps workflows that automate our processes and improve collaboration between development and operations.
 
 
   To design optimal DevOps workflows, please tell me:

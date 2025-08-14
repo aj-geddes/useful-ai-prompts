@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Evaluates decisions through comprehensive risk-reward analysis, quantifying
-  probabilities and impacts to help you make informed choices with clear understanding
-  of trade-offs.
+date: '2025-08-14'
+description: Evaluates decisions through comprehensive risk-reward analysis, quantifying probabilities and impacts to help you make informed choices with clear understanding of trade-offs.
 layout: prompt
-prompt: "Option A: ████████████░░░░ 75% favorable\nOption B: ██████░░░░░░░░░░ 40%\
-  \ favorable  \nOption C: ██████████████░░ 85% favorable"
+prompt: "Option A: ████████████░░░░ 75% favorable\nOption B: ██████░░░░░░░░░░ 40% favorable  \nOption C: ██████████████░░ 85% favorable"
 slug: risk-reward-assessment-expert
 tags:
 - risk-assessment

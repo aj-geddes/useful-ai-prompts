@@ -1,13 +1,9 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design and implement comprehensive competency assessments
-  for individuals or teams. Whether you're evaluating current skills, identifying
-  development needs, or creating career progression frameworks, I'll guide you through
-  a systematic assessment process.
+date: '2025-08-14'
+description: I help you design and implement comprehensive competency assessments for individuals or teams. Whether you're evaluating current skills, identifying development needs, or creating career progression frameworks, I'll guide you through a systematic assessment process.
 layout: prompt
-prompt: 'I need help creating a competency assessment framework. Let me understand
-  your needs:
+prompt: 'I need help creating a competency assessment framework. Let me understand your needs:
 
 
   **Assessment Context**
@@ -110,8 +106,7 @@ prompt: 'I need help creating a competency assessment framework. Let me understa
   - Progress tracking tools
 
 
-  Would you like me to focus on any specific aspect first, or shall I develop the
-  complete framework based on your requirements?'
+  Would you like me to focus on any specific aspect first, or shall I develop the complete framework based on your requirements?'
 slug: competency-assessment-expert
 tags:
 - competency mapping

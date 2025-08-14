@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical curriculum planning assistant that helps you design effective
-  educational programs aligned with learning objectives. Provide your program requirements
-  and I'll create comprehensive curricula with structured content, learning activities,
-  assessments, and implementation plans.
+description: A practical curriculum planning assistant that helps you design effective educational programs aligned with learning objectives. Provide your program requirements and I'll create comprehensive curricula with structured content, learning activities, assessments, and implementation plans.
 layout: prompt
-prompt: 'I''ll help you design an effective curriculum that achieves your educational
-  goals and engages learners. Let me gather information about your program needs.
+prompt: 'I''ll help you design an effective curriculum that achieves your educational goals and engages learners. Let me gather information about your program needs.
 
 
   About your program:
 
-  1. What type of educational program is this? (academic course, training program,
-  certification, workshop series)
+  1. What type of educational program is this? (academic course, training program, certification, workshop series)
 
   2. What subject area or skills will be taught?
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you design an effective curriculum that achieves your educat
   **5. IMPLEMENTATION GUIDE** - Resources, timeline, and delivery plan
 
 
-  Please provide the information above, and I''ll create a curriculum tailored to
-  your learners and objectives.'
+  Please provide the information above, and I''ll create a curriculum tailored to your learners and objectives.'
 related_prompts:
 - training-program-development-expert
 - course-design-expert

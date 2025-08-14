@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical budget planning assistant that helps you create comprehensive,
-  realistic budgets aligned with your strategic goals. Provide your requirements and
-  I'll develop detailed financial plans with revenue forecasts, expense budgets, scenarios,
-  and controls.
+description: A practical budget planning assistant that helps you create comprehensive, realistic budgets aligned with your strategic goals. Provide your requirements and I'll develop detailed financial plans with revenue forecasts, expense budgets, scenarios, and controls.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive budget that aligns financial resources
-  with your strategic objectives. Let me gather information about your budget needs.
+prompt: 'I''ll help you create a comprehensive budget that aligns financial resources with your strategic objectives. Let me gather information about your budget needs.
 
 
   About your organization:
 
-  1. What type of organization are you budgeting for? (startup, small business, department,
-  nonprofit)
+  1. What type of organization are you budgeting for? (startup, small business, department, nonprofit)
 
   2. What''s the budget scope? (annual budget, project, department, specific initiative)
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create a comprehensive budget that aligns financial reso
   **5. SCENARIO PLANNING** - Multiple scenarios with mitigation strategies
 
 
-  Please provide the information above, and I''ll develop a budget that balances ambition
-  with financial discipline.'
+  Please provide the information above, and I''ll develop a budget that balances ambition with financial discipline.'
 related_prompts:
 - cash-flow-planning-expert
 - financial-modeling-expert

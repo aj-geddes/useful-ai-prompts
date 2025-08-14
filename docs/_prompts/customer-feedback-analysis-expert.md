@@ -6,18 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Transform raw customer feedback into actionable insights that drive product
-  and service improvements. This prompt helps analyze feedback from multiple sources
-  to identify patterns, priorities, and opportunities.
+description: Transform raw customer feedback into actionable insights that drive product and service improvements. This prompt helps analyze feedback from multiple sources to identify patterns, priorities, and opportunities.
 layout: prompt
-prompt: 'I''ll help you analyze customer feedback to uncover actionable insights.
-  Let''s start with understanding your data:
+prompt: 'I''ll help you analyze customer feedback to uncover actionable insights. Let''s start with understanding your data:
 
 
   FEEDBACK SOURCES:
 
-  - What types of feedback do you have? (surveys, reviews, support tickets, social
-  media)
+  - What types of feedback do you have? (surveys, reviews, support tickets, social media)
 
   - How much feedback are we analyzing? (volume, time period)
 

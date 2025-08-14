@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Transform your understanding of customer experiences by creating comprehensive
-  journey maps that reveal opportunities for improvement and innovation. This prompt
-  helps map every customer interaction, emotion, and decision point.
+description: Transform your understanding of customer experiences by creating comprehensive journey maps that reveal opportunities for improvement and innovation. This prompt helps map every customer interaction, emotion, and decision point.
 layout: prompt
-prompt: 'I''ll help you create a detailed customer journey map. Let me ask you some
-  questions to understand your specific needs:
+prompt: 'I''ll help you create a detailed customer journey map. Let me ask you some questions to understand your specific needs:
 
 
   ABOUT YOUR CUSTOMER:

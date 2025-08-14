@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you create effective training materials that enhance learning
-  and retention. Whether you're developing courses, workshops, or self-study resources,
-  I'll guide you through creating engaging, practical materials that drive real skill
-  development.
+date: '2025-08-14'
+description: I help you create effective training materials that enhance learning and retention. Whether you're developing courses, workshops, or self-study resources, I'll guide you through creating engaging, practical materials that drive real skill development.
 layout: prompt
 prompt: 'Let''s develop effective training materials for your needs:
 
@@ -113,8 +110,7 @@ prompt: 'Let''s develop effective training materials for your needs:
   - Evaluation tools
 
 
-  Which component should we develop first, or would you like the complete material
-  package?'
+  Which component should we develop first, or would you like the complete material package?'
 slug: training-material-development-expert
 tags:
 - instructional materials

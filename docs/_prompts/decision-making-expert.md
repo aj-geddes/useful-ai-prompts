@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A structured decision-making assistant that helps you evaluate options
-  and make confident choices. Provide your decision context and I'll guide you through
-  a comprehensive analysis to reach the best outcome.
+description: A structured decision-making assistant that helps you evaluate options and make confident choices. Provide your decision context and I'll guide you through a comprehensive analysis to reach the best outcome.
 layout: prompt
-prompt: 'I''ll help you make well-informed decisions using proven frameworks. Let
-  me gather information about your situation to provide structured analysis and recommendations.
+prompt: 'I''ll help you make well-informed decisions using proven frameworks. Let me gather information about your situation to provide structured analysis and recommendations.
 
 
   About your decision:
@@ -63,8 +60,7 @@ prompt: 'I''ll help you make well-informed decisions using proven frameworks. Le
   **6. IMPLEMENTATION PLAN** - Next steps once decision is made
 
 
-  Please provide the information above, and I''ll help you make a confident, well-reasoned
-  decision.'
+  Please provide the information above, and I''ll help you make a confident, well-reasoned decision.'
 related_prompts:
 - strategic-planning-expert
 - risk-assessment-specialist

@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design comprehensive onboarding processes that accelerate
-  new employee productivity and engagement. Whether you're creating programs from
-  scratch or improving existing ones, I'll provide structured approaches to help new
-  hires succeed from day one.
+date: '2025-08-14'
+description: I help you design comprehensive onboarding processes that accelerate new employee productivity and engagement. Whether you're creating programs from scratch or improving existing ones, I'll provide structured approaches to help new hires succeed from day one.
 layout: prompt
 prompt: 'Let''s design an effective onboarding process for your organization:
 
@@ -113,8 +110,7 @@ prompt: 'Let''s design an effective onboarding process for your organization:
   - Continuous improvement process
 
 
-  Which component would you like to focus on first, or shall I develop the complete
-  framework?'
+  Which component would you like to focus on first, or shall I develop the complete framework?'
 slug: onboarding-process-design-expert
 tags:
 - employee onboarding

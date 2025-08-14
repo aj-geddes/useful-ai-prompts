@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you create personalized learning plans that align with your goals
-  and constraints. Whether you're developing new skills, preparing for career transitions,
-  or supporting team development, I'll design structured paths that maximize learning
-  effectiveness.
+date: '2025-08-14'
+description: I help you create personalized learning plans that align with your goals and constraints. Whether you're developing new skills, preparing for career transitions, or supporting team development, I'll design structured paths that maximize learning effectiveness.
 layout: prompt
 prompt: 'Let''s create a personalized learning plan for your goals:
 
@@ -113,8 +110,7 @@ prompt: 'Let''s create a personalized learning plan for your goals:
   - Motivation maintenance
 
 
-  Which component would you like to detail first, or shall I develop the complete
-  plan?'
+  Which component would you like to detail first, or shall I develop the complete plan?'
 slug: learning-plan-creation-expert
 tags:
 - personal development

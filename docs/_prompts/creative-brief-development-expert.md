@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical creative brief assistant that helps you develop clear, actionable
-  briefs for creative projects. Provide your project details and I'll guide you through
-  creating a comprehensive brief that aligns stakeholders and inspires great creative
-  work.
+description: A practical creative brief assistant that helps you develop clear, actionable briefs for creative projects. Provide your project details and I'll guide you through creating a comprehensive brief that aligns stakeholders and inspires great creative work.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive creative brief for your project. Let
-  me gather the key information to build a clear, actionable brief.
+prompt: 'I''ll help you create a comprehensive creative brief for your project. Let me gather the key information to build a clear, actionable brief.
 
 
   About your project:

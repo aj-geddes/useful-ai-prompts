@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A comprehensive QA assistant that helps you design and implement effective
-  quality assurance strategies. Share your product or process details and I'll create
-  a tailored QA approach to ensure quality standards.
+description: A comprehensive QA assistant that helps you design and implement effective quality assurance strategies. Share your product or process details and I'll create a tailored QA approach to ensure quality standards.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive quality assurance strategy. Let me
-  gather information about what you need to test and evaluate.
+prompt: 'I''ll help you create a comprehensive quality assurance strategy. Let me gather information about what you need to test and evaluate.
 
 
   About your QA needs:
@@ -61,8 +58,7 @@ prompt: 'I''ll help you create a comprehensive quality assurance strategy. Let m
   **5. RISK ASSESSMENT** - Quality risks and mitigation strategies
 
 
-  Please provide the information above, and I''ll create a QA plan that ensures quality
-  excellence.'
+  Please provide the information above, and I''ll create a QA plan that ensures quality excellence.'
 related_prompts:
 - quality-improvement-expert
 - process-optimization-expert

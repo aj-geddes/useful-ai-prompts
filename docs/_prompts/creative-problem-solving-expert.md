@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical creative problem-solving assistant that helps you tackle
-  complex challenges with innovative solutions. Provide your problem details and I'll
-  guide you through proven techniques to generate breakthrough ideas.
+description: A practical creative problem-solving assistant that helps you tackle complex challenges with innovative solutions. Provide your problem details and I'll guide you through proven techniques to generate breakthrough ideas.
 layout: prompt
-prompt: 'I''ll help you solve your problem creatively using proven innovation techniques.
-  Let me gather information to understand your challenge and guide you to breakthrough
-  solutions.
+prompt: 'I''ll help you solve your problem creatively using proven innovation techniques. Let me gather information to understand your challenge and guide you to breakthrough solutions.
 
 
   About your problem:

@@ -1,15 +1,22 @@
-// Search functionality for the site
+// Enhanced search functionality for 278+ prompts across 18 sectors
 (function() {
     'use strict';
 
     let searchIndex = [];
-    let searchInput, searchResults, searchOverlay;
+    let searchInput, searchResults, searchOverlay, categoryFilter, tagFilter;
+    let currentFilters = {
+        category: '',
+        tags: [],
+        sector: ''
+    };
     
     // Initialize search functionality
     function initializeSearch() {
         searchInput = document.getElementById('searchInput');
         searchResults = document.getElementById('searchResults');
         searchOverlay = document.getElementById('searchOverlay');
+        categoryFilter = document.getElementById('categoryFilter');
+        tagFilter = document.getElementById('tagFilter');
         
         if (searchInput) {
             // Load search index
@@ -21,7 +28,7 @@
                 clearTimeout(searchTimeout);
                 searchTimeout = setTimeout(() => {
                     performSearch(e.target.value);
-                }, 300);
+                }, 150); // Faster response for large collection
             });
             
             // Handle Enter key
@@ -31,6 +38,21 @@
                     performSearch(searchInput.value);
                 }
             });
+            
+            // Set up filter handlers
+            if (categoryFilter) {
+                categoryFilter.addEventListener('change', (e) => {
+                    currentFilters.category = e.target.value;
+                    performSearch(searchInput.value);
+                });
+            }
+            
+            if (tagFilter) {
+                tagFilter.addEventListener('change', (e) => {
+                    currentFilters.tags = Array.from(e.target.selectedOptions).map(opt => opt.value);
+                    performSearch(searchInput.value);
+                });
+            }
         }
     }
     
@@ -118,11 +140,39 @@
         displaySearchResults(results, trimmedQuery);
     }
     
-    // Search through prompts
+    // Search through prompts with enhanced filtering
     function searchPrompts(query) {
         const queryWords = query.split(/\s+/).filter(word => word.length > 0);
         
         return searchIndex
+            .filter(item => {
+                // Apply category filter
+                if (currentFilters.category && currentFilters.category !== 'all') {
+                    if (!item.category.toLowerCase().includes(currentFilters.category.toLowerCase())) {
+                        return false;
+                    }
+                }
+                
+                // Apply tag filters
+                if (currentFilters.tags.length > 0) {
+                    const hasMatchingTag = currentFilters.tags.some(filterTag => 
+                        item.tags.some(itemTag => 
+                            itemTag.toLowerCase().includes(filterTag.toLowerCase())
+                        )
+                    );
+                    if (!hasMatchingTag) return false;
+                }
+                
+                // Apply high-value sector filter
+                if (currentFilters.sector) {
+                    const highValueSectors = ['biotechnology', 'space-economy', 'renewable-energy', 'quantum-computing', 'blockchain', 'government-digital', 'supply-chain', 'healthcare-digital'];
+                    if (currentFilters.sector === 'high-value' && !highValueSectors.includes(item.category)) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            })
             .map(item => {
                 let score = 0;
                 const titleLower = item.title.toLowerCase();

@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you design and implement organizational development
-  initiatives that enhance culture, structure, and overall effectiveness.
+date: '2025-08-14'
+description: This prompt helps you design and implement organizational development initiatives that enhance culture, structure, and overall effectiveness.
 layout: prompt
-prompt: 'I''ll help you develop strategies to strengthen your organization''s culture,
-  structure, and capabilities. Let''s explore your needs:
+prompt: 'I''ll help you develop strategies to strengthen your organization''s culture, structure, and capabilities. Let''s explore your needs:
 
 
   **Organizational Context:**

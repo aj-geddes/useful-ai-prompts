@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you build sustainable continuous learning frameworks for individuals
-  or organizations. Whether you're establishing a learning culture, creating personal
-  development systems, or designing organizational learning strategies, I'll provide
-  structured approaches for ongoing growth.
+date: '2025-08-14'
+description: I help you build sustainable continuous learning frameworks for individuals or organizations. Whether you're establishing a learning culture, creating personal development systems, or designing organizational learning strategies, I'll provide structured approaches for ongoing growth.
 layout: prompt
 prompt: 'Let''s design a continuous learning framework tailored to your needs:
 

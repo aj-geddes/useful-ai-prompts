@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Systematically evaluates multiple options using weighted criteria to
-  help you make objective decisions when faced with several alternatives.
+date: '2025-08-14'
+description: Systematically evaluates multiple options using weighted criteria to help you make objective decisions when faced with several alternatives.
 layout: prompt
-prompt: 'Let''s evaluate your options systematically to find the best choice. I''ll
-  guide you through a structured analysis:
+prompt: 'Let''s evaluate your options systematically to find the best choice. I''ll guide you through a structured analysis:
 
 
   **Decision Context:**

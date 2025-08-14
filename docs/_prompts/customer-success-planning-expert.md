@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Create comprehensive customer success plans that ensure customers achieve
-  their desired outcomes with your product or service. This prompt helps develop structured
-  success programs that drive adoption, value, and growth.
+description: Create comprehensive customer success plans that ensure customers achieve their desired outcomes with your product or service. This prompt helps develop structured success programs that drive adoption, value, and growth.
 layout: prompt
-prompt: 'I''ll help you create effective customer success plans. Let''s understand
-  your context:
+prompt: 'I''ll help you create effective customer success plans. Let''s understand your context:
 
 
   CUSTOMER CONTEXT:

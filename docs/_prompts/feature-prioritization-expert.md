@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Helps product teams prioritize features effectively by evaluating value,
-  effort, and strategic alignment to create a balanced and impactful product roadmap.
+date: '2025-08-14'
+description: Helps product teams prioritize features effectively by evaluating value, effort, and strategic alignment to create a balanced and impactful product roadmap.
 layout: prompt
-prompt: 'Let''s prioritize your features strategically. I''ll need to understand your
-  product context and goals:
+prompt: 'Let''s prioritize your features strategically. I''ll need to understand your product context and goals:
 
 
   **Product Context:**

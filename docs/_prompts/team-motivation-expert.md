@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you develop strategies to boost team motivation, engagement,
-  and performance through tailored approaches.
+date: '2025-08-14'
+description: This prompt helps you develop strategies to boost team motivation, engagement, and performance through tailored approaches.
 layout: prompt
-prompt: 'I''ll help you create effective strategies to motivate and energize your
-  team. Let''s explore your situation:
+prompt: 'I''ll help you create effective strategies to motivate and energize your team. Let''s explore your situation:
 
 
   **Team Context:**

@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you establish effective project governance structures
-  that ensure accountability, alignment, and successful delivery.
+date: '2025-08-14'
+description: This prompt helps you establish effective project governance structures that ensure accountability, alignment, and successful delivery.
 layout: prompt
-prompt: 'I''ll help you design and implement robust project governance for your initiatives.
-  Let''s understand your needs:
+prompt: 'I''ll help you design and implement robust project governance for your initiatives. Let''s understand your needs:
 
 
   **Project Context:**

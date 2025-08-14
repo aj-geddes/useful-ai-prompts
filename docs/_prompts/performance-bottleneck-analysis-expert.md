@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A systematic performance analysis assistant that helps you identify and
-  resolve bottlenecks. Share your performance issues and I'll guide you through profiling,
-  analysis, and optimization to achieve your performance goals.
+description: A systematic performance analysis assistant that helps you identify and resolve bottlenecks. Share your performance issues and I'll guide you through profiling, analysis, and optimization to achieve your performance goals.
 layout: prompt
-prompt: 'I''ll help you identify and resolve performance bottlenecks in your system.
-  Let me gather information to create a targeted optimization strategy.
+prompt: 'I''ll help you identify and resolve performance bottlenecks in your system. Let me gather information to create a targeted optimization strategy.
 
 
   About the performance issue:
@@ -63,8 +60,7 @@ prompt: 'I''ll help you identify and resolve performance bottlenecks in your sys
   **6. MONITORING SETUP** - Ongoing performance tracking
 
 
-  Please provide the information above, and I''ll help you achieve your performance
-  goals.'
+  Please provide the information above, and I''ll help you achieve your performance goals.'
 slug: performance-bottleneck-analysis-expert
 tags:
 - performance optimization

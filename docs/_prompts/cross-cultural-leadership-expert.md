@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you lead effectively across cultures, building inclusive
-  teams that leverage diversity as a competitive advantage.
+date: '2025-08-14'
+description: This prompt helps you lead effectively across cultures, building inclusive teams that leverage diversity as a competitive advantage.
 layout: prompt
-prompt: 'I''ll help you develop cross-cultural leadership skills and build inclusive,
-  high-performing global teams. Let''s understand your context:
+prompt: 'I''ll help you develop cross-cultural leadership skills and build inclusive, high-performing global teams. Let''s understand your context:
 
 
   **Team Diversity:**

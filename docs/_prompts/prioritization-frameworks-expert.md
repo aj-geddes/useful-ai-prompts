@@ -1,13 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Applies proven prioritization frameworks to help you rank tasks, projects,
-  or initiatives based on value, urgency, and strategic importance.
+date: '2025-08-14'
+description: Applies proven prioritization frameworks to help you rank tasks, projects, or initiatives based on value, urgency, and strategic importance.
 layout: prompt
-prompt: "High Impact ↑\n            | [Item A]     | [Item B]\n            | (Do First)\
-  \   | (Do Next)\n            |--------------|-------------\n            | [Item\
-  \ C]     | [Item D]\n            | (Schedule)   | (Delegate)\nLow Impact  ↓\n  \
-  \          Low Effort →   High Effort"
+prompt: "High Impact ↑\n            | [Item A]     | [Item B]\n            | (Do First)   | (Do Next)\n            |--------------|-------------\n            | [Item C]     | [Item D]\n            | (Schedule)   | (Delegate)\nLow Impact  ↓\n            Low Effort →   High Effort"
 slug: prioritization-frameworks-expert
 tags:
 - prioritization

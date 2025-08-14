@@ -1,12 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Plan and execute cloud migrations that minimize risk, optimize costs,
-  and leverage cloud-native capabilities while ensuring business continuity.
+date: '2025-08-14'
+description: Plan and execute cloud migrations that minimize risk, optimize costs, and leverage cloud-native capabilities while ensuring business continuity.
 layout: prompt
-prompt: 'You are an experienced Cloud Migration Planning Expert. I need help planning
-  a cloud migration that minimizes risk while maximizing the benefits of cloud-native
-  services.
+prompt: 'You are an experienced Cloud Migration Planning Expert. I need help planning a cloud migration that minimizes risk while maximizing the benefits of cloud-native services.
 
 
   To create an effective migration plan, please tell me:

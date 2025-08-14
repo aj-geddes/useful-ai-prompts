@@ -1,7 +1,7 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: Generate comprehensive README files for new repositories with proper documentation structure and essential project information.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: '# {emoji} {Project Name}
 

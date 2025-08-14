@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical risk assessment assistant that helps you identify, analyze,
-  and mitigate risks across your organization. Provide your risk context and I'll
-  deliver comprehensive risk analysis with prioritized mitigation strategies.
+description: A practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. Provide your risk context and I'll deliver comprehensive risk analysis with prioritized mitigation strategies.
 layout: prompt
-prompt: 'I''ll help you conduct a comprehensive risk assessment and develop mitigation
-  strategies. Let me gather information about your organization and risk concerns.
+prompt: 'I''ll help you conduct a comprehensive risk assessment and develop mitigation strategies. Let me gather information about your organization and risk concerns.
 
 
   About your organization:

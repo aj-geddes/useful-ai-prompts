@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Create powerful customer segments that enable targeted marketing, personalized
-  experiences, and strategic resource allocation. This prompt helps develop multi-dimensional
-  segmentation strategies based on behavior, value, and needs.
+description: Create powerful customer segments that enable targeted marketing, personalized experiences, and strategic resource allocation. This prompt helps develop multi-dimensional segmentation strategies based on behavior, value, and needs.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive customer segmentation strategy. Let''s
-  explore your data:
+prompt: 'I''ll help you develop a comprehensive customer segmentation strategy. Let''s explore your data:
 
 
   BUSINESS CONTEXT:

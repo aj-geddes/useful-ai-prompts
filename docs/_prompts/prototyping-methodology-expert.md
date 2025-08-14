@@ -6,15 +6,11 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical prototyping guide that helps you quickly test and validate
-  ideas through systematic prototyping. Provide your concept and constraints, and
-  I'll guide you through creating effective prototypes.
+description: A practical prototyping guide that helps you quickly test and validate ideas through systematic prototyping. Provide your concept and constraints, and I'll guide you through creating effective prototypes.
 examples:
-- input: '1. Concept: Mobile app for parents to track and share their baby''s developmental
-    milestones
+- input: '1. Concept: Mobile app for parents to track and share their baby''s developmental milestones
 
-    2. Key assumptions: Parents want to track milestones, they''ll share with family,
-    they''ll pay for premium features
+    2. Key assumptions: Parents want to track milestones, they''ll share with family, they''ll pay for premium features
 
     3. Target users: New parents (0-2 year olds), tech-comfortable, 25-40 years old
 
@@ -30,11 +26,9 @@ examples:
     8. User access: Can reach 20-30 parents through parenting groups
 
 
-    9. Need to learn: Will parents actually use this daily? What features are must-have
-    vs nice-to-have?
+    9. Need to learn: Will parents actually use this daily? What features are must-have vs nice-to-have?
 
-    10. Success: Clear evidence parents would use and pay for this, validated feature
-    set'
+    10. Success: Clear evidence parents would use and pay for this, validated feature set'
   output: 'Core Assumptions:
 
     □ Parents track milestones (Target: 70% add 3+ in week)
@@ -66,8 +60,7 @@ examples:
     □ Doctor reports'
   title: Example 1
 layout: prompt
-prompt: 'I''ll help you create an effective prototyping strategy to test and validate
-  your idea quickly. Let me gather information to design the right approach.
+prompt: 'I''ll help you create an effective prototyping strategy to test and validate your idea quickly. Let me gather information to design the right approach.
 
 
   About your concept:

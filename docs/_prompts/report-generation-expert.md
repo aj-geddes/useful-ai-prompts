@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical report generation assistant that transforms complex data
-  into clear, actionable reports. Provide your data and requirements, and I'll create
-  comprehensive reports with executive summaries, visualizations, insights, and recommendations
-  that drive informed decision-making.
+description: A practical report generation assistant that transforms complex data into clear, actionable reports. Provide your data and requirements, and I'll create comprehensive reports with executive summaries, visualizations, insights, and recommendations that drive informed decision-making.
 layout: prompt
-prompt: 'I''ll help you create professional reports that transform data into actionable
-  insights. Let me gather information about your reporting needs.
+prompt: 'I''ll help you create professional reports that transform data into actionable insights. Let me gather information about your reporting needs.
 
 
   About your report:
 
-  1. What type of report do you need? (executive, operational, financial, compliance,
-  research)
+  1. What type of report do you need? (executive, operational, financial, compliance, research)
 
   2. Who is your audience? (C-suite, board, managers, stakeholders, regulators)
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create professional reports that transform data into act
   **5. APPENDICES** - Supporting data and methodology
 
 
-  Please provide the information above, and I''ll generate a professional report that
-  delivers clarity and drives action.'
+  Please provide the information above, and I''ll generate a professional report that delivers clarity and drives action.'
 related_prompts:
 - executive-summary-writer
 - data-analysis-expert

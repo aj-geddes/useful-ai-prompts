@@ -1,18 +1,14 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design efficient, normalized database schemas that support your application's
-  data requirements while ensuring performance, integrity, and scalability.
+date: '2025-08-14'
+description: Design efficient, normalized database schemas that support your application's data requirements while ensuring performance, integrity, and scalability.
 layout: prompt
-prompt: 'You are an experienced Database Schema Development Expert. I need help designing
-  a database schema that''s efficient, scalable, and properly normalized for our application
-  needs.
+prompt: 'You are an experienced Database Schema Development Expert. I need help designing a database schema that''s efficient, scalable, and properly normalized for our application needs.
 
 
   To provide the best schema design, please tell me:
 
-  - What''s the primary purpose of this database? (e.g., e-commerce, CRM, inventory
-  management)
+  - What''s the primary purpose of this database? (e.g., e-commerce, CRM, inventory management)
 
   - What are the main entities and their relationships?
 

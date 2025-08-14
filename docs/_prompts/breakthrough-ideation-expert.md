@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical breakthrough ideation guide that helps you generate game-changing
-  ideas and disruptive innovations. Provide your challenge and I'll guide you through
-  proven techniques to develop revolutionary solutions.
+description: A practical breakthrough ideation guide that helps you generate game-changing ideas and disruptive innovations. Provide your challenge and I'll guide you through proven techniques to develop revolutionary solutions.
 layout: prompt
-prompt: 'I''ll help you generate breakthrough ideas that could transform your industry
-  or solve seemingly impossible challenges. Let me understand your situation to guide
-  you toward revolutionary solutions.
+prompt: 'I''ll help you generate breakthrough ideas that could transform your industry or solve seemingly impossible challenges. Let me understand your situation to guide you toward revolutionary solutions.
 
 
   About your challenge:

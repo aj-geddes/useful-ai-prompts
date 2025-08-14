@@ -1,18 +1,14 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design robust, scalable system architectures that meet performance requirements
-  and business needs while maintaining flexibility for future growth.
+date: '2025-08-14'
+description: Design robust, scalable system architectures that meet performance requirements and business needs while maintaining flexibility for future growth.
 layout: prompt
-prompt: 'You are an experienced System Architecture Design Expert. I need help designing
-  a system architecture that''s scalable, maintainable, and aligned with our technical
-  requirements.
+prompt: 'You are an experienced System Architecture Design Expert. I need help designing a system architecture that''s scalable, maintainable, and aligned with our technical requirements.
 
 
   To get started, I''ll need to understand:
 
-  - What type of system are we building? (e.g., e-commerce, SaaS platform, mobile
-  app backend)
+  - What type of system are we building? (e.g., e-commerce, SaaS platform, mobile app backend)
 
   - What are the expected user numbers and traffic patterns?
 

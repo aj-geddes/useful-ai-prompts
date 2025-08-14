@@ -1,12 +1,9 @@
 ---
 category: evaluation-assessment
 date: '2025-07-21'
-description: A practical performance review assistant that helps managers write comprehensive,
-  fair, and actionable performance reviews. Just provide the employee details and
-  I'll guide you through creating a complete review.
+description: A practical performance review assistant that helps managers write comprehensive, fair, and actionable performance reviews. Just provide the employee details and I'll guide you through creating a complete review.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive performance review. I''ll ask you some
-  questions to gather the necessary information, then generate a complete review document.
+prompt: 'I''ll help you create a comprehensive performance review. I''ll ask you some questions to gather the necessary information, then generate a complete review document.
 
 
   First, let me gather some basic information:
@@ -54,8 +51,7 @@ prompt: 'I''ll help you create a comprehensive performance review. I''ll ask you
   - Suggested talking points for the review meeting
 
 
-  Please provide the information above, and I''ll generate your complete performance
-  review.'
+  Please provide the information above, and I''ll generate your complete performance review.'
 related_prompts:
 - goal-setting-expert
 - career-development-planner

@@ -1,190 +1,79 @@
 ---
 category: communication
-date: '2025-07-21'
-description: A stakeholder communication strategist that helps you identify, engage,
-  and influence key stakeholders through targeted communication approaches.
+compatible_models:
+- GPT-4
+- Claude 3
+- Gemini Pro
+- GPT-3.5
+date: '2025-07-22'
+description: This prompt helps you build effective stakeholder communication strategies that ensure the right people get the right information at the right time to support your initiatives.
 layout: prompt
-prompt: '## COMPREHENSIVE STAKEHOLDER COMMUNICATION STRATEGY
+prompt: 'I''ll help you create a stakeholder communication strategy that drives alignment and support. Let me understand your situation:
 
 
-  ### STAKEHOLDER COMMUNICATION OVERVIEW
+  **About your initiative:**
 
+  1. What project or change are you leading?
 
-  **Project**: Digital Transformation Initiative - Enterprise Software Implementation
+  2. What''s the timeline and current phase?
 
-  **Stakeholder Challenge**: Managing communication across 150+ stakeholders in complex
-  organizational change
+  3. What''s the impact on different groups?
 
-  **Communication Goal**: Achieve 95% stakeholder buy-in and smooth transformation
-  with minimal resistance
+  4. What approvals or support do you need?
 
-  **Timeline**: 18-month implementation with ongoing stakeholder engagement
 
+  **About your stakeholders:**
 
-  **Stakeholder Ecosystem**:
+  5. Who are your key stakeholders? (names/roles)
 
+  6. What''s their current stance? (supportive, neutral, resistant)
 
-  - **Executive Leadership**: CEO, CTO, CFO, and 8 VPs across business units
+  7. What''s their level of influence? (high, medium, low)
 
-  - **Department Heads**: 25 directors managing affected departments
+  8. What are their main concerns or priorities?
 
-  - **IT Teams**: 40 technical staff including architects, developers, and system
-  administrators
 
-  - **End Users**: 2,500+ employees across 12 global offices
+  **Communication context:**
 
-  - **External Partners**: 15 vendors, consultants, and integration partners
+  9. What''s worked well with these stakeholders before?
 
-  - **Regulatory Bodies**: 3 compliance organizations requiring detailed reporting
+  10. What challenges have you faced?
 
+  11. Are there any political dynamics to navigate?
 
-  **Communication Complexity Factors**:
+  12. What''s your preferred communication style?
 
 
-  - **Geographic Distribution**: Teams across 6 time zones in North America, Europe,
-  and Asia
+  Based on your answers, I''ll create:
 
-  - **Cultural Diversity**: Multi-cultural workforce with varying communication preferences
 
-  - **Technical Expertise Levels**: Range from highly technical to business-focused
-  stakeholders
+  **STAKEHOLDER MAP** - Visual influence/interest analysis with engagement strategies
 
-  - **Change Resistance**: Previous failed initiatives creating skepticism and change
-  fatigue
+  **COMMUNICATION PLAN** - Who to engage, when, how, and with what messages
 
-  - **Political Dynamics**: Competing departmental priorities and resource allocation
-  concerns
+  **MESSAGE FRAMEWORKS** - Tailored messages for each stakeholder group
 
+  **ENGAGEMENT TACTICS** - Specific approaches to build support and manage resistance
 
-  ### EXECUTIVE SUMMARY
+  **SUCCESS METRICS** - How to measure communication effectiveness
 
 
-  **Stakeholder Communication Strategy**:
-
-  Design and execute multi-layered stakeholder engagement strategy that builds trust,
-  manages resistance, and drives alignment through targeted communication, relationship
-  building, and systematic engagement across diverse stakeholder groups.
-
-
-  **Strategic Engagement Approach**:
-
-
-  - **Stakeholder Segmentation**: Customized communication strategies for each stakeholder
-  segment
-
-  - **Multi-Channel Integration**: Coordinated communication across digital and traditional
-  channels
-
-  - **Relationship-Centric Design**: Focus on building and maintaining strong stakeholder
-  relationships
-
-  - **Change Management Integration**: Communication strategy aligned with change
-  management best practices
-
-  - **Continuous Feedback Loop**: Real-time stakeholder feedback integration and response
-
-
-  **Core Communication Principles**:
-
-
-  1. **Transparency and Honesty**: Open communication about challenges, progress,
-  and decisions
-
-  2. **Relevance and Value**: Stakeholder-specific messaging that addresses individual
-  needs and concerns
-
-  3. **Consistency and Reliability**: Consistent messaging and dependable communication
-  cadence
-
-  4. **Two-Way Engagement**: Active listening and responsive communication, not just
-  broadcasting
-
-  5. **Cultural Sensitivity**: Respectful communication that acknowledges cultural
-  differences
-
-
-  **Expected Engagement Outcomes**:
-
-
-  - 95% stakeholder awareness and understanding of transformation objectives
-
-  - 85% reduction in resistance and negative sentiment
-
-  - 90% stakeholder satisfaction with communication quality and frequency
-
-  - 75% increase in proactive stakeholder engagement and feedback
-
-  - 99% project milestone communication effectiveness
-
-
-  ### COMPREHENSIVE STAKEHOLDER ANALYSIS
-
-
-  #### Stakeholder Identification and Mapping
-
-
-  **Executive Stakeholder Analysis**:
-
-
-  | Stakeholder       | Influence Level | Interest Level | Engagement Strategy                               |
-
-  | ----------------- | --------------- | -------------- | -------------------------------------------------
-  |
-
-  | **CEO**           | Very High       | High           | Executive briefings, strategic
-  alignment sessions |
-
-  | **CTO**           | Very High       | Very High      | Technical deep-dives, architecture
-  reviews        |
-
-  | **CFO**           | High            | High           | ROI reporting, budget impact
-  analysis             |
-
-  | **VP Operations** | High            | Very High      | Process impact assessment,
-  efficiency metrics     |
-
-  | **VP HR**         | Medium          | High           | Change management support,
-  training coordination  |
-
-
-  **Department Head Stakeholder Analysis**:
-
-
-  | Department     | Key Concerns                         | Communication Needs                                      |
-  Preferred Channels                      |
-
-  | -------------- | ------------------------------------ | --------------------------------------------------------
-  | --------------------------------------- |
-
-  | **Finance**    | Budget impact, ROI measurement       | Detailed financial analysis,
-  cost-benefit reports        | Executive dashboards, quarterly reviews |
-
-  | **Sales**      | Customer impact, system downtime     | Sales process continuity,
-  customer communication support | Sales team meetings, CRM updates        |
-
-  | **Marketing**  | Brand impact, customer communication | Marketing message alignment,
-  customer impact mitigation  | Marketing team calls, brand guidelines  |
-
-  | **Operations** | Process disruption, efficiency       | Operational impact assessment,
-  transition planning       | Process workshops, operational reviews  |
-
-
-  **Technical Team Stakeholder Analysis**:'
+  Share your stakeholder landscape and I''ll develop a targeted communication strategy.'
 related_prompts:
-- executive-briefing
-- change-communication
-- customer-communication
+- executive-communication-expert
+- change-communication-specialist
+- meeting-facilitation-expert
 slug: stakeholder-communication-expert
 tags:
-- stakeholder-management
-- strategic-communication
-- relationship-building
-- influence
-tips:
-- Describe your project and stakeholders
-- Answer questions about relationships and goals
-- Receive stakeholder communication plan
-- Execute with provided templates and strategies
+- stakeholder management
+- strategic communication
+- relationship building
+- influence mapping
 title: Stakeholder Communication Expert
+use_cases:
+- project communication
+- change management
+- executive alignment
+- partner management
 version: 2.0.0
 ---

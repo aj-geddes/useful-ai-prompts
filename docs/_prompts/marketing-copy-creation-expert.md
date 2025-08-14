@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical marketing copywriting assistant that helps you create persuasive
-  copy that drives conversions. Provide your marketing requirements and I'll craft
-  compelling messages using proven formulas and psychological triggers tailored to
-  your audience and goals.
+description: A practical marketing copywriting assistant that helps you create persuasive copy that drives conversions. Provide your marketing requirements and I'll craft compelling messages using proven formulas and psychological triggers tailored to your audience and goals.
 layout: prompt
-prompt: 'I''ll help you create persuasive marketing copy that converts prospects into
-  customers. Let me gather information about your marketing needs.
+prompt: 'I''ll help you create persuasive marketing copy that converts prospects into customers. Let me gather information about your marketing needs.
 
 
   About your product/service:
@@ -39,8 +35,7 @@ prompt: 'I''ll help you create persuasive marketing copy that converts prospects
 
   Marketing details:
 
-  9. What type of copy do you need? (landing page, ads, email, social media, product
-  description)
+  9. What type of copy do you need? (landing page, ads, email, social media, product description)
 
   10. What''s your goal? (sales, signups, downloads, awareness)
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create persuasive marketing copy that converts prospects
   **5. STRONG CALLS-TO-ACTION** - Clear next steps that drive conversions
 
 
-  Please provide the information above, and I''ll craft marketing copy that turns
-  prospects into customers.'
+  Please provide the information above, and I''ll craft marketing copy that turns prospects into customers.'
 related_prompts:
 - sales-page-writer
 - ad-copy-creator

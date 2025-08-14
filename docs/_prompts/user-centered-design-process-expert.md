@@ -6,45 +6,33 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical user-centered design guide that helps you create products
-  and experiences truly designed for your users. Provide your project details and
-  I'll guide you through a human-centered design process.
+description: A practical user-centered design guide that helps you create products and experiences truly designed for your users. Provide your project details and I'll guide you through a human-centered design process.
 examples:
 - input: '1. Designing: Mobile app for medication management for elderly users
 
-    2. Problem: Seniors often forget medications, take wrong doses, or get confused
-    with multiple prescriptions
+    2. Problem: Seniors often forget medications, take wrong doses, or get confused with multiple prescriptions
 
     3. Stage: Early design phase, have done initial research
 
-    4. Challenges: Making it simple enough for 70+ users, handling poor eyesight,
-    avoiding tech overwhelm
+    4. Challenges: Making it simple enough for 70+ users, handling poor eyesight, avoiding tech overwhelm
 
 
-    5. Primary users: Seniors 65-85, living independently, managing 3-10 medications
-    daily
+    5. Primary users: Seniors 65-85, living independently, managing 3-10 medications daily
 
-    6. Accessibility: Must work for users with arthritis, poor vision, mild cognitive
-    decline
+    6. Accessibility: Must work for users with arthritis, poor vision, mild cognitive decline
 
     7. Tech-savvy: Low - many struggle with smartphones, some have never used apps
 
-    8. Emotional state: Often anxious about health, frustrated with technology, worried
-    about making mistakes
+    8. Emotional state: Often anxious about health, frustrated with technology, worried about making mistakes
 
 
     9. Technical constraints: Must work offline, integrate with pharmacy systems
 
     10. Timeline: 6 months to launch, $200K budget'
-  output: "Morning (8:00 AM)\n[Large pill image] Heart Medicine\n                \
-    \   1 white round pill\n                   [✓ TAKEN] or [TAKE NOW]\n\n[Large pill\
-    \ image] Blood Pressure\n                   2 blue oval pills\n              \
-    \     [TAKE NOW - Large Green Button]"
+  output: "Morning (8:00 AM)\n[Large pill image] Heart Medicine\n                   1 white round pill\n                   [✓ TAKEN] or [TAKE NOW]\n\n[Large pill image] Blood Pressure\n                   2 blue oval pills\n                   [TAKE NOW - Large Green Button]"
   title: Example 1
 layout: prompt
-prompt: 'I''ll help you apply user-centered design principles to create experiences
-  that truly serve your users'' needs. Let me gather information about your project
-  and users.
+prompt: 'I''ll help you apply user-centered design principles to create experiences that truly serve your users'' needs. Let me gather information about your project and users.
 
 
   About your project:

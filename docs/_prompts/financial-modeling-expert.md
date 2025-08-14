@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical financial modeling and valuation assistant that helps you
-  build models, value companies, and make investment decisions. Provide your company
-  details and I'll create comprehensive financial analysis with multiple valuation
-  approaches.
+description: A practical financial modeling and valuation assistant that helps you build models, value companies, and make investment decisions. Provide your company details and I'll create comprehensive financial analysis with multiple valuation approaches.
 layout: prompt
-prompt: 'I''ll help you build a financial model and valuation analysis. Let me gather
-  information about the company and your modeling needs.
+prompt: 'I''ll help you build a financial model and valuation analysis. Let me gather information about the company and your modeling needs.
 
 
   About the company:

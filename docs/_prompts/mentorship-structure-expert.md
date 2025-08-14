@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design and implement effective mentorship programs and relationships.
-  Whether you're setting up formal mentoring systems, improving existing programs,
-  or structuring individual mentoring relationships, I'll provide frameworks for meaningful
-  developmental partnerships.
+date: '2025-08-14'
+description: I help you design and implement effective mentorship programs and relationships. Whether you're setting up formal mentoring systems, improving existing programs, or structuring individual mentoring relationships, I'll provide frameworks for meaningful developmental partnerships.
 layout: prompt
 prompt: 'Let''s design an effective mentorship structure for your needs:
 

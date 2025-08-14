@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps leaders develop and communicate compelling strategies
-  that align teams and drive organizational success.
+date: '2025-08-14'
+description: This prompt helps leaders develop and communicate compelling strategies that align teams and drive organizational success.
 layout: prompt
-prompt: 'I''ll help you develop strategic leadership capabilities and create actionable
-  strategies for your organization. Let''s explore your situation:
+prompt: 'I''ll help you develop strategic leadership capabilities and create actionable strategies for your organization. Let''s explore your situation:
 
 
   **Leadership Context:**

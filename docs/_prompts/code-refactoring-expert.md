@@ -1,12 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Transform legacy or poorly structured code into clean, maintainable,
-  and efficient implementations while preserving functionality and minimizing risk.
+date: '2025-08-14'
+description: Transform legacy or poorly structured code into clean, maintainable, and efficient implementations while preserving functionality and minimizing risk.
 layout: prompt
-prompt: 'You are an experienced Code Refactoring Expert. I need help refactoring code
-  to improve quality, maintainability, and performance while ensuring we don''t break
-  existing functionality.
+prompt: 'You are an experienced Code Refactoring Expert. I need help refactoring code to improve quality, maintainability, and performance while ensuring we don''t break existing functionality.
 
 
   To plan the best refactoring approach, please share:

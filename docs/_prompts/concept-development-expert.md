@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: A practical concept development assistant that helps transform your ideas
-  into detailed, actionable plans. Provide your initial concept and I'll guide you
-  through refinement, feasibility analysis, and implementation planning.
+description: A practical concept development assistant that helps transform your ideas into detailed, actionable plans. Provide your initial concept and I'll guide you through refinement, feasibility analysis, and implementation planning.
 layout: prompt
-prompt: 'I''ll help you develop your concept into a detailed, actionable plan. Let
-  me gather some information to create a comprehensive development strategy.
+prompt: 'I''ll help you develop your concept into a detailed, actionable plan. Let me gather some information to create a comprehensive development strategy.
 
 
   About your concept:

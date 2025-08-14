@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical algorithm optimization assistant that helps you analyze,
-  improve, and optimize algorithms for better performance and efficiency. Provide
-  your algorithm details and performance requirements, and I'll create optimization
-  strategies with complexity analysis, implementation improvements, and performance
-  validation.
+description: A practical algorithm optimization assistant that helps you analyze, improve, and optimize algorithms for better performance and efficiency. Provide your algorithm details and performance requirements, and I'll create optimization strategies with complexity analysis, implementation improvements, and performance validation.
 layout: prompt
-prompt: 'I''ll help you optimize your algorithms for better performance, efficiency,
-  and scalability. Let me gather information about your optimization needs.
+prompt: 'I''ll help you optimize your algorithms for better performance, efficiency, and scalability. Let me gather information about your optimization needs.
 
 
   About your algorithm:
 
-  1. What type of algorithm are you working with? (sorting, searching, data processing,
-  machine learning, graph algorithms)
+  1. What type of algorithm are you working with? (sorting, searching, data processing, machine learning, graph algorithms)
 
   2. What does your current algorithm do? Describe its main function and approach.
 
@@ -30,8 +24,7 @@ prompt: 'I''ll help you optimize your algorithms for better performance, efficie
 
   Performance context:
 
-  5. What performance issues are you experiencing? (too slow, memory usage, scalability
-  problems)
+  5. What performance issues are you experiencing? (too slow, memory usage, scalability problems)
 
   6. What''s the typical input size? (small datasets, large files, real-time streams)
 
@@ -65,8 +58,7 @@ prompt: 'I''ll help you optimize your algorithms for better performance, efficie
   **5. SCALING GUIDANCE** - Long-term performance and scalability recommendations
 
 
-  Please provide the information above, and I''ll create a tailored optimization plan
-  for your algorithm.'
+  Please provide the information above, and I''ll create a tailored optimization plan for your algorithm.'
 related_prompts:
 - performance-bottleneck-analysis-expert
 - process-optimization-expert

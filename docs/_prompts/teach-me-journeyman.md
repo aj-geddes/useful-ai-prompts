@@ -1,7 +1,7 @@
 ---
 category: research-workflows
-date: '2025-07-21'
-description: An intermediate-level learning assistant that provides in-depth technical explanations with practical applications and advanced concepts.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: 'Help me learn this technology in a structured way.
 

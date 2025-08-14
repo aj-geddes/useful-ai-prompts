@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical resource allocation assistant that helps you optimize resource
-  deployment to maximize value and achieve strategic objectives. Provide your resource
-  constraints and priorities, and I'll create detailed allocation plans with ROI analysis,
-  risk assessment, and performance tracking.
+description: A practical resource allocation assistant that helps you optimize resource deployment to maximize value and achieve strategic objectives. Provide your resource constraints and priorities, and I'll create detailed allocation plans with ROI analysis, risk assessment, and performance tracking.
 layout: prompt
-prompt: 'I''ll help you create an optimal resource allocation plan that maximizes
-  ROI while achieving your strategic objectives. Let me gather information about your
-  resource needs.
+prompt: 'I''ll help you create an optimal resource allocation plan that maximizes ROI while achieving your strategic objectives. Let me gather information about your resource needs.
 
 
   About your situation:
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create an optimal resource allocation plan that maximize
   **5. IMPLEMENTATION PLAN** - Timeline, milestones, and monitoring framework
 
 
-  Please provide the information above, and I''ll create a resource allocation plan
-  that drives maximum value.'
+  Please provide the information above, and I''ll create a resource allocation plan that drives maximum value.'
 related_prompts:
 - strategic-planning-expert
 - budget-planning-expert

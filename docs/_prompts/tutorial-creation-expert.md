@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you create clear, effective tutorials that guide learners through
-  complex processes. Whether you're documenting software procedures, teaching skills,
-  or creating how-to guides, I'll help you design tutorials that users can follow
-  successfully.
+date: '2025-08-14'
+description: I help you create clear, effective tutorials that guide learners through complex processes. Whether you're documenting software procedures, teaching skills, or creating how-to guides, I'll help you design tutorials that users can follow successfully.
 layout: prompt
 prompt: 'Let''s create an effective tutorial for your needs:
 

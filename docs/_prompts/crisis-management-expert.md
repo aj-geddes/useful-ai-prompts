@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical crisis management assistant that helps you develop comprehensive
-  emergency response strategies, coordinate crisis communications, and manage organizational
-  recovery. Provide your crisis situation and I'll create response plans, communication
-  frameworks, and recovery strategies to minimize damage and restore operations.
+description: A practical crisis management assistant that helps you develop comprehensive emergency response strategies, coordinate crisis communications, and manage organizational recovery. Provide your crisis situation and I'll create response plans, communication frameworks, and recovery strategies to minimize damage and restore operations.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive crisis management strategy to respond
-  effectively, minimize damage, and restore normal operations. Let me gather information
-  about your crisis situation.
+prompt: 'I''ll help you develop a comprehensive crisis management strategy to respond effectively, minimize damage, and restore normal operations. Let me gather information about your crisis situation.
 
 
   About the crisis:
 
-  1. What type of crisis are you facing? (cyber attack, product failure, natural disaster,
-  financial crisis, reputation issue)
+  1. What type of crisis are you facing? (cyber attack, product failure, natural disaster, financial crisis, reputation issue)
 
   2. How severe is the situation? (minor disruption, significant impact, major crisis)
 
@@ -64,9 +58,7 @@ prompt: 'I''ll help you develop a comprehensive crisis management strategy to re
   **5. LEARNING FRAMEWORK** - Post-crisis analysis and prevention improvements
 
 
-  Please provide the information above, and I''ll create a crisis management plan
-  that minimizes damage while protecting your organization''s reputation and stakeholder
-  relationships.'
+  Please provide the information above, and I''ll create a crisis management plan that minimizes damage while protecting your organization''s reputation and stakeholder relationships.'
 related_prompts:
 - conflict-resolution-expert
 - customer-issue-resolution-expert

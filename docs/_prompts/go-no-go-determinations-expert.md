@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Provides structured framework for making critical go/no-go decisions
-  by evaluating readiness criteria, risks, and success factors for projects, launches,
-  or major initiatives.
+date: '2025-08-14'
+description: Provides structured framework for making critical go/no-go decisions by evaluating readiness criteria, risks, and success factors for projects, launches, or major initiatives.
 layout: prompt
-prompt: 'I''ll help you make a confident go/no-go decision. Let''s evaluate your situation
-  systematically:
+prompt: 'I''ll help you make a confident go/no-go decision. Let''s evaluate your situation systematically:
 
 
   **Initiative Overview:**

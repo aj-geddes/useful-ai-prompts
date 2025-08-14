@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Create strategic campaigns to re-engage and win back lost customers.
-  This prompt helps design multi-touch win-back programs that understand why customers
-  left and present compelling reasons to return.
+description: Create strategic campaigns to re-engage and win back lost customers. This prompt helps design multi-touch win-back programs that understand why customers left and present compelling reasons to return.
 layout: prompt
-prompt: 'I''ll help you create an effective customer win-back strategy. Let''s understand
-  your situation:
+prompt: 'I''ll help you create an effective customer win-back strategy. Let''s understand your situation:
 
 
   CHURN CONTEXT:
@@ -52,14 +49,11 @@ prompt: 'I''ll help you create an effective customer win-back strategy. Let''s u
 
   |---------|---------|--------------|-------------------|----------|
 
-  | Recent Defectors | <90 days | Price/competition | High (25-30%) | Aggressive offers
-  |
+  | Recent Defectors | <90 days | Price/competition | High (25-30%) | Aggressive offers |
 
-  | Seasonal Leavers | Cyclical use | Natural cycle | High (40%) | Timely re-engagement
-  |
+  | Seasonal Leavers | Cyclical use | Natural cycle | High (40%) | Timely re-engagement |
 
-  | Bad Experience | Service issue | Dissatisfaction | Medium (15%) | Apology + fix
-  |
+  | Bad Experience | Service issue | Dissatisfaction | Medium (15%) | Apology + fix |
 
   | Natural Churn | Outgrew need | Life change | Low (5%) | New value prop |
 

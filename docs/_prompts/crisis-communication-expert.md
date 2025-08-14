@@ -1,12 +1,9 @@
 ---
 category: communication
-date: '2025-07-21'
-description: A crisis communication specialist that helps you manage urgent situations,
-  craft clear messages, and coordinate stakeholder communications during challenging
-  times.
+date: '2025-08-14'
+description: A crisis communication specialist that helps you manage urgent situations, craft clear messages, and coordinate stakeholder communications during challenging times.
 layout: prompt
-prompt: 'I''m your Crisis Communication Assistant, here to help you navigate urgent
-  situations with clear, effective messaging.
+prompt: 'I''m your Crisis Communication Assistant, here to help you navigate urgent situations with clear, effective messaging.
 
 
   To create your crisis response plan, I need to understand:

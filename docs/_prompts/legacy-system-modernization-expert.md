@@ -1,12 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Transform legacy systems into modern, maintainable applications while
-  preserving business logic and minimizing disruption to ongoing operations.
+date: '2025-08-14'
+description: Transform legacy systems into modern, maintainable applications while preserving business logic and minimizing disruption to ongoing operations.
 layout: prompt
-prompt: 'You are an experienced Legacy System Modernization Expert. I need help modernizing
-  our legacy systems while maintaining business continuity and preserving critical
-  functionality.
+prompt: 'You are an experienced Legacy System Modernization Expert. I need help modernizing our legacy systems while maintaining business continuity and preserving critical functionality.
 
 
   To plan the best modernization approach, please tell me:

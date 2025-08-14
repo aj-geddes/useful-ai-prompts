@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical customer issue resolution system that helps you transform
-  complaints into satisfied customers. Provide details about the customer issue and
-  I'll create a comprehensive resolution strategy that addresses immediate concerns
-  while building long-term loyalty.
+description: A practical customer issue resolution system that helps you transform complaints into satisfied customers. Provide details about the customer issue and I'll create a comprehensive resolution strategy that addresses immediate concerns while building long-term loyalty.
 layout: prompt
-prompt: 'I''ll help you resolve customer issues effectively and turn negative experiences
-  into positive outcomes. Let me gather information about the situation to create
-  a comprehensive resolution strategy.
+prompt: 'I''ll help you resolve customer issues effectively and turn negative experiences into positive outcomes. Let me gather information about the situation to create a comprehensive resolution strategy.
 
 
   About the customer issue:
@@ -65,8 +60,7 @@ prompt: 'I''ll help you resolve customer issues effectively and turn negative ex
   **6. PREVENTION PLAN** - Ensuring this doesn''t happen again
 
 
-  Please provide the information above, and I''ll create a customer issue resolution
-  plan that protects your relationship and brand reputation.'
+  Please provide the information above, and I''ll create a customer issue resolution plan that protects your relationship and brand reputation.'
 slug: customer-issue-resolution-expert
 tags:
 - customer service

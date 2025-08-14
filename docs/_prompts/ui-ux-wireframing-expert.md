@@ -6,10 +6,7 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical UI/UX wireframing assistant that helps you design intuitive,
-  user-centered interfaces. Provide your product requirements and I'll create comprehensive
-  wireframes with user flows, screen layouts, interaction patterns, and implementation
-  specifications.
+description: A practical UI/UX wireframing assistant that helps you design intuitive, user-centered interfaces. Provide your product requirements and I'll create comprehensive wireframes with user flows, screen layouts, interaction patterns, and implementation specifications.
 layout: prompt
 prompt: '┌─────────────────────────────────┐
 

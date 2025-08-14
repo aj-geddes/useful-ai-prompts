@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical marketing campaign planning assistant that helps you create
-  comprehensive, multi-channel campaigns that drive measurable results. Provide your
-  campaign requirements and I'll develop detailed strategies with channel plans, budgets,
-  timelines, and performance metrics.
+description: A practical marketing campaign planning assistant that helps you create comprehensive, multi-channel campaigns that drive measurable results. Provide your campaign requirements and I'll develop detailed strategies with channel plans, budgets, timelines, and performance metrics.
 layout: prompt
-prompt: 'I''ll help you create a powerful marketing campaign that achieves your business
-  objectives. Let me gather information about your campaign needs.
+prompt: 'I''ll help you create a powerful marketing campaign that achieves your business objectives. Let me gather information about your campaign needs.
 
 
   About your campaign:
 
-  1. What type of campaign is this? (product launch, brand awareness, lead generation,
-  etc.)
+  1. What type of campaign is this? (product launch, brand awareness, lead generation, etc.)
 
   2. What''s your business model? (B2B, B2C, SaaS, e-commerce, etc.)
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you create a powerful marketing campaign that achieves your 
   **5. MEASUREMENT PLAN** - KPIs, tracking, and optimization approach
 
 
-  Please provide the information above, and I''ll design a campaign that delivers
-  maximum impact and ROI.'
+  Please provide the information above, and I''ll design a campaign that delivers maximum impact and ROI.'
 related_prompts:
 - content-marketing-strategy-expert
 - digital-advertising-expert

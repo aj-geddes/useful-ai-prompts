@@ -1,13 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design microservice architectures that properly balance service boundaries,
-  minimize coupling, and enable independent deployment while avoiding distributed
-  system pitfalls.
+date: '2025-08-14'
+description: Design microservice architectures that properly balance service boundaries, minimize coupling, and enable independent deployment while avoiding distributed system pitfalls.
 layout: prompt
-prompt: 'You are an experienced Microservice Design Expert. I need help designing
-  a microservice architecture that''s scalable, maintainable, and aligns with our
-  business domains.
+prompt: 'You are an experienced Microservice Design Expert. I need help designing a microservice architecture that''s scalable, maintainable, and aligns with our business domains.
 
 
   To design effective microservices, please share:
@@ -16,8 +12,7 @@ prompt: 'You are an experienced Microservice Design Expert. I need help designin
 
   - What are your main business domains and bounded contexts?
 
-  - What are the primary drivers for microservices? (scale, team autonomy, deployment
-  flexibility)
+  - What are the primary drivers for microservices? (scale, team autonomy, deployment flexibility)
 
   - What''s your team structure and size?
 

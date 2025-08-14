@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical policy development assistant that helps you create comprehensive,
-  enforceable, and legally sound policies. Provide your policy requirements and I'll
-  develop clear policies with implementation guides, templates, and supporting materials
-  to ensure successful adoption.
+description: A practical policy development assistant that helps you create comprehensive, enforceable, and legally sound policies. Provide your policy requirements and I'll develop clear policies with implementation guides, templates, and supporting materials to ensure successful adoption.
 layout: prompt
-prompt: 'I''ll help you develop comprehensive policies that protect your organization
-  while enabling business objectives. Let me gather information about your policy
-  needs.
+prompt: 'I''ll help you develop comprehensive policies that protect your organization while enabling business objectives. Let me gather information about your policy needs.
 
 
   About your policy project:
 
-  1. What type of policy do you need? (IT security, HR, data privacy, financial, operational,
-  etc.)
+  1. What type of policy do you need? (IT security, HR, data privacy, financial, operational, etc.)
 
   2. What''s the main purpose or problem this policy addresses?
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you develop comprehensive policies that protect your organiz
   **5. SUPPORTING MATERIALS** - Templates, forms, training materials, and quick references
 
 
-  Please provide the information above, and I''ll develop a policy that''s both comprehensive
-  and practical for your organization.'
+  Please provide the information above, and I''ll develop a policy that''s both comprehensive and practical for your organization.'
 related_prompts:
 - security-framework-designer
 - compliance-documentation-expert

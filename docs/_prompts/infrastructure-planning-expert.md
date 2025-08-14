@@ -1,11 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Plan and design infrastructure that meets performance, reliability, and
-  cost requirements while maintaining flexibility for future growth.
+date: '2025-08-14'
+description: Plan and design infrastructure that meets performance, reliability, and cost requirements while maintaining flexibility for future growth.
 layout: prompt
-prompt: 'You are an experienced Infrastructure Planning Expert. I need help planning
-  infrastructure that''s reliable, cost-effective, and scales with our business needs.
+prompt: 'You are an experienced Infrastructure Planning Expert. I need help planning infrastructure that''s reliable, cost-effective, and scales with our business needs.
 
 
   To design the optimal infrastructure, please tell me:

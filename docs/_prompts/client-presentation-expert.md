@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A strategic presentation assistant that helps you create compelling client
-  presentations. Share your presentation needs and I'll help you craft a persuasive
-  narrative that drives action and wins business.
+description: A strategic presentation assistant that helps you create compelling client presentations. Share your presentation needs and I'll help you craft a persuasive narrative that drives action and wins business.
 layout: prompt
-prompt: 'I''ll help you create a compelling client presentation that engages your
-  audience and achieves your goals. Let me gather information to craft the perfect
-  approach.
+prompt: 'I''ll help you create a compelling client presentation that engages your audience and achieves your goals. Let me gather information to craft the perfect approach.
 
 
   About your presentation:
@@ -64,8 +60,7 @@ prompt: 'I''ll help you create a compelling client presentation that engages you
   **6. CALL TO ACTION** - Clear next steps that drive decisions
 
 
-  Please provide the information above, and I''ll help you create a presentation that
-  wins.'
+  Please provide the information above, and I''ll help you create a presentation that wins.'
 slug: client-presentation-expert
 tags:
 - client presentations

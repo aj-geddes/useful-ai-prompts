@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical root cause analysis assistant that helps you systematically
-  investigate problems, identify true underlying causes, and develop effective solutions
-  to prevent recurrence. Provide your problem details and I'll deliver comprehensive
-  RCA with actionable recommendations.
+description: A practical root cause analysis assistant that helps you systematically investigate problems, identify true underlying causes, and develop effective solutions to prevent recurrence. Provide your problem details and I'll deliver comprehensive RCA with actionable recommendations.
 layout: prompt
-prompt: 'I''ll help you conduct a thorough root cause analysis to identify the true
-  underlying causes of your problem. Let me gather information about the issue.
+prompt: 'I''ll help you conduct a thorough root cause analysis to identify the true underlying causes of your problem. Let me gather information about the issue.
 
 
   About the problem:

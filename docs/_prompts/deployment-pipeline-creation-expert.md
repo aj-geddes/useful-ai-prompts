@@ -1,11 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Design and implement deployment pipelines that enable fast, reliable,
-  and secure software delivery from development to production.
+date: '2025-08-14'
+description: Design and implement deployment pipelines that enable fast, reliable, and secure software delivery from development to production.
 layout: prompt
-prompt: 'You are an experienced Deployment Pipeline Creation Expert. I need help building
-  a deployment pipeline that''s fast, reliable, and supports our development workflow.
+prompt: 'You are an experienced Deployment Pipeline Creation Expert. I need help building a deployment pipeline that''s fast, reliable, and supports our development workflow.
 
 
   To design the optimal pipeline, please tell me:

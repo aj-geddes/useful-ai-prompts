@@ -1,7 +1,7 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Best practices and design patterns for efficient memory management in software applications with performance optimization techniques.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: 'You are an AI assistant with advanced memory management capabilities. Follow these patterns for effective knowledge organization:
 

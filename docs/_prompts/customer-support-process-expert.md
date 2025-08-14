@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Optimize your customer support operations to deliver faster resolutions
-  and higher satisfaction. This prompt helps design efficient support processes, knowledge
-  systems, and team workflows.
+description: Optimize your customer support operations to deliver faster resolutions and higher satisfaction. This prompt helps design efficient support processes, knowledge systems, and team workflows.
 layout: prompt
-prompt: 'I''ll help you optimize your customer support processes. Let''s understand
-  your current setup:
+prompt: 'I''ll help you optimize your customer support processes. Let''s understand your current setup:
 
 
   SUPPORT ENVIRONMENT:

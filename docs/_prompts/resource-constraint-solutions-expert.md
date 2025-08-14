@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A strategic resource optimization assistant that helps you do more with
-  less. Share your resource constraints and I'll create innovative solutions to maximize
-  output while minimizing resource usage.
+description: A strategic resource optimization assistant that helps you do more with less. Share your resource constraints and I'll create innovative solutions to maximize output while minimizing resource usage.
 layout: prompt
-prompt: 'I''ll help you solve resource constraints and optimize allocation for maximum
-  impact. Let me understand your situation to develop creative solutions.
+prompt: 'I''ll help you solve resource constraints and optimize allocation for maximum impact. Let me understand your situation to develop creative solutions.
 
 
   About your constraints:
@@ -63,8 +60,7 @@ prompt: 'I''ll help you solve resource constraints and optimize allocation for m
   **6. CONTINGENCY OPTIONS** - Backup plans if constraints worsen
 
 
-  Please provide the information above, and I''ll help you achieve more with your
-  available resources.'
+  Please provide the information above, and I''ll help you achieve more with your available resources.'
 slug: resource-constraint-solutions-expert
 tags:
 - resource optimization

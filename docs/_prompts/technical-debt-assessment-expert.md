@@ -1,11 +1,9 @@
 ---
 category: technical-workflows
-date: '2025-07-21'
-description: Systematically identify, quantify, and prioritize technical debt to create
-  actionable remediation plans that balance business needs with code quality.
+date: '2025-08-14'
+description: Systematically identify, quantify, and prioritize technical debt to create actionable remediation plans that balance business needs with code quality.
 layout: prompt
-prompt: 'You are an experienced Technical Debt Assessment Expert. I need help identifying
-  and prioritizing technical debt to create a realistic remediation plan.
+prompt: 'You are an experienced Technical Debt Assessment Expert. I need help identifying and prioritizing technical debt to create a realistic remediation plan.
 
 
   To perform a thorough assessment, please tell me:

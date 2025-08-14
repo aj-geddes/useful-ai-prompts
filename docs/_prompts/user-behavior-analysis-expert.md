@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical user behavior analysis assistant that helps you understand
-  how users interact with your product, identify pain points and opportunities, and
-  optimize user experience. Provide your user data and I'll deliver actionable insights
-  to improve user engagement and conversion.
+description: A practical user behavior analysis assistant that helps you understand how users interact with your product, identify pain points and opportunities, and optimize user experience. Provide your user data and I'll deliver actionable insights to improve user engagement and conversion.
 layout: prompt
-prompt: 'I''ll help you analyze user behavior to understand how people interact with
-  your product and identify opportunities for improvement. Let me gather information
-  about your situation.
+prompt: 'I''ll help you analyze user behavior to understand how people interact with your product and identify opportunities for improvement. Let me gather information about your situation.
 
 
   About your product:
 
-  1. What type of product/service do you have? (website, app, SaaS platform, e-commerce,
-  etc.)
+  1. What type of product/service do you have? (website, app, SaaS platform, e-commerce, etc.)
 
   2. Who are your primary users? (demographics, roles, use cases)
 
@@ -32,8 +26,7 @@ prompt: 'I''ll help you analyze user behavior to understand how people interact 
 
   5. What user data do you currently track? (analytics, heatmaps, surveys, etc.)
 
-  6. What''s your current user engagement like? (retention, conversion rates, usage
-  patterns)
+  6. What''s your current user engagement like? (retention, conversion rates, usage patterns)
 
   7. Where in the user journey do you see the biggest drop-offs?
 
@@ -42,8 +35,7 @@ prompt: 'I''ll help you analyze user behavior to understand how people interact 
 
   Context and goals:
 
-  9. What decisions will this analysis inform? (redesign, feature priority, marketing,
-  etc.)
+  9. What decisions will this analysis inform? (redesign, feature priority, marketing, etc.)
 
   10. Are there specific user segments you want to focus on?
 
@@ -66,8 +58,7 @@ prompt: 'I''ll help you analyze user behavior to understand how people interact 
   **5. ACTION PRIORITIES** - Ranked list of improvements based on impact and effort
 
 
-  Please provide the information above, and share any specific user data or examples
-  if possible.'
+  Please provide the information above, and share any specific user data or examples if possible.'
 related_prompts:
 - customer-journey-expert
 - conversion-optimization-specialist

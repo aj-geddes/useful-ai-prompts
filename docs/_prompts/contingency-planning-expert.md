@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical contingency planning assistant that helps you prepare for
-  disruptions and ensure business continuity. Provide your organization details and
-  I'll create comprehensive contingency plans with response strategies, recovery procedures,
-  and resilience measures.
+description: A practical contingency planning assistant that helps you prepare for disruptions and ensure business continuity. Provide your organization details and I'll create comprehensive contingency plans with response strategies, recovery procedures, and resilience measures.
 layout: prompt
-prompt: 'I''ll help you create a robust contingency plan to protect your organization
-  from disruptions and ensure rapid recovery. Let me gather information about your
-  needs.
+prompt: 'I''ll help you create a robust contingency plan to protect your organization from disruptions and ensure rapid recovery. Let me gather information about your needs.
 
 
   About your organization:
@@ -29,8 +24,7 @@ prompt: 'I''ll help you create a robust contingency plan to protect your organiz
 
   Risk assessment:
 
-  5. What threats are you most concerned about? (natural disasters, cyber attacks,
-  supply chain, etc.)
+  5. What threats are you most concerned about? (natural disasters, cyber attacks, supply chain, etc.)
 
   6. Have you experienced any major disruptions before? What happened?
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you create a robust contingency plan to protect your organiz
   **5. TESTING FRAMEWORK** - How to validate and improve your plans
 
 
-  Please provide the information above, and I''ll create a contingency plan tailored
-  to your organization''s needs and risks.'
+  Please provide the information above, and I''ll create a contingency plan tailored to your organization''s needs and risks.'
 related_prompts:
 - risk-management-planning-expert
 - crisis-management-expert

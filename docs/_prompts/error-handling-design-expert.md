@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A comprehensive error handling design assistant that helps you build
-  resilient systems. Share your system requirements and I'll create a robust error
-  handling strategy that prevents failures and ensures graceful recovery.
+description: A comprehensive error handling design assistant that helps you build resilient systems. Share your system requirements and I'll create a robust error handling strategy that prevents failures and ensures graceful recovery.
 layout: prompt
-prompt: 'I''ll help you design robust error handling for your system. Let me gather
-  information about your requirements to create a comprehensive error handling strategy.
+prompt: 'I''ll help you design robust error handling for your system. Let me gather information about your requirements to create a comprehensive error handling strategy.
 
 
   About your system:
@@ -63,8 +60,7 @@ prompt: 'I''ll help you design robust error handling for your system. Let me gat
   **6. IMPLEMENTATION GUIDE** - Code patterns and best practices
 
 
-  Please provide the information above, and I''ll design an error handling system
-  that keeps your application resilient.'
+  Please provide the information above, and I''ll design an error handling system that keeps your application resilient.'
 related_prompts:
 - system-design-expert
 slug: error-handling-design-expert

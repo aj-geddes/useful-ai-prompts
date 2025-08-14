@@ -6,20 +6,16 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical performance evaluation assistant that helps you assess performance,
-  identify gaps, and develop improvement plans. Provide your performance context and
-  I'll deliver comprehensive analysis with actionable recommendations.
+description: A practical performance evaluation assistant that helps you assess performance, identify gaps, and develop improvement plans. Provide your performance context and I'll deliver comprehensive analysis with actionable recommendations.
 layout: prompt
-prompt: 'I''ll help you evaluate performance and identify improvement opportunities.
-  Let me gather information about what you need to assess.
+prompt: 'I''ll help you evaluate performance and identify improvement opportunities. Let me gather information about what you need to assess.
 
 
   About the evaluation:
 
   1. What are you evaluating? (individual, team, department, process, etc.)
 
-  2. What performance areas? (productivity, quality, financial, customer service,
-  etc.)
+  2. What performance areas? (productivity, quality, financial, customer service, etc.)
 
   3. What time period are you reviewing?
 

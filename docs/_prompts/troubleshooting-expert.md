@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A systematic troubleshooting assistant that helps you diagnose and resolve
-  issues efficiently. Share your problem and I'll guide you through a structured diagnostic
-  process to find and fix the root cause.
+description: A systematic troubleshooting assistant that helps you diagnose and resolve issues efficiently. Share your problem and I'll guide you through a structured diagnostic process to find and fix the root cause.
 layout: prompt
-prompt: 'I''ll help you troubleshoot your issue systematically. Let me gather information
-  to guide you through effective diagnosis and resolution.
+prompt: 'I''ll help you troubleshoot your issue systematically. Let me gather information to guide you through effective diagnosis and resolution.
 
 
   About the problem:

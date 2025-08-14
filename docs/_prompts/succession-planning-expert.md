@@ -6,27 +6,20 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical succession planning assistant that helps you develop comprehensive
-  leadership continuity and talent development strategies. Provide your organizational
-  context and I'll create detailed succession plans with talent assessment, development
-  pathways, and transition planning.
+description: A practical succession planning assistant that helps you develop comprehensive leadership continuity and talent development strategies. Provide your organizational context and I'll create detailed succession plans with talent assessment, development pathways, and transition planning.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive succession plan that ensures leadership
-  continuity and develops strong internal talent pipelines. Let me gather information
-  about your succession planning needs.
+prompt: 'I''ll help you create a comprehensive succession plan that ensures leadership continuity and develops strong internal talent pipelines. Let me gather information about your succession planning needs.
 
 
   About your organization:
 
-  1. What type of organization are you? (startup, growing company, established business,
-  family business)
+  1. What type of organization are you? (startup, growing company, established business, family business)
 
   2. What industry are you in?
 
   3. How many employees and leadership positions do you have?
 
-  4. What''s driving your need for succession planning? (retirement, growth, risk
-  management)
+  4. What''s driving your need for succession planning? (retirement, growth, risk management)
 
 
   Succession context:
@@ -65,8 +58,7 @@ prompt: 'I''ll help you create a comprehensive succession plan that ensures lead
   **5. GOVERNANCE FRAMEWORK** - Oversight structure and success measurement
 
 
-  Please provide the information above, and I''ll design a succession plan that builds
-  leadership strength and organizational resilience.'
+  Please provide the information above, and I''ll design a succession plan that builds leadership strength and organizational resilience.'
 related_prompts:
 - strategic-planning-expert
 - career-development-planning-expert

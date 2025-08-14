@@ -6,18 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical sentiment analysis assistant that helps you analyze text
-  data to understand emotions, opinions, and attitudes. Provide your text data and
-  I'll deliver comprehensive sentiment insights with actionable recommendations.
+description: A practical sentiment analysis assistant that helps you analyze text data to understand emotions, opinions, and attitudes. Provide your text data and I'll deliver comprehensive sentiment insights with actionable recommendations.
 layout: prompt
-prompt: 'I''ll help you analyze sentiment and emotions in your text data to extract
-  meaningful insights. Let me gather information about what you want to analyze.
+prompt: 'I''ll help you analyze sentiment and emotions in your text data to extract meaningful insights. Let me gather information about what you want to analyze.
 
 
   About your text data:
 
-  1. What type of text are you analyzing? (reviews, social media, surveys, support
-  tickets, etc.)
+  1. What type of text are you analyzing? (reviews, social media, surveys, support tickets, etc.)
 
   2. What''s the source? (specific platform, website, internal system)
 
@@ -28,8 +24,7 @@ prompt: 'I''ll help you analyze sentiment and emotions in your text data to extr
 
   Analysis objectives:
 
-  5. What''s your main goal? (brand monitoring, product feedback, crisis detection,
-  etc.)
+  5. What''s your main goal? (brand monitoring, product feedback, crisis detection, etc.)
 
   6. Are there specific topics or aspects you want to focus on?
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you analyze sentiment and emotions in your text data to extr
   **5. MONITORING PLAN** - Ongoing tracking suggestions
 
 
-  Please provide the information above, and if you have specific text samples, share
-  them for analysis.'
+  Please provide the information above, and if you have specific text samples, share them for analysis.'
 related_prompts:
 - customer-journey-analyst
 - brand-perception-expert

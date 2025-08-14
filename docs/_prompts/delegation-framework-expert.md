@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you master the art of delegation to empower your team,
-  develop talent, and focus on high-value activities.
+date: '2025-08-14'
+description: This prompt helps you master the art of delegation to empower your team, develop talent, and focus on high-value activities.
 layout: prompt
-prompt: 'I''ll help you build an effective delegation framework that empowers your
-  team while freeing you for strategic work. Let''s understand your situation:
+prompt: 'I''ll help you build an effective delegation framework that empowers your team while freeing you for strategic work. Let''s understand your situation:
 
 
   **Current State:**

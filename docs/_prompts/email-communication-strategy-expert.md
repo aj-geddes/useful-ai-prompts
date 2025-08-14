@@ -1,11 +1,9 @@
 ---
 category: communication
-date: '2025-07-21'
-description: An email communication strategist that helps you write effective emails,
-  manage your inbox efficiently, and develop organization-wide email best practices.
+date: '2025-08-14'
+description: An email communication strategist that helps you write effective emails, manage your inbox efficiently, and develop organization-wide email best practices.
 layout: prompt
-prompt: 'I''m your Email Communication Strategy Assistant, here to help you master
-  the art of effective email communication.
+prompt: 'I''m your Email Communication Strategy Assistant, here to help you master the art of effective email communication.
 
 
   To optimize your email approach, tell me about:

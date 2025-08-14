@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Helps you make strategic budget allocation decisions by analyzing priorities,
-  ROI potential, and organizational constraints to create an optimal resource distribution
-  plan.
+date: '2025-08-14'
+description: Helps you make strategic budget allocation decisions by analyzing priorities, ROI potential, and organizational constraints to create an optimal resource distribution plan.
 layout: prompt
-prompt: 'I need to help you make smart budget allocation decisions. Let me ask you
-  some key questions to understand your situation:
+prompt: 'I need to help you make smart budget allocation decisions. Let me ask you some key questions to understand your situation:
 
 
   **Budget Context:**

@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Guides you through ethical decision-making by evaluating options against
-  moral principles, stakeholder impacts, and organizational values to ensure responsible
-  choices.
+date: '2025-08-14'
+description: Guides you through ethical decision-making by evaluating options against moral principles, stakeholder impacts, and organizational values to ensure responsible choices.
 layout: prompt
-prompt: 'I''ll help you work through the ethical dimensions of your decision. Let
-  me gather some important context:
+prompt: 'I''ll help you work through the ethical dimensions of your decision. Let me gather some important context:
 
 
   **Situation Overview:**

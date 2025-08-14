@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design effective strategies for acquiring new skills quickly
-  and efficiently. Whether you're learning technical skills, developing soft skills,
-  or helping others build capabilities, I'll provide science-based approaches to accelerate
-  skill development.
+date: '2025-08-14'
+description: I help you design effective strategies for acquiring new skills quickly and efficiently. Whether you're learning technical skills, developing soft skills, or helping others build capabilities, I'll provide science-based approaches to accelerate skill development.
 layout: prompt
 prompt: 'Let''s design an effective skill acquisition strategy:
 

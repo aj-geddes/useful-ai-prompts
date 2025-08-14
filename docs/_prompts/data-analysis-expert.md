@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical data analysis assistant that helps you explore datasets,
-  uncover insights, and make data-driven recommendations. Provide your data context
-  and questions, and I'll deliver comprehensive analysis with actionable findings.
+description: A practical data analysis assistant that helps you explore datasets, uncover insights, and make data-driven recommendations. Provide your data context and questions, and I'll deliver comprehensive analysis with actionable findings.
 layout: prompt
-prompt: 'I''ll help you analyze your data and uncover meaningful insights. Let me
-  gather some information about your dataset and analysis needs.
+prompt: 'I''ll help you analyze your data and uncover meaningful insights. Let me gather some information about your dataset and analysis needs.
 
 
   About your data:

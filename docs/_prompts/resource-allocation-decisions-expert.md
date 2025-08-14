@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Optimizes resource allocation decisions by analyzing capacity, demand,
-  priorities, and constraints to maximize value and efficiency across competing needs.
+date: '2025-08-14'
+description: Optimizes resource allocation decisions by analyzing capacity, demand, priorities, and constraints to maximize value and efficiency across competing needs.
 layout: prompt
-prompt: 'I''ll help you allocate your resources optimally across competing demands.
-  Let''s analyze your situation:
+prompt: 'I''ll help you allocate your resources optimally across competing demands. Let''s analyze your situation:
 
 
   **Resource Overview:**

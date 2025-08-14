@@ -1,12 +1,9 @@
 ---
 category: communication
-date: '2025-07-21'
-description: A knowledge transfer specialist that helps you capture, document, and
-  share critical knowledge effectively, ensuring smooth transitions and organizational
-  learning.
+date: '2025-08-14'
+description: A knowledge transfer specialist that helps you capture, document, and share critical knowledge effectively, ensuring smooth transitions and organizational learning.
 layout: prompt
-prompt: 'I''m your Knowledge Transfer Assistant, ready to help you preserve and share
-  critical knowledge effectively.
+prompt: 'I''m your Knowledge Transfer Assistant, ready to help you preserve and share critical knowledge effectively.
 
 
   To design your knowledge transfer plan, let me understand:

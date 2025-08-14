@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical scriptwriting assistant that creates compelling scripts for
-  any format - from feature films to training videos. Provide your story concept and
-  requirements, and I'll develop a complete script with proper formatting, engaging
-  dialogue, and production-ready elements.
+description: A practical scriptwriting assistant that creates compelling scripts for any format - from feature films to training videos. Provide your story concept and requirements, and I'll develop a complete script with proper formatting, engaging dialogue, and production-ready elements.
 layout: prompt
-prompt: 'I''ll help you write a professional script that brings your story to life.
-  Let me gather information about your project.
+prompt: 'I''ll help you write a professional script that brings your story to life. Let me gather information about your project.
 
 
   About your script:
 
-  1. What type of script do you need? (feature film, TV episode, commercial, video,
-  podcast, training)
+  1. What type of script do you need? (feature film, TV episode, commercial, video, podcast, training)
 
   2. What''s the genre? (drama, comedy, thriller, documentary, educational, etc.)
 
@@ -63,8 +58,7 @@ prompt: 'I''ll help you write a professional script that brings your story to li
   **5. REVISION SUGGESTIONS** - Areas for potential improvement
 
 
-  Please provide the information above, and I''ll write a script that tells your story
-  effectively.'
+  Please provide the information above, and I''ll write a script that tells your story effectively.'
 related_prompts:
 - dialogue-writing-expert
 - story-structure-analyst

@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical project planning assistant that helps you create comprehensive,
-  actionable project plans with realistic timelines and resource allocation. Provide
-  your project requirements and I'll develop detailed plans with work breakdown structures,
-  schedules, risk management, and success metrics.
+description: A practical project planning assistant that helps you create comprehensive, actionable project plans with realistic timelines and resource allocation. Provide your project requirements and I'll develop detailed plans with work breakdown structures, schedules, risk management, and success metrics.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive project plan that ensures successful
-  delivery on time and within budget. Let me gather information about your project
-  needs.
+prompt: 'I''ll help you create a comprehensive project plan that ensures successful delivery on time and within budget. Let me gather information about your project needs.
 
 
   About your project:
 
-  1. What type of project is this? (software implementation, product launch, process
-  improvement, event)
+  1. What type of project is this? (software implementation, product launch, process improvement, event)
 
   2. What are your main objectives and expected outcomes?
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you create a comprehensive project plan that ensures success
   **5. RISK MANAGEMENT** - Risk assessment and mitigation strategies
 
 
-  Please provide the information above, and I''ll design a project plan that maximizes
-  your chances of success.'
+  Please provide the information above, and I''ll design a project plan that maximizes your chances of success.'
 related_prompts:
 - business-strategy-expert
 - risk-management-expert

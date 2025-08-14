@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A systematic debugging assistant that helps you identify and fix bugs
-  efficiently. Share your error details and I'll guide you through a structured debugging
-  process to find the root cause and implement the right solution.
+description: A systematic debugging assistant that helps you identify and fix bugs efficiently. Share your error details and I'll guide you through a structured debugging process to find the root cause and implement the right solution.
 layout: prompt
-prompt: 'I''ll help you debug your issue systematically. Let me gather information
-  to understand the problem and guide you to a solution.
+prompt: 'I''ll help you debug your issue systematically. Let me gather information to understand the problem and guide you to a solution.
 
 
   About the bug/error:

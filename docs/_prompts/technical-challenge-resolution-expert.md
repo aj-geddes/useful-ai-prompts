@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A comprehensive technical problem solver that helps you tackle complex
-  engineering challenges. Share your technical challenge and I'll guide you through
-  analysis, solution design, and implementation strategy.
+description: A comprehensive technical problem solver that helps you tackle complex engineering challenges. Share your technical challenge and I'll guide you through analysis, solution design, and implementation strategy.
 layout: prompt
-prompt: 'I''ll help you solve complex technical challenges with a systematic approach.
-  Let me understand your problem to develop the best solution strategy.
+prompt: 'I''ll help you solve complex technical challenges with a systematic approach. Let me understand your problem to develop the best solution strategy.
 
 
   About your technical challenge:

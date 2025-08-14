@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you synthesize complex information from multiple sources into
-  coherent, actionable knowledge. Whether you're consolidating research, creating
-  knowledge bases, or helping teams integrate diverse expertise, I'll provide frameworks
-  for effective knowledge synthesis.
+date: '2025-08-14'
+description: I help you synthesize complex information from multiple sources into coherent, actionable knowledge. Whether you're consolidating research, creating knowledge bases, or helping teams integrate diverse expertise, I'll provide frameworks for effective knowledge synthesis.
 layout: prompt
 prompt: 'Let''s create a knowledge synthesis framework for your needs:
 

@@ -1,31 +1,35 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-07-22T06:35:00.450675",
-  "total_prompts": 259,
+  "last_updated": "2025-08-14T18:47:08.527905",
+  "total_prompts": 278,
   "categories": [
-    "research-workflows",
-    "creativity-innovation",
-    "evaluation-assessment",
     "learning-development",
+    "communication",
+    "creation",
+    "supply-chain",
+    "research-workflows",
+    "blockchain",
+    "technical-workflows",
+    "optimization",
+    "decision-making",
+    "planning",
     "management-leadership",
     "customer-focused",
-    "planning",
-    "technical-workflows",
-    "communication",
-    "optimization",
+    "healthcare-digital",
+    "evaluation-assessment",
     "problem-solving",
-    "decision-making",
     "analysis",
-    "creation"
+    "government",
+    "creativity-innovation"
   ],
   "prompts": [
     {
       "title": "Architectural Decision Record (ADR) Generation Prompt",
-      "description": "Generate comprehensive Architecture Decision Records (ADRs) to document key architectural decisions with context, consequences, and alternatives.",
+      "description": "",
       "category": "research-workflows",
       "tags": [],
       "slug": "adr-record-generation",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -33,30 +37,30 @@
     },
     {
       "title": "Temperature 0 Research Framework for Architectural Decision Records",
-      "description": "A structured framework for researching and documenting architectural decisions with comprehensive analysis and decision rationale.",
+      "description": "",
       "category": "research-workflows",
       "tags": [],
       "slug": "adr-research-framework",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/adr-research-framework.md"
     },
     {
-      "title": "Advanced Debugging and Root Cause Analyzer",
-      "description": "This prompt transforms complex debugging scenarios into systematic investigations using multiple analytical frameworks. It combines the expertise of a senior software engineer with systems analysis to identify root causes, propose fixes, and prevent future occurrences. The approach layers technical expertise with methodical problem-solving to handle even the most elusive bugs.",
+      "title": "Advanced Debugging Analyzer",
+      "description": "This prompt helps you systematically debug complex software issues through structured analysis, hypothesis testing, and root cause identification.",
       "category": "technical-workflows",
       "tags": [
         "debugging",
-        "root cause analysis",
-        "software engineering",
         "troubleshooting",
-        "problem solving"
+        "root cause analysis",
+        "performance debugging",
+        "diagnostics"
       ],
       "slug": "advanced-debugging-analyzer",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -64,10 +68,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "bug investigation",
+        "bug diagnosis",
         "performance issues",
-        "system failures",
-        "production incidents"
+        "memory leaks",
+        "system debugging"
       ],
       "file_path": "_prompts/advanced-debugging-analyzer.md"
     },
@@ -83,7 +87,7 @@
         "computational-optimization"
       ],
       "slug": "algorithm-efficiency-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -157,7 +161,7 @@
         "documentation"
       ],
       "slug": "api-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -165,15 +169,69 @@
     },
     {
       "title": "Bandit Security Analysis Prompt",
-      "description": "A comprehensive security analysis tool that uses Bandit to identify security vulnerabilities in Python code and provides detailed remediation guidance.",
+      "description": "",
       "category": "technical-workflows",
       "tags": [],
       "slug": "bandit-security-analysis",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/bandit-security-analysis.md"
+    },
+    {
+      "title": "Digital Identity Manager",
+      "description": "This prompt helps you build secure digital identity management systems using blockchain technology for self-sovereign identity, credential verification, and privacy-preserving authentication.",
+      "category": "blockchain",
+      "tags": [
+        "digital identity",
+        "self-sovereign identity",
+        "verifiable credentials",
+        "privacy",
+        "KYC"
+      ],
+      "slug": "blockchain-digital-identity-management-platform",
+      "date": "2025-01-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro"
+      ],
+      "use_cases": [
+        "identity verification",
+        "credential management",
+        "privacy protection",
+        "compliance automation"
+      ],
+      "file_path": "_prompts/blockchain-digital-identity-management-platform.md"
+    },
+    {
+      "title": "Supply Chain Transparency Manager",
+      "description": "This prompt helps you build blockchain-based supply chain transparency systems for end-to-end product traceability, compliance automation, and supply chain optimization.",
+      "category": "blockchain",
+      "tags": [
+        "supply chain",
+        "traceability",
+        "transparency",
+        "logistics",
+        "compliance"
+      ],
+      "slug": "blockchain-supply-chain-transparency-platform",
+      "date": "2025-01-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro"
+      ],
+      "use_cases": [
+        "product traceability",
+        "supply chain transparency",
+        "compliance tracking",
+        "logistics optimization"
+      ],
+      "file_path": "_prompts/blockchain-supply-chain-transparency-platform.md"
     },
     {
       "title": "Brainstorming Facilitator",
@@ -240,7 +298,7 @@
         "cost-optimization"
       ],
       "slug": "budget-allocation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -276,19 +334,18 @@
       "file_path": "_prompts/budget-planning-expert.md"
     },
     {
-      "title": "Business Analysis Strategic Excellence and Digital Transformation Expert",
-      "description": "This prompt transforms complex business challenges into actionable solutions through strategic analysis, process optimization, and digital innovation. It combines analytical rigor with transformation expertise to bridge the gap between business needs and technical capabilities, ensuring successful outcomes that deliver measurable value and sustainable competitive advantage.",
+      "title": "Business Analyst Strategic Excellence",
+      "description": "This prompt helps you conduct strategic business analysis that drives organizational improvement through data-driven insights, process optimization, and effective solution design.",
       "category": "management-leadership",
       "tags": [
         "business analysis",
-        "requirements engineering",
+        "strategic planning",
         "process improvement",
-        "digital transformation",
-        "stakeholder management"
+        "requirements analysis"
       ],
       "slug": "business-analyst-strategic-excellence",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -296,16 +353,16 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "requirements gathering",
+        "strategic analysis",
+        "business case development",
         "process optimization",
-        "change management",
         "solution design"
       ],
       "file_path": "_prompts/business-analyst-strategic-excellence.md"
     },
     {
-      "title": "Calendar Intelligence Expert and Executive Time Strategist",
-      "description": "This prompt transforms chaotic calendars into strategic time allocation systems that maximize executive productivity while preserving relationship quality. It combines administrative expertise with time management science to create intelligent scheduling frameworks that protect deep work, optimize energy patterns, and ensure strategic priorities receive appropriate attention.",
+      "title": "Calendar Optimization Expert",
+      "description": "This prompt helps you transform a chaotic calendar into a strategic time management system that maximizes productivity while protecting focus time and work-life balance.",
       "category": "management-leadership",
       "tags": [
         "calendar management",
@@ -316,7 +373,7 @@
       ],
       "slug": "calendar-optimization",
       "date": "2025-07-20",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -337,7 +394,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "candidate-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -384,27 +441,26 @@
         "communication"
       ],
       "slug": "change-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/change-management-expert.md"
     },
     {
-      "title": "CI/CD Pipeline Optimization and Acceleration Expert",
-      "description": "This prompt analyzes existing CI/CD pipelines to identify bottlenecks, reduce build times, improve reliability, and optimize resource usage. It combines DevOps expertise with performance engineering to transform slow, unreliable pipelines into efficient, resilient deployment systems that support rapid iteration.",
+      "title": "CI/CD Pipeline Optimizer",
+      "description": "This prompt helps you design and optimize CI/CD pipelines that are fast, reliable, and scalable while maintaining security and quality standards.",
       "category": "technical-workflows",
       "tags": [
         "CI/CD",
         "pipeline optimization",
-        "DevOps",
         "automation",
-        "build acceleration",
-        "deployment"
+        "deployment",
+        "continuous integration"
       ],
       "slug": "cicd-pipeline-optimizer",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -412,20 +468,48 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "slow builds",
-        "pipeline failures",
-        "deployment bottlenecks",
-        "resource optimization"
+        "pipeline design",
+        "build optimization",
+        "deployment automation",
+        "release management"
       ],
       "file_path": "_prompts/cicd-pipeline-optimizer.md"
     },
     {
+      "title": "Citizen Service Experience Designer",
+      "description": "This prompt helps government service designers create citizen-centered digital experiences that simplify government interactions, reduce friction, and improve satisfaction while ensuring accessibility, transparency, and effectiveness in public service delivery.",
+      "category": "government",
+      "tags": [
+        "citizen experience",
+        "service design",
+        "government UX",
+        "digital services",
+        "citizen journey"
+      ],
+      "slug": "citizen-service-experience-designer",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "government service optimization",
+        "citizen experience improvement",
+        "digital service design",
+        "public service delivery"
+      ],
+      "file_path": "_prompts/citizen-service-experience-designer.md"
+    },
+    {
       "title": "Claude Desktop MCP Configuration Template",
-      "description": "Practical examples and implementation guides for integrating Claude with MCP (Model Context Protocol) servers.",
+      "description": "",
       "category": "technical-workflows",
       "tags": [],
       "slug": "claude-mcp-example",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -461,19 +545,20 @@
       "file_path": "_prompts/client-presentation-expert.md"
     },
     {
-      "title": "Cloud Migration Architect and Infrastructure Modernization Expert",
-      "description": "This prompt transforms complex legacy infrastructure into optimized cloud architectures that maximize performance, security, and cost-efficiency. It combines architectural expertise with cloud engineering best practices to create comprehensive migration strategies that minimize risk while enabling digital transformation and operational excellence.",
+      "title": "Cloud Migration Expert",
+      "description": "This prompt helps you plan and execute cloud migrations with minimal risk, optimal architecture, and cost efficiency while ensuring business continuity.",
       "category": "technical-workflows",
       "tags": [
         "cloud migration",
+        "AWS",
+        "Azure",
+        "GCP",
         "infrastructure",
-        "modernization",
-        "architecture",
-        "devops"
+        "migration strategy"
       ],
       "slug": "cloud-migration-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -481,9 +566,9 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "cloud migration",
-        "infrastructure design",
-        "modernization planning",
+        "cloud assessment",
+        "migration planning",
+        "architecture design",
         "cost optimization"
       ],
       "file_path": "_prompts/cloud-migration-expert.md"
@@ -500,7 +585,7 @@
         "migration-strategy"
       ],
       "slug": "cloud-migration-planning-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -545,7 +630,7 @@
         "technical-debt"
       ],
       "slug": "code-refactoring-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -557,7 +642,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "code-review-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -574,7 +659,7 @@
         "performance evaluation"
       ],
       "slug": "competency-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -618,7 +703,7 @@
         "business-intelligence"
       ],
       "slug": "competitive-intelligence-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -630,15 +715,15 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "compliance-audit-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/compliance-audit-expert.md"
     },
     {
-      "title": "Regulatory Compliance Strategist and Risk Management Expert",
-      "description": "This prompt transforms complex regulatory landscapes into comprehensive compliance strategies that protect organizations while enabling business growth. It combines deep regulatory expertise with systematic risk assessment to create robust compliance frameworks that anticipate regulatory changes, prevent violations, and establish cultures of ethical excellence across global operations.",
+      "title": "Compliance Officer Expert",
+      "description": "This prompt helps you develop comprehensive compliance strategies that protect your organization while enabling business growth through proactive regulatory management and risk mitigation.",
       "category": "management-leadership",
       "tags": [
         "compliance",
@@ -649,7 +734,7 @@
       ],
       "slug": "compliance-officer-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -665,19 +750,18 @@
       "file_path": "_prompts/compliance-officer-expert.md"
     },
     {
-      "title": "Comprehensive Project Risk Assessment and Mitigation Planner",
-      "description": "This prompt performs systematic risk identification, assessment, and mitigation planning for complex projects. It combines project management expertise with risk analysis frameworks to uncover hidden risks, quantify impacts, and develop actionable mitigation strategies that protect project success while maintaining stakeholder confidence.",
+      "title": "Comprehensive Risk Assessment",
+      "description": "This prompt helps you identify, analyze, and mitigate project risks through systematic assessment, prioritization, and development of effective response strategies.",
       "category": "management-leadership",
       "tags": [
-        "risk management",
-        "project management",
         "risk assessment",
-        "mitigation planning",
-        "stakeholder management"
+        "risk management",
+        "project risks",
+        "mitigation planning"
       ],
       "slug": "comprehensive-risk-assessment",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -685,27 +769,27 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "project planning",
-        "risk registers",
-        "stakeholder reporting",
-        "contingency planning"
+        "project risk analysis",
+        "risk mitigation",
+        "contingency planning",
+        "risk monitoring"
       ],
       "file_path": "_prompts/comprehensive-risk-assessment.md"
     },
     {
-      "title": "Comprehensive Test Strategy Architect and Quality Engineering Expert",
-      "description": "This prompt creates comprehensive test strategies that ensure software quality through systematic planning, risk-based prioritization, and balanced automation. It combines strategic test architecture with practical implementation to build testing frameworks that catch defects early, reduce regression risk, and enable confident releases while optimizing testing effort and resources.",
+      "title": "Comprehensive Test Strategist",
+      "description": "This prompt helps you develop comprehensive testing strategies that ensure software quality through systematic planning, appropriate automation, and effective test coverage.",
       "category": "technical-workflows",
       "tags": [
         "test strategy",
-        "QA",
-        "quality engineering",
-        "test automation",
-        "testing frameworks"
+        "quality assurance",
+        "test planning",
+        "automation",
+        "test management"
       ],
       "slug": "comprehensive-test-strategist",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -714,9 +798,9 @@
       ],
       "use_cases": [
         "test planning",
-        "automation strategy",
-        "quality metrics",
-        "risk-based testing"
+        "quality strategy",
+        "automation framework",
+        "test coverage"
       ],
       "file_path": "_prompts/comprehensive-test-strategist.md"
     },
@@ -758,7 +842,7 @@
         "knowledge transfer"
       ],
       "slug": "concept-explanation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -795,31 +879,20 @@
     },
     {
       "title": "Conflict Resolution Expert",
-      "description": "A practical conflict resolution assistant that helps you address interpersonal, team, and organizational conflicts constructively. Provide your conflict situation and I'll develop mediation strategies, communication frameworks, and resolution plans that restore relationships and improve collaboration.",
-      "category": "problem-solving",
+      "description": "This prompt helps you navigate and resolve workplace conflicts constructively, turning disagreements into opportunities for growth.",
+      "category": "management-leadership",
       "tags": [
-        "conflict resolution",
+        "conflict-resolution",
         "mediation",
-        "negotiation",
-        "interpersonal issues",
-        "team dynamics"
+        "team-dynamics",
+        "communication",
+        "relationships"
       ],
       "slug": "conflict-resolution-expert",
-      "date": "2025-07-20",
+      "date": "2025-08-14",
       "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [
-        "workplace conflicts",
-        "team disputes",
-        "stakeholder disagreements",
-        "negotiation facilitation",
-        "relationship repair"
-      ],
+      "compatible_models": [],
+      "use_cases": [],
       "file_path": "_prompts/conflict-resolution-expert.md"
     },
     {
@@ -850,8 +923,8 @@
       "file_path": "_prompts/constraints-based-innovation-expert.md"
     },
     {
-      "title": "Construction Excellence Director and Project Delivery Expert",
-      "description": "This prompt transforms complex construction challenges into successfully delivered projects through comprehensive planning, rigorous execution, and proactive risk management. It combines construction leadership expertise with advanced project controls to deliver projects on time, within budget, and to the highest quality and safety standards while managing diverse stakeholders and complex logistics.",
+      "title": "Construction Excellence Director",
+      "description": "This prompt helps you manage complex construction projects through comprehensive planning, rigorous execution, and proactive risk management to deliver on time, within budget, and to the highest quality standards.",
       "category": "technical-workflows",
       "tags": [
         "construction management",
@@ -862,7 +935,7 @@
       ],
       "slug": "construction-excellence-director",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -888,7 +961,7 @@
         "consumer-psychology"
       ],
       "slug": "consumer-behavior-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -992,15 +1065,15 @@
         "skill evolution"
       ],
       "slug": "continuous-learning-framework-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/continuous-learning-framework-expert.md"
     },
     {
-      "title": "Legal Contract Analyst and Risk Assessment Expert",
-      "description": "This prompt transforms complex legal contracts into comprehensive risk assessments and actionable recommendations that protect business interests while enabling strategic objectives. It combines legal expertise with systematic risk analysis to identify potential issues, recommend modifications, and ensure contracts align with business goals and regulatory requirements.",
+      "title": "Contract Review Expert",
+      "description": "This prompt helps you analyze legal contracts to identify risks, ensure compliance, and recommend modifications that protect your business interests while enabling strategic objectives.",
       "category": "management-leadership",
       "tags": [
         "contract review",
@@ -1011,7 +1084,7 @@
       ],
       "slug": "contract-review-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1038,7 +1111,7 @@
         "funnel-optimization"
       ],
       "slug": "conversion-rate-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1083,7 +1156,7 @@
         "savings-identification"
       ],
       "slug": "cost-reduction-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1183,7 +1256,7 @@
         "damage-control"
       ],
       "slug": "crisis-communication-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1201,7 +1274,7 @@
         "resilience"
       ],
       "slug": "crisis-leadership-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1237,6 +1310,33 @@
       "file_path": "_prompts/crisis-management-expert.md"
     },
     {
+      "title": "Cross-Chain Bridge Development Helper",
+      "description": "This prompt helps you build bridges that connect different blockchains, allowing users to transfer assets and data between networks like Ethereum, Polygon, Binance Smart Chain, and others.",
+      "category": "blockchain",
+      "tags": [
+        "blockchain bridge",
+        "cross-chain transactions",
+        "multi-chain development",
+        "interoperability"
+      ],
+      "slug": "cross-chain-interoperability-bridge-platform",
+      "date": "2025-08-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "connecting different blockchains",
+        "cross-chain asset transfers",
+        "multi-chain applications",
+        "bridge development"
+      ],
+      "file_path": "_prompts/cross-chain-interoperability-bridge-platform.md"
+    },
+    {
       "title": "Cross-Cultural Leadership Expert",
       "description": "This prompt helps you lead effectively across cultures, building inclusive teams that leverage diversity as a competitive advantage.",
       "category": "management-leadership",
@@ -1248,7 +1348,7 @@
         "cultural-intelligence"
       ],
       "slug": "cross-cultural-leadership-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1266,11 +1366,39 @@
         "matrix-management"
       ],
       "slug": "cross-functional-coordination-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/cross-functional-coordination-expert.md"
+    },
+    {
+      "title": "Cryptocurrency Trading Bot Builder",
+      "description": "This prompt helps you build cryptocurrency trading bots and automated trading strategies. Whether you're a beginner wanting simple dollar-cost averaging or an experienced trader needing complex algorithms, this will guide you through creating profitable trading systems.",
+      "category": "blockchain",
+      "tags": [
+        "crypto trading",
+        "trading bot",
+        "algorithmic trading",
+        "automated trading",
+        "cryptocurrency strategy"
+      ],
+      "slug": "cryptocurrency-trading-algorithm-platform",
+      "date": "2025-08-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "automated crypto trading",
+        "trading strategy development",
+        "portfolio management",
+        "risk control"
+      ],
+      "file_path": "_prompts/cryptocurrency-trading-algorithm-platform.md"
     },
     {
       "title": "Curriculum Development Expert",
@@ -1283,7 +1411,7 @@
         "learning outcomes"
       ],
       "slug": "curriculum-development-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1319,19 +1447,19 @@
       "file_path": "_prompts/curriculum-planning-expert.md"
     },
     {
-      "title": "Customer Experience Excellence Leader and Service Innovation Expert",
-      "description": "This prompt transforms customer service challenges into exceptional experiences that drive loyalty, advocacy, and business growth. It combines customer experience leadership with service innovation to create customer-centric cultures, optimize service operations, and deliver memorable interactions that differentiate brands and create lasting competitive advantage.",
+      "title": "Customer Experience Excellence Leader",
+      "description": "This prompt helps you create exceptional customer experiences that drive loyalty and business growth. Get strategies for service improvement, team development, and customer-centric transformation.",
       "category": "customer-focused",
       "tags": [
         "customer experience",
-        "service management",
-        "team leadership",
-        "satisfaction",
-        "loyalty"
+        "CX strategy",
+        "service excellence",
+        "customer satisfaction",
+        "team leadership"
       ],
       "slug": "customer-experience-excellence-leader",
-      "date": "2025-07-20",
-      "version": "1.0.0",
+      "date": "2025-07-22",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1339,10 +1467,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "CX strategy",
-        "service operations",
-        "team management",
-        "customer satisfaction"
+        "CX transformation",
+        "service optimization",
+        "team development",
+        "customer journey improvement"
       ],
       "file_path": "_prompts/customer-experience-excellence-leader.md"
     },
@@ -1532,19 +1660,19 @@
       "file_path": "_prompts/customer-win-back-strategy-expert.md"
     },
     {
-      "title": "Cybersecurity Defense Architect and Threat Intelligence Expert",
-      "description": "This prompt transforms cybersecurity challenges into comprehensive defense strategies that protect organizations from evolving threats. It combines security operations expertise with threat intelligence capabilities to create robust security architectures that detect, prevent, and respond to cyber threats while enabling business operations and maintaining compliance.",
+      "title": "Cybersecurity Defense Architect",
+      "description": "This prompt helps you design comprehensive cybersecurity defense strategies that protect against modern threats while enabling business operations and maintaining compliance.",
       "category": "technical-workflows",
       "tags": [
         "cybersecurity",
-        "threat detection",
-        "incident response",
-        "security architecture",
-        "risk management"
+        "defense architecture",
+        "threat modeling",
+        "security controls",
+        "zero trust"
       ],
       "slug": "cybersecurity-defense-architect",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1552,10 +1680,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "security assessment",
-        "threat hunting",
-        "incident response",
-        "security architecture design"
+        "security architecture",
+        "threat defense",
+        "vulnerability management",
+        "compliance"
       ],
       "file_path": "_prompts/cybersecurity-defense-architect.md"
     },
@@ -1598,7 +1726,7 @@
         "sql"
       ],
       "slug": "database-schema-development-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1632,6 +1760,61 @@
         "performance issues"
       ],
       "file_path": "_prompts/debugging-expert.md"
+    },
+    {
+      "title": "DAO Creator and Management Guide",
+      "description": "This prompt helps you create and manage Decentralized Autonomous Organizations (DAOs). Whether you're starting a community DAO, investment club, or protocol governance system, this guide provides practical steps for building effective decentralized organizations.",
+      "category": "blockchain",
+      "tags": [
+        "DAO creation",
+        "governance",
+        "decentralized organization",
+        "community management",
+        "blockchain governance"
+      ],
+      "slug": "decentralized-autonomous-organization-platform",
+      "date": "2025-08-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "creating DAOs",
+        "community governance",
+        "decentralized decision making",
+        "treasury management"
+      ],
+      "file_path": "_prompts/decentralized-autonomous-organization-platform.md"
+    },
+    {
+      "title": "DeFi Protocol Builder",
+      "description": "This prompt helps you build secure DeFi protocols including automated market makers (AMMs), yield farming systems, and lending platforms with proper tokenomics and risk management.",
+      "category": "blockchain",
+      "tags": [
+        "DeFi",
+        "automated market maker",
+        "yield farming",
+        "liquidity pools",
+        "smart contracts"
+      ],
+      "slug": "decentralized-finance-protocol-development",
+      "date": "2025-01-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro"
+      ],
+      "use_cases": [
+        "DeFi protocol development",
+        "yield farming setup",
+        "AMM creation",
+        "liquidity management"
+      ],
+      "file_path": "_prompts/decentralized-finance-protocol-development.md"
     },
     {
       "title": "Decision Making Expert",
@@ -1674,7 +1857,7 @@
         "efficiency"
       ],
       "slug": "delegation-framework-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1691,15 +1874,15 @@
         "devops"
       ],
       "slug": "deployment-pipeline-creation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/deployment-pipeline-creation-expert.md"
     },
     {
-      "title": "Mechanical Design Review Specialist and Engineering Analysis Expert",
-      "description": "This prompt transforms mechanical design concepts into thoroughly reviewed, optimized engineering solutions that meet performance requirements while ensuring safety, manufacturability, and cost-effectiveness. It combines senior mechanical engineering expertise with systematic design validation to provide comprehensive analysis that identifies risks, optimizes performance, and ensures compliance with industry standards and regulations.",
+      "title": "Mechanical Design Review Expert",
+      "description": "This prompt helps you conduct thorough mechanical design reviews that ensure safety, performance, manufacturability, and cost-effectiveness through systematic engineering analysis.",
       "category": "technical-workflows",
       "tags": [
         "design review",
@@ -1711,7 +1894,7 @@
       ],
       "slug": "design-review-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1765,15 +1948,99 @@
         "infrastructure-as-code"
       ],
       "slug": "devops-workflow-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/devops-workflow-design-expert.md"
     },
     {
-      "title": "Document Intelligence Architect and Information Governance Expert",
-      "description": "This prompt transforms chaotic document systems into intelligent information architectures that enable instant retrieval while ensuring compliance and security. It combines information science principles with regulatory expertise to create scalable filing systems that grow with organizations while maintaining accessibility, auditability, and legal protection.",
+      "title": "Digital Government Transformation Strategy",
+      "description": "This prompt helps government leaders develop comprehensive digital transformation strategies that modernize public service delivery, improve citizen experience, and optimize government operations while ensuring security, compliance, and democratic accountability.",
+      "category": "government",
+      "tags": [
+        "digital transformation",
+        "e-governance",
+        "government modernization",
+        "digital strategy"
+      ],
+      "slug": "digital-government-transformation-strategy",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "government digitization",
+        "public sector transformation",
+        "digital service delivery",
+        "technology modernization"
+      ],
+      "file_path": "_prompts/digital-government-transformation-strategy.md"
+    },
+    {
+      "title": "Digital Identity Platform Architect",
+      "description": "This prompt helps government technology leaders design and implement comprehensive digital identity platforms that enable secure, convenient citizen authentication across all government services while maintaining privacy, security, and accessibility standards.",
+      "category": "government",
+      "tags": [
+        "digital identity",
+        "authentication",
+        "government ID",
+        "identity management",
+        "citizen verification"
+      ],
+      "slug": "digital-identity-platform-architect",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "digital identity systems",
+        "citizen authentication",
+        "identity verification",
+        "government services access"
+      ],
+      "file_path": "_prompts/digital-identity-platform-architect.md"
+    },
+    {
+      "title": "Digital Supply Chain Transformation Architect",
+      "description": "This prompt helps supply chain leaders design and implement comprehensive digital transformation strategies that leverage AI, IoT, automation, and analytics to create intelligent, responsive, and efficient supply chain operations.",
+      "category": "supply-chain",
+      "tags": [
+        "digital supply chain",
+        "supply chain automation",
+        "IoT logistics",
+        "AI supply chain",
+        "supply chain technology"
+      ],
+      "slug": "digital-supply-chain-transformation-architect",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "supply chain digitization",
+        "smart logistics",
+        "automated supply chain",
+        "supply chain analytics",
+        "connected supply chain"
+      ],
+      "file_path": "_prompts/digital-supply-chain-transformation-architect.md"
+    },
+    {
+      "title": "Document Organization & Filing Expert",
+      "description": "This prompt helps you create an organized, searchable document management system that saves time, ensures compliance, and scales with your organization's growth.",
       "category": "management-leadership",
       "tags": [
         "document management",
@@ -1784,7 +2051,7 @@
       ],
       "slug": "document-organization-filing",
       "date": "2025-07-20",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1805,7 +2072,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "document-review-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1851,26 +2118,25 @@
         "economic-modeling"
       ],
       "slug": "economic-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/economic-research-expert.md"
     },
     {
-      "title": "Editorial Calendar Architect and Content Performance Optimizer",
-      "description": "This prompt creates comprehensive editorial calendars that align content production with business goals, audience needs, and SEO opportunities. It combines strategic content planning with data-driven optimization to build publishing schedules that drive engagement, support marketing objectives, and maximize content ROI across all channels.",
+      "title": "Editorial Calendar Architect",
+      "description": "This prompt helps you create comprehensive editorial calendars that align content production with business goals, audience needs, and resource constraints.",
       "category": "creativity-innovation",
       "tags": [
         "editorial calendar",
-        "content strategy",
-        "content marketing",
-        "publishing",
-        "SEO"
+        "content planning",
+        "publishing strategy",
+        "content management"
       ],
       "slug": "editorial-calendar-architect",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1878,10 +2144,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "content planning",
-        "editorial management",
-        "multi-channel publishing",
-        "content optimization"
+        "content scheduling",
+        "editorial planning",
+        "campaign coordination",
+        "publishing workflow"
       ],
       "file_path": "_prompts/editorial-calendar-architect.md"
     },
@@ -1896,7 +2162,7 @@
         "lean-operations"
       ],
       "slug": "efficiency-enhancement-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1913,7 +2179,7 @@
         "inbox-management"
       ],
       "slug": "email-communication-strategy-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -1949,8 +2215,8 @@
       "file_path": "_prompts/email-composition-expert.md"
     },
     {
-      "title": "Email Management Master and Strategic Communication Expert",
-      "description": "This prompt transforms overwhelming email volumes into strategic communication workflows that protect executive time while maintaining relationship excellence. It combines administrative mastery with communications strategy to create intelligent email management systems that prioritize, delegate, and respond with professional precision while identifying strategic opportunities and risks.",
+      "title": "Email Prioritization & Response Expert",
+      "description": "This prompt helps you efficiently manage high-volume email by prioritizing messages, drafting appropriate responses, and identifying strategic opportunities while protecting your time.",
       "category": "management-leadership",
       "tags": [
         "email management",
@@ -1961,7 +2227,7 @@
       ],
       "slug": "email-prioritization-response",
       "date": "2025-07-20",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -1988,11 +2254,38 @@
         "green-operations"
       ],
       "slug": "energy-efficiency-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/energy-efficiency-expert.md"
+    },
+    {
+      "title": "Enterprise Blockchain Integration Platform",
+      "description": "This prompt helps you integrate blockchain technology into your existing business operations, connecting legacy systems with blockchain networks to automate processes, improve transparency, and reduce costs.",
+      "category": "blockchain",
+      "tags": [
+        "enterprise blockchain",
+        "system integration",
+        "digital transformation",
+        "business process automation"
+      ],
+      "slug": "enterprise-blockchain-integration-platform",
+      "date": "2025-08-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "enterprise blockchain adoption",
+        "legacy system integration",
+        "business process automation",
+        "compliance management"
+      ],
+      "file_path": "_prompts/enterprise-blockchain-integration-platform.md"
     },
     {
       "title": "Environmental Impact Research Expert",
@@ -2005,7 +2298,7 @@
         "environmental-analysis"
       ],
       "slug": "environmental-impact-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2051,7 +2344,7 @@
         "compliance"
       ],
       "slug": "ethics-evaluation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2089,19 +2382,30 @@
     },
     {
       "title": "Executive Briefing Expert",
-      "description": "An executive communication specialist that helps you create concise, impactful briefings for senior leadership, focusing on key insights and actionable recommendations.",
+      "description": "This prompt helps you create clear, impactful executive briefings that cut through the noise and give senior leaders exactly what they need to make informed decisions quickly.",
       "category": "communication",
       "tags": [
-        "executive-communication",
-        "briefing-documents",
+        "executive communication",
+        "briefing documents",
         "c-suite",
-        "strategic-communication"
+        "strategic communication",
+        "leadership"
       ],
       "slug": "executive-briefing-expert",
-      "date": "2025-07-21",
+      "date": "2025-07-22",
       "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "board presentations",
+        "executive updates",
+        "strategic briefings",
+        "crisis communications"
+      ],
       "file_path": "_prompts/executive-briefing-expert.md"
     },
     {
@@ -2116,7 +2420,7 @@
         "leadership"
       ],
       "slug": "executive-decision-making-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2152,11 +2456,11 @@
     },
     {
       "title": "Prompt Blueprint",
-      "description": "Design patterns and best practices for creating efficient FastMCP servers with proper architecture and implementation guidance.",
+      "description": "",
       "category": "technical-workflows",
       "tags": [],
       "slug": "fastmcp-server-patterns",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2173,7 +2477,7 @@
         "value-assessment"
       ],
       "slug": "feature-prioritization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2190,7 +2494,7 @@
         "continuous-improvement"
       ],
       "slug": "feedback-collection-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2207,15 +2511,15 @@
         "development conversations"
       ],
       "slug": "feedback-implementation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/feedback-implementation-expert.md"
     },
     {
-      "title": "Financial Analysis Expert and Investment Strategy Architect",
-      "description": "This prompt transforms financial data into strategic insights through comprehensive analysis, sophisticated modeling, and risk-aware decision making. It combines quantitative expertise with strategic thinking to deliver investment recommendations, valuation assessments, and financial strategies that drive superior returns while managing risk in complex market environments.",
+      "title": "Financial Analysis Expert",
+      "description": "This prompt helps you analyze financial data and develop investment strategies through comprehensive analysis, sophisticated modeling, and risk-aware decision making.",
       "category": "analysis",
       "tags": [
         "financial analysis",
@@ -2226,7 +2530,7 @@
       ],
       "slug": "financial-analysis-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2242,19 +2546,19 @@
       "file_path": "_prompts/financial-analysis-expert.md"
     },
     {
-      "title": "Dynamic Financial Model Builder and Scenario Analyzer",
-      "description": "This prompt creates sophisticated financial models with multiple scenarios, sensitivity analysis, and investment recommendations. It combines financial expertise with strategic thinking to build models that not only calculate numbers but also tell the story behind them, helping stakeholders make informed investment and business decisions.",
+      "title": "Financial Model Builder",
+      "description": "This prompt helps you build comprehensive financial models for business planning, investment analysis, and decision-making with proper structure, assumptions, and scenario analysis.",
       "category": "management-leadership",
       "tags": [
         "financial modeling",
-        "DCF analysis",
-        "scenario planning",
+        "financial analysis",
+        "forecasting",
         "valuation",
-        "financial analysis"
+        "scenario planning"
       ],
       "slug": "financial-model-builder",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2262,10 +2566,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "company valuation",
+        "financial planning",
         "investment analysis",
-        "budget forecasting",
-        "M&A modeling"
+        "budgeting",
+        "valuation models"
       ],
       "file_path": "_prompts/financial-model-builder.md"
     },
@@ -2326,19 +2630,19 @@
     },
     {
       "title": "Repository Documentation Generator",
-      "description": "Generate comprehensive README files for new repositories with proper documentation structure and essential project information.",
+      "description": "",
       "category": "management-leadership",
       "tags": [],
       "slug": "fresh-repo-readme",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/fresh-repo-readme.md"
     },
     {
-      "title": "Full Stack Development Architect and System Design Expert",
-      "description": "This prompt transforms application requirements into comprehensive full-stack solutions that balance frontend elegance with backend robustness. It combines deep technical expertise across the entire stack with architectural thinking to create scalable, maintainable applications that deliver exceptional user experiences while ensuring system reliability and performance.",
+      "title": "Full Stack Development Expert",
+      "description": "This prompt helps you design and build full-stack applications with proper architecture, best practices, and scalable code that delivers great user experiences.",
       "category": "technical-workflows",
       "tags": [
         "full stack",
@@ -2350,7 +2654,7 @@
       ],
       "slug": "fullstack-developer-architect",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2376,26 +2680,54 @@
         "launch-readiness"
       ],
       "slug": "go-no-go-determinations-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/go-no-go-determinations-expert.md"
     },
     {
-      "title": "Visual Design Strategist and Brand Experience Expert",
-      "description": "This prompt transforms creative briefs into compelling visual solutions that communicate brand stories, engage audiences, and drive business results. It combines artistic expertise with strategic thinking to create cohesive design systems that work across all touchpoints while maintaining brand consistency and pushing creative boundaries.",
+      "title": "Government API Strategy Developer",
+      "description": "This prompt helps government technology leaders develop comprehensive API strategies that enable seamless system integration, interagency collaboration, and scalable digital service delivery while ensuring security, compliance, and performance standards.",
+      "category": "government",
+      "tags": [
+        "government APIs",
+        "API strategy",
+        "system integration",
+        "interoperability",
+        "digital government"
+      ],
+      "slug": "government-api-strategy-developer",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "government system integration",
+        "API platform development",
+        "interagency connectivity",
+        "digital service delivery"
+      ],
+      "file_path": "_prompts/government-api-strategy-developer.md"
+    },
+    {
+      "title": "Graphic Design Expert",
+      "description": "This prompt helps you create compelling visual designs that effectively communicate your message while maintaining professional standards and brand consistency.",
       "category": "creativity-innovation",
       "tags": [
         "graphic design",
-        "branding",
         "visual communication",
-        "creative direction",
-        "design systems"
+        "branding",
+        "layout",
+        "typography"
       ],
       "slug": "graphic-design-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2403,12 +2735,40 @@
         "GPT-3.5"
       ],
       "use_cases": [
+        "logo design",
+        "marketing materials",
         "brand identity",
-        "marketing collateral",
-        "design systems",
-        "visual storytelling"
+        "visual systems"
       ],
       "file_path": "_prompts/graphic-design-expert.md"
+    },
+    {
+      "title": "Healthcare Digital Transformation Strategist",
+      "description": "This prompt helps healthcare leaders design and implement comprehensive digital transformation strategies that optimize clinical workflows, improve patient outcomes, reduce costs, and enhance provider experience through strategic technology integration and change management.",
+      "category": "healthcare-digital",
+      "tags": [
+        "healthcare digital transformation",
+        "EHR optimization",
+        "clinical workflows",
+        "health IT strategy",
+        "healthcare technology"
+      ],
+      "slug": "healthcare-digital-transformation-strategist",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "health system digitization",
+        "clinical workflow optimization",
+        "healthcare technology implementation",
+        "EHR strategy"
+      ],
+      "file_path": "_prompts/healthcare-digital-transformation-strategist.md"
     },
     {
       "title": "Hiring Decision Framework Expert",
@@ -2421,7 +2781,7 @@
         "team-building"
       ],
       "slug": "hiring-decision-framework-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2438,15 +2798,15 @@
         "historiography"
       ],
       "slug": "historical-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/historical-research-expert.md"
     },
     {
-      "title": "Human Resources Excellence Leader and Organizational Development Expert",
-      "description": "This prompt transforms human resources challenges into strategic people solutions that drive organizational success. It combines HR leadership expertise with organizational development capabilities to create high-performing cultures, develop exceptional talent, and build workplace environments where employees thrive while delivering superior business results.",
+      "title": "HR Excellence Leader",
+      "description": "This prompt helps you develop strategic people solutions that drive organizational success through exceptional talent management, engaging cultures, and modern HR practices.",
       "category": "management-leadership",
       "tags": [
         "HR management",
@@ -2457,7 +2817,7 @@
       ],
       "slug": "hr-excellence-leader",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2500,19 +2860,19 @@
       "file_path": "_prompts/idea-generation-expert.md"
     },
     {
-      "title": "Cybersecurity Incident Response Commander and Forensics Analyst",
-      "description": "This prompt orchestrates comprehensive incident response operations from initial detection through recovery and lessons learned. It combines tactical incident management with forensic analysis to quickly contain threats, minimize damage, preserve evidence, and prevent recurrence while maintaining clear communication with all stakeholders.",
+      "title": "Incident Response Commander",
+      "description": "This prompt helps you coordinate effective incident response for security breaches, guiding you through containment, investigation, and recovery while maintaining proper documentation and communication.",
       "category": "technical-workflows",
       "tags": [
         "incident response",
-        "cybersecurity",
+        "security breach",
         "forensics",
-        "threat analysis",
-        "security operations"
+        "threat mitigation",
+        "crisis management"
       ],
       "slug": "incident-response-commander",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2522,8 +2882,8 @@
       "use_cases": [
         "security incidents",
         "breach response",
-        "threat hunting",
-        "forensic analysis"
+        "forensic analysis",
+        "threat containment"
       ],
       "file_path": "_prompts/incident-response-commander.md"
     },
@@ -2538,7 +2898,7 @@
         "strategic-foresight"
       ],
       "slug": "industry-trend-analysis-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2555,7 +2915,7 @@
         "capacity-planning"
       ],
       "slug": "infrastructure-planning-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2616,19 +2976,18 @@
       "file_path": "_prompts/innovation-pipeline-management-expert.md"
     },
     {
-      "title": "Integrated Marketing Campaign Architect and ROI Optimizer",
-      "description": "This prompt designs comprehensive integrated marketing campaigns that span multiple channels, audiences, and objectives. It combines strategic marketing expertise with data-driven optimization to create campaigns that not only capture attention but also drive measurable business results, with built-in testing and optimization frameworks.",
+      "title": "Integrated Campaign Architect",
+      "description": "This prompt helps you design and execute integrated marketing campaigns that deliver consistent messaging across all channels while maximizing impact and ROI.",
       "category": "management-leadership",
       "tags": [
-        "marketing campaign",
+        "campaign planning",
         "integrated marketing",
-        "ROI optimization",
-        "campaign strategy",
-        "digital marketing"
+        "cross-channel campaigns",
+        "marketing execution"
       ],
       "slug": "integrated-campaign-architect",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2636,10 +2995,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "campaign planning",
+        "campaign development",
         "multi-channel marketing",
-        "budget allocation",
-        "performance tracking"
+        "campaign management",
+        "marketing ROI"
       ],
       "file_path": "_prompts/integrated-campaign-architect.md"
     },
@@ -2654,7 +3013,7 @@
         "financial-decisions"
       ],
       "slug": "investment-decision-support-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2666,7 +3025,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "investment-opportunity-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2683,7 +3042,7 @@
         "workforce planning"
       ],
       "slug": "knowledge-gap-analysis-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2700,7 +3059,7 @@
         "expertise building"
       ],
       "slug": "knowledge-synthesis-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2717,7 +3076,7 @@
         "succession-planning"
       ],
       "slug": "knowledge-transfer-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2761,7 +3120,7 @@
         "educational technology"
       ],
       "slug": "learning-experience-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2778,7 +3137,7 @@
         "career growth"
       ],
       "slug": "learning-plan-creation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2795,7 +3154,7 @@
         "transformation"
       ],
       "slug": "legacy-system-modernization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2812,15 +3171,15 @@
         "legal-precedent"
       ],
       "slug": "legal-precedent-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/legal-precedent-research-expert.md"
     },
     {
-      "title": "Educational Lesson Plan Architect and Learning Experience Designer",
-      "description": "This prompt transforms educational goals into comprehensive, engaging lesson plans that maximize student learning outcomes through evidence-based pedagogical strategies. It combines master teaching expertise with instructional design principles to create detailed learning experiences that accommodate diverse learning styles, align with educational standards, and provide measurable assessment frameworks.",
+      "title": "Lesson Plan Creator",
+      "description": "This prompt helps you create comprehensive, engaging lesson plans that maximize student learning through evidence-based teaching strategies and clear objectives.",
       "category": "learning-development",
       "tags": [
         "lesson planning",
@@ -2831,7 +3190,7 @@
       ],
       "slug": "lesson-plan-creator",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -2857,7 +3216,7 @@
         "systematic-review"
       ],
       "slug": "literature-review-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2892,7 +3251,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "market-fit-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -2909,7 +3268,7 @@
         "research-methodology"
       ],
       "slug": "market-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3002,19 +3361,18 @@
       "file_path": "_prompts/marketing-copy-creation-expert.md"
     },
     {
-      "title": "Marketing Leadership Strategist and Team Excellence Manager",
-      "description": "This prompt transforms marketing management challenges into strategic leadership solutions that drive team excellence, operational efficiency, and sustainable growth. It combines marketing leadership expertise with team development capabilities to create high-performing marketing organizations that deliver consistent results while fostering innovation and professional growth.",
+      "title": "Marketing Manager Strategist",
+      "description": "This prompt helps you develop comprehensive marketing strategies that drive business growth through data-driven planning, creative campaigns, and effective brand positioning.",
       "category": "management-leadership",
       "tags": [
-        "marketing management",
-        "team leadership",
-        "strategic planning",
-        "marketing operations",
-        "growth"
+        "marketing strategy",
+        "campaign management",
+        "brand development",
+        "marketing planning"
       ],
       "slug": "marketing-manager-strategist",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3022,10 +3380,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "marketing strategy",
-        "team management",
-        "budget planning",
-        "performance optimization"
+        "marketing planning",
+        "campaign development",
+        "brand strategy",
+        "market analysis"
       ],
       "file_path": "_prompts/marketing-manager-strategist.md"
     },
@@ -3040,7 +3398,7 @@
         "materials-testing"
       ],
       "slug": "materials-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3057,7 +3415,7 @@
         "research-ethics"
       ],
       "slug": "medical-research-protocol-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3074,15 +3432,15 @@
         "team-dynamics"
       ],
       "slug": "meeting-facilitation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/meeting-facilitation-expert.md"
     },
     {
-      "title": "Meeting Intelligence Synthesizer and Action Orchestrator",
-      "description": "This prompt transforms raw meeting content into comprehensive intelligence documents that capture decisions, track commitments, and drive organizational action. It combines administrative excellence with knowledge management principles to create meeting records that serve as strategic assets, enabling accountability, institutional memory, and seamless organizational coordination.",
+      "title": "Meeting Minutes & Summarization Expert",
+      "description": "This prompt transforms raw meeting recordings, notes, or transcripts into professional meeting minutes with clear action items, decisions, and follow-up plans.",
       "category": "management-leadership",
       "tags": [
         "meeting minutes",
@@ -3093,7 +3451,7 @@
       ],
       "slug": "meeting-minutes-summarization",
       "date": "2025-07-20",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3110,11 +3468,11 @@
     },
     {
       "title": "Memory Management Patterns for AI Assistants",
-      "description": "Best practices and design patterns for efficient memory management in software applications with performance optimization techniques.",
+      "description": "",
       "category": "technical-workflows",
       "tags": [],
       "slug": "memory-management-patterns",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3131,7 +3489,7 @@
         "knowledge transfer"
       ],
       "slug": "mentorship-structure-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3148,7 +3506,7 @@
         "design"
       ],
       "slug": "microservice-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3166,27 +3524,26 @@
         "development-workflow"
       ],
       "slug": "mobile-development-workflow-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/mobile-development-workflow-expert.md"
     },
     {
-      "title": "Comprehensive Model Evaluation and Validation Framework",
-      "description": "This prompt provides a systematic framework for evaluating machine learning models beyond basic accuracy metrics. It combines statistical rigor with practical deployment considerations to ensure models are not only accurate but also robust, fair, interpretable, and production-ready. The multi-layered approach catches issues that simple evaluation might miss.",
+      "title": "Model Evaluation Framework",
+      "description": "This prompt helps you comprehensively evaluate machine learning models using appropriate metrics, validation strategies, and real-world performance considerations.",
       "category": "technical-workflows",
       "tags": [
         "model evaluation",
         "machine learning",
+        "performance metrics",
         "validation",
-        "metrics",
-        "data science",
-        "ML ops"
+        "model selection"
       ],
       "slug": "model-evaluation-framework",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3194,10 +3551,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "model selection",
+        "model comparison",
         "performance validation",
         "production readiness",
-        "A/B testing"
+        "ML optimization"
       ],
       "file_path": "_prompts/model-evaluation-framework.md"
     },
@@ -3212,11 +3569,38 @@
         "strategic-communication"
       ],
       "slug": "negotiation-preparation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/negotiation-preparation-expert.md"
+    },
+    {
+      "title": "NFT Marketplace Builder",
+      "description": "This prompt helps you build comprehensive NFT marketplaces with minting, trading, royalties, and creator tools for digital art, collectibles, and tokenized assets.",
+      "category": "blockchain",
+      "tags": [
+        "NFT marketplace",
+        "digital collectibles",
+        "art platform",
+        "tokenization",
+        "web3"
+      ],
+      "slug": "nft-marketplace-development-platform",
+      "date": "2025-01-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro"
+      ],
+      "use_cases": [
+        "NFT marketplace development",
+        "digital art platform",
+        "collectibles trading",
+        "creator monetization"
+      ],
+      "file_path": "_prompts/nft-marketplace-development-platform.md"
     },
     {
       "title": "Onboarding Experience Expert",
@@ -3251,15 +3635,15 @@
         "integration"
       ],
       "slug": "onboarding-process-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/onboarding-process-design-expert.md"
     },
     {
-      "title": "Operations Excellence Manager and Performance Optimization Expert",
-      "description": "This prompt transforms operational challenges into systematic excellence through leadership, process optimization, and data-driven decision making. It combines operations management expertise with continuous improvement methodologies to create high-performing operations that deliver consistent quality, efficiency, and business value while developing exceptional teams.",
+      "title": "Operations Management Expert",
+      "description": "This prompt helps you optimize operations, improve processes, and lead teams to achieve consistent performance and quality while reducing waste and maximizing efficiency.",
       "category": "management-leadership",
       "tags": [
         "operations management",
@@ -3270,7 +3654,7 @@
       ],
       "slug": "operations-manager-excellence",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3286,8 +3670,8 @@
       "file_path": "_prompts/operations-manager-excellence.md"
     },
     {
-      "title": "Healthcare Operations Strategist and Clinical Efficiency Expert",
-      "description": "This prompt transforms healthcare operational challenges into streamlined, patient-centered systems that improve clinical outcomes while reducing costs and enhancing staff satisfaction. It combines healthcare administration expertise with clinical operations management to create comprehensive optimization strategies that ensure regulatory compliance, maximize resource utilization, and deliver exceptional patient care experiences.",
+      "title": "Healthcare Operations Optimization Expert",
+      "description": "This prompt helps you transform healthcare operations into efficient, patient-centered systems that improve clinical outcomes while reducing costs and enhancing staff satisfaction.",
       "category": "technical-workflows",
       "tags": [
         "healthcare operations",
@@ -3298,7 +3682,7 @@
       ],
       "slug": "operations-optimization-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3324,7 +3708,7 @@
         "choice-optimization"
       ],
       "slug": "option-evaluation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3342,7 +3726,7 @@
         "effectiveness"
       ],
       "slug": "organizational-development-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3359,7 +3743,7 @@
         "patent-analysis"
       ],
       "slug": "patent-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3462,7 +3846,7 @@
         "metrics"
       ],
       "slug": "performance-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3501,7 +3885,7 @@
         "bottleneck-analysis"
       ],
       "slug": "performance-tuning-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3530,8 +3914,8 @@
       "file_path": "_prompts/personalization-framework-expert.md"
     },
     {
-      "title": "Pharmaceutical Research Excellence and Drug Development Architect",
-      "description": "This prompt combines deep pharmaceutical science expertise with clinical development leadership to drive innovative drug discovery, rigorous clinical trials, and successful regulatory approvals. It integrates cutting-edge research methodologies with practical development strategies to bring life-saving therapies from bench to bedside while ensuring patient safety and regulatory compliance.",
+      "title": "Pharmaceutical Research Excellence Expert",
+      "description": "This prompt helps you navigate pharmaceutical research and drug development, from discovery through clinical trials to regulatory approval. Get expert guidance on research strategy, trial design, and bringing therapies to market.",
       "category": "technical-workflows",
       "tags": [
         "pharmaceutical research",
@@ -3542,7 +3926,7 @@
       ],
       "slug": "pharmaceutical-research-excellence",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3558,11 +3942,11 @@
       "file_path": "_prompts/pharmaceutical-research-excellence.md"
     },
     {
-      "title": "Data Pipeline Architect and Engineering Infrastructure Expert",
-      "description": "This prompt transforms complex data requirements into robust, scalable pipeline architectures that handle massive volumes while ensuring reliability and performance. It combines data engineering expertise with infrastructure design to create comprehensive data processing systems that support real-time analytics, machine learning, and business intelligence needs.",
+      "title": "Pipeline Design Architect",
+      "description": "This prompt helps you design robust, scalable data pipelines that efficiently process data while maintaining quality, reliability, and performance.",
       "category": "technical-workflows",
       "tags": [
-        "data pipelines",
+        "data pipeline",
         "ETL",
         "data architecture",
         "streaming",
@@ -3570,7 +3954,7 @@
       ],
       "slug": "pipeline-design-architect",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3579,9 +3963,9 @@
       ],
       "use_cases": [
         "pipeline design",
-        "data architecture",
+        "data orchestration",
         "ETL optimization",
-        "streaming systems"
+        "real-time processing"
       ],
       "file_path": "_prompts/pipeline-design-architect.md"
     },
@@ -3596,7 +3980,7 @@
         "organizational-standards"
       ],
       "slug": "policy-decision-framework-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3698,7 +4082,7 @@
         "efficiency"
       ],
       "slug": "prioritization-frameworks-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3715,26 +4099,26 @@
         "six-sigma"
       ],
       "slug": "process-improvement-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/process-improvement-expert.md"
     },
     {
-      "title": "Operations Process Optimizer and Lean Six Sigma Expert",
-      "description": "This prompt transforms inefficient operational processes into streamlined workflows that reduce costs, improve quality, and accelerate delivery. It combines operations management expertise with Lean Six Sigma methodology to identify bottlenecks, eliminate waste, and create sustainable process improvements that drive measurable business value.",
-      "category": "management-leadership",
+      "title": "Process Optimization Expert",
+      "description": "A comprehensive process optimization assistant that helps you streamline workflows and eliminate waste. Share your process details and I'll create an optimization strategy that improves efficiency, quality, and outcomes.",
+      "category": "problem-solving",
       "tags": [
         "process optimization",
-        "operations management",
-        "lean six sigma",
         "efficiency",
-        "workflow"
+        "workflow improvement",
+        "lean",
+        "operational excellence"
       ],
       "slug": "process-optimization-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -3742,10 +4126,11 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "process improvement",
-        "bottleneck analysis",
-        "waste reduction",
-        "operational excellence"
+        "workflow optimization",
+        "efficiency improvement",
+        "bottleneck removal",
+        "process redesign",
+        "automation"
       ],
       "file_path": "_prompts/process-optimization-expert.md"
     },
@@ -3784,7 +4169,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "product-evaluation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3831,7 +4216,7 @@
         "stakeholders"
       ],
       "slug": "project-governance-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3871,7 +4256,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "project-post-mortem-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -3936,19 +4321,30 @@
     },
     {
       "title": "Public Speaking Preparation Expert",
-      "description": "A public speaking coach that helps you prepare compelling presentations, manage speaking anxiety, and deliver memorable speeches with confidence.",
+      "description": "This prompt helps you prepare for any public speaking engagement with confidence. Get help with speech structure, delivery techniques, anxiety management, and audience engagement strategies.",
       "category": "communication",
       "tags": [
-        "public-speaking",
-        "presentation-skills",
-        "speech-writing",
-        "stage-presence"
+        "public speaking",
+        "presentation skills",
+        "speech preparation",
+        "stage presence",
+        "speaking anxiety"
       ],
       "slug": "public-speaking-preparation-expert",
-      "date": "2025-07-21",
+      "date": "2025-07-22",
       "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "keynote speeches",
+        "conference talks",
+        "sales presentations",
+        "team meetings"
+      ],
       "file_path": "_prompts/public-speaking-preparation-expert.md"
     },
     {
@@ -4010,6 +4406,33 @@
       "file_path": "_prompts/quality-improvement-expert.md"
     },
     {
+      "title": "Real-World Asset Tokenization Platform",
+      "description": "This prompt helps you build platforms for tokenizing real-world assets like real estate, art, commodities, and businesses to enable fractional ownership and enhanced liquidity.",
+      "category": "blockchain",
+      "tags": [
+        "asset tokenization",
+        "real estate",
+        "fractional ownership",
+        "investment platform",
+        "securities"
+      ],
+      "slug": "real-world-asset-tokenization-platform",
+      "date": "2025-01-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro"
+      ],
+      "use_cases": [
+        "real estate tokenization",
+        "asset fractionalization",
+        "investment platforms",
+        "liquidity enhancement"
+      ],
+      "file_path": "_prompts/real-world-asset-tokenization-platform.md"
+    },
+    {
       "title": "Release Planning Expert",
       "description": "A practical release planning assistant that helps you create comprehensive deployment strategies for successful software releases. Provide your release context and I'll develop detailed release plans with timelines, risk management, rollout strategies, and monitoring frameworks.",
       "category": "planning",
@@ -4050,7 +4473,7 @@
         "culture"
       ],
       "slug": "remote-team-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4086,19 +4509,18 @@
       "file_path": "_prompts/report-generation-expert.md"
     },
     {
-      "title": "Requirements Engineering Expert and System Design Analyst",
-      "description": "This prompt transforms vague business needs into comprehensive, actionable requirements that bridge the gap between stakeholders and development teams. It combines business analysis expertise with systems thinking to create requirements that are complete, testable, traceable, and aligned with business value while preventing scope creep and ensuring project success.",
+      "title": "Requirements Engineering Expert",
+      "description": "This prompt helps you gather, analyze, and document comprehensive requirements that ensure project success through systematic elicitation, clear documentation, and stakeholder alignment.",
       "category": "management-leadership",
       "tags": [
         "requirements engineering",
-        "business analysis",
-        "system design",
         "requirements gathering",
-        "documentation"
+        "stakeholder analysis",
+        "specification"
       ],
       "slug": "requirements-engineering-expert",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4107,26 +4529,26 @@
       ],
       "use_cases": [
         "requirements documentation",
-        "stakeholder analysis",
-        "system specification",
-        "gap analysis"
+        "stakeholder alignment",
+        "project scoping",
+        "change management"
       ],
       "file_path": "_prompts/requirements-engineering-expert.md"
     },
     {
-      "title": "Research Excellence Scientist and Innovation Discovery Expert",
-      "description": "This prompt transforms scientific challenges into breakthrough discoveries through rigorous methodology, innovative thinking, and collaborative excellence. It combines deep scientific expertise with strategic research management to advance knowledge, secure funding, and translate findings into real-world impact while maintaining the highest standards of scientific integrity.",
+      "title": "Research Excellence Scientist",
+      "description": "This prompt helps you design and execute world-class scientific research. Get guidance on experimental design, funding strategy, data analysis, and translating discoveries into real-world impact.",
       "category": "research-workflows",
       "tags": [
         "scientific research",
         "experimental design",
         "data analysis",
-        "publication",
-        "innovation"
+        "grant writing",
+        "publication"
       ],
       "slug": "research-excellence-scientist",
-      "date": "2025-07-20",
-      "version": "1.0.0",
+      "date": "2025-07-22",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4134,10 +4556,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "research design",
-        "grant writing",
-        "data analysis",
-        "scientific publication"
+        "research planning",
+        "experimental design",
+        "grant proposals",
+        "scientific writing"
       ],
       "file_path": "_prompts/research-excellence-scientist.md"
     },
@@ -4152,7 +4574,7 @@
         "analysis frameworks"
       ],
       "slug": "research-methodology-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4169,7 +4591,7 @@
         "efficiency"
       ],
       "slug": "resource-allocation-decisions-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4245,7 +4667,7 @@
         "efficiency"
       ],
       "slug": "resource-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4262,15 +4684,15 @@
         "asset-management"
       ],
       "slug": "resource-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/resource-optimization-expert.md"
     },
     {
-      "title": "Customer Success Strategist and Retention Analytics Expert",
-      "description": "This prompt transforms reactive customer support into proactive retention strategies that maximize customer lifetime value while preventing churn. It combines customer success expertise with data analytics to create comprehensive retention frameworks that identify at-risk customers, design intervention strategies, and optimize the entire customer lifecycle for sustainable growth.",
+      "title": "Customer Retention Optimization Expert",
+      "description": "This prompt helps you build proactive customer retention strategies that reduce churn and maximize customer lifetime value. Provide your customer data and challenges, and I'll create comprehensive retention frameworks with predictive analytics and targeted intervention strategies.",
       "category": "management-leadership",
       "tags": [
         "customer retention",
@@ -4280,8 +4702,8 @@
         "analytics"
       ],
       "slug": "retention-optimization-expert",
-      "date": "2025-07-20",
-      "version": "1.0.0",
+      "date": "2025-07-22",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4330,7 +4752,7 @@
         "profitability"
       ],
       "slug": "revenue-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4370,7 +4792,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "risk-evaluation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4415,7 +4837,7 @@
         "probability"
       ],
       "slug": "risk-reward-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4427,7 +4849,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "roi-analysis-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4462,19 +4884,18 @@
       "file_path": "_prompts/root-cause-analysis-expert.md"
     },
     {
-      "title": "Sales Pipeline Optimizer and Revenue Acceleration System",
-      "description": "This prompt analyzes and optimizes sales pipelines to accelerate revenue growth, improve forecast accuracy, and identify opportunities for deal advancement. It combines strategic sales leadership with data-driven analysis to create actionable plans that increase win rates, shorten sales cycles, and maximize revenue potential.",
+      "title": "Sales Pipeline Optimizer",
+      "description": "This prompt helps you optimize your sales pipeline for maximum efficiency, predictable revenue, and improved conversion rates through data-driven analysis and strategic improvements.",
       "category": "management-leadership",
       "tags": [
         "sales pipeline",
-        "revenue optimization",
-        "sales strategy",
-        "forecasting",
-        "CRM"
+        "pipeline management",
+        "sales optimization",
+        "revenue forecasting"
       ],
       "slug": "sales-pipeline-optimizer",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4482,10 +4903,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "pipeline management",
+        "pipeline optimization",
         "sales forecasting",
         "deal acceleration",
-        "team performance"
+        "conversion improvement"
       ],
       "file_path": "_prompts/sales-pipeline-optimizer.md"
     },
@@ -4530,7 +4951,7 @@
         "capacity-planning"
       ],
       "slug": "schedule-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4547,7 +4968,7 @@
         "experimental-design"
       ],
       "slug": "scientific-inquiry-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4589,7 +5010,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "security-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4606,7 +5027,7 @@
         "compliance"
       ],
       "slug": "security-implementation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4702,11 +5123,68 @@
         "performance improvement"
       ],
       "slug": "skill-acquisition-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/skill-acquisition-expert.md"
+    },
+    {
+      "title": "Smart City Platform Architect",
+      "description": "This prompt helps city leaders and urban technology specialists design comprehensive smart city platforms that integrate IoT sensors, data analytics, and citizen services to optimize urban operations, improve quality of life, and create sustainable, responsive cities.",
+      "category": "government",
+      "tags": [
+        "smart cities",
+        "IoT",
+        "urban technology",
+        "city management",
+        "digital infrastructure"
+      ],
+      "slug": "smart-city-platform-architect",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "smart city development",
+        "urban IoT deployment",
+        "city data platforms",
+        "municipal technology"
+      ],
+      "file_path": "_prompts/smart-city-platform-architect.md"
+    },
+    {
+      "title": "Smart Contract Security Auditor",
+      "description": "This prompt helps you conduct thorough security audits of smart contracts to identify vulnerabilities, suggest improvements, and ensure your blockchain applications are secure before deployment.",
+      "category": "blockchain",
+      "tags": [
+        "smart contract security",
+        "blockchain audit",
+        "vulnerability detection",
+        "code review",
+        "DeFi security"
+      ],
+      "slug": "smart-contract-security-audit-platform",
+      "date": "2025-08-14",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "smart contract auditing",
+        "security assessment",
+        "vulnerability detection",
+        "code review",
+        "security best practices"
+      ],
+      "file_path": "_prompts/smart-contract-security-audit-platform.md"
     },
     {
       "title": "Space Optimization Expert",
@@ -4720,7 +5198,7 @@
         "real-estate"
       ],
       "slug": "space-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4757,19 +5235,29 @@
     },
     {
       "title": "Stakeholder Communication Expert",
-      "description": "A stakeholder communication strategist that helps you identify, engage, and influence key stakeholders through targeted communication approaches.",
+      "description": "This prompt helps you build effective stakeholder communication strategies that ensure the right people get the right information at the right time to support your initiatives.",
       "category": "communication",
       "tags": [
-        "stakeholder-management",
-        "strategic-communication",
-        "relationship-building",
-        "influence"
+        "stakeholder management",
+        "strategic communication",
+        "relationship building",
+        "influence mapping"
       ],
       "slug": "stakeholder-communication-expert",
-      "date": "2025-07-21",
+      "date": "2025-07-22",
       "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "project communication",
+        "change management",
+        "executive alignment",
+        "partner management"
+      ],
       "file_path": "_prompts/stakeholder-communication-expert.md"
     },
     {
@@ -4783,7 +5271,7 @@
         "communication"
       ],
       "slug": "stakeholder-impact-analysis-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4791,7 +5279,7 @@
     },
     {
       "title": "Statistical Analysis Expert",
-      "description": "A practical statistical analysis assistant that helps you perform rigorous quantitative analysis, test hypotheses, and derive data-driven insights. Provide your data and research questions, and I'll deliver comprehensive statistical analysis with clear interpretations.",
+      "description": "This prompt helps you perform rigorous statistical analysis, test hypotheses, and derive data-driven insights. Get clear interpretations of statistical results and actionable recommendations based on your data.",
       "category": "analysis",
       "tags": [
         "statistical analysis",
@@ -4819,19 +5307,30 @@
     },
     {
       "title": "Status Reporting Expert",
-      "description": "A status reporting specialist that helps you create clear, informative progress updates that keep stakeholders aligned and projects on track.",
+      "description": "This prompt helps you create clear, informative status reports that keep stakeholders aligned, surface issues early, and drive action - all while minimizing reporting overhead.",
       "category": "communication",
       "tags": [
-        "status-updates",
-        "progress-reporting",
-        "project-communication",
-        "dashboards"
+        "status updates",
+        "progress reporting",
+        "project communication",
+        "dashboards",
+        "executive reporting"
       ],
       "slug": "status-reporting-expert",
-      "date": "2025-07-21",
+      "date": "2025-07-22",
       "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "project status updates",
+        "executive dashboards",
+        "team progress reports",
+        "stakeholder communication"
+      ],
       "file_path": "_prompts/status-reporting-expert.md"
     },
     {
@@ -4845,7 +5344,7 @@
         "leadership"
       ],
       "slug": "strategic-direction-setting-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4863,7 +5362,7 @@
         "alignment"
       ],
       "slug": "strategic-leadership-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -4899,19 +5398,18 @@
       "file_path": "_prompts/strategic-planning-expert.md"
     },
     {
-      "title": "Strategic Product Roadmap Generator with Prioritization Framework",
-      "description": "This prompt generates comprehensive product roadmaps that balance user needs, business objectives, and technical constraints. It employs multiple prioritization frameworks and strategic thinking to create roadmaps that are both ambitious and achievable, with clear rationale for every decision and built-in flexibility for market changes.",
+      "title": "Strategic Roadmap Generator",
+      "description": "This prompt helps you create strategic product roadmaps that balance customer needs, business objectives, and technical constraints while maintaining clear communication with stakeholders.",
       "category": "management-leadership",
       "tags": [
         "product roadmap",
-        "prioritization",
-        "strategy",
-        "product management",
-        "planning"
+        "strategic planning",
+        "product strategy",
+        "roadmap development"
       ],
       "slug": "strategic-roadmap-generator",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4919,10 +5417,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "quarterly planning",
-        "annual roadmaps",
+        "product planning",
+        "roadmap creation",
         "feature prioritization",
-        "stakeholder alignment"
+        "strategic alignment"
       ],
       "file_path": "_prompts/strategic-roadmap-generator.md"
     },
@@ -4956,8 +5454,36 @@
       "file_path": "_prompts/succession-planning-expert.md"
     },
     {
-      "title": "Supply Chain Excellence Director and Logistics Optimization Expert",
-      "description": "This prompt transforms complex supply chain challenges into resilient, efficient, and sustainable operations that drive competitive advantage. It combines strategic supply chain leadership with advanced analytics to optimize global networks, mitigate risks, reduce costs, and ensure product availability while meeting sustainability goals and adapting to dynamic market conditions.",
+      "title": "Supplier Ecosystem Orchestrator",
+      "description": "This prompt helps procurement and supply chain leaders build and orchestrate comprehensive supplier ecosystems that drive innovation, reduce risk, optimize performance, and create competitive advantages through strategic supplier relationships and ecosystem development.",
+      "category": "supply-chain",
+      "tags": [
+        "supplier management",
+        "vendor ecosystem",
+        "supplier development",
+        "strategic partnerships",
+        "supplier orchestration"
+      ],
+      "slug": "supplier-ecosystem-orchestrator",
+      "date": "2025-01-14",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3.5",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "supplier relationship management",
+        "vendor ecosystem development",
+        "supplier optimization",
+        "strategic sourcing"
+      ],
+      "file_path": "_prompts/supplier-ecosystem-orchestrator.md"
+    },
+    {
+      "title": "Supply Chain Excellence Director",
+      "description": "This prompt helps you build resilient, efficient supply chains that drive competitive advantage through strategic optimization, risk management, and sustainable operations.",
       "category": "optimization",
       "tags": [
         "supply chain management",
@@ -4968,7 +5494,7 @@
       ],
       "slug": "supply-chain-excellence-director",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4984,32 +5510,50 @@
       "file_path": "_prompts/supply-chain-excellence-director.md"
     },
     {
-      "title": "Supply Chain Architect and Logistics Optimization Expert",
-      "description": "This prompt transforms complex supply chain challenges into optimized end-to-end logistics systems that reduce costs while improving service levels. It combines supply chain management expertise with analytical optimization to create resilient, efficient, and sustainable supply networks that adapt to market volatility while maximizing operational performance.",
-      "category": "management-leadership",
+      "title": "Supply Chain Optimization Expert",
+      "description": "This prompt helps you optimize your supply chain for cost efficiency, speed, reliability, and resilience through systematic analysis and proven optimization strategies.",
+      "category": "optimization",
       "tags": [
-        "supply chain",
+        "supply-chain",
         "logistics",
-        "inventory optimization",
-        "procurement",
+        "inventory-optimization",
+        "vendor-management",
         "distribution"
       ],
       "slug": "supply-chain-optimization-expert",
-      "date": "2025-07-20",
+      "date": "2025-08-14",
+      "version": "1.0.0",
+      "compatible_models": [],
+      "use_cases": [],
+      "file_path": "_prompts/supply-chain-optimization-expert.md"
+    },
+    {
+      "title": "Supply Chain Resilience Strategy Architect",
+      "description": "This prompt helps supply chain leaders build comprehensive resilience strategies that prepare organizations for disruptions, enable rapid recovery, and create competitive advantages through adaptive supply chain design and risk management.",
+      "category": "supply-chain",
+      "tags": [
+        "supply chain resilience",
+        "risk management",
+        "business continuity",
+        "supply chain strategy",
+        "disruption recovery"
+      ],
+      "slug": "supply-chain-resilience-strategy-architect",
+      "date": "2025-01-14",
       "version": "1.0.0",
       "compatible_models": [
         "GPT-4",
-        "Claude 3",
+        "Claude 3.5",
         "Gemini Pro",
         "GPT-3.5"
       ],
       "use_cases": [
-        "supply chain design",
-        "inventory optimization",
-        "logistics planning",
-        "vendor management"
+        "supply chain risk assessment",
+        "resilience planning",
+        "disruption management",
+        "business continuity"
       ],
-      "file_path": "_prompts/supply-chain-optimization-expert.md"
+      "file_path": "_prompts/supply-chain-resilience-strategy-architect.md"
     },
     {
       "title": "Support Escalation Process Expert",
@@ -5035,7 +5579,7 @@
     },
     {
       "title": "SWOT Analysis Expert",
-      "description": "A practical SWOT analysis assistant that helps you evaluate strengths, weaknesses, opportunities, and threats to make better strategic decisions. Provide your business context and I'll deliver comprehensive SWOT analysis with actionable strategic recommendations.",
+      "description": "This prompt helps you conduct comprehensive SWOT analysis to evaluate strengths, weaknesses, opportunities, and threats, then develop actionable strategic recommendations based on your findings.",
       "category": "analysis",
       "tags": [
         "SWOT analysis",
@@ -5045,7 +5589,7 @@
         "strategic decision-making"
       ],
       "slug": "swot-analysis-expert",
-      "date": "2025-07-20",
+      "date": "2025-07-22",
       "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
@@ -5072,15 +5616,15 @@
         "infrastructure"
       ],
       "slug": "system-architecture-design-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/system-architecture-design-expert.md"
     },
     {
-      "title": "Strategic Talent Acquisition and Candidate Experience Designer",
-      "description": "This prompt creates comprehensive talent acquisition strategies that attract top candidates while ensuring excellent hiring decisions and candidate experiences. It combines recruiting expertise with behavioral psychology to design hiring processes that are both effective at identifying talent and respectful of candidates' time and dignity.",
+      "title": "Talent Acquisition Strategy Expert",
+      "description": "This prompt helps you create comprehensive talent acquisition strategies that attract top candidates while ensuring fair, effective hiring processes and excellent candidate experiences.",
       "category": "management-leadership",
       "tags": [
         "talent acquisition",
@@ -5090,8 +5634,8 @@
         "HR strategy"
       ],
       "slug": "talent-acquisition-strategist",
-      "date": "2025-07-20",
-      "version": "1.0.0",
+      "date": "2025-07-22",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -5118,15 +5662,15 @@
         "acquisition"
       ],
       "slug": "talent-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/talent-management-expert.md"
     },
     {
-      "title": "Executive Delegation Master and Team Performance Optimizer",
-      "description": "This prompt transforms chaotic task management into systematic delegation frameworks that optimize team performance while protecting executive time. It combines administrative expertise with performance coaching principles to create accountability systems that ensure tasks are completed effectively while developing team capabilities and maintaining quality standards.",
+      "title": "Task Delegation & Tracking Expert",
+      "description": "This prompt helps you effectively delegate tasks, track progress, and ensure accountability while developing your team's capabilities and protecting your time.",
       "category": "management-leadership",
       "tags": [
         "task delegation",
@@ -5137,7 +5681,7 @@
       ],
       "slug": "task-delegation-tracking",
       "date": "2025-07-20",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -5154,11 +5698,11 @@
     },
     {
       "title": "Research-Oriented Technology Learning Framework",
-      "description": "An advanced learning assistant focused on expert-level concepts, research insights, and complex technical implementations.",
+      "description": "",
       "category": "research-workflows",
       "tags": [],
       "slug": "teach-me-advanced",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5166,11 +5710,11 @@
     },
     {
       "title": "Let's Learn About a New Tool Together!",
-      "description": "An interactive learning assistant designed for beginners, providing structured explanations with examples and hands-on exercises.",
+      "description": "",
       "category": "research-workflows",
       "tags": [],
       "slug": "teach-me-beginner",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5178,11 +5722,11 @@
     },
     {
       "title": "Learn a New Technology Step-by-Step",
-      "description": "An intermediate-level learning assistant that provides in-depth technical explanations with practical applications and advanced concepts.",
+      "description": "",
       "category": "research-workflows",
       "tags": [],
       "slug": "teach-me-journeyman",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5200,7 +5744,7 @@
         "trust"
       ],
       "slug": "team-building-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5208,19 +5752,30 @@
     },
     {
       "title": "Team Collaboration Expert",
-      "description": "A team collaboration specialist that helps you build high-performing teams through effective communication, collaboration tools, and team culture development.",
+      "description": "This prompt helps you build high-performing teams through effective collaboration strategies, whether they're co-located, remote, or hybrid. Get practical solutions for communication, tools, and team culture.",
       "category": "communication",
       "tags": [
-        "team-collaboration",
-        "remote-work",
-        "team-dynamics",
-        "collaborative-tools"
+        "team collaboration",
+        "remote work",
+        "cross-functional teams",
+        "team dynamics",
+        "collaboration tools"
       ],
       "slug": "team-collaboration-expert",
-      "date": "2025-07-21",
+      "date": "2025-07-22",
       "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "remote team setup",
+        "cross-functional alignment",
+        "collaboration improvement",
+        "team culture building"
+      ],
       "file_path": "_prompts/team-collaboration-expert.md"
     },
     {
@@ -5235,7 +5790,7 @@
         "productivity"
       ],
       "slug": "team-motivation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5252,7 +5807,7 @@
         "implementation-strategy"
       ],
       "slug": "technical-approach-selection-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5298,7 +5853,7 @@
         "planning"
       ],
       "slug": "technical-debt-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5306,19 +5861,30 @@
     },
     {
       "title": "Technical Documentation Expert",
-      "description": "Create comprehensive technical documentation that helps developers, users, and stakeholders understand and effectively use your systems and APIs.",
-      "category": "technical-workflows",
+      "description": "This prompt helps you create clear, comprehensive technical documentation that developers and users actually want to read. Whether it's API docs, user guides, or internal process documentation.",
+      "category": "communication",
       "tags": [
+        "technical writing",
         "documentation",
-        "technical-writing",
-        "api-docs",
-        "knowledge-management"
+        "API docs",
+        "user guides",
+        "developer docs"
       ],
       "slug": "technical-documentation-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [],
-      "use_cases": [],
+      "date": "2025-07-22",
+      "version": "2.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [
+        "API documentation",
+        "user manuals",
+        "developer guides",
+        "process documentation"
+      ],
       "file_path": "_prompts/technical-documentation-expert.md"
     },
     {
@@ -5332,7 +5898,7 @@
         "tech-research"
       ],
       "slug": "technology-assessment-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5349,7 +5915,7 @@
         "quality-assurance"
       ],
       "slug": "test-strategy-development-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5367,7 +5933,7 @@
         "work-life-balance"
       ],
       "slug": "time-management-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5384,7 +5950,7 @@
         "educational resources"
       ],
       "slug": "training-material-development-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5458,7 +6024,7 @@
         "instructional writing"
       ],
       "slug": "tutorial-creation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5499,7 +6065,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "usability-testing-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5597,7 +6163,7 @@
         "experience-improvement"
       ],
       "slug": "user-experience-optimization-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5614,26 +6180,26 @@
         "user-interviews"
       ],
       "slug": "user-research-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
       "file_path": "_prompts/user-research-expert.md"
     },
     {
-      "title": "User Research Synthesis and Insight Generator",
-      "description": "This prompt transforms raw user research data into actionable design insights, behavioral patterns, and validated personas. It combines rigorous qualitative analysis methods with psychological understanding to uncover not just what users say, but what they actually need. The framework helps identify hidden patterns and translate research into concrete design directions.",
+      "title": "User Research Synthesizer",
+      "description": "This prompt helps you synthesize user research data into actionable insights, identify patterns, and create meaningful recommendations for product and design decisions.",
       "category": "creativity-innovation",
       "tags": [
         "user research",
-        "UX design",
-        "qualitative analysis",
+        "synthesis",
         "insights",
-        "persona development"
+        "UX research",
+        "qualitative analysis"
       ],
       "slug": "user-research-synthesizer",
       "date": "2025-07-20",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -5641,10 +6207,10 @@
         "GPT-3.5"
       ],
       "use_cases": [
-        "interview synthesis",
-        "survey analysis",
-        "usability findings",
-        "persona creation"
+        "research synthesis",
+        "insight generation",
+        "persona development",
+        "journey mapping"
       ],
       "file_path": "_prompts/user-research-synthesizer.md"
     },
@@ -5654,7 +6220,7 @@
       "category": "evaluation-assessment",
       "tags": [],
       "slug": "vendor-evaluation-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5671,7 +6237,7 @@
         "rfp-process"
       ],
       "slug": "vendor-selection-process-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "2.0.0",
       "compatible_models": [],
       "use_cases": [],
@@ -5769,7 +6335,7 @@
         "handoff-reduction"
       ],
       "slug": "workflow-streamlining-expert",
-      "date": "2025-07-21",
+      "date": "2025-08-14",
       "version": "1.0.0",
       "compatible_models": [],
       "use_cases": [],

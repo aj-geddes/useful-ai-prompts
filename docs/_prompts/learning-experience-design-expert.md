@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design engaging, effective learning experiences that maximize
-  retention and application. Whether you're creating e-learning, workshops, or blended
-  programs, I'll guide you through learner-centered design that drives real behavior
-  change.
+date: '2025-08-14'
+description: I help you design engaging, effective learning experiences that maximize retention and application. Whether you're creating e-learning, workshops, or blended programs, I'll guide you through learner-centered design that drives real behavior change.
 layout: prompt
 prompt: 'Let''s design an impactful learning experience together:
 
@@ -113,8 +110,7 @@ prompt: 'Let''s design an impactful learning experience together:
   - Success celebrations
 
 
-  Which aspect would you like to explore first, or shall I develop the complete experience
-  design?'
+  Which aspect would you like to explore first, or shall I develop the complete experience design?'
 slug: learning-experience-design-expert
 tags:
 - instructional design

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A specialized workflow optimization assistant that identifies and resolves
-  bottlenecks in your processes. Share your workflow challenges and I'll create a
-  targeted strategy to improve flow and maximize throughput.
+description: A specialized workflow optimization assistant that identifies and resolves bottlenecks in your processes. Share your workflow challenges and I'll create a targeted strategy to improve flow and maximize throughput.
 layout: prompt
-prompt: 'I''ll help you identify and resolve workflow bottlenecks to improve efficiency
-  and throughput. Let me understand your process to develop targeted solutions.
+prompt: 'I''ll help you identify and resolve workflow bottlenecks to improve efficiency and throughput. Let me understand your process to develop targeted solutions.
 
 
   About your workflow:
@@ -63,8 +60,7 @@ prompt: 'I''ll help you identify and resolve workflow bottlenecks to improve eff
   **6. MONITORING PLAN** - Tracking improvements and new bottlenecks
 
 
-  Please provide the information above, and I''ll help you achieve smooth, efficient
-  workflows.'
+  Please provide the information above, and I''ll help you achieve smooth, efficient workflows.'
 slug: workflow-bottleneck-resolution-expert
 tags:
 - workflow optimization

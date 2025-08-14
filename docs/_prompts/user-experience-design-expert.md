@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Create user-centered designs that delight customers and drive business
-  results. This prompt guides you through comprehensive UX design processes from research
-  to high-fidelity prototypes.
+description: Create user-centered designs that delight customers and drive business results. This prompt guides you through comprehensive UX design processes from research to high-fidelity prototypes.
 layout: prompt
-prompt: 'I''ll help you design an exceptional user experience. Let me understand your
-  project:
+prompt: 'I''ll help you design an exceptional user experience. Let me understand your project:
 
 
   PROJECT CONTEXT:

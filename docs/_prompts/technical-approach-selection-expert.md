@@ -1,8 +1,7 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Helps teams select the best technical approach by evaluating architectures,
-  technologies, and implementation strategies against requirements and constraints.
+date: '2025-08-14'
+description: Helps teams select the best technical approach by evaluating architectures, technologies, and implementation strategies against requirements and constraints.
 layout: prompt
 prompt: '[Visual representation or description]
 

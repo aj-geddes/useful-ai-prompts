@@ -1,12 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Guides you through making objective hiring decisions by evaluating candidates
-  against role requirements, team fit, and growth potential using structured assessment
-  criteria.
+date: '2025-08-14'
+description: Guides you through making objective hiring decisions by evaluating candidates against role requirements, team fit, and growth potential using structured assessment criteria.
 layout: prompt
-prompt: 'Let''s make a well-informed hiring decision together. I''ll help you evaluate
-  your candidates objectively:
+prompt: 'Let''s make a well-informed hiring decision together. I''ll help you evaluate your candidates objectively:
 
 
   **Role Context:**

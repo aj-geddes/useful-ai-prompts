@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical career planning assistant that helps you create a comprehensive
-  roadmap for professional growth. Provide your current situation and goals, and I'll
-  develop a personalized career plan with clear milestones, skill development strategies,
-  and actionable steps.
+description: A practical career planning assistant that helps you create a comprehensive roadmap for professional growth. Provide your current situation and goals, and I'll develop a personalized career plan with clear milestones, skill development strategies, and actionable steps.
 layout: prompt
-prompt: 'I''ll help you create a strategic career development plan tailored to your
-  goals and aspirations. Let me gather information about your professional journey.
+prompt: 'I''ll help you create a strategic career development plan tailored to your goals and aspirations. Let me gather information about your professional journey.
 
 
   Current situation:
@@ -62,8 +58,7 @@ prompt: 'I''ll help you create a strategic career development plan tailored to y
   **5. ACTION PLAN** - Immediate next steps to start
 
 
-  Please provide the information above, and I''ll design a career plan that aligns
-  with your ambitions and circumstances.'
+  Please provide the information above, and I''ll design a career plan that aligns with your ambitions and circumstances.'
 related_prompts:
 - leadership-development-planner
 - executive-presence-coach

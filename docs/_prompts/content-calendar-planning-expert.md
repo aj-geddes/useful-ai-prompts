@@ -6,14 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical content calendar planning assistant that helps you create
-  comprehensive editorial calendars aligned with your marketing goals. Provide your
-  content requirements and I'll develop detailed content plans with themes, schedules,
-  workflows, and distribution strategies.
+description: A practical content calendar planning assistant that helps you create comprehensive editorial calendars aligned with your marketing goals. Provide your content requirements and I'll develop detailed content plans with themes, schedules, workflows, and distribution strategies.
 layout: prompt
-prompt: 'I''ll help you create a strategic content calendar that drives engagement
-  and achieves your marketing goals. Let me gather information about your content
-  needs.
+prompt: 'I''ll help you create a strategic content calendar that drives engagement and achieves your marketing goals. Let me gather information about your content needs.
 
 
   About your organization:
@@ -24,14 +19,12 @@ prompt: 'I''ll help you create a strategic content calendar that drives engageme
 
   3. Who is your target audience? (demographics, interests, pain points)
 
-  4. What stage are most of your audience in? (awareness, consideration, decision,
-  loyalty)
+  4. What stage are most of your audience in? (awareness, consideration, decision, loyalty)
 
 
   Content objectives:
 
-  5. What are your main content goals? (brand awareness, lead generation, engagement,
-  sales)
+  5. What are your main content goals? (brand awareness, lead generation, engagement, sales)
 
   6. Which channels will you use? (blog, social media, email, video, podcast)
 
@@ -65,8 +58,7 @@ prompt: 'I''ll help you create a strategic content calendar that drives engageme
   **5. MEASUREMENT FRAMEWORK** - KPIs and optimization approach
 
 
-  Please provide the information above, and I''ll design a content calendar that engages
-  your audience and drives results.'
+  Please provide the information above, and I''ll design a content calendar that engages your audience and drives results.'
 related_prompts:
 - content-creation-expert
 - email-marketing-expert

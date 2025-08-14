@@ -1,7 +1,7 @@
 ---
 category: research-workflows
-date: '2025-07-21'
-description: An advanced learning assistant focused on expert-level concepts, research insights, and complex technical implementations.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: 'Teach me the following technology in a structured, source-driven format.
 

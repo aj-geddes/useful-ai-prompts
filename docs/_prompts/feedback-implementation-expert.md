@@ -1,10 +1,7 @@
 ---
 category: learning-development
-date: '2025-07-21'
-description: I help you design and implement effective feedback systems that drive
-  learning and performance improvement. Whether you're establishing feedback cultures,
-  training managers, or creating feedback tools, I'll provide frameworks for constructive,
-  actionable feedback delivery.
+date: '2025-08-14'
+description: I help you design and implement effective feedback systems that drive learning and performance improvement. Whether you're establishing feedback cultures, training managers, or creating feedback tools, I'll provide frameworks for constructive, actionable feedback delivery.
 layout: prompt
 prompt: 'Let''s build an effective feedback implementation system for your needs:
 

@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical presentation creation assistant that helps you design compelling,
-  memorable presentations that drive action. Provide your presentation requirements
-  and I'll create complete slide decks with speaker notes, visuals, and supporting
-  materials that engage your audience and achieve your goals.
+description: A practical presentation creation assistant that helps you design compelling, memorable presentations that drive action. Provide your presentation requirements and I'll create complete slide decks with speaker notes, visuals, and supporting materials that engage your audience and achieve your goals.
 layout: prompt
-prompt: 'I''ll help you create a compelling presentation that engages your audience
-  and drives action. Let me gather information about your presentation needs.
+prompt: 'I''ll help you create a compelling presentation that engages your audience and drives action. Let me gather information about your presentation needs.
 
 
   About your presentation:
 
-  1. What type of presentation are you creating? (pitch deck, executive update, conference
-  talk, training, sales)
+  1. What type of presentation are you creating? (pitch deck, executive update, conference talk, training, sales)
 
   2. Who is your audience? (executives, investors, team, customers, general public)
 
@@ -60,12 +55,10 @@ prompt: 'I''ll help you create a compelling presentation that engages your audie
 
   **4. Q&A PREPARATION** - Anticipated questions with suggested answers
 
-  **5. SUPPORTING MATERIALS** - Handouts, follow-up resources, and technical setup
-  guide
+  **5. SUPPORTING MATERIALS** - Handouts, follow-up resources, and technical setup guide
 
 
-  Please provide the information above, and I''ll create a presentation that captivates
-  your audience and achieves your goals.'
+  Please provide the information above, and I''ll create a presentation that captivates your audience and achieves your goals.'
 related_prompts:
 - pitch-deck-designer
 - data-visualization-expert

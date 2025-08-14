@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Develop comprehensive retention strategies that keep customers engaged
-  and reduce churn. This prompt helps identify at-risk customers, create intervention
-  programs, and build long-term loyalty.
+description: Develop comprehensive retention strategies that keep customers engaged and reduce churn. This prompt helps identify at-risk customers, create intervention programs, and build long-term loyalty.
 layout: prompt
-prompt: 'I''ll help you build a powerful customer retention strategy. Let''s understand
-  your situation:
+prompt: 'I''ll help you build a powerful customer retention strategy. Let''s understand your situation:
 
 
   BUSINESS CONTEXT:

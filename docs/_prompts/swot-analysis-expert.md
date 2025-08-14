@@ -5,126 +5,60 @@ compatible_models:
 - Claude 3
 - Gemini Pro
 - GPT-3.5
-date: '2025-07-20'
-description: A practical SWOT analysis assistant that helps you evaluate strengths,
-  weaknesses, opportunities, and threats to make better strategic decisions. Provide
-  your business context and I'll deliver comprehensive SWOT analysis with actionable
-  strategic recommendations.
+date: '2025-07-22'
+description: This prompt helps you conduct comprehensive SWOT analysis to evaluate strengths, weaknesses, opportunities, and threats, then develop actionable strategic recommendations based on your findings.
 layout: prompt
-prompt: 'SO Strategies (Strength-Opportunity)
-
-  ┌─────────────────────────────────────────────┐
-
-  │ SO1: Digital Platform Leadership │
-
-  │ Use: S2 (Tech) + O1 (Digital Wave) │
-
-  │ Action: Build industry-leading platform │
-
-  │ Investment: $500M over 3 years │
-
-  │ Expected Return: 35% market share │
-
-  ├─────────────────────────────────────────────┤
-
-  │ SO2: Global Premium Expansion │
-
-  │ Use: S1 (Brand) + O2 (Emerging Markets) │
-
-  │ Action: Premium positioning in Asia │
-
-  │ Investment: $300M │
-
-  │ Expected Return: $2B revenue by Year 5 │
-
-  └─────────────────────────────────────────────┘
+prompt: 'I''ll help you conduct a comprehensive SWOT analysis to understand your strategic position and identify key actions. Let me gather information about your situation.
 
 
-  WO Strategies (Weakness-Opportunity)
+  About your business/situation:
 
-  ┌─────────────────────────────────────────────┐
+  1. What are you analyzing? (company, product, project, division, etc.)
 
-  │ WO1: Innovation Transformation │
+  2. What industry/market are you in?
 
-  │ Fix: W3 (Slow) via O3 (Partnerships) │
+  3. What''s your current market position? (leader, challenger, niche player, startup)
 
-  │ Action: Agile development with startups │
-
-  │ Investment: $200M + equity stakes │
-
-  │ Expected Outcome: 6-month cycle time │
-
-  ├─────────────────────────────────────────────┤
-
-  │ WO2: Operational Excellence Program │
-
-  │ Fix: W1 (Costs) via O1 (Digital) │
-
-  │ Action: AI-driven process optimization │
-
-  │ Investment: $150M │
-
-  │ Expected Savings: $400M annually │
-
-  └─────────────────────────────────────────────┘
+  4. What''s driving this analysis? (planning, investment decision, market entry, etc.)
 
 
-  ST Strategies (Strength-Threat)
+  Context and scope:
 
-  ┌─────────────────────────────────────────────┐
+  5. What''s your time horizon for this analysis? (next year, 3-5 years, long-term)
 
-  │ ST1: Acquisition Defense │
+  6. Who are your main competitors?
 
-  │ Use: S4 (Financial) vs T1 (Disruption) │
+  7. What are your strategic goals? (growth, profitability, expansion, etc.)
 
-  │ Action: Acquire 2-3 innovative startups │
-
-  │ Investment: $1B M&A budget │
-
-  │ Expected Outcome: Neutralize threats │
-
-  ├─────────────────────────────────────────────┤
-
-  │ ST2: Resilience Building │
-
-  │ Use: S3 (Network) vs T4 (Supply Chain) │
-
-  │ Action: Diversify and localize supply │
-
-  │ Investment: $200M │
-
-  │ Risk Reduction: 60% vulnerability │
-
-  └─────────────────────────────────────────────┘
+  8. Who will use this analysis? (board, investors, management team, etc.)
 
 
-  WT Strategies (Weakness-Threat)
+  Current situation:
 
-  ┌─────────────────────────────────────────────┐
+  9. What do you see as your main advantages/strengths currently?
 
-  │ WT1: Defensive Transformation │
+  10. What challenges or weaknesses are you facing?
 
-  │ Fix: W2 (Talent) vs T1 (Competition) │
+  11. What market trends or opportunities do you see?
 
-  │ Action: Massive reskilling program │
+  12. What threats or risks are you concerned about?
 
-  │ Investment: $100M │
 
-  │ Critical Success Factor: Speed │
+  Based on your answers, I''ll provide:
 
-  ├─────────────────────────────────────────────┤
 
-  │ WT2: Cost Fortress Strategy │
+  **1. COMPREHENSIVE SWOT MATRIX** - Detailed strengths, weaknesses, opportunities, threats
 
-  │ Fix: W1 (Costs) vs T3 (Recession) │
+  **2. STRATEGIC IMPLICATIONS** - What your SWOT means for your competitive position
 
-  │ Action: 25% cost reduction program │
+  **3. STRATEGIC OPTIONS** - Specific strategies based on SWOT combinations
 
-  │ Timeline: 18 months │
+  **4. PRIORITY ACTIONS** - Top recommendations ranked by impact and feasibility
 
-  │ Preservation: Core capabilities │
+  **5. MONITORING PLAN** - Key metrics to track your strategic progress
 
-  └─────────────────────────────────────────────┘'
+
+  Please provide the information above to begin your SWOT analysis.'
 related_prompts:
 - competitive-analysis-expert
 - market-research-strategist
@@ -136,15 +70,6 @@ tags:
 - competitive positioning
 - opportunity assessment
 - strategic decision-making
-tips:
-- Clearly define the entity and scope for analysis
-- Gather comprehensive internal and external data
-- Be brutally honest about weaknesses and threats
-- Look for non-obvious connections between factors
-- Prioritize factors based on impact and probability
-- Generate strategies that leverage strengths and opportunities
-- Address weaknesses that amplify threats urgently
-- Create specific, measurable action plans
 title: SWOT Analysis Expert
 use_cases:
 - strategic planning

@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps leaders navigate crises effectively, maintaining stability
-  while guiding teams through uncertainty and change.
+date: '2025-08-14'
+description: This prompt helps leaders navigate crises effectively, maintaining stability while guiding teams through uncertainty and change.
 layout: prompt
-prompt: 'I''ll help you develop crisis leadership strategies to guide your team through
-  challenging times. Let''s assess your situation:
+prompt: 'I''ll help you develop crisis leadership strategies to guide your team through challenging times. Let''s assess your situation:
 
 
   **Crisis Context:**

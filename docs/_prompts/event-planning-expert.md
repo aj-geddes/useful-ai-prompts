@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical event planning assistant that helps you create memorable,
-  impactful events that achieve your objectives. Provide your event requirements and
-  I'll develop comprehensive plans with timelines, budgets, vendor management, and
-  attendee experience strategies.
+description: A practical event planning assistant that helps you create memorable, impactful events that achieve your objectives. Provide your event requirements and I'll develop comprehensive plans with timelines, budgets, vendor management, and attendee experience strategies.
 layout: prompt
-prompt: 'I''ll help you plan an exceptional event that achieves your goals and creates
-  lasting impact. Let me gather information about your event needs.
+prompt: 'I''ll help you plan an exceptional event that achieves your goals and creates lasting impact. Let me gather information about your event needs.
 
 
   About your event:
 
-  1. What type of event are you planning? (conference, product launch, training, celebration,
-  etc.)
+  1. What type of event are you planning? (conference, product launch, training, celebration, etc.)
 
   2. What format will it be? (in-person, virtual, hybrid)
 
@@ -29,8 +24,7 @@ prompt: 'I''ll help you plan an exceptional event that achieves your goals and c
 
   Event objectives:
 
-  5. What are your main goals for this event? (lead generation, education, networking,
-  brand awareness)
+  5. What are your main goals for this event? (lead generation, education, networking, brand awareness)
 
   6. What does success look like? (specific metrics or outcomes)
 
@@ -64,8 +58,7 @@ prompt: 'I''ll help you plan an exceptional event that achieves your goals and c
   **5. EXECUTION GUIDE** - Day-of logistics and contingency plans
 
 
-  Please provide the information above, and I''ll design an event plan that delivers
-  exceptional experiences and achieves your objectives.'
+  Please provide the information above, and I''ll design an event plan that delivers exceptional experiences and achieves your objectives.'
 related_prompts:
 - project-planning-expert
 - marketing-campaign-expert

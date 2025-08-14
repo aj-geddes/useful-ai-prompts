@@ -1,11 +1,9 @@
 ---
 category: management-leadership
-date: '2025-07-21'
-description: This prompt helps you build comprehensive talent management strategies
-  that attract, develop, and retain top performers.
+date: '2025-08-14'
+description: This prompt helps you build comprehensive talent management strategies that attract, develop, and retain top performers.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive talent management strategy for your
-  organization. Let''s understand your needs:
+prompt: 'I''ll help you create a comprehensive talent management strategy for your organization. Let''s understand your needs:
 
 
   **Talent Landscape:**

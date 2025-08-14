@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-21'
-description: Build sophisticated personalization strategies that deliver relevant
-  experiences to each customer. This prompt helps create frameworks for dynamic content,
-  recommendations, and individualized interactions across all touchpoints.
+description: Build sophisticated personalization strategies that deliver relevant experiences to each customer. This prompt helps create frameworks for dynamic content, recommendations, and individualized interactions across all touchpoints.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive personalization framework. Let''s understand
-  your needs:
+prompt: 'I''ll help you create a comprehensive personalization framework. Let''s understand your needs:
 
 
   PERSONALIZATION CONTEXT:

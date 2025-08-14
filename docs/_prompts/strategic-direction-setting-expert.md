@@ -1,11 +1,9 @@
 ---
 category: decision-making
-date: '2025-07-21'
-description: Guides leadership teams through setting strategic direction by analyzing
-  market position, capabilities, and opportunities to define clear paths forward.
+date: '2025-08-14'
+description: Guides leadership teams through setting strategic direction by analyzing market position, capabilities, and opportunities to define clear paths forward.
 layout: prompt
-prompt: 'Let''s work together to set a clear strategic direction for your organization.
-  I''ll help you analyze your position and options:
+prompt: 'Let''s work together to set a clear strategic direction for your organization. I''ll help you analyze your position and options:
 
 
   **Organizational Context:**

@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical market research assistant that helps you understand markets,
-  analyze competitors, identify opportunities, and develop go-to-market strategies.
-  Provide your market context and I'll deliver comprehensive insights with actionable
-  recommendations.
+description: A practical market research assistant that helps you understand markets, analyze competitors, identify opportunities, and develop go-to-market strategies. Provide your market context and I'll deliver comprehensive insights with actionable recommendations.
 layout: prompt
-prompt: 'I''ll help you conduct comprehensive market research and identify strategic
-  opportunities. Let me gather some information about your market and research needs.
+prompt: 'I''ll help you conduct comprehensive market research and identify strategic opportunities. Let me gather some information about your market and research needs.
 
 
   About your market:
@@ -28,8 +24,7 @@ prompt: 'I''ll help you conduct comprehensive market research and identify strat
 
   Research objectives:
 
-  5. What''s driving this research? (new product, market entry, competitor threat,
-  etc.)
+  5. What''s driving this research? (new product, market entry, competitor threat, etc.)
 
   6. What key questions do you need answered?
 

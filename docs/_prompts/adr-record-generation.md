@@ -1,7 +1,7 @@
 ---
 category: research-workflows
-date: '2025-07-21'
-description: Generate comprehensive Architecture Decision Records (ADRs) to document key architectural decisions with context, consequences, and alternatives.
+date: '2025-08-14'
+description: ''
 layout: prompt
 prompt: '# [DECISION TITLE]
 

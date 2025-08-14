@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-07-20'
-description: A practical trend identification assistant that helps you spot emerging
-  patterns, analyze market developments, and predict future directions to inform strategic
-  decisions. Provide your industry context and I'll deliver comprehensive trend analysis
-  with actionable insights.
+description: A practical trend identification assistant that helps you spot emerging patterns, analyze market developments, and predict future directions to inform strategic decisions. Provide your industry context and I'll deliver comprehensive trend analysis with actionable insights.
 layout: prompt
-prompt: 'I''ll help you identify and analyze emerging trends to support your strategic
-  decision-making. Let me gather information about what trends you want to explore.
+prompt: 'I''ll help you identify and analyze emerging trends to support your strategic decision-making. Let me gather information about what trends you want to explore.
 
 
   About your focus area:
@@ -32,8 +28,7 @@ prompt: 'I''ll help you identify and analyze emerging trends to support your str
 
   6. What geographic scope? (local, national, global)
 
-  7. Are there particular trend categories you want to focus on? (technology, consumer
-  behavior, regulatory, etc.)
+  7. Are there particular trend categories you want to focus on? (technology, consumer behavior, regulatory, etc.)
 
   8. Who are your main competitors or industry leaders to watch?
 
