@@ -4,11 +4,16 @@
 
     let searchIndex = [];
     let searchInput, searchResults, searchOverlay, categoryFilter, tagFilter;
+    let searchDropdown, searchSuggestions;
+    let searchHistory = JSON.parse(localStorage.getItem('searchHistory') || '[]');
+    let favorites = JSON.parse(localStorage.getItem('promptFavorites') || '[]');
     let currentFilters = {
         category: '',
         tags: [],
         sector: ''
     };
+    let dropdownSelectedIndex = -1;
+    let isDropdownOpen = false;
     
     // Initialize search functionality
     function initializeSearch() {

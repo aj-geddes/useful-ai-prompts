@@ -143,9 +143,12 @@ layout: default
             </div>
         </div>
         
+        <!-- Enhanced Related Prompts Section -->
+        {% include related-prompts.html %}
+        
         {% if page.related_prompts %}
-        <div class="related-prompts">
-            <h2>Related Prompts</h2>
+        <div class="manual-related-prompts" style="margin-top: 2rem;">
+            <h2>Manually Curated Related Prompts</h2>
             <div class="related-grid">
                 {% for related in page.related_prompts limit:6 %}
                     {% assign related_prompt = site.prompts | where: "slug", related %}

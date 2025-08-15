@@ -103,22 +103,47 @@ description: "Search through 278+ enterprise-grade AI prompts across 18 speciali
                         <p>Enter a search term above to find relevant prompts from our comprehensive collection.</p>
                         
                         <div class="search-examples">
-                            <h4>Popular Searches:</h4>
-                            <div class="example-searches">
-                                <button class="example-search" onclick="document.getElementById('searchPageInput').value='market research'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                                    market research
+                            <h4>🔥 Trending Searches:</h4>
+                            <div class="example-searches trending">
+                                <button class="example-search trending-search" onclick="searchByKeyword('market research')">
+                                    <i class="fas fa-chart-line"></i> market research
                                 </button>
-                                <button class="example-search" onclick="document.getElementById('searchPageInput').value='content writing'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                                    content writing
+                                <button class="example-search trending-search" onclick="searchByKeyword('content creation')">
+                                    <i class="fas fa-pen-fancy"></i> content creation
                                 </button>
-                                <button class="example-search" onclick="document.getElementById('searchPageInput').value='project management'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                                    project management
+                                <button class="example-search trending-search" onclick="searchByKeyword('project management')">
+                                    <i class="fas fa-tasks"></i> project management
                                 </button>
-                                <button class="example-search" onclick="document.getElementById('searchPageInput').value='debugging'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                                    debugging
+                                <button class="example-search trending-search" onclick="searchByKeyword('debugging')">
+                                    <i class="fas fa-bug"></i> debugging
                                 </button>
-                                <button class="example-search" onclick="document.getElementById('searchPageInput').value='presentation'; document.getElementById('searchPageInput').dispatchEvent(new Event('input'))">
-                                    presentation
+                                <button class="example-search trending-search" onclick="searchByKeyword('presentation')">
+                                    <i class="fas fa-presentation-screen"></i> presentation
+                                </button>
+                                <button class="example-search trending-search" onclick="searchByKeyword('strategic planning')">
+                                    <i class="fas fa-chess"></i> strategic planning
+                                </button>
+                            </div>
+                            
+                            <h4>💡 Popular Use Cases:</h4>
+                            <div class="example-searches use-cases">
+                                <button class="example-search use-case-search" onclick="searchByKeyword('API design')">
+                                    API Design & Documentation
+                                </button>
+                                <button class="example-search use-case-search" onclick="searchByKeyword('financial analysis')">
+                                    Financial Analysis & Modeling
+                                </button>
+                                <button class="example-search use-case-search" onclick="searchByKeyword('customer research')">
+                                    Customer Research & Insights
+                                </button>
+                                <button class="example-search use-case-search" onclick="searchByKeyword('risk assessment')">
+                                    Risk Assessment & Management
+                                </button>
+                                <button class="example-search use-case-search" onclick="searchByKeyword('team leadership')">
+                                    Team Leadership & Management
+                                </button>
+                                <button class="example-search use-case-search" onclick="searchByKeyword('technical documentation')">
+                                    Technical Documentation
                                 </button>
                             </div>
                         </div>
@@ -339,6 +364,52 @@ description: "Search through 278+ enterprise-grade AI prompts across 18 speciali
 .example-search:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+.example-searches.trending {
+    margin-bottom: 2rem;
+}
+
+.trending-search {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+.trending-search:hover {
+    background: linear-gradient(135deg, #ff5252 0%, #ff7043 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.use-case-search {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    white-space: nowrap;
+}
+
+.use-case-search:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.search-examples h4 {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    margin: 1.5rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .search-results-grid {
