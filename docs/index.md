@@ -33,8 +33,8 @@ description: "Search and discover 278+ professional AI prompts across specialize
                 <div class="stat-label">Categories</div>
             </div>
             <div class="stat">
-                <div class="stat-number">350+</div>
-                <div class="stat-label">Lines Each</div>
+                <div class="stat-number">35</div>
+                <div class="stat-label">Avg Lines</div>
             </div>
         </div>
     </div>
