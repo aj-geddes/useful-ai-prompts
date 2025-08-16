@@ -803,16 +803,16 @@ html.dark .theme-btn .dark-icon {
 
 .no-results-content h3 {
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--text-primary);
 }
 
 /* Footer */
 .site-footer {
-    background: white;
-    border-top: 1px solid #e5e5e5;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-primary);
     padding: 3rem 0 1rem;
     margin-top: 4rem;
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .footer-content {
@@ -824,7 +824,7 @@ html.dark .theme-btn .dark-icon {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-primary);
     font-size: 1rem;
 }
 
@@ -2304,7 +2304,7 @@ a[href*="prompts"].btn-primary,
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .breadcrumb {
@@ -2332,31 +2332,34 @@ a[href*="prompts"].btn-primary,
 }
 
 .meta-item strong {
-    color: #333;
+    color: var(--text-primary);
 }
 
 .prompt-content {
-    background: white;
-    border: 1px solid #e5e5e5;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 8px;
     padding: 2rem;
     line-height: 1.7;
+    color: var(--text-primary);
 }
 
 .prompt-content pre {
-    background: #f8fafc;
-    border: 1px solid #e5e5e5;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-primary);
     border-radius: 6px;
     padding: 1rem;
     overflow-x: auto;
     margin: 1rem 0;
+    color: var(--text-primary);
 }
 
 .prompt-content code {
-    background: #f8fafc;
+    background: var(--bg-primary);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.9em;
+    color: var(--text-primary);
 }
 
 .copy-prompt-btn {
