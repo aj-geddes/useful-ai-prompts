@@ -124,7 +124,7 @@ permalink: /business-ai-prompts/
             <h2>Featured Business Prompts</h2>
             
             <div class="featured-grid">
-                {% assign business_prompts = site.prompts | where_exp: "prompt", "prompt.category contains 'management' or prompt.category contains 'planning' or prompt.category contains 'analysis' or prompt.category == 'optimization'" %}
+                {% assign business_prompts = site.prompts | where: "category", "management-leadership" %}
                 {% for prompt in business_prompts limit:6 %}
                 <div class="featured-prompt">
                     <div class="prompt-category">{{ prompt.category | replace: '-', ' ' | capitalize }}</div>
