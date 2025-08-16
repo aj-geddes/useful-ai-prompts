@@ -1,5 +1,5 @@
 ---
-category: research
+category: research-workflows
 compatible_models:
 - claude-3.5-sonnet
 - gpt-4
