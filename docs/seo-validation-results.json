@@ -1,0 +1,83 @@
+{
+  "meta_tags": [
+    "\u2705 og:title implementation found",
+    "\u2705 og:description implementation found",
+    "\u2705 og:url implementation found",
+    "\u2705 og:image implementation found",
+    "\u2705 twitter:card implementation found",
+    "\u2705 twitter:title implementation found",
+    "\u2705 twitter:description implementation found",
+    "\u2705 canonical implementation found",
+    "\u2705 viewport implementation found",
+    "\u2705 robots implementation found",
+    "\u2705 Google Analytics 4 implemented",
+    "\u2705 Custom tracking parameters configured",
+    "\u2705 Prompt-specific tracking events implemented"
+  ],
+  "structured_data": [
+    "\u2705 WebSite schema found",
+    "\u2705 Organization schema found",
+    "\u2705 BreadcrumbList schema found"
+  ],
+  "sitemaps": [
+    "\u2705 Custom sitemap generator found",
+    "\u2705 Sitemap includes priority and frequency",
+    "\u2705 Category-specific sitemaps enabled",
+    "\u2705 Sitemap XML layout found",
+    "\u2705 Robots.txt includes sitemap reference",
+    "\u2705 Robots.txt properly configured"
+  ],
+  "performance": [
+    "\u2705 Resource preloading implemented",
+    "\u2705 Service Worker implemented",
+    "\u2705 Lazy loading implemented",
+    "\u2705 Critical CSS implemented",
+    "\u2705 Service Worker file found",
+    "\u2705 Web App Manifest found"
+  ],
+  "mobile": [
+    "\u2705 iOS web app meta tags implemented",
+    "\u2705 Core Web Vitals monitoring implemented",
+    "\u2705 Accessibility motion preferences implemented"
+  ],
+  "accessibility": [],
+  "content": [
+    "\u2705 Found 278 prompt files",
+    "\u2705 Content SEO score: 180.0%"
+  ],
+  "errors": [],
+  "warnings": [
+    "\u26a0\ufe0f Article schema not implemented",
+    "\u26a0\ufe0f HowTo schema not implemented",
+    "\u26a0\ufe0f CollectionPage schema not implemented",
+    "\u26a0\ufe0f DNS preconnect not found",
+    "\u26a0\ufe0f Viewport meta tag not found",
+    "\u26a0\ufe0f Touch optimization not found"
+  ],
+  "recommendations": [
+    "\ud83c\udfaf Target Keywords Integration:",
+    "  - Add 'AI prompts for professionals' to key pages",
+    "  - Include 'ChatGPT prompts library' in meta descriptions",
+    "  - Optimize for 'Claude prompts collection' searches",
+    "",
+    "\ud83d\udcca Content Optimization:",
+    "  - Ensure all prompts have unique meta descriptions",
+    "  - Add FAQ sections to high-traffic categories",
+    "  - Create topic clusters linking related prompts",
+    "",
+    "\ud83d\udd17 Technical SEO:",
+    "  - Implement internal linking between related prompts",
+    "  - Add XML sitemaps to Google Search Console",
+    "  - Monitor Core Web Vitals in PageSpeed Insights",
+    "",
+    "\ud83d\udcf1 Mobile Optimization:",
+    "  - Test all pages with Google Mobile-Friendly Test",
+    "  - Optimize tap targets for mobile users",
+    "  - Ensure fast loading on 3G connections",
+    "",
+    "\ud83d\udcc8 Performance Monitoring:",
+    "  - Set up Google Search Console",
+    "  - Monitor Google Analytics 4 prompt tracking",
+    "  - Track prompt copy events and popular categories"
+  ]
+}

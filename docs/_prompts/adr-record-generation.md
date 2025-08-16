@@ -1,45 +1,103 @@
 ---
-category: research-workflows
-date: '2025-08-14'
-description: 'I help you create comprehensive Architecture Decision Records (ADRs) that capture critical technical decisions, alternatives considered, and long-term consequences. Perfect for software architects and engineering teams.'
-layout: prompt
-prompt: "I'll help you create a comprehensive Architecture Decision Record (ADR) for your technical decision. Let me gather the details:
-
-**Decision context:**
-1. What technical decision are you documenting? (architecture choice, technology selection, design pattern)
-2. What problem or challenge prompted this decision?
-3. What constraints are influencing your choice? (budget, timeline, team skills, compliance)
-4. Who are the key stakeholders affected by this decision?
-
-**Current situation:**
-5. What's your current system architecture or approach?
-6. What specific pain points or limitations are you addressing?
-7. What are your performance, scalability, or integration requirements?
-8. Are there any regulatory or compliance considerations?
-
-**Options analysis:**
-9. What alternatives did you consider? (list main options)
-10. What evaluation criteria matter most? (cost, performance, maintainability, team expertise)
-11. What experiments, prototypes, or research did you conduct?
-12. What are the deal-breakers or must-have requirements?
-
-Based on your answers, I'll create:
-
-**PROFESSIONAL ADR DOCUMENT** - Complete architecture decision record following industry standards
-**DECISION RATIONALE** - Clear justification with supporting evidence and trade-off analysis
-**ALTERNATIVES ANALYSIS** - Comprehensive evaluation of all options with pros/cons
-**IMPLEMENTATION ROADMAP** - Practical steps to execute the decision
-**RISK ASSESSMENT** - Potential consequences and mitigation strategies
-**REVIEW CRITERIA** - Conditions that would trigger reconsideration of this decision
-
-Share your technical decision details and I'll create an ADR that clearly communicates your reasoning to stakeholders!"
-slug: adr-record-generation
+category: research
+compatible_models:
+- claude-3.5-sonnet
+- gpt-4
+- gemini-pro
+date: '2025-08-16'
+description: Professional prompt for research optimization and expert consultation
+slug: architectural-decision-record-adr-generation-prompt
 tags:
-- architecture decisions
-- technical documentation
-- software architecture
-- decision records
-- engineering documentation
+- research
 title: Architectural Decision Record (ADR) Generation Prompt
-version: 1.0.0
+use_cases:
+- research optimization
+- professional workflow enhancement
+version: 3.0.0
 ---
+
+# Architectural Decision Record (ADR) Generation Prompt
+
+## Solicit User Input for Architectural Decision Parameters
+
+To facilitate the generation of a rigorously composed, Temperature 0 Architectural Decision Record (ADR), please provide detailed and structured responses to the following:
+
+- **Decision Title**: A concise, unambiguous description of the architectural choice under consideration.
+- **Contextual Justification**: A thorough exposition of the architectural landscape, including motivating factors such as performance, regulatory compliance, maintainability, interoperability, scalability constraints, and team dynamics.
+- **Evaluated Alternatives**: A complete enumeration of all viable technologies, frameworks, or design strategies considered, including incumbent or legacy solutions.
+- **Chosen Solution**: Identification of the selected approach with a formal articulation of the selection criteria, supported by empirical or analytical justification.
+- **Stakeholder Considerations**: Identification of all involved stakeholders—domain owners, platform teams, governance boards—and the scope of their influence on the decision.
+- **Scope of Impact**: A clearly defined boundary of the architectural decision, whether limited to a module, a platform segment, or the system as a whole.
+- **Reevaluation Triggers**: Objective metrics or contextual thresholds that would prompt a re-examination of the decision, such as performance degradation, ecosystem shifts, or external policy changes.
+- **Supporting Artifacts**: Hyperlinked references to RFCs, benchmarking outputs, comparative analyses, stakeholder discussions, or prior ADRs.
+
+This structured input enables the automatic generation of an ADR conformant with [https://adr.github.io](https://adr.github.io) standards and enterprise architecture governance frameworks.
+
+---
+
+## Structural and Methodological Requirements
+
+- **Definitive Assertion**: Each ADR must express a clear and authoritative architectural position.
+- **Temperature 0 Standard**: All prose must be grounded in verifiable facts, avoiding speculative, emotional, or future-contingent language.
+- **Comparative Analysis**: All considered alternatives must be evaluated in terms of benefits, tradeoffs, constraints, and alignment with non-functional requirements.
+- **Traceability**: Every rationale must reference primary sources such as internal documentation, empirical findings, or authoritative standards.
+- **Lifecycle Awareness**: Each decision must delineate its active scope, sunset criteria, and conditions for revision or supersession.
+
+---
+
+## ADR Template for Structured Generation
+
+```md
+# [DECISION TITLE]
+
+## Status
+
+Accepted
+
+## Context
+
+[Describe the architectural environment, including motivating constraints, performance drivers, integration dependencies, or compliance considerations.]
+
+## Decision
+
+[State the adopted solution. Provide a factual and context-sensitive justification based on evaluation criteria.]
+
+## Considered Alternatives
+
+- [Option A]: [Concise technical summary of benefits and limitations.]
+- [Option B]: [Concise technical summary of benefits and limitations.]
+- [Option C]: [Concise technical summary of benefits and limitations.]
+
+## Consequences
+
+[Summarize the architectural, operational, and organizational implications. Include implementation overhead, maintenance burden, or alignment with long-term strategy.]
+
+## Reconsideration Criteria
+
+[Specify measurable indicators or scenarios that would trigger reconsideration of this decision.]
+
+## Supporting References
+
+- [Link to internal documentation, experimental benchmarks, cost models, or external standards.]
+```
+
+---
+
+## Validation Benchmarks
+
+- ✅ The decision title is precise and context-specific
+- ✅ The context section clearly articulates environmental constraints
+- ✅ Alternatives are systematically compared
+- ✅ Consequences address both immediate and long-term effects
+- ✅ Reconsideration criteria are quantifiable
+- ✅ All claims are supported by verifiable references
+
+---
+
+## Quality Assurance Principles
+
+- **Epistemic Rigor**: All assertions must be traceable to measurable outcomes, empirical evaluations, or first-principles reasoning.
+- **Linguistic Precision**: Avoid anecdotal or emotionally charged language. Focus exclusively on verifiable factors.
+- **Template Consistency**: All ADRs must conform to the standardized format and section ordering.
+- **Immutable Versioning**: Include identifiers, timestamps, and relationship markers to prior ADRs.
+- **Institutional Auditability**: ADRs must remain reviewable and authoritative within all governance and decision-making forums.

@@ -2,6 +2,74 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default: page.title }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/logo.png' | absolute_url }}"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "keywords": "{{ page.tags | join: ', ' }}, AI prompts, {{ page.category | replace: '-', ' ' }}",
+  "articleSection": "{{ page.category | replace: '-', ' ' | capitalize }}",
+  "inLanguage": "en-US"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default: page.title }}",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Copy the prompt",
+      "text": "Copy the provided AI prompt to your clipboard"
+    },
+    {
+      "@type": "HowToStep", 
+      "name": "Paste into AI tool",
+      "text": "Paste the prompt into your preferred AI assistant (ChatGPT, Claude, etc.)"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Customize variables",
+      "text": "Replace any placeholder variables with your specific requirements"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Execute and refine",
+      "text": "Run the prompt and iterate based on the AI's response"
+    }
+  ],
+  "totalTime": "PT5M",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "AI Assistant (ChatGPT, Claude, Gemini, etc.)"
+    }
+  ]
+}
+</script>
+
 <div class="prompt-page">
     <div class="container">
         <div class="prompt-header">
@@ -142,6 +210,9 @@ layout: default
                 {% endif %}
             </div>
         </div>
+        
+        <!-- Social Sharing Section -->
+        {% include social-sharing.html %}
         
         <!-- Enhanced Related Prompts Section -->
         {% include related-prompts.html %}

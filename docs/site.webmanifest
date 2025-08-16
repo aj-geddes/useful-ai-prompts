@@ -1,0 +1,69 @@
+{
+  "name": "Useful AI Prompts",
+  "short_name": "AI Prompts",
+  "description": "A comprehensive collection of practical, ready-to-use AI prompts for professionals across all industries and workflows.",
+  "start_url": "/useful-ai-prompts/",
+  "scope": "/useful-ai-prompts/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["productivity", "business", "education", "developer tools"],
+  "icons": [
+    {
+      "src": "/useful-ai-prompts/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/useful-ai-prompts/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/useful-ai-prompts/assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/useful-ai-prompts/assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Prompts",
+      "short_name": "Search",
+      "description": "Search through AI prompts",
+      "url": "/useful-ai-prompts/search/",
+      "icons": [
+        {
+          "src": "/useful-ai-prompts/assets/images/search-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Browse Categories",
+      "short_name": "Categories",
+      "description": "Browse prompt categories",
+      "url": "/useful-ai-prompts/categories/",
+      "icons": [
+        {
+          "src": "/useful-ai-prompts/assets/images/category-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}

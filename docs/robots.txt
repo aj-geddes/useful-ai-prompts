@@ -1,0 +1,79 @@
+User-agent: *
+Allow: /
+
+# Specific bot optimizations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# AI Training Bots - Allow but with delays
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 1
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 1
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Allow access to important files
+Allow: /sitemap*.xml
+Allow: /assets/
+Allow: /search/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.json
+
+# Disallow admin/development files
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /Gemfile*
+Disallow: /README*
+Disallow: /_site/
+Disallow: /*debug*
+Disallow: /*test*
+
+# Sitemaps
+Sitemap: https://aj-geddes.github.io/useful-ai-prompts/sitemap.xml
+Sitemap: https://aj-geddes.github.io/useful-ai-prompts/sitemap-index.xml
+
+# Host directive for better crawling
+Host: aj-geddes.github.io

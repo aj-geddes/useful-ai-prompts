@@ -1,0 +1,118 @@
+<!-- Open Graph Tags -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+<meta property="og:type" content="{% if page.layout == 'prompt' %}article{% else %}{{ site.og.type | default: 'website' }}{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.og.locale | default: 'en_US' }}">
+
+<!-- Dynamic Open Graph Images -->
+{% if page.layout == 'prompt' %}
+  <!-- Generate dynamic OG image URL for prompts -->
+  {% assign og_title = page.title | url_encode %}
+  {% assign og_category = page.category | capitalize | url_encode %}
+  {% assign og_tags = page.tags | join: ', ' | truncate: 50 | url_encode %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/api/og-image?title={{ og_title }}&category={{ og_category }}&tags={{ og_tags }}">
+  <meta property="og:image:alt" content="{{ page.title }} - AI Prompt from {{ page.category | capitalize }} Category">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <!-- Article specific tags -->
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:section" content="{{ page.category | capitalize }}">
+  {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og.image | default: '/assets/images/og-default.png' }}">
+  <meta property="og:image:alt" content="{{ site.title }} - {{ site.description }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+{% endif %}
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.social.twitter | default: '@aj_geddes' }}">
+<meta name="twitter:creator" content="{{ site.social.twitter | default: '@aj_geddes' }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 200 }}{% else %}{{ site.description | strip_html | truncate: 200 }}{% endif %}">
+
+{% if page.layout == 'prompt' %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/api/og-image?title={{ og_title }}&category={{ og_category }}&tags={{ og_tags }}">
+  <meta name="twitter:image:alt" content="{{ page.title }} - AI Prompt">
+  
+  <!-- Twitter App Card for mobile -->
+  <meta name="twitter:app:name:iphone" content="{{ site.title }}">
+  <meta name="twitter:app:name:ipad" content="{{ site.title }}">
+  <meta name="twitter:app:name:googleplay" content="{{ site.title }}">
+{% else %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.og.image | default: '/assets/images/og-default.png' }}">
+  <meta name="twitter:image:alt" content="{{ site.title }}">
+{% endif %}
+
+<!-- LinkedIn specific tags -->
+<meta property="linkedin:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="linkedin:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+<meta property="linkedin:image" content="{% if page.layout == 'prompt' %}{{ site.url }}{{ site.baseurl }}/api/og-image?title={{ og_title }}&category={{ og_category }}&tags={{ og_tags }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.og.image | default: '/assets/images/og-default.png' }}{% endif %}">
+
+<!-- Pinterest Rich Pins -->
+<meta property="pinterest:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+<meta property="pinterest:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+<meta property="pinterest:image" content="{% if page.layout == 'prompt' %}{{ site.url }}{{ site.baseurl }}/api/og-image?title={{ og_title }}&category={{ og_category }}&tags={{ og_tags }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.og.image | default: '/assets/images/og-default.png' }}{% endif %}">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.layout == 'prompt' %}Article{% else %}WebSite{% endif %}",
+  "name": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+  "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+  "description": "{% if page.description %}{{ page.description | strip_html | escape }}{% else %}{{ site.description | strip_html | escape }}{% endif %}",
+  "url": "{{ page.url | absolute_url }}",
+  "author": {
+    "@type": "Person",
+    "name": "AJ Geddes",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "https://github.com/{{ site.social.github }}",
+      "https://twitter.com/{{ site.social.twitter | remove: '@' }}",
+      "https://linkedin.com/in/{{ site.social.linkedin }}"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png"
+    }
+  },
+  "image": "{% if page.layout == 'prompt' %}{{ site.url }}{{ site.baseurl }}/api/og-image?title={{ og_title }}&category={{ og_category }}&tags={{ og_tags }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.og.image | default: '/assets/images/og-default.png' }}{% endif %}",
+  {% if page.layout == 'prompt' %}
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "articleSection": "{{ page.category | capitalize }}",
+  "keywords": "{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}, AI prompts, {{ page.category }}, artificial intelligence",
+  {% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Alternate Languages (if needed in future) -->
+<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+
+<!-- DNS Prefetch for Social Media Domains -->
+<link rel="dns-prefetch" href="//twitter.com">
+<link rel="dns-prefetch" href="//linkedin.com">
+<link rel="dns-prefetch" href="//facebook.com">
+<link rel="dns-prefetch" href="//reddit.com">
+<link rel="dns-prefetch" href="//discord.com">
+<link rel="dns-prefetch" href="//github.com">

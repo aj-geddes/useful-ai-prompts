@@ -1,0 +1,514 @@
+/**
+ * Social Sharing and Community Styles
+ * Comprehensive styling for social media integration
+ */
+
+/* Social Sharing Container */
+.social-sharing {
+  background: var(--card-background, #ffffff);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-sharing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .social-sharing {
+    --card-background: #1a1a1a;
+    --border-color: #333;
+    --text-color: #ffffff;
+    --text-secondary: #b0b0b0;
+  }
+}
+
+.dark .social-sharing {
+  --card-background: #1a1a1a;
+  --border-color: #333;
+  --text-color: #ffffff;
+  --text-secondary: #b0b0b0;
+}
+
+/* Sharing Header */
+.sharing-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sharing-header h3 {
+  margin: 0 0 8px 0;
+  color: var(--text-color, #333);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.sharing-header h3 i {
+  margin-right: 8px;
+  color: #667eea;
+}
+
+.sharing-header p {
+  margin: 0;
+  color: var(--text-secondary, #666);
+  font-size: 0.95rem;
+}
+
+/* Sharing Buttons Grid */
+.sharing-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* Individual Share Button */
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.share-btn i {
+  font-size: 1.1rem;
+}
+
+/* Platform-specific colors */
+.share-btn.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.share-btn.twitter:hover {
+  background: #1a91da;
+  color: white;
+}
+
+.share-btn.linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+.share-btn.linkedin:hover {
+  background: #006ba1;
+  color: white;
+}
+
+.share-btn.reddit {
+  background: #ff4500;
+  color: white;
+}
+
+.share-btn.reddit:hover {
+  background: #e03d00;
+  color: white;
+}
+
+.share-btn.discord {
+  background: #5865f2;
+  color: white;
+}
+
+.share-btn.discord:hover {
+  background: #4752c4;
+  color: white;
+}
+
+.share-btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.share-btn.whatsapp:hover {
+  background: #20b85a;
+  color: white;
+}
+
+.share-btn.telegram {
+  background: #0088cc;
+  color: white;
+}
+
+.share-btn.telegram:hover {
+  background: #0077b5;
+  color: white;
+}
+
+.share-btn.copy-link {
+  background: #667eea;
+  color: white;
+}
+
+.share-btn.copy-link:hover {
+  background: #5a6fd8;
+  color: white;
+}
+
+.share-btn.email {
+  background: #34495e;
+  color: white;
+}
+
+.share-btn.email:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+.share-btn.native-share {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.share-btn.native-share:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* Mobile-only buttons */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: flex !important;
+  }
+  
+  .sharing-buttons {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+  
+  .share-btn {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Share Statistics */
+.share-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-color, #e0e0e0);
+  margin-top: 16px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #666);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Copy Notification */
+.copy-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-weight: 500;
+}
+
+.copy-notification.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.copy-notification i {
+  margin-right: 8px;
+}
+
+/* Social Proof Section */
+.social-proof {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.dark .social-proof {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.proof-header h3 {
+  margin: 0 0 20px 0;
+  color: var(--text-color, #333);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.proof-header h3 i {
+  margin-right: 8px;
+  color: #667eea;
+}
+
+/* Proof Statistics */
+.proof-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.proof-item {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dark .proof-item {
+  background: #333;
+}
+
+.proof-item:hover {
+  transform: translateY(-2px);
+}
+
+.proof-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.proof-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.proof-link i {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.proof-content {
+  text-align: left;
+}
+
+.proof-number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color, #333);
+  line-height: 1;
+}
+
+.proof-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #666);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Community Links */
+.community-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.community-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.community-btn:hover {
+  background: #5a6fd8;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.community-btn i {
+  font-size: 1rem;
+}
+
+/* Social Embed Section */
+.social-embed {
+  background: white;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.dark .social-embed {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.embed-header h3 {
+  margin: 0 0 16px 0;
+  color: var(--text-color, #333);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.embed-header h3 i {
+  margin-right: 8px;
+  color: #1da1f2;
+}
+
+.tweet-embed {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .social-sharing,
+  .social-proof,
+  .social-embed {
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  .sharing-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .proof-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .proof-item {
+    min-width: auto;
+  }
+  
+  .community-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .community-btn {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+}
+
+/* Loading Animation for Dynamic Content */
+.loading-stats {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Accessibility Improvements */
+.share-btn:focus,
+.community-btn:focus,
+.proof-link:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .share-btn,
+  .community-btn {
+    border: 2px solid currentColor;
+  }
+  
+  .social-sharing,
+  .social-proof,
+  .social-embed {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .share-btn,
+  .community-btn,
+  .proof-item,
+  .copy-notification {
+    transition: none;
+  }
+  
+  .share-btn:hover,
+  .community-btn:hover,
+  .proof-item:hover {
+    transform: none;
+  }
+}

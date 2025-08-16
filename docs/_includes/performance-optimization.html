@@ -1,0 +1,179 @@
+<!-- Performance Optimization Scripts and Styles -->
+
+<!-- Critical CSS Inline -->
+<style>
+/* Critical above-the-fold styles */
+.main-content { min-height: 60vh; contain: layout style; }
+.prompt-header { margin-bottom: 2rem; }
+.prompt-title { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+.breadcrumb { margin-bottom: 1rem; font-size: 0.875rem; }
+.breadcrumb a { color: #2563eb; text-decoration: none; }
+.breadcrumb span { margin: 0 0.5rem; color: #6b7280; }
+.prompt-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+.meta-item { display: flex; align-items: center; gap: 0.5rem; }
+.category-link { color: #2563eb; text-decoration: none; font-weight: 500; }
+.tag { background: #e5e7eb; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; }
+
+/* Layout stability - prevent CLS */
+.header { height: 60px; }
+.footer { min-height: 120px; }
+.search-container { min-height: 48px; }
+.category-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+/* Performance optimizations */
+.lazy { opacity: 0; transition: opacity 0.3s; }
+.lazy.loaded { opacity: 1; }
+img { content-visibility: auto; }
+.prompt-list { contain: layout; }
+</style>
+
+<!-- Resource Hints for Performance -->
+<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+<link rel="preload" href="{{ '/assets/js/main.js' | relative_url }}" as="script">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+
+{% if page.layout == 'prompt' %}
+<!-- Preload prompt-specific resources -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js" as="script">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" as="style">
+<link rel="prefetch" href="{{ '/assets/js/social-sharing.js' | relative_url }}">
+{% endif %}
+
+{% if page.layout == 'category' %}
+<!-- Preload category-specific resources -->
+<link rel="preload" href="{{ '/assets/data/search-index.json' | relative_url }}" as="fetch" crossorigin="anonymous">
+{% endif %}
+
+<!-- Optimize web fonts with modern loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'; this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+<!-- Preload critical images -->
+{% if page.layout == 'default' or page.url == '/' %}
+<link rel="preload" as="image" href="{{ '/assets/images/hero-bg.webp' | relative_url }}">
+{% endif %}
+
+<!-- Service Worker Registration for Caching -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+      .then(function(registration) {
+        console.log('ServiceWorker registration successful');
+      })
+      .catch(function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  });
+}
+</script>
+
+<!-- Intersection Observer for Lazy Loading -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Lazy load images
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+          imageObserver.unobserve(img);
+        }
+      });
+    });
+
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      imageObserver.observe(img);
+    });
+  }
+
+  // Lazy load non-critical CSS
+  const nonCriticalCSS = [
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
+  ];
+
+  nonCriticalCSS.forEach(href => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    link.media = 'print';
+    link.onload = function() { this.media = 'all'; };
+    document.head.appendChild(link);
+  });
+});
+</script>
+
+<!-- Performance Monitoring -->
+<script>
+// Enhanced Core Web Vitals monitoring
+function sendWebVitals() {
+  // Web Vitals library for accurate measurements
+  import('https://unpkg.com/web-vitals@3/dist/web-vitals.js').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
+    function sendToGoogleAnalytics(metric) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', metric.name, {
+          event_category: 'Web Vitals',
+          value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+          metric_id: metric.id,
+          metric_value: metric.value,
+          metric_delta: metric.delta,
+          non_interaction: true,
+        });
+      }
+      
+      // Log to console for debugging
+      console.log(metric.name, metric.value, metric.rating);
+    }
+
+    onCLS(sendToGoogleAnalytics);
+    onFID(sendToGoogleAnalytics);
+    onFCP(sendToGoogleAnalytics);
+    onLCP(sendToGoogleAnalytics);
+    onTTFB(sendToGoogleAnalytics);
+  });
+}
+
+// Performance monitoring and optimization
+function initPerformanceMonitoring() {
+  // Monitor resource loading
+  new PerformanceObserver((list) => {
+    for (const entry of list.getEntries()) {
+      if (entry.transferSize > 100000) { // Log large resources
+        console.warn('Large resource:', entry.name, `${Math.round(entry.transferSize / 1024)}KB`);
+      }
+    }
+  }).observe({entryTypes: ['resource']});
+
+  // Monitor long tasks
+  new PerformanceObserver((list) => {
+    for (const entry of list.getEntries()) {
+      if (entry.duration > 50) {
+        console.warn('Long task detected:', entry.duration + 'ms');
+      }
+    }
+  }).observe({entryTypes: ['longtask']});
+}
+
+// Load monitoring after page load
+window.addEventListener('load', () => {
+  sendWebVitals();
+  initPerformanceMonitoring();
+});
+</script>
+
+<!-- Resource Priority Optimization -->
+{% comment %}
+Resources are loaded in this priority order:
+1. Critical CSS (inline above)
+2. Main stylesheets (preloaded)
+3. Critical JavaScript (preloaded)
+4. Web fonts (preloaded with display=swap)
+5. Non-critical resources (lazy loaded)
+{% endcomment %}

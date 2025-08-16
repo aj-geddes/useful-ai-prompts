@@ -45,3 +45,12 @@ worklog.md
 worklog.md.tmp
 .session/
 .cache/
+
+# Testing artifacts
+.playwright-mcp/
+screenshots/
+test-results/
+
+# Development tool outputs
+audit_report.json
+*.audit.json

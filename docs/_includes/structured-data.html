@@ -1,0 +1,325 @@
+<!-- Enhanced Schema Markup for Useful AI Prompts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Useful AI Prompts",
+  "description": "Professional AI prompts for every workflow. 278+ expert prompts across 18 specialized categories.",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ site.url }}{{ site.baseurl }}/search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts",
+    "url": "{{ site.url }}{{ site.baseurl }}/"
+  },
+  "mainEntity": {
+    "@type": "CreativeWork",
+    "name": "AI Prompt Library",
+    "description": "Comprehensive collection of professional AI prompts for business workflows",
+    "genre": ["Artificial Intelligence", "Productivity", "Business Tools"],
+    "keywords": "AI prompts, ChatGPT prompts, AI tools, business prompts, professional prompts, prompt engineering, dual-persona prompts, workflow optimization",
+    "educationalLevel": "Professional",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Business Professionals"
+    },
+    "creator": {
+      "@type": "Organization", 
+      "name": "Useful AI Prompts"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ site.url }}{{ site.baseurl }}/"
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": "Categories",
+        "item": "{{ site.url }}{{ site.baseurl }}/categories/"
+      }
+    ]
+  }
+}
+</script>
+
+<!-- Additional Schema for Collection -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Collection",
+  "name": "Professional AI Prompt Collection",
+  "description": "Curated collection of 278+ professional AI prompts organized by business workflow and industry sector",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "numberOfItems": "{{ site.prompts.size }}",
+  "collectionSize": "{{ site.prompts.size }}",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Artificial Intelligence"
+    },
+    {
+      "@type": "Thing", 
+      "name": "Business Productivity"
+    },
+    {
+      "@type": "Thing",
+      "name": "Professional Development"
+    },
+    {
+      "@type": "Thing",
+      "name": "Workflow Optimization"
+    }
+  ],
+  "genre": ["Business Tools", "Productivity", "AI Tools"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": ["Business Professionals", "Consultants", "Managers", "Analysts", "Developers"]
+  },
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
+
+<!-- FAQ Schema for Common Questions -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes these AI prompts different from other collections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our prompts use a dual-persona architecture, combining multiple expert perspectives in each prompt for more comprehensive outputs. They're designed specifically for professional workflows rather than creative writing."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "How many AI prompts are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The library contains 278+ professional AI prompts organized across 18 specialized categories including Management & Leadership, Technical Workflows, Analysis, Planning, and emerging sectors like Blockchain and Quantum Computing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the prompts free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer", 
+        "text": "Yes, all prompts are completely free to use. No signup or email required. The library is designed to be accessible to all professionals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is dual-persona architecture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dual-persona architecture combines two complementary expert perspectives in each prompt (e.g., Strategic Consultant + Data Analyst) to provide more comprehensive and nuanced AI outputs than single-perspective prompts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I search and filter the prompts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the library features instant search across all prompts with filtering by category, tags, and keywords. You can also copy prompts to your clipboard with one click."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Useful AI Prompts",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
+  "description": "Professional AI prompt library with searchable collection of business-focused prompts",
+  "foundingDate": "2024",
+  "nonprofitStatus": "Informal",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Prompt Engineering", 
+    "Business Productivity",
+    "Professional Development",
+    "Workflow Optimization",
+    "ChatGPT Prompts",
+    "AI Tools"
+  ],
+  "areaServed": "Worldwide",
+  "serviceType": "Educational Resource"
+}
+</script>
+
+{% if page.layout == 'prompt' %}
+<!-- Individual Prompt Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 300 }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}{{ site.baseurl }}/assets/images/prompt-preview.png",
+    "width": 1200,
+    "height": 630
+  },
+  "articleSection": "{{ page.category | capitalize }}",
+  "keywords": "{% if page.tags %}{% for tag in page.tags %}{{ tag }}, {% endfor %}{% endif %}{{ page.category }}, AI prompt, professional prompts",
+  {% if page.tags %}
+  "about": [
+    {% for tag in page.tags %}
+    {
+      "@type": "Thing",
+      "name": "{{ tag | capitalize }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "genre": "Business Tools",
+  "educationalLevel": "Professional",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Business Professionals"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "mainEntity": {
+    "@type": "CreativeWork",
+    "name": "{{ page.title }}",
+    "description": "{{ page.description | default: page.excerpt | strip_html }}",
+    "genre": "AI Prompt",
+    "educationalUse": "Professional Development",
+    "typicalAgeRange": "18-65"
+  }
+}
+</script>
+
+<!-- Breadcrumb Schema for Prompts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Categories",
+      "item": "{{ site.url }}{{ site.baseurl }}/categories/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.category | capitalize }}",
+      "item": "{{ site.url }}{{ site.baseurl }}/categories/{{ page.category }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
+
+<!-- HowTo Schema for AI Prompts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Use: {{ page.title }}",
+  "description": "Step-by-step guide to implementing this professional AI prompt for {{ page.category }} workflows",
+  "totalTime": "PT5M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "USD",
+    "value": "0"
+  },
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "AI Assistant (ChatGPT, Claude, or similar)"
+    },
+    {
+      "@type": "HowToSupply", 
+      "name": "The prompt text from this page"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Copy the Prompt",
+      "text": "Copy the complete prompt text using the copy button",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step1-copy.png"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Paste into AI Assistant",
+      "text": "Paste the prompt into your preferred AI assistant (ChatGPT, Claude, etc.)",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step2-paste.png"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Customize with Your Details",
+      "text": "Replace any placeholders with your specific requirements and context",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step3-customize.png"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Execute and Review",
+      "text": "Run the prompt and review the comprehensive output from the dual-persona framework",
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step4-execute.png"
+    }
+  ],
+  "result": {
+    "@type": "CreativeWork",
+    "name": "Professional {{ page.category }} Analysis",
+    "description": "Comprehensive output combining multiple expert perspectives"
+  }
+}
+</script>
+{% endif %}

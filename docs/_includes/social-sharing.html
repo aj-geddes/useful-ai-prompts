@@ -1,0 +1,175 @@
+<!-- Social Sharing Component -->
+<div class="social-sharing" id="socialSharing">
+  <div class="sharing-header">
+    <h3><i class="fas fa-share-alt"></i> Share This Prompt</h3>
+    <p>Help others discover this useful AI prompt!</p>
+  </div>
+  
+  <div class="sharing-buttons">
+    <!-- Native Web Share API Button -->
+    <button class="share-btn native-share" id="nativeShare" style="display: none;">
+      <i class="fas fa-share"></i>
+      <span>Share</span>
+    </button>
+    
+    <!-- Twitter/X Share -->
+    <a href="#" class="share-btn twitter" id="twitterShare" target="_blank" rel="noopener">
+      <i class="fab fa-twitter"></i>
+      <span>Tweet</span>
+    </a>
+    
+    <!-- LinkedIn Share -->
+    <a href="#" class="share-btn linkedin" id="linkedinShare" target="_blank" rel="noopener">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+    
+    <!-- Reddit Share -->
+    <a href="#" class="share-btn reddit" id="redditShare" target="_blank" rel="noopener">
+      <i class="fab fa-reddit"></i>
+      <span>Reddit</span>
+    </a>
+    
+    <!-- Discord Share -->
+    <a href="#" class="share-btn discord" id="discordShare" target="_blank" rel="noopener">
+      <i class="fab fa-discord"></i>
+      <span>Discord</span>
+    </a>
+    
+    <!-- WhatsApp Share (Mobile) -->
+    <a href="#" class="share-btn whatsapp mobile-only" id="whatsappShare" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    
+    <!-- Telegram Share -->
+    <a href="#" class="share-btn telegram" id="telegramShare" target="_blank" rel="noopener">
+      <i class="fab fa-telegram"></i>
+      <span>Telegram</span>
+    </a>
+    
+    <!-- Copy Link Button -->
+    <button class="share-btn copy-link" id="copyLink">
+      <i class="fas fa-link"></i>
+      <span>Copy Link</span>
+    </button>
+    
+    <!-- Email Share -->
+    <a href="#" class="share-btn email" id="emailShare">
+      <i class="fas fa-envelope"></i>
+      <span>Email</span>
+    </a>
+  </div>
+  
+  <!-- Share Analytics Display -->
+  <div class="share-stats" id="shareStats">
+    <div class="stat-item">
+      <span class="stat-number" id="shareCount">{{ page.share_count | default: 0 }}</span>
+      <span class="stat-label">Shares</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" id="viewCount">{{ page.view_count | default: 0 }}</span>
+      <span class="stat-label">Views</span>
+    </div>
+  </div>
+  
+  <!-- Copy Success Notification -->
+  <div class="copy-notification" id="copyNotification">
+    <i class="fas fa-check"></i>
+    Link copied to clipboard!
+  </div>
+</div>
+
+<!-- Social Proof Section -->
+<div class="social-proof" id="socialProof">
+  <div class="proof-header">
+    <h3><i class="fas fa-users"></i> Community</h3>
+  </div>
+  
+  <div class="proof-stats">
+    <div class="proof-item">
+      <a href="{{ site.github_url }}" target="_blank" rel="noopener" class="proof-link">
+        <i class="fab fa-github"></i>
+        <div class="proof-content">
+          <span class="proof-number" id="githubStars">{{ site.stats.github_stars }}</span>
+          <span class="proof-label">GitHub Stars</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="proof-item">
+      <a href="{{ site.community.github_discussions }}" target="_blank" rel="noopener" class="proof-link">
+        <i class="fas fa-comments"></i>
+        <div class="proof-content">
+          <span class="proof-number">{{ site.stats.total_prompts }}</span>
+          <span class="proof-label">Total Prompts</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="proof-item">
+      <a href="{{ site.community.discord_invite }}" target="_blank" rel="noopener" class="proof-link">
+        <i class="fab fa-discord"></i>
+        <div class="proof-content">
+          <span class="proof-number" id="discordMembers">1.2K</span>
+          <span class="proof-label">Discord Members</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Community Links -->
+  <div class="community-links">
+    <a href="{{ site.community.github_discussions }}" target="_blank" rel="noopener" class="community-btn">
+      <i class="fab fa-github"></i>
+      Join Discussions
+    </a>
+    <a href="{{ site.community.discord_invite }}" target="_blank" rel="noopener" class="community-btn">
+      <i class="fab fa-discord"></i>
+      Discord Community
+    </a>
+    <a href="{{ site.community.reddit_community }}" target="_blank" rel="noopener" class="community-btn">
+      <i class="fab fa-reddit"></i>
+      Reddit Community
+    </a>
+  </div>
+</div>
+
+<!-- Embedded Tweet/Social Media Widget -->
+{% if page.featured_tweet %}
+<div class="social-embed">
+  <div class="embed-header">
+    <h3><i class="fab fa-twitter"></i> Featured in Community</h3>
+  </div>
+  <div class="tweet-embed" id="tweetEmbed">
+    {{ page.featured_tweet }}
+  </div>
+</div>
+{% endif %}
+
+<!-- Social Sharing JavaScript -->
+<script>
+// Social sharing functionality will be loaded from social-sharing.js
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof initSocialSharing === 'function') {
+    initSocialSharing({
+      url: window.location.href,
+      title: "{{ page.title | escape }}",
+      description: "{{ page.description | default: site.description | strip_html | escape }}",
+      hashtags: "{{ site.community.twitter_hashtag | remove: '#' }},AIPrompts,{{ page.category | default: 'productivity' }}",
+      via: "{{ site.social.twitter | remove: '@' }}"
+    });
+  }
+});
+</script>
+
+<!-- UTM Tracking for Social Shares -->
+<script>
+// UTM parameter injection for social sharing analytics
+window.socialUTMConfig = {
+  source_param: "{{ site.utm.source_param }}",
+  medium_param: "{{ site.utm.medium_param }}",
+  campaign_param: "{{ site.utm.campaign_param }}",
+  default_campaign: "{{ site.utm.default_campaign }}"
+};
+</script>

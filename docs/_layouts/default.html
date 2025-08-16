@@ -8,14 +8,42 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/core-web-vitals.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/social-sharing.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/viral-features.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
     
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    
+    <!-- Mobile App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/icon-192.png' | relative_url }}">
+    
+    <!-- Microsoft Meta Tags -->
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="msapplication-config" content="{{ '/browserconfig.xml' | relative_url }}">
+    
     <!-- SEO -->
     {% seo %}
+    
+    <!-- Enhanced Meta Tags -->
+    {% include meta-tags.html %}
+    
+    <!-- Structured Data -->
+    {% include structured-data.html %}
+    
+    <!-- Performance Optimization -->
+    {% include performance-optimization.html %}
+    
+    <!-- Mobile SEO Optimization -->
+    {% include mobile-seo.html %}
     
     <!-- Theme Detection -->
     <script>
@@ -27,7 +55,7 @@
 <body>
     {% include header.html %}
     
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         {{ content }}
     </main>
     
@@ -39,12 +67,22 @@
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     
     {% if site.search %}
-        <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
         <script src="{{ '/assets/js/enhanced-search.js' | relative_url }}"></script>
     {% endif %}
     
-    {% if site.google_analytics %}
-        {% include google-analytics.html %}
-    {% endif %}
+    <!-- Progressive Enhancement -->
+    <script src="{{ '/assets/js/progressive-enhancement.js' | relative_url }}"></script>
+    
+    <!-- Social Sharing JavaScript -->
+    <script src="{{ '/assets/js/social-sharing.js' | relative_url }}"></script>
+    
+    <!-- Viral Features JavaScript -->
+    <script src="{{ '/assets/js/viral-features.js' | relative_url }}"></script>
+    
+    <!-- Keyboard Shortcuts and PWA Features -->
+    <script src="{{ '/assets/js/keyboard-shortcuts.js' | relative_url }}"></script>
+    
+    <!-- Analytics Integration -->
+    {% include analytics.html %}
 </body>
 </html>

@@ -1,45 +1,100 @@
 ---
-category: research-workflows
-date: '2025-08-14'
-description: 'I help you learn new technologies and tools from scratch. Perfect for beginners who want fun, engaging, and practical learning paths with hands-on projects and clear explanations.'
-layout: prompt
-prompt: "I'll help you learn any new technology or tool from scratch! Let me understand your learning goals:
-
-**What you want to learn:**
-1. What technology, tool, or skill do you want to learn?
-2. What sparked your interest in this topic?
-3. What do you hope to accomplish by learning it?
-4. What's your current experience level? (complete beginner, some exposure, familiar with similar tools)
-
-**Your learning style:**
-5. How do you learn best? (hands-on projects, step-by-step tutorials, videos, reading, interactive exercises)
-6. How much time can you dedicate? (daily sessions, weekend projects, intensive week)
-7. Do you prefer structured lessons or exploratory learning?
-8. What's worked well for you when learning new things before?
-
-**Practical needs:**
-9. Do you need this skill for work, personal projects, or general knowledge?
-10. Are there specific tools or platforms you need to work with?
-11. Do you have any constraints? (budget, equipment, time, accessibility needs)
-12. What would make this learning journey fun and engaging for you?
-
-Based on your answers, I'll create:
-
-**PERSONALIZED LEARNING PATH** - Custom roadmap designed for your experience level and goals
-**FUN PROJECT IDEAS** - Hands-on exercises to build real skills while having fun
-**RESOURCE COLLECTION** - Best tutorials, videos, tools, and practice sites for your learning style
-**PROGRESS MILESTONES** - Clear checkpoints to track your advancement and celebrate wins
-**COMMON PITFALLS GUIDE** - What to watch out for and how to overcome typical challenges
-**COMMUNITY CONNECTIONS** - Where to find help, mentors, and fellow learners
-
-Let's make learning this new skill an exciting and rewarding adventure!"
-slug: teach-me-beginner
+category: research
+compatible_models:
+- claude-3.5-sonnet
+- gpt-4
+- gemini-pro
+date: '2025-08-16'
+description: Professional prompt for research optimization and expert consultation
+slug: lets-learn-about-a-new-tool-together
 tags:
-- learning
-- beginner-friendly
-- skill development
-- technology education
-- personalized learning
+- research
 title: Let's Learn About a New Tool Together!
-version: 1.0.0
+use_cases:
+- research optimization
+- professional workflow enhancement
+version: 3.0.0
 ---
+
+# Let's Learn About a New Tool Together!
+
+## What Do You Want to Learn?
+
+To help you learn something new, tell me a few things first:
+
+- **Tool Name**: What is the name of the thing you want to learn?
+- **What It Does**: What kind of jobs or tasks is it used for?
+- **How Much You Know**: Are you just starting, know a little, or know a lot?
+- **What You Want to Do**: Do you want to build something with it, just try it out, or understand how it works?
+- **How Much Time You Have**: Do you want to learn fast, or take your time?
+- **What It Works With**: Does this tool need to work with anything else, like other programs or websites?
+- **Anything Special?**: Do you need it to be free? Do you want to use it without a screen? Do you like reading books or watching videos?
+
+---
+
+## How We Learn
+
+- **Be Honest and Clear**: Everything we say should be true and easy to check.
+- **Start Simple**: We’ll begin with the basics and go step by step.
+- **Make It Fit You**: We’ll make sure the learning fits what you want to do.
+- **Use the Right Info**: We’ll learn from the real, official sources.
+- **Show the Tools**: We’ll show you what buttons, code, or tools you can use.
+
+---
+
+## Tell Me Like This
+
+```text
+Can you help me learn something new?
+
+- I want to learn: [WHAT]
+- It helps with: [WHAT JOBS]
+- I know: [NOTHING | A LITTLE | A LOT]
+- My goal is: [TRY IT OUT | BUILD SOMETHING | UNDERSTAND IT]
+- I have this much time: [A FEW DAYS | A FEW WEEKS]
+- It needs to work with: [OTHER TOOLS OR PROGRAMS]
+- Special things: [FREE | NO SCREENS | FUN GAMES | BOOKS ONLY]
+
+Please:
+1. Tell me what it is in a fun, short way.
+2. Show me what it can do.
+3. Explain the big pieces that make it work.
+4. Give me a fun plan I can follow.
+5. Share websites, videos, or games I can look at.
+6. Tell me what to be careful about.
+7. Help me check that I’m learning the right stuff.
+
+Rules:
+- Use clear words.
+- Always tell the truth.
+- Show your sources.
+- Make it easy for me to understand.
+```
+
+---
+
+## What You’ll Get
+
+- `learning-plan.md`: A list of steps to learn the tool
+- `reference-index.md`: A list of helpful websites, videos, or games
+- `integration-checklist.md`: A list to see if the tool works with others you use
+
+---
+
+## How to Know You’re Doing Great
+
+- ✅ You understand what the tool is and why it’s cool
+- ✅ You have a plan that fits your level and your goal
+- ✅ You’re using helpful and safe websites
+- ✅ You can explain or show what you learned
+- ✅ You made something or tried something that works
+
+---
+
+## Make Sure It’s Good
+
+- **Be Fair**: No picking favorites or guessing
+- **Get Harder Slowly**: Start easy, then go deeper
+- **Think About Others**: Make sure it works with the tools you already use
+- **Show Where You Got It**: Always tell us where the info came from
+- **Can Help Others Too**: What you learn can help others decide if they want to use it too

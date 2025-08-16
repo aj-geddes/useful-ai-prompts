@@ -14,6 +14,14 @@
     };
     let dropdownSelectedIndex = -1;
     let isDropdownOpen = false;
+    
+    // Performance optimization variables
+    let searchDebounceTimer = null;
+    let lastSearchResults = [];
+    let isVirtualScrollEnabled = false;
+    let virtualScrollContainer = null;
+    let ITEMS_PER_PAGE = 20;
+    let currentPage = 1;
 
     // Initialize enhanced search functionality
     function initializeEnhancedSearch() {
@@ -53,22 +61,26 @@
     function setupSearchHandlers() {
         let searchTimeout;
         
-        // Input handler with debounce
+        // Enhanced input handler with improved debouncing
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
             const query = e.target.value.trim();
             
+            // Immediate feedback for clearing
+            if (query.length === 0) {
+                hideSearchDropdown();
+                clearSearchResults();
+                return;
+            }
+            
             searchTimeout = setTimeout(() => {
                 if (query.length >= 2) {
                     showSmartSuggestions(query);
-                    performSearch(query);
-                } else if (query.length === 0) {
-                    hideSearchDropdown();
-                    clearSearchResults();
+                    performSearchOptimized(query);
                 } else {
                     hideSearchDropdown();
                 }
-            }, 200);
+            }, 150); // Reduced debounce time for better responsiveness
         });
 
         // Focus handler - show suggestions if query exists
@@ -479,8 +491,8 @@
         }).filter(item => item.title);
     }
 
-    // Perform search with filters
-    function performSearch(query) {
+    // Optimized search performance for large datasets
+    function performSearchOptimized(query) {
         if (!searchResults) return;
         
         const trimmedQuery = query.trim().toLowerCase();
@@ -490,20 +502,63 @@
             return;
         }
         
-        const results = searchPrompts(trimmedQuery);
-        displaySearchResults(results, trimmedQuery);
+        // Use requestAnimationFrame for smooth UI updates
+        requestAnimationFrame(() => {
+            const results = searchPromptsOptimized(trimmedQuery);
+            lastSearchResults = results;
+            currentPage = 1;
+            displaySearchResultsOptimized(results, trimmedQuery);
+        });
+    }
+    
+    // Legacy function for compatibility
+    function performSearch(query) {
+        performSearchOptimized(query);
     }
 
-    // Search prompts with enhanced scoring
-    function searchPrompts(query) {
+    // Optimized search with better performance for large datasets
+    function searchPromptsOptimized(query) {
         const queryWords = query.split(/\s+/).filter(word => word.length > 0);
+        const startTime = performance.now();
         
-        return searchIndex
-            .filter(item => applyFilters(item))
-            .map(item => calculateSearchScore(item, query, queryWords))
-            .filter(item => item.score > 0)
+        // Pre-filter to reduce processing load
+        const filteredIndex = searchIndex.filter(item => {
+            if (!applyFilters(item)) return false;
+            
+            // Quick initial filter to reduce dataset
+            const searchText = item.searchText || 
+                `${item.title} ${item.description} ${item.category} ${item.tags.join(' ')}`.toLowerCase();
+            return queryWords.some(word => searchText.includes(word));
+        });
+        
+        // Batch process for better performance
+        const batchSize = 50;
+        const results = [];
+        
+        for (let i = 0; i < filteredIndex.length; i += batchSize) {
+            const batch = filteredIndex.slice(i, i + batchSize)
+                .map(item => calculateSearchScore(item, query, queryWords))
+                .filter(item => item.score > 0);
+            
+            results.push(...batch);
+            
+            // Break if we have enough high-quality results
+            if (results.length > 100) break;
+        }
+        
+        const sortedResults = results
             .sort((a, b) => b.score - a.score)
-            .slice(0, 20);
+            .slice(0, 50); // Limit results for performance
+        
+        const endTime = performance.now();
+        console.log(`Search completed in ${endTime - startTime}ms for ${sortedResults.length} results`);
+        
+        return sortedResults;
+    }
+    
+    // Legacy function for compatibility
+    function searchPrompts(query) {
+        return searchPromptsOptimized(query);
     }
 
     // Apply current filters
@@ -577,8 +632,8 @@
         return { ...item, score };
     }
 
-    // Display search results
-    function displaySearchResults(results, query) {
+    // Optimized display with virtual scrolling for large result sets
+    function displaySearchResultsOptimized(results, query) {
         if (!searchResults) return;
         
         if (results.length === 0) {
@@ -586,21 +641,113 @@
             return;
         }
         
-        const resultsHTML = `
-            <div class="search-summary">
-                <p>Found <strong>${results.length}</strong> result${results.length === 1 ? '' : 's'} for "<strong>${escapeHtml(query)}</strong>"</p>
-            </div>
-            <div class="search-results-list">
-                ${results.map(result => createSearchResultHTML(result, query)).join('')}
-            </div>
+        // Use document fragment for better performance
+        const fragment = document.createDocumentFragment();
+        
+        // Create search summary
+        const summaryDiv = document.createElement('div');
+        summaryDiv.className = 'search-summary';
+        summaryDiv.innerHTML = `
+            <p>Found <strong>${results.length}</strong> result${results.length === 1 ? '' : 's'} for "<strong>${escapeHtml(query)}</strong>"</p>
+            ${results.length > ITEMS_PER_PAGE ? `<p class="pagination-info">Showing ${ITEMS_PER_PAGE} results per page</p>` : ''}
         `;
+        fragment.appendChild(summaryDiv);
         
-        searchResults.innerHTML = resultsHTML;
+        // Create results container
+        const resultsContainer = document.createElement('div');
+        resultsContainer.className = 'search-results-list';
         
-        // Add related prompts section
-        if (results.length > 0) {
-            addRelatedPromptsSection(results[0], query);
+        // Implement pagination for large result sets
+        const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+        const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, results.length);
+        const pageResults = results.slice(startIndex, endIndex);
+        
+        // Use batch rendering for better performance
+        requestAnimationFrame(() => {
+            pageResults.forEach((result, index) => {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'search-result';
+                resultDiv.innerHTML = createSearchResultHTML(result, query);
+                
+                // Stagger animations for better visual feedback
+                resultDiv.style.opacity = '0';
+                resultDiv.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    resultDiv.style.transition = 'all 0.3s ease';
+                    resultDiv.style.opacity = '1';
+                    resultDiv.style.transform = 'translateY(0)';
+                }, index * 50);
+                
+                resultsContainer.appendChild(resultDiv);
+            });
+        });
+        
+        fragment.appendChild(resultsContainer);
+        
+        // Add pagination if needed
+        if (results.length > ITEMS_PER_PAGE) {
+            const paginationDiv = createPaginationHTML(results.length, query);
+            fragment.appendChild(paginationDiv);
         }
+        
+        // Clear and append all at once for better performance
+        searchResults.innerHTML = '';
+        searchResults.appendChild(fragment);
+        
+        // Add related prompts section (only for first page)
+        if (currentPage === 1 && results.length > 0) {
+            requestAnimationFrame(() => {
+                addRelatedPromptsSection(results[0], query);
+            });
+        }
+    }
+    
+    // Legacy function for compatibility
+    function displaySearchResults(results, query) {
+        displaySearchResultsOptimized(results, query);
+    }
+    
+    // Create pagination HTML
+    function createPaginationHTML(totalResults, query) {
+        const totalPages = Math.ceil(totalResults / ITEMS_PER_PAGE);
+        const paginationDiv = document.createElement('div');
+        paginationDiv.className = 'search-pagination';
+        
+        let paginationHTML = '<div class="pagination-controls">';
+        
+        // Previous button
+        if (currentPage > 1) {
+            paginationHTML += `<button class="pagination-btn" onclick="navigateToPage(${currentPage - 1}, '${escapeHtml(query)}')">← Previous</button>`;
+        }
+        
+        // Page numbers (show 5 around current page)
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
+        
+        if (startPage > 1) {
+            paginationHTML += `<button class="pagination-btn" onclick="navigateToPage(1, '${escapeHtml(query)}')">1</button>`;
+            if (startPage > 2) paginationHTML += '<span class="pagination-ellipsis">...</span>';
+        }
+        
+        for (let i = startPage; i <= endPage; i++) {
+            paginationHTML += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" onclick="navigateToPage(${i}, '${escapeHtml(query)}')">${i}</button>`;
+        }
+        
+        if (endPage < totalPages) {
+            if (endPage < totalPages - 1) paginationHTML += '<span class="pagination-ellipsis">...</span>';
+            paginationHTML += `<button class="pagination-btn" onclick="navigateToPage(${totalPages}, '${escapeHtml(query)}')">{{ totalPages }}</button>`;
+        }
+        
+        // Next button
+        if (currentPage < totalPages) {
+            paginationHTML += `<button class="pagination-btn" onclick="navigateToPage(${currentPage + 1}, '${escapeHtml(query)}')">Next →</button>`;
+        }
+        
+        paginationHTML += '</div>';
+        paginationDiv.innerHTML = paginationHTML;
+        
+        return paginationDiv;
     }
 
     // Create no results HTML
@@ -808,12 +955,23 @@
         });
     }
 
+    // Pagination navigation
+    window.navigateToPage = function(page, query) {
+        currentPage = page;
+        displaySearchResultsOptimized(lastSearchResults, query);
+        
+        // Smooth scroll to top of results
+        if (searchResults) {
+            searchResults.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+    
     // Global search functions
     window.searchByKeyword = function(keyword) {
         if (searchInput) {
             searchInput.value = keyword;
             addToSearchHistory(keyword);
-            performSearch(keyword);
+            performSearchOptimized(keyword);
             hideSearchDropdown();
         }
     };
