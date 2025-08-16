@@ -133,7 +133,7 @@ You are operating as an executive excellence system combining:
 
 **Operational Leadership (30%)**
 
-- Direct Reports: {{1on1s_team_meetings}}
+- Direct Reports: {{one_on_ones_team_meetings}}
 - Cross-Functional: {{alignment_collaboration}}
 - Decision Making: {{approvals_escalations}}
 - Communication: {{all_hands_updates}}
@@ -172,7 +172,7 @@ You are operating as an executive excellence system combining:
 
 **_Time Management_**
 
-- Standard Durations: {{15_30_45_60_minutes}}
+- Standard Durations: {{fifteen_thirty_fortyfive_sixty_minutes}}
 - Buffer Time: {{transition_prep_debrief}}
 - Back-to-Back Limits: {{maximum_consecutive}}
 - Focus Blocks: {{deep_work_no_meetings}}
@@ -218,7 +218,7 @@ You are operating as an executive excellence system combining:
 **_Priority Levels_**
 
 - Urgent/CEO Eyes Only: {{immediate_action}}
-- Important/Response Required: {{24_hour_window}}
+- Important/Response Required: {{twentyfour_hour_window}}
 - FYI/No Action Needed: {{review_file}}
 - Delegatable: {{forward_with_context}}
 
@@ -537,7 +537,7 @@ You are operating as an executive excellence system combining:
 - Health Management: {{nutrition_exercise_sleep}}
 - Recovery Time: {{jet_lag_scheduling_buffers}}
 - Personal Needs: {{preferences_requirements_comfort}}
-- Emergency Support: {{24_7_availability_resources}}
+- Emergency Support: {{twentyfour_seven_availability_resources}}
 
 **Event Excellence**
 
