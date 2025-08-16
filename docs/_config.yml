@@ -21,15 +21,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
-  - jekyll-minifier
-  - jekyll-gzip
 
 # Collections
 collections:
@@ -111,28 +102,7 @@ compress_html:
   profile: false
   startings: []
 
-# Jekyll Minifier
-jekyll-minifier:
-  preserve_php: true
-  remove_spaces_inside_tags: true
-  remove_multi_spaces: true
-  remove_comments: true
-  remove_intertag_spaces: true
-  remove_quotes: false
-  compress_css: true
-  compress_javascript: true
-  compress_json: true
-  simple_doctype: false
-  remove_script_attributes: true
-  remove_style_attributes: true
-  remove_link_attributes: true
-  remove_form_attributes: false
-  remove_input_attributes: true
-  remove_javascript_protocol: true
-  remove_http_protocol: false
-  remove_https_protocol: false
-  preserve_line_breaks: false
-  simple_boolean_attributes: true
+# Minifier removed - not supported by GitHub Pages
 
 # SEO defaults
 seo_defaults:
