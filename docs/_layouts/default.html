@@ -33,7 +33,17 @@
     <!-- SEO -->
     {% seo %}
     
-    <!-- Basic Meta Tags for now -->
+    <!-- Enhanced Meta Tags -->
+    {% include meta-tags.html %}
+    
+    <!-- Structured Data -->
+    {% include structured-data.html %}
+    
+    <!-- Performance Optimization -->
+    {% include performance-optimization.html %}
+    
+    <!-- Mobile SEO Optimization -->
+    {% include mobile-seo.html %}
     
     <!-- Theme Detection -->
     <script>
@@ -72,6 +82,7 @@
     <!-- Keyboard Shortcuts and PWA Features -->
     <script src="{{ '/assets/js/keyboard-shortcuts.js' | relative_url }}"></script>
     
-    <!-- Analytics removed for now -->
+    <!-- Analytics Integration -->
+    {% include analytics.html %}
 </body>
 </html>

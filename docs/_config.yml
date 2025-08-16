@@ -7,16 +7,29 @@ url: "https://aj-geddes.github.io"
 # Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 # Collections
 collections:
   prompts:
     output: true
     permalink: /:collection/:path/
+  categories:
+    output: true
+    permalink: /:collection/:name/
 
 # Defaults
 defaults:
@@ -25,6 +38,16 @@ defaults:
       type: "prompts"
     values:
       layout: "prompt"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 # Exclude from processing
 exclude:
@@ -37,12 +60,187 @@ exclude:
 # Custom variables
 repository: "aj-geddes/useful-ai-prompts"
 github_url: "https://github.com/aj-geddes/useful-ai-prompts"
+edit_page: true
+
+# Pagination
+paginate: 12
+paginate_path: "/page:num/"
 
 # Search
 search: true
+lunr:
+  enabled: true
 
 # Social links
 github_username: aj-geddes
 
-# Basic site info
+# Analytics configuration
+google_analytics: "G-XXXXXXXXXX" # Replace with actual GA4 tracking ID
+google_search_console: "google-site-verification=XXXXXXXXXX" # Replace with actual GSC verification
+microsoft_clarity: "XXXXXXXXXX" # Replace with actual Clarity ID
+hotjar_id: "1234567" # Replace with actual Hotjar ID
+
+# SEO Configuration
+twitter_username: usefulaiprompts # Your Twitter username for Twitter Cards
 author: "AI Prompts Library"
+locale: en_US
+
+# Social Media Settings
+social:
+  twitter: "@usefulaiprompts"
+  github: "aj-geddes"
+  linkedin: "aj-geddes"
+
+# Performance settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: []
+
+# Minifier removed - not supported by GitHub Pages
+
+# SEO defaults
+seo_defaults:
+  image: "/assets/images/og-default.png"
+  type: "website"
+  locale: "en_US"
+
+# Site statistics
+stats:
+  total_prompts: 259
+  categories: 14
+  github_stars: 0  # This will be updated dynamically
+  total_downloads: 0  # This will be updated dynamically
+
+# UTM tracking
+utm:
+  source_param: "utm_source"
+  medium_param: "utm_medium"
+  campaign_param: "utm_campaign"
+  default_campaign: "social_share"
+
+# Community links
+community:
+  github_discussions: "https://github.com/aj-geddes/useful-ai-prompts/discussions"
+  discord_invite: "https://discord.gg/useful-ai-prompts"
+  reddit_community: "https://reddit.com/r/usefulaiprompts"
+  twitter_hashtag: "#UsefulAIPrompts"
+
+# PWA Configuration
+pwa:
+  enabled: true
+  sw_src_filepath: "sw.js"
+  sw_dest_filename: "sw.js"
+  precache_glob_directory: "/"
+  precache_glob_patterns:
+    - "assets/css/*.css"
+    - "assets/js/*.js"
+    - "assets/images/*.{png,jpg,jpeg,svg,ico}"
+  exclude_files:
+    - "*.md"
+    - "Gemfile*"
+    - "admin/**/*"
+
+# Core Web Vitals Targets
+performance:
+  target_lcp: 2.5  # Largest Contentful Paint (seconds)
+  target_fid: 100  # First Input Delay (milliseconds)
+  target_cls: 0.1  # Cumulative Layout Shift
+  lighthouse_budget:
+    js: 170000  # JavaScript budget in bytes
+    css: 50000  # CSS budget in bytes
+    fonts: 100000  # Font budget in bytes
+
+# Advanced SEO Configuration
+seo:
+  structured_data: true
+  open_graph: true
+  twitter_cards: true
+  canonical_urls: true
+  breadcrumbs: true
+  meta_descriptions: true
+  robots_txt: true
+  sitemap_xml: true
+  rich_snippets: true
+  
+# Webmaster Tools Verification
+webmaster_verifications:
+  google: "your-google-verification-code"
+  bing: "your-bing-verification-code"
+  yandex: "your-yandex-verification-code"
+  
+# Enhanced SEO Tag Configuration
+tag_manager:
+  enabled: true
+  gtm_id: "GTM-XXXXXXX" # Replace with actual GTM ID
+  
+# Local Business Schema (if applicable)
+local_business:
+  type: "Organization"
+  name: "Useful AI Prompts"
+  url: "https://aj-geddes.github.io/useful-ai-prompts"
+  description: "Professional AI prompts library for business productivity"
+  
+# Feed Configuration
+feed:
+  categories:
+    - management-leadership
+    - technical-workflows
+    - research-workflows
+    - blockchain
+    - biotechnology
+  tags: true
+  excerpt_only: false
+  
+# Rich Snippets Configuration
+rich_snippets:
+  organization: true
+  website: true
+  breadcrumbs: true
+  faq: true
+  how_to: true
+  article: true
+
+# Enhanced Search Configuration
+search_config:
+  enabled: true
+  provider: "lunr"
+  lunr_js: "{{ '/assets/js/lunr.min.js' | relative_url }}"
+  search_full_content: true
+  search_provider: "lunr"
+  algolia:
+    application_id: # Add if using Algolia
+    index_name: "useful_ai_prompts"
+    search_only_api_key: # Add if using Algolia
+    powered_by: true
+
+# Social Sharing Configuration
+social_sharing:
+  enabled: true
+  platforms:
+    - twitter
+    - linkedin
+    - facebook
+    - reddit
+    - email
+    - copy_link
+  viral_features:
+    github_stars: true
+    sharing_stats: true
+    popular_prompts: true
+
+# Keyboard Shortcuts
+keyboard_shortcuts:
+  enabled: true
+  shortcuts:
+    search: "/"
+    home: "h"
+    categories: "c"
+    random_prompt: "r"
+    toggle_theme: "t"
+    help: "?"
