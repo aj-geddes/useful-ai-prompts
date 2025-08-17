@@ -9,7 +9,7 @@ const promptOfTheDayData = [
     title: "Strategic Roadmap Generator",
     category: "planning",
     description: "Create comprehensive strategic roadmaps with stakeholder alignment and milestone tracking.",
-    url: "/prompts/planning/strategic-roadmap-generator/",
+    url: "/useful-ai-prompts/prompts/planning/strategic-roadmap-generator/",
     tags: ["strategy", "planning", "roadmap"],
     popularity: 95
   },
@@ -17,7 +17,7 @@ const promptOfTheDayData = [
     title: "Code Review Expert",
     category: "technical-workflows", 
     description: "Conduct thorough code reviews with security, performance, and maintainability analysis.",
-    url: "/prompts/technical-workflows/code-review-expert/",
+    url: "/useful-ai-prompts/prompts/technical-workflows/code-review-expert/",
     tags: ["development", "code review", "quality"],
     popularity: 88
   },
@@ -25,7 +25,7 @@ const promptOfTheDayData = [
     title: "Breakthrough Ideation Expert",
     category: "creativity-innovation",
     description: "Generate innovative solutions using advanced creative thinking methodologies.",
-    url: "/prompts/creativity-innovation/breakthrough-ideation-expert/",
+    url: "/useful-ai-prompts/prompts/creativity-innovation/breakthrough-ideation-expert/",
     tags: ["innovation", "creativity", "brainstorming"],
     popularity: 82
   },
@@ -33,7 +33,7 @@ const promptOfTheDayData = [
     title: "Customer Journey Mapping Expert",
     category: "customer-focused",
     description: "Map comprehensive customer journeys with touchpoint optimization strategies.",
-    url: "/prompts/customer-focused/customer-journey-mapping-expert/",
+    url: "/useful-ai-prompts/prompts/customer-focused/customer-journey-mapping-expert/",
     tags: ["customer experience", "journey mapping", "UX"],
     popularity: 79
   },
@@ -41,7 +41,7 @@ const promptOfTheDayData = [
     title: "Risk Assessment Specialist",
     category: "analysis",
     description: "Conduct comprehensive risk assessments with mitigation strategies and impact analysis.",
-    url: "/prompts/analysis/risk-assessment-specialist/",
+    url: "/useful-ai-prompts/prompts/analysis/risk-assessment-specialist/",
     tags: ["risk management", "analysis", "mitigation"],
     popularity: 75
   }
@@ -55,7 +55,7 @@ const trendingPromptsData = [
     views: 2847,
     shares: 156,
     trend: "+23%",
-    url: "/prompts/technical-workflows/api-design-expert/"
+    url: "/useful-ai-prompts/prompts/technical-workflows/api-design-expert/"
   },
   {
     title: "Content Calendar Planning Expert", 
@@ -63,7 +63,7 @@ const trendingPromptsData = [
     views: 2134,
     shares: 198,
     trend: "+31%",
-    url: "/prompts/business-workflows/content-calendar-planning-expert/"
+    url: "/useful-ai-prompts/prompts/business-workflows/content-calendar-planning-expert/"
   },
   {
     title: "Crisis Management Expert",
@@ -71,7 +71,7 @@ const trendingPromptsData = [
     views: 1876,
     shares: 142,
     trend: "+18%",
-    url: "/prompts/management-leadership/crisis-management-expert/"
+    url: "/useful-ai-prompts/prompts/management-leadership/crisis-management-expert/"
   },
   {
     title: "User Experience Design Expert",
@@ -79,7 +79,7 @@ const trendingPromptsData = [
     views: 1654,
     shares: 201,
     trend: "+45%",
-    url: "/prompts/customer-focused/user-experience-design-expert/"
+    url: "/useful-ai-prompts/prompts/customer-focused/user-experience-design-expert/"
   },
   {
     title: "Financial Model Builder",
@@ -87,7 +87,7 @@ const trendingPromptsData = [
     views: 1432,
     shares: 89,
     trend: "+12%",
-    url: "/prompts/analysis/financial-model-builder/"
+    url: "/useful-ai-prompts/prompts/analysis/financial-model-builder/"
   },
   {
     title: "Team Building Expert",
@@ -95,7 +95,7 @@ const trendingPromptsData = [
     views: 1298,
     shares: 167,
     trend: "+28%",
-    url: "/prompts/management-leadership/team-building-expert/"
+    url: "/useful-ai-prompts/prompts/management-leadership/team-building-expert/"
   }
 ];
 
@@ -362,7 +362,7 @@ function updateCategoryPopularity() {
     
     // Add click handler
     bar.addEventListener('click', () => {
-      window.location.href = `/categories/${category}/`;
+      window.location.href = `/useful-ai-prompts/categories/${category}/`;
       trackViralEvent('category_popularity_click', { category });
     });
   });
