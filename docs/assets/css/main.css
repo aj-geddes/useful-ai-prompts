@@ -859,9 +859,9 @@ html.dark .theme-btn .dark-icon {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--bg-glass-strong);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     box-shadow: 
         0 8px 40px rgba(0, 0, 0, 0.12),
@@ -2319,8 +2319,8 @@ a[href*="prompts"].btn-primary,
 }
 
 .prompt-meta {
-    background: #f8fafc;
-    border: 1px solid #e5e5e5;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
