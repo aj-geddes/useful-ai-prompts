@@ -819,4 +819,4 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSavedFilters();
     performAdvancedSearch();
 });
-</script>
+</script><!-- Force rebuild Sat Aug 16 09:38:31 PM CDT 2025 -->
