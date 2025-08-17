@@ -229,8 +229,55 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
     </div>
 </div>
 
-<!-- Add Viral Features to Homepage -->
-{% include viral-features.html %}
+<!-- Popular Categories Section (Direct Embed) -->
+<div class="popular-categories" id="popularCategories">
+    <div class="popular-header">
+        <h2><i class="fas fa-chart-bar"></i> Popular Categories</h2>
+        <p>Categories with the most activity this month</p>
+    </div>
+    
+    <div class="categories-chart" id="categoriesChart">
+        <div class="category-bar" data-category="technical-workflows">
+            <div class="bar-label">Technical Workflows</div>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 85%"></div>
+                <span class="bar-value">85%</span>
+            </div>
+        </div>
+        
+        <div class="category-bar" data-category="business-workflows">
+            <div class="bar-label">Business Workflows</div>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 72%"></div>
+                <span class="bar-value">72%</span>
+            </div>
+        </div>
+        
+        <div class="category-bar" data-category="creativity-innovation">
+            <div class="bar-label">Creativity & Innovation</div>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 68%"></div>
+                <span class="bar-value">68%</span>
+            </div>
+        </div>
+        
+        <div class="category-bar" data-category="planning">
+            <div class="bar-label">Planning</div>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 61%"></div>
+                <span class="bar-value">61%</span>
+            </div>
+        </div>
+        
+        <div class="category-bar" data-category="analysis">
+            <div class="bar-label">Analysis</div>
+            <div class="bar-container">
+                <div class="bar-fill" style="width: 55%"></div>
+                <span class="bar-value">55%</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Homepage-specific Schema Markup -->
 <script type="application/ld+json">
