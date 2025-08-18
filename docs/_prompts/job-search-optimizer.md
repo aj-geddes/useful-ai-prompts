@@ -1,166 +1,144 @@
 ---
 category: career-development
 compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
+- GPT-4
+- Claude 3
+- Gemini Pro
+- GPT-3.5
 date: '2025-08-18'
-description: Professional prompt for career development and job search optimization
+description: A comprehensive job search strategist that helps you optimize every aspect of your job hunt, from resume and LinkedIn optimization to interview preparation and salary negotiation, tailored to your industry and career goals.
+layout: prompt
+prompt: 'I''ll help you create a systematic job search strategy that maximizes your chances of landing your ideal role. Let me understand your situation, goals, and current approach to develop a comprehensive optimization plan.
+
+
+  **Current Situation Assessment:**
+
+  1. Are you currently employed or unemployed? How urgent is your job search?
+
+  2. What is your current or most recent job title and industry?
+
+  3. What type of role and company are you targeting?
+
+  4. How long have you been searching, and what results have you seen so far?
+
+  5. What is your biggest challenge or frustration with job searching?
+
+
+  **Target Role and Market Analysis:**
+
+  6. What specific job titles are you pursuing?
+
+  7. What industries or company types interest you most?
+
+  8. Are you open to relocation, remote work, or contract positions?
+
+  9. What is your target salary range or compensation expectation?
+
+  10. How flexible are you on role requirements vs. compensation?
+
+
+  **Current Job Search Materials:**
+
+  11. How would you rate your current resume (1-10)?
+
+  12. Is your LinkedIn profile optimized and active?
+
+  13. Do you have a portfolio, website, or other professional materials?
+
+  14. How is your professional network? Who could provide referrals?
+
+  15. What job search platforms and methods are you currently using?
+
+
+  **Skills and Experience Positioning:**
+
+  16. What are your strongest skills and achievements?
+
+  17. What makes you unique compared to other candidates?
+
+  18. Are there skill gaps for your target roles that you need to address?
+
+  19. How confident are you in interviews and networking situations?
+
+  20. What stories or examples best demonstrate your value?
+
+
+  Based on your situation, I''ll provide:
+
+
+  **1. JOB SEARCH STRATEGY OPTIMIZATION**
+
+  - Target market analysis and positioning
+
+  - Search timeline and milestone planning
+
+  - Channel optimization (platforms, networking, direct outreach)
+
+  - Application tracking and follow-up systems
+
+
+  **2. RESUME AND PROFILE ENHANCEMENT**
+
+  - Resume optimization for ATS and human reviewers
+
+  - LinkedIn profile optimization for visibility
+
+  - Professional portfolio development
+
+  - Personal branding and value proposition refinement
+
+
+  **3. NETWORKING AND OUTREACH STRATEGY**
+
+  - Professional network activation and expansion
+
+  - Strategic networking plan for target companies
+
+  - Informational interview outreach and execution
+
+  - Referral generation and relationship building
+
+
+  **4. INTERVIEW PREPARATION FRAMEWORK**
+
+  - Common interview question preparation
+
+  - Story development using STAR methodology
+
+  - Company research and preparation strategies
+
+  - Salary negotiation preparation and tactics
+
+
+  **5. APPLICATION AND FOLLOW-UP OPTIMIZATION**
+
+  - Application prioritization and customization
+
+  - Cover letter templates and personalization
+
+  - Follow-up sequences and timing
+
+  - Rejection handling and continuous improvement
+
+
+  Ready to optimize your job search for maximum success?'
+related_prompts:
+- resume-optimization-specialist
+- interview-preparation-coach
+- professional-networking-strategist
 slug: job-search-optimizer
 tags:
-- career development
-- job search
+- job-search
+- resume-optimization
+- interview-preparation
+- networking
+- career-transition
 title: Job Search Optimizer
 use_cases:
-- career development optimization
-- professional advancement
-version: 3.0.0
+- job hunting
+- career change
+- resume writing
+- interview prep
+- salary negotiation
+version: 1.0.0
 ---
-
-# Job Search Optimizer
-
-## Metadata
-- **Category**: Career Development
-- **Tags**: job search, career development, resume, interviewing, networking
-- **Created**: 2025-08-18
-- **Version**: 1.0.0
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro
-
-## Description
-Optimize your job search strategy with personalized tactics for landing interviews and offers faster.
-
-## Prompt Template
-
-```
-I'll help you create a strategic job search plan that gets results. Let me understand your situation:
-
-**Current Role and Goals:**
-1. What's your current job title and industry?
-2. What type of role are you targeting?
-3. Are you looking to change industries or stay in the same field?
-4. What's your ideal timeline for landing a new job?
-
-**Experience and Skills:**
-5. How many years of experience do you have?
-6. What are your strongest technical skills?
-7. What achievements are you most proud of?
-8. What skills do you need to develop or highlight?
-
-**Job Search Status:**
-9. How long have you been searching?
-10. How many applications have you submitted?
-11. What's your current interview-to-application ratio?
-12. What aspects of job searching do you find most challenging?
-
-**Resources and Constraints:**
-13. How much time can you dedicate to job searching weekly?
-14. Do you need to search confidentially (currently employed)?
-15. Are you open to remote, hybrid, or location-specific roles?
-16. What's your target salary range?
-
-Based on your answers, I'll provide:
-
-**TARGETED JOB SEARCH STRATEGY** - Customized approach for your goals
-**RESUME AND LINKEDIN OPTIMIZATION** - Stand out to recruiters and ATS
-**APPLICATION EFFICIENCY SYSTEM** - Apply to more relevant roles faster
-**INTERVIEW PREPARATION FRAMEWORK** - Practice system for better performance
-**NETWORKING ACTION PLAN** - Leverage connections and build new ones
-
-Share your job search details and let's accelerate your career move!
-```
-
-## Example Usage
-
-**User Input:**
-```
-1. Senior Marketing Manager, SaaS technology
-2. Marketing Director or VP Marketing roles
-3. Stay in SaaS/tech, open to different company sizes
-4. 3-4 months ideally
-
-5. 8 years total, 4 in current role
-6. Digital marketing, growth marketing, team leadership, data analysis
-7. Led team that increased MQLs by 150%, launched successful product
-8. Need to highlight strategic thinking and P&L responsibility
-
-9. 6 weeks actively searching
-10. 45 applications submitted
-11. 3 interviews from 45 applications (6.7%)
-12. Getting interviews, but resume might not stand out enough
-
-13. 8-10 hours per week
-14. Yes, need to be discreet
-15. Prefer hybrid, open to remote for right opportunity
-16. $120K-150K base salary
-```
-
-**Assistant Output:**
-
-Here's your optimized job search strategy:
-
-## TARGETED JOB SEARCH STRATEGY
-
-**Current Performance Analysis:**
-- Application Response Rate: 6.7% (target: 15-20%)
-- Issue: Volume-based approach, need quality focus
-- Opportunity: Better targeting and personalization
-
-**Optimized Approach:**
-- Target 10-12 applications per week (quality over quantity)
-- Focus on Series B-D companies (growth stage, need marketing leadership)
-- Prioritize warm applications (employee referrals, networking)
-- Track metrics: application source, response rate, interview conversion
-
-## RESUME AND LINKEDIN OPTIMIZATION
-
-**Resume Issues (Based on Low Response Rate):**
-- Likely lacks quantified business impact
-- May not highlight strategic/leadership progression
-- ATS optimization probably needed
-
-**Key Changes:**
-```
-Before: "Managed marketing campaigns"
-After: "Led cross-functional team of 8 to execute integrated campaigns driving 150% MQL growth and $2.3M pipeline"
-
-Before: "Responsible for team management"  
-After: "Built and managed 5-person growth marketing team, reducing CAC by 25% while scaling from $5M to $12M ARR"
-```
-
-**LinkedIn Optimization:**
-- Update headline: "Senior Marketing Leader | SaaS Growth Expert | Driving Revenue Through Data-Driven Strategies"
-- Post 2-3x/week about marketing insights
-- Connect with 5-10 marketing leaders daily
-- Join SaaS marketing groups and engage actively
-
-## APPLICATION EFFICIENCY SYSTEM
-
-**Daily Routine (1.5 hours):**
-- 30 min: Research 2-3 companies deeply
-- 45 min: Customize resume and write personalized cover letters
-- 15 min: LinkedIn engagement and networking
-
-**Weekly Targets:**
-- 10-12 targeted applications
-- 25 new LinkedIn connections  
-- 3-5 informational interviews
-- 1 industry event or webinar
-
-**Tracking System:**
-Track: Company, role, application date, source, contact person, status, follow-up dates
-
-## INTERVIEW PREPARATION FRAMEWORK
-
-**Question Categories to Master:**
-1. Strategic Marketing: "How would you approach marketing for a new product?"
-2. Leadership: "Describe a time you led through significant change"
-3. Analytics: "How do you measure marketing success beyond leads?"
-4. Growth: "Walk me through your process for identifying growth opportunities"
-
-**Practice Schedule:**
-- Week 1: Record yourself answering 20 common questions
-- Week 2: Practice with friend/coach, focus on storytelling
-- Week 3: Mock interviews for specific companies
-- Ongoing: Research each company's challenges and prepare solutions
-
-This strategy should increase your response rate to 15%+ and accelerate your timeline.

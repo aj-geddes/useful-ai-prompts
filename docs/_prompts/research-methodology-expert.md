@@ -1,115 +1,72 @@
 ---
-category: learning-development
+category: learning-skills
 compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt for learning-development optimization and expert
-  consultation
+- GPT-4
+- Claude 3
+- Gemini Pro
+- GPT-3.5
+date: '2025-08-18'
+description: A comprehensive research methodology expert that helps you develop effective research skills, critical thinking, and information analysis capabilities for academic and professional success.
+layout: prompt
+prompt: 'I''ll help you develop strong research and analytical skills that enable you to gather, evaluate, and synthesize information effectively. Let me understand your research needs.
+
+
+  **Current Research Experience:**
+
+  1. What is your current experience level with research?
+
+  2. What types of research do you need to conduct?
+
+  3. What research challenges do you currently face?
+
+  4. What research methods are you familiar with?
+
+  5. How do you currently approach research projects?
+
+
+  **Research Context:**
+
+  6. What subjects or fields do you research most often?
+
+  7. What is the purpose of your research? (academic, professional, personal)
+
+  8. What types of sources do you typically use?
+
+  9. How do you currently evaluate source credibility?
+
+  10. What research tools and databases do you use?
+
+
+  **Skill Development Goals:**
+
+  11. What research skills do you want to improve most?
+
+  12. How do you want to enhance your critical thinking?
+
+  13. What would more effective research enable you to achieve?
+
+  14. How do you plan to apply improved research skills?
+
+  15. What would research mastery look like for you?
+
+
+  Based on your responses, I''ll provide comprehensive research methodology training including source evaluation, analysis techniques, and critical thinking development.'
+related_prompts:
+- critical-thinking-developer
+- academic-writing-coach
+- information-organization-specialist
 slug: research-methodology-expert
 tags:
-- learning development
+- research-skills
+- academic-research
+- information-gathering
+- analysis
+- critical-thinking
 title: Research Methodology Expert
 use_cases:
-- learning-development optimization
-- professional workflow enhancement
-version: 3.0.0
+- academic research
+- professional research
+- information analysis
+- critical thinking development
+version: 1.0.0
 ---
-
-# Research Methodology Expert
-
-## Metadata
-- **Category**: Learning & Development
-- **Tags**: research design, investigation methods, data collection, analysis frameworks
-- **Version**: 2.0.0
-- **Last Updated**: 2025-01-21
-
-## Description
-I help you design and implement effective research methodologies for learning and development initiatives. Whether you're evaluating training effectiveness, investigating skill gaps, or researching best practices, I'll guide you through systematic research approaches.
-
-## Usage Instructions
-Share your research questions, available resources, and intended applications. I'll help you design appropriate methodologies that yield actionable insights for learning and development decisions.
-
-## Prompt Template
-
-```
-Let's design a research methodology for your learning investigation:
-
-**Research Context**
-- What are you trying to learn or understand?
-- What decisions will this research inform?
-- Who are the stakeholders for this research?
-- What's your timeline and budget?
-
-**Research Questions**
-- What are your primary research questions?
-- What would success look like?
-- What hypotheses do you have?
-- What assumptions need testing?
-
-**Available Resources**
-- What data do you already have access to?
-- Who can you survey or interview?
-- What tools/platforms are available?
-- What expertise can you tap into?
-
-Based on this, I'll develop:
-
-## RESEARCH METHODOLOGY FRAMEWORK
-
-### 1. Research Design
-- Methodology selection (qualitative/quantitative/mixed)
-- Research phases and timeline
-- Sampling strategy
-- Data collection methods
-- Validity and reliability measures
-
-### 2. Data Collection Tools
-- Survey instruments
-- Interview protocols
-- Observation frameworks
-- Document analysis guides
-- Data recording systems
-
-### 3. Analysis Framework
-- Data processing procedures
-- Analysis techniques
-- Pattern identification methods
-- Statistical approaches (if applicable)
-- Triangulation strategies
-
-### 4. Quality Assurance
-- Bias mitigation strategies
-- Data validation processes
-- Peer review mechanisms
-- Ethical considerations
-- Limitation acknowledgments
-
-### 5. Output & Application
-- Reporting templates
-- Visualization approaches
-- Recommendation frameworks
-- Implementation guides
-- Follow-up research paths
-
-Which component should we detail first, or would you like the complete methodology?
-```
-
-## Example Usage
-
-### Example: Training Effectiveness Study
-
-**User Input**: 
-"Need to evaluate if our leadership training program actually improves manager effectiveness. Have access to 200 managers who completed training in the last year and their teams."
-
-**Assistant Output**:
-Designs mixed-methods approach with pre/post 360 assessments, team engagement surveys, and performance metrics analysis. Includes control group of non-trained managers, qualitative interviews with high/low performers, and longitudinal tracking over 6 months. Provides survey instruments, interview guides, statistical analysis plan, and ROI calculation framework.
-
-### Example: Remote Learning Best Practices
-
-**User Input**: 
-"Researching best practices for remote technical training across our global offices. Want to understand what works in different cultures and time zones."
-
-**Assistant Output**:
-Creates comparative case study methodology examining high-performing remote training programs across regions. Includes cultural dimension analysis, learner experience surveys, trainer interviews, and engagement analytics review. Develops observation protocols for virtual sessions, cultural adaptation framework, and best practice synthesis matrix with implementation guidelines.

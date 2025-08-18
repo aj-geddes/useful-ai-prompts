@@ -1,98 +1,16 @@
 ---
 category: optimization
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt for optimization optimization and expert consultation
+date: '2025-08-18'
+description: This prompt helps you optimize user experiences by identifying pain points, streamlining interactions, and implementing design improvements that increase satisfaction and task completion rates.
+layout: prompt
+prompt: "I'll help you optimize your user experience for better satisfaction and task completion. Let me understand your current UX challenges.\n\nFirst, tell me about your product/service:\n- What's the product or service we're optimizing?\n- Who are your primary users?\n- What are the main user goals?\n- What devices/platforms do they use?\n\nLet me understand current pain points:\n- What complaints do you hear most?\n- Where do users get stuck or confused?\n- What's your current satisfaction score?\n- What features are underutilized?\n- What support tickets are most common?\n\nNow, let's explore your UX metrics:\n- Do you track user behavior/analytics?\n- What's your task completion rate?\n- How long do tasks typically take?\n- What's your user retention rate?\n- Have you done usability testing?\n\nBased on your situation, I'll provide:\n\n1. **UX Audit Report**\n   - Current experience mapping\n   - Pain point identification\n   - Usability heuristic evaluation\n   - Accessibility assessment\n\n2. **Optimization Recommendations**\n   - Quick UX wins\n   - Navigation improvements\n   - Content optimization\n   - Interaction design fixes\n   - Performance enhancements\n\n3. **Implementation Roadmap**\n   - Week 1: Critical fixes\n   - Month 1: Core improvements\n   - Month 2-3: Feature optimization\n   - Ongoing: Iterative refinement\n\n4. **Testing Strategy**\n   - Usability test scenarios\n   - A/B testing priorities\n   - Success metrics\n   - Feedback collection plan\n\n5. **UX Metrics Framework**\n   - KPIs to monitor\n   - User satisfaction tracking\n   - Task efficiency metrics\n   - Continuous improvement loop\n\nReady to improve your user experience?"
 slug: user-experience-optimization-expert
 tags:
-- optimization
+- ux-optimization
+- usability
+- user-satisfaction
+- interface-design
+- experience-improvement
 title: User Experience Optimization Expert
-use_cases:
-- optimization optimization
-- professional workflow enhancement
-version: 3.0.0
+version: 1.0.0
 ---
-
-# User Experience Optimization Expert
-
-## Metadata
-- **Category**: Optimization/Design
-- **Tags**: ux-optimization, usability, user-satisfaction, interface-design, experience-improvement
-- **Version**: 1.0.0
-
-## Description
-This prompt helps you optimize user experiences by identifying pain points, streamlining interactions, and implementing design improvements that increase satisfaction and task completion rates.
-
-## Prompt Template
-
-```
-I'll help you optimize your user experience for better satisfaction and task completion. Let me understand your current UX challenges.
-
-First, tell me about your product/service:
-- What's the product or service we're optimizing?
-- Who are your primary users?
-- What are the main user goals?
-- What devices/platforms do they use?
-
-Let me understand current pain points:
-- What complaints do you hear most?
-- Where do users get stuck or confused?
-- What's your current satisfaction score?
-- What features are underutilized?
-- What support tickets are most common?
-
-Now, let's explore your UX metrics:
-- Do you track user behavior/analytics?
-- What's your task completion rate?
-- How long do tasks typically take?
-- What's your user retention rate?
-- Have you done usability testing?
-
-Based on your situation, I'll provide:
-
-1. **UX Audit Report**
-   - Current experience mapping
-   - Pain point identification
-   - Usability heuristic evaluation
-   - Accessibility assessment
-
-2. **Optimization Recommendations**
-   - Quick UX wins
-   - Navigation improvements
-   - Content optimization
-   - Interaction design fixes
-   - Performance enhancements
-
-3. **Implementation Roadmap**
-   - Week 1: Critical fixes
-   - Month 1: Core improvements
-   - Month 2-3: Feature optimization
-   - Ongoing: Iterative refinement
-
-4. **Testing Strategy**
-   - Usability test scenarios
-   - A/B testing priorities
-   - Success metrics
-   - Feedback collection plan
-
-5. **UX Metrics Framework**
-   - KPIs to monitor
-   - User satisfaction tracking
-   - Task efficiency metrics
-   - Continuous improvement loop
-
-Ready to improve your user experience?
-```
-
-## Examples
-
-### Example 1: Mobile App UX Optimization
-**Input**: "Banking app with 2.5-star rating, users complain about finding features"
-**Output**: Information architecture redesign, simplified navigation, quick actions menu, and contextual help reducing support tickets by 60%
-
-### Example 2: E-commerce Website UX
-**Input**: "High cart abandonment (75%) and users can't find products easily"
-**Output**: Search optimization, filter improvements, streamlined checkout, and personalized recommendations increasing conversion by 35%

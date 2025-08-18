@@ -1,98 +1,15 @@
 ---
 category: optimization
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt for optimization optimization and expert consultation
+date: '2025-08-18'
+description: This prompt helps you systematically identify and resolve performance bottlenecks in systems, processes, or teams to achieve optimal speed and throughput.
+layout: prompt
+prompt: "I'll help you tune performance and eliminate bottlenecks. Let me understand your current performance challenges through targeted questions.\n\nFirst, describe your performance situation:\n- What system/process/team needs performance tuning?\n- What are the current performance metrics?\n- What's your target performance level?\n- When do performance issues typically occur?\n\nLet me understand the bottlenecks:\n- Where do you see the biggest slowdowns?\n- Are issues consistent or intermittent?\n- What triggers performance degradation?\n- How does load/volume affect performance?\n- Have you identified any obvious constraints?\n\nNow, let's explore your environment:\n- What tools do you use to measure performance?\n- What's the architecture/structure of your system?\n- What resources are available for improvements?\n- Are there any constraints we must work within?\n- What's been tried before?\n\nBased on your answers, I'll provide:\n\n1. **Performance Assessment**\n   - Current performance baseline\n   - Bottleneck identification and ranking\n   - Root cause analysis\n   - Performance degradation patterns\n\n2. **Optimization Strategy**\n   - Quick performance wins\n   - Architecture/design improvements\n   - Resource optimization tactics\n   - Scaling recommendations\n   - Technology upgrades needed\n\n3. **Implementation Plan**\n   - Day 1-7: Emergency fixes\n   - Week 2-4: Core optimizations\n   - Month 2-3: Strategic improvements\n   - Ongoing: Performance maintenance\n\n4. **Performance Metrics Framework**\n   - KPIs to monitor continuously\n   - Performance baselines and targets\n   - Alert thresholds\n   - Capacity planning metrics\n\n5. **Testing and Validation Plan**\n   - Performance test scenarios\n   - Load testing approach\n   - Validation criteria\n   - Rollback procedures\n\nReady to diagnose your performance issues?"
 slug: performance-tuning-expert
 tags:
-- optimization
+- performance-optimization
+- system-tuning
+- speed-improvement
+- bottleneck-analysis
 title: Performance Tuning Expert
-use_cases:
-- optimization optimization
-- professional workflow enhancement
-version: 3.0.0
+version: 1.0.0
 ---
-
-# Performance Tuning Expert
-
-## Metadata
-- **Category**: Optimization/Performance
-- **Tags**: performance-optimization, system-tuning, speed-improvement, bottleneck-analysis
-- **Version**: 1.0.0
-
-## Description
-This prompt helps you systematically identify and resolve performance bottlenecks in systems, processes, or teams to achieve optimal speed and throughput.
-
-## Prompt Template
-
-```
-I'll help you tune performance and eliminate bottlenecks. Let me understand your current performance challenges through targeted questions.
-
-First, describe your performance situation:
-- What system/process/team needs performance tuning?
-- What are the current performance metrics?
-- What's your target performance level?
-- When do performance issues typically occur?
-
-Let me understand the bottlenecks:
-- Where do you see the biggest slowdowns?
-- Are issues consistent or intermittent?
-- What triggers performance degradation?
-- How does load/volume affect performance?
-- Have you identified any obvious constraints?
-
-Now, let's explore your environment:
-- What tools do you use to measure performance?
-- What's the architecture/structure of your system?
-- What resources are available for improvements?
-- Are there any constraints we must work within?
-- What's been tried before?
-
-Based on your answers, I'll provide:
-
-1. **Performance Assessment**
-   - Current performance baseline
-   - Bottleneck identification and ranking
-   - Root cause analysis
-   - Performance degradation patterns
-
-2. **Optimization Strategy**
-   - Quick performance wins
-   - Architecture/design improvements
-   - Resource optimization tactics
-   - Scaling recommendations
-   - Technology upgrades needed
-
-3. **Implementation Plan**
-   - Day 1-7: Emergency fixes
-   - Week 2-4: Core optimizations
-   - Month 2-3: Strategic improvements
-   - Ongoing: Performance maintenance
-
-4. **Performance Metrics Framework**
-   - KPIs to monitor continuously
-   - Performance baselines and targets
-   - Alert thresholds
-   - Capacity planning metrics
-
-5. **Testing and Validation Plan**
-   - Performance test scenarios
-   - Load testing approach
-   - Validation criteria
-   - Rollback procedures
-
-Ready to diagnose your performance issues?
-```
-
-## Examples
-
-### Example 1: Website Performance Tuning
-**Input**: "Our e-commerce site takes 8 seconds to load, losing 20% of visitors"
-**Output**: Page speed analysis, image optimization plan, CDN implementation, database query optimization, and caching strategy reducing load time to 2 seconds
-
-### Example 2: Manufacturing Line Performance
-**Input**: "Production line outputs 60 units/hour but designed for 100 units/hour"
-**Output**: Bottleneck analysis revealing material flow issues, workstation balancing recommendations, and preventive maintenance schedule

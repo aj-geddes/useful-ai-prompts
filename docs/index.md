@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Professional AI Prompts Library - 389+ Expert ChatGPT & Claude Prompts for Business Success"
-description: "🚀 Boost productivity with 389+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts. Free instant access - no signup required!"
+title: "Professional AI Prompts Library - 490+ Expert ChatGPT & Claude Prompts for Business Success"
+description: "🚀 Boost productivity with 490+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts. Free instant access - no signup required!"
 keywords: "AI prompts, ChatGPT prompts, Claude prompts, professional AI prompts, business prompts, technical prompts, AI productivity, prompt engineering, dual persona prompts, business automation, AI tools, blockchain prompts, biotech prompts, management prompts"
 image: "/useful-ai-prompts/assets/images/homepage-hero.png"
 ---
@@ -9,7 +9,7 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
 <div class="search-hero">
     <div class="container">
         <div class="search-header">
-            <h1 class="search-title">Professional AI Prompts Library - 389+ Expert ChatGPT & Claude Prompts</h1>
+            <h1 class="search-title">Professional AI Prompts Library - 490+ Expert ChatGPT & Claude Prompts</h1>
             <p class="search-subtitle">🚀 Boost productivity instantly with expert-crafted AI prompts for business, technical workflows, blockchain, biotech, and emerging technologies. Interactive format provides comprehensive guidance. <strong>Free access</strong> - no signup required!</p>
         </div>
         
@@ -295,7 +295,7 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
   "name": "Professional AI Prompts Library",
   "url": "{{ site.url }}{{ site.baseurl }}/",
   "applicationCategory": "Productivity",
-  "description": "Professional AI prompts library with 389+ expert ChatGPT and Claude prompts for business, technical workflows, and emerging technologies",
+  "description": "Professional AI prompts library with 490+ expert ChatGPT and Claude prompts for business, technical workflows, and emerging technologies",
   "operatingSystem": "Any",
   "offers": {
     "@type": "Offer",
@@ -327,7 +327,7 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
     "query-input": "required name=search_term_string"
   },
   "featureList": [
-    "389+ Professional AI Prompts",
+    "490+ Professional AI Prompts",
     "Interactive Expert Guidance",
     "18 Specialized Categories",
     "Instant Search & Filtering",
