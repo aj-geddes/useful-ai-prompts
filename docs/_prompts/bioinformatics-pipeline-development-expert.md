@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Bioinformatics Scientist and Computational
-  Biology Manager expertise for Computational Biology workflows
+description: Professional prompt combining Bioinformatics Scientist and Computational Biology Manager expertise for Computational Biology workflows
+layout: prompt
 slug: bioinformatics-pipeline-development-expert
 tags:
 - biotechnology

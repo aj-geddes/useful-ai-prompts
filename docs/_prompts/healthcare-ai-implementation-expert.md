@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Healthcare AI Engineer and Clinical Innovation
-  Manager expertise for Healthcare AI workflows
+description: Professional prompt combining Healthcare AI Engineer and Clinical Innovation Manager expertise for Healthcare AI workflows
+layout: prompt
 slug: healthcare-ai-implementation-expert
 tags:
 - healthcare digital

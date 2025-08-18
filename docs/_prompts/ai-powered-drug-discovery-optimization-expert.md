@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Drug Discovery Scientist and AI/ML Research
-  Director expertise for Drug Discovery workflows
+description: Professional prompt combining Drug Discovery Scientist and AI/ML Research Director expertise for Drug Discovery workflows
+layout: prompt
 slug: ai-powered-drug-discovery-optimization-expert
 tags:
 - biotechnology

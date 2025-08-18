@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Digital Supply Chain Manager and Operations
-  Technology Director expertise for Digital Supply Chain workflows
+description: Professional prompt combining Digital Supply Chain Manager and Operations Technology Director expertise for Digital Supply Chain workflows
+layout: prompt
 slug: digital-supply-chain-transformation-expert
 tags:
 - supply chain

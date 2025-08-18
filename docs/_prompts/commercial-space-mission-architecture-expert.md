@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Space Mission Manager and Commercial Space
-  Operations Director expertise for Commercial Space Mission Management workflows
+description: Professional prompt combining Space Mission Manager and Commercial Space Operations Director expertise for Commercial Space Mission Management workflows
+layout: prompt
 slug: commercial-space-mission-architecture-expert
 tags:
 - space economy

@@ -8,55 +8,133 @@ compatible_models:
 date: '2025-07-21'
 description: Transform raw customer feedback into actionable insights that drive product and service improvements. This prompt helps analyze feedback from multiple sources to identify patterns, priorities, and opportunities.
 layout: prompt
-prompt: 'I''ll help you analyze customer feedback to uncover actionable insights. Let''s start with understanding your data:
+prompt: |
+  |
+  Ill help you analyze customer feedback to uncover actionable insights. Let''s start with understanding your data:
+  
+  
+  FEEDBACK SOURCES:
+  
+  - What types of feedback do you have? (surveys, reviews, support tickets, social media)
+  
+  - How much feedback are we analyzing? (volume, time period)
+  
+  - What format is it in? (structured ratings, open text, mixed)
+  
+  
+  BUSINESS CONTEXT:
+  
+  - What specific aspects concern you? (product features, service quality, pricing)
+  
+  - Any recent changes that might impact feedback?
+  
+  - What decisions will this analysis inform?
+  
+  
+  ANALYSIS GOALS:
+  
+  - Looking for trends, specific issues, or both?
+  
+  - Need to compare segments or time periods?
+  
+  - Any hypotheses to validate?
+  
+  
+  Based on your feedback data, I''ll deliver:
+  
+  
+  ## 1. SENTIMENT & THEME ANALYSIS
+  
+  **Overall Sentiment Distribution**:
+  
+  - Positive: X% | Neutral: Y% | Negative: Z%
+  
+  - Trend over time
+  
+  - Channel comparison
+  
+  
+  **Top Themes Identified**:
+  
+  | Theme | Frequency | Sentiment | Example Quotes |
+  
+  |
+  
+
+  Ill help you analyze customer feedback to uncover actionable insights. Let''''s start with understanding your data:
+
 
 
   FEEDBACK SOURCES:
 
+
   - What types of feedback do you have? (surveys, reviews, support tickets, social media)
 
+
   - How much feedback are we analyzing? (volume, time period)
+
 
   - What format is it in? (structured ratings, open text, mixed)
 
 
+
   BUSINESS CONTEXT:
+
 
   - What specific aspects concern you? (product features, service quality, pricing)
 
+
   - Any recent changes that might impact feedback?
+
 
   - What decisions will this analysis inform?
 
 
+
   ANALYSIS GOALS:
+
 
   - Looking for trends, specific issues, or both?
 
+
   - Need to compare segments or time periods?
+
 
   - Any hypotheses to validate?
 
 
-  Based on your feedback data, I''ll deliver:
+
+  Based on your feedback data, I''''ll deliver:
+
 
 
   ## 1. SENTIMENT & THEME ANALYSIS
 
+
   **Overall Sentiment Distribution**:
+
 
   - Positive: X% | Neutral: Y% | Negative: Z%
 
+
   - Trend over time
+
 
   - Channel comparison
 
 
+
   **Top Themes Identified**:
+
 
   | Theme | Frequency | Sentiment | Example Quotes |
 
-  |-------|-----------|-----------|----------------|
+
+  |
+
+  '
+title: Customer Feedback Analysis Expert
+-------|-----------|-----------|----------------|
 
   | [Categorized themes with supporting evidence] |
 

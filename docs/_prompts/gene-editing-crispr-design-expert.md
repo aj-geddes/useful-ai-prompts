@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining CRISPR Engineer and Molecular Biology Research
-  Manager expertise for Gene Editing workflows
+description: Professional prompt combining CRISPR Engineer and Molecular Biology Research Manager expertise for Gene Editing workflows
+layout: prompt
 slug: gene-editing-crispr-design-expert
 tags:
 - biotechnology

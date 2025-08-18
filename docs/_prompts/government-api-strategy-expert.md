@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Government API Architect and Digital Services
-  Manager expertise for Government API Development workflows
+description: Professional prompt combining Government API Architect and Digital Services Manager expertise for Government API Development workflows
+layout: prompt
 slug: government-api-strategy-expert
 tags:
 - government

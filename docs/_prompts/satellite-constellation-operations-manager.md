@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Satellite Operations Engineer and Space
-  Network Manager expertise for Satellite Operations workflows
+description: Professional prompt combining Satellite Operations Engineer and Space Network Manager expertise for Satellite Operations workflows
+layout: prompt
 slug: satellite-constellation-operations-manager
 tags:
 - space economy

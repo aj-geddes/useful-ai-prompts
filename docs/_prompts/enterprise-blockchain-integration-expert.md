@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Enterprise Blockchain Architect and Digital
-  Transformation Manager expertise for Enterprise Blockchain workflows
+description: Professional prompt combining Enterprise Blockchain Architect and Digital Transformation Manager expertise for Enterprise Blockchain workflows
+layout: prompt
 slug: enterprise-blockchain-integration-expert
 tags:
 - blockchain

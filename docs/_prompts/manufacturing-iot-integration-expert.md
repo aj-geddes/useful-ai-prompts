@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Industrial IoT Engineer and Manufacturing
-  Systems Manager expertise for Industrial IoT workflows
+description: Professional prompt combining Industrial IoT Engineer and Manufacturing Systems Manager expertise for Industrial IoT workflows
+layout: prompt
 slug: manufacturing-iot-integration-expert
 tags:
 - technical workflows

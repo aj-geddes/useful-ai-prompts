@@ -8,46 +8,111 @@ compatible_models:
 date: '2025-07-21'
 description: Design compelling loyalty programs that drive repeat business and deepen customer relationships. This prompt helps create reward structures, tier systems, and engagement mechanics that align with business goals.
 layout: prompt
-prompt: 'I''ll help you design an effective loyalty program. Let''s explore your needs:
+prompt: |
+  |
+  Ill help you design an effective loyalty program. Let''s explore your needs:
+  
+  
+  BUSINESS CONTEXT:
+  
+  - What''s your business model and industry?
+  
+  - Average customer purchase frequency and value?
+  
+  - Competitive landscape for loyalty programs?
+  
+  
+  CUSTOMER INSIGHTS:
+  
+  - What motivates your customers?
+  
+  - Current repeat purchase rate?
+  
+  - Customer lifetime value ranges?
+  
+  
+  PROGRAM GOALS:
+  
+  - Primary objective? (frequency, spend, referrals)
+  
+  - Budget for rewards (% of revenue)?
+  
+  - Technology constraints or preferences?
+  
+  
+  Here''s your comprehensive loyalty program design:
+  
+  
+  ## 1. PROGRAM STRUCTURE
+  
+  **Earning Mechanics**:
+  
+  | Action | Points/Value | Rationale |
+  
+  |
+  
+
+  Ill help you design an effective loyalty program. Let''''s explore your needs:
+
 
 
   BUSINESS CONTEXT:
 
-  - What''s your business model and industry?
+
+  - What''''s your business model and industry?
+
 
   - Average customer purchase frequency and value?
+
 
   - Competitive landscape for loyalty programs?
 
 
+
   CUSTOMER INSIGHTS:
+
 
   - What motivates your customers?
 
+
   - Current repeat purchase rate?
+
 
   - Customer lifetime value ranges?
 
 
+
   PROGRAM GOALS:
+
 
   - Primary objective? (frequency, spend, referrals)
 
+
   - Budget for rewards (% of revenue)?
+
 
   - Technology constraints or preferences?
 
 
-  Here''s your comprehensive loyalty program design:
+
+  Here''''s your comprehensive loyalty program design:
+
 
 
   ## 1. PROGRAM STRUCTURE
 
+
   **Earning Mechanics**:
+
 
   | Action | Points/Value | Rationale |
 
-  |--------|--------------|-----------|
+
+  |
+
+  '
+title: Loyalty Program Design Expert
+--------|--------------|-----------|
 
   | Purchase | $1 = 10 points | Industry standard |
 

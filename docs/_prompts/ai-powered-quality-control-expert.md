@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining AI Quality Engineer and Manufacturing Quality
-  Manager expertise for Quality Control AI workflows
+description: Professional prompt combining AI Quality Engineer and Manufacturing Quality Manager expertise for Quality Control AI workflows
+layout: prompt
 slug: ai-powered-quality-control-expert
 tags:
 - technical workflows

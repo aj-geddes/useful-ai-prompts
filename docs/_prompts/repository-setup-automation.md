@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for project-management optimization and expert consultation
+layout: prompt
 slug: github-repository-setup-automation
 tags:
 - project management

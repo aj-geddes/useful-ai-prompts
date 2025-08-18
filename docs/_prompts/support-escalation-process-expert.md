@@ -8,24 +8,55 @@ compatible_models:
 date: '2025-07-21'
 description: Design efficient escalation processes that ensure critical customer issues are resolved quickly by the right experts. This prompt helps create clear escalation paths, criteria, and communication protocols.
 layout: prompt
-prompt: '**Manual Escalation Guidelines**:
+prompt: |
+  '**Manual Escalation Guidelines**:
+  
+  - Customer impact assessment
+  
+  - Technical complexity evaluation
+  
+  - Business risk factors
+  
+  - Time sensitivity analysis
+  
+  
+  ## 3. COMMUNICATION PROTOCOLS
+  
+  **Internal Handoff Process**:
+  
+  | Step | Action | Information Required | Tool/Template |
+  
+  |
+  
+
 
   - Customer impact assessment
 
+
   - Technical complexity evaluation
 
+
   - Business risk factors
+
 
   - Time sensitivity analysis
 
 
+
   ## 3. COMMUNICATION PROTOCOLS
+
 
   **Internal Handoff Process**:
 
+
   | Step | Action | Information Required | Tool/Template |
 
-  |------|--------|---------------------|---------------|
+
+  |
+
+  '
+title: Support Escalation Process Expert
+------|--------|---------------------|---------------|
 
   | 1 | Document issue | Full context, attempts, customer state | Ticket system |
 

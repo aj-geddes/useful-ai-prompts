@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Solar Project Development Manager and Renewable
-  Energy Investment Analyst expertise for Solar Energy Development workflows
+description: Professional prompt combining Solar Project Development Manager and Renewable Energy Investment Analyst expertise for Solar Energy Development workflows
+layout: prompt
 slug: solar-project-development-optimization-expert
 tags:
 - renewable energy

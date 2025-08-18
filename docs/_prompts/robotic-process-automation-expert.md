@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining RPA Developer and Process Automation Manager
-  expertise for Process Automation workflows
+description: Professional prompt combining RPA Developer and Process Automation Manager expertise for Process Automation workflows
+layout: prompt
 slug: robotic-process-automation-expert
 tags:
 - technical workflows

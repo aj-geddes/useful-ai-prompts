@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Medical Device AI Engineer and Regulatory
-  Affairs Manager expertise for Medical Device AI workflows
+description: Professional prompt combining Medical Device AI Engineer and Regulatory Affairs Manager expertise for Medical Device AI workflows
+layout: prompt
 slug: medical-device-ai-integration-expert
 tags:
 - healthcare digital

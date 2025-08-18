@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Launch Operations Manager and Mission Integration
-  Director expertise for Launch Operations workflows
+description: Professional prompt combining Launch Operations Manager and Mission Integration Director expertise for Launch Operations workflows
+layout: prompt
 slug: launch-campaign-management-expert
 tags:
 - space economy

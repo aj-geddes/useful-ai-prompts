@@ -4,6 +4,7 @@ title: "Professional AI Prompts Library - 490+ Expert ChatGPT & Claude Prompts f
 description: "🚀 Boost productivity with 490+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts. Free instant access - no signup required!"
 keywords: "AI prompts, ChatGPT prompts, Claude prompts, professional AI prompts, business prompts, technical prompts, AI productivity, prompt engineering, dual persona prompts, business automation, AI tools, blockchain prompts, biotech prompts, management prompts"
 image: "/useful-ai-prompts/assets/images/homepage-hero.png"
+rebuild_trigger: "2025-08-18-force-deploy"
 ---
 
 <div class="search-hero">

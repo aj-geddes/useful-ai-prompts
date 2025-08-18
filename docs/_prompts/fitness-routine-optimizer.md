@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-18'
 description: Professional prompt for health and fitness optimization
+layout: prompt
 slug: fitness-routine-optimizer
 tags:
 - health wellness

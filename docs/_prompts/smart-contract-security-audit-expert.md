@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Smart Contract Security Engineer and Blockchain
-  Security Architect expertise for Smart Contract Security workflows
+description: Professional prompt combining Smart Contract Security Engineer and Blockchain Security Architect expertise for Smart Contract Security workflows
+layout: prompt
 slug: smart-contract-security-audit-expert
 tags:
 - blockchain

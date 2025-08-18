@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Edge Computing Architect and Distributed
-  Systems Manager expertise for Edge Computing workflows
+description: Professional prompt combining Edge Computing Architect and Distributed Systems Manager expertise for Edge Computing workflows
+layout: prompt
 slug: edge-computing-architecture-expert
 tags:
 - technical workflows

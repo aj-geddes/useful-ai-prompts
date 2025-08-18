@@ -8,46 +8,111 @@ compatible_models:
 date: '2025-07-21'
 description: Develop comprehensive retention strategies that keep customers engaged and reduce churn. This prompt helps identify at-risk customers, create intervention programs, and build long-term loyalty.
 layout: prompt
-prompt: 'I''ll help you build a powerful customer retention strategy. Let''s understand your situation:
+prompt: |
+  |
+  Ill help you build a powerful customer retention strategy. Let''s understand your situation:
+  
+  
+  BUSINESS CONTEXT:
+  
+  - What''s your product/service and business model?
+  
+  - Current retention rate and churn patterns?
+  
+  - Customer lifetime value and acquisition costs?
+  
+  
+  CUSTOMER INSIGHTS:
+  
+  - Why do customers typically leave? (exit survey data)
+  
+  - What makes your best customers stay?
+  
+  - Any seasonal or cyclical patterns?
+  
+  
+  CURRENT EFFORTS:
+  
+  - Existing retention initiatives?
+  
+  - Communication frequency and channels?
+  
+  - Success metrics you track?
+  
+  
+  Based on your needs, I''ll create:
+  
+  
+  ## 1. CHURN RISK SEGMENTATION
+  
+  **Risk Scoring Model**:
+  
+  | Risk Level | Indicators | Population % | Intervention |
+  
+  |
+  
+
+  Ill help you build a powerful customer retention strategy. Let''''s understand your situation:
+
 
 
   BUSINESS CONTEXT:
 
-  - What''s your product/service and business model?
+
+  - What''''s your product/service and business model?
+
 
   - Current retention rate and churn patterns?
+
 
   - Customer lifetime value and acquisition costs?
 
 
+
   CUSTOMER INSIGHTS:
+
 
   - Why do customers typically leave? (exit survey data)
 
+
   - What makes your best customers stay?
+
 
   - Any seasonal or cyclical patterns?
 
 
+
   CURRENT EFFORTS:
+
 
   - Existing retention initiatives?
 
+
   - Communication frequency and channels?
+
 
   - Success metrics you track?
 
 
-  Based on your needs, I''ll create:
+
+  Based on your needs, I''''ll create:
+
 
 
   ## 1. CHURN RISK SEGMENTATION
 
+
   **Risk Scoring Model**:
+
 
   | Risk Level | Indicators | Population % | Intervention |
 
-  |------------|------------|--------------|--------------|
+
+  |
+
+  '
+title: Retention Strategy Expert
+------------|------------|--------------|--------------|
 
   | Critical | No login 30+ days, support complaints | 5% | Personal outreach |
 

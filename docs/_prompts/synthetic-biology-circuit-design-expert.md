@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Synthetic Biology Engineer and Systems
-  Biology Manager expertise for Synthetic Biology workflows
+description: Professional prompt combining Synthetic Biology Engineer and Systems Biology Manager expertise for Synthetic Biology workflows
+layout: prompt
 slug: synthetic-biology-circuit-design-expert
 tags:
 - biotechnology

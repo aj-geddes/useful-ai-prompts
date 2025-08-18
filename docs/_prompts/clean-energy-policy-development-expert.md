@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Energy Policy Analyst and Regulatory Affairs
-  Manager expertise for Energy Policy and Regulation workflows
+description: Professional prompt combining Energy Policy Analyst and Regulatory Affairs Manager expertise for Energy Policy and Regulation workflows
+layout: prompt
 slug: clean-energy-policy-development-expert
 tags:
 - renewable energy

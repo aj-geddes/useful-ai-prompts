@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Smart Grid Engineer and Utility Digital
-  Transformation Leader expertise for Smart Grid Development workflows
+description: Professional prompt combining Smart Grid Engineer and Utility Digital Transformation Leader expertise for Smart Grid Development workflows
+layout: prompt
 slug: smart-grid-infrastructure-architect
 tags:
 - renewable energy

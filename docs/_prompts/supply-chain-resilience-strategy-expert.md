@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Supply Chain Risk Manager and Supplier
-  Ecosystem Manager expertise for Supply Chain Resilience workflows
+description: Professional prompt combining Supply Chain Risk Manager and Supplier Ecosystem Manager expertise for Supply Chain Resilience workflows
+layout: prompt
 slug: supply-chain-resilience-strategy-expert
 tags:
 - supply chain

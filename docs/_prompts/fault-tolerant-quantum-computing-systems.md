@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for quantum-computing optimization and expert consultation
+layout: prompt
 slug: fault-tolerant-quantum-computing-systems-platform
 tags:
 - quantum computing

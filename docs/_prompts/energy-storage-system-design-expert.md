@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Battery Systems Engineer and Grid Storage
-  Integration Manager expertise for Energy Storage Technology workflows
+description: Professional prompt combining Battery Systems Engineer and Grid Storage Integration Manager expertise for Energy Storage Technology workflows
+layout: prompt
 slug: energy-storage-system-design-expert
 tags:
 - renewable energy

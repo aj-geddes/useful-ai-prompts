@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for technical optimization and expert consultation
+layout: prompt
 slug: ci-workflow-watchdog
 tags:
 - technical

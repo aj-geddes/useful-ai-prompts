@@ -8,48 +8,116 @@ compatible_models:
 date: '2025-07-21'
 description: Create powerful customer segments that enable targeted marketing, personalized experiences, and strategic resource allocation. This prompt helps develop multi-dimensional segmentation strategies based on behavior, value, and needs.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive customer segmentation strategy. Let''s explore your data:
+prompt: |
+  |
+  Ill help you develop a comprehensive customer segmentation strategy. Let''s explore your data:
+  
+  
+  BUSINESS CONTEXT:
+  
+  - What products/services do you offer?
+  
+  - What customer data do you have available?
+  
+  - Current customer base size and diversity?
+  
+  
+  SEGMENTATION GOALS:
+  
+  - What decisions will segments inform? (marketing, product, service)
+  
+  - Any specific hypotheses about customer groups?
+  
+  - Priority outcomes? (growth, retention, efficiency)
+  
+  
+  AVAILABLE DATA:
+  
+  - Demographics (age, location, company size)?
+  
+  - Behavioral (usage, purchase patterns)?
+  
+  - Psychographic (preferences, values)?
+  
+  - Value metrics (spend, LTV, profitability)?
+  
+  
+  I''ll create your segmentation framework:
+  
+  
+  ## 1. MULTI-DIMENSIONAL SEGMENTS
+  
+  **Primary Segmentation Model**:
+  
+  | Segment Name | Size | Key Characteristics | Value | Needs |
+  
+  |
+  
+
+  Ill help you develop a comprehensive customer segmentation strategy. Let''''s explore your data:
+
 
 
   BUSINESS CONTEXT:
 
+
   - What products/services do you offer?
 
+
   - What customer data do you have available?
+
 
   - Current customer base size and diversity?
 
 
+
   SEGMENTATION GOALS:
+
 
   - What decisions will segments inform? (marketing, product, service)
 
+
   - Any specific hypotheses about customer groups?
+
 
   - Priority outcomes? (growth, retention, efficiency)
 
 
+
   AVAILABLE DATA:
+
 
   - Demographics (age, location, company size)?
 
+
   - Behavioral (usage, purchase patterns)?
 
+
   - Psychographic (preferences, values)?
+
 
   - Value metrics (spend, LTV, profitability)?
 
 
-  I''ll create your segmentation framework:
+
+  I''''ll create your segmentation framework:
+
 
 
   ## 1. MULTI-DIMENSIONAL SEGMENTS
 
+
   **Primary Segmentation Model**:
+
 
   | Segment Name | Size | Key Characteristics | Value | Needs |
 
-  |--------------|------|-------------------|--------|--------|
+
+  |
+
+  '
+title: Customer Segmentation Expert
+--------------|------|-------------------|--------|--------|
 
   | Champions | 15% | High value, engaged, advocates | $$$$ | Innovation |
 

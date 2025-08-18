@@ -1,16 +1,84 @@
 ---
-category: optimization
-date: '2025-08-18'
-description: This prompt helps you create optimal schedules that balance resource availability, demand patterns, constraints, and costs while maximizing efficiency and satisfaction.
-layout: prompt
-prompt: "I'll help you optimize your scheduling to balance all requirements while maximizing efficiency. Let me understand your scheduling challenges.\n\nFirst, describe what you're scheduling:\n- What are you scheduling? (staff, equipment, projects, appointments)\n- What's the time horizon? (daily, weekly, monthly)\n- How many resources are involved?\n- What are the demand patterns?\n\nLet me understand your constraints:\n- What are the must-have coverage requirements?\n- Are there any regulatory constraints? (max hours, breaks)\n- What skills/qualifications are needed when?\n- Are there resource preferences to consider?\n- What are the cost implications?\n\nNow, let's explore your optimization goals:\n- What's most important? (cost, coverage, satisfaction, flexibility)\n- What problems does the current schedule have?\n- How much flexibility do you have?\n- What's worked or not worked before?\n- When do you need the new schedule?\n\nBased on your needs, I'll deliver:\n\n1. **Schedule Analysis**\n   - Current schedule efficiency metrics\n   - Coverage gap analysis\n   - Cost breakdown\n   - Constraint violation identification\n\n2. **Optimized Schedule Design**\n   - Multiple schedule options\n   - Trade-off analysis for each\n   - Coverage heat maps\n   - Cost comparisons\n   - Flexibility assessments\n\n3. **Implementation Strategy**\n   - Transition plan\n   - Communication templates\n   - Change management approach\n   - Pilot testing recommendation\n\n4. **Scheduling Framework**\n   - Rules and guidelines\n   - Decision criteria\n   - Adjustment procedures\n   - Fair rotation system\n\n5. **Monitoring System**\n   - Performance metrics\n   - Schedule adherence tracking\n   - Feedback collection\n   - Continuous improvement\n\nReady to optimize your schedule?"
-slug: schedule-optimization-expert
-tags:
-- scheduling
-- resource-scheduling
-- shift-planning
-- timeline-optimization
-- capacity-planning
-title: Schedule Optimization Expert
-version: 1.0.0
+"category": |-
+  optimization
+"date": |-
+  2025-08-18
+"description": |-
+  This prompt helps you create optimal schedules that balance resource availability, demand patterns, constraints, and costs while maximizing efficiency and satisfaction.
+"layout": |-
+  prompt
+"prompt": |-
+  I'll help you optimize your scheduling to balance all requirements while maximizing efficiency. Let me understand your scheduling challenges.
+
+  First, describe what you're scheduling:
+  - What are you scheduling? (staff, equipment, projects, appointments)
+  - What's the time horizon? (daily, weekly, monthly)
+  - How many resources are involved?
+  - What are the demand patterns?
+
+  Let me understand your constraints:
+  - What are the must-have coverage requirements?
+  - Are there any regulatory constraints? (max hours, breaks)
+  - What skills/qualifications are needed when?
+  - Are there resource preferences to consider?
+  - What are the cost implications?
+
+  Now, let's explore your optimization goals:
+  - What's most important? (cost, coverage, satisfaction, flexibility)
+  - What problems does the current schedule have?
+  - How much flexibility do you have?
+  - What's worked or not worked before?
+  - When do you need the new schedule?
+
+  Based on your needs, I'll deliver:
+
+  1. **Schedule Analysis**
+     - Current schedule efficiency metrics
+     - Coverage gap analysis
+     - Cost breakdown
+     - Constraint violation identification
+
+  2. **Optimized Schedule Design**
+     - Multiple schedule options
+     - Trade-off analysis for each
+     - Coverage heat maps
+     - Cost comparisons
+     - Flexibility assessments
+
+  3. **Implementation Strategy**
+     - Transition plan
+     - Communication templates
+     - Change management approach
+     - Pilot testing recommendation
+
+  4. **Scheduling Framework**
+     - Rules and guidelines
+     - Decision criteria
+     - Adjustment procedures
+     - Fair rotation system
+
+  5. **Monitoring System**
+     - Performance metrics
+     - Schedule adherence tracking
+     - Feedback collection
+     - Continuous improvement
+
+  Ready to optimize your schedule?
+"slug": |-
+  schedule-optimization-expert
+"tags":
+- |-
+  scheduling
+- |-
+  resource-scheduling
+- |-
+  shift-planning
+- |-
+  timeline-optimization
+- |-
+  capacity-planning
+"title": |-
+  Schedule Optimization Expert
+"version": |-
+  1.0.0
 ---

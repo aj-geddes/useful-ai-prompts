@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining DAO Governance Engineer and Decentralized
-  Systems Manager expertise for DAO Governance workflows
+description: Professional prompt combining DAO Governance Engineer and Decentralized Systems Manager expertise for DAO Governance workflows
+layout: prompt
 slug: decentralized-autonomous-organization-expert
 tags:
 - blockchain

@@ -114,6 +114,7 @@ seo_defaults:
 stats:
   total_prompts: 490
   categories: 19
+  last_updated: "2025-08-18T12:00:00Z"  # Force rebuild timestamp
   github_stars: 0  # This will be updated dynamically
   total_downloads: 0  # This will be updated dynamically
 

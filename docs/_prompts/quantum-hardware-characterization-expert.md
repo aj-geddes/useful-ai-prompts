@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Quantum Hardware Engineer and Quantum Systems
-  Manager expertise for Quantum Hardware Systems workflows
+description: Professional prompt combining Quantum Hardware Engineer and Quantum Systems Manager expertise for Quantum Hardware Systems workflows
+layout: prompt
 slug: quantum-hardware-characterization-expert
 tags:
 - quantum computing

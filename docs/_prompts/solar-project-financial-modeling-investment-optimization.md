@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for renewable-energy optimization and expert consultation
+layout: prompt
 slug: solar-project-financial-modeling-and-investment-optimization
 tags:
 - renewable energy

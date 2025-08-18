@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for space-economy optimization and expert consultation
+layout: prompt
 slug: commercial-launch-operations-coordination-and-management
 tags:
 - space economy

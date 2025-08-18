@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Spacecraft Systems Engineer and Payload
-  Integration Manager expertise for Spacecraft Engineering workflows
+description: Professional prompt combining Spacecraft Systems Engineer and Payload Integration Manager expertise for Spacecraft Engineering workflows
+layout: prompt
 slug: spacecraft-development-and-payload-integration-expert
 tags:
 - space economy

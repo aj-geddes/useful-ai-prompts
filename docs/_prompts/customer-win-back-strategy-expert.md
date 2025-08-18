@@ -8,46 +8,111 @@ compatible_models:
 date: '2025-07-21'
 description: Create strategic campaigns to re-engage and win back lost customers. This prompt helps design multi-touch win-back programs that understand why customers left and present compelling reasons to return.
 layout: prompt
-prompt: 'I''ll help you create an effective customer win-back strategy. Let''s understand your situation:
+prompt: |
+  |
+  Ill help you create an effective customer win-back strategy. Let''s understand your situation:
+  
+  
+  CHURN CONTEXT:
+  
+  - How many customers have you lost? (timeframe)
+  
+  - Do you know why they left? (exit data)
+  
+  - How long since they were active?
+  
+  
+  BUSINESS FACTORS:
+  
+  - Customer acquisition cost vs win-back cost?
+  
+  - Average customer lifetime value?
+  
+  - Have you tried win-back before?
+  
+  
+  WIN-BACK GOALS:
+  
+  - Target reactivation rate?
+  
+  - Budget for incentives?
+  
+  - Specific segments to prioritize?
+  
+  
+  Here''s your comprehensive win-back strategy:
+  
+  
+  ## 1. CHURNED CUSTOMER SEGMENTATION
+  
+  **Reactivation Potential Matrix**:
+  
+  | Segment | Profile | Churn Reason | Win-back Likelihood | Strategy |
+  
+  |
+  
+
+  Ill help you create an effective customer win-back strategy. Let''''s understand your situation:
+
 
 
   CHURN CONTEXT:
 
+
   - How many customers have you lost? (timeframe)
 
+
   - Do you know why they left? (exit data)
+
 
   - How long since they were active?
 
 
+
   BUSINESS FACTORS:
+
 
   - Customer acquisition cost vs win-back cost?
 
+
   - Average customer lifetime value?
+
 
   - Have you tried win-back before?
 
 
+
   WIN-BACK GOALS:
+
 
   - Target reactivation rate?
 
+
   - Budget for incentives?
+
 
   - Specific segments to prioritize?
 
 
-  Here''s your comprehensive win-back strategy:
+
+  Here''''s your comprehensive win-back strategy:
+
 
 
   ## 1. CHURNED CUSTOMER SEGMENTATION
 
+
   **Reactivation Potential Matrix**:
+
 
   | Segment | Profile | Churn Reason | Win-back Likelihood | Strategy |
 
-  |---------|---------|--------------|-------------------|----------|
+
+  |
+
+  '
+title: Customer Win Back Strategy Expert
+---------|---------|--------------|-------------------|----------|
 
   | Recent Defectors | <90 days | Price/competition | High (25-30%) | Aggressive offers |
 

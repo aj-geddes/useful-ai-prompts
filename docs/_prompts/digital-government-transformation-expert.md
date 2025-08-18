@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Digital Transformation Director and Public
-  Sector Innovation Manager expertise for Digital Transformation workflows
+description: Professional prompt combining Digital Transformation Director and Public Sector Innovation Manager expertise for Digital Transformation workflows
+layout: prompt
 slug: digital-government-transformation-expert
 tags:
 - government

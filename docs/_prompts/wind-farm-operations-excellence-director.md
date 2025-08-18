@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Wind Farm Operations Manager and Energy
-  Grid Integration Specialist expertise for Wind Energy Operations workflows
+description: Professional prompt combining Wind Farm Operations Manager and Energy Grid Integration Specialist expertise for Wind Energy Operations workflows
+layout: prompt
 slug: wind-farm-operations-excellence-director
 tags:
 - renewable energy

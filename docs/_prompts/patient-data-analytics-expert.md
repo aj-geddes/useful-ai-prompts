@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Healthcare Data Scientist and Clinical
-  Analytics Manager expertise for Healthcare Analytics workflows
+description: Professional prompt combining Healthcare Data Scientist and Clinical Analytics Manager expertise for Healthcare Analytics workflows
+layout: prompt
 slug: patient-data-analytics-expert
 tags:
 - healthcare digital

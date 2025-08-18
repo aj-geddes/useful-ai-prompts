@@ -8,59 +8,143 @@ compatible_models:
 date: '2025-07-21'
 description: Create comprehensive customer success plans that ensure customers achieve their desired outcomes with your product or service. This prompt helps develop structured success programs that drive adoption, value, and growth.
 layout: prompt
-prompt: 'I''ll help you create effective customer success plans. Let''s understand your context:
+prompt: |
+  |
+  Ill help you create effective customer success plans. Let''s understand your context:
+  
+  
+  CUSTOMER CONTEXT:
+  
+  - What type of customers? (size, industry, use case)
+  
+  - What are their primary goals with your product?
+  
+  - Typical customer journey length?
+  
+  
+  PRODUCT/SERVICE:
+  
+  - Complexity level and learning curve?
+  
+  - Key value drivers and success metrics?
+  
+  - Common adoption challenges?
+  
+  
+  SUCCESS TEAM:
+  
+  - Team structure and ratios?
+  
+  - Tools and resources available?
+  
+  - Current success processes?
+  
+  
+  Here''s your customer success planning framework:
+  
+  
+  ## 1. SUCCESS PLAN TEMPLATE
+  
+  **Customer Profile Section**:
+  
+  - Company overview and goals
+  
+  - Key stakeholders and roles
+  
+  - Success criteria definition
+  
+  - Timeline expectations
+  
+  - Risk factors
+  
+  
+  **Milestone Roadmap**:
+  
+  | Phase | Timeline | Goals | Activities | Success Metrics |
+  
+  |
+  
+
+  Ill help you create effective customer success plans. Let''''s understand your context:
+
 
 
   CUSTOMER CONTEXT:
 
+
   - What type of customers? (size, industry, use case)
 
+
   - What are their primary goals with your product?
+
 
   - Typical customer journey length?
 
 
+
   PRODUCT/SERVICE:
+
 
   - Complexity level and learning curve?
 
+
   - Key value drivers and success metrics?
+
 
   - Common adoption challenges?
 
 
+
   SUCCESS TEAM:
+
 
   - Team structure and ratios?
 
+
   - Tools and resources available?
+
 
   - Current success processes?
 
 
-  Here''s your customer success planning framework:
+
+  Here''''s your customer success planning framework:
+
 
 
   ## 1. SUCCESS PLAN TEMPLATE
 
+
   **Customer Profile Section**:
+
 
   - Company overview and goals
 
+
   - Key stakeholders and roles
+
 
   - Success criteria definition
 
+
   - Timeline expectations
+
 
   - Risk factors
 
 
+
   **Milestone Roadmap**:
+
 
   | Phase | Timeline | Goals | Activities | Success Metrics |
 
-  |-------|----------|--------|------------|----------------|
+
+  |
+
+  '
+title: Customer Success Planning Expert
+-------|----------|--------|------------|----------------|
 
   | Kickoff | Week 1 | Alignment | Stakeholder meeting | Plan approved |
 

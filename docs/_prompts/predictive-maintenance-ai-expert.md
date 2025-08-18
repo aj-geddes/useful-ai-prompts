@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Predictive Maintenance Engineer and Industrial
-  AI Manager expertise for Predictive Maintenance workflows
+description: Professional prompt combining Predictive Maintenance Engineer and Industrial AI Manager expertise for Predictive Maintenance workflows
+layout: prompt
 slug: predictive-maintenance-ai-expert
 tags:
 - technical workflows

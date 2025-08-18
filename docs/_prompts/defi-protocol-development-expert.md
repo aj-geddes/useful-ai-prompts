@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining DeFi Protocol Developer and Financial Engineering
-  Manager expertise for Decentralized Finance workflows
+description: Professional prompt combining DeFi Protocol Developer and Financial Engineering Manager expertise for Decentralized Finance workflows
+layout: prompt
 slug: defi-protocol-development-expert
 tags:
 - blockchain

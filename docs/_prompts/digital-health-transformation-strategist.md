@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Digital Health Strategy Director and Healthcare
-  Innovation Manager expertise for Digital Health Strategy workflows
+description: Professional prompt combining Digital Health Strategy Director and Healthcare Innovation Manager expertise for Digital Health Strategy workflows
+layout: prompt
 slug: digital-health-transformation-strategist
 tags:
 - healthcare digital

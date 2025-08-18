@@ -8,70 +8,170 @@ compatible_models:
 date: '2025-07-21'
 description: Optimize your customer support operations to deliver faster resolutions and higher satisfaction. This prompt helps design efficient support processes, knowledge systems, and team workflows.
 layout: prompt
-prompt: 'I''ll help you optimize your customer support processes. Let''s understand your current setup:
+prompt: |
+  |
+  Ill help you optimize your customer support processes. Let''s understand your current setup:
+  
+  
+  SUPPORT ENVIRONMENT:
+  
+  - What channels do you support? (email, chat, phone, social)
+  
+  - What''s your team size and structure?
+  
+  - Current ticket volume and types?
+  
+  
+  EXISTING PROCESSES:
+  
+  - How are tickets currently routed and prioritized?
+  
+  - What tools/systems do you use?
+  
+  - Average resolution times and satisfaction scores?
+  
+  
+  CHALLENGES & GOALS:
+  
+  - Main pain points for customers and agents?
+  
+  - Specific metrics you want to improve?
+  
+  - Any upcoming changes or scaling needs?
+  
+  
+  Based on your situation, I''ll design:
+  
+  
+  ## 1. TIERED SUPPORT MODEL
+  
+  **Tier Structure**:
+  
+  - **Tier 0**: Self-service (KB, FAQs, chatbot)
+  
+  - **Tier 1**: General support (common issues)
+  
+  - **Tier 2**: Technical support (complex issues)
+  
+  - **Tier 3**: Engineering/specialized
+  
+  
+  **Routing Logic**:
+  
+  - Auto-classification rules
+  
+  - Skill-based assignments
+  
+  - Escalation triggers
+  
+  - Load balancing
+  
+  
+  ## 2. TICKET WORKFLOW OPTIMIZATION
+  
+  **Lifecycle Stages**:
+  
+  | Stage | Actions | SLA | Automation |
+  
+  |
+  
+
+  Ill help you optimize your customer support processes. Let''''s understand your current setup:
+
 
 
   SUPPORT ENVIRONMENT:
 
+
   - What channels do you support? (email, chat, phone, social)
 
-  - What''s your team size and structure?
+
+  - What''''s your team size and structure?
+
 
   - Current ticket volume and types?
 
 
+
   EXISTING PROCESSES:
+
 
   - How are tickets currently routed and prioritized?
 
+
   - What tools/systems do you use?
+
 
   - Average resolution times and satisfaction scores?
 
 
+
   CHALLENGES & GOALS:
+
 
   - Main pain points for customers and agents?
 
+
   - Specific metrics you want to improve?
+
 
   - Any upcoming changes or scaling needs?
 
 
-  Based on your situation, I''ll design:
+
+  Based on your situation, I''''ll design:
+
 
 
   ## 1. TIERED SUPPORT MODEL
 
+
   **Tier Structure**:
+
 
   - **Tier 0**: Self-service (KB, FAQs, chatbot)
 
+
   - **Tier 1**: General support (common issues)
 
+
   - **Tier 2**: Technical support (complex issues)
+
 
   - **Tier 3**: Engineering/specialized
 
 
+
   **Routing Logic**:
+
 
   - Auto-classification rules
 
+
   - Skill-based assignments
 
+
   - Escalation triggers
+
 
   - Load balancing
 
 
+
   ## 2. TICKET WORKFLOW OPTIMIZATION
+
 
   **Lifecycle Stages**:
 
+
   | Stage | Actions | SLA | Automation |
 
-  |-------|---------|-----|------------|
+
+  |
+
+  '
+title: Customer Support Process Expert
+-------|---------|-----|------------|
 
   | New | Acknowledge, classify | 1 hour | Auto-reply |
 

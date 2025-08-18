@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Space Technology Engineer and Innovation
-  Program Manager expertise for Space Technology Innovation workflows
+description: Professional prompt combining Space Technology Engineer and Innovation Program Manager expertise for Space Technology Innovation workflows
+layout: prompt
 slug: space-technology-development-innovation-manager
 tags:
 - space economy

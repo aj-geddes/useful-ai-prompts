@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Smart City Technology Manager and Urban
-  Planning Director expertise for Smart City Development workflows
+description: Professional prompt combining Smart City Technology Manager and Urban Planning Director expertise for Smart City Development workflows
+layout: prompt
 slug: smart-city-platform-development-expert
 tags:
 - government

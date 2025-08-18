@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Quantum Error Correction Scientist and
-  Fault-Tolerant Systems Manager expertise for Quantum Error Correction workflows
+description: Professional prompt combining Quantum Error Correction Scientist and Fault-Tolerant Systems Manager expertise for Quantum Error Correction workflows
+layout: prompt
 slug: fault-tolerant-quantum-computing-expert
 tags:
 - quantum computing

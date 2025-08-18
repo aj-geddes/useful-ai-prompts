@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Quantum ML Scientist and Quantum Applications
-  Manager expertise for Quantum Machine Learning workflows
+description: Professional prompt combining Quantum ML Scientist and Quantum Applications Manager expertise for Quantum Machine Learning workflows
+layout: prompt
 slug: quantum-machine-learning-development-expert
 tags:
 - quantum computing

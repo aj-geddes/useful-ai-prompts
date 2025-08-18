@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Cross-Chain Protocol Engineer and Blockchain
-  Network Manager expertise for Cross-Chain Integration workflows
+description: Professional prompt combining Cross-Chain Protocol Engineer and Blockchain Network Manager expertise for Cross-Chain Integration workflows
+layout: prompt
 slug: cross-chain-interoperability-expert
 tags:
 - blockchain

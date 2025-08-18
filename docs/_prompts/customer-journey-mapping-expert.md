@@ -8,72 +8,175 @@ compatible_models:
 date: '2025-07-21'
 description: Transform your understanding of customer experiences by creating comprehensive journey maps that reveal opportunities for improvement and innovation. This prompt helps map every customer interaction, emotion, and decision point.
 layout: prompt
-prompt: 'I''ll help you create a detailed customer journey map. Let me ask you some questions to understand your specific needs:
+prompt: |
+  |
+  Ill help you create a detailed customer journey map. Let me ask you some questions to understand your specific needs:
+  
+  
+  ABOUT YOUR CUSTOMER:
+  
+  - Who is the specific customer persona we''re mapping? (demographics, goals, tech-savviness)
+  
+  - What primary goal are they trying to achieve?
+  
+  - What''s their current relationship with your brand? (new, existing, returning)
+  
+  
+  JOURNEY SCOPE:
+  
+  - What specific journey are we mapping? (onboarding, purchase, support, renewal)
+  
+  - Where does this journey begin and end?
+  
+  - Are there any critical touchpoints we must include?
+  
+  
+  CURRENT CHALLENGES:
+  
+  - What pain points have customers reported?
+  
+  - Where do customers typically drop off or get frustrated?
+  
+  - What data do you have about customer behavior?
+  
+  
+  Based on your answers, I''ll create:
+  
+  
+  ## 1. VISUAL JOURNEY MAP
+  
+  - **Journey Stages** with clear boundaries and transitions
+  
+  - **Customer Actions** at each stage
+  
+  - **Touchpoints** across all channels (digital, physical, human)
+  
+  - **Emotions** tracked throughout (satisfaction curve)
+  
+  - **Pain Points** and friction moments identified
+  
+  
+  ## 2. DETAILED STAGE ANALYSIS
+  
+  For each journey stage:
+  
+  - Customer mindset and goals
+  
+  - Key decisions being made
+  
+  - Information needs
+  
+  - Success criteria from customer''s view
+  
+  - Common obstacles
+  
+  
+  ## 3. OPPORTUNITY MATRIX
+  
+  | Pain Point | Impact | Effort | Priority | Proposed Solution |
+  
+  |
+  
+
+  Ill help you create a detailed customer journey map. Let me ask you some questions to understand your specific needs:
+
 
 
   ABOUT YOUR CUSTOMER:
 
-  - Who is the specific customer persona we''re mapping? (demographics, goals, tech-savviness)
+
+  - Who is the specific customer persona we''''re mapping? (demographics, goals, tech-savviness)
+
 
   - What primary goal are they trying to achieve?
 
-  - What''s their current relationship with your brand? (new, existing, returning)
+
+  - What''''s their current relationship with your brand? (new, existing, returning)
+
 
 
   JOURNEY SCOPE:
 
+
   - What specific journey are we mapping? (onboarding, purchase, support, renewal)
 
+
   - Where does this journey begin and end?
+
 
   - Are there any critical touchpoints we must include?
 
 
+
   CURRENT CHALLENGES:
+
 
   - What pain points have customers reported?
 
+
   - Where do customers typically drop off or get frustrated?
+
 
   - What data do you have about customer behavior?
 
 
-  Based on your answers, I''ll create:
+
+  Based on your answers, I''''ll create:
+
 
 
   ## 1. VISUAL JOURNEY MAP
 
+
   - **Journey Stages** with clear boundaries and transitions
+
 
   - **Customer Actions** at each stage
 
+
   - **Touchpoints** across all channels (digital, physical, human)
 
+
   - **Emotions** tracked throughout (satisfaction curve)
+
 
   - **Pain Points** and friction moments identified
 
 
+
   ## 2. DETAILED STAGE ANALYSIS
+
 
   For each journey stage:
 
+
   - Customer mindset and goals
+
 
   - Key decisions being made
 
+
   - Information needs
 
-  - Success criteria from customer''s view
+
+  - Success criteria from customer''''s view
+
 
   - Common obstacles
 
 
+
   ## 3. OPPORTUNITY MATRIX
+
 
   | Pain Point | Impact | Effort | Priority | Proposed Solution |
 
-  |------------|--------|--------|----------|------------------|
+
+  |
+
+  '
+title: Customer Journey Mapping Expert
+------------|--------|--------|----------|------------------|
 
   | [Specific issues mapped to improvement opportunities] |
 

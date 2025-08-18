@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Quantum Cryptography Engineer and Security
-  Systems Architect expertise for Quantum Cryptography workflows
+description: Professional prompt combining Quantum Cryptography Engineer and Security Systems Architect expertise for Quantum Cryptography workflows
+layout: prompt
 slug: quantum-cryptography-protocol-expert
 tags:
 - quantum computing

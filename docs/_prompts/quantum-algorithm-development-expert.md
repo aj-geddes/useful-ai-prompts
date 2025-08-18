@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Quantum Algorithm Engineer and Quantum
-  Software Architect expertise for Quantum Algorithm Development workflows
+description: Professional prompt combining Quantum Algorithm Engineer and Quantum Software Architect expertise for Quantum Algorithm Development workflows
+layout: prompt
 slug: quantum-algorithm-development-expert
 tags:
 - quantum computing

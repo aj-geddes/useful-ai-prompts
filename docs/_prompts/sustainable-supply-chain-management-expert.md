@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Sustainability Manager and Supply Chain
-  Operations Director expertise for Sustainable Supply Chain workflows
+description: Professional prompt combining Sustainability Manager and Supply Chain Operations Director expertise for Sustainable Supply Chain workflows
+layout: prompt
 slug: sustainable-supply-chain-management-expert
 tags:
 - supply chain

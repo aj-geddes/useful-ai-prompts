@@ -5,8 +5,8 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt combining Clinical Trial Manager and Biostatistics
-  Director expertise for Clinical Research workflows
+description: Professional prompt combining Clinical Trial Manager and Biostatistics Director expertise for Clinical Research workflows
+layout: prompt
 slug: clinical-trial-design-and-optimization-expert
 tags:
 - biotechnology

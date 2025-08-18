@@ -6,6 +6,7 @@ compatible_models:
 - gemini-pro
 date: '2025-08-16'
 description: Professional prompt for biotechnology optimization and expert consultation
+layout: prompt
 slug: gene-therapy-development-and-manufacturing-platform
 tags:
 - biotechnology
