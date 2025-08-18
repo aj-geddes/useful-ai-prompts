@@ -112,8 +112,8 @@ seo_defaults:
 
 # Site statistics
 stats:
-  total_prompts: 259
-  categories: 14
+  total_prompts: 389
+  categories: 19
   github_stars: 0  # This will be updated dynamically
   total_downloads: 0  # This will be updated dynamically
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Professional AI Prompts Library - 383+ Expert ChatGPT & Claude Prompts for Business Success"
-description: "🚀 Boost productivity with 383+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts with dual-persona frameworks. Free instant access - no signup required!"
+title: "Professional AI Prompts Library - 389+ Expert ChatGPT & Claude Prompts for Business Success"
+description: "🚀 Boost productivity with 389+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts. Free instant access - no signup required!"
 keywords: "AI prompts, ChatGPT prompts, Claude prompts, professional AI prompts, business prompts, technical prompts, AI productivity, prompt engineering, dual persona prompts, business automation, AI tools, blockchain prompts, biotech prompts, management prompts"
 image: "/useful-ai-prompts/assets/images/homepage-hero.png"
 ---
@@ -9,8 +9,8 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
 <div class="search-hero">
     <div class="container">
         <div class="search-header">
-            <h1 class="search-title">Professional AI Prompts Library - 383+ Expert ChatGPT & Claude Prompts</h1>
-            <p class="search-subtitle">🚀 Boost productivity instantly with expert-crafted AI prompts for business, technical workflows, blockchain, biotech, and emerging technologies. Dual-persona frameworks provide comprehensive outputs. <strong>Free access</strong> - no signup required!</p>
+            <h1 class="search-title">Professional AI Prompts Library - 389+ Expert ChatGPT & Claude Prompts</h1>
+            <p class="search-subtitle">🚀 Boost productivity instantly with expert-crafted AI prompts for business, technical workflows, blockchain, biotech, and emerging technologies. Interactive format provides comprehensive guidance. <strong>Free access</strong> - no signup required!</p>
         </div>
         
         <div class="search-container">
@@ -31,7 +31,7 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
                 <div class="stat-label">Expert Prompts</div>
             </div>
             <div class="stat">
-                <div class="stat-number">38</div>
+                <div class="stat-number">42</div>
                 <div class="stat-label">Categories</div>
             </div>
             <div class="stat">
@@ -62,6 +62,14 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
                     <button class="filter-chip" data-category="communication" aria-pressed="false">Communication (15)</button>
                     <button class="filter-chip" data-category="blockchain" aria-pressed="false">Blockchain (10)</button>
                     <button class="filter-chip" data-category="problem-solving" aria-pressed="false">Problem Solving (14)</button>
+                    <button class="filter-chip" data-category="personal-productivity" aria-pressed="false">Productivity (16)</button>
+                    <button class="filter-chip" data-category="financial-planning" aria-pressed="false">Financial (17)</button>
+                    <button class="filter-chip" data-category="career-development" aria-pressed="false">Career (18)</button>
+                    <button class="filter-chip" data-category="health-wellness" aria-pressed="false">Health (14)</button>
+                    <button class="filter-chip" data-category="content-creation" aria-pressed="false">Content (16)</button>
+                    <button class="filter-chip" data-category="learning-skills" aria-pressed="false">Learning (14)</button>
+                    <button class="filter-chip" data-category="personal-growth" aria-pressed="false">Growth (14)</button>
+                    <button class="filter-chip" data-category="relationships-communication" aria-pressed="false">Relations (14)</button>
                     <button class="filter-chip filter-toggle" id="showMoreFilters" aria-expanded="false">
                         <span class="toggle-text">+ More Categories</span>
                         <i class="fas fa-chevron-down toggle-icon"></i>
@@ -287,7 +295,7 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
   "name": "Professional AI Prompts Library",
   "url": "{{ site.url }}{{ site.baseurl }}/",
   "applicationCategory": "Productivity",
-  "description": "Professional AI prompts library with 278+ expert ChatGPT and Claude prompts for business, technical workflows, and emerging technologies",
+  "description": "Professional AI prompts library with 389+ expert ChatGPT and Claude prompts for business, technical workflows, and emerging technologies",
   "operatingSystem": "Any",
   "offers": {
     "@type": "Offer",
@@ -319,8 +327,8 @@ image: "/useful-ai-prompts/assets/images/homepage-hero.png"
     "query-input": "required name=search_term_string"
   },
   "featureList": [
-    "278+ Professional AI Prompts",
-    "Dual-Persona Architecture",
+    "389+ Professional AI Prompts",
+    "Interactive Expert Guidance",
     "18 Specialized Categories",
     "Instant Search & Filtering",
     "One-Click Copy to Clipboard",

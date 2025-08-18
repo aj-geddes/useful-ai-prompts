@@ -1,52 +1,56 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-08-16T08:23:52.216438",
-  "total_prompts": 383,
+  "last_updated": "2025-08-17T21:51:26.351243",
+  "total_prompts": 389,
   "categories": [
-    "healthcare-digital",
-    "project-management",
-    "customer-service",
-    "evaluation-assessment",
+    "space-economy",
+    "academic",
+    "communication",
+    "renewable-energy",
+    "technical-workflows",
+    "technical",
+    "government",
+    "human-resources",
+    "decision-making",
+    "creative",
     "development",
+    "project-management",
+    "biotechnology",
+    "health-wellness",
+    "engineering",
+    "quantum-computing",
+    "evaluation-assessment",
+    "analysis",
+    "career-development",
+    "creation",
+    "optimization",
+    "customer-focused",
+    "finance",
+    "healthcare",
+    "healthcare-digital",
+    "management-leadership",
+    "security",
+    "research",
     "blockchain",
     "learning-development",
-    "biotechnology",
-    "academic",
-    "planning",
-    "technical",
-    "creativity-innovation",
-    "education",
-    "government",
-    "management-leadership",
-    "technical-workflows",
-    "space-economy",
-    "optimization",
-    "renewable-energy",
-    "analysis",
-    "healthcare",
-    "creation",
-    "research",
+    "customer-service",
+    "personal-productivity",
     "business",
-    "decision-making",
+    "financial-planning",
+    "education",
     "problem-solving",
-    "quantum-computing",
-    "operations",
-    "communication",
-    "human-resources",
     "administrative",
-    "security",
     "research-workflows",
-    "customer-focused",
-    "engineering",
+    "planning",
+    "creativity-innovation",
     "supply-chain",
-    "creative",
-    "finance"
+    "operations"
   ],
   "prompts": [
     {
       "title": "Architectural Decision Record (ADR) Generation Prompt",
       "description": "Professional prompt for research optimization and expert consultation",
-      "category": "research",
+      "category": "research-workflows",
       "tags": [
         "research"
       ],
@@ -2067,6 +2071,28 @@
       "file_path": "_prompts/database-schema-development-expert.md"
     },
     {
+      "title": "Debt Elimination Strategist",
+      "description": "Professional prompt for debt elimination and financial freedom planning",
+      "category": "financial-planning",
+      "tags": [
+        "financial planning",
+        "debt elimination"
+      ],
+      "slug": "debt-elimination-strategist",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "financial planning optimization",
+        "debt management"
+      ],
+      "file_path": "_prompts/debt-elimination-strategist.md"
+    },
+    {
       "title": "Debugging Expert",
       "description": "Professional prompt for problem-solving optimization and expert consultation",
       "category": "problem-solving",
@@ -3168,6 +3194,28 @@
       "file_path": "_prompts/first-principles-thinking-expert.md"
     },
     {
+      "title": "Fitness Routine Optimizer",
+      "description": "Professional prompt for health and fitness optimization",
+      "category": "health-wellness",
+      "tags": [
+        "health wellness",
+        "fitness"
+      ],
+      "slug": "fitness-routine-optimizer",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "health wellness optimization",
+        "fitness planning"
+      ],
+      "file_path": "_prompts/fitness-routine-optimizer.md"
+    },
+    {
       "title": "Floating Solar Development and Aquatic Integration Systems",
       "description": "Professional prompt for renewable-energy optimization and expert consultation",
       "category": "renewable-energy",
@@ -3399,6 +3447,28 @@
         "professional workflow enhancement"
       ],
       "file_path": "_prompts/graphic-design-expert.md"
+    },
+    {
+      "title": "Habit Formation Strategist",
+      "description": "Professional prompt for habit formation and behavior change optimization",
+      "category": "personal-productivity",
+      "tags": [
+        "personal productivity",
+        "habits"
+      ],
+      "slug": "habit-formation-strategist",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "personal productivity optimization",
+        "behavior change"
+      ],
+      "file_path": "_prompts/habit-formation-strategist.md"
     },
     {
       "title": "Healthcare AI Implementation Expert",
@@ -3694,6 +3764,28 @@
         "professional workflow enhancement"
       ],
       "file_path": "_prompts/investment-opportunity-assessment-expert.md"
+    },
+    {
+      "title": "Job Search Optimizer",
+      "description": "Professional prompt for career development and job search optimization",
+      "category": "career-development",
+      "tags": [
+        "career development",
+        "job search"
+      ],
+      "slug": "job-search-optimizer",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "career development optimization",
+        "professional advancement"
+      ],
+      "file_path": "_prompts/job-search-optimizer.md"
     },
     {
       "title": "Knowledge Gap Analysis Expert",
@@ -4748,6 +4840,28 @@
         "professional workflow enhancement"
       ],
       "file_path": "_prompts/performance-tuning-expert.md"
+    },
+    {
+      "title": "Personal Budget Optimizer",
+      "description": "Professional prompt for personal financial planning and budget optimization",
+      "category": "financial-planning",
+      "tags": [
+        "financial planning",
+        "budgeting"
+      ],
+      "slug": "personal-budget-optimizer",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "financial planning optimization",
+        "personal budget management"
+      ],
+      "file_path": "_prompts/personal-budget-optimizer.md"
     },
     {
       "title": "Personalization Framework Expert",
@@ -7684,6 +7798,28 @@
         "professional workflow enhancement"
       ],
       "file_path": "_prompts/time-management-expert.md"
+    },
+    {
+      "title": "Time Management Optimizer",
+      "description": "Professional prompt for personal productivity optimization and time management",
+      "category": "personal-productivity",
+      "tags": [
+        "personal productivity",
+        "time management"
+      ],
+      "slug": "time-management-optimizer",
+      "date": "2025-08-18",
+      "version": "3.0.0",
+      "compatible_models": [
+        "claude-3.5-sonnet",
+        "gpt-4",
+        "gemini-pro"
+      ],
+      "use_cases": [
+        "personal productivity optimization",
+        "professional workflow enhancement"
+      ],
+      "file_path": "_prompts/time-management-optimizer.md"
     },
     {
       "title": "Training Material Development Expert",
