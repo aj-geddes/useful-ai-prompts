@@ -159,10 +159,10 @@ For each new prompt:
    # [Prompt Title]
 
    ## Metadata
+- **Created**: 2025-01-15
 
    - **Category**: [Primary Category]
    - **Tags**: [comma, separated, relevant, tags]
-   - **Created**: [YYYY-MM-DD]
    - **Version**: [X.Y.Z]
    - **Personas**: [Primary persona, Secondary persona]
    - **Use Cases**: [comma separated use cases]

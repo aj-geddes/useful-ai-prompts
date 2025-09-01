@@ -10,7 +10,6 @@ Infrastructure as Code and automation prompts for modern cloud operations.
 
 ### CI/CD & Automation
 - [CI Workflow Watchdog](./ci-workflow-watchdog.md) - Continuous integration monitoring and optimization
-- [Docker Production Patterns](./docker-production-patterns.md) - Production-ready Docker configurations
 
 ---
 

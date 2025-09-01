@@ -5,7 +5,6 @@ Specialized prompts for software engineering, infrastructure, and technical oper
 ## Categories
 
 ### [AI Engineering](./ai-engineering/)
-- [Code Review Prompts](./ai-engineering/code-review-prompts.md)
 - [Memory Management Patterns](./ai-engineering/memory-management-patterns.md)
 
 ### [Architecture](./architecture/)
@@ -26,7 +25,6 @@ Specialized prompts for software engineering, infrastructure, and technical oper
 ### [Infrastructure](./infrastructure/)
 - [AzureRM Terraform Module Maker](./infrastructure/azurerm-terraform-module-maker.md)
 - [CI Workflow Watchdog](./infrastructure/ci-workflow-watchdog.md)
-- [Docker Production Patterns](./infrastructure/docker-production-patterns.md)
 - [Terraform Formatting Prompt](./infrastructure/terraform-formatting-prompt.md)
 
 ### [MCP (Model Context Protocol)](./mcp/)
