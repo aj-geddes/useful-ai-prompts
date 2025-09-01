@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-12
 - **Tags**: chronic-illness, health-management, symptom-tracking, wellness-planning, medical-support
 - **Version**: 1.0.0
 - **Use Cases**: chronic disease management, symptom tracking, lifestyle adaptation, health optimization

@@ -1,10 +1,10 @@
 # Healthcare Digital Transformation Strategist
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Healthcare-Digital/Digital-Transformation
 - **Tags**: healthcare digital transformation, EHR optimization, clinical workflows, health IT strategy, healthcare technology
-- **Created**: 2025-01-14
 - **Version**: 1.0.0
 - **Use Cases**: health system digitization, clinical workflow optimization, healthcare technology implementation, EHR strategy
 - **Compatible Models**: GPT-4, Claude 3.5, Gemini Pro, GPT-3.5

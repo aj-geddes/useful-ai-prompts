@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-08
 - **Tags**: sleep-optimization, sleep-hygiene, wellness, health-improvement, energy-management
 - **Version**: 1.0.0
 - **Use Cases**: sleep improvement, energy optimization, health enhancement, lifestyle design

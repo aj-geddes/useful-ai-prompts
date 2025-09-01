@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: parenting, child-development, family-dynamics, communication, discipline-strategies
 - **Version**: 1.0.0
 - **Use Cases**: parenting improvement, child behavior management, family communication, developmental support

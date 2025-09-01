@@ -4,7 +4,7 @@
 
 - **Category**: Creation
 - **Tags**: scriptwriting, screenwriting, video scripts, podcast scripts, narrative structure
-- **Created**: 2025-07-20
+- **Created**: 2025-01-15
 - **Version**: 2.0.0
 - **Use Cases**: feature films, TV episodes, video content, podcasts, commercials, training videos
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

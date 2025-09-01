@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Strategic
+- **Created**: 2025-01-15
 - **Tags**: go-no-go-decisions, project-evaluation, risk-assessment, launch-readiness
 - **Version**: 2.0.0
 

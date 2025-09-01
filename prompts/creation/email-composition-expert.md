@@ -1,10 +1,10 @@
 # Email Composition Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: email writing, business communication, persuasion, relationship building, professional writing
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: sales emails, executive communications, customer service, internal communications, marketing emails
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

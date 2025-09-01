@@ -1,10 +1,10 @@
 # Customer Retention Optimization Expert
 
 ## Metadata
+- **Created**: 2025-07-31
 
 - **Category**: Business/Customer Success
 - **Tags**: customer retention, churn prevention, customer success, lifecycle management, analytics
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: churn prediction, retention campaigns, customer health scoring, lifecycle optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

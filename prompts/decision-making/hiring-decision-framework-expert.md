@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/HR
+- **Created**: 2025-01-15
 - **Tags**: hiring-decisions, talent-evaluation, recruitment, team-building
 - **Version**: 2.0.0
 

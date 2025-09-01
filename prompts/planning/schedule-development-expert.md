@@ -1,10 +1,10 @@
 # Schedule Development Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: schedule development, project timeline, critical path analysis, resource scheduling, milestone planning
-- **Created**: 2025-07-20
 - **Version**: 1.0.0
 - **Use Cases**: project scheduling, timeline planning, milestone tracking, resource coordination, deadline management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

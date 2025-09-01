@@ -1,10 +1,10 @@
 # Event Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: event planning, event management, experience design, logistics planning, stakeholder coordination
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: corporate events, conferences, product launches, trade shows, virtual events, hybrid experiences
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

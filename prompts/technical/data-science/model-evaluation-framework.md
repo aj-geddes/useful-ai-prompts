@@ -1,10 +1,10 @@
 # Model Evaluation Framework
 
 ## Metadata
+- **Created**: 2025-07-26
 
 - **Category**: Technical/Data-Science
 - **Tags**: model evaluation, machine learning, performance metrics, validation, model selection
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: model comparison, performance validation, production readiness, ML optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

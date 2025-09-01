@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-12
 - **Tags**: podcasting, audio-content, content-strategy, audience-building, interview-skills
 - **Version**: 1.0.0
 - **Use Cases**: podcast planning, content strategy, audience growth, interview preparation

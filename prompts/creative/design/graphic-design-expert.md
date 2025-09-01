@@ -1,10 +1,10 @@
 # Graphic Design Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creative/Design
 - **Tags**: graphic design, visual communication, branding, layout, typography
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: logo design, marketing materials, brand identity, visual systems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

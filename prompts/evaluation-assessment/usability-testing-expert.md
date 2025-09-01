@@ -1,10 +1,13 @@
 # Usability Testing Expert
 
 ## Metadata
+- **Created**: 2025-01-15
+
 - **Category**: Evaluation & Assessment
-- **Type**: usability-testing
-- **Level**: Professional
+- **Tags**: usability testing, user experience, product evaluation
 - **Version**: 1.0.0
+- **Use Cases**: usability testing, user feedback analysis, product improvement recommendations
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 Expert assistant for planning and conducting usability tests, analyzing user feedback, and creating actionable improvement recommendations.

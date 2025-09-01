@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Digital Marketing
+- **Created**: 2025-01-15
 - **Tags**: cro, conversion-optimization, user-experience, a-b-testing, funnel-optimization
 - **Version**: 1.0.0
 

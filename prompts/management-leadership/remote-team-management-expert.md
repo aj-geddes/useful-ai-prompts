@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Management & Leadership
+- **Created**: 2025-01-15
 - **Tags**: remote-work, virtual-teams, distributed-teams, collaboration, culture
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21

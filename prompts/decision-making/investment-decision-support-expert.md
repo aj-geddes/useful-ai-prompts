@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Financial
+- **Created**: 2025-01-15
 - **Tags**: investment-analysis, roi-assessment, capital-allocation, financial-decisions
 - **Version**: 2.0.0
 

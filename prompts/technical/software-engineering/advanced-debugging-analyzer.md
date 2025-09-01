@@ -1,10 +1,10 @@
 # Advanced Debugging Analyzer
 
 ## Metadata
+- **Created**: 2025-07-15
 
 - **Category**: Technical/Software-Engineering
 - **Tags**: debugging, troubleshooting, root cause analysis, performance debugging, diagnostics
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: bug diagnosis, performance issues, memory leaks, system debugging
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

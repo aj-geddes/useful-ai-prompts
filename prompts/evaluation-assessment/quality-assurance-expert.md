@@ -1,10 +1,10 @@
 # Quality Assurance Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Evaluation & Assessment
 - **Tags**: quality assurance, testing, evaluation, QA, quality control
-- **Created**: 2025-07-21
 - **Version**: 1.0.0
 - **Use Cases**: QA planning, test strategy, quality metrics, test automation, defect management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

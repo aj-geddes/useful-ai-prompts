@@ -1,10 +1,10 @@
 # Decision Making Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: decision making, strategic choices, problem solving, analysis, evaluation
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: business decisions, strategic choices, option evaluation, risk assessment, decision frameworks
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

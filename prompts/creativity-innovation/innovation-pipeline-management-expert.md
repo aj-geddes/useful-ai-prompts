@@ -1,10 +1,10 @@
 # Innovation Manager
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: innovation pipeline, portfolio management, innovation strategy, project tracking
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: innovation portfolio management, R&D oversight, innovation tracking, project prioritization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

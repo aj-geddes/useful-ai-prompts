@@ -1,10 +1,10 @@
 # Content Creation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: content creation, copywriting, storytelling, content strategy, digital content
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: blog writing, article creation, web content, social media content, brand storytelling
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

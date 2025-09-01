@@ -1,10 +1,10 @@
 # Team Collaboration Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: team collaboration, remote work, cross-functional teams, team dynamics, collaboration tools
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: remote team setup, cross-functional alignment, collaboration improvement, team culture building
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

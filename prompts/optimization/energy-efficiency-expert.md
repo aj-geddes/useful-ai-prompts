@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Sustainability
+- **Created**: 2025-01-15
 - **Tags**: energy-efficiency, sustainability, cost-reduction, carbon-footprint, green-operations
 - **Version**: 1.0.0
 

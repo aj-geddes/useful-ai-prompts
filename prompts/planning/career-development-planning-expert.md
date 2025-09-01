@@ -1,10 +1,10 @@
 # Career Development Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: career development, professional growth, skill development, career planning, leadership development
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: career planning, skill development, leadership growth, career transitions, professional advancement
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

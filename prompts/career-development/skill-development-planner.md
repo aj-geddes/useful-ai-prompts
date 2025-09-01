@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-12
 - **Tags**: skill-building, professional-development, learning-plan, competency-development, career-skills
 - **Version**: 1.0.0
 - **Use Cases**: skill assessment, learning planning, professional development, competency building

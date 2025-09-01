@@ -1,10 +1,10 @@
 # Contingency Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: contingency planning, business continuity, crisis management, disaster recovery, resilience planning
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: business continuity, disaster recovery, crisis response, emergency planning, operational resilience
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

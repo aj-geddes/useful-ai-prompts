@@ -1,10 +1,10 @@
 # Competitive Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-31
 
 - **Category**: Analysis
 - **Tags**: competitive analysis, market intelligence, competitor profiling, strategic positioning
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: competitor assessment, market positioning, strategic planning, threat analysis
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

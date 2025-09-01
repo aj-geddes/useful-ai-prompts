@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Skills
+- **Created**: 2025-01-15
 - **Tags**: certification-planning, professional-development, skill-validation, career-advancement, learning-strategy
 - **Version**: 1.0.0
 - **Use Cases**: certification planning, professional development, skill validation, career advancement

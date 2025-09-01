@@ -1,10 +1,10 @@
 # Lesson Plan Creator
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Education/Teaching
 - **Tags**: lesson planning, curriculum design, learning objectives, assessment, pedagogical strategies
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: lesson planning, curriculum development, learning assessment, differentiated instruction
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

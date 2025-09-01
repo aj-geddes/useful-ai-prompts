@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Management & Leadership
+- **Created**: 2025-01-15
 - **Tags**: strategy, vision, leadership, transformation, alignment
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21

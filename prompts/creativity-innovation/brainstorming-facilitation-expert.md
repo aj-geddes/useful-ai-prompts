@@ -1,10 +1,10 @@
 # Brainstorming Facilitator
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: brainstorming, ideation, team creativity, idea generation
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: team brainstorming sessions, idea generation, creative problem-solving, concept development
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-01
 - **Tags**: email-marketing, newsletter, audience-engagement, conversion-optimization, automation
 - **Version**: 1.0.0
 - **Use Cases**: email campaigns, newsletter strategy, subscriber growth, engagement optimization

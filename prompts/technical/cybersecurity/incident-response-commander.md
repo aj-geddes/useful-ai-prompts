@@ -1,10 +1,10 @@
 # Incident Response Commander
 
 ## Metadata
+- **Created**: 2025-07-16
 
 - **Category**: Technical/Cybersecurity
 - **Tags**: incident response, security breach, forensics, threat mitigation, crisis management
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: security incidents, breach response, forensic analysis, threat containment
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

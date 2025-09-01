@@ -1,10 +1,10 @@
 # Healthcare Operations Optimization Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Healthcare/Administration
 - **Tags**: healthcare operations, clinical workflows, patient experience, efficiency optimization, compliance
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: workflow optimization, patient experience improvement, cost reduction, compliance management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

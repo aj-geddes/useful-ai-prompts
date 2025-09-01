@@ -1,10 +1,10 @@
 # Compliance Officer Expert
 
 ## Metadata
+- **Created**: 2025-07-20
 
 - **Category**: Business/Legal
 - **Tags**: compliance, regulatory affairs, risk management, governance, audit
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: regulatory compliance, policy development, audit management, risk mitigation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

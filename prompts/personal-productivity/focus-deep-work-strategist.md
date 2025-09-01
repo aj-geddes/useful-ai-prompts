@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-18
 - **Tags**: focus, deep-work, concentration, distraction-management, cognitive-performance
 - **Version**: 1.0.0
 - **Use Cases**: improving concentration, eliminating distractions, deep work sessions, cognitive optimization

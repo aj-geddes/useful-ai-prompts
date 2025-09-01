@@ -1,10 +1,10 @@
 # Release Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: release planning, software deployment, version management, deployment strategy, release coordination
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: software releases, product launches, deployment planning, version control, rollout coordination
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

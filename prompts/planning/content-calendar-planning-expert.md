@@ -1,10 +1,10 @@
 # Content Calendar Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: content calendar, content strategy, editorial planning, content marketing, audience engagement
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: content marketing, editorial planning, social media strategy, thought leadership, brand building
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

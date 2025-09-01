@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-20
 - **Tags**: mental-health, emotional-wellness, stress-management, self-care, mindfulness
 - **Version**: 1.0.0
 - **Use Cases**: stress reduction, emotional support, mental wellness planning, self-care strategies

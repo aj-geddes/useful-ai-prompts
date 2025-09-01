@@ -1,10 +1,10 @@
 # User-Centered Design Guide
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: user-centered design, UX design, human-centered design, accessibility, user research
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: product design, service design, app development, website design, experience design
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

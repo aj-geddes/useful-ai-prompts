@@ -1,10 +1,10 @@
 # Stakeholder Communication Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: stakeholder management, strategic communication, relationship building, influence mapping
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: project communication, change management, executive alignment, partner management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

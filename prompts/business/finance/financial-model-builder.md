@@ -1,10 +1,10 @@
 # Financial Model Builder
 
 ## Metadata
+- **Created**: 2025-07-18
 
 - **Category**: Business/Finance
 - **Tags**: financial modeling, financial analysis, forecasting, valuation, scenario planning
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: financial planning, investment analysis, budgeting, valuation models
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

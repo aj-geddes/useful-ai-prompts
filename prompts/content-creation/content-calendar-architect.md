@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-10
 - **Tags**: content-planning, editorial-calendar, content-strategy, publishing-schedule, content-management
 - **Version**: 1.0.0
 - **Use Cases**: content calendar creation, editorial planning, content organization, publishing strategy

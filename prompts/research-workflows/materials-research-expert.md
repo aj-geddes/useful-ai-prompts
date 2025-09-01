@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/Engineering
+- **Created**: 2025-01-15
 - **Tags**: materials-science, materials-research, characterization, materials-testing
 - **Version**: 1.0.0
 

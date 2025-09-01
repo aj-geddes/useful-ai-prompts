@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Planning
+- **Created**: 2025-01-15
 - **Tags**: scheduling, resource-scheduling, shift-planning, timeline-optimization, capacity-planning
 - **Version**: 1.0.0
 

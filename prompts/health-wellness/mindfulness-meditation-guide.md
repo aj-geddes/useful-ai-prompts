@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-10
 - **Tags**: mindfulness, meditation, stress-relief, mental-wellness, present-moment-awareness
 - **Version**: 1.0.0
 - **Use Cases**: meditation practice, stress reduction, mindfulness development, mental wellness

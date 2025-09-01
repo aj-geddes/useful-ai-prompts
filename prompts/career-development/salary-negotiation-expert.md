@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-10
 - **Tags**: salary-negotiation, compensation-planning, career-advancement, professional-development, workplace-communication
 - **Version**: 1.0.0
 - **Use Cases**: salary negotiation, compensation optimization, career advancement, workplace advocacy

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-20
 - **Tags**: financial-goals, goal-tracking, wealth-building, financial-planning, progress-monitoring
 - **Version**: 1.0.0
 - **Use Cases**: financial goal setting, progress tracking, milestone planning, financial accountability

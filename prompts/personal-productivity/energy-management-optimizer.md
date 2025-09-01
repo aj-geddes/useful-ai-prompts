@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-08
 - **Tags**: energy-management, circadian-rhythm, peak-performance, vitality, productivity, wellness
 - **Version**: 1.0.0
 - **Use Cases**: energy optimization, peak performance timing, fatigue management, productivity enhancement

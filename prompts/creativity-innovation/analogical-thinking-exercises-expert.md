@@ -1,10 +1,10 @@
 # Analogical Thinking Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: analogical thinking, cross-domain innovation, pattern transfer, biomimicry
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: innovation development, breakthrough solutions, cross-industry insights, creative problem solving
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

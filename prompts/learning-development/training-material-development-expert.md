@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Development
+- **Created**: 2025-01-15
 - **Tags**: instructional materials, content development, training design, educational resources
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21

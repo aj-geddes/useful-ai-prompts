@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/UX
+- **Created**: 2025-01-15
 - **Tags**: user-research, ux-research, usability-testing, user-interviews
 - **Version**: 1.0.0
 

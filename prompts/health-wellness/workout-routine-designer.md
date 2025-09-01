@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-20
 - **Tags**: fitness, exercise, workout-planning, strength-training, health-optimization
 - **Version**: 1.0.0
 - **Use Cases**: fitness planning, exercise routine creation, health improvement, strength building

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Technical Workflows
+- **Created**: 2025-01-15
 - **Tags**: cloud-migration, aws, azure, gcp, migration-strategy
 - **Version**: 1.0.0
 

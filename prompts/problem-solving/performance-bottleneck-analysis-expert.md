@@ -1,10 +1,10 @@
 # Performance Bottleneck Analysis Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: performance optimization, bottleneck analysis, system performance, optimization, profiling
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: performance issues, slow systems, optimization, scalability problems, resource constraints
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

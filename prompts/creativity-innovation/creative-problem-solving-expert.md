@@ -1,10 +1,10 @@
 # Creative Problem Solver
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: problem solving, creative solutions, brainstorming, innovation
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: business challenges, product problems, process improvements, strategic issues
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

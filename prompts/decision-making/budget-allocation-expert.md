@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Financial
+- **Created**: 2025-01-15
 - **Tags**: budget-allocation, financial-planning, resource-distribution, cost-optimization
 - **Version**: 2.0.0
 

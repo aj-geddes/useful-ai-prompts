@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Operations
+- **Created**: 2025-01-15
 - **Tags**: supply-chain, logistics, inventory-optimization, vendor-management, distribution
 - **Version**: 1.0.0
 

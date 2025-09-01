@@ -1,10 +1,10 @@
 # Status Reporting Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: status updates, progress reporting, project communication, dashboards, executive reporting
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: project status updates, executive dashboards, team progress reports, stakeholder communication
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

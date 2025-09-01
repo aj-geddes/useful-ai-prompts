@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-08
 - **Tags**: credit-score, credit-repair, financial-health, debt-management, credit-optimization
 - **Version**: 1.0.0
 - **Use Cases**: credit improvement, credit repair, financial health, loan qualification

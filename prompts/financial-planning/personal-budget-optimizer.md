@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-05
 - **Tags**: budgeting, personal-finance, expense-tracking, financial-goals, money-management
 - **Version**: 1.0.0
 - **Use Cases**: budget creation, expense optimization, financial planning, debt management

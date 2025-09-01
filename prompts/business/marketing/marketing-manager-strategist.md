@@ -1,10 +1,10 @@
 # Marketing Manager Strategist
 
 ## Metadata
+- **Created**: 2025-07-24
 
 - **Category**: Business/Marketing
 - **Tags**: marketing strategy, campaign management, brand development, marketing planning
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: marketing planning, campaign development, brand strategy, market analysis
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

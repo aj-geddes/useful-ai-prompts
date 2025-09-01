@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning  
+- **Created**: 2025-08-05
 - **Tags**: expense-tracking, budgeting, financial-management, spending-analysis, money-management
 - **Version**: 1.0.0
 - **Use Cases**: expense management, budget optimization, spending analysis, financial awareness

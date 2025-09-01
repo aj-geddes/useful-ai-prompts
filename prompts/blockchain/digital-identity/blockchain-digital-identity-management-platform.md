@@ -1,10 +1,10 @@
 # Digital Identity Manager
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Digital-Identity
 - **Tags**: digital identity, self-sovereign identity, verifiable credentials, privacy, KYC
-- **Created**: 2025-01-14
 - **Version**: 2.0.0
 - **Use Cases**: identity verification, credential management, privacy protection, compliance automation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro

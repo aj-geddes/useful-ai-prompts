@@ -1,10 +1,10 @@
 # Root Cause Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-26
 
 - **Category**: Analysis
 - **Tags**: root cause analysis, problem solving, failure analysis, systemic issues, corrective actions
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: incident investigation, quality issues, process failures, performance problems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

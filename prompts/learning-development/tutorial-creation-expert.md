@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Development
+- **Created**: 2025-01-15
 - **Tags**: tutorial design, step-by-step guides, how-to content, instructional writing
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21

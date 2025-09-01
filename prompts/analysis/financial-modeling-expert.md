@@ -1,10 +1,10 @@
 # Financial Modeling Expert
 
 ## Metadata
+- **Created**: 2025-07-28
 
 - **Category**: Analysis
 - **Tags**: financial modeling, valuation, DCF analysis, financial forecasting, investment analysis
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: company valuation, investment decisions, M&A analysis, financial planning
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

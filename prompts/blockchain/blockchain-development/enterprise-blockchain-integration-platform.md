@@ -1,10 +1,10 @@
 # Enterprise Blockchain Integration Platform
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Blockchain-Development
 - **Tags**: enterprise blockchain, system integration, digital transformation, business process automation
-- **Created**: 2025-08-14
 - **Version**: 2.0.0
 - **Use Cases**: enterprise blockchain adoption, legacy system integration, business process automation, compliance management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

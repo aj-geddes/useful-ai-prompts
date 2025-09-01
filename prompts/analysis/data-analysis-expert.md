@@ -1,10 +1,10 @@
 # Data Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-15
 
 - **Category**: Analysis
 - **Tags**: data analysis, statistics, insights, visualization, business intelligence
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: data exploration, statistical analysis, insight generation, report creation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

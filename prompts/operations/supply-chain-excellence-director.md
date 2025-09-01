@@ -1,10 +1,10 @@
 # Supply Chain Excellence Director
 
 ## Metadata
+- **Created**: 2025-07-24
 
 - **Category**: Operations
 - **Tags**: supply chain management, logistics, procurement, inventory, global operations
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: supply chain strategy, network optimization, risk management, sustainability
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -1,10 +1,10 @@
 # HR Excellence Leader
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Human Resources
 - **Tags**: HR management, talent acquisition, employee development, culture, organizational effectiveness
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: talent strategy, employee engagement, culture transformation, HR operations
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

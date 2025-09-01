@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Resource Management
+- **Created**: 2025-01-15
 - **Tags**: resource-allocation, capacity-planning, utilization, asset-management
 - **Version**: 1.0.0
 

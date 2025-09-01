@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-10
 - **Tags**: habits, behavior-change, routine-building, discipline, personal-development
 - **Version**: 1.0.0
 - **Use Cases**: building new habits, breaking bad habits, routine creation, behavior modification

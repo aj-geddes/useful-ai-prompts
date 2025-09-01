@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-01
 - **Tags**: social-media, content-strategy, audience-engagement, brand-building, digital-marketing
 - **Version**: 1.0.0
 - **Use Cases**: social media planning, content calendar creation, audience growth, brand engagement

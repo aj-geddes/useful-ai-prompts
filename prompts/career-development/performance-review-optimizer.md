@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-02
 - **Tags**: performance-reviews, career-advancement, self-assessment, professional-development, goal-setting
 - **Version**: 1.0.0
 - **Use Cases**: performance review preparation, self-evaluation, career planning, professional growth

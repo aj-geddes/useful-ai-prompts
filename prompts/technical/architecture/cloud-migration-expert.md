@@ -1,10 +1,10 @@
 # Cloud Migration Expert
 
 ## Metadata
+- **Created**: 2025-07-28
 
 - **Category**: Technical/Architecture
 - **Tags**: cloud migration, AWS, Azure, GCP, infrastructure, migration strategy
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: cloud assessment, migration planning, architecture design, cost optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

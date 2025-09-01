@@ -1,10 +1,10 @@
 # Pharmaceutical Research Excellence Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Healthcare
 - **Tags**: pharmaceutical research, drug development, clinical trials, regulatory compliance, R&D
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: drug discovery, clinical trial design, regulatory submission, research management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

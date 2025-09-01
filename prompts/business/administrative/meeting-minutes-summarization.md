@@ -1,10 +1,10 @@
 # Meeting Minutes & Summarization Expert
 
 ## Metadata
+- **Created**: 2025-07-30
 
 - **Category**: Business/Administrative
 - **Tags**: meeting minutes, summarization, action items, administrative, documentation
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: post-meeting documentation, action item tracking, stakeholder communication, decision records
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

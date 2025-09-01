@@ -1,10 +1,10 @@
 # Performance Review Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Evaluation & Assessment
 - **Tags**: performance review, employee evaluation, feedback, goals
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: annual reviews, quarterly check-ins, performance improvement plans, promotion evaluations
 

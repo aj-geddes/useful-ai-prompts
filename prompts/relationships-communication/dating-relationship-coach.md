@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: dating, relationships, romance, communication, connection-building
 - **Version**: 1.0.0
 - **Use Cases**: dating success, relationship building, romantic communication, connection skills

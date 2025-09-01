@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/Science
+- **Created**: 2025-01-15
 - **Tags**: scientific-method, research-design, hypothesis-testing, experimental-design
 - **Version**: 1.0.0
 

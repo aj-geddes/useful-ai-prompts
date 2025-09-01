@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Technical Workflows
+- **Created**: 2025-01-15
 - **Tags**: documentation, technical-writing, api-docs, knowledge-management
 - **Version**: 1.0.0
 

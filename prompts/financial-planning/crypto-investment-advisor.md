@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-10
 - **Tags**: cryptocurrency, blockchain, digital-assets, investment-strategy, portfolio-diversification
 - **Version**: 1.0.0
 - **Use Cases**: crypto investing, blockchain education, digital asset strategy, portfolio allocation

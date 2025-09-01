@@ -1,10 +1,10 @@
 # Document Organization & Filing Expert
 
 ## Metadata
+- **Created**: 2025-07-26
 
 - **Category**: Business/Administrative
 - **Tags**: document management, filing system, organization, administrative, information architecture
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: document filing, archive organization, information retrieval, compliance management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-05
 - **Tags**: mental-health, emotional-wellness, stress-management, self-care, resilience-building
 - **Version**: 1.0.0
 - **Use Cases**: mental health support, emotional wellness, stress management, self-care planning

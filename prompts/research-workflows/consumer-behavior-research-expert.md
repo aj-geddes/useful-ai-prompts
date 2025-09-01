@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/Marketing
+- **Created**: 2025-01-15
 - **Tags**: consumer-research, behavioral-analysis, purchase-behavior, consumer-psychology
 - **Version**: 1.0.0
 

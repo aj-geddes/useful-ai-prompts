@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-18
 - **Tags**: job-search, resume-optimization, interview-preparation, networking, career-transition
 - **Version**: 1.0.0
 - **Use Cases**: job hunting, career change, resume writing, interview prep, salary negotiation

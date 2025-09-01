@@ -1,10 +1,10 @@
 # Error Handling Design Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: error handling, resilience, fault tolerance, system design, exception handling
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: error strategy design, exception handling, fault tolerance, recovery mechanisms, resilient systems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Procurement
+- **Created**: 2025-01-15
 - **Tags**: vendor-selection, procurement, supplier-evaluation, rfp-process
 - **Version**: 2.0.0
 

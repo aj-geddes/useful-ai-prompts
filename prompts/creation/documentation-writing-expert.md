@@ -1,10 +1,10 @@
 # Documentation Writing Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: technical writing, documentation, API docs, user guides, knowledge management
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: API documentation, user manuals, developer guides, system documentation, process documentation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

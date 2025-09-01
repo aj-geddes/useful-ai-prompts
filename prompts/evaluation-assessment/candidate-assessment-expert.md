@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Evaluation & Assessment
+- **Created**: 2025-01-15
 - **Type**: candidate-assessment
 - **Level**: Professional
 - **Version**: 1.0.0

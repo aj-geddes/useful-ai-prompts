@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Governance
+- **Created**: 2025-01-15
 - **Tags**: policy-development, governance, compliance, organizational-standards
 - **Version**: 2.0.0
 

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: conflict-resolution, mediation, communication-skills, relationship-repair, negotiation
 - **Version**: 1.0.0
 - **Use Cases**: relationship conflicts, workplace disputes, family mediation, communication improvement

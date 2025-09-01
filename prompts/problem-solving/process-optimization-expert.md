@@ -1,10 +1,10 @@
 # Process Optimization Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: process optimization, efficiency, workflow improvement, lean, operational excellence
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: workflow optimization, efficiency improvement, bottleneck removal, process redesign, automation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

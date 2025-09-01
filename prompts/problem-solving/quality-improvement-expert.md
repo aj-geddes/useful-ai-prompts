@@ -1,10 +1,10 @@
 # Quality Improvement Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: quality improvement, quality control, continuous improvement, defect reduction, six sigma
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: quality issues, defect reduction, process improvement, standards implementation, quality systems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

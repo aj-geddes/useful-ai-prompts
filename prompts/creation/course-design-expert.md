@@ -1,10 +1,10 @@
 # Course Design Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: course design, instructional design, curriculum development, online learning, educational content
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: online courses, corporate training, academic curriculum, workshops, certification programs
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

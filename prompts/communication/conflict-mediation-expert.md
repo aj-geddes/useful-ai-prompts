@@ -1,10 +1,10 @@
 # Conflict Mediation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: conflict resolution, mediation, workplace disputes, team dynamics, communication
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: workplace conflicts, team disputes, stakeholder disagreements, interdepartmental issues, communication breakdowns
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

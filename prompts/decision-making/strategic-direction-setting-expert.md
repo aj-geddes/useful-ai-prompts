@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Leadership
+- **Created**: 2025-01-15
 - **Tags**: strategic-planning, vision-setting, direction-setting, leadership
 - **Version**: 2.0.0
 

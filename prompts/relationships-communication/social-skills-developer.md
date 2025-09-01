@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: social-skills, interpersonal-communication, relationship-building, social-confidence, networking
 - **Version**: 1.0.0
 - **Use Cases**: social skill improvement, relationship building, communication enhancement, social confidence

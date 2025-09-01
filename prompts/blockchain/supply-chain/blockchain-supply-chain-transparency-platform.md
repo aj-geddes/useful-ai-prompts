@@ -1,10 +1,10 @@
 # Supply Chain Transparency Manager
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Supply-Chain
 - **Tags**: supply chain, traceability, transparency, logistics, compliance
-- **Created**: 2025-01-14
 - **Version**: 2.0.0
 - **Use Cases**: product traceability, supply chain transparency, compliance tracking, logistics optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro

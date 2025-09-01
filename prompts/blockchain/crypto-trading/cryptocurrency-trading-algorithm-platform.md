@@ -1,10 +1,10 @@
 # Cryptocurrency Trading Bot Builder
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Crypto-Trading
 - **Tags**: crypto trading, trading bot, algorithmic trading, automated trading, cryptocurrency strategy
-- **Created**: 2025-08-14
 - **Version**: 2.0.0
 - **Use Cases**: automated crypto trading, trading strategy development, portfolio management, risk control
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-01
 - **Tags**: time-management, productivity, scheduling, prioritization, work-life-balance, efficiency
 - **Version**: 1.0.0
 - **Use Cases**: daily scheduling, productivity improvement, time audit, priority management

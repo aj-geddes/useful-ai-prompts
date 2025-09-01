@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-08
 - **Tags**: career-advancement, promotion-strategy, professional-growth, leadership-development, career-planning
 - **Version**: 1.0.0
 - **Use Cases**: promotion planning, career strategy, skill development, professional networking, leadership preparation

@@ -1,10 +1,10 @@
 # Visual Design Concepts Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: visual design, creative concepts, art direction, brand aesthetics, design systems
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: brand identity, marketing campaigns, product design, environmental design, digital experiences
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

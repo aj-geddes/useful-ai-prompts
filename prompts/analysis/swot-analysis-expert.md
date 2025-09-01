@@ -1,10 +1,10 @@
 # SWOT Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-15
 
 - **Category**: Analysis
 - **Tags**: SWOT analysis, strategic planning, competitive positioning, opportunity assessment, strategic decision-making
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: strategic planning, market entry, competitive analysis, investment decisions
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

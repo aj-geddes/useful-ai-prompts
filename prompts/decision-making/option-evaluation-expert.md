@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/General
+- **Created**: 2025-01-15
 - **Tags**: option-analysis, decision-matrix, comparison-framework, choice-optimization
 - **Version**: 2.0.0
 

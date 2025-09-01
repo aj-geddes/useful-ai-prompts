@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: active-listening, communication-skills, empathy, relationship-building, interpersonal-skills
 - **Version**: 1.0.0
 - **Use Cases**: communication improvement, relationship enhancement, leadership development, conflict resolution

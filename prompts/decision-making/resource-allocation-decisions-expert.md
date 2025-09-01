@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Operations
+- **Created**: 2025-01-15
 - **Tags**: resource-allocation, capacity-planning, optimization, efficiency
 - **Version**: 2.0.0
 

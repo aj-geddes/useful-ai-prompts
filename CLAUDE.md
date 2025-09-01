@@ -51,12 +51,12 @@ python update_prompt_index.py
 - **Python scripts** - Conversion, validation, and maintenance utilities
 
 ### Prompt Architecture
-Each prompt follows a strict dual-persona architecture:
-- **Primary Expert** (10-15+ years domain experience)
-- **Secondary Expert** (complementary perspective)
-- **Multiple Frameworks** (3-5 professional methodologies)
-- **Four-Phase Processing** (Assessment → Design → Implementation → Optimization)
-- **Comprehensive Output** (350+ lines minimum)
+Each prompt follows a conversational, user-friendly format:
+- **Clear metadata** (category, tags, use cases)
+- **Helpful description** explaining the prompt's purpose
+- **Interactive questions** to understand user's context
+- **Structured deliverables** based on user's needs
+- **Practical examples** showing usage
 
 ### Data Flow
 1. Source prompts in `/prompts/` directories
@@ -70,7 +70,7 @@ Each prompt follows a strict dual-persona architecture:
 - Located in categorized subdirectories under `/prompts/`
 - Use kebab-case naming: `strategic-roadmap-generator.md`
 - Include role/function in filename
-- Follow dual-persona + frameworks structure
+- Follow conversational format with clear structure
 
 ### Jekyll Collections
 - `_prompts/` - Individual prompt pages
@@ -87,25 +87,25 @@ Each prompt follows a strict dual-persona architecture:
 
 ### Adding New Prompts
 1. Create prompt in appropriate `/prompts/[category]/` directory
-2. Follow dual-persona architecture requirements
-3. Include metadata, frameworks, and 4-phase structure
+2. Follow the conversational format with context questions
+3. Include metadata (category, tags, use cases)
 4. Run conversion scripts to generate Jekyll version
 5. Update PROMPT-INDEX.json
 
 ### Prompt Quality Standards
-- Minimum 350 lines of content
-- Dual-persona implementation (Primary + Secondary expert)
-- 3-5 professional frameworks integrated
-- Four-phase systematic processing
-- Executive summary + detailed deliverables
-- Implementation roadmap + risk management
+- Clear, conversational tone
+- Context-gathering questions to understand the user's needs
+- Structured response format with defined deliverables
+- Practical, actionable guidance
+- Real-world examples demonstrating usage
+- Professional expertise without unnecessary complexity
 
 ### Conversion Process
 Old format prompts are converted to new conversational format using:
 - Extract key metadata (title, category, tags)
-- Transform dual-persona structure
-- Maintain framework integration
-- Preserve 4-phase processing approach
+- Transform to question-based context gathering
+- Simplify into user-friendly language
+- Add practical examples and clear deliverables
 
 ## Website Deployment
 
@@ -126,8 +126,8 @@ For AI agents working with this repository:
 
 ## Important Notes
 
-- This repository focuses on **expert-level prompts** for professional workflows
-- Each prompt combines multiple perspectives and methodologies
-- Prompts are designed for 600+ line outputs with structured deliverables
+- This repository focuses on **helpful prompts** for professional workflows
+- Each prompt provides expert guidance in a conversational format
+- Prompts gather context through questions and provide structured deliverables
 - The conversion system maintains compatibility between source and Jekyll formats
-- Quality standards are strictly enforced (350+ lines, dual-persona, frameworks)
+- Quality standards focus on clarity, usability, and practical value

@@ -1,10 +1,10 @@
 # Statistical Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-18
 
 - **Category**: Analysis
 - **Tags**: statistical analysis, hypothesis testing, data modeling, statistical inference, quantitative analysis
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: hypothesis testing, predictive modeling, experimental design, statistical inference
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

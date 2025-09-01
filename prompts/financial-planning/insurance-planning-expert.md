@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-10
 - **Tags**: insurance-planning, risk-management, financial-protection, life-insurance, health-insurance
 - **Version**: 1.0.0
 - **Use Cases**: insurance needs analysis, coverage optimization, risk protection, financial planning

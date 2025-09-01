@@ -1,10 +1,10 @@
 # Contract Review Expert
 
 ## Metadata
+- **Created**: 2025-07-18
 
 - **Category**: Business/Legal
 - **Tags**: contract review, legal analysis, risk assessment, compliance, negotiation
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: contract analysis, risk identification, compliance review, negotiation support
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

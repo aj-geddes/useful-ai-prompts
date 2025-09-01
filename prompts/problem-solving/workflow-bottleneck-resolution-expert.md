@@ -1,10 +1,10 @@
 # Workflow Bottleneck Resolution Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: workflow optimization, bottleneck analysis, process improvement, efficiency, flow optimization
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: workflow bottlenecks, process delays, efficiency issues, capacity problems, throughput optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

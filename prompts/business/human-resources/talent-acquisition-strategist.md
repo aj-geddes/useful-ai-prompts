@@ -1,10 +1,10 @@
 # Talent Acquisition Strategy Expert
 
 ## Metadata
+- **Created**: 2025-07-22
 
 - **Category**: Business/Human Resources
 - **Tags**: talent acquisition, recruiting, hiring, candidate experience, HR strategy
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: hiring strategy, candidate sourcing, interview design, employer branding
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

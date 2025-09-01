@@ -1,10 +1,10 @@
 # Comprehensive Test Strategist
 
 ## Metadata
+- **Created**: 2025-07-22
 
 - **Category**: Technical/Quality-Assurance
 - **Tags**: test strategy, quality assurance, test planning, automation, test management
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: test planning, quality strategy, automation framework, test coverage
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

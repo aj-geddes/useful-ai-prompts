@@ -1,10 +1,10 @@
 # Public Speaking Preparation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: public speaking, presentation skills, speech preparation, stage presence, speaking anxiety
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: keynote speeches, conference talks, sales presentations, team meetings
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

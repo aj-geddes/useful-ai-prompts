@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-01
 - **Tags**: sleep-quality, recovery, energy-optimization, health-improvement, wellness
 - **Version**: 1.0.0
 - **Use Cases**: sleep improvement, energy optimization, health enhancement, recovery strategies

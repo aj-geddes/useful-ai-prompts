@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: workplace-communication, professional-relationships, team-collaboration, office-dynamics, career-communication
 - **Version**: 1.0.0
 - **Use Cases**: workplace communication, professional relationships, team collaboration, office success

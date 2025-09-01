@@ -1,10 +1,10 @@
 # Product Roadmapping Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: product roadmap, product strategy, feature prioritization, product planning, stakeholder alignment
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: product planning, feature prioritization, strategic alignment, stakeholder communication, product vision
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-18
 - **Tags**: weight-management, healthy-lifestyle, nutrition, fitness, sustainable-habits
 - **Version**: 1.0.0
 - **Use Cases**: weight loss, healthy weight maintenance, lifestyle change, fitness planning

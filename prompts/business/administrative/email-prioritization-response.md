@@ -1,10 +1,10 @@
 # Email Prioritization & Response Expert
 
 ## Metadata
+- **Created**: 2025-07-28
 
 - **Category**: Business/Administrative
 - **Tags**: email management, prioritization, communication, administrative, productivity
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: inbox management, email triage, response drafting, communication optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

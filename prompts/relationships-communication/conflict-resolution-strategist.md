@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: conflict-resolution, communication, mediation, relationship-management, problem-solving
 - **Version**: 1.0.0
 - **Use Cases**: conflict management, relationship repair, workplace mediation, family disputes

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Skills
+- **Created**: 2025-01-15
 - **Tags**: public-speaking, presentation-skills, communication, confidence, speaking-anxiety
 - **Version**: 1.0.0
 - **Use Cases**: presentation improvement, speaking confidence, communication skills, speech preparation

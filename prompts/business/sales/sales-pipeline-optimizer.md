@@ -1,10 +1,10 @@
 # Sales Pipeline Optimizer
 
 ## Metadata
+- **Created**: 2025-07-28
 
 - **Category**: Business/Sales
 - **Tags**: sales pipeline, pipeline management, sales optimization, revenue forecasting
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: pipeline optimization, sales forecasting, deal acceleration, conversion improvement
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

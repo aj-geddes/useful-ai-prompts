@@ -1,10 +1,10 @@
 # Mechanical Design Review Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Engineering/Mechanical
 - **Tags**: design review, mechanical engineering, analysis, validation, optimization, CAD
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: design review, engineering analysis, optimization, validation, compliance assessment
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

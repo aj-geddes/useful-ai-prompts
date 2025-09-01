@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Skills
+- **Created**: 2025-01-15
 - **Tags**: online-learning, skill-development, education-optimization, learning-strategies, knowledge-retention
 - **Version**: 1.0.0
 - **Use Cases**: online course planning, skill acquisition, learning efficiency, educational goal achievement

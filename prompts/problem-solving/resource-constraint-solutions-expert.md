@@ -1,10 +1,10 @@
 # Resource Constraint Solutions Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: resource optimization, constraints, capacity planning, resource allocation, efficiency
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: resource shortages, budget constraints, capacity issues, optimization, allocation problems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

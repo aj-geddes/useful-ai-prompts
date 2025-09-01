@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Business
+- **Created**: 2025-01-15
 - **Tags**: revenue-optimization, pricing-strategy, monetization, growth, profitability
 - **Version**: 1.0.0
 

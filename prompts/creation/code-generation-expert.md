@@ -1,10 +1,10 @@
 # Code Generation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: code generation, software development, programming, application development, clean code
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: application development, API creation, algorithm implementation, code refactoring
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

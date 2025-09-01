@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-08
 - **Tags**: education-savings, college-planning, 529-plans, financial-aid, education-funding
 - **Version**: 1.0.0
 - **Use Cases**: college savings, education planning, financial aid strategy, tuition funding

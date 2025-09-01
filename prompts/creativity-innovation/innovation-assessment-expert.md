@@ -1,10 +1,10 @@
 # Innovation Evaluator
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: innovation assessment, feasibility analysis, idea evaluation, portfolio management
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: innovation portfolio, investment decisions, idea prioritization, strategic planning
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

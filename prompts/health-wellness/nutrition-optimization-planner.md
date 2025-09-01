@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-15
 - **Tags**: nutrition, meal-planning, diet-optimization, healthy-eating, wellness, lifestyle
 - **Version**: 1.0.0
 - **Use Cases**: nutrition planning, meal prep, dietary improvement, healthy lifestyle design

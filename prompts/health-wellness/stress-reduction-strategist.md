@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-05
 - **Tags**: stress-management, relaxation, wellness, mental-health, coping-strategies
 - **Version**: 1.0.0
 - **Use Cases**: stress management, anxiety reduction, wellness improvement, work-life balance

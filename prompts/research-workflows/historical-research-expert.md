@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/Academic
+- **Created**: 2025-01-15
 - **Tags**: historical-research, archival-research, primary-sources, historiography
 - **Version**: 1.0.0
 

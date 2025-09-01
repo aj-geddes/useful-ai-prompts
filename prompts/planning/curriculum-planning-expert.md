@@ -1,10 +1,10 @@
 # Curriculum Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: curriculum planning, educational design, learning objectives, instructional strategy, assessment design
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: course design, training programs, academic curriculum, professional development, certification programs
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -1,10 +1,10 @@
 # Resource Allocation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: resource allocation, budget optimization, investment planning, capacity management, ROI analysis
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: budget planning, project prioritization, capacity allocation, investment optimization, portfolio management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

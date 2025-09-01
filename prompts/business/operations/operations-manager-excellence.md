@@ -1,10 +1,10 @@
 # Operations Management Expert
 
 ## Metadata
+- **Created**: 2025-07-15
 
 - **Category**: Business/Operations
 - **Tags**: operations management, process improvement, team leadership, efficiency, KPIs
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: operational excellence, team management, process optimization, performance improvement
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

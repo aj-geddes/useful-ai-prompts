@@ -1,10 +1,10 @@
 # Product Design Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: product design, UX design, user-centered design, innovation, design thinking
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: new product development, feature design, UX improvement, design systems, innovation workshops
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

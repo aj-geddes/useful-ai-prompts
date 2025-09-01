@@ -1,10 +1,10 @@
 # Strategic Roadmap Generator
 
 ## Metadata
+- **Created**: 2025-07-20
 
 - **Category**: Business/Product-Management
 - **Tags**: product roadmap, strategic planning, product strategy, roadmap development
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: product planning, roadmap creation, feature prioritization, strategic alignment
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

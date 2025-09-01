@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Growth
+- **Created**: 2025-01-15
 - **Tags**: self-discipline, willpower, habit-formation, self-control, personal-development
 - **Version**: 1.0.0
 - **Use Cases**: discipline building, habit development, self-control improvement, goal achievement

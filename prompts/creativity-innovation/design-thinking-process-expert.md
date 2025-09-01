@@ -1,10 +1,10 @@
 # Design Thinking Facilitator
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: design thinking, user experience, innovation, product design
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: product development, service design, UX improvement, innovation projects
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-01
 - **Tags**: side-income, entrepreneurship, monetization, passive-income, business-development
 - **Version**: 1.0.0
 - **Use Cases**: side business development, income diversification, skill monetization, passive income

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-15
 - **Tags**: goal-setting, achievement, planning, motivation, progress-tracking
 - **Version**: 1.0.0
 - **Use Cases**: goal planning, progress tracking, motivation maintenance, achievement systems

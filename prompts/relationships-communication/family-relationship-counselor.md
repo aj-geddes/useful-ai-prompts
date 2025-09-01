@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: family-relationships, family-dynamics, communication, conflict-resolution, bonding
 - **Version**: 1.0.0
 - **Use Cases**: family communication, relationship improvement, family conflict resolution, bonding

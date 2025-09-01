@@ -1,10 +1,10 @@
 # Project Planning Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Planning
 - **Tags**: project planning, project management, strategic execution, resource allocation, timeline management
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: complex projects, multi-team initiatives, strategic implementations, product launches
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

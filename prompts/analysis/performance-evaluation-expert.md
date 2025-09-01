@@ -1,10 +1,10 @@
 # Performance Evaluation Expert
 
 ## Metadata
+- **Created**: 2025-07-22
 
 - **Category**: Analysis
 - **Tags**: performance evaluation, KPIs, metrics analysis, benchmarking, performance optimization
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: performance assessment, KPI tracking, team evaluation, productivity analysis
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -1,10 +1,10 @@
 # Customer Experience Excellence Leader
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Customer Service
 - **Tags**: customer experience, CX strategy, service excellence, customer satisfaction, team leadership
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: CX transformation, service optimization, team development, customer journey improvement
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

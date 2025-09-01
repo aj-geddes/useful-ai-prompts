@@ -1,10 +1,10 @@
 # Digital Supply Chain Transformation Architect
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Supply-Chain/Digital-Transformation
 - **Tags**: digital supply chain, supply chain automation, IoT logistics, AI supply chain, supply chain technology
-- **Created**: 2025-01-14
 - **Version**: 1.0.0
 - **Use Cases**: supply chain digitization, smart logistics, automated supply chain, supply chain analytics, connected supply chain
 - **Compatible Models**: GPT-4, Claude 3.5, Gemini Pro, GPT-3.5

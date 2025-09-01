@@ -1,10 +1,10 @@
 # Customer Issue Resolution Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: customer service, issue resolution, service recovery, complaint handling, customer satisfaction
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: customer complaints, service failures, escalation management, customer retention, satisfaction recovery
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-20
 - **Tags**: storytelling, narrative-design, content-strategy, engagement, communication
 - **Version**: 1.0.0
 - **Use Cases**: storytelling improvement, narrative development, content engagement, brand storytelling

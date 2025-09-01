@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Content Creation
+- **Created**: 2025-08-05
 - **Tags**: copywriting, persuasive-writing, marketing-copy, conversion-optimization, sales-writing
 - **Version**: 1.0.0
 - **Use Cases**: sales copy, marketing materials, conversion optimization, persuasive writing

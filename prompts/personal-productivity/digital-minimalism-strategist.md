@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-20
 - **Tags**: digital-minimalism, distraction-elimination, technology-boundaries, focus, mindful-technology
 - **Version**: 1.0.0
 - **Use Cases**: digital detox, screen time reduction, technology boundaries, mindful device usage

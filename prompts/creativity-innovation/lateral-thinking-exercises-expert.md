@@ -1,10 +1,10 @@
 # Lateral Thinking Coach
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: lateral thinking, creative exercises, breakthrough ideas, perspective shifting
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: innovation workshops, team brainstorming, creative problem solving, stuck projects
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

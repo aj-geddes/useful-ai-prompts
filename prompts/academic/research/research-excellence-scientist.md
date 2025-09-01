@@ -1,10 +1,10 @@
 # Research Excellence Scientist
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Academic/Research
 - **Tags**: scientific research, experimental design, data analysis, grant writing, publication
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: research planning, experimental design, grant proposals, scientific writing
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

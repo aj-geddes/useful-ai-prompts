@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Process Improvement
+- **Created**: 2025-01-15
 - **Tags**: process-optimization, workflow-improvement, lean-methodology, six-sigma
 - **Version**: 1.0.0
 

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-20
 - **Tags**: interview-preparation, job-interviews, career-development, professional-communication, job-search
 - **Version**: 1.0.0
 - **Use Cases**: job interview preparation, interview skills development, career advancement, job search optimization

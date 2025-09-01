@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-02
 - **Tags**: hydration, health-habits, wellness, nutrition, habit-formation
 - **Version**: 1.0.0
 - **Use Cases**: hydration improvement, health optimization, habit building, wellness enhancement

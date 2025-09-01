@@ -1,10 +1,10 @@
 # Task Delegation & Tracking Expert
 
 ## Metadata
+- **Created**: 2025-07-24
 
 - **Category**: Business/Administrative
 - **Tags**: task delegation, team management, performance tracking, administrative, accountability
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: delegation optimization, team accountability, workload management, performance tracking
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

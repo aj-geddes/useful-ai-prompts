@@ -1,10 +1,10 @@
 # Debugging Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: debugging, troubleshooting, error analysis, code debugging, problem solving
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: bug fixing, error resolution, code troubleshooting, system debugging, performance issues
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

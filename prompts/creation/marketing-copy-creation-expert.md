@@ -1,10 +1,10 @@
 # Marketing Copy Creation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: copywriting, marketing, advertising, conversion optimization, brand messaging
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: landing pages, ad campaigns, email marketing, social media, product descriptions
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

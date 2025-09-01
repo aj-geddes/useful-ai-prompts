@@ -1,10 +1,10 @@
 # DAO Creator and Management Guide
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/DAO-Governance
 - **Tags**: DAO creation, governance, decentralized organization, community management, blockchain governance
-- **Created**: 2025-08-14
 - **Version**: 2.0.0
 - **Use Cases**: creating DAOs, community governance, decentralized decision making, treasury management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

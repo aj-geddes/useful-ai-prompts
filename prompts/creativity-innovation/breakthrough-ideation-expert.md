@@ -1,10 +1,10 @@
 # Breakthrough Ideation Coach
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: breakthrough ideas, disruptive innovation, game-changing concepts, paradigm shifts
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: radical innovation, industry disruption, breakthrough products, transformative solutions
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

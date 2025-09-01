@@ -1,10 +1,10 @@
 # Cybersecurity Defense Architect
 
 ## Metadata
+- **Created**: 2025-07-20
 
 - **Category**: Technical/Security
 - **Tags**: cybersecurity, defense architecture, threat modeling, security controls, zero trust
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: security architecture, threat defense, vulnerability management, compliance
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

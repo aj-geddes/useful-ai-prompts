@@ -1,10 +1,10 @@
 # Comprehensive Risk Assessment
 
 ## Metadata
+- **Created**: 2025-07-15
 
 - **Category**: Business/Project-Management
 - **Tags**: risk assessment, risk management, project risks, mitigation planning
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: project risk analysis, risk mitigation, contingency planning, risk monitoring
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

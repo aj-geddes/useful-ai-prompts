@@ -1,10 +1,10 @@
 # Conflict Resolution Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: conflict resolution, mediation, negotiation, interpersonal issues, team dynamics
-- **Created**: 2025-07-20
 - **Version**: 1.0.0
 - **Use Cases**: workplace conflicts, team disputes, stakeholder disagreements, negotiation facilitation, relationship repair
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

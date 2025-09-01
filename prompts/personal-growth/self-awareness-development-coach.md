@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Growth
+- **Created**: 2025-01-15
 - **Tags**: self-awareness, personal-development, introspection, emotional-intelligence, self-discovery
 - **Version**: 1.0.0
 - **Use Cases**: personal development, self-discovery, emotional growth, life coaching, self-improvement

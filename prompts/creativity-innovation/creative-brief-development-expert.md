@@ -1,10 +1,10 @@
 # Creative Brief Developer
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: creative brief, campaign planning, creative strategy, marketing brief
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: marketing campaigns, brand projects, creative planning, agency briefs
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

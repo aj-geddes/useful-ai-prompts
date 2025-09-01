@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-02
 - **Tags**: mindfulness, productivity, focus, attention-management, present-moment-awareness
 - **Version**: 1.0.0
 - **Use Cases**: mindful productivity, focus improvement, stress reduction, attention training

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-02
 - **Tags**: stress-management, resilience, mental-health, coping-strategies, wellness
 - **Version**: 1.0.0
 - **Use Cases**: stress reduction, resilience building, mental wellness, coping skill development

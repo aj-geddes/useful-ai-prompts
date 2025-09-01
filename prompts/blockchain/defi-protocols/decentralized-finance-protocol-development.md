@@ -1,10 +1,10 @@
 # DeFi Protocol Builder
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/DeFi-Protocols
 - **Tags**: DeFi, automated market maker, yield farming, liquidity pools, smart contracts
-- **Created**: 2025-01-14
 - **Version**: 2.0.0
 - **Use Cases**: DeFi protocol development, yield farming setup, AMM creation, liquidity management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro

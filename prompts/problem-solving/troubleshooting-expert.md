@@ -1,10 +1,10 @@
 # Troubleshooting Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Problem-Solving
 - **Tags**: troubleshooting, diagnostics, problem solving, system analysis, root cause analysis
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: system issues, diagnostic analysis, problem identification, troubleshooting guidance, issue resolution
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

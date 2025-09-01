@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-18
 - **Tags**: work-life-balance, boundaries, stress-management, family-time, personal-wellness
 - **Version**: 1.0.0
 - **Use Cases**: boundary setting, stress reduction, family time optimization, personal wellness planning

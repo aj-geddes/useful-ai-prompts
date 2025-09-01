@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Skills
+- **Created**: 2025-01-15
 - **Tags**: language-learning, fluency-building, communication-skills, cultural-competency, study-methods
 - **Version**: 1.0.0
 - **Use Cases**: language acquisition, fluency development, conversation practice, cultural understanding

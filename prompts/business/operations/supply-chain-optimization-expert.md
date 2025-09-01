@@ -1,10 +1,10 @@
 # Supply Chain Optimization Expert
 
 ## Metadata
+- **Created**: 2025-07-16
 
 - **Category**: Business/Operations
 - **Tags**: supply chain, logistics, inventory optimization, procurement, distribution
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: supply chain design, inventory optimization, logistics planning, vendor management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

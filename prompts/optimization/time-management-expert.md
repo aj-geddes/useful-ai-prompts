@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Optimization/Productivity
+- **Created**: 2025-01-15
 - **Tags**: time-management, productivity, scheduling, prioritization, work-life-balance
 - **Version**: 1.0.0
 

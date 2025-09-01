@@ -1,10 +1,10 @@
 # Executive Briefing Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Communication
 - **Tags**: executive communication, briefing documents, c-suite, strategic communication, leadership
-- **Created**: 2025-07-22
 - **Version**: 2.0.0
 - **Use Cases**: board presentations, executive updates, strategic briefings, crisis communications
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

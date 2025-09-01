@@ -1,10 +1,10 @@
 # First Principles Thinker
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: first principles, fundamental reasoning, assumption challenging, breakthrough analysis
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: complex problems, innovation challenges, system redesign, strategic planning
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

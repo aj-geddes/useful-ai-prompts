@@ -1,10 +1,10 @@
 # Presentation Creation Expert
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creation
 - **Tags**: presentation design, visual communication, slide design, storytelling, executive presentations
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: pitch decks, executive presentations, conference talks, training materials, sales presentations
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

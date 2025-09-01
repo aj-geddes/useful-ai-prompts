@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-12
 - **Tags**: stress-management, wellness, mental-health, resilience, work-life-balance
 - **Version**: 1.0.0
 - **Use Cases**: stress reduction, burnout prevention, resilience building, wellness planning

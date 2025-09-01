@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Technical Workflows
+- **Created**: 2025-01-15
 - **Tags**: database, schema-design, data-modeling, sql
 - **Version**: 1.0.0
 

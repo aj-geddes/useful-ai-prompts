@@ -1,10 +1,10 @@
 # Supply Chain Resilience Strategy Architect
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Supply-Chain/Resilience-Risk
 - **Tags**: supply chain resilience, risk management, business continuity, supply chain strategy, disruption recovery
-- **Created**: 2025-01-14
 - **Version**: 1.0.0
 - **Use Cases**: supply chain risk assessment, resilience planning, disruption management, business continuity
 - **Compatible Models**: GPT-4, Claude 3.5, Gemini Pro, GPT-3.5

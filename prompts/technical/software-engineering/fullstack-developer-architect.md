@@ -1,10 +1,10 @@
 # Full Stack Development Expert
 
 ## Metadata
+- **Created**: 2025-07-31
 
 - **Category**: Technical/Software Engineering
 - **Tags**: full stack, web development, system architecture, frontend, backend, DevOps
-- **Created**: 2025-07-20
 - **Version**: 3.0.0
 - **Use Cases**: application development, system design, API architecture, performance optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

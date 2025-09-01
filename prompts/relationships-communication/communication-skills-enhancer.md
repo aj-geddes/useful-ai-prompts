@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: communication-skills, interpersonal-communication, active-listening, conflict-resolution, relationship-building
 - **Version**: 1.0.0
 - **Use Cases**: relationship improvement, professional communication, conflict resolution, social skills development

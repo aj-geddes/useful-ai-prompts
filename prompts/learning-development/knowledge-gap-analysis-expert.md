@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Development
+- **Created**: 2025-01-15
 - **Tags**: skills gap, training needs, competency analysis, workforce planning
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21

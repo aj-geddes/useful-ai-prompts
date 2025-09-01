@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-15
 - **Tags**: estate-planning, wills, trusts, legacy-planning, financial-protection
 - **Version**: 1.0.0
 - **Use Cases**: estate planning, legacy creation, asset protection, inheritance planning

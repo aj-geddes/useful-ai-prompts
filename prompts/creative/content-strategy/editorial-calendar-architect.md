@@ -1,10 +1,10 @@
 # Editorial Calendar Architect
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creative/Content-Strategy
 - **Tags**: editorial calendar, content planning, publishing strategy, content management
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: content scheduling, editorial planning, campaign coordination, publishing workflow
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

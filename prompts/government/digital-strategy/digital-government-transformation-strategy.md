@@ -1,10 +1,10 @@
 # Digital Government Transformation Strategy
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Government/Digital-Strategy
 - **Tags**: digital transformation, e-governance, government modernization, digital strategy
-- **Created**: 2025-01-14
 - **Version**: 1.0.0
 - **Use Cases**: government digitization, public sector transformation, digital service delivery, technology modernization
 - **Compatible Models**: GPT-4, Claude 3.5, Gemini Pro, GPT-3.5

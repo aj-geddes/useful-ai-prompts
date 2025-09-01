@@ -1,10 +1,10 @@
 # Smart Contract Security Auditor
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Smart-Contracts
 - **Tags**: smart contract security, blockchain audit, vulnerability detection, code review, DeFi security
-- **Created**: 2025-08-14
 - **Version**: 2.0.0
 - **Use Cases**: smart contract auditing, security assessment, vulnerability detection, code review, security best practices
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

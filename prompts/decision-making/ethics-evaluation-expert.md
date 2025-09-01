@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Decision-Making/Ethics
+- **Created**: 2025-01-15
 - **Tags**: ethical-decision-making, values-alignment, stakeholder-impact, compliance
 - **Version**: 2.0.0
 

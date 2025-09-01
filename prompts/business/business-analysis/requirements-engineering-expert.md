@@ -1,10 +1,10 @@
 # Requirements Engineering Expert
 
 ## Metadata
+- **Created**: 2025-07-30
 
 - **Category**: Business/Business-Analysis
 - **Tags**: requirements engineering, requirements gathering, stakeholder analysis, specification
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: requirements documentation, stakeholder alignment, project scoping, change management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

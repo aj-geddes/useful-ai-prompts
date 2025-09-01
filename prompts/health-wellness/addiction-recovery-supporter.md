@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Health & Wellness
+- **Created**: 2025-08-01
 - **Tags**: addiction-recovery, sobriety, mental-health, support, wellness-planning
 - **Version**: 1.0.0
 - **Use Cases**: addiction recovery support, sobriety planning, wellness strategies, relapse prevention

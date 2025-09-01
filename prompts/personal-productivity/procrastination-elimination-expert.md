@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Personal Productivity
+- **Created**: 2025-08-05
 - **Tags**: procrastination, productivity, motivation, time-management, habit-formation, goal-achievement
 - **Version**: 1.0.0
 - **Use Cases**: overcoming procrastination, productivity improvement, habit building, goal completion

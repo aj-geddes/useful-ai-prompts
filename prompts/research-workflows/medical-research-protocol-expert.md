@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Research/Healthcare
+- **Created**: 2025-01-15
 - **Tags**: clinical-research, medical-protocols, clinical-trials, research-ethics
 - **Version**: 1.0.0
 

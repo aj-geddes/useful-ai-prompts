@@ -1,10 +1,10 @@
 # User Behavior Analysis Expert
 
 ## Metadata
+- **Created**: 2025-07-16
 
 - **Category**: Analysis
 - **Tags**: user behavior, UX analytics, customer journey, behavioral insights, data-driven design
-- **Created**: 2025-07-20
 - **Version**: 2.0.0
 - **Use Cases**: UX optimization, product improvement, conversion analysis, user research
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

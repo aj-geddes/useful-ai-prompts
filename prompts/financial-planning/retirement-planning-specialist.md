@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-18
 - **Tags**: retirement-planning, pension-analysis, social-security, retirement-income, financial-independence
 - **Version**: 1.0.0
 - **Use Cases**: retirement income planning, 401k optimization, social security strategy, FIRE planning

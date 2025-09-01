@@ -1,10 +1,10 @@
 # Prototyping Coach
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Creativity & Innovation
 - **Tags**: prototyping, rapid validation, MVP, user testing, iterative design
-- **Created**: 2025-07-21
 - **Version**: 2.0.0
 - **Use Cases**: product development, service design, concept validation, user testing
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

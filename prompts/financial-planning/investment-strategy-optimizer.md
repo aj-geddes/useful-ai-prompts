@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-18
 - **Tags**: investment-strategy, portfolio-optimization, risk-management, wealth-building, financial-goals
 - **Version**: 1.0.0
 - **Use Cases**: investment planning, portfolio design, risk assessment, wealth building strategy

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Technical Workflows
+- **Created**: 2025-01-15
 - **Tags**: testing, qa, test-automation, quality-assurance
 - **Version**: 1.0.0
 

@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: boundary-setting, assertiveness, relationship-management, self-care, communication-skills
 - **Version**: 1.0.0
 - **Use Cases**: boundary development, assertive communication, relationship health, self-protection

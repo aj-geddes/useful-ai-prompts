@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Relationships & Communication
+- **Created**: 2025-01-15
 - **Tags**: empathy, emotional-intelligence, perspective-taking, compassion, relationship-skills
 - **Version**: 1.0.0
 - **Use Cases**: empathy development, relationship improvement, emotional intelligence, leadership skills

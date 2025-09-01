@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Career Development
+- **Created**: 2025-08-15
 - **Tags**: leadership-development, management-skills, team-leadership, executive-coaching, professional-growth
 - **Version**: 1.0.0
 - **Use Cases**: leadership skill development, management training, executive coaching, team leadership

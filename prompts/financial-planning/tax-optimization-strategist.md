@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Financial Planning
+- **Created**: 2025-08-02
 - **Tags**: tax-optimization, tax-planning, financial-strategy, wealth-building, tax-efficiency
 - **Version**: 1.0.0
 - **Use Cases**: tax planning, tax reduction strategies, financial optimization, wealth preservation

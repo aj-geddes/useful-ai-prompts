@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Learning & Skills
+- **Created**: 2025-01-15
 - **Tags**: student-productivity, time-management, study-planning, academic-success, learning-efficiency
 - **Version**: 1.0.0
 - **Use Cases**: student time management, academic planning, study optimization, school-life balance

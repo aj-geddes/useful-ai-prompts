@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Technical Workflows
+- **Created**: 2025-01-15
 - **Tags**: devops, automation, ci-cd, infrastructure-as-code
 - **Version**: 1.0.0
 

@@ -1,10 +1,10 @@
 # Cross-Chain Bridge Development Helper
 
 ## Metadata
+- **Created**: 2025-01-15
 
 - **Category**: Blockchain/Cross-Chain
 - **Tags**: blockchain bridge, cross-chain transactions, multi-chain development, interoperability
-- **Created**: 2025-08-14
 - **Version**: 2.0.0
 - **Use Cases**: connecting different blockchains, cross-chain asset transfers, multi-chain applications, bridge development
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
