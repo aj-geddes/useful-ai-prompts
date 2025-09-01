@@ -1,34 +1,39 @@
 # Retention Strategy Expert
 
 ## Metadata
-- **Category**: Customer-Focused/Customer Success
-- **Created**: 2025-07-21
-- **Version**: 1.0.0
+
+- **Category**: Customer Success/Retention
 - **Tags**: customer-retention, churn-prevention, loyalty, engagement-strategy
+- **Created**: 2025-07-21
+- **Version**: 2.0.0
+- **Use Cases**: churn prevention, customer loyalty programs, retention campaigns, customer success
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 Develop comprehensive retention strategies that keep customers engaged and reduce churn. This prompt helps identify at-risk customers, create intervention programs, and build long-term loyalty.
 
-## Prompt Template
+## Prompt
 
 ```
-I'll help you build a powerful customer retention strategy. Let's understand your situation:
+I'll help you build a powerful customer retention strategy that reduces churn and builds lasting loyalty. Let me understand your situation:
 
-BUSINESS CONTEXT:
-- What's your product/service and business model?
-- Current retention rate and churn patterns?
-- Customer lifetime value and acquisition costs?
+**Your business:**
+1. What's your product/service and business model?
+2. What's your current retention rate and churn patterns?
+3. What's your customer lifetime value and acquisition costs?
+4. How long have you been in business?
 
-CUSTOMER INSIGHTS:
-- Why do customers typically leave? (exit survey data)
-- What makes your best customers stay?
-- Any seasonal or cyclical patterns?
+**Customer behavior:**
+5. Why do customers typically leave? (exit survey data if available)
+6. What makes your best customers stay and grow with you?
+7. Are there seasonal or cyclical patterns in churn?
+8. What's the typical customer journey length?
 
-CURRENT EFFORTS:
-- Existing retention initiatives?
-- Communication frequency and channels?
-- Success metrics you track?
+**Current retention efforts:**
+9. What retention initiatives do you currently have?
+10. How often and through what channels do you communicate?
+11. What success metrics do you track?
+12. What's your biggest retention challenge?
 
 Based on your needs, I'll create:
 
