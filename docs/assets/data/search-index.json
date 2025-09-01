@@ -3221,67 +3221,50 @@
     "searchableContent": "revenue optimization expert this prompt helps you systematically identify and implement revenue optimization opportunities across pricing, products, channels, and customer segments to maximize profitability. optimization revenue-optimization pricing-strategy monetization growth profitability"
   },
   {
-    "title": "Risk Assessment Specialist",
-    "description": "A practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. Provide your risk context and I'll deliver comprehensive risk analysis with prioritized mitigation strategies.",
+    "title": "Risk Assessment Expert",
+    "description": "A comprehensive risk assessment assistant that helps you identify, analyze, evaluate, and prioritize risks across your organization or projects. I combine systematic risk evaluation methodologies with practical assessment frameworks to deliver actionable insights for protecting your objectives while enabling strategic growth.",
     "category": "analysis",
     "tags": [
       "risk assessment",
       "risk management",
       "threat analysis",
+      "evaluation",
       "mitigation strategies",
       "enterprise risk"
     ],
     "use_cases": [
       "risk identification",
       "impact analysis",
+      "vulnerability assessment",
       "mitigation planning",
       "risk monitoring"
     ],
-    "url": "/useful-ai-prompts/prompts/risk-assessment-specialist/",
-    "searchableContent": "risk assessment specialist a practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. provide your risk context and i'll deliver comprehensive risk analysis with prioritized mitigation strategies. analysis risk assessment risk management threat analysis mitigation strategies enterprise risk risk identification impact analysis mitigation planning risk monitoring"
+    "url": "/useful-ai-prompts/prompts/risk-assessment-expert/",
+    "searchableContent": "risk assessment expert a comprehensive risk assessment assistant that helps you identify, analyze, evaluate, and prioritize risks across your organization or projects. i combine systematic risk evaluation methodologies with practical assessment frameworks to deliver actionable insights for protecting your objectives while enabling strategic growth. analysis risk assessment risk management threat analysis evaluation mitigation strategies enterprise risk risk identification impact analysis vulnerability assessment mitigation planning risk monitoring"
   },
   {
-    "title": "Risk Evaluation Expert",
-    "description": "Expert assistant for identifying, analyzing, and prioritizing risks across projects, operations, and strategic initiatives.",
-    "category": "evaluation-assessment",
-    "tags": [],
-    "use_cases": [],
-    "url": "/useful-ai-prompts/prompts/risk-evaluation-expert/",
-    "searchableContent": "risk evaluation expert expert assistant for identifying, analyzing, and prioritizing risks across projects, operations, and strategic initiatives. evaluation-assessment"
-  },
-  {
-    "title": "Risk Management Planning Expert",
-    "description": "A practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. Provide your risk context and I'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems.",
+    "title": "Risk Management Expert",
+    "description": "A comprehensive risk management expert combining strategic planning with quantitative risk-reward analysis. I help you develop robust risk management frameworks, assess trade-offs in decision-making, and create actionable plans that protect your organization while enabling strategic growth through informed risk-taking.",
     "category": "planning",
     "tags": [
       "risk management",
-      "risk assessment",
+      "risk-reward analysis",
+      "decision analysis",
       "mitigation planning",
       "contingency planning",
-      "enterprise risk"
+      "enterprise risk",
+      "strategic planning"
     ],
     "use_cases": [
       "enterprise risk management",
       "project risk planning",
-      "operational risk assessment",
-      "strategic risk mitigation"
+      "risk-reward assessment",
+      "decision optimization",
+      "strategic risk mitigation",
+      "contingency planning"
     ],
-    "url": "/useful-ai-prompts/prompts/risk-management-planning-expert/",
-    "searchableContent": "risk management planning expert a practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. provide your risk context and i'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems. planning risk management risk assessment mitigation planning contingency planning enterprise risk enterprise risk management project risk planning operational risk assessment strategic risk mitigation"
-  },
-  {
-    "title": "Risk-Reward Assessment Expert",
-    "description": "Evaluates decisions through comprehensive risk-reward analysis, quantifying probabilities and impacts to help you make informed choices with clear understanding of trade-offs.",
-    "category": "decision-making",
-    "tags": [
-      "risk-assessment",
-      "risk-reward-analysis",
-      "decision-analysis",
-      "probability"
-    ],
-    "use_cases": [],
-    "url": "/useful-ai-prompts/prompts/risk-reward-assessment-expert/",
-    "searchableContent": "risk-reward assessment expert evaluates decisions through comprehensive risk-reward analysis, quantifying probabilities and impacts to help you make informed choices with clear understanding of trade-offs. decision-making risk-assessment risk-reward-analysis decision-analysis probability"
+    "url": "/useful-ai-prompts/prompts/risk-management-expert/",
+    "searchableContent": "risk management expert a comprehensive risk management expert combining strategic planning with quantitative risk-reward analysis. i help you develop robust risk management frameworks, assess trade-offs in decision-making, and create actionable plans that protect your organization while enabling strategic growth through informed risk-taking. planning risk management risk-reward analysis decision analysis mitigation planning contingency planning enterprise risk strategic planning enterprise risk management project risk planning risk-reward assessment decision optimization strategic risk mitigation contingency planning"
   },
   {
     "title": "ROI Analysis Expert",

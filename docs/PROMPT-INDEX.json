@@ -1,41 +1,41 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-08-18T05:59:45.739685",
-  "total_prompts": 490,
+  "last_updated": "2025-09-01T18:46:05.507763",
+  "total_prompts": 473,
   "categories": [
-    "blockchain",
-    "quantum-computing",
-    "personal-growth",
-    "learning-skills",
-    "healthcare-digital",
-    "customer-focused",
-    "development",
-    "optimization",
-    "learning-development",
-    "content-creation",
-    "technical-workflows",
-    "space-economy",
-    "problem-solving",
-    "personal-productivity",
     "creativity-innovation",
-    "decision-making",
-    "analysis",
-    "project-management",
-    "career-development",
-    "evaluation-assessment",
-    "management-leadership",
-    "health-wellness",
-    "biotechnology",
-    "communication",
-    "relationships-communication",
-    "creation",
-    "technical",
-    "research-workflows",
+    "technical-workflows",
+    "optimization",
+    "healthcare-digital",
     "renewable-energy",
+    "quantum-computing",
+    "evaluation-assessment",
+    "creation",
+    "communication",
+    "financial-planning",
+    "customer-focused",
     "government",
-    "supply-chain",
     "planning",
-    "financial-planning"
+    "learning-skills",
+    "blockchain",
+    "health-wellness",
+    "decision-making",
+    "research-workflows",
+    "content-creation",
+    "analysis",
+    "relationships-communication",
+    "management-leadership",
+    "space-economy",
+    "learning-development",
+    "career-development",
+    "problem-solving",
+    "technical",
+    "personal-productivity",
+    "project-management",
+    "supply-chain",
+    "biotechnology",
+    "development",
+    "personal-growth"
   ],
   "prompts": [
     {
@@ -2492,28 +2492,6 @@
       "file_path": "_prompts/customer-experience-excellence-leader.md"
     },
     {
-      "title": "Customer Feedback Analysis Expert",
-      "description": "Transform raw customer feedback into actionable insights that drive product and service improvements. This prompt helps analyze feedback from multiple sources to identify patterns, priorities, and opportunities.",
-      "category": "customer-focused",
-      "tags": [
-        "feedback-analysis",
-        "sentiment-analysis",
-        "customer-insights",
-        "data-analysis"
-      ],
-      "slug": "customer-feedback-analysis-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-feedback-analysis-expert.md"
-    },
-    {
       "title": "Customer Issue Resolution Expert",
       "description": "A practical customer issue resolution system that helps you transform complaints into satisfied customers. Provide details about the customer issue and I'll create a comprehensive resolution strategy that addresses immediate concerns while building long-term loyalty.",
       "category": "problem-solving",
@@ -2541,140 +2519,6 @@
         "satisfaction recovery"
       ],
       "file_path": "_prompts/customer-issue-resolution-expert.md"
-    },
-    {
-      "title": "Customer Journey Mapping Expert",
-      "description": "Transform your understanding of customer experiences by creating comprehensive journey maps that reveal opportunities for improvement and innovation. This prompt helps map every customer interaction, emotion, and decision point.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-journey",
-        "experience-mapping",
-        "touchpoint-analysis",
-        "user-research"
-      ],
-      "slug": "customer-journey-mapping-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-journey-mapping-expert.md"
-    },
-    {
-      "title": "Customer Satisfaction Measurement Expert",
-      "description": "Design comprehensive customer satisfaction measurement systems that provide actionable insights. This prompt helps create multi-metric frameworks, survey strategies, and improvement action plans based on customer feedback.",
-      "category": "customer-focused",
-      "tags": [
-        "csat",
-        "nps",
-        "customer-metrics",
-        "satisfaction-analysis",
-        "feedback-systems"
-      ],
-      "slug": "customer-satisfaction-measurement-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-satisfaction-measurement-expert.md"
-    },
-    {
-      "title": "Customer Segmentation Expert",
-      "description": "Create powerful customer segments that enable targeted marketing, personalized experiences, and strategic resource allocation. This prompt helps develop multi-dimensional segmentation strategies based on behavior, value, and needs.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-segmentation",
-        "market-analysis",
-        "targeting",
-        "personalization"
-      ],
-      "slug": "customer-segmentation-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-segmentation-expert.md"
-    },
-    {
-      "title": "Customer Success Planning Expert",
-      "description": "Create comprehensive customer success plans that ensure customers achieve their desired outcomes with your product or service. This prompt helps develop structured success programs that drive adoption, value, and growth.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-success",
-        "account-management",
-        "success-planning",
-        "value-realization"
-      ],
-      "slug": "customer-success-planning-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-success-planning-expert.md"
-    },
-    {
-      "title": "Customer Support Process Expert",
-      "description": "Optimize your customer support operations to deliver faster resolutions and higher satisfaction. This prompt helps design efficient support processes, knowledge systems, and team workflows.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-support",
-        "help-desk",
-        "ticket-management",
-        "support-processes"
-      ],
-      "slug": "customer-support-process-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-support-process-expert.md"
-    },
-    {
-      "title": "Customer Win-Back Strategy Expert",
-      "description": "Create strategic campaigns to re-engage and win back lost customers. This prompt helps design multi-touch win-back programs that understand why customers left and present compelling reasons to return.",
-      "category": "customer-focused",
-      "tags": [
-        "win-back",
-        "reactivation",
-        "churned-customers",
-        "re-engagement",
-        "recovery"
-      ],
-      "slug": "customer-win-back-strategy-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/customer-win-back-strategy-expert.md"
     },
     {
       "title": "Cybersecurity Defense Architect",
@@ -4469,18 +4313,6 @@
       "file_path": "_prompts/freelance-business-builder.md"
     },
     {
-      "title": "Repository Documentation Generator",
-      "description": "",
-      "category": "management-leadership",
-      "tags": [],
-      "slug": "fresh-repo-readme",
-      "date": "2025-08-18",
-      "version": "1.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/fresh-repo-readme.md"
-    },
-    {
       "title": "Full Stack Development Expert",
       "description": "This prompt helps you design and build full-stack applications with proper architecture, best practices, and scalable code that delivers great user experiences.",
       "category": "technical-workflows",
@@ -5677,29 +5509,6 @@
       "file_path": "_prompts/literature-review-expert.md"
     },
     {
-      "title": "Loyalty Program Design Expert",
-      "description": "Design compelling loyalty programs that drive repeat business and deepen customer relationships. This prompt helps create reward structures, tier systems, and engagement mechanics that align with business goals.",
-      "category": "customer-focused",
-      "tags": [
-        "loyalty-program",
-        "rewards",
-        "customer-retention",
-        "gamification",
-        "engagement"
-      ],
-      "slug": "loyalty-program-design-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/loyalty-program-design-expert.md"
-    },
-    {
       "title": "Manufacturing IoT Integration Expert",
       "description": "Professional prompt combining Industrial IoT Engineer and Manufacturing Systems Manager expertise for Industrial IoT workflows",
       "category": "technical-workflows",
@@ -6319,28 +6128,6 @@
       "file_path": "_prompts/nutrition-optimization-planner.md"
     },
     {
-      "title": "Onboarding Experience Expert",
-      "description": "Design customer onboarding experiences that drive rapid time-to-value and long-term success. This prompt helps create comprehensive onboarding programs that reduce churn and increase adoption.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-onboarding",
-        "user-activation",
-        "first-experience",
-        "adoption"
-      ],
-      "slug": "onboarding-experience-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/onboarding-experience-expert.md"
-    },
-    {
       "title": "Onboarding Process Design Expert",
       "description": "I help you design comprehensive onboarding processes that accelerate new employee productivity and engagement. Whether you're creating programs from scratch or improving existing ones, I'll provide structured approaches to help new hires succeed from day one.",
       "category": "learning-development",
@@ -6868,28 +6655,6 @@
       "file_path": "_prompts/personal-values-clarifier.md"
     },
     {
-      "title": "Personalization Framework Expert",
-      "description": "Build sophisticated personalization strategies that deliver relevant experiences to each customer. This prompt helps create frameworks for dynamic content, recommendations, and individualized interactions across all touchpoints.",
-      "category": "customer-focused",
-      "tags": [
-        "personalization",
-        "customer-experience",
-        "dynamic-content",
-        "behavioral-targeting"
-      ],
-      "slug": "personalization-framework-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/personalization-framework-expert.md"
-    },
-    {
       "title": "Pharmaceutical Research Excellence Expert",
       "description": "This prompt helps you navigate pharmaceutical research and drug development, from discovery through clinical trials to regulatory approval. Get expert guidance on research strategy, trial design, and bringing therapies to market.",
       "category": "technical-workflows",
@@ -7117,23 +6882,6 @@
         "sales presentations"
       ],
       "file_path": "_prompts/presentation-creation-expert.md"
-    },
-    {
-      "title": "Prioritization Frameworks Expert",
-      "description": "Applies proven prioritization frameworks to help you rank tasks, projects, or initiatives based on value, urgency, and strategic importance.",
-      "category": "decision-making",
-      "tags": [
-        "prioritization",
-        "resource-management",
-        "strategic-planning",
-        "efficiency"
-      ],
-      "slug": "prioritization-frameworks-expert",
-      "date": "2025-08-18",
-      "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/prioritization-frameworks-expert.md"
     },
     {
       "title": "Process Improvement Expert",
@@ -7487,7 +7235,7 @@
       "tags": [
         "biotechnology"
       ],
-      "slug": "protein-structure-prediction-and-molecular-modeling-platform",
+      "slug": "protein-structure-prediction-modeling",
       "date": "2025-08-16",
       "version": "3.0.0",
       "compatible_models": [
@@ -7778,7 +7526,7 @@
       "tags": [
         "quantum computing"
       ],
-      "slug": "quantum-hardware-calibration-and-characterization-platform",
+      "slug": "quantum-hardware-calibration-characterization",
       "date": "2025-08-16",
       "version": "3.0.0",
       "compatible_models": [
@@ -7885,7 +7633,7 @@
       "tags": [
         "quantum computing"
       ],
-      "slug": "quantum-optimization-algorithm-design-platform",
+      "slug": "quantum-optimization-algorithm-design",
       "date": "2025-08-16",
       "version": "3.0.0",
       "compatible_models": [
@@ -8128,7 +7876,7 @@
       "tags": [
         "project management"
       ],
-      "slug": "github-repository-setup-automation",
+      "slug": "repository-setup-automation",
       "date": "2025-08-16",
       "version": "3.0.0",
       "compatible_models": [
@@ -8392,56 +8140,6 @@
       "file_path": "_prompts/resource-optimization-expert.md"
     },
     {
-      "title": "Customer Retention Optimization Expert",
-      "description": "This prompt helps you build proactive customer retention strategies that reduce churn and maximize customer lifetime value. Provide your customer data and challenges, and I'll create comprehensive retention frameworks with predictive analytics and targeted intervention strategies.",
-      "category": "management-leadership",
-      "tags": [
-        "customer retention",
-        "churn prevention",
-        "customer success",
-        "lifecycle management",
-        "analytics"
-      ],
-      "slug": "retention-optimization-expert",
-      "date": "2025-07-22",
-      "version": "2.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [
-        "churn prediction",
-        "retention campaigns",
-        "customer health scoring",
-        "lifecycle optimization"
-      ],
-      "file_path": "_prompts/retention-optimization-expert.md"
-    },
-    {
-      "title": "Retention Strategy Expert",
-      "description": "Develop comprehensive retention strategies that keep customers engaged and reduce churn. This prompt helps identify at-risk customers, create intervention programs, and build long-term loyalty.",
-      "category": "customer-focused",
-      "tags": [
-        "customer-retention",
-        "churn-prevention",
-        "loyalty",
-        "engagement-strategy"
-      ],
-      "slug": "retention-strategy-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/retention-strategy-expert.md"
-    },
-    {
       "title": "Retirement Planning Specialist",
       "description": "A comprehensive retirement planning expert that helps you calculate retirement needs, optimize savings strategies, plan income sources, and create a realistic path to financial independence at your target retirement age.",
       "category": "financial-planning",
@@ -8488,19 +8186,20 @@
       "file_path": "_prompts/revenue-optimization-expert.md"
     },
     {
-      "title": "Risk Assessment Specialist",
-      "description": "A practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. Provide your risk context and I'll deliver comprehensive risk analysis with prioritized mitigation strategies.",
+      "title": "Risk Assessment Expert",
+      "description": "A comprehensive risk assessment assistant that helps you identify, analyze, evaluate, and prioritize risks across your organization or projects. I combine systematic risk evaluation methodologies with practical assessment frameworks to deliver actionable insights for protecting your objectives while enabling strategic growth.",
       "category": "analysis",
       "tags": [
         "risk assessment",
         "risk management",
         "threat analysis",
+        "evaluation",
         "mitigation strategies",
         "enterprise risk"
       ],
-      "slug": "risk-assessment-specialist",
-      "date": "2025-07-20",
-      "version": "2.0.0",
+      "slug": "risk-assessment-expert",
+      "date": "2025-09-01",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -8510,37 +8209,28 @@
       "use_cases": [
         "risk identification",
         "impact analysis",
+        "vulnerability assessment",
         "mitigation planning",
         "risk monitoring"
       ],
-      "file_path": "_prompts/risk-assessment-specialist.md"
+      "file_path": "_prompts/risk-assessment-expert.md"
     },
     {
-      "title": "Risk Evaluation Expert",
-      "description": "Expert assistant for identifying, analyzing, and prioritizing risks across projects, operations, and strategic initiatives.",
-      "category": "evaluation-assessment",
-      "tags": [],
-      "slug": "risk-evaluation-expert",
-      "date": "2025-08-18",
-      "version": "1.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/risk-evaluation-expert.md"
-    },
-    {
-      "title": "Risk Management Planning Expert",
-      "description": "A practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. Provide your risk context and I'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems.",
+      "title": "Risk Management Expert",
+      "description": "A comprehensive risk management expert combining strategic planning with quantitative risk-reward analysis. I help you develop robust risk management frameworks, assess trade-offs in decision-making, and create actionable plans that protect your organization while enabling strategic growth through informed risk-taking.",
       "category": "planning",
       "tags": [
         "risk management",
-        "risk assessment",
+        "risk-reward analysis",
+        "decision analysis",
         "mitigation planning",
         "contingency planning",
-        "enterprise risk"
+        "enterprise risk",
+        "strategic planning"
       ],
-      "slug": "risk-management-planning-expert",
-      "date": "2025-07-20",
-      "version": "2.0.0",
+      "slug": "risk-management-expert",
+      "date": "2025-09-01",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -8550,27 +8240,12 @@
       "use_cases": [
         "enterprise risk management",
         "project risk planning",
-        "operational risk assessment",
-        "strategic risk mitigation"
+        "risk-reward assessment",
+        "decision optimization",
+        "strategic risk mitigation",
+        "contingency planning"
       ],
-      "file_path": "_prompts/risk-management-planning-expert.md"
-    },
-    {
-      "title": "Risk-Reward Assessment Expert",
-      "description": "Evaluates decisions through comprehensive risk-reward analysis, quantifying probabilities and impacts to help you make informed choices with clear understanding of trade-offs.",
-      "category": "decision-making",
-      "tags": [
-        "risk-assessment",
-        "risk-reward-analysis",
-        "decision-analysis",
-        "probability"
-      ],
-      "slug": "risk-reward-assessment-expert",
-      "date": "2025-08-18",
-      "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/risk-reward-assessment-expert.md"
+      "file_path": "_prompts/risk-management-expert.md"
     },
     {
       "title": "Robotic Process Automation Expert",
@@ -9867,23 +9542,6 @@
       "file_path": "_prompts/stakeholder-communication-expert.md"
     },
     {
-      "title": "Stakeholder Impact Analysis Expert",
-      "description": "Analyzes how decisions affect different stakeholder groups, helping you understand impacts, manage expectations, and develop targeted communication strategies.",
-      "category": "decision-making",
-      "tags": [
-        "stakeholder-analysis",
-        "impact-assessment",
-        "change-management",
-        "communication"
-      ],
-      "slug": "stakeholder-impact-analysis-expert",
-      "date": "2025-08-18",
-      "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/stakeholder-impact-analysis-expert.md"
-    },
-    {
       "title": "Statistical Analysis Expert",
       "description": "This prompt helps you perform rigorous statistical analysis, test hypotheses, and derive data-driven insights. Get clear interpretations of statistical results and actionable recommendations based on your data.",
       "category": "analysis",
@@ -10294,28 +9952,6 @@
         "professional workflow enhancement"
       ],
       "file_path": "_prompts/supply-chain-resilience-strategy-expert.md"
-    },
-    {
-      "title": "Support Escalation Process Expert",
-      "description": "Design efficient escalation processes that ensure critical customer issues are resolved quickly by the right experts. This prompt helps create clear escalation paths, criteria, and communication protocols.",
-      "category": "customer-focused",
-      "tags": [
-        "escalation-management",
-        "support-tiers",
-        "issue-resolution",
-        "incident-response"
-      ],
-      "slug": "support-escalation-process-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/support-escalation-process-expert.md"
     },
     {
       "title": "Sustainable Supply Chain Management Expert",
@@ -11323,28 +10959,6 @@
         "digital experiences"
       ],
       "file_path": "_prompts/visual-design-concepts-expert.md"
-    },
-    {
-      "title": "Voice of Customer Analysis Expert",
-      "description": "Transform diverse customer feedback into strategic insights that drive business decisions. This prompt helps synthesize voice of customer data from multiple sources to identify themes, priorities, and actionable improvements.",
-      "category": "customer-focused",
-      "tags": [
-        "voc-analysis",
-        "customer-insights",
-        "feedback-synthesis",
-        "qualitative-analysis"
-      ],
-      "slug": "voice-of-customer-analysis-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [
-        "GPT-4",
-        "Claude 3",
-        "Gemini Pro",
-        "GPT-3.5"
-      ],
-      "use_cases": [],
-      "file_path": "_prompts/voice-of-customer-analysis-expert.md"
     },
     {
       "title": "Weight Management Coach",

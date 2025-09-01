@@ -4337,19 +4337,20 @@
       "file_path": "_prompts/revenue-optimization-expert.md"
     },
     {
-      "title": "Risk Assessment Specialist",
-      "description": "A practical risk assessment assistant that helps you identify, analyze, and mitigate risks across your organization. Provide your risk context and I'll deliver comprehensive risk analysis with prioritized mitigation strategies.",
+      "title": "Risk Assessment Expert",
+      "description": "A comprehensive risk assessment assistant that helps you identify, analyze, evaluate, and prioritize risks across your organization or projects. I combine systematic risk evaluation methodologies with practical assessment frameworks to deliver actionable insights for protecting your objectives while enabling strategic growth.",
       "category": "analysis",
       "tags": [
         "risk assessment",
         "risk management",
         "threat analysis",
+        "evaluation",
         "mitigation strategies",
         "enterprise risk"
       ],
-      "slug": "risk-assessment-specialist",
-      "date": "2025-07-20",
-      "version": "2.0.0",
+      "slug": "risk-assessment-expert",
+      "date": "2025-09-01",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4359,37 +4360,28 @@
       "use_cases": [
         "risk identification",
         "impact analysis",
+        "vulnerability assessment",
         "mitigation planning",
         "risk monitoring"
       ],
-      "file_path": "_prompts/risk-assessment-specialist.md"
+      "file_path": "_prompts/risk-assessment-expert.md"
     },
     {
-      "title": "Risk Evaluation Expert",
-      "description": "Expert assistant for identifying, analyzing, and prioritizing risks across projects, operations, and strategic initiatives.",
-      "category": "evaluation-assessment",
-      "tags": [],
-      "slug": "risk-evaluation-expert",
-      "date": "2025-07-21",
-      "version": "1.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/risk-evaluation-expert.md"
-    },
-    {
-      "title": "Risk Management Planning Expert",
-      "description": "A practical risk management planning assistant that helps you identify, assess, and mitigate risks to protect your organization while enabling strategic objectives. Provide your risk context and I'll develop comprehensive risk frameworks with mitigation strategies, contingency plans, and monitoring systems.",
+      "title": "Risk Management Expert",
+      "description": "A comprehensive risk management expert combining strategic planning with quantitative risk-reward analysis. I help you develop robust risk management frameworks, assess trade-offs in decision-making, and create actionable plans that protect your organization while enabling strategic growth through informed risk-taking.",
       "category": "planning",
       "tags": [
         "risk management",
-        "risk assessment",
+        "risk-reward analysis",
+        "decision analysis",
         "mitigation planning",
         "contingency planning",
-        "enterprise risk"
+        "enterprise risk",
+        "strategic planning"
       ],
-      "slug": "risk-management-planning-expert",
-      "date": "2025-07-20",
-      "version": "2.0.0",
+      "slug": "risk-management-expert",
+      "date": "2025-09-01",
+      "version": "3.0.0",
       "compatible_models": [
         "GPT-4",
         "Claude 3",
@@ -4399,27 +4391,12 @@
       "use_cases": [
         "enterprise risk management",
         "project risk planning",
-        "operational risk assessment",
-        "strategic risk mitigation"
+        "risk-reward assessment",
+        "decision optimization",
+        "strategic risk mitigation",
+        "contingency planning"
       ],
-      "file_path": "_prompts/risk-management-planning-expert.md"
-    },
-    {
-      "title": "Risk-Reward Assessment Expert",
-      "description": "Evaluates decisions through comprehensive risk-reward analysis, quantifying probabilities and impacts to help you make informed choices with clear understanding of trade-offs.",
-      "category": "decision-making",
-      "tags": [
-        "risk-assessment",
-        "risk-reward-analysis",
-        "decision-analysis",
-        "probability"
-      ],
-      "slug": "risk-reward-assessment-expert",
-      "date": "2025-07-21",
-      "version": "2.0.0",
-      "compatible_models": [],
-      "use_cases": [],
-      "file_path": "_prompts/risk-reward-assessment-expert.md"
+      "file_path": "_prompts/risk-management-expert.md"
     },
     {
       "title": "ROI Analysis Expert",
