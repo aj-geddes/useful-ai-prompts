@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive social skills development in
 ```
 
 ## Related Prompts
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Confidence Building Coach](../personal-growth/confidence-building-coach.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Confidence Building Coach](../personal-growth/confidence-building-strategist.md)
 - [Networking Strategist](../career-development/networking-strategist.md)

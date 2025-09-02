@@ -458,6 +458,6 @@ This comprehensive retention strategy provides the framework to reduce your chur
 
 ## Related Prompts
 
-- [Customer Success Manager](./customer-success-manager.md)
-- [Churn Prevention Specialist](./churn-prevention-specialist.md)
-- [Customer Analytics Expert](./customer-analytics-expert.md)
+- [Customer Success Manager](../../customer-focused/customer-success-planning-expert.md)
+- [Churn Prevention Specialist](../../content-creation/email-marketing-specialist.md)
+- [Customer Analytics Expert](../../problem-solving/customer-issue-resolution-expert.md)

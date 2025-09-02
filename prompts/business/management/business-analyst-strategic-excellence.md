@@ -342,6 +342,6 @@ This strategic approach transforms your reactive model into a proactive customer
 
 ## Related Prompts
 
-- [Process Improvement Expert](./process-improvement-expert.md)
-- [Data Analysis Specialist](./data-analysis-expert.md)
-- [Change Management Expert](./change-management-expert.md)
+- [Process Improvement Expert](../../optimization/process-improvement-expert.md)
+- [Data Analysis Specialist](../../analysis/data-analysis-expert.md)
+- [Change Management Expert](../../management-leadership/change-management-expert.md)

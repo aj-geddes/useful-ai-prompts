@@ -88,6 +88,6 @@ Provides investigation strategy including:
 
 ## Related Prompts
 
-- [Debugging Expert](debugging-expert.md) - For general troubleshooting
-- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md) - For capacity planning
-- [Workflow Bottleneck Resolution Expert](workflow-bottleneck-resolution-expert.md) - For process optimization
+- [Debugging Expert](debugging-expert.md)
+- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md)
+- [Workflow Bottleneck Resolution Expert](workflow-bottleneck-resolution-expert.md)

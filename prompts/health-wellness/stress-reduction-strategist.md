@@ -80,7 +80,6 @@ Ready to transform your relationship with stress and build lasting calm and resi
 
 ## Related Prompts
 
-- [Mental Health Support System](./mental-health-support-system.md)
-- [Sleep Quality Optimizer](./sleep-quality-optimizer.md)
-- [Mindfulness Meditation Guide](./mindfulness-meditation-guide.md)
-```
+- [Mental Health Support System](mental-health-support-system.md)
+- [Sleep Quality Optimizer](sleep-quality-optimizer.md)
+- [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)

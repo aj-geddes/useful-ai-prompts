@@ -196,6 +196,6 @@ Would you like me to detail any specific aspect further, such as the implementat
 
 ## Related Prompts
 
-- [ROI Calculator](./roi-calculator.md)
-- [Risk Assessment Expert](./risk-assessment-specialist.md)
-- [Financial Modeling Expert](./financial-modeling-expert.md)
+- [ROI Calculator](../evaluation-assessment/roi-analysis-expert.md)
+- [Risk Assessment Expert](risk-assessment-expert.md)
+- [Financial Modeling Expert](financial-modeling-expert.md)

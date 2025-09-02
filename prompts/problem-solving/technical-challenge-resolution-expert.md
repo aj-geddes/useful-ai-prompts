@@ -88,6 +88,6 @@ Creates migration strategy including:
 
 ## Related Prompts
 
-- [Debugging Expert](debugging-expert.md) - For specific bug fixes
-- [System Design Expert](../technical/system-design-expert.md) - For architecture design
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For performance issues
+- [Debugging Expert](debugging-expert.md)
+- [System Design Expert](../renewable-energy/energy-storage-system-design-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)

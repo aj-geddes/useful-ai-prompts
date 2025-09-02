@@ -380,6 +380,6 @@ The root cause is likely the N+1 query pattern in your recommendation engine. Fi
 
 ## Related Prompts
 
-- [Performance Optimization Expert](./performance-optimization-expert.md)
-- [Database Query Optimizer](./database-optimization-expert.md)
-- [System Architecture Reviewer](./architecture-review-expert.md)
+- [Performance Optimization Expert](../../management-leadership/performance-management-expert.md)
+- [Database Query Optimizer](../../technical-workflows/database-schema-development-expert.md)
+- [System Architecture Reviewer](../../technical-workflows/system-architecture-design-expert.md)

@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive dating and relationship stra
 ```
 
 ## Related Prompts
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Confidence Building Coach](../personal-growth/confidence-building-coach.md)
-- [Social Skills Developer](./social-skills-developer.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Confidence Building Coach](../personal-growth/confidence-building-strategist.md)
+- [Social Skills Developer](social-skills-developer.md)

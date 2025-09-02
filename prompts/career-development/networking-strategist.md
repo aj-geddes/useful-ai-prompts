@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive networking strategies includ
 ```
 
 ## Related Prompts
-- [Professional Brand Builder](./professional-brand-builder.md)
-- [Communication Skills Coach](../relationships-communication/communication-skills-coach.md)
-- [Career Advancement Strategist](./career-advancement-strategist.md)
+- [Professional Brand Builder](../content-creation/brand-storytelling-expert.md)
+- [Communication Skills Coach](../relationships-communication/communication-skills-enhancer.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)

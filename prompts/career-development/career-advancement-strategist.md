@@ -394,6 +394,6 @@ Would you like me to create a specific 90-day action plan for your first strateg
 
 ## Related Prompts
 
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-- [Executive Presence Developer](./executive-presence-developer.md)
-- [Leadership Skills Builder](./leadership-skills-builder.md)
+- [Professional Networking Strategist](professional-networking-strategist.md)
+- [Executive Presence Developer](../management-leadership/executive-decision-making-expert.md)
+- [Leadership Skills Builder](../management-leadership/crisis-leadership-expert.md)

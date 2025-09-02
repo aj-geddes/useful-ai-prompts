@@ -1,4 +1,5 @@
 ---
+title: Customer Success Planning Expert
 category: customer-focused
 compatible_models:
 - GPT-4
@@ -140,11 +141,7 @@ prompt: |
   | Phase | Timeline | Goals | Activities | Success Metrics |
 
 
-  |
-
-  '
-title: Customer Success Planning Expert
--------|----------|--------|------------|----------------|
+  |-------|----------|--------|------------|----------------|
 
   | Kickoff | Week 1 | Alignment | Stakeholder meeting | Plan approved |
 
@@ -269,7 +266,7 @@ title: Customer Success Planning Expert
 
   - Proposal development
 
-  - Implementation support'
+  - Implementation support
 slug: customer-success-planning-expert
 tags:
 - customer-success
@@ -282,6 +279,5 @@ tips:
 - Automate health scoring and alerts where possible
 - Document value realization for renewals and references
 - Build expansion planning into regular reviews
-title: Customer Success Planning Expert
 version: 1.0.0
 ---

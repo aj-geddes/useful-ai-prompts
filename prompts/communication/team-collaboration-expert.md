@@ -327,6 +327,6 @@ This plan addresses your immediate timezone equity issues while building toward 
 
 ## Related Prompts
 
-- [Remote Team Management Expert](./remote-team-expert.md)
-- [Meeting Effectiveness Expert](./meeting-effectiveness-expert.md)
-- [Team Culture Builder](./team-culture-expert.md)
+- [Remote Team Management Expert](../management-leadership/remote-team-management-expert.md)
+- [Meeting Effectiveness Expert](meeting-facilitation-expert.md)
+- [Team Culture Builder](../management-leadership/team-building-expert.md)

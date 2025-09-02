@@ -201,6 +201,6 @@ This analysis strongly supports your pricing model while highlighting that custo
 
 ## Related Prompts
 
-- [Predictive Analysis Expert](./predictive-analysis-expert.md)
-- [Survey Design Specialist](./survey-design-specialist.md)
-- [A/B Testing Expert](./ab-testing-expert.md)
+- [Predictive Analysis Expert](predictive-analysis-expert.md)
+- [Survey Design Specialist](../renewable-energy/energy-storage-system-design-expert.md)
+- [A/B Testing Expert](../evaluation-assessment/usability-testing-expert.md)

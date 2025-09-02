@@ -1,22 +1,16 @@
----
-category: quantum-computing
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Quantum Hardware Engineer and Quantum Systems
-  Manager expertise for Quantum Hardware Systems workflows
-slug: quantum-hardware-characterization-expert
-tags:
-- quantum computing
-- quantum hardware systems
-title: Quantum Hardware Characterization Expert
-use_cases:
-- Quantum Hardware Systems optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Quantum Hardware Characterization Expert
+
+## Metadata
+- **Category**: Quantum Computing
+- **Tags**: quantum computing, quantum hardware systems
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Quantum Hardware Systems optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Quantum Hardware Engineer and Quantum Systems Manager expertise for Quantum Hardware Systems workflows
+
 
 # Quantum Hardware Characterization Expert
 

@@ -362,7 +362,6 @@ Would you like me to elaborate on any specific strategy, such as the perfectioni
 
 ## Related Prompts
 
-- [Goal Achievement Architect](./goal-achievement-architect.md)
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Habit Formation Strategist](./habit-formation-strategist.md)
-```
+- [Goal Achievement Architect](goal-achievement-architect.md)
+- [Productivity System Designer](productivity-system-designer.md)
+- [Habit Formation Strategist](habit-formation-strategist.md)

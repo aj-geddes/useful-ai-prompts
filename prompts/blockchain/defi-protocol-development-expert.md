@@ -1,22 +1,16 @@
----
-category: blockchain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining DeFi Protocol Developer and Financial Engineering
-  Manager expertise for Decentralized Finance workflows
-slug: defi-protocol-development-expert
-tags:
-- blockchain
-- decentralized finance
-title: DeFi Protocol Development Expert
-use_cases:
-- Decentralized Finance optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# DeFi Protocol Development Expert
+
+## Metadata
+- **Category**: Blockchain
+- **Tags**: blockchain, decentralized finance
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Decentralized Finance optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining DeFi Protocol Developer and Financial Engineering Manager expertise for Decentralized Finance workflows
+
 
 # DeFi Protocol Development Expert
 

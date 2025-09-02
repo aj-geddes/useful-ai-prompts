@@ -346,6 +346,6 @@ This transformation will position you to scale successfully while maintaining yo
 
 ## Related Prompts
 
-- [Culture Transformation Expert](../business/management/culture-transformation-expert.md)
-- [Talent Development Strategist](./talent-development-expert.md)
-- [HR Analytics Specialist](./hr-analytics-expert.md)
+- [Culture Transformation Expert](../supply-chain/digital-supply-chain-transformation-expert.md)
+- [Talent Development Strategist](../management-leadership/talent-management-expert.md)
+- [HR Analytics Specialist](../healthcare-digital/patient-data-analytics-expert.md)

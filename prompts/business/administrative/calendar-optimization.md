@@ -170,6 +170,6 @@ Would you like help implementing any specific part of this plan?
 
 ## Related Prompts
 
-- [Meeting Facilitation Expert](../meeting-facilitation-expert.md)
-- [Email Prioritization Expert](./email-prioritization-response.md)
-- [Task Delegation Expert](./task-delegation-tracking.md)
+- [Meeting Facilitation Expert](../../communication/meeting-facilitation-expert.md)
+- [Email Prioritization Expert](email-prioritization-response.md)
+- [Task Delegation Expert](task-delegation-tracking.md)

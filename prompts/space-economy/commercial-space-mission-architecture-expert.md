@@ -1,22 +1,16 @@
----
-category: space-economy
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Space Mission Manager and Commercial Space
-  Operations Director expertise for Commercial Space Mission Management workflows
-slug: commercial-space-mission-architecture-expert
-tags:
-- space economy
-- commercial space mission management
-title: Commercial Space Mission Architecture Expert
-use_cases:
-- Commercial Space Mission Management optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Commercial Space Mission Architecture Expert
+
+## Metadata
+- **Category**: Space Economy
+- **Tags**: space economy, commercial space mission management
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Commercial Space Mission Management optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Space Mission Manager and Commercial Space Operations Director expertise for Commercial Space Mission Management workflows
+
 
 # Commercial Space Mission Architecture Expert
 

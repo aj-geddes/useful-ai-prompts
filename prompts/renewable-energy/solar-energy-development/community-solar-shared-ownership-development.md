@@ -1,5 +1,11 @@
 # Community Solar Project Development and Shared Ownership Models
 
+## Metadata
+- **Category**: Renewable Energy/Solar Energy Development  
+- **Tags**: community solar, solar development, shared ownership, renewable energy access, energy equity
+- **Created**: 2025-09-01
+- **Version**: 1.0.0
+
 ## Context and Challenge
 You are tasked with developing a comprehensive community solar program enabling shared ownership and participation in renewable energy projects for residential and small commercial customers who cannot install rooftop solar due to property constraints, financial limitations, or rental situations. This requires navigating complex regulatory frameworks, developing innovative financing structures, managing diverse stakeholder interests, and creating sustainable business models that democratize access to clean energy benefits.
 

@@ -285,6 +285,6 @@ This analysis shows delivery issues are your primary sentiment risk. Focus there
 
 ## Related Prompts
 
-- [Customer Journey Analyst](./customer-journey-analyst.md)
-- [Brand Perception Expert](./brand-perception-expert.md)
-- [Social Media Monitoring Specialist](./social-media-monitoring-specialist.md)
+- [Customer Journey Analyst](../customer-focused/customer-journey-mapping-expert.md)
+- [Brand Perception Expert](../content-creation/brand-storytelling-expert.md)
+- [Social Media Monitoring Specialist](../content-creation/social-media-strategy-optimizer.md)

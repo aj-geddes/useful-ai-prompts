@@ -1,22 +1,16 @@
----
-category: blockchain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining DAO Governance Engineer and Decentralized
-  Systems Manager expertise for DAO Governance workflows
-slug: decentralized-autonomous-organization-expert
-tags:
-- blockchain
-- dao governance
-title: Decentralized Autonomous Organization Expert
-use_cases:
-- DAO Governance optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Decentralized Autonomous Organization Expert
+
+## Metadata
+- **Category**: Blockchain
+- **Tags**: blockchain, dao governance
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: DAO Governance optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining DAO Governance Engineer and Decentralized Systems Manager expertise for DAO Governance workflows
+
 
 # Decentralized Autonomous Organization Expert
 

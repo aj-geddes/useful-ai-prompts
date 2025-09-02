@@ -73,7 +73,6 @@ Ready to build hydration habits that energize your body and enhance your daily p
 ```
 
 ## Related Prompts
-- [Nutrition Optimization Planner](./nutrition-optimization-planner.md)
-- [Energy Management Optimizer](./energy-management-optimizer.md)
-- [Healthy Habit Formation](./healthy-habit-formation.md)
-```
+- [Nutrition Optimization Planner](nutrition-optimization-planner.md)
+- [Energy Management Optimizer](../personal-productivity/energy-management-optimizer.md)
+- [Healthy Habit Formation](../personal-productivity/habit-formation-strategist.md)

@@ -288,9 +288,9 @@ This plan provides a structured approach to implementing your CRM system while m
 
 ## Related Prompts
 
-- [Business Strategy Expert](./business-strategy-expert.md)
-- [Risk Management Expert](./risk-management-expert.md)
-- [Resource Planning Expert](./resource-planning-expert.md)
+- [Business Strategy Expert](../communication/email-communication-strategy-expert.md)
+- [Risk Management Expert](risk-management-expert.md)
+- [Resource Planning Expert](../management-leadership/resource-management-expert.md)
 
 ## Usage Instructions
 

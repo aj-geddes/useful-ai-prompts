@@ -368,6 +368,6 @@ Start with the next 90-day action plan and build momentum. Your technical backgr
 
 ## Related Prompts
 
-- [Leadership Development Planner](./leadership-development-planner.md)
-- [Executive Presence Coach](./executive-presence-coach.md)
-- [Networking Strategy Builder](./networking-strategy-builder.md)
+- [Leadership Development Planner](../career-development/skill-development-planner.md)
+- [Executive Presence Coach](../management-leadership/executive-decision-making-expert.md)
+- [Networking Strategy Builder](../communication/email-communication-strategy-expert.md)

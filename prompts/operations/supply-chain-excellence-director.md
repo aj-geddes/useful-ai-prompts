@@ -363,5 +363,5 @@ This transformation will position your supply chain as a competitive advantage, 
 ## Related Prompts
 
 - [Operations Excellence Manager](../business/operations/operations-manager-excellence.md)
-- [Logistics Optimization Expert](./logistics-optimization-expert.md)
-- [Procurement Strategy Specialist](../business/procurement/strategic-sourcing-expert.md)
+- [Logistics Optimization Expert](../renewable-energy/solar-project-development-optimization-expert.md)
+- [Procurement Strategy Specialist](../communication/email-communication-strategy-expert.md)

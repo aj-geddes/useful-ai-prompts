@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive family relationship strategi
 ```
 
 ## Related Prompts
-- [Conflict Resolution Mediator](./conflict-resolution-mediator.md)
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Parenting Strategy Guide](./parenting-strategy-guide.md)
+- [Conflict Resolution Mediator](conflict-resolution-mediator.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Parenting Strategy Guide](parenting-strategy-guide.md)

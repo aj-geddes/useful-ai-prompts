@@ -451,7 +451,6 @@ Would you like me to dive deeper into any specific area, such as the boundary-se
 
 ## Related Prompts
 
-- [Confidence Building Strategist](./confidence-building-strategist.md)
-- [Emotional Intelligence Enhancer](./emotional-intelligence-enhancer.md)
-- [Personal Values Clarifier](./personal-values-clarifier.md)
-```
+- [Confidence Building Strategist](confidence-building-strategist.md)
+- [Emotional Intelligence Enhancer](emotional-intelligence-enhancer.md)
+- [Personal Values Clarifier](personal-values-clarifier.md)

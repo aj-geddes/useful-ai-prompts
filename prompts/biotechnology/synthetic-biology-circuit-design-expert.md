@@ -97,6 +97,6 @@ This modular design enables sensitive, multiplexed heavy metal detection with bu
 
 ## Related Prompts
 
-- [Gene Editing CRISPR Design Expert](./gene-editing-crispr-design-expert.md)
-- [Bioinformatics Pipeline Development Expert](./bioinformatics-pipeline-development-expert.md)
-- [AI-Powered Drug Discovery Expert](./ai-powered-drug-discovery-optimization-expert.md)
+- [Gene Editing CRISPR Design Expert](gene-editing-crispr-design-expert.md)
+- [Bioinformatics Pipeline Development Expert](bioinformatics-pipeline-development-expert.md)
+- [AI-Powered Drug Discovery Expert](ai-powered-drug-discovery-optimization-expert.md)

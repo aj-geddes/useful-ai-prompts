@@ -67,7 +67,6 @@ Ready to establish boundaries that protect your well-being while enhancing your 
 ```
 
 ## Related Prompts
-- [Assertiveness Development Coach](./assertiveness-development-coach.md)
-- [Self-Care Planning Specialist](../personal-growth/self-care-planning-specialist.md)
-- [Communication Skills Enhancer](./communication-skills-enhancer.md)
-```
+- [Assertiveness Development Coach](../personal-growth/self-awareness-development-coach.md)
+- [Self-Care Planning Specialist](../financial-planning/retirement-planning-specialist.md)
+- [Communication Skills Enhancer](communication-skills-enhancer.md)

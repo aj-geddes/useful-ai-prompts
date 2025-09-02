@@ -461,6 +461,6 @@ Would you like me to create a specific daily routine template that incorporates 
 
 ## Related Prompts
 
-- [Work-Life Balance Optimizer](./work-life-balance-optimizer.md)
-- [Habit Formation Strategist](./habit-formation-strategist.md)
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
+- [Work-Life Balance Optimizer](work-life-balance-optimizer.md)
+- [Habit Formation Strategist](habit-formation-strategist.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)

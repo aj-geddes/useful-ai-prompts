@@ -390,7 +390,6 @@ Would you like me to elaborate on any specific area, such as the savings automat
 
 ## Related Prompts
 
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Debt Elimination Strategist](./debt-elimination-strategist.md)
-```
+- [Personal Budget Optimizer](personal-budget-optimizer.md)
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Debt Elimination Strategist](debt-elimination-strategist.md)

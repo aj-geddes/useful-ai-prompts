@@ -150,6 +150,6 @@ Would you like me to refine any of these responses or help with specific email d
 
 ## Related Prompts
 
-- [Task Delegation & Tracking Expert](./task-delegation-tracking.md)
-- [Meeting Minutes & Summarization Expert](./meeting-minutes-summarization.md)
-- [Calendar Optimization Expert](./calendar-optimization.md)
+- [Task Delegation & Tracking Expert](task-delegation-tracking.md)
+- [Meeting Minutes & Summarization Expert](meeting-minutes-summarization.md)
+- [Calendar Optimization Expert](calendar-optimization.md)

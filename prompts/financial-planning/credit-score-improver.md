@@ -67,7 +67,6 @@ Ready to build excellent credit that opens doors to better financial opportuniti
 ```
 
 ## Related Prompts
-- [Debt Elimination Strategist](./debt-elimination-strategist.md)
-- [Financial Goal Tracker](./financial-goal-tracker.md)
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-```
+- [Debt Elimination Strategist](debt-elimination-strategist.md)
+- [Financial Goal Tracker](financial-goal-tracker.md)
+- [Personal Budget Optimizer](personal-budget-optimizer.md)

@@ -366,6 +366,6 @@ This architecture provides comprehensive protection while meeting compliance req
 
 ## Related Prompts
 
-- [Security Risk Assessment](./security-risk-expert.md)
-- [Compliance Strategy Expert](./compliance-expert.md)
-- [Incident Response Planning](./incident-response-expert.md)
+- [Security Risk Assessment](../../evaluation-assessment/security-assessment-expert.md)
+- [Compliance Strategy Expert](../../evaluation-assessment/compliance-audit-expert.md)
+- [Incident Response Planning](../cybersecurity/incident-response-commander.md)

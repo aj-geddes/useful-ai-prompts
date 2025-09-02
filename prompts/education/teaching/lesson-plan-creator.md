@@ -247,6 +247,6 @@ This lesson balances exploration with direct instruction while providing multipl
 
 ## Related Prompts
 
-- [Assessment Design Expert](./assessment-design-expert.md)
-- [Differentiated Instruction Specialist](./differentiation-expert.md)
-- [Educational Technology Integration](./edtech-integration-expert.md)
+- [Assessment Design Expert](../../renewable-energy/energy-storage-system-design-expert.md)
+- [Differentiated Instruction Specialist](../../content-creation/email-marketing-specialist.md)
+- [Educational Technology Integration](../../space-economy/spacecraft-development-and-payload-integration-expert.md)

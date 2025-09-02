@@ -426,6 +426,6 @@ This proposal positions you as the safe, proven choice while highlighting compet
 
 ## Related Prompts
 
-- [RFP Analysis Assistant](./rfp-analysis-assistant.md)
-- [Grant Writing Expert](./grant-writing-expert.md)
-- [Executive Summary Writer](./executive-summary-writer.md)
+- [RFP Analysis Assistant](../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Grant Writing Expert](script-writing-expert.md)
+- [Executive Summary Writer](../management-leadership/executive-decision-making-expert.md)

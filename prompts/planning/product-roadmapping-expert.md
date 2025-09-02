@@ -253,9 +253,9 @@ This roadmap balances user needs, business goals, and competitive positioning wh
 
 ## Related Prompts
 
-- [Business Strategy Expert](./business-strategy-expert.md)
-- [Market Research Expert](./market-research-expert.md)
-- [Project Planning Expert](./project-planning-expert.md)
+- [Business Strategy Expert](../communication/email-communication-strategy-expert.md)
+- [Market Research Expert](../research-workflows/market-research-expert.md)
+- [Project Planning Expert](project-planning-expert.md)
 
 ## Usage Instructions
 

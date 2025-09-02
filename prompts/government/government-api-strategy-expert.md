@@ -1,22 +1,16 @@
----
-category: government
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Government API Architect and Digital Services
-  Manager expertise for Government API Development workflows
-slug: government-api-strategy-expert
-tags:
-- government
-- government api development
-title: Government API Strategy Expert
-use_cases:
-- Government API Development optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Government API Strategy Expert
+
+## Metadata
+- **Category**: Government
+- **Tags**: government, government api development
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Government API Development optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Government API Architect and Digital Services Manager expertise for Government API Development workflows
+
 
 # Government API Strategy Expert
 

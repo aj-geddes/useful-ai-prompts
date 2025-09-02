@@ -250,6 +250,6 @@ This calendar balances consistency with flexibility, allowing you to maintain th
 
 ## Related Prompts
 
-- [Content Strategy Developer](./content-strategy-expert.md)
-- [SEO Content Optimizer](./seo-content-expert.md)
-- [Social Media Strategist](./social-media-strategy-expert.md)
+- [Content Strategy Developer](../../communication/email-communication-strategy-expert.md)
+- [SEO Content Optimizer](../../content-creation/seo-content-optimizer.md)
+- [Social Media Strategist](../../content-creation/social-media-strategy-optimizer.md)

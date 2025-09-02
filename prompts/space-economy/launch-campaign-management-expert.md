@@ -1,22 +1,16 @@
----
-category: space-economy
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Launch Operations Manager and Mission Integration
-  Director expertise for Launch Operations workflows
-slug: launch-campaign-management-expert
-tags:
-- space economy
-- launch operations
-title: Launch Campaign Management Expert
-use_cases:
-- Launch Operations optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Launch Campaign Management Expert
+
+## Metadata
+- **Category**: Space Economy
+- **Tags**: space economy, launch operations
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Launch Operations optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Launch Operations Manager and Mission Integration Director expertise for Launch Operations workflows
+
 
 # Launch Campaign Management Expert
 

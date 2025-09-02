@@ -80,7 +80,6 @@ Ready to become an exceptional listener who creates deeper connections and more 
 
 ## Related Prompts
 
-- [Communication Skills Enhancer](./communication-skills-enhancer.md)
-- [Conflict Resolution Strategist](./conflict-resolution-strategist.md)
-- [Empathy Development Coach](./empathy-development-coach.md)
-```
+- [Communication Skills Enhancer](communication-skills-enhancer.md)
+- [Conflict Resolution Strategist](conflict-resolution-strategist.md)
+- [Empathy Development Coach](empathy-development-coach.md)

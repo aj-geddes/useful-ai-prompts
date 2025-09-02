@@ -73,7 +73,6 @@ Ready to begin or deepen a meditation practice that transforms your relationship
 ```
 
 ## Related Prompts
-- [Stress Reduction Strategist](./stress-reduction-strategist.md)
-- [Mental Health Support System](./mental-health-support-system.md)
-- [Sleep Quality Optimizer](./sleep-quality-optimizer.md)
-```
+- [Stress Reduction Strategist](stress-reduction-strategist.md)
+- [Mental Health Support System](mental-health-support-system.md)
+- [Sleep Quality Optimizer](sleep-quality-optimizer.md)

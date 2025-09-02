@@ -151,7 +151,6 @@ WEEKS 7-12: INTEGRATION AND PLANNING
 This framework helps you make decisions confidently based on your authentic values rather than external expectations, creating the foundation for a truly fulfilling life.
 
 ## Related Prompts
-- [Self-Awareness Development Coach](./self-awareness-development-coach.md)
-- [Life Purpose Discovery Guide](./life-purpose-discovery-guide.md)
-- [Authenticity Development Coach](./authenticity-development-coach.md)
-```
+- [Self-Awareness Development Coach](self-awareness-development-coach.md)
+- [Life Purpose Discovery Guide](life-purpose-discovery-guide.md)
+- [Authenticity Development Coach](self-awareness-development-coach.md)

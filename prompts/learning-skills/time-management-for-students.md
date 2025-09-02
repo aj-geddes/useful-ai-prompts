@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive student time management stra
 ```
 
 ## Related Prompts
-- [Study Strategy Optimizer](./study-strategy-optimizer.md)
+- [Study Strategy Optimizer](../content-creation/social-media-strategy-optimizer.md)
 - [Productivity System Designer](../personal-productivity/productivity-system-designer.md)
 - [Goal Achievement Architect](../personal-productivity/goal-achievement-architect.md)

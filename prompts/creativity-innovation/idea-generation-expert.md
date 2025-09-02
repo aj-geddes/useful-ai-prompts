@@ -123,6 +123,6 @@ Would you like me to elaborate on any of these ideas or generate additional conc
 
 ## Related Prompts
 
-- [Brainstorming Facilitator](./brainstorming-facilitation-expert.md)
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
+- [Brainstorming Facilitator](brainstorming-facilitation-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)

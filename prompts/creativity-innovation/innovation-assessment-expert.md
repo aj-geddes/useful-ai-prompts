@@ -195,6 +195,6 @@ Would you like me to dive deeper into any area or help create an action plan?
 
 ## Related Prompts
 
-- [Innovation Pipeline Manager](./innovation-pipeline-management-expert.md)
-- [Risk Assessor](../evaluation-assessment/risk-assessment-expert.md)
+- [Innovation Pipeline Manager](innovation-pipeline-management-expert.md)
+- [Risk Assessor](../analysis/risk-assessment-expert.md)
 - [Strategic Planner](../planning/strategic-planning-expert.md)

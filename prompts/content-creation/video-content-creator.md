@@ -80,7 +80,6 @@ Ready to create video content that captivates your audience and builds your bran
 
 ## Related Prompts
 
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Content Calendar Architect](./content-calendar-architect.md)
-- [Blog Content Planner](./blog-content-planner.md)
-```
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Content Calendar Architect](content-calendar-architect.md)
+- [Blog Content Planner](blog-content-planner.md)

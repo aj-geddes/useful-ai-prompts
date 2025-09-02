@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive parenting strategies includi
 ```
 
 ## Related Prompts
-- [Family Relationship Counselor](./family-relationship-counselor.md)
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Conflict Resolution Mediator](./conflict-resolution-mediator.md)
+- [Family Relationship Counselor](family-relationship-counselor.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Conflict Resolution Mediator](conflict-resolution-mediator.md)

@@ -215,6 +215,6 @@ NEGOTIATION APPROACH:
 This preparation plan positions you as the ideal candidate who combines proven marketing expertise with startup-ready agility and strategic thinking.
 
 ## Related Prompts
-- [Resume Enhancement Expert](./resume-enhancement-expert.md)
-- [Career Transition Specialist](./career-transition-specialist.md)
-- [Professional Brand Builder](./professional-brand-builder.md)
+- [Resume Enhancement Expert](../content-creation/copywriting-enhancement-expert.md)
+- [Career Transition Specialist](../content-creation/email-marketing-specialist.md)
+- [Professional Brand Builder](../content-creation/brand-storytelling-expert.md)

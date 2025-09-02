@@ -88,6 +88,6 @@ Develops error strategy including:
 
 ## Related Prompts
 
-- [Debugging Expert](debugging-expert.md) - For fixing existing errors
-- [System Design Expert](../technical/system-design-expert.md) - For overall architecture
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For reliability issues
+- [Debugging Expert](debugging-expert.md)
+- [System Design Expert](../renewable-energy/energy-storage-system-design-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)

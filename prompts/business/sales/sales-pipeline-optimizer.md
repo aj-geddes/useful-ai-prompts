@@ -371,6 +371,6 @@ This optimization plan will increase your conversion rate from 15% to 22%+ while
 
 ## Related Prompts
 
-- [Sales Enablement Expert](./sales-enablement-expert.md)
-- [Sales Forecasting Analyst](./sales-forecasting-expert.md)
-- [Deal Strategy Advisor](./deal-strategy-expert.md)
+- [Sales Enablement Expert](../../management-leadership/talent-management-expert.md)
+- [Sales Forecasting Analyst](sales-pipeline-optimizer.md)
+- [Deal Strategy Advisor](../../communication/email-communication-strategy-expert.md)

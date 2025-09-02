@@ -379,6 +379,6 @@ Would you like me to dive deeper into any specific area, such as client communic
 
 ## Related Prompts
 
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Stress Management Strategist](./stress-management-strategist.md)
-- [Single Parent Productivity System](./single-parent-productivity-system.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Stress Management Strategist](stress-management-strategist.md)
+- [Single Parent Productivity System](productivity-system-designer.md)

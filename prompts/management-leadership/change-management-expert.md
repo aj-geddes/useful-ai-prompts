@@ -4,6 +4,7 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: change-management, transformation, adoption, resistance, communication
+- **Use Cases**: organizational transformation, change implementation, resistance management, culture change
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
 

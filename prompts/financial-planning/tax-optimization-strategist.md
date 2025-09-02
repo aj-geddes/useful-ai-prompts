@@ -406,7 +406,6 @@ Would you like me to elaborate on any specific strategy, such as the business ex
 
 ## Related Prompts
 
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Retirement Planning Specialist](./retirement-planning-specialist.md)
-- [Emergency Fund Builder](./emergency-fund-builder.md)
-```
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Retirement Planning Specialist](retirement-planning-specialist.md)
+- [Emergency Fund Builder](emergency-fund-builder.md)

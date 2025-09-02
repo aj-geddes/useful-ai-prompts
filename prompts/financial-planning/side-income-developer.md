@@ -80,7 +80,6 @@ Ready to build additional income streams that accelerate your path to financial 
 
 ## Related Prompts
 
-- [Financial Goal Tracker](./financial-goal-tracker.md)
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-```
+- [Financial Goal Tracker](financial-goal-tracker.md)
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Personal Budget Optimizer](personal-budget-optimizer.md)

@@ -227,6 +227,6 @@ Would you like me to elaborate on any specific finding or create additional anal
 
 ## Related Prompts
 
-- [Statistical Analysis Expert](./statistical-analysis-expert.md)
-- [Predictive Analysis Expert](./predictive-analysis-expert.md)
-- [Market Research Strategist](./market-research-strategist.md)
+- [Statistical Analysis Expert](statistical-analysis-expert.md)
+- [Predictive Analysis Expert](predictive-analysis-expert.md)
+- [Market Research Strategist](market-research-strategist.md)

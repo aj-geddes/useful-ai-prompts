@@ -230,6 +230,6 @@ Would you like me to dive deeper into any specific pattern or set up real-time m
 
 ## Related Prompts
 
-- [Anomaly Detection Specialist](./anomaly-detection-specialist.md)
-- [Behavioral Analysis Expert](./behavioral-analysis-expert.md)  
-- [Predictive Analytics Expert](./predictive-analysis-expert.md)
+- [Anomaly Detection Specialist](../content-creation/email-marketing-specialist.md)
+- [Behavioral Analysis Expert](../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Predictive Analytics Expert](predictive-analysis-expert.md)

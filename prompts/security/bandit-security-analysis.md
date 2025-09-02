@@ -1,5 +1,16 @@
 # Bandit Security Analysis Prompt
 
+## Metadata
+- **Category**: Security/Technical
+- **Tags**: python-security, bandit, static-analysis, vulnerability-scanning, code-security
+- **Created**: 2025-01-15
+- **Version**: 1.0.0
+- **Use Cases**: Security vulnerability analysis, automated security fix implementation, Python code security assessment
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+
+## Description
+Comprehensive prompt for analyzing bandit security scan reports and automatically implementing fixes with full MCP integration.
+
 ## Overview
 
 Comprehensive prompt for analyzing bandit security scan reports and automatically implementing fixes with full MCP integration.

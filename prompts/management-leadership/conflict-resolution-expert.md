@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: conflict-resolution, mediation, team-dynamics, communication, relationships
+- **Use Cases**: workplace conflict mediation, team tension resolution, interpersonal conflict management, workplace relationship repair
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you navigate and resolve workplace conflicts constructively, turning disagreements into opportunities for growth.

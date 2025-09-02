@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive research methodology trainin
 ```
 
 ## Related Prompts
-- [Critical Thinking Developer](./critical-thinking-developer.md)
-- [Academic Writing Coach](./academic-writing-coach.md)
-- [Information Organization Specialist](../personal-productivity/information-organization-specialist.md)
+- [Critical Thinking Developer](../personal-growth/self-discipline-developer.md)
+- [Academic Writing Coach](../personal-growth/self-awareness-development-coach.md)
+- [Information Organization Specialist](../content-creation/email-marketing-specialist.md)

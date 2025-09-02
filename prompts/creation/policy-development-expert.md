@@ -441,6 +441,6 @@ This comprehensive policy package provides everything needed for secure remote w
 
 ## Related Prompts
 
-- [Security Framework Designer](./security-framework-designer.md)
-- [Compliance Documentation Expert](./compliance-documentation-expert.md)
-- [Training Material Creator](./training-material-creator.md)
+- [Security Framework Designer](../content-creation/storytelling-framework-designer.md)
+- [Compliance Documentation Expert](../technical-workflows/technical-documentation-expert.md)
+- [Training Material Creator](../learning-development/training-material-development-expert.md)

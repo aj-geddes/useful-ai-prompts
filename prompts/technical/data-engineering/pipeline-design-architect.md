@@ -327,6 +327,6 @@ This architecture provides a solid foundation that can grow with your needs whil
 
 ## Related Prompts
 
-- [Data Quality Framework](./data-quality-expert.md)
-- [Stream Processing Expert](./stream-processing-expert.md)
-- [Data Warehouse Architect](./data-warehouse-expert.md)
+- [Data Quality Framework](../../problem-solving/quality-improvement-expert.md)
+- [Stream Processing Expert](../../management-leadership/talent-management-expert.md)
+- [Data Warehouse Architect](../../analysis/data-analysis-expert.md)

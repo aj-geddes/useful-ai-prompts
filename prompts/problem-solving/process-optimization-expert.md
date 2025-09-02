@@ -88,6 +88,6 @@ Creates improvement strategy including:
 
 ## Related Prompts
 
-- [Workflow Bottleneck Resolution Expert](workflow-bottleneck-resolution-expert.md) - For specific bottleneck issues
-- [Quality Improvement Expert](quality-improvement-expert.md) - For quality-focused optimization
-- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md) - For resource optimization
+- [Workflow Bottleneck Resolution Expert](workflow-bottleneck-resolution-expert.md)
+- [Quality Improvement Expert](quality-improvement-expert.md)
+- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md)

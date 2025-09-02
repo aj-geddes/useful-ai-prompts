@@ -458,6 +458,6 @@ This plan transforms your auto-generated docs into a developer experience that r
 
 ## Related Prompts
 
-- [API Design Expert](./api-design-expert.md)
-- [Developer Experience Designer](./developer-experience-expert.md)
-- [Technical Writing Specialist](./technical-writing-expert.md)
+- [API Design Expert](../technical-workflows/api-design-expert.md)
+- [Developer Experience Designer](../learning-development/learning-experience-design-expert.md)
+- [Technical Writing Specialist](../technical-workflows/technical-documentation-expert.md)

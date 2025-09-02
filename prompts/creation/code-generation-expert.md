@@ -1116,6 +1116,6 @@ Would you like me to continue with more Creation workflow prompts or dive deeper
 
 ## Related Prompts
 
-- [API Design Expert](./api-design-expert.md)
-- [Database Design Expert](./database-design-expert.md)
-- [Software Architecture Expert](./software-architecture-expert.md)
+- [API Design Expert](../technical-workflows/api-design-expert.md)
+- [Database Design Expert](../renewable-energy/energy-storage-system-design-expert.md)
+- [Software Architecture Expert](../space-economy/commercial-space-mission-architecture-expert.md)

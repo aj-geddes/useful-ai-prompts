@@ -418,6 +418,6 @@ Would you like me to dive deeper into any specific behavior pattern or create de
 
 ## Related Prompts
 
-- [Customer Journey Expert](./customer-journey-expert.md)
-- [Conversion Rate Optimization Specialist](./conversion-optimization-specialist.md)
-- [Product Analytics Expert](./product-analytics-expert.md)
+- [Customer Journey Expert](../customer-focused/customer-journey-mapping-expert.md)
+- [Conversion Rate Optimization Specialist](../optimization/conversion-rate-optimization-expert.md)
+- [Product Analytics Expert](../creation/product-design-expert.md)

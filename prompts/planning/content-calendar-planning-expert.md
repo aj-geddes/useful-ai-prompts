@@ -371,9 +371,9 @@ This calendar provides structure while maintaining flexibility for trending topi
 
 ## Related Prompts
 
-- [Content Creation Expert](./content-creation-expert.md)
-- [Email Marketing Expert](./email-marketing-expert.md)
-- [Social Media Strategy Expert](./social-media-strategy-expert.md)
+- [Content Creation Expert](../creation/content-creation-expert.md)
+- [Email Marketing Expert](../communication/email-communication-strategy-expert.md)
+- [Social Media Strategy Expert](../content-creation/social-media-strategy-optimizer.md)
 
 ## Usage Instructions
 

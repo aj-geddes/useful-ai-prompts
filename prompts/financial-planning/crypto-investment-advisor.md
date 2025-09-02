@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive crypto investment strategy
 ```
 
 ## Related Prompts
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Risk Assessment Specialist](../analysis/risk-assessment-specialist.md)
-- [Portfolio Diversification Expert](./portfolio-diversification-expert.md)
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Risk Assessment Specialist](../analysis/risk-assessment-expert.md)
+- [Portfolio Diversification Expert](../management-leadership/talent-management-expert.md)

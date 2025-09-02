@@ -385,7 +385,6 @@ Would you like me to elaborate on any specific area, such as the meeting partici
 
 ## Related Prompts
 
-- [Self-Awareness Development Coach](./self-awareness-development-coach.md)
-- [Emotional Intelligence Enhancer](./emotional-intelligence-enhancer.md)
-- [Personal Values Clarifier](./personal-values-clarifier.md)
-```
+- [Self-Awareness Development Coach](self-awareness-development-coach.md)
+- [Emotional Intelligence Enhancer](emotional-intelligence-enhancer.md)
+- [Personal Values Clarifier](personal-values-clarifier.md)

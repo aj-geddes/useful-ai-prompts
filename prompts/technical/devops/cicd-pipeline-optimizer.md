@@ -384,6 +384,6 @@ This optimized pipeline will transform your deployment velocity while improving 
 
 ## Related Prompts
 
-- [Infrastructure as Code Expert](./iac-terraform-expert.md)
-- [Kubernetes Optimization Specialist](./k8s-optimization-expert.md)
-- [DevOps Security Expert](./devsecops-expert.md)
+- [Infrastructure as Code Expert](../../creation/code-generation-expert.md)
+- [Kubernetes Optimization Specialist](../../renewable-energy/solar-project-development-optimization-expert.md)
+- [DevOps Security Expert](../../problem-solving/security-vulnerability-mitigation-expert.md)

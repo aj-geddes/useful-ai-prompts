@@ -196,6 +196,6 @@ Would you like me to dive deeper into any phase or help you create specific rese
 
 ## Related Prompts
 
-- [User Research Expert](../research/user-research-expert.md)
-- [Prototyping Guide](./prototyping-methodology-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
+- [User Research Expert](../research-workflows/user-research-expert.md)
+- [Prototyping Guide](prototyping-methodology-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)

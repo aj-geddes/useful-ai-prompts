@@ -243,6 +243,6 @@ Would you like me to:
 
 ## Related Prompts
 
-- [Inventory Optimization Expert](./inventory-optimization-expert.md)
-- [Time Series Analyst](./time-series-analyst.md)
-- [Risk Assessment Specialist](./risk-assessment-specialist.md)
+- [Inventory Optimization Expert](../renewable-energy/solar-project-development-optimization-expert.md)
+- [Time Series Analyst](../personal-productivity/time-management-optimizer.md)
+- [Risk Assessment Specialist](risk-assessment-expert.md)

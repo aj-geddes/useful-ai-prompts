@@ -41,7 +41,6 @@ Based on your responses, I'll provide a complete workout system including exerci
 ```
 
 ## Related Prompts
-- [Nutrition Optimization Planner](./nutrition-optimization-planner.md)
-- [Fitness Goal Tracker](./fitness-goal-tracker.md)
-- [Exercise Motivation Coach](./exercise-motivation-coach.md)
-```
+- [Nutrition Optimization Planner](nutrition-optimization-planner.md)
+- [Fitness Goal Tracker](../financial-planning/financial-goal-tracker.md)
+- [Exercise Motivation Coach](../management-leadership/team-motivation-expert.md)

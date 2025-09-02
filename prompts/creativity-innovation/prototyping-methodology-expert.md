@@ -221,6 +221,6 @@ Would you like me to detail any specific part, like the testing script or help y
 
 ## Related Prompts
 
-- [User Research Guide](../research/user-research-expert.md)
-- [MVP Developer](./mvp-development-expert.md)
-- [Design Thinking Facilitator](./design-thinking-process-expert.md)
+- [User Research Guide](../research-workflows/user-research-expert.md)
+- [MVP Developer](../personal-growth/self-discipline-developer.md)
+- [Design Thinking Facilitator](design-thinking-process-expert.md)

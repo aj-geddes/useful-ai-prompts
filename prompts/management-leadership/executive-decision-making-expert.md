@@ -4,6 +4,7 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: decision-making, executive, strategy, analysis, leadership
+- **Use Cases**: strategic decision making, executive leadership, risk assessment, business planning
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
 

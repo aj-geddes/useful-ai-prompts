@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive estate planning guidance inc
 ```
 
 ## Related Prompts
-- [Insurance Planning Expert](./insurance-planning-expert.md)
-- [Tax Optimization Strategist](./tax-optimization-strategist.md)
-- [Family Financial Planner](./family-financial-planner.md)
+- [Insurance Planning Expert](insurance-planning-expert.md)
+- [Tax Optimization Strategist](tax-optimization-strategist.md)
+- [Family Financial Planner](../renewable-energy/solar-project-financial-modeling-investment-optimization.md)

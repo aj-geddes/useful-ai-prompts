@@ -80,7 +80,6 @@ Ready to transform your memory capabilities and unlock more effective learning a
 
 ## Related Prompts
 
-- [Skill Acquisition Accelerator](./skill-acquisition-accelerator.md)
-- [Online Learning Optimizer](./online-learning-optimizer.md)
-- [Study Schedule Optimizer](./study-schedule-optimizer.md)
-```
+- [Skill Acquisition Accelerator](skill-acquisition-accelerator.md)
+- [Online Learning Optimizer](online-learning-optimizer.md)
+- [Study Schedule Optimizer](../content-creation/seo-content-optimizer.md)

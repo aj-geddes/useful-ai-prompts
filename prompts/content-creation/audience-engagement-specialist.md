@@ -67,7 +67,6 @@ Ready to build a highly engaged audience that actively participates and supports
 ```
 
 ## Related Prompts
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Community Building Expert](./community-building-expert.md)
-- [Content Calendar Architect](./content-calendar-architect.md)
-```
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Community Building Expert](../management-leadership/team-building-expert.md)
+- [Content Calendar Architect](content-calendar-architect.md)

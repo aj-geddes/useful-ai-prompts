@@ -372,9 +372,9 @@ This plan provides a solid foundation for protecting your operations. Start with
 
 ## Related Prompts
 
-- [Risk Management Planning Expert](./risk-management-planning-expert.md)
-- [Crisis Management Expert](./crisis-management-expert.md)
-- [Business Continuity Expert](./business-continuity-expert.md)
+- [Risk Management Planning Expert](risk-management-expert.md)
+- [Crisis Management Expert](../problem-solving/crisis-management-expert.md)
+- [Business Continuity Expert](../management-leadership/talent-management-expert.md)
 
 ## Usage Instructions
 

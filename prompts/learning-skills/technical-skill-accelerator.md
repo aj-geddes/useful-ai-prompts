@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive technical skill developmen
 ```
 
 ## Related Prompts
-- [Skill Development Strategist](./skill-development-strategist.md)
-- [Career Transition Specialist](../career-development/career-transition-specialist.md)
-- [Project Management Expert](../business-strategy/project-management-expert.md)
+- [Skill Development Strategist](../career-development/skill-development-planner.md)
+- [Career Transition Specialist](../content-creation/email-marketing-specialist.md)
+- [Project Management Expert](../management-leadership/talent-management-expert.md)

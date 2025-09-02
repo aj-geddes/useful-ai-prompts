@@ -67,7 +67,6 @@ Ready to optimize every aspect of your performance for consistent peak achieveme
 ```
 
 ## Related Prompts
-- [Energy Management Optimizer](../health-wellness/energy-management-optimizer.md)
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
-- [Productivity System Designer](./productivity-system-designer.md)
-```
+- [Energy Management Optimizer](energy-management-optimizer.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)
+- [Productivity System Designer](productivity-system-designer.md)

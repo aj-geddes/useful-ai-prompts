@@ -1,22 +1,16 @@
----
-category: healthcare-digital
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Digital Health Strategy Director and Healthcare
-  Innovation Manager expertise for Digital Health Strategy workflows
-slug: digital-health-transformation-strategist
-tags:
-- healthcare digital
-- digital health strategy
-title: Digital Health Transformation Strategist
-use_cases:
-- Digital Health Strategy optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Digital Health Transformation Strategist
+
+## Metadata
+- **Category**: Healthcare Digital
+- **Tags**: healthcare digital, digital health strategy
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Digital Health Strategy optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Digital Health Strategy Director and Healthcare Innovation Manager expertise for Digital Health Strategy workflows
+
 
 # Digital Health Transformation Strategist
 

@@ -504,7 +504,6 @@ Would you like me to elaborate on any specific area, such as the project develop
 
 ## Related Prompts
 
-- [Skill Acquisition Accelerator](./skill-acquisition-accelerator.md)
-- [Professional Certification Planner](./professional-certification-planner.md)
-- [Knowledge Retention Enhancer](./knowledge-retention-enhancer.md)
-```
+- [Skill Acquisition Accelerator](skill-acquisition-accelerator.md)
+- [Professional Certification Planner](professional-certification-planner.md)
+- [Knowledge Retention Enhancer](knowledge-retention-enhancer.md)

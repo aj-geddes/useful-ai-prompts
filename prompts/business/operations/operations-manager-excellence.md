@@ -276,6 +276,6 @@ Would you like me to detail any specific part of this plan or help with implemen
 
 ## Related Prompts
 
-- [Process Optimization Expert](./process-optimization-expert.md)
-- [Supply Chain Expert](./supply-chain-optimization-expert.md)
-- [Team Management Expert](../management/team-performance-expert.md)
+- [Process Optimization Expert](process-optimization-expert.md)
+- [Supply Chain Expert](supply-chain-optimization-expert.md)
+- [Team Management Expert](../../management-leadership/remote-team-management-expert.md)

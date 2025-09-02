@@ -227,6 +227,6 @@ Would you like me to detail any specific aspect further, such as the integration
 
 ## Related Prompts
 
-- [M&A Deal Analyzer](./ma-deal-analyzer.md)
-- [Investment Decision Analyst](./investment-decision-analyst.md)
-- [Financial Due Diligence Expert](./financial-due-diligence.md)
+- [M&A Deal Analyzer](../career-development/skill-gap-analyzer.md)
+- [Investment Decision Analyst](../financial-planning/real-estate-investment-analyst.md)
+- [Financial Due Diligence Expert](financial-modeling-expert.md)

@@ -391,9 +391,9 @@ This plan provides a structured approach to launching your AI analytics platform
 
 ## Related Prompts
 
-- [Content Marketing Strategy Expert](./content-marketing-strategy-expert.md)
-- [Digital Advertising Expert](./digital-advertising-expert.md)
-- [Campaign Analytics Expert](./campaign-analytics-expert.md)
+- [Content Marketing Strategy Expert](../communication/email-communication-strategy-expert.md)
+- [Digital Advertising Expert](../supply-chain/digital-supply-chain-transformation-expert.md)
+- [Campaign Analytics Expert](../space-economy/launch-campaign-management-expert.md)
 
 ## Usage Instructions
 

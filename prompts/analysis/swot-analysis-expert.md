@@ -332,6 +332,6 @@ Would you like me to dive deeper into any specific strategic option or help you 
 
 ## Related Prompts
 
-- [Competitive Analysis Expert](./competitive-analysis-expert.md)
-- [Market Research Strategist](./market-research-strategist.md)
-- [Strategic Planning Expert](./strategic-planning-expert.md)
+- [Competitive Analysis Expert](competitive-analysis-expert.md)
+- [Market Research Strategist](market-research-strategist.md)
+- [Strategic Planning Expert](../planning/strategic-planning-expert.md)

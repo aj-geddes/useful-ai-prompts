@@ -152,6 +152,6 @@ Ready to move forward? I can help develop specific creative concepts or refine a
 
 ## Related Prompts
 
-- [Brainstorming Facilitator](./brainstorming-facilitation-expert.md)
-- [Campaign Strategist](../planning/campaign-planning-expert.md)
-- [Brand Voice Developer](../communication/brand-voice-development-expert.md)
+- [Brainstorming Facilitator](brainstorming-facilitation-expert.md)
+- [Campaign Strategist](../planning/marketing-campaign-planning-expert.md)
+- [Brand Voice Developer](../content-creation/brand-storytelling-expert.md)

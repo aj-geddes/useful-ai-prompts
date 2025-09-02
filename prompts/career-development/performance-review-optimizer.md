@@ -393,7 +393,6 @@ Would you like me to help you refine any specific section, such as the STAR meth
 
 ## Related Prompts
 
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-- [Skill Development Planner](./skill-development-planner.md)
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-```
+- [Professional Networking Strategist](professional-networking-strategist.md)
+- [Skill Development Planner](skill-development-planner.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)

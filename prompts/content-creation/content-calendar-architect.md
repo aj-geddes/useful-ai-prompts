@@ -67,7 +67,6 @@ Ready to create a content calendar that drives consistent results and streamline
 ```
 
 ## Related Prompts
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Blog Content Planner](./blog-content-planner.md)
-- [Email Newsletter Strategist](./email-newsletter-strategist.md)
-```
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Blog Content Planner](blog-content-planner.md)
+- [Email Newsletter Strategist](email-newsletter-strategist.md)

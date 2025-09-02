@@ -248,9 +248,9 @@ This strategy positions you to achieve $100M+ revenue while establishing global 
 
 ## Related Prompts
 
-- [Business Planning Expert](./business-planning-expert.md)
-- [Market Analysis Expert](./market-analysis-expert.md)
-- [Competitive Strategy Expert](./competitive-strategy-expert.md)
+- [Business Planning Expert](../financial-planning/insurance-planning-expert.md)
+- [Market Analysis Expert](../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Competitive Strategy Expert](../communication/email-communication-strategy-expert.md)
 
 ## Usage Instructions
 

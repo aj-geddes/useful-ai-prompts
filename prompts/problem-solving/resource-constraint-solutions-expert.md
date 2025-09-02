@@ -88,6 +88,6 @@ Develops solution plan including:
 
 ## Related Prompts
 
-- [Process Optimization Expert](process-optimization-expert.md) - For efficiency improvements
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For capacity issues
-- [Decision Making Expert](decision-making-expert.md) - For resource allocation decisions
+- [Process Optimization Expert](../business/operations/process-optimization-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)
+- [Decision Making Expert](decision-making-expert.md)

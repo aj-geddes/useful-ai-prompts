@@ -163,6 +163,6 @@ Would you like me to explore any of these breakthrough concepts deeper or help y
 
 ## Related Prompts
 
-- [Innovation Pipeline Manager](./innovation-pipeline-management-expert.md)
-- [First Principles Thinker](./first-principles-thinking-expert.md)
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
+- [Innovation Pipeline Manager](innovation-pipeline-management-expert.md)
+- [First Principles Thinker](first-principles-thinking-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)

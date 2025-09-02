@@ -1,22 +1,16 @@
----
-category: space-economy
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Satellite Operations Engineer and Space
-  Network Manager expertise for Satellite Operations workflows
-slug: satellite-constellation-operations-manager
-tags:
-- space economy
-- satellite operations
-title: Satellite Constellation Operations Manager
-use_cases:
-- Satellite Operations optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Satellite Constellation Operations Manager
+
+## Metadata
+- **Category**: Space Economy
+- **Tags**: space economy, satellite operations
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Satellite Operations optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Satellite Operations Engineer and Space Network Manager expertise for Satellite Operations workflows
+
 
 # Satellite Constellation Operations Manager
 

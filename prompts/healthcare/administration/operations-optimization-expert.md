@@ -286,6 +286,6 @@ This comprehensive approach addresses your immediate ED crisis while building su
 
 ## Related Prompts
 
-- [Healthcare Quality Improvement Specialist](./quality-improvement-expert.md)
-- [Clinical Workflow Designer](./clinical-workflow-expert.md)
-- [Patient Experience Strategist](./patient-experience-expert.md)
+- [Healthcare Quality Improvement Specialist](../../problem-solving/quality-improvement-expert.md)
+- [Clinical Workflow Designer](../../problem-solving/workflow-bottleneck-resolution-expert.md)
+- [Patient Experience Strategist](../../learning-development/learning-experience-design-expert.md)

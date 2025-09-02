@@ -269,6 +269,6 @@ Your design has good fundamentals but needs the critical modifications above to 
 
 ## Related Prompts
 
-- [Failure Analysis Expert](./failure-analysis-expert.md)
-- [Materials Selection Specialist](./materials-engineering-expert.md)
-- [Manufacturing Process Expert](./manufacturing-process-expert.md)
+- [Failure Analysis Expert](../../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Materials Selection Specialist](../../research-workflows/materials-research-expert.md)
+- [Manufacturing Process Expert](../../business/operations/process-optimization-expert.md)

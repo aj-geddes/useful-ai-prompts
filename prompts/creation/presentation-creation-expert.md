@@ -473,6 +473,6 @@ This complete package gives you everything needed to deliver a compelling pitch 
 
 ## Related Prompts
 
-- [Pitch Deck Designer](./pitch-deck-designer.md)
-- [Data Visualization Expert](./data-visualization-expert.md)
-- [Executive Communication Coach](./executive-communication-coach.md)
+- [Pitch Deck Designer](../content-creation/storytelling-framework-designer.md)
+- [Data Visualization Expert](../analysis/data-analysis-expert.md)
+- [Executive Communication Coach](../management-leadership/executive-decision-making-expert.md)

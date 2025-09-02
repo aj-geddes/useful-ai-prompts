@@ -264,6 +264,6 @@ Would you like me to dive deeper into any specific area, such as detailed custom
 
 ## Related Prompts
 
-- [Competitive Analysis Expert](./competitive-analysis-expert.md)
-- [Customer Journey Mapper](./customer-journey-expert.md)
-- [Market Sizing Calculator](./market-sizing-expert.md)
+- [Competitive Analysis Expert](competitive-analysis-expert.md)
+- [Customer Journey Mapper](../customer-focused/customer-journey-mapping-expert.md)
+- [Market Sizing Calculator](../evaluation-assessment/market-fit-assessment-expert.md)

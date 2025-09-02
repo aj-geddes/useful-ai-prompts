@@ -88,6 +88,6 @@ Develops presentation strategy including:
 
 ## Related Prompts
 
-- [Executive Briefing Expert](executive-briefing-expert.md) - For C-suite communications
-- [Stakeholder Communication Expert](stakeholder-communication-expert.md) - For complex stakeholder management
-- [Negotiation Preparation Expert](negotiation-preparation-expert.md) - For deal discussions
+- [Executive Briefing Expert](executive-briefing-expert.md)
+- [Stakeholder Communication Expert](stakeholder-communication-expert.md)
+- [Negotiation Preparation Expert](negotiation-preparation-expert.md)

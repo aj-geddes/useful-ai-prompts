@@ -1,22 +1,16 @@
----
-category: supply-chain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Supply Chain Risk Manager and Supplier
-  Ecosystem Manager expertise for Supply Chain Resilience workflows
-slug: supply-chain-resilience-strategy-expert
-tags:
-- supply chain
-- supply chain resilience
-title: Supply Chain Resilience Strategy Expert
-use_cases:
-- Supply Chain Resilience optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Supply Chain Resilience Strategy Expert
+
+## Metadata
+- **Category**: Supply Chain
+- **Tags**: supply chain, supply chain resilience
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Supply Chain Resilience optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Supply Chain Risk Manager and Supplier Ecosystem Manager expertise for Supply Chain Resilience workflows
+
 
 # Supply Chain Resilience Strategy Expert
 

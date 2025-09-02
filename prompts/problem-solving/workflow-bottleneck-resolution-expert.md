@@ -88,6 +88,6 @@ Develops resolution strategy including:
 
 ## Related Prompts
 
-- [Process Optimization Expert](process-optimization-expert.md) - For overall process improvement
-- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md) - For resource limitations
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For system performance issues
+- [Process Optimization Expert](../business/operations/process-optimization-expert.md)
+- [Resource Constraint Solutions Expert](resource-constraint-solutions-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)

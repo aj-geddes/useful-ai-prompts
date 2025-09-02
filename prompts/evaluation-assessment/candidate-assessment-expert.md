@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Evaluation & Assessment
+- **Tags**: candidate assessment, hiring, talent evaluation, hr recruitment, interview process
 - **Created**: 2025-01-15
 - **Type**: candidate-assessment
 - **Level**: Professional

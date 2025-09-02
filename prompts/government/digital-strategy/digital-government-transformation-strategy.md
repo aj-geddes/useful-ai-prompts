@@ -572,6 +572,6 @@ This comprehensive digital government transformation strategy provides the found
 
 ## Related Prompts
 
-- [Digital Identity Platform Architect](../digital-identity/digital-identity-platform-architect.md)
-- [Citizen Service Experience Designer](../citizen-services/citizen-service-experience-designer.md)
-- [Government API Strategy Developer](./government-api-strategy-developer.md)
+- [Digital Identity Platform Architect](../digital-identity-platform-architect.md)
+- [Citizen Service Experience Designer](../citizen-service-experience-designer.md)
+- [Government API Strategy Developer](../government-api-strategy-expert.md)

@@ -4,7 +4,7 @@
 - **Created**: 2025-01-15
 
 - **Category**: Renewable Energy/Energy Policy and Regulation
-- **Tags**: renewable energy, energy policy and regulation
+- **Tags**: renewable energy, energy policy, regulatory affairs, government policy, sustainability
 - **Version**: 3.0.0
 - **Use Cases**: Energy Policy and Regulation optimization, professional workflow enhancement
 - **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro

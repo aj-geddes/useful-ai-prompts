@@ -365,6 +365,6 @@ This roadmap transforms your compliance function from reactive to proactive, pos
 
 ## Related Prompts
 
-- [Risk Assessment Expert](../project-management/risk-assessment-expert.md)
-- [Policy Development Specialist](./policy-development-expert.md)
-- [Audit Management Expert](./audit-management-expert.md)
+- [Risk Assessment Expert](../../analysis/risk-assessment-expert.md)
+- [Policy Development Specialist](../../creation/policy-development-expert.md)
+- [Audit Management Expert](../../management-leadership/talent-management-expert.md)

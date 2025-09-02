@@ -448,6 +448,6 @@ Would you like me to create a detailed monthly budget template that incorporates
 
 ## Related Prompts
 
-- [Investment Planning Advisor](./investment-planning-advisor.md)
-- [Social Security Optimization Guide](./social-security-optimization-guide.md)
-- [Healthcare Cost Planning Specialist](./healthcare-cost-planning-specialist.md)
+- [Investment Planning Advisor](investment-planning-advisor.md)
+- [Social Security Optimization Guide](../biotechnology/gene-editing/crispr-guide-rna-design-optimization.md)
+- [Healthcare Cost Planning Specialist](retirement-planning-specialist.md)

@@ -432,7 +432,6 @@ Would you like me to dive deeper into any specific area, such as meal prep techn
 
 ## Related Prompts
 
-- [Fitness Routine Optimizer](./fitness-routine-optimizer.md)
-- [Sleep Quality Optimizer](./sleep-quality-optimizer.md)
-- [Stress Reduction Strategist](./stress-reduction-strategist.md)
-```
+- [Fitness Routine Optimizer](../content-creation/seo-content-optimizer.md)
+- [Sleep Quality Optimizer](sleep-quality-optimizer.md)
+- [Stress Reduction Strategist](stress-reduction-strategist.md)

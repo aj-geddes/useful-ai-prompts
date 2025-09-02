@@ -316,6 +316,6 @@ This phased approach minimizes risk while delivering immediate value through qui
 
 ## Related Prompts
 
-- [Cloud Cost Optimizer](./cloud-cost-expert.md)
-- [Infrastructure as Code Expert](./iac-terraform-expert.md)
-- [Cloud Security Architect](./cloud-security-expert.md)
+- [Cloud Cost Optimizer](../../analysis/cost-benefit-analysis-expert.md)
+- [Infrastructure as Code Expert](../../creation/code-generation-expert.md)
+- [Cloud Security Architect](../../problem-solving/security-vulnerability-mitigation-expert.md)

@@ -792,5 +792,5 @@ This comprehensive supplier ecosystem orchestration strategy transforms your sup
 ## Related Prompts
 
 - [Supply Chain Resilience Strategy Architect](../resilience-risk/supply-chain-resilience-strategy-architect.md)
-- [Supplier Performance Optimization Specialist](./supplier-performance-optimization-specialist.md)
-- [Strategic Sourcing Excellence Manager](./strategic-sourcing-excellence-manager.md)
+- [Supplier Performance Optimization Specialist](../../health-wellness/sleep-optimization-specialist.md)
+- [Strategic Sourcing Excellence Manager](../../business/management/business-analyst-strategic-excellence.md)

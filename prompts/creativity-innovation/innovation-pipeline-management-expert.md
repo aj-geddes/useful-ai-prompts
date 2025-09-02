@@ -153,6 +153,6 @@ Would you like me to detail any specific aspect, such as gate review criteria, t
 
 ## Related Prompts
 
-- [Innovation Assessor](./innovation-assessment-expert.md)
+- [Innovation Assessor](innovation-assessment-expert.md)
 - [Strategic Planner](../planning/strategic-planning-expert.md)
-- [Project Manager](../planning/project-roadmap-creation-expert.md)
+- [Project Manager](../management-leadership/project-governance-expert.md)

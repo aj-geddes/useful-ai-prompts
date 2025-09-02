@@ -1,22 +1,16 @@
----
-category: blockchain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Cross-Chain Protocol Engineer and Blockchain
-  Network Manager expertise for Cross-Chain Integration workflows
-slug: cross-chain-interoperability-expert
-tags:
-- blockchain
-- cross-chain integration
-title: Cross-Chain Interoperability Expert
-use_cases:
-- Cross-Chain Integration optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Cross-Chain Interoperability Expert
+
+## Metadata
+- **Category**: Blockchain
+- **Tags**: blockchain, cross-chain integration
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Cross-Chain Integration optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Cross-Chain Protocol Engineer and Blockchain Network Manager expertise for Cross-Chain Integration workflows
+
 
 # Cross-Chain Interoperability Expert
 

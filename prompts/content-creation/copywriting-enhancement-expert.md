@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive copywriting strategies inclu
 ```
 
 ## Related Prompts
-- [Email Marketing Specialist](./email-marketing-specialist.md)
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Content Marketing Strategist](./content-marketing-strategist.md)
+- [Email Marketing Specialist](email-marketing-specialist.md)
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Content Marketing Strategist](influencer-marketing-strategist.md)

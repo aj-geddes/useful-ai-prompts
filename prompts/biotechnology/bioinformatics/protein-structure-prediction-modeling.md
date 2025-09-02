@@ -1,5 +1,16 @@
 # Protein Structure Prediction and Molecular Modeling Platform
 
+## Metadata
+- **Category**: Biotechnology/Bioinformatics
+- **Tags**: protein-structure, molecular-modeling, bioinformatics, drug-discovery, computational-biology
+- **Created**: 2025-01-15
+- **Version**: 1.0.0
+- **Use Cases**: Protein structure prediction, drug-target interaction modeling, structural bioinformatics analysis
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+
+## Description
+Comprehensive platform development prompt combining Structural Bioinformatics Director and Computational Modeling Platform Engineer expertise for protein structure prediction and molecular modeling workflows.
+
 ## Context and Challenge
 
 You are developing comprehensive protein structure prediction and molecular modeling platform for a biotechnology research consortium providing AI-powered protein folding prediction, drug-target interaction modeling, and structural bioinformatics analysis across 10,000+ protein targets, requiring integrated computational modeling workflows, machine learning algorithm implementation, and high-performance computing optimization serving pharmaceutical companies, academic researchers, and biotech startups with sub-millisecond prediction accuracy and scalable molecular dynamics simulation capabilities.

@@ -228,6 +228,6 @@ This strategy positions you to navigate the political dynamics while building th
 
 ## Related Prompts
 
-- [Executive Communication Expert](./executive-communication-expert.md)
-- [Change Communication Specialist](./change-communication-specialist.md)
-- [Meeting Facilitation Expert](./meeting-facilitation-expert.md)
+- [Executive Communication Expert](../management-leadership/executive-decision-making-expert.md)
+- [Change Communication Specialist](../management-leadership/change-management-expert.md)
+- [Meeting Facilitation Expert](meeting-facilitation-expert.md)

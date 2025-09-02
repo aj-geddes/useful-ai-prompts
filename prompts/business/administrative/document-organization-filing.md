@@ -228,6 +228,6 @@ Would you like help implementing any specific part of this system?
 
 ## Related Prompts
 
-- [Task Delegation Expert](./task-delegation-tracking.md)
-- [Meeting Minutes Expert](./meeting-minutes-summarization.md)
-- [Email Management Expert](./email-prioritization-response.md)
+- [Task Delegation Expert](task-delegation-tracking.md)
+- [Meeting Minutes Expert](meeting-minutes-summarization.md)
+- [Email Management Expert](email-prioritization-response.md)

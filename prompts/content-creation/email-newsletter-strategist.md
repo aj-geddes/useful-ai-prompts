@@ -80,7 +80,6 @@ Ready to create an email newsletter that your subscribers love and that drives r
 
 ## Related Prompts
 
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Blog Content Planner](./blog-content-planner.md)
-- [Content Calendar Architect](./content-calendar-architect.md)
-```
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Blog Content Planner](blog-content-planner.md)
+- [Content Calendar Architect](content-calendar-architect.md)

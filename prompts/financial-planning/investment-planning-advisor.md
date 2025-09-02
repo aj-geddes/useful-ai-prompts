@@ -424,6 +424,6 @@ Would you like me to create specific fund recommendations for your 401(k) plan o
 
 ## Related Prompts
 
-- [Retirement Planning Specialist](./retirement-planning-specialist.md)
-- [Portfolio Rebalancing Guide](./portfolio-rebalancing-guide.md)
-- [Tax-Efficient Investing Strategist](./tax-efficient-investing-strategist.md)
+- [Retirement Planning Specialist](retirement-planning-specialist.md)
+- [Portfolio Rebalancing Guide](../health-wellness/mindfulness-meditation-guide.md)
+- [Tax-Efficient Investing Strategist](tax-optimization-strategist.md)

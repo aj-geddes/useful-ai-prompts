@@ -174,6 +174,6 @@ Would you like me to detail any specific component or help you customize this fo
 
 ## Related Prompts
 
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)
 - [Resource Optimizer](../optimization/resource-optimization-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)

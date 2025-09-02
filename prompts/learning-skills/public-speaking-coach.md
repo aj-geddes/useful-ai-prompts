@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive public speaking development 
 ```
 
 ## Related Prompts
-- [Confidence Building Coach](../personal-growth/confidence-building-coach.md)
-- [Communication Skills Coach](../relationships-communication/communication-skills-coach.md)
-- [Presentation Creation Expert](../content-creation/presentation-creation-expert.md)
+- [Confidence Building Coach](../personal-growth/confidence-building-strategist.md)
+- [Communication Skills Coach](../relationships-communication/communication-skills-enhancer.md)
+- [Presentation Creation Expert](../creation/presentation-creation-expert.md)

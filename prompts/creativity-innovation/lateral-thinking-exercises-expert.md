@@ -146,6 +146,6 @@ Which breakthrough concept excites you most? Let's develop it further!
 
 ## Related Prompts
 
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
-- [Brainstorming Facilitator](./brainstorming-facilitation-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)
+- [Brainstorming Facilitator](brainstorming-facilitation-expert.md)

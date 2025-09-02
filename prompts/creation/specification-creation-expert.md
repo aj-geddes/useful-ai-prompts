@@ -550,6 +550,6 @@ This specification provides a complete blueprint for implementing a secure, scal
 
 ## Related Prompts
 
-- [API Design Expert](./api-design-expert.md)
-- [System Architecture Designer](./system-architecture-designer.md)
-- [Security Requirements Analyst](./security-requirements-analyst.md)
+- [API Design Expert](../technical-workflows/api-design-expert.md)
+- [System Architecture Designer](../personal-productivity/productivity-system-designer.md)
+- [Security Requirements Analyst](../problem-solving/security-vulnerability-mitigation-expert.md)

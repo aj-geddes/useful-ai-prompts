@@ -142,6 +142,6 @@ Would you like me to detail any of these solutions or explore other creative ang
 
 ## Related Prompts
 
-- [Brainstorming Facilitator](./brainstorming-facilitation-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
-- [Design Thinking Guide](./design-thinking-process-expert.md)
+- [Brainstorming Facilitator](brainstorming-facilitation-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)
+- [Design Thinking Guide](design-thinking-process-expert.md)

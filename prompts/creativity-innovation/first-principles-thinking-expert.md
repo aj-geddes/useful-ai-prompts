@@ -174,6 +174,6 @@ Would you like me to dive deeper into any aspect or help you plan the migration?
 
 ## Related Prompts
 
-- [Breakthrough Ideation Coach](./breakthrough-ideation-expert.md)
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
-- [Systems Thinker](../analysis/systems-thinking-analysis-expert.md)
+- [Breakthrough Ideation Coach](breakthrough-ideation-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)
+- [Systems Thinker](../biotechnology/bioinformatics/systems-biology-network-analysis.md)

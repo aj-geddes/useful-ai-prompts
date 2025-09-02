@@ -453,6 +453,6 @@ This script delivers emotional impact within your constraints while exploring me
 
 ## Related Prompts
 
-- [Dialogue Writing Expert](./dialogue-writing-expert.md)
-- [Story Structure Analyst](./story-structure-analyst.md)
-- [Character Development Expert](./character-development-expert.md)
+- [Dialogue Writing Expert](script-writing-expert.md)
+- [Story Structure Analyst](../financial-planning/real-estate-investment-analyst.md)
+- [Character Development Expert](../management-leadership/organizational-development-expert.md)

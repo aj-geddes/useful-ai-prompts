@@ -471,7 +471,6 @@ Would you like me to dive deeper into any specific automation, such as the clien
 
 ## Related Prompts
 
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Digital Minimalism Coach](./digital-minimalism-coach.md)
-```
+- [Productivity System Designer](productivity-system-designer.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Digital Minimalism Coach](digital-minimalism-strategist.md)

@@ -209,6 +209,6 @@ Your users are telling you they want a copilot, not another cockpit. Focus Q2 on
 
 ## Related Prompts
 
-- [Product Strategy Advisor](./product-strategy-expert.md)
-- [User Journey Mapper](./journey-mapping-expert.md)
-- [Feature Prioritization Expert](./feature-prioritization-expert.md)
+- [Product Strategy Advisor](../../communication/email-communication-strategy-expert.md)
+- [User Journey Mapper](../../customer-focused/customer-journey-mapping-expert.md)
+- [Feature Prioritization Expert](../../decision-making/feature-prioritization-expert.md)

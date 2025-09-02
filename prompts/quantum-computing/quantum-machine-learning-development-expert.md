@@ -1,22 +1,16 @@
----
-category: quantum-computing
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Quantum ML Scientist and Quantum Applications
-  Manager expertise for Quantum Machine Learning workflows
-slug: quantum-machine-learning-development-expert
-tags:
-- quantum computing
-- quantum machine learning
-title: Quantum Machine Learning Development Expert
-use_cases:
-- Quantum Machine Learning optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Quantum Machine Learning Development Expert
+
+## Metadata
+- **Category**: Quantum Computing
+- **Tags**: quantum computing, quantum machine learning
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Quantum Machine Learning optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Quantum ML Scientist and Quantum Applications Manager expertise for Quantum Machine Learning workflows
+
 
 # Quantum Machine Learning Development Expert
 

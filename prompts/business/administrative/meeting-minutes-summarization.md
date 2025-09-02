@@ -213,6 +213,6 @@ Would you like me to format this differently or add any additional sections?
 
 ## Related Prompts
 
-- [Calendar Optimization Expert](./calendar-optimization.md)
-- [Task Delegation Expert](./task-delegation-tracking.md)
-- [Email Management Expert](./email-prioritization-response.md)
+- [Calendar Optimization Expert](calendar-optimization.md)
+- [Task Delegation Expert](task-delegation-tracking.md)
+- [Email Management Expert](email-prioritization-response.md)

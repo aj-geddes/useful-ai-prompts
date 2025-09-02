@@ -88,6 +88,6 @@ Develops strategic recovery plan including:
 
 ## Related Prompts
 
-- [Crisis Management Expert](crisis-management-expert.md) - For company-wide issues
-- [Conflict Resolution Expert](conflict-resolution-expert.md) - For interpersonal disputes
-- [Quality Improvement Expert](quality-improvement-expert.md) - For systematic improvements
+- [Crisis Management Expert](crisis-management-expert.md)
+- [Conflict Resolution Expert](conflict-resolution-expert.md)
+- [Quality Improvement Expert](quality-improvement-expert.md)

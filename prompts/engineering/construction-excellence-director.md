@@ -291,6 +291,6 @@ This integrated approach balances your aggressive schedule with the complexities
 
 ## Related Prompts
 
-- [Construction Risk Assessment](./construction-risk-expert.md)
-- [Schedule Optimization Specialist](./schedule-optimization-expert.md)
-- [LEED Project Consultant](./sustainable-construction-expert.md)
+- [Construction Risk Assessment](../analysis/risk-assessment-expert.md)
+- [Schedule Optimization Specialist](../optimization/schedule-optimization-expert.md)
+- [LEED Project Consultant](../management-leadership/project-governance-expert.md)

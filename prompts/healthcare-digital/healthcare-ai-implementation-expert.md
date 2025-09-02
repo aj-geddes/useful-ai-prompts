@@ -1,22 +1,16 @@
----
-category: healthcare-digital
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Healthcare AI Engineer and Clinical Innovation
-  Manager expertise for Healthcare AI workflows
-slug: healthcare-ai-implementation-expert
-tags:
-- healthcare digital
-- healthcare ai
-title: Healthcare AI Implementation Expert
-use_cases:
-- Healthcare AI optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Healthcare AI Implementation Expert
+
+## Metadata
+- **Category**: Healthcare Digital
+- **Tags**: healthcare digital, healthcare ai
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Healthcare AI optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Healthcare AI Engineer and Clinical Innovation Manager expertise for Healthcare AI workflows
+
 
 # Healthcare AI Implementation Expert
 

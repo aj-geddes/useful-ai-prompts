@@ -329,6 +329,6 @@ This strategy leverages your strengths (content, webinars) while building new ca
 
 ## Related Prompts
 
-- [Content Marketing Strategist](./content-marketing-expert.md)
-- [Demand Generation Expert](./demand-generation-expert.md)
-- [Brand Positioning Specialist](./brand-strategy-expert.md)
+- [Content Marketing Strategist](../../creation/content-creation-expert.md)
+- [Demand Generation Expert](../../creation/report-generation-expert.md)
+- [Brand Positioning Specialist](../../content-creation/brand-storytelling-expert.md)

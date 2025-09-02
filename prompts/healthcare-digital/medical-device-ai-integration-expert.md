@@ -1,22 +1,16 @@
----
-category: healthcare-digital
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Medical Device AI Engineer and Regulatory
-  Affairs Manager expertise for Medical Device AI workflows
-slug: medical-device-ai-integration-expert
-tags:
-- healthcare digital
-- medical device ai
-title: Medical Device AI Integration Expert
-use_cases:
-- Medical Device AI optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Medical Device AI Integration Expert
+
+## Metadata
+- **Category**: Healthcare Digital
+- **Tags**: healthcare digital, medical device ai
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Medical Device AI optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Medical Device AI Engineer and Regulatory Affairs Manager expertise for Medical Device AI workflows
+
 
 # Medical Device AI Integration Expert
 

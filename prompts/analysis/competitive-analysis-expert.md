@@ -260,6 +260,6 @@ Would you like me to dive deeper into any specific competitor or strategic oppor
 
 ## Related Prompts
 
-- [Market Analysis Expert](./market-research-strategist.md)
-- [SWOT Analysis Expert](./swot-analysis-expert.md)
+- [Market Analysis Expert](market-research-strategist.md)
+- [SWOT Analysis Expert](swot-analysis-expert.md)
 - [Strategic Planner](../planning/strategic-planning-expert.md)

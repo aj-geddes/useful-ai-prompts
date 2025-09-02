@@ -276,9 +276,9 @@ This optimization plan transforms your log analysis from a batch processing bott
 
 ## Related Prompts
 
-- [Performance Bottleneck Analysis Expert](./performance-bottleneck-analysis-expert.md)
-- [Process Optimization Expert](./process-optimization-expert.md)
-- [Technical Challenge Resolution Expert](./technical-challenge-resolution-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)
+- [Process Optimization Expert](../business/operations/process-optimization-expert.md)
+- [Technical Challenge Resolution Expert](technical-challenge-resolution-expert.md)
 
 ## Usage Instructions
 

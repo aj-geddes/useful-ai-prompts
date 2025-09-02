@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive conflict resolution strategi
 ```
 
 ## Related Prompts
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Relationship Building Expert](./relationship-building-expert.md)
-- [Emotional Intelligence Coach](../personal-growth/emotional-intelligence-coach.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Relationship Building Expert](../management-leadership/team-building-expert.md)
+- [Emotional Intelligence Coach](../personal-growth/emotional-intelligence-enhancer.md)

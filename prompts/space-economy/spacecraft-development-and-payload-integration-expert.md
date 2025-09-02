@@ -1,22 +1,16 @@
----
-category: space-economy
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Spacecraft Systems Engineer and Payload
-  Integration Manager expertise for Spacecraft Engineering workflows
-slug: spacecraft-development-and-payload-integration-expert
-tags:
-- space economy
-- spacecraft engineering
-title: Spacecraft Development and Payload Integration Expert
-use_cases:
-- Spacecraft Engineering optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Spacecraft Development and Payload Integration Expert
+
+## Metadata
+- **Category**: Space Economy
+- **Tags**: space economy, spacecraft engineering
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Spacecraft Engineering optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Spacecraft Systems Engineer and Payload Integration Manager expertise for Spacecraft Engineering workflows
+
 
 # Spacecraft Development and Payload Integration Expert
 

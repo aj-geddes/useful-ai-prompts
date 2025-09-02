@@ -460,6 +460,6 @@ This visual identity system creates a warm, sophisticated brand that stands out 
 
 ## Related Prompts
 
-- [Logo Design Specialist](./logo-design-specialist.md)
-- [Brand Strategy Expert](./brand-strategy-expert.md)
-- [Packaging Designer](./packaging-designer.md)
+- [Logo Design Specialist](../renewable-energy/energy-storage-system-design-expert.md)
+- [Brand Strategy Expert](../communication/email-communication-strategy-expert.md)
+- [Packaging Designer](../content-creation/storytelling-framework-designer.md)

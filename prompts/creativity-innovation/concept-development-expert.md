@@ -212,6 +212,6 @@ Would you like me to elaborate on any of these areas or help you create specific
 
 ## Related Prompts
 
-- [Idea Generator](./idea-generation-expert.md)
-- [Innovation Manager](./innovation-pipeline-management-expert.md)
-- [Prototyping Guide](./prototyping-methodology-expert.md)
+- [Idea Generator](idea-generation-expert.md)
+- [Innovation Manager](innovation-pipeline-management-expert.md)
+- [Prototyping Guide](prototyping-methodology-expert.md)

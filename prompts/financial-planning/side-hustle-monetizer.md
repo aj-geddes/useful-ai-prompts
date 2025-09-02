@@ -42,5 +42,5 @@ Based on your responses, I'll provide comprehensive side hustle strategies inclu
 
 ## Related Prompts
 - [Freelance Business Builder](../career-development/freelance-business-builder.md)
-- [Passive Income Generator](./passive-income-generator.md)
-- [Skill Monetization Expert](../career-development/skill-monetization-expert.md)
+- [Passive Income Generator](side-income-developer.md)
+- [Skill Monetization Expert](../learning-development/skill-acquisition-expert.md)

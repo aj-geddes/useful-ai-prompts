@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: talent-management, succession-planning, development, retention, acquisition
+- **Use Cases**: succession planning, talent retention strategy, high-performer development, recruitment optimization
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you build comprehensive talent management strategies that attract, develop, and retain top performers.

@@ -644,5 +644,5 @@ This comprehensive digital supply chain transformation strategy creates an intel
 ## Related Prompts
 
 - [Supply Chain Resilience Strategy Architect](../resilience-risk/supply-chain-resilience-strategy-architect.md)
-- [AI Supply Chain Optimization Specialist](./ai-supply-chain-optimization-specialist.md)
-- [IoT Supply Chain Visibility Manager](./iot-supply-chain-visibility-manager.md)
+- [AI Supply Chain Optimization Specialist](../../business/operations/supply-chain-optimization-expert.md)
+- [IoT Supply Chain Visibility Manager](../sustainable-supply-chain-management-expert.md)

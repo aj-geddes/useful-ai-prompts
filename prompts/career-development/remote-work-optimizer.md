@@ -42,6 +42,5 @@ Based on your responses, I'll provide comprehensive strategies for remote work s
 
 ## Related Prompts
 - [Productivity System Designer](../personal-productivity/productivity-system-designer.md)
-- [Digital Minimalism Coach](../personal-productivity/digital-minimalism-coach.md)
+- [Digital Minimalism Coach](../personal-productivity/digital-minimalism-strategist.md)
 - [Work-Life Balance Optimizer](../personal-productivity/work-life-balance-optimizer.md)
-```

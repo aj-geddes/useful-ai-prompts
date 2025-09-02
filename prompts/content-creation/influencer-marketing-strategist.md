@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive influencer marketing strateg
 ```
 
 ## Related Prompts
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Personal Brand Builder](../career-development/personal-brand-builder.md)
-- [Content Calendar Creator](./content-calendar-creator.md)
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Personal Brand Builder](../personal-growth/personal-values-clarifier.md)
+- [Content Calendar Creator](content-calendar-architect.md)

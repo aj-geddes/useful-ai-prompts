@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive workplace optimization strat
 ```
 
 ## Related Prompts
-- [Remote Work Optimizer](./remote-work-optimizer.md)
+- [Remote Work Optimizer](remote-work-optimizer.md)
 - [Time Management Expert](../personal-productivity/time-management-optimizer.md)
 - [Stress Management Strategist](../personal-productivity/stress-management-strategist.md)

@@ -1,22 +1,16 @@
----
-category: supply-chain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Digital Supply Chain Manager and Operations
-  Technology Director expertise for Digital Supply Chain workflows
-slug: digital-supply-chain-transformation-expert
-tags:
-- supply chain
-- digital supply chain
-title: Digital Supply Chain Transformation Expert
-use_cases:
-- Digital Supply Chain optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Digital Supply Chain Transformation Expert
+
+## Metadata
+- **Category**: Supply Chain
+- **Tags**: supply chain, digital supply chain
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Digital Supply Chain optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Digital Supply Chain Manager and Operations Technology Director expertise for Digital Supply Chain workflows
+
 
 # Digital Supply Chain Transformation Expert
 

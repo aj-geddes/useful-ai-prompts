@@ -446,6 +446,6 @@ Would you like me to create a specific 90-day quick-start plan for your first sk
 
 ## Related Prompts
 
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-- [Technical Skills Accelerator](./technical-skills-accelerator.md)
-- [Professional Development Planner](./professional-development-planner.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)
+- [Technical Skills Accelerator](../learning-skills/technical-skill-accelerator.md)
+- [Professional Development Planner](skill-development-planner.md)

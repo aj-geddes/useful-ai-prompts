@@ -105,6 +105,6 @@ This optimized pipeline reduces your processing time by 95% while ensuring repro
 
 ## Related Prompts
 
-- [AI-Powered Drug Discovery Expert](./ai-powered-drug-discovery-optimization-expert.md)
-- [Gene Editing CRISPR Design Expert](./gene-editing-crispr-design-expert.md)
+- [AI-Powered Drug Discovery Expert](ai-powered-drug-discovery-optimization-expert.md)
+- [Gene Editing CRISPR Design Expert](gene-editing-crispr-design-expert.md)
 - [Statistical Analysis Expert](../analysis/statistical-analysis-expert.md)

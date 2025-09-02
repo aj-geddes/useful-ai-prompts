@@ -236,6 +236,6 @@ This briefing package demonstrates control, responsibility, and forward-thinking
 
 ## Related Prompts
 
-- [Crisis Communication Expert](./crisis-communication-expert.md)
-- [Board Presentation Specialist](./board-presentation-specialist.md)
-- [Strategic Communication Expert](./strategic-communication-expert.md)
+- [Crisis Communication Expert](crisis-communication-expert.md)
+- [Board Presentation Specialist](client-presentation-expert.md)
+- [Strategic Communication Expert](../management-leadership/strategic-leadership-expert.md)

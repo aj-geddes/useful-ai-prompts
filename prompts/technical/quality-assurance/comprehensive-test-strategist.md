@@ -417,6 +417,6 @@ This strategy will reduce your testing time from 1 week to 2 hours while improvi
 
 ## Related Prompts
 
-- [Test Automation Expert](./test-automation-expert.md)
-- [Performance Testing Specialist](./performance-testing-expert.md)
-- [Security Testing Expert](./security-testing-expert.md)
+- [Test Automation Expert](../../technical-workflows/robotic-process-automation-expert.md)
+- [Performance Testing Specialist](../../management-leadership/performance-management-expert.md)
+- [Security Testing Expert](../../problem-solving/security-vulnerability-mitigation-expert.md)

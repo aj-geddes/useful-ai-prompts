@@ -88,6 +88,6 @@ Creates investigation strategy including:
 
 ## Related Prompts
 
-- [Technical Challenge Resolution Expert](technical-challenge-resolution-expert.md) - For complex technical problems
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For performance issues
-- [Error Handling Design Expert](error-handling-design-expert.md) - For preventing future errors
+- [Technical Challenge Resolution Expert](technical-challenge-resolution-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)
+- [Error Handling Design Expert](error-handling-design-expert.md)

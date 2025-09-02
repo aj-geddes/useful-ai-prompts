@@ -413,6 +413,6 @@ Would you like me to create specific meal planning templates to help with your g
 
 ## Related Prompts
 
-- [Debt Elimination Strategist](./debt-elimination-strategist.md)
-- [Emergency Fund Builder](./emergency-fund-builder.md)
-- [Home Buying Financial Planner](./home-buying-financial-planner.md)
+- [Debt Elimination Strategist](debt-elimination-strategist.md)
+- [Emergency Fund Builder](emergency-fund-builder.md)
+- [Home Buying Financial Planner](../renewable-energy/solar-project-financial-modeling-investment-optimization.md)

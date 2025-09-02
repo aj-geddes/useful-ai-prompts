@@ -385,6 +385,6 @@ This roadmap balances fixing current issues while building toward your growth go
 
 ## Related Prompts
 
-- [Product Strategy Expert](./product-strategy-expert.md)
-- [Feature Prioritization Specialist](./feature-prioritization-expert.md)
-- [Product Metrics Analyst](./product-metrics-expert.md)
+- [Product Strategy Expert](../../communication/email-communication-strategy-expert.md)
+- [Feature Prioritization Specialist](../../decision-making/feature-prioritization-expert.md)
+- [Product Metrics Analyst](../../creation/product-design-expert.md)

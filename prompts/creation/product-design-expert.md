@@ -370,6 +370,6 @@ This design solution provides everything needed to build a fitness app that actu
 
 ## Related Prompts
 
-- [UX Research Analyst](./ux-research-analyst.md)
-- [UI Component Designer](./ui-component-designer.md)
-- [Mobile App Designer](./mobile-app-designer.md)
+- [UX Research Analyst](../healthcare/pharmaceutical-research-excellence.md)
+- [UI Component Designer](../content-creation/storytelling-framework-designer.md)
+- [Mobile App Designer](../content-creation/storytelling-framework-designer.md)

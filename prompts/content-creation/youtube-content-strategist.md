@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive YouTube strategy including c
 ```
 
 ## Related Prompts
-- [Video Content Creator](./video-content-creator.md)
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Audience Building Strategist](./audience-building-strategist.md)
+- [Video Content Creator](video-content-creator.md)
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Audience Building Strategist](../personal-growth/confidence-building-strategist.md)

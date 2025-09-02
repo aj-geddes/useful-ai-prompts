@@ -302,6 +302,6 @@ You've got this! 🎯
 
 ## Related Prompts
 
-- [Presentation Design Expert](./presentation-design-expert.md)
-- [Executive Communication Coach](./executive-communication-expert.md)
-- [Storytelling for Business Expert](./business-storytelling-expert.md)
+- [Presentation Design Expert](../renewable-energy/energy-storage-system-design-expert.md)
+- [Executive Communication Coach](../management-leadership/executive-decision-making-expert.md)
+- [Storytelling for Business Expert](../content-creation/brand-storytelling-expert.md)

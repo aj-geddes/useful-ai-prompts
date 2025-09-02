@@ -80,7 +80,6 @@ Ready to unlock your leadership potential and create positive impact through exc
 
 ## Related Prompts
 
-- [Performance Review Optimizer](./performance-review-optimizer.md)
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-```
+- [Performance Review Optimizer](performance-review-optimizer.md)
+- [Professional Networking Strategist](professional-networking-strategist.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)

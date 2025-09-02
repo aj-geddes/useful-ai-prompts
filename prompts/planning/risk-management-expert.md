@@ -674,8 +674,8 @@ Would you like me to elaborate on any specific aspect of the risk management str
 
 ## Related Prompts
 
-- [Strategic Planning Expert](./strategic-planning-expert.md)
+- [Strategic Planning Expert](strategic-planning-expert.md)
 - [Crisis Management Expert](../problem-solving/crisis-management-expert.md)
-- [Business Continuity Expert](./business-continuity-expert.md)
-- [Compliance Management Expert](../business/compliance-management-expert.md)
-- [Decision Analysis Expert](../decision-making/decision-analysis-expert.md)
+- [Business Continuity Expert](../management-leadership/talent-management-expert.md)
+- [Compliance Management Expert](../management-leadership/talent-management-expert.md)
+- [Decision Analysis Expert](../management-leadership/executive-decision-making-expert.md)

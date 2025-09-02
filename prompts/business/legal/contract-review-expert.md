@@ -298,6 +298,6 @@ This contract is salvageable with focused negotiations on the critical issues. T
 
 ## Related Prompts
 
-- [Risk Assessment Expert](../project-management/risk-assessment-expert.md)
-- [Vendor Management Specialist](./vendor-management-expert.md)
-- [Compliance Officer Expert](./compliance-officer-expert.md)
+- [Risk Assessment Expert](../../analysis/risk-assessment-expert.md)
+- [Vendor Management Specialist](../../management-leadership/talent-management-expert.md)
+- [Compliance Officer Expert](compliance-officer-expert.md)

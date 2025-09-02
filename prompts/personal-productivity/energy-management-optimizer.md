@@ -445,6 +445,6 @@ Would you like me to create a specific 30-day energy optimization plan based on 
 
 ## Related Prompts
 
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
-- [Stress Management Strategist](./stress-management-strategist.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)
+- [Stress Management Strategist](stress-management-strategist.md)

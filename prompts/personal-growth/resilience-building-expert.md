@@ -304,5 +304,3 @@ This resilience development plan transforms your natural empathy and creativity 
 ## Related Prompts
 - [Stress Reduction Strategist](../health-wellness/stress-reduction-strategist.md)
 - [Mental Health Support System](../health-wellness/mental-health-support-system.md)
-- [Growth Mindset Cultivator](./growth-mindset-cultivator.md)
-```

@@ -399,6 +399,6 @@ Would you like me to create specific weekly templates for your goal tracking or 
 
 ## Related Prompts
 
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Habit Formation Strategist](./habit-formation-strategist.md)
-- [Time Management Optimizer](./time-management-optimizer.md)
+- [Productivity System Designer](productivity-system-designer.md)
+- [Habit Formation Strategist](habit-formation-strategist.md)
+- [Time Management Optimizer](time-management-optimizer.md)

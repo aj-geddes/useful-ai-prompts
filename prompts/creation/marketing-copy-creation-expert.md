@@ -212,6 +212,6 @@ This copy focuses on specific pain points, uses concrete numbers, and maintains 
 
 ## Related Prompts
 
-- [Sales Page Writer](./sales-page-writer.md)
-- [Ad Copy Creator](./ad-copy-creator.md)
-- [Email Campaign Writer](./email-campaign-writer.md)
+- [Sales Page Writer](../business/sales/sales-pipeline-optimizer.md)
+- [Ad Copy Creator](marketing-copy-creation-expert.md)
+- [Email Campaign Writer](../communication/email-communication-strategy-expert.md)

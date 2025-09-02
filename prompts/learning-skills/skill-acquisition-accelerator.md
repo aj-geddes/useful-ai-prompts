@@ -422,7 +422,6 @@ Would you like me to elaborate on any specific area, such as the anxiety managem
 
 ## Related Prompts
 
-- [Professional Certification Planner](./professional-certification-planner.md)
-- [Online Learning Optimizer](./online-learning-optimizer.md)
-- [Knowledge Retention Enhancer](./knowledge-retention-enhancer.md)
-```
+- [Professional Certification Planner](professional-certification-planner.md)
+- [Online Learning Optimizer](online-learning-optimizer.md)
+- [Knowledge Retention Enhancer](knowledge-retention-enhancer.md)

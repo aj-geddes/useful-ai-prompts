@@ -402,6 +402,6 @@ Need help? Contact our developer support at dev-support@paymentco.com
 
 ## Related Prompts
 
-- [API Design Specialist](./api-design-specialist.md)
-- [Technical Writing Expert](./technical-writing-expert.md)
-- [User Manual Creator](./user-manual-creator.md)
+- [API Design Specialist](../technical-workflows/api-design-expert.md)
+- [Technical Writing Expert](../technical-workflows/technical-documentation-expert.md)
+- [User Manual Creator](../content-creation/video-content-creator.md)

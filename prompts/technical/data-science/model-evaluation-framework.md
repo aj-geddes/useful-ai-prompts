@@ -257,6 +257,6 @@ Your 92% accuracy likely hides poor churn detection. Focus on recall at reasonab
 
 ## Related Prompts
 
-- [ML Experimentation Framework](./ml-experimentation-expert.md)
-- [Feature Engineering Specialist](./feature-engineering-expert.md)
-- [Model Deployment Strategist](./ml-deployment-expert.md)
+- [ML Experimentation Framework](../../management-leadership/delegation-framework-expert.md)
+- [Feature Engineering Specialist](../../decision-making/feature-prioritization-expert.md)
+- [Model Deployment Strategist](../../technical-workflows/deployment-pipeline-creation-expert.md)

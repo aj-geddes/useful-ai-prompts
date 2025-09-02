@@ -1,22 +1,16 @@
----
-category: blockchain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Enterprise Blockchain Architect and Digital
-  Transformation Manager expertise for Enterprise Blockchain workflows
-slug: enterprise-blockchain-integration-expert
-tags:
-- blockchain
-- enterprise blockchain
-title: Enterprise Blockchain Integration Expert
-use_cases:
-- Enterprise Blockchain optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Enterprise Blockchain Integration Expert
+
+## Metadata
+- **Category**: Blockchain
+- **Tags**: blockchain, enterprise blockchain
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Enterprise Blockchain optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Enterprise Blockchain Architect and Digital Transformation Manager expertise for Enterprise Blockchain workflows
+
 
 # Enterprise Blockchain Integration Expert
 

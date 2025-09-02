@@ -1,22 +1,16 @@
----
-category: government
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Digital Identity Architect and Government
-  Technology Manager expertise for Digital Identity Systems workflows
-slug: digital-identity-platform-architect
-tags:
-- government
-- digital identity systems
-title: Digital Identity Platform Architect
-use_cases:
-- Digital Identity Systems optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Digital Identity Platform Architect
+
+## Metadata
+- **Category**: Government
+- **Tags**: government, digital identity systems
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Digital Identity Systems optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Digital Identity Architect and Government Technology Manager expertise for Digital Identity Systems workflows
+
 
 # Digital Identity Platform Architect
 

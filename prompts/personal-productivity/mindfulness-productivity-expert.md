@@ -80,7 +80,6 @@ Ready to combine the calm clarity of mindfulness with the effectiveness of smart
 
 ## Related Prompts
 
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
-- [Digital Minimalism Coach](./digital-minimalism-coach.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)
+- [Digital Minimalism Coach](digital-minimalism-strategist.md)
 - [Stress Management Strategist](../health-wellness/stress-reduction-strategist.md)
-```

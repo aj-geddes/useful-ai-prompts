@@ -1,3 +1,16 @@
+# FastMCP Server Development Patterns
+
+## Metadata
+- **Category**: Technical/MCP
+- **Tags**: fastmcp, mcp-server, server-development, api-integration, automation
+- **Created**: 2025-01-15
+- **Version**: 1.0.0
+- **Use Cases**: FastMCP server development, tool integration patterns, MCP server architecture
+- **Compatible Models**: Claude 3 (MCP-enabled), GPT-4 (with extensions)
+
+## Description
+Comprehensive patterns and templates for developing FastMCP servers with proper security, concurrency, and integration patterns.
+
 ## Solicit User Input for \[precise FastMCP server use case and context]
 
 To initiate scaffolding of a high-integrity FastMCP server instance, provide the following inputs:

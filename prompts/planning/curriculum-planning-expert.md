@@ -483,9 +483,9 @@ This curriculum provides a structured yet flexible path to data analytics profic
 
 ## Related Prompts
 
-- [Training Program Development Expert](./training-program-development-expert.md)
-- [Course Design Expert](./course-design-expert.md)
-- [Learning Assessment Expert](./learning-assessment-expert.md)
+- [Training Program Development Expert](../learning-development/training-material-development-expert.md)
+- [Course Design Expert](../creation/course-design-expert.md)
+- [Learning Assessment Expert](../evaluation-assessment/candidate-assessment-expert.md)
 
 ## Usage Instructions
 

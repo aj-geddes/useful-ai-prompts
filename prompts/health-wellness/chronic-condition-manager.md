@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive condition management plan 
 ```
 
 ## Related Prompts
-- [Nutrition Optimization Planner](./nutrition-optimization-planner.md)
-- [Exercise Adaptation Specialist](./exercise-adaptation-specialist.md)
-- [Health Goal Tracker](./health-goal-tracker.md)
+- [Nutrition Optimization Planner](nutrition-optimization-planner.md)
+- [Exercise Adaptation Specialist](../content-creation/email-marketing-specialist.md)
+- [Health Goal Tracker](../financial-planning/financial-goal-tracker.md)

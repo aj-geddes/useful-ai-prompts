@@ -117,6 +117,6 @@ Would you like me to elaborate on any of these techniques or adjust the agenda b
 
 ## Related Prompts
 
-- [Idea Generator](./idea-generation-expert.md)
-- [Design Thinking Guide](./design-thinking-process-expert.md)
-- [Creative Problem Solver](./creative-problem-solving-expert.md)
+- [Idea Generator](idea-generation-expert.md)
+- [Design Thinking Guide](design-thinking-process-expert.md)
+- [Creative Problem Solver](creative-problem-solving-expert.md)

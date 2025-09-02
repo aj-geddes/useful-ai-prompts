@@ -373,6 +373,6 @@ This integrated approach ensures consistent messaging while optimizing each chan
 
 ## Related Prompts
 
-- [Campaign Creative Director](./campaign-creative-expert.md)
-- [Marketing Analytics Expert](./marketing-analytics-expert.md)
-- [Launch Strategy Specialist](./product-launch-expert.md)
+- [Campaign Creative Director](../../space-economy/launch-campaign-management-expert.md)
+- [Marketing Analytics Expert](../../creation/marketing-copy-creation-expert.md)
+- [Launch Strategy Specialist](../../space-economy/launch-campaign-management-expert.md)

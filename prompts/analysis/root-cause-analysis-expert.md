@@ -304,6 +304,6 @@ Would you like me to dive deeper into any specific aspect of the analysis or hel
 
 ## Related Prompts
 
-- [Problem Solving Strategist](./problem-solving-strategist.md)
-- [Incident Response Expert](./incident-response-expert.md)
-- [Quality Improvement Analyst](./quality-improvement-analyst.md)
+- [Problem Solving Strategist](../creativity-innovation/creative-problem-solving-expert.md)
+- [Incident Response Expert](../technical/cybersecurity/incident-response-commander.md)
+- [Quality Improvement Analyst](../problem-solving/quality-improvement-expert.md)

@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive college savings plan inclu
 ```
 
 ## Related Prompts
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Family Financial Planner](./family-financial-planner.md)
-- [Tax Optimization Strategist](./tax-optimization-strategist.md)
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Family Financial Planner](../renewable-energy/solar-project-financial-modeling-investment-optimization.md)
+- [Tax Optimization Strategist](tax-optimization-strategist.md)

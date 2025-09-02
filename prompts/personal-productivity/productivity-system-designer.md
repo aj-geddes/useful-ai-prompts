@@ -347,6 +347,6 @@ Would you like me to detail any specific component, such as the Notion dashboard
 
 ## Related Prompts
 
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Work-Life Balance Optimizer](./work-life-balance-optimizer.md)
-- [Habit Formation Strategist](./habit-formation-strategist.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Work-Life Balance Optimizer](work-life-balance-optimizer.md)
+- [Habit Formation Strategist](habit-formation-strategist.md)

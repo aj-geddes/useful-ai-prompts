@@ -687,6 +687,6 @@ This comprehensive healthcare digital transformation strategy creates a technolo
 
 ## Related Prompts
 
-- [Telehealth Program Development Specialist](../telehealth-virtual-care/telehealth-program-development-specialist.md)
-- [Healthcare AI Implementation Strategist](../ai-clinical-decision/healthcare-ai-implementation-strategist.md)
-- [Patient Digital Experience Designer](../patient-engagement/patient-digital-experience-designer.md)
+- [Telehealth Program Development Specialist](../telehealth-platform-development-expert.md)
+- [Healthcare AI Implementation Strategist](../healthcare-ai-implementation-expert.md)
+- [Patient Digital Experience Designer](../../government/citizen-service-experience-designer.md)

@@ -247,7 +247,6 @@ This preparation framework positions you to demonstrate value while honestly add
 
 ## Related Prompts
 
-- [Salary Negotiation Expert](./salary-negotiation-expert.md)
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-```
+- [Salary Negotiation Expert](salary-negotiation-expert.md)
+- [Professional Networking Strategist](professional-networking-strategist.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)

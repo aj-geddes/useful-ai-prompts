@@ -537,7 +537,7 @@ Would you like me to elaborate on any specific risk area, develop detailed imple
 ## Related Prompts
 
 - [Crisis Management Expert](../problem-solving/crisis-management-expert.md)
-- [Business Continuity Planner](../planning/business-continuity-expert.md)  
-- [Compliance Analysis Expert](../business/compliance-analysis-expert.md)
-- [Supply Chain Risk Expert](../operations/supply-chain-risk-expert.md)
-- [Cybersecurity Risk Assessor](../technical/cybersecurity-risk-expert.md)
+- [Business Continuity Planner](../career-development/freelance-business-builder.md)
+- [Compliance Analysis Expert](../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Supply Chain Risk Expert](../supply-chain/sustainable-supply-chain-management-expert.md)
+- [Cybersecurity Risk Assessor](risk-assessment-expert.md)

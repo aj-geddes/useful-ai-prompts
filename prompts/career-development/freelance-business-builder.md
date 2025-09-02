@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive freelance business plan in
 ```
 
 ## Related Prompts
-- [Personal Brand Builder](./personal-brand-builder.md)
-- [Client Relationship Manager](../relationships-communication/client-relationship-manager.md)
-- [Business Development Strategist](../business-strategy/business-development-strategist.md)
+- [Personal Brand Builder](../personal-growth/personal-values-clarifier.md)
+- [Client Relationship Manager](../communication/client-presentation-expert.md)
+- [Business Development Strategist](../management-leadership/organizational-development-expert.md)

@@ -1,22 +1,16 @@
----
-category: supply-chain
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Sustainability Manager and Supply Chain
-  Operations Director expertise for Sustainable Supply Chain workflows
-slug: sustainable-supply-chain-management-expert
-tags:
-- supply chain
-- sustainable supply chain
-title: Sustainable Supply Chain Management Expert
-use_cases:
-- Sustainable Supply Chain optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Sustainable Supply Chain Management Expert
+
+## Metadata
+- **Category**: Supply Chain
+- **Tags**: supply chain, sustainable supply chain
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Sustainable Supply Chain optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Sustainability Manager and Supply Chain Operations Director expertise for Sustainable Supply Chain workflows
+
 
 # Sustainable Supply Chain Management Expert
 

@@ -1,22 +1,16 @@
----
-category: government
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Service Experience Designer and Digital
-  Services Manager expertise for Citizen Services workflows
-slug: citizen-service-experience-designer
-tags:
-- government
-- citizen services
-title: Citizen Service Experience Designer
-use_cases:
-- Citizen Services optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Citizen Service Experience Designer
+
+## Metadata
+- **Category**: Government
+- **Tags**: government, citizen services
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Citizen Services optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Service Experience Designer and Digital Services Manager expertise for Citizen Services workflows
+
 
 # Citizen Service Experience Designer
 

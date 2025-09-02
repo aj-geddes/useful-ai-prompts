@@ -42,5 +42,5 @@ Based on your responses, I'll provide personalized mental wellness strategies in
 
 ## Related Prompts
 - [Stress Management Strategist](../personal-productivity/stress-management-strategist.md)
-- [Mindfulness Practice Guide](./mindfulness-practice-guide.md)
-- [Emotional Intelligence Coach](../personal-growth/emotional-intelligence-coach.md)
+- [Mindfulness Practice Guide](mindfulness-meditation-guide.md)
+- [Emotional Intelligence Coach](../personal-growth/emotional-intelligence-enhancer.md)

@@ -224,6 +224,6 @@ This design system balances your tech innovation with fitness energy while maint
 
 ## Related Prompts
 
-- [Brand Identity Developer](./brand-identity-expert.md)
-- [Social Media Content Creator](./social-media-design-expert.md)
-- [Marketing Campaign Designer](./campaign-visual-expert.md)
+- [Brand Identity Developer](../../content-creation/brand-storytelling-expert.md)
+- [Social Media Content Creator](../../content-creation/social-media-strategy-optimizer.md)
+- [Marketing Campaign Designer](../../planning/marketing-campaign-planning-expert.md)

@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive stress resilience strategies
 ```
 
 ## Related Prompts
-- [Mental Health Supporter](./mental-health-supporter.md)
+- [Mental Health Supporter](mental-health-supporter.md)
 - [Mindfulness Meditation Guide](../personal-growth/mindfulness-meditation-guide.md)
-- [Resilience Building Coach](../personal-growth/resilience-building-coach.md)
+- [Resilience Building Coach](../personal-growth/resilience-building-expert.md)

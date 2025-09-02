@@ -552,6 +552,6 @@ This wireframe design creates an intuitive, efficient task management experience
 
 ## Related Prompts
 
-- [Mobile App Designer](./mobile-app-designer.md)
-- [Design System Creator](./design-system-creator.md)
-- [Prototype Developer](./prototype-developer.md)
+- [Mobile App Designer](../content-creation/storytelling-framework-designer.md)
+- [Design System Creator](../renewable-energy/energy-storage-system-design-expert.md)
+- [Prototype Developer](../personal-growth/self-discipline-developer.md)

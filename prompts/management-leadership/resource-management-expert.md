@@ -4,6 +4,7 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: resource-allocation, capacity-planning, optimization, budgeting, efficiency
+- **Use Cases**: resource allocation, capacity planning, budget management, staffing optimization
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
 

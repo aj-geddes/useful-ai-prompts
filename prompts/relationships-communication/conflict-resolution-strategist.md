@@ -384,7 +384,6 @@ Would you like me to elaborate on any specific area, such as the initial convers
 
 ## Related Prompts
 
-- [Communication Skills Enhancer](./communication-skills-enhancer.md)
-- [Active Listening Trainer](./active-listening-trainer.md)
-- [Workplace Relationship Builder](./workplace-relationship-builder.md)
-```
+- [Communication Skills Enhancer](communication-skills-enhancer.md)
+- [Active Listening Trainer](active-listening-trainer.md)
+- [Workplace Relationship Builder](../financial-planning/emergency-fund-builder.md)

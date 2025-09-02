@@ -457,6 +457,6 @@ Would you like me to create specific email templates for your networking outreac
 
 ## Related Prompts
 
-- [Resume Optimization Specialist](./resume-optimization-specialist.md)
-- [Interview Preparation Coach](./interview-preparation-coach.md)
-- [Professional Networking Strategist](./professional-networking-strategist.md)
+- [Resume Optimization Specialist](../health-wellness/sleep-optimization-specialist.md)
+- [Interview Preparation Coach](interview-preparation-coach.md)
+- [Professional Networking Strategist](professional-networking-strategist.md)

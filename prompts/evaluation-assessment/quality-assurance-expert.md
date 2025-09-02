@@ -79,6 +79,6 @@ Develops QA plan including:
 
 ## Related Prompts
 
-- [Quality Improvement Expert](../problem-solving/quality-improvement-expert.md) - For quality enhancement
-- [Process Optimization Expert](../problem-solving/process-optimization-expert.md) - For process improvement
-- [Compliance Audit Expert](compliance-audit-expert.md) - For regulatory compliance
+- [Quality Improvement Expert](../problem-solving/quality-improvement-expert.md)
+- [Process Optimization Expert](../problem-solving/process-optimization-expert.md)
+- [Compliance Audit Expert](compliance-audit-expert.md)

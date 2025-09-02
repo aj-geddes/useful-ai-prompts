@@ -320,6 +320,6 @@ This comprehensive approach will transform your supply chain from a cost center 
 
 ## Related Prompts
 
-- [Inventory Management Expert](./inventory-management-expert.md)
-- [Logistics Planning Specialist](./logistics-expert.md)
-- [Procurement Strategy Expert](./procurement-expert.md)
+- [Inventory Management Expert](../../management-leadership/talent-management-expert.md)
+- [Logistics Planning Specialist](../../financial-planning/insurance-planning-expert.md)
+- [Procurement Strategy Expert](../../communication/email-communication-strategy-expert.md)

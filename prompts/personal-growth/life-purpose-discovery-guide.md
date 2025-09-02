@@ -347,7 +347,6 @@ This comprehensive purpose discovery framework transforms your natural gifts and
 Ready to begin living your purpose and creating the impact you're meant to have in the world?
 
 ## Related Prompts
-- [Personal Values Clarifier](./personal-values-clarifier.md)
-- [Life Vision Creator](./life-vision-creator.md)
-- [Meaning-Making Specialist](./meaning-making-specialist.md)
-```
+- [Personal Values Clarifier](personal-values-clarifier.md)
+- [Life Vision Creator](life-purpose-discovery-guide.md)
+- [Meaning-Making Specialist](../content-creation/email-marketing-specialist.md)

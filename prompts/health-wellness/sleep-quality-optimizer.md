@@ -463,7 +463,6 @@ Would you like me to dive deeper into any specific area, such as the stress mana
 
 ## Related Prompts
 
-- [Stress Reduction Strategist](./stress-reduction-strategist.md)
-- [Energy Management Optimizer](./energy-management-optimizer.md)
-- [Mindfulness Meditation Guide](./mindfulness-meditation-guide.md)
-```
+- [Stress Reduction Strategist](stress-reduction-strategist.md)
+- [Energy Management Optimizer](../personal-productivity/energy-management-optimizer.md)
+- [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)

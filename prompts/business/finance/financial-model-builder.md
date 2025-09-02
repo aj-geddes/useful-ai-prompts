@@ -315,6 +315,6 @@ This model provides a solid framework for your investment decision with appropri
 
 ## Related Prompts
 
-- [Investment Analysis Expert](./investment-analysis-expert.md)
-- [Valuation Specialist](./valuation-expert.md)
-- [Financial Due Diligence Expert](./due-diligence-expert.md)
+- [Investment Analysis Expert](../../problem-solving/performance-bottleneck-analysis-expert.md)
+- [Valuation Specialist](../../content-creation/email-marketing-specialist.md)
+- [Financial Due Diligence Expert](../../analysis/financial-modeling-expert.md)

@@ -133,7 +133,7 @@ Pain Points:
 
 **1. Direct Sourcing (40% - $6K)**
 - LinkedIn Recruiter license for 3 months
-- Target companies: Mid-stage startups (Stripe, Airbnb, Coinbase alumni)
+- Target companies → Mid-stage startups (Stripe, Airbnb, Coinbase alumni)
 - Boolean searches for React + Node.js + system design
 - Personalized outreach templates (see below)
 
@@ -359,6 +359,6 @@ This comprehensive strategy positions you to successfully compete for senior eng
 
 ## Related Prompts
 
-- [Interview Design Expert](./interview-design-expert.md)
-- [Employer Branding Strategist](./employer-branding-strategist.md)
-- [Compensation Planning Expert](./compensation-planning-expert.md)
+- [Interview Design Expert](../../renewable-energy/energy-storage-system-design-expert.md)
+- [Employer Branding Strategist](../../career-development/personal-branding-strategist.md)
+- [Compensation Planning Expert](../../financial-planning/insurance-planning-expert.md)

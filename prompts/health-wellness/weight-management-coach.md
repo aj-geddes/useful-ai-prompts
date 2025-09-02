@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive weight management plan inc
 ```
 
 ## Related Prompts
-- [Nutrition Optimization Planner](./nutrition-optimization-planner.md)
-- [Workout Routine Designer](./workout-routine-designer.md)
+- [Nutrition Optimization Planner](nutrition-optimization-planner.md)
+- [Workout Routine Designer](workout-routine-designer.md)
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md)

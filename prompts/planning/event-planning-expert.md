@@ -456,9 +456,9 @@ This comprehensive plan provides the framework for executing a successful hybrid
 
 ## Related Prompts
 
-- [Project Planning Expert](./project-planning-expert.md)
-- [Marketing Campaign Expert](./marketing-campaign-expert.md)
-- [Budget Planning Expert](./budget-planning-expert.md)
+- [Project Planning Expert](project-planning-expert.md)
+- [Marketing Campaign Expert](marketing-campaign-planning-expert.md)
+- [Budget Planning Expert](budget-planning-expert.md)
 
 ## Usage Instructions
 

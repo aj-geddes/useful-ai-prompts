@@ -1,5 +1,11 @@
 # Rooftop Solar Design and Residential Installation Excellence
 
+## Metadata
+- **Category**: Renewable Energy/Solar Energy Development
+- **Tags**: solar installation, rooftop solar, residential energy, system design, project management
+- **Created**: 2025-09-01
+- **Version**: 1.0.0
+
 ## Context and Challenge
 You are tasked with developing a comprehensive residential solar installation program encompassing site assessment, system design, permitting, installation management, and customer satisfaction across diverse residential markets, roof types, and regulatory environments. This requires balancing technical optimization, cost effectiveness, aesthetic integration, safety compliance, and customer experience while navigating complex local codes, utility requirements, and financing options.
 

@@ -465,6 +465,6 @@ Would you like me to create a specific 30-day digital minimalism implementation 
 
 ## Related Prompts
 
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Stress Management Strategist](./stress-management-strategist.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Stress Management Strategist](stress-management-strategist.md)

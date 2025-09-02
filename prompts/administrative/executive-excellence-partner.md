@@ -268,6 +268,6 @@ This framework transforms you from administrative support to strategic partner, 
 
 ## Related Prompts
 
-- [Project Management Excellence](../business/project-management/project-excellence-expert.md)
-- [Strategic Communications Expert](../business/communications/strategic-communications-expert.md)
-- [Meeting Facilitation Master](../business/communications/meeting-facilitation-expert.md)
+- [Project Management Excellence](../management-leadership/project-governance-expert.md)
+- [Strategic Communications Expert](../management-leadership/strategic-leadership-expert.md)
+- [Meeting Facilitation Master](../communication/meeting-facilitation-expert.md)

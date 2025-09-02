@@ -342,6 +342,6 @@ This comprehensive strategy positions you for tenure success while making ground
 
 ## Related Prompts
 
-- [Grant Writing Excellence](./grant-writing-expert.md)
-- [Scientific Manuscript Expert](./manuscript-writing-expert.md)
-- [Research Collaboration Builder](./collaboration-expert.md)
+- [Grant Writing Excellence](../../creation/script-writing-expert.md)
+- [Scientific Manuscript Expert](../../creation/script-writing-expert.md)
+- [Research Collaboration Builder](../../communication/team-collaboration-expert.md)

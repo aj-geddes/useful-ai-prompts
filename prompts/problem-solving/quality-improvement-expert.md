@@ -88,6 +88,6 @@ Develops improvement strategy including:
 
 ## Related Prompts
 
-- [Process Optimization Expert](process-optimization-expert.md) - For overall process improvement
-- [Customer Issue Resolution Expert](customer-issue-resolution-expert.md) - For customer-facing quality issues
-- [Error Handling Design Expert](error-handling-design-expert.md) - For system reliability
+- [Process Optimization Expert](../business/operations/process-optimization-expert.md)
+- [Customer Issue Resolution Expert](customer-issue-resolution-expert.md)
+- [Error Handling Design Expert](error-handling-design-expert.md)

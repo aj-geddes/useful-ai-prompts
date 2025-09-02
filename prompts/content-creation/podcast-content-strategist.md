@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive podcast strategy including
 ```
 
 ## Related Prompts
-- [Content Calendar Creator](./content-calendar-creator.md)
-- [Interview Skills Coach](../career-development/interview-skills-coach.md)
-- [Audience Building Strategist](./audience-building-strategist.md)
+- [Content Calendar Creator](content-calendar-architect.md)
+- [Interview Skills Coach](../career-development/interview-preparation-coach.md)
+- [Audience Building Strategist](../personal-growth/confidence-building-strategist.md)

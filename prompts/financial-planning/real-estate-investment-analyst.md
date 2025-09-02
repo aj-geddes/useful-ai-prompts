@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive real estate investment analy
 ```
 
 ## Related Prompts
-- [Investment Strategy Optimizer](./investment-strategy-optimizer.md)
-- [Market Research Specialist](../analysis/market-research-specialist.md)
-- [Cash Flow Analysis Expert](./cash-flow-analysis-expert.md)
+- [Investment Strategy Optimizer](investment-strategy-optimizer.md)
+- [Market Research Specialist](../analysis/market-research-strategist.md)
+- [Cash Flow Analysis Expert](../problem-solving/performance-bottleneck-analysis-expert.md)

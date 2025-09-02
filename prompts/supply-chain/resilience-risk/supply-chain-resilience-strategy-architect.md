@@ -641,6 +641,6 @@ This comprehensive supply chain resilience strategy transforms your supply chain
 
 ## Related Prompts
 
-- [Supplier Risk Assessment Specialist](../supplier-ecosystem/supplier-risk-assessment-specialist.md)
-- [Supply Chain Disruption Recovery Manager](./supply-chain-disruption-recovery-manager.md)
+- [Supplier Risk Assessment Specialist](../../analysis/risk-assessment-expert.md)
+- [Supply Chain Disruption Recovery Manager](../sustainable-supply-chain-management-expert.md)
 - [Digital Supply Chain Transformation Architect](../digital-transformation/digital-supply-chain-transformation-architect.md)

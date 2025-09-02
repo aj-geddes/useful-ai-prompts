@@ -1,5 +1,16 @@
 # Temperature 0 Research Framework for Architectural Decision Records
 
+## Metadata
+- **Category**: Technical/Architecture
+- **Tags**: architectural-decisions, adr, research-framework, technical-documentation, decision-making
+- **Created**: 2025-01-15
+- **Version**: 1.0.0
+- **Use Cases**: Architectural decision research, technical due diligence, ADR preparation
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+
+## Description
+Structured framework for conducting comprehensive technical research and analysis in preparation for drafting Architectural Decision Records (ADRs).
+
 ## Purpose
 
 This framework defines a structured, evidence-oriented methodology for conducting technical due diligence in preparation for drafting an Architectural Decision Record (ADR) at Temperature 0. It enables comprehensive evaluation of technology choices, risk postures, and strategic fit within a target architectural domain.

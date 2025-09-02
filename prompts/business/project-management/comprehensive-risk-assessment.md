@@ -310,6 +310,6 @@ This comprehensive risk management approach will help you navigate challenges wh
 
 ## Related Prompts
 
-- [Project Planning Expert](./project-planning-expert.md)
-- [Change Management Specialist](./change-management-expert.md)
-- [Stakeholder Management Expert](./stakeholder-management-expert.md)
+- [Project Planning Expert](../../planning/project-planning-expert.md)
+- [Change Management Specialist](../../management-leadership/change-management-expert.md)
+- [Stakeholder Management Expert](../../management-leadership/talent-management-expert.md)

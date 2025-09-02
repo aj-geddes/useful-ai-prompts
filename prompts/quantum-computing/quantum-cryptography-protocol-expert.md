@@ -1,22 +1,16 @@
----
-category: quantum-computing
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Quantum Cryptography Engineer and Security
-  Systems Architect expertise for Quantum Cryptography workflows
-slug: quantum-cryptography-protocol-expert
-tags:
-- quantum computing
-- quantum cryptography
-title: Quantum Cryptography Protocol Expert
-use_cases:
-- Quantum Cryptography optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Quantum Cryptography Protocol Expert
+
+## Metadata
+- **Category**: Quantum Computing
+- **Tags**: quantum computing, quantum cryptography
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Quantum Cryptography optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Quantum Cryptography Engineer and Security Systems Architect expertise for Quantum Cryptography workflows
+
 
 # Quantum Cryptography Protocol Expert
 

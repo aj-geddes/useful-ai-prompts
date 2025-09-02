@@ -227,6 +227,6 @@ Would you like me to detail any specific aspect, such as the exact screen layout
 
 ## Related Prompts
 
-- [Accessibility Checker](../evaluation-assessment/accessibility-evaluation-expert.md)
-- [User Research Guide](../research/user-research-expert.md)
-- [Prototyping Coach](./prototyping-methodology-expert.md)
+- [Accessibility Checker](../evaluation-assessment/vendor-evaluation-expert.md)
+- [User Research Guide](../research-workflows/user-research-expert.md)
+- [Prototyping Coach](prototyping-methodology-expert.md)

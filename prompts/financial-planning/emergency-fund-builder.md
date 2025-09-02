@@ -431,6 +431,6 @@ Would you like me to create a specific bank account comparison chart for your em
 
 ## Related Prompts
 
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-- [Debt Elimination Strategist](./debt-elimination-strategist.md)
-- [Investment Planning Advisor](./investment-planning-advisor.md)
+- [Personal Budget Optimizer](personal-budget-optimizer.md)
+- [Debt Elimination Strategist](debt-elimination-strategist.md)
+- [Investment Planning Advisor](investment-planning-advisor.md)

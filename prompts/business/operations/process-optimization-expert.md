@@ -314,6 +314,6 @@ Would you like me to detail any specific part of this optimization plan?
 
 ## Related Prompts
 
-- [Operations Management Expert](./operations-manager-excellence.md)
-- [Supply Chain Expert](./supply-chain-optimization-expert.md)
-- [Quality Improvement Expert](../quality/quality-improvement-expert.md)
+- [Operations Management Expert](operations-manager-excellence.md)
+- [Supply Chain Expert](supply-chain-optimization-expert.md)
+- [Quality Improvement Expert](../../problem-solving/quality-improvement-expert.md)

@@ -1,22 +1,16 @@
----
-category: healthcare-digital
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Telehealth Technology Manager and Clinical
-  Operations Director expertise for Telehealth Systems workflows
-slug: telehealth-platform-development-expert
-tags:
-- healthcare digital
-- telehealth systems
-title: Telehealth Platform Development Expert
-use_cases:
-- Telehealth Systems optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Telehealth Platform Development Expert
+
+## Metadata
+- **Category**: Healthcare Digital
+- **Tags**: healthcare digital, telehealth systems
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Telehealth Systems optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Telehealth Technology Manager and Clinical Operations Director expertise for Telehealth Systems workflows
+
 
 # Telehealth Platform Development Expert
 

@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: organizational-development, culture, structure, transformation, effectiveness
+- **Use Cases**: organizational restructuring, culture transformation, change management, process improvement
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you design and implement organizational development initiatives that enhance culture, structure, and overall effectiveness.

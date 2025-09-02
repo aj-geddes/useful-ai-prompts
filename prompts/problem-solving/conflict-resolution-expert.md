@@ -204,9 +204,9 @@ This resolution plan transforms the competitive dynamic into a collaborative par
 
 ## Related Prompts
 
-- [Crisis Management Expert](./crisis-management-expert.md)
-- [Decision Making Expert](./decision-making-expert.md)
-- [Customer Issue Resolution Expert](./customer-issue-resolution-expert.md)
+- [Crisis Management Expert](crisis-management-expert.md)
+- [Decision Making Expert](decision-making-expert.md)
+- [Customer Issue Resolution Expert](customer-issue-resolution-expert.md)
 
 ## Usage Instructions
 

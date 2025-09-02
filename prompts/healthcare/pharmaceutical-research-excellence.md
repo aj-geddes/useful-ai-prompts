@@ -228,6 +228,6 @@ This positions you for IND submission in 12 months and first patient dosed by mo
 
 ## Related Prompts
 
-- [Clinical Trial Protocol Designer](./clinical-trial-expert.md)
-- [Regulatory Affairs Strategist](./regulatory-strategy-expert.md)
-- [Drug Manufacturing Expert](./pharmaceutical-manufacturing-expert.md)
+- [Clinical Trial Protocol Designer](../biotechnology/clinical-trial-design-and-optimization-expert.md)
+- [Regulatory Affairs Strategist](../personal-growth/confidence-building-strategist.md)
+- [Drug Manufacturing Expert](../technical-workflows/manufacturing-iot-integration-expert.md)

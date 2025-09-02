@@ -422,7 +422,6 @@ Ready to begin your emotional intelligence transformation journey?
 
 ## Related Prompts
 
-- [Self-Awareness Development Coach](./self-awareness-development-coach.md)
-- [Confidence Building Strategist](./confidence-building-strategist.md)
+- [Self-Awareness Development Coach](self-awareness-development-coach.md)
+- [Confidence Building Strategist](confidence-building-strategist.md)
 - [Communication Skills Enhancer](../relationships-communication/communication-skills-enhancer.md)
-```

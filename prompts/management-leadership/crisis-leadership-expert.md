@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: crisis-management, emergency-response, leadership, communication, resilience
+- **Use Cases**: crisis response planning, emergency leadership, business continuity, stakeholder communication
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps leaders navigate crises effectively, maintaining stability while guiding teams through uncertainty and change.

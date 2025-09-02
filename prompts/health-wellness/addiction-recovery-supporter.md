@@ -41,6 +41,6 @@ Based on your responses, I'll provide supportive recovery strategies including c
 ```
 
 ## Related Prompts
-- [Mental Health Supporter](./mental-health-supporter.md)
+- [Mental Health Supporter](mental-health-supporter.md)
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md)
-- [Support Network Builder](../relationships-communication/support-network-builder.md)
+- [Support Network Builder](../financial-planning/emergency-fund-builder.md)

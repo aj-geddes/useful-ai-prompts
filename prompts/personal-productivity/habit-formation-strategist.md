@@ -376,6 +376,6 @@ Would you like me to detail specific backup plans for your upcoming work travel 
 
 ## Related Prompts
 
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Motivation and Discipline Builder](./motivation-discipline-builder.md)
-- [Behavior Change Psychologist](./behavior-change-psychologist.md)
+- [Productivity System Designer](productivity-system-designer.md)
+- [Motivation and Discipline Builder](../management-leadership/team-motivation-expert.md)
+- [Behavior Change Psychologist](../management-leadership/change-management-expert.md)

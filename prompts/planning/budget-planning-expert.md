@@ -379,6 +379,6 @@ This budget provides a clear path to sustainable growth while maintaining financ
 
 ## Related Prompts
 
-- [Cash Flow Planning Expert](./cash-flow-planning-expert.md)
-- [Financial Modeling Expert](./financial-modeling-expert.md)
-- [Strategic Planning Expert](./strategic-planning-expert.md)
+- [Cash Flow Planning Expert](../financial-planning/insurance-planning-expert.md)
+- [Financial Modeling Expert](../analysis/financial-modeling-expert.md)
+- [Strategic Planning Expert](strategic-planning-expert.md)

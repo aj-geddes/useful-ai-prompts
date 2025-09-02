@@ -521,6 +521,6 @@ Would you like me to elaborate on any specific part of this architecture or prov
 
 ## Related Prompts
 
-- [API Design Expert](../api-design-expert.md)
-- [Database Design Expert](../database-design-expert.md)
-- [DevOps Expert](../../devops/deployment-expert.md)
+- [API Design Expert](../../technical-workflows/api-design-expert.md)
+- [Database Design Expert](../../renewable-energy/energy-storage-system-design-expert.md)
+- [DevOps Expert](../../technical-workflows/devops-workflow-design-expert.md)

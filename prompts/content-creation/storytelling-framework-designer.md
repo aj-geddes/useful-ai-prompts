@@ -43,5 +43,4 @@ Based on your responses, I'll provide comprehensive storytelling frameworks, tec
 ## Related Prompts
 - [Content Creation Expert](../creation/content-creation-expert.md)
 - [Presentation Creation Expert](../creation/presentation-creation-expert.md)
-- [Video Content Creator](./video-content-creator.md)
-```
+- [Video Content Creator](video-content-creator.md)

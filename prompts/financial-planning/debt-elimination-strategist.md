@@ -414,6 +414,6 @@ Would you like me to create a specific monthly budget template that incorporates
 
 ## Related Prompts
 
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-- [Credit Score Improvement Specialist](./credit-score-improvement-specialist.md)
-- [Emergency Fund Builder](./emergency-fund-builder.md)
+- [Personal Budget Optimizer](personal-budget-optimizer.md)
+- [Credit Score Improvement Specialist](credit-score-improver.md)
+- [Emergency Fund Builder](emergency-fund-builder.md)

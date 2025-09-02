@@ -73,7 +73,6 @@ Ready to build a personal brand that accelerates your career and creates new opp
 ```
 
 ## Related Prompts
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-- [LinkedIn Optimization Expert](./linkedin-optimization-expert.md)
-- [Thought Leadership Developer](./thought-leadership-developer.md)
-```
+- [Professional Networking Strategist](professional-networking-strategist.md)
+- [LinkedIn Optimization Expert](../renewable-energy/solar-project-development-optimization-expert.md)
+- [Thought Leadership Developer](../management-leadership/crisis-leadership-expert.md)

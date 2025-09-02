@@ -41,7 +41,6 @@ Based on your responses, I'll provide a complete insurance needs analysis and op
 ```
 
 ## Related Prompts
-- [Emergency Fund Builder](./emergency-fund-builder.md)
-- [Risk Assessment Specialist](../analysis/risk-assessment-specialist.md)
-- [Financial Goal Tracker](./financial-goal-tracker.md)
-```
+- [Emergency Fund Builder](emergency-fund-builder.md)
+- [Risk Assessment Specialist](../analysis/risk-assessment-expert.md)
+- [Financial Goal Tracker](financial-goal-tracker.md)

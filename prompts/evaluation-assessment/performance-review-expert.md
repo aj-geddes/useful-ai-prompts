@@ -78,6 +78,6 @@ Context: Took on extra responsibilities when team lead was on leave for 3 months
 
 ## Related Prompts
 
-- [Goal Setting Expert](../planning/goal-setting-expert.md)
-- [Career Development Planner](../planning/career-development-planner.md)
-- [1-on-1 Meeting Facilitator](../communication/one-on-one-facilitator.md)
+- [Goal Setting Expert](../decision-making/strategic-direction-setting-expert.md)
+- [Career Development Planner](../planning/career-development-planning-expert.md)
+- [1-on-1 Meeting Facilitator](../communication/meeting-facilitation-expert.md)

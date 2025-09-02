@@ -1,22 +1,16 @@
----
-category: healthcare-digital
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Healthcare Data Scientist and Clinical
-  Analytics Manager expertise for Healthcare Analytics workflows
-slug: patient-data-analytics-expert
-tags:
-- healthcare digital
-- healthcare analytics
-title: Patient Data Analytics Expert
-use_cases:
-- Healthcare Analytics optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Patient Data Analytics Expert
+
+## Metadata
+- **Category**: Healthcare Digital
+- **Tags**: healthcare digital, healthcare analytics
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Healthcare Analytics optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Healthcare Data Scientist and Clinical Analytics Manager expertise for Healthcare Analytics workflows
+
 
 # Patient Data Analytics Expert
 

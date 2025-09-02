@@ -287,6 +287,6 @@ Would you like me to create any of these additional elements or adapt this conte
 
 ## Related Prompts
 
-- [Copywriting Expert](./copywriting-expert.md)
-- [Social Media Content Creator](./social-media-content-creator.md)
-- [Email Marketing Expert](./email-marketing-expert.md)
+- [Copywriting Expert](../content-creation/copywriting-enhancement-expert.md)
+- [Social Media Content Creator](../content-creation/social-media-strategy-optimizer.md)
+- [Email Marketing Expert](../communication/email-communication-strategy-expert.md)

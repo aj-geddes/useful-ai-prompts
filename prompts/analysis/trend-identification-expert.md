@@ -372,6 +372,6 @@ Would you like me to dive deeper into any specific trend or help you develop det
 
 ## Related Prompts
 
-- [Market Research Strategist](./market-research-strategist.md)
-- [Competitive Analysis Expert](./competitive-analysis-expert.md)
-- [Innovation Strategy Expert](./innovation-strategy-expert.md)
+- [Market Research Strategist](market-research-strategist.md)
+- [Competitive Analysis Expert](competitive-analysis-expert.md)
+- [Innovation Strategy Expert](../communication/email-communication-strategy-expert.md)

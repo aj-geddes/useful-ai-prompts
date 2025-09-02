@@ -234,9 +234,9 @@ This allocation optimizes for your 3x revenue growth target while building susta
 
 ## Related Prompts
 
-- [Strategic Planning Expert](./strategic-planning-expert.md)
-- [Budget Planning Expert](./budget-planning-expert.md)
-- [Project Planning Expert](./project-planning-expert.md)
+- [Strategic Planning Expert](strategic-planning-expert.md)
+- [Budget Planning Expert](budget-planning-expert.md)
+- [Project Planning Expert](project-planning-expert.md)
 
 ## Usage Instructions
 

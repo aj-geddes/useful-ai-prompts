@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive language learning accelera
 ```
 
 ## Related Prompts
-- [Study Strategy Optimizer](./study-strategy-optimizer.md)
-- [Memory Enhancement Specialist](./memory-enhancement-specialist.md)
-- [Communication Skills Coach](../relationships-communication/communication-skills-coach.md)
+- [Study Strategy Optimizer](../content-creation/social-media-strategy-optimizer.md)
+- [Memory Enhancement Specialist](../content-creation/email-marketing-specialist.md)
+- [Communication Skills Coach](../relationships-communication/communication-skills-enhancer.md)

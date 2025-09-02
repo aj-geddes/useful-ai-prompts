@@ -240,6 +240,6 @@ This strategy balances your growth objectives with risk management, provides the
 
 ## Related Prompts
 
-- [Portfolio Risk Analyzer](./portfolio-risk-expert.md)
-- [Technical Analysis Expert](./technical-analysis-expert.md)
-- [Tax Strategy Optimizer](./tax-strategy-expert.md)
+- [Portfolio Risk Analyzer](../analysis/risk-assessment-expert.md)
+- [Technical Analysis Expert](../technical-workflows/technical-documentation-expert.md)
+- [Tax Strategy Optimizer](../communication/email-communication-strategy-expert.md)

@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: cross-cultural, diversity, inclusion, global-teams, cultural-intelligence
+- **Use Cases**: global team leadership, cultural adaptation, diversity management, international collaboration
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you lead effectively across cultures, building inclusive teams that leverage diversity as a competitive advantage.

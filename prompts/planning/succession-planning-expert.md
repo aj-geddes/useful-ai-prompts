@@ -244,9 +244,9 @@ This succession plan ensures leadership continuity while preserving your family-
 
 ## Related Prompts
 
-- [Strategic Planning Expert](./strategic-planning-expert.md)
-- [Career Development Planning Expert](./career-development-planning-expert.md)
-- [Resource Allocation Expert](./resource-allocation-expert.md)
+- [Strategic Planning Expert](strategic-planning-expert.md)
+- [Career Development Planning Expert](career-development-planning-expert.md)
+- [Resource Allocation Expert](resource-allocation-expert.md)
 
 ## Usage Instructions
 

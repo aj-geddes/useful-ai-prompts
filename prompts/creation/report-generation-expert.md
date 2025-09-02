@@ -326,6 +326,6 @@ This report format provides clear insights, visual elements, and actionable reco
 
 ## Related Prompts
 
-- [Executive Summary Writer](./executive-summary-writer.md)
-- [Data Analysis Expert](./data-analysis-expert.md)
-- [KPI Dashboard Creator](./kpi-dashboard-creator.md)
+- [Executive Summary Writer](../management-leadership/executive-decision-making-expert.md)
+- [Data Analysis Expert](../analysis/data-analysis-expert.md)
+- [KPI Dashboard Creator](../content-creation/video-content-creator.md)

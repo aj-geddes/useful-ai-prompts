@@ -43,4 +43,4 @@ Based on your responses, I'll provide comprehensive sleep optimization strategie
 ## Related Prompts
 - [Energy Management Optimizer](../personal-productivity/energy-management-optimizer.md)
 - [Stress Management Strategist](../personal-productivity/stress-management-strategist.md)
-- [Health Goal Tracker](./health-goal-tracker.md)
+- [Health Goal Tracker](../financial-planning/financial-goal-tracker.md)

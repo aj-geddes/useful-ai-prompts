@@ -316,9 +316,9 @@ This release plan provides a structured, low-risk approach to deploying your maj
 
 ## Related Prompts
 
-- [Project Planning Expert](./project-planning-expert.md)
-- [Risk Management Planning Expert](./risk-management-planning-expert.md)
-- [Strategic Planning Expert](./strategic-planning-expert.md)
+- [Project Planning Expert](project-planning-expert.md)
+- [Risk Management Planning Expert](risk-management-expert.md)
+- [Strategic Planning Expert](strategic-planning-expert.md)
 
 ## Usage Instructions
 

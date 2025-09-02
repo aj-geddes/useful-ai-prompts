@@ -67,7 +67,6 @@ Ready to develop the empathy that transforms your relationships and creates deep
 ```
 
 ## Related Prompts
-- [Active Listening Trainer](./active-listening-trainer.md)
+- [Active Listening Trainer](active-listening-trainer.md)
 - [Emotional Intelligence Enhancer](../personal-growth/emotional-intelligence-enhancer.md)
-- [Communication Skills Enhancer](./communication-skills-enhancer.md)
-```
+- [Communication Skills Enhancer](communication-skills-enhancer.md)

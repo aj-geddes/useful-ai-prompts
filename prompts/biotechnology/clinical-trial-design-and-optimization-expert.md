@@ -276,6 +276,6 @@ This optimized Phase II design provides an 80% chance of detecting a clinically 
 
 ## Related Prompts
 
-- [AI-Powered Drug Discovery Expert](./ai-powered-drug-discovery-optimization-expert.md)
-- [Bioinformatics Pipeline Development Expert](./bioinformatics-pipeline-development-expert.md)
-- [Regulatory Affairs Expert](../business/regulatory-affairs-expert.md)
+- [AI-Powered Drug Discovery Expert](ai-powered-drug-discovery-optimization-expert.md)
+- [Bioinformatics Pipeline Development Expert](bioinformatics-pipeline-development-expert.md)
+- [Regulatory Affairs Expert](../management-leadership/talent-management-expert.md)

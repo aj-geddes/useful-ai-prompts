@@ -232,9 +232,9 @@ This plan provides immediate response while building long-term resilience and cu
 
 ## Related Prompts
 
-- [Conflict Resolution Expert](./conflict-resolution-expert.md)
-- [Customer Issue Resolution Expert](./customer-issue-resolution-expert.md)
-- [Decision Making Expert](./decision-making-expert.md)
+- [Conflict Resolution Expert](conflict-resolution-expert.md)
+- [Customer Issue Resolution Expert](customer-issue-resolution-expert.md)
+- [Decision Making Expert](decision-making-expert.md)
 
 ## Usage Instructions
 

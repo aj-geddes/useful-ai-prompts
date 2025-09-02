@@ -212,6 +212,6 @@ This approach gives you a professional, research-based outreach that positions y
 
 ## Related Prompts
 
-- [Business Communication Expert](./business-communication-expert.md)
-- [Sales Copy Writer](./sales-copy-writer.md)
-- [Professional Writing Assistant](./professional-writing-assistant.md)
+- [Business Communication Expert](../communication/stakeholder-communication-expert.md)
+- [Sales Copy Writer](marketing-copy-creation-expert.md)
+- [Professional Writing Assistant](script-writing-expert.md)

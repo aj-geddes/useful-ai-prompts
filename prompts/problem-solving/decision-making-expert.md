@@ -88,6 +88,6 @@ Provides evaluation framework including:
 
 ## Related Prompts
 
-- [Strategic Planning Expert](../planning/strategic-planning-expert.md) - For long-term strategic decisions
-- [Risk Assessment Specialist](../analysis/risk-assessment-specialist.md) - For detailed risk analysis
-- [Option Evaluation Expert](../decision-making/option-evaluation-expert.md) - For complex multi-criteria decisions
+- [Strategic Planning Expert](../planning/strategic-planning-expert.md)
+- [Risk Assessment Specialist](../analysis/risk-assessment-expert.md)
+- [Option Evaluation Expert](../decision-making/option-evaluation-expert.md)

@@ -457,7 +457,6 @@ Would you like me to dive deeper into any specific area, such as the content cre
 
 ## Related Prompts
 
-- [Blog Content Planner](./blog-content-planner.md)
-- [Email Newsletter Strategist](./email-newsletter-strategist.md)
-- [Content Calendar Architect](./content-calendar-architect.md)
-```
+- [Blog Content Planner](blog-content-planner.md)
+- [Email Newsletter Strategist](email-newsletter-strategist.md)
+- [Content Calendar Architect](content-calendar-architect.md)

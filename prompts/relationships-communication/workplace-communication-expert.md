@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive workplace communication stra
 ```
 
 ## Related Prompts
-- [Communication Skills Coach](./communication-skills-coach.md)
-- [Conflict Resolution Mediator](./conflict-resolution-mediator.md)
+- [Communication Skills Coach](communication-skills-enhancer.md)
+- [Conflict Resolution Mediator](conflict-resolution-mediator.md)
 - [Leadership Development Coach](../career-development/leadership-development-coach.md)

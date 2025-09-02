@@ -392,7 +392,6 @@ Would you like me to elaborate on any specific aspect, such as the fund selectio
 
 ## Related Prompts
 
-- [Retirement Planning Specialist](./retirement-planning-specialist.md)
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-- [Emergency Fund Builder](./emergency-fund-builder.md)
-```
+- [Retirement Planning Specialist](retirement-planning-specialist.md)
+- [Personal Budget Optimizer](personal-budget-optimizer.md)
+- [Emergency Fund Builder](emergency-fund-builder.md)

@@ -88,6 +88,6 @@ Develops troubleshooting approach including:
 
 ## Related Prompts
 
-- [Debugging Expert](debugging-expert.md) - For code-specific issues
-- [Technical Challenge Resolution Expert](technical-challenge-resolution-expert.md) - For complex technical problems
-- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md) - For performance issues
+- [Debugging Expert](debugging-expert.md)
+- [Technical Challenge Resolution Expert](technical-challenge-resolution-expert.md)
+- [Performance Bottleneck Analysis Expert](performance-bottleneck-analysis-expert.md)

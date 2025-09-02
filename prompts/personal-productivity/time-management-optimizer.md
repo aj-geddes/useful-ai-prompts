@@ -296,6 +296,6 @@ Would you like me to dive deeper into any specific area, such as managing your s
 
 ## Related Prompts
 
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Work-Life Balance Optimizer](./work-life-balance-optimizer.md)
-- [Focus and Deep Work Strategist](./focus-deep-work-strategist.md)
+- [Productivity System Designer](productivity-system-designer.md)
+- [Work-Life Balance Optimizer](work-life-balance-optimizer.md)
+- [Focus and Deep Work Strategist](focus-deep-work-strategist.md)

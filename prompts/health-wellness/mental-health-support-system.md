@@ -382,7 +382,6 @@ Would you like me to elaborate on any specific area, such as the anxiety managem
 
 ## Related Prompts
 
-- [Stress Reduction Strategist](./stress-reduction-strategist.md)
-- [Sleep Quality Optimizer](./sleep-quality-optimizer.md)
-- [Mindfulness Meditation Guide](./mindfulness-meditation-guide.md)
-```
+- [Stress Reduction Strategist](stress-reduction-strategist.md)
+- [Sleep Quality Optimizer](sleep-quality-optimizer.md)
+- [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)

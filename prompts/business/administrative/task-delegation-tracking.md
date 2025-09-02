@@ -280,6 +280,6 @@ Would you like me to customize any part of this system for your specific team?
 
 ## Related Prompts
 
-- [Calendar Optimization Expert](./calendar-optimization.md)
-- [Meeting Minutes Expert](./meeting-minutes-summarization.md)
-- [Email Management Expert](./email-prioritization-response.md)
+- [Calendar Optimization Expert](calendar-optimization.md)
+- [Meeting Minutes Expert](meeting-minutes-summarization.md)
+- [Email Management Expert](email-prioritization-response.md)

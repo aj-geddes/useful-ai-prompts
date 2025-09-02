@@ -428,7 +428,6 @@ Would you like me to help you practice specific conversation scenarios or dive d
 
 ## Related Prompts
 
-- [Performance Review Optimizer](./performance-review-optimizer.md)
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-- [Professional Networking Strategist](./professional-networking-strategist.md)
-```
+- [Performance Review Optimizer](performance-review-optimizer.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)
+- [Professional Networking Strategist](professional-networking-strategist.md)

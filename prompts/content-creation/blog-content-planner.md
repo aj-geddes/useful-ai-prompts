@@ -478,7 +478,6 @@ Would you like me to dive deeper into any specific area, such as the editorial c
 
 ## Related Prompts
 
-- [Social Media Strategy Optimizer](./social-media-strategy-optimizer.md)
-- [Email Newsletter Strategist](./email-newsletter-strategist.md)
-- [Content Calendar Architect](./content-calendar-architect.md)
-```
+- [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
+- [Email Newsletter Strategist](email-newsletter-strategist.md)
+- [Content Calendar Architect](content-calendar-architect.md)

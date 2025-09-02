@@ -270,6 +270,6 @@ Would you like me to detail any specific aspect of this plan or create implement
 
 ## Related Prompts
 
-- [Team Performance Analyzer](./team-performance-analyzer.md)
-- [Process Optimization Expert](./process-optimization-expert.md)
-- [Employee Engagement Analyst](./employee-engagement-analyst.md)
+- [Team Performance Analyzer](../management-leadership/team-building-expert.md)
+- [Process Optimization Expert](../business/operations/process-optimization-expert.md)
+- [Employee Engagement Analyst](../content-creation/audience-engagement-specialist.md)

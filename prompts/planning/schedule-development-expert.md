@@ -236,9 +236,9 @@ This schedule provides a realistic 6-month timeline with built-in buffers for yo
 
 ## Related Prompts
 
-- [Project Planning Expert](./project-planning-expert.md)
-- [Resource Allocation Expert](./resource-allocation-expert.md)
-- [Risk Management Planning Expert](./risk-management-planning-expert.md)
+- [Project Planning Expert](project-planning-expert.md)
+- [Resource Allocation Expert](resource-allocation-expert.md)
+- [Risk Management Planning Expert](risk-management-expert.md)
 
 ## Usage Instructions
 

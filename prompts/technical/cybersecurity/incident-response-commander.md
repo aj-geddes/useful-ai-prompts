@@ -268,6 +268,6 @@ Remember: Document everything, preserve evidence, communicate clearly.
 
 ## Related Prompts
 
-- [Security Forensics Analyst](./forensics-analysis-expert.md)
-- [Threat Intelligence Expert](./threat-intelligence-expert.md)
-- [Disaster Recovery Planner](./disaster-recovery-expert.md)
+- [Security Forensics Analyst](../../problem-solving/security-vulnerability-mitigation-expert.md)
+- [Threat Intelligence Expert](../../research-workflows/competitive-intelligence-expert.md)
+- [Disaster Recovery Planner](../../health-wellness/addiction-recovery-supporter.md)

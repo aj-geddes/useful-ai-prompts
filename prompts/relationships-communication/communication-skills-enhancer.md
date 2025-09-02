@@ -456,7 +456,6 @@ Would you like me to focus on any specific area, such as conflict resolution tec
 
 ## Related Prompts
 
-- [Conflict Resolution Strategist](./conflict-resolution-strategist.md)
-- [Active Listening Trainer](./active-listening-trainer.md)
-- [Assertiveness Development Coach](./assertiveness-development-coach.md)
-```
+- [Conflict Resolution Strategist](conflict-resolution-strategist.md)
+- [Active Listening Trainer](active-listening-trainer.md)
+- [Assertiveness Development Coach](../personal-growth/self-awareness-development-coach.md)

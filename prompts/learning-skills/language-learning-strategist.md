@@ -73,7 +73,6 @@ Ready to create a language learning strategy that makes fluency achievable and e
 ```
 
 ## Related Prompts
-- [Skill Acquisition Accelerator](./skill-acquisition-accelerator.md)
-- [Online Learning Optimizer](./online-learning-optimizer.md)
-- [Cultural Competence Developer](./cultural-competence-developer.md)
-```
+- [Skill Acquisition Accelerator](skill-acquisition-accelerator.md)
+- [Online Learning Optimizer](online-learning-optimizer.md)
+- [Cultural Competence Developer](../management-leadership/cross-cultural-leadership-expert.md)

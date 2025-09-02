@@ -2,6 +2,7 @@
 
 ## Metadata
 - **Category**: Evaluation & Assessment
+- **Tags**: product-market fit, market validation, customer feedback, product strategy, business analysis
 - **Created**: 2025-01-15
 - **Type**: market-fit-assessment
 - **Level**: Professional

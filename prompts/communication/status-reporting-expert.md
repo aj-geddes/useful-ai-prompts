@@ -329,6 +329,6 @@ This comprehensive system will transform your status reporting from a time-consu
 
 ## Related Prompts
 
-- [Executive Communication Expert](./executive-communication-expert.md)
-- [Project Dashboard Designer](./dashboard-design-expert.md)
-- [Meeting Facilitation Expert](./meeting-facilitation-expert.md)
+- [Executive Communication Expert](../management-leadership/executive-decision-making-expert.md)
+- [Project Dashboard Designer](../management-leadership/project-governance-expert.md)
+- [Meeting Facilitation Expert](meeting-facilitation-expert.md)

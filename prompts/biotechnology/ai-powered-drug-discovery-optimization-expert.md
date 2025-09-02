@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Category**: Biotechnology/Drug Discovery
-- **Tags**: biotechnology, drug discovery
+- **Tags**: biotechnology, drug discovery, ai-ml, pharmaceutical research, optimization
 - **Created**: 2025-08-16
 - **Version**: 3.0.0
 - **Use Cases**: Drug Discovery optimization, professional workflow enhancement

@@ -80,7 +80,6 @@ Ready to create a strategic certification plan that accelerates your professiona
 
 ## Related Prompts
 
-- [Skill Acquisition Accelerator](./skill-acquisition-accelerator.md)
-- [Online Learning Optimizer](./online-learning-optimizer.md)
-- [Career Development Planning Expert](../career-development/career-development-planning-expert.md)
-```
+- [Skill Acquisition Accelerator](skill-acquisition-accelerator.md)
+- [Online Learning Optimizer](online-learning-optimizer.md)
+- [Career Development Planning Expert](../planning/career-development-planning-expert.md)

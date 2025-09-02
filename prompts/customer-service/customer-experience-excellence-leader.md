@@ -341,6 +341,6 @@ This transformation plan positions you to handle growth efficiently while deligh
 
 ## Related Prompts
 
-- [Customer Journey Mapping Expert](./customer-journey-expert.md)
-- [Service Operations Manager](./service-operations-expert.md)
-- [CX Technology Advisor](./cx-technology-expert.md)
+- [Customer Journey Mapping Expert](../customer-focused/customer-journey-mapping-expert.md)
+- [Service Operations Manager](../space-economy/satellite-constellation-operations-manager.md)
+- [CX Technology Advisor](../research-workflows/technology-assessment-expert.md)

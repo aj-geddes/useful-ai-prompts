@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive brand storytelling strategie
 ```
 
 ## Related Prompts
-- [Storytelling Framework Designer](./storytelling-framework-designer.md)
-- [Content Marketing Strategist](./content-marketing-strategist.md)
-- [Personal Brand Builder](../career-development/personal-brand-builder.md)
+- [Storytelling Framework Designer](storytelling-framework-designer.md)
+- [Content Marketing Strategist](influencer-marketing-strategist.md)
+- [Personal Brand Builder](../personal-growth/personal-values-clarifier.md)

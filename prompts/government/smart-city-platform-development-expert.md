@@ -1,22 +1,16 @@
----
-category: government
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Smart City Technology Manager and Urban
-  Planning Director expertise for Smart City Development workflows
-slug: smart-city-platform-development-expert
-tags:
-- government
-- smart city development
-title: Smart City Platform Development Expert
-use_cases:
-- Smart City Development optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Smart City Platform Development Expert
+
+## Metadata
+- **Category**: Government
+- **Tags**: government, smart city development
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Smart City Development optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Smart City Technology Manager and Urban Planning Director expertise for Smart City Development workflows
+
 
 # Smart City Platform Development Expert
 

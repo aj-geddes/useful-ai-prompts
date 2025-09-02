@@ -449,6 +449,6 @@ Would you like me to create specific email templates for your monthly relationsh
 
 ## Related Prompts
 
-- [Career Advancement Strategist](./career-advancement-strategist.md)
-- [Personal Brand Developer](./personal-brand-developer.md)
-- [Executive Presence Developer](./executive-presence-developer.md)
+- [Career Advancement Strategist](career-advancement-strategist.md)
+- [Personal Brand Developer](../personal-growth/personal-values-clarifier.md)
+- [Executive Presence Developer](../management-leadership/executive-decision-making-expert.md)

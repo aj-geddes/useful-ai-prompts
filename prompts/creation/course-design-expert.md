@@ -274,6 +274,5 @@ This course design balances practical learning with community support, ensuring 
 
 ## Related Prompts
 
-- [Training Program Designer](./training-program-designer.md)
-- [Educational Content Creator](./educational-content-creator.md)  
-- [Workshop Facilitator](./workshop-facilitator.md)
+- [Training Program Designer](../content-creation/storytelling-framework-designer.md)
+- [Educational Content Creator](../content-creation/video-content-creator.md)

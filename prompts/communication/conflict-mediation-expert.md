@@ -88,6 +88,6 @@ Develops resolution strategy including:
 
 ## Related Prompts
 
-- [Team Collaboration Expert](team-collaboration-expert.md) - For improving team dynamics
-- [Stakeholder Communication Expert](stakeholder-communication-expert.md) - For managing complex relationships
-- [Crisis Communication Expert](crisis-communication-expert.md) - For high-stakes conflicts
+- [Team Collaboration Expert](team-collaboration-expert.md)
+- [Stakeholder Communication Expert](stakeholder-communication-expert.md)
+- [Crisis Communication Expert](crisis-communication-expert.md)

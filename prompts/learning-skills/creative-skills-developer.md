@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive creative development plan 
 ```
 
 ## Related Prompts
-- [Skill Development Strategist](./skill-development-strategist.md)
-- [Creative Problem-Solving Expert](../analysis/creative-problem-solving-expert.md)
-- [Portfolio Development Guide](../career-development/portfolio-development-guide.md)
+- [Skill Development Strategist](../career-development/skill-development-planner.md)
+- [Creative Problem-Solving Expert](../creativity-innovation/creative-problem-solving-expert.md)
+- [Portfolio Development Guide](../management-leadership/organizational-development-expert.md)

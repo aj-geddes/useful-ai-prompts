@@ -4,8 +4,10 @@
 - **Category**: Management & Leadership
 - **Created**: 2025-01-15
 - **Tags**: team-building, collaboration, culture, engagement, trust
+- **Use Cases**: team building activities, collaboration enhancement, trust building, team performance improvement
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you design effective team-building initiatives that strengthen collaboration, trust, and performance within your teams.

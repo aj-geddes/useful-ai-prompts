@@ -67,7 +67,6 @@ Ready to unlock your memory potential and develop exceptional recall abilities?
 ```
 
 ## Related Prompts
-- [Knowledge Retention Enhancer](./knowledge-retention-enhancer.md)
-- [Cognitive Performance Optimizer](./cognitive-performance-optimizer.md)
-- [Learning Acceleration Expert](./learning-acceleration-expert.md)
-```
+- [Knowledge Retention Enhancer](knowledge-retention-enhancer.md)
+- [Cognitive Performance Optimizer](../personal-productivity/peak-performance-optimizer.md)
+- [Learning Acceleration Expert](../learning-development/learning-plan-creation-expert.md)

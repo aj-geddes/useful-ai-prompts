@@ -392,6 +392,6 @@ This comprehensive requirements approach addresses your previous failure points 
 
 ## Related Prompts
 
-- [Business Analysis Expert](./business-analysis-expert.md)
-- [User Story Creator](./user-story-expert.md)
-- [Process Mapping Specialist](./process-mapping-expert.md)
+- [Business Analysis Expert](../../problem-solving/performance-bottleneck-analysis-expert.md)
+- [User Story Creator](../../analysis/user-behavior-analysis-expert.md)
+- [Process Mapping Specialist](../operations/process-optimization-expert.md)

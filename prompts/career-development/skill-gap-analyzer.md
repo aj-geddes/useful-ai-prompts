@@ -42,5 +42,5 @@ Based on your responses, I'll provide comprehensive skill gap analysis including
 
 ## Related Prompts
 - [Technical Skill Accelerator](../learning-skills/technical-skill-accelerator.md)
-- [Career Transition Specialist](./career-transition-specialist.md)
-- [Professional Development Planner](./professional-development-planner.md)
+- [Career Transition Specialist](../content-creation/email-marketing-specialist.md)
+- [Professional Development Planner](skill-development-planner.md)

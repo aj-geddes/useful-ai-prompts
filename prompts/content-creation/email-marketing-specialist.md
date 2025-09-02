@@ -41,6 +41,6 @@ Based on your responses, I'll provide a comprehensive email marketing strategy i
 ```
 
 ## Related Prompts
-- [Content Calendar Creator](./content-calendar-creator.md)
-- [Copywriting Enhancement Expert](./copywriting-enhancement-expert.md)
-- [Audience Building Strategist](./audience-building-strategist.md)
+- [Content Calendar Creator](content-calendar-architect.md)
+- [Copywriting Enhancement Expert](copywriting-enhancement-expert.md)
+- [Audience Building Strategist](../personal-growth/confidence-building-strategist.md)

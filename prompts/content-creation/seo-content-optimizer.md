@@ -41,6 +41,6 @@ Based on your responses, I'll provide comprehensive SEO content strategies inclu
 ```
 
 ## Related Prompts
-- [Content Marketing Strategist](./content-marketing-strategist.md)
-- [Copywriting Enhancement Expert](./copywriting-enhancement-expert.md)
-- [Blog Writing Specialist](./blog-writing-specialist.md)
+- [Content Marketing Strategist](influencer-marketing-strategist.md)
+- [Copywriting Enhancement Expert](copywriting-enhancement-expert.md)
+- [Blog Writing Specialist](../creation/script-writing-expert.md)

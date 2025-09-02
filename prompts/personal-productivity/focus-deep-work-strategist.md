@@ -413,6 +413,6 @@ Would you like me to create specific scripts for handling office interruptions o
 
 ## Related Prompts
 
-- [Time Management Optimizer](./time-management-optimizer.md)
-- [Productivity System Designer](./productivity-system-designer.md)
-- [Cognitive Performance Enhancer](./cognitive-performance-enhancer.md)
+- [Time Management Optimizer](time-management-optimizer.md)
+- [Productivity System Designer](productivity-system-designer.md)
+- [Cognitive Performance Enhancer](../management-leadership/performance-management-expert.md)

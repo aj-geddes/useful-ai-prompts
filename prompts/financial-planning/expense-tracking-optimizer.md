@@ -67,7 +67,6 @@ Ready to gain complete clarity and control over your spending patterns?
 ```
 
 ## Related Prompts
-- [Personal Budget Optimizer](./personal-budget-optimizer.md)
-- [Financial Goal Tracker](./financial-goal-tracker.md)
-- [Debt Elimination Strategist](./debt-elimination-strategist.md)
-```
+- [Personal Budget Optimizer](personal-budget-optimizer.md)
+- [Financial Goal Tracker](financial-goal-tracker.md)
+- [Debt Elimination Strategist](debt-elimination-strategist.md)
