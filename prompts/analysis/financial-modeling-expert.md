@@ -5,6 +5,7 @@
 
 - **Category**: Analysis
 - **Tags**: financial modeling, valuation, DCF analysis, financial forecasting, investment analysis
+- **Use Cases**: financial modeling, forecasting, valuation analysis, investment planning
 - **Version**: 2.0.0
 - **Use Cases**: company valuation, investment decisions, M&A analysis, financial planning
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

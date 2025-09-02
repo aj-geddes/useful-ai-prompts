@@ -5,6 +5,7 @@
 
 - **Category**: Analysis
 - **Tags**: competitive analysis, market intelligence, competitor profiling, strategic positioning
+- **Use Cases**: competitive analysis, market research, business intelligence, strategic planning
 - **Version**: 2.0.0
 - **Use Cases**: competitor assessment, market positioning, strategic planning, threat analysis
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
