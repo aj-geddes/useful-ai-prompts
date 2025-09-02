@@ -237,9 +237,9 @@ Workshops:
 - Core system available 99.9%
 
 **Test Scenarios**:
-- Happy path: Complete valid claim
-- Edge case: Network interruption
-- Error case: Invalid policy number
+- Happy path → Complete valid claim
+- Edge case → Network interruption
+- Error case → Invalid policy number
 ```
 
 ### Non-Functional Requirement Template
@@ -252,9 +252,9 @@ Workshops:
 **Description**: All portal pages shall load within 3 seconds on 4G mobile connection
 
 **Measurement**: 
-- Tool: Google Lighthouse
-- Target: Performance score >90
-- Test conditions: Average 4G (10 Mbps)
+- Tool → Google Lighthouse
+- Target → Performance score >90
+- Test conditions → Average 4G (10 Mbps)
 
 **Rationale**: User research shows >3 seconds causes 40% abandonment
 

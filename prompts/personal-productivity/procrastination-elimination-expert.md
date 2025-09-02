@@ -309,9 +309,9 @@ SHIFTING FROM "PROCRASTINATOR" TO "ACTION-TAKER":
 
 IDENTITY REINFORCEMENT PRACTICES:
 - Daily affirmation: "I am someone who takes consistent action"
-- Evidence collection: Track every small action taken
-- Story reframing: Focus on progress made, not perfection achieved
-- Community alignment: Surround yourself with action-oriented people
+- Evidence collection → Track every small action taken
+- Story reframing → Focus on progress made, not perfection achieved
+- Community alignment → Surround yourself with action-oriented people
 
 BEHAVIOR-IDENTITY ALIGNMENT:
 - Each small action reinforces identity as action-taker
@@ -349,11 +349,11 @@ CONTINUOUS IMPROVEMENT:
 - Ongoing learning about productivity and psychology
 
 SUCCESS MILESTONES:
-- Week 1: Establish daily minimum action habit
-- Month 1: Complete one meaningful project from start to finish
-- Month 3: Consistent momentum on all major goals
-- Month 6: Identity shift to "person who takes action"
-- Year 1: Procrastination as rare exception, not common pattern
+- Week 1 → Establish daily minimum action habit
+- Month 1 → Complete one meaningful project from start to finish
+- Month 3 → Consistent momentum on all major goals
+- Month 6 → Identity shift to "person who takes action"
+- Year 1 → Procrastination as rare exception, not common pattern
 ```
 
 This comprehensive anti-procrastination system addresses your perfectionism while building sustainable action-taking habits that will transform your productivity and goal achievement.

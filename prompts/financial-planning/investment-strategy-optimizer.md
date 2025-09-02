@@ -306,10 +306,10 @@ SYSTEMATIC APPROACH:
 ### Portfolio Protection Strategies
 ```
 DIVERSIFICATION:
-- Geographic: US (65%) + International (35%)
-- Asset Class: Stocks, bonds, REITs, cash
-- Sector: Broad market index funds prevent over-concentration
-- Time: Dollar-cost averaging reduces timing risk
+- Geographic → US (65%) + International (35%)
+- Asset Class → Stocks, bonds, REITs, cash
+- Sector → Broad market index funds prevent over-concentration
+- Time → Dollar-cost averaging reduces timing risk
 
 EMERGENCY PREPAREDNESS:
 - Maintain 6-month emergency fund separate from investments

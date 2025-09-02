@@ -94,18 +94,18 @@ Low Power   | [Keep Informed]   | [Monitor]
 
 ### Engagement Timeline
 **Pre-Decision:**
-- Week -2: Leadership alignment
-- Week -1: Key influencer briefings
+- Week -2 → Leadership alignment
+- Week -1 → Key influencer briefings
 
 **Announcement:**
-- Day 1: All-hands communication
-- Day 2-3: Department meetings
-- Week 1: Customer notifications
+- Day 1 → All-hands communication
+- Day 2-3 → Department meetings
+- Week 1 → Customer notifications
 
 **Follow-up:**
-- Week 2: Feedback sessions
-- Month 1: Impact assessment
-- Quarterly: Progress updates
+- Week 2 → Feedback sessions
+- Month 1 → Impact assessment
+- Quarterly → Progress updates
 
 ### Success Indicators
 - Stakeholder satisfaction scores

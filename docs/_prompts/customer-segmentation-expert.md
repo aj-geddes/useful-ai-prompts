@@ -9,219 +9,93 @@ date: '2025-07-21'
 description: Create powerful customer segments that enable targeted marketing, personalized experiences, and strategic resource allocation. This prompt helps develop multi-dimensional segmentation strategies based on behavior, value, and needs.
 layout: prompt
 prompt: |
-  |
-  Ill help you develop a comprehensive customer segmentation strategy. Let''s explore your data:
-  
+  I'll help you develop a comprehensive customer segmentation strategy. Let's explore your data:
   
   BUSINESS CONTEXT:
-  
   - What products/services do you offer?
-  
   - What customer data do you have available?
-  
   - Current customer base size and diversity?
   
-  
   SEGMENTATION GOALS:
-  
   - What decisions will segments inform? (marketing, product, service)
-  
   - Any specific hypotheses about customer groups?
-  
   - Priority outcomes? (growth, retention, efficiency)
   
-  
   AVAILABLE DATA:
-  
   - Demographics (age, location, company size)?
-  
   - Behavioral (usage, purchase patterns)?
-  
   - Psychographic (preferences, values)?
-  
   - Value metrics (spend, LTV, profitability)?
   
-  
-  I''ll create your segmentation framework:
-  
+  I'll create your segmentation framework:
   
   ## 1. MULTI-DIMENSIONAL SEGMENTS
   
   **Primary Segmentation Model**:
   
   | Segment Name | Size | Key Characteristics | Value | Needs |
-  
-  |
-  
-
-  Ill help you develop a comprehensive customer segmentation strategy. Let''''s explore your data:
-
-
-
-  BUSINESS CONTEXT:
-
-
-  - What products/services do you offer?
-
-
-  - What customer data do you have available?
-
-
-  - Current customer base size and diversity?
-
-
-
-  SEGMENTATION GOALS:
-
-
-  - What decisions will segments inform? (marketing, product, service)
-
-
-  - Any specific hypotheses about customer groups?
-
-
-  - Priority outcomes? (growth, retention, efficiency)
-
-
-
-  AVAILABLE DATA:
-
-
-  - Demographics (age, location, company size)?
-
-
-  - Behavioral (usage, purchase patterns)?
-
-
-  - Psychographic (preferences, values)?
-
-
-  - Value metrics (spend, LTV, profitability)?
-
-
-
-  I''''ll create your segmentation framework:
-
-
-
-  ## 1. MULTI-DIMENSIONAL SEGMENTS
-
-
-  **Primary Segmentation Model**:
-
-
-  | Segment Name | Size | Key Characteristics | Value | Needs |
-
-
-  |
-
-  '
-title: Customer Segmentation Expert
---------------|------|-------------------|--------|--------|
-
+  |--------------|------|-------------------|--------|--------|
   | Champions | 15% | High value, engaged, advocates | $$$$ | Innovation |
-
   | Growth Users | 25% | Increasing usage, price sensitive | $$$ | Education |
-
   | Steady State | 35% | Consistent, satisfied, low touch | $$ | Reliability |
-
   | At Risk | 20% | Declining engagement | $$ | Re-engagement |
-
   | Dormant | 5% | Minimal activity | $ | Win-back |
-
-
+  
   **Behavioral Profiles**:
-
   - Usage patterns and frequency
-
   - Feature adoption levels
-
   - Channel preferences
-
   - Support needs
-
-
+  
   ## 2. SEGMENT PERSONAS
-
+  
   For each major segment:
-
   - **Demographics**: Typical profile
-
-  - **Goals**: What they''re trying to achieve
-
+  - **Goals**: What they're trying to achieve
   - **Pain Points**: Challenges they face
-
   - **Decision Factors**: What influences them
-
   - **Success Metrics**: How they measure value
-
-
+  
   ## 3. TARGETING STRATEGIES
-
+  
   **Marketing Approach**:
-
+  
   | Segment | Message Focus | Channels | Offers | Frequency |
-
   |---------|---------------|----------|---------|-----------|
-
   | [Customized strategies for each segment] |
-
-
+  
   **Product/Service Alignment**:
-
   - Feature priorities by segment
-
   - Service level differentiation
-
   - Pricing strategies
-
   - Support models
-
-
+  
   ## 4. MIGRATION PATHWAYS
-
+  
   **Segment Movement Analysis**:
-
   - Natural progression paths
-
   - Intervention opportunities
-
   - Upgrade triggers
-
   - Downgrade prevention
-
-
+  
   **Growth Strategies**:
-
   - Moving customers to higher-value segments
-
   - Preventing backward migration
-
   - Expansion within segments
-
-
+  
   ## 5. IMPLEMENTATION ROADMAP
-
+  
   **Phase 1**: Data collection and validation
-
   **Phase 2**: Initial segmentation and testing
-
   **Phase 3**: Campaign development
-
   **Phase 4**: Personalization rollout
-
   **Phase 5**: Continuous optimization
-
-
+  
   **Measurement Framework**:
-
   - Segment performance metrics
-
   - Migration tracking
-
   - ROI by segment
-
-  - Refinement triggers'
+  - Refinement triggers
 slug: customer-segmentation-expert
 tags:
 - customer-segmentation

@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: stakeholder management, strategic communication, relationship building, influence mapping
+- **Use Cases**: stakeholder management, project communication, relationship building, update delivery
 - **Version**: 2.0.0
 - **Use Cases**: project communication, change management, executive alignment, partner management
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -139,7 +140,7 @@ LOW INFLUENCE
 - Initial investment: $500K additional
 - Year 1 savings: $200K (process efficiency)
 - Year 2 revenue impact: $1.2M (improved conversion)
-- Break-even: Month 14
+- Break-even → Month 14
 - 3-year NPV: $1.8M
 
 **Addressing Concerns**:
@@ -207,9 +208,9 @@ LOW INFLUENCE
 - Initial coalition formed ✓
 
 **Month 1 Targets:**
-- CFO stance: Skeptical → Cautiously Supportive
-- Sales VP: Neutral → Engaged
-- CEO: Supportive → Active Champion
+- CFO stance → Skeptical → Cautiously Supportive
+- Sales VP → Neutral → Engaged
+- CEO → Supportive → Active Champion
 - Cross-functional collaboration initiated
 
 **Project Milestone Metrics:**

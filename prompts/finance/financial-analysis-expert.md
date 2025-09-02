@@ -200,15 +200,15 @@ Cash: 10%    →   Cash: 10%
 ### Two-Week Action Plan
 
 **Week 1 (Analysis & Preparation)**:
-- Day 1-2: Review current holdings for tax-loss candidates
-- Day 3-4: Set limit orders for NVDA ($590), GOOGL (market)
-- Day 5: Reduce bond allocation, raise cash to 12%
+- Day 1-2 → Review current holdings for tax-loss candidates
+- Day 3-4 → Set limit orders for NVDA ($590), GOOGL (market)
+- Day 5 → Reduce bond allocation, raise cash to 12%
 
 **Week 2 (Implementation)**:
-- Day 1: Execute core position trades
-- Day 2-3: Scale into growth positions
-- Day 4: Set up monthly auto-investment
-- Day 5: Implement stop-losses at -15%
+- Day 1 → Execute core position trades
+- Day 2-3 → Scale into growth positions
+- Day 4 → Set up monthly auto-investment
+- Day 5 → Implement stop-losses at -15%
 
 ### Ongoing Management
 

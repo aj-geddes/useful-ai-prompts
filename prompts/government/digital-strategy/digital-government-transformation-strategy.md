@@ -241,7 +241,7 @@ Processing Time Targets:
 Citizen Experience Standards:
 - Service Availability: 99.5% uptime
 - Response Time: <3 seconds page load
-- Accessibility: WCAG 2.1 AA compliance
+- Accessibility → WCAG 2.1 AA compliance
 - Satisfaction Score: >85% positive rating
 ```
 

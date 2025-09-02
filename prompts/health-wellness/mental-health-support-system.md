@@ -147,19 +147,19 @@ PROTECTIVE FACTORS:
 ```
 HIGH-RISK TIMES AND TRIGGERS:
 Sunday Evenings: "Sunday Scaries" anticipatory anxiety
-- Trigger: Upcoming work week concerns
-- Pattern: Worry spiral about unfinished tasks
-- Physical response: Sleep disruption, stomach tension
+- Trigger → Upcoming work week concerns
+- Pattern → Worry spiral about unfinished tasks
+- Physical response → Sleep disruption, stomach tension
 
 Busy Work Periods: Overwhelm and avoidance
-- Trigger: High workload and deadlines
-- Pattern: All-or-nothing thinking, perfectionism
-- Physical response: Tension headaches, fatigue
+- Trigger → High workload and deadlines
+- Pattern → All-or-nothing thinking, perfectionism
+- Physical response → Tension headaches, fatigue
 
 Social Gatherings: Performance anxiety
-- Trigger: Fear of judgment or saying wrong thing
-- Pattern: Over-analysis before, during, and after events
-- Physical response: Rapid heartbeat, sweating
+- Trigger → Fear of judgment or saying wrong thing
+- Pattern → Over-analysis before, during, and after events
+- Physical response → Rapid heartbeat, sweating
 
 EARLY WARNING SIGNS:
 Physical: Muscle tension, sleep disruption, appetite changes
@@ -198,9 +198,9 @@ Friday: Week reflection and weekend self-care planning
 9:00-9:05 PM: WORRY PROCESSING
 "Worry Window" technique:
 - Write down any concerns from the day
-- Categorize: Can control vs. Cannot control
-- For controllable items: Plan one small action
-- For uncontrollable items: Practice letting go
+- Categorize → Can control vs. Cannot control
+- For controllable items → Plan one small action
+- For uncontrollable items → Practice letting go
 
 9:05-9:10 PM: GRATITUDE AND REFLECTION
 - Write 3 good moments from today
@@ -226,9 +226,9 @@ Extended version (25 minutes) including:
 THE STOP-OBSERVE-BREATHE-RESPOND METHOD:
 
 STOP: Notice when overthinking begins
-- Physical cue: Set phone reminder for hourly anxiety check
+- Physical cue → Set phone reminder for hourly anxiety check
 - Mental cue: "I notice I'm spiraling"
-- Verbal cue: Literally say "Stop" out loud
+- Verbal cue → Literally say "Stop" out loud
 
 OBSERVE: Identify what's happening
 - What am I thinking about?
@@ -258,15 +258,15 @@ BEFORE SOCIAL SITUATIONS:
 Preparation techniques:
 - Practice self-compassion: "I'm learning and growing"
 - Realistic expectations: "I don't need to be perfect"
-- Support planning: Identify one person you feel comfortable with
-- Exit strategy: Know you can leave if overwhelmed
+- Support planning → Identify one person you feel comfortable with
+- Exit strategy → Know you can leave if overwhelmed
 
 DURING SOCIAL SITUATIONS:
 In-the-moment tools:
 - Focus on being curious about others rather than self-conscious
 - Use breath awareness to stay grounded
 - Give yourself permission to take breaks (bathroom, outside)
-- Remember: Most people are focused on themselves, not judging you
+- Remember → Most people are focused on themselves, not judging you
 
 AFTER SOCIAL SITUATIONS:
 Recovery and learning:

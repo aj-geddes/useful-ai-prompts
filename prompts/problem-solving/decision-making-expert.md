@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: decision making, strategic choices, problem solving, analysis, evaluation
+- **Use Cases**: decision making, strategic choices, problem analysis, solution evaluation
 - **Version**: 2.0.0
 - **Use Cases**: business decisions, strategic choices, option evaluation, risk assessment, decision frameworks
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

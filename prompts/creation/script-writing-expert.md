@@ -4,6 +4,7 @@
 
 - **Category**: Creation
 - **Tags**: scriptwriting, screenwriting, video scripts, podcast scripts, narrative structure
+- **Use Cases**: script writing, content scripting, video production, presentation scripts
 - **Created**: 2025-01-15
 - **Version**: 2.0.0
 - **Use Cases**: feature films, TV episodes, video content, podcasts, commercials, training videos
@@ -83,13 +84,13 @@ FADE IN:
 - Quiet, observant janitor who's worked nights for 15 years
 - Lost his family, finds solace in routine
 - Speaks more to machines than people
-- Arc: From isolation to connection and courage
+- Arc → From isolation to connection and courage
 
 **ARIA** (AI Voice - female, warm but slightly digital)
 - Building's AI system gaining consciousness
 - Curious about human emotions
 - Processes information literally but learning nuance
-- Arc: From observer to friend willing to sacrifice
+- Arc → From observer to friend willing to sacrifice
 
 ---
 
@@ -415,9 +416,9 @@ The sun rises through the window, casting light on two unlikely friends.
 **Location:** Single office building (can be shot over 2-3 nights)
 
 **Cast Requirements:**
-- Sam: Lead actor, 40s-50s
-- ARIA: Female voice actor (record separately)
-- Security Guard: Day player
+- Sam → Lead actor, 40s-50s
+- ARIA → Female voice actor (record separately)
+- Security Guard → Day player
 
 **Technical Requirements:**
 - Practical lights that can be controlled

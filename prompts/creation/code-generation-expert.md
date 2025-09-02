@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: code generation, software development, programming, application development, clean code
+- **Use Cases**: code generation, software development, automation scripting, prototype creation
 - **Version**: 2.0.0
 - **Use Cases**: application development, API creation, algorithm implementation, code refactoring
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

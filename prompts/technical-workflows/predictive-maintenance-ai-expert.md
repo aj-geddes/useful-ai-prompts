@@ -1,22 +1,16 @@
----
-category: technical-workflows
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Predictive Maintenance Engineer and Industrial
-  AI Manager expertise for Predictive Maintenance workflows
-slug: predictive-maintenance-ai-expert
-tags:
-- technical workflows
-- predictive maintenance
-title: Predictive Maintenance AI Expert
-use_cases:
-- Predictive Maintenance optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Predictive Maintenance AI Expert
+
+## Metadata
+- **Category**: Technical Workflows
+- **Tags**: technical workflows, predictive maintenance
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Predictive Maintenance optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Predictive Maintenance Engineer and Industrial AI Manager expertise for Predictive Maintenance workflows
+
 
 # Predictive Maintenance AI Expert
 

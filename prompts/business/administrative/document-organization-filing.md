@@ -212,9 +212,9 @@ Find all templates: parent:"04_TEMPLATES"
 
 **Expected Results:**
 - Document search time: 2-3 hrs/day → 15 mins/day (85% reduction)
-- Version confusion: Eliminated with clear naming
+- Version confusion → Eliminated with clear naming
 - Client onboarding: 2 hours → 30 minutes (template system)
-- Compliance confidence: From "hope we have it" → "I know exactly where it is"
+- Compliance confidence → From "hope we have it" → "I know exactly where it is"
 
 ## TRAINING MATERIALS CREATED
 

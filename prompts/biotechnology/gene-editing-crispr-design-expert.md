@@ -121,7 +121,7 @@ Protocol Overview:
 - Isolate CD34+ HSCs using immunomagnetic selection
 - Pre-stimulate 48h with SCF, TPO, Flt3L
 - Electroporate BE4max-SpRY RNP using Lonza 4D system
-- Program: EO-100, optimized for primary HSCs
+- Program → EO-100, optimized for primary HSCs
 - Recovery in expansion medium 72h before analysis
 ```
 
@@ -228,8 +228,8 @@ IND-Enabling Studies (Months 7-18):
 
 Phase I Clinical Trial Design:
 - Dose escalation study (3 dose levels)
-- Primary endpoint: Safety and tolerability
-- Secondary: Editing efficiency and HbA levels
+- Primary endpoint → Safety and tolerability
+- Secondary → Editing efficiency and HbA levels
 - Long-term follow-up for 15 years minimum
 ```
 

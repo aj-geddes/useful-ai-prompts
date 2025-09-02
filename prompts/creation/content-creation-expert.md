@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: content creation, copywriting, storytelling, content strategy, digital content
+- **Use Cases**: content creation, copywriting, marketing materials, blog writing
 - **Version**: 2.0.0
 - **Use Cases**: blog writing, article creation, web content, social media content, brand storytelling
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -260,9 +261,9 @@ Start with one tool today. Your future self will thank you.
 ### Social Media Adaptations:
 **Instagram Carousel:**
 - Slide 1: "5 AI Tools Every Small Business Needs"
-- Slides 2-6: One tool per slide with benefits
-- Slide 7: Implementation timeline
-- Slide 8: Call-to-action with link in bio
+- Slides 2-6 → One tool per slide with benefits
+- Slide 7 → Implementation timeline
+- Slide 8 → Call-to-action with link in bio
 
 **Twitter Thread:**
 1/ 🧵 Small business owners: Stop working 70-hour weeks. These 5 AI tools will give you back 10 hours per week (no tech degree required):

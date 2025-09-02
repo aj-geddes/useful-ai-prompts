@@ -82,7 +82,7 @@ Based on your mixed-use urban development, here's your comprehensive constructio
 - Establish off-site consolidation center for just-in-time delivery
 
 **Phase 2: Foundation & Podium (Months 1-8)**
-- Priority: Minimize hospital disruption
+- Priority → Minimize hospital disruption
 - Night/weekend work for noisy operations
 - Continuous vibration monitoring with real-time alerts
 - Accelerate podium structure for retail fitout
@@ -152,9 +152,9 @@ Weekends: Noisy operations (within ordinance)
 ### Change Order Management
 
 **Three-Tier System:**
-- Tier 1 (<$10K): PM approval, same day
-- Tier 2 ($10-50K): Owner rep approval, 48 hours
-- Tier 3 (>$50K): Owner approval, 5 days
+- Tier 1 (<$10K) → PM approval, same day
+- Tier 2 ($10-50K) → Owner rep approval, 48 hours
+- Tier 3 (>$50K) → Owner approval, 5 days
 
 **Proactive CO Avoidance:**
 - Weekly design assist meetings
@@ -189,7 +189,7 @@ Morning Huddle Agenda:
 ### Quality Assurance
 
 **First-Time Quality Approach:**
-- Mockups: Curtain wall, retail storefront, typical unit
+- Mockups → Curtain wall, retail storefront, typical unit
 - BIM-to-field verification with laser scanning
 - Pre-installation conferences for all trades
 - Digital inspection checklists in Procore

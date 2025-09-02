@@ -154,10 +154,10 @@ CMD ["node", "dist/index.js"]
 
 **GitHub Actions with Cache**:
 ```yaml
-- name: Set up Docker Buildx
+- name → Set up Docker Buildx
   uses: docker/setup-buildx-action@v2
 
-- name: Build and push
+- name → Build and push
   uses: docker/build-push-action@v4
   with:
     context: .
@@ -192,7 +192,7 @@ jobs:
 
 ```yaml
 # Ephemeral environments for each PR
-- name: Deploy Preview Environment
+- name → Deploy Preview Environment
   run: |
     kubectl create namespace pr-${{ github.event.number }} || true
     helm upgrade --install pr-${{ github.event.number }} \
@@ -315,7 +315,7 @@ deploy-production:
 
 ```yaml
 # Datadog CI Visibility
-- name: Datadog CI
+- name → Datadog CI
   uses: datadog/datadog-ci-action@v1
   with:
     api-key: ${{ secrets.DD_API_KEY }}
@@ -323,7 +323,7 @@ deploy-production:
     env: 'ci'
 
 # Custom metrics tracking
-- name: Track Pipeline Metrics
+- name → Track Pipeline Metrics
   run: |
     cat << EOF | curl -X POST $METRICS_ENDPOINT
     {

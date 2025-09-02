@@ -175,7 +175,7 @@ Position: Bottom 30th percentile
 **Competitive Gaps:**
 - Technology: 2 years behind industry leaders
 - Training: 40 hours vs 80 hours industry standard
-- Empowerment: Limited vs. full resolution authority
+- Empowerment → Limited vs. full resolution authority
 
 ## ACTION PLAN
 
@@ -238,9 +238,9 @@ Expected ROI: 25% productivity gain
 └── Productivity: 48/day (+7%)
 
 Monitoring Cadence:
-- Daily: Real-time dashboard
-- Weekly: Team performance review
-- Monthly: Full scorecard analysis
+- Daily → Real-time dashboard
+- Weekly → Team performance review
+- Monthly → Full scorecard analysis
 ```
 
 ### Budget Allocation

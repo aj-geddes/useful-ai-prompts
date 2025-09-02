@@ -227,10 +227,10 @@ Recovery Time Assessment (1-10 scale):
 - Logistics rerouting complexity
 
 Critical Action Thresholds:
-- Score 8-10: Immediate action required
-- Score 6-7: Active mitigation planning
-- Score 4-5: Monitoring and preparation
-- Score 1-3: Standard risk management
+- Score 8-10 → Immediate action required
+- Score 6-7 → Active mitigation planning
+- Score 4-5 → Monitoring and preparation
+- Score 1-3 → Standard risk management
 ```
 
 ## SUPPLIER DIVERSIFICATION STRATEGY
@@ -627,7 +627,7 @@ Financial Impact Metrics:
 Operational Excellence Metrics:
 - Supplier performance improvement: 25% average
 - Crisis response time: 6-9 months → 3-6 weeks (85% improvement)
-- Supply chain visibility: Tier 1 → Tier 3 coverage
+- Supply chain visibility → Tier 1 → Tier 3 coverage
 - Risk prediction accuracy: >90% with 30-day horizon
 
 Strategic Advantage Metrics:

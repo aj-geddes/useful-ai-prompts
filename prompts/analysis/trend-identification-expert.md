@@ -137,7 +137,7 @@ Professional services: $1.9B (+25% CAGR)
 - Asynchronous work preference: 68% of remote workers
 - Always-on collaboration tools usage: +180% since 2020
 - Cross-timezone team projects: +95% increase
-- Mobile collaboration: Now 40% of total usage
+- Mobile collaboration → Now 40% of total usage
 
 ## IMPACT ANALYSIS
 
@@ -250,7 +250,7 @@ Google Workspace + Project Tools:
 - Consumer-to-business expansion
 - Free tier competitive pressure
 - AI integration with Bard/Gemini
-- Risk: Small business market erosion
+- Risk → Small business market erosion
 
 Mitigation Strategies:
 ├── Strengthen unique value propositions

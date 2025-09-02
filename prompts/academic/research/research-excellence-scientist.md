@@ -113,8 +113,8 @@ Week 1-4: Optimize spatial transcriptomics
 
 Week 5-12: Longitudinal mapping
 - Timepoints: 1, 3, 6 months post-tau seeding
-- Brain regions: EC → hippocampus → cortex
-- Controls: WT, tau only, inflammation only
+- Brain regions → EC → hippocampus → cortex
+- Controls → WT, tau only, inflammation only
 
 Week 13-20: Data integration
 - Spatial + scRNA-seq integration
@@ -156,13 +156,13 @@ Week 21-32: Functional validation
 ### Immediate Opportunities (Next 6 months)
 
 **1. NIH U01 - Alzheimer's Disease Research Centers**
-- Deadline: March 2025
+- Deadline → March 2025
 - Budget: $500K/year for 5 years
-- Your angle: Multi-site microglial biomarker validation
+- Your angle → Multi-site microglial biomarker validation
 - Key collaborators needed: 2-3 ADRCs
 
 **2. Alzheimer's Association Research Grant**
-- Deadline: Letters of intent in January
+- Deadline → Letters of intent in January
 - Budget: $150K/year for 3 years
 - Perfect for your imaging innovation
 - Higher success rate than NIH
@@ -170,10 +170,10 @@ Week 21-32: Functional validation
 **3. Industry Partnership Development**
 ```
 Target Companies & Their Interests:
-- Genentech: Microglial modulation (TREM2)
-- Biogen: Tau-targeting therapies
-- Denali: BBB-penetrant therapeutics
-- AbbVie: Neuroinflammation platform
+- Genentech → Microglial modulation (TREM2)
+- Biogen → Tau-targeting therapies
+- Denali → BBB-penetrant therapeutics
+- AbbVie → Neuroinflammation platform
 
 Your Pitch:
 - Novel target + biomarker package
@@ -230,10 +230,10 @@ Figure 4: Therapeutic proof-of-concept
 ```
 
 **Submission Timeline:**
-- Month 1-3: Complete key experiments
-- Month 4: Write first draft
-- Month 5: Co-author review, revisions
-- Month 6: Submit with cover letter emphasizing clinical impact
+- Month 1-3 → Complete key experiments
+- Month 4 → Write first draft
+- Month 5 → Co-author review, revisions
+- Month 6 → Submit with cover letter emphasizing clinical impact
 
 ### Building Your Publication Pipeline
 
@@ -253,13 +253,13 @@ Figure 4: Therapeutic proof-of-concept
 
 **1. Clinical Collaborator**
 - Find AD clinician with biobank access
-- Offer: Your mechanistic expertise
-- Get: Patient samples, clinical correlation
+- Offer → Your mechanistic expertise
+- Get → Patient samples, clinical correlation
 
 **2. Chemical Biology Lab**
 - For lead optimization
 - Consider chemistry department colleague
-- Structure: Co-PI on SBIR/STTR
+- Structure → Co-PI on SBIR/STTR
 
 **3. Computational Biology**
 - For complex data integration
@@ -336,7 +336,7 @@ Quarterly: In-person strategic planning
 - Funding: $750K+ annual total
 - Trainees: 2 students graduated
 - Innovation: 1-2 patents filed
-- Leadership: Study section membership
+- Leadership → Study section membership
 
 This comprehensive strategy positions you for tenure success while making groundbreaking discoveries in AD. Start with the spatial transcriptomics optimization - it's your key differentiator.
 

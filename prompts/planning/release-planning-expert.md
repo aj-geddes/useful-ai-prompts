@@ -141,16 +141,16 @@ Based on your SaaS application needs, here's your comprehensive release plan:
 
 ### Deployment Phase (Weeks 9-10)
 **Week 9: Soft Launch**
-- Monday: Deploy to blue-green staging
-- Tuesday-Wednesday: Deploy green environment 
-- Thursday: Begin 5% traffic rollout
-- Friday: Monitor and validate, prepare for scale
+- Monday → Deploy to blue-green staging
+- Tuesday-Wednesday → Deploy green environment 
+- Thursday → Begin 5% traffic rollout
+- Friday → Monitor and validate, prepare for scale
 
 **Week 10: Full Rollout**
-- Monday: Scale to 25% traffic
-- Wednesday: Scale to 50% traffic  
-- Friday: Complete rollout to 100%
-- Weekend: Monitor and optimize
+- Monday → Scale to 25% traffic
+- Wednesday → Scale to 50% traffic  
+- Friday → Complete rollout to 100%
+- Weekend → Monitor and optimize
 
 ## 3. RISK MANAGEMENT
 

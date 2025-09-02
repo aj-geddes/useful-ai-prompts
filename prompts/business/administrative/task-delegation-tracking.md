@@ -123,26 +123,26 @@ Hi [Team Member],
 I'm delegating the Q4 vendor performance review to you. Here are the specifics:
 
 WHAT: Complete vendor performance analysis for top 10 suppliers
-- Deliverable: Executive summary + detailed scorecards
-- Success criteria: Data-driven recommendations for contract renewals
+- Deliverable → Executive summary + detailed scorecards
+- Success criteria → Data-driven recommendations for contract renewals
 
 WHY: Board presentation Oct 20, impacts $2M in annual contracts
 
 WHO: You as lead, finance team for cost data, procurement for contract details
 
 WHEN: 
-- Initial data collection: Oct 5
-- Draft review with me: Oct 12
-- Final submission: Oct 15
+- Initial data collection → Oct 5
+- Draft review with me → Oct 12
+- Final submission → Oct 15
 
 WHERE: Vendor files in SharePoint, templates in /Templates/Vendor_Review
 
 HOW: Use standard scorecard template, include cost analysis, 3 renewal recommendations
 
 SUPPORT AVAILABLE:
-- Questions: Slack me anytime
-- Roadblock escalation: Email within 24 hours
-- Check-in: Brief update Friday at 2 PM
+- Questions → Slack me anytime
+- Roadblock escalation → Email within 24 hours
+- Check-in → Brief update Friday at 2 PM
 
 This is a stretch assignment to develop your analytical skills. I'm confident you can handle it.
 
@@ -201,7 +201,7 @@ Ready to discuss any questions?
 - Escalate roadblocks within 24 hours
 
 **For You:**
-- Response time: Slack within 2 hours, email within 4 hours
+- Response time → Slack within 2 hours, email within 4 hours
 - Weekly dashboard review every Monday morning
 - Monthly delegation effectiveness review
 

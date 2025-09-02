@@ -59,7 +59,7 @@ Based on your answers, I'll provide:
 - Monthly: [Review and rebalancing schedule]
 
 ### Risk Mitigation
-- Reserve fund: X% for unexpected needs
+- Reserve fund → X% for unexpected needs
 - Reallocation triggers and process
 - Performance monitoring approach
 

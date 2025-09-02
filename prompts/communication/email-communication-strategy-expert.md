@@ -4,6 +4,7 @@
 - **Category**: Communication/Digital
 - **Created**: 2025-01-15
 - **Tags**: email-strategy, business-writing, communication-effectiveness, inbox-management
+- **Use Cases**: email strategy, professional communication, messaging optimization, engagement improvement
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21
 

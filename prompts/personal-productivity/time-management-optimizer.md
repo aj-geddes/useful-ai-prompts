@@ -65,9 +65,9 @@ Based on your responses, I'll provide:
 - Meeting optimization guidelines
 
 **4. IMPLEMENTATION ROADMAP**
-- Week 1: Quick wins and habit stacking
-- Week 2-3: System establishment and refinement
-- Week 4: Review and adjustment protocols
+- Week 1 → Quick wins and habit stacking
+- Week 2-3 → System establishment and refinement
+- Week 4 → Review and adjustment protocols
 - Long-term sustainability strategies
 
 **5. TRACKING AND IMPROVEMENT TOOLS**
@@ -200,19 +200,19 @@ OPTIMAL DAILY SCHEDULE:
 - Implement morning routine
 - Start time blocking calendar
 - Communicate new availability to team
-- Expected result: Better energy management
+- Expected result → Better energy management
 
 ### Week 2-3: System Refinement
 - Track energy levels and adjust blocks
 - Delegate/automate identified tasks
 - Establish weekly planning ritual
-- Expected result: Sustainable productivity rhythm
+- Expected result → Sustainable productivity rhythm
 
 ### Week 4: Review and Optimize
 - Analyze what's working/not working
 - Make final adjustments to schedule
 - Plan long-term sustainability measures
-- Expected result: Personalized system you can maintain
+- Expected result → Personalized system you can maintain
 
 ## SPECIFIC RECOMMENDATIONS FOR YOUR SITUATION
 

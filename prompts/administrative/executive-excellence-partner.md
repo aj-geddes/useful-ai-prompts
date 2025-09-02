@@ -122,10 +122,10 @@ Inbox Zero Method:
 ```
 
 **Stakeholder Communication Templates:**
-- Board updates: Monthly dashboard format
-- Investor relations: Standardized response framework
-- Team communications: Clear escalation protocols
-- External partnerships: Consistent voice and messaging
+- Board updates → Monthly dashboard format
+- Investor relations → Standardized response framework
+- Team communications → Clear escalation protocols
+- External partnerships → Consistent voice and messaging
 
 ### Travel Coordination Excellence
 
@@ -253,7 +253,7 @@ Quarterly: Strategic opportunity assessment
 ### Success Metrics
 
 **Quantitative Measures:**
-- CEO time saved: Target 15+ hours/week
+- CEO time saved → Target 15+ hours/week
 - Meeting efficiency: 90%+ start on time
 - Email response: <2 hour average
 - Stakeholder satisfaction: 95%+ positive feedback

@@ -85,7 +85,7 @@ Data Completeness:
 
 Outliers Detected:
 - 47 orders > $10,000 (0.09% of data)
-- Recommendation: Flag for review, likely B2B orders
+- Recommendation → Flag for review, likely B2B orders
 ```
 
 ## KEY FINDINGS

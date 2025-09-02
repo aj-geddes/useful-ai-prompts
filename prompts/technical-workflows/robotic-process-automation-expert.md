@@ -1,22 +1,16 @@
----
-category: technical-workflows
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining RPA Developer and Process Automation Manager
-  expertise for Process Automation workflows
-slug: robotic-process-automation-expert
-tags:
-- technical workflows
-- process automation
-title: Robotic Process Automation Expert
-use_cases:
-- Process Automation optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Robotic Process Automation Expert
+
+## Metadata
+- **Category**: Technical Workflows
+- **Tags**: technical workflows, process automation
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Process Automation optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining RPA Developer and Process Automation Manager expertise for Process Automation workflows
+
 
 # Robotic Process Automation Expert
 

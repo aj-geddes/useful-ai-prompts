@@ -250,7 +250,7 @@ Based on your agency-focused project management software, here's your comprehens
 
 **Email Newsletter:**
 - Send Wednesdays 9 AM EST
-- Sections: Feature article, quick tips, community highlight
+- Sections → Feature article, quick tips, community highlight
 - Segmented by user stage
 - A/B test subject lines
 
@@ -280,7 +280,7 @@ Based on your agency-focused project management software, here's your comprehens
 ### Key Performance Indicators
 
 **Traffic Metrics:**
-- Organic traffic growth: Target 20% QoQ
+- Organic traffic growth → Target 20% QoQ
 - Blog engagement rate: >3 minutes average
 - Email open rate: >25%
 - Video completion rate: >50%

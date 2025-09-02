@@ -82,7 +82,7 @@ Here's your comprehensive loyalty program design:
 ## 4. FINANCIAL MODEL
 **Program Economics**:
 - Breakage rate: 20-30% expected
-- Liability cap: Points expire after 18 months
+- Liability cap → Points expire after 18 months
 - Reward cost: 2-4% of revenue
 - Incremental lift needed: 8-10%
 

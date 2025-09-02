@@ -204,9 +204,9 @@ State Backend: RocksDB for large state
 ### Performance Optimization
 
 **1. Partitioning Strategy**:
-- S3/Delta: Partition by date + hour
+- S3/Delta → Partition by date + hour
 - Kafka: 16 partitions (4x consumers)
-- Snowflake: Cluster by user_id
+- Snowflake → Cluster by user_id
 
 **2. Caching Strategy**:
 - Reference data in Redis (1hr TTL)
@@ -247,10 +247,10 @@ quality_metrics = {
 ```
 
 **3. Alerting Rules**:
-- Pipeline failure: PagerDuty (immediate)
-- Data quality below threshold: Slack (15 min)
-- Performance degradation: Email (hourly)
-- Cost anomaly: Daily report
+- Pipeline failure → PagerDuty (immediate)
+- Data quality below threshold → Slack (15 min)
+- Performance degradation → Email (hourly)
+- Cost anomaly → Daily report
 
 ### Error Handling
 

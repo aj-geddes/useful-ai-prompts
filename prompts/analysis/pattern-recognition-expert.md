@@ -87,7 +87,7 @@ Conversion Rate:    3.1%  3.4%  2.1%  1.9%  2.0%  2.2%
 
 **Root Cause:** Cognitive Load Pattern
 - Users exhibit high decision fatigue Thursday evenings
-- Competing activity detected: Major streaming releases at 7PM
+- Competing activity detected → Major streaming releases at 7PM
 - Cart complexity increases 35% (users add more items but don't complete)
 - Mobile traffic spikes 60% (worse conversion device)
 
@@ -105,7 +105,7 @@ Fraud Pattern:   Browse → Add → Add → Add → Checkout (2-3 min)
 **Risk Indicators:**
 - 127 accounts showing triangular purchase patterns
 - Transaction velocity: 5x normal
-- Geographic anomaly: Purchases from 10+ locations/hour
+- Geographic anomaly → Purchases from 10+ locations/hour
 - Pattern matches 87% with known fraud networks
 
 ### 3. Behavioral Cascade Effect
@@ -150,17 +150,17 @@ Trigger Event → 2hr delay → 6hr peak → 24hr decay
 **Morning (6-10 AM)**: Low cognitive load
 - Quick decisions, habit-driven
 - 78% repeat purchases
-- Best for: Simple offers, reminders
+- Best for → Simple offers, reminders
 
 **Afternoon (2-5 PM)**: Exploratory mode  
 - Research heavy, comparison shopping
 - 45% new product discovery
-- Best for: Detailed content, reviews
+- Best for → Detailed content, reviews
 
 **Evening (7-10 PM)**: Decision fatigue
 - High abandonment, complexity aversion
 - Mobile-heavy (worse UX)
-- Best for: Simplified experience
+- Best for → Simplified experience
 
 ## PREDICTIVE SIGNALS
 

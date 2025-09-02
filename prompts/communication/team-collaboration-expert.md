@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: team collaboration, remote work, cross-functional teams, team dynamics, collaboration tools
+- **Use Cases**: team collaboration, project coordination, communication improvement, workflow optimization
 - **Version**: 2.0.0
 - **Use Cases**: remote team setup, cross-functional alignment, collaboration improvement, team culture building
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -129,12 +130,12 @@ Based on your distributed team's challenges, here's your collaboration transform
 **Meeting Framework:**
 ```
 ESSENTIAL MEETINGS ONLY:
-- Weekly Team Sync: Rotate times monthly
+- Weekly Team Sync → Rotate times monthly
   Week 1-2: 10am EST (4pm CET)
   Week 3-4: 8am EST (2pm CET)
   
-- Sprint Planning: Record for async input
-- Retros: Hybrid - live + async input
+- Sprint Planning → Record for async input
+- Retros → Hybrid - live + async input
 
 ALL MEETINGS MUST HAVE:
 - Agenda 24hrs in advance
@@ -254,7 +255,7 @@ ALL MEETINGS MUST HAVE:
 - Innovation day
 
 **Quarterly:**
-- If possible: In-person meetup
+- If possible → In-person meetup
 - Virtual offsite with games
 - Team awards ceremony
 

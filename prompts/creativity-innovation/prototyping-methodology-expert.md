@@ -79,16 +79,16 @@ Perfect! Let's create a smart prototyping strategy that validates your baby mile
 Given your timeline and validation needs, I recommend a **two-phase approach**:
 
 **Phase 1: Interactive Mockup (Week 1-2)**
-- Tool: Figma with prototype links
-- Fidelity: Medium - looks real, limited functionality
+- Tool → Figma with prototype links
+- Fidelity → Medium - looks real, limited functionality
 - Cost: $0 (using existing tools)
-- Purpose: Test core value prop and UI
+- Purpose → Test core value prop and UI
 
 **Phase 2: Hybrid MVP (Week 3-4)**  
-- Tool: No-code app (Bubble/Glide) + manual backend
-- Fidelity: High - working app with "Wizard of Oz" elements
+- Tool → No-code app (Bubble/Glide) + manual backend
+- Fidelity → High - working app with "Wizard of Oz" elements
 - Cost: $200 for tools + $1,800 for incentives/testing
-- Purpose: Test actual usage behavior
+- Purpose → Test actual usage behavior
 
 **BUILD PLAN**
 

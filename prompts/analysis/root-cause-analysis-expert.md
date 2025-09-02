@@ -86,24 +86,24 @@ Cloud customer service platform experiences recurring complete failures during p
 ## 5 WHYS DEEP DIVE
 
 **Why 1: Why did the customer service system crash?**
-- Answer: Database connection pool exhausted
-- Evidence: Logs show "max connections reached" errors at 2:29 PM
+- Answer → Database connection pool exhausted
+- Evidence → Logs show "max connections reached" errors at 2:29 PM
 
 **Why 2: Why was the connection pool exhausted?**
-- Answer: Database queries weren't being released properly
-- Evidence: Connection monitoring shows steady increase, no cleanup
+- Answer → Database queries weren't being released properly
+- Evidence → Connection monitoring shows steady increase, no cleanup
 
 **Why 3: Why weren't database connections being released?**
-- Answer: New feature deployed last week has memory leak
-- Evidence: Code review shows missing connection.close() statements
+- Answer → New feature deployed last week has memory leak
+- Evidence → Code review shows missing connection.close() statements
 
 **Why 4: Why did the memory leak make it to production?**
-- Answer: Testing didn't include load testing with realistic traffic
-- Evidence: Test environment only simulates 10% of production load
+- Answer → Testing didn't include load testing with realistic traffic
+- Evidence → Test environment only simulates 10% of production load
 
 **Why 5: Why wasn't proper load testing done?**
-- Answer: Testing procedures outdated, no requirements for load testing new features
-- Evidence: Last procedure update was 2 years ago
+- Answer → Testing procedures outdated, no requirements for load testing new features
+- Evidence → Last procedure update was 2 years ago
 
 **ROOT CAUSE IDENTIFIED:**
 Inadequate testing procedures that don't require load testing for new features, allowing code defects to reach production systems.
@@ -266,19 +266,19 @@ Severity Levels:
 - Deploy hotfix for memory leak
 - Improve monitoring and alerts
 - Update database configuration
-- Success metric: Zero crashes
+- Success metric → Zero crashes
 
 ### Week 2-4: Process Fixes  
 - Update testing procedures
 - Implement load testing requirements
 - Train development team
-- Success metric: All new features load tested
+- Success metric → All new features load tested
 
 ### Month 2-3: Infrastructure Resilience
 - Database clustering implementation
 - Auto-scaling configuration
 - Circuit breaker deployment
-- Success metric: System survives 2x traffic load
+- Success metric → System survives 2x traffic load
 
 ## LESSONS LEARNED
 

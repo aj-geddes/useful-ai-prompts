@@ -95,7 +95,7 @@ Network Map:
 **Performance Gaps**:
 - Service: 3% below target = $30M lost sales
 - Lead time: 45 days limits responsiveness
-- Visibility: No real-time tracking beyond Tier 1
+- Visibility → No real-time tracking beyond Tier 1
 - Risk exposure: $200M potential impact identified
 
 ## OPTIMIZATION STRATEGY
@@ -295,22 +295,22 @@ Baseline: 500K tons CO2e
 ### 3-Year Implementation Roadmap
 
 **Year 1: Stabilize & Digitize**
-- Q1-Q2: Control tower, quick wins
-- Q3-Q4: Supplier consolidation, risk framework
+- Q1-Q2 → Control tower, quick wins
+- Q3-Q4 → Supplier consolidation, risk framework
 - Investment: $8M
 - Savings: $20M
 - Service: 92% → 94%
 
 **Year 2: Optimize & Scale**
-- Q1-Q2: Network redesign, Mexico facility
-- Q3-Q4: AI/ML deployment, sustainability
+- Q1-Q2 → Network redesign, Mexico facility
+- Q3-Q4 → AI/ML deployment, sustainability
 - Investment: $7M
 - Savings: $35M
 - Service: 94% → 96%
 
 **Year 3: Innovate & Lead**
-- Q1-Q2: Digital twin, advanced analytics
-- Q3-Q4: Circular economy, new models
+- Q1-Q2 → Digital twin, advanced analytics
+- Q3-Q4 → Circular economy, new models
 - Investment: $5M
 - Savings: $45M
 - Service: 96% → 97%

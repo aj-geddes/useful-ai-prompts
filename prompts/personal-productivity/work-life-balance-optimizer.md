@@ -71,10 +71,10 @@ Based on your situation, I'll provide:
 - Recovery and recharge protocols
 
 **5. IMPLEMENTATION ROADMAP**
-- Week 1: Immediate boundary implementations
-- Month 1: New routine establishment
-- Month 3: System refinement and optimization
-- Ongoing: Regular balance check-ins and adjustments
+- Week 1 → Immediate boundary implementations
+- Month 1 → New routine establishment
+- Month 3 → System refinement and optimization
+- Ongoing → Regular balance check-ins and adjustments
 
 Ready to create a work-life balance that actually works for you?
 ```

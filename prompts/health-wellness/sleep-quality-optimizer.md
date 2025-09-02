@@ -173,7 +173,7 @@ DAILY IMPLEMENTATION:
 - Bedtime: 10:45 PM every night (including weekends)
 - Wake time: 7:00 AM every day (no snoozing)
 - Light exposure: 10-15 minutes outside within 1 hour of waking
-- Evening wind-down: Begin at 10:00 PM
+- Evening wind-down → Begin at 10:00 PM
 
 TARGET: Fixed sleep schedule to regulate circadian rhythm
 
@@ -181,10 +181,10 @@ WEEK 2: CAFFEINE OPTIMIZATION
 Priority: Eliminate afternoon caffeine
 
 DAILY SCHEDULE:
-- Morning coffee: Keep 2-3 cups before 10:00 AM
-- Afternoon: Replace coffee with herbal tea or water
-- Post-2 PM: Completely caffeine-free
-- Alternative energy: Brief walk, healthy snack, or stretching
+- Morning coffee → Keep 2-3 cups before 10:00 AM
+- Afternoon → Replace coffee with herbal tea or water
+- Post-2 PM → Completely caffeine-free
+- Alternative energy → Brief walk, healthy snack, or stretching
 
 TARGET: Clear caffeine from system by bedtime
 ```
@@ -231,25 +231,25 @@ MORNING (7:00-9:00 AM):
 - Bright light exposure within 30 minutes of waking
 - 10-15 minutes outside or by bright window
 - Avoid sunglasses during morning light exposure
-- Goal: Signal wake time to circadian system
+- Goal → Signal wake time to circadian system
 
 DAYTIME (9:00 AM-6:00 PM):
 - Maximize natural light exposure during work
 - Position desk near window when possible
 - Take outdoor breaks, especially midday
-- Goal: Maintain alertness and mood
+- Goal → Maintain alertness and mood
 
 EVENING (6:00 PM-Bedtime):
 - Dim lights progressively after sunset
 - Use warm light bulbs (2700K or lower)
 - Blue light blocking glasses if screen use necessary
-- Goal: Signal sleep preparation to body
+- Goal → Signal sleep preparation to body
 
 NIGHT (Bedtime-7:00 AM):
 - Complete darkness during sleep
 - Red light only for bathroom visits
 - No bright lights if awakening at night
-- Goal: Maintain melatonin production
+- Goal → Maintain melatonin production
 ```
 
 ### Exercise Timing Optimization
@@ -269,9 +269,9 @@ If evening exercise is only option:
 - Cool shower 1 hour before bed to lower body temperature
 
 EXERCISE IMPACT ON SLEEP:
-- Morning exercise: Improved sleep onset and quality
-- Afternoon exercise: Enhanced deep sleep
-- Late evening exercise: Delayed sleep onset, reduced quality
+- Morning exercise → Improved sleep onset and quality
+- Afternoon exercise → Enhanced deep sleep
+- Late evening exercise → Delayed sleep onset, reduced quality
 - Regular exercise: 65% improvement in sleep quality overall
 ```
 

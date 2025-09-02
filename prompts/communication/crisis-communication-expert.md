@@ -4,6 +4,7 @@
 - **Category**: Communication/Crisis Management
 - **Created**: 2025-01-15
 - **Tags**: crisis-response, public-relations, stakeholder-communication, damage-control
+- **Use Cases**: crisis communication, emergency response, reputation management, stakeholder messaging
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21
 

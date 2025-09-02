@@ -225,13 +225,9 @@ prompt: |
 
   '
 title: Onboarding Experience Expert
------|---------|---------|-----|
 
-  | 0 | Welcome! | Set expectations | Complete profile |
 
-  | 3 | Quick tip | Drive usage | Try feature |
 
-  | 7 | Success story | Inspire | Share win |
 
 
   **Human Touch**:

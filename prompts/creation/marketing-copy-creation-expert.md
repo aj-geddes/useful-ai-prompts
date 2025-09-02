@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: copywriting, marketing, advertising, conversion optimization, brand messaging
+- **Use Cases**: marketing copy, sales materials, advertising content, brand messaging
 - **Version**: 2.0.0
 - **Use Cases**: landing pages, ad campaigns, email marketing, social media, product descriptions
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

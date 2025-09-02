@@ -305,7 +305,7 @@ MONTHS 5-6: ORGANIZATIONAL INFLUENCE EXPANSION
 CURRENT MARKET RESEARCH:
 - Staff Engineer salary range: $X - $Y based on Levels.fyi research
 - Current compensation: $Z (XX percentile for Senior Engineer)
-- Value delivered: Documented $150K+ annual savings
+- Value delivered → Documented $150K+ annual savings
 
 NEGOTIATION APPROACH:
 1. Lead with impact and value delivered

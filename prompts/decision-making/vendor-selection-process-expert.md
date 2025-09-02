@@ -91,10 +91,10 @@ Based on your needs, I'll create:
 
 ### Implementation Timeline
 **Vendor A (Recommended):**
-- Week 1-2: Contract negotiation
-- Week 3-4: Kickoff and planning
-- Month 2-3: Implementation
-- Month 4: Go-live and support
+- Week 1-2 → Contract negotiation
+- Week 3-4 → Kickoff and planning
+- Month 2-3 → Implementation
+- Month 4 → Go-live and support
 
 ### Negotiation Points
 1. **Pricing**: Target 10-15% discount on list

@@ -99,7 +99,7 @@ Small Team Focus
 **Key Insights:**
 - You occupy a unique position: creative-specialized for mid-size teams
 - Monday and Asana moving into your space with new features
-- Opportunity: Marketing agencies (adjacent to your design strength)
+- Opportunity → Marketing agencies (adjacent to your design strength)
 
 ## COMPETITOR PROFILES
 

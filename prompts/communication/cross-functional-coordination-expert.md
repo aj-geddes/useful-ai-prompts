@@ -4,6 +4,7 @@
 - **Category**: Communication/Collaboration
 - **Created**: 2025-01-15
 - **Tags**: cross-functional, team-coordination, silos, collaboration, matrix-management
+- **Use Cases**: cross-functional collaboration, team coordination, project alignment, process improvement
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21
 

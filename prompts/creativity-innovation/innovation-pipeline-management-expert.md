@@ -66,28 +66,28 @@ Excellent! Based on your situation, I'll create a structured innovation manageme
 **STAGE-GATE FRAMEWORK**
 
 **Stage 0: Discovery (1-2 months)**
-- Activities: Market research, customer interviews, competitive analysis
-- Gate criteria: Clear problem definition, market size >$10M, strategic fit
-- Deliverables: Opportunity brief, initial business case
+- Activities → Market research, customer interviews, competitive analysis
+- Gate criteria → Clear problem definition, market size >$10M, strategic fit
+- Deliverables → Opportunity brief, initial business case
 - Resources: 1-2 team members part-time
 
 **Stage 1: Concept (2-3 months)**
-- Activities: Solution design, user validation, technical feasibility
-- Gate criteria: Customer validation (>70% positive), technical feasibility confirmed
-- Deliverables: Product concept, mockups, validation data
+- Activities → Solution design, user validation, technical feasibility
+- Gate criteria → Customer validation (>70% positive), technical feasibility confirmed
+- Deliverables → Product concept, mockups, validation data
 - Resources: 2-3 team members, $50K budget
 
 **Stage 2: Development (3-6 months)**
-- Activities: Build MVP, alpha testing, iterate based on feedback
-- Gate criteria: Working prototype, positive alpha feedback, refined business case
-- Deliverables: MVP, test results, go-to-market plan
+- Activities → Build MVP, alpha testing, iterate based on feedback
+- Gate criteria → Working prototype, positive alpha feedback, refined business case
+- Deliverables → MVP, test results, go-to-market plan
 - Resources: 3-5 developers, $200-500K budget
 
 **Stage 3: Launch (1-2 months)**
-- Activities: Beta release, marketing preparation, support documentation
-- Gate criteria: Quality metrics met, launch plan approved, support ready
-- Deliverables: Production-ready feature, launch materials
-- Resources: Full team involvement
+- Activities → Beta release, marketing preparation, support documentation
+- Gate criteria → Quality metrics met, launch plan approved, support ready
+- Deliverables → Production-ready feature, launch materials
+- Resources → Full team involvement
 
 **PORTFOLIO BALANCE RECOMMENDATIONS**
 

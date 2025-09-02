@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: quality improvement, quality control, continuous improvement, defect reduction, six sigma
+- **Use Cases**: quality improvement, continuous improvement, process enhancement, quality assurance
 - **Version**: 2.0.0
 - **Use Cases**: quality issues, defect reduction, process improvement, standards implementation, quality systems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

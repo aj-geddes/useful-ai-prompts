@@ -121,17 +121,17 @@ Based on your e-commerce CX challenges, here's your transformation roadmap to ac
 **1. Technology Upgrade**
 ```
 Recommended Stack (within $200K budget):
-- Help Desk: Zendesk Suite ($50K/year)
+- Help Desk → Zendesk Suite ($50K/year)
   - Unified inbox for all channels
   - Automation and macros
   - Reporting and analytics
   
-- Chat/Chatbot: Intercom ($30K/year)
+- Chat/Chatbot → Intercom ($30K/year)
   - AI-powered chatbot for tier 1
   - Live chat with canned responses
   - Proactive messaging
   
-- Knowledge Base: Built into Zendesk
+- Knowledge Base → Built into Zendesk
   - Self-service portal
   - Community forums
   - AI-powered search
@@ -223,10 +223,10 @@ CX Manager (1)
 - Team Contribution (20%)
 
 **Team Metrics:**
-- CSAT: Target 85%+
-- First Contact Resolution: Target 75%+
+- CSAT → Target 85%+
+- First Contact Resolution → Target 75%+
 - Average Response Time: <12 hours email, <2 min chat
-- Self-Service Adoption: Target 30%+
+- Self-Service Adoption → Target 30%+
 
 ## TECHNOLOGY STRATEGY
 
@@ -279,20 +279,20 @@ CX Manager (1)
 **Customer Metrics:**
 - CSAT: 78% → 85% (target)
 - NPS: 22 → 35 (target)
-- Customer Effort Score: Establish baseline → <3.0
+- Customer Effort Score → Establish baseline → <3.0
 - Resolution Rate: 68% → 75%
 
 **Operational Metrics:**
 - Email Response: 48hr → 12hr
-- Chat Response: Establish → <2 min
+- Chat Response → Establish → <2 min
 - Self-Service: 0% → 30%
 - Cost per Contact: $6 → $4
 
 **Team Metrics:**
-- Agent Satisfaction: Measure → 80%+
+- Agent Satisfaction → Measure → 80%+
 - Productivity: 600 → 400 tickets/agent/month
-- Quality Score: Establish → 90%+
-- Turnover: Track → <20% annually
+- Quality Score → Establish → 90%+
+- Turnover → Track → <20% annually
 
 ### ROI Projection
 

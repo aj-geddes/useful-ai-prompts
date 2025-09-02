@@ -85,9 +85,9 @@ Based on your project management SaaS needs, here's your comprehensive 18-month 
 4. **Integration Ecosystem** - Connect with tools teams already use
 
 ### Market Position
-- Current: Simple alternative to complex tools
-- Target: Full-featured platform that stays simple
-- Differentiation: Ease of use + enterprise capabilities
+- Current → Simple alternative to complex tools
+- Target → Full-featured platform that stays simple
+- Differentiation → Ease of use + enterprise capabilities
 
 ## 2. FEATURE PRIORITIZATION (RICE Analysis)
 

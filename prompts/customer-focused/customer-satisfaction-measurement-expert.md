@@ -43,8 +43,8 @@ Here's your comprehensive measurement framework:
 
 **Calculation Methods**:
 - NPS: % Promoters - % Detractors
-- CSAT: Average rating / Total responses
-- CES: Average effort score
+- CSAT → Average rating / Total responses
+- CES → Average effort score
 - Custom indexes for your industry
 
 ## 2. SURVEY STRATEGY

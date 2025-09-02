@@ -1,22 +1,16 @@
----
-category: technical-workflows
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining AI Quality Engineer and Manufacturing Quality
-  Manager expertise for Quality Control AI workflows
-slug: ai-powered-quality-control-expert
-tags:
-- technical workflows
-- quality control ai
-title: AI-Powered Quality Control Expert
-use_cases:
-- Quality Control AI optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# AI-Powered Quality Control Expert
+
+## Metadata
+- **Category**: Technical Workflows
+- **Tags**: technical workflows, quality control ai
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Quality Control AI optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining AI Quality Engineer and Manufacturing Quality Manager expertise for Quality Control AI workflows
+
 
 # AI-Powered Quality Control Expert
 

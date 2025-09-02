@@ -1,5 +1,5 @@
 ---
-category: health-wellness
+category: healthcare-digital
 compatible_models:
 - claude-3.5-sonnet
 - gpt-4

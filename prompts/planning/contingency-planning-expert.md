@@ -80,41 +80,41 @@ Based on your automotive parts manufacturing operations, here's your comprehensi
 **Critical Risks (High Impact, High Probability):**
 
 **1. Equipment Failure**
-- Probability: High (based on last year's incident)
+- Probability → High (based on last year's incident)
 - Impact: $500K/day production loss
-- Current vulnerability: Limited spare parts, aging equipment
+- Current vulnerability → Limited spare parts, aging equipment
 - Risk score: 9/10
 
 **2. Supply Chain Disruption**
-- Probability: Medium-High (global supply issues)
-- Impact: Production stoppage within 5 days
-- Current vulnerability: Single suppliers for key materials
+- Probability → Medium-High (global supply issues)
+- Impact → Production stoppage within 5 days
+- Current vulnerability → Single suppliers for key materials
 - Risk score: 8/10
 
 **3. Cyber Attack**
-- Probability: Medium (increasing industry targeting)
-- Impact: System shutdown, data loss, ransom
-- Current vulnerability: Basic IT security only
+- Probability → Medium (increasing industry targeting)
+- Impact → System shutdown, data loss, ransom
+- Current vulnerability → Basic IT security only
 - Risk score: 7/10
 
 **4. Severe Weather**
-- Probability: Medium (seasonal exposure)
-- Impact: Facility damage, power loss, access issues
-- Current vulnerability: No backup power at main plant
+- Probability → Medium (seasonal exposure)
+- Impact → Facility damage, power loss, access issues
+- Current vulnerability → No backup power at main plant
 - Risk score: 6/10
 
 ### Business Impact Analysis
 
 **Production Line Failure:**
 - Revenue loss: $500K/day
-- Customer impact: Late deliveries, contract penalties
+- Customer impact → Late deliveries, contract penalties
 - Recovery time: 24-72 hours depending on failure
-- Cascading effects: Warehouse backup, quality delays
+- Cascading effects → Warehouse backup, quality delays
 
 **IT System Failure:**
 - Order processing stops: $200K/day impact
-- Manufacturing disruption: Can run manually for 8 hours
-- Data loss risk: Customer orders, quality records
+- Manufacturing disruption → Can run manually for 8 hours
+- Data loss risk → Customer orders, quality records
 - Recovery time: 4-24 hours
 
 ## 2. RESPONSE STRATEGIES
@@ -122,24 +122,24 @@ Based on your automotive parts manufacturing operations, here's your comprehensi
 ### Tiered Response Framework
 
 **Level 1: Minor Disruption (Single system/area)**
-- Trigger: Localized issue, <4 hour impact
-- Response Lead: Department Manager
-- Actions: Fix issue, notify Operations Director
-- Communication: Internal only
+- Trigger → Localized issue, <4 hour impact
+- Response Lead → Department Manager
+- Actions → Fix issue, notify Operations Director
+- Communication → Internal only
 
 **Level 2: Major Disruption (Multiple systems/departments)**
 - Trigger: >4 hour impact or $100K+ loss
-- Response Lead: Operations Director
-- Team: Department heads, IT, HR
-- Actions: Activate backup procedures
-- Communication: Notify customers if delays expected
+- Response Lead → Operations Director
+- Team → Department heads, IT, HR
+- Actions → Activate backup procedures
+- Communication → Notify customers if delays expected
 
 **Level 3: Crisis (Facility-wide or multi-day)**
 - Trigger: >24 hour shutdown or $500K+ impact
-- Response Lead: CEO/President
-- Team: Full leadership + external support
-- Actions: Full contingency activation
-- Communication: All stakeholders, media if needed
+- Response Lead → CEO/President
+- Team → Full leadership + external support
+- Actions → Full contingency activation
+- Communication → All stakeholders, media if needed
 
 ### Scenario-Specific Response Plans
 
@@ -225,7 +225,7 @@ Based on your automotive parts manufacturing operations, here's your comprehensi
 
 **Inventory Strategy:**
 - Critical parts: 2-week supply minimum
-- High-value items: Just-in-time with backup
+- High-value items → Just-in-time with backup
 - Common items: 1-month buffer
 - Review levels quarterly
 
@@ -267,10 +267,10 @@ Based on your automotive parts manufacturing operations, here's your comprehensi
 5. Administrative systems (24 hours)
 
 **Data Recovery Procedures:**
-- Backup verification: Test monthly
+- Backup verification → Test monthly
 - Recovery point objective: 1 hour max data loss
 - Recovery time objective: 4 hours for critical systems
-- Alternative processing: Manual procedures ready
+- Alternative processing → Manual procedures ready
 
 ## 5. TESTING FRAMEWORK
 

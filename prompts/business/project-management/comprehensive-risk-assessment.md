@@ -250,10 +250,10 @@ Risk Health Indicators:
 ### Governance Structure
 
 **Risk Review Cadence**:
-- Daily: Development team standup (technical risks)
-- Weekly: Project team meeting (all risks)
-- Bi-weekly: Stakeholder committee (top 10 risks)
-- Monthly: Executive briefing (critical risks)
+- Daily → Development team standup (technical risks)
+- Weekly → Project team meeting (all risks)
+- Bi-weekly → Stakeholder committee (top 10 risks)
+- Monthly → Executive briefing (critical risks)
 
 **Risk Register Updates**:
 ```
@@ -300,11 +300,11 @@ Allocated:
 ### Communication Plan
 
 **Stakeholder Updates**:
-- CEO: Monthly executive summary
-- CFO: Bi-weekly budget risk report
-- Compliance: Weekly regulatory update
-- Team: Daily risk visibility in standups
-- PMO: Weekly risk register submission
+- CEO → Monthly executive summary
+- CFO → Bi-weekly budget risk report
+- Compliance → Weekly regulatory update
+- Team → Daily risk visibility in standups
+- PMO → Weekly risk register submission
 
 This comprehensive risk management approach will help you navigate challenges while maintaining project momentum. The key is consistent monitoring and proactive mitigation.
 

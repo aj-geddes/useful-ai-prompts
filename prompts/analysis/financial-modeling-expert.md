@@ -108,7 +108,7 @@ Net Income      4.1     7.8     12.8    19.1    26.6
 
 **Key Assumptions:**
 - Margin expansion: 15% → 32% EBITDA (scale benefits)
-- Sales efficiency improves: CAC payback 14 → 10 months
+- Sales efficiency improves → CAC payback 14 → 10 months
 - Churn remains low: 5% annually
 - No debt needed (self-funding growth)
 
@@ -203,7 +203,7 @@ WACC        2%      3%      4%      5%
 
 **Deal Structure Suggestion:**
 - Base price: $425M (8.5x)
-- Performance earnout: Up to $50M based on 2025 targets
+- Performance earnout → Up to $50M based on 2025 targets
 - Management retention: 3-year vesting for key personnel
 - Escrow: 10% for 18 months (reps & warranties)
 

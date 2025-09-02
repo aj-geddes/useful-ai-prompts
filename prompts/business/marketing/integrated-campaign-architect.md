@@ -108,15 +108,15 @@ Tech Companies:
 ### Central Campaign Creative
 
 **Hero Video (90 seconds)**:
-- Open: Split screen - chaotic Slack/email vs. calm dashboard
-- Middle: AI highlights preventing a crisis
-- Close: Team celebrating shipped project
+- Open → Split screen - chaotic Slack/email vs. calm dashboard
+- Middle → AI highlights preventing a crisis
+- Close → Team celebrating shipped project
 - CTA: "See your future workflow"
 
 **Visual Identity**:
-- Color: Gradient from stressed red to calm blue
-- Icons: Brain + checkmark motif
-- Photography: Real teams, authentic moments
+- Color → Gradient from stressed red to calm blue
+- Icons → Brain + checkmark motif
+- Photography → Real teams, authentic moments
 
 ### Content Themes
 
@@ -143,9 +143,9 @@ Tech Companies:
 **Organic Strategy**:
 ```
 CEO Thought Leadership (3x/week):
-- Day 1: Industry insight post
-- Day 3: Product philosophy
-- Day 5: Customer story
+- Day 1 → Industry insight post
+- Day 3 → Product philosophy
+- Day 5 → Customer story
 
 Employee Advocacy:
 - 20 posts/week from team
@@ -174,7 +174,7 @@ Day 14: "Last chance for launch pricing"
 **Segmented Nurture Tracks**:
 - Demo requesters: 5-email trial sequence
 - Webinar attendees: 3-email follow-up
-- Engaged non-converters: Problem/solution series
+- Engaged non-converters → Problem/solution series
 
 ### Content Marketing & SEO (20% - $20K)
 
@@ -198,8 +198,8 @@ Day 14: "Last chance for launch pricing"
 - Exclusive offer for attendees
 
 **Weekly Demo Series**:
-- Tuesday: Basic demo (30 min)
-- Thursday: Advanced features (45 min)
+- Tuesday → Basic demo (30 min)
+- Thursday → Advanced features (45 min)
 - Partner webinars with complementary tools
 
 ### Google Ads (15% - $15K)

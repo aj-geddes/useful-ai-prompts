@@ -1,5 +1,5 @@
 ---
-category: government
+category: government-digital
 compatible_models:
 - claude-3.5-sonnet
 - gpt-4

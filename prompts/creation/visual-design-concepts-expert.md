@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: visual design, creative concepts, art direction, brand aesthetics, design systems
+- **Use Cases**: visual design concepts, creative design, brand design, graphic design
 - **Version**: 2.0.0
 - **Use Cases**: brand identity, marketing campaigns, product design, environmental design, digital experiences
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -128,18 +129,18 @@ Craft Coffee Roasters
 
 **Roast Brown** (#3E2723)
 - Deep, rich espresso brown
-- Use: Logo, headlines, primary text
-- Represents: Craft, quality, depth
+- Use → Logo, headlines, primary text
+- Represents → Craft, quality, depth
 
 **Cream** (#F5E6D3)
 - Warm, inviting neutral
-- Use: Backgrounds, packaging base
-- Represents: Warmth, comfort, approachability
+- Use → Backgrounds, packaging base
+- Represents → Warmth, comfort, approachability
 
 **Copper** (#B87333)
 - Metallic accent inspired by roasting drums
-- Use: Accents, highlights, premium touches
-- Represents: Craft process, warmth, sophistication
+- Use → Accents, highlights, premium touches
+- Represents → Craft process, warmth, sophistication
 
 **Secondary Palette:**
 
@@ -376,7 +377,7 @@ Order Ahead Feature:
 - Test all combinations
 
 **Typography Rules:**
-- Headlines: Always Moderat
+- Headlines → Always Moderat
 - Never stretch type
 - Maintain hierarchy
 - Watch line lengths
@@ -439,10 +440,10 @@ Lets the coffee be the hero and creates calm, uncluttered feeling that encourage
 ### Brand Extensions
 
 **Seasonal Campaigns:**
-- Spring: New origin launches
-- Summer: Cold brew focus
-- Fall: Cozy café culture
-- Winter: Gift sets and warmth
+- Spring → New origin launches
+- Summer → Cold brew focus
+- Fall → Cozy café culture
+- Winter → Gift sets and warmth
 
 **Limited Editions:**
 - Special roast packaging

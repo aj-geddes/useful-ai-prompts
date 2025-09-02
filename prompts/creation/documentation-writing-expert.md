@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: technical writing, documentation, API docs, user guides, knowledge management
+- **Use Cases**: technical documentation, user manuals, process documentation, knowledge management
 - **Version**: 2.0.0
 - **Use Cases**: API documentation, user manuals, developer guides, system documentation, process documentation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

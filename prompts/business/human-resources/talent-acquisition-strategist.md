@@ -258,10 +258,10 @@ Decision Factors:
 ### CANDIDATE EXPERIENCE OPTIMIZATION
 
 **Response Time SLAs:**
-- Application → First response: 48 hours
-- Post-interview → Next steps: 24 hours
-- Final interview → Decision: 48 hours
-- Offer made → Expiration: 1 week
+- Application → First response → 48 hours
+- Post-interview → Next steps → 24 hours
+- Final interview → Decision → 48 hours
+- Offer made → Expiration → 1 week
 
 **Communication Templates:**
 
@@ -318,16 +318,16 @@ Sincerely,
 ### SUCCESS METRICS
 
 **Quality Indicators:**
-- Offer acceptance rate: Target 80%+
-- 90-day retention: Target 95%+
-- Performance rating after 6 months: Target 4+/5
-- Hiring manager satisfaction: Target 90%+
+- Offer acceptance rate → Target 80%+
+- 90-day retention → Target 95%+
+- Performance rating after 6 months → Target 4+/5
+- Hiring manager satisfaction → Target 90%+
 
 **Efficiency Metrics:**
-- Time to fill: Target <60 days
-- Cost per hire: Target <$5K
-- Interview-to-offer ratio: Target 4:1
-- Candidate NPS: Target 50+
+- Time to fill → Target <60 days
+- Cost per hire → Target <$5K
+- Interview-to-offer ratio → Target 4:1
+- Candidate NPS → Target 50+
 
 ### 90-DAY HIRING TIMELINE
 

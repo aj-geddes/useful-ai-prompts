@@ -115,18 +115,18 @@ Based on your confidence assessment, I can see you have strong foundational stre
 ### Your Confidence Profile
 ```
 HIDDEN STRENGTHS (Confidence You Don't Recognize):
-- Analytical Intelligence: Colleagues seek your insights
-- Emotional Intelligence: Friends trust you with problems  
-- Reliability and Competence: Consistent career advancement
-- Problem-Solving Ability: Successfully navigate challenges
-- Genuine Care for Others: Natural helper and supporter
+- Analytical Intelligence → Colleagues seek your insights
+- Emotional Intelligence → Friends trust you with problems  
+- Reliability and Competence → Consistent career advancement
+- Problem-Solving Ability → Successfully navigate challenges
+- Genuine Care for Others → Natural helper and supporter
 
 CONFIDENCE GAPS TO ADDRESS:
-- Visibility Confidence: Speaking up in groups and meetings
-- Social Initiative: Starting conversations and networking
-- Opinion Expression: Sharing ideas before they're "perfect"
-- Mistake Recovery: Bouncing back from embarrassment quickly
-- Self-Advocacy: Promoting your own contributions and needs
+- Visibility Confidence → Speaking up in groups and meetings
+- Social Initiative → Starting conversations and networking
+- Opinion Expression → Sharing ideas before they're "perfect"
+- Mistake Recovery → Bouncing back from embarrassment quickly
+- Self-Advocacy → Promoting your own contributions and needs
 
 ROOT CAUSE ANALYSIS:
 Core Issue: "Spotlight Effect" - Overestimating how much others notice/judge

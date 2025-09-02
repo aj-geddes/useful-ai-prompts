@@ -266,27 +266,27 @@ Create an immersive hybrid experience that celebrates customer success while sho
 ### Key Vendor Partners
 
 **Venue: Chicago Convention Center**
-- Contact: Sarah Johnson, Events Director
+- Contact → Sarah Johnson, Events Director
 - Contract value: $40,000
-- Key deliverables: Space, basic AV, WiFi, security
+- Key deliverables → Space, basic AV, WiFi, security
 - Payment terms: 50% deposit, balance 30 days post-event
 
 **Catering: Taste of Chicago Catering**
-- Contact: Michael Chen, Sales Manager
+- Contact → Michael Chen, Sales Manager
 - Contract value: $60,000
-- Key deliverables: All F&B, service staff, sustainable options
+- Key deliverables → All F&B, service staff, sustainable options
 - Special requirements: 10% vegetarian, 5% vegan, allergy accommodations
 
 **AV Production: TechPro Events**
-- Contact: David Kim, Production Manager
+- Contact → David Kim, Production Manager
 - Contract value: $35,000
-- Key deliverables: Sound, lighting, video, streaming
+- Key deliverables → Sound, lighting, video, streaming
 - Technical requirements: 4K recording, multi-camera setup
 
 **Virtual Platform: EventHub Pro**
-- Contact: Lisa Martinez, Account Manager
+- Contact → Lisa Martinez, Account Manager
 - Contract value: $20,000
-- Key deliverables: Streaming, networking, analytics
+- Key deliverables → Streaming, networking, analytics
 - Support: 24/7 during event
 
 ### Vendor Coordination Plan
@@ -307,7 +307,7 @@ Create an immersive hybrid experience that celebrates customer success while sho
 - Venue: 50% upon signing, 50% net 30
 - Catering: 25% deposit, 75% day of event
 - AV: 50% deposit, 50% upon completion
-- Platform: Monthly subscription
+- Platform → Monthly subscription
 
 ## 5. EXECUTION GUIDE
 

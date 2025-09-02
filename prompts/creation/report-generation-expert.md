@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: report generation, business reporting, data visualization, executive communication, analytics reporting
+- **Use Cases**: report generation, business reports, data analysis, research documentation
 - **Version**: 2.0.0
 - **Use Cases**: executive reports, analytical reports, performance reports, compliance reports, research reports
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -195,9 +196,9 @@ Churn Root Causes:
 3. Compensation competitiveness
 
 **Response Plan:**
-- January: CEO town hall
-- February: New career framework
-- March: Market compensation adjustment ($8.5M)
+- January → CEO town hall
+- February → New career framework
+- March → Market compensation adjustment ($8.5M)
 
 ---
 
@@ -226,7 +227,7 @@ Projected annual benefit: $45M
 **New Market Performance**
 - Germany: €12.3M (123% of plan) 🟢
 - Japan: ¥890M (89% of plan) 🟡
-- Brazil: R$34.5M (156% of plan) 🟢
+- Brazil → R$34.5M (156% of plan) 🟢
 
 ---
 
@@ -270,7 +271,7 @@ Others: 15.1%            ███░░░░░░░ Stable
 - $4.2M retention investment
 - Executive sponsor program
 - Service level guarantees
-- Expected impact: Save 85% of at-risk accounts
+- Expected impact → Save 85% of at-risk accounts
 
 ---
 
@@ -296,7 +297,7 @@ Others: 15.1%            ███░░░░░░░ Stable
 **3. Innovation Acceleration**
 - Target: 3 new products
 - R&D: 15% of revenue
-- Focus: AI and automation
+- Focus → AI and automation
 
 ### Board Actions Requested
 

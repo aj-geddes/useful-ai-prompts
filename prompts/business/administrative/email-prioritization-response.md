@@ -81,19 +81,19 @@ Based on your role as VP of Marketing with a board presentation tomorrow, here's
 ## IMMEDIATE ACTIONS (Next 10 minutes)
 
 **1. CEO's presentation question** 
-- Priority: CRITICAL
+- Priority → CRITICAL
 - Draft: "Hi [CEO], reviewing your question now. Will have detailed response within 30 minutes. Quick preview: [brief answer]. Full details coming shortly."
-- Action: Send now, set reminder to follow up
+- Action → Send now, set reminder to follow up
 
 **2. CFO budget response**
-- Priority: HIGH
+- Priority → HIGH
 - Draft: "Thanks for reviewing the Q4 proposal. I see your concerns about [specific point]. Can we discuss after tomorrow's board meeting? I'll incorporate this into my presentation. Available Wed/Thu afternoon."
-- Action: Send now
+- Action → Send now
 
 **3. Team member personal matter**
-- Priority: HIGH (people first)
+- Priority → HIGH (people first)
 - Draft: "Thanks for reaching out. This sounds important. I have 15 minutes at 11:30 AM or can meet end of day. What works better for you? If urgent, please call my cell."
-- Action: Send now
+- Action → Send now
 
 ## DELEGATE IMMEDIATELY (5 minutes)
 
@@ -115,9 +115,9 @@ Forward to appropriate managers:
 - 7 internal updates: "Noted, thanks for keeping me informed."
 
 **Detailed responses (5 min each):**
-- Board presentation feedback: Address specific concerns
-- Team restructuring question: Provide clarity on timeline
-- Campaign creative approval: Give specific feedback
+- Board presentation feedback → Address specific concerns
+- Team restructuring question → Provide clarity on timeline
+- Campaign creative approval → Give specific feedback
 
 ## STRATEGIC INSIGHTS IDENTIFIED
 

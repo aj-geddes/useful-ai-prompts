@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: technical specifications, requirements engineering, system design, documentation, standards
+- **Use Cases**: specification writing, technical requirements, system specifications, project requirements
 - **Version**: 2.0.0
 - **Use Cases**: software specifications, API specs, hardware requirements, system architecture, technical standards
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

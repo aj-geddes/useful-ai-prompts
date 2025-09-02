@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: process optimization, efficiency, workflow improvement, lean, operational excellence
+- **Use Cases**: process optimization, workflow improvement, efficiency enhancement, operational excellence
 - **Version**: 2.0.0
 - **Use Cases**: workflow optimization, efficiency improvement, bottleneck removal, process redesign, automation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -55,9 +55,9 @@ Based on your needs, I'll create:
 ## 2. INTERVENTION PLAYBOOKS
 **Critical Risk Response** (24-48 hours):
 - Trigger: [Specific criteria]
-- Action: Personal call from success manager
-- Offer: Service credit or consultation
-- Follow-up: Daily until stabilized
+- Action → Personal call from success manager
+- Offer → Service credit or consultation
+- Follow-up → Daily until stabilized
 
 **Proactive Engagement**:
 - Monthly business reviews

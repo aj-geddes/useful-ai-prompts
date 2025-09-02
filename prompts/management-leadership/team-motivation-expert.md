@@ -7,6 +7,7 @@
 - **Use Cases**: team motivation strategies, employee engagement, morale improvement, productivity enhancement
 - **Version**: 1.0.0
 - **Last Updated**: 2025-01-21
+- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
 
 ## Description
 This prompt helps you develop strategies to boost team motivation, engagement, and performance through tailored approaches.

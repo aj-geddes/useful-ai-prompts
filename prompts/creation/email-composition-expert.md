@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: email writing, business communication, persuasion, relationship building, professional writing
+- **Use Cases**: email composition, professional communication, messaging optimization, outreach campaigns
 - **Version**: 2.0.0
 - **Use Cases**: sales emails, executive communications, customer service, internal communications, marketing emails
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -186,20 +187,20 @@ Wishing you success with the Series B growth!
 
 ### Mobile Formatting:
 - Subject line: 42 characters (perfect for mobile preview)
-- Email body: Short paragraphs (2-3 lines max)
+- Email body → Short paragraphs (2-3 lines max)
 - Single call-to-action
 - Readable without horizontal scrolling
 
 ### Timing Recommendations:
-- Best send times: Tuesday-Thursday, 10 AM - 2 PM (recipient's timezone)
-- Avoid: Monday mornings, Friday afternoons, holidays
+- Best send times → Tuesday-Thursday, 10 AM - 2 PM (recipient's timezone)
+- Avoid → Monday mornings, Friday afternoons, holidays
 - Follow-up intervals: 3-4 days, then weekly
 
 ### A/B Test Elements:
-- Subject lines: Question vs. statement
-- Opening: Congratulations vs. direct question
-- Social proof: Company name vs. statistics
-- CTA: Specific times vs. open-ended
+- Subject lines → Question vs. statement
+- Opening → Congratulations vs. direct question
+- Social proof → Company name vs. statistics
+- CTA → Specific times vs. open-ended
 
 ### Red Flags to Avoid:
 - ❌ All caps in subject line

@@ -115,16 +115,16 @@ Based on your communication assessment, I can see you have strong foundational s
 ### Your Communication Profile
 ```
 COMMUNICATION STRENGTHS:
-- Deep Listening: Genuine interest in understanding others
-- Empathy and Support: Natural ability to make others feel heard
-- Technical Clarity: Can explain complex topics effectively
-- Relationship Maintenance: Good at nurturing established connections
+- Deep Listening → Genuine interest in understanding others
+- Empathy and Support → Natural ability to make others feel heard
+- Technical Clarity → Can explain complex topics effectively
+- Relationship Maintenance → Good at nurturing established connections
 
 COMMUNICATION CHALLENGES:
-- Indirect Expression: Hinting instead of clear requests
-- Conflict Avoidance: Withdrawing when disagreement arises
-- Group Participation: Hesitation to contribute in larger settings
-- Emotional Expression: Difficulty articulating feelings and needs
+- Indirect Expression → Hinting instead of clear requests
+- Conflict Avoidance → Withdrawing when disagreement arises
+- Group Participation → Hesitation to contribute in larger settings
+- Emotional Expression → Difficulty articulating feelings and needs
 
 YOUR COMMUNICATION STYLE: "The Thoughtful Supporter"
 - High empathy, low assertiveness
@@ -260,10 +260,10 @@ Getting into Conversations:
 - Share relevant experience: "I've seen something similar when..."
 
 OVERCOMING HESITATION:
-- Use the 3-second rule: Count to 3, then speak
+- Use the 3-second rule → Count to 3, then speak
 - Start with agreement: "I agree with John, and I'd also suggest..."
 - Use bridging phrases: "Building on that idea..." or "From my experience..."
-- Remember: Your perspective has value
+- Remember → Your perspective has value
 ```
 
 ### Managing Group Dynamics

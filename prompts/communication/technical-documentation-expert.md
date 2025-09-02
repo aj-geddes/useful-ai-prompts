@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: technical writing, documentation, API docs, user guides, developer docs
+- **Use Cases**: technical documentation, process documentation, user guides, system documentation
 - **Version**: 2.0.0
 - **Use Cases**: API documentation, user manuals, developer guides, process documentation
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

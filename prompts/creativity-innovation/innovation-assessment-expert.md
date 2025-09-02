@@ -100,12 +100,12 @@ Excellent! Let me evaluate your AI-powered nutrition app across multiple dimensi
 - DNA analysis: ✅ Partner with established lab (23andMe, AncestryDNA)
 - AI meal planning: ✅ Proven technology, need quality training data
 - App development: ✅ Standard mobile development
-- Key Challenge: Building comprehensive meal database with genetic markers
+- Key Challenge → Building comprehensive meal database with genetic markers
 
 **Operational Feasibility:**
-- Team gaps: Need 2 nutrition scientists, 1 regulatory expert ASAP
+- Team gaps → Need 2 nutrition scientists, 1 regulatory expert ASAP
 - Timeline: 12 months realistic with full team
-- Partnership critical: DNA testing partner will make or break this
+- Partnership critical → DNA testing partner will make or break this
 
 **Financial Feasibility:**
 - $2M gets you to launch with 6-month runway
@@ -173,16 +173,16 @@ The innovation has strong market potential and technical feasibility, but succes
    - Tranche 3 ($750K): Launch and scale marketing
 
 **Success Milestones:**
-- Month 3: DNA partner signed, nutrition team hired
+- Month 3 → DNA partner signed, nutrition team hired
 - Month 6: 1,000 beta users, 70%+ monthly retention
-- Month 9: Regulatory clearance, B2B partnerships
-- Month 12: Public launch, 2,000 paying subscribers
+- Month 9 → Regulatory clearance, B2B partnerships
+- Month 12 → Public launch, 2,000 paying subscribers
 
 **OVERALL SCORES**
 - Market Potential: 8/10
 - Technical Feasibility: 7/10  
 - Strategic Fit: 6/10
-- Risk Level: Medium-High
+- Risk Level → Medium-High
 - **Composite Score: 7/10**
 
 **Next Steps:**

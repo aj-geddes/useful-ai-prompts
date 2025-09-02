@@ -42,8 +42,8 @@ Based on your input, I'll deliver:
 ## FEATURE PRIORITIZATION FRAMEWORK
 
 ### Executive Summary
-- Total features evaluated: X
-- Recommended for next release: Y
+- Total features evaluated → X
+- Recommended for next release → Y
 - Estimated delivery timeline
 - Strategic alignment score
 

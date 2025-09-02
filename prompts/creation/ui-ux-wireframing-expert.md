@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: wireframing, UI design, UX design, prototyping, interaction design
+- **Use Cases**: UI/UX wireframing, interface design, user experience design, prototype creation
 - **Version**: 2.0.0
 - **Use Cases**: mobile apps, web applications, software interfaces, design systems, prototypes
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -96,7 +97,7 @@ Onboarding              Voice Input          Add Details
 
 **3. Time Tracking**
 - Task list → Swipe right on task → Timer starts → Work → Tap to stop
-- Interaction: Single gesture
+- Interaction → Single gesture
 
 ## WIREFRAME SCREENS
 
@@ -318,15 +319,15 @@ Haptic feedback
 ### Navigation Patterns
 
 **Tab Bar Behavior:**
-- Home: Dashboard with projects
-- Projects: Full project list  
-- Time: Time tracking view
-- More: Settings, reports, profile
+- Home → Dashboard with projects
+- Projects → Full project list  
+- Time → Time tracking view
+- More → Settings, reports, profile
 
 **Floating Action Button:**
-- Single tap: Quick task
-- Long press: Voice input
-- Drag up: More options
+- Single tap → Quick task
+- Long press → Voice input
+- Drag up → More options
 
 ## COMPONENT LIBRARY
 
@@ -341,10 +342,10 @@ Corner radius: 12px
 Shadow: 0px 2px 8px rgba(0,0,0,0.1)
 
 States:
-- Default: White background
-- Active: Light blue tint
-- Completed: Gray out + strikethrough
-- Overdue: Red left border
+- Default → White background
+- Active → Light blue tint
+- Completed → Gray out + strikethrough
+- Overdue → Red left border
 ```
 
 **Project Card:**
@@ -361,9 +362,9 @@ Tap target: Entire card
 Size: 48x48px
 Icon: 24px
 States:
-- Inactive: Gray outline
-- Active: Filled with primary color
-- Pulsing: Subtle scale animation
+- Inactive → Gray outline
+- Active → Filled with primary color
+- Pulsing → Subtle scale animation
 ```
 
 **Input Fields:**
@@ -452,11 +453,11 @@ Long: 800ms ease-in-out
 ```
 
 **Common Animations:**
-- Page transition: Slide 300ms
-- Modal: Slide up 400ms
-- Success: Scale + fade 300ms
-- Loading: Pulse 1.2s infinite
-- Delete: Slide + fade 350ms
+- Page transition → Slide 300ms
+- Modal → Slide up 400ms
+- Success → Scale + fade 300ms
+- Loading → Pulse 1.2s infinite
+- Delete → Slide + fade 350ms
 
 ### Accessibility Considerations
 

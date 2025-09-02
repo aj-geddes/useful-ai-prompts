@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: customer service, issue resolution, service recovery, complaint handling, customer satisfaction
+- **Use Cases**: customer support, issue resolution, customer satisfaction, service improvement
 - **Version**: 2.0.0
 - **Use Cases**: customer complaints, service failures, escalation management, customer retention, satisfaction recovery
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

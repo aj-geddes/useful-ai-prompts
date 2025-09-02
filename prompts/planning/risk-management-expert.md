@@ -443,14 +443,14 @@ Long-term Resolution (1-12 weeks):
 ### Risk Management Organizational Structure
 
 **Executive Risk Committee** (Monthly meetings)
-- Chair: CEO
-- Members: CTO, COO, Chief Risk Officer, Head of Legal, CFO
-- Responsibilities: Strategic risk decisions, resource allocation, board reporting
+- Chair → CEO
+- Members → CTO, COO, Chief Risk Officer, Head of Legal, CFO
+- Responsibilities → Strategic risk decisions, resource allocation, board reporting
 
 **Operational Risk Team** (Weekly meetings)
-- Chair: Chief Risk Officer (to be hired)
-- Members: Security Manager, Compliance Manager, Operations Manager, Legal Counsel
-- Responsibilities: Day-to-day risk monitoring, incident management, mitigation implementation
+- Chair → Chief Risk Officer (to be hired)
+- Members → Security Manager, Compliance Manager, Operations Manager, Legal Counsel
+- Responsibilities → Day-to-day risk monitoring, incident management, mitigation implementation
 
 **Board Risk Oversight** (Quarterly reporting)
 - Risk dashboard and key metrics reporting

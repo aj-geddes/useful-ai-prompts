@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: resource optimization, constraints, capacity planning, resource allocation, efficiency
+- **Use Cases**: resource optimization, constraint management, cost reduction, efficiency planning
 - **Version**: 2.0.0
 - **Use Cases**: resource shortages, budget constraints, capacity issues, optimization, allocation problems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

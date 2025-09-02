@@ -171,7 +171,7 @@ Total: $800 ✓ (meets target)
 
 Alternative for cost reduction:
 - 5-axis CNC from solid: $950 (higher precision)
-- Hybrid: Cast + minimal machining: $650 (recommended)
+- Hybrid → Cast + minimal machining: $650 (recommended)
 ```
 
 ## RISK ASSESSMENT

@@ -77,7 +77,7 @@ Based on your EGFR resistance-targeting TKI program, here's your development str
 
 **Selectivity Enhancement:**
 - Structure-based design targeting T790M/C797S pocket differences
-- Key assays: WT-EGFR vs mutant panel (including compound mutations)
+- Key assays → WT-EGFR vs mutant panel (including compound mutations)
 - Target: >1000-fold selectivity to minimize skin/GI toxicity
 - Consider covalent vs reversible binding strategies
 
@@ -99,7 +99,7 @@ Based on your EGFR resistance-targeting TKI program, here's your development str
 **CMO Selection:**
 - Need cGMP capability for 5-10kg IND batches
 - Experience with oncology TKIs critical
-- Consider: Cambrex, Lonza, or specialized oncology CMOs
+- Consider → Cambrex, Lonza, or specialized oncology CMOs
 
 ## CLINICAL TRIAL DESIGN
 
@@ -117,8 +117,8 @@ Design: 3+3 dose escalation with expansion cohorts
 Population: EGFR-mutant NSCLC with T790M/C797S
 Starting dose: 1/10th of STD10 (most sensitive species)
 Endpoints:
-- Primary: Safety, tolerability, MTD/RP2D
-- Secondary: PK, preliminary efficacy (ORR)
+- Primary → Safety, tolerability, MTD/RP2D
+- Secondary → PK, preliminary efficacy (ORR)
 - Exploratory: ctDNA dynamics, resistance mechanisms
 
 Expansion cohorts (n=20 each):
@@ -144,25 +144,25 @@ Expansion cohorts (n=20 each):
 ### Technical Risks & Mitigation
 
 **Risk 1: Selectivity challenges**
-- Mitigation: Structure-based design with multiple chemotypes
-- Backup: Develop 2-3 structurally distinct leads
+- Mitigation → Structure-based design with multiple chemotypes
+- Backup → Develop 2-3 structurally distinct leads
 
 **Risk 2: CNS metastases coverage**
-- Mitigation: Optimize LogP and efflux transporter profile
+- Mitigation → Optimize LogP and efflux transporter profile
 - Consider CNS-penetrant backup compound
 
 **Risk 3: Manufacturing complexity**
-- Mitigation: Parallel route scouting, early CMO engagement
+- Mitigation → Parallel route scouting, early CMO engagement
 - Develop simplified 2nd generation synthesis
 
 ### Clinical Development Risks
 
 **Risk 1: Narrow therapeutic window**
-- Mitigation: Extensive dose-ranging, consider alternative schedules
+- Mitigation → Extensive dose-ranging, consider alternative schedules
 - Explore intermittent dosing if continuous proves toxic
 
 **Risk 2: Rapid resistance development**
-- Mitigation: Combination studies with 3rd gen EGFR TKIs
+- Mitigation → Combination studies with 3rd gen EGFR TKIs
 - Serial ctDNA monitoring to catch early resistance
 
 ## REGULATORY ROADMAP
@@ -177,9 +177,9 @@ Key Questions:
 4. CMC requirements given synthesis complexity
 
 **Breakthrough Therapy Designation:**
-- Target: After Phase 1 dose escalation (Month 18)
-- Key data: ORR >30% in T790M/C797S patients
-- Benefit: Priority review, intensive FDA guidance
+- Target → After Phase 1 dose escalation (Month 18)
+- Key data → ORR >30% in T790M/C797S patients
+- Benefit → Priority review, intensive FDA guidance
 
 ### Global Strategy
 - US first (FDA IND)

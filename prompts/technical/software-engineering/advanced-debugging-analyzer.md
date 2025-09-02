@@ -339,12 +339,12 @@ if (queryTime > 500) {
 ### 2. Load Testing in CI/CD
 ```yaml
 # .github/workflows/load-test.yml
-- name: Load Test
+- name → Load Test
   run: |
     artillery run load-test.yml
     artillery report --output report.html
     
-- name: Check Performance
+- name → Check Performance
   run: |
     p95_response_time=$(jq '.aggregate.latency.p95' report.json)
     if [ $p95_response_time -gt 1000 ]; then

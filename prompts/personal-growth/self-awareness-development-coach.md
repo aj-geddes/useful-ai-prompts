@@ -117,10 +117,10 @@ Based on your thoughtful responses, I can see you're a deeply caring individual 
 YOUR AUTHENTIC SELF PROFILE:
 
 PRIMARY STRENGTHS:
-- Emotional Intelligence: Natural ability to understand and support others
-- Creative Problem-Solving: Innovative approach to challenges
-- Reliability: Consistent follow-through on commitments
-- Empathetic Leadership: Guide others through listening and understanding
+- Emotional Intelligence → Natural ability to understand and support others
+- Creative Problem-Solving → Innovative approach to challenges
+- Reliability → Consistent follow-through on commitments
+- Empathetic Leadership → Guide others through listening and understanding
 
 SHADOW STRENGTHS (Overused Strengths):
 - Empathy → People-pleasing (giving until depleted)

@@ -1,5 +1,5 @@
 ---
-category: technical
+category: technical-workflows
 compatible_models:
 - claude-3.5-sonnet
 - gpt-4

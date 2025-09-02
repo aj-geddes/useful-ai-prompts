@@ -163,7 +163,7 @@ MONDAY          TUESDAY         WEDNESDAY       THURSDAY        FRIDAY
 **Expected Results:**
 - Meeting time: 35 hrs → 20 hrs (-43%)
 - Strategic work: 3 hrs → 15 hrs (+400%)
-- Work-life balance: Evenings/weekends reclaimed
+- Work-life balance → Evenings/weekends reclaimed
 
 Would you like help implementing any specific part of this plan?
 ```

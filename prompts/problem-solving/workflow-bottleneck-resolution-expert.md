@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: workflow optimization, bottleneck analysis, process improvement, efficiency, flow optimization
+- **Use Cases**: workflow optimization, bottleneck removal, process streamlining, efficiency improvement
 - **Version**: 2.0.0
 - **Use Cases**: workflow bottlenecks, process delays, efficiency issues, capacity problems, throughput optimization
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

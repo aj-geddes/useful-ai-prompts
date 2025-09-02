@@ -90,22 +90,22 @@ High Priority:
 └── Inadequate warranty terms (Medium)
 
 Liability Exposure:
-- Current: Unlimited for all claims
-- Recommended: Cap at contract value ($2M)
-- Carve-outs: IP infringement, confidentiality
+- Current → Unlimited for all claims
+- Recommended → Cap at contract value ($2M)
+- Carve-outs → IP infringement, confidentiality
 ```
 
 **Financial Risks**:
-- Total exposure: Potentially unlimited
-- Hidden costs: Change orders not defined
-- Payment terms: Front-loaded (risky)
+- Total exposure → Potentially unlimited
+- Hidden costs → Change orders not defined
+- Payment terms → Front-loaded (risky)
 - No performance bonds/guarantees
 
 **Operational Risks**:
-- Vendor lock-in: High (proprietary tech)
-- Knowledge transfer: Not addressed
-- Business continuity: No disaster recovery
-- Resource dependency: Key person risk
+- Vendor lock-in → High (proprietary tech)
+- Knowledge transfer → Not addressed
+- Business continuity → No disaster recovery
+- Resource dependency → Key person risk
 
 ## KEY ISSUES
 
@@ -190,10 +190,10 @@ Silent on knowledge transfer and transition
 **Source Code Escrow**:
 ```
 Key Terms:
-- Escrow agent: Iron Mountain or similar
-- Release triggers: Bankruptcy, non-support, breach
-- Update frequency: Each major release
-- Verification: Annual or on-demand
+- Escrow agent → Iron Mountain or similar
+- Release triggers → Bankruptcy, non-support, breach
+- Update frequency → Each major release
+- Verification → Annual or on-demand
 ```
 
 **Data Security Addendum**:
@@ -269,9 +269,9 @@ Key Terms:
 - Must have Legal sign-off
 
 **IT Policies**:
-- Security requirements: Add penetration testing
-- Architecture standards: Define integration specs
-- Change management: Include in scope
+- Security requirements → Add penetration testing
+- Architecture standards → Define integration specs
+- Change management → Include in scope
 
 ### Implementation Timeline
 

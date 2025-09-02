@@ -242,16 +242,16 @@ Focus: Strategic business leader
 ### Quarterly Milestones
 
 **Year 1 Milestones:**
-- Q1: Expand product scope by 50%
-- Q2: Get first direct report
-- Q3: Own revenue target
-- Q4: Promotion to Senior PM
+- Q1 → Expand product scope by 50%
+- Q2 → Get first direct report
+- Q3 → Own revenue target
+- Q4 → Promotion to Senior PM
 
 **Year 2 Milestones:**
-- Q1: Lead product team of 3+
-- Q2: Present product vision to board
-- Q3: Drive major strategic initiative
-- Q4: Promotion to Director
+- Q1 → Lead product team of 3+
+- Q2 → Present product vision to board
+- Q3 → Drive major strategic initiative
+- Q4 → Promotion to Director
 
 **Success Metrics:**
 

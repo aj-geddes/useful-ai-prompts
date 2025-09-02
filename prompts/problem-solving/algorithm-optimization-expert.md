@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: algorithm optimization, computational efficiency, performance tuning, algorithmic complexity, optimization techniques
+- **Use Cases**: algorithm optimization, performance tuning, computational efficiency, code optimization
 - **Version**: 1.0.0
 - **Use Cases**: algorithm improvement, performance optimization, computational complexity reduction, efficiency enhancement, algorithmic problem solving
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

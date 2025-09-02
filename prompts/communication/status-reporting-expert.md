@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: status updates, progress reporting, project communication, dashboards, executive reporting
+- **Use Cases**: project reporting, progress updates, status communication, metrics presentation
 - **Version**: 2.0.0
 - **Use Cases**: project status updates, executive dashboards, team progress reports, stakeholder communication
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -141,8 +142,8 @@ ROI Timeline: **ON TRACK** - Q4 launch supports $2M revenue target
 **FINANCIAL SUMMARY**
 - Current burn rate: $60K/month (vs. $65K planned)
 - Projected total cost: $480K (vs. $500K budget)
-- Cost savings: Development efficiency improvements
-- ROI impact: None - launch date unchanged
+- Cost savings → Development efficiency improvements
+- ROI impact → None - launch date unchanged
 
 **DECISIONS NEEDED**
 None this period. Will need approval next month for beta testing budget ($25K).

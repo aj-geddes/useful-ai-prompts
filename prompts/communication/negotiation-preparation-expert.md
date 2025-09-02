@@ -4,6 +4,7 @@
 - **Category**: Communication/Strategy
 - **Created**: 2025-01-15
 - **Tags**: negotiation, deal-making, conflict-resolution, strategic-communication
+- **Use Cases**: negotiation preparation, deal making, contract discussions, conflict resolution
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21
 

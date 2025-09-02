@@ -43,8 +43,8 @@ Based on your responses, I'll provide:
 
 ### Executive Summary
 - Investment: [Type and amount]
-- Expected IRR: X%
-- Payback Period: Y years
+- Expected IRR → X%
+- Payback Period → Y years
 - Risk Rating: [Low/Medium/High]
 - **Recommendation:** [Invest/Pass/Further Due Diligence]
 

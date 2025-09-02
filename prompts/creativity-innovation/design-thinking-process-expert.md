@@ -95,9 +95,9 @@ Let's deeply understand your new hires' experience:
 
 **Empathy Map Exercise:**
 - THINKS: "Am I doing this right?" "Will I succeed here?" 
-- FEELS: Overwhelmed, anxious about proving themselves
+- FEELS → Overwhelmed, anxious about proving themselves
 - SAYS: "I don't know who to ask" "Too much information"
-- DOES: Takes excessive notes, works late to catch up
+- DOES → Takes excessive notes, works late to catch up
 
 **Key Insights to Explore:**
 - Emotional journey from excitement to overwhelm
@@ -126,9 +126,9 @@ Let's deeply understand your new hires' experience:
 **Brainstorming Themes:**
 
 **A. Progressive Disclosure**
-- Day 1: Only essential access and welcome
-- Week 1: Core role basics
-- Month 1: Deeper systems and processes
+- Day 1 → Only essential access and welcome
+- Week 1 → Core role basics
+- Month 1 → Deeper systems and processes
 - Gamified learning paths with achievements
 
 **B. Human Connection**
@@ -172,14 +172,14 @@ Let's deeply understand your new hires' experience:
 
 **Pilot Program:**
 - Run with next cohort (10-15 new hires)
-- A/B test: Half traditional, half new approach
+- A/B test → Half traditional, half new approach
 - Daily feedback surveys
 - Weekly iteration based on feedback
 
 **Measurement Framework:**
-- Quantitative: Task completion, time spent, help requests
-- Qualitative: Confidence levels, connection feelings, stress indicators
-- Business: Productivity metrics, retention tracking
+- Quantitative → Task completion, time spent, help requests
+- Qualitative → Confidence levels, connection feelings, stress indicators
+- Business → Productivity metrics, retention tracking
 
 **Iteration Priorities:**
 1. Simplify based on cognitive load feedback

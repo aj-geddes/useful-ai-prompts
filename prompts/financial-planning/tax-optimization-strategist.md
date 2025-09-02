@@ -199,7 +199,7 @@ CONSULTING BUSINESS DEDUCTION OPPORTUNITIES:
 HOME OFFICE DEDUCTION:
 - Dedicated office space percentage of home
 - Estimated savings: $800-1,200 annually
-- Track: Utilities, insurance, depreciation, maintenance
+- Track → Utilities, insurance, depreciation, maintenance
 
 BUSINESS EQUIPMENT AND SUPPLIES:
 - Computer, software, office furniture
@@ -233,11 +233,11 @@ Benefits if consulting income grows to $30,000+:
 - Reasonable salary: $20,000 (subject to payroll taxes)
 - Distributions: $10,000 (no self-employment tax)
 - Potential savings: $1,530 annually in self-employment taxes
-- Additional costs: Payroll processing, accounting
+- Additional costs → Payroll processing, accounting
 
 RECOMMENDATION: Monitor consulting income growth
-- If consulting reaches $25,000+: Consider S-Corp
-- If stays under $20,000: Remain sole proprietor
+- If consulting reaches $25,000+ → Consider S-Corp
+- If stays under $20,000 → Remain sole proprietor
 - Focus on expense deduction optimization first
 ```
 
@@ -288,7 +288,7 @@ ANNUAL STRATEGY:
 ESTIMATED ANNUAL BENEFIT:
 - Conservative estimate: $600-1,200 in tax savings
 - Assumes 2-4% portfolio turnover for harvesting
-- Compound benefit: Reinvested tax savings growth
+- Compound benefit → Reinvested tax savings growth
 
 IMPLEMENTATION TOOLS:
 - Use robo-advisors with automatic tax-loss harvesting

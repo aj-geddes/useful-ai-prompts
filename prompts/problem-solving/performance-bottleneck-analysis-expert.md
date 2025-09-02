@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: performance optimization, bottleneck analysis, system performance, optimization, profiling
+- **Use Cases**: performance analysis, bottleneck identification, system optimization, scalability improvement
 - **Version**: 2.0.0
 - **Use Cases**: performance issues, slow systems, optimization, scalability problems, resource constraints
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

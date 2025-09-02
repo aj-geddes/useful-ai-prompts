@@ -152,12 +152,12 @@ Gradients:
 
 ### Typography System
 **Headlines**: SF Pro Display or Inter
-- Weight: Bold/Black
+- Weight → Bold/Black
 - Tracking: -0.02em
 - Size: 48-64pt
 
 **Body**: Inter or Helvetica Neue
-- Weight: Regular/Medium
+- Weight → Regular/Medium
 - Size: 16-20pt
 - Line height: 1.5
 

@@ -219,15 +219,15 @@ Formal Verification: Mathematical proof of correctness
 **Economic Attack Vectors:**
 ```
 Flash Loan Attacks: 
-- Solution: Time-weighted average prices
-- Implementation: TWAP oracle with 10-minute window
+- Solution → Time-weighted average prices
+- Implementation → TWAP oracle with 10-minute window
 
 Sandwich Attacks:
-- Solution: MEV protection with commit-reveal
+- Solution → MEV protection with commit-reveal
 - Implementation: 2-block confirmation system
 
 Liquidity Drain:
-- Solution: Emergency pause + withdrawal limits
+- Solution → Emergency pause + withdrawal limits
 - Implementation: 24-hour withdrawal limit per user
 ```
 
@@ -327,7 +327,7 @@ Month 12: ✓ $100M TVL target
 **Technical KPIs:**
 - Contract uptime: >99.9%
 - Gas efficiency: <80K per swap
-- Security: Zero critical bugs
+- Security → Zero critical bugs
 
 **Business KPIs:**  
 - TVL: $10M (Month 6) → $100M (Month 12)

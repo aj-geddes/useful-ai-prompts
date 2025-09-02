@@ -82,7 +82,7 @@ Transition from growth-at-all-costs to sustainable growth, achieving break-even 
 **Budget Overview:**
 - Total Revenue Target: $14.2M
 - Total Operating Expenses: $14.0M  
-- Year-end Position: Break-even
+- Year-end Position → Break-even
 - Cash Runway: 18+ months maintained
 
 **Strategic Priorities:**
@@ -254,9 +254,9 @@ Non-Personnel: $300K
 - Collection efficiency: 98%
 
 **Key Vendor Terms**:
-- AWS: Net 30
-- Marketing: Net 15
-- Payroll: Same day
+- AWS → Net 30
+- Marketing → Net 15
+- Payroll → Same day
 - Rent: 1st of month
 
 ## 5. SCENARIO PLANNING
@@ -265,7 +265,7 @@ Non-Personnel: $300K
 - Revenue: $14.2M
 - Expenses: $14.0M
 - Year-end cash: $9.25M
-- Result: Break-even Q4
+- Result → Break-even Q4
 
 ### Best Case (+30% Revenue)
 **Revenue**: $18.5M
@@ -346,10 +346,10 @@ Week 4: Next month forecast
 4. Weekly cash monitoring
 
 **Quarterly Checkpoints**:
-- Q1: Foundation building
-- Q2: Growth acceleration
-- Q3: Efficiency focus
-- Q4: Profitability push
+- Q1 → Foundation building
+- Q2 → Growth acceleration
+- Q3 → Efficiency focus
+- Q4 → Profitability push
 
 **Success Metrics**:
 - Monthly budget variance <5%

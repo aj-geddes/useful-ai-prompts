@@ -172,7 +172,7 @@ Based on your project management SaaS company's context, here's your comprehensi
 **Year 1 Targets:**
 - Mobile DAU: 40% of total users
 - Enterprise pilot customers: 10
-- European market research: Complete
+- European market research → Complete
 - Brand awareness: +50% in target markets
 
 ### Year 2: Market Expansion
@@ -229,7 +229,7 @@ Based on your project management SaaS company's context, here's your comprehensi
 **Product Leadership:**
 - Mobile usage: 60% of daily active users
 - AI feature adoption: 70% of customers
-- Customer satisfaction: Maintain NPS >65
+- Customer satisfaction → Maintain NPS >65
 
 ### Financial Investment ($35M over 3 years)
 - **International expansion:** $15M (43%)

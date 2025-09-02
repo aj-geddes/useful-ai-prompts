@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: technical problems, engineering challenges, solution architecture, problem solving, technical design
+- **Use Cases**: technical problem solving, complex challenges, engineering solutions, system troubleshooting
 - **Version**: 2.0.0
 - **Use Cases**: complex technical problems, architecture challenges, integration issues, scaling problems, technical debt
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

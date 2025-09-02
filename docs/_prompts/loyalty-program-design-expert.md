@@ -35,7 +35,7 @@ prompt: |
   
   - Primary objective? (frequency, spend, referrals)
   
-  - Budget for rewards (% of revenue)?
+  - Budget for rewards ("% o"f revenue)?
   
   - Technology constraints or preferences?
   
@@ -88,7 +88,7 @@ prompt: |
   - Primary objective? (frequency, spend, referrals)
 
 
-  - Budget for rewards (% of revenue)?
+  - Budget for rewards ("% o"f revenue)?
 
 
   - Technology constraints or preferences?
@@ -112,17 +112,11 @@ prompt: |
 
   '
 title: Loyalty Program Design Expert
---------|--------------|-----------|
 
-  | Purchase | $1 = 10 points | Industry standard |
 
-  | Review | 50 points | Drives social proof |
 
-  | Referral | 500 points | Acquisition value |
 
-  | Social share | 25 points | Awareness building |
 
-  | Profile complete | 100 points | Data collection |
 
 
   **Redemption Options**:
@@ -140,17 +134,11 @@ title: Loyalty Program Design Expert
 
   ## 2. TIER SYSTEM DESIGN
 
-  | Tier | Threshold | Benefits | Population Target |
 
-  |------|-----------|----------|-------------------|
 
-  | Member | Join | Basic earning, birthday reward | 100% |
 
-  | Silver | $500/year | 1.2x points, free shipping | 40% |
 
-  | Gold | $1,500/year | 1.5x points, early access | 15% |
 
-  | Platinum | $5,000/year | 2x points, concierge service | 3% |
 
 
   **Tier Perks Strategy**:
@@ -181,28 +169,22 @@ title: Loyalty Program Design Expert
 
   **Communication Calendar**:
 
-  | Trigger | Message | Channel | Timing |
 
-  |---------|---------|---------|---------|
 
-  | Welcome | Program guide | Email | Immediate |
 
-  | First earn | Congrats + tips | App/Email | Same day |
 
-  | Near reward | Reminder | Push | When 80% there |
 
-  | Tier close | Upgrade push | Email | 30 days before |
 
 
   ## 4. FINANCIAL MODEL
 
   **Program Economics**:
 
-  - Breakage rate: 20-30% expected
+  - Breakage rate: 20-30"% e"xpected
 
   - Liability cap: Points expire after 18 months
 
-  - Reward cost: 2-4% of revenue
+  - Reward cost: 2-4"% o"f revenue
 
   - Incremental lift needed: 8-10%
 

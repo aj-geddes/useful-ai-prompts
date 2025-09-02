@@ -4,6 +4,7 @@
 - **Category**: Communication/Collaboration
 - **Created**: 2025-01-15
 - **Tags**: meeting-management, facilitation, productivity, team-dynamics
+- **Use Cases**: meeting facilitation, team collaboration, productivity improvement, conflict resolution
 - **Version**: 2.0.0
 - **Last Updated**: 2025-01-21
 

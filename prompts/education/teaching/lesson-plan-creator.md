@@ -111,15 +111,15 @@ Here's your comprehensive lesson plan for introducing linear equations:
 **Collaborative Exploration**
 
 Students work in pairs with equation cards:
-- Set A: Linear equations (2x + 3 = 7, y - 4 = 10, 3a = 15)
-- Set B: Non-linear equations (x² = 9, 2/x = 4, √y = 3)
+- Set A → Linear equations (2x + 3 = 7, y - 4 = 10, 3a = 15)
+- Set B → Non-linear equations (x² = 9, 2/x = 4, √y = 3)
 
 Task: Sort into two groups and identify the pattern
 
 **Differentiation:**
-- Advanced: Include more complex linear equations (2(x+3) = 10)
-- Struggling: Provide hint cards about exponents
-- ELL: Include visual representations
+- Advanced → Include more complex linear equations (2(x+3) = 10)
+- Struggling → Provide hint cards about exponents
+- ELL → Include visual representations
 
 #### Activity 2: Direct Instruction (10 minutes)
 **What Makes an Equation Linear?**
@@ -195,7 +195,7 @@ All students answer:
 
 ### For Advanced Students
 - Challenge problems involving word problems
-- Extension: Explore systems of linear equations
+- Extension → Explore systems of linear equations
 - Peer tutoring opportunity
 
 ### For Struggling Students

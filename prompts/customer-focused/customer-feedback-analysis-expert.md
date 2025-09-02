@@ -34,7 +34,7 @@ Based on your feedback data, I'll deliver:
 
 ## 1. SENTIMENT & THEME ANALYSIS
 **Overall Sentiment Distribution**:
-- Positive: X% | Neutral: Y% | Negative: Z%
+- Positive → X% | Neutral: Y% | Negative: Z%
 - Trend over time
 - Channel comparison
 

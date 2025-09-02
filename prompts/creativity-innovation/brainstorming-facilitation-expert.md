@@ -65,16 +65,16 @@ Great! I'll create a focused 90-minute brainstorming session for reducing cafete
   - How might we change behaviors around food waste?
 
 **2. Idea Generation Round 1: Rapid Fire (20 min)**
-- Individual brainstorming: Write ideas on sticky notes (7 min)
-- Share and build: Each person shares top 3 ideas (13 min)
+- Individual brainstorming → Write ideas on sticky notes (7 min)
+- Share and build → Each person shares top 3 ideas (13 min)
 - No criticism allowed - just capture everything!
 
 **3. Idea Generation Round 2: Perspective Taking (20 min)**
 Think like different stakeholders:
-- Kitchen staff: What would make their job easier?
-- Diners: What would motivate behavior change?
-- Food suppliers: How could ordering improve?
-- Maintenance: What about disposal/composting?
+- Kitchen staff → What would make their job easier?
+- Diners → What would motivate behavior change?
+- Food suppliers → How could ordering improve?
+- Maintenance → What about disposal/composting?
 
 **4. Idea Clustering & Building (15 min)**
 - Group similar ideas into themes

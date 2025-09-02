@@ -112,15 +112,10 @@ prompt: |
 
   '
 title: Personalization Framework Expert
------------|---------|------------------|-----------|
 
-  | Profile | CRM, accounts | Real-time | Segmentation |
 
-  | Behavioral | Web, app | Real-time | Recommendations |
 
-  | Transactional | Sales, billing | Daily | Lifecycle |
 
-  | Preferences | Surveys, settings | On change | Content |
 
 
   **Identity Resolution**:
@@ -138,17 +133,11 @@ title: Personalization Framework Expert
 
   **By Channel & Depth**:
 
-  | Channel | Basic | Intermediate | Advanced |
 
-  |---------|--------|--------------|----------|
 
-  | Website | Name, location | Browse history | Predictive content |
 
-  | Email | Segment campaigns | Behavior triggers | Individual journeys |
 
-  | App | Saved preferences | Usage patterns | AI recommendations |
 
-  | Support | Account history | Sentiment routing | Proactive outreach |
 
 
   ## 3. CONTENT STRATEGY

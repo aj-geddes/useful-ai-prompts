@@ -230,28 +230,28 @@ Goals: Establish meal timing and protein intake
 - Eat protein at every meal
 - Plan and prep Sunday meals
 - Track food intake without restriction
-- Focus: Building awareness and routine
+- Focus → Building awareness and routine
 
 WEEK 3-4: PORTION OPTIMIZATION
 Goals: Right-size portions and add structure
 - Use measuring tools for accurate portions
 - Implement the plate method (1/2 vegetables, 1/4 protein, 1/4 starch)
 - Begin calorie awareness
-- Focus: Portion control without deprivation
+- Focus → Portion control without deprivation
 
 WEEK 5-6: EMOTIONAL EATING STRATEGIES
 Goals: Address stress eating and evening snacking
 - Identify stress eating triggers
 - Implement 10-minute delay before stress eating
 - Create evening routine that doesn't center on food
-- Focus: Breaking emotional eating patterns
+- Focus → Breaking emotional eating patterns
 
 WEEK 7-8: SOCIAL SITUATION MASTERY
 Goals: Navigate eating out and social pressure
 - Practice restaurant ordering strategies
 - Prepare responses for food pushers
 - Allow flexibility while maintaining overall goals
-- Focus: Sustainable social eating habits
+- Focus → Sustainable social eating habits
 ```
 
 ### Trigger Management for Common Challenges

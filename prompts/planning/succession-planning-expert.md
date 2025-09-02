@@ -209,10 +209,10 @@ Based on your manufacturing company's succession needs, here's your comprehensiv
 ### Success Metrics & Monitoring
 
 **Succession Readiness KPIs:**
-- CEO successor readiness: Target 95% by month 18
-- VP successor development: Target 90% by month 12
-- High-potential retention: Target 95% retention rate
-- Internal promotion rate: Target 90% of leadership roles filled internally
+- CEO successor readiness → Target 95% by month 18
+- VP successor development → Target 90% by month 12
+- High-potential retention → Target 95% retention rate
+- Internal promotion rate → Target 90% of leadership roles filled internally
 
 **Monthly Progress Reviews:**
 - Development plan milestone tracking

@@ -56,15 +56,10 @@ prompt: |
 
   '
 title: Support Escalation Process Expert
-------|--------|---------------------|---------------|
 
-  | 1 | Document issue | Full context, attempts, customer state | Ticket system |
 
-  | 2 | Tag and notify | Priority, category, next tier alert | Slack/system |
 
-  | 3 | Warm transfer | Brief next tier, stay available | Call/chat |
 
-  | 4 | Follow up | Confirm resolution ownership | Ticket update |
 
 
   **Customer Communication**:
@@ -82,17 +77,11 @@ title: Support Escalation Process Expert
 
   **Severity Levels**:
 
-  | Level | Definition | Response Time | Escalation Path |
 
-  |-------|------------|---------------|-----------------|
 
-  | P1 | Service down, multiple users | 15 min | Direct to Tier 3 |
 
-  | P2 | Major feature broken | 2 hours | Tier 2 → 3 |
 
-  | P3 | Minor feature issue | 8 hours | Standard path |
 
-  | P4 | Enhancement request | 48 hours | Product team |
 
 
   **Queue Management**:

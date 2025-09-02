@@ -1,5 +1,5 @@
 ---
-category: project-management
+category: management-leadership
 compatible_models:
 - claude-3.5-sonnet
 - gpt-4

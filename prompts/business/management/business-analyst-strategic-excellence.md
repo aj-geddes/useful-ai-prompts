@@ -333,10 +333,10 @@ Financial Impact:
 5. Continuous optimization
 
 **Quick Wins Timeline**:
-- Week 2: First unified report
-- Week 4: Initial risk alerts
-- Week 8: First saved customer
-- Week 12: Measurable churn reduction
+- Week 2 → First unified report
+- Week 4 → Initial risk alerts
+- Week 8 → First saved customer
+- Week 12 → Measurable churn reduction
 
 This strategic approach transforms your reactive model into a proactive customer success engine, delivering both immediate wins and long-term competitive advantage.
 

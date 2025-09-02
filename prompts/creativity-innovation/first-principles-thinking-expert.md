@@ -111,7 +111,7 @@ Building from fundamentals:
 - Compute power: ~20 modern servers could handle your load
 - Storage: 50TB is just ~5 modern hard drives with redundancy
 - Network: 1Gbps connection more than sufficient
-- Reliability: Multiple locations and backups
+- Reliability → Multiple locations and backups
 
 **Real costs from first principles:**
 - Servers: 20 servers × $3K = $60K (one-time)

@@ -173,10 +173,10 @@ PRIMARY COURSE TRACK:
    - Competition exposure for portfolio
 
 SUPPLEMENTARY RESOURCES:
-- YouTube: Corey Schafer (Python), Sentdex (Data Analysis)
+- YouTube → Corey Schafer (Python), Sentdex (Data Analysis)
 - Books: "Python Crash Course" for reference
-- Practice: HackerRank, LeetCode for coding skills
-- Community: Reddit r/datascience, Discord data science groups
+- Practice → HackerRank, LeetCode for coding skills
+- Community → Reddit r/datascience, Discord data science groups
 ```
 
 ## STUDY SCHEDULE AND TIME MANAGEMENT
@@ -340,10 +340,10 @@ PROGRESS VISUALIZATION SYSTEM:
    - "Skill Mastery" certificates
 
 REWARD SYSTEM:
-- Week 2: New programming book or course
-- Month 1: Quality headphones for distraction-free learning
-- Month 3: Mechanical keyboard for better coding experience
-- Month 6: Conference ticket or certification exam
+- Week 2 → New programming book or course
+- Month 1 → Quality headphones for distraction-free learning
+- Month 3 → Mechanical keyboard for better coding experience
+- Month 6 → Conference ticket or certification exam
 ```
 
 ## PRACTICAL APPLICATION FRAMEWORK

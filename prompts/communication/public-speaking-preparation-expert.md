@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: public speaking, presentation skills, speech preparation, stage presence, speaking anxiety
+- **Use Cases**: public speaking, presentation skills, conference talks, speech preparation
 - **Version**: 2.0.0
 - **Use Cases**: keynote speeches, conference talks, sales presentations, team meetings
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -170,19 +171,19 @@ Stage Layout:
 ### Three-Week Preparation Timeline
 
 **Week 1: Content Confidence**
-- Days 1-3: Finalize structure and key points
-- Days 4-5: Create slide deck (design tips below)
-- Days 6-7: First full run-through (record yourself)
+- Days 1-3 → Finalize structure and key points
+- Days 4-5 → Create slide deck (design tips below)
+- Days 6-7 → First full run-through (record yourself)
 
 **Week 2: Delivery Development**
-- Days 8-10: Practice 10-minute segments
-- Days 11-12: Full runs with timer
-- Days 13-14: Practice with test audience
+- Days 8-10 → Practice 10-minute segments
+- Days 11-12 → Full runs with timer
+- Days 13-14 → Practice with test audience
 
 **Week 3: Performance Polish**
-- Days 15-17: Refine based on feedback
-- Days 18-19: Tech rehearsal if possible
-- Days 20-21: Rest and mental preparation
+- Days 15-17 → Refine based on feedback
+- Days 18-19 → Tech rehearsal if possible
+- Days 20-21 → Rest and mental preparation
 
 ### Confidence Building Exercises
 

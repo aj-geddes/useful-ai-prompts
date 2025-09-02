@@ -89,8 +89,8 @@ EXPANDED PRACTICE:
 
 ADDRESSING YOUR CHALLENGES:
 - Racing mind: "Noting" technique - label thoughts as "thinking" and return to breath
-- Can't sit still: Try walking meditation or gentle movement
-- Feeling wrong: Remember - noticing distraction IS mindfulness
+- Can't sit still → Try walking meditation or gentle movement
+- Feeling wrong → Remember - noticing distraction IS mindfulness
 
 INTEGRATION ACTIVITIES:
 - Mindful coffee/tea drinking

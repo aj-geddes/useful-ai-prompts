@@ -5,6 +5,7 @@
 
 - **Category**: Communication
 - **Tags**: conflict resolution, mediation, workplace disputes, team dynamics, communication
+- **Use Cases**: conflict mediation, workplace disputes, team relationship repair, communication facilitation
 - **Version**: 2.0.0
 - **Use Cases**: workplace conflicts, team disputes, stakeholder disagreements, interdepartmental issues, communication breakdowns
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

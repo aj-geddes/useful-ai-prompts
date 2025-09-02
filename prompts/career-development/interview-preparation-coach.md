@@ -189,7 +189,7 @@ PHYSICAL PREPARATION:
 MENTAL PREPARATION:
 - Review your core message and value proposition
 - Take 3 deep breaths before entering
-- Remember: They already want to like you - you're in the final round
+- Remember → They already want to like you - you're in the final round
 - Focus on building genuine connection, not just impressing them
 ```
 

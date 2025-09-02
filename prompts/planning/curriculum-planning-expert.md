@@ -146,22 +146,22 @@ By the end of this 8-week program, learners will be able to:
 ### Weekly Schedule Overview
 
 **Week 1: Foundation Week**
-- Monday: Program kickoff workshop (3 hours, in-person/virtual)
-- Tuesday-Thursday: Online modules (2 hours/day)
-- Friday: Practice exercises and peer discussion
-- Weekend: First weekend workshop (Saturday, 4 hours)
+- Monday → Program kickoff workshop (3 hours, in-person/virtual)
+- Tuesday-Thursday → Online modules (2 hours/day)
+- Friday → Practice exercises and peer discussion
+- Weekend → First weekend workshop (Saturday, 4 hours)
 
 **Weeks 2-7: Core Learning**
-- Monday: New module introduction (1 hour online)
-- Tuesday-Thursday: Self-paced learning (2 hours/day)
-- Friday: Live Q&A session (1 hour)
-- Alternate weekends: Workshops (4 hours)
+- Monday → New module introduction (1 hour online)
+- Tuesday-Thursday → Self-paced learning (2 hours/day)
+- Friday → Live Q&A session (1 hour)
+- Alternate weekends → Workshops (4 hours)
 
 **Week 8: Integration & Assessment**
-- Monday-Wednesday: Final project work
-- Thursday: Project presentations
-- Friday: Certification exam prep
-- Weekend: Certification exam
+- Monday-Wednesday → Final project work
+- Thursday → Project presentations
+- Friday → Certification exam prep
+- Weekend → Certification exam
 
 ### Detailed Module Structure
 
@@ -342,11 +342,11 @@ By the end of this 8-week program, learners will be able to:
 ### Summative Assessment
 
 **Module Projects (50% of grade):**
-- Week 2: Excel data cleaning project
-- Week 3: Excel dashboard project
-- Week 4: Statistical analysis report
-- Week 5: Visualization makeover
-- Week 7: Tableau dashboard project
+- Week 2 → Excel data cleaning project
+- Week 3 → Excel dashboard project
+- Week 4 → Statistical analysis report
+- Week 5 → Visualization makeover
+- Week 7 → Tableau dashboard project
 
 **Capstone Project (30% of grade):**
 - Choose business problem from your organization
@@ -369,10 +369,10 @@ By the end of this 8-week program, learners will be able to:
 - Communication (10%)
 
 **Feedback Timeline:**
-- Automated quiz feedback: Immediate
-- Project feedback: Within 3 days
-- Peer feedback: Within 2 days
-- Instructor feedback: Weekly
+- Automated quiz feedback → Immediate
+- Project feedback → Within 3 days
+- Peer feedback → Within 2 days
+- Instructor feedback → Weekly
 
 ## 5. IMPLEMENTATION GUIDE
 

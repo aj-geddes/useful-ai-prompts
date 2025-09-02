@@ -280,7 +280,7 @@ PRACTICE SCENARIOS:
 IMMEDIATE TECHNIQUES (In-the-moment):
 - Box Breathing: 4 counts in, hold 4, out 4, hold 4
 - 5-4-3-2-1 Grounding: 5 things you see, 4 hear, 3 feel, 2 smell, 1 taste
-- Progressive Muscle Relaxation: Tense and release muscle groups
+- Progressive Muscle Relaxation → Tense and release muscle groups
 - Positive Self-Talk: "I can handle this," "This feeling will pass"
 
 RECOVERY TECHNIQUES (After stress):
@@ -305,24 +305,24 @@ GOAL: Reduce emotional recovery time from days/hours to minutes
 **The Empathy Development Framework:**
 ```
 LEVEL 1: Observational Awareness
-- Notice: Body language, facial expressions, tone of voice
-- Practice: Spend 5 minutes daily observing without judgment
+- Notice → Body language, facial expressions, tone of voice
+- Practice → Spend 5 minutes daily observing without judgment
 - Question: "What might this person be experiencing?"
 
 LEVEL 2: Emotional Attunement
-- Feel: Allow yourself to sense others' emotional states
-- Validate: Check your perceptions with direct questions
+- Feel → Allow yourself to sense others' emotional states
+- Validate → Check your perceptions with direct questions
 - Practice: "I sense you might be feeling... is that accurate?"
 
 LEVEL 3: Contextual Understanding
-- Consider: Personal history, current circumstances, cultural background
+- Consider → Personal history, current circumstances, cultural background
 - Ask: "What might be influencing their perspective?"
 - Explore: "Help me understand your point of view"
 
 LEVEL 4: Values and Needs Recognition
-- Identify: What values and needs drive their behavior?
-- Connect: How do their needs relate to universal human needs?
-- Respond: Address underlying needs, not just surface behavior
+- Identify → What values and needs drive their behavior?
+- Connect → How do their needs relate to universal human needs?
+- Respond → Address underlying needs, not just surface behavior
 
 DAILY EMPATHY PRACTICE:
 - Choose one person to focus on each day

@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: conflict resolution, mediation, negotiation, interpersonal issues, team dynamics
+- **Use Cases**: workplace conflict resolution, team mediation, dispute resolution, relationship repair
 - **Version**: 1.0.0
 - **Use Cases**: workplace conflicts, team disputes, stakeholder disagreements, negotiation facilitation, relationship repair
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

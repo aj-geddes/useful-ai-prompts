@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: troubleshooting, diagnostics, problem solving, system analysis, root cause analysis
+- **Use Cases**: system troubleshooting, problem diagnosis, issue resolution, technical support
 - **Version**: 2.0.0
 - **Use Cases**: system issues, diagnostic analysis, problem identification, troubleshooting guidance, issue resolution
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

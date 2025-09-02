@@ -138,16 +138,16 @@ PLATFORM PRIORITIZATION FOR WEB DESIGNERS:
 ### Platform-Specific Content Strategy
 ```
 INSTAGRAM CONTENT MIX:
-- Portfolio Posts (40%): Before/after, case studies, website reveals
-- Educational Content (30%): Design tips, web trends, business advice
-- Behind-the-scenes (20%): Process videos, client meetings, workspace
-- Personal/Brand Story (10%): Values, mission, team moments
+- Portfolio Posts (40%) → Before/after, case studies, website reveals
+- Educational Content (30%) → Design tips, web trends, business advice
+- Behind-the-scenes (20%) → Process videos, client meetings, workspace
+- Personal/Brand Story (10%) → Values, mission, team moments
 
 LINKEDIN CONTENT MIX:
-- Thought Leadership (40%): Industry insights, trends, business advice
-- Case Studies (30%): Client success stories, project breakdowns
-- Professional Tips (20%): Web design best practices, business growth
-- Networking Content (10%): Industry events, collaborations, mentions
+- Thought Leadership (40%) → Industry insights, trends, business advice
+- Case Studies (30%) → Client success stories, project breakdowns
+- Professional Tips (20%) → Web design best practices, business growth
+- Networking Content (10%) → Industry events, collaborations, mentions
 
 POSTING FREQUENCY:
 - Instagram: 5-6 posts per week + daily Stories
@@ -286,14 +286,14 @@ CONVERSION STAGE (Consultation Booking):
 ```
 BRAND VISUAL GUIDELINES:
 Color Palette: 
-- Primary: Professional blue (#2E3A59)
-- Secondary: Clean white (#FFFFFF)
-- Accent: Success green (#27AE60)
-- Supporting: Light gray (#F8F9FA)
+- Primary → Professional blue (#2E3A59)
+- Secondary → Clean white (#FFFFFF)
+- Accent → Success green (#27AE60)
+- Supporting → Light gray (#F8F9FA)
 
 Typography:
-- Headers: Clean sans-serif (Poppins/Montserrat)
-- Body: Readable sans-serif (Open Sans/Source Sans)
+- Headers → Clean sans-serif (Poppins/Montserrat)
+- Body → Readable sans-serif (Open Sans/Source Sans)
 - Consistent font sizing across all graphics
 
 Template System:

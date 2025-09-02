@@ -127,17 +127,17 @@ Your smart garden isn't just about growing food—it's about bringing sustainabl
 
 **Financial Projections:**
 - Year 1: 500 units = $150K hardware + $30K subscriptions
-- Break-even: Month 8 with crowdfunding
+- Break-even → Month 8 with crowdfunding
 - Customer acquisition cost: $45
 - Lifetime value: $450+
 
 **IMPLEMENTATION ROADMAP**
 
 **Month 1-2: Prototype Development**
-- Week 1-2: Finalize technical specifications
-- Week 3-4: Source components and suppliers
-- Week 5-6: Build 3 working prototypes
-- Week 7-8: Internal testing and refinement
+- Week 1-2 → Finalize technical specifications
+- Week 3-4 → Source components and suppliers
+- Week 5-6 → Build 3 working prototypes
+- Week 7-8 → Internal testing and refinement
 
 **Month 3-4: User Testing**
 - Recruit 10 beta testers from target market

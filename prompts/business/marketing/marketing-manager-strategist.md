@@ -155,8 +155,8 @@ LOW IMPACT, HIGH EFFORT (Deprioritize):
 **Creative**:
 ```
 Hero Video: "Day in the life" comparison
-- Morning: Overwhelmed agent, angry customers
-- Afternoon: AI-assisted, happy outcomes
+- Morning → Overwhelmed agent, angry customers
+- Afternoon → AI-assisted, happy outcomes
 - Tagline: "This is AI with a human touch"
 
 Content Series:

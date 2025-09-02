@@ -43,9 +43,9 @@ Based on your answers, I'll provide:
 
 ### Executive Summary
 **Recommendation:** [GO / NO-GO / CONDITIONAL GO]
-- Readiness Score: X/100
+- Readiness Score → X/100
 - Risk Level: [Low/Medium/High]
-- Confidence Level: X%
+- Confidence Level → X%
 - Key Decision Factors: [top 3]
 
 ### Readiness Assessment

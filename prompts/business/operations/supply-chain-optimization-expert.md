@@ -186,7 +186,7 @@ Total Reduction: $25M (from $50M to $25M)
 **Forecasting Improvement**:
 - Current accuracy: 60% MAPE
 - ML-based forecast: 85% accuracy
-- Demand sensing: Real-time adjustments
+- Demand sensing → Real-time adjustments
 - Collaborative planning with retailers
 
 **Results**:
@@ -221,9 +221,9 @@ Critical Risks:
 
 **Contingency Plans**:
 - Supplier failure: 30-day coverage + alternatives
-- Facility disruption: Production shifting capability
-- Transportation crisis: Multi-modal options
-- Demand spike: Rapid scaling protocols
+- Facility disruption → Production shifting capability
+- Transportation crisis → Multi-modal options
+- Demand spike → Rapid scaling protocols
 
 ## IMPLEMENTATION ROADMAP
 

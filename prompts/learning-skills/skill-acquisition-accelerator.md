@@ -235,9 +235,9 @@ Practice: Full presentation with Q&A
 Feedback: Toastmasters evaluation, self-assessment
 
 PROGRESSIVE CHALLENGE INCREASE:
-- Week 5-8: Increase to 10-minute presentations
-- Week 9-12: Add audience interaction elements
-- Month 4-6: Tackle specialized presentation scenarios
+- Week 5-8 → Increase to 10-minute presentations
+- Week 9-12 → Add audience interaction elements
+- Month 4-6 → Tackle specialized presentation scenarios
 ```
 
 ## PERSONALIZED PRACTICE DESIGN

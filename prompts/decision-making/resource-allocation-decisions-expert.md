@@ -44,7 +44,7 @@ Based on your inputs, I'll develop:
 ### Executive Summary
 - Total resources: [Amount/count]
 - Allocation across: [X projects/areas]
-- Utilization rate: X%
+- Utilization rate → X%
 - Value optimization: [Achieved/compromised]
 
 ### Current vs Proposed Allocation
@@ -104,7 +104,7 @@ Based on your inputs, I'll develop:
 3. Combine related efforts
 
 ### Performance Metrics
-- Resource utilization: Target 85-90%
+- Resource utilization → Target 85-90%
 - Project completion rates
 - Value delivered per resource unit
 - Team satisfaction scores

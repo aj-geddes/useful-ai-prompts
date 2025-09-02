@@ -1,22 +1,16 @@
----
-category: technical-workflows
-compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-16'
-description: Professional prompt combining Edge Computing Architect and Distributed
-  Systems Manager expertise for Edge Computing workflows
-slug: edge-computing-architecture-expert
-tags:
-- technical workflows
-- edge computing
-title: Edge Computing Architecture Expert
-use_cases:
-- Edge Computing optimization
-- professional workflow enhancement
-version: 3.0.0
----
+# Edge Computing Architecture Expert
+
+## Metadata
+- **Category**: Technical Workflows
+- **Tags**: technical workflows, edge computing
+- **Created**: 2025-08-16
+- **Version**: 3.0.0
+- **Use Cases**: Edge Computing optimization, professional workflow enhancement
+- **Compatible Models**: Claude 3.5 Sonnet, GPT-4, Gemini Pro
+
+## Description
+Professional prompt combining Edge Computing Architect and Distributed Systems Manager expertise for Edge Computing workflows
+
 
 # Edge Computing Architecture Expert
 

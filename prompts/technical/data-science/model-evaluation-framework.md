@@ -80,9 +80,9 @@ Based on your churn prediction model, here's a comprehensive evaluation framewor
 
 ### Proper Evaluation Approach
 **Time-Based Split**: 
-- Train: Months 1-12
-- Validate: Months 13-15  
-- Test: Months 16-18
+- Train → Months 1-12
+- Validate → Months 13-15  
+- Test → Months 16-18
 - This prevents future data leakage
 
 ## METRIC ANALYSIS
@@ -169,9 +169,9 @@ Critical checks:
 ### Detailed Analysis Plan
 
 **1. Probability Calibration**
-- Plot: Predicted vs. Actual churn rates by decile
-- Test: Hosmer-Lemeshow goodness-of-fit
-- Fix: Isotonic/Platt calibration if needed
+- Plot → Predicted vs. Actual churn rates by decile
+- Test → Hosmer-Lemeshow goodness-of-fit
+- Fix → Isotonic/Platt calibration if needed
 
 **2. Error Analysis**
 ```

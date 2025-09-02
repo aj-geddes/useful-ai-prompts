@@ -230,34 +230,34 @@ Risk Distribution: 3 Critical, 4 High, 3 Medium risks
 ### Top 5 Risk Analysis
 
 **Risk #1: Advanced Cyber Attack (Score: 9.2/10)**
-- Probability: Very High (75% within 24 months)
-- Impact: Critical ($15-45M total exposure)
-- Velocity: Hours to severe impact
-- Detection Difficulty: Medium (improving with investment)
+- Probability → Very High (75% within 24 months)
+- Impact → Critical ($15-45M total exposure)
+- Velocity → Hours to severe impact
+- Detection Difficulty → Medium (improving with investment)
 
 **Risk #2: EU Regulatory Non-Compliance (Score: 8.5/10)**
-- Probability: High (60% chance of violations during transition)
-- Impact: High ($5-20M fines + operational restrictions)
-- Velocity: Months to enforcement action
-- Detection Difficulty: Low (clear regulatory timelines)
+- Probability → High (60% chance of violations during transition)
+- Impact → High ($5-20M fines + operational restrictions)
+- Velocity → Months to enforcement action
+- Detection Difficulty → Low (clear regulatory timelines)
 
 **Risk #3: Major Supply Chain Disruption (Score: 8.3/10)**
-- Probability: High (65% chance of significant disruption)
-- Impact: Critical ($10-30M revenue impact)
-- Velocity: Days to weeks for full impact
-- Detection Difficulty: Medium (early warning systems available)
+- Probability → High (65% chance of significant disruption)
+- Impact → Critical ($10-30M revenue impact)
+- Velocity → Days to weeks for full impact
+- Detection Difficulty → Medium (early warning systems available)
 
 **Risk #4: Quality Control Failure (Score: 7.8/10)**
-- Probability: Medium (45% chance during expansion)
-- Impact: High ($5-15M recall + reputation costs)
-- Velocity: Weeks to months for full impact
-- Detection Difficulty: High (quality issues emerge slowly)
+- Probability → Medium (45% chance during expansion)
+- Impact → High ($5-15M recall + reputation costs)
+- Velocity → Weeks to months for full impact
+- Detection Difficulty → High (quality issues emerge slowly)
 
 **Risk #5: Currency/Financial Volatility (Score: 7.2/10)**
-- Probability: High (70% chance of significant volatility)
-- Impact: Medium ($2-8M annual exposure)
-- Velocity: Days to immediate impact
-- Detection Difficulty: Low (market-driven, predictable)
+- Probability → High (70% chance of significant volatility)
+- Impact → Medium ($2-8M annual exposure)
+- Velocity → Days to immediate impact
+- Detection Difficulty → Low (market-driven, predictable)
 
 ## 3. VULNERABILITY ASSESSMENT
 
@@ -299,7 +299,7 @@ Compliance Controls:      █████░░░░░ 50% mature
 **Resource Constraints:**
 - IT Security team: 3 FTE (need 8-10 for international operations)
 - Compliance staff: 2 FTE (need 6-8 for EU requirements)
-- Quality assurance: Limited bandwidth for multi-location oversight
+- Quality assurance → Limited bandwidth for multi-location oversight
 - Financial resources: $50M expansion budget with limited contingency
 
 ## 4. RISK PRIORITIZATION & ACTION PLANNING
@@ -468,10 +468,10 @@ Current Risk Level: 🟡 MEDIUM
 ### Key Risk Indicators (KRIs)
 
 **Leading Indicators (Predictive):**
-- Cybersecurity: Failed login attempts, vulnerability scan results
-- Supply Chain: Supplier financial health scores, geopolitical tension indices  
-- Compliance: Regulatory announcement frequency, policy update cycles
-- Operational: System performance degradation, quality trend analysis
+- Cybersecurity → Failed login attempts, vulnerability scan results
+- Supply Chain → Supplier financial health scores, geopolitical tension indices  
+- Compliance → Regulatory announcement frequency, policy update cycles
+- Operational → System performance degradation, quality trend analysis
 
 **Lagging Indicators (Reactive):**
 - Incidents reported, customer complaints, audit findings

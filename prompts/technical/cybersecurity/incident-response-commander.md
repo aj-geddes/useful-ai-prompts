@@ -255,7 +255,7 @@ foreach ($ext in $extensions) {
 - Time to detect: 2 hours (target: <15 min)
 - Time to contain: 2.5 hours (target: <30 min)
 - Systems affected: 5+ (target: <2)
-- Data recovery: TBD (target: 100%)
+- Data recovery → TBD (target: 100%)
 
 **Critical Next Steps**:
 1. Call external IR firm NOW

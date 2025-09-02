@@ -90,20 +90,20 @@ Based on your e-learning platform launch, here's my market research findings:
 
 **1. Career Switchers (35% of market)**
 - Age: 28-40, seeking new opportunities
-- Pain: Expensive bootcamps, time constraints
-- Need: Flexible, affordable, job-relevant skills
+- Pain → Expensive bootcamps, time constraints
+- Need → Flexible, affordable, job-relevant skills
 - Spend: $500-2,000/year
 
 **2. Skill Upgraders (40% of market)**
 - Current professionals staying relevant
-- Pain: Outdated corporate training
-- Need: Cutting-edge, practical content
+- Pain → Outdated corporate training
+- Need → Cutting-edge, practical content
 - Spend: $300-1,000/year
 
 **3. Side Hustlers (25% of market)**
 - Building secondary income streams
-- Pain: Lack of business skills
-- Need: Entrepreneurial + technical training
+- Pain → Lack of business skills
+- Need → Entrepreneurial + technical training
 - Spend: $200-500/year
 
 ### Customer Journey Mapping
@@ -144,17 +144,17 @@ Enterprise ←→ Individual
 
 **1. "Learn by Doing" Gap**
 - Competitors: 80% video lectures
-- Opportunity: Interactive coding environments
+- Opportunity → Interactive coding environments
 - User need: "I learn by building real things"
 
 **2. "Career Support" Gap**
-- Competitors: Basic certificates
-- Opportunity: Job placement assistance
+- Competitors → Basic certificates
+- Opportunity → Job placement assistance
 - User need: "Help me land the job"
 
 **3. "Personalization" Gap**
-- Competitors: One-size-fits-all paths
-- Opportunity: AI-driven custom curricula
+- Competitors → One-size-fits-all paths
+- Opportunity → AI-driven custom curricula
 - User need: "Skip what I already know"
 
 ## MARKET OPPORTUNITIES
@@ -163,8 +163,8 @@ Enterprise ←→ Individual
 
 **1. AI-Personalized Learning Paths** 
 - Market size: $2.5B opportunity
-- Competition: Low (early stage)
-- Technical feasibility: High with current AI
+- Competition → Low (early stage)
+- Technical feasibility → High with current AI
 - Differentiator: 3x faster skill acquisition
 
 **2. Employer-Sponsored Programs**
@@ -192,19 +192,19 @@ Enterprise ←→ Individual
 **Phase 1: MVP Market Entry (Months 1-3)**
 - Focus: 3 core skills (Python, Data Analysis, Digital Marketing)
 - Price: $39/month or $299/year
-- Channel: Content marketing + Reddit/Discord
+- Channel → Content marketing + Reddit/Discord
 - Goal: 1,000 paid users
 
 **Phase 2: Expand & Optimize (Months 4-6)**
 - Add: 5 more high-demand skills
-- Launch: Free tier with limited access
+- Launch → Free tier with limited access
 - Partner: 3-5 SMB employers
 - Goal: 5,000 users, $150K MRR
 
 **Phase 3: Scale (Months 7-12)**
-- Feature: AI learning assistant
-- Channel: Paid acquisition + affiliates
-- B2B: Enterprise pilot programs
+- Feature → AI learning assistant
+- Channel → Paid acquisition + affiliates
+- B2B → Enterprise pilot programs
 - Goal: 20,000 users, $600K MRR
 
 ### Differentiation Strategy

@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: policy writing, compliance, governance, procedures, regulatory frameworks
+- **Use Cases**: policy development, compliance frameworks, governance documentation, regulatory compliance
 - **Version**: 2.0.0
 - **Use Cases**: corporate policies, compliance procedures, governance frameworks, operational guidelines
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -216,10 +217,10 @@ This policy establishes security requirements for employees and contractors work
 ### 5. COMMUNICATION TOOLS
 
 **Approved Tools:**
-- Video: Zoom (company account)
-- Chat: Slack (company workspace)
-- Email: Company email only
-- File Sharing: SharePoint/OneDrive
+- Video → Zoom (company account)
+- Chat → Slack (company workspace)
+- Email → Company email only
+- File Sharing → SharePoint/OneDrive
 
 **Security Requirements:**
 - Waiting rooms for meetings
@@ -267,9 +268,9 @@ This policy establishes security requirements for employees and contractors work
 - **Severe:** Data breach, willful non-compliance
 
 **Consequences:**
-- Minor: Counseling and retraining
-- Major: Written warning, remote privileges suspended
-- Severe: Termination, legal action
+- Minor → Counseling and retraining
+- Major → Written warning, remote privileges suspended
+- Severe → Termination, legal action
 
 ### 9. EXCEPTIONS
 

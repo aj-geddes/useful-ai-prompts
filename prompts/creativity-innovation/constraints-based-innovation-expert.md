@@ -112,12 +112,12 @@ You have more than you think:
 
 **4. Lunch Walk & Talk Groups ($0)**
 - Map three 15-minute routes around office/park
-- Different themes: Power Walk, Nature Stroll, Social Saunter
+- Different themes → Power Walk, Nature Stroll, Social Saunter
 - Self-organizing via Slack polls
 - Combines movement, nature, and social connection
 
 **5. Wellness Resource Library ($300)**
-- Curated free resources: YouTube channels, apps, podcasts
+- Curated free resources → YouTube channels, apps, podcasts
 - Print materials for common areas
 - "Wellness Tip of the Day" rotation
 - Employee book/resource exchange
@@ -131,7 +131,7 @@ You have more than you think:
 - Create simple tracking system (weekly check-ins)
 
 **Week 2: Launch**
-- Monday: Announce program with emphasis on peer-led approach
+- Monday → Announce program with emphasis on peer-led approach
 - Introduce first micro-challenge (5-minute desk stretch)
 - Champions announce their weekly offerings
 - Start lunch walk groups

@@ -1,47 +1,36 @@
 {
   "version": "1.0.0",
-  "last_updated": "2025-09-01T18:58:36.495359",
-  "total_prompts": 469,
+  "last_updated": "2025-09-01T19:04:54.690226",
+  "total_prompts": 470,
   "categories": [
-    "planning",
-    "project-management",
-    "decision-making",
-    "healthcare-digital",
-    "content-creation",
-    "problem-solving",
-    "supply-chain",
-    "development",
-    "creativity-innovation",
-    "learning-skills",
-    "relationships-communication",
-    "blockchain",
-    "learning-development",
-    "research-workflows",
-    "space-economy",
-    "financial-planning",
-    "analysis",
-    "renewable-energy",
-    "personal-productivity",
-    "communication",
-    "personal-growth",
-    "evaluation-assessment",
-    "career-development",
-    "optimization",
-    "biotechnology",
-    "quantum-computing",
-    "technical-workflows",
-    "technical",
-    "customer-focused",
-    "creation",
     "management-leadership",
-    "government",
-    "health-wellness"
+    "planning",
+    "decision-making",
+    "blockchain",
+    "space-economy",
+    "creativity-innovation",
+    "biotechnology",
+    "evaluation-assessment",
+    "renewable-energy",
+    "healthcare-digital",
+    "customer-focused",
+    "learning-development",
+    "government-digital",
+    "communication",
+    "technical-workflows",
+    "supply-chain",
+    "analysis",
+    "problem-solving",
+    "creation",
+    "optimization",
+    "research-workflows",
+    "quantum-computing"
   ],
   "prompts": [
     {
       "title": "Active Listening Trainer",
       "description": "An interactive listening skills coach that helps you master active listening techniques for deeper connections and more effective communication. Develops comprehensive listening abilities across personal and professional contexts.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "active-listening",
         "communication-skills",
@@ -69,7 +58,7 @@
     {
       "title": "Addiction Recovery Supporter",
       "description": "A supportive recovery guide that helps individuals in addiction recovery develop strategies for sobriety, wellness, and building a fulfilling life in recovery.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "addiction-recovery",
         "sobriety",
@@ -369,7 +358,7 @@
     {
       "title": "Audience Engagement Specialist",
       "description": "An interactive audience engagement strategist that helps you build meaningful connections with your audience through compelling content and authentic community-building strategies.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "audience-engagement",
         "community-building",
@@ -397,7 +386,7 @@
     {
       "title": "Azurerm Terraform Module Maker",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -506,7 +495,7 @@
     {
       "title": "Blog Content Planner",
       "description": "An interactive blog strategy consultant that helps you develop comprehensive content plans, editorial calendars, and audience-focused blog strategies. Creates sustainable content systems that drive traffic, engagement, and business goals.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "blog-planning",
         "content-strategy",
@@ -534,7 +523,7 @@
     {
       "title": "Boundary Setting Communicator",
       "description": "An interactive boundary-setting coach that helps you establish and communicate healthy boundaries in all relationships for better well-being and more authentic connections.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "boundary-setting",
         "assertiveness",
@@ -589,7 +578,7 @@
     {
       "title": "Brand Storytelling Expert",
       "description": "A comprehensive brand storytelling expert that helps you craft compelling brand narratives that connect with audiences and differentiate your business.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "brand-storytelling",
         "narrative-marketing",
@@ -757,7 +746,7 @@
     {
       "title": "Career Advancement Strategist",
       "description": "A comprehensive career advancement specialist that helps you develop strategic plans for promotion, build essential leadership skills, and navigate organizational politics to achieve your professional goals.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "career-advancement",
         "promotion-strategy",
@@ -833,7 +822,7 @@
     {
       "title": "Chronic Condition Manager",
       "description": "A comprehensive health management guide that helps you develop strategies for living well with chronic conditions through lifestyle optimization and symptom management.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "chronic-illness",
         "health-management",
@@ -861,7 +850,7 @@
     {
       "title": "Ci Workflow Watchdog",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -910,7 +899,7 @@
     {
       "title": "Citizen Service Experience Designer",
       "description": "This prompt helps government service designers create citizen-centered digital experiences that simplify government interactions, reduce friction, and improve satisfaction while ensuring accessibility, transparency, and effectiveness in public service delivery.",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "citizen experience",
         "service design",
@@ -950,7 +939,7 @@
     {
       "title": "Claude With Mcps",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -1169,7 +1158,7 @@
     {
       "title": "Code Review Prompts",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -1190,7 +1179,7 @@
     {
       "title": "College Savings Planner",
       "description": "A comprehensive college savings expert that helps you plan and save for education expenses through strategic savings plans and financial aid optimization.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "education-savings",
         "college-planning",
@@ -1303,7 +1292,7 @@
     {
       "title": "Communication Skills Enhancer",
       "description": "An interactive communication coach that helps you develop effective interpersonal communication skills across personal and professional relationships. Focuses on practical techniques for clearer expression, better listening, and stronger connections.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "communication-skills",
         "interpersonal-communication",
@@ -1573,7 +1562,7 @@
     {
       "title": "Confidence Building Coach",
       "description": "A comprehensive confidence coach that helps you build authentic self-confidence through mindset work, skill development, and positive self-perception.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "confidence",
         "self-esteem",
@@ -1601,7 +1590,7 @@
     {
       "title": "Confidence Building Strategist",
       "description": "An interactive confidence coach that helps you build genuine self-confidence through evidence-based strategies and practical exercises. Creates personalized confidence-building plans that address specific areas of self-doubt while strengthening core self-worth.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "confidence-building",
         "self-esteem",
@@ -1676,7 +1665,7 @@
     {
       "title": "Conflict Resolution Mediator",
       "description": "A comprehensive conflict resolution expert that helps you navigate and resolve conflicts through effective communication, mediation, and relationship repair strategies.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "conflict-resolution",
         "mediation",
@@ -1704,7 +1693,7 @@
     {
       "title": "Conflict Resolution Strategist",
       "description": "An interactive conflict resolution coach that helps you navigate disputes and disagreements constructively. Provides frameworks for understanding conflict dynamics and practical strategies for reaching mutually beneficial resolutions.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "conflict-resolution",
         "communication",
@@ -1804,7 +1793,7 @@
     {
       "title": "Content Calendar Architect",
       "description": "A strategic content planning consultant that helps you create comprehensive content calendars that align with your goals, audience needs, and business objectives for consistent, effective content creation.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "content-planning",
         "editorial-calendar",
@@ -1982,7 +1971,7 @@
     {
       "title": "Copywriting Enhancement Expert",
       "description": "A comprehensive copywriting expert that helps you create compelling, persuasive copy that converts readers into customers and achieves your marketing goals.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "copywriting",
         "persuasive-writing",
@@ -2138,7 +2127,7 @@
     {
       "title": "Creative Skills Developer",
       "description": "A comprehensive creative development coach that helps you build artistic skills, develop your creative process, and advance your creative practice.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "creativity",
         "artistic-skills",
@@ -2166,7 +2155,7 @@
     {
       "title": "Credit Score Improver",
       "description": "An interactive credit improvement consultant that helps you understand and optimize your credit score through strategic actions and responsible credit management.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "credit-score",
         "credit-repair",
@@ -2364,7 +2353,7 @@
     {
       "title": "Crypto Investment Advisor",
       "description": "A comprehensive cryptocurrency investment advisor that helps you understand and strategically invest in digital assets while managing risk.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "cryptocurrency",
         "blockchain",
@@ -2521,6 +2510,28 @@
       "file_path": "_prompts/customer-issue-resolution-expert.md"
     },
     {
+      "title": "Customer Success Planning Expert",
+      "description": "Create comprehensive customer success plans that ensure customers achieve their desired outcomes with your product or service. This prompt helps develop structured success programs that drive adoption, value, and growth.",
+      "category": "customer-focused",
+      "tags": [
+        "customer-success",
+        "account-management",
+        "success-planning",
+        "value-realization"
+      ],
+      "slug": "customer-success-planning-expert",
+      "date": "2025-07-21",
+      "version": "1.0.0",
+      "compatible_models": [
+        "GPT-4",
+        "Claude 3",
+        "Gemini Pro",
+        "GPT-3.5"
+      ],
+      "use_cases": [],
+      "file_path": "_prompts/customer-success-planning-expert.md"
+    },
+    {
       "title": "Cybersecurity Defense Architect",
       "description": "This prompt helps you design comprehensive cybersecurity defense strategies that protect against modern threats while enabling business operations and maintaining compliance.",
       "category": "technical-workflows",
@@ -2596,7 +2607,7 @@
     {
       "title": "Dating Relationship Coach",
       "description": "A comprehensive dating and relationship coach that helps you build meaningful connections, improve dating skills, and create successful romantic relationships.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "dating",
         "relationships",
@@ -2624,7 +2635,7 @@
     {
       "title": "Debt Elimination Strategist",
       "description": "A specialized debt elimination expert that helps you create strategic plans to pay off debt efficiently, improve credit scores, and achieve financial freedom using proven methods tailored to your specific situation.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "debt-payoff",
         "debt-consolidation",
@@ -2918,7 +2929,7 @@
     {
       "title": "Digital Government Transformation Expert",
       "description": "Professional prompt combining Digital Transformation Director and Public Sector Innovation Manager expertise for Digital Transformation workflows",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "government",
         "digital transformation"
@@ -2940,7 +2951,7 @@
     {
       "title": "Digital Government Transformation Strategy",
       "description": "This prompt helps government leaders develop comprehensive digital transformation strategies that modernize public service delivery, improve citizen experience, and optimize government operations while ensuring security, compliance, and democratic accountability.",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "digital transformation",
         "e-governance",
@@ -2989,7 +3000,7 @@
     {
       "title": "Digital Identity Platform Architect",
       "description": "This prompt helps government technology leaders design and implement comprehensive digital identity platforms that enable secure, convenient citizen authentication across all government services while maintaining privacy, security, and accessibility standards.",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "digital identity",
         "authentication",
@@ -3017,7 +3028,7 @@
     {
       "title": "Digital Minimalism Coach",
       "description": "An interactive digital wellness consultant that helps you optimize your relationship with technology for better focus, productivity, and well-being. Creates personalized strategies for reducing digital overwhelm while maintaining necessary connectivity.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "digital-minimalism",
         "technology-management",
@@ -3045,7 +3056,7 @@
     {
       "title": "Digital Minimalism Strategist",
       "description": "A comprehensive digital minimalism consultant that helps you create intentional relationships with technology, eliminate digital distractions, and reclaim your attention for meaningful work and life experiences.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "digital-minimalism",
         "distraction-elimination",
@@ -3145,7 +3156,7 @@
     {
       "title": "Docker Production Patterns",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -3385,7 +3396,7 @@
     {
       "title": "Email Marketing Specialist",
       "description": "A comprehensive email marketing expert that helps you create engaging email campaigns, grow your subscriber list, and optimize conversions through strategic email content.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "email-marketing",
         "newsletter",
@@ -3413,7 +3424,7 @@
     {
       "title": "Email Newsletter Strategist",
       "description": "An interactive email newsletter consultant that helps you create engaging email campaigns that build relationships with subscribers and drive business results. Develops comprehensive email strategies from content planning to automation.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "email-marketing",
         "newsletter-strategy",
@@ -3469,7 +3480,7 @@
     {
       "title": "Emergency Fund Builder",
       "description": "A specialized emergency fund strategist that helps you build and maintain the right amount of emergency savings for your situation, providing financial security and peace of mind for unexpected life events.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "emergency-fund",
         "financial-security",
@@ -3497,7 +3508,7 @@
     {
       "title": "Emotional Intelligence Coach",
       "description": "A comprehensive emotional intelligence coach that helps you develop self-awareness, emotional regulation, empathy, and social skills for better relationships and success.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "emotional-intelligence",
         "self-awareness",
@@ -3525,7 +3536,7 @@
     {
       "title": "Emotional Intelligence Enhancer",
       "description": "An interactive emotional intelligence coach that helps you develop stronger emotional awareness, regulation, and social skills. Creates personalized development plans for enhancing all components of emotional intelligence.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "emotional-intelligence",
         "self-awareness",
@@ -3553,7 +3564,7 @@
     {
       "title": "Empathy Development Coach",
       "description": "An interactive empathy coach that helps you develop deeper understanding and connection with others through enhanced perspective-taking abilities and emotional awareness.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "empathy",
         "emotional-intelligence",
@@ -3599,7 +3610,7 @@
     {
       "title": "Energy Management Optimizer",
       "description": "An advanced energy management consultant that helps you optimize your natural energy cycles, eliminate energy drains, and maximize your productivity by working with your body's rhythms rather than against them.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "energy-management",
         "circadian-rhythm",
@@ -3745,7 +3756,7 @@
     {
       "title": "Estate Planning Advisor",
       "description": "A comprehensive estate planning expert that helps you create strategies for asset protection, legacy planning, and ensuring your wishes are carried out effectively.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "estate-planning",
         "wills",
@@ -3820,7 +3831,7 @@
     {
       "title": "Execution Instructions for AI Prompt Research Assistant",
       "description": "Professional prompt for development optimization and expert consultation",
-      "category": "development",
+      "category": "learning-development",
       "tags": [
         "development"
       ],
@@ -3915,7 +3926,7 @@
     {
       "title": "Expense Tracking Optimizer",
       "description": "An interactive expense tracking consultant that helps you create effective systems for monitoring and optimizing your spending patterns to achieve better financial control and goal achievement.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "expense-tracking",
         "budgeting",
@@ -3943,7 +3954,7 @@
     {
       "title": "Family Relationship Counselor",
       "description": "A comprehensive family relationship expert that helps you improve family dynamics, resolve conflicts, and strengthen bonds through better communication and understanding.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "family-relationships",
         "family-dynamics",
@@ -4105,7 +4116,7 @@
     {
       "title": "Financial Goal Tracker",
       "description": "An interactive financial goal strategist that helps you set, track, and achieve meaningful financial objectives through systematic planning and progress monitoring. Creates actionable plans with accountability systems for sustained financial progress.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "financial-goals",
         "goal-tracking",
@@ -4216,7 +4227,7 @@
     {
       "title": "Fitness Routine Optimizer",
       "description": "Professional prompt for health and fitness optimization",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "health wellness",
         "fitness"
@@ -4259,7 +4270,7 @@
     {
       "title": "Focus and Deep Work Strategist",
       "description": "A cognitive performance specialist that helps you develop laser-sharp focus, eliminate distractions, and create optimal conditions for deep, meaningful work that produces exceptional results.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "focus",
         "deep-work",
@@ -4287,7 +4298,7 @@
     {
       "title": "Freelance Business Builder",
       "description": "A comprehensive freelance business consultant that helps you build a successful independent career with strong client relationships and sustainable income.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "freelancing",
         "independent-work",
@@ -4446,7 +4457,7 @@
     {
       "title": "Goal Achievement Architect",
       "description": "A comprehensive goal achievement specialist that helps you set meaningful goals, create actionable plans, maintain motivation, and systematically achieve what matters most to you.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "goal-setting",
         "achievement",
@@ -4474,7 +4485,7 @@
     {
       "title": "Government API Strategy Developer",
       "description": "This prompt helps government technology leaders develop comprehensive API strategies that enable seamless system integration, interagency collaboration, and scalable digital service delivery while ensuring security, compliance, and performance standards.",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "government APIs",
         "API strategy",
@@ -4502,7 +4513,7 @@
     {
       "title": "Government API Strategy Expert",
       "description": "Professional prompt combining Government API Architect and Digital Services Manager expertise for Government API Development workflows",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "government",
         "government api development"
@@ -4552,7 +4563,7 @@
     {
       "title": "Habit Formation Strategist",
       "description": "A behavioral change specialist that helps you build lasting positive habits and eliminate negative ones using science-backed strategies tailored to your personality and circumstances.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "habits",
         "behavior-change",
@@ -4692,7 +4703,7 @@
     {
       "title": "Hydration Habit Builder",
       "description": "An interactive hydration coach that helps you develop consistent water intake habits for improved health, energy, and wellness through personalized strategies and tracking systems.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "hydration",
         "health-habits",
@@ -4792,7 +4803,7 @@
     {
       "title": "Influencer Marketing Strategist",
       "description": "A comprehensive influencer marketing expert that helps you build influence, secure brand partnerships, and monetize your social media presence effectively.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "influencer-marketing",
         "brand-partnerships",
@@ -4891,7 +4902,7 @@
     {
       "title": "Insurance Planning Expert",
       "description": "A comprehensive insurance planning consultant that helps you assess insurance needs and create optimal coverage strategies for financial protection.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "insurance-planning",
         "risk-management",
@@ -4946,7 +4957,7 @@
     {
       "title": "Interview Preparation Coach",
       "description": "A comprehensive interview coach that helps you prepare for job interviews with confidence, compelling answers, and strategic presentation of your qualifications.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "interview-prep",
         "job-search",
@@ -4974,7 +4985,7 @@
     {
       "title": "Interview Preparation Specialist",
       "description": "An interactive interview coach that helps you prepare comprehensively for job interviews through research, practice, and strategic positioning. Provides personalized preparation plans for different interview types and situations.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "interview-preparation",
         "job-interviews",
@@ -5031,7 +5042,7 @@
     {
       "title": "Investment Planning Advisor",
       "description": "A comprehensive investment planning specialist that helps you create personalized investment strategies, build diversified portfolios, and plan for long-term financial goals based on your risk tolerance and timeline.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "investment-strategy",
         "portfolio-planning",
@@ -5059,7 +5070,7 @@
     {
       "title": "Investment Strategy Optimizer",
       "description": "An interactive investment advisor that helps you develop personalized investment strategies based on your financial goals, risk tolerance, and time horizon. Provides comprehensive portfolio recommendations and ongoing optimization guidance.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "investment-strategy",
         "portfolio-optimization",
@@ -5087,7 +5098,7 @@
     {
       "title": "Job Search Optimizer",
       "description": "A comprehensive job search strategist that helps you optimize every aspect of your job hunt, from resume and LinkedIn optimization to interview preparation and salary negotiation, tailored to your industry and career goals.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "job-search",
         "resume-optimization",
@@ -5133,7 +5144,7 @@
     {
       "title": "Knowledge Retention Enhancer",
       "description": "An interactive memory and retention coach that helps you improve your ability to retain and recall information. Develops personalized strategies for better learning outcomes and knowledge management.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "memory-improvement",
         "learning-retention",
@@ -5195,7 +5206,7 @@
     {
       "title": "Language Learning Accelerator",
       "description": "A comprehensive language learning coach that creates personalized strategies for rapid language acquisition and fluency development.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "language-learning",
         "fluency-building",
@@ -5223,7 +5234,7 @@
     {
       "title": "Language Learning Strategist",
       "description": "An interactive language learning consultant that creates personalized strategies for effective foreign language acquisition based on your goals, learning style, and available time.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "language-learning",
         "skill-acquisition",
@@ -5342,7 +5353,7 @@
     {
       "title": "Leadership Development Coach",
       "description": "An interactive leadership development coach that helps you build essential leadership skills and capabilities. Creates personalized development plans for emerging and experienced leaders at all organizational levels.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "leadership-development",
         "management-skills",
@@ -5466,7 +5477,7 @@
     {
       "title": "Life Purpose Discovery Guide",
       "description": "A comprehensive purpose discovery coach that helps you identify your life purpose and create meaningful direction through deep self-exploration and values alignment.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "life-purpose",
         "meaning",
@@ -5692,7 +5703,7 @@
     {
       "title": "Mcp Enabler Comprehensive",
       "description": "Professional prompt for development optimization and expert consultation",
-      "category": "development",
+      "category": "learning-development",
       "tags": [
         "development"
       ],
@@ -5797,7 +5808,7 @@
     {
       "title": "Memory Improvement Trainer",
       "description": "An interactive memory training coach that helps you develop stronger memory abilities through proven techniques and cognitive training methods for enhanced learning and daily performance.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "memory-training",
         "cognitive-enhancement",
@@ -5837,7 +5848,7 @@
     {
       "title": "Mental Health Support System",
       "description": "An interactive mental health support consultant that helps you build comprehensive emotional wellness systems. Provides evidence-based strategies for managing stress, building resilience, and maintaining mental health through practical daily practices.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "mental-health",
         "emotional-wellness",
@@ -5865,7 +5876,7 @@
     {
       "title": "Mental Health Supporter",
       "description": "A supportive mental health guide that helps you develop strategies for emotional wellness, stress management, and building resilience.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "mental-health",
         "emotional-wellness",
@@ -5927,7 +5938,7 @@
     {
       "title": "Mindfulness Meditation Guide",
       "description": "An interactive mindfulness and meditation coach that helps you establish and deepen a personal meditation practice tailored to your lifestyle, goals, and experience level.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "mindfulness",
         "meditation",
@@ -5955,7 +5966,7 @@
     {
       "title": "Mindfulness Productivity Expert",
       "description": "An interactive mindfulness and productivity coach that helps you integrate mindfulness practices with productivity systems for enhanced focus, reduced stress, and sustainable high performance.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "mindfulness",
         "productivity",
@@ -6046,7 +6057,7 @@
     {
       "title": "Networking Strategist",
       "description": "A comprehensive networking expert that helps you build meaningful professional relationships, expand your network, and create career opportunities through strategic networking.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "networking",
         "professional-relationships",
@@ -6101,7 +6112,7 @@
     {
       "title": "Nutrition Optimization Planner",
       "description": "An interactive nutrition consultant that helps you develop personalized meal plans and eating strategies based on your health goals, dietary preferences, and lifestyle constraints. Focuses on sustainable, science-based approaches to optimal nutrition.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "nutrition",
         "meal-planning",
@@ -6147,7 +6158,7 @@
     {
       "title": "Online Learning Optimizer",
       "description": "An interactive learning strategist that helps you maximize the effectiveness of online education by creating personalized learning plans, optimizing retention techniques, and designing sustainable study systems for skill acquisition.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "online-learning",
         "skill-development",
@@ -6308,7 +6319,7 @@
     {
       "title": "Parenting Strategy Guide",
       "description": "A comprehensive parenting expert that helps you develop effective parenting strategies, improve family communication, and support your children's healthy development.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "parenting",
         "child-development",
@@ -6403,7 +6414,7 @@
     {
       "title": "Peak Performance Optimizer",
       "description": "A comprehensive performance optimization coach that helps you achieve peak performance in all areas of life through strategic optimization of physical, mental, and operational systems.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "peak-performance",
         "optimization",
@@ -6528,7 +6539,7 @@
     {
       "title": "Performance Review Optimizer",
       "description": "An interactive performance review strategist that helps you prepare comprehensive self-evaluations, document achievements, and create compelling cases for advancement and development opportunities.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "performance-reviews",
         "career-advancement",
@@ -6573,7 +6584,7 @@
     {
       "title": "Personal Branding Strategist",
       "description": "An interactive personal branding consultant that helps you develop a compelling professional identity and online presence that advances your career goals and opportunities.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "personal-branding",
         "professional-identity",
@@ -6601,7 +6612,7 @@
     {
       "title": "Personal Budget Optimizer",
       "description": "A comprehensive personal finance consultant that helps you create realistic budgets, optimize expenses, and build sustainable money management systems aligned with your financial goals and lifestyle.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "budgeting",
         "personal-finance",
@@ -6629,7 +6640,7 @@
     {
       "title": "Personal Values Clarifier",
       "description": "An interactive values exploration coach that helps you identify, clarify, and integrate your core personal values for more authentic living and better decision-making.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "values-clarification",
         "life-purpose",
@@ -6713,7 +6724,7 @@
     {
       "title": "Podcast Content Strategist",
       "description": "A comprehensive podcast strategist that helps you plan, create, and grow successful podcast content that engages audiences and builds community.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "podcasting",
         "audio-content",
@@ -6932,7 +6943,7 @@
     {
       "title": "Procrastination Elimination Expert",
       "description": "An interactive procrastination coach that helps you understand and overcome procrastination patterns through targeted strategies and sustainable habit formation. Provides personalized solutions for consistent action-taking and goal achievement.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "procrastination",
         "productivity",
@@ -7031,7 +7042,7 @@
     {
       "title": "Productivity System Designer",
       "description": "A comprehensive productivity system architect that helps you design and implement a personalized productivity framework tailored to your specific goals, work style, and life circumstances.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "productivity-system",
         "workflow-design",
@@ -7059,7 +7070,7 @@
     {
       "title": "Productivity System Optimizer",
       "description": "An interactive productivity consultant that helps you design and optimize personalized productivity systems. Combines multiple methodologies to create sustainable workflows that maximize efficiency while maintaining work-life balance.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "productivity-systems",
         "workflow-optimization",
@@ -7088,7 +7099,7 @@
     {
       "title": "Professional Certification Planner",
       "description": "An interactive certification strategist that helps you select, plan for, and successfully obtain professional certifications that advance your career goals. Creates comprehensive study plans and preparation strategies.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "certification-planning",
         "professional-development",
@@ -7116,7 +7127,7 @@
     {
       "title": "Professional Networking Strategist",
       "description": "A strategic networking specialist that helps you build meaningful professional relationships, expand your network effectively, and leverage connections for career advancement and business opportunities.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "networking",
         "relationship-building",
@@ -7280,7 +7291,7 @@
     {
       "title": "Public Speaking Coach",
       "description": "A comprehensive public speaking coach that helps you overcome speaking anxiety, improve presentation skills, and communicate with confidence and impact.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "public-speaking",
         "presentation-skills",
@@ -7336,7 +7347,7 @@
     {
       "title": "Python Project Ci Cd",
       "description": "Professional prompt for development optimization and expert consultation",
-      "category": "development",
+      "category": "learning-development",
       "tags": [
         "development"
       ],
@@ -7671,7 +7682,7 @@
     {
       "title": "Real Estate Investment Analyst",
       "description": "A comprehensive real estate investment expert that helps you analyze properties, markets, and investment strategies for building wealth through real estate.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "real-estate",
         "property-investment",
@@ -7726,7 +7737,7 @@
     {
       "title": "Register New Mcp Servers",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -7794,7 +7805,7 @@
     {
       "title": "Remote Work Optimizer",
       "description": "A comprehensive remote work consultant that helps you optimize your work-from-home setup, productivity, and career success in distributed teams.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "remote-work",
         "productivity",
@@ -7822,7 +7833,7 @@
     {
       "title": "Repo Documentation",
       "description": "Professional prompt for project-management optimization and expert consultation",
-      "category": "project-management",
+      "category": "management-leadership",
       "tags": [
         "project management"
       ],
@@ -7872,7 +7883,7 @@
     {
       "title": "GitHub Repository Setup Automation",
       "description": "Professional prompt for project-management optimization and expert consultation",
-      "category": "project-management",
+      "category": "management-leadership",
       "tags": [
         "project management"
       ],
@@ -7948,7 +7959,7 @@
     {
       "title": "Research Methodology Expert",
       "description": "A comprehensive research methodology expert that helps you develop effective research skills, critical thinking, and information analysis capabilities for academic and professional success.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "research-skills",
         "academic-research",
@@ -7976,7 +7987,7 @@
     {
       "title": "Resilience Building Coach",
       "description": "A comprehensive resilience coach that helps you build mental strength, emotional resilience, and the ability to bounce back from challenges and setbacks.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "resilience",
         "mental-strength",
@@ -8004,7 +8015,7 @@
     {
       "title": "Resilience Building Expert",
       "description": "An interactive resilience coach that helps you build mental and emotional strength to navigate life's challenges with greater ease and bounce back from setbacks more effectively.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "resilience",
         "mental-strength",
@@ -8142,7 +8153,7 @@
     {
       "title": "Retirement Planning Specialist",
       "description": "A comprehensive retirement planning expert that helps you calculate retirement needs, optimize savings strategies, plan income sources, and create a realistic path to financial independence at your target retirement age.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "retirement-planning",
         "pension-analysis",
@@ -8271,7 +8282,7 @@
     {
       "title": "Salary Negotiation Expert",
       "description": "An interactive salary negotiation strategist that helps you research, prepare for, and execute successful compensation discussions. Provides comprehensive guidance for maximizing your earning potential while maintaining positive professional relationships.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "salary-negotiation",
         "compensation-planning",
@@ -8563,7 +8574,7 @@
     {
       "title": "Self-Awareness Development Coach",
       "description": "An interactive personal development coach that guides you through comprehensive self-awareness exercises and frameworks to help you understand your values, strengths, patterns, and motivations for meaningful personal growth.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "self-awareness",
         "personal-development",
@@ -8592,7 +8603,7 @@
     {
       "title": "Self-Discipline Developer",
       "description": "A comprehensive self-discipline coach that helps you build willpower, develop consistent habits, and achieve your goals through improved self-control and discipline.",
-      "category": "personal-growth",
+      "category": "learning-development",
       "tags": [
         "self-discipline",
         "willpower",
@@ -8648,7 +8659,7 @@
     {
       "title": "SEO Content Optimizer",
       "description": "A comprehensive SEO content expert that helps you create search-optimized content that ranks well and drives organic traffic to your website.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "seo",
         "search-optimization",
@@ -8698,7 +8709,7 @@
     {
       "title": "Side Hustle Monetizer",
       "description": "A comprehensive side hustle strategist that helps you identify, develop, and monetize opportunities for additional income streams.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "side-income",
         "entrepreneurship",
@@ -8726,7 +8737,7 @@
     {
       "title": "Side Income Developer",
       "description": "An interactive side income strategist that helps you identify, develop, and optimize additional income streams to accelerate your financial goals. Creates actionable plans for building sustainable secondary income sources.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "side-income",
         "passive-income",
@@ -8754,7 +8765,7 @@
     {
       "title": "Skill Acquisition Accelerator",
       "description": "An interactive skill development coach that helps you rapidly acquire new skills using evidence-based learning techniques. Designs personalized learning paths that minimize time to competency while maximizing retention and practical application.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "skill-development",
         "accelerated-learning",
@@ -8799,7 +8810,7 @@
     {
       "title": "Skill Development Planner",
       "description": "A comprehensive skill development specialist that helps you identify skill gaps, create strategic learning plans, and build the competencies needed for career advancement and professional success.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "skill-building",
         "professional-development",
@@ -8827,7 +8838,7 @@
     {
       "title": "Skill Gap Analyzer",
       "description": "A comprehensive skill assessment expert that helps you identify skill gaps, create development plans, and align your capabilities with career goals.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "skill-assessment",
         "career-development",
@@ -8855,7 +8866,7 @@
     {
       "title": "Sleep Optimization Specialist",
       "description": "A comprehensive sleep optimization expert that helps you improve sleep quality, optimize recovery, and enhance overall energy and health.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "sleep-quality",
         "recovery",
@@ -8883,7 +8894,7 @@
     {
       "title": "Sleep Quality Optimizer",
       "description": "An interactive sleep optimization consultant that helps you analyze and improve your sleep quality through evidence-based strategies. Creates personalized sleep improvement plans that enhance energy, health, and overall well-being.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "sleep-optimization",
         "sleep-hygiene",
@@ -8911,7 +8922,7 @@
     {
       "title": "Smart City Platform Architect",
       "description": "This prompt helps city leaders and urban technology specialists design comprehensive smart city platforms that integrate IoT sensors, data analytics, and citizen services to optimize urban operations, improve quality of life, and create sustainable, responsive cities.",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "smart cities",
         "IoT",
@@ -8939,7 +8950,7 @@
     {
       "title": "Smart City Platform Development Expert",
       "description": "Professional prompt combining Smart City Technology Manager and Urban Planning Director expertise for Smart City Development workflows",
-      "category": "government",
+      "category": "government-digital",
       "tags": [
         "government",
         "smart city development"
@@ -9034,7 +9045,7 @@
     {
       "title": "Social Media Strategy Optimizer",
       "description": "An interactive social media strategist that helps you develop comprehensive social media plans tailored to your brand, audience, and business goals. Creates sustainable content strategies that drive engagement and growth.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "social-media",
         "content-strategy",
@@ -9062,7 +9073,7 @@
     {
       "title": "Social Skills Developer",
       "description": "A comprehensive social skills coach that helps you improve interpersonal communication, build stronger relationships, and feel more confident in social situations.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "social-skills",
         "interpersonal-communication",
@@ -9538,7 +9549,7 @@
     {
       "title": "Storytelling Framework Designer",
       "description": "A comprehensive storytelling coach that helps you craft compelling narratives for any medium or purpose using proven storytelling frameworks and techniques.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "storytelling",
         "narrative-design",
@@ -9657,7 +9668,7 @@
     {
       "title": "Stress Management Strategist",
       "description": "A comprehensive stress management specialist that helps you identify stress sources, build resilience, and create sustainable strategies for managing pressure while maintaining high performance and well-being.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "stress-management",
         "wellness",
@@ -9685,7 +9696,7 @@
     {
       "title": "Stress Reduction Strategist",
       "description": "An interactive stress management consultant that helps you identify stress triggers and develop effective coping strategies. Creates personalized stress reduction plans that fit your lifestyle and improve overall well-being.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "stress-management",
         "relaxation",
@@ -9713,7 +9724,7 @@
     {
       "title": "Stress Resilience Builder",
       "description": "A comprehensive stress management expert that helps you build resilience, develop effective coping strategies, and maintain mental wellness under pressure.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "stress-management",
         "resilience",
@@ -10099,7 +10110,7 @@
     {
       "title": "Tax Optimization Strategist",
       "description": "An interactive tax planning consultant that helps you develop comprehensive tax optimization strategies to minimize tax liability while maximizing wealth building opportunities. Provides practical, legal strategies for individuals and small business owners.",
-      "category": "financial-planning",
+      "category": "planning",
       "tags": [
         "tax-optimization",
         "tax-planning",
@@ -10318,7 +10329,7 @@
     {
       "title": "Technical Skill Accelerator",
       "description": "A comprehensive technical skills coach that helps you rapidly develop programming, technology, and digital skills for career advancement.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "technical-skills",
         "programming",
@@ -10385,7 +10396,7 @@
     {
       "title": "Terraform Formatting Prompt",
       "description": "Professional prompt for technical optimization and expert consultation",
-      "category": "technical",
+      "category": "technical-workflows",
       "tags": [
         "technical"
       ],
@@ -10441,7 +10452,7 @@
     {
       "title": "Time Management for Students",
       "description": "A comprehensive student time management expert that helps you optimize study schedules, balance academic and personal life, and achieve academic success efficiently.",
-      "category": "learning-skills",
+      "category": "learning-development",
       "tags": [
         "student-productivity",
         "time-management",
@@ -10469,7 +10480,7 @@
     {
       "title": "Time Management Optimizer",
       "description": "An interactive time management consultant that helps you optimize your daily schedule, eliminate time wasters, and create sustainable productivity systems. Provides personalized recommendations based on your specific situation and goals.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "time-management",
         "productivity",
@@ -10844,7 +10855,7 @@
     {
       "title": "Video Content Creator",
       "description": "An interactive video content strategist that helps you create engaging video content for various platforms and purposes. Develops comprehensive video strategies from concept to distribution.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "video-production",
         "content-strategy",
@@ -10901,7 +10912,7 @@
     {
       "title": "Weight Management Coach",
       "description": "A comprehensive weight management expert that helps you develop sustainable strategies for achieving and maintaining a healthy weight through lifestyle changes.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "weight-management",
         "healthy-lifestyle",
@@ -10951,7 +10962,7 @@
     {
       "title": "Work-Life Balance Optimizer",
       "description": "A specialized consultant for creating sustainable work-life integration that reduces stress, protects personal time, and helps you thrive in all areas of life while maintaining professional success.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "work-life-balance",
         "boundaries",
@@ -10979,7 +10990,7 @@
     {
       "title": "Workflow Automation Specialist",
       "description": "An interactive automation consultant that helps you identify, design, and implement automated workflows to eliminate repetitive tasks and maximize efficiency. Focuses on practical, sustainable automation solutions using accessible tools and techniques.",
-      "category": "personal-productivity",
+      "category": "optimization",
       "tags": [
         "workflow-automation",
         "productivity-tools",
@@ -11054,7 +11065,7 @@
     {
       "title": "Workout Routine Designer",
       "description": "A comprehensive fitness coach that creates personalized workout routines based on your goals, fitness level, and available time and equipment.",
-      "category": "health-wellness",
+      "category": "healthcare-digital",
       "tags": [
         "fitness",
         "exercise",
@@ -11082,7 +11093,7 @@
     {
       "title": "Workplace Communication Expert",
       "description": "A comprehensive workplace communication expert that helps you improve professional relationships, enhance team collaboration, and communicate effectively in office environments.",
-      "category": "relationships-communication",
+      "category": "communication",
       "tags": [
         "workplace-communication",
         "professional-relationships",
@@ -11110,7 +11121,7 @@
     {
       "title": "Workplace Productivity Optimizer",
       "description": "A comprehensive workplace productivity expert that helps you optimize your work performance, manage time effectively, and create efficient workflows.",
-      "category": "career-development",
+      "category": "learning-development",
       "tags": [
         "workplace-efficiency",
         "productivity",
@@ -11138,7 +11149,7 @@
     {
       "title": "YouTube Content Strategist",
       "description": "A comprehensive YouTube strategist that helps you create engaging video content, grow your channel, and build a successful YouTube presence.",
-      "category": "content-creation",
+      "category": "creation",
       "tags": [
         "youtube",
         "video-content",

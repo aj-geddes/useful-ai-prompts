@@ -79,23 +79,23 @@ Great! Based on your inputs, here's your comprehensive creative brief:
 Launch campaign for innovative eco-friendly water bottle line targeting health-conscious urban millennials/Gen Z. Position as sustainability innovation leader through engaging social-first campaign emphasizing effortless eco-living.
 
 **Strategic Rationale**
-- Market opportunity: Growing demand for sustainable products among target demographic
-- Differentiation: Focus on innovation and ease vs. guilt-based messaging
-- Brand building: Establish leadership position in emerging category
+- Market opportunity → Growing demand for sustainable products among target demographic
+- Differentiation → Focus on innovation and ease vs. guilt-based messaging
+- Brand building → Establish leadership position in emerging category
 
 **Objectives & Success Metrics**
 Primary: 25% market share in sustainable beverage category (6 months)
 - Sales: 150,000 units sold
 - Awareness: 40% aided awareness among target
 - Engagement: 5M+ social impressions, 15% engagement rate
-- Retail: Placement in 500+ stores
+- Retail → Placement in 500+ stores
 
 **Target Audience Profile**
 **Primary**: Urban Millennials/Gen Z (25-35)
-- Values: Health, sustainability, authenticity, innovation
-- Behavior: Active on social, influence peers, early adopters
-- Pain points: Eco-fatigue, skeptical of greenwashing
-- Media: Instagram (primary), TikTok, podcasts
+- Values → Health, sustainability, authenticity, innovation
+- Behavior → Active on social, influence peers, early adopters
+- Pain points → Eco-fatigue, skeptical of greenwashing
+- Media → Instagram (primary), TikTok, podcasts
 
 **Creative Direction**
 **Tone**: Optimistic, innovative, effortless, authentic
@@ -112,8 +112,8 @@ Supporting:
 **Channel Strategy & Deliverables**
 
 **Social Media (40% budget - $300K)**
-- Instagram: Daily stories, reels, IGTV series
-- TikTok: Challenges, behind-scenes, user content
+- Instagram → Daily stories, reels, IGTV series
+- TikTok → Challenges, behind-scenes, user content
 - Content calendar: 180 days of content
 
 **Influencer Partnerships (25% - $187.5K)**

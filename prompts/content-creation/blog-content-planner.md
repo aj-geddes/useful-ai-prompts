@@ -117,18 +117,18 @@ Based on your personal finance focus and coaching business goals, I'll design a 
 PRIMARY AUDIENCE: "Ambitious Ashley"
 - Age: 27-33, college graduate
 - Income: $65,000-85,000 annually
-- Situation: Early career, student loans, wants to build wealth
-- Pain Points: Overwhelmed by financial advice, analysis paralysis
-- Goals: Pay off debt, start investing, buy a home
-- Content Preferences: Step-by-step guides, real examples, actionable tips
+- Situation → Early career, student loans, wants to build wealth
+- Pain Points → Overwhelmed by financial advice, analysis paralysis
+- Goals → Pay off debt, start investing, buy a home
+- Content Preferences → Step-by-step guides, real examples, actionable tips
 
 SECONDARY AUDIENCE: "Career-Focused Chris"
 - Age: 28-35, established in career
 - Income: $75,000-100,000 annually
-- Situation: Good income but poor money habits, lifestyle inflation
-- Pain Points: Knows what to do but struggles with execution
-- Goals: Optimize investments, plan for major purchases, increase savings rate
-- Content Preferences: Advanced strategies, optimization tips, mindset content
+- Situation → Good income but poor money habits, lifestyle inflation
+- Pain Points → Knows what to do but struggles with execution
+- Goals → Optimize investments, plan for major purchases, increase savings rate
+- Content Preferences → Advanced strategies, optimization tips, mindset content
 ```
 
 ### Content Pillar Strategy

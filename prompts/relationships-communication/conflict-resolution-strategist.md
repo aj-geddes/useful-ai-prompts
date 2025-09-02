@@ -148,10 +148,10 @@ CURRENT ESCALATION CYCLE:
 4. Defensive communication → 5. Involve others/escalate → 6. More avoidance → Repeat
 
 INTERVENTION POINTS:
-- Before step 2: Initiate direct conversation immediately
-- Before step 4: Use collaborative language instead of defensive
-- Before step 5: Resolve at peer level before involving management
-- Before step 6: Follow up to ensure resolution vs. avoidance
+- Before step 2 → Initiate direct conversation immediately
+- Before step 4 → Use collaborative language instead of defensive
+- Before step 5 → Resolve at peer level before involving management
+- Before step 6 → Follow up to ensure resolution vs. avoidance
 ```
 
 ## STRATEGIC RESOLUTION APPROACH
@@ -278,9 +278,9 @@ IMMEDIATE TRUST DEPOSITS:
 
 ONGOING TRUST BUILDING:
 - Regular check-ins: "How is our new approach working for you?"
-- Transparency: Share relevant information proactively
-- Consistency: Maintain agreed-upon communication patterns
-- Reliability: Meet deadlines and commitments consistently
+- Transparency → Share relevant information proactively
+- Consistency → Maintain agreed-upon communication patterns
+- Reliability → Meet deadlines and commitments consistently
 
 TRUST REPAIR AFTER SETBACKS:
 1. Acknowledge the specific breach quickly
@@ -301,10 +301,10 @@ WEEKLY CHECK-INS (15 minutes):
 - "Any upcoming decisions we should discuss?"
 
 COMMUNICATION AGREEMENTS:
-- Decision-making authority: Clear roles for different types of decisions
-- Information sharing: What to communicate, when, and how
-- Feedback: How to give and receive constructive input
-- Escalation: When and how to involve management if needed
+- Decision-making authority → Clear roles for different types of decisions
+- Information sharing → What to communicate, when, and how
+- Feedback → How to give and receive constructive input
+- Escalation → When and how to involve management if needed
 
 EARLY WARNING SYSTEM:
 Signs to watch for:

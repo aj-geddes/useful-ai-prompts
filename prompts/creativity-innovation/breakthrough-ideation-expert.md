@@ -87,21 +87,21 @@ Instead of charging stations, what if roads themselves delivered power?
 - Wireless charging lanes on highways
 - Cars charge WHILE driving
 - No stopping needed at all
-- Breakthrough: Transform infrastructure, not batteries
+- Breakthrough → Transform infrastructure, not batteries
 
 **2. Capacitor Hybrid Systems**
 What if we combined batteries with supercapacitors?
 - Supercaps charge in seconds, provide instant power
 - Battery provides range, capacitor provides burst charging
 - 80% charge in 3 minutes from capacitor swap
-- Breakthrough: Dual energy storage changes the game
+- Breakthrough → Dual energy storage changes the game
 
 **3. Modular Micro-Battery Architecture**
 Instead of one large battery, use 100 small ones:
 - Charge them in parallel at different stations
 - Hot-swap depleted modules while driving
 - Distributed risk, faster charging per module
-- Breakthrough: Decentralized energy storage
+- Breakthrough → Decentralized energy storage
 
 **CROSS-INDUSTRY INSPIRATION**
 

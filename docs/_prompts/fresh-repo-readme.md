@@ -55,9 +55,7 @@ prompt: |
   | 
   
 title: Fresh Repo Readme
----------- | ----------- | ----------- | -------- |
 
-  | **Role 1** | ✅ Features | ✅ Benefits | ✅ Tools |
 
 
   ## 🏷️ Technology Coverage

@@ -371,15 +371,15 @@ Enterprise      0     2     5     10
 ### Communication Cadence
 
 **Internal**:
-- Weekly: Engineering standups
-- Bi-weekly: Stakeholder updates
-- Monthly: Customer advisory board
-- Quarterly: Board review
+- Weekly → Engineering standups
+- Bi-weekly → Stakeholder updates
+- Monthly → Customer advisory board
+- Quarterly → Board review
 
 **External**:
-- Monthly: Product updates blog
-- Quarterly: Roadmap refresh
-- Annual: Vision presentation
+- Monthly → Product updates blog
+- Quarterly → Roadmap refresh
+- Annual → Vision presentation
 
 This roadmap balances fixing current issues while building toward your growth goals. The key is maintaining flexibility while staying focused on the strategic themes.
 

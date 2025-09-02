@@ -117,10 +117,10 @@ Current State: Basic AD + Office 365
 Target State: Unified Identity Platform
 
 Implementation:
-- Phase 1: Azure AD + Conditional Access
-- Phase 2: Okta for SaaS SSO
-- Phase 3: CyberArk PAM for privileged accounts
-- Phase 4: Passwordless authentication
+- Phase 1 → Azure AD + Conditional Access
+- Phase 2 → Okta for SaaS SSO
+- Phase 3 → CyberArk PAM for privileged accounts
+- Phase 4 → Passwordless authentication
 
 Investment: $150K/year
 ROI: 80% reduction in account compromise

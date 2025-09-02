@@ -5,6 +5,7 @@
 
 - **Category**: Creation
 - **Tags**: presentation design, visual communication, slide design, storytelling, executive presentations
+- **Use Cases**: presentation creation, slide design, visual storytelling, business presentations
 - **Version**: 2.0.0
 - **Use Cases**: pitch decks, executive presentations, conference talks, training materials, sales presentations
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
@@ -100,7 +101,7 @@ Seed Investment Deck | March 2024
 ### Slide 2: The Problem
 
 **Visual Design:**
-- Split screen: Food waste image left, statistics right
+- Split screen → Food waste image left, statistics right
 - Red color for emphasis
 
 **Content:**
@@ -394,9 +395,9 @@ jane@foodsave.ai | (555) 123-4567
 - Text: #2C3E50 (Readable Dark)
 
 **Typography:**
-- Headlines: Montserrat Bold, 36-48pt
-- Body: Open Sans Regular, 18-24pt
-- Data: Roboto Medium, 16-20pt
+- Headlines → Montserrat Bold, 36-48pt
+- Body → Open Sans Regular, 18-24pt
+- Data → Roboto Medium, 16-20pt
 
 **Layout Principles:**
 - Maximum 6 lines of text per slide
@@ -409,10 +410,10 @@ jane@foodsave.ai | (555) 123-4567
 **Total Time:** 10 minutes (9:30 content + 0:30 buffer)
 
 **Pacing Guide:**
-- Slides 1-3: Hook them (1:30)
-- Slides 4-7: Show the opportunity (3:30)
-- Slides 8-10: Prove you can win (2:30)
-- Slides 11-12: Make the ask (1:30)
+- Slides 1-3 → Hook them (1:30)
+- Slides 4-7 → Show the opportunity (3:30)
+- Slides 8-10 → Prove you can win (2:30)
+- Slides 11-12 → Make the ask (1:30)
 
 **Energy Map:**
 - Start strong with the problem

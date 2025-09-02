@@ -286,9 +286,9 @@ Response Framework:
 **Weekly Metrics**:
 ```
 Activity:
-- Calls Made: Target 50
-- Demos Held: Target 8
-- Proposals Sent: Target 5
+- Calls Made → Target 50
+- Demos Held → Target 8
+- Proposals Sent → Target 5
 
 Quality:
 - Demo → Proposal Rate: >70%

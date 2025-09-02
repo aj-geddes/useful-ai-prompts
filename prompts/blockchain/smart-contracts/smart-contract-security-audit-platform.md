@@ -456,9 +456,9 @@ Emergency Contacts:
 - Audit Firm: [contact]
 
 Communication Channels:
-- Discord: Emergency notifications
-- Twitter: Public updates
-- Blog: Detailed explanations
+- Discord → Emergency notifications
+- Twitter → Public updates
+- Blog → Detailed explanations
 ```
 
 This comprehensive security framework ensures your lending protocol can safely handle the planned $10-50M TVL while protecting user funds from common and advanced attack vectors. The multi-layered approach combines prevention, detection, and response mechanisms for robust security.

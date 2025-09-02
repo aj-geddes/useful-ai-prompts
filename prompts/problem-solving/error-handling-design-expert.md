@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: error handling, resilience, fault tolerance, system design, exception handling
+- **Use Cases**: error handling design, system resilience, fault tolerance, robust architecture
 - **Version**: 2.0.0
 - **Use Cases**: error strategy design, exception handling, fault tolerance, recovery mechanisms, resilient systems
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5

@@ -5,6 +5,7 @@
 
 - **Category**: Problem-Solving
 - **Tags**: debugging, troubleshooting, error analysis, code debugging, problem solving
+- **Use Cases**: debugging, error diagnosis, code troubleshooting, software problem solving
 - **Version**: 2.0.0
 - **Use Cases**: bug fixing, error resolution, code troubleshooting, system debugging, performance issues
 - **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
