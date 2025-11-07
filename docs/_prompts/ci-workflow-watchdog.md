@@ -5,242 +5,199 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for technical optimization and expert consultation
+description: Automated GitHub Actions workflow monitoring with failure analysis, root cause determination, and automated remediation
 layout: prompt
 slug: ci-workflow-watchdog
 tags:
 - technical
-title: Ci Workflow Watchdog
+- ci-cd
+- automation
+- github-actions
+title: CI/CD Workflow Watchdog and Remediation
 use_cases:
 - technical optimization
 - professional workflow enhancement
+- ci-cd monitoring
 version: 3.0.0
-prompt: '## ci-workflow-watchdog Prompt Comparison (Expanded Analysis)
+prompt: |
+  I'll help you set up automated CI/CD workflow monitoring and failure remediation. Let me understand your needs:
 
+  ## Understanding Your CI/CD Monitoring Needs
 
-  This extended analysis introduces and compares three discrete implementations of the `ci-workflow-watchdog` prompt, designed to guide a GitHub-integrated large language model (LLM) agent in executing post-mortem diagnostics, causality determination, and automated resolution of GitHub Actions workflow failures. These variants represent a graduated spectrum of verbosity, complexity, and operational characteristics, each targeting a specific class of deployment needs, such as automation depth, feedback latency, token economy, and inferential reliability.
+  **Repository and Workflow Information:**
+  - Which repository's workflows should I monitor?
+  - What is the default branch? (main, master, develop)
+  - How frequently do workflows run? (on commits, PRs, scheduled)
+  - Are there specific workflows that need priority monitoring?
 
+  **Failure Response Requirements:**
+  - Should I automatically fix issues or alert you first?
+  - What types of failures are most common? (test failures, build errors, deployment issues)
+  - Do you want immediate notifications or periodic summaries?
+  - Are there workflows that should never be auto-fixed?
 
-  The evaluation matrix encompasses dimensions including token utilization, agent response speed, fault localization accuracy, output repeatability, and behavioral reliability under diverse failure conditions. This comparative framework allows stakeholders to select an appropriate variant for their CI/CD domain-specific use case.
+  **Analysis Depth:**
+  - How detailed should failure analysis be? (basic summary, comprehensive root cause, token-efficient)
+  - Do you need historical pattern analysis?
+  - Should I track recurring issues?
+  - Do you want performance metrics for workflows?
 
+  **Remediation Strategy:**
+  - What should happen after a fix? (auto-commit, create PR, create issue)
+  - Should fixes be tested before committing?
+  - Do you need approval workflows for certain changes?
+  - How should successful remediations be documented?
 
-  ---
-
-
-  ### 1. Token-Efficient Variant
-
-
-  **Specification:**
-
-
-  > Evaluate the latest GitHub Actions workflow run on the repository''s default branch.
-
-  >
-
-  > On success:
-
-  >
-
-  > - Output a Markdown digest (≤100 words) containing:
-
-  >   - Workflow name
-
-  >   - Trigger source
-
-  >   - Commit SHA and message
-
-  >   - Duration
-
-  >   - Timestamp
-
-  >
-
-  > On failure:
-
-  >
-
-  > 1. **Analyze**: Detect failed job(s)/step(s), extract and summarize log output
-
-  > 2. **Reason**: Concisely hypothesize root cause
-
-  > 3. **Plan**: Propose 1–3 remediation steps
-
-  > 4. **Fix**: Implement corrections, preserving file context; commit and push
-
-  > 5. **Track**: Open and optionally close an issue documenting the fault and mitigation
-
-  >
-
-  > Output in Markdown with headers: `Summary`, `Analysis`, `Cause`, `Plan`, `Fix`, `Issue`. Avoid redundant narrative or meta-commentary.
-
-
-  **Evaluation:**
-
-
-  - **Token Use:** Minimal. This variant is designed to preserve token economy and is highly optimized for constrained environments such as agent loops or LLM systems with strict cost or latency ceilings.
-
-  - **Speed:** Maximum throughput. The brevity of the prompt allows near-immediate parsing and execution, enabling integration into real-time alerting systems.
-
-  - **Accuracy:** Moderate. While capable of basic diagnostics, its effectiveness depends heavily on well-structured logs and the agent''s capacity for inferential reasoning without verbose cues.
-
-  - **Repeatability:** Medium. Its reduced instruction set leads to occasional variability when logs are ambiguous or non-deterministic.
-
-  - **Reliability:** Medium. Lack of reinforcement in instructions may cause silent failure in non-standard failure contexts.
-
-  - **Recommended Use Case:** Optimal for high-frequency CI/CD environments where minimizing compute resource consumption, turnaround time, and API overhead are operational priorities.
-
+  **Communication Preferences:**
+  - Who should be notified of failures? (team, specific individuals)
+  - What notification channels? (GitHub issues, Slack, email)
+  - How verbose should reports be?
+  - Do you want success notifications too?
 
   ---
 
-
-  ### 2. Balanced Prompt (Hybrid Design)
-
-
-  **Specification:**
-
-
-  > You are a GitHub-native CI/CD assistant. Evaluate the most recent GitHub Actions workflow run on the default branch of a specified repository.
-
-  >
-
-  > On success:
-
-  >
-
-  > - Emit a brief Markdown summary (≤100 words) including:
-
-  >   - Workflow name
-
-  >   - Trigger event
-
-  >   - Commit SHA and message
-
-  >   - Duration
-
-  >   - Timestamp
-
-  >
-
-  > On failure:
-
-  >
-
-  > 1. **Analyze**: Identify failing job(s)/step(s), surface relevant logs
-
-  > 2. **Reason**: Derive causal inference with structured, concise logic
-
-  > 3. **Plan**: Articulate 1–3 proposed resolution steps
-
-  > 4. **Fix**: Apply necessary code or configuration changes; commit and push
-
-  > 5. **Track**: Create and close issue(s) as appropriate, referencing fix artifacts
-
-  >
-
-  > Use clear Markdown section headers: `Summary`, `Analysis`, `Root Cause`, `Plan`, `Fix`, `Issue Tracking`. Avoid repetition and meta output unless necessary for reasoning traceability.
-
-
-  **Evaluation:**
-
-
-  - **Token Use:** Moderate. Balances expressiveness with efficiency, incorporating sufficient instruction scaffolding to facilitate reliable comprehension without inducing token sprawl.
-
-  - **Speed:** High. Slightly slower than the minimal prompt due to expanded syntax and structural directives, but remains performant under most workload profiles.
-
-  - **Accuracy:** High. Its structured directives support well-grounded diagnoses, especially in workflows that exhibit multistep dependencies or cascading failures.
-
-  - **Repeatability:** High. Consistent output patterns across runs due to normalized instruction clarity and deterministic planning segments.
-
-  - **Reliability:** High. Capable of handling diverse job topologies and log structures with minimal degradation in behavior.
-
-  - **Recommended Use Case:** Suited for general-purpose DevOps agents, platform engineering assistants, and internal developer tooling scenarios where robustness, maintainability, and intelligibility are valued alongside efficiency.
-
-
-  ---
-
-
-  ### 3. Verbose Prompt (Maximal Clarity)
-
-
-  **Specification:**
-
-
-  > You are a GitHub-native CI/CD diagnostic agent. Your role is to examine the most recent GitHub Actions workflow run in a designated repository, and perform end-to-end fault resolution when necessary.
-
-  >
-
-  > Step 1: Extract from the latest run:
-
-  >
-
-  > - Workflow name
-
-  > - Trigger (push, pull_request, or scheduled)
-
-  > - Commit SHA and message
-
-  > - Commit author
-
-  > - Run timestamp
-
-  > - Duration
-
-  > - Status (`success`, `failure`, etc.)
-
-  >
-
-  > Step 2: If successful, output a Markdown digest (≤100 words).
-
-  >
-
-  > Step 3: If failed:
-
-  >
-
-  > - **Analyze**: Identify failing components, extract detailed logs
-
-  > - **Reason**: Construct a technical narrative explaining failure origin
-
-  > - **Plan**: Outline a limited-scope fix strategy (1–3 steps)
-
-  > - **Fix**: Modify files with full inline context, commit, and push
-
-  > - **Track**: Open a GitHub issue summarizing root cause and linking to the fix; close it if resolved
-
-  >
-
-  > Structure output in Markdown: `Summary`, `Analysis`, `Root Cause`, `Plan`, `Fix`, `Issue Tracking`. Use full prose where required for clarity. Optimize for interpretability rather than brevity.
-
-
-  **Evaluation:**
-
-
-  - **Token Use:** High. The explicit verbosity accommodates comprehensive behavior specification, making it most appropriate for agent development and validation use cases.
-
-  - **Speed:** Low. Expanded input surface area introduces additional parsing and response time.
-
-  - **Accuracy:** Very High. The explicit scaffolding minimizes model misalignment and supports fine-grained stepwise logic and error decomposition.
-
-  - **Repeatability:** Very High. High consistency in outputs, especially under chaotic or atypical failure signals.
-
-  - **Reliability:** Very High. Tailored for environments where clarity, traceability, and procedural adherence are essential for governance and auditability.
-
-  - **Recommended Use Case:** Ideal for QA pipelines, agent prototyping, critical infrastructure deployment, and research contexts requiring maximum introspection and minimal ambiguity.
-
-
-  ---
-
-
-  ### Comparative Summary
-
-
-  | Prompt Type       | Token Use | Speed | Accuracy  | Repeatability | Reliability | Recommended Use Case                                |
-
-  | ----------------- | --------- | ----- | --------- | ------------- | ----------- | --------------------------------------------------- |
-
-  | Token-Efficient   | Low       | High  | Moderate  | Medium        | Medium      | Batch CI triage, serverless pipelines, low-cost ops |
-
-  | Balanced (Hybrid) | Moderate  | High  | High      | High          | High        | Platform automation, internal developer agents      |
-
-  | Verbose           | High      | Low   | Very High | Very High     | Very High   | Agent development, complex remediation pipelines    |'
+  Based on your answers, I'll provide:
+
+  ## 1. Workflow Monitoring System
+
+  Continuous monitoring capabilities:
+  - **Latest Run Evaluation**: Automatic checking of most recent workflow runs
+  - **Status Detection**: Success, failure, cancelled, timed-out states
+  - **Branch Tracking**: Default branch and PR workflow monitoring
+  - **Multi-Workflow Support**: Parallel monitoring of multiple workflows
+  - **Real-Time Updates**: Immediate failure detection
+
+  ## 2. Success Summary Generation
+
+  For successful workflows, provide:
+  - **Concise Digest**: Workflow name, trigger, commit info (≤100 words)
+  - **Key Metrics**: Duration, timestamp, commit SHA
+  - **Commit Details**: Author, message, changed files
+  - **Trend Analysis**: Performance comparison with previous runs
+  - **Quality Indicators**: Test coverage, code quality scores
+
+  ## 3. Failure Analysis Framework
+
+  Comprehensive failure investigation:
+  - **Job and Step Identification**: Pinpoint exact failure location
+  - **Log Analysis**: Extract and summarize relevant error messages
+  - **Error Classification**: Build errors, test failures, deployment issues, timeout problems
+  - **Context Gathering**: Environment details, dependencies, configuration
+  - **Pattern Recognition**: Identify recurring failure patterns
+
+  ## 4. Root Cause Determination
+
+  Intelligent failure diagnosis:
+  - **Causal Inference**: Technical narrative explaining failure origin
+  - **Dependency Analysis**: Identify broken dependencies or version conflicts
+  - **Configuration Issues**: Detect misconfiguration or missing settings
+  - **Code Quality Problems**: Syntax errors, type issues, lint failures
+  - **Infrastructure Issues**: Resource constraints, network problems, timeout issues
+  - **Historical Context**: Compare with previous successful runs
+
+  ## 5. Remediation Planning
+
+  Strategic fix development:
+  - **Fix Strategy**: 1-3 step remediation plan
+  - **Risk Assessment**: Impact analysis of proposed fixes
+  - **Testing Strategy**: How to verify fixes before deployment
+  - **Rollback Plan**: Contingency if fix doesn't work
+  - **Documentation Needs**: What should be documented
+
+  ## 6. Automated Fix Implementation
+
+  Intelligent code correction:
+  - **Targeted Changes**: Minimal, focused fixes preserving context
+  - **Multi-File Support**: Coordinate changes across related files
+  - **Validation**: Pre-commit verification of fixes
+  - **Commit Creation**: Descriptive commit messages
+  - **Push Coordination**: Automatic or manual push based on config
+
+  ## 7. Issue Tracking Integration
+
+  Complete audit trail:
+  - **Issue Creation**: Automatic GitHub issue for each failure
+  - **Detailed Documentation**: Root cause, fix applied, verification steps
+  - **Link References**: Connect issues to commits and workflow runs
+  - **Auto-Close**: Close issues after successful remediation
+  - **Label Management**: Categorize issues by type and severity
+
+  ## 8. Three Analysis Variants
+
+  Choose the right depth for your needs:
+
+  **Token-Efficient Variant:**
+  - Minimal token usage for cost optimization
+  - Fast execution for real-time monitoring
+  - Moderate accuracy for standard failures
+  - Ideal for: High-frequency monitoring, batch triage, serverless pipelines
+
+  **Balanced Variant (Recommended):**
+  - Optimal token/accuracy balance
+  - High-quality diagnosis and fixes
+  - Excellent repeatability
+  - Ideal for: Platform automation, internal developer tools, production systems
+
+  **Verbose Variant:**
+  - Maximum analysis depth
+  - Very high accuracy for complex issues
+  - Comprehensive documentation
+  - Ideal for: QA pipelines, critical infrastructure, complex debugging
+
+  ## 9. Structured Reporting
+
+  Professional Markdown output:
+  - **Summary Section**: High-level overview of workflow status
+  - **Analysis Section**: Detailed failure investigation
+  - **Root Cause Section**: Clear explanation of why it failed
+  - **Plan Section**: Step-by-step remediation strategy
+  - **Fix Section**: Implementation details and changes made
+  - **Issue Tracking Section**: Links and references
+
+  ## 10. Workflow Performance Metrics
+
+  Continuous improvement tracking:
+  - **Success Rate**: Percentage of successful runs
+  - **Mean Time to Recovery**: How quickly failures are fixed
+  - **Common Failure Patterns**: Most frequent issues
+  - **Performance Trends**: Workflow duration over time
+  - **Cost Analysis**: CI/CD resource consumption
+
+  ## 11. Preventive Analysis
+
+  Proactive issue detection:
+  - **Flaky Test Detection**: Identify unreliable tests
+  - **Dependency Drift**: Detect outdated or vulnerable dependencies
+  - **Configuration Validation**: Catch misconfigurations before they fail
+  - **Resource Usage Trends**: Predict capacity issues
+  - **Performance Regression**: Detect slowdowns early
+
+  ## 12. Multi-Repository Support
+
+  Enterprise-scale monitoring:
+  - **Batch Processing**: Monitor multiple repositories simultaneously
+  - **Priority Routing**: Critical repos get immediate attention
+  - **Aggregated Reporting**: Organization-wide CI/CD health
+  - **Shared Learning**: Apply fixes from one repo to similar issues elsewhere
+  - **Compliance Tracking**: Ensure all repos meet CI/CD standards
+
+  ## 13. Integration Capabilities
+
+  Seamless workflow integration:
+  - **GitHub API**: Full integration with GitHub Actions
+  - **Notification Systems**: Slack, Teams, email, webhooks
+  - **Monitoring Platforms**: Datadog, New Relic, Grafana integration
+  - **Ticket Systems**: Jira, Linear, Asana integration
+  - **Documentation**: Auto-update runbooks and troubleshooting guides
+
+  ## 14. Success Validation
+
+  Verification after fixes:
+  - **Workflow Re-Run**: Trigger workflow to verify fix
+  - **Test Validation**: Ensure all tests pass
+  - **Performance Check**: Confirm no performance regression
+  - **Documentation Update**: Record successful resolution
+  - **Knowledge Base**: Add to troubleshooting database
+
+  Tell me about your CI/CD monitoring needs and I'll set up an intelligent watchdog system with automated failure analysis and remediation!
 ---

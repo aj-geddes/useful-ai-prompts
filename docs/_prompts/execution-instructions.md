@@ -5,21 +5,148 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for development optimization and expert consultation
+description: Guide AI assistants in continuous research and development of useful prompts for diverse professional workflows
 layout: prompt
 slug: execution-instructions
 tags:
 - development
-title: Execution Instructions for AI Prompt Research Assistant
+- research
+- prompt-engineering
+- automation
+title: AI Prompt Research and Development Framework
 use_cases:
 - development optimization
 - professional workflow enhancement
+- prompt library development
 version: 3.0.0
-prompt: "# Execution Instructions for AI Prompt Research Assistant\n\nThe following instructions guide the continuous research and development of useful AI prompts for the GitHub repository at https://github.com/aj-geddes/useful-ai-prompts.\n\n## Initialization Process\n\n1. Begin by creating a project research index:\n   - Read the job categories, workflow categories, thinking approaches, and persona profiles\n   - Create a prioritization matrix based on potential impact and utility\n   - Establish initial research focus areas\n\n2. For each research cycle:\n   ```\n   CYCLE_ID=\"PROMPT-$(date +%Y%m%d-%H%M%S)\"\n   TARGET_DOMAIN=[Select from job categories]\n   TARGET_WORKFLOW=[Select from workflow categories]\n   THINKING_APPROACH=[Select 1-2 from thinking approaches]\n   PRIMARY_PERSONA=[Select from persona profiles]\n   SECONDARY_PERSONA=[Optional: Select complementary persona]\n   ```\n\n## Research Loop\n\nFor each prompt development cycle, execute this research loop:\n\n1. **Domain\
-  \ & Workflow Analysis**\n\n   ```\n   Research current best practices for $TARGET_DOMAIN in $TARGET_WORKFLOW\n   Identify key challenges and pain points\n   Document workflow steps and decision points\n   Research existing prompt approaches for similar tasks\n   ```\n\n2. **Persona & Thinking Layer Integration**\n\n   ```\n   Apply $PRIMARY_PERSONA perspective to workflow challenges\n   Layer with $THINKING_APPROACH methodology\n   If $SECONDARY_PERSONA defined, integrate complementary viewpoint\n   Create initial prompt structure with layered instructions\n   ```\n\n3. **Prompt Development**\n\n   ```\n   Draft prompt with:\n    - Clear context setting\n    - Persona-specific instruction layer\n    - Thinking methodology guidance\n    - Output format specifications\n    - Examples where appropriate\n   Add customization variables using {{placeholder}} syntax\n   Include safeguards and guardrails\n   ```\n\n4. **Testing & Refinement**\n\n   ```\n   Test prompt against sample scenarios\n\
-  \   Identify edge cases and limitations\n   Refine language for clarity and effectiveness\n   Add usage instructions and examples\n   Document research findings\n   ```\n\n5. **Documentation & Commit**\n\n   ```\n   Create prompt file following repository structure:\n     prompts/$CATEGORY/$SUBCATEGORY/$PROMPT_NAME.md\n\n   Complete all metadata fields\n   Add comprehensive usage instructions\n   Include concrete examples\n   Document research findings\n\n   Commit with message:\n   \"Add $PROMPT_NAME: $BRIEF_DESCRIPTION\"\n   ```\n\n6. **Cross-Reference & Index Update**\n   ```\n   Update related prompts with cross-references\n   Add to appropriate index files\n   Tag with relevant categories for searchability\n   ```\n\n## Selection Criteria\n\nWhen selecting job and workflow combinations to prioritize:\n\n1. **High-Impact Areas**:\n   - Frequently performed workflows with significant time investment\n   - Tasks requiring complex cognitive processes\n   - Areas where AI assistance can\
-  \ provide substantial value\n   - Workflows with clear inputs and outputs\n\n2. **Layering Strategy**:\n   - Pair analytical personas with creative workflows\n   - Layer strategic thinking with tactical execution\n   - Combine domain expertise with methodological frameworks\n   - Create unexpected but valuable combinations\n\n3. **Progressive Development**:\n   - Start with foundational prompts for common workflows\n   - Build toward specialized, niche applications\n   - Develop prompt chains for complex processes\n   - Create meta-prompts that help develop other prompts\n\n## Continuous Research Focuses\n\nMaintain ongoing research in these key areas:\n\n1. **Prompt Effectiveness**:\n   - Techniques for improving response quality\n   - Methods for handling edge cases\n   - Approaches for maintaining context in complex workflows\n   - Strategies for optimizing different thinking layers\n\n2. **Taxonomy Development**:\n   - Refine categorization system\n   - Develop cross-cutting tags for\
-  \ better discoverability\n   - Identify emerging workflow patterns\n   - Create relationship maps between prompts\n\n3. **Use Case Expansion**:\n   - Identify new professional domains\n   - Discover emerging workflow needs\n   - Research novel applications of AI assistance\n   - Document real-world implementation examples\n\n## Output Standards\n\nEvery prompt must meet these standards:\n\n1. **Utility**: Solves a specific, practical problem\n2. **Clarity**: Instructions clear enough for consistent results\n3. **Adaptability**: Includes customization points\n4. **Documentation**: Complete usage instructions and examples\n5. **Layering**: Incorporates multiple thinking approaches\n6. **Personalization**: Leverages relevant persona perspectives\n7. **Reproducibility**: Produces consistent results when used as directed\n8. **Originality**: Offers unique value not found in existing prompts\n\n## Commit Cycle\n\nFor each new prompt:\n\n1. Create file following naming convention:\n\n   ```\n\
-  \   prompts/<domain>/<workflow>/<approach>-<persona>-<task>.md\n   ```\n\n2. Complete prompt template with all required sections:\n\n   ```markdown\n   # [Prompt Title]\n\n   ## Metadata\n\n   - **Category**: [Primary Category]\n   - **Tags**: [comma, separated, relevant, tags]\n   - **Created**: [YYYY-MM-DD]\n   - **Version**: [X.Y.Z]\n   - **Personas**: [Primary persona, Secondary persona]\n   - **Use Cases**: [comma separated use cases]\n   - **Compatible Models**: [list of compatible models]\n\n   ## Description\n\n   [Clear explanation of the prompt's purpose and context]\n\n   ## Prompt Template\n   ```\n\n   [Actual prompt text with {{placeholders}} for customization]\n\n   ```\n\n   ## Usage Instructions\n   [Step-by-step guidance on effective use]\n\n   ## Examples\n   ### Example 1: [Brief description]\n   **Input**: [Sample input]\n   **Output**: [Example of expected output]\n\n   ## Related Prompts\n   [Links to related prompts]\n\n   ## Research Notes\n   [Insights from testing\
-  \ and development]\n   ```\n\n3. Commit with descriptive message\n\n4. Continue to next prompt in the development cycle\n\n## Weekly Progress Report\n\nGenerate a weekly summary including:\n\n- Number of new prompts created\n- Domains and workflows covered\n- Emerging patterns and insights\n- Recommendations for next focus areas\n- Statistics on prompt categories and distributions"
+prompt: |
+  I'll help you establish a systematic framework for researching and developing useful AI prompts. Let me understand your objectives:
+
+  ## Understanding Your Prompt Development Goals
+
+  **Research Focus:**
+  - What domains or professional fields are you targeting? (technical, business, creative, academic)
+  - Which workflows or tasks need the most AI assistance in your organization?
+  - Are you building prompts for general use or specific teams/roles?
+  - What pain points or inefficiencies are you trying to address?
+
+  **Quality Standards:**
+  - What defines a "successful" prompt in your context?
+  - How will you measure prompt effectiveness? (time savings, quality of output, user satisfaction)
+  - Do you have specific format or structure requirements?
+  - Are there compliance or security considerations for prompt content?
+
+  **Development Approach:**
+  - How many prompts do you aim to develop? (weekly/monthly targets)
+  - Do you want to focus on depth (specialized prompts) or breadth (many domains)?
+  - Will prompts be developed iteratively based on feedback?
+  - Do you need versioning and change tracking?
+
+  **Organizational Context:**
+  - Who will be using these prompts? (developers, managers, analysts, creatives)
+  - How will prompts be organized and discovered?
+  - Do you need integration with specific tools or platforms?
+  - What documentation standards should be followed?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Research Framework
+
+  A systematic approach including:
+  - Domain and workflow analysis methodology
+  - Best practices research procedures
+  - Pain point identification techniques
+  - Existing solution evaluation methods
+  - Innovation opportunity discovery processes
+
+  ## 2. Development Workflow
+
+  Step-by-step procedures for:
+  - Selecting high-impact use cases
+  - Combining persona perspectives with thinking methodologies
+  - Drafting prompts with clear structure and examples
+  - Testing against sample scenarios
+  - Refining based on edge cases
+  - Documentation and metadata completion
+
+  ## 3. Prompt Structure Templates
+
+  Standardized formats for:
+  - Context setting and objective clarity
+  - Persona-specific instruction layers
+  - Thinking methodology guidance
+  - Output format specifications
+  - Customization variables using placeholders
+  - Safeguards and guardrails
+  - Usage instructions and examples
+
+  ## 4. Selection Criteria Framework
+
+  Guidelines for prioritizing:
+  - High-impact workflows with significant time investment
+  - Tasks requiring complex cognitive processes
+  - Areas where AI provides substantial value
+  - Workflows with clear inputs and outputs
+  - Progressive development from foundational to specialized
+
+  ## 5. Quality Standards Checklist
+
+  Validation criteria ensuring each prompt has:
+  - Utility: Solves a specific, practical problem
+  - Clarity: Instructions clear enough for consistent results
+  - Adaptability: Includes customization points
+  - Documentation: Complete usage instructions and examples
+  - Layering: Incorporates multiple thinking approaches
+  - Personalization: Leverages relevant persona perspectives
+  - Reproducibility: Produces consistent results
+  - Originality: Offers unique value
+
+  ## 6. Repository Organization System
+
+  File structure and naming conventions:
+  - Category-based directory organization
+  - Consistent naming patterns (domain-workflow-approach-task)
+  - Metadata standards (tags, version, use cases, compatible models)
+  - Cross-referencing and relationship mapping
+  - Index maintenance procedures
+
+  ## 7. Testing and Validation Process
+
+  Methods for ensuring quality:
+  - Sample scenario testing
+  - Edge case identification
+  - Output consistency verification
+  - User acceptance testing
+  - Continuous improvement cycles
+
+  ## 8. Research Tracking System
+
+  Documentation for:
+  - Development cycle logs
+  - Research findings and insights
+  - Testing results and refinements
+  - Usage patterns and feedback
+  - Performance metrics and trends
+
+  ## 9. Knowledge Management
+
+  Systems for:
+  - Taxonomy development and refinement
+  - Cross-cutting tag systems for discoverability
+  - Emerging pattern identification
+  - Relationship maps between prompts
+  - Use case expansion strategies
+
+  ## 10. Progress Reporting
+
+  Regular summaries including:
+  - Prompts created and domains covered
+  - Emerging patterns and insights
+  - Recommendations for focus areas
+  - Statistics and distribution metrics
+  - Quality trends and improvements
+
+  Tell me about your prompt development needs and I'll create a comprehensive framework tailored to your research objectives!
 ---

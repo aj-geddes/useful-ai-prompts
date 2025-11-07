@@ -5,24 +5,210 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for technical optimization and expert consultation
+description: Comprehensive automated code review system with AI-powered analysis, security scanning, quality metrics, and team collaboration
 layout: prompt
 slug: code-review-prompts
 tags:
 - technical
-title: Code Review Prompts
+- code-review
+- quality-assurance
+- security
+title: Automated Code Review and Quality Analysis System
 use_cases:
 - technical optimization
 - professional workflow enhancement
+- code quality assurance
 version: 3.0.0
-prompt: "Create a **comprehensive automated code review system** for `Ask User for Programming Language and Project Type` with enterprise-grade analysis capabilities.\n\nInitialize it as a **production-ready code review automation platform** with AI-powered analysis, security scanning, quality metrics, and team collaboration workflows.\n\n## Core Requirements\n\n### Review Framework Architecture\n\n- **Multi-layer analysis**: Syntax, semantics, security, performance, and architectural review\n- **Language-specific rules**: Tailored analysis patterns for the specified programming language\n- **Customizable rulesets**: Configurable review criteria and severity levels\n- **Integration support**: CI/CD pipeline integration and IDE plugin compatibility\n\n### Analysis Categories\n\n- **Code quality**: Structure, readability, maintainability, and complexity analysis\n- **Security scanning**: OWASP compliance, vulnerability detection, and threat modeling\n- **Performance optimization**: Algorithm\
-  \ efficiency, resource usage, and bottleneck identification\n- **Best practices compliance**: Language-specific conventions and industry standards\n- **Documentation analysis**: Code comments, API documentation, and inline help quality\n\n## Enhanced Security & Quality Assessment\n\n### Advanced Security Analysis\n\n- **Static Application Security Testing (SAST)**: Comprehensive vulnerability scanning\n- **Dependency analysis**: Third-party library security assessment and license compliance\n- **Secrets detection**: API keys, passwords, and sensitive data exposure prevention\n- **Injection attack prevention**: SQL, NoSQL, command, and script injection vulnerability detection\n- **Authentication & authorization**: Access control and permission validation\n\n### Quality Metrics & Standards\n\n- **Code complexity metrics**: Cyclomatic complexity, cognitive complexity, and maintainability index\n- **Test coverage analysis**: Unit test coverage, integration test gaps, and quality assessment\n\
-  - **Technical debt measurement**: Code smells, refactoring opportunities, and legacy code assessment\n- **Performance profiling**: Memory usage patterns, execution time analysis, and optimization opportunities\n- **Architectural compliance**: Design pattern usage, SOLID principles, and modularity assessment\n\n### Team Collaboration Features\n\n- **Review workflow automation**: Automated reviewer assignment and escalation protocols\n- **Knowledge sharing**: Code explanation generation and learning resource recommendations\n- **Progress tracking**: Review completion metrics, team performance analytics, and improvement trends\n- **Communication integration**: Slack, Teams, and email notification systems\n\n## Advanced Features (New)\n\n### AI-Powered Enhancement\n\n- **Intelligent code suggestions**: Context-aware improvement recommendations\n- **Automated fix generation**: Security patch suggestions and code optimization proposals\n- **Natural language explanations**: Plain English descriptions\
-  \ of complex code issues\n- **Learning system**: Adaptive rules based on team preferences and historical decisions\n\n### Enterprise Integration\n\n- **LDAP/SSO integration**: Enterprise authentication and user management\n- **Compliance reporting**: SOC 2, ISO 27001, and industry-specific compliance validation\n- **Audit trail management**: Complete review history and decision tracking\n- **Custom dashboard creation**: Executive and team-level reporting interfaces\n\n### Development Workflow Optimization\n\n- **Pre-commit hooks**: Automated quality checks before code submission\n- **IDE integration**: Real-time feedback and inline suggestions\n- **Continuous monitoring**: Production code quality tracking and alerting\n- **Training module**: Developer education and best practices guidance\n\n### Advanced Analytics\n\n- **Predictive analysis**: Bug probability assessment and maintenance cost prediction\n- **Team performance insights**: Individual and team productivity metrics\n- **Code\
-  \ evolution tracking**: Codebase health trends and improvement recommendations\n- **Benchmark comparisons**: Industry standard comparisons and competitive analysis\n\n## Implementation Strategy\n\n### MCP Tool Optimization\n\n- **Use `create_or_update_file`** for individual configuration files and rule definitions\n- **Leverage `push_files`** for bulk creation of analysis scripts and documentation\n- **Handle integration setup** systematically with proper API configurations\n- **Systematic deployment**: Core engine → Rules → Integrations → Dashboard → Training\n\n### Development Process\n\n1. **Requirements analysis** for specific language and project type characteristics\n2. **Rule engine development** with customizable analysis patterns\n3. **Integration framework** setup for CI/CD and development tools\n4. **Dashboard and reporting** system implementation\n5. **Testing and validation** with sample codebases\n6. **Documentation and training** material creation\n\n### Quality Assurance\
-  \ Process\n\n- **Rule validation**: Testing analysis rules against known code patterns\n- **Performance benchmarking**: System performance under various codebase sizes\n- **Integration testing**: CI/CD pipeline and IDE plugin functionality verification\n- **User acceptance testing**: Team workflow validation and usability assessment\n- **Security validation**: Review system security and access control testing\n\n### Deployment Strategy\n\n- **Phased rollout**: Gradual team adoption with feedback integration\n- **Training program**: Developer onboarding and system usage education\n- **Support system**: Documentation, troubleshooting guides, and help desk setup\n- **Maintenance planning**: Update procedures and rule refinement processes\n\n## Deliverables\n\n### Core Analysis Engine\n\n- `review-engine/` - Main analysis engine with language-specific processors\n- `rules/` - Configurable rule definitions and severity mappings\n- `plugins/` - Language-specific analysis plugins and extensions\n\
-  - `config/` - System configuration templates and environment settings\n\n### Security & Quality Modules\n\n- `security-scanner/` - SAST implementation and vulnerability detection\n- `quality-metrics/` - Code quality analysis and measurement tools\n- `dependency-analyzer/` - Third-party library security and license scanning\n- `performance-profiler/` - Performance analysis and optimization detection\n\n### Integration Components\n\n- `ci-cd-integration/` - Jenkins, GitHub Actions, GitLab CI integration scripts\n- `ide-plugins/` - VS Code, IntelliJ, and other IDE extension implementations\n- `api/` - REST API for external tool integration and data access\n- `webhooks/` - Event-driven integration for real-time notifications\n\n### User Interface & Reporting\n\n- `dashboard/` - Web-based review dashboard and analytics interface\n- `reports/` - Automated report generation and customizable templates\n- `notifications/` - Email, Slack, and Teams notification systems\n- `mobile/` - Mobile application\
-  \ for review management and approval\n\n### Documentation & Training\n\n- `docs/` - Comprehensive setup, configuration, and usage documentation\n- `training/` - Developer training materials and best practices guides\n- `examples/` - Sample configurations and integration examples\n- `troubleshooting/` - Common issues and resolution procedures\n\n### Testing & Validation\n\n- `tests/` - Comprehensive test suite for all system components\n- `benchmarks/` - Performance testing and validation scripts\n- `sample-projects/` - Test codebases for validation and demonstration\n- `compliance-tests/` - Security and compliance validation tools\n\n## Success Criteria\n\n✅ **Comprehensive**: Covers all aspects of code quality, security, and performance analysis  \n✅ **Automated**: Seamless integration with development workflows and CI/CD pipelines  \n✅ **Actionable**: Provides specific, implementable recommendations for code improvement  \n✅ **Scalable**: Handles codebases from small projects to enterprise-scale\
-  \ applications  \n✅ **Secure**: Implements robust security scanning and vulnerability detection  \n✅ **Collaborative**: Enables effective team review workflows and knowledge sharing  \n✅ **Measurable**: Provides quantifiable metrics for code quality and team performance  \n✅ **Compliant**: Meets industry standards and regulatory compliance requirements  \n✅ **Educational**: Helps developers learn and improve their coding practices  \n✅ **Maintainable**: Easy to update, configure, and extend for evolving requirements\n\n## Quality Standards\n\n- **Accuracy**: Review analysis must achieve >95% accuracy with minimal false positives\n- **Performance**: System must handle review requests within 30 seconds for typical code changes\n- **Reliability**: 99.9% uptime with comprehensive error handling and recovery procedures\n- **Security**: All code analysis performed in secure, isolated environments with audit trails\n- **Usability**: Intuitive interface requiring minimal training for developer\
-  \ adoption\n- **Extensibility**: Modular architecture supporting custom rules and third-party integrations\n- **Compliance**: Full audit trail and documentation meeting enterprise compliance requirements\n- **Scalability**: Support for teams from 5 to 500+ developers with consistent performance"
+prompt: |
+  I'll help you create a comprehensive automated code review system. Let me understand your requirements:
+
+  ## Understanding Your Code Review Needs
+
+  **Programming Language and Project:**
+  - What programming language is your project using? (Python, JavaScript, Java, Go, C#, etc.)
+  - What type of project is this? (web application, API, library, microservices, mobile app)
+  - What frameworks or libraries are you using?
+  - What is the typical size of code changes you review? (small PRs, large features, refactorings)
+
+  **Review Priorities:**
+  - What aspects are most important? (security, performance, maintainability, test coverage)
+  - Are there specific vulnerabilities or patterns to watch for?
+  - Do you have coding standards or style guides to enforce?
+  - Are there regulatory compliance requirements? (HIPAA, PCI-DSS, SOC 2)
+
+  **Team and Workflow:**
+  - How many developers are on your team?
+  - What is your current review process? (peer review, lead review, automated gates)
+  - How should reviews be assigned?
+  - What should block merging? (security issues, test failures, quality thresholds)
+
+  **Integration Requirements:**
+  - What version control system? (GitHub, GitLab, Bitbucket)
+  - Do you use CI/CD pipelines? (GitHub Actions, Jenkins, CircleCI)
+  - What IDE do developers use? (VS Code, IntelliJ, etc.)
+  - Are there existing tools to integrate? (SonarQube, CodeClimate, Snyk)
+
+  **Quality Metrics:**
+  - What code quality metrics matter to you? (complexity, duplication, test coverage)
+  - Do you have minimum thresholds? (coverage %, complexity limits)
+  - Should technical debt be tracked?
+  - Do you need trend analysis over time?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Multi-Layer Analysis Framework
+
+  Comprehensive code review system:
+  - **Syntax Analysis**: Language-specific parsing and validation
+  - **Semantic Review**: Logic flow and correctness checking
+  - **Security Scanning**: Vulnerability and threat detection
+  - **Performance Analysis**: Algorithm efficiency and bottleneck identification
+  - **Architectural Review**: Design patterns and structure assessment
+
+  ## 2. Security Scanning Suite
+
+  Enterprise-grade security analysis:
+  - **SAST (Static Application Security Testing)**: Comprehensive vulnerability scanning
+  - **Dependency Analysis**: Third-party library security and license compliance
+  - **Secrets Detection**: API keys, passwords, and sensitive data exposure
+  - **Injection Prevention**: SQL, NoSQL, command, and script injection detection
+  - **Authentication & Authorization**: Access control validation
+  - **OWASP Compliance**: Top 10 vulnerability coverage
+  - **CVE Database**: Known vulnerability matching
+
+  ## 3. Code Quality Metrics
+
+  Quantifiable quality assessment:
+  - **Cyclomatic Complexity**: Method and function complexity scoring
+  - **Cognitive Complexity**: Human comprehension difficulty measurement
+  - **Maintainability Index**: Long-term maintenance cost prediction
+  - **Code Duplication**: Copy-paste detection and refactoring suggestions
+  - **Naming Conventions**: Identifier clarity and consistency
+  - **Comment Quality**: Documentation completeness and accuracy
+
+  ## 4. Test Coverage Analysis
+
+  Testing quality assessment:
+  - **Unit Test Coverage**: Line and branch coverage analysis
+  - **Integration Test Gaps**: Missing integration test identification
+  - **Test Quality**: Assertion completeness and mock usage
+  - **Edge Case Coverage**: Boundary condition testing
+  - **Performance Tests**: Load and stress testing presence
+  - **Coverage Trends**: Historical coverage tracking
+
+  ## 5. Performance Profiling
+
+  Optimization opportunity detection:
+  - **Algorithm Complexity**: Big-O analysis and optimization suggestions
+  - **Memory Usage Patterns**: Memory leak and inefficiency detection
+  - **Database Queries**: N+1 problems and query optimization
+  - **Network Calls**: API efficiency and caching opportunities
+  - **Resource Management**: File handles, connections, locks
+  - **Bottleneck Identification**: Performance hotspot detection
+
+  ## 6. Architectural Compliance
+
+  Design quality validation:
+  - **SOLID Principles**: Single responsibility, open/closed, etc.
+  - **Design Patterns**: Proper pattern usage and anti-patterns
+  - **Modularity Assessment**: Coupling and cohesion analysis
+  - **Dependency Management**: Circular dependencies and layering
+  - **API Design**: RESTful principles, consistency, versioning
+  - **Error Handling**: Exception patterns and resilience
+
+  ## 7. AI-Powered Enhancements
+
+  Intelligent analysis features:
+  - **Smart Suggestions**: Context-aware improvement recommendations
+  - **Automated Fixes**: Security patch and optimization proposals
+  - **Natural Language Explanations**: Plain English issue descriptions
+  - **Learning System**: Adaptive rules based on team preferences
+  - **Code Understanding**: Intent detection and functionality explanation
+  - **Refactoring Opportunities**: Safe improvement suggestions
+
+  ## 8. Team Collaboration Features
+
+  Workflow automation:
+  - **Automated Reviewer Assignment**: Based on expertise and workload
+  - **Review Workflow Tracking**: Progress and completion monitoring
+  - **Knowledge Sharing**: Code explanation and learning resources
+  - **Communication Integration**: Slack, Teams, email notifications
+  - **Review Templates**: Standardized review checklists
+  - **Priority Escalation**: Critical issue routing
+
+  ## 9. CI/CD Integration
+
+  Seamless pipeline integration:
+  - **Pre-Commit Hooks**: Local validation before commits
+  - **Pull Request Automation**: Automatic review on PR creation
+  - **Quality Gates**: Merge blocking for critical issues
+  - **Status Checks**: GitHub/GitLab check integration
+  - **Deployment Validation**: Production readiness assessment
+  - **Automated Reporting**: Summary comments on PRs
+
+  ## 10. IDE Integration
+
+  Developer-friendly features:
+  - **Real-Time Feedback**: Inline suggestions while coding
+  - **Quick Fixes**: One-click issue resolution
+  - **Code Actions**: Refactoring and improvement proposals
+  - **Hover Information**: Detailed issue explanations
+  - **Problem Panel**: Categorized issue listing
+  - **VS Code/IntelliJ Plugins**: Native IDE extensions
+
+  ## 11. Compliance and Reporting
+
+  Enterprise requirements:
+  - **Compliance Validation**: SOC 2, ISO 27001, industry-specific standards
+  - **Audit Trail**: Complete review history and decisions
+  - **Executive Dashboards**: High-level quality metrics
+  - **Trend Analysis**: Quality improvements over time
+  - **Team Performance**: Individual and team productivity
+  - **Technical Debt Tracking**: Accumulation and repayment
+
+  ## 12. Custom Rule Engine
+
+  Flexible configuration:
+  - **Custom Rules**: Organization-specific pattern detection
+  - **Severity Levels**: Configurable issue classification
+  - **Rule Sets**: Environment-specific configurations (dev, staging, prod)
+  - **Exception Management**: Approved violations and waivers
+  - **Rule Sharing**: Team and organization rule libraries
+  - **Version Control**: Rule set versioning and history
+
+  ## 13. Advanced Analytics
+
+  Insights and predictions:
+  - **Bug Probability**: Predictive analysis for defect likelihood
+  - **Maintenance Cost**: Technical debt quantification
+  - **Code Health Trends**: Repository quality evolution
+  - **Hotspot Detection**: Frequently changed high-risk areas
+  - **Benchmark Comparison**: Industry standard comparisons
+  - **Team Velocity**: Development speed and quality balance
+
+  ## 14. Documentation Generation
+
+  Automatic documentation:
+  - **Code Explanations**: What the code does and why
+  - **API Documentation**: Endpoint and parameter documentation
+  - **Architecture Diagrams**: Visual structure representation
+  - **Change Impact**: Affected areas and dependencies
+  - **Review Summaries**: Aggregated review outcomes
+  - **Knowledge Base**: Common issues and resolutions
+
+  ## 15. Success Validation
+
+  Quality assurance criteria:
+  - Covers all critical review aspects (security, quality, performance)
+  - Integrates seamlessly with development workflow
+  - Provides actionable, implementable recommendations
+  - Scales from small teams to enterprise organizations
+  - Achieves >95% accuracy with minimal false positives
+  - Processes reviews within 30 seconds for typical changes
+  - Maintains 99.9% uptime with comprehensive error handling
+  - Meets industry compliance and audit requirements
+
+  Tell me about your code review needs and I'll create a comprehensive automated system with AI-powered analysis, security scanning, and team collaboration!
 ---
