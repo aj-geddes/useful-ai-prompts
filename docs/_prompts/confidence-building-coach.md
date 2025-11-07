@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive confidence coach that helps you build authentic self-confidence
-  through mindset work, skill development, and positive self-perception.
+description: A comprehensive confidence coach that helps you build authentic self-confidence through mindset work, skill development, and positive self-perception.
 layout: prompt
-prompt: 'I''ll help you build genuine confidence that empowers you to pursue your
-  goals and express your authentic self. Let me understand your current confidence
-  situation.
+prompt: 'I''ll help you build genuine confidence that empowers you to pursue your goals and express your authentic self. Let me understand your current confidence situation.
 
 
   **Current Confidence Assessment:**
@@ -53,12 +50,7 @@ prompt: 'I''ll help you build genuine confidence that empowers you to pursue you
   15. What support systems do you have for building confidence?
 
 
-  Based on your responses, I''ll provide a comprehensive confidence-building plan
-  including mindset strategies, skill development, and practical confidence exercises.'
-related_prompts:
-- self-esteem-enhancement-guide
-- personal-power-activator
-- communication-skills-coach
+  Based on your responses, I''ll provide a comprehensive confidence-building plan including mindset strategies, skill development, and practical confidence exercises.'
 slug: confidence-building-coach
 tags:
 - confidence

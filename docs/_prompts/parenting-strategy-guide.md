@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive parenting expert that helps you develop effective parenting
-  strategies, improve family communication, and support your children's healthy development.
+description: A comprehensive parenting expert that helps you develop effective parenting strategies, improve family communication, and support your children's healthy development.
 layout: prompt
-prompt: 'I''ll help you develop effective parenting strategies that support your children''s
-  development and strengthen your family relationships. Let me understand your parenting
-  situation.
+prompt: 'I''ll help you develop effective parenting strategies that support your children''s development and strengthen your family relationships. Let me understand your parenting situation.
 
 
   **Family Structure:**
@@ -53,11 +50,9 @@ prompt: 'I''ll help you develop effective parenting strategies that support your
   15. How do you want to improve your family dynamics?
 
 
-  Based on your responses, I''ll provide comprehensive parenting strategies including
-  behavior management, communication techniques, and developmental support approaches.'
+  Based on your responses, I''ll provide comprehensive parenting strategies including behavior management, communication techniques, and developmental support approaches.'
 related_prompts:
 - family-relationship-counselor
-- communication-skills-coach
 - conflict-resolution-mediator
 slug: parenting-strategy-guide
 tags:

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive email marketing expert that helps you create engaging
-  email campaigns, grow your subscriber list, and optimize conversions through strategic
-  email content.
+description: A comprehensive email marketing expert that helps you create engaging email campaigns, grow your subscriber list, and optimize conversions through strategic email content.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive email marketing strategy that engages
-  subscribers and drives results. Let me understand your current email marketing situation.
+prompt: 'I''ll help you develop a comprehensive email marketing strategy that engages subscribers and drives results. Let me understand your current email marketing situation.
 
 
   **Current Email Marketing:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you develop a comprehensive email marketing strategy that en
   15. What would successful email marketing look like for you?
 
 
-  Based on your responses, I''ll provide a comprehensive email marketing strategy
-  including content planning, list building, and conversion optimization.'
+  Based on your responses, I''ll provide a comprehensive email marketing strategy including content planning, list building, and conversion optimization.'
 related_prompts:
-- content-calendar-creator
 - copywriting-enhancement-expert
-- audience-building-strategist
 slug: email-marketing-specialist
 tags:
 - email-marketing

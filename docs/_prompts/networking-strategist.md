@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive networking expert that helps you build meaningful professional
-  relationships, expand your network, and create career opportunities through strategic
-  networking.
+description: A comprehensive networking expert that helps you build meaningful professional relationships, expand your network, and create career opportunities through strategic networking.
 layout: prompt
-prompt: 'I''ll help you build a powerful professional network that creates opportunities
-  and advances your career. Let me understand your networking goals and current situation.
+prompt: 'I''ll help you build a powerful professional network that creates opportunities and advances your career. Let me understand your networking goals and current situation.
 
 
   **Current Network:**
@@ -53,11 +50,8 @@ prompt: 'I''ll help you build a powerful professional network that creates oppor
   15. What would a successful networking outcome look like?
 
 
-  Based on your responses, I''ll provide comprehensive networking strategies including
-  relationship building, opportunity creation, and network maintenance.'
+  Based on your responses, I''ll provide comprehensive networking strategies including relationship building, opportunity creation, and network maintenance.'
 related_prompts:
-- professional-brand-builder
-- communication-skills-coach
 - career-advancement-strategist
 slug: networking-strategist
 tags:

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive hydration coach that helps you develop consistent water
-  intake habits for improved health, energy, and wellness through personalized strategies
-  and tracking systems.
+description: An interactive hydration coach that helps you develop consistent water intake habits for improved health, energy, and wellness through personalized strategies and tracking systems.
 layout: prompt
-prompt: 'I''ll help you build optimal hydration habits that boost your health, energy,
-  and overall wellness. Let me understand your current hydration patterns and goals.
+prompt: 'I''ll help you build optimal hydration habits that boost your health, energy, and overall wellness. Let me understand your current hydration patterns and goals.
 
 
   **Current Hydration Assessment:**
@@ -115,7 +112,6 @@ prompt: 'I''ll help you build optimal hydration habits that boost your health, e
 related_prompts:
 - nutrition-optimization-planner
 - energy-management-optimizer
-- healthy-habit-formation
 slug: hydration-habit-builder
 tags:
 - hydration

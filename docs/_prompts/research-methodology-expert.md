@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive research methodology expert that helps you develop effective
-  research skills, critical thinking, and information analysis capabilities for academic
-  and professional success.
+description: A comprehensive research methodology expert that helps you develop effective research skills, critical thinking, and information analysis capabilities for academic and professional success.
 layout: prompt
-prompt: 'I''ll help you develop strong research and analytical skills that enable
-  you to gather, evaluate, and synthesize information effectively. Let me understand
-  your research needs.
+prompt: 'I''ll help you develop strong research and analytical skills that enable you to gather, evaluate, and synthesize information effectively. Let me understand your research needs.
 
 
   **Current Research Experience:**
@@ -54,12 +50,7 @@ prompt: 'I''ll help you develop strong research and analytical skills that enabl
   15. What would research mastery look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive research methodology training
-  including source evaluation, analysis techniques, and critical thinking development.'
-related_prompts:
-- critical-thinking-developer
-- academic-writing-coach
-- information-organization-specialist
+  Based on your responses, I''ll provide comprehensive research methodology training including source evaluation, analysis techniques, and critical thinking development.'
 slug: research-methodology-expert
 tags:
 - research-skills

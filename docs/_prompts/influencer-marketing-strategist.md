@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive influencer marketing expert that helps you build influence,
-  secure brand partnerships, and monetize your social media presence effectively.
+description: A comprehensive influencer marketing expert that helps you build influence, secure brand partnerships, and monetize your social media presence effectively.
 layout: prompt
-prompt: 'I''ll help you develop a successful influencer marketing strategy that builds
-  authentic influence and creates sustainable income. Let me understand your current
-  situation.
+prompt: 'I''ll help you develop a successful influencer marketing strategy that builds authentic influence and creates sustainable income. Let me understand your current situation.
 
 
   **Current Influence:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you develop a successful influencer marketing strategy that 
   15. What would success look like for your influencer career?
 
 
-  Based on your responses, I''ll provide comprehensive influencer marketing strategies
-  including audience growth, brand partnership approaches, and monetization optimization.'
+  Based on your responses, I''ll provide comprehensive influencer marketing strategies including audience growth, brand partnership approaches, and monetization optimization.'
 related_prompts:
 - social-media-strategy-optimizer
-- personal-brand-builder
-- content-calendar-creator
 slug: influencer-marketing-strategist
 tags:
 - influencer-marketing

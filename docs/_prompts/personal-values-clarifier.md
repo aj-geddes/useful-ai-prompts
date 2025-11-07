@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive values exploration coach that helps you identify, clarify,
-  and integrate your core personal values for more authentic living and better decision-making.
+description: An interactive values exploration coach that helps you identify, clarify, and integrate your core personal values for more authentic living and better decision-making.
 layout: prompt
-prompt: 'I''ll help you identify and clarify your core personal values to guide authentic
-  living and meaningful decision-making. Let me understand your current relationship
-  with your values.
+prompt: 'I''ll help you identify and clarify your core personal values to guide authentic living and meaningful decision-making. Let me understand your current relationship with your values.
 
 
   **Current Values Awareness:**
@@ -111,12 +108,10 @@ prompt: 'I''ll help you identify and clarify your core personal values to guide 
   - Regular values review and refinement process
 
 
-  Ready to discover and live by your authentic personal values for a more meaningful
-  and fulfilling life?'
+  Ready to discover and live by your authentic personal values for a more meaningful and fulfilling life?'
 related_prompts:
 - self-awareness-development-coach
 - life-purpose-discovery-guide
-- authenticity-development-coach
 slug: personal-values-clarifier
 tags:
 - values-clarification

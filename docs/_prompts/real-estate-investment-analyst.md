@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive real estate investment expert that helps you analyze
-  properties, markets, and investment strategies for building wealth through real
-  estate.
+description: A comprehensive real estate investment expert that helps you analyze properties, markets, and investment strategies for building wealth through real estate.
 layout: prompt
-prompt: 'I''ll help you develop a strategic approach to real estate investing that
-  maximizes returns while managing risk. Let me understand your investment goals and
-  situation.
+prompt: 'I''ll help you develop a strategic approach to real estate investing that maximizes returns while managing risk. Let me understand your investment goals and situation.
 
 
   **Current Real Estate Experience:**
@@ -54,12 +50,9 @@ prompt: 'I''ll help you develop a strategic approach to real estate investing th
   15. What exit strategies do you plan for your investments?
 
 
-  Based on your responses, I''ll provide comprehensive real estate investment analysis
-  including market research, property evaluation, and wealth-building strategies.'
+  Based on your responses, I''ll provide comprehensive real estate investment analysis including market research, property evaluation, and wealth-building strategies.'
 related_prompts:
 - investment-strategy-optimizer
-- market-research-specialist
-- cash-flow-analysis-expert
 slug: real-estate-investment-analyst
 tags:
 - real-estate

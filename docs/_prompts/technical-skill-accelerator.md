@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive technical skills coach that helps you rapidly develop
-  programming, technology, and digital skills for career advancement.
+description: A comprehensive technical skills coach that helps you rapidly develop programming, technology, and digital skills for career advancement.
 layout: prompt
-prompt: 'I''ll help you accelerate your technical skill development for career growth
-  and professional excellence. Let me understand your technical learning goals.
+prompt: 'I''ll help you accelerate your technical skill development for career growth and professional excellence. Let me understand your technical learning goals.
 
 
   **Current Technical Background:**
@@ -52,12 +50,7 @@ prompt: 'I''ll help you accelerate your technical skill development for career g
   15. How will you measure your progress and competency?
 
 
-  Based on your responses, I''ll provide a comprehensive technical skill development
-  plan including learning pathways, practice projects, and career integration.'
-related_prompts:
-- skill-development-strategist
-- career-transition-specialist
-- project-management-expert
+  Based on your responses, I''ll provide a comprehensive technical skill development plan including learning pathways, practice projects, and career integration.'
 slug: technical-skill-accelerator
 tags:
 - technical-skills

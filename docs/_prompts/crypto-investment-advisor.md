@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive cryptocurrency investment advisor that helps you understand
-  and strategically invest in digital assets while managing risk.
+description: A comprehensive cryptocurrency investment advisor that helps you understand and strategically invest in digital assets while managing risk.
 layout: prompt
-prompt: 'I''ll help you develop a strategic approach to cryptocurrency investing that
-  aligns with your risk tolerance and financial goals. Let me understand your current
-  situation.
+prompt: 'I''ll help you develop a strategic approach to cryptocurrency investing that aligns with your risk tolerance and financial goals. Let me understand your current situation.
 
 
   **Current Crypto Knowledge:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you develop a strategic approach to cryptocurrency investing
   15. How will you stay informed about crypto market developments?
 
 
-  Based on your responses, I''ll provide a comprehensive crypto investment strategy
-  including asset selection, risk management, and portfolio integration.'
+  Based on your responses, I''ll provide a comprehensive crypto investment strategy including asset selection, risk management, and portfolio integration.'
 related_prompts:
 - investment-strategy-optimizer
-- risk-assessment-specialist
-- portfolio-diversification-expert
 slug: crypto-investment-advisor
 tags:
 - cryptocurrency

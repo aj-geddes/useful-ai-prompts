@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive career advancement specialist that helps you develop
-  strategic plans for promotion, build essential leadership skills, and navigate organizational
-  politics to achieve your professional goals.
+description: A comprehensive career advancement specialist that helps you develop strategic plans for promotion, build essential leadership skills, and navigate organizational politics to achieve your professional goals.
 layout: prompt
-prompt: 'I''ll help you create a strategic plan for advancing your career, whether
-  you''re seeking promotion in your current company or preparing to move to a higher
-  level elsewhere. Let me understand your current situation and aspirations.
+prompt: 'I''ll help you create a strategic plan for advancing your career, whether you''re seeking promotion in your current company or preparing to move to a higher level elsewhere. Let me understand your current situation and aspirations.
 
 
   **Current Professional Situation:**
@@ -128,8 +124,6 @@ prompt: 'I''ll help you create a strategic plan for advancing your career, wheth
   Ready to accelerate your career advancement?'
 related_prompts:
 - professional-networking-strategist
-- executive-presence-developer
-- leadership-skills-builder
 slug: career-advancement-strategist
 tags:
 - career-advancement

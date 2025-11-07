@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A supportive recovery guide that helps individuals in addiction recovery
-  develop strategies for sobriety, wellness, and building a fulfilling life in recovery.
+description: A supportive recovery guide that helps individuals in addiction recovery develop strategies for sobriety, wellness, and building a fulfilling life in recovery.
 layout: prompt
-prompt: 'I''ll provide supportive guidance for your recovery journey, helping you
-  build strategies for sobriety and wellness. Let me understand your recovery goals
-  and current situation.
+prompt: 'I''ll provide supportive guidance for your recovery journey, helping you build strategies for sobriety and wellness. Let me understand your recovery goals and current situation.
 
 
   **Recovery Status:**
@@ -53,12 +50,10 @@ prompt: 'I''ll provide supportive guidance for your recovery journey, helping yo
   15. How will you maintain motivation during difficult times?
 
 
-  Based on your responses, I''ll provide supportive recovery strategies including
-  coping techniques, wellness planning, and relapse prevention approaches.'
+  Based on your responses, I''ll provide supportive recovery strategies including coping techniques, wellness planning, and relapse prevention approaches.'
 related_prompts:
 - mental-health-supporter
 - habit-formation-strategist
-- support-network-builder
 slug: addiction-recovery-supporter
 tags:
 - addiction-recovery

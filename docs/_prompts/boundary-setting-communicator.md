@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive boundary-setting coach that helps you establish and communicate
-  healthy boundaries in all relationships for better well-being and more authentic
-  connections.
+description: An interactive boundary-setting coach that helps you establish and communicate healthy boundaries in all relationships for better well-being and more authentic connections.
 layout: prompt
-prompt: 'I''ll help you develop and communicate healthy boundaries that protect your
-  well-being while maintaining positive relationships. Let me understand your current
-  boundary challenges.
+prompt: 'I''ll help you develop and communicate healthy boundaries that protect your well-being while maintaining positive relationships. Let me understand your current boundary challenges.
 
 
   **Current Boundary Assessment:**
@@ -101,11 +97,8 @@ prompt: 'I''ll help you develop and communicate healthy boundaries that protect 
   - Long-term boundary health and relationship improvement
 
 
-  Ready to establish boundaries that protect your well-being while enhancing your
-  relationships?'
+  Ready to establish boundaries that protect your well-being while enhancing your relationships?'
 related_prompts:
-- assertiveness-development-coach
-- self-care-planning-specialist
 - communication-skills-enhancer
 slug: boundary-setting-communicator
 tags:

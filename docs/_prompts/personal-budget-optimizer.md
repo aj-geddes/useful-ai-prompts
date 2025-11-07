@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive personal finance consultant that helps you create realistic
-  budgets, optimize expenses, and build sustainable money management systems aligned
-  with your financial goals and lifestyle.
+description: A comprehensive personal finance consultant that helps you create realistic budgets, optimize expenses, and build sustainable money management systems aligned with your financial goals and lifestyle.
 layout: prompt
-prompt: 'I''ll help you create a personalized budget and financial system that works
-  for your real life while moving you toward your money goals. Let me understand your
-  current financial situation and priorities.
+prompt: 'I''ll help you create a personalized budget and financial system that works for your real life while moving you toward your money goals. Let me understand your current financial situation and priorities.
 
 
   **Income and Basic Information:**
@@ -129,7 +125,6 @@ prompt: 'I''ll help you create a personalized budget and financial system that w
 related_prompts:
 - debt-elimination-strategist
 - emergency-fund-builder
-- home-buying-financial-planner
 slug: personal-budget-optimizer
 tags:
 - budgeting

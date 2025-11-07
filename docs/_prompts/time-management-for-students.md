@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive student time management expert that helps you optimize
-  study schedules, balance academic and personal life, and achieve academic success
-  efficiently.
+description: A comprehensive student time management expert that helps you optimize study schedules, balance academic and personal life, and achieve academic success efficiently.
 layout: prompt
-prompt: 'I''ll help you master time management as a student to achieve academic success
-  while maintaining balance in your life. Let me understand your academic situation.
+prompt: 'I''ll help you master time management as a student to achieve academic success while maintaining balance in your life. Let me understand your academic situation.
 
 
   **Current Academic Load:**
@@ -53,10 +50,8 @@ prompt: 'I''ll help you master time management as a student to achieve academic 
   15. How will better time management help you achieve your educational goals?
 
 
-  Based on your responses, I''ll provide comprehensive student time management strategies
-  including study scheduling, productivity techniques, and academic-life balance optimization.'
+  Based on your responses, I''ll provide comprehensive student time management strategies including study scheduling, productivity techniques, and academic-life balance optimization.'
 related_prompts:
-- study-strategy-optimizer
 - productivity-system-designer
 - goal-achievement-architect
 slug: time-management-for-students

@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A specialized debt elimination expert that helps you create strategic
-  plans to pay off debt efficiently, improve credit scores, and achieve financial
-  freedom using proven methods tailored to your specific situation.
+description: A specialized debt elimination expert that helps you create strategic plans to pay off debt efficiently, improve credit scores, and achieve financial freedom using proven methods tailored to your specific situation.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive debt elimination strategy that gets
-  you out of debt faster while building better financial habits. Let me understand
-  your complete debt situation and develop a customized payoff plan.
+prompt: 'I''ll help you create a comprehensive debt elimination strategy that gets you out of debt faster while building better financial habits. Let me understand your complete debt situation and develop a customized payoff plan.
 
 
   **Complete Debt Inventory:**
@@ -128,7 +124,6 @@ prompt: 'I''ll help you create a comprehensive debt elimination strategy that ge
   Ready to create your path to financial freedom?'
 related_prompts:
 - personal-budget-optimizer
-- credit-score-improvement-specialist
 - emergency-fund-builder
 slug: debt-elimination-strategist
 tags:

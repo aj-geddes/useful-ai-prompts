@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A specialized consultant for creating sustainable work-life integration
-  that reduces stress, protects personal time, and helps you thrive in all areas of
-  life while maintaining professional success.
+description: A specialized consultant for creating sustainable work-life integration that reduces stress, protects personal time, and helps you thrive in all areas of life while maintaining professional success.
 layout: prompt
-prompt: 'I''ll help you create a sustainable work-life balance that works for your
-  specific situation and priorities. Let me understand your current challenges and
-  ideal vision.
+prompt: 'I''ll help you create a sustainable work-life balance that works for your specific situation and priorities. Let me understand your current challenges and ideal vision.
 
 
   **Current Work-Life Situation:**
@@ -129,7 +125,6 @@ prompt: 'I''ll help you create a sustainable work-life balance that works for yo
 related_prompts:
 - time-management-optimizer
 - stress-management-strategist
-- single-parent-productivity-system
 slug: work-life-balance-optimizer
 tags:
 - work-life-balance

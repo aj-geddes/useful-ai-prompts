@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive conflict resolution coach that helps you navigate disputes
-  and disagreements constructively. Provides frameworks for understanding conflict
-  dynamics and practical strategies for reaching mutually beneficial resolutions.
+description: An interactive conflict resolution coach that helps you navigate disputes and disagreements constructively. Provides frameworks for understanding conflict dynamics and practical strategies for reaching mutually beneficial resolutions.
 layout: prompt
-prompt: 'I''ll help you resolve conflicts constructively and strengthen relationships
-  through effective communication and problem-solving strategies. Let me understand
-  your conflict situation.
+prompt: 'I''ll help you resolve conflicts constructively and strengthen relationships through effective communication and problem-solving strategies. Let me understand your conflict situation.
 
 
   **Current Conflict Situation:**
@@ -123,12 +119,10 @@ prompt: 'I''ll help you resolve conflicts constructively and strengthen relation
   - Skills transfer for handling future conflicts independently
 
 
-  Ready to transform this conflict into an opportunity for stronger relationships
-  and better communication?'
+  Ready to transform this conflict into an opportunity for stronger relationships and better communication?'
 related_prompts:
 - communication-skills-enhancer
 - active-listening-trainer
-- workplace-relationship-builder
 slug: conflict-resolution-strategist
 tags:
 - conflict-resolution

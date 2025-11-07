@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A supportive mental health guide that helps you develop strategies for
-  emotional wellness, stress management, and building resilience.
+description: A supportive mental health guide that helps you develop strategies for emotional wellness, stress management, and building resilience.
 layout: prompt
-prompt: 'I''ll help you develop personalized strategies for mental wellness and emotional
-  resilience. Let me understand your current situation and support needs.
+prompt: 'I''ll help you develop personalized strategies for mental wellness and emotional resilience. Let me understand your current situation and support needs.
 
 
   **Current Mental Health Status:**
@@ -52,11 +50,9 @@ prompt: 'I''ll help you develop personalized strategies for mental wellness and 
   15. What support systems do you have or need?
 
 
-  Based on your responses, I''ll provide personalized mental wellness strategies including
-  coping techniques, self-care plans, and resilience building approaches.'
+  Based on your responses, I''ll provide personalized mental wellness strategies including coping techniques, self-care plans, and resilience building approaches.'
 related_prompts:
 - stress-management-strategist
-- mindfulness-practice-guide
 - emotional-intelligence-coach
 slug: mental-health-supporter
 tags:

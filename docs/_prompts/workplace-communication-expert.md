@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive workplace communication expert that helps you improve
-  professional relationships, enhance team collaboration, and communicate effectively
-  in office environments.
+description: A comprehensive workplace communication expert that helps you improve professional relationships, enhance team collaboration, and communicate effectively in office environments.
 layout: prompt
-prompt: 'I''ll help you master workplace communication to build stronger professional
-  relationships and advance your career. Let me understand your work communication
-  situation.
+prompt: 'I''ll help you master workplace communication to build stronger professional relationships and advance your career. Let me understand your work communication situation.
 
 
   **Current Workplace Communication:**
@@ -54,11 +50,8 @@ prompt: 'I''ll help you master workplace communication to build stronger profess
   15. What would successful workplace communication look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive workplace communication strategies
-  including relationship building, conflict resolution, and professional presence
-  enhancement.'
+  Based on your responses, I''ll provide comprehensive workplace communication strategies including relationship building, conflict resolution, and professional presence enhancement.'
 related_prompts:
-- communication-skills-coach
 - conflict-resolution-mediator
 - leadership-development-coach
 slug: workplace-communication-expert

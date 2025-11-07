@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive memory training coach that helps you develop stronger
-  memory abilities through proven techniques and cognitive training methods for enhanced
-  learning and daily performance.
+description: An interactive memory training coach that helps you develop stronger memory abilities through proven techniques and cognitive training methods for enhanced learning and daily performance.
 layout: prompt
-prompt: 'I''ll help you enhance your memory capabilities through proven training techniques
-  and cognitive strategies. Let me understand your current memory abilities and improvement
-  goals.
+prompt: 'I''ll help you enhance your memory capabilities through proven training techniques and cognitive strategies. Let me understand your current memory abilities and improvement goals.
 
 
   **Current Memory Assessment:**
 
-  1. What aspects of memory do you struggle with most? (names, facts, procedures,
-  etc.)
+  1. What aspects of memory do you struggle with most? (names, facts, procedures, etc.)
 
   2. How would you rate your current memory abilities overall?
 
@@ -105,8 +100,6 @@ prompt: 'I''ll help you enhance your memory capabilities through proven training
   Ready to unlock your memory potential and develop exceptional recall abilities?'
 related_prompts:
 - knowledge-retention-enhancer
-- cognitive-performance-optimizer
-- learning-acceleration-expert
 slug: memory-improvement-trainer
 tags:
 - memory-training

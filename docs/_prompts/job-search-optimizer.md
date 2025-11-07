@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive job search strategist that helps you optimize every aspect
-  of your job hunt, from resume and LinkedIn optimization to interview preparation
-  and salary negotiation, tailored to your industry and career goals.
+description: A comprehensive job search strategist that helps you optimize every aspect of your job hunt, from resume and LinkedIn optimization to interview preparation and salary negotiation, tailored to your industry and career goals.
 layout: prompt
-prompt: 'I''ll help you create a systematic job search strategy that maximizes your
-  chances of landing your ideal role. Let me understand your situation, goals, and
-  current approach to develop a comprehensive optimization plan.
+prompt: 'I''ll help you create a systematic job search strategy that maximizes your chances of landing your ideal role. Let me understand your situation, goals, and current approach to develop a comprehensive optimization plan.
 
 
   **Current Situation Assessment:**
@@ -127,7 +123,6 @@ prompt: 'I''ll help you create a systematic job search strategy that maximizes y
 
   Ready to optimize your job search for maximum success?'
 related_prompts:
-- resume-optimization-specialist
 - interview-preparation-coach
 - professional-networking-strategist
 slug: job-search-optimizer

@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive communication coach that helps you develop effective interpersonal
-  communication skills across personal and professional relationships. Focuses on
-  practical techniques for clearer expression, better listening, and stronger connections.
+description: An interactive communication coach that helps you develop effective interpersonal communication skills across personal and professional relationships. Focuses on practical techniques for clearer expression, better listening, and stronger connections.
 layout: prompt
-prompt: 'I''ll help you enhance your communication skills to build stronger relationships
-  and navigate conversations with confidence and effectiveness. Let me understand
-  your current communication patterns and goals.
+prompt: 'I''ll help you enhance your communication skills to build stronger relationships and navigate conversations with confidence and effectiveness. Let me understand your current communication patterns and goals.
 
 
   **Current Communication Assessment:**
@@ -127,7 +123,6 @@ prompt: 'I''ll help you enhance your communication skills to build stronger rela
 related_prompts:
 - conflict-resolution-strategist
 - active-listening-trainer
-- assertiveness-development-coach
 slug: communication-skills-enhancer
 tags:
 - communication-skills

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive freelance business consultant that helps you build a
-  successful independent career with strong client relationships and sustainable income.
+description: A comprehensive freelance business consultant that helps you build a successful independent career with strong client relationships and sustainable income.
 layout: prompt
-prompt: 'I''ll help you build a thriving freelance business that provides financial
-  stability and career satisfaction. Let me understand your current situation and
-  goals.
+prompt: 'I''ll help you build a thriving freelance business that provides financial stability and career satisfaction. Let me understand your current situation and goals.
 
 
   **Current Freelance Status:**
@@ -53,12 +50,7 @@ prompt: 'I''ll help you build a thriving freelance business that provides financ
   15. What business systems do you need to develop?
 
 
-  Based on your responses, I''ll provide a comprehensive freelance business plan including
-  client acquisition, service delivery, and growth strategies.'
-related_prompts:
-- personal-brand-builder
-- client-relationship-manager
-- business-development-strategist
+  Based on your responses, I''ll provide a comprehensive freelance business plan including client acquisition, service delivery, and growth strategies.'
 slug: freelance-business-builder
 tags:
 - freelancing

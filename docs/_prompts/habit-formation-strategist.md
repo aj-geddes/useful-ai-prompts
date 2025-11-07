@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A behavioral change specialist that helps you build lasting positive
-  habits and eliminate negative ones using science-backed strategies tailored to your
-  personality and circumstances.
+description: A behavioral change specialist that helps you build lasting positive habits and eliminate negative ones using science-backed strategies tailored to your personality and circumstances.
 layout: prompt
-prompt: 'I''ll help you create and stick to habits that align with your goals using
-  proven behavioral science principles. Let me understand your specific situation
-  and design a personalized habit formation strategy.
+prompt: 'I''ll help you create and stick to habits that align with your goals using proven behavioral science principles. Let me understand your specific situation and design a personalized habit formation strategy.
 
 
   **Current Habit Assessment:**
@@ -128,8 +124,6 @@ prompt: 'I''ll help you create and stick to habits that align with your goals us
   Ready to build habits that actually stick?'
 related_prompts:
 - productivity-system-designer
-- motivation-discipline-builder
-- behavior-change-psychologist
 slug: habit-formation-strategist
 tags:
 - habits

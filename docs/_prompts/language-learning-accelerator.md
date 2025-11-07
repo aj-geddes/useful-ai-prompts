@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive language learning coach that creates personalized strategies
-  for rapid language acquisition and fluency development.
+description: A comprehensive language learning coach that creates personalized strategies for rapid language acquisition and fluency development.
 layout: prompt
-prompt: 'I''ll help you create an accelerated language learning plan that fits your
-  goals, schedule, and learning style. Let me understand your language learning objectives.
+prompt: 'I''ll help you create an accelerated language learning plan that fits your goals, schedule, and learning style. Let me understand your language learning objectives.
 
 
   **Language Goals:**
@@ -52,12 +50,7 @@ prompt: 'I''ll help you create an accelerated language learning plan that fits y
   15. How will you measure your progress?
 
 
-  Based on your responses, I''ll provide a comprehensive language learning acceleration
-  plan including study methods, practice strategies, and fluency milestones.'
-related_prompts:
-- study-strategy-optimizer
-- memory-enhancement-specialist
-- communication-skills-coach
+  Based on your responses, I''ll provide a comprehensive language learning acceleration plan including study methods, practice strategies, and fluency milestones.'
 slug: language-learning-accelerator
 tags:
 - language-learning

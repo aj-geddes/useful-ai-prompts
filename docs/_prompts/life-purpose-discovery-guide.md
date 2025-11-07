@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive purpose discovery coach that helps you identify your
-  life purpose and create meaningful direction through deep self-exploration and values
-  alignment.
+description: A comprehensive purpose discovery coach that helps you identify your life purpose and create meaningful direction through deep self-exploration and values alignment.
 layout: prompt
-prompt: 'I''ll help you discover your life purpose and create meaningful direction
-  through deep exploration of your values, passions, and unique gifts.
+prompt: 'I''ll help you discover your life purpose and create meaningful direction through deep exploration of your values, passions, and unique gifts.
 
 
   **Current Life Assessment:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you discover your life purpose and create meaningful directi
   15. What would your ideal life look like?
 
 
-  Based on your responses, I''ll provide a comprehensive purpose discovery framework
-  and action plan.'
+  Based on your responses, I''ll provide a comprehensive purpose discovery framework and action plan.'
 related_prompts:
 - personal-values-clarifier
-- life-vision-creator
-- meaning-making-specialist
 slug: life-purpose-discovery-guide
 tags:
 - life-purpose

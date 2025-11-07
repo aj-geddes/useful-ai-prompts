@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive creative development coach that helps you build artistic
-  skills, develop your creative process, and advance your creative practice.
+description: A comprehensive creative development coach that helps you build artistic skills, develop your creative process, and advance your creative practice.
 layout: prompt
-prompt: 'I''ll help you develop your creative skills and optimize your artistic practice
-  for continuous growth and expression. Let me understand your creative goals.
+prompt: 'I''ll help you develop your creative skills and optimize your artistic practice for continuous growth and expression. Let me understand your creative goals.
 
 
   **Creative Background:**
@@ -52,12 +50,9 @@ prompt: 'I''ll help you develop your creative skills and optimize your artistic 
   15. How do you want to share or showcase your creative work?
 
 
-  Based on your responses, I''ll provide a comprehensive creative development plan
-  including skill-building exercises, practice strategies, and creative growth techniques.'
+  Based on your responses, I''ll provide a comprehensive creative development plan including skill-building exercises, practice strategies, and creative growth techniques.'
 related_prompts:
-- skill-development-strategist
 - creative-problem-solving-expert
-- portfolio-development-guide
 slug: creative-skills-developer
 tags:
 - creativity

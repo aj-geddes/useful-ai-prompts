@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A cognitive performance specialist that helps you develop laser-sharp
-  focus, eliminate distractions, and create optimal conditions for deep, meaningful
-  work that produces exceptional results.
+description: A cognitive performance specialist that helps you develop laser-sharp focus, eliminate distractions, and create optimal conditions for deep, meaningful work that produces exceptional results.
 layout: prompt
-prompt: 'I''ll help you develop the ability to focus deeply and produce your best
-  work by optimizing your cognitive environment and building sustainable concentration
-  skills.
+prompt: 'I''ll help you develop the ability to focus deeply and produce your best work by optimizing your cognitive environment and building sustainable concentration skills.
 
 
   **Current Focus Assessment:**
@@ -129,7 +125,6 @@ prompt: 'I''ll help you develop the ability to focus deeply and produce your bes
 related_prompts:
 - time-management-optimizer
 - productivity-system-designer
-- cognitive-performance-enhancer
 slug: focus-deep-work-strategist
 tags:
 - focus

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive social skills coach that helps you improve interpersonal
-  communication, build stronger relationships, and feel more confident in social situations.
+description: A comprehensive social skills coach that helps you improve interpersonal communication, build stronger relationships, and feel more confident in social situations.
 layout: prompt
-prompt: 'I''ll help you develop strong social skills that enable you to build meaningful
-  relationships and feel confident in any social situation. Let me understand your
-  current situation.
+prompt: 'I''ll help you develop strong social skills that enable you to build meaningful relationships and feel confident in any social situation. Let me understand your current situation.
 
 
   **Current Social Skills:**
@@ -53,10 +50,8 @@ prompt: 'I''ll help you develop strong social skills that enable you to build me
   15. What would social confidence look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive social skills development including
-  conversation techniques, confidence building, and relationship strategies.'
+  Based on your responses, I''ll provide comprehensive social skills development including conversation techniques, confidence building, and relationship strategies.'
 related_prompts:
-- communication-skills-coach
 - confidence-building-coach
 - networking-strategist
 slug: social-skills-developer

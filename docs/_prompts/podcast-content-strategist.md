@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive podcast strategist that helps you plan, create, and grow
-  successful podcast content that engages audiences and builds community.
+description: A comprehensive podcast strategist that helps you plan, create, and grow successful podcast content that engages audiences and builds community.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive podcast strategy that attracts and
-  engages your target audience. Let me understand your podcasting goals and current
-  situation.
+prompt: 'I''ll help you develop a comprehensive podcast strategy that attracts and engages your target audience. Let me understand your podcasting goals and current situation.
 
 
   **Podcast Concept:**
@@ -53,12 +50,7 @@ prompt: 'I''ll help you develop a comprehensive podcast strategy that attracts a
   15. What would success look like for your podcast?
 
 
-  Based on your responses, I''ll provide a comprehensive podcast strategy including
-  content planning, audience growth, and production optimization.'
-related_prompts:
-- content-calendar-creator
-- interview-skills-coach
-- audience-building-strategist
+  Based on your responses, I''ll provide a comprehensive podcast strategy including content planning, audience growth, and production optimization.'
 slug: podcast-content-strategist
 tags:
 - podcasting

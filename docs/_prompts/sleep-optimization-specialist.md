@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive sleep optimization expert that helps you improve sleep
-  quality, optimize recovery, and enhance overall energy and health.
+description: A comprehensive sleep optimization expert that helps you improve sleep quality, optimize recovery, and enhance overall energy and health.
 layout: prompt
-prompt: 'I''ll help you optimize your sleep for better energy, health, and overall
-  well-being. Let me understand your current sleep patterns and challenges.
+prompt: 'I''ll help you optimize your sleep for better energy, health, and overall well-being. Let me understand your current sleep patterns and challenges.
 
 
   **Current Sleep Situation:**
@@ -52,12 +50,10 @@ prompt: 'I''ll help you optimize your sleep for better energy, health, and overa
   15. What would optimal sleep look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive sleep optimization strategies
-  including environment setup, routine development, and recovery enhancement.'
+  Based on your responses, I''ll provide comprehensive sleep optimization strategies including environment setup, routine development, and recovery enhancement.'
 related_prompts:
 - energy-management-optimizer
 - stress-management-strategist
-- health-goal-tracker
 slug: sleep-optimization-specialist
 tags:
 - sleep-quality

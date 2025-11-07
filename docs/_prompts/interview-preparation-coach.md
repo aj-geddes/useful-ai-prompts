@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive interview coach that helps you prepare for job interviews
-  with confidence, compelling answers, and strategic presentation of your qualifications.
+description: A comprehensive interview coach that helps you prepare for job interviews with confidence, compelling answers, and strategic presentation of your qualifications.
 layout: prompt
-prompt: 'I''ll help you prepare thoroughly for your upcoming interviews to present
-  yourself confidently and compellingly. Let me understand your interview situation.
+prompt: 'I''ll help you prepare thoroughly for your upcoming interviews to present yourself confidently and compellingly. Let me understand your interview situation.
 
 
   **Interview Context:**
@@ -52,12 +50,7 @@ prompt: 'I''ll help you prepare thoroughly for your upcoming interviews to prese
   15. What would success look like for this interview?
 
 
-  Based on your responses, I''ll provide comprehensive interview preparation including
-  answer frameworks, practice questions, and confidence-building strategies.'
-related_prompts:
-- resume-enhancement-expert
-- career-transition-specialist
-- professional-brand-builder
+  Based on your responses, I''ll provide comprehensive interview preparation including answer frameworks, practice questions, and confidence-building strategies.'
 slug: interview-preparation-coach
 tags:
 - interview-prep

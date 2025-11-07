@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive public speaking coach that helps you overcome speaking
-  anxiety, improve presentation skills, and communicate with confidence and impact.
+description: A comprehensive public speaking coach that helps you overcome speaking anxiety, improve presentation skills, and communicate with confidence and impact.
 layout: prompt
-prompt: 'I''ll help you become a confident and compelling public speaker who can communicate
-  ideas with impact. Let me understand your speaking goals and challenges.
+prompt: 'I''ll help you become a confident and compelling public speaker who can communicate ideas with impact. Let me understand your speaking goals and challenges.
 
 
   **Current Speaking Experience:**
@@ -52,11 +50,9 @@ prompt: 'I''ll help you become a confident and compelling public speaker who can
   15. What would success look like for your speaking development?
 
 
-  Based on your responses, I''ll provide comprehensive public speaking development
-  including confidence building, skill improvement, and presentation mastery.'
+  Based on your responses, I''ll provide comprehensive public speaking development including confidence building, skill improvement, and presentation mastery.'
 related_prompts:
 - confidence-building-coach
-- communication-skills-coach
 - presentation-creation-expert
 slug: public-speaking-coach
 tags:

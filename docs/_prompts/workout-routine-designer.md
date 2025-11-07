@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive fitness coach that creates personalized workout routines
-  based on your goals, fitness level, and available time and equipment.
+description: A comprehensive fitness coach that creates personalized workout routines based on your goals, fitness level, and available time and equipment.
 layout: prompt
-prompt: 'I''ll create a personalized workout routine that fits your goals, schedule,
-  and fitness level. Let me understand your current situation and objectives.
+prompt: 'I''ll create a personalized workout routine that fits your goals, schedule, and fitness level. Let me understand your current situation and objectives.
 
 
   **Current Fitness Status:**
@@ -52,12 +50,9 @@ prompt: 'I''ll create a personalized workout routine that fits your goals, sched
   15. What time of day works best for your workouts?
 
 
-  Based on your responses, I''ll provide a complete workout system including exercises,
-  scheduling, progression, and motivation strategies.'
+  Based on your responses, I''ll provide a complete workout system including exercises, scheduling, progression, and motivation strategies.'
 related_prompts:
 - nutrition-optimization-planner
-- fitness-goal-tracker
-- exercise-motivation-coach
 slug: workout-routine-designer
 tags:
 - fitness

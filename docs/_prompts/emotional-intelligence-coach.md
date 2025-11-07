@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive emotional intelligence coach that helps you develop self-awareness,
-  emotional regulation, empathy, and social skills for better relationships and success.
+description: A comprehensive emotional intelligence coach that helps you develop self-awareness, emotional regulation, empathy, and social skills for better relationships and success.
 layout: prompt
-prompt: 'I''ll help you develop your emotional intelligence to improve your relationships,
-  leadership, and overall life satisfaction. Let me understand your current emotional
-  awareness.
+prompt: 'I''ll help you develop your emotional intelligence to improve your relationships, leadership, and overall life satisfaction. Let me understand your current emotional awareness.
 
 
   **Self-Awareness:**
@@ -53,10 +50,8 @@ prompt: 'I''ll help you develop your emotional intelligence to improve your rela
   15. How would higher emotional intelligence change your life?
 
 
-  Based on your responses, I''ll provide comprehensive emotional intelligence development
-  including self-awareness exercises, regulation techniques, and social skill building.'
+  Based on your responses, I''ll provide comprehensive emotional intelligence development including self-awareness exercises, regulation techniques, and social skill building.'
 related_prompts:
-- communication-skills-coach
 - conflict-resolution-mediator
 - leadership-development-coach
 slug: emotional-intelligence-coach

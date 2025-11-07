@@ -1,75 +1,12 @@
 ---
-"category": |-
-  technical-workflows
-"date": |-
-  2025-08-18
-"description": ""
-"layout": |-
-  prompt
-"prompt": |-
-  {
-    "mcpServers": {
-      "git": {
-        "command": "docker",
-        "args": [
-          "run",
-          "--rm",
-          "-i",
-          "--mount",
-          "type=bind,src=C:\\Users\\[USERNAME],dst=/mnt/workspace",
-          "mcp/git"
-        ]
-      },
-      "filesystem": {
-        "command": "docker",
-        "args": [
-          "run",
-          "-i",
-          "--rm",
-          "-v",
-          "C:\\Users\\[USERNAME]:/mnt/workspace:rw",
-          "mcp/filesystem",
-          "/mnt/workspace"
-        ]
-      },
-      "memory": {
-        "command": "docker",
-        "args": [
-          "run",
-          "-i",
-          "-v",
-          "claude-memory:/app/dist",
-          "--rm",
-          "mcp/memory"
-        ]
-      },
-      "sequentialthinking": {
-        "command": "docker",
-        "args": ["run", "--rm", "-i", "mcp/sequentialthinking"]
-      },
-      "llm-context": {
-        "command": "uv",
-        "args": ["tool", "run", "--from", "llm-context", "lc-mcp"]
-      },
-      "github": {
-        "command": "docker",
-        "args": [
-          "run",
-          "-i",
-          "--rm",
-          "-e",
-          "GITHUB_PERSONAL_ACCESS_TOKEN",
-          "ghcr.io/github/github-mcp-server"
-        ],
-        "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "[YOUR_GITHUB_TOKEN]" }
-      }
-    }
-  }
-"slug": |-
-  claude-mcp-example
-"tags": []
-"title": |-
-  Claude Desktop MCP Configuration Template
-"version": |-
-  1.0.0
+category: technical-workflows
+date: '2025-08-18'
+description: Professional prompt for technical-workflows workflows combining expert perspectives and systematic frameworks
+layout: prompt
+prompt: "{\n  \"mcpServers\": {\n    \"git\": {\n      command: \"docker\",\n      \"args\": [\n        \"run\",\n        \"--rm\",\n        \"-i\",\n        \"--mount\",\n        \"type=bind,src=C:\\\\Users\\\\[USERNAME],dst=/mnt/workspace\",\n        \"mcp/git\"\n      ]\n    },\n    \"filesystem\": {\n      command: \"docker\",\n      \"args\": [\n        \"run\",\n        \"-i\",\n        \"--rm\",\n        \"-v\",\n        \"C:\\\\Users\\\\[USERNAME]:/mnt/workspace:rw\",\n        \"mcp/filesystem\",\n        \"/mnt/workspace\"\n      ]\n    },\n    \"memory\": {\n      command: \"docker\",\n      \"args\": [\n        \"run\",\n        \"-i\",\n        \"-v\",\n        \"claude-memory:/app/dist\",\n        \"--rm\",\n        \"mcp/memory\"\n      ]\n    },\n    \"sequentialthinking\": {\n      command: \"docker\",\n      \"args\": [\"run\", \"--rm\", \"-i\", \"mcp/sequentialthinking\"]\n    },\n    \"llm-context\": {\n      command: \"uv\",\n      \"args\": [\"tool\", \"run\", \"--from\"\
+  , \"llm-context\", \"lc-mcp\"]\n    },\n    \"github\": {\n      command: \"docker\",\n      \"args\": [\n        \"run\",\n        \"-i\",\n        \"--rm\",\n        \"-e\",\n        \"GITHUB_PERSONAL_ACCESS_TOKEN\",\n        \"ghcr.io/github/github-mcp-server\"\n      ],\n      \"env\": { \"GITHUB_PERSONAL_ACCESS_TOKEN\": \"[YOUR_GITHUB_TOKEN]\" }\n    }\n  }\n}"
+slug: claude-mcp-example
+tags: []
+title: Claude Desktop MCP Configuration Template
+version: 1.0.0
 ---

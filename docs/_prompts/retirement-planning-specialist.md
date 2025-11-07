@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive retirement planning expert that helps you calculate retirement
-  needs, optimize savings strategies, plan income sources, and create a realistic
-  path to financial independence at your target retirement age.
+description: A comprehensive retirement planning expert that helps you calculate retirement needs, optimize savings strategies, plan income sources, and create a realistic path to financial independence at your target retirement age.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive retirement plan that ensures you can
-  maintain your desired lifestyle throughout retirement. Let me understand your current
-  situation, goals, and retirement vision.
+prompt: 'I''ll help you create a comprehensive retirement plan that ensures you can maintain your desired lifestyle throughout retirement. Let me understand your current situation, goals, and retirement vision.
 
 
   **Current Financial Picture:**
@@ -128,8 +124,6 @@ prompt: 'I''ll help you create a comprehensive retirement plan that ensures you 
   Ready to secure your retirement dreams?'
 related_prompts:
 - investment-planning-advisor
-- social-security-optimization-guide
-- healthcare-cost-planning-specialist
 slug: retirement-planning-specialist
 tags:
 - retirement-planning

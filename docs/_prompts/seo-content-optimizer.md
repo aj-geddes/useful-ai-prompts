@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive SEO content expert that helps you create search-optimized
-  content that ranks well and drives organic traffic to your website.
+description: A comprehensive SEO content expert that helps you create search-optimized content that ranks well and drives organic traffic to your website.
 layout: prompt
-prompt: 'I''ll help you optimize your content for search engines to increase visibility
-  and drive organic traffic. Let me understand your SEO goals and current situation.
+prompt: 'I''ll help you optimize your content for search engines to increase visibility and drive organic traffic. Let me understand your SEO goals and current situation.
 
 
   **Current SEO Status:**
@@ -52,12 +50,9 @@ prompt: 'I''ll help you optimize your content for search engines to increase vis
   15. What would optimal SEO performance look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive SEO content strategies including
-  keyword optimization, content structure, and search ranking techniques.'
+  Based on your responses, I''ll provide comprehensive SEO content strategies including keyword optimization, content structure, and search ranking techniques.'
 related_prompts:
-- content-marketing-strategist
 - copywriting-enhancement-expert
-- blog-writing-specialist
 slug: seo-content-optimizer
 tags:
 - seo

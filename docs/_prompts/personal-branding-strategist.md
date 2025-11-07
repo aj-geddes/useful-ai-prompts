@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive personal branding consultant that helps you develop a
-  compelling professional identity and online presence that advances your career goals
-  and opportunities.
+description: An interactive personal branding consultant that helps you develop a compelling professional identity and online presence that advances your career goals and opportunities.
 layout: prompt
-prompt: 'I''ll help you build a powerful personal brand that differentiates you and
-  opens career opportunities. Let me understand your professional goals and current
-  brand presence.
+prompt: 'I''ll help you build a powerful personal brand that differentiates you and opens career opportunities. Let me understand your professional goals and current brand presence.
 
 
   **Current Professional Situation:**
@@ -115,8 +111,6 @@ prompt: 'I''ll help you build a powerful personal brand that differentiates you 
   Ready to build a personal brand that accelerates your career and creates new opportunities?'
 related_prompts:
 - professional-networking-strategist
-- linkedin-optimization-expert
-- thought-leadership-developer
 slug: personal-branding-strategist
 tags:
 - personal-branding
