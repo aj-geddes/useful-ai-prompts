@@ -1,21 +1,21 @@
 # AI Assistant Prompt Library
 
-## 347+ Expert-Level Prompts for AI Assistants and Agents
+## 486+ Expert-Level Prompts for AI Assistants and Agents
 
-This repository contains **347 specialized prompts** across **23 categories** designed for AI assistants to adopt expert personas when completing tasks. Each prompt combines multiple expert perspectives with professional frameworks to deliver optimal results.
+This repository contains **486 specialized prompts** across **22 categories** designed for AI assistants to adopt expert personas when completing tasks. Each prompt combines multiple expert perspectives with professional frameworks to deliver optimal results.
 
 ### 🚀 **Massive 2025 Expansion**
 
-The library has grown from 259 to **347+ prompts**, adding comprehensive coverage for high-growth sectors:
+The library has grown from 259 to **486+ prompts**, adding comprehensive coverage for high-growth sectors:
 
-- **Biotechnology** (10 prompts): Drug discovery, bioinformatics, gene editing
-- **Blockchain** (10 prompts): DeFi, smart contracts, tokenization, Web3
-- **Government Digital** (5 prompts): Digital transformation, smart cities, citizen services
-- **Healthcare Digital** (3 prompts): Telehealth, AI clinical decision support, patient engagement
-- **Quantum Computing** (9 prompts): Algorithm development, quantum circuits, quantum ML
-- **Renewable Energy** (15 prompts): Solar development, energy storage, grid integration
-- **Space Economy** (19 prompts): Commercial spaceflight, satellite operations, space tech
-- **Supply Chain** (3 prompts): Resilience planning, digital transformation, logistics
+- **Biotechnology** (15 prompts): Drug discovery, bioinformatics, gene editing, clinical trials
+- **Blockchain** (5 prompts): DeFi, smart contracts, tokenization, Web3 development
+- **Government Digital** (8 prompts): Digital transformation, smart cities, citizen services, policy
+- **Healthcare Digital** (20 prompts): Telehealth, AI clinical decision support, patient engagement, EHR
+- **Quantum Computing** (14 prompts): Algorithm development, quantum circuits, quantum ML, optimization
+- **Renewable Energy** (19 prompts): Solar development, energy storage, grid integration, sustainability
+- **Space Economy** (24 prompts): Commercial spaceflight, satellite operations, space tech, mission planning
+- **Supply Chain** (6 prompts): Resilience planning, digital transformation, logistics optimization
 
 ### Quick Selection Guide
 
@@ -108,8 +108,26 @@ For AI agents and assistants:
 
 2. **Match to prompt taxonomy**:
 
-   ```
-   /prompts/[category]/[subcategory]/[specific-prompt].md
+   ```mermaid
+   flowchart LR
+       A[Task] --> B{Domain?}
+       B -->|Technical| C[prompts/technical/]
+       B -->|Business| D[prompts/business/]
+       B -->|Creative| E[prompts/creative/]
+       B -->|Specialized| F[prompts/specialized/]
+
+       C --> C1[subcategory/]
+       D --> D1[subcategory/]
+       E --> E1[subcategory/]
+       F --> F1[subcategory/]
+
+       C1 --> G[specific-prompt.md]
+       D1 --> G
+       E1 --> G
+       F1 --> G
+
+       style A fill:#0066cc,color:#fff
+       style G fill:#00aa66,color:#fff
    ```
 
 3. **Load and customize** the selected prompt:
@@ -126,6 +144,42 @@ For AI agents and assistants:
 
 Quick reference for programmatic selection:
 
+```mermaid
+graph TB
+    A[Prompt Library] --> B[Technical]
+    A --> C[Business]
+    A --> D[Creative]
+    A --> E[Specialized]
+
+    B --> B1[software-engineering]
+    B --> B2[devops]
+    B --> B3[data-science]
+    B --> B4[security]
+    B --> B5[architecture]
+
+    C --> C1[finance]
+    C --> C2[marketing]
+    C --> C3[operations]
+    C --> C4[management]
+    C --> C5[legal]
+
+    D --> D1[design]
+    D --> D2[content-strategy]
+    D --> D3[ux-design]
+
+    E --> E1[healthcare]
+    E --> E2[engineering]
+    E --> E3[education]
+    E --> E4[research]
+
+    style A fill:#0066cc,color:#fff
+    style B fill:#00aa66,color:#fff
+    style C fill:#00aa66,color:#fff
+    style D fill:#00aa66,color:#fff
+    style E fill:#00aa66,color:#fff
+```
+
+**JSON Format** (for programmatic access):
 ```json
 {
   "prompts": {
@@ -152,12 +206,26 @@ Quick reference for programmatic selection:
 
 ### Repository Structure
 
-```
-/prompts/              # Main prompt library
-/metadata/             # Framework definitions and guidelines
-/docs/                 # Website interface for browsing
-/PROMPT-INDEX.json     # Machine-readable prompt catalog
-/AI-AGENT-GUIDE.md     # Detailed integration instructions
+```mermaid
+graph TD
+    A[useful-ai-prompts] --> B[prompts/]
+    A --> C[metadata/]
+    A --> D[docs/]
+    A --> E[PROMPT-INDEX.json]
+    A --> F[AI-AGENT-GUIDE.md]
+
+    B --> B1[Main prompt library<br/>organized by domain]
+    C --> C1[Framework definitions<br/>and guidelines]
+    D --> D1[Jekyll website<br/>for browsing prompts]
+    E --> E1[Machine-readable<br/>prompt catalog]
+    F --> F1[Integration<br/>specifications]
+
+    style A fill:#0066cc,color:#fff
+    style B fill:#00aa66,color:#fff
+    style C fill:#00aa66,color:#fff
+    style D fill:#00aa66,color:#fff
+    style E fill:#00aa66,color:#fff
+    style F fill:#00aa66,color:#fff
 ```
 
 ---
