@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Professional AI Prompts Library - 490+ Expert ChatGPT & Claude Prompts for Business Success"
-description: "🚀 Boost productivity with 490+ expert AI prompts for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts. Free instant access - no signup required!"
-keywords: "AI prompts, ChatGPT prompts, Claude prompts, professional AI prompts, business prompts, technical prompts, AI productivity, prompt engineering, dual persona prompts, business automation, AI tools, blockchain prompts, biotech prompts, management prompts"
+title: "Professional AI Prompts & Skills Library - 486+ Prompts & 259 Claude Code Skills"
+description: "🚀 Boost productivity with 486+ expert AI prompts and 259 Claude Code skills for business, technical workflows, blockchain, biotech & emerging technologies. Ready-to-use ChatGPT and Claude prompts plus comprehensive coding skills. Free instant access - no signup required!"
+keywords: "AI prompts, ChatGPT prompts, Claude prompts, Claude Code skills, professional AI prompts, business prompts, technical prompts, AI productivity, prompt engineering, dual persona prompts, business automation, AI tools, blockchain prompts, biotech prompts, management prompts, coding skills, developer skills"
 image: "/useful-ai-prompts/assets/images/homepage-hero.png"
 rebuild_trigger: "2025-08-18-force-deploy"
 ---
@@ -10,8 +10,8 @@ rebuild_trigger: "2025-08-18-force-deploy"
 <div class="search-hero">
     <div class="container">
         <div class="search-header">
-            <h1 class="search-title">Professional AI Prompts Library - 490+ Expert ChatGPT & Claude Prompts</h1>
-            <p class="search-subtitle">🚀 Boost productivity instantly with expert-crafted AI prompts for business, technical workflows, blockchain, biotech, and emerging technologies. Interactive format provides comprehensive guidance. <strong>Free access</strong> - no signup required!</p>
+            <h1 class="search-title">Professional AI Prompts & Skills Library</h1>
+            <p class="search-subtitle">🚀 <strong>486 expert prompts</strong> for ChatGPT & Claude + <strong>259 specialized skills</strong> for Claude Code. Boost productivity instantly with comprehensive guidance for business, technical workflows, blockchain, biotech, and emerging technologies. <strong>Free access</strong> - no signup required!</p>
         </div>
         
         <div class="search-container">
@@ -32,12 +32,93 @@ rebuild_trigger: "2025-08-18-force-deploy"
                 <div class="stat-label">Expert Prompts</div>
             </div>
             <div class="stat">
-                <div class="stat-number">42</div>
-                <div class="stat-label">Categories</div>
+                <div class="stat-number">259</div>
+                <div class="stat-label">Code Skills</div>
             </div>
             <div class="stat">
-                <div class="stat-number">35</div>
-                <div class="stat-label">Avg Lines</div>
+                <div class="stat-number">22</div>
+                <div class="stat-label">Prompt Categories</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Skill Categories</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Skills Section -->
+<div class="featured-skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>🚀 New: Claude Code Skills Library</h2>
+            <p>259 production-ready skills for specific technical tasks. Automatically invoked by Claude Code based on your requests.</p>
+        </div>
+
+        <div class="skills-highlight">
+            <div class="skills-promo-card">
+                <div class="promo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>What are Skills?</h3>
+                <p>Specialized capabilities that Claude Code invokes automatically. Each skill provides step-by-step instructions, code examples in multiple languages, and production-ready patterns.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Auto-activated by trigger keywords</li>
+                    <li><i class="fas fa-check"></i> 200-500+ lines of expert guidance</li>
+                    <li><i class="fas fa-check"></i> Multi-language code examples</li>
+                    <li><i class="fas fa-check"></i> Industry best practices</li>
+                </ul>
+                <a href="{{ site.baseurl }}/skills/" class="btn-primary">Browse All Skills →</a>
+            </div>
+
+            <div class="skills-categories-grid">
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-code"></i></div>
+                    <h4>Software Development</h4>
+                    <p class="skill-count">35 skills</p>
+                    <p class="skill-examples">Refactoring, design patterns, microservices</p>
+                </div>
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-server"></i></div>
+                    <h4>DevOps & Infrastructure</h4>
+                    <p class="skill-count">20 skills</p>
+                    <p class="skill-examples">Docker, Kubernetes, Terraform</p>
+                </div>
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Data Science</h4>
+                    <p class="skill-count">20 skills</p>
+                    <p class="skill-examples">EDA, ML models, visualization</p>
+                </div>
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Security & Compliance</h4>
+                    <p class="skill-count">15 skills</p>
+                    <p class="skill-examples">OAuth, encryption, vulnerability scanning</p>
+                </div>
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-check-circle"></i></div>
+                    <h4>Testing & QA</h4>
+                    <p class="skill-count">15 skills</p>
+                    <p class="skill-examples">Unit tests, E2E, performance testing</p>
+                </div>
+                <div class="skill-category-preview">
+                    <div class="category-icon"><i class="fas fa-database"></i></div>
+                    <h4>Database & Storage</h4>
+                    <p class="skill-count">12 skills</p>
+                    <p class="skill-examples">SQL optimization, NoSQL design</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-cta">
+            <div class="cta-content">
+                <h3>Ready to use 259 comprehensive skills?</h3>
+                <p>Copy to your project: <code>cp -r skills/ /project/.claude/skills/</code></p>
+            </div>
+            <div class="cta-actions">
+                <a href="{{ site.baseurl }}/skills/" class="btn-primary-large">Explore Skills Library</a>
+                <a href="{{ site.baseurl }}/SKILLS-MATRIX" class="btn-secondary-large">View Complete Matrix</a>
             </div>
         </div>
     </div>
