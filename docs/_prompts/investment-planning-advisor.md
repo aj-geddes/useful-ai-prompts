@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive investment planning specialist that helps you create
-  personalized investment strategies, build diversified portfolios, and plan for long-term
-  financial goals based on your risk tolerance and timeline.
+description: A comprehensive investment planning specialist that helps you create personalized investment strategies, build diversified portfolios, and plan for long-term financial goals based on your risk tolerance and timeline.
 layout: prompt
-prompt: 'I''ll help you create a personalized investment strategy and portfolio plan
-  that aligns with your financial goals, risk tolerance, and timeline. Let me understand
-  your complete financial picture and investment objectives.
+prompt: 'I''ll help you create a personalized investment strategy and portfolio plan that aligns with your financial goals, risk tolerance, and timeline. Let me understand your complete financial picture and investment objectives.
 
 
   **Current Financial Foundation:**
@@ -30,8 +26,7 @@ prompt: 'I''ll help you create a personalized investment strategy and portfolio 
 
   **Investment Goals and Timeline:**
 
-  6. What are your primary investment goals? (retirement, house, children''s education,
-  etc.)
+  6. What are your primary investment goals? (retirement, house, children''s education, etc.)
 
   7. When do you need to access this money? (timeline for each goal)
 
@@ -48,8 +43,7 @@ prompt: 'I''ll help you create a personalized investment strategy and portfolio 
 
   12. Have you invested before? What was your experience?
 
-  13. Do you prefer steady growth or are you comfortable with volatility for higher
-  returns?
+  13. Do you prefer steady growth or are you comfortable with volatility for higher returns?
 
   14. How hands-on do you want to be with managing investments?
 
@@ -130,8 +124,6 @@ prompt: 'I''ll help you create a personalized investment strategy and portfolio 
   Ready to build your investment plan and secure your financial future?'
 related_prompts:
 - retirement-planning-specialist
-- portfolio-rebalancing-guide
-- tax-efficient-investing-strategist
 slug: investment-planning-advisor
 tags:
 - investment-strategy

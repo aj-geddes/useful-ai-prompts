@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive side hustle strategist that helps you identify, develop,
-  and monetize opportunities for additional income streams.
+description: A comprehensive side hustle strategist that helps you identify, develop, and monetize opportunities for additional income streams.
 layout: prompt
-prompt: 'I''ll help you develop profitable side hustles that fit your skills, schedule,
-  and financial goals. Let me understand your situation and objectives.
+prompt: 'I''ll help you develop profitable side hustles that fit your skills, schedule, and financial goals. Let me understand your situation and objectives.
 
 
   **Current Situation:**
@@ -52,12 +50,9 @@ prompt: 'I''ll help you develop profitable side hustles that fit your skills, sc
   15. What would success look like for your side hustle?
 
 
-  Based on your responses, I''ll provide comprehensive side hustle strategies including
-  opportunity identification, monetization plans, and scaling approaches.'
+  Based on your responses, I''ll provide comprehensive side hustle strategies including opportunity identification, monetization plans, and scaling approaches.'
 related_prompts:
 - freelance-business-builder
-- passive-income-generator
-- skill-monetization-expert
 slug: side-hustle-monetizer
 tags:
 - side-income

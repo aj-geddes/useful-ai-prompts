@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive resilience coach that helps you build mental and emotional
-  strength to navigate life's challenges with greater ease and bounce back from setbacks
-  more effectively.
+description: An interactive resilience coach that helps you build mental and emotional strength to navigate life's challenges with greater ease and bounce back from setbacks more effectively.
 layout: prompt
-prompt: 'I''ll help you build resilience and mental strength to handle life''s challenges
-  with greater confidence and recovery ability. Let me understand your current resilience
-  and stress patterns.
+prompt: 'I''ll help you build resilience and mental strength to handle life''s challenges with greater confidence and recovery ability. Let me understand your current resilience and stress patterns.
 
 
   **Current Resilience Assessment:**
@@ -112,12 +108,10 @@ prompt: 'I''ll help you build resilience and mental strength to handle life''s c
   - Long-term stress inoculation and adaptation
 
 
-  Ready to build unshakeable resilience that helps you thrive through any challenge
-  life presents?'
+  Ready to build unshakeable resilience that helps you thrive through any challenge life presents?'
 related_prompts:
 - stress-reduction-strategist
 - mental-health-support-system
-- growth-mindset-cultivator
 slug: resilience-building-expert
 tags:
 - resilience

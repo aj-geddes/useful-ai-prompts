@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive college savings expert that helps you plan and save for
-  education expenses through strategic savings plans and financial aid optimization.
+description: A comprehensive college savings expert that helps you plan and save for education expenses through strategic savings plans and financial aid optimization.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive college savings strategy that makes
-  higher education affordable for your family. Let me understand your education planning
-  needs.
+prompt: 'I''ll help you create a comprehensive college savings strategy that makes higher education affordable for your family. Let me understand your education planning needs.
 
 
   **Family Situation:**
@@ -53,11 +50,9 @@ prompt: 'I''ll help you create a comprehensive college savings strategy that mak
   15. How do you plan to supplement savings if needed?
 
 
-  Based on your responses, I''ll provide a comprehensive college savings plan including
-  account selection, contribution strategies, and financial aid optimization.'
+  Based on your responses, I''ll provide a comprehensive college savings plan including account selection, contribution strategies, and financial aid optimization.'
 related_prompts:
 - investment-strategy-optimizer
-- family-financial-planner
 - tax-optimization-strategist
 slug: college-savings-planner
 tags:

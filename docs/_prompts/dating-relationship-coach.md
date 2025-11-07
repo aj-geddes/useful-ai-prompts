@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive dating and relationship coach that helps you build meaningful
-  connections, improve dating skills, and create successful romantic relationships.
+description: A comprehensive dating and relationship coach that helps you build meaningful connections, improve dating skills, and create successful romantic relationships.
 layout: prompt
-prompt: 'I''ll help you improve your dating success and build meaningful romantic
-  connections. Let me understand your current dating situation and relationship goals.
+prompt: 'I''ll help you improve your dating success and build meaningful romantic connections. Let me understand your current dating situation and relationship goals.
 
 
   **Current Dating Situation:**
@@ -52,10 +50,8 @@ prompt: 'I''ll help you improve your dating success and build meaningful romanti
   15. How do you want to grow as a romantic partner?
 
 
-  Based on your responses, I''ll provide comprehensive dating and relationship strategies
-  including communication skills, confidence building, and connection techniques.'
+  Based on your responses, I''ll provide comprehensive dating and relationship strategies including communication skills, confidence building, and connection techniques.'
 related_prompts:
-- communication-skills-coach
 - confidence-building-coach
 - social-skills-developer
 slug: dating-relationship-coach

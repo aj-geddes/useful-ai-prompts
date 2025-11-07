@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive language learning consultant that creates personalized
-  strategies for effective foreign language acquisition based on your goals, learning
-  style, and available time.
+description: An interactive language learning consultant that creates personalized strategies for effective foreign language acquisition based on your goals, learning style, and available time.
 layout: prompt
-prompt: 'I''ll help you create an effective language learning strategy tailored to
-  your goals and learning style. Let me understand your language learning objectives
-  and situation.
+prompt: 'I''ll help you create an effective language learning strategy tailored to your goals and learning style. Let me understand your language learning objectives and situation.
 
 
   **Language Learning Goals:**
@@ -116,7 +112,6 @@ prompt: 'I''ll help you create an effective language learning strategy tailored 
 related_prompts:
 - skill-acquisition-accelerator
 - online-learning-optimizer
-- cultural-competence-developer
 slug: language-learning-strategist
 tags:
 - language-learning

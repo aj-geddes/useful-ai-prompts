@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive conflict resolution expert that helps you navigate and
-  resolve conflicts through effective communication, mediation, and relationship repair
-  strategies.
+description: A comprehensive conflict resolution expert that helps you navigate and resolve conflicts through effective communication, mediation, and relationship repair strategies.
 layout: prompt
-prompt: 'I''ll help you resolve conflicts constructively and strengthen relationships
-  through effective communication and mediation strategies. Let me understand your
-  conflict situation.
+prompt: 'I''ll help you resolve conflicts constructively and strengthen relationships through effective communication and mediation strategies. Let me understand your conflict situation.
 
 
   **Conflict Context:**
@@ -54,12 +50,8 @@ prompt: 'I''ll help you resolve conflicts constructively and strengthen relation
   15. How do you want the relationship to look after resolution?
 
 
-  Based on your responses, I''ll provide comprehensive conflict resolution strategies
-  including communication frameworks, mediation techniques, and relationship repair
-  approaches.'
+  Based on your responses, I''ll provide comprehensive conflict resolution strategies including communication frameworks, mediation techniques, and relationship repair approaches.'
 related_prompts:
-- communication-skills-coach
-- relationship-building-expert
 - emotional-intelligence-coach
 slug: conflict-resolution-mediator
 tags:

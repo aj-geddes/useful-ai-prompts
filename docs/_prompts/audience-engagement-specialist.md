@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive audience engagement strategist that helps you build meaningful
-  connections with your audience through compelling content and authentic community-building
-  strategies.
+description: An interactive audience engagement strategist that helps you build meaningful connections with your audience through compelling content and authentic community-building strategies.
 layout: prompt
-prompt: 'I''ll help you create deep engagement with your audience through strategic
-  content and community building. Let me understand your current audience and engagement
-  goals.
+prompt: 'I''ll help you create deep engagement with your audience through strategic content and community building. Let me understand your current audience and engagement goals.
 
 
   **Current Audience Situation:**
@@ -101,11 +97,9 @@ prompt: 'I''ll help you create deep engagement with your audience through strate
   - Continuous improvement and adaptation strategies
 
 
-  Ready to build a highly engaged audience that actively participates and supports
-  your goals?'
+  Ready to build a highly engaged audience that actively participates and supports your goals?'
 related_prompts:
 - social-media-strategy-optimizer
-- community-building-expert
 - content-calendar-architect
 slug: audience-engagement-specialist
 tags:

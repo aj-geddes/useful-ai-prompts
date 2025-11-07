@@ -1,5 +1,5 @@
 ---
-category: business-analysis
+category: analysis
 compatible_models:
 - GPT-4
 - Claude 3

@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive insurance planning consultant that helps you assess insurance
-  needs and create optimal coverage strategies for financial protection.
+description: A comprehensive insurance planning consultant that helps you assess insurance needs and create optimal coverage strategies for financial protection.
 layout: prompt
-prompt: 'I''ll help you create a comprehensive insurance strategy that protects your
-  financial future. Let me assess your current coverage and risk factors.
+prompt: 'I''ll help you create a comprehensive insurance strategy that protects your financial future. Let me assess your current coverage and risk factors.
 
 
   **Current Insurance Status:**
@@ -52,11 +50,9 @@ prompt: 'I''ll help you create a comprehensive insurance strategy that protects 
   15. What types of risks worry you most?
 
 
-  Based on your responses, I''ll provide a complete insurance needs analysis and optimization
-  recommendations.'
+  Based on your responses, I''ll provide a complete insurance needs analysis and optimization recommendations.'
 related_prompts:
 - emergency-fund-builder
-- risk-assessment-specialist
 - financial-goal-tracker
 slug: insurance-planning-expert
 tags:

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive brand storytelling expert that helps you craft compelling
-  brand narratives that connect with audiences and differentiate your business.
+description: A comprehensive brand storytelling expert that helps you craft compelling brand narratives that connect with audiences and differentiate your business.
 layout: prompt
-prompt: 'I''ll help you create powerful brand stories that connect emotionally with
-  your audience and differentiate your business in the marketplace. Let me understand
-  your brand.
+prompt: 'I''ll help you create powerful brand stories that connect emotionally with your audience and differentiate your business in the marketplace. Let me understand your brand.
 
 
   **Current Brand Situation:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you create powerful brand stories that connect emotionally w
   15. What brand stories would inspire action from your audience?
 
 
-  Based on your responses, I''ll provide comprehensive brand storytelling strategies
-  including narrative frameworks, content themes, and emotional connection techniques.'
+  Based on your responses, I''ll provide comprehensive brand storytelling strategies including narrative frameworks, content themes, and emotional connection techniques.'
 related_prompts:
 - storytelling-framework-designer
-- content-marketing-strategist
-- personal-brand-builder
 slug: brand-storytelling-expert
 tags:
 - brand-storytelling

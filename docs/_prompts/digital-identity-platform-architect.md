@@ -6,20 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-01-14'
-description: This prompt helps government technology leaders design and implement
-  comprehensive digital identity platforms that enable secure, convenient citizen
-  authentication across all government services while maintaining privacy, security,
-  and accessibility standards.
+description: This prompt helps government technology leaders design and implement comprehensive digital identity platforms that enable secure, convenient citizen authentication across all government services while maintaining privacy, security, and accessibility standards.
 layout: prompt
-prompt: 'I''ll help you design a comprehensive digital identity platform for government
-  services that balances security, privacy, and user experience. Let me understand
-  your requirements:
+prompt: 'I''ll help you design a comprehensive digital identity platform for government services that balances security, privacy, and user experience. Let me understand your requirements:
 
 
   **Government context and scope:**
 
-  1. What level of government services will this identity platform serve? (federal,
-  state, local, multi-jurisdictional)
+  1. What level of government services will this identity platform serve? (federal, state, local, multi-jurisdictional)
 
   2. How many citizens will the platform need to support?
 
@@ -53,30 +47,22 @@ prompt: 'I''ll help you design a comprehensive digital identity platform for gov
   Based on your answers, I''ll provide:
 
 
-  **IDENTITY PLATFORM ARCHITECTURE** - Comprehensive technical design and implementation
-  plan
+  **IDENTITY PLATFORM ARCHITECTURE** - Comprehensive technical design and implementation plan
 
-  **AUTHENTICATION FLOW DESIGN** - Multi-factor authentication strategies and user
-  journeys
+  **AUTHENTICATION FLOW DESIGN** - Multi-factor authentication strategies and user journeys
 
-  **ENROLLMENT AND VERIFICATION PROCESS** - Secure identity proofing and account setup
-  procedures
+  **ENROLLMENT AND VERIFICATION PROCESS** - Secure identity proofing and account setup procedures
 
-  **INTEGRATION STRATEGY** - API framework for connecting government services and
-  external systems
+  **INTEGRATION STRATEGY** - API framework for connecting government services and external systems
 
-  **PRIVACY AND SECURITY FRAMEWORK** - Data protection, consent management, and threat
-  mitigation
+  **PRIVACY AND SECURITY FRAMEWORK** - Data protection, consent management, and threat mitigation
 
   **ACCESSIBILITY AND INCLUSION PLAN** - Ensuring equitable access for all citizens
 
 
-  Share your digital identity platform requirements and let''s build a secure, user-friendly
-  solution!'
+  Share your digital identity platform requirements and let''s build a secure, user-friendly solution!'
 related_prompts:
 - digital-government-transformation-strategy
-- government-api-security-architect
-- citizen-privacy-protection-specialist
 slug: digital-identity-platform-architect
 tags:
 - digital identity

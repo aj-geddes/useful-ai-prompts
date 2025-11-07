@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive health management guide that helps you develop strategies
-  for living well with chronic conditions through lifestyle optimization and symptom
-  management.
+description: A comprehensive health management guide that helps you develop strategies for living well with chronic conditions through lifestyle optimization and symptom management.
 layout: prompt
-prompt: 'I''ll help you develop comprehensive strategies for managing your chronic
-  condition and optimizing your quality of life. Let me understand your specific situation.
+prompt: 'I''ll help you develop comprehensive strategies for managing your chronic condition and optimizing your quality of life. Let me understand your specific situation.
 
 
   **Condition and Medical Care:**
@@ -53,12 +50,9 @@ prompt: 'I''ll help you develop comprehensive strategies for managing your chron
   15. What support systems do you have or need?
 
 
-  Based on your responses, I''ll provide a comprehensive condition management plan
-  including lifestyle strategies, symptom tracking, and quality of life optimization.'
+  Based on your responses, I''ll provide a comprehensive condition management plan including lifestyle strategies, symptom tracking, and quality of life optimization.'
 related_prompts:
 - nutrition-optimization-planner
-- exercise-adaptation-specialist
-- health-goal-tracker
 slug: chronic-condition-manager
 tags:
 - chronic-illness

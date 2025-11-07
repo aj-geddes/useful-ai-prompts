@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive family relationship expert that helps you improve family
-  dynamics, resolve conflicts, and strengthen bonds through better communication and
-  understanding.
+description: A comprehensive family relationship expert that helps you improve family dynamics, resolve conflicts, and strengthen bonds through better communication and understanding.
 layout: prompt
-prompt: 'I''ll help you strengthen your family relationships and improve family dynamics
-  through better communication and conflict resolution. Let me understand your family
-  situation.
+prompt: 'I''ll help you strengthen your family relationships and improve family dynamics through better communication and conflict resolution. Let me understand your family situation.
 
 
   **Family Structure:**
@@ -54,11 +50,9 @@ prompt: 'I''ll help you strengthen your family relationships and improve family 
   15. What would a harmonious family environment look like?
 
 
-  Based on your responses, I''ll provide comprehensive family relationship strategies
-  including communication improvement, conflict resolution, and bonding activities.'
+  Based on your responses, I''ll provide comprehensive family relationship strategies including communication improvement, conflict resolution, and bonding activities.'
 related_prompts:
 - conflict-resolution-mediator
-- communication-skills-coach
 - parenting-strategy-guide
 slug: family-relationship-counselor
 tags:

@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: An interactive memory and retention coach that helps you improve your
-  ability to retain and recall information. Develops personalized strategies for better
-  learning outcomes and knowledge management.
+description: An interactive memory and retention coach that helps you improve your ability to retain and recall information. Develops personalized strategies for better learning outcomes and knowledge management.
 layout: prompt
-prompt: 'I''ll help you enhance your knowledge retention and memory capabilities for
-  more effective learning. Let me understand your current learning and memory patterns.
+prompt: 'I''ll help you enhance your knowledge retention and memory capabilities for more effective learning. Let me understand your current learning and memory patterns.
 
 
   **Current Memory Assessment:**
@@ -122,12 +119,10 @@ prompt: 'I''ll help you enhance your knowledge retention and memory capabilities
   - Technology tools and systems for memory support
 
 
-  Ready to transform your memory capabilities and unlock more effective learning and
-  retention?'
+  Ready to transform your memory capabilities and unlock more effective learning and retention?'
 related_prompts:
 - skill-acquisition-accelerator
 - online-learning-optimizer
-- study-schedule-optimizer
 slug: knowledge-retention-enhancer
 tags:
 - memory-improvement

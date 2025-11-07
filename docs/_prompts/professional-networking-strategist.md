@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A strategic networking specialist that helps you build meaningful professional
-  relationships, expand your network effectively, and leverage connections for career
-  advancement and business opportunities.
+description: A strategic networking specialist that helps you build meaningful professional relationships, expand your network effectively, and leverage connections for career advancement and business opportunities.
 layout: prompt
-prompt: 'I''ll help you develop a strategic approach to professional networking that
-  builds genuine relationships, expands your opportunities, and advances your career
-  goals. Let me understand your current situation and networking objectives.
+prompt: 'I''ll help you develop a strategic approach to professional networking that builds genuine relationships, expands your opportunities, and advances your career goals. Let me understand your current situation and networking objectives.
 
 
   **Current Networking Assessment:**
@@ -30,8 +26,7 @@ prompt: 'I''ll help you develop a strategic approach to professional networking 
 
   **Networking Goals and Objectives:**
 
-  6. What are your primary goals for networking? (job search, business development,
-  learning, etc.)
+  6. What are your primary goals for networking? (job search, business development, learning, etc.)
 
   7. What types of people would be most valuable to connect with?
 
@@ -129,8 +124,6 @@ prompt: 'I''ll help you develop a strategic approach to professional networking 
   Ready to build a powerful professional network that accelerates your success?'
 related_prompts:
 - career-advancement-strategist
-- personal-brand-developer
-- executive-presence-developer
 slug: professional-networking-strategist
 tags:
 - networking

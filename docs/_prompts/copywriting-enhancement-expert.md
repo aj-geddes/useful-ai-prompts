@@ -6,12 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive copywriting expert that helps you create compelling,
-  persuasive copy that converts readers into customers and achieves your marketing
-  goals.
+description: A comprehensive copywriting expert that helps you create compelling, persuasive copy that converts readers into customers and achieves your marketing goals.
 layout: prompt
-prompt: 'I''ll help you create compelling copy that persuades, engages, and converts
-  your audience. Let me understand your copywriting needs and goals.
+prompt: 'I''ll help you create compelling copy that persuades, engages, and converts your audience. Let me understand your copywriting needs and goals.
 
 
   **Current Copywriting Situation:**
@@ -53,12 +50,10 @@ prompt: 'I''ll help you create compelling copy that persuades, engages, and conv
   15. What would successful copy look like for your business?
 
 
-  Based on your responses, I''ll provide comprehensive copywriting strategies including
-  persuasion techniques, structure frameworks, and conversion optimization.'
+  Based on your responses, I''ll provide comprehensive copywriting strategies including persuasion techniques, structure frameworks, and conversion optimization.'
 related_prompts:
 - email-marketing-specialist
 - social-media-strategy-optimizer
-- content-marketing-strategist
 slug: copywriting-enhancement-expert
 tags:
 - copywriting

@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive YouTube strategist that helps you create engaging video
-  content, grow your channel, and build a successful YouTube presence.
+description: A comprehensive YouTube strategist that helps you create engaging video content, grow your channel, and build a successful YouTube presence.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive YouTube strategy that grows your audience
-  and creates engaging video content. Let me understand your channel goals.
+prompt: 'I''ll help you develop a comprehensive YouTube strategy that grows your audience and creates engaging video content. Let me understand your channel goals.
 
 
   **Current YouTube Presence:**
@@ -52,12 +50,10 @@ prompt: 'I''ll help you develop a comprehensive YouTube strategy that grows your
   15. What would success look like for your YouTube channel?
 
 
-  Based on your responses, I''ll provide comprehensive YouTube strategy including
-  content planning, audience growth, and monetization optimization.'
+  Based on your responses, I''ll provide comprehensive YouTube strategy including content planning, audience growth, and monetization optimization.'
 related_prompts:
 - video-content-creator
 - social-media-strategy-optimizer
-- audience-building-strategist
 slug: youtube-content-strategist
 tags:
 - youtube

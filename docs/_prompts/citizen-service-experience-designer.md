@@ -6,19 +6,14 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-01-14'
-description: This prompt helps government service designers create citizen-centered
-  digital experiences that simplify government interactions, reduce friction, and
-  improve satisfaction while ensuring accessibility, transparency, and effectiveness
-  in public service delivery.
+description: This prompt helps government service designers create citizen-centered digital experiences that simplify government interactions, reduce friction, and improve satisfaction while ensuring accessibility, transparency, and effectiveness in public service delivery.
 layout: prompt
-prompt: 'I''ll help you design exceptional citizen service experiences that make government
-  interactions simple, efficient, and satisfying. Let me understand your service context:
+prompt: 'I''ll help you design exceptional citizen service experiences that make government interactions simple, efficient, and satisfying. Let me understand your service context:
 
 
   **Service scope and current state:**
 
-  1. Which government service are you redesigning? (DMV, taxes, permits, benefits,
-  etc.)
+  1. Which government service are you redesigning? (DMV, taxes, permits, benefits, etc.)
 
   2. What''s the current citizen journey like? (steps, touchpoints, pain points)
 
@@ -52,29 +47,22 @@ prompt: 'I''ll help you design exceptional citizen service experiences that make
   Based on your answers, I''ll provide:
 
 
-  **CITIZEN JOURNEY OPTIMIZATION** - End-to-end experience redesign with friction
-  reduction
+  **CITIZEN JOURNEY OPTIMIZATION** - End-to-end experience redesign with friction reduction
 
-  **MULTI-CHANNEL SERVICE STRATEGY** - Seamless experience across digital and physical
-  touchpoints
+  **MULTI-CHANNEL SERVICE STRATEGY** - Seamless experience across digital and physical touchpoints
 
-  **ACCESSIBILITY AND INCLUSION DESIGN** - Universal access ensuring no citizen is
-  left behind
+  **ACCESSIBILITY AND INCLUSION DESIGN** - Universal access ensuring no citizen is left behind
 
   **SERVICE PERFORMANCE FRAMEWORK** - Metrics and measurement for continuous improvement
 
   **IMPLEMENTATION ROADMAP** - Phased approach to transform citizen experience
 
-  **CHANGE MANAGEMENT STRATEGY** - Staff training and organizational transformation
-  plan
+  **CHANGE MANAGEMENT STRATEGY** - Staff training and organizational transformation plan
 
 
-  Share your citizen service challenge and let''s create an outstanding government
-  experience!'
+  Share your citizen service challenge and let''s create an outstanding government experience!'
 related_prompts:
 - digital-government-transformation-strategy
-- government-service-analytics-specialist
-- public-engagement-platform-designer
 slug: citizen-service-experience-designer
 tags:
 - citizen experience

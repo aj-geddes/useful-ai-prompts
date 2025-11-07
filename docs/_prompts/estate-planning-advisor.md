@@ -6,13 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive estate planning expert that helps you create strategies
-  for asset protection, legacy planning, and ensuring your wishes are carried out
-  effectively.
+description: A comprehensive estate planning expert that helps you create strategies for asset protection, legacy planning, and ensuring your wishes are carried out effectively.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive estate plan that protects your assets
-  and ensures your legacy wishes are fulfilled. Let me understand your estate planning
-  needs.
+prompt: 'I''ll help you develop a comprehensive estate plan that protects your assets and ensures your legacy wishes are fulfilled. Let me understand your estate planning needs.
 
 
   **Current Estate Status:**
@@ -54,12 +50,10 @@ prompt: 'I''ll help you develop a comprehensive estate plan that protects your a
   15. What would a complete estate plan look like for you?
 
 
-  Based on your responses, I''ll provide comprehensive estate planning guidance including
-  document recommendations, tax strategies, and legacy optimization.'
+  Based on your responses, I''ll provide comprehensive estate planning guidance including document recommendations, tax strategies, and legacy optimization.'
 related_prompts:
 - insurance-planning-expert
 - tax-optimization-strategist
-- family-financial-planner
 slug: estate-planning-advisor
 tags:
 - estate-planning

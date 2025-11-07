@@ -6,11 +6,9 @@ compatible_models:
 - Gemini Pro
 - GPT-3.5
 date: '2025-08-18'
-description: A comprehensive skill assessment expert that helps you identify skill
-  gaps, create development plans, and align your capabilities with career goals.
+description: A comprehensive skill assessment expert that helps you identify skill gaps, create development plans, and align your capabilities with career goals.
 layout: prompt
-prompt: 'I''ll help you identify skill gaps and create a strategic development plan
-  that advances your career. Let me understand your current skills and career goals.
+prompt: 'I''ll help you identify skill gaps and create a strategic development plan that advances your career. Let me understand your current skills and career goals.
 
 
   **Current Skill Assessment:**
@@ -52,12 +50,9 @@ prompt: 'I''ll help you identify skill gaps and create a strategic development p
   15. What would successful skill development look like for your career?
 
 
-  Based on your responses, I''ll provide comprehensive skill gap analysis including
-  development prioritization, learning strategies, and career alignment planning.'
+  Based on your responses, I''ll provide comprehensive skill gap analysis including development prioritization, learning strategies, and career alignment planning.'
 related_prompts:
 - technical-skill-accelerator
-- career-transition-specialist
-- professional-development-planner
 slug: skill-gap-analyzer
 tags:
 - skill-assessment
