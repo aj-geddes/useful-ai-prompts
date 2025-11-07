@@ -1,8 +1,12 @@
-# AI Assistant Prompt Library
+# AI Assistant Prompt & Skills Library
 
-## 486+ Expert-Level Prompts for AI Assistants and Agents
+## 486+ Expert Prompts & 200 Claude Code Skills
 
-This repository contains **486 specialized prompts** across **22 categories** designed for AI assistants to adopt expert personas when completing tasks. Each prompt combines multiple expert perspectives with professional frameworks to deliver optimal results.
+This repository contains:
+- **486 specialized prompts** across **22 categories** designed for AI assistants to adopt expert personas
+- **200 focused skills** across **20 categories** for Claude Code to handle specific technical tasks
+
+Each prompt combines multiple expert perspectives with professional frameworks. Each skill provides step-by-step guidance with code examples and best practices.
 
 ### 🚀 **Massive 2025 Expansion**
 
@@ -197,6 +201,123 @@ graph TB
 }
 ```
 
+---
+
+## Claude Code Skills Library
+
+In addition to comprehensive prompts, this repository includes **200 specialized skills** designed specifically for [Claude Code](https://code.claude.com/). Skills provide focused, actionable guidance for specific technical tasks.
+
+### What are Skills?
+
+Skills are specialized capabilities that Claude Code can invoke automatically based on your requests. Unlike broad prompts, skills:
+
+- **Focus on one specific capability** (e.g., "refactor legacy code", "design REST APIs")
+- **Activate automatically** when Claude detects relevant keywords in your request
+- **Provide step-by-step instructions** with code examples and best practices
+- **Easy to integrate** - copy to `.claude/skills/` in your project for team sharing
+
+### Skills Overview
+
+```mermaid
+graph LR
+    A[200 Skills] --> B[Software Dev<br/>35 skills]
+    A --> C[DevOps<br/>20 skills]
+    A --> D[Testing & QA<br/>15 skills]
+    A --> E[Database<br/>12 skills]
+    A --> F[API & Integration<br/>12 skills]
+    A --> G[Security<br/>15 skills]
+    A --> H[12 More<br/>Categories<br/>91 skills]
+
+    style A fill:#0066cc,color:#fff
+    style B fill:#00aa66,color:#fff
+    style C fill:#00aa66,color:#fff
+    style D fill:#00aa66,color:#fff
+    style E fill:#00aa66,color:#fff
+    style F fill:#00aa66,color:#fff
+    style G fill:#00aa66,color:#fff
+    style H fill:#00aa66,color:#fff
+```
+
+### Skills Categories (200 Total)
+
+| Category | Count | Examples |
+|----------|-------|----------|
+| **Software Development & Engineering** | 35 | refactor-legacy-code, code-review-analysis, design-patterns |
+| **DevOps & Infrastructure** | 20 | docker-containerization, kubernetes-deployment, terraform-iac |
+| **Testing & QA** | 15 | unit-testing-framework, e2e-testing, test-automation |
+| **Security & Compliance** | 15 | vulnerability-scanning, oauth-implementation, data-encryption |
+| **Documentation & Writing** | 15 | api-documentation, architecture-diagrams, runbook-creation |
+| **Data Science & Analytics** | 20 | exploratory-data-analysis, feature-engineering, ab-testing |
+| **Database & Storage** | 12 | sql-query-optimization, database-indexing, schema-design |
+| **API & Integration** | 12 | rest-api-design, graphql-implementation, webhook-development |
+| **Cloud Platforms** | 15 | aws-lambda, serverless-architecture, cloud-cost-optimization |
+| **Frontend Development** | 12 | react-components, responsive-design, css-architecture |
+| **Backend Development** | 12 | nodejs-express, django-application, background-jobs |
+| **Mobile Development** | 8 | react-native, flutter-development, push-notifications |
+| **Machine Learning & AI** | 10 | ml-model-training, model-deployment, hyperparameter-tuning |
+| **Monitoring & Observability** | 8 | prometheus-monitoring, grafana-dashboards, distributed-tracing |
+| **Version Control & CI/CD** | 10 | git-workflow-strategy, github-actions, semantic-versioning |
+| **Project Management** | 10 | agile-sprint-planning, risk-assessment, release-planning |
+| **Business Analysis** | 8 | requirements-gathering, user-story-writing, process-mapping |
+| **Design & UX** | 8 | wireframe-prototyping, design-systems, user-research |
+| **Performance & Optimization** | 8 | web-performance-audit, bundle-optimization, database-tuning |
+| **Troubleshooting & Debugging** | 12 | production-debugging, memory-leak-detection, root-cause-analysis |
+
+### How to Use Skills
+
+1. **Copy skills to your project:**
+   ```bash
+   cp -r skills/ /path/to/your/project/.claude/skills/
+   ```
+
+2. **Use naturally in conversations:**
+   ```
+   You: "Help me refactor this legacy code"
+   Claude: (Automatically invokes refactor-legacy-code skill)
+   ```
+
+3. **Skills activate automatically** based on keywords in your requests
+
+### Skills Resources
+
+- **[Complete Skills Matrix](SKILLS-MATRIX.md)**: All 200 skills with descriptions and trigger keywords
+- **[Skills Website](https://aj-geddes.github.io/useful-ai-prompts/skills)**: Browse skills by category on GitHub Pages
+- **[Claude Code Skills Docs](https://code.claude.com/docs/en/skills)**: Official documentation for creating and using skills
+
+### Example Skills
+
+#### `refactor-legacy-code`
+Modernize legacy codebases with:
+- Incremental refactoring strategies
+- Modern pattern implementations
+- Safety net testing approaches
+- Complete before/after examples
+
+#### `docker-containerization`
+Create production-ready containers with:
+- Multi-stage build optimization
+- Security best practices
+- Docker Compose multi-container setups
+- Language-specific examples
+
+#### `rest-api-design`
+Design RESTful APIs following best practices:
+- Resource naming conventions
+- HTTP method usage
+- Response format standards
+- OpenAPI documentation
+
+#### `unit-testing-framework`
+Write comprehensive tests with:
+- AAA pattern structure
+- Language-specific examples (Jest, pytest, JUnit)
+- Mocking strategies
+- Coverage guidelines
+
+See [`skills/`](skills/) for complete implementations.
+
+---
+
 ### Performance Notes
 
 - Each prompt is designed for 600+ line outputs
@@ -209,23 +330,26 @@ graph TB
 ```mermaid
 graph TD
     A[useful-ai-prompts] --> B[prompts/]
-    A --> C[metadata/]
-    A --> D[docs/]
-    A --> E[PROMPT-INDEX.json]
-    A --> F[AI-AGENT-GUIDE.md]
+    A --> C[skills/]
+    A --> D[metadata/]
+    A --> E[docs/]
+    A --> F[PROMPT-INDEX.json]
+    A --> G[SKILLS-MATRIX.md]
 
-    B --> B1[Main prompt library<br/>organized by domain]
-    C --> C1[Framework definitions<br/>and guidelines]
-    D --> D1[Jekyll website<br/>for browsing prompts]
-    E --> E1[Machine-readable<br/>prompt catalog]
-    F --> F1[Integration<br/>specifications]
+    B --> B1[486 expert prompts<br/>organized by domain]
+    C --> C1[200 Claude Code skills<br/>organized by category]
+    D --> D1[Framework definitions<br/>and guidelines]
+    E --> E1[Jekyll website<br/>for browsing & search]
+    F --> F1[Machine-readable<br/>prompt catalog]
+    G --> G1[Complete skills reference<br/>with trigger keywords]
 
     style A fill:#0066cc,color:#fff
     style B fill:#00aa66,color:#fff
-    style C fill:#00aa66,color:#fff
+    style C fill:#ff6b6b,color:#fff
     style D fill:#00aa66,color:#fff
     style E fill:#00aa66,color:#fff
     style F fill:#00aa66,color:#fff
+    style G fill:#ff6b6b,color:#fff
 ```
 
 ---
