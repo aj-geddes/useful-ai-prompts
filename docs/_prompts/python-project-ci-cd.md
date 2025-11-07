@@ -5,22 +5,114 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for development optimization and expert consultation
+description: Set up a comprehensive CI/CD pipeline for Python projects with GitHub Actions, code quality tools, and security scanning
 layout: prompt
 slug: python-project-ci-cd
 tags:
 - development
-title: Python Project Ci Cd
+- ci-cd
+- python
+- github-actions
+- code-quality
+title: Python Project CI/CD Pipeline Design
 use_cases:
 - development optimization
 - professional workflow enhancement
+- continuous integration setup
 version: 3.0.0
-prompt: "## Solicit User Input for \\[Comprehensive CI/CD Pipeline Design for Python-Based Systems]\n\nTo rigorously align the GitHub Actions workflow with your system architecture, quality strategy, and regulatory posture, please provide detailed responses to the following:\n\n- **Project Taxonomy and Operational Role**: Define the architectural class and operational intent of the project (e.g., microservice API, distributed analytics engine, CLI automation tool). Include relevant dependency chains, concurrency models, or integration points.\n- **Python Runtime Spectrum**: Specify the complete range of Python interpreter versions that must be supported, tested, and validated.\n- **Enforcement Thresholds for Code Quality**: Articulate strict expectations for static formatting (Black), import structuring (isort), linting compliance (Flake8), and type completeness (MyPy), including code coverage requirements.\n- **Security Governance Constraints**: Indicate any internal compliance regimes,\
-  \ threat models, or industry-specific regulations (e.g., OWASP, NIST 800-53, ISO 27001) that must be enforced via Bandit or Safety scans.\n- **Testing Architecture Profile**: Describe the breadth and depth of the test suite, including coverage of unit, integration, async/event loop testing, mocking libraries, and fixture conventions.\n- **Artifact Durability and Observability**: Specify which test artifacts, coverage profiles, and scan outputs must persist beyond the job context and be accessible for audit, regression analysis, or developer triage.\n- **Deployment Coupling Strategy**: Clarify whether pipeline-triggered deployments should be tag-based, branch-gated, or conditioned on minimum quality and security thresholds.\n- **Tooling Ecosystem Requirements**: Enumerate any additional linters, code analyzers, secrets scanners, or organizational pre-commit policies that must be integrated.\n\nThese inputs will facilitate the construction of a traceable, deterministic, and security-conscious\
-  \ CI/CD apparatus for Python codebases.\n\n---\n\n## Foundational Requirements\n\n- **Multi-Version Runtime Validation**: Matrix test execution across Python 3.10, 3.11, and 3.12 for future-proofing and regression control.\n- **Stylistic and Structural Enforcement**: Canonicalize formatting via Black, ensure deterministic imports via isort, and enforce idiomatic style rules via Flake8.\n- **Static Typing Conformance**: Execute strict type checking with MyPy using `disallow_untyped_defs` and `disallow_incomplete_defs` for API contract reliability.\n- **Vulnerability Surface Analysis**: Perform source-level scan with Bandit and dependency-level analysis with Safety, both in fail-safe and non-blocking modes.\n- **Test Coverage Instrumentation**: Integrate Pytest with multi-format coverage outputs (HTML, XML, terminal) and enforce coverage thresholds at or above 80%.\n- **Audit Trail Preservation**: Upload all security, quality, and coverage artifacts as first-class CI outputs.\n- **Scheduled\
-  \ Regression Detection**: Execute the full pipeline nightly via GitHub’s `cron` schedule for stale dependency detection and drift analysis.\n\n---\n\n## Canonical GitHub Actions Workflow\n\n```yaml\nname: Python Code Quality\n\non:\n  push:\n    branches: [main, develop]\n  pull_request:\n    branches: [main, develop]\n  schedule:\n    - cron: \"0 2 * * *\"\n\njobs:\n  quality-check:\n    runs-on: ubuntu-latest\n    strategy:\n      matrix:\n        python-version: [\"3.10\", \"3.11\", \"3.12\"]\n\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v4\n        with:\n          python-version: ${{ matrix.python-version }}\n          cache: \"pip\"\n\n      - name: Install dependencies\n        run: |\n          python -m pip install --upgrade pip\n          pip install -r requirements.txt\n          pip install -r requirements-dev.txt\n\n      - name: Code formatting (Black)\n        run: black --check --diff .\n\n      - name: Import sorting (isort)\n   \
-  \     run: isort --check-only --diff .\n\n      - name: Linting (Flake8)\n        run: |\n          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics\n          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics\n\n      - name: Type checking (MyPy)\n        run: mypy .\n\n      - name: Static security scan (Bandit)\n        run: |\n          bandit -r . -f json -o bandit-report.json\n          bandit -r . -f txt\n        continue-on-error: true\n\n      - name: Dependency vulnerability scan (Safety)\n        run: |\n          safety check --json --output safety-report.json\n          safety check\n        continue-on-error: true\n\n      - name: Test execution with coverage\n        run: pytest --cov=. --cov-report=html --cov-report=xml --cov-report=term\n\n      - name: Upload to Codecov\n        uses: codecov/codecov-action@v3\n        with:\n          file: ./coverage.xml\n          flags: unittests\n          name: codecov-umbrella\n\
-  \n      - name: Upload artifacts\n        uses: actions/upload-artifact@v3\n        if: always()\n        with:\n          name: test-results-${{ matrix.python-version }}\n          path: |\n            htmlcov/\n            coverage.xml\n            bandit-report.json\n            safety-report.json\n```\n\n---\n\n## pyproject.toml: Unified Configuration Schema\n\n```toml\n[build-system]\nrequires = [\"setuptools>=45\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[tool.black]\nline-length = 88\ntarget-version = ['py310', 'py311', 'py312']\ninclude = '\\.pyi?$'\n\n[tool.isort]\nprofile = \"black\"\nline_length = 88\nmulti_line_output = 3\ninclude_trailing_comma = true\n\n[tool.mypy]\npython_version = \"3.10\"\nwarn_return_any = true\nwarn_unused_configs = true\ndisallow_untyped_defs = true\ndisallow_incomplete_defs = true\n\n[tool.pytest.ini_options]\nminversion = \"6.0\"\naddopts = \"-ra -q --strict-markers --strict-config\"\ntestpaths = [\"tests\"]\npython_files = [\"test_*.py\"\
-  , \"*_test.py\"]\n\n[tool.coverage.run]\nsource = [\"src\", \".\"]\nomit = [\"tests/*\", \"setup.py\", \"venv/*\", \".venv/*\"]\nbranch = true\n\n[tool.coverage.report]\nshow_missing = true\nskip_covered = false\nfail_under = 80\n\n[tool.bandit]\nexclude_dirs = [\"tests\", \"venv\", \".venv\"]\nskips = [\"B101\", \"B601\"]\n```\n\n---\n\n## Development Dependency Manifest\n\n```\nblack>=23.9.1\nisort>=5.12.0\nflake8>=6.1.0\nmypy>=1.5.1\nbandit[toml]>=1.7.5\nsafety>=2.3.5\npytest>=7.4.2\npytest-cov>=4.1.0\npytest-asyncio>=0.21.1\npre-commit>=3.4.0\ncoverage[toml]>=7.3.2\n```\n\n---\n\n## Evaluation Criteria\n\n- ✅ Pipeline validates across all declared Python versions\n- ✅ Code conforms to type, linting, and formatting constraints\n- ✅ Coverage threshold enforced and reported\n- ✅ Security scan artifacts captured and optionally surfaced\n- ✅ Pipeline runs are observable, deterministic, and auditable\n- ✅ Execution performance is optimized through dependency caching\n\n---\n\n## Quality\
-  \ Standards\n\n- **Reproducibility**: Execution is idempotent across runners and environments\n- **Traceability**: Every build artifact and scan result must be linkable to its commit\n- **Security Enforcement**: Vulnerabilities must be logged, classified, and optionally escalated\n- **Policy Compliance**: Workflow must enforce PEP8, typing integrity, and CVE compliance\n- **Maintainability**: All configurations must remain modular, version-controlled, and testable"
+prompt: |
+  I'll help you design a comprehensive CI/CD pipeline for your Python project. Let me understand your requirements:
+
+  ## Understanding Your Project
+
+  **Project Architecture:**
+  - What type of Python project are you building? (microservice API, distributed analytics engine, CLI tool, web application, library)
+  - What are your key dependencies and integration points?
+  - Are there specific concurrency models or architectural patterns I should know about?
+
+  **Python Runtime Requirements:**
+  - Which Python versions do you need to support? (e.g., 3.10, 3.11, 3.12)
+  - Do you have any version-specific features or compatibility requirements?
+  - Are you targeting specific operating systems?
+
+  **Code Quality Standards:**
+  - What are your expectations for code formatting? (Black, autopep8, or custom)
+  - Do you need import sorting? (isort standards)
+  - What linting rules should be enforced? (Flake8 configuration)
+  - Do you require type checking? (MyPy strictness level)
+  - What code coverage threshold is acceptable? (typically 80%+)
+
+  **Security & Compliance:**
+  - Are there specific compliance requirements? (OWASP, NIST 800-53, ISO 27001)
+  - What level of security scanning do you need? (Bandit, Safety)
+  - Should security scans block deployments or just warn?
+  - Are there internal security policies to enforce?
+
+  **Testing Requirements:**
+  - What types of tests do you have? (unit, integration, async/event loop)
+  - What testing frameworks and libraries do you use? (pytest, unittest, mocking libraries)
+  - Do you need specific test fixtures or conventions documented?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Complete GitHub Actions Workflow
+
+  A production-ready `.github/workflows/ci.yml` file that includes:
+  - Multi-version Python testing matrix
+  - Automated code formatting checks (Black)
+  - Import sorting verification (isort)
+  - Linting with configurable rules (Flake8)
+  - Strict type checking (MyPy)
+  - Security scanning (Bandit for code, Safety for dependencies)
+  - Test execution with coverage reporting
+  - Artifact preservation for audit trails
+  - Scheduled nightly runs for dependency drift detection
+
+  ## 2. Unified Configuration File
+
+  A complete `pyproject.toml` with:
+  - Build system configuration
+  - Tool-specific settings (Black, isort, MyPy, pytest, coverage, Bandit)
+  - Consistent formatting standards across all tools
+  - Coverage thresholds and reporting options
+
+  ## 3. Development Dependencies
+
+  A `requirements-dev.txt` file with pinned versions for:
+  - Code formatters and linters
+  - Type checkers
+  - Security scanners
+  - Testing frameworks
+  - Coverage tools
+  - Pre-commit hooks
+
+  ## 4. Pre-commit Configuration
+
+  Setup for local development with:
+  - Automatic formatting before commits
+  - Fast local validation
+  - Consistency with CI pipeline
+
+  ## 5. Pipeline Optimization Features
+
+  - Dependency caching for faster builds
+  - Codecov integration for coverage tracking
+  - Multi-format coverage reports (HTML, XML, terminal)
+  - Configurable security scan behavior (blocking vs. warning)
+  - Matrix testing across Python versions
+  - Artifact uploads for debugging and compliance
+
+  ## 6. Quality Assurance Checklist
+
+  A validation checklist to ensure:
+  - Pipeline validates across all declared Python versions
+  - Code conforms to formatting, linting, and type constraints
+  - Coverage thresholds are enforced
+  - Security scan artifacts are captured
+  - Builds are reproducible and deterministic
+  - All configurations are version-controlled
+
+  Tell me about your Python project and I'll create a complete, production-ready CI/CD pipeline tailored to your needs!
 ---

@@ -5,22 +5,155 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for technical optimization and expert consultation
+description: Create production-ready, reusable Terraform modules for Azure resources with comprehensive validation, documentation, and testing
 layout: prompt
 slug: azurerm-terraform-module-maker
 tags:
 - technical
-title: Azurerm Terraform Module Maker
+- terraform
+- azure
+- infrastructure-as-code
+- devops
+title: Azure Terraform Module Builder
 use_cases:
 - technical optimization
 - professional workflow enhancement
+- infrastructure automation
 version: 3.0.0
-prompt: "Create a new **private repository** in the GitHub organization `Ask USer for GitHub Orginization Name` named ` Ask User for Repository Name`.\n\nInitialize it as a **production-ready, reusable Terraform module** using the `azurerm` provider with comprehensive validation, documentation, and development workflows.\n\n## Core Requirements\n\n### Terraform Configuration\n\n- **Provider**: `azurerm` >= 3.0 with `features {}` block enabled\n- **Terraform version**: >= 1.5.0 with explicit constraint\n- **Module structure**: Standard layout with `main.tf`, `variables.tf`, `outputs.tf`\n\n### Resource Implementation\n\n- **Primary resource**: Ask the User \"What Primary Resource are we writing this module for?\"\n- **Variables**: Using AzureRM Provider documentation set Variables appropriate for the Primary Resource.\n- **Validation**: Implement Azure naming conventions, region validation, tag limits\n- **Outputs**: Using AzureRM Provider documentation set Outputs that are useful and appropriate\
-  \ for the Primary Resource.\n\n## Enhanced Documentation & Quality\n\n### README.md Requirements\n\n- **terraform-docs format** with auto-generated tables\n- **Multiple usage examples**: basic, advanced with tags, output referencing\n- **Requirements/Providers/Inputs/Outputs tables**: Properly formatted with links\n- **Validation rules section**: Document all constraints clearly\n- **Development section**: Prerequisites, testing workflow, contribution guidelines\n- **Support section**: Issue reporting, troubleshooting guidance\n\n### Repository Files\n\n- **LICENSE**: Apache 2.0 with proper copyright attribution\n- **.gitignore**: Comprehensive coverage (Terraform, IDE, OS, development files)\n- **.terraform.lock.hcl**: Sample lock file with realistic provider versions\n\n## Advanced Features (New)\n\n### Development Workflow Enhancement\n\n- **terraform.tf**: Separate file for Terraform/provider requirements\n- **versions.tf**: Alternative naming convention option\n- **examples/ directory**:\
-  \ Create with basic and advanced usage examples\n- **CHANGELOG.md**: Version history and breaking changes documentation\n\n### Code Quality & Validation\n\n- **Enhanced input validation**:\n  - Resource Group name: Length, character set, ending restrictions\n  - Location: Comprehensive Azure region list validation\n  - Tags: Key/value length limits, reserved tag validation\n- **Variable descriptions**: Detailed, user-friendly explanations\n- **Output descriptions**: Clear purpose and usage guidance\n\n### Security & Compliance Features\n\n- **Resource locks**: Optional management lock configuration\n- **RBAC integration**: Role assignment capabilities for Resource Group\n- **Azure Policy**: Policy assignment options for compliance\n- **Sensitive data**: Proper handling of sensitive outputs and variables\n- **Audit logging**: Integration with Azure Activity Log and Monitor\n\n### Versioning & Release Management\n\n- **Semantic versioning**: Implement proper version tagging strategy\n- **Release\
-  \ automation**: GitHub releases with changelog generation\n- **Breaking changes**: Clear documentation and migration guides\n- **Backward compatibility**: Maintain compatibility across minor versions\n- **Branch protection**: Protect main branch with PR requirements\n\n## Implementation Strategy\n\n### MCP Tool Optimization\n\n- **Use `create_or_update_file`** for individual file creation to handle empty repository initialization\n- **Leverage `push_files`** for bulk operations when repository has content\n- **Handle empty repository pattern**: Start with single file, then add remaining files\n- **Systematic commits**: One file per commit with descriptive messages for better history\n\n### Repository Setup Process\n\n1. **Initialize repository** with proper privacy settings and description\n2. **Create first file** (main.tf) to establish main branch\n3. **Add remaining core files** individually with proper commit messages\n4. **Create directory structure** with examples/ and docs/ folders\n\
-  5. **Implement development files** (.editorconfig, .terraform-docs.yml if needed)\n6. **Validate completion** by checking repository structure\n\n### Validation & Testing\n\n- **Terraform fmt**: Ensure consistent formatting across all .tf files\n- **Terraform validate**: Syntax and configuration validation\n- **terraform-test**: Create basic unit tests for variable validation\n- **Example testing**: Verify examples work with module (terraform plan)\n- **Documentation generation**: terraform-docs compatibility verification\n- **Security validation**: Check for sensitive data exposure in outputs\n\n### Quality Assurance\n\n- **Input edge cases**: Test boundary conditions for all variables\n- **Error handling**: Meaningful error messages for validation failures\n- **Resource naming**: Follow Azure best practices and conventions\n- **Tag standardization**: Implement common organizational tagging patterns\n\n## Deliverables\n\n### Core Module Files\n\n- `main.tf` - Resource definitions with\
-  \ provider configuration\n- `variables.tf` - Input variables with comprehensive validation\n- `outputs.tf` - All relevant resource outputs\n- `terraform.tf` - Requirements block (alternative structure)\n\n### Documentation & Examples\n\n- `README.md` - Production-ready documentation with terraform-docs format\n- `examples/basic/` - Simple usage example with minimal configuration\n- `examples/advanced/` - Complex usage with all features demonstrated\n- `CHANGELOG.md` - Version history preparation\n\n### Testing & Validation Files\n\n- `tests/` - Directory with terraform-test files for validation testing\n- `examples/basic/main.tf` - Working basic example with required variables only\n- `examples/advanced/main.tf` - Complex example showcasing all features\n- `examples/*/terraform.tf` - Example-specific requirements and provider configs\n\n### Repository Management\n\n- `LICENSE` - Apache 2.0 with proper attribution\n- `.gitignore` - Comprehensive exclusions (include .terraform.lock.hcl in\
-  \ examples)\n- `.editorconfig` - Consistent development environment\n- `CONTRIBUTING.md` - Guidelines for contributors\n- `SECURITY.md` - Security policy and vulnerability reporting\n- `.github/ISSUE_TEMPLATE/` - Bug report and feature request templates\n\n### Validation Features\n\n- **Name validation**: 1-90 chars, Azure character set, no period ending\n- **Location validation**: Complete Azure region enumeration with error guidance\n- **Tag validation**: Count limits, key/value length, organizational standards\n- **Type constraints**: Proper variable typing with examples\n\n## Success Criteria\n\n✅ **Functional**: Module creates Azure Resource Group successfully  \n✅ **Validated**: All inputs properly validated with clear error messages  \n✅ **Tested**: terraform-test suite passes with example validation  \n✅ **Documented**: terraform-docs compatible with comprehensive examples  \n✅ **Secure**: Security best practices implemented with proper RBAC options  \n✅ **Professional**: Repository\
-  \ structure follows industry best practices  \n✅ **Reusable**: Module can be consumed via GitHub source immediately  \n✅ **Maintainable**: Clear structure for future enhancements and contributions  \n✅ **Versioned**: Proper semantic versioning and release management setup\n\n## Quality Standards\n\n- **Documentation**: Every variable, output, and validation rule documented\n- **Examples**: Working examples that demonstrate all module capabilities\n- **Validation**: Comprehensive input checking with user-friendly error messages\n- **Structure**: Clean, logical file organization following Terraform conventions\n- **Licensing**: Proper open-source licensing with attribution\n- **Version control**: Meaningful commit history with atomic changes"
+prompt: |
+  I'll help you create a production-ready Terraform module for Azure resources. Let me gather the requirements:
+
+  ## Understanding Your Infrastructure Needs
+
+  **Azure Resource Information:**
+  - What Azure resource are you creating this module for? (Resource Group, Virtual Network, Storage Account, etc.)
+  - What's the primary use case for this resource?
+  - Are there specific Azure regions you're targeting?
+  - Do you have naming conventions or organizational standards to follow?
+
+  **GitHub Repository Details:**
+  - What GitHub organization should host this module?
+  - What repository name would you like? (e.g., terraform-azurerm-resourcegroup)
+  - Should the repository be public or private?
+  - Are there team access requirements or branch protection needs?
+
+  **Module Configuration:**
+  - Which Terraform and AzureRM provider versions do you need?
+  - What variables should be configurable? (names, locations, tags, SKUs, etc.)
+  - What outputs would be most useful for consumers of this module?
+  - Are there required vs. optional parameters?
+
+  **Security & Compliance:**
+  - Do you need resource locks to prevent accidental deletion?
+  - Should the module support RBAC role assignments?
+  - Are there Azure Policy requirements?
+  - Do you need audit logging or Azure Monitor integration?
+  - Are there compliance standards to meet? (ISO 27001, SOC 2, etc.)
+
+  **Documentation Requirements:**
+  - What level of documentation detail do you need?
+  - Should examples show basic and advanced usage?
+  - Do you need contribution guidelines?
+  - Are there specific usage scenarios to document?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Complete Terraform Module Files
+
+  Production-ready module structure:
+  - **main.tf**: Resource definitions with proper configuration
+  - **variables.tf**: Input variables with comprehensive validation
+  - **outputs.tf**: All relevant resource outputs
+  - **terraform.tf**: Version constraints and provider requirements
+  - **versions.tf**: Alternative provider configuration
+
+  ## 2. Enhanced Input Validation
+
+  Comprehensive validation rules for:
+  - Azure resource naming conventions (length, character sets, restricted patterns)
+  - Azure region validation with helpful error messages
+  - Tag constraints (count limits, key/value length, organizational standards)
+  - Type constraints with clear documentation
+  - Default values following Azure best practices
+
+  ## 3. Security & Compliance Features
+
+  Optional security enhancements:
+  - Resource lock configurations (CanNotDelete, ReadOnly)
+  - RBAC role assignment capabilities
+  - Azure Policy integration options
+  - Sensitive output handling
+  - Azure Activity Log integration
+
+  ## 4. Comprehensive Documentation
+
+  Complete README.md with:
+  - terraform-docs auto-generated tables
+  - Multiple usage examples (basic, advanced, with tags)
+  - Requirements, providers, inputs, and outputs tables
+  - Validation rules documentation
+  - Development setup and testing instructions
+  - Contribution guidelines and support information
+
+  ## 5. Testing & Examples
+
+  Testing infrastructure:
+  - **examples/basic/**: Simple usage with minimal configuration
+  - **examples/advanced/**: Complex scenarios with all features
+  - **tests/**: terraform-test files for validation
+  - Example-specific provider configurations
+
+  ## 6. Repository Structure
+
+  Complete repository setup:
+  - **LICENSE**: Apache 2.0 with proper attribution
+  - **.gitignore**: Comprehensive Terraform exclusions
+  - **.editorconfig**: Consistent development environment
+  - **CONTRIBUTING.md**: Contribution guidelines
+  - **SECURITY.md**: Security policy and vulnerability reporting
+  - **CHANGELOG.md**: Version history template
+  - **.github/ISSUE_TEMPLATE/**: Bug report and feature request templates
+
+  ## 7. GitHub Repository Initialization
+
+  Automated repository creation:
+  - Repository initialization with proper settings
+  - Branch protection rules
+  - Issue and PR templates
+  - Initial file structure
+  - Semantic versioning setup
+
+  ## 8. Quality Assurance
+
+  Built-in quality checks:
+  - terraform fmt validation
+  - terraform validate syntax checking
+  - Example testing (terraform plan)
+  - terraform-docs compatibility
+  - Security best practices validation
+
+  ## 9. Version Management
+
+  Release management setup:
+  - Semantic versioning strategy
+  - GitHub releases integration
+  - Breaking changes documentation
+  - Backward compatibility guidelines
+  - Migration guides for major versions
+
+  ## 10. Success Validation
+
+  Verification checklist ensuring:
+  - Module creates Azure resources successfully
+  - All inputs properly validated with clear error messages
+  - terraform-test suite passes
+  - Documentation is comprehensive and accurate
+  - Security best practices implemented
+  - Repository follows industry standards
+  - Module can be consumed via GitHub source immediately
+  - Clear maintenance and contribution process
+
+  Tell me about your Azure resource and I'll create a complete, production-ready Terraform module with comprehensive documentation and testing!
 ---

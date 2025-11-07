@@ -5,27 +5,220 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for technical optimization and expert consultation
+description: Automate registration of MCP servers across multiple directories and registries with metadata validation and compliance
 layout: prompt
 slug: register-new-mcp-servers
 tags:
 - technical
-title: Register New Mcp Servers
+- mcp
+- automation
+- integration
+title: MCP Server Registry Automation
 use_cases:
 - technical optimization
 - professional workflow enhancement
+- mcp integration
 version: 3.0.0
-prompt: "**Directive Title:** Comprehensive Framework for the Formalized Registration, Validation, and Strategic Dissemination of Model Control Protocol (MCP) Server Artifacts\n\n**Operational Role:** Envision the executing entity as a deeply integrated computational agent operating within a broader MCP orchestration and deployment framework. This agent possesses privileged access to both local MCP tooling—supporting containerized workloads and metadata introspection—and externally available HTTP/S interfaces necessary for interaction with distributed MCP registries. Its function encompasses the autonomous coordination, validation, submission, and lifecycle auditing of emerging MCP server implementations, ensuring that each instance is accurately represented within authoritative community-maintained registries and directories.\n\n**Mission Objective:** Through deterministic automation, the agent is to transform structured metadata (or unstructured user input) representing an MCP server into\
-  \ a harmonized registry artifact. This artifact will then be published to all known public, semi-public, and decentralized MCP directories. The goal is to ensure schema fidelity, semantic consistency, interoperability compliance, version standardization, and high discoverability across both machine-readable indices and human-curated registries.\n\n---\n\n### ✨ Phase 1: Repository Intake, Comprehensive Metadata Assessment, Synthesis, and Canonicalization\n\nBegin the process by requesting from the operator or host user a declarative list of MCP server repositories targeted for registration. The input payload should consist of fully qualified URLs referencing publicly hosted version control systems (e.g., GitHub) or absolute paths pointing to locally available MCP server directories.\n\n**Example Input:**\n\n```json\n[\n  \"https://github.com/aj-geddes/fastfs-mcp\",\n  \"https://github.com/aj-geddes/terry-form-mcp\"\n]\n```\n\nFor each MCP repository listed, execute the following expanded\
-  \ operational sequence:\n\n1. Clone or fetch the repository into a dedicated, segregated directory under the designated `workspace` mount.\n2. Perform a comprehensive asset scan within the repository to establish:\n   - Programming language(s) used\n   - Presence and type of containerization or runtime artifacts (`Dockerfile`, `docker-compose.yml`, OCI metadata)\n   - Configuration or manifest files (`pyproject.toml`, `setup.py`, `package.json`, `Cargo.toml`, etc.)\n   - License type and compliance status\n   - README content quality and structure\n   - Default or fallback entrypoint commands or service invocations\n   - Documentation presence (e.g., inline code docs, usage examples, embedded schema comments)\n\n3. Assess the presence of an `mcp-server.json` metadata descriptor file:\n   - If present: Parse, verify schema integrity, check version string format, and perform completeness evaluation\n   - If absent or insufficient: Synthesize a complete and standards-compliant `mcp-server.json`\
-  \ using all collected signals\n\n4. Execute field normalization operations:\n   - Enforce naming convention consistency (`snake_case` field names, `PascalCase` artifact references where needed)\n   - Resolve semantic versioning format for `version` and `protocolVersion`\n   - Tokenize descriptive tags using industry-recognized lexicons (e.g., SPDX, OCI labels, opencontainers keywords)\n   - Normalize runtime command syntax, escape platform-specific paths, and encode entrypoints consistently\n\n5. Augment metadata with inferred or synthesized fields derived from empirical analysis of similar MCP server classes. Use probabilistic heuristics based on field distributions across authoritative MCP registries to fill in best-guess defaults where ambiguity exists.\n\n**Sample Metadata Output:**\n\n```json\n{\n  name: \"fastfs-mcp\",\n  description: \"A high-performance, file-system-centric MCP server enabling robust CRUD operations, deterministic path traversal, and augmented prompt-driven interactivity.\"\
-  ,\n  version: \"1.0.0\",\n  \"protocolVersion\": \"2024-11-05\",\n  maintainer: \"aj-geddes\",\n  language: \"Python\",\n  \"mcpType\": \"filesystem\",\n  \"tags\": [\"mcp\", \"filesystem\", \"filetools\", \"docker\"],\n  docker: \"ghcr.io/aj-geddes/fastfs-mcp\",\n  \"entryCommand\": [\n    \"docker\",\n    \"run\",\n    \"-i\",\n    \"--rm\",\n    \"-v\",\n    \"C:\\Users\\UserName:/mnt/workspace:rw\",\n    \"aj-geddes/fastfs-mcp\"\n  ]\n}\n```\n\nPersist the generated or verified metadata descriptor in the appropriate working directory for later reuse across all downstream registration, transformation, and publishing stages. Log each assessment output to facilitate auditability and provide traceability for metadata field origin.\n\nBegin the process by requesting from the operator or host user a declarative list of MCP server repositories targeted for registration. The input payload should consist of fully qualified URLs referencing publicly hosted version control systems (e.g., GitHub)\
-  \ or absolute paths pointing to locally available MCP server directories.\n\n**Example Input:**\n\n```json\n[\n  \"https://github.com/aj-geddes/fastfs-mcp\",\n  \"https://github.com/aj-geddes/terry-form-mcp\"\n]\n```\n\nFor each MCP repository listed, execute the following expanded operational sequence:\n\n1. Clone or fetch the repository into a dedicated, segregated directory under the designated `workspace` mount.\n2. Assess the presence of an `mcp-server.json` metadata descriptor file:\n   - If present: Parse, verify structure, perform schema validation, and assess field coverage.\n   - If absent: Infer metadata fields by interrogating repository assets, including `README.md`, `Dockerfile`, `pyproject.toml`, `package.json`, `setup.py`, or any other project-specific manifest.\n   - Synthesize a new `mcp-server.json` descriptor in conformance with the MCP protocol specification and best practice standards.\n\n3. Execute field normalization operations:\n   - Enforce schema-valid naming\
-  \ conventions (e.g., transform to `snake_case`, ensure `semver` compliance for version fields)\n   - Tokenize tags appropriately for registry classifiers\n   - Assign inferred defaults to missing fields using probabilistic weighting of canonical values and heuristics derived from similar MCP entries\n   - Normalize path syntax and escape sequences\n\n**Sample Metadata Output:**\n\n```json\n{\n  name: \"fastfs-mcp\",\n  description: \"A high-performance, file-system-centric MCP server enabling robust CRUD operations, deterministic path traversal, and augmented prompt-driven interactivity.\",\n  version: \"1.0.0\",\n  \"protocolVersion\": \"2024-11-05\",\n  maintainer: \"aj-geddes\",\n  language: \"Python\",\n  \"mcpType\": \"filesystem\",\n  \"tags\": [\"mcp\", \"filesystem\", \"filetools\", \"docker\"],\n  docker: \"ghcr.io/aj-geddes/fastfs-mcp\",\n  \"entryCommand\": [\n    \"docker\",\n    \"run\",\n    \"-i\",\n    \"--rm\",\n    \"-v\",\n    \"C:\\\\Users\\\\UserName:/mnt/workspace:rw\"\
-  ,\n    \"aj-geddes/fastfs-mcp\"\n  ]\n}\n```\n\nPersist the generated or verified metadata descriptor in the appropriate working directory for later reuse across all downstream registration, transformation, and publishing stages.\n\n---\n\n### \U0001F517 Phase 2: Discovery and Interface Mapping of Target MCP Registries\n\nUndertake comprehensive enumeration of all known and emergent MCP directories, registries, and metadata aggregation points. For each target platform, determine the method of interaction (interface modality), protocol requirements, and expected artifact format.\n\n**Registry Targets Include:**\n\n1. `modelcontextprotocol/servers` — GitHub-based community registry\n2. `PulseMCP.com` — Web application for community discovery and ranking\n3. `MCP Server Finder` — Metadata-indexed search interface\n4. `mcp-get` — RESTful registry focused on toolchain integration\n5. `awesome-mcp-servers` — GitHub repository of curated server projects\n6. `mcpserver.cloud` and `mcp.run` — Federated,\
-  \ decentralized directories\n7. `Cursor.directory` — Specialized index for Cursor AI-compatible tooling\n8. `AIxploria` — Open-source-focused MCP ecosystem index\n\n**Classify the interface characteristics as follows:**\n\n- GitHub-native PR workflows (requires repository fork, branch push, and pull request)\n- Form-based HTTP interfaces (with or without CSRF/token protection)\n- RESTful APIs supporting `POST` or `PUT` for server registration\n- Email or contact form channels with asynchronous moderation (human approval gate)\n\nConstruct an internal registry matrix documenting interface URLs, submission schema requirements, authentication mechanisms, and expected latency or review times.\n\n---\n\n### \U0001F310 Phase 3: Directory Preparation and Automated Registration Workflow Execution\n\n**Directory Initialization:**\nCreate a dedicated working directory for each MCP registry under the mounted `workspace`. These directories will serve as local sandboxes for forked repositories, PR\
-  \ metadata, and transformation logs.\n\n**Sample Directory Layout:**\n\n```\n/mnt/workspace/modelcontextprotocol-servers/\n/mnt/workspace/pulsemcp/\n/mnt/workspace/mcp-server-finder/\n/mnt/workspace/mcp-get/\n/mnt/workspace/awesome-mcp-servers/\n/mnt/workspace/mcpserver-cloud/\n/mnt/workspace/cursor-directory/\n/mnt/workspace/aixploria/\n```\n\nEnsure each sandbox is isolated to prevent cross-registry contamination. Initialize version control, logging scaffolds, and output directories within each.\n\n**Execution Routines per Interface Type:**\n\n#### A. GitHub-Based Registries\n\n- Fork the target repository\n- Clone locally into the corresponding working directory\n- Append the MCP descriptor into the correct format and registry file (e.g., `servers.json`, `index.yaml`)\n- Validate local diff\n- Commit changes using a descriptive message: `Add <name>: registration for MCP directory compliance`\n- Push and open a pull request\n- Annotate PR with relevant feature highlights, protocol compliance,\
-  \ and schema coverage\n\n#### B. Web Form Registries\n\n- Render submission form interface via automated browser or HTTP POST\n- Map JSON metadata to form fields\n- Submit form, capture redirect URL or success message\n- Archive form submission payloads and HTTP response headers\n\n#### C. REST API Registries\n\n- Authenticate using API key, OAuth token, or JWT\n- Construct registration request body\n- Submit via:\n\n```http\nPOST /servers/register\nContent-Type: application/json\nAuthorization: Bearer <token>\n```\n\n- Log response code, timestamp, and registry confirmation\n\n#### D. Manual Submission Channels\n\n- Generate a Markdown-encoded server description\n- Transmit using SMTP or web form\n- Log outbound message, thread ID, and any reply/confirmation tokens\n\n---\n\n### \U0001F4CB Phase 4: Submission Validation, Registry Auditing, and Compliance Tracking\n\nPost-submission, initiate validation and audit routines:\n\n- Confirm registry ingestion through response codes or visible\
-  \ UI updates\n- Persist logs per registry to enable rollback or re-submission\n- Link PR URLs, confirmation tokens, and audit metadata in a centralized tracking file\n\nAugment each `mcp-server.json` file with a cumulative registration vector:\n\n```json\n\"registered_to\": [\"modelcontextprotocol\", \"pulsemcp\", \"mcp-get\", \"awesome-mcp-servers\"]\n```\n\nStore all outputs in structured subdirectories under the respective registry sandboxes.\n\n---\n\n### ⚡ Advanced Enhancements: Version Drift Detection and Documentation Instrumentation\n\n- Compare submitted version metadata to existing registry entries\n- If registry contains older metadata, perform a controlled upgrade via PR or update endpoint\n- Inject visual status indicators (badges) into upstream README or project pages:\n\n```markdown\n![Available on PulseMCP](https://pulsemcp.com/badge/<server-name>.svg)\n```\n\n- Optionally publish a change log, update log, or release note stub per registration event\n\n---\n\n### \U0001F58B\
-  ️ Executive Summary\n\nThis document establishes a graduate-level, methodologically robust, and automation-centered protocol for the registration of MCP server assets. Through metadata standardization, reproducible transformation logic, and protocol-compliant interfacing with public registries, this framework ensures long-term interoperability, trustable documentation, and visible community participation.\n\nExecute this procedure for each server in the submitted list and maintain a complete chain-of-custody record for registration, update, and compliance activities. Finalize workflows only after successful validation across all targeted registry systems."
+prompt: |
+  I'll help you register your MCP (Model Context Protocol) servers across all major directories and registries. Let me understand your servers:
+
+  ## Understanding Your MCP Servers
+
+  **Server Information:**
+  - What MCP servers do you need to register? (GitHub URLs or local paths)
+  - What type of MCP servers are these? (filesystem, database, API, tool, other)
+  - What programming languages are they written in? (Python, TypeScript, Go, etc.)
+  - Are these Docker-based or native implementations?
+
+  **Metadata and Documentation:**
+  - Do your servers have `mcp-server.json` metadata files?
+  - Is there comprehensive README documentation?
+  - What are the primary capabilities and use cases?
+  - Are there specific tags or keywords for discoverability?
+
+  **Container and Deployment:**
+  - Are Docker images already published? (Docker Hub, GHCR, etc.)
+  - What are the entry commands and configuration requirements?
+  - Are there environment variables or volume mounts needed?
+  - What MCP protocol version do they implement?
+
+  **Registry Targets:**
+  - Which registries should we target?
+    - modelcontextprotocol/servers (GitHub)
+    - PulseMCP.com
+    - MCP Server Finder
+    - mcp-get
+    - awesome-mcp-servers
+    - mcpserver.cloud and mcp.run
+    - Cursor.directory
+    - AIxploria
+  - Are there organizational or compliance constraints?
+
+  **Maintenance and Versioning:**
+  - What is the current version of your servers?
+  - Do you follow semantic versioning?
+  - Are there release notes or changelogs?
+  - Who is the maintainer contact?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Metadata Assessment and Synthesis
+
+  Comprehensive metadata analysis:
+  - Repository structure scanning
+  - Programming language and runtime detection
+  - Containerization artifact assessment (Dockerfile, docker-compose.yml)
+  - Configuration file parsing (pyproject.toml, package.json, etc.)
+  - License type identification
+  - README quality evaluation
+  - Documentation completeness checking
+
+  ## 2. MCP Metadata Generation
+
+  Standards-compliant `mcp-server.json` creation:
+  - Server name and description
+  - Version and protocol version
+  - Maintainer information
+  - Language and runtime requirements
+  - MCP type classification
+  - Relevant tags and keywords
+  - Docker image references
+  - Entry command specifications
+  - Platform-specific configurations
+
+  ## 3. Field Normalization and Validation
+
+  Metadata quality assurance:
+  - Naming convention enforcement (snake_case fields)
+  - Semantic versioning validation
+  - Tag tokenization with industry standards
+  - Command syntax normalization
+  - Path escaping and platform compatibility
+  - Required field completeness checking
+
+  ## 4. Registry Interface Mapping
+
+  Complete registry directory enumeration:
+  - **GitHub-based registries**: Fork, branch, PR workflow automation
+  - **Web form registries**: HTTP POST with form field mapping
+  - **REST API registries**: Authentication, request formatting, submission
+  - **Manual submission channels**: Email and contact form generation
+  - Interface modality classification
+  - Authentication mechanism documentation
+  - Expected response patterns
+
+  ## 5. Automated Registration Workflows
+
+  Submission automation for each registry type:
+
+  **GitHub Registries:**
+  - Repository forking
+  - Local cloning to workspace
+  - Metadata file updates (servers.json, index.yaml)
+  - Branch creation and commits
+  - Pull request submission with descriptions
+  - PR tracking and status monitoring
+
+  **Web Form Registries:**
+  - Form field mapping from JSON metadata
+  - Automated browser submission or HTTP POST
+  - Success confirmation capture
+  - Response archival
+
+  **REST API Registries:**
+  - API authentication (tokens, OAuth, JWT)
+  - Request body construction
+  - HTTP submission with proper headers
+  - Response validation and logging
+
+  **Manual Submission:**
+  - Markdown description generation
+  - Email template creation
+  - Contact information compilation
+
+  ## 6. Submission Validation and Tracking
+
+  Quality assurance and audit trails:
+  - Registry ingestion confirmation
+  - PR URL and issue tracking
+  - Submission timestamp logging
+  - Response code validation
+  - Error handling and retry logic
+  - Centralized tracking file maintenance
+
+  ## 7. Registration Status Management
+
+  Metadata augmentation:
+  - `registered_to` field updates with successful registries
+  - Version synchronization across registries
+  - Upgrade detection and notification
+  - Change log generation per registration
+  - Status badge creation for READMEs
+
+  ## 8. Version Drift Detection
+
+  Registry synchronization:
+  - Existing entry comparison
+  - Outdated metadata identification
+  - Controlled upgrade via PR or API
+  - Breaking change documentation
+  - Migration guide generation
+
+  ## 9. Compliance and Documentation
+
+  Registration governance:
+  - Schema validation against MCP standards
+  - License compliance verification
+  - Security policy documentation
+  - Vulnerability disclosure procedures
+  - SPDX and OCI label compliance
+
+  ## 10. Multi-Server Batch Processing
+
+  Efficient bulk registration:
+  - Parallel processing of multiple servers
+  - Dependency-aware ordering
+  - Error isolation and rollback
+  - Progress reporting and logging
+  - Batch completion summary
+
+  ## 11. Workspace Organization
+
+  Structured working directories:
+  - Registry-specific sandboxes
+  - Isolated fork repositories
+  - PR metadata storage
+  - Transformation logs
+  - Audit trail preservation
+
+  ## 12. Success Verification
+
+  Comprehensive validation:
+  - Registration completion across all targets
+  - Metadata accuracy verification
+  - Link validation (Docker images, repositories)
+  - Discoverability testing
+  - Community visibility confirmation
+
+  ## 13. Enhanced Features
+
+  Advanced capabilities:
+  - Visual status badges for documentation
+  - README injection of registry links
+  - Automated changelog updates
+  - Release note generation
+  - Community notification templates
+
+  ## 14. Chain of Custody
+
+  Complete audit documentation:
+  - Registration event logging
+  - Update history tracking
+  - Compliance activity records
+  - Verification checksums
+  - Maintainer attribution
+
+  Tell me about your MCP servers and I'll automate their registration across all major directories with complete metadata validation and compliance!
 ---

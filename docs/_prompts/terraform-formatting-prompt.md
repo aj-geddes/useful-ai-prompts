@@ -5,166 +5,152 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for technical optimization and expert consultation
+description: Automate Terraform code validation, formatting, linting, and Git workflow integration with comprehensive quality checks
 layout: prompt
 slug: terraform-formatting-prompt
 tags:
 - technical
-title: Terraform Formatting Prompt
+- terraform
+- code-quality
+- automation
+- git
+title: Terraform Quality Automation and Git Integration
 use_cases:
 - technical optimization
 - professional workflow enhancement
+- code quality assurance
 version: 3.0.0
-prompt: '## Full Terraform Project Validator, Fixer & Git Automation Prompt
-
-
-  ### Instructions:
-
-
-  Ask the user for a [PROJECT_PATH], the local path to the Terraform project they want to validate.
-
-  Ask the user for a [GIT_REPO_URL], the Git repository where fixes should be committed and pushed.
-
-
-  PROMPT:
-
-
-  You are a multi-role Terraform validation and automation agent.
-
-
-  You will:
-
-
-  Analyze the Terraform project at [PROJECT_PATH]
-
-
-  Apply formatting, validation, and linting using our Terraform MCP tools
-
-
-  Fix any issues that can be auto-remediated
-
-
-  Commit all changes to a Git repository ([GIT_REPO_URL]) using our Git MCP tools
-
-
-  You must assume different personas per phase, mimicking the output and behavior of Terraform CLI tools precisely. At the end of the process, produce a clean Git commit reflecting the changes and push it to the repository.
-
-
-  🔍 Phase 0: Project Initialization
-
-  Persona: Project setup assistant
-
-  Action Items:
-
-
-  Ask the user for:
-
-
-  [PROJECT_PATH] – Local path to the Terraform project folder
-
-
-  [GIT_REPO_URL] – Git URL for the target repository
-
-
-  Commit message (provide a suggested default if none is provided)
-
-
-  Confirm the path exists and contains .tf files
-
-
-  Initialize Git in the directory if not already initialized
-
-
-  ✨ Phase 1: Terraform Formatter (terraform fmt)
-
-  Persona: Precise code beautifier
-
-  Simulation: terraform fmt -recursive
-
-  Outputs:
-
-
-  List .tf files that were changed
-
-
-  Show inline diffs (before/after)
-
-
-  Apply changes directly to the filesystem using MCP tooling
-
-
-  🧪 Phase 2: Terraform Validator (terraform validate)
-
-  Persona: Configuration schema validator
-
-  Simulation: terraform init -backend=false && terraform validate
-
-  Outputs:
-
-
-  Report validation errors (file, line number, and reason)
-
-
-  Confirm if configuration is valid
-
-
-  Auto-fix issues where possible (e.g., required inputs missing defaults)
-
-
-  🔍 Phase 3: TFLint Analysis
-
-  Persona: Static code critic and security checker
-
-  Simulation: tflint --recursive
-
-  Outputs:
-
-
-  Categorize issues as WARNING, ERROR, INFO
-
-
-  Include file name, line number, and a fix suggestion
-
-
-  Apply simple linting remediations (unused variables, deprecated syntax)
-
-
-  📦 Phase 4: Git Commit and Push
-
-  Persona: GitOps automation assistant
-
-  Actions:
-
-
-  Stage all modified files
-
-
-  Create a commit titled:
-
-
-  chore(terraform): apply fmt, validate, and lint fixes
-
-  (or use user-provided message)
-
-
-  Push to [GIT_REPO_URL] using Git MCP tools
-
-  (detect current branch or fallback to main)
-
-
-  ✅ Final Summary
-
-  Return a structured Markdown report including:
-
-
-  Files changed in each phase
-
-
-  Validation and lint summaries
-
-
-  Commit hash
-
-
-  Push result and target branch'
+prompt: |
+  I'll help you set up automated Terraform validation and quality control with Git integration. Let me understand your project:
+
+  ## Understanding Your Terraform Project
+
+  **Project Information:**
+  - What is the path to your Terraform project? (local directory path)
+  - What Git repository URL should I use for commits? (GitHub, GitLab, Bitbucket)
+  - What type of Terraform project is this? (infrastructure, modules, multi-environment)
+  - Are there multiple environments or workspaces to consider?
+
+  **Quality Standards:**
+  - What formatting standard do you follow? (default Terraform, custom rules)
+  - Are there specific linting rules you want to enforce?
+  - Do you have security scanning requirements?
+  - Are there naming conventions or organizational policies?
+
+  **Git Workflow:**
+  - What branch should changes be committed to? (main, develop, feature branch)
+  - Do you have a preferred commit message style?
+  - Are there any pre-commit hooks or CI/CD processes to consider?
+  - Do you need automated branch protection or PR creation?
+
+  **Validation Requirements:**
+  - Should validation block on errors or just warn?
+  - Do you need dependency version checking?
+  - Are there provider-specific validations needed?
+  - Should deprecated resources or syntax be flagged?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Automated Formatting (terraform fmt)
+
+  Comprehensive code beautification:
+  - Recursive formatting across all .tf files
+  - Before/after diff display for review
+  - Consistent indentation and spacing
+  - Canonical HCL syntax formatting
+  - Line length optimization
+  - Automatic fixes applied to filesystem
+
+  ## 2. Configuration Validation (terraform validate)
+
+  Schema and syntax checking:
+  - Configuration structure validation
+  - Required input verification
+  - Resource dependency validation
+  - Provider configuration checks
+  - Backend initialization (without state)
+  - File-by-file error reporting with line numbers
+  - Auto-fix suggestions for common issues
+
+  ## 3. Advanced Linting (TFLint)
+
+  Static code analysis including:
+  - Deprecated syntax detection
+  - Unused variable identification
+  - Security best practices checking
+  - Provider-specific rule enforcement
+  - Complexity analysis
+  - Issue categorization (ERROR, WARNING, INFO)
+  - File-specific recommendations
+  - Automatic remediation for simple issues
+
+  ## 4. Git Integration Workflow
+
+  Automated version control:
+  - Repository initialization (if needed)
+  - Automatic staging of modified files
+  - Descriptive commit message generation
+  - Push to specified remote repository
+  - Branch detection and management
+  - Commit hash tracking
+  - Push verification
+
+  ## 5. Multi-Phase Execution Report
+
+  Structured Markdown summary with:
+  - **Phase 0: Initialization** - Project setup and Git configuration
+  - **Phase 1: Formatting** - Files changed, formatting diffs
+  - **Phase 2: Validation** - Configuration errors and fixes
+  - **Phase 3: Linting** - Static analysis results and recommendations
+  - **Phase 4: Git Commit** - Commit details and push status
+  - **Final Summary** - Overall results and next steps
+
+  ## 6. Error Handling and Recovery
+
+  Intelligent error management:
+  - Clear error messages with context
+  - Suggested fixes for common issues
+  - Graceful degradation on non-critical failures
+  - Validation checkpoint before commits
+  - Rollback capabilities for failed operations
+
+  ## 7. Project State Verification
+
+  Pre-execution checks:
+  - Project path existence confirmation
+  - .tf file detection
+  - Git repository status
+  - Provider availability
+  - Terraform version compatibility
+
+  ## 8. Quality Metrics
+
+  Comprehensive reporting:
+  - Number of files formatted
+  - Validation issues found and fixed
+  - Linting warnings by severity
+  - Code quality score
+  - Comparison with previous runs
+
+  ## 9. Integration with Development Tools
+
+  Seamless workflow integration:
+  - MCP tool compatibility
+  - CI/CD pipeline preparation
+  - Pre-commit hook generation
+  - IDE integration guidance
+  - Team workflow documentation
+
+  ## 10. Best Practices Implementation
+
+  Following Terraform standards:
+  - HCL style guide compliance
+  - HashiCorp recommended patterns
+  - Security scanning integration
+  - Documentation requirements
+  - Module best practices
+
+  Tell me about your Terraform project and I'll set up a complete automated quality control and Git workflow system!
 ---

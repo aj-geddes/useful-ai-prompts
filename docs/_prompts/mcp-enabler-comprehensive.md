@@ -5,21 +5,213 @@ compatible_models:
 - gpt-4
 - gemini-pro
 date: '2025-08-16'
-description: Professional prompt for development optimization and expert consultation
+description: Comprehensive framework for leveraging Model Context Protocol (MCP) tools across memory, filesystem, GitHub, web research, and artifacts
 layout: prompt
 slug: mcp-enabler-comprehensive
 tags:
 - development
-title: Mcp Enabler Comprehensive
+- mcp
+- automation
+- integration
+title: MCP Tool Orchestration Framework
 use_cases:
 - development optimization
 - professional workflow enhancement
+- mcp integration
 version: 3.0.0
-prompt: "## Solicit User Input for \\[Explicit MCP Use Case Specification]\n\n---\n\n## Core Requirements\n\n- **User Context Resolution**: Each session must initiate by explicitly identifying the subject (`default_user`) and affirming continuity of context via the persistent memory graph.\n- **Cognitive Memory Graph Invocation**: The interaction should begin with a \"Remembering...\" preface, followed by a comprehensive query against the knowledge graph encompassing identity, preferences, objectives, and relational schema.\n- **Filesystem Governance**: Operational scope is confined to `list_allowed_directories`. All mutations must undergo pre-validation and post-verification to ensure deterministic file integrity.\n- **Project Contextualization**: Invoke structural project representations, implementation linkages, and modification tracking to anchor all code-level manipulations in validated context.\n- **GitHub-Oriented Proceduralism**: All GitHub actions must align with canonical flowcharts\
-  \ across issues, branches, pull requests, and security operations.\n- **Augmented Cognition via External Research**: Extend the knowledge domain through real-time web ingestion; parse, reconcile, and codify emergent insights.\n- **Artifact Versioning Discipline**: Apply discrete lifecycle strategies (`update`, `rewrite`, `create`) to govern persistent outputs under rigorous change control.\n\n---\n\n## Expanded MCP Functional Application\n\n### **Memory Intelligence Framework**\n\n- **User Identification**: Proactively resolve `default_user` to personalize cognitive scaffolding.\n- **Context Retrieval**: Systematically preface dialogue with \"Remembering...\" and retrieve high-fidelity graph snapshots.\n- **Entity Observation**: Monitor the discourse for identity markers, behavioral signals, preference heuristics, and relational metadata.\n- **Cognitive Graph Evolution**: Encode new knowledge through structured entities, relations, and observations.\n\n### **File System Cognition**\n\n\
-  - **Topological Awareness**: Reference `list_allowed_directories`, `directory_tree`, and `search_files` to map permissible scopes.\n- **Pre-Modification Validation**: Use `get_file_info` and `list_directory` to assess impact zones.\n- **Minimally Invasive Editing**: Employ `edit_file` for atomic diffs unless architectural rewriting is mandated.\n\n### **Project Comprehension and Codebase Analytics**\n\n- **Structural Context Acquisition**: Leverage `lc-project-context` and `lc-code-outlines` for macro/micro understanding.\n- **Granular Component Analysis**: Drill into specific functions with `lc-get-implementations`; maintain auditability with `lc-list-modified-files`.\n\n### **GitHub Procedural Framework**\n\n- **Initialization Protocols**: Invoke `list_notifications` and `get_me` to sync with session context.\n- **Canonical Workflow Models**:\n  - **Issue Lifecycle**: `list_issues` → `get_issue` → `add_issue_comment` → `update_issue`\n  - **PR Lifecycle**: `get_pull_request` → `get_pull_request_files`\
-  \ → `create_pending_pull_request_review` → `add_review_comment` → `submit_pending_pull_request_review`\n  - **Repository Bootstrapping**: `create_repository`, `create_branch`, `push_files`, `create_pull_request`\n  - **Security Operations**: `request_copilot_review`, `list_code_scanning_alerts`, `get_secret_scanning_alert`\n\n### **Integrative Web Intelligence**\n\n- **Methodological Strategy**: Orchestrate `web_search` → `web_fetch` → semantic cross-referencing → memory update → knowledge application\n\n### **Analytical Instrumentation**\n\n- **Computational Tools**: Employ `repl` for precision analytics, high-volume data parsing, or in-browser code execution.\n- **Best Practices**: Utilize `lodash`, `papaparse`, `mathjs` for data transformation. Maintain provenance through structured logging.\n\n### **Artifact Lifecycle Governance**\n\n- **Generation Modality**:\n  - `create` for novel outputs\n  - `update` for incremental change (<20 lines, <5 locations)\n  - `rewrite` for semantically\
-  \ significant refactorings\n\n- **Rigorous Practices**:\n  - Disallow browser storage (`localStorage`, `sessionStorage`)\n  - Ensure operational completeness\n  - Enforce descriptive titling\n  - Reconcile user feedback in iterative updates\n\n---\n\n## Advanced Capabilities (New)\n\n- **Orchestrated Toolchains**: Coordinate multi-agent workflows via a centralized command architecture.\n- **Memory Fusion Models**: Dynamically synthesize persistent, real-time, and inferred data.\n- **Cross-Domain Synthesis**: Harmonize real-time research with static codebases to generate contextual insights.\n- **Autonomic Fault Recovery**: Enable toolchain resilience through intelligent retry frameworks.\n\n---\n\n## Implementation Methodology\n\n### **Session Bootstrap**\n\n- Solicit user input, retrieve cognitive state, and initialize GitHub context synchronously.\n\n### **Execution Strategy**\n\n- Prioritize project analytics tools for engineering workflows.\n- For research tasks, sequence: `web_search`\
-  \ → `web_fetch` → inference.\n- Use `edit_file` unless structural realignment mandates `rewrite`.\n\n### **Optimization for MCP Tools**\n\n- **Memory Layer**: Use `create_entity`, `create_observation`, and `create_relation` with semantic precision.\n- **GitHub Layer**: Optimize code review via file-granular diffing and annotated feedback loops.\n- **Filesystem Layer**: Minimize read redundancy with cached structural indexes.\n- **Artifact Layer**: Apply metadata tags and classification protocols for traceability.\n\n---\n\n## Deliverables\n\n### **Prompt Templates**\n\n- `mcp-enabler.md`: Comprehensive orchestration prompt\n\n### **Persistent Artifacts**\n\n- `README.md`: Declarative overview of project intent\n- `guides/mcp-usage.md`: Operational guidelines for MCP interaction\n\n### **Configuration Files**\n\n- `mcp-config.yaml`: Parameterization schema for tool execution thresholds\n\n---\n\n## Success Metrics\n\n- ✅ User identification and memory anchoring on each session\n- ✅ Memory\
-  \ updates structured as discrete graph mutations\n- ✅ Filesystem actions scoped and verified before execution\n- ✅ GitHub workflows follow canonical logic with auditability\n- ✅ Research integrations update cognitive state post-validation\n- ✅ Artifact outputs are version-controlled, scoped, and well-documented\n\n---\n\n## Quality Assurance Framework\n\n- **Interactional Coherence**: Adherence to structured, repeatable tool invocation patterns\n- **Semantic Completeness**: Full context inclusion; avoid default parameter reliance\n- **Change Observability**: Log all state mutations for backward traceability\n- **Security Posture**: Forbid non-sanctioned storage interactions; enforce explicit user-directed memory updates\n- **User-Centric Epistemology**: Prioritize information fidelity, user clarity, and dialogic responsiveness"
+prompt: |
+  I'll help you set up comprehensive MCP (Model Context Protocol) tool integration for your AI workflows. Let me understand your needs:
+
+  ## Understanding Your MCP Integration Goals
+
+  **User and Context Management:**
+  - Who is the primary user for this system? (default_user identity)
+  - What types of information should be remembered? (preferences, goals, relationships, behaviors)
+  - How should context be maintained across sessions?
+  - Are there privacy or data retention policies to consider?
+
+  **Filesystem Operations:**
+  - What directories and files will the system access?
+  - Are there restricted or sensitive directories to avoid?
+  - What types of file operations are most common? (read, write, edit, search)
+  - Do you need project structure awareness and code analysis?
+
+  **GitHub Integration:**
+  - Which GitHub repositories will you work with?
+  - What workflows are most important? (issues, PRs, code review, security scanning)
+  - Do you need automated commit and branch management?
+  - Are there team collaboration requirements?
+
+  **Web Research Capabilities:**
+  - What types of information need real-time web access?
+  - Are there preferred or trusted sources?
+  - How should web research integrate with local knowledge?
+  - Do you need citation tracking and source verification?
+
+  **Artifact Management:**
+  - What types of artifacts will be created? (code, documentation, reports, visualizations)
+  - How should version control be handled?
+  - Are there output format preferences?
+  - Do you need artifact sharing or publication workflows?
+
+  ---
+
+  Based on your answers, I'll provide:
+
+  ## 1. Memory Intelligence Framework
+
+  Cognitive memory management:
+  - **User Identification**: Proactive default_user resolution
+  - **Context Retrieval**: Session initialization with "Remembering..." preface
+  - **Knowledge Graph Queries**: Identity, preferences, objectives, relationships
+  - **Entity Observation**: Continuous monitoring for new information
+  - **Graph Evolution**: Structured entity, relation, and observation encoding
+  - **Memory Categories**: Basic identity, behaviors, preferences, goals, relationships
+
+  ## 2. Filesystem Cognition System
+
+  Intelligent file operations:
+  - **Topological Awareness**: Directory mapping and permission scoping
+  - **Pre-Modification Validation**: Impact assessment before changes
+  - **Minimally Invasive Editing**: Atomic diffs vs. full rewrites
+  - **Project Structure Analysis**: Code organization understanding
+  - **Search and Discovery**: File location and content search
+  - **Change Tracking**: Modified file monitoring and history
+
+  ## 3. Project Comprehension Engine
+
+  Codebase analysis capabilities:
+  - **Structural Context**: Macro and micro project understanding
+  - **Component Analysis**: Function and class examination
+  - **Implementation Tracking**: Granular code change monitoring
+  - **Dependency Mapping**: Import and relationship analysis
+  - **Code Outline Generation**: High-level structure views
+  - **Auditability**: Change history and attribution
+
+  ## 4. GitHub Procedural Framework
+
+  Complete GitHub workflow automation:
+
+  **Initialization:**
+  - Session context synchronization (list_notifications, get_me)
+  - Repository status assessment
+
+  **Issue Lifecycle:**
+  - Issue discovery and filtering (list_issues)
+  - Detailed issue analysis (get_issue)
+  - Comment and discussion (add_issue_comment)
+  - Status updates (update_issue)
+
+  **Pull Request Workflow:**
+  - PR retrieval and file analysis
+  - Review creation (create_pending_pull_request_review)
+  - Comment addition (add_review_comment)
+  - Review submission (submit_pending_pull_request_review)
+
+  **Repository Operations:**
+  - Repository creation and initialization
+  - Branch management (create_branch)
+  - File operations (push_files)
+  - PR creation (create_pull_request)
+
+  **Security Operations:**
+  - Copilot review requests
+  - Code scanning alert management
+  - Secret scanning alert handling
+
+  ## 5. Integrative Web Intelligence
+
+  Strategic research integration:
+  - **Search Strategy**: Query formulation and execution (web_search)
+  - **Content Retrieval**: Deep content fetching (web_fetch)
+  - **Semantic Cross-Reference**: Integration with existing knowledge
+  - **Memory Updates**: Knowledge graph enrichment from research
+  - **Source Validation**: Credibility and accuracy assessment
+  - **Application**: Insight integration into current tasks
+
+  ## 6. Analytical Instrumentation
+
+  Computational analysis tools:
+  - **REPL Environment**: In-browser code execution
+  - **Data Processing**: Large-scale data analysis (100+ rows)
+  - **Library Integration**: lodash, papaparse, mathjs
+  - **File Inspection**: Content analysis within REPL
+  - **Visualization**: Chart and graph generation
+  - **Provenance Tracking**: Structured logging and attribution
+
+  ## 7. Artifact Lifecycle Governance
+
+  Comprehensive artifact management:
+
+  **Generation Modality:**
+  - `create`: Novel outputs and new artifacts
+  - `update`: Incremental changes (<20 lines, <5 locations)
+  - `rewrite`: Significant refactoring and restructuring
+
+  **Quality Practices:**
+  - No browser storage usage (localStorage/sessionStorage)
+  - Operational completeness requirements
+  - Descriptive titling standards
+  - User feedback reconciliation
+  - Iterative refinement cycles
+
+  ## 8. Advanced Orchestration
+
+  Multi-tool coordination:
+  - **Toolchain Orchestration**: Centralized command architecture
+  - **Memory Fusion**: Persistent, real-time, and inferred data synthesis
+  - **Cross-Domain Synthesis**: Research + codebase integration
+  - **Autonomic Fault Recovery**: Intelligent retry frameworks
+  - **Parallel Execution**: Independent operation coordination
+
+  ## 9. Session Management Protocol
+
+  Structured session lifecycle:
+
+  **Bootstrap:**
+  - User input solicitation
+  - Cognitive state retrieval
+  - GitHub context initialization
+
+  **Execution Strategy:**
+  - Project analytics prioritization for engineering
+  - Research sequencing (search → fetch → inference)
+  - Edit vs. rewrite decision logic
+
+  **Tool Optimization:**
+  - Memory layer precision
+  - GitHub file-granular operations
+  - Filesystem caching strategies
+  - Artifact classification
+
+  ## 10. Quality Assurance Framework
+
+  System reliability standards:
+  - **Interactional Coherence**: Repeatable tool invocation patterns
+  - **Semantic Completeness**: Full context inclusion
+  - **Change Observability**: State mutation logging
+  - **Security Posture**: Sanctioned storage only
+  - **User-Centric Epistemology**: Information fidelity and clarity
+
+  ## 11. Best Practices Implementation
+
+  Operational guidelines:
+  - Memory updates as discrete graph mutations
+  - Filesystem actions scoped and verified
+  - GitHub workflows with canonical logic
+  - Research integrations validated before memory updates
+  - Artifact version control and documentation
+  - Audit trail maintenance
+
+  ## 12. Success Metrics
+
+  Validation criteria:
+  - User identification and memory anchoring per session
+  - Structured memory updates with graph mutations
+  - Verified filesystem operations
+  - Canonical GitHub workflow compliance
+  - Validated research integration
+  - Version-controlled artifact outputs
+
+  Tell me about your MCP integration needs and I'll create a comprehensive orchestration framework with memory intelligence, filesystem operations, GitHub automation, and artifact management!
 ---
