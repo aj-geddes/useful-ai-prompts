@@ -124,6 +124,83 @@ rebuild_trigger: "2025-08-18-force-deploy"
     </div>
 </div>
 
+<!-- Featured Hooks Section -->
+<div class="featured-hooks-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>🔒 New: Claude Code Hooks Library</h2>
+            <p>6 production-ready hooks for automated validation, testing, formatting, and environment setup at key workflow events.</p>
+        </div>
+
+        <div class="hooks-highlight">
+            <div class="hooks-promo-card">
+                <div class="promo-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <h3>What are Hooks?</h3>
+                <p>Automated scripts that execute at specific events in Claude Code's workflow. Enable quality control, security scanning, auto-formatting, and environment initialization.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Event-triggered automation</li>
+                    <li><i class="fas fa-check"></i> Security & quality control</li>
+                    <li><i class="fas fa-check"></i> Multi-language support</li>
+                    <li><i class="fas fa-check"></i> Production-ready scripts</li>
+                </ul>
+                <a href="{{ site.baseurl }}/hooks/" class="btn-primary">Browse All Hooks →</a>
+            </div>
+
+            <div class="hooks-grid">
+                <div class="hook-preview">
+                    <div class="hook-icon security"><i class="fas fa-shield-alt"></i></div>
+                    <h4>security-scan</h4>
+                    <p class="hook-event">PreToolUse</p>
+                    <p class="hook-desc">Prevent secret leaks</p>
+                </div>
+                <div class="hook-preview">
+                    <div class="hook-icon testing"><i class="fas fa-check-circle"></i></div>
+                    <h4>test-runner</h4>
+                    <p class="hook-event">PreToolUse</p>
+                    <p class="hook-desc">Run tests before commits</p>
+                </div>
+                <div class="hook-preview">
+                    <div class="hook-icon setup"><i class="fas fa-rocket"></i></div>
+                    <h4>session-setup</h4>
+                    <p class="hook-event">SessionStart</p>
+                    <p class="hook-desc">Initialize environment</p>
+                </div>
+                <div class="hook-preview">
+                    <div class="hook-icon format"><i class="fas fa-paint-brush"></i></div>
+                    <h4>auto-format</h4>
+                    <p class="hook-event">PostToolUse</p>
+                    <p class="hook-desc">Auto-format code</p>
+                </div>
+                <div class="hook-preview">
+                    <div class="hook-icon breaking"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h4>breaking-change-detection</h4>
+                    <p class="hook-event">PreToolUse</p>
+                    <p class="hook-desc">Detect API changes</p>
+                </div>
+                <div class="hook-preview">
+                    <div class="hook-icon dependency"><i class="fas fa-box"></i></div>
+                    <h4>dependency-check</h4>
+                    <p class="hook-event">PreToolUse</p>
+                    <p class="hook-desc">Check vulnerabilities</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hooks-cta">
+            <div class="cta-content">
+                <h3>Ready to automate your workflow with 6 production hooks?</h3>
+                <p>Copy to your project: <code>cp -r hooks/ /project/.claude/hooks/</code></p>
+            </div>
+            <div class="cta-actions">
+                <a href="{{ site.baseurl }}/hooks/" class="btn-primary-large">Explore Hooks Library</a>
+                <a href="{{ site.baseurl }}/HOOKS-LIBRARY" class="btn-secondary-large">View Complete Reference</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="results-section">
     <div class="container">
         <!-- Enhanced Filter Controls -->
