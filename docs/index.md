@@ -1,512 +1,464 @@
 ---
 layout: default
-title: "AI Prompts Library - 486+ ChatGPT & Claude Prompts + 259 Skills + 6 Automation Hooks"
-description: "Free AI prompts library with 486+ expert ChatGPT and Claude prompts, 259 Claude Code skills, and 6 automation hooks. Boost productivity with ready-to-use prompts for business, development, research, and creative workflows. No signup required."
-keywords: "AI prompts, ChatGPT prompts, Claude prompts, Claude AI, prompt engineering, AI prompt library, best AI prompts, ChatGPT prompt examples, Claude Code skills, AI automation, business prompts, technical prompts, coding prompts, AI productivity tools, prompt templates, AI workflow automation, developer prompts, management prompts, creative AI prompts, free AI prompts"
-image: "/useful-ai-prompts/assets/images/homepage-hero.png"
+title: "AI Prompts Library - 486 ChatGPT & Claude Prompts, 259 Skills, 6 Hooks | Free"
+description: "Professional AI prompts library with 486 expert ChatGPT and Claude prompts, 259 Claude Code skills, and 6 automation hooks. Free, open-source resources for developers, business professionals, and researchers. No signup required."
+keywords: "AI prompts, ChatGPT prompts, Claude prompts, Claude AI prompts, prompt engineering, AI prompt library, free AI prompts, ChatGPT prompt examples, Claude Code skills, AI automation hooks, business prompts, developer prompts, technical prompts, prompt templates, AI productivity"
 canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
 ---
 
 <!-- Hero Section -->
-<div class="homepage-hero">
+<section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-star"></i>
-                <span>The Complete AI Productivity Suite</span>
-            </div>
-            <h1 class="hero-title">
-                Supercharge Your AI Workflows with <span class="gradient-text">750+ Expert Resources</span>
-            </h1>
-            <p class="hero-description">
-                The ultimate library of AI prompts, Claude Code skills, and automation hooks. Transform ChatGPT and Claude into expert consultants for business, development, research, and creative work. 100% free, no signup required.
-            </p>
+            <h1 class="hero-title">The Complete AI Prompts & Skills Library</h1>
+            <p class="hero-subtitle">486 expert prompts for ChatGPT & Claude, 259 production-ready Claude Code skills, and 6 automation hooks. Everything you need to master AI-powered workflows.</p>
 
-            <div class="hero-stats-grid">
-                <div class="hero-stat">
-                    <div class="stat-icon prompts"><i class="fas fa-comments"></i></div>
-                    <div class="stat-content">
-                        <div class="stat-number">486</div>
-                        <div class="stat-label">Expert Prompts</div>
-                        <div class="stat-desc">ChatGPT & Claude</div>
-                    </div>
-                </div>
-                <div class="hero-stat">
-                    <div class="stat-icon skills"><i class="fas fa-code"></i></div>
-                    <div class="stat-content">
-                        <div class="stat-number">259</div>
-                        <div class="stat-label">Code Skills</div>
-                        <div class="stat-desc">Claude Code Ready</div>
-                    </div>
-                </div>
-                <div class="hero-stat">
-                    <div class="stat-icon hooks"><i class="fas fa-cog"></i></div>
-                    <div class="stat-content">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">Automation Hooks</div>
-                        <div class="stat-desc">Workflow Automation</div>
-                    </div>
-                </div>
-                <div class="hero-stat">
-                    <div class="stat-icon categories"><i class="fas fa-folder"></i></div>
-                    <div class="stat-content">
-                        <div class="stat-number">42</div>
-                        <div class="stat-label">Categories</div>
-                        <div class="stat-desc">Organized Library</div>
-                    </div>
-                </div>
+            <div class="hero-search">
+                <input type="text" id="mainSearch" class="search-input" placeholder="Search prompts, skills, or hooks... (e.g., 'blockchain', 'docker', 'security')" autocomplete="off">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
             </div>
 
-            <div class="hero-cta">
-                <div class="search-box">
-                    <div class="search-icon"><i class="fas fa-search"></i></div>
-                    <input type="text" id="heroSearchInput" class="hero-search-input" placeholder="Search prompts, skills, hooks... (e.g., 'blockchain strategy', 'docker', 'security')" autocomplete="off">
-                    <div class="search-clear" id="heroSearchClear" style="display: none;"><i class="fas fa-times"></i></div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">486</div>
+                    <div class="stat-label">Expert Prompts</div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#prompts-section" class="btn-hero-primary">
-                        <i class="fas fa-rocket"></i> Explore Prompts
-                    </a>
-                    <a href="{{ site.baseurl }}/skills/" class="btn-hero-secondary">
-                        <i class="fas fa-code"></i> Browse Skills
-                    </a>
-                    <a href="{{ site.baseurl }}/hooks/" class="btn-hero-secondary">
-                        <i class="fas fa-bolt"></i> View Hooks
-                    </a>
+                <div class="stat-item">
+                    <div class="stat-number">259</div>
+                    <div class="stat-label">Code Skills</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Automation Hooks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free & Open Source</div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Animated Background -->
-    <div class="hero-background">
-        <div class="hero-gradient"></div>
-        <div class="hero-pattern"></div>
-    </div>
-</div>
-
-<!-- Trust Signals / Social Proof -->
-<div class="trust-section">
+<!-- Main Content Sections -->
+<main class="main-sections">
     <div class="container">
-        <p class="trust-text">
-            <i class="fas fa-check-circle"></i> Open Source
-            <span class="divider">•</span>
-            <i class="fas fa-download"></i> 110,000+ Lines of Code
-            <span class="divider">•</span>
-            <i class="fas fa-users"></i> Built for Professionals
-            <span class="divider">•</span>
-            <i class="fas fa-heart"></i> Always Free
-        </p>
-    </div>
-</div>
 
-<!-- What You Get Section -->
-<div class="value-props-section">
-    <div class="container">
-        <div class="section-header-centered">
-            <h2>Everything You Need to Master AI-Powered Workflows</h2>
-            <p>Three powerful libraries working together to transform how you use AI</p>
-        </div>
-
-        <div class="value-props-grid">
-            <!-- Prompts -->
-            <div class="value-prop-card">
-                <div class="value-icon prompts-gradient">
-                    <i class="fas fa-comments"></i>
+        <!-- AI Prompts Section -->
+        <section class="content-section" id="prompts">
+            <div class="section-header">
+                <div class="section-title-group">
+                    <h2 class="section-title">AI Prompts</h2>
+                    <span class="section-count">486 prompts across 22 categories</span>
                 </div>
-                <h3>486 Expert AI Prompts</h3>
-                <p class="value-desc">Ready-to-use prompts that transform ChatGPT and Claude into expert consultants across 22 specialized domains.</p>
-                <ul class="value-features">
-                    <li><i class="fas fa-check"></i> Dual-persona expert frameworks</li>
-                    <li><i class="fas fa-check"></i> Business & technical workflows</li>
-                    <li><i class="fas fa-check"></i> Emerging tech sectors (blockchain, biotech, quantum)</li>
-                    <li><i class="fas fa-check"></i> Instant copy-paste ready</li>
-                    <li><i class="fas fa-check"></i> Comprehensive context gathering</li>
-                </ul>
-                <a href="#prompts-section" class="btn-value">Explore Prompts <i class="fas fa-arrow-right"></i></a>
+                <a href="{{ site.baseurl }}/categories/" class="section-cta">View All Prompts →</a>
             </div>
 
-            <!-- Skills -->
-            <div class="value-prop-card featured">
-                <div class="featured-badge">Most Comprehensive</div>
-                <div class="value-icon skills-gradient">
-                    <i class="fas fa-code"></i>
+            <p class="section-description">Expert-crafted prompts that transform ChatGPT and Claude into specialized consultants. Each prompt includes context gathering, professional frameworks, and structured outputs.</p>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business & Leadership</h3>
+                    <p class="category-count">36 prompts</p>
+                    <ul class="category-examples">
+                        <li>Strategic Planning</li>
+                        <li>Team Management</li>
+                        <li>Decision Making</li>
+                    </ul>
                 </div>
-                <h3>259 Claude Code Skills</h3>
-                <p class="value-desc">Production-ready skills that Claude Code automatically invokes. Each skill contains 200-500+ lines of expert guidance with multi-language examples.</p>
-                <ul class="value-features">
-                    <li><i class="fas fa-check"></i> Auto-triggered by keywords</li>
-                    <li><i class="fas fa-check"></i> Software dev, DevOps, security, testing</li>
-                    <li><i class="fas fa-check"></i> Data science, ML/AI, cloud platforms</li>
-                    <li><i class="fas fa-check"></i> Step-by-step implementation guides</li>
-                    <li><i class="fas fa-check"></i> Best practices & anti-patterns</li>
-                </ul>
-                <a href="{{ site.baseurl }}/skills/" class="btn-value featured">Browse Skills <i class="fas fa-arrow-right"></i></a>
-            </div>
 
-            <!-- Hooks -->
-            <div class="value-prop-card">
-                <div class="value-icon hooks-gradient">
-                    <i class="fas fa-cog"></i>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Technical Workflows</h3>
+                    <p class="category-count">31 prompts</p>
+                    <ul class="category-examples">
+                        <li>Software Architecture</li>
+                        <li>Code Review</li>
+                        <li>System Design</li>
+                    </ul>
                 </div>
-                <h3>6 Automation Hooks</h3>
-                <p class="value-desc">Event-driven automation scripts that execute at key workflow points. Security scanning, testing, formatting, and environment setup.</p>
-                <ul class="value-features">
-                    <li><i class="fas fa-check"></i> Pre/Post tool execution triggers</li>
-                    <li><i class="fas fa-check"></i> Security & secret leak prevention</li>
-                    <li><i class="fas fa-check"></i> Automated testing & formatting</li>
-                    <li><i class="fas fa-check"></i> Breaking change detection</li>
-                    <li><i class="fas fa-check"></i> Dependency vulnerability scanning</li>
-                </ul>
-                <a href="{{ site.baseurl }}/hooks/" class="btn-value">View Hooks <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Use Cases Section -->
-<div class="use-cases-section">
-    <div class="container">
-        <div class="section-header-centered">
-            <h2>Built for Every Workflow</h2>
-            <p>Whether you're a developer, business leader, researcher, or creator</p>
-        </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Research & Analysis</h3>
+                    <p class="category-count">21 prompts</p>
+                    <ul class="category-examples">
+                        <li>Literature Review</li>
+                        <li>Data Analysis</li>
+                        <li>Hypothesis Testing</li>
+                    </ul>
+                </div>
 
-        <div class="use-cases-grid">
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Developers & Engineers</h3>
-                <p>259 coding skills covering architecture, testing, DevOps, security, and cloud. Plus automation hooks for quality control.</p>
-                <div class="use-case-tags">
-                    <span class="tag">Refactoring</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">API Design</span>
-                    <span class="tag">Testing</span>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Emerging Technologies</h3>
+                    <p class="category-count">78 prompts</p>
+                    <ul class="category-examples">
+                        <li>Blockchain & Web3</li>
+                        <li>Quantum Computing</li>
+                        <li>Biotech & Space</li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Finance & Planning</h3>
+                    <p class="category-count">17 prompts</p>
+                    <ul class="category-examples">
+                        <li>Financial Analysis</li>
+                        <li>Investment Strategy</li>
+                        <li>Budget Planning</li>
+                    </ul>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Creative & Content</h3>
+                    <p class="category-count">32 prompts</p>
+                    <ul class="category-examples">
+                        <li>Content Writing</li>
+                        <li>Marketing Copy</li>
+                        <li>Creative Ideation</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Business Leaders</h3>
-                <p>Strategic planning, market analysis, financial modeling, and leadership prompts for informed decision-making.</p>
-                <div class="use-case-tags">
-                    <span class="tag">Strategy</span>
-                    <span class="tag">Planning</span>
-                    <span class="tag">Analysis</span>
-                    <span class="tag">Leadership</span>
+            <div class="section-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Dual-expert persona frameworks</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Context-gathering questions</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Structured deliverables</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Copy-paste ready</span>
                 </div>
             </div>
+        </section>
 
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-flask"></i></div>
-                <h3>Researchers</h3>
-                <p>Literature review, hypothesis generation, experimental design, and data analysis across scientific domains.</p>
-                <div class="use-case-tags">
-                    <span class="tag">Research</span>
-                    <span class="tag">Analysis</span>
-                    <span class="tag">Biotech</span>
-                    <span class="tag">Academic</span>
+        <hr class="section-divider">
+
+        <!-- Claude Code Skills Section -->
+        <section class="content-section" id="skills">
+            <div class="section-header">
+                <div class="section-title-group">
+                    <h2 class="section-title">Claude Code Skills</h2>
+                    <span class="section-count">259 skills across 20 categories</span>
                 </div>
+                <a href="{{ site.baseurl }}/skills/" class="section-cta">Browse Skills →</a>
             </div>
 
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-rocket"></i></div>
-                <h3>Emerging Tech</h3>
-                <p>Specialized prompts for blockchain, quantum computing, space economy, biotech, and renewable energy sectors.</p>
-                <div class="use-case-tags">
-                    <span class="tag">Blockchain</span>
-                    <span class="tag">Quantum</span>
-                    <span class="tag">Space</span>
-                    <span class="tag">Biotech</span>
+            <p class="section-description">Production-ready skills that Claude Code automatically invokes. Each skill contains 200-500+ lines of expert guidance with multi-language code examples and best practices.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Software Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Refactor Legacy Code</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">+31 more</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-lightbulb"></i></div>
-                <h3>Content Creators</h3>
-                <p>Writing, storytelling, marketing copy, social media, and creative brainstorming prompts.</p>
-                <div class="use-case-tags">
-                    <span class="tag">Writing</span>
-                    <span class="tag">Marketing</span>
-                    <span class="tag">Creative</span>
-                    <span class="tag">Social</span>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> DevOps & Infrastructure</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">+16 more</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="use-case-card">
-                <div class="use-case-icon"><i class="fas fa-database"></i></div>
-                <h3>Data Scientists</h3>
-                <p>20 data science skills covering EDA, ML models, visualization, statistical analysis, and pipelines.</p>
-                <div class="use-case-tags">
-                    <span class="tag">ML/AI</span>
-                    <span class="tag">Analysis</span>
-                    <span class="tag">Visualization</span>
-                    <span class="tag">Pipelines</span>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Security & Compliance</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">OAuth Implementation</span>
+                        <span class="skill-tag">Encryption</span>
+                        <span class="skill-tag">Vulnerability Scanning</span>
+                        <span class="skill-tag">+12 more</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Features Comparison -->
-<div class="features-section">
-    <div class="container">
-        <div class="section-header-centered">
-            <h2>Why Choose This Library?</h2>
-            <p>The most comprehensive, organized, and practical AI resource collection available</p>
-        </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & ML</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">ML Models</span>
+                        <span class="skill-tag">SQL Optimization</span>
+                        <span class="skill-tag">+29 more</span>
+                    </div>
+                </div>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-                <h3>Instant Results</h3>
-                <p>Copy-paste ready prompts and skills. No configuration, no setup. Start being productive immediately.</p>
-            </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-check-circle"></i> Testing & QA</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Unit Testing</span>
+                        <span class="skill-tag">E2E Testing</span>
+                        <span class="skill-tag">Performance Testing</span>
+                        <span class="skill-tag">+12 more</span>
+                    </div>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
-                <h3>Expertly Organized</h3>
-                <p>42 categories across prompts, skills, and hooks. Advanced search and filtering to find exactly what you need.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Production Ready</h3>
-                <p>Battle-tested patterns, best practices, and anti-patterns. Each resource is 200-500+ lines of comprehensive guidance.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-sync"></i></div>
-                <h3>Constantly Updated</h3>
-                <p>Regular additions of new prompts, skills, and hooks. Open source contributions welcome.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-                <h3>Fully Responsive</h3>
-                <p>Works perfectly on desktop, tablet, and mobile. Access your AI resources anywhere, anytime.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-unlock"></i></div>
-                <h3>100% Free</h3>
-                <p>No paywalls, no signup, no data collection. Open source and free forever.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Quick Start Guide -->
-<div class="quickstart-section">
-    <div class="container">
-        <div class="section-header-centered">
-            <h2>Get Started in 3 Steps</h2>
-            <p>Start using AI prompts and skills in under 60 seconds</p>
-        </div>
-
-        <div class="quickstart-steps">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Search or Browse</h3>
-                    <p>Use the search bar to find prompts by keyword, or browse by category to explore.</p>
-                    <div class="step-example">
-                        <i class="fas fa-search"></i>
-                        <span>"blockchain strategy"</span>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">AWS Services</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">+12 more</span>
                     </div>
                 </div>
             </div>
 
-            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span class="code-label">Installation</span>
+                    <button class="copy-btn" data-clipboard-text="cp -r skills/ /your-project/.claude/skills/"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+                <pre><code>cp -r skills/ /your-project/.claude/skills/</code></pre>
+            </div>
 
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Copy the Prompt</h3>
-                    <p>Click the copy button to grab the full prompt or skill documentation.</p>
-                    <div class="step-example">
-                        <i class="fas fa-copy"></i>
-                        <span>One-click copy</span>
-                    </div>
+            <div class="section-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Auto-triggered by keywords</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Multi-language examples</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Production best practices</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Step-by-step guides</span>
                 </div>
             </div>
+        </section>
 
-            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        <hr class="section-divider">
 
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Paste & Use</h3>
-                    <p>Paste into ChatGPT, Claude, or Claude Code and get expert-level results immediately.</p>
-                    <div class="step-example">
-                        <i class="fas fa-paste"></i>
-                        <span>Instant results</span>
-                    </div>
+        <!-- Automation Hooks Section -->
+        <section class="content-section" id="hooks">
+            <div class="section-header">
+                <div class="section-title-group">
+                    <h2 class="section-title">Automation Hooks</h2>
+                    <span class="section-count">6 production hooks</span>
                 </div>
+                <a href="{{ site.baseurl }}/hooks/" class="section-cta">View Hooks →</a>
             </div>
-        </div>
 
-        <div class="quickstart-cta">
-            <p class="quickstart-text">For Claude Code skills and hooks:</p>
-            <div class="code-snippet">
-                <code>cp -r skills/ /project/.claude/skills/ && cp -r hooks/ /project/.claude/hooks/</code>
-                <button class="copy-code-btn" data-clipboard-text="cp -r skills/ /project/.claude/skills/ && cp -r hooks/ /project/.claude/hooks/">
-                    <i class="fas fa-copy"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+            <p class="section-description">Event-driven scripts that automate security scanning, testing, formatting, and environment setup at key workflow points.</p>
 
-<!-- Prompts Library Section -->
-<div class="prompts-library-section" id="prompts-section">
-    <div class="container">
-        <div class="section-header-centered">
-            <h2>Browse 486 Expert AI Prompts</h2>
-            <p>Organized across 22 specialized categories for every use case</p>
-        </div>
-
-        <!-- Enhanced Filter Controls -->
-        <div class="filter-controls">
-            <div class="filter-section">
-                <label class="filter-label">
-                    <i class="fas fa-filter"></i>
-                    Quick Filters
-                </label>
-                <div class="filters-bar" id="filtersBar">
-                    <button class="filter-chip active" data-category="all" aria-pressed="true">All Categories</button>
-                    <button class="filter-chip" data-category="management-leadership" aria-pressed="false">Leadership (36)</button>
-                    <button class="filter-chip" data-category="technical-workflows" aria-pressed="false">Technical (31)</button>
-                    <button class="filter-chip" data-category="research-workflows" aria-pressed="false">Research (21)</button>
-                    <button class="filter-chip" data-category="creativity-innovation" aria-pressed="false">Innovation (18)</button>
-                    <button class="filter-chip" data-category="analysis" aria-pressed="false">Analysis (16)</button>
-                    <button class="filter-chip" data-category="planning" aria-pressed="false">Planning (15)</button>
-                    <button class="filter-chip" data-category="communication" aria-pressed="false">Communication (15)</button>
-                    <button class="filter-chip" data-category="blockchain" aria-pressed="false">Blockchain (10)</button>
-                    <button class="filter-chip filter-toggle" id="showMoreFilters" aria-expanded="false">
-                        <span class="toggle-text">+ More Categories</span>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="filters-expanded" id="filtersExpanded" style="display: none;">
-            <div class="filter-section">
-                <label class="filter-label">Additional Categories</label>
-                <div class="expanded-chips">
-                    <button class="filter-chip" data-category="problem-solving" aria-pressed="false">Problem Solving (14)</button>
-                    <button class="filter-chip" data-category="personal-productivity" aria-pressed="false">Productivity (16)</button>
-                    <button class="filter-chip" data-category="financial-planning" aria-pressed="false">Financial (17)</button>
-                    <button class="filter-chip" data-category="career-development" aria-pressed="false">Career (18)</button>
-                    <button class="filter-chip" data-category="optimization" aria-pressed="false">Optimization (16)</button>
-                    <button class="filter-chip" data-category="customer-focused" aria-pressed="false">Customer Focus (16)</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="results-header" id="resultsHeader">
-            <h3 id="resultsTitle">All Prompts</h3>
-            <p id="resultsCount">Showing {{ site.prompts.size }} prompts</p>
-        </div>
-
-        <div class="results-grid" id="resultsGrid">
-            {% for prompt in site.prompts %}
-            <div class="prompt-card" data-category="{{ prompt.category }}" data-tags="{{ prompt.tags | join: ' ' | downcase }}" data-title="{{ prompt.title | downcase }}" data-description="{{ prompt.description | downcase }}">
-                <div class="card-header">
-                    <div class="card-category">{{ prompt.category | replace: '-', ' ' | capitalize }}</div>
-                    <div class="card-menu">
-                        <button class="card-menu-btn" data-prompt-id="{{ forloop.index }}">
-                            <i class="fas fa-ellipsis-h"></i>
-                        </button>
-                        <div class="card-menu-dropdown" id="menu-{{ forloop.index }}" style="display: none;">
-                            <a href="{{ prompt.url | relative_url }}" class="menu-item">
-                                <i class="fas fa-eye"></i> View Details
-                            </a>
-                            {% if prompt.prompt %}
-                            <button class="menu-item copy-btn" data-clipboard-text="{{ prompt.prompt | strip | escape }}">
-                                <i class="fas fa-copy"></i> Copy Prompt
-                            </button>
-                            {% endif %}
+            <div class="hooks-grid">
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon security"><i class="fas fa-shield-alt"></i></div>
+                        <div class="hook-info">
+                            <h3>security-scan</h3>
+                            <span class="hook-event">PreToolUse</span>
                         </div>
                     </div>
+                    <p>Scans for exposed secrets (AWS keys, API tokens, passwords) before commits to prevent security leaks.</p>
+                    <div class="hook-features">
+                        <span>• Pattern matching</span>
+                        <span>• Secret detection</span>
+                        <span>• Commit blocking</span>
+                    </div>
                 </div>
 
-                <h3 class="card-title">
-                    <a href="{{ prompt.url | relative_url }}">{{ prompt.title }}</a>
-                </h3>
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon testing"><i class="fas fa-vial"></i></div>
+                        <div class="hook-info">
+                            <h3>test-runner</h3>
+                            <span class="hook-event">PreToolUse</span>
+                        </div>
+                    </div>
+                    <p>Automatically runs your test suite before commits with smart framework detection (Jest, pytest, Go, etc.).</p>
+                    <div class="hook-features">
+                        <span>• Auto-detection</span>
+                        <span>• Test execution</span>
+                        <span>• Failure prevention</span>
+                    </div>
+                </div>
 
-                {% if prompt.description %}
-                <p class="card-description">{{ prompt.description | truncate: 140 }}</p>
-                {% endif %}
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon format"><i class="fas fa-paint-brush"></i></div>
+                        <div class="hook-info">
+                            <h3>auto-format</h3>
+                            <span class="hook-event">PostToolUse</span>
+                        </div>
+                    </div>
+                    <p>Automatically formats code after edits using language-specific formatters (Prettier, Black, gofmt, etc.).</p>
+                    <div class="hook-features">
+                        <span>• 8+ formatters</span>
+                        <span>• Auto-execution</span>
+                        <span>• Consistent style</span>
+                    </div>
+                </div>
 
-                <div class="card-footer">
-                    <div class="card-actions">
-                        <a href="{{ prompt.url | relative_url }}" class="btn-primary">
-                            View Prompt
-                        </a>
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon setup"><i class="fas fa-rocket"></i></div>
+                        <div class="hook-info">
+                            <h3>session-setup</h3>
+                            <span class="hook-event">SessionStart</span>
+                        </div>
+                    </div>
+                    <p>Initializes your development environment on session start (dependencies, env vars, services).</p>
+                    <div class="hook-features">
+                        <span>• Auto-init</span>
+                        <span>• Env setup</span>
+                        <span>• Service start</span>
+                    </div>
+                </div>
+
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon breaking"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="hook-info">
+                            <h3>breaking-change-detection</h3>
+                            <span class="hook-event">PreToolUse</span>
+                        </div>
+                    </div>
+                    <p>Detects potential API breaking changes in commits and warns before pushing to prevent issues.</p>
+                    <div class="hook-features">
+                        <span>• API analysis</span>
+                        <span>• Change detection</span>
+                        <span>• Warning system</span>
+                    </div>
+                </div>
+
+                <div class="hook-card">
+                    <div class="hook-header">
+                        <div class="hook-icon dependency"><i class="fas fa-box"></i></div>
+                        <div class="hook-info">
+                            <h3>dependency-check</h3>
+                            <span class="hook-event">PreToolUse</span>
+                        </div>
+                    </div>
+                    <p>Scans dependencies for known vulnerabilities before commits using npm audit, pip-audit, etc.</p>
+                    <div class="hook-features">
+                        <span>• Vuln scanning</span>
+                        <span>• Multi-language</span>
+                        <span>• Security alerts</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <div class="code-example-header">
+                    <span class="code-label">Installation</span>
+                    <button class="copy-btn" data-clipboard-text="cp -r hooks/ /your-project/.claude/hooks/"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+                <pre><code>cp -r hooks/ /your-project/.claude/hooks/</code></pre>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Browse Prompts Section -->
+        <section class="browse-section" id="browse-prompts">
+            <div class="section-header">
+                <div class="section-title-group">
+                    <h2 class="section-title">Browse All Prompts</h2>
+                    <span class="section-count">{{ site.prompts.size }} prompts available</span>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-bar">
+                <button class="filter-chip active" data-category="all">All Categories</button>
+                <button class="filter-chip" data-category="management-leadership">Leadership (36)</button>
+                <button class="filter-chip" data-category="technical-workflows">Technical (31)</button>
+                <button class="filter-chip" data-category="research-workflows">Research (21)</button>
+                <button class="filter-chip" data-category="blockchain">Blockchain (10)</button>
+                <button class="filter-chip" data-category="financial-planning">Finance (17)</button>
+                <button class="filter-chip more-btn" id="showMore">+15 More</button>
+            </div>
+
+            <div class="additional-filters" id="additionalFilters" style="display: none;">
+                <button class="filter-chip" data-category="creativity-innovation">Innovation (18)</button>
+                <button class="filter-chip" data-category="analysis">Analysis (16)</button>
+                <button class="filter-chip" data-category="planning">Planning (15)</button>
+                <button class="filter-chip" data-category="communication">Communication (15)</button>
+                <button class="filter-chip" data-category="problem-solving">Problem Solving (14)</button>
+                <button class="filter-chip" data-category="personal-productivity">Productivity (16)</button>
+                <button class="filter-chip" data-category="career-development">Career (18)</button>
+                <button class="filter-chip" data-category="content-creation">Content (16)</button>
+                <button class="filter-chip" data-category="optimization">Optimization (16)</button>
+            </div>
+
+            <!-- Prompts Grid -->
+            <div class="prompts-grid" id="promptsGrid">
+                {% for prompt in site.prompts %}
+                <div class="prompt-card" data-category="{{ prompt.category }}" data-title="{{ prompt.title | downcase }}" data-description="{{ prompt.description | downcase }}">
+                    <div class="prompt-category">{{ prompt.category | replace: '-', ' ' | capitalize }}</div>
+                    <h3 class="prompt-title">
+                        <a href="{{ prompt.url | relative_url }}">{{ prompt.title }}</a>
+                    </h3>
+                    {% if prompt.description %}
+                    <p class="prompt-description">{{ prompt.description | truncate: 120 }}</p>
+                    {% endif %}
+                    <div class="prompt-footer">
+                        <a href="{{ prompt.url | relative_url }}" class="prompt-link">View Details →</a>
                         {% if prompt.prompt %}
-                        <button class="btn-secondary copy-btn" data-clipboard-text="{{ prompt.prompt | strip | escape }}" title="Copy to clipboard">
+                        <button class="copy-btn-small" data-clipboard-text="{{ prompt.prompt | strip | escape }}">
                             <i class="fas fa-copy"></i>
                         </button>
                         {% endif %}
                     </div>
-
-                    {% if prompt.tags %}
-                    <div class="card-tags">
-                        {% for tag in prompt.tags limit:2 %}
-                            <span class="tag">{{ tag }}</span>
-                        {% endfor %}
-                        {% if prompt.tags.size > 2 %}
-                            <span class="tag-more">+{{ prompt.tags.size | minus: 2 }}</span>
-                        {% endif %}
-                    </div>
-                    {% endif %}
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
 
-        <div class="no-results" id="noResults" style="display: none;">
-            <div class="no-results-content">
+            <div class="no-results" id="noResults" style="display: none;">
                 <i class="fas fa-search"></i>
-                <h3>No prompts found</h3>
-                <p>Try adjusting your search or filters</p>
+                <p>No prompts found. Try a different search or filter.</p>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
 
-<!-- CTA Section -->
-<div class="final-cta-section">
+    </div>
+</main>
+
+<!-- Footer CTA -->
+<section class="footer-cta">
     <div class="container">
-        <div class="cta-content">
-            <h2>Ready to Transform Your AI Workflow?</h2>
-            <p>Join thousands of professionals using our library to get more done with AI</p>
-            <div class="cta-buttons">
-                <a href="#prompts-section" class="btn-cta-primary">
-                    <i class="fas fa-rocket"></i> Start Exploring Now
-                </a>
-                <a href="{{ site.github_url }}" class="btn-cta-secondary" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
-            </div>
-            <p class="cta-note">
-                <i class="fas fa-heart"></i> Open source • Always free • No signup required
-            </p>
+        <h2>Start Using AI Prompts & Skills Today</h2>
+        <p>100% free, open source, no signup required</p>
+        <div class="cta-buttons">
+            <a href="#browse-prompts" class="btn-primary">Browse Prompts</a>
+            <a href="{{ site.github_url }}" class="btn-secondary" target="_blank">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Enhanced Schema Markup for SEO -->
+<!-- SEO Schema Markup -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "AI Prompts Library",
-  "alternateName": "Useful AI Prompts",
   "url": "{{ site.url }}{{ site.baseurl }}/",
-  "description": "Comprehensive library of 486+ AI prompts for ChatGPT and Claude, 259 Claude Code skills, and 6 automation hooks. Free resources for business, development, research, and creative workflows.",
+  "description": "Professional library of 486 AI prompts for ChatGPT and Claude, 259 Claude Code skills, and 6 automation hooks for developers and business professionals.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
@@ -514,14 +466,6 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
       "urlTemplate": "{{ site.url }}{{ site.baseurl }}/?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Useful AI Prompts",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png"
-    }
   }
 }
 </script>
@@ -529,226 +473,119 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "AI Prompts Library - ChatGPT & Claude Prompts",
-  "applicationCategory": "Productivity",
-  "operatingSystem": "Any",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "250",
-    "bestRating": "5"
-  },
-  "featureList": [
-    "486 Expert AI Prompts for ChatGPT and Claude",
-    "259 Production-Ready Claude Code Skills",
-    "6 Workflow Automation Hooks",
-    "22 Specialized Prompt Categories",
-    "20 Coding Skill Categories",
-    "Instant Search and Filtering",
-    "Copy-Paste Ready Templates",
-    "Multi-Language Code Examples",
-    "Best Practices and Anti-Patterns",
-    "Free and Open Source"
-  ]
+  "@type": "SoftwareSourceCode",
+  "name": "Useful AI Prompts",
+  "description": "Open source library of AI prompts, Claude Code skills, and automation hooks",
+  "codeRepository": "https://github.com/aj-geddes/useful-ai-prompts",
+  "programmingLanguage": ["Markdown", "Bash", "Python"],
+  "runtimePlatform": ["ChatGPT", "Claude", "Claude Code"],
+  "keywords": ["AI prompts", "ChatGPT", "Claude", "prompt engineering", "automation"],
+  "license": "https://opensource.org/licenses/MIT"
 }
 </script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What are AI prompts and how do I use them?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI prompts are carefully crafted instructions that guide AI assistants like ChatGPT and Claude to provide expert-level responses. Simply copy any prompt from our library, paste it into your AI assistant, and follow the interactive guidance to get professional results for business, technical, or creative tasks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are Claude Code skills?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Claude Code skills are specialized capabilities that Claude Code automatically invokes based on your requests. Each skill contains 200-500+ lines of expert guidance with step-by-step instructions, code examples in multiple languages, best practices, and anti-patterns. Our library includes 259 production-ready skills across 20 categories."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are these resources really free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! All 486 prompts, 259 skills, and 6 hooks are 100% free with no signup required, no paywalls, and no data collection. This is an open-source project committed to helping professionals be more productive with AI."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I install Claude Code skills and hooks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Copy the skills and hooks directories to your project's .claude folder using: cp -r skills/ /project/.claude/skills/ && cp -r hooks/ /project/.claude/hooks/. Claude Code will automatically recognize and use them in your workflow."
-      }
-    }
+  "@type": "ItemList",
+  "name": "AI Prompts Categories",
+  "numberOfItems": 22,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Business & Leadership Prompts"},
+    {"@type": "ListItem", "position": 2, "name": "Technical Workflows Prompts"},
+    {"@type": "ListItem", "position": 3, "name": "Research & Analysis Prompts"},
+    {"@type": "ListItem", "position": 4, "name": "Emerging Technologies Prompts"},
+    {"@type": "ListItem", "position": 5, "name": "Finance & Planning Prompts"},
+    {"@type": "ListItem", "position": 6, "name": "Creative & Content Prompts"}
   ]
 }
 </script>
 
 <script>
-// Enhanced search and filter functionality
+// Clean, professional JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Hero search sync
-    const heroSearchInput = document.getElementById('heroSearchInput');
-    const heroSearchClear = document.getElementById('heroSearchClear');
-    const resultsGrid = document.getElementById('resultsGrid');
-    const resultsTitle = document.getElementById('resultsTitle');
-    const resultsCount = document.getElementById('resultsCount');
+    const mainSearch = document.getElementById('mainSearch');
+    const promptsGrid = document.getElementById('promptsGrid');
     const noResults = document.getElementById('noResults');
+    const filterChips = document.querySelectorAll('.filter-chip:not(.more-btn)');
+    const showMoreBtn = document.getElementById('showMore');
+    const additionalFilters = document.getElementById('additionalFilters');
     const prompts = document.querySelectorAll('.prompt-card');
 
     let currentFilter = 'all';
     let currentSearch = '';
 
-    // Hero search functionality
-    if (heroSearchInput) {
-        heroSearchInput.addEventListener('input', function() {
-            if (this.value.length > 0) {
-                heroSearchClear.style.display = 'flex';
-            } else {
-                heroSearchClear.style.display = 'none';
+    // Search functionality
+    if (mainSearch) {
+        mainSearch.addEventListener('input', function() {
+            currentSearch = this.value.toLowerCase();
+            filterPrompts();
+            if (currentSearch) {
+                document.getElementById('browse-prompts').scrollIntoView({ behavior: 'smooth' });
             }
-            performSearch(this.value);
-
-            // Scroll to results
-            document.getElementById('prompts-section').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        heroSearchClear.addEventListener('click', function() {
-            heroSearchInput.value = '';
-            heroSearchClear.style.display = 'none';
-            performSearch('');
         });
     }
 
-    // Search functionality
-    function performSearch(searchTerm = '') {
-        searchTerm = searchTerm.toLowerCase().trim();
-        currentSearch = searchTerm;
-        let visiblePrompts = [];
+    // Filter functionality
+    filterChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+            filterChips.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            currentFilter = this.dataset.category;
+            filterPrompts();
+        });
+    });
+
+    // Show more filters
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', function() {
+            const isVisible = additionalFilters.style.display === 'block';
+            additionalFilters.style.display = isVisible ? 'none' : 'block';
+            this.textContent = isVisible ? '+15 More' : 'Show Less';
+        });
+    }
+
+    // Filter prompts function
+    function filterPrompts() {
+        let visibleCount = 0;
 
         prompts.forEach(prompt => {
             const title = prompt.dataset.title || '';
             const description = prompt.dataset.description || '';
-            const tags = prompt.dataset.tags || '';
             const category = prompt.dataset.category || '';
 
-            const matchesSearch = !searchTerm ||
-                title.includes(searchTerm) ||
-                description.includes(searchTerm) ||
-                tags.includes(searchTerm) ||
-                category.replace('-', ' ').includes(searchTerm);
+            const matchesSearch = !currentSearch ||
+                title.includes(currentSearch) ||
+                description.includes(currentSearch) ||
+                category.includes(currentSearch);
 
-            const matchesFilter = currentFilter === 'all' ||
-                category === currentFilter ||
-                category.includes(currentFilter);
+            const matchesFilter = currentFilter === 'all' || category === currentFilter;
 
             if (matchesSearch && matchesFilter) {
                 prompt.style.display = 'block';
-                visiblePrompts.push(prompt);
+                visibleCount++;
             } else {
                 prompt.style.display = 'none';
             }
         });
 
-        // Animate visible prompts
-        visiblePrompts.forEach((prompt, index) => {
-            prompt.style.opacity = '0';
-            prompt.style.transform = 'translateY(20px)';
-            setTimeout(() => {
-                prompt.style.transition = 'all 0.3s ease';
-                prompt.style.opacity = '1';
-                prompt.style.transform = 'translateY(0)';
-            }, index * 30);
-        });
-
-        updateResultsHeader(searchTerm, visiblePrompts.length);
-        toggleNoResults(visiblePrompts.length === 0);
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        promptsGrid.style.display = visibleCount === 0 ? 'none' : 'grid';
     }
 
-    function updateResultsHeader(searchTerm, count) {
-        if (searchTerm) {
-            resultsTitle.textContent = `Search: "${searchTerm}"`;
-        } else if (currentFilter !== 'all') {
-            const filterBtn = document.querySelector(`[data-category="${currentFilter}"]`);
-            const filterName = filterBtn ? filterBtn.textContent.split(' (')[0] : 'Filtered';
-            resultsTitle.textContent = filterName;
-        } else {
-            resultsTitle.textContent = 'All Prompts';
-        }
-
-        resultsCount.textContent = `${count} prompt${count === 1 ? '' : 's'}`;
-    }
-
-    function toggleNoResults(show) {
-        if (show) {
-            resultsGrid.style.display = 'none';
-            noResults.style.display = 'block';
-        } else {
-            resultsGrid.style.display = 'grid';
-            noResults.style.display = 'none';
-        }
-    }
-
-    // Filter functionality
-    const showMoreFilters = document.getElementById('showMoreFilters');
-    const filtersExpanded = document.getElementById('filtersExpanded');
-
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('filter-chip') && e.target.dataset.category) {
-            if (e.target.id === 'showMoreFilters') {
-                const isExpanded = filtersExpanded.style.display === 'block';
-                filtersExpanded.style.display = isExpanded ? 'none' : 'block';
-                showMoreFilters.setAttribute('aria-expanded', !isExpanded);
-                return;
-            }
-
-            document.querySelectorAll('.filter-chip[data-category]').forEach(chip => {
-                if (chip.dataset.category !== 'more') {
-                    chip.classList.remove('active');
-                    chip.setAttribute('aria-pressed', 'false');
-                }
-            });
-            e.target.classList.add('active');
-            e.target.setAttribute('aria-pressed', 'true');
-
-            currentFilter = e.target.dataset.category;
-            performSearch(currentSearch);
-        }
-    });
-
-    // Copy functionality
+    // Copy button functionality
     document.addEventListener('click', async function(e) {
-        if (e.target.closest('.copy-btn') || e.target.closest('.copy-code-btn')) {
-            const btn = e.target.closest('.copy-btn') || e.target.closest('.copy-code-btn');
-            const text = btn.dataset.clipboardText;
-
+        const copyBtn = e.target.closest('.copy-btn, .copy-btn-small');
+        if (copyBtn) {
+            const text = copyBtn.dataset.clipboardText;
             try {
                 await navigator.clipboard.writeText(text);
-
-                const originalContent = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-                btn.classList.add('copied');
-
+                const originalHTML = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied';
+                copyBtn.classList.add('copied');
                 setTimeout(() => {
-                    btn.innerHTML = originalContent;
-                    btn.classList.remove('copied');
+                    copyBtn.innerHTML = originalHTML;
+                    copyBtn.classList.remove('copied');
                 }, 2000);
             } catch (err) {
                 console.error('Copy failed:', err);
@@ -756,30 +593,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Card menu functionality
-    document.addEventListener('click', function(e) {
-        if (e.target.closest('.card-menu-btn')) {
-            const btn = e.target.closest('.card-menu-btn');
-            const promptId = btn.dataset.promptId;
-            const menu = document.getElementById(`menu-${promptId}`);
-
-            document.querySelectorAll('.card-menu-dropdown').forEach(dropdown => {
-                if (dropdown.id !== `menu-${promptId}`) {
-                    dropdown.style.display = 'none';
-                }
-            });
-
-            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-        }
-
-        if (!e.target.closest('.card-menu')) {
-            document.querySelectorAll('.card-menu-dropdown').forEach(dropdown => {
-                dropdown.style.display = 'none';
-            });
-        }
-    });
-
-    // Smooth scroll for anchor links
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
