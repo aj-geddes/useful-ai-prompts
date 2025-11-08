@@ -1,12 +1,16 @@
-# AI Assistant Prompt & Skills Library
+# Useful AI Prompts - The Complete AI Productivity Suite
 
-## 486+ Expert Prompts & 200 Claude Code Skills
+## 750+ Resources: 486 Prompts + 259 Skills + 6 Automation Hooks
+
+Transform ChatGPT and Claude into expert consultants with the most comprehensive AI resource library available.
 
 This repository contains:
-- **486 specialized prompts** across **22 categories** designed for AI assistants to adopt expert personas
-- **200 focused skills** across **20 categories** for Claude Code to handle specific technical tasks
+- **486 Expert AI Prompts** across **22 categories** for ChatGPT & Claude
+- **259 Claude Code Skills** across **20 categories** with auto-trigger capabilities
+- **6 Automation Hooks** for security, testing, formatting, and environment setup
+- **120,000+ lines** of production-ready code, documentation, and best practices
 
-Each prompt combines multiple expert perspectives with professional frameworks. Each skill provides step-by-step guidance with code examples and best practices.
+Each prompt combines multiple expert perspectives with professional frameworks. Each skill provides 200-500+ lines of step-by-step guidance with multi-language code examples and industry best practices.
 
 ### 🚀 **Massive 2025 Expansion**
 
