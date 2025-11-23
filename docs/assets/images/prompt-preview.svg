@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" fill="white">AI Prompt</text>
+  <rect x="200" y="260" width="800" height="200" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="600" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="rgba(255,255,255,0.9)">Ready-to-use professional prompt</text>
+  <text x="600" y="380" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.7)">Copy • Customize • Execute</text>
+  <text x="600" y="530" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="rgba(255,255,255,0.8)">Useful AI Prompts</text>
+</svg>

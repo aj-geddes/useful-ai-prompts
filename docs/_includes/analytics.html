@@ -1,7 +1,8 @@
 <!-- Analytics and Tracking Integration -->
 
 <!-- Google Analytics 4 (Enhanced for Social Traffic) -->
-{% if site.google_analytics %}
+<!-- To enable: Replace G-XXXXXXXXXX with actual GA4 ID in _config.yml -->
+{% if site.google_analytics and site.google_analytics != "G-XXXXXXXXXX" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -119,6 +120,8 @@
 {% endif %}
 
 <!-- Facebook Pixel (for Facebook/Instagram ads and tracking) -->
+<!-- To enable: Add facebook_pixel_id to _config.yml -->
+{% if site.facebook_pixel_id %}
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -129,11 +132,9 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-// Initialize with your Pixel ID (replace with actual ID)
-// fbq('init', 'YOUR_PIXEL_ID');
+fbq('init', '{{ site.facebook_pixel_id }}');
 fbq('track', 'PageView');
 
-// Custom Facebook events for social sharing
 function trackFacebookShare(contentType, contentId) {
   if (typeof fbq !== 'undefined') {
     fbq('track', 'Share', {
@@ -148,19 +149,19 @@ window.facebookTracking = {
   trackShare: trackFacebookShare
 };
 </script>
+{% endif %}
 
 <!-- Twitter Analytics -->
+<!-- To enable: Add twitter_tracking_id to _config.yml -->
+{% if site.twitter_tracking_id %}
 <script>
-// Twitter Universal Website Tag (replace with actual tag)
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
 },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
 a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 
-// Initialize Twitter tracking (replace with actual tracking ID)
-// twq('init','YOUR_TWITTER_TRACKING_ID');
+twq('init','{{ site.twitter_tracking_id }}');
 twq('track','PageView');
 
-// Custom Twitter events
 function trackTwitterEngagement(action, content) {
   if (typeof twq !== 'undefined') {
     twq('track', 'Engagement', {
@@ -175,13 +176,17 @@ window.twitterTracking = {
   trackEngagement: trackTwitterEngagement
 };
 </script>
+{% endif %}
 
 <!-- LinkedIn Insight Tag -->
+<!-- To enable: Add linkedin_partner_id to _config.yml -->
+{% if site.linkedin_partner_id %}
 <script type="text/javascript">
-_linkedin_partner_id = "YOUR_LINKEDIN_PARTNER_ID"; // Replace with actual ID
+_linkedin_partner_id = "{{ site.linkedin_partner_id }}";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-</script><script type="text/javascript">
+</script>
+<script type="text/javascript">
 (function(l) {
 if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
 window.lintrk.q=[]}
@@ -191,6 +196,7 @@ b.type = "text/javascript";b.async = true;
 b.src = "https://snap.licdn.com/li.js";
 s.parentNode.insertBefore(b, s);})(window.lintrk);
 </script>
+{% endif %}
 
 <!-- Custom Analytics for Social Media ROI -->
 <script>
@@ -413,16 +419,19 @@ window.customAnalytics = socialAnalytics;
 </script>
 
 <!-- Hotjar (for user behavior analysis) -->
+<!-- To enable: Add a valid hotjar_id to _config.yml -->
+{% if site.hotjar_id and site.hotjar_id != "1234567" %}
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:YOUR_HOTJAR_ID,hjsv:6}; // Replace with actual Hotjar ID
+        h._hjSettings={hjid:{{ site.hotjar_id }},hjsv:6};
         a=o.getElementsByTagName('head')[0];
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+{% endif %}
 
 <!-- Social Media Conversion Tracking -->
 <script>
