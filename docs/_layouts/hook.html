@@ -1,0 +1,612 @@
+---
+layout: default
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default: page.title }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Useful AI Prompts"
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "keywords": "Claude Code hook, {{ page.event_type }}, automation, {{ page.tags | join: ', ' }}",
+  "articleSection": "Claude Code Hooks",
+  "inLanguage": "en-US"
+}
+</script>
+
+<div class="hook-page">
+    <div class="container">
+        <div class="hook-header">
+            <div class="breadcrumb">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <span>/</span>
+                <a href="{{ '/hooks/' | relative_url }}">Hooks</a>
+                <span>/</span>
+                <span>{{ page.title }}</span>
+            </div>
+
+            <div class="hook-title-section">
+                <div class="hook-icon {{ page.icon_class | default: 'default' }}">
+                    <i class="fas {{ page.icon | default: 'fa-code' }}"></i>
+                </div>
+                <div>
+                    <h1 class="hook-title">{{ page.title }}</h1>
+                    {% if page.event_type %}
+                    <span class="event-badge">{{ page.event_type }}</span>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="hook-meta">
+                {% if page.event_type %}
+                <div class="meta-item">
+                    <i class="fas fa-bolt"></i>
+                    <strong>Event:</strong>
+                    <span>{{ page.event_type }}</span>
+                </div>
+                {% endif %}
+
+                {% if page.matcher %}
+                <div class="meta-item">
+                    <i class="fas fa-filter"></i>
+                    <strong>Matcher:</strong>
+                    <code>{{ page.matcher }}</code>
+                </div>
+                {% endif %}
+
+                {% if page.lines_of_code %}
+                <div class="meta-item">
+                    <i class="fas fa-code"></i>
+                    <strong>Size:</strong>
+                    <span>{{ page.lines_of_code }} lines</span>
+                </div>
+                {% endif %}
+
+                {% if site.edit_page %}
+                <div class="meta-item">
+                    <a href="{{ site.github_url }}/edit/main/hooks/{{ page.slug }}/README.md"
+                       target="_blank" class="edit-link">
+                        <i class="fas fa-edit"></i> Edit on GitHub
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="hook-content">
+            {% if page.description %}
+            <div class="hook-description">
+                <p class="description">{{ page.description }}</p>
+            </div>
+            {% endif %}
+
+            {% if page.features %}
+            <div class="hook-features">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    {% for feature in page.features %}
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>{{ feature }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="hook-install">
+                <h2><i class="fas fa-download"></i> Installation</h2>
+
+                <div class="install-step">
+                    <h3>1. Copy hook to your project</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" data-clipboard-text="cp -r hooks/{{ page.slug }}/ /your-project/.claude/hooks/{{ page.slug }}/"><i class="fas fa-copy"></i> Copy</button>
+                        </div>
+                        <pre><code>cp -r hooks/{{ page.slug }}/ /your-project/.claude/hooks/{{ page.slug }}/</code></pre>
+                    </div>
+                </div>
+
+                <div class="install-step">
+                    <h3>2. Add to settings.json</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>.claude/settings.json</span>
+                            <button class="copy-btn" data-clipboard-text='{"hooks": {"{{ page.event_type }}": [{"matcher": "{{ page.matcher | default: "Bash" }}", "hooks": [{"type": "command", "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/{{ page.slug }}/hook.sh"}]}]}}'><i class="fas fa-copy"></i> Copy</button>
+                        </div>
+                        <pre><code>{
+  "hooks": {
+    "{{ page.event_type }}": [{
+      "matcher": "{{ page.matcher | default: 'Bash' }}",
+      "hooks": [{
+        "type": "command",
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/{{ page.slug }}/hook.sh"
+      }]
+    }]
+  }
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="install-step">
+                    <h3>3. Make executable</h3>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Terminal</span>
+                            <button class="copy-btn" data-clipboard-text="chmod +x .claude/hooks/{{ page.slug }}/hook.sh"><i class="fas fa-copy"></i> Copy</button>
+                        </div>
+                        <pre><code>chmod +x .claude/hooks/{{ page.slug }}/hook.sh</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hook-main">
+                {{ content }}
+            </div>
+        </div>
+
+        <!-- Related Hooks -->
+        <div class="related-hooks">
+            <h2>Other Hooks</h2>
+            <div class="related-grid">
+                {% for hook in site.hooks %}
+                    {% if hook.slug != page.slug %}
+                        <div class="related-item">
+                            <a href="{{ hook.url | relative_url }}">
+                                <div class="hook-mini-icon {{ hook.icon_class | default: 'default' }}">
+                                    <i class="fas {{ hook.icon | default: 'fa-code' }}"></i>
+                                </div>
+                                <div>
+                                    <h3>{{ hook.title }}</h3>
+                                    <span class="event-mini">{{ hook.event_type }}</span>
+                                </div>
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Back to Hooks -->
+        <div class="back-link">
+            <a href="{{ '/hooks/' | relative_url }}" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to All Hooks
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+.hook-page {
+    padding: 2rem 0;
+}
+
+.hook-header {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+}
+
+.hook-title-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hook-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hook-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.hook-icon.security { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.hook-icon.testing { background: linear-gradient(135deg, #10b981, #059669); }
+.hook-icon.setup { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.hook-icon.format { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.hook-icon.warning { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.hook-icon.dependencies { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+.hook-icon.default { background: linear-gradient(135deg, #6b7280, #4b5563); }
+
+.hook-title {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.event-badge {
+    display: inline-block;
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.hook-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.meta-item i {
+    color: var(--accent-primary);
+}
+
+.meta-item code {
+    background: var(--hover-overlay);
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+.edit-link {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.hook-content {
+    margin-bottom: 3rem;
+}
+
+.hook-description {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.hook-description .description {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.hook-features {
+    margin-bottom: 2rem;
+}
+
+.hook-features h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.75rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+}
+
+.feature-item i {
+    color: var(--accent-primary);
+}
+
+.hook-install {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.hook-install h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.hook-install h2 i {
+    color: var(--accent-primary);
+    margin-right: 0.5rem;
+}
+
+.install-step {
+    margin-bottom: 1.5rem;
+}
+
+.install-step:last-child {
+    margin-bottom: 0;
+}
+
+.install-step h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.code-block {
+    background: var(--hover-overlay);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.copy-btn {
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.copy-btn:hover {
+    background: var(--accent-secondary, #667eea);
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.code-block code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+.hook-main {
+    line-height: 1.8;
+}
+
+.hook-main h1, .hook-main h2, .hook-main h3 {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hook-main h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.hook-main h3 {
+    font-size: 1.25rem;
+}
+
+.hook-main pre {
+    background: var(--hover-overlay);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.hook-main code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+.hook-main p code {
+    background: var(--hover-overlay);
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+}
+
+.hook-main ul, .hook-main ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.hook-main li {
+    margin-bottom: 0.5rem;
+}
+
+.related-hooks {
+    margin-bottom: 2rem;
+}
+
+.related-hooks h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.related-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.related-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+    border-color: var(--accent-primary);
+}
+
+.related-item a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hook-mini-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hook-mini-icon i {
+    font-size: 1rem;
+    color: white;
+}
+
+.related-item h3 {
+    margin: 0 0 0.25rem;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.event-mini {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.back-link {
+    text-align: center;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background: var(--hover-overlay);
+    border-color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+    .hook-title-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hook-title {
+        font-size: 1.5rem;
+    }
+
+    .hook-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Copy button functionality
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', async function() {
+            const text = this.dataset.clipboardText ||
+                         document.querySelector(this.dataset.clipboardTarget)?.textContent;
+            if (text) {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    const originalHTML = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {
+                        this.innerHTML = originalHTML;
+                    }, 2000);
+                } catch (err) {
+                    console.error('Copy failed:', err);
+                }
+            }
+        });
+    });
+});
+</script>

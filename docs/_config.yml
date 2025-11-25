@@ -30,6 +30,12 @@ collections:
   categories:
     output: true
     permalink: /:collection/:name/
+  skills:
+    output: true
+    permalink: /skills/:path/
+  hooks:
+    output: true
+    permalink: /hooks/:path/
 
 # Defaults
 defaults:
@@ -43,6 +49,16 @@ defaults:
       type: "categories"
     values:
       layout: "category"
+  - scope:
+      path: ""
+      type: "skills"
+    values:
+      layout: "skill"
+  - scope:
+      path: ""
+      type: "hooks"
+    values:
+      layout: "hook"
   - scope:
       path: ""
       type: "posts"
