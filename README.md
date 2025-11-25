@@ -1,363 +1,287 @@
-# Useful AI Prompts - The Complete AI Productivity Suite
+# Useful AI Prompts - The Complete AI Productivity Library
 
-## 750+ Resources: 486 Prompts + 259 Skills + 6 Automation Hooks
+[![GitHub Stars](https://img.shields.io/github/stars/aj-geddes/useful-ai-prompts?style=social)](https://github.com/aj-geddes/useful-ai-prompts)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Prompts](https://img.shields.io/badge/Prompts-557+-green)](prompts/)
+[![Skills](https://img.shields.io/badge/Skills-260+-orange)](skills/)
+[![Hooks](https://img.shields.io/badge/Hooks-7-purple)](hooks/)
 
-Transform ChatGPT and Claude into expert consultants with the most comprehensive AI resource library available.
+> **The largest open-source collection of production-ready AI prompts, Claude Code skills, and automation hooks for professionals.**
 
-This repository contains:
-- **486 Expert AI Prompts** across **22 categories** for ChatGPT & Claude
-- **259 Claude Code Skills** across **20 categories** with auto-trigger capabilities
-- **6 Automation Hooks** for security, testing, formatting, and environment setup
-- **120,000+ lines** of production-ready code, documentation, and best practices
+Transform ChatGPT, Claude, and other AI assistants into expert consultants with **820+ curated resources** spanning software development, business strategy, creative work, and emerging technologies.
 
-Each prompt combines multiple expert perspectives with professional frameworks. Each skill provides 200-500+ lines of step-by-step guidance with multi-language code examples and industry best practices.
+## What's Inside
 
-### 🚀 **Massive 2025 Expansion**
+| Resource Type | Count | Description |
+|--------------|-------|-------------|
+| **[AI Prompts](prompts/)** | 557+ | Expert-crafted prompts across 47 categories |
+| **[Claude Code Skills](skills/)** | 260+ | Auto-triggering capabilities with code examples |
+| **[Automation Hooks](hooks/)** | 7 | Security, testing, formatting, and CI/CD automation |
 
-The library has grown from 259 to **486+ prompts**, adding comprehensive coverage for high-growth sectors:
+**Total: 120,000+ lines** of production-ready guidance, code examples, and best practices.
 
-- **Biotechnology** (15 prompts): Drug discovery, bioinformatics, gene editing, clinical trials
-- **Blockchain** (5 prompts): DeFi, smart contracts, tokenization, Web3 development
-- **Government Digital** (8 prompts): Digital transformation, smart cities, citizen services, policy
-- **Healthcare Digital** (20 prompts): Telehealth, AI clinical decision support, patient engagement, EHR
-- **Quantum Computing** (14 prompts): Algorithm development, quantum circuits, quantum ML, optimization
-- **Renewable Energy** (19 prompts): Solar development, energy storage, grid integration, sustainability
-- **Space Economy** (24 prompts): Commercial spaceflight, satellite operations, space tech, mission planning
-- **Supply Chain** (6 prompts): Resilience planning, digital transformation, logistics optimization
+---
 
-### Quick Selection Guide
+## Quick Start
 
-When assigned a task, select the appropriate prompt based on:
+### Using Prompts
 
-1. **Task Type** → Find matching workflow category
-2. **Domain** → Select relevant expertise area
-3. **Complexity** → Choose appropriate depth level
+1. **Browse** the [prompts directory](prompts/) or [web interface](https://aj-geddes.github.io/useful-ai-prompts/)
+2. **Copy** the prompt content
+3. **Paste** into ChatGPT, Claude, or your preferred AI assistant
+4. **Customize** the `{{variables}}` with your specific context
 
-### Prompt Selection Matrix
+### Using Claude Code Skills
 
-| Task Category                | Primary Location                           | Key Prompts                                                                                       |
-| ---------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| **Financial Analysis**       | `/prompts/finance/`                        | `financial-analysis-expert.md` - Investment analysis, valuation, portfolio management             |
-| **Software Development**     | `/prompts/technical/software-engineering/` | `fullstack-developer-architect.md` - Full-stack development with system architecture              |
-| **Security Operations**      | `/prompts/technical/security/`             | `cybersecurity-defense-architect.md` - Threat detection, incident response, security architecture |
-| **Business Analysis**        | `/prompts/business/business-analysis/`     | `business-analyst-strategic-excellence.md` - Requirements engineering, process improvement        |
-| **Project Management**       | `/prompts/business/project-management/`    | `comprehensive-risk-assessment.md` - Risk analysis and mitigation planning                        |
-| **Marketing Strategy**       | `/prompts/business/marketing/`             | `marketing-manager-strategist.md` - Team leadership, campaign management                          |
-| **HR Management**            | `/prompts/human-resources/`                | `hr-excellence-leader.md` - Talent strategy, organizational development                           |
-| **Customer Service**         | `/prompts/customer-service/`               | `customer-experience-excellence-leader.md` - Service operations, team leadership                  |
-| **Data Science**             | `/prompts/technical/data-science/`         | `model-evaluation-framework.md` - ML model validation and deployment                              |
-| **Research**                 | `/prompts/academic/research/`              | `research-excellence-scientist.md` - Scientific research and grant writing                        |
-| **Executive Support**        | `/prompts/administrative/`                 | `executive-excellence-partner.md` - Strategic administrative support                              |
-| **Supply Chain**             | `/prompts/operations/`                     | `supply-chain-excellence-director.md` - Logistics and network optimization                        |
-| **Construction**             | `/prompts/engineering/`                    | `construction-excellence-director.md` - Project delivery and safety management                    |
-| **Pharmaceutical R&D**       | `/prompts/healthcare/`                     | `pharmaceutical-research-excellence.md` - Drug development and clinical trials                    |
-| **Graphic Design**           | `/prompts/creative/design/`                | `graphic-design-expert.md` - Visual design and brand strategy                                     |
-| **Compliance**               | `/prompts/business/legal/`                 | `compliance-officer-expert.md` - Regulatory compliance and risk management                        |
-| **Operations**               | `/prompts/business/operations/`            | `operations-manager-excellence.md` - Operational excellence and team development                  |
-| **🧬 Biotechnology**          | `/prompts/biotechnology/`                  | `ai-powered-drug-screening-optimization.md` - Drug discovery and bioinformatics analysis         |
-| **🔗 Blockchain & Web3**      | `/prompts/blockchain/`                     | `decentralized-finance-protocol-development.md` - DeFi protocols and smart contracts             |
-| **🏛️ Government Digital**     | `/prompts/government/`                     | `digital-government-transformation-strategy.md` - Public sector digital transformation           |
-| **🏥 Healthcare Digital**     | `/prompts/healthcare-digital/`             | `healthcare-digital-transformation-strategist.md` - Healthcare technology and telehealth         |
-| **⚛️ Quantum Computing**      | `/prompts/quantum-computing/`              | `quantum-circuit-optimization-design.md` - Quantum algorithms and circuit development            |
-| **☀️ Renewable Energy**       | `/prompts/renewable-energy/`               | `utility-scale-solar-farm-development.md` - Solar development and clean energy projects          |
-| **🚀 Space Economy**          | `/prompts/space-economy/`                  | `commercial-space-mission-architecture.md` - Commercial spaceflight and satellite operations     |
-| **📦 Supply Chain Digital**   | `/prompts/supply-chain/`                   | `supply-chain-resilience-strategy-architect.md` - Digital supply chain transformation            |
+```bash
+# Copy skills to your project
+cp -r skills/ /path/to/your/project/.claude/skills/
 
-### How to Use Prompts
+# Skills auto-trigger based on your requests
+# Example: "Help me refactor this legacy code"
+# Claude Code automatically applies the refactor-legacy-code skill
+```
 
-1. **Load the appropriate prompt file**
-2. **Replace all `{{variables}}` with context-specific information**
-3. **Execute the four-phase framework**:
-   - Phase 1: Assessment/Analysis
-   - Phase 2: Strategic Design
-   - Phase 3: Implementation/Execution
-   - Phase 4: Optimization/Control
+### Using Automation Hooks
 
-### Prompt Structure
+```bash
+# Copy hooks to your Claude Code configuration
+cp -r hooks/ ~/.claude/hooks/
 
-Each prompt contains:
+# Hooks run automatically on events like:
+# - Pre-commit: security scanning, linting
+# - Session setup: environment configuration
+# - Test runner: automated test execution
+```
+
+---
+
+## Prompt Categories
+
+### Business & Strategy
+
+| Category | Prompts | Key Use Cases |
+|----------|---------|---------------|
+| [Business Analysis](prompts/business/) | 45+ | Requirements engineering, process improvement, stakeholder management |
+| [Finance](prompts/finance/) | 30+ | Financial modeling, investment analysis, budgeting, forecasting |
+| [Marketing](prompts/business/marketing/) | 25+ | Campaign strategy, content marketing, brand development |
+| [Operations](prompts/operations/) | 35+ | Process optimization, supply chain, logistics |
+| [Project Management](prompts/project-management/) | 40+ | Risk assessment, resource planning, agile methodologies |
+
+### Technology & Engineering
+
+| Category | Prompts | Key Use Cases |
+|----------|---------|---------------|
+| [Software Engineering](prompts/technical/) | 50+ | Architecture design, code review, full-stack development |
+| [DevOps](prompts/technical/devops/) | 25+ | CI/CD pipelines, infrastructure as code, container orchestration |
+| [Security](prompts/security/) | 20+ | Threat modeling, vulnerability assessment, incident response |
+| [Data Science](prompts/technical/data-science/) | 30+ | ML model development, data analysis, visualization |
+
+### Emerging Technologies (2025 Expansion)
+
+| Category | Prompts | Key Use Cases |
+|----------|---------|---------------|
+| [Quantum Computing](prompts/quantum-computing/) | 14 | Algorithm development, circuit optimization, quantum ML |
+| [Blockchain & Web3](prompts/blockchain/) | 15 | Smart contracts, DeFi protocols, tokenization |
+| [Biotechnology](prompts/biotechnology/) | 15 | Drug discovery, bioinformatics, gene editing, clinical trials |
+| [Space Economy](prompts/space-economy/) | 24 | Satellite operations, mission planning, commercial spaceflight |
+| [Renewable Energy](prompts/renewable-energy/) | 19 | Solar development, energy storage, grid integration |
+| [Healthcare Digital](prompts/healthcare-digital/) | 20 | Telehealth, AI diagnostics, patient engagement, EHR systems |
+| [Government Digital](prompts/government/) | 8 | Digital transformation, smart cities, citizen services |
+| [Supply Chain](prompts/supply-chain/) | 6 | Resilience planning, logistics optimization |
+
+### Creative & Communication
+
+| Category | Prompts | Key Use Cases |
+|----------|---------|---------------|
+| [Creative](prompts/creative/) | 25+ | Graphic design, UX research, content strategy |
+| [Communication](prompts/communication/) | 30+ | Presentations, stakeholder management, technical writing |
+| [Learning & Development](prompts/learning-development/) | 20+ | Curriculum design, training programs, skill assessment |
+
+### Specialized Industries
+
+| Category | Prompts | Key Use Cases |
+|----------|---------|---------------|
+| [Healthcare](prompts/healthcare/) | 15+ | Pharmaceutical R&D, clinical workflows |
+| [Engineering](prompts/engineering/) | 10+ | Construction, mechanical design, project delivery |
+| [Research](prompts/research/) | 20+ | Academic research, grant writing, literature review |
+| [Customer Service](prompts/customer-service/) | 15+ | Support operations, experience optimization |
+
+---
+
+## Claude Code Skills (260+)
+
+Skills are specialized capabilities that Claude Code invokes automatically based on your requests.
+
+### How Skills Work
+
+Unlike prompts, skills:
+- **Auto-trigger** when Claude Code detects relevant keywords
+- **Provide step-by-step guidance** with multi-language code examples
+- **Include industry best practices** and production patterns
+- **Range from 200-500+ lines** of detailed instructions
+
+### Skills by Domain
+
+| Domain | Skills | Examples |
+|--------|--------|----------|
+| **Software Development** | 35 | refactor-legacy-code, code-review-analysis, design-patterns |
+| **DevOps & Infrastructure** | 20 | docker-containerization, kubernetes-deployment, terraform-iac |
+| **Testing & QA** | 15 | unit-testing-framework, e2e-testing, test-automation |
+| **Security** | 15 | vulnerability-scanning, oauth-implementation, data-encryption |
+| **API & Integration** | 12 | rest-api-design, graphql-implementation, webhook-development |
+| **Database** | 12 | sql-optimization, schema-design, database-indexing |
+| **Cloud Platforms** | 15 | aws-lambda, serverless-architecture, cloud-cost-optimization |
+| **Frontend** | 12 | react-components, responsive-design, css-architecture |
+| **Backend** | 12 | nodejs-express, django-application, background-jobs |
+| **Machine Learning** | 10 | ml-model-training, model-deployment, hyperparameter-tuning |
+| **Documentation** | 15 | api-documentation, architecture-diagrams, runbook-creation |
+| **Data Science** | 20 | exploratory-data-analysis, feature-engineering, ab-testing |
+| **Mobile** | 8 | react-native, flutter-development, push-notifications |
+| **Monitoring** | 8 | prometheus-monitoring, grafana-dashboards, distributed-tracing |
+| **Version Control** | 10 | git-workflow-strategy, github-actions, semantic-versioning |
+| **Project Management** | 10 | agile-sprint-planning, risk-assessment, release-planning |
+| **Performance** | 8 | web-performance-audit, bundle-optimization, database-tuning |
+| **Troubleshooting** | 12 | production-debugging, memory-leak-detection, root-cause-analysis |
+
+See [SKILLS-MATRIX.md](SKILLS-MATRIX.md) for the complete reference with trigger keywords.
+
+---
+
+## Automation Hooks (7)
+
+Hooks execute automatically in response to Claude Code events.
+
+| Hook | Trigger | Purpose |
+|------|---------|---------|
+| [security-scan](hooks/security-scan/) | Pre-commit | Scan for vulnerabilities and secrets |
+| [pre-commit-linting](hooks/pre-commit-linting/) | Pre-commit | Code formatting and style enforcement |
+| [test-runner](hooks/test-runner/) | Pre-commit | Automated test execution |
+| [dependency-check](hooks/dependency-check/) | Pre-commit | Audit dependencies for vulnerabilities |
+| [breaking-change-detection](hooks/breaking-change-detection/) | Pre-commit | Detect API breaking changes |
+| [auto-format](hooks/auto-format/) | Post-save | Automatic code formatting |
+| [session-setup](hooks/session-setup/) | Session start | Environment initialization |
+
+See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation and configuration.
+
+---
+
+## Prompt Architecture
+
+Each prompt follows a consistent structure designed for maximum effectiveness:
 
 ```yaml
 Metadata:
   - Category: Domain classification
   - Tags: Searchable keywords
-  - Personas: Expert roles to adopt
   - Use Cases: Applicable scenarios
 
-Architecture:
-  - Dual-Persona: Primary expert + complementary specialist
-  - Frameworks: 3-5 professional methodologies
-  - Processing: 4-phase systematic approach
-  - Output: Structured deliverables (600+ lines average)
+Structure:
+  - Context Questions: Gather user requirements
+  - Expert Guidance: Professional methodologies
+  - Deliverables: Structured output sections
+  - Examples: Real-world usage demonstrations
 ```
 
-### Task Matching Examples
+### Output Quality
 
-**User Request**: "Help me analyze our company's financial performance and create projections"
-→ **Select**: `/prompts/finance/financial-analysis-expert.md`
+- **Comprehensive**: 400-800+ lines of structured content
+- **Actionable**: Step-by-step implementation guidance
+- **Professional**: Industry-standard frameworks and methodologies
+- **Customizable**: Variables for context-specific adaptation
 
-**User Request**: "Design a secure architecture for our cloud migration"
-→ **Select**: `/prompts/technical/security/cybersecurity-defense-architect.md`
+---
 
-**User Request**: "Create a comprehensive hiring process for engineering roles"
-→ **Select**: `/prompts/human-resources/hr-excellence-leader.md`
+## Integration
 
-**User Request**: "Optimize our software deployment pipeline"
-→ **Select**: `/prompts/technical/devops/cicd-pipeline-optimizer.md`
+### For AI Agents and Assistants
 
-### Integration Guidelines
+See [AI-AGENT-GUIDE.md](AI-AGENT-GUIDE.md) for:
+- Prompt selection algorithms
+- Task classification systems
+- API integration patterns
+- Variable injection systems
 
-For AI agents and assistants:
+### For Human Users
 
-1. **Parse task requirements** to identify:
-   - Primary domain (technical, business, creative, etc.)
-   - Specific workflow (analysis, creation, optimization, etc.)
-   - Output requirements (reports, code, strategies, etc.)
+See [README-HUMANS.md](README-HUMANS.md) for:
+- Getting started guide
+- Category browsing
+- Customization tips
+- Real-world examples
 
-2. **Match to prompt taxonomy**:
+### Programmatic Access
 
-   ```mermaid
-   flowchart LR
-       A[Task] --> B{Domain?}
-       B -->|Technical| C[prompts/technical/]
-       B -->|Business| D[prompts/business/]
-       B -->|Creative| E[prompts/creative/]
-       B -->|Specialized| F[prompts/specialized/]
+```python
+# Load prompt index
+import json
+with open('PROMPT-INDEX.json') as f:
+    prompts = json.load(f)
 
-       C --> C1[subcategory/]
-       D --> D1[subcategory/]
-       E --> E1[subcategory/]
-       F --> F1[subcategory/]
-
-       C1 --> G[specific-prompt.md]
-       D1 --> G
-       E1 --> G
-       F1 --> G
-
-       style A fill:#0066cc,color:#fff
-       style G fill:#00aa66,color:#fff
-   ```
-
-3. **Load and customize** the selected prompt:
-   - Inject task-specific context
-   - Set appropriate variables
-   - Adjust output format if needed
-
-4. **Execute systematically**:
-   - Follow the 4-phase framework
-   - Maintain persona consistency
-   - Deliver structured outputs
-
-### Metadata Index
-
-Quick reference for programmatic selection:
-
-```mermaid
-graph TB
-    A[Prompt Library] --> B[Technical]
-    A --> C[Business]
-    A --> D[Creative]
-    A --> E[Specialized]
-
-    B --> B1[software-engineering]
-    B --> B2[devops]
-    B --> B3[data-science]
-    B --> B4[security]
-    B --> B5[architecture]
-
-    C --> C1[finance]
-    C --> C2[marketing]
-    C --> C3[operations]
-    C --> C4[management]
-    C --> C5[legal]
-
-    D --> D1[design]
-    D --> D2[content-strategy]
-    D --> D3[ux-design]
-
-    E --> E1[healthcare]
-    E --> E2[engineering]
-    E --> E3[education]
-    E --> E4[research]
-
-    style A fill:#0066cc,color:#fff
-    style B fill:#00aa66,color:#fff
-    style C fill:#00aa66,color:#fff
-    style D fill:#00aa66,color:#fff
-    style E fill:#00aa66,color:#fff
-```
-
-**JSON Format** (for programmatic access):
-```json
-{
-  "prompts": {
-    "technical": [
-      "software-engineering",
-      "devops",
-      "data-science",
-      "security",
-      "architecture"
-    ],
-    "business": ["finance", "marketing", "operations", "management", "legal"],
-    "creative": ["design", "content-strategy", "ux-design"],
-    "specialized": ["healthcare", "engineering", "education", "research"]
-  }
-}
+# Select prompt by category
+technical_prompts = [p for p in prompts if p['category'] == 'technical']
 ```
 
 ---
 
-## Claude Code Skills Library
+## Web Interface
 
-In addition to comprehensive prompts, this repository includes **200 specialized skills** designed specifically for [Claude Code](https://code.claude.com/). Skills provide focused, actionable guidance for specific technical tasks.
+Browse prompts with search and filtering at:
+**[https://aj-geddes.github.io/useful-ai-prompts/](https://aj-geddes.github.io/useful-ai-prompts/)**
 
-### What are Skills?
-
-Skills are specialized capabilities that Claude Code can invoke automatically based on your requests. Unlike broad prompts, skills:
-
-- **Focus on one specific capability** (e.g., "refactor legacy code", "design REST APIs")
-- **Activate automatically** when Claude detects relevant keywords in your request
-- **Provide step-by-step instructions** with code examples and best practices
-- **Easy to integrate** - copy to `.claude/skills/` in your project for team sharing
-
-### Skills Overview
-
-```mermaid
-graph LR
-    A[200 Skills] --> B[Software Dev<br/>35 skills]
-    A --> C[DevOps<br/>20 skills]
-    A --> D[Testing & QA<br/>15 skills]
-    A --> E[Database<br/>12 skills]
-    A --> F[API & Integration<br/>12 skills]
-    A --> G[Security<br/>15 skills]
-    A --> H[12 More<br/>Categories<br/>91 skills]
-
-    style A fill:#0066cc,color:#fff
-    style B fill:#00aa66,color:#fff
-    style C fill:#00aa66,color:#fff
-    style D fill:#00aa66,color:#fff
-    style E fill:#00aa66,color:#fff
-    style F fill:#00aa66,color:#fff
-    style G fill:#00aa66,color:#fff
-    style H fill:#00aa66,color:#fff
-```
-
-### Skills Categories (200 Total)
-
-| Category | Count | Examples |
-|----------|-------|----------|
-| **Software Development & Engineering** | 35 | refactor-legacy-code, code-review-analysis, design-patterns |
-| **DevOps & Infrastructure** | 20 | docker-containerization, kubernetes-deployment, terraform-iac |
-| **Testing & QA** | 15 | unit-testing-framework, e2e-testing, test-automation |
-| **Security & Compliance** | 15 | vulnerability-scanning, oauth-implementation, data-encryption |
-| **Documentation & Writing** | 15 | api-documentation, architecture-diagrams, runbook-creation |
-| **Data Science & Analytics** | 20 | exploratory-data-analysis, feature-engineering, ab-testing |
-| **Database & Storage** | 12 | sql-query-optimization, database-indexing, schema-design |
-| **API & Integration** | 12 | rest-api-design, graphql-implementation, webhook-development |
-| **Cloud Platforms** | 15 | aws-lambda, serverless-architecture, cloud-cost-optimization |
-| **Frontend Development** | 12 | react-components, responsive-design, css-architecture |
-| **Backend Development** | 12 | nodejs-express, django-application, background-jobs |
-| **Mobile Development** | 8 | react-native, flutter-development, push-notifications |
-| **Machine Learning & AI** | 10 | ml-model-training, model-deployment, hyperparameter-tuning |
-| **Monitoring & Observability** | 8 | prometheus-monitoring, grafana-dashboards, distributed-tracing |
-| **Version Control & CI/CD** | 10 | git-workflow-strategy, github-actions, semantic-versioning |
-| **Project Management** | 10 | agile-sprint-planning, risk-assessment, release-planning |
-| **Business Analysis** | 8 | requirements-gathering, user-story-writing, process-mapping |
-| **Design & UX** | 8 | wireframe-prototyping, design-systems, user-research |
-| **Performance & Optimization** | 8 | web-performance-audit, bundle-optimization, database-tuning |
-| **Troubleshooting & Debugging** | 12 | production-debugging, memory-leak-detection, root-cause-analysis |
-
-### How to Use Skills
-
-1. **Copy skills to your project:**
-   ```bash
-   cp -r skills/ /path/to/your/project/.claude/skills/
-   ```
-
-2. **Use naturally in conversations:**
-   ```
-   You: "Help me refactor this legacy code"
-   Claude: (Automatically invokes refactor-legacy-code skill)
-   ```
-
-3. **Skills activate automatically** based on keywords in your requests
-
-### Skills Resources
-
-- **[Complete Skills Matrix](SKILLS-MATRIX.md)**: All 200 skills with descriptions and trigger keywords
-- **[Skills Website](https://aj-geddes.github.io/useful-ai-prompts/skills)**: Browse skills by category on GitHub Pages
-- **[Claude Code Skills Docs](https://code.claude.com/docs/en/skills)**: Official documentation for creating and using skills
-
-### Example Skills
-
-#### `refactor-legacy-code`
-Modernize legacy codebases with:
-- Incremental refactoring strategies
-- Modern pattern implementations
-- Safety net testing approaches
-- Complete before/after examples
-
-#### `docker-containerization`
-Create production-ready containers with:
-- Multi-stage build optimization
-- Security best practices
-- Docker Compose multi-container setups
-- Language-specific examples
-
-#### `rest-api-design`
-Design RESTful APIs following best practices:
-- Resource naming conventions
-- HTTP method usage
-- Response format standards
-- OpenAPI documentation
-
-#### `unit-testing-framework`
-Write comprehensive tests with:
-- AAA pattern structure
-- Language-specific examples (Jest, pytest, JUnit)
-- Mocking strategies
-- Coverage guidelines
-
-See [`skills/`](skills/) for complete implementations.
+Features:
+- Category-based navigation
+- Full-text search
+- Responsive design
+- Direct copy-to-clipboard
 
 ---
 
-### Performance Notes
+## Repository Structure
 
-- Each prompt is designed for 600+ line outputs
-- Combines multiple expert perspectives
-- Includes industry-standard frameworks
-- Optimized for accuracy and completeness
-
-### Repository Structure
-
-```mermaid
-graph TD
-    A[useful-ai-prompts] --> B[prompts/]
-    A --> C[skills/]
-    A --> D[metadata/]
-    A --> E[docs/]
-    A --> F[PROMPT-INDEX.json]
-    A --> G[SKILLS-MATRIX.md]
-
-    B --> B1[486 expert prompts<br/>organized by domain]
-    C --> C1[200 Claude Code skills<br/>organized by category]
-    D --> D1[Framework definitions<br/>and guidelines]
-    E --> E1[Jekyll website<br/>for browsing & search]
-    F --> F1[Machine-readable<br/>prompt catalog]
-    G --> G1[Complete skills reference<br/>with trigger keywords]
-
-    style A fill:#0066cc,color:#fff
-    style B fill:#00aa66,color:#fff
-    style C fill:#ff6b6b,color:#fff
-    style D fill:#00aa66,color:#fff
-    style E fill:#00aa66,color:#fff
-    style F fill:#00aa66,color:#fff
-    style G fill:#ff6b6b,color:#fff
+```
+useful-ai-prompts/
+├── prompts/           # 557+ AI prompts organized by category
+│   ├── technical/     # Software, DevOps, security, data science
+│   ├── business/      # Finance, marketing, operations, management
+│   ├── creative/      # Design, UX, content strategy
+│   ├── blockchain/    # Web3, DeFi, smart contracts
+│   ├── quantum-computing/  # Quantum algorithms, circuits
+│   └── ...            # 47 total categories
+├── skills/            # 260+ Claude Code skills
+├── hooks/             # 7 automation hooks
+├── docs/              # Jekyll website (GitHub Pages)
+├── metadata/          # Framework definitions and guidelines
+├── PROMPT-INDEX.json  # Machine-readable prompt catalog
+├── SKILLS-MATRIX.md   # Complete skills reference
+└── HOOKS-LIBRARY.md   # Hooks documentation
 ```
 
 ---
 
-**For human users**: See [README-HUMANS.md](README-HUMANS.md) for user-friendly documentation and examples.
+## Contributing
 
-**For developers**: See [AI-AGENT-GUIDE.md](AI-AGENT-GUIDE.md) for integration specifications.
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Adding new prompts
+- Creating skills
+- Building hooks
+- Quality standards
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+## Links
+
+- **Website**: [https://aj-geddes.github.io/useful-ai-prompts/](https://aj-geddes.github.io/useful-ai-prompts/)
+- **GitHub**: [https://github.com/aj-geddes/useful-ai-prompts](https://github.com/aj-geddes/useful-ai-prompts)
+- **Issues**: [Report bugs or request features](https://github.com/aj-geddes/useful-ai-prompts/issues)
+- **Discussions**: [Community Q&A](https://github.com/aj-geddes/useful-ai-prompts/discussions)
+
+---
+
+**Keywords**: AI prompts, ChatGPT prompts, Claude prompts, prompt engineering, AI productivity, Claude Code skills, automation hooks, software development prompts, business strategy AI, prompt library, AI assistant, LLM prompts, professional AI tools, AI workflow automation
