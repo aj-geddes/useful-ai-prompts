@@ -54,6 +54,7 @@ defaults:
       type: "skills"
     values:
       layout: "skill"
+      render_with_liquid: false
   - scope:
       path: ""
       type: "hooks"
