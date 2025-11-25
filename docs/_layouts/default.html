@@ -18,41 +18,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
-    
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+
     <!-- PWA Manifest -->
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
-    
-    <!-- Mobile App Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/icon-192.png' | relative_url }}">
-    
-    <!-- Microsoft Meta Tags -->
-    <meta name="msapplication-TileColor" content="#2563eb">
-    <meta name="msapplication-config" content="{{ '/browserconfig.xml' | relative_url }}">
-    
+
     <!-- SEO - Manual implementation for GitHub Pages compatibility -->
     <meta name="author" content="{{ site.title }}">
     <meta name="generator" content="Jekyll {{ jekyll.version }}">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="{% if page.layout == 'prompt' %}article{% else %}website{% endif %}">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    
-    <!-- Enhanced Meta Tags -->
+
+    <!-- Enhanced Meta Tags (includes OG, Twitter, canonical, mobile) -->
     {% include meta-tags.html %}
     
     <!-- Structured Data -->

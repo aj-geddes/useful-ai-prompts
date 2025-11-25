@@ -9,7 +9,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{% if page.layout == 'prompt' %}prompt-preview.png{% else %}site-preview.png{% endif %}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{% if page.layout == 'prompt' %}prompt-preview.svg{% else %}site-preview.svg{% endif %}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Professional AI Prompts">
@@ -33,13 +33,19 @@
 <meta name="twitter:creator" content="@{{ site.twitter_username | default: 'usefulaiprompts' }}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{% if page.layout == 'prompt' %}prompt-preview.png{% else %}site-preview.png{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{% if page.layout == 'prompt' %}prompt-preview.svg{% else %}site-preview.svg{% endif %}">
 <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - Professional AI Prompts">
 
-<!-- Search Engine Verification -->
-<meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_TO_BE_REPLACED" />
-<meta name="msvalidate.01" content="BING_VERIFICATION_CODE_TO_BE_REPLACED" />
-<meta name="yandex-verification" content="YANDEX_VERIFICATION_CODE_TO_BE_REPLACED" />
+<!-- Search Engine Verification - Add your verification codes in _config.yml -->
+{% if site.webmaster_verifications.google and site.webmaster_verifications.google != "your-google-verification-code" %}
+<meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}" />
+{% endif %}
+{% if site.webmaster_verifications.bing and site.webmaster_verifications.bing != "your-bing-verification-code" %}
+<meta name="msvalidate.01" content="{{ site.webmaster_verifications.bing }}" />
+{% endif %}
+{% if site.webmaster_verifications.yandex and site.webmaster_verifications.yandex != "your-yandex-verification-code" %}
+<meta name="yandex-verification" content="{{ site.webmaster_verifications.yandex }}" />
+{% endif %}
 
 <!-- Additional SEO Meta Tags -->
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">

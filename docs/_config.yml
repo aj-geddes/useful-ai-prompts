@@ -106,15 +106,15 @@ compress_html:
 
 # SEO defaults
 seo_defaults:
-  image: "/assets/images/og-default.png"
+  image: "/assets/images/og-default.svg"
   type: "website"
   locale: "en_US"
 
 # Site statistics
 stats:
-  total_prompts: 490
-  categories: 19
-  last_updated: "2025-08-18T12:00:00Z"  # Force rebuild timestamp
+  total_prompts: 486
+  categories: 22
+  last_updated: "2025-11-23T12:00:00Z"  # Force rebuild timestamp
   github_stars: 0  # This will be updated dynamically
   total_downloads: 0  # This will be updated dynamically
 
@@ -242,6 +242,5 @@ keyboard_shortcuts:
     search: "/"
     home: "h"
     categories: "c"
-    random_prompt: "r"
     toggle_theme: "t"
     help: "?"

@@ -16,30 +16,16 @@ layout: null
   "categories": ["productivity", "business", "education", "developer tools"],
   "icons": [
     {
-      "src": "{{ site.baseurl }}/assets/images/icon-192.png",
+      "src": "{{ site.baseurl }}/assets/images/icon-192.svg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "{{ site.baseurl }}/assets/images/icon-512.png",
+      "src": "{{ site.baseurl }}/assets/images/icon-512.svg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "{{ site.baseurl }}/assets/images/screenshot-mobile.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "{{ site.baseurl }}/assets/images/screenshot-desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
     }
   ],
   "shortcuts": [
@@ -50,8 +36,9 @@ layout: null
       "url": "{{ site.baseurl }}/search/",
       "icons": [
         {
-          "src": "{{ site.baseurl }}/assets/images/search-icon.png",
-          "sizes": "96x96"
+          "src": "{{ site.baseurl }}/assets/images/search-icon.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
         }
       ]
     },
@@ -62,20 +49,9 @@ layout: null
       "url": "{{ site.baseurl }}/categories/",
       "icons": [
         {
-          "src": "{{ site.baseurl }}/assets/images/category-icon.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Random Prompt",
-      "short_name": "Random",
-      "description": "Get a random AI prompt",
-      "url": "{{ site.baseurl }}/random/",
-      "icons": [
-        {
-          "src": "{{ site.baseurl }}/assets/images/random-icon.png",
-          "sizes": "96x96"
+          "src": "{{ site.baseurl }}/assets/images/category-icon.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
         }
       ]
     }
