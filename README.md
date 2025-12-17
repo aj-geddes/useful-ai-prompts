@@ -1,5 +1,8 @@
 # Useful AI Prompts - The Complete AI Productivity Library
 
+[![Run in Smithery](https://smithery.ai/badge/skills/aj-geddes)](https://smithery.ai/skills?ns=aj-geddes&utm_source=github&utm_medium=badge)
+
+
 [![GitHub Stars](https://img.shields.io/github/stars/aj-geddes/useful-ai-prompts?style=social)](https://github.com/aj-geddes/useful-ai-prompts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Prompts](https://img.shields.io/badge/Prompts-557+-green)](prompts/)
