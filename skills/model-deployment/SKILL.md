@@ -5,7 +5,18 @@ description: Deploy machine learning models to production using Flask, FastAPI, 
 
 # Model Deployment
 
+## Overview
+
 Model deployment is the process of taking a trained machine learning model and making it available for production use through APIs, web services, or batch processing systems.
+
+## When to Use
+
+- When productionizing trained models for real-world inference and predictions
+- When building REST APIs or web services for model serving
+- When scaling predictions to serve multiple users or applications
+- When deploying models to cloud platforms, edge devices, or containers
+- When implementing CI/CD pipelines for ML model updates
+- When creating batch processing systems for large-scale predictions
 
 ## Deployment Approaches
 

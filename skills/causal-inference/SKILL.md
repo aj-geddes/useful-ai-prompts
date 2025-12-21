@@ -5,7 +5,18 @@ description: Determine cause-and-effect relationships using propensity scoring, 
 
 # Causal Inference
 
+## Overview
+
 Causal inference determines cause-and-effect relationships and estimates treatment effects, going beyond correlation to understand what causes what.
+
+## When to Use
+
+- Evaluating the impact of policy interventions or business decisions
+- Estimating treatment effects when randomized experiments aren't feasible
+- Controlling for confounding variables in observational data
+- Determining if a marketing campaign or product change caused an outcome
+- Analyzing heterogeneous treatment effects across different user segments
+- Making causal claims from non-experimental data using propensity scores or instrumental variables
 
 ## Key Concepts
 

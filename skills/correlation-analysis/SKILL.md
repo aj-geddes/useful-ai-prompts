@@ -5,7 +5,18 @@ description: Measure relationships between variables using correlation coefficie
 
 # Correlation Analysis
 
+## Overview
+
 Correlation analysis measures the strength and direction of relationships between variables, helping identify which features are related and detect multicollinearity.
+
+## When to Use
+
+- Identifying relationships between numerical variables
+- Detecting multicollinearity before regression modeling
+- Exploratory data analysis to understand feature dependencies
+- Feature selection and dimensionality reduction
+- Validating assumptions about variable relationships
+- Comparing linear and non-linear associations
 
 ## Correlation Types
 

@@ -5,7 +5,18 @@ description: Identify groups and patterns in data using k-means, hierarchical cl
 
 # Clustering Analysis
 
+## Overview
+
 Clustering partitions data into groups of similar observations without pre-defined labels, enabling discovery of natural patterns and structures in data.
+
+## When to Use
+
+- Segmenting customers based on purchasing behavior or demographics
+- Discovering natural groupings in data without prior knowledge of categories
+- Identifying market segments for targeted marketing campaigns
+- Organizing large datasets into meaningful categories for further analysis
+- Finding patterns in gene expression data or medical imaging
+- Grouping documents, products, or users by similarity for recommendation systems
 
 ## Clustering Algorithms
 

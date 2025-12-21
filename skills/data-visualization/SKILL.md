@@ -5,7 +5,18 @@ description: Create effective visualizations using matplotlib and seaborn for ex
 
 # Data Visualization
 
-Effective data visualization transforms complex data into clear, compelling visual representations that reveal patterns, trends, and insights for storytelling and decision-making.
+## Overview
+
+Data visualization transforms complex data into clear, compelling visual representations that reveal patterns, trends, and insights for storytelling and decision-making.
+
+## When to Use
+
+- Exploratory data analysis and pattern discovery
+- Communicating insights to stakeholders
+- Comparing distributions and relationships
+- Presenting findings in reports and dashboards
+- Identifying outliers and anomalies visually
+- Creating publication-ready charts and graphs
 
 ## Visualization Types
 

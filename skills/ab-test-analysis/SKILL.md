@@ -5,7 +5,18 @@ description: Design and analyze A/B tests, calculate statistical significance, a
 
 # A/B Test Analysis
 
+## Overview
+
 A/B testing is a statistical method to compare two variants and determine which performs better, enabling data-driven optimization decisions.
+
+## When to Use
+
+- Comparing two versions of a product feature, webpage, or marketing campaign
+- Optimizing conversion rates, click-through rates, or user engagement metrics
+- Making data-driven decisions with statistical confidence about changes
+- Determining sample size requirements for experiment validity
+- Analyzing treatment effects and measuring lift from interventions
+- Evaluating whether observed differences are statistically significant
 
 ## Core Components
 

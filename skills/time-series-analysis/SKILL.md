@@ -5,7 +5,18 @@ description: Analyze temporal data patterns including trends, seasonality, autoc
 
 # Time Series Analysis
 
+## Overview
+
 Time series analysis examines data points collected over time to identify patterns, trends, and seasonality for forecasting and understanding temporal dynamics.
+
+## When to Use
+
+- Forecasting future values based on historical trends
+- Detecting seasonality and cyclical patterns in data
+- Analyzing trends over time in sales, stock prices, or website traffic
+- Understanding autocorrelation and temporal dependencies
+- Making time-based predictions with confidence intervals
+- Decomposing data into trend, seasonal, and residual components
 
 ## Core Components
 

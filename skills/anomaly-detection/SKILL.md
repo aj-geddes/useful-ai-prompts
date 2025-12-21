@@ -5,7 +5,18 @@ description: Identify unusual patterns, outliers, and anomalies in data using st
 
 # Anomaly Detection
 
+## Overview
+
 Anomaly detection identifies unusual patterns, outliers, and anomalies in data that deviate significantly from normal behavior, enabling fraud detection and system monitoring.
+
+## When to Use
+
+- Detecting fraudulent transactions or suspicious activity in financial data
+- Identifying system failures, network intrusions, or security breaches
+- Monitoring manufacturing quality and identifying defective products
+- Finding unusual patterns in healthcare data or patient vital signs
+- Detecting abnormal sensor readings in IoT or industrial systems
+- Identifying outliers in customer behavior for targeted intervention
 
 ## Detection Methods
 

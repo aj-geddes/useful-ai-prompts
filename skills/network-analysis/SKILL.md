@@ -5,7 +5,18 @@ description: Analyze network structures, identify communities, measure centralit
 
 # Network Analysis
 
-Network analysis examines relationships and connections between entities, revealing community structure, influence patterns, and network properties.
+## Overview
+
+This skill enables analysis of network structures to identify communities, measure centrality, detect influential nodes, and visualize complex relationships in social networks, organizational structures, and interconnected systems.
+
+## When to Use
+
+- Analyzing social networks to identify influential users and community structures
+- Mapping organizational hierarchies and identifying key connectors or bottlenecks
+- Studying citation networks to find impactful research papers and collaboration patterns
+- Building recommendation systems based on network relationships and similarities
+- Analyzing supply chain networks to optimize logistics and identify vulnerabilities
+- Detecting fraud patterns through network analysis of financial transactions
 
 ## Network Concepts
 

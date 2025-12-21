@@ -5,7 +5,18 @@ description: Design and architect neural networks with various architectures inc
 
 # Neural Network Design
 
-Designing neural networks requires understanding different architectures, layer types, and how to combine them for specific tasks like image classification, sequence processing, and language understanding.
+## Overview
+
+This skill covers designing and implementing neural network architectures including CNNs, RNNs, Transformers, and ResNets using PyTorch and TensorFlow, with focus on architecture selection, layer composition, and optimization techniques.
+
+## When to Use
+
+- Designing custom neural network architectures for computer vision tasks like image classification or object detection
+- Building sequence models for time series forecasting, natural language processing, or video analysis
+- Implementing transformer-based models for language understanding or generation tasks
+- Creating hybrid architectures that combine CNNs, RNNs, and attention mechanisms
+- Optimizing network depth, width, and skip connections for better training and performance
+- Selecting appropriate activation functions, normalization layers, and regularization techniques
 
 ## Core Architecture Types
 

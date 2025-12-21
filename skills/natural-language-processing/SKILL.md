@@ -5,7 +5,18 @@ description: Build NLP applications using transformers library, BERT, GPT, text 
 
 # Natural Language Processing
 
-Natural Language Processing enables machines to understand, process, and generate human language, powering applications like chatbots, translation, summarization, and sentiment analysis.
+## Overview
+
+This skill provides comprehensive tools for building NLP applications using modern transformers, BERT, GPT, and classical NLP techniques for text classification, named entity recognition, sentiment analysis, and more.
+
+## When to Use
+
+- Building text classification systems for sentiment analysis, topic categorization, or intent detection
+- Extracting named entities (people, places, organizations) from unstructured text
+- Implementing machine translation, text summarization, or question answering systems
+- Processing and analyzing large volumes of textual data for insights
+- Creating chatbots, virtual assistants, or conversational AI applications
+- Fine-tuning pre-trained transformer models for domain-specific NLP tasks
 
 ## NLP Core Tasks
 

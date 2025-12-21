@@ -5,7 +5,18 @@ description: Reduce feature dimensionality using PCA, t-SNE, and feature selecti
 
 # Dimensionality Reduction
 
-Dimensionality reduction techniques reduce the number of features while preserving important information, improving model efficiency and enabling visualization.
+## Overview
+
+Dimensionality reduction techniques reduce the number of features while preserving important information, improving model efficiency and enabling visualization of high-dimensional data.
+
+## When to Use
+
+- High-dimensional datasets with many features
+- Visualizing complex datasets in 2D or 3D
+- Reducing computational complexity and training time
+- Removing redundant or highly correlated features
+- Preventing overfitting in machine learning models
+- Preprocessing data before clustering or classification
 
 ## Techniques
 

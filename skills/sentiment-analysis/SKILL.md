@@ -5,6 +5,8 @@ description: Classify text sentiment using NLP techniques, lexicon-based analysi
 
 # Sentiment Analysis
 
+## Overview
+
 Sentiment analysis determines emotional tone and opinions in text, enabling understanding of customer satisfaction, brand perception, and feedback analysis.
 
 ## Approaches

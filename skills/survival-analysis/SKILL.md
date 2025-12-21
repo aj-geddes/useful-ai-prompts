@@ -5,6 +5,8 @@ description: Analyze time-to-event data, calculate survival probabilities, and c
 
 # Survival Analysis
 
+## Overview
+
 Survival analysis studies time until an event occurs, handling censored data where events haven't happened for some subjects, enabling prediction of lifetimes and risk assessment.
 
 ## Key Concepts

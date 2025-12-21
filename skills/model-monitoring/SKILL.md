@@ -5,7 +5,18 @@ description: Monitor model performance, detect data drift, concept drift, and an
 
 # Model Monitoring
 
+## Overview
+
 Monitoring deployed machine learning models ensures they continue to perform well in production, detecting data drift, concept drift, and performance degradation.
+
+## When to Use
+
+- When models are deployed in production environments serving real users
+- When detecting data drift or concept drift in input features
+- When tracking model performance metrics over time
+- When ensuring model reliability, accuracy, and operational health
+- When implementing ML observability and alerting systems
+- When establishing thresholds for model retraining or intervention
 
 ## Monitoring Components
 
