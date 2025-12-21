@@ -5,7 +5,18 @@ description: Build binary and multiclass classification models using logistic re
 
 # Classification Modeling
 
+## Overview
+
 Classification modeling predicts categorical target values, assigning observations to discrete classes or categories based on input features.
+
+## When to Use
+
+- Predicting binary outcomes like customer churn, loan default, or email spam
+- Classifying items into multiple categories such as product types or sentiment
+- Building credit scoring models or risk assessment systems
+- Identifying disease diagnosis or medical condition from patient data
+- Predicting customer purchase likelihood or response to marketing
+- Detecting fraud, anomalies, or quality defects in production systems
 
 ## Classification Types
 

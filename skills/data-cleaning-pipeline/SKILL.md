@@ -5,7 +5,18 @@ description: Build robust processes for data cleaning, missing value imputation,
 
 # Data Cleaning Pipeline
 
-Data cleaning is the foundation of any successful data project. A robust data cleaning pipeline transforms raw, messy data into a clean, standardized format suitable for analysis and modeling.
+## Overview
+
+Data cleaning pipelines transform raw, messy data into clean, standardized formats suitable for analysis and modeling through systematic handling of missing values, outliers, and data quality issues.
+
+## When to Use
+
+- Preparing raw datasets for analysis or modeling
+- Handling missing values and data quality issues
+- Removing duplicates and standardizing formats
+- Detecting and treating outliers
+- Building automated data preprocessing workflows
+- Ensuring data integrity and consistency
 
 ## Core Components
 

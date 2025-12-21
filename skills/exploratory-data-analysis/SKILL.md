@@ -5,7 +5,9 @@ description: Discover patterns, distributions, and relationships in data through
 
 # Exploratory Data Analysis (EDA)
 
-Exploratory Data Analysis is the critical first step in any data science project. It involves systematically examining datasets to understand their characteristics, identify patterns, distributions, and relationships before formal modeling.
+## Overview
+
+Exploratory Data Analysis (EDA) is the critical first step in data science projects, systematically examining datasets to understand their characteristics, identify patterns, and assess data quality before formal modeling.
 
 ## Core Concepts
 

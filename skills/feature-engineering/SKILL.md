@@ -5,7 +5,18 @@ description: Create and transform features using encoding, scaling, polynomial f
 
 # Feature Engineering
 
+## Overview
+
 Feature engineering creates and transforms features to improve model performance, interpretability, and generalization through domain knowledge and mathematical transformations.
+
+## When to Use
+
+- When you need to improve model performance beyond using raw features
+- When dealing with categorical variables that need encoding for ML algorithms
+- When features have different scales and require normalization
+- When creating domain-specific features based on business knowledge
+- When handling skewed distributions or non-linear relationships
+- When preparing data for different types of ML algorithms with specific requirements
 
 ## Engineering Techniques
 

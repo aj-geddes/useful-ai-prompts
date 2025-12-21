@@ -5,7 +5,18 @@ description: Build collaborative and content-based recommendation engines for pr
 
 # Recommendation System
 
-Recommendation systems predict user preferences and suggest relevant items, driving engagement, sales, and user satisfaction.
+## Overview
+
+This skill implements collaborative and content-based recommendation systems with matrix factorization techniques to predict user preferences, increase engagement, and drive conversions through personalized item suggestions.
+
+## When to Use
+
+- Developing recommendation features to improve user engagement and retention
+- Implementing personalized product suggestions to increase sales and conversion rates
+- Building hybrid recommendation systems that combine collaborative and content-based approaches
+- Analyzing and optimizing recommendation coverage, diversity, and accuracy
+- Handling sparse user-item interaction matrices and cold start scenarios
+- Running A/B tests to measure the impact of recommendation algorithms on business metrics
 
 ## Approaches
 

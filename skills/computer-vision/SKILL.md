@@ -5,7 +5,18 @@ description: Implement computer vision tasks including image classification, obj
 
 # Computer Vision
 
-Computer Vision enables machines to understand visual information from images and videos, powering applications like autonomous driving, medical imaging, and surveillance.
+## Overview
+
+Computer vision enables machines to understand visual information from images and videos, powering applications like autonomous driving, medical imaging, and surveillance.
+
+## When to Use
+
+- Image classification and object recognition tasks
+- Object detection and localization in images
+- Semantic or instance segmentation projects
+- Pose estimation and human activity recognition
+- Face recognition and biometric systems
+- Medical imaging analysis and diagnostics
 
 ## Computer Vision Tasks
 

@@ -5,6 +5,8 @@ description: Conduct statistical tests including t-tests, chi-square, ANOVA, and
 
 # Statistical Hypothesis Testing
 
+## Overview
+
 Hypothesis testing provides a framework for making data-driven decisions by testing whether observed differences are statistically significant or due to chance.
 
 ## Testing Framework

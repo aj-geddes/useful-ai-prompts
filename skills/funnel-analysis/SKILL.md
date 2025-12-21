@@ -5,7 +5,18 @@ description: Analyze user conversion funnels, identify drop-off points, and opti
 
 # Funnel Analysis
 
+## Overview
+
 Funnel analysis tracks user progression through sequential steps, identifying where users drop off and optimizing each stage for better conversion.
+
+## When to Use
+
+- When optimizing user conversion paths and improving conversion rates
+- When identifying bottlenecks and drop-off points in user flows
+- When comparing performance across different segments or traffic sources
+- When measuring product feature adoption or onboarding effectiveness
+- When improving customer journey efficiency and user experience
+- When A/B testing different funnel configurations or designs
 
 ## Funnel Structure
 

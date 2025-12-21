@@ -5,7 +5,18 @@ description: Optimize hyperparameters using grid search, random search, Bayesian
 
 # Model Hyperparameter Tuning
 
+## Overview
+
 Hyperparameter tuning is the process of systematically searching for the best combination of model configuration parameters to maximize performance on validation data.
+
+## When to Use
+
+- When optimizing model performance beyond baseline configurations
+- When comparing different parameter combinations systematically
+- When fine-tuning complex models with many hyperparameters
+- When seeking the best trade-off between bias, variance, and training time
+- When improving model generalization on validation and test data
+- When exploring parameter spaces for neural networks, tree models, or ensemble methods
 
 ## Tuning Methods
 

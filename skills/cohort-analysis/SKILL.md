@@ -5,7 +5,18 @@ description: Track and analyze user cohorts over time, calculate retention rates
 
 # Cohort Analysis
 
+## Overview
+
 Cohort analysis tracks groups of users with shared characteristics over time, revealing patterns in retention, engagement, and lifetime value.
+
+## When to Use
+
+- Measuring user retention rates and identifying when users churn
+- Analyzing customer lifetime value (LTV) and payback periods
+- Comparing performance across different user acquisition channels or campaigns
+- Understanding how product changes affect different user groups over time
+- Tracking engagement patterns and identifying early warning signs of churn
+- Evaluating the long-term impact of onboarding improvements or feature releases
 
 ## Core Concepts
 

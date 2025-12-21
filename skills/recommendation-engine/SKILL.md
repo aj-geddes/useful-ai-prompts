@@ -5,7 +5,18 @@ description: Build recommendation systems using collaborative filtering, content
 
 # Recommendation Engine
 
-Recommendation engines predict user preferences and suggest relevant items, powering personalization in e-commerce, streaming, social media, and content platforms.
+## Overview
+
+This skill provides comprehensive implementation of recommendation systems using collaborative filtering, content-based filtering, matrix factorization, and hybrid approaches to predict user preferences and deliver personalized suggestions.
+
+## When to Use
+
+- Building personalized product recommendations for e-commerce platforms
+- Creating content recommendation systems for streaming services, news platforms, or social media
+- Implementing user-user or item-item collaborative filtering based on interaction patterns
+- Addressing cold start problems for new users or items with limited interaction history
+- Evaluating recommendation quality using precision@k, recall@k, and NDCG metrics
+- Scaling recommendation systems to handle millions of users and items efficiently
 
 ## Recommendation Approaches
 

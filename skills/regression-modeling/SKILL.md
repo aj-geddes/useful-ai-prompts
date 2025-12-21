@@ -5,7 +5,18 @@ description: Build predictive models using linear regression, polynomial regress
 
 # Regression Modeling
 
+## Overview
+
 Regression modeling predicts continuous target values based on input features, establishing quantitative relationships between variables for forecasting and analysis.
+
+## When to Use
+
+- Predicting sales, prices, or other continuous numerical outcomes
+- Understanding relationships between independent and dependent variables
+- Forecasting trends based on historical data
+- Quantifying the impact of features on a target variable
+- Building baseline models for comparison with more complex algorithms
+- Identifying which variables most influence predictions
 
 ## Regression Types
 
