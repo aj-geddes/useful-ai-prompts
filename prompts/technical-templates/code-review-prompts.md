@@ -1,176 +1,197 @@
-Create a **comprehensive automated code review system** for `Ask User for Programming Language and Project Type` with enterprise-grade analysis capabilities.
+# Automated Code Review System
 
-Initialize it as a **production-ready code review automation platform** with AI-powered analysis, security scanning, quality metrics, and team collaboration workflows.
+## Metadata
+- **ID**: `automated-code-review-system`
+- **Version**: 1.1.0
+- **Category**: Technical / Code Quality
+- **Tags**: code-review, static-analysis, security-scanning, quality-metrics, automation, CI/CD
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2024-01-15
+- **Updated**: 2025-01-01
 
-## Core Requirements
+## Overview
 
-### Review Framework Architecture
+Designs comprehensive automated code review systems with multi-layer analysis capabilities spanning syntax, semantics, security, performance, and architectural dimensions. Provides enterprise-grade quality gates with CI/CD integration, customizable rulesets, and developer-friendly feedback mechanisms. Balances quality enforcement with developer experience optimization.
 
-- **Multi-layer analysis**: Syntax, semantics, security, performance, and architectural review
-- **Language-specific rules**: Tailored analysis patterns for the specified programming language
-- **Customizable rulesets**: Configurable review criteria and severity levels
-- **Integration support**: CI/CD pipeline integration and IDE plugin compatibility
+## When to Use
 
-### Analysis Categories
+**Ideal Scenarios:**
+- Building automated code review pipelines for development teams at scale
+- Implementing quality gates with security scanning and performance analysis
+- Creating customizable rulesets for language-specific and project-specific best practices
+- Integrating code review automation into CI/CD workflows with blocking and advisory modes
+- Establishing audit trails and compliance documentation for regulated environments
 
-- **Code quality**: Structure, readability, maintainability, and complexity analysis
-- **Security scanning**: OWASP compliance, vulnerability detection, and threat modeling
-- **Performance optimization**: Algorithm efficiency, resource usage, and bottleneck identification
-- **Best practices compliance**: Language-specific conventions and industry standards
-- **Documentation analysis**: Code comments, API documentation, and inline help quality
+**Anti-patterns (when not to use):**
+- Manual code review process guidance without automation focus
+- Simple linting setup for individual projects
+- Single-file reviews not requiring systematic automation
+- Educational code review without pipeline integration
 
-## Enhanced Security & Quality Assessment
+---
 
-### Advanced Security Analysis
+## Prompt
 
-- **Static Application Security Testing (SAST)**: Comprehensive vulnerability scanning
-- **Dependency analysis**: Third-party library security assessment and license compliance
-- **Secrets detection**: API keys, passwords, and sensitive data exposure prevention
-- **Injection attack prevention**: SQL, NoSQL, command, and script injection vulnerability detection
-- **Authentication & authorization**: Access control and permission validation
+```xml
+<role>
+You are a Code Quality Automation Architect with 15+ years of experience building enterprise code review systems, static analysis pipelines, and security scanning frameworks. You understand multi-language analysis (SAST, linting, type checking), security integration (OWASP, CVE scanning), and developer experience optimization for quality tooling adoption.
+</role>
 
-### Quality Metrics & Standards
+<context>
+Automated code review reduces review cycle time by 50-70% while improving consistency and coverage. Effective systems balance quality enforcement with developer velocity, avoiding false-positive fatigue while catching genuine issues. Modern approaches integrate multiple analysis layers with progressive enforcement and actionable remediation guidance.
+</context>
 
-- **Code complexity metrics**: Cyclomatic complexity, cognitive complexity, and maintainability index
-- **Test coverage analysis**: Unit test coverage, integration test gaps, and quality assessment
-- **Technical debt measurement**: Code smells, refactoring opportunities, and legacy code assessment
-- **Performance profiling**: Memory usage patterns, execution time analysis, and optimization opportunities
-- **Architectural compliance**: Design pattern usage, SOLID principles, and modularity assessment
+<input_handling>
+Required inputs:
+- Programming languages and project types (monorepo, microservices, etc.)
+- Current code review process and primary pain points
+- Quality and security requirements (compliance frameworks, coverage targets)
 
-### Team Collaboration Features
+Infer if not provided:
+- Team size (default: 10-50 developers)
+- CI/CD platform (default: GitHub Actions)
+- Compliance requirements (default: general security best practices, OWASP Top 10)
+</input_handling>
 
-- **Review workflow automation**: Automated reviewer assignment and escalation protocols
-- **Knowledge sharing**: Code explanation generation and learning resource recommendations
-- **Progress tracking**: Review completion metrics, team performance analytics, and improvement trends
-- **Communication integration**: Slack, Teams, and email notification systems
+<task>
+Design a comprehensive automated code review system with enterprise-grade analysis capabilities.
 
-## Advanced Features (New)
+1. Define multi-layer analysis architecture covering syntax/formatting, semantic analysis, security scanning, performance patterns, and architectural compliance
+2. Create language-specific rule configurations with severity mappings (blocking, warning, advisory) and progressive enforcement
+3. Design security scanning integration including SAST tools, dependency vulnerability analysis, and secrets detection
+4. Build quality metrics framework with complexity analysis, coverage requirements, and duplication detection
+5. Implement CI/CD integration with quality gates, blocking thresholds, and bypass governance
+6. Create developer experience workflows including review assignment, inline feedback, and fix suggestions
+7. Define metrics dashboards and reporting for continuous improvement and team performance visibility
+</task>
 
-### AI-Powered Enhancement
+<output_specification>
+Format: Architecture specification with implementation guidance
+Length: 1500-2500 words
+Structure:
+- Executive summary with objectives
+- Multi-layer analysis architecture
+- Language-specific ruleset configuration
+- Security scanning integration (SAST, dependencies, secrets)
+- CI/CD quality gates with threshold configuration
+- Developer experience and workflow design
+- Metrics and continuous improvement framework
+</output_specification>
 
-- **Intelligent code suggestions**: Context-aware improvement recommendations
-- **Automated fix generation**: Security patch suggestions and code optimization proposals
-- **Natural language explanations**: Plain English descriptions of complex code issues
-- **Learning system**: Adaptive rules based on team preferences and historical decisions
+<quality_criteria>
+Excellent outputs will:
+- Achieve high accuracy with minimal false positives (target greater than 95% precision)
+- Handle review requests within performance targets (30 seconds for typical changes)
+- Provide actionable recommendations with fix suggestions and documentation links
+- Support extensibility for custom rules and project-specific requirements
+- Include audit trail capabilities for compliance documentation
 
-### Enterprise Integration
+Avoid:
+- Over-blocking development with excessive false positives creating friction
+- Ignoring developer experience and adoption considerations
+- Missing security scanning categories (OWASP Top 10, dependency vulnerabilities)
+- Creating unmaintainable rule configurations without versioning strategy
+</quality_criteria>
 
-- **LDAP/SSO integration**: Enterprise authentication and user management
-- **Compliance reporting**: SOC 2, ISO 27001, and industry-specific compliance validation
-- **Audit trail management**: Complete review history and decision tracking
-- **Custom dashboard creation**: Executive and team-level reporting interfaces
+<constraints>
+- Balance security rigor with development velocity
+- Consider infrastructure costs for scanning at scale
+- Account for language and framework ecosystem variations
+- Plan for rule evolution and technical debt in quality rules themselves
+</constraints>
+```
 
-### Development Workflow Optimization
+---
 
-- **Pre-commit hooks**: Automated quality checks before code submission
-- **IDE integration**: Real-time feedback and inline suggestions
-- **Continuous monitoring**: Production code quality tracking and alerting
-- **Training module**: Developer education and best practices guidance
+## Example Usage
 
-### Advanced Analytics
+### Input
+We are building a code review system for a Node.js/TypeScript monorepo with React frontend and Express backend. Team of 25 developers using GitHub Actions. Main concerns: security vulnerabilities in dependencies, code complexity getting out of control, inconsistent patterns across teams, and slow manual reviews taking 2-3 days. Need SOC 2 compliance with audit trails.
 
-- **Predictive analysis**: Bug probability assessment and maintenance cost prediction
-- **Team performance insights**: Individual and team productivity metrics
-- **Code evolution tracking**: Codebase health trends and improvement recommendations
-- **Benchmark comparisons**: Industry standard comparisons and competitive analysis
+### Output
 
-## Implementation Strategy
+**Executive Summary**
 
-### MCP Tool Optimization
+This automated code review system reduces review cycle time from 2-3 days to under 4 hours while improving security posture and code quality consistency. The multi-layer architecture provides comprehensive coverage from formatting through architectural compliance with SOC 2 audit trail requirements.
 
-- **Use `create_or_update_file`** for individual configuration files and rule definitions
-- **Leverage `push_files`** for bulk creation of analysis scripts and documentation
-- **Handle integration setup** systematically with proper API configurations
-- **Systematic deployment**: Core engine → Rules → Integrations → Dashboard → Training
+**Multi-Layer Analysis Architecture**
 
-### Development Process
+*Layer 1: Syntax and Formatting (Blocking)*
+- ESLint with TypeScript parser for style enforcement (airbnb-typescript base)
+- Prettier integration with format-on-save and CI verification
+- Import sorting with eslint-plugin-import and auto-fix capability
+- Target: Zero formatting issues in merged code
 
-1. **Requirements analysis** for specific language and project type characteristics
-2. **Rule engine development** with customizable analysis patterns
-3. **Integration framework** setup for CI/CD and development tools
-4. **Dashboard and reporting** system implementation
-5. **Testing and validation** with sample codebases
-6. **Documentation and training** material creation
+*Layer 2: Semantic Analysis (Blocking/Warning)*
+- TypeScript strict mode enabling noImplicitAny, strictNullChecks, strictFunctionTypes
+- Custom ESLint rules for project patterns (React hooks exhaustive deps, async/await patterns)
+- React-specific rules: hooks rules (react-hooks/exhaustive-deps), accessibility (jsx-a11y)
+- Express security patterns (helmet usage, input validation)
 
-### Quality Assurance Process
+*Layer 3: Security Scanning (Blocking)*
+- SAST: Semgrep with OWASP JavaScript/TypeScript rules (injection, XSS, SSRF patterns)
+- Dependency scanning: Snyk or npm audit with severity thresholds (critical/high block, medium warn)
+- Secrets detection: GitLeaks in pre-commit hooks and CI pipeline
+- Container scanning for production Docker images (Trivy)
 
-- **Rule validation**: Testing analysis rules against known code patterns
-- **Performance benchmarking**: System performance under various codebase sizes
-- **Integration testing**: CI/CD pipeline and IDE plugin functionality verification
-- **User acceptance testing**: Team workflow validation and usability assessment
-- **Security validation**: Review system security and access control testing
+*Layer 4: Quality Metrics (Warning/Advisory)*
+- Cyclomatic complexity limits: maximum 10 per function, warning at 8
+- Cognitive complexity tracking with refactoring suggestions
+- Test coverage enforcement: 80% minimum for new code, 70% overall
+- Code duplication detection: maximum 5% duplication threshold
 
-### Deployment Strategy
+*Layer 5: Architectural Compliance (Advisory)*
+- Dependency direction rules preventing circular imports
+- Layer boundary enforcement (components, hooks, services, utils)
+- API contract validation against OpenAPI specifications
 
-- **Phased rollout**: Gradual team adoption with feedback integration
-- **Training program**: Developer onboarding and system usage education
-- **Support system**: Documentation, troubleshooting guides, and help desk setup
-- **Maintenance planning**: Update procedures and rule refinement processes
+**CI/CD Quality Gates Configuration**
 
-## Deliverables
+```yaml
+# .github/workflows/code-review.yml
+quality-gates:
+  blocking:
+    security-critical-vulnerabilities: 0
+    secrets-detected: 0
+    type-errors: 0
+    eslint-errors: 0
+    test-coverage-new-code: ">= 80%"
+  warning:
+    security-high-vulnerabilities: "<= 3"
+    complexity-violations: "<= 5"
+    code-duplication: "<= 5%"
+    eslint-warnings: "<= 10"
+  advisory:
+    cognitive-complexity-high: "report-only"
+    architectural-violations: "report-only"
+```
 
-### Core Analysis Engine
+**Developer Experience Workflow**
 
-- `review-engine/` - Main analysis engine with language-specific processors
-- `rules/` - Configurable rule definitions and severity mappings
-- `plugins/` - Language-specific analysis plugins and extensions
-- `config/` - System configuration templates and environment settings
+- Inline PR comments with specific line references and fix suggestions
+- Auto-fix capability for formatting and import issues (bot commits)
+- Review assignment based on code ownership and availability
+- Escalation path for quality gate overrides requiring tech lead approval
+- Weekly quality digest emails with team trends and improvement areas
 
-### Security & Quality Modules
+**Audit Trail Implementation**
 
-- `security-scanner/` - SAST implementation and vulnerability detection
-- `quality-metrics/` - Code quality analysis and measurement tools
-- `dependency-analyzer/` - Third-party library security and license scanning
-- `performance-profiler/` - Performance analysis and optimization detection
+All review decisions, quality gate results, rule overrides, and security findings logged to centralized system with 90-day retention for SOC 2 compliance. Override requests require justification and manager approval with full traceability.
 
-### Integration Components
+**Metrics Dashboard**
 
-- `ci-cd-integration/` - Jenkins, GitHub Actions, GitLab CI integration scripts
-- `ide-plugins/` - VS Code, IntelliJ, and other IDE extension implementations
-- `api/` - REST API for external tool integration and data access
-- `webhooks/` - Event-driven integration for real-time notifications
+- Review cycle time: Target under 4 hours for automated portion
+- False positive rate: Track and target less than 5%
+- Security findings trend: Weekly vulnerability discovery and resolution
+- Coverage progression: Team and repository level tracking
+- Developer satisfaction: Quarterly survey on tooling friction
 
-### User Interface & Reporting
+---
 
-- `dashboard/` - Web-based review dashboard and analytics interface
-- `reports/` - Automated report generation and customizable templates
-- `notifications/` - Email, Slack, and Teams notification systems
-- `mobile/` - Mobile application for review management and approval
+## Related Prompts
 
-### Documentation & Training
-
-- `docs/` - Comprehensive setup, configuration, and usage documentation
-- `training/` - Developer training materials and best practices guides
-- `examples/` - Sample configurations and integration examples
-- `troubleshooting/` - Common issues and resolution procedures
-
-### Testing & Validation
-
-- `tests/` - Comprehensive test suite for all system components
-- `benchmarks/` - Performance testing and validation scripts
-- `sample-projects/` - Test codebases for validation and demonstration
-- `compliance-tests/` - Security and compliance validation tools
-
-## Success Criteria
-
-✅ **Comprehensive**: Covers all aspects of code quality, security, and performance analysis  
-✅ **Automated**: Seamless integration with development workflows and CI/CD pipelines  
-✅ **Actionable**: Provides specific, implementable recommendations for code improvement  
-✅ **Scalable**: Handles codebases from small projects to enterprise-scale applications  
-✅ **Secure**: Implements robust security scanning and vulnerability detection  
-✅ **Collaborative**: Enables effective team review workflows and knowledge sharing  
-✅ **Measurable**: Provides quantifiable metrics for code quality and team performance  
-✅ **Compliant**: Meets industry standards and regulatory compliance requirements  
-✅ **Educational**: Helps developers learn and improve their coding practices  
-✅ **Maintainable**: Easy to update, configure, and extend for evolving requirements
-
-## Quality Standards
-
-- **Accuracy**: Review analysis must achieve >95% accuracy with minimal false positives
-- **Performance**: System must handle review requests within 30 seconds for typical code changes
-- **Reliability**: 99.9% uptime with comprehensive error handling and recovery procedures
-- **Security**: All code analysis performed in secure, isolated environments with audit trails
-- **Usability**: Intuitive interface requiring minimal training for developer adoption
-- **Extensibility**: Modular architecture supporting custom rules and third-party integrations
-- **Compliance**: Full audit trail and documentation meeting enterprise compliance requirements
-- **Scalability**: Support for teams from 5 to 500+ developers with consistent performance
+- [Code Refactoring Expert](../technical-workflows/code-refactoring-expert.md) - Refactoring patterns and guidance
+- [Security Implementation Expert](../technical-workflows/security-implementation-expert.md) - Security architecture
+- [CI/CD Pipeline Optimizer](../technical/devops/cicd-pipeline-optimizer.md) - Pipeline optimization

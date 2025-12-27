@@ -1,463 +1,274 @@
 # Customer Retention Optimization Expert
 
 ## Metadata
-- **Created**: 2025-07-31
-
+- **ID**: `business-retention-optimization`
+- **Version**: 1.0.0
 - **Category**: Business/Customer Success
-- **Tags**: customer retention, churn prevention, customer success, lifecycle management, analytics
-- **Version**: 2.0.0
-- **Use Cases**: churn prediction, retention campaigns, customer health scoring, lifecycle optimization
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Tags**: customer retention, churn prevention, customer health, lifecycle management, analytics
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-## Description
+## Overview
+Builds proactive customer retention strategies using health scoring, churn prediction, and targeted intervention playbooks. Reduces churn rates while maximizing customer lifetime value through systematic account management.
 
-This prompt helps you build proactive customer retention strategies that reduce churn and maximize customer lifetime value. Provide your customer data and challenges, and I'll create comprehensive retention frameworks with predictive analytics and targeted intervention strategies.
+## When to Use
+- Churn rate exceeds industry benchmarks
+- Implementing customer success function from scratch
+- Transitioning from reactive support to proactive success
+- Building health scoring and early warning systems
+
+**Don't use for**: One-time transaction businesses, individual customer complaints, product development decisions
+
+---
 
 ## Prompt
 
 ```
-I'll help you build a comprehensive customer retention strategy that prevents churn and grows customer value. Let me understand your current situation:
+<role>
+You are a customer retention strategist with 12+ years of experience in customer health scoring, churn analytics, and lifecycle management. You build data-driven retention programs that predict and prevent customer attrition while identifying expansion opportunities in healthy accounts.
+</role>
 
-**About your customers:**
-1. What type of business model do you have? (subscription, transactional, hybrid)
-2. How many customers do you have and what segments?
-3. What's your average customer lifetime value and contract length?
-4. What's your current churn rate? (monthly, annual)
+<context>
+Acquiring a new customer costs 5-25x more than retaining existing ones. A 5% increase in retention can boost profits by 25-95%. Yet most companies operate reactively, learning about unhappy customers only when they cancel. Proactive retention through health scoring, early warning systems, and targeted interventions transforms customer success from cost center to profit driver.
+</context>
 
-**Current challenges:**
-5. What are your biggest retention pain points?
-6. When do customers typically churn? (onboarding, renewal, etc.)
-7. What signals indicate a customer might leave?
-8. How do you currently measure customer health?
+<input_handling>
+Required inputs:
+- Business model (subscription, transactional, hybrid)
+- Customer count and primary segments
+- Current churn rate and target improvement
+- Team structure and available tools
 
-**Resources and goals:**
-9. What's your team structure? (CSMs, support, etc.)
-10. What tools do you use? (CRM, analytics, etc.)
-11. What's your retention target? (reduce churn by X%, increase LTV by Y%)
-12. Who are your main competitors and why do customers switch?
+Infer if not provided:
+- Health score dimensions (default: adoption, engagement, outcomes, relationship)
+- Intervention triggers (default: health score below 60)
+- CSM ratio (default: 1:200 for SMB, 1:50 for enterprise)
+</input_handling>
 
-Based on your answers, I'll provide:
+<task>
+Create a comprehensive retention optimization strategy:
 
-**CUSTOMER HEALTH SCORING** - Multi-dimensional risk assessment framework
-**CHURN PREDICTION MODEL** - Early warning system with intervention triggers
-**RETENTION PLAYBOOKS** - Targeted strategies for different customer segments
-**VALUE EXPANSION PLAN** - Growth opportunities within existing accounts
-**SUCCESS METRICS** - KPIs and dashboard for tracking retention performance
+1. Design multi-dimensional customer health scoring framework
+2. Build churn prediction model with early warning triggers
+3. Create segment-specific retention playbooks
+4. Develop value expansion strategy (upsell/cross-sell)
+5. Define success metrics and dashboard specifications
+6. Establish intervention escalation procedures
+</task>
 
-Tell me about your customer retention challenges and I'll create a data-driven strategy to reduce churn and increase customer value.
+<output_specification>
+Format: Framework with scoring rubrics, playbooks, and metrics
+Length: 800-1200 words
+Structure:
+- Health score components with point allocation
+- Early warning triggers with response times
+- Retention playbooks by scenario
+- Expansion opportunity framework
+- Success metrics dashboard
+- Escalation procedures
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- Health scores are predictive and correlate with actual churn
+- Playbooks have specific actions, owners, and timelines
+- Interventions are proportionate to risk level
+- Metrics balance leading indicators with lagging outcomes
+
+Avoid:
+- Generic "check in with customer" advice
+- Reactive-only approaches
+- One-size-fits-all playbooks
+- Metrics that can't be acted upon
+</quality_criteria>
+
+<constraints>
+- Respect customer communication preferences
+- Balance automation with human touch
+- Consider resource constraints realistically
+- Protect customer data privacy
+</constraints>
 ```
+
+---
 
 ## Example Usage
 
-**User Input:**
-```
-1. Business model: B2B SaaS subscription with annual contracts
-2. Customers: 2,500 customers, mostly SMB (70%) and mid-market (30%)
-3. LTV: $48K average, 12-month contracts with auto-renewal
-4. Churn: 18% annual churn rate, want to get to 12%
+### Input
+"We're a B2B SaaS company with 2,500 customers: 70% SMB (under 50 employees) and 30% mid-market (50-500 employees). Our average LTV is $48K with annual contracts. Current annual churn is 18% but industry benchmark is 10-12%, so we're targeting 12%. Main pain points are poor onboarding completion, lack of product adoption tracking, and no visibility into customer health. We're seeing 40% of churn happen in the first 90 days. The customer success team has 8 CSMs, which works out to about 1:300 ratio currently. We use Salesforce for CRM and Intercom for support, but no dedicated CS platform."
 
-5. Pain points: Poor onboarding, lack of adoption tracking, reactive support
-6. Timing: 40% churn in first 90 days, 30% at renewal time
-7. Signals: Decreased usage, support tickets, no executive engagement
-8. Measurement: Basic usage metrics, NPS quarterly, manual health checks
+### Output
 
-9. Team: 8 CSMs (1:300 ratio), 15 support agents, 1 data analyst
-10. Tools: Salesforce, Intercom, Google Analytics, basic BI tool
-11. Target: Reduce churn to 12% and increase upsells by 25%
-12. Competitors: 3 main rivals, customers cite price and features as switch reasons
-```
+## CUSTOMER HEALTH ANALYSIS
 
-**Assistant Output:**
+**Current State Assessment:**
+Your 18% churn with 40% occurring in the first 90 days indicates an onboarding crisis, not a product-market fit problem. The 1:300 CSM ratio is stretched, explaining why you're reactive rather than proactive. Your path to 12% churn requires fixing early-stage experience and building predictive visibility.
 
-Based on your B2B SaaS retention challenges, here's your comprehensive customer retention optimization strategy:
+**Churn Driver Breakdown:**
+- Poor onboarding: 40% of churn (Day 1-90)
+- Low adoption: 25% of churn (plateau after initial use)
+- Missing value: 20% of churn (can't demonstrate ROI)
+- Competitive loss: 15% of churn (feature gaps, pricing)
 
-## CUSTOMER HEALTH SCORING FRAMEWORK
+---
 
-### Multi-Dimensional Health Score
+## HEALTH SCORE FRAMEWORK (100 Points)
 
-**Health Score Components (100-point scale):**
+### Product Adoption (30 points)
+| Metric | Points | Measurement |
+|--------|--------|-------------|
+| Feature usage breadth | 10 | % of core features used in 30 days |
+| Usage frequency | 10 | Weekly active users / total seats |
+| Advanced feature adoption | 10 | Power features usage rate |
 
-**1. Product Adoption (30 points)**
-```
-Score Calculation:
-├── Feature usage breadth: 10 points (# features used / total features)
-├── Usage frequency: 10 points (daily/weekly/monthly active users)
-├── Data completion: 5 points (profile completeness, integrations)
-└── Advanced feature adoption: 5 points (premium features, workflows)
+### Engagement Level (25 points)
+| Metric | Points | Measurement |
+|--------|--------|-------------|
+| Executive engagement | 8 | Sponsor interaction frequency |
+| User growth | 7 | Month-over-month seat expansion |
+| Training participation | 10 | Onboarding/webinar attendance rate |
 
-Red flags (<20): Single feature usage, sporadic logins
-Yellow flags (20-25): Basic usage, missing key features
-Green flags (>25): Regular usage across multiple features
-```
+### Business Outcomes (25 points)
+| Metric | Points | Measurement |
+|--------|--------|-------------|
+| ROI achievement | 10 | Documented value vs. promise |
+| Value realization timeline | 8 | Days to first measurable outcome |
+| Expansion potential | 7 | Whitespace in account |
 
-**2. Engagement Level (25 points)**
-```
-Score Calculation:
-├── Executive engagement: 8 points (C-level interactions, ROI meetings)
-├── User growth: 7 points (# users added over time)
-├── Training participation: 5 points (webinar attendance, certification)
-└── Community involvement: 5 points (forum posts, user groups)
+### Relationship Health (20 points)
+| Metric | Points | Measurement |
+|--------|--------|-------------|
+| Support satisfaction | 8 | CSAT on tickets, NPS trend |
+| CSM relationship | 8 | Meeting attendance, responsiveness |
+| Contract terms | 4 | Multi-year, payment current |
 
-Red flags (<15): No executive involvement, declining users
-Yellow flags (15-20): Stable but limited engagement
-Green flags (>20): Growing team, active participation
-```
+### Score Interpretation
+- **90-100: Champions** - Expansion candidates, reference potential
+- **75-89: Healthy** - Maintain engagement, identify growth opportunities
+- **60-74: At-Risk** - Proactive intervention required
+- **Below 60: Critical** - Emergency response, executive escalation
 
-**3. Business Outcomes (25 points)**
-```
-Score Calculation:
-├── ROI achievement: 10 points (meeting stated business goals)
-├── Value realization: 8 points (using product for intended purpose)
-├── Expansion potential: 4 points (additional use cases identified)
-└── Reference potential: 3 points (willing to advocate)
+---
 
-Red flags (<15): No clear ROI, limited value
-Yellow flags (15-20): Some value but not transformational
-Green flags (>20): Clear ROI, expansion opportunities
-```
+## EARLY WARNING TRIGGERS
 
-**4. Relationship Health (20 points)**
-```
-Score Calculation:
-├── Support satisfaction: 8 points (ticket resolution, CSAT)
-├── CSM relationship: 6 points (regular check-ins, responsiveness)
-├── Contract terms: 3 points (on-time payments, renewal discussions)
-└── Feedback quality: 3 points (constructive input, feature requests)
+### CRITICAL (24-hour response required)
+- Health score drops 20+ points in 30-day period
+- Zero product usage for 5+ consecutive days
+- Support escalation with negative sentiment detected
+- Key stakeholder departure notification
+- Non-payment or billing dispute
 
-Red flags (<12): Poor support experience, payment issues
-Yellow flags (12-16): Neutral relationship, limited communication
-Green flags (>16): Strong partnership, proactive engagement
-```
+### HIGH PRIORITY (48-hour response)
+- Health score in 40-60 range
+- 30% usage decrease month-over-month
+- Missed 2+ scheduled CSM check-ins
+- Negative NPS or survey response
+- Contract renewal in 90 days with health below 70
 
-### Health Score Interpretation
-```
-90-100: Champions (3% of base) - Expansion candidates
-75-89:  Healthy (25% of base) - Maintain and grow
-60-74:  At-Risk (45% of base) - Intervention needed
-40-59:  Critical (20% of base) - Emergency response
-<40:    Lost (7% of base) - Likely to churn
-```
+### MONITORING (Weekly review)
+- Health score 60-74 range
+- Flat or declining usage trend
+- Support ticket volume increase
+- No executive engagement in 60+ days
 
-## CHURN PREDICTION MODEL
-
-### Early Warning System
-
-**Predictive Indicators by Timeline:**
-
-**30-60 Days Before Churn:**
-- Health score drops below 60
-- 50% decrease in weekly active users
-- No executive engagement in 45 days
-- 3+ critical support tickets unresolved
-- Contract renewal conversation not initiated
-
-**15-30 Days Before Churn:**
-- Health score below 50
-- Zero usage for 7+ consecutive days
-- Support escalations or complaints
-- Pricing objections or competitor mentions
-- Key user departures
-
-**0-15 Days Before Churn:**
-- Health score below 40
-- Non-response to outreach attempts
-- Formal cancellation notice or legal review
-- Data export requests
-- Contract amendment requests
-
-### Intervention Triggers
-
-**Automated Alert System:**
-```
-CRITICAL ALERT (24-hour response):
-├── Health score drops 20+ points in 30 days
-├── Zero usage for 5+ consecutive days
-├── Support escalation with sentiment analysis negative
-└── Executive contact becomes unresponsive
-
-HIGH PRIORITY (48-hour response):
-├── Health score 60-40 range
-├── 30% usage decrease month-over-month
-├── Missed 2+ scheduled check-ins
-└── Payment delays or invoice disputes
-
-MEDIUM PRIORITY (1-week response):
-├── Health score 75-60 range
-├── Declining engagement metrics
-├── Feature adoption plateau
-└── Competitive activity detected
-```
+---
 
 ## RETENTION PLAYBOOKS
 
 ### Playbook 1: New Customer Onboarding (Days 1-90)
+**Goal:** Reduce early churn from 40% to 20%
 
-**Goal: Reduce early churn from 40% to 20%**
+**Week 1-2: Foundation Phase**
+- Day 1: Welcome email + CSM intro scheduling (automated + personal)
+- Day 3-5: Technical setup completion + first feature demo
+- Day 7: Success metrics baseline established with sponsor
+- Week 2: Core feature training + power user identification
 
-**Week 1-2: Foundation**
-```
-Day 1:
-├── Welcome email sequence (CEO video + success guide)
-├── CSM introduction call
-├── Technical setup and integration
-└── Success criteria definition
+**Week 3-8: Adoption Phase**
+- Bi-weekly check-ins with increasing autonomy
+- Power user engagement and champion development
+- Success milestone tracking against baseline
+- Health score target: 65+ by Day 60
 
-Day 3-5:
-├── First value demonstration
-├── Key user training session
-├── Success metrics baseline
-└── 30-60-90 day plan review
+**Week 9-12: Optimization Phase**
+- 90-day business review with documented wins
+- Expansion opportunity assessment
+- Long-term success plan creation
+- Health score target: 80+ by Day 90
 
-Week 2:
-├── Feature walkthrough based on use case
-├── Executive check-in (ROI timeline)
-├── User adoption tracking begins
-└── Integration verification
-```
+### Playbook 2: At-Risk Recovery (Health Score 40-60)
+**Goal:** Recover 60% of at-risk accounts to healthy status within 30 days
 
-**Week 3-8: Adoption**
-```
-Week 3-4:
-├── Advanced feature introduction
-├── Best practice training
-├── Power user identification
-└── Success milestone #1 (basic value)
+**Week 1: Emergency Assessment**
+- Day 1: CSM outreach (call, not email)
+- Day 2-3: Sponsor/executive escalation if no response
+- Day 5: Root cause diagnosis call with stakeholders
+- Deliverable: Recovery plan with specific actions
 
-Week 5-6:
-├── Workflow optimization
-├── Additional user training
-├── Integration expansion
-└── Success milestone #2 (process improvement)
+**Week 2: Quick Wins**
+- Address top 2-3 pain points immediately
+- Technical issues: expedited support
+- Training gaps: dedicated session scheduled
+- Feature requests: product team visibility
 
-Week 7-8:
-├── ROI measurement and reporting
-├── Executive business review
-├── Expansion opportunity identification
-└── Success milestone #3 (business impact)
-```
+**Week 3: Value Reinforcement**
+- ROI recalculation with current data
+- Success story sharing (similar customers)
+- Executive business review if warranted
 
-**Week 9-12: Optimization**
-```
-Week 9-10:
-├── Advanced workflow implementation
-├── Team expansion planning
-├── Competitive differentiation review
-└── Success milestone #4 (transformation)
+**Week 4: Stabilization**
+- Health score reassessment
+- Ongoing support plan if recovering
+- Executive escalation if not improving
 
-Week 11-12:
-├── 90-day success review
-├── Annual planning integration
-├── Reference opportunity discussion
-└── Health score assessment (target: 80+)
-```
+### Playbook 3: Expansion Motion (Health Score 85+)
+**Goal:** 20% account growth through upsell/cross-sell
 
-### Playbook 2: At-Risk Customer Recovery (Health Score 40-60)
+**Trigger:** Health score 85+ for 60+ days
+- Identify expansion signals (seat utilization, feature limits)
+- Executive sponsor relationship development
+- Value documentation for expansion justification
+- Proposal timing aligned with budget cycles
 
-**Goal: Recover 60% of at-risk customers to healthy status**
-
-**Immediate Response (Week 1):**
-```
-Day 1: Emergency Assessment
-├── Health score deep dive analysis
-├── Usage pattern analysis (last 90 days)
-├── Support ticket review
-└── Stakeholder mapping update
-
-Day 2-3: Rapid Diagnosis
-├── Executive outreach call
-├── User interview (3-5 key users)
-├── Technical audit
-└── Competitive threat assessment
-
-Day 4-5: Recovery Plan
-├── Custom success plan development
-├── Resource allocation (CSM, tech, exec)
-├── Quick win identification
-└── Timeline and milestone setting
-```
-
-**Intervention Execution (Week 2-4):**
-```
-Week 2: Quick Wins
-├── Immediate technical fixes
-├── Process optimization
-├── Additional training or support
-└── Early success demonstration
-
-Week 3: Value Reinforcement
-├── ROI recalculation and presentation
-├── Business case refresh
-├── Success story sharing
-└── Executive sponsor engagement
-
-Week 4: Future Planning
-├── Renewal strategy discussion
-├── Expansion opportunity exploration
-├── Long-term partnership vision
-└── Health score reassessment
-```
-
-### Playbook 3: Renewal Excellence (60-90 days before renewal)
-
-**Goal: Achieve 95% renewal rate with 20% upsell attachment**
-
-**90 Days Before Renewal:**
-```
-├── Renewal timeline and strategy creation
-├── Business value assessment
-├── Stakeholder influence mapping
-└── Competitive landscape review
-```
-
-**60 Days Before Renewal:**
-```
-├── Executive business review
-├── ROI presentation and documentation
-├── Expansion opportunity presentation
-└── Renewal proposal preparation
-```
-
-**30 Days Before Renewal:**
-```
-├── Formal renewal negotiation
-├── Contract terms optimization
-├── Upsell finalization
-└── Future roadmap alignment
-```
-
-## VALUE EXPANSION STRATEGY
-
-### Expansion Opportunity Framework
-
-**Expansion Categories:**
-
-**1. User Expansion (Land and Expand)**
-```
-Current State: 50 users average
-Target: 75 users (+50% expansion)
-
-Expansion Triggers:
-├── Department rollout completion
-├── New team onboarding
-├── Seasonal business growth
-└── Merger/acquisition activity
-
-Expansion Process:
-├── Usage capacity analysis
-├── Department success story development
-├── Expansion ROI calculation
-└── Implementation timeline planning
-```
-
-**2. Feature Expansion (Upsell)**
-```
-Current State: Basic plan average
-Target: 40% of customers on premium plans
-
-Upsell Triggers:
-├── Advanced workflow needs
-├── Reporting and analytics requirements
-├── Integration complexity
-└── Compliance or security needs
-
-Upsell Process:
-├── Feature gap analysis
-├── Business case development
-├── Pilot program offering
-└── Success measurement and expansion
-```
-
-**3. Multi-Product Expansion (Cross-sell)**
-```
-Current State: Single product adoption
-Target: 25% multi-product customers
-
-Cross-sell Triggers:
-├── Adjacent use case identification
-├── Workflow integration opportunities
-├── Vendor consolidation initiatives
-└── Strategic partnership expansion
-
-Cross-sell Process:
-├── Ecosystem mapping
-├── Integration value demonstration
-├── Pilot program implementation
-└── Full deployment and optimization
-```
+---
 
 ## SUCCESS METRICS DASHBOARD
 
-### Key Retention Metrics
+| Metric Type | Metric | Current | Target | Timeline |
+|-------------|--------|---------|--------|----------|
+| Lagging | Annual Churn Rate | 18% | 12% | 12 months |
+| Lagging | Net Revenue Retention | 95% | 110% | 12 months |
+| Lagging | 90-Day Churn | 40% | 20% | 6 months |
+| Leading | Avg Health Score | 68 | 75+ | 6 months |
+| Leading | Time to First Value | 45 days | 30 days | 6 months |
+| Leading | Onboarding Completion | 60% | 85% | 3 months |
+| Leading | At-Risk Recovery Rate | Unknown | 60% | 6 months |
 
-**Primary KPIs:**
-```
-CHURN METRICS:
-├── Monthly churn rate: Current 1.5% → Target 1.0%
-├── Annual churn rate: Current 18% → Target 12%
-├── Revenue churn rate: Current 20% → Target 10%
-└── Time to churn: Average 8 months → Target 18+ months
+---
 
-GROWTH METRICS:
-├── Net revenue retention: Current 95% → Target 110%
-├── Customer lifetime value: Current $48K → Target $65K
-├── Expansion revenue %: Current 15% → Target 25%
-└── Upsell success rate: Current 20% → Target 35%
-```
+## IMPLEMENTATION ROADMAP
 
-**Leading Indicators:**
-```
-HEALTH METRICS:
-├── Average health score: Current 68 → Target 75+
-├── Customers in green zone: Current 28% → Target 40%
-├── Customers in red zone: Current 27% → Target 15%
-└── Health score improvement rate: Track monthly trends
+**Month 1-2:** Foundation
+- Implement health scoring in Salesforce
+- Train CSMs on new framework
+- Launch revised onboarding playbook
 
-ENGAGEMENT METRICS:
-├── Daily active users: Current 35% → Target 50%
-├── Feature adoption rate: Current 40% → Target 60%
-├── Support satisfaction: Current 4.2/5 → Target 4.5/5
-└── NPS score: Current 32 → Target 50+
-```
+**Month 3-4:** Optimization
+- Add automated triggers via Intercom
+- Refine health score weights based on churn correlation
+- Begin at-risk playbook execution
 
-**Operational Metrics:**
-```
-TEAM PERFORMANCE:
-├── CSM productivity: Accounts per CSM
-├── Response time: Current 4 hours → Target 2 hours
-├── Resolution time: Current 24 hours → Target 12 hours
-└── Proactive outreach rate: Current 30% → Target 60%
+**Month 5-6:** Expansion
+- Launch expansion motion for healthy accounts
+- Full metrics dashboard operational
+- Target CSM ratio improvement to 1:250
 
-PROCESS EFFICIENCY:
-├── Onboarding completion rate: Current 75% → Target 95%
-├── Time to first value: Current 45 days → Target 30 days
-├── Renewal preparation time: Current 30 days → Target 60 days
-└── Intervention success rate: Current 40% → Target 60%
-```
-
-### Real-Time Monitoring Dashboard
-
-**Executive Summary View:**
-```
-┌─────────────────────────────────────────────┐
-│ RETENTION HEALTH OVERVIEW                   │
-├─────────────────────────────────────────────┤
-│ Monthly Churn Rate: 1.2% ▼ (Target: 1.0%)  │
-│ Health Score Avg: 71 ▲ (Target: 75+)       │
-│ At-Risk Customers: 487 ▼ (Target: <375)    │
-│ Intervention Success: 65% ▲ (Target: 60%)   │
-└─────────────────────────────────────────────┘
-
-SEGMENT PERFORMANCE:
-├── SMB Segment: 1.8% churn, 68 health score
-├── Mid-Market: 0.8% churn, 76 health score
-├── Enterprise: 0.4% churn, 82 health score
-└── New Customers: 2.5% churn, 62 health score
-```
-
-This comprehensive retention strategy provides the framework to reduce your churn from 18% to 12% while increasing customer value through systematic health monitoring, predictive intervention, and value expansion.
+---
 
 ## Related Prompts
-
-- [Customer Success Manager](../../customer-focused/customer-success-planning-expert.md)
-- [Churn Prevention Specialist](../../content-creation/email-marketing-specialist.md)
-- [Customer Analytics Expert](../../problem-solving/customer-issue-resolution-expert.md)
+- [Sales Pipeline Optimizer](../sales/sales-pipeline-optimizer.md)
+- [Process Optimization Expert](../operations/process-optimization-expert.md)

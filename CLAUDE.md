@@ -85,26 +85,61 @@ Each prompt follows a conversational, user-friendly format:
 
 ## Working with Prompts
 
+### Required Skill: prompt-refactor
+
+**IMPORTANT**: When creating, editing, refactoring, or improving any prompts in this repository, you MUST use the `prompt-refactor` skill located at `.claude/skills/prompt-refactor/`.
+
+The skill provides:
+- Standardized template structure for all prompts
+- 11 quality gates for validation
+- Batch processing support for multiple prompts
+- Consistent metadata and formatting
+
+**How to use:**
+```bash
+# Single prompt refactoring
+claude "Using prompt-refactor skill, refactor this prompt: [paste or path]"
+
+# Batch processing
+./.claude/skills/prompt-refactor/scripts/orchestrate-refactor.sh ./prompts ./output 4
+
+# Validate a refactored prompt
+./.claude/skills/prompt-refactor/scripts/validate-prompt.sh ./prompts/my-prompt.md
+```
+
+**Skill triggers** (auto-activated on these phrases):
+- "refactor prompt"
+- "improve prompt"
+- "standardize prompts"
+- "prompt template"
+- "apply prompt template"
+
+See `.claude/skills/prompt-refactor/SKILL.md` for full template specification and quality gates.
+
 ### Adding New Prompts
 1. Create prompt in appropriate `/prompts/[category]/` directory
-2. Follow the conversational format with context questions
-3. Include metadata (category, tags, use cases)
-4. Run conversion scripts to generate Jekyll version
-5. Update PROMPT-INDEX.json
+2. **Use the prompt-refactor skill** to ensure proper structure
+3. Follow the standardized template with metadata, role, task, output specification
+4. Validate with the validation script
+5. Run conversion scripts to generate Jekyll version
+6. Update PROMPT-INDEX.json
 
-### Prompt Quality Standards
-- Clear, conversational tone
-- Context-gathering questions to understand the user's needs
-- Structured response format with defined deliverables
-- Practical, actionable guidance
-- Real-world examples demonstrating usage
-- Professional expertise without unnecessary complexity
+### Prompt Quality Standards (enforced by prompt-refactor skill)
+- Complete metadata (ID, version, category, tags, complexity, interaction, models)
+- Concise overview (≤3 sentences)
+- Specific role definition with concrete expertise
+- Categorized inputs (required vs optional)
+- Structured task (3-7 clear steps)
+- Specified outputs (format + length + requirements)
+- Measurable quality criteria
+- Realistic examples (input: 20-200 words, output: 100-600 words)
+- Copy-paste ready prompt section
 
 ### Conversion Process
-Old format prompts are converted to new conversational format using:
+Old format prompts are converted to new standardized format using:
 - Extract key metadata (title, category, tags)
-- Transform to question-based context gathering
-- Simplify into user-friendly language
+- Transform to structured XML tags (role, input_handling, task, output_specification, etc.)
+- Apply quality gates validation
 - Add practical examples and clear deliverables
 
 ## Website Deployment

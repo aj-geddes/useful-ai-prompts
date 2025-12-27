@@ -1,390 +1,259 @@
 # Strategic Roadmap Generator
 
 ## Metadata
-- **Created**: 2025-07-20
-
+- **ID**: `business-strategic-roadmap-generator`
+- **Version**: 1.0.0
 - **Category**: Business/Product-Management
-- **Tags**: product roadmap, strategic planning, product strategy, roadmap development
-- **Version**: 2.0.0
-- **Use Cases**: product planning, roadmap creation, feature prioritization, strategic alignment
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Tags**: product roadmap, strategic planning, feature prioritization, stakeholder communication
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-## Description
+## Overview
 
-This prompt helps you create strategic product roadmaps that balance customer needs, business objectives, and technical constraints while maintaining clear communication with stakeholders.
+Creates strategic product roadmaps that balance customer needs, business objectives, and technical constraints. Develops theme-based planning with prioritization frameworks and stakeholder-specific views for effective communication.
+
+## When to Use
+
+**Scenarios:**
+- Annual or quarterly product planning cycles
+- Communicating product strategy to diverse stakeholders
+- Prioritizing features across competing demands and resources
+- Aligning engineering capacity with business goals
+
+**Anti-patterns:**
+- Sprint-level planning or backlog grooming
+- Bug prioritization or technical debt tracking
+- Individual feature specifications or PRDs
+- Day-to-day execution tracking
+
+---
 
 ## Prompt
 
 ```
-I'll help you create a strategic product roadmap that aligns with your business goals. Let me understand your context:
+<role>
+You are a product strategy expert with 15+ years experience as VP/Director of Product at B2B SaaS, consumer tech, and platform companies. You have deep expertise in roadmap development, feature prioritization frameworks, stakeholder management, and outcome-based planning. You create roadmaps that align product development with business goals while managing stakeholder expectations.
+</role>
 
-**Product overview:**
-1. What product are you roadmapping?
-2. What stage is it in? (early, growth, mature)
-3. Who are your primary users/customers?
-4. What's your competitive position?
+<context>
+The user needs to create or refine a strategic product roadmap that communicates priorities, manages expectations, and guides execution. They require a framework that balances multiple stakeholder needs with practical resource constraints.
+</context>
 
-**Strategic context:**
-5. What are your key business objectives?
-6. What metrics define success?
-7. What's your time horizon? (quarterly, annual, multi-year)
-8. Any major constraints? (resources, technology, market)
+<input_handling>
+Required inputs:
+- Product description and current stage (early, growth, mature)
+- Key business objectives and success metrics
+- Time horizon (quarterly, annual, multi-year)
+- Major constraints (team size, technical debt, market timing)
 
-**Current situation:**
-9. What are the biggest user pain points?
-10. What opportunities are you seeing?
-11. What technical debt or limitations exist?
-12. How do you currently prioritize features?
+Optional inputs:
+- Customer feedback themes and feature requests
+- Competitive landscape and gaps
+- Technical dependencies or platform changes
+- Previous roadmap commitments
 
-Based on your answers, I'll provide:
+Default assumptions if not provided:
+- Prioritization framework: RICE scoring (Reach, Impact, Confidence, Effort)
+- Theme structure: Quarterly strategic themes
+- Stakeholder views: Executive (outcomes), Customer (value), Engineering (scope)
+</input_handling>
 
-**STRATEGIC THEMES** - High-level focus areas aligned with goals
-**ROADMAP STRUCTURE** - Organized timeline with key deliverables
-**PRIORITIZATION FRAMEWORK** - How to decide what to build when
-**STAKEHOLDER VIEW** - Different roadmap versions for different audiences
-**SUCCESS METRICS** - How to measure roadmap effectiveness
+<task>
+Create a comprehensive product roadmap following these steps:
 
-Share your product context and let's build a compelling roadmap!
+1. Define strategic themes that connect directly to business objectives with clear rationale
+2. Structure roadmap with quarterly deliverables, outcomes, and dependencies
+3. Build prioritization framework with scoring criteria and transparent trade-offs
+4. Create stakeholder-specific views with appropriate detail levels
+5. Define success metrics connecting delivery to business outcomes
+6. Establish review cadence and adjustment process for roadmap governance
+</task>
+
+<output_specification>
+Format: Theme-based roadmap with prioritization rationale and stakeholder views
+Length: 800-1200 words
+Structure:
+- Strategic Themes (quarterly themes with rationale)
+- Roadmap Structure (deliverables by quarter with outcomes)
+- Prioritization Framework (scoring methodology, example scores)
+- Stakeholder Views (executive, customer, engineering perspectives)
+- Success Metrics (delivery metrics + outcome metrics by quarter)
+- Governance (review cadence, change management)
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- Themes connect clearly to stated business objectives with explicit logic
+- Prioritization is objective, defensible, and uses consistent criteria
+- Stakeholder views provide appropriate detail for each audience
+- Metrics track both delivery (outputs) and outcomes (impact)
+- Governance enables adaptation without constant replanning
+
+Outputs must avoid:
+- Feature lists without strategic context or rationale
+- One-size-fits-all communication for all stakeholders
+- Metrics focused only on shipping without outcome measurement
+- Rigid plans that can't adapt to new information
+</quality_criteria>
+
+<constraints>
+- Ensure roadmap is realistic given stated team size and constraints
+- Account for technical dependencies and platform work
+- Include buffer for unplanned work (typically 20%)
+- Acknowledge uncertainty appropriately (confidence levels)
+</constraints>
 ```
+
+---
 
 ## Example Usage
 
-**User Input:**
-```
-1. B2B analytics platform for e-commerce companies
-2. Growth stage - 2 years old, 200 customers, $5M ARR
-3. Primary users: E-commerce analysts, marketing managers at mid-market retailers
-4. #3 in market, competing against 2 larger players and several startups
+### Input
+"B2B analytics platform for e-commerce, growth stage (200 customers, $5M ARR). Goals: Double ARR to $10M, expand to enterprise segment, reduce churn from 15% to 10%. Need 12-month roadmap with quarterly releases. Constraints: 8 developers, significant legacy codebase needing modernization, GDPR compliance requirement by Q2. Main customer pain points: slow report generation, limited customization, poor mobile experience."
 
-5. Double ARR to $10M, expand to enterprise, reduce churn from 15% to 10%
-6. Success: ARR growth, NPS >50, enterprise logos, feature adoption rates
-7. Planning 12-month roadmap with quarterly releases
-8. Limited engineering (8 devs), legacy codebase areas, GDPR compliance needed
-
-9. Pain points: Slow report generation, limited customization, poor mobile experience
-10. Opportunities: AI-powered insights, marketplace integrations, real-time analytics
-11. Tech debt: Monolithic architecture, outdated UI framework, scaling issues >1M records
-12. Currently using customer requests + revenue impact, but it's ad hoc
-```
-
-**Assistant Output:**
-
-Here's your strategic product roadmap for the next 12 months:
+### Output
 
 ## STRATEGIC THEMES
 
-### Theme Architecture
+**North Star:** "Become the Intelligence Layer for E-commerce Growth"
 
-```
-North Star: "Become the Intelligence Layer for E-commerce Growth"
+| Quarter | Theme | Rationale |
+|---------|-------|-----------|
+| Q1 | Foundation - "Performance & Reliability" | Can't grow with performance issues; addresses #1 churn driver |
+| Q2 | Expansion - "Integrate Everywhere" | Marketplace integrations create stickiness and differentiation |
+| Q3 | Intelligence - "AI-Powered Insights" | Premium pricing opportunity and enterprise appeal |
+| Q4 | Enterprise - "Scale & Sophistication" | Larger deals accelerate path to $10M ARR |
 
-Q1: Foundation - "Performance & Reliability"
-Q2: Expansion - "Integrate Everywhere"  
-Q3: Intelligence - "AI-Powered Insights"
-Q4: Enterprise - "Scale & Sophistication"
-```
-
-### Theme Rationale
-
-**Q1 - Foundation First**:
-- Can't grow with performance issues
-- Reduces churn (addresses #1 complaint)
-- Enables future features
-
-**Q2 - Ecosystem Play**:
-- Marketplace integrations = stickiness
-- Competitive differentiator
-- Enables richer analytics
-
-**Q3 - AI Advantage**:
-- Next-gen capabilities
-- Premium pricing opportunity
-- Enterprise appeal
-
-**Q4 - Enterprise Ready**:
-- Larger deals = faster ARR growth
-- Security & compliance
-- Advanced features
+### Theme Dependencies
+- Q1 foundation enables Q2-Q4 feature velocity (tech debt reduction)
+- Q2 integrations provide data for Q3 AI features
+- Q3 AI capabilities enable Q4 enterprise positioning
 
 ## ROADMAP STRUCTURE
 
-### Q1: Performance & Reliability Sprint
+### Q1: Performance & Reliability (Foundation)
+**Deliverables:**
+- Report generation optimization (target: 2-5 min → 30 seconds)
+- Architecture modernization Phase 1 (service extraction)
+- Mobile experience MVP (responsive dashboards)
+- GDPR compliance infrastructure
 
-**Major Deliverables**:
+**Outcomes:** 70% faster reports, churn reduction 15% → 12%, compliance ready
+**Dependencies:** None (foundation quarter)
+**Confidence:** 85% (known technical scope)
 
-```
-1. Report Generation Optimization (Weeks 1-4)
-   - Current: 2-5 min for complex reports
-   - Target: <30 seconds for 95% of reports
-   - Approach: Caching, query optimization, CDN
+### Q2: Integration Ecosystem (Expansion)
+**Deliverables:**
+- Marketplace integrations: Shopify, Amazon, WooCommerce
+- Custom fields and filters (customer-defined metrics)
+- API v2 launch (developer-friendly, documented)
+- GA4 data connector
 
-2. Architecture Modernization Phase 1 (Weeks 5-8)
-   - Extract reporting service
-   - Implement job queue system
-   - Database sharding prep
-
-3. Mobile Experience MVP (Weeks 9-12)
-   - Responsive dashboards
-   - Key metrics on mobile
-   - Push notifications
-```
-
-**Outcomes**:
-- 70% faster report generation
-- Mobile NPS from 20 → 45
-- Churn reduction: 15% → 12%
-
-### Q2: Integration Ecosystem
-
-**Major Deliverables**:
-
-```
-1. Marketplace Integrations (Weeks 1-6)
-   - Shopify Plus (must-have)
-   - Amazon Seller Central
-   - Google Analytics 4
-   - Facebook Ads
-
-2. Custom Fields & Filters (Weeks 7-9)
-   - User-defined metrics
-   - Saved filter sets
-   - Custom dashboards
-
-3. API v2 Launch (Weeks 10-12)
-   - RESTful design
-   - Webhook support
-   - Rate limiting
-```
-
-**Outcomes**:
-- 30% increase in data sources connected
-- API adoption by 50+ customers
-- Platform stickiness ↑40%
+**Outcomes:** 30% more data sources per customer, API adoption by 50+ customers
+**Dependencies:** Q1 architecture for integration scalability
+**Confidence:** 75% (partner dependencies)
 
 ### Q3: AI-Powered Intelligence
+**Deliverables:**
+- Anomaly detection (automated alerts for unusual patterns)
+- Predictive analytics beta (revenue forecasting)
+- Natural language insights ("Your revenue is up 15% because...")
+- Smart recommendations engine
 
-**Major Deliverables**:
-
-```
-1. Anomaly Detection (Weeks 1-4)
-   - Automatic alerts
-   - Revenue anomalies
-   - Traffic pattern changes
-
-2. Predictive Analytics Beta (Weeks 5-8)
-   - Sales forecasting
-   - Inventory predictions
-   - Customer LTV modeling
-
-3. Insights Engine (Weeks 9-12)
-   - Natural language queries
-   - Auto-generated insights
-   - Competitive benchmarking
-```
-
-**Outcomes**:
-- New premium tier at 2x price
-- 25% of customers upgrade
-- Win first 5 enterprise deals
+**Outcomes:** New premium tier launch, 25% upgrade rate from standard
+**Dependencies:** Q2 data integrations provide training data
+**Confidence:** 65% (ML complexity)
 
 ### Q4: Enterprise Scale
+**Deliverables:**
+- Enterprise security: SSO/SAML, RBAC, audit logging
+- White-label options for agency partners
+- Advanced analytics: cohort analysis, multi-touch attribution
+- Dedicated infrastructure option
 
-**Major Deliverables**:
-
-```
-1. Enterprise Security Suite (Weeks 1-6)
-   - SSO/SAML support
-   - Role-based access control
-   - Audit logging
-   - GDPR compliance
-
-2. White-Label Options (Weeks 7-9)
-   - Custom branding
-   - Embedded analytics
-   - Multi-tenant architecture
-
-3. Advanced Analytics (Weeks 10-12)
-   - Cohort analysis
-   - Attribution modeling
-   - A/B test analysis
-```
-
-**Outcomes**:
-- 10+ enterprise customers
-- ARR: $8M → $10M trajectory
-- NPS: 45 → 55
+**Outcomes:** 10+ enterprise customers ($50K+ ACV)
+**Dependencies:** Q1-Q3 platform stability
+**Confidence:** 70% (enterprise sales cycle uncertainty)
 
 ## PRIORITIZATION FRAMEWORK
 
-### RICE Scoring Model
-
-```
-Reach × Impact × Confidence / Effort = Priority Score
-
-Reach: # of customers affected (1-10)
-Impact: Revenue/retention impact (1-10)
-Confidence: Success probability (0.1-1.0)
-Effort: Developer weeks (1-50)
-```
-
-### Feature Evaluation Matrix
+**RICE Scoring (Reach x Impact x Confidence / Effort):**
 
 | Feature | Reach | Impact | Confidence | Effort | Score | Quarter |
-|---------|-------|---------|------------|---------|--------|---------|
-| Report Speed | 10 | 9 | 0.9 | 8 | 10.1 | Q1 |
-| Mobile App | 7 | 7 | 0.8 | 12 | 3.3 | Q1 |
+|---------|-------|--------|------------|--------|-------|---------|
+| Report Speed Optimization | 10 | 9 | 0.9 | 8 | 10.1 | Q1 |
 | Shopify Integration | 8 | 8 | 0.9 | 6 | 9.6 | Q2 |
-| AI Insights | 6 | 10 | 0.7 | 20 | 2.1 | Q3 |
-| SSO Support | 4 | 9 | 0.9 | 4 | 8.1 | Q4 |
+| Mobile Dashboards | 7 | 7 | 0.8 | 4 | 9.8 | Q1 |
+| AI Anomaly Detection | 6 | 10 | 0.7 | 12 | 3.5 | Q3 |
+| SSO/SAML | 3 | 8 | 0.9 | 8 | 2.7 | Q4 |
 
-### Decision Criteria
+**Scoring Definitions:**
+- Reach: # of customers impacted (1-10 scale)
+- Impact: Business value per customer (1-10 scale)
+- Confidence: Certainty of impact (0.1-1.0)
+- Effort: Developer-weeks required
 
-**Must Have**:
-- Addresses top 3 customer complaints
-- Supports ARR growth goals
-- Technically feasible with current team
+## STAKEHOLDER VIEWS
 
-**Should Have**:
-- Competitive differentiation
-- Platform extensibility
-- Technical debt reduction
-
-**Nice to Have**:
-- Experimental features
-- Minor UX improvements
-- Internal tools
-
-## STAKEHOLDER VIEW
-
-### Executive Roadmap (Board/Leadership)
-
+### Executive View (Board/CEO)
 ```
-2024 Product Strategy
-
-Q1: Stabilize - Fix performance, reduce churn
-Q2: Expand - Ecosystem integrations  
-Q3: Innovate - AI capabilities
-Q4: Enterprise - Security & scale
+2024 Product Strategy: Foundation → Expansion → Intelligence → Enterprise
 
 Key Metrics:
-- Churn: 15% → 10%
-- ARR: $5M → $10M
-- Enterprise Customers: 0 → 10
-- NPS: 35 → 55
+├── Churn: 15% → 10% (Q4)
+├── ARR: $5M → $10M
+├── Enterprise Customers: 0 → 10+
+└── NPS: 35 → 55
+
+Investment: 8 FTE engineering, $400K infrastructure
 ```
 
-### Customer Roadmap (Public)
-
+### Customer View (Sales/Marketing)
 ```
 Coming Soon:
+├── Next Month: 5x faster reports, mobile dashboards
+├── Spring: Shopify integration, custom metrics
+├── Summer: AI insights, anomaly alerts
+└── Fall: Enterprise security, advanced analytics
 
-✓ Next Month:
-  • 5x faster reports
-  • Mobile dashboards
-
-✓ Spring 2024:
-  • Shopify integration
-  • Custom metrics
-  • New API
-
-✓ Summer 2024:
-  • AI-powered insights
-  • Anomaly detection
-  • Predictive analytics
-
-✓ Fall 2024:
-  • Enterprise security
-  • Advanced analytics
-  • White-label options
+Value Message: "More data, faster insights, smarter recommendations"
 ```
 
-### Engineering Roadmap (Internal)
-
+### Engineering View (Development Team)
 ```
-Technical Priorities:
-
-Q1: Architecture
-- Service extraction
-- Database optimization  
-- Mobile web framework
-
-Q2: Integrations
-- API v2 design
-- Webhook infrastructure
-- OAuth implementations
-
-Q3: ML Pipeline
-- Data pipeline upgrade
-- Model training infrastructure
-- Real-time processing
-
-Q4: Enterprise
-- Multi-tenancy
-- Security hardening
-- Compliance framework
+Q1: Service extraction, PostgreSQL query optimization, React Native foundation, GDPR data layer
+Q2: Integration framework, API v2 with OpenAPI, webhook infrastructure, OAuth 2.0 implementation
+Q3: ML pipeline setup, model training infrastructure, real-time event processing
+Q4: Multi-tenancy hardening, security audit, SOC 2 preparation
 ```
 
 ## SUCCESS METRICS
 
-### Roadmap KPIs
+| Quarter | Delivery Metric | Outcome Metric |
+|---------|-----------------|----------------|
+| Q1 | >80% features shipped on-time | Churn 12%, NPS 40, report speed <30s |
+| Q2 | >80% features shipped on-time | ARR $6.5M, 2 enterprise POCs |
+| Q3 | >80% features shipped on-time | ARR $8M, 5 enterprise customers, 25% premium upgrades |
+| Q4 | >80% features shipped on-time | ARR $10M, 10 enterprise customers, churn <10% |
 
-**Delivery Metrics**:
-```
-On-Time Delivery: >80%
-Scope Creep: <20%
-Quality (bugs): <5 critical/quarter
-Team Velocity: 20% improvement
-```
+## GOVERNANCE
 
-**Business Impact**:
-```
-                Q1    Q2    Q3    Q4
-ARR ($M)        5.5   6.5   8.0   10.0
-Churn %         12%   11%   10%   10%
-NPS             40    45    50    55
-Enterprise      0     2     5     10
-```
+**Review Cadence:**
+- Weekly: Engineering progress, blockers, velocity
+- Bi-weekly: Stakeholder sync, customer feedback integration
+- Monthly: Customer advisory board input
+- Quarterly: Board update, roadmap adjustment
 
-### Feature Adoption Tracking
+**Change Management:**
+- Minor adjustments (scope within theme): PM decision
+- Theme reordering: Leadership approval
+- Theme removal/addition: Board visibility
 
-**Success Criteria by Feature**:
-- Report Speed: 90% use new engine
-- Mobile: 40% MAU on mobile
-- Integrations: 2+ per customer
-- AI Insights: 60% engagement
-- Enterprise: 10 logos signed
-
-### Quarterly Reviews
-
-**Roadmap Retrospective**:
-1. What shipped vs. planned?
-2. Which bets paid off?
-3. What did we learn?
-4. How should we adjust?
-
-**Adjustment Triggers**:
-- Competitor launches major feature
-- Customer feedback pattern emerges
-- Technical discovery changes scope
-- Market conditions shift
-
-### Communication Cadence
-
-**Internal**:
-- Weekly → Engineering standups
-- Bi-weekly → Stakeholder updates
-- Monthly → Customer advisory board
-- Quarterly → Board review
-
-**External**:
-- Monthly → Product updates blog
-- Quarterly → Roadmap refresh
-- Annual → Vision presentation
-
-This roadmap balances fixing current issues while building toward your growth goals. The key is maintaining flexibility while staying focused on the strategic themes.
+---
 
 ## Related Prompts
-
-- [Product Strategy Expert](../../communication/email-communication-strategy-expert.md)
-- [Feature Prioritization Specialist](../../decision-making/feature-prioritization-expert.md)
-- [Product Metrics Analyst](../../creation/product-design-expert.md)
+- [Business Analyst Expert](../management/business-analyst-strategic-excellence.md) - Requirements development
+- [Requirements Engineering Expert](../business-analysis/requirements-engineering-expert.md) - Detailed specifications

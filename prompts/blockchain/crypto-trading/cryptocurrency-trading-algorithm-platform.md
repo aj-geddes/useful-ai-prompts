@@ -1,356 +1,302 @@
-# Cryptocurrency Trading Bot Builder
+# Cryptocurrency Trading Algorithm Platform
 
 ## Metadata
+- **ID**: `blockchain-crypto-trading-algorithm`
+- **Version**: 1.0.0
+- **Category**: Blockchain/Trading
+- **Tags**: algorithmic trading, cryptocurrency, quantitative finance, trading bots, automated trading
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3.5+, GPT-4+
 - **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-- **Category**: Blockchain/Crypto-Trading
-- **Tags**: crypto trading, trading bot, algorithmic trading, automated trading, cryptocurrency strategy
-- **Version**: 2.0.0
-- **Use Cases**: automated crypto trading, trading strategy development, portfolio management, risk control
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+## Overview
 
-## Description
+Designs cryptocurrency trading systems including algorithmic strategies, execution infrastructure, and risk management frameworks. Combines quantitative finance principles with crypto-specific considerations for systematic trading on both centralized and decentralized exchanges.
 
-This prompt helps you build cryptocurrency trading bots and automated trading strategies. Whether you're a beginner wanting simple dollar-cost averaging or an experienced trader needing complex algorithms, this will guide you through creating profitable trading systems.
+## When to Use
+
+**Ideal Scenarios:**
+- Building automated trading systems for cryptocurrency markets
+- Developing quantitative trading strategies with backtesting
+- Designing trading infrastructure and execution systems
+- Implementing risk management and position sizing frameworks
+- Creating market making or arbitrage systems
+
+**Anti-patterns (When NOT to Use):**
+- Seeking financial advice or guaranteed profit strategies
+- Market manipulation schemes or wash trading
+- High-frequency trading without proper infrastructure
+- Trading without understanding of risks involved
+
+---
 
 ## Prompt
 
+```xml
+<role>
+You are a quantitative trading systems architect with 15+ years in algorithmic trading across traditional and crypto markets. You specialize in market microstructure, execution algorithms, and risk management. Your systems have managed $500M+ in crypto assets with consistent risk-adjusted returns across multiple market cycles.
+</role>
+
+<context>
+The user needs to design or implement systematic cryptocurrency trading systems. This requires developing sound trading strategies with identifiable edges, building robust execution infrastructure, implementing comprehensive risk management, and establishing proper backtesting and validation procedures. All recommendations must emphasize risk management and realistic expectations.
+</context>
+
+<input_handling>
+Required inputs:
+- Trading venue type (CEX, DEX, or hybrid)
+- Strategy type (market making, arbitrage, momentum, mean reversion)
+- Capital allocation and risk tolerance
+
+Optional inputs (inferred if not provided):
+- Execution approach: API-based with latency optimization
+- Risk limits: Standard position sizing (2% max per trade)
+- Backtesting: 2+ years historical data minimum
+- Infrastructure: Cloud-based with redundancy
+</input_handling>
+
+<task>
+Design a comprehensive cryptocurrency trading system following these steps:
+
+1. **Define Strategy Logic**: Identify trading edge, entry/exit conditions, and expected market conditions for profitability
+
+2. **Design System Architecture**: Create data pipeline, execution engine, and monitoring infrastructure with appropriate redundancy
+
+3. **Implement Risk Management**: Define position sizing, stop losses, drawdown limits, and correlation controls
+
+4. **Plan Backtesting Validation**: Design walk-forward testing, out-of-sample validation, and parameter stability analysis
+
+5. **Create Monitoring Framework**: Establish real-time performance tracking, alerting, and manual intervention procedures
+
+6. **Document Operational Procedures**: Define deployment, maintenance, incident response, and regular review processes
+</task>
+
+<output_specification>
+Format: Technical specification with strategy details
+Length: 600-900 words
+
+Required sections:
+- Strategy logic with edge identification
+- System architecture and infrastructure
+- Risk management framework
+- Backtesting and validation approach
+- Performance expectations (realistic, with caveats)
+- Operational procedures and safeguards
+
+Structure: Use code blocks for strategy logic, architecture diagrams, and specifications
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- Clear edge articulation with realistic decay analysis
+- Robust risk management protecting against ruin
+- Conservative performance expectations with confidence intervals
+- Comprehensive operational procedures for production systems
+
+Common pitfalls to avoid:
+- Guaranteed profit claims or unrealistic returns
+- Ignoring transaction costs, slippage, and market impact
+- Over-optimized backtests (curve fitting to historical data)
+- Missing failure mode analysis and kill switches
+</quality_criteria>
+
+<constraints>
+- Never provide financial advice or guarantee returns
+- Include realistic transaction costs and slippage estimates
+- Design for worst-case scenarios and market disruptions
+- Address regulatory considerations for trading activities
+- Emphasize capital preservation over return maximization
+</constraints>
 ```
-I'll help you build a cryptocurrency trading bot tailored to your experience and goals. Let me understand your trading needs:
 
-**Your trading background:**
-1. What's your trading experience? (complete beginner, some manual trading, experienced trader)
-2. How much capital do you plan to trade with?
-3. What's your risk tolerance? (conservative, moderate, aggressive)
-4. How much time can you spend monitoring the bot daily?
-
-**Trading strategy goals:**
-5. What trading approach interests you? (buy and hold, swing trading, day trading, arbitrage)
-6. Which cryptocurrencies do you want to trade? (Bitcoin, Ethereum, altcoins, all)
-7. What returns are you hoping for? (steady growth, beat the market, high risk/high reward)
-8. How important is avoiding losses vs. maximizing gains?
-
-**Technical setup:**
-9. What's your programming experience? (none, basic, intermediate, advanced)
-10. Do you prefer no-code solutions or custom development?
-11. Which exchanges do you use? (Binance, Coinbase, Kraken, etc.)
-12. What's your budget for tools and services?
-
-Based on your answers, I'll provide:
-
-**STRATEGY RECOMMENDATION** - Best trading approach for your situation
-**BOT IMPLEMENTATION** - Step-by-step setup guide with specific tools
-**RISK MANAGEMENT** - How to protect your capital and manage losses
-**PERFORMANCE TRACKING** - How to measure and improve your bot's results
-**SCALING PLAN** - How to grow your trading operation over time
-
-Share your trading goals and experience level, and let's build your profitable trading bot!
-```
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+Building swing trading bot for top crypto pairs on Binance. Strategy: trend-following with momentum confirmation. Capital: $50K starting. Risk tolerance: moderate (max 3% daily drawdown). Need 24/7 operation. Programming experience: intermediate Python. Goals: 20-30% annual returns, systematic approach better than manual trading.
+
+### Output
+
+**Cryptocurrency Swing Trading System**
+
+**Strategy Overview**
 ```
-1. Some manual trading experience - been buying crypto for 2 years, mostly buy and hold
-2. Starting with $10,000, can add $2,000 monthly
-3. Moderate risk - want growth but can't afford major losses
-4. Can check it 2-3 times per day, maybe 30 minutes total
+Type: Multi-timeframe Momentum Swing Trading
+Edge: Capture medium-term trends with volatility filtering
+Hold period: 2-14 days average
+Assets: BTC, ETH + 3 rotating large-cap altcoins
 
-5. Interested in swing trading - hold positions for days to weeks
-6. Want to focus on Bitcoin and Ethereum, maybe add 2-3 solid altcoins
-7. Hoping for 20-30% annual returns, better than just holding
-8. Avoiding big losses is more important than hitting home runs
+Expected Performance (with uncertainty):
+- Annual return: 15-35% (wide range due to market conditions)
+- Max drawdown: 15-25% (historical, could be higher)
+- Sharpe ratio: 0.8-1.5 (depends on market regime)
+- Win rate: 40-50% (compensated by larger winners)
 
-9. Basic programming - can follow tutorials and modify code
-10. Prefer something with a GUI but willing to do some coding
-11. Using Binance and Coinbase Pro
-12. Can spend $100-200/month on tools and data
-```
-
-**Assistant Output:**
-
-Perfect! Here's your cryptocurrency swing trading bot strategy:
-
-## STRATEGY RECOMMENDATION
-
-### Recommended Approach: Multi-Timeframe Momentum Swing Trading
-
-**Why This Fits Your Profile**:
-```
-Experience Level: Building on your buy/hold knowledge
-Capital: $10K start + $2K monthly is perfect for scaling
-Risk Tolerance: Moderate risk with structured stop losses
-Time Commitment: 30 min/day fits swing trading perfectly
-Goals: 20-30% annual returns are achievable with disciplined execution
+IMPORTANT: Past performance does not guarantee future results.
+Crypto markets are highly volatile and unpredictable.
 ```
 
-### Core Strategy Framework
-
-```
-Trading Style: Swing Trading (3-14 day holds)
-Assets: BTC (40%), ETH (40%), 2 rotating altcoins (20%)
-Entry Signals: RSI + Moving Average + Volume confirmation
-Exit Signals: Take profit targets + trailing stops
-Risk Per Trade: 2% maximum capital risk
-Win Rate Target: 55-60% with 1.5:1 reward/risk ratio
-```
-
-## BOT IMPLEMENTATION
-
-### Option 1: 3Commas (Recommended for You)
-
-**Why 3Commas**:
-```
-✓ User-friendly interface with advanced features
-✓ Direct Binance/Coinbase Pro integration
-✓ Built-in backtesting and paper trading
-✓ Cost: $29/month (within your budget)
-✓ No coding required for basic strategies
-```
-
-**Setup Process**:
-```
-Week 1: Account Setup & Testing
-1. Create 3Commas account and connect exchanges
-2. Set up paper trading mode
-3. Configure basic DCA bot for BTC/ETH
-4. Run paper trades for 1 week
-
-Week 2: Strategy Implementation
-1. Create swing trading bot with these settings:
-   - RSI(14) oversold <30, overbought >70
-   - Price above 20-day MA for long entries
-   - Volume 1.5x average volume
-   - 3% stop loss, 6% take profit
-
-Week 3: Live Trading Start
-1. Start with $2,000 (20% of capital)
-2. Monitor performance daily
-3. Adjust settings based on results
-4. Add more capital monthly if profitable
-```
-
-### Option 2: Custom Python Bot (If You Want to Learn)
-
-**TradingView + Python Framework**:
-```
-Tools Needed:
-- TradingView Pro account ($15/month)
-- Python with CCXT library (free)
-- VPS hosting ($20/month)
-- Telegram alerts (free)
-
-Strategy Code Structure:
+**Strategy Logic**
 ```python
-# Simplified strategy logic
-def swing_strategy():
-    rsi = get_rsi(14)
-    price = get_current_price()
-    ma20 = get_moving_average(20)
-    volume = get_volume_ratio()
-    
-    # Long entry conditions
-    if (rsi < 35 and 
-        price > ma20 and 
-        volume > 1.5):
-        enter_long_position()
-    
-    # Exit conditions
-    if position_profit() > 6%:
-        take_profit()
-    elif position_loss() > 3%:
-        stop_loss()
+# Entry Conditions (ALL must be true)
+entry_conditions = {
+    'trend': price > ema_50 > ema_200,        # Uptrend confirmed
+    'momentum': rsi_14 > 50 and rsi_14 < 70,  # Momentum without overbought
+    'volume': volume > volume_ma_20 * 1.5,    # Volume confirmation
+    'volatility': atr_14 > atr_threshold,     # Sufficient volatility
+    'correlation': btc_correlation < 0.9      # Diversification check
+}
+
+# Exit Conditions (ANY triggers exit)
+exit_conditions = {
+    'take_profit': unrealized_pnl > 8%,
+    'stop_loss': unrealized_pnl < -3%,
+    'trailing_stop': price < highest_since_entry * 0.95,
+    'time_exit': days_held > 14,
+    'trend_reversal': price < ema_50
+}
+
+# Position Sizing
+position_size = min(
+    capital * 0.02 / stop_loss_pct,  # Risk-based sizing
+    capital * 0.20                    # Max position limit
+)
 ```
 
-## RISK MANAGEMENT
-
-### Position Sizing Strategy
-
-**Capital Allocation**:
+**System Architecture**
 ```
-Conservative Approach (Recommended):
-- Maximum 4 positions at once
-- 2% risk per trade = $200 max loss per trade
-- Position size = $200 ÷ stop_loss_% = position size
+Data Layer:
+- Market data: Binance WebSocket (real-time OHLCV)
+- Historical: PostgreSQL with TimescaleDB extension
+- Indicators: Pre-calculated, cached with 1-minute refresh
+- Backup: Daily snapshots to cloud storage
 
-Example for BTC at $45,000 with 3% stop:
-Risk per trade: $200
-Stop loss: 3% = $1,350
-Position size: $200 ÷ 0.03 = $6,667 investment
-Shares to buy: $6,667 ÷ $45,000 = 0.148 BTC
-```
+Execution Layer:
+- Order management: Python OMS with state persistence
+- API: Binance REST for orders, WebSocket for updates
+- Latency: <100ms order placement (not HFT-critical)
+- Redundancy: Backup server with failover (5-minute max)
 
-### Stop Loss Management
+Strategy Layer:
+- Signal generation: 1-minute evaluation cycle
+- Position manager: Track all positions with P&L
+- Risk monitor: Real-time exposure and drawdown
+- Alert system: Telegram + email notifications
 
-**Dynamic Stop Strategy**:
-```
-Initial Stop: 3% below entry price
-Trailing Stop: Once 3% profit, trail stop at breakeven
-Progressive Trail: Every 2% gain, raise stop by 1%
-
-Example Trade:
-Entry: $45,000
-Initial Stop: $43,650 (3% loss)
-Breakeven Trigger: $46,350 (3% gain)
-New Stop: $45,000 (breakeven)
-6% Gain Level: $47,700
-Final Stop: $46,350 (3% profit locked)
+Infrastructure:
+- Primary: AWS EC2 in ap-northeast-1 (Binance proximity)
+- Database: RDS PostgreSQL with daily backups
+- Monitoring: CloudWatch + custom dashboard
+- Cost: ~$100/month
 ```
 
-### Risk Controls
-
-**Daily/Weekly Limits**:
+**Risk Management Framework**
 ```
-Maximum Daily Loss: 1% of total capital ($100)
-Maximum Weekly Loss: 3% of total capital ($300)
-Consecutive Losses: Stop after 3 losing trades
-Monthly Review: Adjust strategy if <15% win rate
-```
+Position Sizing:
+- Base risk: 2% of capital per trade
+- Max position: 20% of capital per asset
+- Max total exposure: 80% of capital
+- Kelly fraction: 0.25 (conservative quarter-Kelly)
 
-## PERFORMANCE TRACKING
+Sizing Example:
+- Capital: $50,000
+- Risk per trade: $1,000 (2%)
+- Stop loss: 3%
+- Position size: $1,000 / 0.03 = $33,333
 
-### Key Metrics to Monitor
+Daily Limits:
+- Max daily loss: 3% ($1,500) -> halt trading
+- Max consecutive losses: 3 trades -> 4-hour cooldown
+- Max open positions: 5
 
-**Trading Performance**:
-```
-Daily Metrics:
-- Total P&L (profit/loss)
-- Win rate percentage
-- Average win vs average loss
-- Number of trades executed
-
-Weekly Analysis:
-- Best performing coin/strategy
-- Worst performing setup
-- Risk-adjusted returns (Sharpe ratio)
-- Maximum drawdown experienced
-
-Monthly Review:
-- Compare to buy-and-hold returns
-- Analyze major wins and losses
-- Adjust position sizing if needed
-- Review and update strategy parameters
+Correlation Controls:
+- Max 40% in any single sector (L1s, DeFi, etc.)
+- Reduce position sizes when BTC correlation > 0.9
 ```
 
-### Tracking Tools
-
-**Performance Dashboard**:
+**Backtesting Validation**
 ```
-Built-in 3Commas Analytics:
-- Automatic P&L calculation
-- Performance vs benchmarks
-- Risk metrics and drawdown
-- Trade history and analysis
+Data Requirements:
+- Minimum 2 years historical data (2022-2024)
+- Include multiple market regimes (bull, bear, sideways)
+- Account for survivorship bias (delisted coins)
 
-Manual Tracking Spreadsheet:
-- Date, coin, entry/exit prices
-- Reason for entry (which signal)
-- Profit/loss and percentage
-- Market conditions and notes
-```
+Validation Process:
+1. In-sample training: 60% of data
+2. Out-of-sample validation: 20% of data
+3. Walk-forward testing: 20% of data
+4. Monte Carlo simulation: 1000 iterations
 
-### Benchmark Comparison
+Transaction Costs:
+- Trading fees: 0.1% per trade (Binance spot)
+- Slippage estimate: 0.05% per trade
+- Total round-trip: 0.3%
 
-**Monthly Performance Targets**:
-```
-Conservative Success: Beat BTC buy-and-hold by 5%
-Moderate Success: 2-3% monthly returns consistently
-Strong Success: 30%+ annual returns with <15% max drawdown
-
-Red Flags (Stop Trading Signals):
-- 3 consecutive months of losses
-- Drawdown exceeding 20% of capital
-- Win rate falling below 40% for 30+ trades
-- Stress affecting daily life or decisions
+Overfitting Prevention:
+- Maximum 5 parameters in strategy
+- Parameter stability testing (+-20%)
+- No optimization on validation set
 ```
 
-## SCALING PLAN
-
-### Growth Phases
-
-**Phase 1: Proof of Concept (Months 1-3)**
+**Implementation Phases**
 ```
-Capital: $2,000 live trading
-Goal: Prove strategy works consistently
-Success Criteria: 
-- Positive returns vs buy-and-hold
-- <10% maximum drawdown
-- >50% win rate maintained
+Phase 1 (Weeks 1-4): Foundation
+- Data pipeline setup and historical import
+- Backtest framework development
+- Basic strategy implementation
+- Unit and integration tests
 
-Learning Focus:
-- Master the chosen platform
-- Understand your emotional responses
-- Refine entry/exit criteria
-- Build confidence in the system
-```
+Phase 2 (Weeks 5-8): Validation
+- Walk-forward optimization
+- Out-of-sample testing
+- Paper trading (4 weeks minimum)
+- Performance analysis and refinement
 
-**Phase 2: Scale Up (Months 4-9)**
-```
-Capital: Increase to $5,000-8,000
-Goal: Optimize for better risk-adjusted returns
-Success Criteria:
-- 15%+ returns vs 10% max drawdown
-- Consistent monthly profitability
-- Refined strategy parameters
-
-Improvements:
-- Add 1-2 additional altcoins
-- Implement more sophisticated signals
-- Consider multiple timeframe analysis
-- Optimize position sizing algorithms
+Phase 3 (Weeks 9-12): Live Trading
+- Start with 20% capital ($10K)
+- Scale up after 4 profitable weeks
+- Full allocation by week 12
+- Continuous monitoring and adjustment
 ```
 
-**Phase 3: Advanced Trading (Months 10+)**
+**Operational Procedures**
 ```
-Capital: Scale to full $10,000+ monthly additions
-Goal: Build toward full-time trading income
-Success Criteria:
-- 25-30% annual returns consistently
-- Multiple strategy diversification
-- Automated monitoring and alerts
+Daily Tasks:
+- Morning: Review overnight positions and alerts
+- Check: System health, API status, balance reconciliation
+- Evening: Review day's trades, update journal
 
-Advanced Features:
-- Multi-exchange arbitrage opportunities
-- Options/futures hedging strategies
-- Market-making in low-cap altcoins
-- Research new DeFi yield strategies
-```
+Weekly Review:
+- Performance vs benchmark (BTC buy-and-hold)
+- Strategy metrics (win rate, avg win/loss)
+- Market regime assessment
+- Parameter drift analysis
 
-### Technology Upgrades
+Monthly:
+- Walk-forward parameter update
+- New asset evaluation
+- Risk limit adjustment
+- Full system backup and documentation
 
-**Platform Evolution Path**:
-```
-Month 1-6: Master 3Commas platform
-Month 6-12: Add TradingView advanced alerts
-Month 12+: Consider custom Python development
-Year 2+: Explore institutional-grade platforms
-
-Cost Scaling:
-Current: ~$150/month in tools/data
-6 months: ~$300/month (more exchanges, data)
-1 year: ~$500/month (professional tools)
+Emergency Procedures:
+- Kill switch: Immediate position close on critical error
+- API failure: Graceful degradation, alert, manual intervention
+- Exchange issues: Documented escalation procedures
+- Max loss breach: Automatic halt, require manual restart
 ```
 
-### Risk Management Evolution
+**Disclaimers**
+- This is not financial advice
+- Past backtested performance does not guarantee future results
+- Cryptocurrency trading involves significant risk of loss
+- Never trade with money you cannot afford to lose
 
-**Sophistication Progression**:
-```
-Beginner: Fixed 2% position sizing
-Intermediate: Kelly criterion position sizing
-Advanced: Portfolio optimization with correlation
-Expert: Multi-strategy risk parity allocation
-
-Capital Protection:
-- Always maintain 6-month living expenses separately
-- Never risk more than you can afford to lose
-- Take profits regularly to build emergency fund
-- Consider partial withdrawals at major milestones
-```
-
-This roadmap turns your $10,000 starting capital into a systematic trading operation that can potentially generate 20-30% annual returns while managing downside risk through disciplined money management and proven swing trading techniques.
+---
 
 ## Related Prompts
 
-- [DeFi Protocol Developer](../defi-protocols/decentralized-finance-protocol-development.md)
-- [Smart Contract Security Auditor](../smart-contracts/smart-contract-security-audit-platform.md)
-- [Cross-Chain Bridge Developer](../cross-chain/cross-chain-interoperability-bridge-platform.md)
+- [DeFi Protocol Development](../defi-protocols/decentralized-finance-protocol-development.md) - DeFi trading integration
+- [Risk Assessment Expert](../../analysis/risk-assessment-expert.md) - Risk analysis frameworks
+- [Data Analysis Expert](../../analysis/data-analysis-expert.md) - Quantitative analysis methods

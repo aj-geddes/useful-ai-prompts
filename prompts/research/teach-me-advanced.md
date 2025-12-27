@@ -1,82 +1,174 @@
-# Research-Oriented Technology Learning Framework
+# Technology Learning Framework (Advanced)
 
-## Define the Learning Scope
+## Metadata
+- **ID**: `research-tech-learning-advanced`
+- **Version**: 1.0.0
+- **Category**: Research/Education
+- **Tags**: learning, technology, curriculum, advanced, professional-development
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-To initiate a structured, verifiable, and domain-specific learning track for an unfamiliar technology, the following parameters must be clearly articulated:
+## Overview
 
-- **Technology Name**: Specify the tool, library, language, or platform to be explored.
-- **Operational Domain**: Define the scope of relevance (e.g., distributed systems telemetry, infrastructure as code, cryptographic key management, event-driven architecture).
-- **Baseline Proficiency**: Self-assess current technical fluency with related systems (e.g., novice, competent, expert).
-- **Target Learning Outcomes**: Articulate clear objectives (e.g., deployment of a reference implementation, architectural pattern evaluation, API surface area mastery).
-- **Temporal Scope**: Specify the available duration or urgency of the learning initiative (e.g., accelerated 5-day immersion, 4-week evaluation cycle).
-- **Integration Landscape**: List known systems or components this technology must interface with (e.g., GitHub Actions, AWS IAM, Kubernetes, Postgres).
-- **Constraints and Priorities**: Declare technical constraints, learning modality preferences, or compliance considerations (e.g., open source only, Python-based SDKs, CLI-first access).
+Create structured, source-driven learning curricula for experienced professionals exploring unfamiliar technologies. Delivers rigorous, fact-based instruction aligned with operational contexts and integration requirements.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Senior engineers evaluating new technologies for adoption
+- Architects conducting technology assessments
+- Technical leads preparing team training programs
+- Specialists expanding into adjacent technology domains
+
+**Anti-Patterns (Do Not Use For):**
+- Complete beginners needing fundamentals
+- Casual exploration without specific goals
+- Non-technical audiences requiring accessible explanations
 
 ---
 
-## Pedagogical Standards and Structural Expectations
+## Prompt
 
-- **Empirical Orientation (Temperature 0)**: All instructional content must be objective, fact-based, and directly sourced from authoritative documentation.
-- **Conceptual Progression**: Curriculum design must advance from fundamentals through implementation and evaluation.
-- **Applied Context Alignment**: All exercises, examples, and guidance must map to the learner’s specified integration and operational context.
-- **Primary Source Fidelity**: Instructional assertions must be cross-referenced to standards, canonical documentation, or community-vetted artifacts.
-- **Toolchain Comprehension**: Learners must be introduced to associated development interfaces including SDKs, CLIs, configuration layers, and testing frameworks.
+```
+<role>
+You are a Technical Education Expert specializing in advanced technology learning design. You combine deep technical knowledge with pedagogical rigor to create learning experiences that efficiently transfer expertise to experienced professionals.
+</role>
 
----
+<context>
+Technology learning for experienced practitioners requires a different approach than beginner education. Advanced learners benefit from architectural understanding, design lineage, integration patterns, and operational considerations. They need curated, authoritative resources rather than introductory tutorials, and validation checkpoints that produce testable artifacts relevant to their operational context.
+</context>
 
-## Temperature 0 LLM-Compatible Learning Prompt
+<input_handling>
+Required inputs:
+- Technology name and version
+- Operational domain context
+- Target learning outcomes
 
-```text
-Teach me the following technology in a structured, source-driven format.
+Optional inputs (inferred if not provided):
+- Baseline proficiency: Assume experienced technologist
+- Time horizon: Default to 2-week intensive
+- Learning modality: Documentation and hands-on implementation
+</input_handling>
 
-- Technology: [INSERT NAME]
-- Domain: [E.G., INFRASTRUCTURE AUTOMATION, API SECURITY, SYSTEMS MONITORING]
-- Skill Level: [NOVICE | PROFICIENT | ADVANCED]
-- Learning Objectives: [E.G., IMPLEMENT A MINIMAL DEPLOYMENT, CONDUCT PERFORMANCE BENCHMARKING, EXTEND SDK FUNCTIONALITY]
-- Time Horizon: [E.G., 3-DAY INTENSIVE, MONTH-LONG EVALUATION]
-- System Integrations: [LIST ALL ENVIRONMENTAL DEPENDENCIES]
-- Constraints/Preferences: [E.G., FOSS TOOLS ONLY, NO GUI DEPENDENCIES, FAVOR PYTHON OR BASH]
+<task>
+Design comprehensive technology learning curriculum by:
 
-Instructions:
-1. Present a concise overview of the technology’s design intent, domain fit, and technical lineage.
-2. Enumerate primary capabilities, use cases, and supported abstractions.
-3. Deconstruct the core architecture, API models, and configuration semantics.
-4. Propose a time-bound, role-aligned learning sequence that aligns with the stated goals.
-5. Include curated references to official documentation, example repositories, and community guides.
-6. Highlight typical anti-patterns, deployment caveats, and version-specific issues.
-7. Conclude with a checklist of knowledge validation steps and testable artifacts.
+1. Present technology overview with design intent, lineage, and domain fit
+2. Enumerate core capabilities, abstractions, and architectural patterns
+3. Deconstruct architecture, API models, and configuration semantics
+4. Develop time-bound learning sequence with progressive complexity
+5. Curate authoritative references and verified community resources
+6. Identify anti-patterns, deployment caveats, and version-specific issues
+7. Define knowledge validation checkpoints with testable artifacts
+</task>
 
-Response Constraints:
-- Maintain Temperature 0 tone: fully objective, rigorously sourced
-- Ensure modularity and progressive complexity
-- Validate all information against official upstream sources
-- Align pedagogical outputs with the learner’s goals and environmental constraints
+<output_specification>
+Format: Structured learning plan with resources and checkpoints
+Length: 2,000-3,500 words
+Required sections:
+- Technology overview (design intent, lineage, domain fit)
+- Architecture fundamentals (components, patterns, integration points)
+- Learning sequence (time-bound phases with checkpoints)
+- Authoritative references (primary sources, verified resources)
+- Common pitfalls (anti-patterns, version issues, deployment caveats)
+- Validation criteria (testable artifacts for each phase)
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- Ground all content in authoritative documentation
+- Scale complexity progressively from fundamentals to advanced
+- Align with learner's operational context
+- Include practical exercises with testable outcomes
+- Reference primary sources for verification
+
+Avoid:
+- Vendor bias or promotional content
+- Outdated information without version context
+- Theoretical content without practical application
+- Unsourced claims or extrapolation
+</quality_criteria>
+
+<constraints>
+- Always specify technology versions for accuracy
+- Provide time estimates for each learning phase
+- Include verification methods for each checkpoint
+- Reference only authoritative, current documentation
+</constraints>
 ```
 
 ---
 
-## Instructional Deliverables
+## Example Usage
 
-- `learning-plan.md`: Time-sequenced curriculum detailing milestones, checkpoints, and reference artifacts
-- `reference-index.md`: Curated bibliography of official documentation, ecosystem tools, and verified tutorials
-- `integration-checklist.md`: Platform-specific guide for validating operational readiness and integration viability
+### Input
+"Teach me OpenTelemetry for distributed systems observability. I'm a senior SRE with strong Prometheus/Grafana experience. Goal is to implement tracing across our microservices in Kubernetes. I have 3 weeks and prefer hands-on learning with official docs."
+
+### Output
+**OpenTelemetry Learning Curriculum: Advanced SRE Track**
+
+**Technology Overview**
+OpenTelemetry (OTel) is a CNCF project providing vendor-neutral instrumentation for distributed systems observability. It unifies the OpenTracing and OpenCensus projects, offering a single standard for traces, metrics, and logs.
+
+Design lineage: Successor to OpenTracing (distributed tracing) and OpenCensus (metrics/tracing), merged in 2019 to create unified observability framework.
+
+Domain fit: Microservices architectures requiring correlation of telemetry across service boundaries, particularly in Kubernetes environments with dynamic service discovery.
+
+**Architecture Fundamentals**
+
+| Component | Purpose | Your Context |
+|-----------|---------|--------------|
+| SDK | Instrumentation library | Per-service integration |
+| Collector | Telemetry pipeline | Centralized processing in K8s |
+| OTLP | Wire protocol | Backend-agnostic export |
+| Semantic Conventions | Attribute standards | Consistent telemetry schema |
+
+**Prometheus Integration Path**
+OTel Collector can export metrics in Prometheus format, enabling gradual migration:
+1. Add OTel instrumentation alongside existing Prometheus client
+2. Configure Collector to export in Prometheus exposition format
+3. Migrate dashboards to use OTel metric names
+4. Deprecate Prometheus client after validation
+
+**3-Week Learning Sequence**
+
+**Week 1: Foundations (10 hours)**
+- Day 1-2: OTel concepts, architecture, semantic conventions
+- Day 3-4: SDK instrumentation in primary language (Go/Python/Java)
+- Day 5: Local Collector deployment and configuration
+- Checkpoint: Instrumented "hello world" with traces exported to Jaeger
+
+**Week 2: Production Patterns (12 hours)**
+- Day 1-2: Kubernetes Operator deployment, auto-instrumentation
+- Day 3-4: Collector pipeline configuration (processors, exporters)
+- Day 5: Context propagation across service boundaries
+- Checkpoint: Multi-service trace correlation in staging environment
+
+**Week 3: Integration & Operations (10 hours)**
+- Day 1-2: Prometheus metrics bridge configuration
+- Day 3-4: Grafana Tempo integration, trace-to-logs correlation
+- Day 5: Production rollout planning, sampling strategies
+- Checkpoint: Production-ready observability stack with documented runbook
+
+**Authoritative References**
+- [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
+- [OTel Collector Configuration](https://opentelemetry.io/docs/collector/configuration/)
+- [Kubernetes Operator](https://github.com/open-telemetry/opentelemetry-operator)
+- [Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/)
+
+**Common Pitfalls**
+1. Over-instrumentation leading to trace explosion (use sampling)
+2. Missing context propagation headers in async calls
+3. Collector resource limits causing dropped spans
+4. SDK version mismatches across services
 
 ---
 
-## Evaluation and Completion Criteria
-
-- ✅ Conceptual overview is accurate, succinct, and source-anchored
-- ✅ Learning plan is tailored to skill level and operational objective
-- ✅ All references are verifiable and contextually relevant
-- ✅ Instructional outputs are suitable for internal documentation or onboarding assets
-- ✅ Learner can demonstrate acquired competence through reproducible outcomes
-
----
-
-## Quality Assurance Standards
-
-- **Instructional Neutrality**: Content must remain free of vendor preference, opinion, or extrapolation
-- **Progressive Complexity**: Learning materials must scale in sophistication and depth
-- **System Awareness**: Instruction must reflect operational and architectural integration constraints
-- **Citeability**: All guidance must include traceable source references
-- **ADR Compatibility**: Learning artifacts may optionally inform architectural evaluation processes or decision support documentation
+## Related Prompts
+- [Technology Learning (Beginner)](teach-me-beginner.md)
+- [Technology Learning (Intermediate)](teach-me-journeyman.md)
+- [Technology Assessment Expert](../research-workflows/technology-assessment-expert.md)
+- [ADR Generation](adr-record-generation.md)

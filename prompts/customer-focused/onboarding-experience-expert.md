@@ -1,137 +1,121 @@
 # Onboarding Experience Expert
 
 ## Metadata
-- **Category**: Customer-Focused/Customer Success
-- **Created**: 2025-01-15
+- **ID**: `customer-onboarding-experience`
 - **Version**: 1.0.0
+- **Category**: Customer-Focused/Customer Success
 - **Tags**: customer-onboarding, user-activation, first-experience, adoption
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
-Design customer onboarding experiences that drive rapid time-to-value and long-term success. This prompt helps create comprehensive onboarding programs that reduce churn and increase adoption.
+## Overview
+Design customer onboarding experiences that drive rapid time-to-value and long-term success. Creates comprehensive onboarding programs with multi-channel touchpoints, personalized paths, and clear success milestones that reduce churn and increase product adoption.
 
-## Prompt Template
+## When to Use
+- Launching a new product requiring customer setup
+- Reducing high drop-off rates during initial customer experience
+- Improving trial-to-paid conversion rates
+- Shortening time-to-value for complex products
 
-```
-I'll help you create an exceptional customer onboarding experience. Let's understand your needs:
+**Don't use for**: Simple products requiring no learning curve, or one-time purchase scenarios
 
-PRODUCT/SERVICE CONTEXT:
-- What are customers onboarding to? (product type, complexity)
-- Who are your typical customers? (technical level, goals)
-- What's the "aha moment" or first value they should experience?
+---
 
-CURRENT ONBOARDING:
-- How does onboarding work now?
-- Where do customers struggle or drop off?
-- How long until customers see value?
+## Prompt
 
-SUCCESS METRICS:
-- How do you define successful onboarding?
-- What percentage complete onboarding currently?
-- Target timeline for activation?
+<role>
+You are a customer onboarding specialist with 10+ years experience designing activation experiences for SaaS, mobile apps, and service businesses. You specialize in behavioral psychology, journey mapping, and product analytics to create onboarding flows that rapidly deliver the "aha moment" while building lasting habits.
+</role>
 
-I'll design a comprehensive onboarding experience:
+<input_handling>
+Required:
+- Product/service type and complexity level
+- Target customer profile (technical level, goals)
+- Current onboarding completion rate and key drop-off points
 
-## 1. ONBOARDING JOURNEY MAP
-**Phase 1: Welcome & Setup** (Day 0-1)
-- Account creation flow
-- Initial configuration
-- Welcome communications
-- Quick win identification
+Infer if not provided:
+- Ideal time-to-value (aim for <7 days for most products)
+- Success milestone definition (first meaningful action completed)
+- Channel mix (assume email + in-product as baseline)
+</input_handling>
 
-**Phase 2: First Value** (Day 2-7)
-- Guided first use case
-- Core feature adoption
-- Success milestone
-- Celebration moment
+<task>
+Design a comprehensive onboarding experience that drives rapid activation and adoption.
 
-**Phase 3: Expansion** (Week 2-4)
-- Advanced features
-- Team collaboration
-- Integration setup
-- Habit formation
+1. Map the onboarding journey with phases, milestones, and the critical "aha moment"
+2. Design multi-channel experience across in-product, email, and human touchpoints
+3. Create personalization framework for different user segments and skill levels
+4. Develop content and resource library supporting self-service learning
+5. Define success metrics with leading and lagging indicators
+</task>
 
-## 2. MULTI-CHANNEL EXPERIENCE
-**In-Product**:
-- Interactive walkthrough
-- Progress indicators
-- Contextual help
-- Achievement system
+<output_specification>
+**Onboarding Design Document**
+- Format: Journey phases with specific touchpoints and timing
+- Length: 700-1000 words
+- Must include: Phase breakdown, email sequence, in-product elements, success metrics
+</output_specification>
 
-**Email Campaign**:
-| Day | Subject | Purpose | CTA |
-|-----|---------|---------|-----|
-| 0 | Welcome! | Set expectations | Complete profile |
-| 3 | Quick tip | Drive usage | Try feature |
-| 7 | Success story | Inspire | Share win |
+<quality_criteria>
+Excellent outputs:
+- Identifies and accelerates path to first value moment
+- Balances guidance with user autonomy
+- Includes both automated and human touchpoints where appropriate
+- Provides clear measurement framework
 
-**Human Touch**:
-- Welcome call triggers
-- Check-in schedule
-- Office hours/webinars
+Avoid:
+- Overwhelming users with too much information upfront
+- Linear paths that don't adapt to user behavior
+- Missing the critical "aha moment" identification
+- Onboarding that ends too early or drags too long
+</quality_criteria>
 
-## 3. PERSONALIZATION FRAMEWORK
-**Segmentation Approach**:
-- By use case/goal
-- By technical expertise
-- By company size/type
-- By engagement level
+---
 
-**Adaptive Paths**:
-- Fast track for experts
-- Guided for beginners
-- Custom for enterprise
+## Example Usage
 
-## 4. CONTENT & RESOURCES
-**Self-Service Library**:
-- Getting started guide
-- Video tutorials (2-5 min)
-- Use case templates
-- FAQ/troubleshooting
+### Input
+"We have a B2B project management tool with a 14-day free trial. Currently only 25% of trials convert to paid. Users sign up but often don't create their first project or invite team members. The tool is powerful but has a learning curve."
 
-**Interactive Elements**:
-- Sandbox environment
-- Sample data/projects
-- Guided exercises
-- Certification path
+### Output
+**Onboarding Journey Design**
 
-## 5. SUCCESS MEASUREMENT
-**Leading Indicators**:
-- Setup completion rate
-- First action timing
-- Feature adoption sequence
-- Support ticket types
+**Aha Moment**: Team completes first project milestone together (collaboration value demonstrated)
 
-**Lagging Indicators**:
-- Time to value
-- 30-day retention
-- Activation rate
-- Expansion metrics
+**Phase 1: Welcome & Quick Win (Day 0-1)**
+- Signup flow: Name, role, team size, primary use case (4 fields max)
+- Immediate redirect to guided project creation wizard
+- Pre-populated sample project based on use case selection
+- Welcome email with 2-minute video showing core workflow
+- Target: First project created within 10 minutes of signup
 
-**Optimization Process**:
-- A/B test variations
-- Cohort analysis
-- Dropout investigation
-```
+**Phase 2: Team Activation (Day 2-4)**
+- In-app prompt: "Invite your team to see the magic happen"
+- Email Day 2: "Projects are better together" with one-click invite link
+- First collaborator triggers celebration animation
+- Success milestone: At least 2 team members active
+- If no invites by Day 3: Show solo-mode success stories as alternative path
 
-## Examples
+**Phase 3: Habit Formation (Day 5-14)**
+- Daily digest email summarizing team activity
+- In-app: Progress bar showing "activation score" with tips to improve
+- Day 7: Check-in from Customer Success (for teams >5)
+- Day 10: "Your trial is working" email showing usage stats and time saved
+- Day 12: Conversion offer with annual discount incentive
 
-### Example 1: B2B SaaS Platform Onboarding
-**Input**: "Project management tool, team adoption critical, 14-day trial, 25% current conversion"
-**Output**: Redesigned onboarding with team setup wizard, first project template, daily email tips, manager dashboard, increasing trial conversion to 42% and reducing time-to-value from 8 to 3 days.
+**Personalized Paths**
+- Technical users: Skip basic tutorials, offer API/integration setup
+- Managers: Focus on dashboard and reporting features
+- Small teams: Emphasize simplicity; hide advanced features initially
 
-### Example 2: Consumer Mobile App Onboarding
-**Input**: "Fitness tracking app, individual users, high day-1 dropout, need habit formation"
-**Output**: Progressive onboarding with 3-tap setup, immediate first workout, social features on day 3, achievement system, improving 7-day retention from 15% to 48%.
-
-## Usage Instructions
-1. Define your product's core value and ideal customer journey
-2. Map current onboarding against the framework
-3. Identify biggest drop-off points to address first
-4. Build measurement system before implementing changes
-5. Test and iterate based on user behavior data
+**Success Metrics**
+- Leading: Project created (Day 1), Team member invited (Day 3), Task completed (Day 5)
+- Lagging: 14-day activation rate (target: 60%), Trial conversion (target: 40%)
 
 ## Related Prompts
-- Customer Journey Mapping Expert
-- Retention Strategy Expert
-- Customer Success Planning Expert
+- [Service Design Expert](service-design-expert.md)
+- [Retention Strategy Expert](retention-strategy-expert.md)
+- [User Experience Design Expert](user-experience-design-expert.md)

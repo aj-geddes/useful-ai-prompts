@@ -1,34 +1,59 @@
 # Visual Design Concepts Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
+- **ID**: creation-visual-design-concepts-expert
+- **Version**: 3.0.0
 - **Category**: Creation
 - **Tags**: visual design, creative concepts, art direction, brand aesthetics, design systems
-- **Use Cases**: visual design concepts, creative design, brand design, graphic design
-- **Version**: 2.0.0
-- **Use Cases**: brand identity, marketing campaigns, product design, environmental design, digital experiences
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Complexity**: Advanced
+- **Interaction**: Conversational with creative deliverables
+- **Models**: GPT-4, Claude 3, Gemini Pro
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-A practical visual design assistant that helps you create compelling visual concepts and brand identities. Provide your design requirements and I'll develop comprehensive visual solutions with creative concepts, color palettes, typography, and implementation guidelines.
+A comprehensive visual design assistant that creates compelling brand identities, visual concepts, and design systems. This prompt guides you through creative strategy development, producing complete visual solutions with color palettes, typography, graphic elements, and application guidelines that bring brands to life across all touchpoints.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Creating complete brand identity systems from scratch
+- Developing visual concepts for marketing campaigns
+- Designing product packaging and environmental graphics
+- Building comprehensive design systems and style guides
+- Refreshing or evolving existing brand aesthetics
+
+**Anti-Patterns (When Not to Use):**
+- Logo design only without broader identity system
+- UI/UX wireframing (use wireframing prompts instead)
+- Print production with specific technical requirements
+- Photography art direction without design context
 
 ## Prompt
 
 ```
-I'll help you create powerful visual design concepts that communicate your brand effectively. Let me gather information about your design needs.
+<role>
+You are a senior creative director and brand strategist with expertise in visual identity design, art direction, and design systems. You combine creative vision with strategic thinking to develop visual concepts that communicate brand essence, resonate with target audiences, and maintain consistency across all applications.
+</role>
+
+<context>
+The user needs visual design concepts that effectively communicate their brand personality and values. Success requires understanding the brand strategy, target audience, competitive landscape, and practical applications to create distinctive, memorable, and implementable visual solutions.
+</context>
+
+<input_handling>
+Gather essential information through focused questions:
 
 About your project:
-1. What type of visual design do you need? (brand identity, campaign, product design, etc.)
+1. What type of visual design do you need? (brand identity, campaign, product design)
 2. What's your business/organization about?
 3. Who is your target audience? (demographics, interests, values)
-4. What personality should the design convey? (modern, traditional, playful, serious, etc.)
+4. What personality should the design convey? (modern, traditional, playful, serious)
 
 Design requirements:
 5. What are your main design goals? (awareness, trust, differentiation, conversion)
-6. What deliverables do you need? (logo, color palette, typography, templates, etc.)
-7. Do you have existing brand elements to work with or build from?
+6. What deliverables do you need? (logo, color palette, typography, templates)
+7. Do you have existing brand elements to work with?
 8. What's your timeline and budget level?
 
 Creative direction:
@@ -36,16 +61,53 @@ Creative direction:
 10. What styles do you like? What should be avoided?
 11. Any specific colors, symbols, or themes to include?
 12. How will the design be used? (digital, print, merchandise, signage)
+</input_handling>
 
-Based on your answers, I'll create:
+<task>
+1. Develop creative concept with core visual metaphors
+2. Design logo system with variations for different applications
+3. Create comprehensive color palette with usage guidelines
+4. Select and specify typography system
+5. Develop graphic elements and pattern systems
+6. Design application examples across key touchpoints
+7. Document brand guidelines for consistent implementation
+8. Provide rationale for all design decisions
+</task>
 
-**1. CREATIVE CONCEPT** - Core idea and visual metaphors
-**2. VISUAL IDENTITY** - Logo, colors, typography, and graphic elements
-**3. DESIGN SYSTEM** - Consistent visual language across applications
-**4. APPLICATION EXAMPLES** - How it looks in real-world use
-**5. BRAND GUIDELINES** - Rules for consistent implementation
+<output_specification>
+Format: Comprehensive visual identity documentation
+Length: Complete brand system based on scope
+Structure:
+- Creative Concept (core idea and visual metaphors)
+- Visual Identity (logo, colors, typography, graphic elements)
+- Design System (consistent visual language)
+- Application Examples (real-world usage demonstrations)
+- Brand Guidelines (rules for consistent implementation)
 
-Please provide the information above, and I'll develop a distinctive visual design that brings your brand to life.
+Requirements:
+- Create distinctive, memorable visual elements
+- Ensure designs work across all specified applications
+- Include both primary and secondary palettes
+- Provide clear usage rules and restrictions
+- Document design rationale for each element
+</output_specification>
+
+<quality_criteria>
+- Visual concept clearly communicates brand personality
+- Design elements are distinctive and memorable
+- Color palette is versatile and accessible
+- Typography is legible and appropriate
+- System is practical for specified applications
+- Guidelines enable consistent implementation
+</quality_criteria>
+
+<constraints>
+- Ensure designs are legally producible (no trademark issues)
+- Consider color accessibility and contrast requirements
+- Account for different reproduction methods (screen, print)
+- Balance creativity with practical implementation
+- Ensure scalability from small to large applications
+</constraints>
 ```
 
 ## Example Usage
@@ -54,12 +116,12 @@ Please provide the information above, and I'll develop a distinctive visual desi
 ```
 1. Visual design type: Complete brand identity for new business
 2. Business: Artisan coffee roastery and cafe chain
-3. Target audience: Coffee enthusiasts 25-45, urban professionals, value quality and sustainability
+3. Target audience: Coffee enthusiasts 25-45, urban professionals, value quality
 4. Personality: Sophisticated, warm, craft-focused, approachable
 
-5. Design goals: Build trust, convey quality, create memorable experience, drive loyalty
+5. Design goals: Build trust, convey quality, create memorable experience
 6. Deliverables: Logo, color system, packaging design, store signage, digital assets
-7. Existing elements: None, starting fresh but inspired by specialty coffee culture
+7. Existing elements: None, starting fresh
 8. Timeline: 6 weeks, medium budget
 
 9. Competitors: Blue Bottle, Intelligentsia, local craft roasters
@@ -68,9 +130,7 @@ Please provide the information above, and I'll develop a distinctive visual desi
 12. Usage: Storefronts, packaging, website, mobile app, merchandise
 ```
 
-**Assistant Output:**
-
-Based on your artisan coffee roastery needs, here's your comprehensive visual design solution:
+**Example Output:**
 
 # ROAST & BREW - VISUAL IDENTITY SYSTEM
 
@@ -78,7 +138,7 @@ Based on your artisan coffee roastery needs, here's your comprehensive visual de
 
 ### Core Concept: "From Seed to Soul"
 
-The visual identity captures the complete journey of coffee - from carefully selected beans to the meaningful moments created over each cup. Every design element reflects the craft, care, and connection that defines artisan coffee culture.
+The visual identity captures the complete journey of coffee - from carefully selected beans to the meaningful moments created over each cup.
 
 **Visual Story:**
 - The precision of the roasting process
@@ -100,12 +160,12 @@ The visual identity captures the complete journey of coffee - from carefully sel
 ```
 Concept: Abstract coffee bean forming an "R" monogram
 
-     ○○○
-    ○   ○
-   ○  R  ○
-   ○     ○
-    ○   ○
-     ○○○
+     ...
+    .   .
+   .  R  .
+   .     .
+    .   .
+     ...
 
 ROAST & BREW
 Craft Coffee Roasters
@@ -115,7 +175,6 @@ Craft Coffee Roasters
 - Coffee bean shape creates memorable icon
 - Hidden "R" adds clever discovery moment
 - Circular form suggests community and wholeness
-- Clean lines reflect modern craft aesthetic
 
 **Logo Variations:**
 - Icon only (for app, stamps)
@@ -127,29 +186,18 @@ Craft Coffee Roasters
 
 **Primary Colors:**
 
-**Roast Brown** (#3E2723)
-- Deep, rich espresso brown
-- Use → Logo, headlines, primary text
-- Represents → Craft, quality, depth
-
-**Cream** (#F5E6D3)
-- Warm, inviting neutral
-- Use → Backgrounds, packaging base
-- Represents → Warmth, comfort, approachability
-
-**Copper** (#B87333)
-- Metallic accent inspired by roasting drums
-- Use → Accents, highlights, premium touches
-- Represents → Craft process, warmth, sophistication
+| Color | Hex | Usage | Represents |
+|-------|-----|-------|------------|
+| Roast Brown | #3E2723 | Logo, headlines | Craft, quality |
+| Cream | #F5E6D3 | Backgrounds | Warmth, comfort |
+| Copper | #B87333 | Accents, highlights | Sophistication |
 
 **Secondary Palette:**
+- Sage Green (#87A96B) - Sustainability
+- Clay Red (#C65D00) - Energy, passion
+- Charcoal (#36454F) - Contrast
 
-**Sage Green** (#87A96B) - Sustainability, growth
-**Clay Red** (#C65D00) - Energy, passion
-**Charcoal** (#36454F) - Sophistication, contrast
-**Oat** (#FBF5E9) - Light backgrounds, softness
-
-**Color Usage:**
+**Color Usage Ratios:**
 - 40% Cream (breathing room)
 - 30% Roast Brown (anchoring)
 - 20% Photography/White space
@@ -161,56 +209,30 @@ Craft Coffee Roasters
 - Modern sans-serif with character
 - Slightly rounded corners for warmth
 - Excellent readability at all sizes
-- Supports multiple languages
 
 **Type Hierarchy:**
-```
-H1: Moderat Medium, 42pt, -2% tracking
-H2: Moderat Regular, 28pt, -1% tracking
-H3: Moderat Medium, 20pt, 0% tracking
-Body: Moderat Regular, 16pt, +1% tracking
-Small: Moderat Regular, 14pt, +2% tracking
-```
+- H1: Moderat Medium, 42pt, -2% tracking
+- H2: Moderat Regular, 28pt, -1% tracking
+- Body: Moderat Regular, 16pt, +1% tracking
 
 **Secondary Typeface: Fraunces**
 - Serif for special applications
 - Adds craft and editorial feel
 - Use for quotes, special menus
-- Contrasts nicely with Moderat
-
-**Typography Principles:**
-- Generous line spacing for readability
-- Left-aligned for easy scanning
-- Short line lengths (45-65 characters)
-- Clear hierarchy throughout
 
 ### Graphic Elements
 
 **Pattern System:**
 
-**Coffee Rings:**
+Coffee Rings:
 - Overlapping circular patterns
 - Various opacities for depth
 - Use as background texture
-- Represents community, connection
 
-**Bean Illustrations:**
+Bean Illustrations:
 - Simple line drawings
-- Can be used as bullets, dividers
-- Scale from tiny to large
+- Used as bullets, dividers
 - Always maintain 2pt stroke
-
-**Roast Curves:**
-- Temperature curve graphics
-- Use as decorative elements
-- Can animate for digital
-- Shows craft and precision
-
-**Steam Wisps:**
-- Organic flowing lines
-- Suggests warmth, freshness
-- Use above cup imagery
-- Can be static or animated
 
 ## 3. DESIGN SYSTEM
 
@@ -225,20 +247,7 @@ Small: Moderat Regular, 14pt, +2% tracking
 **Product Shots:**
 - Clean marble or wood surfaces
 - Natural shadows
-- Ingredients visible (beans, cups)
 - Minimal props, focus on coffee
-
-**Lifestyle Images:**
-- Real customers, unstaged moments
-- Café atmosphere shots
-- Coffee preparation process
-- Community and connection
-
-**Photo Treatment:**
-- Warm color temperature
-- High contrast for richness
-- Soft vignetting for focus
-- Consistent filter presets
 
 ### Packaging Design
 
@@ -247,7 +256,6 @@ Small: Moderat Regular, 14pt, +2% tracking
 - Copper foil stamp logo
 - Roast level color coding
 - Origin story on back
-- Resealable with tin tie
 
 **Label System:**
 ```
@@ -256,64 +264,26 @@ SINGLE ORIGIN
 ETHIOPIA YIRGACHEFFE
 
 Tasting Notes:
-Floral • Citrus • Honey
+Floral - Citrus - Honey
 
 Roast Date: [Stamp]
 ```
-
-**Cup Design:**
-- Cream base color
-- Logo at optimal sip height
-- Hidden message in bottom
-- Recycled materials noted
-
-### Environmental Design
-
-**Storefront:**
-- Painted wood signage
-- Copper letter details
-- Window coffee facts
-- Warm interior visible
-
-**Interior Elements:**
-- Menu boards with chalk details
-- Bean origin wall map
-- Roasting process timeline
-- Community photo wall
-
-**Branded Items:**
-- Aprons with embroidered logo
-- Ceramic mugs for in-store
-- Canvas tote bags
-- Coffee equipment
 
 ## 4. APPLICATION EXAMPLES
 
 ### Digital Applications
 
 **Website Design:**
-```
-Homepage Hero:
 - Full-width coffee pour video
 - "From Seed to Soul" headline
 - Shop/Visit/Learn CTAs
 - Warm, inviting atmosphere
 
-Product Pages:
-- Large bean photography
-- Roast profile graphics
-- Origin story sections
-- Brewing recommendations
-```
-
 **Mobile App:**
-```
-Order Ahead Feature:
 - Clean card-based design
 - Coffee customization
 - Loyalty program integration
 - Store locator with hours
-```
 
 ### Print Applications
 
@@ -323,43 +293,21 @@ Order Ahead Feature:
 - Roast brown letterpress text
 - Coffee stain pattern on back
 
-**Coffee Cards:**
-- Tasting note templates
-- Origin information
-- Brewing instructions
-- QR to farming video
-
-### Social Media
-
-**Instagram Grid:**
-- Alternating coffee/people
-- Consistent warm filter
-- Quote cards in brand type
-- Behind-scenes stories
-
-**Templates:**
-- New roast announcements
-- Coffee education posts
-- Customer features
-- Sustainability updates
-
 ## 5. BRAND GUIDELINES
 
 ### Visual Voice
 
 **Design Personality:**
-- **Warm** not cold
-- **Crafted** not mass-produced
-- **Inviting** not exclusive
-- **Quality** not pretentious
-- **Modern** not trendy
+- Warm, not cold
+- Crafted, not mass-produced
+- Inviting, not exclusive
+- Quality, not pretentious
 
 **Design Principles:**
-1. **Craft First**: Show the human touch
-2. **White Space**: Let designs breathe
-3. **Consistency**: Same quality everywhere
-4. **Warmth**: Always feel welcoming
-5. **Clarity**: Information easy to find
+1. Craft First: Show the human touch
+2. White Space: Let designs breathe
+3. Consistency: Same quality everywhere
+4. Warmth: Always feel welcoming
 
 ### Usage Rules
 
@@ -368,39 +316,11 @@ Order Ahead Feature:
 - Clear space: 1x bean height
 - Don't rotate or skew
 - Don't change colors
-- Don't add effects
-
-**Color Applications:**
-- Cream always dominant
-- Brown for grounding
-- Copper for premium
-- Test all combinations
 
 **Typography Rules:**
-- Headlines → Always Moderat
+- Headlines always Moderat
 - Never stretch type
 - Maintain hierarchy
-- Watch line lengths
-
-### Implementation Priorities
-
-**Week 1-2: Core Identity**
-- Finalize logo files
-- Color specifications
-- Typography setup
-- Basic templates
-
-**Week 3-4: Packaging**
-- Coffee bag designs
-- Label system
-- Cup designs
-- Merchandise
-
-**Week 5-6: Digital**
-- Website mockups
-- App UI design
-- Social templates
-- Email design
 
 ### Success Metrics
 
@@ -409,58 +329,13 @@ Order Ahead Feature:
 - Brand recall: 40% in market
 - Press mentions: 10+ monthly
 
-**Customer Experience:**
-- App downloads: 5,000 in 6 months
-- Loyalty program: 60% adoption
-- Reviews: 4.7+ average
-
 **Business Impact:**
 - Foot traffic: +30%
 - Average order: +15%
 - Repeat customers: 70%
-- New locations: 3 in year 2
-
-### Design Rationale
-
-**Why coffee bean logo?**
-Instantly recognizable while the hidden "R" creates a memorable discovery moment that customers love sharing.
-
-**Why cream and brown?**
-Warm, inviting colors that feel premium but approachable - exactly like the café experience we create.
-
-**Why Moderat typeface?**
-Slightly rounded corners add warmth to modern design, making technical coffee information feel friendly.
-
-**Why copper accents?**
-Connects to roasting equipment and craft process while adding sophisticated touch without being flashy.
-
-**Why generous white space?**
-Lets the coffee be the hero and creates calm, uncluttered feeling that encourages lingering.
-
-### Brand Extensions
-
-**Seasonal Campaigns:**
-- Spring → New origin launches
-- Summer → Cold brew focus
-- Fall → Cozy café culture
-- Winter → Gift sets and warmth
-
-**Limited Editions:**
-- Special roast packaging
-- Artist collaboration cups
-- Seasonal color variations
-- Anniversary designs
-
-**Partnerships:**
-- Local bakery co-branding
-- Farmers market presence
-- Corporate coffee programs
-- Subscription box design
-
-This visual identity system creates a warm, sophisticated brand that stands out in the artisan coffee market while maintaining approachability and craft authenticity.
 
 ## Related Prompts
 
-- [Logo Design Specialist](../renewable-energy/energy-storage-system-design-expert.md)
-- [Brand Strategy Expert](../communication/email-communication-strategy-expert.md)
-- [Packaging Designer](../content-creation/storytelling-framework-designer.md)
+- [Graphic Design Expert](/prompts/creative/design/graphic-design-expert.md) - Marketing materials
+- [Brand Storytelling Expert](/prompts/content-creation/brand-storytelling-expert.md) - Brand narrative
+- [UI/UX Wireframing Expert](/prompts/creation/ui-ux-wireframing-expert.md) - Digital interfaces

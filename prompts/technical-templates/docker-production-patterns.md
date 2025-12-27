@@ -1,177 +1,257 @@
-Create a **comprehensive production-ready Docker containerization solution** for `Ask User for Application/Service Type and Technology Stack`.
+# Docker Production Patterns
 
-Initialize it as a **enterprise-grade, secure Docker deployment** with multi-stage builds, comprehensive security controls, monitoring integration, and scalable orchestration patterns.
+## Metadata
+- **ID**: `docker-production-patterns`
+- **Version**: 1.1.0
+- **Category**: Technical / DevOps
+- **Tags**: docker, containerization, kubernetes, security-hardening, production-deployment, CIS-benchmark
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2024-01-15
+- **Updated**: 2025-01-01
 
-## Core Requirements
+## Overview
 
-### Container Architecture
+Designs comprehensive production-ready Docker containerization solutions with enterprise-grade security controls, multi-stage builds, and scalable orchestration patterns. Provides CIS Docker Benchmark compliant configurations with minimal attack surfaces, comprehensive health checks, and observability integration. Covers the full container lifecycle from build optimization through runtime security.
 
-- **Base Images**: Minimal, security-hardened base images (Alpine, Distroless, or official slim variants)
-- **Multi-stage builds**: Optimized build process with separate build and runtime stages
-- **Image layering**: Efficient layer caching and minimal final image size
-- **Platform support**: Multi-architecture builds (AMD64, ARM64) using Docker Buildx
+## When to Use
 
-### Security Implementation
+**Ideal Scenarios:**
+- Containerizing applications for production deployment with security requirements
+- Implementing CIS Docker Benchmark compliant container configurations
+- Building multi-stage Dockerfiles with optimized layer caching and minimal images
+- Creating Kubernetes-ready deployments with proper resource constraints and security contexts
+- Designing container build pipelines with vulnerability scanning integration
 
-- **Non-root execution**: Dedicated application user with specific UID/GID
-- **File system security**: Read-only root filesystem with necessary writable mounts
-- **Capability management**: Minimal Linux capabilities with explicit drops and adds
-- **Security scanning**: Integrated vulnerability scanning in build pipeline
-- **Secrets management**: Proper handling of sensitive data without embedding in images
+**Anti-patterns (when not to use):**
+- Development-only containers without production security requirements
+- Simple single-use containers for local testing
+- Non-production environments where security hardening adds unnecessary complexity
+- Legacy applications that cannot be containerized without significant refactoring
 
-## Enhanced Security & Performance
+---
 
-### Runtime Security Controls
+## Prompt
 
-- **Security options**: `no-new-privileges`, AppArmor/SELinux integration
-- **Resource constraints**: Memory limits, CPU quotas, process limits (ulimits)
-- **Network isolation**: Custom networks with controlled communication
-- **Volume security**: Proper mount permissions and access controls
-- **Health monitoring**: Comprehensive health checks with failure handling
+```xml
+<role>
+You are a Container Platform Architect with 12+ years of experience in Docker, Kubernetes, and enterprise container security. You specialize in production-grade container solutions achieving CIS Docker Benchmark compliance, minimal attack surfaces, and comprehensive observability integration. You have deployed containerized workloads across AWS, GCP, and Azure for organizations with strict compliance requirements.
+</role>
 
-### Performance Optimization
+<context>
+Production container deployments require security hardening beyond default configurations. CIS Docker Benchmark provides 100+ recommendations; key priorities include non-root execution, read-only filesystems, minimal base images, and resource constraints. Container vulnerabilities are a leading attack vector, making build-time scanning and runtime protection essential.
+</context>
 
-- **Build optimization**: Layer caching strategies, .dockerignore configuration
-- **Runtime efficiency**: Minimal dependencies, optimized entrypoint scripts
-- **Resource management**: Appropriate memory reservations and CPU allocations
-- **Startup optimization**: Fast container startup and graceful shutdown handling
-- **Volume management**: Persistent data handling and temporary filesystem configuration
+<input_handling>
+Required inputs:
+- Application/service type and technology stack (runtime, framework, dependencies)
+- Deployment target (Kubernetes, Docker Compose, ECS, Cloud Run, etc.)
+- Security and compliance requirements (HIPAA, PCI-DSS, SOC 2, internal standards)
 
-### Monitoring & Observability
+Infer if not provided:
+- Base image preference (default: minimal distroless or alpine for security)
+- Scaling requirements (default: horizontal with 3+ replicas)
+- Monitoring stack (default: Prometheus metrics, structured logging)
+</input_handling>
 
-- **Logging configuration**: Structured logging with rotation and retention policies
-- **Metrics collection**: Application and container metrics exposure
-- **Health endpoints**: Liveness, readiness, and startup probe implementations
-- **Debugging support**: Non-production debugging capabilities with security controls
+<task>
+Design a comprehensive production-ready Docker containerization solution.
 
-## Advanced Features (New)
+1. Design container architecture selecting minimal, security-hardened base images appropriate for the application runtime
+2. Create multi-stage Dockerfile with build optimization (layer caching, dependency separation) and minimal final image
+3. Implement security controls including non-root execution, read-only filesystem, dropped capabilities, and seccomp profiles
+4. Configure comprehensive health checks with liveness, readiness, and startup probes appropriate for application characteristics
+5. Build orchestration manifests (Compose or Kubernetes) with resource constraints, security contexts, and network policies
+6. Integrate monitoring and logging with structured output, metrics endpoints, and distributed tracing hooks
+7. Create CI/CD pipeline configuration for automated builds, vulnerability scanning, and secure deployment
+</task>
 
-### Orchestration & Deployment
+<output_specification>
+Format: Dockerfile, orchestration manifests, and deployment documentation
+Length: 1500-2500 words with complete code examples
+Structure:
+- Architecture overview with security rationale
+- Multi-stage Dockerfile with annotations
+- Security configuration (securityContext, capabilities, policies)
+- Health check configuration with timing rationale
+- Resource constraints with sizing guidance
+- CI/CD workflow with scanning integration
+</output_specification>
 
-- **Docker Compose**: Production-ready compose configuration with profiles
-- **Kubernetes manifests**: Deployment, Service, ConfigMap, and Secret resources
-- **Zero-downtime deployment**: Rolling update strategies and deployment validation
-- **Scaling patterns**: Horizontal scaling support with load balancing
+<quality_criteria>
+Excellent outputs will:
+- Achieve CIS Docker Benchmark compliance with documented deviations if any
+- Optimize image size (target less than 100MB for interpreted languages, less than 50MB for compiled)
+- Implement comprehensive health checks with graceful degradation behavior
+- Include security scanning integration in build pipeline with blocking thresholds
+- Provide runtime security through read-only filesystem and minimal capabilities
 
-### Development Workflow Enhancement
+Avoid:
+- Running containers as root without explicit, documented justification
+- Embedding secrets, credentials, or sensitive configuration in images
+- Missing health check configuration leading to deployment issues
+- Ignoring resource limits causing noisy neighbor problems or OOM kills
+</quality_criteria>
 
-- **Multi-environment support**: Development, staging, and production configurations
-- **CI/CD integration**: Automated build, test, and deployment pipelines
-- **Local development**: Developer-friendly local setup with hot reloading
-- **Testing framework**: Container testing with security and functionality validation
+<constraints>
+- Use only official or verified base images from trusted registries
+- Document any security control exceptions with compensating controls
+- Consider application-specific requirements that may conflict with hardening
+- Balance security with operational complexity and debugging capability
+</constraints>
+```
 
-### Enterprise Integration
+---
 
-- **Registry management**: Private registry integration with authentication
-- **Policy enforcement**: OPA/Gatekeeper policies for compliance
-- **Backup strategies**: Data persistence and disaster recovery planning
-- **Compliance features**: Audit logging, GDPR/HIPAA compliance considerations
+## Example Usage
 
-### Container Optimization
+### Input
+We need to containerize a Python FastAPI application with PostgreSQL database access. Deploying to Kubernetes on AWS EKS. Requirements: HIPAA compliance, non-root execution, vulnerability scanning in CI/CD, auto-scaling support, structured JSON logging. Application needs to connect to RDS PostgreSQL and S3 for file storage.
 
-- **Size optimization**: Multi-stage builds, dependency minimization
-- **Security hardening**: CIS Docker Benchmark compliance
-- **Performance tuning**: JVM tuning (if applicable), connection pooling
-- **Caching strategies**: Application-level and infrastructure caching
+### Output
 
-## Implementation Strategy
+**Architecture Overview**
 
-### MCP Tool Optimization
+This containerization approach achieves HIPAA-compliant deployment through CIS Docker Benchmark controls, non-root execution, read-only filesystem with explicit tmpfs mounts, and comprehensive vulnerability scanning. The multi-stage build produces a minimal image under 100MB with all security contexts configured for EKS deployment.
 
-- **Use `create_or_update_file`** for individual file creation in structured approach
-- **Leverage `push_files`** for bulk operations when creating complete solutions
-- **Handle directory structure** systematically with proper organization
-- **Systematic delivery**: Dockerfile → Compose → Kubernetes → CI/CD pipeline
+**Multi-Stage Dockerfile**
 
-### Container Build Process
+```dockerfile
+# syntax=docker/dockerfile:1.4
 
-1. **Security scan source code** for vulnerabilities and secrets
-2. **Multi-stage Dockerfile** with optimized layer structure
-3. **Build automation** with version tagging and metadata injection
-4. **Security scanning** of built images before registry push
-5. **Deployment validation** with automated testing
-6. **Documentation generation** with usage examples and troubleshooting
+# Build stage - install dependencies
+FROM python:3.12-slim-bookworm AS builder
 
-### Validation & Testing
+WORKDIR /app
 
-- **Dockerfile linting**: hadolint validation for best practices
-- **Security scanning**: Trivy, Clair, or similar tools for vulnerability assessment
-- **Container testing**: Docker container structure tests
-- **Integration testing**: End-to-end testing with health checks
-- **Performance testing**: Load testing and resource utilization validation
-- **Compliance validation**: Security benchmark compliance checking
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-### Quality Assurance
+# Install Python dependencies to separate directory
+COPY requirements.txt .
+RUN pip install --no-cache-dir --target=/install -r requirements.txt
 
-- **Build reproducibility**: Consistent builds across environments
-- **Error handling**: Meaningful error messages and recovery procedures
-- **Resource efficiency**: Optimal resource utilization patterns
-- **Documentation quality**: Comprehensive setup and troubleshooting guides
+# Production stage - minimal runtime
+FROM python:3.12-slim-bookworm AS production
 
-## Deliverables
+# Security: Create non-root user
+RUN groupadd -r -g 1000 appuser && \
+    useradd -r -u 1000 -g appuser appuser
 
-### Core Container Files
+WORKDIR /app
 
-- `Dockerfile` - Multi-stage production Dockerfile with security hardening
-- `docker-compose.yml` - Production compose configuration with full stack
-- `docker-compose.override.yml` - Development overrides and local configurations
-- `.dockerignore` - Optimized build context exclusions
+# Install runtime dependencies only
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpq5 curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 
-### Security & Configuration
+# Copy dependencies from builder
+COPY --from=builder /install /usr/local/lib/python3.12/site-packages
 
-- `entrypoint.sh` - Secure entrypoint script with signal handling
-- `healthcheck.sh` - Comprehensive health check implementation
-- `configs/` - Configuration templates and environment-specific settings
-- `secrets/` - Secret management templates and rotation procedures
+# Copy application code
+COPY --chown=appuser:appuser . .
 
-### Orchestration & Deployment
+# Security: Switch to non-root user
+USER appuser
 
-- `k8s/` - Kubernetes manifests with best practices
-- `helm/` - Helm chart for parameterized deployments (if applicable)
-- `deploy/` - Deployment scripts and automation
-- `monitoring/` - Prometheus, Grafana, and alerting configurations
+# Health check with appropriate timing for application startup
+HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
 
-### Documentation & Examples
+EXPOSE 8000
 
-- `README.md` - Comprehensive documentation with setup and usage examples
-- `docs/SECURITY.md` - Security considerations and compliance information
-- `docs/DEPLOYMENT.md` - Deployment procedures and troubleshooting
-- `docs/DEVELOPMENT.md` - Local development setup and contribution guidelines
+# Structured logging and graceful shutdown
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--log-config", "logging.json"]
+```
 
-### CI/CD & Automation
+**Kubernetes Security Configuration**
 
-- `.github/workflows/` - GitHub Actions for automated builds and deployments
-- `scripts/` - Build, test, and deployment automation scripts
-- `tests/` - Container structure tests and integration test suites
-- `CHANGELOG.md` - Version history and breaking changes documentation
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+      - name: app
+        image: your-registry/fastapi-app:latest
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop: ["ALL"]
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        volumeMounts:
+        - name: tmp
+          mountPath: /tmp
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+      volumes:
+      - name: tmp
+        emptyDir:
+          medium: Memory
+          sizeLimit: 100Mi
+```
 
-### Validation Features
+**CI/CD Security Scanning**
 
-- **Container security**: CIS Docker Benchmark compliance validation
-- **Image optimization**: Size limits, layer count optimization
-- **Runtime validation**: Health check reliability and performance
-- **Network security**: Port exposure and communication validation
-- **Data persistence**: Volume management and backup verification
+```yaml
+# GitHub Actions workflow
+- name: Build and scan
+  run: |
+    docker build -t $IMAGE_NAME .
 
-## Success Criteria
+    # Dockerfile linting
+    hadolint Dockerfile --failure-threshold warning
 
-✅ **Functional**: Container runs securely in production with all services operational  
-✅ **Secured**: Comprehensive security controls implemented with vulnerability scanning  
-✅ **Monitored**: Full observability stack with metrics, logs, and alerts configured  
-✅ **Tested**: Complete test suite covering security, functionality, and performance  
-✅ **Scalable**: Horizontal scaling capabilities with load balancing and service discovery  
-✅ **Documented**: Production-ready documentation with troubleshooting guides  
-✅ **Automated**: CI/CD pipeline with automated builds, tests, and deployments  
-✅ **Compliant**: Security standards compliance with audit trail capabilities  
-✅ **Maintainable**: Clear structure for updates, patching, and dependency management  
-✅ **Performant**: Optimized for production workloads with resource efficiency
+    # Vulnerability scanning with blocking
+    trivy image --severity CRITICAL,HIGH --exit-code 1 $IMAGE_NAME
 
-## Quality Standards
+    # Container structure tests
+    container-structure-test test --image $IMAGE_NAME --config tests/container-structure.yaml
+```
 
-- **Security**: Every container runs as non-root with minimal privileges and regular vulnerability scanning
-- **Performance**: Optimized build times, minimal image sizes, and efficient resource utilization
-- **Reliability**: Comprehensive health checks, graceful degradation, and automated recovery procedures
-- **Documentation**: Every component documented with examples, troubleshooting, and best practices
-- **Maintainability**: Clear separation of concerns, version management, and update procedures
-- **Compliance**: Industry security standards compliance with audit logging and monitoring
-- **Automation**: Full CI/CD integration with quality gates and automated deployment validation
+**HIPAA Compliance Checklist**
+- Non-root execution: Enforced via USER directive and securityContext
+- Encryption in transit: TLS termination at ingress, mTLS optional via service mesh
+- Audit logging: Structured JSON logs with request correlation IDs
+- Vulnerability management: Trivy scanning with critical/high blocking
+- Access controls: RBAC and network policies limiting pod communication
+
+---
+
+## Related Prompts
+
+- [Deployment Pipeline Creation Expert](../technical-workflows/deployment-pipeline-creation-expert.md) - CI/CD pipeline design
+- [DevOps Workflow Design Expert](../technical-workflows/devops-workflow-design-expert.md) - DevOps practices
+- [Security Implementation Expert](../technical-workflows/security-implementation-expert.md) - Security architecture

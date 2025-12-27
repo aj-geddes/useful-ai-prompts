@@ -1,49 +1,119 @@
-# Comprehensive CI/CD Pipeline Design for Python-Based Systems
+# Python Project CI/CD Pipeline
 
 ## Metadata
-- **Category**: Technical/DevOps
-- **Tags**: python, ci-cd, github-actions, testing, security, code-quality
-- **Created**: 2025-01-15
+- **ID**: `python-cicd-pipeline`
 - **Version**: 1.0.0
-- **Use Cases**: Python project CI/CD setup, automated testing pipeline configuration, security scanning integration
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Category**: Technical / DevOps
+- **Tags**: python, ci-cd, github-actions, testing, security, code-quality, automation
+- **Complexity**: intermediate
+- **Interaction**: single-shot
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
-Comprehensive template for designing and implementing robust CI/CD pipelines for Python-based systems using GitHub Actions, including quality gates, security scanning, and testing automation.
+## Overview
 
-## Solicit User Input for \[Comprehensive CI/CD Pipeline Design for Python-Based Systems]
+Comprehensive template for designing and implementing robust CI/CD pipelines for Python-based systems using GitHub Actions. Includes quality gates, security scanning, multi-version testing matrices, and artifact management for reproducible, traceable builds.
 
-To rigorously align the GitHub Actions workflow with your system architecture, quality strategy, and regulatory posture, please provide detailed responses to the following:
+## When to Use
 
-- **Project Taxonomy and Operational Role**: Define the architectural class and operational intent of the project (e.g., microservice API, distributed analytics engine, CLI automation tool). Include relevant dependency chains, concurrency models, or integration points.
-- **Python Runtime Spectrum**: Specify the complete range of Python interpreter versions that must be supported, tested, and validated.
-- **Enforcement Thresholds for Code Quality**: Articulate strict expectations for static formatting (Black), import structuring (isort), linting compliance (Flake8), and type completeness (MyPy), including code coverage requirements.
-- **Security Governance Constraints**: Indicate any internal compliance regimes, threat models, or industry-specific regulations (e.g., OWASP, NIST 800-53, ISO 27001) that must be enforced via Bandit or Safety scans.
-- **Testing Architecture Profile**: Describe the breadth and depth of the test suite, including coverage of unit, integration, async/event loop testing, mocking libraries, and fixture conventions.
-- **Artifact Durability and Observability**: Specify which test artifacts, coverage profiles, and scan outputs must persist beyond the job context and be accessible for audit, regression analysis, or developer triage.
-- **Deployment Coupling Strategy**: Clarify whether pipeline-triggered deployments should be tag-based, branch-gated, or conditioned on minimum quality and security thresholds.
-- **Tooling Ecosystem Requirements**: Enumerate any additional linters, code analyzers, secrets scanners, or organizational pre-commit policies that must be integrated.
+**Ideal Scenarios:**
+- Setting up CI/CD for new Python projects (APIs, libraries, CLIs)
+- Adding quality gates and security scanning to existing pipelines
+- Implementing multi-version Python testing matrices
+- Configuring code coverage thresholds and static analysis automation
 
-These inputs will facilitate the construction of a traceable, deterministic, and security-conscious CI/CD apparatus for Python codebases.
-
----
-
-## Foundational Requirements
-
-- **Multi-Version Runtime Validation**: Matrix test execution across Python 3.10, 3.11, and 3.12 for future-proofing and regression control.
-- **Stylistic and Structural Enforcement**: Canonicalize formatting via Black, ensure deterministic imports via isort, and enforce idiomatic style rules via Flake8.
-- **Static Typing Conformance**: Execute strict type checking with MyPy using `disallow_untyped_defs` and `disallow_incomplete_defs` for API contract reliability.
-- **Vulnerability Surface Analysis**: Perform source-level scan with Bandit and dependency-level analysis with Safety, both in fail-safe and non-blocking modes.
-- **Test Coverage Instrumentation**: Integrate Pytest with multi-format coverage outputs (HTML, XML, terminal) and enforce coverage thresholds at or above 80%.
-- **Audit Trail Preservation**: Upload all security, quality, and coverage artifacts as first-class CI outputs.
-- **Scheduled Regression Detection**: Execute the full pipeline nightly via GitHub’s `cron` schedule for stale dependency detection and drift analysis.
+**Anti-patterns (Don't Use For):**
+- Non-Python projects (use language-specific templates)
+- Manual deployment workflows without automation goals
+- Projects without automated testing requirements
 
 ---
 
-## Canonical GitHub Actions Workflow
+## Prompt
+
+```xml
+<role>
+You are a DevOps Engineer specializing in Python CI/CD pipelines with deep expertise in GitHub Actions, static analysis tooling, security scanning, and quality gate configuration. You build reproducible, traceable pipelines that catch issues early and enable confident deployments.
+</role>
+
+<context>
+Modern Python projects require comprehensive CI/CD covering code formatting, linting, type checking, security scanning, and multi-version testing. GitHub Actions provides the platform for automating these checks on every push and pull request, with scheduled runs for drift detection.
+</context>
+
+<input_handling>
+Required inputs:
+- Project type and architecture (API, CLI, library, microservice)
+- Python version requirements (which versions to support)
+- Testing and quality expectations (coverage thresholds, strictness)
+
+Infer if not provided:
+- CI/CD platform: GitHub Actions
+- Coverage threshold: 80% minimum
+- Security scanning: Bandit (SAST) + Safety (dependency scanning)
+- Formatting: Black + isort
+- Linting: Flake8 + MyPy for type checking
+</input_handling>
+
+<task>
+Design a comprehensive CI/CD pipeline for Python projects:
+
+1. Configure multi-version Python matrix testing (typically 3.10, 3.11, 3.12)
+2. Implement code formatting enforcement using Black and isort with check mode
+3. Set up linting with Flake8 and strict type checking with MyPy
+4. Configure security scanning with Bandit (SAST) and Safety (dependency vulnerabilities)
+5. Integrate test coverage with threshold enforcement and reporting
+6. Set up artifact preservation for audit trails and debugging
+7. Configure scheduled regression runs for detecting dependency drift
+</task>
+
+<output_specification>
+Format: GitHub Actions workflow with pyproject.toml configuration
+Length: 500-1500 words with complete YAML examples
+Structure:
+- Workflow file (.github/workflows/ci.yml) with full job definitions
+- Tool configuration (pyproject.toml sections for each tool)
+- Requirements-dev.txt with pinned development dependencies
+- Usage notes explaining customization options
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- Pipeline validates successfully across all declared Python versions
+- Code quality enforced through formatting, linting, and type checking
+- Coverage threshold enforced with clear failure messages
+- Security scan artifacts captured for compliance audit
+- Caching configured for faster subsequent runs
+
+Avoid:
+- Non-deterministic builds with unpinned dependencies
+- Missing artifact preservation for debugging failed runs
+- Blocking on non-critical warnings without override documentation
+- Ignoring scheduled runs for regression and drift detection
+</quality_criteria>
+
+<constraints>
+- All tools must be configurable via pyproject.toml where supported
+- Security scans should not block pipeline on informational findings
+- Artifacts must be retained for compliance (minimum 30 days)
+- Matrix builds should fail fast to reduce compute usage
+</constraints>
+```
+
+---
+
+## Example Usage
+
+### Input
+
+We're building a FastAPI microservice API with PostgreSQL. Need to support Python 3.11 and 3.12. We have async tests with pytest-asyncio. Want 85% coverage minimum, strict type checking, and SOC 2 compliance for security scanning. Using GitHub Actions.
+
+### Output
+
+**GitHub Actions Workflow (.github/workflows/ci.yml)**
 
 ```yaml
-name: Python Code Quality
+name: Python CI/CD
 
 on:
   push:
@@ -51,25 +121,27 @@ on:
   pull_request:
     branches: [main, develop]
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 2 * * *"  # Daily regression at 2 AM UTC
 
 jobs:
   quality-check:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: true
       matrix:
-        python-version: ["3.10", "3.11", "3.12"]
+        python-version: ["3.11", "3.12"]
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
 
@@ -80,130 +152,95 @@ jobs:
         run: isort --check-only --diff .
 
       - name: Linting (Flake8)
-        run: |
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+        run: flake8 . --max-complexity=10 --max-line-length=88
 
       - name: Type checking (MyPy)
-        run: mypy .
+        run: mypy . --strict
 
-      - name: Static security scan (Bandit)
-        run: |
-          bandit -r . -f json -o bandit-report.json
-          bandit -r . -f txt
+      - name: Security scan (Bandit)
+        run: bandit -r src/ -f json -o bandit-report.json
         continue-on-error: true
 
-      - name: Dependency vulnerability scan (Safety)
-        run: |
-          safety check --json --output safety-report.json
-          safety check
+      - name: Dependency scan (Safety)
+        run: safety check --json > safety-report.json
         continue-on-error: true
 
-      - name: Test execution with coverage
-        run: pytest --cov=. --cov-report=html --cov-report=xml --cov-report=term
+      - name: Tests with coverage
+        run: |
+          pytest --cov=src --cov-report=xml --cov-report=term --cov-fail-under=85
 
-      - name: Upload to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          file: ./coverage.xml
-          flags: unittests
-          name: codecov-umbrella
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload security artifacts
+        uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: test-results-${{ matrix.python-version }}
+          name: security-reports-${{ matrix.python-version }}
           path: |
-            htmlcov/
-            coverage.xml
             bandit-report.json
             safety-report.json
+          retention-days: 90
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-${{ matrix.python-version }}
+          path: coverage.xml
+          retention-days: 30
 ```
 
----
-
-## pyproject.toml: Unified Configuration Schema
+**pyproject.toml Configuration**
 
 ```toml
-[build-system]
-requires = ["setuptools>=45", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [tool.black]
 line-length = 88
-target-version = ['py310', 'py311', 'py312']
-include = '\.pyi?$'
+target-version = ['py311', 'py312']
 
 [tool.isort]
 profile = "black"
 line_length = 88
-multi_line_output = 3
-include_trailing_comma = true
-
-[tool.mypy]
-python_version = "3.10"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
-
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "-ra -q --strict-markers --strict-config"
-testpaths = ["tests"]
-python_files = ["test_*.py", "*_test.py"]
 
 [tool.coverage.run]
-source = ["src", "."]
-omit = ["tests/*", "setup.py", "venv/*", ".venv/*"]
+source = ["src"]
 branch = true
+omit = ["*/tests/*", "*/__pycache__/*"]
 
 [tool.coverage.report]
+fail_under = 85
 show_missing = true
-skip_covered = false
-fail_under = 80
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
 
 [tool.bandit]
-exclude_dirs = ["tests", "venv", ".venv"]
-skips = ["B101", "B601"]
+exclude_dirs = ["tests", "venv"]
+skips = ["B101"]  # Skip assert warnings in tests
+```
+
+**requirements-dev.txt**
+
+```
+black==24.1.0
+isort==5.13.0
+flake8==7.0.0
+mypy==1.8.0
+bandit==1.7.7
+safety==2.3.5
+pytest==8.0.0
+pytest-asyncio==0.23.0
+pytest-cov==4.1.0
 ```
 
 ---
 
-## Development Dependency Manifest
+## Related Prompts
 
-```
-black>=23.9.1
-isort>=5.12.0
-flake8>=6.1.0
-mypy>=1.5.1
-bandit[toml]>=1.7.5
-safety>=2.3.5
-pytest>=7.4.2
-pytest-cov>=4.1.0
-pytest-asyncio>=0.21.1
-pre-commit>=3.4.0
-coverage[toml]>=7.3.2
-```
-
----
-
-## Evaluation Criteria
-
-- ✅ Pipeline validates across all declared Python versions
-- ✅ Code conforms to type, linting, and formatting constraints
-- ✅ Coverage threshold enforced and reported
-- ✅ Security scan artifacts captured and optionally surfaced
-- ✅ Pipeline runs are observable, deterministic, and auditable
-- ✅ Execution performance is optimized through dependency caching
-
----
-
-## Quality Standards
-
-- **Reproducibility**: Execution is idempotent across runners and environments
-- **Traceability**: Every build artifact and scan result must be linkable to its commit
-- **Security Enforcement**: Vulnerabilities must be logged, classified, and optionally escalated
-- **Policy Compliance**: Workflow must enforce PEP8, typing integrity, and CVE compliance
-- **Maintainability**: All configurations must remain modular, version-controlled, and testable
+- [Deployment Pipeline Creation Expert](../technical-workflows/deployment-pipeline-creation-expert.md) - Full deployment automation
+- [Test Strategy Development Expert](../technical-workflows/test-strategy-development-expert.md) - Comprehensive testing strategies
+- [DevOps Workflow Design Expert](../technical-workflows/devops-workflow-design-expert.md) - End-to-end DevOps practices

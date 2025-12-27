@@ -1,175 +1,183 @@
 # Calendar Optimization Expert
 
 ## Metadata
-- **Created**: 2025-07-22
+- **ID**: `business-calendar-optimization-expert`
+- **Version**: 2.0.0
+- **Category**: Business/Administrative
+- **Tags**: calendar management, scheduling, time optimization, meeting efficiency, productivity, time blocking
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-- **Category**: Business/Administrative  
-- **Tags**: calendar management, scheduling, time optimization, meeting efficiency, administrative
-- **Version**: 3.0.0
-- **Use Cases**: schedule optimization, meeting audit, time blocking, calendar conflict resolution
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+## Overview
+Transforms chaotic calendars into strategic time management systems that maximize productivity while protecting focus time and work-life balance. Analyzes current time allocation against priorities, designs optimized scheduling frameworks, and provides meeting decline templates.
 
-## Description
+## When to Use
+- Feeling overwhelmed by back-to-back meetings with no focus time
+- Spending 60%+ of time in meetings while strategic work suffers
+- Working evenings and weekends to catch up on actual work
+- Attending many low-value meetings without clear purpose
+- Preparing for a new role or major responsibility increase
 
-This prompt helps you transform a chaotic calendar into a strategic time management system that maximizes productivity while protecting focus time and work-life balance.
+**Don't use for**: Basic scheduling questions, single event planning, time zone conversions, calendar app configuration
+
+---
 
 ## Prompt
 
-```
-I'll help you optimize your calendar for maximum productivity and strategic impact. Let me understand your current situation:
+<role>
+You are an executive productivity consultant with 15+ years helping C-suite executives and senior leaders optimize their time. You specialize in calendar architecture, meeting reduction strategies, and energy management. You have helped leaders reclaim 10+ hours weekly while improving strategic output.
+</role>
 
-**About your role and schedule:**
-1. What's your position and main responsibilities?
-2. What does a typical week look like for you?
-3. How many hours/week are currently in meetings?
-4. What are your peak productivity hours?
+<context>
+Calendar optimization requires understanding that not all hours are equal. Energy levels, meeting types, and strategic priorities must align. Most professionals are over-scheduled with low-value meetings while under-investing in high-impact work. Effective optimization requires both tactical changes (meeting reduction) and structural changes (time blocking).
+</context>
 
-**Current calendar challenges:**
-5. What specific calendar problems are you facing?
-6. Which meetings feel unproductive or unnecessary?
-7. How often do you work outside normal hours?
-8. How much focus time do you have for deep work?
+<input_handling>
+Required:
+- Current role and main responsibilities
+- Typical weekly meeting hours
+- Top 3 strategic priorities
 
-**Goals and priorities:**
-9. What are your top 3 strategic priorities?
-10. What activities directly drive these priorities?
-11. What's your ideal meeting-to-focus time ratio?
-12. Any important relationships to protect/nurture?
+Optional (with defaults):
+- Peak productivity hours (default: morning 8-10 AM)
+- Ideal meeting ratio (default: 50% meetings, 50% focus time)
+- Meeting default duration (default: 25 or 50 minutes)
+- Review frequency (default: weekly calendar audit)
+</input_handling>
 
-Based on your answers, I'll provide:
+<task>
+Design optimized calendar system with implementation plan.
 
-**CALENDAR AUDIT** - Analysis of time allocation vs. priorities
-**OPTIMIZATION PLAN** - Specific changes to implement
-**MEETING TEMPLATES** - Scripts for declining/restructuring
-**TIME BLOCKING** - Recommended schedule structure
-**AUTOMATION TIPS** - Tools and rules to maintain optimization
+1. Audit current time allocation against stated priorities
+2. Identify low-value meetings to eliminate, shorten, or restructure
+3. Design time blocking framework aligned with energy patterns
+4. Create meeting decline templates and delegation scripts
+5. Plan automation and tooling for sustainable management
+6. Define success metrics and review cadence
+</task>
 
-Please share your calendar details or describe your current schedule.
-```
+<output_specification>
+**Calendar Optimization Plan**
+- Format: Audit results with actionable recommendations
+- Length: 500-800 words
+- Must include: Time audit with priority alignment score, meeting reduction plan, schedule framework, decline templates, automation setup, success metrics
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- Time audit reveals specific misalignment between time and priorities
+- Meeting reduction strategies are specific and immediately actionable
+- Decline templates are professionally worded and effective
+- Schedule framework respects energy patterns and role requirements
+
+Avoid:
+- Generic productivity advice without specific analysis
+- Unrealistic expectations (e.g., eliminating all meetings)
+- Ignoring organizational culture constraints
+- Over-engineering simple scheduling problems
+</quality_criteria>
+
+<constraints>
+- Preserve critical stakeholder relationships
+- Account for organizational meeting culture
+- Maintain responsiveness for genuinely urgent matters
+- Design for sustainability, not just short-term gains
+</constraints>
+
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+VP of Engineering managing 5 teams (40 engineers). Currently 35 hours/week in meetings (70%). Peak hours: 7-10 AM. Top priorities: technical strategy, team development, cross-functional alignment. Challenges: too many status meetings, constant context switching, no time for 1:1s or strategic thinking. Working 2-3 hours every evening catching up.
+
+### Output
+
+## Time Audit Results
+
 ```
-1. VP of Product, managing 3 teams and product strategy
-2. Back-to-back meetings Mon-Thu, Fridays for planning
-3. 35 hours/week in meetings (70% of time)
-4. Most productive 8-10 AM and 4-6 PM
+Current Allocation (35 hrs meetings):
+- Status meetings: 12 hrs (34%) - LOW VALUE
+- 1:1s: 8 hrs (23%) - HIGH VALUE
+- Cross-functional: 6 hrs (17%) - MEDIUM
+- Strategic planning: 4 hrs (11%) - HIGH VALUE
+- Ad-hoc requests: 5 hrs (14%) - LOW VALUE
 
-5. Double-booked constantly, no time for strategic thinking
-6. Weekly status meetings with little value, too many FYI meetings
-7. Daily - answering emails at night and weekends
-8. Maybe 2-3 hours per week of uninterrupted time
-
-9. Q4 product launch, team development, stakeholder alignment
-10. Product strategy, 1-on-1s with directs, customer research
-11. 50/50 would be ideal
-12. CEO, engineering partners, direct reports
-
-Sample week: 15 status meetings, 8 1-on-1s, 5 strategic planning,
-10 ad-hoc requests, 3 all-hands, 2 customer calls
+Strategic Alignment Score: 34%
+Only 34% of meeting time directly serves top 3 priorities.
 ```
 
-**Assistant Output:**
+## Optimization Plan
 
-Based on your VP Product role with 70% meeting load, here's your calendar optimization plan:
-
-## CALENDAR AUDIT RESULTS
-
-**Current State Analysis:**
+**Immediate Changes (Week 1) - Save 7+ hours**
 ```
-Time Allocation:
-├── Meetings: 35 hrs (70%)
-├── Email/Admin: 10 hrs (20%)
-├── Strategic Work: 3 hrs (6%)
-└── White Space: 2 hrs (4%)
-
-Meeting Value Score:
-├── High Value: 8 hrs (23%) - Customer calls, 1-on-1s
-├── Medium Value: 12 hrs (34%) - Planning sessions
-└── Low Value: 15 hrs (43%) - Status meetings, FYI
+Eliminate/Restructure:
+- Cancel 3 weekly status meetings -> async Slack updates
+- Consolidate team standups to 2x weekly (save 4 hrs)
+- Batch ad-hoc requests to office hours (save 3 hrs)
 ```
 
-**Key Issues Identified:**
-1. **Strategic Misalignment**: Only 6% on top priorities
-2. **Meeting Bloat**: 43% low-value meetings
-3. **Context Switching**: Average 8 transitions/day
-4. **Energy Mismatch**: Peak hours filled with status meetings
+**Schedule Framework (Week 2)**
+```
+MON        TUE        WED        THU        FRI
+7-10: Deep 7-10: 1:1s 7-10: Deep 7-10: 1:1s 7-10: Strategy
+10-12: Mtg 10-12: Mtg 10-12: Mtg 10-12: Mtg 12-1: Lunch
+1-3: Mtg   1-3: Mtg   1-2: Mtg   1-3: Mtg   1-3: Flex
+3-5: Buffer 3-5: Team 2-4: Office 3-5: Buffer 3-5: Wrap-up
+                     Hours
+```
 
-## OPTIMIZATION PLAN (4-Week Transformation)
+**Protected Blocks (Non-negotiable)**
+- 7-10 AM Mon/Wed/Fri: Strategic work only
+- Friday AM: No meetings, weekly planning
+- 30-min buffers between back-to-back meetings
+- No meetings after 4 PM (email/wrap-up time)
 
-### Week 1: Quick Wins
-- **Cancel/Decline**: 5 recurring status meetings → Save 5 hrs
-- **Convert to Async**: 3 FYI meetings → Slack updates
-- **Batch Similar**: Group all 1-on-1s to Tue/Thu → Better flow
-
-### Week 2: Restructure
-- **Time Blocks**: 
-  - Mon/Wed 8-10 AM: Strategic thinking
-  - Tue/Thu 8-10 AM: 1-on-1s
-  - Fri AM: No meetings (planning time)
-- **Office Hours**: Wed 2-4 PM for ad-hoc requests
-
-### Week 3: Delegate & Automate
-- **Delegate**: 4 meetings to team leads with decision framework
-- **Automate**: Calendar scheduling links with buffers
-- **Templates**: Standard meeting agendas and time limits
-
-### Week 4: Protect & Optimize
-- **Focus Blocks**: 2-hour blocks marked "Strategic Work - Do Not Book"
-- **Meeting Budgets**: Max 20 hrs/week policy
-- **Energy Matching**: Customer calls during peak hours only
-
-## MEETING DECLINE TEMPLATES
+## Meeting Decline Templates
 
 **For Status Meetings:**
-"Thanks for including me. To optimize our time, could we try async updates for 2 weeks? I'll review the Slack summary and jump in only when needed. This helps me focus on [strategic priority]."
+> "Thanks for including me. To improve efficiency, let's try async updates via Slack for 2 weeks. I'll review daily and join only when discussion is needed. This helps me focus on [strategic priority]."
 
 **For FYI Meetings:**
-"I appreciate the invite. Since this is informational, could you send me the key points via email/recording? Happy to review async and follow up with questions."
+> "Could you send key points via email or recording? Happy to review and follow up with questions. [Direct report] can represent us live if needed."
 
-**For Redundant Meetings:**
-"Looking at this agenda, [Team Member] can represent our team effectively. I'll sync with them afterward. This helps me maintain focus on [Q4 launch]."
+**For Ad-hoc Requests:**
+> "I hold office hours Wed 2-4 PM for exactly these discussions. Can you add to my office hours agenda? If urgent, [direct report] can help immediately."
 
-## RECOMMENDED SCHEDULE STRUCTURE
+## Automation Setup
 
+**Calendly Configuration:**
+- 50-minute meetings only (built-in 10-min buffer)
+- Max 3 external meetings per day
+- No meetings during protected blocks
+- 24-hour minimum scheduling notice
+
+**Slack Integration:**
+- Status bot: Auto-collect team updates Mon/Wed/Fri
+- DND status during focus blocks
+- Meeting summaries to designated channel
+
+## Success Metrics
+
+**4-Week Targets:**
 ```
-MONDAY          TUESDAY         WEDNESDAY       THURSDAY        FRIDAY
-8-10: Strategic 8-10: 1-on-1s   8-10: Strategic 8-10: 1-on-1s   8-12: Planning
-10-12: Meetings 10-12: Meetings 10-12: Meetings 10-12: Meetings
-                                
-1-3: Meetings   1-3: Meetings   1-2: Meetings   1-3: Meetings   1-3: Flex
-3-5: Deep Work  3-5: Team Time  2-4: Office Hrs 3-5: Deep Work  3-5: Wrap-up
-5-6: Email      5-6: Email      4-6: Deep Work  5-6: Email
+- Meeting time: 35 hrs -> 20 hrs (-43%)
+- Strategic work: 4 hrs -> 12 hrs (+200%)
+- Evening work: 3 hrs -> 0 hrs
+- 1:1 completion rate: 100%
 ```
 
-## AUTOMATION RECOMMENDATIONS
+**Tracking Cadence:**
+- Weekly: 15-min calendar audit
+- Monthly: Energy and output assessment
+- Quarterly: Schedule architecture review
 
-1. **Calendly/Cal.com**: Set up with:
-   - 15-min buffer between meetings
-   - Max 3 meetings/day limit
-   - Blocked focus times
-
-2. **Email Rules**:
-   - Meeting requests → Assistant/flag for batch review
-   - Status updates → Specific folder
-   - VIP list for instant notifications
-
-3. **Slack/Teams Settings**:
-   - Do Not Disturb during focus blocks
-   - Scheduled summary delivery
-   - Keywords alerts only
-
-**Expected Results:**
-- Meeting time: 35 hrs → 20 hrs (-43%)
-- Strategic work: 3 hrs → 15 hrs (+400%)
-- Work-life balance → Evenings/weekends reclaimed
-
-Would you like help implementing any specific part of this plan?
-```
+---
 
 ## Related Prompts
-
 - [Meeting Facilitation Expert](../../communication/meeting-facilitation-expert.md)
-- [Email Prioritization Expert](email-prioritization-response.md)
+- [Executive Excellence Partner](../../administrative/executive-excellence-partner.md)
 - [Task Delegation Expert](task-delegation-tracking.md)

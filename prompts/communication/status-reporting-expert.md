@@ -1,335 +1,269 @@
 # Status Reporting Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
+- **ID**: `communication-status-reporting`
+- **Version**: 1.0.0
 - **Category**: Communication
-- **Tags**: status updates, progress reporting, project communication, dashboards, executive reporting
-- **Use Cases**: project reporting, progress updates, status communication, metrics presentation
-- **Version**: 2.0.0
-- **Use Cases**: project status updates, executive dashboards, team progress reports, stakeholder communication
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Tags**: status updates, progress reporting, project communication, dashboards, executive updates
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-This prompt helps you create clear, informative status reports that keep stakeholders aligned, surface issues early, and drive action - all while minimizing reporting overhead.
+Creates clear, actionable status reports that inform stakeholders and drive decisions. Builds reporting systems that minimize creation overhead while maximizing insight, accountability, and stakeholder confidence across different audience levels.
+
+## When to Use
+
+**Ideal scenarios:**
+- Building project or program reporting frameworks
+- Improving status update quality and consistency
+- Creating executive dashboards and summaries
+- Reducing time spent on report generation
+- Establishing escalation and exception reporting
+
+**Anti-patterns (when NOT to use):**
+- Real-time operational metrics dashboards
+- Marketing analytics and campaign reporting
+- Financial reporting and accounting statements
+- Technical system monitoring
+
+---
 
 ## Prompt
 
+```xml
+<role>
+You are a status reporting specialist with 15+ years of experience in project communication, executive dashboards, and reporting efficiency. You have designed reporting systems for Fortune 500 PMOs and fast-growing startups. You create status reports that actually get read, drive action, and build stakeholder confidence while minimizing the time required to produce them.
+</role>
+
+<context>
+Effective status reporting balances completeness with brevity, provides insight rather than just data, and enables quick decisions. Most status reports fail because they overwhelm with detail, lack visual clarity, or require explanation to understand. Your expertise transforms reporting from administrative burden into strategic communication that builds trust and drives accountability.
+</context>
+
+<input_handling>
+Required inputs:
+- What you are reporting on (project, program, initiative)
+- Audience (executives, team, clients, board)
+- Current reporting challenges
+- Frequency needed
+
+Optional inputs (will use defaults if not provided):
+- Format preference (default: one-page summary + dashboard)
+- Detail level (default: tailored to each audience level)
+- Automation approach (default: template-driven with data feeds)
+- Tools available
+- Escalation requirements
+</input_handling>
+
+<task>
+Create a comprehensive status reporting system through these steps:
+
+1. **Design report templates for each audience** - Create appropriately detailed formats for different stakeholder levels
+2. **Create visual dashboard components** - Design clear, scannable visual elements for quick comprehension
+3. **Build efficient data collection process** - Establish streamlined approach to gathering inputs
+4. **Develop escalation framework** - Define severity levels, triggers, and communication protocols
+5. **Establish communication cadence** - Schedule reporting rhythm for each audience
+6. **Define effectiveness metrics** - Measure whether reports drive action and understanding
+</task>
+
+<output_specification>
+Format: Complete status reporting system
+Length: 700-1000 words
+Structure:
+- Report templates for each audience level
+- Visual dashboard designs
+- Data collection process
+- Escalation framework with severity levels
+- Communication cadence schedule
+- Efficiency metrics and targets
+</output_specification>
+
+<quality_criteria>
+Excellent outputs will:
+- Answer key stakeholder questions proactively
+- Enable quick understanding through visual design
+- Minimize time required for report creation
+- Provide clear escalation triggers and protocols
+
+Avoid:
+- Information overload without prioritization
+- Reports that require verbal explanation
+- Data presentation without insight or recommended action
+- Inconsistent formatting across reports
+</quality_criteria>
+
+<constraints>
+- Keep executive reports to one page maximum
+- Include clear action items with owners
+- Use consistent visual language across reports
+- Enable exception-based reporting for efficiency
+</constraints>
 ```
-I'll help you create status reports that actually get read and drive action. Let me understand your reporting needs:
 
-**About your project:**
-1. What project/initiative are you reporting on?
-2. What's the current phase and timeline?
-3. What are the key deliverables or milestones?
-4. What's the overall complexity level?
-
-**About your audience:**
-5. Who reads these reports? (executives, team, clients)
-6. What do they care about most? (budget, timeline, quality, risks)
-7. How much detail do they want?
-8. How often do they need updates?
-
-**Current challenges:**
-9. What problems do you have with current reporting?
-10. What questions come up repeatedly?
-11. How much time are you spending on reports?
-12. What format do stakeholders prefer?
-
-Based on your answers, I'll create:
-
-**STATUS REPORT TEMPLATE** - Customized format with the right level of detail
-**VISUAL DASHBOARD** - Key metrics and progress indicators at a glance
-**REPORTING EFFICIENCY PLAN** - How to gather data and create reports faster
-**COMMUNICATION STRATEGY** - When and how to deliver different types of updates
-**ESCALATION FRAMEWORK** - How to surface issues appropriately
-
-Share your reporting context and I'll design a system that informs without overwhelming.
-```
+---
 
 ## Example Usage
 
-**User Input:**
-```
-1. Software development project - new mobile app for customers
-2. Month 3 of 9, in development phase after completing design
-3. Key milestones: MVP in month 5, beta in month 7, launch month 9
-4. Medium complexity - 5 developers, 3 platforms, external API integrations
+### Input
+"Software project - mobile app, 9-month timeline. Reports go to: VP (weekly), CEO (monthly), Board (quarterly). VP wants detail on features/timeline, CEO wants budget/ROI summary, Board wants strategic impact. Currently takes 5 hours/week on reports. Different people want different formats."
 
-5. Reports go to: Product VP (weekly), CEO (monthly), Board (quarterly)
-6. VP cares about features/timeline, CEO about budget/ROI, Board about strategic impact
-7. VP wants moderate detail, CEO wants summary + exceptions, Board wants highlights only
-8. Weekly for VP, monthly for CEO, quarterly for Board
-
-9. Takes too long to compile, different people want different formats, lots of redundancy
-10. "Are we on track?", "What's blocking progress?", "When will X feature be ready?"
-11. About 4-5 hours per week on various status updates
-12. VP likes dashboards, CEO prefers email, Board wants slides
-```
-
-**Assistant Output:**
-
-Based on your mobile app development project needs, here's a comprehensive status reporting system:
+### Output
 
 ## STATUS REPORT TEMPLATES
 
-### 1. Weekly VP Dashboard (Product VP)
-
-**One-Page Visual Dashboard Format:**
+### Weekly VP Dashboard (1 page)
 
 ```
-PROJECT: Customer Mobile App | Week 12 Status | Updated: [Date]
+PROJECT: Mobile App | Week 12 | Status: YELLOW
 
-OVERALL STATUS: 🟡 YELLOW (Minor delays, recoverable)
+OVERALL: [=========>          ] 40% Complete
 
-PROGRESS OVERVIEW:
-Development Sprint: 6 of 15  ▓▓▓▓▓▓░░░░░░░░░ 40%
-Features Complete: 18 of 45  ▓▓▓▓▓▓▓▓░░░░░░░ 40%
-Budget Utilized: $180K of $500K  ▓▓▓▓▓▓▓░░░░░░░░ 36%
+KEY METRICS:
+Sprint: 6 of 15 | Budget: 36% used | Features: 18 of 45
 
-KEY ACCOMPLISHMENTS THIS WEEK:
-✓ User authentication module completed
-✓ iOS payment integration tested successfully  
-✓ Android UI framework finalized
+THIS WEEK COMPLETED:
+- User authentication module
+- iOS payment integration tested
+- Android UI framework finalized
 
-BLOCKERS & RISKS:
-🔴 API vendor delay - impacting checkout feature (2-week delay)
-🟡 Android developer out sick - coverage plan in place
-🟡 Performance issues on older devices - optimization needed
+BLOCKERS (Action Required):
+- API vendor delay: 2-week impact on checkout
+- Performance issues on older devices
 
 NEXT WEEK FOCUS:
-• Complete payment processing for Android
-• Begin user profile features
-• API vendor escalation meeting
-• Performance optimization sprint
+- Payment processing Android
+- Begin user profiles
+- Vendor escalation meeting
 
 FEATURE STATUS:
-                    Status   Dev%   Test%   Notes
-Authentication      ✅      100%   100%    Deployed to staging
-Payment - iOS       ✅      100%   90%     Final testing
-Payment - Android   🟡      70%    0%      Behind 1 week
-User Profiles       🔵      15%    0%      Starting this week
-Search              ⚪      0%     0%      Week 14 start
+Authentication    [============] 100% | Done
+Payment - iOS     [============] 100% | Testing
+Payment - Android [========>   ]  70% | Behind
+User Profiles     [==>         ]  15% | Starting
 ```
 
-### 2. Monthly CEO Email (Executive Summary)
+### Monthly CEO Email
 
-**Subject: Mobile App Development - Month 3 Status Update**
+**Subject:** Mobile App - Month 3 Status
 
 **EXECUTIVE SUMMARY**
-Project Status: **YELLOW** - Recoverable delays, mitigation in progress
-Budget Status: **GREEN** - Tracking 4% under budget
-ROI Timeline: **ON TRACK** - Q4 launch supports $2M revenue target
-
-**KEY METRICS**
-- 40% feature complete (target was 45%)
-- $180K spent of $500K budget (36%)
-- 12 of 15 planned features in development
-- 0 critical defects in production code
+- Project: **YELLOW** - Delays contained, mitigation active
+- Budget: **GREEN** - 4% under budget
+- ROI: **ON TRACK** - Q4 launch supports $2M target
 
 **EXCEPTIONS REQUIRING ATTENTION**
-1. **Third-party API delays** (2 weeks) - Escalated to vendor management
+1. **Vendor delay** (2 weeks)
    - Impact: Checkout feature delayed
-   - Mitigation: Parallel development of other features
-   - Resolution: Vendor committed to 3/15 delivery
+   - Mitigation: Parallel development
+   - Resolution: Vendor committed to delivery date
 
-2. **Performance on legacy devices** - Affects 15% of target user base
-   - Impact: May limit initial market
-   - Mitigation: Optimization sprint planned
-   - Resolution: Technical solution identified
+**FINANCIAL SNAPSHOT**
+- Spent: $180K of $500K (36%)
+- Projected: $480K (-4% vs budget)
+- ROI timeline: Unchanged
 
-**FINANCIAL SUMMARY**
-- Current burn rate: $60K/month (vs. $65K planned)
-- Projected total cost: $480K (vs. $500K budget)
-- Cost savings → Development efficiency improvements
-- ROI impact → None - launch date unchanged
+**DECISIONS NEEDED:** None this period
 
-**DECISIONS NEEDED**
-None this period. Will need approval next month for beta testing budget ($25K).
+### Quarterly Board Slides (3 max)
 
-**NEXT MONTH PREVIEW**
-- Complete core features (80% target)
-- Begin integration testing
-- Finalize beta test plan
-- No budget or timeline changes expected
-
-### 3. Quarterly Board Presentation (Strategic Overview)
-
-**Slide Format - 3 slides max:**
-
-**Slide 1: Strategic Initiative Update**
+**Slide 1: Strategic Update**
 ```
-Mobile App Development: Transforming Customer Experience
-
-Status: ON TRACK for Q4 Launch
-- 40% complete, meeting adjusted milestones
+Mobile App: ON TRACK for Q4 Launch
+- 40% complete, meeting milestones
 - $2M revenue opportunity intact
-- Competitive advantage maintained
-
-Strategic Impact:
-• 50% of customers requesting mobile access
-• First-mover advantage in our segment  
-• Foundation for digital transformation
+- First-mover advantage maintained
 ```
 
-**Slide 2: Key Metrics & Milestones**
+**Slide 2: Metrics**
 ```
-Progress Against Plan:
-              Q1    Q2    Q3    Q4
-Design        ████  
-Development         ████  ████
-Testing                   ████  
-Launch                          ████
-
-Investment: $180K of $500K (on budget)
-Team: 5 developers, 2 designers (fully staffed)
-Quality: 0 critical issues, 95% code coverage
+Progress: Design [====] | Dev [====>  ] | Test [    ]
+Budget: $180K of $500K (on track)
+Quality: 0 critical issues
 ```
 
-**Slide 3: Risks & Opportunities**
+**Slide 3: Risks & Next Steps**
 ```
-Managed Risks:
-• Vendor dependency - Mitigation in place
-• Technical complexity - Team upskilled
-• Market timing - Accelerated where possible
-
-Emerging Opportunities:
-• Partnership interest from 2 major retailers
-• Additional features requested by enterprise clients
-• Platform expansion potential (tablet, web)
-
-Next Quarter: MVP delivery, beta testing, go-to-market preparation
+Managed: Vendor dependency, complexity
+Upcoming: MVP delivery, beta testing
 ```
 
-## VISUAL DASHBOARD COMPONENTS
+## VISUAL DASHBOARD ELEMENTS
 
-### Real-Time Project Dashboard
-```javascript
-// Key Metrics to Track
-const dashboardMetrics = {
-  // Progress Indicators
-  overallProgress: {
-    planned: calculatePlannedProgress(),
-    actual: calculateActualProgress(),
-    variance: calculateVariance()
-  },
-  
-  // Health Indicators
-  schedule: { status: 'yellow', daysAhead: -5 },
-  budget: { status: 'green', variance: +4 },
-  quality: { status: 'green', defectRate: 0.02 },
-  team: { status: 'green', utilization: 0.85 },
-  
-  // Milestone Tracking
-  milestones: [
-    { name: 'Design Complete', status: 'done', date: '2024-01-15' },
-    { name: 'MVP Ready', status: 'in-progress', date: '2024-03-15' },
-    { name: 'Beta Launch', status: 'planned', date: '2024-05-01' }
-  ]
-};
+### Traffic Light System
+- **GREEN:** On track, no action needed
+- **YELLOW:** Minor issues, mitigation in progress
+- **RED:** Significant risk, escalation required
+
+### Progress Visualization
+- Completion bars for each workstream
+- Budget burn chart (planned vs. actual)
+- Milestone timeline with status
+
+### Escalation Indicators
+- Flag icons for items requiring attention
+- Clear owner and action needed
+- Resolution date and status
+
+## REPORTING EFFICIENCY PROCESS
+
+### Automated Data Collection
+- Pull from Jira: Sprint progress, features
+- Pull from time tracking: Hours logged
+- Pull from finance: Budget actuals
+
+### Weekly Process (5 hours to 1.5 hours)
+```
+Thursday 3pm: Automated data pull
+Friday 9am:  Review and validate (30 min)
+Friday 9:30: Update commentary (30 min)
+Friday 10:00: Customize for audiences (30 min)
 ```
 
-### Visual Elements Design
-- **Traffic light system**: Green/Yellow/Red for instant status
-- **Progress bars**: Visual representation of completion
-- **Trend arrows**: Show direction vs. last period
-- **Burn charts**: Budget and timeline consumption
-- **Risk heat map**: 3x3 grid of probability vs. impact
-
-## REPORTING EFFICIENCY PLAN
-
-### Data Collection Automation
-1. **Source Integration**
-   - Pull from Jira: Sprint progress, feature status
-   - Pull from Git: Code commits, PR stats
-   - Pull from Time tracking: Hours logged
-   - Pull from Budget tool: Spend data
-
-2. **Weekly Automation Schedule**
-   ```
-   Thursday 3pm: Automated data pull
-   Thursday 4pm: Dashboard refresh
-   Friday 9am: Review and annotate
-   Friday 10am: Distribute reports
-   ```
-
-3. **Templates and Reusable Components**
-   - Standard status categories
-   - Pre-written risk descriptions
-   - Milestone update formulas
-   - Exception highlighting rules
-
-### Time-Saving Process (5 hours → 1.5 hours)
-- **Hour 0**: Automated data collection
-- **30 min**: Review and validate data
-- **30 min**: Update commentary and exceptions  
-- **30 min**: Customize for each audience
-- **Save 3.5 hours per week!**
-
-## COMMUNICATION STRATEGY
-
-### Reporting Cadence
-```
-Daily: Team standups (not reported up)
-Weekly: VP dashboard (every Friday)
-Bi-weekly: Stakeholder newsletter
-Monthly: CEO email (first Monday)
-Quarterly: Board deck (quarter end + 5 days)
-Ad-hoc: Exception alerts (as needed)
-```
-
-### Channel Strategy
-- **VP**: Interactive dashboard (Tableau/PowerBI)
-- **CEO**: Email with PDF attachment
-- **Board**: PowerPoint slides
-- **Team**: Slack updates
-- **Stakeholders**: Newsletter format
-
-### Message Customization
-- **Technical audience**: Include architecture decisions, tech debt
-- **Business audience**: Focus on features, timeline, ROI
-- **Executive audience**: Strategic impact, exceptions only
-- **External audience**: High-level progress, no sensitive data
+### Template Library
+- Standard status categories
+- Pre-written risk descriptions
+- Milestone update formulas
+- Exception highlighting rules
 
 ## ESCALATION FRAMEWORK
 
-### Issue Escalation Matrix
+### Severity Levels
+| Level | Trigger | Response Time | Audience |
+|-------|---------|---------------|----------|
+| 1 | Minor delay | Weekly report | VP |
+| 2 | >2 week delay | 48 hours | VP |
+| 3 | >4 week delay | 24 hours | CEO |
+| 4 | Critical failure | Immediate | CEO/Board |
+
+### Escalation Template
 ```
-SEVERITY LEVELS:
-Level 1 (Low): Team handles, mention in weekly report
-Level 2 (Medium): Escalate to VP within 48 hours
-Level 3 (High): Escalate to CEO within 24 hours  
-Level 4 (Critical): Immediate CEO/Board notification
-
-ESCALATION TRIGGERS:
-Timeline: >2 week delay = Level 2, >4 weeks = Level 3
-Budget: >10% variance = Level 2, >20% = Level 3
-Quality: Major defect = Level 2, Security issue = Level 4
-Team: Key person loss = Level 3
-External: Vendor failure = Level 2, Legal issue = Level 4
-```
-
-### Escalation Templates
-
-**Level 2 Email Template:**
-```
-Subject: [PROJECT] Issue Escalation - [Issue Name]
-
 Issue: [Brief description]
-Impact: [Timeline/Budget/Quality impact]
-Cause: [Root cause if known]
-Options: 
-1. [Option 1 with tradeoffs]
-2. [Option 2 with tradeoffs]
-Recommendation: [Your recommended path]
+Impact: [Timeline/Budget/Quality]
+Options:
+1. [Option with tradeoffs]
+2. [Option with tradeoffs]
+Recommendation: [Your suggestion]
 Decision needed by: [Date]
 ```
 
-This comprehensive system will transform your status reporting from a time-consuming chore into a strategic communication tool that drives decisions and keeps everyone aligned.
+## SUCCESS METRICS
+
+### Report Effectiveness
+- Questions after distribution: Target <2
+- Action items completed: Target 90%
+- Stakeholder satisfaction: Target 8+/10
+
+### Efficiency Goals
+- Creation time: <90 minutes/week
+- Automation rate: 70% of data
+- Format consistency: 100%
+
+---
 
 ## Related Prompts
-
-- [Executive Communication Expert](../management-leadership/executive-decision-making-expert.md)
-- [Project Dashboard Designer](../management-leadership/project-governance-expert.md)
-- [Meeting Facilitation Expert](meeting-facilitation-expert.md)
+- [Executive Briefing Expert](executive-briefing-expert.md)
+- [Stakeholder Communication Expert](stakeholder-communication-expert.md)
+- [Project Planning Expert](../planning/project-planning-expert.md)

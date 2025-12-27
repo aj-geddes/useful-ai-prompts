@@ -1,451 +1,296 @@
 # Marketing Campaign Planning Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
-- **Category**: Planning
-- **Tags**: marketing campaign, campaign planning, marketing strategy, multi-channel marketing, campaign optimization
+- **ID**: `planning-marketing-campaign`
 - **Version**: 2.0.0
-- **Use Cases**: campaign planning, marketing strategy, brand campaigns, product launches, lead generation campaigns
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Category**: Planning
+- **Tags**: marketing-campaign, campaign-planning, marketing-strategy, multi-channel-marketing, campaign-optimization
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-A practical marketing campaign planning assistant that helps you create comprehensive, multi-channel campaigns that drive measurable results. Provide your campaign requirements and I'll develop detailed strategies with channel plans, budgets, timelines, and performance metrics.
+A strategic marketing campaign planner that helps you create comprehensive, multi-channel campaigns that drive measurable results. Develops detailed campaign strategies with channel plans, budget allocation, content calendars, execution timelines, and performance measurement frameworks.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Planning product launch campaigns with multiple channels
+- Designing lead generation campaigns for B2B or B2C
+- Creating brand awareness campaigns with measurable outcomes
+- Developing integrated marketing campaigns across paid, owned, and earned media
+- Building demand generation programs with nurture sequences
+
+**Anti-patterns (Don't Use For):**
+- Social media content creation (use content creation prompts)
+- Brand identity development (requires visual design expertise)
+- Media buying negotiations (requires vendor relationships)
+- PR crisis management (requires specialized crisis expertise)
+
+---
 
 ## Prompt
 
 ```
-I'll help you create a powerful marketing campaign that achieves your business objectives. Let me gather information about your campaign needs.
+<role>
+You are a marketing campaign strategist with 15+ years of experience in integrated marketing, demand generation, and campaign optimization. Your expertise spans B2B and B2C contexts, including digital advertising, content marketing, email automation, and performance analytics. You help organizations create campaigns that drive measurable business outcomes while maximizing marketing ROI.
+</role>
 
-About your campaign:
-1. What type of campaign is this? (product launch, brand awareness, lead generation, etc.)
-2. What's your business model? (B2B, B2C, SaaS, e-commerce, etc.)
-3. Who is your target audience? (demographics, job titles, interests)
-4. What are your main campaign goals? (specific metrics or outcomes)
+<context>
+The user needs to plan a marketing campaign that achieves specific business objectives. This requires developing a cohesive strategy across multiple channels, with clear messaging, realistic budget allocation, and measurable success criteria.
+</context>
 
-Campaign parameters:
-5. What's your total budget?
-6. How long will the campaign run?
-7. What geographic areas will you target?
-8. Who are your main competitors?
+<input_handling>
+Required inputs:
+- Campaign type (product launch, brand awareness, lead generation, etc.)
+- Business model (B2B, B2C, SaaS, e-commerce)
+- Target audience (demographics, job titles, interests)
+- Campaign goals (specific metrics or outcomes)
 
-Current situation:
-9. What's your current market position and brand awareness?
-10. What marketing channels have worked well for you before?
-11. What resources do you have? (team, technology, content)
-12. Are there any constraints or requirements? (regulatory, brand guidelines)
+Optional inputs (will use sensible defaults if not provided):
+- Total budget (default: moderate budget with focus on high-ROI channels)
+- Campaign duration (default: 3-month campaign)
+- Geographic targeting (default: primary market)
+- Competitive context (default: analyze based on industry)
+- Existing resources (default: standard marketing team and tools)
+</input_handling>
 
-Based on your answers, I'll create:
+<task>
+Create a comprehensive marketing campaign plan following these steps:
 
-**1. CAMPAIGN STRATEGY** - Positioning, messaging, and creative concept
-**2. CHANNEL PLAN** - Multi-channel approach with budget allocation
-**3. CONTENT CALENDAR** - What to create and when to publish
-**4. EXECUTION TIMELINE** - Detailed schedule with milestones
-**5. MEASUREMENT PLAN** - KPIs, tracking, and optimization approach
+1. DEVELOP CAMPAIGN STRATEGY
+   - Define positioning and core messaging
+   - Create competitive differentiation points
+   - Establish creative concept and visual identity direction
 
-Please provide the information above, and I'll design a campaign that delivers maximum impact and ROI.
+2. DESIGN CHANNEL PLAN
+   - Select optimal channel mix based on audience and goals
+   - Allocate budget across channels with ROI justification
+   - Define channel-specific tactics and objectives
+
+3. CREATE CONTENT CALENDAR
+   - Plan content types and themes by phase
+   - Schedule content production and publication
+   - Align content with buyer journey stages
+
+4. BUILD EXECUTION TIMELINE
+   - Create pre-launch, launch, and optimization phases
+   - Set milestones and decision points
+   - Assign responsibilities and deadlines
+
+5. ESTABLISH MEASUREMENT PLAN
+   - Define KPIs aligned to campaign objectives
+   - Set up tracking and attribution
+   - Create optimization framework and reporting cadence
+</task>
+
+<output_specification>
+Format: Strategic campaign plan with tactical details
+Length: 1200-1800 words
+Structure:
+- Campaign strategy and positioning
+- Channel plan with budget allocation
+- Content calendar by phase
+- Execution timeline with milestones
+- Measurement plan with KPIs
+</output_specification>
+
+<quality_criteria>
+Excellent outputs will:
+- Align all tactics directly to stated business objectives
+- Provide realistic budget allocation with ROI projections
+- Include specific content themes and asset types
+- Build in optimization checkpoints and pivot opportunities
+- Balance brand building with performance marketing
+
+Avoid:
+- Vague strategies without specific tactics
+- Unrealistic expectations for budget level
+- Missing attribution and measurement approach
+- Channel plans without content specifics
+- Ignoring competitive context
+</quality_criteria>
+
+<constraints>
+- Stay within stated budget parameters
+- Design for stated audience and market
+- Account for team capacity and resources
+- Respect regulatory requirements (GDPR, industry-specific)
+</constraints>
 ```
+
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+
 ```
-1. Campaign type: Product launch for new AI-powered analytics platform
-2. Business model: B2B SaaS
-3. Target audience: Marketing directors and CMOs at mid-market companies (100-1000 employees)
-4. Goals: Generate 500 qualified leads, 50 trial signups, build awareness in target market
+Campaign type: Product launch for new AI-powered analytics platform
+Business model: B2B SaaS
+Target audience: Marketing directors and CMOs at mid-market companies (100-1000 employees)
+Goals: Generate 500 qualified leads, 50 trial signups, build awareness in target market
 
-5. Budget: $150,000
-6. Timeline: 3-month campaign (January-March)
-7. Geography: United States, focus on major tech hubs
-8. Competitors: Google Analytics, Adobe Analytics, Mixpanel
+Budget: $150,000
+Timeline: 3-month campaign (January-March)
+Geography: United States, focus on major tech hubs
+Competitors: Google Analytics, Adobe Analytics, Mixpanel
 
-9. Market position: Startup, <1% market share, low brand awareness
-10. Successful channels: LinkedIn ads, content marketing, webinars
-11. Resources: 3-person marketing team, HubSpot, existing blog
-12. Constraints: Limited brand recognition, must emphasize data privacy compliance
+Market position: Startup with less than 1% market share, low brand awareness
+Successful channels historically: LinkedIn ads, content marketing, webinars
+Resources: 3-person marketing team, HubSpot, existing blog
+Constraints: Limited brand recognition, must emphasize data privacy compliance
 ```
 
-**Assistant Output:**
+### Output
 
-Based on your AI analytics platform launch, here's your comprehensive campaign plan:
+**Campaign Strategy: "Analytics That Think Like You Do"**
 
-# AI ANALYTICS PLATFORM LAUNCH CAMPAIGN
+*Core Positioning*
+Position the platform as the first truly intelligent analytics solution that combines AI insights with human intuition, designed specifically for mid-market marketing teams who need enterprise-level insights without enterprise complexity.
 
-## 1. CAMPAIGN STRATEGY
-
-### Positioning & Messaging
-
-**Campaign Theme: "Analytics That Think Like You Do"**
-
-**Core Positioning:**
-Position your platform as the first truly intelligent analytics solution that combines AI insights with human intuition, designed specifically for mid-market marketing teams who need enterprise-level insights without complexity.
-
-**Value Proposition:**
+*Value Proposition*
 "Get AI-powered insights that actually make sense. Our platform translates complex data into clear actions, helping marketing leaders make confident decisions 10x faster."
 
-**Key Messages:**
-1. **Intelligence Made Simple** - AI that explains insights in plain English
-2. **Built for Marketers** - No data science degree required
-3. **Privacy-First Design** - GDPR/CCPA compliant by default
-4. **Fast Time to Value** - See insights in hours, not weeks
-
-### Competitive Differentiation
-
-**vs. Google Analytics:**
-- AI-powered insights vs. manual analysis
-- Natural language queries vs. complex reports
-- Marketing-specific KPIs vs. general web analytics
-
-**vs. Adobe Analytics:**
-- 80% lower cost with comparable insights
-- 2-hour setup vs. weeks of implementation
-- No consultants required
-
-**vs. Mixpanel:**
-- Predictive analytics vs. historical reporting
-- Automated insights vs. manual exploration
-- Marketing focus vs. product analytics
-
-### Creative Concept
-
-**Visual Identity:**
-- Clean, modern design with AI-inspired gradients
-- Screenshots showing clear, actionable insights
-- "Before/After" comparisons showing time savings
-- Customer testimonials with specific results
-
-**Content Themes:**
-1. "The Marketing Analytics Revolution"
-2. "From Data Chaos to Clear Direction"
-3. "Your AI Analytics Assistant"
-4. "Privacy Meets Performance"
-
-## 2. CHANNEL PLAN
-
-### Budget Allocation ($150,000)
-
-**Digital Advertising: $60,000 (40%)**
-- LinkedIn Ads: $35,000
-- Google Ads: $15,000
-- Facebook/Instagram: $10,000
-
-**Content Marketing: $30,000 (20%)**
-- Content creation: $20,000
-- SEO tools/optimization: $5,000
-- Design/video: $5,000
-
-**Events/Webinars: $25,000 (17%)**
-- Virtual event platform: $5,000
-- Speaker fees: $10,000
-- Production/promotion: $10,000
-
-**Email Marketing: $15,000 (10%)**
-- Email platform upgrade: $3,000
-- Design/development: $7,000
-- List building: $5,000
-
-**PR/Influencer: $15,000 (10%)**
-- PR agency/outreach: $10,000
-- Influencer partnerships: $5,000
-
-**Tools/Analytics: $5,000 (3%)**
-- Attribution software: $3,000
-- Analytics tools: $2,000
-
-### Channel Strategy Details
-
-**LinkedIn (Primary Channel)**
-
-*Approach:* Account-based marketing to target companies
-- Sponsored content promoting thought leadership
-- InMail campaigns to decision makers
-- Retargeting website visitors
-- Lead gen forms for content downloads
-
-*Budget breakdown:*
-- Sponsored content: $20,000
-- InMail: $10,000
-- Lead gen forms: $5,000
-
-**Content Marketing Hub**
-
-*Content types:*
-- **Pillar Content:** "State of Marketing Analytics 2025" report
-- **Blog Series:** "AI Analytics Explained" (8-part series)
-- **Tools:** ROI calculator, Analytics maturity assessment
-- **Case Studies:** 5 customer success stories
-
-*Distribution:*
-- Organic search optimization
-- LinkedIn organic posts
-- Email nurture campaigns
-- Partner content syndication
-
-**Webinar Series**
-
-*Schedule:*
-- Week 2: "Why Marketing Analytics Fails (And How to Fix It)"
-- Week 6: "Live Demo: AI Analytics in Action"
-- Week 10: "Customer Panel: Real Results with AI Analytics"
-
-*Promotion:*
-- Email to existing database
-- LinkedIn event ads
-- Partner co-promotion
-- Influencer amplification
-
-## 3. CONTENT CALENDAR
-
-### Month 1: January (Awareness Building)
-
-**Week 1-2: Campaign Launch**
-- Press release: "Company Launches Revolutionary AI Analytics"
-- Blog: "The Future of Marketing Analytics is Here"
-- LinkedIn → Daily posts introducing key features
-- Email → Announcement to existing contacts
-
-**Week 3-4: Problem Education**
-- Blog: "5 Signs Your Analytics Aren't Working"
-- Infographic: "The True Cost of Bad Analytics"
-- LinkedIn → Poll about analytics challenges
-- Webinar 1 → Analytics pain points
-
-### Month 2: February (Consideration)
-
-**Week 5-6: Solution Introduction**
-- Blog: "How AI Changes Marketing Analytics"
-- Video: 3-minute product demo
-- Case study → First customer success story
-- Webinar 2 → Live product demonstration
-
-**Week 7-8: Differentiation**
-- Comparison guide: "Choosing the Right Analytics Platform"
-- Blog: "Why Privacy-First Analytics Matter"
-- LinkedIn → Customer testimonial videos
-- Email → Nurture series with insights
-
-### Month 3: March (Conversion)
-
-**Week 9-10: Social Proof**
-- Release: "State of Marketing Analytics" report
-- Blog → ROI calculator announcement
-- Case studies: 3 more success stories
-- Webinar 3 → Customer panel
-
-**Week 11-12: Trial Push**
-- Blog: "Getting Started with AI Analytics"
-- Email → Limited-time trial offer
-- LinkedIn → Urgency messaging
-- Retargeting → Trial signup focus
-
-## 4. EXECUTION TIMELINE
-
-### Pre-Launch (December)
-
-**Week -4:**
-- Finalize messaging and positioning
-- Create visual assets and templates
-- Set up tracking and analytics
-- Brief team and agencies
-
-**Week -3:**
-- Develop hero content pieces
-- Set up marketing automation
-- Configure LinkedIn campaign manager
-- Create landing pages
-
-**Week -2:**
-- Test all systems and tracking
-- Finalize PR and influencer outreach
-- Complete video production
-- Load content into platforms
-
-**Week -1:**
-- Final campaign review
-- Soft launch to beta users
-- Gather initial feedback
-- Make final adjustments
-
-### Launch Phase (January)
-
-**Week 1: Blast Off**
-- Monday → Press release at 9 AM ET
-- Tuesday → Email announcement
-- Wednesday → LinkedIn campaign live
-- Thursday → First blog post
-- Friday → Social amplification
-
-**Week 2-4: Momentum Building**
-- Daily LinkedIn posts
-- 2x weekly blog posts
-- Weekly email sends
-- Continuous optimization
-
-### Optimization Phase (February-March)
-
-**Bi-weekly Reviews:**
-- Channel performance analysis
-- Content engagement metrics
-- Lead quality assessment
-- Budget reallocation
-
-**Monthly Pivots:**
-- Message testing results
-- Audience refinement
-- New creative variants
-- Channel mix adjustments
-
-## 5. MEASUREMENT PLAN
-
-### Key Performance Indicators
-
-**Primary KPIs:**
-- Qualified leads: 500 (target)
-- Trial signups: 50 (target)
-- Cost per lead: $300 (target)
-- Trial conversion rate: 10% (target)
-
-**Leading Indicators:**
-- Website traffic: 10,000 unique visitors/month
-- Content downloads: 1,000/month
-- Email open rate: 25%
-- LinkedIn engagement rate: 3%
-
-**Campaign Health Metrics:**
-- Brand awareness lift: 20% in target market
-- Share of voice: 5% in analytics category
-- Sales pipeline influenced: $500K
-- Customer acquisition cost: $3,000
-
-### Tracking Setup
-
-**Attribution Model:**
-- Multi-touch attribution with HubSpot
-- UTM parameters for all campaigns
-- Call tracking for phone leads
-- Demo booking source tracking
-
-**Dashboards:**
-- Executive dashboard (weekly)
-- Channel performance (daily)
-- Content engagement (weekly)
-- Lead quality (daily)
-
-### Optimization Framework
-
-**Week 2 Review:**
-- Initial performance assessment
-- Quick wins identification
-- Budget reallocation if needed
-- Creative testing plan
-
-**Month 1 Analysis:**
-- Full channel performance review
-- Lead quality assessment
-- Message effectiveness
-- Competitive response
-
-**Ongoing Testing:**
-- A/B test ad creative weekly
-- Email subject line testing
-- Landing page optimization
-- Audience segment testing
-
-### Reporting Schedule
-
-**Weekly Reports:**
-- Lead volume and quality
-- Channel performance
-- Budget pacing
-- Key wins and challenges
-
-**Monthly Business Review:**
-- ROI analysis
-- Pipeline influence
-- Competitive positioning
-- Strategic recommendations
-
-### Success Metrics
-
-**By End of Month 1:**
-- 150 qualified leads
-- 10 trial signups
-- 5,000 website visitors
-- 20% brand awareness lift
-
-**By End of Month 2:**
-- 350 total qualified leads
-- 30 total trial signups
-- Pipeline influence: $250K
-- 3 customer case studies
-
-**By End of Campaign:**
-- 500+ qualified leads
-- 50+ trial signups
-- 5-10 new customers
-- Positive ROI within 6 months
-
-This plan provides a structured approach to launching your AI analytics platform with maximum impact within your budget constraints. Start with the pre-launch activities and adjust based on early performance data.
+*Key Messages*
+1. Intelligence Made Simple - AI that explains insights in plain English
+2. Built for Marketers - No data science degree required
+3. Privacy-First Design - GDPR/CCPA compliant by default
+4. Fast Time to Value - See meaningful insights in hours, not weeks
+
+*Competitive Differentiation*
+- vs. Google Analytics: AI-powered insights vs. manual analysis; marketing-specific vs. general web
+- vs. Adobe Analytics: 80% lower cost; 2-hour setup vs. weeks; no consultants required
+- vs. Mixpanel: Predictive vs. historical; automated insights vs. manual exploration
+
+**Channel Plan ($150,000)**
+
+| Channel | Budget | % | Primary Objective |
+|---------|--------|---|-------------------|
+| LinkedIn Advertising | $35,000 | 23% | Lead generation, awareness |
+| Google Ads | $15,000 | 10% | Intent capture, remarketing |
+| Content Marketing | $20,000 | 13% | Thought leadership, SEO |
+| Webinars/Events | $25,000 | 17% | Lead generation, education |
+| Email Marketing | $15,000 | 10% | Nurture, conversion |
+| PR/Influencer | $15,000 | 10% | Credibility, awareness |
+| Design/Video | $15,000 | 10% | Asset production |
+| Analytics/Tools | $5,000 | 3% | Attribution, optimization |
+| Contingency | $5,000 | 3% | Testing, opportunities |
+
+*Channel Strategy Details*
+
+LinkedIn (Primary - $35,000):
+- Sponsored content: Thought leadership driving to gated content
+- InMail campaigns: Direct outreach to target titles at target companies
+- Lead gen forms: Friction-reduced content downloads
+- Retargeting: Website visitors with demo offers
+
+Content Hub ($20,000):
+- Pillar content: "State of Marketing Analytics 2025" research report
+- Blog series: "AI Analytics Explained" (8 posts over 12 weeks)
+- Tools: ROI calculator, Analytics maturity assessment quiz
+- Case studies: 5 customer success stories (prioritize recognizable logos)
+
+Webinar Series ($25,000):
+- Week 2: "Why Marketing Analytics Fails (And How to Fix It)" - Problem awareness
+- Week 6: "Live Demo: AI Analytics in Action" - Solution education
+- Week 10: "Customer Panel: Real Results with AI Analytics" - Social proof
+
+**Content Calendar**
+
+*Month 1: Awareness Building*
+- Week 1-2: Campaign launch
+  - Press release: "Company Launches Revolutionary AI Analytics Platform"
+  - Blog: "The Future of Marketing Analytics is Here"
+  - LinkedIn: Daily posts introducing key features
+  - Email: Announcement to existing database
+
+- Week 3-4: Problem education
+  - Blog: "5 Signs Your Analytics Aren't Working for You"
+  - Infographic: "The True Cost of Bad Analytics Decisions"
+  - LinkedIn poll: "What's your biggest analytics challenge?"
+  - Webinar 1: Analytics pain points
+
+*Month 2: Consideration*
+- Week 5-6: Solution introduction
+  - Blog: "How AI Changes Everything About Marketing Analytics"
+  - Video: 3-minute product demo
+  - First case study launch
+  - Webinar 2: Live product demonstration
+
+- Week 7-8: Differentiation
+  - Comparison guide: "Choosing the Right Analytics Platform in 2025"
+  - Blog: "Why Privacy-First Analytics Matter Now More Than Ever"
+  - LinkedIn: Customer testimonial video snippets
+  - Email nurture: Insights series (3 emails)
+
+*Month 3: Conversion*
+- Week 9-10: Social proof
+  - Release: "State of Marketing Analytics 2025" report
+  - Blog: Interactive ROI calculator announcement
+  - 3 additional case studies
+  - Webinar 3: Customer panel
+
+- Week 11-12: Trial push
+  - Blog: "Getting Started with AI Analytics: A Quick Start Guide"
+  - Email: Limited-time extended trial offer
+  - LinkedIn: Urgency messaging
+  - Retargeting: Trial signup focus
+
+**Execution Timeline**
+
+*Pre-Launch (December)*
+- Week -4: Finalize messaging, create visual templates, set up tracking
+- Week -3: Develop hero content, configure marketing automation
+- Week -2: Test all systems, finalize influencer/PR outreach
+- Week -1: Soft launch to beta users, gather feedback, final adjustments
+
+*Launch Phase (January)*
+- Day 1: Press release 9 AM ET, email blast, LinkedIn campaign live
+- Week 1-2: Daily social posts, first blog content, initial optimization
+- Week 3-4: First webinar, content performance review, budget adjustment
+
+*Optimization Phase (February-March)*
+- Bi-weekly: Channel performance review, creative refresh
+- Monthly: Full performance review, major budget reallocation if needed
+- Ongoing: A/B testing ads, email subject lines, landing pages
+
+**Measurement Plan**
+
+*Primary KPIs*
+| Metric | Target | Tracking Method |
+|--------|--------|-----------------|
+| Qualified leads | 500 | HubSpot lead scoring |
+| Trial signups | 50 | Product analytics |
+| Cost per lead | $300 | Campaign attribution |
+| Trial-to-paid rate | 10% | CRM pipeline |
+
+*Leading Indicators*
+| Metric | Target | Frequency |
+|--------|--------|-----------|
+| Website visitors | 10,000/month | Weekly |
+| Content downloads | 1,000/month | Weekly |
+| Email open rate | 25% | Per send |
+| LinkedIn engagement | 3% | Weekly |
+
+*Reporting Cadence*
+- Daily: Lead volume, spend pacing, critical metrics
+- Weekly: Channel performance, content engagement, pipeline
+- Monthly: Full business review, ROI analysis, strategic recommendations
+
+*Optimization Framework*
+- Week 2: Initial performance review, quick wins identification
+- Week 4: First major optimization cycle, creative testing results
+- Week 8: Mid-campaign review, budget reallocation
+- Week 12: Final analysis, campaign retrospective, learnings documentation
+
+---
 
 ## Related Prompts
 
-- [Content Marketing Strategy Expert](../communication/email-communication-strategy-expert.md)
-- [Digital Advertising Expert](../supply-chain/digital-supply-chain-transformation-expert.md)
-- [Campaign Analytics Expert](../space-economy/launch-campaign-management-expert.md)
-
-## Usage Instructions
-
-1. Start with comprehensive market research and audience analysis
-2. Develop clear campaign objectives aligned with business goals
-3. Create integrated message architecture and creative concept
-4. Design multi-channel strategy with optimized budget allocation
-5. Implement robust measurement and attribution framework
-6. Plan for continuous optimization and performance improvement
-7. Prepare contingency plans for various performance scenarios
-8. Document learnings and best practices for future campaigns
-
-## Examples
-
-### Example 1: B2C Product Launch Campaign
-
-**Input**:
-
-```
-{{campaign_type}}: Consumer product launch
-{{business_model}}: D2C e-commerce brand
-{{target_audience}}: Health-conscious millennials
-{{budget_range}}: $500K campaign budget
-{{timeline}}: 3-month launch campaign
-```
-
-**Output**: [Consumer-focused campaign with social media emphasis, influencer partnerships, content marketing, and conversion optimization for direct-to-consumer sales]
-
-### Example 2: B2B Lead Generation Campaign
-
-**Input**:
-
-```
-{{campaign_type}}: Lead generation for software platform
-{{business_model}}: B2B SaaS startup
-{{target_audience}}: Small business owners and managers
-{{campaign_objectives}}: Generate 1,000 qualified leads
-{{competitive_environment}}: Highly competitive market
-```
-
-**Output**: [Lead-focused campaign with content marketing, LinkedIn advertising, webinar series, and nurture automation for B2B software sales]
-
-## Related Prompts
-
-- [Content Marketing Strategy](/prompts/planning/content-marketing-strategy.md)
-- [Digital Advertising Specialist](/prompts/creation/digital-advertising.md)
-- [Brand Strategy Expert](/prompts/planning/brand-strategy.md)
-
-## Research Notes
-
-- Based on integrated marketing communications and customer journey frameworks
-- Emphasizes data-driven optimization and performance measurement
-- Integrates account-based marketing with broader campaign strategy
-- Focuses on measurable business outcomes and ROI optimization
-- Balances brand building with performance marketing objectives
+- [Content Calendar Planning Expert](content-calendar-planning-expert.md) - Detailed content scheduling
+- [Strategic Planning Expert](strategic-planning-expert.md) - Higher-level marketing strategy
+- [Budget Planning Expert](budget-planning-expert.md) - Marketing budget optimization

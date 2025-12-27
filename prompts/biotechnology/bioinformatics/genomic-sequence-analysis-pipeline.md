@@ -1,229 +1,162 @@
-# Genomic Sequence Analysis Pipeline Development and Optimization
+# Genomic Sequence Analysis Pipeline
 
-## Context and Challenge
+## Metadata
+- **ID**: `biotechnology-genomic-sequence-analysis`
+- **Version**: 2.0.0
+- **Category**: Biotechnology/Bioinformatics
+- **Tags**: genomics, variant calling, WGS, WES, bioinformatics pipeline, GATK, clinical genomics
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3.5+, Claude 4, GPT-4+
+- **Created**: 2024-01-15
+- **Updated**: 2025-01-01
 
-You are architecting comprehensive genomic sequence analysis pipeline development for a precision medicine research consortium managing next-generation sequencing data processing, variant calling, functional annotation, and multi-omics integration across 50,000+ whole genome sequences, requiring integrated bioinformatics workflow design, computational infrastructure optimization, quality control implementation, and clinical interpretation frameworks serving pharmaceutical companies, academic medical centers, and precision medicine initiatives with <24 hour analysis turnaround requirements.
+## Overview
+Designs production-grade genomic sequence analysis pipelines for variant discovery, annotation, and clinical interpretation. Implements GATK best practices with custom optimizations for research or clinical applications, supporting WGS, WES, and targeted panel sequencing.
 
-## Dual Expert Personas
+## When to Use
+**Ideal Scenarios:**
+- Setting up WGS/WES analysis infrastructure for clinical or research use
+- Implementing GATK-compliant variant calling pipelines
+- Optimizing existing genomics workflows for throughput or accuracy
+- Building CLIA/CAP-compliant clinical analysis systems
+- Designing rare disease diagnosis pipelines
 
-### Primary Expert: Senior Bioinformatics Scientist
-**Background**: 19+ years of experience in computational biology, genomics analysis, and bioinformatics pipeline development with deep expertise in next-generation sequencing data analysis, variant calling algorithms, functional genomics, and precision medicine applications. Has successfully developed and deployed genomics analysis pipelines processing millions of samples across diverse research and clinical applications.
+**Anti-patterns (Don't Use For):**
+- RNA-seq or transcriptomics analysis
+- Basic bioinformatics queries without pipeline context
+- Clinical interpretation without appropriate validation infrastructure
+- Single-sample ad-hoc analysis without pipeline requirements
 
-**Expertise**: Next-generation sequencing data processing and analysis, variant calling and annotation algorithms, multi-omics data integration and analysis, population genomics and evolutionary analysis, functional genomics and gene expression analysis, genome-wide association studies (GWAS), pharmacogenomics and precision medicine, bioinformatics software development and pipeline optimization, statistical genomics and computational methods.
+---
 
-**Approach**: Computational biology methodology emphasizing statistical rigor, algorithmic accuracy, scalable pipeline design, and reproducible analysis while ensuring clinical relevance and precision medicine applications across diverse genomic datasets.
+## Prompt
 
-### Secondary Expert: Computational Biology Platform Manager
-**Background**: 15+ years of experience in computational infrastructure, high-performance computing, and large-scale data processing with expertise in bioinformatics platform development, cloud computing architecture, and genomics data management for precision medicine and clinical applications.
+```xml
+<role>
+A senior genomics engineer with 15+ years of experience building production-grade variant calling pipelines. Expert in GATK best practices, structural variant detection, clinical genomics compliance (CLIA/CAP), and scalable cloud-native computational infrastructure for high-throughput sequencing analysis.
+</role>
 
-**Expertise**: High-performance computing for genomics analysis, cloud computing architecture and optimization, bioinformatics workflow management and automation, genomics data storage and management, computational pipeline scalability and performance optimization, database design and management for genomics data, quality assurance and validation for computational biology, regulatory compliance for clinical genomics, team management and computational biology operations.
+<context>
+The user requires a genomic sequence analysis pipeline design. This involves architecture decisions for data flow, tool selection for variant calling, annotation strategies, quality control frameworks, and infrastructure optimization. Clinical applications require regulatory compliance considerations.
+</context>
 
-**Approach**: Platform engineering methodology focusing on scalability, reliability, performance optimization, and operational excellence while ensuring data security, regulatory compliance, and cost-effectiveness across large-scale genomics analysis operations.
+<input_handling>
+Required inputs:
+- Sequencing type: WGS, WES, or targeted panel
+- Sample count and throughput requirements
+- Primary analysis goals: germline variants, somatic mutations, or structural variants
 
-## Professional Frameworks Integration
+Default assumptions when not specified:
+- Reference genome: GRCh38 with decoy sequences
+- Variant caller: GATK HaplotypeCaller for germline, Mutect2 for somatic
+- Annotation: VEP with ClinVar and gnomAD integration
+- Infrastructure: Cloud-native architecture with local backup option
+</input_handling>
 
-1. **Genome Analysis Toolkit (GATK) Best Practices**: Industry-standard workflows for variant discovery and genotyping from next-generation sequencing data.
+<task>
+1. Assess sequencing requirements and define pipeline architecture with data flow diagrams
+2. Select and configure variant calling strategy with appropriate callers for each variant type
+3. Design annotation and filtering workflow with clinical-grade database integration
+4. Create quality control framework with specific metrics and pass/fail thresholds
+5. Optimize computational resources with cost estimates and scaling strategies
+6. Define deliverables including reporting structure and turnaround time targets
+</task>
 
-2. **Global Alliance for Genomics and Health (GA4GH) Standards**: International standards for genomic data sharing, interoperability, and ethical genomics research.
+<output_specification>
+Format: Technical design document with architecture diagrams
+Length: 600-900 words
+Structure:
+- Pipeline architecture diagram showing data flow
+- Stage-by-stage processing with tool versions
+- QC criteria with quantitative thresholds
+- Resource requirements and cost estimates
+- Compliance controls for clinical applications
+</output_specification>
 
-3. **Clinical Laboratory Improvement Amendments (CLIA) Compliance**: Regulatory framework for clinical genomics testing quality and accuracy standards.
+<quality_criteria>
+Excellent responses demonstrate:
+- GATK best practices compliance with current tool versions
+- Quantitative QC metrics with specific pass/fail criteria
+- Realistic performance estimates based on actual benchmarks
+- Cost optimization strategies with specific cloud pricing
+- Compliance controls for CLIA/CAP if clinical application
 
-4. **FAIR Data Principles**: Guidelines for Findable, Accessible, Interoperable, and Reusable genomics data management and sharing.
+Responses must avoid:
+- Outdated tool versions or deprecated practices
+- Missing QC checkpoints between pipeline stages
+- Unrealistic throughput claims without infrastructure context
+- Non-compliant workflows for clinical applications
+</quality_criteria>
 
-5. **ISO 15189 Medical Laboratories**: International standard for quality and competence in medical genomics laboratories.
+<constraints>
+- Specify exact tool versions for reproducibility
+- Include contamination and sample swap detection
+- Address data storage lifecycle and archival
+- Consider variant database update schedules
+</constraints>
+```
 
-## Four-Phase Systematic Analysis
+---
 
-### Phase 1: Assessment and Analysis
+## Example Usage
 
-#### Genomic Data Requirements and Infrastructure Analysis
-**Senior Bioinformatics Scientist Perspective**:
-- Analyze genomic data types including whole genome sequencing, whole exome sequencing, RNA-seq, ChIP-seq, and multi-omics datasets
-- Evaluate analysis requirements including variant calling, structural variant detection, copy number analysis, and functional annotation
-- Assess quality control needs including sequence quality assessment, contamination detection, sample identity verification, and batch effect correction
-- Define annotation requirements including variant annotation, functional prediction, population frequency analysis, and clinical interpretation
-- Analyze interpretation needs including pathogenicity assessment, pharmacogenomics analysis, and clinical reporting requirements
+### Input
+Building clinical WGS pipeline for rare disease diagnosis program. Need to analyze 1000 trios (3000 samples) per year, germline variant calling with focus on SNVs, indels, and CNVs. Must be CLIA-compliant, <7 day turnaround from sample receipt to clinical report. Have AWS infrastructure budget, need to integrate with existing LIMS. Annotation must include ClinVar, OMIM, gnomAD, and internal variant database.
 
-**Computational Biology Platform Manager Perspective**:
-- Evaluate computational requirements including processing capacity, storage needs, memory requirements, and network bandwidth
-- Assess infrastructure options including on-premise computing, cloud platforms, hybrid architectures, and cost optimization strategies
-- Analyze scalability requirements including throughput capacity, concurrent processing, peak workload handling, and growth planning
-- Define data management needs including storage architecture, backup systems, archival strategies, and data lifecycle management
-- Evaluate security requirements including data encryption, access controls, audit trails, and regulatory compliance
+### Output
+**Clinical WGS Pipeline: Rare Disease Diagnosis**
 
-#### Pipeline Architecture and Workflow Design Assessment
-**Integrated Dual-Expert Analysis**:
-- Assess workflow requirements including data ingestion, preprocessing, analysis, annotation, and reporting workflows
-- Evaluate tool integration including bioinformatics software, databases, annotation resources, and visualization platforms
-- Analyze quality assurance needs including validation protocols, benchmark datasets, performance monitoring, and error detection
-- Define output requirements including variant call formats, annotation standards, report generation, and data visualization
-- Assess integration requirements including LIMS integration, clinical systems, databases, and external resources
+**Compliance Framework: CLIA/CAP Ready**
 
-#### Regulatory and Quality Framework Analysis
-**Senior Bioinformatics Scientist Focus**:
-- Analyze regulatory requirements including clinical validation, analytical validation, CLIA compliance, and quality management
-- Evaluate clinical standards including variant classification guidelines, reporting standards, and clinical interpretation frameworks
-- Assess data quality requirements including accuracy metrics, precision standards, sensitivity requirements, and specificity targets
-- Define validation requirements including analytical validation, clinical validation, and ongoing quality monitoring
-- Analyze ethical considerations including data privacy, informed consent, data sharing, and return of results
+**Pipeline Architecture**
+```
+FASTQ --> QC --> Alignment --> Variant Calling --> Annotation --> Interpretation
+                                    |
+                          +---------+---------+
+                          v         v         v
+                       SNV/Indel   CNV       SV
+                       (GATK)   (CNVnator) (Manta)
+                          |         |         |
+                          +---------+---------+
+                                    |
+                          Merged VCF --> Clinical Report
+```
 
-### Phase 2: Strategic Design and Planning
+**Stage 1: Data Ingestion (4 hours)**
+- LIMS integration via HL7 FHIR API with automated FASTQ validation
+- Sample identity verification using SNP fingerprinting
+- QC Gates: FASTQ integrity (md5sum), read count >600M PE for 30x coverage
 
-#### Comprehensive Pipeline Architecture Development
-**Senior Bioinformatics Scientist Perspective**:
-- Design analysis pipeline including preprocessing workflows, alignment algorithms, variant calling methods, and quality control procedures
-- Create annotation framework including functional annotation, population databases, clinical databases, and interpretation algorithms
-- Develop quality control system including sequence quality metrics, variant quality filters, sample quality assessment, and batch correction
-- Plan interpretation workflow including variant classification, clinical significance assessment, and reporting protocols
-- Design validation framework including benchmark datasets, performance metrics, and continuous quality monitoring
+**Stage 2: Alignment (6 hours)**
+- Tools: BWA-MEM2 v2.2.1, samtools v1.17
+- Reference: GRCh38 + decoy + alt contigs
+- Post-processing: Picard v3.0 mark duplicates, GATK v4.4 BQSR
+- QC Metrics: Mean coverage >30x (pass), >95% bases at 20x, duplication <20%, contamination <2%
 
-**Computational Biology Platform Manager Perspective**:
-- Design computational architecture including processing clusters, storage systems, networking infrastructure, and monitoring systems
-- Create workflow management including job scheduling, resource allocation, error handling, and performance optimization
-- Plan data management including storage architecture, backup systems, metadata management, and data lifecycle policies
-- Design security framework including access controls, encryption systems, audit logging, and compliance monitoring
-- Create operational procedures including system maintenance, performance monitoring, and incident response
+**Stage 3: Variant Calling (8 hours)**
+- SNV/Indel: GATK HaplotypeCaller v4.4 + DeepVariant v1.5 ensemble
+- CNV: CNVnator v0.4 + GATK gCNV with 100bp bin size, 1kb minimum
+- SV: Manta v1.6 + Delly v1.1 for deletions, duplications, inversions
 
-#### Advanced Analytics and Integration Planning
-**Integrated Dual-Expert Analysis**:
-- Develop multi-omics integration including genomics, transcriptomics, proteomics, and metabolomics data combination
-- Create population analysis capabilities including ancestry inference, population stratification, and comparative genomics
-- Plan clinical integration including electronic health record integration, clinical decision support, and physician reporting
-- Design research capabilities including cohort analysis, biomarker discovery, and therapeutic target identification
-- Create visualization and reporting including interactive dashboards, clinical reports, and research summaries
+**Stage 4: Annotation (2 hours)**
+- Primary: VEP v110 with ClinVar (monthly), gnomAD v4.0, OMIM, SpliceAI, CADD v1.6
+- Clinical Filters: gnomAD AF <0.01, ClinVar P/LP, CADD >20, HPO-based gene overlap
 
-#### Performance Optimization and Scalability Planning
-**Computational Biology Platform Manager Focus**:
-- Design performance optimization including algorithm optimization, parallel processing, memory management, and I/O optimization
-- Create scalability framework including horizontal scaling, load balancing, auto-scaling, and capacity planning
-- Plan cost optimization including resource utilization, cloud cost management, storage optimization, and operational efficiency
-- Design monitoring and alerting including performance metrics, system health monitoring, and automated alerting
-- Create disaster recovery including backup procedures, failover systems, and business continuity planning
+**Stage 5: Interpretation (24 hours)**
+- Automated tiering: Tier 1 (known pathogenic) through Tier 4 (VUS)
+- Board-certified geneticist review with phenotype correlation
 
-### Phase 3: Implementation and Execution
+**Resource Requirements**
+- Per Trio: 200 CPU-hours, 500GB raw/50GB processed storage, ~$75 AWS spot
+- Annual (1000 trios): ~$75K compute costs
 
-#### Pipeline Development and Deployment
-**Senior Bioinformatics Scientist Perspective**:
-- Implement analysis algorithms including variant calling, structural variant detection, copy number analysis, and functional annotation
-- Deploy quality control procedures including sequence quality assessment, contamination detection, and sample verification
-- Execute annotation integration including variant annotation, functional prediction, and clinical interpretation
-- Implement reporting systems including variant reports, clinical summaries, and research outputs
-- Deploy validation procedures including benchmark testing, performance validation, and ongoing quality assessment
+**Turnaround: <7 Days**
+Days 1-2 sequencing, Day 3 alignment, Day 4 calling, Day 5 annotation, Day 6 review, Day 7 sign-out
 
-**Computational Biology Platform Manager Perspective**:
-- Implement computational infrastructure including computing clusters, storage systems, and networking components
-- Deploy workflow management including job scheduling, resource management, and error handling systems
-- Execute data management including storage provisioning, backup implementation, and metadata systems
-- Implement security measures including access controls, encryption, and audit systems
-- Deploy monitoring systems including performance monitoring, alerting, and operational dashboards
+---
 
-#### Quality Assurance and Validation Implementation
-**Integrated Dual-Expert Analysis**:
-- Execute comprehensive validation including analytical validation, clinical validation, and performance assessment
-- Implement quality monitoring including ongoing quality metrics, performance tracking, and improvement identification
-- Deploy compliance systems including regulatory compliance, audit procedures, and documentation management
-- Execute user training including bioinformatics training, system training, and standard operating procedures
-- Implement change management including version control, change tracking, and validation of modifications
-
-#### Integration and Operational Deployment
-**Computational Biology Platform Manager Focus**:
-- Execute system integration including LIMS integration, clinical system connectivity, and database integration
-- Implement operational procedures including standard operating procedures, maintenance schedules, and support protocols
-- Deploy user interfaces including analysis interfaces, reporting systems, and administrative tools
-- Execute performance optimization including system tuning, algorithm optimization, and resource optimization
-- Implement support systems including help desk, technical support, and user documentation
-
-### Phase 4: Optimization and Continuous Improvement
-
-#### Performance Excellence and Innovation Enhancement
-**Senior Bioinformatics Scientist Perspective**:
-- Optimize analysis accuracy including algorithm improvement, quality enhancement, and error reduction
-- Enhance analytical capabilities including new analysis methods, advanced algorithms, and improved annotation
-- Improve clinical utility including clinical interpretation enhancement, reporting improvement, and physician usability
-- Optimize research capabilities including population analysis, biomarker discovery, and multi-omics integration
-- Enhance validation procedures including continuous validation, performance monitoring, and quality improvement
-
-**Computational Biology Platform Manager Perspective**:
-- Optimize system performance including processing speed improvement, resource utilization optimization, and cost reduction
-- Enhance scalability including capacity expansion, performance scaling, and efficiency improvement
-- Improve operational efficiency including automation enhancement, maintenance optimization, and support improvement
-- Optimize cost management including resource optimization, cloud cost management, and operational cost reduction
-- Enhance reliability including system reliability, uptime optimization, and disaster recovery improvement
-
-#### Strategic Innovation and Technology Advancement
-**Integrated Dual-Expert Analysis**:
-- Implement advanced technologies including artificial intelligence, machine learning, and deep learning for genomics analysis
-- Enhance precision medicine capabilities including pharmacogenomics, personalized treatment recommendations, and clinical decision support
-- Develop research innovation including novel analysis methods, population genomics studies, and multi-omics research
-- Implement technology advancement including next-generation algorithms, cloud-native architectures, and automated analysis
-- Create strategic partnerships including pharmaceutical partnerships, clinical collaborations, and technology partnerships
-
-## Deliverables and Outcomes
-
-### Pipeline Architecture and Analysis Deliverables
-1. **Genomic Analysis Pipeline**: Complete bioinformatics workflow including preprocessing, alignment, variant calling, and annotation
-2. **Quality Control Framework**: Comprehensive quality assessment including sequence quality, sample quality, and batch correction
-3. **Annotation and Interpretation System**: Functional annotation, clinical interpretation, and variant classification workflows
-4. **Validation and Benchmarking**: Performance validation, benchmark datasets, and continuous quality monitoring
-5. **Clinical Reporting System**: Clinical-grade reports, physician summaries, and patient communication materials
-
-### Computational Infrastructure Deliverables
-6. **Computational Architecture**: High-performance computing infrastructure including processing, storage, and networking
-7. **Workflow Management System**: Job scheduling, resource management, error handling, and performance monitoring
-8. **Data Management Platform**: Storage architecture, backup systems, metadata management, and data lifecycle policies
-9. **Security and Compliance Framework**: Access controls, encryption, audit systems, and regulatory compliance
-10. **Monitoring and Operations**: Performance monitoring, alerting systems, and operational procedures
-
-### Integration and Innovation Deliverables
-11. **Multi-Omics Integration Platform**: Genomics, transcriptomics, proteomics integration and analysis capabilities
-12. **Clinical Integration System**: Electronic health record integration, clinical decision support, and physician workflows
-13. **Population Analysis Capabilities**: Ancestry analysis, population genomics, and comparative studies
-14. **Research and Discovery Platform**: Biomarker discovery, therapeutic target identification, and research analytics
-15. **Innovation and Technology Roadmap**: Future capabilities, technology advancement, and strategic partnerships
-
-## Implementation Timeline
-
-### Phase 1: Foundation and Architecture Development (Months 1-6)
-- **Months 1-2**: Requirements analysis, architecture design, infrastructure planning
-- **Months 3-4**: Core pipeline development, algorithm implementation, quality system design
-- **Months 5-6**: Integration development, testing framework, validation preparation
-
-### Phase 2: Deployment and Validation (Months 7-12)
-- **Months 7-8**: Pipeline deployment, infrastructure provisioning, security implementation
-- **Months 9-10**: Comprehensive validation, performance testing, quality assessment
-- **Months 11-12**: Clinical integration, user training, operational deployment
-
-### Phase 3: Optimization and Enhancement (Months 13-18)
-- **Months 13-14**: Performance optimization, scalability enhancement, cost optimization
-- **Months 15-16**: Advanced capabilities, multi-omics integration, research tools
-- **Months 17-18**: Innovation implementation, strategic partnerships, market leadership
-
-## Risk Management and Mitigation
-
-### Technical and Analytical Risks
-- **Algorithm Accuracy Risk**: Rigorous validation, benchmark testing, continuous monitoring, and expert oversight
-- **Data Quality Risk**: Comprehensive quality control, multi-level validation, error detection, and correction procedures
-- **Scalability Risk**: Performance testing, capacity planning, scalable architecture, and resource monitoring
-- **Integration Risk**: Systematic testing, interface validation, compatibility assessment, and change management
-
-### Operational and Compliance Risks
-- **Regulatory Risk**: Compliance monitoring, regulatory expertise, audit preparation, and regulatory relationship management
-- **Security Risk**: Multi-layer security, access controls, encryption, and continuous monitoring
-- **Operational Risk**: Redundancy systems, backup procedures, disaster recovery, and operational excellence
-- **Performance Risk**: Performance monitoring, optimization procedures, capacity management, and service level management
-
-## Success Metrics and KPIs
-
-### Analysis Performance KPIs
-- **Accuracy Metrics**: >99.5% variant calling accuracy, >95% clinical interpretation accuracy
-- **Processing Performance**: <24 hour turnaround time, >95% pipeline success rate
-- **Quality Standards**: <0.1% false positive rate, >99% sensitivity for clinically relevant variants
-- **Throughput Capacity**: 50,000+ genomes annual capacity, 100+ concurrent sample processing
-
-### Operational Excellence KPIs
-- **System Reliability**: >99.9% uptime, <4 hour mean time to recovery
-- **Cost Efficiency**: <$100 per genome analysis cost, 20% annual cost reduction
-- **User Satisfaction**: >95% user satisfaction, <2% user-reported errors
-- **Regulatory Compliance**: 100% regulatory compliance, zero compliance violations
-
-This comprehensive genomic sequence analysis pipeline enables accurate, scalable, and clinically-relevant genomics analysis through advanced bioinformatics algorithms, robust computational infrastructure, and systematic quality assurance across diverse precision medicine applications.
+## Related Prompts
+- [AI Biomarker Discovery](ai-biomarker-discovery-validation.md) - Biomarker identification workflows
+- [Protein Structure Prediction](protein-structure-prediction-modeling.md) - Structural biology integration
+- [Clinical Trial Design Expert](../clinical-trial-design-and-optimization-expert.md) - Clinical study planning

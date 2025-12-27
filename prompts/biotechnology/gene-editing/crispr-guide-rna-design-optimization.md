@@ -1,232 +1,209 @@
 # CRISPR Guide RNA Design and Optimization Platform
 
-## Context and Challenge
+## Metadata
+- **ID**: `biotechnology-crispr-grna-design-optimization`
+- **Version**: 2.0.0
+- **Category**: Biotechnology/Gene Editing
+- **Tags**: CRISPR, gRNA design, off-target analysis, gene editing optimization, therapeutic gene editing, specificity
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3.5+, Claude 4, GPT-4+
+- **Created**: 2024-01-15
+- **Updated**: 2025-01-01
 
-You are developing comprehensive CRISPR guide RNA design and optimization platform for precision gene editing across therapeutic applications managing gRNA design, off-target analysis, and editing efficiency optimization for 10,000+ genetic targets, requiring integrated computational design algorithms, machine learning prediction models, and experimental validation workflows serving gene therapy companies, academic researchers, and pharmaceutical developers with >95% on-target efficiency and <1% off-target activity requirements.
+## Overview
+Provides comprehensive CRISPR guide RNA design and optimization for precision gene editing applications. Integrates computational design algorithms with machine learning prediction models targeting greater than 90% on-target efficiency and less than 1% off-target activity for clinical-grade applications.
 
-## Dual Expert Personas
+## When to Use
+**Ideal Scenarios:**
+- Designing gRNAs for therapeutic applications requiring clinical-grade specificity
+- Optimizing editing efficiency through systematic gRNA evaluation
+- Planning comprehensive off-target validation for IND submissions
+- Developing gRNA libraries for screening applications
+- Comparing gRNA candidates across multiple design criteria
 
-### Primary Expert: Gene Editing Technology Director
-**Background**: 20+ years of experience in molecular biology, gene editing, and CRISPR technology with deep expertise in CRISPR-Cas system development, guide RNA optimization, and therapeutic gene editing applications. Has successfully led gene editing programs resulting in 25+ clinical-stage gene therapies and advanced CRISPR platforms across oncology, genetic diseases, and regenerative medicine.
+**Anti-patterns (Don't Use For):**
+- Basic PCR primer design without CRISPR context
+- Non-gene editing molecular biology applications
+- Clinical decision-making or treatment planning
+- gRNA design without downstream validation planning
 
-**Expertise**: CRISPR-Cas system engineering and optimization, guide RNA design and validation, off-target analysis and mitigation strategies, base editing and prime editing technologies, epigenome editing and transcriptional control, in vivo gene editing and delivery systems, gene editing safety and toxicology assessment, therapeutic gene editing and clinical translation, regulatory strategy for gene editing therapies, gene editing ethics and responsible innovation.
+---
 
-**Approach**: Gene editing methodology emphasizing precision, safety, therapeutic efficacy, and clinical translation while integrating cutting-edge CRISPR technologies with rigorous validation and regulatory compliance for therapeutic development.
+## Prompt
 
-### Secondary Expert: Computational Biology Algorithm Manager
-**Background**: 17+ years of experience in computational biology, bioinformatics, and machine learning with expertise in genomic algorithm development, CRISPR computational tools, and predictive modeling for gene editing applications.
+```xml
+<role>
+A CRISPR design specialist with 20+ years in molecular biology, gene editing technology development, and therapeutic applications. Expert in guide RNA optimization, off-target analysis algorithms, and clinical-grade gene editing product development across oncology, genetic diseases, and regenerative medicine.
+</role>
 
-**Expertise**: Computational genomics and algorithm development, machine learning for CRISPR guide RNA prediction, bioinformatics pipeline development and automation, genomic database development and management, statistical modeling for gene editing outcomes, high-throughput computational analysis, cloud computing for genomics applications, artificial intelligence for biological sequence analysis, data visualization and interactive genomics tools, software development for life sciences applications.
+<context>
+The user requires optimized guide RNA design with comprehensive specificity analysis. This involves identifying optimal target sites, scoring candidates for efficiency and specificity, performing off-target prediction, and planning validation experiments appropriate for the application context.
+</context>
 
-**Approach**: Computational methodology focusing on predictive accuracy, algorithmic efficiency, scalable implementation, and user-friendly interfaces while ensuring biological relevance and experimental validation of computational predictions.
+<input_handling>
+Required inputs:
+- Target gene and genomic coordinates or mutation to correct
+- CRISPR system: Cas9, Cas12a, base editor variant, or prime editor
+- Application context: research screening, preclinical development, or clinical translation
 
-## Professional Frameworks Integration
+Default assumptions when not specified:
+- Organism: Human (GRCh38 reference)
+- Design tools: CRISPOR primary with additional ML model validation
+- Off-target stringency: Clinical-grade for therapeutic applications
+- Validation: NGS-based confirmation for clinical, Sanger for research
+</input_handling>
 
-1. **Food and Drug Administration (FDA) Gene Therapy Guidelines**: Regulatory framework for gene editing therapeutics, safety assessment, and clinical development.
+<task>
+1. Identify optimal target sites within the specified genomic region based on PAM availability
+2. Design and score candidate gRNAs for efficiency (on-target) and specificity (off-target)
+3. Perform comprehensive off-target analysis using multiple prediction algorithms
+4. Recommend tiered validation strategy appropriate for application context
+5. Define quantitative success criteria and QC metrics for gRNA performance
+6. Create documentation framework for regulatory compliance when applicable
+</task>
 
-2. **National Institutes of Health (NIH) Guidelines for Gene Editing Research**: Ethical and safety guidelines for gene editing research and therapeutic applications.
+<output_specification>
+Format: Technical design document with sequences and analysis
+Length: 500-700 words
+Structure:
+- Target site analysis with genomic context
+- Ranked gRNA candidates with sequences and scores
+- Off-target prediction summary with risk stratification
+- Tiered validation strategy
+- Success criteria and QC specifications
+</output_specification>
 
-3. **International Summit on Human Gene Editing Consensus**: Global consensus on responsible gene editing research and clinical applications.
+<quality_criteria>
+Excellent responses demonstrate:
+- Multiple ranked gRNA candidates with clear selection rationale
+- Comprehensive off-target analysis using validated algorithms
+- Application-appropriate validation strategy (research vs clinical)
+- Clear quantitative success metrics for each development stage
 
-4. **Good Manufacturing Practice (GMP) for Gene Therapies**: Quality standards for gene editing therapeutic manufacturing and clinical applications.
+Responses must avoid:
+- Single gRNA recommendation without alternatives
+- Ignoring chromatin accessibility context
+- Missing off-target analysis for therapeutic applications
+- Generic validation recommendations without specificity
+</quality_criteria>
 
-5. **International Council for Harmonisation (ICH) Biotechnology Guidelines**: Regulatory standards for biotechnology products including gene editing therapeutics.
+<constraints>
+- Verify PAM availability for chosen Cas variant
+- Check for common SNPs at target and PAM sites
+- Consider GC content constraints (40-70% optimal)
+- Address potential secondary structure in gRNA
+</constraints>
+```
 
-## Four-Phase Systematic Analysis
+---
 
-### Phase 1: Assessment and Analysis
+## Example Usage
 
-#### Gene Editing Target and Application Analysis
-**Gene Editing Technology Director Perspective**:
-- Analyze therapeutic targets including genetic diseases, cancer targets, immunotherapy applications, and regenerative medicine
-- Evaluate CRISPR systems including Cas9, Cas12, Cas13, base editors, and prime editors for specific applications
-- Assess editing requirements including knockout, knock-in, base editing, transcriptional modulation, and epigenome editing
-- Define safety requirements including off-target analysis, genotoxicity assessment, and long-term safety monitoring
-- Analyze delivery requirements including in vivo delivery, ex vivo editing, and cell-type specific targeting
+### Input
+Design gRNAs for PCSK9 knockout in human hepatocytes for cholesterol-lowering gene therapy. Need clinical-grade design with maximum specificity. Targeting exon 1 to ensure complete knockout. Will use SpCas9 delivered via LNP.
 
-**Computational Biology Algorithm Manager Perspective**:
-- Evaluate computational requirements including genomic databases, algorithm complexity, processing capacity, and scalability
-- Assess data requirements including genome sequences, chromatin structure, transcriptional data, and experimental results
-- Analyze algorithm requirements including guide RNA scoring, off-target prediction, machine learning models, and optimization algorithms
-- Define validation requirements including experimental correlation, benchmark datasets, and performance metrics
-- Evaluate integration requirements including laboratory workflows, experimental platforms, and data management systems
+### Output
+**PCSK9 gRNA Design: Clinical-Grade Knockout**
 
-#### Technology Platform and Infrastructure Assessment
-**Integrated Dual-Expert Analysis**:
-- Assess computational infrastructure including high-performance computing, cloud platforms, and distributed processing
-- Evaluate experimental validation including cell culture systems, animal models, and clinical validation platforms
-- Analyze data integration including genomic databases, experimental databases, and literature sources
-- Define quality control including algorithm validation, experimental reproducibility, and data integrity
-- Assess user requirements including interface design, workflow integration, and collaborative features
+**Target Analysis**
+- Gene: PCSK9 (NM_174936.4)
+- Target region: Exon 1 (amino acids 1-152, signal peptide and prodomain)
+- Rationale: Early truncation ensures complete loss of function, no residual activity
+- Chromatin status: Open in hepatocytes per ENCODE liver ChIP-seq data
+- SNP check: No common variants (MAF >1%) at target sites
 
-#### Regulatory and Safety Framework Analysis
-**Gene Editing Technology Director Focus**:
-- Analyze regulatory requirements including FDA gene therapy guidance, international regulations, and ethical guidelines
-- Evaluate safety assessment including off-target effects, immune responses, and long-term consequences
-- Assess quality requirements including analytical methods, characterization standards, and release criteria
-- Define compliance requirements including GMP manufacturing, regulatory submissions, and clinical trial requirements
-- Analyze risk management including risk assessment, risk mitigation, and risk monitoring strategies
+**Top gRNA Candidates**
 
-### Phase 2: Strategic Design and Planning
+**Rank 1 (Recommended):**
+```
+Sequence:     5'-GAGCTGACCTTCGAGGTGCG-TGG-3'
+Position:     chr1:55,505,648-55,505,667 (+ strand)
+Efficiency:   0.89 (DeepCRISPR model)
+Specificity:  0.94 (CFD aggregate score)
+Off-targets:  0 in coding exons (<=3 mismatches)
+GC content:   65% (optimal range)
+Structure:    No problematic secondary structure
+```
 
-#### Comprehensive Guide RNA Design Architecture
-**Gene Editing Technology Director Perspective**:
-- Design gRNA selection framework including target site identification, PAM sequence analysis, and accessibility assessment
-- Create editing efficiency optimization including chromatin context, transcriptional state, and cellular factors
-- Develop specificity analysis including comprehensive off-target prediction and experimental validation
-- Plan safety assessment including genotoxicity evaluation, immune response assessment, and toxicology studies
-- Design therapeutic optimization including delivery optimization, dosing strategies, and clinical endpoints
+**Rank 2 (Backup):**
+```
+Sequence:     5'-CCTGCTGCTGGCCTTCGTGG-TGG-3'
+Position:     chr1:55,505,712-55,505,731 (+ strand)
+Efficiency:   0.82 (DeepCRISPR)
+Specificity:  0.91 (CFD)
+Off-targets:  0 in coding exons (<=3 mismatches)
+GC content:   70% (acceptable)
+```
 
-**Computational Biology Algorithm Manager Perspective**:
-- Design computational architecture including algorithm development, machine learning models, and predictive frameworks
-- Create database integration including genome databases, experimental databases, and literature mining
-- Develop user interfaces including web applications, API services, and visualization tools
-- Plan automation framework including pipeline automation, batch processing, and workflow management
-- Design performance optimization including algorithm acceleration, parallel processing, and cloud computing
+**Rank 3 (Alternative):**
+```
+Sequence:     5'-ATGGCACCGTCAGCTCCAGG-CGG-3'
+Position:     chr1:55,505,580-55,505,599 (+ strand)
+Efficiency:   0.78 (DeepCRISPR)
+Specificity:  0.96 (CFD, highest specificity)
+Off-targets:  0 in coding exons (<=3 mismatches)
+GC content:   65% (optimal)
+```
 
-#### Advanced Machine Learning and AI Integration
-**Integrated Dual-Expert Analysis**:
-- Develop deep learning models including convolutional networks, recurrent networks, and transformer architectures
-- Create ensemble methods including model combination, consensus prediction, and uncertainty quantification
-- Plan active learning including iterative improvement, experimental feedback, and model refinement
-- Design explainable AI including feature interpretation, prediction explanation, and biological insights
-- Create federated learning including multi-institutional collaboration and privacy-preserving analysis
+**Off-Target Analysis Summary**
 
-#### Quality Assurance and Validation Planning
-**Gene Editing Technology Director Focus**:
-- Design validation protocols including in vitro validation, in vivo validation, and clinical validation
-- Create quality metrics including on-target efficiency, off-target frequency, and prediction accuracy
-- Plan experimental validation including cell-based assays, animal studies, and clinical trials
-- Design expert review including scientific validation, regulatory consultation, and clinical input
-- Create documentation including standard operating procedures, validation reports, and regulatory submissions
+| Analysis Tool | gRNA1 | gRNA2 | gRNA3 |
+|---------------|-------|-------|-------|
+| Cas-OFFinder (3MM) | 12 | 18 | 8 |
+| CRISPOR CFD | 0.94 | 0.91 | 0.96 |
+| GuideScan 2.0 | High | High | High |
+| MIT Score | 87 | 82 | 91 |
 
-### Phase 3: Implementation and Execution
+Top off-target sites for gRNA1 (all require 4+ mismatches):
+- Site 1: chr2:45,678,901 (4 MM, intergenic, no gene within 50kb)
+- Site 2: chr5:12,345,678 (4 MM, intron of non-expressed gene in liver)
+- Site 3: chr8:98,765,432 (3 MM in seed + 1 MM distal, intergenic)
 
-#### Platform Development and Algorithm Implementation
-**Computational Biology Algorithm Manager Perspective**:
-- Implement guide RNA design algorithms including scoring functions, machine learning models, and optimization methods
-- Deploy off-target prediction including comprehensive genome scanning, similarity analysis, and risk assessment
-- Execute database integration including genome databases, experimental data, and literature sources
-- Implement user interfaces including web applications, visualization tools, and collaborative features
-- Deploy computational infrastructure including processing systems, storage platforms, and cloud services
+Risk assessment: All top off-target sites are in non-coding regions or genes not expressed in hepatocytes. Seed region mismatches in top sites significantly reduce cleavage probability.
 
-**Gene Editing Technology Director Perspective**:
-- Implement experimental validation including cell culture systems, screening assays, and functional validation
-- Deploy safety assessment including off-target analysis, genotoxicity testing, and immune response evaluation
-- Execute therapeutic optimization including delivery system development, dosing optimization, and efficacy assessment
-- Implement quality control including analytical methods, characterization protocols, and release testing
-- Deploy regulatory compliance including documentation systems, submission preparation, and regulatory strategy
+**Validation Strategy**
 
-#### Machine Learning Model Training and Optimization
-**Integrated Dual-Expert Analysis**:
-- Execute comprehensive model training including dataset preparation, hyperparameter optimization, and cross-validation
-- Implement real-time prediction including immediate feedback, interactive design, and optimization suggestions
-- Deploy ensemble prediction including model combination, uncertainty quantification, and consensus scoring
-- Execute performance monitoring including accuracy tracking, model updating, and continuous improvement
-- Implement knowledge integration including literature mining, experimental feedback, and expert knowledge
+**Tier 1: In Silico (Complete)**
+- Genome-wide off-target prediction (3 algorithms)
+- Chromatin accessibility correlation with liver ATAC-seq
+- SNP interference check (gnomAD, 1000 Genomes)
+- Result: gRNA1 recommended, gRNA3 highest specificity backup
 
-#### Experimental Validation and Clinical Translation
-**Gene Editing Technology Director Focus**:
-- Execute comprehensive validation including in vitro screening, in vivo validation, and clinical correlation
-- Implement safety studies including toxicology assessment, off-target analysis, and long-term monitoring
-- Deploy clinical translation including IND preparation, clinical trial design, and regulatory submission
-- Execute partnership development including pharmaceutical collaborations, academic partnerships, and clinical sites
-- Implement commercialization including intellectual property, business development, and market access
+**Tier 2: In Vitro (Weeks 1-4)**
+- HepG2 editing efficiency by flow cytometry (PCSK9 surface staining)
+- Indel spectrum analysis via amplicon NGS (>10,000x coverage)
+- GUIDE-seq in Hep3B for unbiased off-target detection
+- Criteria: >80% editing efficiency, <1% at any off-target site
 
-### Phase 4: Optimization and Continuous Improvement
+**Tier 3: Primary Hepatocytes (Weeks 5-8)**
+- Human primary hepatocyte editing (3 independent donors)
+- PCSK9 protein knockdown by ELISA (>90% reduction target)
+- Targeted amplicon NGS at top 50 predicted off-target sites
+- Criteria: >60% indel efficiency, no off-targets >0.1% in genes
 
-#### Performance Excellence and Precision Enhancement
-**Gene Editing Technology Director Perspective**:
-- Optimize editing efficiency including guide RNA improvement, delivery enhancement, and cellular optimization
-- Enhance specificity including off-target reduction, precision improvement, and safety enhancement
-- Improve therapeutic applications including efficacy optimization, safety profile improvement, and clinical outcomes
-- Optimize delivery systems including in vivo targeting, cellular uptake, and tissue distribution
-- Enhance competitive advantage including novel approaches, proprietary technologies, and strategic differentiation
+**Tier 4: Clinical Validation (Weeks 9-16)**
+- CIRCLE-seq for unbiased genome-wide off-target mapping
+- Rhesus macaque in vivo liver editing (surrogate species validation)
+- 6-month durability and safety assessment
+- Complete regulatory documentation package
 
-**Computational Biology Algorithm Manager Perspective**:
-- Optimize algorithm performance including accuracy improvement, processing speed, and resource efficiency
-- Enhance prediction capabilities including model sophistication, feature engineering, and data integration
-- Improve user experience including interface optimization, workflow streamlining, and accessibility enhancement
-- Optimize computational resources including cost optimization, scalability improvement, and performance tuning
-- Enhance integration capabilities including API development, external tool integration, and data interoperability
+**Success Criteria**
+- On-target efficiency: >70% indels in primary hepatocytes
+- Off-target threshold: No site >0.1% in any coding gene
+- Protein knockdown: >90% PCSK9 reduction in plasma
+- Durability: Stable editing at 6 months post-treatment
+- Safety: No chromosomal abnormalities or clonal expansion
 
-#### Strategic Innovation and Therapeutic Leadership
-**Integrated Dual-Expert Analysis**:
-- Implement next-generation technologies including advanced CRISPR systems, novel editing approaches, and cutting-edge delivery methods
-- Enhance therapeutic capabilities including disease-specific optimization, personalized approaches, and combination therapies
-- Develop strategic innovation including research collaborations, technology partnerships, and competitive advantage
-- Implement global expansion including international partnerships, regulatory harmonization, and market development
-- Create industry leadership including thought leadership, standard development, and scientific community engagement
+**QC Specifications for Clinical gRNA**
+- Sequence identity: 100% match to design
+- Purity: >90% full-length by HPLC
+- Endotoxin: <0.5 EU/mg
+- Sterility: Negative (USP <71>)
 
-## Deliverables and Outcomes
+---
 
-### Guide RNA Design and Optimization Deliverables
-1. **Comprehensive gRNA Design Platform**: AI-powered system including target identification, guide RNA scoring, and optimization algorithms
-2. **Off-Target Prediction Suite**: Advanced prediction models including genome-wide analysis, risk assessment, and safety evaluation
-3. **Editing Efficiency Optimization**: Machine learning models for efficiency prediction, optimization suggestions, and experimental validation
-4. **Safety Assessment Framework**: Comprehensive safety analysis including genotoxicity, immunogenicity, and long-term effects
-5. **Experimental Validation Platform**: Integrated validation including cell-based assays, animal studies, and clinical correlation
-
-### Computational Platform Deliverables
-6. **Machine Learning Architecture**: Advanced ML including deep learning, ensemble methods, and explainable AI
-7. **Database Integration System**: Genomic databases, experimental data, literature sources, and knowledge integration
-8. **User Interface and Visualization**: Web applications, interactive design tools, and collaborative platforms
-9. **Automation and Workflow**: Pipeline automation, batch processing, and workflow management
-10. **Cloud Computing Platform**: Scalable infrastructure, distributed processing, and secure data management
-
-### Therapeutic Development Deliverables
-11. **Clinical Translation Pipeline**: IND preparation, clinical trial design, regulatory submission support
-12. **Manufacturing and Quality**: GMP compliance, analytical methods, quality control, and release testing
-13. **Regulatory Strategy**: FDA interactions, regulatory guidance, compliance monitoring, and approval strategy
-14. **Partnership Development**: Pharmaceutical collaborations, academic partnerships, and technology alliances
-15. **Innovation and IP Portfolio**: Patent development, technology advancement, and competitive advantage
-
-## Implementation Timeline
-
-### Phase 1: Foundation and Algorithm Development (Months 1-8)
-- **Months 1-2**: Requirements analysis, technology assessment, platform architecture
-- **Months 3-4**: Algorithm development, machine learning implementation, database integration
-- **Months 5-6**: User interface development, validation framework, quality systems
-- **Months 7-8**: Experimental validation, safety assessment, regulatory preparation
-
-### Phase 2: Platform Deployment and Validation (Months 9-16)
-- **Months 9-10**: Platform deployment, user training, experimental validation
-- **Months 11-12**: Clinical translation, partnership development, regulatory submission
-- **Months 13-14**: Safety studies, efficacy assessment, quality optimization
-- **Months 15-16**: Commercial preparation, market development, competitive positioning
-
-### Phase 3: Excellence and Market Leadership (Months 17-24)
-- **Months 17-18**: Performance optimization, advanced capabilities, innovation implementation
-- **Months 19-20**: Strategic partnerships, global expansion, technology advancement
-- **Months 21-22**: Therapeutic leadership, regulatory influence, market dominance
-- **Months 23-24**: Strategic innovation, future development, competitive advantage
-
-## Risk Management and Mitigation
-
-### Scientific and Technical Risks
-- **Off-Target Risk**: Comprehensive prediction, experimental validation, safety monitoring, and risk mitigation
-- **Efficiency Risk**: Algorithm optimization, experimental validation, delivery improvement, and performance enhancement
-- **Safety Risk**: Rigorous safety assessment, toxicology studies, regulatory compliance, and risk management
-- **Technology Risk**: Platform reliability, algorithm accuracy, validation standards, and continuous improvement
-
-### Regulatory and Commercial Risks
-- **Regulatory Risk**: Early agency engagement, regulatory expertise, compliance monitoring, and submission quality
-- **Clinical Risk**: Clinical trial design, safety monitoring, efficacy assessment, and regulatory approval
-- **Intellectual Property Risk**: Patent protection, freedom to operate, competitive intelligence, and IP strategy
-- **Market Risk**: Competitive analysis, market positioning, partnership development, and commercial strategy
-
-## Success Metrics and KPIs
-
-### Gene Editing Performance KPIs
-- **On-Target Efficiency**: >95% predicted efficiency correlation with experimental results
-- **Off-Target Accuracy**: <1% false negative rate for significant off-target sites
-- **Safety Validation**: >90% safety prediction accuracy, zero unexpected toxicity
-- **Clinical Translation**: >20 IND applications, >80% regulatory approval success
-
-### Platform Performance KPIs
-- **System Performance**: >99.5% uptime, <10 second design generation time
-- **User Adoption**: >1000 researchers, >500 institutions, >10,000 designs monthly
-- **Prediction Accuracy**: >90% experimental correlation, continuous improvement
-- **Innovation Impact**: 25+ peer-reviewed publications, 15+ patents, industry recognition
-
-This comprehensive CRISPR guide RNA design and optimization platform enables precise, safe, and efficient gene editing through advanced computational design, rigorous experimental validation, and systematic clinical translation across diverse therapeutic applications.
+## Related Prompts
+- [Gene Therapy Manufacturing](gene-therapy-development-manufacturing.md) - Vector and delivery
+- [CRISPR Design Expert](../gene-editing-crispr-design-expert.md) - Full editing strategy
+- [Clinical Trial Design](../clinical-trial-design-and-optimization-expert.md) - Development planning

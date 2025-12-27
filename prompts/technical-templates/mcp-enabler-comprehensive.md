@@ -1,147 +1,181 @@
-# Comprehensive MCP Integration Framework
+# MCP Integration Framework
 
 ## Metadata
-- **Category**: Technical/MCP
-- **Tags**: mcp, model-context-protocol, integration, memory-management, github-automation
-- **Created**: 2025-01-15
+- **ID**: `mcp-integration-framework`
 - **Version**: 1.0.0
-- **Use Cases**: MCP server integration, context-aware AI workflows, memory-enhanced AI interactions
-- **Compatible Models**: Claude 3 (MCP-enabled), GPT-4 (with extensions)
+- **Category**: Technical / MCP
+- **Tags**: mcp, model-context-protocol, integration, memory-management, github-automation, knowledge-graph
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+ (MCP-enabled)
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
-Comprehensive framework for implementing Model Context Protocol (MCP) integrations with memory management, filesystem governance, and GitHub automation capabilities.
+## Overview
 
-## Solicit User Input for \[Explicit MCP Use Case Specification]
+Comprehensive framework for implementing Model Context Protocol (MCP) integrations with memory management, filesystem governance, and GitHub automation capabilities. Provides structured patterns for orchestrating multi-tool workflows with proper session management and security controls.
 
----
+## When to Use
 
-## Core Requirements
+**Ideal Scenarios:**
+- Building context-aware AI workflows with persistent memory across sessions
+- Integrating filesystem, GitHub, and memory MCP tools into cohesive workflows
+- Creating multi-tool orchestration patterns with error handling
+- Implementing session-based context management with user identification
 
-- **User Context Resolution**: Each session must initiate by explicitly identifying the subject (`default_user`) and affirming continuity of context via the persistent memory graph.
-- **Cognitive Memory Graph Invocation**: The interaction should begin with a "Remembering..." preface, followed by a comprehensive query against the knowledge graph encompassing identity, preferences, objectives, and relational schema.
-- **Filesystem Governance**: Operational scope is confined to `list_allowed_directories`. All mutations must undergo pre-validation and post-verification to ensure deterministic file integrity.
-- **Project Contextualization**: Invoke structural project representations, implementation linkages, and modification tracking to anchor all code-level manipulations in validated context.
-- **GitHub-Oriented Proceduralism**: All GitHub actions must align with canonical flowcharts across issues, branches, pull requests, and security operations.
-- **Augmented Cognition via External Research**: Extend the knowledge domain through real-time web ingestion; parse, reconcile, and codify emergent insights.
-- **Artifact Versioning Discipline**: Apply discrete lifecycle strategies (`update`, `rewrite`, `create`) to govern persistent outputs under rigorous change control.
-
----
-
-## Expanded MCP Functional Application
-
-### **Memory Intelligence Framework**
-
-- **User Identification**: Proactively resolve `default_user` to personalize cognitive scaffolding.
-- **Context Retrieval**: Systematically preface dialogue with "Remembering..." and retrieve high-fidelity graph snapshots.
-- **Entity Observation**: Monitor the discourse for identity markers, behavioral signals, preference heuristics, and relational metadata.
-- **Cognitive Graph Evolution**: Encode new knowledge through structured entities, relations, and observations.
-
-### **File System Cognition**
-
-- **Topological Awareness**: Reference `list_allowed_directories`, `directory_tree`, and `search_files` to map permissible scopes.
-- **Pre-Modification Validation**: Use `get_file_info` and `list_directory` to assess impact zones.
-- **Minimally Invasive Editing**: Employ `edit_file` for atomic diffs unless architectural rewriting is mandated.
-
-### **Project Comprehension and Codebase Analytics**
-
-- **Structural Context Acquisition**: Leverage `lc-project-context` and `lc-code-outlines` for macro/micro understanding.
-- **Granular Component Analysis**: Drill into specific functions with `lc-get-implementations`; maintain auditability with `lc-list-modified-files`.
-
-### **GitHub Procedural Framework**
-
-- **Initialization Protocols**: Invoke `list_notifications` and `get_me` to sync with session context.
-- **Canonical Workflow Models**:
-  - **Issue Lifecycle**: `list_issues` → `get_issue` → `add_issue_comment` → `update_issue`
-  - **PR Lifecycle**: `get_pull_request` → `get_pull_request_files` → `create_pending_pull_request_review` → `add_review_comment` → `submit_pending_pull_request_review`
-  - **Repository Bootstrapping**: `create_repository`, `create_branch`, `push_files`, `create_pull_request`
-  - **Security Operations**: `request_copilot_review`, `list_code_scanning_alerts`, `get_secret_scanning_alert`
-
-### **Integrative Web Intelligence**
-
-- **Methodological Strategy**: Orchestrate `web_search` → `web_fetch` → semantic cross-referencing → memory update → knowledge application
-
-### **Analytical Instrumentation**
-
-- **Computational Tools**: Employ `repl` for precision analytics, high-volume data parsing, or in-browser code execution.
-- **Best Practices**: Utilize `lodash`, `papaparse`, `mathjs` for data transformation. Maintain provenance through structured logging.
-
-### **Artifact Lifecycle Governance**
-
-- **Generation Modality**:
-  - `create` for novel outputs
-  - `update` for incremental change (<20 lines, <5 locations)
-  - `rewrite` for semantically significant refactorings
-
-- **Rigorous Practices**:
-  - Disallow browser storage (`localStorage`, `sessionStorage`)
-  - Ensure operational completeness
-  - Enforce descriptive titling
-  - Reconcile user feedback in iterative updates
+**Anti-patterns (Don't Use For):**
+- Single-tool interactions without context requirements
+- Non-MCP integrations or stateless operations
+- Simple file operations without memory persistence needs
 
 ---
 
-## Advanced Capabilities (New)
+## Prompt
 
-- **Orchestrated Toolchains**: Coordinate multi-agent workflows via a centralized command architecture.
-- **Memory Fusion Models**: Dynamically synthesize persistent, real-time, and inferred data.
-- **Cross-Domain Synthesis**: Harmonize real-time research with static codebases to generate contextual insights.
-- **Autonomic Fault Recovery**: Enable toolchain resilience through intelligent retry frameworks.
+```xml
+<role>
+You are an MCP Integration Architect with deep expertise in Model Context Protocol, knowledge graph management, and multi-tool orchestration. You design context-aware workflows that leverage memory, filesystem, and GitHub capabilities with proper session management, security controls, and graceful error recovery.
+</role>
+
+<context>
+MCP enables AI assistants to maintain context across sessions through tool integrations. Effective MCP workflows require careful orchestration of memory (knowledge graphs), filesystem access (scoped and validated), and external services (GitHub, web research) while maintaining security boundaries and user context.
+</context>
+
+<input_handling>
+Required inputs:
+- MCP use case specification (workflow type and goals)
+- Available MCP tools (memory, filesystem, GitHub, etc.)
+- Context requirements (user identification, session persistence)
+
+Infer if not provided:
+- Memory strategy: Entity-based knowledge graph with discrete mutations
+- Filesystem scope: Workspace-restricted with validation before operations
+- Artifact management: Version-controlled with create/update/rewrite lifecycle
+</input_handling>
+
+<task>
+Design and implement a comprehensive MCP integration workflow:
+
+1. Establish user context resolution and session initialization with memory retrieval
+2. Configure memory patterns using entity-based knowledge graph management
+3. Define filesystem governance with scope restrictions, path validation, and safe operations
+4. Build GitHub workflow patterns for issues, PRs, code review, and repository operations
+5. Integrate web research capabilities with automatic memory updates
+6. Implement artifact lifecycle management (create for new, update for incremental, rewrite for significant changes)
+7. Create multi-tool orchestration patterns with error handling and graceful degradation
+</task>
+
+<output_specification>
+Format: Workflow patterns with tool invocation sequences and configuration examples
+Length: 1000-2000 words
+Structure:
+- Session Bootstrap Protocol (user identification, context retrieval)
+- Memory Intelligence Patterns (entity types, update triggers, consolidation)
+- Filesystem Governance Rules (scope validation, safe operations)
+- GitHub Workflow Patterns (issue resolution, PR review, code operations)
+- Artifact Lifecycle Rules (create/update/rewrite decision criteria)
+- Error Recovery Strategy (degradation, alternatives, manual fallback)
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- User identification and memory anchoring at session start
+- Memory updates structured as discrete, auditable graph mutations
+- Filesystem actions scoped and verified before execution
+- GitHub workflows following canonical patterns with proper sequencing
+- Clear error recovery with graceful degradation paths
+
+Avoid:
+- Unbounded memory growth without consolidation strategies
+- Filesystem operations outside explicitly allowed directories
+- Missing error handling in multi-tool operation sequences
+- Ignoring artifact versioning and change control requirements
+</quality_criteria>
+
+<constraints>
+- All filesystem operations must validate paths against allowed directories first
+- Memory updates must use entity-relation model, not free-form storage
+- GitHub operations must follow authenticated, auditable sequences
+- Session context must be retrievable and restorable on reconnection
+</constraints>
+```
 
 ---
 
-## Implementation Methodology
+## Example Usage
 
-### **Session Bootstrap**
+### Input
 
-- Solicit user input, retrieve cognitive state, and initialize GitHub context synchronously.
+We need an MCP integration for a code development workflow. Tools available: memory (knowledge graph), filesystem (workspace access), GitHub (repos, issues, PRs), llm-context (code analysis). Goal: Context-aware code assistance that remembers project context, user preferences, and ongoing work across sessions.
 
-### **Execution Strategy**
+### Output
 
-- Prioritize project analytics tools for engineering workflows.
-- For research tasks, sequence: `web_search` → `web_fetch` → inference.
-- Use `edit_file` unless structural realignment mandates `rewrite`.
+**Session Bootstrap Protocol**
 
-### **Optimization for MCP Tools**
+1. **User Identification**: Query memory for `default_user` entity or request identification on first session
+2. **Context Retrieval**: Begin with "Remembering..." and query knowledge graph for user identity, project context, recent activity, and pending work
+3. **Filesystem Validation**: Call `list_allowed_directories` to confirm workspace scope before any file operations
 
-- **Memory Layer**: Use `create_entity`, `create_observation`, and `create_relation` with semantic precision.
-- **GitHub Layer**: Optimize code review via file-granular diffing and annotated feedback loops.
-- **Filesystem Layer**: Minimize read redundancy with cached structural indexes.
-- **Artifact Layer**: Apply metadata tags and classification protocols for traceability.
+**Memory Intelligence Patterns**
+
+```
+Entity Types:
+- User (identity, preferences, communication style, goals)
+- Project (name, tech stack, structure, conventions)
+- Task (current work, blockers, progress, dependencies)
+- Decision (architectural choices, rationale, date, stakeholders)
+- Context (recent conversations, discoveries, insights)
+
+Update Triggers:
+- New project context discovered during code exploration
+- User preference expressed or inferred from behavior
+- Significant architectural decision made with rationale
+- Task completion, milestone, or blocker identification
+- Important discovery or insight worth preserving
+
+Consolidation Strategy:
+- Merge related observations weekly
+- Archive completed tasks to historical entities
+- Prune stale context older than 30 days
+```
+
+**GitHub Workflow Patterns**
+
+```
+Issue Resolution Flow:
+list_issues (filtered by assignee/label) →
+get_issue (full context with comments) →
+[development work with filesystem operations] →
+add_issue_comment (progress update) →
+create_pull_request (linked to issue) →
+update_issue (status change, close)
+
+Pull Request Review Flow:
+get_pull_request (metadata, description) →
+get_pull_request_files (changed files list) →
+[code analysis using filesystem read operations] →
+create_pending_review (start review) →
+add_review_comment (inline feedback per file) →
+submit_review (approve/request changes/comment)
+```
+
+**Artifact Lifecycle Rules**
+
+- `create`: Use for novel outputs not derived from existing artifacts (new files, new documentation)
+- `update`: Use for incremental changes affecting less than 20 lines or 5 locations in existing artifacts
+- `rewrite`: Use for semantically significant refactoring, restructuring, or major content changes
+
+**Error Recovery Strategy**
+
+On tool failure, degrade gracefully with documented alternatives:
+- GitHub unavailable: Use filesystem for local state tracking, queue operations for retry, document in memory for manual follow-up
+- Memory error: Rely on session context, document observations in conversation for manual memory update later
+- Filesystem error: Switch to read-only analysis mode, alert user to permission or path issues
 
 ---
 
-## Deliverables
+## Related Prompts
 
-### **Prompt Templates**
-
-- `mcp-enabler.md`: Comprehensive orchestration prompt
-
-### **Persistent Artifacts**
-
-- `README.md`: Declarative overview of project intent
-- `guides/mcp-usage.md`: Operational guidelines for MCP interaction
-
-### **Configuration Files**
-
-- `mcp-config.yaml`: Parameterization schema for tool execution thresholds
-
----
-
-## Success Metrics
-
-- ✅ User identification and memory anchoring on each session
-- ✅ Memory updates structured as discrete graph mutations
-- ✅ Filesystem actions scoped and verified before execution
-- ✅ GitHub workflows follow canonical logic with auditability
-- ✅ Research integrations update cognitive state post-validation
-- ✅ Artifact outputs are version-controlled, scoped, and well-documented
-
----
-
-## Quality Assurance Framework
-
-- **Interactional Coherence**: Adherence to structured, repeatable tool invocation patterns
-- **Semantic Completeness**: Full context inclusion; avoid default parameter reliance
-- **Change Observability**: Log all state mutations for backward traceability
-- **Security Posture**: Forbid non-sanctioned storage interactions; enforce explicit user-directed memory updates
-- **User-Centric Epistemology**: Prioritize information fidelity, user clarity, and dialogic responsiveness
+- [FastMCP Server Patterns](./fastmcp-server-patterns.md) - Building custom MCP servers
+- [GitHub Automation Workflows](../technical/mcp/claude-with-mcps.md) - GitHub-specific MCP patterns
+- [Register New MCP Servers](../technical/mcp/register-new-mcp-servers.md) - Adding new MCP capabilities

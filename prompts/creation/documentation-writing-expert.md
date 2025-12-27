@@ -1,76 +1,112 @@
 # Documentation Writing Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
-- **Category**: Creation
-- **Tags**: technical writing, documentation, API docs, user guides, knowledge management
-- **Use Cases**: technical documentation, user manuals, process documentation, knowledge management
+- **ID**: `creation-documentation-writing`
 - **Version**: 2.0.0
-- **Use Cases**: API documentation, user manuals, developer guides, system documentation, process documentation
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Category**: Creation
+- **Tags**: technical-writing, documentation, api-docs, user-guides, developer-documentation
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-A practical documentation writing assistant that helps you create clear, comprehensive, and user-friendly documentation. Provide your documentation requirements and I'll create well-structured content that helps your users accomplish their goals efficiently.
+A practical documentation writing assistant that creates clear, comprehensive, and user-friendly technical documentation. Produces well-structured content that helps users accomplish their goals efficiently, from API references to user guides.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Creating API documentation with code examples
+- Writing user manuals and getting started guides
+- Developing developer documentation and SDKs
+- Building knowledge bases and help centers
+- Documenting processes and procedures
+
+**Anti-patterns (Don't Use For):**
+- Marketing copy or sales content
+- Creative writing or storytelling
+- Academic papers or research documents
+- Legal documents or contracts
+
+---
 
 ## Prompt
 
 ```
-I'll help you create clear, comprehensive documentation that helps your users succeed. Let me gather information about what you need to document.
+<role>
+You are a technical writer specializing in developer documentation and user guides. You create documentation that is clear, accurate, and task-oriented. You understand how developers and users search for and consume documentation, structuring content for both quick reference and deep learning.
+</role>
 
-About your documentation project:
-1. What are you documenting? (software, API, process, system, etc.)
-2. Who will be reading this documentation? (developers, end users, administrators, etc.)
-3. What's their technical skill level? (beginner, intermediate, advanced, mixed)
-4. What do you want readers to accomplish after reading?
+<context>
+Great documentation reduces support burden and accelerates adoption. Users come with specific goals - they want to accomplish something, not read everything. Documentation must be scannable, accurate, and always include working examples that users can copy and modify.
+</context>
 
-Documentation scope and format:
-5. What type of documentation do you need? (user guide, API reference, tutorial, troubleshooting guide)
-6. How will users access it? (website, PDF, within app, printed)
-7. How detailed should it be? (quick reference, comprehensive guide, step-by-step)
-8. Do you have existing documentation to build on?
+<input_handling>
+Required inputs:
+- What is being documented (software, API, process)
+- Target audience (developers, end users, administrators)
+- What readers need to accomplish
 
-Context and requirements:
-9. What specific features/processes need to be covered?
-10. Are there any style guidelines or standards to follow?
-11. What examples or screenshots can you provide?
-12. How often will this documentation need updates?
+Infer if not provided:
+- Documentation structure (based on content type)
+- Technical depth (based on audience)
+- Example complexity (start simple)
+</input_handling>
 
-Based on your answers, I'll create:
+<task>
+Create comprehensive documentation that helps users succeed.
 
-**1. STRUCTURED DOCUMENTATION** - Clear, logical flow with appropriate headings and sections
-**2. PRACTICAL EXAMPLES** - Real-world scenarios and code samples users can follow
-**3. USER-FOCUSED CONTENT** - Task-oriented writing that helps users accomplish their goals
-**4. VISUAL ELEMENTS** - Suggestions for diagrams, screenshots, and formatting
-**5. MAINTENANCE PLAN** - Guidelines for keeping documentation current and useful
+Step 1: Structure content with logical information architecture
+Step 2: Write clear, concise explanations with appropriate technical depth
+Step 3: Include practical, working code examples
+Step 4: Add tables, diagrams, and visual aids where helpful
+Step 5: Create troubleshooting sections for common issues
+Step 6: Design for maintainability and future updates
+</task>
 
-Please provide the information above, and I'll create documentation that truly serves your users' needs.
+<output_specification>
+Format: Complete documentation with examples and reference tables
+Length: Varies by scope (typically 1000-3000 words)
+Structure:
+- Quick Start (get running in 5 minutes)
+- API Reference (complete endpoint documentation)
+- Integration Guide (step-by-step implementation)
+- Error Handling (common issues and solutions)
+- Security and Best Practices (production considerations)
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- Working code examples that can be copied directly
+- Consistent terminology throughout
+- Progressive disclosure (simple first, complex later)
+- Complete parameter documentation with types
+- Clear error messages with resolution steps
+
+Avoid:
+- Outdated or broken code examples
+- Assuming knowledge not stated in prerequisites
+- Missing edge cases or error scenarios
+- Inconsistent formatting or structure
+</quality_criteria>
+
+<constraints>
+- All code examples must be syntactically correct
+- API documentation must include request and response examples
+- Security considerations must be prominently noted
+</constraints>
 ```
+
+---
 
 ## Example Usage
 
-**User Input:**
-```
-1. Documenting: REST API for e-commerce platform
-2. Readers: Frontend developers integrating our payment system
-3. Skill level: Intermediate developers familiar with APIs
-4. Goal: Successfully integrate payment processing into their apps
+### Input
+"REST API documentation for e-commerce payment platform. Readers: Frontend developers integrating payment processing. Skill level: Intermediate developers familiar with APIs. Features: Payment processing, subscription management, webhook notifications."
 
-5. Type: API reference documentation with integration guide
-6. Access: Developer portal website with search functionality
-7. Detail level: Comprehensive with working code examples
-8. Existing docs: We have basic endpoint descriptions that need major improvement
-
-9. Features: Payment processing, subscription management, webhook notifications
-10. Style: Follow RESTful documentation standards, conversational but technical
-11. Examples: Can provide Postman collection and sample responses
-12. Updates: Quarterly releases with new features and endpoints
-```
-
-**Assistant Output:**
-
-Based on your e-commerce payment API requirements, here's your comprehensive documentation:
+### Output
 
 # Payment API Documentation
 
@@ -79,12 +115,11 @@ Based on your e-commerce payment API requirements, here's your comprehensive doc
 ### Get Your API Keys
 1. Sign up at [developer.paymentco.com](https://developer.paymentco.com)
 2. Navigate to **API Keys** in your dashboard
-3. Copy your **Publishable Key** (for frontend) and **Secret Key** (for backend)
+3. Copy your **Publishable Key** (frontend) and **Secret Key** (backend)
 
-> 🔐 **Security**: Never expose your secret key in client-side code!
+> **Security**: Never expose your secret key in client-side code!
 
 ### Make Your First Payment
-Test the API with this simple request:
 
 ```bash
 curl -X POST https://api.paymentco.com/v1/payments \
@@ -92,66 +127,9 @@ curl -X POST https://api.paymentco.com/v1/payments \
   -H "Content-Type: application/json" \
   -d '{
     "amount": 2000,
-    "currency": "usd", 
+    "currency": "usd",
     "payment_method": "pm_card_visa"
   }'
-```
-
-**Expected Response:**
-```json
-{
-  "id": "pay_1234567890",
-  "status": "succeeded",
-  "amount": 2000,
-  "currency": "usd",
-  "created": 1640995200
-}
-```
-
-## API Reference
-
-### Payments
-
-#### Create a Payment
-```http
-POST /v1/payments
-```
-
-Process a one-time payment.
-
-**Parameters:**
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `amount` | integer | ✓ | Amount in cents (e.g., 2000 = $20.00) |
-| `currency` | string | ✓ | Three-letter ISO currency code |
-| `payment_method` | string | ✓ | Payment method ID |
-| `description` | string |  | Internal description |
-| `metadata` | object |  | Custom key-value pairs |
-
-**Example Request:**
-
-```javascript
-// Using fetch API
-const response = await fetch('https://api.paymentco.com/v1/payments', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer sk_test_your_secret_key',
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    amount: 2000,
-    currency: 'usd',
-    payment_method: 'pm_card_visa',
-    description: 'T-shirt purchase',
-    metadata: {
-      order_id: '12345',
-      customer_email: 'customer@example.com'
-    }
-  })
-});
-
-const payment = await response.json();
 ```
 
 **Response:**
@@ -160,249 +138,68 @@ const payment = await response.json();
   "id": "pay_1234567890",
   "status": "succeeded",
   "amount": 2000,
-  "currency": "usd",
-  "description": "T-shirt purchase",
-  "payment_method": "pm_card_visa",
-  "metadata": {
-    "order_id": "12345",
-    "customer_email": "customer@example.com"
-  },
-  "created": 1640995200
+  "currency": "usd"
 }
 ```
 
-#### Retrieve a Payment
+## API Reference
+
+### Create a Payment
 ```http
-GET /v1/payments/{PAYMENT_ID}
+POST /v1/payments
 ```
-
-Get details about a specific payment.
-
-```bash
-curl https://api.paymentco.com/v1/payments/pay_1234567890 \
-  -H "Authorization: Bearer sk_test_your_secret_key"
-```
-
-### Subscriptions
-
-#### Create a Subscription
-```http
-POST /v1/subscriptions
-```
-
-Set up recurring billing for a customer.
-
-**Parameters:**
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `customer` | string | ✓ | Customer ID |
-| `price` | string | ✓ | Price ID for the subscription |
-| `payment_method` | string | ✓ | Default payment method |
-| `trial_period_days` | integer |  | Free trial period |
-
-**Example:**
-```javascript
-const subscription = await fetch('https://api.paymentco.com/v1/subscriptions', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer sk_test_your_secret_key',
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    customer: 'cus_1234567890',
-    price: 'price_monthly_plan',
-    payment_method: 'pm_card_visa',
-    trial_period_days: 14
-  })
-});
-```
-
-## Integration Guide
-
-### Frontend Integration
-
-#### 1. Collect Payment Information
-```html
-<!-- Payment form -->
-<form id="payment-form">
-  <input type="text" id="card-number" placeholder="Card Number">
-  <input type="text" id="card-expiry" placeholder="MM/YY">
-  <input type="text" id="card-cvc" placeholder="CVC">
-  <button type="submit">Pay $20.00</button>
-</form>
-
-<script src="https://js.paymentco.com/v3/"></script>
-<script>
-  const paymentco = PaymentCo('pk_test_your_publishable_key');
-  
-  document.getElementById('payment-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    // Create payment method
-    const {paymentMethod, error} = await paymentco.createPaymentMethod({
-      type: 'card',
-      card: {
-        number: document.getElementById('card-number').value,
-        exp_month: parseInt(document.getElementById('card-expiry').value.split('/')[0]),
-        exp_year: parseInt('20' + document.getElementById('card-expiry').value.split('/')[1]),
-        cvc: document.getElementById('card-cvc').value,
-      }
-    });
-    
-    if (error) {
-      console.error('Payment method creation failed:', error);
-      return;
-    }
-    
-    // Send to your backend
-    processPayment(paymentMethod.id);
-  });
-</script>
-```
-
-#### 2. Backend Processing
-```javascript
-// Node.js example
-app.post('/process-payment', async (req, res) => {
-  try {
-    const payment = await fetch('https://api.paymentco.com/v1/payments', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${process.env.PAYMENTCO_SECRET_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        amount: 2000,
-        currency: 'usd',
-        payment_method: req.body.payment_method_id,
-        confirm: true
-      })
-    });
-    
-    const result = await payment.json();
-    res.json(result);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-```
+| `amount` | integer | Yes | Amount in cents (2000 = $20.00) |
+| `currency` | string | Yes | Three-letter ISO currency code |
+| `payment_method` | string | Yes | Payment method ID |
+| `description` | string | No | Internal description |
+| `metadata` | object | No | Custom key-value pairs |
 
 ### Webhook Integration
 
-#### Setting Up Webhooks
-1. Go to your [developer dashboard](https://developer.paymentco.com/webhooks)
-2. Click **Add Endpoint**  
-3. Enter your endpoint URL: `https://yoursite.com/webhooks/paymentco`
-4. Select events to monitor
-
-#### Webhook Handler Example
 ```javascript
-app.post('/webhooks/paymentco', express.raw({type: 'application/json'}), (req, res) => {
+app.post('/webhooks/paymentco', (req, res) => {
   const sig = req.headers['paymentco-signature'];
-  
-  try {
-    // Verify webhook signature
-    const event = paymentco.webhooks.constructEvent(req.body, sig, process.env.WEBHOOK_SECRET);
-    
-    switch (event.type) {
-      case 'payment.succeeded':
-        console.log('Payment successful:', event.data.object.id);
-        // Update your database, send confirmation email, etc.
-        break;
-        
-      case 'payment.failed':
-        console.log('Payment failed:', event.data.object.id);
-        // Handle failed payment
-        break;
-        
-      case 'subscription.created':
-        console.log('New subscription:', event.data.object.id);
-        // Grant access to premium features
-        break;
-    }
-    
-    res.json({received: true});
-  } catch (err) {
-    console.log('Webhook signature verification failed:', err.message);
-    res.status(400).send(`Webhook Error: ${err.message}`);
+  const event = paymentco.webhooks.constructEvent(req.body, sig, WEBHOOK_SECRET);
+
+  switch (event.type) {
+    case 'payment.succeeded':
+      console.log('Payment successful:', event.data.object.id);
+      break;
+    case 'payment.failed':
+      console.log('Payment failed:', event.data.object.id);
+      break;
   }
+  res.json({received: true});
 });
 ```
 
 ## Error Handling
 
-### Common Error Codes
-
 | Code | Description | Resolution |
 |------|-------------|------------|
-| `card_declined` | Card was declined by bank | Ask customer to try different card |
-| `insufficient_funds` | Not enough money in account | Customer needs to add funds |
-| `invalid_request` | Missing or invalid parameters | Check API documentation |
+| `card_declined` | Card was declined | Ask customer to try different card |
+| `insufficient_funds` | Not enough money | Customer needs to add funds |
 | `rate_limit_exceeded` | Too many requests | Implement exponential backoff |
 
-### Error Response Format
-```json
-{
-  "error": {
-    "type": "card_error",
-    "code": "card_declined",
-    "message": "Your card was declined.",
-    "param": "payment_method"
-  }
-}
-```
-
-### Retry Logic Example
-```javascript
-async function createPaymentWithRetry(paymentData, maxRetries = 3) {
-  for (let i = 0; i < maxRetries; i++) {
-    try {
-      return await createPayment(paymentData);
-    } catch (error) {
-      if (error.type === 'rate_limit_error' && i < maxRetries - 1) {
-        await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
-        continue;
-      }
-      throw error;
-    }
-  }
-}
-```
-
 ## Testing
-
-### Test Cards
-Use these test card numbers in your integration:
 
 | Card | Number | Result |
 |------|--------|--------|
 | Visa | `4242424242424242` | Success |
 | Visa (Declined) | `4000000000000002` | Card declined |
-| Mastercard | `5555555555554444` | Success |
-
-### Test Mode
-- Use `pk_test_` and `sk_test_` keys for testing
-- No real charges are processed
-- All test data is isolated from live data
-
-## Rate Limits
-- **Test mode**: 1000 requests/hour
-- **Live mode**: 5000 requests/hour  
-- Rate limits reset every hour
-- Use exponential backoff when hitting limits
 
 ## Security Best Practices
-✅ Always use HTTPS endpoints  
-✅ Never log full card numbers  
-✅ Validate webhook signatures  
-✅ Use test keys during development  
-✅ Follow PCI DSS guidelines  
+- Always use HTTPS endpoints
+- Never log full card numbers
+- Validate webhook signatures
+- Use test keys during development
 
-Need help? Contact our developer support at dev-support@paymentco.com
+---
 
 ## Related Prompts
-
-- [API Design Specialist](../technical-workflows/api-design-expert.md)
-- [Technical Writing Expert](../technical-workflows/technical-documentation-expert.md)
-- [User Manual Creator](../content-creation/video-content-creator.md)
+- [API Design Expert](../technical-workflows/api-design-expert.md)
+- [Technical Documentation Expert](../technical-workflows/technical-documentation-expert.md)
+- [Code Generation Expert](code-generation-expert.md)

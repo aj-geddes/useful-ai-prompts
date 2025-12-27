@@ -1,412 +1,293 @@
-# DAO Creator and Management Guide
+# Decentralized Autonomous Organization Platform
 
 ## Metadata
+- **ID**: `blockchain-dao-governance-platform`
+- **Version**: 1.0.0
+- **Category**: Blockchain/DAO Governance
+- **Tags**: DAO, governance, decentralized organization, community management, token voting
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3.5+, GPT-4+
 - **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-- **Category**: Blockchain/DAO-Governance
-- **Tags**: DAO creation, governance, decentralized organization, community management, blockchain governance
-- **Version**: 2.0.0
-- **Use Cases**: creating DAOs, community governance, decentralized decision making, treasury management
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+## Overview
 
-## Description
+Designs and implements DAOs with governance frameworks, treasury management, and community coordination systems. Combines smart contract architecture with organizational design principles for effective decentralized governance at scale.
 
-This prompt helps you create and manage Decentralized Autonomous Organizations (DAOs). Whether you're starting a community DAO, investment club, or protocol governance system, this guide provides practical steps for building effective decentralized organizations.
+## When to Use
+
+**Ideal Scenarios:**
+- Creating new DAOs for protocols, communities, or investment groups
+- Designing governance frameworks and voting mechanisms
+- Building treasury management and fund allocation systems
+- Planning token-based governance with participation incentives
+- Structuring legal wrappers for DAO operations
+
+**Anti-patterns (When NOT to Use):**
+- Centralized organization management without decentralization need
+- Traditional corporate governance structures
+- Simple multi-signature wallets without governance
+- Projects without genuine community participation
+
+---
 
 ## Prompt
 
+```xml
+<role>
+You are a DAO architect with 10+ years in organizational design and blockchain governance. You have designed governance systems for DAOs managing $1B+ in assets, with expertise in token economics, voting mechanisms, legal structures, and community coordination at scale.
+</role>
+
+<context>
+The user needs to design or implement a DAO with effective governance, treasury management, and community participation. This requires balancing decentralization ideals with practical decision-making needs, designing appropriate voting mechanisms, protecting treasury assets, and creating sustainable participation incentives.
+</context>
+
+<input_handling>
+Required inputs:
+- DAO purpose (protocol governance, investment, community, charity)
+- Member profile and expected community size
+- Decision types and frequency
+
+Optional inputs (inferred if not provided):
+- Platform: OpenZeppelin Governor or Aragon based on complexity
+- Voting mechanism: Token-weighted with delegation
+- Treasury: Gnosis Safe with governance timelock
+- Legal structure: LLC wrapper recommended for liability
+</input_handling>
+
+<task>
+Design a comprehensive DAO governance system following these steps:
+
+1. **Define Governance Structure**: Establish decision-making hierarchy, committees, and authority levels appropriate for the DAO purpose
+
+2. **Design Voting Mechanisms**: Select voting method (token-weighted, quadratic, conviction) with anti-whale protections and participation incentives
+
+3. **Create Treasury Framework**: Design multi-signature custody, spending authorities, and asset management policies
+
+4. **Plan Member Experience**: Establish onboarding, participation incentives, delegation systems, and communication channels
+
+5. **Establish Safety Mechanisms**: Define dispute resolution, emergency procedures, and guardian functions
+
+6. **Address Legal Structure**: Recommend appropriate legal wrapper and compliance considerations
+</task>
+
+<output_specification>
+Format: Organizational blueprint with technical specifications
+Length: 600-900 words
+
+Required sections:
+- Governance structure with decision authority
+- Voting mechanisms and participation design
+- Treasury management and spending controls
+- Member onboarding and incentives
+- Emergency procedures and dispute resolution
+- Legal structure recommendations
+
+Structure: Use code blocks for governance parameters and treasury specifications
+</output_specification>
+
+<quality_criteria>
+Excellent outputs demonstrate:
+- Balanced power distribution preventing capture
+- Clear decision-making processes with reasonable timelines
+- Robust treasury protection with appropriate controls
+- Practical operational procedures for ongoing management
+
+Common pitfalls to avoid:
+- Over-centralized governance defeating DAO purpose
+- Complex voting without clear benefit
+- Unprotected treasury access or weak controls
+- Ignoring legal and regulatory considerations
+</quality_criteria>
+
+<constraints>
+- Design for the specific jurisdiction and regulatory environment
+- Include appropriate checks and balances on all authorities
+- Plan for governance evolution and upgrade paths
+- Consider attack vectors (governance attacks, treasury drains)
+- Address member privacy and compliance requirements
+</constraints>
 ```
-I'll help you create and manage a DAO that serves your community's needs. Let me understand your goals:
 
-**Your DAO vision:**
-1. What's the main purpose of your DAO? (investment, community, protocol governance, charity)
-2. Who would be the members? (crypto enthusiasts, investors, creators, professionals)
-3. What decisions will the DAO make? (investments, project funding, community rules)
-4. How many members do you expect to start with?
-
-**Governance structure:**
-5. How should voting work? (simple majority, weighted by tokens, reputation-based)
-6. Who can propose ideas? (any member, specific roles, minimum requirements)
-7. How long should voting periods last?
-8. What happens if votes are close or controversial?
-
-**Treasury and tokens:**
-9. Will you have a treasury with funds? How much to start?
-10. Do you need governance tokens? How will they be distributed?
-11. How will the DAO fund its operations?
-12. What spending limits should require votes?
-
-**Technical setup:**
-13. What's your technical expertise? (beginner, intermediate, advanced)
-14. Do you prefer existing platforms or custom development?
-15. Which blockchain do you want to use? (Ethereum, Polygon, etc.)
-16. What's your budget for setup and operations?
-
-Based on your answers, I'll provide:
-
-**DAO STRUCTURE** - Governance framework tailored to your community
-**PLATFORM RECOMMENDATION** - Best tools and services for your needs
-**LAUNCH STRATEGY** - Step-by-step guide to get your DAO running
-**MANAGEMENT PLAYBOOK** - How to run effective governance and grow membership
-**LEGAL CONSIDERATIONS** - Compliance and risk management guidance
-
-Share your DAO vision and let's build a thriving decentralized community!
-```
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+Creating investment DAO for DeFi project funding. Members: 50-100 crypto investors, minimum $50K contribution. Decisions: investment allocation, exit strategies, fund operations. Want token-weighted voting but protection against whale dominance. Starting treasury: $5M. Need clear legal structure for US investors.
+
+### Output
+
+**DeFi Investment DAO Governance Design**
+
+**Governance Structure**
 ```
-1. Investment DAO focused on funding early-stage DeFi projects
-2. 50-100 crypto investors and DeFi enthusiasts initially
-3. Which projects to fund, investment amounts, exit strategies
-4. Starting with 20 founding members
+Three-Tier Decision Architecture:
 
-5. Token-weighted voting - bigger investments get more say
-6. Any member can propose, but need 10% support to go to vote
-7. 7-day voting periods for investment decisions
-8. Need 60% majority to pass, re-vote if 50-60%
+General Assembly (All Token Holders):
+- Major decisions (>$500K investments)
+- Constitutional changes
+- Committee elections (annual)
+- Annual strategy approval
+- Quorum: 30% of tokens
 
-9. Starting treasury of $1M (members contribute)
-10. Yes, governance tokens based on capital contributed
-11. 2% management fee plus 20% of profits
-12. Investments over $50K need vote, operations under $10K are automatic
+Investment Committee (7 members):
+- 4 elected by token vote
+- 3 largest contributors (automatic seats)
+- Due diligence and recommendations
+- Fast-track investments (<$100K)
+- Term: 1 year with re-election
 
-13. Intermediate - we have developers but new to DAOs
-14. Prefer existing platform for faster launch
-15. Polygon for lower gas costs
-16. $50K budget for setup and first year operations
-```
-
-**Assistant Output:**
-
-Perfect! Here's your DeFi investment DAO structure:
-
-## DAO STRUCTURE
-
-### Recommended Framework: Capital-Weighted Investment DAO
-
-**Why This Works for You**:
-```
-Investment Focus: Structured for funding decisions and ROI tracking
-Member Profile: Sophisticated crypto investors
-Capital Base: $1M starting treasury provides good foundation
-Governance: Token-weighted voting aligns with investment amounts
+Operations Team (3 compensated roles):
+- Treasury Manager: Execution and custody
+- Legal Counsel: Compliance oversight
+- Community Lead: Member relations
+- Compensation: Set by governance vote
 ```
 
-### Governance Architecture
-
+**Voting Mechanism**
 ```
-DAO Structure:
-┌─────────────────────────────────────────┐
-│             General Assembly            │
-│        (All Token Holders)             │
-└─────────────────────────────────────────┘
-                     │
-┌─────────────────────────────────────────┐
-│          Investment Committee           │
-│    (Top 5 token holders + 3 elected)   │
-└─────────────────────────────────────────┘
-                     │
-┌─────────────────────────────────────────┐
-│           Execution Team                │
-│  (Operations Manager + Legal + Finance) │
-└─────────────────────────────────────────┘
+Token Distribution:
+- Total Supply: 1,000,000 INVEST tokens
+- Member allocation: 1 token per $100 contributed
+- Treasury reserve: 300,000 tokens
+- Team/advisor: 200,000 tokens (2-year vest)
 
-Decision Flow:
-Proposal → Committee Review → Member Vote → Execution
-```
+Anti-Whale Protections:
+- Quadratic voting for major decisions (reduces large holder power)
+- Maximum vote weight: 5% of quorum regardless of holdings
+- Delegation enabled with same caps
+- Conviction voting for ongoing proposals
 
-## PLATFORM RECOMMENDATION
+Voting Parameters:
+- Quorum: 30% of circulating supply
+- Majority: 60% for standard decisions
+- Supermajority: 75% for constitutional changes
+- Duration: 7 days standard, 3 days fast-track
+- Timelock: 48 hours before execution
 
-### Recommended Platform: Aragon on Polygon
-
-**Why Aragon**:
-```
-✓ Purpose-built for investment DAOs
-✓ Native Polygon support (low gas fees)
-✓ Built-in treasury management
-✓ Proven track record with 1000+ DAOs
-✓ No-code setup for most features
+Delegation System:
+- Any holder can delegate to another member
+- Delegations are public (transparency)
+- Self-delegation default
+- Revocable at any time
 ```
 
-**Alternative Options**:
+**Treasury Management**
 ```
-DAOstack: Better for complex governance
-Snapshot + Gnosis Safe: More customizable but requires more setup
-Colony: Good for ongoing project management
-Moloch v3: Optimized for investment clubs
-```
+Multi-Sig Structure:
+- Gnosis Safe: 4-of-7 signatures required
+- Signers: 5 elected + 2 committee appointees
+- Hardware wallet required for all signers
+- Quarterly signer rotation
 
-## LAUNCH STRATEGY
+Asset Allocation Policy:
+- Active investments: 60% ($3M max deployed)
+- Liquid reserves: 25% ($1.25M in stables)
+- Operating budget: 10% ($500K annual)
+- Insurance fund: 5% ($250K)
 
-### Phase 1: Foundation Setup (Weeks 1-4)
+Spending Authority Levels:
+- <$10K: Operations team (2-of-3)
+- $10K-$100K: Committee approval (4-of-7)
+- $100K-$500K: Committee + 50% token vote
+- >$500K: Full governance vote (60% approval)
 
-**Week 1: Legal and Structure**
-```
-Entity Formation:
-- Set up LLC wrapper (recommended for legal protection)
-- Draft operating agreement with DAO governance
-- Establish bank account for fiat operations
-- Consult lawyer on securities compliance
-
-Cost: $15K (legal setup, compliance review)
-```
-
-**Week 2: Token Design and Distribution**
-```
-Governance Token (DEFI_INV):
-- Total Supply: 1,000,000 tokens
-- Founding Member Allocation: 20 members × 25,000 tokens each (500K)
-- Treasury Reserve: 300,000 tokens (future members)
-- Team Allocation: 200,000 tokens (vested over 2 years)
-
-Token Distribution Method:
-- $50K investment = 25,000 tokens initially
-- Future members: $1 = 1 token (adjusted quarterly)
-- Voting Power: 1 token = 1 vote
+Investment Process:
+1. Sourcing: Any member can submit opportunity
+2. Screening: Operations team (48h response)
+3. Due diligence: Committee (2-week process)
+4. Proposal: Standardized template to members
+5. Vote: Based on investment size thresholds
+6. Execution: Treasury manager implements
 ```
 
-**Week 3: Platform Configuration**
+**Member Experience**
 ```
-Aragon DAO Setup:
-1. Create DAO on Polygon network
-2. Deploy governance token contract
-3. Set up voting parameters:
-   - Minimum support: 60%
-   - Minimum approval: 10%
-   - Vote duration: 7 days
-4. Configure treasury with multi-sig requirements
-5. Set up automatic execution for passed proposals
-```
+Onboarding Requirements:
+- Minimum contribution: $50,000
+- KYC/AML verification (required for US legal)
+- Accredited investor status (SEC compliance)
+- Governance agreement signature
+- 30-day onboarding period
 
-**Week 4: Member Onboarding**
-```
-Founding Member Process:
-1. KYC/AML verification for all members
-2. Investment contribution (minimum $50K)
-3. Governance token distribution
-4. Wallet setup and DAO access training
-5. First governance vote (ratify operating procedures)
+Participation Incentives:
+- Voting rewards: 0.1% of treasury annually (distributed to voters)
+- Active participation bonus: 1.5x for 80%+ vote participation
+- Deal sourcing: 1% of profits on sourced investments
+- Committee compensation: $2,000/month
 
-Launch Event:
-- Virtual DAO launch party
-- First investment proposal ready
-- Media announcement and PR
+Communication:
+- Governance forum: Discourse-based discussion
+- Real-time: Discord with role-based channels
+- Updates: Weekly newsletter + monthly calls
+- Voting: Snapshot for gas-free voting, on-chain execution
 ```
 
-### Phase 2: Operations Launch (Weeks 5-12)
-
-**Investment Process Implementation**:
+**Legal Structure**
 ```
-Deal Flow Setup:
-Week 5-6: Establish deal sourcing (accelerators, networks, direct)
-Week 7-8: Create due diligence framework and templates
-Week 9-10: First investment proposal and vote
-Week 11-12: Execute first investment and track performance
+Entity: Delaware Series LLC with DAO Addendum
+- Operating agreement: Incorporates DAO governance
+- Member rights: Defined by token holdings
+- Liability: Limited to contribution
+- Tax treatment: K-1 pass-through to members
 
-Investment Committee Responsibilities:
-- Screen all proposals before member votes
-- Conduct due diligence and risk assessment
-- Present investment recommendations with analysis
-- Monitor portfolio performance and report monthly
-```
+Compliance Requirements:
+- Accredited investor verification (506(c))
+- AML/KYC for all members (US requirement)
+- Quarterly financial reporting
+- Annual audit (required above $10M AUM)
+- SEC Form D filing
 
-### Phase 3: Growth and Optimization (Months 4-12)
-
-**Scaling Strategy**:
-```
-Month 4-6: Open to new members (cap at 100)
-Month 7-9: Launch secondary investment strategies
-Month 10-12: Consider launching public fund or token
-
-Growth Targets:
-- $5M treasury by end of year 1
-- 10-15 portfolio investments
-- 20% average ROI across portfolio
-- 80+ active DAO members
+Regulatory Considerations:
+- Investment Company Act exemption (3(c)(1) or 3(c)(7))
+- Maximum 100 members for 3(c)(1) exemption
+- No general solicitation without 506(c) compliance
+- State blue sky filings as required
 ```
 
-## MANAGEMENT PLAYBOOK
-
-### Monthly Operations Cycle
-
-**Week 1: Portfolio Review**
+**Emergency Procedures**
 ```
-Investment Committee Meeting:
-- Review all portfolio companies performance
-- Assess any exit opportunities
-- Identify companies needing additional support
-- Prepare monthly report for members
+Guardian Council (5-of-9 multi-sig):
+- Pause all treasury operations
+- Block suspicious transactions
+- Emergency fund recovery (confirmed exploit)
+- CANNOT modify governance rules
+- CANNOT access funds for personal use
 
-Member Communication:
-- Monthly newsletter with performance updates
-- Portfolio company spotlights
-- Market analysis and trends
-- Upcoming investment opportunities
-```
+Trigger Conditions:
+- Smart contract exploit detected
+- >30% single-day portfolio loss
+- Regulatory enforcement action
+- Multi-sig key compromise
 
-**Week 2: Deal Sourcing and Pipeline**
-```
-New Opportunities:
-- Review incoming deal flow
-- Initial screening and filtering
-- Schedule founder presentations
-- Conduct preliminary due diligence
-
-Pipeline Management:
-- Update deal tracker
-- Schedule committee deep dives
-- Prepare proposal templates
-- Coordinate member access to deal materials
+Recovery Process:
+1. Guardian pause (immediate)
+2. Community notification (within 1 hour)
+3. Investigation (24-48 hours)
+4. Governance vote on resolution
+5. Execution with enhanced oversight
 ```
 
-**Week 3: Member Engagement**
+**Dispute Resolution**
 ```
-Community Activities:
-- Weekly AMAs with portfolio founders
-- Educational webinars on DeFi trends
-- Member networking events
-- Expert guest speaker sessions
+Internal Process:
+1. Community discussion (7 days)
+2. Committee mediation (if needed)
+3. Token holder vote (binding)
 
-Governance Activities:
-- Process any pending proposals
-- Review and update governance parameters
-- Address member feedback and concerns
-- Plan upcoming votes and decisions
-```
-
-**Week 4: Strategic Planning**
-```
-Long-term Focus:
-- Review DAO strategy and performance
-- Plan next quarter's investment themes
-- Assess need for policy updates
-- Prepare quarterly member meeting
+External Arbitration:
+- Binding arbitration clause in member agreement
+- JAMS arbitration for disputes >$50K
+- Delaware courts for legal matters
+- Legal reserve fund for proceedings
 ```
 
-### Voting and Proposal Management
-
-**Investment Proposal Template**:
-```
-Standard Investment Proposal Format:
-
-1. Executive Summary (300 words max)
-   - Company overview and team
-   - Market opportunity and traction
-   - Investment terms and amount
-
-2. Investment Committee Recommendation
-   - Due diligence summary
-   - Risk assessment (1-10 scale)
-   - Expected returns and timeline
-   - Committee vote (unanimous/majority/split)
-
-3. Financial Details
-   - Proposed investment amount
-   - Valuation and equity percentage
-   - Follow-on rights and anti-dilution
-   - Expected hold period and exit strategy
-
-4. Member Discussion Period (48 hours)
-   - Q&A with committee members
-   - Community discussion thread
-   - Founder AMA session
-
-5. Formal Vote (7 days)
-   - Clear yes/no decision
-   - Minimum 60% approval required
-   - Results automatically executed
-```
-
-### Treasury Management
-
-**Asset Allocation Strategy**:
-```
-Treasury Composition:
-- 60% Deployed Capital (active investments)
-- 25% Liquid Reserves (USDC/ETH for opportunities)
-- 10% Operating Capital (DAO expenses, salaries)
-- 5% Risk Buffer (insurance, legal reserves)
-
-Monthly Treasury Report:
-- Total AUM and performance vs benchmarks
-- Investment pipeline value and timeline
-- Operating expense breakdown
-- Cash flow projections for next quarter
-```
-
-## LEGAL CONSIDERATIONS
-
-### Regulatory Compliance
-
-**Securities Law Compliance**:
-```
-Investment DAO Considerations:
-- Structure as investment club vs. fund
-- Accredited investor requirements
-- Securities registration exemptions
-- State and federal compliance requirements
-
-Recommended Legal Structure:
-- Delaware LLC with DAO governance
-- Operating agreement defining token rights
-- Investment policy statement
-- Member accreditation verification
-```
-
-**Ongoing Compliance Requirements**:
-```
-Annual Obligations:
-- Tax reporting (K-1s for members)
-- State registration maintenance
-- Investor reporting and transparency
-- Audit of investment performance
-
-Risk Management:
-- Directors and officers insurance
-- Cyber liability coverage
-- Professional liability for advisors
-- Multi-sig treasury protection
-```
-
-### Risk Mitigation Strategies
-
-**Operational Risks**:
-```
-Smart Contract Risk:
-- Use audited contracts only (Aragon/OpenZeppelin)
-- Multi-sig requirements for large transactions
-- Time delays for major governance changes
-- Emergency pause mechanisms
-
-Governance Risks:
-- Quorum requirements prevent small group control
-- Anti-whale measures (voting caps)
-- Transparent decision-making processes
-- Member dispute resolution procedures
-```
-
-**Investment Risks**:
-```
-Portfolio Risk Management:
-- Maximum 10% of treasury in any single investment
-- Diversification across stages and sectors
-- Due diligence standards and checklists
-- Regular portfolio review and rebalancing
-
-Member Protection:
-- Clear investment policy and restrictions
-- Regular financial reporting and audits
-- Professional investment committee oversight
-- Exit mechanisms for dissenting members
-```
-
-This comprehensive framework creates a professional investment DAO that balances member democracy with efficient decision-making, providing the structure needed to successfully invest in DeFi projects while protecting member interests and maintaining regulatory compliance.
+---
 
 ## Related Prompts
 
-- [DeFi Protocol Developer](../defi-protocols/decentralized-finance-protocol-development.md)
-- [Smart Contract Security Auditor](../smart-contracts/smart-contract-security-audit-platform.md)
-- [Cryptocurrency Trading Bot Builder](../crypto-trading/cryptocurrency-trading-algorithm-platform.md)
-
+- [DeFi Protocol Development](../defi-protocols/decentralized-finance-protocol-development.md) - Building DeFi governance
+- [Smart Contract Security](../smart-contracts/smart-contract-security-audit-platform.md) - Governance contract security
+- [Token Economics Expert](../tokenization/real-world-asset-tokenization-platform.md) - Token design for governance

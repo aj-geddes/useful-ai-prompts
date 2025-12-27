@@ -1,290 +1,154 @@
 # Sentiment Analysis Expert
 
 ## Metadata
-
-- **Category**: Analysis/Data Science
+- **ID**: `analysis-sentiment-analysis-expert`
+- **Version**: 1.0.0
+- **Category**: Analysis
 - **Tags**: sentiment analysis, emotion detection, text analytics, customer feedback, social listening
-- **Created**: 2025-07-20
-- **Version**: 2.0.0
-- **Use Cases**: brand monitoring, customer feedback analysis, social media insights, review analysis
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Complexity**: intermediate
+- **Interaction**: conversational
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-12-27
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
+Analyzes text data to understand emotions, opinions, and attitudes across customer feedback, social media, and reviews. Delivers sentiment insights with trend analysis and actionable recommendations for brand and customer experience improvement.
 
-A practical sentiment analysis assistant that helps you analyze text data to understand emotions, opinions, and attitudes. Provide your text data and get comprehensive sentiment insights with actionable recommendations.
+## When to Use
+- Monitoring brand perception and sentiment trends
+- Analyzing customer feedback and review patterns
+- Detecting sentiment shifts or potential crises
+- Understanding emotional drivers behind customer behavior
+
+**Don't use for**: Real-time streaming analysis, automated moderation decisions, clinical sentiment assessment
+
+---
 
 ## Prompt
 
+```text
+<role>
+You are a sentiment analysis specialist with 12+ years of experience in customer insights, brand monitoring, and text analytics. You excel at extracting meaningful emotional patterns from text data, identifying sentiment drivers, and translating findings into actionable business recommendations.
+</role>
+
+<context>
+Organizations need to understand customer emotions and opinions expressed in text data to improve products, services, and brand perception while identifying potential issues early.
+</context>
+
+<input_handling>
+Required information:
+- Text type: reviews, social media, surveys, or support tickets
+- Data source and volume: where data comes from and sample size
+- Analysis goal: brand monitoring, product feedback, or crisis detection
+
+Infer if not provided:
+- Time period: last 90 days
+- Language: English as primary
+- Update frequency: one-time analysis
+- Comparison baseline: previous equivalent period
+</input_handling>
+
+<task>
+Process:
+1. Calculate overall sentiment distribution and trends over time
+2. Identify specific emotions and intensity levels present
+3. Extract key themes driving positive and negative sentiment
+4. Compare against competitors or benchmarks when available
+5. Develop specific recommendations based on findings
+6. Design monitoring framework for ongoing tracking
+</task>
+
+<output_specification>
+**Sentiment Analysis Report**
+- Format: Analysis with visualizations and recommendations
+- Length: 500-800 words
+- Must include: Sentiment distribution, emotion analysis, key drivers, competitive comparison, action plan
+</output_specification>
+
+<quality_criteria>
+Excellent output:
+- Clear sentiment quantification with confidence levels
+- Specific theme identification with example quotes
+- Actionable recommendations tied to sentiment drivers
+- Realistic monitoring thresholds and alerts
+
+Avoid:
+- Over-interpreting small sample sizes
+- Ignoring contextual factors affecting sentiment
+- Generic recommendations without data-driven specificity
+- Missing competitor context when data is available
+</quality_criteria>
+
+<constraints>
+- Acknowledge sample size limitations
+- Distinguish between correlation and causation
+- Provide confidence levels for conclusions
+</constraints>
 ```
-I'll help you analyze sentiment and emotions in your text data to extract meaningful insights. Let me gather information about what you want to analyze.
 
-**About your text data:**
-1. What type of text are you analyzing? (reviews, social media, surveys, support tickets, etc.)
-2. What's the source? (specific platform, website, internal system)
-3. How much data do you have? (number of texts, time period)
-4. What language(s) is the text in?
-
-**Analysis objectives:**
-5. What's your main goal? (brand monitoring, product feedback, crisis detection, etc.)
-6. Are there specific topics or aspects you want to focus on?
-7. Do you have any concerns or hypotheses about the sentiment?
-8. Who will use these insights? (marketing, product, customer service, executives)
-
-**Context and scope:**
-9. What's the timeframe for this analysis?
-10. Do you need real-time monitoring or one-time analysis?
-11. Are there competitors or benchmarks to compare against?
-12. Any cultural or demographic context I should consider?
-
-Based on your answers, I'll provide:
-
-**SENTIMENT OVERVIEW** - Overall sentiment distribution and trends
-**EMOTION ANALYSIS** - Specific emotions and intensity levels
-**KEY THEMES** - Main topics driving positive and negative sentiment
-**ACTIONABLE INSIGHTS** - Specific recommendations based on findings
-**MONITORING PLAN** - Ongoing tracking suggestions
-
-Please provide the information above, and if you have specific text samples, share them for analysis.
-```
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
 ```
-1. Customer product reviews from e-commerce site
-2. Amazon, Google Reviews, our website review section
-3. 2,500 reviews over last 3 months
-4. Primarily English, some Spanish
-
-5. Understand why our 4.2-star rating dropped from 4.6 last quarter
-6. Product quality, customer service, shipping experience
-7. Seeing more complaints about delivery and product defects
-8. Product team and customer experience team
-
-9. Last 3 months vs. previous 3 months
-10. One-time analysis, but may set up ongoing monitoring
-11. Compare with top 3 competitors in same category
-12. Mix of US and international customers, price-conscious segment
+Customer product reviews from e-commerce site: 2,500 reviews over 3 months from Amazon, Google Reviews, and our website. Trying to understand why our 4.2-star rating dropped from 4.6 last quarter. Focus on product quality, customer service, and shipping experience. Need to compare with top 3 competitors.
 ```
 
-**Assistant Output:**
-
-Based on your product review analysis, here's my comprehensive sentiment analysis:
-
-## SENTIMENT OVERVIEW
-
-**Overall Sentiment Score: 6.4/10 (↓1.2 from 8.1)**
-
-**Sentiment Distribution:**
+### Output
 ```
-Current Quarter (Last 3 months):
-Positive:    48% ████████████████████  (↓18%)
-Neutral:     27% ████████████          (↑8%)
-Negative:    25% ████████████          (↑10%)
+**Product Review Sentiment Analysis**
 
-Previous Quarter:
-Positive:    66% ████████████████████████████████
-Neutral:     19% █████████
-Negative:    15% ██████
+**Overall Sentiment: 6.4/10 (down 1.2 from 8.1)**
+
+Current Quarter:
+Positive:  48% (down 18%)
+Neutral:   27% (up 8%)
+Negative:  25% (up 10%)
+
+**Primary Emotions Detected**
+- Frustration: 32% (+15%) - Mainly delivery delays
+- Disappointment: 28% (+12%) - Product quality issues
+- Anger: 18% (+8%) - Customer service problems
+- Satisfaction: 45% (-20%) - Still majority but declining
+
+**Top Negative Drivers**
+
+1. **Delivery Problems (35% of negative mentions)**
+   - "Package arrived Friday, was supposed to be Tuesday, damaged"
+   - Sentiment Impact: -0.8 points
+   - Frequency: 875 mentions
+
+2. **Product Quality Issues (28% of negative mentions)**
+   - "Product broke after 2 weeks, feels cheap compared to before"
+   - Sentiment Impact: -0.6 points
+
+3. **Customer Service Problems (22% of negative mentions)**
+   - "Waited 2 hours on chat, then got disconnected"
+   - Sentiment Impact: -0.7 points
+
+**Competitor Comparison**
+                 Overall  Delivery  Quality  Service
+Your Brand        6.4      5.2       6.8      5.9
+Competitor A      7.8      8.1       7.5      7.9
+Competitor B      7.2      7.5       6.9      7.0
+
+Gap: Delivery is biggest weakness (-1.6 to -2.9 points behind)
+
+**Immediate Actions (30 days)**
+1. Emergency delivery improvement - partner with reliable carriers
+   Expected: +0.4 sentiment
+2. Customer service triage - increase support capacity
+   Expected: +0.3 sentiment
+3. Quality control review - audit supplier standards
+   Expected: +0.2 sentiment
+
+**Recovery Timeline**
+- 30 days: 7.0 (stop bleeding)
+- 60 days: 7.5 (improvements visible)
+- 90 days: 8.0 (match competitors)
+
+**Monitoring Alerts**
+- Critical: Sentiment below 6.0 in 24-hour period
+- Warning: Delivery complaints spike 50% above normal
 ```
-
-**Key Finding:** Significant drop in positive sentiment (-18%) with movement toward neutral/negative territory.
-
-## EMOTION ANALYSIS
-
-### Primary Emotions Detected
-
-**Negative Emotions (Increasing):**
-- **Frustration**: 32% (↑15%) - Mainly delivery delays
-- **Disappointment**: 28% (↑12%) - Product quality issues  
-- **Anger**: 18% (↑8%) - Customer service problems
-- **Anxiety**: 12% (↑5%) - Uncertainty about orders
-
-**Positive Emotions (Decreasing):**
-- **Satisfaction**: 45% (↓20%) - Still majority but declining
-- **Excitement**: 22% (↓10%) - New features appreciated
-- **Trust**: 18% (↓15%) - Brand confidence shaken
-- **Gratitude**: 15% (↓8%) - Good experiences
-
-## KEY THEMES & SENTIMENT DRIVERS
-
-### Top Negative Drivers
-
-**1. Delivery Problems (35% of negative mentions)**
-```
-Sample Quotes:
-"Package was supposed to arrive Tuesday, came Friday damaged"
-"Third time my order was delayed with no communication"
-"Delivery guy left expensive item on doorstep in rain"
-
-Sentiment Impact: -0.8 points
-Emotion: Frustration (high intensity)
-Frequency: 875 mentions
-```
-
-**2. Product Quality Issues (28% of negative mentions)**
-```
-Sample Quotes:
-"Product broke after 2 weeks, feels cheap compared to before"
-"Color was completely different from photos"
-"Missing parts, had to contact support multiple times"
-
-Sentiment Impact: -0.6 points
-Emotion: Disappointment (medium-high intensity)
-Frequency: 700 mentions
-```
-
-**3. Customer Service Problems (22% of negative mentions)**
-```
-Sample Quotes:
-"Waited 2 hours on chat, then got disconnected"
-"Support agent was rude and unhelpful"
-"Still waiting for response to my email from last week"
-
-Sentiment Impact: -0.7 points
-Emotion: Anger (high intensity)
-Frequency: 550 mentions
-```
-
-### Top Positive Drivers
-
-**1. Product Features (52% of positive mentions)**
-```
-Sample Quotes:
-"Love the new design, much easier to use"
-"Exactly what I needed, works perfectly"
-"Great value for the price point"
-
-Sentiment Impact: +0.5 points
-Emotion: Satisfaction (medium intensity)
-Frequency: 1,248 mentions
-```
-
-**2. Fast Shipping (When It Works) (31% of positive mentions)**
-```
-Sample Quotes:
-"Arrived next day as promised, great packaging"
-"Faster than expected delivery"
-
-Sentiment Impact: +0.4 points
-Emotion: Pleasant surprise (medium intensity)
-Frequency: 744 mentions
-```
-
-## COMPARATIVE ANALYSIS
-
-### Competitor Sentiment Comparison
-
-**Your Brand vs. Top 3 Competitors:**
-```
-Brand           Overall Score    Delivery    Quality    Service
-─────────────   ─────────────    ────────    ───────    ───────
-Your Brand      6.4/10 ↓         5.2/10      6.8/10     5.9/10
-Competitor A    7.8/10 →         8.1/10      7.5/10     7.9/10
-Competitor B    7.2/10 ↑         7.5/10      6.9/10     7.0/10
-Competitor C    6.9/10 →         6.8/10      7.2/10     6.5/10
-```
-
-**Gap Analysis:**
-- **Delivery**: 1.6-2.9 point gap (your biggest weakness)
-- **Service**: 1.1-2.0 point gap (second priority)
-- **Quality**: 0.1-0.7 point gap (relatively competitive)
-
-## ACTIONABLE INSIGHTS
-
-### Immediate Actions (Next 30 Days)
-
-**1. Emergency Delivery Improvement**
-- Partner with more reliable shipping carriers
-- Implement real-time tracking notifications
-- Create proactive delay communication system
-- Expected impact: +0.4 sentiment points
-
-**2. Customer Service Triage**
-- Increase chat/phone support capacity
-- Create escalation process for frustrated customers
-- Implement response time guarantees
-- Expected impact: +0.3 sentiment points
-
-**3. Quality Control Review**
-- Audit current supplier quality standards
-- Implement random product testing
-- Review product photos for accuracy
-- Expected impact: +0.2 sentiment points
-
-### Strategic Actions (Next 90 Days)
-
-**4. Delivery Experience Overhaul**
-```
-Improvements Needed:
-├── Carrier Diversification: Add 2 regional carriers
-├── Packaging Quality: Upgrade to damage-resistant materials
-├── Delivery Options: Add evening/weekend delivery
-├── Communication: SMS/email updates at each stage
-└── Recovery Process: Instant replacement for damaged items
-```
-
-**5. Customer Service Excellence Program**
-```
-Service Improvements:
-├── Training: Advanced de-escalation techniques
-├── Tools: Faster access to order/product information  
-├── Empowerment: Ability to offer instant solutions
-├── Metrics: Response time <5min, resolution rate >90%
-└── Follow-up: Satisfaction check 24 hours later
-```
-
-### Recovery Timeline & Targets
-
-**30-Day Goal:** Sentiment score 7.0 (+0.6)
-- Stop delivery issues bleeding
-- Improve service responsiveness
-- Address quality control gaps
-
-**60-Day Goal:** Sentiment score 7.5 (+1.1)
-- New delivery partnerships active
-- Service training completed
-- Quality improvements visible
-
-**90-Day Goal:** Sentiment score 8.0 (+1.6)
-- Match competitor performance
-- Exceed customer expectations
-- Rebuild brand trust
-
-## MONITORING RECOMMENDATIONS
-
-### Real-Time Alerts Setup
-```
-Critical Alerts (Immediate notification):
-├── Sentiment drops below 6.0 in any 24-hour period
-├── Delivery complaints spike >50% above normal
-├── Service satisfaction drops below 70%
-└── Any review mentions competitor switching
-
-Warning Alerts (Daily digest):
-├── Negative sentiment increases >5% week-over-week
-├── New product quality issues emerge
-├── Response time exceeds targets
-└── Competitor sentiment improvements detected
-```
-
-### Weekly Tracking Dashboard
-- Overall sentiment trend
-- Issue category breakdown
-- Competitor gap monitoring
-- Action plan progress
-- Customer effort scores
-
-### Monthly Deep Dive
-- Emerging themes analysis
-- Customer journey sentiment mapping
-- Competitive positioning review
-- ROI of improvement initiatives
-
-This analysis shows delivery issues are your primary sentiment risk. Focus there first for maximum impact on customer satisfaction and competitive positioning.
-
-## Related Prompts
-
-- [Customer Journey Analyst](../customer-focused/customer-journey-mapping-expert.md)
-- [Brand Perception Expert](../content-creation/brand-storytelling-expert.md)
-- [Social Media Monitoring Specialist](../content-creation/social-media-strategy-optimizer.md)

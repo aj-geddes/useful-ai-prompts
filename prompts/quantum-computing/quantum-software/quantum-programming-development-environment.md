@@ -1,232 +1,273 @@
-# Quantum Programming Development Environment Platform
+# Quantum Programming Development Environment
 
-## Context and Challenge
+## Metadata
+- **ID**: `quantum-programming-environment`
+- **Version**: 1.0.0
+- **Category**: Quantum Computing
+- **Tags**: quantum IDE, quantum debugging, quantum testing, development tools, CI/CD
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-01
+- **Updated**: 2025-01-01
 
-You are architecting comprehensive quantum programming development environment platform for quantum software development managing quantum programming languages, integrated development environments, and quantum application frameworks across 1,000+ quantum developers, requiring integrated quantum simulators, debugging tools, and deployment automation serving quantum software companies, research institutions, and enterprise development teams with >95% development productivity and practical quantum software deployment requirements.
+## Overview
 
-## Dual Expert Personas
+Design and implement comprehensive quantum programming development environments including IDEs, debugging tools, testing frameworks, and deployment pipelines. This prompt optimizes quantum software development productivity across research and enterprise contexts with quantum-specific tooling.
 
-### Primary Expert: Senior Quantum Software Engineer
-**Background**: 16+ years of experience in quantum software development, quantum programming languages, and quantum application architecture with deep expertise in quantum SDKs, quantum development tools, and quantum software engineering practices. Has successfully developed 80+ quantum applications and quantum development tools resulting in 30+ breakthrough software publications and practical quantum software deployments.
+## When to Use
 
-**Expertise**: Quantum programming language design and implementation, quantum software development lifecycle and methodologies, quantum application architecture and design patterns, quantum SDK and framework development, quantum simulator integration and optimization, quantum debugging and testing methodologies, quantum software performance optimization, quantum-classical software integration, quantum software deployment and DevOps, quantum software engineering best practices and standards.
+**Ideal Scenarios:**
+- Building quantum development tooling, IDEs, or extensions
+- Creating quantum debugging and state visualization tools
+- Implementing quantum testing frameworks and validation suites
+- Designing CI/CD pipelines for quantum applications
+- Establishing quantum software development best practices
 
-**Approach**: Software engineering methodology emphasizing developer productivity, code quality, maintainability, and performance optimization while integrating quantum computing principles with software engineering practices and real-world development requirements.
+**Anti-Patterns (When NOT to Use):**
+- Developing quantum algorithms (use algorithm-specific prompts)
+- Hardware characterization and calibration
+- Classical software development tooling
+- One-off quantum experiments without tooling needs
 
-### Secondary Expert: Developer Tools and IDE Architect
-**Background**: 18+ years of experience in developer tools, integrated development environments, and large-scale software development platforms with expertise in IDE architecture, development workflow automation, and enterprise software development solutions.
+---
 
-**Expertise**: Integrated development environment architecture and design, developer tool platform development and optimization, software development workflow automation and orchestration, code editing and syntax highlighting systems, debugging and profiling tool development, software build and deployment automation, developer experience optimization and user interface design, software development analytics and monitoring, enterprise development tool integration, software development platform scalability and performance.
+## Prompt
 
-**Approach**: Platform architecture methodology focusing on developer experience, productivity optimization, scalability, and maintainability while ensuring robust development platforms and accessible programming environments for diverse developer communities.
+```
+<role>
+You are a senior quantum software engineer with 16+ years developing quantum programming tools and IDEs. You have deep expertise in quantum language design, debugging systems, and testing frameworks, combined with developer tools architecture experience from leading traditional software development platforms (VS Code, JetBrains, Eclipse).
+</role>
 
-## Professional Frameworks Integration
+<context>
+Quantum software development presents unique challenges including state visualization, probabilistic debugging, circuit optimization, and multi-backend deployment. Effective tooling bridges the gap between quantum theory and practical implementation while enabling reproducible research and enterprise-grade development workflows.
+</context>
 
-1. **Quantum Software Development Lifecycle (QSDL)**: Systematic approach to quantum software design, implementation, testing, and deployment.
+<input_handling>
+Required inputs:
+- Target user base (researchers, developers, students, enterprise)
+- Quantum backends to support (IBM, Google, IonQ, simulators)
+- Key development workflows to optimize
 
-2. **IBM Qiskit Development Framework**: Industry-standard quantum development platform including programming tools, simulators, and deployment capabilities.
+Infer if not provided:
+- IDE platform: VS Code extension or web-based interface
+- Languages: Qiskit, Cirq, PennyLane multi-framework support
+- Deployment: Cloud-based with local development option
+- Scale: 100-1000 initial users with growth path
+</input_handling>
 
-3. **Microsoft Q# Development Environment**: Enterprise quantum development platform including quantum programming language, simulators, and integration tools.
+<task>
+Design comprehensive quantum development environment:
 
-4. **Google Cirq Development Standards**: Best practices for quantum software development, testing methodologies, and performance optimization.
+1. Define IDE architecture with extensibility framework for quantum-specific features
+2. Create quantum debugging and state visualization tools with breakpoint support
+3. Design quantum testing framework with correctness and performance validation
+4. Build simulator integration with seamless backend switching
+5. Implement CI/CD pipeline for quantum applications with hardware qualification
+6. Establish developer experience optimization metrics and feedback loops
+</task>
 
-5. **NIST Quantum Software Engineering Guidelines**: National standards for quantum software development, quality assurance, and validation protocols.
+<output_specification>
+Format: Platform architecture with detailed tool specifications
+Length: 800-1500 words
+Structure:
+- IDE architecture and extension framework
+- Debugging and visualization tool design
+- Testing framework specifications
+- Backend integration approach
+- CI/CD pipeline configuration
+- Developer experience metrics
+</output_specification>
 
-## Four-Phase Systematic Analysis
+<quality_criteria>
+Excellent outputs demonstrate:
+- Intuitive quantum-specific debugging with state inspection
+- Comprehensive testing for quantum correctness and reproducibility
+- Seamless multi-backend support with unified interface
+- Fast feedback loops for iterative development
+- Clear documentation and onboarding path
 
-### Phase 1: Assessment and Analysis
+Avoid:
+- Ignoring quantum-specific debugging needs (state collapse, entanglement)
+- Missing circuit visualization and optimization capabilities
+- Poor simulator performance impacting development speed
+- Overly complex workflows that hinder adoption
+</quality_criteria>
 
-#### Quantum Software Development Requirements Analysis
-**Senior Quantum Software Engineer Perspective**:
-- Analyze developer workflow requirements including coding, testing, debugging, and deployment processes
-- Evaluate quantum programming needs including language features, library support, and framework integration
-- Assess quantum application requirements including algorithm implementation, optimization, and performance tuning
-- Define development productivity objectives including coding efficiency, debugging effectiveness, and deployment automation
-- Analyze quantum-classical integration requirements including hybrid applications, interface design, and data management
+<constraints>
+- Ensure framework-agnostic design where possible
+- Support both local development and cloud execution
+- Include accessibility considerations for diverse users
+- Plan for scalability and multi-tenant deployment
+</constraints>
+```
 
-**Developer Tools and IDE Architect Perspective**:
-- Evaluate platform requirements including multi-language support, extensibility, and customization capabilities
-- Assess user experience requirements including interface design, workflow optimization, and accessibility features
-- Analyze performance requirements including responsiveness, scalability, and resource utilization
-- Define integration requirements including version control, collaboration tools, and external service connectivity
-- Evaluate deployment requirements including cloud integration, containerization, and automated deployment
+---
 
-#### Quantum Development Infrastructure Assessment
-**Integrated Dual-Expert Analysis**:
-- Assess quantum computing platforms including IBM Quantum, Google Quantum AI, Amazon Braket, and local simulators
-- Evaluate development infrastructure including cloud platforms, local development environments, and hybrid setups
-- Analyze collaboration requirements including team development, code sharing, and project management
-- Define scalability requirements including large projects, distributed development, and enterprise deployment
-- Assess security requirements including code protection, secure development, and intellectual property management
+## Example Usage
 
-#### Technology Integration and Standards Analysis
-**Senior Quantum Software Engineer Focus**:
-- Analyze quantum programming standards including language specifications, API standards, and interoperability protocols
-- Evaluate quantum development libraries including algorithm libraries, utility functions, and framework integrations
-- Assess quantum software testing including unit testing, integration testing, and quantum-specific validation
-- Define quality requirements including code quality metrics, performance benchmarks, and documentation standards
-- Analyze competitive landscape including existing tools, development platforms, and market positioning
+### Input
+We need a quantum development environment for our 50-person research team. They use Qiskit and PennyLane, work with IBM Quantum and local simulators, and need better debugging for variational algorithms. Currently struggling with visualizing circuit behavior and testing quantum code.
 
-### Phase 2: Strategic Design and Planning
+### Output
 
-#### Comprehensive Quantum Development Architecture
-**Senior Quantum Software Engineer Perspective**:
-- Design quantum programming language support including syntax highlighting, code completion, and error detection
-- Create quantum application frameworks including design patterns, architectural templates, and best practice libraries
-- Develop quantum debugging tools including quantum state inspection, circuit visualization, and error analysis
-- Plan quantum testing frameworks including unit testing, integration testing, and quantum-specific validation
-- Design performance optimization including profiling tools, bottleneck analysis, and optimization suggestions
+**Quantum Research Development Environment**
 
-**Developer Tools and IDE Architect Perspective**:
-- Design IDE architecture including modular design, plugin architecture, extensibility framework, and customization options
-- Create user interface design including editor layouts, tool windows, visualization panels, and workflow optimization
-- Plan development workflow including project management, build automation, and deployment pipelines
-- Design collaboration features including version control integration, team development, and shared resources
-- Create deployment strategy including cloud deployment, local installation, and enterprise integration
+**IDE Architecture**
 
-#### Advanced Development and Integration Planning
-**Integrated Dual-Expert Analysis**:
-- Develop intelligent development assistance including AI-powered code suggestions, automatic optimization, and error prevention
-- Create multi-platform support including desktop IDEs, web-based development, and mobile development tools
-- Plan quantum-classical integration including hybrid development, interface generation, and seamless integration
-- Design automated workflows including continuous integration, automated testing, and deployment automation
-- Create continuous improvement including developer feedback, usage analytics, and feature optimization
+**VS Code Extension Suite**
+```
+quantum-research-tools/
+├── syntax/           # Quantum language support (Qiskit, PennyLane, Cirq)
+├── debugger/         # Quantum state debugging and breakpoints
+├── visualizer/       # Circuit and state visualization
+├── simulator/        # Integrated simulation backends
+├── testing/          # Quantum test framework integration
+└── deployment/       # Backend management and job submission
+```
 
-#### Quality Assurance and Community Planning
-**Developer Tools and IDE Architect Focus**:
-- Design testing framework including IDE testing, performance testing, usability testing, and accessibility validation
-- Create quality metrics including developer productivity measures, user satisfaction metrics, and performance indicators
-- Plan documentation strategy including technical documentation, user guides, tutorials, and API documentation
-- Design community engagement including open-source contributions, developer community, and educational programs
-- Create feedback systems including user feedback collection, bug reporting, and feature request management
+**Language Support Features**
+- Qiskit: Full syntax highlighting, gate autocomplete, parameter hints
+- PennyLane: QNode detection, device configuration hints, gradient methods
+- Cirq: Circuit builder integration, moment visualization
+- Cross-framework: Unified circuit representation (OpenQASM 3.0 export)
 
-### Phase 3: Implementation and Execution
+**Quantum Debugging Tools**
 
-#### Core Platform Development and Tool Implementation
-**Senior Quantum Software Engineer Perspective**:
-- Implement quantum language support including parsers, syntax analyzers, and language servers
-- Deploy quantum application frameworks including template libraries, design patterns, and development scaffolding
-- Execute quantum debugging implementation including state visualization, circuit inspection, and error analysis
-- Implement quantum testing tools including test runners, assertion libraries, and validation frameworks
-- Deploy quantum simulators including local simulators, cloud simulators, and performance optimization
+**State Inspector**
+```python
+# Breakpoint integration for quantum code
+@quantum_debugger.breakpoint
+def variational_layer(params):
+    # Debugger captures state vector at breakpoint
+    # Displays Bloch sphere, amplitude distribution
+    for i in range(n_qubits):
+        qml.RY(params[i], wires=i)
 
-**Developer Tools and IDE Architect Perspective**:
-- Implement IDE infrastructure including core editor, tool windows, project management, and extensibility framework
-- Deploy user interface including responsive design, accessibility features, and customization options
-- Execute workflow automation including build systems, deployment pipelines, and integration tools
-- Implement collaboration features including version control, team management, and shared development
-- Deploy performance optimization including caching, lazy loading, and resource management
+    # Entanglement analysis available at each step
+    qml.CNOT(wires=[0, 1])
+```
 
-#### Advanced Features and Integration Implementation
-**Integrated Dual-Expert Analysis**:
-- Execute intelligent assistance including AI-powered features, code analysis, and optimization suggestions
-- Implement multi-platform deployment including desktop applications, web applications, and cloud services
-- Deploy quantum-classical integration including hybrid development tools, interface builders, and seamless workflow
-- Execute automated workflows including CI/CD pipelines, automated testing, and deployment automation
-- Implement advanced analytics including usage tracking, performance monitoring, and developer insights
+**Debugging Features**
+- State vector visualization: Bloch sphere, amplitude bar charts, phase wheels
+- Entanglement graph: Interactive display of qubit correlations
+- Parameter gradient tracking: Real-time gradient magnitude overlay
+- Cost landscape visualization: 2D slices through parameter space
+- Measurement statistics: Shot-by-shot outcome tracking
 
-#### Quality Assurance and Community Implementation
-**Developer Tools and IDE Architect Focus**:
-- Execute comprehensive testing including functional testing, performance testing, usability testing, and security testing
-- Implement community engagement including open-source development, community forums, and educational programs
-- Deploy customer support including documentation, tutorials, technical support, and developer advocacy
-- Execute performance monitoring including usage analytics, performance tracking, and optimization monitoring
-- Implement feedback systems including user surveys, bug tracking, and feature request management
+**Circuit Analyzer Panel**
+```
+Real-time Metrics:
+- Circuit depth: Current/optimal comparison
+- Gate count by type: Native vs decomposed
+- Estimated execution time: Per-backend estimates
+- Noise impact estimate: Fidelity prediction
+- Transpilation suggestions: Optimization opportunities
+```
 
-### Phase 4: Optimization and Continuous Improvement
+**Testing Framework**
 
-#### Development Excellence and Tool Enhancement
-**Senior Quantum Software Engineer Perspective**:
-- Optimize development productivity including workflow optimization, tool efficiency, and developer experience enhancement
-- Enhance quantum features including advanced debugging, optimization tools, and quantum-specific development aids
-- Improve quantum-classical integration including seamless workflow, interface optimization, and performance enhancement
-- Optimize quantum application development including framework improvement, library expansion, and pattern optimization
-- Enhance community impact including open-source contributions, educational resources, and developer advocacy
+**Quantum Unit Testing**
+```python
+class TestVQE(QuantumTestCase):
+    def test_ansatz_expressibility(self):
+        """Verify ansatz can represent target states."""
+        ansatz = HardwareEfficientAnsatz(n_qubits=4, layers=6)
+        expressibility = self.measure_expressibility(ansatz, samples=1000)
+        self.assertGreater(expressibility, 0.9)
 
-**Developer Tools and IDE Architect Perspective**:
-- Optimize platform performance including response time improvement, memory optimization, and resource efficiency
-- Enhance user experience including interface refinement, workflow optimization, and accessibility improvement
-- Improve scalability including performance scaling, enterprise features, and multi-user support
-- Optimize integration capabilities including external tool connectivity, API improvement, and workflow automation
-- Enhance platform reliability including stability improvement, error recovery, and availability optimization
+    def test_gradient_computation(self):
+        """Validate gradient correctness against finite difference."""
+        grads = self.compute_gradients(circuit, params)
+        finite_diff = self.finite_difference(circuit, params, epsilon=1e-5)
+        self.assertArrayAlmostEqual(grads, finite_diff, decimal=5)
 
-#### Strategic Innovation and Market Leadership
-**Integrated Dual-Expert Analysis**:
-- Implement cutting-edge technologies including AI-powered development, quantum-aware IDEs, and next-generation development tools
-- Enhance quantum development capabilities including fault-tolerant development, advanced quantum features, and future quantum systems
-- Develop strategic partnerships including platform partnerships, academic collaborations, and industry alliances
-- Implement innovation programs including research collaboration, technology development, and competitive advantage
-- Create market leadership including thought leadership, standard development, and quantum development community engagement
+    def test_hardware_compatibility(self):
+        """Verify circuit runs on target backend."""
+        transpiled = transpile(circuit, backend=ibm_backend)
+        self.assertLessEqual(transpiled.depth(), 100)
+```
 
-## Deliverables and Outcomes
+**Test Categories**
+- Correctness tests: Compare to analytic results and classical simulation
+- Reproducibility tests: Seed-based deterministic execution
+- Performance tests: Circuit depth and gate count bounds
+- Hardware compatibility: Backend-specific validation and constraints
+- Regression tests: Output stability across code changes
 
-### Quantum Development Environment Platform Deliverables
-1. **Quantum Programming IDE**: Comprehensive development environment including code editing, syntax highlighting, and quantum-specific features
-2. **Quantum Debugging Suite**: Advanced debugging tools including quantum state inspection, circuit visualization, and error analysis
-3. **Quantum Testing Framework**: Complete testing platform including unit testing, integration testing, and quantum validation
-4. **Quantum Application Templates**: Development scaffolding including project templates, design patterns, and best practice libraries
-5. **Quantum Simulator Integration**: Performance simulation including local simulators, cloud access, and optimization tools
+**Simulator Integration**
 
-### Development Tools and Platform Deliverables
-6. **Multi-Platform IDE Suite**: Cross-platform development including desktop, web, and cloud-based development environments
-7. **Workflow Automation Platform**: Complete DevOps including build automation, CI/CD pipelines, and deployment automation
-8. **Collaboration and Team Tools**: Development collaboration including version control, team management, and shared resources
-9. **Performance and Analytics**: Development analytics including productivity tracking, performance monitoring, and optimization insights
-10. **Documentation and Learning**: Complete educational resources including tutorials, documentation, and learning paths
+**Multi-Backend Configuration**
+```yaml
+backends:
+  local:
+    statevector_simulator:
+      max_qubits: 30
+      description: "Fast exact simulation"
+    qasm_simulator:
+      max_qubits: 32
+      shots: 10000
+      description: "Shot-based sampling"
+    noise_simulator:
+      noise_model: "ibm_brisbane"
+      description: "Realistic hardware noise"
+  cloud:
+    ibm_quantum:
+      credentials: "${IBM_QUANTUM_TOKEN}"
+      default_backend: "ibm_brisbane"
+    ibm_cloud_simulator:
+      max_qubits: 100
+      description: "Large-scale cloud simulation"
+```
 
-### Innovation and Community Deliverables
-11. **AI-Powered Development Assistant**: Intelligent features including code suggestions, optimization recommendations, and error prevention
-12. **Quantum-Classical Integration Tools**: Hybrid development including interface builders, integration frameworks, and seamless workflow
-13. **Open-Source Development Platform**: Community-driven development including open tools, shared libraries, and collaborative development
-14. **Developer Experience Analytics**: Advanced insights including productivity analysis, usage patterns, and optimization opportunities
-15. **Strategic Developer Network**: Collaborations including developer partnerships, educational alliances, and community initiatives
+**Smart Backend Selection**
+- Auto-select based on circuit size and complexity
+- Noise model injection for realistic testing
+- Execution time estimation before submission
+- Cost estimation for cloud backends
 
-## Implementation Timeline
+**CI/CD Pipeline**
 
-### Phase 1: Core Development (Months 1-8)
-- **Months 1-2**: Requirements analysis, architecture design, core platform development
-- **Months 3-4**: Quantum language support implementation, debugging tool development
-- **Months 5-6**: Testing framework implementation, simulator integration
-- **Months 7-8**: IDE integration, basic workflow implementation
+**Quantum DevOps Workflow**
+```yaml
+name: Quantum CI/CD Pipeline
+on: [push, pull_request]
 
-### Phase 2: Platform Integration (Months 9-16)
-- **Months 9-10**: User interface development, collaboration features
-- **Months 11-12**: Workflow automation, deployment pipeline implementation
-- **Months 13-14**: Advanced testing, performance optimization, integration validation
-- **Months 15-16**: Documentation development, community engagement, beta testing
+jobs:
+  validate:
+    steps:
+      - lint_quantum_code      # Syntax and style checks
+      - check_circuit_structure # Depth and gate validation
+      - security_scan          # Credential leak detection
 
-### Phase 3: Advanced Features and Launch (Months 17-24)
-- **Months 17-18**: AI features integration, advanced development tools
-- **Months 19-20**: Community launch, developer onboarding, educational programs
-- **Months 21-22**: Performance monitoring, continuous improvement, feature enhancement
-- **Months 23-24**: Expansion planning, strategic partnerships, future development
+  test:
+    steps:
+      - unit_tests_simulator   # Fast local validation
+      - integration_tests      # Multi-component testing
+      - property_tests         # Randomized correctness
 
-## Risk Management and Mitigation
+  benchmark:
+    steps:
+      - performance_baseline   # Circuit metrics tracking
+      - regression_detection   # Performance degradation alerts
 
-### Technical and Development Risks
-- **Performance Risk**: Optimization strategies, resource management, performance testing, and efficiency monitoring
-- **Compatibility Risk**: Cross-platform testing, version management, compatibility validation, and backward compatibility
-- **Usability Risk**: User experience testing, developer feedback, usability studies, and interface optimization
-- **Integration Risk**: API testing, integration validation, compatibility testing, and system integration
+  deploy:
+    steps:
+      - hardware_validation    # Limited real-hardware tests
+      - staging_release        # Pre-production deployment
+      - production_release     # Full rollout with monitoring
+```
 
-### Market and Community Risks
-- **Adoption Risk**: Developer experience optimization, educational programs, community building, and developer advocacy
-- **Competition Risk**: Innovation focus, unique value proposition, developer community, and market differentiation
-- **Technology Risk**: Quantum computing advancement tracking, platform evolution, and technology adaptation
-- **Community Risk**: Open-source strategy, community engagement, educational resources, and developer support
+**Developer Experience Metrics**
+- Code-to-execution time reduction: Target 50% improvement
+- Debug cycle time: Target <2 minutes from error to fix
+- Test coverage for quantum code: Target >80%
+- Onboarding time for new developers: Target <1 week proficiency
+- User satisfaction score: Monthly NPS tracking
 
-## Success Metrics and KPIs
+---
 
-### Development Platform Performance KPIs
-- **Developer Productivity**: >95% development efficiency improvement, >90% user satisfaction, <1 second response time
-- **Platform Usage**: >1,000 active developers, >200 organizations, >50,000 quantum applications developed
-- **Code Quality**: >90% code quality improvement, >85% bug reduction, >95% test coverage
-- **Integration Success**: >98% successful deployments, >95% integration success rate, zero security incidents
-
-### Community and Market KPIs
-- **Community Engagement**: >5,000 community members, >2,000 open-source contributions, >100 educational partnerships
-- **Educational Impact**: >150 tutorials, >10,000 learners, >80% completion rate
-- **Innovation Recognition**: 25+ awards, 30+ patent applications, industry leadership
-- **Market Leadership**: Top 3 market position, >85% developer retention, strategic partnerships
-
-This comprehensive quantum programming development environment platform enables efficient quantum software development through advanced development tools, robust platform architecture, and systematic developer experience optimization across diverse quantum software applications and development scenarios.
+## Related Prompts
+- [Quantum Algorithm Development Expert](../quantum-algorithm-development-expert.md)
+- [Quantum Hardware Characterization Expert](../quantum-hardware-characterization-expert.md)
+- [Quantum Optimization Algorithm Design](../quantum-optimization/quantum-optimization-algorithm-design.md)

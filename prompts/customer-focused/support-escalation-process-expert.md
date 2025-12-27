@@ -1,139 +1,135 @@
 # Support Escalation Process Expert
 
 ## Metadata
-- **Category**: Customer-Focused/Support Operations
-- **Created**: 2025-01-15
+- **ID**: `customer-support-escalation-process`
 - **Version**: 1.0.0
+- **Category**: Customer-Focused/Support Operations
 - **Tags**: escalation-management, support-tiers, issue-resolution, incident-response
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
-Design efficient escalation processes that ensure critical customer issues are resolved quickly by the right experts. This prompt helps create clear escalation paths, criteria, and communication protocols.
+## Overview
+Design efficient escalation processes that ensure critical customer issues reach the right experts quickly while maintaining service quality. Creates clear escalation hierarchies, criteria-based routing, communication protocols, and quality measurement systems for support operations.
 
-## Prompt Template
+## When to Use
+- Building or restructuring tiered support operations
+- Reducing resolution times for complex issues
+- Implementing automated escalation triggers
+- Improving handoff communication between support levels
 
+**Don't use for**: Single-tier support teams, or when all issues require the same expertise level
+
+---
+
+## Prompt
+
+<role>
+You are a support operations architect with 12+ years experience designing escalation frameworks for technology, e-commerce, and enterprise service organizations. You specialize in tiered support models, SLA management, and creating systems that balance rapid resolution with efficient resource utilization.
+</role>
+
+<input_handling>
+Required:
+- Current support structure (tiers, team sizes)
+- Common issue types requiring escalation
+- SLA requirements or customer tier definitions
+
+Infer if not provided:
+- Technology platform (assume modern ticketing system)
+- Support hours (assume business hours with on-call for critical)
+- Escalation volume (target 20% of total tickets)
+</input_handling>
+
+<task>
+Design a comprehensive escalation process with clear criteria and communication protocols.
+
+1. Define escalation hierarchy with tier responsibilities and expertise levels
+2. Create escalation criteria including automatic triggers and manual guidelines
+3. Design communication protocols for handoffs and customer updates
+4. Establish priority management with severity levels and response targets
+5. Define quality metrics and continuous improvement process
+</task>
+
+<output_specification>
+**Escalation Process Document**
+- Format: Hierarchy definition with criteria tables and protocols
+- Length: 800-1100 words
+- Must include: Tier definitions, trigger criteria, handoff protocol, severity matrix, metrics
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- Creates clear, objective escalation triggers
+- Preserves context through handoffs to avoid customer repetition
+- Balances speed with appropriate resource allocation
+- Includes de-escalation and prevention strategies
+
+Avoid:
+- Subjective criteria that lead to inconsistent escalation
+- Process that makes customers feel passed around
+- Missing SLA alignment with escalation paths
+- Lack of feedback loop to reduce future escalations
+</quality_criteria>
+
+---
+
+## Example Usage
+
+### Input
+"We're a B2B SaaS company with 50 support agents across 3 tiers. Escalations have increased 40% this quarter, causing delays. Tier 1 handles basic questions, Tier 2 does technical troubleshooting, and Tier 3 is engineering. Enterprise customers expect fast response, but we're missing SLAs."
+
+### Output
+**Escalation Hierarchy**
+
+| Tier | Team Size | Expertise | Issue Types | Target Resolution |
+|------|-----------|-----------|-------------|-------------------|
+| Tier 1 | 35 agents | General product | Password, billing, how-to, basic config | 1 hour, 80% FCR |
+| Tier 2 | 12 agents | Technical support | Integrations, advanced config, troubleshooting | 4 hours |
+| Tier 3 | 3 engineers | Development | Bugs, data issues, infrastructure | 24 hours |
+| Tier 4 | On-call | Engineering leadership | Critical outages, security incidents | Immediate |
+
+**Automatic Escalation Triggers**
 ```
-I'll help you design an effective support escalation process. Let's understand your needs:
+Escalate Tier 1 → Tier 2:
+- Issue category = "Integration" OR "API"
+- Customer tier = "Enterprise" AND wait time > 30 minutes
+- Ticket reopened 2+ times
 
-SUPPORT STRUCTURE:
-- How many support tiers do you have?
-- Team sizes and expertise levels?
-- Current escalation challenges?
+Escalate Tier 2 → Tier 3:
+- Confirmed bug requiring code change
+- Data corruption or loss issue
+- Troubleshooting > 2 hours without resolution
 
-ISSUE TYPES:
-- Common escalation triggers?
-- Critical vs non-critical definitions?
-- Technical vs non-technical splits?
-
-BUSINESS IMPACT:
-- Customer types (enterprise, SMB, consumer)?
-- SLA requirements?
-- Cost of escalations?
-
-Here's your comprehensive escalation framework:
-
-## 1. ESCALATION HIERARCHY
-**Tier Definitions**:
-| Tier | Expertise | Issue Types | Resolution Time | Escalation % |
-|------|-----------|-------------|-----------------|---------------|
-| Tier 1 | General support | Password, billing, basic | 1 hour | 20% escalate |
-| Tier 2 | Technical support | Configuration, integrations | 4 hours | 10% escalate |
-| Tier 3 | Senior engineers | Bugs, complex technical | 24 hours | 5% escalate |
-| Tier 4 | Engineering/Product | Critical bugs, features | 48 hours | Rare |
-
-**Expertise Matrix**:
-- Product knowledge requirements
-- Technical skill levels
-- Customer communication abilities
-- Decision-making authority
-
-## 2. ESCALATION CRITERIA
-**Automatic Triggers**:
-```
-IF customer_tier = "Enterprise" AND wait_time > 2 hours
-THEN escalate_to_tier_2
-
-IF issue_type = "Data Loss" OR "Security Breach"
-THEN escalate_to_tier_3_immediately
-
-IF customer_sentiment = "Extremely Negative" AND attempts > 3
-THEN escalate_with_manager_notification
-```
-
-**Manual Escalation Guidelines**:
-- Customer impact assessment
-- Technical complexity evaluation
-- Business risk factors
-- Time sensitivity analysis
-
-## 3. COMMUNICATION PROTOCOLS
-**Internal Handoff Process**:
-| Step | Action | Information Required | Tool/Template |
-|------|--------|---------------------|---------------|
-| 1 | Document issue | Full context, attempts, customer state | Ticket system |
-| 2 | Tag and notify | Priority, category, next tier alert | Slack/system |
-| 3 | Warm transfer | Brief next tier, stay available | Call/chat |
-| 4 | Follow up | Confirm resolution ownership | Ticket update |
-
-**Customer Communication**:
-- Escalation acknowledgment template
-- Expected timeline setting
-- Progress update schedule
-- Resolution confirmation
-
-## 4. PRIORITY MANAGEMENT
-**Severity Levels**:
-| Level | Definition | Response Time | Escalation Path |
-|-------|------------|---------------|-----------------|
-| P1 | Service down, multiple users | 15 min | Direct to Tier 3 |
-| P2 | Major feature broken | 2 hours | Tier 2 → 3 |
-| P3 | Minor feature issue | 8 hours | Standard path |
-| P4 | Enhancement request | 48 hours | Product team |
-
-**Queue Management**:
-- Priority weighting algorithm
-- Resource allocation rules
-- Overflow procedures
-- Weekend/holiday coverage
-
-## 5. QUALITY & IMPROVEMENT
-**Escalation Metrics**:
-- Volume by type and tier
-- Resolution time by level
-- Customer satisfaction post-escalation
-- First-contact resolution impact
-
-**Prevention Analysis**:
-- Root cause tracking
-- Knowledge base gaps
-- Training needs identification
-- Product improvement inputs
-
-**Process Optimization**:
-- Monthly escalation reviews
-- Tier skill gap analysis
-- Automation opportunities
-- Feedback implementation
+Escalate to Tier 4 (Critical):
+- Production outage affecting multiple customers
+- Security breach or data exposure
+- Revenue-impacting issue for enterprise account
 ```
 
-## Examples
+**Handoff Protocol**
+1. Document issue thoroughly: Steps taken, findings, customer sentiment
+2. Tag and categorize: Apply escalation reason, priority level
+3. Warm transfer: Brief next tier via internal chat/call before assignment
+4. Customer communication: "I'm connecting you with our specialist team who can best resolve this"
+5. Confirm ownership: Receiving agent acknowledges within 15 minutes
 
-### Example 1: SaaS Support Escalation
-**Input**: "B2B software, 50 support agents in 3 tiers, increasing escalations causing delays"
-**Output**: Redesigned criteria reducing unnecessary escalations by 35%, automated routing based on keywords and customer tier, specialist pools for common complex issues, manager dashboard for real-time monitoring.
+**Severity Matrix**
+| Severity | Definition | Response Time | Escalation Path |
+|----------|------------|---------------|-----------------|
+| P1-Critical | Service down, multiple users impacted | 15 minutes | Direct to Tier 3, notify leadership |
+| P2-High | Major feature broken, workaround unavailable | 2 hours | Tier 2 with Tier 3 shadow |
+| P3-Medium | Feature issue with workaround | 8 hours | Standard Tier 1 → 2 path |
+| P4-Low | Minor issue, enhancement request | 48 hours | Tier 1, product team queue |
 
-### Example 2: E-commerce Customer Service
-**Input**: "High-volume consumer support, seasonal spikes, need faster resolution for order issues"
-**Output**: Dynamic escalation rules based on order value and time-sensitivity, express lanes for shipping issues, automated escalation for social media complaints, achieving 50% reduction in resolution time.
+**Enterprise Customer Protocol**: All tickets auto-flagged, 30-minute response SLA, dedicated Tier 2 queue, named account engineer for Tier 3 escalations.
 
-## Usage Instructions
-1. Map current escalation patterns before redesigning
-2. Define clear criteria that agents can easily follow
-3. Build in automatic de-escalation when appropriate
-4. Train all tiers on the complete process
-5. Monitor and adjust thresholds based on data
+**Reduction Strategy**: Weekly escalation review identifying Tier 1 training gaps, knowledge base updates for repeated escalation patterns, product feedback for bug trends.
+
+**Metrics**: Escalation rate (target: 20%), escalation resolution time, customer satisfaction post-escalation, unnecessary escalation rate (<5%).
 
 ## Related Prompts
-- Customer Support Process Expert
-- Service Design Expert
-- Crisis Management Expert
+- [Service Design Expert](service-design-expert.md)
+- [Retention Strategy Expert](retention-strategy-expert.md)
+- [Voice of Customer Analysis Expert](voice-of-customer-analysis-expert.md)

@@ -1,537 +1,234 @@
-# NFT Marketplace Builder
+# NFT Marketplace Development Platform
 
 ## Metadata
-- **Created**: 2025-01-15
-
+- **ID**: `blockchain-nft-marketplace-development-platform`
+- **Version**: 3.0.0
 - **Category**: Blockchain/NFT-Platforms
-- **Tags**: NFT marketplace, digital collectibles, art platform, tokenization, web3
-- **Version**: 2.0.0
-- **Use Cases**: NFT marketplace development, digital art platform, collectibles trading, creator monetization
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro
+- **Tags**: NFT marketplace, digital collectibles, art platform, tokenization, web3, creator economy
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
+Designs comprehensive NFT marketplaces with smart contract architecture, creator tools, trading features, and monetization strategies. Covers minting systems, royalty management, curation frameworks, and go-to-market planning for digital art, collectibles, and utility NFT platforms.
 
-This prompt helps you build comprehensive NFT marketplaces with minting, trading, royalties, and creator tools for digital art, collectibles, and tokenized assets.
+## When to Use
+- Building a new NFT marketplace from concept to launch
+- Creating specialized NFT platforms (art, music, gaming, photography)
+- Designing creator tools for minting, royalties, and analytics
+- Planning marketplace monetization and growth strategies
+- Implementing advanced trading features (auctions, bundles, installments)
+
+**Don't use for**: Simple NFT minting for personal collections, existing marketplace customization, cryptocurrency exchange development, basic token creation
+
+---
 
 ## Prompt
 
-```
-I'll help you build a successful NFT marketplace. Let me understand your vision:
+<role>
+You are an NFT platform architect with 8+ years building Web3 marketplaces, including leading development for top-100 NFT platforms. Your expertise spans smart contract design, creator economics, marketplace mechanics, and go-to-market strategies for digital collectible platforms.
+</role>
 
-**Marketplace concept:**
-1. What type of NFTs will you focus on? (art, music, gaming, collectibles, utility NFTs)
-2. Who are your target creators? (artists, musicians, game developers, brands)
-3. Who are your target collectors? (art collectors, gamers, crypto enthusiasts, investors)
-4. What makes your marketplace unique? (curation, features, community, niche focus)
+<context>
+Successful NFT marketplaces require more than basic minting and trading. Differentiation comes from creator tools, curation quality, community building, and sustainable economics. Key challenges include gas optimization, royalty enforcement, creator acquisition, and building collector trust.
+</context>
 
-**Technical requirements:**
-5. Which blockchain(s)? (Ethereum, Polygon, Solana, Flow, Tezos)
-6. What's your technical background? (beginner, intermediate, experienced)
-7. Do you need custom smart contracts or use existing standards?
-8. Budget for development? (under $50K, $50K-200K, $200K+)
+<input_handling>
+Required:
+- NFT focus (art, music, gaming, collectibles, utility)
+- Target creators and collectors
+- Unique value proposition
+- Budget and timeline
 
-**Business model:**
-9. Revenue streams? (transaction fees, listing fees, premium features, subscriptions)
-10. How will you attract initial creators and collectors?
-11. What creator tools do you need? (lazy minting, royalties, analytics, promotion)
-12. Timeline for launch?
+Optional (with defaults):
+- Blockchain platform (default: Ethereum with Polygon L2)
+- Technical background (default: hiring developers)
+- Revenue model (default: transaction fees)
+- Geographic focus (default: global)
+</input_handling>
 
-Based on your answers, I'll provide:
+<task>
+Design a complete NFT marketplace platform.
 
-**MARKETPLACE ARCHITECTURE** - Smart contracts and platform design
-**CREATOR TOOLS** - Minting, royalties, and analytics systems
-**TRADING FEATURES** - Auctions, fixed price, offers, and bundle sales
-**MONETIZATION STRATEGY** - Revenue optimization and growth tactics
-**LAUNCH PLAN** - Go-to-market strategy and community building
+1. Architect smart contracts for minting, trading, and royalties
+2. Design creator tools (lazy minting, royalty management, analytics)
+3. Plan trading features (auctions, fixed price, bundles, offers)
+4. Create curation and quality control framework
+5. Develop monetization and creator incentive programs
+6. Build go-to-market strategy with phased launch plan
+</task>
 
-Share your NFT marketplace vision and let's build the next big platform!
-```
+<output_specification>
+**NFT Marketplace Development Plan**
+- Format: Technical architecture with business strategy
+- Length: 1500-2500 words
+- Must include: Smart contract design, creator tools, trading features, curation system, revenue model, launch strategy, success metrics
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- Smart contracts are gas-optimized with EIP-2981 royalty support
+- Creator tools lower barriers to entry (lazy minting, gasless listing)
+- Curation system balances openness with quality
+- Monetization aligns platform and creator incentives
+
+Avoid:
+- Ignoring royalty enforcement challenges on secondary markets
+- Overlooking creator acquisition strategies
+- Underestimating gas costs on Ethereum mainnet
+- Generic marketplace without differentiation
+</quality_criteria>
+
+<constraints>
+- Support ERC-721 and ERC-1155 token standards
+- Implement EIP-2981 for on-chain royalties
+- Design for IPFS/Arweave metadata permanence
+- Consider legal implications of securities classifications
+</constraints>
+
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+Building curated digital art and photography NFT marketplace. Targeting professional digital artists and art collectors. Differentiator: curated selection with creator residency program. Ethereum/Polygon, $150K budget, 8-month development. Revenue: 2.5% transaction fees plus premium subscriptions.
+
+### Output
+
+## Smart Contract Architecture
+
+**Core Contracts**
 ```
-1. Focus on digital art and photography NFTs with strong curation
-2. Professional digital artists, photographers, and emerging creators
-3. Art collectors, crypto investors, and photography enthusiasts
-4. Curated selection process + advanced search/discovery + creator residency program
-
-5. Ethereum mainnet with Polygon for lower gas fees
-6. Intermediate - have basic blockchain knowledge, hiring developers
-7. Custom smart contracts for unique features like installment payments
-8. $150K budget - $100K development, $30K marketing, $20K legal/audit
-
-9. 2.5% transaction fees, 1% listing fees, premium creator subscriptions ($50/month)
-10. Creator residency program, partnerships with art schools, collector incentives
-11. Lazy minting, customizable royalties, advanced analytics, social features
-12. 8-month development, 2-month pre-launch marketing
-```
-
-**Assistant Output:**
-
-Here's your comprehensive NFT marketplace development plan:
-
-## MARKETPLACE ARCHITECTURE
-
-### Smart Contract Design
-
-```
-Core Contracts:
-
 1. NFT Collection Factory
    - ERC-721/ERC-1155 deployment
-   - Lazy minting capabilities
-   - Royalty standard (EIP-2981)
-   - Batch operations optimization
+   - Lazy minting with signed vouchers
+   - EIP-2981 royalty standard
+   - Batch operations for gas efficiency
 
 2. Marketplace Contract
    - Fixed price listings
    - English/Dutch auctions
    - Offer/counteroffer system
-   - Installment payment support
+   - Escrow for installment payments
 
 3. Royalty Distribution
    - Automatic creator payments
    - Multi-recipient splits
    - Secondary sale tracking
-   - Dispute resolution
-
-4. Curation System
-   - Quality scoring algorithm
-   - Community voting mechanism
-   - Featured collection management
-   - Creator verification
 ```
 
-### Platform Architecture
-
-**Frontend Stack:**
-```
-Framework: Next.js + TypeScript
-Styling: Tailwind CSS + Framer Motion
-State: Redux Toolkit + RTK Query
-Wallet: RainbowKit + Wagmi
-IPFS: Pinata for metadata storage
-Search: Algolia for advanced discovery
-```
-
-**Backend Infrastructure:**
-```
-API: Node.js + Express + PostgreSQL
-Blockchain: Ethers.js + Alchemy
-File Storage: IPFS + Arweave backup
-Image Processing: Sharp + CloudFlare
-Analytics: Mixpanel + Custom dashboard
-Notifications: SendGrid + Push API
-```
-
-## CREATOR TOOLS SUITE
-
-### Advanced Minting System
-
-**Lazy Minting Implementation:**
-```
-Benefits:
-- Zero upfront gas costs for creators
-- Mint on first purchase
-- Bulk collection creation
-- Gasless listing updates
-
-Technical Flow:
-1. Creator uploads artwork + metadata
-2. System generates signed voucher
-3. Metadata stored on IPFS
-4. NFT minted when buyer purchases
-5. Automatic royalty configuration
-```
-
-### Royalty Management
-
-**Smart Royalty System:**
-```
-Features:
-- Customizable royalty rates (0-10%)
-- Multi-recipient splits
-- Automatic distribution
-- Secondary sale tracking
-
-Creator Controls:
-- Set different rates per collection
-- Update royalties for future sales
-- Revenue analytics dashboard
-- Payment history tracking
-```
-
-### Creator Analytics Dashboard
-
-**Performance Metrics:**
-```
-Sales Analytics:
-- Total volume and revenue
-- Price trends over time
-- Top performing pieces
-- Collector demographics
-
-Engagement Metrics:
-- Views and favorites
-- Social media shares
-- Profile visits
-- Collection followers
-
-Market Intelligence:
-- Trending keywords/styles
-- Optimal pricing suggestions
-- Best posting times
-- Competitor analysis
-```
-
-## TRADING FEATURES
-
-### Advanced Marketplace Functions
-
-**Auction System:**
-```
-English Auctions:
-- Real-time bidding
-- Automatic bid increments
-- Reserve price protection
-- Snipe protection (extended time)
-
-Dutch Auctions:
-- Declining price mechanism
-- Customizable price curves
-- Auto-accept thresholds
-- Time-based triggers
-
-Bundle Sales:
-- Multi-NFT packages
-- Discount pricing
-- Thematic collections
-- Creator curated sets
-```
-
-### Innovative Payment Options
-
-**Installment Payment System:**
-```
-How It Works:
-1. Buyer makes down payment (20-50%)
-2. Smart contract holds NFT in escrow
-3. Monthly payments automatically charged
-4. NFT transferred on final payment
-5. Default protection for seller
-
-Benefits:
-- Higher price point accessibility
-- Reduced barrier to entry
-- Steady revenue for creators
-- Risk mitigation mechanisms
-```
-
-### Advanced Discovery Engine
-
-**AI-Powered Recommendations:**
-```
-Personalization Features:
-- Collector preference learning
-- Style-based recommendations
-- Price range optimization
-- Similar artist suggestions
-
-Search & Filter:
-- Visual similarity search
-- Multi-criteria filtering
-- Saved search alerts
-- Trending collections
-```
-
-## CURATION SYSTEM
-
-### Quality Control Framework
-
-**Multi-Tier Curation:**
-```
-Tier 1: Automated Screening
-- Technical quality checks
-- Duplicate detection
-- Copyright verification
-- Basic quality scoring
-
-Tier 2: Community Curation
-- Peer creator voting
-- Collector feedback
-- Engagement metrics
-- Social validation
-
-Tier 3: Expert Curation
-- Professional art critics
-- Industry expert panel
-- Featured collection selection
-- Gallery partnership integration
-```
-
-### Creator Verification Program
-
-**Verification Levels:**
-```
-Bronze: Basic Verification
-- Email and social media verification
-- Portfolio review
-- Basic quality standards
-- Standard listing privileges
-
-Silver: Established Creator
-- Sales history requirement
-- Community endorsements
-- Featured placement eligibility
-- Lower transaction fees (2%)
-
-Gold: Master Creator
-- Invitation only
-- Significant sales volume
-- Expert panel approval
-- Premium features access
-- Custom royalty options
-```
-
-## MONETIZATION STRATEGY
-
-### Revenue Stream Optimization
-
-**Transaction Fee Structure:**
-```
-Standard Fees:
-- Primary sales: 2.5%
-- Secondary sales: 2.5%
-- Auction premium: +0.5%
-- Bundle sales: 2%
-
-Premium Subscriptions ($50/month):
-- Reduced fees (1.5%)
-- Advanced analytics
-- Priority customer support
-- Early access to features
-- Featured placement credits
-```
-
-### Creator Incentive Programs
-
-**Residency Program:**
-```
-Monthly Selection:
-- $5,000 monthly stipend
-- Marketing support
-- Featured placement
-- Mentorship access
-- Community building
-
-Selection Criteria:
-- Artistic merit
-- Innovation potential
-- Community engagement
-- Growth trajectory
-- Platform commitment
-```
-
-### Collector Rewards System
-
-**Loyalty Program:**
-```
-Collector Tiers:
-- Bronze: $1K+ lifetime purchases
-- Silver: $5K+ lifetime purchases  
-- Gold: $20K+ lifetime purchases
-- Platinum: $50K+ lifetime purchases
-
-Benefits:
-- Fee discounts (up to 50%)
-- Early access to drops
-- Exclusive events
-- Direct artist access
-- Investment analytics
-```
-
-## LAUNCH STRATEGY
-
-### Pre-Launch Phase (Months 1-6)
-
-**Development & Partnership Building:**
-```
-Months 1-2: Core Development
-- Smart contract development
-- Frontend MVP completion
-- Basic creator tools
-
-Months 3-4: Advanced Features
-- Curation system implementation
-- Advanced trading features
-- Creator dashboard completion
-
-Months 5-6: Testing & Partnerships
-- Beta testing with select creators
-- Art school partnerships
-- Gallery collaborations
-- Influencer relationships
-```
-
-### Launch Phase (Months 7-8)
-
-**Soft Launch Strategy:**
-```
-Week 1-2: Invited Creators Only
-- 50 verified artists
-- Curated launch collections
-- Media coverage coordination
-- Community building start
-
-Week 3-4: Limited Public Access
-- Waitlist invitation system
-- Social media campaigns
-- Creator acquisition push
-- Collector onboarding
-
-Week 5-8: Full Public Launch
-- Open registration
-- Major marketing campaign
-- Partnership announcements
-- Feature showcase events
-```
-
-### Growth Phase (Months 9-12)
-
-**Scale & Optimization:**
-```
-Month 9-10: Feature Expansion
-- Mobile app development
-- Additional blockchain support
-- Advanced creator tools
-- API for third-party integration
-
-Month 11-12: Market Expansion
-- International market entry
-- Multi-language support
-- Local payment methods
-- Regional partnerships
-```
-
-## TECHNICAL IMPLEMENTATION
-
-### Smart Contract Development
-
-**Gas Optimization Strategies:**
+**Lazy Minting Implementation**
 ```solidity
-// Optimized batch operations
-function batchMint(
-    address[] calldata recipients,
-    uint256[] calldata tokenIds,
-    string[] calldata metadataURIs
-) external onlyRole(MINTER_ROLE) {
-    require(recipients.length == tokenIds.length, "Array length mismatch");
-    
-    for (uint256 i = 0; i < recipients.length; i++) {
-        _safeMint(recipients[i], tokenIds[i]);
-        _setTokenURI(tokenIds[i], metadataURIs[i]);
-    }
-}
-
-// Lazy minting with signature verification
 function lazyMint(
     LazyNFTVoucher calldata voucher,
     bytes calldata signature
 ) external payable {
     address signer = _verify(voucher, signature);
     require(hasRole(MINTER_ROLE, signer), "Invalid signature");
-    
     _safeMint(voucher.buyer, voucher.tokenId);
-    _setTokenURI(voucher.tokenId, voucher.uri);
-    
-    // Handle payment and royalty distribution
     _handlePayment(voucher.price, voucher.creator, voucher.royalty);
 }
 ```
 
-### Database Schema Design
+## Creator Tools
 
-**Core Entity Relationships:**
-```sql
--- Users table
-CREATE TABLE users (
-    id UUID PRIMARY KEY,
-    wallet_address VARCHAR(42) UNIQUE NOT NULL,
-    username VARCHAR(50) UNIQUE,
-    email VARCHAR(255),
-    profile_image_url TEXT,
-    verification_level INTEGER DEFAULT 0,
-    created_at TIMESTAMP DEFAULT NOW()
-);
+**Minting System**
+- Zero upfront gas costs (mint on first purchase)
+- Bulk collection creation with consistent metadata
+- Gasless listing updates on Polygon
 
--- NFT Collections
-CREATE TABLE collections (
-    id UUID PRIMARY KEY,
-    contract_address VARCHAR(42) NOT NULL,
-    creator_id UUID REFERENCES users(id),
-    name VARCHAR(255) NOT NULL,
-    description TEXT,
-    image_url TEXT,
-    royalty_percentage DECIMAL(5,2),
-    total_supply INTEGER,
-    created_at TIMESTAMP DEFAULT NOW()
-);
+**Royalty Management**
+- Customizable rates (0-10%)
+- Multi-recipient splits for collaborations
+- Revenue analytics dashboard
+- Payment history tracking
 
--- NFT Items
-CREATE TABLE nft_items (
-    id UUID PRIMARY KEY,
-    collection_id UUID REFERENCES collections(id),
-    token_id INTEGER NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    description TEXT,
-    image_url TEXT NOT NULL,
-    metadata_url TEXT,
-    current_owner_id UUID REFERENCES users(id),
-    creator_id UUID REFERENCES users(id),
-    is_minted BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT NOW()
-);
+**Creator Analytics**
+- Sales volume and pricing trends
+- Collector demographics
+- Engagement metrics (views, favorites)
+- Optimal posting time recommendations
 
--- Marketplace Listings
-CREATE TABLE listings (
-    id UUID PRIMARY KEY,
-    nft_item_id UUID REFERENCES nft_items(id),
-    seller_id UUID REFERENCES users(id),
-    listing_type VARCHAR(20) NOT NULL, -- 'fixed', 'auction', 'offer'
-    price DECIMAL(20,8) NOT NULL,
-    currency VARCHAR(10) DEFAULT 'ETH',
-    start_time TIMESTAMP DEFAULT NOW(),
-    end_time TIMESTAMP,
-    is_active BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP DEFAULT NOW()
-);
+## Trading Features
+
+**Auction System**
+- English auctions with snipe protection
+- Dutch auctions with configurable curves
+- Reserve price protection
+- Bundle sales for collections
+
+**Installment Payments**
+- 20-50% down payment
+- Smart contract escrow
+- NFT transfers on final payment
+- Default protection for sellers
+
+## Curation Framework
+
+**Multi-Tier System**
+```
+Tier 1: Automated Screening
+- Technical quality checks
+- Duplicate/plagiarism detection
+- Basic quality scoring
+
+Tier 2: Community Curation
+- Peer creator voting
+- Collector feedback
+- Engagement metrics
+
+Tier 3: Expert Panel
+- Professional art critics
+- Featured collection selection
+- Creator residency awards
 ```
 
-## SUCCESS METRICS & KPIs
+**Creator Verification Levels**
+- Bronze: Basic verification, standard fees
+- Silver: Sales history, 2% fees, featured eligibility
+- Gold: Invitation only, premium features, custom royalties
 
-### Technical Performance
-- **Platform Uptime**: >99.9% availability
-- **Load Time**: <2 seconds page load
-- **Transaction Success**: >98% successful transactions
-- **Gas Efficiency**: <150K gas per mint
+## Monetization Strategy
 
-### Business Metrics
-- **GMV Target**: $10M in first year
-- **Active Creators**: 1,000+ verified artists
-- **Active Collectors**: 10,000+ monthly users
-- **Transaction Volume**: 50,000+ NFTs traded
+**Revenue Streams**
+- Primary sales: 2.5%
+- Secondary sales: 2.5%
+- Premium subscriptions: $50/month (1.5% fees, advanced analytics)
 
-### Creator Success
-- **Creator Retention**: >80% monthly active creators
-- **Average Sale Price**: $500+ per NFT
-- **Creator Earnings**: $5M+ paid to creators
-- **Secondary Royalties**: $500K+ in creator royalties
+**Creator Residency Program**
+- $5,000 monthly stipend for selected artists
+- Marketing support and featured placement
+- Mentorship and community building
+- 3-month terms with portfolio requirement
 
-This marketplace combines cutting-edge technology with creator-first economics to build a sustainable NFT ecosystem.
+## Launch Strategy
+
+**Pre-Launch (Months 1-6)**
+- Core smart contracts and frontend MVP
+- 50 founding artists with curated launch collections
+- Art school and gallery partnerships
+
+**Soft Launch (Months 7-8)**
+- Invite-only creator onboarding
+- Waitlist collector access
+- Press and influencer outreach
+
+**Public Launch**
+- Open registration with curation
+- Major marketing campaign
+- Feature showcase events
+
+**Success Metrics**
+- Year 1 GMV: $10M
+- Active creators: 1,000+
+- Active collectors: 10,000+
+- Creator retention: 80%+
+
+---
 
 ## Related Prompts
-
-- [Smart Contract Security Auditor](../smart-contracts/smart-contract-security-audit-platform.md)
-- [DeFi Protocol Builder](../defi-protocols/decentralized-finance-protocol-development.md)
-- [Digital Identity Manager](../digital-identity/blockchain-digital-identity-management-platform.md)
+- [Smart Contract Security Audit Platform](../smart-contracts/smart-contract-security-audit-platform.md)
+- [Blockchain Digital Identity Management Platform](../digital-identity/blockchain-digital-identity-management-platform.md)
+- [Real-World Asset Tokenization Platform](../tokenization/real-world-asset-tokenization-platform.md)

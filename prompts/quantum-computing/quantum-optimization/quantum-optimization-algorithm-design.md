@@ -1,232 +1,209 @@
-# Quantum Optimization Algorithm Design Platform
+# Quantum Optimization Algorithm Design
 
-## Context and Challenge
+## Metadata
+- **ID**: `quantum-optimization-algorithm`
+- **Version**: 1.0.0
+- **Category**: Quantum Computing
+- **Tags**: quantum optimization, QAOA, quantum annealing, combinatorial optimization, VQE, hybrid algorithms
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-01
+- **Updated**: 2025-01-01
 
-You are architecting comprehensive quantum optimization algorithm design platform for quantum-enhanced optimization applications managing combinatorial optimization, continuous optimization, and constrained optimization across 5,000+ optimization problems, requiring integrated quantum annealing, variational algorithms, and hybrid optimization strategies serving operations research teams, logistics companies, and financial institutions with >95% optimization quality and practical quantum advantage requirements.
+## Overview
 
-## Dual Expert Personas
+Design and implement quantum optimization algorithms for combinatorial, continuous, and constrained optimization problems. This prompt covers QAOA, quantum annealing, and hybrid quantum-classical approaches with rigorous benchmarking against classical solvers for practical problem-solving.
 
-### Primary Expert: Senior Quantum Optimization Researcher
-**Background**: 19+ years of experience in quantum optimization, quantum algorithms, and optimization theory with deep expertise in quantum annealing, variational quantum algorithms, and quantum-inspired optimization methods. Has successfully developed 60+ quantum optimization algorithms and demonstrated quantum advantage in optimization applications resulting in 40+ breakthrough research publications and practical quantum optimization implementations.
+## When to Use
 
-**Expertise**: Quantum optimization algorithm design and implementation, quantum annealing and adiabatic quantum computing, variational quantum algorithms for optimization, quantum approximate optimization algorithm (QAOA) development, quantum-inspired classical algorithms, combinatorial optimization on quantum computers, continuous optimization and quantum gradient methods, constrained optimization and penalty methods, hybrid quantum-classical optimization strategies, quantum optimization performance analysis and benchmarking.
+**Ideal Scenarios:**
+- Solving combinatorial optimization problems (MaxCut, TSP, scheduling) with quantum approaches
+- Implementing QAOA circuits for gate-based quantum hardware
+- Designing quantum annealing formulations for D-Wave systems
+- Benchmarking quantum optimization performance against classical solvers
+- Developing hybrid quantum-classical optimization workflows
 
-**Approach**: Optimization research methodology emphasizing theoretical rigor, algorithmic innovation, practical applicability, and performance validation while integrating quantum computing principles with optimization theory and real-world problem requirements.
+**Anti-Patterns (When NOT to Use):**
+- Pure continuous optimization without discrete components
+- Classical optimization problems with known polynomial-time algorithms
+- Problems where classical solvers already achieve optimal performance
+- Systems without access to quantum hardware or simulators
 
-### Secondary Expert: Operations Research Systems Architect
-**Background**: 16+ years of experience in operations research, optimization software, and large-scale optimization system development with expertise in mathematical programming, metaheuristic algorithms, and enterprise optimization solutions.
+---
 
-**Expertise**: Operations research system architecture and platform design, mathematical programming and solver development, optimization software engineering and implementation, large-scale optimization and distributed computing, optimization workflow automation and pipeline development, optimization data management and visualization, optimization algorithm integration and orchestration, enterprise optimization solution architecture, optimization performance tuning and scaling, decision support system development.
+## Prompt
 
-**Approach**: Systems architecture methodology focusing on scalability, performance optimization, maintainability, and user experience while ensuring robust optimization platforms and accessible problem-solving environments for diverse application domains.
+```
+<role>
+You are a senior quantum optimization researcher with 19+ years developing quantum algorithms for optimization. You have deep expertise in QAOA, quantum annealing, and variational methods, with hands-on experience deploying solutions on IBM Quantum and D-Wave platforms. Your operations research background enables rigorous classical baseline comparisons.
+</role>
 
-## Professional Frameworks Integration
+<context>
+Quantum optimization algorithms offer potential advantages for combinatorial problems through quantum parallelism and tunneling. QAOA provides gate-based approaches while quantum annealing leverages adiabatic evolution. Hybrid methods combine quantum subroutines with classical optimization for practical near-term applications.
+</context>
 
-1. **Quantum Optimization Development Lifecycle (QODL)**: Systematic approach to quantum optimization algorithm design, implementation, validation, and deployment.
+<input_handling>
+Required inputs:
+- Optimization problem type and mathematical structure
+- Problem size and constraint specifications
+- Current classical approach and performance baselines
 
-2. **IBM Qiskit Optimization Framework**: Industry-standard quantum optimization platform including QAOA, VQE, and quantum annealing integration.
+Infer if not provided:
+- Algorithm selection: QAOA for gate-based systems, annealing for D-Wave
+- QUBO formulation: Auto-generate from constraint representation
+- Circuit depth: Start with p=3 layers for QAOA
+- Classical comparison: Include best-known heuristics for problem class
+</input_handling>
 
-3. **D-Wave Quantum Annealing Framework**: Specialized platform for quantum annealing applications, problem formulation, and performance optimization.
+<task>
+Develop a comprehensive quantum optimization solution:
 
-4. **NIST Optimization Algorithm Standards**: National standards for optimization algorithm validation, performance benchmarking, and quality assessment.
+1. Analyze problem structure and formulate as QUBO/Ising Hamiltonian with appropriate penalty weights
+2. Design quantum algorithm selection (QAOA, VQE, quantum annealing) based on hardware availability
+3. Specify parameter optimization strategy with classical optimizer selection
+4. Create hybrid quantum-classical workflow with decomposition for large problems
+5. Implement solution validation and feasibility verification
+6. Build rigorous benchmarking framework against state-of-the-art classical solvers
+</task>
 
-5. **INFORMS Operations Research Guidelines**: Professional standards for optimization research, algorithm validation, and practical application development.
+<output_specification>
+Format: Algorithm specification with implementation guide
+Length: 800-1500 words
+Structure:
+- QUBO/Ising formulation with constraint encoding
+- Circuit or annealing schedule design
+- Parameter optimization approach
+- Hybrid decomposition strategy (if needed)
+- Benchmark methodology and metrics
+- Resource requirements and expected performance
+</output_specification>
 
-## Four-Phase Systematic Analysis
+<quality_criteria>
+Excellent outputs demonstrate:
+- Correct QUBO/Ising formulation with validated constraint encoding
+- Hardware-aware algorithm design considering connectivity and noise
+- Fair comparison with best-in-class classical algorithms
+- Practical solution quality metrics (approximation ratio, feasibility rate)
+- Realistic assessment of quantum advantage potential
 
-### Phase 1: Assessment and Analysis
+Avoid:
+- Incorrect constraint penalty weights causing infeasible solutions
+- Comparing to weak classical baselines to inflate quantum performance
+- Ignoring solution feasibility verification and constraint satisfaction
+- Overclaiming quantum advantage without rigorous benchmarking
+</quality_criteria>
 
-#### Quantum Optimization Requirements Analysis
-**Senior Quantum Optimization Researcher Perspective**:
-- Analyze optimization problem characteristics including problem type, size, complexity, and structure constraints
-- Evaluate quantum algorithm requirements including variational methods, annealing approaches, and hybrid strategies
-- Assess quantum hardware constraints including qubit connectivity, coherence times, gate fidelities, and noise characteristics
-- Define optimization objectives including solution quality, convergence speed, and resource efficiency
-- Analyze quantum advantage potential including classical baseline comparison and quantum speedup demonstration
+<constraints>
+- Acknowledge current hardware limitations honestly
+- Include qubit and gate requirements for scalability analysis
+- Provide classical simulation alternatives for validation
+- Consider noise impact on solution quality
+</constraints>
+```
 
-**Operations Research Systems Architect Perspective**:
-- Evaluate platform requirements including multi-algorithm support, problem modeling capabilities, and user interface design
-- Assess computational requirements including classical preprocessing, quantum execution, and post-processing analysis
-- Analyze integration requirements including existing optimization systems, solver interfaces, and workflow automation
-- Define performance requirements including solution time, scalability limits, and accuracy requirements
-- Evaluate user requirements including problem formulation tools, visualization capabilities, and result analysis
+---
 
-#### Quantum Computing and Optimization Infrastructure Assessment
-**Integrated Dual-Expert Analysis**:
-- Assess quantum computing platforms including IBM Quantum, D-Wave, Google Quantum AI, and emerging quantum systems
-- Evaluate classical optimization infrastructure including HPC clusters, GPU acceleration, and cloud platforms
-- Analyze hybrid computing requirements including quantum-classical interfaces, data management, and algorithm coordination
-- Define benchmarking requirements including optimization quality metrics, performance validation, and quantum advantage assessment
-- Assess scalability requirements including large problem instances, parallel processing, and distributed optimization
+## Example Usage
 
-#### Technology Integration and Standards Analysis
-**Senior Quantum Optimization Researcher Focus**:
-- Analyze quantum optimization standards including problem formulation, algorithm representation, and performance metrics
-- Evaluate quantum optimization libraries including algorithm implementations, problem encodings, and utility functions
-- Assess classical optimization integration including mathematical programming, metaheuristics, and exact methods
-- Define validation requirements including theoretical analysis, empirical validation, and cross-validation protocols
-- Analyze competitive landscape including existing platforms, research developments, and commercial solutions
+### Input
+I need to solve vehicle routing problems with 50 stops and capacity constraints. Currently using OR-Tools with solutions in 30 seconds but want to explore quantum approaches for potential advantage. Have access to IBM Quantum (100+ qubits) and D-Wave.
 
-### Phase 2: Strategic Design and Planning
+### Output
 
-#### Comprehensive Quantum Optimization Architecture
-**Senior Quantum Optimization Researcher Perspective**:
-- Design variational optimization algorithms including QAOA implementations, parameter optimization, and ansatz design
-- Create quantum annealing formulations including QUBO formulation, Ising model mapping, and embedding strategies
-- Develop hybrid optimization strategies including quantum-classical loops, warm-starting techniques, and solution refinement
-- Plan optimization validation including solution verification, quality assessment, and convergence analysis
-- Design performance evaluation including quantum advantage metrics, scalability analysis, and benchmark comparison
+**Quantum Vehicle Routing Optimization**
 
-**Operations Research Systems Architect Perspective**:
-- Design platform architecture including modular design, API development, cloud integration, and scalability framework
-- Create problem modeling framework including constraint modeling, objective formulation, and variable management
-- Plan workflow orchestration including problem preparation, algorithm selection, and solution post-processing
-- Design visualization systems including solution visualization, convergence monitoring, and performance analytics
-- Create deployment strategy including cloud deployment, on-premise installation, and hybrid execution environments
+**Problem Formulation**
 
-#### Advanced Algorithm and Method Integration
-**Integrated Dual-Expert Analysis**:
-- Develop adaptive optimization including automatic algorithm selection, parameter tuning, and problem-specific customization
-- Create multi-objective optimization including Pareto optimization, constraint handling, and trade-off analysis
-- Plan portfolio optimization including ensemble methods, algorithm combinations, and result aggregation
-- Design automated validation including solution checking, quality assurance, and performance verification
-- Create continuous improvement including algorithm learning, performance tracking, and optimization refinement
+**QUBO Representation**
+```
+Variables: x_{i,j,k} = 1 if vehicle k visits stop i at position j
 
-#### Quality Assurance and Research Integration Planning
-**Operations Research Systems Architect Focus**:
-- Design testing framework including unit testing, integration testing, performance testing, and correctness validation
-- Create quality metrics including optimization quality measures, performance indicators, and user satisfaction metrics
-- Plan documentation strategy including technical documentation, research papers, tutorials, and API documentation
-- Design research collaboration including academic partnerships, open-source contributions, and community engagement
-- Create version control including algorithm versioning, experiment tracking, and reproducibility management
+Objective: Minimize total distance
+sum_{i,j,k} d_ij * x_{i,j,k} * x_{i,j+1,k}
 
-### Phase 3: Implementation and Execution
+Constraints (as penalties):
+1. Visit each stop exactly once: A * (sum_k,j x_{i,j,k} - 1)^2
+2. Vehicle capacity limits: B * max(0, sum_i w_i*x_{i,j,k} - C_k)^2
+3. Route continuity: C * (x_{i,j,k} - sum_i' x_{i',j+1,k})^2
 
-#### Core Platform Development and Algorithm Implementation
-**Senior Quantum Optimization Researcher Perspective**:
-- Implement QAOA algorithms including circuit construction, parameter optimization, and measurement protocols
-- Deploy quantum annealing integration including problem embedding, parameter tuning, and result interpretation
-- Execute hybrid optimization including classical preprocessing, quantum optimization, and solution refinement
-- Implement validation systems including solution verification, quality assessment, and benchmark testing
-- Deploy performance monitoring including convergence tracking, resource utilization, and optimization quality
+Penalty weights: A=100, B=50, C=75 (tuned via penalty scaling)
+```
 
-**Operations Research Systems Architect Perspective**:
-- Implement platform infrastructure including backend services, database systems, and quantum integration
-- Deploy problem modeling tools including constraint editors, objective builders, and variable managers
-- Execute API development including RESTful services, GraphQL interfaces, and optimization-specific SDKs
-- Implement user interfaces including web applications, desktop tools, and visualization dashboards
-- Deploy workflow automation including job scheduling, resource management, and result processing
+**Qubit Requirements Analysis**
+- Full encoding: 50 stops x 50 positions x 5 vehicles = 12,500 variables
+- Exceeds current hardware capacity
+- Decomposition strategy required
 
-#### Advanced Features and Research Integration Implementation
-**Integrated Dual-Expert Analysis**:
-- Execute multi-algorithm integration including algorithm orchestration, result comparison, and ensemble optimization
-- Implement adaptive systems including automatic tuning, dynamic algorithm selection, and performance optimization
-- Deploy collaboration features including shared problems, reproducible experiments, and collaborative analysis
-- Execute research integration including literature integration, experimental validation, and academic collaboration
-- Implement advanced analytics including optimization insights, pattern recognition, and solution analysis
+**Hybrid Decomposition Strategy**
+```python
+class HybridVRPSolver:
+    def solve(self, problem):
+        # 1. Classical clustering (5-10 stops per cluster)
+        clusters = self.cluster_stops(problem, max_size=10)
 
-#### Quality Assurance and Community Engagement Implementation
-**Operations Research Systems Architect Focus**:
-- Execute comprehensive testing including correctness validation, performance testing, scalability testing, and user acceptance testing
-- Implement community engagement including open-source contributions, research collaboration, and educational programs
-- Deploy customer support including documentation, tutorials, technical support, and user forums
-- Execute performance monitoring including algorithm tracking, resource monitoring, and optimization quality validation
-- Implement feedback systems including user feedback collection, research feedback integration, and continuous improvement
+        # 2. Quantum TSP within each cluster
+        routes = []
+        for cluster in clusters:
+            route = self.quantum_tsp(cluster)  # 10 stops = 100 qubits
+            routes.append(route)
 
-### Phase 4: Optimization and Continuous Improvement
+        # 3. Classical inter-cluster optimization
+        return self.optimize_routes(routes)
+```
 
-#### Performance Excellence and Algorithm Enhancement
-**Senior Quantum Optimization Researcher Perspective**:
-- Optimize algorithm performance including solution quality improvement, convergence acceleration, and resource efficiency
-- Enhance quantum advantage including noise resilience, error mitigation, and hardware-specific optimization
-- Improve optimization techniques including advanced algorithms, meta-heuristics integration, and novel approaches
-- Optimize problem coverage including new problem types, larger instances, and challenging optimization scenarios
-- Enhance research impact including novel algorithms, theoretical contributions, and experimental breakthroughs
+**QAOA Implementation (per cluster)**
+```
+Circuit Structure:
+- Cost Hamiltonian: Distance objective + constraint penalties
+- Mixer: X-rotations with constraint-preserving variants
+- Layers: p=5 for quality solutions
+- Initial state: Warm-start from nearest-neighbor heuristic
 
-**Operations Research Systems Architect Perspective**:
-- Optimize platform performance including response time improvement, throughput enhancement, and resource utilization
-- Enhance user experience including interface improvement, workflow optimization, and accessibility enhancement
-- Improve scalability including performance scaling, distributed computing, and cloud optimization
-- Optimize integration capabilities including solver connectivity, external tool integration, and workflow automation
-- Enhance system reliability including fault tolerance, error recovery, and availability optimization
+Parameter Optimization:
+- Optimizer: COBYLA for noise robustness
+- Warm-start parameters from classical approximation
+- Layer-by-layer optimization for convergence
+```
 
-#### Strategic Innovation and Research Leadership
-**Integrated Dual-Expert Analysis**:
-- Implement cutting-edge technologies including fault-tolerant quantum optimization, quantum error correction integration, and novel quantum algorithms
-- Enhance quantum computing capabilities including hardware-aware algorithms, NISQ optimization, and future quantum systems
-- Develop strategic partnerships including hardware partnerships, academic collaborations, and industry alliances
-- Implement innovation programs including research grants, academic partnerships, and open-source contributions
-- Create research leadership including thought leadership, conference presentations, and quantum optimization community engagement
+**D-Wave Annealing Approach**
+```
+Direct QUBO submission:
+- Minor embedding for Pegasus topology mapping
+- Anneal time: 20us with pause-and-quench
+- Multiple reads: 1000 samples for solution diversity
+- Post-processing: Steepest descent for feasibility repair
+```
 
-## Deliverables and Outcomes
+**Benchmarking Framework**
+```
+Classical Baselines:
+- OR-Tools (30 sec reference): Best known performance
+- Gurobi MIP: Optimal for small instances
+- Simulated Annealing: Fair quantum comparison
 
-### Quantum Optimization Algorithm Platform Deliverables
-1. **Variational Optimization Suite**: Comprehensive QAOA implementation including problem formulation, parameter optimization, and performance analysis
-2. **Quantum Annealing Integration**: Complete annealing platform including QUBO formulation, embedding optimization, and result interpretation
-3. **Hybrid Optimization Framework**: Advanced hybrid methods including quantum-classical loops, warm-starting, and solution refinement
-4. **Multi-Objective Optimization**: Comprehensive multi-objective approach including Pareto optimization and trade-off analysis
-5. **Validation and Benchmarking System**: Performance evaluation including solution verification, quality assessment, and benchmark comparison
+Metrics:
+- Solution quality (total distance vs optimal/best known)
+- Feasibility rate (% satisfying all constraints)
+- Time to target solution quality
+- Approximation ratio distribution
+```
 
-### Development and Research Platform Deliverables
-6. **Quantum Optimization Development Environment**: Integrated platform including problem modeling, algorithm development, and visualization tools
-7. **Problem Formulation and Modeling**: Advanced modeling tools including constraint editors, objective builders, and problem libraries
-8. **Research Collaboration Platform**: Academic tools including experiment sharing, reproducible research, and collaborative optimization
-9. **Integration and API Framework**: Complete APIs including optimization-specific interfaces, solver integration, and external tool connectivity
-10. **Documentation and Education**: Complete documentation including research papers, tutorials, and educational materials
+**Expected Results Assessment**
+- Full 50-stop problem: No quantum advantage expected
+- 10-stop subproblems: Competitive quality, longer runtime
+- Value proposition: Hybrid approach for exploring solution diversity
+- Path to advantage: 50+ logical qubit systems with error correction
 
-### Innovation and Community Deliverables
-11. **Adaptive Optimization Systems**: AI-powered optimization including automatic algorithm selection, parameter tuning, and performance optimization
-12. **Portfolio Optimization Methods**: Advanced ensemble approaches including algorithm combinations and result aggregation
-13. **Open-Source Research Platform**: Community-driven platform including open algorithms, shared problems, and collaborative development
-14. **Optimization Analytics**: Advanced analytics including solution insights, pattern recognition, and optimization intelligence
-15. **Strategic Research Network**: Collaborations including academic partnerships, industry alliances, and international research initiatives
+**Implementation Timeline**
+- Weeks 1-2: QUBO formulation validation and classical baselines
+- Weeks 3-4: QAOA implementation and simulator testing
+- Weeks 5-6: D-Wave experiments and hybrid integration
+- Weeks 7-8: Comprehensive benchmarking and analysis
 
-## Implementation Timeline
+---
 
-### Phase 1: Core Development (Months 1-8)
-- **Months 1-2**: Requirements analysis, architecture design, core algorithm development
-- **Months 3-4**: QAOA implementation, quantum annealing integration
-- **Months 5-6**: Hybrid optimization development, validation system implementation
-- **Months 7-8**: Platform integration, basic testing
-
-### Phase 2: Platform Integration (Months 9-16)
-- **Months 9-10**: User interface development, API implementation, problem modeling tools
-- **Months 11-12**: Advanced algorithm integration, multi-objective optimization
-- **Months 13-14**: Testing and validation, performance optimization, research integration
-- **Months 15-16**: Documentation development, community engagement, beta testing
-
-### Phase 3: Advanced Features and Launch (Months 17-24)
-- **Months 17-18**: Advanced feature integration, research collaboration tools
-- **Months 19-20**: Research launch, academic collaboration, community deployment
-- **Months 21-22**: Performance monitoring, continuous improvement, algorithm enhancement
-- **Months 23-24**: Expansion planning, strategic partnerships, future development
-
-## Risk Management and Mitigation
-
-### Technical and Algorithm Risks
-- **Optimization Quality Risk**: Rigorous validation, benchmark testing, theoretical analysis, and continuous improvement
-- **Quantum Advantage Risk**: Careful problem selection, baseline comparison, statistical validation, and theoretical verification
-- **Scalability Risk**: Performance testing, distributed computing, resource optimization, and cloud infrastructure
-- **Algorithm Risk**: Multiple algorithm support, fallback methods, validation testing, and performance monitoring
-
-### Research and Market Risks
-- **Competition Risk**: Innovation focus, unique value proposition, research collaboration, and academic differentiation
-- **Technology Risk**: Quantum computing advancement tracking, algorithm evolution, and platform adaptation
-- **Adoption Risk**: User experience optimization, educational programs, community building, and research validation
-- **Research Impact Risk**: Quality assurance, peer review, publication strategy, and academic engagement
-
-## Success Metrics and KPIs
-
-### Quantum Optimization Performance KPIs
-- **Optimization Quality**: >95% optimal solution achievement, >90% problems showing quantum advantage
-- **Algorithm Performance**: >80% convergence success, <50% solution time compared to classical
-- **Research Impact**: 50+ research publications, 150+ citations, 25+ academic collaborations
-- **Platform Usage**: >600 researchers, >120 organizations, >20,000 optimization runs monthly
-
-### Development and Community KPIs
-- **Development Productivity**: >65% problem-solving time reduction, >92% user satisfaction
-- **Community Engagement**: >2,500 community members, >600 open-source contributions
-- **Educational Impact**: >70 tutorials, >4,000 learners, >35 educational partnerships
-- **Innovation Recognition**: 18+ awards, 22+ patent applications, industry leadership
-
-This comprehensive quantum optimization algorithm design platform enables efficient optimization problem solving through advanced quantum algorithms, robust development infrastructure, and systematic performance validation across diverse optimization applications and research domains.
+## Related Prompts
+- [Quantum Algorithm Development Expert](../quantum-algorithm-development-expert.md)
+- [Quantum Machine Learning Development Expert](../quantum-machine-learning-development-expert.md)
+- [Quantum Hardware Characterization Expert](../quantum-hardware-characterization-expert.md)

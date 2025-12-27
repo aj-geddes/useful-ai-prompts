@@ -1,320 +1,284 @@
 # Financial Model Builder
 
 ## Metadata
-- **Created**: 2025-07-18
-
+- **ID**: `business-financial-model-builder`
+- **Version**: 1.0.0
 - **Category**: Business/Finance
-- **Tags**: financial modeling, financial analysis, forecasting, valuation, scenario planning
-- **Version**: 2.0.0
-- **Use Cases**: financial planning, investment analysis, budgeting, valuation models
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Tags**: financial modeling, DCF, forecasting, valuation, scenario analysis
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-01-15
 
-## Description
+## Overview
+Builds comprehensive financial models for business planning, investment analysis, and valuation. Creates driver-based projections with scenario analysis, sensitivity tables, and investment return calculations.
 
-This prompt helps you build comprehensive financial models for business planning, investment analysis, and decision-making with proper structure, assumptions, and scenario analysis.
+## When to Use
+- Evaluating acquisitions or investments
+- Creating annual budgets and forecasts
+- Building pitch deck financial projections
+- Performing sensitivity/scenario analysis
+
+**Don't use for**: Personal finance, accounting entries, tax calculations
+
+---
 
 ## Prompt
 
 ```
-I'll help you build a robust financial model tailored to your needs. Let me understand your requirements:
+<role>
+You are a financial modeling expert with 15+ years of experience in valuation, forecasting, and investment analysis at top-tier investment banks and private equity firms. You build institutional-quality models with proper structure, driver-based assumptions, and robust scenario analysis that withstand due diligence scrutiny.
+</role>
 
-**Model purpose:**
-1. What type of financial model do you need? (DCF, LBO, budget, forecast, etc.)
-2. What key decisions will this model support?
-3. Who's the audience? (investors, management, lenders)
-4. What time horizon? (3 years, 5 years, etc.)
+<context>
+Financial models drive critical capital allocation decisions. A well-built model isolates key value drivers, stress-tests assumptions, and clearly communicates the investment thesis. Poor models with hardcoded values, circular references, or unrealistic assumptions lead to bad decisions and destroyed value.
+</context>
 
-**Business context:**
-5. What industry/business are you modeling?
-6. What's the revenue model?
-7. What are the key cost drivers?
-8. Any unique business characteristics?
+<input_handling>
+Required inputs:
+- Model type (DCF, LBO, budget, forecast, M&A)
+- Business/industry being modeled
+- Revenue model and key cost drivers
+- Time horizon for projections
 
-**Data and assumptions:**
-9. What historical data do you have?
-10. What are your growth assumptions?
-11. Any market benchmarks to consider?
-12. What scenarios need to be modeled?
+Infer if not provided:
+- Discount rate (default: 10% for established, 15-20% for growth)
+- Terminal growth (default: 2-3%)
+- Scenarios (default: base, upside, downside)
+</input_handling>
 
-Based on your answers, I'll provide:
+<task>
+Build a comprehensive financial model:
 
-**MODEL ARCHITECTURE** - Structure and components
-**KEY ASSUMPTIONS** - Driver-based inputs and rationale
-**FINANCIAL PROJECTIONS** - P&L, cash flow, balance sheet
-**SCENARIO ANALYSIS** - Sensitivity and what-if analysis
-**VALUATION OUTPUT** - Metrics and investment returns
+1. Design model architecture with logical tab structure
+2. Define key assumptions with driver-based logic
+3. Build revenue model with cohort/segment detail
+4. Create operating model with expense projections
+5. Generate free cash flow and working capital projections
+6. Perform valuation and investment returns analysis
+7. Develop scenario and sensitivity analysis
+</task>
 
-Share your modeling needs and let's build something powerful!
+<output_specification>
+Format: Structured sections with tables and calculations
+Length: 800-1200 words
+Structure:
+- Model architecture overview
+- Key assumptions table with drivers
+- Income statement projection
+- Free cash flow calculation
+- Valuation output (DCF, multiples, or relevant method)
+- Scenario analysis with key variables
+- Investment recommendation with supporting metrics
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- All assumptions are driver-based and clearly adjustable
+- Three-statement model flows correctly (income, balance sheet, cash flow)
+- Sensitivity analysis identifies key value drivers
+- Investment thesis is clear from model outputs
+
+Avoid:
+- Hardcoded numbers without underlying logic
+- Missing error checks or circular references
+- Unrealistic growth or margin assumptions
+- Valuation without supporting methodology
+</quality_criteria>
+
+<constraints>
+- Use industry-standard methodologies and benchmarks
+- Clearly distinguish between assumptions and calculations
+- Ensure model can be stress-tested with different scenarios
+- Provide sufficient detail for due diligence review
+</constraints>
 ```
+
+---
 
 ## Example Usage
 
-**User Input:**
-```
-1. 5-year DCF model for SaaS company acquisition
-2. Support buy/hold/pass decision, determine fair valuation and IRR potential
-3. Investment committee presentation - PE firm considering majority stake
-4. 5-year projection plus terminal value
+### Input
+"I need a 5-year DCF model for a SaaS acquisition our PE firm is evaluating. The target is a B2B project management software company with $15M ARR growing 60% YoY, 90% gross margins, and 110% net revenue retention. We're considering a majority stake and need to evaluate whether the deal makes sense at various price points. I need base, upside, and downside cases to present to our investment committee. Key concerns are whether growth rates are sustainable and what operating leverage we can achieve."
 
-5. B2B SaaS - project management software for enterprises
-6. Subscription model: $50-200/user/month, annual contracts, 500 customers, 50K total users
-7. Main costs: Cloud hosting (20% of revenue), Sales (30%), R&D (25%), G&A (15%)
-8. High growth, 90% gross margins, 110% net revenue retention, 18-month payback
-
-9. 3 years historicals: Growing 60% YoY, $15M current ARR, EBITDA breakeven
-10. Expect 45% growth Y1-2, 35% Y3, 25% Y4-5, then 15% terminal
-11. Public SaaS comps trade at 8-12x revenue, 25-35x EBITDA
-12. Need base, upside, and downside cases, plus sensitivity analysis
-```
-
-**Assistant Output:**
-
-Here's a comprehensive DCF model structure for your SaaS acquisition:
+### Output
 
 ## MODEL ARCHITECTURE
 
-### Workbook Structure
-
 ```
 Tab Structure:
-1. Executive Summary - Key outputs and investment thesis
-2. Assumptions - All inputs and drivers
-3. Revenue Build - Detailed revenue model
-4. Operating Model - P&L projections
-5. Cash Flow - FCF and working capital
-6. Balance Sheet - Pro forma statements
-7. Valuation - DCF, comps, returns
-8. Scenarios - Sensitivity analysis
-9. Data Room - Historical financials
+1. Executive Summary - Key outputs and recommendation
+2. Assumptions - All inputs centralized
+3. Revenue Build - ARR model with cohort dynamics
+4. Operating Model - P&L with expense drivers
+5. Cash Flow - FCF calculation and working capital
+6. Valuation - DCF with terminal value
+7. Scenarios - Sensitivity and case analysis
+8. Returns - IRR and multiple calculations
 ```
 
-### Model Flow Diagram
+**Model Design Principles:**
+- All hardcoded inputs in blue font (Assumptions tab only)
+- All calculations in black font
+- No circular references
+- Error checks on every major section
 
-```
-Assumptions → Revenue Model → Operating Model → Free Cash Flow
-                    ↓              ↓                ↓
-                Cohort Analysis  EBITDA          Terminal Value
-                                   ↓                ↓
-                              Valuation → IRR & Returns
-```
+---
 
 ## KEY ASSUMPTIONS
 
 ### Revenue Drivers
+| Metric | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 |
+|--------|-----|-----|-----|-----|-----|-----|
+| Beginning ARR ($M) | 15.0 | 15.0 | 24.0 | 36.0 | 50.4 | 65.5 |
+| New ARR ($M) | - | 7.5 | 9.6 | 11.5 | 12.1 | 13.3 |
+| Expansion ($M) | - | 1.5 | 2.4 | 3.6 | 3.8 | 4.6 |
+| Churn ($M) | - | (0.0) | (0.0) | (0.7) | (0.8) | (1.5) |
+| Ending ARR ($M) | 15.0 | 24.0 | 36.0 | 50.4 | 65.5 | 81.9 |
+| YoY Growth % | - | 60% | 50% | 40% | 30% | 25% |
 
-**Customer & User Growth**:
-```
-Base Case Assumptions:
-                    Y0      Y1      Y2      Y3      Y4      Y5
-Customers          500     700     950    1,235   1,544   1,853
-Growth %            -      40%     36%     30%     25%     20%
-Users/Customer     100     105     110     115     120     125
-Total Users      50,000  73,500  104,500 142,025 185,280 231,625
-```
+**Growth Rate Rationale:**
+- Y1-Y2: Current momentum continues with sales team expansion
+- Y3-Y4: Growth moderates as base increases, market saturates
+- Y5: Mature growth rate approaching long-term sustainable level
 
-**Pricing & Retention**:
-```
-ARPU (Annual)     $3,600  $3,780  $3,969  $4,127  $4,292  $4,464
-Price Increase      -      5%      5%      4%      4%      4%
-Gross Retention    90%     91%     92%     92%     93%     93%
-Net Retention     110%    112%    113%    113%    112%    110%
-```
+### Net Revenue Retention Assumptions
+| Metric | Y1 | Y2 | Y3 | Y4 | Y5 |
+|--------|-----|-----|-----|-----|-----|
+| Gross Retention | 95% | 95% | 94% | 93% | 93% |
+| Expansion Rate | 15% | 15% | 14% | 12% | 12% |
+| Net Retention | 110% | 110% | 108% | 105% | 105% |
 
-**Revenue Build**:
-```
-ARR Calculation:
-Starting ARR                $15.0M
-+ New ARR                   $11.3M
-+ Expansion ARR              $3.0M
-- Churn                    ($2.3M)
-= Ending ARR                $27.0M
+### Operating Expenses (% of Revenue)
+| Category | Y1 | Y2 | Y3 | Y4 | Y5 | Driver |
+|----------|-----|-----|-----|-----|-----|--------|
+| COGS | 10% | 10% | 10% | 10% | 10% | Hosting + support |
+| S&M | 35% | 32% | 30% | 28% | 26% | Efficiency gains |
+| R&D | 25% | 23% | 22% | 21% | 20% | Platform maturation |
+| G&A | 15% | 13% | 12% | 11% | 10% | Scale leverage |
+| **EBITDA Margin** | **5%** | **12%** | **18%** | **22%** | **26%** | |
 
-Y1 Revenue (GAAP)           $21.0M (avg of starting/ending)
-```
+---
 
-### Cost Structure
+## INCOME STATEMENT PROJECTION (Base Case)
 
-**Operating Expenses**:
-```
-% of Revenue:        Y1     Y2     Y3     Y4     Y5
-Cloud/Hosting       20%    19%    18%    17%    16%
-Sales & Marketing   35%    33%    31%    29%    28%
-R&D                 25%    24%    23%    22%    21%
-G&A                 15%    14%    13%    12%    11%
-Total OpEx          95%    90%    85%    80%    76%
-EBITDA Margin        5%    10%    15%    20%    24%
-```
+| ($M) | Y1 | Y2 | Y3 | Y4 | Y5 |
+|------|-----|-----|-----|-----|-----|
+| **Revenue** | 24.0 | 36.0 | 50.4 | 65.5 | 81.9 |
+| COGS | (2.4) | (3.6) | (5.0) | (6.6) | (8.2) |
+| **Gross Profit** | 21.6 | 32.4 | 45.4 | 59.0 | 73.7 |
+| Gross Margin | 90% | 90% | 90% | 90% | 90% |
+| S&M | (8.4) | (11.5) | (15.1) | (18.3) | (21.3) |
+| R&D | (6.0) | (8.3) | (11.1) | (13.8) | (16.4) |
+| G&A | (3.6) | (4.7) | (6.0) | (7.2) | (8.2) |
+| **EBITDA** | 1.2 | 4.3 | 9.1 | 14.4 | 21.3 |
+| EBITDA Margin | 5% | 12% | 18% | 22% | 26% |
 
-## FINANCIAL PROJECTIONS
+---
 
-### Income Statement (Base Case)
+## FREE CASH FLOW CALCULATION
 
-```
-($M)                Y0     Y1     Y2     Y3     Y4     Y5
-Revenue           15.0   21.0   30.5   41.9   53.8   66.0
-Growth %            -    40%    45%    37%    28%    23%
+| ($M) | Y1 | Y2 | Y3 | Y4 | Y5 |
+|------|-----|-----|-----|-----|-----|
+| EBITDA | 1.2 | 4.3 | 9.1 | 14.4 | 21.3 |
+| (-) D&A | (0.5) | (0.7) | (1.0) | (1.3) | (1.6) |
+| EBIT | 0.7 | 3.6 | 8.1 | 13.1 | 19.7 |
+| (-) Taxes (25%) | (0.2) | (0.9) | (2.0) | (3.3) | (4.9) |
+| NOPAT | 0.5 | 2.7 | 6.1 | 9.9 | 14.8 |
+| (+) D&A | 0.5 | 0.7 | 1.0 | 1.3 | 1.6 |
+| (-) CapEx | (0.5) | (0.7) | (1.0) | (1.3) | (1.6) |
+| (-) Change in NWC | (1.0) | (1.2) | (1.4) | (1.5) | (1.6) |
+| **Unlevered FCF** | (0.5) | 1.5 | 4.7 | 8.4 | 13.2 |
 
-Gross Profit      13.5   18.9   27.4   37.7   48.4   59.4
-Gross Margin      90%    90%    90%    90%    90%    90%
+---
 
-Operating Expenses:
-S&M                4.5    7.4    10.1   13.0   15.6   18.5
-R&D                3.8    5.3    7.3    9.6    11.8   13.9
-G&A                2.3    3.2    4.3    5.4    6.5    7.3
-Total OpEx        10.5   15.8   21.7   28.0   33.9   39.6
+## DCF VALUATION
 
-EBITDA             3.0    3.2    5.8    9.7   14.5   19.8
-EBITDA Margin      20%    15%    19%    23%    27%    30%
-```
+### Assumptions
+- Discount Rate (WACC): 12%
+- Terminal Growth Rate: 3%
+- Exit Multiple Alternative: 10x EBITDA
 
-### Free Cash Flow
+### Calculation
+| Component | Value | Notes |
+|-----------|-------|-------|
+| PV of FCF (Y1-5) | $18.2M | Discounted at 12% |
+| Terminal Value (Perpetuity) | $151.3M | FCF Y5 * (1+g) / (r-g) |
+| PV of Terminal Value | $85.8M | Discounted 5 years |
+| **Enterprise Value** | **$104.0M** | Sum of components |
 
-```
-($M)                Y1     Y2     Y3     Y4     Y5
-EBITDA             3.2    5.8    9.7   14.5   19.8
-- Taxes (25%)     (0.8)  (1.4)  (2.4)  (3.6)  (4.9)
-NOPAT              2.4    4.3    7.3   10.9   14.8
+### Alternate: Exit Multiple Method
+| Component | Value |
+|-----------|-------|
+| Y5 EBITDA | $21.3M |
+| Exit Multiple | 10.0x |
+| Terminal Value | $213.0M |
+| PV of Terminal | $120.9M |
+| **Enterprise Value** | **$139.1M** |
 
-- CapEx           (0.4)  (0.6)  (0.8)  (1.1)  (1.3)
-- NWC Change      (1.2)  (1.5)  (1.7)  (1.8)  (1.9)
-FCF                0.8    2.2    4.7    8.0   11.6
+**Valuation Range:** $104M - $139M (midpoint: $122M)
 
-FCF Margin         3.7%   7.1%  11.3%  14.9%  17.6%
-```
+---
 
-### Terminal Value
+## RETURNS ANALYSIS AT $100M PURCHASE PRICE
 
-```
-Terminal Year (Y5) Metrics:
-Revenue: $66.0M
-EBITDA: $19.8M
-FCF: $11.6M
+| Metric | Base Case | Upside | Downside |
+|--------|-----------|--------|----------|
+| Entry Multiple (ARR) | 6.7x | 6.7x | 6.7x |
+| Exit Multiple (EBITDA) | 10.0x | 12.0x | 8.0x |
+| Exit Value | $213M | $256M | $170M |
+| Equity Value at Exit | $150M | $193M | $107M |
+| **IRR** | **32%** | **42%** | **18%** |
+| **MOIC** | **3.0x** | **3.9x** | **2.1x** |
 
-Terminal Growth: 15% (conservative vs 20%+ market growth)
-Terminal Multiple: 10x EBITDA (mid-range of comps)
-Terminal Value: $198M
-
-Alternative - Gordon Growth:
-Terminal FCF: $11.6M × 1.15 = $13.3M
-WACC - Terminal Growth: 20% - 15% = 5%
-Terminal Value: $13.3M / 5% = $267M
-```
+---
 
 ## SCENARIO ANALYSIS
 
-### Three Cases
-
-**Base Case** (50% probability):
-- Revenue CAGR: 33%
-- Exit EBITDA Margin: 30%
-- Enterprise Value: $140M
-- IRR: 28%
-
-**Upside Case** (25% probability):
+### Base Case (Most Likely - 50% probability)
 - Revenue CAGR: 40%
-- Exit EBITDA Margin: 35%
-- Enterprise Value: $185M
-- IRR: 38%
+- Exit EBITDA Margin: 26%
+- Exit Multiple: 10x
+- **IRR: 32% | MOIC: 3.0x**
 
-**Downside Case** (25% probability):
-- Revenue CAGR: 25%
-- Exit EBITDA Margin: 22%
-- Enterprise Value: $95M
-- IRR: 15%
+### Upside Case (25% probability)
+- Revenue CAGR: 50% (accelerated growth from product expansion)
+- Exit EBITDA Margin: 30% (stronger operating leverage)
+- Exit Multiple: 12x (premium for growth profile)
+- **IRR: 42% | MOIC: 3.9x**
 
-**Probability-Weighted Return**: 27%
+### Downside Case (25% probability)
+- Revenue CAGR: 30% (competitive pressure, slower expansion)
+- Exit EBITDA Margin: 20% (investment required to defend position)
+- Exit Multiple: 8x (compressed multiples)
+- **IRR: 18% | MOIC: 2.1x**
 
-### Sensitivity Analysis
+### Probability-Weighted Returns
+- **Expected IRR: 31%**
+- **Expected MOIC: 2.9x**
 
-**Impact on Enterprise Value**:
-```
-                   Revenue Growth Rate
-                25%    30%    35%    40%    45%
-Terminal     8x  $95   $115   $135   $155   $175
-Multiple    10x  $110  $135   $160   $185   $210
-           12x  $125  $155   $185   $215   $245
+---
 
-Most Sensitive Variables:
-1. Net Revenue Retention (±10% = ±$40M EV)
-2. CAC Payback (±6mo = ±$25M EV)
-3. Terminal Multiple (±2x = ±$35M EV)
-```
+## INVESTMENT RECOMMENDATION
 
-## VALUATION OUTPUT
+**RECOMMENDATION: PROCEED at up to $110M**
 
-### DCF Valuation
+**Investment Thesis:**
+1. Strong unit economics (110% NRR, 90% gross margins) support durable growth
+2. Clear path to 25%+ EBITDA margins through operating leverage
+3. Downside protected with 18% IRR even in stress case
+4. Multiple expansion potential if growth sustains above 30%
 
-```
-Enterprise Value Calculation:
-                         ($M)
-PV of FCF (Y1-5)        $18.5
-PV of Terminal Value   $121.5
-Enterprise Value       $140.0
+**Key Risks to Monitor:**
+1. Competitive pressure from enterprise players (Asana, Monday)
+2. Sales efficiency deterioration in mid-market push
+3. NRR compression if product innovation slows
 
-Less: Net Debt         ($5.0)
-Equity Value          $135.0
-```
+**Walk-Away Price:** $125M (IRR falls below 25% hurdle)
 
-### Returns Analysis
-
-**Investment Metrics**:
-```
-Purchase Price: $100M (7.5x current revenue)
-Exit Value: $140M (projected)
-Hold Period: 5 years
-
-IRR: 28%
-Money Multiple: 2.8x
-Annual FCF Yield: Growing from 1% to 12%
-```
-
-### Comparable Company Analysis
-
-```
-Public SaaS Comparables:
-               Revenue  Revenue  EBITDA
-Company        Growth   Multiple Multiple
-Atlassian      35%      15.2x    45.3x
-Monday.com     40%      12.5x    N/M
-Asana          28%       8.7x    N/M
-Smartsheet     32%      10.1x    38.2x
-
-Average        34%      11.6x    41.8x
-Target Co.     33%       9.3x    35.0x
-```
-
-### Investment Recommendation
-
-**Bull Case**:
-- Strong unit economics (110% NRR, 18mo payback)
-- Proven product-market fit
-- Attractive entry multiple vs comps
-- Clear path to 30%+ EBITDA margins
-
-**Bear Case**:
-- Competitive market
-- Platform risk (relies on integrations)
-- Key person dependency
-- Limited pricing power
-
-**Recommendation**: **BUY** at up to $110M
-- Target 25%+ IRR achievable
-- Multiple expansion opportunity
-- Strong FCF generation by Y3
-- Strategic value to portfolio
-
-### Model Assumptions Requiring Diligence
-
-1. Customer concentration and churn
-2. Competitive differentiation sustainability
-3. Sales efficiency metrics/magic number
-4. Technical debt and platform scalability
-5. Management team depth
-
-This model provides a solid framework for your investment decision with appropriate sensitivity to key value drivers.
+---
 
 ## Related Prompts
-
-- [Investment Analysis Expert](../../problem-solving/performance-bottleneck-analysis-expert.md)
-- [Valuation Specialist](../../content-creation/email-marketing-specialist.md)
-- [Financial Due Diligence Expert](../../analysis/financial-modeling-expert.md)
+- [Business Analyst Expert](../management/business-analyst-strategic-excellence.md)
+- [Process Optimization Expert](../operations/process-optimization-expert.md)

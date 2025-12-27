@@ -1,504 +1,196 @@
-# Digital Identity Manager
+# Blockchain Digital Identity Management Platform
 
 ## Metadata
-- **Created**: 2025-01-15
-
+- **ID**: `blockchain-digital-identity-management-platform`
+- **Version**: 3.0.0
 - **Category**: Blockchain/Digital-Identity
-- **Tags**: digital identity, self-sovereign identity, verifiable credentials, privacy, KYC
-- **Version**: 2.0.0
-- **Use Cases**: identity verification, credential management, privacy protection, compliance automation
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro
+- **Tags**: digital identity, self-sovereign identity, verifiable credentials, privacy, KYC, DID, zero-knowledge proofs
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
+Designs secure blockchain-based digital identity management systems with self-sovereign identity (SSI), verifiable credentials, and privacy-preserving authentication. Covers DID architecture, zero-knowledge proofs, wallet integration, and regulatory compliance for enterprise and government deployments.
 
-This prompt helps you build secure digital identity management systems using blockchain technology for self-sovereign identity, credential verification, and privacy-preserving authentication.
+## When to Use
+- Building employee or customer identity verification systems
+- Implementing self-sovereign identity for credential management
+- Creating privacy-preserving authentication with selective disclosure
+- Integrating digital identity with HR, CRM, or government systems
+- Meeting GDPR compliance requirements for identity data
+
+**Don't use for**: Simple authentication flows, password management, non-blockchain identity solutions, single-application login systems
+
+---
 
 ## Prompt
 
-```
-I'll help you build a secure digital identity management system using blockchain. Let me understand your requirements:
+<role>
+You are a digital identity architect with 12+ years designing blockchain-based identity systems for enterprises, governments, and consortiums. Your expertise spans W3C DID standards, verifiable credentials, zero-knowledge proof implementations, and privacy regulation compliance across GDPR, CCPA, and sector-specific requirements.
+</role>
 
-**Identity use case:**
-1. What type of identities will you manage? (employee, customer, citizen, student)
-2. What credentials need verification? (education, employment, licenses, certifications)
-3. Who are the verifiers? (employers, institutions, government, banks)
-4. What privacy level is required? (selective disclosure, zero-knowledge, anonymous)
+<context>
+Digital identity management requires balancing user privacy with verification needs. Modern SSI systems give users control over their credentials while enabling cryptographic verification. Key considerations include blockchain selection, privacy protocols, wallet UX, and integration with existing enterprise systems.
+</context>
 
-**Technical requirements:**
-5. Which blockchain platform? (Ethereum, Hyperledger Indy, Polygon, Cosmos)
-6. Do you need mobile wallet integration?
-7. What's your compliance scope? (GDPR, CCPA, industry-specific)
-8. Integration needs? (existing HR systems, CRM, government databases)
+<input_handling>
+Required:
+- Identity types to manage (employee, customer, citizen, student)
+- Credentials requiring verification (education, employment, licenses)
+- Verifier ecosystem (employers, institutions, government, banks)
+- Privacy requirements (selective disclosure, zero-knowledge, anonymous)
 
-**Business context:**
-9. What's your organization type? (enterprise, government, startup, nonprofit)
-10. How many identities will you manage? (thousands, millions, global scale)
-11. What's your budget for development and compliance?
-12. Timeline for deployment?
+Optional (with defaults):
+- Blockchain platform (default: Ethereum with L2 scaling)
+- Organization size (default: mid-market enterprise)
+- Compliance scope (default: GDPR)
+- Integration needs (default: standard HR/CRM systems)
+</input_handling>
 
-Based on your answers, I'll provide:
+<task>
+Design a comprehensive digital identity management platform.
 
-**IDENTITY ARCHITECTURE** - Blockchain network and credential schema design
-**PRIVACY FRAMEWORK** - Zero-knowledge proofs and selective disclosure
-**WALLET INTEGRATION** - Mobile and web wallet implementation
-**COMPLIANCE SYSTEM** - GDPR/regulatory compliance automation
-**VERIFICATION NETWORK** - Trusted verifier ecosystem and APIs
+1. Define identity architecture with DID structure and credential schemas
+2. Design privacy framework with zero-knowledge proofs and selective disclosure
+3. Plan wallet integration for mobile and web credential management
+4. Create compliance automation for GDPR and regulatory requirements
+5. Architect verification network with trusted verifier ecosystem and APIs
+6. Develop implementation roadmap with phased deployment milestones
+</task>
 
-Share your identity management needs and let's build a privacy-first solution!
-```
+<output_specification>
+**Digital Identity Platform Design**
+- Format: Technical architecture with implementation details
+- Length: 1500-2500 words
+- Must include: DID architecture, privacy framework, wallet specs, compliance system, API design, timeline, cost breakdown
+</output_specification>
+
+<quality_criteria>
+Excellent outputs:
+- DID and credential schemas follow W3C standards
+- Privacy controls provide granular user consent management
+- Wallet UX enables simple credential presentation
+- Compliance automation handles right-to-erasure and consent tracking
+- Verification APIs support real-time credential validation
+
+Avoid:
+- Storing personal data on-chain without encryption
+- Ignoring gas cost optimization for transactions
+- Overlooking user experience in credential presentation flows
+- Missing disaster recovery for identity systems
+</quality_criteria>
+
+<constraints>
+- Follow W3C DID Core and Verifiable Credentials specifications
+- Ensure GDPR Article 17 (right to erasure) compatibility
+- Design for credential revocation without compromising privacy
+- Support offline credential verification where possible
+</constraints>
+
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+Building digital identity for global consulting firm with 50K employees and 20K contractors. Need to verify education credentials, certifications, and security clearances. Verifiers include clients, government agencies, and certification bodies. Require high privacy with selective disclosure. Using Ethereum/Polygon, integrating with Workday and Salesforce. $2M budget, 12-month deployment.
+
+### Output
+
+## Identity Architecture
+
+**DID Structure**
 ```
-1. Employee and contractor identities for global consulting firm
-2. Education credentials, certifications, security clearances, employment history
-3. Verifiers: clients, government agencies, certification bodies, background check companies
-4. High privacy - need selective disclosure for different verification contexts
-
-5. Ethereum mainnet with Polygon for lower costs
-6. Yes - must work with mobile wallets (MetaMask, Trust Wallet)
-7. GDPR compliance mandatory, SOC 2 compliance preferred
-8. Integration with Workday HR, Salesforce, Active Directory
-
-9. Enterprise - global consulting with 50,000 employees
-10. 50K employees + 20K contractors, expanding to 100K over 2 years
-11. $2M budget - $1.2M development, $500K compliance, $300K ongoing
-12. 12-month deployment with 3-month pilot
-```
-
-**Assistant Output:**
-
-Here's your comprehensive digital identity management system:
-
-## IDENTITY ARCHITECTURE
-
-### Blockchain Infrastructure Design
-
-```
-Core Components:
-
-1. Identity Registry Contract (Ethereum)
-   - Decentralized identifiers (DIDs)
-   - Public key management
-   - Credential schema registry
-   - Revocation lists
-
-2. Credential Issuer Service (Polygon)
-   - Verifiable credential creation
-   - Digital signature management
-   - Batch issuance optimization
-   - Cost-efficient transactions
-
-3. Verification API Gateway
-   - Real-time credential verification
-   - Selective disclosure protocols
-   - Integration middleware
-   - Audit logging
-```
-
-### DID Architecture
-
-**Employee DID Structure:**
-```
-DID Format: did:ethr:0x...employee_address
-DID Document Contains:
+Format: did:ethr:0x...employee_address
+Document contains:
 - Public keys for verification
 - Service endpoints for credential retrieval
 - Authentication methods
 - Capability invocation rights
-
-Schema Registry:
-- Education credentials (degrees, certifications)
-- Employment history (roles, dates, performance)
-- Security clearances (levels, expiration dates)
-- Professional licenses (status, renewal dates)
 ```
 
-### Credential Schema Design
-
-**Education Credential Example:**
+**Credential Schema - Education Example**
 ```json
 {
   "type": ["VerifiableCredential", "EducationCredential"],
-  "issuer": "did:ethr:0x...university_address",
+  "issuer": "did:ethr:0x...university",
   "credentialSubject": {
-    "id": "did:ethr:0x...employee_address",
+    "id": "did:ethr:0x...employee",
     "degree": "Master of Computer Science",
     "institution": "Stanford University",
-    "graduationDate": "2020-06-15",
-    "gpa": "3.8" // Optional selective disclosure
+    "graduationDate": "2020-06-15"
   },
   "proof": {
     "type": "EcdsaSecp256k1Signature2019",
-    "verificationMethod": "did:ethr:0x...university_key",
-    "proofValue": "0x..."
+    "verificationMethod": "did:ethr:0x...university_key"
   }
 }
 ```
 
-## PRIVACY FRAMEWORK
+## Privacy Framework
 
-### Zero-Knowledge Proof Implementation
+**Selective Disclosure Levels**
+- Level 1: Credential validity only (no personal data)
+- Level 2: Boolean attribute verification ("has security clearance")
+- Level 3: Specific field disclosure with user consent
+- Level 4: Zero-knowledge proofs (range proofs, set membership)
 
-**Selective Disclosure Features:**
-```
-Privacy Levels:
-
-Level 1: Basic Verification
-- Credential exists and is valid
-- Issuer verification only
-- No personal data disclosed
-
-Level 2: Attribute Verification  
-- Specific claims (e.g., "has security clearance")
-- Boolean responses only
-- Age/date range proofs
-
-Level 3: Partial Disclosure
-- Select specific fields to share
-- Granular control per verifier
-- Encrypted non-disclosed fields
-
-Level 4: Zero-Knowledge Proofs
-- Prove qualifications without revealing details
-- Range proofs (e.g., GPA > 3.5)
-- Set membership proofs
-```
-
-### Privacy Controls Implementation
-
-**User Consent Management:**
-```
-Consent Framework:
-1. Purpose specification (why data is needed)
-2. Data minimization (only required fields)
-3. Retention periods (auto-deletion)
-4. Withdrawal mechanisms (revoke access)
-
-Technical Implementation:
-- Smart contract consent records
-- Encrypted credential storage
-- User-controlled decryption keys
-- Audit trail preservation
-```
-
-### GDPR Compliance Automation
-
-**Right to be Forgotten:**
-```
-Implementation Strategy:
+**GDPR Compliance**
 - Off-chain encrypted credential storage
 - On-chain commitment hashes only
 - User-controlled encryption keys
 - Automated data deletion workflows
 
-Compliance Monitoring:
-- Real-time consent tracking
-- Automated compliance reporting
-- Privacy impact assessments
-- Data breach notification system
-```
+## Wallet Integration
 
-## WALLET INTEGRATION
-
-### Mobile Wallet Architecture
-
-**Supported Wallets:**
-```
-Primary: MetaMask Mobile
-- DID management integration
-- Credential presentation flows
-- QR code verification
-- Biometric authentication
-
-Secondary: Trust Wallet
-- Custom credential viewer
-- Secure backup mechanisms
+**Mobile Wallet Features**
+- DID management with biometric auth
+- QR code credential presentation
+- Selective disclosure interface
 - Cross-device synchronization
-- Hardware wallet support
 
-Enterprise: Custom Wallet
-- Company branding
-- Enhanced security features
-- IT department management
-- Bulk deployment tools
-```
+**Verification Flow**
+1. Verifier generates request with required credentials
+2. Employee scans QR, reviews request, selects disclosure level
+3. Wallet creates verifiable presentation with privacy filters
+4. Verifier validates signatures, checks revocation status
 
-### Credential Presentation Flow
+## System Integration
 
-**QR Code Verification Process:**
-```
-Step 1: Verifier Request Generation
-- Verifier creates verification request
-- Specifies required credentials
-- Generates QR code with request
+**Workday Integration**
+- Employee onboarding triggers DID generation
+- Role changes update credentials automatically
+- Offboarding revokes active credentials
 
-Step 2: User Scanning & Consent
-- Employee scans QR with wallet
-- Reviews requested information
-- Selects disclosure level
-- Provides consent confirmation
-
-Step 3: Credential Presentation
-- Wallet creates verifiable presentation
-- Applies privacy filters
-- Signs with user's private key
-- Transmits to verifier
-
-Step 4: Verification & Response
-- Verifier validates signatures
-- Checks revocation status
-- Records verification audit
-- Provides access/approval
-```
-
-## SYSTEM INTEGRATION
-
-### HR System Integration (Workday)
-
-**Automated Credential Issuance:**
-```
-Integration Points:
-
-1. Employee Onboarding
-   - Workday creates employee record
-   - Triggers DID generation
-   - Issues employment credential
-   - Notifies employee wallet
-
-2. Role Changes  
-   - Position updates in Workday
-   - Automatic credential updates
-   - Previous credentials revoked
-   - New access permissions granted
-
-3. Offboarding
-   - Employment credential revocation
-   - Access rights termination
-   - Data retention compliance
-   - Final credential archive
-```
-
-### Salesforce CRM Integration
-
-**Client Verification Workflows:**
-```
-Sales Process Enhancement:
-
-1. Consultant Assignment
-   - Client requests specific expertise
-   - Salesforce queries credential database
-   - Matches consultants to requirements
-   - Provides verification proofs to client
-
-2. Proposal Generation
-   - Automated team credential compilation
-   - Client-specific disclosure levels
-   - Compliance requirement validation
-   - Proposal attachment generation
-```
-
-## VERIFICATION NETWORK
-
-### Trusted Verifier Ecosystem
-
-**Verifier Categories:**
-```
-Tier 1: Government Agencies
-- Security clearance verification
-- Background check companies
-- Regulatory compliance checks
-- High-security protocols
-
-Tier 2: Educational Institutions  
-- Degree verification
-- Certification validation
-- Continuing education tracking
-- Academic integrity checks
-
-Tier 3: Client Organizations
-- Consultant qualification checks
-- Project requirement validation
-- Compliance verification
-- Performance history access
-```
-
-### API Development
-
-**Verification API Endpoints:**
+**Verification API**
 ```javascript
-// Basic credential verification
 GET /api/verify/credential
-{
-  "presentation": "...", 
-  "challenge": "...",
-  "domain": "client.com"
-}
-
-// Bulk employee verification
 POST /api/verify/batch
-{
-  "employees": ["did:ethr:0x...", "did:ethr:0x..."],
-  "requirements": ["security_clearance", "mba"],
-  "client_id": "acme_corp"
-}
-
-// Real-time status check
 GET /api/status/employee/{did}
-{
-  "active": true,
-  "clearance_level": "secret",
-  "certifications_current": true
-}
 ```
 
-## IMPLEMENTATION TIMELINE
+## Implementation Timeline
 
-### Phase 1: Foundation (Months 1-4)
+**Phase 1 (Months 1-4):** Blockchain deployment, core credentials, privacy framework, wallet MVP
 
-**Infrastructure Setup:**
-```
-Month 1: Blockchain deployment
-- Ethereum mainnet contracts
-- Polygon scaling solution
-- Development environment setup
+**Phase 2 (Months 5-8):** Workday/Salesforce integration, verifier network, 1000-employee pilot
 
-Month 2: Core credential system
-- DID generation and management
-- Basic credential issuance
-- Verification proof-of-concept
+**Phase 3 (Months 9-12):** Full rollout, contractor integration, analytics, global expansion
 
-Month 3: Privacy implementation
-- Zero-knowledge proof integration
-- Selective disclosure protocols
-- GDPR compliance framework
+## Cost Breakdown
 
-Month 4: Mobile wallet MVP
-- Basic credential management
-- QR code verification
-- Security audit completion
-```
+- Smart contracts & security audit: $300K
+- Mobile/web applications: $400K
+- Enterprise integration: $350K
+- Privacy & compliance: $150K
+- Ongoing (annual): $300K
 
-### Phase 2: Integration (Months 5-8)
+**Success Metrics:** 99.9% uptime, <2s verification, 80% manual verification reduction, 100% GDPR compliance
 
-**Enterprise System Integration:**
-```
-Month 5: HR system integration
-- Workday API connection
-- Automated credential workflows
-- Employee onboarding automation
-
-Month 6: CRM integration
-- Salesforce credential queries
-- Client verification workflows
-- Proposal generation tools
-
-Month 7: Verifier network
-- Government agency connections
-- Educational institution partnerships
-- Client verification portals
-
-Month 8: Pilot deployment
-- 1,000 employee pilot group
-- Key client verification tests
-- Performance optimization
-```
-
-### Phase 3: Scale & Optimize (Months 9-12)
-
-**Full Deployment:**
-```
-Month 9: Full employee rollout
-- 50,000 employee migration
-- Training and support programs
-- Help desk establishment
-
-Month 10: Contractor integration
-- 20,000 contractor onboarding
-- Third-party verifier expansion
-- International compliance setup
-
-Month 11: Advanced features
-- AI-powered fraud detection
-- Automated compliance reporting
-- Analytics dashboard launch
-
-Month 12: Global expansion
-- Multi-region deployment
-- Local compliance adaptation
-- Performance monitoring
-```
-
-## COST BREAKDOWN
-
-### Development Costs ($1.2M)
-
-```
-Smart Contract Development: $300K
-- Core identity contracts
-- Privacy protocol implementation
-- Security audit and testing
-
-Mobile Application: $400K  
-- iOS/Android wallet apps
-- Web portal development
-- UX/UI design and testing
-
-Enterprise Integration: $350K
-- Workday/Salesforce connectors
-- API development and testing
-- Custom middleware development
-
-Privacy & Compliance: $150K
-- GDPR compliance automation
-- Zero-knowledge proof implementation
-- Legal review and documentation
-```
-
-### Ongoing Costs ($300K annually)
-
-```
-Blockchain Transaction Fees: $120K
-- Ethereum mainnet transactions
-- Polygon scaling costs
-- Gas optimization strategies
-
-Infrastructure: $100K
-- Cloud hosting and CDN
-- Database and backup systems
-- Monitoring and alerting
-
-Support & Maintenance: $80K
-- Help desk operations
-- System monitoring
-- Regular security updates
-```
-
-## SUCCESS METRICS
-
-### Technical Performance
-- **System Uptime**: >99.9% availability
-- **Verification Speed**: <2 seconds per credential
-- **Transaction Costs**: <$0.10 per credential operation
-- **Security**: Zero credential forgeries detected
-
-### Business Impact
-- **Time Savings**: 80% reduction in manual verification
-- **Compliance**: 100% GDPR compliance achievement
-- **User Adoption**: >95% employee wallet activation
-- **Client Satisfaction**: >90% verifier satisfaction rating
-
-### Privacy Protection
-- **Data Minimization**: 70% reduction in shared PII
-- **User Control**: 100% user-controlled disclosures
-- **Breach Prevention**: Zero unauthorized data access
-- **Consent Management**: 100% documented consent trails
-
-This system provides enterprise-grade digital identity management with military-level security and privacy protection while maintaining seamless user experience.
+---
 
 ## Related Prompts
-
-- [Smart Contract Security Auditor](../smart-contracts/smart-contract-security-audit-platform.md)
+- [Smart Contract Security Audit Platform](../smart-contracts/smart-contract-security-audit-platform.md)
 - [Enterprise Blockchain Integration Platform](../blockchain-development/enterprise-blockchain-integration-platform.md)
-- [DAO Creator and Management Guide](../dao-governance/decentralized-autonomous-organization-platform.md)
+- [Cross-Chain Interoperability Bridge Platform](../cross-chain/cross-chain-interoperability-bridge-platform.md)

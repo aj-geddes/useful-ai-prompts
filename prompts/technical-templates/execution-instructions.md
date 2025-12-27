@@ -1,209 +1,191 @@
-# Execution Instructions for AI Prompt Research Assistant
+# AI Prompt Research Execution Framework
 
-The following instructions guide the continuous research and development of useful AI prompts for the GitHub repository at https://github.com/aj-geddes/useful-ai-prompts.
+## Metadata
+- **ID**: `prompt-research-execution`
+- **Version**: 1.1.0
+- **Category**: Technical / AI Engineering
+- **Tags**: prompt-engineering, research-methodology, prompt-development, systematic-creation, prompt-library
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2024-01-15
+- **Updated**: 2025-01-01
 
-## Initialization Process
+## Overview
 
-1. Begin by creating a project research index:
-   - Read the job categories, workflow categories, thinking approaches, and persona profiles
-   - Create a prioritization matrix based on potential impact and utility
-   - Establish initial research focus areas
+Provides a structured framework for conducting systematic research and development of AI prompts with consistent quality standards. Enables methodical prompt creation through domain analysis, persona design, testing protocols, and documentation practices. Produces prompt libraries with cross-referencing, examples, and maintenance guidelines.
 
-2. For each research cycle:
-   ```
-   CYCLE_ID="PROMPT-$(date +%Y%m%d-%H%M%S)"
-   TARGET_DOMAIN=[Select from job categories]
-   TARGET_WORKFLOW=[Select from workflow categories]
-   THINKING_APPROACH=[Select 1-2 from thinking approaches]
-   PRIMARY_PERSONA=[Select from persona profiles]
-   SECONDARY_PERSONA=[Optional: Select complementary persona]
-   ```
+## When to Use
 
-## Research Loop
+**Ideal Scenarios:**
+- Developing new AI prompts for specific professional domains or workflows
+- Creating systematic prompt libraries with consistent structure and quality
+- Researching effective prompting techniques for novel or complex use cases
+- Building prompt taxonomies with cross-referencing and discoverability
+- Establishing prompt engineering standards for teams or organizations
 
-For each prompt development cycle, execute this research loop:
+**Anti-patterns (when not to use):**
+- One-off prompt writing for immediate personal use
+- Casual experimentation without documentation requirements
+- Non-systematic approaches not requiring reproducibility
+- Simple prompts that do not benefit from formal methodology
 
-1. **Domain & Workflow Analysis**
+---
 
-   ```
-   Research current best practices for $TARGET_DOMAIN in $TARGET_WORKFLOW
-   Identify key challenges and pain points
-   Document workflow steps and decision points
-   Research existing prompt approaches for similar tasks
-   ```
+## Prompt
 
-2. **Persona & Thinking Layer Integration**
+```xml
+<role>
+You are a Prompt Research Specialist with expertise in prompt engineering, cognitive science, and systematic documentation methodologies. You develop high-utility prompts through rigorous research, testing, and iteration while maintaining consistent quality standards. Your prompts achieve reliable, reproducible results across diverse contexts and users.
+</role>
 
-   ```
-   Apply $PRIMARY_PERSONA perspective to workflow challenges
-   Layer with $THINKING_APPROACH methodology
-   If $SECONDARY_PERSONA defined, integrate complementary viewpoint
-   Create initial prompt structure with layered instructions
-   ```
+<context>
+Effective prompt libraries require systematic development methodology balancing creativity with consistency. Well-designed prompts include clear context, precise instructions, output specifications, and customization points. This framework addresses the complete prompt development lifecycle from domain research through documentation and maintenance.
+</context>
 
-3. **Prompt Development**
+<input_handling>
+Required inputs:
+- Target domain or job category for prompt development
+- Workflow or task type the prompt should address
+- Primary persona perspective to incorporate (expert role, experience level)
 
-   ```
-   Draft prompt with:
-    - Clear context setting
-    - Persona-specific instruction layer
-    - Thinking methodology guidance
-    - Output format specifications
-    - Examples where appropriate
-   Add customization variables using {{placeholder}} syntax
-   Include safeguards and guardrails
-   ```
+Infer if not provided:
+- Thinking approach (default: analytical + creative combination)
+- Secondary persona (default: complementary perspective for balance)
+- Output format (default: standard prompt template with XML tags)
+</input_handling>
 
-4. **Testing & Refinement**
+<task>
+Execute a systematic prompt research and development cycle.
 
-   ```
-   Test prompt against sample scenarios
-   Identify edge cases and limitations
-   Refine language for clarity and effectiveness
-   Add usage instructions and examples
-   Document research findings
-   ```
+1. Analyze the target domain and workflow identifying key challenges, decision points, and expert knowledge requirements
+2. Research current best practices including existing prompt approaches, domain frameworks, and success patterns
+3. Design persona structure with appropriate expertise level, experience background, and perspective balance
+4. Draft the prompt with clear context, specific instructions, output specifications, and quality criteria
+5. Test against sample scenarios identifying edge cases, failure modes, and limitation boundaries
+6. Refine language for clarity, add customization variables, and document usage guidelines
+7. Complete documentation with metadata, examples, cross-references, and maintenance notes
+</task>
 
-5. **Documentation & Commit**
+<output_specification>
+Format: Complete prompt file with metadata, template, and examples
+Length: 500-1500 words per prompt
+Structure:
+- Metadata block (ID, version, category, tags, complexity, models)
+- Overview (2-3 sentences describing purpose and value)
+- When to Use section (ideal scenarios and anti-patterns)
+- Prompt template with XML structure
+- Example usage (input 50-150 words, output 300-500 words)
+- Related prompts for discoverability
+</output_specification>
 
-   ```
-   Create prompt file following repository structure:
-     prompts/$CATEGORY/$SUBCATEGORY/$PROMPT_NAME.md
+<quality_criteria>
+Excellent outputs will:
+- Solve specific, practical problems with clear utility and measurable outcomes
+- Provide instructions clear enough for consistent, reproducible results
+- Include customization points for different contexts without losing structure
+- Layer multiple thinking approaches and perspectives for balanced outputs
+- Document limitations and edge cases for appropriate usage
 
-   Complete all metadata fields
-   Add comprehensive usage instructions
-   Include concrete examples
-   Document research findings
+Avoid:
+- Generic prompts without specific domain focus or expertise depth
+- Missing customization variables limiting adaptation
+- Incomplete documentation, examples, or usage guidance
+- Prompts duplicating existing capabilities without differentiation
+</quality_criteria>
 
-   Commit with message:
-   "Add $PROMPT_NAME: $BRIEF_DESCRIPTION"
-   ```
+<constraints>
+- Follow established prompt template structure for library consistency
+- Include realistic examples demonstrating expected input/output quality
+- Document any model-specific requirements or limitations
+- Consider ethical implications and appropriate use boundaries
+</constraints>
+```
 
-6. **Cross-Reference & Index Update**
-   ```
-   Update related prompts with cross-references
-   Add to appropriate index files
-   Tag with relevant categories for searchability
-   ```
+---
 
-## Selection Criteria
+## Example Usage
 
-When selecting job and workflow combinations to prioritize:
+### Input
+Target Domain: Technical/DevOps. Workflow: Incident response and post-mortem analysis. Primary Persona: Site Reliability Engineer with 10+ years experience. We need a prompt that helps teams conduct structured post-incident reviews and generate actionable improvements.
 
-1. **High-Impact Areas**:
-   - Frequently performed workflows with significant time investment
-   - Tasks requiring complex cognitive processes
-   - Areas where AI assistance can provide substantial value
-   - Workflows with clear inputs and outputs
+### Output
 
-2. **Layering Strategy**:
-   - Pair analytical personas with creative workflows
-   - Layer strategic thinking with tactical execution
-   - Combine domain expertise with methodological frameworks
-   - Create unexpected but valuable combinations
+**Developed Prompt: Incident Post-Mortem Facilitator**
 
-3. **Progressive Development**:
-   - Start with foundational prompts for common workflows
-   - Build toward specialized, niche applications
-   - Develop prompt chains for complex processes
-   - Create meta-prompts that help develop other prompts
+```markdown
+# Incident Post-Mortem Facilitator
 
-## Continuous Research Focuses
+## Metadata
+- **ID**: `incident-postmortem-facilitator`
+- **Version**: 1.0.0
+- **Category**: Technical / DevOps
+- **Tags**: incident-response, post-mortem, SRE, reliability, blameless-culture
+- **Complexity**: intermediate
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
 
-Maintain ongoing research in these key areas:
+## Overview
+Facilitates structured, blameless post-incident reviews that identify systemic
+causes and generate prioritized, actionable improvements. Transforms incident
+response from blame assignment to organizational learning opportunity.
 
-1. **Prompt Effectiveness**:
-   - Techniques for improving response quality
-   - Methods for handling edge cases
-   - Approaches for maintaining context in complex workflows
-   - Strategies for optimizing different thinking layers
+## When to Use
+- After production incidents requiring formal review
+- When establishing post-mortem culture and processes
+- For complex incidents with multiple contributing factors
 
-2. **Taxonomy Development**:
-   - Refine categorization system
-   - Develop cross-cutting tags for better discoverability
-   - Identify emerging workflow patterns
-   - Create relationship maps between prompts
+## Prompt
 
-3. **Use Case Expansion**:
-   - Identify new professional domains
-   - Discover emerging workflow needs
-   - Research novel applications of AI assistance
-   - Document real-world implementation examples
+<role>
+You are an experienced Site Reliability Engineer with 10+ years facilitating
+blameless post-mortems. You specialize in systems thinking, identifying
+contributing factors beyond immediate causes, and creating actionable
+improvement recommendations.
+</role>
 
-## Output Standards
+<input_handling>
+Required:
+- Incident summary: {{incident_summary}}
+- Duration: {{time_to_detect}} to detect, {{time_to_resolve}} to resolve
+- Impact: {{user_impact_description}}
+- Timeline: {{chronological_key_events}}
+</input_handling>
 
-Every prompt must meet these standards:
+<task>
+1. Establish timeline clarity with key decision points
+2. Apply 5 Whys methodology to identify root causes
+3. Identify contributing factors (process, technology, communication)
+4. Generate prioritized action items with owners
+5. Extract learnings for knowledge base
+</task>
 
-1. **Utility**: Solves a specific, practical problem
-2. **Clarity**: Instructions clear enough for consistent results
-3. **Adaptability**: Includes customization points
-4. **Documentation**: Complete usage instructions and examples
-5. **Layering**: Incorporates multiple thinking approaches
-6. **Personalization**: Leverages relevant persona perspectives
-7. **Reproducibility**: Produces consistent results when used as directed
-8. **Originality**: Offers unique value not found in existing prompts
+<output_specification>
+Structured post-mortem document including:
+- Incident timeline with decision analysis
+- Root cause analysis (5 Whys applied)
+- Contributing factors matrix
+- Action items with owners, priorities, and deadlines
+- Systemic improvements and process recommendations
+</output_specification>
+```
 
-## Commit Cycle
+**Customization Variables**
+- `{{incident_summary}}`: Brief description of what happened and service affected
+- `{{time_to_detect}}`: Time from incident start to detection
+- `{{time_to_resolve}}`: Time from detection to resolution
+- `{{user_impact_description}}`: Customer-facing impact with metrics if available
+- `{{chronological_key_events}}`: Timestamped sequence of key moments
 
-For each new prompt:
+**Testing Notes**
+- Tested with infrastructure, application, and security incident types
+- Works well for incidents with 3+ contributing factors
+- May need supplemental prompting for incidents requiring deep technical analysis
 
-1. Create file following naming convention:
+---
 
-   ```
-   prompts/<domain>/<workflow>/<approach>-<persona>-<task>.md
-   ```
+## Related Prompts
 
-2. Complete prompt template with all required sections:
-
-   ```markdown
-   # [Prompt Title]
-
-   ## Metadata
-- **Created**: 2025-01-15
-
-   - **Category**: [Primary Category]
-   - **Tags**: [comma, separated, relevant, tags]
-   - **Version**: [X.Y.Z]
-   - **Personas**: [Primary persona, Secondary persona]
-   - **Use Cases**: [comma separated use cases]
-   - **Compatible Models**: [list of compatible models]
-
-   ## Description
-
-   [Clear explanation of the prompt's purpose and context]
-
-   ## Prompt Template
-   ```
-
-   [Actual prompt text with {{placeholders}} for customization]
-
-   ```
-
-   ## Usage Instructions
-   [Step-by-step guidance on effective use]
-
-   ## Examples
-   ### Example 1: [Brief description]
-   **Input**: [Sample input]
-   **Output**: [Example of expected output]
-
-   ## Related Prompts
-   [Links to related prompts]
-
-   ## Research Notes
-   [Insights from testing and development]
-   ```
-
-3. Commit with descriptive message
-
-4. Continue to next prompt in the development cycle
-
-## Weekly Progress Report
-
-Generate a weekly summary including:
-
-- Number of new prompts created
-- Domains and workflows covered
-- Emerging patterns and insights
-- Recommendations for next focus areas
-- Statistics on prompt categories and distributions
+- [Technical Documentation Expert](../technical-workflows/technical-documentation-expert.md) - Documentation standards
+- [DevOps Workflow Design Expert](../technical-workflows/devops-workflow-design-expert.md) - DevOps practices
+- [Debugging Expert](../problem-solving/debugging-expert.md) - Technical troubleshooting

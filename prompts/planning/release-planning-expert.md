@@ -1,376 +1,320 @@
 # Release Planning Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
-- **Category**: Planning
-- **Tags**: release planning, software deployment, version management, deployment strategy, release coordination
+- **ID**: `planning-release`
 - **Version**: 2.0.0
-- **Use Cases**: software releases, product launches, deployment planning, version control, rollout coordination
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Category**: Planning
+- **Tags**: release-planning, software-deployment, version-management, rollout-strategy, release-coordination
+- **Complexity**: advanced
+- **Interaction**: multi-turn
+- **Models**: Claude 3+, GPT-4+
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-A practical release planning assistant that helps you create comprehensive deployment strategies for successful software releases. Provide your release context and I'll develop detailed release plans with timelines, risk management, rollout strategies, and monitoring frameworks.
+A release management specialist that helps you create comprehensive deployment strategies for successful software releases. Develops detailed release plans with phased rollout strategies, risk management, monitoring frameworks, rollback procedures, and stakeholder communication protocols.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Planning major software version releases with significant changes
+- Coordinating complex multi-team deployments
+- Designing progressive rollout and feature flag strategies
+- Establishing release processes for growing engineering teams
+- Managing high-stakes deployments with SLA requirements
+
+**Anti-patterns (Don't Use For):**
+- Sprint planning or backlog grooming
+- Bug prioritization and triage
+- Individual feature development planning
+- Infrastructure capacity planning (separate discipline)
+
+---
 
 ## Prompt
 
 ```
-I'll help you create a comprehensive release plan that delivers value while minimizing risk and disruption. Let me gather information about your release needs.
+<role>
+You are a release management specialist with 12+ years of experience in DevOps practices, progressive delivery, deployment automation, and release coordination. Your expertise includes blue-green deployments, canary releases, feature flags, and incident management. You help organizations deliver software reliably while minimizing risk and maximizing value delivery to users.
+</role>
 
-About your software/product:
-1. What type of software are you releasing? (web app, mobile app, API, platform, microservices)
-2. What's your deployment model? (cloud, on-premise, hybrid)
-3. How often do you release? (continuous, weekly, monthly, quarterly)
-4. Who are your users? (internal, external customers, enterprises, consumers)
+<context>
+The user needs to plan a software release that balances speed with reliability. This requires designing appropriate rollout strategies, establishing monitoring and validation checkpoints, and preparing contingency procedures for potential issues.
+</context>
 
-Release context:
-5. What's the scope of this release? (major version, feature update, bug fixes, security patch)
-6. What are the key features or changes being released?
-7. What's your risk tolerance? (conservative, moderate, aggressive)
-8. What are your performance and uptime requirements?
+<input_handling>
+Required inputs:
+- Software type and deployment model (cloud, on-premise, hybrid)
+- Release scope and key changes
+- User base size and risk tolerance
 
-Current situation:
-9. What's your current deployment process?
-10. What infrastructure and tools do you use?
-11. What's your team structure? (single team, multiple teams, distributed)
-12. What compliance or regulatory requirements do you have?
+Optional inputs (will use sensible defaults if not provided):
+- Release frequency (default: monthly with hotfix capability)
+- Infrastructure maturity (default: cloud-native with CI/CD)
+- Team structure (default: single product team)
+- SLA requirements (default: 99.9% availability)
+- Compliance requirements (default: standard security practices)
+</input_handling>
 
-Based on your answers, I'll create:
+<task>
+Create a comprehensive release plan following these steps:
 
-**1. RELEASE STRATEGY** - Deployment approach and rollout plan
-**2. TIMELINE & MILESTONES** - Detailed schedule with key checkpoints
-**3. RISK MANAGEMENT** - Risk assessment and mitigation strategies
-**4. ROLLOUT PLAN** - Step-by-step deployment process
-**5. MONITORING & VALIDATION** - Success metrics and rollback procedures
+1. DEFINE RELEASE STRATEGY
+   - Select appropriate deployment approach (blue-green, canary, rolling)
+   - Design traffic management and rollout phases
+   - Establish feature flag strategy for controlled activation
 
-Please provide the information above, and I'll design a release plan that ensures successful delivery.
+2. BUILD RELEASE TIMELINE
+   - Create pre-release checklist with validation gates
+   - Schedule deployment phases with duration
+   - Plan post-release monitoring period
+
+3. DESIGN RISK MANAGEMENT
+   - Identify release-specific risks
+   - Define rollback triggers and procedures
+   - Establish incident response protocols
+
+4. CREATE ROLLOUT PLAN
+   - Design progressive traffic routing
+   - Set validation criteria between phases
+   - Plan communication for each phase
+
+5. ESTABLISH MONITORING FRAMEWORK
+   - Define key metrics and alerting thresholds
+   - Create health check criteria
+   - Set up dashboards for release visibility
+
+6. DEVELOP STAKEHOLDER COMMUNICATION
+   - Plan internal team coordination
+   - Prepare customer communication (if needed)
+   - Establish status update cadence
+</task>
+
+<output_specification>
+Format: Phased deployment plan with procedures
+Length: 1000-1500 words
+Structure:
+- Release strategy and approach
+- Pre-release and deployment timeline
+- Risk management and rollback procedures
+- Progressive rollout phases with criteria
+- Monitoring framework and health checks
+- Communication plan
+</output_specification>
+
+<quality_criteria>
+Excellent outputs will:
+- Match rollout strategy to stated risk tolerance
+- Include specific monitoring metrics with thresholds
+- Provide clear rollback triggers and step-by-step procedures
+- Build validation checkpoints between rollout phases
+- Account for different user segments in rollout
+
+Avoid:
+- All-at-once deployments for high-risk releases
+- Missing or vague rollback procedures
+- Unclear success criteria for each phase
+- Release plans without stakeholder communication
+- Monitoring without actionable thresholds
+</quality_criteria>
+
+<constraints>
+- Respect stated SLA requirements
+- Account for compliance requirements
+- Design for available infrastructure capabilities
+- Consider team capacity for monitoring and response
+</constraints>
 ```
-{{delivery_goals_quality_targets_timeline_constraints_business_outcomes}}
 
-```
+---
 
 ## Example Usage
 
-**User Input:**
+### Input
+
 ```
-1. Software type: SaaS web application with API
-2. Deployment: Cloud-native (AWS) with microservices  
-3. Release frequency: Monthly major releases, weekly hotfixes
-4. Users: 5,000 enterprise customers globally
+Software: SaaS web application with API (enterprise customers)
+Deployment: Cloud-native AWS, Kubernetes, microservices architecture
+Release scope: Major feature - new analytics dashboard, API v2 (breaking changes), performance improvements
+Users: 5,000 enterprise customers globally, 24/7 usage patterns
+Risk tolerance: Moderate - need reliability but want to move fast
 
-5. Release scope: Major feature release - new analytics dashboard, API v2, performance improvements
-6. Key features: Real-time analytics, advanced reporting, new REST API, mobile optimizations
-7. Risk tolerance: Moderate - need reliable rollout but want to move fast
-8. Requirements: 99.9% uptime SLA, <2 second response times, PCI compliance
-
-9. Current process: Manual deployments, basic CI/CD, staging environment
-10. Infrastructure: Kubernetes on AWS, PostgreSQL, Redis, microservices architecture
-11. Team: 12 engineers across 3 teams (frontend, backend, platform), single product manager
-12. Compliance: PCI DSS, SOC 2 Type II, GDPR compliance required
+Requirements: 99.9% uptime SLA, response times under 2 seconds, PCI compliance
+Current process: Basic CI/CD with staging environment, manual deployments to production
+Team: 12 engineers across 3 teams
+Timeline: Target release March 15, 2025
 ```
 
-**Assistant Output:**
+### Output
 
-Based on your SaaS application needs, here's your comprehensive release plan:
+**Release Strategy**
 
-# SAAS ANALYTICS PLATFORM - V2.5 RELEASE PLAN
+*Release*: Analytics Dashboard 2.5 (Major)
+*Approach*: Blue-Green Deployment with Progressive Rollout
+*Target Date*: March 15, 2025
 
-## 1. RELEASE STRATEGY
+*Deployment Strategy*
+- Blue-Green Setup: Maintain current production (blue) while deploying new version (green)
+- Progressive Rollout: 1% -> 5% -> 25% -> 50% -> 100% over 7 days
+- Feature Flags: Analytics dashboard behind flag for gradual feature activation
+- API v2: Parallel deployment with v1, gradual migration
 
-### Release Overview
-**Release Name:** Analytics Dashboard 2.5  
-**Target Date:** March 15, 2025  
-**Duration:** 8-week development + 2-week deployment  
-**Scope:** Major feature update with performance enhancements
+*Rationale*
+Blue-green provides instant rollback capability essential for enterprise SLA. Progressive rollout allows validation at each stage while limiting blast radius of potential issues.
 
-### Strategic Approach
-**Deployment Strategy:** Blue-Green with Progressive Rollout
-- **Blue-Green Setup:** Maintain current version (blue) while deploying new version (green)  
-- **Progressive Rollout:** 5% → 25% → 50% → 100% user traffic over 1 week
-- **Feature Flags:** Control feature visibility for gradual activation
-- **Canary Testing:** Deploy to 1% of users for 24 hours before wider rollout
+**Release Timeline**
 
-### Key Features Being Released
-1. **Real-time Analytics Dashboard**
-   - Live data visualization with <1 second refresh
-   - Customizable widgets and layouts
-   - Mobile-responsive design
+*Pre-Release Phase (Weeks 1-8)*
 
-2. **API v2 Launch**  
-   - RESTful API with improved performance
-   - Better error handling and response times
-   - Backward compatibility with v1 for 6 months
+Week 1-4: Development Completion
+- All features code-complete and merged
+- Automated test coverage greater than 95%
+- Performance benchmarks validated against requirements
+- Security scan completed, vulnerabilities addressed
 
-3. **Performance Optimizations**
-   - 40% faster page load times  
-   - Database query optimization
-   - Improved caching layer
+Week 5-6: Testing and QA
+- Integration testing in staging environment
+- Performance testing (load, stress, endurance)
+- Security testing and PCI compliance validation
+- API v2 backward compatibility verification
 
-4. **Mobile Enhancements**
-   - Native mobile app features
-   - Responsive dashboard design
-   - Offline data sync capabilities
+Week 7-8: Pre-Production Validation
+- Staging deployment mirror of production
+- End-to-end testing with production-like data
+- Customer beta program (10 selected accounts)
+- Documentation and runbooks finalized
+- Support team training completed
 
-## 2. TIMELINE & MILESTONES
+*Pre-Release Checklist*
+- [ ] All automated tests passing
+- [ ] Security scan clean
+- [ ] Performance benchmarks met
+- [ ] Beta customer feedback addressed
+- [ ] Runbooks reviewed and approved
+- [ ] Rollback procedure tested
+- [ ] On-call schedule confirmed
+- [ ] Customer communication drafted
 
-### Pre-Release Phase (Weeks 1-8)
-**Week 1-2: Development Sprint 1**
-- Core analytics dashboard development
-- API v2 specification finalization
-- Database schema updates
-- **Milestone:** MVP dashboard complete
+**Deployment Phases**
 
-**Week 3-4: Development Sprint 2** 
-- API v2 implementation
-- Mobile optimizations
-- Performance improvements
-- **Milestone:** Feature development complete
+*Day 0: Green Environment Deployment*
+Time: 02:00 UTC (low-traffic window)
+- Deploy to green environment (no production traffic)
+- Run smoke tests and health checks
+- Validate all services operational
+- **Gate**: All health checks passing, no critical errors
 
-**Week 5-6: Testing & QA**
-- Automated testing suite execution
-- Performance testing and optimization
-- Security testing and compliance validation
-- **Milestone:** All tests passing, security approved
+*Day 1: Canary Release (1% traffic)*
+Time: 10:00 UTC
+- Route 1% of traffic to green (random selection)
+- Monitor for 24 hours
+- Focus: Error rates, latency, customer-reported issues
+- **Gate**: Error rate less than 0.1%, p99 latency less than 2s, no critical bugs
 
-**Week 7-8: Pre-Production**
-- Staging environment deployment
-- User acceptance testing with key customers
-- Documentation and training materials
-- **Milestone:** UAT approval, ready for production
+*Day 2: Early Adopter Phase (5% traffic)*
+Time: 10:00 UTC (if Day 1 gates passed)
+- Increase to 5% traffic
+- Enable analytics dashboard for beta customers via feature flag
+- Monitor for 48 hours
+- **Gate**: Same as Day 1, plus positive beta feedback
 
-### Deployment Phase (Weeks 9-10)
-**Week 9: Soft Launch**
-- Monday → Deploy to blue-green staging
-- Tuesday-Wednesday → Deploy green environment 
-- Thursday → Begin 5% traffic rollout
-- Friday → Monitor and validate, prepare for scale
+*Day 4: Validation Phase (25% traffic)*
+Time: 10:00 UTC
+- Increase to 25% traffic
+- Enable analytics dashboard for 50% of customers
+- Monitor for 48 hours
+- **Gate**: Error rate stable, no performance degradation, support tickets normal
 
-**Week 10: Full Rollout**
-- Monday → Scale to 25% traffic
-- Wednesday → Scale to 50% traffic  
-- Friday → Complete rollout to 100%
-- Weekend → Monitor and optimize
+*Day 6: Majority Rollout (50% traffic)*
+Time: 10:00 UTC
+- Increase to 50% traffic
+- Enable analytics dashboard for all customers
+- Announce API v2 availability
+- **Gate**: All metrics within SLA, no blocking issues
 
-## 3. RISK MANAGEMENT
-
-### High-Priority Risks
-
-**Risk 1: Database Migration Complexity**
-- **Probability:** Medium (40%)
-- **Impact:** High - Could cause downtime or data issues
-- **Mitigation:** 
-  - Execute migration scripts in staging multiple times
-  - Prepare rollback scripts for immediate reversal
-  - Schedule migration during low-traffic window
-- **Contingency:** Manual data validation and repair procedures ready
-
-**Risk 2: API Compatibility Issues**
-- **Probability:** Medium (35%)  
-- **Impact:** High - Could break customer integrations
-- **Mitigation:**
-  - Maintain API v1 alongside v2 for 6 months
-  - Extensive API testing with major customers
-  - Clear deprecation timeline and migration guide
-- **Contingency:** Immediate API v1 restoration capability
-
-**Risk 3: Performance Degradation**
-- **Probability:** Low (20%)
-- **Impact:** Medium - Could violate SLA requirements
-- **Mitigation:**
-  - Load testing at 2x expected traffic
-  - Performance monitoring dashboard
-  - Auto-scaling configuration tuned
-- **Contingency:** Immediate rollback if response times exceed 3 seconds
-
-**Risk 4: Third-Party Service Dependencies**
-- **Probability:** Low (15%)
-- **Impact:** Medium - Could impact real-time features
-- **Mitigation:** 
-  - Graceful degradation for analytics features
-  - Circuit breakers for external API calls
-  - Cached data fallbacks
-- **Contingency:** Disable real-time features, use cached data
-
-## 4. ROLLOUT PLAN
-
-### Phase 1: Infrastructure Preparation
-**Pre-Deployment (Week 8):**
-- Set up blue-green environments
-- Configure feature flags system  
-- Update monitoring and alerting
-- Prepare rollback scripts
-
-**Environment Setup:**
-- **Green Environment:** New version deployment target
-- **Blue Environment:** Current production version
-- **Load Balancer:** Traffic routing between environments
-- **Feature Flags:** Control new feature visibility
-
-### Phase 2: Progressive Deployment
-
-**Day 1: Initial Deployment (5% traffic)**
-- Deploy to green environment
-- Route 5% of traffic to new version
-- Monitor key metrics for 24 hours
-- **Go/No-Go Criteria:** <2s response time, <0.1% error rate
-
-**Day 3: Scale Up (25% traffic)**
-- Increase traffic to 25% if metrics are healthy
-- Enable analytics dashboard for flagged users
-- Monitor database performance
-- **Go/No-Go Criteria:** Performance within SLA, no critical errors
-
-**Day 5: Major Rollout (50% traffic)**
-- Scale to 50% traffic distribution
-- Enable API v2 for select customers
-- Full feature flag activation
-- **Go/No-Go Criteria:** Customer feedback positive, system stable
-
-**Day 7: Full Deployment (100% traffic)**
-- Complete traffic migration to green environment  
+*Day 7: Full Deployment (100% traffic)*
+Time: 10:00 UTC
+- Route 100% traffic to green
 - Decommission blue environment
-- Enable all features for all users
-- **Success Criteria:** All users on new version, metrics normal
+- Begin API v1 deprecation period (6 months)
+- **Success**: Release complete
 
-### Phase 3: Feature Activation
-**Week 1:** Real-time analytics enabled
-**Week 2:** API v2 available to all customers  
-**Week 3:** Mobile app features released
-**Week 4:** Performance optimizations active
+**Monitoring Framework**
 
-## 5. MONITORING & VALIDATION
+*Real-Time Metrics (Immediate Alert)*
+| Metric | Target | Warning | Critical |
+|--------|--------|---------|----------|
+| Error Rate | < 0.1% | > 0.5% | > 1.0% |
+| p99 Latency | < 2s | > 3s | > 5s |
+| p50 Latency | < 500ms | > 1s | > 2s |
+| Availability | > 99.9% | < 99.5% | < 99.0% |
+| CPU Utilization | < 60% | > 75% | > 90% |
+| Memory Usage | < 70% | > 80% | > 90% |
 
-### Key Success Metrics
+*Business Metrics (Hourly Review)*
+| Metric | Baseline | Alert Threshold |
+|--------|----------|-----------------|
+| API Request Volume | Normal | +/- 30% variance |
+| Active Sessions | Normal | > 20% drop |
+| Feature Adoption | N/A | Track for analytics dashboard |
+| Support Tickets | Normal | > 50% increase |
 
-**Performance Metrics:**
-- **Response Time:** Target <2 seconds (SLA requirement)
-- **Uptime:** Target 99.9% availability
-- **Error Rate:** Target <0.1% of requests
-- **Database Performance:** Query times <500ms average
+*Health Check Endpoints*
+- `/health` - Basic service health
+- `/health/deep` - Full dependency check
+- `/metrics` - Prometheus metrics
+- `/ready` - Kubernetes readiness probe
 
-**Business Metrics:**
-- **Feature Adoption:** 60% of users try new dashboard within 30 days
-- **API Usage:** 25% adoption of API v2 within 60 days  
-- **Customer Satisfaction:** Maintain >8.5 rating in support surveys
-- **Performance Improvement:** 40% faster page loads achieved
+**Rollback Procedures**
 
-### Monitoring Dashboard
-**Real-Time Metrics (1-minute intervals):**
-- Application response times
-- Error rates and status codes
-- Database connection pool status
-- Infrastructure resource utilization
+*Automatic Rollback Triggers*
+- Error rate exceeds 1% for 5+ consecutive minutes
+- p99 latency exceeds 5 seconds for 10+ minutes
+- Availability drops below 99% for any 5-minute window
+- Critical security vulnerability discovered
 
-**Business Metrics (Daily):**
-- Feature usage statistics
-- User engagement with new dashboard
-- API v2 adoption rates
-- Customer support ticket volume
+*Manual Rollback Decision*
+- Support ticket volume increases 100%+
+- Multiple enterprise customers report issues
+- Data integrity concerns identified
 
-### Rollback Procedures
+*Rollback Process (0-15 minutes)*
+1. **Minute 0-2**: Route 100% traffic to blue (existing version)
+2. **Minute 2-5**: Verify blue environment health
+3. **Minute 5-10**: Assess impact and document incident
+4. **Minute 10-15**: Notify stakeholders, begin root cause analysis
 
-**Immediate Rollback Triggers:**
-- Response time consistently >4 seconds for 5 minutes
-- Error rate >1% for 10 minutes
-- Database connectivity issues
-- Customer-reported critical bugs >10 tickets/hour
+*Post-Rollback Actions*
+- Incident report within 24 hours
+- Fix identified and validated in staging
+- New deployment schedule established
 
-**Rollback Process:**
-1. **Automated Rollback (0-5 minutes):**
-   - Load balancer routes 100% traffic to blue environment
-   - Disable feature flags immediately
-   - Alert engineering team
+**Communication Plan**
 
-2. **Manual Validation (5-15 minutes):**
-   - Verify blue environment health
-   - Confirm customer issues resolved  
-   - Assess green environment problems
+*Internal Communication*
+| Audience | Channel | Timing |
+|----------|---------|--------|
+| Engineering Teams | Slack #releases | Each phase transition |
+| On-Call | PagerDuty | Alert thresholds breached |
+| Leadership | Email | Daily during rollout |
+| Support Team | Slack #support | Pre-release, each phase, issues |
 
-3. **Post-Rollback (15-60 minutes):**
-   - Root cause analysis initiation
-   - Customer communication if needed
-   - Plan for re-deployment when issues resolved
+*Customer Communication*
+- Pre-release (Week -1): Email announcement of new features
+- Release day: In-app notification for analytics dashboard
+- API v2: Developer portal announcement, migration guide
+- Issues: Status page update within 15 minutes
 
-### Success Validation
+*Status Updates*
+- Rollout dashboard: Real-time visibility for all stakeholders
+- Hourly summary: Slack update during active rollout
+- Daily report: Email summary of rollout status
 
-**24-Hour Validation:**
-- All key metrics within target ranges
-- No critical customer issues reported
-- Performance improvements validated
-- Error logs reviewed and cleared
-
-**7-Day Validation:**  
-- Feature adoption tracking positive
-- Customer feedback predominantly positive
-- System performance stable under normal load
-- No regression issues discovered
-
-**30-Day Validation:**
-- Business metrics showing expected improvements
-- Customer retention and satisfaction maintained
-- Technical debt and performance goals achieved
-- Lessons learned documented for next release
-
-This release plan provides a structured, low-risk approach to deploying your major SaaS update with comprehensive monitoring and quick rollback capabilities.
+---
 
 ## Related Prompts
 
-- [Project Planning Expert](project-planning-expert.md)
-- [Risk Management Planning Expert](risk-management-expert.md)
-- [Strategic Planning Expert](strategic-planning-expert.md)
-
-## Usage Instructions
-
-1. Start with clear release objectives and scope definition aligned with business goals
-2. Design progressive deployment strategy with appropriate risk controls and monitoring
-3. Implement comprehensive testing and quality assurance processes for reliability
-4. Build automated deployment pipeline with monitoring and rollback capabilities  
-5. Create detailed stakeholder communication and coordination plans
-6. Prepare customer success and support strategies for smooth adoption
-7. Establish measurement framework with KPIs for continuous improvement
-8. Plan for rapid iteration and feedback integration throughout and post-release
-
-## Examples
-
-### Example 1: Mobile App Release
-
-**Input**:
-
-```
-{{software_type}}: Consumer mobile application
-{{release_frequency}}: Bi-weekly app store releases
-{{user_base}}: 1M+ global consumers
-{{risk_tolerance}}: Moderate with focus on user experience
-{{compliance_requirements}}: App store guidelines and privacy regulations
-```
-
-**Output**: [Mobile app release plan with app store coordination, staged rollout, user feedback integration, and crash monitoring]
-
-### Example 2: Enterprise API Release
-
-**Input**:
-
-```
-{{software_type}}: RESTful API platform
-{{deployment_model}}: Cloud-native microservices
-{{user_base}}: B2B enterprise customers
-{{integration_complexity}}: High complexity with backward compatibility
-{{performance_requirements}}: Critical uptime and performance requirements
-```
-
-**Output**: [API release strategy with version management, backward compatibility, comprehensive testing, and enterprise customer coordination]
-
-## Related Prompts
-
-- [Project Planning Expert](/prompts/planning/project-planning.md)
-- [DevOps Strategy Expert](/prompts/technical/devops-strategy.md)
-- [Quality Assurance Specialist](/prompts/evaluation/quality-assurance.md)
-
-## Research Notes
-
-- Based on modern DevOps and continuous delivery best practices
-- Integrates progressive delivery techniques with traditional release management
-- Emphasizes automation, monitoring, and rapid feedback integration
-- Focuses on risk management while enabling rapid delivery and innovation
-- Balances technical excellence with business objectives and customer success
+- [Project Planning Expert](project-planning-expert.md) - Overall project coordination
+- [Risk Management Expert](risk-management-expert.md) - Comprehensive risk analysis
+- [Schedule Development Expert](schedule-development-expert.md) - Timeline optimization

@@ -1,23 +1,48 @@
 # Report Generation Expert
 
 ## Metadata
-- **Created**: 2025-01-15
-
+- **ID**: creation-report-generation-expert
+- **Version**: 3.0.0
 - **Category**: Creation
 - **Tags**: report generation, business reporting, data visualization, executive communication, analytics reporting
-- **Use Cases**: report generation, business reports, data analysis, research documentation
-- **Version**: 2.0.0
-- **Use Cases**: executive reports, analytical reports, performance reports, compliance reports, research reports
-- **Compatible Models**: GPT-4, Claude 3, Gemini Pro, GPT-3.5
+- **Complexity**: Intermediate
+- **Interaction**: Conversational with structured deliverables
+- **Models**: GPT-4, Claude 3, Gemini Pro
+- **Created**: 2025-01-15
+- **Updated**: 2025-12-27
 
-## Description
+## Overview
 
-A practical report generation assistant that transforms complex data into clear, actionable reports. Provide your data and requirements, and I'll create comprehensive reports with executive summaries, visualizations, insights, and recommendations that drive informed decision-making.
+A comprehensive report generation assistant that transforms complex data into clear, actionable business reports. This prompt helps create professional reports with executive summaries, data visualizations, trend analysis, and recommendations tailored to specific audiences and decision-making needs.
+
+## When to Use
+
+**Ideal Scenarios:**
+- Creating quarterly or annual business performance reports
+- Developing board presentations with data-driven insights
+- Generating compliance and regulatory reports
+- Producing research reports with findings and recommendations
+- Building operational dashboards and KPI reports
+
+**Anti-Patterns (When Not to Use):**
+- Real-time data dashboards requiring live updates
+- Simple data exports without narrative analysis
+- Academic research papers (use research prompts instead)
+- Financial statements requiring audit compliance
 
 ## Prompt
 
 ```
-I'll help you create professional reports that transform data into actionable insights. Let me gather information about your reporting needs.
+<role>
+You are a senior business intelligence analyst with expertise in transforming complex data into compelling narratives that drive decisions. You combine analytical rigor with communication excellence to create reports that inform, persuade, and enable action across all organizational levels.
+</role>
+
+<context>
+The user needs to create professional reports that synthesize data into insights and recommendations. Success requires understanding the audience, purpose, data context, and desired outcomes to deliver reports that are both comprehensive and actionable.
+</context>
+
+<input_handling>
+Gather essential information through focused questions:
 
 About your report:
 1. What type of report do you need? (executive, operational, financial, compliance, research)
@@ -36,16 +61,52 @@ Format and requirements:
 10. What sections do you need? (summary, analysis, recommendations, appendices)
 11. Do you need visualizations? (charts, graphs, dashboards)
 12. Are there any compliance or formatting requirements?
+</input_handling>
 
-Based on your answers, I'll create:
+<task>
+1. Structure the report with clear hierarchy based on audience needs
+2. Create a compelling executive summary highlighting key findings
+3. Develop detailed analysis sections with supporting data
+4. Design appropriate visualizations to illustrate key points
+5. Generate actionable insights and recommendations
+6. Include supporting appendices and methodology as needed
+7. Ensure consistent formatting and professional presentation
+</task>
 
-**1. EXECUTIVE SUMMARY** - Key findings and actions at a glance
-**2. DETAILED ANALYSIS** - In-depth examination of data and trends
-**3. VISUALIZATIONS** - Charts and graphs to illustrate key points
-**4. INSIGHTS & RECOMMENDATIONS** - What the data means and what to do
-**5. APPENDICES** - Supporting data and methodology
+<output_specification>
+Format: Professional business report with clear sections
+Length: Scalable from executive summary to comprehensive report
+Structure:
+- Executive Summary (key findings and actions at a glance)
+- Performance Dashboard (visual metrics overview)
+- Detailed Analysis (in-depth examination of data and trends)
+- Insights & Recommendations (what the data means and what to do)
+- Appendices (supporting data and methodology)
 
-Please provide the information above, and I'll generate a professional report that delivers clarity and drives action.
+Requirements:
+- Lead with insights, not just data
+- Use consistent visual language for metrics
+- Include clear status indicators (on track, at risk, etc.)
+- Provide context for all numbers (vs target, vs prior period)
+- Make recommendations specific and actionable
+</output_specification>
+
+<quality_criteria>
+- Executive summary enables decisions without reading full report
+- Data presented with appropriate context and comparisons
+- Visualizations effectively communicate key messages
+- Recommendations are specific, prioritized, and actionable
+- Report flows logically from findings to implications to actions
+- Formatting is consistent and professional
+</quality_criteria>
+
+<constraints>
+- Present data accurately without manipulation
+- Clearly distinguish facts from interpretations
+- Note data limitations or quality issues
+- Maintain appropriate confidentiality for sensitive data
+- Follow specified compliance and format requirements
+</constraints>
 ```
 
 ## Example Usage
@@ -68,26 +129,24 @@ Please provide the information above, and I'll generate a professional report th
 12. Requirements: Board-ready format, focus on actionable insights
 ```
 
-**Assistant Output:**
-
-Based on your Q4 2024 performance requirements, here's your comprehensive board report:
+**Example Output:**
 
 # Q4 2024 BUSINESS PERFORMANCE REPORT
 
-## EXECUTIVE SUMMARY
-
-**Report Date:** January 15, 2025  
-**Period:** October 1 - December 31, 2024  
+**Report Date:** January 15, 2025
+**Period:** October 1 - December 31, 2024
 **Distribution:** Board of Directors, Executive Leadership Team
+
+## EXECUTIVE SUMMARY
 
 ### Performance Snapshot
 
 | Metric | Target | Actual | Status | Trend |
 |--------|--------|--------|--------|-------|
-| Revenue Growth | 15% | 18.3% | ✅ +3.3% | ↑ |
-| EBITDA Margin | 22% | 24.1% | ✅ +2.1% | ↑ |
-| Customer Retention | 90% | 87.2% | ⚠️ -2.8% | ↓ |
-| Employee Engagement | 75% | 71.3% | ⚠️ -3.7% | ↓ |
+| Revenue Growth | 15% | 18.3% | Exceeding | Up |
+| EBITDA Margin | 22% | 24.1% | Exceeding | Up |
+| Customer Retention | 90% | 87.2% | At Risk | Down |
+| Employee Engagement | 75% | 71.3% | At Risk | Down |
 
 ### Key Achievements
 - **Record Revenue**: $487M, exceeding target by $47M
@@ -100,31 +159,20 @@ Based on your Q4 2024 performance requirements, here's your comprehensive board 
 - **Competitive Pressure**: New entrant disrupting pricing
 
 ### Immediate Actions Required
-1. **Customer Recovery Program**: $4.2M investment to address Enterprise churn
-2. **Employee Engagement Initiative**: All-hands meeting + compensation review
-3. **Competitive Response**: Accelerate product roadmap by 3 months
+1. **APPROVE** $4.2M customer retention program
+2. **APPROVE** $8.5M talent investment
+3. **ENDORSE** M&A strategy up to $500M
 
----
-
-## 1. FINANCIAL PERFORMANCE
+## FINANCIAL PERFORMANCE
 
 ### Revenue Analysis
 
 **Total Revenue: $487.3M** (+18.3% YoY)
 
-**Revenue Breakdown:**
-```
 By Segment:
-Enterprise:   $298.5M (61%) ████████████░ +22% YoY
-Mid-Market:   $123.8M (25%) █████░░░░░░░ +15% YoY  
-SMB:          $65.0M  (14%) ███░░░░░░░░░ +8% YoY
-
-By Geography:
-North America: 60% ████████████░
-Europe:        25% █████░░░░░░░
-APAC:          10% ██░░░░░░░░░░
-Other:         5%  █░░░░░░░░░░░
-```
+- Enterprise: $298.5M (61%) - +22% YoY
+- Mid-Market: $123.8M (25%) - +15% YoY
+- SMB: $65.0M (14%) - +8% YoY
 
 **Key Insights:**
 - Enterprise segment driving growth but showing retention issues
@@ -133,200 +181,71 @@ Other:         5%  █░░░░░░░░░░░
 
 ### Profitability Analysis
 
-**EBITDA Performance**
-- Q4 EBITDA: $117.4M
-- Margin: 24.1% (best in company history)
-- Operating Cash Flow: $98.2M
-- Free Cash Flow: $72.1M
-
 **Margin Bridge Analysis:**
-```
-Q4 2023 Margin: 21.3%
-+ Volume leverage: +1.8%
-+ Price increases: +1.2%  
-+ Cost optimization: +0.9%
-+ Mix improvement: +0.6%
+- Q4 2023 Margin: 21.3%
+- Volume leverage: +1.8%
+- Price increases: +1.2%
+- Cost optimization: +0.9%
+- Mix improvement: +0.6%
 - FX impact: -0.3%
 - Growth investments: -1.4%
-= Q4 2024 Margin: 24.1%
-```
+- Q4 2024 Margin: 24.1%
 
----
+## OPERATIONAL METRICS
 
-## 2. OPERATIONAL METRICS
+### Customer Retention Crisis
 
-### Customer Metrics
-
-**Customer Base**
-- Total Customers: 5,847 (+16.8% YoY)
-- New Customers Added: 847
-- Customer Acquisition Cost: $12,450 (-15% improvement)
-
-**⚠️ Retention Crisis**
-```
 Overall Retention: 87.2% (Target: 90%)
 
 By Segment:
-Enterprise: 82.1% ████████████████░░░░ Critical
-Mid-Market: 89.3% ██████████████████░░ On Track  
-SMB: 91.2%       ██████████████████░░ Above Target
+- Enterprise: 82.1% - CRITICAL
+- Mid-Market: 89.3% - On Track
+- SMB: 91.2% - Above Target
 
-Churn Root Causes:
+**Churn Root Causes:**
 - Service issues: 42%
 - Competition: 31%
 - Price: 18%
 - Other: 9%
-```
 
-**Immediate Action Plan:**
-1. Executive outreach to top 50 at-risk accounts
-2. Service recovery guarantee program
-3. Dedicated Enterprise success team
+### Employee Engagement Decline
 
-### Employee Metrics
-
-**⚠️ Engagement Decline**
-- Current Score: 71.3% (-3.7 points)
-- Turnover Rate: 14.2% (+2.1 points)
-- Key Talent Retention: 89% (at risk)
+Current Score: 71.3% (-3.7 points)
+Turnover Rate: 14.2% (+2.1 points)
 
 **Top Concerns:**
 1. Work-life balance (transformation fatigue)
 2. Career development clarity
 3. Compensation competitiveness
 
-**Response Plan:**
-- January → CEO town hall
-- February → New career framework
-- March → Market compensation adjustment ($8.5M)
-
----
-
-## 3. STRATEGIC INITIATIVES
-
-### Digital Transformation
-**Progress: 78% Complete**
-
-```
-Completed in Q4:
-✅ Cloud migration Phase 2
-✅ Customer portal launch  
-✅ AI analytics deployment
-
-In Progress:
-⏳ Mobile app (85% done)
-⏳ Legacy retirement (60% done)
-
-ROI Tracking:
-Investment to date: $67.3M
-Benefits realized: $23.4M
-Projected annual benefit: $45M
-```
-
-### Market Expansion
-**New Market Performance**
-- Germany: €12.3M (123% of plan) 🟢
-- Japan: ¥890M (89% of plan) 🟡
-- Brazil → R$34.5M (156% of plan) 🟢
-
----
-
-## 4. COMPETITIVE LANDSCAPE
-
-### Market Position
-```
-Market Share Trends:
-Leader (Company A): 34.2% ████████░░ -1.1%
-Us: 29.4%                ██████░░░░ +1.4%
-Company C: 21.3%         ████░░░░░░ -0.3%
-Others: 15.1%            ███░░░░░░░ Stable
-```
-
-### Competitive Threats
-1. **NewCo**: Aggressive pricing in Enterprise (-20%)
-2. **Company A**: Acquired key technology startup
-3. **Company C**: Launching next-gen platform Q1
-
-**Our Response:**
-- Accelerate product roadmap
-- Explore 3 acquisition targets
-- Launch value-based pricing
-
----
-
-## 5. RISK ASSESSMENT
-
-### Risk Heat Map
+## RISK ASSESSMENT
 
 | Risk | Impact | Probability | Trend |
 |------|--------|-------------|-------|
-| Customer Retention | 🔴 High | 🔴 High | ↑ |
-| Talent Retention | 🟡 Med | 🔴 High | ↑ |
-| Cyber Security | 🔴 High | 🟡 Med | → |
-| Competition | 🟡 Med | 🟡 Med | ↑ |
-| Regulation | 🟡 Med | 🟢 Low | → |
+| Customer Retention | High | High | Increasing |
+| Talent Retention | Medium | High | Increasing |
+| Cyber Security | High | Medium | Stable |
+| Competition | Medium | Medium | Increasing |
 
-### Top Risk: Customer Retention
-**Mitigation Plan:**
-- $4.2M retention investment
-- Executive sponsor program
-- Service level guarantees
-- Expected impact → Save 85% of at-risk accounts
+## RECOMMENDATIONS
 
----
-
-## 6. 2025 OUTLOOK & RECOMMENDATIONS
-
-### Q1 2025 Projections
-- Revenue: $495-505M (+3% QoQ)
-- EBITDA Margin: 23.5-24.5%
-- Free Cash Flow: $70-80M
-
-### Strategic Priorities
-
-**1. Customer Success Transformation**
+### Priority 1: Customer Success Transformation
 - Target: 92% retention
 - Investment: $12M
 - Expected ROI: 3.5x
 
-**2. Employee Experience Revival**
+### Priority 2: Employee Experience Revival
 - Target: 80% engagement
-- Investment: $8.5M  
+- Investment: $8.5M
 - Expected Impact: 20% productivity gain
 
-**3. Innovation Acceleration**
+### Priority 3: Innovation Acceleration
 - Target: 3 new products
 - R&D: 15% of revenue
-- Focus → AI and automation
-
-### Board Actions Requested
-
-1. **APPROVE** $4.2M customer retention program
-2. **APPROVE** $8.5M talent investment
-3. **ENDORSE** M&A strategy up to $500M
-4. **REVIEW** Q1 progress at April meeting
-
----
-
-## APPENDICES
-
-**A. Detailed Financial Statements**
-**B. Customer Analysis Details**
-**C. Employee Survey Results**
-**D. Competitive Intelligence**
-**E. Risk Register**
-
----
-
-**Report prepared by:** Business Intelligence Team  
-**Reviewed by:** CFO, COO, Chief Data Officer  
-**Contact:** boardreporting@company.com  
-**Next Report:** Q1 2025 - Due April 15, 2025
-
-This report format provides clear insights, visual elements, and actionable recommendations that enable informed board decisions.
+- Focus: AI and automation
 
 ## Related Prompts
 
-- [Executive Summary Writer](../management-leadership/executive-decision-making-expert.md)
-- [Data Analysis Expert](../analysis/data-analysis-expert.md)
-- [KPI Dashboard Creator](../content-creation/video-content-creator.md)
+- [Data Analysis Expert](/prompts/analysis/data-analysis-expert.md) - Deeper data exploration
+- [Executive Briefing Expert](/prompts/communication/executive-briefing-expert.md) - Focused summary creation
+- [Performance Evaluation Expert](/prompts/analysis/performance-evaluation-expert.md) - Metrics assessment
