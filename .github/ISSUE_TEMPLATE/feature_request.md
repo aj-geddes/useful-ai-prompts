@@ -1,9 +1,10 @@
 ---
 name: Feature Request
 about: Request a new prompt or suggest improvements to existing prompts
-title: '[REQUEST] '
-labels: enhancement, needs-triage
+title: "[REQUEST] "
+labels: enhancement
 assignees: ''
+
 ---
 
 ## Request Type

@@ -1,9 +1,10 @@
 ---
 name: Bug Report
 about: Report an issue with a prompt (unclear instructions, errors, unexpected behavior)
-title: '[BUG] '
-labels: bug, needs-triage
+title: "[BUG] "
+labels: bug
 assignees: ''
+
 ---
 
 ## Prompt Information
