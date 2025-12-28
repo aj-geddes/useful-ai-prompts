@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse Existing Prompts
+    url: https://aj-geddes.github.io/useful-ai-prompts/
+    about: Browse the full prompt library to find what you need before submitting a request
+  - name: Prompt Index
+    url: https://github.com/aj-geddes/useful-ai-prompts/blob/main/PROMPT-INDEX.json
+    about: View the machine-readable catalog of all available prompts
+  - name: General Questions
+    url: https://github.com/aj-geddes/useful-ai-prompts/discussions
+    about: Ask questions or start a discussion about prompts and best practices
