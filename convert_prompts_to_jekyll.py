@@ -217,21 +217,22 @@ def build_jekyll_frontmatter(data: dict) -> str:
         fm["complexity"] = data["complexity"]
     if data.get("interaction"):
         fm["interaction"] = data["interaction"]
+    # Prompt text goes in frontmatter so {{ page.prompt }} renders correctly in code block
+    if data.get("prompt"):
+        fm["prompt"] = data["prompt"]
 
-    return yaml.dump(fm, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    return yaml.dump(fm, default_flow_style=False, allow_unicode=True, sort_keys=False, width=float("inf"))
 
 
 def build_jekyll_content(data: dict) -> str:
-    """Build the full Jekyll prompt file content."""
+    """Build the full Jekyll prompt file content. Body is empty — prompt is in frontmatter."""
     frontmatter = build_jekyll_frontmatter(data)
-    prompt_body = data.get("prompt", "")
 
     lines = [
         "---",
         frontmatter.rstrip(),
         "---",
         "",
-        prompt_body,
     ]
     return "\n".join(lines)
 

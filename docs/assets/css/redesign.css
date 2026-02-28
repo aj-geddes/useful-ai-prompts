@@ -1111,9 +1111,30 @@ a.tag:hover {
   margin: 0 0 var(--space-6);
 }
 
+/* Prompt code block — scrollable with max height so it doesn't dominate the page */
+.prompt-code-section .code-container pre {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling for code block */
+.prompt-code-section .code-container pre::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.prompt-code-section .code-container pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+.prompt-code-section .code-container pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+.prompt-code-section .code-container pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
 .examples-section,
-.tips-section,
-.additional-content {
+.tips-section {
   margin-top: var(--space-7);
 }
 

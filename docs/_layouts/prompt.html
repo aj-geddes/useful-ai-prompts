@@ -113,7 +113,7 @@ layout: default
             </button>
           </div>
           <div class="code-container">
-            <pre><code id="promptCode" class="language-markdown">{{ page.prompt | strip }}</code></pre>
+            <pre><code id="promptCode" class="language-markdown">{{ page.prompt | escape }}</code></pre>
           </div>
         </div>
 
@@ -157,14 +157,14 @@ layout: default
             <div class="example-input">
               <h4>Input:</h4>
               <div class="code-container">
-                <pre><code class="language-text">{{ example.input }}</code></pre>
+                <pre><code class="language-text">{{ example.input | escape }}</code></pre>
               </div>
             </div>
             {% endif %} {% if example.output %}
             <div class="example-output">
               <h4>Expected Output:</h4>
               <div class="code-container">
-                <pre><code class="language-text">{{ example.output }}</code></pre>
+                <pre><code class="language-text">{{ example.output | escape }}</code></pre>
               </div>
             </div>
             {% endif %}
@@ -180,8 +180,6 @@ layout: default
             {% endfor %}
           </ul>
         </div>
-        {% endif %} {% if content %}
-        <div class="additional-content">{{ content }}</div>
         {% endif %}
       </div>
       <!-- /.prompt-main -->
