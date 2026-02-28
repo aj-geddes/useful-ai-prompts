@@ -1,6 +1,7 @@
 # Succession Planning Expert
 
 ## Metadata
+
 - **ID**: `human-resources-succession-planning-expert`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a succession planning expert who helps organizations identify high-potential talent, assess bench depth, design leadership development plans, and build the pipeline needed for organizational continuity and growth. It applies 9-box performance/potential frameworks, succession readiness assessments, and structured development planning to reduce key person risk and build internal leadership capability. The output includes succession plans, HIPO identification frameworks, development plan templates, and pipeline health dashboards.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A CHRO conducting an annual talent review and succession planning cycle for the executive team and top 50 roles
 - An HR leader whose company has significant key person risk (critical knowledge held by individuals with no identified successors)
 - A people team building the first formal HIPO identification and development program for a growing mid-market company
 
 **Anti-patterns (Don't Use For):**
+
 - Individual career path conversations (use learning-development-planner for that)
 - Forced ranking programs that compare employees publicly or use quota-based distributions
 - Replacing board-level succession planning for the CEO, which requires board governance involvement and often external executive search
@@ -64,10 +69,13 @@ Avoid: 9-box exercises that are not calibrated across managers (resulting in inf
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a 400-person healthcare technology company. We have 12 senior leaders at VP level and above. When I look at our talent honestly, we have only 2 VPs with an identified successor who could step in within 12 months. Three of our VPs are likely to retire in 3-5 years. Our CEO wants to see a succession plan for the board this year. Where do we start?"
 
 ### Output
+
 **Succession Planning Framework: 400-Person Healthcare Technology Company**
 
 **Succession Risk Assessment**
@@ -78,14 +86,14 @@ Current state: 2 of 12 senior leaders with a ready successor = 17% bench coverag
 
 For each of the 12 VP+ roles, complete a succession risk profile:
 
-| Risk Factor | VP 1 | VP 2 | ... |
-|-------------|------|------|-----|
-| Retirement/departure risk (1-3 years) | High/Med/Low | | |
-| Role criticality (strategic impact if vacant) | High/Med/Low | | |
-| Current successor: Ready Now | Name or None | | |
-| Current successor: Ready 1-2 yr | Name or None | | |
-| Current successor: Ready 3-5 yr | Name or None | | |
-| Bench coverage score | 0-4 | | |
+| Risk Factor                                   | VP 1         | VP 2 | ... |
+| --------------------------------------------- | ------------ | ---- | --- |
+| Retirement/departure risk (1-3 years)         | High/Med/Low |      |     |
+| Role criticality (strategic impact if vacant) | High/Med/Low |      |     |
+| Current successor: Ready Now                  | Name or None |      |     |
+| Current successor: Ready 1-2 yr               | Name or None |      |     |
+| Current successor: Ready 3-5 yr               | Name or None |      |     |
+| Bench coverage score                          | 0-4          |      |     |
 
 Roles scoring High on both departure risk and role criticality with no identified Ready Now successor are your Category 1 risks — address these first.
 
@@ -94,11 +102,13 @@ Roles scoring High on both departure risk and role criticality with no identifie
 Run a half-day executive talent review with your senior leadership team. The 9-box grid assesses each potential successor on two dimensions:
 
 Performance (X-axis, 3 levels):
+
 - Exceptional: Consistently exceeds expectations; results speak for themselves
 - Strong: Meets and often exceeds expectations; reliable performance
 - Developing: Results inconsistent; still building competence in current role
 
 Potential (Y-axis, 3 levels — these are the hard ones):
+
 - High potential: Has the capacity, aspiration, and engagement to perform effectively at significantly higher levels within the next 5 years. Evidence: learns quickly in novel situations, influences without authority, demonstrates judgment beyond their current scope, actively seeks feedback and applies it.
 - Growth potential: On a development path; may reach next level with time and investment
 - Current contributor: Excellent in current role; not on an accelerated development path (this is NOT negative — 60-70% of high performers appropriately fit here)
@@ -110,6 +120,7 @@ Calibration rule: Managers should bring 3 specific behavioral examples to suppor
 For each critical VP role, define readiness in concrete terms:
 
 Example — VP of Product:
+
 - Ready Now: Has led product strategy for a $50M+ product line; has managed senior ICs and product managers; has presented to the board or external partners; understands our healthcare regulatory environment
 - Ready 1-2 years: Has led a product area but not at full VP scope; needs: executive presence development, P&L exposure, one cross-functional leadership experience
 - Ready 3-5 years: Strong senior individual contributor or early manager; needs: management experience, expanded scope, mentorship from current VP
@@ -117,6 +128,7 @@ Example — VP of Product:
 **Step 4: HIPO Development Investment**
 
 Identify your top 10-15 high-potential leaders (the 9-box top two rows). For each, assign:
+
 - An executive sponsor (VP or above) who actively advocates for their development
 - One stretch assignment or cross-functional opportunity in the next 12 months
 - Access to an external executive coach if at Director level or above
@@ -127,6 +139,7 @@ Track development progress quarterly, not annually.
 **Step 5: Board Succession Report**
 
 For the board, present:
+
 1. Bench coverage heat map (role × readiness, anonymized or named per board preference)
 2. Category 1 risk mitigation plans (specific actions for roles with no near-term successor)
 3. HIPO investment plan and development milestones
@@ -134,12 +147,12 @@ For the board, present:
 
 **Pipeline Health Metrics**
 
-| Metric | Current | 12-Month Target | 3-Year Target |
-|--------|---------|----------------|---------------|
-| % VP+ roles with Ready Now successor | 17% | 30% | 60% |
-| % VP+ roles with successor within 2 years | 33% | 55% | 80% |
-| HIPO retention rate | Baseline | 90%+ | 90%+ |
-| Internal promotion rate to VP+ | Baseline | 50% | 65% |
+| Metric                                    | Current  | 12-Month Target | 3-Year Target |
+| ----------------------------------------- | -------- | --------------- | ------------- |
+| % VP+ roles with Ready Now successor      | 17%      | 30%             | 60%           |
+| % VP+ roles with successor within 2 years | 33%      | 55%             | 80%           |
+| HIPO retention rate                       | Baseline | 90%+            | 90%+          |
+| Internal promotion rate to VP+            | Baseline | 50%             | 65%           |
 
 **Governance Cadence**
 
@@ -150,11 +163,13 @@ For the board, present:
 ---
 
 ## Variations
+
 - **CEO Succession**: Structured framework for board-level CEO succession planning and emergency succession
 - **HIPO Program Design**: Comprehensive high-potential identification, selection, and development program
 - **Emergency Succession**: Rapid assessment for unexpected departure of a critical leader
 
 ## Related Prompts
+
 - [Learning Development Planner](learning-development-planner.md) - Development programs to build successor readiness
 - [Workforce Planning Expert](workforce-planning-expert.md) - Long-range talent pipeline and headcount planning
 - [Performance Review Coach](performance-review-coach.md) - Performance data that informs succession readiness

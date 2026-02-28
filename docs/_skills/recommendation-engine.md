@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build recommendation systems using collaborative filtering, content-based
+date: "2025-01-01"
+description:
+  Build recommendation systems using collaborative filtering, content-based
   filtering, matrix factorization, and neural network approaches
 layout: skill
 slug: recommendation-engine
 tags:
-- development
+  - development
 title: Recommendation Engine
 ---
 

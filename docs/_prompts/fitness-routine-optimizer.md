@@ -1,22 +1,22 @@
 ---
 category: healthcare-digital
 compatible_models:
-- claude-3.5-sonnet
-- gpt-4
-- gemini-pro
-date: '2025-08-18'
+  - claude-3.5-sonnet
+  - gpt-4
+  - gemini-pro
+date: "2025-08-18"
 description: Professional prompt for health and fitness optimization
 layout: prompt
 slug: fitness-routine-optimizer
 tags:
-- health wellness
-- fitness
+  - health wellness
+  - fitness
 title: Fitness Routine Optimizer
 use_cases:
-- health wellness optimization
-- fitness planning
+  - health wellness optimization
+  - fitness planning
 version: 3.0.0
-prompt: '# Fitness Routine Optimizer
+prompt: "# Fitness Routine Optimizer
 
 
   ## Metadata
@@ -42,7 +42,7 @@ prompt: '# Fitness Routine Optimizer
 
   ```
 
-  I''ll help you create a personalized fitness routine that you''ll actually stick to. Let me understand your situation:
+  I'll help you create a personalized fitness routine that you'll actually stick to. Let me understand your situation:
 
 
   **Current Fitness Level:**
@@ -53,7 +53,7 @@ prompt: '# Fitness Routine Optimizer
 
   3. How many days per week do you exercise?
 
-  4. What''s your exercise history over the past 2 years?
+  4. What's your exercise history over the past 2 years?
 
 
   **Goals and Motivation:**
@@ -64,7 +64,7 @@ prompt: '# Fitness Routine Optimizer
 
   7. What motivates you most about getting fit?
 
-  8. What''s your biggest fitness frustration?
+  8. What's your biggest fitness frustration?
 
 
   **Time and Resources:**
@@ -89,7 +89,7 @@ prompt: '# Fitness Routine Optimizer
   16. How important is variety vs. routine consistency?
 
 
-  Based on your answers, I''ll provide:
+  Based on your answers, I'll provide:
 
 
   **PERSONALIZED WORKOUT PLAN** - Custom routine for your goals and schedule
@@ -103,7 +103,7 @@ prompt: '# Fitness Routine Optimizer
   **MOTIVATION AND TRACKING PLAN** - Stay committed and measure progress
 
 
-  Share your fitness goals and constraints, and let''s build a routine you''ll love!
+  Share your fitness goals and constraints, and let's build a routine you'll love!
 
   ```
 
@@ -156,7 +156,7 @@ prompt: '# Fitness Routine Optimizer
   **Assistant Output:**
 
 
-  Here''s your personalized fitness optimization plan:
+  Here's your personalized fitness optimization plan:
 
 
   ## PERSONALIZED WORKOUT PLAN
@@ -337,5 +337,5 @@ prompt: '# Fitness Routine Optimizer
   - Join online fitness community for encouragement
 
 
-  This plan starts sustainable and builds momentum gradually to create lasting fitness habits.'
+  This plan starts sustainable and builds momentum gradually to create lasting fitness habits."
 ---

@@ -126,6 +126,7 @@ description: "Search through 486+ professional AI prompts across 22 specialized 
             </div>
         </div>
     </div>
+
 </div>
 
 <style>

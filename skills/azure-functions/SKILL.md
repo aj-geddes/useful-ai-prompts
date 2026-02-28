@@ -80,7 +80,7 @@ az functionapp function show \
 ```javascript
 // HttpTrigger/index.js
 module.exports = async function (context, req) {
-  context.log('HTTP trigger function processed request.');
+  context.log("HTTP trigger function processed request.");
 
   // Extract request data
   const name = req.query.name || (req.body && req.body.name);
@@ -91,7 +91,7 @@ module.exports = async function (context, req) {
     if (!name) {
       return {
         status: 400,
-        body: { error: 'Name parameter is required' }
+        body: { error: "Name parameter is required" },
       };
     }
 
@@ -99,31 +99,31 @@ module.exports = async function (context, req) {
     const response = {
       message: `Hello ${name}!`,
       timestamp: new Date().toISOString(),
-      requestId: requestId
+      requestId: requestId,
     };
 
     // Log to Application Insights
     context.log({
-      level: 'info',
-      message: 'Request processed successfully',
+      level: "info",
+      message: "Request processed successfully",
       name: name,
-      requestId: requestId
+      requestId: requestId,
     });
 
     return {
       status: 200,
       headers: {
-        'Content-Type': 'application/json',
-        'X-Request-ID': requestId
+        "Content-Type": "application/json",
+        "X-Request-ID": requestId,
       },
-      body: response
+      body: response,
     };
   } catch (error) {
-    context.log.error('Error processing request:', error);
+    context.log.error("Error processing request:", error);
 
     return {
       status: 500,
-      body: { error: 'Internal server error' }
+      body: { error: "Internal server error" },
     };
   }
 };
@@ -133,32 +133,33 @@ module.exports = async function (context, myTimer) {
   const timeStamp = new Date().toISOString();
 
   if (myTimer.isPastDue) {
-    context.log('Timer function is running late!');
+    context.log("Timer function is running late!");
   }
 
   // Process scheduled job
   context.log(`Timer trigger function ran at ${timeStamp}`);
-  context.log('Processing batch job...');
+  context.log("Processing batch job...");
 
   // Simulate work
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  context.log('Batch job completed');
+  context.log("Batch job completed");
 };
 
 // ServiceBusQueueTrigger/index.js
 module.exports = async function (context, mySbMsg) {
-  context.log('ServiceBus queue trigger function processed message:', mySbMsg);
+  context.log("ServiceBus queue trigger function processed message:", mySbMsg);
 
   try {
-    const messageBody = typeof mySbMsg === 'string' ? JSON.parse(mySbMsg) : mySbMsg;
+    const messageBody =
+      typeof mySbMsg === "string" ? JSON.parse(mySbMsg) : mySbMsg;
 
     // Process message
     await processMessage(messageBody);
 
-    context.log('Message processed successfully');
+    context.log("Message processed successfully");
   } catch (error) {
-    context.log.error('Error processing message:', error);
+    context.log.error("Error processing message:", error);
     throw error; // Re-queue message
   }
 };
@@ -411,6 +412,7 @@ output "app_insights_key" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use managed identity for Azure services
 - Store secrets in Key Vault
 - Enable Application Insights
@@ -421,6 +423,7 @@ output "app_insights_key" {
 - Use bindings instead of SDK calls
 
 ### ❌ DON'T
+
 - Store secrets in code or configuration
 - Ignore Application Insights
 - Create functions without error handling

@@ -96,13 +96,7 @@
     "title": "API Design Expert",
     "description": "Design clean, intuitive APIs that follow industry best practices, ensuring consistency, security, and excellent developer experience.",
     "category": "technical-workflows",
-    "tags": [
-      "api",
-      "rest",
-      "graphql",
-      "api-design",
-      "documentation"
-    ],
+    "tags": ["api", "rest", "graphql", "api-design", "documentation"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/api-design-expert/",
     "searchableContent": "api design expert design clean, intuitive apis that follow industry best practices, ensuring consistency, security, and excellent developer experience. technical-workflows api rest graphql api-design documentation"
@@ -120,12 +114,7 @@
     "title": "Brainstorming Facilitator",
     "description": "A practical brainstorming assistant that helps facilitate productive idea generation sessions. Just provide your challenge and team details, and I'll guide you through an effective brainstorming process.",
     "category": "creativity-innovation",
-    "tags": [
-      "brainstorming",
-      "ideation",
-      "team creativity",
-      "idea generation"
-    ],
+    "tags": ["brainstorming", "ideation", "team creativity", "idea generation"],
     "use_cases": [
       "team brainstorming sessions",
       "idea generation",
@@ -349,13 +338,7 @@
     "title": "Cloud Migration Planning Expert",
     "description": "Plan and execute cloud migrations that minimize risk, optimize costs, and leverage cloud-native capabilities while ensuring business continuity.",
     "category": "technical-workflows",
-    "tags": [
-      "cloud-migration",
-      "aws",
-      "azure",
-      "gcp",
-      "migration-strategy"
-    ],
+    "tags": ["cloud-migration", "aws", "azure", "gcp", "migration-strategy"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/cloud-migration-planning-expert/",
     "searchableContent": "cloud migration planning expert plan and execute cloud migrations that minimize risk, optimize costs, and leverage cloud-native capabilities while ensuring business continuity. technical-workflows cloud-migration aws azure gcp migration-strategy"
@@ -384,12 +367,7 @@
     "title": "Code Refactoring Expert",
     "description": "Transform legacy or poorly structured code into clean, maintainable, and efficient implementations while preserving functionality and minimizing risk.",
     "category": "technical-workflows",
-    "tags": [
-      "refactoring",
-      "code-quality",
-      "clean-code",
-      "technical-debt"
-    ],
+    "tags": ["refactoring", "code-quality", "clean-code", "technical-debt"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/code-refactoring-expert/",
     "searchableContent": "code refactoring expert transform legacy or poorly structured code into clean, maintainable, and efficient implementations while preserving functionality and minimizing risk. technical-workflows refactoring code-quality clean-code technical-debt"
@@ -1152,12 +1130,7 @@
     "title": "Database Schema Development Expert",
     "description": "Design efficient, normalized database schemas that support your application's data requirements while ensuring performance, integrity, and scalability.",
     "category": "technical-workflows",
-    "tags": [
-      "database",
-      "schema-design",
-      "data-modeling",
-      "sql"
-    ],
+    "tags": ["database", "schema-design", "data-modeling", "sql"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/database-schema-development-expert/",
     "searchableContent": "database schema development expert design efficient, normalized database schemas that support your application's data requirements while ensuring performance, integrity, and scalability. technical-workflows database schema-design data-modeling sql"
@@ -1223,12 +1196,7 @@
     "title": "Deployment Pipeline Creation Expert",
     "description": "Design and implement deployment pipelines that enable fast, reliable, and secure software delivery from development to production.",
     "category": "technical-workflows",
-    "tags": [
-      "ci-cd",
-      "deployment",
-      "automation",
-      "devops"
-    ],
+    "tags": ["ci-cd", "deployment", "automation", "devops"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/deployment-pipeline-creation-expert/",
     "searchableContent": "deployment pipeline creation expert design and implement deployment pipelines that enable fast, reliable, and secure software delivery from development to production. technical-workflows ci-cd deployment automation devops"
@@ -1278,12 +1246,7 @@
     "title": "DevOps Workflow Design Expert",
     "description": "Design comprehensive DevOps workflows that automate everything from development to production, enabling faster delivery and improved reliability.",
     "category": "technical-workflows",
-    "tags": [
-      "devops",
-      "automation",
-      "ci-cd",
-      "infrastructure-as-code"
-    ],
+    "tags": ["devops", "automation", "ci-cd", "infrastructure-as-code"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/devops-workflow-design-expert/",
     "searchableContent": "devops workflow design expert design comprehensive devops workflows that automate everything from development to production, enabling faster delivery and improved reliability. technical-workflows devops automation ci-cd infrastructure-as-code"
@@ -1875,12 +1838,7 @@
     "title": "Infrastructure Planning Expert",
     "description": "Plan and design infrastructure that meets performance, reliability, and cost requirements while maintaining flexibility for future growth.",
     "category": "technical-workflows",
-    "tags": [
-      "infrastructure",
-      "cloud",
-      "devops",
-      "capacity-planning"
-    ],
+    "tags": ["infrastructure", "cloud", "devops", "capacity-planning"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/infrastructure-planning-expert/",
     "searchableContent": "infrastructure planning expert plan and design infrastructure that meets performance, reliability, and cost requirements while maintaining flexibility for future growth. technical-workflows infrastructure cloud devops capacity-planning"
@@ -2326,12 +2284,7 @@
     "title": "Microservice Design Expert",
     "description": "Design microservice architectures that properly balance service boundaries, minimize coupling, and enable independent deployment while avoiding distributed system pitfalls.",
     "category": "technical-workflows",
-    "tags": [
-      "microservices",
-      "architecture",
-      "distributed-systems",
-      "design"
-    ],
+    "tags": ["microservices", "architecture", "distributed-systems", "design"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/microservice-design-expert/",
     "searchableContent": "microservice design expert design microservice architectures that properly balance service boundaries, minimize coupling, and enable independent deployment while avoiding distributed system pitfalls. technical-workflows microservices architecture distributed-systems design"
@@ -2577,12 +2530,7 @@
     "title": "Performance Review Expert",
     "description": "A practical performance review assistant that helps managers write comprehensive, fair, and actionable performance reviews. Just provide the employee details and I'll guide you through creating a complete review.",
     "category": "evaluation-assessment",
-    "tags": [
-      "performance review",
-      "employee evaluation",
-      "feedback",
-      "goals"
-    ],
+    "tags": ["performance review", "employee evaluation", "feedback", "goals"],
     "use_cases": [
       "annual reviews",
       "quarterly check-ins",
@@ -3400,12 +3348,7 @@
     "title": "Security Implementation Expert",
     "description": "Implement comprehensive security measures across applications and infrastructure to protect against threats while maintaining usability and performance.",
     "category": "technical-workflows",
-    "tags": [
-      "security",
-      "cybersecurity",
-      "secure-coding",
-      "compliance"
-    ],
+    "tags": ["security", "cybersecurity", "secure-coding", "compliance"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/security-implementation-expert/",
     "searchableContent": "security implementation expert implement comprehensive security measures across applications and infrastructure to protect against threats while maintaining usability and performance. technical-workflows security cybersecurity secure-coding compliance"
@@ -3590,13 +3533,7 @@
     "title": "Strategic Leadership Expert",
     "description": "This prompt helps leaders develop and communicate compelling strategies that align teams and drive organizational success.",
     "category": "management-leadership",
-    "tags": [
-      "strategy",
-      "vision",
-      "leadership",
-      "transformation",
-      "alignment"
-    ],
+    "tags": ["strategy", "vision", "leadership", "transformation", "alignment"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/strategic-leadership-expert/",
     "searchableContent": "strategic leadership expert this prompt helps leaders develop and communicate compelling strategies that align teams and drive organizational success. management-leadership strategy vision leadership transformation alignment"
@@ -3741,12 +3678,7 @@
     "title": "System Architecture Design Expert",
     "description": "Design robust, scalable system architectures that meet performance requirements and business needs while maintaining flexibility for future growth.",
     "category": "technical-workflows",
-    "tags": [
-      "architecture",
-      "system-design",
-      "scalability",
-      "infrastructure"
-    ],
+    "tags": ["architecture", "system-design", "scalability", "infrastructure"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/system-architecture-design-expert/",
     "searchableContent": "system architecture design expert design robust, scalable system architectures that meet performance requirements and business needs while maintaining flexibility for future growth. technical-workflows architecture system-design scalability infrastructure"
@@ -3911,12 +3843,7 @@
     "title": "Technical Debt Assessment Expert",
     "description": "Systematically identify, quantify, and prioritize technical debt to create actionable remediation plans that balance business needs with code quality.",
     "category": "technical-workflows",
-    "tags": [
-      "technical-debt",
-      "code-quality",
-      "assessment",
-      "planning"
-    ],
+    "tags": ["technical-debt", "code-quality", "assessment", "planning"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/technical-debt-assessment-expert/",
     "searchableContent": "technical debt assessment expert systematically identify, quantify, and prioritize technical debt to create actionable remediation plans that balance business needs with code quality. technical-workflows technical-debt code-quality assessment planning"
@@ -3953,12 +3880,7 @@
     "title": "Test Strategy Development Expert",
     "description": "Develop comprehensive testing strategies that ensure software quality, reduce bugs, and maintain confidence in deployments while optimizing testing effort.",
     "category": "technical-workflows",
-    "tags": [
-      "testing",
-      "qa",
-      "test-automation",
-      "quality-assurance"
-    ],
+    "tags": ["testing", "qa", "test-automation", "quality-assurance"],
     "use_cases": [],
     "url": "/useful-ai-prompts/prompts/test-strategy-development-expert/",
     "searchableContent": "test strategy development expert develop comprehensive testing strategies that ensure software quality, reduce bugs, and maintain confidence in deployments while optimizing testing effort. technical-workflows testing qa test-automation quality-assurance"

@@ -1,13 +1,14 @@
 ---
 category: testing-qa
-date: '2025-01-01'
-description: Create and manage mocks, stubs, spies, and test doubles for isolating
+date: "2025-01-01"
+description:
+  Create and manage mocks, stubs, spies, and test doubles for isolating
   unit tests from external dependencies. Use for mock, stub, spy, test double, Mockito,
   Jest mocks, and dependency isolation.
 layout: skill
 slug: mocking-stubbing
 tags:
-- testing
+  - testing
 title: mocking-stubbing
 ---
 
@@ -40,15 +41,16 @@ Mocking and stubbing are essential techniques for isolating units of code during
 ### 1. **Jest Mocking (JavaScript/TypeScript)**
 
 #### Basic Mocking
+
 ```typescript
 // services/UserService.ts
-import { UserRepository } from './UserRepository';
-import { EmailService } from './EmailService';
+import { UserRepository } from "./UserRepository";
+import { EmailService } from "./EmailService";
 
 export class UserService {
   constructor(
     private userRepository: UserRepository,
-    private emailService: EmailService
+    private emailService: EmailService,
   ) {}
 
   async createUser(userData: CreateUserDto) {
@@ -59,7 +61,7 @@ export class UserService {
 
   async getUserStats(userId: string) {
     const user = await this.userRepository.findById(userId);
-    if (!user) throw new Error('User not found');
+    if (!user) throw new Error("User not found");
 
     const orderCount = await this.userRepository.getOrderCount(userId);
     return { ...user, orderCount };
@@ -67,15 +69,15 @@ export class UserService {
 }
 
 // __tests__/UserService.test.ts
-import { UserService } from '../UserService';
-import { UserRepository } from '../UserRepository';
-import { EmailService } from '../EmailService';
+import { UserService } from "../UserService";
+import { UserRepository } from "../UserRepository";
+import { EmailService } from "../EmailService";
 
 // Mock the dependencies
-jest.mock('../UserRepository');
-jest.mock('../EmailService');
+jest.mock("../UserRepository");
+jest.mock("../EmailService");
 
-describe('UserService', () => {
+describe("UserService", () => {
   let userService: UserService;
   let mockUserRepository: jest.Mocked<UserRepository>;
   let mockEmailService: jest.Mocked<EmailService>;
@@ -91,19 +93,19 @@ describe('UserService', () => {
     userService = new UserService(mockUserRepository, mockEmailService);
   });
 
-  describe('createUser', () => {
-    it('should create user and send welcome email', async () => {
+  describe("createUser", () => {
+    it("should create user and send welcome email", async () => {
       // Arrange
       const userData = {
-        email: 'test@example.com',
-        name: 'Test User',
-        password: 'password123'
+        email: "test@example.com",
+        name: "Test User",
+        password: "password123",
       };
 
       const createdUser = {
-        id: '123',
+        id: "123",
         ...userData,
-        createdAt: new Date()
+        createdAt: new Date(),
       };
 
       mockUserRepository.create.mockResolvedValue(createdUser);
@@ -118,30 +120,28 @@ describe('UserService', () => {
       expect(mockUserRepository.create).toHaveBeenCalledTimes(1);
       expect(mockEmailService.sendWelcomeEmail).toHaveBeenCalledWith(
         userData.email,
-        userData.name
+        userData.name,
       );
     });
 
-    it('should not send email if user creation fails', async () => {
+    it("should not send email if user creation fails", async () => {
       // Arrange
-      mockUserRepository.create.mockRejectedValue(
-        new Error('Database error')
-      );
+      mockUserRepository.create.mockRejectedValue(new Error("Database error"));
 
       // Act & Assert
       await expect(
-        userService.createUser({ email: 'test@example.com' })
-      ).rejects.toThrow('Database error');
+        userService.createUser({ email: "test@example.com" }),
+      ).rejects.toThrow("Database error");
 
       expect(mockEmailService.sendWelcomeEmail).not.toHaveBeenCalled();
     });
   });
 
-  describe('getUserStats', () => {
-    it('should return user with order count', async () => {
+  describe("getUserStats", () => {
+    it("should return user with order count", async () => {
       // Arrange
-      const userId = '123';
-      const user = { id: userId, name: 'Test User' };
+      const userId = "123";
+      const user = { id: userId, name: "Test User" };
 
       mockUserRepository.findById.mockResolvedValue(user);
       mockUserRepository.getOrderCount.mockResolvedValue(5);
@@ -155,13 +155,13 @@ describe('UserService', () => {
       expect(mockUserRepository.getOrderCount).toHaveBeenCalledWith(userId);
     });
 
-    it('should throw error if user not found', async () => {
+    it("should throw error if user not found", async () => {
       // Arrange
       mockUserRepository.findById.mockResolvedValue(null);
 
       // Act & Assert
-      await expect(userService.getUserStats('999')).rejects.toThrow(
-        'User not found'
+      await expect(userService.getUserStats("999")).rejects.toThrow(
+        "User not found",
       );
 
       expect(mockUserRepository.getOrderCount).not.toHaveBeenCalled();
@@ -171,9 +171,10 @@ describe('UserService', () => {
 ```
 
 #### Spying on Functions
+
 ```javascript
 // services/PaymentService.js
-const stripe = require('stripe');
+const stripe = require("stripe");
 
 class PaymentService {
   async processPayment(amount, currency, customerId) {
@@ -193,7 +194,7 @@ class PaymentService {
 }
 
 // __tests__/PaymentService.test.js
-describe('PaymentService', () => {
+describe("PaymentService", () => {
   let paymentService;
   let stripeMock;
 
@@ -204,29 +205,29 @@ describe('PaymentService', () => {
         create: jest.fn(),
       },
     };
-    jest.mock('stripe', () => jest.fn(() => stripeMock));
+    jest.mock("stripe", () => jest.fn(() => stripeMock));
 
     paymentService = new PaymentService();
   });
 
-  it('should process payment and log', async () => {
+  it("should process payment and log", async () => {
     // Arrange
-    const mockCharge = { id: 'ch_123', amount: 5000 };
+    const mockCharge = { id: "ch_123", amount: 5000 };
     stripeMock.charges.create.mockResolvedValue(mockCharge);
 
     // Spy on internal method
-    const logSpy = jest.spyOn(paymentService, 'logPayment');
+    const logSpy = jest.spyOn(paymentService, "logPayment");
 
     // Act
-    await paymentService.processPayment(50, 'usd', 'cus_123');
+    await paymentService.processPayment(50, "usd", "cus_123");
 
     // Assert
     expect(stripeMock.charges.create).toHaveBeenCalledWith({
       amount: 5000,
-      currency: 'usd',
-      customer: 'cus_123',
+      currency: "usd",
+      customer: "cus_123",
     });
-    expect(logSpy).toHaveBeenCalledWith('ch_123', 50);
+    expect(logSpy).toHaveBeenCalledWith("ch_123", 50);
 
     logSpy.mockRestore();
   });
@@ -527,7 +528,7 @@ class UserServiceTest {
 
 ```typescript
 // Mock timers
-describe('Scheduled Tasks', () => {
+describe("Scheduled Tasks", () => {
   beforeEach(() => {
     jest.useFakeTimers();
   });
@@ -536,7 +537,7 @@ describe('Scheduled Tasks', () => {
     jest.useRealTimers();
   });
 
-  it('should execute task after delay', () => {
+  it("should execute task after delay", () => {
     const callback = jest.fn();
     const scheduler = new TaskScheduler();
 
@@ -551,24 +552,24 @@ describe('Scheduled Tasks', () => {
 });
 
 // Partial mocking
-describe('UserService with partial mocking', () => {
-  it('should use real method for validation, mock for DB', async () => {
+describe("UserService with partial mocking", () => {
+  it("should use real method for validation, mock for DB", async () => {
     const userService = new UserService();
 
     // Spy on real object
     const saveSpy = jest
-      .spyOn(userService.repository, 'save')
-      .mockResolvedValue({ id: '123' });
+      .spyOn(userService.repository, "save")
+      .mockResolvedValue({ id: "123" });
 
     // Real validation method is used
-    await expect(
-      userService.createUser({ email: 'invalid' })
-    ).rejects.toThrow('Invalid email');
+    await expect(userService.createUser({ email: "invalid" })).rejects.toThrow(
+      "Invalid email",
+    );
 
     expect(saveSpy).not.toHaveBeenCalled();
 
     // Valid data uses mocked save
-    await userService.createUser({ email: 'valid@example.com' });
+    await userService.createUser({ email: "valid@example.com" });
     expect(saveSpy).toHaveBeenCalled();
   });
 });
@@ -577,6 +578,7 @@ describe('UserService with partial mocking', () => {
 ## Best Practices
 
 ### ✅ DO
+
 - Mock external dependencies (DB, API, file system)
 - Use dependency injection for easier mocking
 - Verify important interactions with mocks
@@ -587,6 +589,7 @@ describe('UserService with partial mocking', () => {
 - Test both success and failure scenarios
 
 ### ❌ DON'T
+
 - Mock everything (don't mock what you own)
 - Over-specify mock interactions
 - Use mocks in integration tests

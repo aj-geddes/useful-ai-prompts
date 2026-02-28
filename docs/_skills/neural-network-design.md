@@ -1,12 +1,13 @@
 ---
 category: machine-learning
-date: '2025-01-01'
-description: Design and architect neural networks with various architectures including
+date: "2025-01-01"
+description:
+  Design and architect neural networks with various architectures including
   CNNs, RNNs, Transformers, and attention mechanisms using PyTorch and TensorFlow
 layout: skill
 slug: neural-network-design
 tags:
-- development
+  - development
 title: Neural Network Design
 ---
 

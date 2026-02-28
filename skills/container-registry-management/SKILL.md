@@ -181,77 +181,77 @@ data:
 ---
 # Terraform ECR configuration
 resource "aws_ecr_repository" "myapp" {
-  name                 = "myapp"
-  image_tag_mutability = "IMMUTABLE"
+name                 = "myapp"
+image_tag_mutability = "IMMUTABLE"
 
-  image_scanning_configuration {
-    scan_on_push = true
-  }
+image_scanning_configuration {
+scan_on_push = true
+}
 
-  encryption_configuration {
-    encryption_type = "KMS"
-    kms_key         = aws_kms_key.ecr.arn
-  }
+encryption_configuration {
+encryption_type = "KMS"
+kms_key         = aws_kms_key.ecr.arn
+}
 
-  tags = {
-    Name = "myapp-registry"
-  }
+tags = {
+Name = "myapp-registry"
+}
 }
 
 resource "aws_ecr_lifecycle_policy" "myapp" {
-  repository = aws_ecr_repository.myapp.name
+repository = aws_ecr_repository.myapp.name
 
-  policy = jsonencode({
-    rules = [
-      {
-        rulePriority = 1
-        description  = "Keep last 20 production images"
-        selection = {
-          tagStatus       = "tagged"
-          tagPrefixList   = ["release"]
-          countType       = "imageCountMoreThan"
-          countNumber     = 20
-        }
-        action = {
-          type = "expire"
-        }
-      },
-      {
-        rulePriority = 2
-        description  = "Remove untagged images after 7 days"
-        selection = {
-          tagStatus     = "untagged"
-          countType     = "sinceImagePushed"
-          countUnit     = "days"
-          countNumber   = 7
-        }
-        action = {
-          type = "expire"
-        }
-      }
-    ]
-  })
+policy = jsonencode({
+rules = [
+{
+rulePriority = 1
+description  = "Keep last 20 production images"
+selection = {
+tagStatus       = "tagged"
+tagPrefixList   = ["release"]
+countType       = "imageCountMoreThan"
+countNumber     = 20
+}
+action = {
+type = "expire"
+}
+},
+{
+rulePriority = 2
+description  = "Remove untagged images after 7 days"
+selection = {
+tagStatus     = "untagged"
+countType     = "sinceImagePushed"
+countUnit     = "days"
+countNumber   = 7
+}
+action = {
+type = "expire"
+}
+}
+]
+})
 }
 
 resource "aws_ecr_repository_policy" "myapp" {
-  repository = aws_ecr_repository.myapp.name
+repository = aws_ecr_repository.myapp.name
 
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Effect = "Allow"
-        Principal = {
-          AWS = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/EcsTaskExecutionRole"
-        }
-        Action = [
-          "ecr:GetDownloadUrlForLayer",
-          "ecr:BatchGetImage",
-          "ecr:GetImage"
-        ]
-      }
-    ]
-  })
+policy = jsonencode({
+Version = "2012-10-17"
+Statement = [
+{
+Effect = "Allow"
+Principal = {
+AWS = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/EcsTaskExecutionRole"
+}
+Action = [
+"ecr:GetDownloadUrlForLayer",
+"ecr:BatchGetImage",
+"ecr:GetImage"
+]
+}
+]
+})
 }
 ```
 
@@ -383,7 +383,7 @@ metadata:
   name: ecr-read-only
 spec:
   policyDocument:
-    Version: '2012-10-17'
+    Version: "2012-10-17"
     Statement:
       - Effect: Allow
         Action:
@@ -395,7 +395,7 @@ spec:
       - Effect: Allow
         Action:
           - ecr:GetAuthorizationToken
-        Resource: '*'
+        Resource: "*"
 ```
 
 ### 5. **Registry Monitoring**
@@ -479,6 +479,7 @@ data:
 ## Best Practices
 
 ### ✅ DO
+
 - Scan images before deployment
 - Use image tag immutability
 - Implement retention policies
@@ -489,6 +490,7 @@ data:
 - Use private registries
 
 ### ❌ DON'T
+
 - Push to public registries
 - Use `latest` tag in production
 - Allow anonymous pulls

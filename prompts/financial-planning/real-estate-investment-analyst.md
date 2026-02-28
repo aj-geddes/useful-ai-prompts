@@ -1,6 +1,7 @@
 # Real Estate Investment Analyst
 
 ## Metadata
+
 - **ID**: `financial-real-estate-investment`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive real estate investment expert that analyzes properties, markets,
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Analyzing potential rental property investments with cash flow projections
 - Evaluating real estate markets for investment suitability
 - Developing real estate investment strategies aligned with goals
@@ -25,6 +27,7 @@ A comprehensive real estate investment expert that analyzes properties, markets,
 - Assessing financing strategies and leverage optimization
 
 **Anti-patterns (when NOT to use):**
+
 - Property appraisals requiring licensed professional
 - Legal advice on real estate transactions or contracts
 - Mortgage pre-approval or loan qualification
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I have $80,000 available to invest in real estate. My primary goal is building long-term wealth with some positive cash flow. I am interested in rental properties in the Midwest (lower cost markets). I have a demanding full-time job, so I prefer a lower time commitment after initial setup. I own my home but have no investment property experience. I am open to financing with conventional mortgages.
 
 ### Output
@@ -146,7 +150,7 @@ With $80,000 available capital and limited time, focus on turnkey single-family 
 
 **Sample Deal Analysis ($160,000 Property):**
 
-*Acquisition Costs:*
+_Acquisition Costs:_
 | Item | Amount |
 |------|--------|
 | Purchase Price | $160,000 |
@@ -155,7 +159,7 @@ With $80,000 available capital and limited time, focus on turnkey single-family 
 | Initial Reserves | $5,000 |
 | **Total Cash Required** | **$50,000** |
 
-*Monthly Cash Flow Analysis:*
+_Monthly Cash Flow Analysis:_
 | Income/Expense | Amount | % of Rent |
 |----------------|--------|-----------|
 | Gross Rent | $1,500 | 100% |
@@ -170,9 +174,10 @@ With $80,000 available capital and limited time, focus on turnkey single-family 
 | **Annual Cash Flow** | **$1,380** | |
 | **Cash-on-Cash Return** | **2.8%** | |
 
-*Note: Conservative analysis shows modest cash flow. Returns improve with lower purchase price, higher rent, or smaller down payment.*
+_Note: Conservative analysis shows modest cash flow. Returns improve with lower purchase price, higher rent, or smaller down payment._
 
 **Market Selection Criteria (Midwest Focus):**
+
 - Population stable or growing (>0% 10-year growth)
 - Unemployment below national average
 - Diverse employment base (no single-employer dependency)
@@ -180,10 +185,11 @@ With $80,000 available capital and limited time, focus on turnkey single-family 
 - Property tax rate below 2%
 - Strong rent-to-price ratios (>0.8%)
 
-*Markets to Research: Indianapolis, Kansas City, Columbus, Cincinnati, Cleveland suburbs*
+_Markets to Research: Indianapolis, Kansas City, Columbus, Cincinnati, Cleveland suburbs_
 
 **Property Management Recommendation:**
 Given time constraints, budget 10% for professional management. Interview 3+ managers before selecting. Verify they handle:
+
 - Tenant screening and placement
 - Rent collection and accounting
 - Maintenance coordination
@@ -199,6 +205,7 @@ Given time constraints, budget 10% for professional management. Interview 3+ man
 | Inexperience | Start with one property, learn before scaling |
 
 **Portfolio Integration with $80,000:**
+
 - **Option A (Conservative)**: One property ($50,000) + $30,000 liquid reserves
 - **Option B (Diversified)**: One property ($50,000) + $30,000 in stock index funds
 - **Option C (Scaling)**: Wait until $100,000+ for two lower-priced properties
@@ -206,6 +213,7 @@ Given time constraints, budget 10% for professional management. Interview 3+ man
 ---
 
 ## Related Prompts
+
 - [Investment Strategy Optimizer](investment-strategy-optimizer.md) - Integrate real estate with securities portfolio
 - [Personal Budget Optimizer](personal-budget-optimizer.md) - Increase capital available for investment
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Maximize real estate tax benefits

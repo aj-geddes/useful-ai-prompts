@@ -1,6 +1,7 @@
 # Space Technology Development and Innovation Management
 
 ## Metadata
+
 - **ID**: `space-tech-innovation-management`
 - **Version**: 1.1.0
 - **Category**: Space Economy
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Lead advanced space technology development programs including R&D management, TRL advancement, technology commercialization, and innovation ecosystem development. Combines systematic technology validation with commercial market focus to advance space technologies from concept to market-ready products.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Managing multi-year space technology R&D programs
 - Advancing technologies through TRL levels (3 to 7+)
 - Commercializing space technologies and managing IP portfolios
@@ -23,6 +27,7 @@ Lead advanced space technology development programs including R&D management, TR
 - Developing technology roadmaps for space ventures
 
 **Anti-Patterns (When NOT to Use):**
+
 - Operational space mission execution
 - Basic research without commercial application path
 - Satellite operations or constellation management
@@ -113,78 +118,87 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're investing $150M over 4 years in next-generation propulsion and autonomous spacecraft technologies. Currently at TRL 3, need to reach TRL 7 for commercial viability. We want to maintain IP leadership and establish industry partnerships."
 
 ### Output
+
 **Space Technology Development Program: Advanced Propulsion and Autonomy**
 
 **Program Overview**
 
-| Parameter | Value |
-|-----------|-------|
-| Investment | $150M over 4 years |
-| Technology Streams | 8 (4 propulsion, 4 autonomy) |
-| Start TRL | 3 (analytical proof of concept) |
-| Target TRL | 7 (system demo in operational environment) |
-| Research Partners | 15+ academic and industry |
+| Parameter          | Value                                      |
+| ------------------ | ------------------------------------------ |
+| Investment         | $150M over 4 years                         |
+| Technology Streams | 8 (4 propulsion, 4 autonomy)               |
+| Start TRL          | 3 (analytical proof of concept)            |
+| Target TRL         | 7 (system demo in operational environment) |
+| Research Partners  | 15+ academic and industry                  |
 
 **Technology Portfolio**
 
-| Stream | Current TRL | Year 4 Target | Investment |
-|--------|-------------|---------------|------------|
-| Advanced Hall Thrusters | TRL 3 | TRL 7 | $25M |
-| Green Monopropellant | TRL 3 | TRL 6 | $20M |
-| Solar Electric Propulsion | TRL 4 | TRL 7 | $18M |
-| Electrospray Propulsion | TRL 2 | TRL 5 | $12M |
-| Autonomous Navigation | TRL 3 | TRL 7 | $22M |
-| On-board AI/ML Processing | TRL 3 | TRL 6 | $18M |
-| Distributed Spacecraft Ops | TRL 2 | TRL 5 | $15M |
-| Predictive Maintenance | TRL 3 | TRL 6 | $12M |
-| Program Management | - | - | $8M |
+| Stream                     | Current TRL | Year 4 Target | Investment |
+| -------------------------- | ----------- | ------------- | ---------- |
+| Advanced Hall Thrusters    | TRL 3       | TRL 7         | $25M       |
+| Green Monopropellant       | TRL 3       | TRL 6         | $20M       |
+| Solar Electric Propulsion  | TRL 4       | TRL 7         | $18M       |
+| Electrospray Propulsion    | TRL 2       | TRL 5         | $12M       |
+| Autonomous Navigation      | TRL 3       | TRL 7         | $22M       |
+| On-board AI/ML Processing  | TRL 3       | TRL 6         | $18M       |
+| Distributed Spacecraft Ops | TRL 2       | TRL 5         | $15M       |
+| Predictive Maintenance     | TRL 3       | TRL 6         | $12M       |
+| Program Management         | -           | -             | $8M        |
 
 **TRL Advancement Strategy**
 
-*TRL 3 to 4 (Year 1)*
+_TRL 3 to 4 (Year 1)_
+
 - Complete breadboard validation in laboratory
 - Demonstrate critical function in controlled environment
 - Milestone: Component-level test data package
 
-*TRL 4 to 5 (Year 2)*
+_TRL 4 to 5 (Year 2)_
+
 - Integrate components in relevant environment
 - Breadboard validation with realistic inputs
 - Milestone: Integrated system test report
 
-*TRL 5 to 6 (Year 3)*
+_TRL 5 to 6 (Year 3)_
+
 - System/subsystem prototype demonstration
 - Relevant environment testing (thermal vacuum, vibration)
 - Milestone: Environmental qualification report
 
-*TRL 6 to 7 (Year 4)*
+_TRL 6 to 7 (Year 4)_
+
 - System prototype demo in operational environment
 - Flight demonstration opportunity (rideshare mission)
 - Milestone: Flight demonstration data package
 
 **Validation and Testing Approach**
 
-| Test Phase | Facility | Duration | Cost |
-|------------|----------|----------|------|
-| Component testing | In-house labs | Ongoing | $8M |
-| Environmental testing | Partner facilities | 6 months | $12M |
-| Flight demonstration | Rideshare mission | 12 months | $18M |
+| Test Phase            | Facility           | Duration  | Cost |
+| --------------------- | ------------------ | --------- | ---- |
+| Component testing     | In-house labs      | Ongoing   | $8M  |
+| Environmental testing | Partner facilities | 6 months  | $12M |
+| Flight demonstration  | Rideshare mission  | 12 months | $18M |
 
 **IP Strategy**
+
 - Patent filing at TRL 4 transition (core innovations protected)
 - Provisional patents during development for flexibility
 - Licensing model: Non-exclusive for commercial, exclusive for defense
 - Target: 10+ patents per technology stream
 
 **Commercialization Pathway**
+
 - Year 3: Industry partnership agreements for TRL 6+ technologies
 - Year 4: Licensing agreements with satellite manufacturers
 - Year 5+: Spin-off venture for propulsion products
 - Revenue target: $50M+ licensing revenue within 5 years post-program
 
 **Partnership Framework**
+
 - Academic partners: MIT, Stanford, Caltech (fundamental research)
 - National labs: JPL, APL (testing and validation)
 - Industry: Lockheed, Northrop (integration and commercialization)
@@ -193,6 +207,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Commercial Space Mission Architecture Expert](commercial-space-mission-architecture-expert.md)
 - [Spacecraft Development and Payload Integration Expert](spacecraft-development-and-payload-integration-expert.md)
 - [Space Technology Transfer and Commercialization](space-technology/space-technology-transfer-commercialization.md)

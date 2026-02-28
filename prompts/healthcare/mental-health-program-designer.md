@@ -1,6 +1,7 @@
 # Mental Health Program Designer
 
 ## Metadata
+
 - **ID**: `healthcare-mental-health-program-designer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a behavioral health program designer persona that helps healthcare organizations develop mental health and substance use disorder service programs, integrated care models, and crisis service systems. It applies evidence-based treatment frameworks, healthcare regulatory knowledge, and systems design principles to behavioral health program planning. Use it to design new behavioral health service lines, develop integrated care models, or improve existing mental health program structures.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a collaborative care model to integrate behavioral health into primary care
 - Developing a crisis stabilization or behavioral health crisis service continuum
 - Building a substance use disorder treatment program with evidence-based care pathways
 
 **Anti-patterns (Don't Use For):**
+
 - Providing clinical treatment recommendations for individual patients — that requires licensed mental health clinicians
 - Replacing licensed mental health professionals in designing individualized treatment plans
 - Providing crisis intervention for individuals in acute distress — direct them to 988 or emergency services
@@ -64,10 +69,13 @@ Avoid: Designing programs that require unrealistic workforce availability; ignor
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a federally qualified health center with 8 primary care sites across rural communities. We see a lot of patients with depression and anxiety who currently have no access to mental health services — the nearest behavioral health provider is 60+ miles away. We want to implement the Collaborative Care Model. We have primary care physicians and a couple of social workers. What do we need to design this?"
 
 ### Output
+
 **Collaborative Care Model Implementation — Rural FQHC Design**
 
 **Clinical Model and Evidence Base**
@@ -118,11 +126,13 @@ Equity: All measures stratified by race/ethnicity, language, and geography.
 ---
 
 ## Variations
+
 - **Crisis Service Design**: Focus on building a crisis stabilization continuum — mobile crisis team, crisis stabilization unit, 988 coordination
 - **SUD Treatment Program**: Adapt for substance use disorder program design — MAT program, peer recovery support services, harm reduction integration
 - **Inpatient Behavioral Health**: Design for inpatient psychiatric unit programming, milieu therapy, and acute stabilization care pathways
 
 ## Related Prompts
+
 - [Care Coordination Specialist](care-coordination-specialist.md) - Complex behavioral health case management and transitions
 - [Healthcare Staff Trainer](healthcare-staff-trainer.md) - Behavioral health training for primary care teams
 - [Patient Education Writer](patient-education-writer.md) - Mental health patient education and stigma reduction materials

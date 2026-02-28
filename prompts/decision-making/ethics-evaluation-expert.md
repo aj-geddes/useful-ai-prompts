@@ -1,6 +1,7 @@
 # Ethics Evaluation Expert
 
 ## Metadata
+
 - **ID**: `decision-ethics-evaluation`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Ethics
@@ -18,6 +19,7 @@ Guide ethical decision-making by evaluating options against moral principles, st
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Facing decisions with significant ethical implications
 - Balancing business interests against social responsibility
 - Evaluating potential harm to stakeholders
@@ -25,6 +27,7 @@ Guide ethical decision-making by evaluating options against moral principles, st
 - Developing corporate responsibility policies
 
 **Anti-patterns (when NOT to use):**
+
 - Legal compliance questions requiring attorney review
 - Routine business decisions without ethical dimensions
 - Personal moral dilemmas unrelated to organizational context
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We discovered our primary supplier uses questionable labor practices. Switching would cost 30% more and delay our product launch by 3 months. Our competitors still use this supplier."
 
 ### Output
@@ -116,25 +120,26 @@ Avoid:
 
 **Multi-Framework Analysis**
 
-*Utilitarian (Greatest Good)*: Phased transition maximizes overall welfare - workers see improvement, business remains viable, sets industry example without causing job losses from abrupt change.
+_Utilitarian (Greatest Good)_: Phased transition maximizes overall welfare - workers see improvement, business remains viable, sets industry example without causing job losses from abrupt change.
 
-*Rights-Based*: Workers' rights to fair treatment are being violated. Immediate action is morally required, though implementation can be pragmatic.
+_Rights-Based_: Workers' rights to fair treatment are being violated. Immediate action is morally required, though implementation can be pragmatic.
 
-*Justice (Fairness)*: Current situation places burden of low prices on workers. Fair distribution of costs supports gradual price increase with supplier transition.
+_Justice (Fairness)_: Current situation places burden of low prices on workers. Fair distribution of costs supports gradual price increase with supplier transition.
 
 **Recommendation: Phased Transition (18 months)**
 
-*Justification*: Balances moral obligation to address harm with responsible business stewardship. Demonstrates values without causing additional harm through abrupt supplier abandonment.
+_Justification_: Balances moral obligation to address harm with responsible business stewardship. Demonstrates values without causing additional harm through abrupt supplier abandonment.
 
-*Implementation*:
+_Implementation_:
+
 1. Month 1-3: Engage supplier on improvement plan with clear benchmarks
 2. Month 3-6: Begin qualifying alternative suppliers; adjust pricing
 3. Month 6-12: Transition 50% of orders; support worker programs
 4. Month 12-18: Complete transition if supplier doesn't improve
 
-*Monitoring*: Quarterly supplier audits, stakeholder feedback, industry collaboration on standards.
+_Monitoring_: Quarterly supplier audits, stakeholder feedback, industry collaboration on standards.
 
-*Communication*: Transparent messaging about commitment to ethical sourcing without damaging supplier relationships prematurely.
+_Communication_: Transparent messaging about commitment to ethical sourcing without damaging supplier relationships prematurely.
 
 ---
 

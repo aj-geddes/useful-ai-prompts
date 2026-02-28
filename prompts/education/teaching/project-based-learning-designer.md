@@ -1,6 +1,7 @@
 # Project-Based Learning Designer
 
 ## Metadata
+
 - **ID**: `education-project-based-learning-designer`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt designs rigorous, authentic project-based learning units using the Gold Standard PBL framework from PBLWorks. It creates driving questions, milestone sequences, public products, and embedded assessments that develop both content knowledge and 21st century skills. The output is a complete PBL unit blueprint ready for implementation.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a 2-6 week interdisciplinary unit that connects academic content to real-world problems
 - Converting a traditional content unit into an inquiry-driven PBL experience
 - Building a capstone project for a semester or year-end course culmination
 
 **Anti-patterns (Don't Use For):**
+
 - Creating short activities mistaken for PBL (dessert projects added after content instruction)
 - Designing projects where the outcome is predetermined and students have no voice in the product
 - Replacing standards-based instruction without embedding content learning throughout the project
@@ -70,25 +75,27 @@ Avoid: Driving questions that have one right answer, "projects" that are just de
 ## Example Usage
 
 ### Input
+
 "I want to design a PBL unit for my 9th grade biology class on ecosystems and human impact. Standards include HS-LS2-6 and HS-LS2-7 (ecosystem dynamics and human impact). I have 4 weeks and the school is near a local watershed that has faced pollution issues. The class of 24 is mixed ability."
 
 ### Output
+
 **PBL Unit Blueprint: "What Does Our Watershed Need From Us?"**
-*9th Grade Biology | 4 Weeks | HS-LS2-6, HS-LS2-7*
+_9th Grade Biology | 4 Weeks | HS-LS2-6, HS-LS2-7_
 
 ---
 
 **Driving Question**
 "What actions should our community take to restore and protect [local watershed name] — and how do we convince decision-makers to act?"
 
-*Why it works:* Requires ecosystem dynamics knowledge (LS2-6), human impact analysis (LS2-7), evidence-based argumentation, and has no single correct answer. Students must engage with real data to form defensible positions.
+_Why it works:_ Requires ecosystem dynamics knowledge (LS2-6), human impact analysis (LS2-7), evidence-based argumentation, and has no single correct answer. Students must engage with real data to form defensible positions.
 
 ---
 
 **Public Product**
 Each team produces a watershed restoration proposal — a 10-minute presentation plus a one-page policy brief — delivered to a panel of city council representatives, watershed authority staff, and local environmental nonprofit leaders. The panel will ask questions and evaluate the proposals as if selecting one for a community grant.
 
-*Why it matters:* Real audience with actual stake in the question. Students' work has potential to influence real decisions.
+_Why it matters:_ Real audience with actual stake in the question. Students' work has potential to influence real decisions.
 
 ---
 
@@ -99,18 +106,19 @@ Students receive a "crisis briefing" — a news article and water quality data r
 
 **Milestone Sequence**
 
-| Week | Milestone | Deliverable | Key Learning |
-|------|-----------|-------------|--------------|
-| 1 | Ecosystem Analysis | Team ecosystem map (energy flow, nutrient cycles, keystone species) | HS-LS2-6 content, data literacy |
-| 2 | Human Impact Investigation | Impact report: identify 2-3 human stressors with evidence | HS-LS2-7, research skills |
-| 3 | Restoration Research + Draft | Draft proposal with 3 evidence-based recommendations | Scientific argumentation, ELA writing |
-| 4 | Critique + Revise + Present | Final proposal and panel presentation | Communication, revision |
+| Week | Milestone                    | Deliverable                                                         | Key Learning                          |
+| ---- | ---------------------------- | ------------------------------------------------------------------- | ------------------------------------- |
+| 1    | Ecosystem Analysis           | Team ecosystem map (energy flow, nutrient cycles, keystone species) | HS-LS2-6 content, data literacy       |
+| 2    | Human Impact Investigation   | Impact report: identify 2-3 human stressors with evidence           | HS-LS2-7, research skills             |
+| 3    | Restoration Research + Draft | Draft proposal with 3 evidence-based recommendations                | Scientific argumentation, ELA writing |
+| 4    | Critique + Revise + Present  | Final proposal and panel presentation                               | Communication, revision               |
 
-*Student Voice/Choice:* Teams choose which aspect of the ecosystem to specialize in (aquatic species, plant communities, water chemistry, or human land use). Each team's expertise feeds the class's collective understanding.
+_Student Voice/Choice:_ Teams choose which aspect of the ecosystem to specialize in (aquatic species, plant communities, water chemistry, or human land use). Each team's expertise feeds the class's collective understanding.
 
 ---
 
 **Formative Checkpoints**
+
 - End of Week 1: Ecosystem map peer critique using provided criteria checklist
 - Mid-Week 2: Teacher conference with each team (10 min) reviewing evidence quality
 - End of Week 3: Gallery walk draft critique — two stars, one question per team
@@ -122,9 +130,11 @@ Students receive a "crisis briefing" — a news article and water quality data r
 ---
 
 ## Variations
+
 - **Shorter Sprint Version**: Compress to 2 weeks with a simpler product (infographic + 5-minute presentation) for PBL-new classrooms
 - **Interdisciplinary Version**: Partner with English and Social Studies to address environmental justice writing and civic action standards simultaneously
 
 ## Related Prompts
+
 - [Assessment Designer](assessment-designer.md) - Build the rubric and formative checks for your PBL unit
 - [Lesson Plan Creator](lesson-plan-creator.md) - Design the mini-lessons embedded within milestones

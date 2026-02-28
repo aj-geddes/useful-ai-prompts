@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement comprehensive health check endpoints for liveness, readiness,
+date: "2025-01-01"
+description:
+  Implement comprehensive health check endpoints for liveness, readiness,
   and dependency monitoring. Use when deploying to Kubernetes, implementing load balancer
   health checks, or monitoring service availability.
 layout: skill
 slug: health-check-endpoints
 tags:
-- kubernetes
-- deployment
+  - kubernetes
+  - deployment
 title: health-check-endpoints
 ---
 
@@ -30,24 +31,24 @@ Implement health check endpoints to monitor service health, dependencies, and re
 
 ## Health Check Types
 
-| Type | Purpose | Failure Action |
-|------|---------|----------------|
-| **Liveness** | Process is running | Restart container |
-| **Readiness** | Ready for traffic | Remove from load balancer |
-| **Startup** | Application started | Delay other probes |
-| **Deep** | Dependencies healthy | Alert/Circuit break |
+| Type          | Purpose              | Failure Action            |
+| ------------- | -------------------- | ------------------------- |
+| **Liveness**  | Process is running   | Restart container         |
+| **Readiness** | Ready for traffic    | Remove from load balancer |
+| **Startup**   | Application started  | Delay other probes        |
+| **Deep**      | Dependencies healthy | Alert/Circuit break       |
 
 ## Implementation Examples
 
 ### 1. **Express.js Health Checks**
 
 ```typescript
-import express from 'express';
-import { Pool } from 'pg';
-import Redis from 'ioredis';
+import express from "express";
+import { Pool } from "pg";
+import Redis from "ioredis";
 
 interface HealthStatus {
-  status: 'healthy' | 'degraded' | 'unhealthy';
+  status: "healthy" | "degraded" | "unhealthy";
   timestamp: string;
   uptime: number;
   checks: Record<string, CheckResult>;
@@ -56,7 +57,7 @@ interface HealthStatus {
 }
 
 interface CheckResult {
-  status: 'pass' | 'fail' | 'warn';
+  status: "pass" | "fail" | "warn";
   time: number;
   output?: string;
   error?: string;
@@ -64,28 +65,25 @@ interface CheckResult {
 
 class HealthCheckService {
   private startTime = Date.now();
-  private version = process.env.APP_VERSION || '1.0.0';
-  private environment = process.env.NODE_ENV || 'development';
+  private version = process.env.APP_VERSION || "1.0.0";
+  private environment = process.env.NODE_ENV || "development";
 
   constructor(
     private db: Pool,
-    private redis: Redis
+    private redis: Redis,
   ) {}
 
   async liveness(): Promise<{ status: string }> {
     // Simple check: is the process alive?
-    return { status: 'alive' };
+    return { status: "alive" };
   }
 
   async readiness(): Promise<HealthStatus> {
-    const checks = await Promise.all([
-      this.checkDatabase(),
-      this.checkRedis()
-    ]);
+    const checks = await Promise.all([this.checkDatabase(), this.checkRedis()]);
 
     const results = {
       database: checks[0],
-      redis: checks[1]
+      redis: checks[1],
     };
 
     const status = this.determineStatus(results);
@@ -96,7 +94,7 @@ class HealthCheckService {
       uptime: Date.now() - this.startTime,
       checks: results,
       version: this.version,
-      environment: this.environment
+      environment: this.environment,
     };
   }
 
@@ -106,7 +104,7 @@ class HealthCheckService {
       this.checkRedis(),
       this.checkExternalAPI(),
       this.checkDiskSpace(),
-      this.checkMemory()
+      this.checkMemory(),
     ]);
 
     const results = {
@@ -114,7 +112,7 @@ class HealthCheckService {
       redis: checks[1],
       external_api: checks[2],
       disk_space: checks[3],
-      memory: checks[4]
+      memory: checks[4],
     };
 
     const status = this.determineStatus(results);
@@ -125,7 +123,7 @@ class HealthCheckService {
       uptime: Date.now() - this.startTime,
       checks: results,
       version: this.version,
-      environment: this.environment
+      environment: this.environment,
     };
   }
 
@@ -133,27 +131,27 @@ class HealthCheckService {
     const startTime = Date.now();
 
     try {
-      const result = await this.db.query('SELECT 1');
+      const result = await this.db.query("SELECT 1");
       const time = Date.now() - startTime;
 
       if (time > 1000) {
         return {
-          status: 'warn',
+          status: "warn",
           time,
-          output: 'Database response slow'
+          output: "Database response slow",
         };
       }
 
       return {
-        status: 'pass',
+        status: "pass",
         time,
-        output: 'Database connection healthy'
+        output: "Database connection healthy",
       };
     } catch (error: any) {
       return {
-        status: 'fail',
+        status: "fail",
         time: Date.now() - startTime,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -166,15 +164,15 @@ class HealthCheckService {
       const time = Date.now() - startTime;
 
       return {
-        status: 'pass',
+        status: "pass",
         time,
-        output: 'Redis connection healthy'
+        output: "Redis connection healthy",
       };
     } catch (error: any) {
       return {
-        status: 'fail',
+        status: "fail",
         time: Date.now() - startTime,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -183,30 +181,30 @@ class HealthCheckService {
     const startTime = Date.now();
 
     try {
-      const response = await fetch('https://api.example.com/health', {
-        signal: AbortSignal.timeout(5000)
+      const response = await fetch("https://api.example.com/health", {
+        signal: AbortSignal.timeout(5000),
       });
 
       const time = Date.now() - startTime;
 
       if (!response.ok) {
         return {
-          status: 'warn',
+          status: "warn",
           time,
-          output: `API returned ${response.status}`
+          output: `API returned ${response.status}`,
         };
       }
 
       return {
-        status: 'pass',
+        status: "pass",
         time,
-        output: 'External API healthy'
+        output: "External API healthy",
       };
     } catch (error: any) {
       return {
-        status: 'warn',
+        status: "warn",
         time: Date.now() - startTime,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -215,9 +213,9 @@ class HealthCheckService {
     const startTime = Date.now();
 
     try {
-      const { execSync } = require('child_process');
-      const output = execSync('df -h /').toString();
-      const lines = output.split('\n');
+      const { execSync } = require("child_process");
+      const output = execSync("df -h /").toString();
+      const lines = output.split("\n");
       const stats = lines[1].split(/\s+/);
       const usagePercent = parseInt(stats[4]);
 
@@ -225,30 +223,30 @@ class HealthCheckService {
 
       if (usagePercent > 90) {
         return {
-          status: 'fail',
+          status: "fail",
           time,
-          output: `Disk usage at ${usagePercent}%`
+          output: `Disk usage at ${usagePercent}%`,
         };
       }
 
       if (usagePercent > 80) {
         return {
-          status: 'warn',
+          status: "warn",
           time,
-          output: `Disk usage at ${usagePercent}%`
+          output: `Disk usage at ${usagePercent}%`,
         };
       }
 
       return {
-        status: 'pass',
+        status: "pass",
         time,
-        output: `Disk usage at ${usagePercent}%`
+        output: `Disk usage at ${usagePercent}%`,
       };
     } catch (error: any) {
       return {
-        status: 'warn',
+        status: "warn",
         time: Date.now() - startTime,
-        error: error.message
+        error: error.message,
       };
     }
   }
@@ -266,40 +264,40 @@ class HealthCheckService {
 
       if (usagePercent > 90) {
         return {
-          status: 'warn',
+          status: "warn",
           time,
-          output: `Memory usage at ${usagePercent.toFixed(2)}%`
+          output: `Memory usage at ${usagePercent.toFixed(2)}%`,
         };
       }
 
       return {
-        status: 'pass',
+        status: "pass",
         time,
-        output: `Memory usage at ${usagePercent.toFixed(2)}%`
+        output: `Memory usage at ${usagePercent.toFixed(2)}%`,
       };
     } catch (error: any) {
       return {
-        status: 'warn',
+        status: "warn",
         time: Date.now() - startTime,
-        error: error.message
+        error: error.message,
       };
     }
   }
 
   private determineStatus(
-    checks: Record<string, CheckResult>
-  ): 'healthy' | 'degraded' | 'unhealthy' {
+    checks: Record<string, CheckResult>,
+  ): "healthy" | "degraded" | "unhealthy" {
     const results = Object.values(checks);
 
-    if (results.some(c => c.status === 'fail')) {
-      return 'unhealthy';
+    if (results.some((c) => c.status === "fail")) {
+      return "unhealthy";
     }
 
-    if (results.some(c => c.status === 'warn')) {
-      return 'degraded';
+    if (results.some((c) => c.status === "warn")) {
+      return "degraded";
     }
 
-    return 'healthy';
+    return "healthy";
   }
 }
 
@@ -310,16 +308,16 @@ const redis = new Redis(process.env.REDIS_URL);
 const healthCheck = new HealthCheckService(db, redis);
 
 // Liveness probe (lightweight)
-app.get('/health/live', async (req, res) => {
+app.get("/health/live", async (req, res) => {
   const result = await healthCheck.liveness();
   res.status(200).json(result);
 });
 
 // Readiness probe (checks critical dependencies)
-app.get('/health/ready', async (req, res) => {
+app.get("/health/ready", async (req, res) => {
   const result = await healthCheck.readiness();
 
-  if (result.status === 'unhealthy') {
+  if (result.status === "unhealthy") {
     return res.status(503).json(result);
   }
 
@@ -327,26 +325,28 @@ app.get('/health/ready', async (req, res) => {
 });
 
 // Deep health check (checks all dependencies)
-app.get('/health', async (req, res) => {
+app.get("/health", async (req, res) => {
   const result = await healthCheck.deep();
 
   const statusCode =
-    result.status === 'healthy' ? 200 :
-    result.status === 'degraded' ? 200 :
-    503;
+    result.status === "healthy"
+      ? 200
+      : result.status === "degraded"
+        ? 200
+        : 503;
 
   res.status(statusCode).json(result);
 });
 
 // Startup probe
-app.get('/health/startup', async (req, res) => {
+app.get("/health/startup", async (req, res) => {
   // Check if application has fully started
   const isReady = true; // Check actual startup conditions
 
   if (isReady) {
-    res.status(200).json({ status: 'started' });
+    res.status(200).json({ status: "started" });
   } else {
-    res.status(503).json({ status: 'starting' });
+    res.status(503).json({ status: "starting" });
   }
 });
 ```
@@ -565,6 +565,7 @@ if __name__ == '__main__':
 ## Best Practices
 
 ### ✅ DO
+
 - Implement separate liveness and readiness probes
 - Keep liveness probes lightweight
 - Check critical dependencies in readiness
@@ -576,6 +577,7 @@ if __name__ == '__main__':
 - Monitor health check failures
 
 ### ❌ DON'T
+
 - Make liveness probes check dependencies
 - Return 200 for failed health checks
 - Take too long to respond
@@ -592,33 +594,33 @@ spec:
   template:
     spec:
       containers:
-      - name: app
-        livenessProbe:
-          httpGet:
-            path: /health/live
-            port: 3000
-          initialDelaySeconds: 15
-          periodSeconds: 10
-          timeoutSeconds: 3
-          failureThreshold: 3
+        - name: app
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: 3000
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
 
-        readinessProbe:
-          httpGet:
-            path: /health/ready
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-          timeoutSeconds: 3
-          failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
 
-        startupProbe:
-          httpGet:
-            path: /health/startup
-            port: 3000
-          initialDelaySeconds: 0
-          periodSeconds: 5
-          timeoutSeconds: 3
-          failureThreshold: 30
+          startupProbe:
+            httpGet:
+              path: /health/startup
+              port: 3000
+            initialDelaySeconds: 0
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 30
 ```
 
 ## Resources

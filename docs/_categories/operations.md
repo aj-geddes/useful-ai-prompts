@@ -6,7 +6,19 @@ slug: operations
 icon: fas fa-cogs
 description: "Expert AI prompts for operations managers: process optimization, capacity planning, KPI dashboards, vendor management, quality systems, and business continuity."
 seo_title: "Operations Management AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [process optimization, capacity planning, KPI dashboard, vendor management, quality management, lean operations, inventory management, procurement, business continuity, change management]
+tags:
+  [
+    process optimization,
+    capacity planning,
+    KPI dashboard,
+    vendor management,
+    quality management,
+    lean operations,
+    inventory management,
+    procurement,
+    business continuity,
+    change management,
+  ]
 ---
 
 The Operations Management category provides AI prompts for operations directors, plant managers, supply chain leads, and process improvement specialists. These prompts apply Lean, Six Sigma, and operations research frameworks to the specific inefficiencies and constraints of your operations.

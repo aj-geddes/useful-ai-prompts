@@ -1,6 +1,7 @@
 # Resource Allocation Optimizer
 
 ## Metadata
+
 - **ID**: `project-management-resource-allocation-optimizer`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps project and resource managers optimize team allocation across projects and workstreams by analyzing skills requirements, individual capacity, allocation conflicts, and utilization rates. It produces a balanced resource plan that prevents burnout, surfaces gaps requiring backfill or contractor support, and resolves competing priorities across a project portfolio.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning resource needs for an upcoming project while managing ongoing work in a team
 - Resolving allocation conflicts when multiple project managers are competing for the same specialists
 - Diagnosing team burnout or underperformance caused by overallocation or poor skills matching
 
 **Anti-patterns (Don't Use For):**
+
 - Individual performance management or HR capacity decisions
 - Large-scale organizational design and workforce planning at the department level
 - Detailed task scheduling at the individual daily level (use a project management tool instead)
@@ -66,10 +71,13 @@ Avoid: Assigning people to 100%+ allocation without flagging it; treating all pr
 ---
 
 ## Example Usage
+
 ### Input
+
 "I manage a team of 6 people. Here are their roles and current allocations: Sarah (Senior Backend Dev) — Project A 60%, Project B 40%; Marcus (Backend Dev) — Project B 80%, on-call rotation 10%; Priya (Frontend Dev) — Project A 50%, Project C 30%; Tom (DevOps) — Project A 30%, Project B 30%, Project C 20%; Lisa (QA Engineer) — Project A 40%, Project B 40%; Amir (Product Manager) — Project A 50%, Project C 50%. Project B is the highest priority. Project C is lowest priority but the client is vocal. We just got a new Project D starting next month — it needs a backend dev (40%) and a QA resource (30%)."
 
 ### Output
+
 **Resource Allocation Analysis and Optimization Plan**
 Team: 6 members | New Demand: Project D starting March 2026
 
@@ -77,14 +85,14 @@ Team: 6 members | New Demand: Project D starting March 2026
 
 **Current Utilization Summary**
 
-| Team Member | Role | Current Allocation | Utilization | Status |
-|-------------|------|-------------------|-------------|--------|
-| Sarah | Senior Backend Dev | Project A 60% + Project B 40% | 100% | OVER-ALLOCATED — Burnout Risk |
-| Marcus | Backend Dev | Project B 80% + On-call 10% | 90% | HIGH — At Ceiling |
-| Priya | Frontend Dev | Project A 50% + Project C 30% | 80% | OPTIMAL |
-| Tom | DevOps | Project A 30% + Project B 30% + Project C 20% | 80% | OPTIMAL |
-| Lisa | QA Engineer | Project A 40% + Project B 40% | 80% | OPTIMAL |
-| Amir | Product Manager | Project A 50% + Project C 50% | 100% | OVER-ALLOCATED — Burnout Risk |
+| Team Member | Role               | Current Allocation                            | Utilization | Status                        |
+| ----------- | ------------------ | --------------------------------------------- | ----------- | ----------------------------- |
+| Sarah       | Senior Backend Dev | Project A 60% + Project B 40%                 | 100%        | OVER-ALLOCATED — Burnout Risk |
+| Marcus      | Backend Dev        | Project B 80% + On-call 10%                   | 90%         | HIGH — At Ceiling             |
+| Priya       | Frontend Dev       | Project A 50% + Project C 30%                 | 80%         | OPTIMAL                       |
+| Tom         | DevOps             | Project A 30% + Project B 30% + Project C 20% | 80%         | OPTIMAL                       |
+| Lisa        | QA Engineer        | Project A 40% + Project B 40%                 | 80%         | OPTIMAL                       |
+| Amir        | Product Manager    | Project A 50% + Project C 50%                 | 100%        | OVER-ALLOCATED — Burnout Risk |
 
 **Team average utilization: 88.3%** — above sustainable target, with two individuals at serious risk.
 
@@ -92,14 +100,14 @@ Team: 6 members | New Demand: Project D starting March 2026
 
 **Allocation Heat Map**
 
-| Person | Project A | Project B | Project C | Project D | On-Call/Admin | Total |
-|--------|-----------|-----------|-----------|-----------|---------------|-------|
-| Sarah | 60% | 40% | — | — | — | **100%** |
-| Marcus | — | 80% | — | — | 10% | **90%** |
-| Priya | 50% | — | 30% | — | — | 80% |
-| Tom | 30% | 30% | 20% | — | — | 80% |
-| Lisa | 40% | 40% | — | — | — | 80% |
-| Amir | 50% | — | 50% | — | — | **100%** |
+| Person | Project A | Project B | Project C | Project D | On-Call/Admin | Total    |
+| ------ | --------- | --------- | --------- | --------- | ------------- | -------- |
+| Sarah  | 60%       | 40%       | —         | —         | —             | **100%** |
+| Marcus | —         | 80%       | —         | —         | 10%           | **90%**  |
+| Priya  | 50%       | —         | 30%       | —         | —             | 80%      |
+| Tom    | 30%       | 30%       | 20%       | —         | —             | 80%      |
+| Lisa   | 40%       | 40%       | —         | —         | —             | 80%      |
+| Amir   | 50%       | —         | 50%       | —         | —             | **100%** |
 
 ---
 
@@ -134,25 +142,27 @@ Lisa is at 80% across Projects A and B. Project D requires 30% QA capacity — a
 
 **Revised Allocation Plan (Post-Rebalancing)**
 
-| Person | Project A | Project B | Project C | Project D | Admin | Total |
-|--------|-----------|-----------|-----------|-----------|-------|-------|
-| Sarah | 30% | 40% | — | 40% | — | **80%** |
-| Marcus | — | 80% | — | — | 10% | **90%** |
-| Priya | 50% | — | 30% | — | — | 80% |
-| Tom | 30% | 30% | 20% | — | — | 80% |
-| Lisa | 40% | 40% | — | — | — | 80% |
-| Amir | 50% | — | 20% | 10% | — | 80% |
-| QA Contractor | — | — | — | 30% | — | 30% |
-| PM Contractor | — | — | 30% | — | — | 30% |
+| Person        | Project A | Project B | Project C | Project D | Admin | Total   |
+| ------------- | --------- | --------- | --------- | --------- | ----- | ------- |
+| Sarah         | 30%       | 40%       | —         | 40%       | —     | **80%** |
+| Marcus        | —         | 80%       | —         | —         | 10%   | **90%** |
+| Priya         | 50%       | —         | 30%       | —         | —     | 80%     |
+| Tom           | 30%       | 30%       | 20%       | —         | —     | 80%     |
+| Lisa          | 40%       | 40%       | —         | —         | —     | 80%     |
+| Amir          | 50%       | —         | 20%       | 10%       | —     | 80%     |
+| QA Contractor | —         | —         | —         | 30%       | —     | 30%     |
+| PM Contractor | —         | —         | 30%       | —         | —     | 30%     |
 
 **Monthly contractor budget required: ~$7,700**
 
 ---
 
 ## Variations
+
 - **Portfolio Resource Forecast**: 6-12 month resource demand forecasting across a program portfolio
 - **Skills Gap Hiring Plan**: Translate resource gaps into a structured hiring or contractor backfill roadmap
 
 ## Related Prompts
+
 - [Agile Sprint Planner](agile-sprint-planner.md) - Apply team capacity data to sprint planning and commitment
 - [Vendor Project Coordinator](vendor-project-coordinator.md) - Manage contractor and vendor resource contributions

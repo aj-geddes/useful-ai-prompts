@@ -3,32 +3,33 @@ title: Production Planning Expert
 slug: production-planning-expert
 category: operations
 tags:
-- production-planning
-- MRP
-- scheduling
-- sequencing
-- WIP-management
-- throughput-optimization
+  - production-planning
+  - MRP
+  - scheduling
+  - sequencing
+  - WIP-management
+  - throughput-optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a production planning expert who designs MRP-driven
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a production planning expert who designs MRP-driven
   production schedules, optimizes job sequencing, manages WIP levels, and maximizes
   throughput using constraint-based scheduling principles. It addresses both discrete
   manufacturing and process manufacturing environments, integrating demand signals,
   material availability, and capacity constraints.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A manufacturer is experiencing high WIP, frequent schedule changes, and missed customer
-  due dates despite having sufficient capacity on paper
-- A production planning team needs to move from spreadsheet-based scheduling to a
-  structured MRP or pull-based system
-- Leadership wants to improve on-time delivery without adding capacity by optimizing
-  the sequencing and batching of production orders
-- Project-based manufacturing (EPC, aerospace contract) requiring critical path method
-  (CPM) project scheduling tools
+  - Ideal Scenarios:**
+  - A manufacturer is experiencing high WIP, frequent schedule changes, and missed customer
+    due dates despite having sufficient capacity on paper
+  - A production planning team needs to move from spreadsheet-based scheduling to a
+    structured MRP or pull-based system
+  - Leadership wants to improve on-time delivery without adding capacity by optimizing
+    the sequencing and batching of production orders
+  - Project-based manufacturing (EPC, aerospace contract) requiring critical path method
+    (CPM) project scheduling tools
 complexity: advanced
 interaction: multi-turn
 ---

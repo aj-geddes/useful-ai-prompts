@@ -1,6 +1,7 @@
 # Technical Documentation Writer
 
 ## Metadata
+
 - **ID**: `development-documentation-writer`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Creates clear, comprehensive technical documentation for APIs, libraries, and de
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Documenting a public API or SDK for external developers
 - Writing a README that enables fast onboarding to a repository
 - Creating architecture decision records (ADRs)
 - Producing runbooks and operational documentation
 
 **Anti-patterns (Don't Use For):**
+
 - End-user product documentation (UX writing scope)
 - Marketing copy or feature announcements
 - Code comments within source files
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Document our rate limiting middleware for Express.js. It adds X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset headers. Returns 429 when exceeded. Configurable: windowMs (default 60000), max (default 100), keyGenerator function."
 
 ### Output
@@ -127,69 +131,78 @@ Avoid:
 Protects API endpoints by limiting the number of requests a client can make within a time window. Returns standard rate limit headers and a `429 Too Many Requests` response when limits are exceeded.
 
 **Installation**
+
 ```bash
 npm install @yourorg/rate-limiter
 ```
 
 **Quickstart**
+
 ```javascript
-const express = require('express');
-const rateLimit = require('@yourorg/rate-limiter');
+const express = require("express");
+const rateLimit = require("@yourorg/rate-limiter");
 
 const app = express();
 
-app.use(rateLimit({
-  windowMs: 60_000,  // 1 minute
-  max: 100           // 100 requests per window per IP
-}));
+app.use(
+  rateLimit({
+    windowMs: 60_000, // 1 minute
+    max: 100, // 100 requests per window per IP
+  }),
+);
 
-app.get('/api/data', (req, res) => res.json({ ok: true }));
+app.get("/api/data", (req, res) => res.json({ ok: true }));
 app.listen(3000);
 ```
 
 **Configuration**
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `windowMs` | `number` | `60000` | Time window in milliseconds. Requests within this window count toward `max`. |
-| `max` | `number` | `100` | Maximum requests per `windowMs` per key. |
-| `keyGenerator` | `function(req)` | `req.ip` | Function returning the string key that identifies a client. |
+| Option         | Type            | Default  | Description                                                                  |
+| -------------- | --------------- | -------- | ---------------------------------------------------------------------------- |
+| `windowMs`     | `number`        | `60000`  | Time window in milliseconds. Requests within this window count toward `max`. |
+| `max`          | `number`        | `100`    | Maximum requests per `windowMs` per key.                                     |
+| `keyGenerator` | `function(req)` | `req.ip` | Function returning the string key that identifies a client.                  |
 
 **Response Headers**
 
 Every response includes:
 
-| Header | Description |
-|--------|-------------|
-| `X-RateLimit-Limit` | Maximum requests allowed per window |
-| `X-RateLimit-Remaining` | Requests remaining in the current window |
-| `X-RateLimit-Reset` | Unix timestamp (seconds) when the window resets |
+| Header                  | Description                                     |
+| ----------------------- | ----------------------------------------------- |
+| `X-RateLimit-Limit`     | Maximum requests allowed per window             |
+| `X-RateLimit-Remaining` | Requests remaining in the current window        |
+| `X-RateLimit-Reset`     | Unix timestamp (seconds) when the window resets |
 
 **Error Response (429)**
+
 ```json
 {
   "error": "Too Many Requests",
   "retryAfter": 47
 }
 ```
+
 The `retryAfter` field indicates seconds until the window resets.
 
 **Custom Key Generator**
 
 Identify clients by API key instead of IP:
+
 ```javascript
-app.use(rateLimit({
-  windowMs: 60_000,
-  max: 1000,
-  keyGenerator: (req) => req.headers['x-api-key'] || req.ip
-}));
+app.use(
+  rateLimit({
+    windowMs: 60_000,
+    max: 1000,
+    keyGenerator: (req) => req.headers["x-api-key"] || req.ip,
+  }),
+);
 ```
 
 **Common Issues**
 
-*Requests behind a proxy always use the same IP*: Set `app.set('trust proxy', 1)` so `req.ip` resolves the real client IP from `X-Forwarded-For`.
+_Requests behind a proxy always use the same IP_: Set `app.set('trust proxy', 1)` so `req.ip` resolves the real client IP from `X-Forwarded-For`.
 
-*Limits not resetting*: Verify your server clock is synchronized. The window is calculated from first-request time, not wall-clock minute boundaries.
+_Limits not resetting_: Verify your server clock is synchronized. The window is calculated from first-request time, not wall-clock minute boundaries.
 
 ---
 

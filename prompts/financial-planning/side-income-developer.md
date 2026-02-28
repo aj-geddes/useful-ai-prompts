@@ -1,6 +1,7 @@
 # Side Income Developer
 
 ## Metadata
+
 - **ID**: `financial-side-income-developer`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ An income diversification strategist that identifies, develops, and optimizes mu
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing multiple income stream strategies with progression path
 - Transitioning from active hourly work to productized or passive income
 - Scaling existing side income sources toward independence
@@ -25,6 +27,7 @@ An income diversification strategist that identifies, develops, and optimizes mu
 - Recovering from failed passive income attempts with sustainable approach
 
 **Anti-patterns (when NOT to use):**
+
 - Pyramid schemes or multi-level marketing strategies
 - High-risk speculation or gambling approaches
 - Income opportunities requiring significant upfront capital investment
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 My primary income is $6,000/month with expenses of $4,500. My goal is to generate $2,000/month in side income to accelerate debt payoff ($15,000 remaining) and increase investment contributions. I have 15 hours per week available. My skills include project management, Excel/data analysis, and teaching/training. I tried dropshipping once and it failed completely. I prefer building something sustainable over gig work. I have moderate risk tolerance. I want meaningful income within 6 months.
 
 ### Output
@@ -128,7 +132,7 @@ My primary income is $6,000/month with expenses of $4,500. My goal is to generat
 Build layered income progressing from active (immediate cash flow) to semi-passive (systematized) to passive (assets). Your PM and analysis skills are highly monetizable without the inventory/fulfillment challenges that caused dropshipping failure.
 
 **Phase 1: Foundation (Months 1-3)**
-*Target: $500-800/month*
+_Target: $500-800/month_
 
 **Primary Stream: Freelance Consulting (Active)**
 | Element | Details |
@@ -138,14 +142,15 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 | Time | 8-10 hours/week |
 | Income | $600-1,000/month |
 
-*Implementation:*
+_Implementation:_
+
 - Week 1-2: Update LinkedIn profile showcasing PM/analysis expertise with specific results
 - Week 3-4: Reach out to 20 former colleagues and professional connections
 - Month 2: Create profiles on Upwork and Toptal with competitive positioning
 - Month 3: Stabilize at 2-3 recurring clients or ongoing projects
 
 **Phase 2: Systems (Months 4-6)**
-*Target: $1,000-1,500/month*
+_Target: $1,000-1,500/month_
 
 **Add: Productized Service (Semi-Passive)**
 | Element | Details |
@@ -155,19 +160,21 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 | Time | 2-4 hours per project |
 | Income | $400-600/month (on top of consulting) |
 
-*Productization Strategy:*
+_Productization Strategy:_
+
 - Create templated solution for common business problems
 - Document repeatable process for delivery
 - Build portfolio of before/after case studies
 - Target: Complete 4-8 projects in Phase 2
 
 **Content Foundation (Building Future Asset):**
+
 - Launch YouTube channel or blog: "Excel for Business Efficiency"
 - Time investment: 3-4 hours/week creating content
 - Goal: Build audience for Phase 3 product sales
 
 **Phase 3: Scale (Months 7-12)**
-*Target: $1,500-2,500/month*
+_Target: $1,500-2,500/month_
 
 **Add: Digital Products (Passive)**
 | Product | Price | Monthly Target |
@@ -176,6 +183,7 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 | "PM Fundamentals" course | $97-197 | 5-10 sales = $500-2,000 |
 
 **Consulting Evolution:**
+
 - Raise rates to $125-150/hour based on track record
 - Reduce hours while maintaining or increasing income
 - Accept only higher-value, interesting projects
@@ -192,7 +200,8 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 | 9 | $2,000 | + Digital products |
 | 12 | $2,500 | Mixed portfolio |
 
-*12-Month Projection: $18,000+ in side income*
+_12-Month Projection: $18,000+ in side income_
+
 - Debt payoff acceleration: 8-10 months faster
 - Investment increase possible: $500+/month by Month 7
 
@@ -214,6 +223,7 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 | SEP-IRA contributions | After debt payoff |
 
 **Why This Succeeds (vs. Dropshipping):**
+
 - Leverages existing expertise (no product sourcing learning curve)
 - Service-first approach generates income while building products
 - Multiple revenue streams reduce single-point-of-failure risk
@@ -223,6 +233,7 @@ Build layered income progressing from active (immediate cash flow) to semi-passi
 ---
 
 ## Related Prompts
+
 - [Side Hustle Monetizer](side-hustle-monetizer.md) - Deep dive on initial skill monetization
 - [Investment Strategy Optimizer](investment-strategy-optimizer.md) - Deploy side income for wealth building
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Minimize self-employment tax burden

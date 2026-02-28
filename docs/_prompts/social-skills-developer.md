@@ -3,32 +3,33 @@ title: Social Skills Developer
 slug: social-skills-developer
 category: relationships & communication
 tags:
-- social
-- skills
-- interpersonal
-- communication
-- social
-- confidence
-- networking
-- conversation
-- skills
-- relationship
-- building
+  - social
+  - skills
+  - interpersonal
+  - communication
+  - social
+  - confidence
+  - networking
+  - conversation
+  - skills
+  - relationship
+  - building
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Improve interpersonal communication, build stronger relationships, and
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Improve interpersonal communication, build stronger relationships, and
   develop confidence in social situations. This prompt provides practical techniques
   for conversation skills, relationship building, and social confidence development
   through graduated challenges and specific, usable strategies.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building social confidence in new situations
-- Improving conversation abilities and small talk
-- Developing networking and connection skills
-- Overcoming mild social anxiety patterns
+  - Ideal Scenarios:**
+  - Building social confidence in new situations
+  - Improving conversation abilities and small talk
+  - Developing networking and connection skills
+  - Overcoming mild social anxiety patterns
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -43,16 +44,18 @@ Social skills are learnable, not fixed traits. Many people struggle with social 
 
 <input_handling>
 Required information:
+
 - Current social confidence level (1-10 self-rating)
 - Specific social challenges faced
 - Social contexts most important to improve (work, dating, friendships)
 
 Infer if not provided:
+
 - Pattern: Difficulty with initiation or conversation maintenance
 - Barrier: Anxiety-based or skill-based
 - Goal: Authentic connection, not performance
 - Context: Both professional and personal improvement
-</input_handling>
+  </input_handling>
 
 <task>
 Develop social skills improvement plan:
@@ -63,21 +66,23 @@ Develop social skills improvement plan:
 4. Develop confidence-building strategies with graduated exposure
 5. Design practice scenarios and low-stakes exercises
 6. Establish progress tracking and realistic milestones
-</task>
+   </task>
 
 <output_specification>
 Format: Practical skill-building program with specific techniques
 Length: 500-800 words
 Structure:
+
 - Mindset foundation (reframing social situations)
 - Conversation architecture (opening, bridging, deepening)
 - Specific phrases and questions to use
 - Progressive challenge plan
 - Practice exercises and progress indicators
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Specific, immediately usable conversation techniques
 - Anxiety management strategies integrated naturally
 - Graduated challenge approach (easy to harder)
@@ -85,11 +90,12 @@ Excellent outputs demonstrate:
 - Realistic expectations and sustainable practice
 
 Avoid:
+
 - Generic "just be confident" advice
 - Inauthentic performance techniques or scripts
 - Overwhelming with too many changes at once
 - Ignoring underlying anxiety component
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Recommend professional support for clinical anxiety

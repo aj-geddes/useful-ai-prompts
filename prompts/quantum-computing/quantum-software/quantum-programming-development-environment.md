@@ -1,6 +1,7 @@
 # Quantum Programming Development Environment
 
 ## Metadata
+
 - **ID**: `quantum-programming-environment`
 - **Version**: 1.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ Design and implement comprehensive quantum programming development environments 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building quantum development tooling, IDEs, or extensions
 - Creating quantum debugging and state visualization tools
 - Implementing quantum testing frameworks and validation suites
@@ -25,6 +27,7 @@ Design and implement comprehensive quantum programming development environments 
 - Establishing quantum software development best practices
 
 **Anti-Patterns (When NOT to Use):**
+
 - Developing quantum algorithms (use algorithm-specific prompts)
 - Hardware characterization and calibration
 - Classical software development tooling
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We need a quantum development environment for our 50-person research team. They use Qiskit and PennyLane, work with IBM Quantum and local simulators, and need better debugging for variational algorithms. Currently struggling with visualizing circuit behavior and testing quantum code.
 
 ### Output
@@ -116,6 +120,7 @@ We need a quantum development environment for our 50-person research team. They 
 **IDE Architecture**
 
 **VS Code Extension Suite**
+
 ```
 quantum-research-tools/
 ├── syntax/           # Quantum language support (Qiskit, PennyLane, Cirq)
@@ -127,6 +132,7 @@ quantum-research-tools/
 ```
 
 **Language Support Features**
+
 - Qiskit: Full syntax highlighting, gate autocomplete, parameter hints
 - PennyLane: QNode detection, device configuration hints, gradient methods
 - Cirq: Circuit builder integration, moment visualization
@@ -135,6 +141,7 @@ quantum-research-tools/
 **Quantum Debugging Tools**
 
 **State Inspector**
+
 ```python
 # Breakpoint integration for quantum code
 @quantum_debugger.breakpoint
@@ -149,6 +156,7 @@ def variational_layer(params):
 ```
 
 **Debugging Features**
+
 - State vector visualization: Bloch sphere, amplitude bar charts, phase wheels
 - Entanglement graph: Interactive display of qubit correlations
 - Parameter gradient tracking: Real-time gradient magnitude overlay
@@ -156,6 +164,7 @@ def variational_layer(params):
 - Measurement statistics: Shot-by-shot outcome tracking
 
 **Circuit Analyzer Panel**
+
 ```
 Real-time Metrics:
 - Circuit depth: Current/optimal comparison
@@ -168,6 +177,7 @@ Real-time Metrics:
 **Testing Framework**
 
 **Quantum Unit Testing**
+
 ```python
 class TestVQE(QuantumTestCase):
     def test_ansatz_expressibility(self):
@@ -189,6 +199,7 @@ class TestVQE(QuantumTestCase):
 ```
 
 **Test Categories**
+
 - Correctness tests: Compare to analytic results and classical simulation
 - Reproducibility tests: Seed-based deterministic execution
 - Performance tests: Circuit depth and gate count bounds
@@ -198,6 +209,7 @@ class TestVQE(QuantumTestCase):
 **Simulator Integration**
 
 **Multi-Backend Configuration**
+
 ```yaml
 backends:
   local:
@@ -221,6 +233,7 @@ backends:
 ```
 
 **Smart Backend Selection**
+
 - Auto-select based on circuit size and complexity
 - Noise model injection for realistic testing
 - Execution time estimation before submission
@@ -229,6 +242,7 @@ backends:
 **CI/CD Pipeline**
 
 **Quantum DevOps Workflow**
+
 ```yaml
 name: Quantum CI/CD Pipeline
 on: [push, pull_request]
@@ -236,29 +250,30 @@ on: [push, pull_request]
 jobs:
   validate:
     steps:
-      - lint_quantum_code      # Syntax and style checks
+      - lint_quantum_code # Syntax and style checks
       - check_circuit_structure # Depth and gate validation
-      - security_scan          # Credential leak detection
+      - security_scan # Credential leak detection
 
   test:
     steps:
-      - unit_tests_simulator   # Fast local validation
-      - integration_tests      # Multi-component testing
-      - property_tests         # Randomized correctness
+      - unit_tests_simulator # Fast local validation
+      - integration_tests # Multi-component testing
+      - property_tests # Randomized correctness
 
   benchmark:
     steps:
-      - performance_baseline   # Circuit metrics tracking
-      - regression_detection   # Performance degradation alerts
+      - performance_baseline # Circuit metrics tracking
+      - regression_detection # Performance degradation alerts
 
   deploy:
     steps:
-      - hardware_validation    # Limited real-hardware tests
-      - staging_release        # Pre-production deployment
-      - production_release     # Full rollout with monitoring
+      - hardware_validation # Limited real-hardware tests
+      - staging_release # Pre-production deployment
+      - production_release # Full rollout with monitoring
 ```
 
 **Developer Experience Metrics**
+
 - Code-to-execution time reduction: Target 50% improvement
 - Debug cycle time: Target <2 minutes from error to fix
 - Test coverage for quantum code: Target >80%
@@ -268,6 +283,7 @@ jobs:
 ---
 
 ## Related Prompts
+
 - [Quantum Algorithm Development Expert](../quantum-algorithm-development-expert.md)
 - [Quantum Hardware Characterization Expert](../quantum-hardware-characterization-expert.md)
 - [Quantum Optimization Algorithm Design](../quantum-optimization/quantum-optimization-algorithm-design.md)

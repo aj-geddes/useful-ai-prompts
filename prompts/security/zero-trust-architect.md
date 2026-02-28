@@ -1,6 +1,7 @@
 # Zero Trust Architect
 
 ## Metadata
+
 - **ID**: `security-zero-trust-architect`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a zero trust architecture specialist who designs and guide
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a zero trust architecture for cloud migration or hybrid environment modernization
 - Assessing current zero trust maturity and building a multi-year implementation roadmap
 - Evaluating and selecting zero trust technology components (ZTNA, CASB, identity provider, PAM)
 
 **Anti-patterns (Don't Use For):**
+
 - Organizations with no existing identity management — zero trust requires a solid identity foundation first
 - Incident response situations where immediate containment is the priority
 
@@ -130,43 +133,46 @@ Avoid:
 
 **Current State Assessment (CISA Zero Trust Maturity Model)**
 
-| Pillar | Current State | Gap |
-|--------|---------------|-----|
-| Identity | Traditional — AD-only, legacy MFA | No risk-based conditional access, no passwordless |
-| Device | Traditional — domain-joined only, no posture validation | No EDR integration for access decisions |
-| Network | Traditional — VPN perimeter, implicit internal trust | No microsegmentation, over-privileged lateral movement possible |
-| Application | Traditional — network location = access | No per-application access control |
-| Data | Traditional — perimeter-dependent | No classification or DLP enforced at access time |
+| Pillar      | Current State                                           | Gap                                                             |
+| ----------- | ------------------------------------------------------- | --------------------------------------------------------------- |
+| Identity    | Traditional — AD-only, legacy MFA                       | No risk-based conditional access, no passwordless               |
+| Device      | Traditional — domain-joined only, no posture validation | No EDR integration for access decisions                         |
+| Network     | Traditional — VPN perimeter, implicit internal trust    | No microsegmentation, over-privileged lateral movement possible |
+| Application | Traditional — network location = access                 | No per-application access control                               |
+| Data        | Traditional — perimeter-dependent                       | No classification or DLP enforced at access time                |
 
 **Target Architecture**
 
 Identity becomes the perimeter. Every access request evaluates: Is this identity authenticated with phishing-resistant MFA? Is this device compliant (encrypted, EDR agent healthy, patch current)? Does this context (location, time, behavior) match expected patterns?
 
 **Phase 1 (0-6 months): Identity Foundation**
+
 - Deploy Microsoft Entra ID (Azure AD) as cloud identity provider — sync from on-prem AD
 - Enforce phishing-resistant MFA (FIDO2 hardware keys) for all privileged accounts and VPN replacement candidates
 - Implement Entra ID Conditional Access policies: block legacy authentication protocols, require compliant device for cloud app access
 - Migrate from VPN to Entra ID Application Proxy for internal web applications immediately — eliminate broad VPN access
 
 **Phase 2 (6-12 months): Device Trust**
+
 - Enroll all endpoints in Microsoft Intune; define device compliance policy (disk encryption, EDR agent, patch status)
 - Gate Azure application access on device compliance signal via Conditional Access
 - Deploy Entra ID Privileged Identity Management (PIM) for just-in-time admin access — eliminate standing privileged accounts
 
 **Phase 3 (12-18 months): Network Microsegmentation**
+
 - Deploy Zscaler Private Access (ZPA) as ZTNA replacement for remaining VPN use cases — users connect to applications, not networks
 - Segment Azure workloads using NSGs with explicit deny-by-default; create application-specific network security groups
 - Establish workload identity for Azure VMs and services using Managed Identities — eliminate service account passwords
 
 **Technology Stack**
 
-| Function | Recommendation |
-|----------|----------------|
+| Function          | Recommendation                                         |
+| ----------------- | ------------------------------------------------------ |
 | Identity Provider | Microsoft Entra ID (leverages existing M365 licensing) |
-| Device Management | Microsoft Intune |
-| ZTNA | Zscaler Private Access |
-| PAM | CyberArk (financial services standard) |
-| DLP | Microsoft Purview |
+| Device Management | Microsoft Intune                                       |
+| ZTNA              | Zscaler Private Access                                 |
+| PAM               | CyberArk (financial services standard)                 |
+| DLP               | Microsoft Purview                                      |
 
 ---
 

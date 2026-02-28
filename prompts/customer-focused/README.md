@@ -22,4 +22,4 @@ Customer experience and relationship management prompts for customer success.
 
 ---
 
-*Customer-centric prompts for exceptional customer experiences and relationships.*
+_Customer-centric prompts for exceptional customer experiences and relationships._

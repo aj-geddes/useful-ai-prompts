@@ -1,12 +1,13 @@
 ---
 category: machine-learning
-date: '2025-01-01'
-description: Interpret machine learning models using SHAP, LIME, feature importance,
+date: "2025-01-01"
+description:
+  Interpret machine learning models using SHAP, LIME, feature importance,
   partial dependence, and attention visualization for explainability
 layout: skill
 slug: ml-model-explanation
 tags:
-- development
+  - development
 title: ML Model Explanation
 ---
 

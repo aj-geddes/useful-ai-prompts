@@ -1,6 +1,7 @@
 # Knowledge Synthesis Expert
 
 ## Metadata
+
 - **ID**: `learning-knowledge-synthesis`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A knowledge synthesis specialist that combines complex information from multiple sources into coherent, actionable knowledge. Creates structured approaches to consolidate research, build organizational knowledge bases, integrate diverse expertise, and transform raw information into decision-ready insights.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Consolidating research from multiple sources into unified insights
 - Creating organizational knowledge bases and wikis
 - Synthesizing project learnings into best practices
@@ -23,6 +27,7 @@ A knowledge synthesis specialist that combines complex information from multiple
 - Building product intelligence from customer, market, and competitive data
 
 **Anti-patterns (don't use for):**
+
 - Original research design requiring methodology expertise
 - Academic literature reviews with citation requirements
 - Legal document synthesis requiring compliance review
@@ -130,14 +135,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Product development knowledge base needed. Sources: Customer feedback (NPS, support tickets, interviews), market research, competitor analysis, internal innovation ideas, engineering constraints. Audience: Product managers making roadmap decisions. Need to synthesize into actionable product insights quarterly.
 
 ### Output
+
 **Product Intelligence Synthesis Framework**
 
 **Information Architecture:**
 
-*Source Categories:*
+_Source Categories:_
 | Source | Type | Frequency | Owner |
 |--------|------|-----------|-------|
 | Customer Feedback | Qualitative + Quantitative | Continuous | CX Team |
@@ -146,7 +153,8 @@ Product development knowledge base needed. Sources: Customer feedback (NPS, supp
 | Internal Ideas | Innovation submissions | Ongoing | All teams |
 | Engineering Input | Feasibility, constraints | Per initiative | Engineering |
 
-*Knowledge Taxonomy:*
+_Knowledge Taxonomy:_
+
 - Customer Needs: Pain points, Jobs-to-be-done, Feature requests
 - Market Trends: Industry shifts, Technology changes, Regulatory
 - Competitive Landscape: Feature gaps, Positioning opportunities
@@ -155,29 +163,34 @@ Product development knowledge base needed. Sources: Customer feedback (NPS, supp
 
 **Synthesis Methodology:**
 
-*Quarterly Synthesis Process:*
+_Quarterly Synthesis Process:_
+
 1. **Collection** (Week 1): Gather all source materials
 2. **Extraction** (Week 2): Pull key findings using templates
 3. **Analysis** (Week 3): Identify patterns, conflicts, opportunities
 4. **Synthesis** (Week 4): Create integrated insights and recommendations
 
-*Extraction Templates:*
+_Extraction Templates:_
+
 - Customer insight template: Need + Evidence + Frequency + Impact
 - Competitor feature template: Feature + Differentiation + Threat level
 - Market trend template: Trend + Timeline + Relevance + Action implication
 
 **Analysis Tools:**
 
-*Pattern Identification Matrix:*
+_Pattern Identification Matrix:_
+
 ```
                 Customer  Market  Competitor  Internal  Engineering
 Opportunity A      X        X         X          X
 Opportunity B      X                  X                      X
 Opportunity C      X        X                    X
 ```
+
 (More X's across sources = Higher confidence opportunity)
 
-*Conflict Resolution Protocol:*
+_Conflict Resolution Protocol:_
+
 1. Identify conflicting signals
 2. Assess source credibility and recency
 3. Gather additional data if needed
@@ -185,19 +198,22 @@ Opportunity C      X        X                    X
 
 **Output Formats:**
 
-*Executive Summary (2 pages):*
+_Executive Summary (2 pages):_
+
 - Top 5 opportunities with confidence ratings
 - Key risks and market shifts
 - Recommended roadmap implications
 
-*Deep-Dive Insight Cards:*
+_Deep-Dive Insight Cards:_
+
 - One-page summaries per opportunity
 - Evidence from multiple sources
 - Customer quotes and data
 - Competitive positioning
 - Technical considerations
 
-*Quarterly Product Intelligence Dashboard:*
+_Quarterly Product Intelligence Dashboard:_
+
 - Visual synthesis of all insights
 - Trend tracking over time
 - Opportunity pipeline view
@@ -205,25 +221,29 @@ Opportunity C      X        X                    X
 
 **Maintenance System:**
 
-*Update Triggers:*
+_Update Triggers:_
+
 - Quarterly scheduled synthesis
 - Major competitive announcement
 - Significant customer feedback shift
 - Market disruption event
 
-*Quality Assurance:*
+_Quality Assurance:_
+
 - Cross-functional review of synthesis
 - Source citation requirements
 - Confidence level ratings
 - Feedback loop from product decisions
 
 **Success Metrics:**
+
 - Insight utilization in roadmap decisions (target: 80%)
 - Time from insight to action (target: < 30 days)
 - Stakeholder confidence in intelligence (target: 4.5/5)
 - Prediction accuracy over time (track outcomes)
 
 ## Related Prompts
+
 - [Research Methodology Expert](research-methodology-expert.md) - For designing research approaches
 - [Continuous Learning Framework Expert](continuous-learning-framework-expert.md) - For ongoing learning systems
 - [Knowledge Gap Analysis Expert](knowledge-gap-analysis-expert.md) - For identifying information needs

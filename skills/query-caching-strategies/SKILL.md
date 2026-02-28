@@ -27,11 +27,11 @@ Implement multi-level caching strategies using Redis, Memcached, and database-le
 
 ```javascript
 // Node.js example with Redis
-const redis = require('redis');
+const redis = require("redis");
 const client = redis.createClient({
-  host: 'localhost',
+  host: "localhost",
   port: 6379,
-  db: 0
+  db: 0,
 });
 
 // Get user with caching
@@ -43,10 +43,7 @@ async function getUser(userId) {
   if (cached) return JSON.parse(cached);
 
   // Query database
-  const user = await db.query(
-    'SELECT * FROM users WHERE id = $1',
-    [userId]
-  );
+  const user = await db.query("SELECT * FROM users WHERE id = $1", [userId]);
 
   // Cache result (TTL: 1 hour)
   await client.setex(cacheKey, 3600, JSON.stringify(user));
@@ -56,15 +53,11 @@ async function getUser(userId) {
 // Cache warming on startup
 async function warmCache() {
   const hotUsers = await db.query(
-    'SELECT * FROM users WHERE active = true ORDER BY last_login DESC LIMIT 100'
+    "SELECT * FROM users WHERE active = true ORDER BY last_login DESC LIMIT 100",
   );
 
   for (const user of hotUsers) {
-    await client.setex(
-      `user:${user.id}`,
-      3600,
-      JSON.stringify(user)
-    );
+    await client.setex(`user:${user.id}`, 3600, JSON.stringify(user));
   }
 }
 ```
@@ -76,7 +69,7 @@ async function warmCache() {
 async function queryCached(
   key,
   queryFn,
-  ttl = 3600  // Default 1 hour
+  ttl = 3600, // Default 1 hour
 ) {
   // Check cache
   const cached = await client.get(key);
@@ -92,12 +85,13 @@ async function queryCached(
 
 // Usage
 const posts = await queryCached(
-  'user:123:posts',
-  async () => db.query(
-    'SELECT * FROM posts WHERE user_id = $1 ORDER BY created_at DESC',
-    [123]
-  ),
-  1800  // 30 minutes TTL
+  "user:123:posts",
+  async () =>
+    db.query(
+      "SELECT * FROM posts WHERE user_id = $1 ORDER BY created_at DESC",
+      [123],
+    ),
+  1800, // 30 minutes TTL
 );
 ```
 
@@ -107,8 +101,8 @@ const posts = await queryCached(
 
 ```javascript
 // Node.js with Memcached
-const Memcached = require('memcached');
-const memcached = new Memcached(['localhost:11211']);
+const Memcached = require("memcached");
+const memcached = new Memcached(["localhost:11211"]);
 
 async function getProductWithCache(productId) {
   const cacheKey = `product:${productId}`;
@@ -122,10 +116,9 @@ async function getProductWithCache(productId) {
   }
 
   // Query database
-  const product = await db.query(
-    'SELECT * FROM products WHERE id = $1',
-    [productId]
-  );
+  const product = await db.query("SELECT * FROM products WHERE id = $1", [
+    productId,
+  ]);
 
   // Set cache (TTL: 3600 seconds)
   try {
@@ -241,8 +234,8 @@ UPDATE users SET email = 'newemail@example.com' WHERE id = 123;
 async function updateUser(userId, userData) {
   // Update database
   const updatedUser = await db.query(
-    'UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *',
-    [userData.name, userData.email, userId]
+    "UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *",
+    [userData.name, userData.email, userId],
   );
 
   // Invalidate related caches
@@ -250,7 +243,7 @@ async function updateUser(userId, userData) {
     `user:${userId}`,
     `user:${userId}:profile`,
     `user:${userId}:orders`,
-    'active_users_list'
+    "active_users_list",
   ];
 
   for (const key of cacheKeys) {
@@ -268,11 +261,11 @@ async function updateUser(userId, userData) {
 ```javascript
 // Variable TTL based on data type
 const CACHE_TTLS = {
-  user_profile: 3600,        // 1 hour
-  product_list: 1800,        // 30 minutes
-  order_summary: 300,        // 5 minutes (frequently changes)
-  category_list: 86400,      // 1 day (rarely changes)
-  user_settings: 7200        // 2 hours
+  user_profile: 3600, // 1 hour
+  product_list: 1800, // 30 minutes
+  order_summary: 300, // 5 minutes (frequently changes)
+  category_list: 86400, // 1 day (rarely changes)
+  user_settings: 7200, // 2 hours
 };
 
 async function getCachedData(key, type, queryFn) {
@@ -311,31 +304,23 @@ maxmemory-policy allkeys-lru  # Evict least recently used key
 async function warmApplicationCache() {
   // Warm popular users
   const popularUsers = await db.query(
-    'SELECT * FROM users ORDER BY last_login DESC LIMIT 50'
+    "SELECT * FROM users ORDER BY last_login DESC LIMIT 50",
   );
 
   for (const user of popularUsers) {
-    await client.setex(
-      `user:${user.id}`,
-      3600,
-      JSON.stringify(user)
-    );
+    await client.setex(`user:${user.id}`, 3600, JSON.stringify(user));
   }
 
   // Warm top products
   const topProducts = await db.query(
-    'SELECT * FROM products ORDER BY sales DESC LIMIT 100'
+    "SELECT * FROM products ORDER BY sales DESC LIMIT 100",
   );
 
   for (const product of topProducts) {
-    await client.setex(
-      `product:${product.id}`,
-      1800,
-      JSON.stringify(product)
-    );
+    await client.setex(`product:${product.id}`, 1800, JSON.stringify(product));
   }
 
-  console.log('Cache warming complete');
+  console.log("Cache warming complete");
 }
 
 // Run on server startup
@@ -361,12 +346,12 @@ redis-cli --cluster create localhost:6379 localhost:6380 localhost:6381
 ```javascript
 // Replicate cache across regions
 async function setCacheMultiRegion(key, value, ttl) {
-  const regions = ['us-east', 'eu-west', 'ap-south'];
+  const regions = ["us-east", "eu-west", "ap-south"];
 
   await Promise.all(
-    regions.map(region =>
-      redisClients[region].setex(key, ttl, JSON.stringify(value))
-    )
+    regions.map((region) =>
+      redisClients[region].setex(key, ttl, JSON.stringify(value)),
+    ),
   );
 }
 
@@ -376,7 +361,7 @@ async function getCacheNearest(key, region) {
   if (value) return JSON.parse(value);
 
   // Fallback to other regions
-  for (const fallbackRegion of ['us-east', 'eu-west', 'ap-south']) {
+  for (const fallbackRegion of ["us-east", "eu-west", "ap-south"]) {
     const fallbackValue = await redisClients[fallbackRegion].get(key);
     if (fallbackValue) return JSON.parse(fallbackValue);
   }
@@ -391,11 +376,11 @@ async function getCacheNearest(key, region) {
 
 ```javascript
 async function getCacheStats() {
-  const info = await client.info('stats');
+  const info = await client.info("stats");
   return {
     hits: info.keyspace_hits,
     misses: info.keyspace_misses,
-    hitRate: info.keyspace_hits / (info.keyspace_hits + info.keyspace_misses)
+    hitRate: info.keyspace_hits / (info.keyspace_hits + info.keyspace_misses),
   };
 }
 
@@ -408,12 +393,12 @@ setInterval(async () => {
 
 ## Cache Strategy Selection
 
-| Strategy | Best For | Drawbacks |
-|----------|----------|-----------|
-| Application-level | Flexible, fine-grained control | More code, consistency challenges |
-| Database-level | Transparent, automatic | Less flexibility |
-| Distributed cache | High throughput, scale | Extra complexity, network latency |
-| Materialized views | Complex queries, aggregations | Manual refresh needed |
+| Strategy           | Best For                       | Drawbacks                         |
+| ------------------ | ------------------------------ | --------------------------------- |
+| Application-level  | Flexible, fine-grained control | More code, consistency challenges |
+| Database-level     | Transparent, automatic         | Less flexibility                  |
+| Distributed cache  | High throughput, scale         | Extra complexity, network latency |
+| Materialized views | Complex queries, aggregations  | Manual refresh needed             |
 
 ## Best Practices
 

@@ -233,179 +233,193 @@ def delete_file(file_id):
 
 ```javascript
 // config.js
-const multer = require('multer');
-const path = require('path');
-const crypto = require('crypto');
-const fs = require('fs');
+const multer = require("multer");
+const path = require("path");
+const crypto = require("crypto");
+const fs = require("fs");
 
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        const uploadDir = path.join(__dirname, 'uploads', req.user.id);
-        fs.mkdirSync(uploadDir, { recursive: true });
-        cb(null, uploadDir);
-    },
-    filename: (req, file, cb) => {
-        const hash = crypto.randomBytes(16).toString('hex');
-        const ext = path.extname(file.originalname);
-        cb(null, hash + ext);
-    }
+  destination: (req, file, cb) => {
+    const uploadDir = path.join(__dirname, "uploads", req.user.id);
+    fs.mkdirSync(uploadDir, { recursive: true });
+    cb(null, uploadDir);
+  },
+  filename: (req, file, cb) => {
+    const hash = crypto.randomBytes(16).toString("hex");
+    const ext = path.extname(file.originalname);
+    cb(null, hash + ext);
+  },
 });
 
 const fileFilter = (req, file, cb) => {
-    const allowedMimes = [
-        'image/jpeg',
-        'image/png',
-        'image/gif',
-        'application/pdf',
-        'text/plain'
-    ];
+  const allowedMimes = [
+    "image/jpeg",
+    "image/png",
+    "image/gif",
+    "application/pdf",
+    "text/plain",
+  ];
 
-    const allowedExts = ['.pdf', '.txt', '.png', '.jpg', '.jpeg', '.gif', '.docx', '.doc'];
-    const ext = path.extname(file.originalname).toLowerCase();
+  const allowedExts = [
+    ".pdf",
+    ".txt",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".docx",
+    ".doc",
+  ];
+  const ext = path.extname(file.originalname).toLowerCase();
 
-    if (!allowedMimes.includes(file.mimetype) || !allowedExts.includes(ext)) {
-        return cb(new Error('Invalid file type'));
-    }
+  if (!allowedMimes.includes(file.mimetype) || !allowedExts.includes(ext)) {
+    return cb(new Error("Invalid file type"));
+  }
 
-    cb(null, true);
+  cb(null, true);
 };
 
 const upload = multer({
-    storage: storage,
-    fileFilter: fileFilter,
-    limits: {
-        fileSize: 50 * 1024 * 1024 // 50 MB
-    }
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: {
+    fileSize: 50 * 1024 * 1024, // 50 MB
+  },
 });
 
 module.exports = upload;
 
 // file-service.js
-const fs = require('fs').promises;
-const path = require('path');
-const FileRecord = require('../models/FileRecord');
+const fs = require("fs").promises;
+const path = require("path");
+const FileRecord = require("../models/FileRecord");
 
 class FileService {
-    async uploadFile(req) {
-        if (!req.file) {
-            throw new Error('No file provided');
-        }
-
-        const fileInfo = {
-            id: path.basename(req.file.filename, path.extname(req.file.filename)),
-            originalName: req.file.originalname,
-            safeName: req.file.filename,
-            size: req.file.size,
-            mimeType: req.file.mimetype,
-            userId: req.user.id,
-            uploadedAt: new Date()
-        };
-
-        // Save to database
-        const record = await FileRecord.create(fileInfo);
-        return record;
+  async uploadFile(req) {
+    if (!req.file) {
+      throw new Error("No file provided");
     }
 
-    async downloadFile(fileId, userId) {
-        const record = await FileRecord.findOne({
-            where: { id: fileId, userId }
-        });
+    const fileInfo = {
+      id: path.basename(req.file.filename, path.extname(req.file.filename)),
+      originalName: req.file.originalname,
+      safeName: req.file.filename,
+      size: req.file.size,
+      mimeType: req.file.mimetype,
+      userId: req.user.id,
+      uploadedAt: new Date(),
+    };
 
-        if (!record) {
-            throw new Error('File not found');
-        }
+    // Save to database
+    const record = await FileRecord.create(fileInfo);
+    return record;
+  }
 
-        const filepath = path.join(__dirname, 'uploads', userId, record.safeName);
-        return { record, filepath };
+  async downloadFile(fileId, userId) {
+    const record = await FileRecord.findOne({
+      where: { id: fileId, userId },
+    });
+
+    if (!record) {
+      throw new Error("File not found");
     }
 
-    async deleteFile(fileId, userId) {
-        const record = await FileRecord.findOne({
-            where: { id: fileId, userId }
-        });
+    const filepath = path.join(__dirname, "uploads", userId, record.safeName);
+    return { record, filepath };
+  }
 
-        if (!record) {
-            throw new Error('File not found');
-        }
+  async deleteFile(fileId, userId) {
+    const record = await FileRecord.findOne({
+      where: { id: fileId, userId },
+    });
 
-        const filepath = path.join(__dirname, 'uploads', userId, record.safeName);
-        await fs.unlink(filepath);
-        await record.destroy();
-
-        return { success: true };
+    if (!record) {
+      throw new Error("File not found");
     }
 
-    async listUserFiles(userId, limit = 20, offset = 0) {
-        const { rows, count } = await FileRecord.findAndCountAll({
-            where: { userId },
-            limit,
-            offset,
-            order: [['uploadedAt', 'DESC']]
-        });
+    const filepath = path.join(__dirname, "uploads", userId, record.safeName);
+    await fs.unlink(filepath);
+    await record.destroy();
 
-        return { files: rows, total: count };
-    }
+    return { success: true };
+  }
+
+  async listUserFiles(userId, limit = 20, offset = 0) {
+    const { rows, count } = await FileRecord.findAndCountAll({
+      where: { userId },
+      limit,
+      offset,
+      order: [["uploadedAt", "DESC"]],
+    });
+
+    return { files: rows, total: count };
+  }
 }
 
 module.exports = new FileService();
 
 // routes.js
-const express = require('express');
-const upload = require('../config/multer');
-const fileService = require('../services/file-service');
-const { authenticate } = require('../middleware/auth');
+const express = require("express");
+const upload = require("../config/multer");
+const fileService = require("../services/file-service");
+const { authenticate } = require("../middleware/auth");
 
 const router = express.Router();
 
-router.post('/upload', authenticate, upload.single('file'), async (req, res, next) => {
+router.post(
+  "/upload",
+  authenticate,
+  upload.single("file"),
+  async (req, res, next) => {
     try {
-        const file = await fileService.uploadFile(req);
-        res.status(201).json(file);
+      const file = await fileService.uploadFile(req);
+      res.status(201).json(file);
     } catch (error) {
-        res.status(400).json({ error: error.message });
+      res.status(400).json({ error: error.message });
     }
+  },
+);
+
+router.get("/files/:fileId", authenticate, async (req, res, next) => {
+  try {
+    const { record, filepath } = await fileService.downloadFile(
+      req.params.fileId,
+      req.user.id,
+    );
+    res.download(filepath, record.originalName);
+  } catch (error) {
+    res.status(404).json({ error: error.message });
+  }
 });
 
-router.get('/files/:fileId', authenticate, async (req, res, next) => {
-    try {
-        const { record, filepath } = await fileService.downloadFile(
-            req.params.fileId,
-            req.user.id
-        );
-        res.download(filepath, record.originalName);
-    } catch (error) {
-        res.status(404).json({ error: error.message });
-    }
+router.delete("/files/:fileId", authenticate, async (req, res, next) => {
+  try {
+    await fileService.deleteFile(req.params.fileId, req.user.id);
+    res.status(204).send();
+  } catch (error) {
+    res.status(404).json({ error: error.message });
+  }
 });
 
-router.delete('/files/:fileId', authenticate, async (req, res, next) => {
-    try {
-        await fileService.deleteFile(req.params.fileId, req.user.id);
-        res.status(204).send();
-    } catch (error) {
-        res.status(404).json({ error: error.message });
-    }
-});
+router.get("/files", authenticate, async (req, res, next) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 20;
+    const offset = (page - 1) * limit;
 
-router.get('/files', authenticate, async (req, res, next) => {
-    try {
-        const page = parseInt(req.query.page) || 1;
-        const limit = parseInt(req.query.limit) || 20;
-        const offset = (page - 1) * limit;
+    const { files, total } = await fileService.listUserFiles(
+      req.user.id,
+      limit,
+      offset,
+    );
 
-        const { files, total } = await fileService.listUserFiles(
-            req.user.id,
-            limit,
-            offset
-        );
-
-        res.json({
-            data: files,
-            pagination: { page, limit, total, pages: Math.ceil(total / limit) }
-        });
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+    res.json({
+      data: files,
+      pagination: { page, limit, total, pages: Math.ceil(total / limit) },
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 module.exports = router;
@@ -615,6 +629,7 @@ class S3FileService:
 ## Best Practices
 
 ### ✅ DO
+
 - Validate file extensions and MIME types
 - Check file size before processing
 - Use secure filenames to prevent directory traversal
@@ -627,6 +642,7 @@ class S3FileService:
 - Clean up temporary files
 
 ### ❌ DON'T
+
 - Trust user-provided filenames
 - Store files in web-accessible directories
 - Allow arbitrary file types

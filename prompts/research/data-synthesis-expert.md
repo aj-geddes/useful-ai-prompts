@@ -1,6 +1,7 @@
 # Data Synthesis Expert
 
 ## Metadata
+
 - **ID**: `research-data-synthesis-expert`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps researchers and analysts synthesize findings from multiple data sources — combining qualitative and quantitative evidence, reconciling conflicting findings, and producing integrated conclusions that are stronger than any single source. It applies formal triangulation and cross-study comparison methods to generate insight that transcends individual data sets.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Combining survey data, user interview findings, and analytics into a unified set of conclusions
 - Reconciling contradictory findings from different research studies on the same topic
 - Producing a meta-synthesis or literature review that integrates findings across multiple existing studies
 
 **Anti-patterns (Don't Use For):**
+
 - Statistical meta-analysis requiring effect size calculation and formal pooling of quantitative data (requires specialist statistical expertise)
 - Single-study data analysis where no synthesis is needed
 - Real-time data aggregation from multiple live systems
@@ -66,10 +71,13 @@ Avoid: Treating all sources as equally reliable regardless of quality or sample 
 ---
 
 ## Example Usage
+
 ### Input
+
 "I have three data sources about why users abandon our mobile checkout. Source 1: Exit survey (n=340) — 52% say 'too many steps,' 31% say 'I got distracted,' 17% say 'trust concerns about payment.' Source 2: User interviews (n=12) — most mentioned frustration with address auto-fill not working, 3 mentioned the checkout timer created pressure. Source 3: Session replay analytics — 68% of abandonment happens on the payment entry screen; average of 3.2 form field errors per abandoned session."
 
 ### Output
+
 **Data Synthesis Report — Mobile Checkout Abandonment**
 Research Question: Why do users abandon the mobile checkout process?
 Sources: Exit Survey (n=340), User Interviews (n=12), Session Replay Analytics
@@ -78,11 +86,11 @@ Sources: Exit Survey (n=340), User Interviews (n=12), Session Replay Analytics
 
 **Evidence Source Assessment**
 
-| Source | Type | Strength | Potential Bias |
-|--------|------|----------|----------------|
-| Exit Survey (n=340) | Quantitative, self-report | HIGH — large sample; representative scale | Recall bias; social desirability; "distracted" may be a polite cover story |
-| User Interviews (n=12) | Qualitative | MEDIUM — rich but small sample | Self-selection (willing to participate); interviewer effect |
-| Session Replay Analytics | Behavioral observation | HIGH — objective behavioral data; no self-report bias | Cannot capture cognitive or emotional state; shows what happened, not why |
+| Source                   | Type                      | Strength                                              | Potential Bias                                                             |
+| ------------------------ | ------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------- |
+| Exit Survey (n=340)      | Quantitative, self-report | HIGH — large sample; representative scale             | Recall bias; social desirability; "distracted" may be a polite cover story |
+| User Interviews (n=12)   | Qualitative               | MEDIUM — rich but small sample                        | Self-selection (willing to participate); interviewer effect                |
+| Session Replay Analytics | Behavioral observation    | HIGH — objective behavioral data; no self-report bias | Cannot capture cognitive or emotional state; shows what happened, not why  |
 
 ---
 
@@ -91,11 +99,12 @@ Sources: Exit Survey (n=340), User Interviews (n=12), Session Replay Analytics
 **Strong Convergence: The Payment Entry Screen is the Primary Abandonment Location**
 
 All three sources independently point to the payment data entry step as the critical failure point:
+
 - Analytics: 68% of abandonment occurs at the payment entry screen
 - Interviews: Address auto-fill failure mentioned by majority of participants — this is a payment screen interaction
 - Survey: 17% cite trust concerns about payment (aligns with payment screen context)
 
-*Conclusion (Confirmed — 3 converging sources):* The payment entry experience, not checkout flow length or earlier steps, is the dominant abandonment driver.
+_Conclusion (Confirmed — 3 converging sources):_ The payment entry experience, not checkout flow length or earlier steps, is the dominant abandonment driver.
 
 **Moderate Convergence: Form Friction is Causing Active User Frustration**
 
@@ -103,7 +112,7 @@ All three sources independently point to the payment data entry step as the crit
 - Interviews: Address auto-fill not working is the most-cited specific frustration
 - Survey: 52% say "too many steps" — this may reflect frustration with errors more than actual step count
 
-*Conclusion (Probable — 2-3 sources with moderate overlap):* Form completion friction — specifically auto-fill failures and field validation errors — is causing direct abandonment. The "too many steps" survey response may be users describing friction rather than actual step count.
+_Conclusion (Probable — 2-3 sources with moderate overlap):_ Form completion friction — specifically auto-fill failures and field validation errors — is causing direct abandonment. The "too many steps" survey response may be users describing friction rather than actual step count.
 
 ---
 
@@ -125,13 +134,13 @@ Resolution: The survey did not include a checkout timer question — this is a s
 
 **Tiered Conclusions**
 
-| Conclusion | Confidence | Evidence |
-|------------|------------|----------|
-| The payment screen is the primary abandonment location | Confirmed | Analytics + Interviews + Survey (indirect) |
-| Form field errors are a significant direct cause of abandonment | Confirmed | Analytics (3.2 errors/session) + Interviews (auto-fill failure) |
-| Address auto-fill failure is a high-friction specific failure point | Probable | Interviews (majority mention) + Analytics (error pattern) |
-| Payment trust concerns affect a meaningful minority of users | Probable | Survey (17%) — no corroborating behavioral data |
-| A checkout timer is creating abandonment-triggering pressure | Exploratory | Interviews only (n=3) |
+| Conclusion                                                          | Confidence  | Evidence                                                        |
+| ------------------------------------------------------------------- | ----------- | --------------------------------------------------------------- |
+| The payment screen is the primary abandonment location              | Confirmed   | Analytics + Interviews + Survey (indirect)                      |
+| Form field errors are a significant direct cause of abandonment     | Confirmed   | Analytics (3.2 errors/session) + Interviews (auto-fill failure) |
+| Address auto-fill failure is a high-friction specific failure point | Probable    | Interviews (majority mention) + Analytics (error pattern)       |
+| Payment trust concerns affect a meaningful minority of users        | Probable    | Survey (17%) — no corroborating behavioral data                 |
+| A checkout timer is creating abandonment-triggering pressure        | Exploratory | Interviews only (n=3)                                           |
 
 ---
 
@@ -150,9 +159,11 @@ Mobile checkout abandonment is primarily driven by a broken payment entry experi
 ---
 
 ## Variations
+
 - **Literature Meta-Synthesis**: Integrating findings from 10-30 published studies into a structured evidence review
 - **Stakeholder Research Triangulation**: Synthesizing data collected from multiple stakeholder groups (customers, employees, partners) on the same topic
 
 ## Related Prompts
+
 - [Primary Research Designer](primary-research-designer.md) - Design the studies whose data feeds into synthesis
 - [Research Report Writer](research-report-writer.md) - Transform synthesis conclusions into an executive report

@@ -30,7 +30,7 @@ permalink: /business-ai-prompts/
 
         <div class="hub-categories">
             <h2>Business AI Prompt Categories</h2>
-            
+
             <div class="category-grid">
                 <div class="category-card featured">
                     <div class="category-icon">📊</div>
@@ -92,26 +92,26 @@ permalink: /business-ai-prompts/
 
         <div class="hub-use-cases">
             <h2>Popular Business Use Cases</h2>
-            
+
             <div class="use-case-grid">
                 <div class="use-case-item">
                     <h3>Strategic Planning & Roadmaps</h3>
                     <p>Create comprehensive business strategies, product roadmaps, and long-term planning frameworks.</p>
                     <a href="#" class="btn-primary">Explore Strategic Prompts</a>
                 </div>
-                
+
                 <div class="use-case-item">
                     <h3>Team Management & Leadership</h3>
                     <p>Improve team performance, resolve conflicts, and develop leadership capabilities.</p>
                     <a href="#" class="btn-primary">Browse Leadership Prompts</a>
                 </div>
-                
+
                 <div class="use-case-item">
                     <h3>Process Optimization</h3>
                     <p>Streamline workflows, reduce costs, and improve operational efficiency.</p>
                     <a href="#" class="btn-primary">View Optimization Prompts</a>
                 </div>
-                
+
                 <div class="use-case-item">
                     <h3>Market Analysis & Research</h3>
                     <p>Conduct market research, analyze competitors, and identify business opportunities.</p>
@@ -122,7 +122,7 @@ permalink: /business-ai-prompts/
 
         <div class="hub-featured">
             <h2>Featured Business Prompts</h2>
-            
+
             <div class="featured-grid">
                 {% assign business_prompts = site.prompts | where: "category", "management-leadership" %}
                 {% for prompt in business_prompts limit:6 %}
@@ -151,6 +151,7 @@ permalink: /business-ai-prompts/
             </div>
         </div>
     </div>
+
 </div>
 
 <style>

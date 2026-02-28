@@ -1,6 +1,7 @@
 # Workout Routine Designer
 
 ## Metadata
+
 - **ID**: `health-workout-routine`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ A comprehensive fitness coach that creates personalized workout routines based o
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating personalized workout programs
 - Designing home or gym-based routines
 - Building exercise habits from scratch
@@ -25,6 +27,7 @@ A comprehensive fitness coach that creates personalized workout routines based o
 - Returning to exercise after extended breaks
 
 **Anti-Patterns (When NOT to Use):**
+
 - Rehabilitation from injury (requires physical therapy)
 - Competitive athletic training (requires specialized coaching)
 - Medical exercise prescription
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Build strength, improve energy, eventually lose some weight. Time: 3 days/week, 30-40 minutes max. Equipment: Basic home setup (dumbbells 5-20 lbs, resistance bands, yoga mat). Challenges: Get bored easily, tend to start programs but quit after 2-3 weeks.
 
 ### Output
@@ -119,6 +123,7 @@ Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Buil
 3 days/week, full-body training, 30-35 minutes per session. Focus on building consistency before intensity.
 
 **Weekly Schedule:**
+
 - Day 1: Full Body A (e.g., Monday)
 - Day 2: Rest
 - Day 3: Full Body B (e.g., Wednesday)
@@ -129,13 +134,14 @@ Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Buil
 
 **Workout A:**
 
-*Warm-up (5 min):*
+_Warm-up (5 min):_
+
 - March in place: 1 min
 - Arm circles: 30 sec each direction
 - Bodyweight squats: 10 reps
 - Hip circles: 10 each direction
 
-*Main Workout:*
+_Main Workout:_
 | Exercise | Sets | Reps | Rest |
 |----------|------|------|------|
 | Goblet Squat (dumbbell) | 3 | 10-12 | 60 sec |
@@ -144,14 +150,15 @@ Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Buil
 | Glute Bridge | 3 | 12-15 | 45 sec |
 | Plank | 3 | 20-30 sec | 45 sec |
 
-*Cool-down (3 min):*
+_Cool-down (3 min):_
+
 - Quad stretch, hamstring stretch, chest stretch (30 sec each)
 
 **Workout B:**
 
-*Warm-up: Same as Workout A*
+_Warm-up: Same as Workout A_
 
-*Main Workout:*
+_Main Workout:_
 | Exercise | Sets | Reps | Rest |
 |----------|------|------|------|
 | Romanian Deadlift (dumbbells) | 3 | 10-12 | 60 sec |
@@ -160,34 +167,38 @@ Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Buil
 | Band Pull-Apart | 3 | 12-15 | 45 sec |
 | Dead Bug | 3 | 10 each side | 45 sec |
 
-*Cool-down: Same as Workout A*
+_Cool-down: Same as Workout A_
 
 **Progression Plan:**
 
-*Weeks 1-2:* Learn movements, use lighter weights
-*Weeks 3-4:* Increase weight slightly or add 1-2 reps
-*Weeks 5-6:* Continue progression, notice strength gains
-*Week 7+:* Consider adding 4th day or increasing intensity
+_Weeks 1-2:_ Learn movements, use lighter weights
+_Weeks 3-4:_ Increase weight slightly or add 1-2 reps
+_Weeks 5-6:_ Continue progression, notice strength gains
+_Week 7+:_ Consider adding 4th day or increasing intensity
 
 **Consistency Strategies (For Boredom Prevention):**
 
-*Variety Within Structure:*
+_Variety Within Structure:_
+
 - Change exercises every 4-6 weeks (same movement patterns)
 - Try different warm-up options
 - Add music, podcast, or workout buddy
 
-*Habit Building:*
+_Habit Building:_
+
 - Same days/times each week
 - Workout clothes ready the night before
 - Start immediately (don't wait for motivation)
 - 3 weeks of consistency before evaluating if you "like" it
 
-*When Motivation Drops:*
+_When Motivation Drops:_
+
 - Minimum viable workout: Do warm-up + 1 set of each exercise
 - Any workout counts (even 15 minutes)
 - Focus on showing up, not performance
 
 **Success Metrics:**
+
 - Week 2: Completed 4+ workouts
 - Week 4: Movements feel more natural
 - Week 6: Increased weights or reps
@@ -196,6 +207,7 @@ Fitness level: Beginner, haven't exercised consistently in 2+ years. Goals: Buil
 ---
 
 ## Related Prompts
+
 - [Nutrition Optimization Planner](nutrition-optimization-planner.md)
 - [Weight Management Coach](weight-management-coach.md)
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md)

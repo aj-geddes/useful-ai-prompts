@@ -5,7 +5,17 @@ category: government-digital
 slug: government-digital
 icon: fas fa-landmark
 description: "Digital transformation prompts for government services, citizen experience, smart cities, and public sector innovation."
-tags: [digital government, citizen services, smart cities, digital identity, public sector, government API, digital transformation, civic technology]
+tags:
+  [
+    digital government,
+    citizen services,
+    smart cities,
+    digital identity,
+    public sector,
+    government API,
+    digital transformation,
+    civic technology,
+  ]
 ---
 
 The Government Digital category contains specialized prompts for public sector professionals driving digital transformation in government. These prompts focus on citizen-centered design, smart city development, and digital service delivery optimization.

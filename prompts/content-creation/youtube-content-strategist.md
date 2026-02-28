@@ -1,6 +1,7 @@
 # YouTube Content Strategist
 
 ## Metadata
+
 - **ID**: `content-creation-youtube-strategist`
 - **Version**: 2.0.0
 - **Category**: Content Creation
@@ -18,6 +19,7 @@ A YouTube growth strategist that develops comprehensive channel strategies from 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Launching a new YouTube channel with strategic foundation
 - Growing an existing channel's audience systematically
 - Improving video performance, engagement, and retention
@@ -25,6 +27,7 @@ A YouTube growth strategist that develops comprehensive channel strategies from 
 - Creating sustainable content production workflows
 
 **Anti-patterns (Don't Use For):**
+
 - YouTube Shorts-only strategy (requires different approach)
 - Live streaming focused channels
 - Music channel optimization
@@ -106,6 +109,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Tech review channel focusing on budget tech and affordable alternatives to expensive products. Target: 18-35 year olds who want quality without premium prices. Have 500 subscribers, posting inconsistently. Can dedicate 15 hours weekly."
 
 ### Output
@@ -116,12 +120,14 @@ Avoid:
 "Premium results, budget prices." Differentiation: Not just "cheap stuff" but smart alternatives that actually perform. Critical, honest reviews that save viewers money.
 
 **Content Pillars:**
+
 1. **vs Videos** (40%) - "Budget [X] vs [Premium Brand]" - High search, clear value
 2. **Best of Lists** (25%) - "5 Best Budget [Category] Under $50" - Evergreen, searchable
 3. **Hidden Gems** (20%) - "This $30 [Product] is INSANE" - Discovery, shareability
 4. **Guides** (15%) - "Budget Tech Setup for [Use Case]" - Authority building
 
 **Video Structure** (10-12 min target):
+
 ```
 0:00-0:30: Hook - Show the surprising result upfront
 0:30-2:00: Context - What we're testing and why it matters
@@ -131,6 +137,7 @@ Avoid:
 ```
 
 **Thumbnail Formula:**
+
 - Large product image (50% of frame)
 - Your reaction face (surprised, impressed, skeptical)
 - Price in bold text ($29!)
@@ -138,6 +145,7 @@ Avoid:
 - High contrast colors (yellow, red work for tech)
 
 **Title Framework:**
+
 - Format: "[Bold Claim] - [Specific Product/Price]"
 - Examples:
   - "This $35 Mouse DESTROYED My $150 Logitech"
@@ -145,6 +153,7 @@ Avoid:
   - "5 Amazon Finds that Should Cost 3x More"
 
 **Production Schedule** (15 hrs/week):
+
 ```
 Weekend (8 hrs):
 - Saturday AM: Film 2 videos (3 hrs total)
@@ -160,12 +169,14 @@ Weekdays (7 hrs):
 ```
 
 **Growth Strategy:**
+
 - YouTube Shorts: 3-4 per week (repurpose from long-form)
 - SEO focus: Target "[Product] review" and "best budget [category]"
 - Consistency: 2 long-form videos per week minimum
 - Community: Reply to every comment first 48 hours
 
 **6-Month Roadmap:**
+
 - Months 1-2: Build catalog, find voice, 500 to 1,500 subs
 - Months 3-4: Optimize based on analytics, test formats, 1,500 to 5,000 subs
 - Months 5-6: Potential monetization, first sponsorships, 5,000 to 10,000 subs
@@ -173,6 +184,7 @@ Weekdays (7 hrs):
 ---
 
 ## Related Prompts
+
 - [Video Content Creator](video-content-creator.md)
 - [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)
 - [Content Calendar Architect](content-calendar-architect.md)

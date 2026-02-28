@@ -1,6 +1,7 @@
 # Incident Response Commander
 
 ## Metadata
+
 - **ID**: `incident-response-commander`
 - **Version**: 1.1.0
 - **Category**: Technical/Cybersecurity
@@ -18,6 +19,7 @@ Coordinates effective incident response for security breaches, guiding teams thr
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Active security incidents requiring immediate coordinated response
 - Ransomware attacks with ongoing encryption or data exfiltration
 - Data breach investigation and containment
@@ -25,6 +27,7 @@ Coordinates effective incident response for security breaches, guiding teams thr
 - Regulatory breach notification preparation (GDPR, HIPAA, PCI-DSS)
 
 **Anti-patterns (when NOT to use):**
+
 - Routine security monitoring and alert triage
 - Compliance audits or security assessments
 - Proactive threat hunting without active incident indicators
@@ -117,6 +120,7 @@ Ransomware attack discovered approximately 2 hours ago. Files are encrypted on 3
 **CRITICAL: Active Encryption - Immediate Actions (Next 15 Minutes)**
 
 1. **Network Isolation - HIGHEST PRIORITY**
+
 ```bash
 # On affected servers - block all network except IR team
 netsh advfirewall firewall add rule name="IR_Block_All" dir=out action=block
@@ -130,6 +134,7 @@ Set-SmbServerConfiguration -EnableSMB2Protocol $false -Force
 ```
 
 2. **CrowdStrike Containment**
+
 ```
 # In Falcon console, immediately:
 - Network contain all hosts with darkside.exe detection
@@ -138,6 +143,7 @@ Set-SmbServerConfiguration -EnableSMB2Protocol $false -Force
 ```
 
 3. **VLAN Quarantine**
+
 ```
 # On network switches - move infected servers to quarantine VLAN
 vlan 999 name QUARANTINE
@@ -169,14 +175,15 @@ Copy-Item "C:\Users\*\AppData\Local\Temp\*" "\\forensics\evidence\$env:COMPUTERN
 
 **Investigation Plan**
 
-| Phase | Timeline | Focus | Tools |
-|-------|----------|-------|-------|
-| Scope Assessment | Hours 2-4 | Full infection inventory, identify all compromised hosts | CrowdStrike host search, Splunk queries |
-| Initial Access | Hours 4-8 | Entry point identification (phishing, RDP, vulnerability) | Email logs, VPN logs, firewall logs |
-| Lateral Movement | Hours 4-8 | Credential theft, internal spread patterns | AD logs, CrowdStrike process tree |
-| Data Exfiltration | Hours 6-12 | Determine if data was stolen before encryption | Network flow data, proxy logs, DLP alerts |
+| Phase             | Timeline   | Focus                                                     | Tools                                     |
+| ----------------- | ---------- | --------------------------------------------------------- | ----------------------------------------- |
+| Scope Assessment  | Hours 2-4  | Full infection inventory, identify all compromised hosts  | CrowdStrike host search, Splunk queries   |
+| Initial Access    | Hours 4-8  | Entry point identification (phishing, RDP, vulnerability) | Email logs, VPN logs, firewall logs       |
+| Lateral Movement  | Hours 4-8  | Credential theft, internal spread patterns                | AD logs, CrowdStrike process tree         |
+| Data Exfiltration | Hours 6-12 | Determine if data was stolen before encryption            | Network flow data, proxy logs, DLP alerts |
 
 **Splunk Investigation Queries**
+
 ```spl
 # Find all hosts with ransomware indicators
 index=crowdstrike event_simpleName=ProcessRollup2 FileName="darkside.exe"
@@ -194,26 +201,27 @@ index=network dest_ip=<russian_ip>
 
 **Communication Strategy**
 
-| Audience | Timing | Message Owner | Template |
-|----------|--------|---------------|----------|
-| Executive Team | Immediate | CISO | Status update every 30 min during active phase |
-| IT Operations | Immediate | IR Lead | Technical coordination, action assignments |
-| All Staff | Within 2 hours | Communications | "Disconnect from network, await instructions" |
-| Legal Counsel | Within 4 hours | CISO | Regulatory exposure assessment |
-| GDPR Regulator | Within 72 hours | Legal/DPO | Formal breach notification if PII confirmed affected |
-| Affected Customers | After scope known | Legal/PR | Only after legal review and scope confirmation |
+| Audience           | Timing            | Message Owner  | Template                                             |
+| ------------------ | ----------------- | -------------- | ---------------------------------------------------- |
+| Executive Team     | Immediate         | CISO           | Status update every 30 min during active phase       |
+| IT Operations      | Immediate         | IR Lead        | Technical coordination, action assignments           |
+| All Staff          | Within 2 hours    | Communications | "Disconnect from network, await instructions"        |
+| Legal Counsel      | Within 4 hours    | CISO           | Regulatory exposure assessment                       |
+| GDPR Regulator     | Within 72 hours   | Legal/DPO      | Formal breach notification if PII confirmed affected |
+| Affected Customers | After scope known | Legal/PR       | Only after legal review and scope confirmation       |
 
 **Recovery Priority Matrix**
 
-| Priority | Systems | Recovery Method | Verification |
-|----------|---------|-----------------|--------------|
-| P0 | Domain Controllers | Restore from offline backup (48hr+ old) | AD health check, replication test |
-| P1 | Authentication Systems | Verified backup + credential reset | Login testing, MFA verification |
-| P2 | Critical Databases | Point-in-time recovery + malware scan | Data integrity checks, application testing |
-| P3 | File Servers | Backup restoration + staged recovery | File hash comparison, access testing |
-| P4 | User Workstations | Full reimage from gold image | EDR agent verification |
+| Priority | Systems                | Recovery Method                         | Verification                               |
+| -------- | ---------------------- | --------------------------------------- | ------------------------------------------ |
+| P0       | Domain Controllers     | Restore from offline backup (48hr+ old) | AD health check, replication test          |
+| P1       | Authentication Systems | Verified backup + credential reset      | Login testing, MFA verification            |
+| P2       | Critical Databases     | Point-in-time recovery + malware scan   | Data integrity checks, application testing |
+| P3       | File Servers           | Backup restoration + staged recovery    | File hash comparison, access testing       |
+| P4       | User Workstations      | Full reimage from gold image            | EDR agent verification                     |
 
 **Critical: Before Bringing Systems Online**
+
 - All domain admin passwords reset
 - Service account passwords reset
 - Network segmentation implemented between zones
@@ -222,14 +230,15 @@ index=network dest_ip=<russian_ip>
 
 **GDPR 72-Hour Timeline**
 
-| Hour | Action Required |
-|------|-----------------|
-| 0-24 | Determine if personal data affected, document scope |
-| 24-48 | Prepare notification draft, legal review |
-| 48-72 | Submit supervisory authority notification |
-| 72+ | Individual notifications if high risk |
+| Hour  | Action Required                                     |
+| ----- | --------------------------------------------------- |
+| 0-24  | Determine if personal data affected, document scope |
+| 24-48 | Prepare notification draft, legal review            |
+| 48-72 | Submit supervisory authority notification           |
+| 72+   | Individual notifications if high risk               |
 
 **Post-Incident Actions**
+
 - Conduct tabletop exercise based on this incident
 - Implement network segmentation between server zones
 - Deploy honeypot file servers for early detection
@@ -239,6 +248,7 @@ index=network dest_ip=<russian_ip>
 ---
 
 ## Related Prompts
+
 - [Security Implementation Expert](../../technical-workflows/security-implementation-expert.md) - Implement security controls
 - [Cybersecurity Defense Architect](./cybersecurity-defense-architect.md) - Design security architecture
 - [Crisis Management Expert](../../problem-solving/crisis-management-expert.md) - Manage organizational crisis response

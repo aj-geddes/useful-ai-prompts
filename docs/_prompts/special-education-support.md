@@ -3,18 +3,19 @@ title: Special Education Support
 slug: special-education-support
 category: education
 tags:
-- special
-- education
-- IEP
-- accommodations
-- modifications
-- inclusive
-- classroom
+  - special
+  - education
+  - IEP
+  - accommodations
+  - modifications
+  - inclusive
+  - classroom
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps educators develop practical, legally compliant IEP
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps educators develop practical, legally compliant IEP
   accommodations, instructional modifications, and inclusive classroom strategies
   for students with disabilities. It translates assessment data and IEP goals into
   day-to-day instructional decisions that support student access and progress. The
@@ -22,15 +23,15 @@ description: This prompt helps educators develop practical, legally compliant IE
   needs and general education classroom contexts.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- General education teachers needing to implement IEP accommodations effectively in
-  their classrooms
-- Special education teachers designing instructional supports and modifications for
-  inclusion settings
-- Instructional teams developing universal design for learning (UDL) approaches for
-  diverse learners
-- Writing legally binding IEP documents — that requires a certified special education
-  team process
+  - Ideal Scenarios:**
+  - General education teachers needing to implement IEP accommodations effectively in
+    their classrooms
+  - Special education teachers designing instructional supports and modifications for
+    inclusion settings
+  - Instructional teams developing universal design for learning (UDL) approaches for
+    diverse learners
+  - Writing legally binding IEP documents — that requires a certified special education
+    team process
 complexity: advanced
 interaction: multi-turn
 ---

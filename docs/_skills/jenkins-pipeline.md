@@ -1,13 +1,14 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Build Jenkins declarative and scripted pipelines with stages, agents,
+date: "2025-01-01"
+description:
+  Build Jenkins declarative and scripted pipelines with stages, agents,
   parameters, and plugins. Implement multi-branch pipelines and deployment automation.
 layout: skill
 slug: jenkins-pipeline
 tags:
-- jenkins
-- deployment
+  - jenkins
+  - deployment
 title: jenkins-pipeline
 ---
 
@@ -151,6 +152,7 @@ pipeline {
 ## Best Practices
 
 ### ✅ DO
+
 - Use declarative pipelines for clarity
 - Use credentials plugin for secrets
 - Archive artifacts and reports
@@ -158,6 +160,7 @@ pipeline {
 - Keep pipelines modular and reusable
 
 ### ❌ DON'T
+
 - Store credentials in pipeline code
 - Ignore pipeline errors
 - Skip test coverage reporting

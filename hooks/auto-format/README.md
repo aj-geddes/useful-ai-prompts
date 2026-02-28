@@ -171,47 +171,58 @@ Changes:
 ## Supported Formatters
 
 ### JavaScript/TypeScript
+
 - **Prettier** - Opinionated code formatter
 - **ESLint** - With --fix flag
 - **Standard** - JavaScript Standard Style
 
 ### Python
+
 - **Black** - The uncompromising formatter
 - **autopep8** - PEP 8 compliance
 - **yapf** - Yet Another Python Formatter
 - **isort** - Import sorting
 
 ### Ruby
+
 - **RuboCop** - Ruby static code analyzer
 - **Prettier (Ruby plugin)** - Alternative formatter
 
 ### Go
+
 - **gofmt** - Official Go formatter
 - **goimports** - Manages imports and formats
 
 ### Rust
+
 - **rustfmt** - Official Rust formatter
 
 ### PHP
+
 - **PHP-CS-Fixer** - PHP Coding Standards Fixer
 - **PHP_CodeSniffer** - With phpcbf
 
 ### Java
+
 - **google-java-format** - Google's Java formatter
 - **prettier-java** - Prettier plugin for Java
 
 ### C/C++
+
 - **clang-format** - LLVM code formatter
 
 ### CSS/SCSS/Less
+
 - **Prettier** - Supports CSS and preprocessors
 - **stylelint** - With --fix flag
 
 ### HTML
+
 - **Prettier** - HTML formatting
 - **js-beautify** - Multi-language beautifier
 
 ### JSON/YAML/Markdown
+
 - **Prettier** - Supports multiple formats
 
 ## Customization
@@ -240,10 +251,10 @@ module.exports = {
   useTabs: false,
   semi: true,
   singleQuote: true,
-  quoteProps: 'as-needed',
-  trailingComma: 'all',
+  quoteProps: "as-needed",
+  trailingComma: "all",
   bracketSpacing: true,
-  arrowParens: 'always',
+  arrowParens: "always",
 };
 ```
 
@@ -530,6 +541,7 @@ pip install black
 ### Configuration Not Respected
 
 Verify config files are:
+
 1. In correct location (project root)
 2. Named correctly (.prettierrc, pyproject.toml, etc.)
 3. Valid format (JSON, YAML, TOML)
@@ -559,6 +571,7 @@ For slow formatting:
 ### Hook Not Running
 
 Check:
+
 1. Hook is in PostToolUse section
 2. Pattern matches: "^(Edit|Write)$"
 3. Script is executable

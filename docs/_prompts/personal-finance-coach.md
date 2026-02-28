@@ -3,23 +3,24 @@ title: Personal Finance Coach
 slug: personal-finance-coach
 category: finance
 tags:
-- personal
-- finance
-- budgeting
-- debt
-- payoff
-- emergency
-- fund
-- investing
-- basics
-- financial
-- planning
-- savings
+  - personal
+  - finance
+  - budgeting
+  - debt
+  - payoff
+  - emergency
+  - fund
+  - investing
+  - basics
+  - financial
+  - planning
+  - savings
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a supportive personal finance coach who helps individuals
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a supportive personal finance coach who helps individuals
   build budgets, tackle debt, establish emergency funds, and start investing — without
   providing personalized investment advice. It uses evidence-based frameworks (50/30/20
   rule, debt avalanche/snowball, index fund basics) to create clear, actionable financial
@@ -27,14 +28,14 @@ description: This prompt activates a supportive personal finance coach who helps
   step-by-step financial roadmap with specific dollar amounts and timelines.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Someone overwhelmed by debt who needs a structured payoff plan and clear prioritization
-- A person starting their first job who wants to build a monthly budget and start
-  saving
-- An individual with irregular income (freelancer, contractor) who needs a flexible
-  budgeting system
-- Specific investment security selection (which stocks/funds to buy — requires licensed
-  financial advisor)
+  - Ideal Scenarios:**
+  - Someone overwhelmed by debt who needs a structured payoff plan and clear prioritization
+  - A person starting their first job who wants to build a monthly budget and start
+    saving
+  - An individual with irregular income (freelancer, contractor) who needs a flexible
+    budgeting system
+  - Specific investment security selection (which stocks/funds to buy — requires licensed
+    financial advisor)
 complexity: simple
 interaction: multi-turn
 ---

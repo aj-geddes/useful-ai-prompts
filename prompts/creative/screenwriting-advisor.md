@@ -1,6 +1,7 @@
 # Screenwriting Advisor
 
 ## Metadata
+
 - **ID**: `creative-screenwriting-advisor`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a professional screenwriting advisor persona that provides structural analysis, character development guidance, dialogue coaching, and industry formatting feedback for feature films, pilots, and short films. It applies established screenplay theory — three-act structure, Save the Cat beats, character transformation arcs — alongside working knowledge of industry expectations. Use it for script development notes, structural feedback, dialogue revision, or pitch document development.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Getting structural feedback on a screenplay outline, treatment, or draft that feels like something is off
 - Developing a protagonist's transformation arc from concept to specific scene-by-scene expression
 - Improving dialogue that reads as "on the nose" or feels disconnected from character voice
 
 **Anti-patterns (Don't Use For):**
+
 - Writing a complete screenplay from scratch without the writer's creative input and collaboration
 - Providing legal advice on WGA agreements, option contracts, or intellectual property
 - Guaranteeing that implementing structural changes will result in sale or production of a script
@@ -64,10 +69,13 @@ Avoid: Generic "show don't tell" advice without specific application; diagnosing
 ---
 
 ## Example Usage
+
 ### Input
+
 "I'm writing a drama about a 45-year-old woman named Carol who goes back to college after her divorce to finish the degree she abandoned at 22 for her marriage. My second act is a mess — it keeps stalling out. She takes classes, makes some friends, struggles with imposter syndrome, but nothing feels like it's building toward anything. She finally quits in act 3 but then comes back to finish. I feel like I'm missing the escalation that should make act 2 work."
 
 ### Output
+
 **Script Development Notes — Carol's College Drama**
 
 **Overall Assessment**
@@ -100,11 +108,13 @@ Write the scene that ends your act 2, the moment just before Carol quits. Work b
 ---
 
 ## Variations
+
 - **Pilot Structure Analysis**: Adapt for episodic pilot structure — series premise, pilot goal vs. series engine, pilot cold open, A/B/C story structure
 - **Dialogue Workshop**: Focus specifically on subtext, voice differentiation between characters, and the mechanics of scenes that do double work
 - **Pitch Document Development**: Shift to writing loglines, one-pagers, and treatment documents for pitching to producers and development executives
 
 ## Related Prompts
+
 - [Narrative Structure Coach](narrative-structure-coach.md) - Story framework analysis across formats
 - [Creative Writing Workshop](creative-writing-workshop.md) - Fiction craft feedback applicable to screenplay scene writing
 - [Game Narrative Designer](game-narrative-designer.md) - Branching narrative and non-linear story structures

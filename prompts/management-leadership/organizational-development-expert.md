@@ -1,6 +1,7 @@
 # Organizational Development Expert
 
 ## Metadata
+
 - **ID**: `leadership-organizational-development`
 - **Version**: 1.0.0
 - **Category**: Management & Leadership
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs and implements organizational development initiatives that enhance culture, structure, and overall effectiveness. Addresses organizational growing pains, post-merger integration, culture transformation, and capability building through systems thinking and change management expertise.
 
 ## When to Use
+
 - Experiencing organizational growing pains from rapid scaling
 - Integrating organizations after mergers or acquisitions
 - Transforming organizational culture
@@ -22,6 +25,7 @@ Designs and implements organizational development initiatives that enhance cultu
 - Building organizational capabilities at scale
 
 **Anti-patterns (don't use for)**:
+
 - Individual team issues (use Team Building Expert)
 - Specific process improvements (use Process Improvement Expert)
 - HR compliance matters (consult HR/legal)
@@ -104,13 +108,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We grew from 100 to 300 employees in 18 months. Losing startup culture, processes breaking down, middle management layer is new and struggling, communication is fragmented."
 
 ### Output
+
 **Organizational Development Strategy: Scaling Through Growth**
 
 **1. Assessment**
 Current state diagnosis:
+
 - Structure: Evolved organically, unclear decision rights, spans of control too wide
 - Culture: Startup DNA diluted, "us vs. them" forming between old and new
 - Processes: Tribal knowledge, inconsistent practices, bottlenecks at founders
@@ -118,6 +125,7 @@ Current state diagnosis:
 - Communication: What worked at 100 breaks at 300, information silos emerging
 
 Root causes:
+
 - Growth outpaced organizational infrastructure
 - Cultural transmission mechanisms didn't scale
 - Management layer added without development
@@ -125,24 +133,28 @@ Root causes:
 
 **2. Development Initiatives**
 Priority 1: Leadership Development (Months 1-6)
+
 - Problem: New managers lack skills, creating bottlenecks and employee frustration
 - Initiative: Manager Foundations Program
 - Approach: Cohort-based training, peer support groups, coaching for high-potential
 - Expected outcome: Managers can lead, develop, and make decisions independently
 
 Priority 2: Organizational Clarity (Months 2-8)
+
 - Problem: Unclear who decides what, redundant meetings, slow decisions
 - Initiative: Role Clarity and Decision Rights
 - Approach: RACI mapping, decision authority documentation, meeting audit
 - Expected outcome: Faster decisions, reduced meeting load, clear accountability
 
 Priority 3: Culture Reinforcement (Months 3-12)
+
 - Problem: Original culture diluting, new hires don't feel connected
 - Initiative: Culture Ambassador Program
 - Approach: Define explicit values, activate culture carriers, integrate into hiring/onboarding
 - Expected outcome: Values consistently lived, new hires acculturated faster
 
 Priority 4: Scalable Processes (Months 6-18)
+
 - Problem: Tribal knowledge, inconsistent practices, founders as bottleneck
 - Initiative: Process Documentation and Enablement
 - Approach: Document top 20 critical processes, create playbooks, enable self-service
@@ -150,16 +162,19 @@ Priority 4: Scalable Processes (Months 6-18)
 
 **3. Design Blueprint**
 Organizational structure adjustment:
+
 - Current: Functional silos, 15+ direct reports to some leaders
 - Proposed: Add team lead layer, target 6-8 direct reports max
 - Decision rights: Push routine decisions down, reserve strategic for leadership
 
 Role clarity framework:
+
 - For each function: Document decisions they own vs. consult vs. escalate
 - For each manager: Clear scope of authority, when to act vs. ask
 - For cross-functional: RACI for top 10 recurring collaboration scenarios
 
 Culture reinforcement mechanisms:
+
 - Values integration: Add to hiring scorecards, performance reviews, recognition
 - Rituals: Preserve what made startup culture special (adapt for scale)
 - Storytelling: Share company history and values through regular narrative
@@ -167,29 +182,34 @@ Culture reinforcement mechanisms:
 
 **4. Implementation Roadmap**
 Months 1-3: Foundation
+
 - Launch Manager Foundations Program (first cohort)
 - Begin decision rights mapping with leadership team
 - Define values explicitly (involve cross-section of employees)
 
 Months 4-6: Build
+
 - Complete decision rights documentation
 - Roll out role clarity to all managers
 - Launch Culture Ambassador Program
 - Reduce founder meeting involvement by 30%
 
 Months 7-12: Embed
+
 - Second cohort of Manager Foundations
 - Process documentation sprint (top 20 processes)
 - Culture integration into all people processes
 - Measure and adjust based on feedback
 
 Months 13-18: Sustain
+
 - Transition programs to internal ownership
 - Continuous improvement of processes
 - Manager community of practice (ongoing peer learning)
 
 **5. Capability Building**
 Manager Foundations curriculum:
+
 - Module 1: Feedback and coaching conversations
 - Module 2: Goal setting and performance management
 - Module 3: Team dynamics and delegation
@@ -197,6 +217,7 @@ Manager Foundations curriculum:
 - Module 5: Leading through change
 
 Success metrics:
+
 - Employee engagement scores (target: maintain or improve)
 - Manager effectiveness rating (from direct reports)
 - Decision cycle time (target: 30% reduction)
@@ -206,6 +227,7 @@ Success metrics:
 ---
 
 ## Related Prompts
+
 - [Change Management Expert](change-management-expert.md)
 - [Strategic Leadership Expert](strategic-leadership-expert.md)
 - [Talent Management Expert](talent-management-expert.md)

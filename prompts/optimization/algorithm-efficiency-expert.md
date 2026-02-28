@@ -1,6 +1,7 @@
 # Algorithm Efficiency Expert
 
 ## Metadata
+
 - **ID**: `optimization-algorithm-efficiency`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Optimizes algorithms and code for better performance, reduced complexity, and im
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Algorithm performance doesn't meet requirements
 - Code is slow with large input sizes
 - Memory usage is excessive
@@ -26,6 +28,7 @@ Optimizes algorithms and code for better performance, reduced complexity, and im
 - Optimizing critical path operations
 
 **Anti-patterns (Don't Use For):**
+
 - General code refactoring without performance concerns
 - Debugging logic errors or functional bugs
 - Architecture design or system design decisions
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have a function that finds all pairs of numbers in an array that sum to a target value. Currently using nested loops and it's taking 45 seconds for arrays of 100K elements. Using Python. Need it under 1 second."
 
 ### Output
@@ -139,6 +143,7 @@ Avoid:
 **1. Complexity Analysis**
 
 Current approach (nested loops):
+
 - Time complexity: O(n^2) - for each element, scanning remaining elements
 - Space complexity: O(1) - no additional storage
 - Measured: 45s for 100K = ~450ns per comparison (reasonable for Python)
@@ -151,18 +156,21 @@ Bottleneck: Algorithmic - the nested loop structure cannot be fixed with micro-o
 **2. Optimization Strategy**
 
 **Option A: Hash Set (Recommended)**
+
 - Time: O(n) single pass
 - Space: O(n) for hash set
 - Approach: For each element x, check if (target - x) exists in seen set
 - Expected: <100ms for 100K elements
 
 **Option B: Sorted Array + Two Pointers**
+
 - Time: O(n log n) for sort + O(n) for scan = O(n log n)
 - Space: O(1) if in-place sort allowed
 - Approach: Sort array, use left/right pointers moving inward
 - Expected: <500ms for 100K elements
 
 **Option C: Early Termination (if sorted)**
+
 - If array is already sorted, skip the sort step
 - Time: O(n)
 - Expected: <100ms
@@ -170,6 +178,7 @@ Bottleneck: Algorithmic - the nested loop structure cannot be fixed with micro-o
 **3. Implementation**
 
 Recommended solution (Hash Set approach):
+
 ```python
 # Before: O(n^2) nested loops - 45 seconds
 def find_pairs_slow(arr, target):
@@ -197,16 +206,19 @@ def find_pairs_fast(arr, target):
 **4. Benchmarking**
 
 Expected improvements:
+
 - Time: 45 seconds to <100ms (450x improvement)
 - Memory: ~800KB additional for hash set
 
 Testing approach:
+
 - Test sizes: 1K, 10K, 100K, 1M elements
 - Verify correctness: Compare outputs of old vs. new implementation
 - Edge cases: Empty array, no pairs found, all pairs, duplicates
 - Profile: Use `cProfile` to confirm O(n) scaling
 
 Validation:
+
 ```python
 import time
 arr = list(range(100000))

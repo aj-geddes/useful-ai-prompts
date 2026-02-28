@@ -290,6 +290,7 @@ struct Item: Codable, Identifiable {
 ## Best Practices
 
 ### ✅ DO
+
 - Use SwiftUI for modern UI development
 - Implement MVVM architecture
 - Use async/await patterns
@@ -303,6 +304,7 @@ struct Item: Codable, Identifiable {
 - Follow Swift style guidelines
 
 ### ❌ DON'T
+
 - Store tokens in UserDefaults
 - Make network calls on main thread
 - Use deprecated UIKit patterns

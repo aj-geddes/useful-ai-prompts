@@ -1,6 +1,7 @@
 # Complaint Resolution Expert
 
 ## Metadata
+
 - **ID**: `customer-service-complaint-resolution`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,12 +19,14 @@ Resolves customer complaints by de-escalating tension, diagnosing root causes, a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Drafting responses to angry customer emails or reviews
 - Training customer service teams on complaint handling frameworks
 - Designing complaint resolution workflows and scripts
 - Reviewing a complaint situation to determine appropriate resolution
 
 **Anti-patterns (Don't Use For):**
+
 - Legal disputes requiring attorney involvement
 - Fraud investigation (security team scope)
 - Internal employee complaints (HR scope)
@@ -120,11 +123,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Customer email: 'I ordered a gift for my daughter's birthday three weeks ago and it still hasn't arrived. I've contacted support twice and both times was told it would arrive in 2-3 days. Her birthday was yesterday. This is completely unacceptable and I want a full refund AND the item. I'm posting about this everywhere.' Order was lost by the shipping carrier. We have the item in stock."
 
 ### Output
 
 **Complaint Diagnosis**
+
 - Type: Service failure (carrier loss) compounded by repeated broken promises from support
 - Emotional state: Highly escalated, public threat
 - Underlying need: Acknowledgment of real harm, concrete action, not another promise
@@ -132,7 +137,7 @@ Avoid:
 
 **Draft Response**
 
-*Subject: Your Order — We're Fixing This Today*
+_Subject: Your Order — We're Fixing This Today_
 
 Hi [Name],
 

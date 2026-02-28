@@ -355,11 +355,11 @@ ORDER BY shard_id;
 
 ## Sharding Strategies Comparison
 
-| Strategy | Pros | Cons |
-|----------|------|------|
-| Range-based | Simple to implement | Hotspots in ranges |
-| Hash-based | Even distribution | Complex rebalancing |
-| Directory-based | Flexible, dynamic | Extra lookup overhead |
+| Strategy        | Pros                | Cons                  |
+| --------------- | ------------------- | --------------------- |
+| Range-based     | Simple to implement | Hotspots in ranges    |
+| Hash-based      | Even distribution   | Complex rebalancing   |
+| Directory-based | Flexible, dynamic   | Extra lookup overhead |
 
 ## Resources
 

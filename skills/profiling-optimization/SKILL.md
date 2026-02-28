@@ -23,7 +23,7 @@ Profile code execution to identify performance bottlenecks and optimize critical
 ### 1. **Node.js Profiling**
 
 ```typescript
-import { performance, PerformanceObserver } from 'perf_hooks';
+import { performance, PerformanceObserver } from "perf_hooks";
 
 class Profiler {
   private marks = new Map<string, number>();
@@ -57,14 +57,14 @@ class Profiler {
 // Usage
 const profiler = new Profiler();
 
-app.get('/api/users', async (req, res) => {
-  profiler.mark('request-start');
+app.get("/api/users", async (req, res) => {
+  profiler.mark("request-start");
 
-  const users = await profiler.profile('fetch-users', async () => {
-    return await db.query('SELECT * FROM users');
+  const users = await profiler.profile("fetch-users", async () => {
+    return await db.query("SELECT * FROM users");
   });
 
-  profiler.measure('total-request-time', 'request-start');
+  profiler.measure("total-request-time", "request-start");
 
   res.json(users);
 });
@@ -73,8 +73,8 @@ app.get('/api/users', async (req, res) => {
 ### 2. **Chrome DevTools CPU Profile**
 
 ```typescript
-import inspector from 'inspector';
-import fs from 'fs';
+import inspector from "inspector";
+import fs from "fs";
 
 class CPUProfiler {
   private session: inspector.Session | null = null;
@@ -83,18 +83,18 @@ class CPUProfiler {
     this.session = new inspector.Session();
     this.session.connect();
 
-    this.session.post('Profiler.enable');
-    this.session.post('Profiler.start');
+    this.session.post("Profiler.enable");
+    this.session.post("Profiler.start");
 
-    console.log('CPU profiling started');
+    console.log("CPU profiling started");
   }
 
   async stop(outputFile: string): Promise<void> {
     if (!this.session) return;
 
-    this.session.post('Profiler.stop', (err, { profile }) => {
+    this.session.post("Profiler.stop", (err, { profile }) => {
       if (err) {
-        console.error('Profiling error:', err);
+        console.error("Profiling error:", err);
         return;
       }
 
@@ -117,7 +117,7 @@ cpuProfiler.start();
 await runExpensiveOperation();
 
 // Stop and save
-await cpuProfiler.stop('./profile.cpuprofile');
+await cpuProfiler.stop("./profile.cpuprofile");
 ```
 
 ### 3. **Python cProfile**
@@ -174,7 +174,7 @@ class Benchmark {
   async run(
     name: string,
     fn: () => Promise<any>,
-    iterations: number = 1000
+    iterations: number = 1000,
   ): Promise<void> {
     console.log(`\nBenchmarking: ${name}`);
 
@@ -212,7 +212,7 @@ class Benchmark {
 
   async compare(
     implementations: Array<{ name: string; fn: () => Promise<any> }>,
-    iterations: number = 1000
+    iterations: number = 1000,
   ): Promise<void> {
     for (const impl of implementations) {
       await this.run(impl.name, impl.fn, iterations);
@@ -225,14 +225,14 @@ const bench = new Benchmark();
 
 await bench.compare([
   {
-    name: 'Array.filter + map',
+    name: "Array.filter + map",
     fn: async () => {
       const arr = Array.from({ length: 1000 }, (_, i) => i);
-      return arr.filter(x => x % 2 === 0).map(x => x * 2);
-    }
+      return arr.filter((x) => x % 2 === 0).map((x) => x * 2);
+    },
   },
   {
-    name: 'Single loop',
+    name: "Single loop",
     fn: async () => {
       const arr = Array.from({ length: 1000 }, (_, i) => i);
       const result = [];
@@ -242,35 +242,38 @@ await bench.compare([
         }
       }
       return result;
-    }
-  }
+    },
+  },
 ]);
 ```
 
 ### 5. **Database Query Profiling**
 
 ```typescript
-import { Pool } from 'pg';
+import { Pool } from "pg";
 
 class QueryProfiler {
   constructor(private pool: Pool) {}
 
-  async profileQuery(query: string, params: any[] = []): Promise<{
+  async profileQuery(
+    query: string,
+    params: any[] = [],
+  ): Promise<{
     result: any;
     planningTime: number;
     executionTime: number;
     plan: any;
   }> {
     // Enable timing
-    await this.pool.query('SET track_io_timing = ON');
+    await this.pool.query("SET track_io_timing = ON");
 
     // Get query plan
     const explainResult = await this.pool.query(
       `EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON) ${query}`,
-      params
+      params,
     );
 
-    const plan = explainResult.rows[0]['QUERY PLAN'][0];
+    const plan = explainResult.rows[0]["QUERY PLAN"][0];
 
     // Execute actual query
     const start = performance.now();
@@ -279,23 +282,23 @@ class QueryProfiler {
 
     return {
       result: result.rows,
-      planningTime: plan['Planning Time'],
-      executionTime: plan['Execution Time'],
-      plan
+      planningTime: plan["Planning Time"],
+      executionTime: plan["Execution Time"],
+      plan,
     };
   }
 
   formatPlan(plan: any): string {
-    let output = 'Query Plan:\n';
-    output += `Planning Time: ${plan['Planning Time']}ms\n`;
-    output += `Execution Time: ${plan['Execution Time']}ms\n\n`;
+    let output = "Query Plan:\n";
+    output += `Planning Time: ${plan["Planning Time"]}ms\n`;
+    output += `Execution Time: ${plan["Execution Time"]}ms\n\n`;
 
     const formatNode = (node: any, indent: number = 0) => {
-      const prefix = '  '.repeat(indent);
-      output += `${prefix}${node['Node Type']}\n`;
-      output += `${prefix}  Cost: ${node['Total Cost']}\n`;
-      output += `${prefix}  Rows: ${node['Actual Rows']}\n`;
-      output += `${prefix}  Time: ${node['Actual Total Time']}ms\n`;
+      const prefix = "  ".repeat(indent);
+      output += `${prefix}${node["Node Type"]}\n`;
+      output += `${prefix}  Cost: ${node["Total Cost"]}\n`;
+      output += `${prefix}  Rows: ${node["Actual Rows"]}\n`;
+      output += `${prefix}  Time: ${node["Actual Total Time"]}ms\n`;
 
       if (node.Plans) {
         node.Plans.forEach((child: any) => formatNode(child, indent + 1));
@@ -310,10 +313,8 @@ class QueryProfiler {
 // Usage
 const profiler = new QueryProfiler(pool);
 
-const { result, planningTime, executionTime, plan } = await profiler.profileQuery(
-  'SELECT * FROM users WHERE age > $1',
-  [25]
-);
+const { result, planningTime, executionTime, plan } =
+  await profiler.profileQuery("SELECT * FROM users WHERE age > $1", [25]);
 
 console.log(profiler.formatPlan(plan));
 ```
@@ -391,7 +392,7 @@ class LazyValue<T> {
 
 // Usage
 const expensive = new LazyValue(() => {
-  console.log('Computing expensive value...');
+  console.log("Computing expensive value...");
   return computeExpensiveValue();
 });
 
@@ -402,6 +403,7 @@ const value = expensive.get();
 ## Best Practices
 
 ### ✅ DO
+
 - Profile before optimizing
 - Focus on hot paths
 - Measure impact of changes
@@ -410,6 +412,7 @@ const value = expensive.get();
 - Document optimization rationale
 
 ### ❌ DON'T
+
 - Optimize without profiling
 - Ignore readability for minor gains
 - Skip benchmarking

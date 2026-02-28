@@ -1,6 +1,7 @@
 # Escalation Handler
 
 ## Metadata
+
 - **ID**: `customer-service-escalation-handler`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates an escalation management expert who coaches agents and dra
 ## When to Use
 
 **Ideal Scenarios:**
+
 - An angry customer is threatening to cancel, post publicly, or contact the CEO
 - A support manager needs a response draft for an executive-level escalation
 - Coaching a new agent through their first difficult customer interaction
 
 **Anti-patterns (Don't Use For):**
+
 - Routine complaints that a standard agent response can resolve
 - Legal or regulatory disputes that require counsel involvement from the start
 
@@ -71,9 +74,11 @@ Preserve the customer's dignity at all times, even when they are behaving badly.
 ## Example Usage
 
 ### Input
+
 "Email from David Okafor, 4-year enterprise customer (pays $180k/year). He's furious. Three weeks ago we migrated his data to a new server and corrupted 6 months of his historical reports. He's been in touch with our tier-1 team 8 times. Nothing has been fixed. He just sent a 2am email saying he's contacting our CEO tomorrow, posting on LinkedIn, and has already spoken to a competing vendor. He used the words 'breach of contract' and 'incompetence'."
 
 ### Output
+
 **Response Draft**
 
 Subject: Personal Response to Your Experience — David, I'm Taking Ownership of This
@@ -103,10 +108,12 @@ The subject line uses the customer's name and signals accountability — it brea
 ---
 
 ## Variations
+
 - **Phone Script Mode**: Convert the response into a call guide with talking points, pause cues, and language for handling interruptions
 - **Social Media Escalation Mode**: Draft public-facing response for Twitter/LinkedIn complaint plus private DM follow-up strategy
 
 ## Related Prompts
+
 - [Support Ticket Classifier](support-ticket-classifier.md) - Identifying P1 tickets before they become escalations
 - [Service Recovery Designer](service-recovery-designer.md) - Systematic recovery protocols for service failures
 - [Retention Specialist](retention-specialist.md) - Preventing cancellation after a damaging experience

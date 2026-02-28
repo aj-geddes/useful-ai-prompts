@@ -3,28 +3,29 @@ title: Spacecraft Manufacturing and Assembly Optimization
 slug: spacecraft-manufacturing-assembly-optimization
 category: space economy/manufacturing
 tags:
-- spacecraft-manufacturing
-- lean-manufacturing
-- quality-systems
-- production-optimization
-- AS9100
+  - spacecraft-manufacturing
+  - lean-manufacturing
+  - quality-systems
+  - production-optimization
+  - AS9100
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables establishment and optimization of spacecraft manufacturing
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables establishment and optimization of spacecraft manufacturing
   operations for high-volume satellite production. It combines lean manufacturing
   principles with aerospace quality standards (AS9100) to achieve cost-effective,
   zero-defect production at constellation scale with continuous improvement.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Establishing new spacecraft manufacturing facilities for volume production
-- Optimizing existing production lines for constellation-scale manufacturing (50+
-  units/year)
-- Implementing aerospace quality management systems (AS9100D)
-- Reducing manufacturing costs while maintaining flight-quality standards
+  - Ideal Scenarios:**
+  - Establishing new spacecraft manufacturing facilities for volume production
+  - Optimizing existing production lines for constellation-scale manufacturing (50+
+    units/year)
+  - Implementing aerospace quality management systems (AS9100D)
+  - Reducing manufacturing costs while maintaining flight-quality standards
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,16 +40,18 @@ Commercial satellite constellation economics require dramatic cost reductions co
 
 <input_handling>
 Required inputs:
+
 - Production volume targets (annual/monthly rates)
 - Spacecraft type, mass class, and complexity level
 - Quality and schedule requirements (delivery cadence)
 
 Optional inputs (will use industry defaults if not provided):
+
 - Quality standard (default: AS9100D certified operations)
 - Manufacturing approach (default: lean production with strategic automation)
 - Cleanroom requirements (default: ISO Class 7/8 for integration)
 - Workforce availability (default: develop training program)
-</input_handling>
+  </input_handling>
 
 <task>
 Optimize spacecraft manufacturing through systematic production engineering:
@@ -70,6 +73,7 @@ Step 6: Define continuous improvement framework with cost reduction targets, eff
 Format: Comprehensive Manufacturing Operations Plan with production metrics and quality framework
 Length: 2,500-4,000 words for full plan; 1,000-1,500 for focused analysis
 Structure:
+
 - Facility Overview (volume, spacecraft class, cycle time targets)
 - Production Line Design (stations, durations, activities)
 - Automation Strategy (processes, automation level, benefits)
@@ -78,10 +82,11 @@ Structure:
 - Workforce Development (roles, training, certification)
 - Cost Structure and Improvement Targets (categories, percentages, reduction goals)
 - Performance Metrics (quality, delivery, cost, efficiency)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Zero-defect manufacturing philosophy with specific quality controls
 - Lean, efficient production flow with minimized work-in-progress
 - Robust supply chain with dual-sourcing for critical components
@@ -90,12 +95,13 @@ Excellent responses demonstrate:
 - Realistic cycle times based on spacecraft complexity
 
 Responses must avoid:
+
 - Quality compromises for production speed
 - Single-source dependencies for critical flight components
 - Inadequate training leading to quality escapes
 - Over-automation that reduces flexibility
 - Unrealistic cost or cycle time assumptions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All flight hardware must meet AS9100D quality requirements

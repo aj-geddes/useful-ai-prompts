@@ -1,6 +1,7 @@
 # Succession Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-succession`
 - **Version**: 1.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A succession planning specialist that helps you develop comprehensive leadership
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning for executive or senior leadership transitions
 - Building internal leadership talent pipelines
 - Preparing for founder or key person transitions
@@ -25,6 +27,7 @@ A succession planning specialist that helps you develop comprehensive leadership
 - Addressing single points of failure in critical roles
 
 **Anti-Patterns (when not to use):**
+
 - Individual career planning or development (use career-development-planning-expert)
 - Hiring decisions for external candidates (use talent-acquisition-strategist)
 - Performance management issues (use performance-management-expert)
@@ -116,13 +119,14 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **Succession Risk Assessment**
 
-| Role | Risk Level | Impact | Readiness | Priority |
-|------|------------|--------|-----------|----------|
-| CEO | High | Critical | 40% | Immediate |
-| VP Operations | Medium | High | 70% | 12-month |
-| VP Sales | Medium | High | 60% | 18-month |
+| Role          | Risk Level | Impact   | Readiness | Priority  |
+| ------------- | ---------- | -------- | --------- | --------- |
+| CEO           | High       | Critical | 40%       | Immediate |
+| VP Operations | Medium     | High     | 70%       | 12-month  |
+| VP Sales      | Medium     | High     | 60%       | 18-month  |
 
-*CEO Succession Gap Analysis*
+_CEO Succession Gap Analysis_
+
 - Current State: Strong internal candidates with operational expertise but no CEO-level experience
 - Key Requirements: Strategic leadership, culture stewardship, board management, external stakeholder relations
 - Risk: Leadership vacuum, culture disruption, business continuity during transition
@@ -130,19 +134,22 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **CEO Candidate Assessment**
 
-*Sarah Mitchell - VP Operations (Age 45)*
+_Sarah Mitchell - VP Operations (Age 45)_
+
 - Strengths: 15 years tenure, operational excellence track record, respected leader across organization
 - Development Needs: Strategic thinking, financial management depth, board presence and communication
 - Readiness Timeline: 18-month accelerated program
 - Cultural Fit Score: 8.5/10 (exemplifies family values, strong internal relationships)
 
-*David Rodriguez - VP Sales (Age 48)*
+_David Rodriguez - VP Sales (Age 48)_
+
 - Strengths: 12 years tenure, deep customer relationships, comprehensive market knowledge
 - Development Needs: Operations understanding, strategic planning, cross-functional leadership
 - Readiness Timeline: 20-month development path
 - Cultural Fit Score: 7.5/10 (strong external focus, needs internal relationship building)
 
-*Jennifer Park - Finance Director (Age 42)*
+_Jennifer Park - Finance Director (Age 42)_
+
 - Strengths: 10 years tenure, analytical excellence, financial expertise, methodical approach
 - Development Needs: Broader operational experience, executive presence, leadership visibility
 - Readiness Timeline: 24-month development (backup candidate role)
@@ -150,19 +157,22 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **CEO Development Program (24 months)**
 
-*Phase 1: Strategic Foundation (Months 1-8)*
+_Phase 1: Strategic Foundation (Months 1-8)_
+
 - Board exposure: Attend quarterly meetings, present on area of expertise
 - Strategic projects: Lead annual planning process, conduct new market analysis
 - External development: Executive leadership program at top business school ($50K)
 - Mentoring: Executive coach ($2K/month), retired CEO mentor from industry network
 
-*Phase 2: Leadership Expansion (Months 9-16)*
+_Phase 2: Leadership Expansion (Months 9-16)_
+
 - P&L responsibility: Own business unit financials with full accountability
 - Industry presence: Trade association leadership, conference speaking engagements
 - Crisis leadership: Lead response to simulated or actual operational challenges
 - Cross-functional rotation: Structured exposure to all major departments (2 weeks each)
 
-*Phase 3: CEO Readiness (Months 17-24)*
+_Phase 3: CEO Readiness (Months 17-24)_
+
 - Acting CEO: Handle CEO responsibilities during planned absences
 - Stakeholder management: Direct customer and investor relationship building
 - Culture leadership: Lead major cultural initiative (selected based on organizational needs)
@@ -170,30 +180,35 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **VP Succession Pipeline**
 
-*VP Operations Candidates*
+_VP Operations Candidates_
+
 - Mike Thompson (Manufacturing Director): Deep technical expertise, proven team leadership
 - Lisa Chen (Quality Director): Process excellence, strong cultural alignment
 - Development focus: Strategic thinking, cross-functional collaboration, financial acumen
 
-*VP Sales Candidates*
+_VP Sales Candidates_
+
 - Robert Kim (Regional Sales Director): Consistent revenue growth, strong customer relationships
 - Development focus: Strategic sales leadership, team scaling, operations integration
 
 **Knowledge Transfer Protocol**
 
-*Documentation Phase (Months 1-6)*
+_Documentation Phase (Months 1-6)_
+
 - Key relationships inventory with context and history
 - Decision-making frameworks and underlying rationale
 - Strategic priorities with supporting analysis
 - Cultural norms, traditions, and unwritten rules
 
-*Transition Phase (Months 7-18)*
+_Transition Phase (Months 7-18)_
+
 - Joint stakeholder meetings with gradual handoff
 - Progressive responsibility transfer with coaching support
 - Mentor-successor weekly sessions (documented)
 - Real-time coaching on significant decisions
 
-*Handover Phase (Months 19-24)*
+_Handover Phase (Months 19-24)_
+
 - Successor as primary decision-maker, CEO in advisory capacity
 - Final stakeholder communications and relationship transfers
 - Complete relationship handover with introduction letters
@@ -201,13 +216,15 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **Governance Structure**
 
-*Board Succession Committee*
+_Board Succession Committee_
+
 - Chair: Lead independent director
 - Members: Two additional board members, HR executive (advisory)
 - Scope: CEO succession oversight, compensation alignment, candidate approval
 - Cadence: Quarterly reviews, monthly during final 6 months
 
-*Executive Development Council*
+_Executive Development Council_
+
 - Chair: CEO (VP of HR during CEO transition)
 - Members: Executive team, external advisor
 - Scope: VP succession oversight, development program monitoring
@@ -215,19 +232,22 @@ Organization: Growing manufacturing company, 300 employees. Roles: CEO successio
 
 **Emergency Succession Protocol**
 
-*Immediate Response (0-30 days)*
+_Immediate Response (0-30 days)_
+
 - Interim CEO: Board Chair assumes executive role or designates strongest VP
 - Communication plan activation with prepared templates
 - Operations continuity assurance with delegation of authorities
 - Board emergency session within 48 hours
 
-*Assessment and Selection (30-90 days)*
+_Assessment and Selection (30-90 days)_
+
 - Internal candidate acceleration with compressed evaluation
 - External search initiation if internal readiness insufficient
 - Board selection process with stakeholder input
 - Announcement and transition planning
 
 **Success Metrics**
+
 - Successor readiness score: Target 95% by Month 18
 - High-potential retention: Maintain 95% through transition
 - Internal promotion rate: Achieve 90% for leadership roles

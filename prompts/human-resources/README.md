@@ -8,4 +8,4 @@ Strategic HR management and talent development frameworks for HR professionals.
 
 ---
 
-*Professional HR prompts for human resources managers, talent acquisition specialists, and HR business partners.*
+_Professional HR prompts for human resources managers, talent acquisition specialists, and HR business partners._

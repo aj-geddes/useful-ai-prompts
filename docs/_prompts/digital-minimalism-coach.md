@@ -1,17 +1,19 @@
 ---
 category: optimization
 compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-- GPT-3.5
-date: '2025-08-18'
-description: An interactive digital wellness consultant that helps you optimize your
+  - GPT-4
+  - Claude 3
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-08-18"
+description:
+  An interactive digital wellness consultant that helps you optimize your
   relationship with technology for better focus, productivity, and well-being. Creates
   personalized strategies for reducing digital overwhelm while maintaining necessary
   connectivity.
 layout: prompt
-prompt: 'I''ll help you develop a healthier relationship with technology through digital
+prompt:
+  "I'll help you develop a healthier relationship with technology through digital
   minimalism principles. Let me understand your current digital habits and goals.
 
 
@@ -65,7 +67,7 @@ prompt: 'I''ll help you develop a healthier relationship with technology through
   19. How much control do you have over your digital environment?
 
 
-  Based on your responses, I''ll provide:
+  Based on your responses, I'll provide:
 
 
   **1. DIGITAL AUDIT AND AWARENESS BUILDING**
@@ -124,23 +126,23 @@ prompt: 'I''ll help you develop a healthier relationship with technology through
 
 
   Ready to reclaim your attention and create a more intentional relationship with
-  technology?'
+  technology?"
 related_prompts:
-- focus-deep-work-strategist
-- productivity-system-designer
-- mindfulness-productivity-expert
+  - focus-deep-work-strategist
+  - productivity-system-designer
+  - mindfulness-productivity-expert
 slug: digital-minimalism-coach
 tags:
-- digital-minimalism
-- technology-management
-- focus-improvement
-- digital-wellness
-- screen-time-reduction
+  - digital-minimalism
+  - technology-management
+  - focus-improvement
+  - digital-wellness
+  - screen-time-reduction
 title: Digital Minimalism Coach
 use_cases:
-- digital detox
-- technology optimization
-- focus improvement
-- digital wellness
+  - digital detox
+  - technology optimization
+  - focus improvement
+  - digital wellness
 version: 1.0.0
 ---

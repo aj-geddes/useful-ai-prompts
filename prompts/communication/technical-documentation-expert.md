@@ -1,6 +1,7 @@
 # Technical Documentation Expert
 
 ## Metadata
+
 - **ID**: `communication-technical-documentation`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Creates clear, comprehensive technical documentation that developers and users a
 ## When to Use
 
 **Ideal scenarios:**
+
 - Creating or improving API documentation
 - Building user guides, manuals, or how-to content
 - Documenting technical processes and systems
@@ -25,6 +27,7 @@ Creates clear, comprehensive technical documentation that developers and users a
 - Improving developer experience through better docs
 
 **Anti-patterns (when NOT to use):**
+
 - Marketing content and promotional materials
 - Business documents and proposals
 - Non-technical writing and communications
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "REST API for SaaS platform - 50+ endpoints. Currently have auto-generated docs that are technically complete but hard to use. Audience: external developers (junior to architect). Main tasks: authenticate, CRUD operations, handle webhooks. Common complaint: hard to get started."
 
 ### Output
@@ -115,6 +119,7 @@ Avoid:
 ## INFORMATION ARCHITECTURE
 
 ### Three-Tier Structure
+
 ```
 Tier 1: Getting Started (10-60 min to first success)
 +-- Quick Start Guide
@@ -138,12 +143,14 @@ Tier 3: Advanced Topics
 ## DOCUMENTATION TEMPLATES
 
 ### Quick Start Guide Template
+
 ```markdown
 # Quick Start Guide
 
 Get up and running with YourAPI in 10 minutes.
 
 ## Prerequisites
+
 - YourAPI account ([sign up free](link))
 - cURL or Postman installed
 
@@ -156,18 +163,19 @@ Get up and running with YourAPI in 10 minutes.
 ## Step 2: Make Your First Request
 
 curl https://api.example.com/v1/account \
-  -H "Authorization: Bearer YOUR_API_KEY"
+ -H "Authorization: Bearer YOUR_API_KEY"
 
 **Response:**
 {
-  "id": "acc_123",
-  "name": "Your Company"
+"id": "acc_123",
+"name": "Your Company"
 }
 
 Success! You've made your first API call.
 ```
 
 ### API Endpoint Template
+
 ```markdown
 # [Resource Name]
 
@@ -175,10 +183,10 @@ Success! You've made your first API call.
 
 ## Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /v1/resources | List all |
-| POST | /v1/resources | Create new |
+| Method | Endpoint      | Description |
+| ------ | ------------- | ----------- |
+| GET    | /v1/resources | List all    |
+| POST   | /v1/resources | Create new  |
 
 ---
 
@@ -193,15 +201,15 @@ Authorization: Bearer YOUR_API_KEY
 
 ### Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| limit | integer | No | Items to return (default: 10) |
+| Parameter | Type    | Required | Description                   |
+| --------- | ------- | -------- | ----------------------------- |
+| limit     | integer | No       | Items to return (default: 10) |
 
 ### Response
 
 {
-  "data": [{ "id": "res_123" }],
-  "has_more": true
+"data": [{ "id": "res_123" }],
+"has_more": true
 }
 
 ### Code Examples
@@ -216,6 +224,7 @@ resources = api.Resource.list(limit=10)
 ## WRITING SAMPLES
 
 ### Error Documentation
+
 ```markdown
 # Error Handling
 
@@ -226,11 +235,11 @@ YourAPI uses standard HTTP codes and detailed error objects.
 ### 401 Unauthorized
 
 {
-  "error": {
-    "type": "authentication_error",
-    "message": "Invalid API key",
-    "code": "invalid_api_key"
-  }
+"error": {
+"type": "authentication_error",
+"message": "Invalid API key",
+"code": "invalid_api_key"
+}
 }
 
 **Cause:** API key is missing, invalid, or revoked
@@ -239,49 +248,53 @@ YourAPI uses standard HTTP codes and detailed error objects.
 ```
 
 ### Rate Limiting
+
 ```markdown
 # Rate Limiting
 
 ## Limits by Plan
 
-| Plan | Requests/Second | Daily |
-|------|-----------------|-------|
-| Free | 2 | 1,000 |
-| Pro | 50 | 100,000 |
+| Plan | Requests/Second | Daily   |
+| ---- | --------------- | ------- |
+| Free | 2               | 1,000   |
+| Pro  | 50              | 100,000 |
 
 ## Handling 429 Errors
 
 When rate limited, implement exponential backoff:
 
 async function requestWithRetry(fn, retries = 3) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      return await fn();
-    } catch (error) {
-      if (error.status === 429) {
-        await sleep(Math.pow(2, i) * 1000);
-        continue;
-      }
-      throw error;
-    }
-  }
+for (let i = 0; i < retries; i++) {
+try {
+return await fn();
+} catch (error) {
+if (error.status === 429) {
+await sleep(Math.pow(2, i) \* 1000);
+continue;
+}
+throw error;
+}
+}
 }
 ```
 
 ## STYLE GUIDE
 
 ### Voice and Tone
+
 - **Clear:** Simple language, no unnecessary jargon
 - **Direct:** Active voice, start with verbs
 - **Consistent:** Same terms throughout (not "key" and "token" interchangeably)
 
 ### Code Standards
+
 - Always specify language for syntax highlighting
 - Show complete, runnable examples
 - Include both request and response
 - Use CAPS_CASE for placeholder values
 
 ### Structure Rules
+
 - Lead with what users want to do
 - Progressive disclosure: simple > complex
 - One concept per section
@@ -290,10 +303,11 @@ async function requestWithRetry(fn, retries = 3) {
 ## MAINTENANCE PROCESS
 
 ### Docs-as-Code Pipeline
+
 ```yaml
 on:
   push:
-    paths: ['docs/**', 'openapi.yaml']
+    paths: ["docs/**", "openapi.yaml"]
 jobs:
   build:
     steps:
@@ -303,27 +317,30 @@ jobs:
 ```
 
 ### Update Cadence
+
 - **Weekly:** Review support tickets for gaps
 - **Monthly:** Audit new features
 - **Quarterly:** Accuracy review
 
 ### Version Strategy
+
 - Maintain last 3 major versions
 - Clear deprecation notices
 - Migration guides between versions
 
 ## SUCCESS METRICS
 
-| Metric | Target |
-|--------|--------|
-| Time to first API call | <10 min |
+| Metric                     | Target  |
+| -------------------------- | ------- |
+| Time to first API call     | <10 min |
 | Support tickets about docs | <5/week |
-| Search success rate | >80% |
-| Developer satisfaction | >4/5 |
+| Search success rate        | >80%    |
+| Developer satisfaction     | >4/5    |
 
 ---
 
 ## Related Prompts
+
 - [Knowledge Transfer Expert](knowledge-transfer-expert.md)
 - [Status Reporting Expert](status-reporting-expert.md)
 - [API Design Expert](../technical-workflows/api-design-expert.md)

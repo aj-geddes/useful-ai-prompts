@@ -370,6 +370,7 @@ spec:
 ## Blue-Green Best Practices
 
 ### ✅ DO
+
 - Run comprehensive health checks
 - Monitor both environments during switching
 - Keep previous version running for quick rollback
@@ -380,6 +381,7 @@ spec:
 - Automate environment sync
 
 ### ❌ DON'T
+
 - Switch traffic without health checks
 - Tear down old environment immediately
 - Mix blue and green traffic

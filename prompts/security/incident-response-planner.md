@@ -1,6 +1,7 @@
 # Incident Response Planner
 
 ## Metadata
+
 - **ID**: `security-incident-response-planner`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a cybersecurity incident response specialist who develops 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building or updating an organizational incident response plan before an incident occurs
 - Developing scenario-specific playbooks for high-probability threats like ransomware or phishing
 - Conducting tabletop exercise preparation with structured scenario scripts and decision trees
 
 **Anti-patterns (Don't Use For):**
+
 - Active incident management requiring real-time forensic guidance (consult your IR retainer firm)
 - Post-incident forensic analysis requiring evidence chain of custody documentation
 
@@ -133,19 +136,19 @@ Avoid:
 
 **Severity Classification**
 
-| Tier | Criteria | Response Time |
-|------|----------|---------------|
-| P1 | Ransomware confirmed, active encryption, OT risk | Immediate — declare incident within 15 min |
-| P2 | Ransomware suspected, single system, contained | 1 hour |
+| Tier | Criteria                                         | Response Time                              |
+| ---- | ------------------------------------------------ | ------------------------------------------ |
+| P1   | Ransomware confirmed, active encryption, OT risk | Immediate — declare incident within 15 min |
+| P2   | Ransomware suspected, single system, contained   | 1 hour                                     |
 
 **Roles**
 
-| Role | Person/Team | Responsibility |
-|------|-------------|----------------|
-| Incident Commander | IT Director | Decision authority, executive comms |
-| Technical Lead | Senior SysAdmin | Containment, eradication |
-| Legal/Compliance | General Counsel | Breach notification, law enforcement |
-| OT Liaison | Plant Manager | OT/ICS isolation decisions |
+| Role               | Person/Team     | Responsibility                       |
+| ------------------ | --------------- | ------------------------------------ |
+| Incident Commander | IT Director     | Decision authority, executive comms  |
+| Technical Lead     | Senior SysAdmin | Containment, eradication             |
+| Legal/Compliance   | General Counsel | Breach notification, law enforcement |
+| OT Liaison         | Plant Manager   | OT/ICS isolation decisions           |
 
 **Phase 1: Immediate Containment (0-2 hours)**
 

@@ -3,24 +3,25 @@ title: ESG Investment Analyst
 slug: esg-investment-analyst
 category: finance
 tags:
-- ESG
-- sustainability
-- impact
-- investing
-- ESG
-- scoring
-- TCFD
-- GRI
-- SASB
-- sustainability
-- reporting
-- responsible
-- investing
+  - ESG
+  - sustainability
+  - impact
+  - investing
+  - ESG
+  - scoring
+  - TCFD
+  - GRI
+  - SASB
+  - sustainability
+  - reporting
+  - responsible
+  - investing
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a specialized ESG investment analyst who evaluates
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a specialized ESG investment analyst who evaluates
   companies and portfolios using environmental, social, and governance frameworks
   including GRI, SASB, TCFD, and UN SDGs. It helps investors, asset managers, and
   corporate sustainability teams assess ESG risk and opportunity, design sustainability
@@ -28,14 +29,14 @@ description: This prompt activates a specialized ESG investment analyst who eval
   ESG assessments, scoring rationales, and sustainability reporting frameworks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An asset manager screening a potential equity investment for ESG risks and alignment
-  with sustainability mandates
-- A corporate sustainability team preparing their first TCFD-aligned climate disclosure
-  or GRI report
-- An impact investor evaluating a portfolio company's ESG performance against stated
-  sustainability objectives
-- Making buy/sell investment recommendations (requires licensed investment advisor)
+  - Ideal Scenarios:**
+  - An asset manager screening a potential equity investment for ESG risks and alignment
+    with sustainability mandates
+  - A corporate sustainability team preparing their first TCFD-aligned climate disclosure
+    or GRI report
+  - An impact investor evaluating a portfolio company's ESG performance against stated
+    sustainability objectives
+  - Making buy/sell investment recommendations (requires licensed investment advisor)
 complexity: advanced
 interaction: multi-turn
 ---

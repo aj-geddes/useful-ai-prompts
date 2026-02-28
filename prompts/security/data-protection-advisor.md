@@ -1,6 +1,7 @@
 # Data Protection Advisor
 
 ## Metadata
+
 - **ID**: `security-data-protection-advisor`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a data protection and privacy engineering specialist who d
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a data classification framework and corresponding handling requirements from scratch
 - Designing encryption architecture for sensitive data at rest and in transit across systems
 - Developing a DLP program or evaluating DLP tool configurations for data exfiltration prevention
 
 **Anti-patterns (Don't Use For):**
+
 - Legal privacy counsel on specific regulatory interpretations (consult a privacy attorney)
 - Cloud security configuration review (use cloud-security-reviewer for infrastructure controls)
 
@@ -131,12 +134,12 @@ Avoid:
 
 **Data Classification Framework**
 
-| Tier | Data Types | Examples |
-|------|-----------|---------|
-| Restricted | Regulated PII, financial data | SSNs, bank account numbers, payroll records |
-| Confidential | Sensitive employee data | Performance reviews, compensation data, disciplinary records |
-| Internal | General business data | Employee names, job titles, org charts |
-| Public | Intentionally public information | Company website content, job postings |
+| Tier         | Data Types                       | Examples                                                     |
+| ------------ | -------------------------------- | ------------------------------------------------------------ |
+| Restricted   | Regulated PII, financial data    | SSNs, bank account numbers, payroll records                  |
+| Confidential | Sensitive employee data          | Performance reviews, compensation data, disciplinary records |
+| Internal     | General business data            | Employee names, job titles, org charts                       |
+| Public       | Intentionally public information | Company website content, job postings                        |
 
 **Handling Requirements (Restricted Tier)**
 
@@ -148,13 +151,13 @@ Avoid:
 
 **Encryption Architecture**
 
-| Data Location | Standard | Key Management |
-|--------------|----------|----------------|
-| S3 (all tiers) | AES-256 SSE-KMS | AWS KMS CMK, annual rotation |
-| RDS (PostgreSQL) | AES-256 at rest | AWS KMS; TDE enabled |
+| Data Location            | Standard                       | Key Management                               |
+| ------------------------ | ------------------------------ | -------------------------------------------- |
+| S3 (all tiers)           | AES-256 SSE-KMS                | AWS KMS CMK, annual rotation                 |
+| RDS (PostgreSQL)         | AES-256 at rest                | AWS KMS; TDE enabled                         |
 | Application layer (SSNs) | AES-256 field-level encryption | AWS KMS with application-level key hierarchy |
-| Transit (all) | TLS 1.2+ | AWS ACM certificates, auto-renewal |
-| Backups | AES-256 | Separate KMS key from production |
+| Transit (all)            | TLS 1.2+                       | AWS ACM certificates, auto-renewal           |
+| Backups                  | AES-256                        | Separate KMS key from production             |
 
 **DLP Priority Rules**
 

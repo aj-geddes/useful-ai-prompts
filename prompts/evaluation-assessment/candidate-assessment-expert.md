@@ -1,6 +1,7 @@
 # Candidate Assessment Expert
 
 ## Metadata
+
 - **ID**: `evaluation-candidate-assessment`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/HR
@@ -18,6 +19,7 @@ Evaluate job candidates through structured, fair, and effective assessment metho
 ## When to Use
 
 **Ideal scenarios:**
+
 - Designing interview processes for new roles
 - Comparing finalist candidates objectively
 - Creating structured evaluation criteria and rubrics
@@ -25,6 +27,7 @@ Evaluate job candidates through structured, fair, and effective assessment metho
 - Building competency-based interview guides
 
 **Anti-patterns (when not to use):**
+
 - Resume screening automation
 - Salary negotiation strategies
 - Performance management for existing employees
@@ -104,9 +107,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Hiring a Senior Product Manager. Need someone who can drive strategy, work with engineering, and lead without authority. We're a 50-person B2B SaaS company. Three candidates in final round."
 
 ### Output
+
 **Candidate Assessment Framework: Senior Product Manager**
 
 **Competency Matrix**
@@ -120,52 +125,60 @@ Avoid:
 
 **Interview Structure (4 rounds)**
 
-*Round 1: Hiring Manager (45 min)*
+_Round 1: Hiring Manager (45 min)_
+
 - Strategic thinking assessment
 - Work history and career trajectory
 - Role expectations alignment
 
-*Round 2: Technical Discussion (60 min)*
+_Round 2: Technical Discussion (60 min)_
+
 - Case study presentation (assigned in advance)
 - Technical depth with engineering lead
 - Data-driven decision making examples
 
-*Round 3: Stakeholder Panel (45 min)*
+_Round 3: Stakeholder Panel (45 min)_
+
 - Cross-functional collaboration scenarios
 - Influence without authority examples
 - Conflict resolution approach
 
-*Round 4: Executive/Culture (30 min)*
+_Round 4: Executive/Culture (30 min)_
+
 - Leadership philosophy
 - Company values alignment
 - Career goals and motivation
 
 **Sample Behavioral Questions**
 
-*Strategic Thinking*
+_Strategic Thinking_
+
 - "Tell me about a product decision where you had to say no to a major feature request. How did you make that call?"
 - "Describe a time you identified a market opportunity that wasn't on your company's radar."
 
-*Stakeholder Management*
+_Stakeholder Management_
+
 - "Give me an example of getting engineering to prioritize something they initially resisted."
 - "Tell me about managing competing stakeholder demands with limited resources."
 
 **Scoring Rubric (1-5 Scale)**
 
-| Score | Definition | Behavioral Indicators |
-|-------|------------|----------------------|
-| 5 | Exceptional | Exceeds all requirements, brings additional value |
-| 4 | Strong | Meets all requirements with depth |
-| 3 | Meets | Satisfies requirements adequately |
-| 2 | Developing | Partial demonstration, needs growth |
-| 1 | Does not meet | Insufficient evidence or red flags |
+| Score | Definition    | Behavioral Indicators                             |
+| ----- | ------------- | ------------------------------------------------- |
+| 5     | Exceptional   | Exceeds all requirements, brings additional value |
+| 4     | Strong        | Meets all requirements with depth                 |
+| 3     | Meets         | Satisfies requirements adequately                 |
+| 2     | Developing    | Partial demonstration, needs growth               |
+| 1     | Does not meet | Insufficient evidence or red flags                |
 
 **Decision Framework**
+
 - Minimum: 3.0 average across all competencies
 - No competency below 2.5 (deal-breaker threshold)
 - Top candidate: Highest weighted score with no red flags
 - Tie-breaker: Growth potential and team dynamics fit
 
 ## Related Prompts
+
 - [Hiring Decision Framework Expert](../decision-making/hiring-decision-framework-expert.md)
 - [Performance Review Expert](performance-review-expert.md)

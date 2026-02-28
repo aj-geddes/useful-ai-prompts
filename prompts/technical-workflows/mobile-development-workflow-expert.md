@@ -1,6 +1,7 @@
 # Mobile Development Workflow Expert
 
 ## Metadata
+
 - **ID**: `mobile-development-workflow-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Designs efficient mobile development workflows that streamline app development, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting up mobile development workflows for new projects
 - Automating mobile build and release processes with CI/CD
 - Implementing comprehensive device testing strategies
@@ -25,6 +27,7 @@ Designs efficient mobile development workflows that streamline app development, 
 - Improving release velocity and crash-free rates
 
 **Anti-Patterns (Don't Use For):**
+
 - Web application development
 - Backend API development without mobile focus
 - Purely native single-platform apps without automation needs
@@ -145,6 +148,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We're building an e-commerce app using React Native, targeting both iOS and Android. Our team has 5 developers, and we're currently doing manual testing only.
 
@@ -168,13 +172,13 @@ Goals:
 
 Standardized development setup for consistency:
 
-| Component | Tool | Configuration |
-|-----------|------|---------------|
-| React Native | 0.73+ | New Architecture enabled |
-| TypeScript | 5.0+ | Strict mode |
-| Linting | ESLint + Prettier | Pre-commit hooks |
-| Debugging | Flipper | Network, Redux, performance |
-| Profiling | React DevTools | Component render analysis |
+| Component    | Tool              | Configuration               |
+| ------------ | ----------------- | --------------------------- |
+| React Native | 0.73+             | New Architecture enabled    |
+| TypeScript   | 5.0+              | Strict mode                 |
+| Linting      | ESLint + Prettier | Pre-commit hooks            |
+| Debugging    | Flipper           | Network, Redux, performance |
+| Profiling    | React DevTools    | Component render analysis   |
 
 **Build Pipeline (GitHub Actions + Fastlane)**
 
@@ -196,8 +200,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'yarn'
+          node-version: "20"
+          cache: "yarn"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Run tests
@@ -236,8 +240,8 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: "17"
+          distribution: "temurin"
       - name: Cache Gradle
         uses: actions/cache@v4
         with:
@@ -249,21 +253,21 @@ jobs:
 
 **Build Time Optimization**
 
-| Optimization | Before | After | Impact |
-|--------------|--------|-------|--------|
-| Dependency caching | 8 min | 2 min | -75% |
-| Parallel test execution | 5 min | 2 min | -60% |
-| Incremental builds | 15 min | 8 min | -47% |
-| **Total PR Build** | **28 min** | **12 min** | **-57%** |
+| Optimization            | Before     | After      | Impact   |
+| ----------------------- | ---------- | ---------- | -------- |
+| Dependency caching      | 8 min      | 2 min      | -75%     |
+| Parallel test execution | 5 min      | 2 min      | -60%     |
+| Incremental builds      | 15 min     | 8 min      | -47%     |
+| **Total PR Build**      | **28 min** | **12 min** | **-57%** |
 
 **Testing Strategy**
 
-| Test Type | Tool | Coverage Target | Run Frequency |
-|-----------|------|-----------------|---------------|
-| Unit tests | Jest | 80% business logic | Every PR |
-| Component tests | React Native Testing Library | Critical components | Every PR |
-| E2E tests | Detox | 15 critical flows | Nightly + Release |
-| Device testing | BrowserStack | Top 10 devices | Release |
+| Test Type       | Tool                         | Coverage Target     | Run Frequency     |
+| --------------- | ---------------------------- | ------------------- | ----------------- |
+| Unit tests      | Jest                         | 80% business logic  | Every PR          |
+| Component tests | React Native Testing Library | Critical components | Every PR          |
+| E2E tests       | Detox                        | 15 critical flows   | Nightly + Release |
+| Device testing  | BrowserStack                 | Top 10 devices      | Release           |
 
 **Payment Testing (Critical Path)**
 
@@ -295,19 +299,21 @@ Feature Branch -> PR Review -> Develop -> TestFlight/Internal
 ```
 
 **Staged Rollout Schedule:**
+
 - Day 1: 10% rollout, monitor crash rate
 - Day 2: 50% if crash-free rate > 99.5%
 - Day 3: 100% if no critical issues
 
 **Crash Monitoring Setup**
 
-| Tool | Purpose | Configuration |
-|------|---------|---------------|
-| Firebase Crashlytics | Crash reporting | Automatic symbolication |
-| Sentry | Error tracking | Breadcrumbs, user context |
-| Custom alerts | Crash spike detection | PagerDuty integration |
+| Tool                 | Purpose               | Configuration             |
+| -------------------- | --------------------- | ------------------------- |
+| Firebase Crashlytics | Crash reporting       | Automatic symbolication   |
+| Sentry               | Error tracking        | Breadcrumbs, user context |
+| Custom alerts        | Crash spike detection | PagerDuty integration     |
 
 **Crash-Free Rate Targets:**
+
 - Target: 99.5% crash-free sessions
 - Alert threshold: Drop below 99.0% triggers investigation
 - Hotfix threshold: Drop below 98.5% triggers immediate release
@@ -315,6 +321,7 @@ Feature Branch -> PR Review -> Develop -> TestFlight/Internal
 **Over-the-Air Updates (CodePush)**
 
 For JavaScript-only changes:
+
 - Immediate deployment without app store review
 - Rollback capability within 1 hour
 - Staged rollout: 10% -> 100%

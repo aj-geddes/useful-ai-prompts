@@ -76,12 +76,12 @@ strictness: normal
 
 # What constitutes a breaking change
 rules:
-  removed_exports: error      # Removed exported functions/classes
-  renamed_exports: error      # Renamed exports
-  changed_signatures: error   # Changed function parameters
-  changed_types: warning      # Changed parameter or return types
-  removed_properties: error   # Removed object properties
-  changed_defaults: warning   # Changed default parameter values
+  removed_exports: error # Removed exported functions/classes
+  renamed_exports: error # Renamed exports
+  changed_signatures: error # Changed function parameters
+  changed_types: warning # Changed parameter or return types
+  removed_properties: error # Removed object properties
+  changed_defaults: warning # Changed default parameter values
 
 # Files/patterns to check
 include:
@@ -167,6 +167,7 @@ To bypass (not recommended):
 ### JavaScript/TypeScript
 
 Detects:
+
 - Removed exports (functions, classes, interfaces, types)
 - Changed function signatures
 - Changed parameter types
@@ -178,15 +179,16 @@ Detects:
 
 ```typescript
 // Before
-export function createUser(name: string, email: string) { }
+export function createUser(name: string, email: string) {}
 
 // After - BREAKING
-export function createUser(data: UserData) { }
+export function createUser(data: UserData) {}
 ```
 
 ### Python
 
 Detects:
+
 - Removed module exports
 - Changed function signatures
 - Changed parameter names or order
@@ -208,6 +210,7 @@ def create_user(user_data):
 ### Ruby
 
 Detects:
+
 - Removed module/class definitions
 - Changed method signatures
 - Removed method parameters
@@ -228,6 +231,7 @@ end
 ### Go
 
 Detects:
+
 - Removed exported functions
 - Changed function signatures
 - Removed struct fields
@@ -362,7 +366,7 @@ Use deprecation before removal:
  * Will be removed in v2.0
  */
 export function createUser(name: string, email: string) {
-  console.warn('createUser(name, email) is deprecated');
+  console.warn("createUser(name, email) is deprecated");
   return createUser({ name, email });
 }
 ```
@@ -424,13 +428,10 @@ Support both old and new APIs temporarily:
 
 ```typescript
 // Support both signatures during transition
-export function createUser(
-  nameOrData: string | UserData,
-  email?: string
-) {
-  if (typeof nameOrData === 'string') {
+export function createUser(nameOrData: string | UserData, email?: string) {
+  if (typeof nameOrData === "string") {
     // Old signature - log deprecation warning
-    console.warn('Old createUser signature is deprecated');
+    console.warn("Old createUser signature is deprecated");
     return createUserImpl({ name: nameOrData, email: email! });
   }
   return createUserImpl(nameOrData);
@@ -442,14 +443,14 @@ export function createUser(
 Add tests for migration:
 
 ```typescript
-describe('Breaking Changes', () => {
-  it('should maintain backward compatibility', () => {
+describe("Breaking Changes", () => {
+  it("should maintain backward compatibility", () => {
     // Test old API still works (if supported)
     const result = oldAPI();
     expect(result).toBeDefined();
   });
 
-  it('should work with new API', () => {
+  it("should work with new API", () => {
     const result = newAPI();
     expect(result).toBeDefined();
   });

@@ -1,6 +1,7 @@
 # Inventory Management Expert
 
 ## Metadata
+
 - **ID**: `operations-inventory-management-expert`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt deploys an inventory management expert who applies quantitative models — EOQ, safety stock, reorder point, and ABC-XYZ analysis — to optimize stock levels, reduce carrying costs, and eliminate stockouts. It addresses both SKU-level decisions and portfolio-level inventory strategy across distribution and manufacturing contexts.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A warehouse is experiencing frequent stockouts on high-velocity items while carrying excess stock on slow movers
 - Finance has flagged inventory as a working capital drag and wants data-driven reduction targets by SKU tier
 - A business is setting up a new inventory control policy and needs EOQ and reorder point calculations with safety stock buffers
 
 **Anti-patterns (Don't Use For):**
+
 - Warehouse management system (WMS) software selection or implementation without a clear policy foundation
 - One-time spot-order decisions that do not require a systematic inventory policy
 
@@ -65,14 +70,17 @@ Avoid: Generic reorder recommendations without quantitative basis, one-size-fits
 ## Example Usage
 
 ### Input
+
 "We stock a fastener SKU (3/8-inch hex bolts) used in our assembly line. Annual demand is 24,000 units. Each unit costs $0.85. Ordering cost is $45 per PO. Our holding cost is 22% annually. Supplier lead time is 7 days with a standard deviation of 2 days. Daily demand standard deviation is 15 units. We want a 95% service level."
 
 ### Output
+
 **Inventory Policy Analysis: 3/8-Inch Hex Bolts**
 
 **SKU Classification**: High-volume industrial fastener with stable, continuous demand. Classified as A-tier (high annual value) and X-tier (predictable demand) → AX policy: continuous review with fixed EOQ.
 
 **Annual Demand Data**
+
 - Annual demand (D): 24,000 units
 - Daily demand (d): 24,000 ÷ 250 working days = 96 units/day
 - Unit cost (C): $0.85
@@ -108,14 +116,14 @@ Max = ROP + EOQ = 995 + 3,399 = **4,394 units**
 
 **Inventory Policy Summary**
 
-| Parameter | Value |
-|---|---|
-| Order Quantity (EOQ) | 3,399 units |
-| Reorder Point | 995 units |
-| Safety Stock | 323 units |
-| Max Stock Level | 4,394 units |
-| Order Frequency | ~7 POs/year |
-| Expected Service Level | 95% |
+| Parameter              | Value       |
+| ---------------------- | ----------- |
+| Order Quantity (EOQ)   | 3,399 units |
+| Reorder Point          | 995 units   |
+| Safety Stock           | 323 units   |
+| Max Stock Level        | 4,394 units |
+| Order Frequency        | ~7 POs/year |
+| Expected Service Level | 95%         |
 
 **Carrying Cost at Policy**: Average inventory = (EOQ/2) + Safety Stock = 1,700 + 323 = 2,023 units × $0.187 = **$378/year carrying cost**.
 
@@ -126,10 +134,12 @@ Max = ROP + EOQ = 995 + 3,399 = **4,394 units**
 ---
 
 ## Variations
+
 - **Seasonal Demand Version**: Adjusts EOQ and safety stock calculations for demand seasonality using time-phased modeling
 - **Multi-Echelon Version**: Extends analysis across DC-to-store or plant-to-warehouse inventory tiers
 
 ## Related Prompts
+
 - [Production Planning Expert](production-planning-expert.md) - Align inventory policy with MRP and production scheduling
 - [Procurement Strategist](procurement-strategist.md) - Connect reorder policies to supplier agreements and lead-time reduction
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build inventory performance measurement systems

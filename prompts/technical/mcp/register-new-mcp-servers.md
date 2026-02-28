@@ -1,6 +1,7 @@
 # MCP Server Registration Expert
 
 ## Metadata
+
 - **ID**: `mcp-server-registration-expert`
 - **Version**: 1.0.0
 - **Category**: Technical/MCP
@@ -18,6 +19,7 @@ Automates the registration of MCP server implementations across public registrie
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Registering new MCP servers with community directories
 - Standardizing MCP server metadata across repositories
 - Automating registry submissions via GitHub PRs
@@ -25,6 +27,7 @@ Automates the registration of MCP server implementations across public registrie
 - Updating existing registry entries with new versions
 
 **Anti-patterns (Don't Use For):**
+
 - MCP server development or implementation
 - Protocol specification work
 - Private registry management
@@ -122,7 +125,7 @@ Protocol Version: 2024-11-05
 
 **Phase 1: Repository Analysis and Metadata Synthesis**
 
-*Repository: fastfs-mcp*
+_Repository: fastfs-mcp_
 
 Analyzed sources: README.md, Dockerfile, pyproject.toml, src/server.py
 
@@ -140,21 +143,25 @@ Analyzed sources: README.md, Dockerfile, pyproject.toml, src/server.py
   "tags": ["mcp", "filesystem", "filetools", "docker", "high-performance"],
   "docker": "ghcr.io/acme/fastfs-mcp:latest",
   "entryCommand": [
-    "docker", "run", "-i", "--rm",
-    "-v", "${WORKSPACE}:/mnt/workspace:rw",
+    "docker",
+    "run",
+    "-i",
+    "--rm",
+    "-v",
+    "${WORKSPACE}:/mnt/workspace:rw",
     "ghcr.io/acme/fastfs-mcp:latest"
   ],
   "tools": [
-    {"name": "read_file", "description": "Read file contents"},
-    {"name": "write_file", "description": "Write content to file"},
-    {"name": "list_directory", "description": "List directory contents"},
-    {"name": "watch_file", "description": "Watch file for changes"}
+    { "name": "read_file", "description": "Read file contents" },
+    { "name": "write_file", "description": "Write content to file" },
+    { "name": "list_directory", "description": "List directory contents" },
+    { "name": "watch_file", "description": "Watch file for changes" }
   ],
   "license": "MIT"
 }
 ```
 
-*Repository: terraform-mcp*
+_Repository: terraform-mcp_
 
 ```json
 {
@@ -174,17 +181,17 @@ Analyzed sources: README.md, Dockerfile, pyproject.toml, src/server.py
 
 **Phase 2: Registry Interface Mapping**
 
-| Registry | Interface Type | Submission Method | Auth Required |
-|----------|---------------|-------------------|---------------|
-| modelcontextprotocol/servers | GitHub PR | Fork + Pull Request | GitHub token |
-| awesome-mcp-servers | GitHub PR | Fork + Pull Request | GitHub token |
-| PulseMCP.com | Web API | HTTP POST | API key |
-| mcp-get | REST API | POST /servers/register | Bearer token |
-| Smithery | GitHub PR | Fork + Pull Request | GitHub token |
+| Registry                     | Interface Type | Submission Method      | Auth Required |
+| ---------------------------- | -------------- | ---------------------- | ------------- |
+| modelcontextprotocol/servers | GitHub PR      | Fork + Pull Request    | GitHub token  |
+| awesome-mcp-servers          | GitHub PR      | Fork + Pull Request    | GitHub token  |
+| PulseMCP.com                 | Web API        | HTTP POST              | API key       |
+| mcp-get                      | REST API       | POST /servers/register | Bearer token  |
+| Smithery                     | GitHub PR      | Fork + Pull Request    | GitHub token  |
 
 **Phase 3: Submission Workflow Execution**
 
-*GitHub-Based Registries (modelcontextprotocol/servers, awesome-mcp-servers)*
+_GitHub-Based Registries (modelcontextprotocol/servers, awesome-mcp-servers)_
 
 ```bash
 # Fork and clone
@@ -203,7 +210,7 @@ gh pr create --title "Add fastfs-mcp: high-performance filesystem server" \
   --body "Adds fastfs-mcp, a high-performance filesystem MCP server with CRUD and watch capabilities."
 ```
 
-*API-Based Registries (mcp-get, PulseMCP)*
+_API-Based Registries (mcp-get, PulseMCP)_
 
 ```http
 POST https://api.mcp-get.com/v1/servers/register
@@ -223,14 +230,14 @@ Response: `201 Created` - Server ID: `fs-8472`
 
 **Phase 4: Status Tracking**
 
-| Server | Registry | Status | Reference | Next Action |
-|--------|----------|--------|-----------|-------------|
-| fastfs-mcp | modelcontextprotocol | PR #142 Open | github.com/modelcontextprotocol/servers/pull/142 | Await review |
-| fastfs-mcp | PulseMCP | Registered | ID: pulse-8472 | Complete |
-| fastfs-mcp | mcp-get | Registered | ID: fs-8472 | Complete |
-| fastfs-mcp | awesome-mcp-servers | PR #89 Open | github.com/wong2/awesome-mcp-servers/pull/89 | Await merge |
+| Server        | Registry             | Status       | Reference                                        | Next Action  |
+| ------------- | -------------------- | ------------ | ------------------------------------------------ | ------------ |
+| fastfs-mcp    | modelcontextprotocol | PR #142 Open | github.com/modelcontextprotocol/servers/pull/142 | Await review |
+| fastfs-mcp    | PulseMCP             | Registered   | ID: pulse-8472                                   | Complete     |
+| fastfs-mcp    | mcp-get              | Registered   | ID: fs-8472                                      | Complete     |
+| fastfs-mcp    | awesome-mcp-servers  | PR #89 Open  | github.com/wong2/awesome-mcp-servers/pull/89     | Await merge  |
 | terraform-mcp | modelcontextprotocol | PR #143 Open | github.com/modelcontextprotocol/servers/pull/143 | Await review |
-| terraform-mcp | PulseMCP | Registered | ID: pulse-8473 | Complete |
+| terraform-mcp | PulseMCP             | Registered   | ID: pulse-8473                                   | Complete     |
 
 **Phase 5: Post-Registration Repository Updates**
 

@@ -3,36 +3,37 @@ title: Research Findings Presenter
 slug: research-findings-presenter
 category: research
 tags:
-- research
-- presentation
-- data
-- storytelling
-- executive
-- communication
-- findings
-- presentation
-- slide
-- design
-- research
-- communication
+  - research
+  - presentation
+  - data
+  - storytelling
+  - executive
+  - communication
+  - findings
+  - presentation
+  - slide
+  - design
+  - research
+  - communication
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers and analysts design compelling presentations
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers and analysts design compelling presentations
   of research findings — structuring the narrative arc, selecting the right data visualizations,
   writing slide headlines that communicate insights (not just topics), and adapting
   the message to executive audiences who need implications and decisions, not methodology.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Presenting research findings to a leadership audience and needing a narrative structure
-  that drives decisions
-- Converting a detailed research report into a 15-30 minute executive presentation
-- Designing data visualizations that make research findings immediately understandable
-  to non-researchers
-- Academic conference presentations requiring disciplinary conventions and full methodology
-  disclosure
+  - Ideal Scenarios:**
+  - Presenting research findings to a leadership audience and needing a narrative structure
+    that drives decisions
+  - Converting a detailed research report into a 15-30 minute executive presentation
+  - Designing data visualizations that make research findings immediately understandable
+    to non-researchers
+  - Academic conference presentations requiring disciplinary conventions and full methodology
+    disclosure
 complexity: intermediate
 interaction: single-shot
 ---

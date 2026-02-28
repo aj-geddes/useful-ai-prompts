@@ -1,12 +1,13 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Optimize images for web to reduce file size without sacrificing quality.
+date: "2025-01-01"
+description:
+  Optimize images for web to reduce file size without sacrificing quality.
   Use compression, modern formats, and responsive techniques for faster loading.
 layout: skill
 slug: image-optimization
 tags:
-- development
+  - development
 title: image-optimization
 ---
 
@@ -60,7 +61,6 @@ SVG:
   Command: svgo image.svg --output optimized.svg
 
 ---
-
 Compression Levels:
 
 Conservative (95% quality):
@@ -87,11 +87,7 @@ Aggressive (80% quality):
 <!-- srcset: Let browser choose -->
 <img
   src="image.jpg"
-  srcset="
-    small.jpg 480w,
-    medium.jpg 768w,
-    large.jpg 1200w
-  "
+  srcset="small.jpg 480w, medium.jpg 768w, large.jpg 1200w"
   sizes="
     (max-width: 480px) 100vw,
     (max-width: 768px) 90vw,
@@ -102,17 +98,13 @@ Aggressive (80% quality):
 
 <!-- picture: Format selection -->
 <picture>
-  <source srcset="image.webp" type="image/webp">
-  <source srcset="image.jpg" type="image/jpeg">
-  <img src="image.jpg" alt="Description">
+  <source srcset="image.webp" type="image/webp" />
+  <source srcset="image.jpg" type="image/jpeg" />
+  <img src="image.jpg" alt="Description" />
 </picture>
 
 <!-- Lazy loading -->
-<img
-  src="placeholder.jpg"
-  loading="lazy"
-  alt="Description"
-/>
+<img src="placeholder.jpg" loading="lazy" alt="Description" />
 ```
 
 ### 3. **Optimization Process**

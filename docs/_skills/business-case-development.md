@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build compelling business cases to justify investments and secure funding.
+date: "2025-01-01"
+description:
+  Build compelling business cases to justify investments and secure funding.
   Quantify benefits, assess costs, manage risks, and present compelling ROI arguments
   to leadership.
 layout: skill
 slug: business-case-development
 tags:
-- development
+  - development
 title: business-case-development
 ---
 
@@ -401,6 +402,7 @@ Key Messages to Emphasize:
 ## Best Practices
 
 ### ✅ DO
+
 - Tie business case to strategic goals
 - Quantify benefits wherever possible
 - Be realistic about timelines and costs
@@ -413,6 +415,7 @@ Key Messages to Emphasize:
 - Define success metrics upfront
 
 ### ❌ DON'T
+
 - Over-promise benefits
 - Underestimate costs
 - Ignore alternative solutions

@@ -1,6 +1,7 @@
 # Termination Documentation Guide
 
 ## Metadata
+
 - **ID**: `human-resources-termination-documentation-guide`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an employment law-informed HR expert who helps organizations create legally sound, fair, and consistent performance improvement plans, written warnings, and termination documentation. It ensures termination decisions are supported by a documented record of expectations, feedback, and opportunities to improve — protecting both the employee and the organization. The output includes PIP templates, termination letters, and documentation review checklists.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR partner helping a manager document persistent performance issues before initiating a formal PIP
 - A small business owner who needs to terminate an underperforming employee and wants to ensure the process is documented and fair
 - An HR team standardizing termination documentation across departments to ensure legal consistency
 
 **Anti-patterns (Don't Use For):**
+
 - Constructive dismissal or forcing an employee to resign (unethical and legally risky)
 - Documenting performance issues retroactively after a termination decision has been made (legally problematic)
 - Replacing employment attorney review for high-risk terminations (discrimination claims, FMLA/ADA situations, executive departures)
@@ -64,10 +69,13 @@ Avoid: Vague language ("attitude problem," "not a culture fit"), protected-class
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need to put a customer success manager on a PIP. She's been with us 2 years. Issues: consistently missing her quarterly renewal targets (last 3 quarters: 78%, 72%, 68% of goal), slow response times on customer escalations (average 14 hours vs. 4-hour SLA), and two customer complaints about unresponsiveness in the last 60 days. We've had two verbal conversations documented in the system. What should the PIP look like?"
 
 ### Output
+
 **Performance Improvement Plan**
 
 Employee Name: [Name]
@@ -98,12 +106,12 @@ The following performance gaps have been identified over the past three quarters
 
 During the 60-day PIP period, [Name] must achieve all of the following:
 
-| Requirement | Measurement | Target |
-|-------------|-------------|--------|
-| Renewal attainment | Closed renewal $ vs. goal | 90%+ of assigned Q[X+3] renewals |
-| Escalation response time | Average hours to first response (ticketing system) | 4 hours or fewer on 90% of escalations |
-| Customer satisfaction | No additional formal complaints | Zero during the PIP period |
-| Weekly check-in participation | Attendance and preparation | 100% attendance; pre-meeting status update submitted |
+| Requirement                   | Measurement                                        | Target                                               |
+| ----------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
+| Renewal attainment            | Closed renewal $ vs. goal                          | 90%+ of assigned Q[X+3] renewals                     |
+| Escalation response time      | Average hours to first response (ticketing system) | 4 hours or fewer on 90% of escalations               |
+| Customer satisfaction         | No additional formal complaints                    | Zero during the PIP period                           |
+| Weekly check-in participation | Attendance and preparation                         | 100% attendance; pre-meeting status update submitted |
 
 **Company Support Provided**
 
@@ -119,9 +127,9 @@ Failure to meet any of the success criteria above during the PIP period, or any 
 
 Employee signature indicates receipt and understanding of this plan, not necessarily agreement.
 
-Employee: _________________ Date: _______
-Manager: _________________ Date: _______
-HR Partner: _________________ Date: _______
+Employee: ********\_******** Date: **\_\_\_**
+Manager: ********\_******** Date: **\_\_\_**
+HR Partner: ********\_******** Date: **\_\_\_**
 
 ---
 
@@ -132,11 +140,13 @@ Deliver this plan in a private meeting with HR present. Lead with: "This plan is
 ---
 
 ## Variations
+
 - **Written Warning**: Formal written warning for conduct or performance issues as a step before PIP
 - **Termination Letter**: Separation letter for at-will termination with required legal notices
 - **Separation Agreement Guidance**: Framework for voluntary separation agreements (requires legal counsel for final drafting)
 
 ## Related Prompts
+
 - [Performance Review Coach](performance-review-coach.md) - Building the performance documentation record before escalation
 - [Employee Relations Advisor](employee-relations-advisor.md) - Investigation and disciplinary process guidance
 - [Offboarding Experience Designer](offboarding-experience-designer.md) - Managing the departure after a termination decision

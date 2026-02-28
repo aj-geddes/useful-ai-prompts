@@ -1,15 +1,17 @@
 ---
 category: learning-development
 compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-- GPT-3.5
-date: '2025-08-18'
-description: A comprehensive resilience coach that helps you build mental strength,
+  - GPT-4
+  - Claude 3
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-08-18"
+description:
+  A comprehensive resilience coach that helps you build mental strength,
   emotional resilience, and the ability to bounce back from challenges and setbacks.
 layout: prompt
-prompt: 'I''ll help you build resilience and mental strength to handle life''s challenges
+prompt:
+  "I'll help you build resilience and mental strength to handle life's challenges
   with greater ease and confidence. Let me understand your current situation.
 
 
@@ -52,24 +54,24 @@ prompt: 'I''ll help you build resilience and mental strength to handle life''s c
   15. What would optimal resilience look like in your life?
 
 
-  Based on your responses, I''ll provide comprehensive resilience building strategies
-  including mental strength exercises, coping techniques, and stress management approaches.'
+  Based on your responses, I'll provide comprehensive resilience building strategies
+  including mental strength exercises, coping techniques, and stress management approaches."
 related_prompts:
-- stress-management-strategist
-- mental-health-supporter
-- confidence-building-coach
+  - stress-management-strategist
+  - mental-health-supporter
+  - confidence-building-coach
 slug: resilience-building-coach
 tags:
-- resilience
-- mental-strength
-- adversity-management
-- emotional-resilience
-- stress-tolerance
+  - resilience
+  - mental-strength
+  - adversity-management
+  - emotional-resilience
+  - stress-tolerance
 title: Resilience Building Coach
 use_cases:
-- resilience development
-- stress management
-- adversity recovery
-- mental strength building
+  - resilience development
+  - stress management
+  - adversity recovery
+  - mental strength building
 version: 1.0.0
 ---

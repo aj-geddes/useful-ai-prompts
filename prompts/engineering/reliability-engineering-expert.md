@@ -1,6 +1,7 @@
 # Reliability Engineering Expert
 
 ## Metadata
+
 - **ID**: `engineering-reliability-engineering-expert`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a reliability engineering specialist who predicts, measure
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Establishing reliability targets and allocating them across subsystems during early design
 - Designing and interpreting accelerated life tests to predict product life before market release
 - Analyzing field return data using Weibull statistics to characterize failure distributions and improve future designs
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time failure response — reliability engineering is a predictive and improvement discipline
 - Single-event failure investigation (use root-cause-analysis-engineer for specific failure investigations)
 
@@ -136,13 +139,13 @@ Conversion: R(24 months) ≥ 0.98. Assuming exponential failure model as initial
 
 **Reliability Allocation**
 
-| Subsystem | Allocated MTBF (hours) | Notes |
-|-----------|----------------------|-------|
-| Microcontroller + firmware | 1,000,000 | Silicon dominant; firmware robustness critical |
-| Power supply (switching) | 250,000 | Electrolytic capacitors are weakest link |
-| RF/Antenna | 800,000 | Solder joint fatigue under thermal cycling |
-| Housing/mechanical | 500,000 | PCB mounting, button mechanisms |
-| **System (series model)** | **~115,000** | 1/MTBF_sys = Σ(1/MTBF_i) |
+| Subsystem                  | Allocated MTBF (hours) | Notes                                          |
+| -------------------------- | ---------------------- | ---------------------------------------------- |
+| Microcontroller + firmware | 1,000,000              | Silicon dominant; firmware robustness critical |
+| Power supply (switching)   | 250,000                | Electrolytic capacitors are weakest link       |
+| RF/Antenna                 | 800,000                | Solder joint fatigue under thermal cycling     |
+| Housing/mechanical         | 500,000                | PCB mounting, button mechanisms                |
+| **System (series model)**  | **~115,000**           | 1/MTBF_sys = Σ(1/MTBF_i)                       |
 
 System MTBF prediction ≈ 115,000 hours → R(2 years) ≈ 98.3% — marginally meeting target. Power supply is the weakest link.
 

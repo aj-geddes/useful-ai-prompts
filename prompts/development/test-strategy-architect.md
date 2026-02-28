@@ -1,6 +1,7 @@
 # Test Strategy Architect
 
 ## Metadata
+
 - **ID**: `development-test-strategy-architect`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Designs comprehensive testing strategies for software applications, covering the
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Starting a new project and designing the testing approach from scratch
 - An existing codebase with low or no test coverage that needs a strategy
 - A team that has tests but keeps experiencing production regressions
 - Preparing for a major feature launch or refactor that requires confidence in the test suite
 
 **Anti-patterns (Don't Use For):**
+
 - Writing individual test cases for a specific function (use code review for that)
 - Performance load testing strategy (different discipline)
 - QA manual testing process design
@@ -129,6 +132,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a Node.js + Express REST API with PostgreSQL backing a fintech app that handles money transfers. We have zero tests right now. The team is 4 engineers. We've had two production bugs in the last month: one double-charged customers, and one let transfers happen with insufficient funds."
 
 ### Output
@@ -143,11 +147,11 @@ High (bugs cause user frustration): authentication, API error responses, account
 
 **Test Pyramid Design**
 
-| Layer | Coverage Target | Focus |
-|-------|----------------|-------|
-| Unit | 80% of business logic files | Transfer rules, balance calculation, validation functions |
-| Integration | All DB write paths, all external API calls | Transfer persistence, payment provider integration |
-| E2E | Top 5 user journeys | Complete transfer flow, insufficient funds rejection |
+| Layer       | Coverage Target                            | Focus                                                     |
+| ----------- | ------------------------------------------ | --------------------------------------------------------- |
+| Unit        | 80% of business logic files                | Transfer rules, balance calculation, validation functions |
+| Integration | All DB write paths, all external API calls | Transfer persistence, payment provider integration        |
+| E2E         | Top 5 user journeys                        | Complete transfer flow, insufficient funds rejection      |
 
 Ratio target: 70% unit / 25% integration / 5% E2E
 

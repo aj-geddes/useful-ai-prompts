@@ -1,6 +1,7 @@
 # Research Excellence Scientist
 
 ## Metadata
+
 - **ID**: `academic-research-excellence-scientist`
 - **Version**: 1.0.0
 - **Category**: Academic/Research
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Guides researchers through designing and executing world-class scientific research. Provides strategic support for experimental design, grant proposals, publication planning, and translating discoveries into real-world impact.
 
 ## When to Use
+
 - Planning research strategy and experimental design
 - Preparing grant applications (R01, U01, foundation grants)
 - Developing publication strategies for high-impact journals
@@ -99,11 +102,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 I'm a 3rd-year Assistant Professor in neuroscience studying neuroinflammation in Alzheimer's disease. My key questions are: How do microglia contribute to tau pathology spread? Can we target this therapeutically? I have an R01 ($250K/year), shared confocal, 2 postdocs, and 3 grad students. Main challenges are better in vivo imaging and reproducibility across models. I'm aiming for Nature Neuroscience level papers and need to renew my R01 next year while building toward tenure.
 ```
 
 ### Output
+
 ```
 **Research Excellence Strategy: Neuroinflammation in Alzheimer's Disease**
 
@@ -149,6 +154,7 @@ Target: Nature Neuroscience (6-month submission)
 ---
 
 ## Related Prompts
+
 - `creation-grant-writing-expert`: Strategic grant proposal development
 - `creation-scientific-manuscript-expert`: Publication preparation and strategy
 - `communication-team-collaboration-expert`: Building research collaboration networks

@@ -1,13 +1,14 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Conduct comprehensive security compliance audits for SOC 2, GDPR, HIPAA,
+date: "2025-01-01"
+description:
+  Conduct comprehensive security compliance audits for SOC 2, GDPR, HIPAA,
   PCI-DSS, and ISO 27001. Use when preparing for certification, annual audits, or
   compliance validation.
 layout: skill
 slug: security-compliance-audit
 tags:
-- security
+  - security
 title: security-compliance-audit
 ---
 
@@ -412,8 +413,8 @@ if __name__ == '__main__':
 
 ```javascript
 // compliance-automation.js
-const axios = require('axios');
-const fs = require('fs').promises;
+const axios = require("axios");
+const fs = require("fs").promises;
 
 class ComplianceAutomation {
   constructor() {
@@ -422,7 +423,7 @@ class ComplianceAutomation {
 
   // Check encryption at rest
   async checkEncryptionAtRest() {
-    console.log('Checking encryption at rest...');
+    console.log("Checking encryption at rest...");
 
     const findings = [];
 
@@ -431,41 +432,41 @@ class ComplianceAutomation {
     const dbEncrypted = false;
 
     if (!dbEncrypted) {
-      findings.push('Database encryption not enabled');
+      findings.push("Database encryption not enabled");
     }
 
     return {
-      control: 'Encryption at Rest',
+      control: "Encryption at Rest",
       compliant: findings.length === 0,
-      findings
+      findings,
     };
   }
 
   // Check encryption in transit
   async checkEncryptionInTransit() {
-    console.log('Checking encryption in transit...');
+    console.log("Checking encryption in transit...");
 
     const findings = [];
-    const endpoints = ['https://api.example.com'];
+    const endpoints = ["https://api.example.com"];
 
     for (const endpoint of endpoints) {
       try {
         const response = await axios.get(endpoint, {
-          httpsAgent: new (require('https')).Agent({
+          httpsAgent: new (require("https").Agent)({
             rejectUnauthorized: true,
-            minVersion: 'TLSv1.2'
-          })
+            minVersion: "TLSv1.2",
+          }),
         });
 
         // Check TLS version and cipher
         const tls = response.request.socket.getProtocol();
         const cipher = response.request.socket.getCipher();
 
-        if (!tls.includes('TLSv1.2') && !tls.includes('TLSv1.3')) {
+        if (!tls.includes("TLSv1.2") && !tls.includes("TLSv1.3")) {
           findings.push(`Weak TLS version: ${tls}`);
         }
 
-        if (cipher.name.includes('DES') || cipher.name.includes('RC4')) {
+        if (cipher.name.includes("DES") || cipher.name.includes("RC4")) {
           findings.push(`Weak cipher: ${cipher.name}`);
         }
       } catch (error) {
@@ -474,15 +475,15 @@ class ComplianceAutomation {
     }
 
     return {
-      control: 'Encryption in Transit',
+      control: "Encryption in Transit",
       compliant: findings.length === 0,
-      findings
+      findings,
     };
   }
 
   // Check access controls
   async checkAccessControls() {
-    console.log('Checking access controls...');
+    console.log("Checking access controls...");
 
     const findings = [];
 
@@ -490,7 +491,7 @@ class ComplianceAutomation {
     const mfaEnabled = true; // Check actual MFA status
 
     if (!mfaEnabled) {
-      findings.push('MFA not enabled for all users');
+      findings.push("MFA not enabled for all users");
     }
 
     // Check password policy
@@ -498,23 +499,23 @@ class ComplianceAutomation {
       minLength: 12,
       requireUppercase: true,
       requireNumbers: true,
-      requireSpecial: true
+      requireSpecial: true,
     };
 
     if (passwordPolicy.minLength < 12) {
-      findings.push('Password minimum length less than 12');
+      findings.push("Password minimum length less than 12");
     }
 
     return {
-      control: 'Access Controls',
+      control: "Access Controls",
       compliant: findings.length === 0,
-      findings
+      findings,
     };
   }
 
   // Check audit logging
   async checkAuditLogging() {
-    console.log('Checking audit logging...');
+    console.log("Checking audit logging...");
 
     const findings = [];
 
@@ -522,29 +523,31 @@ class ComplianceAutomation {
     const logRetentionDays = 90;
 
     if (logRetentionDays < 90) {
-      findings.push('Log retention less than 90 days');
+      findings.push("Log retention less than 90 days");
     }
 
     // Check log events
     const requiredEvents = [
-      'authentication',
-      'authorization',
-      'data_access',
-      'configuration_changes'
+      "authentication",
+      "authorization",
+      "data_access",
+      "configuration_changes",
     ];
 
-    const loggedEvents = ['authentication', 'authorization'];
+    const loggedEvents = ["authentication", "authorization"];
 
-    const missingEvents = requiredEvents.filter(e => !loggedEvents.includes(e));
+    const missingEvents = requiredEvents.filter(
+      (e) => !loggedEvents.includes(e),
+    );
 
     if (missingEvents.length > 0) {
-      findings.push(`Missing log events: ${missingEvents.join(', ')}`);
+      findings.push(`Missing log events: ${missingEvents.join(", ")}`);
     }
 
     return {
-      control: 'Audit Logging',
+      control: "Audit Logging",
       compliant: findings.length === 0,
-      findings
+      findings,
     };
   }
 
@@ -553,14 +556,14 @@ class ComplianceAutomation {
       await this.checkEncryptionAtRest(),
       await this.checkEncryptionInTransit(),
       await this.checkAccessControls(),
-      await this.checkAuditLogging()
+      await this.checkAuditLogging(),
     ];
 
     return this.generateReport();
   }
 
   generateReport() {
-    const compliant = this.checks.filter(c => c.compliant).length;
+    const compliant = this.checks.filter((c) => c.compliant).length;
     const nonCompliant = this.checks.length - compliant;
     const complianceRate = (compliant / this.checks.length) * 100;
 
@@ -570,9 +573,9 @@ class ComplianceAutomation {
         total: this.checks.length,
         compliant,
         nonCompliant,
-        complianceRate: `${complianceRate.toFixed(2)}%`
+        complianceRate: `${complianceRate.toFixed(2)}%`,
       },
-      checks: this.checks
+      checks: this.checks,
     };
   }
 }
@@ -582,11 +585,11 @@ async function main() {
   const automation = new ComplianceAutomation();
   const report = await automation.runAllChecks();
 
-  console.log('\n=== Compliance Report ===');
+  console.log("\n=== Compliance Report ===");
   console.log(`Compliance Rate: ${report.summary.complianceRate}`);
   console.log(`Compliant: ${report.summary.compliant}/${report.summary.total}`);
 
-  await fs.writeFile('compliance-report.json', JSON.stringify(report, null, 2));
+  await fs.writeFile("compliance-report.json", JSON.stringify(report, null, 2));
 }
 
 main().catch(console.error);
@@ -595,6 +598,7 @@ main().catch(console.error);
 ## Best Practices
 
 ### ✅ DO
+
 - Automate compliance checks
 - Document all controls
 - Maintain evidence repository
@@ -604,6 +608,7 @@ main().catch(console.error);
 - Keep policies updated
 
 ### ❌ DON'T
+
 - Skip documentation
 - Ignore findings
 - Delay remediation

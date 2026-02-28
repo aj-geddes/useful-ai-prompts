@@ -1,6 +1,7 @@
 # Blockchain Digital Identity Management Platform
 
 ## Metadata
+
 - **ID**: `blockchain-digital-identity-management-platform`
 - **Version**: 3.0.0
 - **Category**: Blockchain/Digital-Identity
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs secure blockchain-based digital identity management systems with self-sovereign identity (SSI), verifiable credentials, and privacy-preserving authentication. Covers DID architecture, zero-knowledge proofs, wallet integration, and regulatory compliance for enterprise and government deployments.
 
 ## When to Use
+
 - Building employee or customer identity verification systems
 - Implementing self-sovereign identity for credential management
 - Creating privacy-preserving authentication with selective disclosure
@@ -37,17 +40,19 @@ Digital identity management requires balancing user privacy with verification ne
 
 <input_handling>
 Required:
+
 - Identity types to manage (employee, customer, citizen, student)
 - Credentials requiring verification (education, employment, licenses)
 - Verifier ecosystem (employers, institutions, government, banks)
 - Privacy requirements (selective disclosure, zero-knowledge, anonymous)
 
 Optional (with defaults):
+
 - Blockchain platform (default: Ethereum with L2 scaling)
 - Organization size (default: mid-market enterprise)
 - Compliance scope (default: GDPR)
 - Integration needs (default: standard HR/CRM systems)
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive digital identity management platform.
@@ -58,17 +63,19 @@ Design a comprehensive digital identity management platform.
 4. Create compliance automation for GDPR and regulatory requirements
 5. Architect verification network with trusted verifier ecosystem and APIs
 6. Develop implementation roadmap with phased deployment milestones
-</task>
+   </task>
 
 <output_specification>
 **Digital Identity Platform Design**
+
 - Format: Technical architecture with implementation details
 - Length: 1500-2500 words
 - Must include: DID architecture, privacy framework, wallet specs, compliance system, API design, timeline, cost breakdown
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - DID and credential schemas follow W3C standards
 - Privacy controls provide granular user consent management
 - Wallet UX enables simple credential presentation
@@ -76,11 +83,12 @@ Excellent outputs:
 - Verification APIs support real-time credential validation
 
 Avoid:
+
 - Storing personal data on-chain without encryption
 - Ignoring gas cost optimization for transactions
 - Overlooking user experience in credential presentation flows
 - Missing disaster recovery for identity systems
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Follow W3C DID Core and Verifiable Credentials specifications
@@ -94,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Building digital identity for global consulting firm with 50K employees and 20K contractors. Need to verify education credentials, certifications, and security clearances. Verifiers include clients, government agencies, and certification bodies. Require high privacy with selective disclosure. Using Ethereum/Polygon, integrating with Workday and Salesforce. $2M budget, 12-month deployment.
 
 ### Output
@@ -101,6 +110,7 @@ Building digital identity for global consulting firm with 50K employees and 20K 
 ## Identity Architecture
 
 **DID Structure**
+
 ```
 Format: did:ethr:0x...employee_address
 Document contains:
@@ -111,6 +121,7 @@ Document contains:
 ```
 
 **Credential Schema - Education Example**
+
 ```json
 {
   "type": ["VerifiableCredential", "EducationCredential"],
@@ -131,12 +142,14 @@ Document contains:
 ## Privacy Framework
 
 **Selective Disclosure Levels**
+
 - Level 1: Credential validity only (no personal data)
 - Level 2: Boolean attribute verification ("has security clearance")
 - Level 3: Specific field disclosure with user consent
 - Level 4: Zero-knowledge proofs (range proofs, set membership)
 
 **GDPR Compliance**
+
 - Off-chain encrypted credential storage
 - On-chain commitment hashes only
 - User-controlled encryption keys
@@ -145,12 +158,14 @@ Document contains:
 ## Wallet Integration
 
 **Mobile Wallet Features**
+
 - DID management with biometric auth
 - QR code credential presentation
 - Selective disclosure interface
 - Cross-device synchronization
 
 **Verification Flow**
+
 1. Verifier generates request with required credentials
 2. Employee scans QR, reviews request, selects disclosure level
 3. Wallet creates verifiable presentation with privacy filters
@@ -159,15 +174,17 @@ Document contains:
 ## System Integration
 
 **Workday Integration**
+
 - Employee onboarding triggers DID generation
 - Role changes update credentials automatically
 - Offboarding revokes active credentials
 
 **Verification API**
+
 ```javascript
-GET /api/verify/credential
-POST /api/verify/batch
-GET /api/status/employee/{did}
+GET / api / verify / credential;
+POST / api / verify / batch;
+GET / api / status / employee / { did };
 ```
 
 ## Implementation Timeline
@@ -191,6 +208,7 @@ GET /api/status/employee/{did}
 ---
 
 ## Related Prompts
+
 - [Smart Contract Security Audit Platform](../smart-contracts/smart-contract-security-audit-platform.md)
 - [Enterprise Blockchain Integration Platform](../blockchain-development/enterprise-blockchain-integration-platform.md)
 - [Cross-Chain Interoperability Bridge Platform](../cross-chain/cross-chain-interoperability-bridge-platform.md)

@@ -1,6 +1,7 @@
 # Financial Model Builder
 
 ## Metadata
+
 - **ID**: `finance-financial-model-builder`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt guides users through building rigorous financial models — DCF, comparable company (comps), precedent transactions, or LBO — with properly structured assumptions, scenario frameworks, and output interpretation. It functions as a senior financial modeling advisor that helps structure the model architecture, stress-test key assumptions, and communicate findings clearly to stakeholders. The output includes model structure guidance, assumption documentation, and interpretation of results.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Building a DCF model for an investment decision or company valuation with documented assumptions and sensitivity analysis
 - Constructing a comparable company analysis to benchmark valuation multiples and identify relative value
 - Developing an LBO model to assess private equity return potential and maximum debt capacity
 
 **Anti-patterns (Don't Use For):**
+
 - Generating actual live Excel formulas (this provides structure, logic, and guidance — you build the spreadsheet)
 - Valuing businesses with no historical financial data or comparable market references
 - Replacing a CPA or licensed valuator for legally required business valuations (litigation, estate, ESOP)
@@ -70,9 +75,11 @@ Avoid: Single-point valuation without range, assumed WACC without derivation, te
 ## Example Usage
 
 ### Input
+
 "I need to build a DCF for a SaaS company. Revenue: $95M, growing 28% last year but slowing. Gross margin: 78%. EBITDA: negative at -12% (company is investing in growth). No debt. The company is considering a Series D raise at an implied $900M valuation. I need to know if that valuation is supportable and what assumptions it requires."
 
 ### Output
+
 **DCF Model Guide: SaaS Company Series D Valuation Analysis**
 
 ---
@@ -80,6 +87,7 @@ Avoid: Single-point valuation without range, assumed WACC without derivation, te
 **Model Architecture**
 
 Recommended sheet structure:
+
 - `Inputs`: All assumptions (growth rates, margin ramp, capex, WACC, terminal assumptions) — no hardcoded numbers anywhere else
 - `Revenue Build`: ARR → Revenue bridge with cohort assumptions if available
 - `P&L Projection`: Revenue → Gross Profit → EBITDA → NOPAT (5-10 year projection)
@@ -92,16 +100,16 @@ Recommended sheet structure:
 
 **Key Assumptions — Base Case**
 
-| Driver | Value | Rationale |
-|--------|-------|-----------|
-| Revenue Growth Yr 1-3 | 22%, 18%, 15% | Deceleration from 28% reflects typical SaaS growth fade; assumes no macro headwinds |
-| Revenue Growth Yr 4-7 | 12%, 10%, 9%, 8% | Approaching Rule of 40 maturity phase |
-| Gross Margin | 78% → 80% | Slight scale benefit on COGS; typical for infrastructure SaaS |
-| EBITDA Margin Ramp | -12% → -5% → +5% → +18% by Year 7 | Growth investment peaks in Years 1-2, leverage emerges Year 4+ |
-| FCF Conversion of EBITDA | 70% at maturity | SaaS capex-light; working capital neutral to slight inflow |
-| WACC | 11-13% | Unlevered; high-growth SaaS risk premium over risk-free rate; beta 1.4-1.6 vs. SaaS comp set |
-| Terminal Growth Rate | 3.5% | Long-run nominal GDP + slight SaaS durability premium |
-| Exit Multiple Check | 6-10x EV/Revenue | Cross-validate with SaaS comps at similar growth/margin profiles in Year 5 |
+| Driver                   | Value                             | Rationale                                                                                    |
+| ------------------------ | --------------------------------- | -------------------------------------------------------------------------------------------- |
+| Revenue Growth Yr 1-3    | 22%, 18%, 15%                     | Deceleration from 28% reflects typical SaaS growth fade; assumes no macro headwinds          |
+| Revenue Growth Yr 4-7    | 12%, 10%, 9%, 8%                  | Approaching Rule of 40 maturity phase                                                        |
+| Gross Margin             | 78% → 80%                         | Slight scale benefit on COGS; typical for infrastructure SaaS                                |
+| EBITDA Margin Ramp       | -12% → -5% → +5% → +18% by Year 7 | Growth investment peaks in Years 1-2, leverage emerges Year 4+                               |
+| FCF Conversion of EBITDA | 70% at maturity                   | SaaS capex-light; working capital neutral to slight inflow                                   |
+| WACC                     | 11-13%                            | Unlevered; high-growth SaaS risk premium over risk-free rate; beta 1.4-1.6 vs. SaaS comp set |
+| Terminal Growth Rate     | 3.5%                              | Long-run nominal GDP + slight SaaS durability premium                                        |
+| Exit Multiple Check      | 6-10x EV/Revenue                  | Cross-validate with SaaS comps at similar growth/margin profiles in Year 5                   |
 
 **Highest Sensitivity Drivers:** Revenue growth rate in Years 1-3 and EBITDA margin trajectory. A 3-percentage-point difference in Year 3 growth rate changes equity value by ~$80-120M at this scale.
 
@@ -120,10 +128,10 @@ Step 3 — PV and Enterprise Value: Discount each year's UFCF and terminal value
 **Scenario Analysis**
 
 | Scenario | Growth (Yr1-3) | EBITDA @ Maturity | Implied EV | vs. $900M |
-|----------|---------------|-------------------|-----------|-----------|
-| Bear | 15%, 12%, 10% | 12% | $520-600M | -33-40% |
-| Base | 22%, 18%, 15% | 18% | $780-920M | At/near |
-| Bull | 28%, 24%, 20% | 24% | $1.1-1.3B | +20-45% |
+| -------- | -------------- | ----------------- | ---------- | --------- |
+| Bear     | 15%, 12%, 10%  | 12%               | $520-600M  | -33-40%   |
+| Base     | 22%, 18%, 15%  | 18%               | $780-920M  | At/near   |
+| Bull     | 28%, 24%, 20%  | 24%               | $1.1-1.3B  | +20-45%   |
 
 ---
 
@@ -145,9 +153,11 @@ The $900M Series D valuation is achievable in the base case — but requires 22%
 ---
 
 ## Variations
+
 - **Comparable Company Analysis**: Build a comps table with trading multiples normalization and bridge to implied valuation
 - **LBO Model**: Structure sources/uses, debt schedule with PIK/cash interest, and IRR sensitivity for private equity evaluation
 
 ## Related Prompts
+
 - [Investment Research Analyst](investment-research-analyst.md) - Business and competitive analysis to inform model assumptions
 - [Merger Acquisition Analyst](merger-acquisition-analyst.md) - Extend the model for acquisition synergy and deal structure analysis

@@ -1,6 +1,7 @@
 # Quantum Circuit Optimization and Design
 
 ## Metadata
+
 - **ID**: `quantum-circuit-optimization`
 - **Version**: 1.0.0
 - **Category**: Quantum Computing / Algorithm Development
@@ -100,22 +101,25 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Algorithm: QAOA for MaxCut on 8-vertex graph. Target: IBM Quantum (heavy-hex topology). Goal: Minimize circuit depth while maintaining >90% solution quality. Current depth: 45 layers.
 ```
 
 ### Output
+
 **Circuit Analysis**
 
-| Metric | Current | Target | Strategy |
-|--------|---------|--------|----------|
-| Circuit Depth | 45 | <30 | Gate consolidation, scheduling |
-| Two-Qubit Gates | 56 | <40 | Decomposition, cancellation |
-| Estimated Fidelity | ~85% | >90% | Reduced depth, ZNE |
+| Metric             | Current | Target | Strategy                       |
+| ------------------ | ------- | ------ | ------------------------------ |
+| Circuit Depth      | 45      | <30    | Gate consolidation, scheduling |
+| Two-Qubit Gates    | 56      | <40    | Decomposition, cancellation    |
+| Estimated Fidelity | ~85%    | >90%   | Reduced depth, ZNE             |
 
 **Optimization Strategy**
 
-*1. Gate Decomposition and Consolidation*
+_1. Gate Decomposition and Consolidation_
+
 ```python
 from qiskit.transpiler import PassManager
 from qiskit.transpiler.passes import Optimize1qGates, CXCancellation
@@ -128,7 +132,8 @@ pm = PassManager([
 optimized = pm.run(circuit)
 ```
 
-*2. Hardware-Aware Mapping*
+_2. Hardware-Aware Mapping_
+
 ```python
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
 from qiskit_ibm_runtime import QiskitRuntimeService
@@ -147,7 +152,8 @@ pm = generate_preset_pass_manager(
 mapped_circuit = pm.run(circuit)
 ```
 
-*3. QAOA-Specific Optimization*
+_3. QAOA-Specific Optimization_
+
 ```python
 def optimize_mixer_layer(circuit, qubits):
     """
@@ -168,7 +174,8 @@ def optimize_mixer_layer(circuit, qubits):
         circuit.rx(angle, q)
 ```
 
-*4. Error Mitigation with ZNE*
+_4. Error Mitigation with ZNE_
+
 ```python
 from qiskit_ibm_runtime import EstimatorV2
 from qiskit_ibm_runtime.options import Options
@@ -182,14 +189,15 @@ estimator = EstimatorV2(backend, options=options)
 
 **Optimization Results**
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Circuit Depth | 45 | 28 | 38% reduction |
-| Two-Qubit Gates | 56 | 38 | 32% reduction |
-| Estimated Fidelity | 85% | 93% | 8% improvement |
-| Solution Quality | 95% | 95% | Maintained |
+| Metric             | Before | After | Improvement    |
+| ------------------ | ------ | ----- | -------------- |
+| Circuit Depth      | 45     | 28    | 38% reduction  |
+| Two-Qubit Gates    | 56     | 38    | 32% reduction  |
+| Estimated Fidelity | 85%    | 93%   | 8% improvement |
+| Solution Quality   | 95%    | 95%   | Maintained     |
 
 **Validation Approach**
+
 ```python
 from qiskit.quantum_info import process_fidelity, Operator
 
@@ -203,6 +211,7 @@ print(f"Optimization fidelity: {fidelity:.4f}")
 ```
 
 **Key Techniques Applied**
+
 1. Single-qubit gate consolidation: Merged consecutive rotations
 2. CX cancellation: Eliminated redundant CNOT pairs
 3. SABRE routing: Minimized SWAP insertions for heavy-hex

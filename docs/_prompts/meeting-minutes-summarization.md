@@ -3,27 +3,28 @@ title: Meeting Minutes & Summarization Expert
 slug: meeting-minutes-summarization
 category: business/administrative
 tags:
-- meeting
-- minutes
-- summarization
-- action
-- items
-- documentation
-- decision
-- tracking
+  - meeting
+  - minutes
+  - summarization
+  - action
+  - items
+  - documentation
+  - decision
+  - tracking
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Transforms raw meeting content (transcripts, notes, recordings) into
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Transforms raw meeting content (transcripts, notes, recordings) into
   professional minutes with executive summaries, clear action items, and decision
   records. Ensures accountability through structured follow-up tracking.
 layout: prompt
 use_cases:
-- Processing meeting transcripts into formal documentation
-- Creating action item lists with owners and deadlines
-- Documenting decisions for compliance or audit purposes
-- Preparing summaries for stakeholders who missed meetings
+  - Processing meeting transcripts into formal documentation
+  - Creating action item lists with owners and deadlines
+  - Documenting decisions for compliance or audit purposes
+  - Preparing summaries for stakeholders who missed meetings
 complexity: intermediate
 interaction: single-shot
 ---
@@ -38,16 +39,18 @@ Meeting documentation is critical for organizational alignment and accountabilit
 
 <input_handling>
 Required inputs:
+
 - Meeting type and purpose
 - Attendees and their roles
 - Meeting content (transcript, notes, or summary)
 - Distribution list for minutes
 
 Infer if not provided:
+
 - Meeting duration (default: 60 minutes)
 - Format requirements (default: standard business format)
 - Action item tracking method (default: table format)
-</input_handling>
+  </input_handling>
 
 <task>
 Create comprehensive meeting documentation following this process:
@@ -58,33 +61,36 @@ Create comprehensive meeting documentation following this process:
 4. Create action item table with owners, deadlines, and success criteria
 5. Document decisions with rationale and approvers
 6. Identify follow-up needs and next meeting requirements
-</task>
+   </task>
 
 <output_specification>
 Format: Formal minutes with sections for summary, details, actions, decisions
 Length: 400-800 words depending on meeting complexity
 Structure:
+
 - Header (date, attendees, purpose)
 - Executive summary (3-5 bullets)
 - Detailed discussion by topic
 - Decisions table (decision, rationale, approver)
 - Action items table (task, owner, due date, priority)
 - Follow-up section
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Executive summary captures key outcomes readable in 30 seconds
 - Action items have specific owners, clear deadlines, and measurable success criteria
 - Decisions include business rationale for future reference
 - Sensitive topics handled with appropriate discretion
 
 Avoid:
+
 - Verbatim transcription without synthesis
 - Vague action items ("follow up on project")
 - Missing decision rationale
 - Attributing statements to wrong attendees
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain objectivity and neutrality in documenting discussions

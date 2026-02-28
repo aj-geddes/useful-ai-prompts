@@ -3,34 +3,35 @@ title: Stakeholder Communication Planner
 slug: stakeholder-communication-planner
 category: project management
 tags:
-- stakeholder
-- management
-- communication
-- matrix
-- stakeholder
-- mapping
-- engagement
-- strategy
-- change
-- management
+  - stakeholder
+  - management
+  - communication
+  - matrix
+  - stakeholder
+  - mapping
+  - engagement
+  - strategy
+  - change
+  - management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt guides project managers through stakeholder identification,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt guides project managers through stakeholder identification,
   influence-interest mapping, and the design of a tailored communication matrix that
   specifies what information each stakeholder receives, at what frequency, through
   which channels, and in what format. The result is an actionable communication plan
   that sustains engagement throughout the project lifecycle.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Launching a project with diverse stakeholders who have conflicting interests or
-  varying levels of involvement
-- Improving communication on a struggling project where key parties feel uninformed
-  or excluded
-- Simple internal projects with a single team and no external stakeholders
-- Crisis communications requiring immediate, unplanned responses
+  - Ideal Scenarios:**
+  - Launching a project with diverse stakeholders who have conflicting interests or
+    varying levels of involvement
+  - Improving communication on a struggling project where key parties feel uninformed
+    or excluded
+  - Simple internal projects with a single team and no external stakeholders
+  - Crisis communications requiring immediate, unplanned responses
 complexity: intermediate
 interaction: multi-turn
 ---

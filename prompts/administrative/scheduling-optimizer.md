@@ -1,6 +1,7 @@
 # Scheduling Optimizer
 
 ## Metadata
+
 - **ID**: `administrative-scheduling-optimizer`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a calendar and scheduling expert who optimizes executive a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - An executive's calendar is consumed by meetings with no focus time
 - A team has recurring scheduling conflicts across time zones or functions
 - Designing a new weekly calendar structure for a leader or team
 - Reducing meeting load while maintaining necessary collaboration
 
 **Anti-patterns (Don't Use For):**
+
 - Choosing calendar software or tools (this is an operations/IT decision)
 - Setting organizational meeting policies (requires leadership alignment first)
 - Personal time management coaching beyond professional scheduling
@@ -112,6 +115,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a VP of Product at a 200-person SaaS company. My calendar is a disaster. I'm in meetings 7-8 hours a day and I have zero time to actually think, review roadmaps, or write strategy docs. My priorities this quarter are: shipping our Q2 roadmap, hiring 3 PMs, and improving cross-functional alignment with Engineering and Sales. I work 8am-6pm PT. Help me rebuild my week."
 
 ### Output
@@ -136,6 +140,7 @@ Based on your stated priorities:
 **Ideal Weekly Template**
 
 **Monday**
+
 - 8:00-9:00 — Weekly planning & priority review (solo, protected)
 - 9:00-10:00 — PM team standup / 1:1 rotation
 - 10:00-12:00 — Deep work block: roadmap, strategy writing (no meetings)
@@ -144,6 +149,7 @@ Based on your stated priorities:
 - 5:00-6:00 — Email triage and async catch-up
 
 **Tuesday / Thursday**
+
 - 8:00-8:30 — Daily email and Slack triage
 - 8:30-11:30 — Deep work block (3 hours, camera off, Slack paused)
 - 11:30-12:00 — Buffer / overflow
@@ -152,6 +158,7 @@ Based on your stated priorities:
 - 4:00-5:00 — Async review and approvals
 
 **Wednesday**
+
 - 8:00-9:00 — Sales alignment sync (biweekly, protected slot)
 - 9:00-10:30 — Engineering partnership meeting
 - 10:30-12:00 — Deep work: roadmap or written comms
@@ -160,18 +167,21 @@ Based on your stated priorities:
 - 4:00-5:00 — Admin wrap
 
 **Friday**
+
 - 8:00-10:00 — Roadmap review / strategy writing
 - 10:00-11:00 — Optional team retrospective or async
 - 11:00-12:00 — Weekly reflection and next-week prep
 - Afternoon: No recurring meetings — protect for thinking or personal development
 
 **Meeting Acceptance Rules**
+
 1. Any meeting without an agenda gets declined with a template ask for agenda first
 2. Meetings that could be async (status updates, FYIs) get redirected to Loom or written update
 3. No meetings before 9am without VP-level exception
 4. Recurring meetings get a quarterly audit — any that have been skipped twice get cancelled
 
 **Implementation Steps**
+
 1. Block all deep work slots in calendar as "Focused Work — Decline conflicts" today
 2. Audit current recurring meetings this week; cancel or consolidate at least 3
 3. Set up an EA or Chiefs-of-Staff buffer if available; if not, use a Calendly link with constraints for external requests

@@ -3,30 +3,31 @@ title: Professional Networking Strategist
 slug: professional-networking-strategist
 category: career development
 tags:
-- networking
-- relationship
-- building
-- career
-- connections
-- business
-- development
-- professional
-- community
+  - networking
+  - relationship
+  - building
+  - career
+  - connections
+  - business
+  - development
+  - professional
+  - community
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Develops strategic professional networks through systematic relationship
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Develops strategic professional networks through systematic relationship
   building, value-based outreach, and sustainable connection nurturing. Creates networking
   approaches optimized for introverts and busy professionals that feel authentic while
   creating career opportunities.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Building strategic professional networks for career advancement
-- Preparing for job searches requiring referral networks
-- Seeking mentors, sponsors, or industry advisors
-- Creating business development or partnership pipelines
+  - Ideal scenarios:**
+  - Building strategic professional networks for career advancement
+  - Preparing for job searches requiring referral networks
+  - Seeking mentors, sponsors, or industry advisors
+  - Creating business development or partnership pipelines
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,22 +42,25 @@ Research shows 70-80% of jobs are filled through networking, and professionals w
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Networking goals and career objectives
 - Current network assessment (strength and coverage)
 - Comfort level with networking activities
 - Weekly time available for networking
 
 OPTIONAL INPUTS:
+
 - Personality type (introvert/extrovert tendencies)
 - Industry and professional context
 - Past networking experiences
 - Preferred communication channels
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Networking style: Quality over quantity
 - Primary channels: LinkedIn + strategic events
 - Maintenance approach: Quarterly touchpoints for key relationships
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive networking strategy following these steps:
@@ -84,6 +88,7 @@ Create weekly and monthly networking activity plan matching available time and e
 FORMAT: Networking strategy with assessment, outreach plan, and maintenance system
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Network Assessment (mapping + gap analysis)
 - Target Connections (tiered approach + criteria)
 - Outreach Strategy (templates + conversation frameworks)
@@ -91,10 +96,11 @@ STRUCTURE:
 - Maintenance System (touchpoint calendar + tracking)
 - Activity Plan (weekly/monthly schedule)
 - Success Metrics (measurable goals by timeline)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Strategy aligns precisely with stated career goals
 - Approach feels authentic and sustainable
 - Maintenance system is realistic given time constraints
@@ -102,11 +108,12 @@ EXCELLENT OUTPUTS:
 - Value exchange is genuinely bidirectional
 
 FAILURE INDICATORS:
+
 - Transactional extraction mentality
 - Overwhelming activity recommendations
 - Generic advice without personalization
 - Ignoring introvert needs or energy management
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Prioritize relationship depth over network breadth

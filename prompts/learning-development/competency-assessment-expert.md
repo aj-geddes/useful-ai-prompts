@@ -1,6 +1,7 @@
 # Competency Assessment Expert
 
 ## Metadata
+
 - **ID**: `learning-competency-assessment`
 - **Version**: 1.1.0
 - **Category**: Learning & Development
@@ -18,6 +19,7 @@ A competency assessment specialist that designs and implements comprehensive com
 ## When to Use
 
 **Ideal scenarios:**
+
 - Designing competency frameworks for roles, job families, or entire organizations
 - Creating skills assessment tools and multi-rater evaluation processes
 - Conducting gap analyses to inform development planning and resource allocation
@@ -25,6 +27,7 @@ A competency assessment specialist that designs and implements comprehensive com
 - Supporting promotion decisions with objective competency data
 
 **Anti-patterns (when NOT to use):**
+
 - Performance termination decisions (legal/HR scope)
 - Compensation determination and salary banding
 - Clinical or psychological assessments
@@ -110,6 +113,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We need to assess our 15-person software development team for promotion decisions and 2025 training budget allocation. Roles range from junior to senior developers across frontend, backend, and full-stack. We want to evaluate both technical skills (coding quality, architecture, testing) and collaboration skills. We plan to use self-assessment, manager evaluation, and peer feedback. Timeline: Complete all assessments in 4 weeks with results calibrated for Q1 planning.
 
 ### Output
@@ -118,7 +122,7 @@ We need to assess our 15-person software development team for promotion decision
 
 **Competency Model:**
 
-*Technical Competencies:*
+_Technical Competencies:_
 
 1. **Code Quality and Craftsmanship**
    - Writing clean, maintainable, and well-documented code
@@ -135,7 +139,7 @@ We need to assess our 15-person software development team for promotion decision
    - Debugging effectiveness and root cause analysis
    - Quality mindset throughout development lifecycle
 
-*Collaboration Competencies:*
+_Collaboration Competencies:_
 
 4. **Communication and Knowledge Sharing**
    - Technical communication clarity (written and verbal)
@@ -149,34 +153,38 @@ We need to assess our 15-person software development team for promotion decision
 
 **Proficiency Scale (1-5):**
 
-| Level | Definition | Code Quality Example |
-|-------|------------|---------------------|
-| 1 - Learning | Building foundational skills | Writes functional code requiring significant review guidance |
-| 2 - Developing | Growing independence | Produces consistent quality with occasional guidance on edge cases |
-| 3 - Competent | Fully independent | Independently delivers clean code and provides valuable review feedback |
-| 4 - Advanced | Team multiplier | Sets quality standards, improves team practices, mentors others |
-| 5 - Expert | Organization influence | Shapes engineering culture, drives organization-wide standards |
+| Level          | Definition                   | Code Quality Example                                                    |
+| -------------- | ---------------------------- | ----------------------------------------------------------------------- |
+| 1 - Learning   | Building foundational skills | Writes functional code requiring significant review guidance            |
+| 2 - Developing | Growing independence         | Produces consistent quality with occasional guidance on edge cases      |
+| 3 - Competent  | Fully independent            | Independently delivers clean code and provides valuable review feedback |
+| 4 - Advanced   | Team multiplier              | Sets quality standards, improves team practices, mentors others         |
+| 5 - Expert     | Organization influence       | Shapes engineering culture, drives organization-wide standards          |
 
-*Role-Level Expectations:*
+_Role-Level Expectations:_
+
 - Junior Developer: Level 2 average, Level 3 in specialty area
 - Mid-level Developer: Level 3 average, Level 4 in specialty area
 - Senior Developer: Level 4 average, Level 5 in specialty area
 
 **Assessment Tools:**
 
-*Self-Assessment Questionnaire (20 minutes):*
+_Self-Assessment Questionnaire (20 minutes):_
+
 - Rating scale with behavioral examples for reference
 - Evidence collection prompts ("Describe a recent example...")
 - Confidence rating alongside self-assessment
 - Development interest areas identification
 
-*Manager Evaluation Form (15 minutes per person):*
+_Manager Evaluation Form (15 minutes per person):_
+
 - Same competency framework with project-specific evidence requirements
 - Promotion readiness assessment (ready now, 6 months, 12+ months)
 - Potential assessment for stretch opportunities
 - Recommended development priorities (top 3)
 
-*Peer Feedback Template (10 minutes per peer, 2-3 peers):*
+_Peer Feedback Template (10 minutes per peer, 2-3 peers):_
+
 - Collaboration-focused questions with specific behavior examples
 - Strengths to leverage (what this person does exceptionally)
 - Growth observations (areas for continued development)
@@ -184,18 +192,20 @@ We need to assess our 15-person software development team for promotion decision
 
 **Gap Analysis Methodology:**
 
-*Individual Analysis:*
+_Individual Analysis:_
+
 - Calculate weighted average across rater types (Self: 20%, Manager: 50%, Peers: 30%)
 - Compare current level to role-level expectations
 - Identify gaps greater than 0.5 points as development priorities
 - Consider trajectory (improving, stable, declining)
 
-*Team Analysis:*
+_Team Analysis:_
+
 - Aggregate heatmap showing team strengths and collective gaps
 - Identify competency areas requiring team-level investment
 - Benchmark against industry standards where available
 
-*Priority Matrix:*
+_Priority Matrix:_
 | Gap Size | Role Criticality | Priority |
 |----------|-----------------|----------|
 | Large (1+) | Core to role | Immediate |
@@ -205,14 +215,15 @@ We need to assess our 15-person software development team for promotion decision
 
 **Development Recommendations Framework:**
 
-*By Competency Area:*
+_By Competency Area:_
+
 - Code Quality gaps: Pair programming assignments, code review mentorship, clean code study group
 - Architecture gaps: Design review participation, system design exercises, technical book club
 - Testing gaps: TDD training, testing framework deep-dives, quality engineering pairing
 - Communication gaps: Documentation assignments, tech talk presentations, writing workshops
 - Collaboration gaps: Cross-team projects, facilitation training, feedback practice
 
-*Recommendation Template:*
+_Recommendation Template:_
 Each gap generates: Learning resource, Practice opportunity, Mentor assignment, Success metric
 
 **Implementation Timeline:**
@@ -224,6 +235,7 @@ Each gap generates: Learning resource, Practice opportunity, Mentor assignment, 
 - Week 4 (end): Individual results delivered with development planning conversations
 
 **Deliverables:**
+
 - Individual competency reports with gap analysis and recommendations
 - Team competency heatmap for training investment decisions
 - Promotion readiness summary for Q1 planning

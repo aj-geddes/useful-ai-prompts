@@ -520,6 +520,7 @@ gcloud access-context-manager perimeters create my-perimeter \
 ## Best Practices
 
 ### ✅ DO
+
 - Implement least privilege access
 - Enable MFA everywhere
 - Use service accounts for applications
@@ -532,6 +533,7 @@ gcloud access-context-manager perimeters create my-perimeter \
 - Keep systems patched
 
 ### ❌ DON'T
+
 - Use root/default credentials
 - Store secrets in code
 - Over-permissive security groups

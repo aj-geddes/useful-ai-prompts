@@ -22,4 +22,4 @@ Expert communication strategies for professional and personal effectiveness.
 
 ---
 
-*Professional communication prompts for leaders, managers, and team members.*
+_Professional communication prompts for leaders, managers, and team members._

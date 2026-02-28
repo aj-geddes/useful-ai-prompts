@@ -1,6 +1,7 @@
 # Strategic Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-strategic`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A strategic planning specialist that helps you develop comprehensive, executable
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing multi-year corporate or business unit strategies
 - Planning market expansion or transformation initiatives
 - Positioning for competitive advantage in evolving markets
@@ -25,6 +27,7 @@ A strategic planning specialist that helps you develop comprehensive, executable
 - Evaluating and selecting between major strategic options
 
 **Anti-patterns (Don't Use For):**
+
 - Operational planning and budgeting
 - Project-level planning and execution
 - Tactical marketing campaigns
@@ -150,13 +153,14 @@ Success metrics: Double revenue in 3 years ($60M to $120M), become recognized le
 
 **Situation Analysis**
 
-*Market Assessment*
+_Market Assessment_
+
 - Global project management software market: $8B, growing at 10.5% annually
 - Key trend: Shift toward AI-powered, mobile-first solutions
 - Enterprise segment: Fastest growing at 15% annually, highest margins
 - Consolidation pressure: Top 3 players hold 45% share, aggressive M&A activity
 
-*Competitive Position Analysis*
+_Competitive Position Analysis_
 | Factor | Your Position | Top Competitors | Gap/Advantage |
 |--------|---------------|-----------------|---------------|
 | Market Share | 3% (#4) | 12-18% each | Significant gap |
@@ -166,12 +170,14 @@ Success metrics: Double revenue in 3 years ($60M to $120M), become recognized le
 | International | 10% revenue | 40-60% | Significant gap |
 | Mobile Experience | Good | Average | Opportunity |
 
-*Internal Capability Assessment*
+_Internal Capability Assessment_
+
 - Strengths: Engineering excellence, product velocity, customer love, strong culture
 - Gaps: Enterprise sales motion, international operations, marketing reach, executive relationships
 - Assets: $50M capital, strong NPS for referral growth, developer talent
 
-*Strategic Issues*
+_Strategic Issues_
+
 1. How to differentiate in increasingly commoditized market?
 2. Where to focus limited resources for maximum impact?
 3. How to compete with better-funded competitors?
@@ -179,28 +185,32 @@ Success metrics: Double revenue in 3 years ($60M to $120M), become recognized le
 
 **Strategic Options Analysis**
 
-*Option A: Niche Dominance*
+_Option A: Niche Dominance_
+
 - Focus: Become #1 in "simple project management" segment
 - Investment: $15M over 3 years
 - Pros: Lower risk, leverage existing strengths, defensible position
 - Cons: Limited market size ($1B), vulnerable to segment disruption
 - Expected Outcome: $80M revenue, #1 in niche, 8% overall share
 
-*Option B: Enterprise Expansion*
+_Option B: Enterprise Expansion_
+
 - Focus: Build enterprise capabilities, compete directly for large accounts
 - Investment: $35M over 3 years
 - Pros: Larger opportunity, higher margins, prestigious customers
 - Cons: High execution risk, requires new capabilities, expensive sales motion
 - Expected Outcome: $100M revenue, 50 enterprise logos, 5% overall share
 
-*Option C: Mobile-First Global Leader (Recommended)*
+_Option C: Mobile-First Global Leader (Recommended)_
+
 - Focus: Become definitive mobile project management platform with selective enterprise features
 - Investment: $35M over 3 years
 - Pros: Differentiated position, leverages strengths, large addressable market
 - Cons: Requires international expansion, AI investment, mobile excellence
 - Expected Outcome: $120M revenue, #1 mobile, 6% overall share
 
-*Option D: Geographic Focus*
+_Option D: Geographic Focus_
+
 - Focus: Dominate European market before expanding elsewhere
 - Investment: $25M over 3 years
 - Pros: Concentrated resources, data privacy advantage, less competition
@@ -209,10 +219,11 @@ Success metrics: Double revenue in 3 years ($60M to $120M), become recognized le
 
 **Recommended Strategy: Mobile-First Global Leader**
 
-*Strategic Positioning*
+_Strategic Positioning_
 "The most powerful project management platform that fits in your pocket - AI-powered intelligence, enterprise-ready security, designed for teams that work from anywhere."
 
-*Why This Strategy*
+_Why This Strategy_
+
 1. Leverages existing UX advantage (NPS 68)
 2. Addresses underserved market need (mobile-first work)
 3. Creates defensible differentiation vs. desktop-first competitors
@@ -221,119 +232,136 @@ Success metrics: Double revenue in 3 years ($60M to $120M), become recognized le
 
 **Strategic Pillars**
 
-*Pillar 1: Mobile Excellence (35% of resources)*
+_Pillar 1: Mobile Excellence (35% of resources)_
 Objective: Become definitive mobile PM solution
 
 Key Initiatives:
+
 - Complete mobile app redesign with offline-first architecture
 - AI-powered mobile assistant for quick updates and insights
 - Voice-enabled task management and status updates
 - Cross-device seamless experience
 
 Success Metrics:
+
 - 60% of users primarily mobile by Year 3
 - #1 mobile app store ratings in category
 - Mobile-first feature parity with desktop
 
-*Pillar 2: International Expansion (30% of resources)*
+_Pillar 2: International Expansion (30% of resources)_
 Objective: 50% of revenue from international by Year 3
 
 Key Initiatives:
+
 - UK market entry Year 1, Germany/France Year 2
 - Localized product and go-to-market
 - European data center for GDPR compliance
 - Regional partnerships and channel development
 
 Success Metrics:
+
 - 50% international revenue by Year 3
 - Top 3 position in UK market
 - 1,000+ European customers
 
-*Pillar 3: Selective Enterprise (20% of resources)*
+_Pillar 3: Selective Enterprise (20% of resources)_
 Objective: Win mobile-first enterprise segment
 
 Key Initiatives:
+
 - SOC 2 Type II and ISO 27001 certification
 - Advanced admin, SSO, and compliance features
 - Enterprise-grade mobile security
 - Dedicated enterprise success team
 
 Success Metrics:
+
 - 100 enterprise customers by Year 3
 - $10M+ ARR from enterprise segment
 - 95% enterprise retention rate
 
-*Pillar 4: AI-Powered Intelligence (15% of resources)*
+_Pillar 4: AI-Powered Intelligence (15% of resources)_
 Objective: Differentiate through intelligent automation
 
 Key Initiatives:
+
 - AI project insights and recommendations
 - Automated status updates and reporting
 - Smart resource allocation suggestions
 - Predictive project risk detection
 
 Success Metrics:
+
 - 50% of users engage with AI features
 - 25% reduction in manual reporting time
 - AI as top-3 purchase reason
 
 **Implementation Roadmap**
 
-*Year 1: Foundation*
+_Year 1: Foundation_
 
 Q1-Q2:
+
 - Mobile app redesign and beta launch
 - SOC 2 certification process initiated
 - UK market entry preparation
 - AI feature development begins
 
 Q3-Q4:
+
 - Mobile app GA with AI features
 - UK market launch
 - Enterprise features beta
 - First AI-powered insights released
 
 Year 1 Targets:
+
 - $70M revenue (+17%)
 - 40% mobile DAU
 - 100 UK customers
 - 20 enterprise pilots
 
-*Year 2: Acceleration*
+_Year 2: Acceleration_
 
 Q1-Q2:
+
 - Germany/France market entry
 - Enterprise features GA
 - Advanced AI analytics launch
 - Mobile-first marketing campaign
 
 Q3-Q4:
+
 - International expansion acceleration
 - Enterprise sales team scale-up
 - AI assistant public launch
 - Partnership program launch
 
 Year 2 Targets:
+
 - $95M revenue (+36%)
 - 50% mobile DAU
 - 500 international customers
 - 50 enterprise customers
 
-*Year 3: Leadership*
+_Year 3: Leadership_
 
 Q1-Q2:
+
 - Additional European markets
 - Enterprise platform maturity
 - AI-powered automation suite
 - Strategic acquisitions evaluation
 
 Q3-Q4:
+
 - Market leadership claims
 - International profitability
 - Next-gen mobile experience
 - Year 4 strategy development
 
 Year 3 Targets:
+
 - $120M revenue (+26%)
 - 60% mobile DAU
 - 1,000+ international customers
@@ -341,7 +369,7 @@ Year 3 Targets:
 
 **Success Metrics Framework**
 
-*Business KPIs*
+_Business KPIs_
 | Metric | Current | Year 1 | Year 2 | Year 3 |
 |--------|---------|--------|--------|--------|
 | Revenue | $60M | $70M | $95M | $120M |
@@ -350,7 +378,7 @@ Year 3 Targets:
 | Mobile DAU % | 25% | 40% | 50% | 60% |
 | NPS | 68 | >65 | >65 | >70 |
 
-*Strategic KPIs*
+_Strategic KPIs_
 | Metric | Target | Measurement |
 |--------|--------|-------------|
 | Mobile app rating | >4.7 stars | App stores |
@@ -361,18 +389,21 @@ Year 3 Targets:
 
 **Governance and Adaptation**
 
-*Strategic Review Cadence*
+_Strategic Review Cadence_
+
 - Quarterly: Leadership strategy review with metrics
 - Semi-annual: Board strategy deep-dive
 - Annual: Full strategy refresh and Year+1 planning
 
-*Adaptation Triggers*
+_Adaptation Triggers_
+
 - Market share change >2% (up or down): Strategy review
 - New competitor entry in mobile: Competitive response
 - AI technology breakthrough: Acceleration opportunity
 - Revenue growth <15%: Strategy reassessment
 
-*Decision Framework*
+_Decision Framework_
+
 - Initiatives <$500K: VP approval
 - Initiatives $500K-$2M: Executive team approval
 - Initiatives >$2M: Board review

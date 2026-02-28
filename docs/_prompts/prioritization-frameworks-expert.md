@@ -3,26 +3,27 @@ title: Prioritization Frameworks Expert
 slug: prioritization-frameworks-expert
 category: decision-making/strategic
 tags:
-- prioritization
-- resource-management
-- strategic-planning
-- efficiency
-- RICE-scoring
+  - prioritization
+  - resource-management
+  - strategic-planning
+  - efficiency
+  - RICE-scoring
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Apply proven prioritization frameworks to rank tasks, projects, or initiatives
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Apply proven prioritization frameworks to rank tasks, projects, or initiatives
   based on value, urgency, and strategic importance. Helps teams focus limited resources
   on highest-impact activities using methods like Eisenhower Matrix, RICE scoring,
   and MoSCoW.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Overwhelmed by too many competing priorities
-- Need to cut scope or defer work
-- Starting a planning cycle with long backlog
-- Aligning team on what matters most
+  - Ideal Scenarios:**
+  - Overwhelmed by too many competing priorities
+  - Need to cut scope or defer work
+  - Starting a planning cycle with long backlog
+  - Aligning team on what matters most
 complexity: simple
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Effective prioritization requires saying "no" or "not now" to good ideas in favo
 
 <input_handling>
 Required:
+
 - Items to prioritize (tasks, projects, initiatives)
 - Main constraint (time, budget, people)
 - Definition of value or success
 
 Optional (will infer if not provided):
+
 - Best framework for the situation
 - Scoring criteria weights
 - Time horizon for prioritization
-</input_handling>
+  </input_handling>
 
 <task>
 Apply appropriate prioritization framework to rank items and create action plan.
@@ -55,28 +58,31 @@ Apply appropriate prioritization framework to rank items and create action plan.
 3. Create visual priority map or matrix
 4. Develop recommended sequence with timeline
 5. Identify items to eliminate or defer
-</task>
+   </task>
 
 <output_specification>
 **Prioritization Analysis**
+
 - Format: Framework application with visual matrix and action plan
 - Length: 600-900 words
 - Must include: Framework explanation, priority matrix, recommended sequence, defer/eliminate list
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Selects framework appropriate to the decision type
 - Provides clear, distinguishing scoring
 - Creates actionable sequence, not just ranking
 - Identifies items that should be eliminated entirely
 
 Avoid:
+
 - Applying wrong framework for the situation
 - Too many "high priority" items (defeats purpose)
 - Missing the hard decisions about what NOT to do
 - Theoretical ranking without capacity consideration
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maximum 30% of items should be "high priority"

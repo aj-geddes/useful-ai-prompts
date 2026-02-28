@@ -3,25 +3,26 @@ title: Vendor Selection Process Expert
 slug: vendor-selection-process-expert
 category: decision-making/procurement
 tags:
-- vendor-selection
-- procurement
-- supplier-evaluation
-- rfp-process
+  - vendor-selection
+  - procurement
+  - supplier-evaluation
+  - rfp-process
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Guide systematic vendor selection using objective criteria, structured
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Guide systematic vendor selection using objective criteria, structured
   evaluation, and risk assessment to choose the best supplier. Creates transparent
   comparison frameworks with weighted scoring, total cost of ownership analysis, and
   negotiation strategies for defensible procurement decisions.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Selecting between multiple vendor proposals or RFP responses
-- Creating RFP evaluation criteria and scoring frameworks
-- Making final vendor selection decisions with stakeholder buy-in
-- Documenting vendor selection rationale for compliance or audit
+  - Ideal scenarios:**
+  - Selecting between multiple vendor proposals or RFP responses
+  - Creating RFP evaluation criteria and scoring frameworks
+  - Making final vendor selection decisions with stakeholder buy-in
+  - Documenting vendor selection rationale for compliance or audit
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Vendor selection decisions have long-term implications for cost, operations, and
 
 <input_handling>
 Required inputs:
+
 - Product or service being procured
 - Vendors being considered (2-5 vendors ideal)
 - Key requirements and evaluation priorities
 
 Infer if not provided:
+
 - Evaluation weights (assume balanced approach)
 - Contract duration (assume 3-year view for TCO)
 - Implementation complexity (assess from solution type)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a structured vendor selection analysis with scoring and recommendation.
@@ -60,6 +63,7 @@ Step 5: Deliver selection recommendation with negotiation guidance
 Format: Scored comparison matrix with recommendation
 Length: 800-1100 words
 Structure:
+
 - Evaluation criteria table with weights and descriptions
 - Vendor comparison matrix with weighted scores
 - Total cost of ownership (3-year) breakdown
@@ -68,10 +72,11 @@ Structure:
 - Recommendation with rationale
 - Negotiation points
 - Next steps
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Use criteria relevant to actual business needs
 - Provide transparent, evidence-based scoring
 - Include total cost of ownership, not just license price
@@ -79,12 +84,13 @@ Excellent outputs:
 - Identify negotiation leverage points
 
 Avoid:
+
 - Over-weighting price without value consideration
 - Ignoring vendor stability and long-term viability
 - Missing implementation risk assessment
 - Recommendations without negotiation leverage points
 - Generic criteria not tailored to specific procurement
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Note when scoring requires vendor validation or reference checks

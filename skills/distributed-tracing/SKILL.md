@@ -23,7 +23,7 @@ Set up distributed tracing infrastructure with Jaeger or Zipkin to track request
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 services:
   jaeger:
     image: jaegertracing/all-in-one:latest
@@ -43,27 +43,27 @@ networks:
 
 ```javascript
 // tracing.js
-const initTracer = require('jaeger-client').initTracer;
-const opentracing = require('opentracing');
+const initTracer = require("jaeger-client").initTracer;
+const opentracing = require("opentracing");
 
 const initJaegerTracer = (serviceName) => {
   const config = {
     serviceName: serviceName,
     sampler: {
-      type: 'const',
-      param: 1
+      type: "const",
+      param: 1,
     },
     reporter: {
       logSpans: true,
-      agentHost: process.env.JAEGER_AGENT_HOST || 'localhost',
-      agentPort: process.env.JAEGER_AGENT_PORT || 6831
-    }
+      agentHost: process.env.JAEGER_AGENT_HOST || "localhost",
+      agentPort: process.env.JAEGER_AGENT_PORT || 6831,
+    },
   };
 
   return initTracer(config, {});
 };
 
-const tracer = initJaegerTracer('api-service');
+const tracer = initJaegerTracer("api-service");
 module.exports = { tracer };
 ```
 
@@ -71,27 +71,24 @@ module.exports = { tracer };
 
 ```javascript
 // middleware.js
-const { tracer } = require('./tracing');
-const opentracing = require('opentracing');
+const { tracer } = require("./tracing");
+const opentracing = require("opentracing");
 
 const tracingMiddleware = (req, res, next) => {
-  const wireCtx = tracer.extract(
-    opentracing.FORMAT_HTTP_HEADERS,
-    req.headers
-  );
+  const wireCtx = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers);
 
   const span = tracer.startSpan(req.path, {
     childOf: wireCtx,
     tags: {
       [opentracing.Tags.SPAN_KIND]: opentracing.Tags.SPAN_KIND_RPC_SERVER,
       [opentracing.Tags.HTTP_METHOD]: req.method,
-      [opentracing.Tags.HTTP_URL]: req.url
-    }
+      [opentracing.Tags.HTTP_URL]: req.url,
+    },
   });
 
   req.span = span;
 
-  res.on('finish', () => {
+  res.on("finish", () => {
     span.setTag(opentracing.Tags.HTTP_STATUS_CODE, res.statusCode);
     span.finish();
   });
@@ -159,9 +156,9 @@ def get_user(user_id):
 
 ```javascript
 // propagation.js
-const axios = require('axios');
-const { tracer } = require('./tracing');
-const opentracing = require('opentracing');
+const axios = require("axios");
+const { tracer } = require("./tracing");
+const opentracing = require("opentracing");
 
 async function callDownstreamService(span, url, data) {
   const headers = {};
@@ -171,13 +168,13 @@ async function callDownstreamService(span, url, data) {
 
   try {
     const response = await axios.post(url, data, { headers });
-    span.setTag('downstream.success', true);
+    span.setTag("downstream.success", true);
     return response.data;
   } catch (error) {
     span.setTag(opentracing.Tags.ERROR, true);
     span.log({
-      event: 'error',
-      message: error.message
+      event: "error",
+      message: error.message,
     });
     throw error;
   }
@@ -190,26 +187,27 @@ module.exports = { callDownstreamService };
 
 ```javascript
 // zipkin-setup.js
-const CLSContext = require('zipkin-context-cls');
-const { Tracer, BatchRecorder, HttpLogger } = require('zipkin');
-const zipkinMiddleware = require('zipkin-instrumentation-express').expressMiddleware;
+const CLSContext = require("zipkin-context-cls");
+const { Tracer, BatchRecorder, HttpLogger } = require("zipkin");
+const zipkinMiddleware =
+  require("zipkin-instrumentation-express").expressMiddleware;
 
 const recorder = new BatchRecorder({
   logger: new HttpLogger({
-    endpoint: 'http://localhost:9411/api/v2/spans',
-    headers: { 'Content-Type': 'application/json' }
-  })
+    endpoint: "http://localhost:9411/api/v2/spans",
+    headers: { "Content-Type": "application/json" },
+  }),
 });
 
-const ctxImpl = new CLSContext('zipkin');
+const ctxImpl = new CLSContext("zipkin");
 const tracer = new Tracer({ recorder, ctxImpl });
 
 module.exports = {
   tracer,
   zipkinMiddleware: zipkinMiddleware({
     tracer,
-    serviceName: 'api-service'
-  })
+    serviceName: "api-service",
+  }),
 };
 ```
 
@@ -242,6 +240,7 @@ def find_slow_traces(service_name, min_duration_ms=1000):
 ## Best Practices
 
 ### ✅ DO
+
 - Sample appropriately for your traffic volume
 - Propagate trace context across services
 - Add meaningful span tags
@@ -252,6 +251,7 @@ def find_slow_traces(service_name, min_duration_ms=1000):
 - Keep instrumentation lightweight
 
 ### ❌ DON'T
+
 - Sample 100% in production
 - Skip trace context propagation
 - Log sensitive data in spans

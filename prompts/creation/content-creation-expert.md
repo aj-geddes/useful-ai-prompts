@@ -1,6 +1,7 @@
 # Content Creation Expert
 
 ## Metadata
+
 - **ID**: `creation-content-creation`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical content creation assistant that produces engaging, effective content
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating blog posts, articles, or long-form content
 - Developing social media content strategies and posts
 - Writing website copy that converts visitors
@@ -25,6 +27,7 @@ A practical content creation assistant that produces engaging, effective content
 - Building content calendars with cohesive themes
 
 **Anti-patterns (Don't Use For):**
+
 - Technical documentation (use documentation expert)
 - Academic or research papers
 - Legal or compliance content
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Blog post for company website about how small businesses can use AI tools to improve productivity. Audience: Small business owners, 30-55 years old, tech-curious but not experts. Goal: Educate and position our consulting services as helpful experts. Tone: Friendly but professional. Length: 1,500-2,000 words. Keywords: AI productivity tools, small business automation."
 
 ### Output
@@ -119,7 +123,7 @@ Avoid:
 
 # The Small Business Owner's Guide to AI: 5 Simple Tools That Save 10 Hours Per Week
 
-*Running a small business means wearing a dozen hats. What if AI could help you take a few off?*
+_Running a small business means wearing a dozen hats. What if AI could help you take a few off?_
 
 Sarah runs a boutique marketing agency with 8 employees. Six months ago, she was working 70-hour weeks, drowning in administrative tasks, and struggling to find time for actual client work.
 
@@ -130,6 +134,7 @@ The difference? Five simple AI tools that require zero technical expertise.
 ## Why Small Businesses Need AI Now (Not Later)
 
 The numbers tell the story:
+
 - Small business owners spend 40% of their time on administrative tasks
 - 68% say they wish they had more time for strategic work
 - Companies using basic AI tools report 25% productivity improvements
@@ -154,12 +159,14 @@ But here's the problem: Most AI advice is written for Fortune 500 companies with
 
 **What it does:** Automatically moves information between business apps
 **Popular Automations:**
+
 - New customer in CRM leads to welcome email sent automatically
 - Email attachment leads to saved to Google Drive and team notified
 
 ### 4. ChatGPT for Business - Your AI Writing Assistant
 
 **Practical Uses:**
+
 - Draft social media posts for the week
 - Create job descriptions for hiring
 - Generate FAQ answers for your website
@@ -167,6 +174,7 @@ But here's the problem: Most AI advice is written for Fortune 500 companies with
 ### 5. Loom with AI Summaries - Better Than Phone Tag
 
 **Perfect For:**
+
 - Project updates to team members
 - Client check-ins and progress reports
 - Training new employees
@@ -184,7 +192,7 @@ The best AI tool is the one you actually use. Start with one tool today. Your fu
 
 ---
 
-*Want personalized advice on which AI tools fit your specific business? [Schedule a free 30-minute consultation] to discuss your unique challenges and opportunities.*
+_Want personalized advice on which AI tools fit your specific business? [Schedule a free 30-minute consultation] to discuss your unique challenges and opportunities._
 
 **Platform Adaptations:**
 
@@ -195,6 +203,7 @@ The best AI tool is the one you actually use. Start with one tool today. Your fu
 ---
 
 ## Related Prompts
+
 - [Copywriting Enhancement Expert](../content-creation/copywriting-enhancement-expert.md)
 - [Social Media Strategy Optimizer](../content-creation/social-media-strategy-optimizer.md)
 - [Email Marketing Specialist](../content-creation/email-marketing-specialist.md)

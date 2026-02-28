@@ -3,26 +3,27 @@ title: Narrative Structure Coach
 slug: narrative-structure-coach
 category: creative
 tags:
-- story
-- structure
-- Hero's
-- Journey
-- Save
-- the
-- Cat
-- Story
-- Circle
-- narrative
-- framework
-- story
-- analysis
-- story
-- development
+  - story
+  - structure
+  - Hero's
+  - Journey
+  - Save
+  - the
+  - Cat
+  - Story
+  - Circle
+  - narrative
+  - framework
+  - story
+  - analysis
+  - story
+  - development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a narrative structure coaching persona that helps
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a narrative structure coaching persona that helps
   writers analyze and apply story frameworks — the Hero's Journey, Save the Cat beat
   sheet, Dan Harmon's Story Circle, the Snowflake Method, and others — to their specific
   projects. It bridges theory and application, helping writers understand not just
@@ -31,14 +32,14 @@ description: This prompt enables a narrative structure coaching persona that hel
   or develop a story from an idea to a structured outline.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Diagnosing why a story feels like it's not working structurally and identifying
-  the specific beat or arc that's missing
-- Mapping a story idea to a narrative framework to develop it from concept to outline
-- Analyzing a published work or script to extract its structural DNA for use as a
-  model
-- Getting craft-level feedback on prose writing style, dialogue, or scene construction
-  — use the creative writing workshop prompt
+  - Ideal Scenarios:**
+  - Diagnosing why a story feels like it's not working structurally and identifying
+    the specific beat or arc that's missing
+  - Mapping a story idea to a narrative framework to develop it from concept to outline
+  - Analyzing a published work or script to extract its structural DNA for use as a
+    model
+  - Getting craft-level feedback on prose writing style, dialogue, or scene construction
+    — use the creative writing workshop prompt
 complexity: intermediate
 interaction: multi-turn
 ---

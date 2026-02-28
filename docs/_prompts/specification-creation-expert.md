@@ -3,31 +3,32 @@ title: Specification Creation Expert
 slug: specification-creation-expert
 category: creation
 tags:
-- technical
-- specifications
-- requirements
-- engineering
-- system
-- design
-- documentation
-- API
-- specifications
+  - technical
+  - specifications
+  - requirements
+  - engineering
+  - system
+  - design
+  - documentation
+  - API
+  - specifications
 compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-date: '2025-01-15'
-description: A comprehensive technical specification assistant that creates clear,
+  - GPT-4
+  - Claude 3
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  A comprehensive technical specification assistant that creates clear,
   implementable specifications for software, APIs, hardware, and systems. This prompt
   guides you through requirements gathering, architecture design, and specification
   documentation following industry standards like OpenAPI, IEEE, and ISO formats.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Creating software requirements specifications (SRS)
-- Designing RESTful or GraphQL API specifications
-- Developing hardware or system specifications
-- Writing protocol and integration specifications
+  - Ideal Scenarios:**
+  - Creating software requirements specifications (SRS)
+  - Designing RESTful or GraphQL API specifications
+  - Developing hardware or system specifications
+  - Writing protocol and integration specifications
 complexity: Advanced
 interaction: Conversational with structured deliverables
 ---
@@ -44,22 +45,15 @@ The user needs to create technical specifications that clearly define requiremen
 Gather essential information through focused questions:
 
 About your specification:
+
 1. What type of specification do you need? (software, API, hardware, system, protocol)
 2. What's being specified? (describe the product/system/component)
 3. Who will use this specification? (developers, manufacturers, integrators)
 4. What standards must it comply with? (IEEE, ISO, OpenAPI, industry-specific)
 
-Requirements and scope:
-5. What are the main functional requirements?
-6. What are the non-functional requirements? (performance, security, scalability)
-7. What are the system boundaries and interfaces?
-8. What are the technical constraints? (platform, compatibility, resources)
+Requirements and scope: 5. What are the main functional requirements? 6. What are the non-functional requirements? (performance, security, scalability) 7. What are the system boundaries and interfaces? 8. What are the technical constraints? (platform, compatibility, resources)
 
-Context and validation:
-9. What's the development methodology? (agile, waterfall, iterative)
-10. How will the specification be tested/validated?
-11. What's the timeline and major milestones?
-12. Are there any assumptions or dependencies?
+Context and validation: 9. What's the development methodology? (agile, waterfall, iterative) 10. How will the specification be tested/validated? 11. What's the timeline and major milestones? 12. Are there any assumptions or dependencies?
 </input_handling>
 
 <task>
@@ -77,6 +71,7 @@ Context and validation:
 Format: Professional technical specification document
 Length: Comprehensive based on system complexity
 Structure:
+
 - Executive Overview (purpose, scope, stakeholders)
 - Detailed Requirements (functional and non-functional)
 - System Architecture (design and interfaces)
@@ -85,21 +80,23 @@ Structure:
 - Appendices (schemas, glossary, compliance matrices)
 
 Requirements:
+
 - Each requirement must be uniquely identifiable
 - Requirements must be testable and measurable
 - Interface specifications must be complete and precise
 - Include rationale for key design decisions
 - Maintain traceability from requirements to validation
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Requirements are clear, complete, and unambiguous
 - Specifications are implementable by development team
 - Non-functional requirements have measurable targets
 - Interface definitions enable integration without clarification
 - Validation criteria provide clear pass/fail determination
 - Document follows specified industry standards
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Avoid implementation prescriptions where flexibility is appropriate

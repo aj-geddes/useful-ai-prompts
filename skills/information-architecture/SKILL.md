@@ -208,34 +208,34 @@ class DiscoverabilityStrategy {
   designSearchFunctionality() {
     return {
       search_box: {
-        location: 'Header, prominent placement',
-        placeholder: 'Clear example text',
+        location: "Header, prominent placement",
+        placeholder: "Clear example text",
         autocomplete: true,
-        filters: ['Category', 'Price', 'Rating']
+        filters: ["Category", "Price", "Rating"],
       },
       search_results: {
-        ranking: 'Relevance + popularity + freshness',
-        facets: 'Allow filtering results',
-        snippets: 'Show preview and highlights'
+        ranking: "Relevance + popularity + freshness",
+        facets: "Allow filtering results",
+        snippets: "Show preview and highlights",
       },
       zero_results: {
-        suggestions: 'Show did you mean, popular searches',
-        related: 'Show related categories'
-      }
+        suggestions: "Show did you mean, popular searches",
+        related: "Show related categories",
+      },
     };
   }
 
   designBrowsing() {
     return {
       category_pages: {
-        structure: 'Subcategories + featured items',
-        sorting: 'By popularity, newest, price',
-        pagination: 'Load more or paginate'
+        structure: "Subcategories + featured items",
+        sorting: "By popularity, newest, price",
+        pagination: "Load more or paginate",
       },
       related_items: {
-        placement: 'Product page, cart page',
-        logic: 'Similar category, trending, recommended'
-      }
+        placement: "Product page, cart page",
+        logic: "Similar category, trending, recommended",
+      },
     };
   }
 }
@@ -244,6 +244,7 @@ class DiscoverabilityStrategy {
 ## Best Practices
 
 ### ✅ DO
+
 - Start with user research
 - Conduct card sorting studies
 - Use user mental models
@@ -256,6 +257,7 @@ class DiscoverabilityStrategy {
 - Provide search functionality
 
 ### ❌ DON'T
+
 - Impose organizational structure without research
 - Use jargon or technical terms
 - Make hierarchy too deep

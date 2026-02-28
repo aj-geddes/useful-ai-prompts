@@ -3,22 +3,23 @@ title: Customer Journey Mapper
 slug: customer-journey-mapper
 category: customer service
 tags:
-- journey
-- mapping
-- CX
-- design
-- touchpoint
-- analysis
-- friction
-- points
-- moments
-- of
-- truth
+  - journey
+  - mapping
+  - CX
+  - design
+  - touchpoint
+  - analysis
+  - friction
+  - points
+  - moments
+  - of
+  - truth
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a customer journey mapping specialist who visualizes
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a customer journey mapping specialist who visualizes
   the end-to-end customer experience across all touchpoints, channels, and interactions
   — from first awareness through renewal and advocacy. The specialist identifies friction
   points, emotional highs and lows, moments of truth, and systemic gaps that drive
@@ -27,12 +28,12 @@ description: This prompt activates a customer journey mapping specialist who vis
   teams.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Redesigning a customer onboarding experience with high early-stage churn
-- Preparing a CX improvement roadmap for a QBR or board presentation
-- Diagnosing why a particular customer segment has lower NPS than others
-- Mapping a single interaction or support ticket — journey mapping requires the full
-  lifecycle view
+  - Ideal Scenarios:**
+  - Redesigning a customer onboarding experience with high early-stage churn
+  - Preparing a CX improvement roadmap for a QBR or board presentation
+  - Diagnosing why a particular customer segment has lower NPS than others
+  - Mapping a single interaction or support ticket — journey mapping requires the full
+    lifecycle view
 complexity: advanced
 interaction: multi-turn
 ---

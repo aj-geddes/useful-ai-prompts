@@ -206,7 +206,7 @@ proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=api_cache:10m max_size=1g
 
 ```yaml
 # AWS SAM template for API Gateway
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 
 Resources:
@@ -224,8 +224,8 @@ Resources:
                 - Authorization
       TracingEnabled: true
       MethodSettings:
-        - ResourcePath: '/*'
-          HttpMethod: '*'
+        - ResourcePath: "/*"
+          HttpMethod: "*"
           LoggingLevel: INFO
           DataTraceEnabled: true
           MetricsEnabled: true
@@ -240,7 +240,7 @@ Resources:
       Runtime: nodejs18.x
       Environment:
         Variables:
-          USER_SERVICE_URL: !Sub 'https://${UserServiceAlb}.elb.amazonaws.com'
+          USER_SERVICE_URL: !Sub "https://${UserServiceAlb}.elb.amazonaws.com"
       Events:
         GetUsers:
           Type: Api
@@ -354,29 +354,29 @@ services:
 ### 5. **Node.js Gateway Implementation**
 
 ```javascript
-const express = require('express');
-const httpProxy = require('express-http-proxy');
-const rateLimit = require('express-rate-limit');
-const jwt = require('jsonwebtoken');
+const express = require("express");
+const httpProxy = require("express-http-proxy");
+const rateLimit = require("express-rate-limit");
+const jwt = require("jsonwebtoken");
 
 const app = express();
 
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 60 * 1000,
-  max: 100
+  max: 100,
 });
 
 // JWT verification
 const verifyJwt = (req, res, next) => {
-  const token = req.headers['authorization']?.split(' ')[1];
-  if (!token) return res.status(401).json({ error: 'No token' });
+  const token = req.headers["authorization"]?.split(" ")[1];
+  if (!token) return res.status(401).json({ error: "No token" });
 
   try {
     jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch (err) {
-    res.status(403).json({ error: 'Invalid token' });
+    res.status(403).json({ error: "Invalid token" });
   }
 };
 
@@ -389,28 +389,36 @@ app.use((req, res, next) => {
 app.use(limiter);
 
 // User service proxy
-app.use('/api/users', verifyJwt, httpProxy('http://user-service:3000', {
-  proxyReqPathResolver: (req) => `/api/users${req.url}`,
-  userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
-    proxyRes.headers['X-Gateway'] = 'true';
-    return proxyResData;
-  }
-}));
+app.use(
+  "/api/users",
+  verifyJwt,
+  httpProxy("http://user-service:3000", {
+    proxyReqPathResolver: (req) => `/api/users${req.url}`,
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      proxyRes.headers["X-Gateway"] = "true";
+      return proxyResData;
+    },
+  }),
+);
 
 // Product service proxy
-app.use('/api/products', httpProxy('http://product-service:3001', {
-  proxyReqPathResolver: (req) => `/api/products${req.url}`
-}));
+app.use(
+  "/api/products",
+  httpProxy("http://product-service:3001", {
+    proxyReqPathResolver: (req) => `/api/products${req.url}`,
+  }),
+);
 
 // Health check
-app.get('/health', (req, res) => res.json({ status: 'ok' }));
+app.get("/health", (req, res) => res.json({ status: "ok" }));
 
-app.listen(8080, () => console.log('Gateway on port 8080'));
+app.listen(8080, () => console.log("Gateway on port 8080"));
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Centralize authentication at gateway level
 - Implement rate limiting globally
 - Add comprehensive logging
@@ -421,6 +429,7 @@ app.listen(8080, () => console.log('Gateway on port 8080'));
 - Use HTTPS in production
 
 ### ❌ DON'T
+
 - Expose backend service details
 - Skip request validation
 - Forget to log API usage
@@ -434,25 +443,27 @@ app.listen(8080, () => console.log('Gateway on port 8080'));
 
 ```javascript
 // Prometheus metrics
-const promClient = require('prom-client');
+const promClient = require("prom-client");
 
 const httpRequestDuration = new promClient.Histogram({
-  name: 'gateway_http_request_duration_seconds',
-  help: 'Duration of HTTP requests in seconds',
-  labelNames: ['method', 'route', 'status_code']
+  name: "gateway_http_request_duration_seconds",
+  help: "Duration of HTTP requests in seconds",
+  labelNames: ["method", "route", "status_code"],
 });
 
 const httpRequests = new promClient.Counter({
-  name: 'gateway_http_requests_total',
-  help: 'Total number of HTTP requests',
-  labelNames: ['method', 'route', 'status_code']
+  name: "gateway_http_requests_total",
+  help: "Total number of HTTP requests",
+  labelNames: ["method", "route", "status_code"],
 });
 
 app.use((req, res, next) => {
   const start = Date.now();
-  res.on('finish', () => {
+  res.on("finish", () => {
     const duration = (Date.now() - start) / 1000;
-    httpRequestDuration.labels(req.method, req.path, res.statusCode).observe(duration);
+    httpRequestDuration
+      .labels(req.method, req.path, res.statusCode)
+      .observe(duration);
     httpRequests.labels(req.method, req.path, res.statusCode).inc();
   });
   next();

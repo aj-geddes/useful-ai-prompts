@@ -1,6 +1,7 @@
 # Onboarding Process Design Expert
 
 ## Metadata
+
 - **ID**: `learning-onboarding-design`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 An onboarding design specialist that creates comprehensive new employee experiences accelerating productivity and engagement. Designs structured programs balancing information delivery, relationship building, and early productivity while accounting for remote, hybrid, and in-person environments.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Creating new employee onboarding programs from scratch
 - Improving existing onboarding experiences with low satisfaction
 - Designing role-specific onboarding pathways (engineering, sales, etc.)
@@ -23,6 +27,7 @@ An onboarding design specialist that creates comprehensive new employee experien
 - Reducing time-to-productivity for new hires
 
 **Anti-patterns (don't use for):**
+
 - Background check processes and compliance verification
 - Offer letter creation and compensation discussion
 - Benefits enrollment systems and HRIS configuration
@@ -129,21 +134,25 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Distributed software company hiring 5-10 engineers monthly. Fully remote, team across 4 timezones. Need to onboard remotely while building team connections and getting them coding quickly. Current process is chaotic - inconsistent, different managers do different things. Goal: First meaningful PR by day 5, fully productive by day 30.
 
 ### Output
+
 **Remote Engineering Onboarding Process**
 
 **Onboarding Journey Map:**
 
-*Pre-Arrival (Day -7 to -1):*
+_Pre-Arrival (Day -7 to -1):_
+
 - Equipment shipped and confirmed received
 - Welcome email with day-one schedule
 - Access provisioned (email, Slack, GitHub)
 - Buddy and manager introduction emails
 - Pre-reading: Company culture deck, team overview
 
-*Day 1: Welcome and Foundation*
+_Day 1: Welcome and Foundation_
+
 - 9:00 AM: Manager welcome video call
 - 10:00 AM: IT setup and tool access verification
 - 11:00 AM: Virtual coffee with buddy
@@ -151,7 +160,7 @@ Distributed software company hiring 5-10 engineers monthly. Fully remote, team a
 - 3:00 PM: Dev environment setup with buddy
 - End of Day: First Slack introduction to team
 
-*Week 1: Get Coding*
+_Week 1: Get Coding_
 | Day | Focus | Key Activity | Milestone |
 |-----|-------|--------------|-----------|
 | 2 | Codebase | Codebase walkthrough with buddy | Local build working |
@@ -159,12 +168,14 @@ Distributed software company hiring 5-10 engineers monthly. Fully remote, team a
 | 4 | Review | Code review process, standards | PR feedback received |
 | 5 | Ship | Iterate on feedback, merge | First PR merged |
 
-*Weeks 2-4: Expanding Impact*
+_Weeks 2-4: Expanding Impact_
+
 - Week 2: Complete 2-3 small tasks, meet wider team
 - Week 3: Take on medium complexity work
 - Week 4: Own a feature or improvement
 
-*Days 30-90: Full Integration*
+_Days 30-90: Full Integration_
+
 - Day 30: First 1:1 with skip level
 - Day 45: Participate in sprint planning
 - Day 60: Lead a small initiative
@@ -172,7 +183,7 @@ Distributed software company hiring 5-10 engineers monthly. Fully remote, team a
 
 **Relationship Building Plan:**
 
-*Structured Connections:*
+_Structured Connections:_
 | Connection | When | Format | Purpose |
 |------------|------|--------|---------|
 | Buddy | Daily (Week 1), Weekly (Month 1) | Video call | Day-to-day support |
@@ -181,34 +192,39 @@ Distributed software company hiring 5-10 engineers monthly. Fully remote, team a
 | Cross-functional | Month 1 | Intro meetings | Company context |
 | Skip-level | Day 30 | Meet and greet | Visibility, questions |
 
-*Async Community:*
+_Async Community:_
+
 - #new-hires Slack channel for cohort bonding
 - Monthly new hire AMA with leadership
 - Virtual team events (optional, timezone-friendly)
 
 **Manager Accountability:**
 
-*Manager Checklist:*
+_Manager Checklist:_
+
 - Pre-arrival: Send personalized welcome message
 - Day 1: 30-min welcome, set expectations
 - Week 1: Daily 15-min check-ins
 - Week 2-4: Weekly 1:1s with clear agenda
 - Day 30: Formal onboarding review conversation
 
-*Manager Resources:*
+_Manager Resources:_
+
 - Conversation guides for each checkpoint
 - Red flag indicators and escalation path
 - Onboarding dashboard showing new hire progress
 
 **Support Systems:**
 
-*Buddy Program:*
+_Buddy Program:_
+
 - Assigned pre-arrival
 - Same team, 6+ months tenure
 - 2 hours/week commitment (Week 1-2), 1 hour/week (Month 1)
 - Buddy training and recognition
 
-*Self-Service Resources:*
+_Self-Service Resources:_
+
 - Onboarding portal with all materials
 - Video library of common topics
 - FAQ and troubleshooting guides
@@ -216,18 +232,21 @@ Distributed software company hiring 5-10 engineers monthly. Fully remote, team a
 
 **Success Metrics:**
 
-*Time-Based Milestones:*
+_Time-Based Milestones:_
+
 - Day 5: First PR merged (target: 90%)
 - Day 14: Positive onboarding survey response
 - Day 30: Manager rates "on track" or better
 - Day 90: Full productivity assessment passed
 
-*Experience Metrics:*
+_Experience Metrics:_
+
 - Onboarding NPS (target: 50+)
 - New hire 90-day retention (target: 95%)
 - Time to first production contribution
 
 ## Related Prompts
+
 - [Learning Experience Design Expert](learning-experience-design-expert.md) - For designing training components
 - [Mentorship Structure Expert](mentorship-structure-expert.md) - For buddy and mentoring programs
 - [Feedback Implementation Expert](feedback-implementation-expert.md) - For manager feedback training

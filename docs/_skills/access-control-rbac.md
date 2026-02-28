@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement Role-Based Access Control (RBAC), permissions management, and
+date: "2025-01-01"
+description:
+  Implement Role-Based Access Control (RBAC), permissions management, and
   authorization policies. Use when building secure access control systems with fine-grained
   permissions.
 layout: skill
 slug: access-control-rbac
 tags:
-- development
+  - development
 title: access-control-rbac
 ---
 
@@ -90,31 +91,31 @@ class RBACSystem {
 
   initializeDefaultRoles() {
     // Admin role - full access
-    const admin = new Role('admin', 'Administrator with full access');
-    admin.addPermission(new Permission('*', '*'));
+    const admin = new Role("admin", "Administrator with full access");
+    admin.addPermission(new Permission("*", "*"));
     this.createRole(admin);
 
     // Editor role
-    const editor = new Role('editor', 'Can create and edit content');
-    editor.addPermission(new Permission('posts', 'create'));
-    editor.addPermission(new Permission('posts', 'read'));
-    editor.addPermission(new Permission('posts', 'update'));
-    editor.addPermission(new Permission('comments', 'read'));
-    editor.addPermission(new Permission('comments', 'moderate'));
+    const editor = new Role("editor", "Can create and edit content");
+    editor.addPermission(new Permission("posts", "create"));
+    editor.addPermission(new Permission("posts", "read"));
+    editor.addPermission(new Permission("posts", "update"));
+    editor.addPermission(new Permission("comments", "read"));
+    editor.addPermission(new Permission("comments", "moderate"));
     this.createRole(editor);
 
     // Viewer role
-    const viewer = new Role('viewer', 'Read-only access');
-    viewer.addPermission(new Permission('posts', 'read'));
-    viewer.addPermission(new Permission('comments', 'read'));
+    const viewer = new Role("viewer", "Read-only access");
+    viewer.addPermission(new Permission("posts", "read"));
+    viewer.addPermission(new Permission("comments", "read"));
     this.createRole(viewer);
 
     // User role (inherits from viewer)
-    const user = new Role('user', 'Authenticated user');
+    const user = new Role("user", "Authenticated user");
     user.inheritFrom(viewer);
-    user.addPermission(new Permission('posts', 'create'));
-    user.addPermission(new Permission('comments', 'create'));
-    user.addPermission(new Permission('profile', 'update'));
+    user.addPermission(new Permission("posts", "create"));
+    user.addPermission(new Permission("comments", "create"));
+    user.addPermission(new Permission("profile", "update"));
     this.createRole(user);
   }
 
@@ -158,7 +159,7 @@ class RBACSystem {
     }
 
     // Check if user has admin role (wildcard permissions)
-    if (userRoles.has('admin')) {
+    if (userRoles.has("admin")) {
       return true;
     }
 
@@ -180,15 +181,15 @@ class RBACSystem {
 
       if (!userId) {
         return res.status(401).json({
-          error: 'unauthorized',
-          message: 'Authentication required'
+          error: "unauthorized",
+          message: "Authentication required",
         });
       }
 
       if (!this.can(userId, resource, action)) {
         return res.status(403).json({
-          error: 'forbidden',
-          message: `Permission denied: ${resource}:${action}`
+          error: "forbidden",
+          message: `Permission denied: ${resource}:${action}`,
         });
       }
 
@@ -201,25 +202,22 @@ class RBACSystem {
 const rbac = new RBACSystem();
 
 // Assign roles to users
-rbac.assignRole('user-123', 'editor');
-rbac.assignRole('user-456', 'viewer');
-rbac.assignRole('user-789', 'admin');
+rbac.assignRole("user-123", "editor");
+rbac.assignRole("user-456", "viewer");
+rbac.assignRole("user-789", "admin");
 
 // Check permissions
-console.log(rbac.can('user-123', 'posts', 'update')); // true
-console.log(rbac.can('user-456', 'posts', 'update')); // false
-console.log(rbac.can('user-789', 'anything', 'anything')); // true
+console.log(rbac.can("user-123", "posts", "update")); // true
+console.log(rbac.can("user-456", "posts", "update")); // false
+console.log(rbac.can("user-789", "anything", "anything")); // true
 
 // Express route protection
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.post('/api/posts',
-  rbac.authorize('posts', 'create'),
-  (req, res) => {
-    res.json({ message: 'Post created' });
-  }
-);
+app.post("/api/posts", rbac.authorize("posts", "create"), (req, res) => {
+  res.json({ message: "Post created" });
+});
 
 module.exports = RBACSystem;
 ```
@@ -533,6 +531,7 @@ public class AccessControlService {
 ## Best Practices
 
 ### ✅ DO
+
 - Implement least privilege
 - Use role hierarchies
 - Audit access changes
@@ -543,6 +542,7 @@ public class AccessControlService {
 - Use attribute-based policies
 
 ### ❌ DON'T
+
 - Grant excessive permissions
 - Share accounts
 - Skip access reviews

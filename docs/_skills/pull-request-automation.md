@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Automate pull request workflows with templates, checklists, auto-merge
+date: "2025-01-01"
+description:
+  Automate pull request workflows with templates, checklists, auto-merge
   rules, and review assignments. Reduce manual overhead and improve consistency.
 layout: skill
 slug: pull-request-automation
 tags:
-- development
+  - development
 title: pull-request-automation
 ---
 
@@ -33,27 +34,33 @@ Implement pull request automation to streamline code review processes, enforce q
 # .github/pull_request_template.md
 
 ## Description
+
 Briefly describe the changes made in this PR.
 
 ## Type of Change
+
 - [ ] Bug fix (non-breaking change that fixes an issue)
 - [ ] New feature (non-breaking change that adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 - [ ] Documentation update
 
 ## Related Issues
+
 Closes #(issue number)
 
 ## Changes Made
+
 - Change 1
 - Change 2
 
 ## Testing
+
 - [ ] Unit tests added/updated
 - [ ] Integration tests pass
 - [ ] Manual testing completed
 
 ## Checklist
+
 - [ ] Code follows style guidelines
 - [ ] Self-review completed
 - [ ] Comments added for complex logic
@@ -62,14 +69,17 @@ Closes #(issue number)
 - [ ] Tests pass locally
 
 ## Screenshots (if applicable)
+
 Add screenshots for UI changes
 
 ## Performance Impact
+
 - [ ] No performance impact
 - [ ] Performance improved
 - [ ] Potential performance implications (describe)
 
 ## Dependencies
+
 List any new dependencies or version changes
 ```
 
@@ -292,7 +302,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Run tests with coverage
         run: npm run test:coverage
@@ -309,6 +319,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Use PR templates for consistency
 - Require code reviews before merge
 - Enforce CI/CD checks pass
@@ -320,6 +331,7 @@ jobs:
 - Provide detailed PR descriptions
 
 ### ❌ DON'T
+
 - Approve without reviewing code
 - Merge failing CI checks
 - Use vague PR titles

@@ -431,6 +431,7 @@ async def update_user(
 ## Best Practices
 
 ### ✅ DO
+
 - Use async/await for I/O operations
 - Leverage Pydantic for validation
 - Use dependency injection for services
@@ -443,6 +444,7 @@ async def update_user(
 - Document endpoints with docstrings and tags
 
 ### ❌ DON'T
+
 - Use synchronous database operations
 - Trust user input without validation
 - Store secrets in code

@@ -1,6 +1,7 @@
 # Civil Engineering Project Manager
 
 ## Metadata
+
 - **ID**: `engineering-civil-engineering-project-manager`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,12 +19,14 @@ Manages civil engineering projects from feasibility through construction closeou
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning a new infrastructure project (road, bridge, utility, drainage)
 - Navigating a complex permitting process with multiple agencies
 - Developing a project schedule and cost estimate during early design phases
 - Identifying and mitigating construction-phase risks before they materialize
 
 **Anti-patterns (Don't Use For):**
+
 - Structural or geotechnical engineering calculations (requires licensed PE)
 - Legal contract disputes (requires attorney)
 - Environmental site assessments requiring field investigation
@@ -125,52 +128,54 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to replace a 200-ft deteriorated pedestrian bridge over a creek in a suburban city. The existing bridge is functionally obsolete. City owns the right-of-way. Creek is jurisdictional waters. Federal LWCF grant funding is being pursued."
 
 ### Output
 
 **Project Delivery Plan: Pedestrian Bridge Replacement**
-*City-owned | LWCF-funded | Jurisdictional creek crossing*
+_City-owned | LWCF-funded | Jurisdictional creek crossing_
 
 **Scope Summary**
 Replace 200-ft deteriorated pedestrian bridge in-kind or with modern structure. Project includes demolition, foundation investigation, new superstructure, and approach tie-ins. LWCF grant funding requires federal Section 6(f) compliance and NPS review.
 
 **Permitting Pathway**
 
-| Agency | Permit/Approval | Typical Timeline | Notes |
-|--------|----------------|-----------------|-------|
-| US Army Corps of Engineers | Section 404 (Nationwide or Individual) | 45–90 days (NWP); 12–18 months (IP) | Determine if NWP 14 applies |
-| State Water Resources Board | Section 401 Water Quality Cert | 60–90 days | Triggered by 404 |
-| State Coastal/Fish & Wildlife | Streambed Alteration Agreement | 60–90 days | Required for CA/OR/WA; check jurisdiction |
-| National Park Service | Section 6(f) Conversion Review | 6–12 months | Controls schedule if LWCF funds used |
-| Local Building Dept | Encroachment/Building Permit | 30–60 days | After final design |
+| Agency                        | Permit/Approval                        | Typical Timeline                    | Notes                                     |
+| ----------------------------- | -------------------------------------- | ----------------------------------- | ----------------------------------------- |
+| US Army Corps of Engineers    | Section 404 (Nationwide or Individual) | 45–90 days (NWP); 12–18 months (IP) | Determine if NWP 14 applies               |
+| State Water Resources Board   | Section 401 Water Quality Cert         | 60–90 days                          | Triggered by 404                          |
+| State Coastal/Fish & Wildlife | Streambed Alteration Agreement         | 60–90 days                          | Required for CA/OR/WA; check jurisdiction |
+| National Park Service         | Section 6(f) Conversion Review         | 6–12 months                         | Controls schedule if LWCF funds used      |
+| Local Building Dept           | Encroachment/Building Permit           | 30–60 days                          | After final design                        |
 
 **Controlling constraint: NPS Section 6(f) review** — begin immediately with grant application.
 
 **Project Schedule**
 
-| Phase | Duration | Key Activities |
-|-------|----------|----------------|
-| Feasibility + Grant Application | 3 months | Alternatives analysis, Section 6(f) pre-application |
-| Preliminary Design + Permitting | 6 months | 30% design, permit submittals, geotechnical investigation |
-| Final Design | 4 months | 100% plans/specs, permit issuance |
-| Bidding + Award | 2 months | Advertise, bid evaluation, contractor selection |
-| Construction | 4–6 months | Bridge demolition and replacement |
-| Closeout | 1 month | As-builts, grant closeout, warranty |
+| Phase                           | Duration   | Key Activities                                            |
+| ------------------------------- | ---------- | --------------------------------------------------------- |
+| Feasibility + Grant Application | 3 months   | Alternatives analysis, Section 6(f) pre-application       |
+| Preliminary Design + Permitting | 6 months   | 30% design, permit submittals, geotechnical investigation |
+| Final Design                    | 4 months   | 100% plans/specs, permit issuance                         |
+| Bidding + Award                 | 2 months   | Advertise, bid evaluation, contractor selection           |
+| Construction                    | 4–6 months | Bridge demolition and replacement                         |
+| Closeout                        | 1 month    | As-builts, grant closeout, warranty                       |
 
 **Total estimated duration: 20–22 months**
 
 **Risk Register**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|-----------|--------|-----------|
-| NPS delays Section 6(f) approval | Medium | High | Start pre-application meeting within 30 days |
-| Corps requires Individual Permit (not NWP) | Low | High | Minimize in-water work; confirm NWP 14 eligibility early |
-| Poor foundation conditions extend construction | Medium | Medium | Conduct geotechnical borings during preliminary design |
-| Bid prices exceed budget | Medium | Medium | Develop engineer's estimate at 30% and 100% design |
-| Utility conflicts in approach area | Low | Medium | Order utility locates during preliminary design |
+| Risk                                           | Likelihood | Impact | Mitigation                                               |
+| ---------------------------------------------- | ---------- | ------ | -------------------------------------------------------- |
+| NPS delays Section 6(f) approval               | Medium     | High   | Start pre-application meeting within 30 days             |
+| Corps requires Individual Permit (not NWP)     | Low        | High   | Minimize in-water work; confirm NWP 14 eligibility early |
+| Poor foundation conditions extend construction | Medium     | Medium | Conduct geotechnical borings during preliminary design   |
+| Bid prices exceed budget                       | Medium     | Medium | Develop engineer's estimate at 30% and 100% design       |
+| Utility conflicts in approach area             | Low        | Medium | Order utility locates during preliminary design          |
 
 **Top 3 Early Actions**
+
 1. **Schedule NPS pre-application meeting** this month — Section 6(f) is the schedule-controlling approval
 2. **Commission geotechnical investigation** during preliminary design — foundation conditions unknown for deteriorated bridge
 3. **Confirm Nationwide Permit 14 eligibility** with Army Corps before advancing design — IP pathway adds 12+ months

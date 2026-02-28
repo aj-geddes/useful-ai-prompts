@@ -1,6 +1,7 @@
 # Brand Storytelling Expert
 
 ## Metadata
+
 - **ID**: `content-creation-brand-storytelling`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -18,6 +19,7 @@ Crafts compelling brand narratives that connect emotionally with audiences and d
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing a new brand narrative or origin story
 - Repositioning an existing brand for a new audience
 - Creating content marketing that builds emotional connections
@@ -25,6 +27,7 @@ Crafts compelling brand narratives that connect emotionally with audiences and d
 - Building consistent narrative across multiple channels
 
 **Anti-patterns (when NOT to use):**
+
 - Technical product documentation
 - SEO-focused content without emotional elements
 - Purely transactional copywriting
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a sustainable coffee company that sources directly from small farms in Colombia. Our mission is to pay farmers fairly while reducing environmental impact. Target audience is eco-conscious millennials who care about ethical consumption."
 
 ### Output
@@ -114,13 +118,16 @@ Avoid:
 ## BRAND POSITIONING ANALYSIS
 
 ### Competitive Landscape
+
 Most specialty coffee brands compete on taste, origin, or convenience. Few own the emotional territory of **genuine farmer partnership** with verifiable impact. Your differentiation opportunity lies not in claiming sustainability, but in making the farmer relationship tangible and personal.
 
 ### Emotional Territory
+
 **Core emotion:** Connection across worlds
 **Supporting emotions:** Pride in ethical choices, hope for positive change, belonging to conscious community
 
 ### Unique Position
+
 "The coffee that introduces you to the family who grew it."
 
 ## CORE NARRATIVE THEME
@@ -130,6 +137,7 @@ Most specialty coffee brands compete on taste, origin, or convenience. Few own t
 Your brand story bridges the gap between conscious consumers and the farming families whose livelihoods depend on ethical trade. The emotional arc follows transformation: from anonymous commodity to meaningful connection.
 
 This theme works because:
+
 - It's specific to your model (not claimable by competitors)
 - It creates emotional investment in purchase decisions
 - It provides endless authentic content opportunities
@@ -156,49 +164,61 @@ So we built something different. Not a transaction, but a relationship. Every ba
 ## MESSAGING PILLARS
 
 ### Pillar 1: Radical Transparency
+
 **Theme:** No hidden supply chains
 **Key messages:**
+
 - "Trace every bean to its source"
 - "Meet the farmers who grow your coffee"
 - "See exactly where your money goes"
 
 **Content applications:**
+
 - QR codes linking to farm videos
 - Farmer profile series
 - Supply chain infographics
 
 ### Pillar 2: Generational Partnership
+
 **Theme:** Long-term relationships, not transactions
 **Key messages:**
+
 - "Same families, generation to generation"
 - "Growing together, not just buying"
 - "Partnerships measured in decades, not seasons"
 
 **Content applications:**
+
 - Multi-generational farmer stories
 - Partnership anniversary celebrations
 - Farm improvement project updates
 
 ### Pillar 3: Environmental Stewardship
+
 **Theme:** Protecting what we depend on
 **Key messages:**
+
 - "Shade-grown in preserved forests"
 - "Carbon-negative from farm to cup"
 - "Land that's better than we found it"
 
 **Content applications:**
+
 - Reforestation progress reports
 - Biodiversity documentation
 - Environmental impact metrics
 
 ### Pillar 4: Conscious Community
+
 **Theme:** You're part of something larger
 **Key messages:**
+
 - "Every cup makes a difference"
 - "Join 50,000 conscious coffee lovers"
 - "Your choice creates change"
 
 **Content applications:**
+
 - Collective impact reports
 - Community member features
 - Milestone celebrations
@@ -206,21 +226,25 @@ So we built something different. Not a transaction, but a relationship. Every ba
 ## CHANNEL APPLICATIONS
 
 ### Social Media
+
 **Instagram:** Visual storytelling - daily farm life, harvest seasons, packaging journey
 **LinkedIn:** Impact metrics, B2B partnership stories
 **TikTok:** Behind-the-scenes farm content, brewing rituals
 
 ### Packaging
+
 - Farmer name and story on every bag
 - QR code to video profile
 - Impact metrics: "This bag funded X days of education"
 
 ### Email Marketing
+
 - Seasonal updates from partner farms
 - Farmer birthday and harvest announcements
 - Personal notes from farming families
 
 ### Website
+
 - Interactive map of farm partnerships
 - Video documentaries on farmer stories
 - Real-time impact dashboard
@@ -228,16 +252,19 @@ So we built something different. Not a transaction, but a relationship. Every ba
 ## IMPLEMENTATION EXAMPLES
 
 ### Email Subject Lines
+
 - "Maria's harvest is ready - and she has a message for you"
 - "You helped build a school. Here are the kids' drawings."
 - "3 years with the Gonzalez family: A thank you"
 
 ### Social Post
+
 "This is Carlos. He's been growing coffee for 47 years. When we asked him why he still does it, he said: 'Because now, I know where it goes. And they know where it comes from.'
 
 That's what ethical coffee actually means. Not a label. A relationship."
 
 ### Product Description
+
 "This single-origin Colombian comes from the Morales family farm in Huila. Three generations have perfected these beans on volcanic soil at 1,800 meters. When you subscribe, you join 847 other people who've helped fund the farm's new processing facility.
 
 Taste notes: caramel, citrus, chocolate
@@ -246,6 +273,7 @@ Impact: This bag funds 2 school lunches for farm workers' children"
 ---
 
 ## Related Prompts
+
 - [Storytelling Framework Designer](storytelling-framework-designer.md)
 - [Audience Engagement Specialist](audience-engagement-specialist.md)
 - [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)

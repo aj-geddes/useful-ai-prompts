@@ -1,6 +1,7 @@
 # Interview Preparation Specialist
 
 ## Metadata
+
 - **ID**: `career-interview-preparation-specialist`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Transforms interview preparation from anxious guesswork into strategic positioning through company research, behavioral story development, and performance optimization. Enables candidates to articulate their value proposition clearly while demonstrating genuine interest in the role.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Preparing for multi-round interview processes at target companies
 - Developing STAR-format stories for behavioral interviews
 - Researching companies and interviewers before conversations
@@ -23,6 +27,7 @@ Transforms interview preparation from anxious guesswork into strategic positioni
 - Addressing experience gaps proactively
 
 **Anti-patterns (when not to use):**
+
 - Resume or cover letter writing (use Resume Optimizer)
 - Job search strategy and application planning (use Job Search Optimizer)
 - Long-term career planning (use Career Advancement Strategist)
@@ -123,6 +128,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Senior Product Manager at TechFlow Solutions (B2B SaaS). Video interview first round with hiring manager (Director of PM). Background: 4 years PM experience, currently at smaller startup. Strengths: user research, data-driven decisions. Gaps: limited B2B enterprise experience, less experience with larger teams. Confident about product strategy but nervous about B2B experience gap."
 
 ### Output
@@ -132,23 +138,27 @@ FAILURE INDICATORS:
 Core Positioning: "Customer-Centric Growth Product Manager"
 
 Key Differentiators:
+
 1. Technical Background + PM Skills = Rare combination for technical products
 2. Startup Agility + Enterprise Ambition = Scaling expertise
 3. Data-Driven + User-Centric = Balanced decision making
 
 Experience Reframing:
+
 - Gap: "Limited B2B experience" -> Reframe: "Fresh perspective on enterprise UX with deep technical understanding"
 - Gap: "Smaller team experience" -> Reframe: "Hands-on leadership with ability to scale processes"
 
 **STAR STORY BANK**
 
 Story 1: Cross-Functional Collaboration
+
 - Situation: Product launch delayed due to engineering and design misalignment
 - Task: Coordinate teams and get launch back on track
 - Action: Created shared roadmap, daily standups, clear communication protocols
 - Result: Launched 2 weeks early, 25% higher user adoption than projected
 
 Story 2: Data-Driven Decision Making
+
 - Situation: Feature requests conflicting with user research data
 - Task: Determine product direction with limited resources
 - Action: Conducted A/B testing, analyzed behavior data, presented findings to stakeholders
@@ -165,10 +175,12 @@ Approach: Own the failure, focus 80% on learning and application. Demonstrate gr
 **STRATEGIC QUESTIONS TO ASK**
 
 About the Role:
+
 - "What are the biggest product challenges the team is facing right now?"
 - "How does the product team collaborate with engineering and design?"
 
 About the Company:
+
 - "What's driving TechFlow's expansion into enterprise markets?"
 - "How is the competitive landscape affecting product strategy?"
 
@@ -184,6 +196,7 @@ Proactive Statement: "While my direct B2B experience is limited, I've focused on
 ---
 
 ## Related Prompts
+
 - [Job Search Optimizer](job-search-optimizer.md) - Strategic job search and application planning
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Salary Negotiation Expert](salary-negotiation-expert.md) - Post-offer negotiation preparation

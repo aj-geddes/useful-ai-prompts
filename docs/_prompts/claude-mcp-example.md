@@ -3,26 +3,27 @@ title: Claude Desktop MCP Configuration Expert
 slug: claude-mcp-example
 category: technical/mcp
 tags:
-- mcp
-- claude-desktop
-- configuration
-- docker
-- integration
-- model-context-protocol
+  - mcp
+  - claude-desktop
+  - configuration
+  - docker
+  - integration
+  - model-context-protocol
 compatible_models:
-- Claude 3+
-date: '2025-01-01'
-description: Provides comprehensive MCP server configuration templates for Claude
+  - Claude 3+
+date: "2025-01-01"
+description:
+  Provides comprehensive MCP server configuration templates for Claude
   Desktop with essential development and productivity tools. Covers Docker-based servers,
   authentication setup, and cross-platform configuration paths. Enables Claude Desktop
   to interact with filesystems, git repositories, databases, and external APIs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Setting up Claude Desktop MCP integration for the first time
-- Configuring development tool servers (git, filesystem, memory)
-- Troubleshooting MCP server connection issues
-- Adding new MCP servers to existing configuration
+  - Ideal Scenarios:**
+  - Setting up Claude Desktop MCP integration for the first time
+  - Configuring development tool servers (git, filesystem, memory)
+  - Troubleshooting MCP server connection issues
+  - Adding new MCP servers to existing configuration
 complexity: intermediate
 interaction: single-turn
 ---
@@ -37,15 +38,17 @@ The Model Context Protocol (MCP) extends Claude Desktop's capabilities through e
 
 <input_handling>
 Required:
+
 - Operating system (Windows, macOS, Linux)
 - Desired MCP servers to configure
 
 Optional:
+
 - Docker installation status (default: assume installed)
 - Workspace directory (default: user home directory)
 - GitHub token availability (will prompt if needed for GitHub server)
 - Existing configuration to extend
-</input_handling>
+  </input_handling>
 
 <task>
 Configure Claude Desktop MCP servers:
@@ -57,22 +60,24 @@ Configure Claude Desktop MCP servers:
 5. Document server capabilities and available tools
 6. Include troubleshooting guidance for common issues
 7. Validate JSON configuration syntax before providing
-</task>
+   </task>
 
 <output_specification>
 Format: JSON configuration with comprehensive setup instructions
 Length: Configuration JSON plus 500-800 words documentation
 Structure:
+
 - Configuration file location
 - Complete JSON configuration block
 - Step-by-step setup instructions
 - Docker pull commands
 - Server capabilities table
 - Troubleshooting section
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs include:
+
 - Valid JSON with proper escaping for platform
 - Platform-specific path formatting (backslashes for Windows)
 - Clear prerequisite documentation
@@ -80,11 +85,12 @@ Excellent outputs include:
 - Verification steps to confirm setup
 
 Avoid:
+
 - Invalid JSON syntax or missing commas
 - Missing Docker volume mounts for workspace access
 - Hardcoded paths without clear placeholders
 - Missing authentication configuration for secured servers
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always use placeholder syntax for user-specific values

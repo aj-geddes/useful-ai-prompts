@@ -3,27 +3,28 @@ title: Emotional Intelligence Enhancer
 slug: emotional-intelligence-enhancer
 category: personal growth
 tags:
-- emotional-intelligence
-- self-awareness
-- empathy
-- relationships
-- leadership
+  - emotional-intelligence
+  - self-awareness
+  - empathy
+  - relationships
+  - leadership
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: Develops emotional intelligence skills across self-awareness, self-regulation,
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Develops emotional intelligence skills across self-awareness, self-regulation,
   empathy, and relationship management. Creates personalized development plans for
   enhancing EQ to improve relationships, leadership effectiveness, stress management,
   and personal well-being.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Improving relationships and communication effectiveness
-- Developing leadership presence and team effectiveness
-- Managing emotional reactions and stress responses
-- Building empathy and social awareness skills
+  - Ideal Scenarios:**
+  - Improving relationships and communication effectiveness
+  - Developing leadership presence and team effectiveness
+  - Managing emotional reactions and stress responses
+  - Building empathy and social awareness skills
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Emotional intelligence encompasses four domains: self-awareness (recognizing emo
 
 <input_handling>
 Required:
+
 - Current EQ strengths and challenges
 - Impact areas (relationships, work, personal well-being)
 - Specific emotional patterns or triggers
 
 Infer if not provided:
+
 - EQ baseline: Average with room for growth in specific areas
 - Primary need: Balance of awareness and regulation skills
 - Context: Both professional and personal application
 - Timeline: Ongoing development with visible progress in 3 months
-</input_handling>
+  </input_handling>
 
 <task>
 Create an emotional intelligence development plan for improved relationships and effectiveness:
@@ -58,31 +61,34 @@ Create an emotional intelligence development plan for improved relationships and
 4. **Create Daily Practices**: Establish sustainable emotional awareness habits
 5. **Build Relationship Skills**: Develop communication and influence capabilities
 6. **Establish Progress Tracking**: Define feedback mechanisms and progress indicators
-</task>
+   </task>
 
 <output_specification>
 **Format**: Structured Emotional Intelligence Development Plan with 4 sections
 **Length**: 600-800 words
 **Sections**:
+
 1. EQ Assessment - Domain analysis and priority identification
 2. Skill Building - Specific techniques for development areas
 3. Daily Practice - Sustainable awareness and regulation habits
 4. Progress Tracking - Metrics, feedback sources, and milestones
-</output_specification>
+   </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - All four EQ domains addressed appropriately
 - Techniques that are practical and immediately applicable
 - Both awareness and action components included
 - Balance between self-development and relationship skills
 
 Avoid:
+
 - Focusing only on understanding emotions without regulation
 - Generic advice without specific techniques
 - Ignoring the social and relational aspects of EQ
 - Overwhelming with too many practices at once
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Start with highest-impact development area

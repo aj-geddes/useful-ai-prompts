@@ -55,7 +55,7 @@ metadata:
   name: myapp-v2
   namespace: production
 spec:
-  replicas: 1  # Start with minimal replicas for canary
+  replicas: 1 # Start with minimal replicas for canary
   selector:
     matchLabels:
       app: myapp
@@ -86,7 +86,7 @@ spec:
     - match:
         - headers:
             user-agent:
-              regex: ".*Chrome.*"  # Test with Chrome
+              regex: ".*Chrome.*" # Test with Chrome
       route:
         - destination:
             host: myapp
@@ -403,6 +403,7 @@ done
 ## Canary Best Practices
 
 ### ✅ DO
+
 - Start with small traffic percentage (5-10%)
 - Monitor key metrics continuously
 - Increase gradually based on metrics
@@ -413,6 +414,7 @@ done
 - Document rollback procedures
 
 ### ❌ DON'T
+
 - Rush through canary phases
 - Ignore metrics
 - Mix canary and stable versions

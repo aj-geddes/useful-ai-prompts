@@ -1,13 +1,14 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Implement database sharding for horizontal scalability. Use when scaling
+date: "2025-01-01"
+description:
+  Implement database sharding for horizontal scalability. Use when scaling
   large databases, distributing data across multiple servers, or designing sharded
   architectures.
 layout: skill
 slug: database-sharding
 tags:
-- data
+  - data
 title: database-sharding
 ---
 
@@ -363,11 +364,11 @@ ORDER BY shard_id;
 
 ## Sharding Strategies Comparison
 
-| Strategy | Pros | Cons |
-|----------|------|------|
-| Range-based | Simple to implement | Hotspots in ranges |
-| Hash-based | Even distribution | Complex rebalancing |
-| Directory-based | Flexible, dynamic | Extra lookup overhead |
+| Strategy        | Pros                | Cons                  |
+| --------------- | ------------------- | --------------------- |
+| Range-based     | Simple to implement | Hotspots in ranges    |
+| Hash-based      | Even distribution   | Complex rebalancing   |
+| Directory-based | Flexible, dynamic   | Extra lookup overhead |
 
 ## Resources
 

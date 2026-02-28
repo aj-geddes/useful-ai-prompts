@@ -5,8 +5,9 @@ Revenue-focused prompts for sales strategy, pipeline management, and deal optimi
 ## Available Prompts
 
 ### Sales Operations
+
 - [Sales Pipeline Optimizer](./sales-pipeline-optimizer.md) - Systematic pipeline management and revenue forecasting
 
 ---
 
-*Accelerate sales performance with AI-driven revenue strategies.*
+_Accelerate sales performance with AI-driven revenue strategies._

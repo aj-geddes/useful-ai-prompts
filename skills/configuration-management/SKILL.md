@@ -25,6 +25,7 @@ Comprehensive guide to managing application configuration across environments, i
 ### 1. **Environment Variables**
 
 #### Basic Setup (.env files)
+
 ```bash
 # .env.development
 NODE_ENV=development
@@ -49,45 +50,49 @@ LOG_LEVEL=error
 ```
 
 #### Loading Environment Variables
+
 ```typescript
 // config/env.ts
-import dotenv from 'dotenv';
-import path from 'path';
+import dotenv from "dotenv";
+import path from "path";
 
 // Load environment-specific .env file
-const envFile = `.env.${process.env.NODE_ENV || 'development'}`;
+const envFile = `.env.${process.env.NODE_ENV || "development"}`;
 dotenv.config({ path: path.resolve(process.cwd(), envFile) });
 
 // Validate required variables
-const required = ['DATABASE_URL', 'PORT', 'API_KEY'];
-const missing = required.filter(key => !process.env[key]);
+const required = ["DATABASE_URL", "PORT", "API_KEY"];
+const missing = required.filter((key) => !process.env[key]);
 
 if (missing.length > 0) {
-  throw new Error(`Missing required environment variables: ${missing.join(', ')}`);
+  throw new Error(
+    `Missing required environment variables: ${missing.join(", ")}`,
+  );
 }
 
 // Export typed configuration
 export const config = {
-  env: process.env.NODE_ENV || 'development',
-  port: parseInt(process.env.PORT || '3000', 10),
+  env: process.env.NODE_ENV || "development",
+  port: parseInt(process.env.PORT || "3000", 10),
   database: {
     url: process.env.DATABASE_URL!,
-    poolSize: parseInt(process.env.DB_POOL_SIZE || '10', 10)
+    poolSize: parseInt(process.env.DB_POOL_SIZE || "10", 10),
   },
   redis: {
-    url: process.env.REDIS_URL || 'redis://localhost:6379'
+    url: process.env.REDIS_URL || "redis://localhost:6379",
   },
   logging: {
-    level: process.env.LOG_LEVEL || 'info'
+    level: process.env.LOG_LEVEL || "info",
   },
   api: {
     key: process.env.API_KEY!,
-    timeout: parseInt(process.env.API_TIMEOUT || '5000', 10)
-  }
+    timeout: parseInt(process.env.API_TIMEOUT || "5000", 10),
+  },
 } as const;
 ```
 
 #### Python Configuration
+
 ```python
 # config/settings.py
 import os
@@ -145,57 +150,57 @@ config = config_by_name[Config.ENV]()
 
 ```typescript
 // config/config.ts
-import deepmerge from 'deepmerge';
+import deepmerge from "deepmerge";
 
 // Base configuration (shared across all environments)
 const baseConfig = {
   app: {
-    name: 'MyApp',
-    version: '1.0.0'
+    name: "MyApp",
+    version: "1.0.0",
   },
   server: {
     timeout: 30000,
-    bodyLimit: '100kb'
+    bodyLimit: "100kb",
   },
   database: {
     poolSize: 10,
-    idleTimeout: 30000
+    idleTimeout: 30000,
   },
   logging: {
-    format: 'json',
-    destination: 'stdout'
-  }
+    format: "json",
+    destination: "stdout",
+  },
 };
 
 // Environment-specific overrides
 const developmentConfig = {
   server: {
-    port: 3000
+    port: 3000,
   },
   database: {
-    url: 'postgresql://localhost:5432/myapp_dev',
-    logging: true
+    url: "postgresql://localhost:5432/myapp_dev",
+    logging: true,
   },
   logging: {
-    level: 'debug',
-    prettyPrint: true
-  }
+    level: "debug",
+    prettyPrint: true,
+  },
 };
 
 const productionConfig = {
   server: {
     port: 8080,
-    trustProxy: true
+    trustProxy: true,
   },
   database: {
     url: process.env.DATABASE_URL,
     ssl: true,
-    logging: false
+    logging: false,
   },
   logging: {
-    level: 'info',
-    prettyPrint: false
-  }
+    level: "info",
+    prettyPrint: false,
+  },
 };
 
 // Merge configurations
@@ -203,14 +208,15 @@ const configs = {
   development: deepmerge(baseConfig, developmentConfig),
   production: deepmerge(baseConfig, productionConfig),
   test: deepmerge(baseConfig, {
-    database: { url: 'postgresql://localhost:5432/myapp_test' }
-  })
+    database: { url: "postgresql://localhost:5432/myapp_test" },
+  }),
 };
 
-export const config = configs[process.env.NODE_ENV || 'development'];
+export const config = configs[process.env.NODE_ENV || "development"];
 ```
 
 #### YAML Configuration Files
+
 ```yaml
 # config/default.yml
 app:
@@ -254,31 +260,35 @@ logging:
 
 ```typescript
 // Load YAML config
-import yaml from 'js-yaml';
-import fs from 'fs';
-import path from 'path';
+import yaml from "js-yaml";
+import fs from "fs";
+import path from "path";
 
 function loadYamlConfig(env: string) {
   const defaultConfig = yaml.load(
-    fs.readFileSync(path.join(__dirname, 'config/default.yml'), 'utf8')
+    fs.readFileSync(path.join(__dirname, "config/default.yml"), "utf8"),
   );
 
   const envConfig = yaml.load(
-    fs.readFileSync(path.join(__dirname, `config/${env}.yml`), 'utf8')
+    fs.readFileSync(path.join(__dirname, `config/${env}.yml`), "utf8"),
   );
 
   return deepmerge(defaultConfig, envConfig);
 }
 
-export const config = loadYamlConfig(process.env.NODE_ENV || 'development');
+export const config = loadYamlConfig(process.env.NODE_ENV || "development");
 ```
 
 ### 3. **Secret Management**
 
 #### AWS Secrets Manager
+
 ```typescript
 // secrets/aws-secrets-manager.ts
-import { SecretsManagerClient, GetSecretValueCommand } from '@aws-sdk/client-secrets-manager';
+import {
+  SecretsManagerClient,
+  GetSecretValueCommand,
+} from "@aws-sdk/client-secrets-manager";
 
 export class SecretManager {
   private client: SecretsManagerClient;
@@ -300,26 +310,28 @@ export class SecretManager {
       const command = new GetSecretValueCommand({ SecretId: secretName });
       const response = await this.client.send(command);
 
-      const secret = JSON.parse(response.SecretString || '{}');
+      const secret = JSON.parse(response.SecretString || "{}");
 
       // Cache the secret
       this.cache.set(secretName, {
         value: secret,
-        expiry: Date.now() + this.cacheTtl
+        expiry: Date.now() + this.cacheTtl,
       });
 
       return secret;
     } catch (error) {
-      throw new Error(`Failed to retrieve secret ${secretName}: ${error.message}`);
+      throw new Error(
+        `Failed to retrieve secret ${secretName}: ${error.message}`,
+      );
     }
   }
 
   async getDatabaseCredentials(): Promise<DatabaseCredentials> {
-    return this.getSecret('prod/database/credentials');
+    return this.getSecret("prod/database/credentials");
   }
 
   async getApiKey(service: string): Promise<string> {
-    const secrets = await this.getSecret('prod/api-keys');
+    const secrets = await this.getSecret("prod/api-keys");
     return secrets[service];
   }
 }
@@ -335,24 +347,25 @@ async function connectDatabase() {
     port: credentials.port,
     username: credentials.username,
     password: credentials.password,
-    database: credentials.database
+    database: credentials.database,
   });
 }
 ```
 
 #### HashiCorp Vault
+
 ```typescript
 // secrets/vault.ts
-import vault from 'node-vault';
+import vault from "node-vault";
 
 export class VaultClient {
   private client: any;
 
   constructor() {
     this.client = vault({
-      apiVersion: 'v1',
-      endpoint: process.env.VAULT_ADDR || 'http://localhost:8200',
-      token: process.env.VAULT_TOKEN
+      apiVersion: "v1",
+      endpoint: process.env.VAULT_ADDR || "http://localhost:8200",
+      token: process.env.VAULT_TOKEN,
     });
   }
 
@@ -366,27 +379,28 @@ export class VaultClient {
   }
 
   async getDatabaseConfig(): Promise<DatabaseConfig> {
-    return this.getSecret('secret/data/database');
+    return this.getSecret("secret/data/database");
   }
 
   async getApiKeys(): Promise<Record<string, string>> {
-    return this.getSecret('secret/data/api-keys');
+    return this.getSecret("secret/data/api-keys");
   }
 
   // Dynamic database credentials (rotated automatically)
   async getDynamicDBCredentials(): Promise<Credentials> {
-    const result = await this.client.read('database/creds/readonly');
+    const result = await this.client.read("database/creds/readonly");
     return {
       username: result.data.username,
       password: result.data.password,
       leaseId: result.lease_id,
-      leaseDuration: result.lease_duration
+      leaseDuration: result.lease_duration,
     };
   }
 }
 ```
 
 #### Environment-Specific Secrets
+
 ```typescript
 // secrets/secret-provider.ts
 export interface SecretProvider {
@@ -413,14 +427,14 @@ export class AWSSecretProvider implements SecretProvider {
   }
 
   async getSecret(key: string): Promise<string> {
-    const secrets = await this.secretManager.getSecret('prod/secrets');
+    const secrets = await this.secretManager.getSecret("prod/secrets");
     return secrets[key];
   }
 }
 
 // Factory
 export function createSecretProvider(): SecretProvider {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === "production") {
     return new AWSSecretProvider();
   }
   return new EnvFileSecretProvider();
@@ -430,6 +444,7 @@ export function createSecretProvider(): SecretProvider {
 ### 4. **Feature Flags**
 
 #### Simple Feature Flag Implementation
+
 ```typescript
 // feature-flags/feature-flag.ts
 export interface FeatureFlag {
@@ -448,7 +463,7 @@ export class FeatureFlagManager {
 
   isEnabled(
     flagName: string,
-    context?: { userId?: string; environment?: string }
+    context?: { userId?: string; environment?: string },
   ): boolean {
     const flag = this.flags.get(flagName);
     if (!flag) return false;
@@ -473,7 +488,7 @@ export class FeatureFlagManager {
     // Check rollout percentage
     if (flag.rolloutPercentage !== undefined && context?.userId) {
       const hash = this.hashUserId(context.userId);
-      return (hash % 100) < flag.rolloutPercentage;
+      return hash % 100 < flag.rolloutPercentage;
     }
 
     return true;
@@ -482,7 +497,7 @@ export class FeatureFlagManager {
   private hashUserId(userId: string): number {
     let hash = 0;
     for (let i = 0; i < userId.length; i++) {
-      hash = ((hash << 5) - hash) + userId.charCodeAt(i);
+      hash = (hash << 5) - hash + userId.charCodeAt(i);
       hash |= 0;
     }
     return Math.abs(hash);
@@ -491,29 +506,31 @@ export class FeatureFlagManager {
 
 // Configuration
 const featureFlags = {
-  'new-dashboard': {
+  "new-dashboard": {
     enabled: true,
-    rolloutPercentage: 50 // 50% of users
+    rolloutPercentage: 50, // 50% of users
   },
-  'experimental-feature': {
+  "experimental-feature": {
     enabled: true,
-    allowedUsers: ['user-123', 'user-456'],
-    allowedEnvironments: ['development', 'staging']
+    allowedUsers: ["user-123", "user-456"],
+    allowedEnvironments: ["development", "staging"],
   },
-  'beta-api': {
+  "beta-api": {
     enabled: true,
-    rolloutPercentage: 10
-  }
+    rolloutPercentage: 10,
+  },
 };
 
 const flagManager = new FeatureFlagManager(featureFlags);
 
 // Usage
-app.get('/api/dashboard', (req, res) => {
-  if (flagManager.isEnabled('new-dashboard', {
-    userId: req.user.id,
-    environment: process.env.NODE_ENV
-  })) {
+app.get("/api/dashboard", (req, res) => {
+  if (
+    flagManager.isEnabled("new-dashboard", {
+      userId: req.user.id,
+      environment: process.env.NODE_ENV,
+    })
+  ) {
     return res.json(getNewDashboard());
   }
 
@@ -522,9 +539,10 @@ app.get('/api/dashboard', (req, res) => {
 ```
 
 #### LaunchDarkly Integration
+
 ```typescript
 // feature-flags/launchdarkly.ts
-import LaunchDarkly from 'launchdarkly-node-server-sdk';
+import LaunchDarkly from "launchdarkly-node-server-sdk";
 
 export class LaunchDarklyClient {
   private client: LaunchDarkly.LDClient;
@@ -534,14 +552,17 @@ export class LaunchDarklyClient {
     await this.client.waitForInitialization();
   }
 
-  async isEnabled(flagKey: string, user: LaunchDarkly.LDUser): Promise<boolean> {
+  async isEnabled(
+    flagKey: string,
+    user: LaunchDarkly.LDUser,
+  ): Promise<boolean> {
     return this.client.variation(flagKey, user, false);
   }
 
   async getVariation<T>(
     flagKey: string,
     user: LaunchDarkly.LDUser,
-    defaultValue: T
+    defaultValue: T,
   ): Promise<T> {
     return this.client.variation(flagKey, user, defaultValue);
   }
@@ -555,16 +576,16 @@ export class LaunchDarklyClient {
 const ldClient = new LaunchDarklyClient();
 await ldClient.initialize();
 
-app.get('/api/dashboard', async (req, res) => {
+app.get("/api/dashboard", async (req, res) => {
   const user = {
     key: req.user.id,
     email: req.user.email,
     custom: {
-      groups: req.user.groups
-    }
+      groups: req.user.groups,
+    },
   };
 
-  const showNewDashboard = await ldClient.isEnabled('new-dashboard', user);
+  const showNewDashboard = await ldClient.isEnabled("new-dashboard", user);
 
   if (showNewDashboard) {
     return res.json(getNewDashboard());
@@ -592,27 +613,27 @@ app.get('/api/dashboard', async (req, res) => {
 export const config = {
   database: {
     url: process.env.DATABASE_URL!,
-    poolMin: parseInt(process.env.DB_POOL_MIN || '2', 10),
-    poolMax: parseInt(process.env.DB_POOL_MAX || '10', 10)
+    poolMin: parseInt(process.env.DB_POOL_MIN || "2", 10),
+    poolMax: parseInt(process.env.DB_POOL_MAX || "10", 10),
   },
   redis: {
-    url: process.env.REDIS_URL!
+    url: process.env.REDIS_URL!,
   },
   s3: {
     bucket: process.env.S3_BUCKET!,
-    region: process.env.AWS_REGION!
+    region: process.env.AWS_REGION!,
   },
   sendgrid: {
-    apiKey: process.env.SENDGRID_API_KEY!
-  }
+    apiKey: process.env.SENDGRID_API_KEY!,
+  },
 };
 
 // ❌ Bad: Hardcoded configuration
 const badConfig = {
   database: {
-    host: 'prod-db.example.com',  // Hardcoded!
-    password: 'secretpassword'     // Secret in code!
-  }
+    host: "prod-db.example.com", // Hardcoded!
+    password: "secretpassword", // Secret in code!
+  },
 };
 
 /**
@@ -638,11 +659,11 @@ function startServer() {
   });
 
   // Graceful shutdown
-  process.on('SIGTERM', async () => {
-    console.log('SIGTERM received, shutting down gracefully');
+  process.on("SIGTERM", async () => {
+    console.log("SIGTERM received, shutting down gracefully");
 
     server.close(() => {
-      console.log('HTTP server closed');
+      console.log("HTTP server closed");
     });
 
     await db.close();
@@ -657,46 +678,34 @@ function startServer() {
 
 ```typescript
 // config/validation.ts
-import Joi from 'joi';
+import Joi from "joi";
 
 const configSchema = Joi.object({
   NODE_ENV: Joi.string()
-    .valid('development', 'production', 'test')
-    .default('development'),
+    .valid("development", "production", "test")
+    .default("development"),
 
-  PORT: Joi.number()
-    .port()
-    .default(3000),
+  PORT: Joi.number().port().default(3000),
 
-  DATABASE_URL: Joi.string()
-    .uri()
-    .required(),
+  DATABASE_URL: Joi.string().uri().required(),
 
-  REDIS_URL: Joi.string()
-    .uri()
-    .default('redis://localhost:6379'),
+  REDIS_URL: Joi.string().uri().default("redis://localhost:6379"),
 
   LOG_LEVEL: Joi.string()
-    .valid('debug', 'info', 'warn', 'error')
-    .default('info'),
+    .valid("debug", "info", "warn", "error")
+    .default("info"),
 
-  API_KEY: Joi.string()
-    .min(32)
-    .required(),
+  API_KEY: Joi.string().min(32).required(),
 
-  API_TIMEOUT: Joi.number()
-    .min(1000)
-    .max(30000)
-    .default(5000),
+  API_TIMEOUT: Joi.number().min(1000).max(30000).default(5000),
 
-  ENABLE_METRICS: Joi.boolean()
-    .default(false)
+  ENABLE_METRICS: Joi.boolean().default(false),
 });
 
 export function validateConfig() {
   const { error, value } = configSchema.validate(process.env, {
-    allowUnknown: true,  // Allow other env vars
-    stripUnknown: true   // Remove unknown vars
+    allowUnknown: true, // Allow other env vars
+    stripUnknown: true, // Remove unknown vars
   });
 
   if (error) {
@@ -738,7 +747,7 @@ export class RemoteConfigService {
         }
       }
     } catch (error) {
-      console.error('Failed to fetch remote config:', error);
+      console.error("Failed to fetch remote config:", error);
     }
   }
 
@@ -761,12 +770,14 @@ export class RemoteConfigService {
 }
 
 // Usage
-const remoteConfig = new RemoteConfigService('https://config-service.example.com');
+const remoteConfig = new RemoteConfigService(
+  "https://config-service.example.com",
+);
 await remoteConfig.initialize();
 
-app.get('/api/users', (req, res) => {
-  const pageSize = remoteConfig.get('api.users.pageSize', 20);
-  const enableCache = remoteConfig.get('api.users.enableCache', false);
+app.get("/api/users", (req, res) => {
+  const pageSize = remoteConfig.get("api.users.pageSize", 20);
+  const enableCache = remoteConfig.get("api.users.enableCache", false);
 
   // Use dynamic config values
 });
@@ -775,6 +786,7 @@ app.get('/api/users', (req, res) => {
 ## Best Practices
 
 ### ✅ DO
+
 - Store configuration in environment variables
 - Use different config files per environment
 - Validate configuration on startup
@@ -790,6 +802,7 @@ app.get('/api/users', (req, res) => {
 - Cache secrets to reduce API calls
 
 ### ❌ DON'T
+
 - Hardcode configuration in source code
 - Commit .env files with real secrets
 - Use different config formats across services
@@ -804,6 +817,7 @@ app.get('/api/users', (req, res) => {
 ## Common Patterns
 
 ### Pattern 1: Config Service
+
 ```typescript
 export class ConfigService {
   private static instance: ConfigService;
@@ -827,6 +841,7 @@ export class ConfigService {
 ```
 
 ### Pattern 2: Configuration Builder
+
 ```typescript
 export class ConfigBuilder {
   private config: Partial<Config> = {};

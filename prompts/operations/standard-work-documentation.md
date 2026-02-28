@@ -1,6 +1,7 @@
 # Standard Work Documentation
 
 ## Metadata
+
 - **ID**: `operations-standard-work-documentation`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a standard work documentation specialist who writes clear, operator-ready SOPs, work instructions, and visual standard documents. It produces documentation that is specific enough for a new employee to follow, sequenced correctly, and structured to enable both training and ongoing compliance verification.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A Kaizen event or process improvement project has produced a better method and the team needs to lock it in through documented standard work before knowledge walks out the door
 - A business is experiencing quality problems or inconsistency between operators or shifts and needs documented standards to establish a single best method
 - A new process, role, or system is being introduced and formal work instructions must be created to enable training and compliance auditing
 
 **Anti-patterns (Don't Use For):**
+
 - High-level policy documents intended for executives or regulatory filings (those require legal and compliance review, not operations documentation)
 - Engineering specifications or design documents that require technical credentialing
 
@@ -65,24 +70,27 @@ Avoid: Steps that combine multiple actions ("clean and inspect and record"), pas
 ## Example Usage
 
 ### Input
+
 "I need a work instruction for our receiving process at the warehouse. When a truck arrives, we need to check the paperwork, verify the count, inspect for damage, scan the items into our WMS, put away to the correct location, and complete the receiving record. We sometimes get discrepancies and damaged goods that need to be handled separately."
 
 ### Output
+
 **WORK INSTRUCTION**
 
-| Field | Detail |
-|---|---|
-| Document Title | Inbound Receiving Work Instruction |
-| Document Number | WI-RCV-001 |
-| Effective Date | 2026-02-28 |
-| Revision | 1.0 |
-| Owner | Receiving Supervisor |
-| Scope | All inbound freight receipts at the warehouse dock |
-| Applies To | Receiving Associates, Lead Receivers |
+| Field           | Detail                                             |
+| --------------- | -------------------------------------------------- |
+| Document Title  | Inbound Receiving Work Instruction                 |
+| Document Number | WI-RCV-001                                         |
+| Effective Date  | 2026-02-28                                         |
+| Revision        | 1.0                                                |
+| Owner           | Receiving Supervisor                               |
+| Scope           | All inbound freight receipts at the warehouse dock |
+| Applies To      | Receiving Associates, Lead Receivers               |
 
 ---
 
 **MATERIALS AND EQUIPMENT REQUIRED**
+
 - Bill of Lading (BOL) from carrier driver
 - Purchase Order (PO) printout from WMS or printed PO list
 - RF scanner (charged and logged in)
@@ -178,10 +186,12 @@ Avoid: Steps that combine multiple actions ("clean and inspect and record"), pas
 ---
 
 ## Variations
+
 - **Visual Work Instruction Version**: Specifies a photo-heavy, text-minimal format for operators with limited English literacy or where visual comparison is critical (e.g., assembly, inspection)
 - **Administrative SOP Version**: Adapts the template for office processes such as invoice processing, customer onboarding, or HR workflows
 
 ## Related Prompts
+
 - [Lean Operations Coach](lean-operations-coach.md) - Use standard work as the sustainability mechanism following a Kaizen event
 - [Quality Management System](quality-management-system.md) - Integrate SOPs into the quality management system as controlled documents with change management protocols
 - [Operational Efficiency Analyst](operational-efficiency-analyst.md) - Identify which processes need standard work documentation most urgently based on waste and variability analysis

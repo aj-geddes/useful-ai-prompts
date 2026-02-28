@@ -1,6 +1,7 @@
 # Solar Project Financial Modeling and Investment Analysis
 
 ## Metadata
+
 - **ID**: `solar-project-financial-modeling-investment`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables comprehensive financial modeling and investment analysis for
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing financial models for utility-scale solar investments
 - Structuring tax equity partnerships and debt financing
 - Analyzing PPA structures versus merchant market strategies
@@ -25,6 +27,7 @@ This prompt enables comprehensive financial modeling and investment analysis for
 - Preparing investment memoranda for capital raising
 
 **Anti-patterns (when not to use):**
+
 - Residential solar financing (simpler loan/lease structures)
 - Early-stage site prospecting (use resource assessment prompt)
 - Construction phase project controls
@@ -116,6 +119,7 @@ Develop comprehensive financial analysis:
 ## Example Usage
 
 ### Input
+
 We're structuring financing for a 150 MW solar project in ERCOT (Texas). The project has a 15-year PPA at $35/MWh with a creditworthy utility offtaker for 70% of output. The remaining 30% will be merchant exposure. Construction starts in 6 months with target COD in 18 months. We need to optimize the capital structure for a 70/30 debt-equity split with tax equity.
 
 ### Output
@@ -124,7 +128,7 @@ We're structuring financing for a 150 MW solar project in ERCOT (Texas). The pro
 
 **Project Economics Overview**
 
-*Capital budget:*
+_Capital budget:_
 | Component | Cost | $/W DC |
 |-----------|------|--------|
 | Modules | $27.0M | $0.18 |
@@ -136,38 +140,43 @@ We're structuring financing for a 150 MW solar project in ERCOT (Texas). The pro
 | Contingency (5%) | $5.8M | $0.04 |
 | **Total** | **$122.8M** | **$0.82** |
 
-*Operating parameters:*
+_Operating parameters:_
+
 - Capacity: 150 MW DC / 120 MW AC
 - Annual production: 325 GWh (P50), 310 GWh (P90)
 - Capacity factor: 24.7% (net AC)
 - Degradation: 0.5%/year
 - O&M: $8.50/kW-year ($1.02M/year)
 
-*LCOE calculation:*
+_LCOE calculation:_
+
 - Unlevered LCOE: $28.50/MWh (highly competitive)
 - Levered LCOE: $32.00/MWh (with financing costs)
 
 **Revenue Structure and Optimization**
 
-*Contracted revenue (70%):*
+_Contracted revenue (70%):_
+
 - PPA volume: ~228 GWh/year
 - PPA price: $35/MWh with 1.5% annual escalation
 - Year 1 revenue: $8.0M
 - 15-year PPA NPV: $105M
 
-*Merchant revenue (30%):*
+_Merchant revenue (30%):_
+
 - Merchant volume: ~97 GWh/year
 - ERCOT price forecast: $38/MWh Year 1, declining to $32/MWh by Year 10
 - Year 1 merchant revenue: $3.7M
 - Merchant strategy: 50% hedged through forward contracts, 50% spot exposure
 
-*Additional revenue streams:*
+_Additional revenue streams:_
+
 - Renewable Energy Credits: $3/MWh = $1.0M/year
 - Ancillary services (future): Potential $0.5M/year with grid services capability
 
-*Total Year 1 revenue: $12.7M*
+_Total Year 1 revenue: $12.7M_
 
-*Revenue risk analysis:*
+_Revenue risk analysis:_
 | Scenario | Annual Revenue | Impact |
 |----------|---------------|--------|
 | P50 base case | $12.7M | Baseline |
@@ -177,7 +186,7 @@ We're structuring financing for a 150 MW solar project in ERCOT (Texas). The pro
 
 **Capital Structure Optimization**
 
-*Recommended structure:*
+_Recommended structure:_
 | Source | Amount | % | Cost |
 |--------|--------|---|------|
 | Construction debt | $85.0M | 69% | SOFR + 175 bps |
@@ -185,13 +194,15 @@ We're structuring financing for a 150 MW solar project in ERCOT (Texas). The pro
 | Sponsor equity | $12.8M | 11% | Target 18%+ IRR |
 | **Total** | **$122.8M** | 100% | |
 
-*Debt sizing:*
+_Debt sizing:_
+
 - Construction loan: $85M (fully funded, 18-month term)
 - Term conversion: $75M (mini-perm, 7-year with 18-year amortization)
 - DSCR minimum: 1.35x (Year 1), 1.30x (all years)
 - Debt paydown from tax equity buyout proceeds
 
-*Tax equity structure:*
+_Tax equity structure:_
+
 - Partnership flip at Year 6 (99%/1% to 5%/95%)
 - Tax equity allocated 99% of tax benefits until target yield achieved
 - ITC: $36.8M (30% of eligible basis)
@@ -200,12 +211,13 @@ We're structuring financing for a 150 MW solar project in ERCOT (Texas). The pro
 
 **Tax Optimization Strategy**
 
-*Federal incentives:*
+_Federal incentives:_
+
 - Investment Tax Credit (30%): $36.8M
 - Bonus depreciation (MACRS): $122.8M basis, 5-year schedule
 - Total tax benefit value: ~$55M NPV (assuming 21% corporate rate)
 
-*Tax equity economics:*
+_Tax equity economics:_
 | Year | Tax Benefits | Cash | Total Return |
 |------|-------------|------|--------------|
 | 1 | $25.8M | $0.2M | $26.0M |
@@ -219,7 +231,7 @@ After-tax IRR to tax equity: 8.5% (market rate for utility-grade PPA projects)
 
 **Investment Returns Analysis**
 
-*Sponsor returns:*
+_Sponsor returns:_
 | Metric | Value |
 |--------|-------|
 | Sponsor equity | $12.8M |
@@ -229,7 +241,7 @@ After-tax IRR to tax equity: 8.5% (market rate for utility-grade PPA projects)
 | Cash multiple | 2.8x (over project life) |
 | Payback period | 6 years |
 
-*Sensitivity analysis:*
+_Sensitivity analysis:_
 | Variable | Change | IRR Impact |
 |----------|--------|------------|
 | Production | -5% | -2.5% |
@@ -238,35 +250,39 @@ After-tax IRR to tax equity: 8.5% (market rate for utility-grade PPA projects)
 | Interest rate | +100 bps | -1.2% |
 | ITC reduction | 30% to 26% | -2.0% |
 
-*Project-level returns:*
+_Project-level returns:_
+
 - Unlevered IRR: 9.5%
 - Unlevered NPV (8% discount): $28M
 - LCOE competitive position: 15% below market clearing prices
 
 **Risk Assessment and Mitigation**
 
-| Risk Category | Key Risks | Mitigation |
-|---------------|-----------|------------|
-| Construction | Cost overrun, delay | Fixed-price EPC, performance bonds, contingency |
-| Technology | Underperformance | Tier-1 equipment, warranties, performance guarantees |
-| Offtake | PPA counterparty | Investment-grade offtaker, credit support |
-| Market | Merchant price decline | Partial hedging, diversified revenue streams |
-| Regulatory | ITC reduction | Safe harbor equipment, tax indemnification |
-| Operational | O&M cost inflation | Long-term service agreement, cost caps |
+| Risk Category | Key Risks              | Mitigation                                           |
+| ------------- | ---------------------- | ---------------------------------------------------- |
+| Construction  | Cost overrun, delay    | Fixed-price EPC, performance bonds, contingency      |
+| Technology    | Underperformance       | Tier-1 equipment, warranties, performance guarantees |
+| Offtake       | PPA counterparty       | Investment-grade offtaker, credit support            |
+| Market        | Merchant price decline | Partial hedging, diversified revenue streams         |
+| Regulatory    | ITC reduction          | Safe harbor equipment, tax indemnification           |
+| Operational   | O&M cost inflation     | Long-term service agreement, cost caps               |
 
 **Financing Timeline**
 
-*Pre-construction (Months 1-6):*
+_Pre-construction (Months 1-6):_
+
 - Month 1-2: Financial model finalization, term sheet negotiation
 - Month 3-4: Due diligence (technical, legal, market, insurance)
 - Month 5: Documentation negotiation, conditions precedent
 - Month 6: Financial close, construction loan funding
 
-*Construction (Months 7-18):*
+_Construction (Months 7-18):_
+
 - Monthly construction draws against milestone completion
 - Tax equity funding at COD or substantial completion
 
-*Operations (Month 19+):*
+_Operations (Month 19+):_
+
 - Term loan conversion
 - Tax equity flip (Year 6)
 - Refinancing opportunity (Year 7-10)
@@ -274,12 +290,14 @@ After-tax IRR to tax equity: 8.5% (market rate for utility-grade PPA projects)
 **Investment Recommendation**
 
 The project demonstrates strong investment fundamentals:
+
 - **Competitive LCOE** ($28.50/MWh unlevered) positions well in ERCOT market
 - **Contracted revenue** (70% PPA) provides cash flow stability
 - **Attractive returns** (18% sponsor IRR) exceed hurdle rates
 - **Manageable risk profile** with investment-grade offtaker and hedging strategy
 
 Proceed with financing execution. Key focus areas:
+
 1. Lock tax equity commitment before ITC step-down risk
 2. Execute merchant hedge strategy for price protection
 3. Complete EPC contracting with appropriate risk transfer

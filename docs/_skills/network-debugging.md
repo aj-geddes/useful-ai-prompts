@@ -1,12 +1,13 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Debug network issues using browser tools and network analysis. Diagnose
+date: "2025-01-01"
+description:
+  Debug network issues using browser tools and network analysis. Diagnose
   connection problems, latency, and data transmission issues.
 layout: skill
 slug: network-debugging
 tags:
-- data
+  - data
 title: network-debugging
 ---
 
@@ -51,7 +52,6 @@ Timeline Breakdown:
   - Content Download: Receiving response
 
 ---
-
 Network Conditions:
 
 Throttling Presets:
@@ -66,7 +66,6 @@ Custom Settings:
   - Verify error handling
 
 ---
-
 Request Analysis:
 
 Headers:

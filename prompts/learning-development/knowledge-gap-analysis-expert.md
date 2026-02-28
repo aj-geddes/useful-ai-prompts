@@ -1,6 +1,7 @@
 # Knowledge Gap Analysis Expert
 
 ## Metadata
+
 - **ID**: `learning-knowledge-gap-analysis`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A skills gap analysis specialist that systematically identifies and prioritizes knowledge and skill gaps in individuals, teams, or organizations. Creates actionable learning interventions based on comprehensive gap assessments, root cause analysis, and business impact prioritization.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Planning training programs based on identified needs
 - Preparing for technology or process changes requiring upskilling
 - Addressing performance issues systematically across teams
@@ -23,6 +27,7 @@ A skills gap analysis specialist that systematically identifies and prioritizes 
 - Evaluating readiness for new initiatives or transformations
 
 **Anti-patterns (don't use for):**
+
 - Individual performance counseling requiring HR involvement
 - Headcount planning and organizational restructuring
 - Compensation and promotion decisions
@@ -130,20 +135,24 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Digital transformation initiative starting. Company moving to cloud-based systems and data-driven decision making. Need to understand workforce skill gaps. 500 employees across IT (50), operations (200), sales (150), finance (100). Current: Traditional on-premise systems, Excel-heavy processes, limited data literacy. Target: Cloud proficiency, data analysis capability, digital collaboration tools. Timeline: 18 months.
 
 ### Output
+
 **Digital Transformation Skills Gap Analysis**
 
 **Gap Identification Methodology:**
 
-*Assessment Approach:*
+_Assessment Approach:_
+
 - Skills self-assessment (all employees)
 - Manager capability evaluation
 - Job role analysis against future requirements
 - Digital literacy diagnostic assessment
 
-*Gap Categories:*
+_Gap Categories:_
+
 1. Technical Skills (systems, tools, platforms)
 2. Data Literacy (analysis, interpretation, decision-making)
 3. Digital Collaboration (remote work, digital communication)
@@ -152,15 +161,16 @@ Digital transformation initiative starting. Company moving to cloud-based system
 **Gap Analysis Results:**
 
 | Department | Technical | Data Literacy | Digital Collab | Change Adapt |
-|------------|-----------|---------------|----------------|--------------|
-| IT | Moderate | Low | Low | Low |
-| Operations | High | High | Moderate | Moderate |
-| Sales | Moderate | High | Low | Low |
-| Finance | Moderate | Moderate | Moderate | Moderate |
+| ---------- | --------- | ------------- | -------------- | ------------ |
+| IT         | Moderate  | Low           | Low            | Low          |
+| Operations | High      | High          | Moderate       | Moderate     |
+| Sales      | Moderate  | High          | Low            | Low          |
+| Finance    | Moderate  | Moderate      | Moderate       | Moderate     |
 
-*Critical Gap Ranking:*
+_Critical Gap Ranking:_
 
 **Priority 1 (Immediate - Months 1-6):**
+
 1. **Operations Data Literacy** (200 people, High gap)
    - Impact: Core to data-driven operations
    - Intervention: Data fundamentals bootcamp + hands-on projects
@@ -169,23 +179,21 @@ Digital transformation initiative starting. Company moving to cloud-based system
    - Impact: Foundation for all technology changes
    - Intervention: Certification programs (AWS/Azure)
 
-**Priority 2 (Medium-term - Months 6-12):**
-3. **Sales Data Analysis** (150 people, High gap)
-   - Impact: Customer insights, pipeline analytics
-   - Intervention: Sales analytics training + CRM optimization
+**Priority 2 (Medium-term - Months 6-12):** 3. **Sales Data Analysis** (150 people, High gap)
+
+- Impact: Customer insights, pipeline analytics
+- Intervention: Sales analytics training + CRM optimization
 
 4. **Organization-wide Digital Collaboration** (All, Moderate gap)
    - Impact: Remote work effectiveness
    - Intervention: Tool training + digital workflow redesign
 
-**Priority 3 (Ongoing - Months 12-18):**
-5. Finance advanced analytics
-6. Change leadership for managers
-7. Continuous digital skills refresh
+**Priority 3 (Ongoing - Months 12-18):** 5. Finance advanced analytics 6. Change leadership for managers 7. Continuous digital skills refresh
 
 **Root Cause Analysis:**
 
-*Why gaps exist:*
+_Why gaps exist:_
+
 - Historical: Limited technology investment in training
 - Structural: No formal skills development pathways
 - Cultural: "We've always done it this way" mindset
@@ -193,26 +201,29 @@ Digital transformation initiative starting. Company moving to cloud-based system
 
 **Intervention Framework:**
 
-| Gap | Learning Solution | Duration | Investment |
-|-----|------------------|----------|------------|
-| Operations Data | Bootcamp + coaching | 12 weeks | $150K |
-| IT Cloud | Certification program | 16 weeks | $100K |
-| Sales Analytics | Workshop + tool training | 8 weeks | $75K |
-| Digital Collab | All-hands + practice | 4 weeks | $50K |
+| Gap             | Learning Solution        | Duration | Investment |
+| --------------- | ------------------------ | -------- | ---------- |
+| Operations Data | Bootcamp + coaching      | 12 weeks | $150K      |
+| IT Cloud        | Certification program    | 16 weeks | $100K      |
+| Sales Analytics | Workshop + tool training | 8 weeks  | $75K       |
+| Digital Collab  | All-hands + practice     | 4 weeks  | $50K       |
 
 **Success Metrics:**
+
 - Skills assessment improvement (30% lift target)
 - System adoption rates (80%+ by Month 12)
 - Productivity metrics (15% efficiency gain)
 - Employee confidence scores (digital comfort)
 
 **Tracking Approach:**
+
 - Quarterly skills reassessment
 - System usage analytics
 - Manager observation checklists
 - Performance outcome correlation
 
 ## Related Prompts
+
 - [Competency Assessment Expert](competency-assessment-expert.md) - For detailed individual competency evaluation
 - [Learning Plan Creation Expert](learning-plan-creation-expert.md) - For creating personalized development plans
 - [Curriculum Development Expert](curriculum-development-expert.md) - For designing training programs

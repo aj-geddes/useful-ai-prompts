@@ -1,6 +1,7 @@
 # Conflict Resolution Strategist
 
 ## Metadata
+
 - **ID**: `conflict-resolution-strategist`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Navigate disputes and disagreements constructively with frameworks for understan
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Managing ongoing interpersonal conflicts requiring strategic approach
 - Preparing comprehensive resolution strategy for complex disputes
 - Repairing relationships after significant disagreements
@@ -25,6 +27,7 @@ Navigate disputes and disagreements constructively with frameworks for understan
 - Navigating multi-party conflicts with competing interests
 
 **Anti-Patterns (When NOT to Use):**
+
 - Legal mediation requiring certified professionals
 - Abuse situations requiring safety-first intervention
 - Professional arbitration with formal requirements
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 3-month ongoing tension with coworker over project responsibilities and communication. She went to our boss without talking to me first. We're equal level but she has more tenure, I have specific technical expertise. Small startup, informal culture, manager is conflict-avoidant. Major project deadline in 6 weeks. I want respectful working relationship and clear communication.
 
 ### Output
@@ -115,14 +119,16 @@ Avoid:
 
 **Conflict Analysis**
 
-*Root Causes Identified*
+_Root Causes Identified_
+
 1. Communication breakdown: Direct conversation avoidance has escalated tension
 2. Authority ambiguity: Startup informality creates unclear decision-making boundaries
 3. Different operational styles: Your collaborative approach vs. her hierarchical approach
 4. Trust breach: Going to boss without direct conversation damaged trust
 5. Unmet needs: Your need for respect/equality, her likely need for recognition/security
 
-*Underlying Dynamics*
+_Underlying Dynamics_
+
 - Her tenure may create expectation of informal seniority
 - Your technical expertise may feel threatening to her established position
 - Manager's conflict avoidance enables escalation rather than resolution
@@ -130,41 +136,45 @@ Avoid:
 
 **Strategic Approach**
 
-*Phase 1: Internal Preparation*
+_Phase 1: Internal Preparation_
+
 - Regulate your emotions before any conversation (you cannot de-escalate if escalated)
 - Clarify your interests: respect, collaborative communication, project success, working relationship
 - Anticipate her interests: recognition for experience, security, validation of her approach
 - Prepare to listen first, advocate second
 
-*Phase 2: Initiate Resolution Conversation*
+_Phase 2: Initiate Resolution Conversation_
 Opening: "Sarah, I'd like to improve how we work together. I value your experience and want our project to succeed. Can we set aside 30-45 minutes to talk about our collaboration?"
 
 If she's reluctant: "I know we've had some tension. I'd like to understand your perspective and find a way forward that works for both of us."
 
 **Conversation Framework**
 
-*Opening (5 minutes)*
+_Opening (5 minutes)_
 "I realize we've had some friction. I want to understand your perspective and share mine so we can work together more effectively. I'm committed to finding a solution."
 
-*Listen First Phase (15 minutes)*
+_Listen First Phase (15 minutes)_
 Key questions:
+
 - "What would help you feel most supported in this project?"
 - "How do you prefer to make decisions when we disagree on approach?"
 - "What are your main concerns about how we've been working together?"
 
 Technique: Reflect back before responding. "What I'm hearing is..." Resist defending until you fully understand.
 
-*Share Your Perspective Phase (10 minutes)*
+_Share Your Perspective Phase (10 minutes)_
 "I felt caught off guard when the approach disagreement went to [boss] before we could discuss it. What I need is for us to talk through concerns directly first. I want us to be able to disagree and work it out together."
 
 Avoid blame: Focus on behavior and impact, not character or intent.
 
-*Problem-Solve Together Phase (15 minutes)*
+_Problem-Solve Together Phase (15 minutes)_
+
 - "What would ideal collaboration look like for you?"
 - "I'm willing to [specific adjustment] if you're open to [specific adjustment]."
 - "Should we establish some ground rules for how we communicate about disagreements?"
 
 **De-escalation Phrases for Heated Moments**
+
 - "Help me understand your perspective on this."
 - "I can see this is important to you. Tell me more."
 - "Let's focus on finding something that works for both of us."
@@ -172,18 +182,21 @@ Avoid blame: Focus on behavior and impact, not character or intent.
 - "I hear you. Let me think about that before responding."
 
 **Potential Agreement Options**
+
 - Weekly 15-minute alignment sync on project decisions
 - Clear agreement: discuss concerns directly before involving manager
 - Explicit division: "You own X-type decisions, I own Y-type decisions"
 - Two-week trial with scheduled check-in to assess progress
 
 **Follow-Through Plan**
+
 - Week 1: Implement agreements with visible consistency
 - Week 2: First check-in conversation to assess and adjust
 - Weeks 3-4: Refine approach based on what's working
 - Ongoing: Address any new friction within 24 hours before it accumulates
 
 **Relationship Repair Indicators**
+
 - Direct conversations replacing indirect tension
 - Proactive information sharing in both directions
 - Ability to build on each other's ideas in meetings
@@ -191,6 +204,7 @@ Avoid blame: Focus on behavior and impact, not character or intent.
 - You both feeling less stressed about the working relationship
 
 **If Resolution Stalls**
+
 - Propose involving manager as facilitator, not judge
 - Suggest external mediator if available
 - Focus on minimum viable working agreement for project completion
@@ -199,6 +213,7 @@ Avoid blame: Focus on behavior and impact, not character or intent.
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Active Listening Trainer](active-listening-trainer.md)
 - [Conflict Resolution Mediator](conflict-resolution-mediator.md)

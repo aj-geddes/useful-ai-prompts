@@ -1,6 +1,7 @@
 # Architectural Decision Record (ADR) Generator
 
 ## Metadata
+
 - **ID**: `research-adr-generation`
 - **Version**: 1.0.0
 - **Category**: Research/Technical
@@ -18,6 +19,7 @@ Generate rigorous Architectural Decision Records (ADRs) that document technical 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Documenting significant architectural or technology selection decisions
 - Establishing decision audit trails for compliance or governance requirements
 - Capturing rationale for technology selections when alternatives existed
@@ -25,6 +27,7 @@ Generate rigorous Architectural Decision Records (ADRs) that document technical 
 - Recording decisions that may need reconsideration under changed conditions
 
 **Anti-Patterns (Don't Use For):**
+
 - Trivial implementation details without architectural impact
 - Personal preferences without measurable trade-offs
 - Temporary workarounds intended for short-term use
@@ -110,6 +113,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to document our decision to use PostgreSQL instead of MongoDB for our new customer data platform. The decision was made last week after evaluating both options. Key factors were ACID compliance requirements for financial accuracy, team expertise (we have 3 PostgreSQL DBAs), and integration with existing BI tools (Tableau and Looker). We expect around 10M records and 500 concurrent users. MongoDB was considered for its flexible schema, but eventual consistency was a concern."
 
 ### Output
@@ -126,6 +130,7 @@ Accepted
 The Customer Data Platform (CDP) requires a primary database to store customer profiles, interaction history, segmentation data, and derived analytics. This database will serve as the source of truth for customer information across marketing, sales, and support systems.
 
 **Key Requirements**:
+
 - ACID compliance for financial transaction data accuracy
 - Complex query support for analytics and real-time reporting
 - Integration with existing BI infrastructure (Tableau, Looker)
@@ -133,6 +138,7 @@ The Customer Data Platform (CDP) requires a primary database to store customer p
 - Scale: ~10M customer records, 500 concurrent users
 
 **Current Environment**:
+
 - PostgreSQL expertise established: 3 senior DBAs with 5+ years experience each
 - Existing infrastructure: Backup, monitoring, and disaster recovery procedures established for PostgreSQL
 - BI integration: Native PostgreSQL connectors verified for Tableau and Looker
@@ -143,19 +149,20 @@ Adopt PostgreSQL 15 as the primary database for the Customer Data Platform.
 
 **Selection Rationale**:
 
-| Criterion | Weight | PostgreSQL Assessment |
-|-----------|--------|----------------------|
-| ACID compliance | Critical | Full compliance, required for financial accuracy |
-| BI integration | High | Native connectors verified and tested |
-| Team expertise | High | 3 DBAs, established operational procedures |
-| Query complexity | High | Full SQL, CTEs, window functions supported |
-| Operational maturity | Medium | Existing monitoring, backup, DR procedures |
+| Criterion            | Weight   | PostgreSQL Assessment                            |
+| -------------------- | -------- | ------------------------------------------------ |
+| ACID compliance      | Critical | Full compliance, required for financial accuracy |
+| BI integration       | High     | Native connectors verified and tested            |
+| Team expertise       | High     | 3 DBAs, established operational procedures       |
+| Query complexity     | High     | Full SQL, CTEs, window functions supported       |
+| Operational maturity | Medium   | Existing monitoring, backup, DR procedures       |
 
 ## Considered Alternatives
 
 ### MongoDB
 
 **Evaluation Summary**:
+
 - **Benefits**: Flexible schema reduces migration complexity; horizontal scaling architecture
 - **Limitations**: Eventual consistency default conflicts with ACID requirement; BI connector requires additional configuration and has known limitations with complex aggregations
 - **Decision Factor**: ACID requirement not met without transaction coordination overhead; team would require 3-6 month skill development
@@ -163,6 +170,7 @@ Adopt PostgreSQL 15 as the primary database for the Customer Data Platform.
 ### Amazon Aurora (PostgreSQL-compatible)
 
 **Evaluation Summary**:
+
 - **Benefits**: Managed service reduces operational burden; PostgreSQL compatibility preserves team expertise
 - **Limitations**: 2.5x cost compared to self-managed PostgreSQL; introduces AWS dependency
 - **Decision Factor**: Cost premium not justified given existing operational capability and 10M record scale
@@ -170,6 +178,7 @@ Adopt PostgreSQL 15 as the primary database for the Customer Data Platform.
 ### CockroachDB
 
 **Evaluation Summary**:
+
 - **Benefits**: Distributed PostgreSQL-compatible with strong consistency; horizontal scaling
 - **Limitations**: Higher operational complexity; team unfamiliar with distributed database operations
 - **Decision Factor**: Scale requirements (10M records) do not justify distributed database complexity
@@ -214,14 +223,15 @@ This decision should be revisited if any of the following conditions occur:
 
 ---
 
-*Decision Date*: 2024-12-20
-*Decision Makers*: Platform Architecture Team
-*Author*: [Name]
+_Decision Date_: 2024-12-20
+_Decision Makers_: Platform Architecture Team
+_Author_: [Name]
 ```
 
 ---
 
 ## Related Prompts
+
 - [Technology Assessment Expert](../research-workflows/technology-assessment-expert.md) - Technology evaluation methodology
 - [Scientific Inquiry Expert](../research-workflows/scientific-inquiry-expert.md) - Systematic analysis frameworks
 - [System Architecture Design Expert](../technical-workflows/system-architecture-design-expert.md) - Architecture decision context

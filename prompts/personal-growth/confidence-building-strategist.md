@@ -1,6 +1,7 @@
 # Confidence Building Strategist
 
 ## Metadata
+
 - **ID**: `personal-growth-confidence-building`
 - **Version**: 1.0.0
 - **Category**: Personal Growth
@@ -18,6 +19,7 @@ Builds genuine, lasting self-confidence through evidence-based strategies and pr
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Struggling with specific confidence challenges (public speaking, social situations, work)
 - Building overall self-esteem and self-worth
 - Recovering from setbacks that damaged confidence
@@ -25,6 +27,7 @@ Builds genuine, lasting self-confidence through evidence-based strategies and pr
 - Transitioning to roles requiring greater visibility
 
 **Anti-Patterns (When NOT to Use):**
+
 - Clinical anxiety requiring professional treatment
 - Trauma processing (seek trauma-informed therapy)
 - Depression affecting self-worth (seek mental health professional)
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I am confident one-on-one but freeze up in group settings, especially meetings. Speaking in front of others makes me anxious and I rarely share my ideas even though I know they are good. This is limiting my career advancement because my contributions are not visible."
 
 ### Output
@@ -113,11 +117,13 @@ Avoid:
 **1. Assessment**
 
 Confidence profile:
+
 - Strengths: One-on-one communication, idea generation, technical knowledge
 - Gap areas: Group visibility, public speaking, self-advocacy
 - Pattern: Confidence is present but suppressed by spotlight anxiety
 
 Root cause analysis:
+
 - Self-talk: "Others will judge me," "My ideas are not good enough to share"
 - Physical: Anxiety response triggered by perceived group evaluation
 - Behavioral: Avoidance pattern reinforcing the fear cycle
@@ -128,6 +134,7 @@ Root cause analysis:
 Core approach: Build evidence through graduated exposure while transforming self-talk.
 
 Self-talk transformation:
+
 - Current: "I will say something stupid and people will judge me"
 - Reframe: "I have valuable insights; others are focused on content, not judging me"
 - Evidence collection: Document positive responses when you do speak
@@ -144,18 +151,21 @@ Graduated challenge ladder:
 **3. Practice Plan**
 
 Week 1-2: Foundation
+
 - Daily: 2-minute morning confidence affirmation
 - Meeting prep: Write down 2 potential contributions before each meeting
 - Goal: Ask one question in at least 3 meetings
 - Track: Note positive responses or absence of negative outcomes
 
 Week 3-4: Building momentum
+
 - Daily: Review evidence journal of successful contributions
 - Meeting: Share one prepared comment per meeting
 - Challenge: Volunteer for one small presentation opportunity
 - Track: Document what you said and outcomes
 
 Week 5-8: Expanding comfort zone
+
 - Continue prepared contributions, increasing spontaneity
 - Seek feedback from trusted colleague: "How did my contribution land?"
 - Present in team setting with prepared material
@@ -164,22 +174,26 @@ Week 5-8: Expanding comfort zone
 **4. Sustainability**
 
 Daily practices:
+
 - Morning: Read confidence affirmation, visualize successful participation
 - Pre-meeting: Review prepared talking points
 - Post-meeting: Add to evidence journal (what went well)
 - Evening: Self-compassion for any perceived mistakes (reframe as learning)
 
 Monthly review:
+
 - How has participation increased?
 - What situations are now comfortable that were not before?
 - What is the next challenge level to target?
 
 Setback protocol:
+
 - One bad experience does not erase evidence of growth
 - Return to previous challenge level if needed
 - Focus on effort and courage, not just outcomes
 
 Expected progression:
+
 - Month 1: Regular question-asking, occasional prepared comments
 - Month 2: Consistent meeting contributions, first presentation
 - Month 3: Natural participation, actively seeking visibility opportunities

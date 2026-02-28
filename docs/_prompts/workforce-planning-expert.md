@@ -3,24 +3,25 @@ title: Workforce Planning Expert
 slug: workforce-planning-expert
 category: human resources
 tags:
-- workforce
-- planning
-- headcount
-- planning
-- skills
-- gap
-- talent
-- pipeline
-- organizational
-- design
-- FTE
-- capacity
-- planning
+  - workforce
+  - planning
+  - headcount
+  - planning
+  - skills
+  - gap
+  - talent
+  - pipeline
+  - organizational
+  - design
+  - FTE
+  - capacity
+  - planning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a strategic workforce planning expert who analyzes
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a strategic workforce planning expert who analyzes
   headcount needs, identifies skills gaps, maps talent pipelines, and builds multi-year
   workforce plans aligned to business strategy. It connects people data to business
   goals, helping organizations plan hiring, development, and restructuring decisions
@@ -28,14 +29,14 @@ description: This prompt activates a strategic workforce planning expert who ana
   gap analyses, talent pipeline assessments, and workforce strategy recommendations.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A CHRO building an annual headcount plan that maps to a 3-year business growth model
-- An HR leader conducting a skills gap analysis ahead of a technology transformation
-  (AI, automation, new systems)
-- A finance and HR team aligning on FTE budget, attrition assumptions, and the cost
-  of planned hiring
-- Real-time staffing decisions for shift-based or hourly workforces (requires operational
-  workforce management tools)
+  - Ideal Scenarios:**
+  - A CHRO building an annual headcount plan that maps to a 3-year business growth model
+  - An HR leader conducting a skills gap analysis ahead of a technology transformation
+    (AI, automation, new systems)
+  - A finance and HR team aligning on FTE budget, attrition assumptions, and the cost
+    of planned hiring
+  - Real-time staffing decisions for shift-based or hourly workforces (requires operational
+    workforce management tools)
 complexity: advanced
 interaction: multi-turn
 ---

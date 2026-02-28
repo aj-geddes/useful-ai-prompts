@@ -1,6 +1,7 @@
 # User Experience Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-user-experience`
 - **Version**: 1.0.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Optimizes user experiences by identifying pain points, streamlining interactions
 ## When to Use
 
 **Ideal Scenarios:**
+
 - User complaints or low satisfaction scores indicating experience problems
 - High task abandonment rates in critical flows
 - Features that users do not discover or underutilize
@@ -25,6 +27,7 @@ Optimizes user experiences by identifying pain points, streamlining interactions
 - Conversion optimization requiring UX improvements
 
 **Anti-Patterns (When NOT to Use):**
+
 - Visual design and branding (focus on aesthetics vs. usability)
 - Product strategy and feature prioritization
 - Technical implementation and development
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our banking mobile app has a 2.5-star rating with users complaining about finding features and completing transactions. Task completion rate is 68%. We want to improve to 4+ stars and achieve 85% task completion without a complete redesign."
 
 ### Output
@@ -113,6 +117,7 @@ Avoid:
 **1. UX Audit**
 
 User feedback themes (from reviews and support):
+
 - Navigation: "Can't find what I need" - 35% of complaints
 - Transaction flow: "Too many steps" - 25% of complaints
 - Error messages: "Confusing, don't know what to do" - 20% of complaints
@@ -120,6 +125,7 @@ User feedback themes (from reviews and support):
 - Other: 5%
 
 Task completion analysis:
+
 - Overall: 68% completion rate
 - Bill pay: 72% (drop-off at confirmation step)
 - Transfer: 65% (confusion at account selection)
@@ -127,6 +133,7 @@ Task completion analysis:
 - Pay someone new: 55% (high friction, many required fields)
 
 Heuristic evaluation findings:
+
 - Navigation: Too many menu levels, inconsistent labeling
 - Forms: Long forms without progress indication
 - Feedback: Insufficient confirmation, unclear error messages
@@ -136,6 +143,7 @@ Heuristic evaluation findings:
 **2. Improvement Priorities**
 
 High impact, quick wins (Week 1-2):
+
 1. Add bottom navigation bar for top 5 features
    - Problem: Users dig through menus to find common tasks
    - Solution: Persistent access to Transfer, Pay, Cards, More
@@ -151,11 +159,11 @@ High impact, quick wins (Week 1-2):
    - Solution: Specific errors with resolution actions
    - Expected impact: Reduce support calls 20%
 
-Medium effort, high impact (Month 1):
-4. Add quick actions on home screen
-   - Problem: Common tasks require navigation
-   - Solution: "Pay [last payee]", "Transfer to [frequent account]"
-   - Expected impact: 50% fewer taps for repeat transactions
+Medium effort, high impact (Month 1): 4. Add quick actions on home screen
+
+- Problem: Common tasks require navigation
+- Solution: "Pay [last payee]", "Transfer to [frequent account]"
+- Expected impact: 50% fewer taps for repeat transactions
 
 5. Progressive disclosure for complex forms
    - Problem: Long forms overwhelm users
@@ -163,6 +171,7 @@ Medium effort, high impact (Month 1):
    - Expected impact: Improve "pay someone new" from 55% to 75%
 
 Accessibility fixes (throughout):
+
 - Add missing form labels for screen readers
 - Improve color contrast to WCAG AA standard
 - Ensure touch targets are 44x44px minimum
@@ -170,12 +179,14 @@ Accessibility fixes (throughout):
 **3. Testing Approach**
 
 Usability testing (before implementation):
+
 - Recruit: 5-8 representative users
 - Tasks: Transfer money, pay a bill, find account statement
 - Method: Remote moderated sessions with think-aloud protocol
 - Success criteria: Complete task without assistance, satisfaction rating
 
 A/B testing (during rollout):
+
 - Test 1: New navigation vs. current
   - Metric: Task completion rate, time to task
   - Duration: 2 weeks, 50/50 split
@@ -188,21 +199,25 @@ A/B testing (during rollout):
 **4. Implementation Roadmap**
 
 Week 1-2: Quick Wins
+
 - Implement bottom navigation bar
 - Improve error messages with action guidance
 - Fix critical accessibility issues
 
 Week 3-4: Core Flow Improvements
+
 - Deploy simplified transfer flow (A/B test)
 - Add progress indicators to multi-step flows
 - Implement contextual help
 
 Month 2: Enhancement Layer
+
 - Quick actions on home screen
 - Improve "pay someone new" flow
 - Additional accessibility improvements
 
 Success metrics:
+
 - Task completion: 68% to 85% (25% improvement)
 - App store rating: 2.5 to 4.0+ stars
 - Customer satisfaction: 30% improvement

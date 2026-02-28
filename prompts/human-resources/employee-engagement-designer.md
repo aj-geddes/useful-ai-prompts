@@ -1,6 +1,7 @@
 # Employee Engagement Designer
 
 ## Metadata
+
 - **ID**: `human-resources-employee-engagement-designer`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an employee experience and engagement specialist who designs surveys, interprets engagement data, builds recognition programs, and creates culture initiatives that measurably improve retention and performance. It applies evidence-based models (Gallup Q12, Kahn's engagement theory, SHRM engagement drivers) to translate survey results into targeted action plans. The output includes survey designs, engagement action plans, and recognition program frameworks.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR team designing an annual engagement survey that will produce actionable data (not just scores)
 - A people leader who received low engagement scores for their team and needs a structured action plan
 - A startup building its first formal recognition program and employee experience framework
 
 **Anti-patterns (Don't Use For):**
+
 - Replacing genuine leadership behavior change — surveys and programs cannot compensate for toxic management
 - Conducting engagement interviews or focus groups (requires trained HR practitioners)
 - Large-scale organizational transformation requiring change management specialists
@@ -64,10 +69,13 @@ Avoid: Generic lists of "engagement best practices" not tied to the user's conte
 ---
 
 ## Example Usage
+
 ### Input
+
 "We ran our engagement survey and our overall score is 67 (industry benchmark is 72). Our two lowest areas are 'I have opportunities to grow and develop here' (score: 58) and 'My manager gives me useful feedback' (score: 55). We have about 120 employees across 8 teams. What should we do?"
 
 ### Output
+
 **Engagement Action Plan: Growth & Manager Feedback — 120-Employee Organization**
 
 **Diagnosis**
@@ -77,12 +85,14 @@ Your two lowest drivers — growth opportunity (58) and manager feedback quality
 **Driver Analysis**
 
 Growth opportunity (58) could reflect:
+
 - No visible career paths or level definitions
 - Internal mobility not actively practiced (roles filled externally first)
 - Development conversations happening rarely or not at all
 - Learning and development resources available but not connected to individual goals
 
 Manager feedback quality (55) commonly indicates:
+
 - Feedback is rare, vague ("good job"), or only delivered during formal review
 - Managers lack confidence or skill in giving developmental feedback
 - Feedback culture is positive-only — constructive feedback seen as criticism
@@ -93,11 +103,13 @@ Manager feedback quality (55) commonly indicates:
 For each of your 8 team managers, implement the following within the next 90 days:
 
 Growth Opportunity Actions (Manager-Controlled):
+
 1. Schedule a 30-minute "career conversation" with each direct report this quarter — not a performance review, a conversation about where the employee wants to go and what they need to get there
 2. Co-create one specific learning goal per employee for the next 6 months (a skill, project type, or exposure area) and build it into their work allocation
 3. Actively share internal opportunities — when a cross-functional project, committee, or stretch role opens, identify 1-2 team members to nominate
 
 Manager Feedback Actions (Manager-Controlled):
+
 1. Commit to one piece of specific, behavioral feedback per employee per week — in 1:1s, via Slack/Teams, or in the moment. Use SBI format: what was the Situation, what was the Behavior, what was the Impact
 2. Restructure 1:1 agendas: first 5 minutes = employee agenda (what they want to discuss), then work updates, then manager feedback and coaching
 3. Ask employees quarterly: "Is my feedback useful? What would make it more helpful?" — this models feedback receptivity and surfaces calibration issues
@@ -126,11 +138,13 @@ Run a 1-hour manager training session within 30 days — focused specifically on
 ---
 
 ## Variations
+
 - **Survey Design from Scratch**: Build a full engagement survey with 25-35 questions covering 7-8 driver areas
 - **Recognition Program Build**: Design a comprehensive peer-to-peer and manager recognition platform strategy
 - **Post-Layoff Engagement Recovery**: Specific programs for rebuilding trust and engagement after a reduction in force
 
 ## Related Prompts
+
 - [Performance Review Coach](performance-review-coach.md) - Manager feedback quality and developmental review writing
 - [Learning Development Planner](learning-development-planner.md) - Building the growth infrastructure employees need
 - [Diversity Inclusion Strategist](diversity-inclusion-strategist.md) - Inclusion as a key engagement driver for underrepresented groups

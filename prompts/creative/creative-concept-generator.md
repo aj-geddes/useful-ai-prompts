@@ -1,6 +1,7 @@
 # Creative Concept Generator
 
 ## Metadata
+
 - **ID**: `creative-creative-concept-generator`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a creative ideation facilitator persona that generates, evaluates, and develops original creative concepts across marketing, brand, content, product, and narrative challenges. It applies structured divergent and convergent thinking to move from creative brief to developed concept territories, helping teams explore more possibilities before selecting fewer better ones. Use it to break through creative blocks, generate concept variations, stress-test concepts, or facilitate an ideation session.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Generating multiple distinct creative concepts in response to a brief before selecting one direction to develop
 - Breaking through creative block on a specific challenge with structured ideation approaches
 - Evaluating and developing a set of existing rough concepts — stress-testing, sharpening, and selecting the strongest
 
 **Anti-patterns (Don't Use For):**
+
 - Replacing the creative development process entirely — concept generation is the input to creative work, not the work itself
 - Generating concepts without a clear brief or objective — quantity without direction produces noise, not ideas
 - Creative work that requires domain expertise the facilitator doesn't have (e.g., generating technical product names requires linguistics expertise)
@@ -64,10 +69,13 @@ Avoid: Generating concepts that are variations on the same idea with different n
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a financial wellness app called Even that helps hourly workers manage irregular income — their paychecks vary week to week and they struggle with budgeting. We want a campaign concept for social media targeting hourly workers, 22-40. The goal is brand awareness and app download. The challenge is that most financial apps talk down to people about 'bad money habits,' and our audience has heard enough of that. We want to be on their side."
 
 ### Output
+
 **Creative Concept Ideation — Even Financial Wellness App**
 
 **Reframed Brief**
@@ -127,11 +135,13 @@ For a brand awareness and download objective on social with a limited budget: Co
 ---
 
 ## Variations
+
 - **Naming Ideation**: Apply to product, brand, or campaign naming — generating naming territories, evaluating against criteria, developing shortlist
 - **Content Concept Ideation**: Generate content series concepts, recurring format ideas, or editorial angles for a content strategy
 - **Product Concept Ideation**: Adapt for product or feature ideation — generating feature concepts, positioning territories, or product experience ideas
 
 ## Related Prompts
+
 - [Creative Brief Developer](creative-brief-developer.md) - Strategic brief that should inform concept ideation
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Campaign architecture built around a selected concept
 - [Brand Story Architect](brand-story-architect.md) - Brand narrative foundation that concepts should express

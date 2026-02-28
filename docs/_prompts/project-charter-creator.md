@@ -3,30 +3,31 @@ title: Project Charter Creator
 slug: project-charter-creator
 category: project management
 tags:
-- project
-- charter
-- scope
-- definition
-- objectives
-- stakeholders
-- success
-- criteria
-- constraints
+  - project
+  - charter
+  - scope
+  - definition
+  - objectives
+  - stakeholders
+  - success
+  - criteria
+  - constraints
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project managers and sponsors create comprehensive
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project managers and sponsors create comprehensive
   project charters that formally authorize a project, define its scope and objectives,
   identify stakeholders, and establish constraints and assumptions. It produces a
   structured charter document ready for executive approval and team alignment.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Starting a new project that requires executive sponsorship and formal authorization
-- Defining the boundaries of a complex initiative with multiple stakeholders
-- Establishing shared understanding of project goals before detailed planning begins
-- Ongoing projects already in execution with an approved charter
+  - Ideal Scenarios:**
+  - Starting a new project that requires executive sponsorship and formal authorization
+  - Defining the boundaries of a complex initiative with multiple stakeholders
+  - Establishing shared understanding of project goals before detailed planning begins
+  - Ongoing projects already in execution with an approved charter
 complexity: intermediate
 interaction: multi-turn
 ---

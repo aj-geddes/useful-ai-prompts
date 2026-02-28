@@ -1,6 +1,7 @@
 # Smart Grid Infrastructure Architect
 
 ## Metadata
+
 - **ID**: `smart-grid-infrastructure-architect`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Design and implement smart grid infrastructure that enables reliable integration
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing grid modernization roadmaps and strategies
 - Designing distributed energy resource (DER) integration systems
 - Planning advanced metering and grid sensing infrastructure
@@ -26,6 +28,7 @@ Design and implement smart grid infrastructure that enables reliable integration
 - Creating demand response and flexible load programs
 
 **Anti-Patterns (When NOT to Use):**
+
 - Specific equipment procurement (requires RFP process)
 - Detailed protection coordination studies (requires power systems engineer)
 - Utility rate design (requires regulatory specialists)
@@ -111,14 +114,17 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We're a mid-sized electric utility (500,000 customers) with aging infrastructure and growing DER adoption (8,000 rooftop solar installations, growing 20% annually). Key challenges: limited visibility into distribution system, manual outage response, and increasing voltage/power quality issues from solar. We have basic SCADA but no ADMS. AMI deployment is 60% complete. How should we approach grid modernization?
 
 ### Output
+
 **Smart Grid Architecture: Mid-Size Utility Modernization Framework**
 
 **Current State Assessment**
 
 Your situation represents a common utility challenge: DER growth outpacing grid visibility. Key gaps:
+
 - No real-time distribution visibility beyond substation level
 - Manual switching and outage restoration
 - Voltage management reactive rather than proactive
@@ -127,13 +133,15 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Target Architecture Vision**
 
-*Operational Capability Layers*
+_Operational Capability Layers_
+
 1. **Grid Visibility**: Real-time awareness of distribution system state
 2. **Grid Control**: Automated response to conditions and events
 3. **DER Management**: Integration and optimization of distributed resources
 4. **Customer Engagement**: Two-way programs leveraging smart infrastructure
 
-*Technology Foundation*
+_Technology Foundation_
+
 - Advanced Distribution Management System (ADMS) as core platform
 - Field sensors and communications for distribution visibility
 - AMI completion and integration for customer-side visibility
@@ -141,19 +149,22 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Phase 1: Foundation (Years 1-2)**
 
-*Complete AMI Deployment*
+_Complete AMI Deployment_
+
 - Accelerate remaining 40% meter deployment
 - Integrate AMI data with operations (voltage, outage detection)
 - Deploy transformer-level monitoring on critical circuits
 - Enable customer programs (TOU rates, demand response)
 
-*ADMS Platform Implementation*
+_ADMS Platform Implementation_
+
 - Deploy ADMS with core SCADA/DMS integration
 - Model distribution system (single-line to customer)
 - Implement fault location, isolation, and service restoration (FLISR)
 - Enable automated switching for priority circuits
 
-*Communication Network Foundation*
+_Communication Network Foundation_
+
 - Extend field area network (FAN) to critical substations
 - Deploy cellular/radio backhaul redundancy
 - Establish cybersecurity segmentation
@@ -161,19 +172,22 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Phase 2: Visibility and Control (Years 3-4)**
 
-*Distribution Sensor Deployment*
+_Distribution Sensor Deployment_
+
 - Line sensors on feeders with high DER penetration
 - Voltage monitoring at key points (substation, mid-feeder, end)
 - Power quality monitoring in problem areas
 - Weather stations for forecasting integration
 
-*Advanced Volt-VAR Optimization (VVO)*
+_Advanced Volt-VAR Optimization (VVO)_
+
 - Integrate capacitor banks and voltage regulators with ADMS
 - Implement centralized VVO algorithms
 - Deploy smart inverter settings on new DER interconnections
 - Target 2-3% energy savings through voltage optimization
 
-*Enhanced Outage Management*
+_Enhanced Outage Management_
+
 - AMI-based outage detection and notification
 - Predictive outage analytics (vegetation, equipment failure)
 - Customer communication integration
@@ -181,19 +195,22 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Phase 3: DER Integration (Years 4-6)**
 
-*DERMS Implementation*
+_DERMS Implementation_
+
 - Deploy DERMS platform integrated with ADMS
 - Real-time visibility of DER output and status
 - Aggregate DER for grid services (voltage support, capacity)
 - Interconnection automation and hosting capacity analysis
 
-*Smart Inverter Utilization*
+_Smart Inverter Utilization_
+
 - IEEE 1547-2018 compliance for new installations
 - Autonomous voltage support (volt-VAR, volt-watt)
 - Aggregate control for grid emergencies
 - Distribution-level flexibility programs
 
-*Behind-the-Meter Integration*
+_Behind-the-Meter Integration_
+
 - Integration with major inverter manufacturers
 - Customer-sited storage program participation
 - EV charging coordination and managed charging
@@ -201,18 +218,21 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Communications Architecture**
 
-*Field Communications (Distribution)*
+_Field Communications (Distribution)_
+
 - Private licensed radio (900 MHz) for critical control
 - Cellular LTE as primary/backup
 - Fiber to major substations
 - Mesh networking for sensor density
 
-*AMI Communications*
+_AMI Communications_
+
 - RF mesh for meter reading
 - Integration with FAN for real-time data
 - Dedicated backhaul to head-end
 
-*Cybersecurity Segmentation*
+_Cybersecurity Segmentation_
+
 - Operational technology (OT) network isolation
 - DMZ for IT/OT integration
 - Encrypted field communications
@@ -220,13 +240,15 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Cybersecurity Framework**
 
-*NERC CIP Alignment*
+_NERC CIP Alignment_
+
 - Extend CIP principles to distribution assets
 - Electronic security perimeters for control systems
 - Access management and monitoring
 - Incident response procedures
 
-*Key Controls*
+_Key Controls_
+
 - Network segmentation (IT/OT separation)
 - Endpoint protection on HMI/workstations
 - Encrypted communications
@@ -235,17 +257,20 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 
 **Investment Prioritization**
 
-*Near-Term (High Priority)*
+_Near-Term (High Priority)_
+
 - AMI completion: $15-25M
 - ADMS implementation: $20-30M
 - Critical sensor deployment: $5-10M
 
-*Medium-Term*
+_Medium-Term_
+
 - VVO implementation: $10-15M
 - DERMS: $10-15M
 - Communication upgrades: $15-25M
 
-*Long-Term*
+_Long-Term_
+
 - Full distribution automation: $30-50M
 - Grid-edge computing: $10-20M
 - Advanced analytics platform: $5-10M
@@ -261,6 +286,7 @@ Your situation represents a common utility challenge: DER growth outpacing grid 
 ---
 
 ## Related Prompts
+
 - [Energy Storage System Design Expert](energy-storage-system-design-expert.md) - For storage integration
 - [Clean Energy Policy Development Expert](clean-energy-policy-development-expert.md) - For regulatory context
 - [Community Solar Development](community-solar-shared-ownership-development.md) - For DER programs

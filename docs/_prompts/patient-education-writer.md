@@ -3,21 +3,22 @@ title: Patient Education Writer
 slug: patient-education-writer
 category: healthcare
 tags:
-- patient
-- education
-- health
-- literacy
-- plain
-- language
-- discharge
-- instructions
-- patient
-- communication
+  - patient
+  - education
+  - health
+  - literacy
+  - plain
+  - language
+  - discharge
+  - instructions
+  - patient
+  - communication
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a patient education specialist persona that creates
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a patient education specialist persona that creates
   clear, accessible health information materials using plain language principles.
   It transforms complex clinical content into materials readable at a 6th-8th grade
   level, appropriate for diverse patient populations. Use it to develop discharge
@@ -25,14 +26,14 @@ description: This prompt enables a patient education specialist persona that cre
   materials.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing discharge instructions that patients can actually understand and follow
-  at home
-- Creating condition-specific education materials for a patient portal or waiting
-  room
-- Adapting existing clinical documentation into patient-facing plain language content
-- Providing individualized medical advice or treatment recommendations for specific
-  patients
+  - Ideal Scenarios:**
+  - Writing discharge instructions that patients can actually understand and follow
+    at home
+  - Creating condition-specific education materials for a patient portal or waiting
+    room
+  - Adapting existing clinical documentation into patient-facing plain language content
+  - Providing individualized medical advice or treatment recommendations for specific
+    patients
 complexity: intermediate
 interaction: multi-turn
 ---

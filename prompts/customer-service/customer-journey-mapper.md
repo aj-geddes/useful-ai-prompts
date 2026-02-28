@@ -1,6 +1,7 @@
 # Customer Journey Mapper
 
 ## Metadata
+
 - **ID**: `customer-service-customer-journey-mapper`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a customer journey mapping specialist who visualizes the e
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Redesigning a customer onboarding experience with high early-stage churn
 - Preparing a CX improvement roadmap for a QBR or board presentation
 - Diagnosing why a particular customer segment has lower NPS than others
 
 **Anti-patterns (Don't Use For):**
+
 - Mapping a single interaction or support ticket — journey mapping requires the full lifecycle view
 - Projects without access to any customer data, feedback, or interaction history to ground the map
 
@@ -71,9 +74,11 @@ Flag stages where the company has low visibility into what customers actually ex
 ## Example Usage
 
 ### Input
+
 "We're a B2B project management SaaS. Customers are ops managers at mid-market companies (100-500 employees). We have high free-trial-to-paid conversion (40%) but terrible 90-day retention (only 55% of paid customers are still active at 90 days). Map the journey from trial sign-up through 90 days."
 
 ### Output
+
 **Journey Map: Ops Manager — Trial to 90-Day Retention**
 
 ---
@@ -134,21 +139,23 @@ This is where the 45% churn is concentrated. Customer is evaluating whether to c
 
 **Prioritized Improvements**
 
-| Improvement | Stage | Owner | Priority |
-|---|---|---|---|
-| Persona-specific onboarding checklist (5 steps, not 12) | Sign-up | Product | High |
-| Team adoption dashboard for managers | Rollout | Product | High |
-| Day 7 and Day 30 proactive CSM email | Setup + Risk Zone | Customer Success | High |
-| Use-case-based help content (not feature-based) | Setup | Content | Medium |
-| "Value milestone" in-app moment at first team workflow | Value Realization | Product | Medium |
+| Improvement                                             | Stage             | Owner            | Priority |
+| ------------------------------------------------------- | ----------------- | ---------------- | -------- |
+| Persona-specific onboarding checklist (5 steps, not 12) | Sign-up           | Product          | High     |
+| Team adoption dashboard for managers                    | Rollout           | Product          | High     |
+| Day 7 and Day 30 proactive CSM email                    | Setup + Risk Zone | Customer Success | High     |
+| Use-case-based help content (not feature-based)         | Setup             | Content          | Medium   |
+| "Value milestone" in-app moment at first team workflow  | Value Realization | Product          | Medium   |
 
 ---
 
 ## Variations
+
 - **Single-Stage Deep Dive Mode**: Map only the onboarding stage in granular detail — hour-by-hour for the first 24 hours
 - **Competitive Comparison Mode**: Map your journey against a named competitor to identify differentiation gaps and parity requirements
 
 ## Related Prompts
+
 - [Customer Feedback Analyst](customer-feedback-analyst.md) - Using feedback data to validate journey pain points
 - [Customer Success Planner](customer-success-planner.md) - Designing interventions at high-risk journey stages
 - [Service Recovery Designer](service-recovery-designer.md) - Building recovery protocols for journey breakdown moments

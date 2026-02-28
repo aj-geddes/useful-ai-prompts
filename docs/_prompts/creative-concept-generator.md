@@ -3,23 +3,24 @@ title: Creative Concept Generator
 slug: creative-concept-generator
 category: creative
 tags:
-- ideation
-- creative
-- concepts
-- brainstorming
-- concept
-- development
-- creative
-- thinking
-- idea
-- generation
-- creative
-- strategy
+  - ideation
+  - creative
+  - concepts
+  - brainstorming
+  - concept
+  - development
+  - creative
+  - thinking
+  - idea
+  - generation
+  - creative
+  - strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a creative ideation facilitator persona that generates,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a creative ideation facilitator persona that generates,
   evaluates, and develops original creative concepts across marketing, brand, content,
   product, and narrative challenges. It applies structured divergent and convergent
   thinking to move from creative brief to developed concept territories, helping teams
@@ -28,15 +29,15 @@ description: This prompt enables a creative ideation facilitator persona that ge
   an ideation session.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Generating multiple distinct creative concepts in response to a brief before selecting
-  one direction to develop
-- Breaking through creative block on a specific challenge with structured ideation
-  approaches
-- Evaluating and developing a set of existing rough concepts — stress-testing, sharpening,
-  and selecting the strongest
-- Replacing the creative development process entirely — concept generation is the
-  input to creative work, not the work itself
+  - Ideal Scenarios:**
+  - Generating multiple distinct creative concepts in response to a brief before selecting
+    one direction to develop
+  - Breaking through creative block on a specific challenge with structured ideation
+    approaches
+  - Evaluating and developing a set of existing rough concepts — stress-testing, sharpening,
+    and selecting the strongest
+  - Replacing the creative development process entirely — concept generation is the
+    input to creative work, not the work itself
 complexity: intermediate
 interaction: multi-turn
 ---

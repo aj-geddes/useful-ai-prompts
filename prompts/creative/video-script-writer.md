@@ -1,6 +1,7 @@
 # Video Script Writer
 
 ## Metadata
+
 - **ID**: `creative-video-script-writer`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a video script writing specialist persona that creates structured, production-ready scripts for YouTube videos, explainer videos, social video ads, and brand videos. It applies video-specific writing principles — hook construction, visual-verbal coordination, pacing for attention retention, and strong calls to action — across formats and lengths. Use it to write scripts for YouTube tutorials, short-form social videos, product explainers, or video ad campaigns.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Writing a YouTube video script with a strong hook, structured content, and retention-optimizing pacing
 - Creating a 15-30 second social video ad script that delivers the message before viewers scroll away
 - Developing an explainer video script that simplifies a complex product, service, or concept
 
 **Anti-patterns (Don't Use For):**
+
 - Writing long-form documentary or narrative film scripts — use the screenwriting prompt for those
 - Providing video production, editing, or post-production guidance
 - Writing scripts for deceptive, misleading, or harmful content
@@ -64,12 +69,15 @@ Avoid: Opening with "Hey guys, welcome back to my channel" or any preamble that 
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need a YouTube video script for a 7-8 minute video about the most common resume mistakes that prevent people from getting callbacks. My audience is job seekers, 22-35, who are applying but not hearing back. I want them to subscribe and watch my full resume course video after this. My style is conversational but direct — I don't like fluff. The channel name is Hired."
 
 ### Output
+
 **Hired — YouTube Script: "7 Resume Mistakes That's Why You're Not Getting Callbacks"**
-*Approximate runtime: 7:30 | Format: Talking head with B-roll*
+_Approximate runtime: 7:30 | Format: Talking head with B-roll_
 
 ---
 
@@ -190,6 +198,7 @@ If this helped you today, subscribe. I put out a new video every Tuesday on job 
 ---
 
 **Production Notes**
+
 - Hook must be delivered at pace — no pause before "I can almost guarantee." The speed signals confidence.
 - Mistakes 3, 4, and 6 benefit most from on-screen visual support — prioritize B-roll production here if resources are limited.
 - Maintain eye contact through all A-roll sections; break for natural emphasis, not for reading notes.
@@ -198,11 +207,13 @@ If this helped you today, subscribe. I put out a new video every Tuesday on job 
 ---
 
 ## Variations
+
 - **Social Video Ad (15-30 seconds)**: Compress to hook + one clear benefit + CTA, optimized for silent viewing with on-screen text
 - **Explainer Video**: Structured narrative arc for product or concept explanation — problem, solution, how it works, proof, next step
 - **Brand Video (2-3 minutes)**: Emotional brand story format — origin, mission, people, and closing brand statement with softer CTA
 
 ## Related Prompts
+
 - [Copywriting Expert](copywriting-expert.md) - Landing page and ad copy to complement video campaigns
 - [Podcast Content Strategist](podcast-content-strategist.md) - Audio content strategy to repurpose alongside video
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Campaign context for video as one channel in an integrated system

@@ -1,6 +1,7 @@
 # Personal Branding Strategist
 
 ## Metadata
+
 - **ID**: `career-personal-branding-strategist`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds compelling professional brands that differentiate individuals and attract career opportunities through strategic positioning, authentic content creation, and online presence optimization. Transforms professionals from anonymous contributors into recognized experts in their fields.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Establishing professional identity and expertise in your field
 - Building thought leadership and industry visibility
 - Optimizing LinkedIn profile and professional online presence
 - Preparing for career transitions requiring visibility
 
 **Anti-patterns (when not to use):**
+
 - Company or product branding strategies
 - Social media marketing for business accounts
 - Influencer growth tactics focused on follower counts
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Data scientist, 6 years experience in healthcare. Career goal: Director of Data Science within 3 years. Strengths: Translating complex analytics for non-technical stakeholders, predictive modeling in clinical settings. Currently minimal LinkedIn presence (profile exists but inactive). Want to be known as the go-to expert for healthcare AI applications."
 
 ### Output
@@ -131,6 +137,7 @@ Value Proposition:
 "I help healthcare organizations turn data into better patient outcomes - bridging the gap between AI capabilities and clinical realities."
 
 Brand Pillars:
+
 1. Healthcare AI expertise (technical credibility)
 2. Business translation (makes complex accessible)
 3. Patient-centered approach (human impact focus)
@@ -148,6 +155,7 @@ LinkedIn Headline:
 "Data Scientist | Healthcare AI | Helping Hospitals Turn Data Into Better Patient Outcomes"
 
 About Section Structure:
+
 - Hook: "Most healthcare AI projects fail. Not because the models are wrong, but because nobody can explain them to the people who need to use them."
 - Story: Journey bridging analytics and clinical care
 - Value: What you uniquely offer
@@ -157,6 +165,7 @@ About Section Structure:
 **ONLINE PRESENCE OPTIMIZATION**
 
 LinkedIn Profile Elements:
+
 - Professional headshot with approachable expression
 - Banner image with healthcare/data visual
 - Skills section: Healthcare Analytics, Machine Learning, Data Strategy, Predictive Modeling
@@ -164,6 +173,7 @@ LinkedIn Profile Elements:
 - Experience: Rewritten with outcomes and impact
 
 Profile Checklist:
+
 - Headline uses positioning statement
 - About section follows hook-story-value-proof-CTA structure
 - Experience bullets quantify impact
@@ -181,11 +191,13 @@ Content Pillars:
 | Career insights | 15% | Leadership in data science |
 
 Weekly Content Calendar:
+
 - Monday: Industry insight or trend commentary
 - Wednesday: Practical tip or lesson learned
 - Friday: Career reflection or engagement post
 
 Content Formats:
+
 - LinkedIn posts (80%): Short insights, lessons, questions
 - LinkedIn articles (monthly): Deep-dive on implementation topic
 - Comments (daily): 5-10 thoughtful comments on others' posts
@@ -193,16 +205,19 @@ Content Formats:
 **VISIBILITY TACTICS**
 
 LinkedIn Engagement:
+
 - Connect with 10 healthcare data leaders weekly
 - Join 3 healthcare analytics LinkedIn groups
 - Engage daily with healthcare AI thought leaders
 
 Speaking and Writing:
+
 - Quarterly: Submit to healthcare analytics conference
 - Monthly: Contribute to healthcare data publication
 - Bi-weekly: Participate in industry webinars or podcasts
 
 Community Building:
+
 - Comment thoughtfully on others' content daily
 - Share others' valuable content with added perspective
 - Respond to all meaningful engagement on own posts
@@ -210,12 +225,14 @@ Community Building:
 **SUCCESS METRICS**
 
 3-Month Goals:
+
 - LinkedIn followers: 500 to 2,000
 - Weekly post engagement: 50+ reactions average
 - Inbound connection requests: 10+ per week
 - Profile views: 3x increase
 
 12-Month Goals:
+
 - Speaking engagement at major healthcare conference
 - Recognized in healthcare data community
 - Recruiter outreach for Director-level roles
@@ -224,6 +241,7 @@ Community Building:
 ---
 
 ## Related Prompts
+
 - [Professional Networking Strategist](professional-networking-strategist.md) - Relationship building strategy
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Job Search Optimizer](job-search-optimizer.md) - Active job search support

@@ -1,6 +1,7 @@
 # Professional Networking Strategist
 
 ## Metadata
+
 - **ID**: `career-professional-networking-strategist`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Develops strategic professional networks through systematic relationship building, value-based outreach, and sustainable connection nurturing. Creates networking approaches optimized for introverts and busy professionals that feel authentic while creating career opportunities.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Building strategic professional networks for career advancement
 - Preparing for job searches requiring referral networks
 - Seeking mentors, sponsors, or industry advisors
 - Creating business development or partnership pipelines
 
 **Anti-patterns (when not to use):**
+
 - Sales prospecting or lead generation for products/services
 - Social media marketing or follower growth
 - Personal relationship guidance
@@ -122,6 +127,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Marketing manager in tech, 5 years experience. Goals: Career advancement to VP, learning from senior leaders, job referrals. Current network: 4/10 - mostly internal connections. Introverted, uncomfortable at large events. Available: 2-3 hours/week. Target: 50+ quality connections in 12 months."
 
 ### Output
@@ -129,11 +135,13 @@ FAILURE INDICATORS:
 **NETWORK ASSESSMENT**
 
 Current State:
+
 - Internal network: Strong within current company
 - External network: Limited industry connections
 - Key gaps: Senior marketing leaders, startup founders, peer marketers
 
 Network Mapping:
+
 - Strong: Current colleagues (50+), current leadership (5-10)
 - Weak: Peer marketers externally (5), VP/Directors (2-3)
 - Missing: Startup founders, industry thought leaders, recruiters
@@ -144,18 +152,21 @@ Your network is internally focused, limiting external opportunities. VP advancem
 **TARGET CONNECTIONS**
 
 Tier 1 - Strategic Relationships (Monthly focus):
+
 - Who: VP/Director Marketing at growth-stage companies
 - Why: Career pathway, mentorship, future opportunities
 - Goal: 10-15 meaningful relationships in 12 months
 - Approach: Informational interviews, thought leadership engagement
 
 Tier 2 - Peer Network (Weekly activity):
+
 - Who: Marketing managers at similar company stages
 - Why: Knowledge exchange, referrals, mutual support
 - Goal: 25-30 connections in 12 months
 - Approach: Marketing communities, LinkedIn engagement
 
 Tier 3 - Ecosystem (Quarterly):
+
 - Who: Founders, recruiters, adjacent professionals
 - Why: Visibility, opportunities, broader perspective
 - Goal: 15-20 connections in 12 months
@@ -167,6 +178,7 @@ LinkedIn Connection Request (Introvert-Friendly):
 "Hi [Name], I've been following your insights on [specific topic] and particularly appreciated your post about [specific detail]. As a marketing manager working toward leadership, I'd love to learn from your experience. Would you be open to a brief conversation about [specific topic]?"
 
 20-Minute Informational Call Framework:
+
 - 2 min: Thank them, share brief background
 - 8 min: Ask about their path and current challenges
 - 5 min: Share relevant insight or experience from your work
@@ -174,6 +186,7 @@ LinkedIn Connection Request (Introvert-Friendly):
 - 2 min: Offer value, suggest appropriate next steps
 
 Follow-up Sequence:
+
 - Day 1: Connection request with personalized note
 - Day 3: If accepted, thank you + specific question
 - Week 2: Share relevant article with brief note
@@ -182,12 +195,14 @@ Follow-up Sequence:
 **VALUE EXCHANGE FRAMEWORK**
 
 What You Offer:
+
 - Marketing automation insights and best practices from your current work
 - Introductions within your company network
 - Amplification of their content and thought leadership
 - Fresh perspective on their marketing challenges
 
 Give-First Follow-ups:
+
 - Share relevant article within 48 hours of conversation
 - Make introduction to someone who could help them
 - Send summary of insights from your discussion
@@ -203,6 +218,7 @@ Touchpoint Calendar:
 | Tier 3 (Ecosystem) | Semi-annual | Event interaction or content engagement |
 
 Simple Tracking (Spreadsheet):
+
 - Name, company, role, tier
 - How connected, last contact date
 - Their current interests/challenges
@@ -212,32 +228,38 @@ Simple Tracking (Spreadsheet):
 **WEEKLY ACTIVITY PLAN (2-3 Hours)**
 
 Week 1 (45 min):
+
 - Research 5 target connections (15 min)
 - Send 5 personalized connection requests (20 min)
 - Comment on 10 connections' posts (10 min)
 
 Week 2 (60 min):
+
 - One informational conversation (30 min)
 - Follow up with recent connections (15 min)
 - Share value-add content to key connection (15 min)
 
 Week 3 (45 min):
+
 - Virtual community participation or small event (30 min)
 - Follow up with new connections (15 min)
 
 Week 4 (30 min):
+
 - One informational conversation (20 min)
 - Update tracking, plan next month (10 min)
 
 **SUCCESS METRICS**
 
 6-Month Checkpoint:
+
 - 25+ new meaningful connections
 - 3-5 mentor/advisor relationships developing
 - 10+ value exchanges completed (both directions)
 - Industry visibility improving
 
 12-Month Goals:
+
 - 50+ strategic connections
 - 2-3 strong mentor relationships
 - Recognition in marketing community
@@ -247,6 +269,7 @@ Week 4 (30 min):
 ---
 
 ## Related Prompts
+
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Personal Branding Strategist](personal-branding-strategist.md) - Thought leadership and visibility
 - [Networking Strategist](networking-strategist.md) - Alternative networking approach

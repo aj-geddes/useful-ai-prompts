@@ -146,27 +146,22 @@ Datadog:
   - Use: SaaS monitoring
 
 ---
-
 Log Analysis Techniques:
 
-Grep/Awk:
-  grep "ERROR" app.log
+Grep/Awk: grep "ERROR" app.log
   awk '{print $1, $4}' app.log
 
-Filtering:
-  Filter by timestamp
+Filtering: Filter by timestamp
   Filter by service
   Filter by error type
   Filter by user
 
-Searching:
-  Search for error patterns
+Searching: Search for error patterns
   Search for user actions
   Search trace IDs
   Search IP addresses
 
-Aggregation:
-  Count occurrences
+Aggregation: Count occurrences
   Group by error type
   Calculate duration percentiles
   Rate of errors over time

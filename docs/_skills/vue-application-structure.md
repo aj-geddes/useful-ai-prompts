@@ -1,15 +1,16 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Structure Vue 3 applications using Composition API, component organization,
+date: "2025-01-01"
+description:
+  Structure Vue 3 applications using Composition API, component organization,
   and TypeScript. Use when building scalable Vue applications with proper separation
   of concerns.
 layout: skill
 slug: vue-application-structure
 tags:
-- typescript
-- vue
-- api
+  - typescript
+  - vue
+  - api
 title: vue-application-structure
 ---
 
@@ -265,8 +266,8 @@ const { formData, errors, isSubmitting, handleSubmit } = useForm({
 
 ```typescript
 // stores/user.ts
-import { defineStore } from 'pinia';
-import { ref, computed } from 'vue';
+import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 
 interface User {
   id: number;
@@ -274,7 +275,7 @@ interface User {
   email: string;
 }
 
-export const useUserStore = defineStore('user', () => {
+export const useUserStore = defineStore("user", () => {
   const user = ref<User | null>(null);
   const isLoading = ref(false);
 
@@ -299,19 +300,19 @@ export const useUserStore = defineStore('user', () => {
     isLoading,
     isLoggedIn,
     fetchUser,
-    logout
+    logout,
   };
 });
 
 // Usage in component
-import { useUserStore } from '@/stores/user';
+import { useUserStore } from "@/stores/user";
 
 export default {
   setup() {
     const userStore = useUserStore();
     userStore.fetchUser(1);
     return { userStore };
-  }
+  },
 };
 ```
 

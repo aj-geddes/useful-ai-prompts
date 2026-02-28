@@ -3,25 +3,26 @@ title: Investment Opportunity Assessment Expert
 slug: investment-opportunity-assessment-expert
 category: evaluation & assessment/financial
 tags:
-- investment-analysis
-- due-diligence
-- financial-evaluation
-- opportunity-assessment
+  - investment-analysis
+  - due-diligence
+  - financial-evaluation
+  - opportunity-assessment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Evaluate investment opportunities through comprehensive analysis of market
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Evaluate investment opportunities through comprehensive analysis of market
   potential, financial viability, and risk factors. Provides due diligence frameworks
   and investment recommendations for venture capital, private equity, and corporate
   development scenarios.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Evaluating startup investments or acquisitions
-- Assessing capital expenditure proposals
-- Conducting due diligence on business opportunities
-- Comparing multiple investment alternatives
+  - Ideal Scenarios:**
+  - Evaluating startup investments or acquisitions
+  - Assessing capital expenditure proposals
+  - Conducting due diligence on business opportunities
+  - Comparing multiple investment alternatives
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Investment decisions require rigorous analysis balancing financial returns with 
 
 <input_handling>
 Required:
+
 - Investment opportunity description
 - Investment size and expected timeline
 - Available financial and market data
 
 Infer if not provided:
+
 - Industry benchmarks (use sector-appropriate comparisons)
 - Required return hurdles (assume market-rate expectations)
 - Risk tolerance (assume balanced approach)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive investment assessment with due diligence framework and recommendation.
@@ -54,28 +57,31 @@ Create a comprehensive investment assessment with due diligence framework and re
 3. Assess management team and execution capability
 4. Identify key risks with probability and impact ratings
 5. Deliver investment recommendation with key terms
-</task>
+   </task>
 
 <output_specification>
 **Investment Assessment Report**
+
 - Format: Analysis sections with recommendation and terms
 - Length: 900-1200 words
 - Must include: Market analysis, financial evaluation, risk matrix, recommendation, key terms
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Validates claims with market data and benchmarks
 - Models multiple scenarios (base, upside, downside)
 - Identifies deal-breakers and key assumptions
 - Provides clear go/no-go recommendation
 
 Avoid:
+
 - Accepting projections without validation
 - Missing key risk factors
 - Recommendations without clear rationale
 - Ignoring exit strategy and timeline
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Base analysis on provided data and reasonable inferences

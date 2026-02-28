@@ -1,6 +1,7 @@
 # Content Calendar Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-content-calendar`
 - **Version**: 1.1.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A content strategy specialist that helps you create comprehensive editorial cale
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building quarterly or annual content marketing programs
 - Coordinating multi-channel content strategies
 - Establishing content production workflows and processes
@@ -25,6 +27,7 @@ A content strategy specialist that helps you create comprehensive editorial cale
 - Scaling content operations with limited team resources
 
 **Anti-Patterns (Don't Use For):**
+
 - Individual content writing and copywriting
 - Social media post creation and captions
 - SEO keyword research and technical optimization
@@ -123,6 +126,7 @@ Create a comprehensive content calendar strategy following these steps:
 ## Example Usage
 
 ### Input
+
 Business: B2B SaaS project management software for agencies. Target audience: Marketing agency owners and project managers, 30-50, struggling with client work organization. Goals: Lead generation (primary), thought leadership. Channels: Blog 2x/week, LinkedIn daily, email weekly, YouTube bi-weekly. Team: 2 content creators, $5K monthly budget. Challenges: Consistency, repurposing content.
 
 ### Output
@@ -135,14 +139,15 @@ Business: B2B SaaS project management software for agencies. Target audience: Ma
 
 **Content Pillars and Allocation**
 
-| Pillar | Allocation | Focus | Journey Stage |
-|--------|------------|-------|---------------|
-| Agency Productivity | 35% | Workflow optimization, automation, time management | Awareness |
-| Project Management Excellence | 30% | PM best practices, client communication, delivery | Consideration |
-| Agency Growth & Scale | 20% | Business development, profitability, team building | Decision |
-| Industry Insights | 15% | Trends, tool comparisons, expert interviews | Awareness/Consideration |
+| Pillar                        | Allocation | Focus                                              | Journey Stage           |
+| ----------------------------- | ---------- | -------------------------------------------------- | ----------------------- |
+| Agency Productivity           | 35%        | Workflow optimization, automation, time management | Awareness               |
+| Project Management Excellence | 30%        | PM best practices, client communication, delivery  | Consideration           |
+| Agency Growth & Scale         | 20%        | Business development, profitability, team building | Decision                |
+| Industry Insights             | 15%        | Trends, tool comparisons, expert interviews        | Awareness/Consideration |
 
 **Content Type Mix:**
+
 - Educational how-tos: 40%
 - Case studies/success stories: 20%
 - Frameworks and templates: 20%
@@ -155,27 +160,28 @@ Business: B2B SaaS project management software for agencies. Target audience: Ma
 
 **Week 1 (January 6-10)**
 
-| Day | Channel | Content | Pillar |
-|-----|---------|---------|--------|
-| Mon | Blog | "2025 Agency Productivity Report: Key Findings" | Industry Insights |
-| Tue | LinkedIn | 3 stats from report + CTA | Industry Insights |
-| Wed | Blog | "5 Workflow Changes That Save 10 Hours Weekly" | Productivity |
-| Thu | LinkedIn | Carousel: workflow tips visualization | Productivity |
-| Fri | YouTube | "Quick Win: Email Template System Setup" | Productivity |
-| Fri | Email | "Your 2025 Productivity Toolkit" | Productivity |
+| Day | Channel  | Content                                         | Pillar            |
+| --- | -------- | ----------------------------------------------- | ----------------- |
+| Mon | Blog     | "2025 Agency Productivity Report: Key Findings" | Industry Insights |
+| Tue | LinkedIn | 3 stats from report + CTA                       | Industry Insights |
+| Wed | Blog     | "5 Workflow Changes That Save 10 Hours Weekly"  | Productivity      |
+| Thu | LinkedIn | Carousel: workflow tips visualization           | Productivity      |
+| Fri | YouTube  | "Quick Win: Email Template System Setup"        | Productivity      |
+| Fri | Email    | "Your 2025 Productivity Toolkit"                | Productivity      |
 
 **Week 2 (January 13-17)**
 
-| Day | Channel | Content | Pillar |
-|-----|---------|---------|--------|
-| Mon | Blog | "Complete Guide to Agency Resource Planning" | PM Excellence |
-| Tue | LinkedIn | Poll: biggest resource planning challenge | PM Excellence |
-| Wed | Blog | "AgencyFlow vs. Competitors: Honest Comparison" | Industry Insights |
-| Thu | LinkedIn | Thread: 7 PM tool selection criteria | Industry Insights |
-| Fri | YouTube | "Client Onboarding Automation Tutorial" | Productivity |
-| Fri | Email | "How Agency X Saved 15 Hours/Week (Case Study)" | Growth |
+| Day | Channel  | Content                                         | Pillar            |
+| --- | -------- | ----------------------------------------------- | ----------------- |
+| Mon | Blog     | "Complete Guide to Agency Resource Planning"    | PM Excellence     |
+| Tue | LinkedIn | Poll: biggest resource planning challenge       | PM Excellence     |
+| Wed | Blog     | "AgencyFlow vs. Competitors: Honest Comparison" | Industry Insights |
+| Thu | LinkedIn | Thread: 7 PM tool selection criteria            | Industry Insights |
+| Fri | YouTube  | "Client Onboarding Automation Tutorial"         | Productivity      |
+| Fri | Email    | "How Agency X Saved 15 Hours/Week (Case Study)" | Growth            |
 
 **Content Calendar Template (Monthly View):**
+
 - Week 1: Productivity focus + industry trend piece
 - Week 2: PM excellence focus + comparison content
 - Week 3: Growth/scale focus + case study
@@ -185,17 +191,18 @@ Business: B2B SaaS project management software for agencies. Target audience: Ma
 
 **Content Production Workflow**
 
-| Timeline | Phase | Owner | Deliverables |
-|----------|-------|-------|--------------|
-| T-14 days | Ideation | Content Lead | Topic brief, SEO research, outline approved |
-| T-10 days | First Draft | Writer | Complete draft in shared doc |
-| T-7 days | Review | Content Lead | Feedback, revisions, SME input |
-| T-5 days | Final + Design | Writer + Designer | Final copy, hero image, social graphics |
-| T-2 days | Scheduling | Content Lead | All assets scheduled across channels |
-| T-0 | Publish | Automated | Blog live, social queued, email sent |
-| T+7 days | Repurpose | Writer | Social threads, email snippets, video scripts |
+| Timeline  | Phase          | Owner             | Deliverables                                  |
+| --------- | -------------- | ----------------- | --------------------------------------------- |
+| T-14 days | Ideation       | Content Lead      | Topic brief, SEO research, outline approved   |
+| T-10 days | First Draft    | Writer            | Complete draft in shared doc                  |
+| T-7 days  | Review         | Content Lead      | Feedback, revisions, SME input                |
+| T-5 days  | Final + Design | Writer + Designer | Final copy, hero image, social graphics       |
+| T-2 days  | Scheduling     | Content Lead      | All assets scheduled across channels          |
+| T-0       | Publish        | Automated         | Blog live, social queued, email sent          |
+| T+7 days  | Repurpose      | Writer            | Social threads, email snippets, video scripts |
 
 **Weekly Team Rhythm:**
+
 - Monday: Weekly planning, assign topics
 - Wednesday: First draft reviews
 - Friday: Following week content scheduled
@@ -204,14 +211,15 @@ Business: B2B SaaS project management software for agencies. Target audience: Ma
 
 **Multi-Channel Distribution Strategy**
 
-| Channel | Frequency | Best Time | Format | CTA |
-|---------|-----------|-----------|--------|-----|
-| Blog | 2x/week | Tue/Thu 10 AM EST | Long-form (1500-2500 words), SEO optimized | Lead magnet download |
-| LinkedIn | Daily | 8 AM EST | Native content, no links in post | Comment engagement -> link in comments |
-| Email | Weekly | Wed 9 AM EST | Curated digest + feature | Click to blog or reply |
-| YouTube | Bi-weekly | Fri 11 AM EST | Tutorial (5-10 min) | Subscribe + link to template |
+| Channel  | Frequency | Best Time         | Format                                     | CTA                                    |
+| -------- | --------- | ----------------- | ------------------------------------------ | -------------------------------------- |
+| Blog     | 2x/week   | Tue/Thu 10 AM EST | Long-form (1500-2500 words), SEO optimized | Lead magnet download                   |
+| LinkedIn | Daily     | 8 AM EST          | Native content, no links in post           | Comment engagement -> link in comments |
+| Email    | Weekly    | Wed 9 AM EST      | Curated digest + feature                   | Click to blog or reply                 |
+| YouTube  | Bi-weekly | Fri 11 AM EST     | Tutorial (5-10 min)                        | Subscribe + link to template           |
 
 **LinkedIn Content Mix:**
+
 - Monday: Industry insight or trend
 - Tuesday: Blog promotion (value-first, link in comments)
 - Wednesday: Personal story or lesson learned
@@ -233,6 +241,7 @@ Business: B2B SaaS project management software for agencies. Target audience: Ma
 
 **Example Flow:**
 Blog: "Complete Guide to Agency Resource Planning" ->
+
 - LinkedIn carousel: 5-step resource planning visual
 - Email: "The resource planning mistake costing agencies 20% profit"
 - YouTube: "How to Set Up Resource Planning in 10 Minutes"
@@ -242,16 +251,17 @@ Blog: "Complete Guide to Agency Resource Planning" ->
 
 **KPIs and Measurement**
 
-| Metric | Target | Measurement Frequency |
-|--------|--------|----------------------|
-| Blog traffic | 20% QoQ growth | Weekly |
-| Content-generated leads | 200/month | Monthly |
-| Email open rate | >25% | Weekly |
-| LinkedIn engagement rate | >3% | Weekly |
-| YouTube subscribers | +100/month | Monthly |
-| Cost per lead | <$25 | Monthly |
+| Metric                   | Target         | Measurement Frequency |
+| ------------------------ | -------------- | --------------------- |
+| Blog traffic             | 20% QoQ growth | Weekly                |
+| Content-generated leads  | 200/month      | Monthly               |
+| Email open rate          | >25%           | Weekly                |
+| LinkedIn engagement rate | >3%            | Weekly                |
+| YouTube subscribers      | +100/month     | Monthly               |
+| Cost per lead            | <$25           | Monthly               |
 
 **Monthly Content Review:**
+
 - Top performing content (replicate themes)
 - Underperforming content (diagnose and adjust)
 - Channel performance comparison
@@ -261,6 +271,7 @@ Blog: "Complete Guide to Agency Resource Planning" ->
 ---
 
 ## Related Prompts
+
 - [Blog Content Planner](../content-creation/blog-content-planner.md) - For blog-specific strategy
 - [Social Media Strategy Optimizer](../content-creation/social-media-strategy-optimizer.md) - For social media tactics
 - [Email Marketing Specialist](../content-creation/email-marketing-specialist.md) - For email content strategy

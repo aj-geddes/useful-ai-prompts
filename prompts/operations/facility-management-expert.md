@@ -1,6 +1,7 @@
 # Facility Management Expert
 
 ## Metadata
+
 - **ID**: `operations-facility-management-expert`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a facility management expert who optimizes maintenance programs, improves space utilization, ensures safety and code compliance, and manages facilities service contracts. It applies preventive and predictive maintenance principles, space planning frameworks, and compliance audit structures to reduce facility operating costs and improve occupant experience.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A facility is experiencing high reactive maintenance costs and equipment failures, signaling that the preventive maintenance program needs to be rebuilt
 - A company is consolidating office space or redesigning a warehouse layout and needs space utilization analysis and a reconfiguration plan
 - A facilities team is preparing for a safety compliance audit or needs to implement a regulatory compliance tracking system for OSHA, fire code, or building permits
 
 **Anti-patterns (Don't Use For):**
+
 - Major construction or capital renovation projects requiring licensed architectural and engineering design
 - Environmental remediation or hazardous material abatement requiring specialized regulatory expertise
 
@@ -65,9 +70,11 @@ Avoid: PM schedules without criticality weighting (treating all assets equally),
 ## Example Usage
 
 ### Input
+
 "We manage a 120,000 sq ft manufacturing and office facility built in 1998. We have about 180 employees. Our maintenance approach is mostly reactive — we fix things when they break. Last year we spent $380,000 on unplanned maintenance repairs. We have 4 HVAC rooftop units, a 500kW diesel generator, 6 compressors, and a fire suppression system. Our facilities team is 3 people."
 
 ### Output
+
 **Facility Management Improvement Plan: 120,000 SF Manufacturing and Office**
 
 **Baseline Assessment**
@@ -76,25 +83,25 @@ Current maintenance cost: $380,000/year in reactive repairs = $3.17/sq ft reacti
 
 **Asset Criticality Classification**
 
-| Asset | Criticality | Failure Impact | PM Priority |
-|---|---|---|---|
-| HVAC rooftop units (×4) | High | Production/office comfort, possible shutdown | Critical |
-| Diesel generator (500kW) | High | Backup power for production continuity | Critical |
-| Air compressors (×6) | High | Production line stoppage if failed | Critical |
-| Fire suppression system | Life-Safety | Regulatory, life safety | Non-negotiable |
-| Electrical distribution (MCC, switchgear) | High | Facility-wide outage | High |
-| Plumbing/HVAC controls | Medium | Comfort, water damage risk | Medium |
+| Asset                                     | Criticality | Failure Impact                               | PM Priority    |
+| ----------------------------------------- | ----------- | -------------------------------------------- | -------------- |
+| HVAC rooftop units (×4)                   | High        | Production/office comfort, possible shutdown | Critical       |
+| Diesel generator (500kW)                  | High        | Backup power for production continuity       | Critical       |
+| Air compressors (×6)                      | High        | Production line stoppage if failed           | Critical       |
+| Fire suppression system                   | Life-Safety | Regulatory, life safety                      | Non-negotiable |
+| Electrical distribution (MCC, switchgear) | High        | Facility-wide outage                         | High           |
+| Plumbing/HVAC controls                    | Medium      | Comfort, water damage risk                   | Medium         |
 
 **Preventive Maintenance Schedule (Critical Assets)**
 
-| Asset | PM Task | Frequency | Estimated Labor | In-House / Contractor |
-|---|---|---|---|---|
-| HVAC RTUs (×4) | Filter replacement, coil cleaning, belt inspection, refrigerant check | Quarterly | 4 hrs/unit | Contractor |
-| HVAC RTUs (×4) | Controls calibration, compressor check | Annually | 6 hrs/unit | Contractor |
-| Generator (500kW) | Load bank test, oil/filter change, battery check | Monthly (test), quarterly (full PM) | 3 hrs | Contractor |
-| Compressors (×6) | Oil change, filter, belt, intercooler cleaning | Every 500 hours or quarterly | 2 hrs/unit | In-house |
-| Fire suppression | Sprinkler head inspection, valve test | Semi-annually | — | Licensed contractor (required) |
-| Electrical switchgear | Thermal imaging scan, breaker exercise | Annually | — | Licensed electrician |
+| Asset                 | PM Task                                                               | Frequency                           | Estimated Labor | In-House / Contractor          |
+| --------------------- | --------------------------------------------------------------------- | ----------------------------------- | --------------- | ------------------------------ |
+| HVAC RTUs (×4)        | Filter replacement, coil cleaning, belt inspection, refrigerant check | Quarterly                           | 4 hrs/unit      | Contractor                     |
+| HVAC RTUs (×4)        | Controls calibration, compressor check                                | Annually                            | 6 hrs/unit      | Contractor                     |
+| Generator (500kW)     | Load bank test, oil/filter change, battery check                      | Monthly (test), quarterly (full PM) | 3 hrs           | Contractor                     |
+| Compressors (×6)      | Oil change, filter, belt, intercooler cleaning                        | Every 500 hours or quarterly        | 2 hrs/unit      | In-house                       |
+| Fire suppression      | Sprinkler head inspection, valve test                                 | Semi-annually                       | —               | Licensed contractor (required) |
+| Electrical switchgear | Thermal imaging scan, breaker exercise                                | Annually                            | —               | Licensed electrician           |
 
 **Estimated PM Program Cost**: $45,000-$65,000/year for contractor PMs + in-house labor. Payback: Reducing reactive spend by 40% (industry-demonstrated result) saves $152,000/year, yielding a **2-3 month payback**.
 
@@ -104,14 +111,14 @@ At 120,000 sq ft and 180 employees, the facility provides 667 sq ft per employee
 
 **Compliance Calendar**
 
-| Requirement | Frequency | Regulatory Authority | Owner |
-|---|---|---|---|
-| Fire suppression inspection | Semi-annual | NFPA 25 / Fire Marshal | Facilities Manager |
-| Emergency lighting/exit signs | Annual | NFPA 101 | Facilities Staff |
-| Generator load test documentation | Monthly | NFPA 110 | Facilities Staff |
-| OSHA annual safety inspection | Annual | OSHA 29 CFR 1910 | EHS + Facilities |
-| Elevator/lift inspection certificate | Annual | State boiler/elevator board | Contractor |
-| Stormwater permit compliance (if applicable) | Quarterly | EPA NPDES | EHS |
+| Requirement                                  | Frequency   | Regulatory Authority        | Owner              |
+| -------------------------------------------- | ----------- | --------------------------- | ------------------ |
+| Fire suppression inspection                  | Semi-annual | NFPA 25 / Fire Marshal      | Facilities Manager |
+| Emergency lighting/exit signs                | Annual      | NFPA 101                    | Facilities Staff   |
+| Generator load test documentation            | Monthly     | NFPA 110                    | Facilities Staff   |
+| OSHA annual safety inspection                | Annual      | OSHA 29 CFR 1910            | EHS + Facilities   |
+| Elevator/lift inspection certificate         | Annual      | State boiler/elevator board | Contractor         |
+| Stormwater permit compliance (if applicable) | Quarterly   | EPA NPDES                   | EHS                |
 
 **Top 5 Cost Reduction Opportunities**
 
@@ -124,10 +131,12 @@ At 120,000 sq ft and 180 employees, the facility provides 667 sq ft per employee
 ---
 
 ## Variations
+
 - **Multi-Site Portfolio Version**: Extends framework to manage 5-20 facilities with centralized compliance tracking and standardized PM templates
 - **Office Workplace Version**: Focuses on space utilization, hybrid work optimization, and workplace experience for corporate office environments
 
 ## Related Prompts
+
 - [Business Continuity Planner](business-continuity-planner.md) - Plan for facility-based disruptions including equipment failure and utility outages
 - [Vendor Management Specialist](vendor-management-specialist.md) - Manage facility service contractor performance and contracts
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build facilities performance dashboards tracking PM compliance, cost/sqft, and downtime

@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Generate realistic, consistent test data using factories, fixtures, and
+date: "2025-01-01"
+description:
+  Generate realistic, consistent test data using factories, fixtures, and
   fake data libraries. Use for test data, fixtures, mock data, faker, test builders,
   and seed data generation.
 layout: skill
 slug: test-data-generation
 tags:
-- testing
-- data
+  - testing
+  - data
 title: test-data-generation
 ---
 
@@ -33,9 +34,10 @@ Test data generation creates realistic, consistent, and maintainable test data f
 ### 1. **Factory Pattern for Test Data**
 
 #### JavaScript/Jest with Factory Functions
+
 ```javascript
 // tests/factories/userFactory.js
-const { faker } = require('@faker-js/faker');
+const { faker } = require("@faker-js/faker");
 
 class UserFactory {
   static build(overrides = {}) {
@@ -51,12 +53,12 @@ class UserFactory {
         city: faker.location.city(),
         state: faker.location.state(),
         zip: faker.location.zipCode(),
-        country: 'USA'
+        country: "USA",
       },
-      role: 'user',
+      role: "user",
       isActive: true,
       createdAt: faker.date.past(),
-      ...overrides
+      ...overrides,
     };
   }
 
@@ -66,9 +68,9 @@ class UserFactory {
 
   static buildAdmin(overrides = {}) {
     return this.build({
-      role: 'admin',
-      permissions: ['read', 'write', 'delete'],
-      ...overrides
+      role: "admin",
+      permissions: ["read", "write", "delete"],
+      ...overrides,
     });
   }
 
@@ -76,14 +78,14 @@ class UserFactory {
     return this.build({
       isActive: false,
       deactivatedAt: faker.date.recent(),
-      ...overrides
+      ...overrides,
     });
   }
 }
 
 // tests/user.test.js
-describe('User Service', () => {
-  test('should create user with valid data', () => {
+describe("User Service", () => {
+  test("should create user with valid data", () => {
     const userData = UserFactory.build();
     const user = userService.create(userData);
 
@@ -91,21 +93,22 @@ describe('User Service', () => {
     expect(user.isActive).toBe(true);
   });
 
-  test('should handle admin users differently', () => {
+  test("should handle admin users differently", () => {
     const admin = UserFactory.buildAdmin();
-    expect(admin.role).toBe('admin');
-    expect(admin.permissions).toContain('delete');
+    expect(admin.role).toBe("admin");
+    expect(admin.permissions).toContain("delete");
   });
 
-  test('should process multiple users', () => {
+  test("should process multiple users", () => {
     const users = UserFactory.buildMany(5);
     expect(users).toHaveLength(5);
-    expect(new Set(users.map(u => u.email)).size).toBe(5); // All unique
+    expect(new Set(users.map((u) => u.email)).size).toBe(5); // All unique
   });
 });
 ```
 
 #### Python with Factory Boy
+
 ```python
 # tests/factories.py
 import factory
@@ -227,12 +230,12 @@ def test_bulk_user_creation():
 
 ```typescript
 // tests/builders/OrderBuilder.ts
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 
 export class OrderBuilder {
   private order: Partial<Order> = {
     id: faker.string.uuid(),
-    status: 'pending',
+    status: "pending",
     items: [],
     total: 0,
     createdAt: new Date(),
@@ -256,7 +259,10 @@ export class OrderBuilder {
 
   withItems(items: OrderItem[]): this {
     this.order.items = items;
-    this.order.total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    this.order.total = items.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0,
+    );
     return this;
   }
 
@@ -280,13 +286,13 @@ export class OrderBuilder {
   }
 
   asPaid(): this {
-    this.order.status = 'paid';
+    this.order.status = "paid";
     this.order.paidAt = new Date();
     return this;
   }
 
   asShipped(): this {
-    this.order.status = 'shipped';
+    this.order.status = "shipped";
     this.order.shippedAt = new Date();
     return this;
   }
@@ -297,29 +303,29 @@ export class OrderBuilder {
 }
 
 // Usage in tests
-describe('Order Processing', () => {
-  it('should calculate total correctly', () => {
-    const product1 = ProductBuilder.aProduct().withPrice(10.00).build();
-    const product2 = ProductBuilder.aProduct().withPrice(25.00).build();
+describe("Order Processing", () => {
+  it("should calculate total correctly", () => {
+    const product1 = ProductBuilder.aProduct().withPrice(10.0).build();
+    const product2 = ProductBuilder.aProduct().withPrice(25.0).build();
 
     const order = new OrderBuilder()
       .withUser(UserBuilder.aUser().build())
-      .addItem(product1, 2)  // $20
-      .addItem(product2, 1)  // $25
+      .addItem(product1, 2) // $20
+      .addItem(product2, 1) // $25
       .build();
 
-    expect(order.total).toBe(45.00);
+    expect(order.total).toBe(45.0);
     expect(order.items).toHaveLength(2);
   });
 
-  it('should process paid orders', () => {
+  it("should process paid orders", () => {
     const order = new OrderBuilder()
       .withUser(UserBuilder.aUser().build())
       .addItem(ProductBuilder.aProduct().build())
       .asPaid()
       .build();
 
-    expect(order.status).toBe('paid');
+    expect(order.status).toBe("paid");
     expect(order.paidAt).toBeDefined();
   });
 });
@@ -328,10 +334,11 @@ describe('Order Processing', () => {
 ### 3. **Fixtures for Integration Tests**
 
 #### Jest/TypeScript with Database Fixtures
+
 ```typescript
 // tests/fixtures/database.ts
-import { PrismaClient } from '@prisma/client';
-import { UserFactory, ProductFactory, OrderFactory } from './factories';
+import { PrismaClient } from "@prisma/client";
+import { UserFactory, ProductFactory, OrderFactory } from "./factories";
 
 export class DatabaseFixtures {
   constructor(private prisma: PrismaClient) {}
@@ -339,35 +346,35 @@ export class DatabaseFixtures {
   async seed() {
     // Create users
     const users = await Promise.all(
-      UserFactory.buildMany(10).map(userData =>
-        this.prisma.user.create({ data: userData })
-      )
+      UserFactory.buildMany(10).map((userData) =>
+        this.prisma.user.create({ data: userData }),
+      ),
     );
 
     // Create products
     const products = await Promise.all(
-      ProductFactory.buildMany(20).map(productData =>
-        this.prisma.product.create({ data: productData })
-      )
+      ProductFactory.buildMany(20).map((productData) =>
+        this.prisma.product.create({ data: productData }),
+      ),
     );
 
     // Create orders
     const orders = await Promise.all(
-      OrderFactory.buildMany(15).map(orderData =>
+      OrderFactory.buildMany(15).map((orderData) =>
         this.prisma.order.create({
           data: {
             ...orderData,
             userId: users[Math.floor(Math.random() * users.length)].id,
             items: {
-              create: products.slice(0, 3).map(product => ({
+              create: products.slice(0, 3).map((product) => ({
                 productId: product.id,
                 quantity: Math.floor(Math.random() * 3) + 1,
                 price: product.price,
               })),
             },
           },
-        })
-      )
+        }),
+      ),
     );
 
     return { users, products, orders };
@@ -382,8 +389,8 @@ export class DatabaseFixtures {
 }
 
 // tests/setup.ts
-import { PrismaClient } from '@prisma/client';
-import { DatabaseFixtures } from './fixtures/database';
+import { PrismaClient } from "@prisma/client";
+import { DatabaseFixtures } from "./fixtures/database";
 
 const prisma = new PrismaClient();
 const fixtures = new DatabaseFixtures(prisma);
@@ -400,6 +407,7 @@ afterAll(async () => {
 ```
 
 #### pytest Fixtures
+
 ```python
 # tests/conftest.py
 import pytest
@@ -475,15 +483,15 @@ def test_user_orders(order_with_items):
 
 ```javascript
 // tests/helpers/dataGenerator.js
-const { faker } = require('@faker-js/faker');
+const { faker } = require("@faker-js/faker");
 
 class DataGenerator {
   static generateCreditCard() {
     return {
-      number: faker.finance.creditCardNumber('#### #### #### ####'),
+      number: faker.finance.creditCardNumber("#### #### #### ####"),
       cvv: faker.finance.creditCardCVV(),
       expiry: faker.date.future().toISOString().slice(0, 7), // YYYY-MM
-      type: faker.helpers.arrayElement(['visa', 'mastercard', 'amex']),
+      type: faker.helpers.arrayElement(["visa", "mastercard", "amex"]),
     };
   }
 
@@ -508,14 +516,14 @@ class DataGenerator {
     return { startDate, endDate };
   }
 
-  static generateTimeSeries(count, interval = 'day') {
+  static generateTimeSeries(count, interval = "day") {
     const data = [];
     const now = new Date();
 
     for (let i = count - 1; i >= 0; i--) {
       const date = new Date(now);
-      if (interval === 'day') date.setDate(date.getDate() - i);
-      if (interval === 'hour') date.setHours(date.getHours() - i);
+      if (interval === "day") date.setDate(date.getDate() - i);
+      if (interval === "hour") date.setHours(date.getHours() - i);
 
       data.push({
         timestamp: date,
@@ -526,7 +534,7 @@ class DataGenerator {
     return data;
   }
 
-  static generateRealisticEmail(firstName, lastName, domain = 'example.com') {
+  static generateRealisticEmail(firstName, lastName, domain = "example.com") {
     const patterns = [
       `${firstName}.${lastName}`,
       `${firstName}${lastName}`,
@@ -545,6 +553,7 @@ module.exports = { DataGenerator };
 ## Best Practices
 
 ### ✅ DO
+
 - Use faker libraries for realistic data
 - Create reusable factories for common objects
 - Make factories flexible with overrides
@@ -555,6 +564,7 @@ module.exports = { DataGenerator };
 - Keep test data deterministic when possible
 
 ### ❌ DON'T
+
 - Hardcode test data in multiple places
 - Use production data in tests
 - Generate truly random data for reproducible tests
@@ -576,7 +586,7 @@ module.exports = { DataGenerator };
 
 ```typescript
 // tests/setup/testData.ts
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 
 // Configure faker for deterministic tests
 faker.seed(12345);
@@ -584,13 +594,13 @@ faker.seed(12345);
 export const TestData = {
   users: {
     admin: () => ({
-      email: 'admin@test.com',
-      role: 'admin',
-      permissions: ['read', 'write', 'delete'],
+      email: "admin@test.com",
+      role: "admin",
+      permissions: ["read", "write", "delete"],
     }),
     regular: () => ({
       email: faker.internet.email(),
-      role: 'user',
+      role: "user",
       isActive: true,
     }),
   },
@@ -613,13 +623,13 @@ export const TestData = {
   orders: {
     pending: (userId: string) => ({
       userId,
-      status: 'pending',
+      status: "pending",
       items: [],
       total: 0,
     }),
     completed: (userId: string) => ({
       userId,
-      status: 'completed',
+      status: "completed",
       completedAt: faker.date.recent(),
       items: [],
       total: faker.number.float({ min: 10, max: 1000 }),

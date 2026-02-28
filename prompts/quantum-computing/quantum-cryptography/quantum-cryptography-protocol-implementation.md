@@ -1,6 +1,7 @@
 # Quantum Cryptography Protocol Implementation
 
 ## Metadata
+
 - **ID**: `quantum-cryptography-implementation`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing / Cryptography
@@ -18,6 +19,7 @@ A senior quantum cryptography architect that designs and deploys comprehensive q
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building production quantum key distribution systems at scale
 - Implementing quantum digital signature infrastructure
 - Integrating post-quantum algorithms into enterprise systems
@@ -26,6 +28,7 @@ A senior quantum cryptography architect that designs and deploys comprehensive q
 - Achieving certification for quantum cryptographic systems
 
 **Anti-patterns (when NOT to use):**
+
 - Research-only protocol development without deployment goals
 - Classical security architecture without quantum requirements
 - Single-point QKD deployments (use protocol-expert instead)
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Organization:** Government agency with 50 locations requiring quantum-secured communications. **Requirements:** >99.99% security assurance, 1000+ secure channels, FIPS quantum security compliance. **Timeline:** 24 months to production.
 
 ### Output
@@ -138,13 +142,14 @@ Avoid:
 
 **Security Requirements Analysis**
 
-*Threat Model:*
+_Threat Model:_
+
 - Adversary: Nation-state with quantum computing capability
 - Attack vectors: Passive interception, active manipulation
 - Data sensitivity: Classified, 25+ year protection required
 - Threat window: Assume "harvest now, decrypt later"
 
-*Security Objectives Mapping:*
+_Security Objectives Mapping:_
 | Objective | Primitive | Protocol |
 |-----------|-----------|----------|
 | Confidentiality | Key distribution | BB84 QKD + ML-KEM |
@@ -173,7 +178,8 @@ Layer 3: Classical Cryptography
 
 **QKD Network Topology**
 
-*Hub-and-Spoke with Regional Mesh:*
+_Hub-and-Spoke with Regional Mesh:_
+
 ```
 Architecture:
 - 5 regional hubs (quantum switches)
@@ -183,7 +189,7 @@ Architecture:
 - Maximum location-to-hub: 25km (direct QKD)
 ```
 
-*Node Types:*
+_Node Types:_
 | Type | Function | Equipment |
 |------|----------|-----------|
 | Hub | Key aggregation, routing | QKD switch, key manager |
@@ -192,7 +198,8 @@ Architecture:
 
 **Protocol Suite Specifications**
 
-*1. Quantum Key Distribution*
+_1. Quantum Key Distribution_
+
 ```
 Protocol: BB84 with 3-intensity decoy states
 - Signal state: 0.8 photons/pulse mean
@@ -206,7 +213,8 @@ R = q * Q_1 * (1 - H(e_1)) - Q_u * f(E_u) * H(E_u)
 Target: >1 kbps after privacy amplification at 50km
 ```
 
-*2. Quantum Digital Signatures*
+_2. Quantum Digital Signatures_
+
 ```
 Protocol: One-time signature with quantum key
 - Key generation: 256-bit keys from QKD
@@ -214,7 +222,8 @@ Protocol: One-time signature with quantum key
 - Verification: Multi-party with < 1/3 abort threshold
 ```
 
-*3. Post-Quantum Backup*
+_3. Post-Quantum Backup_
+
 ```
 Primary: CRYSTALS-Kyber-1024 (ML-KEM)
 - Key size: 1568 bytes (ciphertext)
@@ -227,17 +236,18 @@ Signatures: CRYSTALS-Dilithium-5 (ML-DSA)
 
 **Compliance and Certification Framework**
 
-| Requirement | Standard | Approach |
-|-------------|----------|----------|
-| Cryptographic modules | FIPS 140-3 Level 4 | QKD + PQC module validation |
-| Key management | NIST SP 800-57 | Full lifecycle procedures |
-| Quantum algorithms | NIST SP 800-208 | ML-KEM, ML-DSA, SLH-DSA |
-| Security assessment | Common Criteria EAL4+ | TOE definition, PP development |
-| Random numbers | NIST SP 800-90B | QRNG validation |
+| Requirement           | Standard              | Approach                       |
+| --------------------- | --------------------- | ------------------------------ |
+| Cryptographic modules | FIPS 140-3 Level 4    | QKD + PQC module validation    |
+| Key management        | NIST SP 800-57        | Full lifecycle procedures      |
+| Quantum algorithms    | NIST SP 800-208       | ML-KEM, ML-DSA, SLH-DSA        |
+| Security assessment   | Common Criteria EAL4+ | TOE definition, PP development |
+| Random numbers        | NIST SP 800-90B       | QRNG validation                |
 
 **Deployment Timeline**
 
-*Phase 1: Core Infrastructure (Months 1-8)*
+_Phase 1: Core Infrastructure (Months 1-8)_
+
 ```
 Months 1-2: Requirements finalization, vendor selection
 Months 3-4: Hub infrastructure deployment (5 sites)
@@ -246,7 +256,8 @@ Months 7-8: Hub integration testing, key management deployment
 Milestone: 5 hubs operational, mesh connectivity verified
 ```
 
-*Phase 2: Regional Expansion (Months 9-16)*
+_Phase 2: Regional Expansion (Months 9-16)_
+
 ```
 Months 9-12: Deploy 25 endpoint locations (5 per hub)
 Months 13-14: Deploy remaining 25 locations
@@ -254,7 +265,8 @@ Months 15-16: Full network integration testing
 Milestone: 50 locations connected, 1000 channels operational
 ```
 
-*Phase 3: Certification and Production (Months 17-24)*
+_Phase 3: Certification and Production (Months 17-24)_
+
 ```
 Months 17-18: FIPS 140-3 validation testing
 Months 19-20: Common Criteria evaluation
@@ -265,18 +277,21 @@ Milestone: Fully certified, production operational
 
 **Operational Procedures**
 
-*Continuous Monitoring:*
+_Continuous Monitoring:_
+
 - QBER monitoring (alert threshold: 5%)
 - Key generation rate (alert if <0.5 Mbps)
 - Key pool levels (maintain 72-hour reserve)
 - Hardware health (temperature, laser power)
 
-*Incident Response:*
+_Incident Response:_
+
 - Elevated QBER: Automatic key purge, investigate eavesdropping
 - Channel failure: Failover to redundant path within 30 seconds
 - Key exhaustion: Emergency PQC-only mode
 
-*Key Lifecycle:*
+_Key Lifecycle:_
+
 - Generation: Continuous from QKD
 - Distribution: Immediate to local encryptors
 - Consumption: One-time use for encryption
@@ -285,12 +300,12 @@ Milestone: Fully certified, production operational
 
 **Success Metrics**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Security assurance | >99.99% | QBER analysis, audit |
-| Key generation | >1 Mbps per link | Continuous monitoring |
-| Availability | >99.99% | Including failover |
-| Certification | FIPS 140-3 L4, CC EAL4+ | Validation certificates |
+| Metric             | Target                  | Measurement             |
+| ------------------ | ----------------------- | ----------------------- |
+| Security assurance | >99.99%                 | QBER analysis, audit    |
+| Key generation     | >1 Mbps per link        | Continuous monitoring   |
+| Availability       | >99.99%                 | Including failover      |
+| Certification      | FIPS 140-3 L4, CC EAL4+ | Validation certificates |
 
 ---
 

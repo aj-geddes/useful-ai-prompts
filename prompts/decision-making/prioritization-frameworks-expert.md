@@ -1,6 +1,7 @@
 # Prioritization Frameworks Expert
 
 ## Metadata
+
 - **ID**: `decision-prioritization-frameworks`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Strategic
@@ -18,6 +19,7 @@ Apply proven prioritization frameworks to rank tasks, projects, or initiatives b
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Overwhelmed by too many competing priorities
 - Need to cut scope or defer work
 - Starting a planning cycle with long backlog
@@ -25,6 +27,7 @@ Apply proven prioritization frameworks to rank tasks, projects, or initiatives b
 - Justifying focus decisions to stakeholders
 
 **Anti-patterns (when NOT to use):**
+
 - Detailed project planning after priorities are set
 - Resource allocation decisions (use Resource Allocation Expert)
 - When everything is genuinely equally important
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have 15 marketing initiatives for Q1 but only budget for 5. Need to balance quick revenue wins with brand building. Team of 3 people."
 
 ### Output
@@ -111,6 +115,7 @@ Best for: Balancing multiple initiatives with limited resources, when you need q
 RICE = (Reach x Impact x Confidence) / Effort
 
 **Scoring Scale**
+
 - Reach: People impacted per quarter (100-10000)
 - Impact: 0.25 (minimal) to 3 (massive)
 - Confidence: 50-100%
@@ -129,16 +134,16 @@ RICE = (Reach x Impact x Confidence) / Effort
 
 **Recommended Q1 Portfolio (5 Initiatives)**
 
-*Quick Wins (Months 1-2):*
+_Quick Wins (Months 1-2):_
+
 1. Email nurture campaign - Highest RICE, builds pipeline
 2. LinkedIn ads pilot - Fast to launch, tests new channel
 3. SEO content refresh - Compounds over time
 
-*Strategic (Month 2-3):*
-4. Customer referral program - High impact, requires setup
-5. Case study series - Supports sales, brand building
+_Strategic (Month 2-3):_ 4. Customer referral program - High impact, requires setup 5. Case study series - Supports sales, brand building
 
 **Visual Priority Map**
+
 ```
 High Impact | Referral Program | Email Nurture
             | (Build Q1)       | (Start Now)
@@ -149,11 +154,13 @@ Low Impact  | Brand Video      | SEO Refresh
 ```
 
 **Defer/Eliminate**
-- *Defer to Q2*: Brand video (high effort, low confidence), Trade show (timing)
-- *Eliminate*: Newsletter redesign (low reach), Podcast sponsorship (poor fit)
-- *Combine*: Merge webinar series into case study series
+
+- _Defer to Q2_: Brand video (high effort, low confidence), Trade show (timing)
+- _Eliminate_: Newsletter redesign (low reach), Podcast sponsorship (poor fit)
+- _Combine_: Merge webinar series into case study series
 
 **Resource Allocation**
+
 - Person 1: Email + LinkedIn (primary)
 - Person 2: SEO + Case studies (primary)
 - Person 3: Referral program (lead) + support others

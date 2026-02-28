@@ -1,6 +1,7 @@
 # Fault-Tolerant Quantum Computing Systems
 
 ## Metadata
+
 - **ID**: `fault-tolerant-quantum-computing-systems`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing / Error Correction
@@ -18,6 +19,7 @@ A senior quantum error correction researcher that designs and implements complet
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing quantum error correction codes on real hardware
 - Designing logical qubit architectures for specific applications
 - Building real-time syndrome decoding systems meeting latency requirements
@@ -26,6 +28,7 @@ A senior quantum error correction researcher that designs and implements complet
 - Optimizing resource overhead for fault-tolerant computation
 
 **Anti-patterns (when NOT to use):**
+
 - NISQ algorithm optimization without error correction requirements
 - Classical error correction or coding theory
 - Quantum hardware fabrication without QEC focus
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Hardware:** 1000-qubit superconducting system with 2D grid connectivity. **Error rates:** 99.5% single-qubit gate fidelity, 99% two-qubit gate fidelity. **Target:** Achieve logical error rates of 10^-10 for quantum chemistry applications requiring ~50 logical qubits.
 
 ### Output
@@ -138,19 +142,21 @@ Avoid:
 
 **Error Model Analysis**
 
-*Physical Error Rates:*
+_Physical Error Rates:_
+
 - Single-qubit gate: p_1Q = 0.5% (below 1% threshold)
 - Two-qubit gate: p_2Q = 1.0% (at threshold, marginal)
 - Measurement: p_meas ~ 1% (typical for superconducting)
 - Idle: p_idle ~ 0.1% per cycle
 
-*Dominant Error Source:* Two-qubit gates at 1% error rate are the limiting factor. This is at the approximate surface code threshold (~0.5-1%), requiring either gate improvement or higher code distances.
+_Dominant Error Source:_ Two-qubit gates at 1% error rate are the limiting factor. This is at the approximate surface code threshold (~0.5-1%), requiring either gate improvement or higher code distances.
 
-*Recommendation:* Improve two-qubit fidelity to 99.5% for comfortable 2x margin below threshold. Alternatively, proceed with conservative code distance estimates.
+_Recommendation:_ Improve two-qubit fidelity to 99.5% for comfortable 2x margin below threshold. Alternatively, proceed with conservative code distance estimates.
 
 **Surface Code Implementation**
 
-*Code Parameters:*
+_Code Parameters:_
+
 ```
 Target logical error: p_L = 10^-10
 Physical error rate: p = 1% (dominated by 2Q gates)
@@ -168,7 +174,8 @@ With improved p = 0.5%:
 d = 27 required
 ```
 
-*Physical Qubit Requirements:*
+_Physical Qubit Requirements:_
+
 ```
 Physical qubits per logical qubit: 2d^2 = 2(27)^2 = 1,458
 Total for 50 logical qubits: 50 * 1,458 = 72,900
@@ -179,22 +186,24 @@ With 1,000 physical qubits available:
 - At d=5: 2*25 = 50 physical/logical = 20 logical qubits
 ```
 
-*Feasible with Current Hardware:*
+_Feasible with Current Hardware:_
+
 - 10 logical qubits at d=7 (p_L ~ 10^-5)
 - 20 logical qubits at d=5 (p_L ~ 10^-3)
 - Neither meets 10^-10 target for 50 qubits
 
 **Phased Development Approach**
 
-| Phase | Physical Qubits | Code Distance | Logical Qubits | Logical Error |
-|-------|----------------|---------------|----------------|---------------|
-| Demo | 1,000 | d=5 | 10-15 | 10^-3 |
-| Near-term | 10,000 | d=11 | 50 | 10^-6 |
-| Target | 100,000 | d=27 | 50+ | 10^-10 |
+| Phase     | Physical Qubits | Code Distance | Logical Qubits | Logical Error |
+| --------- | --------------- | ------------- | -------------- | ------------- |
+| Demo      | 1,000           | d=5           | 10-15          | 10^-3         |
+| Near-term | 10,000          | d=11          | 50             | 10^-6         |
+| Target    | 100,000         | d=27          | 50+            | 10^-10        |
 
 **Syndrome Extraction Pipeline**
 
-*Surface Code Stabilizer Measurements:*
+_Surface Code Stabilizer Measurements:_
+
 ```python
 def syndrome_extraction_round():
     """
@@ -225,7 +234,8 @@ def syndrome_extraction_round():
     return x_syndromes, z_syndromes
 ```
 
-*Measurement Scheduling:*
+_Measurement Scheduling:_
+
 ```
 Cycle timeline (1 microsecond):
 - 0-100ns: Ancilla preparation
@@ -236,7 +246,8 @@ Cycle timeline (1 microsecond):
 
 **Real-Time Decoder Architecture**
 
-*MWPM Decoder Design:*
+_MWPM Decoder Design:_
+
 ```
 Input: Syndrome history (multiple rounds)
 Output: Pauli frame update (X/Z corrections)
@@ -252,7 +263,8 @@ Hardware: FPGA-based decoder
 Total: 4.5-7.5 microseconds (meets requirement)
 ```
 
-*Decoder Pseudocode:*
+_Decoder Pseudocode:_
+
 ```python
 class MWPMDecoder:
     def __init__(self, code_distance, error_model):
@@ -282,12 +294,14 @@ class MWPMDecoder:
 
 **Logical Gate Implementation**
 
-*Transversal Gates (Clifford):*
+_Transversal Gates (Clifford):_
+
 - Pauli X, Y, Z: Transversal (apply to all data qubits)
 - Hadamard: Transversal (with basis change)
 - S gate: Transversal
 
-*T-Gate via Magic State:*
+_T-Gate via Magic State:_
+
 ```
 Magic state distillation required:
 - Input: Multiple noisy |T> states
@@ -299,7 +313,8 @@ For 10^-10 logical error target:
 - Physical qubit overhead: ~1000 per T-gate factory
 ```
 
-*Lattice Surgery for CNOT:*
+_Lattice Surgery for CNOT:_
+
 ```
 Merge-split protocol:
 1. Prepare logical ancilla in |+>
@@ -311,20 +326,20 @@ Time: 2d syndrome cycles = 54 microseconds at d=27
 
 **Resource Summary**
 
-| Resource | Demo (d=5) | Target (d=27) |
-|----------|-----------|---------------|
-| Physical qubits per logical | 50 | 1,458 |
-| Syndrome cycle time | 1 us | 1 us |
-| CNOT logical gate time | 10 us | 54 us |
-| T-gate factory overhead | 500 qubits | 2,000 qubits |
-| Decoder latency | 3 us | 10 us |
+| Resource                    | Demo (d=5) | Target (d=27) |
+| --------------------------- | ---------- | ------------- |
+| Physical qubits per logical | 50         | 1,458         |
+| Syndrome cycle time         | 1 us       | 1 us          |
+| CNOT logical gate time      | 10 us      | 54 us         |
+| T-gate factory overhead     | 500 qubits | 2,000 qubits  |
+| Decoder latency             | 3 us       | 10 us         |
 
 **Validation Roadmap**
 
-1. *Demonstration Phase:* Show logical qubit lifetime > physical T1
-2. *Threshold Validation:* Demonstrate error suppression with increasing d
-3. *Logical Operations:* Verify transversal gates maintain below-threshold
-4. *Full Stack:* Complete algorithm execution with error correction
+1. _Demonstration Phase:_ Show logical qubit lifetime > physical T1
+2. _Threshold Validation:_ Demonstrate error suppression with increasing d
+3. _Logical Operations:_ Verify transversal gates maintain below-threshold
+4. _Full Stack:_ Complete algorithm execution with error correction
 
 ---
 

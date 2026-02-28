@@ -3,19 +3,20 @@ title: Classroom Management Advisor
 slug: classroom-management-advisor
 category: education
 tags:
-- classroom
-- management
-- behavior
-- systems
-- routines
-- PBIS
-- positive
-- discipline
+  - classroom
+  - management
+  - behavior
+  - systems
+  - routines
+  - PBIS
+  - positive
+  - discipline
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps educators design proactive classroom management systems
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps educators design proactive classroom management systems
   grounded in positive behavior support, clear expectations, and efficient routines.
   Rather than reacting to behavior problems, it focuses on preventing them through
   environment design, relationship building, and explicit behavioral instruction.
@@ -23,12 +24,12 @@ description: This prompt helps educators design proactive classroom management s
   and student population.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Setting up a classroom management system at the start of a school year or semester
-- Addressing recurring disruptive behavior patterns in an existing class
-- Designing a PBIS-aligned behavior support plan for a specific grade level or course
-- Developing individualized behavior intervention plans (BIPs) for students with significant
-  behavioral needs — consult a school psychologist
+  - Ideal Scenarios:**
+  - Setting up a classroom management system at the start of a school year or semester
+  - Addressing recurring disruptive behavior patterns in an existing class
+  - Designing a PBIS-aligned behavior support plan for a specific grade level or course
+  - Developing individualized behavior intervention plans (BIPs) for students with significant
+    behavioral needs — consult a school psychologist
 complexity: intermediate
 interaction: multi-turn
 ---

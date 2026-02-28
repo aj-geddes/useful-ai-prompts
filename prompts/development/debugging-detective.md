@@ -1,6 +1,7 @@
 # Debugging Detective
 
 ## Metadata
+
 - **ID**: `development-debugging-detective`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Guides developers through systematic root cause analysis of software bugs using 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - A bug that has resisted your initial debugging attempts
 - Intermittent failures that are hard to reproduce reliably
 - Production incidents where you need to find root cause quickly
 - Bugs whose symptoms seem unrelated to the actual cause
 
 **Anti-patterns (Don't Use For):**
+
 - Performance profiling (use a dedicated profiler)
 - Security vulnerability analysis (use a security auditor)
 - Feature design or new functionality planning
@@ -127,6 +130,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our Node.js API randomly returns 500 errors on the `/users/profile` endpoint, maybe 2% of requests. It's been happening for 3 days. The error in logs is: `TypeError: Cannot read properties of null (reading 'email')` at `routes/users.js:47`. It doesn't happen in local development, only production."
 
 ### Output
@@ -155,12 +159,20 @@ This pattern strongly suggests a data state issue or race condition, not a logic
 
 Step 1 — Capture the failing user ID (fastest):
 Add to your error handler before line 47:
+
 ```javascript
-console.error('Profile fetch failed for userId:', req.user.id, 'query result:', user);
+console.error(
+  "Profile fetch failed for userId:",
+  req.user.id,
+  "query result:",
+  user,
+);
 ```
+
 Deploy and wait for next failure. This immediately tells you if hypothesis 1 is correct.
 
 Step 2 — Check if any users have null email in database:
+
 ```sql
 SELECT id, created_at, auth_provider FROM users WHERE email IS NULL LIMIT 20;
 ```
@@ -174,10 +186,11 @@ Most likely: the profile query at line 47 is called without checking if the retu
 **Fix**
 
 At line 47, add a guard before accessing `.email`:
+
 ```javascript
 const user = await getUserById(req.user.id);
 if (!user) {
-  return res.status(404).json({ error: 'User not found' });
+  return res.status(404).json({ error: "User not found" });
 }
 ```
 

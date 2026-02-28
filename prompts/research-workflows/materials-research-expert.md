@@ -1,6 +1,7 @@
 # Materials Research Expert
 
 ## Metadata
+
 - **ID**: `research-materials-science`
 - **Version**: 1.0.0
 - **Category**: Research/Engineering
@@ -18,6 +19,7 @@ Conduct systematic materials research including selection, characterization, tes
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Selecting materials for new product designs with specific performance requirements
 - Evaluating material performance under demanding service conditions
 - Conducting failure analysis on material-related component issues
@@ -25,6 +27,7 @@ Conduct systematic materials research including selection, characterization, tes
 - Comparing candidate materials for cost-performance optimization
 
 **Anti-Patterns (Don't Use For):**
+
 - General product design without specific materials focus
 - Financial analysis of materials commodity markets
 - Manufacturing process optimization without material property changes
@@ -108,21 +111,23 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need a lightweight material for high-temperature turbine blades in our industrial gas turbine. Operating temperature up to 1100C continuously, must handle thermal cycling from ambient to operating temp, and we're trying to improve efficiency over current nickel superalloys. Target 15% weight reduction. Production volume is 500 blades per year."
 
 ### Output
+
 **Materials Research: High-Temperature Turbine Blade Materials**
 
 **Requirements Analysis**
 
-| Requirement | Specification | Priority | Test Method |
-|-------------|---------------|----------|-------------|
-| Operating temperature | Up to 1100C continuous | Critical | - |
-| Density | <7.5 g/cm3 (vs. 8.9 current) | High | ASTM B311 |
-| Creep resistance | >100 MPa at 1000C/1000h | Critical | ASTM E139 |
-| Thermal fatigue | >10,000 cycles (RT to 1100C) | High | Component test |
-| Oxidation resistance | <0.5 mg/cm2 at 1100C/100h | High | ASTM G111 |
-| Cost | <2x current alloy cost | Medium | - |
+| Requirement           | Specification                | Priority | Test Method    |
+| --------------------- | ---------------------------- | -------- | -------------- |
+| Operating temperature | Up to 1100C continuous       | Critical | -              |
+| Density               | <7.5 g/cm3 (vs. 8.9 current) | High     | ASTM B311      |
+| Creep resistance      | >100 MPa at 1000C/1000h      | Critical | ASTM E139      |
+| Thermal fatigue       | >10,000 cycles (RT to 1100C) | High     | Component test |
+| Oxidation resistance  | <0.5 mg/cm2 at 1100C/100h    | High     | ASTM G111      |
+| Cost                  | <2x current alloy cost       | Medium   | -              |
 
 **Weight Target Analysis**: 15% weight reduction from 8.9 g/cm3 nickel superalloy = target density of 7.5 g/cm3 or below.
 
@@ -169,12 +174,14 @@ Avoid:
 **Recommended Testing Protocol**
 
 **Phase 1: Screening (8 weeks, $85K)**
+
 - High-temperature tensile testing per ASTM E21 at 900C, 1000C, 1100C
 - Oxidation kinetics per ASTM G111 at 1000C and 1100C (100h exposure)
 - Microstructure characterization (SEM/EDS, XRD for phase identification)
 - Environmental barrier coating compatibility assessment
 
 **Phase 2: Performance Validation (16 weeks, $280K)**
+
 - Creep testing per ASTM E139 at 1000C, 1050C, 1100C (multiple stress levels)
 - Thermal fatigue cycling per component-specific protocol (0-1100C, 10,000 cycles)
 - FOD impact resistance characterization
@@ -184,12 +191,13 @@ Avoid:
 
 **Selection Recommendation**
 
-| Timeframe | Recommendation | Rationale |
-|-----------|----------------|-----------|
-| Short-term (2-3 years) | Advanced SC Ni superalloy (CMSX-10) with optimized TBC | Proven path, achievable 5% weight reduction via hollow blade design |
-| Long-term (5-7 years) | CMC development program | 50%+ weight reduction potential, requires OEM partnership for maturation |
+| Timeframe              | Recommendation                                         | Rationale                                                                |
+| ---------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Short-term (2-3 years) | Advanced SC Ni superalloy (CMSX-10) with optimized TBC | Proven path, achievable 5% weight reduction via hollow blade design      |
+| Long-term (5-7 years)  | CMC development program                                | 50%+ weight reduction potential, requires OEM partnership for maturation |
 
 **Implementation Path for CMC Program:**
+
 1. Partner with CMC supplier (GE, Safran Ceramics, COI Ceramics)
 2. Component-level testing program (not coupon-level only)
 3. EBC development and qualification
@@ -198,6 +206,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Scientific Inquiry Expert](scientific-inquiry-expert.md) - Experimental design methodology
 - [Technology Assessment Expert](technology-assessment-expert.md) - Technology maturity evaluation
 - [Patent Research Expert](patent-research-expert.md) - Materials IP landscape

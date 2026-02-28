@@ -3,31 +3,32 @@ title: Distributed Solar Commercial and Industrial Optimization
 slug: distributed-solar-commercial-optimization
 category: renewable energy/solar energy development
 tags:
-- commercial
-- solar
-- C&I
-- solar
-- behind-the-meter
-- demand
-- management
-- energy
-- optimization
+  - commercial
+  - solar
+  - C&I
+  - solar
+  - behind-the-meter
+  - demand
+  - management
+  - energy
+  - optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables comprehensive distributed solar program development
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables comprehensive distributed solar program development
   for commercial and industrial clients, encompassing rooftop design, behind-the-meter
   optimization, energy storage integration, and financial modeling. It combines solar
   system engineering with commercial energy management to maximize cost savings while
   achieving sustainability goals across diverse building types and utility environments.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Designing rooftop or ground-mount solar for commercial/industrial facilities
-- Optimizing behind-the-meter systems with demand charge reduction
-- Evaluating solar + storage combinations for C&I applications
-- Developing solar programs across multi-site portfolios
+  - Ideal scenarios:**
+  - Designing rooftop or ground-mount solar for commercial/industrial facilities
+  - Optimizing behind-the-meter systems with demand charge reduction
+  - Evaluating solar + storage combinations for C&I applications
+  - Developing solar programs across multi-site portfolios
 complexity: advanced
 interaction: multi-turn
 ---
@@ -46,18 +47,20 @@ C&I solar must balance energy cost savings with operational constraints, structu
 
 <input_handling>
 **Required information:**
+
 - Facility type and building characteristics
 - Annual energy consumption and demand profile
 - Utility tariff structure (rate schedule, demand charges)
 - Project objectives (savings target, sustainability goals)
 
 **Optional (will infer reasonable defaults):**
+
 - Roof type, age, and structural capacity
 - Available roof or ground area
 - Budget constraints or financing preference
 - Storage interest level
 - Multi-site portfolio context
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive C&I solar solution:
@@ -73,18 +76,20 @@ Develop a comprehensive C&I solar solution:
 5. **Implementation Plan**: Design permitting strategy, installation approach, and commissioning process
 
 6. **Performance Framework**: Establish monitoring, maintenance, and optimization protocols for long-term value
-</task>
+   </task>
 
 <output_specification>
 **C&I Solar Optimization Plan**
+
 - Format: Technical design with financial analysis
 - Length: 1000-1500 words
 - Sections: Site assessment, energy analysis, system design, financial model, implementation
 - Must include: System sizing rationale, savings projections, payback calculation, risk assessment
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Site-specific design addressing structural and electrical constraints
 - Clear demand charge reduction strategy where applicable
 - Realistic energy production within 98-102% of modeled estimates
@@ -92,12 +97,13 @@ Develop a comprehensive C&I solar solution:
 - Risk identification with mitigation strategies
 
 **Avoid:**
+
 - Generic system sizing without consumption pattern analysis
 - Ignoring demand charge impacts in rate structures
 - Underestimating interconnection or permitting complexity
 - Overlooking roof age, condition, or structural limitations
 - Missing net metering policy constraints
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design to NEC Article 690 for solar PV systems

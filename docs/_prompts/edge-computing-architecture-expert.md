@@ -3,26 +3,27 @@ title: Edge Computing Architecture Expert
 slug: edge-computing-architecture-expert
 category: technical workflows
 tags:
-- edge-computing
-- distributed-systems
-- iot
-- real-time-processing
-- latency-optimization
+  - edge-computing
+  - distributed-systems
+  - iot
+  - real-time-processing
+  - latency-optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Combines Edge Computing Architect and Distributed Systems Manager expertise
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Combines Edge Computing Architect and Distributed Systems Manager expertise
   to design edge computing solutions that process data closer to sources. Achieves
   reduced latency, improved reliability during connectivity loss, and optimized bandwidth
   usage through intelligent processing distribution between edge and cloud.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing edge computing architectures for IoT or industrial deployments
-- Reducing latency for real-time processing requirements (<100ms)
-- Building distributed systems that operate during network partitions
-- Optimizing bandwidth costs with local data aggregation
+  - Ideal Scenarios:**
+  - Designing edge computing architectures for IoT or industrial deployments
+  - Reducing latency for real-time processing requirements (<100ms)
+  - Building distributed systems that operate during network partitions
+  - Optimizing bandwidth costs with local data aggregation
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Edge computing moves processing closer to data sources to reduce latency, improv
 
 <input_handling>
 Required inputs:
+
 - Edge computing challenge or use case (IoT, manufacturing, retail, etc.)
 - Data sources and processing requirements (volume, velocity, processing type)
 - Latency and reliability requirements (maximum latency, offline operation needs)
 
 Infer if not provided:
+
 - Edge platform: Lightweight Kubernetes (K3s) for container workloads
 - Cloud integration: Hybrid edge-cloud with eventual consistency
 - Security model: Zero-trust with device attestation
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive edge computing architecture:
@@ -57,12 +60,13 @@ Design a comprehensive edge computing architecture:
 5. Build security architecture for distributed edge (device identity, zero-trust)
 6. Create monitoring, management, and update framework for fleet operations
 7. Plan deployment procedures, rolling updates, and lifecycle management
-</task>
+   </task>
 
 <output_specification>
 Format: Architecture document with deployment topology and operational procedures
 Length: 1500-2500 words
 Structure:
+
 - Edge Topology Design (tiers, node specifications, network architecture)
 - Processing Distribution (edge vs. cloud decision matrix)
 - Data Synchronization (sync patterns, conflict resolution, offline handling)
@@ -70,21 +74,23 @@ Structure:
 - Fleet Management (monitoring, updates, configuration management)
 - Operational Procedures (deployment, troubleshooting, recovery)
 - Expected Results (latency, bandwidth, reliability improvements)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Quantified latency improvements and bandwidth savings
 - Offline operation capabilities with automatic sync recovery
 - Edge device security with identity attestation and secure boot
 - Centralized management for distributed edge fleet
 
 Avoid:
+
 - Over-centralizing processing that should be at edge
 - Ignoring network reliability and partition tolerance
 - Missing edge device lifecycle management (updates, decommissioning)
 - Underestimating edge security requirements (physical access risks)
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Edge nodes must operate autonomously during network partitions

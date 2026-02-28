@@ -3,34 +3,35 @@ title: Project Status Reporter
 slug: project-status-reporter
 category: project management
 tags:
-- status
-- reporting
-- RAG
-- status
-- executive
-- summary
-- milestone
-- tracking
-- issue
-- escalation
-- project
-- dashboards
+  - status
+  - reporting
+  - RAG
+  - status
+  - executive
+  - summary
+  - milestone
+  - tracking
+  - issue
+  - escalation
+  - project
+  - dashboards
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt transforms raw project updates, notes, and data into polished
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt transforms raw project updates, notes, and data into polished
   executive-ready status reports using the RAG (Red/Amber/Green) framework. It structures
   information into clear summaries covering schedule, budget, scope, risks, and accomplishments
   — enabling project managers to communicate project health with precision and confidence.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Converting scattered meeting notes and data points into a weekly or monthly executive
-  status report
-- Producing a consistent status report format across multiple projects in a portfolio
-- Preparing an escalation-ready update when a project has moved to Amber or Red status
-- Detailed technical progress reports for engineering teams (use sprint reviews instead)
+  - Ideal Scenarios:**
+  - Converting scattered meeting notes and data points into a weekly or monthly executive
+    status report
+  - Producing a consistent status report format across multiple projects in a portfolio
+  - Preparing an escalation-ready update when a project has moved to Amber or Red status
+  - Detailed technical progress reports for engineering teams (use sprint reviews instead)
 complexity: simple
 interaction: single-shot
 ---

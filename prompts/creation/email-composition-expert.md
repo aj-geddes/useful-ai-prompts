@@ -1,6 +1,7 @@
 # Email Composition Expert
 
 ## Metadata
+
 - **ID**: `creation-email-composition`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical email writing assistant that crafts compelling emails that get opene
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Sales outreach and prospecting emails
 - Executive communications and board updates
 - Customer service and support responses
@@ -25,6 +27,7 @@ A practical email writing assistant that crafts compelling emails that get opene
 - Follow-up sequences for non-responders
 
 **Anti-patterns (Don't Use For):**
+
 - Automated transactional emails (use templates)
 - Mass marketing campaigns (use email marketing tools)
 - Legal or compliance notifications
@@ -104,11 +107,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Sales outreach to Sarah Johnson, VP of Engineering at TechFlow (B2B SaaS, 200 employees). Goal: Schedule a 15-minute discovery call. Never met, but have mutual connections. They recently raised Series B. Our automation platform reduces deployment time by 40%. Tone: Professional but approachable."
 
 ### Output
 
 **Subject Line Options:**
+
 1. Quick question about TechFlow's deployment efficiency
 2. How CloudCorp cut deployment costs by 40%
 3. Scaling engineering post-Series B?
@@ -152,6 +157,7 @@ CloudCorp (B2B SaaS, 180 employees) recently automated their deployment pipeline
 **Follow-up Sequence:**
 
 **Day 4:**
+
 ```
 Subject: CloudCorp's deployment playbook
 
@@ -163,6 +169,7 @@ No response needed - just wanted to share CloudCorp's automation playbook (attac
 ```
 
 **Day 11:**
+
 ```
 Subject: Wrong timing?
 
@@ -176,6 +183,7 @@ Should I circle back in Q1 when things settle post-funding?
 ```
 
 **Day 18:**
+
 ```
 Subject: Closing the loop
 
@@ -191,6 +199,7 @@ Wishing you success with the Series B growth!
 ```
 
 **Optimization Tips:**
+
 - Best send times: Tuesday-Thursday, 10 AM - 2 PM recipient's timezone
 - Subject line: 42 characters (perfect for mobile preview)
 - A/B test: Question vs. statement subject lines
@@ -198,6 +207,7 @@ Wishing you success with the Series B growth!
 ---
 
 ## Related Prompts
+
 - [Email Communication Strategy Expert](../communication/email-communication-strategy-expert.md)
 - [Marketing Copy Creation Expert](marketing-copy-creation-expert.md)
 - [Stakeholder Communication Expert](../communication/stakeholder-communication-expert.md)

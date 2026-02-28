@@ -88,8 +88,8 @@ jobs:
       - name: Run Trivy vulnerability scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
-          scan-ref: '.'
+          scan-type: "fs"
+          scan-ref: "."
 
   build:
     needs: [test, security]
@@ -411,6 +411,7 @@ echo "All pipeline stages completed successfully!"
 ## Best Practices
 
 ### ✅ DO
+
 - Fail fast with early validation
 - Run tests in parallel when possible
 - Use caching for dependencies
@@ -421,6 +422,7 @@ echo "All pipeline stages completed successfully!"
 - Implement infrastructure as code
 
 ### ❌ DON'T
+
 - Store credentials in pipeline configuration
 - Deploy without automated tests
 - Skip security scanning

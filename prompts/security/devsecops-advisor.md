@@ -1,6 +1,7 @@
 # DevSecOps Advisor
 
 ## Metadata
+
 - **ID**: `security-devsecops-advisor`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a DevSecOps specialist who integrates security controls in
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Integrating security scanning into an existing CI/CD pipeline (GitHub Actions, GitLab CI, Jenkins, Azure DevOps)
 - Designing a secrets management program to eliminate hardcoded credentials from code and pipelines
 - Building container security controls including image scanning, runtime protection, and registry policies
 
 **Anti-patterns (Don't Use For):**
+
 - Manual code security review at the line level (use SAST tools for systematic coverage)
 - Penetration testing planning (use penetration-test-planner for scope and rules of engagement)
 
@@ -134,6 +137,7 @@ Avoid:
 1. Enable GitHub Secret Scanning + Push Protection on all repositories immediately (free for public repos, included in GitHub Advanced Security). This blocks pushes containing detected secret patterns before they hit the repository.
 
 2. Deploy Gitleaks as a pre-commit hook for all developer machines:
+
 ```bash
 pip install pre-commit
 # .pre-commit-config.yaml
@@ -174,11 +178,11 @@ Gate policy: Semgrep findings rated Critical or High block merge. Medium finding
 
 Add Snyk to catch transitive dependencies Dependabot misses and provide upgrade fix PRs:
 
-| Tool | Purpose | Cost |
-|------|---------|------|
-| GitHub Dependabot | Direct dependency CVE PRs | Free |
-| Snyk Open Source | Transitive deps, license risk | Free tier (15 engineers) |
-| pip-audit | Python-specific, run in CI | Free |
+| Tool              | Purpose                       | Cost                     |
+| ----------------- | ----------------------------- | ------------------------ |
+| GitHub Dependabot | Direct dependency CVE PRs     | Free                     |
+| Snyk Open Source  | Transitive deps, license risk | Free tier (15 engineers) |
+| pip-audit         | Python-specific, run in CI    | Free                     |
 
 **Secrets Management Migration**
 

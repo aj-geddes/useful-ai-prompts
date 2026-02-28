@@ -1,6 +1,7 @@
 # Git Workflow Advisor
 
 ## Metadata
+
 - **ID**: `development-git-workflow-advisor`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Designs Git branching strategies, release workflows, and team conventions tailor
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Team experiencing merge conflicts, broken main branch, or risky releases
 - Scaling from 2-3 to 10+ developers and needing more structure
 - Moving to continuous deployment or a new release cadence
 - Onboarding a new team to consistent Git practices
 
 **Anti-patterns (Don't Use For):**
+
 - Repository structure or monorepo decisions
 - Code review process design (separate concern)
 - CI/CD pipeline design
@@ -119,6 +122,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "8-person team, deploying to production 2-3 times per week, single production environment. Currently everyone pushes to main and things break constantly. We have a staging environment but rarely use it."
 
 ### Output
@@ -130,6 +134,7 @@ Avoid:
 For an 8-person team deploying 2-3x/week with a single production environment, GitHub Flow is the right fit. GitFlow is overkill (designed for monthly releases), and pure trunk-based requires very mature CI/CD that you're not yet relying on. GitHub Flow gives structure without complexity.
 
 **Branch Structure**
+
 ```
 main (protected, always deployable)
   └── feature/TICKET-123-add-payment-flow
@@ -139,20 +144,22 @@ main (protected, always deployable)
 
 **Naming Convention**
 
-| Type | Pattern | Example |
-|------|---------|---------|
+| Type    | Pattern                      | Example                             |
+| ------- | ---------------------------- | ----------------------------------- |
 | Feature | `feature/TICKET-description` | `feature/PAY-42-stripe-integration` |
-| Bug fix | `fix/TICKET-description` | `fix/AUTH-17-token-expiry` |
-| Hotfix | `hotfix/TICKET-description` | `hotfix/OPS-99-null-pointer-crash` |
-| Chore | `chore/description` | `chore/upgrade-node-20` |
+| Bug fix | `fix/TICKET-description`     | `fix/AUTH-17-token-expiry`          |
+| Hotfix  | `hotfix/TICKET-description`  | `hotfix/OPS-99-null-pointer-crash`  |
+| Chore   | `chore/description`          | `chore/upgrade-node-20`             |
 
 **Branch Protection Rules (main)**
+
 - Require 1 approving review before merge
 - Require status checks to pass (CI: lint, tests, build)
 - No direct pushes — all changes via PR
 - Delete branch on merge (keeps repo clean)
 
 **Developer Workflow**
+
 ```
 1. Pull latest main:       git checkout main && git pull
 2. Create feature branch:  git checkout -b feature/TICKET-123-description
@@ -166,11 +173,13 @@ main (protected, always deployable)
 
 **Release Procedure**
 With GitHub Flow, there are no formal release branches. Deployments happen from main:
+
 1. Merge PR to main → triggers staging deploy automatically
 2. Verify on staging (smoke tests or manual check)
 3. Promote to production: tag the commit `v1.2.3` and trigger prod deploy
 
 **Hotfix Procedure**
+
 ```
 1. Branch from main:     git checkout -b hotfix/OPS-99-description main
 2. Fix the issue

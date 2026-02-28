@@ -1,6 +1,7 @@
 # User Research Expert
 
 ## Metadata
+
 - **ID**: `research-user-experience`
 - **Version**: 1.0.0
 - **Category**: Research/UX
@@ -18,6 +19,7 @@ Understand user needs, behaviors, and pain points through systematic research me
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Discovering user needs for new product development or feature planning
 - Validating design concepts, prototypes, or product hypotheses
 - Understanding usability issues and experience friction points
@@ -25,6 +27,7 @@ Understand user needs, behaviors, and pain points through systematic research me
 - Prioritizing product improvements based on user impact
 
 **Anti-Patterns (Don't Use For):**
+
 - Pure market sizing without user behavior focus
 - Competitive analysis without user research component
 - A/B test implementation (use analytics/experimentation tools)
@@ -108,12 +111,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're redesigning our mobile banking app and need to understand pain points in the bill pay experience. We've seen a 40% drop-off rate during bill pay flows in our analytics. Target users are existing customers aged 25-55 who use mobile banking at least weekly. We have 4 weeks and $25K budget. We need to understand why users abandon and what would make bill pay easier."
 
 ### Output
+
 **User Research Report: Mobile Bill Pay Experience**
 
 **Research Objectives**
+
 1. Identify specific friction points causing bill pay flow abandonment
 2. Understand user mental models for bill payment tasks
 3. Discover unmet needs and expectations in bill pay experience
@@ -123,14 +129,15 @@ Avoid:
 
 **Research Design**
 
-| Phase | Method | Participants | Timeline | Budget |
-|-------|--------|--------------|----------|--------|
-| 1. Discovery | In-depth interviews | n=12 | Week 1-2 | $8K |
-| 2. Observation | Moderated usability testing | n=8 | Week 2-3 | $10K |
-| 3. Validation | Survey (existing customers) | n=200 | Week 3-4 | $5K |
-| 4. Synthesis | Analysis & recommendations | - | Week 4 | $2K |
+| Phase          | Method                      | Participants | Timeline | Budget |
+| -------------- | --------------------------- | ------------ | -------- | ------ |
+| 1. Discovery   | In-depth interviews         | n=12         | Week 1-2 | $8K    |
+| 2. Observation | Moderated usability testing | n=8          | Week 2-3 | $10K   |
+| 3. Validation  | Survey (existing customers) | n=200        | Week 3-4 | $5K    |
+| 4. Synthesis   | Analysis & recommendations  | -            | Week 4   | $2K    |
 
 **Participant Criteria**:
+
 - Active mobile banking users (weekly usage)
 - Bill pay attempted in last 90 days
 - Mix of successful completers and abandoners
@@ -141,6 +148,7 @@ Avoid:
 **Key Findings**
 
 **Finding 1: Payee Setup Friction [CRITICAL]**
+
 - **Evidence**: 8/12 interview participants described payee setup as "tedious" or "confusing"
 - **Usability Data**: Average time to add new payee: 4.2 minutes (benchmark: <2 minutes)
 - **Analytics Correlation**: 62% of flow abandonment occurs at payee information entry screen
@@ -148,23 +156,27 @@ Avoid:
 - **User Quote**: "I just want to take a picture of my bill and have it figure out all the details"
 
 **Finding 2: Payment Confirmation Anxiety [HIGH]**
+
 - **Evidence**: 7/12 participants expressed uncertainty about payment status after completion
 - **Observed Behavior**: 6/8 usability participants returned to transaction history within 2 minutes of payment
 - **Unmet Need**: Clear confirmation with expected delivery date and confirmation number
 - **User Quote**: "Did it go through? When will they get it? I'm always worried I'll get a late fee"
 
 **Finding 3: Recurring Payment Confusion [HIGH]**
+
 - **Evidence**: 5/8 usability participants struggled to set up autopay for recurring bills
 - **Mental Model Gap**: Users expect "set it and forget it" but current flow requires 4 confirmation screens
 - **Task Success Rate**: 38% completed autopay setup without assistance (target: >80%)
 - **User Quote**: "Why do I have to confirm so many times? Just let me say 'pay this every month'"
 
 **Finding 4: Amount Entry Errors [MEDIUM]**
+
 - **Evidence**: 3/8 usability participants entered incorrect amounts initially
 - **Usability Issue**: No bill amount suggestion or validation against historical payments
 - **Recovery Friction**: Editing amount after entry requires starting over
 
 **Finding 5: Navigation Mental Model Mismatch [MEDIUM]**
+
 - **Evidence**: 4/12 participants expected bill pay under "Payments" not "Transfer & Pay"
 - **First-Click Accuracy**: 58% (target: >80%)
 - **Impact**: Adds 15-30 seconds to task completion for new users
@@ -196,17 +208,20 @@ in mail            (3 sec)           (18 sec avg)         (NOT FOUND)        (8 
 **Demographics**: 35-50 years, moderate tech comfort, manages household finances
 
 **Goals**:
+
 - Pay bills quickly with confidence they're processed correctly
 - Avoid late fees and credit score impacts
 - Minimize time spent on routine financial tasks
 
 **Behaviors**:
+
 - Double-checks payment confirmations; takes screenshots
 - Prefers email confirmation over in-app only
 - Uses same payment method consistently once established
 - Checks payment status 2-3 times before due date
 
 **Pain Points**:
+
 - Unclear payment status after submission
 - Anxiety about whether amount was correct
 - Uncertainty about delivery timing
@@ -214,6 +229,7 @@ in mail            (3 sec)           (18 sec avg)         (NOT FOUND)        (8 
 **Quote**: "I need to know it went through. Period."
 
 **Design Implications**:
+
 - Prominent, immediate confirmation with delivery date estimate
 - Email/SMS confirmation option
 - Payment history quick access from confirmation screen
@@ -222,16 +238,17 @@ in mail            (3 sec)           (18 sec avg)         (NOT FOUND)        (8 
 
 **Prioritized Recommendations**
 
-| Priority | Recommendation | User Impact | Effort | Expected Outcome |
-|----------|----------------|-------------|--------|------------------|
-| P0 | Bill image capture for payee setup | Eliminates primary abandonment driver | High | -25% abandonment, -50% setup time |
-| P0 | Enhanced confirmation with delivery date | Addresses anxiety, reduces repeat visits | Medium | -40% return-to-check behavior |
-| P1 | Simplified autopay (2-step setup) | Removes friction for recurring payments | Medium | +30% autopay adoption |
-| P1 | Smart amount suggestion | Reduces errors, builds confidence | Low | -60% amount entry errors |
-| P2 | Payment status dashboard | Centralizes visibility, reduces anxiety | Medium | Reduce support calls by 20% |
-| P2 | Navigation relabeling | Align with user mental model | Low | +22% first-click accuracy |
+| Priority | Recommendation                           | User Impact                              | Effort | Expected Outcome                  |
+| -------- | ---------------------------------------- | ---------------------------------------- | ------ | --------------------------------- |
+| P0       | Bill image capture for payee setup       | Eliminates primary abandonment driver    | High   | -25% abandonment, -50% setup time |
+| P0       | Enhanced confirmation with delivery date | Addresses anxiety, reduces repeat visits | Medium | -40% return-to-check behavior     |
+| P1       | Simplified autopay (2-step setup)        | Removes friction for recurring payments  | Medium | +30% autopay adoption             |
+| P1       | Smart amount suggestion                  | Reduces errors, builds confidence        | Low    | -60% amount entry errors          |
+| P2       | Payment status dashboard                 | Centralizes visibility, reduces anxiety  | Medium | Reduce support calls by 20%       |
+| P2       | Navigation relabeling                    | Align with user mental model             | Low    | +22% first-click accuracy         |
 
 **P0 Recommendation Detail: Bill Image Capture**
+
 - **Implementation**: OCR-enabled camera capture of bill statement
 - **Auto-extract**: Payee name, address, account number, amount due, due date
 - **User flow**: Capture → Verify → Confirm (3 steps vs. current 8)
@@ -241,6 +258,7 @@ in mail            (3 sec)           (18 sec avg)         (NOT FOUND)        (8 
 ---
 
 ## Related Prompts
+
 - [Consumer Behavior Research Expert](consumer-behavior-research-expert.md) - Behavioral analysis depth
 - [Market Research Expert](market-research-expert.md) - Market context for user insights
 - [Literature Review Expert](literature-review-expert.md) - Academic UX research synthesis

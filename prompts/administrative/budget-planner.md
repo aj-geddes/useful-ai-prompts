@@ -1,6 +1,7 @@
 # Budget Planner
 
 ## Metadata
+
 - **ID**: `administrative-budget-planner`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,11 +19,13 @@ This prompt creates a department budget planning specialist who helps teams fore
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing an annual department budget submission for finance review
 - Building a cost model for a new initiative or headcount request
 - Creating a budget tracking dashboard structure for ongoing monitoring
 
 **Anti-patterns (Don't Use For):**
+
 - Corporate financial accounting or GAAP-compliant financial statements
 - Investment analysis or capital allocation decisions requiring CFO authority
 - Tax planning or audit preparation requiring CPA involvement
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm the head of a 12-person customer success team at a B2B SaaS company. I need to submit our 2027 annual budget. Last year we spent about $1.8M total. We're planning to add 2 CSMs and one team lead, expand our customer training software, and do an in-person team summit. Finance always pushes back on headcount and the summit."
 
 ### Output
@@ -128,27 +132,30 @@ The Customer Success team's FY2027 budget of $2.31M represents a 28% increase ov
 
 **Budget Summary by Category**
 
-| Category | FY2026 Actual | FY2027 Request | Change | % Change |
-|----------|--------------|---------------|--------|----------|
-| Headcount (fully loaded) | $1,440,000 | $1,890,000 | +$450,000 | +31% |
-| Software & Tools | $180,000 | $215,000 | +$35,000 | +19% |
-| Travel & Customer Entertainment | $95,000 | $110,000 | +$15,000 | +16% |
-| Team Summit (one-time) | $0 | $65,000 | +$65,000 | New |
-| Training & Development | $45,000 | $55,000 | +$10,000 | +22% |
-| Contingency Reserve | $40,000 | $0 | — | — |
-| **Total** | **$1,800,000** | **$2,335,000** | **+$535,000** | **+30%** |
+| Category                        | FY2026 Actual  | FY2027 Request | Change        | % Change |
+| ------------------------------- | -------------- | -------------- | ------------- | -------- |
+| Headcount (fully loaded)        | $1,440,000     | $1,890,000     | +$450,000     | +31%     |
+| Software & Tools                | $180,000       | $215,000       | +$35,000      | +19%     |
+| Travel & Customer Entertainment | $95,000        | $110,000       | +$15,000      | +16%     |
+| Team Summit (one-time)          | $0             | $65,000        | +$65,000      | New      |
+| Training & Development          | $45,000        | $55,000        | +$10,000      | +22%     |
+| Contingency Reserve             | $40,000        | $0             | —             | —        |
+| **Total**                       | **$1,800,000** | **$2,335,000** | **+$535,000** | **+30%** |
 
 **Key Assumptions**
+
 - CSM fully loaded cost: $135,000 (salary $105K + 28% benefit/overhead load) [Verify load rate with Finance]
 - Team Lead fully loaded cost: $165,000 (salary $128K + 28% load)
 - New CSMs start Q2; 9-month cost applied
 - Training platform expansion: vendor quote received, $35K delta confirmed
 
 **Finance Objection Pre-Answers**
-1. *"Can you absorb the new accounts without headcount?"* — Current CSMs carry 42 accounts each vs. 35-account industry benchmark. Adding accounts to existing CSMs risks churn on our highest-tier customers.
-2. *"Why a summit?"* — Remote-only teams at our tenure profile (avg. 2.1 years) show 22% higher attrition. One summit at $5,400/person is less than 20% of one CSM replacement cost.
+
+1. _"Can you absorb the new accounts without headcount?"_ — Current CSMs carry 42 accounts each vs. 35-account industry benchmark. Adding accounts to existing CSMs risks churn on our highest-tier customers.
+2. _"Why a summit?"_ — Remote-only teams at our tenure profile (avg. 2.1 years) show 22% higher attrition. One summit at $5,400/person is less than 20% of one CSM replacement cost.
 
 **Cut List (if budget reduced)**
+
 - Summit: -$65,000 (defer to H2)
 - One CSM hire: -$101,250 (Q2 start delayed to Q3)
 

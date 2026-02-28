@@ -1,6 +1,7 @@
 # Blog Content Planner
 
 ## Metadata
+
 - **ID**: `content-blog-content-planner`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -18,6 +19,7 @@ Develops comprehensive blog content strategies including editorial calendars, co
 ## When to Use
 
 **Ideal scenarios:**
+
 - Creating blog strategy from scratch for new properties
 - Improving content consistency and quality
 - Building editorial calendar systems for teams
@@ -25,6 +27,7 @@ Develops comprehensive blog content strategies including editorial calendars, co
 - Scaling content production sustainably
 
 **Anti-patterns (when NOT to use):**
+
 - Individual blog post writing and drafting
 - Deep SEO keyword research and analysis
 - Social media content planning
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Personal finance blog for young professionals (25-35). Goals: thought leadership, email list building, leads for financial coaching. Currently posting 1-2x/week inconsistently. Can dedicate 6-8 hours/week. Traffic: 2,000/month, want 10,000 in 6 months. Best content: how-to guides on debt and budgeting."
 
 ### Output
@@ -115,6 +119,7 @@ Avoid:
 ## CONTENT PILLAR STRATEGY
 
 ### Pillar Architecture
+
 ```
 PILLAR 1: DEBT ELIMINATION (25%)
 +-- Student loan strategies
@@ -142,28 +147,32 @@ PILLAR 4: WEALTH MINDSET (20%)
 ```
 
 ### Content Mix
-| Type | Percentage | Examples |
-|------|------------|----------|
-| How-To Guides | 40% | "5 Steps to Pay Off $30K in Debt" |
-| Deep Dives | 25% | "Roth vs Traditional IRA: Complete Guide" |
-| Case Studies | 20% | "How I Paid Off $50K in 3 Years" |
-| Trending/Timely | 15% | "Tax Season Checklist 2025" |
+
+| Type            | Percentage | Examples                                  |
+| --------------- | ---------- | ----------------------------------------- |
+| How-To Guides   | 40%        | "5 Steps to Pay Off $30K in Debt"         |
+| Deep Dives      | 25%        | "Roth vs Traditional IRA: Complete Guide" |
+| Case Studies    | 20%        | "How I Paid Off $50K in 3 Years"          |
+| Trending/Timely | 15%        | "Tax Season Checklist 2025"               |
 
 ## 90-DAY EDITORIAL CALENDAR
 
 ### Month 1: Foundation
+
 **Week 1:** "Emergency Fund Guide for Young Professionals" (Budgeting)
 **Week 2:** "5 Budgeting Methods: Which Actually Works?" (Budgeting)
 **Week 3:** "Student Loan Payoff: My $50K Journey" (Debt - Case Study)
 **Week 4:** "401k Basics: Free Money from Your Employer" (Investing)
 
 ### Month 2: Investment Focus
+
 **Week 1:** "Index Funds Explained: Your First Investment" (Investing)
 **Week 2:** "Psychology of Market Volatility" (Mindset)
 **Week 3:** "Roth vs Traditional IRA Decision Framework" (Investing)
 **Week 4:** "Building Your First Portfolio in 30 Minutes" (Investing)
 
 ### Month 3: Advanced Topics
+
 **Week 1:** "Tax-Loss Harvesting: Free Money from the IRS" (Investing)
 **Week 2:** "House Hacking: Living Free While Building Wealth" (Debt)
 **Week 3:** "The $100K Net Worth Roadmap for Your Late 20s" (Mindset)
@@ -172,6 +181,7 @@ PILLAR 4: WEALTH MINDSET (20%)
 ## PRODUCTION WORKFLOW
 
 ### Weekly Schedule (7 hours)
+
 ```
 SUNDAY: Planning & Research (2 hrs)
 - Review upcoming topic
@@ -193,6 +203,7 @@ THURSDAY: Editing & Publishing (2 hrs)
 ```
 
 ### Content Template
+
 ```markdown
 1. Hook: Personal story or surprising stat
 2. Problem: What challenge does this solve?
@@ -206,19 +217,22 @@ THURSDAY: Editing & Publishing (2 hrs)
 ## LEAD GENERATION INTEGRATION
 
 ### Lead Magnets by Pillar
-| Pillar | Lead Magnet |
-|--------|-------------|
-| Debt | Debt Snowball Calculator + 30-Day Plan |
-| Investing | Portfolio Allocation Calculator |
-| Budgeting | Zero-Based Budget Template |
-| Mindset | 30-Day Money Mindset Challenge |
+
+| Pillar    | Lead Magnet                            |
+| --------- | -------------------------------------- |
+| Debt      | Debt Snowball Calculator + 30-Day Plan |
+| Investing | Portfolio Allocation Calculator        |
+| Budgeting | Zero-Based Budget Template             |
+| Mindset   | 30-Day Money Mindset Challenge         |
 
 ### CTA Strategy
+
 - **Every post:** Email list signup with relevant lead magnet
 - **Coaching posts:** Free consultation booking
 - **High-traffic posts:** Add multiple CTAs
 
 ### Email Integration
+
 - New subscriber sequence: 5-email welcome series
 - Weekly newsletter with personal commentary
 - Coaching promotion: Monthly
@@ -226,24 +240,28 @@ THURSDAY: Editing & Publishing (2 hrs)
 ## PERFORMANCE METRICS
 
 ### Traffic Goals
-| Timeline | Target | Strategy |
-|----------|--------|----------|
-| Month 2 | 3,500 | SEO foundation + consistency |
-| Month 4 | 6,000 | Content velocity + promotion |
-| Month 6 | 10,000 | SEO compound + social growth |
+
+| Timeline | Target | Strategy                     |
+| -------- | ------ | ---------------------------- |
+| Month 2  | 3,500  | SEO foundation + consistency |
+| Month 4  | 6,000  | Content velocity + promotion |
+| Month 6  | 10,000 | SEO compound + social growth |
 
 ### Engagement Metrics
+
 - Time on page: Target 3+ minutes
 - Comments per post: Target 5+
 - Social shares: Target 25+
 - Email click-through: Target 5%
 
 ### Business Metrics
+
 - Email list growth: Target 1,000 subscribers in 6 months
 - Coaching inquiries: Target 5+/month
 - Email-to-inquiry conversion: Track and optimize
 
 ### Monthly Review Process
+
 - Analyze top 3 performing posts (replicate)
 - Identify bottom 3 (learn and improve)
 - Update high-traffic posts for SEO
@@ -252,16 +270,19 @@ THURSDAY: Editing & Publishing (2 hrs)
 ## SCALING ROADMAP
 
 ### Month 3: System Optimization
+
 - Refined calendar 3 months ahead
 - Streamlined production workflow
 - Email automation launched
 
 ### Month 6: Scale Preparation
+
 - 10,000 monthly visitors achieved
 - 1,000 email subscribers
 - Consider outsourcing graphics
 
 ### Month 12: Expansion
+
 - Guest posting strategy
 - Podcast or video content
 - Team support for content
@@ -269,6 +290,7 @@ THURSDAY: Editing & Publishing (2 hrs)
 ---
 
 ## Related Prompts
+
 - [Audience Engagement Specialist](audience-engagement-specialist.md)
 - [SEO Content Optimizer](seo-content-optimizer.md)
 - [Personal Branding Strategist](../career-development/personal-branding-strategist.md)

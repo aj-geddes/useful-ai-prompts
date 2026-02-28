@@ -1,6 +1,7 @@
 # Strategic Roadmap Generator
 
 ## Metadata
+
 - **ID**: `business-strategic-roadmap-generator`
 - **Version**: 1.0.0
 - **Category**: Business/Product-Management
@@ -18,12 +19,14 @@ Creates strategic product roadmaps that balance customer needs, business objecti
 ## When to Use
 
 **Scenarios:**
+
 - Annual or quarterly product planning cycles
 - Communicating product strategy to diverse stakeholders
 - Prioritizing features across competing demands and resources
 - Aligning engineering capacity with business goals
 
 **Anti-patterns:**
+
 - Sprint-level planning or backlog grooming
 - Bug prioritization or technical debt tracking
 - Individual feature specifications or PRDs
@@ -112,6 +115,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "B2B analytics platform for e-commerce, growth stage (200 customers, $5M ARR). Goals: Double ARR to $10M, expand to enterprise segment, reduce churn from 15% to 10%. Need 12-month roadmap with quarterly releases. Constraints: 8 developers, significant legacy codebase needing modernization, GDPR compliance requirement by Q2. Main customer pain points: slow report generation, limited customization, poor mobile experience."
 
 ### Output
@@ -120,14 +124,15 @@ Outputs must avoid:
 
 **North Star:** "Become the Intelligence Layer for E-commerce Growth"
 
-| Quarter | Theme | Rationale |
-|---------|-------|-----------|
-| Q1 | Foundation - "Performance & Reliability" | Can't grow with performance issues; addresses #1 churn driver |
-| Q2 | Expansion - "Integrate Everywhere" | Marketplace integrations create stickiness and differentiation |
-| Q3 | Intelligence - "AI-Powered Insights" | Premium pricing opportunity and enterprise appeal |
-| Q4 | Enterprise - "Scale & Sophistication" | Larger deals accelerate path to $10M ARR |
+| Quarter | Theme                                    | Rationale                                                      |
+| ------- | ---------------------------------------- | -------------------------------------------------------------- |
+| Q1      | Foundation - "Performance & Reliability" | Can't grow with performance issues; addresses #1 churn driver  |
+| Q2      | Expansion - "Integrate Everywhere"       | Marketplace integrations create stickiness and differentiation |
+| Q3      | Intelligence - "AI-Powered Insights"     | Premium pricing opportunity and enterprise appeal              |
+| Q4      | Enterprise - "Scale & Sophistication"    | Larger deals accelerate path to $10M ARR                       |
 
 ### Theme Dependencies
+
 - Q1 foundation enables Q2-Q4 feature velocity (tech debt reduction)
 - Q2 integrations provide data for Q3 AI features
 - Q3 AI capabilities enable Q4 enterprise positioning
@@ -135,7 +140,9 @@ Outputs must avoid:
 ## ROADMAP STRUCTURE
 
 ### Q1: Performance & Reliability (Foundation)
+
 **Deliverables:**
+
 - Report generation optimization (target: 2-5 min → 30 seconds)
 - Architecture modernization Phase 1 (service extraction)
 - Mobile experience MVP (responsive dashboards)
@@ -146,7 +153,9 @@ Outputs must avoid:
 **Confidence:** 85% (known technical scope)
 
 ### Q2: Integration Ecosystem (Expansion)
+
 **Deliverables:**
+
 - Marketplace integrations: Shopify, Amazon, WooCommerce
 - Custom fields and filters (customer-defined metrics)
 - API v2 launch (developer-friendly, documented)
@@ -157,7 +166,9 @@ Outputs must avoid:
 **Confidence:** 75% (partner dependencies)
 
 ### Q3: AI-Powered Intelligence
+
 **Deliverables:**
+
 - Anomaly detection (automated alerts for unusual patterns)
 - Predictive analytics beta (revenue forecasting)
 - Natural language insights ("Your revenue is up 15% because...")
@@ -168,7 +179,9 @@ Outputs must avoid:
 **Confidence:** 65% (ML complexity)
 
 ### Q4: Enterprise Scale
+
 **Deliverables:**
+
 - Enterprise security: SSO/SAML, RBAC, audit logging
 - White-label options for agency partners
 - Advanced analytics: cohort analysis, multi-touch attribution
@@ -182,15 +195,16 @@ Outputs must avoid:
 
 **RICE Scoring (Reach x Impact x Confidence / Effort):**
 
-| Feature | Reach | Impact | Confidence | Effort | Score | Quarter |
-|---------|-------|--------|------------|--------|-------|---------|
-| Report Speed Optimization | 10 | 9 | 0.9 | 8 | 10.1 | Q1 |
-| Shopify Integration | 8 | 8 | 0.9 | 6 | 9.6 | Q2 |
-| Mobile Dashboards | 7 | 7 | 0.8 | 4 | 9.8 | Q1 |
-| AI Anomaly Detection | 6 | 10 | 0.7 | 12 | 3.5 | Q3 |
-| SSO/SAML | 3 | 8 | 0.9 | 8 | 2.7 | Q4 |
+| Feature                   | Reach | Impact | Confidence | Effort | Score | Quarter |
+| ------------------------- | ----- | ------ | ---------- | ------ | ----- | ------- |
+| Report Speed Optimization | 10    | 9      | 0.9        | 8      | 10.1  | Q1      |
+| Shopify Integration       | 8     | 8      | 0.9        | 6      | 9.6   | Q2      |
+| Mobile Dashboards         | 7     | 7      | 0.8        | 4      | 9.8   | Q1      |
+| AI Anomaly Detection      | 6     | 10     | 0.7        | 12     | 3.5   | Q3      |
+| SSO/SAML                  | 3     | 8      | 0.9        | 8      | 2.7   | Q4      |
 
 **Scoring Definitions:**
+
 - Reach: # of customers impacted (1-10 scale)
 - Impact: Business value per customer (1-10 scale)
 - Confidence: Certainty of impact (0.1-1.0)
@@ -199,6 +213,7 @@ Outputs must avoid:
 ## STAKEHOLDER VIEWS
 
 ### Executive View (Board/CEO)
+
 ```
 2024 Product Strategy: Foundation → Expansion → Intelligence → Enterprise
 
@@ -212,6 +227,7 @@ Investment: 8 FTE engineering, $400K infrastructure
 ```
 
 ### Customer View (Sales/Marketing)
+
 ```
 Coming Soon:
 ├── Next Month: 5x faster reports, mobile dashboards
@@ -223,6 +239,7 @@ Value Message: "More data, faster insights, smarter recommendations"
 ```
 
 ### Engineering View (Development Team)
+
 ```
 Q1: Service extraction, PostgreSQL query optimization, React Native foundation, GDPR data layer
 Q2: Integration framework, API v2 with OpenAPI, webhook infrastructure, OAuth 2.0 implementation
@@ -232,22 +249,24 @@ Q4: Multi-tenancy hardening, security audit, SOC 2 preparation
 
 ## SUCCESS METRICS
 
-| Quarter | Delivery Metric | Outcome Metric |
-|---------|-----------------|----------------|
-| Q1 | >80% features shipped on-time | Churn 12%, NPS 40, report speed <30s |
-| Q2 | >80% features shipped on-time | ARR $6.5M, 2 enterprise POCs |
-| Q3 | >80% features shipped on-time | ARR $8M, 5 enterprise customers, 25% premium upgrades |
-| Q4 | >80% features shipped on-time | ARR $10M, 10 enterprise customers, churn <10% |
+| Quarter | Delivery Metric               | Outcome Metric                                        |
+| ------- | ----------------------------- | ----------------------------------------------------- |
+| Q1      | >80% features shipped on-time | Churn 12%, NPS 40, report speed <30s                  |
+| Q2      | >80% features shipped on-time | ARR $6.5M, 2 enterprise POCs                          |
+| Q3      | >80% features shipped on-time | ARR $8M, 5 enterprise customers, 25% premium upgrades |
+| Q4      | >80% features shipped on-time | ARR $10M, 10 enterprise customers, churn <10%         |
 
 ## GOVERNANCE
 
 **Review Cadence:**
+
 - Weekly: Engineering progress, blockers, velocity
 - Bi-weekly: Stakeholder sync, customer feedback integration
 - Monthly: Customer advisory board input
 - Quarterly: Board update, roadmap adjustment
 
 **Change Management:**
+
 - Minor adjustments (scope within theme): PM decision
 - Theme reordering: Leadership approval
 - Theme removal/addition: Board visibility
@@ -255,5 +274,6 @@ Q4: Multi-tenancy hardening, security audit, SOC 2 preparation
 ---
 
 ## Related Prompts
+
 - [Business Analyst Expert](../management/business-analyst-strategic-excellence.md) - Requirements development
 - [Requirements Engineering Expert](../business-analysis/requirements-engineering-expert.md) - Detailed specifications

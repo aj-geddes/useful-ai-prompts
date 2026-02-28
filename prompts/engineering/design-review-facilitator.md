@@ -1,6 +1,7 @@
 # Design Review Facilitator
 
 ## Metadata
+
 - **ID**: `engineering-design-review-facilitator`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a design review facilitation specialist who structures and
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing for an upcoming PDR or CDR on a new product or system development program
 - Improving the rigor and repeatability of design reviews on an existing engineering program
 - Facilitating a post-design-freeze review for a significant design change or product update
 
 **Anti-patterns (Don't Use For):**
+
 - Performing the technical analysis itself — design reviews evaluate analysis already completed
 - Final acceptance testing or qualification (different lifecycle gate requiring formal test procedures)
 
@@ -143,6 +146,7 @@ Avoid:
 **Two-Day CDR Agenda**
 
 Day 1:
+
 - 0800: Review objectives and agenda (15 min)
 - 0815: System overview — purpose, requirements, operating environment (30 min)
 - 0845: Requirements traceability and status — coverage, open items (45 min)
@@ -157,6 +161,7 @@ Day 1:
 - 1515: Action item capture and review Day 1 (45 min)
 
 Day 2:
+
 - 0800: Firmware architecture and safety-critical algorithm review (60 min)
 - 0900: Interface control — sensor inputs, communication outputs (45 min)
 - 0945: Risk register review — top 5 risks and mitigations (30 min)
@@ -176,9 +181,9 @@ Firmware: Critical timing requirements analyzed? Watchdog timer and fault recove
 
 **Action Item Tracker**
 
-| ID | Description | Owner | Due | Priority | Status |
-|----|-------------|-------|-----|----------|--------|
-| AI-001 | | | | Critical/Major/Minor | Open/Closed |
+| ID     | Description | Owner | Due | Priority             | Status      |
+| ------ | ----------- | ----- | --- | -------------------- | ----------- |
+| AI-001 |             |       |     | Critical/Major/Minor | Open/Closed |
 
 Critical actions must close before prototype build authorization. Major actions close before prototype test start. Minor actions tracked to production.
 

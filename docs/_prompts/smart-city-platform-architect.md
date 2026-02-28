@@ -1,30 +1,31 @@
 ---
 category: government-digital
 compatible_models:
-- GPT-4
-- Claude 3.5
-- Gemini Pro
-- GPT-3.5
-date: '2025-01-14'
+  - GPT-4
+  - Claude 3.5
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-01-14"
 description: This prompt helps city leaders and urban technology specialists design comprehensive smart city platforms that integrate IoT sensors, data analytics, and citizen services to optimize urban operations, improve quality of life, and create sustainable, responsive cities.
 layout: prompt
-prompt: 'I''ll help you design a comprehensive smart city platform that transforms urban operations and citizen experiences through connected technology and data-driven insights. Let me understand your city context:
+prompt:
+  "I'll help you design a comprehensive smart city platform that transforms urban operations and citizen experiences through connected technology and data-driven insights. Let me understand your city context:
 
 
   **City characteristics and scope:**
 
-  1. What''s the size and type of your city? (population, area, urban/suburban mix)
+  1. What's the size and type of your city? (population, area, urban/suburban mix)
 
   2. What are your biggest urban challenges? (traffic, environment, safety, utilities)
 
   3. What existing smart city initiatives or infrastructure do you have?
 
-  4. What''s your budget and timeline for smart city development?
+  4. What's your budget and timeline for smart city development?
 
 
   **Technology and infrastructure status:**
 
-  5. What''s your current IT infrastructure and connectivity? (fiber, wireless, data centers)
+  5. What's your current IT infrastructure and connectivity? (fiber, wireless, data centers)
 
   6. What IoT devices or sensors are already deployed?
 
@@ -44,7 +45,7 @@ prompt: 'I''ll help you design a comprehensive smart city platform that transfor
   12. What are citizen priorities for smart city improvements?
 
 
-  Based on your answers, I''ll provide:
+  Based on your answers, I'll provide:
 
 
   **SMART CITY ARCHITECTURE BLUEPRINT** - Comprehensive platform design with IoT, data, and service integration
@@ -60,21 +61,21 @@ prompt: 'I''ll help you design a comprehensive smart city platform that transfor
   **IMPLEMENTATION ROADMAP** - Phased deployment strategy with measurable outcomes
 
 
-  Share your smart city vision and challenges, and let''s build your connected urban future!'
+  Share your smart city vision and challenges, and let's build your connected urban future!"
 related_prompts:
-- digital-government-transformation-strategy
+  - digital-government-transformation-strategy
 slug: smart-city-platform-architect
 tags:
-- smart cities
-- IoT
-- urban technology
-- city management
-- digital infrastructure
+  - smart cities
+  - IoT
+  - urban technology
+  - city management
+  - digital infrastructure
 title: Smart City Platform Architect
 use_cases:
-- smart city development
-- urban IoT deployment
-- city data platforms
-- municipal technology
+  - smart city development
+  - urban IoT deployment
+  - city data platforms
+  - municipal technology
 version: 1.0.0
 ---

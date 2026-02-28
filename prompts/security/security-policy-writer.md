@@ -1,6 +1,7 @@
 # Security Policy Writer
 
 ## Metadata
+
 - **ID**: `security-security-policy-writer`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates an information security policy specialist who drafts, revi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating a new information security policy from scratch for a growing organization
 - Updating outdated policies to reflect new regulations (GDPR, CCPA) or frameworks (NIST CSF 2.0)
 - Reviewing and improving existing policies for clarity, completeness, and enforceability
 
 **Anti-patterns (Don't Use For):**
+
 - Generating operational runbooks or technical implementation guides (policies set "what," not "how")
 - Compliance audit preparation where gap analysis is the primary need (use compliance-gap-analyzer instead)
 
@@ -141,33 +144,37 @@ This policy applies to all employees, contractors, and third-party vendors who a
 **3. Policy Requirements**
 
 **3.1 Corporate Device Use**
+
 - Employees must use corporate-issued devices only for legitimate business purposes.
 - Installation of unauthorized software requires prior approval from IT Security.
 - Employees must not disable or circumvent endpoint security controls including EDR, disk encryption, or MDM enrollment.
 - Corporate devices left unattended must be locked using screen lock (timeout: 10 minutes maximum).
 
 **3.2 BYOD Requirements**
+
 - Personally-owned devices accessing corporate email or data must be enrolled in the Mobile Device Management (MDM) system.
 - Corporate data must not be stored in personal cloud storage accounts (e.g., personal Google Drive, Dropbox).
 - Employees must consent to remote wipe of corporate data from personal devices upon separation.
 
 **3.3 Cloud Services**
+
 - Only IT-approved Software-as-a-Service (SaaS) applications may be used to store, process, or transmit company data.
 - Employees must not enter company confidential data into unapproved AI assistants or productivity tools.
 - Sharing company data to external parties via cloud storage must follow the Data Classification Policy.
 
 **3.4 Social Media**
+
 - Employees must not disclose confidential company information, customer data, or non-public financial information on personal or professional social media.
 - Employees representing the company on social media must follow the Communications Policy and identify themselves accurately.
 
 **4. Roles and Responsibilities**
 
-| Role | Responsibility |
-|------|----------------|
-| Employee | Read, understand, and comply with this policy |
-| Manager | Ensure direct reports complete annual AUP acknowledgment |
+| Role        | Responsibility                                                   |
+| ----------- | ---------------------------------------------------------------- |
+| Employee    | Read, understand, and comply with this policy                    |
+| Manager     | Ensure direct reports complete annual AUP acknowledgment         |
 | IT Security | Maintain approved software/service lists; monitor for violations |
-| CISO | Own, review, and approve this policy annually |
+| CISO        | Own, review, and approve this policy annually                    |
 
 **5. Enforcement**
 
@@ -187,9 +194,9 @@ SOC 2 CC6.1, CC6.7 | CIS Control 4 (Controlled Use of Administrative Privileges)
 
 **8. Revision History**
 
-| Version | Date | Author | Change |
-|---------|------|--------|--------|
-| 1.0 | 2026-02-28 | IT Security | Initial publication |
+| Version | Date       | Author      | Change              |
+| ------- | ---------- | ----------- | ------------------- |
+| 1.0     | 2026-02-28 | IT Security | Initial publication |
 
 ---
 

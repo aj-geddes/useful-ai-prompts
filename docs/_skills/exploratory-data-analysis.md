@@ -1,13 +1,14 @@
 ---
 category: data-analytics
-date: '2025-01-01'
-description: Discover patterns, distributions, and relationships in data through visualization,
+date: "2025-01-01"
+description:
+  Discover patterns, distributions, and relationships in data through visualization,
   summary statistics, and hypothesis generation for exploratory data analysis, data
   profiling, and initial insights
 layout: skill
 slug: exploratory-data-analysis
 tags:
-- data
+  - data
 title: Exploratory Data Analysis
 ---
 

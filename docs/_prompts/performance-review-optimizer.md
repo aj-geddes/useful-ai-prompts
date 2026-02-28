@@ -3,30 +3,31 @@ title: Performance Review Optimizer
 slug: performance-review-optimizer
 category: career development
 tags:
-- performance
-- reviews
-- self-assessment
-- career
-- advancement
-- achievement
-- documentation
-- promotion
-- preparation
+  - performance
+  - reviews
+  - self-assessment
+  - career
+  - advancement
+  - achievement
+  - documentation
+  - promotion
+  - preparation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Transforms performance reviews from anxiety-inducing exercises into strategic
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Transforms performance reviews from anxiety-inducing exercises into strategic
   career advancement opportunities through compelling achievement documentation, evidence-based
   rating justification, and promotion case building. Creates self-assessments that
   position professionals for recognition and advancement.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for annual or quarterly performance review cycles
-- Writing self-assessments and achievement documentation
-- Building evidence-based cases for promotion or compensation increases
-- Planning development conversations with managers
+  - Ideal scenarios:**
+  - Preparing for annual or quarterly performance review cycles
+  - Writing self-assessments and achievement documentation
+  - Building evidence-based cases for promotion or compensation increases
+  - Planning development conversations with managers
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,22 +42,25 @@ Performance reviews are career-defining moments that require strategic preparati
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Current role and key responsibilities
 - Major achievements during review period
 - Career goals and advancement targets
 - Review format and rating scale used
 
 OPTIONAL INPUTS:
+
 - Previous review feedback
 - Manager's priorities and evaluation style
 - Company's promotion criteria
 - Identified development areas
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Achievement documentation: STAR method with quantified impact
 - Rating justification: Evidence-based with specific examples
 - Development planning: Aligned with next-level requirements
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive performance review strategy following these steps:
@@ -84,16 +88,18 @@ Create follow-up plan for implementing feedback and maintaining advancement traj
 FORMAT: Performance review strategy with documentation and discussion preparation
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Achievement Documentation (3-5 STAR-format achievements with metrics)
 - Rating Justification (evidence by performance dimension)
 - Promotion Case (next-level alignment + gap acknowledgment)
 - Development Plan (specific growth actions)
 - Discussion Preparation (talking points + objection handling)
 - Post-Review Actions (follow-up timeline)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Achievements are quantified with specific business impact (dollars, percentages, time)
 - Rating justifications have concrete evidence, not self-assessment opinions
 - Promotion case connects past achievements to future capabilities
@@ -101,11 +107,12 @@ EXCELLENT OUTPUTS:
 - Discussion preparation includes realistic objection handling
 
 FAILURE INDICATORS:
+
 - Vague achievement descriptions without metrics
 - Overconfident self-assessment without supporting evidence
 - Generic development goals not tied to advancement criteria
 - Missing acknowledgment of improvement areas
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain honest representation of contributions

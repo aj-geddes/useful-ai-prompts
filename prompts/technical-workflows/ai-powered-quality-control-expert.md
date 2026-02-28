@@ -1,6 +1,7 @@
 # AI-Powered Quality Control Expert
 
 ## Metadata
+
 - **ID**: `ai-quality-control-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Combines AI Quality Engineer and Manufacturing Quality Manager expertise to desi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing AI-based visual inspection systems for manufacturing
 - Designing statistical process control enhanced with machine learning
 - Building predictive quality monitoring to prevent defects
 - Optimizing manufacturing quality workflows with automation
 
 **Anti-patterns (Don't Use For):**
+
 - Manual quality inspection process documentation
 - Simple threshold-based monitoring without ML requirements
 - Non-manufacturing quality contexts (software QA, service quality)
@@ -113,27 +116,32 @@ We manufacture automotive components (brake calipers) with current defect rate o
 **Phase 1: Assessment and Discovery (Weeks 1-2)**
 
 Current state analysis:
+
 - 2.3% defect rate with 15% escape rate = 0.35% defects reaching customers
 - Manual inspection throughput limit = bottleneck at 12 units/minute per station
 - Top defect types: surface porosity (45%), machining marks (30%), dimensional variation (25%)
 
 Gap analysis against IATF 16949 requirements:
+
 - Current: Reactive defect detection at end of line
 - Target: In-process detection with <0.1% escape rate for tier-1 automotive supply
 
 **Phase 2: AI Inspection Architecture (Weeks 3-6)**
 
-*Computer Vision Hardware*
+_Computer Vision Hardware_
+
 - Multi-camera setup: 4x 5MP industrial cameras per inspection station
 - Lighting configuration: Structured light for surface defects, backlight for dimensional verification
 - Edge compute: NVIDIA Jetson AGX for <100ms inference per unit
 
-*Model Architecture*
+_Model Architecture_
+
 - Base model: EfficientNet-B4 transfer learning from ImageNet
 - Training data requirement: 50,000+ labeled images (10,000 per defect type, 40,000 good samples)
 - Inference target: <100ms per unit for line-speed compatibility at 45 units/minute
 
-*SPC Integration*
+_SPC Integration_
+
 - Real-time control charts with automatic Western Electric rule violation detection
 - Cp/Cpk monitoring with automatic alerts at 1.33 threshold
 - ML-enhanced control limits adjusting for batch-to-batch variation
@@ -144,6 +152,7 @@ Training data collection: 6-week capture of known good/bad samples with operator
 Model training: Transfer learning from pre-trained defect detection base with augmentation
 Validation protocol: 10,000 unit blind test with manual verification for ground truth
 Deployment phases:
+
 - Shadow mode (weeks 9-10): AI runs parallel to manual, no intervention
 - Assisted mode (weeks 11-12): AI flags, human confirms
 - Autonomous mode (week 13+): AI decides with human backup for low-confidence cases
@@ -151,18 +160,19 @@ Deployment phases:
 **Phase 4: Continuous Improvement**
 
 Model retraining triggers:
+
 - Drift detection: >5% change in prediction distribution
 - New defect types: Operator-flagged samples outside training distribution
 - Scheduled quarterly retraining with accumulated production data
 
 **Expected Results**
 
-| Metric | Current | Target | Improvement |
-|--------|---------|--------|-------------|
-| Escape rate | 15% | <2% | 87% reduction |
-| Inspection throughput | 12/min | 45/min | 275% increase |
-| False positive rate | N/A | <1% | Minimized rework |
-| Defects to customers | 0.35% | <0.03% | 91% reduction |
+| Metric                | Current | Target | Improvement      |
+| --------------------- | ------- | ------ | ---------------- |
+| Escape rate           | 15%     | <2%    | 87% reduction    |
+| Inspection throughput | 12/min  | 45/min | 275% increase    |
+| False positive rate   | N/A     | <1%    | Minimized rework |
+| Defects to customers  | 0.35%   | <0.03% | 91% reduction    |
 
 ---
 

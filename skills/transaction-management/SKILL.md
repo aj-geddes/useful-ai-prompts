@@ -384,23 +384,24 @@ COMMIT;
 async function transferMoney(fromId, toId, amount, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
-      await db.query('BEGIN');
+      await db.query("BEGIN");
       await db.query(
-        'UPDATE accounts SET balance = balance - $1 WHERE id = $2 FOR UPDATE',
-        [amount, fromId]
+        "UPDATE accounts SET balance = balance - $1 WHERE id = $2 FOR UPDATE",
+        [amount, fromId],
       );
       await db.query(
-        'UPDATE accounts SET balance = balance + $1 WHERE id = $2 FOR UPDATE',
-        [amount, toId]
+        "UPDATE accounts SET balance = balance + $1 WHERE id = $2 FOR UPDATE",
+        [amount, toId],
       );
-      await db.query('COMMIT');
+      await db.query("COMMIT");
       return { success: true };
     } catch (error) {
-      if (error.code === '40P01') { // Deadlock detected
-        await db.query('ROLLBACK');
+      if (error.code === "40P01") {
+        // Deadlock detected
+        await db.query("ROLLBACK");
         if (i === retries - 1) throw error;
         // Exponential backoff
-        await new Promise(r => setTimeout(r, 100 * Math.pow(2, i)));
+        await new Promise((r) => setTimeout(r, 100 * Math.pow(2, i)));
       } else {
         throw error;
       }
@@ -439,14 +440,14 @@ async function transferAcrossServices(fromId, toId, amount) {
 
   // 2. Queue credit for second service (reliable queue)
   await queue.publish({
-    type: 'credit',
+    type: "credit",
     toId,
     amount,
-    requestId: uuid()
+    requestId: uuid(),
   });
 
   // 3. Service 2 processes asynchronously
-  queue.subscribe('credit', async (msg) => {
+  queue.subscribe("credit", async (msg) => {
     try {
       await service2.credit(msg.toId, msg.amount);
       await queue.ack(msg.requestId);

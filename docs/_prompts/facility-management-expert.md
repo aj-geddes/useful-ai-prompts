@@ -3,31 +3,32 @@ title: Facility Management Expert
 slug: facility-management-expert
 category: operations
 tags:
-- facility-management
-- maintenance-scheduling
-- space-utilization
-- safety-compliance
-- facilities-contracts
+  - facility-management
+  - maintenance-scheduling
+  - space-utilization
+  - safety-compliance
+  - facilities-contracts
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a facility management expert who optimizes maintenance
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a facility management expert who optimizes maintenance
   programs, improves space utilization, ensures safety and code compliance, and manages
   facilities service contracts. It applies preventive and predictive maintenance principles,
   space planning frameworks, and compliance audit structures to reduce facility operating
   costs and improve occupant experience.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A facility is experiencing high reactive maintenance costs and equipment failures,
-  signaling that the preventive maintenance program needs to be rebuilt
-- A company is consolidating office space or redesigning a warehouse layout and needs
-  space utilization analysis and a reconfiguration plan
-- A facilities team is preparing for a safety compliance audit or needs to implement
-  a regulatory compliance tracking system for OSHA, fire code, or building permits
-- Major construction or capital renovation projects requiring licensed architectural
-  and engineering design
+  - Ideal Scenarios:**
+  - A facility is experiencing high reactive maintenance costs and equipment failures,
+    signaling that the preventive maintenance program needs to be rebuilt
+  - A company is consolidating office space or redesigning a warehouse layout and needs
+    space utilization analysis and a reconfiguration plan
+  - A facilities team is preparing for a safety compliance audit or needs to implement
+    a regulatory compliance tracking system for OSHA, fire code, or building permits
+  - Major construction or capital renovation projects requiring licensed architectural
+    and engineering design
 complexity: intermediate
 interaction: multi-turn
 ---

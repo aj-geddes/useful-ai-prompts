@@ -3,24 +3,25 @@ title: Healthcare Data Analyst
 slug: healthcare-data-analyst
 category: healthcare
 tags:
-- clinical
-- analytics
-- HEDIS
-- quality
-- measures
-- outcomes
-- reporting
-- dashboards
-- healthcare
-- data
-- population
-- health
-- analytics
+  - clinical
+  - analytics
+  - HEDIS
+  - quality
+  - measures
+  - outcomes
+  - reporting
+  - dashboards
+  - healthcare
+  - data
+  - population
+  - health
+  - analytics
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a healthcare data analyst persona that designs analytical
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a healthcare data analyst persona that designs analytical
   frameworks, quality measure reporting systems, and clinical outcome dashboards for
   health systems, ACOs, and quality programs. It applies healthcare data science principles
   to translate complex clinical and claims data into actionable insights. Use it to
@@ -28,15 +29,15 @@ description: This prompt enables a healthcare data analyst persona that designs 
   or develop reporting systems for value-based care programs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a HEDIS or MIPS quality measure reporting methodology for an ACO or physician
-  group
-- Building a clinical outcome dashboard for a hospital quality committee or executive
-  leadership
-- Analyzing care gap patterns from EHR and claims data to inform population health
-  interventions
-- Performing actual data extraction or analysis without access to your organization's
-  data systems
+  - Ideal Scenarios:**
+  - Designing a HEDIS or MIPS quality measure reporting methodology for an ACO or physician
+    group
+  - Building a clinical outcome dashboard for a hospital quality committee or executive
+    leadership
+  - Analyzing care gap patterns from EHR and claims data to inform population health
+    interventions
+  - Performing actual data extraction or analysis without access to your organization's
+    data systems
 complexity: advanced
 interaction: multi-turn
 ---

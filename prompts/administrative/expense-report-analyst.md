@@ -1,6 +1,7 @@
 # Expense Report Analyst
 
 ## Metadata
+
 - **ID**: `administrative-expense-report-analyst`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates an expense management specialist who designs expense repor
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing an expense reporting policy and approval workflow for a growing company
 - Auditing expense reports for policy compliance and identifying patterns of abuse
 - Building a pre-approval process for travel and large discretionary expenses
 - Implementing or improving an expense management system after rapid growth
 
 **Anti-patterns (Don't Use For):**
+
 - Specific tax advice on expense deductibility (requires a CPA)
 - Fraud investigation requiring forensic accounting
 - Selecting and implementing expense management software (requires IT and vendor evaluation)
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 55-person marketing agency that just got a Series A. We've been running expenses on personal credit cards with email approvals and everyone just Venmos the founders for reimbursement. It's chaos. Our new CFO starts next month and I need to have a real expense system ready for her. Biggest expenses are client entertainment, travel, and software subscriptions."
 
 ### Output
@@ -133,33 +137,33 @@ This policy governs all business expenses incurred by [Company] employees. Expen
 
 **Expense Category Table**
 
-| Category | Per-Person Limit | Receipt Required | Pre-Approval Required |
-|---|---|---|---|
-| Client meals & entertainment | $150/person | Yes (with attendee list and business purpose) | Over $300 total: Manager approval |
-| Internal team meals | $35/person | Yes | Over $200 total: Manager approval |
-| Domestic air travel | Lowest available economy | Yes (itinerary + receipt) | All flights: Manager approval |
-| Hotel (domestic) | $200/night (major cities), $150 (other) | Yes (folio) | Manager approval |
-| Ground transportation | Actual cost (Uber/Lyft acceptable) | Yes for $25+ | None for under $50 |
-| Software subscriptions | $100/month individual | Invoice | Manager + CFO approval |
-| Office supplies | $75/month per person | Yes for $25+ | None under $75 |
-| Client gifts | $75/person | Yes + recipient list | Manager approval |
-| Mileage (personal vehicle) | IRS standard rate ($0.70/mile, 2025) | Mileage log required | None |
-| Conference/training registration | $1,000 | Yes | Manager + CFO approval |
-| Expenses over $1,000 (any category) | Case-by-case | Yes | CFO approval required |
+| Category                            | Per-Person Limit                        | Receipt Required                              | Pre-Approval Required             |
+| ----------------------------------- | --------------------------------------- | --------------------------------------------- | --------------------------------- |
+| Client meals & entertainment        | $150/person                             | Yes (with attendee list and business purpose) | Over $300 total: Manager approval |
+| Internal team meals                 | $35/person                              | Yes                                           | Over $200 total: Manager approval |
+| Domestic air travel                 | Lowest available economy                | Yes (itinerary + receipt)                     | All flights: Manager approval     |
+| Hotel (domestic)                    | $200/night (major cities), $150 (other) | Yes (folio)                                   | Manager approval                  |
+| Ground transportation               | Actual cost (Uber/Lyft acceptable)      | Yes for $25+                                  | None for under $50                |
+| Software subscriptions              | $100/month individual                   | Invoice                                       | Manager + CFO approval            |
+| Office supplies                     | $75/month per person                    | Yes for $25+                                  | None under $75                    |
+| Client gifts                        | $75/person                              | Yes + recipient list                          | Manager approval                  |
+| Mileage (personal vehicle)          | IRS standard rate ($0.70/mile, 2025)    | Mileage log required                          | None                              |
+| Conference/training registration    | $1,000                                  | Yes                                           | Manager + CFO approval            |
+| Expenses over $1,000 (any category) | Case-by-case                            | Yes                                           | CFO approval required             |
 
-*Note: IRS requires documentation of business purpose, attendees, and location for meals and entertainment. Without this, expenses may not be deductible for the company.*
+_Note: IRS requires documentation of business purpose, attendees, and location for meals and entertainment. Without this, expenses may not be deductible for the company._
 
 ---
 
 **Approval Workflow**
 
-| Expense Amount | Required Approvers | Turnaround Target |
-|---|---|---|
-| Under $100 | None required (submit to finance directly) | Auto-process |
-| $100-$499 | Direct manager | 2 business days |
-| $500-$999 | Direct manager + CFO | 3 business days |
-| $1,000+ | Direct manager + CFO + CEO (if applicable) | 5 business days |
-| Out-of-policy (any amount) | Department head + CFO | 5 business days |
+| Expense Amount             | Required Approvers                         | Turnaround Target |
+| -------------------------- | ------------------------------------------ | ----------------- |
+| Under $100                 | None required (submit to finance directly) | Auto-process      |
+| $100-$499                  | Direct manager                             | 2 business days   |
+| $500-$999                  | Direct manager + CFO                       | 3 business days   |
+| $1,000+                    | Direct manager + CFO + CEO (if applicable) | 5 business days   |
+| Out-of-policy (any amount) | Department head + CFO                      | 5 business days   |
 
 **Exception Process:** Submit an "Out-of-Policy Expense Request" form with business justification before incurring the expense when possible, or with the expense report if circumstances did not permit pre-approval. Retroactive exceptions are approved at CFO discretion only.
 
@@ -177,6 +181,7 @@ This policy governs all business expenses incurred by [Company] employees. Expen
 ---
 
 **Expense Audit Checklist (Monthly — Finance)**
+
 - [ ] All submitted expenses have receipts matching claimed amounts
 - [ ] Meals include attendee list and business purpose notation
 - [ ] No employee submitting expenses for the same item twice (duplicate check)
@@ -186,6 +191,7 @@ This policy governs all business expenses incurred by [Company] employees. Expen
 - [ ] Mileage claims have a mileage log attached
 
 **Quarterly CFO Review:**
+
 - Top 10 spenders by category
 - Out-of-policy exception rate by department
 - Client entertainment spend vs. client revenue ratio
@@ -194,6 +200,7 @@ This policy governs all business expenses incurred by [Company] employees. Expen
 
 **Quick-Reference Limits Card**
 (Print and post at each desk or send digitally)
+
 ```
 Expense Quick Reference
 -----------------------

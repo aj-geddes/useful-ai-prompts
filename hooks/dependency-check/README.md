@@ -118,7 +118,7 @@ exclude:
 
 # Reporting
 report:
-  format: json  # json, text, sarif
+  format: json # json, text, sarif
   output: .security-report.json
   include_fix_suggestions: true
 ```
@@ -194,6 +194,7 @@ Detailed report:
 ### JavaScript/TypeScript
 
 **npm**
+
 ```bash
 npm audit
 npm audit fix         # Auto-fix
@@ -201,12 +202,14 @@ npm audit fix --force # Force fix with breaking changes
 ```
 
 **yarn**
+
 ```bash
 yarn audit
 yarn audit --level high
 ```
 
 **pnpm**
+
 ```bash
 pnpm audit
 pnpm audit --fix
@@ -215,6 +218,7 @@ pnpm audit --fix
 ### Python
 
 **pip-audit**
+
 ```bash
 pip-audit
 pip-audit --fix       # Auto-fix
@@ -222,6 +226,7 @@ pip-audit --format json
 ```
 
 **safety**
+
 ```bash
 safety check
 safety check --json
@@ -230,6 +235,7 @@ safety check --json
 ### Ruby
 
 **bundler-audit**
+
 ```bash
 bundle audit
 bundle audit update   # Update vulnerability database
@@ -238,6 +244,7 @@ bundle audit update   # Update vulnerability database
 ### Rust
 
 **cargo-audit**
+
 ```bash
 cargo audit
 cargo audit --fix     # Auto-fix with cargo-edit
@@ -246,6 +253,7 @@ cargo audit --fix     # Auto-fix with cargo-edit
 ### Go
 
 **govulncheck**
+
 ```bash
 govulncheck ./...
 govulncheck -json ./...
@@ -254,6 +262,7 @@ govulncheck -json ./...
 ### PHP
 
 **composer audit**
+
 ```bash
 composer audit
 composer audit --format json
@@ -262,11 +271,13 @@ composer audit --format json
 ### Java/Maven
 
 **OWASP Dependency Check**
+
 ```bash
 mvn org.owasp:dependency-check-maven:check
 ```
 
 **Snyk**
+
 ```bash
 snyk test
 snyk monitor
@@ -351,7 +362,7 @@ Define organization-wide policies:
 policies:
   # Disallow specific packages
   disallowed_packages:
-    - event-stream  # Known malicious package
+    - event-stream # Known malicious package
     - flatmap-stream
 
   # Require minimum versions
@@ -361,8 +372,8 @@ policies:
 
   # Require security updates within timeframe
   security_update_sla:
-    critical: 1  # 1 day
-    high: 7      # 7 days
+    critical: 1 # 1 day
+    high: 7 # 7 days
     moderate: 30 # 30 days
 ```
 
@@ -686,7 +697,7 @@ block_threshold: moderate
 warn_threshold: low
 auto_fix: false
 check_on_commit: true
-whitelist: []  # No exceptions
+whitelist: [] # No exceptions
 ```
 
 ### Balanced Approach
@@ -706,7 +717,7 @@ enabled: true
 block_threshold: critical
 warn_threshold: high
 auto_fix: false
-check_on_commit: false  # Check in CI instead
+check_on_commit: false # Check in CI instead
 ```
 
 ## License

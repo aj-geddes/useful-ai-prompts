@@ -1,6 +1,7 @@
 # Salary Negotiation Expert
 
 ## Metadata
+
 - **ID**: `career-salary-negotiation-expert`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Prepares and executes salary negotiations through market research, value quantification, strategic conversation planning, and objection handling. Maximizes compensation outcomes while maintaining positive professional relationships and long-term career positioning.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Preparing for salary review conversations with current employer
 - Negotiating new job offer compensation packages
 - Requesting promotions or significant raises
 - Evaluating and comparing total compensation packages
 
 **Anti-patterns (when not to use):**
+
 - General career planning without imminent negotiation
 - Interview preparation before receiving offers
 - Benefits administration questions
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Senior Software Engineer, 2.5 years in role. Current: $95K base + $5K bonus = $100K total. Target: $115K (20% increase). Accomplishments: Led system migration saving $150K/year, mentored 2 junior devs (both promoted), took on architecture responsibilities. Market research shows $110-125K range for similar roles. Last raise was 15 months ago. Good relationship with manager."
 
 ### Output
@@ -128,11 +134,13 @@ FAILURE INDICATORS:
 **MARKET ANALYSIS**
 
 Your Position:
+
 - Current total compensation: $100K
 - Market range for Senior SWE (your experience/location): $110K-130K
 - Your position: 15-20% below market minimum
 
 Market Evidence:
+
 - Glassdoor: $105-125K for Senior SWE (75th percentile: $118K)
 - Levels.fyi: $115-135K for comparable companies
 - Stack Overflow Survey: $115K median for your tech stack
@@ -144,6 +152,7 @@ Your request of $115K is conservative and well-supported by data. You're current
 **VALUE DOCUMENTATION**
 
 Quantified Contributions:
+
 1. System Migration Leadership
    - Annual savings: $150K in infrastructure and maintenance costs
    - Performance improvement: 40% reduction in downtime
@@ -198,16 +207,19 @@ Closing:
 If $115K base is not possible:
 
 Phased Approach:
+
 - Immediate: 10% increase to $105K
 - 6 months: Additional 6% to $111K
 - Benefit: Easier budget approval, demonstrates commitment
 
 Performance Structure:
+
 - Base: $108K
 - Quarterly bonus: $2K tied to clear metrics
 - Total potential: $116K+
 
 Non-Salary Alternatives:
+
 - Sign-on or retention bonus: $5-10K
 - Additional vacation days: 3-5 days (value: $2-4K)
 - Conference/training budget: $3-5K annually
@@ -218,18 +230,21 @@ Non-Salary Alternatives:
 **POST-NEGOTIATION STRATEGY**
 
 If Successful:
+
 - Express genuine gratitude (not excessive)
 - Request confirmation in writing
 - Deliver on implied increased expectations
 - Schedule 6-month check-in on continued performance
 
 If Delayed:
+
 - Request specific timeline and decision criteria
 - Offer to provide additional information if needed
 - Document the commitment made
 - Set calendar reminder to follow up
 
 If Declined:
+
 - Ask for specific reasons and what would change the decision
 - Request timeline for reconsideration
 - Evaluate external opportunities
@@ -242,6 +257,7 @@ Continue documenting achievements, monitor market rates quarterly, maintain rela
 ---
 
 ## Related Prompts
+
 - [Performance Review Optimizer](performance-review-optimizer.md) - Building the case for raises
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term compensation growth
 - [Job Search Optimizer](job-search-optimizer.md) - Leveraging external offers

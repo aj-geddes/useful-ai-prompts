@@ -3,27 +3,28 @@ title: Database Schema Development Expert
 slug: database-schema-development-expert
 category: technical workflows
 tags:
-- database
-- schema-design
-- data-modeling
-- sql
-- normalization
-- postgresql
+  - database
+  - schema-design
+  - data-modeling
+  - sql
+  - normalization
+  - postgresql
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs efficient, normalized database schemas that support application
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs efficient, normalized database schemas that support application
   data requirements while ensuring performance, integrity, and scalability. Provides
   complete ERD documentation, SQL implementations, indexing strategies, and optimization
   recommendations for production workloads.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing new database schemas from application requirements
-- Optimizing existing schemas for query performance
-- Planning database migrations and versioning strategies
-- Creating multi-tenant or high-scale database architectures
+  - Ideal Scenarios:**
+  - Designing new database schemas from application requirements
+  - Optimizing existing schemas for query performance
+  - Planning database migrations and versioning strategies
+  - Creating multi-tenant or high-scale database architectures
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,15 +39,17 @@ Well-designed schemas balance normalization for data integrity with strategic de
 
 <input_handling>
 Required inputs:
+
 - Database purpose (e.g., e-commerce, CRM, inventory, project management)
 - Main entities and their relationships (at least core entities)
 - Expected data volumes and growth rates (rows, transactions/second)
 
 Infer if not provided:
+
 - Database engine: PostgreSQL for general use
 - Normalization: 3NF with strategic denormalization for read-heavy paths
 - Performance target: OLTP optimized (favor write/read balance)
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive database schema with performance optimization:
@@ -58,12 +61,13 @@ Design a comprehensive database schema with performance optimization:
 5. Implement constraints for data integrity (PK, FK, CHECK, UNIQUE)
 6. Plan partitioning strategy for large or time-series tables
 7. Create migration scripts and document maintenance procedures
-</task>
+   </task>
 
 <output_specification>
 Format: ERD description, SQL DDL statements, and optimization recommendations
 Length: 1000-2000 words with complete SQL examples
 Structure:
+
 - Entity Relationship Summary (diagram notation or description)
 - Core Tables (DDL with all constraints)
 - Indexing Strategy (index definitions with rationale)
@@ -71,21 +75,23 @@ Structure:
 - Row-Level Security (for multi-tenant)
 - Sample Queries (demonstrating index usage)
 - Migration Notes (versioning, rollback considerations)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Proper normalization with justified denormalization decisions
 - Comprehensive indexing for common query patterns
 - Appropriate constraint usage (FK, CHECK, UNIQUE, exclusion)
 - Scalability considerations (partitioning, sharding hints)
 
 Avoid:
+
 - Over-normalization that requires excessive joins for common queries
 - Missing foreign key relationships between related tables
 - Ignoring index maintenance overhead for write-heavy tables
 - Using single-column surrogate keys where natural composite keys are appropriate
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All tables must have primary keys defined

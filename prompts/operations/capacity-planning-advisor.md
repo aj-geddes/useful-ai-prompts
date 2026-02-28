@@ -1,6 +1,7 @@
 # Capacity Planning Advisor
 
 ## Metadata
+
 - **ID**: `operations-capacity-planning-advisor`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a capacity planning advisor who connects demand forecasts to resource requirements, identifies utilization gaps and surpluses, and builds scalability roadmaps. It covers labor, equipment, facility, and technology capacity across operational and growth planning horizons.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business is projecting 30-50% volume growth and needs to understand when current capacity will be exhausted and what investments are required
 - Operations leadership needs to identify which resources are constraining throughput under current demand
 - A seasonal business needs a capacity plan that matches staffing and equipment to demand peaks without excessive idle-time costs in off-peak periods
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time staffing dispatching decisions that require operational scheduling tools
 - Financial modeling for capital projects without an established demand baseline
 
@@ -65,9 +70,11 @@ Avoid: Planning only to theoretical capacity without efficiency/availability ded
 ## Example Usage
 
 ### Input
+
 "We run a three-shift packaging operation with 2 automated lines rated at 120 units/hour each. We run 22 hours/day (2-hour maintenance window). Current demand is 4,800 units/day. Our sales team is forecasting 20% growth next year and 15% the year after. Typical OEE on our lines is 78%. We're also constrained by our 18-person packaging crew."
 
 ### Output
+
 **Capacity Planning Analysis: Automated Packaging Operation**
 
 **Current Capacity Baseline**
@@ -82,28 +89,28 @@ Current demand: 4,800 units/day
 
 **Demand Projection**
 
-| Period | Demand (units/day) | Growth Rate |
-|---|---|---|
-| Current | 4,800 | Baseline |
-| Year 1 | 5,760 | +20% |
-| Year 2 | 6,624 | +15% on Y1 |
+| Period  | Demand (units/day) | Growth Rate |
+| ------- | ------------------ | ----------- |
+| Current | 4,800              | Baseline    |
+| Year 1  | 5,760              | +20%        |
+| Year 2  | 6,624              | +15% on Y1  |
 
 **Utilization Analysis**
 
-| Resource | Effective Capacity | Current Demand | Utilization |
-|---|---|---|---|
-| Packaging lines (OEE-adjusted) | 4,118 units/day | 4,800 | **116%** — over-capacity NOW |
-| Labor (18 FTEs, 3 shifts) | ~5,200 units/day equiv. | 4,800 | 92% — at risk |
+| Resource                       | Effective Capacity      | Current Demand | Utilization                  |
+| ------------------------------ | ----------------------- | -------------- | ---------------------------- |
+| Packaging lines (OEE-adjusted) | 4,118 units/day         | 4,800          | **116%** — over-capacity NOW |
+| Labor (18 FTEs, 3 shifts)      | ~5,200 units/day equiv. | 4,800          | 92% — at risk                |
 
 **Binding Constraint**: Packaging line effective capacity is the primary constraint. Labor is secondary but will become co-constraining at Year 1 volumes.
 
 **Scalability Options**
 
-| Option | Incremental Capacity | Lead Time | Est. Annual Cost |
-|---|---|---|---|
-| A: OEE improvement program (target 88%) | +413 units/day | 3-6 months | $80K (training, PM) |
-| B: Add third packaging line | +2,069 units/day (at 88% OEE) | 9-12 months | $1.2M capex |
-| C: Contract co-packer for overflow | +1,500 units/day flexible | 6-8 weeks | $0.18-0.22/unit premium |
+| Option                                  | Incremental Capacity          | Lead Time   | Est. Annual Cost        |
+| --------------------------------------- | ----------------------------- | ----------- | ----------------------- |
+| A: OEE improvement program (target 88%) | +413 units/day                | 3-6 months  | $80K (training, PM)     |
+| B: Add third packaging line             | +2,069 units/day (at 88% OEE) | 9-12 months | $1.2M capex             |
+| C: Contract co-packer for overflow      | +1,500 units/day flexible     | 6-8 weeks   | $0.18-0.22/unit premium |
 
 **Capacity Roadmap**
 
@@ -117,10 +124,12 @@ Current demand: 4,800 units/day
 ---
 
 ## Variations
+
 - **Service Operations Version**: Adapts model to call center agents, service bays, or clinic appointment slots instead of production equipment
 - **Multi-Site Version**: Compares capacity across multiple facilities to identify optimal volume rebalancing before capital investment
 
 ## Related Prompts
+
 - [Production Planning Expert](production-planning-expert.md) - Detailed scheduling within established capacity constraints
 - [Operational Efficiency Analyst](operational-efficiency-analyst.md) - Improve effective capacity through waste and OEE analysis
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build utilization and capacity tracking dashboards

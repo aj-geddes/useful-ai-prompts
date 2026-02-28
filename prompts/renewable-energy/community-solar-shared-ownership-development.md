@@ -1,6 +1,7 @@
 # Community Solar and Shared Ownership Development
 
 ## Metadata
+
 - **ID**: `community-solar-shared-ownership-development`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Develop community solar and shared ownership projects that democratize renewable
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing community solar subscription programs
 - Developing cooperative or shared ownership structures
 - Creating low-income solar access programs
@@ -26,6 +28,7 @@ Develop community solar and shared ownership projects that democratize renewable
 - Coordinating utility virtual net metering programs
 
 **Anti-Patterns (When NOT to Use):**
+
 - Utility-scale solar without community component
 - Rooftop solar installations for individual homes
 - Legal entity formation (requires legal counsel)
@@ -111,9 +114,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We want to develop a 5 MW community solar project in a state with an established community solar program. Target is 1,200 residential subscribers plus some small businesses. State requires 20% low-to-moderate income (LMI) participation. The local utility has virtual net metering and consolidated billing. We want meaningful community ownership and governance, not just subscriptions.
 
 ### Output
+
 **Community Solar Development Framework: 5 MW Hybrid Ownership Project**
 
 **Regulatory and Market Context**
@@ -124,14 +129,16 @@ Your state's established program provides clear framework: virtual net metering 
 
 Rather than pure subscription or pure cooperative, consider hybrid model:
 
-*Community Cooperative Ownership (40%)*
+_Community Cooperative Ownership (40%)_
+
 - 2 MW owned by community cooperative
 - Members invest $500-$5,000 for ownership stake
 - Democratic governance (one member, one vote)
 - Dividend distributions from energy production
 - Priority subscription access for members
 
-*Third-Party Development (60%)*
+_Third-Party Development (60%)_
+
 - 3 MW owned by development company/investor
 - Standard subscription model for non-member subscribers
 - Professional management and financing access
@@ -141,21 +148,24 @@ This structure delivers community ownership benefits while maintaining project f
 
 **Subscription Design**
 
-*Standard Residential Subscription*
+_Standard Residential Subscription_
+
 - Subscription size: 3-8 kW (matching typical household usage)
 - Credit rate: Retail rate minus 10% (subscriber savings)
 - Contract term: 12-month with automatic renewal
 - No upfront cost; savings from day one
 - Portable within utility territory
 
-*LMI Program Design*
+_LMI Program Design_
+
 - Enhanced discount: 20% below retail rate
 - Income verification through existing utility programs
 - Community organization partnerships for outreach
 - No credit check requirements
 - Priority enrollment and waiting list placement
 
-*Small Business Subscriptions*
+_Small Business Subscriptions_
+
 - Flexible sizing: 10-100 kW
 - 12-24 month terms with renewal options
 - Sustainability reporting and recognition
@@ -163,19 +173,22 @@ This structure delivers community ownership benefits while maintaining project f
 
 **Subscriber Acquisition Strategy**
 
-*Phase 1: Anchor Subscribers (Months 1-3)*
+_Phase 1: Anchor Subscribers (Months 1-3)_
+
 - Local governments and municipal facilities
 - Nonprofits and community organizations
 - Local businesses with sustainability commitments
 - Target: 200 subscriptions (300 kW)
 
-*Phase 2: Community Cooperative Members (Months 3-6)*
+_Phase 2: Community Cooperative Members (Months 3-6)_
+
 - Community meetings and information sessions
 - Partnership with local credit unions for member financing
 - Door-to-door outreach in target neighborhoods
 - Target: 400 member-subscribers (600 kW)
 
-*Phase 3: General Subscriber Acquisition (Months 6-12)*
+_Phase 3: General Subscriber Acquisition (Months 6-12)_
+
 - Digital marketing and utility bill inserts
 - Referral program with subscriber incentives
 - Real estate and property manager partnerships
@@ -183,13 +196,15 @@ This structure delivers community ownership benefits while maintaining project f
 
 **LMI Participation Strategy**
 
-*Partnerships*
+_Partnerships_
+
 - Community action agencies for income verification
 - Housing authorities for multifamily outreach
 - Energy assistance programs for cross-enrollment
 - Faith-based organizations for community trust
 
-*Barrier Removal*
+_Barrier Removal_
+
 - No credit score requirements
 - Simplified enrollment process
 - Multilingual materials and support
@@ -197,19 +212,22 @@ This structure delivers community ownership benefits while maintaining project f
 
 **Cooperative Governance Structure**
 
-*Member Rights*
+_Member Rights_
+
 - Elect board of directors (5-7 members)
 - Vote on major decisions (expansion, merger)
 - Access to financial information and annual reports
 - Priority subscription allocation
 
-*Board Responsibilities*
+_Board Responsibilities_
+
 - Oversee cooperative operations
 - Approve annual budget and distributions
 - Hire/supervise management
 - Community benefit fund allocation
 
-*Community Benefit Fund*
+_Community Benefit Fund_
+
 - 5% of cooperative revenue to community fund
 - Grants for local energy efficiency programs
 - Scholarships for clean energy education
@@ -217,13 +235,15 @@ This structure delivers community ownership benefits while maintaining project f
 
 **Financial Model Overview**
 
-*Revenue Streams*
+_Revenue Streams_
+
 - Subscriber fees (primary revenue)
 - Renewable Energy Certificate sales
 - Community fund contributions from cooperative
 - Potential capacity/demand response payments
 
-*Cost Structure*
+_Cost Structure_
+
 - Land lease and site costs
 - Equipment and installation
 - Interconnection and utility fees
@@ -231,20 +251,23 @@ This structure delivers community ownership benefits while maintaining project f
 - Operations and maintenance
 - Community engagement and administration
 
-*Member Returns*
+_Member Returns_
+
 - Target 4-6% annual dividend to cooperative members
 - Solar production tied to member investment
 - 25-year project life with equipment refresh at year 15
 
 **Operational Systems**
 
-*Subscriber Management Platform*
+_Subscriber Management Platform_
+
 - Automated enrollment and credit tracking
 - Customer portal for usage and savings viewing
 - Churn management and re-enrollment tools
 - LMI program compliance documentation
 
-*Community Engagement*
+_Community Engagement_
+
 - Quarterly member newsletters and updates
 - Annual member meeting and celebration
 - Educational programming on clean energy
@@ -262,6 +285,7 @@ This structure delivers community ownership benefits while maintaining project f
 ---
 
 ## Related Prompts
+
 - [Clean Energy Policy Development Expert](clean-energy-policy-development-expert.md) - For policy frameworks
 - [Solar Project Development](solar-project-financial-modeling-investment-optimization.md) - For financial modeling
 - [Agrivoltaics Development](solar-energy-development/agrivoltaics-dual-use-system-development.md) - For dual-use projects

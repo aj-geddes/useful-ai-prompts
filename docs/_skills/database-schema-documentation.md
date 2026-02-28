@@ -1,13 +1,14 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Document database schemas, ERD diagrams, table relationships, indexes,
+date: "2025-01-01"
+description:
+  Document database schemas, ERD diagrams, table relationships, indexes,
   and constraints. Use when documenting database schema, creating ERD diagrams, or
   writing table documentation.
 layout: skill
 slug: database-schema-documentation
 tags:
-- data
+  - data
 title: database-schema-documentation
 ---
 
@@ -29,7 +30,7 @@ Create comprehensive database schema documentation including entity relationship
 
 ## Schema Documentation Template
 
-```markdown
+````markdown
 # Database Schema Documentation
 
 **Database:** PostgreSQL 14.x
@@ -90,6 +91,7 @@ erDiagram
         boolean active
     }
 ```
+````
 
 ---
 
@@ -101,19 +103,19 @@ Stores user account information.
 
 **Columns:**
 
-| Column | Type | Null | Default | Description |
-|--------|------|------|---------|-------------|
-| id | uuid | NO | gen_random_uuid() | Primary key |
-| email | varchar(255) | NO | - | User email (unique) |
-| password_hash | varchar(255) | NO | - | bcrypt hashed password |
-| name | varchar(255) | NO | - | User's full name |
-| email_verified | boolean | NO | false | Email verification status |
-| two_factor_enabled | boolean | NO | false | 2FA enabled flag |
-| two_factor_secret | varchar(32) | YES | - | TOTP secret |
-| created_at | timestamp | NO | now() | Record creation time |
-| updated_at | timestamp | NO | now() | Last update time |
-| deleted_at | timestamp | YES | - | Soft delete timestamp |
-| last_login_at | timestamp | YES | - | Last login timestamp |
+| Column             | Type         | Null | Default           | Description               |
+| ------------------ | ------------ | ---- | ----------------- | ------------------------- |
+| id                 | uuid         | NO   | gen_random_uuid() | Primary key               |
+| email              | varchar(255) | NO   | -                 | User email (unique)       |
+| password_hash      | varchar(255) | NO   | -                 | bcrypt hashed password    |
+| name               | varchar(255) | NO   | -                 | User's full name          |
+| email_verified     | boolean      | NO   | false             | Email verification status |
+| two_factor_enabled | boolean      | NO   | false             | 2FA enabled flag          |
+| two_factor_secret  | varchar(32)  | YES  | -                 | TOTP secret               |
+| created_at         | timestamp    | NO   | now()             | Record creation time      |
+| updated_at         | timestamp    | NO   | now()             | Last update time          |
+| deleted_at         | timestamp    | YES  | -                 | Soft delete timestamp     |
+| last_login_at      | timestamp    | YES  | -                 | Last login timestamp      |
 
 **Indexes:**
 
@@ -162,22 +164,22 @@ Stores product catalog information.
 
 **Columns:**
 
-| Column | Type | Null | Default | Description |
-|--------|------|------|---------|-------------|
-| id | uuid | NO | gen_random_uuid() | Primary key |
-| name | varchar(255) | NO | - | Product name |
-| slug | varchar(255) | NO | - | URL-friendly name (unique) |
-| description | text | YES | - | Product description |
-| price | decimal(10,2) | NO | - | Product price in USD |
-| compare_at_price | decimal(10,2) | YES | - | Original price (for sales) |
-| sku | varchar(100) | NO | - | Stock keeping unit (unique) |
-| category_id | uuid | NO | - | Foreign key to categories |
-| brand | varchar(100) | YES | - | Product brand |
-| active | boolean | NO | true | Product visibility |
-| featured | boolean | NO | false | Featured product flag |
-| metadata | jsonb | YES | - | Additional product metadata |
-| created_at | timestamp | NO | now() | Record creation time |
-| updated_at | timestamp | NO | now() | Last update time |
+| Column           | Type          | Null | Default           | Description                 |
+| ---------------- | ------------- | ---- | ----------------- | --------------------------- |
+| id               | uuid          | NO   | gen_random_uuid() | Primary key                 |
+| name             | varchar(255)  | NO   | -                 | Product name                |
+| slug             | varchar(255)  | NO   | -                 | URL-friendly name (unique)  |
+| description      | text          | YES  | -                 | Product description         |
+| price            | decimal(10,2) | NO   | -                 | Product price in USD        |
+| compare_at_price | decimal(10,2) | YES  | -                 | Original price (for sales)  |
+| sku              | varchar(100)  | NO   | -                 | Stock keeping unit (unique) |
+| category_id      | uuid          | NO   | -                 | Foreign key to categories   |
+| brand            | varchar(100)  | YES  | -                 | Product brand               |
+| active           | boolean       | NO   | true              | Product visibility          |
+| featured         | boolean       | NO   | false             | Featured product flag       |
+| metadata         | jsonb         | YES  | -                 | Additional product metadata |
+| created_at       | timestamp     | NO   | now()             | Record creation time        |
+| updated_at       | timestamp     | NO   | now()             | Last update time            |
 
 **Indexes:**
 
@@ -228,26 +230,26 @@ Stores customer orders.
 
 **Columns:**
 
-| Column | Type | Null | Default | Description |
-|--------|------|------|---------|-------------|
-| id | uuid | NO | gen_random_uuid() | Primary key |
-| order_number | varchar(20) | NO | - | Human-readable order ID (unique) |
-| user_id | uuid | NO | - | Foreign key to users |
-| status | varchar(20) | NO | 'pending' | Order status |
-| subtotal | decimal(10,2) | NO | - | Items subtotal |
-| tax | decimal(10,2) | NO | 0 | Tax amount |
-| shipping | decimal(10,2) | NO | 0 | Shipping cost |
-| total | decimal(10,2) | NO | - | Total amount |
-| currency | char(3) | NO | 'USD' | Currency code |
-| notes | text | YES | - | Order notes |
-| shipping_address | jsonb | NO | - | Shipping address |
-| billing_address | jsonb | NO | - | Billing address |
-| created_at | timestamp | NO | now() | Order creation time |
-| updated_at | timestamp | NO | now() | Last update time |
-| confirmed_at | timestamp | YES | - | Order confirmation time |
-| shipped_at | timestamp | YES | - | Shipping time |
-| delivered_at | timestamp | YES | - | Delivery time |
-| cancelled_at | timestamp | YES | - | Cancellation time |
+| Column           | Type          | Null | Default           | Description                      |
+| ---------------- | ------------- | ---- | ----------------- | -------------------------------- |
+| id               | uuid          | NO   | gen_random_uuid() | Primary key                      |
+| order_number     | varchar(20)   | NO   | -                 | Human-readable order ID (unique) |
+| user_id          | uuid          | NO   | -                 | Foreign key to users             |
+| status           | varchar(20)   | NO   | 'pending'         | Order status                     |
+| subtotal         | decimal(10,2) | NO   | -                 | Items subtotal                   |
+| tax              | decimal(10,2) | NO   | 0                 | Tax amount                       |
+| shipping         | decimal(10,2) | NO   | 0                 | Shipping cost                    |
+| total            | decimal(10,2) | NO   | -                 | Total amount                     |
+| currency         | char(3)       | NO   | 'USD'             | Currency code                    |
+| notes            | text          | YES  | -                 | Order notes                      |
+| shipping_address | jsonb         | NO   | -                 | Shipping address                 |
+| billing_address  | jsonb         | NO   | -                 | Billing address                  |
+| created_at       | timestamp     | NO   | now()             | Order creation time              |
+| updated_at       | timestamp     | NO   | now()             | Last update time                 |
+| confirmed_at     | timestamp     | YES  | -                 | Order confirmation time          |
+| shipped_at       | timestamp     | YES  | -                 | Shipping time                    |
+| delivered_at     | timestamp     | YES  | -                 | Delivery time                    |
+| cancelled_at     | timestamp     | YES  | -                 | Cancellation time                |
 
 **Indexes:**
 
@@ -287,16 +289,16 @@ Line items for each order.
 
 **Columns:**
 
-| Column | Type | Null | Default | Description |
-|--------|------|------|---------|-------------|
-| id | uuid | NO | gen_random_uuid() | Primary key |
-| order_id | uuid | NO | - | Foreign key to orders |
-| product_id | uuid | NO | - | Foreign key to products |
-| product_snapshot | jsonb | NO | - | Product data at order time |
-| quantity | int | NO | - | Quantity ordered |
-| unit_price | decimal(10,2) | NO | - | Price per unit |
-| subtotal | decimal(10,2) | NO | - | Line item total |
-| created_at | timestamp | NO | now() | Record creation time |
+| Column           | Type          | Null | Default           | Description                |
+| ---------------- | ------------- | ---- | ----------------- | -------------------------- |
+| id               | uuid          | NO   | gen_random_uuid() | Primary key                |
+| order_id         | uuid          | NO   | -                 | Foreign key to orders      |
+| product_id       | uuid          | NO   | -                 | Foreign key to products    |
+| product_snapshot | jsonb         | NO   | -                 | Product data at order time |
+| quantity         | int           | NO   | -                 | Quantity ordered           |
+| unit_price       | decimal(10,2) | NO   | -                 | Price per unit             |
+| subtotal         | decimal(10,2) | NO   | -                 | Line item total            |
+| created_at       | timestamp     | NO   | now()             | Record creation time       |
 
 **Indexes:**
 
@@ -568,12 +570,12 @@ pg_dump -h localhost -U postgres -t users -t orders database_name > tables.sql
 
 ## Data Retention Policy
 
-| Table | Retention | Archive Strategy |
-|-------|-----------|------------------|
-| users | Indefinite | Soft delete after 2 years inactive |
-| orders | 7 years | Move to archive after 2 years |
-| order_items | 7 years | Move to archive with orders |
-| logs | 90 days | Delete after retention period |
+| Table       | Retention  | Archive Strategy                   |
+| ----------- | ---------- | ---------------------------------- |
+| users       | Indefinite | Soft delete after 2 years inactive |
+| orders      | 7 years    | Move to archive after 2 years      |
+| order_items | 7 years    | Move to archive with orders        |
+| logs        | 90 days    | Delete after retention period      |
 
 ```
 
@@ -604,3 +606,4 @@ pg_dump -h localhost -U postgres -t users -t orders database_name > tables.sql
 - [dbdiagram.io](https://dbdiagram.io/) - ERD tool
 - [SchemaSpy](https://schemaspy.org/) - Schema documentation generator
 - [Mermaid ERD Syntax](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+```

@@ -395,6 +395,7 @@ def create_app(config_name='development'):
 ## Best Practices
 
 ### ✅ DO
+
 - Use blueprints for modular organization
 - Implement proper authentication with JWT
 - Validate all user input
@@ -407,6 +408,7 @@ def create_app(config_name='development'):
 - Use environment variables for configuration
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use global variables for shared state
 - Ignore database transactions

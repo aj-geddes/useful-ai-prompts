@@ -1,32 +1,34 @@
 <!-- Related Prompts Component -->
-<div class="related-prompts-section" id="relatedPrompts" style="display: none;">
-    <div class="related-header">
-        <h3 class="related-title">
-            <i class="fas fa-lightbulb"></i>
-            You might also like
-        </h3>
-        <p class="related-subtitle">Similar prompts based on your current selection</p>
-    </div>
-    <div class="related-prompts-grid" id="relatedPromptsGrid">
-        <!-- Related prompts will be populated by JavaScript -->
-    </div>
+<div class="related-prompts-section" id="relatedPrompts" style="display: none">
+  <div class="related-header">
+    <h3 class="related-title">
+      <i class="fas fa-lightbulb"></i>
+      You might also like
+    </h3>
+    <p class="related-subtitle">
+      Similar prompts based on your current selection
+    </p>
+  </div>
+  <div class="related-prompts-grid" id="relatedPromptsGrid">
+    <!-- Related prompts will be populated by JavaScript -->
+  </div>
 </div>
 
 <style>
-.related-prompts-section {
+  .related-prompts-section {
     margin: 3rem 0;
     padding: 2rem;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.06);
-}
+  }
 
-.related-header {
+  .related-header {
     text-align: center;
     margin-bottom: 2rem;
-}
+  }
 
-.related-title {
+  .related-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,26 +37,26 @@
     font-weight: 600;
     color: #1d1d1f;
     margin-bottom: 0.5rem;
-}
+  }
 
-.related-title i {
+  .related-title i {
     color: #007aff;
     font-size: 1.25rem;
-}
+  }
 
-.related-subtitle {
+  .related-subtitle {
     color: #86868b;
     font-size: 1rem;
     margin: 0;
-}
+  }
 
-.related-prompts-grid {
+  .related-prompts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-}
+  }
 
-.related-prompt-card {
+  .related-prompt-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -63,61 +65,67 @@
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
-}
+  }
 
-.related-prompt-card::before {
-    content: '';
+  .related-prompt-card::before {
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: 12px;
     padding: 1px;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(0, 122, 255, 0.05) 100%);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    background: linear-gradient(
+      135deg,
+      rgba(0, 122, 255, 0.1) 0%,
+      rgba(0, 122, 255, 0.05) 100%
+    );
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     mask-composite: subtract;
     -webkit-mask-composite: xor;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+  }
 
-.related-prompt-card:hover {
+  .related-prompt-card:hover {
     transform: translateY(-4px);
-    box-shadow: 
-        0 12px 40px rgba(0, 0, 0, 0.1),
-        0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.1),
+      0 4px 16px rgba(0, 0, 0, 0.08);
     border-color: rgba(0, 122, 255, 0.3);
-}
+  }
 
-.related-prompt-card:hover::before {
+  .related-prompt-card:hover::before {
     opacity: 1;
-}
+  }
 
-.related-card-header {
+  .related-card-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1rem;
-}
+  }
 
-.related-card-header h4 {
+  .related-card-header h4 {
     margin: 0;
     font-size: 1.0625rem;
     font-weight: 600;
     line-height: 1.4;
     flex: 1;
-}
+  }
 
-.related-card-header h4 a {
+  .related-card-header h4 a {
     color: #1d1d1f;
     text-decoration: none;
     transition: color 0.2s ease;
-}
+  }
 
-.related-card-header h4 a:hover {
+  .related-card-header h4 a:hover {
     color: #007aff;
-}
+  }
 
-.related-category {
+  .related-category {
     background: rgba(0, 122, 255, 0.1);
     color: #007aff;
     padding: 0.25rem 0.75rem;
@@ -126,9 +134,9 @@
     font-weight: 600;
     text-transform: capitalize;
     white-space: nowrap;
-}
+  }
 
-.related-description {
+  .related-description {
     color: #86868b;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -137,16 +145,16 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
+  }
 
-.related-tags {
+  .related-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.375rem;
     margin-bottom: 1rem;
-}
+  }
 
-.related-tags .tag {
+  .related-tags .tag {
     background: rgba(142, 142, 147, 0.12);
     color: #86868b;
     padding: 0.25rem 0.625rem;
@@ -155,21 +163,21 @@
     font-weight: 500;
     transition: all 0.2s ease;
     cursor: pointer;
-}
+  }
 
-.related-tags .tag:hover {
+  .related-tags .tag:hover {
     background: #007aff;
     color: white;
     transform: translateY(-1px);
-}
+  }
 
-.related-actions {
+  .related-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.related-view-btn {
+  .related-view-btn {
     background: #007aff;
     color: white;
     padding: 0.5rem 1rem;
@@ -183,82 +191,85 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
+  }
 
-.related-view-btn:hover {
+  .related-view-btn:hover {
     background: #0056d3;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
-}
+  }
 
-.related-similarity {
+  .related-similarity {
     display: flex;
     align-items: center;
     gap: 0.375rem;
     font-size: 0.75rem;
     color: #86868b;
-}
+  }
 
-.related-similarity i {
+  .related-similarity i {
     color: #34c759;
-}
+  }
 
-.similarity-high {
+  .similarity-high {
     color: #34c759;
-}
+  }
 
-.similarity-medium {
+  .similarity-medium {
     color: #ff9500;
-}
+  }
 
-.similarity-low {
+  .similarity-low {
     color: #8e8e93;
-}
+  }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+  /* Mobile responsive */
+  @media (max-width: 768px) {
     .related-prompts-section {
-        margin: 2rem 0;
-        padding: 1.5rem;
+      margin: 2rem 0;
+      padding: 1.5rem;
     }
-    
+
     .related-prompts-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-    
+
     .related-prompt-card {
-        padding: 1.25rem;
+      padding: 1.25rem;
     }
-    
+
     .related-card-header {
-        flex-direction: column;
-        gap: 0.75rem;
+      flex-direction: column;
+      gap: 0.75rem;
     }
-    
+
     .related-category {
-        align-self: flex-start;
+      align-self: flex-start;
     }
-}
+  }
 </style>
 
 <script>
-// Initialize related prompts when the component is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    if (typeof window.enhancedSearch !== 'undefined' && window.enhancedSearch.getRelatedPrompts) {
-        // This will be called after the enhanced search is initialized
-        setTimeout(() => {
-            loadRelatedPrompts();
-        }, 500);
+  // Initialize related prompts when the component is loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    if (
+      typeof window.enhancedSearch !== "undefined" &&
+      window.enhancedSearch.getRelatedPrompts
+    ) {
+      // This will be called after the enhanced search is initialized
+      setTimeout(() => {
+        loadRelatedPrompts();
+      }, 500);
     }
-});
+  });
 
-function loadRelatedPrompts() {
+  function loadRelatedPrompts() {
     // This function will be implemented by the enhanced search script
     // It extracts current prompt info and shows related prompts
-    const relatedSection = document.getElementById('relatedPrompts');
+    const relatedSection = document.getElementById("relatedPrompts");
     if (relatedSection) {
-        relatedSection.style.display = 'block';
+      relatedSection.style.display = "block";
     }
-}
+  }
 </script>

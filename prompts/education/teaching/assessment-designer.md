@@ -1,6 +1,7 @@
 # Assessment Designer
 
 ## Metadata
+
 - **ID**: `education-assessment-designer`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt transforms learning objectives into valid, reliable assessments that accurately measure student mastery. It guides educators through designing formative checks, summative evaluations, and performance tasks aligned to standards. The output includes complete assessment instruments with scoring guides and administration guidelines.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing unit tests or quizzes aligned to specific learning standards
 - Creating authentic performance tasks for project-based units
 - Building formative assessment sequences to monitor progress during instruction
 
 **Anti-patterns (Don't Use For):**
+
 - Generating answer keys for existing standardized tests
 - Creating assessments intended to rank students rather than measure learning
 - Replacing professional judgment about individual student accommodations
@@ -70,22 +75,25 @@ Avoid: Trick questions, ambiguous wording, assessing vocabulary instead of conce
 ## Example Usage
 
 ### Input
+
 "I need an assessment for my 7th grade science class on the water cycle. We just finished a two-week unit covering evaporation, condensation, precipitation, and transpiration. I want both a formative check (exit ticket style) and a short summative test. Standards-aligned to NGSS MS-ESS2-4."
 
 ### Output
+
 **Water Cycle Assessment Suite — Grade 7 Science (NGSS MS-ESS2-4)**
 
 ---
 
 **FORMATIVE: Exit Ticket (5 minutes)**
 
-*Directions: Answer both questions in complete sentences.*
+_Directions: Answer both questions in complete sentences._
 
 1. A puddle disappears after a sunny day. Identify the process responsible and explain what happens to the water molecules. (Understand/Apply — 2 pts)
 
 2. Look at the diagram of a cloud forming over a mountain. Label where condensation is occurring and explain what energy change makes this possible. (Analyze — 3 pts)
 
 **Scoring Guide — Exit Ticket**
+
 - Item 1: Full credit requires naming evaporation AND stating water molecules gain energy and move into the atmosphere as water vapor. Partial credit (1 pt) for naming process without explanation.
 - Item 2: Full credit requires correctly labeling the upslope side AND explaining that water vapor loses energy as it rises and cools. Common misconception: students confuse which side clouds form on.
 
@@ -93,29 +101,29 @@ Avoid: Trick questions, ambiguous wording, assessing vocabulary instead of conce
 
 **SUMMATIVE: Water Cycle Assessment (35 minutes, 40 points)**
 
-*Section A — Multiple Choice (2 pts each, 16 pts total)*
+_Section A — Multiple Choice (2 pts each, 16 pts total)_
 
 1. Which process directly returns water from plant leaves to the atmosphere?
-   a) Precipitation  b) Transpiration  c) Runoff  d) Infiltration
-   *Answer: B — Tests knowledge of transpiration, a commonly overlooked cycle component*
+   a) Precipitation b) Transpiration c) Runoff d) Infiltration
+   _Answer: B — Tests knowledge of transpiration, a commonly overlooked cycle component_
 
 2. During condensation, water vapor changes to liquid. What must happen to the energy of water molecules?
-   a) Energy increases  b) Energy stays the same  c) Energy decreases  d) Energy is destroyed
-   *Answer: C — Targets misconception that condensation generates heat rather than releasing it*
+   a) Energy increases b) Energy stays the same c) Energy decreases d) Energy is destroyed
+   _Answer: C — Targets misconception that condensation generates heat rather than releasing it_
 
 [Items 3-8 continue across evaporation rates, precipitation types, human impacts, and global water distribution]
 
-*Section B — Short Answer (4 pts each, 12 pts)*
+_Section B — Short Answer (4 pts each, 12 pts)_
 
 9. A farmer notices crops wilting during a drought. Using two water cycle processes, explain how a drought disrupts the normal flow of water in the local ecosystem.
 
-*Scoring: 2 pts for each correctly named and explained process. Accept: reduced evapotranspiration limits cloud formation; reduced precipitation decreases soil moisture infiltration. Misconception alert: students often omit transpiration's role.*
+_Scoring: 2 pts for each correctly named and explained process. Accept: reduced evapotranspiration limits cloud formation; reduced precipitation decreases soil moisture infiltration. Misconception alert: students often omit transpiration's role._
 
-*Section C — Performance Task (12 pts)*
+_Section C — Performance Task (12 pts)_
 
 10. Design a labeled diagram of the complete water cycle for a coastal mountain region. Your diagram must show all four major processes, include energy sources, and identify one way human activity alters the cycle. Use a written caption (3-5 sentences) explaining the diagram.
 
-*Rubric: Accuracy of processes (4 pts), Energy sources labeled correctly (3 pts), Human impact identified with explanation (3 pts), Caption clarity (2 pts)*
+_Rubric: Accuracy of processes (4 pts), Energy sources labeled correctly (3 pts), Human impact identified with explanation (3 pts), Caption clarity (2 pts)_
 
 ---
 
@@ -124,9 +132,11 @@ Avoid: Trick questions, ambiguous wording, assessing vocabulary instead of conce
 ---
 
 ## Variations
+
 - **Formative-Only**: Focus exclusively on exit tickets and low-stakes checks for daily lesson monitoring
 - **Performance Task Only**: Design an extended authentic task (lab report, presentation, model) with detailed analytic rubric
 
 ## Related Prompts
+
 - [Rubric Creator](rubric-creator.md) - Design detailed scoring rubrics for any task
 - [Differentiated Instruction Expert](differentiated-instruction-expert.md) - Adapt assessments for diverse learners

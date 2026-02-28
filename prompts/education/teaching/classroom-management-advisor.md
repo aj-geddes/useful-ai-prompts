@@ -1,6 +1,7 @@
 # Classroom Management Advisor
 
 ## Metadata
+
 - **ID**: `education-classroom-management-advisor`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps educators design proactive classroom management systems grounded in positive behavior support, clear expectations, and efficient routines. Rather than reacting to behavior problems, it focuses on preventing them through environment design, relationship building, and explicit behavioral instruction. The output includes a complete management plan tailored to the teacher's context and student population.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Setting up a classroom management system at the start of a school year or semester
 - Addressing recurring disruptive behavior patterns in an existing class
 - Designing a PBIS-aligned behavior support plan for a specific grade level or course
 
 **Anti-patterns (Don't Use For):**
+
 - Developing individualized behavior intervention plans (BIPs) for students with significant behavioral needs — consult a school psychologist
 - Justifying punitive or exclusionary discipline practices
 - Replacing trauma-informed professional support for students with complex trauma histories
@@ -70,14 +75,17 @@ Avoid: Rule lists that are long and negative ("no talking," "no phones"), punish
 ## Example Usage
 
 ### Input
+
 "I teach 8th grade math in an urban middle school. My 2nd period class (28 students) is very chatty and off-task during independent work time. Transitions between activities take 5-7 minutes and feel chaotic. I have a few students who shut down when redirected publicly. The school uses PBIS but implementation is inconsistent. I need help building a system that actually works for this specific class."
 
 ### Output
+
 **Classroom Management Blueprint — 8th Grade Math, Period 2**
 
 ---
 
 **Classroom Expectations (Post and Teach Week 1)**
+
 1. We arrive ready: materials out, eyes on the starter before the bell.
 2. We work through it: use your resources (notes, partner, me) before stopping.
 3. We respect the space: one voice at a time, movement that makes sense.
@@ -94,6 +102,7 @@ Bell rings → students begin a 4-minute starter problem on the board → teache
 ---
 
 **Recognition System**
+
 - Daily: Catch students doing the right thing — name it specifically. "Marcus, you pulled out your notes without being asked. That's exactly our expectation." Target 4 positives per student per week minimum.
 - Weekly: Class-wide tracker. When the class transitions in under 2 minutes, add a tally. At 10 tallies, the class votes on a low-cost reward (extra 5-minute free choice, music during independent work).
 - Never: Generic praise ("good job") or public ranking that embarrasses anyone.
@@ -101,6 +110,7 @@ Bell rings → students begin a 4-minute starter problem on the board → teache
 ---
 
 **Tiered Response Ladder**
+
 - Level 1 — Nonverbal: Proximity (stand near the student), tap the desk, point to the expectation posted on the wall. For students who shut down when corrected publicly, this is almost always your best tool.
 - Level 2 — Private Redirect: Crouch down, speak quietly. "Hey, I need you working on problem 3. What's getting in the way?" Listen for 10 seconds before restating the expectation.
 - Level 3 — Deferred Conversation: "I need to talk to you after class — nothing serious, I just want to check in." This removes the audience and the power struggle.
@@ -118,9 +128,11 @@ After any correction or removal: before the student returns to work, a 60-second
 ---
 
 ## Variations
+
 - **Elementary Version**: Adapt expectations and recognition for K-5 with visual anchors and more immediate reinforcement schedules
 - **Restorative Focus**: Emphasize community-building circles and peer accountability structures over individual behavior tracking
 
 ## Related Prompts
+
 - [Lesson Plan Creator](lesson-plan-creator.md) - Engaging instruction is the first classroom management tool
 - [Special Education Support](special-education-support.md) - Accommodate students with behavioral IEP goals within the class system

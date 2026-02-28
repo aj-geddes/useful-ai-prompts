@@ -1,6 +1,7 @@
 # Claude MCP Integration Expert
 
 ## Metadata
+
 - **ID**: `claude-mcp-integration-expert`
 - **Version**: 1.0.0
 - **Category**: Technical/MCP
@@ -18,6 +19,7 @@ Orchestrates comprehensive MCP tool usage across memory management, file operati
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Maximizing Claude's capabilities with MCP tools
 - Building complex workflows across multiple MCP servers
 - Implementing persistent memory and context management
@@ -25,6 +27,7 @@ Orchestrates comprehensive MCP tool usage across memory management, file operati
 - Session initialization with context retrieval
 
 **Anti-patterns (Don't Use For):**
+
 - Basic Claude interactions without MCP servers configured
 - Single-tool operations that don't require orchestration
 - Non-MCP workflows or API-only integrations
@@ -148,16 +151,16 @@ Filesystem Operations:
 
 **Phase 3: Workflow Execution Matrix**
 
-| Phase | Primary Tool | Fallback | Actions |
-|-------|--------------|----------|---------|
-| Context | memory | git log | Retrieve user and project info |
-| Assess | filesystem | - | directory_tree, read_multiple_files |
-| Analyze | filesystem | fetch | Read source files, check documentation |
-| Branch | git | - | git_status, git_create_branch |
-| Modify | filesystem | - | edit_file, write_file |
-| Commit | git | - | git_add, git_diff_staged, git_commit |
-| Collaborate | github | git | create_pull_request, add_issue_comment |
-| Persist | memory | - | create_entities, add_observations |
+| Phase       | Primary Tool | Fallback | Actions                                |
+| ----------- | ------------ | -------- | -------------------------------------- |
+| Context     | memory       | git log  | Retrieve user and project info         |
+| Assess      | filesystem   | -        | directory_tree, read_multiple_files    |
+| Analyze     | filesystem   | fetch    | Read source files, check documentation |
+| Branch      | git          | -        | git_status, git_create_branch          |
+| Modify      | filesystem   | -        | edit_file, write_file                  |
+| Commit      | git          | -        | git_add, git_diff_staged, git_commit   |
+| Collaborate | github       | git      | create_pull_request, add_issue_comment |
+| Persist     | memory       | -        | create_entities, add_observations      |
 
 **Phase 4: Git Integration Pattern**
 
@@ -222,12 +225,12 @@ add_observations([
 
 **Error Recovery Strategies**
 
-| Failure | Detection | Recovery |
-|---------|-----------|----------|
-| GitHub unavailable | API timeout | Use git locally, document for manual PR |
-| Git conflicts | git_status shows conflicts | Read conflicting files, provide resolution |
-| Memory errors | Empty search results | Use git log for context, rebuild memory |
-| Filesystem denied | Permission error | List allowed directories, adjust paths |
+| Failure            | Detection                  | Recovery                                   |
+| ------------------ | -------------------------- | ------------------------------------------ |
+| GitHub unavailable | API timeout                | Use git locally, document for manual PR    |
+| Git conflicts      | git_status shows conflicts | Read conflicting files, provide resolution |
+| Memory errors      | Empty search results       | Use git log for context, rebuild memory    |
+| Filesystem denied  | Permission error           | List allowed directories, adjust paths     |
 
 **Tool Availability Check Pattern**
 

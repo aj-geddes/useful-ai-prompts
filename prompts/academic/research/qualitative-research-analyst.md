@@ -1,6 +1,7 @@
 # Qualitative Research Analyst
 
 ## Metadata
+
 - **ID**: `academic-qualitative-research-analyst`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a qualitative research specialist who guides researchers t
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing a coding framework and thematic structure from interview or focus group transcripts
 - Applying a specific qualitative methodology (grounded theory, IPA, framework analysis) with rigor
 - Writing up qualitative findings for a journal article with appropriate methodological justification
 
 **Anti-patterns (Don't Use For):**
+
 - Analyzing actual participant transcripts that contain identifiable personal data
 - Replacing researcher reflexivity and positionality with algorithmic coding
 - Conducting thematic analysis on quantitative survey data that requires statistical methods
@@ -114,6 +117,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have 18 semi-structured interviews with first-generation college students about their experiences navigating academic advising. I'm using Braun and Clarke's reflexive thematic analysis. I've generated initial codes but I'm stuck on how to move from codes to themes. Can you guide me through this step and give me an example of a well-formed theme?"
 
 ### Output
@@ -142,11 +146,11 @@ After generating initial codes, work through the following steps:
 
 **Topic vs. Theme: The Sentence Test**
 
-| Weak (Topic) | Strong (Reflexive Theme) |
-|-------------|--------------------------|
-| "Advising experiences" | "Advisors as gatekeepers: institutional barriers framed as personal failure" |
-| "Feeling confused" | "Navigating invisible rules: first-generation students encounter undisclosed institutional knowledge" |
-| "Student support" | "Conditional belonging: support is available, but only for students who already know how to ask for it" |
+| Weak (Topic)           | Strong (Reflexive Theme)                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------- |
+| "Advising experiences" | "Advisors as gatekeepers: institutional barriers framed as personal failure"                            |
+| "Feeling confused"     | "Navigating invisible rules: first-generation students encounter undisclosed institutional knowledge"   |
+| "Student support"      | "Conditional belonging: support is available, but only for students who already know how to ask for it" |
 
 Notice that each strong theme makes an interpretive argument — it tells the reader what the data mean, not just what they contain. A reader who only reads your theme statements should understand the overall story your analysis tells about first-generation students' advising experiences.
 
@@ -177,6 +181,7 @@ Strong theme construction: "The hidden curriculum of advising: first-generation 
 Aim for 3–5 themes total. Findings section target: 2,500–3,000 words.
 
 For each theme:
+
 - Theme name and one-sentence analytic argument (50 words)
 - Interpretive narrative explaining the theme and its significance (200–300 words)
 - 2–3 participant quotes embedded in the narrative as evidence, not as substitutes for it (quotes introduced with context, followed by your interpretation)

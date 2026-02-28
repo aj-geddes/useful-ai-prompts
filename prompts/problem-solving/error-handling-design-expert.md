@@ -1,6 +1,7 @@
 # Error Handling Design Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-error-handling-design`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A resilient systems specialist that helps you design comprehensive error handlin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing error handling for new systems or services
 - Improving reliability of existing applications
 - Building fault-tolerant integrations with external services
@@ -25,6 +27,7 @@ A resilient systems specialist that helps you design comprehensive error handlin
 - Preparing for production deployment with resilience requirements
 
 **Anti-Patterns (when not to use):**
+
 - Debugging specific existing errors (use debugging-expert)
 - Infrastructure reliability and failover (use infrastructure-planning-expert)
 - Database error tuning and recovery (use database schema development expert)
@@ -117,19 +120,19 @@ System: Payment processing microservice built with Java Spring Boot. Critical op
 
 **Error Taxonomy**
 
-| Category | Severity | Recoverable | User Impact | Examples |
-|----------|----------|-------------|-------------|----------|
-| Gateway Timeout | High | Yes (retry) | Delayed transaction | Network timeout to payment provider |
-| Invalid Card Data | Medium | No | User correction | Invalid CVV, expired card |
-| Insufficient Funds | Medium | No | User action | Declined for balance |
-| Database Connection | Critical | Yes (failover) | Service degradation | Connection pool exhausted |
-| Queue Unavailable | High | Yes (buffer) | Delayed processing | RabbitMQ down |
-| Internal Error | Critical | Depends | Transaction failure | Null pointer, logic errors |
-| Rate Limited | Medium | Yes (backoff) | Delayed transaction | Gateway rate limiting |
+| Category            | Severity | Recoverable    | User Impact         | Examples                            |
+| ------------------- | -------- | -------------- | ------------------- | ----------------------------------- |
+| Gateway Timeout     | High     | Yes (retry)    | Delayed transaction | Network timeout to payment provider |
+| Invalid Card Data   | Medium   | No             | User correction     | Invalid CVV, expired card           |
+| Insufficient Funds  | Medium   | No             | User action         | Declined for balance                |
+| Database Connection | Critical | Yes (failover) | Service degradation | Connection pool exhausted           |
+| Queue Unavailable   | High     | Yes (buffer)   | Delayed processing  | RabbitMQ down                       |
+| Internal Error      | Critical | Depends        | Transaction failure | Null pointer, logic errors          |
+| Rate Limited        | Medium   | Yes (backoff)  | Delayed transaction | Gateway rate limiting               |
 
 **Handling Strategies by Layer**
 
-*Layer 1: Domain Exception Hierarchy*
+_Layer 1: Domain Exception Hierarchy_
 
 ```java
 // Base exception - all payment errors extend this
@@ -176,7 +179,7 @@ public class CardDeclinedException extends PaymentException {
 }
 ```
 
-*Layer 2: Error Codes Enumeration*
+_Layer 2: Error Codes Enumeration_
 
 ```java
 public enum ErrorCode {
@@ -210,7 +213,7 @@ public enum ErrorCode {
 
 **Recovery Patterns**
 
-*Pattern 1: Circuit Breaker for Payment Gateway*
+_Pattern 1: Circuit Breaker for Payment Gateway_
 
 ```java
 @Service
@@ -252,7 +255,7 @@ public class PaymentGatewayClient {
 }
 ```
 
-*Pattern 2: Retry with Exponential Backoff*
+_Pattern 2: Retry with Exponential Backoff_
 
 ```java
 @Service
@@ -291,7 +294,7 @@ public class ResilientPaymentService {
 }
 ```
 
-*Pattern 3: Database Failover*
+_Pattern 3: Database Failover_
 
 ```java
 @Configuration
@@ -311,15 +314,15 @@ public class DatabaseResilienceConfig {
 
 **User Experience Strategy**
 
-| Error Type | User Message | UI Action |
-|------------|--------------|-----------|
-| Gateway Timeout | "Processing your payment, please wait..." | Show spinner, auto-check status |
-| Card Declined | "Card declined. Please try a different card or contact your bank." | Highlight card field, clear CVV |
-| Insufficient Funds | "Transaction declined due to insufficient funds." | Suggest alternative payment |
-| Rate Limited | "We're experiencing high demand. Retrying automatically..." | Show progress, auto-retry |
-| System Error | "We're experiencing a temporary issue. Your card was NOT charged." | Show retry button, support link |
+| Error Type         | User Message                                                       | UI Action                       |
+| ------------------ | ------------------------------------------------------------------ | ------------------------------- |
+| Gateway Timeout    | "Processing your payment, please wait..."                          | Show spinner, auto-check status |
+| Card Declined      | "Card declined. Please try a different card or contact your bank." | Highlight card field, clear CVV |
+| Insufficient Funds | "Transaction declined due to insufficient funds."                  | Suggest alternative payment     |
+| Rate Limited       | "We're experiencing high demand. Retrying automatically..."        | Show progress, auto-retry       |
+| System Error       | "We're experiencing a temporary issue. Your card was NOT charged." | Show retry button, support link |
 
-*API Error Response Format*:
+_API Error Response Format_:
 
 ```java
 @RestControllerAdvice
@@ -349,7 +352,7 @@ public class PaymentExceptionHandler {
 
 **Monitoring and Alerting Framework**
 
-*Metrics to Track*:
+_Metrics to Track_:
 
 ```java
 @Component
@@ -381,15 +384,15 @@ public class PaymentMetrics {
 }
 ```
 
-*Alert Thresholds*:
+_Alert Thresholds_:
 
-| Metric | Warning | Critical |
-|--------|---------|----------|
-| Error rate | >1% for 5 min | >5% for 2 min |
-| Circuit breaker | N/A | State = OPEN |
-| Retry exhaustion | >10/hour | >50/hour |
-| Gateway latency p99 | >3 seconds | >10 seconds |
-| Database failover | N/A | Any occurrence |
+| Metric              | Warning       | Critical       |
+| ------------------- | ------------- | -------------- |
+| Error rate          | >1% for 5 min | >5% for 2 min  |
+| Circuit breaker     | N/A           | State = OPEN   |
+| Retry exhaustion    | >10/hour      | >50/hour       |
+| Gateway latency p99 | >3 seconds    | >10 seconds    |
+| Database failover   | N/A           | Any occurrence |
 
 **PCI-DSS Compliance Integration**
 

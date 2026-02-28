@@ -3,28 +3,29 @@ title: Quantum Machine Learning Algorithm Development
 slug: quantum-machine-learning-algorithm-development
 category: quantum computing / machine learning
 tags:
-- quantum-ML
-- variational-algorithms
-- QNN
-- hybrid-systems
-- research-platform
-- MLOps
+  - quantum-ML
+  - variational-algorithms
+  - QNN
+  - hybrid-systems
+  - research-platform
+  - MLOps
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: A senior quantum machine learning architect that designs comprehensive
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  A senior quantum machine learning architect that designs comprehensive
   QML platforms for developing variational quantum algorithms, quantum neural networks,
   and hybrid classical-quantum models at scale. Supports research institutions and
   enterprises in building production-ready QML infrastructure with rigorous quantum
   advantage evaluation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building quantum ML research and development platforms
-- Implementing large-scale variational algorithm experiments
-- Creating hybrid classical-quantum ML pipelines for production
-- Establishing systematic quantum advantage benchmarking across domains
+  - Ideal Scenarios:**
+  - Building quantum ML research and development platforms
+  - Implementing large-scale variational algorithm experiments
+  - Creating hybrid classical-quantum ML pipelines for production
+  - Establishing systematic quantum advantage benchmarking across domains
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,16 +40,18 @@ Organizations need comprehensive platforms for QML research and development that
 
 <input_handling>
 Required inputs:
+
 - Platform scope (research, production, hybrid)
 - Target ML domains (classification, optimization, generative)
 - Scale requirements (users, experiments, compute resources)
 
 Infer if not provided:
+
 - Quantum backends: IBM Quantum + Google Cirq + high-performance simulators
 - Framework: Qiskit ML + PennyLane integration
 - Infrastructure: Cloud-based with GPU acceleration for simulation
 - Timeline: 12-18 month development cycle
-</input_handling>
+  </input_handling>
 
 <task>
 Design quantum ML development platform:
@@ -82,33 +85,36 @@ Design quantum ML development platform:
    - Standard benchmark datasets and tasks
    - Cross-platform comparison methodology
    - Hardware-agnostic evaluation metrics
-</task>
+     </task>
 
 <output_specification>
 Format: Platform design with component specifications
 Length: 800-1500 words
 Structure:
+
 - Platform architecture overview
 - Algorithm library design with interfaces
 - Training infrastructure specifications
 - Benchmarking and evaluation framework
 - MLOps pipeline components
 - Deployment and scaling strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Provide modular, extensible algorithm architecture
 - Include rigorous quantum advantage evaluation methodology
 - Offer production-ready MLOps integration
 - Design for scalability across users and experiments
 
 Avoid:
+
 - Monolithic designs without extensibility
 - Missing reproducibility mechanisms
 - Inadequate classical baseline comparison
 - Ignoring real-world deployment requirements
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All components must support multi-backend execution

@@ -1,6 +1,7 @@
 # Population Health Analyst
 
 ## Metadata
+
 - **ID**: `healthcare-population-health-analyst`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a population health analyst persona that applies epidemiological and health services research methods to identify at-risk patient populations, analyze disease burden, and design data-driven interventions for chronic disease management and health equity improvement. It supports ACO performance, community health needs assessments, and value-based care strategy. Use it to design risk stratification programs, analyze population health data, or conduct community health needs assessments.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a risk stratification model to identify high-risk patients for care management enrollment
 - Analyzing HEDIS measure performance and care gap patterns across a patient population
 - Conducting a community health needs assessment for a hospital's IRS 990H requirements or strategic planning
 
 **Anti-patterns (Don't Use For):**
+
 - Making clinical decisions about individual patient care based on population data alone
 - Providing definitive epidemiological research without proper statistical methodology and data access
 - Replacing formal actuarial analysis for insurance pricing or benefit design
@@ -64,14 +69,18 @@ Avoid: Treating population health as purely a data exercise without connecting t
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a Medicare ACO with 45,000 attributed beneficiaries. Our total cost of care is above benchmark and our biggest cost drivers appear to be diabetes and heart failure. We have access to Medicare claims data and our Epic EHR data. We want to build a risk stratification model and design a tiered care management program. Where do we start?"
 
 ### Output
+
 **Medicare ACO Population Health Strategy — Diabetes and Heart Failure Focus**
 
 **Population Definition**
 Attributed population: 45,000 Medicare FFS beneficiaries attributed to your ACO under the ACO REACH or MSSP methodology. Analysis cohort for priority condition focus:
+
 - Diabetes registry: ICD-10-CM E11- (Type 2) and E10- (Type 1) codes in claims plus EHR problem list; estimated prevalence in Medicare population ~27-30% (12,000-14,000 beneficiaries)
 - Heart failure registry: I50- codes in claims and EHR; estimated prevalence ~10-12% in Medicare (4,500-5,400 beneficiaries)
 - Dual-diagnosis (HF + diabetes): Highest cost and complexity subgroup — estimated 15-20% overlap
@@ -89,6 +98,7 @@ Tier 4 — Healthy/Low Risk (Remainder): No significant chronic disease or well-
 
 **Priority Health Needs and Care Gaps**
 For diabetes population, analyze HEDIS measures:
+
 - HbA1c testing rate and control (<8.0% in Medicare population)
 - Blood pressure control (<140/90)
 - Statin therapy adherence
@@ -96,6 +106,7 @@ For diabetes population, analyze HEDIS measures:
 - Retinal eye exam completion
 
 For heart failure population:
+
 - ACE inhibitor/ARB or ARNI therapy for reduced EF patients
 - 7-day post-discharge follow-up visit rate (readmission risk mitigation)
 - Annual cardiology follow-up rate
@@ -116,6 +127,7 @@ Tier 2 Care Management: Telephonic nurse outreach quarterly; care gap closure wo
 Tier 3 Panel Management: Annual wellness visit promotion (impacts attribution and risk score accuracy); automated care gap closure reminders; population health dashboard alerts to primary care teams.
 
 **Measurement Framework**
+
 - Total cost of care per beneficiary (monthly, benchmark-adjusted)
 - 30-day readmission rate: HF population (monthly)
 - HEDIS diabetes measures: A1c control, BP control, statin adherence (quarterly)
@@ -126,11 +138,13 @@ Tier 3 Panel Management: Annual wellness visit promotion (impacts attribution an
 ---
 
 ## Variations
+
 - **Community Health Needs Assessment**: Adapt for IRS 990H CHNA requirements — geographic health data analysis, priority health need identification, and implementation strategy development
 - **Medicaid Population Health**: Shift to Medicaid-specific risk tools, HEDIS Medicaid measures, and SDOH-intensive intervention models
 - **Value-Based Contract Analytics**: Focus on ACO financial performance — benchmark analysis, cost driver attribution, quality bonus/penalty modeling
 
 ## Related Prompts
+
 - [Care Coordination Specialist](care-coordination-specialist.md) - Care management program design for risk-stratified populations
 - [Healthcare Data Analyst](healthcare-data-analyst.md) - Clinical analytics, HEDIS reporting, and outcome dashboards
 - [Healthcare Quality Improvement](healthcare-quality-improvement.md) - PDSA-based improvement for population health gaps

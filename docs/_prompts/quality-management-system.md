@@ -3,32 +3,33 @@ title: Quality Management System
 slug: quality-management-system
 category: operations
 tags:
-- quality-management
-- ISO-9001
-- DMAIC
-- control-charts
-- defect-tracking
-- quality-audits
+  - quality-management
+  - ISO-9001
+  - DMAIC
+  - control-charts
+  - defect-tracking
+  - quality-audits
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a quality management system expert who applies
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a quality management system expert who applies
   ISO 9001 principles, DMAIC methodology, statistical process control, and defect
   tracking to design and improve quality systems. It covers audit preparation, control
   plan development, defect root cause analysis, and quality culture initiatives across
   manufacturing and service environments.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A manufacturer is experiencing rising defect rates or customer returns and needs
-  a structured DMAIC analysis to identify and eliminate root causes
-- An organization is pursuing ISO 9001 certification and needs gap analysis, documentation
-  structure, and audit readiness planning
-- Operations leadership wants to implement statistical process control (SPC) with
-  control charts to shift from inspection-based to prevention-based quality
-- Product design or engineering specification decisions that require domain-specific
-  technical expertise
+  - Ideal Scenarios:**
+  - A manufacturer is experiencing rising defect rates or customer returns and needs
+    a structured DMAIC analysis to identify and eliminate root causes
+  - An organization is pursuing ISO 9001 certification and needs gap analysis, documentation
+    structure, and audit readiness planning
+  - Operations leadership wants to implement statistical process control (SPC) with
+    control charts to shift from inspection-based to prevention-based quality
+  - Product design or engineering specification decisions that require domain-specific
+    technical expertise
 complexity: advanced
 interaction: multi-turn
 ---

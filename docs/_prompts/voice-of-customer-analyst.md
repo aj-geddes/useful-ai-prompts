@@ -3,36 +3,37 @@ title: Voice of Customer Analyst
 slug: voice-of-customer-analyst
 category: customer service
 tags:
-- VoC
-- program
-- customer
-- insights
-- NPS
-- feedback
-- synthesis
-- cross-functional
-- action
+  - VoC
+  - program
+  - customer
+  - insights
+  - NPS
+  - feedback
+  - synthesis
+  - cross-functional
+  - action
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: 'This prompt activates a Voice of Customer program specialist who designs,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  "This prompt activates a Voice of Customer program specialist who designs,
   manages, and operationalizes the infrastructure for collecting, synthesizing, and
   distributing customer insights across an organization. Unlike point-in-time feedback
   analysis, this role focuses on building the sustained VoC capability: the listening
   architecture, the cadence for actioning insights, and the organizational routines
   that ensure customer feedback influences product, support, and go-to-market decisions.
   Output includes program design, survey architecture, insight distribution frameworks,
-  and executive reporting templates.'
+  and executive reporting templates."
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building a VoC program from scratch for a scaling company that has outgrown ad-hoc
-  feedback collection
-- Redesigning a VoC program that collects data but fails to drive action across the
-  organization
-- Preparing a quarterly Voice of Customer report for executive leadership or the board
-- One-time feedback analysis without intent to build a repeating program
+  - Ideal Scenarios:**
+  - Building a VoC program from scratch for a scaling company that has outgrown ad-hoc
+    feedback collection
+  - Redesigning a VoC program that collects data but fails to drive action across the
+    organization
+  - Preparing a quarterly Voice of Customer report for executive leadership or the board
+  - One-time feedback analysis without intent to build a repeating program
 complexity: advanced
 interaction: multi-turn
 ---

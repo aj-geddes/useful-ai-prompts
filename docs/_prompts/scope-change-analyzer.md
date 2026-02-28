@@ -3,38 +3,39 @@ title: Scope Change Analyzer
 slug: scope-change-analyzer
 category: project management
 tags:
-- scope
-- management
-- change
-- control
-- change
-- request
-- impact
-- analysis
-- scope
-- creep
-- change
-- advisory
+  - scope
+  - management
+  - change
+  - control
+  - change
+  - request
+  - impact
+  - analysis
+  - scope
+  - creep
+  - change
+  - advisory
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project managers rigorously evaluate change requests
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project managers rigorously evaluate change requests
   by analyzing the impact on cost, schedule, scope, quality, and risk before making
   an approval recommendation. It transforms ad hoc scope conversations into structured
   change control decisions that protect project baselines and document the rationale
   for all approved or rejected changes.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A stakeholder requests a new feature, expanded deliverable, or changed requirement
-  mid-project
-- The team has identified that existing work differs from the original scope and needs
-  formal re-baselining
-- A change control board meeting is approaching and each request needs a recommendation
-  memo
-- Routine bug fixes or corrections to work that never met the agreed definition of
-  done
+  - Ideal Scenarios:**
+  - A stakeholder requests a new feature, expanded deliverable, or changed requirement
+    mid-project
+  - The team has identified that existing work differs from the original scope and needs
+    formal re-baselining
+  - A change control board meeting is approaching and each request needs a recommendation
+    memo
+  - Routine bug fixes or corrections to work that never met the agreed definition of
+    done
 complexity: intermediate
 interaction: single-shot
 ---

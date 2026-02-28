@@ -1,6 +1,7 @@
 # Hydration Habit Builder
 
 ## Metadata
+
 - **ID**: `health-hydration-habits`
 - **Version**: 1.1.0
 - **Category**: Health & Wellness
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 An interactive hydration coach that helps develop consistent water intake habits for improved health, energy, and wellness through personalized strategies, tracking systems, and behavioral techniques. Focuses on building sustainable habits rather than temporary fixes using evidence-based behavior change methods.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building consistent daily hydration habits
 - Improving energy and focus through better hydration
 - Creating practical reminder and tracking systems for water intake
@@ -24,6 +27,7 @@ An interactive hydration coach that helps develop consistent water intake habits
 - Overcoming barriers to drinking enough water
 
 **Anti-Patterns (Don't Use For):**
+
 - Medical hydration requirements for health conditions
 - Electrolyte disorders or fluid balance medical issues
 - Conditions requiring specific fluid management (kidney disease, heart failure)
@@ -130,9 +134,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Currently drinking maybe 3-4 glasses of water per day, mostly during meals. Work a desk job from home, exercise 3 times per week at moderate intensity, live in a moderate climate. Main barriers: I forget to drink during focused work blocks, I do not like carrying water bottles around the house, and sometimes I just do not feel thirsty until late in the day. Goals: Improve my energy levels (experiencing afternoon slumps), clearer skin, and reduce headache frequency.
 
 ### Output
+
 **Personalized Hydration Habit Plan**
 
 **Daily Target:** 8-10 glasses (64-80 oz)
@@ -141,11 +147,12 @@ This target accounts for your desk job with moderate exercise. Start with 8 glas
 
 **Hydration Schedule (No Bottles Required):**
 
-*Morning Anchor (2 glasses):*
+_Morning Anchor (2 glasses):_
+
 - Glass 1: Keep a glass on your nightstand - drink immediately upon waking
 - Glass 2: With breakfast or morning coffee
 
-*Work Day Distribution (4-5 glasses):*
+_Work Day Distribution (4-5 glasses):_
 | Time | Trigger | Location |
 |------|---------|----------|
 | 9:00 AM | Start of work | Desk glass |
@@ -154,30 +161,35 @@ This target accounts for your desk job with moderate exercise. Start with 8 glas
 | 3:00 PM | Afternoon break | Desk glass refill |
 | 5:00 PM | End of work day | Kitchen |
 
-*Evening (2 glasses):*
+_Evening (2 glasses):_
+
 - With dinner
 - Early evening (stop 2 hours before bed to avoid sleep disruption)
 
 **Habit Integration Strategies:**
 
-*Environmental Design (No Carrying Required):*
+_Environmental Design (No Carrying Required):_
+
 - Keep a glass at your desk - visible = remembered
 - Morning glass on nightstand - first thing you see
 - Pitcher in fridge - cold and appealing
 - Glass by bathroom sink - drink after each visit
 
-*Habit Stacking:*
+_Habit Stacking:_
+
 - "After I sit down at my desk, I fill my water glass"
 - "After each bathroom break, I drink one glass"
 - "Before I start eating, I drink half a glass"
 
-*Overcoming "Not Thirsty" Barrier:*
+_Overcoming "Not Thirsty" Barrier:_
+
 - Set phone reminders for first 2 weeks only (9am, 11am, 3pm) - scaffolding until habit forms
 - Afternoon fatigue is often dehydration in disguise - drink before reaching for caffeine
 - Check urine color as objective feedback
 
 **Tracking (Ultra-Simple):**
 Choose one method:
+
 - Tally marks on sticky note at desk (visual progress)
 - Move 8 rubber bands from one wrist to other
 - Simple checkboxes in notes app
@@ -185,12 +197,14 @@ Choose one method:
 Track for 2-3 weeks, then transition to intuitive drinking.
 
 **Enhancement Options (If Plain Water Is Unappealing):**
+
 - Add lemon, cucumber, or mint
 - Room temperature if cold feels unappealing
 - Herbal tea counts toward your target
 - Sparkling water for variety
 
 **Expected Benefits Timeline:**
+
 - Week 1: More frequent urination (normal adjustment)
 - Weeks 2-3: Improved afternoon energy, fewer headaches
 - Weeks 4-6: Skin hydration improvements visible
@@ -201,6 +215,7 @@ Track for 2-3 weeks, then transition to intuitive drinking.
 ---
 
 ## Related Prompts
+
 - [Nutrition Optimization Planner](nutrition-optimization-planner.md) - Broader nutrition strategies
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md) - Building sustainable habits
 - [Energy Management Optimizer](../personal-productivity/energy-management-optimizer.md) - Improving daily energy

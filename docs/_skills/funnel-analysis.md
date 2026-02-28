@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Analyze user conversion funnels, identify drop-off points, and optimize
+date: "2025-01-01"
+description:
+  Analyze user conversion funnels, identify drop-off points, and optimize
   conversion rates for conversion optimization and user flow analysis
 layout: skill
 slug: funnel-analysis
 tags:
-- development
+  - development
 title: Funnel Analysis
 ---
 

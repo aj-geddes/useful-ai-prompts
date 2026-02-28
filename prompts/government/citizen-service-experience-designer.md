@@ -1,6 +1,7 @@
 # Citizen Service Experience Designer
 
 ## Metadata
+
 - **ID**: `government-citizen-service-design`
 - **Version**: 1.1.0
 - **Category**: Government
@@ -18,6 +19,7 @@ A service design specialist that optimizes citizen-facing government services th
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Redesigning citizen service delivery processes for improved experience
 - Improving digital service accessibility and usability (WCAG/508 compliance)
 - Mapping citizen journeys and identifying pain points across touchpoints
@@ -25,6 +27,7 @@ A service design specialist that optimizes citizen-facing government services th
 - Reducing administrative burden while maintaining regulatory compliance
 
 **Anti-patterns (when NOT to use):**
+
 - Technical system architecture or IT infrastructure decisions
 - Policy development or regulatory interpretation
 - Procurement decisions or vendor selection
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We need to improve our building permit application process for a mid-sized city (population 250,000). Current state: Paper applications only, processing takes 4-6 weeks on average, and citizens must visit our office 2-3 times (submit application, provide additional documents, pick up permit). Common complaints include long wait times at the counter (45+ minutes average), unclear requirements leading to resubmissions, and no way to check application status. Our population includes many contractors (tech-savvy, high volume) and individual homeowners (varied technical comfort, occasional users). We process approximately 15,000 applications per year.
 
 ### Output
@@ -134,6 +138,7 @@ We need to improve our building permit application process for a mid-sized city 
 | Accessibility | Office-only, limited ADA | Equity gap |
 
 **Primary Pain Points:**
+
 1. Unclear requirements cause 60% resubmission rate
 2. No status tracking forces phone calls and repeat visits
 3. Limited hours (8am-5pm weekdays) exclude working citizens
@@ -144,13 +149,14 @@ We need to improve our building permit application process for a mid-sized city 
 
 **Channel Strategy (Multi-Modal):**
 
-| Channel | Target Adoption | Use Case |
-|---------|-----------------|----------|
-| Digital Portal | 70% | Full self-service |
-| Assisted Digital | 15% | Phone/video help |
-| In-Person | 15% | Complex cases, preference |
+| Channel          | Target Adoption | Use Case                  |
+| ---------------- | --------------- | ------------------------- |
+| Digital Portal   | 70%             | Full self-service         |
+| Assisted Digital | 15%             | Phone/video help          |
+| In-Person        | 15%             | Complex cases, preference |
 
 **1. Digital Portal (Primary Channel)**
+
 - Guided application wizard determining exact requirements
 - Document upload with real-time format validation
 - Progress dashboard with automated notifications
@@ -158,12 +164,14 @@ We need to improve our building permit application process for a mid-sized city 
 - Mobile-responsive design for on-site contractors
 
 **2. Assisted Digital Channel**
+
 - Phone support for application completion
 - Video consultation for complex projects
 - Library kiosk access with trained staff assistance
 - Community center pop-up service hours
 
 **3. In-Person (Optimized)**
+
 - Appointment-based only (no walk-ins for applications)
 - Pre-populated forms from online partial submissions
 - Express lane for simple permits (same-day issuance)
@@ -171,13 +179,13 @@ We need to improve our building permit application process for a mid-sized city 
 
 **Citizen Journey Comparison:**
 
-| Stage | Current | Future | Improvement |
-|-------|---------|--------|-------------|
-| Research | Visit office, unclear info | Permit wizard (10 min) | 90% time reduction |
-| Apply | Paper form, 2-3 visits | Online upload (30 min) | 85% reduction |
-| Review | 4-6 weeks, no updates | 5-7 days, auto-updates | 75% faster |
-| Issue | Office visit required | Digital delivery | Eliminated visit |
-| **Total Effort** | **8-12 hours + waiting** | **<1 hour** | |
+| Stage            | Current                    | Future                 | Improvement        |
+| ---------------- | -------------------------- | ---------------------- | ------------------ |
+| Research         | Visit office, unclear info | Permit wizard (10 min) | 90% time reduction |
+| Apply            | Paper form, 2-3 visits     | Online upload (30 min) | 85% reduction      |
+| Review           | 4-6 weeks, no updates      | 5-7 days, auto-updates | 75% faster         |
+| Issue            | Office visit required      | Digital delivery       | Eliminated visit   |
+| **Total Effort** | **8-12 hours + waiting**   | **<1 hour**            |                    |
 
 **Service Standards:**
 | Standard | Target | Measurement |
@@ -201,19 +209,22 @@ We need to improve our building permit application process for a mid-sized city 
 
 **Implementation Roadmap:**
 
-*Phase 1: Quick Wins (Months 1-3)*
+_Phase 1: Quick Wins (Months 1-3)_
+
 - Launch permit wizard with requirement checklist
 - Implement appointment scheduling system
 - Add status lookup portal (read-only)
 - Create FAQ and video tutorials
 
-*Phase 2: Digital Foundation (Months 4-9)*
+_Phase 2: Digital Foundation (Months 4-9)_
+
 - Deploy full online application portal
 - Integrate document upload and validation
 - Launch automated email/SMS notifications
 - Train staff on new systems
 
-*Phase 3: Optimization (Months 10-18)*
+_Phase 3: Optimization (Months 10-18)_
+
 - Add live chat support
 - Implement predictive approval for simple permits
 - Launch mobile contractor app
@@ -231,6 +242,7 @@ We need to improve our building permit application process for a mid-sized city 
 ---
 
 ## Related Prompts
+
 - [Digital Government Transformation Expert](digital-government-transformation-expert.md) - Broader digital transformation strategy
 - [Government API Strategy Expert](government-api-strategy-expert.md) - Technical integration approaches
 - [User Experience Design Expert](../customer-focused/user-experience-design-expert.md) - General UX principles

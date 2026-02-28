@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Analyze team capacity, plan resource allocation, and balance workload
+date: "2025-01-01"
+description:
+  Analyze team capacity, plan resource allocation, and balance workload
   across projects. Forecast staffing needs and optimize team utilization while maintaining
   sustainable pace.
 layout: skill
 slug: capacity-planning
 tags:
-- development
+  - development
 title: capacity-planning
 ---
 
@@ -236,28 +237,35 @@ class ResourceLeveling {
     const workloadByPerson = {};
 
     // Initialize team member workload
-    team.forEach(person => {
+    team.forEach((person) => {
       workloadByPerson[person.id] = {
         name: person.name,
         skills: person.skills,
         capacity: person.capacity_hours,
         assigned: [],
-        utilization: 0
+        utilization: 0,
       };
     });
 
     // Assign tasks to balance workload
     const sortedTasks = tasks.sort((a, b) => b.effort - a.effort); // Largest first
 
-    sortedTasks.forEach(task => {
-      const suitable = team.filter(p =>
-        this.hasSufficientSkills(p.skills, task.required_skills) &&
-        this.hasCapacity(workloadByPerson[p.id].utilization, p.capacity_hours)
+    sortedTasks.forEach((task) => {
+      const suitable = team.filter(
+        (p) =>
+          this.hasSufficientSkills(p.skills, task.required_skills) &&
+          this.hasCapacity(
+            workloadByPerson[p.id].utilization,
+            p.capacity_hours,
+          ),
       );
 
       if (suitable.length > 0) {
         const leastUtilized = suitable.reduce((a, b) =>
-          workloadByPerson[a.id].utilization < workloadByPerson[b.id].utilization ? a : b
+          workloadByPerson[a.id].utilization <
+          workloadByPerson[b.id].utilization
+            ? a
+            : b,
         );
 
         workloadByPerson[leastUtilized.id].assigned.push(task);
@@ -268,30 +276,36 @@ class ResourceLeveling {
     return {
       assignments: workloadByPerson,
       balanceMetrics: this.calculateBalance(workloadByPerson),
-      unassignedTasks: tasks.filter(t => !Object.values(workloadByPerson).some(p => p.assigned.includes(t)))
+      unassignedTasks: tasks.filter(
+        (t) =>
+          !Object.values(workloadByPerson).some((p) => p.assigned.includes(t)),
+      ),
     };
   }
 
   calculateBalance(workloadByPerson) {
-    const utilizations = Object.values(workloadByPerson).map(p => p.utilization);
+    const utilizations = Object.values(workloadByPerson).map(
+      (p) => p.utilization,
+    );
     const average = utilizations.reduce((a, b) => a + b) / utilizations.length;
     const variance = Math.sqrt(
-      utilizations.reduce((sum, u) => sum + Math.pow(u - average, 2)) / utilizations.length
+      utilizations.reduce((sum, u) => sum + Math.pow(u - average, 2)) /
+        utilizations.length,
     );
 
     return {
       average_utilization: average.toFixed(1),
       std_deviation: variance.toFixed(1),
       balance_score: this.calculateBalanceScore(variance),
-      recommendations: this.getBalancingRecommendations(variance)
+      recommendations: this.getBalancingRecommendations(variance),
     };
   }
 
   calculateBalanceScore(variance) {
-    if (variance < 5) return 'Excellent';
-    if (variance < 10) return 'Good';
-    if (variance < 15) return 'Fair';
-    return 'Poor - needs rebalancing';
+    if (variance < 5) return "Excellent";
+    if (variance < 10) return "Good";
+    if (variance < 15) return "Fair";
+    return "Poor - needs rebalancing";
   }
 }
 ```
@@ -318,7 +332,6 @@ Q3 Average: 14.2 FTE (2 new hires)
 Q4 Average: 15.0 FTE (all at full capacity)
 
 ---
-
 Project Commitments vs. Available Capacity:
 
 Q1: Committed 11.0 FTE, Available 11.1 FTE (safe)
@@ -327,7 +340,6 @@ Q3: Committed 13.0 FTE, Available 14.2 FTE (buffer 9%)
 Q4: Committed 14.0 FTE, Available 15.0 FTE (buffer 7%)
 
 ---
-
 Risk Alerts:
   - Q1 is tight (98% utilized)
   - Skill gap: Backend expertise in Q2
@@ -337,6 +349,7 @@ Risk Alerts:
 ## Best Practices
 
 ### ✅ DO
+
 - Plan capacity at 85% utilization (15% buffer)
 - Account for meetings, training, and overhead
 - Include known absences (vacation, holidays)
@@ -349,6 +362,7 @@ Risk Alerts:
 - Build contingency for emergencies
 
 ### ❌ DON'T
+
 - Plan at 100% utilization
 - Ignore meetings and overhead
 - Assign work without checking skills

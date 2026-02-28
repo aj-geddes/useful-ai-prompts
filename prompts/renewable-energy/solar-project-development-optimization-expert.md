@@ -1,6 +1,7 @@
 # Solar Project Development Optimization Expert
 
 ## Metadata
+
 - **ID**: `solar-project-development-optimization`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ This prompt enables optimization of solar energy project development from site s
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing utility-scale solar projects (50+ MW)
 - Optimizing project development timelines and costs
 - Evaluating solar investment opportunities across portfolios
@@ -25,6 +27,7 @@ This prompt enables optimization of solar energy project development from site s
 - Structuring development strategies for competitive markets
 
 **Anti-patterns (when not to use):**
+
 - Residential rooftop installation design
 - Detailed technical engineering specifications
 - Post-COD operational performance optimization
@@ -109,6 +112,7 @@ Optimize solar project development:
 ## Example Usage
 
 ### Input
+
 We're developing a 200 MW solar project in Texas (ERCOT). Site is greenfield agricultural land. Need to achieve commercial operation in 36 months. Key challenges are interconnection queue position and PPA negotiations in competitive market.
 
 ### Output
@@ -118,6 +122,7 @@ We're developing a 200 MW solar project in Texas (ERCOT). Site is greenfield agr
 **Site Assessment**
 
 The Texas site offers favorable development characteristics:
+
 - Land: Greenfield agricultural with minimal constraints
 - Resource: 5.5+ kWh/m2/day GHI typical for central Texas
 - Access: Evaluate road access for construction equipment
@@ -126,12 +131,14 @@ The Texas site offers favorable development characteristics:
 **Interconnection Strategy**
 
 ERCOT interconnection is the primary schedule risk:
+
 - Queue position: Critical - evaluate current queue status and study timeline
 - Study process: Screening study (60 days) + full interconnection study (120+ days)
 - Network upgrades: Budget $8-15M contingency for transmission upgrades
 - Timeline optimization: Submit complete application, engage ERCOT early
 
-*Recommended approach:*
+_Recommended approach:_
+
 - Secure queue position immediately if not already held
 - Budget 18-24 months for interconnection process
 - Identify alternative POI if primary has excessive upgrade costs
@@ -140,12 +147,14 @@ ERCOT interconnection is the primary schedule risk:
 **Permitting Strategy**
 
 Texas offers streamlined permitting for solar:
+
 - County level: Conditional use permit or by-right depending on county
 - State level: No ERCOT certificate required for solar
 - Environmental: NEPA not required for private land; conduct Phase I ESA
 - Federal: FAA notice if near airports; FWS consultation if habitat concerns
 
-*Timeline:*
+_Timeline:_
+
 - Months 1-3: County pre-application, environmental baseline
 - Months 4-9: CUP application and approval
 - Months 10-12: Building permits concurrent with construction start
@@ -154,64 +163,72 @@ Texas offers streamlined permitting for solar:
 
 ERCOT market presents both opportunity and risk:
 
-*PPA approach:*
+_PPA approach:_
+
 - Target corporate offtakers (tech, industrial) seeking Texas solar
 - Competitive PPA pricing: $22-28/MWh for quality projects
 - Contract structure: 10-15 year term with escalation
 - Credit: Investment-grade or LC/parent guarantee
 
-*Merchant exposure:*
+_Merchant exposure:_
+
 - ERCOT wholesale exposure for uncontracted portion
 - Consider 70/30 contracted/merchant split
 - Hedge strategy: Physical PPAs + financial hedges
 
-*Competitive positioning:*
+_Competitive positioning:_
+
 - Differentiate on development readiness (permits, interconnection)
 - Offer flexible contract structures
 - Demonstrate execution capability
 
 **Financial Structure**
 
-*Capital budget estimate:*
+_Capital budget estimate:_
+
 - Hard costs: $0.70-0.80/W ($140-160M)
 - Soft costs: $0.08-0.12/W
 - Interconnection: $15-25M (contingent on upgrades)
 - Total: $175-205M
 
-*Recommended structure:*
+_Recommended structure:_
+
 - Construction debt: 65-70% of cost
 - Tax equity: 20-25%
 - Sponsor equity: 10-15%
 - ITC: 30% (ensure safe harbor compliance)
 
-*Target returns:*
+_Target returns:_
+
 - LCOE: <$30/MWh
 - Sponsor IRR: 12-15%
 - DSCR: 1.30x minimum
 
 **Development Roadmap**
 
-| Phase | Timeline | Key Milestones |
-|-------|----------|----------------|
-| Phase 1: Foundation | Months 1-12 | Site control, interconnection application, environmental studies |
-| Phase 2: De-risking | Months 13-24 | LGIA execution, permits secured, PPA negotiation |
-| Phase 3: Execution | Months 25-36 | Financial close, construction, COD |
+| Phase               | Timeline     | Key Milestones                                                   |
+| ------------------- | ------------ | ---------------------------------------------------------------- |
+| Phase 1: Foundation | Months 1-12  | Site control, interconnection application, environmental studies |
+| Phase 2: De-risking | Months 13-24 | LGIA execution, permits secured, PPA negotiation                 |
+| Phase 3: Execution  | Months 25-36 | Financial close, construction, COD                               |
 
-*Decision gates:*
+_Decision gates:_
+
 - Month 6: Proceed/pause based on interconnection study results
 - Month 18: FID contingent on offtake + permits
 - Month 30: COD readiness confirmation
 
 **Risk Mitigation**
 
-| Risk | Probability | Mitigation |
-|------|-------------|------------|
-| Interconnection delays | High | Early ERCOT engagement, study contingency |
-| PPA pricing pressure | Medium | Multi-offtaker strategy, cost discipline |
-| Upgrade costs | Medium | POI flexibility, budget contingency |
-| Permitting delays | Low | Early stakeholder engagement |
+| Risk                   | Probability | Mitigation                                |
+| ---------------------- | ----------- | ----------------------------------------- |
+| Interconnection delays | High        | Early ERCOT engagement, study contingency |
+| PPA pricing pressure   | Medium      | Multi-offtaker strategy, cost discipline  |
+| Upgrade costs          | Medium      | POI flexibility, budget contingency       |
+| Permitting delays      | Low         | Early stakeholder engagement              |
 
-*Key success factors:*
+_Key success factors:_
+
 1. Secure interconnection early - this drives schedule
 2. Maintain cost discipline for competitive PPA positioning
 3. Build offtaker relationships throughout development

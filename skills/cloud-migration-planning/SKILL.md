@@ -532,6 +532,7 @@ validation_criteria:
 ## Best Practices
 
 ### ✅ DO
+
 - Perform thorough discovery and assessment
 - Run parallel systems during transition
 - Test thoroughly before cutover
@@ -542,6 +543,7 @@ validation_criteria:
 - Maintain previous systems temporarily
 
 ### ❌ DON'T
+
 - Rush migration without planning
 - Migrate without testing
 - Forget rollback procedures

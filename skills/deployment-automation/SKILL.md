@@ -66,9 +66,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to deploy to'
+        description: "Environment to deploy to"
         required: true
-        default: 'staging'
+        default: "staging"
         type: choice
         options:
           - staging
@@ -102,7 +102,7 @@ jobs:
       - name: Setup kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: 'latest'
+          version: "latest"
 
       - name: Configure kubectl
         run: |
@@ -190,6 +190,7 @@ fi
 ## Best Practices
 
 ### ✅ DO
+
 - Use Infrastructure as Code (Terraform, Helm)
 - Implement GitOps workflows
 - Use blue-green deployments
@@ -204,6 +205,7 @@ fi
 - Use environment parity
 
 ### ❌ DON'T
+
 - Deploy directly to production
 - Skip testing in staging
 - Use manual deployment scripts

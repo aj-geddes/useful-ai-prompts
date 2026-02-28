@@ -1,6 +1,7 @@
 # Troubleshooting Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-troubleshooting`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -100,12 +101,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Problem: Internet connection drops every 30-60 minutes on all devices. Started last week. Router shows connection but no internet. ISP says line is fine. Restarting router fixes temporarily. Using cable modem and WiFi router combo.
 ```
 
 ### Output
+
 **Symptom Analysis**
+
 - Pattern: Periodic disconnection (30-60 min cycle)
 - Scope: All devices affected (rules out device-specific issue)
 - Behavior: Router shows connected, no internet (suggests DHCP or DNS)
@@ -121,69 +125,82 @@ Problem: Internet connection drops every 30-60 minutes on all devices. Started l
 
 **Diagnostic Process**
 
-*Step 1: Check Router Logs*
+_Step 1: Check Router Logs_
+
 ```bash
 # Access router admin (usually 192.168.1.1)
 # Navigate to: Status > System Log or Diagnostics
 # Look for: DHCP conflicts, WAN disconnect events, error patterns
 # Note timestamps of disconnections
 ```
+
 What to look for: Repeated DHCP requests, WAN disconnect events, temperature warnings
 
-*Step 2: Temperature Check*
+_Step 2: Temperature Check_
+
 - Touch router during normal operation and after disconnect
 - Check router ventilation - any obstructions?
 - Check if router is in enclosed space
 
-*Step 3: Test with Manual IP*
+_Step 3: Test with Manual IP_
+
 ```bash
 # On one device, set static IP:
 # IP: 192.168.1.100
 # Gateway: 192.168.1.1
 # DNS: 8.8.8.8, 8.8.4.4
 ```
+
 If stable: DHCP or ISP DNS is likely cause
 If still drops: Hardware or ISP issue
 
-*Step 4: Firmware Check*
+_Step 4: Firmware Check_
+
 - Note current firmware version
 - Check manufacturer website for updates
 - Search "[router model] firmware bugs disconnection"
 
-*Step 5: Bypass Test*
+_Step 5: Bypass Test_
+
 - Connect one device directly to cable modem (bypass router)
 - Monitor for 2+ hours
-If stable: Router is issue
-If drops continue: ISP or modem issue
+  If stable: Router is issue
+  If drops continue: ISP or modem issue
 
 **Solution Approaches**
 
-*If DHCP Issue*
+_If DHCP Issue_
+
 - Reduce DHCP lease time to 4 hours
 - Reserve IPs for frequent devices
 - Clear DHCP table and restart
 
-*If Overheating*
+_If Overheating_
+
 - Relocate router to ventilated area
 - Add cooling (small fan)
 - Consider replacement if persistent
 
-*If Firmware Bug*
+_If Firmware Bug_
+
 - Update to latest firmware
 - Factory reset after update
 - Check for beta firmware if stable has known issues
 
-*If DNS*
+_If DNS_
+
 - Change to public DNS (8.8.8.8, 1.1.1.1)
 - Configure DNS at router level for all devices
 
 **Verification Steps**
+
 1. Monitor for 4+ hours after applying fix
 2. Check router logs for previous error patterns
 3. Test during peak usage times
 4. Confirm all devices stable
 
 **Prevention**
+
 - Set up automated router restart (weekly, 3 AM)
 - Monitor router uptime remotely
 - Schedule firmware update checks monthly

@@ -1,6 +1,7 @@
 # Empathy Development Coach
 
 ## Metadata
+
 - **ID**: `empathy-development-coach`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Develop deeper understanding and connection with others through enhanced perspec
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving emotional connection in personal relationships
 - Developing leadership emotional intelligence
 - Enhancing counseling, coaching, or helping profession skills
@@ -25,6 +27,7 @@ Develop deeper understanding and connection with others through enhanced perspec
 - Building stronger rapport with teams, clients, or family
 
 **Anti-Patterns (When NOT to Use):**
+
 - Replacing professional therapy for emotional regulation issues
 - Diagnosing emotional or psychological disorders
 - Situations requiring clinical intervention
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I tend to jump to solutions when people share problems instead of just listening. My partner says I don't understand her feelings. I'm good at logical problem-solving but struggle with emotional situations. I want to be more supportive without always trying to fix things.
 
 ### Output
@@ -124,59 +128,64 @@ The insight: Validation IS the help for most emotional sharing. You do not have 
 
 **The Empathy Response Formula**
 
-*Step 1: Acknowledge the Feeling*
+_Step 1: Acknowledge the Feeling_
+
 - "That sounds really [frustrating/overwhelming/disappointing]."
 - "I can see why you'd feel that way."
 - "That makes sense given what happened."
 
-*Step 2: Stay Curious*
+_Step 2: Stay Curious_
+
 - "Tell me more about that."
 - "What's the hardest part?"
 - "How are you feeling about it now?"
 
-*Step 3: Check Before Solving*
+_Step 3: Check Before Solving_
+
 - "Do you want to talk it through, or would advice be helpful?"
 - "What would be most helpful right now?"
 - "I have some ideas if you want them, but no pressure."
 
 **Phrases to Replace Fixing Responses**
 
-*Instead of:* "You should just..."
-*Try:* "That sounds really hard."
+_Instead of:_ "You should just..."
+_Try:_ "That sounds really hard."
 
-*Instead of:* "Have you tried..."
-*Try:* "What have you been thinking about doing?"
+_Instead of:_ "Have you tried..."
+_Try:_ "What have you been thinking about doing?"
 
-*Instead of:* "It's not that bad..." / "At least..."
-*Try:* "I can see this is really affecting you."
+_Instead of:_ "It's not that bad..." / "At least..."
+_Try:_ "I can see this is really affecting you."
 
-*Instead of:* "Let me tell you what I'd do..."
-*Try:* "What would feel best to you?"
+_Instead of:_ "Let me tell you what I'd do..."
+_Try:_ "What would feel best to you?"
 
-*Instead of:* "Why didn't you just..."
-*Try:* "That sounds like a tough situation."
+_Instead of:_ "Why didn't you just..."
+_Try:_ "That sounds like a tough situation."
 
 **Daily Practice Exercises**
 
-*Week 1: Pause Before Responding*
+_Week 1: Pause Before Responding_
 When someone shares a problem, count to 3 before saying anything. Use that pause to identify their emotion. Ask yourself: "What are they feeling right now?"
 
-*Week 2: Lead with Feeling Reflection*
+_Week 2: Lead with Feeling Reflection_
 Start every response with an emotion acknowledgment: "Sounds like you're feeling..." or "That seems really [emotion]."
 
-*Week 3: Ask Permission Before Advising*
+_Week 3: Ask Permission Before Advising_
 Before offering any advice, ask: "Would it help to think through options, or do you need to vent right now?" Accept either answer.
 
-*Week 4: Track Your Ratio*
+_Week 4: Track Your Ratio_
 In emotional conversations, notice: How much validating versus solving are you doing? Aim for much more validating.
 
 **With Your Partner Specifically**
+
 - When she shares something emotional, your first 3 responses should be questions or validations, not solutions
 - Use physical connection (hold hand, sit close, face her) while listening
 - After she seems complete, ask "What would help?" before offering fix mode
 - Recovery phrase if you catch yourself fixing: "Sorry, I'm in solve mode. Let me step back. Tell me more about how you're feeling."
 
 **Signs of Progress**
+
 - People share more openly with you without prompting
 - Your partner says she feels more understood
 - Conversations feel less like problems to solve and more like connection
@@ -189,6 +198,7 @@ You do not have to fix feelings. Your presence and understanding IS the support.
 ---
 
 ## Related Prompts
+
 - [Active Listening Trainer](active-listening-trainer.md)
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Conflict Resolution Strategist](conflict-resolution-strategist.md)

@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Detect unintended visual changes in UI by comparing screenshots across
+date: "2025-01-01"
+description:
+  Detect unintended visual changes in UI by comparing screenshots across
   versions. Use for visual regression, screenshot diff, Percy, Chromatic, UI testing,
   and visual validation.
 layout: skill
 slug: visual-regression-testing
 tags:
-- testing
+  - testing
 title: visual-regression-testing
 ---
 
@@ -43,82 +44,82 @@ Visual regression testing captures screenshots of UI components and pages, then 
 
 ```typescript
 // tests/visual/homepage.spec.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test.describe('Homepage Visual Tests', () => {
-  test('homepage matches baseline', async ({ page }) => {
-    await page.goto('/');
+test.describe("Homepage Visual Tests", () => {
+  test("homepage matches baseline", async ({ page }) => {
+    await page.goto("/");
 
     // Wait for images to load
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState("networkidle");
 
     // Full page screenshot
-    await expect(page).toHaveScreenshot('homepage-full.png', {
+    await expect(page).toHaveScreenshot("homepage-full.png", {
       fullPage: true,
-      maxDiffPixels: 100,  // Allow small differences
+      maxDiffPixels: 100, // Allow small differences
     });
   });
 
-  test('responsive design - mobile', async ({ page }) => {
+  test("responsive design - mobile", async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 }); // iPhone SE
-    await page.goto('/');
+    await page.goto("/");
 
-    await expect(page).toHaveScreenshot('homepage-mobile.png');
+    await expect(page).toHaveScreenshot("homepage-mobile.png");
   });
 
-  test('responsive design - tablet', async ({ page }) => {
+  test("responsive design - tablet", async ({ page }) => {
     await page.setViewportSize({ width: 768, height: 1024 }); // iPad
-    await page.goto('/');
+    await page.goto("/");
 
-    await expect(page).toHaveScreenshot('homepage-tablet.png');
+    await expect(page).toHaveScreenshot("homepage-tablet.png");
   });
 
-  test('responsive design - desktop', async ({ page }) => {
+  test("responsive design - desktop", async ({ page }) => {
     await page.setViewportSize({ width: 1920, height: 1080 });
-    await page.goto('/');
+    await page.goto("/");
 
-    await expect(page).toHaveScreenshot('homepage-desktop.png');
+    await expect(page).toHaveScreenshot("homepage-desktop.png");
   });
 
-  test('dark mode visual', async ({ page }) => {
-    await page.goto('/');
-    await page.emulateMedia({ colorScheme: 'dark' });
+  test("dark mode visual", async ({ page }) => {
+    await page.goto("/");
+    await page.emulateMedia({ colorScheme: "dark" });
     await page.waitForTimeout(500); // Allow theme transition
 
-    await expect(page).toHaveScreenshot('homepage-dark.png');
+    await expect(page).toHaveScreenshot("homepage-dark.png");
   });
 
-  test('component visual - hero section', async ({ page }) => {
-    await page.goto('/');
+  test("component visual - hero section", async ({ page }) => {
+    await page.goto("/");
 
     const hero = page.locator('[data-testid="hero-section"]');
-    await expect(hero).toHaveScreenshot('hero-section.png');
+    await expect(hero).toHaveScreenshot("hero-section.png");
   });
 
-  test('interactive state - button hover', async ({ page }) => {
-    await page.goto('/');
+  test("interactive state - button hover", async ({ page }) => {
+    await page.goto("/");
 
-    const button = page.locator('button.primary');
+    const button = page.locator("button.primary");
     await button.hover();
     await page.waitForTimeout(200); // Allow hover animation
 
-    await expect(button).toHaveScreenshot('button-hover.png');
+    await expect(button).toHaveScreenshot("button-hover.png");
   });
 });
 
 // playwright.config.ts
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
   expect: {
     toHaveScreenshot: {
-      maxDiffPixels: 50,           // Maximum different pixels
-      threshold: 0.2,              // 20% threshold
-      animations: 'disabled',       // Disable animations for consistency
+      maxDiffPixels: 50, // Maximum different pixels
+      threshold: 0.2, // 20% threshold
+      animations: "disabled", // Disable animations for consistency
     },
   },
   use: {
-    screenshot: 'only-on-failure',
+    screenshot: "only-on-failure",
   },
 });
 ```
@@ -274,57 +275,57 @@ npx chromatic --exit-zero-on-changes
 
 ```javascript
 // cypress/e2e/visual.cy.js
-describe('Visual Regression Tests', () => {
+describe("Visual Regression Tests", () => {
   beforeEach(() => {
-    cy.visit('/');
+    cy.visit("/");
   });
 
-  it('homepage visual snapshot', () => {
+  it("homepage visual snapshot", () => {
     cy.viewport(1280, 720);
-    cy.matchImageSnapshot('homepage-desktop');
+    cy.matchImageSnapshot("homepage-desktop");
   });
 
-  it('mobile navigation menu', () => {
-    cy.viewport('iphone-x');
+  it("mobile navigation menu", () => {
+    cy.viewport("iphone-x");
     cy.get('[data-cy="menu-toggle"]').click();
-    cy.get('.mobile-menu').should('be.visible');
-    cy.matchImageSnapshot('mobile-menu-open');
+    cy.get(".mobile-menu").should("be.visible");
+    cy.matchImageSnapshot("mobile-menu-open");
   });
 
-  it('form validation errors', () => {
-    cy.get('form').within(() => {
-      cy.get('[type="email"]').type('invalid-email');
+  it("form validation errors", () => {
+    cy.get("form").within(() => {
+      cy.get('[type="email"]').type("invalid-email");
       cy.get('[type="submit"]').click();
     });
 
-    cy.get('.error-message').should('be.visible');
-    cy.matchImageSnapshot('form-validation-errors');
+    cy.get(".error-message").should("be.visible");
+    cy.matchImageSnapshot("form-validation-errors");
   });
 
-  it('loading state', () => {
-    cy.intercept('GET', '/api/products', (req) => {
+  it("loading state", () => {
+    cy.intercept("GET", "/api/products", (req) => {
       req.reply((res) => {
         res.delay(1000); // Simulate slow response
         res.send();
       });
     });
 
-    cy.visit('/products');
-    cy.matchImageSnapshot('loading-skeleton');
+    cy.visit("/products");
+    cy.matchImageSnapshot("loading-skeleton");
   });
 
-  it('empty state', () => {
-    cy.intercept('GET', '/api/cart', { items: [] });
-    cy.visit('/cart');
-    cy.matchImageSnapshot('cart-empty-state');
+  it("empty state", () => {
+    cy.intercept("GET", "/api/cart", { items: [] });
+    cy.visit("/cart");
+    cy.matchImageSnapshot("cart-empty-state");
   });
 });
 
 // cypress.config.js
-const { defineConfig } = require('cypress');
+const { defineConfig } = require("cypress");
 const {
   addMatchImageSnapshotPlugin,
-} = require('cypress-image-snapshot/plugin');
+} = require("cypress-image-snapshot/plugin");
 
 module.exports = defineConfig({
   e2e: {
@@ -335,13 +336,13 @@ module.exports = defineConfig({
 });
 
 // cypress/support/commands.js
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+import { addMatchImageSnapshotCommand } from "cypress-image-snapshot/command";
 
 addMatchImageSnapshotCommand({
-  failureThreshold: 0.03,        // Allow 3% difference
-  failureThresholdType: 'percent',
+  failureThreshold: 0.03, // Allow 3% difference
+  failureThresholdType: "percent",
   customDiffConfig: { threshold: 0.1 },
-  capture: 'viewport',
+  capture: "viewport",
 });
 ```
 
@@ -350,59 +351,59 @@ addMatchImageSnapshotCommand({
 ```javascript
 // backstop.config.js
 module.exports = {
-  id: 'visual_regression',
+  id: "visual_regression",
   viewports: [
     {
-      label: 'phone',
+      label: "phone",
       width: 375,
       height: 667,
     },
     {
-      label: 'tablet',
+      label: "tablet",
       width: 768,
       height: 1024,
     },
     {
-      label: 'desktop',
+      label: "desktop",
       width: 1920,
       height: 1080,
     },
   ],
   scenarios: [
     {
-      label: 'Homepage',
-      url: 'http://localhost:3000',
+      label: "Homepage",
+      url: "http://localhost:3000",
       delay: 500,
       misMatchThreshold: 0.1,
       requireSameDimensions: true,
     },
     {
-      label: 'Product List',
-      url: 'http://localhost:3000/products',
+      label: "Product List",
+      url: "http://localhost:3000/products",
       delay: 1000,
-      removeSelectors: ['.timestamp', '.ad-banner'],
+      removeSelectors: [".timestamp", ".ad-banner"],
     },
     {
-      label: 'Product Detail',
-      url: 'http://localhost:3000/products/123',
-      clickSelector: '.size-guide-link',
+      label: "Product Detail",
+      url: "http://localhost:3000/products/123",
+      clickSelector: ".size-guide-link",
       postInteractionWait: 500,
     },
     {
-      label: 'Hover State',
-      url: 'http://localhost:3000',
-      hoverSelector: '.primary-button',
+      label: "Hover State",
+      url: "http://localhost:3000",
+      hoverSelector: ".primary-button",
       postInteractionWait: 200,
     },
   ],
   paths: {
-    bitmaps_reference: 'backstop_data/bitmaps_reference',
-    bitmaps_test: 'backstop_data/bitmaps_test',
-    html_report: 'backstop_data/html_report',
+    bitmaps_reference: "backstop_data/bitmaps_reference",
+    bitmaps_test: "backstop_data/bitmaps_test",
+    html_report: "backstop_data/html_report",
   },
-  engine: 'puppeteer',
+  engine: "puppeteer",
   engineOptions: {
-    args: ['--no-sandbox'],
+    args: ["--no-sandbox"],
   },
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
@@ -426,12 +427,12 @@ backstop approve
 
 ```typescript
 // Hide or mock dynamic content
-test('page with dynamic content', async ({ page }) => {
-  await page.goto('/dashboard');
+test("page with dynamic content", async ({ page }) => {
+  await page.goto("/dashboard");
 
   // Hide timestamps
   await page.addStyleTag({
-    content: '.timestamp { visibility: hidden; }'
+    content: ".timestamp { visibility: hidden; }",
   });
 
   // Mock random content
@@ -447,14 +448,14 @@ test('page with dynamic content', async ({ page }) => {
 });
 
 // Ignore regions
-test('ignore dynamic regions', async ({ page }) => {
-  await page.goto('/');
+test("ignore dynamic regions", async ({ page }) => {
+  await page.goto("/");
 
   await expect(page).toHaveScreenshot({
     mask: [
-      page.locator('.ad-banner'),
-      page.locator('.live-chat'),
-      page.locator('.timestamp'),
+      page.locator(".ad-banner"),
+      page.locator(".live-chat"),
+      page.locator(".timestamp"),
     ],
   });
 });
@@ -464,10 +465,10 @@ test('ignore dynamic regions', async ({ page }) => {
 
 ```typescript
 const viewports = [
-  { name: 'mobile', width: 375, height: 667 },
-  { name: 'tablet', width: 768, height: 1024 },
-  { name: 'desktop', width: 1920, height: 1080 },
-  { name: '4k', width: 3840, height: 2160 },
+  { name: "mobile", width: 375, height: 667 },
+  { name: "tablet", width: 768, height: 1024 },
+  { name: "desktop", width: 1920, height: 1080 },
+  { name: "4k", width: 3840, height: 2160 },
 ];
 
 for (const viewport of viewports) {
@@ -477,10 +478,10 @@ for (const viewport of viewports) {
       height: viewport.height,
     });
 
-    await page.goto('/');
+    await page.goto("/");
 
-    await expect(page.locator('nav')).toHaveScreenshot(
-      `nav-${viewport.name}.png`
+    await expect(page.locator("nav")).toHaveScreenshot(
+      `nav-${viewport.name}.png`,
     );
   });
 }
@@ -489,6 +490,7 @@ for (const viewport of viewports) {
 ## Best Practices
 
 ### ✅ DO
+
 - Hide or mock dynamic content (timestamps, ads)
 - Test across multiple viewports
 - Wait for animations and images to load
@@ -499,6 +501,7 @@ for (const viewport of viewports) {
 - Store baselines in version control
 
 ### ❌ DON'T
+
 - Test pages with constantly changing content
 - Ignore small legitimate differences
 - Skip responsive testing
@@ -532,7 +535,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Needed for Percy
+          fetch-depth: 0 # Needed for Percy
 
       - uses: actions/setup-node@v3
 
@@ -559,18 +562,21 @@ jobs:
 ## Troubleshooting
 
 ### Flaky Tests
+
 - Ensure consistent timing (wait for network idle)
 - Disable animations
 - Mock randomness
 - Use fixed dates/times
 
 ### Large Diffs
+
 - Check for font rendering differences
 - Verify image loading
 - Check for animation timing
 - Review anti-aliasing differences
 
 ### False Positives
+
 - Adjust threshold tolerance
 - Mask dynamic regions
 - Use relative comparison

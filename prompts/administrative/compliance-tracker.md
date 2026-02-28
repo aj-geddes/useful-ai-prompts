@@ -1,6 +1,7 @@
 # Compliance Tracker
 
 ## Metadata
+
 - **ID**: `administrative-compliance-tracker`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a regulatory compliance tracking expert who monitors filin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building an annual compliance calendar across multiple regulatory requirements
 - Preparing for a scheduled audit, examination, or regulatory review
 - Conducting a compliance gap analysis after a policy change or new regulation
 - Designing an internal compliance tracking and reporting system
 
 **Anti-patterns (Don't Use For):**
+
 - Providing specific legal interpretations of regulatory text (requires licensed counsel)
 - Filing documents directly with regulatory bodies
 - Replacing a qualified compliance officer in a licensed financial or healthcare institution
@@ -115,6 +118,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 40-person staffing agency in California. We need to track our compliance obligations — we have state labor law requirements, workers' comp insurance filings, business licenses, and we recently started doing some federal government staffing so now we have requirements around E-Verify. I'm the office manager and I'm trying to build a compliance calendar so nothing falls through the cracks."
 
 ### Output
@@ -136,35 +140,33 @@ As a California staffing agency with federal government contracts, you operate u
 
 **Annual Compliance Calendar**
 
-| Obligation | Regulatory Authority | Frequency | Due Date | Owner | Risk Level |
-|---|---|---|---|---|---|
-| Workers' Comp Policy Renewal | CA DIR / Insurer | Annual | Per policy anniversary | Office Manager | High |
-| E-Verify case initiations | DHS/USCIS | Per hire (within 3 days of start) | Ongoing | HR Coordinator | High |
-| EDD Quarterly Payroll Report (DE 9) | EDD | Quarterly | Last day of month after quarter end | Payroll/Accounting | High |
-| SDI/UI Tax Deposits | EDD | Quarterly (or monthly if high volume) | Varies | Payroll | High |
-| CA Staffing Agency License Renewal | DLSE (if applicable) | Annual | Varies by license | Office Manager | High |
-| City Business License Renewal | Local jurisdiction | Annual | Varies by city | Office Manager | Medium |
-| Required Workplace Postings Update | CA DIR + federal DOL | As regulations change | Monitor quarterly | HR | Medium |
-| IRS Form 940 (FUTA) | IRS | Annual | Jan 31 | Payroll | Medium |
-| Workers' Comp Audit | Insurer | Annual | Per policy | Office Manager | Medium |
-| Sexual Harassment Prevention Training | CA DFEH (SB 1343) | Every 2 years | Track by employee | HR | Medium |
-| Cal/OSHA Injury & Illness Log (300) | Cal/OSHA | Annual posting | Feb 1 – Apr 30 | Safety Officer | Medium |
-| Federal 1099 / W-2 Distribution | IRS | Annual | Jan 31 | Payroll | Medium |
+| Obligation                            | Regulatory Authority | Frequency                             | Due Date                            | Owner              | Risk Level |
+| ------------------------------------- | -------------------- | ------------------------------------- | ----------------------------------- | ------------------ | ---------- |
+| Workers' Comp Policy Renewal          | CA DIR / Insurer     | Annual                                | Per policy anniversary              | Office Manager     | High       |
+| E-Verify case initiations             | DHS/USCIS            | Per hire (within 3 days of start)     | Ongoing                             | HR Coordinator     | High       |
+| EDD Quarterly Payroll Report (DE 9)   | EDD                  | Quarterly                             | Last day of month after quarter end | Payroll/Accounting | High       |
+| SDI/UI Tax Deposits                   | EDD                  | Quarterly (or monthly if high volume) | Varies                              | Payroll            | High       |
+| CA Staffing Agency License Renewal    | DLSE (if applicable) | Annual                                | Varies by license                   | Office Manager     | High       |
+| City Business License Renewal         | Local jurisdiction   | Annual                                | Varies by city                      | Office Manager     | Medium     |
+| Required Workplace Postings Update    | CA DIR + federal DOL | As regulations change                 | Monitor quarterly                   | HR                 | Medium     |
+| IRS Form 940 (FUTA)                   | IRS                  | Annual                                | Jan 31                              | Payroll            | Medium     |
+| Workers' Comp Audit                   | Insurer              | Annual                                | Per policy                          | Office Manager     | Medium     |
+| Sexual Harassment Prevention Training | CA DFEH (SB 1343)    | Every 2 years                         | Track by employee                   | HR                 | Medium     |
+| Cal/OSHA Injury & Illness Log (300)   | Cal/OSHA             | Annual posting                        | Feb 1 – Apr 30                      | Safety Officer     | Medium     |
+| Federal 1099 / W-2 Distribution       | IRS                  | Annual                                | Jan 31                              | Payroll            | Medium     |
 
 ---
 
 **Gap Analysis — Priority Items**
 
 **High Risk Gaps:**
+
 1. E-Verify: Confirm that all workers placed on federal contracts have cases initiated within 3 business days of their first day. A single missed case can jeopardize your federal contract eligibility. Audit your last 90 days of placements immediately.
 2. Workers' Comp Classification: Staffing agencies frequently misclassify workers by job code, leading to premium adjustments at audit. Have your insurer confirm current classification codes match actual placed worker roles.
 
-**Medium Risk Gaps:**
-3. Posting Requirements: California updated several required workplace notices in 2025. Confirm current versions are posted in all physical locations and provided digitally to remote/placed workers.
-4. SB 1343 Training Tracking: Ensure you have signed training completion records for all employees hired since your last training cycle — examiners request this.
+**Medium Risk Gaps:** 3. Posting Requirements: California updated several required workplace notices in 2025. Confirm current versions are posted in all physical locations and provided digitally to remote/placed workers. 4. SB 1343 Training Tracking: Ensure you have signed training completion records for all employees hired since your last training cycle — examiners request this.
 
-**Uncertainty — Requires Counsel Review:**
-5. Federal contractor threshold: If any individual federal contract exceeds $150,000, additional FAR compliance obligations apply (e.g., EEO clauses, drug-free workplace certifications). Have counsel confirm your threshold status.
+**Uncertainty — Requires Counsel Review:** 5. Federal contractor threshold: If any individual federal contract exceeds $150,000, additional FAR compliance obligations apply (e.g., EEO clauses, drug-free workplace certifications). Have counsel confirm your threshold status.
 
 ---
 
@@ -178,6 +180,7 @@ Set conditional formatting: Red = past due; Yellow = due within 30 days; Green =
 Review this sheet in a 15-minute monthly compliance standup with ownership from each department head.
 
 **Audit Readiness Checklist**
+
 - [ ] E-Verify case log for all federal placements (last 24 months)
 - [ ] Workers' comp policy and current certificate of insurance
 - [ ] EDD quarterly filings (last 4 quarters)

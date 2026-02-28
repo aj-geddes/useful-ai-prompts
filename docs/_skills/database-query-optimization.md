@@ -1,12 +1,13 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Improve database query performance through indexing, query optimization,
+date: "2025-01-01"
+description:
+  Improve database query performance through indexing, query optimization,
   and execution plan analysis. Reduce response times and database load.
 layout: skill
 slug: database-query-optimization
 tags:
-- data
+  - data
 title: database-query-optimization
 ---
 

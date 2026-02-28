@@ -1,13 +1,14 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Deploy, manage, and scale containerized applications on Kubernetes clusters
+date: "2025-01-01"
+description:
+  Deploy, manage, and scale containerized applications on Kubernetes clusters
   with best practices for production workloads, resource management, and rolling updates.
 layout: skill
 slug: kubernetes-deployment
 tags:
-- kubernetes
-- deployment
+  - kubernetes
+  - deployment
 title: kubernetes-deployment
 ---
 
@@ -90,7 +91,12 @@ spec:
       initContainers:
         - name: wait-for-db
           image: busybox:1.35
-          command: ['sh', '-c', 'until nc -z postgres-service 5432; do echo waiting for db; sleep 2; done']
+          command:
+            [
+              "sh",
+              "-c",
+              "until nc -z postgres-service 5432; do echo waiting for db; sleep 2; done",
+            ]
 
       containers:
         - name: api-service
@@ -323,16 +329,19 @@ subjects:
 ## Deployment Patterns
 
 ### Rolling Update
+
 - Gradually replace old pods with new ones
 - Zero downtime deployments
 - Automatic rollback on failure
 
 ### Blue-Green
+
 - Maintain two identical environments
 - Switch traffic instantly
 - Easier rollback capability
 
 ### Canary
+
 - Deploy to subset of users first
 - Monitor metrics before full rollout
 - Reduce risk of bad deployments
@@ -340,6 +349,7 @@ subjects:
 ## Best Practices
 
 ### ✅ DO
+
 - Use resource requests and limits
 - Implement health checks (liveness, readiness)
 - Use ConfigMaps for configuration
@@ -350,6 +360,7 @@ subjects:
 - Enable pod security policies
 
 ### ❌ DON'T
+
 - Use latest image tags in production
 - Run containers as root
 - Set unlimited resource usage

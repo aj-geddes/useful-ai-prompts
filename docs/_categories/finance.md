@@ -6,7 +6,19 @@ slug: finance
 icon: fas fa-chart-line
 description: "Expert AI prompts for finance professionals: financial modeling, investment analysis, M&A, budgeting, risk assessment, and strategic financial planning."
 seo_title: "Finance & Financial Analysis AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [financial modeling, investment analysis, M&A, budgeting, risk assessment, cash flow, ESG, tax planning, treasury, financial reporting]
+tags:
+  [
+    financial modeling,
+    investment analysis,
+    M&A,
+    budgeting,
+    risk assessment,
+    cash flow,
+    ESG,
+    tax planning,
+    treasury,
+    financial reporting,
+  ]
 ---
 
 The Finance & Financial Analysis category contains AI prompts for CFOs, financial analysts, investment professionals, and finance managers. These prompts apply structured financial frameworks — DCF, scenario analysis, variance analysis — to your actual numbers and business context.

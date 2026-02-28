@@ -1,6 +1,7 @@
 # Grant Writing Strategist
 
 ## Metadata
+
 - **ID**: `academic-grant-writing-strategist`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a grant writing expert who crafts competitive NIH, NSF, an
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing or revising a Specific Aims page for an NIH R01, R21, K-award, or career development grant
 - Developing the Significance and Innovation sections that will score well under NIH review criteria
 - Adapting a research idea for a specific funding mechanism (NSF CAREER, private foundation RFA)
 
 **Anti-patterns (Don't Use For):**
+
 - Fabricating preliminary data or inflating feasibility claims
 - Writing grants for research outside the applicant's area of expertise without adequate collaboration plans
 - Replacing a grant writing professional at institutions with dedicated research development offices for very large awards
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm an early-stage investigator applying for an NIH R21 to study whether a brief motivational interviewing intervention delivered via text message reduces opioid misuse among adults discharged from emergency departments. I have some preliminary data showing that text-based check-ins increase 30-day follow-up rates. Please draft my Specific Aims page."
 
 ### Output

@@ -45,7 +45,7 @@ Create clear, comprehensive code documentation using language-specific standards
  */
 function calculateTotalPrice(basePrice, taxRate, discount = 0) {
   if (basePrice < 0 || taxRate < 0) {
-    throw new Error('Price and tax rate must be non-negative');
+    throw new Error("Price and tax rate must be non-negative");
   }
   return basePrice * (1 + taxRate) - discount;
 }
@@ -107,7 +107,7 @@ class ShoppingCart {
   constructor(userId, options = {}) {
     this.userId = userId;
     this.items = [];
-    this.currency = options.currency || 'USD';
+    this.currency = options.currency || "USD";
     this.taxRate = options.taxRate || 0;
   }
 
@@ -131,23 +131,24 @@ class ShoppingCart {
    */
   addItem(product, quantity) {
     if (!Number.isInteger(quantity) || quantity <= 0) {
-      throw new Error('Quantity must be a positive integer');
+      throw new Error("Quantity must be a positive integer");
     }
 
     const existingItem = this.items.find(
-      item => item.product.id === product.id
+      (item) => item.product.id === product.id,
     );
 
     if (existingItem) {
       existingItem.quantity += quantity;
-      existingItem.subtotal = existingItem.product.price * existingItem.quantity;
+      existingItem.subtotal =
+        existingItem.product.price * existingItem.quantity;
       return existingItem;
     }
 
     const newItem = {
       product,
       quantity,
-      subtotal: product.price * quantity
+      subtotal: product.price * quantity,
     };
     this.items.push(newItem);
     return newItem;
@@ -159,10 +160,7 @@ class ShoppingCart {
    * @returns {number} Total price with tax
    */
   getTotal() {
-    const subtotal = this.items.reduce(
-      (sum, item) => sum + item.subtotal,
-      0
-    );
+    const subtotal = this.items.reduce((sum, item) => sum + item.subtotal, 0);
     return subtotal * (1 + this.taxRate);
   }
 
@@ -556,6 +554,7 @@ function getUserName() {
 ## Best Practices
 
 ### ✅ DO
+
 - Document public APIs thoroughly
 - Include usage examples
 - Document parameters and return values
@@ -569,6 +568,7 @@ function getUserName() {
 - Use consistent formatting
 
 ### ❌ DON'T
+
 - State the obvious in comments
 - Leave commented-out code
 - Write misleading comments

@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement stored procedures and functions for database logic. Use when
+date: "2025-01-01"
+description:
+  Implement stored procedures and functions for database logic. Use when
   creating reusable database routines, complex queries, or server-side calculations.
 layout: skill
 slug: stored-procedures
 tags:
-- data
+  - data
 title: stored-procedures
 ---
 

@@ -5,11 +5,13 @@ This category contains prompts designed to help individuals optimize their perso
 ## Available Prompts
 
 ### Time Management and Organization
+
 - **[Time Management Optimizer](./time-management-optimizer.md)** - Comprehensive time management consulting for maximum productivity and work-life balance
 - **[Productivity System Designer](./productivity-system-designer.md)** - Create personalized productivity frameworks tailored to your work style and goals
 - **[Work-Life Balance Optimizer](./work-life-balance-optimizer.md)** - Sustainable work-life integration that reduces stress and protects personal time
 
 ### Habit Formation and Goal Achievement
+
 - **[Habit Formation Strategist](./habit-formation-strategist.md)** - Build lasting positive habits using science-backed strategies
 - **[Goal Achievement Architect](./goal-achievement-architect.md)** - Transform aspirations into achieved realities through strategic planning
 - **[Focus and Deep Work Strategist](./focus-deep-work-strategist.md)** - Develop laser-sharp focus and eliminate distractions for meaningful work

@@ -1,13 +1,14 @@
 ---
 category: mobile-development
-date: '2025-01-01'
-description: Build beautiful cross-platform mobile apps with Flutter and Dart. Covers
+date: "2025-01-01"
+description:
+  Build beautiful cross-platform mobile apps with Flutter and Dart. Covers
   widgets, state management with Provider/BLoC, navigation, API integration, and material
   design.
 layout: skill
 slug: flutter-development
 tags:
-- api
+  - api
 title: flutter-development
 ---
 
@@ -300,6 +301,7 @@ class ProfileScreen extends StatelessWidget {
 ## Best Practices
 
 ### ✅ DO
+
 - Use widgets for every UI element
 - Implement proper state management
 - Use const constructors where possible
@@ -312,6 +314,7 @@ class ProfileScreen extends StatelessWidget {
 - Document custom widgets
 
 ### ❌ DON'T
+
 - Build entire screens in build() method
 - Use setState for complex state logic
 - Make network calls in build()

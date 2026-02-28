@@ -1,6 +1,7 @@
 # Technical Debt Assessment Expert
 
 ## Metadata
+
 - **ID**: `technical-debt-assessment-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Systematically identifies, quantifies, and prioritizes technical debt to create 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing technical debt in legacy or growing codebases
 - Creating remediation roadmaps with business case justification
 - Establishing technical debt budgets and governance
@@ -25,6 +27,7 @@ Systematically identifies, quantifies, and prioritizes technical debt to create 
 - Preparing for major refactoring or modernization initiatives
 
 **Anti-Patterns (Don't Use For):**
+
 - Active refactoring implementation (use Code Refactoring Expert)
 - Code review for new features
 - New development planning without existing debt
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We have a 5-year-old SaaS platform with approximately 300K lines of Python code. Our team of 10 developers is struggling with:
 
@@ -164,31 +168,32 @@ We're planning a major new feature initiative next quarter and worried the codeb
 
 **Debt Inventory**
 
-| Category | Debt Item | Severity | Impact Area |
-|----------|-----------|----------|-------------|
-| **Code Quality** | Low test coverage (35%) | High | Bug escapes, fear of refactoring |
-| **Code Quality** | Inconsistent coding patterns | Medium | Onboarding time, code review burden |
-| **Code Quality** | Dead code and duplication | Low | Cognitive load, maintenance |
-| **Architecture** | Monolithic coupling | High | Deployment risk, scaling limits |
-| **Architecture** | Database query inefficiencies | Medium | Performance issues, scaling |
-| **Infrastructure** | Slow CI pipeline (45 min) | Medium | Developer productivity, iteration speed |
-| **Infrastructure** | Manual deployment steps | Medium | Release risk, time consumption |
-| **Documentation** | Missing architecture docs | Medium | Onboarding, decision-making |
-| **Documentation** | Outdated API documentation | Low | Integration issues |
+| Category           | Debt Item                     | Severity | Impact Area                             |
+| ------------------ | ----------------------------- | -------- | --------------------------------------- |
+| **Code Quality**   | Low test coverage (35%)       | High     | Bug escapes, fear of refactoring        |
+| **Code Quality**   | Inconsistent coding patterns  | Medium   | Onboarding time, code review burden     |
+| **Code Quality**   | Dead code and duplication     | Low      | Cognitive load, maintenance             |
+| **Architecture**   | Monolithic coupling           | High     | Deployment risk, scaling limits         |
+| **Architecture**   | Database query inefficiencies | Medium   | Performance issues, scaling             |
+| **Infrastructure** | Slow CI pipeline (45 min)     | Medium   | Developer productivity, iteration speed |
+| **Infrastructure** | Manual deployment steps       | Medium   | Release risk, time consumption          |
+| **Documentation**  | Missing architecture docs     | Medium   | Onboarding, decision-making             |
+| **Documentation**  | Outdated API documentation    | Low      | Integration issues                      |
 
 **Impact Quantification**
 
 **Annual Cost of Technical Debt:**
 
-| Impact Category | Calculation | Annual Cost |
-|-----------------|-------------|-------------|
-| Bug fix time | 40% sprints x 10 devs x $150K salary | $600,000 |
-| Slow onboarding | 2 weeks x 5 hires/year x $3K/week | $30,000 |
-| CI wait time | 45 min x 20 builds/day x 250 days x $75/hr | $281,250 |
-| Release delays | 2 hrs/release x 26 releases x 10 devs x $75/hr | $39,000 |
-| **Total Annual Cost** | | **~$950,000** |
+| Impact Category       | Calculation                                    | Annual Cost   |
+| --------------------- | ---------------------------------------------- | ------------- |
+| Bug fix time          | 40% sprints x 10 devs x $150K salary           | $600,000      |
+| Slow onboarding       | 2 weeks x 5 hires/year x $3K/week              | $30,000       |
+| CI wait time          | 45 min x 20 builds/day x 250 days x $75/hr     | $281,250      |
+| Release delays        | 2 hrs/release x 26 releases x 10 devs x $75/hr | $39,000       |
+| **Total Annual Cost** |                                                | **~$950,000** |
 
 **Velocity Impact Analysis:**
+
 - Current effective velocity: ~60% of capacity (40% lost to debt)
 - Potential velocity gain: 25-35% from addressing priority debt
 - Feature delivery acceleration: 2-3 months for major initiatives
@@ -196,31 +201,33 @@ We're planning a major new feature initiative next quarter and worried the codeb
 **Prioritized Remediation Plan**
 
 **Ranking Methodology:**
+
 - Impact Score: 1-5 (5 = highest business impact)
 - Effort Score: 1-5 (5 = lowest effort)
 - Priority = Impact x Effort
 
-| Rank | Debt Item | Impact | Effort | ROI Score | Recommendation |
-|------|-----------|--------|--------|-----------|----------------|
-| 1 | CI pipeline optimization | 4 | 5 | 20 | Phase 1 - Quick win |
-| 2 | Test coverage for critical paths | 5 | 3 | 15 | Phase 2 - High value |
-| 3 | Architecture documentation | 4 | 4 | 16 | Phase 1 - Quick win |
-| 4 | Coding standards enforcement | 3 | 4 | 12 | Phase 1 - Quick win |
-| 5 | Database query optimization | 4 | 3 | 12 | Phase 2 - Performance |
-| 6 | Monolith decoupling | 5 | 2 | 10 | Phase 3 - Strategic |
-| 7 | CD automation | 3 | 3 | 9 | Phase 2 - Efficiency |
+| Rank | Debt Item                        | Impact | Effort | ROI Score | Recommendation        |
+| ---- | -------------------------------- | ------ | ------ | --------- | --------------------- |
+| 1    | CI pipeline optimization         | 4      | 5      | 20        | Phase 1 - Quick win   |
+| 2    | Test coverage for critical paths | 5      | 3      | 15        | Phase 2 - High value  |
+| 3    | Architecture documentation       | 4      | 4      | 16        | Phase 1 - Quick win   |
+| 4    | Coding standards enforcement     | 3      | 4      | 12        | Phase 1 - Quick win   |
+| 5    | Database query optimization      | 4      | 3      | 12        | Phase 2 - Performance |
+| 6    | Monolith decoupling              | 5      | 2      | 10        | Phase 3 - Strategic   |
+| 7    | CD automation                    | 3      | 3      | 9         | Phase 2 - Efficiency  |
 
 **Phase 1: Quick Wins (Months 1-2)**
 
 **Investment:** ~$50,000 (2 engineers for 2 months)
 
-| Initiative | Actions | Expected Outcome |
-|------------|---------|------------------|
-| CI Pipeline | Parallelize tests, add caching, optimize Docker builds | 45 min -> 12 min build time |
-| Coding Standards | Implement pre-commit hooks, linting, auto-formatting | Consistent code, faster reviews |
-| Architecture Docs | Document critical flows, create onboarding guide | Onboarding: 2 weeks -> 1 week |
+| Initiative        | Actions                                                | Expected Outcome                |
+| ----------------- | ------------------------------------------------------ | ------------------------------- |
+| CI Pipeline       | Parallelize tests, add caching, optimize Docker builds | 45 min -> 12 min build time     |
+| Coding Standards  | Implement pre-commit hooks, linting, auto-formatting   | Consistent code, faster reviews |
+| Architecture Docs | Document critical flows, create onboarding guide       | Onboarding: 2 weeks -> 1 week   |
 
 **Expected Annual Savings: $180,000**
+
 - CI time: $187K -> $50K = $137K saved
 - Onboarding: $30K -> $15K = $15K saved
 - Code review efficiency: ~$28K saved
@@ -229,13 +236,14 @@ We're planning a major new feature initiative next quarter and worried the codeb
 
 **Investment:** ~$150,000 (2.5 engineers for 4 months)
 
-| Initiative | Actions | Expected Outcome |
-|------------|---------|------------------|
-| Test Coverage | Critical path testing to 70%, integration tests | Bug escapes: 40% -> 20% sprint impact |
-| Query Optimization | Index analysis, query refactoring, connection pooling | Page loads: 2.5s -> 1s (P95) |
-| CD Automation | Full pipeline automation, blue-green deployment | Release time: 2 hrs -> 15 min |
+| Initiative         | Actions                                               | Expected Outcome                      |
+| ------------------ | ----------------------------------------------------- | ------------------------------------- |
+| Test Coverage      | Critical path testing to 70%, integration tests       | Bug escapes: 40% -> 20% sprint impact |
+| Query Optimization | Index analysis, query refactoring, connection pooling | Page loads: 2.5s -> 1s (P95)          |
+| CD Automation      | Full pipeline automation, blue-green deployment       | Release time: 2 hrs -> 15 min         |
 
 **Expected Annual Savings: $320,000**
+
 - Bug fix reduction: $600K -> $300K = $300K saved
 - Performance improvement: Customer retention value
 - Release efficiency: $20K saved
@@ -244,13 +252,14 @@ We're planning a major new feature initiative next quarter and worried the codeb
 
 **Investment:** ~$300,000 (3 engineers for 6 months)
 
-| Initiative | Actions | Expected Outcome |
-|------------|---------|------------------|
-| Service Extraction | Extract 3 high-change modules as services | Independent deployment, team scaling |
-| API Contracts | Define contracts between modules | Reduced coupling, parallel development |
-| Data Isolation | Database per service for critical paths | Performance isolation, scaling options |
+| Initiative         | Actions                                   | Expected Outcome                       |
+| ------------------ | ----------------------------------------- | -------------------------------------- |
+| Service Extraction | Extract 3 high-change modules as services | Independent deployment, team scaling   |
+| API Contracts      | Define contracts between modules          | Reduced coupling, parallel development |
+| Data Isolation     | Database per service for critical paths   | Performance isolation, scaling options |
 
 **Expected Annual Savings: $400,000**
+
 - Deployment risk reduction
 - Team scaling enablement
 - Feature velocity improvement
@@ -258,6 +267,7 @@ We're planning a major new feature initiative next quarter and worried the codeb
 **Prevention Strategy**
 
 **Quality Gates:**
+
 ```yaml
 pre_commit:
   - linting (black, flake8)
@@ -277,12 +287,14 @@ pre_merge:
 ```
 
 **Debt Budget:**
+
 - Reserve 20% of sprint capacity for debt reduction
 - Track debt items in backlog with same visibility as features
 - Quarterly debt review with engineering leadership
 - Annual debt audit with comprehensive assessment
 
 **Governance Process:**
+
 ```
 1. Debt Identification
    -> Developer flags during development
@@ -308,16 +320,17 @@ pre_merge:
 
 **Tracking Metrics**
 
-| Metric | Current | 6-Month Target | 12-Month Target |
-|--------|---------|----------------|-----------------|
-| Test coverage | 35% | 60% | 70% |
-| CI build time | 45 min | 15 min | 12 min |
-| Developer onboarding | 2 weeks | 1 week | 3 days |
-| Bug fix % of sprints | 40% | 25% | 15% |
-| Deployment frequency | Bi-weekly | Weekly | Daily capable |
-| Mean time to recovery | 4 hours | 1 hour | 30 min |
+| Metric                | Current   | 6-Month Target | 12-Month Target |
+| --------------------- | --------- | -------------- | --------------- |
+| Test coverage         | 35%       | 60%            | 70%             |
+| CI build time         | 45 min    | 15 min         | 12 min          |
+| Developer onboarding  | 2 weeks   | 1 week         | 3 days          |
+| Bug fix % of sprints  | 40%       | 25%            | 15%             |
+| Deployment frequency  | Bi-weekly | Weekly         | Daily capable   |
+| Mean time to recovery | 4 hours   | 1 hour         | 30 min          |
 
 **Dashboard Elements:**
+
 - Debt item count by category (trend over time)
 - Debt reduction velocity (items resolved per month)
 - Quality gate pass rate
@@ -325,12 +338,12 @@ pre_merge:
 
 **ROI Summary**
 
-| Phase | Investment | Annual Savings | Payback |
-|-------|------------|----------------|---------|
-| Phase 1 | $50K | $180K | 3 months |
-| Phase 2 | $150K | $320K | 6 months |
-| Phase 3 | $300K | $400K | 9 months |
-| **Total** | **$500K** | **$900K** | **7 months** |
+| Phase     | Investment | Annual Savings | Payback      |
+| --------- | ---------- | -------------- | ------------ |
+| Phase 1   | $50K       | $180K          | 3 months     |
+| Phase 2   | $150K      | $320K          | 6 months     |
+| Phase 3   | $300K      | $400K          | 9 months     |
+| **Total** | **$500K**  | **$900K**      | **7 months** |
 
 **3-Year ROI: 440%** (Total savings $2.7M on $500K investment)
 

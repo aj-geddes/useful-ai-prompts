@@ -1,6 +1,7 @@
 # Mindfulness Meditation Guide
 
 ## Metadata
+
 - **ID**: `personal-growth-mindfulness-meditation`
 - **Version**: 1.0.0
 - **Category**: Personal Growth
@@ -18,6 +19,7 @@ Develops sustainable mindfulness and meditation practices tailored to individual
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Starting or restarting a meditation practice
 - Managing everyday stress and anxiety through mindfulness
 - Improving focus, concentration, and mental clarity
@@ -25,6 +27,7 @@ Develops sustainable mindfulness and meditation practices tailored to individual
 - Building sustainable well-being practices
 
 **Anti-Patterns (When NOT to Use):**
+
 - Clinical anxiety or depression treatment (seek professional mental health support)
 - Spiritual or religious guidance (seek appropriate spiritual counsel)
 - Sleep disorders (seek sleep specialist)
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have tried meditation apps but never stuck with it past a week. My mind races constantly and I cannot sit still. I feel like I am doing it wrong. I need help with work stress and anxiety. I can realistically do 10-15 minutes in the morning before work."
 
 ### Output
@@ -113,12 +117,14 @@ Avoid:
 **1. Foundation**
 
 Common obstacles addressed:
+
 - Racing mind: Normal and expected. The goal is not stopping thoughts but noticing them.
 - Cannot sit still: Options include walking meditation and movement-based practice.
 - Doing it wrong: If you are noticing, you are meditating. There is no perfect.
 - Consistency: Start smaller than you think. 3 minutes beats 0 minutes every time.
 
 Technique selection for your goals:
+
 - Breath awareness: Anchor for racing mind
 - Body scan: Releases physical tension from stress
 - RAIN technique: For anxiety moments throughout day
@@ -127,22 +133,26 @@ Technique selection for your goals:
 **2. Practice Schedule**
 
 Week 1-2: Foundation (3-5 minutes daily)
+
 - Morning: 3-minute breath awareness immediately after waking
 - Technique: Count breaths 1-10, restart when mind wanders
 - Success metric: Completed practice (not quality of focus)
 - Tools: Use timer only, not guided audio (build independence)
 
 Week 3-4: Expansion (5-8 minutes daily)
+
 - Morning: 5-minute breath awareness
 - Evening option: 3-minute body scan before bed (helps with sleep)
 - Add: One mindful moment during day (see Daily Integration)
 
 Week 5-8: Building (10-15 minutes daily)
+
 - Morning: 10-minute practice alternating breath and body scan
 - Add: 5-minute practice on high-stress days (additional session)
 - Technique progression: Try noting practice ("thinking," "planning," "worrying")
 
 Beyond: Sustainable practice (10-15 minutes daily)
+
 - Established morning routine
 - Variety of techniques based on daily needs
 - Integration of mindfulness throughout day
@@ -150,18 +160,21 @@ Beyond: Sustainable practice (10-15 minutes daily)
 **3. Daily Integration**
 
 Mindful moments (no extra time required):
+
 - Mindful coffee: Full attention on first cup (taste, warmth, smell)
 - Transition breathing: 3 breaths between activities
 - Mindful walking: 30 seconds of noticing feet on ground
 - Waiting practice: Use any waiting time for breath awareness
 
 Stress response toolkit (for anxiety moments):
+
 - STOP technique: Stop, Take a breath, Observe, Proceed
 - 5-4-3-2-1 grounding: 5 things you see, 4 hear, 3 feel, 2 smell, 1 taste
 - Box breathing: Inhale 4, hold 4, exhale 4, hold 4 (repeat 4 times)
 - Self-compassion phrase: "This is hard. I am doing my best."
 
 Work stress application:
+
 - Before stressful meeting: 1-minute breath awareness
 - After difficult interaction: 3 deep breaths, brief body scan
 - End of workday: Transition ritual with 5 breaths marking end of work
@@ -169,24 +182,28 @@ Work stress application:
 **4. Sustainability**
 
 Habit formation:
+
 - Anchor: Attach practice to existing habit (after bathroom, before coffee)
 - Environment: Designate specific spot (creates automatic cue)
 - Minimum viable: On hard days, 1 minute counts (maintain streak)
 - Tracking: Simple calendar mark (visual motivation)
 
 Common pitfalls and solutions:
+
 - Missed days: Self-compassion, restart next day (no make-up needed)
 - Busy mind days: Normal. More distraction noticed means more practice.
 - Boredom: Add variety (different techniques, locations, times)
 - Plateau: Consider adding evening practice or longer weekend sessions
 
 Progress indicators:
+
 - Week 2: Practice feels less awkward
 - Week 4: Notice stress reduction effects
 - Week 8: Practice feels like natural part of day
 - Month 3: Spontaneously using techniques during stress
 
 Success reframe:
+
 - Success equals consistent practice, not perfect sessions
 - A distracted meditation still provides benefits
 - Noticing distraction IS the practice

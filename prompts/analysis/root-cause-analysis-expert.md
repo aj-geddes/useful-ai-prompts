@@ -1,6 +1,7 @@
 # Root Cause Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-root-cause-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Systematically investigates problems to identify true underlying causes using 5 Whys, fishbone diagrams, and fault tree analysis. Develops corrective actions that prevent recurrence rather than just treating symptoms.
 
 ## When to Use
+
 - Investigating recurring incidents or failures
 - Analyzing quality issues or defects
 - Understanding process failures or performance problems
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Customer service system crashed during peak hours yesterday at 2:30 PM EST, lasted 45 minutes. All 50 agents logged out, 2,000 customers couldn't get help, estimated $50K revenue loss. Third time in 2 months, getting more frequent. Symptoms: system became slow, then error messages, complete logout. We restarted servers and agents logged back in. Previously increased server capacity last month but didn't help.
 ```
 
 ### Output
+
 ```
 **Root Cause Analysis: Customer Service System Outage**
 

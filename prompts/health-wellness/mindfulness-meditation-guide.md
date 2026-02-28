@@ -1,6 +1,7 @@
 # Mindfulness Meditation Guide
 
 ## Metadata
+
 - **ID**: `health-mindfulness-meditation`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ An interactive mindfulness and meditation coach that helps establish and deepen 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Starting a meditation practice from scratch
 - Deepening existing mindfulness practice
 - Overcoming meditation obstacles and inconsistency
@@ -25,6 +27,7 @@ An interactive mindfulness and meditation coach that helps establish and deepen 
 - Building sustainable contemplative habits
 
 **Anti-Patterns (When NOT to Use):**
+
 - Treatment of mental health conditions requiring professional care
 - Trauma processing or PTSD management
 - Spiritual guidance requiring specific religious traditions
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Complete beginner - never meditated consistently. Tried apps a few times but gave up when my mind wouldn't "stop thinking." Goals: Reduce stress, feel more present, less reactive to daily annoyances. Can commit to 5-10 minutes daily, mornings work best. Challenges: Impatient, feel like I'm doing it wrong, hard to sit still.
 
 ### Output
@@ -120,19 +124,22 @@ The goal isn't to stop thinking - that's impossible. The practice is noticing wh
 
 **Technique Selection:**
 
-*Primary: Breath Awareness (Anchor Meditation)*
+_Primary: Breath Awareness (Anchor Meditation)_
+
 - Simple, accessible, builds concentration
 - Perfect for stress reduction and presence goals
 - Doesn't require stillness or clearing mind
 
-*Secondary: Body Scan (when restless)*
+_Secondary: Body Scan (when restless)_
+
 - Gives mind something to do
 - Good for physical tension and racing thoughts
 - Addresses difficulty sitting still
 
 **Week 1-2 Practice (5 minutes):**
 
-*Daily Structure:*
+_Daily Structure:_
+
 1. Sit comfortably (chair is fine, don't need floor)
 2. Set timer for 5 minutes
 3. Close eyes or soft gaze downward
@@ -140,51 +147,60 @@ The goal isn't to stop thinking - that's impossible. The practice is noticing wh
 5. When mind wanders (it will), notice, and return to breath
 6. Repeat noticing and returning - that's the practice
 
-*Key Instructions:*
+_Key Instructions:_
+
 - No judgment when mind wanders
 - Use word "thinking" to note thoughts, then return
 - Physical fidgeting is okay, just notice it
 - Timer means you don't need to check time
 
 **Week 3-4 Practice (7-8 minutes):**
+
 - Same technique, slightly longer
 - Add brief body scan at start (30 seconds)
 - Notice quality of breath without changing it
 
 **Week 5+ Practice (10 minutes):**
+
 - Full body scan (3 min) + breath awareness (7 min)
 - Or breath awareness for full duration
 - Experiment with eyes open vs. closed
 
 **Obstacle Strategies:**
 
-*"My mind won't stop thinking"*
+_"My mind won't stop thinking"_
+
 - This is normal - you're noticing it, which is the practice
 - Reframe: "I'm training attention, not achieving blankness"
 
-*"I'm impatient / feel restless"*
+_"I'm impatient / feel restless"_
+
 - Start with body scan to give mind something to do
 - 5 minutes is achievable - you can do anything for 5 minutes
 - Notice impatience as just another thing to observe
 
-*"I feel like I'm doing it wrong"*
+_"I feel like I'm doing it wrong"_
+
 - If you're sitting and breathing with awareness, you're doing it
 - There is no "good" meditation - just practice
 - Progress isn't felt moment-to-moment
 
 **Habit Formation:**
+
 - Same time daily (after waking, before phone)
 - Same place (creates environmental cue)
 - Habit stack: "After I brush teeth, I sit for 5 minutes"
 - Track with simple checkmark (don't track "quality")
 
 **Resources:**
+
 - Apps: Headspace, Calm, Insight Timer (free options)
 - Or: Timer + instructions above is sufficient
 
 ---
 
 ## Related Prompts
+
 - [Stress Reduction Strategist](stress-reduction-strategist.md)
 - [Mental Health Support System](mental-health-support-system.md)
 - [Sleep Quality Optimizer](sleep-quality-optimizer.md)

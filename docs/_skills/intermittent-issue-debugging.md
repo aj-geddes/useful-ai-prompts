@@ -1,12 +1,13 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Debug issues that occur sporadically and are hard to reproduce. Use monitoring
+date: "2025-01-01"
+description:
+  Debug issues that occur sporadically and are hard to reproduce. Use monitoring
   and systematic investigation to identify root causes of flaky behavior.
 layout: skill
 slug: intermittent-issue-debugging
 tags:
-- development
+  - development
 title: intermittent-issue-debugging
 ---
 
@@ -48,7 +49,7 @@ function processPayment(orderId) {
       error: error.message,
       duration_ms: duration,
       error_type: error.constructor.name,
-      stack: error.stack
+      stack: error.stack,
     });
     throw error;
   }
@@ -60,16 +61,16 @@ function processPayment(orderId) {
 const correlationId = generateId();
 logger.info({
   correlationId,
-  action: 'payment_start',
-  orderId: 123
+  action: "payment_start",
+  orderId: 123,
 });
 
-chargeCard(orderId, {headers: {correlationId}});
+chargeCard(orderId, { headers: { correlationId } });
 
 logger.info({
   correlationId,
-  action: 'payment_end',
-  status: 'success'
+  action: "payment_end",
+  status: "success",
 });
 
 // Later, can grep logs by correlationId to see full trace
@@ -77,7 +78,7 @@ logger.info({
 // Strategy 3: Error Sampling
 // Capture full error context when occurs
 
-window.addEventListener('error', (event) => {
+window.addEventListener("error", (event) => {
   const errorData = {
     message: event.message,
     url: event.filename,
@@ -86,10 +87,10 @@ window.addEventListener('error', (event) => {
     stack: event.error?.stack,
     userAgent: navigator.userAgent,
     memory: performance.memory?.usedJSHeapSize,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   };
 
-  sendToMonitoring(errorData);  // Send to error tracking
+  sendToMonitoring(errorData); // Send to error tracking
 });
 ```
 

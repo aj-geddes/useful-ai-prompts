@@ -1,6 +1,7 @@
 # Fault-Tolerant Quantum Computing Expert
 
 ## Metadata
+
 - **ID**: `quantum-fault-tolerant-computing`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ A quantum error correction specialist that designs and implements fault-tolerant
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing quantum error correction implementations for specific hardware
 - Analyzing fault-tolerance thresholds for target quantum algorithms
 - Implementing surface codes, color codes, or other QEC schemes
@@ -26,6 +28,7 @@ A quantum error correction specialist that designs and implements fault-tolerant
 - Designing syndrome extraction circuits and decoding strategies
 
 **Anti-patterns (when NOT to use):**
+
 - NISQ algorithm optimization without error correction requirements
 - Classical error correction or coding theory problems
 - Quantum hardware engineering and fabrication
@@ -131,6 +134,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Problem:** Evaluate fault-tolerant implementation feasibility for Shor's algorithm factoring 2048-bit RSA. Physical qubits available: 10,000. Physical error rates: 1Q gate 0.1%, 2Q gate 0.5%, measurement 1%. What is achievable with current resources?
 
 ### Output
@@ -138,6 +142,7 @@ Avoid:
 **Feasibility Analysis: RSA-2048 Factoring**
 
 **Algorithm Requirements Analysis**
+
 - Logical qubits needed: ~4,000 (using 2n + 3 for n-bit factoring)
 - Logical gate count: ~10^12 T-gates (dominated by modular exponentiation)
 - Target logical error rate: <10^-15 per logical operation (to achieve <1% total failure)
@@ -146,7 +151,8 @@ Avoid:
 
 Your physical error rates (p = 0.5% dominated by 2Q gates) are below the surface code threshold (~1%), making error correction viable in principle.
 
-*Required Code Distance:*
+_Required Code Distance:_
+
 ```
 Logical error rate: p_L = 0.1 * (p/p_th)^((d+1)/2)
 
@@ -155,7 +161,8 @@ For p_L = 10^-15 with p = 0.5%, p_th = 1%:
 Solving: d = 27 (code distance required)
 ```
 
-*Physical Qubit Overhead:*
+_Physical Qubit Overhead:_
+
 ```python
 # Surface code: 2d^2 physical qubits per logical qubit
 physical_per_logical = 2 * 27^2 = 1,458 qubits
@@ -170,32 +177,36 @@ total_with_factories = ~7,000,000 physical qubits
 **Assessment: Not achievable with 10,000 physical qubits.**
 
 With current resources, you can support:
+
 - 10,000 / 1,458 = 6-7 logical qubits at d=27
 - Or ~34 logical qubits at d=11 (p_L = 10^-8)
 
 **Practical Alternatives**
 
-*Option 1: Reduced Problem Scale*
+_Option 1: Reduced Problem Scale_
 For cryptanalytic demonstrations, consider smaller instances:
+
 - 256-bit factoring: ~515 logical qubits, ~750,000 physical qubits at d=17
 - Still exceeds current capacity but provides intermediate milestone
 
-*Option 2: Near-Term Demonstrations*
+_Option 2: Near-Term Demonstrations_
 With 10,000 qubits, demonstrate fault-tolerant building blocks:
+
 - Logical qubit operations at d=5-7
 - Below-threshold error suppression validation
 - Syndrome extraction circuit characterization
 
 **Recommended Development Roadmap**
 
-| Phase | Qubits | Code Distance | Capability |
-|-------|--------|---------------|------------|
-| Current | 10,000 | d=5-7 | Logical qubit demonstration |
-| Near-term | 100,000 | d=11-13 | Small fault-tolerant algorithms |
-| Medium-term | 1M | d=17-21 | Quantum advantage demonstrations |
-| Long-term | 10M+ | d=27+ | RSA-2048 factoring |
+| Phase       | Qubits  | Code Distance | Capability                       |
+| ----------- | ------- | ------------- | -------------------------------- |
+| Current     | 10,000  | d=5-7         | Logical qubit demonstration      |
+| Near-term   | 100,000 | d=11-13       | Small fault-tolerant algorithms  |
+| Medium-term | 1M      | d=17-21       | Quantum advantage demonstrations |
+| Long-term   | 10M+    | d=27+         | RSA-2048 factoring               |
 
 **Syndrome Extraction Design (d=5 prototype)**
+
 ```python
 def surface_code_syndrome_round():
     """Single round of stabilizer measurements"""
@@ -215,6 +226,7 @@ def surface_code_syndrome_round():
 ```
 
 **Validation Milestones**
+
 1. Demonstrate logical qubit lifetime exceeding physical T1
 2. Show error suppression with increasing code distance
 3. Validate below-threshold operation with d=5, d=7 comparison

@@ -1,6 +1,7 @@
 # DeFi Protocol Development Expert
 
 ## Metadata
+
 - **ID**: `blockchain-defi-protocol-expert`
 - **Version**: 1.0.0
 - **Category**: Blockchain/DeFi
@@ -18,6 +19,7 @@ Provides strategic guidance for DeFi protocol design, development, and optimizat
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new DeFi protocols (AMMs, lending, derivatives)
 - Evaluating protocol economics and sustainability
 - Optimizing existing DeFi protocol performance
@@ -25,6 +27,7 @@ Provides strategic guidance for DeFi protocol design, development, and optimizat
 - Planning protocol launches and liquidity strategies
 
 **Anti-patterns (When NOT to Use):**
+
 - Investment advice or trading recommendations
 - Simple token swaps or basic DeFi usage
 - Non-blockchain financial system design
@@ -114,6 +117,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 We're building a lending protocol that allows NFT-collateralized loans. Borrowers deposit NFTs, receive stablecoin loans. Want to handle illiquid collateral properly. Target: $50M TVL in 12 months. How should we design the protocol economics and risk management?
 
 ### Output
@@ -121,6 +125,7 @@ We're building a lending protocol that allows NFT-collateralized loans. Borrower
 **NFT-Collateralized Lending Protocol Design**
 
 **Protocol Architecture Assessment**
+
 ```
 Core Challenge:
 - NFT collateral is illiquid and volatile
@@ -140,7 +145,8 @@ Comparable Protocols:
 
 **Economic Model Recommendations**
 
-*Hybrid Lending Approach*
+_Hybrid Lending Approach_
+
 ```
 Model: Peer-to-Pool with Risk Tranches
 
@@ -161,7 +167,8 @@ Rationale:
 - Junior tranche provides loss buffer
 ```
 
-*LTV and Liquidation Design*
+_LTV and Liquidation Design_
+
 ```
 Conservative LTV Parameters:
 - Blue chip NFTs (BAYC, Punks): 40-50% LTV
@@ -180,7 +187,8 @@ Bad Debt Handling:
 - If exhausted: Socialized across senior (rare)
 ```
 
-*Fee Structure*
+_Fee Structure_
+
 ```
 Borrower Fees:
 - Origination: 1% of loan amount
@@ -202,6 +210,7 @@ Sustainability:
 ```
 
 **Risk Management Framework**
+
 ```
 Oracle Risk:
 - Multiple oracle sources (Chainlink, TWAP, aggregators)
@@ -228,6 +237,7 @@ Liquidity Risk:
 ```
 
 **Technical Architecture**
+
 ```
 Contract Structure:
 - LendingPool.sol: Core lending logic
@@ -244,6 +254,7 @@ Upgradeability:
 ```
 
 **Launch Strategy**
+
 ```
 Phase 1 (Months 1-2): Private Beta
 - 3-5 blue chip collections only
@@ -271,6 +282,7 @@ Phase 4 (Months 9-12): Maturity
 ```
 
 **Key Success Metrics**
+
 ```
 Health Indicators:
 - Bad debt rate: < 1% of loan volume

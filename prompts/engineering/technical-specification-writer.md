@@ -1,6 +1,7 @@
 # Technical Specification Writer
 
 ## Metadata
+
 - **ID**: `engineering-technical-specification-writer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a technical writing specialist with engineering depth who 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing a performance or design specification for a component or subsystem to release to a supplier
 - Drafting an Interface Control Document (ICD) defining the technical interface between two systems or teams
 - Producing a System Requirements Specification (SRS) to formally capture requirements for development and testing
 
 **Anti-patterns (Don't Use For):**
+
 - User manuals or operator instructions (different document type with different audience and structure)
 - Marketing or sales materials describing product capabilities (not engineering specification language)
 
@@ -150,20 +153,20 @@ IEC 60034-1: Rotating Electrical Machines. EN 15194: Electric Power Assisted Cyc
 
 **4. Performance Requirements**
 
-| Req. ID | Requirement | Unit | Limit | Condition | Verify |
-|---------|-------------|------|-------|-----------|--------|
-| PR-01 | Continuous output power | W | ≥ 250 | 25°C ambient, rated voltage | T |
-| PR-02 | Peak output power (30s) | W | ≥ 500 | 25°C ambient, rated voltage | T |
-| PR-03 | No-load speed at 36V | RPM | 340 ± 20 | 36V ±2% input, no load | T |
-| PR-04 | Motor efficiency (rated load) | % | ≥ 82 | 250W output, 36V input | T |
-| PR-05 | Operating voltage range | V DC | 24 – 48 | Continuous operation | T |
-| PR-06 | Stall torque (peak) | N·m | ≥ 40 | 36V, locked rotor, ≤3s | T |
-| PR-07 | Thermal cutoff temperature | °C | ≤ 120 | Motor winding temperature | T |
-| PR-08 | Continuous torque | N·m | ≥ 22 | At rated 250W output | T |
-| PR-09 | Electromagnetic emissions | — | EN 55032 Class B | Full operating speed, rated load | T |
-| PR-10 | Vibration endurance | — | No performance degradation | IEC 60068-2-6: 10-55Hz, 0.15mm | T |
-| PR-11 | Operating life | km | ≥ 20,000 | Normal operating duty cycle | A |
-| PR-12 | Insulation resistance | MΩ | ≥ 100 | 500V DC megger, winding to case | T |
+| Req. ID | Requirement                   | Unit | Limit                      | Condition                        | Verify |
+| ------- | ----------------------------- | ---- | -------------------------- | -------------------------------- | ------ |
+| PR-01   | Continuous output power       | W    | ≥ 250                      | 25°C ambient, rated voltage      | T      |
+| PR-02   | Peak output power (30s)       | W    | ≥ 500                      | 25°C ambient, rated voltage      | T      |
+| PR-03   | No-load speed at 36V          | RPM  | 340 ± 20                   | 36V ±2% input, no load           | T      |
+| PR-04   | Motor efficiency (rated load) | %    | ≥ 82                       | 250W output, 36V input           | T      |
+| PR-05   | Operating voltage range       | V DC | 24 – 48                    | Continuous operation             | T      |
+| PR-06   | Stall torque (peak)           | N·m  | ≥ 40                       | 36V, locked rotor, ≤3s           | T      |
+| PR-07   | Thermal cutoff temperature    | °C   | ≤ 120                      | Motor winding temperature        | T      |
+| PR-08   | Continuous torque             | N·m  | ≥ 22                       | At rated 250W output             | T      |
+| PR-09   | Electromagnetic emissions     | —    | EN 55032 Class B           | Full operating speed, rated load | T      |
+| PR-10   | Vibration endurance           | —    | No performance degradation | IEC 60068-2-6: 10-55Hz, 0.15mm   | T      |
+| PR-11   | Operating life                | km   | ≥ 20,000                   | Normal operating duty cycle      | A      |
+| PR-12   | Insulation resistance         | MΩ   | ≥ 100                      | 500V DC megger, winding to case  | T      |
 
 **5. Verification Cross-Reference**
 
@@ -171,9 +174,9 @@ All PR requirements verified by Test (T) per condition column. PR-11 (operating 
 
 **6. Revision History**
 
-| Rev | Date | Description |
-|-----|------|-------------|
-| A | 2026-02-28 | Initial release |
+| Rev | Date       | Description     |
+| --- | ---------- | --------------- |
+| A   | 2026-02-28 | Initial release |
 
 ---
 

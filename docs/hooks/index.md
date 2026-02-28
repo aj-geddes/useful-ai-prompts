@@ -79,9 +79,10 @@ description: "7 production-ready hooks for automated validation, testing, format
                         <h3>Copy Hooks to Your Project</h3>
                         <p>Copy the hooks you need to your project's <code>.claude/hooks/</code> directory.</p>
                         <pre><code>cp -r hooks/security-scan /path/to/project/.claude/hooks/
+
 cp -r hooks/test-runner /path/to/project/.claude/hooks/</code></pre>
-                    </div>
-                </div>
+</div>
+</div>
 
                 <div class="usage-step">
                     <div class="step-number">2</div>
@@ -89,18 +90,19 @@ cp -r hooks/test-runner /path/to/project/.claude/hooks/</code></pre>
                         <h3>Configure in Settings</h3>
                         <p>Add hook configuration to <code>.claude/settings.json</code> in your project.</p>
                         <pre><code>{
-  "hooks": {
-    "PreToolUse": [{
-      "matcher": "Bash",
-      "hooks": [{
-        "type": "command",
-        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/security-scan/hook.sh"
-      }]
-    }]
-  }
+
+"hooks": {
+"PreToolUse": [{
+"matcher": "Bash",
+"hooks": [{
+"type": "command",
+"command": "$CLAUDE_PROJECT_DIR/.claude/hooks/security-scan/hook.sh"
+}]
+}]
+}
 }</code></pre>
-                    </div>
-                </div>
+</div>
+</div>
 
                 <div class="usage-step">
                     <div class="step-number">3</div>
@@ -181,6 +183,7 @@ cp -r hooks/test-runner /path/to/project/.claude/hooks/</code></pre>
             </div>
         </div>
     </div>
+
 </div>
 
 <style>

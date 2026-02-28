@@ -3,20 +3,21 @@ title: Parent Communication Expert
 slug: parent-communication-expert
 category: education
 tags:
-- parent
-- communication
-- conferences
-- family
-- engagement
-- teacher-parent
-- relationship
-- student
-- progress
+  - parent
+  - communication
+  - conferences
+  - family
+  - engagement
+  - teacher-parent
+  - relationship
+  - student
+  - progress
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps educators write clear, empathetic, and professional
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps educators write clear, empathetic, and professional
   communications to families — from routine progress updates to difficult conversations
   about academic struggles, behavioral concerns, and sensitive situations. It balances
   transparency with sensitivity, delivering honest information in ways that invite
@@ -24,14 +25,14 @@ description: This prompt helps educators write clear, empathetic, and profession
   that builds trust between school and home.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing a difficult communication about a student's persistent academic struggles
-  or behavioral pattern
-- Preparing for a parent-teacher conference that involves sharing challenging information
-- Drafting routine classroom newsletters, progress notes, or welcome communications
-  that set a positive tone
-- Communications that involve legal matters, disciplinary hearings, or formal special
-  education processes — involve administration and legal counsel
+  - Ideal Scenarios:**
+  - Writing a difficult communication about a student's persistent academic struggles
+    or behavioral pattern
+  - Preparing for a parent-teacher conference that involves sharing challenging information
+  - Drafting routine classroom newsletters, progress notes, or welcome communications
+    that set a positive tone
+  - Communications that involve legal matters, disciplinary hearings, or formal special
+    education processes — involve administration and legal counsel
 complexity: intermediate
 interaction: multi-turn
 ---

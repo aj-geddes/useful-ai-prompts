@@ -1,6 +1,7 @@
 # Customer Success Planning Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-success-planning-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Create comprehensive customer success plans that ensure customers achieve their 
 ## When to Use
 
 ### Ideal Scenarios
+
 - Designing customer success programs for SaaS or subscription businesses
 - Creating success plan templates for different customer segments
 - Building health scoring and early warning systems
@@ -26,6 +28,7 @@ Create comprehensive customer success plans that ensure customers achieve their 
 - Connecting customer success activities to retention and expansion outcomes
 
 ### Anti-Patterns (When Not to Use)
+
 - Transactional businesses without ongoing customer relationships
 - When customer base is too large for any human-touch success model
 - Single account crisis intervention (use escalation playbook)
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Customers: B2B SaaS companies, primarily mid-market (100-1000 employees), some enterprise
 2. Goals: Automate customer onboarding for their customers, reduce time-to-value, improve NPS
@@ -134,6 +138,7 @@ Your current 85% retention and 105% NRR indicate solid product-market fit but si
 Every customer account should have a success plan containing these sections:
 
 **Section 1: Customer Profile**
+
 - Company overview and business context
 - Primary stakeholders with roles and influence
 - Executive sponsor identification
@@ -141,6 +146,7 @@ Every customer account should have a success plan containing these sections:
 - Decision-making dynamics
 
 **Section 2: Success Definition**
+
 - Customer's stated goals (in their words)
 - Quantified success metrics with baselines
 - Timeline expectations for value realization
@@ -148,12 +154,14 @@ Every customer account should have a success plan containing these sections:
 - Risk factors specific to this account
 
 **Section 3: Milestone Roadmap**
+
 - Phase-by-phase plan with dates
 - Activities and responsible parties
 - Success criteria for each phase gate
 - Dependencies and blockers tracking
 
 **Section 4: Engagement History**
+
 - Meeting notes and decisions
 - Value documentation and proof points
 - Issue history and resolutions
@@ -166,12 +174,14 @@ Every customer account should have a success plan containing these sections:
 **Phase 1: Kickoff and Foundation (Weeks 1-2)**
 
 Activities:
+
 - Executive kickoff meeting with success criteria alignment
 - Technical kickoff with integration planning
 - Stakeholder mapping and communication plan
 - Baseline metrics documentation
 
 Success Criteria:
+
 - Success metrics defined and agreed
 - Integration plan approved
 - Project timeline confirmed
@@ -180,6 +190,7 @@ Success Criteria:
 CSM Time Investment: 4 hours
 
 Gainsight Automation:
+
 - Welcome email sequence triggered
 - Kickoff meeting scheduling CTA
 - Stakeholder identification survey sent
@@ -189,6 +200,7 @@ Gainsight Automation:
 **Phase 2: Implementation (Weeks 3-8)**
 
 Activities:
+
 - Integration deployment and testing
 - Workflow configuration with customer
 - Admin training sessions (2-3 sessions)
@@ -196,6 +208,7 @@ Activities:
 - Go-live preparation
 
 Success Criteria:
+
 - Integration live and validated
 - Core workflows configured
 - 100% of admins trained
@@ -204,6 +217,7 @@ Success Criteria:
 CSM Time Investment: 6 hours (Onboarding Specialist: 12 hours)
 
 Weekly Check-In Agenda:
+
 - Integration progress and blockers
 - Training completion status
 - Go-live readiness assessment
@@ -214,6 +228,7 @@ Weekly Check-In Agenda:
 **Phase 3: Launch and Adoption (Weeks 9-16)**
 
 Activities:
+
 - Go-live support and monitoring
 - End-user enablement resources deployed
 - First 30-day adoption review
@@ -221,6 +236,7 @@ Activities:
 - Workflow optimization based on usage data
 
 Success Criteria:
+
 - System live in production
 - 70%+ end-user activation within 30 days
 - First onboarding completed through platform
@@ -229,6 +245,7 @@ Success Criteria:
 CSM Time Investment: 3 hours
 
 Key Metrics to Monitor:
+
 - Daily active users trend
 - Onboarding completion rate
 - Support ticket volume
@@ -239,6 +256,7 @@ Key Metrics to Monitor:
 **Phase 4: Value Realization (Weeks 17-26)**
 
 Activities:
+
 - First quarterly business review (Week 16)
 - Value documentation and ROI calculation
 - Optimization recommendations
@@ -246,6 +264,7 @@ Activities:
 - Renewal planning initiation (if annual)
 
 Success Criteria:
+
 - Measurable improvement vs. baseline (target: 25%+ improvement on primary metric)
 - Customer confirms value in QBR
 - NPS 8+ (Promoter territory)
@@ -254,6 +273,7 @@ Success Criteria:
 CSM Time Investment: 4 hours (including QBR)
 
 QBR Agenda:
+
 1. Value delivered review (with data)
 2. Usage and adoption analysis
 3. Strategic priorities for next quarter
@@ -265,6 +285,7 @@ QBR Agenda:
 **Phase 5: Maturity and Growth (Ongoing)**
 
 Activities:
+
 - Ongoing quarterly business reviews
 - Annual success planning refresh
 - Expansion execution
@@ -272,6 +293,7 @@ Activities:
 - Renewal management
 
 Success Criteria:
+
 - Sustained adoption metrics
 - Continued value realization
 - Reference and advocacy participation
@@ -285,34 +307,34 @@ CSM Time Investment: 2 hours per month average
 
 **Enterprise Tier (1:15 ratio, $100K+ ARR):**
 
-| Touchpoint | Frequency | Format | Owner |
-|------------|-----------|--------|-------|
-| Executive Business Review | Quarterly | Video/In-person, 60 min | CSM + CS Leader |
-| Strategic Check-in | Monthly | Video, 30 min | CSM |
-| Health Check | Weekly | Email + Gainsight automated | CSM |
-| Product Update Briefing | Monthly | Email + optional call | CSM |
-| Executive Sponsor Touch | Quarterly | CSM Manager or VP | CS Leadership |
+| Touchpoint                | Frequency | Format                      | Owner           |
+| ------------------------- | --------- | --------------------------- | --------------- |
+| Executive Business Review | Quarterly | Video/In-person, 60 min     | CSM + CS Leader |
+| Strategic Check-in        | Monthly   | Video, 30 min               | CSM             |
+| Health Check              | Weekly    | Email + Gainsight automated | CSM             |
+| Product Update Briefing   | Monthly   | Email + optional call       | CSM             |
+| Executive Sponsor Touch   | Quarterly | CSM Manager or VP           | CS Leadership   |
 
 **Mid-Market Tier (1:40 ratio, $25-100K ARR):**
 
-| Touchpoint | Frequency | Format | Owner |
-|------------|-----------|--------|-------|
-| Business Review | Quarterly | Video, 45 min | CSM |
-| Check-in | Monthly | Email with response CTA | CSM |
-| Health Check | Bi-weekly | Gainsight automated | Automated + CSM review |
-| Product Update | Monthly | Email sequence | Automated |
-| Renewal Conversation | 90 days prior | Video, 30 min | CSM |
+| Touchpoint           | Frequency     | Format                  | Owner                  |
+| -------------------- | ------------- | ----------------------- | ---------------------- |
+| Business Review      | Quarterly     | Video, 45 min           | CSM                    |
+| Check-in             | Monthly       | Email with response CTA | CSM                    |
+| Health Check         | Bi-weekly     | Gainsight automated     | Automated + CSM review |
+| Product Update       | Monthly       | Email sequence          | Automated              |
+| Renewal Conversation | 90 days prior | Video, 30 min           | CSM                    |
 
 **Triggered Touchpoints (Both Tiers):**
 
-| Trigger | Response | Timeline |
-|---------|----------|----------|
-| Health score drops below 70 | CSM outreach call | Within 48 hours |
-| NPS Detractor (0-6) | CSM + Manager review, outreach | Within 24 hours |
-| Usage drop 30%+ week-over-week | Check-in email, then call if no response | Within 48 hours |
-| Support escalation | CSM notified, follow-up after resolution | Same day notification |
-| New stakeholder identified | Introduction email + meeting offer | Within 1 week |
-| Expansion trigger (usage growth, new use case) | CSM assessment + sales notification | Within 1 week |
+| Trigger                                        | Response                                 | Timeline              |
+| ---------------------------------------------- | ---------------------------------------- | --------------------- |
+| Health score drops below 70                    | CSM outreach call                        | Within 48 hours       |
+| NPS Detractor (0-6)                            | CSM + Manager review, outreach           | Within 24 hours       |
+| Usage drop 30%+ week-over-week                 | Check-in email, then call if no response | Within 48 hours       |
+| Support escalation                             | CSM notified, follow-up after resolution | Same day notification |
+| New stakeholder identified                     | Introduction email + meeting offer       | Within 1 week         |
+| Expansion trigger (usage growth, new use case) | CSM assessment + sales notification      | Within 1 week         |
 
 ---
 
@@ -320,13 +342,14 @@ CSM Time Investment: 2 hours per month average
 
 **Value Metrics by Customer Goal:**
 
-| Customer Goal | Baseline Metric | Success Metric | Target | Measurement Method |
-|---------------|-----------------|----------------|--------|-------------------|
-| Reduce onboarding time | Days to first value | Days to first value with platform | 50% reduction | Product analytics |
-| Improve activation | Activation rate | Activation rate through platform | 30% improvement | Product analytics |
-| Reduce support load | Tickets per 100 customers | Tickets with platform | 40% reduction | Integration with customer |
+| Customer Goal          | Baseline Metric           | Success Metric                    | Target          | Measurement Method        |
+| ---------------------- | ------------------------- | --------------------------------- | --------------- | ------------------------- |
+| Reduce onboarding time | Days to first value       | Days to first value with platform | 50% reduction   | Product analytics         |
+| Improve activation     | Activation rate           | Activation rate through platform  | 30% improvement | Product analytics         |
+| Reduce support load    | Tickets per 100 customers | Tickets with platform             | 40% reduction   | Integration with customer |
 
 **Value Documentation Process:**
+
 1. Capture baseline during kickoff (Week 1-2)
 2. First value check at 60 days post-launch
 3. Formal value calculation at QBR (Month 4)
@@ -334,6 +357,7 @@ CSM Time Investment: 2 hours per month average
 5. Create shareable value summary for renewal and references
 
 **Value Summary Template:**
+
 ```
 [CUSTOMER NAME] Success Summary
 
@@ -359,15 +383,16 @@ ROI Calculation:
 
 **Health Score Components:**
 
-| Component | Weight | Good (5) | At Risk (3) | Critical (1) |
-|-----------|--------|----------|-------------|--------------|
-| Product Usage | 30% | DAU 50%+ of licenses | DAU 25-50% | DAU less than 25% |
-| Feature Adoption | 20% | 70%+ core features | 40-70% | less than 40% |
-| Engagement | 20% | Responds within 48h, attends QBRs | Inconsistent response | No response 7+ days |
-| Satisfaction | 15% | NPS 8+ | NPS 6-7 | NPS 0-5 |
-| Support | 15% | Low ticket volume, quick resolution | Moderate volume | High volume or escalations |
+| Component        | Weight | Good (5)                            | At Risk (3)           | Critical (1)               |
+| ---------------- | ------ | ----------------------------------- | --------------------- | -------------------------- |
+| Product Usage    | 30%    | DAU 50%+ of licenses                | DAU 25-50%            | DAU less than 25%          |
+| Feature Adoption | 20%    | 70%+ core features                  | 40-70%                | less than 40%              |
+| Engagement       | 20%    | Responds within 48h, attends QBRs   | Inconsistent response | No response 7+ days        |
+| Satisfaction     | 15%    | NPS 8+                              | NPS 6-7               | NPS 0-5                    |
+| Support          | 15%    | Low ticket volume, quick resolution | Moderate volume       | High volume or escalations |
 
 **Score Interpretation:**
+
 - 85-100: Champion (expansion opportunity)
 - 70-84: Healthy (maintain current approach)
 - 50-69: At Risk (intervention required)
@@ -376,6 +401,7 @@ ROI Calculation:
 **Intervention Playbooks:**
 
 **At Risk (50-69 score):**
+
 1. CSM reviews account within 24 hours
 2. Identify primary health score driver(s)
 3. Outreach to primary contact within 48 hours
@@ -384,6 +410,7 @@ ROI Calculation:
 6. Weekly monitoring until score above 70 for 4 consecutive weeks
 
 **Critical (Below 50 score):**
+
 1. Immediate CSM and Manager review
 2. Executive sponsor outreach within 24 hours
 3. Emergency meeting scheduled within 3 business days
@@ -397,15 +424,16 @@ ROI Calculation:
 
 **Expansion Indicators:**
 
-| Indicator | Signal | Action |
-|-----------|--------|--------|
-| Usage at capacity | 90%+ license utilization | CSM proactive expansion discussion |
-| New use case mentioned | Customer asks about additional workflows | CSM discovery, Sales engagement |
-| New department interest | Request for additional admin or demo | Sales-led expansion |
-| Contract trigger | Usage-based overages accumulating | CSM proactive true-up discussion |
-| Strategic change | Customer announces growth, funding, acquisition | CSM strategic planning session |
+| Indicator               | Signal                                          | Action                             |
+| ----------------------- | ----------------------------------------------- | ---------------------------------- |
+| Usage at capacity       | 90%+ license utilization                        | CSM proactive expansion discussion |
+| New use case mentioned  | Customer asks about additional workflows        | CSM discovery, Sales engagement    |
+| New department interest | Request for additional admin or demo            | Sales-led expansion                |
+| Contract trigger        | Usage-based overages accumulating               | CSM proactive true-up discussion   |
+| Strategic change        | Customer announces growth, funding, acquisition | CSM strategic planning session     |
 
 **Expansion Process:**
+
 1. CSM identifies and validates expansion opportunity
 2. CSM conducts discovery to understand scope and timeline
 3. CSM briefs Account Executive with context and contacts
@@ -414,6 +442,7 @@ ROI Calculation:
 6. Expansion revenue attributed partially to CS
 
 **Growth Account Planning (For accounts with expansion potential):**
+
 - Annual strategic planning session (CSM + AE + Customer)
 - Multi-year roadmap aligned with customer's growth plans
 - Quarterly expansion pipeline review
@@ -424,18 +453,21 @@ ROI Calculation:
 **IMPLEMENTATION PRIORITIES**
 
 **Month 1:**
+
 - Deploy success plan template in Gainsight
 - Implement health score with automated calculation
 - Train CSMs on milestone-based engagement
 - Launch triggered playbooks for At Risk and Critical
 
 **Month 2:**
+
 - Implement value documentation process
 - Launch automated engagement cadences
 - Create QBR template and training
 - Deploy expansion identification triggers
 
 **Month 3:**
+
 - Full program rollout across all accounts
 - Begin measuring impact on retention and NRR
 - Optimize health score weights based on predictive accuracy

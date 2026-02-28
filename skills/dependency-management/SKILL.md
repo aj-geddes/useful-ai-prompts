@@ -25,6 +25,7 @@ Comprehensive dependency management across JavaScript/Node.js, Python, Ruby, Jav
 ### 1. **Package Manager Basics**
 
 #### Node.js / npm/yarn/pnpm
+
 ```bash
 # Initialize project
 npm init -y
@@ -51,6 +52,7 @@ npm list --depth=0  # Top-level only
 ```
 
 #### Python / pip/poetry
+
 ```bash
 # Using pip
 pip install requests
@@ -68,6 +70,7 @@ poetry check  # Verify lock file
 ```
 
 #### Ruby / Bundler
+
 ```bash
 # Initialize
 bundle init
@@ -92,17 +95,18 @@ bundle viz  # Generate dependency graph
 // package.json version ranges
 {
   "dependencies": {
-    "exact": "1.2.3",           // Exactly 1.2.3
-    "patch": "~1.2.3",          // >=1.2.3 <1.3.0
-    "minor": "^1.2.3",          // >=1.2.3 <2.0.0
-    "major": "*",               // Any version (avoid!)
-    "range": ">=1.2.3 <2.0.0",  // Explicit range
-    "latest": "latest"          // Always latest (dangerous!)
+    "exact": "1.2.3", // Exactly 1.2.3
+    "patch": "~1.2.3", // >=1.2.3 <1.3.0
+    "minor": "^1.2.3", // >=1.2.3 <2.0.0
+    "major": "*", // Any version (avoid!)
+    "range": ">=1.2.3 <2.0.0", // Explicit range
+    "latest": "latest" // Always latest (dangerous!)
   }
 }
 ```
 
 **Best Practices:**
+
 - `^` for libraries: allows backward-compatible updates
 - `~` for applications: more conservative, patch updates only
 - Exact versions for critical dependencies
@@ -111,6 +115,7 @@ bundle viz  # Generate dependency graph
 ### 3. **Dependency Lock Files**
 
 #### package-lock.json (npm)
+
 ```json
 {
   "name": "my-app",
@@ -131,6 +136,7 @@ bundle viz  # Generate dependency graph
 ```
 
 **Lock File Rules:**
+
 - ✅ Always commit lock files to version control
 - ✅ Use `npm ci` in CI/CD (faster, more reliable)
 - ✅ Regenerate if corrupted: delete and run `npm install`
@@ -138,6 +144,7 @@ bundle viz  # Generate dependency graph
 - ❌ Don't mix package managers (npm + yarn)
 
 #### poetry.lock (Python)
+
 ```toml
 [[package]]
 name = "requests"
@@ -155,6 +162,7 @@ charset-normalizer = ">=2,<3"
 ### 4. **Resolving Dependency Conflicts**
 
 #### Scenario: Version Conflict
+
 ```bash
 # Problem: Two packages require different versions
 # package-a requires lodash@^4.17.0
@@ -183,6 +191,7 @@ npx patch-package some-package
 ```
 
 #### Python Conflict Resolution
+
 ```bash
 # Find conflicts
 pip check
@@ -198,6 +207,7 @@ poetry add package-a package-b  # Will find compatible versions
 ### 5. **Security Vulnerability Management**
 
 #### npm Security Audit
+
 ```bash
 # Audit current dependencies
 npm audit
@@ -216,6 +226,7 @@ npm audit --audit-level=high  # Fail if high vulnerabilities
 ```
 
 #### Using Snyk
+
 ```bash
 # Install Snyk CLI
 npm install -g snyk
@@ -234,6 +245,7 @@ snyk wizard
 ```
 
 #### Python Security
+
 ```bash
 # Using safety
 pip install safety
@@ -248,15 +260,13 @@ pip-audit
 ### 6. **Monorepo Dependency Management**
 
 #### Workspace Structure (npm/yarn/pnpm)
+
 ```json
 // package.json (root)
 {
   "name": "my-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ]
+  "workspaces": ["packages/*", "apps/*"]
 }
 ```
 
@@ -275,6 +285,7 @@ npm run test --workspaces
 ```
 
 #### Lerna Example
+
 ```bash
 # Initialize lerna
 npx lerna init
@@ -302,13 +313,14 @@ lerna publish
   },
   "peerDependenciesMeta": {
     "react-dom": {
-      "optional": true  // Makes peer dependency optional
+      "optional": true // Makes peer dependency optional
     }
   }
 }
 ```
 
 **When to Use Peer Dependencies:**
+
 - Plugin architecture (webpack plugins, babel plugins)
 - React/Vue component libraries
 - Framework extensions
@@ -317,6 +329,7 @@ lerna publish
 ### 8. **Performance Optimization**
 
 #### Reduce Bundle Size
+
 ```bash
 # Analyze bundle size
 npm install -g bundle-buddy
@@ -334,6 +347,7 @@ npx yarn-deduplicate  # For yarn
 ```
 
 #### package.json Optimization
+
 ```json
 {
   "dependencies": {
@@ -381,6 +395,7 @@ jobs:
 ### 10. **Dependency Update Strategies**
 
 #### Automated Updates (Dependabot)
+
 ```yaml
 # .github/dependabot.yml
 version: 2
@@ -399,6 +414,7 @@ updates:
 ```
 
 #### Manual Update Strategy
+
 ```bash
 # Step 1: Check outdated
 npm outdated
@@ -420,6 +436,7 @@ npm view express@latest
 ## Best Practices
 
 ### ✅ DO
+
 - Commit lock files to version control
 - Use `npm ci` or equivalent in CI/CD pipelines
 - Regular dependency audits (weekly/monthly)
@@ -432,11 +449,12 @@ npm view express@latest
 - Review dependency licenses
 
 ### ❌ DON'T
+
 - Manually edit lock files
 - Mix package managers (npm + yarn in same project)
 - Use `npm install` in CI/CD (use `npm ci`)
 - Ignore security vulnerabilities
-- Use wildcards (*) for versions
+- Use wildcards (\*) for versions
 - Install packages globally when local install is possible
 - Commit node_modules to git
 - Use `latest` tag in production
@@ -446,11 +464,12 @@ npm view express@latest
 ## Common Patterns
 
 ### Pattern 1: Strict Version Control
+
 ```json
 {
   "dependencies": {
-    "critical-package": "1.2.3",  // Exact version
-    "stable-package": "~2.3.4"    // Patch updates only
+    "critical-package": "1.2.3", // Exact version
+    "stable-package": "~2.3.4" // Patch updates only
   },
   "engines": {
     "node": ">=16.0.0 <19.0.0",
@@ -460,15 +479,17 @@ npm view express@latest
 ```
 
 ### Pattern 2: Optional Dependencies
+
 ```json
 {
   "optionalDependencies": {
-    "fsevents": "^2.3.2"  // macOS only, won't break on other OS
+    "fsevents": "^2.3.2" // macOS only, won't break on other OS
   }
 }
 ```
 
 ### Pattern 3: Custom Registry
+
 ```bash
 # .npmrc
 registry=https://registry.npmjs.org/

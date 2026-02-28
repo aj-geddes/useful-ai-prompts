@@ -1,6 +1,7 @@
 # Option Evaluation Expert
 
 ## Metadata
+
 - **ID**: `decision-option-evaluation`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/General
@@ -18,6 +19,7 @@ Systematically evaluate multiple options using weighted criteria to make objecti
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Comparing 3+ alternatives for any decision
 - Making team decisions requiring stakeholder alignment
 - Documenting decision rationale for future reference
@@ -25,6 +27,7 @@ Systematically evaluate multiple options using weighted criteria to make objecti
 - Vendor or tool selection
 
 **Anti-patterns (when NOT to use):**
+
 - Binary yes/no decisions
 - Decisions with a single obvious best option
 - When all options are essentially equivalent
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Choosing between 4 project management tools for our team of 20. We need good collaboration features, reasonable price, easy adoption, and API integrations. We're a marketing team, not very technical."
 
 ### Output
@@ -123,29 +127,32 @@ Avoid:
 | **Total** | 100% | **7.7** | **7.8** | **7.25** | **7.05** |
 
 **Sensitivity Analysis**
+
 - If price becomes most important (35%): ClickUp wins (7.55)
 - If integrations are critical (30%): Asana wins (8.0)
 - Current weighting: Monday narrowly leads
 
 **Option Deep Dive**
 
-*Monday (Score: 7.8) - Recommended*
+_Monday (Score: 7.8) - Recommended_
+
 - Best: Visual interface, excellent for marketing workflows, strong collaboration
 - Concern: Higher price point ($12/user = $240/month)
 - Best for: Teams wanting polished, intuitive experience
 
-*Asana (Score: 7.7) - Strong Alternative*
+_Asana (Score: 7.7) - Strong Alternative_
+
 - Best: Robust integrations, proven at scale, good collaboration
 - Concern: Can feel complex for simple needs
 - Best for: Teams planning to grow or needing deep integrations
 
 **Recommendation: Monday.com**
 
-*Rationale*: Highest scores on your top two priorities (collaboration, ease of use). The price premium is justified by faster adoption and reduced training time for non-technical marketing team.
+_Rationale_: Highest scores on your top two priorities (collaboration, ease of use). The price premium is justified by faster adoption and reduced training time for non-technical marketing team.
 
-*Implementation*: Start with 30-day free trial, pilot with one team, expand if adoption metrics hit 80% active usage in week 2.
+_Implementation_: Start with 30-day free trial, pilot with one team, expand if adoption metrics hit 80% active usage in week 2.
 
-*Alternative*: If budget is constrained, ClickUp offers best value with reasonable collaboration features.
+_Alternative_: If budget is constrained, ClickUp offers best value with reasonable collaboration features.
 
 ---
 

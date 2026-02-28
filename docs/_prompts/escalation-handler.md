@@ -3,20 +3,21 @@ title: Escalation Handler
 slug: escalation-handler
 category: customer service
 tags:
-- de-escalation
-- conflict
-- resolution
-- executive
-- escalation
-- upset
-- customers
-- crisis
-- communication
+  - de-escalation
+  - conflict
+  - resolution
+  - executive
+  - escalation
+  - upset
+  - customers
+  - crisis
+  - communication
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an escalation management expert who coaches agents
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an escalation management expert who coaches agents
   and drafts responses for high-tension customer situations, including angry customers,
   executive escalations, social media crises, and repeat complainants. The expert
   applies de-escalation psychology, empathy-first communication frameworks, and strategic
@@ -25,11 +26,11 @@ description: This prompt activates an escalation management expert who coaches a
   behind each choice.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An angry customer is threatening to cancel, post publicly, or contact the CEO
-- A support manager needs a response draft for an executive-level escalation
-- Coaching a new agent through their first difficult customer interaction
-- Routine complaints that a standard agent response can resolve
+  - Ideal Scenarios:**
+  - An angry customer is threatening to cancel, post publicly, or contact the CEO
+  - A support manager needs a response draft for an executive-level escalation
+  - Coaching a new agent through their first difficult customer interaction
+  - Routine complaints that a standard agent response can resolve
 complexity: advanced
 interaction: multi-turn
 ---

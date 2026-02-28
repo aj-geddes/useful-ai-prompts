@@ -1,6 +1,7 @@
 # Cryptocurrency Trading Algorithm Platform
 
 ## Metadata
+
 - **ID**: `blockchain-crypto-trading-algorithm`
 - **Version**: 1.0.0
 - **Category**: Blockchain/Trading
@@ -18,6 +19,7 @@ Designs cryptocurrency trading systems including algorithmic strategies, executi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building automated trading systems for cryptocurrency markets
 - Developing quantitative trading strategies with backtesting
 - Designing trading infrastructure and execution systems
@@ -25,6 +27,7 @@ Designs cryptocurrency trading systems including algorithmic strategies, executi
 - Creating market making or arbitrage systems
 
 **Anti-patterns (When NOT to Use):**
+
 - Seeking financial advice or guaranteed profit strategies
 - Market manipulation schemes or wash trading
 - High-frequency trading without proper infrastructure
@@ -115,6 +118,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Building swing trading bot for top crypto pairs on Binance. Strategy: trend-following with momentum confirmation. Capital: $50K starting. Risk tolerance: moderate (max 3% daily drawdown). Need 24/7 operation. Programming experience: intermediate Python. Goals: 20-30% annual returns, systematic approach better than manual trading.
 
 ### Output
@@ -122,6 +126,7 @@ Building swing trading bot for top crypto pairs on Binance. Strategy: trend-foll
 **Cryptocurrency Swing Trading System**
 
 **Strategy Overview**
+
 ```
 Type: Multi-timeframe Momentum Swing Trading
 Edge: Capture medium-term trends with volatility filtering
@@ -139,6 +144,7 @@ Crypto markets are highly volatile and unpredictable.
 ```
 
 **Strategy Logic**
+
 ```python
 # Entry Conditions (ALL must be true)
 entry_conditions = {
@@ -166,6 +172,7 @@ position_size = min(
 ```
 
 **System Architecture**
+
 ```
 Data Layer:
 - Market data: Binance WebSocket (real-time OHLCV)
@@ -193,6 +200,7 @@ Infrastructure:
 ```
 
 **Risk Management Framework**
+
 ```
 Position Sizing:
 - Base risk: 2% of capital per trade
@@ -217,6 +225,7 @@ Correlation Controls:
 ```
 
 **Backtesting Validation**
+
 ```
 Data Requirements:
 - Minimum 2 years historical data (2022-2024)
@@ -241,6 +250,7 @@ Overfitting Prevention:
 ```
 
 **Implementation Phases**
+
 ```
 Phase 1 (Weeks 1-4): Foundation
 - Data pipeline setup and historical import
@@ -262,6 +272,7 @@ Phase 3 (Weeks 9-12): Live Trading
 ```
 
 **Operational Procedures**
+
 ```
 Daily Tasks:
 - Morning: Review overnight positions and alerts
@@ -288,6 +299,7 @@ Emergency Procedures:
 ```
 
 **Disclaimers**
+
 - This is not financial advice
 - Past backtested performance does not guarantee future results
 - Cryptocurrency trading involves significant risk of loss

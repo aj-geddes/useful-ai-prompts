@@ -1,6 +1,7 @@
 # Meeting Minutes Specialist
 
 ## Metadata
+
 - **ID**: `administrative-meeting-minutes-specialist`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ Transforms raw meeting notes, transcripts, or bullet points into professional, s
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Converting rough notes from a strategic planning meeting into formal minutes
 - Producing board meeting minutes for governance and compliance purposes
 - Creating project meeting documentation with clear owner assignments
 - Formalizing decisions made in informal discussions
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time transcription (needs live tool integration)
 - Meeting facilitation (different prompt)
 - Personal meeting notes for private use
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Notes from product sync March 5, 2026. Attendees: Sarah (PM), Mike (Eng Lead), Priya (Design), Tom (CTO). Discussed the mobile app redesign — Tom said we need to launch by April 15 or we miss the Q2 window. Mike said we can do it but need one more backend engineer. Sarah said she'd talk to HR about the contractor. Priya showed mocks for the new checkout flow — everyone liked them but Tom wanted the payment icons bigger. Mike will start the API work Monday. Next sync: March 12."
 
 ### Output
@@ -138,19 +142,19 @@ Designer Priya Okonkwo presented mockups for the new checkout flow. The design d
 
 **Decisions**
 
-| # | Decision | Made By |
-|---|----------|---------|
-| 1 | Target launch date confirmed: April 15, 2026 | Tom Reyes (CTO) |
-| 2 | Checkout flow design direction approved | Team consensus |
-| 3 | One additional backend contractor approved to be sourced | Tom Reyes (CTO) |
+| #   | Decision                                                 | Made By         |
+| --- | -------------------------------------------------------- | --------------- |
+| 1   | Target launch date confirmed: April 15, 2026             | Tom Reyes (CTO) |
+| 2   | Checkout flow design direction approved                  | Team consensus  |
+| 3   | One additional backend contractor approved to be sourced | Tom Reyes (CTO) |
 
 **Action Items**
 
-| Owner | Action | Due Date |
-|-------|--------|----------|
-| Sarah Chen | Contact HR to initiate backend contractor search | March 7, 2026 |
-| Priya Okonkwo | Revise checkout mockups: increase payment icon size | March 10, 2026 |
-| Mike Park | Begin backend API development for new checkout flow | March 10, 2026 (start Monday) |
+| Owner         | Action                                              | Due Date                      |
+| ------------- | --------------------------------------------------- | ----------------------------- |
+| Sarah Chen    | Contact HR to initiate backend contractor search    | March 7, 2026                 |
+| Priya Okonkwo | Revise checkout mockups: increase payment icon size | March 10, 2026                |
+| Mike Park     | Begin backend API development for new checkout flow | March 10, 2026 (start Monday) |
 
 **Next Meeting**: March 12, 2026 — Product Sync (standing cadence)
 

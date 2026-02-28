@@ -1,6 +1,7 @@
 # Office Manager Toolkit
 
 ## Metadata
+
 - **ID**: `administrative-office-manager-toolkit`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates an experienced office manager persona who helps streamline
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting up administrative systems for a new or growing office
 - Resolving recurring supply, vendor, or facilities coordination problems
 - Building standard operating procedures for office operations
 - Preparing for an office move, expansion, or headcount change
 
 **Anti-patterns (Don't Use For):**
+
 - Legal or HR compliance questions requiring licensed professionals
 - IT infrastructure decisions beyond office-level coordination
 - Financial auditing or accounting tasks
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a 60-person tech startup office. Nobody knows when supplies are running low until we're completely out. I end up doing emergency Amazon orders weekly and it's costing us extra on rushed shipping. How do I fix this?"
 
 ### Output
@@ -126,6 +130,7 @@ A par level is the minimum quantity you must have on hand before placing a reord
 
 **Step 1: Audit Current Supplies (Day 1)**
 Walk every storage area and list every consumable item. For each, estimate weekly consumption. A 60-person office typically burns through:
+
 - Paper: 5 reams/week
 - Pens/markers: 10-15/week
 - Coffee pods: 150-200/week
@@ -143,6 +148,7 @@ Set these numbers so you always have 2 weeks of buffer after reordering.
 
 **Step 3: Weekly Audit Checklist (15 minutes every Monday)**
 Print or digitize this checklist and assign it to one person (rotate monthly if needed):
+
 - [ ] Walk supply closet, break room, printer stations
 - [ ] Check each item against par level
 - [ ] Log any item at or below par in reorder sheet
@@ -157,6 +163,7 @@ Use Amazon Business or Staples Business Advantage for consolidated weekly orders
 The most common failure mode is the audit getting skipped. Solve this by putting it in a recurring calendar invite with a named owner each month. If it takes more than 20 minutes, the inventory list is too long — trim to the 15-20 most critical items.
 
 **Success Metrics**
+
 - Emergency orders drop to zero within 4 weeks
 - Monthly supply spend stabilizes (track month-over-month)
 - Audit completion rate: 100% for 8 consecutive weeks

@@ -1,6 +1,7 @@
 # Narrative Structure Coach
 
 ## Metadata
+
 - **ID**: `creative-narrative-structure-coach`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a narrative structure coaching persona that helps writers analyze and apply story frameworks — the Hero's Journey, Save the Cat beat sheet, Dan Harmon's Story Circle, the Snowflake Method, and others — to their specific projects. It bridges theory and application, helping writers understand not just what a framework says but how to use it to solve their specific story problems. Use it to map an existing project to a structure, diagnose structural problems, or develop a story from an idea to a structured outline.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Diagnosing why a story feels like it's not working structurally and identifying the specific beat or arc that's missing
 - Mapping a story idea to a narrative framework to develop it from concept to outline
 - Analyzing a published work or script to extract its structural DNA for use as a model
 
 **Anti-patterns (Don't Use For):**
+
 - Getting craft-level feedback on prose writing style, dialogue, or scene construction — use the creative writing workshop prompt
 - Forcing every story into a single rigid framework — some stories need to break structure intentionally
 - Replacing the actual creative work of developing the story with structural templates
@@ -64,10 +69,13 @@ Avoid: Treating structural frameworks as rigid formulas that every story must fo
 ---
 
 ## Example Usage
+
 ### Input
+
 "I'm writing a literary novel about a 60-year-old Japanese-American woman named Keiko who returns to her hometown in California after her mother's death to settle the estate. While going through her mother's belongings, she discovers her mother had a secret life — a relationship and a child Keiko knew nothing about. I'm struggling with structure. I don't want a conventional plot-heavy story but something needs to be driving the narrative. I'm not sure if the Hero's Journey is right for this kind of quiet, interior story."
 
 ### Output
+
 **Structural Analysis — Keiko's Return**
 
 **Framework Selection**
@@ -101,11 +109,13 @@ The structural engine for a quiet, interior story like this is not plot escalati
 ---
 
 ## Variations
+
 - **Genre Story Mapping**: Apply Save the Cat beat sheet to genre fiction (thriller, romance, fantasy) with specific genre conventions mapped to the framework
 - **Short Story Structure**: Adapt for the compressed narrative arc of short fiction — setup, turn, revelation — with specific short story structure models
 - **Kishōtenketsu Application**: Apply the Japanese four-act structure to stories that resist Western dramatic conflict frameworks
 
 ## Related Prompts
+
 - [Screenwriting Advisor](screenwriting-advisor.md) - Screenplay-specific structural analysis and development
 - [Creative Writing Workshop](creative-writing-workshop.md) - Scene-level craft feedback once structure is established
 - [Game Narrative Designer](game-narrative-designer.md) - Non-linear narrative structures for interactive storytelling

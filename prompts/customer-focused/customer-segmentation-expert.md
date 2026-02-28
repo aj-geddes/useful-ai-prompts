@@ -1,6 +1,7 @@
 # Customer Segmentation Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-segmentation-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Create powerful customer segments that enable targeted marketing, personalized e
 ## When to Use
 
 ### Ideal Scenarios
+
 - Developing customer segmentation strategy for marketing personalization
 - Optimizing resource allocation across different customer types
 - Designing tiered service or pricing models
@@ -26,6 +28,7 @@ Create powerful customer segments that enable targeted marketing, personalized e
 - Building customer lifetime value optimization strategies
 
 ### Anti-Patterns (When Not to Use)
+
 - When customer base is too small for meaningful segments (fewer than 500 customers)
 - Single product with homogeneous customer needs
 - Purely demographic analysis without behavioral data
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Products: CRM software platform with tiered pricing (Starter, Professional, Enterprise)
 2. Data available: Company size, industry, product usage (features, frequency, users), purchase history, support tickets, NPS scores
@@ -152,14 +156,14 @@ Overlay of current and potential value to inform resource allocation and pricing
 
 **SEGMENT SUMMARY**
 
-| Segment | Size | MRR Share | Avg MRR | Retention | Key Trait |
-|---------|------|-----------|---------|-----------|-----------|
-| Power Users | 8% | 28% | $2,850 | 95% | High adoption, high engagement, advocates |
-| Growth Champions | 18% | 32% | $1,450 | 90% | Increasing usage, expanding seats, ambitious |
-| Steady Core | 35% | 25% | $580 | 88% | Consistent usage, satisfied, low-touch |
-| Underutilizers | 25% | 12% | $390 | 72% | Low adoption, potential untapped |
-| At Risk | 10% | 3% | $245 | 55% | Declining engagement, churn indicators |
-| Dormant | 4% | less than 1% | $180 | 35% | Minimal activity, likely to churn |
+| Segment          | Size | MRR Share    | Avg MRR | Retention | Key Trait                                    |
+| ---------------- | ---- | ------------ | ------- | --------- | -------------------------------------------- |
+| Power Users      | 8%   | 28%          | $2,850  | 95%       | High adoption, high engagement, advocates    |
+| Growth Champions | 18%  | 32%          | $1,450  | 90%       | Increasing usage, expanding seats, ambitious |
+| Steady Core      | 35%  | 25%          | $580    | 88%       | Consistent usage, satisfied, low-touch       |
+| Underutilizers   | 25%  | 12%          | $390    | 72%       | Low adoption, potential untapped             |
+| At Risk          | 10%  | 3%           | $245    | 55%       | Declining engagement, churn indicators       |
+| Dormant          | 4%   | less than 1% | $180    | 35%       | Minimal activity, likely to churn            |
 
 ---
 
@@ -168,6 +172,7 @@ Overlay of current and potential value to inform resource allocation and pricing
 **Power Users (8% of customers, 28% of revenue)**
 
 Profile:
+
 - Typically mid-market companies (100-500 employees)
 - Using 70%+ of available features
 - Multiple departments using the platform
@@ -191,6 +196,7 @@ Value Insight: **Currently underpriced relative to value realized. Strong expans
 **Growth Champions (18% of customers, 32% of revenue)**
 
 Profile:
+
 - Mix of SMB scaling up and mid-market expanding usage
 - Feature adoption increasing month-over-month
 - Adding seats regularly
@@ -214,6 +220,7 @@ Value Insight: **Highest expansion potential. Investment in success drives signi
 **Steady Core (35% of customers, 25% of revenue)**
 
 Profile:
+
 - Consistent usage patterns over time
 - Moderate feature adoption (40-60%)
 - Stable seat count
@@ -237,6 +244,7 @@ Value Insight: **Profitable due to low cost-to-serve. Focus on retention and lig
 **Underutilizers (25% of customers, 12% of revenue)**
 
 Profile:
+
 - Using less than 30% of available features
 - Low daily active user percentage
 - Often on lower tiers despite having larger teams
@@ -260,6 +268,7 @@ Value Insight: **Significant untapped potential. Activation investment could dou
 **At Risk (10% of customers, 3% of revenue)**
 
 Profile:
+
 - Declining engagement metrics
 - Decreasing active users
 - Increasing support complaints
@@ -282,13 +291,13 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 
 **TARGETING STRATEGIES**
 
-| Segment | Marketing Focus | Product Priority | Service Model | Pricing Strategy |
-|---------|-----------------|------------------|---------------|------------------|
-| Power Users | Advocacy programs, beta access, community leadership | Advanced features, API capabilities, customization | Dedicated CSM, priority support | Premium pricing, custom contracts, value-based |
-| Growth Champions | Success content, expansion offers, training | Growth-enabling features, onboarding optimization | Proactive CSM, training resources | Clear upgrade path, growth incentives |
-| Steady Core | Retention focus, light feature education | Stability, ease of use | Tech-touch, self-service | Standard pricing, loyalty rewards |
-| Underutilizers | Activation campaigns, value demonstration | Adoption features, guided tours | Activation-focused outreach | Trial of higher tiers, training incentives |
-| At Risk | Win-back campaigns, satisfaction focus | Issue resolution, feedback implementation | Intervention CSM, executive outreach | Retention offers, commitment incentives |
+| Segment          | Marketing Focus                                      | Product Priority                                   | Service Model                        | Pricing Strategy                               |
+| ---------------- | ---------------------------------------------------- | -------------------------------------------------- | ------------------------------------ | ---------------------------------------------- |
+| Power Users      | Advocacy programs, beta access, community leadership | Advanced features, API capabilities, customization | Dedicated CSM, priority support      | Premium pricing, custom contracts, value-based |
+| Growth Champions | Success content, expansion offers, training          | Growth-enabling features, onboarding optimization  | Proactive CSM, training resources    | Clear upgrade path, growth incentives          |
+| Steady Core      | Retention focus, light feature education             | Stability, ease of use                             | Tech-touch, self-service             | Standard pricing, loyalty rewards              |
+| Underutilizers   | Activation campaigns, value demonstration            | Adoption features, guided tours                    | Activation-focused outreach          | Trial of higher tiers, training incentives     |
+| At Risk          | Win-back campaigns, satisfaction focus               | Issue resolution, feedback implementation          | Intervention CSM, executive outreach | Retention offers, commitment incentives        |
 
 ---
 
@@ -297,6 +306,7 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 **Goal: Move customers up the value ladder**
 
 **Underutilizer to Steady Core/Growth Champion:**
+
 - Trigger: Less than 30% feature adoption after 90 days
 - Intervention: Activation campaign with personalized training, feature discovery sessions
 - Success Metric: Feature adoption increase to 50%+
@@ -304,6 +314,7 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 - Expected Outcome: 40% conversion, 2x MRR increase
 
 **Steady Core to Growth Champion:**
+
 - Trigger: Business growth indicators (hiring, funding, new locations)
 - Intervention: Growth assessment call, expansion use case presentation
 - Success Metric: Seat expansion or tier upgrade
@@ -311,6 +322,7 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 - Expected Outcome: 25% conversion, 80% MRR increase
 
 **Growth Champion to Power User:**
+
 - Trigger: 80%+ feature adoption, power user behaviors
 - Intervention: Advanced feature preview, integration consultation, community invitation
 - Success Metric: API activation, advanced tier adoption
@@ -318,6 +330,7 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 - Expected Outcome: 30% conversion, 2x MRR increase
 
 **At Risk Recovery:**
+
 - Trigger: Health score decline, NPS drop, usage decrease
 - Intervention: Executive outreach, root cause analysis, recovery plan
 - Success Metric: Engagement stabilization, NPS recovery
@@ -329,24 +342,28 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 **IMPLEMENTATION ROADMAP**
 
 **Phase 1: Foundation (Weeks 1-4)**
+
 - Build segmentation data model in analytics platform
 - Calculate segment assignments for all accounts
 - Validate segments with CS and Sales leadership
 - Document segment criteria and refresh methodology
 
 **Phase 2: Operationalize (Weeks 5-8)**
+
 - Configure CRM with segment tagging and automation triggers
 - Create email tracks by segment
 - Train CS team on segment-specific playbooks
 - Assign accounts to appropriate service tiers
 
 **Phase 3: Activate (Weeks 9-12)**
+
 - Launch segment-specific marketing campaigns
 - Implement migration interventions for priority pathways
 - Deploy segment dashboards for leadership visibility
 - Begin pricing strategy adjustments for new customers
 
 **Phase 4: Optimize (Ongoing)**
+
 - Monthly segment performance reviews
 - Quarterly segment criteria refinement
 - Migration pathway optimization based on results
@@ -358,14 +375,15 @@ Value Insight: **Requires intervention. Win-back investment justified for higher
 
 **Segment Performance KPIs:**
 
-| Metric | Power Users | Growth | Steady | Underutilizers | At Risk |
-|--------|-------------|--------|--------|----------------|---------|
-| Retention Target | 97% | 92% | 90% | 80% | 65% |
-| Expansion Rate | 30% | 25% | 5% | 15% | 0% |
-| NPS Target | 65+ | 50+ | 35+ | 25+ | Track only |
-| Cost to Serve Ratio | less than 8% | less than 12% | less than 5% | less than 10% | Varies |
+| Metric              | Power Users  | Growth        | Steady       | Underutilizers | At Risk    |
+| ------------------- | ------------ | ------------- | ------------ | -------------- | ---------- |
+| Retention Target    | 97%          | 92%           | 90%          | 80%            | 65%        |
+| Expansion Rate      | 30%          | 25%           | 5%           | 15%            | 0%         |
+| NPS Target          | 65+          | 50+           | 35+          | 25+            | Track only |
+| Cost to Serve Ratio | less than 8% | less than 12% | less than 5% | less than 10%  | Varies     |
 
 **Migration Tracking:**
+
 - Monthly segment movement analysis
 - Conversion rates by intervention type
 - ROI of segment-specific investments

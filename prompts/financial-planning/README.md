@@ -5,10 +5,12 @@ This category contains prompts designed to help individuals take control of thei
 ## Available Prompts
 
 ### Budgeting and Money Management
+
 - **[Personal Budget Optimizer](./personal-budget-optimizer.md)** - Create realistic budgets and sustainable money management systems
 - **[Debt Elimination Strategist](./debt-elimination-strategist.md)** - Strategic debt payoff plans for faster financial freedom
 
 ### Investment and Wealth Building
+
 - **[Investment Planning Advisor](./investment-planning-advisor.md)** - Personalized investment strategies and portfolio planning
 - **[Retirement Planning Specialist](./retirement-planning-specialist.md)** - Comprehensive retirement income planning and financial independence
 

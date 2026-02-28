@@ -1,6 +1,7 @@
 # Security Architecture Reviewer
 
 ## Metadata
+
 - **ID**: `security-security-architecture-reviewer`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a security architecture reviewer who evaluates system and 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing a proposed system architecture or major feature design before development begins
 - Evaluating architectural changes such as microservices migration, API gateway addition, or cloud lift-and-shift
 - Assessing security control coverage and defense-in-depth for a new or existing system design
 
 **Anti-patterns (Don't Use For):**
+
 - Code-level security review (use SAST tools or code review process)
 - Compliance audit of completed systems (use compliance-gap-analyzer for control mapping)
 
@@ -130,14 +133,14 @@ Avoid:
 
 **Architecture Inventory**
 
-| Component | Trust Level | Internet Exposed |
-|-----------|-------------|-----------------|
-| React SPA | Untrusted (client-controlled) | Yes |
-| AWS API Gateway | Boundary enforcement | Yes (entry point) |
-| Node.js GraphQL API | Semi-trusted | No (behind Gateway) |
-| PostgreSQL (RDS) | Trusted | No |
-| Redis (cache) | Trusted | No |
-| Admin interface | Privileged | Via VPN only |
+| Component           | Trust Level                   | Internet Exposed    |
+| ------------------- | ----------------------------- | ------------------- |
+| React SPA           | Untrusted (client-controlled) | Yes                 |
+| AWS API Gateway     | Boundary enforcement          | Yes (entry point)   |
+| Node.js GraphQL API | Semi-trusted                  | No (behind Gateway) |
+| PostgreSQL (RDS)    | Trusted                       | No                  |
+| Redis (cache)       | Trusted                       | No                  |
+| Admin interface     | Privileged                    | Via VPN only        |
 
 **Attack Surface**
 
@@ -145,13 +148,13 @@ External: API Gateway endpoints (GraphQL introspection, mutations, queries), aut
 
 **Critical Findings**
 
-| # | Finding | Component | Severity |
-|---|---------|-----------|----------|
-| 1 | GraphQL introspection enabled in production | GraphQL API | High — exposes full schema to attackers |
-| 2 | Admin functionality in same GraphQL schema as customer API | GraphQL API | High — authorization boundary risk |
-| 3 | Redis cache may store session tokens without TTL | Redis | High — session persistence after logout |
-| 4 | Batch query / query depth not limited | GraphQL API | Medium — DoS via deeply nested queries |
-| 5 | ECS tasks may have overly broad IAM role | AWS ECS | Medium — lateral movement if container compromised |
+| #   | Finding                                                    | Component   | Severity                                           |
+| --- | ---------------------------------------------------------- | ----------- | -------------------------------------------------- |
+| 1   | GraphQL introspection enabled in production                | GraphQL API | High — exposes full schema to attackers            |
+| 2   | Admin functionality in same GraphQL schema as customer API | GraphQL API | High — authorization boundary risk                 |
+| 3   | Redis cache may store session tokens without TTL           | Redis       | High — session persistence after logout            |
+| 4   | Batch query / query depth not limited                      | GraphQL API | Medium — DoS via deeply nested queries             |
+| 5   | ECS tasks may have overly broad IAM role                   | AWS ECS     | Medium — lateral movement if container compromised |
 
 **Top 5 Design Recommendations**
 

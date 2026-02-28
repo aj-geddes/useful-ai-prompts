@@ -1,6 +1,7 @@
 # Skill Gap Analyzer
 
 ## Metadata
+
 - **ID**: `career-skill-gap-analyzer`
 - **Version**: 1.0.0
 - **Category**: Career Development
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Identifies skill gaps between current capabilities and career goals through systematic assessment, market analysis, and prioritization. Creates actionable development plans aligned with career advancement through data-driven gap analysis and industry benchmarking.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing readiness for target roles or promotions
 - Identifying development priorities for career advancement
 - Planning career transitions to new industries or functions
@@ -24,6 +27,7 @@ Identifies skill gaps between current capabilities and career goals through syst
 - Evaluating skills against market demand
 
 **Anti-Patterns (When NOT to Use):**
+
 - Detailed learning plan creation (use learning plan prompts)
 - Certification preparation (use certification-specific guidance)
 - Resume writing or job applications
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a Product Manager with 4 years of experience at a mid-size B2B SaaS company. I want to become a Director of Product at a growth-stage startup within 2 years. My strengths are user research, roadmap planning, and stakeholder management. My weaknesses include basic data analysis skills, limited technical depth, and no team leadership experience. I'm in the B2B SaaS industry."
 
 ### Output
@@ -116,28 +121,30 @@ Avoid:
 
 ### Current vs. Target Comparison
 
-| Skill Area | Current | Director Level | Gap |
-|------------|---------|----------------|-----|
-| User Research | 8/10 | 7/10 | None |
-| Roadmap Planning | 7/10 | 8/10 | Minor |
-| Stakeholder Mgmt | 7/10 | 9/10 | Moderate |
-| Data Analysis | 4/10 | 8/10 | **Critical** |
-| Technical Depth | 5/10 | 7/10 | **Significant** |
-| Team Leadership | 3/10 | 9/10 | **Critical** |
-| Strategic Planning | 5/10 | 8/10 | **Significant** |
-| Executive Communication | 6/10 | 9/10 | Significant |
+| Skill Area              | Current | Director Level | Gap             |
+| ----------------------- | ------- | -------------- | --------------- |
+| User Research           | 8/10    | 7/10           | None            |
+| Roadmap Planning        | 7/10    | 8/10           | Minor           |
+| Stakeholder Mgmt        | 7/10    | 9/10           | Moderate        |
+| Data Analysis           | 4/10    | 8/10           | **Critical**    |
+| Technical Depth         | 5/10    | 7/10           | **Significant** |
+| Team Leadership         | 3/10    | 9/10           | **Critical**    |
+| Strategic Planning      | 5/10    | 8/10           | **Significant** |
+| Executive Communication | 6/10    | 9/10           | Significant     |
 
 ## PRIORITIZED GAPS
 
 ### Critical Priority (Address First)
 
 **1. Team Leadership and Management**
+
 - **Gap:** No direct management experience
 - **Director Requirement:** Lead team of 3-8 PMs
 - **Market Demand:** 95% of Director postings require 2+ years management
 - **Impact if not addressed:** Disqualifies from most Director roles
 
 **2. Data Analysis and Metrics**
+
 - **Gap:** Basic data skills, limited SQL/analytics
 - **Director Requirement:** Drive data-informed strategy
 - **Market Demand:** "Data-driven" appears in 85% of senior PM roles
@@ -146,11 +153,13 @@ Avoid:
 ### High Priority (Address Within 12 Months)
 
 **3. Strategic Planning**
+
 - **Gap:** Tactical execution strong, strategy developing
 - **Director Requirement:** Own product strategy and vision
 - **Market Demand:** Strategy and vision in 90% of Director postings
 
 **4. Technical Depth**
+
 - **Gap:** Relies on engineers for technical decisions
 - **Director Requirement:** Technical credibility with engineering leaders
 - **Market Demand:** Technical background preferred in 70% of SaaS roles
@@ -158,6 +167,7 @@ Avoid:
 ## MARKET CONTEXT
 
 **B2B SaaS Director PM Requirements (50+ postings analyzed):**
+
 - Team leadership: 95% require
 - Data/analytics: 85% require
 - Strategic planning: 90% require
@@ -167,24 +177,27 @@ Avoid:
 ## DEVELOPMENT RECOMMENDATIONS
 
 ### Immediate Actions (Next 90 Days)
+
 1. **Leadership:** Volunteer to mentor PM or lead cross-functional project
 2. **Data:** Complete SQL fundamentals course, use data in every decision
 3. **Strategic:** Request involvement in annual planning process
 
 ### 6-Month Milestones
+
 1. **Leadership:** Lead significant initiative with dotted-line reports
 2. **Data:** Build product dashboard, present data-driven recommendations
 3. **Technical:** Complete system design basics, participate in architecture discussions
 
 ## SUCCESS METRICS
 
-| Gap | Current | 6-Month Target | 12-Month Target |
-|-----|---------|----------------|-----------------|
-| Leadership | No reports | Lead project team | 1+ direct report |
-| Data | Basic | SQL proficient | Dashboard owner |
-| Strategic | Tactical | Strategy contributor | Strategy owner |
+| Gap        | Current    | 6-Month Target       | 12-Month Target  |
+| ---------- | ---------- | -------------------- | ---------------- |
+| Leadership | No reports | Lead project team    | 1+ direct report |
+| Data       | Basic      | SQL proficient       | Dashboard owner  |
+| Strategic  | Tactical   | Strategy contributor | Strategy owner   |
 
 **Readiness Assessment:**
+
 - Current: 60% ready for Director role
 - 12-Month: 90% ready (strong candidate)
 - 18-Month: Full readiness, promotion or external move
@@ -192,6 +205,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Skill Development Planner](skill-development-planner.md) - Create detailed learning plans for identified gaps
 - [Career Advancement Strategist](career-advancement-strategist.md) - Develop comprehensive career advancement strategy
 - [Interview Preparation Coach](interview-preparation-coach.md) - Prepare for promotion or job interviews

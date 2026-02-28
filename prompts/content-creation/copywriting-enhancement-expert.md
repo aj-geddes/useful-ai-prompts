@@ -1,6 +1,7 @@
 # Copywriting Enhancement Expert
 
 ## Metadata
+
 - **ID**: `content-creation-copywriting-enhancement`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Need email copy for a productivity app launch. Target: overwhelmed professionals who've tried other tools. Goal: free trial signup.
 ```
 
 ### Output
+
 ```
 **Subject Line Options**:
 1. "The productivity tool that actually sticks"

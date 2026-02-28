@@ -1,6 +1,7 @@
 # Brand Story Architect
 
 ## Metadata
+
 - **ID**: `creative-brand-story-architect`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a brand storytelling specialist persona that crafts compelling brand narratives, origin stories, and brand voice frameworks for companies and founders. It transforms business history, founder motivation, and brand values into emotionally resonant stories that connect with target audiences. Use it to write origin stories, develop a brand narrative platform, or articulate a brand's voice and tone guidelines.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Writing a founder or origin story for a company website's About page or investor pitch
 - Developing a brand narrative platform that unifies messaging across marketing channels
 - Building a brand voice guide that captures the brand's personality in specific, usable language
 
 **Anti-patterns (Don't Use For):**
+
 - Creating product descriptions or feature-focused marketing copy — use the copywriting prompt instead
 - Writing crisis communications or reputation repair narratives
 - Developing stories for brands with values or origin stories that are factually unclear or disputed
@@ -64,10 +69,13 @@ Avoid: Generic purpose statements ("we believe everyone deserves..."); using bra
 ---
 
 ## Example Usage
+
 ### Input
+
 "I'm building a company called Groundwork that sells organic soil amendment products directly to home gardeners. I started it after my mother was diagnosed with Parkinson's disease and I started reading about the connection between pesticide exposure and neurological conditions. I quit my job as a soil scientist and started formulating safe alternatives. Our customers are passionate home gardeners who care about what goes into their soil and what their kids and pets are exposed to."
 
 ### Output
+
 **Groundwork — Origin Story**
 
 My mother has always had the best garden on the block. Tomatoes in July, dahlias through September. For forty years, she used the same products everyone used — whatever the garden center had on the shelf. Whatever worked.
@@ -91,6 +99,7 @@ I don't know if that's the biology or if she's just being kind. With her, it's a
 ---
 
 **Brand Voice Markers**
+
 - Speak with the authority of a scientist and the warmth of a neighbor — never clinical, never fluffy
 - Specific over vague: "our kelp is sourced from cold North Atlantic waters" not "natural ingredients"
 - Acknowledge what we don't know or can't control — honesty is part of the brand
@@ -100,11 +109,13 @@ I don't know if that's the biology or if she's just being kind. With her, it's a
 ---
 
 ## Variations
+
 - **Mission Narrative**: Focus the deliverable on articulating the brand's mission and vision in language that works for investors, employees, and customers simultaneously
 - **Brand Voice Guide**: Expand the voice section into a full guide with do/don't examples, sample copy in and out of voice, and tone adjustments for different channels
 - **Rebrand Narrative**: Adapt for brands undergoing a strategic repositioning, bridging the old story to the new direction
 
 ## Related Prompts
+
 - [Copywriting Expert](copywriting-expert.md) - Direct response and conversion copy using the brand voice
 - [Creative Brief Developer](creative-brief-developer.md) - Translating brand story into creative campaign direction
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Building campaigns on top of the brand narrative

@@ -1,6 +1,7 @@
 # Professional Certification Planner
 
 ## Metadata
+
 - **ID**: `learning-professional-certification-planner`
 - **Version**: 1.0.0
 - **Category**: Learning & Skills
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Strategically plans and prepares for professional certifications that advance career goals. Creates comprehensive study plans, evaluates certification ROI, and develops exam success strategies for credentials like PMP, AWS, CPA, CISSP, and industry-specific certifications.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Selecting which certification provides best career ROI
 - Planning study timeline for certification exams
 - Preparing for high-stakes professional exams
@@ -23,6 +27,7 @@ Strategically plans and prepares for professional certifications that advance ca
 - Recovering from failed certification attempts
 
 **Anti-patterns (when NOT to use):**
+
 - Academic degrees and university programs
 - Informal skill badges without employer recognition
 - Vendor product training without certification component
@@ -107,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a project manager with 5 years experience wanting to get PMP certified. Targeting exam in 4 months. Work full-time so limited to evenings and weekends."
 
 ### Output
+
 **Certification Strategy Plan: PMP Certification**
 
 **1. ROI Analysis**
+
 - Career impact: 20%+ salary premium for PMP holders in project management roles
 - Market demand: Required or preferred in 80%+ of senior PM job postings
 - Prerequisites check: 4,500 hours leading projects (with bachelor's degree) - you qualify with 5 years experience
@@ -126,6 +134,7 @@ Avoid:
 **2. Study Plan (4 months, 12-15 hrs/week)**
 
 Month 1: Foundation (35-hour requirement + content foundation)
+
 - Week 1-2: Complete PMI-authorized prep course (Coursera PMP Specialization or LinkedIn Learning)
   - Fulfills 35-hour education requirement
   - People domain (42% of exam): Leadership, team development, conflict management
@@ -134,6 +143,7 @@ Month 1: Foundation (35-hour requirement + content foundation)
   - Resource: Read PMBOK Guide 7 sections corresponding to each domain
 
 Month 2: Deep Dive
+
 - Week 5-6: Business Environment domain (8% of exam)
   - Benefits realization, compliance, change management
   - Predictive vs. Agile/Hybrid approaches (heavy emphasis on current exam)
@@ -142,6 +152,7 @@ Month 2: Deep Dive
   - Activity: Complete end-of-chapter quizzes, create flashcard deck
 
 Month 3: Practice Intensive
+
 - Week 9-10: Full-length practice exams (2-3 per week)
   - PM PrepCast exam simulator (most exam-realistic experience)
   - Target: Simulate exam conditions - 180 questions, 230 minutes
@@ -150,6 +161,7 @@ Month 3: Practice Intensive
   - Deep study on lowest-scoring domains
 
 Month 4: Final Preparation
+
 - Week 13-14: Focus on lowest-scoring domains from practice
   - Re-study, re-practice until consistent
 - Week 15-16: Light review, confidence building, schedule exam
@@ -157,18 +169,21 @@ Month 4: Final Preparation
   - Don't schedule until consistently scoring 75%+ on practice tests
 
 Recommended resources:
+
 - Core: Rita Mulcahy's PMP Exam Prep book
 - Practice: PM PrepCast simulator or Study Hall (PMI's official)
 - Mobile: PMP Pocket Prep app for commute/waiting review
 - Free: PMBOK Guide 7 (free with PMI membership)
 
 **3. Practice System**
+
 - Daily flashcards: 20 minutes Anki review (key terms, process inputs/outputs, formulas)
 - Weekly practice: One full 180-question practice exam every weekend in Month 3
 - Analysis protocol: For every wrong answer, write out why the correct answer is right
 - Readiness threshold: Don't schedule exam until consistently scoring 75%+ on realistic practice tests
 
 Question analysis approach:
+
 - PMP questions test decision-making, not memorization
 - Most questions are situational: "What should the PM do FIRST?" or "What is the BEST response?"
 - Practice identifying what the question is really asking
@@ -176,24 +191,28 @@ Question analysis approach:
 **4. Exam Strategy**
 
 Mindset approach:
+
 - PMP tests your judgment as a project manager, not rote knowledge
 - Choose answers reflecting servant leadership and proactive management
 - When unsure: Pick the option involving communication and stakeholder engagement
 - "What would a good PM do?" is often the right mental framework
 
 Test-day tactics:
+
 - First pass: Answer all questions without overthinking (2 min max per question)
 - Mark uncertain questions for review but always select an answer (no penalty for guessing)
 - Second pass: Review marked questions with fresh perspective
 - Time management: 230 minutes for 180 questions = ~1.3 minutes average per question, but some are quick reads
 
 Question approach:
+
 - Read the last sentence first (what are they actually asking?)
 - Eliminate two obviously wrong answers
 - Between remaining two, choose the more proactive/communication-focused option
 - Trust first instinct unless you find concrete reason to change
 
 Anxiety management:
+
 - Schedule exam for your peak performance time (morning person = morning exam)
 - Arrive 30 minutes early to testing center
 - Use 4-7-8 breathing if stress spikes during exam (4 in, 7 hold, 8 out)
@@ -201,6 +220,7 @@ Anxiety management:
 - Exam allows two 10-minute breaks - use them
 
 Night before and morning of:
+
 - Light review only (no cramming new material)
 - Normal sleep (7-8 hours)
 - Regular breakfast, avoid unusual foods
@@ -208,16 +228,19 @@ Night before and morning of:
 
 **5. Career Integration**
 Immediate post-certification:
+
 - Update LinkedIn same day (PMP after your name, certification badge)
 - Notify HR and manager - discuss title/salary adjustment
 - Update resume and professional profiles
 
 Maintenance (PDU requirements):
+
 - Earn 60 PDUs every 3-year cycle
 - Track in PMI's CCRS system
 - Sources: Webinars, conferences, giving presentations, self-study (mix of Education and Giving Back PDUs)
 
 Advancement path:
+
 - Consider: PMP-ACP (Agile Certified Practitioner) if moving toward agile environments
 - Senior path: PgMP (Program Management Professional) for portfolio/program management
 - Specialized: PMI-RMP (Risk) or PMI-SP (Scheduling) for specialty focus
@@ -225,6 +248,7 @@ Advancement path:
 ---
 
 ## Related Prompts
+
 - [Skill Acquisition Accelerator](skill-acquisition-accelerator.md) - Building underlying PM skills
 - [Online Learning Optimizer](online-learning-optimizer.md) - Completing prep courses effectively
 - [Knowledge Retention Enhancer](knowledge-retention-enhancer.md) - Retaining exam content

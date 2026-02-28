@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build predictive models using linear regression, polynomial regression,
+date: "2025-01-01"
+description:
+  Build predictive models using linear regression, polynomial regression,
   and regularized regression for continuous prediction, trend forecasting, and relationship
   quantification
 layout: skill
 slug: regression-modeling
 tags:
-- development
+  - development
 title: Regression Modeling
 ---
 

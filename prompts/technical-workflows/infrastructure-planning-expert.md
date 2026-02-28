@@ -1,6 +1,7 @@
 # Infrastructure Planning Expert
 
 ## Metadata
+
 - **ID**: `infrastructure-planning-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Plans and designs infrastructure that meets performance, reliability, and cost r
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new infrastructure for production applications
 - Planning high-availability and disaster recovery architectures
 - Optimizing infrastructure costs across cloud providers
@@ -25,6 +27,7 @@ Plans and designs infrastructure that meets performance, reliability, and cost r
 - Capacity planning for expected growth
 
 **Anti-Patterns (Don't Use For):**
+
 - Simple single-server development deployments
 - Local development environments
 - Detailed application architecture (use System Architecture Design Expert)
@@ -138,6 +141,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We're building an e-commerce platform expecting 500K daily active users with significant traffic spikes during Black Friday (5x normal). Requirements:
 - 99.99% uptime SLA
@@ -165,16 +169,17 @@ The architecture implements a three-tier design with complete separation between
 
 **Compute Configuration**
 
-| Component | Specification | Scaling | Justification |
-|-----------|---------------|---------|---------------|
-| ECS Cluster | Fargate, 4 vCPU, 8GB RAM | 2-20 tasks | Right-sized for anticipated load |
-| Baseline | 2 tasks minimum | N/A | 99.99% requires minimum redundancy |
-| Peak | 20 tasks maximum | Auto-scale on CPU/memory | 5x traffic multiplier |
-| Reserved | 2 tasks committed | N/A | 40% savings on baseline |
+| Component   | Specification            | Scaling                  | Justification                      |
+| ----------- | ------------------------ | ------------------------ | ---------------------------------- |
+| ECS Cluster | Fargate, 4 vCPU, 8GB RAM | 2-20 tasks               | Right-sized for anticipated load   |
+| Baseline    | 2 tasks minimum          | N/A                      | 99.99% requires minimum redundancy |
+| Peak        | 20 tasks maximum         | Auto-scale on CPU/memory | 5x traffic multiplier              |
+| Reserved    | 2 tasks committed        | N/A                      | 40% savings on baseline            |
 
 **Database Configuration**
 
 Aurora PostgreSQL Multi-AZ deployment with 2 read replicas provides the foundation for our data tier:
+
 - Instance: db.r6g.large (baseline), auto-scaling to db.r6g.xlarge for peak periods
 - Storage: 500GB auto-scaling to 2TB with provisioned IOPS
 - Backup: Daily automated snapshots, 7-day retention, cross-region replication to us-west-2
@@ -182,25 +187,25 @@ Aurora PostgreSQL Multi-AZ deployment with 2 read replicas provides the foundati
 
 **High Availability Design**
 
-| Metric | Target | Implementation |
-|--------|--------|----------------|
-| Availability | 99.99% | Active-Active across 3 AZs |
-| RTO | 5 minutes | Automated failover via Route53 health checks |
-| RPO | 1 minute | Synchronous Aurora replication |
-| Edge Availability | 99.99% | CloudFront global presence |
+| Metric            | Target    | Implementation                               |
+| ----------------- | --------- | -------------------------------------------- |
+| Availability      | 99.99%    | Active-Active across 3 AZs                   |
+| RTO               | 5 minutes | Automated failover via Route53 health checks |
+| RPO               | 1 minute  | Synchronous Aurora replication               |
+| Edge Availability | 99.99%    | CloudFront global presence                   |
 
 **Cost Analysis**
 
-| Component | Monthly Cost | Notes |
-|-----------|--------------|-------|
-| ECS Fargate | $2,500 | Includes Savings Plan discount |
-| Aurora PostgreSQL | $1,800 | Multi-AZ + 2 read replicas |
-| ElastiCache | $800 | 3-node Redis cluster |
-| CloudFront | $1,500 | 10TB transfer estimate |
-| ALB | $400 | Multi-AZ deployment |
-| Monitoring | $500 | CloudWatch + X-Ray |
-| **Total Baseline** | **$7,500** | Under $10K budget |
-| **Peak (Black Friday)** | **$15,000** | Auto-scaling to 20 tasks |
+| Component               | Monthly Cost | Notes                          |
+| ----------------------- | ------------ | ------------------------------ |
+| ECS Fargate             | $2,500       | Includes Savings Plan discount |
+| Aurora PostgreSQL       | $1,800       | Multi-AZ + 2 read replicas     |
+| ElastiCache             | $800         | 3-node Redis cluster           |
+| CloudFront              | $1,500       | 10TB transfer estimate         |
+| ALB                     | $400         | Multi-AZ deployment            |
+| Monitoring              | $500         | CloudWatch + X-Ray             |
+| **Total Baseline**      | **$7,500**   | Under $10K budget              |
+| **Peak (Black Friday)** | **$15,000**  | Auto-scaling to 20 tasks       |
 
 **PCI-DSS Control Mapping**
 

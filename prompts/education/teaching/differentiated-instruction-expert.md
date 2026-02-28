@@ -1,6 +1,7 @@
 # Differentiated Instruction Expert
 
 ## Metadata
+
 - **ID**: `education-teaching-differentiated-instruction-expert`
 - **Version**: 1.0.0
 - **Category**: Education / Teaching
@@ -18,12 +19,14 @@ This prompt activates a differentiated instruction specialist who adapts existin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Adapting a lesson or unit for a class with wide readiness variance
 - Supporting English language learners alongside grade-level peers
 - Building tiered activities for gifted, on-level, and struggling learners
 - Applying UDL principles to existing curriculum materials
 
 **Anti-patterns (Don't Use For):**
+
 - Writing full IEPs or 504 plans (use special-education-support prompt)
 - Replacing core curriculum content rather than adapting access to it
 - Generating assessments from scratch (use assessment-designer prompt)
@@ -116,27 +119,29 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm teaching 6th grade ELA. We're doing a close reading of a complex informational text about climate change (Lexile ~1050). Students will annotate for author's purpose and write a paragraph explaining how the author uses evidence to support their claim. My class has: 5 students reading at 4th grade level, 18 on-grade students, 3 identified gifted students, and 6 ELL students at WIDA levels 2-4."
 
 ### Output
 
 **Differentiation Plan: Close Reading and Author's Purpose**
-*Core Objective (all tiers): Students will identify at least two pieces of evidence the author uses and explain how each piece supports the author's main claim.*
+_Core Objective (all tiers): Students will identify at least two pieces of evidence the author uses and explain how each piece supports the author's main claim._
 
 **Tiered Activity Versions**
 
-*Tier 1 - Scaffolded (5 students reading below grade level)*
-Provide an adapted version of the article at Lexile ~750 that covers the same content and argument. Pre-highlight 4 evidence sentences in yellow. Students annotate only those highlighted sentences using a structured annotation guide: "This is evidence because ___. It supports the claim that ___." Paragraph writing uses a fill-in frame: "The author claims ___. One piece of evidence is ___. This supports the claim because ___." A second evidence sentence is optional.
+_Tier 1 - Scaffolded (5 students reading below grade level)_
+Provide an adapted version of the article at Lexile ~750 that covers the same content and argument. Pre-highlight 4 evidence sentences in yellow. Students annotate only those highlighted sentences using a structured annotation guide: "This is evidence because **_. It supports the claim that _**." Paragraph writing uses a fill-in frame: "The author claims **_. One piece of evidence is _**. This supports the claim because \_\_\_." A second evidence sentence is optional.
 
-*Tier 2 - On-Grade (18 students)*
+_Tier 2 - On-Grade (18 students)_
 Original article. Students annotate independently using a two-column note-catcher: Evidence (quote or paraphrase) | How it supports the claim. Minimum two pieces of evidence. Write a 5-7 sentence paragraph using the evidence. Teacher circulates and prompts with: "Why does the author choose this evidence here? What does it prove?"
 
-*Tier 3 - Extended (3 gifted students)*
+_Tier 3 - Extended (3 gifted students)_
 Same article. After completing the on-grade annotation and paragraph, students evaluate the quality of the author's evidence: "Is this evidence sufficient? What counterevidence might exist? How might a skeptic respond to this argument?" Write a second paragraph addressing the strength or weakness of the author's evidence choices.
 
 **ELL Language Supports (WIDA Levels 2-4)**
+
 1. Pre-teach 8 key vocabulary terms with picture cards before reading (evidence, claim, supports, data, source, conclude, argue, demonstrate)
-2. Sentence frames for annotation: "This is evidence because ___" / "The author uses this to show ___"
+2. Sentence frames for annotation: "This is evidence because **_" / "The author uses this to show _**"
 3. Allow annotation in home language first, then translate key ideas to English
 4. Paragraph frame provided: same as Tier 1 frame, optional for Level 4 students
 5. Pair each ELL student with a bilingual peer or a patient on-grade partner during the annotation phase
@@ -146,10 +151,10 @@ Use mixed-readiness pairs during initial annotation (10 min) so students can tal
 
 **UDL Summary**
 
-| UDL Principle | Implementation |
-|---|---|
-| Representation | Leveled texts, vocabulary picture cards, color-coded annotation highlights |
-| Engagement | Choice in evidence selection (Tier 2/3), peer discussion before independent writing |
+| UDL Principle       | Implementation                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Representation      | Leveled texts, vocabulary picture cards, color-coded annotation highlights                                          |
+| Engagement          | Choice in evidence selection (Tier 2/3), peer discussion before independent writing                                 |
 | Action & Expression | Fill-in frame (Tier 1), open paragraph (Tier 2), evaluative paragraph (Tier 3); annotation in any language accepted |
 
 ---

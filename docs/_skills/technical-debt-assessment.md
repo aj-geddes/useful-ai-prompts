@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Assess, quantify, and prioritize technical debt using code analysis,
+date: "2025-01-01"
+description:
+  Assess, quantify, and prioritize technical debt using code analysis,
   metrics, and impact analysis. Use when planning refactoring, evaluating codebases,
   or making architectural decisions.
 layout: skill
 slug: technical-debt-assessment
 tags:
-- development
+  - development
 title: technical-debt-assessment
 ---
 
@@ -35,8 +36,8 @@ interface DebtItem {
   id: string;
   title: string;
   description: string;
-  category: 'code' | 'architecture' | 'test' | 'documentation' | 'security';
-  severity: 'low' | 'medium' | 'high' | 'critical';
+  category: "code" | "architecture" | "test" | "documentation" | "security";
+  severity: "low" | "medium" | "high" | "critical";
   effort: number; // hours
   impact: number; // 1-10 scale
   interest: number; // cost per sprint if not fixed
@@ -54,11 +55,13 @@ class TechnicalDebtAssessment {
       low: 1,
       medium: 2,
       high: 3,
-      critical: 4
+      critical: 4,
     };
 
     const priority =
-      (item.impact * 10 + item.interest * 5 + severityWeight[item.severity] * 3) /
+      (item.impact * 10 +
+        item.interest * 5 +
+        severityWeight[item.severity] * 3) /
       (item.effort + 1);
 
     return priority;
@@ -66,19 +69,22 @@ class TechnicalDebtAssessment {
 
   getPrioritizedList(): Array<DebtItem & { priority: number }> {
     return this.items
-      .map(item => ({
+      .map((item) => ({
         ...item,
-        priority: this.calculatePriority(item)
+        priority: this.calculatePriority(item),
       }))
       .sort((a, b) => b.priority - a.priority);
   }
 
   getDebtByCategory(): Record<string, DebtItem[]> {
-    return this.items.reduce((acc, item) => {
-      acc[item.category] = acc[item.category] || [];
-      acc[item.category].push(item);
-      return acc;
-    }, {} as Record<string, DebtItem[]>);
+    return this.items.reduce(
+      (acc, item) => {
+        acc[item.category] = acc[item.category] || [];
+        acc[item.category].push(item);
+        return acc;
+      },
+      {} as Record<string, DebtItem[]>,
+    );
   }
 
   getTotalEffort(): number {
@@ -93,24 +99,24 @@ class TechnicalDebtAssessment {
     const prioritized = this.getPrioritizedList();
     const byCategory = this.getDebtByCategory();
 
-    let report = '# Technical Debt Assessment\n\n';
+    let report = "# Technical Debt Assessment\n\n";
 
     // Summary
-    report += '## Summary\n\n';
+    report += "## Summary\n\n";
     report += `- Total Items: ${this.items.length}\n`;
     report += `- Total Effort: ${this.getTotalEffort()} hours\n`;
     report += `- Monthly Interest: ${this.getTotalInterest()} hours\n\n`;
 
     // By Category
-    report += '## By Category\n\n';
+    report += "## By Category\n\n";
     for (const [category, items] of Object.entries(byCategory)) {
       const effort = items.reduce((sum, item) => sum + item.effort, 0);
       report += `- ${category}: ${items.length} items (${effort} hours)\n`;
     }
-    report += '\n';
+    report += "\n";
 
     // Top Priority Items
-    report += '## Top Priority Items\n\n';
+    report += "## Top Priority Items\n\n";
     for (const item of prioritized.slice(0, 10)) {
       report += `### ${item.title} (Priority: ${item.priority.toFixed(2)})\n`;
       report += `- Category: ${item.category}\n`;
@@ -129,25 +135,25 @@ class TechnicalDebtAssessment {
 const assessment = new TechnicalDebtAssessment();
 
 assessment.addDebtItem({
-  id: 'debt-1',
-  title: 'Legacy API endpoints',
-  description: 'Old API v1 endpoints still in use, need migration',
-  category: 'architecture',
-  severity: 'high',
+  id: "debt-1",
+  title: "Legacy API endpoints",
+  description: "Old API v1 endpoints still in use, need migration",
+  category: "architecture",
+  severity: "high",
   effort: 40,
   impact: 8,
-  interest: 5
+  interest: 5,
 });
 
 assessment.addDebtItem({
-  id: 'debt-2',
-  title: 'Missing unit tests',
-  description: '30% of codebase lacks test coverage',
-  category: 'test',
-  severity: 'medium',
+  id: "debt-2",
+  title: "Missing unit tests",
+  description: "30% of codebase lacks test coverage",
+  category: "test",
+  severity: "medium",
   effort: 80,
   impact: 7,
-  interest: 3
+  interest: 3,
 });
 
 console.log(assessment.generateReport());
@@ -156,14 +162,14 @@ console.log(assessment.generateReport());
 ### 2. **Code Quality Scanner**
 
 ```typescript
-import * as ts from 'typescript';
-import * as fs from 'fs';
+import * as ts from "typescript";
+import * as fs from "fs";
 
 interface QualityIssue {
   file: string;
   line: number;
   issue: string;
-  severity: 'info' | 'warning' | 'error';
+  severity: "info" | "warning" | "error";
   debtHours: number;
 }
 
@@ -183,12 +189,12 @@ class CodeQualityScanner {
   }
 
   private scanFile(filePath: string): void {
-    const sourceCode = fs.readFileSync(filePath, 'utf-8');
+    const sourceCode = fs.readFileSync(filePath, "utf-8");
     const sourceFile = ts.createSourceFile(
       filePath,
       sourceCode,
       ts.ScriptTarget.Latest,
-      true
+      true,
     );
 
     // Check for anti-patterns
@@ -201,18 +207,18 @@ class CodeQualityScanner {
 
   private checkForAnyTypes(sourceFile: ts.SourceFile, filePath: string): void {
     const visit = (node: ts.Node) => {
-      if (ts.isTypeReferenceNode(node) && node.typeName.getText() === 'any') {
+      if (ts.isTypeReferenceNode(node) && node.typeName.getText() === "any") {
         const { line } = ts.getLineAndCharacterOfPosition(
           sourceFile,
-          node.getStart()
+          node.getStart(),
         );
 
         this.issues.push({
           file: filePath,
           line: line + 1,
-          issue: 'Use of any type reduces type safety',
-          severity: 'warning',
-          debtHours: 0.5
+          issue: "Use of any type reduces type safety",
+          severity: "warning",
+          debtHours: 0.5,
         });
       }
 
@@ -222,24 +228,27 @@ class CodeQualityScanner {
     visit(sourceFile);
   }
 
-  private checkForLongFunctions(sourceFile: ts.SourceFile, filePath: string): void {
+  private checkForLongFunctions(
+    sourceFile: ts.SourceFile,
+    filePath: string,
+  ): void {
     const visit = (node: ts.Node) => {
       if (ts.isFunctionDeclaration(node) || ts.isMethodDeclaration(node)) {
         if (node.body) {
-          const lines = node.body.getFullText().split('\n').length;
+          const lines = node.body.getFullText().split("\n").length;
 
           if (lines > 50) {
             const { line } = ts.getLineAndCharacterOfPosition(
               sourceFile,
-              node.getStart()
+              node.getStart(),
             );
 
             this.issues.push({
               file: filePath,
               line: line + 1,
               issue: `Function has ${lines} lines, should be refactored`,
-              severity: 'warning',
-              debtHours: Math.ceil(lines / 10)
+              severity: "warning",
+              debtHours: Math.ceil(lines / 10),
             });
           }
         }
@@ -251,7 +260,10 @@ class CodeQualityScanner {
     visit(sourceFile);
   }
 
-  private checkForMagicNumbers(sourceFile: ts.SourceFile, filePath: string): void {
+  private checkForMagicNumbers(
+    sourceFile: ts.SourceFile,
+    filePath: string,
+  ): void {
     const visit = (node: ts.Node) => {
       if (ts.isNumericLiteral(node)) {
         const value = parseFloat(node.text);
@@ -260,15 +272,15 @@ class CodeQualityScanner {
         if (![0, 1, -1, 2].includes(value)) {
           const { line } = ts.getLineAndCharacterOfPosition(
             sourceFile,
-            node.getStart()
+            node.getStart(),
           );
 
           this.issues.push({
             file: filePath,
             line: line + 1,
             issue: `Magic number ${value} should be a named constant`,
-            severity: 'info',
-            debtHours: 0.1
+            severity: "info",
+            debtHours: 0.1,
           });
         }
       }
@@ -279,35 +291,41 @@ class CodeQualityScanner {
     visit(sourceFile);
   }
 
-  private checkForConsoleStatements(sourceFile: ts.SourceFile, filePath: string): void {
+  private checkForConsoleStatements(
+    sourceFile: ts.SourceFile,
+    filePath: string,
+  ): void {
     const text = sourceFile.getFullText();
-    const lines = text.split('\n');
+    const lines = text.split("\n");
 
     lines.forEach((line, index) => {
-      if (line.includes('console.log') || line.includes('console.error')) {
+      if (line.includes("console.log") || line.includes("console.error")) {
         this.issues.push({
           file: filePath,
           line: index + 1,
-          issue: 'Console statement should use proper logger',
-          severity: 'info',
-          debtHours: 0.1
+          issue: "Console statement should use proper logger",
+          severity: "info",
+          debtHours: 0.1,
         });
       }
     });
   }
 
-  private checkForTodoComments(sourceFile: ts.SourceFile, filePath: string): void {
+  private checkForTodoComments(
+    sourceFile: ts.SourceFile,
+    filePath: string,
+  ): void {
     const text = sourceFile.getFullText();
-    const lines = text.split('\n');
+    const lines = text.split("\n");
 
     lines.forEach((line, index) => {
       if (/\/\/\s*TODO/.test(line)) {
         this.issues.push({
           file: filePath,
           line: index + 1,
-          issue: 'TODO comment indicates incomplete work',
-          severity: 'warning',
-          debtHours: 2
+          issue: "TODO comment indicates incomplete work",
+          severity: "warning",
+          debtHours: 2,
         });
       }
     });
@@ -323,13 +341,16 @@ class CodeQualityScanner {
   }
 
   generateReport(): string {
-    let report = '# Code Quality Report\n\n';
+    let report = "# Code Quality Report\n\n";
 
-    const bySeverity = this.issues.reduce((acc, issue) => {
-      acc[issue.severity] = acc[issue.severity] || [];
-      acc[issue.severity].push(issue);
-      return acc;
-    }, {} as Record<string, QualityIssue[]>);
+    const bySeverity = this.issues.reduce(
+      (acc, issue) => {
+        acc[issue.severity] = acc[issue.severity] || [];
+        acc[issue.severity].push(issue);
+        return acc;
+      },
+      {} as Record<string, QualityIssue[]>,
+    );
 
     report += `## Summary\n\n`;
     report += `- Total Issues: ${this.issues.length}\n`;
@@ -342,7 +363,7 @@ class CodeQualityScanner {
         report += `- ${issue.file}:${issue.line} - ${issue.issue}\n`;
       }
 
-      report += '\n';
+      report += "\n";
     }
 
     return report;
@@ -353,6 +374,7 @@ class CodeQualityScanner {
 ## Best Practices
 
 ### ✅ DO
+
 - Quantify debt impact
 - Prioritize by ROI
 - Track debt over time
@@ -361,6 +383,7 @@ class CodeQualityScanner {
 - Set quality gates
 
 ### ❌ DON'T
+
 - Ignore technical debt
 - Fix everything at once
 - Skip impact analysis

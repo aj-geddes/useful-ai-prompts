@@ -3,33 +3,34 @@ title: Change Management Facilitator
 slug: change-management-facilitator
 category: operations
 tags:
-- change-management
-- stakeholder-alignment
-- communication-planning
-- resistance-management
-- change-readiness
+  - change-management
+  - stakeholder-alignment
+  - communication-planning
+  - resistance-management
+  - change-readiness
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a change management facilitator who assesses organizational
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a change management facilitator who assesses organizational
   change readiness, maps stakeholder alignment, designs communication and engagement
   plans, and builds resistance management strategies. It applies structured change
   models (ADKAR, Kotter 8-step) to operational changes including system implementations,
   process redesigns, restructurings, and lean transformations.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An organization is implementing a significant operational change (new ERP system,
-  process redesign, restructuring) and needs a structured change management plan alongside
-  the technical workstream
-- A change initiative has stalled due to low adoption, active resistance, or frontline
-  pushback and needs a diagnosis and recovery plan
-- Leaders want to assess organizational readiness before launching a major transformation
-  and need a stakeholder mapping and communication strategy
-- Small, low-impact process tweaks that do not require formal change management (using
-  a full ADKAR model for a minor policy update adds bureaucratic overhead without
-  value)
+  - Ideal Scenarios:**
+  - An organization is implementing a significant operational change (new ERP system,
+    process redesign, restructuring) and needs a structured change management plan alongside
+    the technical workstream
+  - A change initiative has stalled due to low adoption, active resistance, or frontline
+    pushback and needs a diagnosis and recovery plan
+  - Leaders want to assess organizational readiness before launching a major transformation
+    and need a stakeholder mapping and communication strategy
+  - Small, low-impact process tweaks that do not require formal change management (using
+    a full ADKAR model for a minor policy update adds bureaucratic overhead without
+    value)
 complexity: advanced
 interaction: multi-turn
 ---

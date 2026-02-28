@@ -1,14 +1,15 @@
 ---
 category: government-digital
 compatible_models:
-- GPT-4
-- Claude 3.5
-- Gemini Pro
-- GPT-3.5
-date: '2025-01-14'
+  - GPT-4
+  - Claude 3.5
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-01-14"
 description: This prompt helps government technology leaders develop comprehensive API strategies that enable seamless system integration, interagency collaboration, and scalable digital service delivery while ensuring security, compliance, and performance standards.
 layout: prompt
-prompt: 'I''ll help you develop a comprehensive government API strategy that enables seamless system integration and digital service delivery across agencies. Let me understand your current state and objectives:
+prompt:
+  "I'll help you develop a comprehensive government API strategy that enables seamless system integration and digital service delivery across agencies. Let me understand your current state and objectives:
 
 
   **Current system landscape:**
@@ -35,16 +36,16 @@ prompt: 'I''ll help you develop a comprehensive government API strategy that ena
 
   **Technical and organizational context:**
 
-  9. What''s your current technical architecture and cloud strategy?
+  9. What's your current technical architecture and cloud strategy?
 
   10. What API development expertise and resources do you have?
 
-  11. What''s your timeline and budget for API implementation?
+  11. What's your timeline and budget for API implementation?
 
   12. How do you plan to measure API success and adoption?
 
 
-  Based on your answers, I''ll provide:
+  Based on your answers, I'll provide:
 
 
   **API STRATEGY FRAMEWORK** - Comprehensive API governance, standards, and implementation approach
@@ -60,21 +61,21 @@ prompt: 'I''ll help you develop a comprehensive government API strategy that ena
   **PERFORMANCE AND MONITORING PLAN** - API analytics, optimization, and continuous improvement
 
 
-  Share your government API integration challenges and goals!'
+  Share your government API integration challenges and goals!"
 related_prompts:
-- digital-government-transformation-strategy
+  - digital-government-transformation-strategy
 slug: government-api-strategy-developer
 tags:
-- government APIs
-- API strategy
-- system integration
-- interoperability
-- digital government
+  - government APIs
+  - API strategy
+  - system integration
+  - interoperability
+  - digital government
 title: Government API Strategy Developer
 use_cases:
-- government system integration
-- API platform development
-- interagency connectivity
-- digital service delivery
+  - government system integration
+  - API platform development
+  - interagency connectivity
+  - digital service delivery
 version: 1.0.0
 ---

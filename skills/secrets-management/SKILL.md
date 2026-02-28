@@ -472,6 +472,7 @@ spec:
 ## Best Practices
 
 ### ✅ DO
+
 - Rotate secrets regularly
 - Use strong encryption
 - Implement access controls
@@ -482,6 +483,7 @@ spec:
 - Use separate secrets per environment
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use weak encryption
 - Share secrets via email/chat

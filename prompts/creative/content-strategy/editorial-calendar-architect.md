@@ -1,6 +1,7 @@
 # Editorial Calendar Architect
 
 ## Metadata
+
 - **ID**: creative-editorial-calendar-architect
 - **Version**: 3.0.0
 - **Category**: Creative/Content-Strategy
@@ -18,6 +19,7 @@ A strategic editorial calendar assistant that creates comprehensive content plan
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a new content program from scratch
 - Restructuring inconsistent publishing efforts
 - Planning multi-channel content campaigns
@@ -25,6 +27,7 @@ A strategic editorial calendar assistant that creates comprehensive content plan
 - Aligning content strategy with business objectives
 
 **Anti-Patterns (When Not to Use):**
+
 - Writing individual content pieces (use content creation prompts)
 - Social media posting schedules only (use social media prompts)
 - One-time campaign planning (use campaign prompts)
@@ -113,6 +116,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Blog (long-form), LinkedIn posts, email newsletter, occasional webinars
 2. Blog: 2x/week, LinkedIn: daily, Newsletter: weekly, Webinar: monthly
@@ -139,6 +143,7 @@ Requirements:
 ### Publishing Rhythm
 
 **Weekly Content Flow:**
+
 ```
 Monday:    LinkedIn (Motivational/Leadership)
 Tuesday:   Blog Post #1 + LinkedIn (Technical tip)
@@ -156,30 +161,33 @@ Friday:    Blog Post #2 + LinkedIn (Week recap)
 
 ### Quarterly Themes
 
-| Quarter | Theme | Focus |
-|---------|-------|-------|
-| Q1 2025 | Scale Your Stack | Hiring, infrastructure |
-| Q2 2025 | Innovation Sprint | Product launch, conference |
-| Q3 2025 | Optimize & Automate | Efficiency, costs |
-| Q4 2025 | Plan to Win | Budgets, 2026 strategy |
+| Quarter | Theme               | Focus                      |
+| ------- | ------------------- | -------------------------- |
+| Q1 2025 | Scale Your Stack    | Hiring, infrastructure     |
+| Q2 2025 | Innovation Sprint   | Product launch, conference |
+| Q3 2025 | Optimize & Automate | Efficiency, costs          |
+| Q4 2025 | Plan to Win         | Budgets, 2026 strategy     |
 
 ## CONTENT THEMES
 
 ### Monthly Theme Breakdown
 
 **January: Building Dream Teams**
+
 - Week 1: 2025 DevOps hiring guide
 - Week 2: Remote vs hybrid engineering teams
 - Week 3: Onboarding automation playbook
 - Week 4: Webinar: "Hire DevOps talent in 2025"
 
 **February: Security-First Culture**
+
 - Week 1: Zero-trust architecture guide
 - Week 2: DevSecOps implementation
 - Week 3: Customer story: Security transformation
 - Week 4: Security audit checklist
 
 **March: Product Launch Focus**
+
 - Week 1: Pre-launch thought leadership
 - Week 2: Launch week content blitz
 - Week 3: Implementation guides
@@ -190,6 +198,7 @@ Friday:    Blog Post #2 + LinkedIn (Week recap)
 ### Content Production Pipeline
 
 **Blog Posts (14-day cycle):**
+
 ```
 Day 1-2:   Ideation & outline approval
 Day 3-4:   Research & expert interviews
@@ -202,6 +211,7 @@ Day 14:    Publish & promote
 ```
 
 **LinkedIn Posts (2-day cycle):**
+
 ```
 Day 1 AM:  Topic selection from bank
 Day 1 PM:  Draft & visual creation
@@ -211,33 +221,33 @@ Day 2 PM:  Publish & engage
 
 ### Team Responsibilities
 
-| Team Member | Responsibilities |
-|-------------|------------------|
-| Content Manager | Strategy, LinkedIn, newsletter, webinar planning |
-| Freelance Writer | 6-8 blog posts/month, research, interviews |
-| Designer/Editor | Blog graphics, LinkedIn carousels, webinar materials |
+| Team Member      | Responsibilities                                     |
+| ---------------- | ---------------------------------------------------- |
+| Content Manager  | Strategy, LinkedIn, newsletter, webinar planning     |
+| Freelance Writer | 6-8 blog posts/month, research, interviews           |
+| Designer/Editor  | Blog graphics, LinkedIn carousels, webinar materials |
 
 ## CONTENT MIX
 
 ### Blog Distribution (8 posts/month)
 
-| Type | Count | Percentage |
-|------|-------|------------|
-| How-to Guides | 3 | 37.5% |
-| Thought Leadership | 2 | 25% |
-| Case Studies | 1 | 12.5% |
-| Industry Analysis | 1 | 12.5% |
-| Tool Reviews | 1 | 12.5% |
+| Type               | Count | Percentage |
+| ------------------ | ----- | ---------- |
+| How-to Guides      | 3     | 37.5%      |
+| Thought Leadership | 2     | 25%        |
+| Case Studies       | 1     | 12.5%      |
+| Industry Analysis  | 1     | 12.5%      |
+| Tool Reviews       | 1     | 12.5%      |
 
 ### LinkedIn Strategy (20 posts/month)
 
-| Type | Count | Percentage |
-|------|-------|------------|
-| Mini-lessons | 6 | 30% |
-| Industry commentary | 4 | 20% |
-| Blog promotions | 4 | 20% |
-| Polls/questions | 3 | 15% |
-| Behind-scenes | 3 | 15% |
+| Type                | Count | Percentage |
+| ------------------- | ----- | ---------- |
+| Mini-lessons        | 6     | 30%        |
+| Industry commentary | 4     | 20%        |
+| Blog promotions     | 4     | 20%        |
+| Polls/questions     | 3     | 15%        |
+| Behind-scenes       | 3     | 15%        |
 
 ### Newsletter Sections (Weekly)
 
@@ -260,6 +270,7 @@ Day 2 PM:  Publish & engage
 | LinkedIn Engagement | 5%+ rate | LinkedIn Analytics |
 
 **Content Performance Matrix:**
+
 - High Traffic + High Conversion = Expand topic
 - High Traffic + Low Conversion = Improve CTAs
 - Low Traffic + High Conversion = Increase promotion
@@ -275,24 +286,28 @@ Day 2 PM:  Publish & engage
 ## IMPLEMENTATION ROADMAP
 
 ### Week 1: Setup
+
 - [ ] Create content calendar in Notion
 - [ ] Build content templates
 - [ ] Set up measurement dashboard
 - [ ] Brief team on new process
 
 ### Week 2: Content Bank
+
 - [ ] Generate 50 LinkedIn post ideas
 - [ ] Outline Q1 blog posts
 - [ ] Create visual templates
 - [ ] Plan Q1 webinars
 
 ### Week 3: Launch
+
 - [ ] Begin new publishing rhythm
 - [ ] Start daily LinkedIn posting
 - [ ] Schedule first month's content
 - [ ] Set up automation
 
 ### Week 4: Refine
+
 - [ ] Review early metrics
 - [ ] Gather team feedback
 - [ ] Adjust workflows

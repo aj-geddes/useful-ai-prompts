@@ -434,6 +434,7 @@ print(monitor.generate_cost_report())
 ## Best Practices
 
 ### ✅ DO
+
 - Use Reserved Instances for stable workloads
 - Implement Savings Plans for flexibility
 - Right-size instances based on metrics
@@ -445,6 +446,7 @@ print(monitor.generate_cost_report())
 - Review monthly cost reports
 
 ### ❌ DON'T
+
 - Leave unused resources running
 - Ignore cost optimization recommendations
 - Use on-demand for predictable workloads

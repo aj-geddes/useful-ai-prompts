@@ -1,6 +1,7 @@
 # Product Evaluation Expert
 
 ## Metadata
+
 - **ID**: `evaluation-product-evaluation`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Product
@@ -18,12 +19,14 @@ Conduct comprehensive product assessments evaluating features, user experience, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing product strengths and weaknesses
 - Conducting competitive product analysis
 - Identifying product improvement priorities
 - Evaluating product-market alignment
 
 **Anti-patterns:**
+
 - User research study design requiring research methodology
 - Technical architecture assessment requiring engineering expertise
 - Financial valuation requiring investment analysis
@@ -97,9 +100,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Evaluate our B2B project management tool. Target: mid-market companies (100-1000 employees). Main competitors are Asana and Monday. We have strong task management but users say our reporting is weak. Usage is sticky but growth is slowing."
 
 ### Output
+
 **Product Evaluation: B2B Project Management Tool**
 
 **Assessment Summary**
@@ -113,6 +118,7 @@ Avoid:
 | Onboarding | 3.0 | 3.5 | Medium |
 
 **Core Strengths**
+
 - Task management depth exceeds competitors for complex projects
 - Performance at scale (handles large projects well)
 - Stickiness indicates core value delivery
@@ -140,9 +146,10 @@ Avoid:
 | Enterprise Scale | Strong | Medium | Weak |
 | Pricing | Competitive | Premium | Competitive |
 
-*Positioning Opportunity*: Position as "enterprise-ready project management" - leverage your scale advantage while closing the reporting gap. Asana is moving upmarket; Monday is more SMB-focused.
+_Positioning Opportunity_: Position as "enterprise-ready project management" - leverage your scale advantage while closing the reporting gap. Asana is moving upmarket; Monday is more SMB-focused.
 
 **Customer Value Analysis**
+
 - Primary value: Reliable task tracking for complex projects
 - Secondary value: Team coordination and visibility
 - Missing value: Executive reporting, cross-project insights
@@ -150,34 +157,40 @@ Avoid:
 
 **Improvement Roadmap**
 
-*Phase 1: Close Critical Gap (Q1)*
+_Phase 1: Close Critical Gap (Q1)_
+
 - Custom dashboard builder (MVP)
 - Project status reports with visualizations
 - Export to PDF/PowerPoint for executives
 - Success metric: 50% adoption of dashboards
 
-*Phase 2: Expand Value (Q2)*
+_Phase 2: Expand Value (Q2)_
+
 - Cross-project portfolio view
 - Resource utilization reporting
 - Trend analysis over time
 - Success metric: Executive sponsor engagement up 30%
 
-*Phase 3: Ecosystem (Q3-Q4)*
+_Phase 3: Ecosystem (Q3-Q4)_
+
 - Salesforce and HubSpot integrations
 - Enhanced Slack integration (commands, updates)
 - Zapier-level flexibility
 - Success metric: 3+ integrations per active account
 
 **Quick Wins (This Month)**
+
 - Add CSV export to all views
 - Create 5 report templates for common use cases
 - Improve chart visualization in existing reports
 
 **Investment Estimate**
+
 - Reporting overhaul: 2 engineers, 3 months
 - Integration expansion: 1 engineer, ongoing
 - Expected impact: Reduce churn 20%, enable enterprise expansion
 
 ## Related Prompts
+
 - [Market Fit Assessment Expert](market-fit-assessment-expert.md)
 - [Quality Assurance Expert](quality-assurance-expert.md)

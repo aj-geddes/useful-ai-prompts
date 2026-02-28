@@ -3,31 +3,32 @@ title: Utility-Scale Solar Farm Development and Project Optimization
 slug: utility-scale-solar-farm-development
 category: renewable energy/solar energy development
 tags:
-- utility-scale
-- solar
-- project
-- development
-- PPA
-- grid
-- integration
-- renewable
-- energy
+  - utility-scale
+  - solar
+  - project
+  - development
+  - PPA
+  - grid
+  - integration
+  - renewable
+  - energy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables comprehensive utility-scale solar farm development
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables comprehensive utility-scale solar farm development
   from site selection through commercial operation. It combines project development
   expertise with renewable energy engineering to navigate regulatory frameworks, optimize
   technical design, structure project finance, and deliver high-performing solar assets
   that meet investor returns and contribute to clean energy transition.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing utility-scale solar projects (50+ MW)
-- Managing full project lifecycle from prospecting to COD
-- Structuring PPAs and offtake agreements
-- Coordinating permitting, interconnection, and regulatory approvals
+  - Ideal scenarios:**
+  - Developing utility-scale solar projects (50+ MW)
+  - Managing full project lifecycle from prospecting to COD
+  - Structuring PPAs and offtake agreements
+  - Coordinating permitting, interconnection, and regulatory approvals
 complexity: advanced
 interaction: multi-turn
 ---
@@ -46,18 +47,20 @@ Utility-scale solar development requires integrating technical optimization with
 
 <input_handling>
 **Required information:**
+
 - Project location and market (state, ISO/utility)
 - Target capacity (MW)
 - Development stage and timeline
 - Offtake strategy (utility PPA, corporate, merchant)
 
 **Optional (will infer reasonable defaults):**
+
 - Available site or land constraints
 - Interconnection status
 - Technology preferences
 - Financing approach
 - Competitive positioning needs
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive utility-scale solar project strategy:
@@ -73,18 +76,20 @@ Develop comprehensive utility-scale solar project strategy:
 5. **Financial Structuring**: Design capital structure, PPA strategy, and investor value proposition
 
 6. **Risk Management**: Identify and mitigate development, construction, and operational risks
-</task>
+   </task>
 
 <output_specification>
 **Utility-Scale Solar Development Plan**
+
 - Format: Comprehensive development strategy with execution roadmap
 - Length: 1000-1500 words
 - Sections: Site/market assessment, technical design, development plan, financial structure, risks
 - Must include: Timeline with milestones, key risk mitigations, target economics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Realistic development timeline with appropriate contingencies
 - Technical design optimized for site conditions and market needs
 - Clear offtake strategy aligned with market opportunities
@@ -92,12 +97,13 @@ Develop comprehensive utility-scale solar project strategy:
 - Comprehensive risk identification with specific mitigations
 
 **Avoid:**
+
 - Underestimating interconnection timeline and costs
 - Ignoring permitting complexity for specific jurisdictions
 - Overly optimistic PPA pricing assumptions
 - Missing grid integration requirements
 - Generic development approach without site specificity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Development timeline: 24-36 months from site control to COD

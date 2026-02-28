@@ -1,12 +1,13 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Debug database performance issues through query analysis, index optimization,
+date: "2025-01-01"
+description:
+  Debug database performance issues through query analysis, index optimization,
   and execution plan review. Identify and fix slow queries.
 layout: skill
 slug: database-performance-debugging
 tags:
-- data
+  - data
 title: database-performance-debugging
 ---
 

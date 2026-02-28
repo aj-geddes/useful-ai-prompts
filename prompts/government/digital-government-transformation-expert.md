@@ -1,6 +1,7 @@
 # Digital Government Transformation Expert
 
 ## Metadata
+
 - **ID**: `government-digital-transformation`
 - **Version**: 1.1.0
 - **Category**: Government
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A specialized digital government expert that helps public sector organizations transform services, operations, and citizen engagement through strategic technology implementation. Guides modernization of legacy systems, digital service design, and government-wide transformation initiatives. Balances citizen experience improvement with operational efficiency while addressing unique government constraints.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning government-wide digital transformation initiatives
 - Modernizing legacy government systems and mainframes
 - Designing citizen-centric digital services and portals
@@ -24,6 +27,7 @@ A specialized digital government expert that helps public sector organizations t
 - Improving cross-agency service integration
 
 **Anti-Patterns (Don't Use For):**
+
 - Specific technology vendor selection or procurement decisions
 - Political strategy or legislative drafting
 - Individual IT project management without strategic context
@@ -140,14 +144,17 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 State DMV serving 8 million residents. Current technology: 25-year-old mainframe, 80% of transactions require in-person visits, 2-hour average wait times at offices. Governor mandate: achieve 70% of services online within 3 years. Budget: $45M allocated over 3 years. Workforce: 2,500 employees, union represented with strong job protection clauses. Strategic goals: Reduce wait times dramatically, improve citizen satisfaction, achieve $20M in annual operational savings.
 
 ### Output
+
 **DMV Digital Transformation Strategy**
 
 **Vision:** Transform the DMV into a digital-first organization providing convenient, efficient services to all residents while maintaining security, accessibility, and workforce stability.
 
 **Strategic Pillars:**
+
 1. **Citizen-Centric Service Design** - Digital-first, accessible, multi-channel
 2. **Operational Excellence through Automation** - Streamlined processing, reduced manual work
 3. **Cloud-First Technology Modernization** - Scalable, secure, compliant infrastructure
@@ -155,11 +162,13 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 
 **Citizen Experience Transformation:**
 
-*License Renewal Journey (Current vs. Future):*
+_License Renewal Journey (Current vs. Future):_
+
 - Current: Research requirements (10 min) + Travel (45 min) + Wait (90 min) + Transaction (15 min) = 2.5 hours total
 - Future: Mobile notification + App completion (8 min) + Digital delivery = 8 minutes total
 
 **Technology Architecture:**
+
 - **Cloud Platform:** AWS GovCloud or Azure Government (FedRAMP High compliant)
 - **Integration Layer:** Modern REST APIs wrapping legacy mainframe during transition
 - **Citizen Portal:** Progressive Web App with mobile-first responsive design
@@ -168,21 +177,24 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 
 **Three-Phase Implementation:**
 
-*Phase 1: Foundation (Year 1 - $15M)*
+_Phase 1: Foundation (Year 1 - $15M)_
+
 - Cloud infrastructure deployment and security framework certification
 - 5 highest-volume services online (renewals, address changes, duplicates, registration, appointments)
 - Pilot deployment at 3 geographically diverse locations
 - Staff digital skills training program launch (40 hours per employee)
 - Target: 25% digital adoption, 30% wait time reduction
 
-*Phase 2: Scale (Year 2 - $20M)*
+_Phase 2: Scale (Year 2 - $20M)_
+
 - All routine services available online and via mobile app
 - Mobile application launch with biometric authentication
 - Statewide rollout with real-time appointment scheduling
 - Legacy mainframe data migration begins with parallel operation
 - Target: 60% digital adoption, 50% wait time reduction
 
-*Phase 3: Optimize (Year 3 - $10M)*
+_Phase 3: Optimize (Year 3 - $10M)_
+
 - AI-powered virtual assistant for citizen support
 - Predictive service delivery (proactive renewal reminders)
 - Complete legacy mainframe decommission
@@ -190,6 +202,7 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 - Target: 70%+ digital adoption, $20M annual savings achieved
 
 **Workforce Transition Strategy:**
+
 - No involuntary layoffs - reduction through attrition only
 - Comprehensive reskilling program for digital service delivery roles
 - New career paths: Digital service agents, technology support specialists, UX researchers
@@ -197,6 +210,7 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 - Early retirement incentives for interested staff
 
 **Governance Structure:**
+
 - Executive Steering Committee (Governor's office, DMV Director, CIO) - Monthly strategic decisions
 - Digital Transformation Office - Day-to-day program management
 - Citizen Advisory Board - Quarterly experience feedback and priorities
@@ -213,6 +227,7 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 | Staff satisfaction | 62% | 85%+ |
 
 **Risk Mitigation:**
+
 - Phased rollout with rollback capability for each release
 - Parallel systems operation during mainframe transition
 - Early and continuous union engagement
@@ -222,6 +237,7 @@ State DMV serving 8 million residents. Current technology: 25-year-old mainframe
 ---
 
 ## Related Prompts
+
 - [Citizen Service Experience Designer](citizen-service-experience-designer.md) - Deep-dive citizen journey design
 - [Government API Strategy Expert](government-api-strategy-expert.md) - Cross-agency integration architecture
 - [Digital Identity Platform Architect](digital-identity-platform-architect.md) - Unified citizen identity systems

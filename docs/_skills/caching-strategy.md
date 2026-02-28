@@ -1,14 +1,15 @@
 ---
 category: backend-development
-date: '2025-01-01'
-description: Implement efficient caching strategies using Redis, Memcached, CDN, and
+date: "2025-01-01"
+description:
+  Implement efficient caching strategies using Redis, Memcached, CDN, and
   cache invalidation patterns. Use when optimizing application performance, reducing
   database load, or improving response times.
 layout: skill
 slug: caching-strategy
 tags:
-- redis
-- data
+  - redis
+  - data
 title: caching-strategy
 ---
 
@@ -50,7 +51,7 @@ Implement effective caching strategies to improve application performance, reduc
 ### 1. **Redis Cache Implementation (Node.js)**
 
 ```typescript
-import Redis from 'ioredis';
+import Redis from "ioredis";
 
 interface CacheOptions {
   ttl?: number; // Time to live in seconds
@@ -67,15 +68,15 @@ class CacheService {
         const delay = Math.min(times * 50, 2000);
         return delay;
       },
-      maxRetriesPerRequest: 3
+      maxRetriesPerRequest: 3,
     });
 
-    this.redis.on('connect', () => {
-      console.log('Redis connected');
+    this.redis.on("connect", () => {
+      console.log("Redis connected");
     });
 
-    this.redis.on('error', (error) => {
-      console.error('Redis error:', error);
+    this.redis.on("error", (error) => {
+      console.error("Redis error:", error);
     });
   }
 
@@ -100,7 +101,7 @@ class CacheService {
   async set(
     key: string,
     value: any,
-    options: CacheOptions = {}
+    options: CacheOptions = {},
   ): Promise<boolean> {
     try {
       const ttl = options.ttl || this.defaultTTL;
@@ -154,7 +155,7 @@ class CacheService {
   async getOrSet<T>(
     key: string,
     fetchFn: () => Promise<T>,
-    options: CacheOptions = {}
+    options: CacheOptions = {},
   ): Promise<T> {
     // Try to get from cache
     const cached = await this.get<T>(key);
@@ -178,14 +179,14 @@ class CacheService {
     options: {
       ttl: number;
       staleTime: number;
-    }
+    },
   ): Promise<T> {
     const cacheKey = `cache:${key}`;
     const timestampKey = `cache:${key}:timestamp`;
 
     const [cached, timestamp] = await Promise.all([
       this.get<T>(cacheKey),
-      this.redis.get(timestampKey)
+      this.redis.get(timestampKey),
     ]);
 
     const now = Date.now();
@@ -213,7 +214,7 @@ class CacheService {
     const fresh = await fetchFn();
     await Promise.all([
       this.set(cacheKey, fresh, { ttl: options.ttl }),
-      this.redis.set(timestampKey, now.toString())
+      this.redis.set(timestampKey, now.toString()),
     ]);
 
     return fresh;
@@ -256,26 +257,28 @@ class CacheService {
 }
 
 // Usage
-const cache = new CacheService('redis://localhost:6379');
+const cache = new CacheService("redis://localhost:6379");
 
 // Simple get/set
-await cache.set('user:123', { name: 'John', age: 30 }, { ttl: 3600 });
-const user = await cache.get('user:123');
+await cache.set("user:123", { name: "John", age: 30 }, { ttl: 3600 });
+const user = await cache.get("user:123");
 
 // Get or set pattern
 const posts = await cache.getOrSet(
-  'posts:recent',
+  "posts:recent",
   async () => {
-    return await database.query('SELECT * FROM posts ORDER BY created_at DESC LIMIT 10');
+    return await database.query(
+      "SELECT * FROM posts ORDER BY created_at DESC LIMIT 10",
+    );
   },
-  { ttl: 300 }
+  { ttl: 300 },
 );
 
 // Stale-while-revalidate
 const data = await cache.getStaleWhileRevalidate(
-  'expensive-query',
+  "expensive-query",
   async () => await runExpensiveQuery(),
-  { ttl: 300, staleTime: 600 }
+  { ttl: 300, staleTime: 600 },
 );
 ```
 
@@ -394,7 +397,7 @@ class MemoryCache implements CacheLevel {
   async set(key: string, value: any, ttl: number = 60): Promise<void> {
     this.cache.set(key, {
       value,
-      expiry: Date.now() + ttl * 1000
+      expiry: Date.now() + ttl * 1000,
     });
   }
 
@@ -450,29 +453,22 @@ class MultiLevelCache {
 
   async set(key: string, value: any, ttl?: number): Promise<void> {
     // Set in all cache levels
-    await Promise.all(
-      this.levels.map(level => level.set(key, value, ttl))
-    );
+    await Promise.all(this.levels.map((level) => level.set(key, value, ttl)));
   }
 
   async delete(key: string): Promise<void> {
-    await Promise.all(
-      this.levels.map(level => level.delete(key))
-    );
+    await Promise.all(this.levels.map((level) => level.delete(key)));
   }
 }
 
 // Usage
-const cache = new MultiLevelCache([
-  new MemoryCache(),
-  new RedisCache(redis)
-]);
+const cache = new MultiLevelCache([new MemoryCache(), new RedisCache(redis)]);
 
 // Get from fastest available cache
-const data = await cache.get('user:123');
+const data = await cache.get("user:123");
 
 // Set in all caches
-await cache.set('user:123', userData, 3600);
+await cache.set("user:123", userData, 3600);
 ```
 
 ### 4. **Cache Invalidation Strategies**
@@ -491,11 +487,7 @@ class CacheInvalidation {
   /**
    * Tag-based invalidation
    */
-  async setWithTags(
-    key: string,
-    value: any,
-    tags: string[]
-  ): Promise<void> {
+  async setWithTags(key: string, value: any, tags: string[]): Promise<void> {
     // Store value
     await this.cache.set(key, value);
 
@@ -512,9 +504,7 @@ class CacheInvalidation {
     if (keys.length === 0) return 0;
 
     // Delete all keys
-    await Promise.all(
-      keys.map(key => this.cache.delete(key))
-    );
+    await Promise.all(keys.map((key) => this.cache.delete(key)));
 
     // Delete tag set
     await this.cache.redis.del(`tag:${tag}`);
@@ -528,13 +518,13 @@ class CacheInvalidation {
   async invalidateOnEvent(
     entity: string,
     id: string,
-    event: 'create' | 'update' | 'delete'
+    event: "create" | "update" | "delete",
   ): Promise<void> {
     const patterns = [
       `${entity}:${id}`,
       `${entity}:${id}:*`,
       `${entity}:list:*`,
-      `${entity}:count`
+      `${entity}:count`,
     ];
 
     for (const pattern of patterns) {
@@ -545,11 +535,7 @@ class CacheInvalidation {
   /**
    * Version-based invalidation
    */
-  async setVersioned(
-    key: string,
-    value: any,
-    version: number
-  ): Promise<void> {
+  async setVersioned(key: string, value: any, version: number): Promise<void> {
     const versionedKey = `${key}:v${version}`;
     await this.cache.set(versionedKey, value);
     await this.cache.set(`${key}:version`, version);
@@ -567,71 +553,82 @@ class CacheInvalidation {
 ### 5. **HTTP Caching Headers**
 
 ```typescript
-import express from 'express';
+import express from "express";
 
 const app = express();
 
 // Cache-Control middleware
-function cacheControl(maxAge: number, options: {
-  private?: boolean;
-  noStore?: boolean;
-  noCache?: boolean;
-  mustRevalidate?: boolean;
-  staleWhileRevalidate?: number;
-} = {}) {
-  return (req: express.Request, res: express.Response, next: express.NextFunction) => {
+function cacheControl(
+  maxAge: number,
+  options: {
+    private?: boolean;
+    noStore?: boolean;
+    noCache?: boolean;
+    mustRevalidate?: boolean;
+    staleWhileRevalidate?: number;
+  } = {},
+) {
+  return (
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction,
+  ) => {
     const directives: string[] = [];
 
     if (options.noStore) {
-      directives.push('no-store');
+      directives.push("no-store");
     } else if (options.noCache) {
-      directives.push('no-cache');
+      directives.push("no-cache");
     } else {
-      directives.push(options.private ? 'private' : 'public');
+      directives.push(options.private ? "private" : "public");
       directives.push(`max-age=${maxAge}`);
 
       if (options.staleWhileRevalidate) {
-        directives.push(`stale-while-revalidate=${options.staleWhileRevalidate}`);
+        directives.push(
+          `stale-while-revalidate=${options.staleWhileRevalidate}`,
+        );
       }
     }
 
     if (options.mustRevalidate) {
-      directives.push('must-revalidate');
+      directives.push("must-revalidate");
     }
 
-    res.setHeader('Cache-Control', directives.join(', '));
+    res.setHeader("Cache-Control", directives.join(", "));
     next();
   };
 }
 
 // Static assets - long cache
-app.use('/static', cacheControl(31536000), express.static('public'));
+app.use("/static", cacheControl(31536000), express.static("public"));
 
 // API - short cache with revalidation
-app.get('/api/data',
+app.get(
+  "/api/data",
   cacheControl(60, { staleWhileRevalidate: 300 }),
   (req, res) => {
-    res.json({ data: 'cached for 60s' });
-  }
+    res.json({ data: "cached for 60s" });
+  },
 );
 
 // Dynamic content - no cache
-app.get('/api/user/profile',
+app.get(
+  "/api/user/profile",
   cacheControl(0, { private: true, noCache: true }),
   (req, res) => {
-    res.json({ user: 'always fresh' });
-  }
+    res.json({ user: "always fresh" });
+  },
 );
 
 // ETag support
-app.get('/api/resource/:id', async (req, res) => {
+app.get("/api/resource/:id", async (req, res) => {
   const resource = await getResource(req.params.id);
   const etag = generateETag(resource);
 
-  res.setHeader('ETag', etag);
+  res.setHeader("ETag", etag);
 
   // Check if client has current version
-  if (req.headers['if-none-match'] === etag) {
+  if (req.headers["if-none-match"] === etag) {
     return res.status(304).end();
   }
 
@@ -639,16 +636,17 @@ app.get('/api/resource/:id', async (req, res) => {
 });
 
 function generateETag(data: any): string {
-  return require('crypto')
-    .createHash('md5')
+  return require("crypto")
+    .createHash("md5")
     .update(JSON.stringify(data))
-    .digest('hex');
+    .digest("hex");
 }
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Set appropriate TTL values
 - Implement cache warming for critical data
 - Use cache-aside pattern for reads
@@ -661,6 +659,7 @@ function generateETag(data: any): string {
 - Monitor cache memory usage
 
 ### ❌ DON'T
+
 - Cache everything indiscriminately
 - Use caching as a fix for poor database design
 - Store sensitive data without encryption
@@ -672,13 +671,13 @@ function generateETag(data: any): string {
 
 ## Cache Strategies
 
-| Strategy | Description | Use Case |
-|----------|-------------|----------|
-| **Cache-Aside** | Application checks cache, loads from DB on miss | General purpose |
-| **Write-Through** | Write to cache and DB simultaneously | Strong consistency needed |
-| **Write-Behind** | Write to cache, async write to DB | High write throughput |
-| **Refresh-Ahead** | Proactively refresh before expiry | Predictable access patterns |
-| **Read-Through** | Cache loads from DB automatically | Simplified code |
+| Strategy          | Description                                     | Use Case                    |
+| ----------------- | ----------------------------------------------- | --------------------------- |
+| **Cache-Aside**   | Application checks cache, loads from DB on miss | General purpose             |
+| **Write-Through** | Write to cache and DB simultaneously            | Strong consistency needed   |
+| **Write-Behind**  | Write to cache, async write to DB               | High write throughput       |
+| **Refresh-Ahead** | Proactively refresh before expiry               | Predictable access patterns |
+| **Read-Through**  | Cache loads from DB automatically               | Simplified code             |
 
 ## Resources
 

@@ -1,6 +1,7 @@
 # SWOT Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-swot-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Conducts comprehensive SWOT analysis to evaluate strategic position and develop actionable recommendations. Combines strengths, weaknesses, opportunities, and threats into integrated strategies with implementation roadmaps.
 
 ## When to Use
+
 - Annual strategic planning sessions
 - Evaluating market entry or expansion decisions
 - Assessing competitive positioning
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Mid-size regional bank (#3 in metro area) looking to expand digital banking. Industry: Community banking in southeastern US. Goals: Grow deposits 15% annually, improve efficiency ratio, retain customers. Board wants strategy for competing with fintech and national banks. Strengths: Strong local relationships, good capital position. Weaknesses: Outdated technology, aging customer base. 3-year planning horizon.
 ```
 
 ### Output
+
 ```
 **Regional Bank Digital Strategy SWOT Analysis**
 

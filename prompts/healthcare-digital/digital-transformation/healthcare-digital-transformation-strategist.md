@@ -1,6 +1,7 @@
 # Healthcare Digital Transformation Strategist
 
 ## Metadata
+
 - **ID**: `healthcare-digital-strategy`
 - **Version**: 1.0.0
 - **Category**: Healthcare Digital/Digital Transformation
@@ -18,6 +19,7 @@ A comprehensive healthcare digital transformation expert that helps health syste
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing multi-year healthcare technology transformation programs
 - Optimizing EHR systems for clinical efficiency
 - Creating patient digital experience strategies
@@ -25,6 +27,7 @@ A comprehensive healthcare digital transformation expert that helps health syste
 - Building business cases for health IT investments
 
 **Anti-Patterns (When NOT to Use):**
+
 - Clinical protocol development
 - Medical device selection or evaluation
 - Regulatory compliance auditing
@@ -111,6 +114,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Health system: 4 hospitals (850 beds), 47 clinics, serving 650K population. Epic EHR (2018 implementation), 60% clinician satisfaction. Challenges: Alert fatigue, documentation burden, 35% patient portal adoption. Goals: Improve provider satisfaction, reduce documentation time, enhance patient access, reduce costs. Budget: $45M annual IT, $180M 3-year transformation. Constraints: Legacy infrastructure, varying clinic IT maturity.
 
 ### Output
@@ -121,6 +125,7 @@ Health system: 4 hospitals (850 beds), 47 clinics, serving 650K population. Epic
 Transform from technology-challenged healthcare delivery to a patient-centered, provider-optimized digital ecosystem that improves outcomes, satisfaction, and operational efficiency while reducing total cost of care.
 
 **Strategic Pillars:**
+
 1. Provider Experience Excellence
 2. Patient Access and Engagement
 3. Operational Efficiency and Automation
@@ -128,34 +133,39 @@ Transform from technology-challenged healthcare delivery to a patient-centered, 
 
 **Clinical Workflow Optimization:**
 
-*Physician Workflows (Year 1 Focus):*
+_Physician Workflows (Year 1 Focus):_
+
 - Alert optimization: 847 daily alerts reduced to 420 (50%)
 - Documentation templates and smart phrases redesign
 - Voice recognition integration for all specialties
 - Mobile optimization for rounding and on-call
 - Target: 40% documentation time reduction
 
-*Nursing Workflows (Year 2):*
+_Nursing Workflows (Year 2):_
+
 - Bedside documentation optimization
 - Care coordination dashboard
 - Patient communication automation
 - Handoff documentation streamlining
 
-*Administrative Staff (Ongoing):*
+_Administrative Staff (Ongoing):_
+
 - Prior authorization automation
 - Eligibility verification automation
 - Scheduling optimization
 
 **Patient Experience Strategy:**
 
-*Digital Access Enhancement:*
+_Digital Access Enhancement:_
+
 - Portal redesign with intuitive UX (mobile-first)
 - Mobile app with full functionality
 - Online self-scheduling (24/7)
 - Digital check-in and intake
 - Target: 35% to 75% portal activation
 
-*Virtual Care Expansion:*
+_Virtual Care Expansion:_
+
 - Multi-specialty telehealth platform
 - Remote patient monitoring for chronic conditions
 - Asynchronous messaging (e-visits)
@@ -173,21 +183,24 @@ Infrastructure: Cloud-Hybrid | Security | Identity | Disaster Recovery
 
 **Implementation Roadmap:**
 
-*Year 1 - Foundation ($60M):*
+_Year 1 - Foundation ($60M):_
+
 - EHR optimization and alert reduction
 - Portal enhancement and adoption campaign
 - 5 core services online scheduling
 - Data platform foundation
 - Metrics: 40% doc time reduction, 50% portal adoption
 
-*Year 2 - Scale ($70M):*
+_Year 2 - Scale ($70M):_
+
 - All services digitally enabled
 - Mobile app launch
 - Analytics platform operational
 - Workflow automation (prior auth, scheduling)
 - Metrics: 60% portal, 30% telehealth visits, 70% provider satisfaction
 
-*Year 3 - Optimize ($50M):*
+_Year 3 - Optimize ($50M):_
+
 - AI-powered clinical decision support
 - Predictive analytics deployment
 - Full legacy decommission
@@ -196,19 +209,22 @@ Infrastructure: Cloud-Hybrid | Security | Identity | Disaster Recovery
 
 **ROI and Outcome Measurement:**
 
-*Clinical Quality:*
+_Clinical Quality:_
+
 - Patient safety events: 45% reduction
 - Readmission rates: 25% reduction
 - Medication errors: 60% reduction
 - Care gap closure: 40% improvement
 
-*Operational Efficiency:*
+_Operational Efficiency:_
+
 - Documentation time: 40% reduction
 - Administrative processing: 55% reduction
 - Revenue cycle days: 25% improvement (52 to 39 days)
 - Prior auth time: 80% reduction
 
-*Financial Impact:*
+_Financial Impact:_
+
 - 3-Year Investment: $180M
 - 3-Year Operational Benefits: $147M
 - Revenue Enhancement: $100M
@@ -216,6 +232,7 @@ Infrastructure: Cloud-Hybrid | Security | Identity | Disaster Recovery
 - Payback Period: 26 months
 
 **Governance Structure:**
+
 - Executive Steering Committee: CMO, CIO, CFO (monthly)
 - Clinical Informatics Council: Department champions (bi-weekly)
 - Patient Advisory Board (quarterly)
@@ -224,6 +241,7 @@ Infrastructure: Cloud-Hybrid | Security | Identity | Disaster Recovery
 ---
 
 ## Related Prompts
+
 - [Healthcare AI Implementation Expert](../healthcare-ai-implementation-expert.md)
 - [Telehealth Platform Development Expert](../telehealth-platform-development-expert.md)
 - [Patient Data Analytics Expert](../patient-data-analytics-expert.md)

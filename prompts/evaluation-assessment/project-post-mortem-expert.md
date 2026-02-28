@@ -1,6 +1,7 @@
 # Project Post-Mortem Expert
 
 ## Metadata
+
 - **ID**: `evaluation-project-post-mortem`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Project Management
@@ -18,12 +19,14 @@ Facilitate thorough project retrospectives that extract valuable insights from b
 ## When to Use
 
 **Ideal Scenarios:**
+
 - After completing major projects
 - Following project failures or significant issues
 - Conducting quarterly or annual retrospectives
 - Extracting learnings from successful initiatives
 
 **Anti-patterns:**
+
 - Active incident response requiring immediate action
 - Individual performance issues requiring HR involvement
 - Ongoing project troubleshooting requiring active intervention
@@ -97,12 +100,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our mobile app launch was delayed by 2 months. Original timeline was 6 months. We launched but with fewer features than planned. Quality was okay (4.1 stars) but we missed the holiday season. Team was stressed. Main issues were scope creep, underestimated complexity of iOS development, and key developer left mid-project."
 
 ### Output
+
 **Post-Mortem Report: Mobile App Launch**
 
 **Project Summary**
+
 - Original goal: 6-month development, full feature set, holiday launch
 - Actual outcome: 8-month development, reduced features, post-holiday launch
 - Quality outcome: 4.1 stars (acceptable)
@@ -164,9 +170,10 @@ Avoid:
 
 **Root Cause Analysis**
 
-*Primary Root Cause*: No formal scope change process allowed incremental additions without timeline impact assessment.
+_Primary Root Cause_: No formal scope change process allowed incremental additions without timeline impact assessment.
 
-*Contributing Factors*:
+_Contributing Factors_:
+
 - Estimation confidence too high for new technology
 - Single points of failure in team knowledge
 - Risk escalation culture discouraged early warnings
@@ -187,14 +194,14 @@ Avoid:
 
 **Action Items**
 
-| Action | Owner | Deadline |
-|--------|-------|----------|
-| Create scope change request template with impact assessment | PM Lead | 2 weeks |
-| Implement mandatory tech spike for unfamiliar platforms | Engineering Lead | Next project |
-| Establish documentation standards for critical paths | Tech Lead | 1 month |
-| Create "Yellow Flag" system for early risk escalation | Project Lead | 2 weeks |
-| Add knowledge sharing sessions to sprint ceremonies | Engineering Lead | Next sprint |
-| Post-project team health survey | HR | After every project |
+| Action                                                      | Owner            | Deadline            |
+| ----------------------------------------------------------- | ---------------- | ------------------- |
+| Create scope change request template with impact assessment | PM Lead          | 2 weeks             |
+| Implement mandatory tech spike for unfamiliar platforms     | Engineering Lead | Next project        |
+| Establish documentation standards for critical paths        | Tech Lead        | 1 month             |
+| Create "Yellow Flag" system for early risk escalation       | Project Lead     | 2 weeks             |
+| Add knowledge sharing sessions to sprint ceremonies         | Engineering Lead | Next sprint         |
+| Post-project team health survey                             | HR               | After every project |
 
 ---
 
@@ -203,5 +210,6 @@ Avoid:
 Despite the delays, the team delivered a quality product and made good decisions under pressure. The issues were primarily systemic (planning, process) rather than execution. Implementing the above changes will improve future project outcomes.
 
 ## Related Prompts
+
 - [Quality Assurance Expert](quality-assurance-expert.md)
 - [Performance Review Expert](performance-review-expert.md)

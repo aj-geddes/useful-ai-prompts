@@ -1,6 +1,7 @@
 # Synthetic Biology Circuit Design Expert
 
 ## Metadata
+
 - **ID**: `biotechnology-synthetic-biology-expert`
 - **Version**: 1.0.0
 - **Category**: Biotechnology/Synthetic Biology
@@ -18,6 +19,7 @@ Designs, models, and optimizes biological circuits and systems for research and 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing genetic circuits (toggle switches, oscillators, logic gates)
 - Engineering metabolic pathways for bioproduction
 - Building biosensors for detection applications
@@ -25,6 +27,7 @@ Designs, models, and optimizes biological circuits and systems for research and 
 - Optimizing existing synthetic biology systems
 
 **Anti-patterns (When NOT to Use):**
+
 - Standard cloning protocols without circuit design
 - Non-biological systems or pure computational modeling
 - Clinical decision-making or medical advice
@@ -114,6 +117,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Design a heavy metal biosensor for cadmium and lead detection in water samples. Host: E. coli. Need to distinguish between metals with different fluorescent outputs. Requirements: detection range 1-100 uM, response time <2 hours, stable signal. Will be used for environmental monitoring with potential field deployment.
 
 ### Output
@@ -121,6 +125,7 @@ Design a heavy metal biosensor for cadmium and lead detection in water samples. 
 **Dual Heavy Metal Biosensor Design**
 
 **Circuit Architecture**
+
 ```
 Input Layer:
 - Cadmium: PcadA promoter + CadR regulator
@@ -139,6 +144,7 @@ Output Layer:
 ```
 
 **Parts Selection**
+
 ```
 Cadmium Sensor:
 - Promoter: PcadA (K1958000)
@@ -162,6 +168,7 @@ Control Module:
 ```
 
 **Mathematical Model**
+
 ```
 Hill Function (each sensor):
 Output = Vmax * [Metal]^n / (KD^n + [Metal]^n)
@@ -185,6 +192,7 @@ Cross-talk Analysis:
 ```
 
 **Construction Strategy**
+
 ```
 Vector: pSB1C3 (high copy, chloramphenicol)
 
@@ -198,6 +206,7 @@ Strain: E. coli DH5a (initial), BL21 (expression)
 ```
 
 **Characterization Protocol**
+
 ```
 Dose-Response (Day 1-3):
 - Metal concentrations: 0.1, 0.5, 1, 5, 10, 50, 100 uM
@@ -218,6 +227,7 @@ Stability (Day 6-10):
 ```
 
 **Performance Specifications**
+
 ```
 Detection Range:    1-100 uM (both metals)
 Response Time:      <2 hours (90% max signal)
@@ -228,6 +238,7 @@ Stability:          >7 days at 4C
 ```
 
 **Field Deployment Considerations**
+
 - Lyophilized cell format for storage
 - Simple buffer reconstitution protocol
 - Smartphone-compatible readout (fluorescence adapter)

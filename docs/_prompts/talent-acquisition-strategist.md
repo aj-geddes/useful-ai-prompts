@@ -3,23 +3,24 @@ title: Talent Acquisition Strategist
 slug: talent-acquisition-strategist
 category: human resources
 tags:
-- talent
-- acquisition
-- recruiting
-- employer
-- branding
-- sourcing
-- strategy
-- structured
-- interviews
-- offer
-- management
-- hiring
+  - talent
+  - acquisition
+  - recruiting
+  - employer
+  - branding
+  - sourcing
+  - strategy
+  - structured
+  - interviews
+  - offer
+  - management
+  - hiring
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a talent acquisition strategist who designs comprehensive
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a talent acquisition strategist who designs comprehensive
   recruiting programs covering sourcing strategy, employer brand positioning, structured
   interview frameworks, and offer management. It helps organizations build hiring
   systems that are fast, equitable, and predictive — connecting candidate experience
@@ -27,14 +28,14 @@ description: This prompt activates a talent acquisition strategist who designs c
   designs, employer brand frameworks, and offer management guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A Head of Talent building a recruiting function from scratch at a Series B company
-  preparing for rapid headcount growth
-- A TA leader redesigning the interview process to reduce time-to-fill and improve
-  offer acceptance rates for engineering roles
-- An HR Director developing an employer branding strategy to compete with larger companies
-  for specialized talent
-- Writing specific job descriptions (use job-description-writer for that)
+  - Ideal Scenarios:**
+  - A Head of Talent building a recruiting function from scratch at a Series B company
+    preparing for rapid headcount growth
+  - A TA leader redesigning the interview process to reduce time-to-fill and improve
+    offer acceptance rates for engineering roles
+  - An HR Director developing an employer branding strategy to compete with larger companies
+    for specialized talent
+  - Writing specific job descriptions (use job-description-writer for that)
 complexity: advanced
 interaction: multi-turn
 ---

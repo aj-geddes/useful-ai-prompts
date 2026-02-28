@@ -1,20 +1,19 @@
 <!-- Viral Content Features -->
 <div class="viral-features">
-  
   <!-- Prompt of the Day Section -->
   <div class="prompt-of-the-day" id="promptOfTheDay">
     <div class="potd-header">
       <h2><i class="fas fa-star"></i> Prompt of the Day</h2>
       <p>Discover a featured prompt that's trending in the community</p>
     </div>
-    
+
     <div class="potd-content" id="potdContent">
       <div class="potd-card">
         <div class="potd-badge">
           <i class="fas fa-trophy"></i>
           Featured
         </div>
-        
+
         <div class="potd-prompt" id="potdPrompt">
           <!-- Will be populated by JavaScript -->
           <div class="loading-placeholder">
@@ -22,7 +21,7 @@
             <div class="skeleton-text short"></div>
           </div>
         </div>
-        
+
         <div class="potd-actions">
           <a href="#" class="potd-link" id="potdLink">
             View Full Prompt <i class="fas fa-arrow-right"></i>
@@ -35,14 +34,14 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Trending Prompts Section -->
   <div class="trending-prompts" id="trendingPrompts">
     <div class="trending-header">
       <h2><i class="fas fa-fire"></i> Trending This Week</h2>
       <p>Most shared and copied prompts in the last 7 days</p>
     </div>
-    
+
     <div class="trending-grid" id="trendingGrid">
       <!-- Will be populated by JavaScript -->
       <div class="trending-loading">
@@ -53,21 +52,21 @@
         </div>
       </div>
     </div>
-    
+
     <div class="trending-actions">
       <a href="/trending/" class="view-all-trending">
         View All Trending <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
   </div>
-  
+
   <!-- Most Popular Categories -->
   <div class="popular-categories" id="popularCategories">
     <div class="popular-header">
       <h2><i class="fas fa-chart-bar"></i> Popular Categories</h2>
       <p>Categories with the most activity this month</p>
     </div>
-    
+
     <div class="categories-chart" id="categoriesChart">
       <div class="category-bar" data-category="technical-workflows">
         <div class="bar-label">Technical Workflows</div>
@@ -76,7 +75,7 @@
           <span class="bar-value">85%</span>
         </div>
       </div>
-      
+
       <div class="category-bar" data-category="business-workflows">
         <div class="bar-label">Business Workflows</div>
         <div class="bar-container">
@@ -84,7 +83,7 @@
           <span class="bar-value">72%</span>
         </div>
       </div>
-      
+
       <div class="category-bar" data-category="creativity-innovation">
         <div class="bar-label">Creativity & Innovation</div>
         <div class="bar-container">
@@ -92,7 +91,7 @@
           <span class="bar-value">68%</span>
         </div>
       </div>
-      
+
       <div class="category-bar" data-category="planning">
         <div class="bar-label">Planning</div>
         <div class="bar-container">
@@ -100,7 +99,7 @@
           <span class="bar-value">61%</span>
         </div>
       </div>
-      
+
       <div class="category-bar" data-category="analysis">
         <div class="bar-label">Analysis</div>
         <div class="bar-container">
@@ -110,14 +109,14 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Social Media Embeddable Widget -->
   <div class="embeddable-widget" id="embeddableWidget">
     <div class="widget-header">
       <h2><i class="fas fa-code"></i> Embed This Library</h2>
       <p>Share our prompt library on your website or blog</p>
     </div>
-    
+
     <div class="widget-options">
       <div class="widget-preview" id="widgetPreview">
         <div class="mini-widget">
@@ -133,7 +132,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="widget-code">
         <h4>Embed Code:</h4>
         <div class="code-container">
@@ -146,7 +145,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Newsletter Signup -->
   <div class="newsletter-signup" id="newsletterSignup">
     <div class="newsletter-content">
@@ -155,12 +154,20 @@
       </div>
       <div class="newsletter-text">
         <h3>Stay Updated</h3>
-        <p>Get weekly updates on new prompts, trending categories, and AI insights.</p>
+        <p>
+          Get weekly updates on new prompts, trending categories, and AI
+          insights.
+        </p>
       </div>
       <div class="newsletter-form">
         <form id="newsletterForm" action="#" method="post">
           <div class="form-group">
-            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Enter your email"
+              required
+            />
             <button type="submit" class="subscribe-btn">
               <i class="fas fa-paper-plane"></i>
               Subscribe
@@ -168,20 +175,21 @@
           </div>
           <p class="privacy-note">
             <i class="fas fa-shield-alt"></i>
-            No spam, unsubscribe anytime. See our <a href="/privacy">privacy policy</a>.
+            No spam, unsubscribe anytime. See our
+            <a href="/privacy">privacy policy</a>.
           </p>
         </form>
       </div>
     </div>
   </div>
-  
+
   <!-- Community Highlights -->
   <div class="community-highlights" id="communityHighlights">
     <div class="highlights-header">
       <h2><i class="fas fa-users"></i> Community Highlights</h2>
       <p>See how others are using our prompts</p>
     </div>
-    
+
     <div class="highlights-grid">
       <div class="highlight-card">
         <div class="highlight-avatar">
@@ -189,54 +197,62 @@
         </div>
         <div class="highlight-content">
           <blockquote>
-            "The strategic planning prompts helped us restructure our entire product roadmap. Incredible results!"
+            "The strategic planning prompts helped us restructure our entire
+            product roadmap. Incredible results!"
           </blockquote>
           <cite>- Sarah M., Product Manager</cite>
         </div>
         <div class="highlight-prompt">
-          <a href="/prompts/planning/strategic-roadmap-generator/">Strategic Roadmap Generator</a>
+          <a href="/prompts/planning/strategic-roadmap-generator/"
+            >Strategic Roadmap Generator</a
+          >
         </div>
       </div>
-      
+
       <div class="highlight-card">
         <div class="highlight-avatar">
           <i class="fas fa-user-circle"></i>
         </div>
         <div class="highlight-content">
           <blockquote>
-            "As a developer, the technical workflow prompts save me hours every week. Game changer!"
+            "As a developer, the technical workflow prompts save me hours every
+            week. Game changer!"
           </blockquote>
           <cite>- Mike R., Senior Developer</cite>
         </div>
         <div class="highlight-prompt">
-          <a href="/prompts/technical-workflows/code-review-expert/">Code Review Expert</a>
+          <a href="/prompts/technical-workflows/code-review-expert/"
+            >Code Review Expert</a
+          >
         </div>
       </div>
-      
+
       <div class="highlight-card">
         <div class="highlight-avatar">
           <i class="fas fa-user-circle"></i>
         </div>
         <div class="highlight-content">
           <blockquote>
-            "The creative prompts sparked ideas I never would have thought of. Absolutely brilliant collection!"
+            "The creative prompts sparked ideas I never would have thought of.
+            Absolutely brilliant collection!"
           </blockquote>
           <cite>- Lisa K., Creative Director</cite>
         </div>
         <div class="highlight-prompt">
-          <a href="/prompts/creativity-innovation/breakthrough-ideation-expert/">Breakthrough Ideation</a>
+          <a href="/prompts/creativity-innovation/breakthrough-ideation-expert/"
+            >Breakthrough Ideation</a
+          >
         </div>
       </div>
     </div>
   </div>
-  
 </div>
 
 <!-- Viral Features JavaScript Initialization -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  if (typeof initViralFeatures === 'function') {
-    initViralFeatures();
-  }
-});
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof initViralFeatures === "function") {
+      initViralFeatures();
+    }
+  });
 </script>

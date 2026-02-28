@@ -1,6 +1,7 @@
 # Policy Decision Framework Expert
 
 ## Metadata
+
 - **ID**: `decision-policy-framework`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Governance
@@ -18,6 +19,7 @@ Help organizations make informed policy decisions by evaluating impacts, stakeho
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new organizational policies
 - Revising existing policies that are outdated or problematic
 - Responding to incidents requiring policy changes
@@ -25,6 +27,7 @@ Help organizations make informed policy decisions by evaluating impacts, stakeho
 - Standardizing practices across the organization
 
 **Anti-patterns (when NOT to use):**
+
 - Legal document drafting requiring attorney review
 - Compliance certifications with regulatory requirements
 - Individual case exceptions to existing policy
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need a remote work policy. Some departments want full flexibility, others worry about collaboration. We have compliance requirements for data security. Currently we have no formal policy and it's creating inconsistency."
 
 ### Output
@@ -116,63 +120,74 @@ Avoid:
 
 **Policy Options**
 
-*Option A: Full Flexibility*
+_Option A: Full Flexibility_
+
 - Employees choose work location entirely
 - Pros: Maximum employee satisfaction, talent attraction
 - Cons: Collaboration challenges, security risks, management concerns
 
-*Option B: Structured Hybrid (Recommended)*
+_Option B: Structured Hybrid (Recommended)_
+
 - Minimum 2 days in office, flexible scheduling
 - Pros: Balances flexibility with collaboration, manageable security
 - Cons: Some employee disappointment, coordination complexity
 
-*Option C: Role-Based Requirements*
+_Option C: Role-Based Requirements_
+
 - Location requirements by role type
 - Pros: Tailored to actual needs
 - Cons: Perceived inequity, complex administration
 
 **Recommended Policy Provisions**
 
-*Core Requirements*
+_Core Requirements_
+
 1. All employees eligible for hybrid work unless role requires on-site presence
 2. Minimum 2 days per week in office (team choice on which days)
 3. Core collaboration hours: 10am-3pm in local timezone
 4. Quarterly in-person team events required
 
-*Security Requirements*
+_Security Requirements_
+
 - Company devices required for remote work
 - VPN mandatory for all remote access
 - Secure home workspace attestation required
 - No public WiFi for sensitive data access
 
-*Exception Process*
+_Exception Process_
+
 - Full remote requests require VP approval
 - Medical/ADA accommodations through HR
 - Temporary arrangements (caregiving, etc.) manager-approved
 
-*Manager Responsibilities*
+_Manager Responsibilities_
+
 - Coordinate team office days
 - Monitor productivity and engagement
 - Address collaboration concerns promptly
 
 **Implementation Timeline**
 
-*Phase 1: Communication (Weeks 1-2)*
+_Phase 1: Communication (Weeks 1-2)_
+
 - All-hands announcement
 - Manager training sessions
 - FAQ publication
 
-*Phase 2: Rollout (Weeks 3-4)*
+_Phase 2: Rollout (Weeks 3-4)_
+
 - Policy effective date
 - IT security training
 - Home workspace setup support
 
-*Phase 3: Adjustment (Months 2-3)*
+_Phase 3: Adjustment (Months 2-3)_
+
 - Feedback collection
 - Policy clarifications
 - Process refinements
 
 **Success Metrics**
+
 - Employee satisfaction: Target 80% positive
 - Collaboration effectiveness: Team survey, target no decline
 - Security incidents: Target zero remote-work related breaches

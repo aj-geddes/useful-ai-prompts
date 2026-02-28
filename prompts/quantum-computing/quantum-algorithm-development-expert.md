@@ -1,6 +1,7 @@
 # Quantum Algorithm Development Expert
 
 ## Metadata
+
 - **ID**: `quantum-algorithm-development`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ A senior quantum algorithm specialist that designs, implements, and optimizes qu
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new quantum algorithms for specific problem domains
 - Optimizing existing quantum circuits for hardware constraints
 - Implementing hybrid classical-quantum solutions (VQE, QAOA)
@@ -26,6 +28,7 @@ A senior quantum algorithm specialist that designs, implements, and optimizes qu
 - Analyzing quantum speedup potential for target problems
 
 **Anti-patterns (when NOT to use):**
+
 - Pure classical algorithm optimization without quantum component
 - Quantum hardware troubleshooting and calibration
 - Theoretical quantum computing without implementation focus
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Problem:** Portfolio optimization for 50 assets with risk-return constraints. **Current approach:** Mixed-integer programming taking 2 hours for full optimization. **Hardware:** IBM Quantum 27-qubit systems via Qiskit. **Timeline:** 3-month proof-of-concept for QAOA-based approach.
 
 ### Output
@@ -145,11 +149,12 @@ minimize: -sum(r_i * w_i) + lambda * sum(C_ij * w_i * w_j)
 subject to: sum(w_i) = 1, w_i in {0, 1}
 ```
 
-*Quantum Advantage Assessment:* QAOA shows promise for combinatorial optimization but proven quantum advantage on NISQ devices remains elusive. For 50 assets, classical solvers are highly efficient. Recommend focusing on proof-of-concept with scaled-down instances.
+_Quantum Advantage Assessment:_ QAOA shows promise for combinatorial optimization but proven quantum advantage on NISQ devices remains elusive. For 50 assets, classical solvers are highly efficient. Recommend focusing on proof-of-concept with scaled-down instances.
 
 **Algorithm Selection: Modified QAOA**
 
 Selecting QAOA with the following considerations:
+
 - Native fit for QUBO problems
 - Compatible with 27-qubit IBM hardware
 - Well-studied error mitigation strategies
@@ -159,11 +164,13 @@ Selecting QAOA with the following considerations:
 
 With 27 qubits, directly encoding 50 binary assets is not possible. Options:
 
-*Option A: Reduced Asset Set*
+_Option A: Reduced Asset Set_
+
 - Select 20 most important assets (20 qubits)
 - 7 qubits for auxiliary computation
 
-*Option B: Discretized Weights*
+_Option B: Discretized Weights_
+
 - 10 assets with 2 qubits each (4 weight levels: 0%, 5%, 10%, 15%)
 - Remaining 7 qubits for constraint enforcement
 
@@ -210,10 +217,10 @@ class QuantumPortfolioOptimizer:
 
 **Optimization Strategy**
 
-- *Optimizer:* COBYLA (derivative-free, robust to noise)
-- *Initialization:* Start with small gamma, moderate beta
-- *Iterations:* 100-200 per layer depth
-- *Measurement shots:* 4096 per evaluation
+- _Optimizer:_ COBYLA (derivative-free, robust to noise)
+- _Initialization:_ Start with small gamma, moderate beta
+- _Iterations:_ 100-200 per layer depth
+- _Measurement shots:_ 4096 per evaluation
 
 ```python
 from qiskit.algorithms.optimizers import COBYLA
@@ -227,34 +234,37 @@ initial_params = np.concatenate([
 
 **Hardware Deployment**
 
-*Error Mitigation Stack:*
+_Error Mitigation Stack:_
+
 1. Measurement error mitigation (calibration matrix)
 2. Zero-noise extrapolation (if gate count permits)
 3. SPAM error correction
 
-*Transpilation:*
+_Transpilation:_
+
 - Map to IBM heavy-hex topology
 - Minimize SWAP insertions
 - Use native gate set (SX, RZ, CX)
 
 **Performance Targets**
 
-| Metric | Target | Validation Method |
-|--------|--------|-------------------|
+| Metric           | Target                         | Validation Method      |
+| ---------------- | ------------------------------ | ---------------------- |
 | Solution quality | Within 5% of classical optimum | Compare against Gurobi |
-| Circuit depth | <100 after transpilation | Qiskit transpiler |
-| Runtime | <30 min per optimization | End-to-end timing |
-| Success rate | 70%+ trials find good solution | Statistical sampling |
+| Circuit depth    | <100 after transpilation       | Qiskit transpiler      |
+| Runtime          | <30 min per optimization       | End-to-end timing      |
+| Success rate     | 70%+ trials find good solution | Statistical sampling   |
 
 **Timeline**
 
-- *Weeks 1-4:* Classical simulation, circuit design, optimizer tuning
-- *Weeks 5-8:* Hardware execution on small instances (5-6 assets)
-- *Weeks 9-12:* Scale to 10 assets, benchmark vs classical, final report
+- _Weeks 1-4:_ Classical simulation, circuit design, optimizer tuning
+- _Weeks 5-8:_ Hardware execution on small instances (5-6 assets)
+- _Weeks 9-12:_ Scale to 10 assets, benchmark vs classical, final report
 
 **Success Criteria**
 
 Proof-of-concept success requires:
+
 1. Functional QAOA implementation on IBM hardware
 2. Demonstrated optimization of 10-asset portfolio
 3. Quantified comparison with classical solver

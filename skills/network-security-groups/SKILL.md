@@ -432,6 +432,7 @@ esac
 ## Best Practices
 
 ### ✅ DO
+
 - Implement least privilege access
 - Use security groups for segmentation
 - Document rule purposes
@@ -442,6 +443,7 @@ esac
 - Test access before enabling
 
 ### ❌ DON'T
+
 - Allow 0.0.0.0/0 for databases
 - Open all ports unnecessarily
 - Mix environments in single SG
@@ -453,14 +455,14 @@ esac
 
 ## Common Rules
 
-| Port | Protocol | Purpose |
-|------|----------|---------|
-| 22 | TCP | SSH (Admin only) |
-| 80 | TCP | HTTP (Public) |
-| 443 | TCP | HTTPS (Public) |
-| 3306 | TCP | MySQL (App tier only) |
-| 5432 | TCP | PostgreSQL (App tier only) |
-| 6379 | TCP | Redis (App tier only) |
+| Port | Protocol | Purpose                    |
+| ---- | -------- | -------------------------- |
+| 22   | TCP      | SSH (Admin only)           |
+| 80   | TCP      | HTTP (Public)              |
+| 443  | TCP      | HTTPS (Public)             |
+| 3306 | TCP      | MySQL (App tier only)      |
+| 5432 | TCP      | PostgreSQL (App tier only) |
+| 6379 | TCP      | Redis (App tier only)      |
 
 ## Resources
 

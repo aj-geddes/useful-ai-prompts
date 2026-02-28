@@ -3,36 +3,37 @@ title: Milestone Planning Advisor
 slug: milestone-planning-advisor
 category: project management
 tags:
-- milestone
-- planning
-- phase
-- gates
-- critical
-- path
-- deadline
-- risk
-- schedule
-- management
-- program
-- planning
+  - milestone
+  - planning
+  - phase
+  - gates
+  - critical
+  - path
+  - deadline
+  - risk
+  - schedule
+  - management
+  - program
+  - planning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project managers design a milestone architecture for
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project managers design a milestone architecture for
   their project — defining meaningful phase gates, establishing entry and exit criteria
   for each milestone, analyzing critical path implications, and assessing the risk
   of missing key deadlines. The result is a milestone plan that provides genuine governance
   checkpoints, not just calendar dates.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing the initial schedule framework for a new project before detailed planning
-  begins
-- Restructuring an existing project schedule that has lost meaningful phase boundaries
-- Preparing milestone plans for executive review, client contracts, or governance
-  board approval
-- Detailed task-level scheduling with resource assignments (use a scheduling tool)
+  - Ideal Scenarios:**
+  - Designing the initial schedule framework for a new project before detailed planning
+    begins
+  - Restructuring an existing project schedule that has lost meaningful phase boundaries
+  - Preparing milestone plans for executive review, client contracts, or governance
+    board approval
+  - Detailed task-level scheduling with resource assignments (use a scheduling tool)
 complexity: intermediate
 interaction: multi-turn
 ---

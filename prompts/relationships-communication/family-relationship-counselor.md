@@ -1,6 +1,7 @@
 # Family Relationship Counselor
 
 ## Metadata
+
 - **ID**: `family-relationship-counselor`
 - **Version**: 1.1.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Improve family dynamics, resolve conflicts, and strengthen bonds through better 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving communication with family members
 - Resolving ongoing family conflicts
 - Navigating family transitions (marriage, divorce, aging parents)
@@ -26,6 +28,7 @@ Improve family dynamics, resolve conflicts, and strengthen bonds through better 
 - Managing holiday or event family stress
 
 **Anti-Patterns (When NOT to Use):**
+
 - Family abuse situations requiring professional intervention
 - Replacement for professional family therapy
 - Mental health crises requiring clinical support
@@ -107,9 +110,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Tension with my mother who is critical of my parenting choices. Every visit becomes stressful. She makes comments about my kids' behavior, my discipline approach, and my work-life balance. I want to maintain the relationship for my kids' sake but need the criticism to stop. My father usually stays silent during these moments.
 
 ### Output
+
 **Family Relationship Strategy: Managing Critical Parent**
 
 **Dynamic Analysis**
@@ -117,63 +122,71 @@ Your mother's criticism likely stems from: anxiety about her grandchildren, diff
 
 **Pre-Visit Preparation**
 
-*Set Internal Boundaries*
+_Set Internal Boundaries_
 Decide in advance what you will and won't engage with:
+
 - Will address: Direct criticism of your children in front of them
 - Will redirect: Unsolicited parenting advice
 - Will ignore: Sighs, looks, and passive commentary
 
-*Prime the Conversation*
+_Prime the Conversation_
 Before visits, call ahead:
 "Mom, I'm looking forward to seeing you. I want our visits to be enjoyable for everyone. I'm asking that we avoid discussing parenting approaches while you're here. Can we agree to that?"
 
 **In-the-Moment Responses**
 
-*For Direct Criticism*
+_For Direct Criticism_
 Calm, firm, brief:
+
 - "I've got this, Mom."
 - "We do it differently, and that's okay."
 - "I appreciate your concern. I'm handling it."
 
-*For Persistent Comments*
+_For Persistent Comments_
 Set the boundary:
+
 - "Mom, I've asked you not to comment on my parenting. If it continues, we'll need to cut the visit short."
 - "This isn't open for discussion."
 
-*For Criticism in Front of Kids*
+_For Criticism in Front of Kids_
 Address immediately:
+
 - "Kids, Grandma and I see things differently sometimes. In our house, we [your approach]."
 - To Mom: "Let's discuss this privately later."
 
 **Engaging Your Father**
 He may be an ally if approached right:
+
 - Privately: "Dad, when Mom criticizes my parenting, it makes visits hard. It would help if you could redirect the conversation."
 - Give him specific language: "Something like 'Let's just enjoy the grandkids.'"
 
 **Long-Term Strategy**
 
-*Shorter, More Frequent Visits*
+_Shorter, More Frequent Visits_
 Reduce pressure: 2-hour visits are easier to manage than weekend stays.
 
-*Create Positive Experiences*
+_Create Positive Experiences_
 Plan activities during visits so there's less unstructured criticism time.
 
-*Acknowledge What Works*
+_Acknowledge What Works_
 When she's supportive, name it: "I love how you read to the kids, Mom. They adore that time with you."
 
 **Protecting Your Children**
+
 - Don't let criticism happen unchallenged in front of them
 - Privately explain to age-appropriate kids: "Grandma grew up differently, so she has different ideas"
 - Model healthy boundary-setting for them
 
 **Realistic Expectations**
 Your mother may not change completely. Success is:
+
 - Fewer critical comments
 - Your ability to redirect without anxiety
 - Visits that don't leave you depleted
 - Kids having positive grandparent relationship despite challenges
 
 **If Boundaries Are Repeatedly Violated**
+
 - Reduce visit frequency
 - Shorten visit duration
 - Meet in neutral locations
@@ -182,6 +195,7 @@ Your mother may not change completely. Success is:
 ---
 
 ## Related Prompts
+
 - [Conflict Resolution Mediator](conflict-resolution-mediator.md) - For structured mediation approaches
 - [Communication Skills Enhancer](communication-skills-enhancer.md) - For broader communication development
 - [Parenting Strategy Guide](parenting-strategy-guide.md) - For child-focused strategies

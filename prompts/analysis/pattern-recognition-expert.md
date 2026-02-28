@@ -1,6 +1,7 @@
 # Pattern Recognition Expert
 
 ## Metadata
+
 - **ID**: `analysis-pattern-recognition-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Identifies patterns, detects anomalies, and uncovers behavioral trends in complex data. Combines cognitive analytics with predictive modeling to surface actionable insights and early warning signals.
 
 ## When to Use
+
 - Investigating sudden performance changes
 - Detecting fraud or suspicious activity patterns
 - Understanding user behavior and conversion patterns
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 E-commerce user behavior data: clicks, cart adds, purchases. 500K users, 10M events, 90 days, updated hourly. Known patterns: weekly cycles (Monday low, Friday high), seasonal trends. Concerned about sudden behavior changes, fraud patterns, conversion blockers. 20% conversion drop last week, specifically Thursday evenings dropped 40% starting 2 weeks ago. Normal baseline: 3.5% conversion, 5-min average session.
 ```
 
 ### Output
+
 ```
 **E-Commerce Pattern Analysis Report**
 
@@ -167,6 +172,7 @@ Thursday:    Persist(90%) Improve(65%) Resolve(40%)
 ---
 
 ## Related Prompts
+
 - `analysis-predictive-analysis-expert`: Forecasting and prediction modeling
 - `problem-solving-performance-bottleneck-analysis-expert`: Performance issue analysis
 - `analysis-data-analysis-expert`: General data exploration

@@ -1,6 +1,7 @@
 # Decentralized Autonomous Organization Expert
 
 ## Metadata
+
 - **ID**: `blockchain-dao-governance-expert`
 - **Version**: 1.0.0
 - **Category**: Blockchain/DAO Governance
@@ -18,6 +19,7 @@ Provides strategic guidance for DAO governance design, implementation, and optim
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Evaluating governance models for new or existing DAOs
 - Optimizing voting mechanisms and participation rates
 - Designing tokenomics for governance alignment
@@ -25,6 +27,7 @@ Provides strategic guidance for DAO governance design, implementation, and optim
 - Planning DAO evolution and upgrade strategies
 
 **Anti-patterns (When NOT to Use):**
+
 - Pure technical smart contract development (use DeFi Protocol prompts)
 - Traditional corporate governance without blockchain
 - Simple multi-sig operations without governance complexity
@@ -114,6 +117,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Our DeFi protocol DAO has 5,000 token holders but only 3% participation in governance votes. Treasury is $20M. Votes are dominated by 3 whales who hold 40% of tokens. We're losing community trust. How do we fix participation and reduce whale dominance without alienating large holders?
 
 ### Output
@@ -121,6 +125,7 @@ Our DeFi protocol DAO has 5,000 token holders but only 3% participation in gover
 **DeFi Protocol DAO Governance Optimization**
 
 **Current State Assessment**
+
 ```
 Key Challenges:
 - 3% participation rate (97% passive holders)
@@ -137,7 +142,8 @@ Root Causes:
 
 **Recommended Governance Reforms**
 
-*1. Quadratic Voting for Key Decisions*
+_1. Quadratic Voting for Key Decisions_
+
 ```
 Implementation:
 - Apply to constitutional changes and large treasury spends (>$500K)
@@ -154,7 +160,8 @@ Trade-off Acknowledgment:
 - Sybil resistance needed (identity or stake verification)
 ```
 
-*2. Delegation System with Accountability*
+_2. Delegation System with Accountability_
+
 ```
 Structure:
 - Enable delegation to active community members
@@ -173,7 +180,8 @@ Expected Impact:
 - Target: 30% of tokens delegated within 6 months
 ```
 
-*3. Participation Incentives*
+_3. Participation Incentives_
+
 ```
 Voting Rewards:
 - 0.1% of treasury annually distributed to voters
@@ -191,7 +199,8 @@ Gamification:
 - Leaderboards for delegates (non-monetary status)
 ```
 
-*4. Gasless Voting via Snapshot*
+_4. Gasless Voting via Snapshot_
+
 ```
 Implementation:
 - Off-chain voting on Snapshot (free for users)
@@ -205,6 +214,7 @@ Hybrid Approach:
 ```
 
 **Whale Engagement Strategy**
+
 ```
 Critical: Don't alienate large holders
 
@@ -222,6 +232,7 @@ Concession Options:
 ```
 
 **Implementation Roadmap**
+
 ```
 Month 1: Foundation
 - Deploy Snapshot space with delegation
@@ -246,6 +257,7 @@ Success Metrics:
 ```
 
 **Risk Mitigation**
+
 ```
 Sybil Attacks on Quadratic Voting:
 - Require minimum token holding period (30 days)

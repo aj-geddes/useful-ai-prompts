@@ -1,6 +1,7 @@
 # Community Solar Shared Ownership Development
 
 ## Metadata
+
 - **ID**: `community-solar-shared-ownership-development`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables development of comprehensive community solar programs with s
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing community solar programs for underserved communities
 - Creating shared ownership structures for distributed solar projects
 - Designing equitable access programs for low-to-moderate income participation
@@ -25,6 +27,7 @@ This prompt enables development of comprehensive community solar programs with s
 - Building community engagement strategies for renewable energy adoption
 
 **Anti-patterns (when not to use):**
+
 - Utility-scale merchant solar projects without community participation
 - Residential rooftop solar for single homeowners
 - Commercial/industrial behind-the-meter installations
@@ -115,6 +118,7 @@ Develop a comprehensive community solar program:
 ## Example Usage
 
 ### Input
+
 We're developing a community solar program in Colorado for Xcel Energy territory. Target is 5 MW initial capacity serving Denver metro communities with high renter populations and above-average energy burdens. We have potential partnership with local community development organization and want to achieve 50% LMI participation.
 
 ### Output
@@ -132,17 +136,20 @@ The Denver metro area presents strong opportunity for community solar given Colo
 
 **Program Design**
 
-*Participation Models:*
+_Participation Models:_
+
 - Standard subscription: 50-120% of annual usage, minimum 1 kW allocation
 - LMI tier: Reduced subscription minimums, flexible payment terms, no credit check enrollment
 - Community anchor: Schools, nonprofits, small businesses providing subscription stability
 
-*Pricing Structure:*
+_Pricing Structure:_
+
 - Guaranteed 15% bill credit discount vs. Xcel residential rates
 - LMI enhanced discount: 20% through grant-funded rate reduction
 - No upfront costs, month-to-month flexibility for LMI participants
 
-*Customer Service:*
+_Customer Service:_
+
 - Bilingual enrollment support through community partner network
 - Automatic utility bill credit application via Xcel integration
 - Quarterly savings reports with community impact updates
@@ -155,23 +162,26 @@ The Denver metro area presents strong opportunity for community solar given Colo
 - LMI subsidy fund: $400K (DOE Solar for All + foundation grants)
 - Developer equity: $1.1M
 
-*Participant economics:* Average household saves $180-240 annually with no upfront investment.
+_Participant economics:_ Average household saves $180-240 annually with no upfront investment.
 
 **Implementation Roadmap**
 
-*Phase 1 - Foundation (Months 1-6):*
+_Phase 1 - Foundation (Months 1-6):_
+
 - Execute community partnership MOU with local CDC
 - Submit Xcel interconnection application for 5 MW site
 - Initiate Solar for All grant application for LMI subsidy fund
 - Launch community advisory committee with neighborhood representatives
 
-*Phase 2 - Development (Months 7-12):*
+_Phase 2 - Development (Months 7-12):_
+
 - Complete site permitting and Xcel subscriber organization registration
 - Develop enrollment platform with utility billing integration
 - Train community ambassadors for neighborhood outreach
 - Secure construction financing and tax equity commitment
 
-*Phase 3 - Launch (Months 13-18):*
+_Phase 3 - Launch (Months 13-18):_
+
 - Begin customer enrollment with LMI priority period
 - Execute construction and commissioning
 - Activate utility billing integration and customer portal
@@ -179,7 +189,8 @@ The Denver metro area presents strong opportunity for community solar given Colo
 
 **Equity Achievement Strategy**
 
-*50% LMI Target Mechanisms:*
+_50% LMI Target Mechanisms:_
+
 - Reserved capacity: 2.5 MW dedicated to LMI subscribers
 - Enrollment pathways: Automatic eligibility via LIHEAP, SNAP, Medicaid participation
 - Community anchors: Partner with housing authorities, community health centers, faith organizations
@@ -187,14 +198,14 @@ The Denver metro area presents strong opportunity for community solar given Colo
 
 **Success Metrics**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| LMI participation | 50% | Verified income documentation |
-| Average savings | 15%+ | Bill credit vs. baseline |
-| Energy burden reduction | 2% points | Pre/post household surveys |
-| Customer satisfaction | 90%+ | Annual participant surveys |
-| Subscription retention | 95%+ | Annual renewal rates |
-| Local economic impact | $200K | Local hiring, contractor spending |
+| Metric                  | Target    | Measurement                       |
+| ----------------------- | --------- | --------------------------------- |
+| LMI participation       | 50%       | Verified income documentation     |
+| Average savings         | 15%+      | Bill credit vs. baseline          |
+| Energy burden reduction | 2% points | Pre/post household surveys        |
+| Customer satisfaction   | 90%+      | Annual participant surveys        |
+| Subscription retention  | 95%+      | Annual renewal rates              |
+| Local economic impact   | $200K     | Local hiring, contractor spending |
 
 **Risk Mitigation**
 

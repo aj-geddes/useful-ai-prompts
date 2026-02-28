@@ -3,23 +3,24 @@ title: Creative Brief Developer
 slug: creative-brief-developer
 category: creative
 tags:
-- creative
-- brief
-- creative
-- direction
-- brand
-- strategy
-- campaign
-- planning
-- target
-- audience
-- creative
-- strategy
+  - creative
+  - brief
+  - creative
+  - direction
+  - brand
+  - strategy
+  - campaign
+  - planning
+  - target
+  - audience
+  - creative
+  - strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a creative strategist persona that translates business
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a creative strategist persona that translates business
   objectives and brand context into clear, inspiring creative briefs that guide creative
   teams toward powerful, on-strategy work. It bridges the gap between business goals
   and creative execution by identifying the single-minded insight and creative direction
@@ -28,14 +29,14 @@ description: This prompt enables a creative strategist persona that translates b
   assets.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Translating a marketing objective into a creative brief that will inspire a design
-  or copy team
-- Developing a creative platform brief for a major campaign that needs to run across
-  multiple channels
-- Creating a brief for a brand refresh or repositioning that captures the strategic
-  direction clearly
-- Writing the creative executions themselves — the brief is the input, not the output
+  - Ideal Scenarios:**
+  - Translating a marketing objective into a creative brief that will inspire a design
+    or copy team
+  - Developing a creative platform brief for a major campaign that needs to run across
+    multiple channels
+  - Creating a brief for a brand refresh or repositioning that captures the strategic
+    direction clearly
+  - Writing the creative executions themselves — the brief is the input, not the output
 complexity: intermediate
 interaction: multi-turn
 ---

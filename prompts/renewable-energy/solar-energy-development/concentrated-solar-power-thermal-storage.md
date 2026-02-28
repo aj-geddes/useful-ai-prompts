@@ -1,6 +1,7 @@
 # Concentrated Solar Power and Thermal Storage System Development
 
 ## Metadata
+
 - **ID**: `concentrated-solar-power-thermal-storage`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables development of concentrated solar power (CSP) systems with i
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing utility-scale CSP projects with thermal storage (6-12+ hours)
 - Designing dispatchable renewable energy for grid stability services
 - Evaluating parabolic trough, solar tower, or linear Fresnel technologies
@@ -25,6 +27,7 @@ This prompt enables development of concentrated solar power (CSP) systems with i
 - Creating hybrid renewable projects requiring extended generation hours
 
 **Anti-patterns (when not to use):**
+
 - Low DNI regions (<5.5 kWh/m2/day annual average)
 - Small-scale distributed solar applications
 - Pure PV projects without storage requirements
@@ -115,6 +118,7 @@ Develop a comprehensive CSP with thermal storage project:
 ## Example Usage
 
 ### Input
+
 We're evaluating a 150 MW CSP project in Morocco (Ouarzazate region) with 8-hour thermal storage. The project should provide dispatchable power for evening peak demand and participate in capacity markets. DNI is approximately 2,500 kWh/m2/year. Preference for solar tower technology.
 
 ### Output
@@ -132,13 +136,15 @@ The Ouarzazate region provides excellent CSP conditions with DNI of 2,500 kWh/m2
 
 **Technology Configuration**
 
-*Solar Tower Selection Rationale:*
+_Solar Tower Selection Rationale:_
+
 - Higher operating temperatures (565C) vs. trough (390C) enabling superior thermal storage efficiency
 - Direct molten salt heating eliminates heat exchanger losses
 - Compact receiver design reduces thermal losses at scale
 - Proven technology via Noor III and Crescent Dunes precedents
 
-*System Architecture:*
+_System Architecture:_
+
 - Heliostat field: ~7,500 heliostats (140 m2 each) with 1,050,000 m2 reflective area
 - Receiver: External cylinder, 565C outlet temperature
 - Heat transfer fluid: Binary nitrate salt (60% NaNO3, 40% KNO3)
@@ -146,37 +152,40 @@ The Ouarzazate region provides excellent CSP conditions with DNI of 2,500 kWh/m2
 
 **Thermal Storage Design**
 
-*Sizing Analysis:*
+_Sizing Analysis:_
+
 - 8-hour storage at 150 MW = 1,200 MWht capacity
 - Two-tank configuration: Hot tank (565C), cold tank (290C)
 - Salt inventory: ~38,000 tonnes
 - Storage efficiency: 95-97% round-trip thermal
 
-*Dispatch Optimization:*
+_Dispatch Optimization:_
 Storage duration enables evening peak coverage (6 PM - 2 AM) when Morocco demand peaks and solar PV unavailable. This maximizes capacity value and enables premium pricing.
 
 **Performance Projections**
 
-| Parameter | Value | Basis |
-|-----------|-------|-------|
-| Gross capacity | 150 MW | Nameplate |
-| Net capacity | 140 MW | Parasitic loads |
-| Annual generation | 580-620 GWh | P50 estimate |
-| Capacity factor | 44-47% | With 8-hr storage |
-| Solar-to-electric | 26-28% | Annual average |
-| Availability | >95% | Excluding scheduled maintenance |
+| Parameter         | Value       | Basis                           |
+| ----------------- | ----------- | ------------------------------- |
+| Gross capacity    | 150 MW      | Nameplate                       |
+| Net capacity      | 140 MW      | Parasitic loads                 |
+| Annual generation | 580-620 GWh | P50 estimate                    |
+| Capacity factor   | 44-47%      | With 8-hr storage               |
+| Solar-to-electric | 26-28%      | Annual average                  |
+| Availability      | >95%        | Excluding scheduled maintenance |
 
-*Uncertainty factors:* DNI interannual variability (+-5%), equipment performance ramp-up (Year 1 at 90% of design).
+_Uncertainty factors:_ DNI interannual variability (+-5%), equipment performance ramp-up (Year 1 at 90% of design).
 
 **Grid Integration and Dispatch Strategy**
 
-*Primary dispatch profile:*
+_Primary dispatch profile:_
+
 - Daytime: Charge storage while generating 50-100 MW
 - Evening peak (6-10 PM): Full 150 MW dispatch from storage
 - Night shoulder (10 PM - 2 AM): Continued dispatch at 100-150 MW
 - Overnight: Minimal generation, storage recovery
 
-*Grid services portfolio:*
+_Grid services portfolio:_
+
 - Capacity payments: Firm evening capacity at premium rates
 - Frequency regulation: +-10% ramping capability within 10 minutes
 - Spinning reserve: Storage buffer enables rapid response
@@ -184,7 +193,8 @@ Storage duration enables evening peak coverage (6 PM - 2 AM) when Morocco demand
 
 **Economic Analysis**
 
-*Capital costs (estimated):*
+_Capital costs (estimated):_
+
 - Solar field: $180M
 - Tower/receiver: $45M
 - Thermal storage: $55M
@@ -193,13 +203,15 @@ Storage duration enables evening peak coverage (6 PM - 2 AM) when Morocco demand
 - Development/contingency: $45M
 - **Total: ~$425M ($2,830/kW)**
 
-*Revenue streams:*
+_Revenue streams:_
+
 - Energy sales: 600 GWh x $65/MWh = $39M/year
 - Capacity payments: 140 MW x $50/kW-year = $7M/year
 - Ancillary services: ~$2M/year
 - **Total revenue: ~$48M/year**
 
-*Project economics:*
+_Project economics:_
+
 - LCOE: $75-85/MWh (competitive for dispatchable renewable)
 - Project IRR: 10-12% (equity) with 70% debt financing
 - Payback: 12-15 years with 30-year operating life

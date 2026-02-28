@@ -1,12 +1,13 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Optimize cloud infrastructure costs through resource rightsizing, reserved
+date: "2025-01-01"
+description:
+  Optimize cloud infrastructure costs through resource rightsizing, reserved
   instances, spot instances, and waste reduction strategies.
 layout: skill
 slug: infrastructure-cost-optimization
 tags:
-- development
+  - development
 title: infrastructure-cost-optimization
 ---
 
@@ -410,6 +411,7 @@ if __name__ == '__main__':
 ## Cost Optimization Strategies
 
 ### ✅ DO
+
 - Use reserved instances for baseline
 - Leverage spot instances
 - Right-size resources
@@ -420,6 +422,7 @@ if __name__ == '__main__':
 - Schedule non-essential resources
 
 ### ❌ DON'T
+
 - Over-provision resources
 - Ignore unused resources
 - Neglect cost monitoring

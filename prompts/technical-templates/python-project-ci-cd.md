@@ -1,6 +1,7 @@
 # Python Project CI/CD Pipeline
 
 ## Metadata
+
 - **ID**: `python-cicd-pipeline`
 - **Version**: 1.0.0
 - **Category**: Technical / DevOps
@@ -18,12 +19,14 @@ Comprehensive template for designing and implementing robust CI/CD pipelines for
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting up CI/CD for new Python projects (APIs, libraries, CLIs)
 - Adding quality gates and security scanning to existing pipelines
 - Implementing multi-version Python testing matrices
 - Configuring code coverage thresholds and static analysis automation
 
 **Anti-patterns (Don't Use For):**
+
 - Non-Python projects (use language-specific templates)
 - Manual deployment workflows without automation goals
 - Projects without automated testing requirements
@@ -121,7 +124,7 @@ on:
   pull_request:
     branches: [main, develop]
   schedule:
-    - cron: "0 2 * * *"  # Daily regression at 2 AM UTC
+    - cron: "0 2 * * *" # Daily regression at 2 AM UTC
 
 jobs:
   quality-check:

@@ -1,6 +1,7 @@
 # Hospital Operations Optimizer
 
 ## Metadata
+
 - **ID**: `healthcare-hospital-operations-optimizer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a hospital operations specialist persona that analyzes patient flow bottlenecks, throughput constraints, and capacity challenges across inpatient, emergency, and surgical settings. It applies Lean operational principles and evidence-based hospital operations frameworks to identify root causes and design practical interventions. Use it to improve patient flow, reduce wait times, optimize bed utilization, and enhance operating room efficiency.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Analyzing emergency department boarding and left-without-being-seen rates to identify systemic flow bottlenecks
 - Designing a bed management strategy to reduce inpatient capacity constraints and improve throughput
 - Optimizing OR scheduling and first-case on-time start rates for surgical services
 
 **Anti-patterns (Don't Use For):**
+
 - Making clinical decisions about patient placement or level of care — those require physician judgment
 - Replacing formal capacity planning studies requiring site-specific operational data collection
 - Providing staffing recommendations that require labor relations, HR, or collective bargaining consideration without flagging those constraints
@@ -64,10 +69,13 @@ Avoid: Recommending staffing increases as the primary solution without first add
 ---
 
 ## Example Usage
+
 ### Input
+
 "Our 350-bed community hospital ED sees 65,000 visits per year. Our ED length of stay for admitted patients is averaging 8.5 hours — our target is 5 hours. We know we have boarding issues but we're not sure if the problem is in the ED itself, the inpatient units, or the discharge process. Our left-without-being-seen rate has risen to 4.2%. How do we figure out where the real problem is and fix it?"
 
 ### Output
+
 **Emergency Department Throughput Analysis — 350-Bed Community Hospital**
 
 **Current State Assessment**
@@ -83,6 +91,7 @@ Inpatient Discharge Analysis: Track daily discharge time distribution. If more t
 Demand-Capacity Mismatch: Map hourly arrival volumes against physician and nursing staffing patterns. If staffing is flat while arrivals peak between 10 AM - 8 PM, process interventions alone will not close the gap.
 
 Most likely root causes given your profile:
+
 - Discharge timing skewed to afternoon, delaying inpatient bed availability during peak admission hours
 - Insufficient pull from inpatient units — no structured "pull" process when ED admitted patients are waiting
 - Potential ED triage or initial assessment delays contributing to LWBS before admission decisions are even made
@@ -100,6 +109,7 @@ Most likely root causes given your profile:
 5. Real-Time Operational Dashboard: Build a visual management board or command center display showing: current ED census by acuity, admitted patients awaiting beds (boarded count), inpatient occupancy by unit, and anticipated discharges for the day.
 
 **KPI Dashboard**
+
 - Admitted patient LOS (target: ≤5 hours) — daily
 - Boarding hours per admitted patient — daily
 - Discharge before 11 AM rate (target: ≥40%) — daily
@@ -116,11 +126,13 @@ Month 4-6: Sustain through embedding in daily operations and leadership accounta
 ---
 
 ## Variations
+
 - **OR Efficiency Optimization**: Shift focus to operating room — first-case on-time starts, turnover time, block utilization, case cancellation reduction
 - **Outpatient Access Optimization**: Analyze appointment access, no-show rates, and panel management in ambulatory and specialty clinic settings
 - **Discharge Planning Redesign**: Deep dive into case management, social work, and discharge planning workflows to accelerate safe discharge
 
 ## Related Prompts
+
 - [Healthcare Quality Improvement](healthcare-quality-improvement.md) - PDSA and Lean methodology for improvement projects
 - [Care Coordination Specialist](care-coordination-specialist.md) - Discharge planning and care transitions
 - [Healthcare Data Analyst](healthcare-data-analyst.md) - Operational analytics and dashboard design

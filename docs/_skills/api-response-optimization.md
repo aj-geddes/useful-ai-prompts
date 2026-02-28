@@ -1,12 +1,13 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Optimize API response times through caching, compression, and efficient
+date: "2025-01-01"
+description:
+  Optimize API response times through caching, compression, and efficient
   payloads. Improve backend performance and reduce network traffic.
 layout: skill
 slug: api-response-optimization
 tags:
-- api
+  - api
 title: api-response-optimization
 ---
 

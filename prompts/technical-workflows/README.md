@@ -22,4 +22,4 @@ Comprehensive technical architecture and development workflow frameworks.
 
 ---
 
-*Professional technical workflow prompts for software architects, DevOps engineers, and technical leads.*
+_Professional technical workflow prompts for software architects, DevOps engineers, and technical leads._

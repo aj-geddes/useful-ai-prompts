@@ -1,16 +1,17 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Deploy and manage relational databases using RDS with Multi-AZ, read
+date: "2025-01-01"
+description:
+  Deploy and manage relational databases using RDS with Multi-AZ, read
   replicas, backups, and encryption. Use for PostgreSQL, MySQL, MariaDB, and Oracle.
 layout: skill
 slug: aws-rds-database
 tags:
-- aws
-- postgres
-- mysql
-- data
-- deployment
+  - aws
+  - postgres
+  - mysql
+  - data
+  - deployment
 title: aws-rds-database
 ---
 
@@ -323,6 +324,7 @@ psql -h myapp-db.xxxx.us-east-1.rds.amazonaws.com \
 ## Best Practices
 
 ### ✅ DO
+
 - Use Multi-AZ for production
 - Enable automated backups
 - Use encryption at rest and in transit
@@ -334,6 +336,7 @@ psql -h myapp-db.xxxx.us-east-1.rds.amazonaws.com \
 - Use parameter groups for configuration
 
 ### ❌ DON'T
+
 - Store passwords in code
 - Disable encryption
 - Use public accessibility in production

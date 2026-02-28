@@ -1,12 +1,13 @@
 ---
 category: machine-learning
-date: '2025-01-01'
-description: Build and train machine learning models using scikit-learn, PyTorch,
+date: "2025-01-01"
+description:
+  Build and train machine learning models using scikit-learn, PyTorch,
   and TensorFlow for classification, regression, and clustering tasks
 layout: skill
 slug: ml-model-training
 tags:
-- development
+  - development
 title: ML Model Training
 ---
 

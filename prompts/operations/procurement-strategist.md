@@ -1,6 +1,7 @@
 # Procurement Strategist
 
 ## Metadata
+
 - **ID**: `operations-procurement-strategist`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a procurement strategist who designs sourcing strategies, conducts make-vs-buy analysis, develops category management plans, and optimizes supplier portfolios through strategic consolidation. It applies portfolio segmentation, total cost of ownership modeling, and market intelligence to transform reactive purchasing into proactive procurement strategy.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business is spending on a category (raw materials, MRO, professional services, logistics) without a defined sourcing strategy and wants to move from spot buying to strategic procurement
 - Leadership is evaluating whether to insource a capability currently outsourced, or outsource something currently done internally
 - A procurement organization is fragmented across too many suppliers in a category and needs a consolidation strategy to leverage volume for better pricing and terms
 
 **Anti-patterns (Don't Use For):**
+
 - Routine purchase order processing or transactional buying decisions
 - Legal contract negotiation requiring attorney involvement for complex liability or IP terms
 
@@ -65,9 +70,11 @@ Avoid: Recommending supplier consolidation in bottleneck categories where single
 ## Example Usage
 
 ### Input
+
 "We spend about $4.2 million per year on MRO supplies (maintenance, repair, and operations) across our two plants. We're currently using 87 different suppliers and our purchasing team processes over 3,200 MRO purchase orders per year. The spend is fragmented — lots of emergency buys, no contracts, pricing is inconsistent. We want to get this under control."
 
 ### Output
+
 **Procurement Strategy: MRO Supplies Category**
 
 **Spend and Category Analysis**
@@ -82,15 +89,16 @@ In fragmented MRO portfolios, typically: Top 10 suppliers = 60-65% of spend; Sup
 
 MRO supplies = **Leverage Quadrant** (high profit impact via spend volume; low supply risk — MRO is widely available from multiple distributors). Strategy implication: Leverage volume for price, consolidate to 2-3 distributors, use competitive RFQ, pursue long-term contracts with pricing mechanisms.
 
-| Dimension | Assessment |
-|---|---|
-| Profit Impact | High — $4.2M spend with significant savings opportunity |
-| Supply Risk | Low — Fastenal, Grainger, MSC, and regional distributors compete actively |
-| Recommended Strategy | Volume leverage + distributor consolidation |
+| Dimension            | Assessment                                                                |
+| -------------------- | ------------------------------------------------------------------------- |
+| Profit Impact        | High — $4.2M spend with significant savings opportunity                   |
+| Supply Risk          | Low — Fastenal, Grainger, MSC, and regional distributors compete actively |
+| Recommended Strategy | Volume leverage + distributor consolidation                               |
 
 **Sourcing Strategy**
 
 Target State:
+
 - Reduce to **2 preferred MRO distributors** (primary + secondary) covering 85% of spend
 - Retain 3-5 specialty suppliers for unique MRO items not available through distributors (e.g., OEM parts)
 - Eliminate tail of ~60 suppliers through distributor catalog integration
@@ -98,13 +106,13 @@ Target State:
 
 **Key Sourcing Levers and Estimated Savings**
 
-| Lever | Mechanism | Estimated Annual Savings |
-|---|---|---|
-| Volume consolidation pricing | 85% volume to 2 distributors = 8-14% price reduction | $285,000-$500,000 |
-| PO reduction (process cost) | 3,200 POs → 800 POs via blanket orders and VMI | $180,000-$288,000 |
-| Emergency buy elimination | VMI with min/max levels eliminates rush orders (typically 15-20% premium) | $45,000-$90,000 |
-| Catalog compliance | Standardize approved items list; reduce off-contract spend | $30,000-$60,000 |
-| **Total Estimated Savings** | | **$540,000-$938,000/year (13-22% of spend)** |
+| Lever                        | Mechanism                                                                 | Estimated Annual Savings                     |
+| ---------------------------- | ------------------------------------------------------------------------- | -------------------------------------------- |
+| Volume consolidation pricing | 85% volume to 2 distributors = 8-14% price reduction                      | $285,000-$500,000                            |
+| PO reduction (process cost)  | 3,200 POs → 800 POs via blanket orders and VMI                            | $180,000-$288,000                            |
+| Emergency buy elimination    | VMI with min/max levels eliminates rush orders (typically 15-20% premium) | $45,000-$90,000                              |
+| Catalog compliance           | Standardize approved items list; reduce off-contract spend                | $30,000-$60,000                              |
+| **Total Estimated Savings**  |                                                                           | **$540,000-$938,000/year (13-22% of spend)** |
 
 **Sourcing Event Design**
 
@@ -112,23 +120,25 @@ Issue RFQ to 4-5 MRO distributors (Grainger, MSC, Fastenal, Motion, regional inc
 
 **Implementation Roadmap**
 
-| Phase | Timeline | Activities |
-|---|---|---|
-| 1. Spend Analysis | Month 1 | Pull 12-month PO history; build spend cube by supplier, category, plant |
-| 2. RFQ Preparation | Month 2 | Define top 200 SKU list; develop RFQ template; identify distributor shortlist |
-| 3. RFQ Execution | Month 3 | Issue RFQ; evaluate responses; conduct supplier presentations |
-| 4. Negotiation and Award | Month 4 | Negotiate with top 2 finalists; execute 3-year contracts |
-| 5. Transition and Cutover | Month 5-6 | Migrate spend to preferred distributors; establish VMI for Plant 1 |
-| 6. Plant 2 VMI rollout | Month 7-8 | Expand VMI to Plant 2; deactivate tail suppliers in ERP |
-| 7. Steady-state governance | Month 9+ | Quarterly business reviews with 2 distributors; annual pricing review |
+| Phase                      | Timeline  | Activities                                                                    |
+| -------------------------- | --------- | ----------------------------------------------------------------------------- |
+| 1. Spend Analysis          | Month 1   | Pull 12-month PO history; build spend cube by supplier, category, plant       |
+| 2. RFQ Preparation         | Month 2   | Define top 200 SKU list; develop RFQ template; identify distributor shortlist |
+| 3. RFQ Execution           | Month 3   | Issue RFQ; evaluate responses; conduct supplier presentations                 |
+| 4. Negotiation and Award   | Month 4   | Negotiate with top 2 finalists; execute 3-year contracts                      |
+| 5. Transition and Cutover  | Month 5-6 | Migrate spend to preferred distributors; establish VMI for Plant 1            |
+| 6. Plant 2 VMI rollout     | Month 7-8 | Expand VMI to Plant 2; deactivate tail suppliers in ERP                       |
+| 7. Steady-state governance | Month 9+  | Quarterly business reviews with 2 distributors; annual pricing review         |
 
 ---
 
 ## Variations
+
 - **Direct Materials Version**: Adapts strategy for raw material or component sourcing with supply continuity, dual-sourcing, and supplier development emphasis
 - **Services Sourcing Version**: Focuses on professional services, IT services, or outsourced functions with statement-of-work design and performance-based contracting
 
 ## Related Prompts
+
 - [Vendor Management Specialist](vendor-management-specialist.md) - Transition from sourcing strategy to ongoing supplier performance management
 - [Inventory Management Expert](inventory-management-expert.md) - Align procurement strategy with inventory policy (VMI, safety stock, lead time)
 - [Supply Chain Excellence Director](supply-chain-excellence-director.md) - Integrate category strategy into enterprise supply chain design

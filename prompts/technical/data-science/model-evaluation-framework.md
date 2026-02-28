@@ -1,6 +1,7 @@
 # Model Evaluation Framework Expert
 
 ## Metadata
+
 - **ID**: `model-evaluation-framework-expert`
 - **Version**: 1.1.0
 - **Category**: Technical/Data Science
@@ -18,6 +19,7 @@ Comprehensively evaluates machine learning models using appropriate metrics, val
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Validating model performance before production deployment decisions
 - Comparing multiple model architectures or hyperparameter configurations
 - Diagnosing model failures, bias, or unexpected production behavior
@@ -25,6 +27,7 @@ Comprehensively evaluates machine learning models using appropriate metrics, val
 - Translating ML metrics into business impact for stakeholder communication
 
 **Anti-patterns (when NOT to use):**
+
 - Initial model development and experimentation phases
 - Feature engineering or data preprocessing tasks
 - Model training or hyperparameter tuning
@@ -115,12 +118,12 @@ We have a binary classification model for customer churn prediction using XGBoos
 
 **Metric Selection and Justification**
 
-| Metric | Priority | Formula/Definition | Why This Metric |
-|--------|----------|-------------------|-----------------|
-| Recall @ Top 20% | Primary | TP / (TP + FN) in top 20% of scores | Campaign capacity is 5K/month = 5% of base; top 20% captures multiple months |
-| Precision-Recall AUC | Secondary | Area under PR curve | Robust to class imbalance unlike ROC-AUC |
-| Lift @ Deciles | Business | (Precision in decile) / (Overall rate) | Shows targeting efficiency vs. random |
-| Expected Value | Business | See calculation below | Directly ties to business impact |
+| Metric               | Priority  | Formula/Definition                     | Why This Metric                                                              |
+| -------------------- | --------- | -------------------------------------- | ---------------------------------------------------------------------------- |
+| Recall @ Top 20%     | Primary   | TP / (TP + FN) in top 20% of scores    | Campaign capacity is 5K/month = 5% of base; top 20% captures multiple months |
+| Precision-Recall AUC | Secondary | Area under PR curve                    | Robust to class imbalance unlike ROC-AUC                                     |
+| Lift @ Deciles       | Business  | (Precision in decile) / (Overall rate) | Shows targeting efficiency vs. random                                        |
+| Expected Value       | Business  | See calculation below                  | Directly ties to business impact                                             |
 
 **Critical Warning: Accuracy is Misleading**
 
@@ -168,25 +171,25 @@ def temporal_validation(data, n_splits=6):
 
 **Validation Results Across Folds**
 
-| Fold (Month) | PR-AUC | Recall @ 20% | Precision @ 20% |
-|--------------|--------|--------------|-----------------|
-| 13 | 0.42 | 0.58 | 0.23 |
-| 14 | 0.45 | 0.61 | 0.25 |
-| 15 | 0.43 | 0.59 | 0.24 |
-| 16 | 0.41 | 0.55 | 0.22 |
-| 17 | 0.44 | 0.60 | 0.24 |
-| 18 | 0.40 | 0.53 | 0.21 |
+| Fold (Month)     | PR-AUC            | Recall @ 20%      | Precision @ 20%   |
+| ---------------- | ----------------- | ----------------- | ----------------- |
+| 13               | 0.42              | 0.58              | 0.23              |
+| 14               | 0.45              | 0.61              | 0.25              |
+| 15               | 0.43              | 0.59              | 0.24              |
+| 16               | 0.41              | 0.55              | 0.22              |
+| 17               | 0.44              | 0.60              | 0.24              |
+| 18               | 0.40              | 0.53              | 0.21              |
 | **Mean +/- Std** | **0.43 +/- 0.02** | **0.58 +/- 0.03** | **0.23 +/- 0.01** |
 
 **Lift Analysis by Decile**
 
-| Decile | Model Churn Rate | Lift vs. Random | Cumulative Recall |
-|--------|------------------|-----------------|-------------------|
-| 1 (Top 10%) | 35% | 4.4x | 44% |
-| 2 | 22% | 2.8x | 71% |
-| 3 | 14% | 1.8x | 89% |
-| 4 | 8% | 1.0x | 99% |
-| 5-10 | 2-4% | 0.3-0.5x | 100% |
+| Decile      | Model Churn Rate | Lift vs. Random | Cumulative Recall |
+| ----------- | ---------------- | --------------- | ----------------- |
+| 1 (Top 10%) | 35%              | 4.4x            | 44%               |
+| 2           | 22%              | 2.8x            | 71%               |
+| 3           | 14%              | 1.8x            | 89%               |
+| 4           | 8%               | 1.0x            | 99%               |
+| 5-10        | 2-4%             | 0.3-0.5x        | 100%              |
 
 **Interpretation**: Targeting top 20% captures 71% of churners with 3.6x average lift. Campaign ROI is positive.
 
@@ -218,11 +221,11 @@ def expected_value_calculation(y_true, y_pred_proba, threshold, cost_fp=10, cost
 
 **Expected Monthly Impact (at 5K campaign capacity)**
 
-| Scenario | Monthly Value | Annual Value |
-|----------|---------------|--------------|
-| No model (random targeting) | -$76K | -$912K |
-| Model (top 5K scores) | +$24K | +$288K |
-| **Improvement** | **$100K/month** | **$1.2M/year** |
+| Scenario                    | Monthly Value   | Annual Value   |
+| --------------------------- | --------------- | -------------- |
+| No model (random targeting) | -$76K           | -$912K         |
+| Model (top 5K scores)       | +$24K           | +$288K         |
+| **Improvement**             | **$100K/month** | **$1.2M/year** |
 
 **Calibration Assessment**
 
@@ -237,14 +240,15 @@ prob_true, prob_pred = calibration_curve(y_test, y_pred_proba, n_bins=10)
 
 **Production Monitoring Specification**
 
-| Metric | Baseline | Warning Threshold | Critical Threshold | Check Frequency |
-|--------|----------|-------------------|-------------------|-----------------|
-| Precision @ 5K | 25% | < 22% | < 18% | Weekly |
-| Feature drift (PSI) | 0 | > 0.1 | > 0.2 | Daily |
-| Prediction distribution | Current | > 10% shift | > 25% shift | Daily |
-| Actual churn rate | 8% | +/- 2% | +/- 4% | Monthly |
+| Metric                  | Baseline | Warning Threshold | Critical Threshold | Check Frequency |
+| ----------------------- | -------- | ----------------- | ------------------ | --------------- |
+| Precision @ 5K          | 25%      | < 22%             | < 18%              | Weekly          |
+| Feature drift (PSI)     | 0        | > 0.1             | > 0.2              | Daily           |
+| Prediction distribution | Current  | > 10% shift       | > 25% shift        | Daily           |
+| Actual churn rate       | 8%       | +/- 2%            | +/- 4%             | Monthly         |
 
 **Retraining Triggers**
+
 1. Precision drops below 18% for 2 consecutive weeks
 2. Any feature PSI exceeds 0.2
 3. Actual churn rate changes by more than 2%
@@ -252,20 +256,21 @@ prob_true, prob_pred = calibration_curve(y_test, y_pred_proba, n_bins=10)
 
 **Production Readiness Decision**
 
-| Criterion | Status | Notes |
-|-----------|--------|-------|
-| Metric targets met | PASS | PR-AUC 0.43 exceeds 0.35 threshold |
-| Business ROI positive | PASS | $1.2M annual improvement |
-| Validation methodology | PASS | Temporal validation with gap |
-| Calibration | NEEDS WORK | Requires isotonic calibration |
-| Monitoring defined | PASS | Alerts and dashboards specified |
-| Bias assessment | PENDING | Need to check performance by customer segment |
+| Criterion              | Status     | Notes                                         |
+| ---------------------- | ---------- | --------------------------------------------- |
+| Metric targets met     | PASS       | PR-AUC 0.43 exceeds 0.35 threshold            |
+| Business ROI positive  | PASS       | $1.2M annual improvement                      |
+| Validation methodology | PASS       | Temporal validation with gap                  |
+| Calibration            | NEEDS WORK | Requires isotonic calibration                 |
+| Monitoring defined     | PASS       | Alerts and dashboards specified               |
+| Bias assessment        | PENDING    | Need to check performance by customer segment |
 
 **Recommendation**: Model is conditionally ready for production pending calibration fix and bias assessment across customer segments (tenure, geography, plan type).
 
 ---
 
 ## Related Prompts
+
 - [Test Strategy Development Expert](../../technical-workflows/test-strategy-development-expert.md) - Test ML systems
 - [Deployment Pipeline Creation Expert](../../technical-workflows/deployment-pipeline-creation-expert.md) - Deploy ML models
 - [Data Analysis Expert](../../analysis/data-analysis-expert.md) - Analyze model predictions

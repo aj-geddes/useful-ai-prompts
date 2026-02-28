@@ -1,6 +1,7 @@
 # Educational Technology Integrator
 
 ## Metadata
+
 - **ID**: `education-educational-technology-integrator`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps educators select, evaluate, and implement digital tools to genuinely enhance student learning outcomes — not just digitize existing practices. Using the SAMR model and evidence-based technology integration principles, it matches specific pedagogical goals to appropriate tools and provides implementation plans that build teacher capacity over time. The output includes tool recommendations with rationale, implementation steps, and success indicators.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Selecting the right technology tool for a specific instructional goal (formative assessment, collaboration, creation, differentiation)
 - Evaluating whether a new district-provided tool is worth adopting and how to use it effectively
 - Building a multi-week technology integration plan that progressively develops student digital skills alongside content
 
 **Anti-patterns (Don't Use For):**
+
 - Selecting technology for technology's sake without a clear instructional purpose
 - Recommending tools that require significant data privacy compliance work without first consulting the district IT department
 - Designing tech-heavy lessons for populations with inconsistent device access without addressing the equity gap first
@@ -70,11 +75,13 @@ Avoid: Recommending tools primarily for their novelty, multiple tools simultaneo
 ## Example Usage
 
 ### Input
+
 "I'm a 6th grade social studies teacher, intermediate tech comfort level. My biggest challenge is formative assessment — I give an exit ticket on paper but I don't have time to look through 30 papers before the next class. I want something digital where I can see responses in real time. We use Google Classroom and students have Chromebooks. No extra budget."
 
 ### Output
+
 **Technology Integration Plan: Real-Time Formative Assessment**
-*6th Grade Social Studies | Google Classroom Environment | Zero Budget*
+_6th Grade Social Studies | Google Classroom Environment | Zero Budget_
 
 ---
 
@@ -88,14 +95,14 @@ Current practice: Substitution (paper exit ticket → digital form). Target: Aug
 
 **Tool Comparison**
 
-| Criterion | Google Forms | Nearpod | Formative (goformative.com) |
-|-----------|-------------|---------|--------------------------|
-| Cost | Free (have it) | Free tier available | Free tier available |
-| Ease of use | Very easy — teacher already knows Google | Moderate learning curve | Moderate |
-| Real-time data | Google Sheets live view (requires tab-switching) | Built-in live dashboard | Best-in-class live view with heatmaps |
-| Student login | Google SSO | Google SSO | Google SSO |
-| COPPA compliant | Yes (district Google Workspace) | Yes | Yes |
-| SAMR level | Substitution → Augmentation | Modification | Augmentation |
+| Criterion       | Google Forms                                     | Nearpod                 | Formative (goformative.com)           |
+| --------------- | ------------------------------------------------ | ----------------------- | ------------------------------------- |
+| Cost            | Free (have it)                                   | Free tier available     | Free tier available                   |
+| Ease of use     | Very easy — teacher already knows Google         | Moderate learning curve | Moderate                              |
+| Real-time data  | Google Sheets live view (requires tab-switching) | Built-in live dashboard | Best-in-class live view with heatmaps |
+| Student login   | Google SSO                                       | Google SSO              | Google SSO                            |
+| COPPA compliant | Yes (district Google Workspace)                  | Yes                     | Yes                                   |
+| SAMR level      | Substitution → Augmentation                      | Modification            | Augmentation                          |
 
 **Primary Recommendation: Google Forms + Sheets (Start here)**
 You already have it, students know it, no new login, and the real-time Sheets view is sufficient for reading trends across 30 responses in 2 minutes. Start with what you have — adopt Formative or Nearpod in semester 2 if you want richer data.
@@ -107,18 +114,19 @@ Once you're comfortable, Formative adds student-by-student live response monitor
 
 **3-Phase Implementation**
 
-*Week 1 — Teacher Setup:*
+_Week 1 — Teacher Setup:_
 Build your first digital exit ticket in Google Forms (3 questions max: one recall, one application, one "what confused you?"). Connect it to a Google Sheet. Practice reading the live Sheet view during planning time so you know what to look for.
 
-*Week 2 — Guided Student Use:*
+_Week 2 — Guided Student Use:_
 Introduce the exit ticket with a 3-minute explicit digital routine: "When you see this Form link in Classroom, open it, answer the three questions, submit before you pack up." Model it yourself. Do this after every lesson this week.
 
-*Week 3 — Independent Use + Data-Driven Planning:*
+_Week 3 — Independent Use + Data-Driven Planning:_
 Check the Sheet after each class (5 minutes). Sort by Question 3 responses ("what confused you?"). The next day's warm-up addresses the top 2 confusions. Students begin seeing that their responses actually change tomorrow's lesson.
 
 ---
 
 **Success Indicators**
+
 - Week 2: 85%+ response rate before bell rings
 - Week 3: Teacher uses exit ticket data to change at least one element of the next lesson
 - Month 2: Student confusion decreases on the topic tested in exit tickets (track with pre/post quiz)
@@ -130,9 +138,11 @@ Check the Sheet after each class (5 minutes). Sort by Question 3 responses ("wha
 ---
 
 ## Variations
+
 - **Student Creation Focus**: Tools for students to create podcasts, videos, infographics, or interactive presentations as assessment alternatives
 - **Differentiation Focus**: Adaptive learning platforms and tools for providing different content pathways based on student readiness data
 
 ## Related Prompts
+
 - [Flipped Classroom Designer](flipped-classroom-designer.md) - Combine technology tools with flipped instruction design
 - [Assessment Designer](assessment-designer.md) - Design the formative assessment the technology delivers

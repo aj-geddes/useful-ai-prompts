@@ -1,6 +1,7 @@
 # Hiring Decision Framework Expert
 
 ## Metadata
+
 - **ID**: `decision-hiring-framework`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/HR
@@ -18,6 +19,7 @@ Guide objective hiring decisions by evaluating candidates against role requireme
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Comparing multiple final-round candidates
 - Making difficult close-call hiring decisions
 - Evaluating trade-offs between different candidate strengths
@@ -25,6 +27,7 @@ Guide objective hiring decisions by evaluating candidates against role requireme
 - Creating hiring rubrics for new roles
 
 **Anti-patterns (when NOT to use):**
+
 - Resume screening (too early in process)
 - Interview question design
 - Salary negotiation strategy
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Hiring a Senior Software Engineer. Three finalists: A has great technical skills but seems introverted, B is a strong communicator with less experience, C has everything but is 20% above our budget."
 
 ### Output
@@ -126,13 +130,15 @@ Avoid:
 
 **Deep Dive: Top Candidates**
 
-*Candidate C (Score: 8.20)*
+_Candidate C (Score: 8.20)_
+
 - Strengths: Complete package - technical depth, experience, communicates well
 - Concern: 20% above budget ($150K vs $125K target)
 - Risk: May leave if not compensated fairly; creates equity issues
 - Mitigation: Negotiate signing bonus instead of base increase; accelerated review
 
-*Candidate A (Score: 7.80)*
+_Candidate A (Score: 7.80)_
+
 - Strengths: Exceptional technical skills, 8 years experience
 - Concern: Introverted - may struggle in collaborative environment
 - Assessment: References confirm strong async communication, pair programming skills
@@ -140,14 +146,15 @@ Avoid:
 
 **Recommendation: Candidate C with Compensation Negotiation**
 
-*Rationale*: Strongest overall candidate with lowest risk. Budget stretch justified by reduced ramp-up time and immediate senior-level contribution.
+_Rationale_: Strongest overall candidate with lowest risk. Budget stretch justified by reduced ramp-up time and immediate senior-level contribution.
 
-*Negotiation Approach*:
+_Negotiation Approach_:
+
 - Offer $130K base (4% above budget)
 - $10K signing bonus
 - 6-month performance review for salary adjustment
 
-*Alternative*: If C declines, proceed with A - technical strength is most critical, and introversion is manageable with right team dynamics.
+_Alternative_: If C declines, proceed with A - technical strength is most critical, and introversion is manageable with right team dynamics.
 
 **Onboarding Focus**: For either hire, pair with senior team member for first month, assign cross-functional project by month 2.
 

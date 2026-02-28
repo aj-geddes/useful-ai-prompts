@@ -1,6 +1,7 @@
 # Quality Improvement Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-quality-improvement`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -101,12 +102,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Issue: Software bugs reaching production - 20+ per release, target is <5. Current: Developers test own code, no formal QA process. Customer complaints increasing. Team of 10 developers, 2-week release cycles. Need to improve without significantly slowing releases.
 ```
 
 ### Output
+
 **Problem Definition**
+
 - Current: 20+ bugs per release reaching production
 - Target: <5 bugs per release (75% reduction)
 - Impact: Customer complaints, support costs, reputation risk
@@ -114,22 +118,26 @@ Issue: Software bugs reaching production - 20+ per release, target is <5. Curren
 
 **Root Cause Analysis (Fishbone)**
 
-*People*
+_People_
+
 - Developers testing own code (blind spots)
 - No dedicated QA expertise
 - Inconsistent code review practices
 
-*Process*
+_Process_
+
 - No formal test plan or checklist
 - Testing happens at end, not throughout
 - No definition of "done" for quality
 
-*Technology*
+_Technology_
+
 - Limited automated testing (<20% coverage)
 - No staging environment matching production
 - Missing error monitoring in production
 
 **Primary Root Causes (Pareto)**
+
 1. No automated test coverage (40% of bugs)
 2. Missing code review requirements (25% of bugs)
 3. Environment differences (20% of bugs)
@@ -137,45 +145,51 @@ Issue: Software bugs reaching production - 20+ per release, target is <5. Curren
 
 **Improvement Solutions**
 
-| Solution | Bugs Prevented | Effort | Priority |
-|----------|----------------|--------|----------|
-| Automated unit tests | 8/release | Medium | 1 |
-| Mandatory code review | 5/release | Low | 2 |
-| Production-like staging | 4/release | Medium | 3 |
-| Testing checklist | 3/release | Low | 4 |
+| Solution                | Bugs Prevented | Effort | Priority |
+| ----------------------- | -------------- | ------ | -------- |
+| Automated unit tests    | 8/release      | Medium | 1        |
+| Mandatory code review   | 5/release      | Low    | 2        |
+| Production-like staging | 4/release      | Medium | 3        |
+| Testing checklist       | 3/release      | Low    | 4        |
 
 **Implementation Plan**
 
-*Phase 1: Quick Wins (Week 1-2)*
+_Phase 1: Quick Wins (Week 1-2)_
+
 - Implement code review requirement (all PRs need 1 reviewer)
 - Create testing checklist for common bug types
 - Expected: 40% bug reduction
 
-*Phase 2: Automation Foundation (Week 3-6)*
+_Phase 2: Automation Foundation (Week 3-6)_
+
 - Introduce unit testing framework
 - Target 50% coverage on critical paths
 - Add CI pipeline with automated tests
 - Expected: Additional 30% bug reduction
 
-*Phase 3: Environment Parity (Week 7-10)*
+_Phase 3: Environment Parity (Week 7-10)_
+
 - Create staging environment mirroring production
 - Implement integration testing stage
 - Add production monitoring and alerting
 - Expected: Additional 20% bug reduction
 
 **Quality Gates**
+
 - Code review: Required for all changes
 - Unit tests: Must pass before merge
 - Integration tests: Must pass before staging
 - Staging validation: 24-hour soak period
 
 **Measurement System**
+
 - Bugs per release (weekly tracking)
 - Bug escape rate by category
 - Test coverage percentage
 - Time to detect (production vs pre-production)
 
 **Sustainability Framework**
+
 - Weekly quality review of bug patterns
 - Monthly root cause analysis for escaped bugs
 - Quarterly process improvement retrospective

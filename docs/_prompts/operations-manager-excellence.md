@@ -3,28 +3,29 @@ title: Operations Management Expert
 slug: operations-manager-excellence
 category: business/operations
 tags:
-- operations
-- management
-- process
-- improvement
-- team
-- leadership
-- efficiency
-- KPIs
+  - operations
+  - management
+  - process
+  - improvement
+  - team
+  - leadership
+  - efficiency
+  - KPIs
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Optimizes operations through systematic process improvement, team development,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Optimizes operations through systematic process improvement, team development,
   and performance management. Creates efficient workflows that reduce waste, improve
   quality, and build high-performing operational teams.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Scaling operations to handle growth without proportional headcount increase
-- Reducing errors and improving quality metrics
-- Building team capabilities and reducing turnover
-- Establishing operational KPIs and performance dashboards
+  - Scenarios:**
+  - Scaling operations to handle growth without proportional headcount increase
+  - Reducing errors and improving quality metrics
+  - Building team capabilities and reducing turnover
+  - Establishing operational KPIs and performance dashboards
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,22 +40,25 @@ The user needs to improve operational performance through better processes, team
 
 <input_handling>
 Required inputs:
+
 - Operations type (manufacturing, service, logistics, fulfillment, etc.)
 - Team size and organizational structure
 - Current performance challenges and symptoms
 - Key metrics being tracked (or desired)
 
 Optional inputs:
+
 - Historical performance data and trends
 - Technology systems in use
 - Budget constraints for improvements
 - Timeline pressures or growth plans
 
 Default assumptions if not provided:
+
 - Improvement methodology: Lean principles with targeted Six Sigma
 - Training approach: structured onboarding + continuous development
 - Performance cadence: daily huddles, weekly reviews, monthly coaching
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive operations excellence plan following these steps:
@@ -65,22 +69,24 @@ Create a comprehensive operations excellence plan following these steps:
 4. Build team development program including onboarding, skill building, and career progression
 5. Establish metrics dashboard with real-time tracking and action triggers
 6. Create phased implementation roadmap with quick wins, medium-term initiatives, and transformation goals
-</task>
+   </task>
 
 <output_specification>
 Format: Operations assessment with improvement initiatives and implementation roadmap
 Length: 800-1200 words
 Structure:
+
 - Current State Analysis (gaps, root causes, waste identification)
 - Process Optimization (before/after workflows, time savings)
 - Team Development Program (onboarding, performance management)
 - Metrics Dashboard (station-level tracking, triggers)
 - Implementation Roadmap (phased timeline with milestones)
 - Expected Results (performance targets, ROI projections)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Gaps quantified with business impact in dollars or productivity units
 - Process changes are specific, actionable, and address root causes
 - Team development builds capabilities progressively with clear milestones
@@ -88,11 +94,12 @@ Excellent outputs demonstrate:
 - Implementation phases build on each other with dependencies mapped
 
 Outputs must avoid:
+
 - Generic efficiency advice without specific process details
 - Ignoring team development and change management
 - Metrics without defined thresholds and response protocols
 - All-or-nothing implementation without phased approach
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure recommendations work within stated team size and structure

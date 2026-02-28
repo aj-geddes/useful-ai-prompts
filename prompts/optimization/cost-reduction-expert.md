@@ -1,6 +1,7 @@
 # Cost Reduction Expert
 
 ## Metadata
+
 - **ID**: `optimization-cost-reduction`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically identifies and implements cost reduction opportunities while main
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Budget pressure requiring expense reduction
 - Costs growing faster than revenue
 - Preparing for economic uncertainty or downturn
@@ -26,6 +28,7 @@ Systematically identifies and implements cost reduction opportunities while main
 - Operational efficiency initiatives
 
 **Anti-patterns (Don't Use For):**
+
 - Revenue growth strategies (focus on top line instead)
 - Pricing decisions (different analysis required)
 - Investment planning or capital allocation
@@ -135,6 +138,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have $500K annual software spend across 50+ applications. IT believes there's around 30% underutilization. We need to reduce by $150K within 6 months. Cannot disrupt operations or ongoing projects."
 
 ### Output
@@ -144,12 +148,14 @@ Avoid:
 **1. Cost Analysis**
 
 Current state breakdown (estimated from typical patterns):
+
 - Enterprise platforms (ERP, CRM, core tools): $200K (40%)
 - Productivity tools (Office, collaboration): $100K (20%)
 - Specialized/departmental tools: $150K (30%)
 - Developer tools and infrastructure: $50K (10%)
 
 Typical underutilization patterns:
+
 - Shelfware (completely unused licenses): 15-20% of spend (~$75-100K)
 - Underutilized licenses (usage below licensed tier): 20-30%
 - Shadow IT overlap (redundant tools doing same function): 10-15%
@@ -203,24 +209,28 @@ Typical underutilization patterns:
 **3. Implementation Roadmap**
 
 **Month 1: Discovery and Quick Wins**
+
 - Complete comprehensive license audit across all 50+ applications
 - Identify and reclaim unused licenses immediately (Day 1 savings)
 - Map redundant tools and consolidation candidates
 - Document utilization rates for each application
 
 **Month 2: Stakeholder Alignment**
+
 - Present consolidation candidates to department heads
 - Gather input on tool preferences and requirements
 - Identify contracts approaching renewal (negotiation prep)
 - Build business cases for consolidation decisions
 
 **Month 3-4: Consolidation and Negotiation**
+
 - Execute approved consolidation migrations
 - Renegotiate contracts using utilization data
 - Implement usage monitoring for ongoing optimization
 - Track savings realization against targets
 
 **Month 5-6: Optimization and Governance**
+
 - Complete platform rationalization initiatives
 - Implement ongoing governance processes
 - Document achieved savings and lessons learned
@@ -229,6 +239,7 @@ Typical underutilization patterns:
 **4. Business Case Example**
 
 **Consolidate 3 Project Management Tools to 1:**
+
 - Current combined cost: $45K annually (Asana, Monday.com, Basecamp)
 - Target cost: $25K (single enterprise Asana license)
 - Gross savings: $20K annually
@@ -241,24 +252,28 @@ Typical underutilization patterns:
 **5. Governance Framework**
 
 **Ongoing Cost Management:**
+
 - Monthly license utilization review (IT operations)
 - Quarterly software rationalization assessment (IT + Finance)
 - Annual contract renewal planning (start 3 months before expiration)
 - New software approval process (business case required >$5K)
 
 **Tracking Dashboard:**
+
 - License count by application
 - Utilization percentage by application
 - Spend by category and trend
 - Savings realized vs. target
 
 **Sustainability Mechanisms:**
+
 - Embed license review in employee offboarding checklist
 - Require utilization justification for all renewals
 - Annual optimization review cycle with department heads
 - Central approval for new SaaS subscriptions
 
 **Summary:**
+
 - Total projected savings: $150K achieved within 6 months
 - Ongoing annual savings: $140K (after implementation costs absorbed)
 - Implementation investment: ~$20K (tools, effort, migration costs)

@@ -3,27 +3,28 @@ title: Assessment Designer
 slug: assessment-designer
 category: education
 tags:
-- assessment
-- formative
-- summative
-- evaluation
-- testing
+  - assessment
+  - formative
+  - summative
+  - evaluation
+  - testing
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt transforms learning objectives into valid, reliable assessments
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt transforms learning objectives into valid, reliable assessments
   that accurately measure student mastery. It guides educators through designing formative
   checks, summative evaluations, and performance tasks aligned to standards. The output
   includes complete assessment instruments with scoring guides and administration
   guidelines.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing unit tests or quizzes aligned to specific learning standards
-- Creating authentic performance tasks for project-based units
-- Building formative assessment sequences to monitor progress during instruction
-- Generating answer keys for existing standardized tests
+  - Ideal Scenarios:**
+  - Designing unit tests or quizzes aligned to specific learning standards
+  - Creating authentic performance tasks for project-based units
+  - Building formative assessment sequences to monitor progress during instruction
+  - Generating answer keys for existing standardized tests
 complexity: intermediate
 interaction: multi-turn
 ---

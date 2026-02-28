@@ -1,6 +1,7 @@
 # Repository Documentation Generator
 
 ## Metadata
+
 - **ID**: `project-management-repo-documentation-generator`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Repository: https://github.com/company/useful-ai-prompts. Contains folders for development, security, AI prompts, and infrastructure content. Purpose is a library of specialized AI prompts for professional workflows.
 ```
 
 ### Output
+
 **Root README Structure**
 
 ```markdown
@@ -118,11 +121,15 @@ Comprehensive prompt library organized across 14 categories, combining expert pe
 ## Repository Categories
 
 ### Development
+
 Code quality, CI/CD, and automation prompts
+
 - **[Code Review](development/code-review.md)** - Systematic code analysis
 
 ### Security
+
 Vulnerability analysis and compliance patterns
+
 - **[Security Audit](security/audit.md)** - Security assessment framework
 
 ## Quick Start Guide
@@ -133,10 +140,10 @@ Vulnerability analysis and compliance patterns
 
 ## Use Case Matrix
 
-| Role | Development | Security | Infrastructure |
-|------|-------------|----------|----------------|
-| **Engineer** | Code review | Vuln scan | IaC templates |
-| **Manager** | Process audit | Compliance | Resource planning |
+| Role         | Development   | Security   | Infrastructure    |
+| ------------ | ------------- | ---------- | ----------------- |
+| **Engineer** | Code review   | Vuln scan  | IaC templates     |
+| **Manager**  | Process audit | Compliance | Resource planning |
 ```
 
 **Category README Structure**
@@ -149,6 +156,7 @@ Prompts for code quality, automation, and development workflows.
 ## Contents
 
 ### Code Quality
+
 - **[Code Review](code-review.md)** - Systematic review framework
 - **[Refactoring](refactoring.md)** - Safe refactoring patterns
 
@@ -160,6 +168,7 @@ Prompts for code quality, automation, and development workflows.
 ## Use Cases
 
 ### For Engineers
+
 - **Code review**: Consistent quality checks
 - **Benefit**: Faster PR turnaround
 

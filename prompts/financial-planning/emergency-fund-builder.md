@@ -1,6 +1,7 @@
 # Emergency Fund Builder
 
 ## Metadata
+
 - **ID**: `financial-planning-emergency-fund`
 - **Version**: 2.0.0
 - **Category**: Financial Planning/Savings
@@ -18,6 +19,7 @@ Build appropriate emergency fund reserves tailored to individual risk factors an
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Starting or rebuilding an emergency fund from scratch
 - Determining appropriate fund size for specific situation
 - Choosing optimal accounts for emergency savings
@@ -25,6 +27,7 @@ Build appropriate emergency fund reserves tailored to individual risk factors an
 - Balancing emergency savings with other financial priorities
 
 **Anti-Patterns (When NOT to Use):**
+
 - Investment portfolio planning (different purpose)
 - Debt payoff prioritization decisions
 - Retirement savings strategies
@@ -44,16 +47,18 @@ Emergency funds prevent financial crises from becoming financial disasters. With
 
 <input_handling>
 Required Inputs:
+
 - Monthly essential expenses
 - Current emergency savings amount
 - Job/income stability assessment
 
 Optional Inputs (Inferred if not provided):
+
 - Target fund size (3-6 months based on risk factors)
 - Monthly savings capacity (request if not provided)
 - Account preferences (recommend high-yield savings as default)
 - Other financial priorities competing for savings
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized emergency fund strategy with savings plan and usage guidelines.
@@ -69,27 +74,30 @@ Step 5: Establish replenishment strategy and review triggers
 Format: Emergency Fund Strategy with savings plan
 Length: 700-1000 words
 Structure:
+
 - Risk Factor Assessment table with impact ratings
 - Tiered Fund Structure with account recommendations
 - Savings Timeline with milestone targets
 - Monthly Savings Plan with automation
 - Emergency Definition Framework
 - Usage Protocol and Replenishment Strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Fund size tailored to individual risk factors
 - Balance between accessibility and earning potential
 - Clear, specific definition of what constitutes an emergency
 - Sustainable savings pace that doesn't cause burnout
 
 Outputs must avoid:
+
 - One-size-fits-all recommendations
 - Overly aggressive savings targets
 - Ignoring opportunity cost of excess cash
 - Vague or subjective emergency definitions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Minimum starter emergency fund: $1,000
@@ -103,6 +111,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Monthly expenses $2,800. Currently have $1,500 in checking. Marketing job at stable company but tech industry can be volatile. No dependents. Renting. Can save $500/month."
 
 ### Output
@@ -119,40 +128,44 @@ Outputs must avoid:
 | Housing | Renting | Flexible |
 | Health | Good | Lower risk |
 
-*Risk Level*: Moderate-High
-*Recommended Fund*: 4-5 months expenses = $11,200-$14,000
+_Risk Level_: Moderate-High
+_Recommended Fund_: 4-5 months expenses = $11,200-$14,000
 
 **Tiered Fund Structure**
 
-*Tier 1: Immediate Access ($1,500)*
+_Tier 1: Immediate Access ($1,500)_
+
 - Location: Checking account or money market
 - Purpose: Same-day emergencies (car repair, urgent bills)
 - Access: Debit card, immediate
 
-*Tier 2: Short-Term Reserve ($8,000)*
+_Tier 2: Short-Term Reserve ($8,000)_
+
 - Location: High-yield savings (4.0-5.0% APY)
 - Purpose: Job loss, major medical, significant repairs
 - Access: 1-2 day transfer
 - Recommended: Ally, Marcus, American Express HYSA
 
-*Tier 3: Extended Protection ($4,500)*
+_Tier 3: Extended Protection ($4,500)_
+
 - Location: High-yield savings or short-term CDs
 - Purpose: Extended unemployment, major life changes
 - Access: Same account as Tier 2 initially
 
-*Total Target*: $14,000 (5 months expenses)
+_Total Target_: $14,000 (5 months expenses)
 
 **Savings Timeline**
 
-| Milestone | Target | Monthly | Timeline |
-|-----------|--------|---------|----------|
-| Starter fund | $3,000 | $500 | 3 months |
-| Basic security | $8,400 | $500 | 14 months |
-| Full fund | $14,000 | $500 | 25 months |
+| Milestone      | Target  | Monthly | Timeline  |
+| -------------- | ------- | ------- | --------- |
+| Starter fund   | $3,000  | $500    | 3 months  |
+| Basic security | $8,400  | $500    | 14 months |
+| Full fund      | $14,000 | $500    | 25 months |
 
-*Current Progress*: $1,500 of $14,000 (11%)
+_Current Progress_: $1,500 of $14,000 (11%)
 
 **Monthly Savings Plan**
+
 - Automate: $500 transfer on payday to HYSA
 - Bonus money: Add tax refunds, bonuses to fund
 - Priority: Complete before increasing investments
@@ -160,27 +173,31 @@ Outputs must avoid:
 
 **Emergency Definition Framework**
 
-*True Emergencies (Use Without Hesitation)*
+_True Emergencies (Use Without Hesitation)_
+
 - Job loss or income reduction
 - Medical emergencies (unexpected, not routine)
 - Critical car repairs needed for work
 - Emergency travel for family crisis
 - Essential home repairs (renter: safety issues)
 
-*Not Emergencies (Find Alternatives)*
+_Not Emergencies (Find Alternatives)_
+
 - Vacations or entertainment
 - Non-urgent purchases on sale
 - Gifts or holidays
 - Home upgrades or improvements
 - Investment opportunities
 
-*Gray Areas (Evaluate Carefully)*
+_Gray Areas (Evaluate Carefully)_
+
 - Pet medical emergencies
 - Computer/phone replacement
 - Moving costs for opportunity
 - Extended family financial help
 
 **Usage Protocol**
+
 1. Ask: Is this truly unexpected and unavoidable?
 2. Ask: Can I solve this without the emergency fund?
 3. If yes to #1 and no to #2: Use fund
@@ -188,6 +205,7 @@ Outputs must avoid:
 5. Immediately plan replenishment
 
 **Replenishment Strategy**
+
 - After use: Return to normal savings rate minimum
 - Large use (>$3,000): Temporarily pause extra retirement contributions
 - Goal: Restore fund within 6 months of use
@@ -201,6 +219,7 @@ Outputs must avoid:
 | Amex HYSA | 4.35% | $0 | 1-2 days |
 
 **Success Metrics**
+
 - Month 3: $3,000 starter fund complete
 - Month 12: $8,000+ and no inappropriate usage
 - Month 25: Full $14,000 fund complete

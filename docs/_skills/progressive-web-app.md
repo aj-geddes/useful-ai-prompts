@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build progressive web apps using service workers, web manifest, offline
+date: "2025-01-01"
+description:
+  Build progressive web apps using service workers, web manifest, offline
   support, and installability. Use when creating app-like web experiences.
 layout: skill
 slug: progressive-web-app
 tags:
-- development
+  - development
 title: progressive-web-app
 ---
 
@@ -102,18 +103,18 @@ Build progressive web applications with offline support, installability, service
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#007bff">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/images/icon-192.png">
-  <title>My Awesome App</title>
-</head>
-<body>
-  <div id="root"></div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#007bff" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/icon-192.png" />
+    <title>My Awesome App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
 ```
 
@@ -121,76 +122,82 @@ Build progressive web applications with offline support, installability, service
 
 ```typescript
 // public/service-worker.ts
-const CACHE_NAME = 'app-v1';
+const CACHE_NAME = "app-v1";
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/css/main.css',
-  '/js/app.js',
-  '/images/icon-192.png',
-  '/offline.html'
+  "/",
+  "/index.html",
+  "/css/main.css",
+  "/js/app.js",
+  "/images/icon-192.png",
+  "/offline.html",
 ];
 
 // Install event
-self.addEventListener('install', (event: ExtendableEvent) => {
+self.addEventListener("install", (event: ExtendableEvent) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
+    caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(STATIC_ASSETS);
-    })
+    }),
   );
   self.skipWaiting();
 });
 
 // Activate event
-self.addEventListener('activate', (event: ExtendableEvent) => {
+self.addEventListener("activate", (event: ExtendableEvent) => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames
-          .filter(name => name !== CACHE_NAME)
-          .map(name => caches.delete(name))
+          .filter((name) => name !== CACHE_NAME)
+          .map((name) => caches.delete(name)),
       );
-    })
+    }),
   );
   self.clients.claim();
 });
 
 // Fetch event with cache-first strategy for static assets
-self.addEventListener('fetch', (event: FetchEvent) => {
+self.addEventListener("fetch", (event: FetchEvent) => {
   const { request } = event;
 
   // Skip non-GET requests
-  if (request.method !== 'GET') {
+  if (request.method !== "GET") {
     return;
   }
 
   // Cache first for static assets
-  if (request.destination === 'image' || request.destination === 'font') {
+  if (request.destination === "image" || request.destination === "font") {
     event.respondWith(
-      caches.match(request).then(response => {
-        return response || fetch(request).then(res => {
-          if (res.ok) {
-            const clone = res.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(request, clone);
-            });
-          }
-          return res;
-        });
-      }).catch(() => {
-        return caches.match('/offline.html');
-      })
+      caches
+        .match(request)
+        .then((response) => {
+          return (
+            response ||
+            fetch(request).then((res) => {
+              if (res.ok) {
+                const clone = res.clone();
+                caches.open(CACHE_NAME).then((cache) => {
+                  cache.put(request, clone);
+                });
+              }
+              return res;
+            })
+          );
+        })
+        .catch(() => {
+          return caches.match("/offline.html");
+        }),
     );
   }
 
   // Network first for API calls
-  if (request.url.includes('/api/')) {
+  if (request.url.includes("/api/")) {
     event.respondWith(
       fetch(request)
-        .then(response => {
+        .then((response) => {
           if (response.ok) {
             const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => {
+            caches.open(CACHE_NAME).then((cache) => {
               cache.put(request, clone);
             });
           }
@@ -198,17 +205,17 @@ self.addEventListener('fetch', (event: FetchEvent) => {
         })
         .catch(() => {
           return caches.match(request);
-        })
+        }),
     );
   }
 
   // Stale while revalidate for HTML
-  if (request.destination === 'document') {
+  if (request.destination === "document") {
     event.respondWith(
-      caches.match(request).then(cachedResponse => {
-        const fetchPromise = fetch(request).then(response => {
+      caches.match(request).then((cachedResponse) => {
+        const fetchPromise = fetch(request).then((response) => {
           if (response.ok) {
-            caches.open(CACHE_NAME).then(cache => {
+            caches.open(CACHE_NAME).then((cache) => {
               cache.put(request, response.clone());
             });
           }
@@ -216,31 +223,34 @@ self.addEventListener('fetch', (event: FetchEvent) => {
         });
 
         return cachedResponse || fetchPromise;
-      })
+      }),
     );
   }
 });
 
 // Background Sync
-self.addEventListener('sync', (event: any) => {
-  if (event.tag === 'sync-notes') {
+self.addEventListener("sync", (event: any) => {
+  if (event.tag === "sync-notes") {
     event.waitUntil(syncNotes());
   }
 });
 
 async function syncNotes() {
-  const db = await openDB('notes');
-  const unsynced = await db.getAll('keyval', IDBKeyRange.bound('pending_', 'pending_\uffff'));
+  const db = await openDB("notes");
+  const unsynced = await db.getAll(
+    "keyval",
+    IDBKeyRange.bound("pending_", "pending_\uffff"),
+  );
 
   for (const item of unsynced) {
     try {
-      await fetch('/api/notes', {
-        method: 'POST',
-        body: JSON.stringify(item.value)
+      await fetch("/api/notes", {
+        method: "POST",
+        body: JSON.stringify(item.value),
       });
-      await db.delete('keyval', item.key);
+      await db.delete("keyval", item.key);
     } catch (error) {
-      console.error('Sync failed:', error);
+      console.error("Sync failed:", error);
     }
   }
 }
@@ -334,7 +344,7 @@ export const InstallPrompt: React.FC = () => {
 
 ```typescript
 // db/notesDB.ts
-import { openDB, DBSchema, IDBPDatabase } from 'idb';
+import { openDB, DBSchema, IDBPDatabase } from "idb";
 
 interface Note {
   id: string;
@@ -348,43 +358,43 @@ interface NotesDB extends DBSchema {
   notes: {
     key: string;
     value: Note;
-    indexes: { 'by-timestamp': number; 'by-synced': boolean };
+    indexes: { "by-timestamp": number; "by-synced": boolean };
   };
 }
 
 let db: IDBPDatabase<NotesDB>;
 
 export async function initDB() {
-  db = await openDB<NotesDB>('notes-db', 1, {
+  db = await openDB<NotesDB>("notes-db", 1, {
     upgrade(db) {
-      const store = db.createObjectStore('notes', { keyPath: 'id' });
-      store.createIndex('by-timestamp', 'timestamp');
-      store.createIndex('by-synced', 'synced');
-    }
+      const store = db.createObjectStore("notes", { keyPath: "id" });
+      store.createIndex("by-timestamp", "timestamp");
+      store.createIndex("by-synced", "synced");
+    },
   });
   return db;
 }
 
-export async function addNote(note: Omit<Note, 'timestamp'>) {
-  return db.add('notes', {
+export async function addNote(note: Omit<Note, "timestamp">) {
+  return db.add("notes", {
     ...note,
     timestamp: Date.now(),
-    synced: false
+    synced: false,
   });
 }
 
 export async function getNotes(): Promise<Note[]> {
-  return db.getAll('notes');
+  return db.getAll("notes");
 }
 
 export async function getUnsyncedNotes(): Promise<Note[]> {
-  return db.getAllFromIndex('notes', 'by-synced', false);
+  return db.getAllFromIndex("notes", "by-synced", false);
 }
 
 export async function updateNote(id: string, updates: Partial<Note>) {
-  const note = await db.get('notes', id);
+  const note = await db.get("notes", id);
   if (note) {
-    await db.put('notes', { ...note, ...updates });
+    await db.put("notes", { ...note, ...updates });
   }
 }
 
@@ -398,8 +408,8 @@ export async function markAsSynced(id: string) {
 ```typescript
 // services/pushNotification.ts
 export async function subscribeToPushNotifications() {
-  if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
-    console.log('Push notifications not supported');
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+    console.log("Push notifications not supported");
     return;
   }
 
@@ -407,47 +417,45 @@ export async function subscribeToPushNotifications() {
     const registration = await navigator.serviceWorker.ready;
     const subscription = await registration.pushManager.subscribe({
       userVisibleOnly: true,
-      applicationServerKey: process.env.REACT_APP_VAPID_PUBLIC_KEY
+      applicationServerKey: process.env.REACT_APP_VAPID_PUBLIC_KEY,
     });
 
     // Send subscription to server
-    await fetch('/api/push-subscription', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(subscription)
+    await fetch("/api/push-subscription", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(subscription),
     });
 
     return subscription;
   } catch (error) {
-    console.error('Push subscription failed:', error);
+    console.error("Push subscription failed:", error);
   }
 }
 
 // service-worker.ts
-self.addEventListener('push', (event: PushEvent) => {
+self.addEventListener("push", (event: PushEvent) => {
   const data = event.data?.json() ?? {};
   const options: NotificationOptions = {
-    title: data.title || 'New Notification',
-    body: data.message || '',
-    icon: '/images/icon-192.png',
-    badge: '/images/badge-72.png',
-    tag: data.tag || 'notification'
+    title: data.title || "New Notification",
+    body: data.message || "",
+    icon: "/images/icon-192.png",
+    badge: "/images/badge-72.png",
+    tag: data.tag || "notification",
   };
 
-  event.waitUntil(
-    self.registration.showNotification(options.title, options)
-  );
+  event.waitUntil(self.registration.showNotification(options.title, options));
 });
 
-self.addEventListener('notificationclick', (event: NotificationEvent) => {
+self.addEventListener("notificationclick", (event: NotificationEvent) => {
   event.notification.close();
   event.waitUntil(
-    self.clients.matchAll({ type: 'window' }).then(clients => {
+    self.clients.matchAll({ type: "window" }).then((clients) => {
       if (clients.length > 0) {
         return clients[0].focus();
       }
-      return self.clients.openWindow('/');
-    })
+      return self.clients.openWindow("/");
+    }),
   );
 });
 ```

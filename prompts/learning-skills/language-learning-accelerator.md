@@ -1,6 +1,7 @@
 # Language Learning Accelerator
 
 ## Metadata
+
 - **ID**: `learning-language-accelerator`
 - **Version**: 1.0.0
 - **Category**: Learning & Skills
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Creates personalized strategies for rapid language acquisition and fluency development. Combines comprehensible input theory, spaced repetition, and structured communication practice to accelerate progress toward conversational and professional fluency.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Learning a new language for travel, work, or personal enrichment
 - Accelerating progress in a language already being studied
 - Preparing for language proficiency tests (DELE, JLPT, DELF, etc.)
@@ -23,6 +27,7 @@ Creates personalized strategies for rapid language acquisition and fluency devel
 - Reactivating a previously studied language
 
 **Anti-patterns (when NOT to use):**
+
 - Academic linguistics or language structure study
 - Translation certification preparation
 - Language teaching methodology development
@@ -107,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I want to learn Spanish for a work assignment in Mexico in 8 months. Currently complete beginner. Need conversational fluency for business settings. Can dedicate 1 hour daily."
 
 ### Output
+
 **Language Acceleration Plan: Business Spanish**
 
 **1. Level Assessment & Targets**
+
 - Current level: A0 (complete beginner)
 - 8-month target: B1+ (functional business fluency - can participate in meetings, handle work conversations, email professionally)
 - Priority skills ranked: Listening comprehension > speaking > reading > writing
@@ -121,6 +129,7 @@ Avoid:
 
 **2. Daily Practice (60 minutes)**
 Morning block (30 min):
+
 - 10 min: Anki vocabulary review (frequency-based Spanish deck, targeting 3000 most common words by month 6)
 - 20 min: Comprehensible input - podcasts scaled to level
   - Months 1-2: "Dreaming Spanish" (superbeginner/beginner)
@@ -128,24 +137,29 @@ Morning block (30 min):
   - Months 5-8: "News in Slow Spanish" then native podcasts
 
 Evening block (30 min):
+
 - 15 min: Speaking practice (shadowing early, conversation later)
 - 15 min: Reading (graded readers progressing to news articles)
 
 Weekend intensive (optional but accelerating):
+
 - 2 hours: iTalki tutoring session or extended immersion activity
 
 **3. Immersion Strategy**
 Passive immersion (environment saturation):
+
 - Phone and computer language settings changed to Spanish immediately
 - Spanish music playlist for commutes and background listening
 - Spanish radio stream in background during low-focus work
 
 Active listening progression:
+
 - Months 1-3: Learner content with visual support (Dreaming Spanish - comprehensible input videos)
 - Months 4-5: Native content with Spanish subtitles (not English) - Mexican telenovelas, reality shows
 - Months 6-8: Native podcasts, Mexican news, business content
 
 Specific resources for Mexican Spanish:
+
 - Dreaming Spanish (comprehensible input video library)
 - Language Transfer Spanish (free audio course - excellent foundation)
 - "Destinos" (classic immersive video course, free online)
@@ -156,33 +170,39 @@ Specific resources for Mexican Spanish:
 Progression to pushed output:
 
 Months 1-2: Foundation (no live speaking required)
+
 - Shadowing: Repeat audio exactly, copy rhythm, melody, and pronunciation
 - Self-talk: Narrate daily activities in simple Spanish
 - Pronunciation focus: Master Spanish vowels and key sounds (rr, j, ll)
 
 Months 3-4: Structured conversation
+
 - iTalki community tutors: 2x30 min/week with Mexican Spanish speakers
 - Focus: Survival conversations, basic work vocabulary
 - Script practice: Prepare and rehearse common work scenarios
 
 Months 5-6: Professional contexts
+
 - Language exchange: 1 hour weekly (30 min Spanish help, 30 min English help)
 - Work simulation: Meeting role-plays, presentation practice with tutor
 - Vocabulary focus: Your industry-specific terminology
 
 Months 7-8: Polish and confidence
+
 - Business-focused tutoring: Meeting facilitation, negotiation basics
 - Record yourself: Video practice of work presentations in Spanish
 - Live practice: Find Mexican professionals in your field for informational interviews (LinkedIn, professional groups)
 
 **5. Milestones**
 Monthly checkpoints:
+
 - Month 2: Sustain 5-minute basic conversation, recognize 500 most frequent words, introduce yourself professionally
 - Month 4: Follow native podcasts at 0.75x speed, handle transactional conversations (ordering, directions, basic phone calls)
 - Month 6: Participate in work meeting in Spanish with support, 2000-word vocabulary, send professional emails
 - Month 8: Lead business conversation, understand Mexican colleagues at normal speed, present work topics clearly
 
 Self-assessment tools:
+
 - Monthly: Record 5-minute video speaking about your week, compare to previous month
 - Quarterly: Take practice DELE A2/B1 exam sections
 - Pre-departure: Schedule 1-hour conversation with Mexican business professional as validation
@@ -192,6 +212,7 @@ Test-ready marker: When you can watch a Mexican news broadcast and understand 80
 ---
 
 ## Related Prompts
+
 - [Language Learning Strategist](language-learning-strategist.md) - Long-term language learning planning
 - [Professional Certification Planner](professional-certification-planner.md) - Test preparation strategies
 - [Knowledge Retention Enhancer](knowledge-retention-enhancer.md) - Vocabulary retention systems

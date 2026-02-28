@@ -26,7 +26,7 @@ Build comprehensive log aggregation systems to collect, parse, and analyze logs 
 
 ```yaml
 # docker-compose.yml - ELK Stack setup
-version: '3.8'
+version: "3.8"
 
 services:
   elasticsearch:
@@ -209,7 +209,7 @@ processors:
       in_cluster: true
   - add_host_metadata:
   - add_fields:
-      target: ''
+      target: ""
       fields:
         environment: production
 
@@ -245,7 +245,7 @@ logging.files:
         "query": "level: ERROR",
         "visualization": "table",
         "fields": ["message", "count"],
-        "sort": [{"count": "desc"}],
+        "sort": [{ "count": "desc" }],
         "size": 10
       },
       {
@@ -429,6 +429,7 @@ echo "Kibana: http://localhost:5601"
 ## Best Practices
 
 ### ✅ DO
+
 - Parse and structure log data
 - Use appropriate log levels
 - Add contextual information
@@ -439,6 +440,7 @@ echo "Kibana: http://localhost:5601"
 - Implement access controls
 
 ### ❌ DON'T
+
 - Store sensitive data in logs
 - Log at DEBUG level in production
 - Send raw unstructured logs

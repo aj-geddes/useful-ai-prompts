@@ -3,32 +3,33 @@ title: KPI Dashboard Designer
 slug: kpi-dashboard-designer
 category: operations
 tags:
-- KPI
-- dashboard
-- operations-metrics
-- leading-indicators
-- lagging-indicators
-- data-visualization
+  - KPI
+  - dashboard
+  - operations-metrics
+  - leading-indicators
+  - lagging-indicators
+  - data-visualization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a KPI dashboard designer who selects the right
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a KPI dashboard designer who selects the right
   operational metrics, balances leading and lagging indicators, designs dashboard
   layouts for different audiences, and specifies data sources and refresh cadences.
   It covers manufacturing, distribution, service operations, and administrative function
   dashboards.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An operations team has abundant data but lacks a coherent measurement framework
-  — leaders are using different metrics and drawing conflicting conclusions
-- A new operational initiative (lean transformation, quality improvement, logistics
-  overhaul) needs a measurement system designed before launch to track progress
-- A business is standing up a new operational function and needs a starter KPI set
-  with data source mapping and dashboard design guidance
-- Real-time monitoring system engineering requiring specific BI tool configuration
-  (Power BI, Tableau, etc.) without knowing the user's tool stack
+  - Ideal Scenarios:**
+  - An operations team has abundant data but lacks a coherent measurement framework
+    — leaders are using different metrics and drawing conflicting conclusions
+  - A new operational initiative (lean transformation, quality improvement, logistics
+    overhaul) needs a measurement system designed before launch to track progress
+  - A business is standing up a new operational function and needs a starter KPI set
+    with data source mapping and dashboard design guidance
+  - Real-time monitoring system engineering requiring specific BI tool configuration
+    (Power BI, Tableau, etc.) without knowing the user's tool stack
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -3,29 +3,30 @@ title: Freelance Business Builder
 slug: freelance-business-builder
 category: career development
 tags:
-- freelancing
-- client
-- acquisition
-- pricing
-- strategy
-- business
-- development
-- independent
-- work
+  - freelancing
+  - client
+  - acquisition
+  - pricing
+  - strategy
+  - business
+  - development
+  - independent
+  - work
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Builds thriving freelance businesses through strategic positioning, client
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Builds thriving freelance businesses through strategic positioning, client
   acquisition systems, pricing optimization, and sustainable operations. Creates pathways
   from side hustle to full-time independence with predictable income.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Launching a freelance career alongside current employment
-- Scaling an existing freelance practice for higher income
-- Improving client acquisition and reducing feast/famine cycles
-- Transitioning from employment to full-time self-employment
+  - Scenarios:**
+  - Launching a freelance career alongside current employment
+  - Scaling an existing freelance practice for higher income
+  - Improving client acquisition and reducing feast/famine cycles
+  - Transitioning from employment to full-time self-employment
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -40,22 +41,25 @@ The user wants to build or grow a freelance business. They need practical strate
 
 <input_handling>
 Required inputs:
+
 - Services offered or skills available
 - Current freelance status and income level
 - Target client type (industry, size, role)
 - Income and lifestyle goals (target monthly income, hours)
 
 Optional inputs:
+
 - Current marketing efforts
 - Pricing model and rates
 - Time available for freelance work
 - Geographic or remote considerations
 
 Default assumptions if not provided:
+
 - Pricing model: project-based with retainer options for ongoing work
 - Marketing approach: referral + content + targeted outreach blend
 - Business structure: sole proprietor (until income justifies LLC)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive freelance business plan following these steps:
@@ -66,22 +70,24 @@ Create a comprehensive freelance business plan following these steps:
 4. Create service delivery framework for consistent quality
 5. Build business operations and systems for efficiency
 6. Plan growth trajectory with monthly income targets
-</task>
+   </task>
 
 <output_specification>
 Format: Strategic plan with actionable systems and processes
 Length: 600-1000 words
 Structure:
+
 - Positioning Strategy (niche, value proposition, differentiators)
 - Client Acquisition System (lead generation, conversion, referrals)
 - Pricing Framework (packages, positioning, psychology)
 - Service Delivery (process, communication, quality)
 - Growth Trajectory (monthly targets, milestones)
 - Business Systems (tools, time allocation, operations)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Positioning is specific and differentiated (not "I do X for anyone who needs it")
 - Acquisition creates predictable lead flow, not random project wins
 - Pricing captures value (not hourly race to bottom)
@@ -89,11 +95,12 @@ Excellent outputs demonstrate:
 - Growth plan is realistic with clear milestones
 
 Outputs must avoid:
+
 - Generic freelancing advice without specific niche context
 - Race-to-bottom pricing strategies competing on cost
 - Unsustainable workload assumptions (40+ billable hours)
 - Dependency on single client or acquisition channel
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure recommendations fit stated time availability

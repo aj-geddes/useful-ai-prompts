@@ -3,25 +3,26 @@ title: Estate Planning Advisor
 slug: estate-planning-advisor
 category: financial planning/estate
 tags:
-- estate-planning
-- wills
-- trusts
-- legacy-planning
-- asset-protection
+  - estate-planning
+  - wills
+  - trusts
+  - legacy-planning
+  - asset-protection
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Guide comprehensive estate planning strategies that protect assets, minimize
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Guide comprehensive estate planning strategies that protect assets, minimize
   taxes, and ensure wishes are carried out. Helps identify needed documents and planning
   priorities based on individual circumstances, family dynamics, and asset complexity.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Creating initial estate planning framework
-- Reviewing existing estate plans for updates needed
-- Understanding estate planning document requirements
-- Planning for incapacity and healthcare decisions
+  - Ideal Scenarios:**
+  - Creating initial estate planning framework
+  - Reviewing existing estate plans for updates needed
+  - Understanding estate planning document requirements
+  - Planning for incapacity and healthcare decisions
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,16 +37,18 @@ Estate planning ensures assets transfer according to your wishes while minimizin
 
 <input_handling>
 Required Inputs:
+
 - Family situation (spouse, children, dependents)
 - Major assets and approximate values
 - Primary estate planning concerns
 
 Optional Inputs (Inferred if not provided):
+
 - Estate tax exposure (assess from asset level vs. exemption)
 - Complexity level needed (match to family and asset situation)
 - Healthcare directive preferences (include as standard recommendation)
 - Existing documents in place
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive estate planning framework with document recommendations and priorities.
@@ -61,6 +64,7 @@ Step 5: Create implementation timeline with review triggers and professional ref
 Format: Estate Planning Framework with action plan
 Length: 700-1000 words
 Structure:
+
 - Situation Assessment with complexity rating
 - Essential Documents Checklist with priority levels
 - Document Details and purposes
@@ -68,21 +72,23 @@ Structure:
 - Guardian and Healthcare Planning
 - Beneficiary Designation review
 - Implementation Timeline
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Recommendations tailored to specific situation complexity
 - Prioritization of most critical protections first
 - Both incapacity and death planning addressed
 - Clear review triggers and update recommendations
 
 Outputs must avoid:
+
 - Providing specific legal advice or document language
 - Over-complicating simple estate situations
 - Missing critical protections (healthcare directives, POA)
 - Ignoring family dynamics and potential conflict sources
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always recommend consultation with estate planning attorney

@@ -1,13 +1,14 @@
 ---
 category: testing-qa
-date: '2025-01-01'
-description: Write comprehensive unit tests with high coverage using testing frameworks
+date: "2025-01-01"
+description:
+  Write comprehensive unit tests with high coverage using testing frameworks
   like Jest, pytest, JUnit, or RSpec. Use when writing tests for functions, classes,
   components, or establishing testing standards.
 layout: skill
 slug: unit-testing-framework
 tags:
-- testing
+  - testing
 title: unit-testing-framework
 ---
 
@@ -32,14 +33,14 @@ Write effective unit tests that are fast, isolated, readable, and maintainable f
 
 ```javascript
 // Jest/JavaScript example
-describe('UserService', () => {
-  describe('createUser', () => {
-    it('should create user with valid data', async () => {
+describe("UserService", () => {
+  describe("createUser", () => {
+    it("should create user with valid data", async () => {
       // Arrange - Set up test data and dependencies
       const userData = {
-        email: 'john@example.com',
-        firstName: 'John',
-        lastName: 'Doe'
+        email: "john@example.com",
+        firstName: "John",
+        lastName: "Doe",
       };
       const mockDatabase = createMockDatabase();
       const service = new UserService(mockDatabase);
@@ -49,9 +50,9 @@ describe('UserService', () => {
 
       // Assert - Verify the outcome
       expect(result.id).toBeDefined();
-      expect(result.email).toBe('john@example.com');
+      expect(result.email).toBe("john@example.com");
       expect(mockDatabase.save).toHaveBeenCalledWith(
-        expect.objectContaining(userData)
+        expect.objectContaining(userData),
       );
     });
   });
@@ -61,42 +62,43 @@ describe('UserService', () => {
 ### 2. **Test Cases by Language**
 
 #### JavaScript/TypeScript (Jest)
-```typescript
-import { Calculator } from './calculator';
 
-describe('Calculator', () => {
+```typescript
+import { Calculator } from "./calculator";
+
+describe("Calculator", () => {
   let calculator: Calculator;
 
   beforeEach(() => {
     calculator = new Calculator();
   });
 
-  describe('add', () => {
-    it('should add two positive numbers', () => {
+  describe("add", () => {
+    it("should add two positive numbers", () => {
       expect(calculator.add(2, 3)).toBe(5);
     });
 
-    it('should handle negative numbers', () => {
+    it("should handle negative numbers", () => {
       expect(calculator.add(-2, 3)).toBe(1);
       expect(calculator.add(-2, -3)).toBe(-5);
     });
 
-    it('should handle zero', () => {
+    it("should handle zero", () => {
       expect(calculator.add(0, 5)).toBe(5);
       expect(calculator.add(5, 0)).toBe(5);
     });
   });
 
-  describe('divide', () => {
-    it('should divide numbers correctly', () => {
+  describe("divide", () => {
+    it("should divide numbers correctly", () => {
       expect(calculator.divide(10, 2)).toBe(5);
     });
 
-    it('should throw error when dividing by zero', () => {
-      expect(() => calculator.divide(10, 0)).toThrow('Division by zero');
+    it("should throw error when dividing by zero", () => {
+      expect(() => calculator.divide(10, 0)).toThrow("Division by zero");
     });
 
-    it('should handle decimal results', () => {
+    it("should handle decimal results", () => {
       expect(calculator.divide(10, 3)).toBeCloseTo(3.333, 2);
     });
   });
@@ -104,6 +106,7 @@ describe('Calculator', () => {
 ```
 
 #### Python (pytest)
+
 ```python
 import pytest
 from user_service import UserService, ValidationError
@@ -153,6 +156,7 @@ class TestUserService:
 ```
 
 #### Java (JUnit 5)
+
 ```java
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -217,24 +221,26 @@ class UserServiceTest {
 ### 3. **Mocking & Test Doubles**
 
 #### Mock External Dependencies
+
 ```javascript
 // Mock database
 const mockDatabase = {
-  save: jest.fn().mockResolvedValue({ id: '123' }),
-  findById: jest.fn().mockResolvedValue({ id: '123', name: 'John' }),
-  delete: jest.fn().mockResolvedValue(true)
+  save: jest.fn().mockResolvedValue({ id: "123" }),
+  findById: jest.fn().mockResolvedValue({ id: "123", name: "John" }),
+  delete: jest.fn().mockResolvedValue(true),
 };
 
 // Mock HTTP client
-jest.mock('axios');
+jest.mock("axios");
 axios.get.mockResolvedValue({ data: { users: [] } });
 
 // Spy on methods
-const spy = jest.spyOn(userService, 'sendEmail');
-expect(spy).toHaveBeenCalledWith('john@example.com', 'Welcome');
+const spy = jest.spyOn(userService, "sendEmail");
+expect(spy).toHaveBeenCalledWith("john@example.com", "Welcome");
 ```
 
 #### Python Mocking
+
 ```python
 from unittest.mock import Mock, patch, MagicMock
 
@@ -265,21 +271,21 @@ def test_fetch_user_data(mock_get):
 
 ```javascript
 // Jest async/await
-it('should fetch user data', async () => {
-  const user = await fetchUser('123');
-  expect(user.id).toBe('123');
+it("should fetch user data", async () => {
+  const user = await fetchUser("123");
+  expect(user.id).toBe("123");
 });
 
 // Testing promises
-it('should resolve with user data', () => {
-  return fetchUser('123').then(user => {
-    expect(user.id).toBe('123');
+it("should resolve with user data", () => {
+  return fetchUser("123").then((user) => {
+    expect(user.id).toBe("123");
   });
 });
 
 // Testing rejection
-it('should reject with error for invalid ID', async () => {
-  await expect(fetchUser('invalid')).rejects.toThrow('User not found');
+it("should reject with error for invalid ID", async () => {
+  await expect(fetchUser("invalid")).rejects.toThrow("User not found");
 });
 ```
 
@@ -297,6 +303,7 @@ mvn test jacoco:report
 ```
 
 **Coverage Goals:**
+
 - **Statements**: 80%+ covered
 - **Branches**: 75%+ covered
 - **Functions**: 85%+ covered
@@ -305,30 +312,31 @@ mvn test jacoco:report
 ### 6. **Testing Edge Cases**
 
 ```javascript
-describe('Edge Cases', () => {
-  it('should handle null input', () => {
+describe("Edge Cases", () => {
+  it("should handle null input", () => {
     expect(processData(null)).toBeNull();
   });
 
-  it('should handle undefined input', () => {
+  it("should handle undefined input", () => {
     expect(processData(undefined)).toBeUndefined();
   });
 
-  it('should handle empty string', () => {
-    expect(processData('')).toBe('');
+  it("should handle empty string", () => {
+    expect(processData("")).toBe("");
   });
 
-  it('should handle empty array', () => {
+  it("should handle empty array", () => {
     expect(processData([])).toEqual([]);
   });
 
-  it('should handle large numbers', () => {
+  it("should handle large numbers", () => {
     expect(calculate(Number.MAX_SAFE_INTEGER)).toBeDefined();
   });
 
-  it('should handle special characters', () => {
-    expect(sanitize('<script>alert("xss")</script>'))
-      .toBe('&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;');
+  it("should handle special characters", () => {
+    expect(sanitize('<script>alert("xss")</script>')).toBe(
+      "&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;",
+    );
   });
 });
 ```
@@ -336,6 +344,7 @@ describe('Edge Cases', () => {
 ## Best Practices
 
 ### ✅ DO
+
 - Write tests before or alongside code (TDD)
 - Test one thing per test
 - Use descriptive test names
@@ -350,6 +359,7 @@ describe('Edge Cases', () => {
 - Test public interfaces, not implementation
 
 ### ❌ DON'T
+
 - Test implementation details
 - Write tests that depend on each other
 - Ignore failing tests
@@ -384,20 +394,22 @@ src/
 ## Common Assertions
 
 ### Jest
+
 ```javascript
-expect(value).toBe(expected);              // Strict equality
-expect(value).toEqual(expected);           // Deep equality
-expect(value).toBeTruthy();                // Truthy check
-expect(value).toBeDefined();               // Not undefined
-expect(value).toBeNull();                  // Null check
-expect(value).toContain(item);             // Array/string contains
-expect(value).toMatch(/pattern/);          // Regex match
-expect(fn).toThrow(Error);                 // Throws error
-expect(fn).toHaveBeenCalled();             // Mock called
-expect(fn).toHaveBeenCalledWith(arg);      // Mock called with args
+expect(value).toBe(expected); // Strict equality
+expect(value).toEqual(expected); // Deep equality
+expect(value).toBeTruthy(); // Truthy check
+expect(value).toBeDefined(); // Not undefined
+expect(value).toBeNull(); // Null check
+expect(value).toContain(item); // Array/string contains
+expect(value).toMatch(/pattern/); // Regex match
+expect(fn).toThrow(Error); // Throws error
+expect(fn).toHaveBeenCalled(); // Mock called
+expect(fn).toHaveBeenCalledWith(arg); // Mock called with args
 ```
 
 ### pytest
+
 ```python
 assert value == expected
 assert value is True
@@ -414,15 +426,15 @@ assert mock.call_count == 2
 
 ```typescript
 // user-service.test.ts
-import { UserService } from './user-service';
-import { Database } from './database';
-import { EmailService } from './email-service';
+import { UserService } from "./user-service";
+import { Database } from "./database";
+import { EmailService } from "./email-service";
 
 // Mock dependencies
-jest.mock('./database');
-jest.mock('./email-service');
+jest.mock("./database");
+jest.mock("./email-service");
 
-describe('UserService', () => {
+describe("UserService", () => {
   let userService: UserService;
   let mockDatabase: jest.Mocked<Database>;
   let mockEmailService: jest.Mocked<EmailService>;
@@ -437,16 +449,16 @@ describe('UserService', () => {
     jest.clearAllMocks();
   });
 
-  describe('createUser', () => {
+  describe("createUser", () => {
     const validUserData = {
-      email: 'john@example.com',
-      firstName: 'John',
-      lastName: 'Doe'
+      email: "john@example.com",
+      firstName: "John",
+      lastName: "Doe",
     };
 
-    it('should create user successfully', async () => {
+    it("should create user successfully", async () => {
       // Arrange
-      const savedUser = { id: '123', ...validUserData };
+      const savedUser = { id: "123", ...validUserData };
       mockDatabase.save.mockResolvedValue(savedUser);
 
       // Act
@@ -455,36 +467,36 @@ describe('UserService', () => {
       // Assert
       expect(result).toEqual(savedUser);
       expect(mockDatabase.save).toHaveBeenCalledWith(
-        expect.objectContaining(validUserData)
+        expect.objectContaining(validUserData),
       );
       expect(mockEmailService.sendWelcomeEmail).toHaveBeenCalledWith(
-        validUserData.email
+        validUserData.email,
       );
     });
 
-    it('should throw ValidationError for invalid email', async () => {
-      const invalidData = { ...validUserData, email: 'invalid' };
+    it("should throw ValidationError for invalid email", async () => {
+      const invalidData = { ...validUserData, email: "invalid" };
 
-      await expect(userService.createUser(invalidData))
-        .rejects
-        .toThrow('Invalid email format');
+      await expect(userService.createUser(invalidData)).rejects.toThrow(
+        "Invalid email format",
+      );
 
       expect(mockDatabase.save).not.toHaveBeenCalled();
     });
 
-    it('should handle database errors', async () => {
-      mockDatabase.save.mockRejectedValue(new Error('DB Error'));
+    it("should handle database errors", async () => {
+      mockDatabase.save.mockRejectedValue(new Error("DB Error"));
 
-      await expect(userService.createUser(validUserData))
-        .rejects
-        .toThrow('Failed to create user');
+      await expect(userService.createUser(validUserData)).rejects.toThrow(
+        "Failed to create user",
+      );
     });
 
-    it('should continue even if welcome email fails', async () => {
-      const savedUser = { id: '123', ...validUserData };
+    it("should continue even if welcome email fails", async () => {
+      const savedUser = { id: "123", ...validUserData };
       mockDatabase.save.mockResolvedValue(savedUser);
       mockEmailService.sendWelcomeEmail.mockRejectedValue(
-        new Error('Email failed')
+        new Error("Email failed"),
       );
 
       const result = await userService.createUser(validUserData);
@@ -494,22 +506,22 @@ describe('UserService', () => {
     });
   });
 
-  describe('getUserById', () => {
-    it('should return user when found', async () => {
-      const user = { id: '123', email: 'john@example.com' };
+  describe("getUserById", () => {
+    it("should return user when found", async () => {
+      const user = { id: "123", email: "john@example.com" };
       mockDatabase.findById.mockResolvedValue(user);
 
-      const result = await userService.getUserById('123');
+      const result = await userService.getUserById("123");
 
       expect(result).toEqual(user);
     });
 
-    it('should throw NotFoundError when user not found', async () => {
+    it("should throw NotFoundError when user not found", async () => {
       mockDatabase.findById.mockResolvedValue(null);
 
-      await expect(userService.getUserById('999'))
-        .rejects
-        .toThrow('User not found');
+      await expect(userService.getUserById("999")).rejects.toThrow(
+        "User not found",
+      );
     });
   });
 });

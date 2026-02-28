@@ -1,12 +1,13 @@
 ---
 category: data-analytics
-date: '2025-01-01'
-description: Create effective visualizations using matplotlib and seaborn for exploratory
+date: "2025-01-01"
+description:
+  Create effective visualizations using matplotlib and seaborn for exploratory
   analysis, presenting insights, and communicating findings with business stakeholders
 layout: skill
 slug: data-visualization
 tags:
-- data
+  - data
 title: Data Visualization
 ---
 

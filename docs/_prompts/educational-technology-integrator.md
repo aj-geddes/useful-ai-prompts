@@ -3,21 +3,22 @@ title: Educational Technology Integrator
 slug: educational-technology-integrator
 category: education
 tags:
-- edtech
-- educational
-- technology
-- digital
-- tools
-- SAMR
-- blended
-- learning
-- technology
-- integration
+  - edtech
+  - educational
+  - technology
+  - digital
+  - tools
+  - SAMR
+  - blended
+  - learning
+  - technology
+  - integration
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps educators select, evaluate, and implement digital tools
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps educators select, evaluate, and implement digital tools
   to genuinely enhance student learning outcomes — not just digitize existing practices.
   Using the SAMR model and evidence-based technology integration principles, it matches
   specific pedagogical goals to appropriate tools and provides implementation plans
@@ -25,14 +26,14 @@ description: This prompt helps educators select, evaluate, and implement digital
   with rationale, implementation steps, and success indicators.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Selecting the right technology tool for a specific instructional goal (formative
-  assessment, collaboration, creation, differentiation)
-- Evaluating whether a new district-provided tool is worth adopting and how to use
-  it effectively
-- Building a multi-week technology integration plan that progressively develops student
-  digital skills alongside content
-- Selecting technology for technology's sake without a clear instructional purpose
+  - Ideal Scenarios:**
+  - Selecting the right technology tool for a specific instructional goal (formative
+    assessment, collaboration, creation, differentiation)
+  - Evaluating whether a new district-provided tool is worth adopting and how to use
+    it effectively
+  - Building a multi-week technology integration plan that progressively develops student
+    digital skills alongside content
+  - Selecting technology for technology's sake without a clear instructional purpose
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Tax Optimization Strategist
 
 ## Metadata
+
 - **ID**: `financial-tax-optimization`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive tax planning consultant that develops legal tax optimization str
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing annual tax optimization strategies before year-end
 - Optimizing retirement account contributions for maximum tax efficiency
 - Implementing tax-loss harvesting strategies in taxable accounts
@@ -25,6 +27,7 @@ A comprehensive tax planning consultant that develops legal tax optimization str
 - Coordinating tax strategy with overall financial planning
 
 **Anti-patterns (when NOT to use):**
+
 - Tax return preparation or filing assistance
 - IRS audit representation or dispute resolution
 - State-specific tax code interpretation requiring local expertise
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 My income is $120,000 salary plus $15,000 from consulting on the side. I paid $28,000 in total taxes last year. I am in the 24% federal bracket and 6% state bracket for a 30% combined marginal rate. I take the standard deduction since I rent. I contribute 6% to my 401(k) (company matches 4%). I have access to an HSA through my employer but only contribute $1,000/year. I have some taxable investments with approximately $2,000 in gains last year. My consulting expenses are not well tracked, and I do not currently claim any business deductions. Filing as single.
 
 ### Output
@@ -133,30 +137,30 @@ My income is $120,000 salary plus $15,000 from consulting on the side. I paid $2
 **Identified Optimization Opportunities: $5,500-7,500 Annual Savings**
 
 **Priority 1: HSA Maximization**
-*Estimated Annual Savings: $1,050*
+_Estimated Annual Savings: $1,050_
 
-| Current | Recommended | Benefit |
-|---------|-------------|---------|
+| Current     | Recommended                     | Benefit                   |
+| ----------- | ------------------------------- | ------------------------- |
 | $1,000/year | $4,150/year (2024 single limit) | $3,150 additional pre-tax |
 
 Tax savings: $3,150 x 30% = **$945 federal + state**
 Plus: Payroll tax savings of ~$105 if through payroll
 
-*Implementation:* Increase HSA payroll deduction immediately. Triple tax advantage: deductible contribution, tax-free growth, tax-free qualified withdrawals.
+_Implementation:_ Increase HSA payroll deduction immediately. Triple tax advantage: deductible contribution, tax-free growth, tax-free qualified withdrawals.
 
 **Priority 2: Increase 401(k) Contributions**
-*Estimated Annual Savings: $1,872*
+_Estimated Annual Savings: $1,872_
 
-| Current | Recommended | Benefit |
-|---------|-------------|---------|
+| Current          | Recommended          | Benefit                    |
+| ---------------- | -------------------- | -------------------------- |
 | $7,200/year (6%) | $15,000/year (12.5%) | $7,800 additional deferral |
 
 Tax savings: $7,800 x 24% = **$1,872**
 
-*Implementation:* Increase contribution by 2% each quarter until reaching 12.5%. Adjust budget to accommodate $325/month reduction in take-home pay.
+_Implementation:_ Increase contribution by 2% each quarter until reaching 12.5%. Adjust budget to accommodate $325/month reduction in take-home pay.
 
 **Priority 3: Self-Employment Expense Deductions**
-*Estimated Annual Savings: $1,500-2,000*
+_Estimated Annual Savings: $1,500-2,000_
 
 Likely deductible expenses you are missing:
 | Category | Estimated Annual | Deduction Value |
@@ -170,38 +174,40 @@ Likely deductible expenses you are missing:
 
 Tax + SE tax savings: ~**$800-1,200** annually
 
-*Implementation:*
+_Implementation:_
+
 - Open separate business checking account this month
 - Set up expense tracking app (Wave - free, or QuickBooks Self-Employed)
 - Measure and document home office square footage
 - Keep all receipts for business-related purchases
 
 **Priority 4: Tax-Loss Harvesting**
-*Estimated Annual Savings: $600-900*
+_Estimated Annual Savings: $600-900_
 
-| Strategy | Mechanics | Benefit |
-|----------|-----------|---------|
-| Harvest losses >$500 | Sell losing positions quarterly | Offset up to $3,000 ordinary income |
-| Reinvest immediately | Buy similar (not identical) fund | Maintain market exposure |
+| Strategy             | Mechanics                        | Benefit                             |
+| -------------------- | -------------------------------- | ----------------------------------- |
+| Harvest losses >$500 | Sell losing positions quarterly  | Offset up to $3,000 ordinary income |
+| Reinvest immediately | Buy similar (not identical) fund | Maintain market exposure            |
 
 Annual benefit: $3,000 x 30% = **$900 maximum**
 
-*Implementation:*
+_Implementation:_
+
 - Review taxable investments quarterly for unrealized losses
 - Sell positions with losses >$500
 - Immediately reinvest in similar index fund (avoid wash sale rule)
 - Track cost basis carefully for future sales
 
 **Priority 5: Self-Employment Tax Optimization**
-*Current SE Tax on $15,000: ~$2,120*
+_Current SE Tax on $15,000: ~$2,120_
 
-| Strategy | When to Consider |
-|----------|------------------|
-| Maximize expense deductions | Now (reduces SE tax base) |
-| S-Corp election | If consulting exceeds $40,000 consistently |
-| SEP-IRA contribution | After maxing 401(k) |
+| Strategy                    | When to Consider                           |
+| --------------------------- | ------------------------------------------ |
+| Maximize expense deductions | Now (reduces SE tax base)                  |
+| S-Corp election             | If consulting exceeds $40,000 consistently |
+| SEP-IRA contribution        | After maxing 401(k)                        |
 
-*Note: S-Corp election can save $2,000+/year but adds complexity. Evaluate if consulting income grows significantly.*
+_Note: S-Corp election can save $2,000+/year but adds complexity. Evaluate if consulting income grows significantly._
 
 **Annual Tax Calendar:**
 | Month | Action |
@@ -221,9 +227,10 @@ Annual benefit: $3,000 x 30% = **$900 maximum**
 | 4 | $7,500 | $26,500 |
 | 5 | $8,000 | $34,500 |
 
-*If invested at 7%: $40,000+ in additional wealth after 5 years*
+_If invested at 7%: $40,000+ in additional wealth after 5 years_
 
 **Immediate Action Items:**
+
 1. **This week**: Increase HSA contribution to maximum via payroll portal
 2. **This month**: Set up business expense tracking system
 3. **Next paycheck**: Increase 401(k) contribution by 2%
@@ -232,6 +239,7 @@ Annual benefit: $3,000 x 30% = **$900 maximum**
 ---
 
 ## Related Prompts
+
 - [Investment Strategy Optimizer](investment-strategy-optimizer.md) - Tax-efficient investment placement
 - [Retirement Planning Specialist](retirement-planning-specialist.md) - Optimize retirement account mix
 - [Side Income Developer](side-income-developer.md) - Structure side income tax-efficiently

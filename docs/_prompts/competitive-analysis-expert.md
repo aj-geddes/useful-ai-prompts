@@ -3,28 +3,29 @@ title: Competitive Analysis Expert
 slug: competitive-analysis-expert
 category: analysis
 tags:
-- competitive
-- analysis
-- market
-- intelligence
-- competitor
-- profiling
-- strategic
-- positioning
+  - competitive
+  - analysis
+  - market
+  - intelligence
+  - competitor
+  - profiling
+  - strategic
+  - positioning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-12-27'
-description: Analyzes competitive landscapes to identify strategic opportunities,
+  - Claude 3+
+  - GPT-4+
+date: "2025-12-27"
+description:
+  Analyzes competitive landscapes to identify strategic opportunities,
   assess competitor strengths and weaknesses, and develop positioning strategies.
   Delivers actionable competitive intelligence for market positioning and strategic
   planning.
 layout: prompt
 use_cases:
-- Evaluating market entry or expansion strategies
-- Understanding why you're losing deals to competitors
-- Developing competitive positioning and differentiation
-- Preparing for strategic planning sessions
+  - Evaluating market entry or expansion strategies
+  - Understanding why you're losing deals to competitors
+  - Developing competitive positioning and differentiation
+  - Preparing for strategic planning sessions
 complexity: intermediate
 interaction: conversational
 ---
@@ -43,49 +44,55 @@ Key constraints include limited public data, rapidly changing markets, and biase
 
 <input_handling>
 Required information:
+
 - Industry and product/service offering: defines competitive landscape
 - Top 3-5 direct competitors: focuses analysis scope
 - Current market position: establishes baseline for recommendations
 
 Infer if not provided (ask only if critical):
+
 - Geographic scope: primary operating markets
 - Analysis urgency: standard (1-week timeline)
 - Strategic context: competitive defense/positioning
 - Available data: public information, customer feedback
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive competitive analysis with strategic recommendations.
 
 Process:
+
 1. Map competitive landscape with positioning matrix
 2. Profile key competitors (strengths, weaknesses, strategies)
 3. Identify competitive gaps and white space opportunities
 4. Assess threats and develop mitigation strategies
 5. Create action recommendations with timelines
 6. Define competitive monitoring framework
-</task>
+   </task>
 
 <output_specification>
 **Competitive Analysis Report**
+
 - Format: Strategic analysis with visual frameworks
 - Length: 500-800 words
 - Must include: Positioning map, competitor profiles, opportunity assessment, action plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent output:
+
 - Specific, evidence-based competitor insights
 - Actionable opportunities tied to competitive gaps
 - Realistic threat assessments with mitigation strategies
 - Clear differentiation recommendations
 
 Avoid:
+
 - Surface-level competitor descriptions
 - Ignoring indirect competition
 - Overly optimistic gap assessments
 - Generic strategic recommendations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Base analysis on verifiable information

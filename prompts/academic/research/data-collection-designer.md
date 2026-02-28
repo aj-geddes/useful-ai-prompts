@@ -1,6 +1,7 @@
 # Data Collection Designer
 
 ## Metadata
+
 - **ID**: `academic-data-collection-designer`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a research data collection expert who designs surveys, int
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a survey instrument for a quantitative or mixed-methods study
 - Developing a semi-structured interview protocol for qualitative research
 - Planning a sampling strategy and calculating the required sample size for a study
 
 **Anti-patterns (Don't Use For):**
+
 - Analyzing data already collected (use Statistical Analysis Advisor or Qualitative Research Analyst)
 - Conducting the data collection itself or recruiting participants
 - Designing instruments without providing the research question or population
@@ -115,6 +118,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm studying whether remote work flexibility is associated with job satisfaction and turnover intention among mid-career software engineers. I plan to run an online survey. My three key constructs are: flexibility (how much control they have over when and where they work), job satisfaction, and turnover intention. About 200 respondents. Any recommended validated scales and sample items?"
 
 ### Output
@@ -123,11 +127,11 @@ Avoid:
 
 **Construct Operationalization**
 
-| Construct | Recommended Validated Scale | Items | Level of Measurement |
-|-----------|----------------------------|-------|---------------------|
-| Work flexibility | Flexibility Enactment Scale (Kossek et al., 2016) or Schedule Control subscale of the Work-Family Conflict scale | 5–8 items | Interval (Likert) |
-| Job satisfaction | Minnesota Satisfaction Questionnaire — Short Form (MSQ-SF, Weiss et al., 1967) or 3-item Michigan Organizational Assessment Questionnaire subscale | 3–20 items | Interval (Likert) |
-| Turnover intention | 3-item Turnover Intention Scale (Cammann et al., 1983, revalidated by Crossley et al., 2007) | 3 items | Interval (Likert) |
+| Construct          | Recommended Validated Scale                                                                                                                        | Items      | Level of Measurement |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------- |
+| Work flexibility   | Flexibility Enactment Scale (Kossek et al., 2016) or Schedule Control subscale of the Work-Family Conflict scale                                   | 5–8 items  | Interval (Likert)    |
+| Job satisfaction   | Minnesota Satisfaction Questionnaire — Short Form (MSQ-SF, Weiss et al., 1967) or 3-item Michigan Organizational Assessment Questionnaire subscale | 3–20 items | Interval (Likert)    |
+| Turnover intention | 3-item Turnover Intention Scale (Cammann et al., 1983, revalidated by Crossley et al., 2007)                                                       | 3 items    | Interval (Likert)    |
 
 Search PsycINFO or Instruments.org to confirm current validated versions and licensing requirements before use.
 
@@ -135,17 +139,20 @@ Search PsycINFO or Instruments.org to confirm current validated versions and lic
 
 **Sample Items by Construct**
 
-*Work Flexibility* (5-point scale: 1 = Never, 5 = Always)
+_Work Flexibility_ (5-point scale: 1 = Never, 5 = Always)
+
 - "I have control over when I start and end my workday."
 - "I am able to work from locations of my choosing (home, office, other) without needing approval."
 - "My work schedule can be adjusted to accommodate my personal needs without professional consequences."
 
-*Job Satisfaction* (5-point scale: 1 = Very Dissatisfied, 5 = Very Satisfied)
+_Job Satisfaction_ (5-point scale: 1 = Very Dissatisfied, 5 = Very Satisfied)
+
 - "Overall, how satisfied are you with your current job?"
 - "How satisfied are you with the amount of autonomy you have in your role?"
 - "How satisfied are you with how your contributions are recognized at your organization?"
 
-*Turnover Intention* (5-point scale: 1 = Strongly Disagree, 5 = Strongly Agree)
+_Turnover Intention_ (5-point scale: 1 = Strongly Disagree, 5 = Strongly Agree)
+
 - "I am seriously considering leaving my current employer within the next 12 months."
 - "I am actively searching for a new job at a different company."
 - "If I could, I would leave my current position as soon as possible."

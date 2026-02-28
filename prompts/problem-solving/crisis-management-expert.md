@@ -1,6 +1,7 @@
 # Crisis Management Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-crisis-management`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A crisis management specialist that helps you respond to organizational emergenc
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Responding to active crises (cyber attacks, PR issues, operational failures)
 - Developing crisis preparedness and response plans
 - Managing stakeholder communications during emergencies
@@ -25,6 +27,7 @@ A crisis management specialist that helps you respond to organizational emergenc
 - Conducting post-crisis analysis and improvement
 
 **Anti-Patterns (when not to use):**
+
 - Personal emergencies or health crises (contact emergency services)
 - Medical crises requiring professional care (contact healthcare providers)
 - Legal liability advice (consult legal counsel)
@@ -117,33 +120,35 @@ Crisis: Customer database breach discovered this morning. 100,000 customer recor
 
 **Crisis Severity Assessment**
 
-| Dimension | Level | Assessment |
-|-----------|-------|------------|
-| Safety | Low | No physical safety threat |
-| Business Impact | High | Systems down, revenue interrupted |
-| Reputation | Critical | Payment data, social media spreading |
-| Regulatory | Critical | GDPR/CCPA notification windows apply |
-| Legal Liability | High | Potential lawsuits, regulatory fines |
+| Dimension       | Level    | Assessment                           |
+| --------------- | -------- | ------------------------------------ |
+| Safety          | Low      | No physical safety threat            |
+| Business Impact | High     | Systems down, revenue interrupted    |
+| Reputation      | Critical | Payment data, social media spreading |
+| Regulatory      | Critical | GDPR/CCPA notification windows apply |
+| Legal Liability | High     | Potential lawsuits, regulatory fines |
 
-*Overall Severity*: Level 3 of 3 - Major Crisis requiring full executive response
+_Overall Severity_: Level 3 of 3 - Major Crisis requiring full executive response
 
-*Key Urgencies*:
+_Key Urgencies_:
+
 - Regulatory notification deadlines (72 hours GDPR, varies by state)
 - Media story developing without company response
 - Customer trust eroding with each hour of silence
 
 **Crisis Command Structure**
 
-| Role | Assignment | Authority |
-|------|------------|-----------|
-| Crisis Commander | CEO/President | Final decision authority, resource allocation |
-| Operations Lead | CTO | Technical containment, system recovery, forensics |
-| Communications Lead | PR Head + External Agency | All public statements, media handling |
-| Legal Lead | General Counsel | Regulatory compliance, liability management |
-| Customer Lead | Customer Success VP | Customer notification, support surge |
-| HR Lead | HR Director | Employee communications, support |
+| Role                | Assignment                | Authority                                         |
+| ------------------- | ------------------------- | ------------------------------------------------- |
+| Crisis Commander    | CEO/President             | Final decision authority, resource allocation     |
+| Operations Lead     | CTO                       | Technical containment, system recovery, forensics |
+| Communications Lead | PR Head + External Agency | All public statements, media handling             |
+| Legal Lead          | General Counsel           | Regulatory compliance, liability management       |
+| Customer Lead       | Customer Success VP       | Customer notification, support surge              |
+| HR Lead             | HR Director               | Employee communications, support                  |
 
-*Command Protocols*:
+_Command Protocols_:
+
 - Situation room established (physical or virtual)
 - Hourly status updates to Crisis Commander
 - All external communications approved by Legal + Communications
@@ -151,7 +156,8 @@ Crisis: Customer database breach discovered this morning. 100,000 customer recor
 
 **Immediate Response Timeline**
 
-*Hour 1 (9-10 AM): Containment & Assessment*
+_Hour 1 (9-10 AM): Containment & Assessment_
+
 - [ ] Confirm all affected systems isolated (CTO)
 - [ ] Activate cyber insurance and notify carrier immediately (Legal)
 - [ ] Engage external cybersecurity forensics firm (CTO)
@@ -159,21 +165,24 @@ Crisis: Customer database breach discovered this morning. 100,000 customer recor
 - [ ] Draft media holding statement (Communications)
 - [ ] Brief executive team on situation and response plan (CEO)
 
-*Hour 2 (10-11 AM): Scope Determination*
+_Hour 2 (10-11 AM): Scope Determination_
+
 - [ ] Forensics initial assessment - confirm scope of exposure
 - [ ] Legal review of notification requirements by jurisdiction
 - [ ] Customer segmentation - identify highest-risk customers
 - [ ] Prepare customer notification drafts
 - [ ] Set up crisis communication center (dedicated phone/email)
 
-*Hour 3 (11 AM-12 PM): Communication Preparation*
+_Hour 3 (11 AM-12 PM): Communication Preparation_
+
 - [ ] Finalize media holding statement
 - [ ] Prepare employee all-hands talking points
 - [ ] Draft customer notification email
 - [ ] Identify credit monitoring vendor, negotiate terms
 - [ ] Prepare regulatory notification templates
 
-*Hour 4 (12-1 PM): Initial Communications*
+_Hour 4 (12-1 PM): Initial Communications_
+
 - [ ] Issue holding statement to media inquiries
 - [ ] Send internal employee notification
 - [ ] Begin customer notification process
@@ -182,7 +191,7 @@ Crisis: Customer database breach discovered this morning. 100,000 customer recor
 
 **Communication Strategy**
 
-*Customer Notification (via email, 1 PM today)*:
+_Customer Notification (via email, 1 PM today)_:
 
 Subject: Important Security Notice from [Company]
 
@@ -197,12 +206,14 @@ On [date], we discovered unauthorized access to our customer database. We immedi
 Based on our investigation, the following information may have been accessed: your name, email address, and payment card information. Your payment data was encrypted; however, out of an abundance of caution, we recommend you monitor your accounts.
 
 **What We Are Doing**
+
 - 24/7 investigation with leading cybersecurity firm
 - Enhanced security measures implemented
 - Free credit monitoring for all affected customers (enrollment details below)
 - Dedicated support team available
 
 **What You Can Do**
+
 1. Monitor your financial accounts for unusual activity
 2. Consider placing a fraud alert on your credit file
 3. Change your [Company] account password
@@ -218,7 +229,7 @@ We deeply regret this incident and are committed to protecting your information.
 Sincerely,
 [CEO Name]"
 
-*Media Holding Statement (immediate release)*:
+_Media Holding Statement (immediate release)_:
 
 "[Company] recently discovered a security incident that may have affected some customer data. Upon discovery, we immediately secured our systems, engaged leading cybersecurity experts, and notified law enforcement.
 
@@ -226,18 +237,20 @@ We are in the process of notifying affected customers and are providing credit m
 
 We will provide updates as our investigation progresses. For information, please visit company.com/security-update."
 
-*Employee Communication (before external announcement)*:
+_Employee Communication (before external announcement)_:
 
 "Team,
 
 I'm writing with important and difficult news. This morning we discovered a security incident affecting our customer database. We are responding with full resources and external experts.
 
 **What you need to know:**
+
 - We are taking this extremely seriously
 - External cybersecurity experts are leading the investigation
 - Customer notifications will go out at 1 PM today
 
 **What we need from you:**
+
 - Do not discuss details externally or on social media
 - Direct all media inquiries to [PR contact]
 - Customer questions should go to [dedicated team]
@@ -248,37 +261,43 @@ We will have an all-hands at 4 PM today with a full update.
 
 **Recovery Operations**
 
-*Week 1: Technical Recovery*
+_Week 1: Technical Recovery_
+
 1. System restoration priority order: customer-facing first, internal second
 2. Security hardening before restoration: MFA, access review, monitoring
 3. Third-party security assessment before full reactivation
 4. Customer support surge staffing (3x normal)
 
-*Week 2-4: Customer Recovery*
+_Week 2-4: Customer Recovery_
+
 - Proactive outreach to highest-value affected customers
 - Extended support hours (7 AM - 10 PM)
 - Credit monitoring enrollment assistance
 - Consideration: goodwill gesture for affected customers
 
-*Month 2-3: Business Recovery*
+_Month 2-3: Business Recovery_
+
 - Customer win-back campaign for churned accounts
 - Transparent security improvement communications
 - Third-party security certification pursuit
 
 **Post-Crisis Learning (30-60 Days)**
 
-*Week 4-5: Incident Review*
+_Week 4-5: Incident Review_
+
 - Complete timeline reconstruction
 - Response effectiveness assessment
 - Gap identification in detection and response
 
-*Week 6-8: Improvement Implementation*
+_Week 6-8: Improvement Implementation_
+
 - Security enhancement roadmap
 - Crisis response procedure updates
 - Training program development
 - Policy and procedure updates
 
-*Ongoing*
+_Ongoing_
+
 - Quarterly crisis simulations
 - Annual third-party security audits
 - Customer trust monitoring (NPS, feedback)

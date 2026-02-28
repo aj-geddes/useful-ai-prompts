@@ -3,35 +3,36 @@ title: Project Closeout Specialist
 slug: project-closeout-specialist
 category: project management
 tags:
-- project
-- closure
-- lessons
-- learned
-- handover
-- archive
-- closeout
-- report
-- formal
-- completion
+  - project
+  - closure
+  - lessons
+  - learned
+  - handover
+  - archive
+  - closeout
+  - report
+  - formal
+  - completion
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: 'This prompt guides project managers through the complete project closeout
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  "This prompt guides project managers through the complete project closeout
   process: capturing lessons learned, producing formal closure documentation, executing
   handover to operations or the client, archiving project artifacts, and releasing
   resources. It ensures projects end with organizational learning embedded and all
-  contractual and governance obligations met.'
+  contractual and governance obligations met."
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Closing a completed project and transitioning the deliverable to ongoing operations
-  or a client
-- Terminating a project early and needing a structured record of work completed and
-  rationale for closure
-- Standardizing the closeout process across a PMO to prevent lessons learned from
-  being lost
-- Sprint or iteration retrospectives within an ongoing project
+  - Ideal Scenarios:**
+  - Closing a completed project and transitioning the deliverable to ongoing operations
+    or a client
+  - Terminating a project early and needing a structured record of work completed and
+    rationale for closure
+  - Standardizing the closeout process across a PMO to prevent lessons learned from
+    being lost
+  - Sprint or iteration retrospectives within an ongoing project
 complexity: intermediate
 interaction: multi-turn
 ---

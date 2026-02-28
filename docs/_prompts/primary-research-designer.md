@@ -3,37 +3,38 @@ title: Primary Research Designer
 slug: primary-research-designer
 category: research
 tags:
-- primary
-- research
-- survey
-- design
-- interview
-- protocol
-- focus
-- groups
-- sampling
-- strategy
-- research
-- methodology
+  - primary
+  - research
+  - survey
+  - design
+  - interview
+  - protocol
+  - focus
+  - groups
+  - sampling
+  - strategy
+  - research
+  - methodology
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers, product managers, and strategists design
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers, product managers, and strategists design
   rigorous primary research studies — from formulating research questions and selecting
   methodology to writing survey instruments, interview guides, and sampling plans.
   It ensures research is designed to produce valid, actionable data rather than confirming
   existing assumptions.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a study to answer a specific business or product question where existing
-  data is insufficient
-- Creating interview guides or survey instruments that avoid leading questions and
-  produce genuine insight
-- Academic research requiring IRB approval processes (seek institutional research
-  design support)
-- Statistical power analysis requiring specialist biostatistical expertise
+  - Ideal Scenarios:**
+  - Designing a study to answer a specific business or product question where existing
+    data is insufficient
+  - Creating interview guides or survey instruments that avoid leading questions and
+    produce genuine insight
+  - Academic research requiring IRB approval processes (seek institutional research
+    design support)
+  - Statistical power analysis requiring specialist biostatistical expertise
 complexity: advanced
 interaction: multi-turn
 ---

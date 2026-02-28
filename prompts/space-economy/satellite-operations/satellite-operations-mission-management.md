@@ -1,6 +1,7 @@
 # Satellite Operations and Mission Management
 
 ## Metadata
+
 - **ID**: `space-satellite-ops-management`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Satellite Operations
@@ -18,6 +19,7 @@ This prompt enables comprehensive management of satellite operations for multi-m
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Operating diverse satellite fleets (10+ spacecraft) across multiple mission types
 - Managing 24/7 mission operations centers with shift operations
 - Implementing progressive satellite autonomy and operations automation
@@ -25,6 +27,7 @@ This prompt enables comprehensive management of satellite operations for multi-m
 - Developing anomaly response and contingency procedures
 
 **Anti-Patterns (Don't Use When):**
+
 - Developing new satellite or payload designs
 - Managing launch and early orbit checkout (LEOP)
 - Operating single-satellite missions with simple operations tempo
@@ -116,6 +119,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We operate 52 satellites across GEO, MEO, and LEO for Earth observation, communications, and scientific missions. Need comprehensive operations approach with 24/7 coverage, anomaly management, and progressive automation."
 
 ### Output
@@ -124,96 +128,96 @@ Responses must avoid:
 
 **Fleet Overview**
 
-| Orbit | Satellites | Mission Type | Complexity |
-|-------|------------|--------------|------------|
-| GEO | 8 | Communications (DTH, data relay) | High |
-| MEO | 12 | Navigation augmentation | Medium |
-| LEO | 32 | Earth observation (optical, SAR) | Medium-High |
-| **Total** | **52** | **Multi-mission** | **High overall** |
+| Orbit     | Satellites | Mission Type                     | Complexity       |
+| --------- | ---------- | -------------------------------- | ---------------- |
+| GEO       | 8          | Communications (DTH, data relay) | High             |
+| MEO       | 12         | Navigation augmentation          | Medium           |
+| LEO       | 32         | Earth observation (optical, SAR) | Medium-High      |
+| **Total** | **52**     | **Multi-mission**                | **High overall** |
 
 **Operations Center Organization**
 
-| Function | Staffing | Coverage | Key Responsibilities |
-|----------|----------|----------|---------------------|
-| Flight Operations | 16 FTE | 24/7 (4 per shift) | Spacecraft monitoring, commanding, anomaly response |
-| Mission Planning | 8 FTE | Day shift (extended for campaigns) | Payload scheduling, resource allocation |
-| Ground Systems | 6 FTE | 24/7 (2 per shift) | Antenna scheduling, link monitoring, maintenance |
-| Engineering Support | 10 FTE | Day shift + on-call | Anomaly investigation, procedure development |
-| Operations Management | 4 FTE | Day shift + on-call | Coordination, customer interface, escalation |
-| **Total** | **44 FTE** | **Mixed** | |
+| Function              | Staffing   | Coverage                           | Key Responsibilities                                |
+| --------------------- | ---------- | ---------------------------------- | --------------------------------------------------- |
+| Flight Operations     | 16 FTE     | 24/7 (4 per shift)                 | Spacecraft monitoring, commanding, anomaly response |
+| Mission Planning      | 8 FTE      | Day shift (extended for campaigns) | Payload scheduling, resource allocation             |
+| Ground Systems        | 6 FTE      | 24/7 (2 per shift)                 | Antenna scheduling, link monitoring, maintenance    |
+| Engineering Support   | 10 FTE     | Day shift + on-call                | Anomaly investigation, procedure development        |
+| Operations Management | 4 FTE      | Day shift + on-call                | Coordination, customer interface, escalation        |
+| **Total**             | **44 FTE** | **Mixed**                          |                                                     |
 
 **Spacecraft Health Monitoring**
 
-| Subsystem | Key Parameters | Monitoring Frequency | Alert Automation |
-|-----------|---------------|---------------------|------------------|
-| Power | Bus voltage, battery SOC, array current | Continuous (1 Hz) | Full - threshold and trend |
-| Thermal | Component temps, heater status | Continuous (0.1 Hz) | Full - limit checking |
-| AOCS | Attitude, rates, wheel speeds | Continuous (10 Hz) | Full - stability monitoring |
-| Propulsion | Tank pressure, valve temps | Per contact | Semi - operator verification |
-| Payload | Mode, performance, calibration | Per contact | Mission-specific |
-| Communications | Link margins, data rates | Per contact | Full - margin trending |
+| Subsystem      | Key Parameters                          | Monitoring Frequency | Alert Automation             |
+| -------------- | --------------------------------------- | -------------------- | ---------------------------- |
+| Power          | Bus voltage, battery SOC, array current | Continuous (1 Hz)    | Full - threshold and trend   |
+| Thermal        | Component temps, heater status          | Continuous (0.1 Hz)  | Full - limit checking        |
+| AOCS           | Attitude, rates, wheel speeds           | Continuous (10 Hz)   | Full - stability monitoring  |
+| Propulsion     | Tank pressure, valve temps              | Per contact          | Semi - operator verification |
+| Payload        | Mode, performance, calibration          | Per contact          | Mission-specific             |
+| Communications | Link margins, data rates                | Per contact          | Full - margin trending       |
 
 **Anomaly Response Framework**
 
-| Severity | Definition | Response Time | Initial Actions | Escalation |
-|----------|-----------|---------------|-----------------|------------|
-| Critical | Mission loss risk, safety concern | <5 minutes | Safe mode, team assembly | Immediate to Director |
-| Major | Degraded operations, SLA impact | <30 minutes | Containment, assessment | 2 hours to Engineering |
-| Minor | No operational impact | <24 hours | Log, investigate, trend | Weekly review |
-| Informational | Observation, no action | 7 days | Document, analyze | Monthly report |
+| Severity      | Definition                        | Response Time | Initial Actions          | Escalation             |
+| ------------- | --------------------------------- | ------------- | ------------------------ | ---------------------- |
+| Critical      | Mission loss risk, safety concern | <5 minutes    | Safe mode, team assembly | Immediate to Director  |
+| Major         | Degraded operations, SLA impact   | <30 minutes   | Containment, assessment  | 2 hours to Engineering |
+| Minor         | No operational impact             | <24 hours     | Log, investigate, trend  | Weekly review          |
+| Informational | Observation, no action            | 7 days        | Document, analyze        | Monthly report         |
 
 **Anomaly Response Protocol**
 
-| Phase | Activities | Responsibility | Timeline |
-|-------|-----------|----------------|----------|
-| Detection | Automated alert or operator observation | Flight Ops | Immediate |
-| Assessment | Severity classification, containment | Duty Officer | <10 minutes |
-| Containment | Safe mode if needed, prevent propagation | Flight Ops | <30 minutes |
-| Investigation | Root cause analysis, data review | Engineering | <48 hours |
-| Corrective Action | Procedure update, configuration change | Engineering + Ops | Per complexity |
-| Lessons Learned | Documentation, fleet-wide review | Ops Manager | <7 days |
+| Phase             | Activities                               | Responsibility    | Timeline       |
+| ----------------- | ---------------------------------------- | ----------------- | -------------- |
+| Detection         | Automated alert or operator observation  | Flight Ops        | Immediate      |
+| Assessment        | Severity classification, containment     | Duty Officer      | <10 minutes    |
+| Containment       | Safe mode if needed, prevent propagation | Flight Ops        | <30 minutes    |
+| Investigation     | Root cause analysis, data review         | Engineering       | <48 hours      |
+| Corrective Action | Procedure update, configuration change   | Engineering + Ops | Per complexity |
+| Lessons Learned   | Documentation, fleet-wide review         | Ops Manager       | <7 days        |
 
 **Ground Network Management**
 
-| Site | Antennas | Primary Coverage | Availability Target |
-|------|----------|------------------|---------------------|
-| Primary (US West) | 4 (2x 13m, 2x 7m) | LEO, GEO | 99.9% |
-| US East | 2 (13m, 9m) | LEO, GEO | 99.5% |
-| Europe | 2 (11m) | LEO primary | 99.5% |
-| Asia | 2 (9m) | LEO expansion | 99.0% |
-| Polar (Svalbard) | 1 (7m) | Polar LEO | 99.0% |
-| Partner Network | 3 sites | Backup, gap fill | 95.0% |
+| Site              | Antennas          | Primary Coverage | Availability Target |
+| ----------------- | ----------------- | ---------------- | ------------------- |
+| Primary (US West) | 4 (2x 13m, 2x 7m) | LEO, GEO         | 99.9%               |
+| US East           | 2 (13m, 9m)       | LEO, GEO         | 99.5%               |
+| Europe            | 2 (11m)           | LEO primary      | 99.5%               |
+| Asia              | 2 (9m)            | LEO expansion    | 99.0%               |
+| Polar (Svalbard)  | 1 (7m)            | Polar LEO        | 99.0%               |
+| Partner Network   | 3 sites           | Backup, gap fill | 95.0%               |
 
 **Automation Strategy Roadmap**
 
-| Level | Capability | Current Status | Target Date |
-|-------|-----------|---------------|-------------|
-| L1: Automated Monitoring | Threshold alerts, trend detection | Deployed | Current |
-| L2: Assisted Analysis | Anomaly classification, recommendation | Partial | Q2 Year 1 |
-| L3: Autonomous Routine | Automated pass planning, routine commanding | Development | Q4 Year 1 |
-| L4: Predictive Operations | Health prediction, preventive actions | Planning | Year 2 |
-| L5: Self-Healing | Autonomous response to defined scenarios | Research | Year 3 |
+| Level                     | Capability                                  | Current Status | Target Date |
+| ------------------------- | ------------------------------------------- | -------------- | ----------- |
+| L1: Automated Monitoring  | Threshold alerts, trend detection           | Deployed       | Current     |
+| L2: Assisted Analysis     | Anomaly classification, recommendation      | Partial        | Q2 Year 1   |
+| L3: Autonomous Routine    | Automated pass planning, routine commanding | Development    | Q4 Year 1   |
+| L4: Predictive Operations | Health prediction, preventive actions       | Planning       | Year 2      |
+| L5: Self-Healing          | Autonomous response to defined scenarios    | Research       | Year 3      |
 
 **Performance Metrics**
 
-| Metric | Target | Current | Trend |
-|--------|--------|---------|-------|
-| Mission Success | >98% | 99.2% | Stable |
-| Spacecraft Availability | >99% | 99.4% | Improving |
-| Ground Network Availability | >99.5% | 99.7% | Stable |
-| Anomaly Resolution (Major) | <24 hours | 18 hours avg | Improving |
-| Cost per Spacecraft | 10% YoY reduction | 8% achieved | On track |
-| Automation Coverage | 60% of routine tasks | 45% | Growing |
+| Metric                      | Target               | Current      | Trend     |
+| --------------------------- | -------------------- | ------------ | --------- |
+| Mission Success             | >98%                 | 99.2%        | Stable    |
+| Spacecraft Availability     | >99%                 | 99.4%        | Improving |
+| Ground Network Availability | >99.5%               | 99.7%        | Stable    |
+| Anomaly Resolution (Major)  | <24 hours            | 18 hours avg | Improving |
+| Cost per Spacecraft         | 10% YoY reduction    | 8% achieved  | On track  |
+| Automation Coverage         | 60% of routine tasks | 45%          | Growing   |
 
 **Regulatory Compliance**
 
-| Requirement | Status | Owner | Next Review |
-|-------------|--------|-------|-------------|
-| Spectrum Licensing (ITU) | Compliant | Spectrum Manager | Annual |
-| Debris Mitigation (FCC) | Compliant | Flight Ops | Quarterly |
-| Space Situational Awareness (18 SDS) | Active coordination | Flight Ops | Continuous |
-| Export Control (ITAR) | Compliant | Security Officer | Annual |
-| Data Handling (mission-specific) | Per-mission compliance | Mission Managers | Per mission |
+| Requirement                          | Status                 | Owner            | Next Review |
+| ------------------------------------ | ---------------------- | ---------------- | ----------- |
+| Spectrum Licensing (ITU)             | Compliant              | Spectrum Manager | Annual      |
+| Debris Mitigation (FCC)              | Compliant              | Flight Ops       | Quarterly   |
+| Space Situational Awareness (18 SDS) | Active coordination    | Flight Ops       | Continuous  |
+| Export Control (ITAR)                | Compliant              | Security Officer | Annual      |
+| Data Handling (mission-specific)     | Per-mission compliance | Mission Managers | Per mission |
 
 ---
 

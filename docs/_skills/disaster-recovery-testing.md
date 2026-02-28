@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Execute comprehensive disaster recovery tests, validate recovery procedures,
+date: "2025-01-01"
+description:
+  Execute comprehensive disaster recovery tests, validate recovery procedures,
   and document lessons learned from DR exercises.
 layout: skill
 slug: disaster-recovery-testing
 tags:
-- testing
+  - testing
 title: disaster-recovery-testing
 ---
 
@@ -374,6 +375,7 @@ spec:
 ## Best Practices
 
 ### ✅ DO
+
 - Schedule regular DR tests
 - Document procedures in advance
 - Test in isolated environments
@@ -384,6 +386,7 @@ spec:
 - Update procedures based on results
 
 ### ❌ DON'T
+
 - Skip DR testing
 - Test during business hours
 - Test against production

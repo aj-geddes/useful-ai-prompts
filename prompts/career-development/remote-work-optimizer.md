@@ -1,6 +1,7 @@
 # Remote Work Optimizer
 
 ## Metadata
+
 - **ID**: `career-remote-work-optimizer`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Optimizes remote work effectiveness through workspace design, productivity systems, async communication strategies, and work-life boundary management. Creates sustainable remote work practices that maximize output while preserving wellbeing and preventing burnout.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Setting up or improving home office environment
 - Struggling with remote work productivity or focus
 - Managing distributed team collaboration across time zones
 - Establishing clearer work-life boundaries when working from home
 
 **Anti-patterns (when not to use):**
+
 - Physical office space design or planning
 - In-person team building activities
 - General time management without remote context
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Software developer, 2 years remote. Work from spare bedroom. Team of 6, spread across 3 time zones (US, Europe, Asia). Challenges: constant Slack interruptions, video meeting fatigue, hard to disconnect after work. Work 9-6 but often check messages until 10pm. Want better focus time and clearer boundaries."
 
 ### Output
@@ -128,6 +134,7 @@ FAILURE INDICATORS:
 **WORKSPACE OPTIMIZATION**
 
 Physical Setup:
+
 - External monitor (24"+) at eye level to reduce neck strain
 - Separate keyboard and mouse for ergonomics
 - Good task lighting (avoid overhead-only lighting)
@@ -136,12 +143,14 @@ Physical Setup:
 - Door sign or visual indicator for focus mode
 
 Digital Workspace:
+
 - Second browser profile for work-only (separates accounts and bookmarks)
 - Slack desktop app (not on phone after hours)
 - Focus mode on devices during deep work
 - Clean desktop with project-specific organization
 
 Budget-Conscious Alternatives:
+
 - Monitor: Second-hand or company expense
 - Headphones: Over-ear with noise isolation vs. active cancellation
 - Lighting: Adjustable desk lamp ($20-40)
@@ -149,6 +158,7 @@ Budget-Conscious Alternatives:
 **PRODUCTIVITY SYSTEM**
 
 Daily Structure:
+
 - 9:00-9:30: Review overnight messages, plan day (timezone overlap)
 - 9:30-12:00: Deep work block (Slack off, focus mode on)
 - 12:00-1:00: Meetings and synchronous collaboration
@@ -158,12 +168,14 @@ Daily Structure:
 - 5:30-6:00: Wrap-up, handoff notes for other time zones
 
 Focus Protection:
+
 - 2 scheduled deep work blocks daily (90+ min each)
 - Slack status: "Focusing - back at [time]"
 - Calendar blocked for focus time (visible to team)
 - Batch Slack checks: 9am, 12pm, 3pm, 5:30pm (not continuous)
 
 Meeting Management:
+
 - Default to async first (Loom video, written doc)
 - Meetings require agenda and clear outcome goal
 - 25-minute default (not 30), 50-minute for longer sessions
@@ -180,11 +192,13 @@ Async-First Approach:
 | FYI | Slack channel | No response needed |
 
 Cross-Timezone Collaboration:
+
 - US/Europe overlap: 9-11am EST (3-5pm CET) - use for sync decisions
 - Europe/Asia overlap: 8-10am CET (3-5pm SGT)
 - Outside overlaps: Async with detailed context
 
 Async Handoffs:
+
 - End-of-day summary in team channel
 - Document decisions AND context (not just outcomes)
 - Use shared docs for async collaboration
@@ -193,6 +207,7 @@ Async Handoffs:
 **BOUNDARY MANAGEMENT**
 
 End-of-Day Ritual (6:00pm):
+
 1. Write tomorrow's top 3 priorities
 2. Post team update if needed
 3. Set Slack to "Away" (visible but not actively monitoring)
@@ -200,12 +215,14 @@ End-of-Day Ritual (6:00pm):
 5. Physical transition activity (walk, change clothes, exercise)
 
 Technology Boundaries:
+
 - Slack removed from phone (or disabled after hours)
 - Separate browser profile means no accidental work browsing
 - No work email checks after dinner
 - Weekend Slack disabled by default
 
 Hold Firm On:
+
 - Every evening message "just takes a minute"
 - Weekend work becoming regular pattern
 - Meetings scheduled during personal time
@@ -215,21 +232,25 @@ Hold Firm On:
 
 Staying Visible:
 Daily:
+
 - Morning greeting in team channel
 - Share what you're working on (brief update)
 - Respond to team discussions (even briefly)
 
 Weekly:
+
 - 1:1 with manager (30 min, consistent time)
 - Team video call (camera on for relationship building)
 - Share one learning or insight with team
 
 Monthly:
+
 - Virtual coffee with different team member
 - Share wins in team retro
 - Connect with colleagues outside immediate team
 
 Fighting Isolation:
+
 - Virtual coffee rotation (different person weekly)
 - Camera on for relationship meetings (off for content meetings)
 - Non-work conversation time built into team calls
@@ -239,18 +260,21 @@ Fighting Isolation:
 **SUCCESS METRICS**
 
 Weekly Check:
+
 - Deep work hours achieved: Target 15+
 - Meeting hours: Target <10
 - After-hours work incidents: Target 0
 - Energy level at end of day: Target 7+/10
 
 Monthly Review:
+
 - Productivity satisfaction score
 - Work-life boundary adherence
 - Team connection quality rating
 - Manager feedback on visibility and output
 
 Adjustment Triggers:
+
 - If deep work <10 hours: Audit interruption sources
 - If after-hours work >2x/week: Strengthen boundary rituals
 - If isolation score low: Increase connection activities
@@ -259,6 +283,7 @@ Adjustment Triggers:
 ---
 
 ## Related Prompts
+
 - [Workplace Productivity Optimizer](workplace-productivity-optimizer.md) - General productivity enhancement
 - [Performance Review Optimizer](performance-review-optimizer.md) - Remote visibility in reviews
 - [Leadership Development Coach](leadership-development-coach.md) - Managing remote teams

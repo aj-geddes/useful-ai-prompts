@@ -1,6 +1,7 @@
 # Clinical Trial Design and Optimization Expert
 
 ## Metadata
+
 - **ID**: `biotechnology-clinical-trial-design-expert`
 - **Version**: 2.0.0
 - **Category**: Biotechnology/Clinical Research
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-01
 
 ## Overview
+
 Designs and optimizes clinical trials for therapeutic development, combining biostatistics, regulatory strategy, and operational planning. Accelerates drug approval pathways while maintaining scientific rigor through innovative trial designs including adaptive and biomarker-driven approaches.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning Phase I-IV clinical studies with statistical rigor
 - Optimizing statistical power and sample size calculations
 - Developing regulatory submission strategies (FDA, EMA)
@@ -23,6 +27,7 @@ Designs and optimizes clinical trials for therapeutic development, combining bio
 - Creating biomarker-enriched patient selection strategies
 
 **Anti-patterns (Don't Use For):**
+
 - Basic statistics without clinical trial context
 - Preclinical or animal study design
 - Post-marketing studies without defined clinical endpoints
@@ -102,12 +107,15 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 Phase II efficacy study for novel PI3K inhibitor in metastatic colorectal cancer (mCRC), third-line therapy. Phase I established 200mg daily dose with acceptable toxicity. Primary endpoint: objective response rate (ORR) per RECIST 1.1. Targeting breakthrough therapy designation. Have biomarker hypothesis (PI3K pathway mutations). Budget: $3M. Timeline: 24 months.
 
 ### Output
+
 **Phase II mCRC Clinical Trial Design**
 
 **Study Synopsis**
+
 - Title: PI3K Inhibitor in Third-Line Metastatic Colorectal Cancer
 - Phase: II, Open-Label, Multicenter
 - Design: Simon's Two-Stage with Biomarker Stratification
@@ -116,17 +124,20 @@ Phase II efficacy study for novel PI3K inhibitor in metastatic colorectal cancer
 Simon's optimal two-stage design enables early futility assessment minimizing patient exposure, efficient sample size versus single-stage, and regulatory precedent for oncology Phase II studies. Biomarker stratification tests PI3K pathway mutation enrichment hypothesis.
 
 **Hypotheses and Sample Size**
+
 - H0: ORR <= 5% (not clinically meaningful vs BSC)
 - H1: ORR >= 20% (clinically meaningful benefit)
 - Alpha: 0.10 (one-sided, standard oncology Phase II)
 - Power: 80%
 
 Stage 1: n1 = 18 patients
+
 - Futility rule: <=1 response leads to STOP
 - Continue rule: >=2 responses leads to Stage 2
 - P(early stop | H0 true) = 90%
 
 Stage 2: n2 = 25 additional patients
+
 - Total N = 43 evaluable patients
 - Success rule: >=6 total responses
 - Expected N under H0: 21.4 patients (efficient design)
@@ -134,11 +145,13 @@ Stage 2: n2 = 25 additional patients
 Biomarker stratification: Cohort A PI3K mutant (n=25 target), Cohort B PI3K WT (n=18), minimum 15 per cohort for signal detection.
 
 **Endpoints**
+
 - Primary: ORR per RECIST 1.1 (confirmed responses)
 - Secondary: Duration of response, progression-free survival, disease control rate, safety
 - Exploratory: ORR by biomarker status, ctDNA response, pharmacogenomics
 
 **Regulatory Strategy**
+
 - Pre-IND meeting (Month -3): Design alignment with FDA
 - IND submission (Month 0): 30-day review
 - BTD request (Month 9): After interim analysis if >=4 responses
@@ -150,12 +163,14 @@ BTD criteria assessment: Serious condition (mCRC third-line validated), substant
 Sites: 18-20 US academic cancer centers with high mCRC volume (>50/year), molecular profiling capability, prior PI3K inhibitor experience.
 
 Enrollment projections:
+
 - Stage 1: 18 patients in 6 months (3/month)
 - Interim analysis: 2 months
 - Stage 2: 25 patients in 8 months (3.1/month)
 - Backup: 3 additional sites identified
 
 **Operational Timeline (24 months)**
+
 - Months 0-3: Study startup, site contracts, IRB approvals
 - Months 4-9: Stage 1 enrollment, interim analysis prep
 - Months 10-11: DMC review, go/no-go decision, BTD submission
@@ -163,6 +178,7 @@ Enrollment projections:
 - Months 21-24: Database lock, primary analysis, regulatory meetings
 
 **Budget Allocation ($3M)**
+
 - Site costs: $1.2M (40%)
 - CRO/monitoring: $600K (20%)
 - Drug supply: $400K (13%)
@@ -182,6 +198,7 @@ Enrollment projections:
 ---
 
 ## Related Prompts
+
 - [AI Drug Discovery Expert](ai-powered-drug-discovery-optimization-expert.md) - Preclinical optimization
 - [Bioinformatics Pipeline Expert](bioinformatics-pipeline-development-expert.md) - Biomarker analysis
 - [Statistical Analysis Expert](../analysis/statistical-analysis-expert.md) - Advanced statistics

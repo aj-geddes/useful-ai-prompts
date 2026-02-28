@@ -1,13 +1,14 @@
 ---
 category: mobile-development
-date: '2025-01-01'
-description: Develop native iOS apps with Swift. Covers MVVM architecture, SwiftUI,
+date: "2025-01-01"
+description:
+  Develop native iOS apps with Swift. Covers MVVM architecture, SwiftUI,
   URLSession for networking, Combine for reactive programming, and Core Data persistence.
 layout: skill
 slug: ios-swift-development
 tags:
-- react
-- data
+  - react
+  - data
 title: ios-swift-development
 ---
 
@@ -298,6 +299,7 @@ struct Item: Codable, Identifiable {
 ## Best Practices
 
 ### ✅ DO
+
 - Use SwiftUI for modern UI development
 - Implement MVVM architecture
 - Use async/await patterns
@@ -311,6 +313,7 @@ struct Item: Codable, Identifiable {
 - Follow Swift style guidelines
 
 ### ❌ DON'T
+
 - Store tokens in UserDefaults
 - Make network calls on main thread
 - Use deprecated UIKit patterns

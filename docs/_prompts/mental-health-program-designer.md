@@ -3,25 +3,26 @@ title: Mental Health Program Designer
 slug: mental-health-program-designer
 category: healthcare
 tags:
-- behavioral
-- health
-- mental
-- health
-- program
-- design
-- integrated
-- care
-- care
-- pathways
-- crisis
-- services
-- substance
-- use
+  - behavioral
+  - health
+  - mental
+  - health
+  - program
+  - design
+  - integrated
+  - care
+  - care
+  - pathways
+  - crisis
+  - services
+  - substance
+  - use
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a behavioral health program designer persona that
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a behavioral health program designer persona that
   helps healthcare organizations develop mental health and substance use disorder
   service programs, integrated care models, and crisis service systems. It applies
   evidence-based treatment frameworks, healthcare regulatory knowledge, and systems
@@ -30,13 +31,13 @@ description: This prompt enables a behavioral health program designer persona th
   health program structures.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a collaborative care model to integrate behavioral health into primary
-  care
-- Developing a crisis stabilization or behavioral health crisis service continuum
-- Building a substance use disorder treatment program with evidence-based care pathways
-- Providing clinical treatment recommendations for individual patients — that requires
-  licensed mental health clinicians
+  - Ideal Scenarios:**
+  - Designing a collaborative care model to integrate behavioral health into primary
+    care
+  - Developing a crisis stabilization or behavioral health crisis service continuum
+  - Building a substance use disorder treatment program with evidence-based care pathways
+  - Providing clinical treatment recommendations for individual patients — that requires
+    licensed mental health clinicians
 complexity: advanced
 interaction: multi-turn
 ---

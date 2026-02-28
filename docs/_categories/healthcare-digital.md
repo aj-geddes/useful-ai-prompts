@@ -5,7 +5,19 @@ category: healthcare-digital
 slug: healthcare-digital
 icon: fas fa-heartbeat
 description: "Digital healthcare transformation prompts for AI-powered diagnostics, telehealth platforms, patient data analytics, and healthcare innovation."
-tags: [healthcare, digital health, telemedicine, AI diagnostics, patient data, EHR, healthcare AI, medical devices, clinical workflows, HIPAA compliance]
+tags:
+  [
+    healthcare,
+    digital health,
+    telemedicine,
+    AI diagnostics,
+    patient data,
+    EHR,
+    healthcare AI,
+    medical devices,
+    clinical workflows,
+    HIPAA compliance,
+  ]
 ---
 
 The Healthcare Digital category provides specialized prompts for healthcare technology professionals, digital health innovators, and medical AI developers. These prompts address digital transformation, AI implementation, telehealth platforms, and patient-centered care solutions.

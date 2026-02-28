@@ -1,15 +1,16 @@
 ---
 category: testing-qa
-date: '2025-01-01'
-description: Design and implement integration tests that verify component interactions,
+date: "2025-01-01"
+description:
+  Design and implement integration tests that verify component interactions,
   API endpoints, database operations, and external service communication. Use for
   integration test, API test, end-to-end component testing, and service layer validation.
 layout: skill
 slug: integration-testing
 tags:
-- testing
-- api
-- data
+  - testing
+  - api
+  - data
 title: integration-testing
 ---
 
@@ -34,13 +35,14 @@ Integration testing validates that different components, modules, or services wo
 ### 1. **API Integration Testing**
 
 #### Express/Node.js with Jest and Supertest
+
 ```javascript
 // test/api/users.integration.test.js
-const request = require('supertest');
-const app = require('../../src/app');
-const { setupTestDB, teardownTestDB } = require('../helpers/db');
+const request = require("supertest");
+const app = require("../../src/app");
+const { setupTestDB, teardownTestDB } = require("../helpers/db");
 
-describe('User API Integration Tests', () => {
+describe("User API Integration Tests", () => {
   beforeAll(async () => {
     await setupTestDB();
   });
@@ -53,23 +55,23 @@ describe('User API Integration Tests', () => {
     await clearUsers();
   });
 
-  describe('POST /api/users', () => {
-    it('should create a new user with valid data', async () => {
+  describe("POST /api/users", () => {
+    it("should create a new user with valid data", async () => {
       const userData = {
-        email: 'test@example.com',
-        name: 'Test User',
-        password: 'SecurePass123!'
+        email: "test@example.com",
+        name: "Test User",
+        password: "SecurePass123!",
       };
 
       const response = await request(app)
-        .post('/api/users')
+        .post("/api/users")
         .send(userData)
         .expect(201);
 
       expect(response.body).toMatchObject({
         id: expect.any(String),
         email: userData.email,
-        name: userData.name
+        name: userData.name,
       });
       expect(response.body.password).toBeUndefined();
 
@@ -79,13 +81,17 @@ describe('User API Integration Tests', () => {
       expect(user.email).toBe(userData.email);
     });
 
-    it('should reject duplicate email addresses', async () => {
-      const userData = { email: 'test@example.com', name: 'Test', password: 'pass' };
+    it("should reject duplicate email addresses", async () => {
+      const userData = {
+        email: "test@example.com",
+        name: "Test",
+        password: "pass",
+      };
 
-      await request(app).post('/api/users').send(userData).expect(201);
+      await request(app).post("/api/users").send(userData).expect(201);
 
       const response = await request(app)
-        .post('/api/users')
+        .post("/api/users")
         .send(userData)
         .expect(409);
 
@@ -93,21 +99,21 @@ describe('User API Integration Tests', () => {
     });
   });
 
-  describe('GET /api/users/:id', () => {
-    it('should retrieve user with associated orders', async () => {
+  describe("GET /api/users/:id", () => {
+    it("should retrieve user with associated orders", async () => {
       const user = await createTestUser();
       await createTestOrder({ userId: user.id, total: 99.99 });
 
       const response = await request(app)
         .get(`/api/users/${user.id}`)
-        .set('Authorization', `Bearer ${user.token}`)
+        .set("Authorization", `Bearer ${user.token}`)
         .expect(200);
 
       expect(response.body).toMatchObject({
         id: user.id,
         orders: expect.arrayContaining([
-          expect.objectContaining({ total: 99.99 })
-        ])
+          expect.objectContaining({ total: 99.99 }),
+        ]),
       });
     });
   });
@@ -115,6 +121,7 @@ describe('User API Integration Tests', () => {
 ```
 
 #### FastAPI/Python with pytest
+
 ```python
 # tests/integration/test_user_api.py
 import pytest
@@ -180,6 +187,7 @@ class TestUserAPI:
 ### 2. **Database Integration Testing**
 
 #### Spring Boot with JUnit
+
 ```java
 // src/test/java/com/example/integration/UserRepositoryIntegrationTest.java
 @SpringBootTest
@@ -260,22 +268,23 @@ class UserRepositoryIntegrationTest {
 ### 3. **External Service Integration**
 
 #### Testing with Test Containers
+
 ```javascript
 // test/integration/payment-service.test.js
-const { GenericContainer } = require('testcontainers');
-const PaymentService = require('../../src/services/payment');
+const { GenericContainer } = require("testcontainers");
+const PaymentService = require("../../src/services/payment");
 
-describe('Payment Service Integration', () => {
+describe("Payment Service Integration", () => {
   let container;
   let paymentService;
 
   beforeAll(async () => {
     // Start PostgreSQL container
-    container = await new GenericContainer('postgres:14')
+    container = await new GenericContainer("postgres:14")
       .withEnvironment({
-        POSTGRES_DB: 'test',
-        POSTGRES_USER: 'test',
-        POSTGRES_PASSWORD: 'test'
+        POSTGRES_DB: "test",
+        POSTGRES_USER: "test",
+        POSTGRES_PASSWORD: "test",
       })
       .withExposedPorts(5432)
       .start();
@@ -290,23 +299,23 @@ describe('Payment Service Integration', () => {
     await container.stop();
   });
 
-  test('should process payment and update database', async () => {
+  test("should process payment and update database", async () => {
     const payment = {
-      orderId: 'order-123',
+      orderId: "order-123",
       amount: 99.99,
-      currency: 'USD',
-      paymentMethod: 'credit_card'
+      currency: "USD",
+      paymentMethod: "credit_card",
     };
 
     const result = await paymentService.processPayment(payment);
 
-    expect(result.status).toBe('completed');
+    expect(result.status).toBe("completed");
     expect(result.transactionId).toBeDefined();
 
     // Verify in database
     const stored = await paymentService.getPayment(result.id);
-    expect(stored.orderId).toBe('order-123');
-    expect(stored.status).toBe('completed');
+    expect(stored.orderId).toBe("order-123");
+    expect(stored.status).toBe("completed");
   });
 });
 ```
@@ -411,6 +420,7 @@ async def client(db):
 ## Best Practices
 
 ### ✅ DO
+
 - Use real databases in integration tests (in-memory or containers)
 - Test actual HTTP requests, not mocked responses
 - Verify database state after operations
@@ -421,6 +431,7 @@ async def client(db):
 - Clean up data between tests
 
 ### ❌ DON'T
+
 - Mock database connections in integration tests
 - Skip testing error paths
 - Leave test data in databases
@@ -452,7 +463,7 @@ class TestDatabase {
   }
 
   static async clear() {
-    const tables = ['orders', 'users', 'products'];
+    const tables = ["orders", "users", "products"];
     for (const table of tables) {
       await db(table).truncate();
     }
@@ -464,8 +475,8 @@ class TestDataFactory {
   static async createUser(overrides = {}) {
     const defaults = {
       email: `user-${Date.now()}@test.com`,
-      name: 'Test User',
-      role: 'customer'
+      name: "Test User",
+      role: "customer",
     };
     return await User.create({ ...defaults, ...overrides });
   }
@@ -473,8 +484,8 @@ class TestDataFactory {
   static async createOrder(userId, overrides = {}) {
     const defaults = {
       userId,
-      status: 'pending',
-      total: 99.99
+      status: "pending",
+      total: 99.99,
     };
     return await Order.create({ ...defaults, ...overrides });
   }

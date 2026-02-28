@@ -3,30 +3,31 @@ title: Logistics Coordinator
 slug: logistics-coordinator
 category: operations
 tags:
-- logistics
-- route-optimization
-- carrier-management
-- freight-cost
-- shipment-tracking
-- transportation
+  - logistics
+  - route-optimization
+  - carrier-management
+  - freight-cost
+  - shipment-tracking
+  - transportation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a logistics coordinator expert who optimizes transportation
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a logistics coordinator expert who optimizes transportation
   networks, manages carrier performance, reduces freight costs, and improves shipment
   visibility. It applies routing logic, carrier selection frameworks, and freight
   cost analysis to outbound, inbound, and reverse logistics challenges.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business wants to audit its carrier mix and freight spend to identify consolidation
-  and rate reduction opportunities
-- Operations is experiencing recurring delivery failures, damaged shipments, or poor
-  tracking visibility across its carrier network
-- A company is redesigning its distribution network (adding DCs, changing carrier
-  mix) and needs transportation impact analysis
-- Real-time dispatch decisions requiring live TMS data and map routing tools
+  - Ideal Scenarios:**
+  - A business wants to audit its carrier mix and freight spend to identify consolidation
+    and rate reduction opportunities
+  - Operations is experiencing recurring delivery failures, damaged shipments, or poor
+    tracking visibility across its carrier network
+  - A company is redesigning its distribution network (adding DCs, changing carrier
+    mix) and needs transportation impact analysis
+  - Real-time dispatch decisions requiring live TMS data and map routing tools
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -1,13 +1,14 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Create responsive layouts using CSS Grid, Flexbox, media queries, and
+date: "2025-01-01"
+description:
+  Create responsive layouts using CSS Grid, Flexbox, media queries, and
   mobile-first design. Use when building adaptive interfaces that work across all
   devices.
 layout: skill
 slug: responsive-web-design
 tags:
-- development
+  - development
 title: responsive-web-design
 ---
 
@@ -42,7 +43,7 @@ Build mobile-first responsive interfaces using modern CSS techniques including F
   padding: 16px;
   border-radius: 8px;
   background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .grid {
@@ -113,65 +114,65 @@ Build mobile-first responsive interfaces using modern CSS techniques including F
 </nav>
 
 <style>
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  background-color: #333;
-  color: white;
-}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #333;
+    color: white;
+  }
 
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-.navbar-toggle {
-  display: block;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.navbar-menu {
-  display: none;
-  list-style: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  background-color: #222;
-  padding: 16px;
-  gap: 8px;
-}
-
-.navbar-menu.active {
-  display: flex;
-}
-
-@media (min-width: 768px) {
   .navbar-toggle {
-    display: none;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
   }
 
   .navbar-menu {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background-color: transparent;
-    padding: 0;
-    gap: 32px;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    padding: 16px;
+    gap: 8px;
   }
-}
 
-.navbar-menu a {
-  color: white;
-  text-decoration: none;
-}
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .navbar-toggle {
+      display: none;
+    }
+
+    .navbar-menu {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      gap: 32px;
+    }
+  }
+
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+  }
 </style>
 ```
 
@@ -195,26 +196,52 @@ Build mobile-first responsive interfaces using modern CSS techniques including F
 }
 
 /* Mobile: stacked */
-.header { grid-column: span 12; }
-.sidebar { grid-column: span 12; }
-.main { grid-column: span 12; }
-.footer { grid-column: span 12; }
+.header {
+  grid-column: span 12;
+}
+.sidebar {
+  grid-column: span 12;
+}
+.main {
+  grid-column: span 12;
+}
+.footer {
+  grid-column: span 12;
+}
 
 /* Tablet: 2-column layout */
 @media (min-width: 768px) {
-  .header { grid-column: span 12; }
-  .sidebar { grid-column: span 3; }
-  .main { grid-column: span 9; }
-  .footer { grid-column: span 12; }
+  .header {
+    grid-column: span 12;
+  }
+  .sidebar {
+    grid-column: span 3;
+  }
+  .main {
+    grid-column: span 9;
+  }
+  .footer {
+    grid-column: span 12;
+  }
 }
 
 /* Desktop: 3-column with sidebar */
 @media (min-width: 1024px) {
-  .header { grid-column: span 12; }
-  .sidebar { grid-column: span 2; }
-  .main { grid-column: span 8; }
-  .aside { grid-column: span 2; }
-  .footer { grid-column: span 12; }
+  .header {
+    grid-column: span 12;
+  }
+  .sidebar {
+    grid-column: span 2;
+  }
+  .main {
+    grid-column: span 8;
+  }
+  .aside {
+    grid-column: span 2;
+  }
+  .footer {
+    grid-column: span 12;
+  }
 }
 ```
 
@@ -268,7 +295,7 @@ picture {
 ```html
 <div class="card-grid">
   <div class="card">
-    <img src="image.jpg" alt="Card image" class="card-image">
+    <img src="image.jpg" alt="Card image" class="card-image" />
     <div class="card-content">
       <h3>Card Title</h3>
       <p>Card description goes here</p>
@@ -278,69 +305,71 @@ picture {
 </div>
 
 <style>
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  padding: 16px;
-}
-
-@media (min-width: 640px) {
   .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
   }
-}
 
-@media (min-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 24px;
+  @media (min-width: 640px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
   }
-}
 
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 24px;
+    }
+  }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
 
-.card-image {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
 
-.card-content {
-  padding: 16px;
-}
+  .card-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
 
-.card-content h3 {
-  margin: 0 0 8px;
-  font-size: 18px;
-}
+  .card-content {
+    padding: 16px;
+  }
 
-.card-content p {
-  margin: 0 0 12px;
-  color: #666;
-  font-size: 14px;
-}
+  .card-content h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
 
-.card-link {
-  display: inline-block;
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-}
+  .card-content p {
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .card-link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+  }
 </style>
 ```
 

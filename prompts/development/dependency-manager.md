@@ -1,6 +1,7 @@
 # Dependency Manager
 
 ## Metadata
+
 - **ID**: `development-dependency-manager`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Audits project dependencies for security vulnerabilities, outdated packages, and
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Security audit flagged vulnerable dependencies (CVE reports)
 - Quarterly dependency maintenance sprint
 - Major framework version upgrade (React 17→18, Python 3.10→3.12)
 - Resolving dependency conflicts after a failed upgrade
 
 **Anti-patterns (Don't Use For):**
+
 - Selecting a dependency for a new feature (different evaluation)
 - License compliance review (legal scope)
 - Build tool configuration changes
@@ -120,6 +123,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "npm audit for our Node.js Express app shows: lodash@4.17.15 (CVE-2021-23337, High), axios@0.21.1 (CVE-2021-3749, Critical), jsonwebtoken@8.5.1 (CVE-2022-23529, Critical), moment@2.29.1 (High — prototype pollution). Our Node version is 16."
 
 ### Output
@@ -128,47 +132,57 @@ Avoid:
 
 **Priority Summary**
 
-| Package | Current | CVE | CVSS | Upgrade To | Risk |
-|---------|---------|-----|------|-----------|------|
-| axios | 0.21.1 | CVE-2021-3749 | 9.8 Critical | 1.7.x | Minor API changes |
-| jsonwebtoken | 8.5.1 | CVE-2022-23529 | 7.4 High | 9.0.x | **Breaking changes** |
-| moment | 2.29.1 | Prototype pollution | 7.1 High | Replace with day.js | Migration required |
-| lodash | 4.17.15 | CVE-2021-23337 | 7.2 High | 4.17.21 | Patch — safe |
+| Package      | Current | CVE                 | CVSS         | Upgrade To          | Risk                 |
+| ------------ | ------- | ------------------- | ------------ | ------------------- | -------------------- |
+| axios        | 0.21.1  | CVE-2021-3749       | 9.8 Critical | 1.7.x               | Minor API changes    |
+| jsonwebtoken | 8.5.1   | CVE-2022-23529      | 7.4 High     | 9.0.x               | **Breaking changes** |
+| moment       | 2.29.1  | Prototype pollution | 7.1 High     | Replace with day.js | Migration required   |
+| lodash       | 4.17.15 | CVE-2021-23337      | 7.2 High     | 4.17.21             | Patch — safe         |
 
 **Step 1: Immediate (Critical) — axios**
+
 ```bash
 npm install axios@^1.7.0
 ```
+
 Breaking change: `axios.get` response interceptors behave slightly differently; test all API calls. Run: `npm test`.
 
 **Step 2: Immediate (Critical) — jsonwebtoken**
+
 ```bash
 npm install jsonwebtoken@^9.0.0
 ```
+
 ⚠️ **Breaking change**: `jwt.verify()` now rejects tokens with missing `algorithms` option. Update all verify calls:
+
 ```javascript
 // Before:
-jwt.verify(token, secret)
+jwt.verify(token, secret);
 
 // After:
-jwt.verify(token, secret, { algorithms: ['HS256'] })
+jwt.verify(token, secret, { algorithms: ["HS256"] });
 ```
 
 **Step 3: High Priority — lodash**
+
 ```bash
 npm install lodash@^4.17.21
 ```
+
 Patch-only change — no breaking changes. Safe to apply immediately.
 
 **Step 4: High Priority — moment (replace with day.js)**
 Moment is deprecated (no security updates planned). Replace:
+
 ```bash
 npm uninstall moment
 npm install dayjs
 ```
+
 Migration: `moment(date).format('YYYY-MM-DD')` → `dayjs(date).format('YYYY-MM-DD')` (same API for most uses).
 
 **Upgrade Sequence**
+
 ```bash
 # 1. Lodash (safe patch)
 npm install lodash@^4.17.21

@@ -1,6 +1,7 @@
 # Commercial Crew Mission Management
 
 ## Metadata
+
 - **ID**: `space-crew-mission-management`
 - **Version**: 1.0.0
 - **Category**: Space Economy/Commercial Spaceflight
@@ -18,12 +19,14 @@ Lead commercial human spaceflight operations including crew selection, training,
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Managing commercial crew training programs
 - Planning human spaceflight missions
 - Developing space tourism customer experiences
 - Establishing safety protocols for crewed missions
 
 **Anti-Patterns (Do Not Use For):**
+
 - Robotic missions without crew
 - Cargo-only flights
 - Spacecraft development and design
@@ -105,63 +108,69 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're launching our first commercial space tourism mission - 4 private citizens on a 3-day orbital flight. Need comprehensive training program and mission management approach that ensures safety while delivering an exceptional experience."
 
 ### Output
+
 **Commercial Space Tourism Mission Plan: 3-Day Orbital Experience**
 
 **Mission Profile**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Crew | 4 private citizens + 1 professional commander |
-| Duration | 3 days orbital |
-| Altitude | 575 km (ISS orbit) |
-| Vehicle | Crew Dragon |
-| Training | 4 months pre-flight |
+| Parameter | Specification                                 |
+| --------- | --------------------------------------------- |
+| Crew      | 4 private citizens + 1 professional commander |
+| Duration  | 3 days orbital                                |
+| Altitude  | 575 km (ISS orbit)                            |
+| Vehicle   | Crew Dragon                                   |
+| Training  | 4 months pre-flight                           |
 
 **Crew Training Program**
 
-*Phase 1: Fundamentals (Weeks 1-4)*
+_Phase 1: Fundamentals (Weeks 1-4)_
+
 - Spaceflight environment and physiology
 - Vehicle systems overview
 - Emergency procedures introduction
 - Physical fitness baseline
 
-| Module | Hours | Delivery |
-|--------|-------|----------|
-| Space environment | 16 | Classroom |
-| Vehicle familiarization | 24 | Simulator + classroom |
-| Physiology | 12 | Medical facility |
-| Physical conditioning | 40 | Fitness center |
+| Module                  | Hours | Delivery              |
+| ----------------------- | ----- | --------------------- |
+| Space environment       | 16    | Classroom             |
+| Vehicle familiarization | 24    | Simulator + classroom |
+| Physiology              | 12    | Medical facility      |
+| Physical conditioning   | 40    | Fitness center        |
 
-*Phase 2: Technical Training (Weeks 5-10)*
+_Phase 2: Technical Training (Weeks 5-10)_
+
 - Spacecraft systems operations
 - Communication procedures
 - Life support systems
 - Basic troubleshooting
 
-| Module | Hours | Delivery |
-|--------|-------|----------|
-| Systems operations | 40 | High-fidelity simulator |
-| Communications | 16 | Mission control training |
-| Life support | 20 | Hands-on laboratory |
-| Troubleshooting | 16 | Scenario-based simulator |
+| Module             | Hours | Delivery                 |
+| ------------------ | ----- | ------------------------ |
+| Systems operations | 40    | High-fidelity simulator  |
+| Communications     | 16    | Mission control training |
+| Life support       | 20    | Hands-on laboratory      |
+| Troubleshooting    | 16    | Scenario-based simulator |
 
-*Phase 3: Emergency Training (Weeks 11-14)*
+_Phase 3: Emergency Training (Weeks 11-14)_
+
 - Fire response
 - Cabin depressurization
 - Medical emergencies
 - Abort scenarios
 
-| Module | Hours | Delivery |
-|--------|-------|----------|
-| Fire response | 16 | Simulator + hands-on |
-| Depressurization | 12 | Altitude chamber |
-| Medical | 20 | Medical scenarios |
-| Abort procedures | 24 | Full mission simulator |
+| Module           | Hours | Delivery               |
+| ---------------- | ----- | ---------------------- |
+| Fire response    | 16    | Simulator + hands-on   |
+| Depressurization | 12    | Altitude chamber       |
+| Medical          | 20    | Medical scenarios      |
+| Abort procedures | 24    | Full mission simulator |
 
-*Phase 4: Mission Readiness (Weeks 15-16)*
+_Phase 4: Mission Readiness (Weeks 15-16)_
+
 - Full mission simulations
 - Crew coordination exercises
 - Media and family preparation
@@ -169,54 +178,59 @@ Avoid:
 
 **Mission Timeline**
 
-| Time | Event |
-|------|-------|
-| L-2 days | Final medical, suit fit |
-| L-1 day | Crew quarters, family time |
-| Launch | Liftoff, 12-minute ascent |
-| +30 min | Orbit insertion, initial checks |
-| +2 hours | Orbit raising maneuvers |
-| Day 1 | Earth observation, adaptation |
-| Day 2 | Research activities, communication events |
-| Day 3 | Preparation, stow, reentry prep |
-| +72 hours | Deorbit, splashdown, recovery |
+| Time      | Event                                     |
+| --------- | ----------------------------------------- |
+| L-2 days  | Final medical, suit fit                   |
+| L-1 day   | Crew quarters, family time                |
+| Launch    | Liftoff, 12-minute ascent                 |
+| +30 min   | Orbit insertion, initial checks           |
+| +2 hours  | Orbit raising maneuvers                   |
+| Day 1     | Earth observation, adaptation             |
+| Day 2     | Research activities, communication events |
+| Day 3     | Preparation, stow, reentry prep           |
+| +72 hours | Deorbit, splashdown, recovery             |
 
 **Safety Protocol Summary**
 
-| Scenario | Response | Training |
-|----------|----------|----------|
-| Fire | Suppress, isolate, assess | 8 drills minimum |
-| Depressurization | Suit up, locate, assess | 6 drills minimum |
-| Medical emergency | First response, ground support | 12 scenarios |
-| Abort | Execute per phase | 10 simulations |
+| Scenario          | Response                       | Training         |
+| ----------------- | ------------------------------ | ---------------- |
+| Fire              | Suppress, isolate, assess      | 8 drills minimum |
+| Depressurization  | Suit up, locate, assess        | 6 drills minimum |
+| Medical emergency | First response, ground support | 12 scenarios     |
+| Abort             | Execute per phase              | 10 simulations   |
 
 **Customer Experience Journey**
 
-*Pre-Flight (Months 1-4)*
+_Pre-Flight (Months 1-4)_
+
 - Personal training concierge
 - Custom flight suit fitting
 - Family experience program
 - Media training and story development
 
-*Launch Week*
+_Launch Week_
+
 - Private crew quarters
 - Family farewell events
 - Personal photographer/videographer
 - Commemoration ceremonies
 
-*In-Flight*
+_In-Flight_
+
 - Earth observation windows
 - Live family calls
 - Personal milestone celebrations
 - Professional photography/video
 
-*Post-Flight*
+_Post-Flight_
+
 - VIP recovery and reception
 - Medical support and adaptation
 - Media appearances (optional)
 - Alumni program enrollment
 
 **Customer Satisfaction Metrics**
+
 - Pre-flight preparation rating: Target >98%
 - Launch experience rating: Target >99%
 - In-flight experience rating: Target >97%
@@ -226,5 +240,6 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Launch Campaign Management Expert](../launch-campaign-management-expert.md)
 - [Commercial Space Mission Architecture Expert](../commercial-space-mission-architecture-expert.md)

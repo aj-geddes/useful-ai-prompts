@@ -3,28 +3,29 @@ title: Performance Profiler
 slug: performance-profiler
 category: development
 tags:
-- performance
-- profiling
-- optimization
-- bottleneck
-- latency
-- throughput
-- benchmarking
+  - performance
+  - profiling
+  - optimization
+  - bottleneck
+  - latency
+  - throughput
+  - benchmarking
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-27'
-description: Systematically identifies application performance bottlenecks using profiling
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-27"
+description:
+  Systematically identifies application performance bottlenecks using profiling
   data, metrics, and structured analysis rather than guesswork. Produces a prioritized
   optimization plan with expected impact estimates, measurement baselines, and implementation
   guidance for code, database, caching, and infrastructure improvements.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- API response times exceeding SLA thresholds
-- Application slowing down as data or users grow
-- Pre-launch performance validation against load requirements
-- Investigating customer complaints about slowness
+  - Ideal Scenarios:**
+  - API response times exceeding SLA thresholds
+  - Application slowing down as data or users grow
+  - Pre-launch performance validation against load requirements
+  - Investigating customer complaints about slowness
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,69 +40,79 @@ Performance problems waste engineering time, harm user experience, and increase 
 
 <input_handling>
 Required inputs:
+
 - Observed performance symptom (slow endpoint, high CPU, memory growth, etc.)
 - Technology stack (language, framework, database)
 - Any metrics already collected (response times, CPU%, query times)
 
 Optional inputs (will infer if not provided):
+
 - Traffic volume: assume moderate (100-1000 req/min)
 - Profiling data: will recommend tools to collect it
 - Infrastructure: assume cloud-hosted, standard configuration
-</input_handling>
+  </input_handling>
 
 <task>
 Diagnose the performance problem and produce a prioritized optimization plan.
 
 Step 1: Establish a baseline and hypothesis
+
 - Identify the specific metric that defines "slow" (p50, p95, p99 latency)
 - Form initial hypotheses based on symptoms (CPU-bound, I/O-bound, memory-bound)
 - Recommend profiling tools and instrumentation needed
 
 Step 2: Analyze the bottleneck
+
 - Identify the hottest code path from profiling data
 - Check for N+1 query patterns, missing indexes, lock contention
 - Look for algorithmic complexity issues (O(n²) where O(n) possible)
 - Assess caching opportunities
 
 Step 3: Quantify impact of each optimization
+
 - Estimate improvement per fix (conservative, realistic, optimistic)
 - Score by: impact / implementation complexity
 - Identify quick wins (< 1 day, > 30% improvement) vs. major refactors
 
 Step 4: Produce implementation plan
+
 - Ordered list of changes with concrete code guidance
 - Database query improvements with EXPLAIN ANALYZE interpretation
 - Caching strategy with TTL and invalidation approach
 
 Step 5: Define validation approach
+
 - Before/after benchmark methodology
 - Load test parameters to verify at scale
 - Monitoring alerts to catch regressions
-</task>
+  </task>
 
 <output_specification>
 Format: Diagnosis + prioritized optimization list + implementation guidance
 Length: 400-700 words
 Include:
+
 - Root cause hypothesis with confidence level
 - Optimization list sorted by impact/effort ratio
 - At least one concrete code or query example
 - Measurement plan (how to verify improvement)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Diagnosis based on evidence, not assumption
 - Optimizations targeting the actual bottleneck
 - Quantified expected improvements
 - Validation methodology that prevents regression
 
 Avoid:
+
 - "Just add caching" without identifying what to cache
 - Recommending infrastructure scaling before code optimization
 - Optimizations without measurement validation
 - Premature micro-optimizations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always establish a measurement baseline before recommending changes

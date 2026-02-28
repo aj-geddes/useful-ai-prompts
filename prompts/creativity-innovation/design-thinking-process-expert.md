@@ -1,6 +1,7 @@
 # Design Thinking Process Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/design-thinking-process-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Design thinking facilitator guiding teams through the complete human-centered in
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing new products, services, or experiences from user needs
 - Redesigning existing offerings based on user pain points
 - Innovating in complex spaces where user needs are not well understood
@@ -25,6 +27,7 @@ Design thinking facilitator guiding teams through the complete human-centered in
 - Tackling wicked problems requiring human insight
 
 **Anti-Patterns:**
+
 - Technical implementation of defined specifications (solution already known)
 - Pure business strategy without user interaction component
 - Problems with clear analytical solutions not requiring user input
@@ -95,6 +98,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Problem: Our company's new employee onboarding process is confusing and leads to 40% quitting in first 90 days
 
@@ -124,6 +128,7 @@ Your challenge is well-suited for design thinking because onboarding is fundamen
 **PHASE 1: EMPATHIZE (Weeks 1-3)**
 
 **Research Objectives:**
+
 - Understand the emotional journey from offer acceptance through 90 days
 - Identify specific moments of confusion, frustration, and abandonment consideration
 - Discover what makes some new hires succeed while others struggle
@@ -131,7 +136,8 @@ Your challenge is well-suited for design thinking because onboarding is fundamen
 
 **Research Activities:**
 
-*Week 1: Deep Interviews*
+_Week 1: Deep Interviews_
+
 - **Exit interviews** (10 people who left within 90 days)
   - What was your experience in the first week?
   - When did you first consider leaving? What triggered that?
@@ -142,7 +148,8 @@ Your challenge is well-suited for design thinking because onboarding is fundamen
   - What did you figure out on your own that should have been taught?
   - Who helped you most and how?
 
-*Week 2: Observation and Immersion*
+_Week 2: Observation and Immersion_
+
 - **Shadow next cohort** through their first 5 days
   - Note facial expressions, questions asked, confusion moments
   - Track time spent on each activity
@@ -152,14 +159,15 @@ Your challenge is well-suited for design thinking because onboarding is fundamen
   - Login requirements, training time, first use experience
   - Identify redundancies and gaps
 
-*Week 3: Stakeholder Mapping*
+_Week 3: Stakeholder Mapping_
+
 - Interview hiring managers: What do they wish new hires knew sooner?
 - Interview IT: What are common technical blockers?
 - Interview HR: What's the intended experience vs. reality?
 
 **Empathy Synthesis Tools:**
 
-*Empathy Map Template:*
+_Empathy Map Template:_
 | Quadrant | Key Findings |
 |----------|--------------|
 | THINKS | "Am I doing this right?" "Will I succeed here?" "Why is this so confusing?" |
@@ -167,7 +175,7 @@ Your challenge is well-suited for design thinking because onboarding is fundamen
 | SAYS | "I don't know who to ask" "There's too much information" "I feel lost" |
 | DOES | Takes excessive notes, works late to catch up, hesitates to ask questions |
 
-*Journey Map Framework:*
+_Journey Map Framework:_
 Map emotional experience across: Pre-boarding, Day 1, Week 1, Month 1, Month 2-3
 Track: Actions, Touchpoints, Emotions, Pain Points, Opportunities
 
@@ -180,6 +188,7 @@ Bring team together to review all research and identify patterns.
 "New remote employees experience overwhelming information overload and social isolation during onboarding, leading to confusion about priorities, inability to find help when stuck, and early departures when they lose confidence they can succeed."
 
 **How Might We Questions:**
+
 - HMW make new hires feel welcomed and supported from day -7 (before start)?
 - HMW deliver information when it's actually needed rather than all at once?
 - HMW create meaningful human connections in a remote environment?
@@ -188,7 +197,8 @@ Bring team together to review all research and identify patterns.
 - HMW reduce the number of systems without reducing necessary information?
 
 **User Persona (Primary):**
-*Alex, 28, Software Developer, Remote*
+_Alex, 28, Software Developer, Remote_
+
 - Excited but nervous about new role
 - Tech-savvy but unfamiliar with company-specific systems
 - Previous company had informal, chaotic onboarding
@@ -200,22 +210,25 @@ Bring team together to review all research and identify patterns.
 
 **Ideation Sessions:**
 
-*Session 1: Progressive Disclosure*
+_Session 1: Progressive Disclosure_
 How might we phase information delivery?
+
 - Day 1: Only essentials (laptop, Slack, manager intro)
 - Week 1: Core job basics
 - Month 1: Broader organization and processes
 - Technique: Brainwriting for 15 minutes, then build on others' ideas
 
-*Session 2: Human Connection*
+_Session 2: Human Connection_
 How might we create belonging remotely?
+
 - Assigned onboarding buddy from Day -1 (before they start)
 - New hire cohort Slack channel for peer support
 - Virtual coffee matching across organization
 - Technique: Worst Possible Idea (most awkward ways to connect) then flip
 
-*Session 3: Personalized Journey*
+_Session 3: Personalized Journey_
 How might we adapt to different learning styles and roles?
+
 - Role-specific learning paths
 - Choose-your-adventure format for optional deep dives
 - AI assistant for instant question answering
@@ -232,19 +245,22 @@ How might we adapt to different learning styles and roles?
 **Prototype Strategy:**
 Start low-fidelity to test concepts before building.
 
-*Week 7: Paper/Digital Mockups*
+_Week 7: Paper/Digital Mockups_
+
 - Sketch app screens for Onboarding Companion
 - Create sample Day 1 / Week 1 / Month 1 email sequences
 - Write buddy program guidelines and training outline
 - Build journey map poster showing 30-60-90 milestones
 
-*Week 8: Medium-Fidelity Digital Prototype*
+_Week 8: Medium-Fidelity Digital Prototype_
+
 - Clickable Figma prototype of core app flows
 - Sample learning module in existing LMS
 - Buddy matching algorithm mockup
 - Automated check-in survey templates
 
-*Week 9: Experience Prototype*
+_Week 9: Experience Prototype_
+
 - Simulate Week 1 experience for test participants
 - Role-play buddy conversations
 - Test prototype app with think-aloud protocol
@@ -253,41 +269,44 @@ Start low-fidelity to test concepts before building.
 
 **Testing Approach:**
 
-*Week 10: Concept Validation*
+_Week 10: Concept Validation_
+
 - Test with 5 recent hires: Does this address what you experienced?
 - Test with 3 hiring managers: Would this help your new team members?
 - Focus on concept direction, not interface details
 
-*Week 11: Experience Pilot*
+_Week 11: Experience Pilot_
+
 - Run next cohort (8-12 new hires) through new experience
 - A/B if possible: Half traditional, half new approach
 - Daily pulse surveys: How are you feeling? (1-5 scale + comment)
 - Weekly interviews: What's working? What's confusing?
 
-*Week 12: Iteration Sprint*
+_Week 12: Iteration Sprint_
+
 - Analyze pilot feedback
 - Identify critical fixes vs. future improvements
 - Prepare for broader rollout with refinements
 
 **Testing Metrics:**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Daily confidence score | 4+ by Day 5 | Pulse survey |
-| First-week NPS | 50+ | Survey |
-| Time to first task completion | <3 days | Manager report |
-| Questions asked of buddy | 10+ in Week 1 | Buddy log |
-| 30-day retention intent | 95%+ | Survey |
+| Metric                        | Target        | Measurement    |
+| ----------------------------- | ------------- | -------------- |
+| Daily confidence score        | 4+ by Day 5   | Pulse survey   |
+| First-week NPS                | 50+           | Survey         |
+| Time to first task completion | <3 days       | Manager report |
+| Questions asked of buddy      | 10+ in Week 1 | Buddy log      |
+| 30-day retention intent       | 95%+          | Survey         |
 
 **TIMELINE SUMMARY**
 
-| Phase | Weeks | Key Deliverable |
-|-------|-------|-----------------|
-| Empathize | 1-3 | Research synthesis and journey map |
-| Define | 4 | Problem statement and HMW questions |
-| Ideate | 5-6 | 3 prototype concepts selected |
-| Prototype | 7-9 | Testable medium-fidelity experience |
-| Test | 10-12 | Validated design ready for build |
+| Phase     | Weeks | Key Deliverable                     |
+| --------- | ----- | ----------------------------------- |
+| Empathize | 1-3   | Research synthesis and journey map  |
+| Define    | 4     | Problem statement and HMW questions |
+| Ideate    | 5-6   | 3 prototype concepts selected       |
+| Prototype | 7-9   | Testable medium-fidelity experience |
+| Test      | 10-12 | Validated design ready for build    |
 
 **DECISION POINTS**
 

@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Integrate multiple programming languages using FFI, native bindings,
+date: "2025-01-01"
+description:
+  Integrate multiple programming languages using FFI, native bindings,
   gRPC, or language bridges. Use when combining strengths of different languages or
   integrating legacy systems.
 layout: skill
 slug: polyglot-integration
 tags:
-- development
+  - development
 title: polyglot-integration
 ---
 
@@ -75,7 +76,7 @@ NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 
 ```javascript
 // Usage in Node.js
-const addon = require('./build/Release/addon');
+const addon = require("./build/Release/addon");
 console.log(addon.add(3, 5)); // 8
 ```
 
@@ -83,24 +84,24 @@ console.log(addon.add(3, 5)); // 8
 
 ```typescript
 // Using child_process
-import { spawn } from 'child_process';
+import { spawn } from "child_process";
 
 function callPython(script: string, args: any[] = []): Promise<any> {
   return new Promise((resolve, reject) => {
-    const python = spawn('python3', [script, ...args.map(String)]);
+    const python = spawn("python3", [script, ...args.map(String)]);
 
-    let stdout = '';
-    let stderr = '';
+    let stdout = "";
+    let stderr = "";
 
-    python.stdout.on('data', (data) => {
+    python.stdout.on("data", (data) => {
       stdout += data.toString();
     });
 
-    python.stderr.on('data', (data) => {
+    python.stderr.on("data", (data) => {
       stderr += data.toString();
     });
 
-    python.on('close', (code) => {
+    python.on("close", (code) => {
       if (code !== 0) {
         reject(new Error(stderr));
       } else {
@@ -115,8 +116,8 @@ function callPython(script: string, args: any[] = []): Promise<any> {
 }
 
 // Usage
-const result = await callPython('./ml_model.py', [100, 200]);
-console.log('Python result:', result);
+const result = await callPython("./ml_model.py", [100, 200]);
+console.log("Python result:", result);
 ```
 
 ```python
@@ -228,22 +229,22 @@ if __name__ == '__main__':
 
 ```typescript
 // Node.js gRPC Client
-import * as grpc from '@grpc/grpc-js';
-import * as protoLoader from '@grpc/proto-loader';
+import * as grpc from "@grpc/grpc-js";
+import * as protoLoader from "@grpc/proto-loader";
 
-const packageDefinition = protoLoader.loadSync('service.proto');
+const packageDefinition = protoLoader.loadSync("service.proto");
 const proto = grpc.loadPackageDefinition(packageDefinition);
 
 const client = new proto.Calculator(
-  'localhost:50051',
-  grpc.credentials.createInsecure()
+  "localhost:50051",
+  grpc.credentials.createInsecure(),
 );
 
 client.Add({ a: 10, b: 20 }, (error, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('Result:', response.value);
+    console.log("Result:", response.value);
   }
 });
 ```
@@ -286,6 +287,7 @@ print(f"Processed: {processed}")
 ## Best Practices
 
 ### ✅ DO
+
 - Use appropriate IPC mechanism
 - Handle serialization carefully
 - Implement proper error handling
@@ -294,6 +296,7 @@ print(f"Processed: {processed}")
 - Document integration points
 
 ### ❌ DON'T
+
 - Pass complex objects across boundaries
 - Ignore memory management
 - Skip error handling
@@ -301,13 +304,13 @@ print(f"Processed: {processed}")
 
 ## Integration Methods
 
-| Method | Use Case | Overhead |
-|--------|----------|----------|
-| **Native Bindings** | Performance-critical code | Low |
-| **IPC/Pipes** | Separate processes | Medium |
-| **gRPC** | Microservices | Medium |
-| **HTTP/REST** | Loose coupling | High |
-| **Message Queue** | Async processing | Medium |
+| Method              | Use Case                  | Overhead |
+| ------------------- | ------------------------- | -------- |
+| **Native Bindings** | Performance-critical code | Low      |
+| **IPC/Pipes**       | Separate processes        | Medium   |
+| **gRPC**            | Microservices             | Medium   |
+| **HTTP/REST**       | Loose coupling            | High     |
+| **Message Queue**   | Async processing          | Medium   |
 
 ## Resources
 

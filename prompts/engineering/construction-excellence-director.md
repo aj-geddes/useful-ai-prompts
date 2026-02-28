@@ -1,6 +1,7 @@
 # Construction Excellence Director
 
 ## Metadata
+
 - **ID**: `engineering-construction-excellence`
 - **Version**: 2.0.0
 - **Category**: Engineering/Construction
@@ -18,6 +19,7 @@ Manage complex construction projects through comprehensive planning, rigorous ex
 ## When to Use
 
 **Ideal scenarios:**
+
 - Planning major construction projects (commercial, industrial, infrastructure)
 - Developing execution strategies for complex or constrained sites
 - Creating safety and quality control programs
@@ -25,6 +27,7 @@ Manage complex construction projects through comprehensive planning, rigorous ex
 - Optimizing schedules and managing critical path activities
 
 **Anti-patterns (when not to use):**
+
 - Residential renovations or small-scale projects
 - Facilities maintenance planning
 - Design-only projects without construction oversight
@@ -105,77 +108,90 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Mixed-use 20-story tower with retail podium, $120M budget, 24-month schedule, dense urban site adjacent to operating hospital. Design-build with GMP. Must complete retail by month 12 for anchor tenant. LEED Gold requirement."
 
 ### Output
+
 **Construction Project Strategy**
 
 **Integrated Project Approach**
 
-*Phase 1: Pre-Construction (Month 0-1)*
+_Phase 1: Pre-Construction (Month 0-1)_
+
 - Complete 100% BIM coordination with clash detection
 - Finalize hospital coordination agreement (vibration/noise protocols)
 - Lock in subcontractor buyout (target 90% committed)
 - Establish off-site consolidation center for just-in-time delivery
 
-*Phase 2: Foundation & Podium (Months 1-8)*
+_Phase 2: Foundation & Podium (Months 1-8)_
+
 - Priority: Minimize hospital disruption
 - Night/weekend work for noisy operations
 - Continuous vibration monitoring with real-time alerts
 - Accelerate podium structure for retail fitout
 
-*Phase 3: Tower Construction (Months 6-20)*
+_Phase 3: Tower Construction (Months 6-20)_
+
 - Overlap with podium fitout
 - Implement jump-form system for speed
 - Prefabricate MEP racks and bathroom pods
 
-*Phase 4: Commissioning & Closeout (Months 18-24)*
+_Phase 4: Commissioning & Closeout (Months 18-24)_
+
 - Rolling commissioning by floor
 - Phased occupancy plan
 
 **Schedule Optimization**
 
-*Accelerated Podium Strategy*
+_Accelerated Podium Strategy_
+
 - Mat slab to eliminate deep foundations (save 3 weeks)
 - Two concrete crews for podium (save 4 weeks)
 - Pre-purchase long-lead retail equipment (save 6 weeks)
 - Start tenant fitout at 80% structure (save 4 weeks)
 - Result: 8.5-month podium delivery vs. 12-month baseline
 
-*Tower Efficiency*: 4-day floor cycle with jump forms, unitized curtain wall, prefab risers
+_Tower Efficiency_: 4-day floor cycle with jump forms, unitized curtain wall, prefab risers
 
 **Just-In-Time Logistics**
+
 - Off-site consolidation center (20,000 sq ft, 5 miles away)
 - 4-hour delivery windows to site
 - Schedule: Night deliveries (10PM-6AM) for major materials
 
 **Cost Control System**
 
-*Budget Status*
+_Budget Status_
+
 - Budget: $120M | Committed: $78M (65%)
 - Contingency: $4.8M (4%) | Escalation: $2.4M (2%)
 
-*Cost Containment*
+_Cost Containment_
+
 - Lock in steel/rebar NOW (+8% in 60 days)
 - Switch to post-tension slabs (save $1.2M)
 - Prefabrication (save $800K labor)
 - Schedule compression (save $1.5M general conditions)
 
-*Change Order Tiers*
+_Change Order Tiers_
+
 - <$10K: PM approval, same day
 - $10-50K: Owner rep, 48 hours
-- >$50K: Owner approval, 5 days
+- > $50K: Owner approval, 5 days
 
 **Quality & Safety Programs**
 
-*Hospital-Adjacent Safety Protocol*
+_Hospital-Adjacent Safety Protocol_
+
 - HEPA filtration at all openings
 - Crane picks: 100-foot hospital buffer
 - Vibration limits: 0.5 in/sec peak
 - Noise monitoring: 80 dBA limit at hospital
 - 24/7 emergency coordination with hospital
 
-*LEED Gold Strategy*
+_LEED Gold Strategy_
+
 - Dedicated LEED coordinator
 - 85% waste diversion plan
 - IAQ management plan
@@ -192,5 +208,6 @@ Avoid:
 **Risk Mitigation**: Hospital disruption ($500K allowance), retail delay ($200K/week LD exposure), material escalation ($2.4M pool).
 
 ## Related Prompts
+
 - [Quality Assurance Expert](../evaluation-assessment/quality-assurance-expert.md)
 - [Vendor Selection Process Expert](../decision-making/vendor-selection-process-expert.md)

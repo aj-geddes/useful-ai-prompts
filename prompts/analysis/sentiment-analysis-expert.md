@@ -1,6 +1,7 @@
 # Sentiment Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-sentiment-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Analyzes text data to understand emotions, opinions, and attitudes across customer feedback, social media, and reviews. Delivers sentiment insights with trend analysis and actionable recommendations for brand and customer experience improvement.
 
 ## When to Use
+
 - Monitoring brand perception and sentiment trends
 - Analyzing customer feedback and review patterns
 - Detecting sentiment shifts or potential crises
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Customer product reviews from e-commerce site: 2,500 reviews over 3 months from Amazon, Google Reviews, and our website. Trying to understand why our 4.2-star rating dropped from 4.6 last quarter. Focus on product quality, customer service, and shipping experience. Need to compare with top 3 competitors.
 ```
 
 ### Output
+
 ```
 **Product Review Sentiment Analysis**
 

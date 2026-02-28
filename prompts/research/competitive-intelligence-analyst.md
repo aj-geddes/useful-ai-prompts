@@ -1,6 +1,7 @@
 # Competitive Intelligence Analyst
 
 ## Metadata
+
 - **ID**: `research-competitive-intelligence-analyst`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables product marketers, strategists, and researchers to conduct rigorous competitive intelligence analysis — mapping competitor positioning, analyzing win/loss patterns, identifying strategic threats and opportunities, and producing actionable battlecards for sales and product teams.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Preparing for a product launch and needing a clear competitive landscape assessment
 - Investigating why deals are being lost to specific competitors and what to do about it
 - Updating a competitive intelligence program after major market shifts or competitor announcements
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time competitor monitoring requiring automated data feeds
 - Legal or regulatory filings analysis requiring specialized legal expertise
 - Internal organizational competitive positioning unrelated to market competitors
@@ -66,10 +71,13 @@ Avoid: Generic SWOT with no actionable content; battlecards that only list featu
 ---
 
 ## Example Usage
+
 ### Input
+
 "We make project management software focused on creative agencies (design, video, advertising). Our main competitor we keep losing to is Monday.com. We lose most often when prospects have more than 50 people. We win when the customer cares about client-facing deliverable tracking. Help me build a competitive analysis and battlecard."
 
 ### Output
+
 **Competitive Intelligence Report — Monday.com vs. [Your Product]**
 Segment: Creative Agencies | Primary Question: Why we lose deals 50+ people
 
@@ -77,14 +85,14 @@ Segment: Creative Agencies | Primary Question: Why we lose deals 50+ people
 
 **Monday.com Competitor Profile**
 
-| Dimension | Assessment | Evidence Basis |
-|-----------|------------|----------------|
-| Company | ~$900M ARR, NYSE-listed, 225K+ customers globally | Confirmed — public financials |
-| Positioning | "Work OS" — horizontal platform for all industries and work types | Confirmed — monday.com homepage |
-| Target Customer | Mid-market to enterprise, cross-industry, IT/Ops buyers | Confirmed — customer case studies, event presence |
-| Core Strength | Extreme flexibility/customization; vast integration ecosystem (200+ apps); strong enterprise IT credibility | Confirmed — G2 reviews, product tour |
-| Pricing Model | Per-seat, tiered (Basic/Standard/Pro/Enterprise); $12-$24/seat/month | Confirmed — public pricing page (Feb 2026) |
-| Known Weakness | Complexity: very powerful but requires significant setup; not purpose-built for creative workflows; client portal is add-on, not native | Inferred from G2/Capterra 1-3 star reviews mentioning "overwhelming," "needs a consultant" |
+| Dimension       | Assessment                                                                                                                              | Evidence Basis                                                                             |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Company         | ~$900M ARR, NYSE-listed, 225K+ customers globally                                                                                       | Confirmed — public financials                                                              |
+| Positioning     | "Work OS" — horizontal platform for all industries and work types                                                                       | Confirmed — monday.com homepage                                                            |
+| Target Customer | Mid-market to enterprise, cross-industry, IT/Ops buyers                                                                                 | Confirmed — customer case studies, event presence                                          |
+| Core Strength   | Extreme flexibility/customization; vast integration ecosystem (200+ apps); strong enterprise IT credibility                             | Confirmed — G2 reviews, product tour                                                       |
+| Pricing Model   | Per-seat, tiered (Basic/Standard/Pro/Enterprise); $12-$24/seat/month                                                                    | Confirmed — public pricing page (Feb 2026)                                                 |
+| Known Weakness  | Complexity: very powerful but requires significant setup; not purpose-built for creative workflows; client portal is add-on, not native | Inferred from G2/Capterra 1-3 star reviews mentioning "overwhelming," "needs a consultant" |
 
 ---
 
@@ -93,6 +101,7 @@ Segment: Creative Agencies | Primary Question: Why we lose deals 50+ people
 Monday.com claims: "Build your perfect workflow for any team." Their positioning is breadth — the platform for everything.
 
 What they are NOT claiming:
+
 - "Built for how creative teams actually work" — they ignore creative-specific workflows (revision cycles, brief-to-delivery, client approvals)
 - "Your clients can see their projects" — client visibility is an afterthought (add-on ProofHub integration, not native)
 - "Onboard in hours, not weeks" — their flexibility creates setup complexity
@@ -104,11 +113,13 @@ Your whitespace opportunity: Own "the project management platform that creative 
 **Win/Loss Analysis — 50+ Person Accounts**
 
 Why you lose at 50+:
+
 - Monday.com's enterprise sales team is well-resourced and targets IT/Ops buyers who prioritize integrations, SSO, and compliance — not creative workflow fit
 - At 50+, prospects run formal RFP processes; Monday.com has pre-built RFP response templates and case studies for every vertical
 - Inferred: Your product likely lacks some enterprise table-stakes features (advanced permissions, SSO/SAML, audit logs, dedicated CSM) that become blockers at this size
 
 Why you win:
+
 - Client-facing deliverable tracking is genuinely differentiated — creative agencies with active client relationships value this
 - Likely win with creative operations buyers vs. IT/Ops buyers — you need to reach the right champion earlier
 
@@ -116,12 +127,12 @@ Why you win:
 
 **Competitive Vulnerability Assessment**
 
-| Vulnerability | Exploit Strategy |
-|---------------|-----------------|
-| Monday.com is not purpose-built for creative workflows — setup is complex for agencies | Sales: Lead with "how are you handling client approvals today?" to surface Monday.com's gap |
-| Client portal is an add-on, not native experience | Marketing: Create comparison content showing native client experience vs. bolted-on |
-| Horizontal positioning means they can't speak credibly to creative agency pain points in detail | Product: Develop creative-agency-specific case studies showing ROI on client satisfaction |
-| Enterprise sales motion means slower, more process-heavy sales cycle | Sales: Use speed as an advantage — offer fast onboarding, agency-specific templates on day 1 |
+| Vulnerability                                                                                   | Exploit Strategy                                                                             |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Monday.com is not purpose-built for creative workflows — setup is complex for agencies          | Sales: Lead with "how are you handling client approvals today?" to surface Monday.com's gap  |
+| Client portal is an add-on, not native experience                                               | Marketing: Create comparison content showing native client experience vs. bolted-on          |
+| Horizontal positioning means they can't speak credibly to creative agency pain points in detail | Product: Develop creative-agency-specific case studies showing ROI on client satisfaction    |
+| Enterprise sales motion means slower, more process-heavy sales cycle                            | Sales: Use speed as an advantage — offer fast onboarding, agency-specific templates on day 1 |
 
 ---
 
@@ -129,12 +140,13 @@ Why you win:
 
 **When you face Monday.com:**
 
-*Trap-Setting Questions (ask these early):*
+_Trap-Setting Questions (ask these early):_
+
 - "How do your clients currently track where their projects stand between your check-ins?"
 - "When a designer finishes a round of revisions, what happens next in your workflow?"
 - "Who set up your current project management system and how long did that take?"
 
-*Expected Objections and Responses:*
+_Expected Objections and Responses:_
 
 "Monday.com is more flexible" → "Flexibility for everyone means setup complexity for you. How much time do your project managers spend configuring tools vs. managing projects?"
 
@@ -142,7 +154,8 @@ Why you win:
 
 "Monday.com has better enterprise security" → Confirm what specific requirements they have — if SSO/SAML is the barrier, address directly with your roadmap or current capabilities.
 
-*Proof Points to Lead With:*
+_Proof Points to Lead With:_
+
 - [Client name] reduced revision rounds from 4 to 2 after clients could track progress in real time
 - Creative teams onboard in [X hours] with agency-specific templates vs. weeks of Monday.com configuration
 
@@ -159,9 +172,11 @@ Why you win:
 ---
 
 ## Variations
+
 - **Multi-Competitor Landscape Map**: Side-by-side positioning analysis across 4-6 competitors for a market overview
 - **Win/Loss Deep Dive**: Interview-based analysis of 10-20 recent deals to identify systematic competitive patterns
 
 ## Related Prompts
+
 - [Trend Analysis Expert](trend-analysis-expert.md) - Identify market trends shaping the competitive landscape
 - [Research Report Writer](research-report-writer.md) - Package competitive findings into an executive intelligence report

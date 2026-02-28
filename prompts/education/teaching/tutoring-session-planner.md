@@ -1,6 +1,7 @@
 # Tutoring Session Planner
 
 ## Metadata
+
 - **ID**: `education-tutoring-session-planner`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -18,12 +19,14 @@ Structures personalized tutoring sessions that diagnose specific learning gaps, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning a first tutoring session to assess a student's knowledge gaps
 - Creating a structured multi-session remediation plan
 - Helping a student prepare for a specific exam or assignment
 - Designing practice sequences for a concept the student is struggling with
 
 **Anti-patterns (Don't Use For):**
+
 - Whole-class lesson planning (different scale and format)
 - Doing homework for the student
 - Learning disability assessment (requires licensed specialist)
@@ -123,44 +126,45 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "8th grader struggling with solving two-step linear equations like 3x + 7 = 22. She can do one-step equations but gets confused when there are two operations. 60-minute session, no upcoming test."
 
 ### Output
 
 **Tutoring Session Plan: Two-Step Linear Equations**
-*Grade 8 | 60 minutes | Focus: Isolating the variable with two operations*
+_Grade 8 | 60 minutes | Focus: Isolating the variable with two operations_
 
 **Session Arc**
 
-| Time | Activity | Purpose |
-|------|----------|---------|
-| 0-5 min | Warm-up: solve 3 one-step equations | Confirm prior knowledge foundation |
-| 5-15 min | Diagnostic: 4 targeted problems | Find where understanding breaks |
-| 15-30 min | Direct instruction: "undoing" with inverse operations | Close the specific gap |
-| 30-45 min | Guided practice (3 problems, fading) | Build with support |
-| 45-55 min | Independent practice (3 problems) | Verify mastery |
-| 55-60 min | Closure + assign practice | Consolidate and extend |
+| Time      | Activity                                              | Purpose                            |
+| --------- | ----------------------------------------------------- | ---------------------------------- |
+| 0-5 min   | Warm-up: solve 3 one-step equations                   | Confirm prior knowledge foundation |
+| 5-15 min  | Diagnostic: 4 targeted problems                       | Find where understanding breaks    |
+| 15-30 min | Direct instruction: "undoing" with inverse operations | Close the specific gap             |
+| 30-45 min | Guided practice (3 problems, fading)                  | Build with support                 |
+| 45-55 min | Independent practice (3 problems)                     | Verify mastery                     |
+| 55-60 min | Closure + assign practice                             | Consolidate and extend             |
 
-**Diagnostic Questions** *(present one at a time, observe process)*
+**Diagnostic Questions** _(present one at a time, observe process)_
 
-1. `x + 7 = 22` — Can she do single-step addition? (*Prerequisite check*)
+1. `x + 7 = 22` — Can she do single-step addition? (_Prerequisite check_)
    - If wrong: stop and address one-step equations first
-2. `3x = 15` — Can she do single-step multiplication? (*Prerequisite check*)
+2. `3x = 15` — Can she do single-step multiplication? (_Prerequisite check_)
    - If wrong: stop and address multiplication/division inverse first
-3. `3x + 7 = 22` — The target problem type (*This is where the confusion lives*)
+3. `3x + 7 = 22` — The target problem type (_This is where the confusion lives_)
    - Watch: Does she try to divide by 3 first (most common error)? Does she freeze? Does she get a wrong answer but can't identify where?
-4. `2x - 5 = 11` — Same structure, subtraction instead (*Check if it's operation-specific*)
+4. `2x - 5 = 11` — Same structure, subtraction instead (_Check if it's operation-specific_)
 
 **Most Common Misconception to Probe**
-Many students divide first: `3x + 7 = 22 → x + 7/3 = 22/3` — they forget the order of operations works in reverse when solving. Ask: *"When you have 3x + 7, what happened to x mathematically?"* Guide her to see: first x was multiplied by 3, then 7 was added — so to undo, reverse that order.
+Many students divide first: `3x + 7 = 22 → x + 7/3 = 22/3` — they forget the order of operations works in reverse when solving. Ask: _"When you have 3x + 7, what happened to x mathematically?"_ Guide her to see: first x was multiplied by 3, then 7 was added — so to undo, reverse that order.
 
-**Guided Practice Sequence** *(work together, think aloud)*
+**Guided Practice Sequence** _(work together, think aloud)_
 
 Problem 1 (simple): `2x + 3 = 11` — Walk through together: "What's the last thing that happened to x? So what do we undo first?"
 Problem 2 (moderate): `4x - 6 = 14` — Student narrates steps, tutor fills gaps only
 Problem 3 (trap): `5 + 3x = 20` — Constant is on the left; tests flexibility in identifying what to subtract first
 
-**Independent Practice** *(student works alone, you observe without jumping in)*
+**Independent Practice** _(student works alone, you observe without jumping in)_
 
 1. `3x + 9 = 24` (direct parallel to diagnostic problem)
 2. `6x - 4 = 32`
@@ -168,10 +172,12 @@ Problem 3 (trap): `5 + 3x = 20` — Constant is on the left; tests flexibility i
 
 **Between-Session Practice** (5 problems, assign by theme)
 Write in notebook and bring next session:
+
 - `4x + 2 = 18`, `3x - 7 = 11`, `2x + 5 = 21`, `5x - 3 = 22`, `7 + 3x = 28`
 
 **Reference Card for Student**
 Write this in her notebook before leaving:
+
 ```
 Two-Step Equation Steps:
 1. Identify what happened to x (in order: multiply, then add/subtract)

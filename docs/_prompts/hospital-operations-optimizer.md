@@ -3,23 +3,24 @@ title: Hospital Operations Optimizer
 slug: hospital-operations-optimizer
 category: healthcare
 tags:
-- hospital
-- operations
-- patient
-- flow
-- ED
-- throughput
-- bed
-- management
-- OR
-- efficiency
-- capacity
-- management
+  - hospital
+  - operations
+  - patient
+  - flow
+  - ED
+  - throughput
+  - bed
+  - management
+  - OR
+  - efficiency
+  - capacity
+  - management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a hospital operations specialist persona that analyzes
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a hospital operations specialist persona that analyzes
   patient flow bottlenecks, throughput constraints, and capacity challenges across
   inpatient, emergency, and surgical settings. It applies Lean operational principles
   and evidence-based hospital operations frameworks to identify root causes and design
@@ -27,14 +28,14 @@ description: This prompt enables a hospital operations specialist persona that a
   bed utilization, and enhance operating room efficiency.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Analyzing emergency department boarding and left-without-being-seen rates to identify
-  systemic flow bottlenecks
-- Designing a bed management strategy to reduce inpatient capacity constraints and
-  improve throughput
-- Optimizing OR scheduling and first-case on-time start rates for surgical services
-- Making clinical decisions about patient placement or level of care — those require
-  physician judgment
+  - Ideal Scenarios:**
+  - Analyzing emergency department boarding and left-without-being-seen rates to identify
+    systemic flow bottlenecks
+  - Designing a bed management strategy to reduce inpatient capacity constraints and
+    improve throughput
+  - Optimizing OR scheduling and first-case on-time start rates for surgical services
+  - Making clinical decisions about patient placement or level of care — those require
+    physician judgment
 complexity: advanced
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Cross-Chain Interoperability Expert
 
 ## Metadata
+
 - **ID**: `blockchain-cross-chain-interoperability-expert`
 - **Version**: 1.0.0
 - **Category**: Blockchain/Infrastructure
@@ -18,6 +19,7 @@ Designs secure cross-chain communication solutions including bridges, messaging 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building cross-chain bridges or messaging systems
 - Designing multi-chain application architectures
 - Evaluating cross-chain security models and trust assumptions
@@ -25,6 +27,7 @@ Designs secure cross-chain communication solutions including bridges, messaging 
 - Architecting layer 2 to layer 1 communication
 
 **Anti-patterns (When NOT to Use):**
+
 - Single-chain application development
 - Non-blockchain system integrations
 - Basic wallet operations or simple transactions
@@ -114,6 +117,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Building cross-chain bridge for DeFi protocol connecting Ethereum and Arbitrum. Need bidirectional ERC-20 token transfers. Security is paramount - targeting $50M+ TVL. Want to minimize trust assumptions while maintaining reasonable UX (sub-30min transfers). Team: 4 developers, 6-month timeline, $200K security budget.
 
 ### Output
@@ -137,6 +141,7 @@ Approach:
 ```
 
 **Security Model**
+
 ```
 Trust Assumptions:
 - Arbitrum rollup security (inherited from L1)
@@ -153,6 +158,7 @@ Threat Vectors Addressed:
 ```
 
 **Architecture Design**
+
 ```
 L1 (Ethereum):
 - BridgeVault.sol: Lock tokens, verify L2 state proofs
@@ -173,6 +179,7 @@ Off-chain:
 ```
 
 **Transfer Flow**
+
 ```
 L1 -> L2 (Fast Path, 10-15 minutes):
 1. User deposits tokens to L1 BridgeVault
@@ -195,6 +202,7 @@ L2 -> L1 (Fast Path, 10-30 minutes):
 ```
 
 **Emergency Procedures**
+
 ```
 Guardian Multi-Sig (3-of-5):
 - Pause bridge operations (deposits/withdrawals)
@@ -214,6 +222,7 @@ Recovery Procedures:
 ```
 
 **Monitoring Framework**
+
 ```
 Real-time Metrics:
 - Transaction flow and volume
@@ -233,6 +242,7 @@ Incident Response:
 ```
 
 **Security Budget Allocation ($200K)**
+
 ```
 Trail of Bits Audit:     $100K (6-week comprehensive)
 Code4rena Contest:        $50K (community review)

@@ -1,6 +1,7 @@
 # Product Design Expert
 
 ## Metadata
+
 - **ID**: `creation-product-design`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical product design assistant that creates products delighting users whil
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new digital products (apps, web platforms)
 - Creating or improving user experiences
 - Building design systems and component libraries
@@ -25,6 +27,7 @@ A practical product design assistant that creates products delighting users whil
 - Redesigning existing products based on user feedback
 
 **Anti-patterns (Don't Use For):**
+
 - Pure visual design without UX context
 - Marketing or brand design
 - Physical product industrial design
@@ -105,6 +108,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Mobile app for personal fitness tracking. Target users: Busy professionals 25-40 who struggle with consistency and want simple tracking. Problem: Existing apps too complex and overwhelming. Business goals: $10/month subscription, 70% monthly retention, 50K users Year 1."
 
 ### Output
@@ -112,6 +116,7 @@ Avoid:
 **User Research Insights:**
 
 **Primary Persona: Sarah - The Time-Strapped Executive**
+
 - Age: 32, Marketing Director
 - Pain Points: Opens MyFitnessPal, gets overwhelmed, closes it
 - Goals: Stay healthy without the complexity
@@ -121,6 +126,7 @@ Avoid:
 **Key Research Finding:** Users don't want more data - they want confidence they're doing enough.
 
 **User Journey (Current State):**
+
 1. Monday Motivation: Download complex app
 2. Tuesday Overwhelm: Too many features to set up
 3. Wednesday Skip: "I'll do it tomorrow"
@@ -133,11 +139,13 @@ Avoid:
 Track only 3 things: Move, Fuel, Rest
 
 **Pros:**
+
 - Simple but comprehensive
 - Flexible definitions
 - Balanced approach
 
 **Cons:**
+
 - Slightly more complex than single question
 - Need to educate on categories
 
@@ -146,6 +154,7 @@ Track only 3 things: Move, Fuel, Rest
 **Visual Design System:**
 
 **Color Palette:**
+
 ```
 Primary: Sage Green (#52B788) - Growth, calm
 Secondary: Warm Coral (#FF6B6B) - Energy, joy
@@ -154,6 +163,7 @@ Text: Deep Charcoal (#2D3436) - Readable, soft
 ```
 
 **Typography:**
+
 ```
 Headlines: Inter Bold - Clean, modern, friendly
 Body: Inter Regular - Highly readable
@@ -161,6 +171,7 @@ Numbers: Inter Tabular - Perfect alignment
 ```
 
 **Design Principles:**
+
 1. Breathing Room - Generous whitespace
 2. One Thing at a Time - No information overload
 3. Celebration Over Shame - Positive reinforcement only
@@ -170,6 +181,7 @@ Numbers: Inter Tabular - Perfect alignment
 **Core User Flow:**
 
 **Daily Check-in:**
+
 ```
 [Large circular progress indicator]
 
@@ -186,6 +198,7 @@ REST - "How was your sleep?"
 ```
 
 **Micro-interactions:**
+
 - Tap "Done" leads to satisfying checkbox animation
 - Complete all 3 leads to confetti celebration
 - 7-day streak leads to haptic feedback + fire animation
@@ -195,26 +208,31 @@ REST - "How was your sleep?"
 **Implementation Roadmap:**
 
 **Phase 1 (Weeks 1-4):** Foundation
+
 - Complete design system in Figma
 - Core screens (15-20 total)
 - Interaction specifications
 
 **Phase 2 (Weeks 5-8):** Enhancement
+
 - Edge cases and error states
 - Push notifications design
 - Widget design
 
 **Phase 3 (Weeks 9-12):** Polish
+
 - Animation guidelines
 - Marketing assets
 - App Store optimization
 
 **Phase 4 (Weeks 13-16):** Launch
+
 - Beta testing
 - Performance testing
 - Launch campaign
 
 **Success Metrics:**
+
 - Onboarding completion: Target 90%+
 - Daily active users: Target 60%+
 - Weekly retention: Target 80%+
@@ -223,6 +241,7 @@ REST - "How was your sleep?"
 ---
 
 ## Related Prompts
+
 - [User Experience Design Expert](../customer-focused/user-experience-design-expert.md)
 - [Service Design Expert](../customer-focused/service-design-expert.md)
 - [Mobile Development Workflow Expert](../technical-workflows/mobile-development-workflow-expert.md)

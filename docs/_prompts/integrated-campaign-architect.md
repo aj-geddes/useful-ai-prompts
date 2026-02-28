@@ -3,27 +3,28 @@ title: Integrated Campaign Architect
 slug: integrated-campaign-architect
 category: business/marketing
 tags:
-- campaign
-- planning
-- integrated
-- marketing
-- cross-channel
-- marketing
-- execution
-- ROI
+  - campaign
+  - planning
+  - integrated
+  - marketing
+  - cross-channel
+  - marketing
+  - execution
+  - ROI
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs and executes integrated marketing campaigns that deliver consistent
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs and executes integrated marketing campaigns that deliver consistent
   messaging across all channels while maximizing impact and ROI. Creates unified strategies
   with channel-specific tactics and measurement frameworks.
 layout: prompt
 use_cases:
-- Launching new products or major initiatives
-- Planning multi-channel campaigns with significant budget
-- Coordinating messaging across digital and traditional channels
-- Building campaigns requiring cross-functional alignment
+  - Launching new products or major initiatives
+  - Planning multi-channel campaigns with significant budget
+  - Coordinating messaging across digital and traditional channels
+  - Building campaigns requiring cross-functional alignment
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Integrated campaigns outperform siloed efforts by 3-4x on average. The challenge
 
 <input_handling>
 Required inputs:
+
 - Campaign objective (awareness, leads, sales, product launch)
 - Target audience description
 - Budget and timeline
 - Available channels and assets
 
 Infer if not provided:
+
 - Creative themes (default: derive from product/audience insights)
 - Channel allocation (default: 40% digital, 30% content, 20% events, 10% PR)
 - Measurement model (default: multi-touch attribution)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive integrated campaign plan:
@@ -58,33 +61,36 @@ Create a comprehensive integrated campaign plan:
 4. Create detailed execution timeline with dependencies
 5. Establish measurement framework with leading/lagging KPIs
 6. Define optimization process and decision checkpoints
-</task>
+   </task>
 
 <output_specification>
 Format: Strategic framework with channel playbooks and timeline
 Length: 800-1200 words
 Structure:
+
 - Campaign strategy and messaging framework
 - Creative concepts with adaptations
 - Channel-specific playbooks
 - Execution timeline with milestones
 - Measurement framework with KPIs
 - Optimization checkpoints and decision criteria
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Unified message adapts naturally to each channel's context
 - Channel tactics build on each other synergistically
 - Timeline accounts for dependencies and lead times
 - Metrics enable real-time optimization decisions
 
 Avoid:
+
 - Same content copy-pasted across channels
 - Missing channel-specific best practices
 - Measurement that can't inform mid-campaign adjustments
 - Unrealistic timelines without buffer
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect channel-specific audience behaviors

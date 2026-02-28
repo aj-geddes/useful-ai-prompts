@@ -1,6 +1,7 @@
 # Financial Reporting Specialist
 
 ## Metadata
+
 - **ID**: `finance-financial-reporting-specialist`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt designs and writes executive-ready financial management reports — including monthly P&L commentary, KPI dashboards, board reporting packages, and variance analysis narratives. It transforms raw financial data into clear, decision-oriented reports that give leadership and boards the information they need to manage the business effectively. The output includes report structure design, metric selection rationale, and ready-to-use narrative commentary.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a new monthly management reporting package for a leadership team or board of directors
 - Writing the narrative commentary for a monthly or quarterly financial close package
 - Building a KPI dashboard structure that surfaces the metrics most critical to business performance
 
 **Anti-patterns (Don't Use For):**
+
 - Statutory financial reporting and audit-related disclosures — those require GAAP/IFRS expertise and CPA review
 - Real-time financial data dashboards requiring live data integration — this provides structure and narrative, not BI engineering
 - Investor relations and public company earnings releases — those require legal review and SEC compliance expertise
@@ -70,9 +75,11 @@ Avoid: 30-page reports where the key insight is on page 18, variance commentary 
 ## Example Usage
 
 ### Input
+
 "I'm the CFO of a $25M ARR SaaS company, 65 employees, Series B funded. I need to redesign our monthly board reporting package. Currently it's a 40-slide deck that takes me 3 days to build and the board spends most of the meeting looking at slides rather than discussing strategy. I want something tighter, faster to produce, and focused on the 10 metrics that actually matter for our business. We have a 3-person finance team and use Stripe, Salesforce, and NetSuite."
 
 ### Output
+
 **Board Reporting Redesign: $25M ARR SaaS Company**
 
 ---
@@ -86,40 +93,40 @@ Target: 10-12 pages maximum, producible in 4-6 hours using data from NetSuite + 
 
 **Recommended Report Structure**
 
-*Page 1 — Executive Scorecard (5-minute read for any board member)*
+_Page 1 — Executive Scorecard (5-minute read for any board member)_
 Traffic-light dashboard: 10 KPIs with current value, prior month, target, and RAG (Red/Amber/Green) status. One sentence of commentary per red/amber metric. Board walks in knowing the score.
 
-*Pages 2-3 — Financial Summary*
+_Pages 2-3 — Financial Summary_
 P&L vs. Budget and Prior Year (monthly + YTD). Cash position and runway. ARR bridge (beginning ARR + new + expansion - churn = ending ARR). Nothing else.
 
-*Pages 4-5 — Revenue and Customer Metrics*
+_Pages 4-5 — Revenue and Customer Metrics_
 ARR trend (12-month chart), NRR, GRR, new ARR by channel, churn by segment, and customer count. These are the core value-creation metrics for a SaaS business.
 
-*Page 6 — Operational Highlights*
+_Page 6 — Operational Highlights_
 3-5 bullets: one per major function (Sales, Product, Customer Success, People). Written by function heads, not Finance. Cap at 3 sentences each.
 
-*Page 7 — Forward Look*
+_Page 7 — Forward Look_
 Pipeline coverage (next 3 months), open headcount vs. plan, major milestones (next 60 days). This is what enables productive board conversation.
 
-*Pages 8-10 — Supporting Detail (Board Reference Only)*
+_Pages 8-10 — Supporting Detail (Board Reference Only)_
 Detailed P&L, headcount table, full metric definitions. Available but not presented. Board members who want the detail have it.
 
 ---
 
 **10 Core KPIs for a $25M ARR SaaS Business**
 
-| Metric | Definition | Why It Matters | Benchmark |
-|--------|-----------|----------------|-----------|
-| ARR | Total annualized recurring revenue | Primary growth measure | $25M, target $33M EOY |
-| MoM ARR Growth | % change in ARR month-over-month | Acceleration/deceleration signal | 2.5-3% for Series B stage |
-| Net Revenue Retention (NRR) | (ARR start + expansion - contraction - churn) / ARR start | Measures if customers are growing with you | >110% = best-in-class |
-| Gross Revenue Retention (GRR) | ARR retained ex-expansion | Churn health indicator | >90% |
-| Gross Margin | Revenue - COGS / Revenue | Unit economics sustainability | >70% |
-| CAC Payback Period | Sales & Marketing spend / New ARR × 12 | Efficiency of growth investment | <18 months |
-| Burn Multiple | Net Burn / Net New ARR | Capital efficiency | <1.5x |
-| Cash Runway | Cash / Monthly Net Burn | Operational runway | >18 months |
-| Magic Number | Net New ARR (annualized) / Prior Quarter S&M Spend | Go-to-market efficiency | >0.75 |
-| Headcount Productivity | ARR / Total FTE | Organizational efficiency | $350-400K/FTE |
+| Metric                        | Definition                                                | Why It Matters                             | Benchmark                 |
+| ----------------------------- | --------------------------------------------------------- | ------------------------------------------ | ------------------------- |
+| ARR                           | Total annualized recurring revenue                        | Primary growth measure                     | $25M, target $33M EOY     |
+| MoM ARR Growth                | % change in ARR month-over-month                          | Acceleration/deceleration signal           | 2.5-3% for Series B stage |
+| Net Revenue Retention (NRR)   | (ARR start + expansion - contraction - churn) / ARR start | Measures if customers are growing with you | >110% = best-in-class     |
+| Gross Revenue Retention (GRR) | ARR retained ex-expansion                                 | Churn health indicator                     | >90%                      |
+| Gross Margin                  | Revenue - COGS / Revenue                                  | Unit economics sustainability              | >70%                      |
+| CAC Payback Period            | Sales & Marketing spend / New ARR × 12                    | Efficiency of growth investment            | <18 months                |
+| Burn Multiple                 | Net Burn / Net New ARR                                    | Capital efficiency                         | <1.5x                     |
+| Cash Runway                   | Cash / Monthly Net Burn                                   | Operational runway                         | >18 months                |
+| Magic Number                  | Net New ARR (annualized) / Prior Quarter S&M Spend        | Go-to-market efficiency                    | >0.75                     |
+| Headcount Productivity        | ARR / Total FTE                                           | Organizational efficiency                  | $350-400K/FTE             |
 
 ---
 
@@ -131,22 +138,24 @@ Detailed P&L, headcount table, full metric definitions. Available but not presen
 
 **Monthly Close Calendar (Tight Pack = Timely Decisions)**
 
-| Day | Action | Owner |
-|-----|--------|-------|
-| Close +2 | NetSuite close complete, ARR data pulled from Stripe | Controller |
-| Close +3 | Draft P&L and KPI scorecard to CFO | FP&A |
+| Day      | Action                                                 | Owner            |
+| -------- | ------------------------------------------------------ | ---------------- |
+| Close +2 | NetSuite close complete, ARR data pulled from Stripe   | Controller       |
+| Close +3 | Draft P&L and KPI scorecard to CFO                     | FP&A             |
 | Close +4 | CFO reviews; function heads submit operational bullets | CFO + Leadership |
-| Close +5 | Final pack assembled and distributed to board | CFO |
-| Close +7 | Board meeting | All |
+| Close +5 | Final pack assembled and distributed to board          | CFO              |
+| Close +7 | Board meeting                                          | All              |
 
 This schedule replaces the current 3-day production process with a structured 5-day pipeline, achievable with NetSuite + Stripe + Salesforce data exports.
 
 ---
 
 ## Variations
+
 - **Operating Cadence Report**: Design the weekly internal leadership report (not board-level) for real-time business management
 - **Investor Update Letter**: Monthly or quarterly investor letter format for VC/PE sponsors, including concise narrative on key developments
 
 ## Related Prompts
+
 - [Cash Flow Optimizer](cash-flow-optimizer.md) - Improve the cash metrics being reported
 - [Financial Model Builder](financial-model-builder.md) - Build the models that generate forward-looking projections in the report

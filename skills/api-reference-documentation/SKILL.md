@@ -110,7 +110,7 @@ components:
           example: 299.99
         sku:
           type: string
-          pattern: '^[A-Z0-9-]+$'
+          pattern: "^[A-Z0-9-]+$"
           example: "WH-1000XM5"
         category:
           type: string
@@ -159,7 +159,7 @@ components:
           type: array
           minItems: 1
           items:
-            $ref: '#/components/schemas/OrderItem'
+            $ref: "#/components/schemas/OrderItem"
         status:
           type: string
           enum: [pending, processing, shipped, delivered, cancelled]
@@ -169,7 +169,7 @@ components:
           format: float
           readOnly: true
         shippingAddress:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
         createdAt:
           type: string
           format: date-time
@@ -227,7 +227,7 @@ components:
         data:
           type: array
           items:
-            $ref: '#/components/schemas/Product'
+            $ref: "#/components/schemas/Product"
         pagination:
           type: object
           properties:
@@ -246,7 +246,7 @@ components:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Error'
+            $ref: "#/components/schemas/Error"
           example:
             code: "UNAUTHORIZED"
             message: "Authentication token is missing or invalid"
@@ -256,7 +256,7 @@ components:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/Error'
+            $ref: "#/components/schemas/Error"
           example:
             code: "NOT_FOUND"
             message: "The requested resource was not found"
@@ -301,14 +301,14 @@ paths:
           schema:
             type: number
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/PaginatedProducts'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
+                $ref: "#/components/schemas/PaginatedProducts"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
 
     post:
       summary: Create product
@@ -322,7 +322,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Product'
+              $ref: "#/components/schemas/Product"
             examples:
               headphones:
                 summary: Wireless headphones
@@ -334,14 +334,14 @@ paths:
                   category: "electronics"
                   stock: 150
       responses:
-        '201':
+        "201":
           description: Product created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Product'
-        '401':
-          $ref: '#/components/responses/Unauthorized'
+                $ref: "#/components/schemas/Product"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
 
   /products/{productId}:
     get:
@@ -359,14 +359,14 @@ paths:
             type: string
             format: uuid
       responses:
-        '200':
+        "200":
           description: Product found
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Product'
-        '404':
-          $ref: '#/components/responses/NotFound'
+                $ref: "#/components/schemas/Product"
+        "404":
+          $ref: "#/components/responses/NotFound"
 ```
 
 ## Markdown Documentation Template
@@ -380,10 +380,11 @@ The Products API allows you to manage your product catalog, including creating,
 updating, retrieving, and deleting products.
 
 ## Base URL
+```
 
-```
 https://api.example.com/v2
-```
+
+````
 
 ## Authentication
 
@@ -392,7 +393,7 @@ All API requests require authentication using a Bearer token:
 ```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
   https://api.example.com/v2/products
-```
+````
 
 ## Endpoints
 
@@ -404,12 +405,12 @@ Retrieve a paginated list of products.
 
 **Query Parameters:**
 
-| Parameter | Type   | Required | Description                |
-|-----------|--------|----------|----------------------------|
-| page      | number | No       | Page number (default: 1)   |
+| Parameter | Type   | Required | Description                  |
+| --------- | ------ | -------- | ---------------------------- |
+| page      | number | No       | Page number (default: 1)     |
 | limit     | number | No       | Items per page (default: 20) |
-| category  | string | No       | Filter by category         |
-| search    | string | No       | Search in name/description |
+| category  | string | No       | Filter by category           |
+| search    | string | No       | Search in name/description   |
 
 **Example Request:**
 
@@ -446,11 +447,12 @@ curl -X GET "https://api.example.com/v2/products?page=1&limit=20&category=electr
 
 **Error Responses:**
 
-| Status Code | Description          |
-|-------------|----------------------|
-| 400         | Invalid parameters   |
-| 401         | Unauthorized         |
+| Status Code | Description           |
+| ----------- | --------------------- |
+| 400         | Invalid parameters    |
+| 401         | Unauthorized          |
 | 500         | Internal server error |
+
 ```
 
 ## Best Practices
@@ -483,3 +485,4 @@ curl -X GET "https://api.example.com/v2/products?page=1&limit=20&category=electr
 - [Swagger Editor](https://editor.swagger.io/)
 - [Redoc](https://github.com/Redocly/redoc)
 - [Postman Documentation](https://www.postman.com/api-documentation-tool/)
+```

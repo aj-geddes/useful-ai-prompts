@@ -1,6 +1,7 @@
 # Care Coordination Specialist
 
 ## Metadata
+
 - **ID**: `healthcare-care-coordination-specialist`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a care coordination specialist persona that designs care transition programs, case management workflows, and patient navigation systems to improve outcomes across care settings. It helps organizations reduce avoidable readmissions, close care gaps, and ensure patients move safely between hospital, post-acute, and community settings. Use it to design care management programs, develop care plan templates, or improve discharge planning workflows.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a transitions-of-care program to reduce 30-day readmissions for high-risk patient populations
 - Building a care management workflow for complex patients with multiple chronic conditions
 - Developing patient navigation programs to address social determinants of health and care access barriers
 
 **Anti-patterns (Don't Use For):**
+
 - Providing individualized care plan recommendations for specific patients — that requires clinical assessment by licensed professionals
 - Replacing the judgment of nurses, social workers, and case managers in complex individual patient situations
 - Making clinical authorization or level-of-care decisions for specific patients
@@ -64,14 +69,18 @@ Avoid: Designing programs without considering care coordinator caseload sustaina
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a community health system with an ACO. We want to build a transitions-of-care program specifically for Medicare patients discharged after heart failure hospitalizations. We know they're our highest readmission risk. We have RN case managers and social workers on staff. We use Epic. What should our program look like?"
 
 ### Output
+
 **Heart Failure Transitions-of-Care Program — Medicare ACO Design**
 
 **Population Definition and Risk Stratification**
 Target population: All Medicare ACO beneficiaries discharged following a primary heart failure hospitalization. Stratify into tiers using LACE+ or validated HF readmission risk score at time of discharge decision:
+
 - High Risk (LACE+ ≥10): Intensive transitions protocol — RN CM-led with social work integration
 - Moderate Risk (LACE+ 5-9): Standard transitions protocol — RN CM telephonic with targeted social work referral
 - Lower Risk (<5): Light-touch protocol — automated call plus follow-up scheduling confirmation
@@ -81,17 +90,20 @@ Exclusions: Comfort care/palliative patients per care team discretion; patients 
 **Care Coordination Workflow — Intensive Protocol (High Risk)**
 
 Pre-Discharge (24-48 hours before discharge):
+
 - RN case manager conducts face-to-face visit to assess: medication understanding, self-monitoring skills (daily weights, symptom recognition), caregiver availability, home environment safety, transportation to follow-up
 - Social worker completes PRAPARE or AHC-HRSN SDOH screening; initiates referrals for identified needs (food, housing, transportation) before discharge
 - Medication reconciliation completed by pharmacy; patient counseled on diuretic titration and symptom response
 - Follow-up appointment scheduled before discharge — target within 7 days with cardiology or PCP (whichever is clinician of record for HF management)
 
 Discharge Day:
+
 - Structured Teach-Back education using HF Action Plan — patients demonstrate understanding of daily weight monitoring, sodium restrictions, and three-sign rule for calling clinic
 - After Visit Summary reviewed verbally with patient and caregiver
 - Epic transition of care communication sent to PCP and cardiologist
 
 Post-Discharge Touchpoints:
+
 - Day 1-2: RN CM phone call — medication changes confirmed, weight monitoring confirmed, any symptoms, follow-up appointment confirmed
 - Day 7: Phone call or telehealth visit — clinical status assessment, SDOH barrier check-in, reinforcement of self-management
 - Day 14: Phone call if not seen in clinic; communicate status to outpatient care team
@@ -99,6 +111,7 @@ Post-Discharge Touchpoints:
 
 **Care Plan Structure**
 Each patient's HF transition care plan includes:
+
 - Problem list: Active HF plus comorbidities (CKD, AFib, diabetes) affecting management
 - Patient goals: Captured in patient's own words — what does "staying out of the hospital" look like to this patient?
 - Medication plan: Current regimen, recent changes, self-titration instructions
@@ -109,6 +122,7 @@ Each patient's HF transition care plan includes:
 
 **SDOH Integration**
 PRAPARE screening at discharge with standardized workflow:
+
 - Food insecurity: Referral to community food bank or Meals on Wheels (navigator maintains current partner list)
 - Transportation: Medical transportation benefit confirmation or community transport referral
 - Medication cost: PharmacyBenefit check; 340B program for qualifying patients; social work referral for patient assistance programs
@@ -120,6 +134,7 @@ Social Worker (SDOH and Complex Psychosocial): Completes SDOH screening, communi
 Community Health Worker (optional): Handles community navigation, transportation coordination, and between-visit patient support for highest-risk patients.
 
 **Measurement Framework**
+
 - 30-day all-cause readmission rate (primary; target: ≤12%)
 - 7-day follow-up appointment completion rate (target: ≥75%)
 - Day 1-2 post-discharge call completion rate (target: ≥85%)
@@ -131,11 +146,13 @@ Review monthly; use run charts to distinguish special cause from common cause va
 ---
 
 ## Variations
+
 - **Complex Case Management**: Shift focus from transitions to ongoing intensive case management for patients with multiple chronic conditions and high utilization
 - **Pediatric Care Coordination**: Adapt for pediatric populations with medical complexity, incorporating family caregiver training and school-based coordination
 - **Post-Acute Care Navigation**: Design the post-acute placement and SNF-to-home transition component of the care transitions continuum
 
 ## Related Prompts
+
 - [Population Health Analyst](population-health-analyst.md) - Risk stratification and chronic disease population management
 - [Hospital Operations Optimizer](hospital-operations-optimizer.md) - Discharge planning and inpatient throughput
 - [Telemedicine Program Designer](telemedicine-program-designer.md) - Virtual touchpoints in care transitions programs

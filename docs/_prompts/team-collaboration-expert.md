@@ -3,31 +3,32 @@ title: Team Collaboration Expert
 slug: team-collaboration-expert
 category: communication
 tags:
-- team
-- collaboration
-- remote
-- work
-- cross-functional
-- teams
-- team
-- dynamics
-- distributed
-- teams
+  - team
+  - collaboration
+  - remote
+  - work
+  - cross-functional
+  - teams
+  - team
+  - dynamics
+  - distributed
+  - teams
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Builds high-performing teams through effective collaboration strategies
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Builds high-performing teams through effective collaboration strategies
   for co-located, remote, and hybrid environments. Creates practical solutions for
   communication protocols, tool optimization, and team culture that enable seamless
   collaboration across time zones and work styles.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Setting up new remote or distributed teams
-- Improving collaboration across multiple time zones
-- Building team culture in hybrid work environments
-- Resolving coordination issues and communication gaps
+  - Ideal scenarios:**
+  - Setting up new remote or distributed teams
+  - Improving collaboration across multiple time zones
+  - Building team culture in hybrid work environments
+  - Resolving coordination issues and communication gaps
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -42,18 +43,20 @@ Effective team collaboration requires intentional design of communication, proce
 
 <input_handling>
 Required inputs:
+
 - Team size and composition
 - Work arrangement (co-located, hybrid, remote)
 - Time zones involved
 - Current collaboration challenges
 
 Optional inputs (will use defaults if not provided):
+
 - Communication approach (default: async-first for distributed teams)
 - Tool stack (default: standard enterprise tools - Slack, Zoom, Jira)
 - Meeting cadence (default: minimal but effective)
 - Team tenure and relationships
 - Organizational culture context
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive team collaboration system through these steps:
@@ -64,12 +67,13 @@ Create a comprehensive team collaboration system through these steps:
 4. **Build asynchronous practices** - Establish documentation, decision-making, and update protocols
 5. **Develop relationship and culture practices** - Design sustainable team-building and connection activities
 6. **Create implementation roadmap** - Phase the changes with clear milestones
-</task>
+   </task>
 
 <output_specification>
 Format: Complete team collaboration system
 Length: 700-1000 words
 Structure:
+
 - Collaboration assessment and gap analysis
 - Communication charter with channel structure
 - Meeting structure with time zone rotation
@@ -77,21 +81,23 @@ Structure:
 - Team building activities
 - Implementation roadmap with weekly milestones
 - Success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Address the specific challenges mentioned
 - Ensure time zone equity for distributed members
 - Keep tools supporting work rather than creating overhead
 - Provide sustainable culture-building practices
 
 Avoid:
+
 - Over-engineering with excessive meetings
 - Ignoring time zone fairness for minority members
 - Generic advice without customization to context
 - Unsustainable practices that will be abandoned
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect work-life boundaries across time zones

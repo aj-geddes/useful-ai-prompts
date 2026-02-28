@@ -1,6 +1,7 @@
 # Team Motivation Expert
 
 ## Metadata
+
 - **ID**: `leadership-team-motivation-expert`
 - **Version**: 1.0.0
 - **Category**: Management & Leadership
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Develops strategies to boost team motivation, engagement, and performance through tailored approaches. Addresses morale issues, recognition programs, and sustainable engagement practices that go beyond surface-level perks to address root causes and intrinsic motivation.
 
 ## When to Use
+
 - Team morale is declining or stagnant
 - Engagement scores are dropping
 - Coming out of a difficult period (crunch, layoffs, failure)
@@ -22,6 +25,7 @@ Develops strategies to boost team motivation, engagement, and performance throug
 - Recovering from burnout situations
 
 **Anti-patterns (don't use for)**:
+
 - Individual motivation issues (use direct management)
 - Compensation negotiations (use HR)
 - Performance management (use Performance Management Expert)
@@ -103,19 +107,23 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "12-person remote team, 6 months of crunch time, low energy, missing deadlines, two people just quit. Engineering team, strong performers historically."
 
 ### Output
+
 **Team Motivation Strategy: Post-Crunch Recovery**
 
 **1. Motivation Diagnosis**
 Presenting symptoms:
+
 - Low energy: Emotional and physical exhaustion from sustained crunch
 - Missing deadlines: Capacity depleted, not skill or will issue
 - Attrition: Best people have options and are leaving
 - Remote factor: Isolation amplifies individual struggles
 
 Root causes (likely):
+
 - Burnout: 6 months of crunch has depleted reserves
 - Loss of control: Sustained urgency removes autonomy
 - Purpose disconnect: Grinding without seeing impact
@@ -126,69 +134,81 @@ Key insight: This team doesn't need motivation tricks. They need recovery, ackno
 
 **2. Recognition and Recovery**
 Immediate acknowledgment (this week):
+
 - All-hands message: "What you did was extraordinary. I see the cost. Thank you."
 - Individual recognition: Personal note or call to each person acknowledging specific contributions
 - Tangible appreciation: Meaningful gift (not logo swag) - $100-200 per person
 
 Recovery period (next 4 weeks):
+
 - No new feature work: Focus on maintenance, cleanup, tech debt only
 - Flexible hours: "Take the time you need this month"
 - Meeting reduction: Cancel everything non-essential, protect focus time
 - Explicit permission: "It's OK to work at sustainable pace right now"
 
 Addressing departures:
+
 - Exit interviews: Understand why people left (probably already know)
 - Don't hide: "We lost two great people. Here's what we're doing to prevent more."
 - Remaining team: Individual conversations about their situation and concerns
 
 **3. Autonomy Enhancement**
 Restore control:
+
 - Sprint planning: Team decides what fits, leadership doesn't override
 - Technical decisions: Push architecture choices to engineers
 - Work scheduling: Flexible hours, respect for focus blocks
 - Process improvement: Team identifies and fixes their own friction
 
 Ownership opportunities:
+
 - Innovation time: 10% time returns for personal projects
 - Rotation: Let people work on different areas, reduce monotony
 - Decision authority: Clear about what they can decide without approval
 
 Avoid:
+
 - Micromanagement (common leader response to missed deadlines)
 - Over-steering to "help" (feels like lack of trust)
 - Adding process to "fix" problems (adds burden, reduces autonomy)
 
 **4. Purpose Connection**
 Reconnect to impact:
+
 - Customer story: Share how recent work helped actual users
 - Business context: "Here's why that crunch mattered, here's the outcome"
 - Roadmap preview: "Here's what we're building and why it matters"
 - Success metrics: Show the numbers, celebrate the wins
 
 Future vision:
+
 - Sustainable pace commitment: "Here's how we'll avoid endless crunch"
 - Staffing plan: "We're hiring to ensure better coverage"
 - Workload transparency: "Here's how we're prioritizing"
 - Check-in commitment: "I'll ask monthly if this is working"
 
 Team identity reinforcement:
+
 - Team narrative: "We're the team that shipped [X] under impossible conditions"
 - Collective accomplishment: "Look what we did together"
 - Growth story: "Here's how we're going to grow from this experience"
 
 **5. Sustainability Plan**
 Ongoing practices (implement over 8 weeks):
+
 - Weekly wins: 5 minutes in team meeting to celebrate accomplishments
 - Peer recognition: Slack channel for shoutouts, monthly highlight
 - 1:1 check-ins: Manager asks about energy/motivation explicitly
 - Workload monitoring: Track hours, intervene if trending up
 
 Monthly pulse:
+
 - Quick survey (3 questions): Energy level, workload sustainability, manager support
 - Team discussion: Share results, discuss actions
 - Action commitment: One thing we'll improve this month
 
 Quarterly reset:
+
 - Team retrospective focused on sustainability
 - Workload planning with realistic capacity
 - Individual career conversations
@@ -196,6 +216,7 @@ Quarterly reset:
 
 **Motivation Monitoring**
 Early warning signs to watch:
+
 - Camera-off increase in video calls
 - Response time delays
 - Reduced participation in discussions
@@ -203,12 +224,14 @@ Early warning signs to watch:
 - Decline in code review activity/quality
 
 Leader behaviors:
+
 - Check in individually, not just in team meetings
 - Notice changes, ask about them
 - Model sustainable work (don't send late-night emails)
 - Be transparent about challenges and plans
 
 Success indicators (3-month horizon):
+
 - No additional voluntary departures
 - Energy levels improved in pulse survey
 - Deadline hit rate returns to normal
@@ -217,6 +240,7 @@ Success indicators (3-month horizon):
 ---
 
 ## Related Prompts
+
 - [Team Building Expert](team-building-expert.md)
 - [Performance Management Expert](performance-management-expert.md)
 - [Remote Team Management Expert](remote-team-management-expert.md)

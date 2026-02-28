@@ -1,6 +1,7 @@
 # Client Presentation Expert
 
 ## Metadata
+
 - **ID**: `communication-client-presentation`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Creates compelling client presentations that engage audiences and drive action through strategic narrative, persuasive structure, and clear calls to action. Helps professionals win business and gain approvals through targeted messaging that addresses decision-maker concerns and builds confident buying decisions.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Pitching new business or proposals to prospects
 - Delivering project updates and recommendations to clients
 - Presenting recommendations requiring client approval
@@ -24,6 +27,7 @@ Creates compelling client presentations that engage audiences and drive action t
 - Responding to RFPs with presentation components
 
 **Anti-Patterns (When NOT to Use):**
+
 - Internal team presentations (use internal communication prompts)
 - Training materials and educational content
 - Technical documentation and specifications
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm pitching our SaaS platform to a Fortune 500 CFO and procurement team. We have a 30-minute slot. I need them to approve a pilot program. They're currently using a competitor but unhappy with costs. We're 20% cheaper with better features. We have case studies showing 40% efficiency gains at similar companies."
 
 ### Output
@@ -115,6 +120,7 @@ Avoid:
 ## PRESENTATION STRUCTURE
 
 ### Narrative Arc
+
 ```
 HOOK: Start with their pain (3 min)
 ├── Cost overruns they're experiencing
@@ -146,6 +152,7 @@ Q&A: Prepared responses (2 min buffer)
 "Cut software costs 20% while gaining capabilities your current solution doesn't provide."
 
 **Supporting Messages:**
+
 1. "Companies like yours are saving $2M+ annually with our platform"
 2. "Implementation takes days, not months - and we guarantee results"
 3. "Zero-risk pilot lets you prove the value before full commitment"
@@ -153,26 +160,31 @@ Q&A: Prepared responses (2 min buffer)
 ## SLIDE CONCEPTS
 
 ### Slide 1: The Cost Problem (Hook)
+
 - Visual: Industry cost trend graph
 - Message: "Enterprise software costs up 35% in 3 years"
 - Talking point: "What if you could reverse that trend?"
 
 ### Slide 2: Hidden Costs of Status Quo
+
 - Visual: Iceberg showing visible vs. hidden costs
 - Message: "Your current solution is costing more than you think"
 - Include: Maintenance, training, lost productivity
 
 ### Slides 3-5: Our Solution
+
 - Visual: Clean product screenshots
 - Benefit-focused bullets (not features)
 - Side-by-side comparison with competitor
 
 ### Slide 6: Case Study - [Similar Company]
+
 - Visual: Before/after metrics
 - Quote from their CFO
 - Key results: 40% efficiency, $2.3M savings
 
 ### Slide 7: The Ask
+
 - Visual: Simple pilot timeline
 - Clear: 90-day pilot, $0 risk
 - Next step: Sign LOI today
@@ -194,6 +206,7 @@ Q&A: Prepared responses (2 min buffer)
 "I'd like to propose a 90-day pilot with your finance team. No upfront cost, no commitment to expand. At the end of 90 days, you'll have hard data on exactly what we can save you."
 
 **Next Steps:**
+
 1. Sign pilot agreement today
 2. Kick-off call next week
 3. Go-live within 30 days
@@ -202,6 +215,7 @@ Q&A: Prepared responses (2 min buffer)
 ---
 
 ## Related Prompts
+
 - [Executive Briefing Expert](executive-briefing-expert.md) - Internal executive presentations
 - [Negotiation Preparation Expert](negotiation-preparation-expert.md) - Prepare for negotiation discussions
 - [Public Speaking Preparation Expert](public-speaking-preparation-expert.md) - Delivery coaching and practice

@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build end-to-end ML pipelines with automated data processing, training,
+date: "2025-01-01"
+description:
+  Build end-to-end ML pipelines with automated data processing, training,
   validation, and deployment using Airflow, Kubeflow, and Jenkins
 layout: skill
 slug: ml-pipeline-automation
 tags:
-- jenkins
-- data
-- deployment
+  - jenkins
+  - data
+  - deployment
 title: ML Pipeline Automation
 ---
 

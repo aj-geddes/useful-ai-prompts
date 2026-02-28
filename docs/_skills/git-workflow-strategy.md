@@ -1,13 +1,14 @@
 ---
 category: version-control
-date: '2025-01-01'
-description: Master Git workflows including GitFlow, GitHub Flow, Trunk-Based Development.
+date: "2025-01-01"
+description:
+  Master Git workflows including GitFlow, GitHub Flow, Trunk-Based Development.
   Configure branches, merge strategies, and collaboration patterns for team environments.
 layout: skill
 slug: git-workflow-strategy
 tags:
-- git
-- github
+  - git
+  - github
 title: git-workflow-strategy
 ---
 
@@ -223,6 +224,7 @@ git push origin -d feature/search-optimization
 ## Best Practices
 
 ### ✅ DO
+
 - Choose workflow matching team size and release cycle
 - Keep feature branches short-lived (< 3 days)
 - Use descriptive branch names with type prefix
@@ -233,6 +235,7 @@ git push origin -d feature/search-optimization
 - Keep commit messages clear and consistent
 
 ### ❌ DON'T
+
 - Commit directly to main branch
 - Create long-lived feature branches
 - Use vague branch names (dev, test, temp)

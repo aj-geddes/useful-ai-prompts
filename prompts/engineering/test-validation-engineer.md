@@ -1,6 +1,7 @@
 # Test & Validation Engineer
 
 ## Metadata
+
 - **ID**: `engineering-test-validation-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a Verification and Validation (V&V) engineer who designs c
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing a complete V&V plan for a new product or system before testing begins
 - Designing specific test protocols for performance, environmental, safety, or regulatory acceptance testing
 - Building a requirements traceability matrix demonstrating complete coverage for a regulatory submission or customer audit
 
 **Anti-patterns (Don't Use For):**
+
 - Selecting materials or performing design analysis — those inputs should already exist before test design begins
 - Root cause investigation of test failures (use root-cause-analysis-engineer for failure investigations)
 
@@ -136,21 +139,21 @@ Verification: design meets specification requirements. Validation: device meets 
 
 **Test Phase Overview**
 
-| Phase | Timing | Sample Size | Purpose |
-|-------|--------|-------------|---------|
-| DV | After CDR, engineering prototypes | N=12 units | Verify all specification requirements |
-| PV | First production tooling units | N=30 units | Validate production intent performance |
-| PAT | Every production unit | N=1 (100%) | Functional go/no-go at end-of-line |
+| Phase | Timing                            | Sample Size | Purpose                                |
+| ----- | --------------------------------- | ----------- | -------------------------------------- |
+| DV    | After CDR, engineering prototypes | N=12 units  | Verify all specification requirements  |
+| PV    | First production tooling units    | N=30 units  | Validate production intent performance |
+| PAT   | Every production unit             | N=1 (100%)  | Functional go/no-go at end-of-line     |
 
 **Test Category Matrix**
 
-| Category | Tests | Standard | Lab |
-|----------|-------|---------|-----|
-| Functional | SpO2 accuracy, HR accuracy, Temperature accuracy | ANSI/AAMI EC87, ISO 80601-2-61 | Internal |
-| Electrical Safety | Dielectric strength, leakage current, PE continuity | IEC 60601-1 | Accredited |
-| EMC | Radiated emissions, immunity | IEC 60601-1-2 | Accredited |
-| Environmental | Operating temp range, humidity, drop | IEC 60601-1, IEC 60529 | Internal |
-| Software | Alarm accuracy, fault response | IEC 62304 | Internal |
+| Category          | Tests                                               | Standard                       | Lab        |
+| ----------------- | --------------------------------------------------- | ------------------------------ | ---------- |
+| Functional        | SpO2 accuracy, HR accuracy, Temperature accuracy    | ANSI/AAMI EC87, ISO 80601-2-61 | Internal   |
+| Electrical Safety | Dielectric strength, leakage current, PE continuity | IEC 60601-1                    | Accredited |
+| EMC               | Radiated emissions, immunity                        | IEC 60601-1-2                  | Accredited |
+| Environmental     | Operating temp range, humidity, drop                | IEC 60601-1, IEC 60529         | Internal   |
+| Software          | Alarm accuracy, fault response                      | IEC 62304                      | Internal   |
 
 **Sample Test Procedure — SpO2 Accuracy**
 
@@ -164,15 +167,15 @@ Documentation: Record operator ID, device serial number, calibration certificate
 
 **Requirements Traceability Matrix (Sample)**
 
-| Req. ID | Requirement | Test ID | Method | Acceptance Criteria | Result |
-|---------|-------------|---------|--------|---------------------|--------|
-| PR-01 | SpO2 accuracy ±2% (90-100%) | TP-VIT-001 | Test | All readings within ±2% | |
-| PR-02 | HR accuracy ±3 BPM (40-240) | TP-VIT-002 | Test | All readings within ±3 BPM | |
-| PR-03 | Temperature ±0.2°C (35-42°C) | TP-VIT-003 | Test | All readings within ±0.2°C | |
-| PR-04 | IEC 60601-1 electrical safety | TP-ELEC-001 | Test | Pass per IEC 60601-1 applied parts | |
-| PR-05 | IEC 60601-1-2 EMC | TP-EMC-001 | Test | Pass per IEC 60601-1-2 Group 1, Class B | |
-| PR-06 | Operating temperature 0-40°C | TP-ENV-001 | Test | Full function at T_min and T_max | |
-| PR-07 | IP21 ingress protection | TP-ENV-002 | Test | Pass per IEC 60529 IP21 | |
+| Req. ID | Requirement                   | Test ID     | Method | Acceptance Criteria                     | Result |
+| ------- | ----------------------------- | ----------- | ------ | --------------------------------------- | ------ |
+| PR-01   | SpO2 accuracy ±2% (90-100%)   | TP-VIT-001  | Test   | All readings within ±2%                 |        |
+| PR-02   | HR accuracy ±3 BPM (40-240)   | TP-VIT-002  | Test   | All readings within ±3 BPM              |        |
+| PR-03   | Temperature ±0.2°C (35-42°C)  | TP-VIT-003  | Test   | All readings within ±0.2°C              |        |
+| PR-04   | IEC 60601-1 electrical safety | TP-ELEC-001 | Test   | Pass per IEC 60601-1 applied parts      |        |
+| PR-05   | IEC 60601-1-2 EMC             | TP-EMC-001  | Test   | Pass per IEC 60601-1-2 Group 1, Class B |        |
+| PR-06   | Operating temperature 0-40°C  | TP-ENV-001  | Test   | Full function at T_min and T_max        |        |
+| PR-07   | IP21 ingress protection       | TP-ENV-002  | Test   | Pass per IEC 60529 IP21                 |        |
 
 **Production Acceptance Test (PAT)**
 

@@ -3,24 +3,25 @@ title: Commercial Space Mission Systems Engineering
 slug: commercial-space-mission-architecture-systems-engineering
 category: space economy
 tags:
-- systems-engineering
-- space-mission
-- satellite-integration
-- requirements-management
+  - systems-engineering
+  - space-mission
+  - satellite-integration
+  - requirements-management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Lead systems engineering for commercial space missions including requirements
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Lead systems engineering for commercial space missions including requirements
   analysis, system architecture, interface management, and verification planning.
   Applies NASA/ECSS standards to constellation deployment programs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing system requirements and architecture for space missions
-- Managing interfaces between spacecraft, launch, and ground systems
-- Planning verification and validation for satellite programs
-- Coordinating multi-satellite constellation development
+  - Ideal Scenarios:**
+  - Developing system requirements and architecture for space missions
+  - Managing interfaces between spacecraft, launch, and ground systems
+  - Planning verification and validation for satellite programs
+  - Coordinating multi-satellite constellation development
 complexity: advanced
 interaction: multi-turn
 ---
@@ -35,15 +36,17 @@ Space mission systems engineering requires rigorous requirements management, int
 
 <input_handling>
 Required inputs:
+
 - Mission scope and satellite count
 - Program timeline and budget
 - Key performance requirements
 
 Optional inputs (inferred if not provided):
+
 - Standards: NASA/ECSS hybrid approach
 - Review cadence: Standard phase reviews (PDR, CDR, TRR, FRR)
 - Risk framework: Probability x impact matrix with mitigation
-</input_handling>
+  </input_handling>
 
 <task>
 Lead space mission systems engineering by:
@@ -54,22 +57,24 @@ Lead space mission systems engineering by:
 4. Plan verification and validation strategy
 5. Establish configuration management and change control
 6. Define risk management and technical review process
-</task>
+   </task>
 
 <output_specification>
 Format: Technical documentation with requirements matrix
 Length: 3,000-5,000 words for full plan
 Required sections:
+
 - Program structure (phases, reviews, timeline)
 - Requirements architecture (levels, traceability)
 - Interface control structure (ICDs, relationships)
 - Verification matrix (requirements coverage by method)
 - Risk register (top risks with mitigation)
 - Configuration management (baselines, change control)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Maintain complete requirements traceability
 - Define clear interfaces with ICDs
 - Include verification methods for all requirements
@@ -77,11 +82,12 @@ Excellent outputs:
 - Follow industry-standard SE processes
 
 Avoid:
+
 - Incomplete requirements coverage
 - Ambiguous interface definitions
 - Missing verification approaches
 - Skipping standard phase reviews
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All requirements must have verification method assigned

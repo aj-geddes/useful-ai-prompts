@@ -1,6 +1,7 @@
 # Full Stack Developer Architect
 
 ## Metadata
+
 - **ID**: `fullstack-developer-architect`
 - **Version**: 1.0.0
 - **Category**: Technical/Software Engineering
@@ -18,6 +19,7 @@ Designs and architects full-stack applications from concept to deployment with p
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Architecting new full-stack applications from scratch
 - Selecting technology stacks for specific project requirements
 - Designing APIs and database schemas for new features
@@ -25,6 +27,7 @@ Designs and architects full-stack applications from concept to deployment with p
 - Technical design documents for team alignment
 
 **Anti-patterns (Don't Use For):**
+
 - Simple static websites without backend requirements
 - Single-page bug fixes or minor feature additions
 - Infrastructure-only projects without application layer
@@ -129,19 +132,19 @@ Team: 2 developers (1 frontend-focused, 1 backend-focused)
 
 **Technology Stack Selection**
 
-| Layer | Technology | Rationale |
-|-------|------------|-----------|
-| Frontend | Next.js 14 + TypeScript | SSR for SEO, React ecosystem, App Router for modern patterns |
-| UI Components | shadcn/ui + Tailwind CSS | Accessible components, rapid development, customizable |
-| State Management | Zustand + React Query | Lightweight, excellent caching, real-time sync support |
-| Backend | Node.js + Express | JavaScript consistency, fast development, team familiarity |
-| API Layer | tRPC | End-to-end type safety, reduces boilerplate |
-| Database | PostgreSQL | Relational data model, ACID transactions, proven scale |
-| Real-time | Socket.io | WebSocket with fallbacks, room-based broadcasting |
-| Cache/Sessions | Redis | Fast sessions, real-time pub/sub support |
-| File Storage | Cloudinary | CDN delivery, image optimization, generous free tier |
-| Auth | NextAuth.js | OAuth providers, session management, security best practices |
-| Hosting | Vercel (frontend) + Railway (backend) | Cost-effective, easy scaling, minimal DevOps |
+| Layer            | Technology                            | Rationale                                                    |
+| ---------------- | ------------------------------------- | ------------------------------------------------------------ |
+| Frontend         | Next.js 14 + TypeScript               | SSR for SEO, React ecosystem, App Router for modern patterns |
+| UI Components    | shadcn/ui + Tailwind CSS              | Accessible components, rapid development, customizable       |
+| State Management | Zustand + React Query                 | Lightweight, excellent caching, real-time sync support       |
+| Backend          | Node.js + Express                     | JavaScript consistency, fast development, team familiarity   |
+| API Layer        | tRPC                                  | End-to-end type safety, reduces boilerplate                  |
+| Database         | PostgreSQL                            | Relational data model, ACID transactions, proven scale       |
+| Real-time        | Socket.io                             | WebSocket with fallbacks, room-based broadcasting            |
+| Cache/Sessions   | Redis                                 | Fast sessions, real-time pub/sub support                     |
+| File Storage     | Cloudinary                            | CDN delivery, image optimization, generous free tier         |
+| Auth             | NextAuth.js                           | OAuth providers, session management, security best practices |
+| Hosting          | Vercel (frontend) + Railway (backend) | Cost-effective, easy scaling, minimal DevOps                 |
 
 **System Architecture**
 
@@ -251,15 +254,15 @@ CREATE INDEX idx_team_members_user ON team_members(user_id);
 
 ```typescript
 // Server-side Socket.io setup
-import { Server } from 'socket.io';
+import { Server } from "socket.io";
 
 const io = new Server(httpServer, {
-  cors: { origin: process.env.FRONTEND_URL }
+  cors: { origin: process.env.FRONTEND_URL },
 });
 
-io.on('connection', (socket) => {
+io.on("connection", (socket) => {
   // Join team room on connection
-  socket.on('join_team', async (teamId: string) => {
+  socket.on("join_team", async (teamId: string) => {
     // Verify membership before joining
     const isMember = await verifyTeamMembership(socket.userId, teamId);
     if (isMember) {
@@ -268,11 +271,11 @@ io.on('connection', (socket) => {
   });
 
   // Broadcast task updates to team
-  socket.on('task_update', async (data: TaskUpdate) => {
+  socket.on("task_update", async (data: TaskUpdate) => {
     const task = await updateTask(data.taskId, data.changes);
-    io.to(`team:${task.teamId}`).emit('task_changed', {
-      type: 'updated',
-      task: task
+    io.to(`team:${task.teamId}`).emit("task_changed", {
+      type: "updated",
+      task: task,
     });
   });
 });
@@ -282,14 +285,14 @@ function useTaskSubscription(teamId: string) {
   const queryClient = useQueryClient();
 
   useEffect(() => {
-    socket.emit('join_team', teamId);
+    socket.emit("join_team", teamId);
 
-    socket.on('task_changed', (data) => {
-      queryClient.invalidateQueries(['tasks', data.task.projectId]);
+    socket.on("task_changed", (data) => {
+      queryClient.invalidateQueries(["tasks", data.task.projectId]);
     });
 
     return () => {
-      socket.off('task_changed');
+      socket.off("task_changed");
     };
   }, [teamId]);
 }
@@ -297,23 +300,23 @@ function useTaskSubscription(teamId: string) {
 
 **Infrastructure Cost Estimate**
 
-| Service | Tier | Monthly Cost | Notes |
-|---------|------|--------------|-------|
-| Vercel | Pro | $20 | Frontend hosting, edge functions |
-| Railway | Starter | $5 + usage (~$25) | API server, PostgreSQL, Redis |
-| Cloudinary | Free tier | $0 | 25GB storage, 25GB bandwidth |
-| Domain | Annual | ~$1/month | Via Cloudflare or similar |
-| **Total** | | **~$50-60/month** | Scales with usage |
+| Service    | Tier      | Monthly Cost      | Notes                            |
+| ---------- | --------- | ----------------- | -------------------------------- |
+| Vercel     | Pro       | $20               | Frontend hosting, edge functions |
+| Railway    | Starter   | $5 + usage (~$25) | API server, PostgreSQL, Redis    |
+| Cloudinary | Free tier | $0                | 25GB storage, 25GB bandwidth     |
+| Domain     | Annual    | ~$1/month         | Via Cloudflare or similar        |
+| **Total**  |           | **~$50-60/month** | Scales with usage                |
 
 **Development Roadmap**
 
-| Phase | Timeline | Deliverables | Success Criteria |
-|-------|----------|--------------|------------------|
-| Foundation | Weeks 1-3 | Auth, teams, projects, basic tasks | Users can create teams and add tasks |
-| Core MVP | Weeks 4-7 | Real-time sync, assignments, due dates | Teams can collaborate in real-time |
-| Polish | Weeks 8-10 | Notifications, file uploads, mobile responsive | Feature-complete MVP |
-| Launch | Weeks 11-12 | Performance optimization, monitoring, soft launch | 10 beta teams onboarded |
-| Integrations | Weeks 13-16 | Slack, Google Calendar integrations | Integration adoption by 30% of teams |
+| Phase        | Timeline    | Deliverables                                      | Success Criteria                     |
+| ------------ | ----------- | ------------------------------------------------- | ------------------------------------ |
+| Foundation   | Weeks 1-3   | Auth, teams, projects, basic tasks                | Users can create teams and add tasks |
+| Core MVP     | Weeks 4-7   | Real-time sync, assignments, due dates            | Teams can collaborate in real-time   |
+| Polish       | Weeks 8-10  | Notifications, file uploads, mobile responsive    | Feature-complete MVP                 |
+| Launch       | Weeks 11-12 | Performance optimization, monitoring, soft launch | 10 beta teams onboarded              |
+| Integrations | Weeks 13-16 | Slack, Google Calendar integrations               | Integration adoption by 30% of teams |
 
 **Security Checklist**
 

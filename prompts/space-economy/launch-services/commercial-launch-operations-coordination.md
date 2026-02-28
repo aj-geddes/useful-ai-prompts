@@ -1,6 +1,7 @@
 # Commercial Launch Operations Coordination
 
 ## Metadata
+
 - **ID**: `space-launch-ops-coordination`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Launch Services
@@ -18,6 +19,7 @@ This prompt enables expert coordination of multi-mission commercial launch opera
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Coordinating high-volume launch operations (20+ annually)
 - Managing multi-customer launch campaigns with diverse payload types
 - Optimizing launch range utilization and scheduling across multiple sites
@@ -25,6 +27,7 @@ This prompt enables expert coordination of multi-mission commercial launch opera
 - Developing customer service frameworks for launch services
 
 **Anti-Patterns (Don't Use When):**
+
 - Planning single, one-off launches without recurring operations
 - Focusing on satellite development rather than launch services
 - Managing post-launch mission operations
@@ -116,6 +119,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We're operating 24 launches annually across Falcon 9 and Falcon Heavy, serving satellite, cargo, and crewed missions. Need comprehensive operations coordination approach with supply chain optimization and 98%+ schedule reliability target."
 
 ### Output
@@ -124,68 +128,68 @@ Responses must avoid:
 
 **Operations Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Annual Launches | 24 |
-| Vehicle Types | Falcon 9, Falcon Heavy |
-| Mission Types | Satellite, cargo, crew |
-| Launch Sites | KSC LC-39A, VSFB SLC-4E, Boca Chica |
-| Schedule Reliability Target | 98%+ |
+| Parameter                   | Specification                       |
+| --------------------------- | ----------------------------------- |
+| Annual Launches             | 24                                  |
+| Vehicle Types               | Falcon 9, Falcon Heavy              |
+| Mission Types               | Satellite, cargo, crew              |
+| Launch Sites                | KSC LC-39A, VSFB SLC-4E, Boca Chica |
+| Schedule Reliability Target | 98%+                                |
 
 **Annual Launch Schedule**
 
-| Quarter | Launches | Vehicle Mix | Mission Types | Primary Site |
-|---------|----------|-------------|---------------|--------------|
-| Q1 | 6 | 5 F9, 1 FH | 4 satellite, 1 cargo, 1 crew | KSC (4), VSFB (2) |
-| Q2 | 6 | 5 F9, 1 FH | 5 satellite, 1 cargo | KSC (3), VSFB (3) |
-| Q3 | 6 | 6 F9 | 4 satellite, 2 cargo | KSC (4), VSFB (2) |
-| Q4 | 6 | 5 F9, 1 FH | 4 satellite, 1 cargo, 1 crew | KSC (4), VSFB (2) |
+| Quarter | Launches | Vehicle Mix | Mission Types                | Primary Site      |
+| ------- | -------- | ----------- | ---------------------------- | ----------------- |
+| Q1      | 6        | 5 F9, 1 FH  | 4 satellite, 1 cargo, 1 crew | KSC (4), VSFB (2) |
+| Q2      | 6        | 5 F9, 1 FH  | 5 satellite, 1 cargo         | KSC (3), VSFB (3) |
+| Q3      | 6        | 6 F9        | 4 satellite, 2 cargo         | KSC (4), VSFB (2) |
+| Q4      | 6        | 5 F9, 1 FH  | 4 satellite, 1 cargo, 1 crew | KSC (4), VSFB (2) |
 
 **Range Coordination Framework**
 
-| Site | Annual Capacity | Coordination Partners | Key Protocols |
-|------|-----------------|----------------------|---------------|
-| KSC LC-39A | 14 launches | NASA, 45th Space Wing | Crewed mission priority, shared infrastructure |
-| VSFB SLC-4E | 8 launches | Space Launch Delta 30 | Polar/SSO missions, range scheduling |
-| Boca Chica | 2 launches | FAA, USCG, Texas Parks | Environmental windows, community coordination |
+| Site        | Annual Capacity | Coordination Partners  | Key Protocols                                  |
+| ----------- | --------------- | ---------------------- | ---------------------------------------------- |
+| KSC LC-39A  | 14 launches     | NASA, 45th Space Wing  | Crewed mission priority, shared infrastructure |
+| VSFB SLC-4E | 8 launches      | Space Launch Delta 30  | Polar/SSO missions, range scheduling           |
+| Boca Chica  | 2 launches      | FAA, USCG, Texas Parks | Environmental windows, community coordination  |
 
 **Supply Chain Strategy**
 
-| Category | Sourcing Strategy | Lead Time | Redundancy Approach |
-|----------|------------------|-----------|---------------------|
-| Engines | In-house production | 12 months | 6-month inventory buffer |
-| Avionics | Dual qualified sources | 6 months | 2 suppliers minimum |
-| Propellants | Multi-vendor contracts | 2 weeks | 3 suppliers per site |
-| GSE Components | Qualified vendor network | 3 months | Spare inventory + expedite contracts |
+| Category       | Sourcing Strategy        | Lead Time | Redundancy Approach                  |
+| -------------- | ------------------------ | --------- | ------------------------------------ |
+| Engines        | In-house production      | 12 months | 6-month inventory buffer             |
+| Avionics       | Dual qualified sources   | 6 months  | 2 suppliers minimum                  |
+| Propellants    | Multi-vendor contracts   | 2 weeks   | 3 suppliers per site                 |
+| GSE Components | Qualified vendor network | 3 months  | Spare inventory + expedite contracts |
 
 **Safety Management System**
 
-| Element | Standard | Performance Metric | Review Frequency |
-|---------|----------|-------------------|------------------|
-| Range Safety | RSG/FAA Part 450 | 100% compliance | Per launch |
-| Ground Safety | OSHA + Internal | Zero lost-time injuries | Monthly |
-| Mission Assurance | ISO 9001/AS9100 | 100% process compliance | Quarterly |
-| Emergency Response | Site-specific plans | Quarterly drill completion | Quarterly |
+| Element            | Standard            | Performance Metric         | Review Frequency |
+| ------------------ | ------------------- | -------------------------- | ---------------- |
+| Range Safety       | RSG/FAA Part 450    | 100% compliance            | Per launch       |
+| Ground Safety      | OSHA + Internal     | Zero lost-time injuries    | Monthly          |
+| Mission Assurance  | ISO 9001/AS9100     | 100% process compliance    | Quarterly        |
+| Emergency Response | Site-specific plans | Quarterly drill completion | Quarterly        |
 
 **Customer Service Model**
 
-| Touchpoint | Frequency | Responsible Party | Deliverable |
-|------------|-----------|------------------|-------------|
-| Manifest Review | Monthly | Mission Manager | Schedule confirmation |
-| Technical Coordination | Bi-weekly | Integration Lead | Interface status |
-| Status Update | Weekly | Customer POC | Progress report |
+| Touchpoint              | Frequency            | Responsible Party   | Deliverable            |
+| ----------------------- | -------------------- | ------------------- | ---------------------- |
+| Manifest Review         | Monthly              | Mission Manager     | Schedule confirmation  |
+| Technical Coordination  | Bi-weekly            | Integration Lead    | Interface status       |
+| Status Update           | Weekly               | Customer POC        | Progress report        |
 | Launch Campaign Support | 24/7 during campaign | Operations Director | Real-time coordination |
-| Post-Mission Debrief | L+7 days | Mission Manager | Performance summary |
+| Post-Mission Debrief    | L+7 days             | Mission Manager     | Performance summary    |
 
 **Performance Metrics Dashboard**
 
-| Metric | Target | Tracking | Accountability |
-|--------|--------|----------|----------------|
-| Schedule Reliability | 98% | Per launch | Launch Director |
-| Mission Success | 100% | Per launch | Chief Engineer |
-| Customer Satisfaction | >95% NPS | Post-mission survey | VP Customer Success |
-| Cost per Launch | 5% YoY reduction | Quarterly | CFO |
-| Safety Incidents | Zero | Continuous | VP Safety |
+| Metric                | Target           | Tracking            | Accountability      |
+| --------------------- | ---------------- | ------------------- | ------------------- |
+| Schedule Reliability  | 98%              | Per launch          | Launch Director     |
+| Mission Success       | 100%             | Per launch          | Chief Engineer      |
+| Customer Satisfaction | >95% NPS         | Post-mission survey | VP Customer Success |
+| Cost per Launch       | 5% YoY reduction | Quarterly           | CFO                 |
+| Safety Incidents      | Zero             | Continuous          | VP Safety           |
 
 ---
 

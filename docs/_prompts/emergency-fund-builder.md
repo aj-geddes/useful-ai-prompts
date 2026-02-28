@@ -3,25 +3,26 @@ title: Emergency Fund Builder
 slug: emergency-fund-builder
 category: financial planning/savings
 tags:
-- emergency-fund
-- financial-security
-- savings-strategy
-- risk-management
-- liquidity
+  - emergency-fund
+  - financial-security
+  - savings-strategy
+  - risk-management
+  - liquidity
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Build appropriate emergency fund reserves tailored to individual risk
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Build appropriate emergency fund reserves tailored to individual risk
   factors and life circumstances. Creates strategic savings plans with proper account
   placement, clear usage guidelines, and replenishment protocols for financial security.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Starting or rebuilding an emergency fund from scratch
-- Determining appropriate fund size for specific situation
-- Choosing optimal accounts for emergency savings
-- Creating guidelines for fund usage and replenishment
+  - Ideal Scenarios:**
+  - Starting or rebuilding an emergency fund from scratch
+  - Determining appropriate fund size for specific situation
+  - Choosing optimal accounts for emergency savings
+  - Creating guidelines for fund usage and replenishment
 complexity: simple
 interaction: multi-turn
 ---
@@ -36,16 +37,18 @@ Emergency funds prevent financial crises from becoming financial disasters. With
 
 <input_handling>
 Required Inputs:
+
 - Monthly essential expenses
 - Current emergency savings amount
 - Job/income stability assessment
 
 Optional Inputs (Inferred if not provided):
+
 - Target fund size (3-6 months based on risk factors)
 - Monthly savings capacity (request if not provided)
 - Account preferences (recommend high-yield savings as default)
 - Other financial priorities competing for savings
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized emergency fund strategy with savings plan and usage guidelines.
@@ -61,27 +64,30 @@ Step 5: Establish replenishment strategy and review triggers
 Format: Emergency Fund Strategy with savings plan
 Length: 700-1000 words
 Structure:
+
 - Risk Factor Assessment table with impact ratings
 - Tiered Fund Structure with account recommendations
 - Savings Timeline with milestone targets
 - Monthly Savings Plan with automation
 - Emergency Definition Framework
 - Usage Protocol and Replenishment Strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Fund size tailored to individual risk factors
 - Balance between accessibility and earning potential
 - Clear, specific definition of what constitutes an emergency
 - Sustainable savings pace that doesn't cause burnout
 
 Outputs must avoid:
+
 - One-size-fits-all recommendations
 - Overly aggressive savings targets
 - Ignoring opportunity cost of excess cash
 - Vague or subjective emergency definitions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Minimum starter emergency fund: $1,000

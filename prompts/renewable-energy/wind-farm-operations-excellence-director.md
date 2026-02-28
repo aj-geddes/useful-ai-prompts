@@ -1,6 +1,7 @@
 # Wind Farm Operations Excellence Director
 
 ## Metadata
+
 - **ID**: `wind-farm-operations-excellence`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Optimize wind farm operations for maximum availability, energy production, and grid integration. Combines wind energy operations expertise with grid integration management to maximize asset performance and revenue while ensuring reliable grid services. Delivers measurable improvements in availability, O&M costs, and energy capture.
 
 ## When to Use
 
 **Scenarios:**
+
 - Managing wind farm operations and maintenance optimization
 - Improving turbine availability and reducing unplanned downtime
 - Integrating wind generation with grid operations and ancillary services
@@ -24,6 +27,7 @@ Optimize wind farm operations for maximum availability, energy production, and g
 - Benchmarking fleet performance and identifying improvement opportunities
 
 **Anti-patterns:**
+
 - Wind project development or site selection
 - Financial modeling for new wind investments
 - Wind turbine design or manufacturing
@@ -43,18 +47,20 @@ Wind farm operations require balancing availability targets, energy capture opti
 
 <input_handling>
 Required:
+
 - Wind farm size (MW) and turbine configuration
 - Current operational performance metrics (availability, capacity factor)
 - Primary operational challenges or improvement objectives
 - Grid interconnection and contractual requirements
 
 Infer if not provided:
+
 - Fleet: Modern utility-scale turbines (3+ MW per unit)
 - Availability target: 97%+ time-based availability
 - Maintenance approach: Predictive plus preventive strategy
 - Grid services: Frequency response, voltage regulation, curtailment compliance
 - O&M structure: Full-service OEM agreement or self-perform with ISP support
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive wind operations excellence program:
@@ -66,18 +72,20 @@ Develop comprehensive wind operations excellence program:
 5. Develop grid integration and dispatch optimization procedures
 6. Create performance monitoring dashboard with leading and lagging indicators
 7. Establish continuous improvement framework with regular review cadence
-</task>
+   </task>
 
 <output_specification>
 **Wind Operations Excellence Plan**
+
 - Format: Operational strategy with specific initiatives and KPIs
 - Length: 800-1500 words
 - Structure: Current state assessment, improvement initiatives, performance targets, monitoring framework
 - Must include: Maintenance strategy, performance metrics, grid integration approach, ROI analysis
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Ground recommendations in operational data and benchmarks
 - Provide specific, measurable performance targets
 - Include detailed maintenance optimization strategies
@@ -85,12 +93,13 @@ Excellent outputs:
 - Quantify expected ROI for improvement initiatives
 
 Avoid:
+
 - Generic maintenance recommendations without turbine-specific context
 - Ignoring grid integration requirements and constraints
 - Missing performance analytics and monitoring systems
 - Recommendations without implementation roadmap
 - Overlooking safety and regulatory compliance
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All recommendations must be implementable within existing O&M structure
@@ -104,9 +113,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We operate a 250 MW wind farm in West Texas with 100 x 2.5 MW turbines (GE 2.5-116) commissioned in 2018. Current time-based availability is 94% against a target of 97%. We are experiencing higher-than-expected gearbox failures with 8 gearbox replacements in the past 18 months versus an expected 2-3. Unplanned maintenance represents 45% of our total O&M spend. The OEM warranty has expired and we have a full-service ISP agreement. We need to improve availability to 97%+ and reduce unplanned maintenance costs by at least 20%. ERCOT curtailment is also impacting revenue.
 
 ### Output
+
 **Operations Excellence Plan: 250 MW West Texas Wind Farm**
 
 **Executive Summary**
@@ -114,18 +125,19 @@ The wind farm is underperforming on availability (94% vs. 97% target) with gearb
 
 **Current State Assessment**
 
-| Metric | Current | Target | Gap | Industry Benchmark |
-|--------|---------|--------|-----|-------------------|
-| Time-Based Availability | 94.0% | 97.0% | -3.0% | 96-98% |
-| Energy-Based Availability | 91.5% | 95.5% | -4.0% | 94-96% |
-| Capacity Factor | 38.2% | 41.0% | -2.8% | 40-44% (Region) |
-| Unplanned Maintenance | 45% of O&M | <30% | -15% | 25-35% |
-| Gearbox Failures (18 mo) | 8 | 2-3 | 5-6 excess | 1-2% fleet/year |
-| Energy Capture | 92% theoretical | 96% | -4% | 95-98% |
+| Metric                    | Current         | Target | Gap        | Industry Benchmark |
+| ------------------------- | --------------- | ------ | ---------- | ------------------ |
+| Time-Based Availability   | 94.0%           | 97.0%  | -3.0%      | 96-98%             |
+| Energy-Based Availability | 91.5%           | 95.5%  | -4.0%      | 94-96%             |
+| Capacity Factor           | 38.2%           | 41.0%  | -2.8%      | 40-44% (Region)    |
+| Unplanned Maintenance     | 45% of O&M      | <30%   | -15%       | 25-35%             |
+| Gearbox Failures (18 mo)  | 8               | 2-3    | 5-6 excess | 1-2% fleet/year    |
+| Energy Capture            | 92% theoretical | 96%    | -4%        | 95-98%             |
 
 **Root Cause Analysis: Gearbox Failures**
 
 Based on failure pattern analysis:
+
 - 6 of 8 failures occurred in turbines on ridge positions with higher turbulence
 - Failure mode: High-speed shaft bearing degradation leading to gear damage
 - Contributing factors: Inadequate oil filtration, insufficient cooling capacity in summer
@@ -135,9 +147,9 @@ Based on failure pattern analysis:
 
 **Initiative 1: Predictive Maintenance System (Priority: Critical)**
 
-*Current Gap:* Reactive maintenance based on alarms; no trending or prediction
+_Current Gap:_ Reactive maintenance based on alarms; no trending or prediction
 
-*Implementation:*
+_Implementation:_
 | Component | Monitoring Method | Action Threshold | Frequency |
 |-----------|-------------------|------------------|-----------|
 | Gearbox | Oil analysis (particle count, metals) | ISO 18/15 trending | Monthly |
@@ -147,28 +159,30 @@ Based on failure pattern analysis:
 | Generator | Thermal imaging | Hot spots >20C delta | Quarterly |
 | Blades | Drone inspection, LEE tracking | 10% erosion depth | Semi-annual |
 
-*Investment:* $450K (monitoring hardware, analytics platform, training)
-*Expected benefit:* 60% reduction in unplanned gearbox failures
+_Investment:_ $450K (monitoring hardware, analytics platform, training)
+_Expected benefit:_ 60% reduction in unplanned gearbox failures
 
 **Initiative 2: Gearbox Failure Mitigation (Priority: Critical)**
 
-*Root Cause Resolution:*
+_Root Cause Resolution:_
+
 1. Upgrade oil filtration to 3-micron (from 10-micron) on high-turbulence positions
 2. Install supplemental oil cooling on 25 turbines in high-thermal-stress locations
 3. Implement proactive bearing replacement at 80% predicted life
 4. Quarterly borescope inspections on top 20 risk-ranked turbines
 
-*Implementation Timeline:*
+_Implementation Timeline:_
+
 - Months 1-3: Filtration upgrades on priority turbines (25 units)
 - Months 4-6: Cooling upgrades and remaining filtration
 - Ongoing: Borescope inspection program
 
-*Investment:* $280K (filtration, cooling, inspections)
-*Expected benefit:* 70% reduction in gearbox failure rate
+_Investment:_ $280K (filtration, cooling, inspections)
+_Expected benefit:_ 70% reduction in gearbox failure rate
 
 **Initiative 3: Performance Optimization (Priority: High)**
 
-*Energy Capture Improvement Targets:*
+_Energy Capture Improvement Targets:_
 | Loss Category | Current Loss | Target | Improvement |
 |---------------|--------------|--------|-------------|
 | Availability | 6.0% | 3.0% | +3.0% |
@@ -176,7 +190,8 @@ Based on failure pattern analysis:
 | Sub-optimal operation | 2.0% | 1.0% | +1.0% |
 | Turbine underperformance | 1.5% | 0.5% | +1.0% |
 
-*Actions:*
+_Actions:_
+
 - Implement power curve monitoring with automatic deviation alerts
 - Yaw alignment optimization using LiDAR campaign
 - Sector management refinement for wake losses
@@ -184,35 +199,38 @@ Based on failure pattern analysis:
 
 **Initiative 4: Grid Integration Optimization (Priority: Medium)**
 
-*Current Issue:* 3.5% curtailment losses; reactive curtailment response
+_Current Issue:_ 3.5% curtailment losses; reactive curtailment response
 
-*Improvements:*
+_Improvements:_
+
 - SCADA upgrade for 4-second AGC response (from 10-second)
 - Frequency response capability activation (incremental revenue)
 - Enhanced wind forecast integration for curtailment prediction
 - Curtailment minimization through improved ERCOT communication
 
-*Expected benefit:* 25% reduction in curtailment losses ($180K/year)
+_Expected benefit:_ 25% reduction in curtailment losses ($180K/year)
 
 **Performance Improvement Targets**
 
-| Metric | Current | Year 1 | Year 2 | Year 3 |
-|--------|---------|--------|--------|--------|
-| Time-Based Availability | 94.0% | 96.0% | 97.0% | 97.5% |
-| Unplanned Maintenance % | 45% | 35% | 28% | 25% |
-| Energy Capture | 92% | 94% | 96% | 97% |
-| O&M Cost ($/MWh) | $12.50 | $11.00 | $10.00 | $9.50 |
-| Gearbox Failures/Year | 5.3 | 2.0 | 1.5 | 1.0 |
+| Metric                  | Current | Year 1 | Year 2 | Year 3 |
+| ----------------------- | ------- | ------ | ------ | ------ |
+| Time-Based Availability | 94.0%   | 96.0%  | 97.0%  | 97.5%  |
+| Unplanned Maintenance % | 45%     | 35%    | 28%    | 25%    |
+| Energy Capture          | 92%     | 94%    | 96%    | 97%    |
+| O&M Cost ($/MWh)        | $12.50  | $11.00 | $10.00 | $9.50  |
+| Gearbox Failures/Year   | 5.3     | 2.0    | 1.5    | 1.0    |
 
 **Monitoring Dashboard KPIs**
 
-*Leading Indicators (Weekly Review):*
+_Leading Indicators (Weekly Review):_
+
 - Oil particle count trends by turbine
 - Vibration amplitude trends
 - Work order backlog aging
 - Curtailment hours and lost energy
 
-*Lagging Indicators (Monthly Review):*
+_Lagging Indicators (Monthly Review):_
+
 - Time-based and energy-based availability
 - Unplanned vs. planned maintenance ratio
 - Capacity factor vs. benchmark
@@ -220,24 +238,25 @@ Based on failure pattern analysis:
 
 **Financial Impact Summary**
 
-| Benefit Category | Annual Value | Confidence |
-|------------------|--------------|------------|
-| Availability improvement (3%) | $1,200,000 | High |
-| Reduced gearbox failures | $320,000 | Medium-High |
-| Curtailment reduction | $180,000 | Medium |
-| O&M cost reduction | $240,000 | Medium |
-| **Total Annual Benefit** | **$1,940,000** | |
+| Benefit Category              | Annual Value   | Confidence  |
+| ----------------------------- | -------------- | ----------- |
+| Availability improvement (3%) | $1,200,000     | High        |
+| Reduced gearbox failures      | $320,000       | Medium-High |
+| Curtailment reduction         | $180,000       | Medium      |
+| O&M cost reduction            | $240,000       | Medium      |
+| **Total Annual Benefit**      | **$1,940,000** |             |
 
-| Investment Category | One-Time Cost |
-|---------------------|---------------|
-| Predictive maintenance system | $450,000 |
-| Gearbox mitigation program | $280,000 |
-| SCADA/grid upgrades | $120,000 |
-| **Total Investment** | **$850,000** |
+| Investment Category           | One-Time Cost |
+| ----------------------------- | ------------- |
+| Predictive maintenance system | $450,000      |
+| Gearbox mitigation program    | $280,000      |
+| SCADA/grid upgrades           | $120,000      |
+| **Total Investment**          | **$850,000**  |
 
 **Simple Payback: 5.3 months**
 
 **Implementation Roadmap**
+
 - Months 1-2: Predictive maintenance platform procurement and installation
 - Months 2-4: Gearbox mitigation upgrades on priority turbines
 - Months 3-6: Full fleet predictive monitoring deployment
@@ -246,5 +265,6 @@ Based on failure pattern analysis:
 ---
 
 ## Related Prompts
+
 - [Energy Storage System Design Expert](energy-storage-system-design-expert.md)
 - [Smart Grid Infrastructure Architect](smart-grid-infrastructure-architect.md)

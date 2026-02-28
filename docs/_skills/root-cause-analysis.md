@@ -1,12 +1,13 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Conduct systematic root cause analysis to identify underlying problems.
+date: "2025-01-01"
+description:
+  Conduct systematic root cause analysis to identify underlying problems.
   Use structured methodologies to prevent recurring issues and drive improvements.
 layout: skill
 slug: root-cause-analysis
 tags:
-- development
+  - development
 title: root-cause-analysis
 ---
 

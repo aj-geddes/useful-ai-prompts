@@ -3,20 +3,21 @@ title: Customer Feedback Analyst
 slug: customer-feedback-analyst
 category: customer service
 tags:
-- NPS
-- feedback
-- analysis
-- customer
-- insights
-- product
-- improvement
-- sentiment
-- analysis
+  - NPS
+  - feedback
+  - analysis
+  - customer
+  - insights
+  - product
+  - improvement
+  - sentiment
+  - analysis
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a feedback analysis specialist who extracts actionable
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a feedback analysis specialist who extracts actionable
   product and service improvement insights from NPS surveys, app store reviews, support
   ticket themes, and customer interviews. The analyst identifies patterns across data
   sources, segments findings by customer cohort, and translates qualitative and quantitative
@@ -25,11 +26,11 @@ description: This prompt activates a feedback analysis specialist who extracts a
   business reviews.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Synthesizing a batch of NPS verbatim responses after a survey cycle closes
-- Preparing a Voice of Customer report for a product roadmap or QBR
-- Investigating a sudden drop in CSAT or NPS score to identify root causes
-- Real-time sentiment monitoring on live chat streams (use dedicated tooling)
+  - Ideal Scenarios:**
+  - Synthesizing a batch of NPS verbatim responses after a survey cycle closes
+  - Preparing a Voice of Customer report for a product roadmap or QBR
+  - Investigating a sudden drop in CSAT or NPS score to identify root causes
+  - Real-time sentiment monitoring on live chat streams (use dedicated tooling)
 complexity: advanced
 interaction: multi-turn
 ---

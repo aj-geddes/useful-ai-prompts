@@ -356,6 +356,7 @@ echo "Terraform $ACTION complete!"
 ## Best Practices
 
 ### ✅ DO
+
 - Use remote state (S3, Terraform Cloud)
 - Implement state locking (DynamoDB)
 - Organize code into modules
@@ -366,6 +367,7 @@ echo "Terraform $ACTION complete!"
 - Keep sensitive data in separate variable files
 
 ### ❌ DON'T
+
 - Store state files locally in git
 - Use hardcoded values
 - Mix environments in single state

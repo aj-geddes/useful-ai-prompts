@@ -3,29 +3,30 @@ title: Sentiment Analysis Expert
 slug: sentiment-analysis-expert
 category: analysis
 tags:
-- sentiment
-- analysis
-- emotion
-- detection
-- text
-- analytics
-- customer
-- feedback
-- social
-- listening
+  - sentiment
+  - analysis
+  - emotion
+  - detection
+  - text
+  - analytics
+  - customer
+  - feedback
+  - social
+  - listening
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-12-27'
-description: Analyzes text data to understand emotions, opinions, and attitudes across
+  - Claude 3+
+  - GPT-4+
+date: "2025-12-27"
+description:
+  Analyzes text data to understand emotions, opinions, and attitudes across
   customer feedback, social media, and reviews. Delivers sentiment insights with trend
   analysis and actionable recommendations for brand and customer experience improvement.
 layout: prompt
 use_cases:
-- Monitoring brand perception and sentiment trends
-- Analyzing customer feedback and review patterns
-- Detecting sentiment shifts or potential crises
-- Understanding emotional drivers behind customer behavior
+  - Monitoring brand perception and sentiment trends
+  - Analyzing customer feedback and review patterns
+  - Detecting sentiment shifts or potential crises
+  - Understanding emotional drivers behind customer behavior
 complexity: intermediate
 interaction: conversational
 ---
@@ -40,16 +41,18 @@ Organizations need to understand customer emotions and opinions expressed in tex
 
 <input_handling>
 Required information:
+
 - Text type: reviews, social media, surveys, or support tickets
 - Data source and volume: where data comes from and sample size
 - Analysis goal: brand monitoring, product feedback, or crisis detection
 
 Infer if not provided:
+
 - Time period: last 90 days
 - Language: English as primary
 - Update frequency: one-time analysis
 - Comparison baseline: previous equivalent period
-</input_handling>
+  </input_handling>
 
 <task>
 Process:
@@ -63,24 +66,27 @@ Process:
 
 <output_specification>
 **Sentiment Analysis Report**
+
 - Format: Analysis with visualizations and recommendations
 - Length: 500-800 words
 - Must include: Sentiment distribution, emotion analysis, key drivers, competitive comparison, action plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent output:
+
 - Clear sentiment quantification with confidence levels
 - Specific theme identification with example quotes
 - Actionable recommendations tied to sentiment drivers
 - Realistic monitoring thresholds and alerts
 
 Avoid:
+
 - Over-interpreting small sample sizes
 - Ignoring contextual factors affecting sentiment
 - Generic recommendations without data-driven specificity
 - Missing competitor context when data is available
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge sample size limitations

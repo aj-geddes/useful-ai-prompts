@@ -1,6 +1,7 @@
 # Threat Modeling Expert
 
 ## Metadata
+
 - **ID**: `security-threat-modeling-expert`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,12 +19,14 @@ This prompt activates a threat modeling specialist who systematically identifies
 ## When to Use
 
 **Ideal Scenarios:**
+
 - New system or feature design requiring security review before development
 - Architecture reviews for existing systems being extended or refactored
 - Cloud migrations or infrastructure changes with new attack surfaces
 - Compliance-driven security assessments requiring documented threat analysis
 
 **Anti-patterns (Don't Use For):**
+
 - Active incident response (use incident-response-planner instead)
 - Generic security awareness training for non-technical staff
 - Penetration testing execution planning (scope, rules of engagement)
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're building a healthcare patient portal. Patients log in with username/password to view lab results and message their doctors. The web app talks to an API server which queries a PostgreSQL database. All hosted on AWS. We use Auth0 for authentication."
 
 ### Output
@@ -133,16 +137,16 @@ Entry points: Patient login endpoint, password reset flow, message submission en
 
 **Threat Catalog**
 
-| # | Threat | STRIDE | Severity | Component | Mitigation |
-|---|--------|--------|----------|-----------|------------|
-| T1 | Attacker brute-forces patient credentials via login endpoint | Spoofing | High | Auth0 / Login | Enable Auth0 rate limiting, MFA for all patients, anomalous login alerting |
-| T2 | JWT token stolen via XSS, replayed to access patient records | Spoofing / Info Disclosure | Critical | React SPA / API | Strict CSP headers, short JWT expiry (15 min), HttpOnly refresh tokens |
-| T3 | Insecure Direct Object Reference: patient accesses another patient's lab results by modifying record ID | Elevation of Privilege | Critical | API Server | Enforce ownership check on every record query; never expose internal IDs |
-| T4 | SQL injection via message field tampering patient records | Tampering | High | API / PostgreSQL | Parameterized queries (enforce via ORM), WAF rule for SQLi patterns |
-| T5 | Excessive data returned in API response exposes unrelated patient fields | Information Disclosure | Medium | API Server | Response serialization whitelist; never return ORM objects directly |
-| T6 | Missing audit log for record access makes HIPAA audit impossible | Repudiation | High | CloudWatch | Log all record access with patient ID, timestamp, clinician ID; tamper-evident log store |
-| T7 | S3 bucket misconfiguration exposes lab result documents publicly | Information Disclosure | Critical | AWS S3 | Block public access at account level; pre-signed URLs with 15-min expiry; bucket policy denying public reads |
-| T8 | API server over-provisioned IAM role allows lateral movement to other AWS resources | Elevation of Privilege | Medium | IAM / API | Least-privilege IAM role; no wildcard resource ARNs; quarterly IAM access review |
+| #   | Threat                                                                                                  | STRIDE                     | Severity | Component        | Mitigation                                                                                                   |
+| --- | ------------------------------------------------------------------------------------------------------- | -------------------------- | -------- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| T1  | Attacker brute-forces patient credentials via login endpoint                                            | Spoofing                   | High     | Auth0 / Login    | Enable Auth0 rate limiting, MFA for all patients, anomalous login alerting                                   |
+| T2  | JWT token stolen via XSS, replayed to access patient records                                            | Spoofing / Info Disclosure | Critical | React SPA / API  | Strict CSP headers, short JWT expiry (15 min), HttpOnly refresh tokens                                       |
+| T3  | Insecure Direct Object Reference: patient accesses another patient's lab results by modifying record ID | Elevation of Privilege     | Critical | API Server       | Enforce ownership check on every record query; never expose internal IDs                                     |
+| T4  | SQL injection via message field tampering patient records                                               | Tampering                  | High     | API / PostgreSQL | Parameterized queries (enforce via ORM), WAF rule for SQLi patterns                                          |
+| T5  | Excessive data returned in API response exposes unrelated patient fields                                | Information Disclosure     | Medium   | API Server       | Response serialization whitelist; never return ORM objects directly                                          |
+| T6  | Missing audit log for record access makes HIPAA audit impossible                                        | Repudiation                | High     | CloudWatch       | Log all record access with patient ID, timestamp, clinician ID; tamper-evident log store                     |
+| T7  | S3 bucket misconfiguration exposes lab result documents publicly                                        | Information Disclosure     | Critical | AWS S3           | Block public access at account level; pre-signed URLs with 15-min expiry; bucket policy denying public reads |
+| T8  | API server over-provisioned IAM role allows lateral movement to other AWS resources                     | Elevation of Privilege     | Medium   | IAM / API        | Least-privilege IAM role; no wildcard resource ARNs; quarterly IAM access review                             |
 
 **Top 5 Priority Mitigations**
 

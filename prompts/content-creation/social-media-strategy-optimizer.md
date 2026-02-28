@@ -1,6 +1,7 @@
 # Social Media Strategy Optimizer
 
 ## Metadata
+
 - **ID**: `content-creation-social-media-strategy`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 B2B SaaS company selling project management software. Target: small business owners and team leads, 30-50 age range. Goals: generate leads and establish thought leadership. Currently have 500 LinkedIn followers and minimal presence elsewhere.
 ```
 
 ### Output
+
 ```
 **Social Media Strategy: B2B SaaS Project Management**
 

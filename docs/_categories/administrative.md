@@ -6,7 +6,19 @@ slug: administrative
 icon: fas fa-briefcase
 description: "Expert AI prompts for administrative professionals: SOPs, correspondence, scheduling, meeting management, vendor relations, expense reporting, and office operations."
 seo_title: "Administrative & Office AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [SOPs, correspondence, scheduling, meeting management, vendor relations, expense reporting, onboarding, records management, travel coordination, policy writing]
+tags:
+  [
+    SOPs,
+    correspondence,
+    scheduling,
+    meeting management,
+    vendor relations,
+    expense reporting,
+    onboarding,
+    records management,
+    travel coordination,
+    policy writing,
+  ]
 ---
 
 The Administrative & Office category contains AI prompts for executive assistants, office managers, administrative coordinators, and operations support professionals. These prompts produce polished, professional administrative outputs that handle the full range of operational and support tasks in modern organizations.

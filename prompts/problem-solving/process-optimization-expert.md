@@ -1,6 +1,7 @@
 # Process Optimization Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-process-optimization`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A comprehensive process optimization specialist that helps you streamline workfl
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Streamlining inefficient business processes with high cycle time
 - Reducing bottlenecks and eliminating unnecessary handoffs
 - Automating manual, repetitive workflows
@@ -25,6 +27,7 @@ A comprehensive process optimization specialist that helps you streamline workfl
 - Preparing processes for scale or increased demand
 
 **Anti-Patterns (when not to use):**
+
 - Software algorithm optimization (use algorithm-optimization-expert)
 - Personal productivity improvements (use productivity-system-designer)
 - Organizational restructuring (use organizational-development-expert)
@@ -116,44 +119,45 @@ Process: Customer onboarding for our SaaS product. Current duration averages 2 w
 
 **Current State Analysis**
 
-| Step | Owner | Duration | Pain Points |
-|------|-------|----------|-------------|
-| 1. Sales Handoff | Sales -> CS | 1-2 days | Manual email with missing info |
-| 2. Account Creation | IT | 1 day | In queue behind other requests |
-| 3. Data Collection | CS | 2-3 days | Email back-and-forth for requirements |
-| 4. Training Scheduling | CS | 2-4 days | Calendar coordination, availability issues |
-| 5. Platform Configuration | IT | 2-3 days | Queue delays, manual setup |
-| 6. Training Delivery | CS | 1 day | Fixed slot availability |
-| 7. Go-Live Verification | CS | 1 day | Final checklist and handoff |
-| **Total** | | **10-14 days** | Multiple handoffs, waiting |
+| Step                      | Owner       | Duration       | Pain Points                                |
+| ------------------------- | ----------- | -------------- | ------------------------------------------ |
+| 1. Sales Handoff          | Sales -> CS | 1-2 days       | Manual email with missing info             |
+| 2. Account Creation       | IT          | 1 day          | In queue behind other requests             |
+| 3. Data Collection        | CS          | 2-3 days       | Email back-and-forth for requirements      |
+| 4. Training Scheduling    | CS          | 2-4 days       | Calendar coordination, availability issues |
+| 5. Platform Configuration | IT          | 2-3 days       | Queue delays, manual setup                 |
+| 6. Training Delivery      | CS          | 1 day          | Fixed slot availability                    |
+| 7. Go-Live Verification   | CS          | 1 day          | Final checklist and handoff                |
+| **Total**                 |             | **10-14 days** | Multiple handoffs, waiting                 |
 
-*Process Volume*: 50 customers/month = ~2.5/day
-*Customer Impact*: Some cancellations during onboarding (costly)
-*Team Burden*: Repetitive manual work, context-switching
+_Process Volume_: 50 customers/month = ~2.5/day
+_Customer Impact_: Some cancellations during onboarding (costly)
+_Team Burden_: Repetitive manual work, context-switching
 
 **Waste Analysis (Lean Framework)**
 
-| Waste Type | Examples Found | Impact |
-|------------|----------------|--------|
-| **Waiting** | Queue for IT, scheduling gaps, email response delays | 60% of total time is wait time |
-| **Motion** | Multiple emails for same information | 15+ emails per onboarding |
-| **Defects** | Incomplete handoffs, rework due to missing info | 30% require rework |
-| **Overprocessing** | Manual data entry into multiple systems | Same info entered 3 times |
-| **Transport** | Handoffs between 4 teams | Each handoff = delay + info loss |
+| Waste Type         | Examples Found                                       | Impact                           |
+| ------------------ | ---------------------------------------------------- | -------------------------------- |
+| **Waiting**        | Queue for IT, scheduling gaps, email response delays | 60% of total time is wait time   |
+| **Motion**         | Multiple emails for same information                 | 15+ emails per onboarding        |
+| **Defects**        | Incomplete handoffs, rework due to missing info      | 30% require rework               |
+| **Overprocessing** | Manual data entry into multiple systems              | Same info entered 3 times        |
+| **Transport**      | Handoffs between 4 teams                             | Each handoff = delay + info loss |
 
-*Key Insight*: Only ~15% of elapsed time is actual work; 85% is waiting and rework.
+_Key Insight_: Only ~15% of elapsed time is actual work; 85% is waiting and rework.
 
 **Optimized Process Design**
 
-| Step | Owner | Duration | Improvement |
-|------|-------|----------|-------------|
-| 1. Self-Service Intake | Customer (guided) | 0 days | Automated during sales close |
-| 2. Auto Account + Training Scheduled | System | Instant | Parallel, automated |
-| 3. Guided Configuration | Customer (with support) | 1 day | Self-service with templates |
-| 4. Training + Verification | CS | 1 day | Combined session |
-| **Total** | | **2-3 days** | **80% reduction** |
+| Step                                 | Owner                   | Duration     | Improvement                  |
+| ------------------------------------ | ----------------------- | ------------ | ---------------------------- |
+| 1. Self-Service Intake               | Customer (guided)       | 0 days       | Automated during sales close |
+| 2. Auto Account + Training Scheduled | System                  | Instant      | Parallel, automated          |
+| 3. Guided Configuration              | Customer (with support) | 1 day        | Self-service with templates  |
+| 4. Training + Verification           | CS                      | 1 day        | Combined session             |
+| **Total**                            |                         | **2-3 days** | **80% reduction**            |
 
-*Key Changes*:
+_Key Changes_:
+
 - Eliminate handoffs by capturing all information upfront
 - Parallelize instead of sequential processing
 - Self-service where appropriate with human support available
@@ -161,47 +165,52 @@ Process: Customer onboarding for our SaaS product. Current duration averages 2 w
 
 **Optimization Recommendations**
 
-*Priority Matrix*:
+_Priority Matrix_:
 
-| Optimization | Impact | Effort | Priority |
-|--------------|--------|--------|----------|
-| Self-service intake portal | High | Low | 1 - Do First |
-| Auto account creation | High | Medium | 2 |
-| Integrated calendar booking | Medium | Low | 3 |
-| Configuration templates | High | Medium | 4 |
-| Parallel processing workflow | High | Medium | 5 |
+| Optimization                 | Impact | Effort | Priority     |
+| ---------------------------- | ------ | ------ | ------------ |
+| Self-service intake portal   | High   | Low    | 1 - Do First |
+| Auto account creation        | High   | Medium | 2            |
+| Integrated calendar booking  | Medium | Low    | 3            |
+| Configuration templates      | High   | Medium | 4            |
+| Parallel processing workflow | High   | Medium | 5            |
 
 **Detailed Recommendations**
 
-*1. Self-Service Intake Portal (Quick Win)*
+_1. Self-Service Intake Portal (Quick Win)_
+
 - Customer fills comprehensive onboarding form during or immediately after sales close
 - Form includes: company info, user list, configuration preferences, training availability
 - Auto-populates all downstream systems (no manual data entry)
 - **Benefit**: Eliminates 2-3 days of email back-and-forth, ensures complete information
 - **Effort**: 1-2 weeks development using existing form tools
 
-*2. Automated Account Creation*
+_2. Automated Account Creation_
+
 - Trigger account creation automatically when contract is signed
 - No IT queue - provisioned within minutes
 - Include welcome email with login credentials and next steps
 - **Benefit**: Removes 1+ day IT queue delay
 - **Effort**: 1-2 weeks integration work
 
-*3. Integrated Calendar Booking*
+_3. Integrated Calendar Booking_
+
 - Real-time CS team availability visible to customer
 - Customer self-schedules training within intake flow
 - Automatic reminders and calendar invites
 - **Benefit**: Eliminates 2-4 days of scheduling back-and-forth
 - **Effort**: Tools like Calendly integrate in days
 
-*4. Configuration Templates*
+_4. Configuration Templates_
+
 - Pre-built templates for common configurations (80% of customers)
 - Self-service wizard with guided options
 - IT reviews only exceptions and custom requests
 - **Benefit**: Reduces configuration from 2-3 days to same-day for most customers
 - **Effort**: 2-3 weeks to build templates and wizard
 
-*5. Parallel Processing Workflow*
+_5. Parallel Processing Workflow_
+
 - Account creation, scheduling, and configuration preparation happen simultaneously
 - Remove sequential dependencies that don't actually exist
 - Single "Onboarding Complete" milestone instead of multiple handoffs
@@ -210,35 +219,41 @@ Process: Customer onboarding for our SaaS product. Current duration averages 2 w
 
 **Implementation Roadmap**
 
-*Week 1-2: Foundation & Quick Wins*
+_Week 1-2: Foundation & Quick Wins_
+
 - Deploy intake form (use existing tool like Typeform, integrate with CRM)
 - Integrate calendar booking (Calendly or similar)
 - Update sales process to include intake at close
 - **Expected Result**: 30% time reduction
 
-*Metrics to Track*:
+_Metrics to Track_:
+
 - Form completion rate
 - Data completeness score
 - Calendar booking success rate
 
-*Week 3-4: Automation*
+_Week 3-4: Automation_
+
 - Implement automatic account provisioning
 - Build integration between intake form and internal systems
 - Create email templates for each stage
 - **Expected Result**: Additional 30% time reduction
 
-*Metrics to Track*:
+_Metrics to Track_:
+
 - Account creation time (target: <1 hour)
 - Manual intervention rate
 
-*Week 5-8: Self-Service & Templates*
+_Week 5-8: Self-Service & Templates_
+
 - Build configuration templates for top 5 use cases
 - Create self-service configuration wizard
 - Train CS team on new workflow
 - Pilot with 10 customers, iterate based on feedback
 - **Expected Result**: Additional 20% time reduction
 
-*Week 9-10: Full Rollout*
+_Week 9-10: Full Rollout_
+
 - Launch new process for all new customers
 - Deprecate old manual process
 - Document procedures and edge case handling
@@ -246,45 +261,48 @@ Process: Customer onboarding for our SaaS product. Current duration averages 2 w
 
 **Change Management Considerations**
 
-*Stakeholder Impact*:
+_Stakeholder Impact_:
+
 - **Sales**: Must ensure intake is completed at close (accountability)
 - **CS**: Role shifts from data collection to high-value support (upskill opportunity)
 - **IT**: Freed from queue management (capacity for other work)
 - **Customers**: Faster time to value (primary goal)
 
-*Resistance Points*:
+_Resistance Points_:
+
 - "Customers won't fill out forms" - Make it short, explain value, show progress
 - "We need manual control" - Keep override capability, automate the common path
 - "IT needs to approve accounts" - Add automated checks, human approval for exceptions
 
 **Success Metrics**
 
-| Metric | Current | Target | Timeline |
-|--------|---------|--------|----------|
-| Onboarding time | 14 days | 3 days | Week 8 |
-| Customer satisfaction (onboarding) | Unknown | NPS > 50 | Week 10 |
-| Team time per customer | ~8 hours | ~2 hours | Week 8 |
-| Onboarding cancellations | ~5% | <1% | Week 12 |
-| Rework rate | 30% | <5% | Week 6 |
+| Metric                             | Current  | Target   | Timeline |
+| ---------------------------------- | -------- | -------- | -------- |
+| Onboarding time                    | 14 days  | 3 days   | Week 8   |
+| Customer satisfaction (onboarding) | Unknown  | NPS > 50 | Week 10  |
+| Team time per customer             | ~8 hours | ~2 hours | Week 8   |
+| Onboarding cancellations           | ~5%      | <1%      | Week 12  |
+| Rework rate                        | 30%      | <5%      | Week 6   |
 
-*Ongoing Monitoring*:
+_Ongoing Monitoring_:
+
 - Weekly review of onboarding times by step
 - Monthly customer feedback review
 - Quarterly process audit for drift
 
 **ROI Summary**
 
-| Investment | Value |
-|------------|-------|
-| Development/Integration | ~$20-30K |
-| Training/Change Management | ~$5K |
-| **Total Investment** | ~$25-35K |
-| | |
-| **Annual Savings** | |
-| Team time (6 hrs x 50 customers x $50/hr x 12 months) | $180K |
-| Reduced cancellations (2% x 50 x 12 x $5K ACV) | $60K |
-| **Annual Benefit** | ~$240K |
-| **Payback Period** | ~2 months |
+| Investment                                            | Value     |
+| ----------------------------------------------------- | --------- |
+| Development/Integration                               | ~$20-30K  |
+| Training/Change Management                            | ~$5K      |
+| **Total Investment**                                  | ~$25-35K  |
+|                                                       |           |
+| **Annual Savings**                                    |           |
+| Team time (6 hrs x 50 customers x $50/hr x 12 months) | $180K     |
+| Reduced cancellations (2% x 50 x 12 x $5K ACV)        | $60K      |
+| **Annual Benefit**                                    | ~$240K    |
+| **Payback Period**                                    | ~2 months |
 
 ---
 

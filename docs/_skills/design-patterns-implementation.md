@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Apply appropriate design patterns (Singleton, Factory, Observer, Strategy,
+date: "2025-01-01"
+description:
+  Apply appropriate design patterns (Singleton, Factory, Observer, Strategy,
   etc.) to solve architectural problems. Use when refactoring code architecture, implementing
   extensible systems, or following SOLID principles.
 layout: skill
 slug: design-patterns-implementation
 tags:
-- development
+  - development
 title: design-patterns-implementation
 ---
 
@@ -49,7 +50,9 @@ class DatabaseConnection {
   }
 
   private createConnection() {
-    return { /* connection logic */ };
+    return {
+      /* connection logic */
+    };
   }
 }
 
@@ -111,17 +114,17 @@ class Subject {
   }
 
   detach(observer) {
-    this.observers = this.observers.filter(obs => obs !== observer);
+    this.observers = this.observers.filter((obs) => obs !== observer);
   }
 
   notify(data) {
-    this.observers.forEach(observer => observer.update(data));
+    this.observers.forEach((observer) => observer.update(data));
   }
 }
 
 class Observer {
   update(data) {
-    console.log('Received update:', data);
+    console.log("Received update:", data);
   }
 }
 
@@ -132,7 +135,7 @@ const observer2 = new Observer();
 
 subject.attach(observer1);
 subject.attach(observer2);
-subject.notify({ event: 'data_changed' });
+subject.notify({ event: "data_changed" });
 ```
 
 ### 4. **Strategy Pattern**
@@ -199,7 +202,7 @@ class SimpleCoffee implements Coffee {
   }
 
   description(): string {
-    return 'Simple coffee';
+    return "Simple coffee";
   }
 }
 
@@ -211,7 +214,7 @@ class MilkDecorator implements Coffee {
   }
 
   description(): string {
-    return this.coffee.description() + ', milk';
+    return this.coffee.description() + ", milk";
   }
 }
 
@@ -223,7 +226,7 @@ class SugarDecorator implements Coffee {
   }
 
   description(): string {
-    return this.coffee.description() + ', sugar';
+    return this.coffee.description() + ", sugar";
   }
 }
 
@@ -296,7 +299,7 @@ class OrderService {
 
   createOrder(order: Order) {
     this.db.save(order);
-    this.email.send(order.customer_email, 'Order created');
+    this.email.send(order.customer_email, "Order created");
   }
 }
 
@@ -312,31 +315,29 @@ interface EmailService {
 class OrderService {
   constructor(
     private db: Database,
-    private email: EmailService
+    private email: EmailService,
   ) {}
 
   createOrder(order: Order) {
     this.db.save(order);
-    this.email.send(order.customer_email, 'Order created');
+    this.email.send(order.customer_email, "Order created");
   }
 }
 
 // Usage - easy to test with mocks
-const service = new OrderService(
-  new MySQLDatabase(),
-  new GmailService()
-);
+const service = new OrderService(new MySQLDatabase(), new GmailService());
 
 // Test with mocks
 const testService = new OrderService(
   new MockDatabase(),
-  new MockEmailService()
+  new MockEmailService(),
 );
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Choose patterns that solve actual problems
 - Keep patterns simple and understandable
 - Document why patterns were chosen
@@ -346,6 +347,7 @@ const testService = new OrderService(
 - Prefer composition over inheritance
 
 ### ❌ DON'T
+
 - Apply patterns without understanding them
 - Over-engineer simple solutions
 - Force patterns where they don't fit
@@ -354,17 +356,17 @@ const testService = new OrderService(
 
 ## When to Use Each Pattern
 
-| Pattern | Use Case |
-|---------|----------|
-| **Singleton** | Database connections, configuration managers |
-| **Factory** | Creating objects based on runtime conditions |
-| **Observer** | Event systems, pub/sub, reactive programming |
-| **Strategy** | Algorithms that can be swapped at runtime |
-| **Decorator** | Adding features dynamically without inheritance |
-| **Repository** | Abstracting data access from business logic |
-| **Adapter** | Making incompatible interfaces work together |
-| **Facade** | Simplifying complex subsystems |
-| **Command** | Undo/redo, task queuing, macro recording |
+| Pattern        | Use Case                                        |
+| -------------- | ----------------------------------------------- |
+| **Singleton**  | Database connections, configuration managers    |
+| **Factory**    | Creating objects based on runtime conditions    |
+| **Observer**   | Event systems, pub/sub, reactive programming    |
+| **Strategy**   | Algorithms that can be swapped at runtime       |
+| **Decorator**  | Adding features dynamically without inheritance |
+| **Repository** | Abstracting data access from business logic     |
+| **Adapter**    | Making incompatible interfaces work together    |
+| **Facade**     | Simplifying complex subsystems                  |
+| **Command**    | Undo/redo, task queuing, macro recording        |
 
 ## Resources
 

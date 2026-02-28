@@ -1,6 +1,7 @@
 # Requirements Engineering Expert
 
 ## Metadata
+
 - **ID**: `business-requirements-engineering`
 - **Version**: 1.0.0
 - **Category**: Business/Business-Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Develops comprehensive requirements documentation through systematic elicitation, stakeholder alignment, and validation. Creates traceability matrices that connect business goals to specifications through the entire project lifecycle.
 
 ## When to Use
+
 - Starting a new project requiring formal requirements
 - Resolving conflicting stakeholder needs
 - Creating requirements for regulatory/compliance purposes
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're building a customer portal for insurance claims processing. The current manual process takes 5-7 days and is error-prone with about 15% rework rate. Key stakeholders include customers filing claims, claims adjusters who process them, the IT team responsible for integration, legal and compliance for regulatory requirements, and executives tracking operational efficiency. We have a 6-month timeline and $500K budget. A previous portal project failed 18 months ago due to poor user adoption, so we need to get this right. The solution needs to integrate with our core claims system and meet state insurance regulations."
 
 ### Output
@@ -130,16 +134,19 @@ BUSINESS REQUIREMENTS (WHY)
 ### Week 1-2: Discovery Phase
 
 **Customer Research**
+
 - Survey: 500 recent claimants (quantitative baseline)
 - Interviews: 20 customers across claim types
 - Focus: Pain points, preferred channels, mobile vs desktop
 
 **Claims Adjuster Observations**
+
 - Day-in-life shadowing: 5 adjusters, 2 days each
 - Process mapping: Current workflow documentation
 - Focus: Bottlenecks, workarounds, information gaps
 
 **Technical Discovery**
+
 - Core system architecture review with IT
 - Integration capability assessment
 - Security and compliance requirements workshop
@@ -147,11 +154,13 @@ BUSINESS REQUIREMENTS (WHY)
 ### Week 3-4: Synthesis Phase
 
 **User Story Mapping Workshop**
+
 - Participants: Cross-functional team (12-15 people)
 - Duration: Full day
 - Output: Complete user journey with story cards
 
 **Prioritization Session**
+
 - Steering committee review
 - MoSCoW classification for all requirements
 - Budget and timeline validation
@@ -161,21 +170,25 @@ BUSINESS REQUIREMENTS (WHY)
 ## MoSCoW PRIORITIZATION
 
 **MUST HAVE (60% of effort)** - Launch blockers
+
 - Submit claims online with document upload
 - Track claim status in real-time
 - Integrate with core claims system
 - Audit trail for compliance
 
 **SHOULD HAVE (20% of effort)** - High value, can defer
+
 - Mobile-responsive design
 - Push/email notifications
 - Claim estimation calculator
 
 **COULD HAVE (10% of effort)** - Nice to have
+
 - Live chat support
 - Integration with repair network
 
 **WON'T HAVE (this release)** - Future roadmap
+
 - AI claim assessment
 - Video claim submission
 
@@ -193,6 +206,7 @@ BUSINESS REQUIREMENTS (WHY)
 **So that** I can start the claims process immediately without waiting for business hours
 
 **Acceptance Criteria:**
+
 1. Can select claim type from categorized dropdown menu
 2. Can upload up to 10 photos (max 5MB each, 50MB total)
 3. Can save draft and return within 7 days
@@ -219,6 +233,7 @@ BUSINESS REQUIREMENTS (WHY)
 The system shall provide a guided claim submission form that collects all required information for initial claim processing.
 
 **Functional Requirements:**
+
 1. Form shall support auto, home, and liability claim types
 2. Form shall validate required fields before submission
 3. Form shall allow photo/document upload (PDF, JPG, PNG)
@@ -226,6 +241,7 @@ The system shall provide a guided claim submission form that collects all requir
 5. Form shall generate unique claim number upon submission
 
 **Non-Functional Requirements:**
+
 - Page load time < 3 seconds on 3G connection
 - Form completion rate target: 85%+
 - Accessibility: WCAG 2.1 AA compliance
@@ -236,18 +252,19 @@ The system shall provide a guided claim submission form that collects all requir
 
 ## TRACEABILITY MATRIX
 
-| ID | Requirement | Business Goal | User Story | Test Cases | Status |
-|----|-------------|---------------|------------|------------|--------|
-| REQ-F-001 | Claim submission form | BG-001, BG-002 | US-C-001 | TC-001-010 | Draft |
-| REQ-F-002 | Status tracking | BG-002 | US-C-005 | TC-011-015 | Draft |
-| REQ-NF-001 | 3-second load time | BG-002 | All | TC-016-020 | Draft |
-| REQ-I-001 | Core system integration | BG-001, BG-003 | US-A-001 | TC-021-030 | Draft |
+| ID         | Requirement             | Business Goal  | User Story | Test Cases | Status |
+| ---------- | ----------------------- | -------------- | ---------- | ---------- | ------ |
+| REQ-F-001  | Claim submission form   | BG-001, BG-002 | US-C-001   | TC-001-010 | Draft  |
+| REQ-F-002  | Status tracking         | BG-002         | US-C-005   | TC-011-015 | Draft  |
+| REQ-NF-001 | 3-second load time      | BG-002         | All        | TC-016-020 | Draft  |
+| REQ-I-001  | Core system integration | BG-001, BG-003 | US-A-001   | TC-021-030 | Draft  |
 
 ---
 
 ## VALIDATION AND APPROVAL PROCESS
 
 **Requirement Review Checklist:**
+
 - [ ] Requirement is testable with specific acceptance criteria
 - [ ] Business rationale documented
 - [ ] Stakeholder sign-off obtained
@@ -256,6 +273,7 @@ The system shall provide a guided claim submission form that collects all requir
 - [ ] Dependencies identified and documented
 
 **Approval Workflow:**
+
 1. Author drafts requirement
 2. Peer review (business analyst)
 3. Stakeholder review (affected parties)
@@ -263,6 +281,7 @@ The system shall provide a guided claim submission form that collects all requir
 5. Final approval (Product Owner)
 
 **Change Control:**
+
 - All changes require Change Request form
 - Impact assessment: schedule, budget, dependencies
 - Approval required from Change Control Board for MUST HAVE items
@@ -270,5 +289,6 @@ The system shall provide a guided claim submission form that collects all requir
 ---
 
 ## Related Prompts
+
 - [Process Optimization Expert](../operations/process-optimization-expert.md)
 - [Business Analyst Expert](../management/business-analyst-strategic-excellence.md)

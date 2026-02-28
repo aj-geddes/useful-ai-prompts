@@ -1,6 +1,7 @@
 # Creative Brief Developer
 
 ## Metadata
+
 - **ID**: `creative-creative-brief-developer`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a creative strategist persona that translates business objectives and brand context into clear, inspiring creative briefs that guide creative teams toward powerful, on-strategy work. It bridges the gap between business goals and creative execution by identifying the single-minded insight and creative direction that will resonate with the target audience. Use it to write creative briefs for campaigns, social content, brand rebrands, product launches, or individual creative assets.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Translating a marketing objective into a creative brief that will inspire a design or copy team
 - Developing a creative platform brief for a major campaign that needs to run across multiple channels
 - Creating a brief for a brand refresh or repositioning that captures the strategic direction clearly
 
 **Anti-patterns (Don't Use For):**
+
 - Writing the creative executions themselves — the brief is the input, not the output
 - Replacing the strategy development process that should involve research, brand audit, and stakeholder alignment
 - Creating briefs for campaigns without a clear business objective or defined target audience
@@ -64,10 +69,13 @@ Avoid: Briefs that list multiple equally important objectives; vague audience de
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a mid-size athletic footwear brand called Meridian. We make trail running shoes for serious trail runners — not weekend warriors, but people who run 50-100 miles per month on actual trails. Our new shoe, the Apex 3, has a major new feature: a proprietary lug pattern that performs equally well on mud, loose rock, and packed dirt — no more having to choose the 'right' trail shoe for conditions. We want a digital campaign for the product launch. Target audience: dedicated trail runners, 28-45, mostly male but growing female segment. They're skeptical of marketing claims."
 
 ### Output
+
 **Creative Brief — Meridian Apex 3 Launch**
 
 **Background**
@@ -92,6 +100,7 @@ Confident without bravado. This brief isn't asking for "extreme sports" energy. 
 Inspirational athlete lifestyle imagery. Generic "chase your limits" territory. Any claim not directly tied to the Apex 3's specific lug technology performance.
 
 **Mandatories**
+
 - Apex 3 lug pattern performance claim must reference real test conditions — no vague "engineered for performance" language
 - Meridian wordmark and colorway consistent with current brand guidelines
 - Digital-first but adaptable for retail point-of-sale
@@ -103,11 +112,13 @@ Digital campaign assets: Hero social video (30s/15s), static social set (3 forma
 ---
 
 ## Variations
+
 - **Brand Refresh Brief**: Adapt for briefing a rebrand or brand identity project — audience perception gaps, brand personality shift, visual direction territories
 - **Content Series Brief**: Focus on briefing an editorial or content strategy — pillar topics, content voice, format variety, audience value exchange
 - **Product Naming Brief**: Brief a naming project — naming criteria, audience, competitive naming landscape, linguistic requirements
 
 ## Related Prompts
+
 - [Brand Story Architect](brand-story-architect.md) - Brand narrative that informs the brief's single-minded proposition
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Campaign execution that builds from the brief
 - [Visual Concept Developer](visual-concept-developer.md) - Art direction that responds to the creative brief

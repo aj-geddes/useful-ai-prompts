@@ -30,20 +30,16 @@ Establish semantic versioning practices to maintain consistent version numbering
   "version": "1.2.3",
   "description": "An awesome package",
   "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/org/repo.git"
-  },
-  "scripts": {
-    "release": "semantic-release"
-  },
-  "devDependencies": {
-    "semantic-release": "^21.0.0",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
-    "@semantic-release/github": "^9.0.0",
-    "conventional-changelog-cli": "^3.0.0"
-  }
+  "repository": { "type": "git", "url": "https://github.com/org/repo.git" },
+  "scripts": { "release": "semantic-release" },
+  "devDependencies":
+    {
+      "semantic-release": "^21.0.0",
+      "@semantic-release/changelog": "^6.0.0",
+      "@semantic-release/git": "^10.0.0",
+      "@semantic-release/github": "^9.0.0",
+      "conventional-changelog-cli": "^3.0.0",
+    },
 }
 ```
 
@@ -92,15 +88,15 @@ Closes #123"
 ```javascript
 // release.config.js
 module.exports = {
-  branches: ['main', {name: 'develop', prerelease: 'beta'}],
+  branches: ["main", { name: "develop", prerelease: "beta" }],
   plugins: [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/changelog',
-    '@semantic-release/git',
-    '@semantic-release/github',
-    '@semantic-release/npm'
-  ]
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+  ],
 };
 ```
 
@@ -210,8 +206,8 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
       - run: npm ci
       - run: npm test
       - run: npm run build
@@ -224,6 +220,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Follow strict MAJOR.MINOR.PATCH format
 - Use conventional commits
 - Automate version bumping
@@ -233,6 +230,7 @@ jobs:
 - Use prerelease versions for testing
 
 ### ❌ DON'T
+
 - Manually bump versions inconsistently
 - Skip breaking change documentation
 - Use arbitrary version numbering

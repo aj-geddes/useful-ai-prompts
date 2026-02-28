@@ -1,6 +1,7 @@
 # Code Generation Expert
 
 ## Metadata
+
 - **ID**: `creation-code-generation`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical code generation assistant that creates well-structured, maintainable
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new applications, APIs, or libraries from scratch
 - Building production-ready implementations with proper architecture
 - Generating boilerplate code with consistent patterns
@@ -25,6 +27,7 @@ A practical code generation assistant that creates well-structured, maintainable
 - Refactoring or modernizing existing codebases
 
 **Anti-patterns (Don't Use For):**
+
 - Simple one-liner code snippets
 - Debugging existing code (use debugging expert instead)
 - Code review without generation requirements
@@ -105,6 +108,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "REST API for a task management system using Node.js with Express and TypeScript. Need CRUD operations for tasks, users, projects, with JWT authentication. Must use PostgreSQL and Docker for deployment. Support 1000+ concurrent users."
 
 ### Output
@@ -146,17 +150,17 @@ export interface Task {
 }
 
 export enum TaskStatus {
-  TODO = 'todo',
-  IN_PROGRESS = 'in_progress',
-  DONE = 'done',
-  CANCELLED = 'cancelled'
+  TODO = "todo",
+  IN_PROGRESS = "in_progress",
+  DONE = "done",
+  CANCELLED = "cancelled",
 }
 
 export enum TaskPriority {
-  LOW = 'low',
-  MEDIUM = 'medium',
-  HIGH = 'high',
-  URGENT = 'urgent'
+  LOW = "low",
+  MEDIUM = "medium",
+  HIGH = "high",
+  URGENT = "urgent",
 }
 ```
 
@@ -167,7 +171,7 @@ export enum TaskPriority {
 export class TaskService {
   constructor(
     private taskRepository: TaskRepository,
-    private notificationService: NotificationService
+    private notificationService: NotificationService,
   ) {}
 
   async createTask(taskData: CreateTaskRequest, userId: string): Promise<Task> {
@@ -177,7 +181,7 @@ export class TaskService {
     if (task.assigneeId && task.assigneeId !== userId) {
       await this.notificationService.sendTaskAssignedNotification(
         task.assigneeId,
-        task
+        task,
       );
     }
     return task;
@@ -185,10 +189,10 @@ export class TaskService {
 
   private validateTaskData(taskData: CreateTaskRequest): void {
     if (!taskData.title?.trim()) {
-      throw new Error('Task title is required');
+      throw new Error("Task title is required");
     }
     if (taskData.title.length > 200) {
-      throw new Error('Task title must be less than 200 characters');
+      throw new Error("Task title must be less than 200 characters");
     }
   }
 }
@@ -200,23 +204,29 @@ export class TaskService {
 // src/middleware/auth.ts
 export const authenticateToken = (userRepository: UserRepository) => {
   return async (req: AuthRequest, res: Response, next: NextFunction) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
+    const authHeader = req.headers["authorization"];
+    const token = authHeader && authHeader.split(" ")[1];
 
     if (!token) {
-      return res.status(401).json({ success: false, message: 'Access token required' });
+      return res
+        .status(401)
+        .json({ success: false, message: "Access token required" });
     }
 
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET!) as any;
       const user = await userRepository.findById(decoded.userId);
       if (!user) {
-        return res.status(401).json({ success: false, message: 'Invalid token' });
+        return res
+          .status(401)
+          .json({ success: false, message: "Invalid token" });
       }
       req.user = { id: user.id, email: user.email, role: user.role };
       next();
     } catch (error) {
-      return res.status(403).json({ success: false, message: 'Invalid or expired token' });
+      return res
+        .status(403)
+        .json({ success: false, message: "Invalid or expired token" });
     }
   };
 };
@@ -247,6 +257,7 @@ CMD ["node", "dist/app.js"]
 ---
 
 ## Related Prompts
+
 - [API Design Expert](../technical-workflows/api-design-expert.md)
 - [Database Schema Development Expert](../technical-workflows/database-schema-development-expert.md)
 - [Test Strategy Development Expert](../technical-workflows/test-strategy-development-expert.md)

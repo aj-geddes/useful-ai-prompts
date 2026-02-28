@@ -1,6 +1,7 @@
 # Research Methodology Expert
 
 ## Metadata
+
 - **ID**: `learning-research-methodology`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A research methodology specialist that designs systematic approaches for investigating learning and development questions. Creates robust research frameworks for evaluating training effectiveness, studying organizational learning best practices, and generating actionable insights to inform L&D decisions.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Evaluating training program effectiveness and ROI
 - Researching organizational learning best practices
 - Investigating skill development approaches and their outcomes
@@ -23,6 +27,7 @@ A research methodology specialist that designs systematic approaches for investi
 - Conducting needs assessments with rigorous methodology
 
 **Anti-patterns (don't use for):**
+
 - Academic research for publication requiring peer review
 - Statistical analysis execution requiring software expertise
 - IRB approval processes and ethical review documentation
@@ -132,50 +137,59 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Evaluate if leadership training program actually improves manager effectiveness. Access: 200 managers who completed training in last year, their teams (800+ employees), HR data on performance and engagement. Questions: Does training improve manager effectiveness? Which components have most impact? What predicts training success? Timeline: 8 weeks for research, inform next year's program decisions.
 
 ### Output
+
 **Leadership Training Effectiveness Research Design**
 
 **Research Questions:**
+
 1. Primary: Does leadership training improve manager effectiveness?
 2. Secondary: Which program components have greatest impact?
 3. Exploratory: What participant characteristics predict training success?
 
 **Methodology: Mixed Methods Design**
 
-*Quantitative Component:*
+_Quantitative Component:_
+
 - Pre/post comparison with control group
 - Survey-based effectiveness measures
 - Performance data analysis
 
-*Qualitative Component:*
+_Qualitative Component:_
+
 - Interviews with high and low performers
 - Focus groups on training application
 - Manager reflection journals
 
 **Data Collection Instruments:**
 
-*1. Manager Effectiveness Survey (to Direct Reports)*
+_1. Manager Effectiveness Survey (to Direct Reports)_
+
 - Validated leadership behavior scale (15 items)
 - Engagement indicators (5 items)
 - Open-ended: "What has changed about your manager?"
 - Sample: All direct reports of trained managers (n~800)
 - Control: Direct reports of untrained managers (n~200)
 
-*2. Manager Self-Assessment*
+_2. Manager Self-Assessment_
+
 - Skill confidence ratings
 - Application frequency of learned techniques
 - Barriers to applying training
 - Sample: All trained managers (n=200)
 
-*3. Performance Data Analysis*
+_3. Performance Data Analysis_
+
 - Team engagement scores (pre/post)
 - Manager performance ratings
 - Retention of direct reports
 - Promotion/development rates
 
-*4. Qualitative Interviews (n=20)*
+_4. Qualitative Interviews (n=20)_
+
 - 10 high-performing trained managers
 - 10 average/below-performing trained managers
 - Semi-structured protocol (45 min)
@@ -183,7 +197,7 @@ Evaluate if leadership training program actually improves manager effectiveness.
 
 **Analysis Framework:**
 
-*Quantitative Analysis:*
+_Quantitative Analysis:_
 | Analysis | Data Source | Method |
 |----------|-------------|--------|
 | Training impact | Pre/post surveys | Paired t-test |
@@ -191,65 +205,74 @@ Evaluate if leadership training program actually improves manager effectiveness.
 | Component effectiveness | Module ratings vs. outcomes | Regression |
 | Success predictors | Participant characteristics | Multiple regression |
 
-*Qualitative Analysis:*
+_Qualitative Analysis:_
+
 - Thematic analysis of interviews
 - Pattern matching between high/low performers
 - Identification of success factors and barriers
 
-*Integration:*
+_Integration:_
+
 - Triangulate quantitative findings with qualitative insights
 - Explain variance through qualitative data
 - Generate actionable recommendations
 
 **Quality Assurance:**
 
-*Validity Measures:*
+_Validity Measures:_
+
 - Use validated survey instruments
 - Pilot test new questions (n=20)
 - Multiple data sources for triangulation
 
-*Bias Mitigation:*
+_Bias Mitigation:_
+
 - Anonymous survey responses
 - Independent interviewer (not program facilitator)
 - Control group comparison
 
-*Reliability:*
+_Reliability:_
+
 - Consistent survey administration
 - Interview protocol standardization
 - Inter-rater reliability for qualitative coding
 
 **Research Timeline:**
 
-| Week | Activity |
-|------|----------|
-| 1 | Finalize instruments, pilot test |
-| 2-3 | Survey deployment |
-| 4-5 | Interviews and data collection |
-| 6 | Quantitative analysis |
-| 7 | Qualitative analysis, integration |
-| 8 | Report and recommendations |
+| Week | Activity                          |
+| ---- | --------------------------------- |
+| 1    | Finalize instruments, pilot test  |
+| 2-3  | Survey deployment                 |
+| 4-5  | Interviews and data collection    |
+| 6    | Quantitative analysis             |
+| 7    | Qualitative analysis, integration |
+| 8    | Report and recommendations        |
 
 **Output and Application:**
 
-*Research Report:*
+_Research Report:_
+
 - Executive summary with key findings
 - Detailed methodology and results
 - Recommendations for program improvement
 - Suggested changes prioritized by impact
 
-*Decision Support:*
+_Decision Support:_
+
 - ROI calculation framework
 - Component retention/revision recommendations
 - Participant targeting criteria
 - Success factor checklist
 
 **Limitations Acknowledgment:**
+
 - Self-selection bias (voluntary training)
 - Hawthorne effect possible
 - Attribution challenges (other factors)
 - Generalizability to different contexts
 
 ## Related Prompts
+
 - [Knowledge Gap Analysis Expert](knowledge-gap-analysis-expert.md) - For needs assessment research
 - [Knowledge Synthesis Expert](knowledge-synthesis-expert.md) - For integrating research findings
 - [Competency Assessment Expert](competency-assessment-expert.md) - For evaluation instrument design

@@ -1,6 +1,7 @@
 # Constraints-Based Innovation Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/constraints-based-innovation-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Constraints-based innovation specialist who transforms limitations into creative
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Operating with severely limited budget, time, or resources
 - Facing regulatory or technical constraints that block conventional approaches
 - Needing to innovate in resource-scarce environments
@@ -25,6 +27,7 @@ Constraints-based innovation specialist who transforms limitations into creative
 - Turning competitive disadvantages into unique value propositions
 
 **Anti-Patterns:**
+
 - Unlimited resources available (constraints aren't driving creativity)
 - Constraints are actually flexible with stakeholder negotiation
 - Problem requires capabilities that simply cannot exist within constraints
@@ -95,6 +98,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Main constraints: $500 budget to create employee wellness program for 50 employees
 
@@ -115,13 +119,13 @@ Your constraint is severe - you have 10% of the typical budget. But this limitat
 
 **CONSTRAINT REFRAMING**
 
-| Limitation | Reframe as Design Specification |
-|------------|--------------------------------|
-| $10/person budget | Solutions must be peer-led and community-driven |
-| No dedicated staff | Program must be employee-owned and intrinsically motivating |
-| 3-week timeline | Start simple, build momentum, evolve organically |
-| Must be self-running | Design for peer accountability, not external management |
-| No expensive tools | Leverage free platforms and existing behaviors |
+| Limitation           | Reframe as Design Specification                             |
+| -------------------- | ----------------------------------------------------------- |
+| $10/person budget    | Solutions must be peer-led and community-driven             |
+| No dedicated staff   | Program must be employee-owned and intrinsically motivating |
+| 3-week timeline      | Start simple, build momentum, evolve organically            |
+| Must be self-running | Design for peer accountability, not external management     |
+| No expensive tools   | Leverage free platforms and existing behaviors              |
 
 Your constraints actually specify something valuable: **an authentic, employee-owned wellness culture rather than a top-down corporate initiative**.
 
@@ -129,20 +133,21 @@ Your constraints actually specify something valuable: **an authentic, employee-o
 
 You have more resources than you realize:
 
-| Asset | Wellness Application |
-|-------|---------------------|
-| 50 employees | 50 potential wellness leaders, skills to share, accountability partners |
-| Existing Slack | Free platform for coordination, challenges, community |
-| Break room | Gathering space for group activities, visual reminders |
-| Nearby park | Free venue for walking groups, outdoor activities |
-| Enthusiastic employees | Natural champions to seed the program |
-| Daily touchpoints | Lunch, coffee breaks, meetings - wellness integration points |
-| Employee skills | Hidden teachers for yoga, nutrition, meditation, fitness |
+| Asset                  | Wellness Application                                                    |
+| ---------------------- | ----------------------------------------------------------------------- |
+| 50 employees           | 50 potential wellness leaders, skills to share, accountability partners |
+| Existing Slack         | Free platform for coordination, challenges, community                   |
+| Break room             | Gathering space for group activities, visual reminders                  |
+| Nearby park            | Free venue for walking groups, outdoor activities                       |
+| Enthusiastic employees | Natural champions to seed the program                                   |
+| Daily touchpoints      | Lunch, coffee breaks, meetings - wellness integration points            |
+| Employee skills        | Hidden teachers for yoga, nutrition, meditation, fitness                |
 
 **RESOURCE MULTIPLICATION STRATEGIES**
 
 **Strategy 1: Skill Exchange Network (Cost: $0)**
 Create a #wellness-exchange Slack channel where employees trade skills:
+
 - "I'll teach 15-minute desk yoga for Excel tips"
 - "I'll share my healthy meal prep routine for help with presentation design"
 - Builds community while multiplying wellness knowledge across the organization
@@ -150,6 +155,7 @@ Create a #wellness-exchange Slack channel where employees trade skills:
 
 **Strategy 2: Peer Champion Model (Cost: $0)**
 Recruit 5 wellness champions (from your enthusiastic employees), each passionate about one domain:
+
 - Movement champion (walks, stretching, fitness)
 - Nutrition champion (healthy eating, recipes)
 - Mindfulness champion (meditation, stress reduction)
@@ -160,6 +166,7 @@ Recognition instead of payment: "Wellness Champion" title, small perks like pref
 
 **Strategy 3: Micro-Challenge System (Cost: $200)**
 Weekly 5-minute challenges that fit into existing work patterns:
+
 - Week 1: Drink 8 glasses of water daily (track with desk checkmarks)
 - Week 2: Take stairs instead of elevator
 - Week 3: 2-minute desk stretch every 2 hours
@@ -170,6 +177,7 @@ Small prize pool: $40/week in coffee gift cards for random participants who comp
 **CONSTRAINT-NATIVE SOLUTIONS**
 
 **Solution 1: Lunch Walk & Talk Groups ($0)**
+
 - Map three 15-minute walking routes from office (use nearby park)
 - Different themes: Power Walk (fitness), Nature Stroll (mindfulness), Social Saunter (connection)
 - Self-organizing via Slack poll each morning: "Who's walking at noon?"
@@ -177,23 +185,27 @@ Small prize pool: $40/week in coffee gift cards for random participants who comp
 - No equipment, no instruction, no management needed
 
 **Solution 2: Wellness Resource Library ($100)**
+
 - Curate free resources: YouTube channels for desk exercises, meditation apps' free tiers, wellness podcasts
 - Print simple guides for break room: "5 Stretches You Can Do at Your Desk"
 - Create shared Spotify wellness playlists
 - Start employee book/resource lending: wellness books people already own
 
 **Solution 3: Wellness Wednesdays ($150)**
+
 - Monthly 30-minute lunch sessions led by employee volunteers
 - Topics: "My Morning Routine," "How I Manage Stress," "Easy Healthy Recipes"
 - $50/month for healthy snacks at sessions
 - Builds community, shares knowledge, costs almost nothing
 
 **Solution 4: Gratitude and Recognition Channel ($0)**
+
 - #wellness-wins Slack channel for sharing accomplishments
 - Weekly "Wellness Hero" recognition for someone supporting others' wellbeing
 - Social motivation and community building at zero cost
 
 **Solution 5: Standing Challenge Board ($50)**
+
 - Physical board in break room tracking collective goals
 - "Together we've walked X miles" / "We've taken X stairs"
 - Visual progress creates community motivation
@@ -213,12 +225,14 @@ Your $500 budget creates advantages expensive programs cannot match:
 **IMPLEMENTATION PLAN**
 
 **Week 1: Foundation**
+
 - Monday: Send survey - "What would help you feel healthier at work?" (identifies intrinsic motivators)
 - Tuesday-Wednesday: Identify and recruit 5 Wellness Champions from respondents
 - Thursday: Set up Slack channels (#wellness-wins, #wellness-exchange, #walking-buddies)
 - Friday: Champions announce their first offerings
 
 **Week 2: Launch**
+
 - Monday: Official program announcement emphasizing peer-led, community-owned nature
 - Tuesday: First micro-challenge begins (water intake)
 - Wednesday: First Wellness Wednesday lunch session
@@ -226,6 +240,7 @@ Your $500 budget creates advantages expensive programs cannot match:
 - Friday: Celebrate Week 1 participation in Slack
 
 **Week 3: Momentum**
+
 - Continue challenges and activities
 - Champions share early success stories
 - Add Wellness Resource Library to break room

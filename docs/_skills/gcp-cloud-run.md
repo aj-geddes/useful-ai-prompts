@@ -1,15 +1,16 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Deploy containerized applications on Google Cloud Run with automatic
+date: "2025-01-01"
+description:
+  Deploy containerized applications on Google Cloud Run with automatic
   scaling, traffic management, and service mesh integration. Use for container-based
   serverless computing.
 layout: skill
 slug: gcp-cloud-run
 tags:
-- go
-- gcp
-- deployment
+  - go
+  - gcp
+  - deployment
 title: gcp-cloud-run
 ---
 
@@ -105,7 +106,7 @@ CMD ["node", "server.js"]
 
 ```javascript
 // server.js
-const express = require('express');
+const express = require("express");
 const app = express();
 
 const PORT = process.env.PORT || 8080;
@@ -113,46 +114,46 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 
 // Health check endpoint
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
 // Liveness probe
-app.get('/live', (req, res) => {
-  res.status(200).send('alive');
+app.get("/live", (req, res) => {
+  res.status(200).send("alive");
 });
 
 // Readiness probe
-app.get('/ready', (req, res) => {
-  res.status(200).send('ready');
+app.get("/ready", (req, res) => {
+  res.status(200).send("ready");
 });
 
 // API endpoints
-app.get('/api/data', async (req, res) => {
+app.get("/api/data", async (req, res) => {
   try {
     const data = await fetchData();
     res.json(data);
   } catch (error) {
-    console.error('Error fetching data:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error("Error fetching data:", error);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
 // Graceful shutdown
 let isShuttingDown = false;
 
-process.on('SIGTERM', () => {
-  console.log('SIGTERM signal received: closing HTTP server');
+process.on("SIGTERM", () => {
+  console.log("SIGTERM signal received: closing HTTP server");
   isShuttingDown = true;
 
   server.close(() => {
-    console.log('HTTP server closed');
+    console.log("HTTP server closed");
     process.exit(0);
   });
 
   // Force close after 30 seconds
   setTimeout(() => {
-    console.error('Forced shutdown due to timeout');
+    console.error("Forced shutdown due to timeout");
     process.exit(1);
   }, 30000);
 });
@@ -527,6 +528,7 @@ gcloud builds submit \
 ## Best Practices
 
 ### ✅ DO
+
 - Use container health checks
 - Set appropriate CPU and memory
 - Implement graceful shutdown
@@ -537,6 +539,7 @@ gcloud builds submit \
 - Implement startup and liveness probes
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use default service account
 - Create stateful applications

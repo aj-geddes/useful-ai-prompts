@@ -1,14 +1,15 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Design NoSQL database schemas for MongoDB and DynamoDB. Use when modeling
+date: "2025-01-01"
+description:
+  Design NoSQL database schemas for MongoDB and DynamoDB. Use when modeling
   document structures, designing collections, or planning NoSQL data architectures.
 layout: skill
 slug: nosql-database-design
 tags:
-- go
-- mongodb
-- data
+  - go
+  - mongodb
+  - data
 title: nosql-database-design
 ---
 
@@ -36,7 +37,7 @@ Design scalable NoSQL schemas for MongoDB (document) and DynamoDB (key-value). C
 
 ```javascript
 // Single document with embedded arrays
-db.createCollection("users")
+db.createCollection("users");
 
 db.users.insertOne({
   _id: ObjectId("..."),
@@ -49,7 +50,7 @@ db.users.insertOne({
     street: "123 Main St",
     city: "New York",
     state: "NY",
-    zipCode: "10001"
+    zipCode: "10001",
   },
 
   // Embedded array of items
@@ -57,85 +58,85 @@ db.users.insertOne({
     {
       orderId: ObjectId("..."),
       date: new Date(),
-      total: 149.99
+      total: 149.99,
     },
     {
       orderId: ObjectId("..."),
       date: new Date(),
-      total: 89.99
-    }
-  ]
-})
+      total: 89.99,
+    },
+  ],
+});
 ```
 
 **MongoDB - Referenced Documents:**
 
 ```javascript
 // Separate collections with references
-db.createCollection("users")
-db.createCollection("orders")
+db.createCollection("users");
+db.createCollection("orders");
 
 db.users.insertOne({
   _id: ObjectId("..."),
   email: "john@example.com",
-  name: "John Doe"
-})
+  name: "John Doe",
+});
 
 db.orders.insertMany([
   {
     _id: ObjectId("..."),
-    userId: ObjectId("..."),  // Reference to user
+    userId: ObjectId("..."), // Reference to user
     orderDate: new Date(),
-    total: 149.99
+    total: 149.99,
   },
   {
     _id: ObjectId("..."),
     userId: ObjectId("..."),
     orderDate: new Date(),
-    total: 89.99
-  }
-])
+    total: 89.99,
+  },
+]);
 
 // Query with $lookup for JOINs
 db.orders.aggregate([
   {
-    $match: { userId: ObjectId("...") }
+    $match: { userId: ObjectId("...") },
   },
   {
     $lookup: {
       from: "users",
       localField: "userId",
       foreignField: "_id",
-      as: "user"
-    }
-  }
-])
+      as: "user",
+    },
+  },
+]);
 ```
 
 ### Indexing in MongoDB
 
 ```javascript
 // Single field index
-db.users.createIndex({ email: 1 })
-db.orders.createIndex({ createdAt: -1 })
+db.users.createIndex({ email: 1 });
+db.orders.createIndex({ createdAt: -1 });
 
 // Compound index
-db.orders.createIndex({ userId: 1, createdAt: -1 })
+db.orders.createIndex({ userId: 1, createdAt: -1 });
 
 // Text index for search
-db.products.createIndex({ name: "text", description: "text" })
+db.products.createIndex({ name: "text", description: "text" });
 
 // Geospatial index
-db.stores.createIndex({ location: "2dsphere" })
+db.stores.createIndex({ location: "2dsphere" });
 
 // TTL index for auto-expiration
-db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 })
+db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 });
 
 // Sparse index (only documents with field)
-db.users.createIndex({ phone: 1 }, { sparse: true })
+db.users.createIndex({ phone: 1 }, { sparse: true });
 
 // Check index usage
-db.users.aggregate([{ $indexStats: {} }])
+db.users.aggregate([{ $indexStats: {} }]);
 ```
 
 ### Schema Validation
@@ -151,28 +152,28 @@ db.createCollection("products", {
         _id: { bsonType: "objectId" },
         name: {
           bsonType: "string",
-          description: "Product name (required)"
+          description: "Product name (required)",
         },
         price: {
           bsonType: "decimal",
           minimum: 0,
-          description: "Price must be positive"
+          description: "Price must be positive",
         },
         category: {
           enum: ["electronics", "clothing", "food"],
-          description: "Category must be one of listed values"
+          description: "Category must be one of listed values",
         },
         tags: {
           bsonType: "array",
-          items: { bsonType: "string" }
+          items: { bsonType: "string" },
         },
         createdAt: {
-          bsonType: "date"
-        }
-      }
-    }
-  }
-})
+          bsonType: "date",
+        },
+      },
+    },
+  },
+});
 ```
 
 ## DynamoDB Schema Design
@@ -181,31 +182,31 @@ db.createCollection("products", {
 
 ```javascript
 // DynamoDB table with single primary key
-const TableName = "users"
+const TableName = "users";
 const params = {
   TableName,
   KeySchema: [
-    { AttributeName: "userId", KeyType: "HASH" }  // Partition key
+    { AttributeName: "userId", KeyType: "HASH" }, // Partition key
   ],
   AttributeDefinitions: [
-    { AttributeName: "userId", AttributeType: "S" }  // String
+    { AttributeName: "userId", AttributeType: "S" }, // String
   ],
-  BillingMode: "PAY_PER_REQUEST"  // On-demand
-}
+  BillingMode: "PAY_PER_REQUEST", // On-demand
+};
 
 // DynamoDB table with composite primary key
 const ordersParams = {
   TableName: "orders",
   KeySchema: [
-    { AttributeName: "userId", KeyType: "HASH" },      // Partition key
-    { AttributeName: "orderId", KeyType: "RANGE" }    // Sort key
+    { AttributeName: "userId", KeyType: "HASH" }, // Partition key
+    { AttributeName: "orderId", KeyType: "RANGE" }, // Sort key
   ],
   AttributeDefinitions: [
     { AttributeName: "userId", AttributeType: "S" },
-    { AttributeName: "orderId", AttributeType: "S" }
+    { AttributeName: "orderId", AttributeType: "S" },
   ],
-  BillingMode: "PAY_PER_REQUEST"
-}
+  BillingMode: "PAY_PER_REQUEST",
+};
 ```
 
 ### Global Secondary Indexes (GSI)
@@ -214,22 +215,18 @@ const ordersParams = {
 // Add GSI for querying by email
 const gsiParams = {
   TableName: "users",
-  AttributeDefinitions: [
-    { AttributeName: "email", AttributeType: "S" }
-  ],
+  AttributeDefinitions: [{ AttributeName: "email", AttributeType: "S" }],
   GlobalSecondaryIndexes: [
     {
       IndexName: "emailIndex",
-      KeySchema: [
-        { AttributeName: "email", KeyType: "HASH" }
-      ],
+      KeySchema: [{ AttributeName: "email", KeyType: "HASH" }],
       Projection: {
-        ProjectionType: "ALL"  // Return all attributes
+        ProjectionType: "ALL", // Return all attributes
       },
-      BillingMode: "PAY_PER_REQUEST"
-    }
-  ]
-}
+      BillingMode: "PAY_PER_REQUEST",
+    },
+  ],
+};
 
 // GSI with composite key for time-based queries
 const timeIndexParams = {
@@ -238,13 +235,13 @@ const timeIndexParams = {
       IndexName: "userCreatedIndex",
       KeySchema: [
         { AttributeName: "userId", KeyType: "HASH" },
-        { AttributeName: "createdAt", KeyType: "RANGE" }
+        { AttributeName: "createdAt", KeyType: "RANGE" },
       ],
       Projection: { ProjectionType: "ALL" },
-      BillingMode: "PAY_PER_REQUEST"
-    }
-  ]
-}
+      BillingMode: "PAY_PER_REQUEST",
+    },
+  ],
+};
 ```
 
 ### DynamoDB Item Operations
@@ -261,11 +258,11 @@ const putParams = {
     metadata: {
       M: {
         joinDate: { N: Date.now().toString() },
-        source: { S: "web" }
-      }
-    }
-  }
-}
+        source: { S: "web" },
+      },
+    },
+  },
+};
 
 // Query using GSI
 const queryParams = {
@@ -273,21 +270,18 @@ const queryParams = {
   IndexName: "emailIndex",
   KeyConditionExpression: "email = :email",
   ExpressionAttributeValues: {
-    ":email": { S: "john@example.com" }
-  }
-}
+    ":email": { S: "john@example.com" },
+  },
+};
 
 // Batch get items
 const batchGetParams = {
   RequestItems: {
-    "users": {
-      Keys: [
-        { userId: { S: "user-123" } },
-        { userId: { S: "user-456" } }
-      ]
-    }
-  }
-}
+    users: {
+      Keys: [{ userId: { S: "user-123" } }, { userId: { S: "user-456" } }],
+    },
+  },
+};
 ```
 
 ## Denormalization Patterns
@@ -299,18 +293,18 @@ const batchGetParams = {
 db.orders.insertOne({
   _id: ObjectId("..."),
   userId: ObjectId("..."),
-  userEmail: "john@example.com",      // Denormalized
-  userName: "John Doe",                // Denormalized
+  userEmail: "john@example.com", // Denormalized
+  userName: "John Doe", // Denormalized
   createdAt: new Date(),
   items: [
     {
       productId: ObjectId("..."),
-      productName: "Laptop",            // Denormalized
-      productPrice: 999.99,             // Denormalized
-      quantity: 1
-    }
-  ]
-})
+      productName: "Laptop", // Denormalized
+      productPrice: 999.99, // Denormalized
+      quantity: 1,
+    },
+  ],
+});
 ```
 
 **DynamoDB - Denormalization with Consistency:**
@@ -328,8 +322,8 @@ const params = {
     userSnapshot: {
       M: {
         email: { S: "john@example.com" },
-        address: { S: "123 Main St" }
-      }
+        address: { S: "123 Main St" },
+      },
     },
 
     // Items with product information
@@ -340,13 +334,13 @@ const params = {
             productId: { S: "prod-789" },
             name: { S: "Laptop" },
             price: { N: "999.99" },
-            quantity: { N: "1" }
-          }
-        }
-      ]
-    }
-  }
-}
+            quantity: { N: "1" },
+          },
+        },
+      ],
+    },
+  },
+};
 ```
 
 ## Design Patterns
@@ -362,12 +356,12 @@ db.sensor_data.insertOne({
   measurements: [
     { time: "12:00", temperature: 72.5, humidity: 45 },
     { time: "12:01", temperature: 72.6, humidity: 45.2 },
-    { time: "12:02", temperature: 72.4, humidity: 44.8 }
-  ]
-})
+    { time: "12:02", temperature: 72.4, humidity: 44.8 },
+  ],
+});
 
 // Index for efficient queries
-db.sensor_data.createIndex({ sensorId: 1, date: -1 })
+db.sensor_data.createIndex({ sensorId: 1, date: -1 });
 ```
 
 **DynamoDB - One-to-Many Relationship:**
@@ -378,13 +372,13 @@ db.sensor_data.createIndex({ sensorId: 1, date: -1 })
 const commentParams = {
   TableName: "comments",
   Item: {
-    userId: { S: "user-123" },           // Partition key
-    commentId: { S: "comment-789" },     // Sort key
+    userId: { S: "user-123" }, // Partition key
+    commentId: { S: "comment-789" }, // Sort key
     postId: { S: "post-456" },
     content: { S: "Great article!" },
-    createdAt: { N: Date.now().toString() }
-  }
-}
+    createdAt: { N: Date.now().toString() },
+  },
+};
 ```
 
 ## Capacity Planning
@@ -393,13 +387,13 @@ const commentParams = {
 
 ```javascript
 // Sharding for large collections
-sh.shardCollection("ecommerce.orders", { userId: "hashed" })
+sh.shardCollection("ecommerce.orders", { userId: "hashed" });
 
 // Monitor shard distribution
 db.orders.aggregate([
   { $group: { _id: "$userId", count: { $sum: 1 } } },
-  { $sort: { count: -1 } }
-])
+  { $sort: { count: -1 } },
+]);
 ```
 
 **DynamoDB - Partition Key Design:**

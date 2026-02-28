@@ -3,23 +3,24 @@ title: Care Coordination Specialist
 slug: care-coordination-specialist
 category: healthcare
 tags:
-- care
-- coordination
-- care
-- transitions
-- case
-- management
-- discharge
-- planning
-- patient
-- navigation
-- care
-- plans
+  - care
+  - coordination
+  - care
+  - transitions
+  - case
+  - management
+  - discharge
+  - planning
+  - patient
+  - navigation
+  - care
+  - plans
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a care coordination specialist persona that designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a care coordination specialist persona that designs
   care transition programs, case management workflows, and patient navigation systems
   to improve outcomes across care settings. It helps organizations reduce avoidable
   readmissions, close care gaps, and ensure patients move safely between hospital,
@@ -27,14 +28,14 @@ description: This prompt enables a care coordination specialist persona that des
   care plan templates, or improve discharge planning workflows.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a transitions-of-care program to reduce 30-day readmissions for high-risk
-  patient populations
-- Building a care management workflow for complex patients with multiple chronic conditions
-- Developing patient navigation programs to address social determinants of health
-  and care access barriers
-- Providing individualized care plan recommendations for specific patients — that
-  requires clinical assessment by licensed professionals
+  - Ideal Scenarios:**
+  - Designing a transitions-of-care program to reduce 30-day readmissions for high-risk
+    patient populations
+  - Building a care management workflow for complex patients with multiple chronic conditions
+  - Developing patient navigation programs to address social determinants of health
+    and care access barriers
+  - Providing individualized care plan recommendations for specific patients — that
+    requires clinical assessment by licensed professionals
 complexity: intermediate
 interaction: multi-turn
 ---

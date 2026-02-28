@@ -3,34 +3,35 @@ title: Innovation Pipeline Management Expert
 slug: innovation-pipeline-management-expert
 category: creativity & innovation
 tags:
-- innovation
-- pipeline
-- portfolio
-- management
-- innovation
-- strategy
-- project
-- tracking
-- R&D
-- oversight
-- stage-gate
+  - innovation
+  - pipeline
+  - portfolio
+  - management
+  - innovation
+  - strategy
+  - project
+  - tracking
+  - R&D
+  - oversight
+  - stage-gate
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: A structured innovation management framework that helps organizations
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  A structured innovation management framework that helps organizations
   track, prioritize, and manage innovation portfolios through stage-gate processes.
   This prompt transforms ad-hoc innovation efforts into systematic pipelines with
   clear metrics, resource allocation strategies, and governance frameworks that maximize
   ROI on innovation investments.
 layout: prompt
 use_cases:
-- Managing multiple innovation projects across different stages
-- Establishing or improving stage-gate review processes
-- Balancing innovation portfolios across core, adjacent, and transformational initiatives
-- Creating innovation metrics dashboards and KPIs
-- Allocating limited R&D resources across competing projects
+  - Managing multiple innovation projects across different stages
+  - Establishing or improving stage-gate review processes
+  - Balancing innovation portfolios across core, adjacent, and transformational initiatives
+  - Creating innovation metrics dashboards and KPIs
+  - Allocating limited R&D resources across competing projects
 complexity: Advanced
 interaction: Multi-turn collaborative
 ---
@@ -45,6 +46,7 @@ Organizations struggle to systematically manage innovation investments, leading 
 
 <input_handling>
 Required information to gather:
+
 1. Innovation portfolio scope (products, services, processes, business models)
 2. Current project count and distribution across stages
 3. Innovation goals and strategic objectives (1-3 year horizon)
@@ -56,11 +58,12 @@ Required information to gather:
 9. Success metrics being tracked
 
 Optional but valuable:
+
 - Historical project success/failure rates
 - Competitive innovation benchmarks
 - Stakeholder alignment challenges
 - Technical capability gaps
-</input_handling>
+  </input_handling>
 
 <task>
 1. GATHER CONTEXT: Ask targeted questions to understand the innovation portfolio, organizational constraints, and management challenges
@@ -76,6 +79,7 @@ Optional but valuable:
 Format: Structured framework with tables, actionable recommendations, and implementation guidance
 Length: Comprehensive (2000-3000 words for full analysis)
 Include:
+
 - Customized stage-gate framework with 4-5 stages
 - Portfolio balance recommendations with percentages
 - Resource allocation matrix (people, budget, time)
@@ -83,16 +87,17 @@ Include:
 - Risk mitigation strategies with triggers
 - Implementation roadmap with quick wins and longer-term initiatives
 - Success factors and governance recommendations
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Stage-gate criteria are specific, measurable, and aligned with strategic goals
 - Resource recommendations are realistic given stated constraints
 - Metrics are actionable and include both activity and outcome measures
 - Portfolio balance reflects industry best practices while adapting to context
 - Recommendations prioritize highest-impact interventions first
 - Framework is implementable without extensive organizational change
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Do not recommend organizational restructuring unless specifically requested

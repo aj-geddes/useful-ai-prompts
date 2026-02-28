@@ -1,12 +1,13 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Conduct comprehensive web performance audits. Measure page speed, identify
+date: "2025-01-01"
+description:
+  Conduct comprehensive web performance audits. Measure page speed, identify
   bottlenecks, and recommend optimizations to improve user experience and SEO.
 layout: skill
 slug: web-performance-audit
 tags:
-- development
+  - development
 title: web-performance-audit
 ---
 
@@ -214,24 +215,24 @@ class PerformanceMonitoring {
   setupMonitoring() {
     return {
       tools: [
-        'Google Analytics (Web Vitals)',
-        'Datadog or New Relic',
-        'Sentry for errors',
-        'Custom monitoring'
+        "Google Analytics (Web Vitals)",
+        "Datadog or New Relic",
+        "Sentry for errors",
+        "Custom monitoring",
       ],
       metrics: [
-        'LCP (Largest Contentful Paint)',
-        'FID (First Input Delay)',
-        'CLS (Cumulative Layout Shift)',
-        'FCP (First Contentful Paint)',
-        'TTI (Time to Interactive)'
+        "LCP (Largest Contentful Paint)",
+        "FID (First Input Delay)",
+        "CLS (Cumulative Layout Shift)",
+        "FCP (First Contentful Paint)",
+        "TTI (Time to Interactive)",
       ],
-      frequency: 'Real-time monitoring',
+      frequency: "Real-time monitoring",
       alerts: {
-        lcp_degradation: 'Alert if >3 seconds',
-        fid_degradation: 'Alert if >200ms',
-        cls_degradation: 'Alert if >0.2'
-      }
+        lcp_degradation: "Alert if >3 seconds",
+        fid_degradation: "Alert if >200ms",
+        cls_degradation: "Alert if >0.2",
+      },
     };
   }
 
@@ -240,35 +241,35 @@ class PerformanceMonitoring {
       baseline: {
         lcp: metrics.lcp,
         fid: metrics.fid,
-        cls: metrics.cls
+        cls: metrics.cls,
       },
       targets: {
-        lcp: metrics.lcp * 0.9,  // 10% improvement
+        lcp: metrics.lcp * 0.9, // 10% improvement
         fid: metrics.fid * 0.8,
-        cls: metrics.cls * 0.8
+        cls: metrics.cls * 0.8,
       },
-      review_frequency: 'Weekly',
-      improvement_tracking: 'Month-over-month trends'
+      review_frequency: "Weekly",
+      improvement_tracking: "Month-over-month trends",
     };
   }
 
   setupPerformanceBudget() {
     return {
       javascript: {
-        target: '150KB gzipped',
-        monitor: 'Every build',
-        alert: 'If exceeds 160KB'
+        target: "150KB gzipped",
+        monitor: "Every build",
+        alert: "If exceeds 160KB",
       },
       css: {
-        target: '50KB gzipped',
-        monitor: 'Every build',
-        alert: 'If exceeds 55KB'
+        target: "50KB gzipped",
+        monitor: "Every build",
+        alert: "If exceeds 55KB",
       },
       images: {
-        target: '500KB total',
-        monitor: 'Every deployment',
-        alert: 'If exceeds 550KB'
-      }
+        target: "500KB total",
+        monitor: "Every deployment",
+        alert: "If exceeds 550KB",
+      },
     };
   }
 }
@@ -277,6 +278,7 @@ class PerformanceMonitoring {
 ## Best Practices
 
 ### ✅ DO
+
 - Measure regularly (not just once)
 - Use field data (real users) + lab data
 - Focus on Core Web Vitals
@@ -289,6 +291,7 @@ class PerformanceMonitoring {
 - Document improvements
 
 ### ❌ DON'T
+
 - Ignore field data
 - Focus on one metric only
 - Set impossible targets

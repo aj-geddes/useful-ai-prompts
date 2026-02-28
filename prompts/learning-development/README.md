@@ -22,4 +22,4 @@ Educational design and capability building prompts for personal and organization
 
 ---
 
-*Learning and development prompts for education, training, and skill building.*
+_Learning and development prompts for education, training, and skill building._

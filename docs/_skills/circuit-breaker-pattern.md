@@ -1,13 +1,14 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Implement circuit breaker patterns for fault tolerance, automatic failure
+date: "2025-01-01"
+description:
+  Implement circuit breaker patterns for fault tolerance, automatic failure
   detection, and fallback mechanisms. Use when calling external services, handling
   cascading failures, or implementing resilience patterns.
 layout: skill
 slug: circuit-breaker-pattern
 tags:
-- development
+  - development
 title: circuit-breaker-pattern
 ---
 
@@ -55,9 +56,9 @@ Back to CLOSED or OPEN
 
 ```typescript
 enum CircuitState {
-  CLOSED = 'CLOSED',
-  OPEN = 'OPEN',
-  HALF_OPEN = 'HALF_OPEN'
+  CLOSED = "CLOSED",
+  OPEN = "OPEN",
+  HALF_OPEN = "HALF_OPEN",
 }
 
 interface CircuitBreakerConfig {
@@ -81,7 +82,7 @@ class CircuitBreaker {
     failures: 0,
     successes: 0,
     consecutiveFailures: 0,
-    consecutiveSuccesses: 0
+    consecutiveSuccesses: 0,
   };
   private nextAttempt: number = Date.now();
 
@@ -89,22 +90,22 @@ class CircuitBreaker {
 
   async execute<T>(
     operation: () => Promise<T>,
-    fallback?: () => T | Promise<T>
+    fallback?: () => T | Promise<T>,
   ): Promise<T> {
     if (this.state === CircuitState.OPEN) {
       if (Date.now() < this.nextAttempt) {
-        console.log('Circuit breaker OPEN, using fallback');
+        console.log("Circuit breaker OPEN, using fallback");
 
         if (fallback) {
           return await fallback();
         }
 
-        throw new Error('Circuit breaker is OPEN');
+        throw new Error("Circuit breaker is OPEN");
       }
 
       // Try to recover
       this.state = CircuitState.HALF_OPEN;
-      console.log('Circuit breaker entering HALF_OPEN state');
+      console.log("Circuit breaker entering HALF_OPEN state");
     }
 
     try {
@@ -122,17 +123,15 @@ class CircuitBreaker {
     }
   }
 
-  private async executeWithTimeout<T>(
-    operation: () => Promise<T>
-  ): Promise<T> {
+  private async executeWithTimeout<T>(operation: () => Promise<T>): Promise<T> {
     return Promise.race([
       operation(),
       new Promise<T>((_, reject) =>
         setTimeout(
-          () => reject(new Error('Operation timeout')),
-          this.config.timeout
-        )
-      )
+          () => reject(new Error("Operation timeout")),
+          this.config.timeout,
+        ),
+      ),
     ]);
   }
 
@@ -142,10 +141,8 @@ class CircuitBreaker {
     this.stats.consecutiveFailures = 0;
 
     if (this.state === CircuitState.HALF_OPEN) {
-      if (
-        this.stats.consecutiveSuccesses >= this.config.successThreshold
-      ) {
-        console.log('Circuit breaker CLOSED after recovery');
+      if (this.stats.consecutiveSuccesses >= this.config.successThreshold) {
+        console.log("Circuit breaker CLOSED after recovery");
         this.state = CircuitState.CLOSED;
         this.resetStats();
       }
@@ -159,7 +156,7 @@ class CircuitBreaker {
     this.stats.lastFailureTime = Date.now();
 
     if (this.state === CircuitState.HALF_OPEN) {
-      console.log('Circuit breaker OPEN after failed recovery');
+      console.log("Circuit breaker OPEN after failed recovery");
       this.trip();
       return;
     }
@@ -168,7 +165,7 @@ class CircuitBreaker {
       this.state === CircuitState.CLOSED &&
       this.stats.consecutiveFailures >= this.config.failureThreshold
     ) {
-      console.log('Circuit breaker OPEN after threshold reached');
+      console.log("Circuit breaker OPEN after threshold reached");
       this.trip();
     }
   }
@@ -183,7 +180,7 @@ class CircuitBreaker {
       failures: 0,
       successes: 0,
       consecutiveFailures: 0,
-      consecutiveSuccesses: 0
+      consecutiveSuccesses: 0,
     };
   }
 
@@ -206,20 +203,20 @@ const breaker = new CircuitBreaker({
   failureThreshold: 5,
   successThreshold: 2,
   timeout: 3000,
-  resetTimeout: 60000
+  resetTimeout: 60000,
 });
 
 async function callExternalAPI() {
   return breaker.execute(
     async () => {
-      const response = await fetch('https://api.example.com/data');
-      if (!response.ok) throw new Error('API error');
+      const response = await fetch("https://api.example.com/data");
+      if (!response.ok) throw new Error("API error");
       return response.json();
     },
     () => {
       // Fallback: return cached data
-      return { data: 'cached' };
-    }
+      return { data: "cached" };
+    },
   );
 }
 ```
@@ -245,14 +242,14 @@ class MonitoredCircuitBreaker extends CircuitBreaker {
     failedRequests: 0,
     rejectedRequests: 0,
     averageResponseTime: 0,
-    lastStateChange: Date.now()
+    lastStateChange: Date.now(),
   };
 
   private responseTimes: number[] = [];
 
   async execute<T>(
     operation: () => Promise<T>,
-    fallback?: () => T | Promise<T>
+    fallback?: () => T | Promise<T>,
   ): Promise<T> {
     this.metrics.totalRequests++;
 
@@ -284,14 +281,13 @@ class MonitoredCircuitBreaker extends CircuitBreaker {
     }
 
     this.metrics.averageResponseTime =
-      this.responseTimes.reduce((a, b) => a + b, 0) /
-      this.responseTimes.length;
+      this.responseTimes.reduce((a, b) => a + b, 0) / this.responseTimes.length;
   }
 
   getMetrics(): CircuitBreakerMetrics {
     return {
       ...this.metrics,
-      state: this.getState()
+      state: this.getState(),
     };
   }
 }
@@ -300,7 +296,7 @@ class MonitoredCircuitBreaker extends CircuitBreaker {
 ### 3. **Opossum-Style Circuit Breaker (Node.js)**
 
 ```typescript
-import CircuitBreaker from 'opossum';
+import CircuitBreaker from "opossum";
 
 // Create circuit breaker
 const options = {
@@ -309,56 +305,57 @@ const options = {
   resetTimeout: 30000, // 30 seconds
   rollingCountTimeout: 10000,
   rollingCountBuckets: 10,
-  name: 'api-breaker'
+  name: "api-breaker",
 };
 
 const breaker = new CircuitBreaker(callExternalAPI, options);
 
 // Event handlers
-breaker.on('open', () => {
-  console.log('Circuit breaker opened');
+breaker.on("open", () => {
+  console.log("Circuit breaker opened");
 });
 
-breaker.on('halfOpen', () => {
-  console.log('Circuit breaker half-opened');
+breaker.on("halfOpen", () => {
+  console.log("Circuit breaker half-opened");
 });
 
-breaker.on('close', () => {
-  console.log('Circuit breaker closed');
+breaker.on("close", () => {
+  console.log("Circuit breaker closed");
 });
 
-breaker.on('success', (result) => {
-  console.log('Request succeeded:', result);
+breaker.on("success", (result) => {
+  console.log("Request succeeded:", result);
 });
 
-breaker.on('failure', (error) => {
-  console.error('Request failed:', error);
+breaker.on("failure", (error) => {
+  console.error("Request failed:", error);
 });
 
-breaker.on('timeout', () => {
-  console.error('Request timed out');
+breaker.on("timeout", () => {
+  console.error("Request timed out");
 });
 
-breaker.on('reject', () => {
-  console.warn('Request rejected by circuit breaker');
+breaker.on("reject", () => {
+  console.warn("Request rejected by circuit breaker");
 });
 
 // Fallback
 breaker.fallback(() => {
-  return { data: 'fallback data' };
+  return { data: "fallback data" };
 });
 
 // Use circuit breaker
 async function callExternalAPI() {
-  const response = await fetch('https://api.example.com/data');
-  if (!response.ok) throw new Error('API error');
+  const response = await fetch("https://api.example.com/data");
+  if (!response.ok) throw new Error("API error");
   return response.json();
 }
 
 // Execute with circuit breaker
-breaker.fire()
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
+breaker
+  .fire()
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
 ```
 
 ### 4. **Python Circuit Breaker**
@@ -555,6 +552,7 @@ public class CircuitBreakerExample {
 ## Best Practices
 
 ### ✅ DO
+
 - Use appropriate thresholds for your use case
 - Implement fallback mechanisms
 - Monitor circuit breaker states
@@ -567,6 +565,7 @@ public class CircuitBreakerExample {
 - Implement health checks
 
 ### ❌ DON'T
+
 - Use same breaker for all dependencies
 - Set unrealistic thresholds
 - Skip fallback implementation

@@ -1,12 +1,13 @@
 ---
 category: data-analytics
-date: '2025-01-01'
-description: Conduct statistical tests including t-tests, chi-square, ANOVA, and p-value
+date: "2025-01-01"
+description:
+  Conduct statistical tests including t-tests, chi-square, ANOVA, and p-value
   analysis for statistical significance, hypothesis validation, and A/B testing
 layout: skill
 slug: statistical-hypothesis-testing
 tags:
-- testing
+  - testing
 title: Statistical Hypothesis Testing
 ---
 

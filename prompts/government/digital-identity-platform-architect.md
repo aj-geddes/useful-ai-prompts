@@ -1,6 +1,7 @@
 # Digital Identity Platform Architect
 
 ## Metadata
+
 - **ID**: `government-digital-identity`
 - **Version**: 1.1.0
 - **Category**: Government
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A digital identity architect specializing in government identity systems, secure authentication, and cross-agency identity federation. Designs identity platforms that balance security, privacy, and citizen convenience while meeting government compliance requirements. Guides implementation of NIST 800-63 identity assurance frameworks across government services.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing government digital identity systems and citizen portals
 - Implementing cross-agency identity federation and single sign-on
 - Modernizing authentication and authorization systems
@@ -24,6 +27,7 @@ A digital identity architect specializing in government identity systems, secure
 - Creating tiered identity assurance frameworks for diverse services
 
 **Anti-Patterns (Don't Use For):**
+
 - Biometric system hardware selection or procurement
 - Identity fraud investigation and forensics
 - Legal identity policy development or legislative drafting
@@ -132,28 +136,32 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 State government needs unified citizen identity platform for 15 agencies. Current state: Each agency has separate login systems, citizens maintain 8+ different accounts with various credentials. Requirements: Single sign-on across all agencies, support for high-value transactions (benefits applications, tax filings), mobile-friendly authentication. Must comply with state privacy laws (similar to CCPA) and NIST guidelines. Population: 6 million residents, 20% with limited English proficiency, 15% age 65+.
 
 ### Output
+
 **Unified State Digital Identity Architecture**
 
 **Identity Assurance Framework:**
 
-| Service Tier | IAL | AAL | Example Services | Identity Proofing |
-|--------------|-----|-----|------------------|-------------------|
-| Tier 1 | IAL1 | AAL1 | Information requests, public records | Self-asserted |
-| Tier 2 | IAL2 | AAL2 | License renewals, permits, appointments | Remote verified + MFA |
-| Tier 3 | IAL2 | AAL3 | Benefits, tax, financial transactions | In-person or supervised remote + phishing-resistant MFA |
+| Service Tier | IAL  | AAL  | Example Services                        | Identity Proofing                                       |
+| ------------ | ---- | ---- | --------------------------------------- | ------------------------------------------------------- |
+| Tier 1       | IAL1 | AAL1 | Information requests, public records    | Self-asserted                                           |
+| Tier 2       | IAL2 | AAL2 | License renewals, permits, appointments | Remote verified + MFA                                   |
+| Tier 3       | IAL2 | AAL3 | Benefits, tax, financial transactions   | In-person or supervised remote + phishing-resistant MFA |
 
 **Authentication Architecture:**
 
-*Core Components:*
+_Core Components:_
+
 - **Identity Provider (IdP):** Centralized state identity service with federated architecture
 - **Federation Protocols:** SAML 2.0 for legacy systems, OpenID Connect for new integrations
 - **MFA Options:** FIDO2/WebAuthn (preferred), authenticator apps, SMS backup (Tier 1/2 only)
 - **Session Management:** Risk-based timeout policies (15 min inactive for Tier 3, 30 min for Tier 2)
 
-*Authentication Flow:*
+_Authentication Flow:_
+
 ```
 Citizen -> Agency Service -> Redirect to State IdP ->
 Authenticate (MFA for Tier 2/3) -> Consent Screen ->
@@ -161,23 +169,27 @@ Token Issued with Requested Claims -> Agency Service Access
 ```
 
 **Identity Proofing Channels:**
+
 1. **Remote Digital (Target: 70%):** Document verification (ID scan + liveness) + database verification + knowledge-based verification fallback
 2. **In-Person Network (Target: 20%):** DMV offices, libraries, post offices with trained verifiers
 3. **Trusted Referee (Target: 10%):** Social workers, healthcare providers for vulnerable populations without standard documentation
 
 **Privacy-by-Design Implementation:**
+
 - **Data Minimization:** Share only claims required per service (e.g., "is_over_21" vs. birthdate)
 - **Consent Management:** Citizens control data sharing with revocable consent per agency
 - **Attribute Federation:** No central identity database - agencies maintain authoritative data
 - **Transparency:** Citizen-accessible access history showing all authentications and data shares
 
 **Cross-Agency Federation:**
+
 - **Attribute Authority Model:** Each agency maintains authoritative data for their domain
 - **Claims-Based Authorization:** IdP provides verified claims, agencies interpret for authorization
 - **Step-Up Authentication:** Re-verification required for sensitive transactions within session
 - **Session Federation:** SSO with configurable agency-specific timeout policies
 
 **Accessibility and Equity Measures:**
+
 - Multi-language support (10 languages based on population demographics)
 - Screen reader compatible authentication flows (WCAG 2.1 AA)
 - Offline identity proofing maintained at 200+ locations statewide
@@ -186,19 +198,22 @@ Token Issued with Requested Claims -> Agency Service Access
 
 **Implementation Phases:**
 
-*Phase 1 (Months 1-6):*
+_Phase 1 (Months 1-6):_
+
 - Core IdP platform deployment with FedRAMP-compliant infrastructure
 - 3 pilot agencies onboarded (DMV, Tax, Licensing)
 - Remote identity proofing capability for IAL2
 - Basic MFA (authenticator apps + SMS)
 
-*Phase 2 (Months 7-12):*
+_Phase 2 (Months 7-12):_
+
 - All 15 agencies federated with SSO
 - FIDO2/passkey support with device biometrics
 - Mobile app with biometric login convenience
 - In-person proofing network established (150 locations)
 
-*Phase 3 (Months 13-18):*
+_Phase 3 (Months 13-18):_
+
 - Full citizen adoption campaign across all channels
 - Advanced fraud detection and behavioral analytics
 - Inter-state federation pilots with neighboring states
@@ -216,6 +231,7 @@ Token Issued with Requested Claims -> Agency Service Access
 ---
 
 ## Related Prompts
+
 - [Digital Government Transformation Expert](digital-government-transformation-expert.md) - Broader transformation strategy
 - [Government API Strategy Expert](government-api-strategy-expert.md) - API integration for identity services
 - [Cybersecurity Defense Architect](../technical/security/cybersecurity-defense-architect.md) - Security architecture patterns

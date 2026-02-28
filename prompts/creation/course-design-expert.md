@@ -1,6 +1,7 @@
 # Course Design Expert
 
 ## Metadata
+
 - **ID**: `creation-course-design`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical course design assistant that creates engaging, effective educational
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating online courses or digital learning programs
 - Designing corporate training and professional development
 - Building academic curriculum or workshop content
@@ -25,6 +27,7 @@ A practical course design assistant that creates engaging, effective educational
 - Structuring mentorship or coaching programs
 
 **Anti-patterns (Don't Use For):**
+
 - One-off presentation or webinar content
 - Documentation or reference materials
 - Marketing content disguised as education
@@ -105,6 +108,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Digital marketing fundamentals for small business owners. Learners: Small business owners, age 35-55, limited digital marketing experience. Outcomes: Launch and manage effective social media campaigns, measure ROI. Duration: 6-week online course, 2-3 hours per week. Format: Online self-paced with weekly live Q&A sessions."
 
 ### Output
@@ -116,6 +120,7 @@ Transform your small business with practical digital marketing skills. Learn to 
 
 **Learning Objectives:**
 By the end of this course, learners will be able to:
+
 - Develop a social media strategy aligned with business goals
 - Create engaging content that converts browsers to buyers
 - Set up and optimize paid advertising campaigns
@@ -124,53 +129,62 @@ By the end of this course, learners will be able to:
 **Curriculum Structure:**
 
 **Module 1: Digital Marketing Foundations (Week 1)**
+
 - Learning Goals: Understand digital marketing landscape
 - Content: Overview, customer personas, SMART goals, platform comparison
 - Activities: Create customer persona, audit online presence, set 3 goals
 - Live Session: "Finding Your Marketing Sweet Spot"
 
 **Module 2: Content Strategy & Creation (Week 2)**
+
 - Learning Goals: Plan and create engaging content
 - Content: Content pillars, caption writing, visual basics, calendar planning
 - Activities: Develop content strategy, create 2 weeks of posts
 - Live Session: "Content Creation Workshop"
 
 **Module 3: Organic Social Media Growth (Week 3)**
+
 - Learning Goals: Build engaged audience without paid advertising
 - Content: Algorithm basics, engagement strategies, hashtag research
 - Activities: Implement engagement strategy, create hashtag sets
 - Live Session: "Growing Your Audience Organically"
 
 **Module 4: Paid Advertising Fundamentals (Week 4)**
+
 - Learning Goals: Create and launch effective paid campaigns
 - Content: Ads Manager walkthrough, targeting, ad creative best practices
 - Activities: Set up account, create first campaign, design 3 creatives
 - Live Session: "Ads Manager Hands-On Lab"
 
 **Module 5: Analytics & Optimization (Week 5)**
+
 - Learning Goals: Measure performance and improve results
 - Content: Key metrics, analytics tools, Google Analytics setup, A/B testing
 - Activities: Set up tracking, analyze 2 weeks of performance
 - Live Session: "Reading the Data"
 
 **Module 6: Scaling & Automation (Week 6)**
+
 - Learning Goals: Build systems for sustainable growth
 - Content: Scaling campaigns, automation tools, long-term planning
 - Activities: Scale best content, set up automation, create 90-day plan
 - Live Session: "Building Your Marketing System"
 
 **Assessment & Certification:**
+
 - Weekly practical assignments (implement what you learned)
 - Final Project: Complete marketing campaign with results
 - Certificate Requirements: 80% on assignments, final project, 4 live sessions
 
 **Resource Recommendations:**
+
 - LMS: Teachable or Thinkific
 - Live Sessions: Zoom Pro
 - Community: Private Facebook Group
 - Video Recording: Loom for screen recordings
 
 **Implementation Timeline:**
+
 - Weeks 1-8: Content creation
 - Weeks 9-12: Marketing and launch
 - Weeks 13-18: Delivery and optimization
@@ -178,6 +192,7 @@ By the end of this course, learners will be able to:
 ---
 
 ## Related Prompts
+
 - [Curriculum Development Expert](../learning-development/curriculum-development-expert.md)
 - [Training Material Development Expert](../learning-development/training-material-development-expert.md)
 - [Learning Experience Design Expert](../learning-development/learning-experience-design-expert.md)

@@ -1,6 +1,7 @@
 # Decentralized Autonomous Organization Platform
 
 ## Metadata
+
 - **ID**: `blockchain-dao-governance-platform`
 - **Version**: 1.0.0
 - **Category**: Blockchain/DAO Governance
@@ -18,6 +19,7 @@ Designs and implements DAOs with governance frameworks, treasury management, and
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new DAOs for protocols, communities, or investment groups
 - Designing governance frameworks and voting mechanisms
 - Building treasury management and fund allocation systems
@@ -25,6 +27,7 @@ Designs and implements DAOs with governance frameworks, treasury management, and
 - Structuring legal wrappers for DAO operations
 
 **Anti-patterns (When NOT to Use):**
+
 - Centralized organization management without decentralization need
 - Traditional corporate governance structures
 - Simple multi-signature wallets without governance
@@ -115,6 +118,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Creating investment DAO for DeFi project funding. Members: 50-100 crypto investors, minimum $50K contribution. Decisions: investment allocation, exit strategies, fund operations. Want token-weighted voting but protection against whale dominance. Starting treasury: $5M. Need clear legal structure for US investors.
 
 ### Output
@@ -122,6 +126,7 @@ Creating investment DAO for DeFi project funding. Members: 50-100 crypto investo
 **DeFi Investment DAO Governance Design**
 
 **Governance Structure**
+
 ```
 Three-Tier Decision Architecture:
 
@@ -147,6 +152,7 @@ Operations Team (3 compensated roles):
 ```
 
 **Voting Mechanism**
+
 ```
 Token Distribution:
 - Total Supply: 1,000,000 INVEST tokens
@@ -175,6 +181,7 @@ Delegation System:
 ```
 
 **Treasury Management**
+
 ```
 Multi-Sig Structure:
 - Gnosis Safe: 4-of-7 signatures required
@@ -204,6 +211,7 @@ Investment Process:
 ```
 
 **Member Experience**
+
 ```
 Onboarding Requirements:
 - Minimum contribution: $50,000
@@ -226,6 +234,7 @@ Communication:
 ```
 
 **Legal Structure**
+
 ```
 Entity: Delaware Series LLC with DAO Addendum
 - Operating agreement: Incorporates DAO governance
@@ -248,6 +257,7 @@ Regulatory Considerations:
 ```
 
 **Emergency Procedures**
+
 ```
 Guardian Council (5-of-9 multi-sig):
 - Pause all treasury operations
@@ -271,6 +281,7 @@ Recovery Process:
 ```
 
 **Dispute Resolution**
+
 ```
 Internal Process:
 1. Community discussion (7 days)

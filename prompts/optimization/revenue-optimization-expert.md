@@ -1,6 +1,7 @@
 # Revenue Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-revenue-optimization`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically identifies and implements revenue optimization opportunities acro
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Revenue growth has plateaued
 - Pricing hasn't been optimized or reviewed in years
 - High customer acquisition cost with low lifetime value
@@ -26,6 +28,7 @@ Systematically identifies and implements revenue optimization opportunities acro
 - Expansion revenue opportunities underexploited
 
 **Anti-patterns (Don't Use For):**
+
 - New market entry strategy
 - Product development and feature prioritization
 - Cost reduction initiatives
@@ -137,6 +140,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "B2B SaaS with $5M ARR, 20% annual churn, single pricing tier at $99/month. Strong product with high engagement but we believe we're leaving money on the table with power users. Want to reach $7.5M ARR within 12 months without proportionally increasing sales headcount."
 
 ### Output
@@ -146,6 +150,7 @@ Avoid:
 **1. Revenue Analysis**
 
 **Current state:**
+
 - ARR: $5M
 - MRR: ~$417K
 - Estimated customers: ~4,200 (at $99/month)
@@ -161,6 +166,7 @@ Avoid:
 | Acquisition | Not in scope | N/A |
 
 **Gap to $7.5M target (50% increase = $2.5M):**
+
 - Cannot achieve through acquisition alone (not in scope)
 - Must come from: Pricing optimization + Expansion revenue + Retention improvement
 
@@ -172,26 +178,29 @@ Avoid:
 
 **Proposed tiered pricing:**
 
-| Tier | Price | Features | Target Segment |
-|------|-------|----------|----------------|
-| Starter | $79/mo | Core features, 1 user, standard support | Light users, price-sensitive |
-| Professional | $149/mo | All features, 3 users, priority support | Current typical user |
-| Business | $299/mo | Advanced features, API, 10 users, dedicated support | Power users, teams |
-| Enterprise | Custom | Custom integrations, SLA, unlimited | Large accounts |
+| Tier         | Price   | Features                                            | Target Segment               |
+| ------------ | ------- | --------------------------------------------------- | ---------------------------- |
+| Starter      | $79/mo  | Core features, 1 user, standard support             | Light users, price-sensitive |
+| Professional | $149/mo | All features, 3 users, priority support             | Current typical user         |
+| Business     | $299/mo | Advanced features, API, 10 users, dedicated support | Power users, teams           |
+| Enterprise   | Custom  | Custom integrations, SLA, unlimited                 | Large accounts               |
 
 **Expected migration of current customers:**
+
 - 40% stay at $99 equivalent (grandfathered or Pro at $149)
 - 30% upgrade to Professional ($149) voluntarily
 - 20% upgrade to Business ($299) for team features
 - 10% downgrade to Starter ($79)
 
 **New customer revenue impact:**
+
 - ARPU increase from $99 to estimated $135 average
 - Impact: $600K+ ARR from pricing alone
 
 **B. Usage-Based Expansion (Target: $500K ARR)**
 
 **Add-on monetization:**
+
 - Additional users: $20/user/month beyond tier included
 - API calls: Metered pricing above 10K calls/month
 - Storage/data: Tiered pricing for high-volume users
@@ -202,6 +211,7 @@ Avoid:
 **C. Retention Improvement (Target: $400K saved ARR)**
 
 **Reduce churn from 20% to 12%:**
+
 - Dedicated customer success for accounts >$200/month
 - Health scoring with proactive intervention
 - Enhanced onboarding for first 30 days
@@ -212,6 +222,7 @@ Avoid:
 **D. Expansion Revenue Program (Target: $500K ARR)**
 
 **In-product growth mechanics:**
+
 - Seat expansion prompts when team grows
 - Feature gating that drives tier upgrades
 - Usage dashboards showing value and upgrade path
@@ -220,6 +231,7 @@ Avoid:
 **3. Testing Approach**
 
 **Phase 1: New Customer Pricing (Month 1-2)**
+
 - Test: Show tiered pricing to new customers only
 - Control: Continue $99 single tier
 - Sample: 1,000 new trials per variation
@@ -227,12 +239,14 @@ Avoid:
 - Duration: 4-6 weeks
 
 **Phase 2: Existing Customer Communication (Month 3)**
+
 - Grandfather existing customers at $99 for 12 months
 - Announce new tiers with clear value positioning
 - Proactive outreach for voluntary upgrades (with incentives)
 - Test: Active upgrade campaign vs. passive notification
 
 **Risk Mitigation:**
+
 - No forced migrations in first 6 months
 - Clear upgrade path with tangible value
 - Dedicated support for pricing questions
@@ -241,24 +255,28 @@ Avoid:
 **4. Implementation Roadmap**
 
 **Month 1: Foundation**
+
 - Finalize pricing tiers and feature packaging
 - Build infrastructure for tiered access
 - Prepare customer communication materials
 - Train sales and success teams
 
 **Month 2-3: New Customer Launch**
+
 - Launch tiered pricing for new customers
 - A/B test pricing page messaging
 - Monitor conversion rates closely
 - Iterate based on results
 
 **Month 4-6: Existing Customer Transition**
+
 - Communicate new pricing with grandfathering
 - Launch upgrade campaigns with incentives
 - Implement usage-based add-ons
 - Begin proactive retention program
 
 **Month 7-12: Optimization**
+
 - Launch win-back program
 - Expand customer success coverage
 - Continuous pricing optimization
@@ -266,17 +284,18 @@ Avoid:
 
 **Projected Impact:**
 
-| Initiative | ARR Impact | Timeline |
-|------------|------------|----------|
-| Tiered pricing (new customers) | +$600K | Month 3-12 |
-| Usage-based add-ons | +$300K | Month 6-12 |
-| Expansion revenue program | +$500K | Month 6-12 |
-| Retention improvement | +$400K saved | Month 4-12 |
-| **Total** | **+$1.8M** | 12 months |
+| Initiative                     | ARR Impact   | Timeline   |
+| ------------------------------ | ------------ | ---------- |
+| Tiered pricing (new customers) | +$600K       | Month 3-12 |
+| Usage-based add-ons            | +$300K       | Month 6-12 |
+| Expansion revenue program      | +$500K       | Month 6-12 |
+| Retention improvement          | +$400K saved | Month 4-12 |
+| **Total**                      | **+$1.8M**   | 12 months  |
 
 **Projected ARR:** $5M + $1.8M = $6.8M (with trajectory toward $7.5M)
 
 **Key Success Metrics:**
+
 - Net Revenue Retention: 80% to 110%+
 - ARPU: $99 to $135+
 - Churn: 20% to 12%

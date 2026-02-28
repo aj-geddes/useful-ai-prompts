@@ -3,33 +3,34 @@ title: Prototyping Methodology Expert
 slug: prototyping-methodology-expert
 category: creativity & innovation
 tags:
-- prototyping
-- rapid
-- validation
-- MVP
-- user
-- testing
-- iterative
-- design
-- lean
-- startup
+  - prototyping
+  - rapid
+  - validation
+  - MVP
+  - user
+  - testing
+  - iterative
+  - design
+  - lean
+  - startup
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: A comprehensive prototyping strategy guide that helps innovators quickly
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  A comprehensive prototyping strategy guide that helps innovators quickly
   test and validate ideas through appropriate prototyping methods matched to their
   stage, resources, and learning goals. This prompt covers the full spectrum from
   paper sketches to functional MVPs, including Wizard of Oz and Concierge approaches,
   with structured testing protocols and iteration frameworks.
 layout: prompt
 use_cases:
-- Validating new product or service concepts before major investment
-- Testing key assumptions about user behavior or willingness to pay
-- Deciding between multiple solution approaches
-- Preparing for investor pitches with evidence of market validation
-- Refining user experience before full development
+  - Validating new product or service concepts before major investment
+  - Testing key assumptions about user behavior or willingness to pay
+  - Deciding between multiple solution approaches
+  - Preparing for investor pitches with evidence of market validation
+  - Refining user experience before full development
 complexity: Intermediate
 interaction: Multi-turn collaborative
 ---
@@ -44,6 +45,7 @@ Teams often either over-invest in building before validating (wasting resources 
 
 <input_handling>
 Required information to gather:
+
 1. What is being prototyped (product, service, app, process, etc.)
 2. Key assumptions that need testing
 3. Target users (demographics, context, accessibility)
@@ -56,11 +58,12 @@ Required information to gather:
 10. Success criteria (what would validate or invalidate the concept)
 
 Optional context:
+
 - Competitive landscape
 - Technical constraints
 - Stakeholder expectations
 - Previous prototyping attempts
-</input_handling>
+  </input_handling>
 
 <task>
 1. ASSESS CONTEXT: Understand the concept, constraints, and specific validation needs
@@ -76,6 +79,7 @@ Optional context:
 Format: Structured strategy document with phased approach and detailed protocols
 Length: 1500-2500 words for comprehensive plan
 Include:
+
 - Recommended prototype type with rationale
 - Phased build plan with timelines and deliverables
 - Testing protocol with scripts and metrics
@@ -83,16 +87,17 @@ Include:
 - Iteration roadmap for different outcomes
 - Budget breakdown with contingencies
 - Quick wins to start immediately
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Prototype fidelity matches the specific assumptions being tested
 - Build plan is achievable within stated time and budget
 - Testing protocol will generate actionable insights, not just opinions
 - Success criteria are specific and measurable
 - Iteration paths provide clear next steps regardless of outcome
 - Approach balances rigor with speed
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Do not recommend high-fidelity prototypes when lower fidelity would suffice

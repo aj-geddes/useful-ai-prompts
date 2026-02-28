@@ -1,6 +1,7 @@
 # Reading Intervention Specialist
 
 ## Metadata
+
 - **ID**: `education-reading-intervention-specialist`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt designs targeted, evidence-based reading intervention plans for students who are struggling with literacy. Grounded in the Science of Reading, it addresses the specific deficit areas — phonemic awareness, phonics, fluency, vocabulary, or comprehension — rather than applying generic remediation. The output is a structured intervention plan with specific activities, progress monitoring tools, and guidance for small group or individual implementation.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a small-group intervention for students reading below grade level in elementary through middle school
 - Selecting evidence-based strategies for a specific literacy skill deficit identified through diagnostic assessment
 - Building a Response to Intervention (RTI/MTSS) Tier 2 or Tier 3 literacy support plan
 
 **Anti-patterns (Don't Use For):**
+
 - Diagnosing reading disabilities — that requires licensed assessment by a reading specialist or psychologist
 - Replacing Tier 1 core reading instruction — intervention supplements, it does not substitute
 - Designing fluency or comprehension supports before phonics deficits are addressed in early readers
@@ -70,11 +75,13 @@ Avoid: Recommending leveled reading as a fluency or decoding intervention, gener
 ## Example Usage
 
 ### Input
+
 "I have a 2nd grader reading at a mid-1st grade level. She can segment words into individual sounds (phonemic awareness is okay) but she guesses at unknown words based on the first letter and context rather than decoding them. She frequently substitutes words that make sense (like 'house' for 'home') showing she's comprehending but not actually reading the print. This is a small group of 3 similar students. We have 30 minutes daily."
 
 ### Output
+
 **Reading Intervention Plan — Grade 2 Decoding Deficit**
-*Small Group (3 students) | 30 minutes daily | 6-week cycle*
+_Small Group (3 students) | 30 minutes daily | 6-week cycle_
 
 ---
 
@@ -87,22 +94,22 @@ This student profile — intact phonemic awareness, poor decoding, strategic gue
 
 **Session Structure (30 Minutes Daily)**
 
-| Time | Component | Purpose |
-|------|-----------|---------|
-| 5 min | Sound-Symbol Review | Rapid review of previously taught grapheme-phoneme correspondences with flashcards |
-| 10 min | New Phonics Instruction | Explicit teaching of one new correspondence or pattern using "I do, We do, You do" |
-| 8 min | Word Work | Blending and segmenting with new and review patterns (word cards, magnetic letters, word sorts) |
-| 7 min | Text Application | Decodable reader practice — words in text must include only taught patterns |
+| Time   | Component               | Purpose                                                                                         |
+| ------ | ----------------------- | ----------------------------------------------------------------------------------------------- |
+| 5 min  | Sound-Symbol Review     | Rapid review of previously taught grapheme-phoneme correspondences with flashcards              |
+| 10 min | New Phonics Instruction | Explicit teaching of one new correspondence or pattern using "I do, We do, You do"              |
+| 8 min  | Word Work               | Blending and segmenting with new and review patterns (word cards, magnetic letters, word sorts) |
+| 7 min  | Text Application        | Decodable reader practice — words in text must include only taught patterns                     |
 
 ---
 
 **Specific Activities**
 
-*Phoneme-Grapheme Flashcard Drill (5 min):* Use Orton-Gillingham style sound cards. Teacher shows card, students say the sound. Rotate through all taught correspondences, then reverse: teacher says sound, students write or tap the grapheme. Target: automatic recall.
+_Phoneme-Grapheme Flashcard Drill (5 min):_ Use Orton-Gillingham style sound cards. Teacher shows card, students say the sound. Rotate through all taught correspondences, then reverse: teacher says sound, students write or tap the grapheme. Target: automatic recall.
 
-*Elkonin Sound Boxes with Words (Word Work):* Write a target word above a row of boxes. Students push a token into each box as they say each phoneme, then blend back and write the word. Explicitly discuss: "We're reading every sound — no skipping." This directly counters the guessing pattern.
+_Elkonin Sound Boxes with Words (Word Work):_ Write a target word above a row of boxes. Students push a token into each box as they say each phoneme, then blend back and write the word. Explicitly discuss: "We're reading every sound — no skipping." This directly counters the guessing pattern.
 
-*Decodable Text Reading with Error Correction Protocol:* Use decodable texts at or slightly below current decoding level (not leveled readers with unpredictable words). When a student guesses or substitutes, use: "Stop — look at every letter. What does that say?" Do not supply the word. This builds the habit of reading all the print.
+_Decodable Text Reading with Error Correction Protocol:_ Use decodable texts at or slightly below current decoding level (not leveled readers with unpredictable words). When a student guesses or substitutes, use: "Stop — look at every letter. What does that say?" Do not supply the word. This builds the habit of reading all the print.
 
 **Phonics Sequence for Weeks 1-6:** Weeks 1-2: CVC short vowels review and short /a/, /i/ discrimination. Weeks 3-4: Consonant blends (bl, st, tr). Weeks 5-6: Final -e (VCe) pattern.
 
@@ -116,9 +123,11 @@ Administer a 1-minute nonsense word fluency (NWF) measure weekly using curriculu
 ---
 
 ## Variations
+
 - **Fluency Focus**: For students who decode accurately but slowly — repeated reading, reader's theater, and phrase-cued reading protocols
 - **Comprehension Focus**: For fluent decoders with weak comprehension — story grammar, main idea identification, and text structure instruction
 
 ## Related Prompts
+
 - [Special Education Support](special-education-support.md) - Accommodations for students with reading-based learning disabilities
 - [Assessment Designer](assessment-designer.md) - Create informal reading assessments and running record protocols

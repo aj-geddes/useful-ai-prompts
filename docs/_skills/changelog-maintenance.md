@@ -1,13 +1,14 @@
 ---
 category: documentation
-date: '2025-01-01'
-description: Maintain comprehensive changelogs and release notes following Keep a
+date: "2025-01-01"
+description:
+  Maintain comprehensive changelogs and release notes following Keep a
   Changelog format. Use when documenting version history, release notes, or tracking
   changes across versions.
 layout: skill
 slug: changelog-maintenance
 tags:
-- development
+  - development
 title: changelog-maintenance
 ---
 
@@ -30,7 +31,7 @@ Create and maintain structured changelogs that document all notable changes to y
 
 ## CHANGELOG.md Template
 
-```markdown
+````markdown
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -41,32 +42,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - New feature or capability that has been added
 - Can be multiple items
 
 ### Changed
+
 - Changes in existing functionality
 - Updates to how features work
 
 ### Deprecated
+
 - Features that will be removed in upcoming releases
 - Include timeline for removal
 
 ### Removed
+
 - Features that have been removed
 - Previously deprecated features
 
 ### Fixed
+
 - Bug fixes
 - Security patches
 
 ### Security
+
 - Security vulnerabilities that have been fixed
 - Important security updates
 
 ## [2.1.0] - 2025-01-15
 
 ### Added
+
 - Added OAuth2 authentication support for GitHub and Google
 - New dashboard widget system for customizable layouts
 - Bulk operations API for processing multiple records
@@ -79,6 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Japanese, Korean, Chinese (Simplified/Traditional), Arabic
 
 ### Changed
+
 - Updated user profile page with improved layout and performance
 - Migrated from REST to GraphQL for main API endpoints
 - Improved error messages with more context and suggestions
@@ -91,6 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved search algorithm for 3x faster results
 
 ### Deprecated
+
 - REST API v1 endpoints (will be removed in v3.0.0)
   - Use GraphQL API or REST API v2 instead
   - Migration guide: [docs/migration-v1-to-v2.md](docs/migration-v1-to-v2.md)
@@ -100,6 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Use new YAML format in `config.yaml`
 
 ### Removed
+
 - Removed deprecated `/api/users/list` endpoint
   - Use `/api/v2/users` instead
 - Removed support for Internet Explorer 11
@@ -108,6 +119,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed old dashboard widgets (replaced with new widget system)
 
 ### Fixed
+
 - Fixed race condition in order processing causing duplicate charges
   - Affected versions: 2.0.0 - 2.0.5
   - Issue: [#1234](https://github.com/user/repo/issues/1234)
@@ -125,6 +137,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Recommended Action**: Upgrade immediately
 
 ### Security
+
 - **CRITICAL**: Fixed SQL injection in user search (CVE-2025-12346)
   - Impact: Allows unauthorized database access
   - Affected: v2.0.0 to v2.0.9
@@ -138,16 +151,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.5] - 2025-01-08
 
 ### Fixed
+
 - Hotfix: Critical bug causing data loss in export functionality
 - Fixed authentication issues with LDAP integration
 - Resolved performance degradation with large datasets
 
 ### Security
+
 - Patched authentication bypass vulnerability (CVE-2025-12344)
 
 ## [2.0.0] - 2025-01-01
 
 ### Added
+
 - Complete UI redesign with modern look and feel
 - New REST API v2 with better performance
 - User roles and permissions system
@@ -158,6 +174,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Database backup automation
 
 ### Changed
+
 - **BREAKING**: Changed API response format from XML to JSON
   - All API consumers must update their integration
   - See migration guide: [docs/api-v1-to-v2.md](docs/api-v1-to-v2.md)
@@ -172,6 +189,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated minimum Node.js version to 16.x
 
 ### Removed
+
 - **BREAKING**: Removed support for Node.js 12 and 14
 - **BREAKING**: Removed deprecated configuration options
   - `USE_OLD_AUTH` - Use JWT authentication
@@ -183,22 +201,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 1. Update Node.js to version 16 or higher
 2. Update your API integration:
+
    ```javascript
    // Old (v1)
-   fetch('/api/users/list')
-     .then(res => res.text())
-     .then(xml => parseXML(xml));
+   fetch("/api/users/list")
+     .then((res) => res.text())
+     .then((xml) => parseXML(xml));
 
    // New (v2)
-   fetch('/api/v2/users')
-     .then(res => res.json())
-     .then(data => console.log(data));
+   fetch("/api/v2/users")
+     .then((res) => res.json())
+     .then((data) => console.log(data));
    ```
+````
+
 3. Run database migrations:
    ```bash
    npm run migrate:v2
    ```
 4. Update environment variables:
+
    ```env
    # Remove
    USE_OLD_AUTH=true
@@ -212,6 +234,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.2] - 2024-12-15
 
 ### Fixed
+
 - Fixed pagination bug on user list page
 - Resolved timezone issues in reports
 - Fixed email notification delays
@@ -219,17 +242,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.5.0] - 2024-12-01
 
 ### Added
+
 - New reporting dashboard
 - Custom fields for user profiles
 - Webhook support for integrations
 
 ### Changed
+
 - Improved search performance
 - Updated UI components library
 
 ## [1.0.0] - 2024-10-01
 
 ### Added
+
 - Initial release
 - User management
 - Basic API
@@ -244,7 +270,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.5.2]: https://github.com/user/repo/compare/v1.5.0...v1.5.2
 [1.5.0]: https://github.com/user/repo/compare/v1.0.0...v1.5.0
 [1.0.0]: https://github.com/user/repo/releases/tag/v1.0.0
-```
+
+````
 
 ## Release Notes Template
 
@@ -280,7 +307,7 @@ You can now sign in using your GitHub or Google account. Configure OAuth in Sett
     }
   }
 }
-```
+````
 
 ### GraphQL API
 
@@ -343,9 +370,9 @@ Enable dark mode in Settings > Appearance or use system preferences.
 
 The following REST API v1 endpoints are deprecated and will be removed in v3.0.0:
 
-| Old Endpoint | New Endpoint | Migration Guide |
-|--------------|--------------|-----------------|
-| `/api/users/list` | `/api/v2/users` | [Link](docs/migration.md#users) |
+| Old Endpoint           | New Endpoint          | Migration Guide                    |
+| ---------------------- | --------------------- | ---------------------------------- |
+| `/api/users/list`      | `/api/v2/users`       | [Link](docs/migration.md#users)    |
 | `/api/products/search` | `/api/v2/products?q=` | [Link](docs/migration.md#products) |
 
 **Timeline**: These endpoints will continue working until June 2025.
@@ -414,11 +441,13 @@ Coming in v2.2.0:
 - Improved team collaboration features
 
 Stay tuned!
+
 ```
 
 ## Semantic Versioning Guide
 
 ```
+
 Version: MAJOR.MINOR.PATCH
 
 MAJOR version: Incompatible API changes
@@ -426,9 +455,11 @@ MINOR version: Add functionality (backwards-compatible)
 PATCH version: Backwards-compatible bug fixes
 
 Examples:
+
 - 1.0.0 → 1.0.1: Bug fixes
 - 1.0.1 → 1.1.0: New features (backwards-compatible)
 - 1.1.0 → 2.0.0: Breaking changes
+
 ```
 
 ## Best Practices
@@ -462,3 +493,4 @@ Examples:
 - [Semantic Versioning](https://semver.org/)
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Release Drafter](https://github.com/release-drafter/release-drafter)
+```

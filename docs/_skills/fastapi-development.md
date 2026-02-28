@@ -1,17 +1,18 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build high-performance FastAPI applications with async routes, validation,
+date: "2025-01-01"
+description:
+  Build high-performance FastAPI applications with async routes, validation,
   dependency injection, security, and automatic API documentation. Use when developing
   modern Python APIs with async support, automatic OpenAPI documentation, and high
   performance requirements.
 layout: skill
 slug: fastapi-development
 tags:
-- python
-- fastapi
-- api
-- security
+  - python
+  - fastapi
+  - api
+  - security
 title: fastapi-development
 ---
 
@@ -443,6 +444,7 @@ async def update_user(
 ## Best Practices
 
 ### ✅ DO
+
 - Use async/await for I/O operations
 - Leverage Pydantic for validation
 - Use dependency injection for services
@@ -455,6 +457,7 @@ async def update_user(
 - Document endpoints with docstrings and tags
 
 ### ❌ DON'T
+
 - Use synchronous database operations
 - Trust user input without validation
 - Store secrets in code

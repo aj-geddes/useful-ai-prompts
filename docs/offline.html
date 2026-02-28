@@ -6,137 +6,155 @@ permalink: /offline.html
 ---
 
 <div class="offline-page">
-    <div class="container">
-        <div class="offline-header">
-            <div class="offline-icon">
-                <i class="fas fa-wifi-slash"></i>
-            </div>
-            <h1>You're Currently Offline</h1>
-            <p>No internet connection detected, but don't worry! You can still access recently viewed prompts from your cache.</p>
-        </div>
-        
-        <div class="offline-content">
-            <div class="cache-info">
-                <h2><i class="fas fa-save"></i> Cached Content Available</h2>
-                <p>The following content is available offline:</p>
-                
-                <div class="cached-items">
-                    <div class="cache-category">
-                        <h3>Recently Viewed Prompts</h3>
-                        <div id="cachedPrompts" class="cached-list">
-                            <!-- Populated by JavaScript -->
-                        </div>
-                    </div>
-                    
-                    <div class="cache-category">
-                        <h3>Core Pages</h3>
-                        <div class="cached-list">
-                            <div class="cached-item">
-                                <a href="/" class="cached-link">
-                                    <i class="fas fa-home"></i>
-                                    <span>Homepage</span>
-                                </a>
-                            </div>
-                            <div class="cached-item">
-                                <a href="/categories/" class="cached-link">
-                                    <i class="fas fa-folder"></i>
-                                    <span>Categories</span>
-                                </a>
-                            </div>
-                            <div class="cached-item">
-                                <a href="/search/" class="cached-link">
-                                    <i class="fas fa-search"></i>
-                                    <span>Search</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="offline-features">
-                <h2><i class="fas fa-tools"></i> Offline Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-copy"></i>
-                        <h3>Copy Prompts</h3>
-                        <p>Copy cached prompts to your clipboard for use in AI tools</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-bookmark"></i>
-                        <h3>Saved Prompts</h3>
-                        <p>Access prompts you've bookmarked for offline viewing</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-history"></i>
-                        <h3>Browse History</h3>
-                        <p>Review prompts you've viewed recently</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-filter"></i>
-                        <h3>Local Search</h3>
-                        <p>Search through cached content while offline</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="offline-tips">
-                <h2><i class="fas fa-lightbulb"></i> Tips for Offline Use</h2>
-                <ul>
-                    <li><strong>Save Important Prompts:</strong> Bookmark prompts you use frequently for offline access</li>
-                    <li><strong>Copy Before Going Offline:</strong> Copy prompts to your clipboard before losing connection</li>
-                    <li><strong>Check Connection:</strong> Try refreshing the page when your connection returns</li>
-                    <li><strong>Use Local Search:</strong> Search functionality works with cached content</li>
-                </ul>
-            </div>
-            
-            <div class="connection-check">
-                <h2><i class="fas fa-wifi"></i> Connection Status</h2>
-                <div class="status-indicator">
-                    <div class="status-dot offline" id="connectionStatus"></div>
-                    <span id="connectionText">Offline</span>
-                </div>
-                <button class="btn-primary" id="retryConnection">
-                    <i class="fas fa-refresh"></i>
-                    Try Again
-                </button>
-            </div>
-        </div>
+  <div class="container">
+    <div class="offline-header">
+      <div class="offline-icon">
+        <i class="fas fa-wifi-slash"></i>
+      </div>
+      <h1>You're Currently Offline</h1>
+      <p>
+        No internet connection detected, but don't worry! You can still access
+        recently viewed prompts from your cache.
+      </p>
     </div>
+
+    <div class="offline-content">
+      <div class="cache-info">
+        <h2><i class="fas fa-save"></i> Cached Content Available</h2>
+        <p>The following content is available offline:</p>
+
+        <div class="cached-items">
+          <div class="cache-category">
+            <h3>Recently Viewed Prompts</h3>
+            <div id="cachedPrompts" class="cached-list">
+              <!-- Populated by JavaScript -->
+            </div>
+          </div>
+
+          <div class="cache-category">
+            <h3>Core Pages</h3>
+            <div class="cached-list">
+              <div class="cached-item">
+                <a href="/" class="cached-link">
+                  <i class="fas fa-home"></i>
+                  <span>Homepage</span>
+                </a>
+              </div>
+              <div class="cached-item">
+                <a href="/categories/" class="cached-link">
+                  <i class="fas fa-folder"></i>
+                  <span>Categories</span>
+                </a>
+              </div>
+              <div class="cached-item">
+                <a href="/search/" class="cached-link">
+                  <i class="fas fa-search"></i>
+                  <span>Search</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offline-features">
+        <h2><i class="fas fa-tools"></i> Offline Features</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <i class="fas fa-copy"></i>
+            <h3>Copy Prompts</h3>
+            <p>Copy cached prompts to your clipboard for use in AI tools</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-bookmark"></i>
+            <h3>Saved Prompts</h3>
+            <p>Access prompts you've bookmarked for offline viewing</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-history"></i>
+            <h3>Browse History</h3>
+            <p>Review prompts you've viewed recently</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-filter"></i>
+            <h3>Local Search</h3>
+            <p>Search through cached content while offline</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="offline-tips">
+        <h2><i class="fas fa-lightbulb"></i> Tips for Offline Use</h2>
+        <ul>
+          <li>
+            <strong>Save Important Prompts:</strong> Bookmark prompts you use
+            frequently for offline access
+          </li>
+          <li>
+            <strong>Copy Before Going Offline:</strong> Copy prompts to your
+            clipboard before losing connection
+          </li>
+          <li>
+            <strong>Check Connection:</strong> Try refreshing the page when your
+            connection returns
+          </li>
+          <li>
+            <strong>Use Local Search:</strong> Search functionality works with
+            cached content
+          </li>
+        </ul>
+      </div>
+
+      <div class="connection-check">
+        <h2><i class="fas fa-wifi"></i> Connection Status</h2>
+        <div class="status-indicator">
+          <div class="status-dot offline" id="connectionStatus"></div>
+          <span id="connectionText">Offline</span>
+        </div>
+        <button class="btn-primary" id="retryConnection">
+          <i class="fas fa-refresh"></i>
+          Try Again
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function () {
     // Load cached prompts from localStorage
     loadCachedPrompts();
-    
+
     // Set up connection monitoring
     setupConnectionMonitoring();
-    
+
     // Set up retry functionality
     setupRetryButton();
-    
+
     // Set up offline search
     setupOfflineSearch();
-});
+  });
 
-function loadCachedPrompts() {
-    const cachedPromptsContainer = document.getElementById('cachedPrompts');
-    const viewHistory = JSON.parse(localStorage.getItem('promptViewHistory') || '[]');
-    
+  function loadCachedPrompts() {
+    const cachedPromptsContainer = document.getElementById("cachedPrompts");
+    const viewHistory = JSON.parse(
+      localStorage.getItem("promptViewHistory") || "[]",
+    );
+
     if (viewHistory.length === 0) {
-        cachedPromptsContainer.innerHTML = '<p class="no-cache">No cached prompts available. Visit some prompts while online to cache them for offline use.</p>';
-        return;
+      cachedPromptsContainer.innerHTML =
+        '<p class="no-cache">No cached prompts available. Visit some prompts while online to cache them for offline use.</p>';
+      return;
     }
-    
+
     // Display most recent 10 prompts
     const recentPrompts = viewHistory.slice(-10).reverse();
-    
-    recentPrompts.forEach(prompt => {
-        const promptItem = document.createElement('div');
-        promptItem.className = 'cached-item';
-        
-        promptItem.innerHTML = `
+
+    recentPrompts.forEach((prompt) => {
+      const promptItem = document.createElement("div");
+      promptItem.className = "cached-item";
+
+      promptItem.innerHTML = `
             <a href="${prompt.url}" class="cached-link">
                 <i class="fas fa-file-text"></i>
                 <div class="prompt-info">
@@ -146,218 +164,221 @@ function loadCachedPrompts() {
                 </div>
             </a>
         `;
-        
-        cachedPromptsContainer.appendChild(promptItem);
-    });
-}
 
-function setupConnectionMonitoring() {
-    const statusDot = document.getElementById('connectionStatus');
-    const statusText = document.getElementById('connectionText');
-    
+      cachedPromptsContainer.appendChild(promptItem);
+    });
+  }
+
+  function setupConnectionMonitoring() {
+    const statusDot = document.getElementById("connectionStatus");
+    const statusText = document.getElementById("connectionText");
+
     function updateConnectionStatus() {
-        if (navigator.onLine) {
-            statusDot.className = 'status-dot online';
-            statusText.textContent = 'Online';
-            
-            // Auto-redirect to homepage when online
-            setTimeout(() => {
-                window.location.href = '/useful-ai-prompts/';
-            }, 2000);
-        } else {
-            statusDot.className = 'status-dot offline';
-            statusText.textContent = 'Offline';
-        }
+      if (navigator.onLine) {
+        statusDot.className = "status-dot online";
+        statusText.textContent = "Online";
+
+        // Auto-redirect to homepage when online
+        setTimeout(() => {
+          window.location.href = "/useful-ai-prompts/";
+        }, 2000);
+      } else {
+        statusDot.className = "status-dot offline";
+        statusText.textContent = "Offline";
+      }
     }
-    
+
     // Initial check
     updateConnectionStatus();
-    
+
     // Listen for connection changes
-    window.addEventListener('online', updateConnectionStatus);
-    window.addEventListener('offline', updateConnectionStatus);
-}
+    window.addEventListener("online", updateConnectionStatus);
+    window.addEventListener("offline", updateConnectionStatus);
+  }
 
-function setupRetryButton() {
-    const retryButton = document.getElementById('retryConnection');
-    
-    retryButton.addEventListener('click', function() {
-        // Show loading state
-        retryButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Checking...';
-        retryButton.disabled = true;
-        
-        // Try to fetch homepage
-        fetch('/useful-ai-prompts/', { cache: 'no-cache' })
-            .then(response => {
-                if (response.ok) {
-                    retryButton.innerHTML = '<i class="fas fa-check"></i> Connected!';
-                    retryButton.className = 'btn-success';
-                    
-                    setTimeout(() => {
-                        window.location.href = '/useful-ai-prompts/';
-                    }, 1000);
-                } else {
-                    throw new Error('Not connected');
-                }
-            })
-            .catch(() => {
-                retryButton.innerHTML = '<i class="fas fa-refresh"></i> Try Again';
-                retryButton.disabled = false;
-                retryButton.className = 'btn-primary';
-            });
-    });
-}
+  function setupRetryButton() {
+    const retryButton = document.getElementById("retryConnection");
 
-function setupOfflineSearch() {
-    // Simple offline search functionality
-    const searchInput = document.createElement('input');
-    searchInput.type = 'text';
-    searchInput.placeholder = 'Search cached prompts...';
-    searchInput.className = 'offline-search';
-    
-    const searchContainer = document.createElement('div');
-    searchContainer.className = 'offline-search-container';
-    searchContainer.appendChild(searchInput);
-    
-    // Insert after cache info
-    const cacheInfo = document.querySelector('.cache-info');
-    cacheInfo.parentNode.insertBefore(searchContainer, cacheInfo.nextSibling);
-    
-    searchInput.addEventListener('input', function() {
-        const query = this.value.toLowerCase();
-        const cachedItems = document.querySelectorAll('.cached-item');
-        
-        cachedItems.forEach(item => {
-            const title = item.querySelector('.prompt-title');
-            const category = item.querySelector('.prompt-category');
-            
-            if (title && category) {
-                const titleText = title.textContent.toLowerCase();
-                const categoryText = category.textContent.toLowerCase();
-                
-                if (titleText.includes(query) || categoryText.includes(query)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            }
+    retryButton.addEventListener("click", function () {
+      // Show loading state
+      retryButton.innerHTML =
+        '<i class="fas fa-spinner fa-spin"></i> Checking...';
+      retryButton.disabled = true;
+
+      // Try to fetch homepage
+      fetch("/useful-ai-prompts/", { cache: "no-cache" })
+        .then((response) => {
+          if (response.ok) {
+            retryButton.innerHTML = '<i class="fas fa-check"></i> Connected!';
+            retryButton.className = "btn-success";
+
+            setTimeout(() => {
+              window.location.href = "/useful-ai-prompts/";
+            }, 1000);
+          } else {
+            throw new Error("Not connected");
+          }
+        })
+        .catch(() => {
+          retryButton.innerHTML = '<i class="fas fa-refresh"></i> Try Again';
+          retryButton.disabled = false;
+          retryButton.className = "btn-primary";
         });
     });
-}
+  }
 
-function formatDate(dateString) {
+  function setupOfflineSearch() {
+    // Simple offline search functionality
+    const searchInput = document.createElement("input");
+    searchInput.type = "text";
+    searchInput.placeholder = "Search cached prompts...";
+    searchInput.className = "offline-search";
+
+    const searchContainer = document.createElement("div");
+    searchContainer.className = "offline-search-container";
+    searchContainer.appendChild(searchInput);
+
+    // Insert after cache info
+    const cacheInfo = document.querySelector(".cache-info");
+    cacheInfo.parentNode.insertBefore(searchContainer, cacheInfo.nextSibling);
+
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      const cachedItems = document.querySelectorAll(".cached-item");
+
+      cachedItems.forEach((item) => {
+        const title = item.querySelector(".prompt-title");
+        const category = item.querySelector(".prompt-category");
+
+        if (title && category) {
+          const titleText = title.textContent.toLowerCase();
+          const categoryText = category.textContent.toLowerCase();
+
+          if (titleText.includes(query) || categoryText.includes(query)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        }
+      });
+    });
+  }
+
+  function formatDate(dateString) {
     const date = new Date(dateString);
     const now = new Date();
     const diffMs = now - date;
     const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
     const diffDays = Math.floor(diffHours / 24);
-    
-    if (diffHours < 1) {
-        return 'Just now';
-    } else if (diffHours < 24) {
-        return `${diffHours}h ago`;
-    } else if (diffDays === 1) {
-        return 'Yesterday';
-    } else if (diffDays < 7) {
-        return `${diffDays} days ago`;
-    } else {
-        return date.toLocaleDateString();
-    }
-}
 
-// Track when prompts are viewed for offline caching
-function trackPromptView(title, category, url) {
-    const viewHistory = JSON.parse(localStorage.getItem('promptViewHistory') || '[]');
-    
+    if (diffHours < 1) {
+      return "Just now";
+    } else if (diffHours < 24) {
+      return `${diffHours}h ago`;
+    } else if (diffDays === 1) {
+      return "Yesterday";
+    } else if (diffDays < 7) {
+      return `${diffDays} days ago`;
+    } else {
+      return date.toLocaleDateString();
+    }
+  }
+
+  // Track when prompts are viewed for offline caching
+  function trackPromptView(title, category, url) {
+    const viewHistory = JSON.parse(
+      localStorage.getItem("promptViewHistory") || "[]",
+    );
+
     const newView = {
-        title: title,
-        category: category,
-        url: url,
-        viewDate: new Date().toISOString()
+      title: title,
+      category: category,
+      url: url,
+      viewDate: new Date().toISOString(),
     };
-    
+
     // Remove duplicate if exists
-    const filteredHistory = viewHistory.filter(item => item.url !== url);
-    
+    const filteredHistory = viewHistory.filter((item) => item.url !== url);
+
     // Add new view
     filteredHistory.push(newView);
-    
+
     // Keep only last 50 views
     const recentHistory = filteredHistory.slice(-50);
-    
-    localStorage.setItem('promptViewHistory', JSON.stringify(recentHistory));
-}
 
-// Export for use by other pages
-window.offlineUtils = {
-    trackPromptView: trackPromptView
-};
+    localStorage.setItem("promptViewHistory", JSON.stringify(recentHistory));
+  }
+
+  // Export for use by other pages
+  window.offlineUtils = {
+    trackPromptView: trackPromptView,
+  };
 </script>
 
 <style>
-.offline-page {
+  .offline-page {
     min-height: 70vh;
     padding: 2rem 0;
-}
+  }
 
-.offline-header {
+  .offline-header {
     text-align: center;
     margin-bottom: 3rem;
-}
+  }
 
-.offline-icon {
+  .offline-icon {
     font-size: 4rem;
     color: #6b7280;
     margin-bottom: 1rem;
-}
+  }
 
-.offline-header h1 {
+  .offline-header h1 {
     font-size: 2.5rem;
     color: #1f2937;
     margin-bottom: 1rem;
-}
+  }
 
-.offline-header p {
+  .offline-header p {
     font-size: 1.1rem;
     color: #6b7280;
     max-width: 600px;
     margin: 0 auto;
-}
+  }
 
-.cache-info {
+  .cache-info {
     background: #f9fafb;
     border-radius: 0.5rem;
     padding: 2rem;
     margin-bottom: 2rem;
-}
+  }
 
-.cached-items {
+  .cached-items {
     display: grid;
     gap: 2rem;
     margin-top: 1.5rem;
-}
+  }
 
-.cache-category h3 {
+  .cache-category h3 {
     color: #374151;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
+  }
 
-.cached-list {
+  .cached-list {
     display: grid;
     gap: 0.5rem;
-}
+  }
 
-.cached-item {
+  .cached-item {
     background: white;
     border-radius: 0.375rem;
     border: 1px solid #e5e7eb;
     overflow: hidden;
-}
+  }
 
-.cached-link {
+  .cached-link {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -365,161 +386,163 @@ window.offlineUtils = {
     text-decoration: none;
     color: #374151;
     transition: background-color 0.2s;
-}
+  }
 
-.cached-link:hover {
+  .cached-link:hover {
     background: #f3f4f6;
-}
+  }
 
-.cached-link i {
+  .cached-link i {
     color: #2563eb;
     width: 1.5rem;
     text-align: center;
-}
+  }
 
-.prompt-info {
+  .prompt-info {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-}
+  }
 
-.prompt-title {
+  .prompt-title {
     font-weight: 600;
     color: #1f2937;
-}
+  }
 
-.prompt-category {
+  .prompt-category {
     font-size: 0.875rem;
     color: #6b7280;
     text-transform: capitalize;
-}
+  }
 
-.prompt-date {
+  .prompt-date {
     font-size: 0.75rem;
     color: #9ca3af;
-}
+  }
 
-.feature-grid {
+  .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
-}
+  }
 
-.feature-item {
+  .feature-item {
     background: white;
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
     padding: 1.5rem;
     text-align: center;
-}
+  }
 
-.feature-item i {
+  .feature-item i {
     font-size: 2rem;
     color: #2563eb;
     margin-bottom: 1rem;
-}
+  }
 
-.feature-item h3 {
+  .feature-item h3 {
     color: #1f2937;
     margin-bottom: 0.5rem;
-}
+  }
 
-.feature-item p {
+  .feature-item p {
     color: #6b7280;
     font-size: 0.875rem;
-}
+  }
 
-.offline-tips {
+  .offline-tips {
     background: #fef3c7;
     border: 1px solid #f59e0b;
     border-radius: 0.5rem;
     padding: 2rem;
     margin: 2rem 0;
-}
+  }
 
-.offline-tips h2 {
+  .offline-tips h2 {
     color: #92400e;
     margin-bottom: 1rem;
-}
+  }
 
-.offline-tips ul {
+  .offline-tips ul {
     color: #92400e;
     padding-left: 1.5rem;
-}
+  }
 
-.offline-tips li {
+  .offline-tips li {
     margin-bottom: 0.5rem;
-}
+  }
 
-.connection-check {
+  .connection-check {
     background: white;
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
     padding: 2rem;
     text-align: center;
-}
+  }
 
-.status-indicator {
+  .status-indicator {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem 0;
-}
+  }
 
-.status-dot {
+  .status-dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     display: inline-block;
-}
+  }
 
-.status-dot.online {
+  .status-dot.online {
     background: #10b981;
     animation: pulse 2s infinite;
-}
+  }
 
-.status-dot.offline {
+  .status-dot.offline {
     background: #ef4444;
-}
+  }
 
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
     }
     50% {
-        opacity: 0.5;
+      opacity: 0.5;
     }
-}
+  }
 
-.offline-search-container {
+  .offline-search-container {
     margin: 2rem 0;
-}
+  }
 
-.offline-search {
+  .offline-search {
     width: 100%;
     padding: 0.75rem 1rem;
     border: 1px solid #d1d5db;
     border-radius: 0.375rem;
     font-size: 1rem;
-}
+  }
 
-.offline-search:focus {
+  .offline-search:focus {
     outline: none;
     border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
+  }
 
-.no-cache {
+  .no-cache {
     text-align: center;
     color: #6b7280;
     font-style: italic;
     padding: 2rem;
-}
+  }
 
-.btn-primary, .btn-success {
+  .btn-primary,
+  .btn-success {
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.375rem;
@@ -530,42 +553,42 @@ window.offlineUtils = {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-}
+  }
 
-.btn-primary {
+  .btn-primary {
     background: #2563eb;
     color: white;
-}
+  }
 
-.btn-primary:hover {
+  .btn-primary:hover {
     background: #1d4ed8;
-}
+  }
 
-.btn-success {
+  .btn-success {
     background: #10b981;
     color: white;
-}
+  }
 
-.btn-primary:disabled {
+  .btn-primary:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-}
+  }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .offline-icon {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-    
+
     .offline-header h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-    
+
     .feature-grid {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-    
+
     .cached-items {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-}
+  }
 </style>

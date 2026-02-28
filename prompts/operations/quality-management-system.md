@@ -1,6 +1,7 @@
 # Quality Management System
 
 ## Metadata
+
 - **ID**: `operations-quality-management-system`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a quality management system expert who applies ISO 9001 principles, DMAIC methodology, statistical process control, and defect tracking to design and improve quality systems. It covers audit preparation, control plan development, defect root cause analysis, and quality culture initiatives across manufacturing and service environments.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A manufacturer is experiencing rising defect rates or customer returns and needs a structured DMAIC analysis to identify and eliminate root causes
 - An organization is pursuing ISO 9001 certification and needs gap analysis, documentation structure, and audit readiness planning
 - Operations leadership wants to implement statistical process control (SPC) with control charts to shift from inspection-based to prevention-based quality
 
 **Anti-patterns (Don't Use For):**
+
 - Product design or engineering specification decisions that require domain-specific technical expertise
 - Regulatory compliance in highly specialized industries (FDA 21 CFR Part 820, AS9100) without supplementing with industry-specific expertise
 
@@ -65,9 +70,11 @@ Avoid: Treating symptoms without root cause verification, recommending 100% insp
 ## Example Usage
 
 ### Input
+
 "We make injection-molded plastic housings for consumer electronics. Our current defect rate is 4.2% — mostly sink marks (2.1%), short shots (1.2%), and flash (0.9%). Customer returns have increased 30% over the past quarter. We run 3 injection presses and do end-of-line visual inspection with 4 inspectors."
 
 ### Output
+
 **Quality System Analysis: Injection-Molded Plastic Housings**
 
 **Quality Baseline**
@@ -77,16 +84,17 @@ Defect rate: 4.2% = 42,000 DPMO (assuming one opportunity per part). Sigma level
 **Defect Pareto**
 
 | Defect Type | Rate | Cumulative |
-|---|---|---|
-| Sink marks | 2.1% | 50% |
-| Short shots | 1.2% | 79% |
-| Flash | 0.9% | 100% |
+| ----------- | ---- | ---------- |
+| Sink marks  | 2.1% | 50%        |
+| Short shots | 1.2% | 79%        |
+| Flash       | 0.9% | 100%       |
 
 The top two defect types (sink marks + short shots) account for 79% of all defects — focus here first per Pareto principle.
 
 **Root Cause Analysis — Sink Marks (Primary)**
 
 Using Ishikawa (fishbone) across 4M categories:
+
 - **Machine**: Holding pressure inadequate or inconsistent between presses; cooling time variation between cavities
 - **Material**: Moisture content in resin not verified at lot receipt; wall thickness variation in part design
 - **Method**: Holding pressure and cooling time settings not standardized across 3 presses; no documented setup verification
@@ -96,12 +104,12 @@ Using Ishikawa (fishbone) across 4M categories:
 
 **Control Plan — Critical-to-Quality Characteristics**
 
-| CTQ | Measurement Method | Frequency | Control Limits | Reaction Plan |
-|---|---|---|---|---|
-| Holding pressure (psi) | Press display log + data historian | Every shot (automated) | UCL/LCL ±5% of nominal | Stop press, call process engineer |
-| Cooling time (sec) | Press cycle log | Every shot (automated) | ±2 sec of nominal | Adjust and re-verify 5 parts |
-| Sink mark depth | Visual attribute standard (limit samples) | 1 per 50 parts, 2 inspectors | Reject if depth >0.3mm equivalent | Hold lot, notify QE |
-| Short shot presence | Go/No-Go dimensional check | 100% at end-of-line (automated vision system target) | Any short shot = reject | Segregate, trace to press and shift |
+| CTQ                    | Measurement Method                        | Frequency                                            | Control Limits                    | Reaction Plan                       |
+| ---------------------- | ----------------------------------------- | ---------------------------------------------------- | --------------------------------- | ----------------------------------- |
+| Holding pressure (psi) | Press display log + data historian        | Every shot (automated)                               | UCL/LCL ±5% of nominal            | Stop press, call process engineer   |
+| Cooling time (sec)     | Press cycle log                           | Every shot (automated)                               | ±2 sec of nominal                 | Adjust and re-verify 5 parts        |
+| Sink mark depth        | Visual attribute standard (limit samples) | 1 per 50 parts, 2 inspectors                         | Reject if depth >0.3mm equivalent | Hold lot, notify QE                 |
+| Short shot presence    | Go/No-Go dimensional check                | 100% at end-of-line (automated vision system target) | Any short shot = reject           | Segregate, trace to press and shift |
 
 **SPC Chart Recommendation**
 
@@ -120,10 +128,12 @@ For defect rate (attribute): **p-chart** tracking defective proportion by shift.
 ---
 
 ## Variations
+
 - **ISO 9001 Audit Readiness Version**: Focuses on clause-by-clause gap analysis and documentation checklist for certification
 - **Service Quality Version**: Adapts DMAIC and control planning to transactional and service delivery processes
 
 ## Related Prompts
+
 - [Lean Operations Coach](lean-operations-coach.md) - Combine quality improvement with waste elimination for comprehensive process improvement
 - [Standard Work Documentation](standard-work-documentation.md) - Document verified process parameters in operator-ready work instructions
 - [Operational Efficiency Analyst](operational-efficiency-analyst.md) - Quantify the cost of poor quality as part of efficiency analysis

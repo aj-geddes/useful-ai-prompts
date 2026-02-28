@@ -1,6 +1,7 @@
 # Tax Planning Strategist
 
 ## Metadata
+
 - **ID**: `finance-tax-planning-strategist`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt identifies and prioritizes legal tax optimization strategies for businesses — covering entity structure, timing of income and deductions, tax credits, international considerations, and proactive planning opportunities. It frames tax planning as a strategic CFO function rather than a year-end compliance exercise, helping businesses legitimately reduce their effective tax rate and improve after-tax cash flows. The output is a structured tax planning framework with prioritized opportunities and implementation guidance.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A growing business that has never had proactive tax planning and wants to identify structural optimization opportunities
 - A CFO or business owner preparing for a significant transaction (sale, acquisition, capital raise) where tax structure matters enormously
 - A company with significant R&D activity, multi-state operations, or international presence that may be leaving tax savings on the table
 
 **Anti-patterns (Don't Use For):**
+
 - Tax evasion strategies — this prompt addresses only legal tax avoidance and optimization within applicable law
 - Preparing or reviewing actual tax returns — that requires a licensed CPA or tax attorney with current knowledge of applicable law
 - Replacing the advice of a qualified tax professional for specific business circumstances — always confirm strategies with your tax advisor
@@ -70,11 +75,13 @@ Avoid: Recommending strategies without legal authority, presenting aggressive po
 ## Example Usage
 
 ### Input
+
 "I own a software company structured as an S-Corp, $8M revenue, $1.8M in taxable income flowing through to me personally. We develop proprietary software — about 60% of our engineering team's time is on new product development, 40% on maintenance. We operate in California (primary) and sell in 15 other states. I've never done formal tax planning — just filed returns. My effective tax rate feels like it's 40%+ combined federal and California. What am I leaving on the table?"
 
 ### Output
+
 **Tax Planning Strategy Report: S-Corp Software Company**
-*$8M Revenue | $1.8M Taxable Income | California-Based*
+_$8M Revenue | $1.8M Taxable Income | California-Based_
 
 ---
 
@@ -86,7 +93,7 @@ At $1.8M taxable income flowing through to a California-based S-Corp owner, the 
 **Top Tax Planning Opportunities**
 
 **1. R&D Tax Credit (IRC Section 41) — Highest Priority**
-*Estimated Savings: $100-250K annually*
+_Estimated Savings: $100-250K annually_
 
 If 60% of your engineering team's time is on new product development, you likely qualify for the federal R&D tax credit. For software development, qualified research activities include development of new or improved software functionality, algorithms, and processes where there is technological uncertainty.
 
@@ -95,29 +102,29 @@ Calculation basis: Qualified Research Expenses (QREs) × 20% (simplified credit 
 Action: Engage an R&D credit specialist (often on contingency) for a study. This is well-established law with strong audit defensibility when documented properly. Also evaluate California R&D credit (15% of QREs, no carryback).
 
 **2. Pass-Through Entity Tax (PTET) Election — California**
-*Estimated Savings: $30-60K annually*
+_Estimated Savings: $30-60K annually_
 
 California allows S-Corp owners to elect to pay state income tax at the entity level, which generates a federal deduction that partially offsets the $10K SALT cap. For a $1.8M income S-Corp in California, the PTET election can save $30-60K+ annually in federal taxes.
 
 Action: Your CPA can elect this on the California return — it is a well-established, low-risk strategy. Must be elected by the S-Corp (not the shareholder). Confirm with your CPA if your entity has already elected this; if not, it is likely leaving money on the table today.
 
 **3. Reasonable Compensation Optimization**
-*Estimated Savings: $20-50K annually in payroll taxes*
+_Estimated Savings: $20-50K annually in payroll taxes_
 
 As an S-Corp owner, you pay yourself a salary (subject to FICA/Medicare) with remaining income flowing through as a distribution (not subject to self-employment tax). If your current salary is above "reasonable compensation" for your role, you may be over-paying payroll taxes. Conversely, if salary is too low, you face IRS scrutiny. Work with your CPA to document a defensible reasonable compensation analysis.
 
 **4. Section 179 and Bonus Depreciation**
-*Estimated Savings: $15-40K (timing benefit)*
+_Estimated Savings: $15-40K (timing benefit)_
 
 For any equipment, computer hardware, or off-the-shelf software purchases planned, ensure you are utilizing Section 179 expensing and current bonus depreciation rules (check current year percentage — the rate has been declining from 100%). Accelerating deductions into the current year reduces current-year taxable income.
 
 **5. Multi-State Nexus Review**
-*Risk Mitigation + Potential Savings*
+_Risk Mitigation + Potential Savings_
 
 Operating in 15 states creates income tax nexus in many of them. However, California allows an apportionment formula — income apportioned to lower-tax states is not taxed at California rates. A nexus review may: (a) confirm you are properly filing where required (avoiding audit risk) and (b) identify whether any state incentives (Nevada economic development credits, for example) apply to your business activities. Estimated savings: variable; audit risk avoidance is the primary value.
 
 **6. Retirement Plan Optimization**
-*Estimated Savings: $50-80K in deferred taxes*
+_Estimated Savings: $50-80K in deferred taxes_
 
 A Solo 401(k) or SEP-IRA contribution for owner-employees reduces taxable income. At $1.8M passthrough income, maximum contributions ($69K in 2025 for Solo 401(k) with catch-up) reduce current-year federal + California taxes by approximately $35-45K. Defined Benefit plan structures can shelter even more if you are 45+.
 
@@ -125,13 +132,13 @@ A Solo 401(k) or SEP-IRA contribution for owner-employees reduces taxable income
 
 **Tax Planning Calendar**
 
-| Deadline | Strategy | Action Required |
-|----------|----------|-----------------|
-| March 15 (S-Corp return) | PTET election | Confirm CPA has elected |
-| September | R&D Credit study | Engage R&D credit specialist |
-| October | Year-end planning | Income/deduction timing review with CPA |
-| December 31 | Retirement contributions | Maximize plan contributions |
-| December 31 | Equipment purchases | Accelerate if bonus depreciation applies |
+| Deadline                 | Strategy                 | Action Required                          |
+| ------------------------ | ------------------------ | ---------------------------------------- |
+| March 15 (S-Corp return) | PTET election            | Confirm CPA has elected                  |
+| September                | R&D Credit study         | Engage R&D credit specialist             |
+| October                  | Year-end planning        | Income/deduction timing review with CPA  |
+| December 31              | Retirement contributions | Maximize plan contributions              |
+| December 31              | Equipment purchases      | Accelerate if bonus depreciation applies |
 
 **Total Estimated Annual Savings Range: $180-430K** — recoverable through proper planning versus compliance-only approach.
 
@@ -140,9 +147,11 @@ A Solo 401(k) or SEP-IRA contribution for owner-employees reduces taxable income
 ---
 
 ## Variations
+
 - **M&A Transaction Tax Structure**: Evaluate asset sale vs. stock sale implications and installment sale strategies around a business exit
 - **International Tax Planning**: Analyze transfer pricing, GILTI exposure, and FDII deduction opportunities for businesses with international operations
 
 ## Related Prompts
+
 - [Financial Model Builder](financial-model-builder.md) - Model the after-tax impact of different entity structures or transaction approaches
 - [Merger Acquisition Analyst](merger-acquisition-analyst.md) - Integrate tax structure into M&A deal analysis

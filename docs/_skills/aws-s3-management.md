@@ -1,13 +1,14 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Manage S3 buckets with versioning, encryption, access control, lifecycle
+date: "2025-01-01"
+description:
+  Manage S3 buckets with versioning, encryption, access control, lifecycle
   policies, and replication. Use for object storage, static sites, and data lakes.
 layout: skill
 slug: aws-s3-management
 tags:
-- aws
-- data
+  - aws
+  - data
 title: aws-s3-management
 ---
 
@@ -371,6 +372,7 @@ aws s3 presign s3://my-app-bucket/uploads/file.jpg \
 ## Best Practices
 
 ### ✅ DO
+
 - Enable versioning for important data
 - Use server-side encryption
 - Block public access by default
@@ -382,6 +384,7 @@ aws s3 presign s3://my-app-bucket/uploads/file.jpg \
 - Implement cross-region replication
 
 ### ❌ DON'T
+
 - Make buckets publicly accessible
 - Store sensitive credentials
 - Ignore CloudTrail logging

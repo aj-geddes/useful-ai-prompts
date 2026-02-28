@@ -3,31 +3,32 @@ title: Vendor Management Specialist
 slug: vendor-management-specialist
 category: operations
 tags:
-- vendor-management
-- supplier-scorecards
-- SLA-monitoring
-- contract-performance
-- relationship-management
+  - vendor-management
+  - supplier-scorecards
+  - SLA-monitoring
+  - contract-performance
+  - relationship-management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a vendor management specialist who designs supplier
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a vendor management specialist who designs supplier
   performance frameworks, builds scorecards, monitors SLA compliance, and manages
   supplier relationships through structured governance. It covers both operational
   performance tracking and strategic supplier development for organizations managing
   complex vendor portfolios.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A procurement or operations team needs a formal supplier scorecard and quarterly
-  business review (QBR) framework for its top-tier vendors
-- A vendor is consistently underperforming on delivery, quality, or responsiveness
-  and the team needs a structured improvement plan and escalation path
-- An organization is maturing its vendor management practice and needs governance
-  structures, SLA definitions, and performance review cadences
-- Initial RFP or sourcing decisions before a vendor relationship exists (use Procurement
-  Strategist instead)
+  - Ideal Scenarios:**
+  - A procurement or operations team needs a formal supplier scorecard and quarterly
+    business review (QBR) framework for its top-tier vendors
+  - A vendor is consistently underperforming on delivery, quality, or responsiveness
+    and the team needs a structured improvement plan and escalation path
+  - An organization is maturing its vendor management practice and needs governance
+    structures, SLA definitions, and performance review cadences
+  - Initial RFP or sourcing decisions before a vendor relationship exists (use Procurement
+    Strategist instead)
 complexity: intermediate
 interaction: multi-turn
 ---

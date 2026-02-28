@@ -34,6 +34,7 @@ Replace placeholders marked with `{{double_brackets}}`:
 
 ```markdown
 CONTEXT:
+
 - **Company**: {{company_name}} → Replace with: "Acme Corp"
 - **Industry**: {{industry}} → Replace with: "E-commerce"
 - **Challenge**: {{specific_challenge}} → Replace with: "Reduce cart abandonment"
@@ -51,20 +52,22 @@ Paste into ChatGPT, Claude, or your preferred AI assistant and watch the magic h
 <summary><b>Business & Management</b></summary>
 
 ### For Executives & Managers
-| Prompt | Description |
-|--------|-------------|
-| [Marketing Manager](prompts/business/marketing/marketing-manager-strategist.md) | Lead marketing teams, campaigns, and brand strategy |
-| [Operations Manager](prompts/business/operations/operations-manager-excellence.md) | Drive operational excellence and process optimization |
-| [HR Leader](prompts/human-resources/hr-excellence-leader.md) | Transform talent acquisition, culture, and development |
-| [Project Manager](prompts/project-management/) | Risk assessment, resource planning, stakeholder management |
+
+| Prompt                                                                             | Description                                                |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [Marketing Manager](prompts/business/marketing/marketing-manager-strategist.md)    | Lead marketing teams, campaigns, and brand strategy        |
+| [Operations Manager](prompts/business/operations/operations-manager-excellence.md) | Drive operational excellence and process optimization      |
+| [HR Leader](prompts/human-resources/hr-excellence-leader.md)                       | Transform talent acquisition, culture, and development     |
+| [Project Manager](prompts/project-management/)                                     | Risk assessment, resource planning, stakeholder management |
 
 ### For Analysts & Specialists
-| Prompt | Description |
-|--------|-------------|
-| [Financial Analyst](prompts/finance/financial-analysis-expert.md) | Investment analysis, valuation, portfolio management |
-| [Business Analyst](prompts/business/business-analysis/) | Requirements engineering, process improvement |
-| [Supply Chain Manager](prompts/operations/supply-chain-excellence-director.md) | Logistics optimization, network design |
-| [Compliance Officer](prompts/business/legal/compliance-officer-expert.md) | Regulatory compliance, risk management |
+
+| Prompt                                                                         | Description                                          |
+| ------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| [Financial Analyst](prompts/finance/financial-analysis-expert.md)              | Investment analysis, valuation, portfolio management |
+| [Business Analyst](prompts/business/business-analysis/)                        | Requirements engineering, process improvement        |
+| [Supply Chain Manager](prompts/operations/supply-chain-excellence-director.md) | Logistics optimization, network design               |
+| [Compliance Officer](prompts/business/legal/compliance-officer-expert.md)      | Regulatory compliance, risk management               |
 
 </details>
 
@@ -72,28 +75,30 @@ Paste into ChatGPT, Claude, or your preferred AI assistant and watch the magic h
 <summary><b>Technology & Engineering</b></summary>
 
 ### For Developers
-| Prompt | Description |
-|--------|-------------|
+
+| Prompt                                                                                          | Description                                    |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | [Full-Stack Developer](prompts/technical/software-engineering/fullstack-developer-architect.md) | Complete application development, architecture |
-| [DevOps Engineer](prompts/technical/devops/cicd-pipeline-optimizer.md) | CI/CD pipelines, infrastructure automation |
-| [System Architect](prompts/technical/) | System design, scalability, microservices |
+| [DevOps Engineer](prompts/technical/devops/cicd-pipeline-optimizer.md)                          | CI/CD pipelines, infrastructure automation     |
+| [System Architect](prompts/technical/)                                                          | System design, scalability, microservices      |
 
 ### For Security & Data
-| Prompt | Description |
-|--------|-------------|
-| [Security Architect](prompts/security/cybersecurity-defense-architect.md) | Threat modeling, secure design, incident response |
-| [Data Scientist](prompts/technical/data-science/model-evaluation-framework.md) | ML model development, validation, deployment |
+
+| Prompt                                                                         | Description                                       |
+| ------------------------------------------------------------------------------ | ------------------------------------------------- |
+| [Security Architect](prompts/security/cybersecurity-defense-architect.md)      | Threat modeling, secure design, incident response |
+| [Data Scientist](prompts/technical/data-science/model-evaluation-framework.md) | ML model development, validation, deployment      |
 
 </details>
 
 <details>
 <summary><b>Creative & Design</b></summary>
 
-| Prompt | Description |
-|--------|-------------|
-| [Graphic Designer](prompts/creative/design/graphic-design-expert.md) | Visual design, brand identity, marketing materials |
-| [UX Researcher](prompts/creative/ux-design/user-research-synthesizer.md) | User research synthesis, experience optimization |
-| [Content Strategist](prompts/creative/content-strategy/editorial-calendar-architect.md) | Content planning, editorial strategy |
+| Prompt                                                                                  | Description                                        |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| [Graphic Designer](prompts/creative/design/graphic-design-expert.md)                    | Visual design, brand identity, marketing materials |
+| [UX Researcher](prompts/creative/ux-design/user-research-synthesizer.md)                | User research synthesis, experience optimization   |
+| [Content Strategist](prompts/creative/content-strategy/editorial-calendar-architect.md) | Content planning, editorial strategy               |
 
 </details>
 
@@ -101,39 +106,45 @@ Paste into ChatGPT, Claude, or your preferred AI assistant and watch the magic h
 <summary><b>Emerging Technologies (2025 Expansion)</b></summary>
 
 ### Quantum Computing
-| Prompt | Description |
-|--------|-------------|
+
+| Prompt                                               | Description                                 |
+| ---------------------------------------------------- | ------------------------------------------- |
 | [Quantum Circuit Design](prompts/quantum-computing/) | Algorithm development, circuit optimization |
-| [Quantum ML](prompts/quantum-computing/) | Quantum machine learning applications |
+| [Quantum ML](prompts/quantum-computing/)             | Quantum machine learning applications       |
 
 ### Blockchain & Web3
-| Prompt | Description |
-|--------|-------------|
+
+| Prompt                                            | Description                               |
+| ------------------------------------------------- | ----------------------------------------- |
 | [Smart Contract Development](prompts/blockchain/) | Solidity, security audits, DeFi protocols |
-| [Tokenization](prompts/blockchain/) | Asset tokenization, NFT platforms |
+| [Tokenization](prompts/blockchain/)               | Asset tokenization, NFT platforms         |
 
 ### Biotechnology
-| Prompt | Description |
-|--------|-------------|
+
+| Prompt                                   | Description                           |
+| ---------------------------------------- | ------------------------------------- |
 | [Drug Discovery](prompts/biotechnology/) | AI-powered screening, clinical trials |
-| [Genomics](prompts/biotechnology/) | Bioinformatics, gene editing |
+| [Genomics](prompts/biotechnology/)       | Bioinformatics, gene editing          |
 
 ### Space Economy
-| Prompt | Description |
-|--------|-------------|
-| [Satellite Operations](prompts/space-economy/) | Orbit design, ground systems |
+
+| Prompt                                           | Description                             |
+| ------------------------------------------------ | --------------------------------------- |
+| [Satellite Operations](prompts/space-economy/)   | Orbit design, ground systems            |
 | [Commercial Spaceflight](prompts/space-economy/) | Mission architecture, launch operations |
 
 ### Renewable Energy
-| Prompt | Description |
-|--------|-------------|
+
+| Prompt                                         | Description                             |
+| ---------------------------------------------- | --------------------------------------- |
 | [Solar Development](prompts/renewable-energy/) | Utility-scale projects, site assessment |
-| [Energy Storage](prompts/renewable-energy/) | Battery systems, grid integration |
+| [Energy Storage](prompts/renewable-energy/)    | Battery systems, grid integration       |
 
 ### Healthcare Digital
-| Prompt | Description |
-|--------|-------------|
-| [Telehealth](prompts/healthcare-digital/) | Virtual care platforms, remote monitoring |
+
+| Prompt                                        | Description                                |
+| --------------------------------------------- | ------------------------------------------ |
+| [Telehealth](prompts/healthcare-digital/)     | Virtual care platforms, remote monitoring  |
 | [AI Diagnostics](prompts/healthcare-digital/) | Clinical decision support, medical imaging |
 
 </details>
@@ -141,13 +152,13 @@ Paste into ChatGPT, Claude, or your preferred AI assistant and watch the magic h
 <details>
 <summary><b>Specialized Industries</b></summary>
 
-| Prompt | Description |
-|--------|-------------|
-| [Pharmaceutical Researcher](prompts/healthcare/pharmaceutical-research-excellence.md) | Drug development, clinical trials |
-| [Construction Director](prompts/engineering/construction-excellence-director.md) | Project delivery, safety management |
-| [Research Scientist](prompts/academic/research/research-excellence-scientist.md) | Academic research, grant writing |
-| [Executive Assistant](prompts/administrative/executive-excellence-partner.md) | Strategic administrative support |
-| [Customer Service Leader](prompts/customer-service/) | Support operations, experience optimization |
+| Prompt                                                                                | Description                                 |
+| ------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Pharmaceutical Researcher](prompts/healthcare/pharmaceutical-research-excellence.md) | Drug development, clinical trials           |
+| [Construction Director](prompts/engineering/construction-excellence-director.md)      | Project delivery, safety management         |
+| [Research Scientist](prompts/academic/research/research-excellence-scientist.md)      | Academic research, grant writing            |
+| [Executive Assistant](prompts/administrative/executive-excellence-partner.md)         | Strategic administrative support            |
+| [Customer Service Leader](prompts/customer-service/)                                  | Support operations, experience optimization |
 
 </details>
 
@@ -167,6 +178,7 @@ Every prompt delivers structured, professional output:
 6. **Success Metrics** - How to measure progress
 
 ### Output Quality
+
 - **Comprehensive**: 400-800+ lines of structured content
 - **Actionable**: Step-by-step guidance you can implement immediately
 - **Professional**: Industry-standard frameworks and methodologies
@@ -182,6 +194,7 @@ Every prompt delivers structured, professional output:
 **Using**: [Marketing Manager Strategist](prompts/business/marketing/marketing-manager-strategist.md)
 
 **What You Get**:
+
 - Complete go-to-market strategy
 - Campaign timeline with milestones
 - Budget allocation framework
@@ -197,6 +210,7 @@ Every prompt delivers structured, professional output:
 **Using**: [Full-Stack Developer Architect](prompts/technical/software-engineering/fullstack-developer-architect.md)
 
 **What You Get**:
+
 - Migration strategy and phases
 - Service decomposition plan
 - Technology stack recommendations
@@ -212,6 +226,7 @@ Every prompt delivers structured, professional output:
 **Using**: [Financial Analysis Expert](prompts/finance/financial-analysis-expert.md)
 
 **What You Get**:
+
 - DCF valuation model
 - Comparable company analysis
 - Synergy assessment
@@ -255,13 +270,13 @@ cp -r skills/ /path/to/your/project/.claude/skills/
 
 ### Popular Skills
 
-| Skill | What It Does |
-|-------|-------------|
-| `refactor-legacy-code` | Modernize codebases with incremental strategies |
-| `docker-containerization` | Create production-ready containers |
-| `rest-api-design` | Design APIs following best practices |
-| `unit-testing-framework` | Write comprehensive test suites |
-| `sql-optimization` | Optimize database queries |
+| Skill                     | What It Does                                    |
+| ------------------------- | ----------------------------------------------- |
+| `refactor-legacy-code`    | Modernize codebases with incremental strategies |
+| `docker-containerization` | Create production-ready containers              |
+| `rest-api-design`         | Design APIs following best practices            |
+| `unit-testing-framework`  | Write comprehensive test suites                 |
+| `sql-optimization`        | Optimize database queries                       |
 
 See [SKILLS-MATRIX.md](SKILLS-MATRIX.md) for all 260+ skills.
 
@@ -271,15 +286,15 @@ See [SKILLS-MATRIX.md](SKILLS-MATRIX.md) for all 260+ skills.
 
 Automate quality checks with **7 pre-built hooks**:
 
-| Hook | Purpose |
-|------|---------|
-| `security-scan` | Scan for vulnerabilities and secrets |
-| `pre-commit-linting` | Code formatting and style |
-| `test-runner` | Automated test execution |
-| `dependency-check` | Audit dependencies |
-| `breaking-change-detection` | Detect API changes |
-| `auto-format` | Automatic formatting |
-| `session-setup` | Environment initialization |
+| Hook                        | Purpose                              |
+| --------------------------- | ------------------------------------ |
+| `security-scan`             | Scan for vulnerabilities and secrets |
+| `pre-commit-linting`        | Code formatting and style            |
+| `test-runner`               | Automated test execution             |
+| `dependency-check`          | Audit dependencies                   |
+| `breaking-change-detection` | Detect API changes                   |
+| `auto-format`               | Automatic formatting                 |
+| `session-setup`             | Environment initialization           |
 
 See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation instructions.
 
@@ -288,6 +303,7 @@ See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation instructions.
 ## Browse All Categories
 
 ### Business Operations
+
 - [Administrative](prompts/administrative/)
 - [Finance](prompts/finance/)
 - [Marketing](prompts/business/marketing/)
@@ -297,17 +313,20 @@ See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation instructions.
 - [Customer Service](prompts/customer-service/)
 
 ### Technology
+
 - [Software Engineering](prompts/technical/)
 - [DevOps](prompts/technical/devops/)
 - [Security](prompts/security/)
 - [Data Science](prompts/technical/data-science/)
 
 ### Creative
+
 - [Design](prompts/creative/design/)
 - [UX Research](prompts/creative/ux-design/)
 - [Content Strategy](prompts/creative/content-strategy/)
 
 ### Emerging Tech
+
 - [Quantum Computing](prompts/quantum-computing/)
 - [Blockchain](prompts/blockchain/)
 - [Biotechnology](prompts/biotechnology/)
@@ -317,6 +336,7 @@ See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation instructions.
 - [Government Digital](prompts/government/)
 
 ### Specialized
+
 - [Healthcare](prompts/healthcare/)
 - [Engineering](prompts/engineering/)
 - [Education](prompts/education/)
@@ -349,10 +369,12 @@ Save time by pre-filling common variables:
 ## Community
 
 ### Get Help
+
 - **Issues**: [Report bugs or request features](https://github.com/aj-geddes/useful-ai-prompts/issues)
 - **Discussions**: [Ask questions and share ideas](https://github.com/aj-geddes/useful-ai-prompts/discussions)
 
 ### Contribute
+
 - **Star** the repository to help others discover it
 - **Share** your customizations and success stories
 - **Submit** new prompts via pull request

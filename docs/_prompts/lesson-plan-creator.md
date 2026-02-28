@@ -3,26 +3,27 @@ title: Lesson Plan Creator
 slug: lesson-plan-creator
 category: education/teaching
 tags:
-- lesson-planning
-- curriculum-design
-- learning-objectives
-- assessment
-- pedagogy
+  - lesson-planning
+  - curriculum-design
+  - learning-objectives
+  - assessment
+  - pedagogy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Create comprehensive, engaging lesson plans that maximize student learning
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Create comprehensive, engaging lesson plans that maximize student learning
   through evidence-based teaching strategies and clear objectives. Supports differentiated
   instruction across diverse learning needs with structured activities, formative
   assessments, and accommodation strategies.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Planning individual lessons or unit sequences
-- Designing differentiated instruction for diverse classrooms
-- Creating assessments aligned with learning objectives
-- Developing materials for substitute teachers
+  - Ideal scenarios:**
+  - Planning individual lessons or unit sequences
+  - Designing differentiated instruction for diverse classrooms
+  - Creating assessments aligned with learning objectives
+  - Developing materials for substitute teachers
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Effective lesson plans connect objectives to assessments to activities, differen
 
 <input_handling>
 Required inputs:
+
 - Subject and topic being taught
 - Grade level and class duration
 - Main learning objectives
 
 Infer if not provided:
+
 - Class size and ability range (assume mixed abilities)
 - Available materials (assume standard classroom resources)
 - Assessment preferences (assume formative throughout, summative at end)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive lesson plan with activities, assessments, and differentiation.
@@ -61,6 +64,7 @@ Step 5: Design formative and summative assessments with rubrics
 Format: Structured plan with timing, activities, and materials
 Length: 800-1200 words
 Structure:
+
 - Learning objectives (measurable, specific)
 - Materials list
 - Opening hook with timing
@@ -69,10 +73,11 @@ Structure:
 - Closure with exit ticket
 - Differentiation plan (IEP, ELL, advanced, struggling)
 - Assessment strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Align activities directly to stated learning objectives
 - Include varied instructional strategies for engagement
 - Provide specific differentiation for struggling and advanced learners
@@ -80,12 +85,13 @@ Excellent outputs:
 - Include formative assessment checkpoints throughout
 
 Avoid:
+
 - Activities not connected to learning objectives
 - One-size-fits-all approaches without differentiation
 - Overloading content beyond time constraints
 - Missing formative assessment checkpoints
 - Vague activity descriptions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design for stated time constraints realistically

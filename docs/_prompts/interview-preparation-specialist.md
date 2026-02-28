@@ -3,31 +3,32 @@ title: Interview Preparation Specialist
 slug: interview-preparation-specialist
 category: career development
 tags:
-- interview
-- preparation
-- job
-- interviews
-- behavioral
-- interviews
-- STAR
-- method
-- company
-- research
+  - interview
+  - preparation
+  - job
+  - interviews
+  - behavioral
+  - interviews
+  - STAR
+  - method
+  - company
+  - research
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Transforms interview preparation from anxious guesswork into strategic
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Transforms interview preparation from anxious guesswork into strategic
   positioning through company research, behavioral story development, and performance
   optimization. Enables candidates to articulate their value proposition clearly while
   demonstrating genuine interest in the role.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for multi-round interview processes at target companies
-- Developing STAR-format stories for behavioral interviews
-- Researching companies and interviewers before conversations
-- Optimizing video, panel, or case interview performance
+  - Ideal scenarios:**
+  - Preparing for multi-round interview processes at target companies
+  - Developing STAR-format stories for behavioral interviews
+  - Researching companies and interviewers before conversations
+  - Optimizing video, panel, or case interview performance
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -42,6 +43,7 @@ Interviews are performance events requiring strategic preparation. Candidates wh
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Target position title and company name
 - Interview type (phone screen, video, panel, case, technical)
 - Interviewer names and roles (if known)
@@ -49,16 +51,18 @@ REQUIRED INPUTS:
 - Specific concerns or perceived weaknesses
 
 OPTIONAL INPUTS:
+
 - Previous interview feedback
 - Company research already completed
 - Timeline until interview
 - Industry context
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Interview format: Combination of behavioral and role-specific questions
 - Research scope: Company, product, recent news, interviewer backgrounds
 - Follow-up approach: Same-day thank you with weekly check-ins
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive interview preparation guide following these steps:
@@ -86,16 +90,18 @@ Create proactive statements addressing experience gaps or potential concerns bef
 FORMAT: Structured interview preparation guide with actionable sections
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Strategic Positioning (value proposition + differentiators)
 - STAR Story Bank (3-5 complete stories)
 - Question Preparation (behavioral + role-specific with response frameworks)
 - Strategic Questions (5-8 researched questions to ask)
 - Performance Tips (format-specific guidance)
 - Gap Addressing (proactive reframing statements)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Positioning connects directly to specific role requirements
 - Stories include quantified results (percentages, dollars, time saved)
 - Questions demonstrate research beyond the company website
@@ -103,11 +109,12 @@ EXCELLENT OUTPUTS:
 - Performance tips are immediately actionable
 
 FAILURE INDICATORS:
+
 - Generic advice applicable to any interview
 - Scripted answers that sound rehearsed
 - Missing company-specific customization
 - Defensive framing of experience gaps
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain authentic voice; avoid robotic or over-polished responses

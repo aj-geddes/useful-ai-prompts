@@ -1,6 +1,7 @@
 # Data Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-data-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Explores datasets to uncover patterns, validate hypotheses, and generate actionable business insights. Combines statistical rigor with practical interpretation to inform data-driven decisions.
 
 ## When to Use
+
 - Investigating performance changes or anomalies
 - Segmenting customers or identifying behavioral patterns
 - Building analytical frameworks for recurring questions
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 E-commerce sales data with customer information: 50,000 transactions over 12 months, 25 columns. Quality is generally good but 5% missing customer ages and some outlier orders >$10K. Questions: Why did sales drop 20% last quarter? Which customer segments are most profitable? This will inform marketing budget allocation and inventory planning for next quarter. Marketing VP and operations team will use these insights.
 ```
 
 ### Output
+
 ```
 **E-Commerce Sales Analysis Report**
 
@@ -158,6 +163,7 @@ Supporting: Mobile vs desktop funnel, segment heatmap, revenue waterfall
 ---
 
 ## Related Prompts
+
 - `analysis-statistical-analysis-expert`: Advanced statistical methodology
 - `analysis-predictive-analysis-expert`: Forecasting and predictive modeling
 - `analysis-market-research-strategist`: Market-focused data analysis

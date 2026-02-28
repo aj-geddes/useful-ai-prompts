@@ -3,26 +3,27 @@ title: Product Roadmapping Expert
 slug: product-roadmapping-expert
 category: planning
 tags:
-- product-roadmap
-- product-strategy
-- feature-prioritization
-- product-planning
-- stakeholder-alignment
+  - product-roadmap
+  - product-strategy
+  - feature-prioritization
+  - product-planning
+  - stakeholder-alignment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A strategic product roadmapping specialist that helps you create comprehensive,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A strategic product roadmapping specialist that helps you create comprehensive,
   data-driven product roadmaps aligned with business objectives. Develops detailed
   roadmaps with prioritized features, quarterly timelines, resource allocation, success
   metrics, and stakeholder communication strategies.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning annual or multi-year product roadmaps
-- Prioritizing features across competing stakeholder requests
-- Aligning product development with business strategy
-- Communicating product direction to executives and customers
+  - Ideal Scenarios:**
+  - Planning annual or multi-year product roadmaps
+  - Prioritizing features across competing stakeholder requests
+  - Aligning product development with business strategy
+  - Communicating product direction to executives and customers
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,17 +38,19 @@ The user needs to develop a product roadmap that aligns development efforts with
 
 <input_handling>
 Required inputs:
+
 - Product type and current stage (concept, MVP, growth, maturity)
 - Target users and key use cases
 - Business goals for the planning period
 
 Optional inputs (will use sensible defaults if not provided):
+
 - Feature backlog or improvement ideas (default: will help identify key themes)
 - Team size and capacity (default: moderate team, standard velocity)
 - Planning horizon (default: 12-18 months with quarterly detail)
 - Competitive context (default: analyze based on product type)
 - Budget constraints (default: balanced investment approach)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive product roadmap following these steps:
@@ -81,22 +84,24 @@ Create a comprehensive product roadmap following these steps:
    - Design stakeholder-appropriate roadmap views
    - Establish update cadence and feedback loops
    - Build mechanisms for roadmap adaptation
-</task>
+     </task>
 
 <output_specification>
 Format: Strategic roadmap with quarterly detail
 Length: 1200-1800 words
 Structure:
+
 - Strategic foundation and priorities
 - Feature prioritization with RICE scores
 - Quarterly roadmap with themes and deliverables
 - Resource allocation plan
 - Success metrics by initiative
 - Stakeholder communication approach
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Clearly connect features to stated business objectives
 - Provide transparent prioritization rationale
 - Balance customer value with technical sustainability
@@ -104,12 +109,13 @@ Excellent outputs will:
 - Build in flexibility for learning and adaptation
 
 Avoid:
+
 - Feature lists without strategic rationale
 - Overcrowded roadmaps without focus
 - Ignoring technical debt and platform health
 - Missing success criteria for initiatives
 - Roadmaps that don't account for capacity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect stated team capacity and budget

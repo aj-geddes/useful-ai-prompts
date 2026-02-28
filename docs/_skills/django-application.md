@@ -1,15 +1,16 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Develop production-grade Django applications with models, views, ORM
+date: "2025-01-01"
+description:
+  Develop production-grade Django applications with models, views, ORM
   queries, authentication, and admin interfaces. Use when building web applications,
   managing databases with Django ORM, and implementing authentication systems.
 layout: skill
 slug: django-application
 tags:
-- go
-- django
-- data
+  - go
+  - django
+  - data
 title: django-application
 ---
 
@@ -326,6 +327,7 @@ class ProductReviewAdmin(admin.ModelAdmin):
 ## Best Practices
 
 ### ✅ DO
+
 - Use models for database operations
 - Implement proper indexes on frequently queried fields
 - Use select_related and prefetch_related for query optimization
@@ -338,11 +340,12 @@ class ProductReviewAdmin(admin.ModelAdmin):
 - Validate user input
 
 ### ❌ DON'T
+
 - Use raw SQL without ORM
 - N+1 query problems without optimization
 - Store secrets in code
 - Trust user input directly
-- Override __init__ in models unnecessarily
+- Override **init** in models unnecessarily
 - Make synchronous heavy operations in views
 - Use inheritance models unless necessary
 - Expose stack traces in production

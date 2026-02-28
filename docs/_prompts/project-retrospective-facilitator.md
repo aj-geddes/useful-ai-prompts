@@ -3,35 +3,36 @@ title: Project Retrospective Facilitator
 slug: project-retrospective-facilitator
 category: project management
 tags:
-- retrospective
-- agile
-- ceremonies
-- continuous
-- improvement
-- action
-- items
-- team
-- dynamics
-- sprint
-- review
+  - retrospective
+  - agile
+  - ceremonies
+  - continuous
+  - improvement
+  - action
+  - items
+  - team
+  - dynamics
+  - sprint
+  - review
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps Scrum Masters and project managers design and facilitate
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps Scrum Masters and project managers design and facilitate
   effective retrospectives — whether sprint-level agile retrospectives or project-close
   retrospectives. It generates structured agenda formats, facilitation guides, targeted
   questions, and actionable improvement items with owners and measurable success criteria.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning and facilitating an upcoming sprint or project retrospective with a team
-  that needs structure
-- Recovering from a particularly difficult sprint or project phase where team morale
-  needs active management
-- Standardizing retrospective practices across multiple teams in a program
-- Performance reviews or individual feedback conversations — retrospectives focus
-  on process not people
+  - Ideal Scenarios:**
+  - Planning and facilitating an upcoming sprint or project retrospective with a team
+    that needs structure
+  - Recovering from a particularly difficult sprint or project phase where team morale
+    needs active management
+  - Standardizing retrospective practices across multiple teams in a program
+  - Performance reviews or individual feedback conversations — retrospectives focus
+    on process not people
 complexity: intermediate
 interaction: multi-turn
 ---

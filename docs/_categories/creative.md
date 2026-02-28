@@ -6,7 +6,19 @@ slug: creative
 icon: fas fa-paint-brush
 description: "Expert AI prompts for creatives and marketers: brand storytelling, campaign creation, copywriting, content strategy, UX design, and creative concept development."
 seo_title: "Creative & Marketing AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [brand storytelling, marketing campaigns, copywriting, content strategy, UX design, creative briefs, screenwriting, podcast strategy, video scripts, narrative structure]
+tags:
+  [
+    brand storytelling,
+    marketing campaigns,
+    copywriting,
+    content strategy,
+    UX design,
+    creative briefs,
+    screenwriting,
+    podcast strategy,
+    video scripts,
+    narrative structure,
+  ]
 ---
 
 The Creative & Marketing category contains AI prompts for brand strategists, copywriters, content marketers, UX designers, and creative directors. These prompts apply professional creative frameworks — brand architecture, messaging hierarchy, narrative structure — to produce creative work that serves real business and communication goals.

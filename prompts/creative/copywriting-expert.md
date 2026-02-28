@@ -1,6 +1,7 @@
 # Copywriting Expert
 
 ## Metadata
+
 - **ID**: `creative-copywriting-expert`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a direct response copywriting expert persona that writes high-converting copy for landing pages, email sequences, ads, and sales pages. It applies proven copywriting frameworks — AIDA, PAS, Before-After-Bridge — alongside deep understanding of audience psychology and conversion optimization. Use it to write persuasive copy that moves readers from attention to action across any channel.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Writing a landing page or sales page for a product launch, lead magnet, or offer
 - Developing an email welcome or nurture sequence that converts subscribers to customers
 - Crafting ad copy for Facebook, Google, or LinkedIn campaigns that needs to drive clicks and conversions
 
 **Anti-patterns (Don't Use For):**
+
 - Writing long-form brand narrative or editorial content — use the brand story or creative writing prompts
 - Creating technical documentation or product specifications
 - Writing copy for deceptive, misleading, or manipulative offers that harm consumers
@@ -64,10 +69,13 @@ Avoid: Feature-first copy that doesn't connect to benefit; vague superlatives ("
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need a landing page hero section for a SaaS product called Clearpath. It's a project management tool specifically for marketing teams. The main problem we solve is that marketing teams use too many disconnected tools — they have tasks in Asana, files in Google Drive, campaign calendars in spreadsheets, and approvals in email. It creates chaos and things fall through the cracks. Our target customer is a marketing director at a mid-sized B2B company, 30-50 years old. We want them to start a free trial."
 
 ### Output
+
 **Clearpath — Landing Page Hero Section**
 
 ---
@@ -111,11 +119,13 @@ The headline leads with the customer's frustration reframed as a systems problem
 ---
 
 ## Variations
+
 - **Email Welcome Sequence**: Write a 3-5 email onboarding sequence with specific subject lines, preview text, and CTAs for each email
 - **Facebook Ad Copy**: Short-form ad copy with primary text, headline, and description for cold and warm audience variations
 - **Sales Page**: Long-form sales page with full AIDA structure, testimonials placement, FAQ section, and multiple CTAs
 
 ## Related Prompts
+
 - [Brand Story Architect](brand-story-architect.md) - Brand narrative foundation that informs copy voice
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Integrated campaign strategy that uses conversion copy
 - [Video Script Writer](video-script-writer.md) - Video scripts with copywriting principles applied

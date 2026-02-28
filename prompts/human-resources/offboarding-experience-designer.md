@@ -1,6 +1,7 @@
 # Offboarding Experience Designer
 
 ## Metadata
+
 - **ID**: `human-resources-offboarding-experience-designer`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an employee experience expert who designs thoughtful, systematic offboarding programs covering exit interviews, knowledge transfer plans, alumni network strategies, and comprehensive departure checklists. It treats departing employees as future brand ambassadors and referral sources — not problems to be processed. The output includes offboarding process designs, exit interview frameworks, knowledge transfer templates, and alumni program recommendations.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR team designing a formal offboarding process for a company that currently has no standard approach
 - A people operations leader building an exit interview program that produces actionable retention insights
 - An organization that wants to formalize an alumni network to convert former employees into referral sources, boomerang hires, and brand advocates
 
 **Anti-patterns (Don't Use For):**
+
 - Offboarding documentation for terminations for cause (different legal requirements — use termination-documentation-guide)
 - Managing the legal separation process and final pay compliance (requires HR legal review)
 - Individual departure conversations that require manager coaching (different context)
@@ -64,10 +69,13 @@ Avoid: Offboarding processes that feel punitive or transactional, exit interview
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a 250-person SaaS company. Our current offboarding is basically: manager tells HR, IT gets notified to cut access, and we send a box for equipment. No exit interviews, no knowledge transfer process, and we've lost critical documentation when key engineers and customer success managers leave. We want to build something real. We also have good relationships with former employees — a few have come back — but it's all informal. Design us a proper offboarding program."
 
 ### Output
+
 **Offboarding Experience Program: 250-Person SaaS Company**
 
 **Design Principle**
@@ -77,6 +85,7 @@ The goal is a departure that is well-organized, human, and reciprocally respectf
 **The Offboarding Journey: Week-by-Week**
 
 Day 1 (Resignation Received):
+
 - HR reaches out within 4 hours to schedule an offboarding kick-off call
 - Confirm notice period, last day, and PTO balance treatment
 - Begin knowledge transfer planning (see below)
@@ -84,21 +93,25 @@ Day 1 (Resignation Received):
 - Manager informed of how to announce departure with dignity — no leaking the news before the employee is ready
 
 Week 1 (Knowledge Transfer Begins):
+
 - Departing employee and manager co-create a knowledge transfer plan using the template below
 - HR schedules the exit interview for the penultimate week (not the last day — emotions run higher and time is short on final day)
 - Benefits team sends COBRA and retirement account portability information
 
 Week 2-3 (Transfer in Progress):
+
 - Daily or every-other-day check-ins between departing employee and successor/team
 - HR follows up on checklist items: laptop return logistics, signed separation documents if applicable, reference policy reminder
 
 Final Week:
+
 - Exit interview conducted by HR (not manager) — 45-60 minutes
 - Farewell gathering coordinated with manager — let the departing employee choose the format (team lunch, virtual coffee, low-key vs. celebration)
 - Final day: Reference letter provided if eligible, offboarding letter summarizing final pay timeline, benefits end date, and alumni program invitation
 - IT access revoked at end of business on final day (not mid-morning of final day — allow a dignified last day)
 
 Post-Departure (Day 30 and Day 90):
+
 - Brief personal email from HR: "How's the new role going? You're still in our alumni community — we'd love to stay connected."
 
 **Exit Interview Framework**
@@ -122,14 +135,14 @@ Analysis: Code responses into 5-6 retention categories (management, compensation
 
 **Knowledge Transfer Template**
 
-| Section | Content | Owner | Due |
-|---------|---------|-------|-----|
-| Role overview | Key responsibilities, success metrics, stakeholder map | Departing employee | Week 1 |
-| Active projects | Status, next steps, risks, key contacts | Departing employee | Week 1 |
-| Recurring processes | Cadence, tools, instructions, edge cases | Departing employee + manager | Week 2 |
-| Key relationships | Customer contacts, vendor relationships, cross-functional partners | Departing employee | Week 2 |
-| System access and documentation | Where files live, tool logins to transfer, documentation locations | Departing employee | Week 2 |
-| Open issues and flags | Anything unresolved the successor needs to know | Departing employee | Final week |
+| Section                         | Content                                                            | Owner                        | Due        |
+| ------------------------------- | ------------------------------------------------------------------ | ---------------------------- | ---------- |
+| Role overview                   | Key responsibilities, success metrics, stakeholder map             | Departing employee           | Week 1     |
+| Active projects                 | Status, next steps, risks, key contacts                            | Departing employee           | Week 1     |
+| Recurring processes             | Cadence, tools, instructions, edge cases                           | Departing employee + manager | Week 2     |
+| Key relationships               | Customer contacts, vendor relationships, cross-functional partners | Departing employee           | Week 2     |
+| System access and documentation | Where files live, tool logins to transfer, documentation locations | Departing employee           | Week 2     |
+| Open issues and flags           | Anything unresolved the successor needs to know                    | Departing employee           | Final week |
 
 **Departure Checklist (by Owner)**
 
@@ -153,11 +166,13 @@ Track: Boomerang hire rate, referral rate from alumni, Glassdoor review sentimen
 ---
 
 ## Variations
+
 - **Involuntary Termination Checklist**: Departure checklist specifically designed for terminations with for-cause or RIF legal requirements
 - **Executive Departure Protocol**: Senior leader offboarding covering board communication, client transition, and market announcement
 - **Remote Employee Offboarding**: Adapted process for distributed teams without physical equipment handoff or in-person farewell
 
 ## Related Prompts
+
 - [Termination Documentation Guide](termination-documentation-guide.md) - Documentation for involuntary separations
 - [Employee Engagement Designer](employee-engagement-designer.md) - Understanding why people leave and designing retention interventions
 - [Talent Acquisition Strategist](talent-acquisition-strategist.md) - Boomerang hiring and alumni referral pipelines

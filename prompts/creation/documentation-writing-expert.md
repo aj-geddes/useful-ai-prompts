@@ -1,6 +1,7 @@
 # Documentation Writing Expert
 
 ## Metadata
+
 - **ID**: `creation-documentation-writing`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical documentation writing assistant that creates clear, comprehensive, a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating API documentation with code examples
 - Writing user manuals and getting started guides
 - Developing developer documentation and SDKs
@@ -25,6 +27,7 @@ A practical documentation writing assistant that creates clear, comprehensive, a
 - Documenting processes and procedures
 
 **Anti-patterns (Don't Use For):**
+
 - Marketing copy or sales content
 - Creative writing or storytelling
 - Academic papers or research documents
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "REST API documentation for e-commerce payment platform. Readers: Frontend developers integrating payment processing. Skill level: Intermediate developers familiar with APIs. Features: Payment processing, subscription management, webhook notifications."
 
 ### Output
@@ -113,6 +117,7 @@ Avoid:
 ## Quick Start Guide
 
 ### Get Your API Keys
+
 1. Sign up at [developer.paymentco.com](https://developer.paymentco.com)
 2. Navigate to **API Keys** in your dashboard
 3. Copy your **Publishable Key** (frontend) and **Secret Key** (backend)
@@ -133,6 +138,7 @@ curl -X POST https://api.paymentco.com/v1/payments \
 ```
 
 **Response:**
+
 ```json
 {
   "id": "pay_1234567890",
@@ -145,53 +151,59 @@ curl -X POST https://api.paymentco.com/v1/payments \
 ## API Reference
 
 ### Create a Payment
+
 ```http
 POST /v1/payments
 ```
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `amount` | integer | Yes | Amount in cents (2000 = $20.00) |
-| `currency` | string | Yes | Three-letter ISO currency code |
-| `payment_method` | string | Yes | Payment method ID |
-| `description` | string | No | Internal description |
-| `metadata` | object | No | Custom key-value pairs |
+| Parameter        | Type    | Required | Description                     |
+| ---------------- | ------- | -------- | ------------------------------- |
+| `amount`         | integer | Yes      | Amount in cents (2000 = $20.00) |
+| `currency`       | string  | Yes      | Three-letter ISO currency code  |
+| `payment_method` | string  | Yes      | Payment method ID               |
+| `description`    | string  | No       | Internal description            |
+| `metadata`       | object  | No       | Custom key-value pairs          |
 
 ### Webhook Integration
 
 ```javascript
-app.post('/webhooks/paymentco', (req, res) => {
-  const sig = req.headers['paymentco-signature'];
-  const event = paymentco.webhooks.constructEvent(req.body, sig, WEBHOOK_SECRET);
+app.post("/webhooks/paymentco", (req, res) => {
+  const sig = req.headers["paymentco-signature"];
+  const event = paymentco.webhooks.constructEvent(
+    req.body,
+    sig,
+    WEBHOOK_SECRET,
+  );
 
   switch (event.type) {
-    case 'payment.succeeded':
-      console.log('Payment successful:', event.data.object.id);
+    case "payment.succeeded":
+      console.log("Payment successful:", event.data.object.id);
       break;
-    case 'payment.failed':
-      console.log('Payment failed:', event.data.object.id);
+    case "payment.failed":
+      console.log("Payment failed:", event.data.object.id);
       break;
   }
-  res.json({received: true});
+  res.json({ received: true });
 });
 ```
 
 ## Error Handling
 
-| Code | Description | Resolution |
-|------|-------------|------------|
-| `card_declined` | Card was declined | Ask customer to try different card |
-| `insufficient_funds` | Not enough money | Customer needs to add funds |
-| `rate_limit_exceeded` | Too many requests | Implement exponential backoff |
+| Code                  | Description       | Resolution                         |
+| --------------------- | ----------------- | ---------------------------------- |
+| `card_declined`       | Card was declined | Ask customer to try different card |
+| `insufficient_funds`  | Not enough money  | Customer needs to add funds        |
+| `rate_limit_exceeded` | Too many requests | Implement exponential backoff      |
 
 ## Testing
 
-| Card | Number | Result |
-|------|--------|--------|
-| Visa | `4242424242424242` | Success |
+| Card            | Number             | Result        |
+| --------------- | ------------------ | ------------- |
+| Visa            | `4242424242424242` | Success       |
 | Visa (Declined) | `4000000000000002` | Card declined |
 
 ## Security Best Practices
+
 - Always use HTTPS endpoints
 - Never log full card numbers
 - Validate webhook signatures
@@ -200,6 +212,7 @@ app.post('/webhooks/paymentco', (req, res) => {
 ---
 
 ## Related Prompts
+
 - [API Design Expert](../technical-workflows/api-design-expert.md)
 - [Technical Documentation Expert](../technical-workflows/technical-documentation-expert.md)
 - [Code Generation Expert](code-generation-expert.md)

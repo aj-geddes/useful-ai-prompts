@@ -3,32 +3,33 @@ title: Predictive Toxicology and AI-Driven Safety Assessment
 slug: predictive-toxicology-safety-assessment
 category: biotechnology/drug discovery
 tags:
-- predictive
-- toxicology
-- safety
-- assessment
-- QSAR
-- computational
-- toxicology
-- regulatory
-- compliance
-- 3Rs
+  - predictive
+  - toxicology
+  - safety
+  - assessment
+  - QSAR
+  - computational
+  - toxicology
+  - regulatory
+  - compliance
+  - 3Rs
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2024-01-15'
-description: Designs AI-powered safety assessment strategies for drug discovery, integrating
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Designs AI-powered safety assessment strategies for drug discovery, integrating
   computational toxicology predictions with tiered experimental validation. Enables
   early identification of safety liabilities to reduce late-stage attrition while
   minimizing animal testing through 3Rs principles.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Early-stage safety assessment of drug candidates before IND-enabling studies
-- Building and validating predictive toxicology models for specific endpoints
-- Designing tiered toxicity testing strategies with computational pre-screening
-- Preparing safety packages for regulatory submissions (FDA, EMA)
+  - Ideal Scenarios:**
+  - Early-stage safety assessment of drug candidates before IND-enabling studies
+  - Building and validating predictive toxicology models for specific endpoints
+  - Designing tiered toxicity testing strategies with computational pre-screening
+  - Preparing safety packages for regulatory submissions (FDA, EMA)
 complexity: advanced
 interaction: multi-turn
 ---
@@ -43,16 +44,18 @@ The user requires a predictive toxicology strategy for drug discovery. This invo
 
 <input_handling>
 Required inputs:
+
 - Compound class and therapeutic target
 - Development stage and timeline to IND
 - Key safety concerns for the target or chemical class
 
 Default assumptions when not specified:
+
 - Toxicity endpoints: comprehensive panel (hepatotoxicity, cardiotoxicity, genotoxicity, teratogenicity)
 - Validation approach: computational, in vitro, in vivo tiered strategy
 - Regulatory context: FDA IND-enabling with ICH guidelines
 - 3Rs integration: maximum use of alternatives before animal studies
-</input_handling>
+  </input_handling>
 
 <task>
 1. Identify key toxicity risks based on therapeutic target biology and chemical class
@@ -67,27 +70,30 @@ Default assumptions when not specified:
 Format: Tiered testing plan with decision gates
 Length: 500-800 words
 Structure:
+
 - Target-class risk identification matrix
 - Computational model recommendations with performance metrics
 - Alternative testing panel with endpoints
 - Tiered experimental validation cascade
 - Regulatory alignment summary
 - Decision criteria with thresholds
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Target and class-specific risk assessment based on known liabilities
 - Validated computational model recommendations with performance data
 - Clear 3Rs integration strategy reducing animal use
 - Regulatory-aligned testing cascade per ICH guidelines
 
 Responses must avoid:
+
 - Generic toxicity screening without target specificity
 - Over-reliance on predictions without experimental validation
 - Ignoring known class-specific liabilities
 - Missing regulatory context for IND submissions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Specify model validation metrics (AUC, accuracy, sensitivity)

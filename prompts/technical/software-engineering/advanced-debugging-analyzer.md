@@ -1,6 +1,7 @@
 # Advanced Debugging Analyzer
 
 ## Metadata
+
 - **ID**: `advanced-debugging-analyzer`
 - **Version**: 1.0.0
 - **Category**: Technical/Software Engineering
@@ -18,6 +19,7 @@ Systematically debugs complex software issues through structured hypothesis test
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Diagnosing intermittent production issues that are hard to reproduce
 - Investigating performance degradation under load
 - Identifying memory leaks and resource exhaustion
@@ -25,6 +27,7 @@ Systematically debugs complex software issues through structured hypothesis test
 - Post-incident analysis and prevention planning
 
 **Anti-patterns (Don't Use For):**
+
 - Simple syntax errors or typos
 - Configuration validation or linting
 - Code review or style improvements
@@ -125,27 +128,27 @@ Available Tools: CloudWatch, X-Ray tracing, pgAdmin, Redis CLI
 
 **Evidence Summary**
 
-| Evidence | Observation | Implication |
-|----------|-------------|-------------|
-| Timing | Started with recommendation engine deployment | Strong correlation to code change |
-| Pattern | Load-dependent, worse at >1000 req/min | Resource exhaustion likely |
-| Recovery | Retry succeeds | Transient condition, not permanent failure |
-| Error type | 502 Bad Gateway | nginx timeout waiting for upstream |
-| Frequency | ~5% of requests | Not random - specific condition triggers it |
+| Evidence   | Observation                                   | Implication                                 |
+| ---------- | --------------------------------------------- | ------------------------------------------- |
+| Timing     | Started with recommendation engine deployment | Strong correlation to code change           |
+| Pattern    | Load-dependent, worse at >1000 req/min        | Resource exhaustion likely                  |
+| Recovery   | Retry succeeds                                | Transient condition, not permanent failure  |
+| Error type | 502 Bad Gateway                               | nginx timeout waiting for upstream          |
+| Frequency  | ~5% of requests                               | Not random - specific condition triggers it |
 
 **Hypothesis Ranking**
 
-| # | Hypothesis | Confidence | Evidence Supporting |
-|---|-----------|------------|---------------------|
-| 1 | Database connection pool exhaustion | 90% | New queries + load correlation + retry success |
-| 2 | Slow queries blocking connection pool | 75% | Recommendation engine timing coincidence |
-| 3 | Node.js event loop blocking | 50% | Could cause timeout, but less likely with async |
-| 4 | Memory leak causing GC pauses | 30% | Would see memory growth, intermittent matches |
-| 5 | nginx upstream timeout too aggressive | 20% | Would have seen earlier, not deployment-related |
+| #   | Hypothesis                            | Confidence | Evidence Supporting                             |
+| --- | ------------------------------------- | ---------- | ----------------------------------------------- |
+| 1   | Database connection pool exhaustion   | 90%        | New queries + load correlation + retry success  |
+| 2   | Slow queries blocking connection pool | 75%        | Recommendation engine timing coincidence        |
+| 3   | Node.js event loop blocking           | 50%        | Could cause timeout, but less likely with async |
+| 4   | Memory leak causing GC pauses         | 30%        | Would see memory growth, intermittent matches   |
+| 5   | nginx upstream timeout too aggressive | 20%        | Would have seen earlier, not deployment-related |
 
 **Diagnostic Commands**
 
-*Hypothesis 1: Connection Pool Exhaustion*
+_Hypothesis 1: Connection Pool Exhaustion_
 
 ```sql
 -- Check current connection state in PostgreSQL
@@ -168,18 +171,18 @@ FROM pg_settings WHERE name = 'max_connections';
 
 ```javascript
 // Add connection pool monitoring to Node.js app
-const pool = require('./db').pool;
+const pool = require("./db").pool;
 
 setInterval(() => {
-  console.log('Pool stats:', {
+  console.log("Pool stats:", {
     total: pool.totalCount,
     idle: pool.idleCount,
-    waiting: pool.waitingCount
+    waiting: pool.waitingCount,
   });
 }, 5000);
 ```
 
-*Hypothesis 2: Slow Queries*
+_Hypothesis 2: Slow Queries_
 
 ```sql
 -- Find slow queries from recommendation engine
@@ -204,7 +207,7 @@ WHERE query ILIKE '%recommendation%'
 ORDER BY mean_exec_time DESC;
 ```
 
-*AWS CloudWatch Insights Query:*
+_AWS CloudWatch Insights Query:_
 
 ```
 fields @timestamp, @message
@@ -220,14 +223,16 @@ Based on diagnostic evidence, the root cause is an **N+1 query pattern** in the 
 ```javascript
 // PROBLEM: N+1 Query Pattern
 async function getRecommendations(userId) {
-  const user = await db.query('SELECT * FROM users WHERE id = $1', [userId]);
-  const history = await db.query('SELECT * FROM orders WHERE user_id = $1', [userId]);
+  const user = await db.query("SELECT * FROM users WHERE id = $1", [userId]);
+  const history = await db.query("SELECT * FROM orders WHERE user_id = $1", [
+    userId,
+  ]);
 
   // N+1: One query per order
   for (const order of history.rows) {
     const items = await db.query(
-      'SELECT * FROM order_items WHERE order_id = $1',
-      [order.id]
+      "SELECT * FROM order_items WHERE order_id = $1",
+      [order.id],
     );
     // Process items...
   }
@@ -238,19 +243,20 @@ Each recommendation request with 50 orders uses 52 database connections sequenti
 
 **Solution Options**
 
-| Option | Implementation | Pros | Cons |
-|--------|---------------|------|------|
-| 1. Optimize query | Single JOIN query | Best performance | Requires code change |
-| 2. Increase pool size | Config change | Quick fix | Doesn't fix root cause |
-| 3. Add caching | Redis caching layer | Reduces DB load | Cache invalidation complexity |
-| 4. Query batching | Batch N queries | Moderate improvement | Still more queries than needed |
+| Option                | Implementation      | Pros                 | Cons                           |
+| --------------------- | ------------------- | -------------------- | ------------------------------ |
+| 1. Optimize query     | Single JOIN query   | Best performance     | Requires code change           |
+| 2. Increase pool size | Config change       | Quick fix            | Doesn't fix root cause         |
+| 3. Add caching        | Redis caching layer | Reduces DB load      | Cache invalidation complexity  |
+| 4. Query batching     | Batch N queries     | Moderate improvement | Still more queries than needed |
 
 **Recommended Solution: Query Optimization**
 
 ```javascript
 // SOLUTION: Single optimized query with JOIN
 async function getRecommendations(userId) {
-  const result = await db.query(`
+  const result = await db.query(
+    `
     WITH user_history AS (
       SELECT oi.product_id,
              COUNT(*) as purchase_count,
@@ -267,7 +273,9 @@ async function getRecommendations(userId) {
     JOIN user_history uh ON p.id = uh.product_id
     ORDER BY uh.purchase_count DESC, uh.last_purchased DESC
     LIMIT 20
-  `, [userId]);
+  `,
+    [userId],
+  );
 
   return result.rows;
 }
@@ -278,27 +286,27 @@ async function getRecommendations(userId) {
 ```javascript
 // Prometheus metrics for connection pool
 const poolMetrics = new promClient.Gauge({
-  name: 'db_pool_connections',
-  help: 'Database connection pool statistics',
-  labelNames: ['state']
+  name: "db_pool_connections",
+  help: "Database connection pool statistics",
+  labelNames: ["state"],
 });
 
 // Update metrics periodically
 setInterval(() => {
-  poolMetrics.set({ state: 'total' }, pool.totalCount);
-  poolMetrics.set({ state: 'idle' }, pool.idleCount);
-  poolMetrics.set({ state: 'waiting' }, pool.waitingCount);
+  poolMetrics.set({ state: "total" }, pool.totalCount);
+  poolMetrics.set({ state: "idle" }, pool.idleCount);
+  poolMetrics.set({ state: "waiting" }, pool.waitingCount);
 }, 5000);
 ```
 
 **Alert Thresholds**
 
-| Metric | Baseline | Warning | Critical |
-|--------|----------|---------|----------|
-| Pool waiting count | 0 | > 5 | > 15 |
-| Query duration P95 | 100ms | > 300ms | > 500ms |
-| Connection count | 30 | > 60 | > 80 |
-| 502 error rate | 0% | > 1% | > 3% |
+| Metric             | Baseline | Warning | Critical |
+| ------------------ | -------- | ------- | -------- |
+| Pool waiting count | 0        | > 5     | > 15     |
+| Query duration P95 | 100ms    | > 300ms | > 500ms  |
+| Connection count   | 30       | > 60    | > 80     |
+| 502 error rate     | 0%       | > 1%    | > 3%     |
 
 **CloudWatch Alarm:**
 

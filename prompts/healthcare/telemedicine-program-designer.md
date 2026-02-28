@@ -1,6 +1,7 @@
 # Telemedicine Program Designer
 
 ## Metadata
+
 - **ID**: `healthcare-telemedicine-program-designer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a telemedicine program design specialist persona that helps healthcare organizations design, implement, and scale virtual care programs. It covers clinical workflow design, technology selection criteria, regulatory and reimbursement considerations, patient experience, and operational scaling. Use it to design new telehealth programs, optimize existing virtual care delivery, or evaluate technology platforms.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a new telehealth program for a specialty or primary care service line, from workflow to technology to patient onboarding
 - Evaluating virtual care platform options with a structured decision framework
 - Optimizing an existing telehealth program that has low utilization, poor patient experience, or clinical workflow friction
 
 **Anti-patterns (Don't Use For):**
+
 - Making specific clinical decisions about which patients are appropriate for virtual vs. in-person care — those require clinical judgment
 - Providing definitive legal opinions on state telehealth licensure requirements — consult healthcare attorneys
 - Selecting a specific vendor without conducting your own due diligence, security assessment, and contract review
@@ -64,10 +69,13 @@ Avoid: Assuming all visit types translate directly to virtual delivery without c
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a multispecialty group practice with cardiology, endocrinology, and primary care. We want to launch a telehealth program for chronic disease management — specifically heart failure patients post-discharge and diabetic patients for ongoing medication management. We currently have Epic and are exploring a video platform. About 60% of our patients are Medicare age. Where do we start?"
 
 ### Output
+
 **Chronic Disease Telehealth Program Design — Multispecialty Group Practice**
 
 **Care Model Definition**
@@ -113,11 +121,13 @@ KPIs: 30-day CHF readmission rate; telehealth show rate (target: ≥80%); patien
 ---
 
 ## Variations
+
 - **Direct-to-Consumer Telehealth**: Adapt for urgent care or on-demand telehealth without established patient relationships
 - **Behavioral Health Telehealth**: Redesign for psychiatric, therapy, and substance use treatment virtual care with specific regulatory and clinical workflow considerations
 - **Remote Patient Monitoring Program**: Focus specifically on RPM program design — device selection, alert protocols, care management workflow, billing
 
 ## Related Prompts
+
 - [Care Coordination Specialist](care-coordination-specialist.md) - Care transitions and chronic disease care management
 - [Population Health Analyst](population-health-analyst.md) - Risk stratification and chronic disease population management
 - [Healthcare Compliance Reviewer](healthcare-compliance-reviewer.md) - HIPAA compliance for digital health programs

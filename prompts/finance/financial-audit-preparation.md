@@ -1,6 +1,7 @@
 # Financial Audit Preparation Expert
 
 ## Metadata
+
 - **ID**: `finance-financial-audit-preparation`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a CPA and audit readiness specialist who helps finance teams organize documentation, test internal controls, and coordinate with external auditors for annual financial audits. It applies GAAP, PCAOB, and SOX frameworks to prepare complete, defensible audit packages that minimize auditor adjustments and findings. The output includes audit-ready checklists, controls documentation, and auditor communication strategies.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A controller preparing for the company's first external audit after a funding round or going-public process
 - A finance team that received significant findings in the prior year audit and needs to remediate control gaps
 - An organization approaching year-end close who needs to organize documentation and anticipate auditor requests
 
 **Anti-patterns (Don't Use For):**
+
 - Conducting the audit itself (requires licensed CPA firm)
 - Advising on accounting policy choices that affect financial statements (requires consultation with auditors)
 - Internal audit function design for large public companies with complex SOX programs (scope too large for single prompt)
@@ -64,10 +69,13 @@ Avoid: Generic checklists not tailored to the company's profile, treating all au
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a Series B SaaS company ($8M ARR) preparing for our first-ever external audit — it's required by our new investors. Fieldwork starts in 6 weeks. We have 3 people in finance (me as Controller, 1 senior accountant, 1 AP/AR specialist). We use QuickBooks Online and Stripe. Main concerns: revenue recognition (we have multi-element contracts with implementation fees + subscription), and we've never formally documented any internal controls."
 
 ### Output
+
 **Audit Preparation Plan: First-Time SaaS Audit — 6-Week Readiness Sprint**
 
 **Priority Assessment**
@@ -79,12 +87,14 @@ Your two highest-risk areas match your instincts: (1) ASC 606 revenue recognitio
 **Weeks 1-2: Documentation Triage and Revenue Analysis**
 
 Revenue (highest risk):
+
 - Pull all contracts signed in the audit period — sort by structure (implementation-only, subscription-only, bundled)
 - For each bundled contract, document the standalone selling price (SSP) for implementation services vs. subscription
 - Prepare a revenue waterfall showing beginning deferred revenue, recognized revenue, and ending deferred revenue by contract
 - Document your ASC 606 accounting policy memo (1-2 pages) covering: performance obligation identification, SSP determination methodology, and timing of recognition for implementation milestones
 
 Controls documentation (start now, it takes longer than expected):
+
 - Document 5 key controls in writing: (1) revenue recognition review, (2) monthly close review sign-off, (3) bank reconciliation approval, (4) vendor invoice approval workflow, (5) payroll processing authorization
 - For each control: name, description, frequency, who performs it, who reviews it, and evidence (screenshot, sign-off, log)
 
@@ -107,6 +117,7 @@ Organize your PBC folder structure (share via Google Drive or SharePoint):
 ```
 
 Priority documents to have complete by end of week 4:
+
 - Signed trial balance at year-end (exported from QuickBooks, reconciled to Stripe)
 - All 12 monthly bank reconciliations with supporting statements
 - AR aging report with collection status notes on balances over 90 days
@@ -116,6 +127,7 @@ Priority documents to have complete by end of week 4:
 **Weeks 5-6: Auditor Kickoff and Gap Remediation**
 
 Before fieldwork begins:
+
 - Send auditors a "pre-fieldwork information package": company overview, org chart, accounting policies summary, and your preliminary PBC index
 - Request their PBC list upfront — map to your folder structure and flag anything you need lead time on
 - Schedule daily 15-minute check-ins with the audit senior during fieldwork week
@@ -137,11 +149,13 @@ You have enough runway to be well-prepared. The revenue documentation is your cr
 ---
 
 ## Variations
+
 - **SOX Readiness**: Focused on Section 404 controls documentation and management assessment for pre-IPO or newly public companies
 - **Remediation Plan**: Structured approach to resolving prior-year audit findings and management letter comments
 - **Interim Review Preparation**: Lighter-touch preparation for Q1/Q2/Q3 quarterly reviews under SAS standards
 
 ## Related Prompts
+
 - [Financial Reporting Specialist](financial-reporting-specialist.md) - Financial statement preparation and disclosure
 - [Financial Analysis Expert](financial-analysis-expert.md) - Financial statement analysis
 - [Risk Assessment Financial](risk-assessment-financial.md) - Internal controls and risk frameworks

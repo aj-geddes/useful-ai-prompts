@@ -1,6 +1,7 @@
 # Distributed Solar Commercial and Industrial Optimization
 
 ## Metadata
+
 - **ID**: `distributed-solar-commercial-optimization`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables comprehensive distributed solar program development for comm
 ## When to Use
 
 **Ideal scenarios:**
+
 - Designing rooftop or ground-mount solar for commercial/industrial facilities
 - Optimizing behind-the-meter systems with demand charge reduction
 - Evaluating solar + storage combinations for C&I applications
@@ -25,6 +27,7 @@ This prompt enables comprehensive distributed solar program development for comm
 - Navigating complex utility tariff structures and interconnection
 
 **Anti-patterns (when not to use):**
+
 - Residential single-family installations
 - Utility-scale merchant solar projects
 - Community solar subscription programs
@@ -116,6 +119,7 @@ Develop a comprehensive C&I solar solution:
 ## Example Usage
 
 ### Input
+
 We're evaluating solar for a 250,000 sq ft distribution warehouse in California (SCE territory). The facility operates 24/7 with consistent baseload and significant demand charges. Annual consumption is 4.5 GWh with peak demand of 1.2 MW. The building is 8 years old with TPO membrane roof. Budget is flexible but targeting sub-6-year payback.
 
 ### Output
@@ -134,32 +138,35 @@ The 250,000 sq ft warehouse presents excellent solar potential with favorable st
 
 **Energy Profile Analysis**
 
-*Consumption characteristics:*
+_Consumption characteristics:_
+
 - Annual usage: 4.5 GWh (514 kW average load)
 - Peak demand: 1.2 MW (summer cooling + operations)
 - Load profile: Flat baseload with consistent 24/7 operations
 - Solar alignment: ~70% of production during on-site consumption hours
 
-*SCE rate structure (TOU-8-D assumed):*
+_SCE rate structure (TOU-8-D assumed):_
+
 - Energy charges: $0.10-0.18/kWh (TOU varying)
 - Demand charges: ~$20-25/kW (significant at 1.2 MW = ~$300K/year)
 - Net metering: NEM 2.0 with export credits at avoided cost
 
 **System Design Recommendation**
 
-*Optimal configuration:*
+_Optimal configuration:_
+
 - System size: 1.8 MW DC / 1.5 MW AC
 - Module selection: Tier-1 bifacial (550W+) for enhanced production
 - Inverter: Central inverters (3 x 500 kW) for cost efficiency at scale
 - Mounting: Ballasted racking on TPO, 10-degree tilt for self-cleaning
 - Production estimate: 2.85-3.0 GWh annually (1,580-1,670 kWh/kWp)
 
-*Design rationale:*
+_Design rationale:_
 System sized at ~65% of annual consumption to maximize self-consumption under NEM 2.0. Larger systems would export significant energy at lower avoided-cost rates, degrading economics. Baseload operations ensure high solar utilization.
 
 **Financial Analysis**
 
-*Capital costs:*
+_Capital costs:_
 | Component | Cost |
 |-----------|------|
 | Modules | $900,000 |
@@ -169,17 +176,20 @@ System sized at ~65% of annual consumption to maximize self-consumption under NE
 | Soft costs | $270,000 |
 | **Total** | **$2,220,000 ($1.23/W)** |
 
-*Incentives:*
+_Incentives:_
+
 - Federal ITC: 30% = $666,000
 - MACRS depreciation: ~$380,000 NPV (21% tax rate)
 - Net installed cost: ~$1,174,000
 
-*Annual savings:*
+_Annual savings:_
+
 - Energy offset: 2.9 GWh x $0.12 avg = $348,000
 - Demand charge reduction: Minimal (production doesn't align with evening peaks)
 - Total Year 1: ~$350,000
 
-*Project economics:*
+_Project economics:_
+
 - Simple payback: 3.4 years (on net cost after incentives)
 - 25-year NPV: $4.2M (8% discount rate)
 - IRR: 28%+ (cash purchase)
@@ -187,6 +197,7 @@ System sized at ~65% of annual consumption to maximize self-consumption under NE
 **Storage Opportunity Assessment**
 
 Given significant demand charges (~$300K/year), battery storage could provide additional value:
+
 - 500 kW / 2 MWh system for peak shaving
 - Potential demand reduction: 400 kW x $25 = $120K/year additional savings
 - Storage payback: 5-6 years with ITC
@@ -194,31 +205,34 @@ Given significant demand charges (~$300K/year), battery storage could provide ad
 
 **Implementation Roadmap**
 
-*Phase 1 - Development (Months 1-3):*
+_Phase 1 - Development (Months 1-3):_
+
 - Structural engineering certification
 - SCE interconnection application (Rule 21)
 - Permit application package preparation
 - Financing/procurement decision
 
-*Phase 2 - Construction (Months 4-6):*
+_Phase 2 - Construction (Months 4-6):_
+
 - Equipment procurement (8-10 week lead time)
 - Installation execution (6-8 weeks)
 - Inspections and commissioning
 
-*Phase 3 - Operation (Month 7+):*
+_Phase 3 - Operation (Month 7+):_
+
 - SCE PTO and meter installation
 - Performance monitoring activation
 - Annual O&M and performance optimization
 
 **Risk Assessment**
 
-| Risk | Mitigation |
-|------|------------|
-| Structural capacity | Professional engineering review, conservative ballast design |
-| Roof warranty | Manufacturer-approved mounting, extended warranty from roofer |
-| Interconnection delays | Early application, utility relationship management |
-| Production variance | Conservative modeling, performance guarantees |
-| Rate changes | Locked NEM 2.0 status, sensitivity analysis |
+| Risk                   | Mitigation                                                    |
+| ---------------------- | ------------------------------------------------------------- |
+| Structural capacity    | Professional engineering review, conservative ballast design  |
+| Roof warranty          | Manufacturer-approved mounting, extended warranty from roofer |
+| Interconnection delays | Early application, utility relationship management            |
+| Production variance    | Conservative modeling, performance guarantees                 |
+| Rate changes           | Locked NEM 2.0 status, sensitivity analysis                   |
 
 **Recommendation**
 

@@ -8,4 +8,4 @@ Mechanical design and engineering review frameworks.
 
 ---
 
-*Professional mechanical engineering prompts for design engineers, mechanical engineers, and engineering reviewers.*
+_Professional mechanical engineering prompts for design engineers, mechanical engineers, and engineering reviewers._

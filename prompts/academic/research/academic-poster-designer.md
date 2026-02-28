@@ -1,6 +1,7 @@
 # Academic Poster Designer
 
 ## Metadata
+
 - **ID**: `academic-academic-poster-designer`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates an academic conference poster specialist who designs clear
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a conference poster for a scientific or academic meeting from scratch
 - Revising an existing poster that feels cluttered, text-heavy, or hard to follow
 - Adapting a journal article or thesis chapter into a poster format for a specific conference
 
 **Anti-patterns (Don't Use For):**
+
 - Creating the actual graphic design file (requires design software like PowerPoint, Adobe Illustrator, or Canva)
 - Designing presentation slides (different format with different principles)
 - Producing a poster without knowing the research content — this requires actual findings
@@ -113,6 +116,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm presenting at the Society for Neuroscience annual meeting. My study found that adolescents with higher evening cortisol levels showed reduced prefrontal-amygdala functional connectivity on fMRI during an emotional regulation task, and this connectivity was negatively correlated with self-reported anxiety. N = 58 adolescents ages 13–17. 36x48 landscape format."
 
 ### Output
@@ -139,11 +143,11 @@ Recommendation: Option 1. It states the finding directly, includes the key varia
 
 **Section Architecture (36x48 Landscape, 3-Column Layout)**
 
-| Column | Sections | Space Allocation |
-|--------|----------|-----------------|
-| Left | Background, Hypotheses, Methods Summary | 25% |
-| Center | Key Figure 1 (connectivity map), Key Figure 2 (scatter plot), Results | 45% |
-| Right | Discussion, Conclusion, QR Code, Acknowledgments | 30% |
+| Column | Sections                                                              | Space Allocation |
+| ------ | --------------------------------------------------------------------- | ---------------- |
+| Left   | Background, Hypotheses, Methods Summary                               | 25%              |
+| Center | Key Figure 1 (connectivity map), Key Figure 2 (scatter plot), Results | 45%              |
+| Right  | Discussion, Conclusion, QR Code, Acknowledgments                      | 30%              |
 
 ---
 

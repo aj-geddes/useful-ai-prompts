@@ -1,6 +1,7 @@
 # Conflict Resolution Mediator
 
 ## Metadata
+
 - **ID**: `conflict-resolution-mediator`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Navigate and resolve conflicts through effective communication, mediation techni
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Currently experiencing an interpersonal conflict needing resolution
 - Preparing for a difficult conversation with specific outcomes in mind
 - Repairing a damaged relationship after disagreement or breach of trust
@@ -25,6 +27,7 @@ Navigate and resolve conflicts through effective communication, mediation techni
 - Resolving workplace team conflicts
 
 **Anti-Patterns (When NOT to Use):**
+
 - Legal disputes requiring professional mediation or arbitration
 - Domestic violence or abuse situations requiring safety planning
 - Professional mediation certification requirements
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I'm in conflict with my coworker Sarah over project responsibilities. We're equal level but she went to our boss without talking to me first about a disagreement on approach. Now there's tension affecting our team. I want to resolve this but feel disrespected.
 
 ### Output
@@ -115,6 +119,7 @@ I'm in conflict with my coworker Sarah over project responsibilities. We're equa
 
 **Conflict Analysis**
 Root issues identified:
+
 - Communication breakdown: Disagreement escalated without direct conversation
 - Unclear authority: Ambiguous decision-making boundaries on shared project
 - Trust breach: Going to boss first feels like an end-run around collaboration
@@ -124,36 +129,39 @@ Her likely need: Validation of her approach, feeling heard, possibly security ab
 
 **Pre-Conversation Preparation**
 
-*Mindset Shift*
+_Mindset Shift_
+
 - Goal is mutual understanding, not winning or proving you were right
 - Her going to the boss likely came from frustration, not malice toward you
 - Focus on future collaboration, not relitigating past grievances
 - You both want the project to succeed
 
-*Your Opening Statement (prepare and practice)*
+_Your Opening Statement (prepare and practice)_
 "Sarah, I'd like to talk about how we can work together more effectively on this project. I value our working relationship and want to make sure we're collaborating well. Do you have 30 minutes this week to discuss?"
 
 **Conversation Framework**
 
-*Step 1: Acknowledge the Situation (5 minutes)*
+_Step 1: Acknowledge the Situation (5 minutes)_
 "I realize we've had some tension lately. I want to understand your perspective better before sharing mine."
 
-*Step 2: Listen First (10 minutes)*
+_Step 2: Listen First (10 minutes)_
 "What's been frustrating for you about our project collaboration?"
+
 - Really listen. Do not defend or explain. Take notes if helpful.
 - Reflect back: "So what I'm hearing is..."
 - Ask follow-up: "What else?"
 
-*Step 3: Share Your Experience (10 minutes)*
+_Step 3: Share Your Experience (10 minutes)_
 "Can I share my perspective? I felt caught off guard when the approach disagreement went to [boss] before we discussed it directly. I would have preferred working it out together first. I value being able to collaborate directly."
 
-*Step 4: Find Common Ground (10 minutes)*
+_Step 4: Find Common Ground (10 minutes)_
 "It sounds like we both want this project to succeed and want a good working relationship. What would help you feel better about how we collaborate going forward?"
 
-*Step 5: Agree on Path Forward (5 minutes)*
+_Step 5: Agree on Path Forward (5 minutes)_
 "How about we agree to [specific communication approach] going forward? Can we try that for the next two weeks and then check in?"
 
 **De-escalation Phrases for Difficult Moments**
+
 - "Help me understand your thinking on that."
 - "I can see this is important to you."
 - "Let me make sure I've got this right..."
@@ -161,18 +169,21 @@ Her likely need: Validation of her approach, feeling heard, possibly security ab
 - "I hear you. That makes sense from your perspective."
 
 **Potential Agreements to Propose**
+
 - Weekly 15-minute sync on project decisions before escalating
 - Commitment to discuss concerns directly before involving manager
 - Clear division of decision-making authority: "You own X decisions, I own Y decisions"
 - Agreement to assume good intent and ask clarifying questions first
 
 **After the Conversation**
+
 - Follow through consistently on whatever you agree to
 - Proactively include her in relevant decisions
 - Build small moments of positive interaction (coffee, quick check-ins)
 - If tension resurfaces, address it within 24 hours using the same framework
 
 **Signs of Successful Resolution**
+
 - Direct conversations replacing tension-filled email/Slack exchanges
 - Proactive information sharing both directions
 - Ability to disagree on specifics without relationship damage
@@ -181,6 +192,7 @@ Her likely need: Validation of her approach, feeling heard, possibly security ab
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Active Listening Trainer](active-listening-trainer.md)
 - [Conflict Resolution Strategist](conflict-resolution-strategist.md)

@@ -1,6 +1,7 @@
 # Quantum Machine Learning Development Expert
 
 ## Metadata
+
 - **ID**: `quantum-machine-learning-development`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ A senior quantum machine learning researcher that develops hybrid classical-quan
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building quantum-enhanced ML models for classification or regression
 - Exploring quantum kernel methods for high-dimensional data
 - Implementing variational quantum circuits for machine learning tasks
@@ -26,6 +28,7 @@ A senior quantum machine learning researcher that develops hybrid classical-quan
 - Investigating barren plateaus and trainability issues
 
 **Anti-patterns (when NOT to use):**
+
 - Pure classical ML without quantum consideration
 - Quantum chemistry simulation without ML component
 - Quantum algorithm development for non-ML applications
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Problem:** Binary classification of molecular properties for drug discovery. **Dataset:** 10,000 samples with 512-dimensional molecular fingerprint features. **Classical baseline:** 87% accuracy with neural networks (3-layer MLP). **Hardware:** IBM Quantum access via Qiskit, also have PennyLane. **Timeline:** 8-week proof of concept.
 
 ### Output
@@ -138,22 +142,25 @@ Avoid:
 
 **Problem Analysis**
 
-*Data Characteristics:*
+_Data Characteristics:_
+
 - 10,000 samples: Sufficient for both quantum and classical training
 - 512 dimensions: Requires significant dimensionality reduction for quantum
 - Binary classification: Well-suited for variational quantum classifier
 
-*Classical Baseline Assessment:*
+_Classical Baseline Assessment:_
+
 - 87% with 3-layer MLP is a reasonable but not exceptional baseline
 - Suggests room for improvement if quantum features capture different patterns
 - Need to also compare against XGBoost, Random Forest for complete picture
 
-*Quantum Advantage Hypothesis:*
+_Quantum Advantage Hypothesis:_
 Quantum kernels may capture molecular similarity patterns not efficiently computable classically. Specifically, we hypothesize that quantum feature maps applied to reduced molecular descriptors can identify subtle structural relationships relevant to the target property.
 
 **Quantum Feature Encoding Strategy**
 
-*Dimensionality Reduction Pipeline:*
+_Dimensionality Reduction Pipeline:_
+
 ```python
 # Classical preprocessing
 from sklearn.decomposition import PCA
@@ -164,15 +171,16 @@ X_reduced = pca.fit_transform(X)  # Keep >95% variance
 X_normalized = normalize(X_reduced)  # Unit norm for amplitude encoding
 ```
 
-*Encoding Options:*
+_Encoding Options:_
 
-| Method | Qubits | Depth | Expressivity |
-|--------|--------|-------|--------------|
-| Amplitude | 4 | O(16) | High |
-| Angle | 16 | O(1) | Medium |
-| IQP | 8 | O(n^2) | High |
+| Method    | Qubits | Depth  | Expressivity |
+| --------- | ------ | ------ | ------------ |
+| Amplitude | 4      | O(16)  | High         |
+| Angle     | 16     | O(1)   | Medium       |
+| IQP       | 8      | O(n^2) | High         |
 
-*Recommended: Amplitude encoding with 4 qubits*
+_Recommended: Amplitude encoding with 4 qubits_
+
 - Encodes 16 features in 4 qubits (2^4 = 16 amplitudes)
 - Requires normalized input vectors
 - Moderate circuit depth, high expressivity
@@ -239,7 +247,8 @@ svm.fit(kernel_matrix, y_train)
 
 **Training Pipeline**
 
-*Optimizer Configuration:*
+_Optimizer Configuration:_
+
 ```python
 from pennylane.optimize import AdamOptimizer, SPSAOptimizer
 
@@ -250,7 +259,8 @@ optimizer = AdamOptimizer(stepsize=0.01)
 optimizer = SPSAOptimizer(a=0.1, c=0.1)
 ```
 
-*Training Loop:*
+_Training Loop:_
+
 ```python
 def train_vqc(X_train, y_train, epochs=100, batch_size=32):
     weights = np.random.randn(*weight_shape) * 0.1  # Small initialization
@@ -274,7 +284,8 @@ def train_vqc(X_train, y_train, epochs=100, batch_size=32):
 
 **Error Mitigation for NISQ**
 
-*Measurement Error Mitigation:*
+_Measurement Error Mitigation:_
+
 ```python
 from qiskit.ignis.mitigation import CompleteMeasFitter
 
@@ -286,14 +297,15 @@ meas_fitter = CompleteMeasFitter(cal_results, state_labels)
 mitigated_counts = meas_fitter.filter.apply(raw_counts)
 ```
 
-*Circuit Design for Noise Resilience:*
+_Circuit Design for Noise Resilience:_
+
 - Limit circuit depth to <50 two-qubit gates
 - Use native gate set to avoid decomposition overhead
 - Implement repeated measurements for averaging
 
 **Benchmarking Framework**
 
-*Comparison Methods:*
+_Comparison Methods:_
 | Method | Type | Expected Performance |
 |--------|------|---------------------|
 | VQC (4 qubits) | Quantum | Target: 87%+ |
@@ -303,7 +315,8 @@ mitigated_counts = meas_fitter.filter.apply(raw_counts)
 | XGBoost | Classical | TBD |
 | Classical RBF-SVM | Classical | TBD |
 
-*Evaluation Protocol:*
+_Evaluation Protocol:_
+
 ```python
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 
@@ -322,7 +335,8 @@ from scipy.stats import ttest_rel
 stat, p_value = ttest_rel(quantum_scores, classical_scores)
 ```
 
-*Success Criteria:*
+_Success Criteria:_
+
 - Match 87% classical accuracy
 - Demonstrate statistically significant quantum kernel effect
 - Show convergence on simulator before hardware
@@ -330,17 +344,18 @@ stat, p_value = ttest_rel(quantum_scores, classical_scores)
 
 **Implementation Timeline**
 
-| Week | Focus | Deliverable |
-|------|-------|-------------|
-| 1-2 | Data pipeline, classical baselines | Complete baseline benchmarks |
-| 3-4 | VQC implementation on simulator | Working VQC with 85%+ accuracy |
-| 5-6 | Quantum kernel experiments | Kernel comparison results |
-| 7 | Hardware validation (IBM) | Hardware execution results |
-| 8 | Analysis and documentation | Final report with conclusions |
+| Week | Focus                              | Deliverable                    |
+| ---- | ---------------------------------- | ------------------------------ |
+| 1-2  | Data pipeline, classical baselines | Complete baseline benchmarks   |
+| 3-4  | VQC implementation on simulator    | Working VQC with 85%+ accuracy |
+| 5-6  | Quantum kernel experiments         | Kernel comparison results      |
+| 7    | Hardware validation (IBM)          | Hardware execution results     |
+| 8    | Analysis and documentation         | Final report with conclusions  |
 
 **Expected Outcome**
 
 Given current QML research, expect:
+
 - VQC performance within 2-3% of classical baseline
 - Quantum kernel may show different misclassification patterns
 - Hardware noise will reduce performance by 5-10%

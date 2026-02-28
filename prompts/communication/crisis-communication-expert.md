@@ -1,6 +1,7 @@
 # Crisis Communication Expert
 
 ## Metadata
+
 - **ID**: `communication-crisis-communication`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Manages urgent situations through clear, coordinated stakeholder communication that protects reputation while addressing concerns transparently. Creates rapid response plans with stakeholder-specific messaging that balances transparency with responsible disclosure, ensuring consistent communication across all channels during high-pressure situations.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Responding to data breaches or security incidents
 - Managing product recalls or safety issues
 - Addressing public relations crises and negative publicity
@@ -24,6 +27,7 @@ Manages urgent situations through clear, coordinated stakeholder communication t
 - Handling major service outages affecting customers
 
 **Anti-Patterns (When NOT to Use):**
+
 - Routine communications and standard updates
 - Minor customer complaints or individual issues
 - Internal policy updates and announcements
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We discovered a data breach yesterday affecting 5,000 customer records. Names, emails, and partial credit card numbers (last 4 digits) were exposed. No evidence of misuse yet. We need to notify customers within 72 hours per regulations. We haven't communicated anything yet. Our board wants to minimize panic while being transparent."
 
 ### Output
@@ -118,6 +123,7 @@ Avoid:
 **Urgency:** Immediate action required (regulatory deadline)
 
 **Key Facts:**
+
 - 5,000 customer records affected
 - Data exposed: Names, emails, partial credit cards
 - No evidence of misuse (yet)
@@ -136,6 +142,7 @@ Avoid:
 ## CORE MESSAGING FRAMEWORK
 
 **Key Messages (All Communications):**
+
 1. We discovered a security incident affecting some customer data
 2. We are taking immediate action to protect affected customers
 3. There is no evidence of data misuse at this time
@@ -143,11 +150,13 @@ Avoid:
 5. We are implementing enhanced security measures
 
 **What to Say:**
+
 - "We take the protection of your information seriously"
 - "We discovered this issue and are addressing it proactively"
 - "We are being transparent about what happened"
 
 **What NOT to Say:**
+
 - Don't speculate about cause before investigation complete
 - Don't promise "this will never happen again"
 - Don't minimize or use technical jargon
@@ -166,15 +175,18 @@ We are writing to inform you of a security incident that may have affected your 
 On [Date], our security team detected and stopped unauthorized access to a customer database. We immediately launched an investigation and engaged external cybersecurity experts.
 
 **What Information Was Involved:**
+
 - Your name and email address
 - Partial credit card information (last 4 digits only - not full card numbers)
 
 **What We Are Doing:**
+
 - We have secured the affected systems
 - We have notified law enforcement and regulators
 - We are offering 12 months of free credit monitoring through [Service]
 
 **What You Can Do:**
+
 1. Activate your free credit monitoring at [Link]
 2. Monitor your credit card statements for unusual activity
 3. Contact us at [Phone/Email] with any questions
@@ -196,11 +208,13 @@ I want to inform you directly about a security incident affecting some of our cu
 We discovered unauthorized access to a database containing approximately 5,000 customer records. We have contained the issue and are notifying affected customers.
 
 **What We're Doing:**
+
 - Customer notifications going out today
 - Free credit monitoring for affected customers
 - Enhanced security measures being implemented
 
 **What This Means for You:**
+
 - Customer Service: Expect increased inquiries - see FAQ below
 - All Staff: Do not discuss details with media (direct to PR)
 - Stay focused on serving our customers well
@@ -236,22 +250,26 @@ Media inquiries: [Contact]
 ## RESPONSE TIMELINE
 
 **Hour 1-4:**
+
 - Brief leadership team
 - Prepare all communications
 - Brief customer service team
 
 **Hour 4-24:**
+
 - Send customer notifications
 - Post website notice
 - Brief employees
 - Submit regulatory notifications
 
 **Day 2-3:**
+
 - Monitor customer inquiries
 - Prepare media responses if needed
 - Continue investigation
 
 **Week 1-4:**
+
 - Follow-up communications as investigation progresses
 - Customer service escalation handling
 - Security enhancement implementation
@@ -259,6 +277,7 @@ Media inquiries: [Contact]
 ---
 
 ## Related Prompts
+
 - [Executive Briefing Expert](executive-briefing-expert.md) - Brief leadership on crisis status
 - [Stakeholder Communication Expert](stakeholder-communication-expert.md) - Ongoing stakeholder management
 - [Crisis Leadership Expert](../management-leadership/crisis-leadership-expert.md) - Lead organizational response

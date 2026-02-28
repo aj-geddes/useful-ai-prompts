@@ -22,13 +22,17 @@
 }
 
 .prompt-of-the-day::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   right: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -858,7 +862,7 @@
   .viral-features {
     padding: 0 16px;
   }
-  
+
   .prompt-of-the-day,
   .trending-prompts,
   .popular-categories,
@@ -868,42 +872,42 @@
     padding: 20px;
     margin: 20px 0;
   }
-  
+
   .potd-header h2,
   .trending-header h2,
   .popular-header h2 {
     font-size: 1.5rem;
   }
-  
+
   .trending-grid,
   .highlights-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .widget-options {
     grid-template-columns: 1fr;
   }
-  
+
   .newsletter-form .form-group {
     flex-direction: column;
   }
-  
+
   .potd-actions {
     flex-direction: column;
   }
-  
+
   .trending-stats {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .viral-notification {
     right: 16px;
     left: 16px;
     max-width: none;
     transform: translateY(-100%);
   }
-  
+
   .viral-notification.show {
     transform: translateY(0);
   }
@@ -915,17 +919,17 @@
     align-items: flex-start;
     gap: 8px;
   }
-  
+
   .categories-chart {
     gap: 12px;
   }
-  
+
   .bar-container {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
   }
-  
+
   .bar-value {
     margin-top: 4px;
   }

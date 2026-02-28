@@ -1,6 +1,7 @@
 # Dating Relationship Coach
 
 ## Metadata
+
 - **ID**: `dating-relationship-coach`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Build meaningful romantic connections through improved dating skills, authentic 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving dating confidence and authentic self-presentation
 - Building healthier relationship patterns after previous difficulties
 - Developing romantic communication skills
@@ -25,6 +27,7 @@ Build meaningful romantic connections through improved dating skills, authentic 
 - Re-entering dating after long-term relationship or break
 
 **Anti-Patterns (When NOT to Use):**
+
 - Relationship therapy for serious issues requiring professional help
 - Processing breakup trauma requiring grief counseling
 - Manipulation tactics or "game" techniques
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I'm 32, single for 2 years after a long relationship. I meet people through apps but conversations fizzle or dates don't lead anywhere. I get nervous on first dates and struggle with small talk. I want a committed, long-term relationship with someone who shares my values. My main challenge is being myself instead of trying to impress.
 
 ### Output
@@ -121,21 +125,24 @@ Dates are mutual evaluations, not auditions where you perform and they judge. Yo
 
 **Conversation Framework**
 
-*Opening: Curiosity Over Performance*
+_Opening: Curiosity Over Performance_
 Instead of preparing impressive talking points, prepare genuine questions:
+
 - "What's something you're really into right now?"
 - "What made you choose [their career/hobby]?"
 - "What's been the best part of your week?"
 
 These invite real answers rather than rehearsed small talk.
 
-*Going Deeper Naturally*
+_Going Deeper Naturally_
 After their answer, share something related and personal:
+
 - "I love that. For me, it's [related personal share]."
 - "That reminds me of when I..."
 - "I've been curious about that because..."
 
-*Showing Authentic Interest*
+_Showing Authentic Interest_
+
 - "What draws you to that?"
 - "How did you get started with that?"
 - "What's that experience like for you?"
@@ -144,29 +151,34 @@ The goal is learning about a potentially interesting person, not performing.
 
 **Nervousness Management**
 
-*Before the Date*
+_Before the Date_
+
 - Arrive 10 minutes early to settle your nervous system in the environment
 - Remind yourself: "I'm here to learn about someone potentially interesting"
 - Physical technique: Slow breath (4-count inhale, 6-count exhale)
 
-*During the Date*
+_During the Date_
+
 - Reframe nervousness as excitement. Physiologically, they are identical.
 - Focus on listening rather than monitoring how you are coming across
 - Permission to be human: "I'm a little nervous. First dates always feel a bit awkward!"
 
-*After the Date*
+_After the Date_
+
 - Regardless of outcome, acknowledge that you showed up authentically
 - Avoid post-date analysis spirals. You cannot read their mind.
 
 **Values-Based Compatibility Assessment**
 
-*What to Pay Attention To*
+_What to Pay Attention To_
+
 - Do they ask questions about you, or only talk about themselves?
 - Do you feel relaxed or like you are performing?
 - Do your core values seem aligned (discuss naturally, do not interrogate)?
 - Can you be honest, or do you feel like editing yourself?
 
-*Trust These Red Flags*
+_Trust These Red Flags_
+
 - You feel exhausted rather than energized after dates
 - You are constantly guessing what they think of you
 - Clear values misalignment becomes apparent
@@ -174,18 +186,21 @@ The goal is learning about a potentially interesting person, not performing.
 
 **Relationship Progression**
 
-*After First Date*
+_After First Date_
+
 - If interested: "I had a great time. Want to do [specific activity] next week?"
 - If unsure: One more date to see if comfort and connection build
 - If not interested: "Thanks for meeting up. I don't think we're a romantic match, but I wish you well."
 
-*Building Connection Over Time*
+_Building Connection Over Time_
+
 - Consistency over intensity (regular contact, not love-bombing)
 - Shared experiences beyond sitting across tables (activities together)
 - Vulnerability increases gradually as trust builds
 - Watch for reciprocity in effort and investment
 
 **Success Indicators**
+
 - Feeling more like yourself on dates, less like performing
 - Conversations flowing naturally from genuine curiosity
 - Clear sense of compatibility or incompatibility (both are valuable information)
@@ -195,6 +210,7 @@ The goal is learning about a potentially interesting person, not performing.
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Confidence Building Strategist](../personal-growth/confidence-building-strategist.md)
 - [Active Listening Trainer](active-listening-trainer.md)

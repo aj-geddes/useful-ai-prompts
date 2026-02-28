@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Create detailed technical specifications, requirements documents, design
+date: "2025-01-01"
+description:
+  Create detailed technical specifications, requirements documents, design
   documents, and system architecture specs. Use when writing technical specs, requirements
   docs, or design documents.
 layout: skill
 slug: technical-specification
 tags:
-- development
+  - development
 title: technical-specification
 ---
 
@@ -55,6 +56,7 @@ Brief 2-3 sentence overview of what this spec covers and why it's being built.
 ### Context
 
 Provide background on why this feature is needed:
+
 - What's the current situation?
 - What pain points exist?
 - What's driving this change?
@@ -70,6 +72,7 @@ Provide background on why this feature is needed:
 ### Non-Goals
 
 What this specification explicitly does NOT cover:
+
 - Non-goal 1
 - Non-goal 2
 - Future considerations (out of scope for v1)
@@ -81,10 +84,12 @@ What this specification explicitly does NOT cover:
 ### Functional Requirements
 
 #### FR-1: User Authentication
+
 **Priority:** P0 (Must Have)
 **Description:** Users must be able to authenticate using email/password
 
 **Acceptance Criteria:**
+
 - [ ] User can register with email and password
 - [ ] User can log in with credentials
 - [ ] User receives email verification
@@ -94,10 +99,12 @@ What this specification explicitly does NOT cover:
 **Dependencies:** None
 
 #### FR-2: Social Login
+
 **Priority:** P1 (Should Have)
 **Description:** Users can authenticate using OAuth providers
 
 **Acceptance Criteria:**
+
 - [ ] Support Google OAuth
 - [ ] Support GitHub OAuth
 - [ ] Link social accounts to existing accounts
@@ -106,10 +113,12 @@ What this specification explicitly does NOT cover:
 **Dependencies:** FR-1
 
 #### FR-3: Two-Factor Authentication
+
 **Priority:** P2 (Nice to Have)
 **Description:** Optional 2FA for enhanced security
 
 **Acceptance Criteria:**
+
 - [ ] Enable/disable 2FA in settings
 - [ ] Support TOTP (Google Authenticator, Authy)
 - [ ] Backup codes generation
@@ -120,28 +129,33 @@ What this specification explicitly does NOT cover:
 ### Non-Functional Requirements
 
 #### Performance
+
 - **Response Time:** API endpoints < 200ms p95
 - **Throughput:** Support 1000 requests/second
 - **Database Queries:** < 50ms p95
 - **Page Load:** First contentful paint < 1.5s
 
 #### Scalability
+
 - **Concurrent Users:** Support 100,000 simultaneous users
 - **Data Growth:** Handle 10M user records
 - **Horizontal Scaling:** Support 10 application instances
 
 #### Security
+
 - **Authentication:** JWT-based with refresh tokens
 - **Password Hashing:** bcrypt with 12 rounds
 - **Rate Limiting:** 100 requests/hour per IP
 - **Data Encryption:** AES-256 at rest, TLS 1.3 in transit
 
 #### Availability
+
 - **Uptime:** 99.9% SLA
 - **Recovery Time:** RTO < 4 hours, RPO < 1 hour
 - **Backup:** Daily automated backups, 30-day retention
 
 #### Compliance
+
 - GDPR compliant (data export/deletion)
 - SOC 2 Type II requirements
 - PCI DSS (if handling payments)
@@ -151,31 +165,32 @@ What this specification explicitly does NOT cover:
 ## 3. System Architecture
 
 ### High-Level Architecture
-
 ```
+
 ┌─────────────┐
-│   Client    │
+│ Client │
 │ (React App) │
 └──────┬──────┘
-       │
-       ▼
-┌─────────────┐     ┌──────────────┐
+│
+▼
+┌─────────────┐ ┌──────────────┐
 │ API Gateway │────▶│ Auth Service │
-│  (Express)  │     │   (Node.js)  │
-└──────┬──────┘     └──────┬───────┘
-       │                   │
-       ▼                   ▼
-┌─────────────┐     ┌──────────────┐
-│User Service │     │   Database   │
-│  (Node.js)  │────▶│ (PostgreSQL) │
-└─────────────┘     └──────────────┘
-       │
-       ▼
+│ (Express) │ │ (Node.js) │
+└──────┬──────┘ └──────┬───────┘
+│ │
+▼ ▼
+┌─────────────┐ ┌──────────────┐
+│User Service │ │ Database │
+│ (Node.js) │────▶│ (PostgreSQL) │
+└─────────────┘ └──────────────┘
+│
+▼
 ┌─────────────┐
-│    Cache    │
-│   (Redis)   │
+│ Cache │
+│ (Redis) │
 └─────────────┘
-```
+
+````
 
 ### Component Diagram
 
@@ -249,7 +264,7 @@ CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_sessions_token ON sessions(token);
 CREATE INDEX idx_sessions_user_id ON sessions(user_id);
 CREATE INDEX idx_oauth_user_id ON oauth_connections(user_id);
-```
+````
 
 ### API Data Models
 
@@ -292,9 +307,11 @@ interface RegisterRequest {
 ### Authentication Endpoints
 
 #### POST /api/auth/register
+
 **Description:** Register a new user account
 
 **Request:**
+
 ```json
 {
   "email": "user@example.com",
@@ -304,6 +321,7 @@ interface RegisterRequest {
 ```
 
 **Response (201):**
+
 ```json
 {
   "success": true,
@@ -317,14 +335,17 @@ interface RegisterRequest {
 ```
 
 **Errors:**
+
 - 400: Invalid email format
 - 409: Email already exists
 - 422: Password too weak
 
 #### POST /api/auth/login
+
 **Description:** Authenticate user and return JWT token
 
 **Request:**
+
 ```json
 {
   "email": "user@example.com",
@@ -334,6 +355,7 @@ interface RegisterRequest {
 ```
 
 **Response (200):**
+
 ```json
 {
   "success": true,
@@ -348,23 +370,25 @@ interface RegisterRequest {
 ```
 
 **Errors:**
+
 - 401: Invalid credentials
 - 403: Account locked
 - 428: 2FA code required
 
 ### Rate Limiting
 
-| Endpoint | Limit | Window |
-|----------|-------|--------|
-| POST /api/auth/login | 5 attempts | 15 minutes |
-| POST /api/auth/register | 3 attempts | 1 hour |
-| POST /api/auth/reset-password | 3 attempts | 1 hour |
+| Endpoint                      | Limit      | Window     |
+| ----------------------------- | ---------- | ---------- |
+| POST /api/auth/login          | 5 attempts | 15 minutes |
+| POST /api/auth/register       | 3 attempts | 1 hour     |
+| POST /api/auth/reset-password | 3 attempts | 1 hour     |
 
 ---
 
 ## 6. Implementation Plan
 
 ### Phase 1: Core Authentication (Week 1-2)
+
 - [ ] Database schema setup
 - [ ] User registration endpoint
 - [ ] Email/password login
@@ -373,6 +397,7 @@ interface RegisterRequest {
 - [ ] Basic frontend forms
 
 ### Phase 2: Email Verification (Week 3)
+
 - [ ] Email service integration
 - [ ] Verification token generation
 - [ ] Verification endpoint
@@ -380,12 +405,14 @@ interface RegisterRequest {
 - [ ] Resend verification email
 
 ### Phase 3: Social Login (Week 4)
+
 - [ ] OAuth integration (Google)
 - [ ] OAuth integration (GitHub)
 - [ ] Account linking
 - [ ] Frontend OAuth buttons
 
 ### Phase 4: Security Features (Week 5)
+
 - [ ] Two-factor authentication
 - [ ] Password reset flow
 - [ ] Rate limiting
@@ -393,6 +420,7 @@ interface RegisterRequest {
 - [ ] Security headers
 
 ### Phase 5: Testing & Polish (Week 6)
+
 - [ ] Unit tests
 - [ ] Integration tests
 - [ ] E2E tests
@@ -405,6 +433,7 @@ interface RegisterRequest {
 ## 7. Testing Strategy
 
 ### Unit Tests
+
 - Password hashing/verification
 - JWT token generation/validation
 - Input validation
@@ -413,6 +442,7 @@ interface RegisterRequest {
 **Coverage Target:** 90%
 
 ### Integration Tests
+
 - API endpoint testing
 - Database operations
 - OAuth flow
@@ -421,6 +451,7 @@ interface RegisterRequest {
 **Coverage Target:** 80%
 
 ### E2E Tests
+
 - Complete registration flow
 - Login with email/password
 - Social login flow
@@ -430,6 +461,7 @@ interface RegisterRequest {
 **Coverage Target:** Critical paths only
 
 ### Performance Tests
+
 - Load testing: 1000 concurrent logins
 - Stress testing: Find breaking point
 - Database query performance
@@ -440,16 +472,17 @@ interface RegisterRequest {
 
 ### Threats
 
-| Threat | Mitigation |
-|--------|------------|
-| Brute force | Rate limiting, account lockout |
-| SQL injection | Parameterized queries, ORM |
-| XSS | Input sanitization, CSP headers |
-| CSRF | CSRF tokens, SameSite cookies |
-| Session hijacking | Secure cookies, HTTPS only |
-| Password leaks | bcrypt hashing, password strength |
+| Threat            | Mitigation                        |
+| ----------------- | --------------------------------- |
+| Brute force       | Rate limiting, account lockout    |
+| SQL injection     | Parameterized queries, ORM        |
+| XSS               | Input sanitization, CSP headers   |
+| CSRF              | CSRF tokens, SameSite cookies     |
+| Session hijacking | Secure cookies, HTTPS only        |
+| Password leaks    | bcrypt hashing, password strength |
 
 ### Security Checklist
+
 - [ ] HTTPS enforced
 - [ ] Security headers configured
 - [ ] Rate limiting implemented
@@ -465,6 +498,7 @@ interface RegisterRequest {
 ## 9. Monitoring & Observability
 
 ### Metrics
+
 - **Authentication success rate**
 - **Failed login attempts**
 - **Average login time**
@@ -472,12 +506,14 @@ interface RegisterRequest {
 - **2FA adoption rate**
 
 ### Alerts
+
 - Failed login rate > 10%
 - Database connection errors
 - Email sending failures
 - Rate limit exceeded > 100 times/hour
 
 ### Logging
+
 ```javascript
 // Log structure
 {
@@ -496,12 +532,12 @@ interface RegisterRequest {
 
 ## 10. Risks & Mitigation
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| OAuth provider downtime | Medium | High | Fallback to email login |
-| Database migration issues | Low | High | Test thoroughly in staging |
-| Performance under load | Medium | Medium | Load testing, caching |
-| Security vulnerabilities | Low | Critical | Security audit, pen testing |
+| Risk                      | Probability | Impact   | Mitigation                  |
+| ------------------------- | ----------- | -------- | --------------------------- |
+| OAuth provider downtime   | Medium      | High     | Fallback to email login     |
+| Database migration issues | Low         | High     | Test thoroughly in staging  |
+| Performance under load    | Medium      | Medium   | Load testing, caching       |
+| Security vulnerabilities  | Low         | Critical | Security audit, pen testing |
 
 ---
 
@@ -517,11 +553,13 @@ interface RegisterRequest {
 ## 12. Alternatives Considered
 
 ### Alternative 1: Use Auth0
+
 **Pros:** Faster implementation, proven security
 **Cons:** Cost, vendor lock-in, less customization
 **Decision:** Build in-house for flexibility
 
 ### Alternative 2: Session-based auth instead of JWT
+
 **Pros:** Simpler revocation, less token size
 **Cons:** Harder to scale, CORS issues
 **Decision:** Use JWT for stateless scaling
@@ -531,6 +569,7 @@ interface RegisterRequest {
 ## 13. Success Criteria
 
 ### Launch Criteria
+
 - [ ] All P0 requirements implemented
 - [ ] Security audit passed
 - [ ] Load testing passed (1000 concurrent users)
@@ -538,6 +577,7 @@ interface RegisterRequest {
 - [ ] 90% test coverage achieved
 
 ### Post-Launch Metrics (Week 1)
+
 - < 1% authentication error rate
 - < 500ms average login time
 - > 95% user satisfaction (surveys)
@@ -551,6 +591,7 @@ interface RegisterRequest {
 - [JWT Best Practices](https://tools.ietf.org/html/rfc8725)
 - [OAuth 2.0 Spec](https://oauth.net/2/)
 - Internal: Authentication RFC #123
+
 ```
 
 ## Best Practices
@@ -582,3 +623,4 @@ interface RegisterRequest {
 - [RFC Template](https://github.com/philips/template-rfcs)
 - [Architecture Decision Records](https://adr.github.io/)
 - [Amazon Press Release / FAQ](https://www.productplan.com/glossary/working-backward-amazon-method/)
+```

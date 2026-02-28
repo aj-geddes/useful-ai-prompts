@@ -1,6 +1,7 @@
 # Sales Pipeline Optimizer
 
 ## Metadata
+
 - **ID**: `business-sales-pipeline-optimizer`
 - **Version**: 1.0.0
 - **Category**: Business/Sales
@@ -18,12 +19,14 @@ Optimizes sales pipelines for better conversions and predictable revenue through
 ## When to Use
 
 **Scenarios:**
+
 - Pipeline conversion rates below industry benchmarks
 - Forecasting accuracy problems (consistently over or under)
 - Deals stalling in mid-pipeline stages or going dark
 - Scaling sales team while maintaining effectiveness
 
 **Anti-patterns:**
+
 - Individual deal coaching or account strategy
 - Territory planning or quota setting
 - Compensation design or incentive structure
@@ -113,6 +116,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "B2B software - CRM for small businesses. Pricing: $200-500/month, approximately $15K ACV. Sales cycle typically 30-45 days. Current pipeline: 150 deals worth $2M. Stages: Lead > Qualified > Demo > Proposal > Negotiation > Closed Won. Major drop-offs: after demo (40% loss) and after proposal (30% loss). Overall conversion from Lead to Closed: 15%. Team of 8 salespeople using Salesforce. Forecasts regularly miss by 20-30%, both over and under. Challenges: deals going dark after demo, long cycles, price objections at proposal stage."
 
 ### Output
@@ -120,6 +124,7 @@ Outputs must avoid:
 ## PIPELINE ANALYSIS
 
 ### Conversion Funnel
+
 ```
 Lead: 100% ─────────┐
                     │ 60% pass
@@ -135,15 +140,17 @@ Closed Won: 15% ────┘
 ```
 
 ### Key Metrics vs Benchmark
-| Metric | Current | Benchmark | Gap |
-|--------|---------|-----------|-----|
-| Lead to Close | 15% | 20-25% | -5-10% |
-| Demo to Proposal | 60% | 75% | -15% |
-| Proposal to Close | 60% | 70% | -10% |
-| Sales Cycle | 38 days | 30 days | +8 days |
-| Forecast Accuracy | 72% | 90% | -18% |
+
+| Metric            | Current | Benchmark | Gap     |
+| ----------------- | ------- | --------- | ------- |
+| Lead to Close     | 15%     | 20-25%    | -5-10%  |
+| Demo to Proposal  | 60%     | 75%       | -15%    |
+| Proposal to Close | 60%     | 70%       | -10%    |
+| Sales Cycle       | 38 days | 30 days   | +8 days |
+| Forecast Accuracy | 72%     | 90%       | -18%    |
 
 ### Annual Impact of Gaps
+
 - Demo to Proposal gap: $500K lost revenue potential
 - Proposal to Close gap: $300K lost revenue potential
 - Cycle time gap: Reduced capacity, missed quarter-end deals
@@ -151,16 +158,19 @@ Closed Won: 15% ────┘
 ## KEY PROBLEMS
 
 ### Problem 1: Demo to Proposal Drop (40% loss)
+
 **Symptoms:** Prospects go dark after demo, requests for "more time to think"
 **Root Cause:** Generic demos not matching specific pain points; decision makers not attending
 **Evidence:** Win rate 2x higher when economic buyer attends demo
 
 ### Problem 2: Proposal to Close Drop (30% loss)
+
 **Symptoms:** Price objections, "need to compare with alternatives," delayed decisions
 **Root Cause:** Value not quantified in buyer's terms; no urgency created
 **Evidence:** Deals with ROI calculator close at 85% vs 55% without
 
 ### Problem 3: Forecast Inaccuracy (+/-25%)
+
 **Symptoms:** Commit deals slip, upside deals close unexpectedly
 **Root Cause:** Stage probabilities don't reflect actual conversion; no consistent criteria
 **Evidence:** "Proposal" stage closes at 45%, not assumed 60%
@@ -168,6 +178,7 @@ Closed Won: 15% ────┘
 ## STAGE OPTIMIZATIONS
 
 ### Lead to Qualified (60% - Target: 65%)
+
 **Current Issue:** Inconsistent BANT qualification
 **Solution:** Implement MEDDIC scorecard
 
@@ -182,26 +193,31 @@ C - Champion: Internal advocate named? (0-10)
 ```
 
 ### Demo to Proposal (60% - Target: 75%)
+
 **Current Issue:** Generic demos, missing decision-makers
 **Solution:** Personalized demo framework with gates
 
 **Pre-Demo Requirements (Gate to schedule):**
+
 - Discovery call completed with documented pain points
 - 3 specific use cases identified from discovery
 - ROI estimate prepared using customer's numbers
 - Economic buyer confirmed attending (or reschedule)
 
 **Post-Demo Automation:**
+
 - T+1 hour: Thank you email with recording link
 - T+1 day: Customized one-pager addressing their 3 use cases
 - T+2 days: ROI calculator pre-populated with their numbers
 - T+5 days: Proposal or formal disqualification (no ghosting)
 
 ### Proposal to Close (60% - Target: 75%)
+
 **Current Issue:** Price shock, no urgency
 **Solution:** Value-based proposal format
 
 **Proposal Structure:**
+
 1. Executive summary (their words, their problems)
 2. Current state pain quantified ($$$ per month/year)
 3. Future state with ROI timeline (break-even <6 months)
@@ -211,6 +227,7 @@ C - Champion: Internal advocate named? (0-10)
 ## FORECASTING MODEL
 
 ### Updated Stage Probabilities (Based on your data)
+
 ```
 Current Model (Inaccurate):        Data-Driven Model:
 ├── Qualified: 20%                 ├── Qualified: 15%
@@ -220,15 +237,17 @@ Current Model (Inaccurate):        Data-Driven Model:
 ```
 
 ### Probability Modifiers
-| Factor | Adjustment |
-|--------|------------|
-| Champion identified and engaged | +15% |
-| Budget explicitly confirmed | +20% |
-| Decision timeline <30 days | +15% |
-| Active competition mentioned | -20% |
-| Economic buyer not engaged | -25% |
+
+| Factor                          | Adjustment |
+| ------------------------------- | ---------- |
+| Champion identified and engaged | +15%       |
+| Budget explicitly confirmed     | +20%       |
+| Decision timeline <30 days      | +15%       |
+| Active competition mentioned    | -20%       |
+| Economic buyer not engaged      | -25%       |
 
 ### Commit / Best Case / Pipeline Categories
+
 ```
 COMMIT (90%+ probability): $150K
 ├── Contract in hand, verbal commitment received
@@ -249,6 +268,7 @@ PIPELINE (15-49% probability): $500K
 ## ACCELERATION TACTICS
 
 ### Stall Prevention (Parallel Processing)
+
 ```
 Traditional: Discovery > Demo > Proposal > Negotiate > Close (45 days)
 Accelerated: Discovery+Demo prep > Demo+Proposal draft > Negotiate (25 days)
@@ -257,14 +277,17 @@ Accelerated: Discovery+Demo prep > Demo+Proposal draft > Negotiate (25 days)
 ```
 
 ### Deal Recovery Alerts
-| Trigger | Alert | Action |
-|---------|-------|--------|
-| No activity >5 days | Rep notification | Suggested re-engagement message |
-| In stage >2x average | Manager review | Recovery call or disqualification |
-| Demo no-show | Immediate | Auto-reschedule sequence or close |
+
+| Trigger              | Alert            | Action                            |
+| -------------------- | ---------------- | --------------------------------- |
+| No activity >5 days  | Rep notification | Suggested re-engagement message   |
+| In stage >2x average | Manager review   | Recovery call or disqualification |
+| Demo no-show         | Immediate        | Auto-reschedule sequence or close |
 
 ### Fast-Track Criteria
+
 Deals meeting all criteria get priority:
+
 - Budget confirmed in writing
 - Pain quantified >$50K/year impact
 - Economic buyer engaged directly
@@ -275,6 +298,7 @@ Deals meeting all criteria get priority:
 ## PERFORMANCE METRICS
 
 ### Rep Scorecard (Weekly)
+
 ```
 Activity:
 ├── Calls: 50/week target
@@ -293,6 +317,7 @@ Pipeline:
 ```
 
 ### Team Dashboard
+
 ```
 Pipeline Health:
 ├── Total Value: $2M (Target: $2.5M for quota coverage)
@@ -310,6 +335,7 @@ Pipeline Health:
 **Week 7-8:** Full rollout, performance management aligned, celebrate early wins
 
 **Expected Results (90 days):**
+
 - Conversion: 15% to 20% (+$400K annual revenue)
 - Forecast accuracy: 72% to 90%
 - Cycle time: 38 days to 32 days
@@ -317,5 +343,6 @@ Pipeline Health:
 ---
 
 ## Related Prompts
+
 - [Customer Retention Expert](../customer-success/retention-optimization-expert.md) - Post-sale optimization
 - [Marketing Manager Strategist](../marketing/marketing-manager-strategist.md) - Lead generation alignment

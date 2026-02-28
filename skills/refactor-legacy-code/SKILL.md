@@ -40,6 +40,7 @@ npm outdated  # or pip list --outdated, composer outdated, etc.
 ```
 
 **Assessment Checklist:**
+
 - [ ] Identify deprecated patterns and APIs
 - [ ] Locate tightly coupled components
 - [ ] Find duplicated code blocks
@@ -53,19 +54,24 @@ Before refactoring, ensure you have comprehensive tests:
 
 ```javascript
 // Add characterization tests to lock in current behavior
-describe('LegacyFeature', () => {
-  it('should preserve existing behavior during refactoring', () => {
+describe("LegacyFeature", () => {
+  it("should preserve existing behavior during refactoring", () => {
     // Test current implementation behavior
-    const input = { /* realistic test data */ };
+    const input = {
+      /* realistic test data */
+    };
     const result = legacyFunction(input);
 
     // Document expected output
-    expect(result).toEqual({ /* current actual output */ });
+    expect(result).toEqual({
+      /* current actual output */
+    });
   });
 });
 ```
 
 **Testing Strategy:**
+
 - Add unit tests for critical paths
 - Create integration tests for component interactions
 - Document edge cases and error scenarios
@@ -77,18 +83,19 @@ describe('LegacyFeature', () => {
 Apply refactoring patterns systematically:
 
 #### Extract Function/Method
+
 ```javascript
 // BEFORE: Long, complex function
 function processUserData(user) {
   // 50 lines of mixed validation, transformation, and business logic
-  if (!user.email || !user.email.includes('@')) return null;
+  if (!user.email || !user.email.includes("@")) return null;
   const normalized = user.email.toLowerCase().trim();
   // ... more complex logic
 }
 
 // AFTER: Extracted, focused functions
 function validateEmail(email) {
-  return email && email.includes('@');
+  return email && email.includes("@");
 }
 
 function normalizeEmail(email) {
@@ -103,6 +110,7 @@ function processUserData(user) {
 ```
 
 #### Replace Conditionals with Polymorphism
+
 ```python
 # BEFORE: Complex conditional logic
 def calculate_price(customer_type, base_price):
@@ -137,6 +145,7 @@ price = pricing.calculate(base_price)
 ```
 
 #### Introduce Parameter Object
+
 ```typescript
 // BEFORE: Long parameter lists
 function createUser(
@@ -147,7 +156,7 @@ function createUser(
   address: string,
   city: string,
   state: string,
-  zip: string
+  zip: string,
 ) {
   // ...
 }
@@ -178,35 +187,43 @@ function createUser(userData: UserData) {
 Replace outdated patterns with modern equivalents:
 
 #### Promises over Callbacks
+
 ```javascript
 // BEFORE: Callback hell
 function fetchUserData(userId, callback) {
-  db.query('SELECT * FROM users WHERE id = ?', [userId], (err, user) => {
+  db.query("SELECT * FROM users WHERE id = ?", [userId], (err, user) => {
     if (err) return callback(err);
-    db.query('SELECT * FROM orders WHERE user_id = ?', [userId], (err, orders) => {
-      if (err) return callback(err);
-      callback(null, { user, orders });
-    });
+    db.query(
+      "SELECT * FROM orders WHERE user_id = ?",
+      [userId],
+      (err, orders) => {
+        if (err) return callback(err);
+        callback(null, { user, orders });
+      },
+    );
   });
 }
 
 // AFTER: Async/await
 async function fetchUserData(userId) {
-  const user = await db.query('SELECT * FROM users WHERE id = ?', [userId]);
-  const orders = await db.query('SELECT * FROM orders WHERE user_id = ?', [userId]);
+  const user = await db.query("SELECT * FROM users WHERE id = ?", [userId]);
+  const orders = await db.query("SELECT * FROM orders WHERE user_id = ?", [
+    userId,
+  ]);
   return { user, orders };
 }
 ```
 
 #### Modern Language Features
+
 ```javascript
 // BEFORE: var and string concatenation
-var userName = user.firstName + ' ' + user.lastName;
-var isActive = user.status === 'active' ? true : false;
+var userName = user.firstName + " " + user.lastName;
+var isActive = user.status === "active" ? true : false;
 
 // AFTER: const/let and template literals
 const userName = `${user.firstName} ${user.lastName}`;
-const isActive = user.status === 'active';
+const isActive = user.status === "active";
 ```
 
 ### 5. **Reduce Dependencies**
@@ -246,22 +263,26 @@ Document refactoring decisions:
 ## Refactoring Log
 
 ### 2025-01-15: Extract Payment Processing
+
 **Rationale**: Payment logic was embedded in order controller (500 lines)
 **Changes**:
+
 - Extracted PaymentService with single responsibility
 - Introduced PaymentGateway interface for flexibility
 - Added comprehensive unit tests (95% coverage)
-**Breaking Changes**: None (internal refactoring only)
-**Performance Impact**: 15% improvement in order processing time
+  **Breaking Changes**: None (internal refactoring only)
+  **Performance Impact**: 15% improvement in order processing time
 
 ### 2025-01-16: Replace Callback with Async/Await
+
 **Rationale**: Callback hell in user authentication flow
 **Changes**:
+
 - Converted all authentication methods to async/await
 - Simplified error handling with try/catch
 - Improved readability (reduced from 150 to 80 lines)
-**Breaking Changes**: Function signatures changed (requires updates in calling code)
-**Migration**: Updated all 12 call sites in controllers
+  **Breaking Changes**: Function signatures changed (requires updates in calling code)
+  **Migration**: Updated all 12 call sites in controllers
 ```
 
 ## Best Practices
@@ -289,6 +310,7 @@ Document refactoring decisions:
 ## Common Pitfalls
 
 ### 1. **Over-Engineering**
+
 ```javascript
 // ❌ Too complex for simple case
 class UserNameFormatterFactory {
@@ -304,15 +326,17 @@ function formatUserName(firstName, lastName) {
 ```
 
 ### 2. **Premature Optimization**
+
 Focus on readability first, then optimize bottlenecks identified by profiling.
 
 ### 3. **Breaking Backward Compatibility**
+
 Use deprecation warnings before removing public APIs:
 
 ```typescript
 /** @deprecated Use createUser(userData) instead. Will be removed in v2.0 */
 function createUserOld(firstName: string, lastName: string, email: string) {
-  console.warn('createUserOld is deprecated. Use createUser(userData)');
+  console.warn("createUserOld is deprecated. Use createUser(userData)");
   return createUser({ firstName, lastName, email });
 }
 ```
@@ -320,16 +344,17 @@ function createUserOld(firstName: string, lastName: string, email: string) {
 ## Testing Strategy
 
 ### Unit Tests
+
 ```javascript
-describe('Refactored User Service', () => {
-  describe('validateEmail', () => {
-    it('should accept valid email formats', () => {
-      expect(validateEmail('user@example.com')).toBe(true);
+describe("Refactored User Service", () => {
+  describe("validateEmail", () => {
+    it("should accept valid email formats", () => {
+      expect(validateEmail("user@example.com")).toBe(true);
     });
 
-    it('should reject invalid email formats', () => {
-      expect(validateEmail('invalid')).toBe(false);
-      expect(validateEmail('')).toBe(false);
+    it("should reject invalid email formats", () => {
+      expect(validateEmail("invalid")).toBe(false);
+      expect(validateEmail("")).toBe(false);
       expect(validateEmail(null)).toBe(false);
     });
   });
@@ -337,6 +362,7 @@ describe('Refactored User Service', () => {
 ```
 
 ### Integration Tests
+
 ```python
 def test_refactored_order_processing():
     """Ensure refactored code maintains end-to-end behavior"""
@@ -354,6 +380,7 @@ def test_refactored_order_processing():
 ```
 
 ### Regression Tests
+
 Run full test suite to ensure no unintended side effects.
 
 ## Refactoring Patterns Reference
@@ -374,6 +401,7 @@ Run full test suite to ensure no unintended side effects.
 ## Tools & Resources
 
 ### Static Analysis Tools
+
 - **JavaScript/TypeScript**: ESLint, TSLint, SonarQube
 - **Python**: Pylint, Flake8, Bandit
 - **Java**: SonarQube, PMD, Checkstyle
@@ -381,12 +409,14 @@ Run full test suite to ensure no unintended side effects.
 - **PHP**: PHPStan, Psalm
 
 ### IDE Refactoring Support
+
 - **VS Code**: Built-in refactoring commands
 - **JetBrains IDEs**: Comprehensive refactoring tools
 - **Eclipse**: Automated refactorings
 - **Vim/Neovim**: Language server refactoring actions
 
 ### Recommended Reading
+
 - "Refactoring" by Martin Fowler
 - "Working Effectively with Legacy Code" by Michael Feathers
 - "Clean Code" by Robert C. Martin
@@ -396,42 +426,47 @@ Run full test suite to ensure no unintended side effects.
 ### Complete Refactoring Example
 
 #### Before
+
 ```javascript
 // legacy-user-service.js - 200 lines of complex, coupled code
 var UserService = {
-  createUser: function(fn, ln, em, ph, addr) {
-    if (!em || em.indexOf('@') === -1) {
-      return { error: 'Invalid email' };
+  createUser: function (fn, ln, em, ph, addr) {
+    if (!em || em.indexOf("@") === -1) {
+      return { error: "Invalid email" };
     }
     var conn = mysql.createConnection(config);
     conn.connect();
     conn.query(
-      'INSERT INTO users (first_name, last_name, email, phone, address) VALUES (?, ?, ?, ?, ?)',
+      "INSERT INTO users (first_name, last_name, email, phone, address) VALUES (?, ?, ?, ?, ?)",
       [fn, ln, em.toLowerCase(), ph, addr],
-      function(err, result) {
+      function (err, result) {
         if (err) {
           console.log(err);
-          return { error: 'Database error' };
+          return { error: "Database error" };
         }
         // Send welcome email
-        var nodemailer = require('nodemailer');
+        var nodemailer = require("nodemailer");
         var transporter = nodemailer.createTransport(emailConfig);
-        transporter.sendMail({
-          to: em,
-          subject: 'Welcome!',
-          html: '<h1>Welcome ' + fn + '!</h1>'
-        }, function(err, info) {
-          if (err) console.log(err);
-        });
+        transporter.sendMail(
+          {
+            to: em,
+            subject: "Welcome!",
+            html: "<h1>Welcome " + fn + "!</h1>",
+          },
+          function (err, info) {
+            if (err) console.log(err);
+          },
+        );
         conn.end();
         return { id: result.insertId };
-      }
+      },
     );
-  }
+  },
 };
 ```
 
 #### After
+
 ```typescript
 // user-service.ts - Clean, testable, maintainable
 interface UserData {
@@ -446,7 +481,7 @@ class UserService {
   constructor(
     private database: Database,
     private emailService: EmailService,
-    private validator: Validator
+    private validator: Validator,
   ) {}
 
   async createUser(userData: UserData): Promise<User> {
@@ -463,16 +498,16 @@ class UserService {
   private normalizeUserData(data: UserData): UserData {
     return {
       ...data,
-      email: data.email.toLowerCase().trim()
+      email: data.email.toLowerCase().trim(),
     };
   }
 
   private async sendWelcomeEmail(user: User): Promise<void> {
     await this.emailService.send({
       to: user.email,
-      subject: 'Welcome!',
-      template: 'welcome',
-      data: { firstName: user.firstName }
+      subject: "Welcome!",
+      template: "welcome",
+      data: { firstName: user.firstName },
     });
   }
 }
@@ -480,37 +515,38 @@ class UserService {
 // validator.ts
 class Validator {
   validateEmail(email: string): void {
-    if (!email || !email.includes('@')) {
-      throw new ValidationError('Invalid email format');
+    if (!email || !email.includes("@")) {
+      throw new ValidationError("Invalid email format");
     }
   }
 }
 
 // Easy to test
-describe('UserService', () => {
-  it('should create user with valid data', async () => {
+describe("UserService", () => {
+  it("should create user with valid data", async () => {
     const mockDb = createMockDatabase();
     const mockEmail = createMockEmailService();
     const service = new UserService(mockDb, mockEmail, new Validator());
 
     const user = await service.createUser({
-      firstName: 'John',
-      lastName: 'Doe',
-      email: 'john@example.com',
-      phone: '555-0123',
-      address: '123 Main St'
+      firstName: "John",
+      lastName: "Doe",
+      email: "john@example.com",
+      phone: "555-0123",
+      address: "123 Main St",
     });
 
     expect(user.id).toBeDefined();
     expect(mockDb.users.create).toHaveBeenCalled();
     expect(mockEmail.send).toHaveBeenCalledWith(
-      expect.objectContaining({ to: 'john@example.com' })
+      expect.objectContaining({ to: "john@example.com" }),
     );
   });
 });
 ```
 
 ### Benefits Achieved
+
 - ✅ **Testability**: Dependencies injected, easy to mock
 - ✅ **Readability**: Clear, focused methods
 - ✅ **Maintainability**: Single responsibility principle
@@ -537,6 +573,7 @@ Before considering refactoring complete:
 ## Support
 
 For complex refactoring scenarios, consider:
+
 - Seeking peer review early and often
 - Using feature flags for gradual rollouts
 - Creating a refactoring plan document

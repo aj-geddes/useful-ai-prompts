@@ -3,32 +3,33 @@ title: Solar Resource Assessment and Site Selection Optimization
 slug: solar-resource-assessment-site-selection-optimization
 category: renewable energy
 tags:
-- solar
-- resource
-- site
-- selection
-- energy
-- yield
-- GIS
-- analysis
-- resource
-- assessment
+  - solar
+  - resource
+  - site
+  - selection
+  - energy
+  - yield
+  - GIS
+  - analysis
+  - resource
+  - assessment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Conduct comprehensive solar resource assessment and strategic site selection
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Conduct comprehensive solar resource assessment and strategic site selection
   for utility-scale solar development. Combines meteorological analysis with site
   development expertise to identify optimal locations with maximum energy yield and
   minimal development risk. Delivers bankable P50/P90 energy estimates suitable for
   project financing.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Evaluating solar resource quality for new project development
-- Selecting optimal sites from a portfolio of land options
-- Conducting bankable energy yield analysis for project financing
-- Assessing site-specific development constraints and fatal flaws
+  - Scenarios:**
+  - Evaluating solar resource quality for new project development
+  - Selecting optimal sites from a portfolio of land options
+  - Conducting bankable energy yield analysis for project financing
+  - Assessing site-specific development constraints and fatal flaws
 complexity: advanced
 interaction: multi-turn
 ---
@@ -43,18 +44,20 @@ Solar project financing requires independently verifiable energy production esti
 
 <input_handling>
 Required:
+
 - Geographic region or specific site coordinates
 - Project scale (MW) and technology type
 - Development constraints or priority criteria
 - Purpose of assessment (development screening, financing, due diligence)
 
 Infer if not provided:
+
 - Data sources: Satellite-derived (Solargis, NSRDB) with ground station validation
 - Analysis period: 20+ year historical data with TMY synthesis
 - Confidence levels: P50/P90/P99 probability of exceedance estimates
 - Technology: Single-axis tracking with bifacial modules
 - Losses: Standard loss chain including soiling, clipping, availability
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive resource assessment and site selection:
@@ -66,18 +69,20 @@ Conduct comprehensive resource assessment and site selection:
 5. Quantify uncertainty from measurement, model, and variability sources
 6. Assess development constraints including grid, land, environmental, and permitting
 7. Create site ranking with weighted scoring methodology
-</task>
+   </task>
 
 <output_specification>
 **Solar Resource Assessment Report**
+
 - Format: Technical analysis with site recommendations and supporting data
 - Length: 800-1500 words
 - Structure: Regional analysis, site ranking matrix, energy yield estimates, uncertainty quantification, development assessment
 - Must include: Resource data tables, site comparison matrix, P50/P90/P99 estimates, uncertainty breakdown, fatal flaw screening
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Use multiple data sources with cross-validation
 - Apply statistically rigorous uncertainty methodology
 - Integrate development feasibility into site ranking
@@ -85,12 +90,13 @@ Excellent outputs:
 - Document all assumptions and data sources
 
 Avoid:
+
 - Single data source reliance without validation
 - Missing uncertainty quantification or confidence bounds
 - Ignoring development constraints in pure resource ranking
 - Overstating precision beyond data quality
 - Generic assessments without site-specific context
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Clearly state data sources and vintage

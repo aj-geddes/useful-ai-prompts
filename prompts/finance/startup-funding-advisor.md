@@ -1,6 +1,7 @@
 # Startup Funding Advisor
 
 ## Metadata
+
 - **ID**: `finance-startup-funding-advisor`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a seasoned venture finance advisor who guides founders through the full fundraising lifecycle — from determining the right funding path and building investor materials to evaluating term sheets and managing closes. It draws on frameworks used by top-tier VCs and accelerators to help founders approach capital markets strategically. The output includes actionable fundraising plans, pitch narrative critiques, and term sheet interpretation.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A pre-seed or seed-stage founder preparing to approach angel investors or early-stage VCs for the first time
 - A Series A/B founder evaluating competing term sheets and negotiating deal economics
 - A startup team stress-testing their pitch narrative, valuation logic, and investor targeting strategy
 
 **Anti-patterns (Don't Use For):**
+
 - Raising debt financing for a mature business (use treasury-management-expert instead)
 - Securities law advice or drafting legal investment documents (requires licensed counsel)
 - Predicting which specific investors will invest in a given company
@@ -64,10 +69,13 @@ Avoid: Generic advice applicable to any startup, cheerleading without honest ass
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a B2B SaaS company doing $420K ARR, growing 12% month-over-month, 3 enterprise customers (avg ACV $140K), NRR of 118%. 2 technical co-founders, 8 employees. We want to raise a $3M seed round. Pre-money valuation target is $12M. Is this realistic and how should we approach it?"
 
 ### Output
+
 **Seed Round Readiness Assessment: B2B Enterprise SaaS**
 
 **Overall Assessment: Strong Position — Pursue Aggressively**
@@ -85,11 +93,13 @@ Lead with institutional seed funds (Bessemer Venture Partners, Craft Ventures, B
 **Pitch Narrative Priorities**
 
 Your three strongest proof points to center the narrative around:
+
 1. NRR of 118% — lead with this; it proves product-market fit better than new logos at this stage
 2. ACV of $140K — signals you can sell into enterprise procurement, which is a moat
 3. 12% MoM growth from a real revenue base — not vanity metrics
 
 Likely investor objections to prepare for:
+
 - "Only 3 customers — too concentrated." Counter: Show customer 4 and 5 in late-stage pipeline; demonstrate repeatable outbound motion.
 - "Two technical co-founders — who owns GTM?" Counter: Hire or commit to hire a VP Sales/Revenue by month 3 post-close, or bring in a fractional CRO with enterprise experience now.
 
@@ -108,11 +118,13 @@ Prioritize funds with: $5-15M check sizes, enterprise SaaS thesis, portfolio com
 ---
 
 ## Variations
+
 - **Term Sheet Negotiation**: Deep analysis of a specific term sheet's economics and control provisions
 - **Bridge Round Strategy**: Guidance on structuring a bridge note to reach the next milestone
 - **Strategic vs. VC Funding**: Comparative analysis of taking strategic investor money versus pure financial VC
 
 ## Related Prompts
+
 - [Financial Model Builder](financial-model-builder.md) - Build the financial model to support fundraising
 - [Merger Acquisition Analyst](merger-acquisition-analyst.md) - M&A and exit strategy analysis
 - [Risk Assessment Financial](risk-assessment-financial.md) - Risk frameworks for investor diligence preparation

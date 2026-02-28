@@ -1,6 +1,7 @@
 # Executive Briefing Expert
 
 ## Metadata
+
 - **ID**: `communication-executive-briefing`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Creates impactful executive briefings that give senior leaders exactly what they need to make informed decisions quickly. Focuses on clarity, actionability, and executive-appropriate communication that respects time constraints while providing comprehensive decision support through structured analysis and recommendations.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Briefing C-suite on strategic topics requiring decisions
 - Preparing board presentations and materials
 - Requesting executive approvals for initiatives or investments
@@ -24,6 +27,7 @@ Creates impactful executive briefings that give senior leaders exactly what they
 - Presenting strategic recommendations to leadership
 
 **Anti-Patterns (When NOT to Use):**
+
 - Routine team updates and operational reporting
 - Detailed operational reports with granular data
 - Training materials and educational content
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to brief the board on a cybersecurity incident we contained. There was an attack but no data breach occurred. I need approval for a $2M security upgrade. The presentation slot is 15 minutes. Board members are worried about reputation and compliance. The audience includes both tech-savvy and non-technical board members."
 
 ### Output
@@ -122,6 +127,7 @@ Avoid:
 On [Date], our security team detected and contained a sophisticated cyberattack within 4 hours. No customer data was compromised. However, the incident revealed that our security infrastructure needs upgrading to meet evolving threats.
 
 **KEY FINDINGS:**
+
 - Attack contained with zero data breach
 - Current systems are 2 generations behind industry standards
 - Similar attacks increasing 40% annually in our industry
@@ -140,12 +146,14 @@ Approve $2M cybersecurity infrastructure upgrade over 6 months.
 | Compliance Support | $300K | Regulatory requirement |
 
 **BUSINESS CASE:**
+
 - Prevents potential $50M+ breach costs
 - Meets regulatory compliance (avoids fines)
 - Reduces cyber insurance premiums 15%
 - Protects customer trust and retention
 
 **TIMELINE:**
+
 - Month 1-2: Vendor selection and contracts
 - Month 3-4: System installation and testing
 - Month 5-6: Training and certification
@@ -159,23 +167,27 @@ Approve $2M security investment today.
 ## PRESENTATION FLOW (15 Minutes)
 
 ### Minutes 1-3: Situation
+
 - What happened (attack detected, contained)
 - Outcome (no data breach)
 - What we learned (systems need upgrade)
 
 ### Minutes 4-8: Analysis
+
 - Industry threat landscape
 - Our current vs. needed capabilities
 - Regulatory requirements and timeline
 - Risk if we don't act
 
 ### Minutes 9-12: Recommendation
+
 - Investment breakdown
 - Business case and ROI
 - Implementation timeline
 - Success metrics
 
 ### Minutes 13-15: The Ask
+
 - Specific approval requested
 - Next steps if approved
 - Questions
@@ -207,6 +219,7 @@ Approve $2M security investment today.
 "Last week we successfully defended against a sophisticated cyberattack. No customer data was compromised, but it highlighted the need for enhanced security investment. I'm here to recommend a $2M upgrade that protects our customers and meets our compliance obligations."
 
 **Key Messages:**
+
 1. "We handled this incident well - no data lost, authorities notified, customers informed"
 2. "This attack revealed our systems need upgrading to current standards"
 3. "$2M investment prevents potential $50M+ costs and meets regulatory requirements"
@@ -218,6 +231,7 @@ Approve $2M security investment today.
 ---
 
 ## Related Prompts
+
 - [Crisis Communication Expert](crisis-communication-expert.md) - Handle urgent communications
 - [Client Presentation Expert](client-presentation-expert.md) - External-facing presentations
 - [Stakeholder Communication Expert](stakeholder-communication-expert.md) - Multi-stakeholder management

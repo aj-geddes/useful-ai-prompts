@@ -1,6 +1,7 @@
 # Historical Research Expert
 
 ## Metadata
+
 - **ID**: `research-historical-analysis`
 - **Version**: 1.0.0
 - **Category**: Research/Academic
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Conduct rigorous historical research by locating primary sources, analyzing historical context, evaluating evidence, and constructing compelling historical narratives. Applies professional historiographic methods to academic and applied research questions. Balances empirical rigor with interpretive sophistication to produce historically accurate and analytically compelling research.
 
 ## When to Use
 
 **Scenarios:**
+
 - Conducting academic historical research or thesis projects
 - Tracing organizational, community, institutional, or family history
 - Building historical context for documentaries, exhibits, or publications
@@ -24,6 +27,7 @@ Conduct rigorous historical research by locating primary sources, analyzing hist
 - Preparing historically-grounded expert testimony or reports
 
 **Anti-patterns:**
+
 - Current events analysis without historical dimension
 - Speculative alternate history or counterfactuals
 - Entertainment fiction requiring historical setting
@@ -43,17 +47,19 @@ Historical research requires systematic engagement with primary sources evaluate
 
 <input_handling>
 Required:
+
 - Historical topic, period, or question being researched
 - Research question or thesis to be investigated
 - Scope (geographic, temporal, thematic boundaries)
 - Purpose of research (academic, applied, public history)
 
 Infer if not provided:
+
 - Source priorities: Prioritize primary sources with secondary for historiographic context
 - Purpose: Academic research standards unless otherwise specified
 - Theoretical framework: Empirical-analytical approach
 - Citation style: Chicago Manual of Style (notes-bibliography)
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive historical research by:
@@ -65,18 +71,20 @@ Conduct comprehensive historical research by:
 5. Situate findings within historiographic context and scholarly debates
 6. Construct narrative with proper scholarly apparatus and citation
 7. Acknowledge gaps, limitations, and areas of interpretive uncertainty
-</task>
+   </task>
 
 <output_specification>
 **Historical Research Framework**
+
 - Format: Research plan with source guide, analytical framework, and preliminary findings
 - Length: 800-1500 words (research plan); 2,500-4,000 words for full framework
 - Structure: Research question, periodization, source identification, methodology, historiographic context
 - Must include: Research design, primary source locations, evaluation criteria, narrative structure, citation guidance
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Clearly distinguish primary from secondary sources
 - Apply systematic source criticism (provenance, purpose, perspective)
 - Acknowledge multiple perspectives and interpretive possibilities
@@ -84,12 +92,13 @@ Excellent outputs:
 - Address evidentiary gaps and limitations explicitly
 
 Avoid:
+
 - Presentism (anachronistic judgments without acknowledgment)
 - Single-source dependence without corroboration
 - Ignoring contradictory evidence or alternative interpretations
 - Confusing correlation with causation in historical events
 - Teleological narratives that assume outcomes were inevitable
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain distinction between evidence and interpretation
@@ -103,9 +112,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am researching the impact of 1960s interstate highway construction on African American neighborhoods in Atlanta for my urban planning thesis. I want to understand how route decisions were made, what communities were displaced, and how residents responded. The thesis examines historical displacement patterns to inform current transportation equity policy. I have 6 months for research and access to interlibrary loan. I will be traveling to Atlanta for one week of archival research.
 
 ### Output
+
 **Historical Research Framework: Interstate Highway Displacement in Atlanta, 1956-1975**
 
 **Executive Summary**
@@ -113,10 +124,11 @@ This research framework provides a systematic approach to investigating the rela
 
 **Research Question and Sub-Questions**
 
-*Primary Research Question:*
+_Primary Research Question:_
 How did interstate highway routing decisions in Atlanta (1956-1975) affect African American neighborhoods, and what factors influenced route selection?
 
-*Sub-Questions:*
+_Sub-Questions:_
+
 1. What criteria did planners use for route selection, and how were racial demographics considered (explicitly or implicitly)?
 2. What was the quantitative extent of displacement (households, businesses, institutions)?
 3. How did African American community organizations respond to highway planning?
@@ -125,68 +137,59 @@ How did interstate highway routing decisions in Atlanta (1956-1975) affect Afric
 
 **Periodization and Scope**
 
-| Period | Focus | Key Events |
-|--------|-------|------------|
-| 1940-1956 | Pre-construction context | Urban renewal beginnings, demographic patterns, NAACP activism |
-| 1956-1962 | Planning phase | Interstate Highway Act, route selection, early opposition |
-| 1962-1968 | Construction peak | I-75, I-85 construction, displacement, community mobilization |
-| 1968-1975 | Late construction and response | I-20, highway revolts, policy changes |
-| 1975-1990 | Aftermath | Long-term community impacts, legacy |
+| Period    | Focus                          | Key Events                                                     |
+| --------- | ------------------------------ | -------------------------------------------------------------- |
+| 1940-1956 | Pre-construction context       | Urban renewal beginnings, demographic patterns, NAACP activism |
+| 1956-1962 | Planning phase                 | Interstate Highway Act, route selection, early opposition      |
+| 1962-1968 | Construction peak              | I-75, I-85 construction, displacement, community mobilization  |
+| 1968-1975 | Late construction and response | I-20, highway revolts, policy changes                          |
+| 1975-1990 | Aftermath                      | Long-term community impacts, legacy                            |
 
-*Geographic Scope:* Fulton County, with focus on Auburn Avenue corridor, Buttermilk Bottom, Mechanicsville, Summerhill
+_Geographic Scope:_ Fulton County, with focus on Auburn Avenue corridor, Buttermilk Bottom, Mechanicsville, Summerhill
 
-*Thematic Boundaries:* Transportation planning, housing displacement, community organizing, racial politics
+_Thematic Boundaries:_ Transportation planning, housing displacement, community organizing, racial politics
 
 **Primary Source Locations and Access Strategies**
 
-| Repository | Collections | Access | Priority |
-|------------|-------------|--------|----------|
-| **Georgia State Archives** | Georgia Highway Dept. records, Governor's papers | On-site; partial digital | High |
-| **Auburn Avenue Research Library** | Atlanta Daily World, community newspapers | Digital collection available | High |
-| **Atlanta History Center** | City planning documents, photo collections | Appointment required | High |
-| **National Archives (Atlanta)** | Federal highway funding records, FHWA correspondence | Some FOIA required | Medium |
-| **Emory University (MARBL)** | NAACP Atlanta Branch papers | On-site; finding aid online | High |
-| **Atlanta City Hall** | City Council minutes, planning commission records | Public records request | Medium |
-| **Georgia State University Library** | Atlanta Urban League papers, oral histories | On-site | High |
+| Repository                           | Collections                                          | Access                       | Priority |
+| ------------------------------------ | ---------------------------------------------------- | ---------------------------- | -------- |
+| **Georgia State Archives**           | Georgia Highway Dept. records, Governor's papers     | On-site; partial digital     | High     |
+| **Auburn Avenue Research Library**   | Atlanta Daily World, community newspapers            | Digital collection available | High     |
+| **Atlanta History Center**           | City planning documents, photo collections           | Appointment required         | High     |
+| **National Archives (Atlanta)**      | Federal highway funding records, FHWA correspondence | Some FOIA required           | Medium   |
+| **Emory University (MARBL)**         | NAACP Atlanta Branch papers                          | On-site; finding aid online  | High     |
+| **Atlanta City Hall**                | City Council minutes, planning commission records    | Public records request       | Medium   |
+| **Georgia State University Library** | Atlanta Urban League papers, oral histories          | On-site                      | High     |
 
 **Key Primary Sources to Locate**
 
-*Government Records:*
+_Government Records:_
+
 1. Georgia Highway Department route selection memoranda and alternatives analysis (1956-1962)
 2. Federal Highway Administration environmental impact statements (where applicable)
 3. Atlanta Bureau of Planning housing surveys and relocation records
 4. City Council meeting minutes regarding highway routing (1958-1970)
 5. Atlanta Housing Authority relocation assistance records
 
-*Community Sources:*
-6. Atlanta Urban League correspondence, position papers, and annual reports
-7. NAACP Atlanta Branch meeting minutes and advocacy materials
-8. African American church records (institutional displacement)
-9. Community testimony from public hearings (if preserved)
+_Community Sources:_ 6. Atlanta Urban League correspondence, position papers, and annual reports 7. NAACP Atlanta Branch meeting minutes and advocacy materials 8. African American church records (institutional displacement) 9. Community testimony from public hearings (if preserved)
 
-*Media and Contemporary Documentation:*
-10. Atlanta Daily World coverage (primary Black newspaper)
-11. Atlanta Constitution/Journal coverage (comparative perspective)
-12. Professional planning publications (Journal of the American Institute of Planners)
+_Media and Contemporary Documentation:_ 10. Atlanta Daily World coverage (primary Black newspaper) 11. Atlanta Constitution/Journal coverage (comparative perspective) 12. Professional planning publications (Journal of the American Institute of Planners)
 
-*Quantitative Sources:*
-13. Census tract demographic data (1950, 1960, 1970) for affected areas
-14. Property tax records showing before/after ownership patterns
-15. Business directories (pre/post construction comparison)
+_Quantitative Sources:_ 13. Census tract demographic data (1950, 1960, 1970) for affected areas 14. Property tax records showing before/after ownership patterns 15. Business directories (pre/post construction comparison)
 
 **Source Evaluation Framework**
 
-| Source Type | Authenticity Concerns | Reliability Assessment | Bias Considerations |
-|-------------|----------------------|------------------------|---------------------|
-| Official government records | Generally high (verify provenance) | Accurate on procedures; may omit contested decisions | Bureaucratic perspective; may minimize controversy |
-| Community organization records | Verify against other sources | Valuable for community perspective; verify specific claims | Advocacy perspective; may emphasize grievances |
-| Newspaper coverage | Date verification needed | Contemporary accounts; factual claims verifiable | Black press: community advocacy; White press: establishment perspective |
-| Oral histories | Cross-reference details | Memory limitations; emotional truth valuable | Retrospective; may reflect evolved interpretations |
-| Photographs | Date and location verification essential | Strong visual evidence | Selection bias in what was photographed |
+| Source Type                    | Authenticity Concerns                    | Reliability Assessment                                     | Bias Considerations                                                     |
+| ------------------------------ | ---------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Official government records    | Generally high (verify provenance)       | Accurate on procedures; may omit contested decisions       | Bureaucratic perspective; may minimize controversy                      |
+| Community organization records | Verify against other sources             | Valuable for community perspective; verify specific claims | Advocacy perspective; may emphasize grievances                          |
+| Newspaper coverage             | Date verification needed                 | Contemporary accounts; factual claims verifiable           | Black press: community advocacy; White press: establishment perspective |
+| Oral histories                 | Cross-reference details                  | Memory limitations; emotional truth valuable               | Retrospective; may reflect evolved interpretations                      |
+| Photographs                    | Date and location verification essential | Strong visual evidence                                     | Selection bias in what was photographed                                 |
 
 **Historiographic Context**
 
-*Relevant Scholarly Debates:*
+_Relevant Scholarly Debates:_
 
 1. **"Urban Renewal as Negro Removal"** (Fullilove, 2004)
    - Thesis: Urban renewal and highway programs systematically targeted Black communities
@@ -210,43 +213,48 @@ How did interstate highway routing decisions in Atlanta (1956-1975) affect Afric
 
 **Analytical Framework**
 
-*Causation Analysis:*
+_Causation Analysis:_
+
 - Distinguish between stated rationales and actual decision factors
 - Evaluate counterfactual: Would different routes have been feasible?
 - Assess role of political power differentials in route selection
 
-*Change Over Time:*
+_Change Over Time:_
+
 - How did planning criteria evolve from 1956 to 1975?
 - When and how did community resistance emerge?
 - How did federal policy changes (1969 NEPA, 1970 Uniform Relocation Act) affect later projects?
 
-*Continuity:*
+_Continuity:_
+
 - What patterns connect pre-war planning to interstate era?
 - How do displacement patterns relate to earlier urban renewal projects?
 - What legacies persist in current neighborhood conditions?
 
 **Oral History Opportunities**
 
-*Existing Collections:*
+_Existing Collections:_
+
 - Georgia State University Oral History Project: Civil rights era interviews
 - Auburn Avenue Research Library: Community elder interviews
 - Atlanta History Center: Neighborhood history projects
 
-*Potential New Interviews (IRB Required):*
+_Potential New Interviews (IRB Required):_
+
 - Former NAACP or Urban League staff (if living)
 - Residents displaced as children (now 65-80 years old)
 - Former city planners or highway department staff
 
 **Research Timeline**
 
-| Phase | Activities | Timeline |
-|-------|------------|----------|
-| Preparation | Secondary source review, finding aid analysis, ILL requests | Months 1-2 |
-| Atlanta research trip | Archives visits, photography, document requests | Month 3 (1 week) |
-| Document analysis | Source evaluation, evidence synthesis | Months 3-4 |
-| Quantitative analysis | Census data, property records | Month 4 |
-| Oral history (if applicable) | IRB approval, interviews | Month 5 |
-| Writing and revision | Draft chapters, advisor feedback | Month 6 |
+| Phase                        | Activities                                                  | Timeline         |
+| ---------------------------- | ----------------------------------------------------------- | ---------------- |
+| Preparation                  | Secondary source review, finding aid analysis, ILL requests | Months 1-2       |
+| Atlanta research trip        | Archives visits, photography, document requests             | Month 3 (1 week) |
+| Document analysis            | Source evaluation, evidence synthesis                       | Months 3-4       |
+| Quantitative analysis        | Census data, property records                               | Month 4          |
+| Oral history (if applicable) | IRB approval, interviews                                    | Month 5          |
+| Writing and revision         | Draft chapters, advisor feedback                            | Month 6          |
 
 **Citation Approach**
 Follow Chicago Manual of Style, 17th edition (notes-bibliography format). Maintain detailed research notes with full citation information for all sources consulted, including those not ultimately cited.
@@ -254,6 +262,7 @@ Follow Chicago Manual of Style, 17th edition (notes-bibliography format). Mainta
 ---
 
 ## Related Prompts
+
 - [Literature Review Expert](literature-review-expert.md)
 - [Legal Precedent Research Expert](legal-precedent-research-expert.md)
 - [Economic Research Expert](economic-research-expert.md)

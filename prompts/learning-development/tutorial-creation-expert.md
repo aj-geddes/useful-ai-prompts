@@ -1,6 +1,7 @@
 # Tutorial Creation Expert
 
 ## Metadata
+
 - **ID**: `learning-tutorial-creation-expert`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Creates clear, effective tutorials that guide learners through complex processes step by step. Designs comprehensive guides that anticipate user needs, address common stumbling blocks, and ensure successful completion through careful cognitive load management.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Documenting software procedures or technical workflows
 - Creating how-to guides for tools, applications, or processes
 - Teaching specific tasks or procedures to new users
@@ -23,6 +27,7 @@ Creates clear, effective tutorials that guide learners through complex processes
 - Onboarding users to new systems or features
 
 **Anti-patterns (when NOT to use):**
+
 - Comprehensive training programs (use Training Material Development Expert)
 - Skill development strategies (use Skill Acquisition Expert)
 - API documentation or technical reference materials
@@ -107,18 +112,22 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Need to create a tutorial teaching non-technical team members how to use Git and GitHub for documentation collaboration. They're writers who've never used version control."
 
 ### Output
+
 **Tutorial Framework: Git for Documentation Teams**
 
 **1. Structure**
+
 - Prerequisites: GitHub account (link to signup tutorial), Git installed (link to installer for Mac/Windows), VS Code with GitLens extension installed
 - Learning outcomes: Clone a repository, edit files, commit changes, create pull requests, resolve simple conflicts
 - Completion criteria: Successfully submit a pull request that gets merged by a reviewer
 - Estimated time: 45 minutes first time, 10 minutes for routine use after proficiency
 
 **2. Content Components**
+
 - Introduction: "Track changes, but for teams" - analogy to Word's track changes but collaborative and historical
 - Step progression with verification points:
   1. Clone the docs repository (What you'll see: folder appears on your computer with project name)
@@ -132,6 +141,7 @@ Avoid:
 - Visual aids: Annotated screenshots for each step with arrows highlighting exact click locations
 
 **3. User Support**
+
 - Troubleshooting flowchart:
   - "Authentication failed" -> Re-enter GitHub credentials in VS Code (Settings > Accounts)
   - "Merge conflict" -> Step-by-step conflict resolution with side-by-side screenshots
@@ -141,12 +151,14 @@ Avoid:
 - Glossary: Repository, branch, commit, push, pull, pull request, merge, conflict - all in plain English with real-world analogies
 
 **4. Engagement Features**
+
 - Progress checklist: 8 checkboxes matching each major step, satisfying to complete
 - Practice exercise: Edit the "sandbox.md" file in the practice repository - low stakes, can't break anything
 - Quick win: First step is cloning, which immediately creates a visible folder - early success
 - Self-check before PR: "Before submitting your PR, verify: 1) Your changes are on your branch not main, 2) Commit message describes what you changed, 3) You've previewed the diff"
 
 **5. Supplementary Resources**
+
 - Quick reference card: One-page laminated daily workflow cheat sheet (clone once, then: pull > branch > edit > commit > push > PR)
 - Video walkthrough: 5-minute screen recording of complete process with voiceover narration
 - Template: Standard PR description format for documentation changes with fill-in sections
@@ -155,6 +167,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Training Material Development Expert](training-material-development-expert.md) - Comprehensive training programs
 - [Technical Skill Accelerator](../learning-skills/technical-skill-accelerator.md) - Building technical competencies
 - [Technical Documentation Expert](../communication/technical-documentation-expert.md) - API and reference documentation

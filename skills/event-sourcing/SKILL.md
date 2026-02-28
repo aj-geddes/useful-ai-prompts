@@ -57,13 +57,13 @@ class EventStore {
   async appendEvents(
     aggregateId: string,
     expectedVersion: number,
-    events: Omit<DomainEvent, 'id' | 'metadata'>[]
+    events: Omit<DomainEvent, "id" | "metadata">[],
   ): Promise<void> {
     // Optimistic concurrency check
     const currentVersion = await this.getCurrentVersion(aggregateId);
 
     if (currentVersion !== expectedVersion) {
-      throw new Error('Concurrency conflict');
+      throw new Error("Concurrency conflict");
     }
 
     const newEvents = events.map((event, index) => ({
@@ -71,8 +71,8 @@ class EventStore {
       id: crypto.randomUUID(),
       metadata: {
         timestamp: Date.now(),
-        version: expectedVersion + index + 1
-      }
+        version: expectedVersion + index + 1,
+      },
     }));
 
     this.events.push(...newEvents);
@@ -80,7 +80,7 @@ class EventStore {
 
   async getEvents(aggregateId: string): Promise<DomainEvent[]> {
     return this.events
-      .filter(e => e.aggregateId === aggregateId)
+      .filter((e) => e.aggregateId === aggregateId)
       .sort((a, b) => a.metadata.version - b.metadata.version);
   }
 
@@ -113,61 +113,61 @@ class BankAccount implements Aggregate {
   // Commands
   open(initialDeposit: number): void {
     if (this.isOpen) {
-      throw new Error('Account already open');
+      throw new Error("Account already open");
     }
 
     this.applyEvent({
-      eventType: 'AccountOpened',
-      data: { initialDeposit }
+      eventType: "AccountOpened",
+      data: { initialDeposit },
     });
   }
 
   deposit(amount: number): void {
     if (!this.isOpen) {
-      throw new Error('Account not open');
+      throw new Error("Account not open");
     }
 
     if (amount <= 0) {
-      throw new Error('Amount must be positive');
+      throw new Error("Amount must be positive");
     }
 
     this.applyEvent({
-      eventType: 'MoneyDeposited',
-      data: { amount }
+      eventType: "MoneyDeposited",
+      data: { amount },
     });
   }
 
   withdraw(amount: number): void {
     if (!this.isOpen) {
-      throw new Error('Account not open');
+      throw new Error("Account not open");
     }
 
     if (amount <= 0) {
-      throw new Error('Amount must be positive');
+      throw new Error("Amount must be positive");
     }
 
     if (this.balance < amount) {
-      throw new Error('Insufficient funds');
+      throw new Error("Insufficient funds");
     }
 
     this.applyEvent({
-      eventType: 'MoneyWithdrawn',
-      data: { amount }
+      eventType: "MoneyWithdrawn",
+      data: { amount },
     });
   }
 
   close(): void {
     if (!this.isOpen) {
-      throw new Error('Account not open');
+      throw new Error("Account not open");
     }
 
     if (this.balance > 0) {
-      throw new Error('Cannot close account with positive balance');
+      throw new Error("Cannot close account with positive balance");
     }
 
     this.applyEvent({
-      eventType: 'AccountClosed',
-      data: {}
+      eventType: "AccountClosed",
+      data: {},
     });
   }
 
@@ -175,8 +175,8 @@ class BankAccount implements Aggregate {
   private applyEvent(event: Partial<DomainEvent>): void {
     const fullEvent: any = {
       aggregateId: this.id,
-      aggregateType: 'BankAccount',
-      ...event
+      aggregateType: "BankAccount",
+      ...event,
     };
 
     this.apply(fullEvent);
@@ -185,20 +185,20 @@ class BankAccount implements Aggregate {
 
   apply(event: DomainEvent): void {
     switch (event.eventType) {
-      case 'AccountOpened':
+      case "AccountOpened":
         this.isOpen = true;
         this.balance = event.data.initialDeposit;
         break;
 
-      case 'MoneyDeposited':
+      case "MoneyDeposited":
         this.balance += event.data.amount;
         break;
 
-      case 'MoneyWithdrawn':
+      case "MoneyWithdrawn":
         this.balance -= event.data.amount;
         break;
 
-      case 'AccountClosed':
+      case "AccountClosed":
         this.isOpen = false;
         break;
     }
@@ -221,7 +221,7 @@ class BankAccount implements Aggregate {
       id: this.id,
       balance: this.balance,
       isOpen: this.isOpen,
-      version: this.version
+      version: this.version,
     };
   }
 }
@@ -235,11 +235,7 @@ class BankAccountRepository {
 
     if (events.length === 0) return;
 
-    await this.eventStore.appendEvents(
-      account.id,
-      account.version,
-      events
-    );
+    await this.eventStore.appendEvents(account.id, account.version, events);
 
     account.clearUncommittedEvents();
   }
@@ -248,7 +244,7 @@ class BankAccountRepository {
     const events = await this.eventStore.getEvents(id);
     const account = new BankAccount(id);
 
-    events.forEach(event => account.apply(event));
+    events.forEach((event) => account.apply(event));
 
     return account;
   }
@@ -259,7 +255,7 @@ const eventStore = new EventStore();
 const repository = new BankAccountRepository(eventStore);
 
 // Create and use account
-const account = new BankAccount('acc-123');
+const account = new BankAccount("acc-123");
 account.open(1000);
 account.deposit(500);
 account.withdraw(200);
@@ -267,7 +263,7 @@ account.withdraw(200);
 await repository.save(account);
 
 // Load account
-const loadedAccount = await repository.load('acc-123');
+const loadedAccount = await repository.load("acc-123");
 console.log(loadedAccount.getState());
 ```
 
@@ -286,15 +282,15 @@ class AccountProjection {
 
   async project(event: DomainEvent): Promise<void> {
     switch (event.eventType) {
-      case 'AccountOpened':
+      case "AccountOpened":
         await this.handleAccountOpened(event);
         break;
 
-      case 'MoneyDeposited':
+      case "MoneyDeposited":
         await this.handleMoneyDeposited(event);
         break;
 
-      case 'MoneyWithdrawn':
+      case "MoneyWithdrawn":
         await this.handleMoneyWithdrawn(event);
         break;
     }
@@ -305,7 +301,7 @@ class AccountProjection {
       id: event.aggregateId,
       balance: event.data.initialDeposit,
       transactionCount: 1,
-      lastActivity: event.metadata.timestamp
+      lastActivity: event.metadata.timestamp,
     });
   }
 
@@ -340,7 +336,7 @@ class AccountProjection {
 ### 3. **Event Store with PostgreSQL**
 
 ```typescript
-import { Pool } from 'pg';
+import { Pool } from "pg";
 
 class PostgresEventStore {
   constructor(private pool: Pool) {
@@ -372,23 +368,23 @@ class PostgresEventStore {
   async appendEvents(
     aggregateId: string,
     expectedVersion: number,
-    events: Omit<DomainEvent, 'id' | 'metadata'>[]
+    events: Omit<DomainEvent, "id" | "metadata">[],
   ): Promise<void> {
     const client = await this.pool.connect();
 
     try {
-      await client.query('BEGIN');
+      await client.query("BEGIN");
 
       // Check version
       const result = await client.query(
-        'SELECT MAX(version) as version FROM events WHERE aggregate_id = $1',
-        [aggregateId]
+        "SELECT MAX(version) as version FROM events WHERE aggregate_id = $1",
+        [aggregateId],
       );
 
       const currentVersion = result.rows[0].version || 0;
 
       if (currentVersion !== expectedVersion) {
-        throw new Error('Concurrency conflict');
+        throw new Error("Concurrency conflict");
       }
 
       // Insert events
@@ -396,26 +392,29 @@ class PostgresEventStore {
         const event = events[i];
         const version = expectedVersion + i + 1;
 
-        await client.query(`
+        await client.query(
+          `
           INSERT INTO events (
             id, aggregate_id, aggregate_type, event_type,
             data, metadata, version
           )
           VALUES ($1, $2, $3, $4, $5, $6, $7)
-        `, [
-          crypto.randomUUID(),
-          aggregateId,
-          event.aggregateType,
-          event.eventType,
-          JSON.stringify(event.data),
-          JSON.stringify({ timestamp: Date.now(), version }),
-          version
-        ]);
+        `,
+          [
+            crypto.randomUUID(),
+            aggregateId,
+            event.aggregateType,
+            event.eventType,
+            JSON.stringify(event.data),
+            JSON.stringify({ timestamp: Date.now(), version }),
+            version,
+          ],
+        );
       }
 
-      await client.query('COMMIT');
+      await client.query("COMMIT");
     } catch (error) {
-      await client.query('ROLLBACK');
+      await client.query("ROLLBACK");
       throw error;
     } finally {
       client.release();
@@ -424,66 +423,66 @@ class PostgresEventStore {
 
   async getEvents(
     aggregateId: string,
-    fromVersion: number = 0
+    fromVersion: number = 0,
   ): Promise<DomainEvent[]> {
     const result = await this.pool.query(
       `SELECT * FROM events
        WHERE aggregate_id = $1 AND version > $2
        ORDER BY version ASC`,
-      [aggregateId, fromVersion]
+      [aggregateId, fromVersion],
     );
 
-    return result.rows.map(row => ({
+    return result.rows.map((row) => ({
       id: row.id,
       aggregateId: row.aggregate_id,
       aggregateType: row.aggregate_type,
       eventType: row.event_type,
       data: row.data,
-      metadata: row.metadata
+      metadata: row.metadata,
     }));
   }
 
   async getEventsByType(
     eventType: string,
-    fromTimestamp: number = 0
+    fromTimestamp: number = 0,
   ): Promise<DomainEvent[]> {
     const result = await this.pool.query(
       `SELECT * FROM events
        WHERE event_type = $1
        AND (metadata->>'timestamp')::bigint > $2
        ORDER BY created_at ASC`,
-      [eventType, fromTimestamp]
+      [eventType, fromTimestamp],
     );
 
-    return result.rows.map(row => ({
+    return result.rows.map((row) => ({
       id: row.id,
       aggregateId: row.aggregate_id,
       aggregateType: row.aggregate_type,
       eventType: row.event_type,
       data: row.data,
-      metadata: row.metadata
+      metadata: row.metadata,
     }));
   }
 
   async getAllEvents(
     fromPosition: number = 0,
-    limit: number = 100
+    limit: number = 100,
   ): Promise<DomainEvent[]> {
     const result = await this.pool.query(
       `SELECT * FROM events
        WHERE id > $1
        ORDER BY created_at ASC
        LIMIT $2`,
-      [fromPosition, limit]
+      [fromPosition, limit],
     );
 
-    return result.rows.map(row => ({
+    return result.rows.map((row) => ({
       id: row.id,
       aggregateId: row.aggregate_id,
       aggregateType: row.aggregate_type,
       eventType: row.event_type,
       data: row.data,
-      metadata: row.metadata
+      metadata: row.metadata,
     }));
   }
 }
@@ -515,7 +514,7 @@ class SnapshotRepository {
   constructor(
     private eventStore: EventStore,
     private snapshotStore: SnapshotStore,
-    private snapshotInterval: number = 10
+    private snapshotInterval: number = 10,
   ) {}
 
   async load(id: string): Promise<BankAccount> {
@@ -525,7 +524,7 @@ class SnapshotRepository {
 
     // Load events since snapshot
     const events = await this.eventStore.getEvents(id);
-    const recentEvents = events.filter(e => e.metadata.version > fromVersion);
+    const recentEvents = events.filter((e) => e.metadata.version > fromVersion);
 
     const account = new BankAccount(id);
 
@@ -535,7 +534,7 @@ class SnapshotRepository {
     }
 
     // Apply recent events
-    recentEvents.forEach(event => account.apply(event));
+    recentEvents.forEach((event) => account.apply(event));
 
     return account;
   }
@@ -545,11 +544,7 @@ class SnapshotRepository {
 
     if (events.length === 0) return;
 
-    await this.eventStore.appendEvents(
-      account.id,
-      account.version,
-      events
-    );
+    await this.eventStore.appendEvents(account.id, account.version, events);
 
     // Create snapshot if needed
     if (account.version % this.snapshotInterval === 0) {
@@ -557,7 +552,7 @@ class SnapshotRepository {
         aggregateId: account.id,
         version: account.version,
         state: account.getState(),
-        createdAt: Date.now()
+        createdAt: Date.now(),
       });
     }
 
@@ -569,6 +564,7 @@ class SnapshotRepository {
 ## Best Practices
 
 ### ✅ DO
+
 - Store events immutably
 - Version your events
 - Use optimistic concurrency
@@ -579,6 +575,7 @@ class SnapshotRepository {
 - Handle event versioning/migration
 
 ### ❌ DON'T
+
 - Mutate past events
 - Store current state only
 - Skip concurrency checks

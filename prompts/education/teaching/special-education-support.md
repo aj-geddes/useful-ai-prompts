@@ -1,6 +1,7 @@
 # Special Education Support
 
 ## Metadata
+
 - **ID**: `education-special-education-support`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps educators develop practical, legally compliant IEP accommodations, instructional modifications, and inclusive classroom strategies for students with disabilities. It translates assessment data and IEP goals into day-to-day instructional decisions that support student access and progress. The output includes specific, implementable strategies aligned to individual student needs and general education classroom contexts.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - General education teachers needing to implement IEP accommodations effectively in their classrooms
 - Special education teachers designing instructional supports and modifications for inclusion settings
 - Instructional teams developing universal design for learning (UDL) approaches for diverse learners
 
 **Anti-patterns (Don't Use For):**
+
 - Writing legally binding IEP documents — that requires a certified special education team process
 - Diagnosing or assessing student disabilities — that requires licensed professionals
 - Replacing the IEP team meeting process or parental consent requirements
@@ -70,9 +75,11 @@ Avoid: Generic "extra time" as the only recommendation, strategies that isolate 
 ## Example Usage
 
 ### Input
+
 "I have a 6th grader with dyslexia in my general education ELA class. Her IEP includes extended time and text-to-speech. She shuts down during independent reading and avoids writing tasks. Her reading is at a 3rd grade level but her verbal comprehension is on grade level. She's very socially aware and gets embarrassed. What can I do to support her without calling attention to her difficulties?"
 
 ### Output
+
 **Inclusive Support Plan — 6th Grade ELA, Student with Dyslexia**
 
 ---
@@ -84,11 +91,13 @@ This student has a phonological processing deficit that affects decoding and enc
 
 **Accommodations (Standards Remain Grade-Level)**
 
-*Text Access:*
+_Text Access:_
+
 - Provide all texts in digital format through Learning Ally, Bookshare, or built-in iPad text-to-speech (she reads along while listening). Set up with earbuds — indistinguishable from other students using devices.
 - Pre-load reading assignments so she can preview at home with audio support before class discussion.
 
-*Writing Output:*
+_Writing Output:_
+
 - Permit speech-to-text for drafting (Voice Memos or Google Docs voice typing with earbuds). She dictates, then edits the transcript — this preserves her thinking while reducing the encoding burden.
 - Provide graphic organizers for planning before all writing tasks. These benefit many students and can be offered class-wide.
 
@@ -96,13 +105,13 @@ This student has a phonological processing deficit that affects decoding and enc
 
 **Instructional Strategies**
 
-*Reducing Shutdown During Reading:*
+_Reducing Shutdown During Reading:_
 Independent silent reading is the highest-anxiety context for students with dyslexia. Replace it with structured partner reading (she reads with a trusted peer using a shared device) or independent audio-supported reading time. Frame device use as a classroom norm, not a special accommodation.
 
-*Building Writing Confidence:*
-Start written responses with sentence frames. Instead of "Write a paragraph about the theme," try "The theme of this story is ___ because ___." Gradually fade the frames as confidence builds. Grade her ideas and analysis — not her spelling.
+_Building Writing Confidence:_
+Start written responses with sentence frames. Instead of "Write a paragraph about the theme," try "The theme of this story is **_ because _**." Gradually fade the frames as confidence builds. Grade her ideas and analysis — not her spelling.
 
-*Vocabulary Pre-Teaching:*
+_Vocabulary Pre-Teaching:_
 Before any reading, preview 5-7 key vocabulary words with her (this can happen in 3 minutes during transition time or with a co-teacher). Comprehension improves dramatically when the decoding load and unfamiliar vocabulary are not both present simultaneously.
 
 ---
@@ -115,9 +124,11 @@ Track her verbal participation in discussions as a comprehension indicator. If s
 ---
 
 ## Variations
+
 - **ADHD Focus**: Executive function scaffolds, attention management strategies, and environmental modifications for students with attention disorders
 - **Autism Spectrum**: Social-communication supports, sensory considerations, and structured predictability strategies for inclusive settings
 
 ## Related Prompts
+
 - [Differentiated Instruction Expert](differentiated-instruction-expert.md) - Broader differentiation strategies for diverse learners
 - [Classroom Management Advisor](classroom-management-advisor.md) - Behavior support within inclusive classrooms

@@ -6,7 +6,19 @@ slug: education
 icon: fas fa-graduation-cap
 description: "Expert AI prompts for educators and instructional designers: lesson planning, assessment design, curriculum development, and differentiated instruction."
 seo_title: "Education & Teaching AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [lesson planning, curriculum design, assessment, differentiated instruction, rubric design, student feedback, professional development, blended learning, classroom management, instructional design]
+tags:
+  [
+    lesson planning,
+    curriculum design,
+    assessment,
+    differentiated instruction,
+    rubric design,
+    student feedback,
+    professional development,
+    blended learning,
+    classroom management,
+    instructional design,
+  ]
 ---
 
 The Education & Teaching category provides AI prompts for K-12 teachers, higher education faculty, instructional designers, and curriculum developers. These prompts apply established instructional design frameworks — Bloom's Taxonomy, UDL, backward design — to create teaching materials grounded in learning science.

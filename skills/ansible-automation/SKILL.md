@@ -341,6 +341,7 @@ ansible-playbook -i inventory/hosts.ini site.yml -t deploy
 ## Best Practices
 
 ### ✅ DO
+
 - Use roles for modularity
 - Implement proper error handling
 - Use templates for configuration
@@ -351,6 +352,7 @@ ansible-playbook -i inventory/hosts.ini site.yml -t deploy
 - Use vault for sensitive data
 
 ### ❌ DON'T
+
 - Use command/shell without conditionals
 - Copy files without templates
 - Run without check mode first

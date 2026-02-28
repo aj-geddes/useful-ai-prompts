@@ -572,6 +572,7 @@ class MultiCloudDataSync:
 ## Best Practices
 
 ### ✅ DO
+
 - Use cloud-agnostic APIs and frameworks
 - Implement abstraction layers
 - Monitor costs across clouds
@@ -582,6 +583,7 @@ class MultiCloudDataSync:
 - Use infrastructure as code
 
 ### ❌ DON'T
+
 - Use cloud-specific services extensively
 - Create hard dependencies on one provider
 - Ignore compliance requirements

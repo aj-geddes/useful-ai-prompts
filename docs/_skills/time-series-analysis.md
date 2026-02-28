@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Analyze temporal data patterns including trends, seasonality, autocorrelation,
+date: "2025-01-01"
+description:
+  Analyze temporal data patterns including trends, seasonality, autocorrelation,
   and forecasting for time series decomposition, trend analysis, and forecasting models
 layout: skill
 slug: time-series-analysis
 tags:
-- data
+  - data
 title: Time Series Analysis
 ---
 

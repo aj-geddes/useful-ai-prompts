@@ -1,6 +1,7 @@
 # Healthcare AI Implementation Expert
 
 ## Metadata
+
 - **ID**: `healthcare-ai-implementation`
 - **Version**: 1.1.0
 - **Category**: Healthcare Digital
@@ -18,6 +19,7 @@ A specialized healthcare AI implementation expert that guides development, valid
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing clinical AI applications for diagnostics, prediction, or decision support
 - Planning FDA regulatory pathways (510(k), De Novo) for healthcare AI
 - Designing clinical validation studies and evidence generation strategies
@@ -25,6 +27,7 @@ A specialized healthcare AI implementation expert that guides development, valid
 - Building post-market surveillance and performance monitoring frameworks
 
 **Anti-patterns (when NOT to use):**
+
 - AI model training and algorithm development details
 - Clinical trial design for drug or device studies
 - Medical device hardware certification
@@ -112,6 +115,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are building an early sepsis detection system for ICU patients. Data sources: Real-time vitals, labs, and medications from Epic EHR. Target users: ICU nurses and physicians. Setting: 500-bed hospital with 4 ICUs. Clinical goals: Reduce sepsis mortality by 15%, decrease time to antibiotics by 30 minutes. Performance targets: Sensitivity greater than 85%, specificity greater than 90%, PPV greater than 40%. Timeline: 18 months with $2M budget. We are seeking FDA 510(k) clearance.
 
 ### Output
@@ -138,13 +142,13 @@ Model architecture uses gradient boosting ensemble with neural network component
 
 **Clinical Validation Plan:**
 
-*Phase 1 - Retrospective (Months 1-6):*
+_Phase 1 - Retrospective (Months 1-6):_
 Dataset of 10,000 ICU admissions across 2 years. Outcome defined by Sepsis-3 criteria within 48 hours. Performance analysis includes ROC curves, calibration assessment, and demographic subgroup analysis. Target: AUC greater than 0.85 with sensitivity and specificity meeting thresholds.
 
-*Phase 2 - Silent Running (Months 7-9):*
+_Phase 2 - Silent Running (Months 7-9):_
 Background deployment generating predictions without clinical alerts. Focus on model recalibration using live data, false positive rate assessment, and staff training and education.
 
-*Phase 3 - Prospective Validation (Months 10-15):*
+_Phase 3 - Prospective Validation (Months 10-15):_
 Stepped-wedge cluster randomized trial across 4 ICUs. Primary endpoint: time to appropriate antibiotics. Secondary endpoints: mortality, ICU length of stay, alert response rates, and provider satisfaction.
 
 **FDA 510(k) Regulatory Pathway:**
@@ -166,6 +170,7 @@ Provider interface features dashboard showing all patient risk scores, trend gra
 Continuous performance metrics tracked daily: AUC, sensitivity, specificity by shift and unit. Demographic fairness monitoring across age, race, and gender subgroups. Model drift detection with automatic flagging when performance degrades. Alert fatigue metrics including override rates and response times.
 
 **Success Metrics and Timeline:**
+
 - Month 6: Retrospective validation complete
 - Month 9: Silent running complete, staff trained
 - Month 15: Prospective trial complete

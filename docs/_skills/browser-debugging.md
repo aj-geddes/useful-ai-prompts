@@ -1,13 +1,14 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Debug client-side issues using browser developer tools. Identify JavaScript
+date: "2025-01-01"
+description:
+  Debug client-side issues using browser developer tools. Identify JavaScript
   errors, styling issues, and performance problems in the browser.
 layout: skill
 slug: browser-debugging
 tags:
-- javascript
-- java
+  - javascript
+  - java
 title: browser-debugging
 ---
 
@@ -75,7 +76,6 @@ Memory:
   - Detect leaks
 
 ---
-
 Essential Shortcuts:
 
 F12 / Ctrl+Shift+I: Open DevTools

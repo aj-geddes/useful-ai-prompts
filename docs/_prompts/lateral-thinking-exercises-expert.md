@@ -3,23 +3,24 @@ title: Lateral Thinking Exercises Expert
 slug: lateral-thinking-exercises-expert
 category: creativity & innovation
 tags:
-- lateral
-- thinking
-- creative
-- exercises
-- breakthrough
-- ideas
-- perspective
-- shifting
-- brainstorming
-- de
-- Bono
+  - lateral
+  - thinking
+  - creative
+  - exercises
+  - breakthrough
+  - ideas
+  - perspective
+  - shifting
+  - brainstorming
+  - de
+  - Bono
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: A practical lateral thinking facilitation guide that helps individuals
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  A practical lateral thinking facilitation guide that helps individuals
   and teams break free from conventional thinking patterns using proven techniques
   from Edward de Bono and contemporary innovation methodologies. This prompt guides
   users through structured creative exercises including random word association, assumption
@@ -27,11 +28,11 @@ description: A practical lateral thinking facilitation guide that helps individu
   ideas for stuck problems.
 layout: prompt
 use_cases:
-- Stuck on a problem after exhausting conventional solutions
-- Team brainstorming sessions that have become stale or circular
-- Need to challenge industry assumptions or business-as-usual thinking
-- Generating innovative approaches to competitive threats
-- Breaking through creative blocks in product or service design
+  - Stuck on a problem after exhausting conventional solutions
+  - Team brainstorming sessions that have become stale or circular
+  - Need to challenge industry assumptions or business-as-usual thinking
+  - Generating innovative approaches to competitive threats
+  - Breaking through creative blocks in product or service design
 complexity: Intermediate
 interaction: Interactive workshop-style
 ---
@@ -46,6 +47,7 @@ Conventional problem-solving follows logical, vertical thinking patterns that of
 
 <input_handling>
 Required information to gather:
+
 1. The specific problem or challenge (described in concrete terms)
 2. Solutions already considered or attempted
 3. Key assumptions being made about the situation
@@ -58,10 +60,11 @@ Required information to gather:
 10. What a breakthrough would look like
 
 Optional context:
+
 - Previous creative exercises attempted
 - Organizational culture around innovation
 - Stakeholder constraints on solutions
-</input_handling>
+  </input_handling>
 
 <task>
 1. UNDERSTAND THE STUCK POINT: Gather detailed context about the challenge, what has been tried, and why conventional thinking is not working
@@ -78,22 +81,24 @@ Optional context:
 Format: Interactive workshop-style with clear exercise instructions, examples, and synthesis
 Length: 1500-2500 words for full session
 Include:
+
 - Clear explanation of each exercise before starting
 - Guided examples relevant to the user's challenge
 - Multiple ideas generated per exercise (5-10 each)
 - Synthesis of breakthrough concepts combining best ideas
 - Implementation suggestions for most promising concepts
 - Energy and encouragement throughout the process
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Exercises are tailored to the specific challenge, not generic
 - Random words or perspectives are truly unexpected, not obviously related
 - Assumption reversals go to genuine extremes, not minor variations
 - Generated ideas include genuinely surprising and non-obvious options
 - Synthesis creates coherent concepts, not just lists of random ideas
 - Energy of facilitation maintains engagement and openness
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Do not judge ideas during generation phases (defer evaluation)

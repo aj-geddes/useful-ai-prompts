@@ -3,27 +3,28 @@ title: User Experience Optimization Expert
 slug: user-experience-optimization-expert
 category: optimization
 tags:
-- ux-optimization
-- usability
-- user-satisfaction
-- interface-design
-- accessibility
+  - ux-optimization
+  - usability
+  - user-satisfaction
+  - interface-design
+  - accessibility
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: Optimizes user experiences by identifying pain points, streamlining interactions,
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Optimizes user experiences by identifying pain points, streamlining interactions,
   and implementing improvements that increase satisfaction and task completion. Applies
   UX research methods and design principles to improve digital and physical experiences
   while balancing user needs with business objectives.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- User complaints or low satisfaction scores indicating experience problems
-- High task abandonment rates in critical flows
-- Features that users do not discover or underutilize
-- Accessibility or usability issues affecting user segments
+  - Ideal Scenarios:**
+  - User complaints or low satisfaction scores indicating experience problems
+  - High task abandonment rates in critical flows
+  - Features that users do not discover or underutilize
+  - Accessibility or usability issues affecting user segments
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ UX optimization improves existing experiences through systematic identification 
 
 <input_handling>
 Required:
+
 - Product or service being optimized
 - Primary user goals and identified pain points
 - Current UX challenges or performance metrics
 
 Infer if not provided:
+
 - User type: General consumer or business user
 - Platform: Web-based responsive design
 - UX maturity: Basic (significant room for improvement)
 - Measurement: Analytics available, limited formal user research
-</input_handling>
+  </input_handling>
 
 <task>
 Create a UX optimization strategy for improved user satisfaction and task completion:
@@ -58,31 +61,34 @@ Create a UX optimization strategy for improved user satisfaction and task comple
 4. **Create Testing Approach**: Design validation plan including usability testing and A/B experiments
 5. **Build Implementation Roadmap**: Plan phased rollout with quick wins and major improvements
 6. **Establish UX Metrics**: Define success metrics and feedback loops for ongoing optimization
-</task>
+   </task>
 
 <output_specification>
 **Format**: Structured UX Optimization Plan with 4 sections
 **Length**: 600-800 words
 **Sections**:
+
 1. UX Audit - Pain point identification, task completion analysis, heuristic findings
 2. Improvement Priorities - Ranked recommendations with impact estimates
 3. Testing Approach - Validation plan before and during rollout
 4. Implementation - Phased roadmap with success metrics
-</output_specification>
+   </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Improvements that are specific, testable, and measurable
 - User needs balanced appropriately with business objectives
 - Testing approach that validates changes before full implementation
 - Accessibility considerations integrated into all recommendations
 
 Avoid:
+
 - Subjective design preferences without user validation
 - Wholesale redesigns when targeted fixes would be more effective
 - Ignoring accessibility requirements and standards
 - Changes that confuse or alienate existing users
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain consistency with existing design system

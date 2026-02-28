@@ -1,6 +1,7 @@
 # Electrical Systems Designer
 
 ## Metadata
+
 - **ID**: `engineering-electrical-systems-designer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,12 +19,14 @@ Guides the design of electrical systems for buildings and infrastructure by stru
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Scoping an electrical system for a new building or major renovation
 - Evaluating system capacity for additional load (EV charging, new equipment)
 - Navigating NEC code requirements for a specific occupancy or installation
 - Coordinating electrical design with mechanical (HVAC) and controls teams
 
 **Anti-patterns (Don't Use For):**
+
 - Stamped electrical engineering drawings (requires licensed EE)
 - Arc flash hazard analysis calculations (specialized software required)
 - Utility interconnection agreements (utility engineering scope)
@@ -125,29 +128,31 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're designing a 4-story, 80,000 SF medical office building in California. Primary loads are HVAC (variable refrigerant flow system), exam room equipment, imaging suite on floor 2 (MRI, X-ray), EV charging for 20 stalls in the parking lot, and a data room. Healthcare occupancy."
 
 ### Output
 
 **Electrical System Design Framework: Medical Office Building**
-*80,000 SF | 4-story | Healthcare Occupancy | California*
+_80,000 SF | 4-story | Healthcare Occupancy | California_
 
 **Service Size Estimate**
 
-| Load Category | Est. Demand (W/SF) | Total Demand |
-|---------------|-------------------|--------------|
-| HVAC (VRF + AHUs) | 8 W/SF | 640 kW |
-| Lighting | 1.2 W/SF (Title 24) | 96 kW |
-| Receptacles + medical equipment | 6 W/SF | 480 kW |
-| MRI suite (dedicated circuit) | — | 120 kW |
-| EV charging (20 stalls × 7.2 kW) | — | 144 kW |
-| Data room | — | 50 kW |
-| **Total connected** | | **~1,530 kW** |
-| **Demand factor applied (0.75)** | | **~1,150 kW** |
+| Load Category                    | Est. Demand (W/SF)  | Total Demand  |
+| -------------------------------- | ------------------- | ------------- |
+| HVAC (VRF + AHUs)                | 8 W/SF              | 640 kW        |
+| Lighting                         | 1.2 W/SF (Title 24) | 96 kW         |
+| Receptacles + medical equipment  | 6 W/SF              | 480 kW        |
+| MRI suite (dedicated circuit)    | —                   | 120 kW        |
+| EV charging (20 stalls × 7.2 kW) | —                   | 144 kW        |
+| Data room                        | —                   | 50 kW         |
+| **Total connected**              |                     | **~1,530 kW** |
+| **Demand factor applied (0.75)** |                     | **~1,150 kW** |
 
 **Recommended service**: 277/480V, 3-phase, 4-wire. Main service: 2,500A @ 480V (1,732 kVA). Coordinate with utility for padmount transformer — likely 2,000 kVA unit with utility pre-application.
 
 **Distribution Architecture**
+
 - Main 480V switchgear on grade level (electrical room), feeds 4 distribution panels per floor plus dedicated MRI feeder and EV charging panel
 - Step-down transformers (480V→120/208V) per floor for receptacle loads
 - Dedicated 480V feeder for MRI suite with isolation transformer (NEC 517.20)
@@ -155,6 +160,7 @@ Avoid:
 
 **Emergency Power Strategy (NEC Article 517 — Healthcare)**
 NEC 517 requires Type 1 Essential Electrical System (EES) with three branches:
+
 - **Life Safety Branch**: Exit lights, egress lighting, fire alarm, generator controls
 - **Critical Branch**: Patient care areas, imaging suite, elevator
 - **Equipment Branch**: HVAC for patient areas, medical gas equipment
@@ -162,6 +168,7 @@ NEC 517 requires Type 1 Essential Electrical System (EES) with three branches:
 Recommend: 500 kW diesel generator with automatic transfer switches. UPS for MRI suite and data room (momentary power conditioning required for MRI).
 
 **Key Code Coordination Items**
+
 1. **NEC 517 EES compliance**: Branch separation from generation to final overcurrent device — confirm with AHJ
 2. **Title 24 lighting controls**: Occupancy sensors and daylight dimming in all regularly occupied spaces
 3. **VRF harmonic mitigation**: VRF drives generate 5th/7th harmonics — size transformers with K-factor rating (K-13 minimum)
@@ -170,14 +177,15 @@ Recommend: 500 kW diesel generator with automatic transfer switches. UPS for MRI
 
 **Long-Lead Equipment**
 
-| Equipment | Typical Lead Time |
-|-----------|------------------|
-| Main switchgear (2,500A) | 30–52 weeks |
+| Equipment                     | Typical Lead Time               |
+| ----------------------------- | ------------------------------- |
+| Main switchgear (2,500A)      | 30–52 weeks                     |
 | 2,000 kVA utility transformer | 40–60 weeks (utility-furnished) |
-| 500 kW diesel generator | 26–40 weeks |
-| MRI isolation transformer | 16–24 weeks (vendor-specific) |
+| 500 kW diesel generator       | 26–40 weeks                     |
+| MRI isolation transformer     | 16–24 weeks (vendor-specific)   |
 
 **Early Actions Required**
+
 1. Submit utility pre-application for padmount transformer within 60 days — 40–60 week lead time controls schedule
 2. Engage MRI equipment vendor for dedicated circuit/shielding requirements during schematic design
 3. Confirm AHJ interpretation of NEC 517 EES branch requirements before design development

@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Implement secure OAuth 2.0, OpenID Connect (OIDC), JWT authentication,
+date: "2025-01-01"
+description:
+  Implement secure OAuth 2.0, OpenID Connect (OIDC), JWT authentication,
   and SSO integration. Use when building secure authentication systems for web and
   mobile applications.
 layout: skill
 slug: oauth-implementation
 tags:
-- development
+  - development
 title: oauth-implementation
 ---
 
@@ -32,10 +33,10 @@ Implement industry-standard OAuth 2.0 and OpenID Connect authentication flows wi
 
 ```javascript
 // oauth-server.js - Complete OAuth 2.0 implementation
-const express = require('express');
-const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
-const bcrypt = require('bcrypt');
+const express = require("express");
+const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+const bcrypt = require("bcrypt");
 
 class OAuthServer {
   constructor() {
@@ -57,7 +58,7 @@ class OAuthServer {
     this.clients.set(clientId, {
       clientSecret: bcrypt.hashSync(clientSecret, 10),
       redirectUris,
-      grants: ['authorization_code', 'refresh_token']
+      grants: ["authorization_code", "refresh_token"],
     });
   }
 
@@ -66,77 +67,93 @@ class OAuthServer {
     this.app.use(express.urlencoded({ extended: true }));
 
     // Authorization endpoint
-    this.app.get('/oauth/authorize', (req, res) => {
-      const { client_id, redirect_uri, response_type, scope, state } = req.query;
+    this.app.get("/oauth/authorize", (req, res) => {
+      const { client_id, redirect_uri, response_type, scope, state } =
+        req.query;
 
       // Validate client
       if (!this.clients.has(client_id)) {
-        return res.status(400).json({ error: 'invalid_client' });
+        return res.status(400).json({ error: "invalid_client" });
       }
 
       const client = this.clients.get(client_id);
 
       // Validate redirect URI
       if (!client.redirectUris.includes(redirect_uri)) {
-        return res.status(400).json({ error: 'invalid_redirect_uri' });
+        return res.status(400).json({ error: "invalid_redirect_uri" });
       }
 
       // Validate response type
-      if (response_type !== 'code') {
-        return res.status(400).json({ error: 'unsupported_response_type' });
+      if (response_type !== "code") {
+        return res.status(400).json({ error: "unsupported_response_type" });
       }
 
       // Generate authorization code
-      const code = crypto.randomBytes(32).toString('hex');
+      const code = crypto.randomBytes(32).toString("hex");
 
       this.authorizationCodes.set(code, {
         clientId: client_id,
         redirectUri: redirect_uri,
-        scope: scope || 'read',
+        scope: scope || "read",
         userId: req.user?.id, // From session
-        expiresAt: Date.now() + 600000 // 10 minutes
+        expiresAt: Date.now() + 600000, // 10 minutes
       });
 
       // Redirect with authorization code
       const redirectUrl = new URL(redirect_uri);
-      redirectUrl.searchParams.set('code', code);
-      if (state) redirectUrl.searchParams.set('state', state);
+      redirectUrl.searchParams.set("code", code);
+      if (state) redirectUrl.searchParams.set("state", state);
 
       res.redirect(redirectUrl.toString());
     });
 
     // Token endpoint
-    this.app.post('/oauth/token', async (req, res) => {
-      const { grant_type, code, refresh_token, client_id, client_secret, redirect_uri } = req.body;
+    this.app.post("/oauth/token", async (req, res) => {
+      const {
+        grant_type,
+        code,
+        refresh_token,
+        client_id,
+        client_secret,
+        redirect_uri,
+      } = req.body;
 
       // Validate client credentials
       const client = this.clients.get(client_id);
       if (!client || !bcrypt.compareSync(client_secret, client.clientSecret)) {
-        return res.status(401).json({ error: 'invalid_client' });
+        return res.status(401).json({ error: "invalid_client" });
       }
 
-      if (grant_type === 'authorization_code') {
-        return this.handleAuthorizationCodeGrant(req, res, code, client_id, redirect_uri);
-      } else if (grant_type === 'refresh_token') {
+      if (grant_type === "authorization_code") {
+        return this.handleAuthorizationCodeGrant(
+          req,
+          res,
+          code,
+          client_id,
+          redirect_uri,
+        );
+      } else if (grant_type === "refresh_token") {
         return this.handleRefreshTokenGrant(req, res, refresh_token, client_id);
       }
 
-      res.status(400).json({ error: 'unsupported_grant_type' });
+      res.status(400).json({ error: "unsupported_grant_type" });
     });
 
     // Token introspection endpoint
-    this.app.post('/oauth/introspect', (req, res) => {
+    this.app.post("/oauth/introspect", (req, res) => {
       const { token } = req.body;
 
       try {
-        const decoded = jwt.verify(token, this.publicKey, { algorithms: ['RS256'] });
+        const decoded = jwt.verify(token, this.publicKey, {
+          algorithms: ["RS256"],
+        });
 
         res.json({
           active: true,
           scope: decoded.scope,
           client_id: decoded.client_id,
           user_id: decoded.sub,
-          exp: decoded.exp
+          exp: decoded.exp,
         });
       } catch (error) {
         res.json({ active: false });
@@ -144,10 +161,10 @@ class OAuthServer {
     });
 
     // Token revocation endpoint
-    this.app.post('/oauth/revoke', (req, res) => {
+    this.app.post("/oauth/revoke", (req, res) => {
       const { token, token_type_hint } = req.body;
 
-      if (token_type_hint === 'refresh_token') {
+      if (token_type_hint === "refresh_token") {
         this.refreshTokens.delete(token);
       } else {
         this.accessTokens.delete(token);
@@ -161,24 +178,31 @@ class OAuthServer {
     const authCode = this.authorizationCodes.get(code);
 
     if (!authCode) {
-      return res.status(400).json({ error: 'invalid_grant' });
+      return res.status(400).json({ error: "invalid_grant" });
     }
 
     // Validate authorization code
-    if (authCode.clientId !== clientId || authCode.redirectUri !== redirectUri) {
-      return res.status(400).json({ error: 'invalid_grant' });
+    if (
+      authCode.clientId !== clientId ||
+      authCode.redirectUri !== redirectUri
+    ) {
+      return res.status(400).json({ error: "invalid_grant" });
     }
 
     if (authCode.expiresAt < Date.now()) {
       this.authorizationCodes.delete(code);
-      return res.status(400).json({ error: 'expired_grant' });
+      return res.status(400).json({ error: "expired_grant" });
     }
 
     // Delete used authorization code
     this.authorizationCodes.delete(code);
 
     // Generate tokens
-    const tokens = this.generateTokens(clientId, authCode.userId, authCode.scope);
+    const tokens = this.generateTokens(
+      clientId,
+      authCode.userId,
+      authCode.scope,
+    );
 
     res.json(tokens);
   }
@@ -187,16 +211,20 @@ class OAuthServer {
     const storedToken = this.refreshTokens.get(refreshToken);
 
     if (!storedToken || storedToken.clientId !== clientId) {
-      return res.status(400).json({ error: 'invalid_grant' });
+      return res.status(400).json({ error: "invalid_grant" });
     }
 
     if (storedToken.expiresAt < Date.now()) {
       this.refreshTokens.delete(refreshToken);
-      return res.status(400).json({ error: 'expired_refresh_token' });
+      return res.status(400).json({ error: "expired_refresh_token" });
     }
 
     // Generate new access token
-    const tokens = this.generateTokens(clientId, storedToken.userId, storedToken.scope);
+    const tokens = this.generateTokens(
+      clientId,
+      storedToken.userId,
+      storedToken.scope,
+    );
 
     res.json(tokens);
   }
@@ -208,33 +236,33 @@ class OAuthServer {
         sub: userId,
         client_id: clientId,
         scope: scope,
-        type: 'access_token'
+        type: "access_token",
       },
       this.privateKey,
       {
-        algorithm: 'RS256',
-        expiresIn: '1h',
-        issuer: 'https://auth.example.com',
-        audience: 'https://api.example.com'
-      }
+        algorithm: "RS256",
+        expiresIn: "1h",
+        issuer: "https://auth.example.com",
+        audience: "https://api.example.com",
+      },
     );
 
     // Generate refresh token
-    const refreshToken = crypto.randomBytes(64).toString('hex');
+    const refreshToken = crypto.randomBytes(64).toString("hex");
 
     this.refreshTokens.set(refreshToken, {
       clientId,
       userId,
       scope,
-      expiresAt: Date.now() + 2592000000 // 30 days
+      expiresAt: Date.now() + 2592000000, // 30 days
     });
 
     return {
       access_token: accessToken,
-      token_type: 'Bearer',
+      token_type: "Bearer",
       expires_in: 3600,
       refresh_token: refreshToken,
-      scope: scope
+      scope: scope,
     };
   }
 
@@ -243,31 +271,31 @@ class OAuthServer {
     return (req, res, next) => {
       const authHeader = req.headers.authorization;
 
-      if (!authHeader || !authHeader.startsWith('Bearer ')) {
-        return res.status(401).json({ error: 'missing_token' });
+      if (!authHeader || !authHeader.startsWith("Bearer ")) {
+        return res.status(401).json({ error: "missing_token" });
       }
 
       const token = authHeader.substring(7);
 
       try {
         const decoded = jwt.verify(token, this.publicKey, {
-          algorithms: ['RS256'],
-          issuer: 'https://auth.example.com',
-          audience: 'https://api.example.com'
+          algorithms: ["RS256"],
+          issuer: "https://auth.example.com",
+          audience: "https://api.example.com",
         });
 
         req.user = {
           id: decoded.sub,
           clientId: decoded.client_id,
-          scope: decoded.scope
+          scope: decoded.scope,
         };
 
         next();
       } catch (error) {
-        if (error.name === 'TokenExpiredError') {
-          return res.status(401).json({ error: 'token_expired' });
+        if (error.name === "TokenExpiredError") {
+          return res.status(401).json({ error: "token_expired" });
         }
-        return res.status(401).json({ error: 'invalid_token' });
+        return res.status(401).json({ error: "invalid_token" });
       }
     };
   }
@@ -283,21 +311,20 @@ class OAuthServer {
 const oauthServer = new OAuthServer();
 
 // Register OAuth client
-oauthServer.registerClient(
-  'client-app-123',
-  'super-secret-key',
-  ['https://myapp.com/callback']
-);
+oauthServer.registerClient("client-app-123", "super-secret-key", [
+  "https://myapp.com/callback",
+]);
 
 // Protected API endpoint
-oauthServer.app.get('/api/user/profile',
+oauthServer.app.get(
+  "/api/user/profile",
   oauthServer.authenticate(),
   (req, res) => {
     res.json({
       userId: req.user.id,
-      scope: req.user.scope
+      scope: req.user.scope,
     });
-  }
+  },
 );
 
 oauthServer.start(3000);
@@ -531,6 +558,7 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 ## Best Practices
 
 ### ✅ DO
+
 - Use PKCE for public clients
 - Implement token rotation
 - Store tokens securely
@@ -541,6 +569,7 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 - Log authentication events
 
 ### ❌ DON'T
+
 - Store tokens in localStorage
 - Use implicit flow
 - Skip state parameter

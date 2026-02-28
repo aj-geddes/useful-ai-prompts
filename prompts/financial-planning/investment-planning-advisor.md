@@ -1,6 +1,7 @@
 # Investment Planning Advisor
 
 ## Metadata
+
 - **ID**: `financial-investment-planning`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive investment planning specialist that creates personalized investm
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating a new investment strategy from scratch for beginners or career changers
 - Optimizing existing portfolio allocation based on life changes
 - Planning for retirement, home purchase, or other major financial goals
@@ -25,6 +27,7 @@ A comprehensive investment planning specialist that creates personalized investm
 - Developing systematic investment approaches with clear milestones
 
 **Anti-patterns (when NOT to use):**
+
 - Day trading or short-term speculation advice
 - Specific individual stock picks or timing recommendations
 - Guaranteed return predictions or performance promises
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am 28 years old with a $75,000 income at a stable tech company. I have a $15,000 emergency fund and recently paid off all credit card debt. My only debt is a $180,000 mortgage at 3.5%. I can invest $10,000 as a lump sum plus $1,000 per month ongoing. My goals are retirement by age 60-65 and upgrading to a larger house in about 10 years. My employer matches 50% on 401(k) contributions up to 6% of salary. I am comfortable with volatility for long-term growth.
 
 ### Output
@@ -138,32 +142,37 @@ Your 32-37 year retirement timeline, stable income, and strong financial foundat
 
 **Account Prioritization (Monthly $1,000):**
 
-| Priority | Account | Monthly | Annual | Reasoning |
-|----------|---------|---------|--------|-----------|
-| 1 | 401(k) to Match | $375 | $4,500 | Captures $187.50/mo employer match (50% guaranteed return) |
-| 2 | Roth IRA (Max) | $542 | $6,500 | Tax-free growth for 32+ years, flexibility |
-| 3 | Additional 401(k) | $83 | $1,000 | Tax-deferred growth for remaining budget |
+| Priority | Account           | Monthly | Annual | Reasoning                                                  |
+| -------- | ----------------- | ------- | ------ | ---------------------------------------------------------- |
+| 1        | 401(k) to Match   | $375    | $4,500 | Captures $187.50/mo employer match (50% guaranteed return) |
+| 2        | Roth IRA (Max)    | $542    | $6,500 | Tax-free growth for 32+ years, flexibility                 |
+| 3        | Additional 401(k) | $83     | $1,000 | Tax-deferred growth for remaining budget                   |
 
 **Lump Sum Strategy ($10,000):**
+
 - Roth IRA: $6,500 (maximize current year contribution)
 - 401(k) additional: $3,500 (accelerate tax-advantaged growth)
 
 **Implementation Timeline:**
 
-*Week 1:*
+_Week 1:_
+
 - Increase 401(k) contribution to 6% through payroll portal
 - Verify employer match is depositing correctly
 
-*Week 2:*
+_Week 2:_
+
 - Open Roth IRA at Vanguard, Fidelity, or Schwab
 - Fund with $6,500 lump sum
 - Select target-date fund or implement allocation above
 
-*Week 3:*
+_Week 3:_
+
 - Set up $542/month automatic transfer to Roth IRA
 - Allocate remaining lump sum ($3,500) to 401(k) if catch-up option available
 
-*Month 2:*
+_Month 2:_
+
 - Verify all automatic contributions are processing
 - Adjust 401(k) contribution if needed to optimize budget
 
@@ -173,12 +182,13 @@ Your 32-37 year retirement timeline, stable income, and strong financial foundat
 | Year 10 | $260,000 | $340,000 | $440,000 |
 | Year 30 | $1,600,000 | $2,400,000 | $3,800,000 |
 
-*Retirement income at 4% withdrawal: $64,000-$96,000/year (today's dollars)*
+_Retirement income at 4% withdrawal: $64,000-$96,000/year (today's dollars)_
 
 **House Upgrade Strategy (10-Year Goal):**
 Consider opening taxable brokerage account in Year 2-3 with 60/40 stock/bond allocation for down payment savings, separate from retirement accounts.
 
 **Annual Review Checklist:**
+
 - Rebalance if any asset class drifts more than 5% from target
 - Increase contributions with each salary raise (50% of raise amount)
 - Shift 5% from stocks to bonds every 5 years after age 45
@@ -187,6 +197,7 @@ Consider opening taxable brokerage account in Year 2-3 with 60/40 stock/bond all
 ---
 
 ## Related Prompts
+
 - [Retirement Planning Specialist](retirement-planning-specialist.md) - Deep dive into retirement income strategies
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Maximize tax efficiency across accounts
 - [Personal Budget Optimizer](personal-budget-optimizer.md) - Free up additional investment capital

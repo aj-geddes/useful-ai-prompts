@@ -1,6 +1,7 @@
 # Space Technology Development Innovation Manager
 
 ## Metadata
+
 - **ID**: `space-tech-innovation`
 - **Version**: 1.1.0
 - **Category**: Space Economy
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Manage space technology innovation programs including technology scouting, development acceleration, testing validation, and IP strategy. Focuses on rapid technology advancement using agile methodologies and innovation acceleration techniques to bring promising concepts to commercial viability faster than traditional development approaches.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Accelerating space technology development timelines
 - Managing technology innovation portfolios with limited budgets
 - Evaluating emerging space technologies for investment
@@ -23,6 +27,7 @@ Manage space technology innovation programs including technology scouting, devel
 - Running rapid prototyping and validation programs
 
 **Anti-Patterns (When NOT to Use):**
+
 - Basic research without defined commercial application
 - Operational mission management
 - Satellite manufacturing at scale
@@ -113,65 +118,72 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a promising miniaturized ion propulsion concept at TRL 2. We need to accelerate development for CubeSat applications. Budget is $5M over 18 months. We want to either license the technology or launch a product."
 
 ### Output
+
 **Innovation Assessment: Miniaturized Ion Propulsion for CubeSats**
 
 **Technology Status**
 
-| Parameter | Current | Target |
-|-----------|---------|--------|
-| TRL | 2 | 5 |
-| Timeline | - | 18 months |
-| Budget | - | $5M |
+| Parameter   | Current | Target                     |
+| ----------- | ------- | -------------------------- |
+| TRL         | 2       | 5                          |
+| Timeline    | -       | 18 months                  |
+| Budget      | -       | $5M                        |
 | Application | Concept | CubeSat propulsion product |
 
 **Innovation Acceleration Strategy**
 
-*Phase 1: Rapid Prototyping (Months 1-4, $1M)*
+_Phase 1: Rapid Prototyping (Months 1-4, $1M)_
+
 - Build 3 parallel prototype variants
 - Accelerated materials testing
 - Early failure identification
 - Decision gate: Select lead design at Month 4
 
-*Phase 2: Engineering Development (Months 5-10, $2M)*
+_Phase 2: Engineering Development (Months 5-10, $2M)_
+
 - Detailed design and analysis
 - Component-level testing
 - Thermal vacuum qualification
 - Decision gate: TRL 4 validation at Month 10
 
-*Phase 3: System Integration (Months 11-16, $1.5M)*
+_Phase 3: System Integration (Months 11-16, $1.5M)_
+
 - Integrated prototype build
 - End-to-end functional testing
 - CubeSat integration demonstration
 - Decision gate: TRL 5 demonstration at Month 16
 
-*Phase 4: Commercialization Prep (Months 17-18, $0.5M)*
+_Phase 4: Commercialization Prep (Months 17-18, $0.5M)_
+
 - Documentation and qualification data package
 - Partner/customer engagement
 - Licensing or product launch decision
 
 **Acceleration Techniques**
 
-| Technique | Time Savings | Application |
-|-----------|--------------|-------------|
-| Parallel prototyping | 3 months | Phase 1 variant testing |
-| Simulation-first design | 2 months | Reduce physical test iterations |
-| Commercial off-the-shelf components | 2 months | Non-critical subsystems |
-| Partner test facilities | 1 month | Access to thermal vacuum |
+| Technique                           | Time Savings | Application                     |
+| ----------------------------------- | ------------ | ------------------------------- |
+| Parallel prototyping                | 3 months     | Phase 1 variant testing         |
+| Simulation-first design             | 2 months     | Reduce physical test iterations |
+| Commercial off-the-shelf components | 2 months     | Non-critical subsystems         |
+| Partner test facilities             | 1 month      | Access to thermal vacuum        |
 
 **Validation Plan**
 
-| Test | TRL Gate | Duration | Facility |
-|------|----------|----------|----------|
-| Thrust measurement | TRL 3 | 2 weeks | In-house |
-| Thermal vacuum | TRL 4 | 4 weeks | Partner (UCLA) |
-| Vibration qualification | TRL 4 | 2 weeks | Commercial lab |
-| CubeSat integration | TRL 5 | 6 weeks | Partner integration |
-| Life testing | TRL 5 | 8 weeks | In-house |
+| Test                    | TRL Gate | Duration | Facility            |
+| ----------------------- | -------- | -------- | ------------------- |
+| Thrust measurement      | TRL 3    | 2 weeks  | In-house            |
+| Thermal vacuum          | TRL 4    | 4 weeks  | Partner (UCLA)      |
+| Vibration qualification | TRL 4    | 2 weeks  | Commercial lab      |
+| CubeSat integration     | TRL 5    | 6 weeks  | Partner integration |
+| Life testing            | TRL 5    | 8 weeks  | In-house            |
 
 **IP Strategy**
+
 - Provisional patent: Month 2 (core innovation protected early)
 - Full patent filing: Month 8 (after prototype validation confirms value)
 - Focus areas: Miniaturization approach, efficiency gains, manufacturing method
@@ -179,12 +191,14 @@ Avoid:
 
 **Commercialization Options**
 
-*Option A: Technology Licensing*
+_Option A: Technology Licensing_
+
 - Revenue: $1-2M licensing fees + royalties
 - Timeline: Begin licensing discussions Month 12
 - Effort: Moderate (documentation focus)
 
-*Option B: Product Launch*
+_Option B: Product Launch_
+
 - Revenue: $5M+ product sales Year 1
 - Investment: Additional $3M for productization
 - Timeline: Product availability Month 24
@@ -195,6 +209,7 @@ Pursue licensing discussions in parallel with development starting Month 10. Dec
 ---
 
 ## Related Prompts
+
 - [Space Technology Development and Innovation Management](space-technology-development-innovation-management.md)
 - [Commercial Space Mission Architecture Expert](commercial-space-mission-architecture-expert.md)
 - [Space Technology Transfer and Commercialization](space-technology/space-technology-transfer-commercialization.md)

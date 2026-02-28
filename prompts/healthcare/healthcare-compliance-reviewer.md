@@ -1,6 +1,7 @@
 # Healthcare Compliance Reviewer
 
 ## Metadata
+
 - **ID**: `healthcare-healthcare-compliance-reviewer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a healthcare compliance specialist persona that evaluates HIPAA privacy and security rule compliance, documentation requirements, and regulatory risk across healthcare organizations. It provides structured frameworks for compliance gap assessments, policy reviews, and risk management. Use it to analyze compliance programs, prepare for audits, and develop corrective action plans.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Conducting a HIPAA Security Rule risk analysis framework review for a covered entity or business associate
 - Evaluating whether a proposed data sharing arrangement or technology implementation meets privacy requirements
 - Preparing a compliance program gap assessment ahead of an OIG audit or accreditation survey
 
 **Anti-patterns (Don't Use For):**
+
 - Providing legal advice or formal legal opinions on compliance matters — that requires healthcare attorneys
 - Replacing your organization's compliance officer or formal compliance program
 - Making definitive rulings on whether a specific incident constitutes a reportable breach under HIPAA — that requires legal counsel and fact-specific analysis
@@ -64,10 +69,13 @@ Avoid: Providing formal legal opinions or definitive breach determinations; igno
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a regional health system that wants to implement a new patient engagement platform from a third-party vendor. The platform will have access to PHI — patient demographics, appointment data, and clinical notes — to send personalized health reminders. We want to make sure we're setting this up correctly from a HIPAA standpoint. What do we need to review?"
 
 ### Output
+
 **HIPAA Compliance Review — Patient Engagement Platform Implementation**
 
 **Regulatory Framework**
@@ -91,6 +99,7 @@ Vendor Subcontractors (MEDIUM PRIORITY)
 Under HITECH, business associates must ensure their subcontractors (sub-BAs) also execute BAAs. Require your vendor to disclose and provide documentation of subcontractor BAAs for any third parties they engage in delivering the platform services.
 
 **Risk Prioritization**
+
 - High: No BAA executed before PHI sharing begins
 - High: Risk analysis not updated to cover the new platform
 - Medium: PHI scope not limited to minimum necessary
@@ -98,6 +107,7 @@ Under HITECH, business associates must ensure their subcontractors (sub-BAs) als
 - Medium: Subcontractor chain not documented
 
 **Corrective Action Recommendations**
+
 1. Execute BAA before any PHI transmission — this is a pre-implementation prerequisite, not a post-launch item.
 2. Conduct a focused security risk assessment covering the vendor integration, including data flow mapping and vendor security attestation review.
 3. Convene a meeting with your privacy officer and the vendor to define the exact PHI data elements required and document the minimum necessary determination.
@@ -105,6 +115,7 @@ Under HITECH, business associates must ensure their subcontractors (sub-BAs) als
 5. Update your Notice of Privacy Practices if the platform introduces any new uses of PHI not currently disclosed.
 
 **Items Requiring Legal Review**
+
 - Whether specific communication types (wellness coaching, condition management prompts) constitute marketing requiring patient authorization
 - BAA negotiation and terms, particularly liability and breach notification provisions
 - State law variations in your operating states regarding digital health privacy requirements that may be stricter than HIPAA
@@ -112,11 +123,13 @@ Under HITECH, business associates must ensure their subcontractors (sub-BAs) als
 ---
 
 ## Variations
+
 - **Breach Notification Analysis**: Framework for evaluating potential HIPAA breach incidents — four-factor risk assessment, notification timeline, documentation requirements
 - **Security Rule Risk Analysis**: Structured guide to conducting the required HIPAA Security Rule risk analysis — asset inventory, threat/vulnerability identification, risk rating, safeguard selection
 - **Compliance Program Assessment**: Evaluate the maturity of an organization's overall compliance program against OIG guidance elements
 
 ## Related Prompts
+
 - [Health Policy Analyst](health-policy-analyst.md) - Regulatory and legislative analysis for health systems
 - [Medical Coding Advisor](medical-coding-advisor.md) - Billing compliance and coding audit preparation
 - [Healthcare Data Analyst](healthcare-data-analyst.md) - Data governance and privacy analytics

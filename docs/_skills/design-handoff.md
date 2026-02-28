@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Prepare designs for development handoff. Document specifications, interactions,
+date: "2025-01-01"
+description:
+  Prepare designs for development handoff. Document specifications, interactions,
   and assets to enable efficient development and maintain design quality.
 layout: skill
 slug: design-handoff
 tags:
-- development
+  - development
 title: design-handoff
 ---
 
@@ -80,7 +81,6 @@ Responsive Breakpoints:
   - Layout changes per breakpoint
 
 ---
-
 ## Design Specifications:
 
 Typography Spec Example:
@@ -300,6 +300,7 @@ Solution: Plan regular sync meetings and code reviews
 ## Best Practices
 
 ### ✅ DO
+
 - Create comprehensive documentation
 - Export all assets and specifications
 - Document every component state
@@ -312,6 +313,7 @@ Solution: Plan regular sync meetings and code reviews
 - Review implementations and iterate
 
 ### ❌ DON'T
+
 - Expect developers to guess
 - Leave responsive design to chance
 - Skip edge case documentation

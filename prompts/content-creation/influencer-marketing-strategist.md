@@ -1,6 +1,7 @@
 # Influencer Marketing Strategist
 
 ## Metadata
+
 - **ID**: `content-creation-influencer-marketing`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Fitness niche on Instagram, 12K followers. Post workout videos and nutrition tips. 4% engagement rate. Want to get my first brand partnerships and grow to 50K followers in a year.
 ```
 
 ### Output
+
 ```
 **Influencer Strategy: Fitness Creator**
 

@@ -1,6 +1,7 @@
 # Visual Design Concepts Expert
 
 ## Metadata
+
 - **ID**: creation-visual-design-concepts-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive visual design assistant that creates compelling brand identities
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating complete brand identity systems from scratch
 - Developing visual concepts for marketing campaigns
 - Designing product packaging and environmental graphics
@@ -25,6 +27,7 @@ A comprehensive visual design assistant that creates compelling brand identities
 - Refreshing or evolving existing brand aesthetics
 
 **Anti-Patterns (When Not to Use):**
+
 - Logo design only without broader identity system
 - UI/UX wireframing (use wireframing prompts instead)
 - Print production with specific technical requirements
@@ -113,6 +116,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Visual design type: Complete brand identity for new business
 2. Business: Artisan coffee roastery and cafe chain
@@ -141,12 +145,14 @@ Requirements:
 The visual identity captures the complete journey of coffee - from carefully selected beans to the meaningful moments created over each cup.
 
 **Visual Story:**
+
 - The precision of the roasting process
 - The warmth of human connection
 - The ritual of coffee preparation
 - The sustainability of the source
 
 **Key Visual Metaphors:**
+
 - Coffee rings as community circles
 - Steam patterns as conversation flows
 - Bean shapes as design elements
@@ -157,6 +163,7 @@ The visual identity captures the complete journey of coffee - from carefully sel
 ### Logo Design
 
 **Primary Mark:**
+
 ```
 Concept: Abstract coffee bean forming an "R" monogram
 
@@ -172,11 +179,13 @@ Craft Coffee Roasters
 ```
 
 **Design Rationale:**
+
 - Coffee bean shape creates memorable icon
 - Hidden "R" adds clever discovery moment
 - Circular form suggests community and wholeness
 
 **Logo Variations:**
+
 - Icon only (for app, stamps)
 - Horizontal lockup (signage)
 - Stacked version (packaging)
@@ -186,18 +195,20 @@ Craft Coffee Roasters
 
 **Primary Colors:**
 
-| Color | Hex | Usage | Represents |
-|-------|-----|-------|------------|
-| Roast Brown | #3E2723 | Logo, headlines | Craft, quality |
-| Cream | #F5E6D3 | Backgrounds | Warmth, comfort |
-| Copper | #B87333 | Accents, highlights | Sophistication |
+| Color       | Hex     | Usage               | Represents      |
+| ----------- | ------- | ------------------- | --------------- |
+| Roast Brown | #3E2723 | Logo, headlines     | Craft, quality  |
+| Cream       | #F5E6D3 | Backgrounds         | Warmth, comfort |
+| Copper      | #B87333 | Accents, highlights | Sophistication  |
 
 **Secondary Palette:**
+
 - Sage Green (#87A96B) - Sustainability
 - Clay Red (#C65D00) - Energy, passion
 - Charcoal (#36454F) - Contrast
 
 **Color Usage Ratios:**
+
 - 40% Cream (breathing room)
 - 30% Roast Brown (anchoring)
 - 20% Photography/White space
@@ -206,16 +217,19 @@ Craft Coffee Roasters
 ### Typography
 
 **Primary Typeface: Moderat**
+
 - Modern sans-serif with character
 - Slightly rounded corners for warmth
 - Excellent readability at all sizes
 
 **Type Hierarchy:**
+
 - H1: Moderat Medium, 42pt, -2% tracking
 - H2: Moderat Regular, 28pt, -1% tracking
 - Body: Moderat Regular, 16pt, +1% tracking
 
 **Secondary Typeface: Fraunces**
+
 - Serif for special applications
 - Adds craft and editorial feel
 - Use for quotes, special menus
@@ -225,11 +239,13 @@ Craft Coffee Roasters
 **Pattern System:**
 
 Coffee Rings:
+
 - Overlapping circular patterns
 - Various opacities for depth
 - Use as background texture
 
 Bean Illustrations:
+
 - Simple line drawings
 - Used as bullets, dividers
 - Always maintain 2pt stroke
@@ -239,12 +255,14 @@ Bean Illustrations:
 ### Photography Style
 
 **Hero Photography:**
+
 - Natural morning light
 - Authentic coffee moments
 - Hands crafting, not posing
 - Rich, warm color grading
 
 **Product Shots:**
+
 - Clean marble or wood surfaces
 - Natural shadows
 - Minimal props, focus on coffee
@@ -252,12 +270,14 @@ Bean Illustrations:
 ### Packaging Design
 
 **Coffee Bag Design:**
+
 - Kraft paper with matte finish
 - Copper foil stamp logo
 - Roast level color coding
 - Origin story on back
 
 **Label System:**
+
 ```
 [Logo]
 SINGLE ORIGIN
@@ -274,12 +294,14 @@ Roast Date: [Stamp]
 ### Digital Applications
 
 **Website Design:**
+
 - Full-width coffee pour video
 - "From Seed to Soul" headline
 - Shop/Visit/Learn CTAs
 - Warm, inviting atmosphere
 
 **Mobile App:**
+
 - Clean card-based design
 - Coffee customization
 - Loyalty program integration
@@ -288,6 +310,7 @@ Roast Date: [Stamp]
 ### Print Applications
 
 **Business Cards:**
+
 - Cream cotton paper
 - Copper foil logo
 - Roast brown letterpress text
@@ -298,12 +321,14 @@ Roast Date: [Stamp]
 ### Visual Voice
 
 **Design Personality:**
+
 - Warm, not cold
 - Crafted, not mass-produced
 - Inviting, not exclusive
 - Quality, not pretentious
 
 **Design Principles:**
+
 1. Craft First: Show the human touch
 2. White Space: Let designs breathe
 3. Consistency: Same quality everywhere
@@ -312,12 +337,14 @@ Roast Date: [Stamp]
 ### Usage Rules
 
 **Logo Guidelines:**
+
 - Minimum size: 1 inch wide
 - Clear space: 1x bean height
 - Don't rotate or skew
 - Don't change colors
 
 **Typography Rules:**
+
 - Headlines always Moderat
 - Never stretch type
 - Maintain hierarchy
@@ -325,11 +352,13 @@ Roast Date: [Stamp]
 ### Success Metrics
 
 **Brand Recognition:**
+
 - Instagram followers: +200% year 1
 - Brand recall: 40% in market
 - Press mentions: 10+ monthly
 
 **Business Impact:**
+
 - Foot traffic: +30%
 - Average order: +15%
 - Repeat customers: 70%

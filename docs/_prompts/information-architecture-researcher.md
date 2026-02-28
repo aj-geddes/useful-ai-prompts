@@ -3,33 +3,34 @@ title: Information Architecture Researcher
 slug: information-architecture-researcher
 category: research
 tags:
-- information
-- architecture
-- taxonomy
-- knowledge
-- structure
-- findability
-- navigation
-- design
-- card
-- sorting
+  - information
+  - architecture
+  - taxonomy
+  - knowledge
+  - structure
+  - findability
+  - navigation
+  - design
+  - card
+  - sorting
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt supports UX researchers, content strategists, and knowledge
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt supports UX researchers, content strategists, and knowledge
   managers in designing and evaluating information architectures — creating taxonomies,
   designing navigation systems, evaluating findability, and applying card sorting
   and tree testing methodologies to ensure users can locate what they need efficiently.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Redesigning a website, intranet, or knowledge base with unclear or user-unfriendly
-  navigation
-- Creating a taxonomy for a new content system or product documentation library
-- Evaluating whether current information organization matches how users actually think
-  and search
-- Database schema design requiring technical data architecture expertise
+  - Ideal Scenarios:**
+  - Redesigning a website, intranet, or knowledge base with unclear or user-unfriendly
+    navigation
+  - Creating a taxonomy for a new content system or product documentation library
+  - Evaluating whether current information organization matches how users actually think
+    and search
+  - Database schema design requiring technical data architecture expertise
 complexity: advanced
 interaction: multi-turn
 ---

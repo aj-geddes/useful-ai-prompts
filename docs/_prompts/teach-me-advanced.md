@@ -3,25 +3,26 @@ title: Technology Learning Framework (Advanced)
 slug: teach-me-advanced
 category: research/education
 tags:
-- learning
-- technology
-- curriculum
-- advanced
-- professional-development
+  - learning
+  - technology
+  - curriculum
+  - advanced
+  - professional-development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Create structured, source-driven learning curricula for experienced professionals
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Create structured, source-driven learning curricula for experienced professionals
   exploring unfamiliar technologies. Delivers rigorous, fact-based instruction aligned
   with operational contexts and integration requirements.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Senior engineers evaluating new technologies for adoption
-- Architects conducting technology assessments
-- Technical leads preparing team training programs
-- Specialists expanding into adjacent technology domains
+  - Ideal Scenarios:**
+  - Senior engineers evaluating new technologies for adoption
+  - Architects conducting technology assessments
+  - Technical leads preparing team training programs
+  - Specialists expanding into adjacent technology domains
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Technology learning for experienced practitioners requires a different approach 
 
 <input_handling>
 Required inputs:
+
 - Technology name and version
 - Operational domain context
 - Target learning outcomes
 
 Optional inputs (inferred if not provided):
+
 - Baseline proficiency: Assume experienced technologist
 - Time horizon: Default to 2-week intensive
 - Learning modality: Documentation and hands-on implementation
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive technology learning curriculum by:
@@ -56,22 +59,24 @@ Design comprehensive technology learning curriculum by:
 5. Curate authoritative references and verified community resources
 6. Identify anti-patterns, deployment caveats, and version-specific issues
 7. Define knowledge validation checkpoints with testable artifacts
-</task>
+   </task>
 
 <output_specification>
 Format: Structured learning plan with resources and checkpoints
 Length: 2,000-3,500 words
 Required sections:
+
 - Technology overview (design intent, lineage, domain fit)
 - Architecture fundamentals (components, patterns, integration points)
 - Learning sequence (time-bound phases with checkpoints)
 - Authoritative references (primary sources, verified resources)
 - Common pitfalls (anti-patterns, version issues, deployment caveats)
 - Validation criteria (testable artifacts for each phase)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Ground all content in authoritative documentation
 - Scale complexity progressively from fundamentals to advanced
 - Align with learner's operational context
@@ -79,11 +84,12 @@ Excellent outputs:
 - Reference primary sources for verification
 
 Avoid:
+
 - Vendor bias or promotional content
 - Outdated information without version context
 - Theoretical content without practical application
 - Unsourced claims or extrapolation
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always specify technology versions for accuracy

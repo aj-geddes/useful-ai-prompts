@@ -1,6 +1,7 @@
 # Strategic Direction Setting Expert
 
 ## Metadata
+
 - **ID**: `decision-strategic-direction-setting`
 - **Version**: 2.0.0
 - **Category**: Decision-Making/Leadership
@@ -18,6 +19,7 @@ Guide leadership teams through setting strategic direction by analyzing market p
 ## When to Use
 
 **Ideal scenarios:**
+
 - Annual strategic planning processes
 - Major business model decisions or pivots
 - Response to market disruption or competitive threats
@@ -25,6 +27,7 @@ Guide leadership teams through setting strategic direction by analyzing market p
 - Expansion into new markets or segments
 
 **Anti-patterns (when not to use):**
+
 - Tactical planning or operational improvements
 - Short-term decisions with <1 year horizons
 - Budget allocation within existing strategy
@@ -107,42 +110,47 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Mid-size software company, strong in SMB market but growth slowing. Enterprises interested but we lack features. Competitors moving upmarket. Need direction for next 5 years."
 
 ### Output
+
 **Strategic Direction Framework**
 
 **Situation Assessment**
 
-*Current Position*
+_Current Position_
+
 - Market: Strong SMB presence, 15% market share
 - Growth: Slowing from 40% to 15% annually
 - Strength: Product-market fit in SMB, efficient sales motion
 - Gap: Enterprise features, security, compliance, support
 
-*Market Dynamics*
+_Market Dynamics_
+
 - SMB market maturing, price pressure increasing
 - Enterprise buyers seeking alternatives to legacy vendors
 - Competitors investing heavily in upmarket move
 - Platform/ecosystem plays emerging
 
-*Strategic Imperative*: Transform from SMB product company to multi-segment platform before competitive window closes.
+_Strategic Imperative_: Transform from SMB product company to multi-segment platform before competitive window closes.
 
 **Strategic Options Analysis**
 
-| Direction | Description | Opportunity | Risk | Fit |
-|-----------|-------------|-------------|------|-----|
-| **A: Defend SMB** | Double down on SMB with innovation | Lower execution risk | Market ceiling, margin pressure | 6/10 |
-| **B: Enterprise Pivot** | Aggressive move upmarket | Higher revenue per customer | Execution complexity, sales rebuild | 5/10 |
-| **C: Selective Expansion** | Phased upmarket while defending SMB | Balanced growth | Requires dual investment | 8/10 |
+| Direction                  | Description                         | Opportunity                 | Risk                                | Fit  |
+| -------------------------- | ----------------------------------- | --------------------------- | ----------------------------------- | ---- |
+| **A: Defend SMB**          | Double down on SMB with innovation  | Lower execution risk        | Market ceiling, margin pressure     | 6/10 |
+| **B: Enterprise Pivot**    | Aggressive move upmarket            | Higher revenue per customer | Execution complexity, sales rebuild | 5/10 |
+| **C: Selective Expansion** | Phased upmarket while defending SMB | Balanced growth             | Requires dual investment            | 8/10 |
 
 **Recommended Direction: Selective Enterprise Expansion**
 
-*Strategic Vision*: "Become the platform of choice for growing companies from startup to enterprise, enabling seamless scaling without platform migration."
+_Strategic Vision_: "Become the platform of choice for growing companies from startup to enterprise, enabling seamless scaling without platform migration."
 
 **Strategic Pillars**
 
-*Pillar 1: Defend and Grow SMB Core*
+_Pillar 1: Defend and Grow SMB Core_
+
 - Objective: Maintain market share, improve unit economics
 - Initiatives:
   - Product-led growth optimization
@@ -151,7 +159,8 @@ Avoid:
 - Investment: 30% of strategic resources
 - Success Metric: SMB revenue growth 10%+, NRR >110%
 
-*Pillar 2: Build Enterprise Capabilities*
+_Pillar 2: Build Enterprise Capabilities_
+
 - Objective: Close enterprise feature gaps systematically
 - Initiatives:
   - Enterprise security and compliance (SOC2, GDPR)
@@ -161,7 +170,8 @@ Avoid:
 - Investment: 40% of strategic resources
 - Success Metric: Enterprise-ready certification, 20 enterprise deals Year 2
 
-*Pillar 3: Platform Ecosystem*
+_Pillar 3: Platform Ecosystem_
+
 - Objective: Create moat through integrations and partners
 - Initiatives:
   - API and integration platform
@@ -172,27 +182,32 @@ Avoid:
 
 **Implementation Roadmap**
 
-*Year 1: Foundation*
+_Year 1: Foundation_
+
 - Q1-Q2: Security and compliance sprint
 - Q3-Q4: Enterprise sales pilot (5 customers)
 - Parallel: PLG optimization in SMB
 
-*Year 2: Acceleration*
+_Year 2: Acceleration_
+
 - Launch enterprise tier publicly
 - Build professional services team
 - Partner program beta
 
-*Year 3: Scale*
+_Year 3: Scale_
+
 - Full enterprise go-to-market
 - Marketplace launch
 - International expansion
 
-*Year 4-5: Leadership*
+_Year 4-5: Leadership_
+
 - Market leader in mid-market
 - Platform ecosystem mature
 - Enterprise as growth engine
 
 **Resource Requirements**
+
 - Investment: $15M over 3 years
 - Hiring: 40 new roles (sales, customer success, engineering)
 - Technology: $3M platform infrastructure
@@ -206,11 +221,13 @@ Avoid:
 | Gross Margin | 72% | 75% | 78% |
 
 **Risk Management**
+
 - Execution risk: Phased approach, maintain SMB while building enterprise
 - Competitive risk: Speed to enterprise-ready, partnership moat
 - Financial risk: Stage-gated investment based on milestones
 
 ## Related Prompts
+
 - [Go/No-Go Determinations Expert](go-no-go-determinations-expert.md)
 - [Investment Decision Support Expert](investment-decision-support-expert.md)
 - [Stakeholder Impact Analysis Expert](stakeholder-impact-analysis-expert.md)

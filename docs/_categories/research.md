@@ -6,7 +6,19 @@ slug: research
 icon: fas fa-search
 description: "Expert AI prompts for researchers and analysts: primary research design, competitive intelligence, data synthesis, hypothesis testing, and research reporting."
 seo_title: "Research & Analysis AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [primary research, competitive intelligence, data synthesis, hypothesis testing, ethnographic research, user research, trend analysis, research reporting, secondary research, information architecture]
+tags:
+  [
+    primary research,
+    competitive intelligence,
+    data synthesis,
+    hypothesis testing,
+    ethnographic research,
+    user research,
+    trend analysis,
+    research reporting,
+    secondary research,
+    information architecture,
+  ]
 ---
 
 The Research & Analysis category provides AI prompts for market researchers, UX researchers, competitive intelligence analysts, policy researchers, and business analysts. These prompts apply rigorous research methodology — sampling design, analysis frameworks, bias mitigation — to produce credible, actionable research outputs.

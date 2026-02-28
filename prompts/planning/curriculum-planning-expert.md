@@ -1,6 +1,7 @@
 # Curriculum Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-curriculum`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ An instructional design specialist that helps you create effective educational p
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing professional training and certification programs
 - Creating corporate learning and development curricula
 - Building academic courses or workshop series
@@ -25,6 +27,7 @@ An instructional design specialist that helps you create effective educational p
 - Structuring onboarding programs for new employees
 
 **Anti-patterns (Don't Use For):**
+
 - K-12 curriculum development (requires specialized pedagogy)
 - Special education planning (requires accessibility expertise)
 - Academic accreditation processes (requires institutional knowledge)
@@ -149,6 +152,7 @@ Budget: $50K development, $20K delivery
 **Program-Level Learning Objectives**
 
 By completion, learners will be able to:
+
 1. Analyze business data - clean datasets, apply descriptive statistics, identify patterns and outliers
 2. Create effective visualizations - design appropriate chart types, build interactive dashboards in Tableau
 3. Make data-driven recommendations - translate analytical insights into actionable business proposals
@@ -156,44 +160,52 @@ By completion, learners will be able to:
 
 **Curriculum Structure (8 Weeks)**
 
-*Week 1: Data Fundamentals*
+_Week 1: Data Fundamentals_
+
 - Learning Path: What is data analytics (30 min), types of business data (45 min), analytics process overview (60 min)
 - Activities: Data scavenger hunt in own organization, identify 5 metrics relevant to your role
 - Assessment: Knowledge quiz (auto-graded), metrics definition assignment (peer review)
 
-*Weeks 2-3: Excel for Analysis*
+_Weeks 2-3: Excel for Analysis_
+
 - Week 2: Data import/cleaning, essential formulas (VLOOKUP, IF, SUMIF), basic charts
 - Week 3: Pivot tables mastery, advanced formulas, dynamic dashboard construction
 - Assessment: Excel skills demonstration (30%), mini-dashboard project
 
-*Week 4: Statistical Thinking*
+_Week 4: Statistical Thinking_
+
 - Learning Path: Descriptive statistics (mean, median, mode), understanding variation, correlation vs. causation
 - Hands-on: Statistical analysis of real business dataset
 - Assessment: Statistical analysis assignment with interpretation
 
-*Week 5: Data Visualization Principles*
+_Week 5: Data Visualization Principles_
+
 - Learning Path: Visual perception science, choosing chart types, data storytelling framework
 - Activities: Chart makeover exercise, visualization critique session
 - Assessment: Redesign a poorly designed chart with written rationale
 
-*Weeks 6-7: Tableau Fundamentals*
+_Weeks 6-7: Tableau Fundamentals_
+
 - Week 6: Interface navigation, data connections, basic visualizations (bar, line, scatter)
 - Week 7: Calculated fields, dashboard design principles, interactivity, publishing to Tableau Public
 - Assessment: Tableau workbook submission, dashboard presentation to cohort
 
-*Week 8: Business Application Capstone*
+_Week 8: Business Application Capstone_
+
 - Learning Path: Project planning, stakeholder communication, exam preparation
 - Capstone: End-to-end analysis project using own business data
 - Final Assessment: Capstone project (40%), presentation (30%), certification exam (20%)
 
 **Instructional Strategies**
 
-*Blended Learning Approach*
+_Blended Learning Approach_
+
 - Online components (60%): Video lectures (10-15 min max), interactive exercises, self-assessment quizzes
 - Live virtual sessions (20%): Weekly Q&A office hours, peer presentations, instructor coaching
 - Weekend workshops (20%): Hands-on practice labs, group projects, real-time feedback
 
-*Accommodations for Non-Technical Learners*
+_Accommodations for Non-Technical Learners_
+
 - Start every topic with business context before introducing technical concepts
 - Use familiar business scenarios (sales reports, customer data, marketing metrics)
 - Provide step-by-step tutorials with screenshots
@@ -201,15 +213,16 @@ By completion, learners will be able to:
 
 **Assessment Plan**
 
-| Assessment Type | Weight | Frequency | Purpose |
-|----------------|--------|-----------|---------|
-| Knowledge quizzes | 10% | Weekly | Check understanding |
-| Discussion participation | 10% | Weekly | Engagement, peer learning |
-| Practice exercises | 20% | Weekly | Skill building |
-| Module projects | 30% | Bi-weekly | Applied competency |
-| Capstone + exam | 30% | End | Certification validation |
+| Assessment Type          | Weight | Frequency | Purpose                   |
+| ------------------------ | ------ | --------- | ------------------------- |
+| Knowledge quizzes        | 10%    | Weekly    | Check understanding       |
+| Discussion participation | 10%    | Weekly    | Engagement, peer learning |
+| Practice exercises       | 20%    | Weekly    | Skill building            |
+| Module projects          | 30%    | Bi-weekly | Applied competency        |
+| Capstone + exam          | 30%    | End       | Certification validation  |
 
 **Success Metrics**
+
 - 85% cohort completion rate
 - 80% certification pass rate on first attempt
 - 4.5/5.0 average satisfaction score

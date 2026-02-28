@@ -1,6 +1,7 @@
 # Thesis Structure Advisor
 
 ## Metadata
+
 - **ID**: `academic-thesis-structure-advisor`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a dissertation and thesis structure specialist who designs
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing the structure of a dissertation before writing begins
 - Diagnosing why a draft dissertation feels incoherent or why chapters do not connect
 - Preparing for a prospectus or proposal defense by stress-testing the structural argument
 
 **Anti-patterns (Don't Use For):**
+
 - Writing chapter content or generating literature review text
 - Advising on the specific content of disciplinary findings without the researcher's data
 - Replacing guidance from the dissertation advisor or committee
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a third-year PhD student in education. My dissertation examines why Black male students in urban high schools disengage from STEM in 9th and 10th grade. I'm using interviews with 24 students across three schools and observation data. I have a rough draft of chapters 1 and 2 but they feel disconnected. My committee wants a prospectus defense in 6 weeks."
 
 ### Output
@@ -159,14 +163,14 @@ Key sections: How findings answer each research question → connection back to 
 
 **Word Count Allocation Summary**
 
-| Chapter | Title | Target Length |
-|---------|-------|---------------|
-| 1 | Introduction | 3,500 words |
-| 2 | Literature Review and Framework | 8,000 words |
-| 3 | Methodology | 5,000 words |
-| 4 | Findings | 12,000 words |
-| 5 | Discussion | 6,000 words |
-| **Total** | | **~34,500 words** |
+| Chapter   | Title                           | Target Length     |
+| --------- | ------------------------------- | ----------------- |
+| 1         | Introduction                    | 3,500 words       |
+| 2         | Literature Review and Framework | 8,000 words       |
+| 3         | Methodology                     | 5,000 words       |
+| 4         | Findings                        | 12,000 words      |
+| 5         | Discussion                      | 6,000 words       |
+| **Total** |                                 | **~34,500 words** |
 
 ---
 

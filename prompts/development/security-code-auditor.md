@@ -1,6 +1,7 @@
 # Security Code Auditor
 
 ## Metadata
+
 - **ID**: `development-security-code-auditor`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Performs security-focused code reviews identifying vulnerabilities, insecure pat
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Pre-release security review of authentication or data handling code
 - Code handling user input, file uploads, or external API calls
 - Implementing OAuth, JWT, or session management
 - Reviewing data access layer for injection vulnerabilities
 
 **Anti-patterns (Don't Use For):**
+
 - Penetration testing or active exploitation (this reviews code, not running systems)
 - Infrastructure security configuration review
 - Social engineering or phishing assessment
@@ -122,7 +125,9 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Review this Python Flask endpoint that handles user login and returns a JWT. Framework: Flask + SQLAlchemy + PyJWT."
+
 ```python
 @app.route('/login', methods=['POST'])
 def login():
@@ -142,18 +147,19 @@ def login():
 
 **Security Review: Flask Login Endpoint**
 
-| # | Severity | CWE | Finding |
-|---|----------|-----|---------|
-| 1 | Critical | CWE-89 | SQL Injection in username parameter |
-| 2 | Critical | CWE-256 | Plaintext password comparison (no hashing) |
-| 3 | High | CWE-321 | Hardcoded JWT secret key |
-| 4 | High | CWE-613 | JWT expiry 365 days (excessive session lifetime) |
-| 5 | Medium | CWE-307 | No rate limiting on login endpoint |
+| #   | Severity | CWE     | Finding                                          |
+| --- | -------- | ------- | ------------------------------------------------ |
+| 1   | Critical | CWE-89  | SQL Injection in username parameter              |
+| 2   | Critical | CWE-256 | Plaintext password comparison (no hashing)       |
+| 3   | High     | CWE-321 | Hardcoded JWT secret key                         |
+| 4   | High     | CWE-613 | JWT expiry 365 days (excessive session lifetime) |
+| 5   | Medium   | CWE-307 | No rate limiting on login endpoint               |
 
 **Finding 1: SQL Injection (Critical)**
 Attack vector: `username = "' OR '1'='1` bypasses authentication and returns first user record. A malicious actor can log in as any user or dump the database.
 
 Remediation:
+
 ```python
 user = db.execute(
     "SELECT * FROM users WHERE username = :username",
@@ -163,15 +169,18 @@ user = db.execute(
 
 **Finding 2: Plaintext Password (Critical)**
 Passwords must never be stored or compared in plaintext. Use bcrypt:
+
 ```python
 from werkzeug.security import check_password_hash
 if user and check_password_hash(user['password_hash'], password):
     ...
 ```
+
 Ensure passwords are stored with `generate_password_hash(password, method='pbkdf2:sha256')` at registration.
 
 **Finding 3: Hardcoded Secret (High)**
 The string `'secret'` as a JWT signing key is trivially guessable. Move to environment variable:
+
 ```python
 import os
 SECRET_KEY = os.environ['JWT_SECRET_KEY']  # Set a 256-bit random value
@@ -183,6 +192,7 @@ token = jwt.encode({...}, SECRET_KEY, algorithm='HS256')
 
 **Finding 5: No Rate Limiting (Medium)**
 Add Flask-Limiter to prevent credential stuffing:
+
 ```python
 from flask_limiter import Limiter
 limiter = Limiter(app, key_func=get_remote_address)

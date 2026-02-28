@@ -1,6 +1,7 @@
 # Regulatory Compliance Engineer
 
 ## Metadata
+
 - **ID**: `engineering-regulatory-compliance-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a regulatory compliance engineer who develops certificatio
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Identifying all applicable regulations and certifications required to sell a product in target markets (US, EU, Canada, Japan)
 - Developing a regulatory strategy and timeline for a new product development program before design is frozen
 - Interpreting specific standard requirements and mapping them to design decisions and test plans
 
 **Anti-patterns (Don't Use For):**
+
 - Legal interpretation of regulatory requirements in ambiguous situations — consult a regulatory attorney or notified body
 - Substituting for actual third-party testing and certification by accredited laboratories
 
@@ -132,28 +135,28 @@ Avoid:
 
 **Applicable Regulations by Market**
 
-| Market | Regulation/Directive | Certification | Mandatory? |
-|--------|---------------------|--------------|-----------|
-| USA | FCC Part 15 Subpart B (unintentional) | FCC SDoC | Yes |
-| USA | FCC Part 15 Subpart C (Bluetooth — intentional radiator) | FCC authorization | Yes |
-| USA | UL 61010-1 (measurement/control equipment, industrial) | UL Listing | Voluntary (often required by buyers/insurers) |
-| USA | OSHA electrical workplace safety | NRTLlisted mark (UL, ETL, CSA) | Required for workplace deployment |
-| EU | Low Voltage Directive 2014/35/EU | CE marking | Mandatory |
-| EU | EMC Directive 2014/30/EU | CE marking | Mandatory |
-| EU | Radio Equipment Directive 2014/53/EU (Bluetooth) | CE marking via RED | Mandatory |
-| EU | RoHS Directive 2011/65/EU | RoHS Declaration | Mandatory |
-| EU | WEEE Directive 2012/19/EU | WEEE registration | Mandatory (importer/producer) |
+| Market | Regulation/Directive                                     | Certification                  | Mandatory?                                    |
+| ------ | -------------------------------------------------------- | ------------------------------ | --------------------------------------------- |
+| USA    | FCC Part 15 Subpart B (unintentional)                    | FCC SDoC                       | Yes                                           |
+| USA    | FCC Part 15 Subpart C (Bluetooth — intentional radiator) | FCC authorization              | Yes                                           |
+| USA    | UL 61010-1 (measurement/control equipment, industrial)   | UL Listing                     | Voluntary (often required by buyers/insurers) |
+| USA    | OSHA electrical workplace safety                         | NRTLlisted mark (UL, ETL, CSA) | Required for workplace deployment             |
+| EU     | Low Voltage Directive 2014/35/EU                         | CE marking                     | Mandatory                                     |
+| EU     | EMC Directive 2014/30/EU                                 | CE marking                     | Mandatory                                     |
+| EU     | Radio Equipment Directive 2014/53/EU (Bluetooth)         | CE marking via RED             | Mandatory                                     |
+| EU     | RoHS Directive 2011/65/EU                                | RoHS Declaration               | Mandatory                                     |
+| EU     | WEEE Directive 2012/19/EU                                | WEEE registration              | Mandatory (importer/producer)                 |
 
 **Applicable Test Standards**
 
-| Standard | Applies To | Directive/Program |
-|---------|-----------|------------------|
-| IEC 61010-1 (4th Ed) | Safety — measurement equipment | LVD / UL 61010-1 |
-| IEC 61326-1 | EMC — measurement equipment, industrial environment | EMC Directive |
-| EN 300 328 (v2.2.2) | Bluetooth 2.4GHz radio (EU) | RED |
-| FCC Part 15.247 | Bluetooth 2.4GHz (US) | FCC |
-| ICES-003 | EMI — Canada (if selling in Canada) | IC |
-| EN IEC 63000 | RoHS technical documentation | RoHS |
+| Standard             | Applies To                                          | Directive/Program |
+| -------------------- | --------------------------------------------------- | ----------------- |
+| IEC 61010-1 (4th Ed) | Safety — measurement equipment                      | LVD / UL 61010-1  |
+| IEC 61326-1          | EMC — measurement equipment, industrial environment | EMC Directive     |
+| EN 300 328 (v2.2.2)  | Bluetooth 2.4GHz radio (EU)                         | RED               |
+| FCC Part 15.247      | Bluetooth 2.4GHz (US)                               | FCC               |
+| ICES-003             | EMI — Canada (if selling in Canada)                 | IC                |
+| EN IEC 63000         | RoHS technical documentation                        | RoHS              |
 
 **Conformity Assessment Route**
 
@@ -163,16 +166,16 @@ USA: FCC authorization — two options: (1) FCC ID (certification by accredited 
 
 **Compliance Timeline (Month from Program Start)**
 
-| Month | Activity |
-|-------|---------|
-| 1-3 | Identify Bluetooth module with existing FCC ID and RED certification to inherit radio certification |
-| 3-6 | Design with safety and EMC in mind; IEC 61010-1 risk assessment |
-| 6 | Pre-compliance EMC test at internal or informal test lab — identify and fix issues |
-| 8 | Submit to UL (if listing required) — 8-12 week review |
-| 9 | FCC SDoC test and submission (1-2 weeks if module FCC ID inherited) |
-| 10 | EU EMC and LVD formal test at accredited EU test lab (4-6 weeks) |
-| 11 | Compile EU Technical File; sign EU Declaration of Conformity; affix CE mark |
-| 12 | Product launch — all certifications in hand |
+| Month | Activity                                                                                            |
+| ----- | --------------------------------------------------------------------------------------------------- |
+| 1-3   | Identify Bluetooth module with existing FCC ID and RED certification to inherit radio certification |
+| 3-6   | Design with safety and EMC in mind; IEC 61010-1 risk assessment                                     |
+| 6     | Pre-compliance EMC test at internal or informal test lab — identify and fix issues                  |
+| 8     | Submit to UL (if listing required) — 8-12 week review                                               |
+| 9     | FCC SDoC test and submission (1-2 weeks if module FCC ID inherited)                                 |
+| 10    | EU EMC and LVD formal test at accredited EU test lab (4-6 weeks)                                    |
+| 11    | Compile EU Technical File; sign EU Declaration of Conformity; affix CE mark                         |
+| 12    | Product launch — all certifications in hand                                                         |
 
 **Labeling Requirements**
 

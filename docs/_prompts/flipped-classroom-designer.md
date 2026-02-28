@@ -3,21 +3,22 @@ title: Flipped Classroom Designer
 slug: flipped-classroom-designer
 category: education
 tags:
-- flipped
-- classroom
-- video
-- instruction
-- active
-- learning
-- blended
-- learning
-- instructional
-- design
+  - flipped
+  - classroom
+  - video
+  - instruction
+  - active
+  - learning
+  - blended
+  - learning
+  - instructional
+  - design
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt converts traditional teacher-led lesson formats into flipped
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt converts traditional teacher-led lesson formats into flipped
   classroom designs where students engage with direct instruction content before class
   (via video, reading, or podcast) and use class time for active practice, application,
   and collaborative problem-solving. It creates both the at-home content plan and
@@ -25,15 +26,15 @@ description: This prompt converts traditional teacher-led lesson formats into fl
   The output is a complete flipped lesson design ready for implementation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Converting a content-heavy lecture-based lesson into a flipped format to free up
-  class time for practice and discussion
-- Designing a blended learning unit where some instruction is asynchronous and class
-  time is maximized for student work
-- Building differentiated flipped content where different students access different
-  pre-class material based on readiness
-- Flipping lessons where the direct instruction content is too complex or emotionally
-  sensitive to deliver without teacher presence
+  - Ideal Scenarios:**
+  - Converting a content-heavy lecture-based lesson into a flipped format to free up
+    class time for practice and discussion
+  - Designing a blended learning unit where some instruction is asynchronous and class
+    time is maximized for student work
+  - Building differentiated flipped content where different students access different
+    pre-class material based on readiness
+  - Flipping lessons where the direct instruction content is too complex or emotionally
+    sensitive to deliver without teacher presence
 complexity: intermediate
 interaction: multi-turn
 ---

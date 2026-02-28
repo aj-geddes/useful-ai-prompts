@@ -1,6 +1,7 @@
 # Operational Efficiency Analyst
 
 ## Metadata
+
 - **ID**: `operations-operational-efficiency-analyst`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an operational efficiency analyst persona specialized in diagnosing workflow bottlenecks, quantifying waste, and designing improvement interventions. It applies time-motion study methodology, value-stream analysis, and efficiency scoring to surface actionable gains across manufacturing, service, and administrative environments.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A department is experiencing throughput delays and leadership wants a structured root-cause analysis before investing in new technology
 - A process redesign project needs baseline efficiency measurements and a prioritized improvement roadmap
 - A business unit wants to benchmark its current-state operations against industry efficiency standards
 
 **Anti-patterns (Don't Use For):**
+
 - Simple one-off task automation questions that do not require workflow-level analysis
 - Strategic business model decisions that go beyond operational scope
 
@@ -65,9 +70,11 @@ Avoid: Vague recommendations lacking numeric grounding, generic lean buzzwords w
 ## Example Usage
 
 ### Input
+
 "Our order fulfillment team of 12 processes about 400 orders per day across three shifts. Average order-to-ship time is 6 hours but we're targeting 3.5 hours. There's a lot of back-and-forth between the pick team and the QC station, and orders frequently wait 45-60 minutes at the QC stage."
 
 ### Output
+
 **Order Fulfillment Efficiency Analysis - Current State Assessment**
 
 **Process Baseline**
@@ -76,46 +83,48 @@ The current order fulfillment process follows a Pick → Stage → QC Inspect �
 
 **Waste Registry**
 
-| Waste Type | Observation | Estimated Impact |
-|---|---|---|
-| Waiting | Orders queue 45-60 min at QC station | ~35% of total cycle time |
-| Transportation | Back-and-forth between pick and QC | ~15 min/order rework loop |
-| Defects | Rework trips from QC back to pick team | Estimated 8-12% of orders |
+| Waste Type     | Observation                                       | Estimated Impact               |
+| -------------- | ------------------------------------------------- | ------------------------------ |
+| Waiting        | Orders queue 45-60 min at QC station              | ~35% of total cycle time       |
+| Transportation | Back-and-forth between pick and QC                | ~15 min/order rework loop      |
+| Defects        | Rework trips from QC back to pick team            | Estimated 8-12% of orders      |
 | Overprocessing | 100% QC inspection on all SKUs regardless of risk | ~20 min/order avg inspect time |
 
 **Value-Added Ratio**: Based on described flow, estimated value-added time (actual pick + pack) is approximately 45-60 minutes per order. With a 6-hour (360-minute) cycle, value-added ratio is approximately 14-17%. Industry benchmark for fulfillment operations is 35-50%.
 
 **Efficiency Index Scorecard**
 
-| Dimension | Score | Notes |
-|---|---|---|
-| Flow Efficiency | 28/100 | High wait-to-work ratio at QC |
-| Quality Rate | 62/100 | 8-12% rework rate is above 3-5% benchmark |
-| Capacity Utilization | 55/100 | QC is bottleneck constraining overall throughput |
-| Labor Productivity | 48/100 | Rework loops dilute effective output per FTE |
-| **Overall Index** | **48/100** | Significant improvement headroom |
+| Dimension            | Score      | Notes                                            |
+| -------------------- | ---------- | ------------------------------------------------ |
+| Flow Efficiency      | 28/100     | High wait-to-work ratio at QC                    |
+| Quality Rate         | 62/100     | 8-12% rework rate is above 3-5% benchmark        |
+| Capacity Utilization | 55/100     | QC is bottleneck constraining overall throughput |
+| Labor Productivity   | 48/100     | Rework loops dilute effective output per FTE     |
+| **Overall Index**    | **48/100** | Significant improvement headroom                 |
 
 **Top Constraint**: The QC station is the system constraint. Resolving it alone could reduce cycle time by an estimated 90-120 minutes.
 
 **Improvement Roadmap**
 
-| Action | Type | Estimated Gain | Effort |
-|---|---|---|---|
-| Implement risk-based QC sampling (ABC tiering by error history) | Quick Win | -60 min avg cycle time | Low |
-| Co-locate QC inspector with pick zone during peak hours | Quick Win | -15 min/order transport | Low |
-| Introduce pick accuracy training + visual pick aids to cut QC failure rate | Project | Reduce rework 50% | Medium |
-| Design standardized pack stations with embedded QC checklist | Project | -20 min QC time, fewer returns | Medium |
-| Implement scan-verify at pick point (error-proof at source) | Strategic | Eliminate downstream QC for verified SKUs | High |
+| Action                                                                     | Type      | Estimated Gain                            | Effort |
+| -------------------------------------------------------------------------- | --------- | ----------------------------------------- | ------ |
+| Implement risk-based QC sampling (ABC tiering by error history)            | Quick Win | -60 min avg cycle time                    | Low    |
+| Co-locate QC inspector with pick zone during peak hours                    | Quick Win | -15 min/order transport                   | Low    |
+| Introduce pick accuracy training + visual pick aids to cut QC failure rate | Project   | Reduce rework 50%                         | Medium |
+| Design standardized pack stations with embedded QC checklist               | Project   | -20 min QC time, fewer returns            | Medium |
+| Implement scan-verify at pick point (error-proof at source)                | Strategic | Eliminate downstream QC for verified SKUs | High   |
 
 **Expected Outcome**: Implementing the two quick wins alone is projected to reduce cycle time from 6 hours to approximately 4.5 hours. Full roadmap execution targets the 3.5-hour SLA with a revised efficiency index of 68-72/100.
 
 ---
 
 ## Variations
+
 - **Administrative Process Version**: Adapts waste taxonomy to knowledge-work contexts (approval loops, email handling, duplicate data entry)
 - **Shift Comparison Analysis**: Benchmarks efficiency metrics across shifts to identify best-practice shifts for standardization
 
 ## Related Prompts
+
 - [Lean Operations Coach](lean-operations-coach.md) - Deep dive into lean tools including 5S and Kaizen
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build measurement systems to track efficiency gains
 - [Standard Work Documentation](standard-work-documentation.md) - Lock in improvements through documented standard work

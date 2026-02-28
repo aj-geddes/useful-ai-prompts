@@ -1,6 +1,7 @@
 # Technology Learning Framework (Advanced)
 
 ## Metadata
+
 - **ID**: `research-tech-learning-advanced`
 - **Version**: 1.0.0
 - **Category**: Research/Education
@@ -18,12 +19,14 @@ Create structured, source-driven learning curricula for experienced professional
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Senior engineers evaluating new technologies for adoption
 - Architects conducting technology assessments
 - Technical leads preparing team training programs
 - Specialists expanding into adjacent technology domains
 
 **Anti-Patterns (Do Not Use For):**
+
 - Complete beginners needing fundamentals
 - Casual exploration without specific goals
 - Non-technical audiences requiring accessible explanations
@@ -105,9 +108,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Teach me OpenTelemetry for distributed systems observability. I'm a senior SRE with strong Prometheus/Grafana experience. Goal is to implement tracing across our microservices in Kubernetes. I have 3 weeks and prefer hands-on learning with official docs."
 
 ### Output
+
 **OpenTelemetry Learning Curriculum: Advanced SRE Track**
 
 **Technology Overview**
@@ -119,15 +124,16 @@ Domain fit: Microservices architectures requiring correlation of telemetry acros
 
 **Architecture Fundamentals**
 
-| Component | Purpose | Your Context |
-|-----------|---------|--------------|
-| SDK | Instrumentation library | Per-service integration |
-| Collector | Telemetry pipeline | Centralized processing in K8s |
-| OTLP | Wire protocol | Backend-agnostic export |
-| Semantic Conventions | Attribute standards | Consistent telemetry schema |
+| Component            | Purpose                 | Your Context                  |
+| -------------------- | ----------------------- | ----------------------------- |
+| SDK                  | Instrumentation library | Per-service integration       |
+| Collector            | Telemetry pipeline      | Centralized processing in K8s |
+| OTLP                 | Wire protocol           | Backend-agnostic export       |
+| Semantic Conventions | Attribute standards     | Consistent telemetry schema   |
 
 **Prometheus Integration Path**
 OTel Collector can export metrics in Prometheus format, enabling gradual migration:
+
 1. Add OTel instrumentation alongside existing Prometheus client
 2. Configure Collector to export in Prometheus exposition format
 3. Migrate dashboards to use OTel metric names
@@ -136,30 +142,35 @@ OTel Collector can export metrics in Prometheus format, enabling gradual migrati
 **3-Week Learning Sequence**
 
 **Week 1: Foundations (10 hours)**
+
 - Day 1-2: OTel concepts, architecture, semantic conventions
 - Day 3-4: SDK instrumentation in primary language (Go/Python/Java)
 - Day 5: Local Collector deployment and configuration
 - Checkpoint: Instrumented "hello world" with traces exported to Jaeger
 
 **Week 2: Production Patterns (12 hours)**
+
 - Day 1-2: Kubernetes Operator deployment, auto-instrumentation
 - Day 3-4: Collector pipeline configuration (processors, exporters)
 - Day 5: Context propagation across service boundaries
 - Checkpoint: Multi-service trace correlation in staging environment
 
 **Week 3: Integration & Operations (10 hours)**
+
 - Day 1-2: Prometheus metrics bridge configuration
 - Day 3-4: Grafana Tempo integration, trace-to-logs correlation
 - Day 5: Production rollout planning, sampling strategies
 - Checkpoint: Production-ready observability stack with documented runbook
 
 **Authoritative References**
+
 - [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
 - [OTel Collector Configuration](https://opentelemetry.io/docs/collector/configuration/)
 - [Kubernetes Operator](https://github.com/open-telemetry/opentelemetry-operator)
 - [Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/)
 
 **Common Pitfalls**
+
 1. Over-instrumentation leading to trace explosion (use sampling)
 2. Missing context propagation headers in async calls
 3. Collector resource limits causing dropped spans
@@ -168,6 +179,7 @@ OTel Collector can export metrics in Prometheus format, enabling gradual migrati
 ---
 
 ## Related Prompts
+
 - [Technology Learning (Beginner)](teach-me-beginner.md)
 - [Technology Learning (Intermediate)](teach-me-journeyman.md)
 - [Technology Assessment Expert](../research-workflows/technology-assessment-expert.md)

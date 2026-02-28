@@ -1,6 +1,7 @@
 # Stress Management Strategist
 
 ## Metadata
+
 - **ID**: `productivity-stress-management`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A stress management specialist that helps you identify stress sources, build res
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Experiencing chronic work or life stress affecting performance
 - Building proactive stress resilience and coping strategies
 - Preventing burnout through sustainable stress management
@@ -25,6 +27,7 @@ A stress management specialist that helps you identify stress sources, build res
 - Recovering from periods of high stress or overwhelm
 
 **Anti-Patterns (Don't Use For):**
+
 - Clinical anxiety or depression requiring professional treatment
 - Crisis intervention or emergency mental health situations
 - Medical stress conditions (chronic fatigue, adrenal issues)
@@ -121,6 +124,7 @@ Create a comprehensive stress management strategy following these steps:
 ## Example Usage
 
 ### Input
+
 Main stressors: Work deadlines, financial pressures, aging parents' health. Current stress level: 7-8/10 most days. Symptoms: tight shoulders, headaches, insomnia, irritability. Impact: poor sleep (5-6 hours), snapping at partner, missing deadlines. Current coping: long showers, weekend Netflix binges, occasional wine. I handle crisis situations well but struggle with ongoing uncertainty.
 
 ### Output
@@ -131,27 +135,29 @@ Your pattern shows high sustained load with depleted coping resources. You're st
 
 **Stress Source Analysis**
 
-| Category | High Control | Moderate Control | Low Control |
-|----------|--------------|------------------|-------------|
-| Work | Response to stress, boundary setting | Some deadline management | Boss's style, workload |
-| Family | Schedule, self-care routines | Parent care coordination | Parents' health outcomes |
-| Personal | Sleep, exercise, coping choices | Financial planning | Economic factors |
+| Category | High Control                         | Moderate Control         | Low Control              |
+| -------- | ------------------------------------ | ------------------------ | ------------------------ |
+| Work     | Response to stress, boundary setting | Some deadline management | Boss's style, workload   |
+| Family   | Schedule, self-care routines         | Parent care coordination | Parents' health outcomes |
+| Personal | Sleep, exercise, coping choices      | Financial planning       | Economic factors         |
 
-*Strategy Implication:* Focus 80% of effort on high-control areas for maximum impact
+_Strategy Implication:_ Focus 80% of effort on high-control areas for maximum impact
 
 **Early Warning System**
 
-*Yellow Zone (Stress Building):*
+_Yellow Zone (Stress Building):_
 Signs: Feeling rushed, skipping meals, shorter patience
 Actions:
+
 - 5-minute breathing before stressful activities
 - Lower dinner expectations (takeout is okay)
 - Ask for help with one task
 - Earlier bedtime by 30 minutes
 
-*Red Zone (Overwhelm Imminent):*
+_Red Zone (Overwhelm Imminent):_
 Signs: Snappy with loved ones, sleep disrupted, physical symptoms
 Actions:
+
 - Inform trusted friend or partner
 - Take personal day if possible
 - Lower all non-essential standards
@@ -159,40 +165,46 @@ Actions:
 
 **Immediate Relief Toolkit**
 
-*Crisis Mode - 60 Seconds (When overwhelmed):*
+_Crisis Mode - 60 Seconds (When overwhelmed):_
+
 1. STOP: Pause all activity
 2. BREATHE: Box breathing (4 counts in, hold 4, out 4, hold 4)
 3. ASSESS: "What specifically am I stressed about right now?"
 4. PRIORITIZE: "What's the one most important thing?"
 5. ACTION: Take one small step
 
-*5-Minute Recovery Options:*
+_5-Minute Recovery Options:_
+
 - Bathroom break with 10 deep breaths
 - Walk around building or parking lot
 - Desk stretches for neck and shoulders
 - Listen to calming music with eyes closed
 - Splash cold water on face and wrists
 
-*15-Minute Reset:*
+_15-Minute Reset:_
+
 - Brief walk outside (even 10 minutes helps)
 - Guided meditation app session
 - Call supportive friend or family member
 
 **Daily Stress Prevention Routine**
 
-*Morning (15 min):*
+_Morning (15 min):_
+
 - Wake 15 minutes earlier to avoid rushing
 - 5 minutes gentle movement or stretching
 - Set positive intention for the day
 - Avoid news/social media until after work commute
 
-*Workday Boundaries:*
+_Workday Boundaries:_
+
 - Check email only 3 times daily (9 AM, 1 PM, 5 PM)
 - Take 5-minute break every 90 minutes
 - Eat lunch away from desk
 - One task at a time - close extra tabs
 
-*Evening Transition:*
+_Evening Transition:_
+
 - Physical transition activity (walk, shower, change clothes)
 - Vent to partner for maximum 10 minutes, then shift focus
 - Relaxing activity 1 hour before bed
@@ -200,16 +212,19 @@ Actions:
 
 **Boundary Setting Scripts**
 
-*Work Boundaries:*
+_Work Boundaries:_
+
 - "I can address this first thing tomorrow morning"
 - "Let me check my capacity and get back to you by end of day"
 - "I'm focused on [priority] this week - can this wait until next week?"
 
-*Family Boundaries:*
+_Family Boundaries:_
+
 - "I'm available to discuss this on Saturday afternoon"
 - "I need 30 minutes to decompress before we talk about this"
 
-*General Protection:*
+_General Protection:_
+
 - "I need to think about this before committing"
 - "That doesn't work for my schedule right now"
 
@@ -229,31 +244,34 @@ Actions:
 
 **Long-term Resilience System**
 
-*Monthly Stress Assessment:*
+_Monthly Stress Assessment:_
+
 - Rate overall stress level and compare to previous month
 - Identify new or intensifying stressors
 - Evaluate which coping strategies are working
 - Adjust plan based on patterns
 
-*Professional Support:*
+_Professional Support:_
 Consider adding:
+
 - Regular therapy or counseling (monthly or bi-weekly)
 - Annual physical including stress-related markers
 - Career coaching if work stress is primary driver
 
 **Weekly Success Metrics**
 
-| Metric | Target | Track |
-|--------|--------|-------|
-| Sleep hours | 7+ hours | Daily |
-| Stress level | 5-6/10 or below | Daily |
-| Boundary maintained | Yes/No | Daily |
-| Recovery activity | At least 1 | Daily |
-| Exercise | 3x per week | Weekly |
+| Metric              | Target          | Track  |
+| ------------------- | --------------- | ------ |
+| Sleep hours         | 7+ hours        | Daily  |
+| Stress level        | 5-6/10 or below | Daily  |
+| Boundary maintained | Yes/No          | Daily  |
+| Recovery activity   | At least 1      | Daily  |
+| Exercise            | 3x per week     | Weekly |
 
 ---
 
 ## Related Prompts
+
 - [Work-Life Balance Optimizer](work-life-balance-optimizer.md) - For boundary setting and integration
 - [Resilience Building Expert](../personal-growth/resilience-building-expert.md) - For long-term resilience development
 - [Sleep Quality Optimizer](../health-wellness/sleep-quality-optimizer.md) - For improving sleep patterns

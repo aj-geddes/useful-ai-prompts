@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement error tracking with Sentry for automatic exception monitoring,
+date: "2025-01-01"
+description:
+  Implement error tracking with Sentry for automatic exception monitoring,
   release tracking, and performance issues. Use when setting up error monitoring,
   tracking bugs in production, or analyzing application stability.
 layout: skill
 slug: error-tracking
 tags:
-- development
+  - development
 title: error-tracking
 ---
 
@@ -44,21 +45,18 @@ const Tracing = require("@sentry/tracing");
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN,
-  environment: process.env.NODE_ENV || 'development',
-  tracesSampleRate: process.env.NODE_ENV === 'production' ? 0.1 : 1.0,
-  release: process.env.APP_VERSION || '1.0.0',
+  environment: process.env.NODE_ENV || "development",
+  tracesSampleRate: process.env.NODE_ENV === "production" ? 0.1 : 1.0,
+  release: process.env.APP_VERSION || "1.0.0",
   integrations: [
     new Sentry.Integrations.Http({ tracing: true }),
     new Tracing.Integrations.Express({
       app: true,
       request: true,
-      transaction: true
-    })
+      transaction: true,
+    }),
   ],
-  ignoreErrors: [
-    'Network request failed',
-    'TimeoutError'
-  ]
+  ignoreErrors: ["Network request failed", "TimeoutError"],
 });
 
 module.exports = Sentry;
@@ -68,46 +66,46 @@ module.exports = Sentry;
 
 ```javascript
 // app.js
-const express = require('express');
-const Sentry = require('./sentry');
+const express = require("express");
+const Sentry = require("./sentry");
 
 const app = express();
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
 
-app.get('/api/users/:id', (req, res) => {
+app.get("/api/users/:id", (req, res) => {
   const transaction = Sentry.startTransaction({
-    name: 'get_user',
-    op: 'http.server'
+    name: "get_user",
+    op: "http.server",
   });
 
   try {
     const userId = req.params.id;
 
-    Sentry.captureMessage('Fetching user', {
-      level: 'info',
-      tags: { userId: userId }
+    Sentry.captureMessage("Fetching user", {
+      level: "info",
+      tags: { userId: userId },
     });
 
     const user = db.query(`SELECT * FROM users WHERE id = ${userId}`);
 
     if (!user) {
-      Sentry.captureException(new Error('User not found'), {
-        level: 'warning',
-        contexts: { request: { userId } }
+      Sentry.captureException(new Error("User not found"), {
+        level: "warning",
+        contexts: { request: { userId } },
       });
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({ error: "User not found" });
     }
 
-    transaction.setTag('user.id', user.id);
+    transaction.setTag("user.id", user.id);
     res.json(user);
   } catch (error) {
     Sentry.captureException(error, {
-      level: 'error',
-      tags: { endpoint: 'get_user', userId: req.params.id }
+      level: "error",
+      tags: { endpoint: "get_user", userId: req.params.id },
     });
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   } finally {
     transaction.finish();
   }
@@ -173,19 +171,19 @@ def get_order(order_id):
 
 ```javascript
 // webpack.config.js
-const SentryCliPlugin = require('@sentry/webpack-plugin');
+const SentryCliPlugin = require("@sentry/webpack-plugin");
 
 module.exports = {
   plugins: [
     new SentryCliPlugin({
-      include: './dist',
-      urlPrefix: 'https://example.com/',
-      release: process.env.APP_VERSION || '1.0.0',
+      include: "./dist",
+      urlPrefix: "https://example.com/",
+      release: process.env.APP_VERSION || "1.0.0",
       org: process.env.SENTRY_ORG,
       project: process.env.SENTRY_PROJECT,
-      authToken: process.env.SENTRY_AUTH_TOKEN
-    })
-  ]
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+    }),
+  ],
 };
 ```
 
@@ -212,37 +210,37 @@ sentry-cli releases -o my-org -p my-project deploys $VERSION new -e production
 
 ```javascript
 // custom-error-context.js
-const Sentry = require('@sentry/node');
+const Sentry = require("@sentry/node");
 
-Sentry.configureScope(scope => {
+Sentry.configureScope((scope) => {
   scope.setUser({
     id: userId,
     email: userEmail,
-    subscription: 'pro'
+    subscription: "pro",
   });
 
-  scope.setTag('feature_flag', 'new-ui');
-  scope.setTag('database', 'postgres-v12');
+  scope.setTag("feature_flag", "new-ui");
+  scope.setTag("database", "postgres-v12");
 
-  scope.setContext('character', {
-    name: 'Mighty Fighter',
-    level: 19
-  });
-
-  scope.addBreadcrumb({
-    category: 'ui.click',
-    message: 'User clicked signup button',
-    level: 'info'
+  scope.setContext("character", {
+    name: "Mighty Fighter",
+    level: 19,
   });
 
   scope.addBreadcrumb({
-    category: 'database',
-    message: 'Query executed',
-    level: 'debug',
+    category: "ui.click",
+    message: "User clicked signup button",
+    level: "info",
+  });
+
+  scope.addBreadcrumb({
+    category: "database",
+    message: "Query executed",
+    level: "debug",
     data: {
-      query: 'SELECT * FROM users',
-      duration: 125
-    }
+      query: "SELECT * FROM users",
+      duration: 125,
+    },
   });
 });
 
@@ -252,10 +250,10 @@ Sentry.init({
   beforeSend(event, hint) {
     if (event.request) {
       delete event.request.cookies;
-      delete event.request.headers['authorization'];
+      delete event.request.headers["authorization"];
     }
     return event;
-  }
+  },
 });
 ```
 
@@ -263,35 +261,36 @@ Sentry.init({
 
 ```javascript
 // performance.js
-const Sentry = require('@sentry/node');
+const Sentry = require("@sentry/node");
 
 const transaction = Sentry.startTransaction({
-  name: 'process_order',
-  op: 'task',
-  data: { orderId: '12345' }
+  name: "process_order",
+  op: "task",
+  data: { orderId: "12345" },
 });
 
 const dbSpan = transaction.startChild({
-  op: 'db',
-  description: 'Save order to database'
+  op: "db",
+  description: "Save order to database",
 });
 saveOrderToDb(order);
 dbSpan.finish();
 
 const paymentSpan = transaction.startChild({
-  op: 'http.client',
-  description: 'Process payment'
+  op: "http.client",
+  description: "Process payment",
 });
 processPayment(order);
 paymentSpan.finish();
 
-transaction.setStatus('ok');
+transaction.setStatus("ok");
 transaction.finish();
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Set up source maps for production
 - Configure appropriate sample rates
 - Track releases and deployments
@@ -302,6 +301,7 @@ transaction.finish();
 - Review error patterns regularly
 
 ### ❌ DON'T
+
 - Send 100% of errors in production
 - Include passwords in context
 - Ignore configuration for environment

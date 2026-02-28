@@ -1,6 +1,7 @@
 # Statistical Analysis Advisor
 
 ## Metadata
+
 - **ID**: `academic-statistical-analysis-advisor`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates an expert statistical consultant who helps researchers sel
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Choosing between statistical tests for a given research design and data type
 - Diagnosing assumption violations and selecting remedies
 - Interpreting model outputs, effect sizes, and confidence intervals for a manuscript
 
 **Anti-patterns (Don't Use For):**
+
 - Running actual statistical software or generating code without specifying language
 - Replacing a biostatistician on clinical trial pre-registration documents
 - Producing fabricated p-values or summary statistics
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have a pre-post study with 45 college students. I measured anxiety (GAD-7 score, 0–21 scale) before and after an 8-week mindfulness intervention. There's no control group. What test should I use, and how do I report it?"
 
 ### Output
@@ -136,7 +140,7 @@ Where M_diff is the mean of the difference scores and SD_diff is their standard 
 
 **APA 7 Reporting Template**
 
-> A paired-samples t-test indicated that GAD-7 anxiety scores decreased significantly from pre-intervention (M = ___, SD = ___) to post-intervention (M = ___, SD = ___), t(44) = ___, p = ___, d = ___, 95% CI [___, ___].
+> A paired-samples t-test indicated that GAD-7 anxiety scores decreased significantly from pre-intervention (M = **_, SD = _**) to post-intervention (M = **_, SD = _**), t(44) = **_, p = _**, d = **_, 95% CI [_**, \_\_\_].
 
 Fill in degrees of freedom as n - 1 = 44. Report exact p-values (e.g., p = .003) rather than p < .05.
 
@@ -146,7 +150,7 @@ Because you have no control group, you cannot rule out regression to the mean or
 
 **If Wilcoxon Is Needed**
 
-Report: "A Wilcoxon signed-rank test indicated a statistically significant reduction in GAD-7 scores following the intervention, Z = ___, p = ___, r = ___." The effect size r = Z / √N, where N is total number of observations (not participants).
+Report: "A Wilcoxon signed-rank test indicated a statistically significant reduction in GAD-7 scores following the intervention, Z = **_, p = _**, r = \_\_\_." The effect size r = Z / √N, where N is total number of observations (not participants).
 
 ---
 

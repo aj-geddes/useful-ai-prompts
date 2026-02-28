@@ -5,7 +5,19 @@ category: supply-chain
 slug: supply-chain
 icon: fas fa-truck
 description: "Supply chain optimization prompts for logistics management, inventory control, demand forecasting, and resilience strategy."
-tags: [supply chain, logistics, inventory management, demand forecasting, procurement, warehouse optimization, distribution, resilience, supplier management, transportation]
+tags:
+  [
+    supply chain,
+    logistics,
+    inventory management,
+    demand forecasting,
+    procurement,
+    warehouse optimization,
+    distribution,
+    resilience,
+    supplier management,
+    transportation,
+  ]
 ---
 
 The Supply Chain category delivers comprehensive prompts for supply chain professionals, logistics managers, and operations directors. These prompts focus on end-to-end supply chain optimization, risk management, and digital transformation.

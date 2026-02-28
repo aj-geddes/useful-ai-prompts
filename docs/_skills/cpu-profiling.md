@@ -1,12 +1,13 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Profile CPU usage to identify hot spots and bottlenecks. Optimize code
+date: "2025-01-01"
+description:
+  Profile CPU usage to identify hot spots and bottlenecks. Optimize code
   paths consuming most CPU time for better performance and resource efficiency.
 layout: skill
 slug: cpu-profiling
 tags:
-- development
+  - development
 title: cpu-profiling
 ---
 

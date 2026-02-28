@@ -3,28 +3,29 @@ title: Negotiation Preparation Expert
 slug: negotiation-preparation-expert
 category: communication
 tags:
-- negotiation
-- deal-making
-- conflict
-- resolution
-- strategic
-- communication
-- BATNA
+  - negotiation
+  - deal-making
+  - conflict
+  - resolution
+  - strategic
+  - communication
+  - BATNA
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Prepares for high-stakes negotiations through strategic planning, BATNA
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Prepares for high-stakes negotiations through strategic planning, BATNA
   analysis, and scenario preparation. Combines negotiation theory with practical tactics
   to develop winning strategies for contracts, partnerships, salary discussions, and
   complex business negotiations.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for contract negotiations with vendors or clients
-- Planning partnership or merger discussions
-- Resolving disputes or conflicts through negotiation
-- Salary or compensation negotiations
+  - Ideal scenarios:**
+  - Preparing for contract negotiations with vendors or clients
+  - Planning partnership or merger discussions
+  - Resolving disputes or conflicts through negotiation
+  - Salary or compensation negotiations
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,18 +40,20 @@ Successful negotiations require understanding both parties' interests, calculati
 
 <input_handling>
 Required inputs:
+
 - What you are negotiating (subject matter)
 - What is at stake for both parties
 - Your ideal outcome and walk-away point
 - Background on the other party
 
 Optional inputs (will use defaults if not provided):
+
 - Negotiation style (default: collaborative with firm boundaries)
 - BATNA details (default: will help analyze alternatives)
 - Preparation timeline (default: 1 week before negotiation)
 - Relationship importance post-negotiation
 - Known constraints or limitations
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive negotiation preparation package through these steps:
@@ -61,12 +64,13 @@ Create a comprehensive negotiation preparation package through these steps:
 4. **Create scenario responses and counter-moves** - Prepare responses for likely objections and tactics
 5. **Build concession strategy and trade-offs** - Identify what you can trade and the sequence of concessions
 6. **Prepare closing techniques and agreement framework** - Define how to close the deal and document the agreement
-</task>
+   </task>
 
 <output_specification>
 Format: Strategic negotiation preparation package
 Length: 700-1000 words
 Structure:
+
 - Leverage analysis (your position and theirs)
 - BATNA analysis with calculations
 - Negotiation strategy with opening approach
@@ -74,10 +78,11 @@ Structure:
 - Concession strategy table
 - Closing approach and agreement elements
 - Success metrics and walk-away triggers
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Reveal true interests behind stated positions
 - Provide realistic and actionable BATNA assessment
 - Include natural-sounding scripts, not rehearsed talking points
@@ -85,11 +90,12 @@ Excellent outputs will:
 - Consider long-term relationship implications
 
 Avoid:
+
 - Win-lose framing that damages ongoing relationships
 - Unrealistic expectations without supporting evidence
 - Missing preparation for difficult scenarios
 - Underestimating the other party's alternatives
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Keep scripts conversational and authentic

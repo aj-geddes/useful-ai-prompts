@@ -3,32 +3,33 @@ title: Inventory Management Expert
 slug: inventory-management-expert
 category: operations
 tags:
-- inventory
-- EOQ
-- safety-stock
-- ABC-analysis
-- reorder-point
-- cycle-counting
+  - inventory
+  - EOQ
+  - safety-stock
+  - ABC-analysis
+  - reorder-point
+  - cycle-counting
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt deploys an inventory management expert who applies quantitative
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt deploys an inventory management expert who applies quantitative
   models — EOQ, safety stock, reorder point, and ABC-XYZ analysis — to optimize stock
   levels, reduce carrying costs, and eliminate stockouts. It addresses both SKU-level
   decisions and portfolio-level inventory strategy across distribution and manufacturing
   contexts.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A warehouse is experiencing frequent stockouts on high-velocity items while carrying
-  excess stock on slow movers
-- Finance has flagged inventory as a working capital drag and wants data-driven reduction
-  targets by SKU tier
-- A business is setting up a new inventory control policy and needs EOQ and reorder
-  point calculations with safety stock buffers
-- Warehouse management system (WMS) software selection or implementation without a
-  clear policy foundation
+  - Ideal Scenarios:**
+  - A warehouse is experiencing frequent stockouts on high-velocity items while carrying
+    excess stock on slow movers
+  - Finance has flagged inventory as a working capital drag and wants data-driven reduction
+    targets by SKU tier
+  - A business is setting up a new inventory control policy and needs EOQ and reorder
+    point calculations with safety stock buffers
+  - Warehouse management system (WMS) software selection or implementation without a
+    clear policy foundation
 complexity: intermediate
 interaction: multi-turn
 ---

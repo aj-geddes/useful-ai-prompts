@@ -24,12 +24,18 @@ Build flexible filtering and sorting systems that handle complex queries efficie
 
 ```javascript
 // Node.js filtering implementation
-app.get('/api/products', async (req, res) => {
+app.get("/api/products", async (req, res) => {
   const filters = {};
   const sortOptions = {};
 
   // Parse filtering parameters
-  const allowedFilters = ['category', 'minPrice', 'maxPrice', 'inStock', 'rating'];
+  const allowedFilters = [
+    "category",
+    "minPrice",
+    "maxPrice",
+    "inStock",
+    "rating",
+  ];
   for (const key of allowedFilters) {
     if (req.query[key]) {
       filters[key] = req.query[key];
@@ -54,7 +60,7 @@ app.get('/api/products', async (req, res) => {
   }
 
   if (filters.inStock !== undefined) {
-    mongoQuery.stock = { $gt: filters.inStock === 'true' ? 0 : -1 };
+    mongoQuery.stock = { $gt: filters.inStock === "true" ? 0 : -1 };
   }
 
   if (filters.rating) {
@@ -62,12 +68,12 @@ app.get('/api/products', async (req, res) => {
   }
 
   // Parse sorting
-  const sortField = req.query.sort || 'createdAt';
-  const sortOrder = req.query.order === 'asc' ? 1 : -1;
+  const sortField = req.query.sort || "createdAt";
+  const sortOrder = req.query.order === "asc" ? 1 : -1;
 
-  const validSortFields = ['price', 'rating', 'createdAt', 'popularity'];
+  const validSortFields = ["price", "rating", "createdAt", "popularity"];
   if (!validSortFields.includes(sortField)) {
-    return res.status(400).json({ error: 'Invalid sort field' });
+    return res.status(400).json({ error: "Invalid sort field" });
   }
 
   const page = parseInt(req.query.page) || 1;
@@ -80,7 +86,7 @@ app.get('/api/products', async (req, res) => {
         .sort({ [sortField]: sortOrder })
         .skip(offset)
         .limit(limit),
-      Product.countDocuments(mongoQuery)
+      Product.countDocuments(mongoQuery),
     ]);
 
     res.json({
@@ -90,15 +96,15 @@ app.get('/api/products', async (req, res) => {
         available: {
           categories: await getAvailableCategories(),
           priceRange: await getPriceRange(),
-          ratings: [1, 2, 3, 4, 5]
-        }
+          ratings: [1, 2, 3, 4, 5],
+        },
       },
       pagination: {
         page,
         limit,
         total,
-        totalPages: Math.ceil(total / limit)
-      }
+        totalPages: Math.ceil(total / limit),
+      },
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -117,7 +123,7 @@ class FilterParser {
 
     params.forEach((value, key) => {
       // Handle nested filters (e.g., user.email, address.city)
-      if (key.includes('.')) {
+      if (key.includes(".")) {
         this.setNested(filters, key, value);
       } else {
         filters[key] = this.parseValue(value);
@@ -128,7 +134,7 @@ class FilterParser {
   }
 
   static setNested(obj, path, value) {
-    const keys = path.split('.');
+    const keys = path.split(".");
     let current = obj;
 
     for (let i = 0; i < keys.length - 1; i++) {
@@ -142,9 +148,11 @@ class FilterParser {
 
   static parseValue(value) {
     // Handle operator syntax: gt:100, lt:200, in:a,b,c
-    if (typeof value !== 'string') return value;
+    if (typeof value !== "string") return value;
 
-    const operatorMatch = value.match(/^(eq|ne|gt|gte|lt|lte|in|nin|exists|regex):(.+)$/);
+    const operatorMatch = value.match(
+      /^(eq|ne|gt|gte|lt|lte|in|nin|exists|regex):(.+)$/,
+    );
     if (operatorMatch) {
       const [, operator, operandValue] = operatorMatch;
 
@@ -155,18 +163,18 @@ class FilterParser {
         gte: { $gte: parseFloat(operandValue) },
         lt: { $lt: parseFloat(operandValue) },
         lte: { $lte: parseFloat(operandValue) },
-        in: { $in: operandValue.split(',') },
-        nin: { $nin: operandValue.split(',') },
-        exists: { $exists: operandValue === 'true' },
-        regex: { $regex: operandValue, $options: 'i' }
+        in: { $in: operandValue.split(",") },
+        nin: { $nin: operandValue.split(",") },
+        exists: { $exists: operandValue === "true" },
+        regex: { $regex: operandValue, $options: "i" },
       };
 
       return operators[operator];
     }
 
     // Parse booleans
-    if (value === 'true') return true;
-    if (value === 'false') return false;
+    if (value === "true") return true;
+    if (value === "false") return false;
 
     // Parse numbers
     if (!isNaN(value)) return parseFloat(value);
@@ -176,8 +184,8 @@ class FilterParser {
 }
 
 // Usage
-app.get('/api/advanced-search', async (req, res) => {
-  const filters = FilterParser.parse(req.url.split('?')[1]);
+app.get("/api/advanced-search", async (req, res) => {
+  const filters = FilterParser.parse(req.url.split("?")[1]);
 
   const products = await Product.find(filters);
   res.json({ data: products });
@@ -204,14 +212,14 @@ class QueryBuilder {
 
   filter(field, operator, value) {
     const operators = {
-      '=': '$eq',
-      '!=': '$ne',
-      '>': '$gt',
-      '>=': '$gte',
-      '<': '$lt',
-      '<=': '$lte',
-      'in': '$in',
-      'regex': '$regex'
+      "=": "$eq",
+      "!=": "$ne",
+      ">": "$gt",
+      ">=": "$gte",
+      "<": "$lt",
+      "<=": "$lte",
+      in: "$in",
+      regex: "$regex",
     };
 
     const mongoOp = operators[operator];
@@ -227,14 +235,14 @@ class QueryBuilder {
   }
 
   search(text, fields) {
-    this.query.$or = fields.map(field => ({
-      [field]: { $regex: text, $options: 'i' }
+    this.query.$or = fields.map((field) => ({
+      [field]: { $regex: text, $options: "i" },
     }));
     return this;
   }
 
-  sort(field, direction = 'asc') {
-    this.sortBy[field] = direction === 'asc' ? 1 : -1;
+  sort(field, direction = "asc") {
+    this.sortBy[field] = direction === "asc" ? 1 : -1;
     return this;
   }
 
@@ -248,11 +256,12 @@ class QueryBuilder {
     const offset = (this.pageNum - 1) * this.pageSize;
 
     const [data, total] = await Promise.all([
-      this.model.find(this.query)
+      this.model
+        .find(this.query)
         .sort(this.sortBy)
         .skip(offset)
         .limit(this.pageSize),
-      this.model.countDocuments(this.query)
+      this.model.countDocuments(this.query),
     ]);
 
     return {
@@ -261,18 +270,18 @@ class QueryBuilder {
         page: this.pageNum,
         limit: this.pageSize,
         total,
-        totalPages: Math.ceil(total / this.pageSize)
-      }
+        totalPages: Math.ceil(total / this.pageSize),
+      },
     };
   }
 }
 
 // Usage
 const results = await new QueryBuilder(Product)
-  .filter('category', '=', 'electronics')
-  .range('price', 100, 500)
-  .filter('inStock', '=', true)
-  .sort('price', 'asc')
+  .filter("category", "=", "electronics")
+  .range("price", 100, 500)
+  .filter("inStock", "=", true)
+  .sort("price", "asc")
   .pagination(1, 20)
   .execute();
 ```
@@ -355,7 +364,13 @@ def list_products():
 ### 5. **Elasticsearch Filtering**
 
 ```javascript
-async function searchWithFilters(searchQuery, filters, sort, page = 1, limit = 20) {
+async function searchWithFilters(
+  searchQuery,
+  filters,
+  sort,
+  page = 1,
+  limit = 20,
+) {
   const from = (page - 1) * limit;
 
   const must = [];
@@ -366,14 +381,14 @@ async function searchWithFilters(searchQuery, filters, sort, page = 1, limit = 2
     must.push({
       multi_match: {
         query: searchQuery,
-        fields: ['name^2', 'description', 'category']
-      }
+        fields: ["name^2", "description", "category"],
+      },
     });
   }
 
   // Apply filters
   if (filters.category) {
-    must.push({ term: { 'category.keyword': filters.category } });
+    must.push({ term: { "category.keyword": filters.category } });
   }
 
   if (filters.minPrice || filters.maxPrice) {
@@ -385,40 +400,40 @@ async function searchWithFilters(searchQuery, filters, sort, page = 1, limit = 2
 
   if (filters.tags) {
     should.push({
-      terms: { 'tags.keyword': filters.tags }
+      terms: { "tags.keyword": filters.tags },
     });
   }
 
   const response = await esClient.search({
-    index: 'products',
+    index: "products",
     body: {
       from,
       size: limit,
       query: {
         bool: {
           must,
-          ...(should.length && { should, minimum_should_match: 1 })
-        }
+          ...(should.length && { should, minimum_should_match: 1 }),
+        },
       },
-      sort: sort ? [sort] : ['_score', { createdAt: 'desc' }],
+      sort: sort ? [sort] : ["_score", { createdAt: "desc" }],
       aggs: {
         categories: {
-          terms: { field: 'category.keyword', size: 50 }
+          terms: { field: "category.keyword", size: 50 },
         },
         priceRange: {
-          stats: { field: 'price' }
-        }
-      }
-    }
+          stats: { field: "price" },
+        },
+      },
+    },
   });
 
   return {
-    results: response.hits.hits.map(hit => hit._source),
+    results: response.hits.hits.map((hit) => hit._source),
     total: response.hits.total.value,
     facets: {
       categories: response.aggregations.categories.buckets,
-      priceRange: response.aggregations.priceRange
-    }
+      priceRange: response.aggregations.priceRange,
+    },
   };
 }
 ```
@@ -428,7 +443,7 @@ async function searchWithFilters(searchQuery, filters, sort, page = 1, limit = 2
 ```javascript
 // Prevent injection and invalid queries
 const validateFilter = (field, value) => {
-  const allowedFields = ['category', 'price', 'rating', 'inStock'];
+  const allowedFields = ["category", "price", "rating", "inStock"];
 
   if (!allowedFields.includes(field)) {
     throw new Error(`Field ${field} is not filterable`);
@@ -436,10 +451,10 @@ const validateFilter = (field, value) => {
 
   // Validate field-specific values
   const validations = {
-    category: (v) => typeof v === 'string' && v.length <= 50,
+    category: (v) => typeof v === "string" && v.length <= 50,
     price: (v) => !isNaN(v) && v >= 0,
     rating: (v) => !isNaN(v) && v >= 0 && v <= 5,
-    inStock: (v) => v === 'true' || v === 'false'
+    inStock: (v) => v === "true" || v === "false",
   };
 
   if (!validations[field](value)) {
@@ -453,6 +468,7 @@ const validateFilter = (field, value) => {
 ## Best Practices
 
 ### ✅ DO
+
 - Whitelist allowed filter fields
 - Validate all input parameters
 - Index fields used for filtering
@@ -465,6 +481,7 @@ const validateFilter = (field, value) => {
 - Optimize queries with indexes
 
 ### ❌ DON'T
+
 - Allow arbitrary field filtering
 - Support unlimited operators
 - Ignore SQL injection risks

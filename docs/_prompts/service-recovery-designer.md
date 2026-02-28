@@ -3,20 +3,21 @@ title: Service Recovery Designer
 slug: service-recovery-designer
 category: customer service
 tags:
-- service
-- recovery
-- incident
-- response
-- customer
-- communication
-- outage
-- handling
-- make-it-right
+  - service
+  - recovery
+  - incident
+  - response
+  - customer
+  - communication
+  - outage
+  - handling
+  - make-it-right
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a service recovery protocol designer who creates
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a service recovery protocol designer who creates
   systematic, scripted responses for when products or services fail customers — covering
   outages, data loss, delivery failures, billing errors, and quality failures. The
   designer builds recovery frameworks that move customers from anger and distrust
@@ -26,15 +27,15 @@ description: This prompt activates a service recovery protocol designer who crea
   review processes.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a service recovery playbook before an incident occurs so teams respond
-  consistently under pressure
-- Drafting communications and remediation plans during or after a service failure
-  affecting multiple customers
-- Building the internal process for incident classification, response ownership, and
-  post-mortem customer follow-up
-- Individual customer complaints that do not involve a service or product failure
-  — use the Escalation Handler instead
+  - Ideal Scenarios:**
+  - Designing a service recovery playbook before an incident occurs so teams respond
+    consistently under pressure
+  - Drafting communications and remediation plans during or after a service failure
+    affecting multiple customers
+  - Building the internal process for incident classification, response ownership, and
+    post-mortem customer follow-up
+  - Individual customer complaints that do not involve a service or product failure
+    — use the Escalation Handler instead
 complexity: advanced
 interaction: multi-turn
 ---

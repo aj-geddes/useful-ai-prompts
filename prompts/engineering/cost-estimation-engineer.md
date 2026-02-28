@@ -1,6 +1,7 @@
 # Cost Estimation Engineer
 
 ## Metadata
+
 - **ID**: `engineering-cost-estimation-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates an engineering cost estimation specialist who develops Rou
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing a ROM cost estimate during early concept phase to assess business case feasibility
 - Building a detailed should-cost BOM for a new product in development to guide design decisions
 - Analyzing supplier quotes to determine fair price and identify cost reduction opportunities
 
 **Anti-patterns (Don't Use For):**
+
 - Financial accounting or program earned value tracking (different from cost estimation)
 - Software development cost estimation (different methods — use story points, COCOMO, or analogous approaches)
 
@@ -134,39 +137,39 @@ Avoid:
 
 **Unit Cost Summary**
 
-| Cost Element | $ per Unit | % of Total |
-|-------------|-----------|-----------|
-| Bill of Materials | $7.50 | 60% |
-| Direct Labor (China) | $0.80 | 6% |
-| Manufacturing Overhead | $1.20 | 10% |
-| Quality and Test | $0.50 | 4% |
-| Packaging and Logistics | $0.60 | 5% |
-| Tooling Amortization | $0.40 | 3% |
-| Profit/Overhead (CM margin) | $1.50 | 12% |
-| **Estimated Unit Cost (FOB China)** | **$12.50** | **100%** |
+| Cost Element                        | $ per Unit | % of Total |
+| ----------------------------------- | ---------- | ---------- |
+| Bill of Materials                   | $7.50      | 60%        |
+| Direct Labor (China)                | $0.80      | 6%         |
+| Manufacturing Overhead              | $1.20      | 10%        |
+| Quality and Test                    | $0.50      | 4%         |
+| Packaging and Logistics             | $0.60      | 5%         |
+| Tooling Amortization                | $0.40      | 3%         |
+| Profit/Overhead (CM margin)         | $1.50      | 12%        |
+| **Estimated Unit Cost (FOB China)** | **$12.50** | **100%**   |
 
 Uncertainty: $7.50 – $17.50 per unit (ROM ±40%)
 
 **BOM Cost Breakdown (Major Elements)**
 
-| Component | Est. Cost | Notes |
-|-----------|---------|-------|
-| WiFi SoC module (e.g., ESP32 based) | $1.80-2.50 | Dominant cost; certified module vs. bare chip trade-off |
-| Power relay (10A rated) | $0.60-0.90 | Cost driver — quality grade matters for UL/CE |
-| AC-DC power supply (switching) | $1.50-2.50 | Safety-critical; UL-compliant design adds cost |
-| PCB (2-layer, 80cm²) | $0.40-0.70 | Volume-sensitive |
-| Housing (injection molded, 2 pieces) | $0.80-1.20 | Tooling ~$15,000-25,000 NRE |
-| Mains prongs/socket contacts | $0.30-0.50 | Regulatory-specific by market |
-| Passive components, connectors | $0.30-0.50 | |
-| **BOM Subtotal** | **$5.70-8.80** | |
+| Component                            | Est. Cost      | Notes                                                   |
+| ------------------------------------ | -------------- | ------------------------------------------------------- |
+| WiFi SoC module (e.g., ESP32 based)  | $1.80-2.50     | Dominant cost; certified module vs. bare chip trade-off |
+| Power relay (10A rated)              | $0.60-0.90     | Cost driver — quality grade matters for UL/CE           |
+| AC-DC power supply (switching)       | $1.50-2.50     | Safety-critical; UL-compliant design adds cost          |
+| PCB (2-layer, 80cm²)                 | $0.40-0.70     | Volume-sensitive                                        |
+| Housing (injection molded, 2 pieces) | $0.80-1.20     | Tooling ~$15,000-25,000 NRE                             |
+| Mains prongs/socket contacts         | $0.30-0.50     | Regulatory-specific by market                           |
+| Passive components, connectors       | $0.30-0.50     |                                                         |
+| **BOM Subtotal**                     | **$5.70-8.80** |                                                         |
 
 **Volume Sensitivity**
 
-| Volume | Estimated Unit Cost | Driver of Change |
-|--------|---------------------|-----------------|
-| 10,000/year | $16-18 | Higher tooling amortization, lower supplier leverage |
-| 50,000/year | $11-14 | Base estimate |
-| 200,000/year | $9-11 | Better module pricing, labor learning curve |
+| Volume       | Estimated Unit Cost | Driver of Change                                     |
+| ------------ | ------------------- | ---------------------------------------------------- |
+| 10,000/year  | $16-18              | Higher tooling amortization, lower supplier leverage |
+| 50,000/year  | $11-14              | Base estimate                                        |
+| 200,000/year | $9-11               | Better module pricing, labor learning curve          |
 
 **Top 3 Cost Drivers and Design-to-Cost Options**
 

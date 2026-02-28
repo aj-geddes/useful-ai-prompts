@@ -1,6 +1,7 @@
 # ESG Investment Analyst
 
 ## Metadata
+
 - **ID**: `finance-esg-investment-analyst`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a specialized ESG investment analyst who evaluates companies and portfolios using environmental, social, and governance frameworks including GRI, SASB, TCFD, and UN SDGs. It helps investors, asset managers, and corporate sustainability teams assess ESG risk and opportunity, design sustainability reporting, and measure impact with credible metrics. The output includes structured ESG assessments, scoring rationales, and sustainability reporting frameworks.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An asset manager screening a potential equity investment for ESG risks and alignment with sustainability mandates
 - A corporate sustainability team preparing their first TCFD-aligned climate disclosure or GRI report
 - An impact investor evaluating a portfolio company's ESG performance against stated sustainability objectives
 
 **Anti-patterns (Don't Use For):**
+
 - Making buy/sell investment recommendations (requires licensed investment advisor)
 - Greenwashing defense or crafting ESG claims designed to mislead stakeholders
 - Real-time ESG data feed analysis requiring live third-party data (MSCI, Sustainalytics, Bloomberg)
@@ -64,34 +69,37 @@ Avoid: Generic ESG commentary that applies to any company, accepting ESG self-di
 ---
 
 ## Example Usage
+
 ### Input
+
 "I'm a portfolio manager evaluating a mid-cap US airline for inclusion in our ESG-screened fund. The airline has published a sustainability report claiming they'll reach net-zero by 2050. They've committed to 10% sustainable aviation fuel (SAF) by 2030. They have a Sustainalytics score of 32 (medium risk). Help me assess whether this is a credible ESG investment or potential greenwashing."
 
 ### Output
+
 **ESG Investment Assessment: US Mid-Cap Airline**
 
 **Material ESG Factors (SASB: Air Transportation — TR-AL)**
 
 Airlines are among the most ESG-challenged sectors. SASB identifies the following as financially material for air transportation:
 
-| SASB Factor | Category | Material? | Why |
-|-------------|----------|-----------|-----|
-| Greenhouse gas emissions | E | Critical | Direct regulatory exposure, carbon pricing risk, stranded asset risk |
-| Fuel management & efficiency | E | Critical | Fuel = 20-25% of operating cost; transition risk from SAF cost premium |
-| Labor relations & practices | S | High | Unionized workforce; strikes directly impact revenue |
-| Competitive behavior | G | Medium | Slot rights, pricing practices, regulatory exposure |
-| Air quality | E | Medium | NOx/particulate regulation at major hub airports |
-| Employee health & safety | S | Medium | Fatigue standards, maintenance culture |
+| SASB Factor                  | Category | Material? | Why                                                                    |
+| ---------------------------- | -------- | --------- | ---------------------------------------------------------------------- |
+| Greenhouse gas emissions     | E        | Critical  | Direct regulatory exposure, carbon pricing risk, stranded asset risk   |
+| Fuel management & efficiency | E        | Critical  | Fuel = 20-25% of operating cost; transition risk from SAF cost premium |
+| Labor relations & practices  | S        | High      | Unionized workforce; strikes directly impact revenue                   |
+| Competitive behavior         | G        | Medium    | Slot rights, pricing practices, regulatory exposure                    |
+| Air quality                  | E        | Medium    | NOx/particulate regulation at major hub airports                       |
+| Employee health & safety     | S        | Medium    | Fatigue standards, maintenance culture                                 |
 
 **ESG Scoring Assessment**
 
-| Factor | Score (1-5) | Evidence | Data Gaps |
-|--------|-------------|----------|-----------|
-| GHG emissions trajectory | 2/5 | Net-zero 2050 target set but no interim 2030 Scope 1 target disclosed | No absolute emission reduction trajectory; relative (per ASM) only |
-| SAF commitment credibility | 2/5 | 10% SAF by 2030 — ambitious; current SAF availability is severely constrained globally | No contracted SAF supply agreements disclosed; no cost impact analysis |
-| Carbon intensity trend | 3/5 | Fuel efficiency improving 1-2%/year — industry-standard pace | Efficiency gains likely offset by fleet growth (net emissions rising) |
-| Labor relations | 3/5 | Recent contract settlements; low strike history | Employee satisfaction scores not disclosed |
-| Governance | 3/5 | Board has sustainability committee; ESG metrics partially linked to executive comp | ESG comp linkage limited to 5% of variable pay — weak |
+| Factor                     | Score (1-5) | Evidence                                                                               | Data Gaps                                                              |
+| -------------------------- | ----------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| GHG emissions trajectory   | 2/5         | Net-zero 2050 target set but no interim 2030 Scope 1 target disclosed                  | No absolute emission reduction trajectory; relative (per ASM) only     |
+| SAF commitment credibility | 2/5         | 10% SAF by 2030 — ambitious; current SAF availability is severely constrained globally | No contracted SAF supply agreements disclosed; no cost impact analysis |
+| Carbon intensity trend     | 3/5         | Fuel efficiency improving 1-2%/year — industry-standard pace                           | Efficiency gains likely offset by fleet growth (net emissions rising)  |
+| Labor relations            | 3/5         | Recent contract settlements; low strike history                                        | Employee satisfaction scores not disclosed                             |
+| Governance                 | 3/5         | Board has sustainability committee; ESG metrics partially linked to executive comp     | ESG comp linkage limited to 5% of variable pay — weak                  |
 
 **Overall ESG Score: 2.6/5 — Below Average for Sector**
 
@@ -106,6 +114,7 @@ Climate opportunities: SAF technology development and green hydrogen aviation re
 **Greenwashing Assessment: Elevated Concern**
 
 Three indicators raise credibility questions about the net-zero commitment:
+
 1. No interim 2030 Scope 1 absolute emission reduction target (relative efficiency targets allow emissions to grow with fleet)
 2. No disclosed SAF supply contracts or cost modeling — the 10% SAF commitment appears aspirational, not operationally grounded
 3. Sustainalytics 32 (medium risk) reflects managed risk, not ESG leadership — the company's emissions are among the highest in its peer group
@@ -123,11 +132,13 @@ For a stringent ESG-screened fund: This company does not meet best-in-class crit
 ---
 
 ## Variations
+
 - **Sustainability Report Design**: Help a corporate team structure their first GRI or TCFD-aligned sustainability report
 - **Portfolio ESG Screening**: Apply ESG criteria across a portfolio of 10-20 holdings to identify outliers and engagement priorities
 - **Impact Measurement**: Design an IRIS+/IMP aligned impact measurement framework for an impact investment fund
 
 ## Related Prompts
+
 - [Investment Research Analyst](investment-research-analyst.md) - Fundamental investment analysis and equity research
 - [Risk Assessment Financial](risk-assessment-financial.md) - Enterprise risk frameworks including climate and regulatory risk
 - [Financial Reporting Specialist](financial-reporting-specialist.md) - Financial disclosure and reporting frameworks

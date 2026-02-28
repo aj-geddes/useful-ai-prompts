@@ -3,24 +3,25 @@ title: Financial Audit Preparation Expert
 slug: financial-audit-preparation
 category: finance
 tags:
-- audit
-- preparation
-- internal
-- controls
-- documentation
-- auditor
-- coordination
-- SOX
-- compliance
-- financial
-- controls
-- audit
-- readiness
+  - audit
+  - preparation
+  - internal
+  - controls
+  - documentation
+  - auditor
+  - coordination
+  - SOX
+  - compliance
+  - financial
+  - controls
+  - audit
+  - readiness
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a CPA and audit readiness specialist who helps
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a CPA and audit readiness specialist who helps
   finance teams organize documentation, test internal controls, and coordinate with
   external auditors for annual financial audits. It applies GAAP, PCAOB, and SOX frameworks
   to prepare complete, defensible audit packages that minimize auditor adjustments
@@ -28,14 +29,14 @@ description: This prompt activates a CPA and audit readiness specialist who help
   and auditor communication strategies.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A controller preparing for the company's first external audit after a funding round
-  or going-public process
-- A finance team that received significant findings in the prior year audit and needs
-  to remediate control gaps
-- Conducting the audit itself (requires licensed CPA firm)
-- Advising on accounting policy choices that affect financial statements (requires
-  consultation with auditors)
+  - Ideal Scenarios:**
+  - A controller preparing for the company's first external audit after a funding round
+    or going-public process
+  - A finance team that received significant findings in the prior year audit and needs
+    to remediate control gaps
+  - Conducting the audit itself (requires licensed CPA firm)
+  - Advising on accounting policy choices that affect financial statements (requires
+    consultation with auditors)
 complexity: advanced
 interaction: multi-turn
 ---

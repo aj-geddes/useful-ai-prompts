@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Evaluate test suite quality by introducing code mutations and verifying
+date: "2025-01-01"
+description:
+  Evaluate test suite quality by introducing code mutations and verifying
   tests catch them. Use for mutation testing, test quality, mutant detection, Stryker,
   PITest, and test effectiveness analysis.
 layout: skill
 slug: mutation-testing
 tags:
-- testing
+  - testing
 title: mutation-testing
 ---
 
@@ -474,12 +475,14 @@ def test_truncate_zero_length():
 ## Common Mutation Operators
 
 ### Arithmetic Mutations
+
 - `+` → `-`, `*`, `/`
 - `-` → `+`, `*`, `/`
 - `*` → `+`, `-`, `/`
 - `/` → `+`, `-`, `*`
 
 ### Conditional Mutations
+
 - `>` → `>=`, `<`, `==`
 - `<` → `<=`, `>`, `==`
 - `==` → `!=`
@@ -487,11 +490,13 @@ def test_truncate_zero_length():
 - `||` → `&&`
 
 ### Return Value Mutations
+
 - `return true` → `return false`
 - `return x` → `return x + 1`
 - `return` → Remove return statement
 
 ### Statement Mutations
+
 - Remove method calls
 - Remove conditional blocks
 - Remove increments/decrements
@@ -510,19 +515,19 @@ function processUser(user: User): boolean {
 }
 
 // ❌ Weak test - Mutation: >= to > survives
-test('processes adult user', () => {
+test("processes adult user", () => {
   const user = { age: 25 };
   expect(processUser(user)).toBe(true);
 });
 
 // ✅ Strong test - Catches >= to > mutation
-test('processes user who is exactly 18', () => {
+test("processes user who is exactly 18", () => {
   const user = { age: 18 };
   expect(processUser(user)).toBe(true);
   expect(user.isAdult).toBe(true);
 });
 
-test('rejects user who is 17', () => {
+test("rejects user who is 17", () => {
   const user = { age: 17 };
   expect(processUser(user)).toBe(false);
   expect(user.isAdult).toBeUndefined();
@@ -532,6 +537,7 @@ test('rejects user who is 17', () => {
 ## Best Practices
 
 ### ✅ DO
+
 - Target critical business logic for mutation testing
 - Aim for 80%+ mutation score on important code
 - Review survived mutants to improve tests
@@ -541,6 +547,7 @@ test('rejects user who is 17', () => {
 - Verify actual behavior, not just code execution
 
 ### ❌ DON'T
+
 - Expect 100% mutation score everywhere
 - Run mutation testing on all code (too slow)
 - Ignore equivalent mutants
@@ -567,7 +574,7 @@ name: Mutation Testing
 on:
   pull_request:
     paths:
-      - 'src/**'
+      - "src/**"
 
 jobs:
   mutation:

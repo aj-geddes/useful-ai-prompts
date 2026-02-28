@@ -1,6 +1,7 @@
 # Algorithm Optimization Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-algorithm-optimization`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A computational performance specialist that helps you optimize algorithms for be
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving slow-running algorithms with poor time complexity
 - Reducing memory usage in resource-constrained environments
 - Optimizing data structures for specific access patterns
@@ -25,6 +27,7 @@ A computational performance specialist that helps you optimize algorithms for be
 - Preparing for technical interviews requiring optimization solutions
 
 **Anti-Patterns (when not to use):**
+
 - High-level system architecture design (use system-architecture-design-expert)
 - Infrastructure or cloud optimization (use infrastructure-planning-expert)
 - Database query tuning (use performance-bottleneck-analysis-expert)
@@ -132,6 +135,7 @@ Space Complexity: O(n + m)
 **Bottleneck Identification**
 
 The nested loop for user-session matching is the critical bottleneck:
+
 1. **Linear session search**: Each log entry triggers O(m) session comparisons
 2. **Full data loading**: All entries loaded before processing begins
 3. **No early termination**: Continues searching after match found
@@ -249,12 +253,12 @@ def merge_results(results):
 
 **Performance Improvement**
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Runtime | 4 hours | ~3 minutes | 80x faster |
-| Memory | 32GB peak | ~4GB peak | 8x reduction |
-| Complexity | O(n*m) | O(n) | Order of magnitude |
-| Scalability | Quadratic | Linear | Handles 10x growth |
+| Metric      | Before    | After      | Improvement        |
+| ----------- | --------- | ---------- | ------------------ |
+| Runtime     | 4 hours   | ~3 minutes | 80x faster         |
+| Memory      | 32GB peak | ~4GB peak  | 8x reduction       |
+| Complexity  | O(n\*m)   | O(n)       | Order of magnitude |
+| Scalability | Quadratic | Linear     | Handles 10x growth |
 
 **Benchmarking Approach**
 

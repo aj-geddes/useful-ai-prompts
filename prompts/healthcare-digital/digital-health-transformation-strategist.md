@@ -1,6 +1,7 @@
 # Digital Health Transformation Strategist
 
 ## Metadata
+
 - **ID**: `healthcare-digital-transformation`
 - **Version**: 1.0.0
 - **Category**: Healthcare Digital
@@ -18,6 +19,7 @@ A digital health strategy expert that helps healthcare organizations design and 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning healthcare digital transformation initiatives
 - Optimizing EHR systems and clinical workflows
 - Designing patient engagement platforms
@@ -25,6 +27,7 @@ A digital health strategy expert that helps healthcare organizations design and 
 - Addressing provider burnout through technology optimization
 
 **Anti-Patterns (When NOT to Use):**
+
 - Clinical decision-making or care protocols
 - Medical device development or selection
 - Specific EHR vendor selection decisions
@@ -110,6 +113,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Regional hospital system (3 hospitals, 25 clinics, 400 beds total). Current: Epic EHR (basic implementation), limited telehealth, paper-heavy processes in clinics. Challenges: Provider burnout from documentation, poor patient portal adoption (28%), siloed data between facilities. Goals: Reduce documentation burden, improve patient engagement, enable data-driven decision making. Budget: $12M over 3 years.
 
 ### Output
@@ -117,6 +121,7 @@ Regional hospital system (3 hospitals, 25 clinics, 400 beds total). Current: Epi
 **Digital Health Transformation Strategy**
 
 **Current State Assessment:**
+
 - EHR Utilization: Basic Epic implementation, underutilized advanced features
 - Digital Patient Engagement: Low (28% portal adoption vs. 70%+ benchmark)
 - Data Analytics: Limited, siloed across facilities
@@ -127,19 +132,22 @@ Create an integrated, patient-centered digital ecosystem that reduces provider b
 
 **Strategic Priorities:**
 
-*Priority 1: Provider Experience and Workflow Optimization*
+_Priority 1: Provider Experience and Workflow Optimization_
+
 - Epic optimization and template redesign
 - Voice recognition and ambient documentation pilot
 - Alert fatigue reduction program
 - Mobile workflow enablement
 
-*Priority 2: Patient Engagement Platform*
+_Priority 2: Patient Engagement Platform_
+
 - Portal redesign and mobile app launch
 - Online scheduling and digital check-in
 - Telehealth expansion across specialties
 - Automated patient communication
 
-*Priority 3: Data Integration and Analytics*
+_Priority 3: Data Integration and Analytics_
+
 - Enterprise data warehouse implementation
 - Real-time operational dashboards
 - Population health analytics platform
@@ -157,21 +165,24 @@ Infrastructure: Hybrid Cloud | Security/Compliance | Disaster Recovery
 
 **Implementation Roadmap:**
 
-*Phase 1 (Year 1 - $4M):*
+_Phase 1 (Year 1 - $4M):_
+
 - Epic optimization and provider workflow improvements
 - Portal enhancement and adoption campaign
 - Telehealth expansion to all specialties
 - Data warehouse foundation
 - Target: 40% documentation time reduction, 50% portal adoption
 
-*Phase 2 (Year 2 - $5M):*
+_Phase 2 (Year 2 - $5M):_
+
 - Mobile app launch
 - Voice documentation pilot (2 departments)
 - Analytics platform deployment
 - Process automation implementation
 - Target: 60% portal adoption, operational dashboards live
 
-*Phase 3 (Year 3 - $3M):*
+_Phase 3 (Year 3 - $3M):_
+
 - Advanced analytics and predictive models
 - Population health management tools
 - Ambient documentation expansion
@@ -180,28 +191,33 @@ Infrastructure: Hybrid Cloud | Security/Compliance | Disaster Recovery
 
 **Success Metrics:**
 
-*Clinical Quality:*
+_Clinical Quality:_
+
 - Documentation time: 40% reduction
 - Alert fatigue: 50% reduction in overridden alerts
 - Care gaps closed: 30% improvement
 
-*Patient Engagement:*
+_Patient Engagement:_
+
 - Portal adoption: 28% to 75%
 - Digital scheduling: 40% of appointments
 - Telehealth: 5% to 25% of applicable visits
 
-*Operational Efficiency:*
+_Operational Efficiency:_
+
 - Provider satisfaction: 50% to 80%
 - Revenue cycle days: 10% improvement
 - Quality measure automation: 90%
 
 **Governance Structure:**
+
 - Executive Steering Committee (monthly): CMO, CIO, CFO, CNO
 - Clinical Informatics Council (bi-weekly): Clinical champions, IT leads
 - Patient Advisory Board (quarterly): Patient representatives
 - Technical Architecture Board (monthly): IT architects, security, infrastructure
 
 **Change Management:**
+
 - Clinical champion network (1 per department)
 - Training: Role-based, just-in-time approach
 - Communication: Monthly town halls, weekly updates
@@ -210,6 +226,7 @@ Infrastructure: Hybrid Cloud | Security/Compliance | Disaster Recovery
 ---
 
 ## Related Prompts
+
 - [Healthcare AI Implementation Expert](healthcare-ai-implementation-expert.md)
 - [Telehealth Platform Development Expert](telehealth-platform-development-expert.md)
 - [Patient Data Analytics Expert](patient-data-analytics-expert.md)

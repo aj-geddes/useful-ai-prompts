@@ -1,6 +1,7 @@
 # Project Retrospective Facilitator
 
 ## Metadata
+
 - **ID**: `project-management-project-retrospective-facilitator`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps Scrum Masters and project managers design and facilitate effective retrospectives — whether sprint-level agile retrospectives or project-close retrospectives. It generates structured agenda formats, facilitation guides, targeted questions, and actionable improvement items with owners and measurable success criteria.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning and facilitating an upcoming sprint or project retrospective with a team that needs structure
 - Recovering from a particularly difficult sprint or project phase where team morale needs active management
 - Standardizing retrospective practices across multiple teams in a program
 
 **Anti-patterns (Don't Use For):**
+
 - Performance reviews or individual feedback conversations — retrospectives focus on process not people
 - One-on-one manager check-ins or coaching sessions
 - Post-incident reviews for production outages (use blameless post-mortem format instead)
@@ -66,10 +71,13 @@ Avoid: Generic "what went well/what didn't" questions with no team context; acti
 ---
 
 ## Example Usage
+
 ### Input
+
 "We just finished Sprint 22. It was rough — we missed our sprint goal for the third sprint in a row. The team is 8 people, remote/hybrid. We have 90 minutes. Main issues seem to be: stories aren't well-defined enough when we start the sprint, and QA keeps getting blocked waiting for dev to finish. Team morale is a bit low. We had one action item from last sprint: 'improve our definition of ready' — I don't think it actually happened."
 
 ### Output
+
 **Sprint 22 Retrospective — Facilitation Guide**
 Team Size: 8 | Duration: 90 minutes | Format: Sailboat
 
@@ -82,15 +90,15 @@ Given three consecutive missed sprint goals, the team needs a structured way to 
 
 **Agenda (90 minutes)**
 
-| Time | Activity | Duration |
-|------|----------|----------|
-| 0:00 | Opening — working agreement reminder and safety check | 5 min |
-| 0:05 | Previous action item review — Definition of Ready | 10 min |
-| 0:15 | Individual reflection — silent sticky note generation | 10 min |
-| 0:25 | Sailboat share-out — Wind, Anchors, Island, Rocks | 20 min |
-| 0:45 | Theme identification and dot voting | 15 min |
-| 1:00 | Action item generation and owner commitment | 20 min |
-| 1:20 | Close — appreciation round and summary | 10 min |
+| Time | Activity                                              | Duration |
+| ---- | ----------------------------------------------------- | -------- |
+| 0:00 | Opening — working agreement reminder and safety check | 5 min    |
+| 0:05 | Previous action item review — Definition of Ready     | 10 min   |
+| 0:15 | Individual reflection — silent sticky note generation | 10 min   |
+| 0:25 | Sailboat share-out — Wind, Anchors, Island, Rocks     | 20 min   |
+| 0:45 | Theme identification and dot voting                   | 15 min   |
+| 1:00 | Action item generation and owner commitment           | 20 min   |
+| 1:20 | Close — appreciation round and summary                | 10 min   |
 
 ---
 
@@ -104,35 +112,27 @@ Run a safety check: Ask each person to type a number from 1-5 in the chat (1 = I
 
 **Discussion Questions**
 
-*Previous Action Item:*
+_Previous Action Item:_
+
 1. We committed to improving our Definition of Ready. What specifically happened — and what got in the way?
 
-*Wind (What's propelling us):*
-2. What did we do in Sprint 22 that made it easier to deliver quality work?
-3. What collaboration moment from this sprint are you most proud of?
+_Wind (What's propelling us):_ 2. What did we do in Sprint 22 that made it easier to deliver quality work? 3. What collaboration moment from this sprint are you most proud of?
 
-*Anchors (What's slowing us down):*
-4. When did you feel blocked, confused, or frustrated in Sprint 22 — and what caused it?
-5. What's the most common interruption that pulls focus away from sprint goals?
-6. Where did QA and development have friction? What specifically caused handoff delays?
+_Anchors (What's slowing us down):_ 4. When did you feel blocked, confused, or frustrated in Sprint 22 — and what caused it? 5. What's the most common interruption that pulls focus away from sprint goals? 6. Where did QA and development have friction? What specifically caused handoff delays?
 
-*Rocks (Risks ahead):*
-7. What pattern are we repeating sprint after sprint that we haven't fixed yet?
-8. If Sprint 23 fails for the same reason as Sprint 22, what will we have failed to change?
+_Rocks (Risks ahead):_ 7. What pattern are we repeating sprint after sprint that we haven't fixed yet? 8. If Sprint 23 fails for the same reason as Sprint 22, what will we have failed to change?
 
-*Island (What success looks like):*
-9. What would a successful Sprint 23 look like, specifically?
-10. What's one thing that would make you feel genuinely proud of this team at the next retrospective?
+_Island (What success looks like):_ 9. What would a successful Sprint 23 look like, specifically? 10. What's one thing that would make you feel genuinely proud of this team at the next retrospective?
 
 ---
 
 **Action Item Table**
 
-| # | Action Item | Owner | Success Criteria | Due |
-|---|-------------|-------|-----------------|-----|
-| A-001 | Introduce a 2-criteria Definition of Ready checklist: acceptance criteria written AND dev estimate given before sprint planning | Product Owner | Zero stories enter sprint without both criteria in Sprint 23 | Sprint 23 planning |
-| A-002 | QA joins dev ticket reviews at the 50% completion point to prevent end-of-sprint handoff crunch | QA Lead | At least 3 tickets reviewed mid-sprint in Sprint 23 | Sprint 23 end |
-| A-003 | Sprint goal is written and agreed before any stories are selected in planning | Scrum Master | Sprint 23 goal is written on the board before the backlog selection begins | Sprint 23 planning |
+| #     | Action Item                                                                                                                     | Owner         | Success Criteria                                                           | Due                |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------- | ------------------ |
+| A-001 | Introduce a 2-criteria Definition of Ready checklist: acceptance criteria written AND dev estimate given before sprint planning | Product Owner | Zero stories enter sprint without both criteria in Sprint 23               | Sprint 23 planning |
+| A-002 | QA joins dev ticket reviews at the 50% completion point to prevent end-of-sprint handoff crunch                                 | QA Lead       | At least 3 tickets reviewed mid-sprint in Sprint 23                        | Sprint 23 end      |
+| A-003 | Sprint goal is written and agreed before any stories are selected in planning                                                   | Scrum Master  | Sprint 23 goal is written on the board before the backlog selection begins | Sprint 23 planning |
 
 ---
 
@@ -149,9 +149,11 @@ Previous action item status: Definition of Ready — not completed; root cause: 
 ---
 
 ## Variations
+
 - **Project-Close Retrospective**: Extended 2-hour format for end-of-project lessons learned with cross-functional stakeholders
 - **Remote-First Retrospective**: Optimized format using async pre-work and structured Miro/Mural board templates
 
 ## Related Prompts
+
 - [Agile Sprint Planner](agile-sprint-planner.md) - Apply retrospective insights to improve the next sprint plan
 - [Project Closeout Specialist](project-closeout-specialist.md) - Incorporate retrospective findings into formal project closure documentation

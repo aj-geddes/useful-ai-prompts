@@ -363,6 +363,7 @@ aws s3 presign s3://my-app-bucket/uploads/file.jpg \
 ## Best Practices
 
 ### ✅ DO
+
 - Enable versioning for important data
 - Use server-side encryption
 - Block public access by default
@@ -374,6 +375,7 @@ aws s3 presign s3://my-app-bucket/uploads/file.jpg \
 - Implement cross-region replication
 
 ### ❌ DON'T
+
 - Make buckets publicly accessible
 - Store sensitive credentials
 - Ignore CloudTrail logging

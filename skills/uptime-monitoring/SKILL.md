@@ -23,59 +23,59 @@ Set up comprehensive uptime monitoring with health checks, status pages, and inc
 
 ```javascript
 // Node.js health check
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/health', (req, res) => {
+app.get("/health", (req, res) => {
   res.json({
-    status: 'ok',
+    status: "ok",
     timestamp: new Date().toISOString(),
-    uptime: process.uptime()
+    uptime: process.uptime(),
   });
 });
 
-app.get('/health/deep', async (req, res) => {
+app.get("/health/deep", async (req, res) => {
   const health = {
-    status: 'ok',
+    status: "ok",
     checks: {
-      database: 'unknown',
-      cache: 'unknown',
-      externalApi: 'unknown'
-    }
+      database: "unknown",
+      cache: "unknown",
+      externalApi: "unknown",
+    },
   };
 
   try {
-    const dbResult = await db.query('SELECT 1');
-    health.checks.database = dbResult ? 'ok' : 'error';
+    const dbResult = await db.query("SELECT 1");
+    health.checks.database = dbResult ? "ok" : "error";
   } catch {
-    health.checks.database = 'error';
-    health.status = 'degraded';
+    health.checks.database = "error";
+    health.status = "degraded";
   }
 
   try {
     const cacheResult = await redis.ping();
-    health.checks.cache = cacheResult === 'PONG' ? 'ok' : 'error';
+    health.checks.cache = cacheResult === "PONG" ? "ok" : "error";
   } catch {
-    health.checks.cache = 'error';
+    health.checks.cache = "error";
   }
 
   try {
-    const response = await fetch('https://api.example.com/health');
-    health.checks.externalApi = response.ok ? 'ok' : 'error';
+    const response = await fetch("https://api.example.com/health");
+    health.checks.externalApi = response.ok ? "ok" : "error";
   } catch {
-    health.checks.externalApi = 'error';
+    health.checks.externalApi = "error";
   }
 
-  const statusCode = health.status === 'ok' ? 200 : 503;
+  const statusCode = health.status === "ok" ? 200 : 503;
   res.status(statusCode).json(health);
 });
 
-app.get('/readiness', async (req, res) => {
+app.get("/readiness", async (req, res) => {
   try {
-    const dbCheck = await db.query('SELECT 1');
+    const dbCheck = await db.query("SELECT 1");
     const cacheCheck = await redis.ping();
 
-    if (dbCheck && cacheCheck === 'PONG') {
+    if (dbCheck && cacheCheck === "PONG") {
       res.json({ ready: true });
     } else {
       res.status(503).json({ ready: false });
@@ -85,7 +85,7 @@ app.get('/readiness', async (req, res) => {
   }
 });
 
-app.get('/liveness', (req, res) => {
+app.get("/liveness", (req, res) => {
   res.json({ alive: true });
 });
 ```
@@ -148,7 +148,7 @@ def readiness():
 
 ```javascript
 // heartbeat.js
-const axios = require('axios');
+const axios = require("axios");
 
 class UptimeMonitor {
   constructor(config = {}) {
@@ -163,14 +163,14 @@ class UptimeMonitor {
     try {
       const response = await axios.get(endpoint.url, {
         timeout: this.timeout,
-        validateStatus: (s) => s >= 200 && s < 300
+        validateStatus: (s) => s >= 200 && s < 300,
       });
 
       const check = {
         endpoint: endpoint.name,
-        status: 'up',
+        status: "up",
         responseTime: Date.now() - startTime,
-        timestamp: new Date()
+        timestamp: new Date(),
       };
 
       await this.saveCheck(check);
@@ -178,10 +178,10 @@ class UptimeMonitor {
     } catch (error) {
       const check = {
         endpoint: endpoint.name,
-        status: 'down',
+        status: "down",
         responseTime: Date.now() - startTime,
         timestamp: new Date(),
-        error: error.message
+        error: error.message,
       };
 
       await this.saveCheck(check);
@@ -192,18 +192,16 @@ class UptimeMonitor {
   async saveCheck(check) {
     try {
       await db.query(
-        'INSERT INTO uptime_checks (endpoint, status, response_time, timestamp) VALUES (?, ?, ?, ?)',
-        [check.endpoint, check.status, check.responseTime, check.timestamp]
+        "INSERT INTO uptime_checks (endpoint, status, response_time, timestamp) VALUES (?, ?, ?, ?)",
+        [check.endpoint, check.status, check.responseTime, check.timestamp],
       );
     } catch (error) {
-      console.error('Failed to save check:', error);
+      console.error("Failed to save check:", error);
     }
   }
 
   async runChecks() {
-    return Promise.all(
-      this.endpoints.map(e => this.checkEndpoint(e))
-    );
+    return Promise.all(this.endpoints.map((e) => this.checkEndpoint(e)));
   }
 
   start() {
@@ -216,14 +214,17 @@ class UptimeMonitor {
   }
 
   async getStats(endpoint, hours = 24) {
-    const [stats] = await db.query(`
+    const [stats] = await db.query(
+      `
       SELECT
         COUNT(*) as total_checks,
         SUM(CASE WHEN status = 'up' THEN 1 ELSE 0 END) as uptime_checks,
         AVG(response_time) as avg_response_time
       FROM uptime_checks
       WHERE endpoint = ? AND timestamp > DATE_SUB(NOW(), INTERVAL ? HOUR)
-    `, [endpoint, hours]);
+    `,
+      [endpoint, hours],
+    );
     return stats[0];
   }
 }
@@ -235,47 +236,51 @@ module.exports = UptimeMonitor;
 
 ```javascript
 // status-page-api.js
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-router.get('/api/status', async (req, res) => {
+router.get("/api/status", async (req, res) => {
   try {
     const endpoints = await db.query(`
       SELECT DISTINCT endpoint FROM uptime_checks
     `);
 
     const status = {
-      page: { name: 'My Service Status', updated_at: new Date().toISOString() },
-      components: []
+      page: { name: "My Service Status", updated_at: new Date().toISOString() },
+      components: [],
     };
 
     for (const { endpoint } of endpoints) {
-      const [lastCheck] = await db.query(`
+      const [lastCheck] = await db.query(
+        `
         SELECT status FROM uptime_checks
         WHERE endpoint = ? ORDER BY timestamp DESC LIMIT 1
-      `, [endpoint]);
+      `,
+        [endpoint],
+      );
 
       status.components.push({
         id: endpoint,
         name: endpoint,
-        status: lastCheck?.status === 'up' ? 'operational' : 'major_outage'
+        status: lastCheck?.status === "up" ? "operational" : "major_outage",
       });
     }
 
-    const allUp = status.components.every(c => c.status === 'operational');
+    const allUp = status.components.every((c) => c.status === "operational");
     status.status = {
-      overall: allUp ? 'all_operational' : 'major_outage'
+      overall: allUp ? "all_operational" : "major_outage",
     };
 
     res.json(status);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch status' });
+    res.status(500).json({ error: "Failed to fetch status" });
   }
 });
 
-router.get('/api/status/uptime/:endpoint', async (req, res) => {
+router.get("/api/status/uptime/:endpoint", async (req, res) => {
   try {
-    const stats = await db.query(`
+    const stats = await db.query(
+      `
       SELECT
         DATE(timestamp) as date,
         COUNT(*) as total,
@@ -284,11 +289,13 @@ router.get('/api/status/uptime/:endpoint', async (req, res) => {
       WHERE endpoint = ? AND timestamp > DATE_SUB(NOW(), INTERVAL 30 DAY)
       GROUP BY DATE(timestamp)
       ORDER BY date DESC
-    `, [req.params.endpoint]);
+    `,
+      [req.params.endpoint],
+    );
 
     res.json(stats);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch statistics' });
+    res.status(500).json({ error: "Failed to fetch statistics" });
   }
 });
 
@@ -304,37 +311,38 @@ spec:
   template:
     spec:
       containers:
-      - name: api-service
-        image: api-service:latest
+        - name: api-service
+          image: api-service:latest
 
-        startupProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 0
-          periodSeconds: 10
-          failureThreshold: 30
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 0
+            periodSeconds: 10
+            failureThreshold: 30
 
-        readinessProbe:
-          httpGet:
-            path: /readiness
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-          failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /readiness
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
 
-        livenessProbe:
-          httpGet:
-            path: /liveness
-            port: 3000
-          initialDelaySeconds: 15
-          periodSeconds: 20
-          failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /liveness
+              port: 3000
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            failureThreshold: 3
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Implement comprehensive health checks
 - Check all critical dependencies
 - Use appropriate timeout values
@@ -345,6 +353,7 @@ spec:
 - Use standard HTTP status codes
 
 ### ❌ DON'T
+
 - Check only application process
 - Ignore external dependencies
 - Set timeouts too low
@@ -360,7 +369,7 @@ function calculateSLA(upChecks, totalChecks) {
   return {
     uptime_percentage: uptime.toFixed(4),
     meets_99_9: uptime >= 99.9,
-    meets_99_99: uptime >= 99.99
+    meets_99_99: uptime >= 99.99,
   };
 }
 ```

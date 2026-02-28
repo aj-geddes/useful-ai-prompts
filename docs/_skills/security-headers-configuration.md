@@ -1,12 +1,13 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Configure HTTP security headers including CSP, HSTS, X-Frame-Options,
+date: "2025-01-01"
+description:
+  Configure HTTP security headers including CSP, HSTS, X-Frame-Options,
   and XSS protection. Use when hardening web applications against common attacks.
 layout: skill
 slug: security-headers-configuration
 tags:
-- security
+  - security
 title: security-headers-configuration
 ---
 
@@ -31,118 +32,110 @@ Implement comprehensive HTTP security headers to protect web applications from X
 
 ```javascript
 // security-headers.js
-const helmet = require('helmet');
+const helmet = require("helmet");
 
 function configureSecurityHeaders(app) {
   // Comprehensive Helmet configuration
-  app.use(helmet({
-    // Content Security Policy
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: [
-          "'self'",
-          "'unsafe-inline'", // Remove in production
-          "https://cdn.example.com",
-          "https://www.google-analytics.com"
-        ],
-        styleSrc: [
-          "'self'",
-          "'unsafe-inline'",
-          "https://fonts.googleapis.com"
-        ],
-        fontSrc: [
-          "'self'",
-          "https://fonts.gstatic.com"
-        ],
-        imgSrc: [
-          "'self'",
-          "data:",
-          "https:",
-          "blob:"
-        ],
-        connectSrc: [
-          "'self'",
-          "https://api.example.com"
-        ],
-        frameSrc: ["'none'"],
-        objectSrc: ["'none'"],
-        upgradeInsecureRequests: []
-      }
-    },
+  app.use(
+    helmet({
+      // Content Security Policy
+      contentSecurityPolicy: {
+        directives: {
+          defaultSrc: ["'self'"],
+          scriptSrc: [
+            "'self'",
+            "'unsafe-inline'", // Remove in production
+            "https://cdn.example.com",
+            "https://www.google-analytics.com",
+          ],
+          styleSrc: [
+            "'self'",
+            "'unsafe-inline'",
+            "https://fonts.googleapis.com",
+          ],
+          fontSrc: ["'self'", "https://fonts.gstatic.com"],
+          imgSrc: ["'self'", "data:", "https:", "blob:"],
+          connectSrc: ["'self'", "https://api.example.com"],
+          frameSrc: ["'none'"],
+          objectSrc: ["'none'"],
+          upgradeInsecureRequests: [],
+        },
+      },
 
-    // Strict Transport Security
-    hsts: {
-      maxAge: 31536000, // 1 year
-      includeSubDomains: true,
-      preload: true
-    },
+      // Strict Transport Security
+      hsts: {
+        maxAge: 31536000, // 1 year
+        includeSubDomains: true,
+        preload: true,
+      },
 
-    // X-Frame-Options
-    frameguard: {
-      action: 'deny'
-    },
+      // X-Frame-Options
+      frameguard: {
+        action: "deny",
+      },
 
-    // X-Content-Type-Options
-    noSniff: true,
+      // X-Content-Type-Options
+      noSniff: true,
 
-    // X-XSS-Protection
-    xssFilter: true,
+      // X-XSS-Protection
+      xssFilter: true,
 
-    // Referrer-Policy
-    referrerPolicy: {
-      policy: 'strict-origin-when-cross-origin'
-    },
+      // Referrer-Policy
+      referrerPolicy: {
+        policy: "strict-origin-when-cross-origin",
+      },
 
-    // Permissions-Policy (formerly Feature-Policy)
-    permittedCrossDomainPolicies: {
-      permittedPolicies: 'none'
-    }
-  }));
+      // Permissions-Policy (formerly Feature-Policy)
+      permittedCrossDomainPolicies: {
+        permittedPolicies: "none",
+      },
+    }),
+  );
 
   // Additional custom headers
   app.use((req, res, next) => {
     // Permissions Policy
     res.setHeader(
-      'Permissions-Policy',
-      'geolocation=(), microphone=(), camera=(), payment=(), usb=()'
+      "Permissions-Policy",
+      "geolocation=(), microphone=(), camera=(), payment=(), usb=()",
     );
 
     // Expect-CT
-    res.setHeader(
-      'Expect-CT',
-      'max-age=86400, enforce'
-    );
+    res.setHeader("Expect-CT", "max-age=86400, enforce");
 
     // Cross-Origin policies
-    res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
-    res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
-    res.setHeader('Cross-Origin-Resource-Policy', 'same-origin');
+    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+    res.setHeader("Cross-Origin-Resource-Policy", "same-origin");
 
     // Remove powered-by header
-    res.removeHeader('X-Powered-By');
+    res.removeHeader("X-Powered-By");
 
     next();
   });
 }
 
 // CSP Violation Reporter
-app.post('/api/csp-report', express.json({ type: 'application/csp-report' }), (req, res) => {
-  const report = req.body['csp-report'];
+app.post(
+  "/api/csp-report",
+  express.json({ type: "application/csp-report" }),
+  (req, res) => {
+    const report = req.body["csp-report"];
 
-  console.error('CSP Violation:', {
-    documentUri: report['document-uri'],
-    violatedDirective: report['violated-directive'],
-    blockedUri: report['blocked-uri'],
-    sourceFile: report['source-file'],
-    lineNumber: report['line-number']
-  });
+    console.error("CSP Violation:", {
+      documentUri: report["document-uri"],
+      violatedDirective: report["violated-directive"],
+      blockedUri: report["blocked-uri"],
+      sourceFile: report["source-file"],
+      lineNumber: report["line-number"],
+    });
 
-  // Store in database or send to monitoring service
-  // monitoringService.logCSPViolation(report);
+    // Store in database or send to monitoring service
+    // monitoringService.logCSPViolation(report);
 
-  res.status(204).end();
-});
+    res.status(204).end();
+  },
+);
 
 module.exports = { configureSecurityHeaders };
 ```
@@ -357,54 +350,54 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ```javascript
 // test-security-headers.js
-const axios = require('axios');
+const axios = require("axios");
 
 async function testSecurityHeaders(url) {
   console.log(`\n=== Testing Security Headers for ${url} ===\n`);
 
   try {
     const response = await axios.get(url, {
-      validateStatus: () => true
+      validateStatus: () => true,
     });
 
     const headers = response.headers;
 
     const tests = {
-      'Strict-Transport-Security': {
-        present: !!headers['strict-transport-security'],
-        value: headers['strict-transport-security'],
-        recommended: 'max-age=31536000; includeSubDomains; preload'
+      "Strict-Transport-Security": {
+        present: !!headers["strict-transport-security"],
+        value: headers["strict-transport-security"],
+        recommended: "max-age=31536000; includeSubDomains; preload",
       },
-      'X-Frame-Options': {
-        present: !!headers['x-frame-options'],
-        value: headers['x-frame-options'],
-        recommended: 'DENY or SAMEORIGIN'
+      "X-Frame-Options": {
+        present: !!headers["x-frame-options"],
+        value: headers["x-frame-options"],
+        recommended: "DENY or SAMEORIGIN",
       },
-      'X-Content-Type-Options': {
-        present: !!headers['x-content-type-options'],
-        value: headers['x-content-type-options'],
-        recommended: 'nosniff'
+      "X-Content-Type-Options": {
+        present: !!headers["x-content-type-options"],
+        value: headers["x-content-type-options"],
+        recommended: "nosniff",
       },
-      'X-XSS-Protection': {
-        present: !!headers['x-xss-protection'],
-        value: headers['x-xss-protection'],
-        recommended: '1; mode=block'
+      "X-XSS-Protection": {
+        present: !!headers["x-xss-protection"],
+        value: headers["x-xss-protection"],
+        recommended: "1; mode=block",
       },
-      'Content-Security-Policy': {
-        present: !!headers['content-security-policy'],
-        value: headers['content-security-policy'],
-        recommended: 'Define strict CSP'
+      "Content-Security-Policy": {
+        present: !!headers["content-security-policy"],
+        value: headers["content-security-policy"],
+        recommended: "Define strict CSP",
       },
-      'Referrer-Policy': {
-        present: !!headers['referrer-policy'],
-        value: headers['referrer-policy'],
-        recommended: 'strict-origin-when-cross-origin'
+      "Referrer-Policy": {
+        present: !!headers["referrer-policy"],
+        value: headers["referrer-policy"],
+        recommended: "strict-origin-when-cross-origin",
       },
-      'Permissions-Policy': {
-        present: !!headers['permissions-policy'],
-        value: headers['permissions-policy'],
-        recommended: 'Restrict dangerous features'
-      }
+      "Permissions-Policy": {
+        present: !!headers["permissions-policy"],
+        value: headers["permissions-policy"],
+        recommended: "Restrict dangerous features",
+      },
     };
 
     let passed = 0;
@@ -427,19 +420,19 @@ async function testSecurityHeaders(url) {
 
     const score = (passed / Object.keys(tests).length) * 100;
     console.log(`Security Score: ${score.toFixed(0)}%`);
-
   } catch (error) {
-    console.error('Error testing headers:', error.message);
+    console.error("Error testing headers:", error.message);
   }
 }
 
 // Usage
-testSecurityHeaders('https://example.com');
+testSecurityHeaders("https://example.com");
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTPS everywhere
 - Implement strict CSP
 - Enable HSTS with preload
@@ -450,6 +443,7 @@ testSecurityHeaders('https://example.com');
 - Use security scanners
 
 ### ❌ DON'T
+
 - Allow unsafe-inline in CSP
 - Skip HSTS on subdomains
 - Ignore CSP violations

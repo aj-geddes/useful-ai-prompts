@@ -1,13 +1,14 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Design and execute performance tests to measure response times, throughput,
+date: "2025-01-01"
+description:
+  Design and execute performance tests to measure response times, throughput,
   and resource utilization. Use for performance test, load test, JMeter, k6, benchmark,
   latency testing, and scalability analysis.
 layout: skill
 slug: performance-testing
 tags:
-- testing
+  - testing
 title: performance-testing
 ---
 
@@ -43,42 +44,42 @@ Performance testing measures how systems behave under various load conditions, i
 
 ```javascript
 // load-test.js
-import http from 'k6/http';
-import { check, sleep } from 'k6';
-import { Rate, Trend } from 'k6/metrics';
+import http from "k6/http";
+import { check, sleep } from "k6";
+import { Rate, Trend } from "k6/metrics";
 
 // Custom metrics
-const errorRate = new Rate('errors');
-const orderDuration = new Trend('order_duration');
+const errorRate = new Rate("errors");
+const orderDuration = new Trend("order_duration");
 
 // Test configuration
 export const options = {
   stages: [
-    { duration: '2m', target: 10 },   // Ramp up to 10 users
-    { duration: '5m', target: 10 },   // Stay at 10 users
-    { duration: '2m', target: 50 },   // Ramp up to 50 users
-    { duration: '5m', target: 50 },   // Stay at 50 users
-    { duration: '2m', target: 0 },    // Ramp down to 0
+    { duration: "2m", target: 10 }, // Ramp up to 10 users
+    { duration: "5m", target: 10 }, // Stay at 10 users
+    { duration: "2m", target: 50 }, // Ramp up to 50 users
+    { duration: "5m", target: 50 }, // Stay at 50 users
+    { duration: "2m", target: 0 }, // Ramp down to 0
   ],
   thresholds: {
-    http_req_duration: ['p(95)<500'],  // 95% of requests under 500ms
-    http_req_failed: ['rate<0.01'],    // Error rate under 1%
-    errors: ['rate<0.1'],              // Custom error rate under 10%
+    http_req_duration: ["p(95)<500"], // 95% of requests under 500ms
+    http_req_failed: ["rate<0.01"], // Error rate under 1%
+    errors: ["rate<0.1"], // Custom error rate under 10%
   },
 };
 
 // Test data
-const BASE_URL = 'https://api.example.com';
+const BASE_URL = "https://api.example.com";
 let authToken;
 
 export function setup() {
   // Login once and get auth token
   const loginRes = http.post(`${BASE_URL}/auth/login`, {
-    email: 'test@example.com',
-    password: 'password123',
+    email: "test@example.com",
+    password: "password123",
   });
 
-  return { token: loginRes.json('token') };
+  return { token: loginRes.json("token") };
 }
 
 export default function (data) {
@@ -88,32 +89,32 @@ export default function (data) {
   });
 
   check(productsRes, {
-    'products status is 200': (r) => r.status === 200,
-    'products response time < 200ms': (r) => r.timings.duration < 200,
-    'has products array': (r) => Array.isArray(r.json('products')),
+    "products status is 200": (r) => r.status === 200,
+    "products response time < 200ms": (r) => r.timings.duration < 200,
+    "has products array": (r) => Array.isArray(r.json("products")),
   }) || errorRate.add(1);
 
   sleep(1);
 
   // Test 2: Create order (write-heavy)
   const orderPayload = JSON.stringify({
-    userId: 'user-123',
+    userId: "user-123",
     items: [
-      { productId: 'prod-1', quantity: 2 },
-      { productId: 'prod-2', quantity: 1 },
+      { productId: "prod-1", quantity: 2 },
+      { productId: "prod-2", quantity: 1 },
     ],
   });
 
   const orderRes = http.post(`${BASE_URL}/orders`, orderPayload, {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
       Authorization: `Bearer ${data.token}`,
     },
   });
 
   const orderSuccess = check(orderRes, {
-    'order status is 201': (r) => r.status === 201,
-    'order has id': (r) => r.json('id') !== undefined,
+    "order status is 201": (r) => r.status === 201,
+    "order has id": (r) => r.json("id") !== undefined,
   });
 
   if (!orderSuccess) {
@@ -126,13 +127,13 @@ export default function (data) {
 
   // Test 3: Get order details
   if (orderSuccess) {
-    const orderId = orderRes.json('id');
+    const orderId = orderRes.json("id");
     const orderDetailRes = http.get(`${BASE_URL}/orders/${orderId}`, {
       headers: { Authorization: `Bearer ${data.token}` },
     });
 
     check(orderDetailRes, {
-      'order detail status is 200': (r) => r.status === 200,
+      "order detail status is 200": (r) => r.status === 200,
     }) || errorRate.add(1);
   }
 
@@ -463,8 +464,8 @@ class PerformanceMonitor {
   }
 
   getStats(name) {
-    const measurements = this.metrics.filter(m => m.name === name);
-    const durations = measurements.map(m => m.duration);
+    const measurements = this.metrics.filter((m) => m.name === name);
+    const durations = measurements.map((m) => m.duration);
 
     return {
       count: measurements.length,
@@ -487,14 +488,14 @@ class PerformanceMonitor {
 // Usage in tests
 const monitor = new PerformanceMonitor();
 
-test('API endpoint performance', async () => {
+test("API endpoint performance", async () => {
   for (let i = 0; i < 100; i++) {
-    await monitor.measureEndpoint('getUsers', async () => {
-      return await fetch('/api/users').then(r => r.json());
+    await monitor.measureEndpoint("getUsers", async () => {
+      return await fetch("/api/users").then((r) => r.json());
     });
   }
 
-  const stats = monitor.getStats('getUsers');
+  const stats = monitor.getStats("getUsers");
 
   expect(stats.p95).toBeLessThan(500); // 95th percentile under 500ms
   expect(stats.mean).toBeLessThan(200); // Average under 200ms
@@ -504,6 +505,7 @@ test('API endpoint performance', async () => {
 ## Performance Metrics
 
 ### Response Time
+
 - **Average**: Mean response time
 - **Median (P50)**: 50th percentile
 - **P95**: 95th percentile (SLA target)
@@ -511,11 +513,13 @@ test('API endpoint performance', async () => {
 - **Max**: Slowest response
 
 ### Throughput
+
 - **Requests/second**: Number of requests processed
 - **Transactions/second**: Completed transactions
 - **Data transferred**: MB/s or GB/s
 
 ### Resource Utilization
+
 - **CPU**: Percentage usage
 - **Memory**: Heap, RSS, external
 - **Network**: Bandwidth usage
@@ -524,6 +528,7 @@ test('API endpoint performance', async () => {
 ## Best Practices
 
 ### ✅ DO
+
 - Define clear performance requirements (SLAs)
 - Test with realistic data volumes
 - Monitor resource utilization
@@ -534,6 +539,7 @@ test('API endpoint performance', async () => {
 - Identify and fix N+1 query problems
 
 ### ❌ DON'T
+
 - Test only with small datasets
 - Ignore memory leaks
 - Test in unrealistic environments

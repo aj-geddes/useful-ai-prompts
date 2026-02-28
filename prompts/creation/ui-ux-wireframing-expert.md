@@ -1,6 +1,7 @@
 # UI/UX Wireframing Expert
 
 ## Metadata
+
 - **ID**: creation-ui-ux-wireframing-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive UI/UX wireframing assistant that creates intuitive, user-centere
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing mobile app interfaces for iOS or Android
 - Creating web application user experiences
 - Developing desktop software interface layouts
@@ -25,6 +27,7 @@ A comprehensive UI/UX wireframing assistant that creates intuitive, user-centere
 - Planning prototype flows for user testing
 
 **Anti-Patterns (When Not to Use):**
+
 - High-fidelity visual design with brand styling (use visual design prompts)
 - Marketing website design (use landing page prompts)
 - Complex data visualization dashboards (use data visualization prompts)
@@ -114,6 +117,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Interface type: Mobile app (iOS and Android)
 2. Purpose: Task management for creative professionals
@@ -138,6 +142,7 @@ Requirements:
 ## USER FLOWS
 
 ### Primary Flow: Quick Task Creation
+
 ```
 App Launch -> Dashboard -> "+" Button -> Task Entry -> Save -> Return
      |                        |                      |
@@ -149,14 +154,17 @@ Onboarding              Voice Input          Add Details
 ### Key Task Flows
 
 **1. Create New Project**
+
 - Dashboard -> New Project -> Enter Name -> Choose Template -> Set Deadline
 - Time to complete: 45 seconds
 
 **2. Quick Task Entry**
+
 - Any screen -> Long press "+" -> Type/speak task -> Auto-assign
 - Time to complete: 10 seconds
 
 **3. Time Tracking**
+
 - Task list -> Swipe right on task -> Timer starts -> Tap to stop
 - Interaction: Single gesture
 
@@ -197,6 +205,7 @@ Onboarding              Voice Input          Add Details
 ```
 
 **Design Decisions:**
+
 - Project cards show visual progress
 - Today's tasks prominently displayed
 - Floating action button for quick task creation
@@ -229,6 +238,7 @@ Onboarding              Voice Input          Add Details
 ```
 
 **Interaction Details:**
+
 - Auto-focus on text field
 - Smart project suggestion based on recent activity
 - Voice input option prominent
@@ -238,12 +248,14 @@ Onboarding              Voice Input          Add Details
 ### Gestures & Micro-interactions
 
 **Task Management:**
+
 - Swipe right: Start timer on task
 - Swipe left: Task options (edit, delete, move)
 - Long press: Multi-select mode
 - Drag & drop: Reorder or move between projects
 
 **Success Feedback:**
+
 ```
 Task complete ->
 Checkbox fills ->
@@ -255,6 +267,7 @@ Haptic feedback
 ## COMPONENT LIBRARY
 
 ### Task Card
+
 ```
 Size: Full width - 32px margins
 Height: 72px (collapsed), auto (expanded)
@@ -270,6 +283,7 @@ States:
 ```
 
 ### Input Fields
+
 ```
 Height: 48px
 Border: 1px gray (2px primary on focus)
@@ -298,6 +312,7 @@ Font size: 16px
 ## IMPLEMENTATION SPECIFICATIONS
 
 **Color System:**
+
 - Primary: #5B67CA (Indigo)
 - Secondary: #FDB44E (Amber)
 - Success: #2ED47A
@@ -305,22 +320,26 @@ Font size: 16px
 - Background: #FAFBFF
 
 **Typography:**
+
 - Font: SF Pro (iOS) / Roboto (Android)
 - Headings: 20-24px semibold
 - Body: 16px regular
 
 **Spacing Grid:**
+
 - Base unit: 8px
 - Common spacings: 8, 16, 24, 32, 48px
 
 ### Accessibility Considerations
 
 **Visual:**
+
 - WCAG AA compliant colors
 - Dynamic type support
 - Dark mode ready
 
 **Motor:**
+
 - 44pt minimum touch targets
 - Gesture alternatives
 - Keyboard navigation

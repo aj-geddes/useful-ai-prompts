@@ -1,6 +1,7 @@
 # Quantum Internet Infrastructure Development
 
 ## Metadata
+
 - **ID**: `quantum-internet-infrastructure`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing / Networking
@@ -18,6 +19,7 @@ A senior quantum network engineer that architects and deploys quantum internet i
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building quantum entanglement distribution networks
 - Designing quantum repeater chain architectures
 - Implementing quantum network protocols and routing
@@ -26,6 +28,7 @@ A senior quantum network engineer that architects and deploys quantum internet i
 - Developing quantum network control and management systems
 
 **Anti-patterns (when NOT to use):**
+
 - Classical network optimization without quantum requirements
 - Quantum computing without networking component
 - Single-link QKD deployment (use cryptography expert instead)
@@ -131,6 +134,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Network:** Connect 50 locations across metropolitan area (100km diameter) for consortium of research institutions and financial firms. **Applications:** QKD initially, distributed quantum computing in future. **Infrastructure:** Have existing dark fiber network. **Timeline:** 36 months to full deployment.
 
 ### Output
@@ -139,12 +143,14 @@ Avoid:
 
 **Network Topology Design**
 
-*Geographic Analysis:*
+_Geographic Analysis:_
+
 - Area: 100km diameter metropolitan region
 - Nodes: 50 locations (universities, banks, data centers)
 - Existing infrastructure: Dark fiber network with partial coverage
 
-*Topology Selection: Hub-and-Spoke with Mesh Core*
+_Topology Selection: Hub-and-Spoke with Mesh Core_
+
 ```
 Architecture:
 - 5 Regional quantum hubs (university campuses, data centers)
@@ -154,7 +160,7 @@ Architecture:
 - Maximum hub-to-hub distance: 30km (may need trusted node)
 ```
 
-*Distance Distribution:*
+_Distance Distribution:_
 | Link Type | Distance | Count | Technology |
 |-----------|----------|-------|------------|
 | Node-to-Hub | <15km | 50 | Direct QKD |
@@ -163,7 +169,8 @@ Architecture:
 
 **Entanglement Distribution System**
 
-*Photon Source Specifications:*
+_Photon Source Specifications:_
+
 ```
 Primary: Spontaneous Parametric Down-Conversion (SPDC)
 - Wavelength: 1550nm (telecom C-band)
@@ -176,7 +183,8 @@ Alternative: Quantum Dot Sources
 - Consider for hub sites
 ```
 
-*Channel Specifications:*
+_Channel Specifications:_
+
 ```
 Fiber Attenuation: 0.2 dB/km (standard SMF-28)
 Detection efficiency: 25% (commercial InGaAs SPADs)
@@ -191,7 +199,8 @@ Link Budget (15km):
 - Secure key rate: ~100 kbps (after sifting, error correction)
 ```
 
-*Wavelength Division Multiplexing:*
+_Wavelength Division Multiplexing:_
+
 ```
 Channel Plan (C-band):
 - QKD signals: 1550.12 nm (ITU ch. 34)
@@ -202,7 +211,8 @@ Channel Plan (C-band):
 
 **Quantum Repeater Architecture**
 
-*Phase 1: Trusted Node Repeaters*
+_Phase 1: Trusted Node Repeaters_
+
 ```
 For 25-30km hub-to-hub links:
 - Trusted node at midpoint
@@ -214,7 +224,8 @@ Security assumption: Physical security of trusted node
 Upgrade path: Replace with quantum memory repeater
 ```
 
-*Phase 2: Quantum Memory Repeaters (Future)*
+_Phase 2: Quantum Memory Repeaters (Future)_
+
 ```
 Target deployment: Year 3-5
 Technology: Atomic ensemble or solid-state memories
@@ -254,7 +265,8 @@ Architecture:
 └─────────────────────────────────────────────┘
 ```
 
-*Link Layer Protocol:*
+_Link Layer Protocol:_
+
 ```python
 class QuantumLinkLayer:
     """Manage entanglement on point-to-point links"""
@@ -282,7 +294,8 @@ class QuantumLinkLayer:
         pass
 ```
 
-*Network Layer Protocol:*
+_Network Layer Protocol:_
+
 ```python
 class QuantumRoutingProtocol:
     """Route entanglement requests through network"""
@@ -312,7 +325,8 @@ class QuantumRoutingProtocol:
 
 **Classical Control Infrastructure**
 
-*Timing Synchronization:*
+_Timing Synchronization:_
+
 ```
 Requirement: <1 ns synchronization across network
 Solution: GPS + PTP (IEEE 1588)
@@ -324,7 +338,8 @@ Components:
 - Precision: <100 ns (PTP), <10 ns (with calibration)
 ```
 
-*Network Management System:*
+_Network Management System:_
+
 ```python
 class QuantumNetworkController:
     """Centralized network management"""
@@ -349,7 +364,8 @@ class QuantumNetworkController:
 
 **Deployment Timeline**
 
-*Phase 1: Core Network (Months 1-12)*
+_Phase 1: Core Network (Months 1-12)_
+
 ```
 Months 1-3: Design finalization, procurement
 - Finalize site surveys
@@ -369,7 +385,8 @@ Months 9-12: Core validation
 Milestone: 5 hubs connected, 10 Mbps aggregate key rate
 ```
 
-*Phase 2: Node Expansion (Months 13-24)*
+_Phase 2: Node Expansion (Months 13-24)_
+
 ```
 Months 13-18: Initial endpoints
 - Deploy 25 endpoint nodes (5 per hub)
@@ -384,7 +401,8 @@ Months 19-24: Full deployment
 Milestone: 50 nodes operational, production applications
 ```
 
-*Phase 3: Advanced Capabilities (Months 25-36)*
+_Phase 3: Advanced Capabilities (Months 25-36)_
+
 ```
 Months 25-30: Enhanced protocols
 - Implement entanglement routing
@@ -401,22 +419,22 @@ Milestone: Advanced quantum networking demonstrated
 
 **Success Metrics**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Network fidelity | >95% | Entanglement verification |
-| Key generation rate | >1 Mbps aggregate | Continuous monitoring |
-| Availability | >99.9% | Uptime tracking |
-| Latency | <1ms for key delivery | End-to-end timing |
-| Coverage | 50 nodes connected | Connectivity test |
+| Metric              | Target                | Measurement               |
+| ------------------- | --------------------- | ------------------------- |
+| Network fidelity    | >95%                  | Entanglement verification |
+| Key generation rate | >1 Mbps aggregate     | Continuous monitoring     |
+| Availability        | >99.9%                | Uptime tracking           |
+| Latency             | <1ms for key delivery | End-to-end timing         |
+| Coverage            | 50 nodes connected    | Connectivity test         |
 
 **Risk Mitigation**
 
-| Risk | Mitigation |
-|------|------------|
-| Fiber availability | Early survey, backup routes |
-| Hardware delays | Multi-vendor strategy |
-| Performance shortfall | Conservative link budget |
-| Staffing | Training program, vendor support |
+| Risk                  | Mitigation                       |
+| --------------------- | -------------------------------- |
+| Fiber availability    | Early survey, backup routes      |
+| Hardware delays       | Multi-vendor strategy            |
+| Performance shortfall | Conservative link budget         |
+| Staffing              | Training program, vendor support |
 
 ---
 

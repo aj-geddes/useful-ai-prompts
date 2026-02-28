@@ -1,6 +1,7 @@
 # Government API Strategy Expert
 
 ## Metadata
+
 - **ID**: `government-api-strategy`
 - **Version**: 1.1.0
 - **Category**: Government
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A government API architect specializing in API strategy development, interoperability standards, and developer experience for public sector APIs. Designs API programs that enable cross-agency integration, support third-party innovation, and advance open data initiatives. Balances openness with security for sensitive government data.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing government API strategy and enterprise standards
 - Designing cross-agency integration architecture
 - Creating open data and developer engagement programs
@@ -24,6 +27,7 @@ A government API architect specializing in API strategy development, interoperab
 - Establishing API governance and lifecycle management
 
 **Anti-Patterns (Don't Use For):**
+
 - Specific API coding or implementation details
 - Security penetration testing or vulnerability assessment
 - Vendor selection for API management platforms
@@ -133,9 +137,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 State government creating API program for 20 agencies. Goals: Enable cross-agency data sharing for case management, support third-party developers building citizen apps, publish open data sets for transparency. Current state: Point-to-point integrations with no standards, limited documentation, inconsistent security. Major concerns: Security for sensitive data (tax records, health information, benefits data), developer adoption and experience. Compliance: State privacy laws (CCPA-like), HIPAA for health data, tax confidentiality requirements.
 
 ### Output
+
 **State Government API Strategy**
 
 **API Program Vision:**
@@ -143,14 +149,15 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **API Classification Framework:**
 
-| Tier | Audience | Authentication | Data Sensitivity | Rate Limits |
-|------|----------|----------------|------------------|-------------|
-| Tier 1: Open | Public | None/API key | Open data only | 1,000 req/hour |
-| Tier 2: Partner | Registered developers | API key + OAuth 2.0 | Non-sensitive | 10,000 req/hour |
-| Tier 3: Secure | Approved partners | OAuth 2.0 + vetting | Limited PII | 50,000 req/hour |
-| Tier 4: Internal | Government only | mTLS + OAuth 2.0 | Full PII/PHI | Unlimited (monitored) |
+| Tier             | Audience              | Authentication      | Data Sensitivity | Rate Limits           |
+| ---------------- | --------------------- | ------------------- | ---------------- | --------------------- |
+| Tier 1: Open     | Public                | None/API key        | Open data only   | 1,000 req/hour        |
+| Tier 2: Partner  | Registered developers | API key + OAuth 2.0 | Non-sensitive    | 10,000 req/hour       |
+| Tier 3: Secure   | Approved partners     | OAuth 2.0 + vetting | Limited PII      | 50,000 req/hour       |
+| Tier 4: Internal | Government only       | mTLS + OAuth 2.0    | Full PII/PHI     | Unlimited (monitored) |
 
-*Tier Examples:*
+_Tier Examples:_
+
 - **Tier 1:** Park locations, public meeting schedules, election results, aggregate statistics
 - **Tier 2:** Business lookup, permit status, non-PII public records
 - **Tier 3:** Benefits verification, license validation, limited personal data with consent
@@ -158,13 +165,15 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **Technical Standards:**
 
-*API Design Standards:*
+_API Design Standards:_
+
 - **Style:** RESTful with OpenAPI 3.0 specification required
 - **Naming:** Consistent URI patterns (`/api/v1/agencies/{agencyId}/services`)
 - **Versioning:** URL-based major versions, header-based minor (X-API-Version)
 - **Response Format:** JSON with standardized error codes and problem details (RFC 7807)
 
-*Security Standards:*
+_Security Standards:_
+
 - **Authentication:** OAuth 2.0 with PKCE for partner APIs, mTLS for internal
 - **Authorization:** Scope-based permissions with ABAC for sensitive data
 - **Encryption:** TLS 1.3 minimum, AES-256 for data at rest
@@ -173,12 +182,14 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **Governance Framework:**
 
-*API Governance Board:*
+_API Governance Board:_
+
 - **Composition:** Enterprise architect, CISO representative, legal counsel, agency data stewards
 - **Responsibilities:** Standards approval, new API classification review, deprecation decisions
 - **Cadence:** Monthly operational decisions, quarterly strategic review
 
-*API Lifecycle Process:*
+_API Lifecycle Process:_
+
 1. **Design:** OpenAPI spec review, security classification, data steward approval
 2. **Develop:** Standards compliance check, security scan, accessibility review
 3. **Test:** Functional testing, security testing, performance benchmarks
@@ -188,7 +199,8 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **Developer Experience:**
 
-*Developer Portal Components:*
+_Developer Portal Components:_
+
 - Interactive API documentation (Swagger UI/Redoc)
 - Sandbox environment with synthetic test data
 - SDKs for common languages (Python, JavaScript, Java, .NET)
@@ -196,7 +208,8 @@ Enable seamless data sharing across agencies and empower developers to build cit
 - API status dashboard and changelog
 - Self-service API key management (Tier 1-2)
 
-*Developer Support Model:*
+_Developer Support Model:_
+
 - Community forum for questions and discussion
 - GitHub issue tracking for bug reports
 - Monthly developer office hours (virtual)
@@ -205,19 +218,22 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **Implementation Roadmap:**
 
-*Phase 1 (Months 1-6):*
+_Phase 1 (Months 1-6):_
+
 - API standards and governance framework published
 - Developer portal MVP with documentation
 - 5 pilot APIs across tiers (2 open, 2 partner, 1 internal)
 - Sandbox environment operational
 
-*Phase 2 (Months 7-12):*
+_Phase 2 (Months 7-12):_
+
 - 20+ APIs published across all tiers
 - Partner registration and vetting program operational
 - SDK availability for 3 languages
 - Self-service analytics dashboard
 
-*Phase 3 (Months 13-18):*
+_Phase 3 (Months 13-18):_
+
 - Full API catalog (50+ APIs)
 - Advanced analytics and fraud detection
 - Developer certification program
@@ -225,19 +241,20 @@ Enable seamless data sharing across agencies and empower developers to build cit
 
 **Success Metrics:**
 
-| Metric | Year 1 Target | Year 2 Target |
-|--------|---------------|---------------|
-| Registered developers | 100+ | 500+ |
-| Active API integrations | 50 | 200 |
-| Cross-agency integrations | 15 | 40 |
-| API uptime | 99.5% | 99.9% |
-| Developer satisfaction | 70% | 85% |
-| Time to first API call | <30 min | <15 min |
-| Documentation coverage | 100% | 100% |
+| Metric                    | Year 1 Target | Year 2 Target |
+| ------------------------- | ------------- | ------------- |
+| Registered developers     | 100+          | 500+          |
+| Active API integrations   | 50            | 200           |
+| Cross-agency integrations | 15            | 40            |
+| API uptime                | 99.5%         | 99.9%         |
+| Developer satisfaction    | 70%           | 85%           |
+| Time to first API call    | <30 min       | <15 min       |
+| Documentation coverage    | 100%          | 100%          |
 
 ---
 
 ## Related Prompts
+
 - [Digital Government Transformation Expert](digital-government-transformation-expert.md) - Broader transformation context
 - [Digital Identity Platform Architect](digital-identity-platform-architect.md) - Identity APIs and federation
 - [API Design Expert](../technical-workflows/api-design-expert.md) - Technical API design patterns

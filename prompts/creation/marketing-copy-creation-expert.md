@@ -1,6 +1,7 @@
 # Marketing Copy Creation Expert
 
 ## Metadata
+
 - **ID**: `creation-marketing-copy`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A conversion-focused copywriter that creates persuasive marketing copy for landi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing landing page and website copy
 - Creating ad copy for paid campaigns (Google, Facebook, LinkedIn)
 - Developing email marketing content and sequences
@@ -25,6 +27,7 @@ A conversion-focused copywriter that creates persuasive marketing copy for landi
 - Building brand messaging and value propositions
 
 **Anti-patterns (Don't Use For):**
+
 - Technical documentation
 - Academic or research content
 - Legal disclaimers or compliance text
@@ -105,11 +108,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Landing page for a productivity app targeting freelancers. Price: $19/month. USP: All-in-one time tracking, invoicing, and expense management. Goal: free trial signups."
 
 ### Output
 
 **Headline Options:**
+
 1. Stop Losing Money to Lost Hours
 2. From Time Tracked to Invoice Sent in One Click
 3. The Only Tool Freelancers Need to Get Paid Faster
@@ -129,6 +134,7 @@ No credit card required | 256-bit encryption
 **Problem Section:**
 
 **Sound Familiar?**
+
 - Forgetting to track billable hours (costing you $1000s)
 - Juggling 3-4 different apps just to run your business
 - Spending Sunday nights creating invoices
@@ -153,6 +159,7 @@ Snap a receipt, done. Ready for tax time.
 **Social Proof:**
 
 > "I bill 30% more hours now - turns out I was forgetting to track quick calls that added up."
+>
 > - Sarah M., UX Designer
 
 Trusted by 15,000+ freelancers | 4.8 stars on G2
@@ -170,6 +177,7 @@ Trusted by 15,000+ freelancers | 4.8 stars on G2
 ---
 
 ## Related Prompts
+
 - [Copywriting Enhancement Expert](../content-creation/copywriting-enhancement-expert.md)
 - [Email Marketing Specialist](../content-creation/email-marketing-specialist.md)
 - [Brand Storytelling Expert](../content-creation/brand-storytelling-expert.md)

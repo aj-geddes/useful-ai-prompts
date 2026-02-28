@@ -25,14 +25,15 @@ Comprehensive guide to implementing structured, secure, and performant logging a
 ### 1. **Log Levels**
 
 #### Standard Log Levels
+
 ```typescript
 // logger.ts
 enum LogLevel {
-  DEBUG = 0,   // Detailed information for debugging
-  INFO = 1,    // General informational messages
-  WARN = 2,    // Warning messages, potentially harmful
-  ERROR = 3,   // Error messages, application can continue
-  FATAL = 4    // Critical errors, application must stop
+  DEBUG = 0, // Detailed information for debugging
+  INFO = 1, // General informational messages
+  WARN = 2, // Warning messages, potentially harmful
+  ERROR = 3, // Error messages, application can continue
+  FATAL = 4, // Critical errors, application must stop
 }
 
 class Logger {
@@ -63,8 +64,8 @@ class Logger {
         error: {
           message: error?.message,
           stack: error?.stack,
-          name: error?.name
-        }
+          name: error?.name,
+        },
       });
     }
   }
@@ -75,8 +76,8 @@ class Logger {
       error: {
         message: error?.message,
         stack: error?.stack,
-        name: error?.name
-      }
+        name: error?.name,
+      },
     });
     process.exit(1);
   }
@@ -86,7 +87,7 @@ class Logger {
       timestamp: new Date().toISOString(),
       level: LogLevel[level],
       message,
-      ...context
+      ...context,
     };
     console.log(JSON.stringify(logEntry));
   }
@@ -94,73 +95,75 @@ class Logger {
 
 // Usage
 const logger = new Logger(
-  process.env.NODE_ENV === 'production' ? LogLevel.INFO : LogLevel.DEBUG
+  process.env.NODE_ENV === "production" ? LogLevel.INFO : LogLevel.DEBUG,
 );
 
-logger.debug('Processing request', { userId: '123', requestId: 'abc' });
-logger.info('User logged in', { userId: '123' });
-logger.warn('Rate limit approaching', { userId: '123', count: 95 });
-logger.error('Database connection failed', dbError, { query: 'SELECT ...' });
+logger.debug("Processing request", { userId: "123", requestId: "abc" });
+logger.info("User logged in", { userId: "123" });
+logger.warn("Rate limit approaching", { userId: "123", count: 95 });
+logger.error("Database connection failed", dbError, { query: "SELECT ..." });
 ```
 
 ### 2. **Structured Logging (JSON)**
 
 #### Node.js with Winston
+
 ```typescript
 // winston-logger.ts
-import winston from 'winston';
+import winston from "winston";
 
 const logger = winston.createLogger({
-  level: process.env.LOG_LEVEL || 'info',
+  level: process.env.LOG_LEVEL || "info",
   format: winston.format.combine(
     winston.format.timestamp(),
     winston.format.errors({ stack: true }),
-    winston.format.json()
+    winston.format.json(),
   ),
   defaultMeta: {
-    service: 'user-service',
-    environment: process.env.NODE_ENV
+    service: "user-service",
+    environment: process.env.NODE_ENV,
   },
   transports: [
     // Write to console
     new winston.transports.Console({
       format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.simple()
-      )
+        winston.format.simple(),
+      ),
     }),
     // Write to file
     new winston.transports.File({
-      filename: 'logs/error.log',
-      level: 'error',
+      filename: "logs/error.log",
+      level: "error",
       maxsize: 5242880, // 5MB
-      maxFiles: 5
+      maxFiles: 5,
     }),
     new winston.transports.File({
-      filename: 'logs/combined.log',
+      filename: "logs/combined.log",
       maxsize: 5242880,
-      maxFiles: 5
-    })
-  ]
+      maxFiles: 5,
+    }),
+  ],
 });
 
 // Usage
-logger.info('User created', {
+logger.info("User created", {
   userId: user.id,
   email: user.email,
-  requestId: req.id
+  requestId: req.id,
 });
 
-logger.error('Payment processing failed', {
+logger.error("Payment processing failed", {
   error: error.message,
   stack: error.stack,
   orderId: order.id,
   amount: order.total,
-  userId: user.id
+  userId: user.id,
 });
 ```
 
 #### Python with structlog
+
 ```python
 # logger.py
 import structlog
@@ -202,6 +205,7 @@ logger.error("payment_failed",
 ```
 
 #### Go with zap
+
 ```go
 // logger.go
 package main
@@ -244,34 +248,35 @@ func main() {
 ### 3. **Contextual Logging**
 
 #### Request Context Middleware
+
 ```typescript
 // request-logger.ts
-import { v4 as uuidv4 } from 'uuid';
-import { AsyncLocalStorage } from 'async_hooks';
+import { v4 as uuidv4 } from "uuid";
+import { AsyncLocalStorage } from "async_hooks";
 
 const asyncLocalStorage = new AsyncLocalStorage();
 
 // Middleware to add request context
 export function requestLogger(req, res, next) {
-  const requestId = req.headers['x-request-id'] || uuidv4();
+  const requestId = req.headers["x-request-id"] || uuidv4();
   const context = {
     requestId,
     method: req.method,
     path: req.path,
     ip: req.ip,
-    userAgent: req.headers['user-agent'],
-    userId: req.user?.id
+    userAgent: req.headers["user-agent"],
+    userId: req.user?.id,
   };
 
   asyncLocalStorage.run(context, () => {
-    logger.info('Request started', context);
+    logger.info("Request started", context);
 
     // Log response when finished
-    res.on('finish', () => {
-      logger.info('Request completed', {
+    res.on("finish", () => {
+      logger.info("Request completed", {
         ...context,
         statusCode: res.statusCode,
-        duration: Date.now() - req.startTime
+        duration: Date.now() - req.startTime,
       });
     });
 
@@ -291,28 +296,29 @@ export function getLogger() {
     warn: (message: string, meta?: object) =>
       logger.warn(message, { ...context, ...meta }),
     debug: (message: string, meta?: object) =>
-      logger.debug(message, { ...context, ...meta })
+      logger.debug(message, { ...context, ...meta }),
   };
 }
 
 // Usage in route handler
-app.get('/api/users/:id', async (req, res) => {
+app.get("/api/users/:id", async (req, res) => {
   const log = getLogger();
 
-  log.info('Fetching user', { userId: req.params.id });
+  log.info("Fetching user", { userId: req.params.id });
 
   try {
     const user = await userService.findById(req.params.id);
-    log.info('User found', { userId: user.id });
+    log.info("User found", { userId: user.id });
     res.json(user);
   } catch (error) {
-    log.error('Failed to fetch user', error, { userId: req.params.id });
-    res.status(500).json({ error: 'Internal server error' });
+    log.error("Failed to fetch user", error, { userId: req.params.id });
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 ```
 
 #### Correlation IDs
+
 ```typescript
 // correlation-id.ts
 export class CorrelationIdManager {
@@ -329,8 +335,8 @@ export class CorrelationIdManager {
 
 // Middleware
 app.use((req, res, next) => {
-  const correlationId = req.headers['x-correlation-id'] || uuidv4();
-  res.setHeader('x-correlation-id', correlationId);
+  const correlationId = req.headers["x-correlation-id"] || uuidv4();
+  res.setHeader("x-correlation-id", correlationId);
 
   CorrelationIdManager.run(correlationId, () => {
     next();
@@ -342,28 +348,29 @@ const enhancedLogger = {
   info: (message: string, meta?: object) =>
     logger.info(message, {
       correlationId: CorrelationIdManager.get(),
-      ...meta
-    })
+      ...meta,
+    }),
 };
 ```
 
 ### 4. **PII and Sensitive Data Handling**
 
 #### Data Sanitization
+
 ```typescript
 // sanitizer.ts
 const SENSITIVE_FIELDS = [
-  'password',
-  'token',
-  'apiKey',
-  'ssn',
-  'creditCard',
-  'email',  // depending on regulations
-  'phone'   // depending on regulations
+  "password",
+  "token",
+  "apiKey",
+  "ssn",
+  "creditCard",
+  "email", // depending on regulations
+  "phone", // depending on regulations
 ];
 
 function sanitize(obj: any): any {
-  if (typeof obj !== 'object' || obj === null) {
+  if (typeof obj !== "object" || obj === null) {
     return obj;
   }
 
@@ -373,11 +380,13 @@ function sanitize(obj: any): any {
 
   const sanitized = {};
   for (const [key, value] of Object.entries(obj)) {
-    if (SENSITIVE_FIELDS.some(field =>
-      key.toLowerCase().includes(field.toLowerCase())
-    )) {
-      sanitized[key] = '[REDACTED]';
-    } else if (typeof value === 'object') {
+    if (
+      SENSITIVE_FIELDS.some((field) =>
+        key.toLowerCase().includes(field.toLowerCase()),
+      )
+    ) {
+      sanitized[key] = "[REDACTED]";
+    } else if (typeof value === "object") {
       sanitized[key] = sanitize(value);
     } else {
       sanitized[key] = value;
@@ -387,12 +396,15 @@ function sanitize(obj: any): any {
 }
 
 // Usage
-logger.info('User data', sanitize({
-  userId: '123',
-  email: 'user@example.com',  // Will be redacted
-  password: 'secret123',       // Will be redacted
-  name: 'John Doe'             // Will be logged
-}));
+logger.info(
+  "User data",
+  sanitize({
+    userId: "123",
+    email: "user@example.com", // Will be redacted
+    password: "secret123", // Will be redacted
+    name: "John Doe", // Will be logged
+  }),
+);
 
 // Output:
 // {
@@ -404,28 +416,30 @@ logger.info('User data', sanitize({
 ```
 
 #### Email/PII Masking
+
 ```typescript
 // masking.ts
 function maskEmail(email: string): string {
-  const [local, domain] = email.split('@');
-  const maskedLocal = local[0] + '*'.repeat(local.length - 2) + local[local.length - 1];
+  const [local, domain] = email.split("@");
+  const maskedLocal =
+    local[0] + "*".repeat(local.length - 2) + local[local.length - 1];
   return `${maskedLocal}@${domain}`;
 }
 
 function maskPhone(phone: string): string {
-  return phone.replace(/\d(?=\d{4})/g, '*');
+  return phone.replace(/\d(?=\d{4})/g, "*");
 }
 
 function maskCreditCard(cc: string): string {
-  return cc.replace(/\d(?=\d{4})/g, '*');
+  return cc.replace(/\d(?=\d{4})/g, "*");
 }
 
 // Usage
-logger.info('User registered', {
+logger.info("User registered", {
   userId: user.id,
-  email: maskEmail(user.email),           // u***r@example.com
-  phone: maskPhone(user.phone),            // ******1234
-  creditCard: maskCreditCard(user.card)    // ************1234
+  email: maskEmail(user.email), // u***r@example.com
+  phone: maskPhone(user.phone), // ******1234
+  creditCard: maskCreditCard(user.card), // ************1234
 });
 ```
 
@@ -451,7 +465,7 @@ class PerformanceLogger {
       operation,
       duration,
       durationMs: duration,
-      ...metadata
+      ...metadata,
     });
 
     // Alert if slow
@@ -460,12 +474,16 @@ class PerformanceLogger {
         operation,
         duration,
         threshold: 1000,
-        ...metadata
+        ...metadata,
       });
     }
   }
 
-  async measure<T>(operation: string, fn: () => Promise<T>, metadata?: object): Promise<T> {
+  async measure<T>(
+    operation: string,
+    fn: () => Promise<T>,
+    metadata?: object,
+  ): Promise<T> {
     this.start(operation);
     try {
       return await fn();
@@ -479,24 +497,25 @@ class PerformanceLogger {
 const perfLogger = new PerformanceLogger();
 
 // Manual timing
-perfLogger.start('database-query');
-const users = await db.query('SELECT * FROM users');
-perfLogger.end('database-query', { count: users.length });
+perfLogger.start("database-query");
+const users = await db.query("SELECT * FROM users");
+perfLogger.end("database-query", { count: users.length });
 
 // Automatic timing
 const result = await perfLogger.measure(
-  'complex-operation',
+  "complex-operation",
   async () => await processData(),
-  { userId: '123' }
+  { userId: "123" },
 );
 ```
 
 ### 6. **Centralized Logging**
 
 #### ELK Stack (Elasticsearch, Logstash, Kibana)
+
 ```yaml
 # docker-compose.yml
-version: '3'
+version: "3"
 services:
   elasticsearch:
     image: elasticsearch:8.0.0
@@ -555,41 +574,43 @@ output {
 ```
 
 #### Ship Logs to ELK
+
 ```typescript
 // winston-elk.ts
-import winston from 'winston';
-import 'winston-logstash';
+import winston from "winston";
+import "winston-logstash";
 
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Logstash({
       port: 5000,
-      host: 'logstash',
-      node_name: 'user-service',
-      max_connect_retries: -1
-    })
-  ]
+      host: "logstash",
+      node_name: "user-service",
+      max_connect_retries: -1,
+    }),
+  ],
 });
 ```
 
 #### AWS CloudWatch Logs
+
 ```typescript
 // cloudwatch-logger.ts
-import winston from 'winston';
-import WinstonCloudWatch from 'winston-cloudwatch';
+import winston from "winston";
+import WinstonCloudWatch from "winston-cloudwatch";
 
 const logger = winston.createLogger({
   transports: [
     new WinstonCloudWatch({
-      logGroupName: '/aws/lambda/user-service',
+      logGroupName: "/aws/lambda/user-service",
       logStreamName: () => {
-        const date = new Date().toISOString().split('T')[0];
+        const date = new Date().toISOString().split("T")[0];
         return `${date}-${process.env.LAMBDA_VERSION}`;
       },
-      awsRegion: 'us-east-1',
-      jsonMessage: true
-    })
-  ]
+      awsRegion: "us-east-1",
+      jsonMessage: true,
+    }),
+  ],
 });
 ```
 
@@ -597,33 +618,33 @@ const logger = winston.createLogger({
 
 ```typescript
 // tracing.ts
-import opentelemetry from '@opentelemetry/api';
-import { NodeTracerProvider } from '@opentelemetry/node';
-import { SimpleSpanProcessor } from '@opentelemetry/tracing';
-import { JaegerExporter } from '@opentelemetry/exporter-jaeger';
+import opentelemetry from "@opentelemetry/api";
+import { NodeTracerProvider } from "@opentelemetry/node";
+import { SimpleSpanProcessor } from "@opentelemetry/tracing";
+import { JaegerExporter } from "@opentelemetry/exporter-jaeger";
 
 // Setup tracer
 const provider = new NodeTracerProvider();
 provider.addSpanProcessor(
   new SimpleSpanProcessor(
     new JaegerExporter({
-      serviceName: 'user-service',
-      endpoint: 'http://jaeger:14268/api/traces'
-    })
-  )
+      serviceName: "user-service",
+      endpoint: "http://jaeger:14268/api/traces",
+    }),
+  ),
 );
 provider.register();
 
-const tracer = opentelemetry.trace.getTracer('user-service');
+const tracer = opentelemetry.trace.getTracer("user-service");
 
 // Usage in application
-app.get('/api/users/:id', async (req, res) => {
-  const span = tracer.startSpan('get-user', {
+app.get("/api/users/:id", async (req, res) => {
+  const span = tracer.startSpan("get-user", {
     attributes: {
-      'http.method': req.method,
-      'http.url': req.url,
-      'user.id': req.params.id
-    }
+      "http.method": req.method,
+      "http.url": req.url,
+      "user.id": req.params.id,
+    },
   });
 
   try {
@@ -633,22 +654,22 @@ app.get('/api/users/:id', async (req, res) => {
   } catch (error) {
     span.setStatus({
       code: opentelemetry.SpanStatusCode.ERROR,
-      message: error.message
+      message: error.message,
     });
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   } finally {
     span.end();
   }
 });
 
 async function fetchUser(userId: string, parentSpan: Span) {
-  const span = tracer.startSpan('database-query', {
+  const span = tracer.startSpan("database-query", {
     parent: parentSpan,
-    attributes: { 'db.statement': 'SELECT * FROM users WHERE id = ?' }
+    attributes: { "db.statement": "SELECT * FROM users WHERE id = ?" },
   });
 
   try {
-    const user = await db.query('SELECT * FROM users WHERE id = ?', [userId]);
+    const user = await db.query("SELECT * FROM users WHERE id = ?", [userId]);
     return user;
   } finally {
     span.end();
@@ -663,7 +684,7 @@ async function fetchUser(userId: string, parentSpan: Span) {
 class SamplingLogger {
   constructor(
     private logger: Logger,
-    private sampleRate: number = 0.1 // 10% sampling
+    private sampleRate: number = 0.1, // 10% sampling
   ) {}
 
   info(message: string, meta?: object) {
@@ -696,7 +717,7 @@ class SamplingLogger {
   private hashUserId(userId: string): number {
     let hash = 0;
     for (let i = 0; i < userId.length; i++) {
-      hash = ((hash << 5) - hash) + userId.charCodeAt(i);
+      hash = (hash << 5) - hash + userId.charCodeAt(i);
       hash |= 0;
     }
     return Math.abs(hash);
@@ -707,6 +728,7 @@ class SamplingLogger {
 ## Best Practices
 
 ### ✅ DO
+
 - Use structured logging (JSON) in production
 - Include correlation/request IDs in all logs
 - Log at appropriate levels (don't overuse DEBUG)
@@ -722,6 +744,7 @@ class SamplingLogger {
 - Set up alerts for error patterns
 
 ### ❌ DON'T
+
 - Log passwords, tokens, or sensitive data
 - Use console.log in production
 - Log at DEBUG level in production by default
@@ -738,15 +761,16 @@ class SamplingLogger {
 ## Common Patterns
 
 ### Pattern 1: Error Boundary Logging
+
 ```typescript
 class ErrorBoundary {
   static async handle(fn: () => Promise<void>) {
     try {
       await fn();
     } catch (error) {
-      logger.error('Unhandled error', error, {
+      logger.error("Unhandled error", error, {
         function: fn.name,
-        stack: error.stack
+        stack: error.stack,
       });
       throw error;
     }
@@ -755,20 +779,25 @@ class ErrorBoundary {
 ```
 
 ### Pattern 2: Audit Logging
+
 ```typescript
 function auditLog(action: string, resource: string) {
-  return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor,
+  ) {
     const originalMethod = descriptor.value;
 
-    descriptor.value = async function(...args: any[]) {
+    descriptor.value = async function (...args: any[]) {
       const result = await originalMethod.apply(this, args);
 
-      logger.info('Audit', {
+      logger.info("Audit", {
         action,
         resource,
         userId: this.userId,
         timestamp: new Date().toISOString(),
-        result: sanitize(result)
+        result: sanitize(result),
       });
 
       return result;
@@ -780,7 +809,7 @@ function auditLog(action: string, resource: string) {
 
 // Usage
 class UserService {
-  @auditLog('DELETE', 'user')
+  @auditLog("DELETE", "user")
   async deleteUser(userId: string) {
     // ...
   }

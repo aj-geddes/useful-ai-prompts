@@ -1,6 +1,7 @@
 # Knowledge Transfer Expert
 
 ## Metadata
+
 - **ID**: `communication-knowledge-transfer`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Captures, documents, and transfers critical organizational knowledge through structured transfer plans, documentation, and training programs. Ensures smooth transitions and preserves institutional knowledge when employees leave, roles change, or expertise needs to be shared across teams through systematic knowledge extraction and validation.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Employees leaving who hold critical undocumented knowledge
 - Succession planning for key roles
 - Standardizing processes across locations or teams
@@ -24,6 +27,7 @@ Captures, documents, and transfers critical organizational knowledge through str
 - Preserving knowledge before organizational changes
 
 **Anti-Patterns (When NOT to Use):**
+
 - Routine training materials for standard processes
 - Technical documentation for software systems
 - New employee onboarding programs
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our senior developer is leaving in 4 weeks. They're the only person who knows our legacy payment processing system. I need to transfer this knowledge to 2 junior developers. The system is business-critical and handles all payment processing. The knowledge includes code, undocumented processes, and vendor relationships."
 
 ### Output
@@ -116,15 +121,16 @@ Avoid:
 
 ### Critical Knowledge Areas
 
-| Area | Type | Priority | Risk if Lost |
-|------|------|----------|--------------|
-| Payment processing code | Technical | Critical | System failure |
-| Debugging procedures | Procedural | Critical | Extended outages |
-| Vendor contacts | Relationship | High | Support delays |
-| System architecture | Technical | High | Maintenance issues |
-| Workarounds/edge cases | Tacit | High | Operational errors |
+| Area                    | Type         | Priority | Risk if Lost       |
+| ----------------------- | ------------ | -------- | ------------------ |
+| Payment processing code | Technical    | Critical | System failure     |
+| Debugging procedures    | Procedural   | Critical | Extended outages   |
+| Vendor contacts         | Relationship | High     | Support delays     |
+| System architecture     | Technical    | High     | Maintenance issues |
+| Workarounds/edge cases  | Tacit        | High     | Operational errors |
 
 ### Transfer Priority Matrix
+
 ```
 CRITICAL (Transfer Week 1-2):
 ├── Payment processing flow
@@ -145,32 +151,41 @@ MEDIUM (Transfer Week 3-4):
 ## TRANSFER TIMELINE
 
 ### Week 1: Foundation
+
 **Monday-Wednesday:**
+
 - Knowledge holder documents core system architecture
 - Receivers shadow daily operations
 - Record video walkthrough of payment flow
 
 **Thursday-Friday:**
+
 - Joint troubleshooting session
 - Receivers attempt basic tasks with guidance
 - Document questions and gaps
 
 ### Week 2: Deep Dive
+
 **Focus:** Payment processing and critical procedures
+
 - Daily code walkthroughs (2 hours)
 - Documented debugging sessions
 - Vendor introduction calls
 - Practice scenarios under supervision
 
 ### Week 3: Handoff
+
 **Focus:** Independent operation with support
+
 - Receivers handle production issues
 - Knowledge holder observes and corrects
 - Document all edge cases encountered
 - Update runbooks with real situations
 
 ### Week 4: Validation
+
 **Focus:** Confirm competency and close gaps
+
 - Receivers operate independently
 - Knowledge holder available for questions only
 - Final documentation review
@@ -179,35 +194,43 @@ MEDIUM (Transfer Week 3-4):
 ## DOCUMENTATION PACKAGE
 
 ### System Documentation
+
 ```markdown
 # Payment Processing System
 
 ## Overview
+
 [Architecture diagram, data flow, key components]
 
 ## Critical Procedures
+
 1. Daily reconciliation process
 2. Error handling and recovery
 3. Vendor communication protocols
 
 ## Known Issues and Workarounds
+
 - Issue: [Description]
 - Symptoms: [What you'll see]
 - Workaround: [Step-by-step solution]
 
 ## Emergency Contacts
+
 - Vendor Support: [Contact] - Use for [scenarios]
 - Internal Escalation: [Contact] - When [criteria]
 ```
 
 ### Decision Log
+
 Document key architectural decisions with rationale:
+
 - What was decided
 - Why this approach was chosen
 - What alternatives were considered
 - When to revisit this decision
 
 ### Video Library
+
 - System architecture walkthrough (30 min)
 - Common issue debugging (series of 10-min videos)
 - Vendor call recordings (for context)
@@ -215,18 +238,21 @@ Document key architectural decisions with rationale:
 ## TRAINING APPROACH
 
 ### Shadowing Sessions
+
 - Receivers observe all payment operations
 - Knowledge holder explains thinking out loud
 - Receivers take notes and ask questions
 - Daily debrief on observations
 
 ### Hands-On Practice
+
 - Practice Scenario 1: Process normal payment batch
 - Practice Scenario 2: Handle common error type
 - Practice Scenario 3: Escalate to vendor support
 - Practice Scenario 4: Emergency recovery procedure
 
 ### Simulation
+
 - Create test environment for practice
 - Run failure scenarios with guidance
 - Increase independence each session
@@ -235,6 +261,7 @@ Document key architectural decisions with rationale:
 ## VALIDATION CHECKLIST
 
 **Core Competency Assessment:**
+
 - [ ] Can explain system architecture to stakeholders
 - [ ] Completes daily operations independently
 - [ ] Handles common error scenarios without assistance
@@ -242,6 +269,7 @@ Document key architectural decisions with rationale:
 - [ ] Has all vendor relationships established
 
 **Certification Criteria:**
+
 - Pass practical assessment (observed troubleshooting)
 - Complete documentation review with knowledge holder
 - Successfully handle one production issue independently
@@ -249,12 +277,14 @@ Document key architectural decisions with rationale:
 ## POST-TRANSFER SUPPORT
 
 ### 30-Day Support Plan
+
 - Knowledge holder available via Slack for 30 days
 - Weekly check-in calls for first 2 weeks
 - Documentation update sessions as gaps found
 - Escalation path to external consultant if needed
 
 ### Long-term Resources
+
 - Documentation stored in central knowledge base
 - Video library accessible permanently
 - Vendor relationships transferred formally
@@ -263,6 +293,7 @@ Document key architectural decisions with rationale:
 ---
 
 ## Related Prompts
+
 - [Technical Documentation Expert](technical-documentation-expert.md) - Create technical documentation
 - [Team Collaboration Expert](team-collaboration-expert.md) - Build team knowledge sharing
 - [Onboarding Process Design Expert](../learning-development/onboarding-process-design-expert.md) - Design onboarding programs

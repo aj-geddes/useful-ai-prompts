@@ -1,6 +1,7 @@
 # Meeting Minutes & Summarization Expert
 
 ## Metadata
+
 - **ID**: `business-meeting-minutes-summarization`
 - **Version**: 1.0.0
 - **Category**: Business/Administrative
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Transforms raw meeting content (transcripts, notes, recordings) into professional minutes with executive summaries, clear action items, and decision records. Ensures accountability through structured follow-up tracking.
 
 ## When to Use
+
 - Processing meeting transcripts into formal documentation
 - Creating action item lists with owners and deadlines
 - Documenting decisions for compliance or audit purposes
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need minutes from our weekly product team standup held yesterday. Attendees were Sarah Martinez (PM and meeting chair), Mike Chen (Tech Lead), Lisa Rodriguez (UX Designer), Tom Johnson (QA Engineer), and Jennifer Walsh (CEO, who joined for 15 minutes to discuss Q4 priorities). The main purpose was Sprint 23 review, Q4 roadmap alignment, and addressing user feedback. Key discussion: Feature X has significant delays due to resource constraints and quality concerns. Mike raised that we're two weeks behind. Jennifer approved delaying Feature X to Q1 2026 to protect our December 15 launch date. Sarah needs to update the project tracker and Alex needs to draft external communications about the scope change. The team also discussed Stripe integration needing a vendor consultation. Please format this for distribution to the entire product organization."
 
 ### Output
@@ -109,15 +113,17 @@ Avoid:
 **Distribution:** Product Organization
 
 ### ATTENDEES
-| Name | Role | Attendance |
-|------|------|------------|
-| Sarah Martinez | Product Manager | Full |
-| Mike Chen | Tech Lead | Full |
-| Lisa Rodriguez | UX Designer | Full |
-| Tom Johnson | QA Engineer | Full |
-| Jennifer Walsh | CEO | Partial (Q4 discussion) |
+
+| Name           | Role            | Attendance              |
+| -------------- | --------------- | ----------------------- |
+| Sarah Martinez | Product Manager | Full                    |
+| Mike Chen      | Tech Lead       | Full                    |
+| Lisa Rodriguez | UX Designer     | Full                    |
+| Tom Johnson    | QA Engineer     | Full                    |
+| Jennifer Walsh | CEO             | Partial (Q4 discussion) |
 
 ### EXECUTIVE SUMMARY
+
 - Sprint 23 progress at 80% completion (8 of 10 story points delivered)
 - **KEY DECISION:** Feature X delayed to Q1 2026 to protect launch quality (CEO approved)
 - Q4 launch remains on track for December 15 with adjusted scope
@@ -137,33 +143,35 @@ The team confirmed mobile performance optimization as the top priority based on 
 
 ### DECISIONS
 
-| Decision | Rationale | Approved By | Date |
-|----------|-----------|-------------|------|
-| Delay Feature X to Q1 2026 | Resource constraints, quality concerns, protect Dec 15 launch | Jennifer Walsh (CEO) | Jan 21 |
-| Prioritize mobile performance | Critical user feedback, highest impact | Mike Chen (Tech Lead) | Jan 21 |
+| Decision                      | Rationale                                                     | Approved By           | Date   |
+| ----------------------------- | ------------------------------------------------------------- | --------------------- | ------ |
+| Delay Feature X to Q1 2026    | Resource constraints, quality concerns, protect Dec 15 launch | Jennifer Walsh (CEO)  | Jan 21 |
+| Prioritize mobile performance | Critical user feedback, highest impact                        | Mike Chen (Tech Lead) | Jan 21 |
 
 ### ACTION ITEMS
 
-| Task | Owner | Due Date | Priority | Success Criteria |
-|------|-------|----------|----------|------------------|
-| Schedule Stripe vendor consultation | Mike Chen | Jan 23 | High | Meeting confirmed with vendor |
-| Complete mobile performance audit | Tom Johnson | Jan 25 | High | Report with 5+ optimization recommendations |
-| Update Q4 timeline in project tracker | Sarah Martinez | Jan 22 | Medium | All dates and milestones current |
-| Draft feature delay external communication | Alex Thompson | Jan 24 | Medium | Approved messaging for customers |
+| Task                                       | Owner          | Due Date | Priority | Success Criteria                            |
+| ------------------------------------------ | -------------- | -------- | -------- | ------------------------------------------- |
+| Schedule Stripe vendor consultation        | Mike Chen      | Jan 23   | High     | Meeting confirmed with vendor               |
+| Complete mobile performance audit          | Tom Johnson    | Jan 25   | High     | Report with 5+ optimization recommendations |
+| Update Q4 timeline in project tracker      | Sarah Martinez | Jan 22   | Medium   | All dates and milestones current            |
+| Draft feature delay external communication | Alex Thompson  | Jan 24   | Medium   | Approved messaging for customers            |
 
 ### FOLLOW-UP
+
 - **Next Meeting:** January 28, 2025, 10:00 AM
 - **Pending:** David Chen (CTO) requires briefing on Feature X decision
 - **Open Item:** Stripe integration approach pending vendor consultation
 
 ---
 
-*Minutes prepared by: [Document Author]*
-*Approved by: Sarah Martinez, Meeting Chair*
+_Minutes prepared by: [Document Author]_
+_Approved by: Sarah Martinez, Meeting Chair_
 
 ---
 
 ## Related Prompts
+
 - [Task Delegation Expert](task-delegation-tracking.md)
 - [Email Management Expert](email-prioritization-response.md)
 - [Document Organization Expert](document-organization-filing.md)

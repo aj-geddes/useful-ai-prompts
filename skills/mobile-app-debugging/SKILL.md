@@ -44,7 +44,6 @@ Inspect Memory:
   - Monitor allocation growth
 
 ---
-
 Common iOS Issues:
 
 App Crash (SIGABRT):
@@ -89,7 +88,6 @@ Device Monitor:
   - Battery usage
 
 ---
-
 Common Android Issues:
 
 App Crash (ANR):
@@ -132,25 +130,20 @@ Performance:
   - Check excessive bridge calls
 
 ---
-
 Flutter Debugging:
 
-Device Logs:
-  flutter logs
+Device Logs: flutter logs
   Shows all device and app output
 
-Debugging:
-  flutter run --debug
+Debugging: flutter run --debug
   Set breakpoints in IDE
   Step through code
 
-Hot Reload:
-  Useful for rapid iteration
+Hot Reload: Useful for rapid iteration
   Hot restart for full reload
   Useful for debugging UI changes
 
 ---
-
 Common Mobile Issues:
 
 Network Connectivity:

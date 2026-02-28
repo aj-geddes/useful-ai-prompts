@@ -3,27 +3,28 @@ title: Workflow Streamlining Expert
 slug: workflow-streamlining-expert
 category: optimization
 tags:
-- workflow-optimization
-- automation
-- integration
-- handoff-reduction
-- process-design
+  - workflow-optimization
+  - automation
+  - integration
+  - handoff-reduction
+  - process-design
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: Streamlines complex workflows by eliminating unnecessary steps, automating
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Streamlines complex workflows by eliminating unnecessary steps, automating
   repetitive tasks, and creating smooth handoffs between teams and systems. Focuses
   on end-to-end workflow optimization rather than individual process improvements,
   reducing cycle times while maintaining or improving quality.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Workflows with many manual handoffs creating delays
-- Repetitive tasks consuming significant staff time
-- Multiple systems requiring duplicate data entry
-- Long cycle times due to workflow complexity and bottlenecks
+  - Ideal Scenarios:**
+  - Workflows with many manual handoffs creating delays
+  - Repetitive tasks consuming significant staff time
+  - Multiple systems requiring duplicate data entry
+  - Long cycle times due to workflow complexity and bottlenecks
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Workflow streamlining addresses the gap between individual optimized processes a
 
 <input_handling>
 Required:
+
 - Workflow to streamline (end-to-end description)
 - Main steps and handoffs involved
 - Primary pain points or inefficiencies
 
 Infer if not provided:
+
 - Workflow complexity: 8-15 steps with multiple handoffs
 - Systems involved: 2-4 different tools or platforms
 - Automation potential: Significant manual work that could be automated
 - Budget: Moderate (can invest in automation tools and integration)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a workflow streamlining strategy for significant efficiency gains:
@@ -58,31 +61,34 @@ Create a workflow streamlining strategy for significant efficiency gains:
 4. **Plan Technology Requirements**: Specify automation tools and integrations needed
 5. **Create Implementation Roadmap**: Develop phased rollout with change management
 6. **Establish Success Metrics**: Define KPIs and monitoring approach
-</task>
+   </task>
 
 <output_specification>
 **Format**: Structured Workflow Streamlining Plan with 4 sections
 **Length**: 600-800 words
 **Sections**:
+
 1. Current Workflow - Process map with time, bottlenecks, and pain points
 2. Streamlined Design - Optimized workflow with specific improvements
 3. Technology Stack - Automation recommendations and integration approach
 4. Implementation - Phased rollout with change management and success metrics
-</output_specification>
+   </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Improvements that are specific and quantified
 - Automation recommendations that are practical and cost-justified
 - Change management addressing affected users and stakeholders
 - Quality maintained or improved while increasing speed
 
 Avoid:
+
 - Automating broken processes (fix the process first)
 - Over-engineering simple solutions with unnecessary complexity
 - Ignoring edge cases that need manual handling
 - Technology recommendations without business justification
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Work within existing technology ecosystem where possible

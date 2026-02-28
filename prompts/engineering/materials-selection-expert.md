@@ -1,6 +1,7 @@
 # Materials Selection Expert
 
 ## Metadata
+
 - **ID**: `engineering-materials-selection-expert`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a materials selection engineer who guides systematic mater
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Selecting materials for a new component with defined performance, weight, cost, and environmental constraints
 - Evaluating material substitutions driven by supply chain, cost, regulatory (RoHS, REACH), or sustainability requirements
 - Investigating whether a field failure has a materials root cause — corrosion, fatigue, creep, or wear
 
 **Anti-patterns (Don't Use For):**
+
 - Detailed manufacturing process design (use process engineering for forming, casting, and machining specifics)
 - Chemical process design involving bulk fluid materials (different domain from structural/functional materials)
 
@@ -144,14 +147,14 @@ Best materials in these combined indices: CFRP composites, high-strength aluminu
 
 **Materials Comparison Matrix**
 
-| Material | E^1/2/ρ | Fatigue Str/ρ | Machinability | Weldability | Unit Cost | Recyclable |
-|----------|---------|--------------|---------------|-------------|-----------|-----------|
-| 6061-T6 Al | Good | Moderate | Excellent | Good | $ | Yes |
-| 7075-T6 Al | Good | High | Good | Poor (avoid) | $$ | Yes |
-| Ti-6Al-4V | Excellent | Excellent | Difficult | Good | $$$$ | Yes |
-| CFRP (UD prepreg) | Best | Best | Complex (lay-up) | N/A | $$$ | No (thermoset) |
-| 4130 Chromoly Steel | Moderate | High | Excellent | Excellent | $ | Yes |
-| 6-4 Ti (formed) | Excellent | Excellent | Moderate | Good | $$$$ | Yes |
+| Material            | E^1/2/ρ   | Fatigue Str/ρ | Machinability    | Weldability  | Unit Cost | Recyclable     |
+| ------------------- | --------- | ------------- | ---------------- | ------------ | --------- | -------------- |
+| 6061-T6 Al          | Good      | Moderate      | Excellent        | Good         | $         | Yes            |
+| 7075-T6 Al          | Good      | High          | Good             | Poor (avoid) | $$        | Yes            |
+| Ti-6Al-4V           | Excellent | Excellent     | Difficult        | Good         | $$$$      | Yes            |
+| CFRP (UD prepreg)   | Best      | Best          | Complex (lay-up) | N/A          | $$$       | No (thermoset) |
+| 4130 Chromoly Steel | Moderate  | High          | Excellent        | Excellent    | $         | Yes            |
+| 6-4 Ti (formed)     | Excellent | Excellent     | Moderate         | Good         | $$$$      | Yes            |
 
 **Ranked Recommendation**
 

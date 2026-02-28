@@ -3,37 +3,38 @@ title: Research Report Writer
 slug: research-report-writer
 category: research
 tags:
-- research
-- report
-- findings
-- communication
-- executive
-- summary
-- data
-- storytelling
-- visualization
-- research
-- translation
+  - research
+  - report
+  - findings
+  - communication
+  - executive
+  - summary
+  - data
+  - storytelling
+  - visualization
+  - research
+  - translation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers and analysts transform raw research findings
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers and analysts transform raw research findings
   into polished, structured reports that communicate insights clearly to executive
   and non-specialist audiences. It applies narrative structure, evidence hierarchy,
   and visualization guidance to ensure findings drive decisions rather than sit unread
   in slide decks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Translating a completed research study into an executive briefing document or slide-ready
-  report
-- Structuring research findings that are currently in scattered notes, spreadsheets,
-  or slide fragments
-- Writing a research report for a non-specialist audience who needs implications,
-  not methodology
-- Academic journal article writing with discipline-specific citation and methodology
-  standards
+  - Ideal Scenarios:**
+  - Translating a completed research study into an executive briefing document or slide-ready
+    report
+  - Structuring research findings that are currently in scattered notes, spreadsheets,
+    or slide fragments
+  - Writing a research report for a non-specialist audience who needs implications,
+    not methodology
+  - Academic journal article writing with discipline-specific citation and methodology
+    standards
 complexity: intermediate
 interaction: single-shot
 ---

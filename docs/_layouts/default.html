@@ -1,38 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+    </title>
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+    />
 
     <!-- CSS — base layer -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/core-web-vitals.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/social-sharing.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/viral-features.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/featured-skills.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/featured-hooks.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/homepage-redesign.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/core-web-vitals.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/social-sharing.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/viral-features.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/featured-skills.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/featured-hooks.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/homepage-redesign.css' | relative_url }}"
+    />
 
     <!-- CSS — redesign layer (applied last so it wins specificity) -->
-    <link rel="stylesheet" href="{{ '/assets/css/redesign.css' | relative_url }}">
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/redesign.css' | relative_url }}"
+    />
 
     <!-- Syntax highlighting (Prism light theme; dark overrides live in redesign.css) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+    />
 
     <!-- Icon font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ '/assets/images/favicon.svg' | relative_url }}"
+    />
 
     <!-- PWA Manifest -->
-    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}" />
 
     <!-- SEO -->
-    <meta name="author" content="{{ site.title }}">
-    <meta name="generator" content="Jekyll {{ jekyll.version }}">
+    <meta name="author" content="{{ site.title }}" />
+    <meta name="generator" content="Jekyll {{ jekyll.version }}" />
 
     <!-- Enhanced Meta Tags (includes OG, Twitter, canonical, mobile) -->
     {% include meta-tags.html %}
@@ -54,24 +90,28 @@
     -->
     <script>
       (function () {
-        var stored = '';
-        try { stored = localStorage.getItem('theme') || ''; } catch (e) {}
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var dark = stored === 'dark' || (!stored && prefersDark);
+        var stored = "";
+        try {
+          stored = localStorage.getItem("theme") || "";
+        } catch (e) {}
+        var prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var dark = stored === "dark" || (!stored && prefersDark);
         if (dark) {
-          document.documentElement.classList.add('dark');
-          document.documentElement.setAttribute('data-theme', 'dark');
+          document.documentElement.classList.add("dark");
+          document.documentElement.setAttribute("data-theme", "dark");
         } else {
-          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.setAttribute("data-theme", "light");
         }
       })();
     </script>
-</head>
-<body>
+  </head>
+  <body>
     {% include header.html %}
 
     <main class="main-content" id="main-content" tabindex="-1">
-        {{ content }}
+      {{ content }}
     </main>
 
     {% include footer.html %}
@@ -82,7 +122,7 @@
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
     {% if site.search %}
-        <script src="{{ '/assets/js/enhanced-search.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/enhanced-search.js' | relative_url }}"></script>
     {% endif %}
 
     <!-- Progressive Enhancement -->
@@ -99,5 +139,5 @@
 
     <!-- Analytics Integration -->
     {% include analytics.html %}
-</body>
+  </body>
 </html>

@@ -3,33 +3,34 @@ title: Floating Solar and Aquatic Integration Systems
 slug: floating-solar-aquatic-integration-systems
 category: renewable energy/solar energy development
 tags:
-- floating
-- solar
-- FPV
-- aquatic
-- systems
-- reservoir
-- solar
-- water
-- conservation
-- ecosystem
-- integration
+  - floating
+  - solar
+  - FPV
+  - aquatic
+  - systems
+  - reservoir
+  - solar
+  - water
+  - conservation
+  - ecosystem
+  - integration
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables development of floating photovoltaic (FPV) systems
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables development of floating photovoltaic (FPV) systems
   that maximize solar generation on water bodies while supporting aquatic ecosystem
   health and water resource management. It combines marine engineering expertise with
   aquatic ecosystem management to create multi-use water infrastructure solutions
   for reservoirs, irrigation ponds, wastewater facilities, and coastal areas.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing floating solar on reservoirs, lakes, or irrigation ponds
-- Creating dual-benefit systems combining solar with evaporation reduction
-- Designing FPV for wastewater treatment facilities
-- Integrating solar with aquaculture operations
+  - Ideal scenarios:**
+  - Developing floating solar on reservoirs, lakes, or irrigation ponds
+  - Creating dual-benefit systems combining solar with evaporation reduction
+  - Designing FPV for wastewater treatment facilities
+  - Integrating solar with aquaculture operations
 complexity: advanced
 interaction: multi-turn
 ---
@@ -48,18 +49,20 @@ Floating solar offers unique benefits: land conservation, enhanced panel cooling
 
 <input_handling>
 **Required information:**
+
 - Water body type and characteristics (reservoir, pond, coastal)
 - Water depth and seasonal variation range
 - Primary water use (drinking, irrigation, industrial, recreation)
 - Target system capacity
 
 **Optional (will infer reasonable defaults):**
+
 - Wave/wind exposure conditions
 - Existing aquatic ecosystem status
 - Water quality concerns or goals
 - Grid interconnection proximity
 - Multi-use integration opportunities
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive floating solar solution:
@@ -75,18 +78,20 @@ Develop a comprehensive floating solar solution:
 5. **Implementation Plan**: Create marine construction approach, environmental permitting strategy, and commissioning process
 
 6. **Performance Framework**: Establish monitoring for both energy production and aquatic ecosystem health
-</task>
+   </task>
 
 <output_specification>
 **Floating Solar Development Plan**
+
 - Format: Technical design with environmental integration
 - Length: 1000-1500 words
 - Sections: Site assessment, system design, ecosystem plan, multi-use value, implementation
 - Must include: Platform selection rationale, anchoring approach, environmental protections, performance projections
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Marine-appropriate platform and anchoring design for site conditions
 - Clear water quality protection and ecosystem benefit mechanisms
 - Quantified evaporation reduction and cooling efficiency gains
@@ -94,12 +99,13 @@ Develop a comprehensive floating solar solution:
 - Comprehensive environmental permitting approach
 
 **Avoid:**
+
 - Ignoring wave/wind loading for site conditions
 - Underestimating corrosion and marine durability requirements
 - Overlooking water level variation impacts on anchoring
 - Missing stakeholder concerns for water body use
 - Inadequate environmental assessment and monitoring plans
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain minimum 2m water depth for floating operations

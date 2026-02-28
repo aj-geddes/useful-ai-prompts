@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement secrets management with HashiCorp Vault, AWS Secrets Manager,
+date: "2025-01-01"
+description:
+  Implement secrets management with HashiCorp Vault, AWS Secrets Manager,
   or Kubernetes Secrets for secure credential storage and rotation.
 layout: skill
 slug: secrets-management
 tags:
-- kubernetes
-- aws
+  - kubernetes
+  - aws
 title: secrets-management
 ---
 
@@ -480,6 +481,7 @@ spec:
 ## Best Practices
 
 ### ✅ DO
+
 - Rotate secrets regularly
 - Use strong encryption
 - Implement access controls
@@ -490,6 +492,7 @@ spec:
 - Use separate secrets per environment
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use weak encryption
 - Share secrets via email/chat

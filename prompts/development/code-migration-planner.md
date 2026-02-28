@@ -1,6 +1,7 @@
 # Code Migration Planner
 
 ## Metadata
+
 - **ID**: `development-code-migration-planner`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Plans and sequences complex code migrations — language upgrades, framework mig
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Migrating from Python 2 to 3, Node 14 to 20, or Ruby on Rails 5 to 7
 - Replacing a deprecated library with a maintained alternative
 - Migrating from one framework to another (Express → Fastify, CRA → Vite)
 - Converting a monolith module to a different language
 
 **Anti-patterns (Don't Use For):**
+
 - Database schema migrations (different tooling and risk profile)
 - Cloud provider migrations (infrastructure concern)
 - Style/linting-only changes (use automated tools directly)
@@ -120,6 +123,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to migrate a 150k line Python 2.7 Flask application to Python 3.11. We have moderate test coverage (60%). 3 engineers available, 6-month timeline, cannot have downtime. The app runs ML inference using some Python 2-only libraries."
 
 ### Output
@@ -132,48 +136,55 @@ Use the `python-future` compatibility library to make code run on both Python 2 
 
 **Phase 0: Preparation (Weeks 1-3)**
 Goal: Freeze all migrations, establish baseline.
+
 - [ ] Audit Python 2-only dependencies — identify ML libraries with Python 3 alternatives
 - [ ] Run `pylint --py3k` to identify incompatibility count (~500-2000 issues expected)
 - [ ] Increase test coverage to 75%+ on critical paths (inference pipeline, API endpoints)
 - [ ] Install `python-future`: `pip install future`
 - [ ] Configure CI to run tests on both Python 2.7 and 3.11
 
-*Done criteria: CI passes on both runtimes. Dependency audit complete.*
+_Done criteria: CI passes on both runtimes. Dependency audit complete._
 
 **Phase 1: Automated Fixes (Weeks 4-5)**
 Goal: Fix machine-detectable incompatibilities.
+
 - Run `2to3 -w -n .` on entire codebase (generate patch, review before applying)
 - Run `futurize --stage1 .` (safer: fixes only Python 3-incompatible syntax, not semantics)
 - Target: `print` statements, `unicode` literals, `dict.iteritems()` → `dict.items()`
 - Expected: 60-70% of issues resolved automatically
 
-*Done criteria: All automated fixes applied, tests still pass on Python 2.7.*
+_Done criteria: All automated fixes applied, tests still pass on Python 2.7._
 
 **Phase 2: Manual Fixes by Module (Weeks 6-14)**
 Migrate modules in order: lowest dependencies first.
+
 ```
 Week 6-7:  utils/ and helpers/ (no external deps, easiest)
 Week 8-9:  data_processing/ (moderate complexity)
 Week 10-12: api/ (Flask routes and middleware)
 Week 13-14: inference/ (highest risk — ML library replacements)
 ```
+
 Each module: write Python 3-compatible code, verify tests pass on 3.11, don't break 2.7 compat yet.
 
 **Phase 3: ML Library Migration (Weeks 15-18)**
 ⚠️ Highest Risk Phase — allocate buffer time.
+
 - Replace Python 2-only ML libraries with Python 3 equivalents
 - Run A/B validation: compare inference outputs on Python 2 vs 3 to verify numerical correctness
 - Keep Python 2 inference path live until validation passes
 
-*Done criteria: ML inference output matches between runtimes on 1000 test cases.*
+_Done criteria: ML inference output matches between runtimes on 1000 test cases._
 
 **Phase 4: Production Cutover (Week 19-20)**
+
 - Deploy Python 3.11 container alongside Python 2.7 (shadow mode)
 - Route 1% traffic → 10% → 50% → 100% over 48 hours
 - Monitor error rates at each step; rollback trigger: >0.5% increase in 5xx errors
 - Rollback: redirect traffic back to Python 2.7 containers (kept running for 2 weeks post-cutover)
 
 **Phase 5: Cleanup (Week 21-24)**
+
 - Remove `python-future` compatibility code
 - Remove Python 2.7 CI pipeline
 - Update all tooling (linters, type checkers) for Python 3 only

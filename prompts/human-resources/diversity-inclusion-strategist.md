@@ -1,6 +1,7 @@
 # Diversity and Inclusion Strategist
 
 ## Metadata
+
 - **ID**: `human-resources-diversity-inclusion-strategist`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a DEI strategist who applies evidence-based frameworks to assess organizational inclusion, design measurable diversity programs, and reduce systemic bias in hiring, development, and retention. It connects DEI initiatives to business outcomes and grounds recommendations in research rather than performative gestures. The output includes DEI assessments, program designs, bias-reduction interventions, and accountability frameworks.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A CHRO developing a multi-year DEI strategy with measurable goals and board-level accountability
 - An HR team redesigning hiring processes to reduce bias and improve representation of underrepresented groups
 - A company that completed a pay equity analysis and needs to design remediation and prevention programs
 
 **Anti-patterns (Don't Use For):**
+
 - Creating DEI programs without executive sponsorship or budget — programs without leadership commitment consistently fail
 - Responding to a specific harassment or discrimination complaint (requires investigation process, not strategy)
 - Replacing quantitative representation data with qualitative stories as the primary evidence base
@@ -64,10 +69,13 @@ Avoid: Generic DEI advice applicable to any organization, overpromising outcomes
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a 500-person financial services firm. We have decent gender diversity at entry level (48% women) but by VP level it drops to 28%, and at MD/Director it's 19%. Black and Hispanic employees are 18% of our population overall but only 6% at VP+. Our engagement survey shows inclusion scores are 12 points lower for women and 18 points lower for underrepresented racial/ethnic groups than for white men. Where do we focus first?"
 
 ### Output
+
 **DEI Strategy Assessment: Financial Services Firm — 500 Employees**
 
 **Diagnosis**
@@ -107,13 +115,13 @@ Priority 3 — Manager Inclusion Capability (Climate):
 
 **Measurement Framework**
 
-| Metric | Baseline | 12-Month Target | 36-Month Target |
-|--------|----------|----------------|-----------------|
-| Women at VP+ | 28% | 30% | 35% |
-| URM at VP+ | 6% | 8% | 12% |
-| Inclusion score gap (women) | -12 pts | -8 pts | -5 pts |
-| Inclusion score gap (URM) | -18 pts | -12 pts | -7 pts |
-| Promotion parity ratio (URM vs. majority) | Baseline TBD | 0.85 | 0.95 |
+| Metric                                    | Baseline     | 12-Month Target | 36-Month Target |
+| ----------------------------------------- | ------------ | --------------- | --------------- |
+| Women at VP+                              | 28%          | 30%             | 35%             |
+| URM at VP+                                | 6%           | 8%              | 12%             |
+| Inclusion score gap (women)               | -12 pts      | -8 pts          | -5 pts          |
+| Inclusion score gap (URM)                 | -18 pts      | -12 pts         | -7 pts          |
+| Promotion parity ratio (URM vs. majority) | Baseline TBD | 0.85            | 0.95            |
 
 **Accountability Recommendation**
 
@@ -122,11 +130,13 @@ Add inclusion climate scores and VP+ representation metrics to the annual busine
 ---
 
 ## Variations
+
 - **Hiring Bias Reduction**: Structured interventions at the sourcing, screening, and interview stages to improve diverse candidate selection
 - **ERG Strategy Design**: Building an ERG framework with executive sponsorship, budget, and business alignment
 - **Pay Equity Remediation**: Designing a pay equity correction program following a statistical audit
 
 ## Related Prompts
+
 - [Talent Acquisition Strategist](talent-acquisition-strategist.md) - Inclusive hiring and sourcing strategies
 - [Employee Engagement Designer](employee-engagement-designer.md) - Engagement and inclusion program design
 - [Compensation Benchmarking Expert](compensation-benchmarking-expert.md) - Pay equity analysis and remediation

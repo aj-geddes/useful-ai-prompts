@@ -1,6 +1,7 @@
 # Proposal Development Expert
 
 ## Metadata
+
 - **ID**: creation-proposal-development-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive proposal development assistant that creates compelling, winning 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Responding to formal RFPs or RFIs requiring structured proposals
 - Developing unsolicited business proposals to prospects
 - Writing grant applications for funding opportunities
@@ -25,6 +27,7 @@ A comprehensive proposal development assistant that creates compelling, winning 
 - Preparing competitive bids where positioning matters
 
 **Anti-Patterns (When Not to Use):**
+
 - Simple quotes or estimates not requiring narrative
 - Internal project proposals (use project planning prompts instead)
 - Marketing materials without specific opportunity context
@@ -113,6 +116,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Proposal type: RFP response for IT modernization project
 2. Client: State government agency, 5000 employees, risk-averse, focused on reliability
@@ -137,16 +141,19 @@ Requirements:
 ### Win Probability Assessment: 75%
 
 **Competitive Positioning:**
+
 - Our Position: Ideal challenger - experienced but hungry
 - Incumbent Vulnerability: Performance issues create opening
 - Price Sensitivity: 30% weight means quality can win over lowest price
 
 **Key Win Themes:**
+
 1. "Proven Success Next Door" - We just did this successfully for neighboring state
 2. "Zero-Disruption Approach" - Your operations continue uninterrupted
 3. "Knowledge Transfer Excellence" - Your team owns the solution from day one
 
 **Strategy to Win:**
+
 - Ghost incumbent's failures without naming them
 - Emphasize our government experience vs StartupCo
 - Show value vs Large SI's premium pricing
@@ -161,6 +168,7 @@ Your IT modernization initiative comes at a critical time. Citizens expect digit
 **Why [Your Company] is that partner:**
 
 We recently completed an nearly identical modernization for [Neighboring State], delivering:
+
 - 6 months ahead of schedule
 - $2.1M under budget
 - Zero operational disruptions
@@ -168,12 +176,12 @@ We recently completed an nearly identical modernization for [Neighboring State],
 
 **Our Understanding of Your Needs:**
 
-| Your Requirement | Our Solution | Your Benefit |
-|-----------------|--------------|--------------|
-| Zero downtime | Parallel-run migration | Operations continue seamlessly |
-| Enhanced security | Zero-trust architecture | Exceeds state requirements |
-| Team enablement | Embedded knowledge transfer | Self-sufficiency in 6 months |
-| Budget certainty | Fixed-price contract | No surprises or overruns |
+| Your Requirement  | Our Solution                | Your Benefit                   |
+| ----------------- | --------------------------- | ------------------------------ |
+| Zero downtime     | Parallel-run migration      | Operations continue seamlessly |
+| Enhanced security | Zero-trust architecture     | Exceeds state requirements     |
+| Team enablement   | Embedded knowledge transfer | Self-sufficiency in 6 months   |
+| Budget certainty  | Fixed-price contract        | No surprises or overruns       |
 
 ## TECHNICAL APPROACH
 
@@ -182,6 +190,7 @@ We recently completed an nearly identical modernization for [Neighboring State],
 **Modern, Secure, Scalable Infrastructure:**
 
 Cloud-Ready Hybrid Architecture:
+
 - Government Cloud (60%): Citizen-facing services, public data, disaster recovery
 - On-Premise Private Cloud (40%): Sensitive data, legacy integration, high-security apps
 - Unified Management Layer: Single pane of glass, automated operations, comprehensive security
@@ -189,22 +198,26 @@ Cloud-Ready Hybrid Architecture:
 ### Migration Methodology
 
 **Phase 1: Foundation (Months 1-3)**
+
 - Establish secure cloud environment
 - Deploy management tools
 - Train core team
 - Migrate first low-risk application
 
 **Phase 2: Momentum (Months 4-9)**
+
 - Application waves by department
 - Parallel-run approach
 - Continuous knowledge transfer
 
 **Phase 3: Acceleration (Months 10-18)**
+
 - Complex system migrations
 - Legacy decommissioning
 - Performance optimization
 
 **Phase 4: Optimization (Months 19-24)**
+
 - Cost optimization
 - Process refinement
 - Transition to operations
@@ -212,33 +225,35 @@ Cloud-Ready Hybrid Architecture:
 ## MANAGEMENT APPROACH
 
 **Your Dedicated Team:**
+
 - Program Director: 15 years government IT experience
 - Technical Lead: Architect for neighboring state project
 - Knowledge Transfer Lead: Certified trainer
 
 **Risk Mitigation:**
 
-| Risk | Impact | Our Mitigation |
-|------|--------|----------------|
-| Data loss | High | 3-2-1 backup strategy |
-| Scope creep | Medium | Fixed-price contract |
-| Knowledge gaps | Medium | Embedded training |
-| Schedule delays | Medium | Built-in buffer time |
+| Risk            | Impact | Our Mitigation        |
+| --------------- | ------ | --------------------- |
+| Data loss       | High   | 3-2-1 backup strategy |
+| Scope creep     | Medium | Fixed-price contract  |
+| Knowledge gaps  | Medium | Embedded training     |
+| Schedule delays | Medium | Built-in buffer time  |
 
 ## PRICING PROPOSAL
 
 **Total Investment: $8,000,000**
 
-| Component | Cost | Percentage |
-|-----------|------|------------|
-| Labor (Team of 13) | $5,200,000 | 65% |
-| Software/Tools | $800,000 | 10% |
-| Infrastructure | $600,000 | 7.5% |
-| Training | $600,000 | 7.5% |
-| Project Management | $400,000 | 5% |
-| Contingency | $400,000 | 5% |
+| Component          | Cost       | Percentage |
+| ------------------ | ---------- | ---------- |
+| Labor (Team of 13) | $5,200,000 | 65%        |
+| Software/Tools     | $800,000   | 10%        |
+| Infrastructure     | $600,000   | 7.5%       |
+| Training           | $600,000   | 7.5%       |
+| Project Management | $400,000   | 5%         |
+| Contingency        | $400,000   | 5%         |
 
 **Your ROI:**
+
 - Year 1: $1.2M in operational savings
 - Year 2: $2.4M in savings
 - 5-Year NPV: $8.7M

@@ -3,26 +3,27 @@ title: Candidate Assessment Expert
 slug: candidate-assessment-expert
 category: evaluation & assessment/hr
 tags:
-- candidate-assessment
-- hiring
-- talent-evaluation
-- recruitment
-- interview-process
+  - candidate-assessment
+  - hiring
+  - talent-evaluation
+  - recruitment
+  - interview-process
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Evaluate job candidates through structured, fair, and effective assessment
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Evaluate job candidates through structured, fair, and effective assessment
   methods. Designs comprehensive evaluation frameworks, interview guides, and scoring
   systems to identify the best candidates while reducing bias and improving hiring
   consistency.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Designing interview processes for new roles
-- Comparing finalist candidates objectively
-- Creating structured evaluation criteria and rubrics
-- Reducing bias in hiring decisions
+  - Ideal scenarios:**
+  - Designing interview processes for new roles
+  - Comparing finalist candidates objectively
+  - Creating structured evaluation criteria and rubrics
+  - Reducing bias in hiring decisions
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Effective candidate assessment uses structured, job-relevant criteria applied co
 
 <input_handling>
 Required inputs:
+
 - Position being filled (title, level, team)
 - Key skills and competencies required
 - Hiring stage (screening, interviews, final selection)
 
 Infer if not provided:
+
 - Team size and structure (assume growing team)
 - Interview panel composition (assume 3-4 interviewers)
 - Assessment timeline (assume standard hiring cycle)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive candidate assessment framework with evaluation criteria and interview guides.
@@ -61,15 +64,17 @@ Step 5: Provide decision framework for comparing candidates objectively
 Format: Evaluation criteria with interview guides and scoring rubrics
 Length: 800-1100 words
 Structure:
+
 - Competency matrix (competency, weight, assessment method)
 - Interview structure (rounds with focus and timing)
 - Sample behavioral questions per competency
 - Scoring rubric (1-5 scale with behavioral indicators)
 - Decision framework (minimum scores, deal-breakers, tie-breakers)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Use job-relevant, measurable criteria
 - Provide specific behavioral interview questions
 - Include clear scoring indicators for each level
@@ -77,12 +82,13 @@ Excellent outputs:
 - Balance competence assessment with cultural considerations
 
 Avoid:
+
 - Subjective or vague evaluation criteria
 - Leading or hypothetical-only questions
 - Missing diversity and inclusion considerations
 - Overweighting cultural fit vs. competence
 - Generic questions not tied to role requirements
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design for legal defensibility and fairness

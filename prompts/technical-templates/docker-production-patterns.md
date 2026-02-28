@@ -1,6 +1,7 @@
 # Docker Production Patterns
 
 ## Metadata
+
 - **ID**: `docker-production-patterns`
 - **Version**: 1.1.0
 - **Category**: Technical / DevOps
@@ -18,6 +19,7 @@ Designs comprehensive production-ready Docker containerization solutions with en
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Containerizing applications for production deployment with security requirements
 - Implementing CIS Docker Benchmark compliant container configurations
 - Building multi-stage Dockerfiles with optimized layer caching and minimal images
@@ -25,6 +27,7 @@ Designs comprehensive production-ready Docker containerization solutions with en
 - Designing container build pipelines with vulnerability scanning integration
 
 **Anti-patterns (when not to use):**
+
 - Development-only containers without production security requirements
 - Simple single-use containers for local testing
 - Non-production environments where security hardening adds unnecessary complexity
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We need to containerize a Python FastAPI application with PostgreSQL database access. Deploying to Kubernetes on AWS EKS. Requirements: HIPAA compliance, non-root execution, vulnerability scanning in CI/CD, auto-scaling support, structured JSON logging. Application needs to connect to RDS PostgreSQL and S3 for file storage.
 
 ### Output
@@ -187,40 +191,40 @@ spec:
         seccompProfile:
           type: RuntimeDefault
       containers:
-      - name: app
-        image: your-registry/fastapi-app:latest
-        securityContext:
-          allowPrivilegeEscalation: false
-          readOnlyRootFilesystem: true
-          capabilities:
-            drop: ["ALL"]
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
-        volumeMounts:
-        - name: tmp
-          mountPath: /tmp
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 15
-          periodSeconds: 20
-        readinessProbe:
-          httpGet:
-            path: /ready
-            port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 10
+        - name: app
+          image: your-registry/fastapi-app:latest
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: ["ALL"]
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
       volumes:
-      - name: tmp
-        emptyDir:
-          medium: Memory
-          sizeLimit: 100Mi
+        - name: tmp
+          emptyDir:
+            medium: Memory
+            sizeLimit: 100Mi
 ```
 
 **CI/CD Security Scanning**
@@ -242,6 +246,7 @@ spec:
 ```
 
 **HIPAA Compliance Checklist**
+
 - Non-root execution: Enforced via USER directive and securityContext
 - Encryption in transit: TLS termination at ingress, mTLS optional via service mesh
 - Audit logging: Structured JSON logs with request correlation IDs

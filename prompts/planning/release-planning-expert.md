@@ -1,6 +1,7 @@
 # Release Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-release`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A release management specialist that helps you create comprehensive deployment s
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning major software version releases with significant changes
 - Coordinating complex multi-team deployments
 - Designing progressive rollout and feature flag strategies
@@ -25,6 +27,7 @@ A release management specialist that helps you create comprehensive deployment s
 - Managing high-stakes deployments with SLA requirements
 
 **Anti-patterns (Don't Use For):**
+
 - Sprint planning or backlog grooming
 - Bug prioritization and triage
 - Individual feature development planning
@@ -150,43 +153,48 @@ Timeline: Target release March 15, 2025
 
 **Release Strategy**
 
-*Release*: Analytics Dashboard 2.5 (Major)
-*Approach*: Blue-Green Deployment with Progressive Rollout
-*Target Date*: March 15, 2025
+_Release_: Analytics Dashboard 2.5 (Major)
+_Approach_: Blue-Green Deployment with Progressive Rollout
+_Target Date_: March 15, 2025
 
-*Deployment Strategy*
+_Deployment Strategy_
+
 - Blue-Green Setup: Maintain current production (blue) while deploying new version (green)
 - Progressive Rollout: 1% -> 5% -> 25% -> 50% -> 100% over 7 days
 - Feature Flags: Analytics dashboard behind flag for gradual feature activation
 - API v2: Parallel deployment with v1, gradual migration
 
-*Rationale*
+_Rationale_
 Blue-green provides instant rollback capability essential for enterprise SLA. Progressive rollout allows validation at each stage while limiting blast radius of potential issues.
 
 **Release Timeline**
 
-*Pre-Release Phase (Weeks 1-8)*
+_Pre-Release Phase (Weeks 1-8)_
 
 Week 1-4: Development Completion
+
 - All features code-complete and merged
 - Automated test coverage greater than 95%
 - Performance benchmarks validated against requirements
 - Security scan completed, vulnerabilities addressed
 
 Week 5-6: Testing and QA
+
 - Integration testing in staging environment
 - Performance testing (load, stress, endurance)
 - Security testing and PCI compliance validation
 - API v2 backward compatibility verification
 
 Week 7-8: Pre-Production Validation
+
 - Staging deployment mirror of production
 - End-to-end testing with production-like data
 - Customer beta program (10 selected accounts)
 - Documentation and runbooks finalized
 - Support team training completed
 
-*Pre-Release Checklist*
+_Pre-Release Checklist_
+
 - [ ] All automated tests passing
 - [ ] Security scan clean
 - [ ] Performance benchmarks met
@@ -198,43 +206,49 @@ Week 7-8: Pre-Production Validation
 
 **Deployment Phases**
 
-*Day 0: Green Environment Deployment*
+_Day 0: Green Environment Deployment_
 Time: 02:00 UTC (low-traffic window)
+
 - Deploy to green environment (no production traffic)
 - Run smoke tests and health checks
 - Validate all services operational
 - **Gate**: All health checks passing, no critical errors
 
-*Day 1: Canary Release (1% traffic)*
+_Day 1: Canary Release (1% traffic)_
 Time: 10:00 UTC
+
 - Route 1% of traffic to green (random selection)
 - Monitor for 24 hours
 - Focus: Error rates, latency, customer-reported issues
 - **Gate**: Error rate less than 0.1%, p99 latency less than 2s, no critical bugs
 
-*Day 2: Early Adopter Phase (5% traffic)*
+_Day 2: Early Adopter Phase (5% traffic)_
 Time: 10:00 UTC (if Day 1 gates passed)
+
 - Increase to 5% traffic
 - Enable analytics dashboard for beta customers via feature flag
 - Monitor for 48 hours
 - **Gate**: Same as Day 1, plus positive beta feedback
 
-*Day 4: Validation Phase (25% traffic)*
+_Day 4: Validation Phase (25% traffic)_
 Time: 10:00 UTC
+
 - Increase to 25% traffic
 - Enable analytics dashboard for 50% of customers
 - Monitor for 48 hours
 - **Gate**: Error rate stable, no performance degradation, support tickets normal
 
-*Day 6: Majority Rollout (50% traffic)*
+_Day 6: Majority Rollout (50% traffic)_
 Time: 10:00 UTC
+
 - Increase to 50% traffic
 - Enable analytics dashboard for all customers
 - Announce API v2 availability
 - **Gate**: All metrics within SLA, no blocking issues
 
-*Day 7: Full Deployment (100% traffic)*
+_Day 7: Full Deployment (100% traffic)_
 Time: 10:00 UTC
+
 - Route 100% traffic to green
 - Decommission blue environment
 - Begin API v1 deprecation period (6 months)
@@ -242,7 +256,7 @@ Time: 10:00 UTC
 
 **Monitoring Framework**
 
-*Real-Time Metrics (Immediate Alert)*
+_Real-Time Metrics (Immediate Alert)_
 | Metric | Target | Warning | Critical |
 |--------|--------|---------|----------|
 | Error Rate | < 0.1% | > 0.5% | > 1.0% |
@@ -252,7 +266,7 @@ Time: 10:00 UTC
 | CPU Utilization | < 60% | > 75% | > 90% |
 | Memory Usage | < 70% | > 80% | > 90% |
 
-*Business Metrics (Hourly Review)*
+_Business Metrics (Hourly Review)_
 | Metric | Baseline | Alert Threshold |
 |--------|----------|-----------------|
 | API Request Volume | Normal | +/- 30% variance |
@@ -260,7 +274,8 @@ Time: 10:00 UTC
 | Feature Adoption | N/A | Track for analytics dashboard |
 | Support Tickets | Normal | > 50% increase |
 
-*Health Check Endpoints*
+_Health Check Endpoints_
+
 - `/health` - Basic service health
 - `/health/deep` - Full dependency check
 - `/metrics` - Prometheus metrics
@@ -268,31 +283,35 @@ Time: 10:00 UTC
 
 **Rollback Procedures**
 
-*Automatic Rollback Triggers*
+_Automatic Rollback Triggers_
+
 - Error rate exceeds 1% for 5+ consecutive minutes
 - p99 latency exceeds 5 seconds for 10+ minutes
 - Availability drops below 99% for any 5-minute window
 - Critical security vulnerability discovered
 
-*Manual Rollback Decision*
+_Manual Rollback Decision_
+
 - Support ticket volume increases 100%+
 - Multiple enterprise customers report issues
 - Data integrity concerns identified
 
-*Rollback Process (0-15 minutes)*
+_Rollback Process (0-15 minutes)_
+
 1. **Minute 0-2**: Route 100% traffic to blue (existing version)
 2. **Minute 2-5**: Verify blue environment health
 3. **Minute 5-10**: Assess impact and document incident
 4. **Minute 10-15**: Notify stakeholders, begin root cause analysis
 
-*Post-Rollback Actions*
+_Post-Rollback Actions_
+
 - Incident report within 24 hours
 - Fix identified and validated in staging
 - New deployment schedule established
 
 **Communication Plan**
 
-*Internal Communication*
+_Internal Communication_
 | Audience | Channel | Timing |
 |----------|---------|--------|
 | Engineering Teams | Slack #releases | Each phase transition |
@@ -300,13 +319,15 @@ Time: 10:00 UTC
 | Leadership | Email | Daily during rollout |
 | Support Team | Slack #support | Pre-release, each phase, issues |
 
-*Customer Communication*
+_Customer Communication_
+
 - Pre-release (Week -1): Email announcement of new features
 - Release day: In-app notification for analytics dashboard
 - API v2: Developer portal announcement, migration guide
 - Issues: Status page update within 15 minutes
 
-*Status Updates*
+_Status Updates_
+
 - Rollout dashboard: Real-time visibility for all stakeholders
 - Hourly summary: Slack update during active rollout
 - Daily report: Email summary of rollout status

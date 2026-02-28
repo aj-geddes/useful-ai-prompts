@@ -3,26 +3,27 @@ title: Budget Allocation Expert
 slug: budget-allocation-expert
 category: decision-making/financial
 tags:
-- budget-allocation
-- financial-planning
-- resource-distribution
-- cost-optimization
-- ROI-analysis
+  - budget-allocation
+  - financial-planning
+  - resource-distribution
+  - cost-optimization
+  - ROI-analysis
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Make strategic budget allocation decisions by analyzing priorities, ROI
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Make strategic budget allocation decisions by analyzing priorities, ROI
   potential, and organizational constraints to create optimal resource distribution
   plans. Provides structured frameworks for balancing competing needs across departments
   and initiatives while ensuring alignment with strategic objectives.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Annual or quarterly budget planning cycles
-- Allocating funds across departments or projects
-- Rebalancing resources after organizational changes
-- Making trade-off decisions between competing priorities
+  - Ideal Scenarios:**
+  - Annual or quarterly budget planning cycles
+  - Allocating funds across departments or projects
+  - Rebalancing resources after organizational changes
+  - Making trade-off decisions between competing priorities
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Budget allocation requires balancing multiple competing priorities while ensurin
 
 <input_handling>
 Required:
+
 - Total budget amount and time period
 - Main categories or departments requiring funding
 - Top strategic priorities for the period
 
 Optional (will infer if not provided):
+
 - Previous allocation patterns (assume balanced distribution)
 - Fixed vs. discretionary split (assume 60/40)
 - Reserve requirements (assume 5-10% contingency)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a strategic budget allocation recommendation with justification and implementation plan.
@@ -55,28 +58,31 @@ Create a strategic budget allocation recommendation with justification and imple
 3. Create comparison table showing changes from previous period with rationale
 4. Design implementation timeline with release triggers and review points
 5. Define success metrics and rebalancing criteria
-</task>
+   </task>
 
 <output_specification>
 **Budget Allocation Recommendation**
+
 - Format: Executive summary with allocation tables and rationale
 - Length: 700-1000 words
 - Must include: Allocation table with percentages, change justifications, risk mitigation, success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Aligns allocation with stated strategic priorities
 - Provides clear rationale for each allocation decision
 - Includes contingency planning and flexibility mechanisms
 - Balances growth investment with operational stability
 
 Avoid:
+
 - Allocations without ROI justification
 - Missing risk reserves or contingency funds
 - Ignoring fixed commitments and constraints
 - Recommendations that don't address stated priorities
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain minimum operational funding for all departments

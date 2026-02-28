@@ -1,6 +1,7 @@
 # Curriculum Development Expert
 
 ## Metadata
+
 - **ID**: `learning-curriculum-development`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A curriculum design specialist that creates comprehensive learning programs ensuring effective knowledge transfer and skill building. Develops structured curricula for corporate training, professional development, and certification programs with clear learning architectures, content frameworks, and assessment strategies.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Creating corporate training programs for specific competencies
 - Designing professional development curricula for career advancement
 - Building certification and credentialing programs with measurable outcomes
@@ -23,6 +27,7 @@ A curriculum design specialist that creates comprehensive learning programs ensu
 - Developing multi-week or multi-month learning journeys
 
 **Anti-patterns (don't use for):**
+
 - Academic accreditation requirements with regulatory constraints
 - K-12 education standards and state curriculum mandates
 - Regulatory compliance curricula requiring legal review
@@ -131,52 +136,60 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 12-week data analytics bootcamp for business professionals with basic Excel skills. Need to learn SQL, Python, and data visualization for business reporting. Format: Mix of self-paced and instructor-led (8 hours/week). Outcome: Able to independently analyze data and create dashboards.
 
 ### Output
+
 **Data Analytics Bootcamp Curriculum**
 
 **Learning Architecture:**
+
 - Duration: 12 weeks, 8 hours/week (96 hours total)
 - Format: 4 hours self-paced + 4 hours live instruction weekly
 - Culmination: Portfolio project demonstrating all skills
 
 **Module Structure:**
 
-*Module 1: SQL Fundamentals (Weeks 1-3)*
+_Module 1: SQL Fundamentals (Weeks 1-3)_
+
 - Week 1: Database concepts, SELECT statements, filtering
 - Week 2: JOINs, aggregations, GROUP BY
 - Week 3: Subqueries, CTEs, practical business queries
 - Assessment: SQL challenge on realistic business database
 
-*Module 2: Python for Data Analysis (Weeks 4-7)*
+_Module 2: Python for Data Analysis (Weeks 4-7)_
+
 - Week 4: Python basics, environment setup, pandas intro
 - Week 5: Data manipulation with pandas
 - Week 6: Data cleaning, transformation, merging datasets
 - Week 7: Statistical analysis and exploratory data analysis
 - Assessment: Python analysis of provided business dataset
 
-*Module 3: Data Visualization (Weeks 8-10)*
+_Module 3: Data Visualization (Weeks 8-10)_
+
 - Week 8: Visualization principles, Tableau fundamentals
 - Week 9: Dashboard design, interactive visualizations
 - Week 10: Storytelling with data, executive presentations
 - Assessment: Dashboard creation from raw data
 
-*Module 4: Capstone Project (Weeks 11-12)*
+_Module 4: Capstone Project (Weeks 11-12)_
+
 - Week 11: Project planning, data gathering, analysis
 - Week 12: Dashboard completion, presentation, peer review
 - Assessment: Full project presentation + portfolio artifact
 
 **Weekly Structure:**
 
-| Component | Time | Format | Purpose |
-|-----------|------|--------|---------|
-| Pre-work | 2 hrs | Self-paced | Concept introduction |
-| Live session | 3 hrs | Instructor-led | Hands-on practice |
-| Lab exercises | 2 hrs | Self-paced | Skill reinforcement |
-| Peer work | 1 hr | Collaborative | Application + networking |
+| Component     | Time  | Format         | Purpose                  |
+| ------------- | ----- | -------------- | ------------------------ |
+| Pre-work      | 2 hrs | Self-paced     | Concept introduction     |
+| Live session  | 3 hrs | Instructor-led | Hands-on practice        |
+| Lab exercises | 2 hrs | Self-paced     | Skill reinforcement      |
+| Peer work     | 1 hr  | Collaborative  | Application + networking |
 
 **Instructional Methods:**
+
 - Video tutorials with embedded quizzes
 - Live coding demonstrations
 - Pair programming exercises
@@ -185,34 +198,40 @@ Avoid:
 
 **Assessment Strategy:**
 
-*Formative (Weekly):*
+_Formative (Weekly):_
+
 - Auto-graded practice exercises
 - Peer code reviews
 - Short quizzes on key concepts
 
-*Summative (End of Module):*
+_Summative (End of Module):_
+
 - Module challenges (SQL, Python, Visualization)
 - Capstone project with rubric
 - Self-assessment and reflection
 
 **Completion Criteria:**
+
 - Pass all module challenges (70%+ score)
 - Complete capstone project with satisfactory rubric
 - Active participation (80% attendance)
 
 **Support Structure:**
+
 - Office hours: 2x weekly with instructors
 - Slack community for peer support
 - 1:1 career coaching sessions
 - Alumni network access
 
 **Success Metrics:**
+
 - Module completion rates (target: 85%+)
 - Assessment score progression
 - Student satisfaction surveys (target: 4.5/5)
 - Post-program job/role advancement (6-month follow-up)
 
 ## Related Prompts
+
 - [Learning Experience Design Expert](learning-experience-design-expert.md) - For designing engaging individual learning experiences
 - [Competency Assessment Expert](competency-assessment-expert.md) - For evaluating learner competencies
 - [Knowledge Gap Analysis Expert](knowledge-gap-analysis-expert.md) - For identifying training needs

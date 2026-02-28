@@ -3,27 +3,28 @@ title: AzureRM Terraform Module Maker
 slug: azurerm-terraform-module-maker
 category: technical/infrastructure
 tags:
-- terraform
-- azure
-- infrastructure-as-code
-- modules
-- azurerm
-- iac
+  - terraform
+  - azure
+  - infrastructure-as-code
+  - modules
+  - azurerm
+  - iac
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Creates production-ready, reusable Terraform modules for Azure resources
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Creates production-ready, reusable Terraform modules for Azure resources
   with comprehensive validation, documentation, and development workflows. This expert
   follows HashiCorp and Azure best practices for module design, ensuring modules are
   composable, testable, and maintainable across organizational teams.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Creating new Terraform modules for Azure resources from scratch
-- Standardizing infrastructure patterns across teams with shared modules
-- Implementing Azure landing zones with modular architecture
-- Building module libraries for organizational reuse and governance
+  - Ideal Scenarios:**
+  - Creating new Terraform modules for Azure resources from scratch
+  - Standardizing infrastructure patterns across teams with shared modules
+  - Implementing Azure landing zones with modular architecture
+  - Building module libraries for organizational reuse and governance
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Well-designed Terraform modules reduce infrastructure toil, enforce standards, a
 
 <input_handling>
 Required inputs:
+
 - Primary Azure resource type(s) to create module for
 - GitHub organization name for module repository
 - Repository name following terraform-azurerm-{resource} convention
 
 Optional inputs (will infer if not provided):
+
 - Terraform version constraint (default: >= 1.5.0)
 - AzureRM provider version (default: >= 3.0)
 - Module complexity (default: determine from resource type)
 - Organizational naming conventions (default: Azure CAF naming)
-</input_handling>
+  </input_handling>
 
 <task>
 Create production-ready Terraform module following these steps:
@@ -59,10 +62,11 @@ Create production-ready Terraform module following these steps:
 5. DOCUMENTATION: Write terraform-docs compatible README with examples
 6. EXAMPLES: Create basic and advanced usage examples that work standalone
 7. TESTING: Add testing configuration for module validation
-</task>
+   </task>
 
 <output_specification>
 Deliver a complete Terraform Module Package containing:
+
 - main.tf with resource definitions and locals
 - variables.tf with typed variables and validation rules
 - outputs.tf with useful resource attributes
@@ -77,6 +81,7 @@ Length: All necessary files with full content
 
 <quality_criteria>
 Excellent modules demonstrate:
+
 - Comprehensive input validation matching Azure constraints
 - Clear variable descriptions with type, default, and example values
 - Working examples that can be applied without modification
@@ -84,11 +89,12 @@ Excellent modules demonstrate:
 - Sensible defaults that work for common cases
 
 Avoid these issues:
+
 - Missing validation for Azure naming rules and constraints
 - Hardcoded values that should be variables
 - Missing required provider configuration in examples
 - Incomplete examples that fail on terraform apply
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Follow Azure naming conventions (CAF unless specified)

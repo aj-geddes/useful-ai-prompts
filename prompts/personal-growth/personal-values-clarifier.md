@@ -1,6 +1,7 @@
 # Personal Values Clarifier
 
 ## Metadata
+
 - **ID**: `personal-growth-values-clarifier`
 - **Version**: 1.0.0
 - **Category**: Personal Growth
@@ -18,6 +19,7 @@ Helps identify, clarify, and prioritize core personal values for authentic livin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Unclear about what you truly value versus what you think you should value
 - Facing major life decisions requiring clarity on priorities
 - Feeling misaligned between stated values and actual behavior
@@ -25,6 +27,7 @@ Helps identify, clarify, and prioritize core personal values for authentic livin
 - Values conflicts creating stress or indecision
 
 **Anti-Patterns (When NOT to Use):**
+
 - Moral philosophy debates or ethical theory
 - Organizational values definition (use organizational development)
 - Relationship counseling for serious issues
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I say family is most important but I work 60-hour weeks. I value honesty but often tell white lies to avoid conflict. I am not sure if I am hypocritical or if my real values are different from what I claim. I need to make a career decision and do not know what to prioritize."
 
 ### Output
@@ -115,16 +119,19 @@ Avoid:
 Evidence-based values analysis:
 
 From your time allocation (actions reveal values):
+
 - Achievement/Success: 60-hour weeks indicate high priority on professional accomplishment
 - Security: Work intensity may be driven by providing for family financially
 - Competence: Likely value being excellent at what you do
 
 From your emotional responses (what bothers you reveals values):
+
 - Harmony: White lies to avoid conflict suggest valuing peace and relationships
 - Acceptance: Discomfort with conflict may indicate valuing being liked or included
 - Integrity (aspirational): Feeling "hypocritical" shows you value honesty in principle
 
 From your relationships (where you invest emotionally):
+
 - Family: You name it as important (needs examination of expression)
 - Contribution: Work may be how you contribute to family well-being
 
@@ -155,6 +162,7 @@ Your core values (reframed based on evidence):
    - Growth area: Align actions more closely with this stated value
 
 Values tension identified:
+
 - Security/Achievement vs. Family Connection (time allocation conflict)
 - Harmony vs. Integrity (honesty vs. conflict avoidance trade-off)
 
@@ -163,6 +171,7 @@ Values tension identified:
 For your career decision, apply this framework:
 
 Step 1: Identify which values are at stake
+
 - List how each option affects your top values
 - Example: New role with more money but more travel
   - Security: Positive (more income)
@@ -170,37 +179,44 @@ Step 1: Identify which values are at stake
   - Achievement: Depends on role quality
 
 Step 2: Apply your values hierarchy
+
 - Which value matters most in this specific decision?
 - What is the minimum acceptable level for each value?
 - What trade-offs are you willing to make consciously?
 
 Step 3: Test for authenticity
+
 - Imagine choosing option A. How do you feel?
 - Imagine telling your family about choice. What is your gut reaction?
 - Five years from now, which choice would you respect more?
 
 Step 4: Make values-aligned choice
+
 - Choose the option that honors your highest-priority values
 - Accept the trade-off consciously rather than by default
 
 **4. Alignment Plan**
 
 Immediate actions (this week):
+
 - Have honest conversation with family about your work and values
 - Identify one work boundary that would increase family connection
 - Notice next white lie impulse and pause to consider honest alternative
 
 Short-term (next month):
+
 - Review career decision using values framework
 - Schedule protected family time and honor it
 - Practice small honest conversations (building integrity muscle)
 
 Ongoing practice:
+
 - Weekly values check-in: "Did my actions this week reflect my values?"
 - Monthly review: "What needs adjustment for better alignment?"
 - Before major decisions: Apply the 4-step framework
 
 Reframe success:
+
 - Not "family OR career" but "how much of each serves my values?"
 - Not "hypocrite" but "in the process of aligning actions with values"
 - Not "right vs. wrong" but "conscious trade-offs vs. unconscious defaults"

@@ -1,6 +1,7 @@
 # Solar Construction Management and Commissioning Optimization
 
 ## Metadata
+
 - **ID**: `solar-construction-management-commissioning-optimization`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Manage the construction and commissioning of utility-scale solar installations, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning construction sequencing and scheduling
 - Developing quality control and inspection programs
 - Creating commissioning and testing protocols
@@ -26,6 +28,7 @@ Manage the construction and commissioning of utility-scale solar installations, 
 - Transitioning projects from construction to operations
 
 **Anti-Patterns (When NOT to Use):**
+
 - Site-specific engineering design (requires licensed engineer)
 - Detailed procurement and contract negotiation
 - Specific safety incident investigation
@@ -111,29 +114,34 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We're building a 150 MW DC / 120 MW AC solar project using single-axis trackers and central inverters. Site is 800 acres in a rural area with some wetland constraints. Schedule target is 10 months from notice to proceed to commercial operation. Main challenges: aggressive schedule, wet weather risk, and ensuring we meet performance guarantees for the financing parties.
 
 ### Output
+
 **Solar Construction and Commissioning Framework: 150 MW Single-Axis Tracker Project**
 
 **Construction Sequencing Strategy**
 
-*Critical Path Analysis*
+_Critical Path Analysis_
 Your 10-month schedule is aggressive for 150 MW. Critical path runs through:
+
 1. Electrical infrastructure (trenching, MV collection, substation)
 2. Tracker installation and module mounting
 3. Inverter installation and commissioning
 4. Grid synchronization and performance testing
 
-*Parallel Work Streams*
+_Parallel Work Streams_
 Maximize schedule compression through parallel activities:
+
 - Civil grading and tracker foundations simultaneous in different zones
 - MV trenching follows tracker foundation completion by 2-3 weeks
 - String installation can begin before all trackers complete
 - Commissioning testing overlaps with construction in completed areas
 
-*Zone Approach*
+_Zone Approach_
 Divide 800 acres into 5-6 construction zones:
+
 - Complete zones fully before moving crews
 - Enables rolling commissioning as zones finish
 - Manages wetland areas as separate zones with specific constraints
@@ -141,25 +149,29 @@ Divide 800 acres into 5-6 construction zones:
 
 **Schedule Framework**
 
-*Months 1-2: Site Preparation*
+_Months 1-2: Site Preparation_
+
 - Site mobilization and laydown areas
 - Access roads and perimeter fencing
 - Grading and drainage in initial zones
 - Substation foundation and grounding grid start
 
-*Months 3-5: Tracker and Electrical Infrastructure*
+_Months 3-5: Tracker and Electrical Infrastructure_
+
 - Pile driving and tracker assembly (peak workforce)
 - MV cable trenching and conductor installation
 - Inverter pad construction and equipment setting
 - Substation equipment installation
 
-*Months 6-8: Module Installation and Wiring*
+_Months 6-8: Module Installation and Wiring_
+
 - Module installation (200,000+ modules)
 - DC string wiring and combiner installation
 - Tracker motor and controller installation
 - MV cable terminations and testing
 
-*Months 9-10: Commissioning and COD*
+_Months 9-10: Commissioning and COD_
+
 - Inverter commissioning and grid synchronization
 - Performance testing and reliability demonstration
 - Utility acceptance and final interconnection
@@ -167,20 +179,23 @@ Divide 800 acres into 5-6 construction zones:
 
 **Quality Control Program**
 
-*Pre-Construction*
+_Pre-Construction_
+
 - Vendor factory inspections (modules, inverters, trackers)
 - Incoming material inspection and documentation
 - ITP (Inspection and Test Plan) development
 - Third-party inspector engagement
 
-*During Construction*
+_During Construction_
+
 - Foundation depth and alignment verification
 - Torque verification on structural connections
 - DC string testing before backfill (continuity, polarity, Voc, Isc)
 - MV cable testing (hi-pot, insulation resistance)
 - Tracker alignment and range of motion verification
 
-*Hold Points (Required Inspection Before Proceeding)*
+_Hold Points (Required Inspection Before Proceeding)_
+
 - Pile depth verification
 - Grounding system inspection before backfill
 - DC string testing before energization
@@ -189,14 +204,16 @@ Divide 800 acres into 5-6 construction zones:
 
 **Safety Management**
 
-*Key Hazards*
+_Key Hazards_
+
 - Electrical (arc flash, shock from DC systems)
 - Material handling (modules, cable, equipment)
 - Mobile equipment (excavators, cranes, delivery trucks)
 - Weather (heat illness, lightning, wind)
 - Wildlife (snakes, insects in rural areas)
 
-*Program Elements*
+_Program Elements_
+
 - Daily safety briefings with crew sign-in
 - Job Hazard Analysis (JHA) for each activity
 - Lockout/tagout program for electrical work
@@ -204,7 +221,8 @@ Divide 800 acres into 5-6 construction zones:
 - Heat illness prevention program
 - Emergency action plan with local emergency services
 
-*Performance Targets*
+_Performance Targets_
+
 - Zero lost-time incidents
 - TRIR < 1.0
 - Daily safety observations by all supervisors
@@ -212,26 +230,30 @@ Divide 800 acres into 5-6 construction zones:
 
 **Commissioning Protocol**
 
-*Level 1: Component Testing*
+_Level 1: Component Testing_
+
 - String-level I-V curve tracing
 - Module visual inspection (no damage, proper labeling)
 - Tracker functionality and controller verification
 - Combiner box testing and fuse verification
 
-*Level 2: Subsystem Testing*
+_Level 2: Subsystem Testing_
+
 - Inverter factory acceptance test (FAT) witnessing
 - Inverter site commissioning per manufacturer protocol
 - MV switchgear testing and protection verification
 - Substation protection coordination verification
 
-*Level 3: System Testing*
+_Level 3: System Testing_
+
 - Initial energization and grid synchronization
 - Active/reactive power capability verification
 - Ramp rate compliance testing
 - Low/high voltage ride-through testing (if required)
 - SCADA communication and data verification
 
-*Level 4: Performance Testing*
+_Level 4: Performance Testing_
+
 - Capacity test per utility/lender requirements
 - Performance ratio verification
 - Availability demonstration (typically 30-90 days)
@@ -239,19 +261,22 @@ Divide 800 acres into 5-6 construction zones:
 
 **Grid Interconnection Coordination**
 
-*Pre-Synchronization*
+_Pre-Synchronization_
+
 - Witness testing with utility (protection, SCADA)
 - Pre-parallel inspection by utility
 - Metering verification and certification
 - Communication testing with utility control center
 
-*Initial Synchronization*
+_Initial Synchronization_
+
 - Coordinate with utility for first sync window
 - Start with single inverter, add incrementally
 - Verify protection operation at low power levels
 - Confirm SCADA data flowing correctly
 
-*Performance Demonstration*
+_Performance Demonstration_
+
 - Meet utility capacity test requirements
 - Demonstrate ramp rate and curtailment compliance
 - Complete reliability run (typically 2-4 weeks)
@@ -260,6 +285,7 @@ Divide 800 acres into 5-6 construction zones:
 **Wet Weather Contingency**
 
 Given your wetland constraints and weather risk:
+
 - Maintain aggregate stockpile for road maintenance
 - Matting for sensitive area access
 - Flexible scheduling with makeup days built in
@@ -278,6 +304,7 @@ Given your wetland constraints and weather risk:
 ---
 
 ## Related Prompts
+
 - [Energy Storage System Design Expert](energy-storage-system-design-expert.md) - For hybrid projects
 - [Smart Grid Infrastructure Architect](smart-grid-infrastructure-architect.md) - For grid integration
 - [Agrivoltaics Development](solar-energy-development/agrivoltaics-dual-use-system-development.md) - For dual-use projects

@@ -3,33 +3,34 @@ title: Concentrated Solar Power and Thermal Storage System Development
 slug: concentrated-solar-power-thermal-storage
 category: renewable energy/solar energy development
 tags:
-- CSP
-- thermal
-- storage
-- dispatchable
-- renewable
-- molten
-- salt
-- solar
-- tower
-- grid
-- stability
+  - CSP
+  - thermal
+  - storage
+  - dispatchable
+  - renewable
+  - molten
+  - salt
+  - solar
+  - tower
+  - grid
+  - stability
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables development of concentrated solar power (CSP) systems
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables development of concentrated solar power (CSP) systems
   with integrated thermal energy storage, creating dispatchable renewable energy solutions
   for grid stability and extended energy delivery beyond daylight hours. It combines
   expertise in CSP engineering with thermal storage optimization to deliver utility-scale
   installations in high solar resource regions.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing utility-scale CSP projects with thermal storage (6-12+ hours)
-- Designing dispatchable renewable energy for grid stability services
-- Evaluating parabolic trough, solar tower, or linear Fresnel technologies
-- Optimizing thermal storage integration for capacity payments and ancillary services
+  - Ideal scenarios:**
+  - Developing utility-scale CSP projects with thermal storage (6-12+ hours)
+  - Designing dispatchable renewable energy for grid stability services
+  - Evaluating parabolic trough, solar tower, or linear Fresnel technologies
+  - Optimizing thermal storage integration for capacity payments and ancillary services
 complexity: advanced
 interaction: multi-turn
 ---
@@ -48,17 +49,19 @@ CSP with thermal storage provides dispatchable renewable energy addressing grid 
 
 <input_handling>
 **Required information:**
+
 - Project location and DNI resource data
 - Target capacity (MW) and storage duration (hours)
 - Grid interconnection context and services required
 - Technology preference (tower, trough, linear Fresnel)
 
 **Optional (will infer reasonable defaults):**
+
 - Heat transfer fluid (molten salt, synthetic oil)
 - Storage configuration (two-tank, thermocline)
 - Power cycle specifications (steam turbine parameters)
 - Market participation strategy (energy, capacity, ancillary)
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive CSP with thermal storage project:
@@ -74,18 +77,20 @@ Develop a comprehensive CSP with thermal storage project:
 5. **Grid Integration Strategy**: Design dispatch protocols, grid services provision, and market participation approach
 
 6. **Economic Analysis**: Develop financial model with LCOE, revenue streams, and investment returns
-</task>
+   </task>
 
 <output_specification>
 **CSP with Thermal Storage Development Plan**
+
 - Format: Technical design with economic analysis
 - Length: 1000-1500 words
 - Sections: Technology selection, storage design, performance projections, grid integration, economics
 - Must include: Efficiency targets, storage sizing rationale, dispatch strategy, LCOE projection
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Appropriate technology selection justified by resource and market conditions
 - Storage duration matched to grid needs and revenue optimization
 - Realistic performance projections (>25% solar-to-electric, >95% storage efficiency)
@@ -93,12 +98,13 @@ Develop a comprehensive CSP with thermal storage project:
 - Competitive LCOE with multiple revenue stream analysis
 
 **Avoid:**
+
 - Recommending CSP in low DNI regions without justification
 - Undersizing storage relative to grid value opportunities
 - Ignoring water requirements and cooling system needs
 - Overly optimistic efficiency or availability assumptions
 - Missing thermal cycling and material degradation considerations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain DNI threshold of >5.5 kWh/m2/day for project viability

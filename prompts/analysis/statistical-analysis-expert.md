@@ -1,6 +1,7 @@
 # Statistical Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-statistical-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Conducts rigorous statistical analysis to test hypotheses, model relationships, and derive data-driven insights. Provides clear interpretations of statistical results with actionable recommendations for business and research decisions.
 
 ## When to Use
+
 - Testing hypotheses about customer behavior or business outcomes
 - Validating A/B test results with proper statistical rigor
 - Building predictive or explanatory models
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Customer satisfaction survey: 1,847 responses, 25 Likert-scale questions (1-5) plus demographics. 98% complete, CSV format. Questions: Does satisfaction differ by subscription tier (Basic/Pro/Premium)? Does higher usage correlate with satisfaction? Hypotheses: Premium customers are more satisfied; higher usage correlates with satisfaction. Need 95% confidence for business decisions to inform pricing strategy and retention efforts.
 ```
 
 ### Output
+
 ```
 **Customer Satisfaction Statistical Analysis**
 

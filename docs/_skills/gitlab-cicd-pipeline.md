@@ -1,16 +1,17 @@
 ---
 category: version-control
-date: '2025-01-01'
-description: Design and implement GitLab CI/CD pipelines with stages, jobs, artifacts,
+date: "2025-01-01"
+description:
+  Design and implement GitLab CI/CD pipelines with stages, jobs, artifacts,
   and caching. Configure runners, Docker integration, and deployment strategies.
 layout: skill
 slug: gitlab-cicd-pipeline
 tags:
-- docker
-- git
-- ci/cd
-- gitlab
-- deployment
+  - docker
+  - git
+  - ci/cd
+  - gitlab
+  - deployment
 title: gitlab-cicd-pipeline
 ---
 
@@ -199,10 +200,10 @@ build-image:
 
     # Build with cache
     - docker build
-        --cache-from $CI_REGISTRY_IMAGE:latest
-        --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-        --tag $CI_REGISTRY_IMAGE:latest
-        .
+      --cache-from $CI_REGISTRY_IMAGE:latest
+      --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+      --tag $CI_REGISTRY_IMAGE:latest
+      .
 
     # Push images
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
@@ -278,8 +279,8 @@ deploy-k8s:
 
     # Update image in deployment
     - kubectl set image deployment/app-deployment
-        app=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-        -n production
+      app=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+      -n production
 
     # Wait for rollout
     - kubectl rollout status deployment/app-deployment -n production
@@ -335,6 +336,7 @@ release:
 ## Best Practices
 
 ### ✅ DO
+
 - Use stages to organize pipeline flow
 - Implement caching for dependencies
 - Use artifacts for test reports
@@ -348,6 +350,7 @@ release:
 - Use merge request pipelines
 
 ### ❌ DON'T
+
 - Run tests serially when parallelizable
 - Cache everything unnecessarily
 - Leave large artifacts indefinitely

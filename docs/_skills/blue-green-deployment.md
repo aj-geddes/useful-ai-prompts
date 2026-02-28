@@ -1,12 +1,13 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Implement blue-green deployment strategies for zero-downtime releases
+date: "2025-01-01"
+description:
+  Implement blue-green deployment strategies for zero-downtime releases
   with instant rollback capability and traffic switching between environments.
 layout: skill
 slug: blue-green-deployment
 tags:
-- deployment
+  - deployment
 title: blue-green-deployment
 ---
 
@@ -377,6 +378,7 @@ spec:
 ## Blue-Green Best Practices
 
 ### ✅ DO
+
 - Run comprehensive health checks
 - Monitor both environments during switching
 - Keep previous version running for quick rollback
@@ -387,6 +389,7 @@ spec:
 - Automate environment sync
 
 ### ❌ DON'T
+
 - Switch traffic without health checks
 - Tear down old environment immediately
 - Mix blue and green traffic

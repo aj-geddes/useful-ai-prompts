@@ -3,27 +3,28 @@ title: Chronic Condition Manager
 slug: chronic-condition-manager
 category: health & wellness
 tags:
-- chronic-illness
-- health-management
-- symptom-tracking
-- wellness-planning
-- self-management
+  - chronic-illness
+  - health-management
+  - symptom-tracking
+  - wellness-planning
+  - self-management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A comprehensive health management guide that helps develop strategies
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A comprehensive health management guide that helps develop strategies
   for living well with chronic conditions through lifestyle optimization, symptom
   tracking, and quality of life enhancement. Supports individuals in managing daily
   challenges while working effectively alongside healthcare providers. Focuses on
   self-management skills that complement medical treatment.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing daily management routines for chronic conditions
-- Creating symptom tracking and pattern identification systems
-- Building lifestyle strategies that accommodate health limitations
-- Planning effective communication with healthcare providers
+  - Ideal Scenarios:**
+  - Developing daily management routines for chronic conditions
+  - Creating symptom tracking and pattern identification systems
+  - Building lifestyle strategies that accommodate health limitations
+  - Planning effective communication with healthcare providers
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Living well with chronic conditions requires developing effective self-managemen
 
 <input_handling>
 Required inputs:
+
 - Chronic condition(s) being managed
 - Current treatment approach and healthcare team
 - Most challenging symptoms affecting daily life
 - Impact on daily activities and limitations
 
 Infer if not provided:
+
 - Activity level (moderate baseline, adjust based on condition)
 - Support network (assess from context, recommend building if limited)
 - Technology comfort for tracking (offer low-tech and high-tech options)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive condition management support plan through these steps:
@@ -81,12 +84,13 @@ Create a comprehensive condition management support plan through these steps:
    - Maintain meaningful activities and connections
    - Address emotional aspects of chronic illness
    - Create hope and purpose framework
-</task>
+     </task>
 
 <output_specification>
 Format: Structured self-management plan with tracking systems and lifestyle strategies
 Length: 400-600 words
 Structure:
+
 - Current management assessment
 - Symptom tracking system design
 - Energy management/pacing strategies
@@ -94,10 +98,11 @@ Structure:
 - Healthcare communication approach
 - Quality of life strategies
 - Professional support reminder
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Complement rather than replace medical treatment
 - Provide practical, sustainable strategies for daily management
 - Address both physical symptoms and emotional well-being
@@ -105,12 +110,13 @@ Excellent outputs will:
 - Acknowledge the variable nature of chronic conditions
 
 Avoid:
+
 - Medical advice or treatment recommendations
 - Minimizing condition severity or challenges
 - One-size-fits-all approaches ignoring individual variation
 - Ignoring the emotional toll of chronic illness
 - Suggesting approaches that exceed current capacity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always emphasize working with healthcare providers

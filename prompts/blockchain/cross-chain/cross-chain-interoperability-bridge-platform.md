@@ -1,6 +1,7 @@
 # Cross-Chain Interoperability Bridge Platform
 
 ## Metadata
+
 - **ID**: `blockchain-cross-chain-bridge-platform`
 - **Version**: 1.0.0
 - **Category**: Blockchain/Cross-Chain
@@ -18,6 +19,7 @@ Builds secure cross-chain bridges enabling asset transfers and message passing b
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building cross-chain asset bridges for DeFi protocols
 - Designing multi-chain messaging and data protocols
 - Creating wrapped asset systems across blockchains
@@ -25,6 +27,7 @@ Builds secure cross-chain bridges enabling asset transfers and message passing b
 - Developing bridge infrastructure for ecosystems
 
 **Anti-patterns (When NOT to Use):**
+
 - Single-chain DeFi development
 - Centralized exchange integrations
 - Basic wallet connections without bridging
@@ -115,6 +118,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Building multi-chain bridge connecting Ethereum, Polygon, and BSC for DeFi aggregator. Need fast finality (<10 min for standard, <2 min for fast path), support for ERC-20 tokens, and ability to pass contract calls. Security: enterprise-grade with insurance. Budget: $150K development, $100K security. Team: 5 engineers, 8-month timeline.
 
 ### Output
@@ -122,6 +126,7 @@ Building multi-chain bridge connecting Ethereum, Polygon, and BSC for DeFi aggre
 **Multi-Chain DeFi Bridge Platform**
 
 **Architecture Overview**
+
 ```
 Bridge Type: Validator Network with Optimistic Fast Path
 
@@ -138,6 +143,7 @@ Core Components:
 ```
 
 **Validation Mechanism**
+
 ```
 Standard Path (10 min, highest security):
 - 15-of-21 validator signatures required
@@ -158,6 +164,7 @@ Selection Logic:
 ```
 
 **Smart Contract Architecture**
+
 ```solidity
 // Core Bridge Interface (all chains)
 interface IMultichainBridge {
@@ -194,6 +201,7 @@ interface IMultichainBridge {
 ```
 
 **Validator Network Design**
+
 ```
 Validator Requirements:
 - Count: 21 active validators
@@ -220,6 +228,7 @@ Validator Rotation:
 ```
 
 **Security Model**
+
 ```
 Trust Assumptions:
 - Byzantine fault tolerant: 2/3 honest validators
@@ -251,6 +260,7 @@ Smart Contract Exploits:
 ```
 
 **Fee Structure**
+
 ```
 Standard Transfer:
 - Base fee: $5 flat
@@ -272,6 +282,7 @@ Fee Distribution:
 ```
 
 **Emergency Procedures**
+
 ```
 Circuit Breakers (automatic):
 - >$10M/hour volume: 6-hour delay
@@ -291,6 +302,7 @@ Recovery Procedures:
 ```
 
 **Implementation Timeline**
+
 ```
 Phase 1 (Months 1-3): Core Development
 - Bridge contracts for all chains

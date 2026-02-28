@@ -1,6 +1,7 @@
 # Literature Review Expert
 
 ## Metadata
+
 - **ID**: `research-literature-review`
 - **Version**: 1.0.0
 - **Category**: Research/Academic
@@ -18,6 +19,7 @@ Conduct comprehensive literature reviews by systematically organizing sources, i
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing thesis or dissertation literature chapters requiring comprehensive coverage
 - Preparing systematic reviews or meta-analyses for publication
 - Establishing theoretical foundations for research projects or grant proposals
@@ -25,6 +27,7 @@ Conduct comprehensive literature reviews by systematically organizing sources, i
 - Synthesizing conflicting findings across multiple studies
 
 **Anti-Patterns (Don't Use For):**
+
 - Casual reading recommendations without systematic methodology
 - Single-source summaries or individual paper reviews
 - Non-academic content curation or popular literature
@@ -107,20 +110,23 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm writing a literature review on the impact of social media on adolescent mental health for my psychology PhD dissertation. I have access to PsycINFO, PubMed, and Google Scholar. Looking at research from 2015-2024. My study will focus on longitudinal effects using experience sampling methodology."
 
 ### Output
+
 **Literature Review Framework: Social Media and Adolescent Mental Health**
 
 **Search Strategy**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Databases | PsycINFO, PubMed, Google Scholar (supplementary) |
-| Date Range | January 2015 - December 2024 |
-| Language | English |
+| Parameter  | Specification                                    |
+| ---------- | ------------------------------------------------ |
+| Databases  | PsycINFO, PubMed, Google Scholar (supplementary) |
+| Date Range | January 2015 - December 2024                     |
+| Language   | English                                          |
 
 **Primary Search String:**
+
 ```
 ("social media" OR "Instagram" OR "TikTok" OR "Facebook" OR "Snapchat" OR "social networking")
 AND ("adolescent*" OR "teen*" OR "youth" OR "young people")
@@ -128,12 +134,14 @@ AND ("mental health" OR "depression" OR "anxiety" OR "well-being" OR "psychologi
 ```
 
 **Inclusion Criteria:**
+
 - Peer-reviewed empirical studies
 - Participants aged 12-18 years
 - Social media use as independent variable
 - Mental health outcomes measured
 
 **Exclusion Criteria:**
+
 - Case studies or N<30 samples
 - Clinical populations with pre-existing diagnosed disorders as inclusion criterion
 - Non-peer-reviewed sources (except preregistrations)
@@ -172,6 +180,7 @@ Evidence is mixed regarding whether social media displaces beneficial activities
 **Gap Identification for Proposed Research**
 
 The literature reveals three specific gaps your ESM study can address:
+
 1. **Methodological**: Experience sampling with objective usage verification addresses recall bias limitations
 2. **Temporal**: Momentary assessment captures within-day fluctuations invisible to retrospective measures
 3. **Mechanistic**: ESM enables mediation testing of comparison processes at the moment of use
@@ -181,6 +190,7 @@ Your contribution positions against Coyne et al. (2020) and Orben (2020), extend
 ---
 
 ## Related Prompts
+
 - [Scientific Inquiry Expert](scientific-inquiry-expert.md) - Experimental design methodology
 - [Historical Research Expert](historical-research-expert.md) - Historical source analysis
 - [Medical Research Protocol Expert](medical-research-protocol-expert.md) - Clinical research synthesis

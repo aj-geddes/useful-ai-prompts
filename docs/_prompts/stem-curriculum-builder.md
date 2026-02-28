@@ -3,19 +3,20 @@ title: STEM Curriculum Builder
 slug: stem-curriculum-builder
 category: education
 tags:
-- STEM
-- curriculum
-- hands-on
-- learning
-- engineering
-- design
-- integrated
-- science
+  - STEM
+  - curriculum
+  - hands-on
+  - learning
+  - engineering
+  - design
+  - integrated
+  - science
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt designs rigorous, hands-on STEM activities and unit sequences
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt designs rigorous, hands-on STEM activities and unit sequences
   that authentically integrate science, technology, engineering, and mathematics through
   real-world problem contexts. It goes beyond surface-level "STEM activities" to create
   experiences where each discipline is genuinely necessary and students develop both
@@ -24,14 +25,14 @@ description: This prompt designs rigorous, hands-on STEM activities and unit seq
   strategies.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building a multi-lesson STEM unit around a real-world engineering challenge or scientific
-  problem
-- Designing a single hands-on STEM activity that authentically integrates two or more
-  disciplines
-- Creating a STEM elective or after-school program curriculum with coherent progression
-- Adding a "STEM" label to activities that only involve one discipline without genuine
-  integration
+  - Ideal Scenarios:**
+  - Building a multi-lesson STEM unit around a real-world engineering challenge or scientific
+    problem
+  - Designing a single hands-on STEM activity that authentically integrates two or more
+    disciplines
+  - Creating a STEM elective or after-school program curriculum with coherent progression
+  - Adding a "STEM" label to activities that only involve one discipline without genuine
+    integration
 complexity: advanced
 interaction: multi-turn
 ---

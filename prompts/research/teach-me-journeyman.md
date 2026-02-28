@@ -1,6 +1,7 @@
 # Technology Learning Framework (Intermediate)
 
 ## Metadata
+
 - **ID**: `research-tech-learning-intermediate`
 - **Version**: 1.0.0
 - **Category**: Research/Education
@@ -18,12 +19,14 @@ Create structured learning curricula for developers and technical practitioners 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developers expanding their technology toolkit
 - Technical professionals learning adjacent domains
 - Career-changers with some programming background
 - Teams adopting new tools or frameworks
 
 **Anti-Patterns (Do Not Use For):**
+
 - Complete beginners needing fundamentals
 - Experts seeking deep specialization
 - Non-technical audiences
@@ -106,9 +109,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I want to learn Docker. I'm a web developer with 2 years of experience in Node.js. I want to containerize my applications for consistent deployment. I have about 1 week to get productive."
 
 ### Output
+
 **Docker Learning Curriculum: Web Developer Track**
 
 **Technology Overview**
@@ -116,6 +121,7 @@ Docker is a containerization platform that packages applications with their depe
 
 **Why This Matters for You**
 As a Node.js developer, you've likely encountered:
+
 - "It works on my machine" deployment issues
 - Dependency version conflicts between environments
 - Complex setup instructions for new team members
@@ -124,15 +130,16 @@ Docker solves these by creating reproducible environments that match development
 
 **Core Concepts (Mapped to What You Know)**
 
-| Docker Concept | Analogy from Node.js |
-|----------------|---------------------|
-| Image | Like package.json + node_modules bundled together |
-| Container | A running instance of that bundle |
-| Dockerfile | Build script, similar to npm scripts |
+| Docker Concept | Analogy from Node.js                                  |
+| -------------- | ----------------------------------------------------- |
+| Image          | Like package.json + node_modules bundled together     |
+| Container      | A running instance of that bundle                     |
+| Dockerfile     | Build script, similar to npm scripts                  |
 | docker-compose | Like running multiple npm processes, but orchestrated |
-| Volume | Like symlinking node_modules for live reloading |
+| Volume         | Like symlinking node_modules for live reloading       |
 
 **Architecture Overview**
+
 ```
 Your Code -> Dockerfile -> Image -> Container -> Running App
                 |
@@ -142,6 +149,7 @@ Your Code -> Dockerfile -> Image -> Container -> Running App
 **1-Week Learning Plan**
 
 **Days 1-2: Fundamentals**
+
 - Install Docker Desktop
 - Run your first container: `docker run -it node:18 node -v`
 - Create a Dockerfile for a simple Express app
@@ -151,6 +159,7 @@ Exercise: Containerize an existing Node.js project
 Checkpoint: Your app runs with `docker run` and responds to HTTP requests
 
 **Days 3-4: Development Workflow**
+
 - Use volumes for live code reloading
 - Set up docker-compose for multi-container apps (Node + MongoDB)
 - Learn to read and debug container logs
@@ -160,6 +169,7 @@ Exercise: Create docker-compose.yml for a Node.js app with a database
 Checkpoint: App starts with single `docker-compose up` command
 
 **Days 5-6: Production Patterns**
+
 - Multi-stage builds for smaller production images
 - Health checks and restart policies
 - .dockerignore for build optimization
@@ -169,6 +179,7 @@ Exercise: Optimize your image from ~1GB to <200MB using multi-stage builds
 Checkpoint: Production-ready Dockerfile following best practices
 
 **Day 7: Integration & Next Steps**
+
 - Push images to Docker Hub or private registry
 - Basic CI/CD integration concepts
 - Docker in the broader container ecosystem
@@ -177,12 +188,14 @@ Exercise: Push your image to Docker Hub and document the deployment process
 Checkpoint: Someone else can pull and run your containerized app
 
 **Key Resources**
+
 - [Docker Getting Started](https://docs.docker.com/get-started/) - Official tutorial
 - [Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [Node.js Docker Best Practices](https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md)
 - [docker-compose Reference](https://docs.docker.com/compose/)
 
 **Common Pitfalls**
+
 1. **Forgetting to expose ports**: `EXPOSE 3000` in Dockerfile + `-p 3000:3000` when running
 2. **Installing node_modules inside container**: Use volumes correctly or .dockerignore
 3. **Large images**: Always use multi-stage builds for production
@@ -190,6 +203,7 @@ Checkpoint: Someone else can pull and run your containerized app
 
 **Validation Criteria**
 You've achieved intermediate proficiency when you can:
+
 - Containerize any Node.js project from scratch
 - Set up multi-container development environments
 - Explain the difference between images, containers, and volumes
@@ -199,5 +213,6 @@ You've achieved intermediate proficiency when you can:
 ---
 
 ## Related Prompts
+
 - [Technology Learning (Beginner)](teach-me-beginner.md)
 - [Technology Learning (Advanced)](teach-me-advanced.md)

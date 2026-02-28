@@ -5,7 +5,17 @@ category: quantum-computing
 slug: quantum-computing
 icon: fas fa-atom
 description: "Advanced quantum computing prompts for algorithm development, quantum circuits, cryptography, and quantum machine learning."
-tags: [quantum computing, quantum algorithms, quantum circuits, quantum cryptography, quantum ML, quantum networking, quantum simulation, quantum hardware]
+tags:
+  [
+    quantum computing,
+    quantum algorithms,
+    quantum circuits,
+    quantum cryptography,
+    quantum ML,
+    quantum networking,
+    quantum simulation,
+    quantum hardware,
+  ]
 ---
 
 The Quantum Computing category contains cutting-edge prompts for professionals working in quantum computing research, development, and applications. These prompts provide frameworks for quantum algorithm design, circuit optimization, and quantum technology implementation.

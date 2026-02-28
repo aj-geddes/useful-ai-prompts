@@ -1,6 +1,7 @@
 # Research Ethics Reviewer
 
 ## Metadata
+
 - **ID**: `academic-research-ethics-reviewer`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a research ethics specialist who evaluates study designs f
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing a study protocol before submitting an IRB application
 - Evaluating whether a secondary data analysis or existing dataset use requires ethical review
 - Assessing ethical dimensions of research involving vulnerable populations, deception, or sensitive topics
 
 **Anti-patterns (Don't Use For):**
+
 - Substituting for an institutional IRB review board determination on a specific protocol
 - Legal advice on HIPAA compliance, FERPA, or jurisdiction-specific data protection law
 - Approving or clearing research that poses serious risks to participants
@@ -114,6 +117,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a psychology professor planning a study on suicidal ideation in college students aged 18–24. I'll recruit via campus email, conduct 60-minute online interviews about their experiences with suicidal thoughts over the past year, and offer a $25 Amazon gift card for participation. I plan to submit for expedited IRB review. What ethical issues should I address?"
 
 ### Output
@@ -134,14 +138,14 @@ This study involves **greater-than-minimal risk** and almost certainly requires 
 
 **Concerns**
 
-| Issue | Severity | Recommendation |
-|-------|----------|----------------|
-| No crisis protocol described | **Critical** | Develop a mandatory crisis response protocol before IRB submission. You must specify how distress will be monitored during interviews, what the interviewer will do if a participant discloses active suicidal intent or plan, and how you will connect participants to campus counseling or 988 Lifeline. This is non-negotiable. |
-| Recruitment via campus-wide email creates dependency risk | **Critical** | Using your institution's email system implies institutional endorsement and may pressure students who feel obligated to participate (especially if you are in a teaching role). Use a campus research participant pool or flyer recruitment to reduce perceived pressure. Add an explicit voluntariness statement. |
-| No follow-up contact plan for distressed participants | **Moderate** | After a 60-minute interview about past suicidal experiences, some participants may experience delayed distress. Include a 24-hour follow-up email with mental health resources, and specify whether you will attempt contact if a participant drops out of the interview in distress. |
-| Consent form must explicitly address audio/video recording | **Moderate** | If interviews will be recorded for transcription (common in qualitative research), consent must explicitly address recording, who will access recordings, how long they will be retained, and when they will be destroyed. |
-| Data storage for sensitive mental health data | **Moderate** | Transcripts containing suicidal ideation disclosures are sensitive. Confirm that transcripts will be stored on encrypted, institution-approved servers (not personal cloud storage), that direct identifiers will be removed before analysis, and that a data destruction timeline is specified. |
-| Gift card distribution may not be anonymous | **Minor** | Amazon gift cards sent to student email addresses create a link between identity and participation. Consider using a third-party gift card distribution service or cash alternatives if anonymity is a stated protection. |
+| Issue                                                      | Severity     | Recommendation                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| No crisis protocol described                               | **Critical** | Develop a mandatory crisis response protocol before IRB submission. You must specify how distress will be monitored during interviews, what the interviewer will do if a participant discloses active suicidal intent or plan, and how you will connect participants to campus counseling or 988 Lifeline. This is non-negotiable. |
+| Recruitment via campus-wide email creates dependency risk  | **Critical** | Using your institution's email system implies institutional endorsement and may pressure students who feel obligated to participate (especially if you are in a teaching role). Use a campus research participant pool or flyer recruitment to reduce perceived pressure. Add an explicit voluntariness statement.                 |
+| No follow-up contact plan for distressed participants      | **Moderate** | After a 60-minute interview about past suicidal experiences, some participants may experience delayed distress. Include a 24-hour follow-up email with mental health resources, and specify whether you will attempt contact if a participant drops out of the interview in distress.                                              |
+| Consent form must explicitly address audio/video recording | **Moderate** | If interviews will be recorded for transcription (common in qualitative research), consent must explicitly address recording, who will access recordings, how long they will be retained, and when they will be destroyed.                                                                                                         |
+| Data storage for sensitive mental health data              | **Moderate** | Transcripts containing suicidal ideation disclosures are sensitive. Confirm that transcripts will be stored on encrypted, institution-approved servers (not personal cloud storage), that direct identifiers will be removed before analysis, and that a data destruction timeline is specified.                                   |
+| Gift card distribution may not be anonymous                | **Minor**    | Amazon gift cards sent to student email addresses create a link between identity and participation. Consider using a third-party gift card distribution service or cash alternatives if anonymity is a stated protection.                                                                                                          |
 
 ---
 

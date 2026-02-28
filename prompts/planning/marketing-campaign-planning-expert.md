@@ -1,6 +1,7 @@
 # Marketing Campaign Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-marketing-campaign`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A strategic marketing campaign planner that helps you create comprehensive, mult
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning product launch campaigns with multiple channels
 - Designing lead generation campaigns for B2B or B2C
 - Creating brand awareness campaigns with measurable outcomes
@@ -25,6 +27,7 @@ A strategic marketing campaign planner that helps you create comprehensive, mult
 - Building demand generation programs with nurture sequences
 
 **Anti-patterns (Don't Use For):**
+
 - Social media content creation (use content creation prompts)
 - Brand identity development (requires visual design expertise)
 - Media buying negotiations (requires vendor relationships)
@@ -149,59 +152,65 @@ Constraints: Limited brand recognition, must emphasize data privacy compliance
 
 **Campaign Strategy: "Analytics That Think Like You Do"**
 
-*Core Positioning*
+_Core Positioning_
 Position the platform as the first truly intelligent analytics solution that combines AI insights with human intuition, designed specifically for mid-market marketing teams who need enterprise-level insights without enterprise complexity.
 
-*Value Proposition*
+_Value Proposition_
 "Get AI-powered insights that actually make sense. Our platform translates complex data into clear actions, helping marketing leaders make confident decisions 10x faster."
 
-*Key Messages*
+_Key Messages_
+
 1. Intelligence Made Simple - AI that explains insights in plain English
 2. Built for Marketers - No data science degree required
 3. Privacy-First Design - GDPR/CCPA compliant by default
 4. Fast Time to Value - See meaningful insights in hours, not weeks
 
-*Competitive Differentiation*
+_Competitive Differentiation_
+
 - vs. Google Analytics: AI-powered insights vs. manual analysis; marketing-specific vs. general web
 - vs. Adobe Analytics: 80% lower cost; 2-hour setup vs. weeks; no consultants required
 - vs. Mixpanel: Predictive vs. historical; automated insights vs. manual exploration
 
 **Channel Plan ($150,000)**
 
-| Channel | Budget | % | Primary Objective |
-|---------|--------|---|-------------------|
-| LinkedIn Advertising | $35,000 | 23% | Lead generation, awareness |
-| Google Ads | $15,000 | 10% | Intent capture, remarketing |
-| Content Marketing | $20,000 | 13% | Thought leadership, SEO |
-| Webinars/Events | $25,000 | 17% | Lead generation, education |
-| Email Marketing | $15,000 | 10% | Nurture, conversion |
-| PR/Influencer | $15,000 | 10% | Credibility, awareness |
-| Design/Video | $15,000 | 10% | Asset production |
-| Analytics/Tools | $5,000 | 3% | Attribution, optimization |
-| Contingency | $5,000 | 3% | Testing, opportunities |
+| Channel              | Budget  | %   | Primary Objective           |
+| -------------------- | ------- | --- | --------------------------- |
+| LinkedIn Advertising | $35,000 | 23% | Lead generation, awareness  |
+| Google Ads           | $15,000 | 10% | Intent capture, remarketing |
+| Content Marketing    | $20,000 | 13% | Thought leadership, SEO     |
+| Webinars/Events      | $25,000 | 17% | Lead generation, education  |
+| Email Marketing      | $15,000 | 10% | Nurture, conversion         |
+| PR/Influencer        | $15,000 | 10% | Credibility, awareness      |
+| Design/Video         | $15,000 | 10% | Asset production            |
+| Analytics/Tools      | $5,000  | 3%  | Attribution, optimization   |
+| Contingency          | $5,000  | 3%  | Testing, opportunities      |
 
-*Channel Strategy Details*
+_Channel Strategy Details_
 
 LinkedIn (Primary - $35,000):
+
 - Sponsored content: Thought leadership driving to gated content
 - InMail campaigns: Direct outreach to target titles at target companies
 - Lead gen forms: Friction-reduced content downloads
 - Retargeting: Website visitors with demo offers
 
 Content Hub ($20,000):
+
 - Pillar content: "State of Marketing Analytics 2025" research report
 - Blog series: "AI Analytics Explained" (8 posts over 12 weeks)
 - Tools: ROI calculator, Analytics maturity assessment quiz
 - Case studies: 5 customer success stories (prioritize recognizable logos)
 
 Webinar Series ($25,000):
+
 - Week 2: "Why Marketing Analytics Fails (And How to Fix It)" - Problem awareness
 - Week 6: "Live Demo: AI Analytics in Action" - Solution education
 - Week 10: "Customer Panel: Real Results with AI Analytics" - Social proof
 
 **Content Calendar**
 
-*Month 1: Awareness Building*
+_Month 1: Awareness Building_
+
 - Week 1-2: Campaign launch
   - Press release: "Company Launches Revolutionary AI Analytics Platform"
   - Blog: "The Future of Marketing Analytics is Here"
@@ -214,7 +223,8 @@ Webinar Series ($25,000):
   - LinkedIn poll: "What's your biggest analytics challenge?"
   - Webinar 1: Analytics pain points
 
-*Month 2: Consideration*
+_Month 2: Consideration_
+
 - Week 5-6: Solution introduction
   - Blog: "How AI Changes Everything About Marketing Analytics"
   - Video: 3-minute product demo
@@ -227,7 +237,8 @@ Webinar Series ($25,000):
   - LinkedIn: Customer testimonial video snippets
   - Email nurture: Insights series (3 emails)
 
-*Month 3: Conversion*
+_Month 3: Conversion_
+
 - Week 9-10: Social proof
   - Release: "State of Marketing Analytics 2025" report
   - Blog: Interactive ROI calculator announcement
@@ -242,25 +253,28 @@ Webinar Series ($25,000):
 
 **Execution Timeline**
 
-*Pre-Launch (December)*
+_Pre-Launch (December)_
+
 - Week -4: Finalize messaging, create visual templates, set up tracking
 - Week -3: Develop hero content, configure marketing automation
 - Week -2: Test all systems, finalize influencer/PR outreach
 - Week -1: Soft launch to beta users, gather feedback, final adjustments
 
-*Launch Phase (January)*
+_Launch Phase (January)_
+
 - Day 1: Press release 9 AM ET, email blast, LinkedIn campaign live
 - Week 1-2: Daily social posts, first blog content, initial optimization
 - Week 3-4: First webinar, content performance review, budget adjustment
 
-*Optimization Phase (February-March)*
+_Optimization Phase (February-March)_
+
 - Bi-weekly: Channel performance review, creative refresh
 - Monthly: Full performance review, major budget reallocation if needed
 - Ongoing: A/B testing ads, email subject lines, landing pages
 
 **Measurement Plan**
 
-*Primary KPIs*
+_Primary KPIs_
 | Metric | Target | Tracking Method |
 |--------|--------|-----------------|
 | Qualified leads | 500 | HubSpot lead scoring |
@@ -268,7 +282,7 @@ Webinar Series ($25,000):
 | Cost per lead | $300 | Campaign attribution |
 | Trial-to-paid rate | 10% | CRM pipeline |
 
-*Leading Indicators*
+_Leading Indicators_
 | Metric | Target | Frequency |
 |--------|--------|-----------|
 | Website visitors | 10,000/month | Weekly |
@@ -276,12 +290,14 @@ Webinar Series ($25,000):
 | Email open rate | 25% | Per send |
 | LinkedIn engagement | 3% | Weekly |
 
-*Reporting Cadence*
+_Reporting Cadence_
+
 - Daily: Lead volume, spend pacing, critical metrics
 - Weekly: Channel performance, content engagement, pipeline
 - Monthly: Full business review, ROI analysis, strategic recommendations
 
-*Optimization Framework*
+_Optimization Framework_
+
 - Week 2: Initial performance review, quick wins identification
 - Week 4: First major optimization cycle, creative testing results
 - Week 8: Mid-campaign review, budget reallocation

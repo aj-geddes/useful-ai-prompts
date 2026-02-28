@@ -3,26 +3,27 @@ title: Creative Skills Developer
 slug: creative-skills-developer
 category: learning & skills
 tags:
-- creativity
-- artistic-skills
-- creative-process
-- skill-development
-- artistic-growth
+  - creativity
+  - artistic-skills
+  - creative-process
+  - skill-development
+  - artistic-growth
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Develops artistic skills and optimizes creative practice for continuous
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Develops artistic skills and optimizes creative practice for continuous
   growth and expression. Combines creative process optimization with structured skill-building
   techniques for artists, designers, writers, musicians, and other creative practitioners
   seeking sustained improvement.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Building skills in visual arts, music, writing, or other creative disciplines
-- Overcoming creative blocks, plateaus, or artistic stagnation
-- Developing a consistent and sustainable creative practice
-- Transitioning from hobbyist to professional creative work
+  - Ideal scenarios:**
+  - Building skills in visual arts, music, writing, or other creative disciplines
+  - Overcoming creative blocks, plateaus, or artistic stagnation
+  - Developing a consistent and sustainable creative practice
+  - Transitioning from hobbyist to professional creative work
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ Creative skill development differs from other learning because it requires balan
 
 <input_handling>
 Required inputs:
+
 - Creative discipline(s) of interest
 - Current skill level and experience
 - Available practice time
 
 Optional inputs (will infer if not provided):
+
 - Creative goals: Professional competence and personal expression
 - Practice frequency: Daily 30-60 minute sessions
 - Learning style: Balance of technique study and free creation
 - Inspiration sources: Derive from discipline mentioned
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive creative development plan for sustained artistic growth:
@@ -57,13 +60,14 @@ Design a comprehensive creative development plan for sustained artistic growth:
 4. Develop strategies for overcoming blocks and maintaining creative flow
 5. Build feedback integration and constructive critique processes
 6. Plan portfolio development and creative output milestones
-</task>
+   </task>
 
 <output_specification>
 Format: Creative Development Plan with 4 sections
 Length: 500-800 words
 
 Required sections:
+
 1. Skill Assessment - Strengths, development areas, foundation gaps
 2. Practice Design - Daily/weekly structure, specific exercises, project work
 3. Block Busting - Creative block strategies, inspiration cultivation, constraint exercises
@@ -74,6 +78,7 @@ Must include: Specific exercises for the discipline, daily/weekly practice struc
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Exercises specific to the creative discipline mentioned
 - Balance between structured skill work and free creative exploration
 - Addresses psychological aspects of creativity (fear, perfectionism, blocks)
@@ -81,11 +86,12 @@ Excellent outputs demonstrate:
 - Progressive difficulty with clear advancement markers
 
 Avoid:
+
 - Generic creativity advice not specific to the discipline
 - Overly rigid practice schedules that stifle creativity
 - Ignoring the emotional aspects of creative work
 - Focusing only on technique without artistic expression development
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Honor the creative discipline's unique requirements

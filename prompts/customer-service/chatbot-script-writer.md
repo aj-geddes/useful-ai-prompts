@@ -1,6 +1,7 @@
 # Chatbot Script Writer
 
 ## Metadata
+
 - **ID**: `customer-service-chatbot-script-writer`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a conversational design expert who creates chatbot dialog 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a new chatbot flow for a high-volume support topic (order status, password reset, billing FAQ)
 - Auditing an existing bot that has high fallback rates or poor CSAT scores
 - Writing response copy that sounds natural rather than robotic
 
 **Anti-patterns (Don't Use For):**
+
 - Replacing an agent for complex, emotionally sensitive, or high-stakes interactions
 - Designing a bot for a topic requiring real-time system lookups without API integration planning
 
@@ -71,9 +74,11 @@ Bot copy must be under 40 words per message bubble — brevity is critical on mo
 ## Example Usage
 
 ### Input
+
 "We need a chatbot flow for our e-commerce site to handle 'Where is my order?' inquiries. We can connect to our order management system with the customer's email. Platform: web chat. Our brand voice is friendly and straightforward. We get about 800 of these per day."
 
 ### Output
+
 **Order Status Bot — Dialog Flow**
 
 **Primary Intent:** Order status inquiry
@@ -105,15 +110,16 @@ Bot: "Is there anything else I can help you with today?"
 
 **Fallback Logic**
 
-| Trigger | Bot Response | Action |
-|---|---|---|
-| Unrecognized input (attempt 1) | "I want to make sure I help you correctly — could you rephrase that?" | Retry |
-| Unrecognized input (attempt 2) | "Let me get a real person to help you right now." | Handoff |
-| Customer types "frustrated", "angry", "this is ridiculous" | "I hear you — let me connect you with a team member right away." | Immediate handoff |
+| Trigger                                                    | Bot Response                                                          | Action            |
+| ---------------------------------------------------------- | --------------------------------------------------------------------- | ----------------- |
+| Unrecognized input (attempt 1)                             | "I want to make sure I help you correctly — could you rephrase that?" | Retry             |
+| Unrecognized input (attempt 2)                             | "Let me get a real person to help you right now."                     | Handoff           |
+| Customer types "frustrated", "angry", "this is ridiculous" | "I hear you — let me connect you with a team member right away."      | Immediate handoff |
 
 ---
 
 **Human Handoff Triggers**
+
 - Delayed order + customer expresses frustration
 - Order not found after 2 email attempts
 - Mentions "refund", "lawsuit", "fraud", "cancel my account"
@@ -124,10 +130,12 @@ Bot: "Is there anything else I can help you with today?"
 ---
 
 ## Variations
+
 - **Voice IVR Mode**: Adapt dialog flow for phone IVR with spoken response copy, DTMF input options, and silence handling
 - **WhatsApp/SMS Mode**: Optimize copy for character limits and asynchronous conversation pacing with re-engagement messages
 
 ## Related Prompts
+
 - [Support Ticket Classifier](support-ticket-classifier.md) - Routing tickets that bots escalate to the right human queue
 - [Knowledge Base Builder](knowledge-base-builder.md) - Creating self-serve content the bot can surface
 - [Multichannel Support Architect](multichannel-support-architect.md) - Integrating chatbots into the broader channel strategy

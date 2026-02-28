@@ -1,12 +1,13 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Identify and debug performance regressions from code changes. Use comparison
+date: "2025-01-01"
+description:
+  Identify and debug performance regressions from code changes. Use comparison
   and profiling to locate what degraded performance and restore baseline metrics.
 layout: skill
 slug: performance-regression-debugging
 tags:
-- development
+  - development
 title: performance-regression-debugging
 ---
 
@@ -34,11 +35,11 @@ Performance regressions occur when code changes degrade application performance.
 
 // Capture baseline metrics
 const baseline = {
-  responseTime: 500,  // ms
-  timeToInteractive: 2000,  // ms
-  largestContentfulPaint: 1500,  // ms
-  memoryUsage: 50,  // MB
-  bundleSize: 150  // KB gzipped
+  responseTime: 500, // ms
+  timeToInteractive: 2000, // ms
+  largestContentfulPaint: 1500, // ms
+  memoryUsage: 50, // MB
+  bundleSize: 150, // KB gzipped
 };
 
 // Monitor after change
@@ -47,19 +48,20 @@ const current = {
   timeToInteractive: 4000,
   largestContentfulPaint: 3000,
   memoryUsage: 150,
-  bundleSize: 200
+  bundleSize: 200,
 };
 
 // Calculate regression
 const regressions = {};
 for (let metric in baseline) {
   const change = (current[metric] - baseline[metric]) / baseline[metric];
-  if (change > 0.1) {  // >10% degradation
+  if (change > 0.1) {
+    // >10% degradation
     regressions[metric] = {
       baseline: baseline[metric],
       current: current[metric],
-      percentChange: (change * 100).toFixed(1) + '%',
-      severity: change > 0.5 ? 'Critical' : 'High'
+      percentChange: (change * 100).toFixed(1) + "%",
+      severity: change > 0.5 ? "Critical" : "High",
     };
   }
 }
@@ -80,7 +82,8 @@ Step 1: Identify Changed Code
   - Identify risky changes
   - Prioritize by likelyhood
 
-Step 2: Binary Search (Bisect)
+Step 2:
+  Binary Search (Bisect)
   - Start with suspected change
   - Disable the change
   - Re-measure performance
@@ -106,7 +109,6 @@ Step 4: Analyze Impact
   - Check for missing indexes
 
 ---
-
 Common Regressions:
 
 N+1 Query:

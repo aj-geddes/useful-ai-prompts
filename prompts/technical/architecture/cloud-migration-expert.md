@@ -1,6 +1,7 @@
 # Cloud Migration Expert
 
 ## Metadata
+
 - **ID**: `cloud-migration-expert`
 - **Version**: 1.1.0
 - **Category**: Technical/Architecture
@@ -18,6 +19,7 @@ Plans and executes cloud migrations with minimal risk, optimal architecture, and
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Migrating on-premise data centers or VMware environments to public cloud
 - Modernizing legacy applications as part of cloud transition
 - Optimizing existing cloud deployments for cost and performance
@@ -25,6 +27,7 @@ Plans and executes cloud migrations with minimal risk, optimal architecture, and
 - Conducting cloud readiness assessments for executive decision-making
 
 **Anti-patterns (when NOT to use):**
+
 - Greenfield cloud-native development (no migration needed)
 - Simple SaaS adoption decisions
 - Infrastructure-only changes without application migration
@@ -115,25 +118,25 @@ We have an on-premise VMware environment with approximately 200 VMs running in o
 
 **Infrastructure Assessment Summary**
 
-| Category | Count | Key Dependencies |
-|----------|-------|------------------|
-| Compute VMs | 200 | VMware vSphere 7.0, vSAN storage |
-| Kubernetes Clusters | 2 | E-commerce microservices, CI/CD |
-| Databases | 12 | SQL Server (8), PostgreSQL (4) |
-| Storage | 85 TB | NFS shares, block storage |
-| Network | Flat | Single VLAN, minimal segmentation |
+| Category            | Count | Key Dependencies                  |
+| ------------------- | ----- | --------------------------------- |
+| Compute VMs         | 200   | VMware vSphere 7.0, vSAN storage  |
+| Kubernetes Clusters | 2     | E-commerce microservices, CI/CD   |
+| Databases           | 12    | SQL Server (8), PostgreSQL (4)    |
+| Storage             | 85 TB | NFS shares, block storage         |
+| Network             | Flat  | Single VLAN, minimal segmentation |
 
 **7R Strategy Assignment**
 
-| Workload | Strategy | Rationale | Timeline |
-|----------|----------|-----------|----------|
-| Dev/Test VMs (50) | Rehost | Low risk, quick wins, immediate cost savings | Months 1-2 |
-| Internal tools (30) | Rehost | Non-critical, establishes migration patterns | Month 2-3 |
-| Data Warehouse | Replatform | Migrate SQL Server to managed RDS, leverage managed services | Months 4-6 |
-| PostgreSQL DBs | Replatform | Move to Aurora PostgreSQL for HA and scaling | Months 4-5 |
-| E-commerce K8s | Refactor | Migrate to EKS with cloud-native services (ALB, Secrets Manager) | Months 6-9 |
-| ERP System | Retain | Windows-specific dependencies, plan for future Repurchase | Months 10-11 |
-| Legacy monitoring | Retire | Replace with CloudWatch and Datadog | Month 3 |
+| Workload            | Strategy   | Rationale                                                        | Timeline     |
+| ------------------- | ---------- | ---------------------------------------------------------------- | ------------ |
+| Dev/Test VMs (50)   | Rehost     | Low risk, quick wins, immediate cost savings                     | Months 1-2   |
+| Internal tools (30) | Rehost     | Non-critical, establishes migration patterns                     | Month 2-3    |
+| Data Warehouse      | Replatform | Migrate SQL Server to managed RDS, leverage managed services     | Months 4-6   |
+| PostgreSQL DBs      | Replatform | Move to Aurora PostgreSQL for HA and scaling                     | Months 4-5   |
+| E-commerce K8s      | Refactor   | Migrate to EKS with cloud-native services (ALB, Secrets Manager) | Months 6-9   |
+| ERP System          | Retain     | Windows-specific dependencies, plan for future Repurchase        | Months 10-11 |
+| Legacy monitoring   | Retire     | Replace with CloudWatch and Datadog                              | Month 3      |
 
 **Target Architecture (AWS)**
 
@@ -158,55 +161,56 @@ AWS Organization
 
 **Compliance Controls**
 
-| Requirement | Implementation |
-|-------------|----------------|
+| Requirement                  | Implementation                               |
+| ---------------------------- | -------------------------------------------- |
 | PCI-DSS network segmentation | Isolated VPC subnets, NACLs, Security Groups |
-| PCI-DSS encryption at rest | KMS-managed keys, encrypted EBS/RDS |
-| GDPR data residency | eu-west-1 region for EU customer data |
-| GDPR right to deletion | Automated data lifecycle policies |
-| Audit logging | CloudTrail with immutable S3 storage |
+| PCI-DSS encryption at rest   | KMS-managed keys, encrypted EBS/RDS          |
+| GDPR data residency          | eu-west-1 region for EU customer data        |
+| GDPR right to deletion       | Automated data lifecycle policies            |
+| Audit logging                | CloudTrail with immutable S3 storage         |
 
 **Cost Analysis (3-Year TCO)**
 
-| Category | On-Premise (Current) | AWS (Standard) | AWS (Optimized) |
-|----------|---------------------|----------------|-----------------|
-| Compute | $1.2M/year | $1.1M/year | $780K/year |
-| Storage | $400K/year | $250K/year | $200K/year |
-| Database Licenses | $600K/year | $350K/year | $280K/year |
-| Networking | $150K/year | $180K/year | $160K/year |
-| Operations Staff | $500K/year | $400K/year | $400K/year |
-| Data Center/Colo | $300K/year | $0 | $0 |
-| **Annual Total** | **$3.15M** | **$2.28M** | **$1.82M** |
-| **3-Year Total** | **$9.45M** | **$6.84M** | **$5.46M** |
+| Category          | On-Premise (Current) | AWS (Standard) | AWS (Optimized) |
+| ----------------- | -------------------- | -------------- | --------------- |
+| Compute           | $1.2M/year           | $1.1M/year     | $780K/year      |
+| Storage           | $400K/year           | $250K/year     | $200K/year      |
+| Database Licenses | $600K/year           | $350K/year     | $280K/year      |
+| Networking        | $150K/year           | $180K/year     | $160K/year      |
+| Operations Staff  | $500K/year           | $400K/year     | $400K/year      |
+| Data Center/Colo  | $300K/year           | $0             | $0              |
+| **Annual Total**  | **$3.15M**           | **$2.28M**     | **$1.82M**      |
+| **3-Year Total**  | **$9.45M**           | **$6.84M**     | **$5.46M**      |
 
-*Optimization includes: 3-year Reserved Instances, Savings Plans, right-sizing from migration data, S3 Intelligent Tiering*
+_Optimization includes: 3-year Reserved Instances, Savings Plans, right-sizing from migration data, S3 Intelligent Tiering_
 
 **Migration Wave Plan**
 
-| Wave | Months | Workloads | Risk Level | Success Criteria |
-|------|--------|-----------|------------|------------------|
-| 0 | 1 | Landing zone, networking, security baseline | Low | Connectivity verified, compliance validated |
-| 1 | 1-2 | Dev/test environments, internal tools | Low | Applications accessible, no performance regression |
-| 2 | 3-5 | Data warehouse, databases | Medium | Query performance within 10%, replication lag < 1min |
-| 3 | 6-9 | E-commerce platform | High | Zero-downtime cutover, PCI audit passed |
-| 4 | 10-11 | ERP hybrid connectivity | Medium | All integrations functional |
-| 5 | 12 | Final cutover, decommission | Low | Data center fully vacated |
+| Wave | Months | Workloads                                   | Risk Level | Success Criteria                                     |
+| ---- | ------ | ------------------------------------------- | ---------- | ---------------------------------------------------- |
+| 0    | 1      | Landing zone, networking, security baseline | Low        | Connectivity verified, compliance validated          |
+| 1    | 1-2    | Dev/test environments, internal tools       | Low        | Applications accessible, no performance regression   |
+| 2    | 3-5    | Data warehouse, databases                   | Medium     | Query performance within 10%, replication lag < 1min |
+| 3    | 6-9    | E-commerce platform                         | High       | Zero-downtime cutover, PCI audit passed              |
+| 4    | 10-11  | ERP hybrid connectivity                     | Medium     | All integrations functional                          |
+| 5    | 12     | Final cutover, decommission                 | Low        | Data center fully vacated                            |
 
 **Risk Register**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Data transfer exceeds timeline | Medium | High | AWS Snowball for bulk data, parallel DMS streams |
-| Hidden application dependencies | High | Medium | Discovery tools (AWS Migration Hub), phased testing |
-| Performance degradation | Medium | High | Load testing before cutover, CloudFront caching |
-| Team skill gaps | High | Medium | AWS training program, partner engagement for Wave 3 |
-| PCI compliance gap | Low | Critical | Pre-migration QSA assessment, control mapping |
+| Risk                            | Probability | Impact   | Mitigation                                          |
+| ------------------------------- | ----------- | -------- | --------------------------------------------------- |
+| Data transfer exceeds timeline  | Medium      | High     | AWS Snowball for bulk data, parallel DMS streams    |
+| Hidden application dependencies | High        | Medium   | Discovery tools (AWS Migration Hub), phased testing |
+| Performance degradation         | Medium      | High     | Load testing before cutover, CloudFront caching     |
+| Team skill gaps                 | High        | Medium   | AWS training program, partner engagement for Wave 3 |
+| PCI compliance gap              | Low         | Critical | Pre-migration QSA assessment, control mapping       |
 
 Each wave includes documented rollback procedures with maximum 4-hour recovery time objective.
 
 ---
 
 ## Related Prompts
+
 - [System Architecture Design Expert](../../technical-workflows/system-architecture-design-expert.md) - Design cloud architectures
 - [Infrastructure Planning Expert](../../technical-workflows/infrastructure-planning-expert.md) - Plan infrastructure requirements
 - [Cost Reduction Expert](../../optimization/cost-reduction-expert.md) - Optimize cloud costs post-migration

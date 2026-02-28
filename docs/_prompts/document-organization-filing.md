@@ -3,30 +3,31 @@ title: Document Organization & Filing Expert
 slug: document-organization-filing
 category: business/administrative
 tags:
-- document
-- management
-- filing
-- system
-- organization
-- information
-- architecture
-- compliance
-- knowledge
-- management
+  - document
+  - management
+  - filing
+  - system
+  - organization
+  - information
+  - architecture
+  - compliance
+  - knowledge
+  - management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs practical document organization systems with logical folder structures,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs practical document organization systems with logical folder structures,
   naming conventions, and access controls. Creates searchable, scalable document management
   that reduces search time by 80%+ while ensuring compliance and team adoption.
 layout: prompt
 use_cases:
-- Creating a new document management system from scratch
-- Reorganizing chaotic file structures across multiple platforms
-- Establishing naming conventions for teams or departments
-- Implementing retention policies for regulatory compliance
-- Migrating documents during platform transitions
+  - Creating a new document management system from scratch
+  - Reorganizing chaotic file structures across multiple platforms
+  - Establishing naming conventions for teams or departments
+  - Implementing retention policies for regulatory compliance
+  - Migrating documents during platform transitions
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,17 +42,19 @@ Effective document organization balances standardization with usability. Systems
 
 <input_handling>
 Required:
+
 - Organization type and size
 - Number of people needing document access
 - Current document storage locations
 - Primary document types handled
 
 Optional (with defaults):
+
 - Compliance requirements (default: none specified)
 - Current pain points (default: "finding documents quickly")
 - Retention needs (default: 7 years for legal/financial)
 - Platform constraints (default: cloud storage system)
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive document organization system.
@@ -63,17 +66,19 @@ Design a comprehensive document organization system.
 5. Establish retention and archival policies
 6. Create implementation timeline with migration plan
 7. Provide search strategies and automation recommendations
-</task>
+   </task>
 
 <output_specification>
 **Document Organization System**
+
 - Format: Structured sections with visual folder trees and tables
 - Length: 600-1000 words
 - Must include: Folder structure diagram, naming convention examples, access matrix, implementation timeline, retention policy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Folder structure is intuitive and requires minimal training
 - Naming conventions eliminate version confusion
 - Access controls balance security with usability
@@ -81,11 +86,12 @@ Excellent outputs:
 - System accommodates growth and edge cases
 
 Avoid:
+
 - Overly deep folder hierarchies (max 4 levels)
 - Complex naming schemes that won't be followed
 - All-or-nothing migration approaches
 - Ignoring existing workflow patterns
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design for adoption, not perfection

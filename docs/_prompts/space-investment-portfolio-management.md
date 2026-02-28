@@ -3,27 +3,28 @@ title: Space Investment Portfolio Management
 slug: space-investment-portfolio-management
 category: space economy/finance
 tags:
-- space-investment
-- portfolio-management
-- venture-capital
-- space-finance
-- technology-valuation
+  - space-investment
+  - portfolio-management
+  - venture-capital
+  - space-finance
+  - technology-valuation
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables management of space economy investment portfolios
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables management of space economy investment portfolios
   including technology assessment, market analysis, risk management, and value creation
   across commercial space ventures. It applies quantitative portfolio management principles
   to the high-growth space sector with sector-specific risk considerations.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Managing dedicated space-focused investment funds ($100M+)
-- Evaluating space technology company investments across stages
-- Developing space sector investment strategies and theses
-- Optimizing risk-return profiles in space venture portfolios
+  - Ideal Scenarios:**
+  - Managing dedicated space-focused investment funds ($100M+)
+  - Evaluating space technology company investments across stages
+  - Developing space sector investment strategies and theses
+  - Optimizing risk-return profiles in space venture portfolios
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ The commercial space economy presents unique investment opportunities and risks.
 
 <input_handling>
 Required inputs:
+
 - Portfolio size and fund mandate/thesis
 - Investment focus areas within space economy
 - Return expectations and risk tolerance
 
 Optional inputs (will use industry defaults if not provided):
+
 - Investment stages (default: multi-stage from seed through growth)
 - Sector allocation (default: diversified across space economy segments)
 - Fund life (default: 7-10 year horizon typical for space)
 - Geographic focus (default: US primary with selective international)
-</input_handling>
+  </input_handling>
 
 <task>
 Manage space investment portfolio through systematic analysis and construction:
@@ -69,6 +72,7 @@ Step 6: Define portfolio monitoring and exit optimization strategy
 Format: Investment Strategy and Portfolio Plan with quantitative analysis
 Length: 2,000-3,500 words for full strategy; 800-1,200 for focused analysis
 Structure:
+
 - Market Opportunity Analysis (TAM, segments, growth rates)
 - Investment Thesis (focus areas, differentiation, timing)
 - Evaluation Criteria (technology, team, market, business model)
@@ -76,10 +80,11 @@ Structure:
 - Risk Management (categories, mitigation approaches)
 - Value Creation Playbook (board, operating support, synergies)
 - Expected Returns (scenarios, IRR, MOIC targets)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Data-driven market analysis with specific segment sizing
 - Clear investment thesis with differentiated perspective
 - Robust risk management addressing space-specific factors
@@ -88,12 +93,13 @@ Excellent responses demonstrate:
 - Specific criteria rather than generic investment frameworks
 
 Responses must avoid:
+
 - Hype-driven investment rationale without fundamentals
 - Excessive concentration risk in single segments or companies
 - Ignoring technology and execution risk specific to space
 - Unrealistic valuations not supported by market comparables
 - Passive investment approach without value-add strategy
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - ITAR/export control considerations for applicable investments

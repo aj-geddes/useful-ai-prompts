@@ -1,6 +1,7 @@
 # Project Charter Creator
 
 ## Metadata
+
 - **ID**: `project-management-project-charter-creator`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps project managers and sponsors create comprehensive project charters that formally authorize a project, define its scope and objectives, identify stakeholders, and establish constraints and assumptions. It produces a structured charter document ready for executive approval and team alignment.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Starting a new project that requires executive sponsorship and formal authorization
 - Defining the boundaries of a complex initiative with multiple stakeholders
 - Establishing shared understanding of project goals before detailed planning begins
 
 **Anti-patterns (Don't Use For):**
+
 - Ongoing projects already in execution with an approved charter
 - Informal tasks or work that does not require organizational commitment
 - Projects so small they only need a brief scope statement
@@ -67,10 +72,13 @@ Avoid: Vague objectives without measurable criteria; missing out-of-scope items;
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need a project charter for a CRM system migration. We're moving from Salesforce to HubSpot for our 200-person sales team. The project sponsor is our VP of Sales, Sarah Chen. We need it done before Q4 starts (October 1st) and the budget is roughly $150K including consulting fees."
 
 ### Output
+
 **Project Charter: CRM System Migration — Salesforce to HubSpot**
 
 **Document Control**
@@ -90,25 +98,27 @@ The current Salesforce implementation requires separate licensing for Sales Clou
 
 **Project Objectives and Success Criteria**
 
-| # | Objective | Success Criteria | Owner |
-|---|-----------|-----------------|-------|
-| 1 | Complete data migration with zero data loss | 100% of Salesforce records migrated and verified in HubSpot by September 15 | Project Manager |
-| 2 | Achieve sales team adoption | 90% of reps logging at least 5 activities per week in HubSpot by November 1 | VP Sales |
-| 3 | Reduce per-seat licensing cost | Confirmed $85K annual savings by October 31 via finance reconciliation | CFO |
-| 4 | Eliminate marketing data silo | HubSpot and marketing automation sharing unified contact records by go-live | Marketing Director |
+| #   | Objective                                   | Success Criteria                                                            | Owner              |
+| --- | ------------------------------------------- | --------------------------------------------------------------------------- | ------------------ |
+| 1   | Complete data migration with zero data loss | 100% of Salesforce records migrated and verified in HubSpot by September 15 | Project Manager    |
+| 2   | Achieve sales team adoption                 | 90% of reps logging at least 5 activities per week in HubSpot by November 1 | VP Sales           |
+| 3   | Reduce per-seat licensing cost              | Confirmed $85K annual savings by October 31 via finance reconciliation      | CFO                |
+| 4   | Eliminate marketing data silo               | HubSpot and marketing automation sharing unified contact records by go-live | Marketing Director |
 
 ---
 
 **Scope**
 
-*In Scope:*
+_In Scope:_
+
 - Full migration of Contacts, Accounts, Deals, Activities, and custom fields from Salesforce
 - HubSpot Sales Hub Professional configuration for 200 users
 - Integration with company email (Google Workspace) and Slack
 - Sales team training (all 200 users, two sessions per region)
 - 30-day post-migration hypercare support
 
-*Out of Scope:*
+_Out of Scope:_
+
 - Migration of historical email archives predating January 2024
 - Integration with the ERP system (scheduled for Phase 2, Q1 2027)
 - Customization of HubSpot Marketing Hub features
@@ -118,26 +128,28 @@ The current Salesforce implementation requires separate licensing for Sales Clou
 
 **Stakeholder Register**
 
-| Stakeholder | Role | Engagement Level |
-|-------------|------|-----------------|
-| Sarah Chen, VP Sales | Executive Sponsor | Approve, Decide |
-| Director of Revenue Operations | Project Owner | Accountable |
-| IT Security | Governance | Consult, Approve |
-| HubSpot Implementation Partner | Delivery Vendor | Responsible |
-| Sales Team Leads (8 managers) | Change Champions | Inform, Consult |
-| CFO | Financial Governance | Inform |
+| Stakeholder                    | Role                 | Engagement Level |
+| ------------------------------ | -------------------- | ---------------- |
+| Sarah Chen, VP Sales           | Executive Sponsor    | Approve, Decide  |
+| Director of Revenue Operations | Project Owner        | Accountable      |
+| IT Security                    | Governance           | Consult, Approve |
+| HubSpot Implementation Partner | Delivery Vendor      | Responsible      |
+| Sales Team Leads (8 managers)  | Change Champions     | Inform, Consult  |
+| CFO                            | Financial Governance | Inform           |
 
 ---
 
 **Constraints and Assumptions**
 
-*Constraints:*
+_Constraints:_
+
 - Budget: $150,000 total (consulting, licensing transition, training)
 - Timeline: Go-live no later than October 1, 2026 before Q4 begins
 - Resource: Sales team availability for testing limited to 2 hours per rep during August
 - Regulatory: All data handling must comply with GDPR and CCPA
 
-*Assumptions:*
+_Assumptions:_
+
 - HubSpot licensing negotiation will be completed by March 15
 - Sales reps will have manager approval for training session attendance
 - Salesforce contract allows data export under current terms
@@ -147,14 +159,14 @@ The current Salesforce implementation requires separate licensing for Sales Clou
 
 **High-Level Milestones**
 
-| Milestone | Target Date |
-|-----------|-------------|
-| Project kickoff and vendor onboarding | March 15, 2026 |
-| HubSpot environment configured and tested | June 30, 2026 |
-| Data migration dry run completed | August 15, 2026 |
-| User acceptance testing complete | September 10, 2026 |
-| Go-live (cutover to HubSpot) | October 1, 2026 |
-| Hypercare period ends | October 31, 2026 |
+| Milestone                                 | Target Date        |
+| ----------------------------------------- | ------------------ |
+| Project kickoff and vendor onboarding     | March 15, 2026     |
+| HubSpot environment configured and tested | June 30, 2026      |
+| Data migration dry run completed          | August 15, 2026    |
+| User acceptance testing complete          | September 10, 2026 |
+| Go-live (cutover to HubSpot)              | October 1, 2026    |
+| Hypercare period ends                     | October 31, 2026   |
 
 ---
 
@@ -166,18 +178,20 @@ The Executive Sponsor retains final decision authority on scope changes exceedin
 
 **Approval**
 
-| Role | Name | Signature | Date |
-|------|------|-----------|------|
-| Executive Sponsor | Sarah Chen | _________ | _____ |
-| IT Director | _________ | _________ | _____ |
-| Project Manager | _________ | _________ | _____ |
+| Role              | Name       | Signature  | Date   |
+| ----------------- | ---------- | ---------- | ------ |
+| Executive Sponsor | Sarah Chen | ****\_**** | **\_** |
+| IT Director       | ****\_**** | ****\_**** | **\_** |
+| Project Manager   | ****\_**** | ****\_**** | **\_** |
 
 ---
 
 ## Variations
+
 - **Lightweight Charter**: Condensed 1-page version for small projects under $25K or 8 weeks
 - **Program Charter**: Expanded version covering multiple related projects under a program umbrella
 
 ## Related Prompts
+
 - [Milestone Planning Advisor](milestone-planning-advisor.md) - Design phase gates and critical path after charter approval
 - [Stakeholder Communication Planner](stakeholder-communication-planner.md) - Build the communication strategy from the stakeholder register

@@ -3,25 +3,26 @@ title: Treasury Management Expert
 slug: treasury-management-expert
 category: finance
 tags:
-- treasury
-- management
-- liquidity
-- management
-- cash
-- pooling
-- hedging
-- banking
-- relationships
-- FX
-- risk
-- interest
-- rate
-- risk
+  - treasury
+  - management
+  - liquidity
+  - management
+  - cash
+  - pooling
+  - hedging
+  - banking
+  - relationships
+  - FX
+  - risk
+  - interest
+  - rate
+  - risk
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a corporate treasurer with deep expertise in liquidity
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a corporate treasurer with deep expertise in liquidity
   management, banking structure optimization, FX and interest rate hedging, and cash
   pooling. It helps CFOs and treasury teams design robust treasury policies, evaluate
   banking relationships, and implement hedging programs that protect cash flow and
@@ -29,13 +30,13 @@ description: This prompt activates a corporate treasurer with deep expertise in 
   recommendations, and hedging strategy designs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A multinational company with multi-currency cash flows looking to optimize cash
-  pooling and reduce FX exposure
-- A CFO designing or updating the company's treasury policy, including investment
-  guidelines and counterparty risk limits
-- Speculative trading or investment strategies beyond corporate treasury scope
-- Real-time execution of hedging instruments (requires a trading desk or broker)
+  - Ideal Scenarios:**
+  - A multinational company with multi-currency cash flows looking to optimize cash
+    pooling and reduce FX exposure
+  - A CFO designing or updating the company's treasury policy, including investment
+    guidelines and counterparty risk limits
+  - Speculative trading or investment strategies beyond corporate treasury scope
+  - Real-time execution of hedging instruments (requires a trading desk or broker)
 complexity: advanced
 interaction: multi-turn
 ---

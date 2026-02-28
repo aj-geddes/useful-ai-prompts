@@ -512,6 +512,7 @@ server:
 ## Best Practices
 
 ### ✅ DO
+
 - Use dependency injection for loose coupling
 - Implement service layer for business logic
 - Use repositories for data access
@@ -524,6 +525,7 @@ server:
 - Use Spring's @Async for async operations
 
 ### ❌ DON'T
+
 - Put business logic in controllers
 - Access database directly in controllers
 - Store secrets in configuration files

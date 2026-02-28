@@ -1,15 +1,16 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Manage database migrations and schema versioning. Use when planning migrations,
+date: "2025-01-01"
+description:
+  Manage database migrations and schema versioning. Use when planning migrations,
   version control, rollback strategies, or data transformations in PostgreSQL and
   MySQL.
 layout: skill
 slug: database-migration-management
 tags:
-- postgres
-- mysql
-- data
+  - postgres
+  - mysql
+  - data
 title: database-migration-management
 ---
 

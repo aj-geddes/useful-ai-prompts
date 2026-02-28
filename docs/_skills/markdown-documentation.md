@@ -1,14 +1,15 @@
 ---
 category: documentation
-date: '2025-01-01'
-description: Master markdown formatting, GitHub Flavored Markdown, README files, and
+date: "2025-01-01"
+description:
+  Master markdown formatting, GitHub Flavored Markdown, README files, and
   documentation formatting. Use when writing markdown docs, READMEs, or formatting
   documentation.
 layout: skill
 slug: markdown-documentation
 tags:
-- git
-- github
+  - git
+  - github
 title: markdown-documentation
 ---
 
@@ -34,30 +35,33 @@ Master markdown syntax and best practices for creating well-formatted, readable 
 
 ```markdown
 # H1 Header
+
 ## H2 Header
+
 ### H3 Header
+
 #### H4 Header
+
 ##### H5 Header
+
 ###### H6 Header
 
-Alternative H1
-==============
+# Alternative H1
 
-Alternative H2
---------------
+## Alternative H2
 ```
 
 ### Text Formatting
 
 ```markdown
 **Bold text**
-__Also bold__
+**Also bold**
 
-*Italic text*
+_Italic text_
 _Also italic_
 
-***Bold and italic***
-___Also bold and italic___
+**_Bold and italic_**
+**_Also bold and italic_**
 
 ~~Strikethrough~~
 
@@ -68,13 +72,15 @@ ___Also bold and italic___
 > in blockquote
 
 ---
-Horizontal rule (also ___ or ***)
+
+Horizontal rule (also \_\_\_ or \*\*\*)
 ```
 
 ### Lists
 
 ```markdown
 Unordered list:
+
 - Item 1
 - Item 2
   - Nested item 2.1
@@ -82,14 +88,17 @@ Unordered list:
 - Item 3
 
 Using asterisks:
-* Item 1
-* Item 2
+
+- Item 1
+- Item 2
 
 Using plus:
-+ Item 1
-+ Item 2
+
+- Item 1
+- Item 2
 
 Ordered list:
+
 1. First item
 2. Second item
    1. Nested item 2.1
@@ -97,6 +106,7 @@ Ordered list:
 3. Third item
 
 Task list (GitHub Flavored Markdown):
+
 - [x] Completed task
 - [ ] Incomplete task
 - [ ] Another task
@@ -130,6 +140,7 @@ Reference-style image:
 Inline code: `const x = 5;`
 
 Code block with language:
+
 ```javascript
 function hello(name) {
   console.log(`Hello, ${name}!`);
@@ -147,8 +158,8 @@ npm start
 ```
 
 Indented code block (4 spaces):
-    const x = 5;
-    console.log(x);
+const x = 5;
+console.log(x);
 ````
 
 ### Tables
@@ -157,20 +168,20 @@ Indented code block (4 spaces):
 Simple table:
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
-| Row 1    | Data     | Data     |
-| Row 2    | Data     | Data     |
+| Row 1 | Data | Data |
+| Row 2 | Data | Data |
 
 Aligned columns:
 | Left | Center | Right |
 |:-----|:------:|------:|
 | Left | Center | Right |
-| Text | Text   | Text  |
+| Text | Text | Text |
 
 Minimal table:
 Column 1 | Column 2
 ---------|----------
-Data     | Data
-Data     | Data
+Data | Data
+Data | Data
 ```
 
 ### Extended Syntax (GitHub Flavored Markdown)
@@ -193,6 +204,7 @@ Automatic URL linking:
 https://github.com
 
 Task lists in issues:
+
 - [x] #739
 - [ ] https://github.com/octo-org/repo/issues/1
 - [ ] Add tests
@@ -209,7 +221,7 @@ username/repo#123
 
 ## README Template
 
-```markdown
+````markdown
 # Project Name
 
 Brief description of what this project does and who it's for.
@@ -253,6 +265,7 @@ Try it live: [https://demo.example.com](https://demo.example.com)
 ```bash
 npm install package-name
 ```
+````
 
 ### Install via yarn
 
@@ -274,11 +287,11 @@ npm run build
 Basic usage example:
 
 ```javascript
-import { Package } from 'package-name';
+import { Package } from "package-name";
 
 const instance = new Package({
-  option1: 'value1',
-  option2: 'value2'
+  option1: "value1",
+  option2: "value2",
 });
 
 instance.doSomething();
@@ -290,8 +303,8 @@ More complex example:
 
 ```javascript
 const result = await instance.advancedMethod({
-  param1: 'value',
-  param2: 123
+  param1: "value",
+  param2: 123,
 });
 
 console.log(result);
@@ -304,14 +317,16 @@ console.log(result);
 Description of what this method does.
 
 **Parameters:**
+
 - `param1` (string): Description of param1
 - `param2` (number): Description of param2
 
 **Returns:** Description of return value
 
 **Example:**
+
 ```javascript
-const result = instance.method('value', 42);
+const result = instance.method("value", 42);
 ```
 
 ## Configuration
@@ -375,7 +390,7 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 
 ## Authors
 
-- **Your Name** - *Initial work* - [YourUsername](https://github.com/YourUsername)
+- **Your Name** - _Initial work_ - [YourUsername](https://github.com/YourUsername)
 
 See also the list of [contributors](https://github.com/user/repo/contributors) who participated in this project.
 
@@ -418,6 +433,7 @@ Answer to question 2.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
+
 ```
 
 ## Documentation Best Practices
@@ -425,6 +441,7 @@ See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
 ### File Structure
 
 ```
+
 docs/
 ├── README.md
 ├── CONTRIBUTING.md
@@ -433,17 +450,18 @@ docs/
 ├── CODE_OF_CONDUCT.md
 ├── SECURITY.md
 ├── guides/
-│   ├── getting-started.md
-│   ├── installation.md
-│   └── configuration.md
+│ ├── getting-started.md
+│ ├── installation.md
+│ └── configuration.md
 ├── api/
-│   ├── authentication.md
-│   ├── endpoints.md
-│   └── errors.md
+│ ├── authentication.md
+│ ├── endpoints.md
+│ └── errors.md
 └── examples/
-    ├── basic-usage.md
-    └── advanced-usage.md
-```
+├── basic-usage.md
+└── advanced-usage.md
+
+````
 
 ### Linking Between Documents
 
@@ -459,7 +477,7 @@ Link to section in another doc:
 
 Link to external resource:
 [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
-```
+````
 
 ### Using Anchors
 
@@ -467,6 +485,7 @@ Link to external resource:
 Create custom anchors:
 
 <a name="custom-anchor"></a>
+
 ## Section Title
 
 Link to it:
@@ -475,7 +494,7 @@ Link to it:
 
 ### Collapsible Sections
 
-```markdown
+````markdown
 <details>
 <summary>Click to expand</summary>
 
@@ -486,8 +505,9 @@ Hidden content goes here.
 - Images
 
 ```javascript
-const code = 'works too';
+const code = "works too";
 ```
+````
 
 </details>
 ```
@@ -496,7 +516,8 @@ const code = 'works too';
 
 ````markdown
 Common languages:
-```javascript
+
+````javascript
 ```typescript
 ```python
 ```bash
@@ -511,6 +532,7 @@ Common languages:
 ```dockerfile
 ```graphql
 ```markdown
+````
 ````
 
 ### Badges
@@ -537,6 +559,7 @@ Common languages:
 > This is important information
 
 GitHub-style alerts (GFM):
+
 > [!NOTE]
 > Useful information
 
@@ -617,6 +640,7 @@ grip README.md
 ## Best Practices
 
 ### ✅ DO
+
 - Use descriptive link text
 - Include table of contents for long documents
 - Add alt text to images
@@ -629,6 +653,7 @@ grip README.md
 - Test all links regularly
 
 ### ❌ DON'T
+
 - Use "click here" as link text
 - Forget alt text on images
 - Mix HTML and Markdown unnecessarily

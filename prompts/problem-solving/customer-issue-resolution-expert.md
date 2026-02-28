@@ -1,6 +1,7 @@
 # Customer Issue Resolution Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-customer-issue-resolution`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A customer issue resolution specialist that helps you transform complaints into 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Resolving escalated customer complaints that front-line couldn't handle
 - Recovering from significant service failures
 - Handling high-value customer issues requiring executive attention
@@ -25,6 +27,7 @@ A customer issue resolution specialist that helps you transform complaints into 
 - Training teams on effective complaint resolution
 
 **Anti-Patterns (when not to use):**
+
 - Legal dispute resolution requiring attorneys (consult legal counsel)
 - Refund policy creation (use policy-development-expert)
 - Warranty claims processing (use standard warranty procedures)
@@ -117,45 +120,49 @@ Issue: Long-time B2B client experienced 4-hour system outage during their critic
 
 **Issue Analysis**
 
-*Problem Details*:
+_Problem Details_:
+
 - Type: Critical service failure during peak business hours
 - Duration: 4 hours (9 AM - 1 PM) - maximum impact window
 - Root Cause: [To be determined - needs technical investigation]
 
-*Customer Impact*:
+_Customer Impact_:
+
 - Direct: $15,000 estimated productivity loss
 - Indirect: Stressed team, missed deadlines, customer's customer impact
 - Relationship: Trust erosion after pattern of recent issues
 
-*Emotional State*:
+_Emotional State_:
+
 - Primary: Frustrated and disappointed (trusted relationship now questioned)
 - Secondary: Anxious about future reliability, embarrassed to internal stakeholders
 - Underlying: Wants to feel valued and heard, not just processed
 
-*Risk Assessment*:
+_Risk Assessment_:
+
 - Churn Risk: HIGH - explicit mention of alternatives
 - Timing Risk: CRITICAL - 3 months to renewal decision
 - Relationship Trajectory: Negative if not addressed with significance
 
 **Customer Value Assessment**
 
-| Factor | Assessment |
-|--------|------------|
-| Contract Value | $50K/year = $150K+ LTV with renewals |
-| Relationship Length | 3 years (loyal customer base) |
-| Growth Potential | Unknown - worth exploring |
-| Reference Value | High - long-term customer testimonial potential |
-| Strategic Importance | Moderate-High given renewal timing |
+| Factor               | Assessment                                      |
+| -------------------- | ----------------------------------------------- |
+| Contract Value       | $50K/year = $150K+ LTV with renewals            |
+| Relationship Length  | 3 years (loyal customer base)                   |
+| Growth Potential     | Unknown - worth exploring                       |
+| Reference Value      | High - long-term customer testimonial potential |
+| Strategic Importance | Moderate-High given renewal timing              |
 
-*Resolution Investment Level*: Premium response warranted - this is a retention-critical situation requiring executive involvement despite normal protocols.
+_Resolution Investment Level_: Premium response warranted - this is a retention-critical situation requiring executive involvement despite normal protocols.
 
 **Immediate Response Strategy**
 
-*Response Timing*: Within 2 hours of complaint receipt (ideally faster)
+_Response Timing_: Within 2 hours of complaint receipt (ideally faster)
 
-*Response Level*: VP or Director level, not standard support
+_Response Level_: VP or Director level, not standard support
 
-*Initial Outreach Script (phone call, not email)*:
+_Initial Outreach Script (phone call, not email)_:
 
 "Hello [Name], this is [Your Name], VP of Customer Success at [Company]. I've been fully briefed on the outage that impacted your operations yesterday, and I wanted to reach out personally because this matters to us.
 
@@ -164,13 +171,15 @@ First, I want to apologize without qualification. A 4-hour outage during your cr
 I'm not calling with excuses. I'm calling because I want to make this right and, more importantly, make sure this doesn't happen again.
 
 I'd like to share three things with you:
+
 1. Exactly what happened and why
 2. The specific steps we're taking to prevent recurrence
 3. How we want to make this right for you
 
 Could we schedule 30 minutes today or tomorrow morning to walk through this together? I want to give you my full attention and answer all your questions."
 
-*Key Language Elements*:
+_Key Language Elements_:
+
 - Personal accountability (VP-level engagement)
 - Unqualified apology (no "sorry if" or "sorry but")
 - Acknowledge impact specifically (4 hours, critical hours)
@@ -179,7 +188,8 @@ Could we schedule 30 minutes today or tomorrow morning to walk through this toge
 
 **Resolution Options (Ranked by Relationship Impact)**
 
-*Recommended Package (Premium - for this customer situation)*:
+_Recommended Package (Premium - for this customer situation)_:
+
 1. **Full service credit** for outage period (prorated)
 2. **$5,000 additional credit** toward next contract period
 3. **Dedicated Technical Account Manager** assignment
@@ -187,10 +197,11 @@ Could we schedule 30 minutes today or tomorrow morning to walk through this toge
 5. **Priority support tier upgrade** for duration of contract
 6. **Written incident report** with CEO signature
 
-*Total Value*: ~$8-10K in credits + ongoing elevated service level
-*Rationale*: Customer LTV of $150K+ justifies significant recovery investment
+_Total Value_: ~$8-10K in credits + ongoing elevated service level
+_Rationale_: Customer LTV of $150K+ justifies significant recovery investment
 
-*Standard Package (if budget constrained)*:
+_Standard Package (if budget constrained)_:
+
 1. Full service credit for outage period
 2. Enhanced monitoring for their account specifically
 3. Written root cause analysis and prevention plan
@@ -198,17 +209,20 @@ Could we schedule 30 minutes today or tomorrow morning to walk through this toge
 
 **Trust Recovery Actions**
 
-*Week 1: Demonstrate Competence*
+_Week 1: Demonstrate Competence_
+
 - Technical deep-dive call with their IT team (show we understand what happened)
 - Written root cause analysis delivered within 5 business days
 - Enhanced monitoring dashboard access (transparency)
 
-*Month 1: Prove Reliability*
+_Month 1: Prove Reliability_
+
 - Weekly reliability report for their specific services
 - Proactive notification before any maintenance windows
 - Direct mobile number for VP contact (emergency escalation)
 
-*Months 1-3: Rebuild Relationship*
+_Months 1-3: Rebuild Relationship_
+
 - Monthly check-in calls with VP sponsor
 - Early access to new reliability features
 - Invitation to customer advisory board (if appropriate)
@@ -216,24 +230,28 @@ Could we schedule 30 minutes today or tomorrow morning to walk through this toge
 
 **Meeting Follow-Up Commitments**
 
-*Within 24 Hours of Call*:
+_Within 24 Hours of Call_:
+
 - Send email summary of conversation and commitments
 - Initiate credit processing
 - Introduce Technical Account Manager
 
-*Within 1 Week*:
+_Within 1 Week_:
+
 - Deliver written incident report
 - Complete technical deep-dive with their team
 - Confirm all credits applied
 
 **Prevention Measures**
 
-*Immediate (this customer)*:
+_Immediate (this customer)_:
+
 - Enhanced redundancy for their specific service configuration
 - Proactive alerting to catch issues before customer impact
 - Dedicated escalation path that bypasses normal queue
 
-*Systemic (all customers)*:
+_Systemic (all customers)_:
+
 - Root cause analysis feeding into engineering priorities
 - Review of similar configurations for vulnerability
 - Improved monitoring for this failure pattern
@@ -241,13 +259,13 @@ Could we schedule 30 minutes today or tomorrow morning to walk through this toge
 
 **Success Metrics**
 
-| Metric | Target | Timeline |
-|--------|--------|----------|
-| Customer retention | Renewed contract | 3 months |
-| Relationship score | Positive sentiment | 30 days |
-| NPS recovery | Return to baseline | 60 days |
-| Support escalations | Zero | 90 days |
-| Reference willingness | Active advocate | 6 months |
+| Metric                | Target             | Timeline |
+| --------------------- | ------------------ | -------- |
+| Customer retention    | Renewed contract   | 3 months |
+| Relationship score    | Positive sentiment | 30 days  |
+| NPS recovery          | Return to baseline | 60 days  |
+| Support escalations   | Zero               | 90 days  |
+| Reference willingness | Active advocate    | 6 months |
 
 ---
 

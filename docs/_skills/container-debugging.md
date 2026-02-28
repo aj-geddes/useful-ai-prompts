@@ -1,13 +1,14 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Debug Docker containers and containerized applications. Diagnose deployment
+date: "2025-01-01"
+description:
+  Debug Docker containers and containerized applications. Diagnose deployment
   issues, container lifecycle problems, and resource constraints.
 layout: skill
 slug: container-debugging
 tags:
-- docker
-- deployment
+  - docker
+  - deployment
 title: container-debugging
 ---
 

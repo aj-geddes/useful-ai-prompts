@@ -8,4 +8,4 @@ Executive administration and strategic partnership frameworks for administrative
 
 ---
 
-*Professional administrative prompts for executive assistants, office managers, and administrative leaders.*
+_Professional administrative prompts for executive assistants, office managers, and administrative leaders._

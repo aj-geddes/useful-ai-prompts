@@ -5,7 +5,18 @@ category: renewable-energy
 slug: renewable-energy
 icon: fas fa-solar-panel
 description: "Comprehensive renewable energy prompts for solar development, energy storage, grid integration, and clean energy project management."
-tags: [renewable energy, solar energy, energy storage, grid integration, clean energy, solar development, agrivoltaics, energy financing, sustainability]
+tags:
+  [
+    renewable energy,
+    solar energy,
+    energy storage,
+    grid integration,
+    clean energy,
+    solar development,
+    agrivoltaics,
+    energy financing,
+    sustainability,
+  ]
 ---
 
 The Renewable Energy category contains expert-level prompts for professionals developing renewable energy projects, optimizing clean energy systems, and driving the energy transition. These prompts provide frameworks for solar development, energy storage integration, and sustainable energy solutions.

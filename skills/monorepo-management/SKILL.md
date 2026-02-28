@@ -28,10 +28,7 @@ Establish scalable monorepo structures that support multiple interdependent pack
   "name": "monorepo-root",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "workspaces": ["packages/*", "apps/*"],
   "devDependencies": {
     "lerna": "^7.0.0",
     "turbo": "^1.10.0"
@@ -52,10 +49,7 @@ Establish scalable monorepo structures that support multiple interdependent pack
   "name": "monorepo-with-lerna",
   "version": "1.0.0",
   "private": true,
-  "packages": [
-    "packages/*",
-    "apps/*"
-  ],
+  "packages": ["packages/*", "apps/*"],
   "command": {
     "bootstrap": {
       "hoist": true,
@@ -105,25 +99,15 @@ Establish scalable monorepo structures that support multiple interdependent pack
 {
   "version": 2,
   "projectNameAndRootFormat": "as-provided",
-  "plugins": [
-    "@nx/next/plugin",
-    "@nx/react/plugin",
-    "@nx/node/plugin"
-  ],
+  "plugins": ["@nx/next/plugin", "@nx/react/plugin", "@nx/node/plugin"],
   "targetDefaults": {
     "build": {
       "cache": true,
-      "inputs": [
-        "production",
-        "^production"
-      ]
+      "inputs": ["production", "^production"]
     },
     "test": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^production"
-      ]
+      "inputs": ["default", "^production"]
     }
   }
 }
@@ -261,8 +245,8 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -306,6 +290,7 @@ echo "✅ All packages synced to version $MONOREPO_VERSION"
 ## Best Practices
 
 ### ✅ DO
+
 - Use workspace protocols for dependencies
 - Implement shared tsconfig for consistency
 - Cache build outputs in CI/CD
@@ -318,6 +303,7 @@ echo "✅ All packages synced to version $MONOREPO_VERSION"
 - Version packages independently when appropriate
 
 ### ❌ DON'T
+
 - Create circular dependencies
 - Use hardcoded versions for workspace packages
 - Build all packages when only one changed

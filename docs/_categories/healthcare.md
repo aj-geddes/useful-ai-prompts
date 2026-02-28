@@ -6,7 +6,19 @@ slug: healthcare
 icon: fas fa-heartbeat
 description: "Expert AI prompts for healthcare professionals: clinical documentation, quality improvement, compliance, patient education, and healthcare operations."
 seo_title: "Healthcare AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [clinical documentation, quality improvement, HIPAA compliance, patient education, healthcare operations, population health, medical coding, telemedicine, care coordination, hospital operations]
+tags:
+  [
+    clinical documentation,
+    quality improvement,
+    HIPAA compliance,
+    patient education,
+    healthcare operations,
+    population health,
+    medical coding,
+    telemedicine,
+    care coordination,
+    hospital operations,
+  ]
 ---
 
 The Healthcare category contains AI prompts for clinicians, healthcare administrators, quality improvement professionals, and health services managers. These prompts apply healthcare-specific frameworks — clinical guidelines, quality metrics, regulatory requirements — while maintaining appropriate boundaries around clinical judgment.

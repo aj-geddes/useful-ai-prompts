@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Create wireframes and interactive prototypes to visualize user interfaces
+date: "2025-01-01"
+description:
+  Create wireframes and interactive prototypes to visualize user interfaces
   and gather feedback early. Use tools and techniques to communicate design ideas
   before development.
 layout: skill
 slug: wireframe-prototyping
 tags:
-- development
+  - development
 title: wireframe-prototyping
 ---
 
@@ -56,7 +57,6 @@ High Fidelity:
   Cost: Medium
 
 ---
-
 ## Wireframe Components
 
 Header:
@@ -82,7 +82,6 @@ Footer:
   - Social media
 
 ---
-
 ## Layout Patterns
 
 Grid Systems:
@@ -220,8 +219,7 @@ Participants:
   - Mix of experience levels
   - Similar to target persona
 
-Tasks:
-  1. Register a new account
+Tasks: 1. Register a new account
   2. Create your first project
   3. Invite a team member
   4. Edit project settings
@@ -248,6 +246,7 @@ Analysis:
 ## Best Practices
 
 ### ✅ DO
+
 - Start with low-fidelity sketches
 - Get feedback early and often
 - Test with real users
@@ -260,6 +259,7 @@ Analysis:
 - Keep wireframes simple and focused
 
 ### ❌ DON'T
+
 - Jump directly to high-fidelity
 - Over-design before validation
 - Ignore mobile/responsive needs

@@ -25,6 +25,7 @@ Comprehensive guide to designing, implementing, and maintaining microservices ar
 ### 1. **Service Boundary Design**
 
 #### Domain-Driven Design (DDD) Approach
+
 ```
 Bounded Contexts:
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
@@ -39,6 +40,7 @@ Bounded Contexts:
 **Decomposition Strategies:**
 
 1. **By Business Capability**
+
 ```
 E-commerce System:
 - Product Catalog Service
@@ -51,6 +53,7 @@ E-commerce System:
 ```
 
 2. **By Subdomain**
+
 ```
 Healthcare System:
 - Patient Management (Core Domain)
@@ -61,6 +64,7 @@ Healthcare System:
 ```
 
 #### Service Design Example
+
 ```typescript
 // order-service/src/domain/order.ts
 export class OrderService {
@@ -68,7 +72,7 @@ export class OrderService {
     private orderRepository: OrderRepository,
     private eventBus: EventBus,
     private paymentClient: PaymentClient,
-    private inventoryClient: InventoryClient
+    private inventoryClient: InventoryClient,
   ) {}
 
   async createOrder(request: CreateOrderRequest): Promise<Order> {
@@ -76,9 +80,7 @@ export class OrderService {
     const order = Order.create(request);
 
     // 2. Check inventory (synchronous call)
-    const available = await this.inventoryClient.checkAvailability(
-      order.items
-    );
+    const available = await this.inventoryClient.checkAvailability(order.items);
     if (!available) {
       throw new InsufficientInventoryError();
     }
@@ -99,51 +101,49 @@ export class OrderService {
 #### Synchronous Communication (REST/gRPC)
 
 **REST API Example:**
+
 ```typescript
 // user-service/src/api/user.controller.ts
-import express from 'express';
+import express from "express";
 
 const router = express.Router();
 
 // Get user profile
-router.get('/users/:id', async (req, res) => {
+router.get("/users/:id", async (req, res) => {
   try {
     const user = await userService.findById(req.params.id);
     res.json(user);
   } catch (error) {
     if (error instanceof UserNotFoundError) {
-      res.status(404).json({ error: 'User not found' });
+      res.status(404).json({ error: "User not found" });
     } else {
-      res.status(500).json({ error: 'Internal server error' });
+      res.status(500).json({ error: "Internal server error" });
     }
   }
 });
 
 // Service-to-service call with circuit breaker
-import axios from 'axios';
-import CircuitBreaker from 'opossum';
+import axios from "axios";
+import CircuitBreaker from "opossum";
 
 const options = {
   timeout: 3000,
   errorThresholdPercentage: 50,
-  resetTimeout: 30000
+  resetTimeout: 30000,
 };
 
-const breaker = new CircuitBreaker(
-  async (userId: string) => {
-    const response = await axios.get(
-      `http://user-service/users/${userId}`,
-      { timeout: 2000 }
-    );
-    return response.data;
-  },
-  options
-);
+const breaker = new CircuitBreaker(async (userId: string) => {
+  const response = await axios.get(`http://user-service/users/${userId}`, {
+    timeout: 2000,
+  });
+  return response.data;
+}, options);
 
-breaker.fallback(() => ({ id: userId, name: 'Unknown User' }));
+breaker.fallback(() => ({ id: userId, name: "Unknown User" }));
 ```
 
 **gRPC Example:**
+
 ```protobuf
 // proto/user.proto
 syntax = "proto3";
@@ -168,10 +168,10 @@ message UserResponse {
 
 ```typescript
 // Implementation
-import * as grpc from '@grpc/grpc-js';
-import * as protoLoader from '@grpc/proto-loader';
+import * as grpc from "@grpc/grpc-js";
+import * as protoLoader from "@grpc/proto-loader";
 
-const packageDefinition = protoLoader.loadSync('proto/user.proto');
+const packageDefinition = protoLoader.loadSync("proto/user.proto");
 const userProto = grpc.loadPackageDefinition(packageDefinition).user;
 
 // Server
@@ -183,38 +183,39 @@ function getUser(call, callback) {
 
 const server = new grpc.Server();
 server.addService(userProto.UserService.service, { getUser });
-server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
+server.bindAsync("0.0.0.0:50051", grpc.ServerCredentials.createInsecure());
 ```
 
 #### Asynchronous Communication (Message Queue)
 
 **Event-Driven with RabbitMQ:**
+
 ```typescript
 // order-service/src/events/publisher.ts
-import amqp from 'amqplib';
+import amqp from "amqplib";
 
 export class EventPublisher {
   private connection: amqp.Connection;
   private channel: amqp.Channel;
 
   async connect() {
-    this.connection = await amqp.connect('amqp://localhost');
+    this.connection = await amqp.connect("amqp://localhost");
     this.channel = await this.connection.createChannel();
-    await this.channel.assertExchange('orders', 'topic', { durable: true });
+    await this.channel.assertExchange("orders", "topic", { durable: true });
   }
 
   async publishOrderCreated(order: Order) {
     const event = {
-      eventType: 'OrderCreated',
+      eventType: "OrderCreated",
       timestamp: new Date(),
-      data: order
+      data: order,
     };
 
     this.channel.publish(
-      'orders',
-      'order.created',
+      "orders",
+      "order.created",
       Buffer.from(JSON.stringify(event)),
-      { persistent: true }
+      { persistent: true },
     );
   }
 }
@@ -222,15 +223,15 @@ export class EventPublisher {
 // inventory-service/src/events/consumer.ts
 export class OrderEventConsumer {
   async subscribe() {
-    const connection = await amqp.connect('amqp://localhost');
+    const connection = await amqp.connect("amqp://localhost");
     const channel = await connection.createChannel();
 
-    await channel.assertExchange('orders', 'topic', { durable: true });
-    const q = await channel.assertQueue('inventory-order-events', {
-      durable: true
+    await channel.assertExchange("orders", "topic", { durable: true });
+    const q = await channel.assertQueue("inventory-order-events", {
+      durable: true,
     });
 
-    await channel.bindQueue(q.queue, 'orders', 'order.created');
+    await channel.bindQueue(q.queue, "orders", "order.created");
 
     channel.consume(q.queue, async (msg) => {
       if (msg) {
@@ -249,13 +250,14 @@ export class OrderEventConsumer {
 ```
 
 **Kafka Event Streaming:**
+
 ```typescript
 // event-streaming/kafka-producer.ts
-import { Kafka } from 'kafkajs';
+import { Kafka } from "kafkajs";
 
 const kafka = new Kafka({
-  clientId: 'order-service',
-  brokers: ['kafka:9092']
+  clientId: "order-service",
+  brokers: ["kafka:9092"],
 });
 
 const producer = kafka.producer();
@@ -269,24 +271,24 @@ export async function publishEvent(topic: string, event: any) {
         key: event.aggregateId,
         value: JSON.stringify(event),
         headers: {
-          'event-type': event.type,
-          'correlation-id': event.correlationId
-        }
-      }
-    ]
+          "event-type": event.type,
+          "correlation-id": event.correlationId,
+        },
+      },
+    ],
   });
 }
 
 // Consumer
-const consumer = kafka.consumer({ groupId: 'inventory-service' });
+const consumer = kafka.consumer({ groupId: "inventory-service" });
 
-await consumer.subscribe({ topic: 'order-events', fromBeginning: false });
+await consumer.subscribe({ topic: "order-events", fromBeginning: false });
 
 await consumer.run({
   eachMessage: async ({ topic, partition, message }) => {
     const event = JSON.parse(message.value.toString());
     await eventHandler.handle(event);
-  }
+  },
 });
 ```
 
@@ -294,24 +296,24 @@ await consumer.run({
 
 ```typescript
 // api-gateway/src/gateway.ts
-import express from 'express';
-import httpProxy from 'http-proxy-middleware';
-import jwt from 'jsonwebtoken';
-import rateLimit from 'express-rate-limit';
+import express from "express";
+import httpProxy from "http-proxy-middleware";
+import jwt from "jsonwebtoken";
+import rateLimit from "express-rate-limit";
 
 const app = express();
 
 // Rate limiting
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100
+  max: 100,
 });
 
 app.use(limiter);
 
 // Authentication middleware
 const authenticateToken = (req, res, next) => {
-  const token = req.headers['authorization']?.split(' ')[1];
+  const token = req.headers["authorization"]?.split(" ")[1];
   if (!token) return res.sendStatus(401);
 
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
@@ -322,33 +324,48 @@ const authenticateToken = (req, res, next) => {
 };
 
 // Route to services
-app.use('/api/users', authenticateToken, httpProxy.createProxyMiddleware({
-  target: 'http://user-service:3000',
-  changeOrigin: true,
-  pathRewrite: { '^/api/users': '/users' }
-}));
+app.use(
+  "/api/users",
+  authenticateToken,
+  httpProxy.createProxyMiddleware({
+    target: "http://user-service:3000",
+    changeOrigin: true,
+    pathRewrite: { "^/api/users": "/users" },
+  }),
+);
 
-app.use('/api/orders', authenticateToken, httpProxy.createProxyMiddleware({
-  target: 'http://order-service:3000',
-  changeOrigin: true,
-  pathRewrite: { '^/api/orders': '/orders' }
-}));
+app.use(
+  "/api/orders",
+  authenticateToken,
+  httpProxy.createProxyMiddleware({
+    target: "http://order-service:3000",
+    changeOrigin: true,
+    pathRewrite: { "^/api/orders": "/orders" },
+  }),
+);
 
-app.use('/api/products', httpProxy.createProxyMiddleware({
-  target: 'http://product-service:3000',
-  changeOrigin: true,
-  pathRewrite: { '^/api/products': '/products' }
-}));
+app.use(
+  "/api/products",
+  httpProxy.createProxyMiddleware({
+    target: "http://product-service:3000",
+    changeOrigin: true,
+    pathRewrite: { "^/api/products": "/products" },
+  }),
+);
 
 // Aggregation endpoint
-app.get('/api/order-details/:orderId', authenticateToken, async (req, res) => {
+app.get("/api/order-details/:orderId", authenticateToken, async (req, res) => {
   const orderId = req.params.orderId;
 
   // Parallel requests to multiple services
   const [order, user, products] = await Promise.all([
-    fetch(`http://order-service:3000/orders/${orderId}`).then(r => r.json()),
-    fetch(`http://user-service:3000/users/${req.user.id}`).then(r => r.json()),
-    fetch(`http://product-service:3000/products?ids=${order.itemIds}`).then(r => r.json())
+    fetch(`http://order-service:3000/orders/${orderId}`).then((r) => r.json()),
+    fetch(`http://user-service:3000/users/${req.user.id}`).then((r) =>
+      r.json(),
+    ),
+    fetch(`http://product-service:3000/products?ids=${order.itemIds}`).then(
+      (r) => r.json(),
+    ),
   ]);
 
   res.json({ order, user, products });
@@ -358,17 +375,18 @@ app.get('/api/order-details/:orderId', authenticateToken, async (req, res) => {
 ### 4. **Service Discovery**
 
 #### Consul Example
+
 ```typescript
 // service-registry/consul-client.ts
-import Consul from 'consul';
+import Consul from "consul";
 
 export class ServiceRegistry {
   private consul: Consul.Consul;
 
   constructor() {
     this.consul = new Consul({
-      host: 'consul',
-      port: 8500
+      host: "consul",
+      port: 8500,
     });
   }
 
@@ -381,9 +399,9 @@ export class ServiceRegistry {
       port: servicePort,
       check: {
         http: `http://${process.env.SERVICE_IP}:${servicePort}/health`,
-        interval: '10s',
-        timeout: '5s'
-      }
+        interval: "10s",
+        timeout: "5s",
+      },
     });
   }
 
@@ -391,7 +409,7 @@ export class ServiceRegistry {
   async discover(serviceName: string): Promise<string> {
     const result = await this.consul.health.service({
       service: serviceName,
-      passing: true
+      passing: true,
     });
 
     if (result.length === 0) {
@@ -411,6 +429,7 @@ export class ServiceRegistry {
 ```
 
 #### Kubernetes Service Discovery
+
 ```yaml
 # user-service-deployment.yaml
 apiVersion: v1
@@ -441,24 +460,25 @@ spec:
         app: user-service
     spec:
       containers:
-      - name: user-service
-        image: user-service:latest
-        ports:
-        - containerPort: 3000
-        env:
-        - name: SERVICE_NAME
-          value: "user-service"
+        - name: user-service
+          image: user-service:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: SERVICE_NAME
+              value: "user-service"
 ```
 
 ```typescript
 // Service call in Kubernetes
-const userServiceUrl = process.env.USER_SERVICE_URL || 'http://user-service';
+const userServiceUrl = process.env.USER_SERVICE_URL || "http://user-service";
 const response = await fetch(`${userServiceUrl}/users/${userId}`);
 ```
 
 ### 5. **Data Consistency Patterns**
 
 #### Saga Pattern (Orchestration)
+
 ```typescript
 // order-saga-orchestrator.ts
 export class OrderSagaOrchestrator {
@@ -474,14 +494,12 @@ export class OrderSagaOrchestrator {
       // Step 2: Reserve inventory
       await this.inventoryService.reserveItems(order.items);
       saga.addCompensation(() =>
-        this.inventoryService.releaseReservation(order.id)
+        this.inventoryService.releaseReservation(order.id),
       );
 
       // Step 3: Process payment
       const payment = await this.paymentService.charge(order.total);
-      saga.addCompensation(() =>
-        this.paymentService.refund(payment.id)
-      );
+      saga.addCompensation(() => this.paymentService.refund(payment.id));
 
       // Step 4: Confirm order
       await this.orderService.confirmOrder(order.id);
@@ -497,6 +515,7 @@ export class OrderSagaOrchestrator {
 ```
 
 #### Event Sourcing Pattern
+
 ```typescript
 // order-aggregate.ts
 export class OrderAggregate {
@@ -508,25 +527,27 @@ export class OrderAggregate {
   // Command handler
   createOrder(command: CreateOrderCommand) {
     // Validation
-    if (this.id) throw new Error('Order already exists');
+    if (this.id) throw new Error("Order already exists");
 
     // Apply event
-    this.apply(new OrderCreatedEvent({
-      orderId: command.orderId,
-      userId: command.userId,
-      items: command.items
-    }));
+    this.apply(
+      new OrderCreatedEvent({
+        orderId: command.orderId,
+        userId: command.userId,
+        items: command.items,
+      }),
+    );
   }
 
   // Event handler
   private apply(event: DomainEvent) {
     switch (event.type) {
-      case 'OrderCreated':
+      case "OrderCreated":
         this.id = event.orderId;
         this.items = event.items;
         this.status = OrderStatus.PENDING;
         break;
-      case 'OrderConfirmed':
+      case "OrderConfirmed":
         this.status = OrderStatus.CONFIRMED;
         break;
     }
@@ -549,26 +570,26 @@ metadata:
   name: order-service
 spec:
   hosts:
-  - order-service
+    - order-service
   http:
-  - match:
-    - headers:
-        user-type:
-          exact: premium
-    route:
-    - destination:
-        host: order-service
-        subset: v2
-      weight: 100
-  - route:
-    - destination:
-        host: order-service
-        subset: v1
-      weight: 90
-    - destination:
-        host: order-service
-        subset: v2
-      weight: 10
+    - match:
+        - headers:
+            user-type:
+              exact: premium
+      route:
+        - destination:
+            host: order-service
+            subset: v2
+          weight: 100
+    - route:
+        - destination:
+            host: order-service
+            subset: v1
+          weight: 90
+        - destination:
+            host: order-service
+            subset: v2
+          weight: 10
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
@@ -588,17 +609,18 @@ spec:
       interval: 30s
       baseEjectionTime: 30s
   subsets:
-  - name: v1
-    labels:
-      version: v1
-  - name: v2
-    labels:
-      version: v2
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Design services around business capabilities
 - Use asynchronous communication where possible
 - Implement circuit breakers for resilience
@@ -615,6 +637,7 @@ spec:
 - Use database per service pattern
 
 ### ❌ DON'T
+
 - Share databases between services
 - Create overly granular services (nanoservices)
 - Use distributed transactions (two-phase commit)
@@ -631,29 +654,33 @@ spec:
 ## Common Patterns
 
 ### Pattern 1: Backend for Frontend (BFF)
+
 ```typescript
 // mobile-bff/src/api.ts - Optimized for mobile
-app.get('/api/home', async (req, res) => {
+app.get("/api/home", async (req, res) => {
   const [featured, recommendations] = await Promise.all([
     productService.getFeatured(5),
-    recommendationService.getForUser(req.user.id, 10)
+    recommendationService.getForUser(req.user.id, 10),
   ]);
   res.json({ featured, recommendations });
 });
 
 // web-bff/src/api.ts - More data for web
-app.get('/api/home', async (req, res) => {
-  const [featured, recommendations, categories, promotions] = await Promise.all([
-    productService.getFeatured(20),
-    recommendationService.getForUser(req.user.id, 50),
-    categoryService.getAll(),
-    promotionService.getActive()
-  ]);
+app.get("/api/home", async (req, res) => {
+  const [featured, recommendations, categories, promotions] = await Promise.all(
+    [
+      productService.getFeatured(20),
+      recommendationService.getForUser(req.user.id, 50),
+      categoryService.getAll(),
+      promotionService.getActive(),
+    ],
+  );
   res.json({ featured, recommendations, categories, promotions });
 });
 ```
 
 ### Pattern 2: Sidecar Pattern
+
 ```yaml
 # Pod with sidecar
 apiVersion: v1
@@ -662,16 +689,16 @@ metadata:
   name: app-with-sidecar
 spec:
   containers:
-  - name: app
-    image: my-app:latest
-  - name: logging-sidecar
-    image: fluentd:latest
-    volumeMounts:
-    - name: logs
-      mountPath: /logs
+    - name: app
+      image: my-app:latest
+    - name: logging-sidecar
+      image: fluentd:latest
+      volumeMounts:
+        - name: logs
+          mountPath: /logs
   volumes:
-  - name: logs
-    emptyDir: {}
+    - name: logs
+      emptyDir: {}
 ```
 
 ## Tools & Resources

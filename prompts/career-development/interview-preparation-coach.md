@@ -1,6 +1,7 @@
 # Interview Preparation Coach
 
 ## Metadata
+
 - **ID**: `career-interview-preparation-coach`
 - **Version**: 1.0.0
 - **Category**: Career Development
@@ -18,12 +19,14 @@ Prepares candidates for job interviews through strategic positioning, story deve
 ## When to Use
 
 **Scenarios:**
+
 - Preparing for specific job interviews at identified companies
 - Developing compelling stories using STAR or other frameworks
 - Practicing for behavioral, technical, or case interviews
 - Building interview confidence and reducing anxiety
 
 **Anti-patterns:**
+
 - Resume writing or optimization
 - Job searching strategy or application process
 - Salary negotiation (use after receiving offer)
@@ -112,6 +115,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Position: Senior Marketing Manager at mid-stage tech startup (Series B, 150 employees). Interview: Final round with VP Marketing and CEO. Background: 7 years marketing experience at larger companies, led 3 product launches, grew MQLs 300% in 18 months, managed team of 4. Main concern: This would be my first startup - all experience is at companies 500+ employees. I tend to be nervous at the start of interviews but get more comfortable after 10-15 minutes."
 
 ### Output
@@ -122,6 +126,7 @@ Outputs must avoid:
 "Experienced marketing leader who combines enterprise-level strategic thinking and process discipline with the agility and hands-on execution mindset that startup growth requires."
 
 **Key Differentiators:**
+
 1. **Proven scale:** 300% MQL growth with $2M budget accountability
 2. **Team builder:** Grew and developed team from 2 to 8 people
 3. **Adaptable:** Successfully launched 3 products requiring rapid iteration
@@ -181,11 +186,13 @@ Month 3 would be launching the first major strategic initiative based on what I 
 ## QUESTIONS TO ASK
 
 ### For VP Marketing:
+
 - "What are the biggest marketing challenges you're facing that this role would tackle first?"
 - "How do you measure marketing success, and how has that evolved as the company has grown?"
 - "What does the ideal candidate accomplish in their first 6 months that would make this hire a clear success?"
 
 ### For CEO:
+
 - "What's your vision for marketing's role in the company's growth over the next 2 years?"
 - "What differentiates this company in the market from the customer's perspective, and how should we amplify that?"
 - "How do you prefer to work with your marketing leader - what's the right balance of autonomy and alignment?"
@@ -202,17 +209,20 @@ What I don't have is experience with startup-specific challenges like fundraisin
 ## CONFIDENCE BUILDING
 
 ### Pre-Interview Routine (Addresses slow warm-up)
+
 1. **Morning:** Review 3 key stories out loud (voice warms up, content is fresh)
 2. **30 minutes before:** Power pose for 2 minutes, deep breathing
 3. **In waiting room:** Visualize successful conversation, remember they invited you
 4. **Walking in:** Smile, firm handshake, make connection before "interview mode"
 
 ### Opening Strategy (First 10 minutes)
+
 - Prepare 2-3 genuine observations about the company to open conversation naturally
 - Ask the interviewer something about their experience first (gets you listening, not performing)
 - Remember: They already like you on paper - the interview is about confirming fit, not proving worth
 
 ### Mindset Reframe
+
 - "This is a conversation to see if we're right for each other" (not an interrogation)
 - "I have valuable experience they need" (not "I hope they pick me")
 - "If this isn't the right fit, I want to know that too" (removes desperation)
@@ -220,5 +230,6 @@ What I don't have is experience with startup-specific challenges like fundraisin
 ---
 
 ## Related Prompts
+
 - [Job Search Optimizer](job-search-optimizer.md) - Finding the right opportunities
 - [Salary Negotiation Expert](salary-negotiation-expert.md) - After receiving the offer

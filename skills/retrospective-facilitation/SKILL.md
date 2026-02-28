@@ -36,9 +36,7 @@ Participants: 8 team members
 Invite: Product Owner (optional)
 
 ---
-
-Retrospective Goals:
-  1. Celebrate sprint successes
+Retrospective Goals: 1. Celebrate sprint successes
   2. Identify what went well
   3. Identify what could improve
   4. Commit to specific improvements
@@ -207,18 +205,18 @@ class ActionItemManagement {
       id: `ACTION-${Date.now()}`,
       title: feedback.title,
       description: feedback.description,
-      priority: feedback.priority || 'Medium',
+      priority: feedback.priority || "Medium",
       owner: feedback.owner,
       dueDate: this.calculateDueDate(feedback),
       successCriteria: [
         `${feedback.title} completed`,
-        'Results verified in next sprint',
-        'Team confirms improvement'
+        "Results verified in next sprint",
+        "Team confirms improvement",
       ],
       resources: feedback.estimatedHours || 4,
       dependencies: feedback.dependencies || [],
-      status: 'New',
-      createdDate: new Date()
+      status: "New",
+      createdDate: new Date(),
     };
   }
 
@@ -227,9 +225,9 @@ class ActionItemManagement {
     // Medium: during next sprint
     // Low: next 2 sprints
     const daysFromNow = {
-      'High': 7,
-      'Medium': 14,
-      'Low': 21
+      High: 7,
+      Medium: 14,
+      Low: 21,
     };
 
     const dueDate = new Date();
@@ -241,33 +239,40 @@ class ActionItemManagement {
     return {
       total: items.length,
       byStatus: {
-        new: items.filter(i => i.status === 'New').length,
-        inProgress: items.filter(i => i.status === 'In Progress').length,
-        completed: items.filter(i => i.status === 'Completed').length,
-        blockedPercent: (items.filter(i => i.status === 'Blocked').length / items.length * 100).toFixed(1)
+        new: items.filter((i) => i.status === "New").length,
+        inProgress: items.filter((i) => i.status === "In Progress").length,
+        completed: items.filter((i) => i.status === "Completed").length,
+        blockedPercent: (
+          (items.filter((i) => i.status === "Blocked").length / items.length) *
+          100
+        ).toFixed(1),
       },
-      summary: items.map(item => ({
+      summary: items.map((item) => ({
         id: item.id,
         title: item.title,
         owner: item.owner,
         dueDate: item.dueDate,
         status: item.status,
-        completion: item.completion || 0
-      }))
+        completion: item.completion || 0,
+      })),
     };
   }
 
   reviewCompletedItems(previousRetro) {
     return {
       totalCommitted: previousRetro.actionItems.length,
-      completed: previousRetro.actionItems.filter(i => i.status === 'Completed').length,
-      completionRate: `${(previousRetro.actionItems.filter(i => i.status === 'Completed').length / previousRetro.actionItems.length * 100).toFixed(1)}%`,
-      celebration: 'Celebrate completed items!',
-      carryOver: previousRetro.actionItems.filter(i => i.status !== 'Completed').map(i => ({
-        ...i,
-        reason: 'Not completed',
-        recommendation: 'Revisit in next retrospective'
-      }))
+      completed: previousRetro.actionItems.filter(
+        (i) => i.status === "Completed",
+      ).length,
+      completionRate: `${((previousRetro.actionItems.filter((i) => i.status === "Completed").length / previousRetro.actionItems.length) * 100).toFixed(1)}%`,
+      celebration: "Celebrate completed items!",
+      carryOver: previousRetro.actionItems
+        .filter((i) => i.status !== "Completed")
+        .map((i) => ({
+          ...i,
+          reason: "Not completed",
+          recommendation: "Revisit in next retrospective",
+        })),
     };
   }
 }
@@ -361,6 +366,7 @@ Team Feedback:
 ## Best Practices
 
 ### ✅ DO
+
 - Hold retrospectives regularly (every sprint)
 - Create psychological safety upfront
 - Use varied formats to maintain engagement
@@ -373,6 +379,7 @@ Team Feedback:
 - Thank people for participation and honesty
 
 ### ❌ DON'T
+
 - Blame individuals or teams
 - Let dominant voices control discussion
 - Create action items without owners

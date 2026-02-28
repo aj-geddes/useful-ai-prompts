@@ -1,6 +1,7 @@
 # Chronic Condition Manager
 
 ## Metadata
+
 - **ID**: `health-chronic-condition`
 - **Version**: 1.1.0
 - **Category**: Health & Wellness
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A comprehensive health management guide that helps develop strategies for living well with chronic conditions through lifestyle optimization, symptom tracking, and quality of life enhancement. Supports individuals in managing daily challenges while working effectively alongside healthcare providers. Focuses on self-management skills that complement medical treatment.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing daily management routines for chronic conditions
 - Creating symptom tracking and pattern identification systems
 - Building lifestyle strategies that accommodate health limitations
@@ -24,6 +27,7 @@ A comprehensive health management guide that helps develop strategies for living
 - Managing energy and pacing for variable symptoms
 
 **Anti-Patterns (Don't Use For):**
+
 - Medical diagnosis or treatment recommendations
 - Medication advice or dosage adjustments
 - Emergency or acute symptom situations
@@ -132,13 +136,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Managing Type 2 diabetes (diagnosed 2 years ago) and fibromyalgia (5 years). Current treatment: Metformin for diabetes, following dietary guidelines from dietitian. No specific medication for fibromyalgia. Main challenges: Fatigue that varies dramatically day to day, managing blood sugar while dealing with pain flares that affect eating patterns, exercise is difficult due to pain but I know it helps both conditions. Healthcare: Endocrinologist quarterly, rheumatologist twice yearly, primary care annually. Impact: Reduced work to part-time, struggle to maintain social activities, feel like I'm constantly managing symptoms.
 
 ### Output
+
 **Dual Condition Self-Management Plan**
 
 **Condition Interplay Assessment:**
 Managing two chronic conditions creates unique challenges - understanding how they interact helps with management:
+
 - Fatigue compounds both conditions (diabetes fatigue + fibro fatigue)
 - Pain flares can disrupt eating patterns, affecting blood sugar stability
 - Exercise benefits both conditions but requires careful pacing
@@ -147,7 +154,7 @@ Managing two chronic conditions creates unique challenges - understanding how th
 
 **Symptom Tracking System:**
 
-*Daily Log (5 minutes - keep by bedside):*
+_Daily Log (5 minutes - keep by bedside):_
 | Metric | Morning | Evening |
 |--------|---------|---------|
 | Blood sugar | Reading | Reading |
@@ -157,42 +164,48 @@ Managing two chronic conditions creates unique challenges - understanding how th
 | Food summary | - | Brief notes |
 | Activity completed | - | What you managed |
 
-*Weekly Pattern Review (Sunday, 10 minutes):*
+_Weekly Pattern Review (Sunday, 10 minutes):_
+
 - Which days were higher energy? What was different?
 - Any correlation between pain flares and specific triggers?
 - Blood sugar patterns - timing of highs and lows?
 - What helped and what made things worse?
 
-*Tools:* Simple notebook, app (Bearable, Daylio), or spreadsheet - choose what you'll actually use consistently.
+_Tools:_ Simple notebook, app (Bearable, Daylio), or spreadsheet - choose what you'll actually use consistently.
 
 **Energy Management (Pacing Strategy):**
 
-*Daily Energy Budget Approach:*
+_Daily Energy Budget Approach:_
+
 1. Rate available energy each morning (1-10 scale)
 2. Allocate to essential activities first (work, basic self-care)
 3. Plan rest periods between activities (not optional - scheduled)
 4. Reserve 20% capacity for unexpected demands
 5. Accept that some days the budget is smaller
 
-*Activity-Rest Cycling:*
+_Activity-Rest Cycling:_
+
 - Activity block: 30-45 minutes maximum (adjust to your pattern)
 - Rest break: 15-20 minutes of actual rest (not phone scrolling)
 - Track what ratio works for you (some need 30/30, others 45/15)
 
-*Good Day/Bad Day Planning:*
+_Good Day/Bad Day Planning:_
+
 - **Good days:** Resist overexertion (leads to payback); do slightly more, not everything
 - **Bad days:** Have minimum viable routine ready; prioritize blood sugar management and basic care
 - **Moderate days:** Standard pacing applies
 
 **Movement and Exercise Approach:**
 
-*Gentle Movement Options (start small):*
+_Gentle Movement Options (start small):_
+
 - Walking (5-10 minutes, building gradually based on pain levels)
 - Water exercise (low-impact, often easier on fibromyalgia)
 - Gentle stretching or chair yoga
 - Short post-meal walks (helps blood sugar, 5-10 minutes)
 
-*Key Principles:*
+_Key Principles:_
+
 - Consistency over intensity - daily small movement beats weekly hard sessions
 - Track blood sugar response to different activities
 - Movement on bad days might be stretching only - that counts
@@ -200,19 +213,22 @@ Managing two chronic conditions creates unique challenges - understanding how th
 
 **Healthcare Communication:**
 
-*Appointment Preparation Checklist:*
+_Appointment Preparation Checklist:_
+
 - Bring 2-week symptom log summary (not every daily detail)
 - List top 3 questions/concerns (prioritized)
 - Note medication observations (effects, side effects)
 - Describe functional impact ("I can work X hours before fatigue" is more useful than "I'm tired")
 - Bring list of current supplements/OTC medications
 
-*Between Appointments:*
+_Between Appointments:_
+
 - Document significant changes or new symptoms
 - Note what's working and what isn't
 - Track questions as they arise (keep running list)
 
 **Quality of Life Strategies:**
+
 - Plan social activities during typically better times of day/week
 - Communicate needs to family/friends (specific requests help)
 - Maintain at least one enjoyable activity weekly, even modified
@@ -224,6 +240,7 @@ Managing two chronic conditions creates unique challenges - understanding how th
 ---
 
 ## Related Prompts
+
 - [Sleep Quality Optimizer](sleep-optimization-specialist.md) - Sleep improvement for chronic conditions
 - [Nutrition Optimization Planner](nutrition-optimization-planner.md) - Dietary strategies for health
 - [Stress Reduction Strategist](stress-reduction-strategist.md) - Managing stress impact on health

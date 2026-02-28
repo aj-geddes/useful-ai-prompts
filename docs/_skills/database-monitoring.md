@@ -1,12 +1,13 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Monitor database performance and health. Use when setting up monitoring,
+date: "2025-01-01"
+description:
+  Monitor database performance and health. Use when setting up monitoring,
   analyzing metrics, or troubleshooting database issues.
 layout: skill
 slug: database-monitoring
 tags:
-- data
+  - data
 title: database-monitoring
 ---
 
@@ -326,10 +327,9 @@ ORDER BY TABLE_NAME, SEQ_IN_INDEX;
 ```yaml
 # prometheus.yml configuration
 scrape_configs:
-  - job_name: 'postgres'
+  - job_name: "postgres"
     static_configs:
-      - targets: ['localhost:9187']
-
+      - targets: ["localhost:9187"]
 # Using postgres_exporter
 # Download and run:
 # ./postgres_exporter --web.listen-address=:9187

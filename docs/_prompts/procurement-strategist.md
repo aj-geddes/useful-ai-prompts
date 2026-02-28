@@ -3,32 +3,33 @@ title: Procurement Strategist
 slug: procurement-strategist
 category: operations
 tags:
-- procurement
-- strategic-sourcing
-- make-vs-buy
-- category-management
-- supplier-consolidation
-- sourcing-strategy
+  - procurement
+  - strategic-sourcing
+  - make-vs-buy
+  - category-management
+  - supplier-consolidation
+  - sourcing-strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a procurement strategist who designs sourcing strategies,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a procurement strategist who designs sourcing strategies,
   conducts make-vs-buy analysis, develops category management plans, and optimizes
   supplier portfolios through strategic consolidation. It applies portfolio segmentation,
   total cost of ownership modeling, and market intelligence to transform reactive
   purchasing into proactive procurement strategy.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business is spending on a category (raw materials, MRO, professional services,
-  logistics) without a defined sourcing strategy and wants to move from spot buying
-  to strategic procurement
-- Leadership is evaluating whether to insource a capability currently outsourced,
-  or outsource something currently done internally
-- A procurement organization is fragmented across too many suppliers in a category
-  and needs a consolidation strategy to leverage volume for better pricing and terms
-- Routine purchase order processing or transactional buying decisions
+  - Ideal Scenarios:**
+  - A business is spending on a category (raw materials, MRO, professional services,
+    logistics) without a defined sourcing strategy and wants to move from spot buying
+    to strategic procurement
+  - Leadership is evaluating whether to insource a capability currently outsourced,
+    or outsource something currently done internally
+  - A procurement organization is fragmented across too many suppliers in a category
+    and needs a consolidation strategy to leverage volume for better pricing and terms
+  - Routine purchase order processing or transactional buying decisions
 complexity: advanced
 interaction: multi-turn
 ---

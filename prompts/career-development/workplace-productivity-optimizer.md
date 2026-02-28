@@ -1,6 +1,7 @@
 # Workplace Productivity Optimizer
 
 ## Metadata
+
 - **ID**: `career-workplace-productivity-optimizer`
 - **Version**: 1.0.0
 - **Category**: Career Development
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Optimizes workplace productivity through time management, workflow design, and energy management strategies. Creates sustainable systems that maximize meaningful output while preventing burnout by aligning work patterns with natural energy cycles and eliminating productivity drains.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Feeling overwhelmed with workload despite working hard
 - Wanting to accomplish more meaningful work in less time
 - Struggling with focus, distractions, and context switching
@@ -24,6 +27,7 @@ Optimizes workplace productivity through time management, workflow design, and e
 - Recovering from or preventing burnout
 
 **Anti-Patterns (When NOT to Use):**
+
 - Project management and team coordination
 - Team-wide productivity initiatives
 - Strategic planning and goal setting
@@ -109,6 +113,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a project manager at a tech company. Typical day: back-to-back meetings, constant Slack notifications, and firefighting issues. My challenges are having no time for strategic work, always being reactive, and feeling exhausted by 3pm. I'm most productive early morning (7-9am), least productive after lunch (2-3pm). I want to reclaim 2 hours daily for important work that keeps getting pushed."
 
 ### Output
@@ -116,6 +121,7 @@ Avoid:
 ## TIME AUDIT FINDINGS
 
 **Current Time Allocation:**
+
 ```
 Meetings: 5 hours (62%)
 Reactive work (Slack, email): 2 hours (25%)
@@ -124,6 +130,7 @@ Admin/logistics: 0.5 hours (7%)
 ```
 
 **Problems Identified:**
+
 1. Zero protected time for strategic work
 2. Peak energy (7-9am) wasted on reactive tasks
 3. Meeting density prevents recovery
@@ -136,21 +143,25 @@ Admin/logistics: 0.5 hours (7%)
 ### Energy-Aligned Schedule
 
 **Peak Energy Block (7:00-9:00am):**
+
 - Strategic work only (no meetings, no Slack)
 - Weekly planning, project strategy, complex decisions
 - Status: Do Not Disturb, out-of-office message on
 
 **High Energy Block (9:00-12:00pm):**
+
 - Important meetings (decisions, strategy)
 - Collaborative work requiring focus
 - Slack check at 9:00 and 11:30
 
 **Low Energy Block (12:00-3:00pm):**
+
 - Lunch + genuine break (12:00-1:00)
 - Routine meetings, 1:1s, updates (1:00-3:00)
 - Administrative tasks during 2-3pm slump
 
 **Recovery Block (3:00-5:00pm):**
+
 - Tactical work and follow-ups
 - Communication batch processing
 - Day wrap-up and next-day planning
@@ -160,12 +171,14 @@ Admin/logistics: 0.5 hours (7%)
 ### Deep Work Protection
 
 **Morning Focus Block:**
+
 - 7:00-9:00am is sacred (blocked on calendar)
 - Slack status: "Focused until 9am"
 - Email auto-responder during this time
 - Work from different location if needed
 
 **Focus Techniques:**
+
 - Pomodoro for complex tasks (25 min work, 5 min break)
 - Time blocking for all important work
 - Single-tasking rule: one project open at a time
@@ -174,12 +187,14 @@ Admin/logistics: 0.5 hours (7%)
 ### Distraction Management
 
 **Slack Optimization:**
+
 - Batch check: 9am, 11:30am, 2pm, 4:30pm
 - Mute non-essential channels
 - Use scheduled messages for non-urgent
 - Status updates for availability
 
 **Email Triage:**
+
 - Process twice daily (9:30am, 4pm)
 - 2-minute rule: respond immediately if <2 min
 - 4 D's: Delete, Do, Delegate, Defer
@@ -189,12 +204,14 @@ Admin/logistics: 0.5 hours (7%)
 ### Meeting Reduction Strategy
 
 **Before Scheduling:**
+
 - Ask: "Could this be async?"
 - Default to 25 minutes (not 30)
 - Require agenda for all meetings
 - Decline meetings without clear purpose
 
 **Meeting-Free Zones:**
+
 - Tuesday/Thursday mornings (9-12)
 - Friday afternoons (2-5)
 - All meetings 9am-4pm (protect ends of day)
@@ -202,6 +219,7 @@ Admin/logistics: 0.5 hours (7%)
 ### Meeting Effectiveness
 
 **Running Better Meetings:**
+
 - Start with outcome goal stated
 - End 5 minutes early for action items
 - Assign follow-ups before ending
@@ -213,12 +231,14 @@ Admin/logistics: 0.5 hours (7%)
 
 **Daily Top 3:**
 Each morning identify 3 must-complete items:
+
 1. One strategic (moves goals forward)
 2. One important (time-sensitive or high-impact)
 3. One maintenance (prevents problems)
 
 **Weekly Planning:**
 Friday 4:30pm: Review week, plan next week
+
 - What must happen next week?
 - What meetings can be moved/declined?
 - What deep work blocks are protected?
@@ -228,11 +248,13 @@ Friday 4:30pm: Review week, plan next week
 ### Daily Recovery
 
 **Built-in Breaks:**
+
 - 10-minute walk after lunch
 - 5-minute breaks between meetings
 - No eating lunch at desk
 
 **Energy Boosters:**
+
 - Stand during afternoon calls
 - Natural light exposure morning
 - Hydration reminders hourly
@@ -240,6 +262,7 @@ Friday 4:30pm: Review week, plan next week
 ### Weekly Reset
 
 **Friday Wrap-Up Ritual:**
+
 - Clear inbox to manageable state
 - Celebrate week's wins
 - Reset workspace for Monday
@@ -248,6 +271,7 @@ Friday 4:30pm: Review week, plan next week
 ## SUCCESS METRICS
 
 **Weekly Targets:**
+
 - Deep work hours: 10+ (up from 2.5)
 - Strategic time: 5+ hours
 - Meeting time: <50% of working hours
@@ -256,6 +280,7 @@ Friday 4:30pm: Review week, plan next week
 ---
 
 ## Related Prompts
+
 - [Remote Work Optimizer](remote-work-optimizer.md) - Optimize productivity for remote work
 - [Performance Review Optimizer](performance-review-optimizer.md) - Demonstrate productivity improvements
 - [Time Management Optimizer](../personal-productivity/time-management-optimizer.md) - Personal time management systems

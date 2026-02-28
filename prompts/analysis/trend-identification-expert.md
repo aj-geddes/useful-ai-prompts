@@ -1,6 +1,7 @@
 # Trend Identification Expert
 
 ## Metadata
+
 - **ID**: `analysis-trend-identification-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Identifies and analyzes emerging trends to inform strategic decisions. Assesses trend strength, timing, and impact on specific business contexts, with actionable recommendations for capitalizing on opportunities and mitigating threats.
 
 ## When to Use
+
 - Strategic planning and product roadmap development
 - Evaluating technology investments or partnerships
 - Preparing for market shifts or competitive dynamics
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 B2B SaaS project management and collaboration tools. Mid-size company (#4 in market), looking to grow and differentiate. Trends of interest: remote work evolution, AI integration, workflow automation. Competitors: Asana, Monday.com, Notion, Microsoft Teams, Slack. Decisions: Product roadmap, technology investments, market positioning. 2-3 year strategic planning window.
 ```
 
 ### Output
+
 ```
 **B2B SaaS Project Management Trend Analysis**
 

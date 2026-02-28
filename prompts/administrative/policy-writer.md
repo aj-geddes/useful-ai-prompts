@@ -1,6 +1,7 @@
 # Policy Writer
 
 ## Metadata
+
 - **ID**: `administrative-policy-writer`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,11 +19,13 @@ This prompt creates a policy and procedure writing expert who drafts clear, lega
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Drafting new HR, IT security, or operational policies from scratch
 - Updating existing policies to reflect regulatory changes or organizational growth
 - Creating procedure documents that translate policy intent into step-by-step guidance
 
 **Anti-patterns (Don't Use For):**
+
 - Legal opinions or regulatory interpretation requiring licensed counsel
 - Policies for highly regulated industries (financial services, healthcare) without attorney review
 - Individual employment contracts or disciplinary records
@@ -120,6 +123,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 200-person SaaS company and we've never had a formal remote work policy. With 60% of staff permanently remote now, managers are making inconsistent decisions about things like home office stipends, core hours, and what happens if someone wants to work from another country for a month. Write us a remote work policy."
 
 ### Output
@@ -136,6 +140,7 @@ This policy establishes consistent standards for remote and distributed work arr
 Applies to all full-time and part-time employees in permanent or hybrid-remote roles. Does not apply to contractors, temporary workers, or in-office-designated roles (see Appendix A).
 
 **3. Definitions**
+
 - **Remote-first employee**: An employee whose primary work location is outside a company office, as documented in their offer letter or a signed work arrangement agreement.
 - **Temporary remote work**: A time-limited arrangement (up to 30 consecutive calendar days) approved for an otherwise office-based employee.
 - **International remote work**: Any remote work performed outside the employee's country of employment.
@@ -147,12 +152,13 @@ Applies to all full-time and part-time employees in permanent or hybrid-remote r
 4.4 Managers must not grant individual exceptions to international remote work duration limits; all requests must route through People Operations.
 
 **5. Procedures**
-5.1 *Requesting temporary international remote work*
-  1. Employee submits request in HRIS at least 21 days in advance, specifying destination country, dates, and business justification.
-  2. Manager approves or denies within 5 business days.
-  3. People Operations reviews for tax nexus, visa, and employment law implications. [Verify for your jurisdiction]
-  4. Legal counsel is consulted for durations exceeding 14 days.
-  5. Employee receives written approval before booking travel.
+5.1 _Requesting temporary international remote work_
+
+1. Employee submits request in HRIS at least 21 days in advance, specifying destination country, dates, and business justification.
+2. Manager approves or denies within 5 business days.
+3. People Operations reviews for tax nexus, visa, and employment law implications. [Verify for your jurisdiction]
+4. Legal counsel is consulted for durations exceeding 14 days.
+5. Employee receives written approval before booking travel.
 
 **6. Compliance**
 Non-compliance with international work notification requirements may result in disciplinary action and may create personal tax liability for the employee. People Operations will audit work location data quarterly.
@@ -160,9 +166,9 @@ Non-compliance with international work notification requirements may result in d
 **7. Exceptions**
 Role-based exceptions require VP-level approval and People Operations sign-off. Submit requests to [hr-policy@company.com].
 
-| Version | Date | Author | Change |
-|---------|------|--------|--------|
-| 1.0 | 2026-02-27 | People Ops | Initial publication |
+| Version | Date       | Author     | Change              |
+| ------- | ---------- | ---------- | ------------------- |
+| 1.0     | 2026-02-27 | People Ops | Initial publication |
 
 ---
 

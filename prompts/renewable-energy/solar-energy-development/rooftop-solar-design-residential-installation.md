@@ -1,6 +1,7 @@
 # Rooftop Solar Design and Residential Installation
 
 ## Metadata
+
 - **ID**: `rooftop-solar-design-residential-installation`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables comprehensive residential solar installation programs encomp
 ## When to Use
 
 **Ideal scenarios:**
+
 - Designing residential rooftop solar systems
 - Evaluating home solar feasibility and ROI
 - Optimizing system sizing for homeowner consumption patterns
@@ -25,6 +27,7 @@ This prompt enables comprehensive residential solar installation programs encomp
 - Developing customer-focused installation programs
 
 **Anti-patterns (when not to use):**
+
 - Commercial or industrial installations (use C&I prompt)
 - Utility-scale ground-mount projects
 - Community solar program development
@@ -116,6 +119,7 @@ Develop a comprehensive residential solar solution:
 ## Example Usage
 
 ### Input
+
 We're evaluating solar for a single-family home in Phoenix, AZ (APS territory). The home has a 2,200 sq ft south-facing composition shingle roof, 15 years old. Annual consumption is 18,000 kWh with average summer bills of $350. Homeowners want to maximize savings and are considering an EV purchase next year.
 
 ### Output
@@ -126,84 +130,94 @@ We're evaluating solar for a single-family home in Phoenix, AZ (APS territory). 
 
 Your Phoenix home presents excellent solar conditions with some considerations for roof timing:
 
-*Positive factors:*
+_Positive factors:_
+
 - South-facing orientation: Optimal for solar production
 - Phoenix solar resource: 5.7 kWh/m2/day average - top-tier nationally
 - Minimal shading: No significant obstructions noted
 - Available area: ~1,800 sq ft usable after setbacks and vents
 
-*Considerations:*
+_Considerations:_
+
 - Roof age: At 15 years, composition shingle typically has 5-10 years remaining
 - Recommendation: Roof assessment recommended; consider solar + re-roof coordination if replacement needed within 5 years
 
 **Energy Profile Analysis**
 
-*Current consumption:*
+_Current consumption:_
+
 - Annual usage: 18,000 kWh (high for Phoenix, suggests older HVAC or pool equipment)
 - Peak summer: ~2,000 kWh/month during cooling season
 - Average daily: 49 kWh
 
-*Future planning:*
+_Future planning:_
+
 - EV addition: Expect 3,000-4,000 kWh additional annually
 - Recommended design target: 22,000 kWh to accommodate EV
 
-*APS rate structure (Saver Choice Plus):*
+_APS rate structure (Saver Choice Plus):_
+
 - Time-of-use rates with solar-unfavorable afternoon peaks
 - Export credit: Lower than retail rate under current policies
 - Strategy: Size for 90-95% offset to maximize self-consumption value
 
 **System Design Recommendation**
 
-*Optimal configuration:*
+_Optimal configuration:_
+
 - System size: 11.5 kW DC (20 x 575W panels)
 - Estimated production: 19,500 kWh/year (1,695 kWh/kWp)
 - Technology: High-efficiency monocrystalline panels (21%+ efficiency)
 - Inverter: Microinverters for module-level optimization and monitoring
 - Mounting: Flush-mount on south-facing section
 
-*Design rationale:*
+_Design rationale:_
 Sized slightly above current usage to accommodate planned EV. Microinverters optimize production despite any partial shading and provide panel-level monitoring. System fits comfortably within available roof area.
 
 **Financial Analysis**
 
-*Investment summary:*
+_Investment summary:_
 | Item | Amount |
 |------|--------|
 | System cost | $28,750 ($2.50/W) |
 | Federal tax credit (30%) | -$8,625 |
 | **Net cost** | **$20,125** |
 
-*Savings projection:*
+_Savings projection:_
+
 - Year 1 energy savings: $3,400
 - Year 1 bill (residual + fees): ~$500
 - Total Year 1 benefit: $3,400
 - 25-year savings: $115,000+ (with 3% utility escalation)
 
-*Financial metrics:*
+_Financial metrics:_
+
 - Simple payback: 5.9 years
 - 25-year ROI: 470%
 - LCOE: $0.041/kWh (vs. $0.15+ grid average)
 
 **Financing Options**
 
-| Option | Monthly | Notes |
-|--------|---------|-------|
-| Cash purchase | $0 | Best ROI, immediate equity |
-| Solar loan (12-yr) | $167 | Cash-flow positive Day 1 |
-| Solar loan (20-yr) | $112 | Lowest payment, still positive |
+| Option             | Monthly | Notes                          |
+| ------------------ | ------- | ------------------------------ |
+| Cash purchase      | $0      | Best ROI, immediate equity     |
+| Solar loan (12-yr) | $167    | Cash-flow positive Day 1       |
+| Solar loan (20-yr) | $112    | Lowest payment, still positive |
 
 Recommendation: 12-year solar loan provides optimal balance of monthly savings and total cost.
 
 **Installation Process**
 
-*Timeline (typical 4-6 weeks):*
+_Timeline (typical 4-6 weeks):_
+
 - Week 1: Site survey, engineering, permit application
 - Week 2-3: Permit approval (APS territory typically 2 weeks)
 - Week 4: Installation day (1 day for standard residential)
 - Week 5: Inspection and APS interconnection approval
 - Week 6: System activation and monitoring setup
 
-*Installation day:*
+_Installation day:_
+
 - Duration: 6-8 hours
 - Crew: 3-4 certified installers
 - Disruption: Minimal - power off for 1-2 hours during electrical work
@@ -211,14 +225,16 @@ Recommendation: 12-year solar loan provides optimal balance of monthly savings a
 
 **Customer Support Package**
 
-*Included with installation:*
+_Included with installation:_
+
 - 25-year panel warranty
 - 25-year microinverter warranty
 - 10-year workmanship warranty
 - Monitoring app setup and training
 - Annual production review (first 2 years)
 
-*Monitoring features:*
+_Monitoring features:_
+
 - Real-time production by panel
 - Daily/monthly/annual production tracking
 - Automatic alerts for performance issues
@@ -226,12 +242,12 @@ Recommendation: 12-year solar loan provides optimal balance of monthly savings a
 
 **Risk Considerations**
 
-| Risk | Mitigation |
-|------|------------|
-| Roof condition | Pre-installation assessment; coordinate with roofer if needed |
-| APS rate changes | Current rates locked for 10 years under solar program |
-| Equipment failure | 25-year manufacturer warranties, workmanship coverage |
-| Production shortfall | Conservative modeling, performance monitoring |
+| Risk                 | Mitigation                                                    |
+| -------------------- | ------------------------------------------------------------- |
+| Roof condition       | Pre-installation assessment; coordinate with roofer if needed |
+| APS rate changes     | Current rates locked for 10 years under solar program         |
+| Equipment failure    | 25-year manufacturer warranties, workmanship coverage         |
+| Production shortfall | Conservative modeling, performance monitoring                 |
 
 **Recommendation**
 

@@ -3,35 +3,36 @@ title: Trend Analysis Expert
 slug: trend-analysis-expert
 category: research
 tags:
-- trend
-- analysis
-- market
-- trends
-- technology
-- trends
-- forecasting
-- scenario
-- planning
-- signal
-- detection
-- foresight
+  - trend
+  - analysis
+  - market
+  - trends
+  - technology
+  - trends
+  - forecasting
+  - scenario
+  - planning
+  - signal
+  - detection
+  - foresight
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables strategists, analysts, and researchers to rigorously
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables strategists, analysts, and researchers to rigorously
   identify and evaluate market, technology, and social trends — distinguishing meaningful
   signals from noise, assessing trend maturity and adoption trajectory, and building
   scenario plans that prepare organizations for multiple plausible futures.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building a strategic plan that must account for medium-to-long-term market or technology
-  shifts
-- Evaluating whether a specific trend is relevant to your business and at what timescale
-- Preparing a foresight report for leadership on emerging forces that may disrupt
-  current strategy
-- Trend tracking requiring real-time data feeds or market monitoring tools
+  - Ideal Scenarios:**
+  - Building a strategic plan that must account for medium-to-long-term market or technology
+    shifts
+  - Evaluating whether a specific trend is relevant to your business and at what timescale
+  - Preparing a foresight report for leadership on emerging forces that may disrupt
+    current strategy
+  - Trend tracking requiring real-time data feeds or market monitoring tools
 complexity: advanced
 interaction: multi-turn
 ---

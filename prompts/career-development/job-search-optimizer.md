@@ -1,6 +1,7 @@
 # Job Search Optimizer
 
 ## Metadata
+
 - **ID**: `career-job-search-optimizer`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Transforms reactive job hunting into proactive opportunity creation through systematic positioning, multi-channel outreach, and strategic networking. Maximizes interview rates by optimizing how candidates present their value across job boards, referrals, and direct outreach.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Actively searching for new positions and not getting enough interviews
 - Transitioning to new industries or career paths
 - Optimizing application materials and strategy after limited results
 - Building systematic approach to job search efficiency
 
 **Anti-patterns (when not to use):**
+
 - Passive career exploration without active search intent
 - Internal promotions or lateral moves within same company
 - Freelance or consulting client acquisition
@@ -122,6 +127,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Product Manager, 4 years experience. Currently employed, want to move in 3-6 months. Targeting Senior PM or Director at growth-stage startups (B2B SaaS, fintech, healthtech, 50-500 employees). Search for 2 months: 3 interviews, no offers. Challenge: Not getting enough interviews despite good qualifications. Resume rated 6/10, LinkedIn somewhat optimized, limited external network."
 
 ### Output
@@ -132,6 +138,7 @@ Current: "Product Manager with 4 years experience"
 Optimized: "Technical Product Leader driving 40%+ revenue growth through data-driven B2B product strategy"
 
 Optimal Target Profile:
+
 - Company Stage: Series A/B startups (50-200 employees)
 - Industries: B2B SaaS, fintech, healthtech
 - Role: Senior PM ready for leadership responsibilities
@@ -140,26 +147,31 @@ Optimal Target Profile:
 **RESUME OPTIMIZATION**
 
 Current Issues Identified:
+
 - Not quantifying impact strongly enough
 - Too generic rather than startup/product-focused
 - Missing key startup PM competencies
 - Not optimized for ATS keyword matching
 
 Professional Summary Transformation:
+
 - Before: "Experienced product manager with background in software development"
 - After: "Technical Product Manager with 4+ years driving revenue growth and user adoption for B2B SaaS products. Led product strategy resulting in 40% revenue increase and successful enterprise integration."
 
 Experience Bullet Transformation:
+
 - Before: "Managed product roadmap and worked with engineering teams"
 - After: "Led product strategy for B2B SaaS platform serving 500+ enterprise clients, driving 40% revenue growth through data-driven feature prioritization"
 
 **LINKEDIN STRATEGY**
 
 Headline Optimization:
+
 - Current: "Product Manager at [Company]"
 - Optimized: "Senior Product Manager | Driving 40%+ Revenue Growth | B2B SaaS | Technical Product Leadership"
 
 Content Strategy:
+
 - Weekly posts about product management insights
 - Case studies of product successes
 - Engage with startup founders and PMs in target market
@@ -175,6 +187,7 @@ Application Mix:
 | Recruiters | 10% | Variable |
 
 3-6 Month Timeline:
+
 - Months 1-2: Resume/LinkedIn optimization, portfolio enhancement, networking outreach
 - Months 3-4: High-volume strategic applications (20-30/week), referral generation, interview execution
 
@@ -190,18 +203,21 @@ Outreach Template:
 **TRACKING SYSTEM**
 
 Weekly KPIs:
+
 - Applications submitted: Target 15-20
 - Networking conversations: Target 5-8
 - Response rate: Target >15%
 - Interview conversion: Target >25%
 
 Course Corrections:
+
 - Not getting interviews: Audit resume for ATS, increase networking, expand target list
 - Interviews not converting: Request feedback, practice mock interviews, refine story bank
 
 ---
 
 ## Related Prompts
+
 - [Interview Preparation Specialist](interview-preparation-specialist.md) - Interview-specific preparation
 - [Professional Networking Strategist](professional-networking-strategist.md) - Deep networking strategy
 - [Personal Branding Strategist](personal-branding-strategist.md) - Thought leadership development

@@ -1,6 +1,7 @@
 # Launch Services Ground Operations Management
 
 ## Metadata
+
 - **ID**: `space-ground-operations`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Launch Services
@@ -18,6 +19,7 @@ This prompt enables comprehensive management of launch ground operations includi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Managing launch pad and ground support operations for commercial sites
 - Developing comprehensive ground systems maintenance programs
 - Establishing launch facility safety protocols and emergency response
@@ -25,6 +27,7 @@ This prompt enables comprehensive management of launch ground operations includi
 - Planning new launch pad construction or facility upgrades
 
 **Anti-Patterns (Don't Use When):**
+
 - Planning mission trajectories or orbital mechanics
 - Managing satellite operations after deployment
 - Designing in-flight vehicle systems
@@ -115,6 +118,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We need to establish ground operations for a new launch pad supporting 18 launches annually with Falcon 9-class vehicles. Need comprehensive approach covering systems, maintenance, safety, and staffing."
 
 ### Output
@@ -123,78 +127,78 @@ Responses must avoid:
 
 **Facility Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Launch Rate | 18/year (20 days average turnaround target) |
-| Vehicle Class | Falcon 9-class (LOX/RP-1, 550 MT liftoff) |
-| Pad Configuration | Single pad with mobile transporter erector |
-| GSE Scope | Full propellant, electrical, pneumatic, fire suppression |
-| Availability Target | >99% operational readiness |
+| Parameter           | Specification                                            |
+| ------------------- | -------------------------------------------------------- |
+| Launch Rate         | 18/year (20 days average turnaround target)              |
+| Vehicle Class       | Falcon 9-class (LOX/RP-1, 550 MT liftoff)                |
+| Pad Configuration   | Single pad with mobile transporter erector               |
+| GSE Scope           | Full propellant, electrical, pneumatic, fire suppression |
+| Availability Target | >99% operational readiness                               |
 
 **Ground Systems Inventory**
 
-| System | Key Components | Criticality | Redundancy |
-|--------|---------------|-------------|------------|
-| Propellant - LOX | 250,000 gal tank, transfer lines, valves | Critical | Dual pumps |
-| Propellant - RP-1 | 100,000 gal tank, transfer system | Critical | Dual pumps |
-| Electrical | 5 MW service, umbilical towers, battery backup | Critical | Dual feeds |
-| Pneumatic | Helium/N2 storage, high-pressure regulators | Critical | Redundant paths |
-| Fire Suppression | Deluge system, foam, detection network | Safety-Critical | Triple redundancy |
-| Launch Mount | Hold-down clamps, release mechanisms, flame deflector | Critical | Regular inspection |
-| Communications | Telemetry, command uplink, voice, video | Critical | Backup systems |
+| System            | Key Components                                        | Criticality     | Redundancy         |
+| ----------------- | ----------------------------------------------------- | --------------- | ------------------ |
+| Propellant - LOX  | 250,000 gal tank, transfer lines, valves              | Critical        | Dual pumps         |
+| Propellant - RP-1 | 100,000 gal tank, transfer system                     | Critical        | Dual pumps         |
+| Electrical        | 5 MW service, umbilical towers, battery backup        | Critical        | Dual feeds         |
+| Pneumatic         | Helium/N2 storage, high-pressure regulators           | Critical        | Redundant paths    |
+| Fire Suppression  | Deluge system, foam, detection network                | Safety-Critical | Triple redundancy  |
+| Launch Mount      | Hold-down clamps, release mechanisms, flame deflector | Critical        | Regular inspection |
+| Communications    | Telemetry, command uplink, voice, video               | Critical        | Backup systems     |
 
 **Maintenance Program**
 
-| Type | Frequency | Scope | Duration |
-|------|-----------|-------|----------|
-| Pre-Launch | Each launch | Full system checkout, leak checks, calibration | 2 days |
-| Post-Launch | Each launch | Damage assessment, thermal inspection, repairs | 3 days |
-| Preventive | Monthly | Per equipment schedule, lubrication, filter replacement | 2 days |
-| Predictive | Continuous | Vibration monitoring, thermal imaging, oil analysis | Ongoing |
-| Major Overhaul | Annual | Full system teardown, component replacement | 14 days |
+| Type           | Frequency   | Scope                                                   | Duration |
+| -------------- | ----------- | ------------------------------------------------------- | -------- |
+| Pre-Launch     | Each launch | Full system checkout, leak checks, calibration          | 2 days   |
+| Post-Launch    | Each launch | Damage assessment, thermal inspection, repairs          | 3 days   |
+| Preventive     | Monthly     | Per equipment schedule, lubrication, filter replacement | 2 days   |
+| Predictive     | Continuous  | Vibration monitoring, thermal imaging, oil analysis     | Ongoing  |
+| Major Overhaul | Annual      | Full system teardown, component replacement             | 14 days  |
 
 **Turnaround Schedule (20-Day Target)**
 
-| Days | Phase | Key Activities |
-|------|-------|---------------|
-| 1-3 | Post-Launch Assessment | Damage inspection, thermal survey, water deluge cleanup |
-| 4-6 | GSE Refurbishment | Valve rebuilds, seal replacement, consumables restock |
-| 7-9 | System Checkout | Electrical testing, leak checks, calibration verification |
-| 10-12 | Pre-Integration Prep | Transporter positioning, umbilical preparation |
-| 13-16 | Vehicle Integration | Erection, mechanical mate, electrical connections |
-| 17-18 | Integrated Testing | WDR prep, system verification, countdown rehearsal |
-| 19-20 | Final Prep + Buffer | Propellant loading rehearsal, contingency reserve |
+| Days  | Phase                  | Key Activities                                            |
+| ----- | ---------------------- | --------------------------------------------------------- |
+| 1-3   | Post-Launch Assessment | Damage inspection, thermal survey, water deluge cleanup   |
+| 4-6   | GSE Refurbishment      | Valve rebuilds, seal replacement, consumables restock     |
+| 7-9   | System Checkout        | Electrical testing, leak checks, calibration verification |
+| 10-12 | Pre-Integration Prep   | Transporter positioning, umbilical preparation            |
+| 13-16 | Vehicle Integration    | Erection, mechanical mate, electrical connections         |
+| 17-18 | Integrated Testing     | WDR prep, system verification, countdown rehearsal        |
+| 19-20 | Final Prep + Buffer    | Propellant loading rehearsal, contingency reserve         |
 
 **Safety Management System**
 
-| Element | Applicable Standard | Implementation | Verification |
-|---------|-------------------|----------------|--------------|
-| Hazardous Operations | FAA Part 450 | Certified operators, written procedures | Per operation |
-| Fire Protection | NFPA 37, NFPA 30 | Deluge, suppression, detection, standoff distances | Monthly test |
-| Personnel Safety | OSHA 29 CFR | PPE requirements, training, access control | Daily |
-| Emergency Response | Site Emergency Plan | Quarterly drills, mutual aid agreements | Quarterly |
-| Propellant Safety | CGA, NFPA 55 | Operator certification, atmospheric monitoring | Continuous |
+| Element              | Applicable Standard | Implementation                                     | Verification  |
+| -------------------- | ------------------- | -------------------------------------------------- | ------------- |
+| Hazardous Operations | FAA Part 450        | Certified operators, written procedures            | Per operation |
+| Fire Protection      | NFPA 37, NFPA 30    | Deluge, suppression, detection, standoff distances | Monthly test  |
+| Personnel Safety     | OSHA 29 CFR         | PPE requirements, training, access control         | Daily         |
+| Emergency Response   | Site Emergency Plan | Quarterly drills, mutual aid agreements            | Quarterly     |
+| Propellant Safety    | CGA, NFPA 55        | Operator certification, atmospheric monitoring     | Continuous    |
 
 **Staffing Model**
 
-| Function | Personnel | Shift Coverage | Certifications Required |
-|----------|-----------|---------------|------------------------|
-| Pad Operations | 24 | 3 shifts, 24/7 during campaign | Crane, forklift, confined space |
-| Propellant Systems | 8 | Launch campaign (L-3 to L+1) | Cryogenic handling, HAZWOPER |
-| Electrical Systems | 6 | Launch campaign | Licensed electrician, HV certification |
-| Safety/Emergency | 4 | 24/7 | EMT, firefighter, HAZMAT |
-| Maintenance | 12 | Day shift + on-call | Equipment-specific certifications |
-| Operations Management | 4 | Day shift + on-call | PMP, operations experience |
+| Function              | Personnel | Shift Coverage                 | Certifications Required                |
+| --------------------- | --------- | ------------------------------ | -------------------------------------- |
+| Pad Operations        | 24        | 3 shifts, 24/7 during campaign | Crane, forklift, confined space        |
+| Propellant Systems    | 8         | Launch campaign (L-3 to L+1)   | Cryogenic handling, HAZWOPER           |
+| Electrical Systems    | 6         | Launch campaign                | Licensed electrician, HV certification |
+| Safety/Emergency      | 4         | 24/7                           | EMT, firefighter, HAZMAT               |
+| Maintenance           | 12        | Day shift + on-call            | Equipment-specific certifications      |
+| Operations Management | 4         | Day shift + on-call            | PMP, operations experience             |
 
 **Performance Metrics**
 
-| Metric | Target | Tracking Frequency | Owner |
-|--------|--------|-------------------|-------|
-| System Availability | >99% | Weekly | Maintenance Manager |
-| Safety Incidents | Zero recordable | Per occurrence | Safety Manager |
-| Turnaround Time | <20 days | Per launch | Operations Director |
-| Maintenance Compliance | 100% on schedule | Monthly | Maintenance Manager |
-| Personnel Certification | 100% current | Monthly | Training Coordinator |
+| Metric                  | Target           | Tracking Frequency | Owner                |
+| ----------------------- | ---------------- | ------------------ | -------------------- |
+| System Availability     | >99%             | Weekly             | Maintenance Manager  |
+| Safety Incidents        | Zero recordable  | Per occurrence     | Safety Manager       |
+| Turnaround Time         | <20 days         | Per launch         | Operations Director  |
+| Maintenance Compliance  | 100% on schedule | Monthly            | Maintenance Manager  |
+| Personnel Certification | 100% current     | Monthly            | Training Coordinator |
 
 ---
 

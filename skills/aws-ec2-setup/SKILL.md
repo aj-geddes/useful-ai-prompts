@@ -401,6 +401,7 @@ resource "aws_autoscaling_group" "app" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use security groups for network control
 - Attach IAM roles for AWS access
 - Enable CloudWatch monitoring
@@ -411,6 +412,7 @@ resource "aws_autoscaling_group" "app" {
 - Keep systems patched and updated
 
 ### ❌ DON'T
+
 - Use overly permissive security groups
 - Store credentials in user data
 - Ignore CloudWatch metrics

@@ -1,6 +1,7 @@
 # Productivity System Designer
 
 ## Metadata
+
 - **ID**: `productivity-system-designer`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A productivity system architect that helps you design and implement personalized
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a comprehensive personal productivity system from scratch
 - Integrating multiple tools and workflows into a cohesive system
 - Adapting productivity methods (GTD, time blocking) to your unique situation
@@ -25,6 +27,7 @@ A productivity system architect that helps you design and implement personalized
 - Recovering from productivity system failures or burnout
 
 **Anti-Patterns (Don't Use For):**
+
 - Team productivity systems or enterprise workflow design
 - Project management software setup and configuration
 - Hiring or managing teams
@@ -123,6 +126,7 @@ Design a personalized productivity system following these steps:
 ## Example Usage
 
 ### Input
+
 Main roles: Marketing manager (60%), freelance writer (25%), parent (15%). Challenges: switching between work types, multiple projects falling through cracks. Previous: Tried GTD but too complex, bullet journaling worked partially. Work style: need structure but flexibility for creative work, visual learner. Must use Slack and Asana for work, prefer Mac/iPhone. Can spend 15-20 minutes daily on system maintenance.
 
 ### Output
@@ -138,19 +142,22 @@ Based on your hybrid roles and visual preference, here's your "Flexible Structur
 
 **Three-Tier Project Architecture**
 
-*Tier 1: Work Projects (Asana + Slack integration)*
+_Tier 1: Work Projects (Asana + Slack integration)_
+
 - Active campaigns and client work
 - Weekly sprint planning within Asana
 - Team deliverable tracking with status updates
 - Integration: Asana notifications to Slack
 
-*Tier 2: Personal Development (Notion dashboard)*
+_Tier 2: Personal Development (Notion dashboard)_
+
 - Blog content pipeline with visual Kanban
 - Career advancement goals
 - Skill building activities
 - Monthly progress reviews with visual charts
 
-*Tier 3: Life Management (Apple Reminders + Calendar)*
+_Tier 3: Life Management (Apple Reminders + Calendar)_
+
 - Family commitments and activities
 - Household projects
 - Health and wellness goals
@@ -158,14 +165,15 @@ Based on your hybrid roles and visual preference, here's your "Flexible Structur
 
 **Daily Workflow**
 
-*Morning Startup (10 min)*
+_Morning Startup (10 min)_
 
-| Day Type | Protocol |
-|----------|----------|
-| Office Days | Review Asana notifications (3 min) -> Check team priorities in Slack (2 min) -> Identify top 3 focus items (3 min) -> Set phone to work focus mode (1 min) |
-| Home Days | Quick family needs assessment (2 min) -> Review personal project pipeline (3 min) -> Choose creative vs. administrative focus (2 min) -> Set environment for chosen mode (3 min) |
+| Day Type    | Protocol                                                                                                                                                                         |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Office Days | Review Asana notifications (3 min) -> Check team priorities in Slack (2 min) -> Identify top 3 focus items (3 min) -> Set phone to work focus mode (1 min)                       |
+| Home Days   | Quick family needs assessment (2 min) -> Review personal project pipeline (3 min) -> Choose creative vs. administrative focus (2 min) -> Set environment for chosen mode (3 min) |
 
-*Evening Shutdown (5 min)*
+_Evening Shutdown (5 min)_
+
 1. Clear inbox to zero or schedule processing time
 2. Update project status in Asana
 3. Write tomorrow's top 3 priorities
@@ -181,23 +189,25 @@ Based on your hybrid roles and visual preference, here's your "Flexible Structur
 
 **Tool Stack Integration**
 
-| Purpose | Tool | Integration |
-|---------|------|-------------|
-| Work Projects | Asana | Native Slack integration |
-| Personal Projects | Notion | Dashboard for visual progress |
-| Life Management | Apple Reminders | iPhone widget for quick capture |
-| Calendar | Google (work) + Apple (personal) | Separate work/life visibility |
-| Quick Capture | Apple Notes | Shared with Notion for processing |
+| Purpose           | Tool                             | Integration                       |
+| ----------------- | -------------------------------- | --------------------------------- |
+| Work Projects     | Asana                            | Native Slack integration          |
+| Personal Projects | Notion                           | Dashboard for visual progress     |
+| Life Management   | Apple Reminders                  | iPhone widget for quick capture   |
+| Calendar          | Google (work) + Apple (personal) | Separate work/life visibility     |
+| Quick Capture     | Apple Notes                      | Shared with Notion for processing |
 
 **Context-Switching Optimization**
 
-*Work Mode Protocol:*
+_Work Mode Protocol:_
+
 - Asana dashboard on main monitor
 - Slack on secondary monitor
 - Phone to "Work" focus mode
 - Creative apps closed
 
-*Creative Mode Protocol:*
+_Creative Mode Protocol:_
+
 - Notion full-screen
 - Reference materials in browser tabs
 - Phone on DND
@@ -205,17 +215,20 @@ Based on your hybrid roles and visual preference, here's your "Flexible Structur
 
 **Habit Formation Phases**
 
-*Week 1-2: Foundation*
+_Week 1-2: Foundation_
+
 - 2-minute morning priority setting
 - Single notebook/app for all captures
 - End-of-day 5-minute cleanup
 
-*Week 3-4: Workflow Integration*
+_Week 3-4: Workflow Integration_
+
 - Context switching protocols between roles
 - Daily Asana update routine before lunch
 - Blog idea capture system in Notion
 
-*Week 5-8: Optimization*
+_Week 5-8: Optimization_
+
 - Energy-task matching refined by pattern
 - Automated progress tracking setup
 - Monthly system review established
@@ -223,6 +236,7 @@ Based on your hybrid roles and visual preference, here's your "Flexible Structur
 **Crisis Mode Protocol**
 
 When overwhelmed:
+
 1. PAUSE: Stop all non-essential systems (2 min)
 2. LIST: Write absolute must-dos for next 24 hours only (5 min)
 3. COMMUNICATE: Inform stakeholders of delays (10 min)
@@ -242,6 +256,7 @@ Published: [=-------] 2
 ---
 
 ## Related Prompts
+
 - [Time Management Optimizer](time-management-optimizer.md) - For optimizing daily schedules
 - [Habit Formation Strategist](habit-formation-strategist.md) - For building sustainable habits
 - [Workflow Automation Specialist](workflow-automation-specialist.md) - For automating repetitive tasks

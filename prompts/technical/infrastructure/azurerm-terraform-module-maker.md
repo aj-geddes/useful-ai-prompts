@@ -1,6 +1,7 @@
 # AzureRM Terraform Module Maker
 
 ## Metadata
+
 - **ID**: `azurerm-terraform-module-maker`
 - **Version**: 1.1.0
 - **Category**: Technical/Infrastructure
@@ -18,6 +19,7 @@ Creates production-ready, reusable Terraform modules for Azure resources with co
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new Terraform modules for Azure resources from scratch
 - Standardizing infrastructure patterns across teams with shared modules
 - Implementing Azure landing zones with modular architecture
@@ -25,6 +27,7 @@ Creates production-ready, reusable Terraform modules for Azure resources with co
 - Wrapping Azure resources with organizational policies and standards
 
 **Anti-patterns (when NOT to use):**
+
 - One-off infrastructure deployments (use root modules directly)
 - Non-Azure cloud providers (AWS, GCP have different patterns)
 - Terraform state management configuration
@@ -557,6 +560,7 @@ module "storage_account" {
 ---
 
 ## Related Prompts
+
 - [Infrastructure Planning Expert](../../technical-workflows/infrastructure-planning-expert.md) - Plan infrastructure requirements
 - [DevOps Workflow Design Expert](../../technical-workflows/devops-workflow-design-expert.md) - Set up module CI/CD
 - [Cloud Migration Expert](../architecture/cloud-migration-expert.md) - Design Azure architectures

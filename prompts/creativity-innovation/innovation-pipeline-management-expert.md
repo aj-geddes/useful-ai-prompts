@@ -1,6 +1,7 @@
 # Innovation Pipeline Management Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/innovation-pipeline-management-expert
 - **Version**: 2.1.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ A structured innovation management framework that helps organizations track, pri
 ## When to Use
 
 ### Ideal Scenarios
+
 - Managing multiple innovation projects across different stages
 - Establishing or improving stage-gate review processes
 - Balancing innovation portfolios across core, adjacent, and transformational initiatives
@@ -26,6 +28,7 @@ A structured innovation management framework that helps organizations track, pri
 - Building governance frameworks for innovation decisions
 
 ### Anti-Patterns (When Not to Use)
+
 - Single, standalone innovation projects (use project management prompts instead)
 - Early-stage ideation without defined projects (use brainstorming prompts)
 - Pure research without commercialization intent
@@ -105,6 +108,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Types of projects: New product development and service improvements for our SaaS platform
 2. Active projects: 12 projects - 5 in discovery, 4 in development, 3 in launch phase
@@ -124,6 +128,7 @@ Based on your situation, I have created a structured innovation management frame
 **STAGE-GATE FRAMEWORK**
 
 **Stage 0: Discovery (4-8 weeks)**
+
 - Activities: Market research, customer interviews, competitive analysis
 - Gate Criteria: Clear problem definition, market size greater than $500K ARR potential, strategic fit score above 7/10
 - Deliverables: Opportunity brief with customer evidence, initial business case
@@ -131,6 +136,7 @@ Based on your situation, I have created a structured innovation management frame
 - Kill Rate Target: 40% of ideas should not proceed
 
 **Stage 1: Concept Validation (6-10 weeks)**
+
 - Activities: Solution design, user validation (minimum 10 interviews), technical feasibility assessment
 - Gate Criteria: Customer validation above 70% positive, technical feasibility confirmed, refined ROI projection
 - Deliverables: Product concept document, clickable mockups, validation data summary
@@ -138,6 +144,7 @@ Based on your situation, I have created a structured innovation management frame
 - Kill Rate Target: 30% of concepts should not proceed
 
 **Stage 2: Development (12-20 weeks)**
+
 - Activities: Build MVP, alpha testing with 5-10 customers, iterate based on feedback
 - Gate Criteria: Working prototype, alpha NPS above 30, business case reconfirmed
 - Deliverables: Functional MVP, test results, go-to-market plan draft
@@ -145,6 +152,7 @@ Based on your situation, I have created a structured innovation management frame
 - Kill Rate Target: 15% should be paused or killed
 
 **Stage 3: Launch (4-8 weeks)**
+
 - Activities: Beta release, marketing preparation, support documentation, sales enablement
 - Gate Criteria: Quality metrics met (less than 3 P1 bugs), launch plan approved, support team trained
 - Deliverables: Production-ready feature, launch materials, success metrics baseline
@@ -153,6 +161,7 @@ Based on your situation, I have created a structured innovation management frame
 **PORTFOLIO BALANCE RECOMMENDATIONS**
 
 Your current 12 projects should be rebalanced:
+
 - Core Improvements (50%): 6 projects focused on retention-driving enhancements (directly supports 20% retention goal)
 - Adjacent Innovation (35%): 4 projects expanding into related use cases or market segments
 - Transformational (15%): 2 projects exploring new technologies or business models
@@ -162,6 +171,7 @@ Current State Issue: With 5 projects in discovery and only 3 in launch, you have
 **RESOURCE ALLOCATION STRATEGY**
 
 With 15 developers and $3M budget:
+
 - Discovery: 1 developer supporting research (7%), $150K (5%)
 - Concept Validation: 2 developers building prototypes (13%), $300K (10%)
 - Development: 9 developers on active builds (60%), $2M (67%)
@@ -191,23 +201,25 @@ Lagging Indicators (Quarterly):
 
 **RISK MITIGATION PLAN**
 
-| Risk | Trigger | Intervention |
-|------|---------|--------------|
-| Timeline overrun | Project exceeds 130% of planned duration | Mandatory scope cut or resource addition decision within 1 week |
-| Resource fragmentation | Developer working on more than 2 projects | Consolidate assignments, defer lowest priority project |
-| Market risk | Customer validation below 50% | Kill or pivot immediately, do not proceed to development |
-| Technical debt | More than 30% of development time on rework | Architecture review, consider project pause |
-| Stakeholder misalignment | No executive sponsor attending reviews | Escalate or pause project |
+| Risk                     | Trigger                                     | Intervention                                                    |
+| ------------------------ | ------------------------------------------- | --------------------------------------------------------------- |
+| Timeline overrun         | Project exceeds 130% of planned duration    | Mandatory scope cut or resource addition decision within 1 week |
+| Resource fragmentation   | Developer working on more than 2 projects   | Consolidate assignments, defer lowest priority project          |
+| Market risk              | Customer validation below 50%               | Kill or pivot immediately, do not proceed to development        |
+| Technical debt           | More than 30% of development time on rework | Architecture review, consider project pause                     |
+| Stakeholder misalignment | No executive sponsor attending reviews      | Escalate or pause project                                       |
 
 **PROCESS IMPROVEMENTS**
 
 Immediate (This Month):
+
 1. Implement weekly pipeline review with standardized agenda (30 minutes)
 2. Assign dedicated product owner to each active project
 3. Create simple project tracking dashboard (Google Sheet acceptable initially)
 4. Define and communicate stage-gate criteria to all stakeholders
 
 Next Quarter:
+
 1. Train team on stage-gate process and decision criteria
 2. Implement customer validation protocols for all concept-stage projects
 3. Establish gate review committee (Product VP, Engineering VP, 1 customer-facing leader)

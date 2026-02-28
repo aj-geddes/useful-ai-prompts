@@ -110,9 +110,11 @@ description: "259 specialized skills for Claude Code across 20 categories. Focus
             <h2>Create Your Own Skills</h2>
             <p>Have a specialized workflow? Create custom skills for your team following the <a href="https://docs.anthropic.com/en/docs/claude-code/skills" target="_blank">Claude Code Skills specification</a>.</p>
             <pre><code>.claude/skills/your-skill-name/
-└── SKILL.md  # YAML frontmatter + instructions</code></pre>
-        </div>
-    </div>
+
+└── SKILL.md # YAML frontmatter + instructions</code></pre>
+</div>
+</div>
+
 </div>
 
 <style>

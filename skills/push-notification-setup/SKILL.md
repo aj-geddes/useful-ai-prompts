@@ -22,20 +22,20 @@ Implement comprehensive push notification systems for iOS and Android applicatio
 ### 1. **Firebase Cloud Messaging Setup**
 
 ```javascript
-import messaging from '@react-native-firebase/messaging';
-import { Platform } from 'react-native';
+import messaging from "@react-native-firebase/messaging";
+import { Platform } from "react-native";
 
 export async function initializeFirebase() {
   try {
-    if (Platform.OS === 'ios') {
+    if (Platform.OS === "ios") {
       const permission = await messaging().requestPermission();
       if (permission === messaging.AuthorizationStatus.AUTHORIZED) {
-        console.log('iOS notification permission granted');
+        console.log("iOS notification permission granted");
       }
     }
 
     const token = await messaging().getToken();
-    console.log('FCM Token:', token);
+    console.log("FCM Token:", token);
     await saveTokenToBackend(token);
 
     messaging().onTokenRefresh(async (newToken) => {
@@ -43,12 +43,12 @@ export async function initializeFirebase() {
     });
 
     messaging().onMessage(async (remoteMessage) => {
-      console.log('Notification received:', remoteMessage);
+      console.log("Notification received:", remoteMessage);
       showLocalNotification(remoteMessage);
     });
 
     messaging().setBackgroundMessageHandler(async (remoteMessage) => {
-      if (remoteMessage.data?.type === 'sync') {
+      if (remoteMessage.data?.type === "sync") {
         syncData();
       }
     });
@@ -65,33 +65,33 @@ export async function initializeFirebase() {
       handleNotificationOpen(remoteMessage);
     });
   } catch (error) {
-    console.error('Firebase initialization failed:', error);
+    console.error("Firebase initialization failed:", error);
   }
 }
 
 export async function saveTokenToBackend(token) {
   try {
-    const response = await fetch('https://api.example.com/device-tokens', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const response = await fetch("https://api.example.com/device-tokens", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         token,
         platform: Platform.OS,
-        timestamp: new Date().toISOString()
-      })
+        timestamp: new Date().toISOString(),
+      }),
     });
     if (!response.ok) {
-      console.error('Failed to save token');
+      console.error("Failed to save token");
     }
   } catch (error) {
-    console.error('Error saving token:', error);
+    console.error("Error saving token:", error);
   }
 }
 
 function handleNotificationOpen(remoteMessage) {
   const { data } = remoteMessage;
   if (data?.deepLink) {
-    navigationRef.navigate(data.deepLink, JSON.parse(data.params || '{}'));
+    navigationRef.navigate(data.deepLink, JSON.parse(data.params || "{}"));
   }
 }
 ```
@@ -334,6 +334,7 @@ class NotificationHandler {
 ## Best Practices
 
 ### ✅ DO
+
 - Request permission before sending notifications
 - Implement token refresh handling
 - Use different notification channels by priority
@@ -347,6 +348,7 @@ class NotificationHandler {
 - Test on real devices
 
 ### ❌ DON'T
+
 - Send excessive notifications
 - Send without permission
 - Store tokens insecurely

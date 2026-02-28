@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Generate code from templates and patterns including scaffolding, boilerplate
+date: "2025-01-01"
+description:
+  Generate code from templates and patterns including scaffolding, boilerplate
   generation, AST-based code generation, and template engines. Use when generating
   code, scaffolding projects, creating boilerplate, or using templates.
 layout: skill
 slug: code-generation-template
 tags:
-- development
+  - development
 title: code-generation-template
 ---
 
@@ -33,6 +34,7 @@ Comprehensive guide to code generation techniques including template engines, AS
 ### 1. **Template Engines**
 
 #### Handlebars Templates
+
 ```typescript
 // templates/component.hbs
 import React from 'react';
@@ -56,37 +58,39 @@ export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({
 
 ```typescript
 // generator.ts
-import Handlebars from 'handlebars';
-import fs from 'fs';
+import Handlebars from "handlebars";
+import fs from "fs";
 
 // Register helpers
-Handlebars.registerHelper('pascalCase', (str: string) =>
-  str.replace(/(\w)(\w*)/g, (_, first, rest) =>
-    first.toUpperCase() + rest.toLowerCase()
-  )
+Handlebars.registerHelper("pascalCase", (str: string) =>
+  str.replace(
+    /(\w)(\w*)/g,
+    (_, first, rest) => first.toUpperCase() + rest.toLowerCase(),
+  ),
 );
 
-Handlebars.registerHelper('kebabCase', (str: string) =>
-  str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
+Handlebars.registerHelper("kebabCase", (str: string) =>
+  str.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase(),
 );
 
 // Load template
-const templateSource = fs.readFileSync('templates/component.hbs', 'utf8');
+const templateSource = fs.readFileSync("templates/component.hbs", "utf8");
 const template = Handlebars.compile(templateSource);
 
 // Generate code
 const code = template({
-  name: 'userProfile',
+  name: "userProfile",
   props: [
-    { name: 'userId', type: 'string', optional: false },
-    { name: 'onUpdate', type: '() => void', optional: true }
-  ]
+    { name: "userId", type: "string", optional: false },
+    { name: "onUpdate", type: "() => void", optional: true },
+  ],
 });
 
-fs.writeFileSync('src/components/UserProfile.tsx', code);
+fs.writeFileSync("src/components/UserProfile.tsx", code);
 ```
 
 #### EJS Templates
+
 ```typescript
 // templates/api-endpoint.ejs
 import { Router } from 'express';
@@ -133,32 +137,42 @@ export default router;
 
 ```typescript
 // Using EJS
-import ejs from 'ejs';
+import ejs from "ejs";
 
-const code = await ejs.renderFile('templates/api-endpoint.ejs', {
-  modelName: 'User',
-  kebabCase: (str: string) => str.replace(/([A-Z])/g, '-$1').toLowerCase().slice(1),
-  pluralize: (str: string) => str + 's'
+const code = await ejs.renderFile("templates/api-endpoint.ejs", {
+  modelName: "User",
+  kebabCase: (str: string) =>
+    str
+      .replace(/([A-Z])/g, "-$1")
+      .toLowerCase()
+      .slice(1),
+  pluralize: (str: string) => str + "s",
 });
 ```
 
 ### 2. **AST-Based Code Generation**
 
 #### Using Babel/TypeScript AST
+
 ```typescript
 // ast-generator.ts
-import * as ts from 'typescript';
+import * as ts from "typescript";
 
 export class TypeScriptGenerator {
   // Generate interface
-  generateInterface(name: string, properties: Array<{ name: string; type: string; optional?: boolean }>) {
-    const members = properties.map(prop =>
+  generateInterface(
+    name: string,
+    properties: Array<{ name: string; type: string; optional?: boolean }>,
+  ) {
+    const members = properties.map((prop) =>
       ts.factory.createPropertySignature(
         undefined,
         ts.factory.createIdentifier(prop.name),
-        prop.optional ? ts.factory.createToken(ts.SyntaxKind.QuestionToken) : undefined,
-        ts.factory.createTypeReferenceNode(prop.type)
-      )
+        prop.optional
+          ? ts.factory.createToken(ts.SyntaxKind.QuestionToken)
+          : undefined,
+        ts.factory.createTypeReferenceNode(prop.type),
+      ),
     );
 
     const interfaceDecl = ts.factory.createInterfaceDeclaration(
@@ -166,50 +180,53 @@ export class TypeScriptGenerator {
       ts.factory.createIdentifier(name),
       undefined,
       undefined,
-      members
+      members,
     );
 
     return this.printNode(interfaceDecl);
   }
 
   // Generate class
-  generateClass(name: string, properties: Array<{ name: string; type: string }>) {
-    const propertyDecls = properties.map(prop =>
+  generateClass(
+    name: string,
+    properties: Array<{ name: string; type: string }>,
+  ) {
+    const propertyDecls = properties.map((prop) =>
       ts.factory.createPropertyDeclaration(
         [ts.factory.createToken(ts.SyntaxKind.PrivateKeyword)],
         ts.factory.createIdentifier(prop.name),
         undefined,
         ts.factory.createTypeReferenceNode(prop.type),
-        undefined
-      )
+        undefined,
+      ),
     );
 
     const constructor = ts.factory.createConstructorDeclaration(
       undefined,
-      properties.map(prop =>
+      properties.map((prop) =>
         ts.factory.createParameterDeclaration(
           undefined,
           undefined,
           ts.factory.createIdentifier(prop.name),
           undefined,
-          ts.factory.createTypeReferenceNode(prop.type)
-        )
+          ts.factory.createTypeReferenceNode(prop.type),
+        ),
       ),
       ts.factory.createBlock(
-        properties.map(prop =>
+        properties.map((prop) =>
           ts.factory.createExpressionStatement(
             ts.factory.createBinaryExpression(
               ts.factory.createPropertyAccessExpression(
                 ts.factory.createThis(),
-                prop.name
+                prop.name,
               ),
               ts.SyntaxKind.EqualsToken,
-              ts.factory.createIdentifier(prop.name)
-            )
-          )
+              ts.factory.createIdentifier(prop.name),
+            ),
+          ),
         ),
-        true
-      )
+        true,
+      ),
     );
 
     const classDecl = ts.factory.createClassDeclaration(
@@ -217,7 +234,7 @@ export class TypeScriptGenerator {
       ts.factory.createIdentifier(name),
       undefined,
       undefined,
-      [...propertyDecls, constructor]
+      [...propertyDecls, constructor],
     );
 
     return this.printNode(classDecl);
@@ -225,11 +242,11 @@ export class TypeScriptGenerator {
 
   private printNode(node: ts.Node): string {
     const sourceFile = ts.createSourceFile(
-      'temp.ts',
-      '',
+      "temp.ts",
+      "",
       ts.ScriptTarget.Latest,
       false,
-      ts.ScriptKind.TS
+      ts.ScriptKind.TS,
     );
 
     const printer = ts.createPrinter({ newLine: ts.NewLineKind.LineFeed });
@@ -240,21 +257,22 @@ export class TypeScriptGenerator {
 // Usage
 const generator = new TypeScriptGenerator();
 
-const interfaceCode = generator.generateInterface('User', [
-  { name: 'id', type: 'string' },
-  { name: 'email', type: 'string' },
-  { name: 'name', type: 'string', optional: true }
+const interfaceCode = generator.generateInterface("User", [
+  { name: "id", type: "string" },
+  { name: "email", type: "string" },
+  { name: "name", type: "string", optional: true },
 ]);
 
-const classCode = generator.generateClass('UserService', [
-  { name: 'repository', type: 'UserRepository' },
-  { name: 'logger', type: 'Logger' }
+const classCode = generator.generateClass("UserService", [
+  { name: "repository", type: "UserRepository" },
+  { name: "logger", type: "Logger" },
 ]);
 ```
 
 ### 3. **Project Scaffolding**
 
 #### Simple CLI Generator
+
 ```typescript
 // cli/generate.ts
 #!/usr/bin/env node
@@ -450,8 +468,8 @@ export default router;
 
 ```typescript
 // openapi-client-generator.ts
-import SwaggerParser from '@apidevtools/swagger-parser';
-import { compile } from 'json-schema-to-typescript';
+import SwaggerParser from "@apidevtools/swagger-parser";
+import { compile } from "json-schema-to-typescript";
 
 export class OpenAPIClientGenerator {
   async generate(specPath: string, outputDir: string) {
@@ -461,23 +479,20 @@ export class OpenAPIClientGenerator {
     if (api.components?.schemas) {
       for (const [name, schema] of Object.entries(api.components.schemas)) {
         const ts = await compile(schema as any, name, {
-          bannerComment: ''
+          bannerComment: "",
         });
-        await fs.writeFile(
-          path.join(outputDir, 'types', `${name}.ts`),
-          ts
-        );
+        await fs.writeFile(path.join(outputDir, "types", `${name}.ts`), ts);
       }
     }
 
     // Generate API client methods
     for (const [path, pathItem] of Object.entries(api.paths)) {
       for (const [method, operation] of Object.entries(pathItem)) {
-        if (['get', 'post', 'put', 'delete', 'patch'].includes(method)) {
+        if (["get", "post", "put", "delete", "patch"].includes(method)) {
           const clientMethod = this.generateClientMethod(
             method,
             path,
-            operation as any
+            operation as any,
           );
           // Write to file...
         }
@@ -488,9 +503,10 @@ export class OpenAPIClientGenerator {
   private generateClientMethod(
     method: string,
     path: string,
-    operation: any
+    operation: any,
   ): string {
-    const functionName = operation.operationId || this.pathToFunctionName(method, path);
+    const functionName =
+      operation.operationId || this.pathToFunctionName(method, path);
     const parameters = operation.parameters || [];
 
     return `
@@ -505,31 +521,37 @@ async ${functionName}(${this.generateParameters(parameters)}): Promise<${this.ge
 
   private generateParameters(parameters: any[]): string {
     return parameters
-      .map(p => `${p.name}${p.required ? '' : '?'}: ${this.schemaToType(p.schema)}`)
-      .join(', ');
+      .map(
+        (p) =>
+          `${p.name}${p.required ? "" : "?"}: ${this.schemaToType(p.schema)}`,
+      )
+      .join(", ");
   }
 
   private getResponseType(operation: any): string {
-    const successResponse = operation.responses['200'] || operation.responses['201'];
-    if (!successResponse) return 'any';
+    const successResponse =
+      operation.responses["200"] || operation.responses["201"];
+    if (!successResponse) return "any";
 
-    const schema = successResponse.content?.['application/json']?.schema;
-    return schema ? this.schemaToType(schema) : 'any';
+    const schema = successResponse.content?.["application/json"]?.schema;
+    return schema ? this.schemaToType(schema) : "any";
   }
 
   private schemaToType(schema: any): string {
     if (schema.$ref) {
-      return schema.$ref.split('/').pop();
+      return schema.$ref.split("/").pop();
     }
-    if (schema.type === 'string') return 'string';
-    if (schema.type === 'number' || schema.type === 'integer') return 'number';
-    if (schema.type === 'boolean') return 'boolean';
-    if (schema.type === 'array') return `${this.schemaToType(schema.items)}[]`;
-    return 'any';
+    if (schema.type === "string") return "string";
+    if (schema.type === "number" || schema.type === "integer") return "number";
+    if (schema.type === "boolean") return "boolean";
+    if (schema.type === "array") return `${this.schemaToType(schema.items)}[]`;
+    return "any";
   }
 
   private pathToFunctionName(method: string, path: string): string {
-    const cleanPath = path.replace(/\{.*?\}/g, 'By').replace(/[^a-zA-Z0-9]/g, '');
+    const cleanPath = path
+      .replace(/\{.*?\}/g, "By")
+      .replace(/[^a-zA-Z0-9]/g, "");
     return `${method}${cleanPath}`;
   }
 }
@@ -542,7 +564,7 @@ async ${functionName}(${this.generateParameters(parameters)}): Promise<${this.ge
 export class PrismaSchemaGenerator {
   generateModel(table: DatabaseTable): string {
     return `model ${pascalCase(table.name)} {
-${table.columns.map(col => this.generateField(col)).join('\n')}
+${table.columns.map((col) => this.generateField(col)).join("\n")}
 
 ${this.generateRelations(table.relations)}
 ${this.generateIndexes(table.indexes)}
@@ -551,36 +573,38 @@ ${this.generateIndexes(table.indexes)}
   }
 
   private generateField(column: Column): string {
-    const optional = !column.required ? '?' : '';
-    const unique = column.unique ? ' @unique' : '';
-    const defaultValue = column.default ? ` @default(${column.default})` : '';
+    const optional = !column.required ? "?" : "";
+    const unique = column.unique ? " @unique" : "";
+    const defaultValue = column.default ? ` @default(${column.default})` : "";
 
     return `  ${column.name} ${this.mapType(column.type)}${optional}${unique}${defaultValue}`;
   }
 
   private mapType(sqlType: string): string {
     const typeMap: Record<string, string> = {
-      'varchar': 'String',
-      'text': 'String',
-      'integer': 'Int',
-      'bigint': 'BigInt',
-      'boolean': 'Boolean',
-      'timestamp': 'DateTime',
-      'date': 'DateTime',
-      'json': 'Json'
+      varchar: "String",
+      text: "String",
+      integer: "Int",
+      bigint: "BigInt",
+      boolean: "Boolean",
+      timestamp: "DateTime",
+      date: "DateTime",
+      json: "Json",
     };
-    return typeMap[sqlType.toLowerCase()] || 'String';
+    return typeMap[sqlType.toLowerCase()] || "String";
   }
 
   private generateRelations(relations: Relation[]): string {
-    return relations.map(rel => {
-      if (rel.type === 'hasMany') {
-        return `  ${rel.name} ${rel.model}[]`;
-      } else if (rel.type === 'belongsTo') {
-        return `  ${rel.name} ${rel.model} @relation(fields: [${rel.foreignKey}], references: [id])`;
-      }
-      return '';
-    }).join('\n');
+    return relations
+      .map((rel) => {
+        if (rel.type === "hasMany") {
+          return `  ${rel.name} ${rel.model}[]`;
+        } else if (rel.type === "belongsTo") {
+          return `  ${rel.name} ${rel.model} @relation(fields: [${rel.foreignKey}], references: [id])`;
+        }
+        return "";
+      })
+      .join("\n");
   }
 }
 ```
@@ -589,28 +613,28 @@ ${this.generateIndexes(table.indexes)}
 
 ```typescript
 // graphql-codegen.config.ts
-import type { CodegenConfig } from '@graphql-codegen/cli';
+import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: 'http://localhost:4000/graphql',
-  documents: ['src/**/*.tsx', 'src/**/*.ts'],
+  schema: "http://localhost:4000/graphql",
+  documents: ["src/**/*.tsx", "src/**/*.ts"],
   generates: {
-    './src/generated/graphql.ts': {
+    "./src/generated/graphql.ts": {
       plugins: [
-        'typescript',
-        'typescript-operations',
-        'typescript-react-apollo'
+        "typescript",
+        "typescript-operations",
+        "typescript-react-apollo",
       ],
       config: {
         withHooks: true,
         withComponent: false,
-        withHOC: false
-      }
+        withHOC: false,
+      },
     },
-    './src/generated/introspection.json': {
-      plugins: ['introspection']
-    }
-  }
+    "./src/generated/introspection.json": {
+      plugins: ["introspection"],
+    },
+  },
 };
 
 export default config;
@@ -620,76 +644,77 @@ export default config;
 
 ```typescript
 // plopfile.ts
-import { NodePlopAPI } from 'plop';
+import { NodePlopAPI } from "plop";
 
 export default function (plop: NodePlopAPI) {
   // Component generator
-  plop.setGenerator('component', {
-    description: 'React component',
+  plop.setGenerator("component", {
+    description: "React component",
     prompts: [
       {
-        type: 'input',
-        name: 'name',
-        message: 'Component name:'
+        type: "input",
+        name: "name",
+        message: "Component name:",
       },
       {
-        type: 'list',
-        name: 'type',
-        message: 'Component type:',
-        choices: ['functional', 'class']
-      }
+        type: "list",
+        name: "type",
+        message: "Component type:",
+        choices: ["functional", "class"],
+      },
     ],
     actions: [
       {
-        type: 'add',
-        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.tsx',
-        templateFile: 'templates/component.hbs'
+        type: "add",
+        path: "src/components/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        templateFile: "templates/component.hbs",
       },
       {
-        type: 'add',
-        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-        templateFile: 'templates/component.test.hbs'
+        type: "add",
+        path: "src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
+        templateFile: "templates/component.test.hbs",
       },
       {
-        type: 'add',
-        path: 'src/components/{{pascalCase name}}/index.ts',
-        template: "export { {{pascalCase name}} } from './{{pascalCase name}}';\n"
-      }
-    ]
+        type: "add",
+        path: "src/components/{{pascalCase name}}/index.ts",
+        template:
+          "export { {{pascalCase name}} } from './{{pascalCase name}}';\n",
+      },
+    ],
   });
 
   // API generator
-  plop.setGenerator('api', {
-    description: 'API endpoint with full stack',
+  plop.setGenerator("api", {
+    description: "API endpoint with full stack",
     prompts: [
       {
-        type: 'input',
-        name: 'name',
-        message: 'Resource name (e.g., user, post):'
-      }
+        type: "input",
+        name: "name",
+        message: "Resource name (e.g., user, post):",
+      },
     ],
     actions: [
       {
-        type: 'add',
-        path: 'src/models/{{kebabCase name}}.model.ts',
-        templateFile: 'templates/model.hbs'
+        type: "add",
+        path: "src/models/{{kebabCase name}}.model.ts",
+        templateFile: "templates/model.hbs",
       },
       {
-        type: 'add',
-        path: 'src/services/{{kebabCase name}}.service.ts',
-        templateFile: 'templates/service.hbs'
+        type: "add",
+        path: "src/services/{{kebabCase name}}.service.ts",
+        templateFile: "templates/service.hbs",
       },
       {
-        type: 'add',
-        path: 'src/controllers/{{kebabCase name}}.controller.ts',
-        templateFile: 'templates/controller.hbs'
+        type: "add",
+        path: "src/controllers/{{kebabCase name}}.controller.ts",
+        templateFile: "templates/controller.hbs",
       },
       {
-        type: 'add',
-        path: 'src/routes/{{kebabCase name}}.routes.ts',
-        templateFile: 'templates/routes.hbs'
-      }
-    ]
+        type: "add",
+        path: "src/routes/{{kebabCase name}}.routes.ts",
+        templateFile: "templates/routes.hbs",
+      },
+    ],
   });
 }
 ```
@@ -697,6 +722,7 @@ export default function (plop: NodePlopAPI) {
 ## Best Practices
 
 ### ✅ DO
+
 - Use templates for repetitive code patterns
 - Generate TypeScript types from schemas
 - Include tests in generated code
@@ -711,6 +737,7 @@ export default function (plop: NodePlopAPI) {
 - Provide CLI for easy generation
 
 ### ❌ DON'T
+
 - Over-generate (avoid unnecessary complexity)
 - Generate code that's hard to maintain
 - Forget to validate generated code
@@ -725,6 +752,7 @@ export default function (plop: NodePlopAPI) {
 ## Common Patterns
 
 ### Pattern 1: CRUD Generator
+
 ```typescript
 export function generateCRUD(entityName: string) {
   return {
@@ -732,26 +760,28 @@ export function generateCRUD(entityName: string) {
     service: generateService(entityName),
     controller: generateController(entityName),
     routes: generateRoutes(entityName),
-    tests: generateTests(entityName)
+    tests: generateTests(entityName),
   };
 }
 ```
 
 ### Pattern 2: Migration Generator
+
 ```typescript
 export function generateMigration(name: string, changes: SchemaChange[]) {
   return {
     up: generateUpMigration(changes),
-    down: generateDownMigration(changes)
+    down: generateDownMigration(changes),
   };
 }
 ```
 
 ### Pattern 3: Factory Generator
+
 ```typescript
 export function generateFactory(model: Model) {
   return `export const create${model.name} = (overrides?: Partial<${model.name}>): ${model.name} => ({
-  ${model.fields.map(f => `${f.name}: ${getDefaultValue(f)}`).join(',\n  ')},
+  ${model.fields.map((f) => `${f.name}: ${getDefaultValue(f)}`).join(",\n  ")},
   ...overrides
 });`;
 }

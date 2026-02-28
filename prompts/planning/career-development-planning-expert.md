@@ -1,6 +1,7 @@
 # Career Development Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-career-development`
 - **Version**: 1.1.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A career planning specialist that helps you create comprehensive roadmaps for pr
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning career advancement to senior or executive roles
 - Navigating career transitions between fields or industries
 - Building skills and experience for target positions
@@ -25,6 +27,7 @@ A career planning specialist that helps you create comprehensive roadmaps for pr
 - Recovering from career setbacks or pivoting direction
 
 **Anti-Patterns (Don't Use For):**
+
 - Resume writing and formatting
 - Job interview preparation and practice
 - Salary negotiation tactics and scripts
@@ -121,20 +124,22 @@ Create a personalized career development plan following these steps:
 ## Example Usage
 
 ### Input
+
 Current: Product Manager, 3 years (2 years at current company). Industry: B2B SaaS, marketing technology. Skills: Product strategy, data analysis, technical background (CS degree, MBA). Company: Mid-size Series C startup, 500 employees. Goal: VP of Product or Chief Product Officer in 5 years. Development needs: Executive presence, P&L management, team scaling, strategic thinking. Learning style: Mix of mentoring, hands-on experience, some formal education. Time available: 5-7 hours weekly.
 
 ### Output
 
 **Current Assessment**
 
-| Dimension | Strengths | Gaps |
-|-----------|-----------|------|
-| Technical | CS background, data analysis, technical credibility | Architecture at scale |
-| Business | MBA, product strategy, market understanding | P&L ownership, board exposure |
-| Leadership | Cross-functional influence | Direct team management, executive presence |
-| Visibility | Strong internal reputation | External thought leadership, industry network |
+| Dimension  | Strengths                                           | Gaps                                          |
+| ---------- | --------------------------------------------------- | --------------------------------------------- |
+| Technical  | CS background, data analysis, technical credibility | Architecture at scale                         |
+| Business   | MBA, product strategy, market understanding         | P&L ownership, board exposure                 |
+| Leadership | Cross-functional influence                          | Direct team management, executive presence    |
+| Visibility | Strong internal reputation                          | External thought leadership, industry network |
 
 **Gap Priority for CPO Track:**
+
 1. Leadership experience (currently IC, need team management)
 2. P&L ownership (need revenue accountability)
 3. Executive presence (need C-suite communication skills)
@@ -144,28 +149,29 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 
 **5-Year Career Roadmap**
 
-| Year | Target Role | Key Milestones | Evidence of Success |
-|------|-------------|----------------|---------------------|
-| 1-2 | Senior Product Manager | Lead multiple product lines, manage 2-3 associate PMs, own $5-10M revenue target | Team hired and productive, revenue targets met, cross-functional leadership |
-| 2-3 | Director of Product | Lead product team of 5-8, P&L responsibility $20M+, present to board | Budget ownership, executive presence, team retention |
-| 3-4 | VP of Product | Lead entire product org (10-15 people), partner with C-suite on strategy | Department outcomes, strategic influence, external recognition |
-| 4-5 | Chief Product Officer | Executive team member, company strategy influence, board interaction | Company-level impact, industry visibility |
+| Year | Target Role            | Key Milestones                                                                   | Evidence of Success                                                         |
+| ---- | ---------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1-2  | Senior Product Manager | Lead multiple product lines, manage 2-3 associate PMs, own $5-10M revenue target | Team hired and productive, revenue targets met, cross-functional leadership |
+| 2-3  | Director of Product    | Lead product team of 5-8, P&L responsibility $20M+, present to board             | Budget ownership, executive presence, team retention                        |
+| 3-4  | VP of Product          | Lead entire product org (10-15 people), partner with C-suite on strategy         | Department outcomes, strategic influence, external recognition              |
+| 4-5  | Chief Product Officer  | Executive team member, company strategy influence, board interaction             | Company-level impact, industry visibility                                   |
 
-*Note:* Progression may happen faster at high-growth startups or with a company change.
+_Note:_ Progression may happen faster at high-growth startups or with a company change.
 
 ---
 
 **Skill Development Plan**
 
-| Skill Area | Development Path | Timeline | Time Investment |
-|------------|------------------|----------|-----------------|
-| **Executive Presence** | Executive coaching (6 months), seek board presentation opportunities, Toastmasters or similar | Months 1-12 | 2 hrs/week |
-| **P&L Management** | Financial modeling course, volunteer for revenue-tied projects, shadow CFO quarterly | Months 3-18 | 1 hr/week |
-| **Team Leadership** | Push for direct reports, stretch project leadership, management training | Months 6-24 | Embedded in role |
-| **Strategic Thinking** | Strategy frameworks course, lead planning sessions, annual industry analysis | Ongoing | 1 hr/week |
-| **Thought Leadership** | Publish quarterly articles, 3 speaking engagements/year, podcast guest appearances | Ongoing | 2 hrs/week |
+| Skill Area             | Development Path                                                                              | Timeline    | Time Investment  |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ----------- | ---------------- |
+| **Executive Presence** | Executive coaching (6 months), seek board presentation opportunities, Toastmasters or similar | Months 1-12 | 2 hrs/week       |
+| **P&L Management**     | Financial modeling course, volunteer for revenue-tied projects, shadow CFO quarterly          | Months 3-18 | 1 hr/week        |
+| **Team Leadership**    | Push for direct reports, stretch project leadership, management training                      | Months 6-24 | Embedded in role |
+| **Strategic Thinking** | Strategy frameworks course, lead planning sessions, annual industry analysis                  | Ongoing     | 1 hr/week        |
+| **Thought Leadership** | Publish quarterly articles, 3 speaking engagements/year, podcast guest appearances            | Ongoing     | 2 hrs/week       |
 
 **Recommended Resources:**
+
 - Executive presence: "Executive Presence" by Sylvia Ann Hewlett, coaching investment $200-500/month
 - P&L: "Financial Intelligence" by Karen Berman, CFI courses online
 - Leadership: Manager training through company, "High Output Management" by Andy Grove
@@ -176,6 +182,7 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 **Networking and Visibility Strategy**
 
 **Internal Relationships (build first 6 months):**
+
 - CEO: Quarterly coffee, understand company vision
 - CFO: Monthly check-in, learn financial perspective
 - VP Engineering: Weekly partnership, build technical credibility
@@ -183,14 +190,15 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 
 **External Network Building:**
 
-| Frequency | Activity | Goal |
-|-----------|----------|------|
-| Monthly | 2 coffee chats with senior product leaders | Build peer network, learn from experience |
-| Quarterly | 1 industry conference or event | Visibility and trend awareness |
-| Quarterly | 1 speaking engagement (start with webinars) | Build thought leadership |
-| Annual | 1 advisory role (startup or nonprofit) | Expand experience, board exposure |
+| Frequency | Activity                                    | Goal                                      |
+| --------- | ------------------------------------------- | ----------------------------------------- |
+| Monthly   | 2 coffee chats with senior product leaders  | Build peer network, learn from experience |
+| Quarterly | 1 industry conference or event              | Visibility and trend awareness            |
+| Quarterly | 1 speaking engagement (start with webinars) | Build thought leadership                  |
+| Annual    | 1 advisory role (startup or nonprofit)      | Expand experience, board exposure         |
 
 **Thought Leadership Platform:**
+
 - LinkedIn: Weekly posts on product strategy (start month 1)
 - Medium/Substack: Monthly articles on martech product challenges
 - Podcast: Guest on 2-3 product podcasts per year
@@ -201,18 +209,21 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 **90-Day Action Plan**
 
 **Week 1-2: Foundation**
+
 - [ ] Schedule coffee with current CPO (learn their path, seek mentorship)
 - [ ] Meet with manager to discuss leadership development goals
 - [ ] Audit current responsibilities for stretch opportunities
 - [ ] Identify 5 senior product leaders to connect with on LinkedIn
 
 **Week 3-4: Visibility Kickoff**
+
 - [ ] Volunteer for one strategic project requiring cross-functional leadership
 - [ ] Find CPO mentor (inside or outside company)
 - [ ] Write first LinkedIn article on product strategy topic
 - [ ] Research executive coaching options
 
 **Month 2: Skill Building**
+
 - [ ] Complete leadership self-assessment
 - [ ] Propose scope expansion to manager (add junior PM or project)
 - [ ] Start financial modeling course
@@ -220,6 +231,7 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 - [ ] Present to executive team on product initiative
 
 **Month 3: Acceleration**
+
 - [ ] Launch first team initiative (if managing)
 - [ ] Begin executive coaching (if pursuing)
 - [ ] Complete first external speaking engagement
@@ -230,17 +242,18 @@ Current: Product Manager, 3 years (2 years at current company). Industry: B2B Sa
 
 **Success Metrics**
 
-| Timeframe | Milestone | Measurement |
-|-----------|-----------|-------------|
-| 6 months | Managing at least 1 direct report | Responsibility expanded |
-| 12 months | Owning revenue metric | P&L component added |
-| 18 months | Promoted to Senior PM or Director | Title change |
-| 24 months | External visibility established | 3+ speaking/writing credits |
-| 36 months | Director-level with full team | 5+ direct reports |
+| Timeframe | Milestone                         | Measurement                 |
+| --------- | --------------------------------- | --------------------------- |
+| 6 months  | Managing at least 1 direct report | Responsibility expanded     |
+| 12 months | Owning revenue metric             | P&L component added         |
+| 18 months | Promoted to Senior PM or Director | Title change                |
+| 24 months | External visibility established   | 3+ speaking/writing credits |
+| 36 months | Director-level with full team     | 5+ direct reports           |
 
 ---
 
 ## Related Prompts
+
 - [Goal Achievement Architect](../personal-productivity/goal-achievement-architect.md) - For goal execution
 - [Strategic Planning Expert](strategic-planning-expert.md) - For strategic thinking development
 - [Professional Networking Strategist](../career-development/professional-networking-strategist.md) - For networking tactics

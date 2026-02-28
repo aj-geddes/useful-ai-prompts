@@ -27,26 +27,36 @@ Use automated tools to analyze code without executing it, catching bugs, securit
 // .eslintrc.js
 module.exports = {
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:security/recommended'
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:security/recommended",
   ],
-  plugins: ['@typescript-eslint', 'security', 'import'],
+  plugins: ["@typescript-eslint", "security", "import"],
   rules: {
-    'no-console': ['warn', { allow: ['error', 'warn'] }],
-    'no-unused-vars': 'error',
-    'prefer-const': 'error',
-    'eqeqeq': ['error', 'always'],
-    'no-eval': 'error',
-    'security/detect-object-injection': 'warn',
-    'security/detect-non-literal-regexp': 'warn',
-    '@typescript-eslint/no-explicit-any': 'warn',
-    '@typescript-eslint/explicit-function-return-type': 'error',
-    'import/order': ['error', {
-      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'always'
-    }]
-  }
+    "no-console": ["warn", { allow: ["error", "warn"] }],
+    "no-unused-vars": "error",
+    "prefer-const": "error",
+    eqeqeq: ["error", "always"],
+    "no-eval": "error",
+    "security/detect-object-injection": "warn",
+    "security/detect-non-literal-regexp": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "always",
+      },
+    ],
+  },
 };
 ```
 
@@ -189,15 +199,15 @@ jobs:
 ### 5. **Custom AST Analysis**
 
 ```typescript
-import * as ts from 'typescript';
-import * as fs from 'fs';
+import * as ts from "typescript";
+import * as fs from "fs";
 
 interface Issue {
   file: string;
   line: number;
   column: number;
   message: string;
-  severity: 'error' | 'warning' | 'info';
+  severity: "error" | "warning" | "info";
   rule: string;
 }
 
@@ -207,12 +217,12 @@ class CustomLinter {
   lintFile(filePath: string): Issue[] {
     this.issues = [];
 
-    const sourceCode = fs.readFileSync(filePath, 'utf-8');
+    const sourceCode = fs.readFileSync(filePath, "utf-8");
     const sourceFile = ts.createSourceFile(
       filePath,
       sourceCode,
       ts.ScriptTarget.Latest,
-      true
+      true,
     );
 
     this.visit(sourceFile, filePath);
@@ -225,94 +235,94 @@ class CustomLinter {
     if (
       ts.isCallExpression(node) &&
       ts.isPropertyAccessExpression(node.expression) &&
-      node.expression.expression.getText() === 'console' &&
-      node.expression.name.getText() === 'log'
+      node.expression.expression.getText() === "console" &&
+      node.expression.name.getText() === "log"
     ) {
       const { line, character } = ts.getLineAndCharacterOfPosition(
         node.getSourceFile(),
-        node.getStart()
+        node.getStart(),
       );
 
       this.issues.push({
         file: filePath,
         line: line + 1,
         column: character + 1,
-        message: 'Unexpected console.log statement',
-        severity: 'warning',
-        rule: 'no-console'
+        message: "Unexpected console.log statement",
+        severity: "warning",
+        rule: "no-console",
       });
     }
 
     // Check for any type
-    if (
-      ts.isTypeReferenceNode(node) &&
-      node.typeName.getText() === 'any'
-    ) {
+    if (ts.isTypeReferenceNode(node) && node.typeName.getText() === "any") {
       const { line, character } = ts.getLineAndCharacterOfPosition(
         node.getSourceFile(),
-        node.getStart()
+        node.getStart(),
       );
 
       this.issues.push({
         file: filePath,
         line: line + 1,
         column: character + 1,
-        message: 'Avoid using any type',
-        severity: 'warning',
-        rule: 'no-any'
+        message: "Avoid using any type",
+        severity: "warning",
+        rule: "no-any",
       });
     }
 
     // Check for long functions
     if (ts.isFunctionDeclaration(node) || ts.isMethodDeclaration(node)) {
       const body = node.body;
-      if (body && body.getFullText().split('\n').length > 50) {
+      if (body && body.getFullText().split("\n").length > 50) {
         const { line, character } = ts.getLineAndCharacterOfPosition(
           node.getSourceFile(),
-          node.getStart()
+          node.getStart(),
         );
 
         this.issues.push({
           file: filePath,
           line: line + 1,
           column: character + 1,
-          message: 'Function is too long (>50 lines)',
-          severity: 'warning',
-          rule: 'max-lines-per-function'
+          message: "Function is too long (>50 lines)",
+          severity: "warning",
+          rule: "max-lines-per-function",
         });
       }
     }
 
-    ts.forEachChild(node, child => this.visit(child, filePath));
+    ts.forEachChild(node, (child) => this.visit(child, filePath));
   }
 
   formatIssues(issues: Issue[]): string {
     if (issues.length === 0) {
-      return 'No issues found.';
+      return "No issues found.";
     }
 
-    return issues.map(issue =>
-      `${issue.file}:${issue.line}:${issue.column} - ${issue.severity}: ${issue.message} (${issue.rule})`
-    ).join('\n');
+    return issues
+      .map(
+        (issue) =>
+          `${issue.file}:${issue.line}:${issue.column} - ${issue.severity}: ${issue.message} (${issue.rule})`,
+      )
+      .join("\n");
   }
 }
 
 // Usage
 const linter = new CustomLinter();
-const issues = linter.lintFile('./src/example.ts');
+const issues = linter.lintFile("./src/example.ts");
 console.log(linter.formatIssues(issues));
 ```
 
 ### 6. **Security Scanning**
 
 ```typescript
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { exec } from "child_process";
+import { promisify } from "util";
 
 const execAsync = promisify(exec);
 
 interface SecurityIssue {
-  severity: 'critical' | 'high' | 'medium' | 'low';
+  severity: "critical" | "high" | "medium" | "low";
   title: string;
   description: string;
   file?: string;
@@ -323,25 +333,27 @@ interface SecurityIssue {
 class SecurityScanner {
   async scanDependencies(): Promise<SecurityIssue[]> {
     try {
-      const { stdout } = await execAsync('npm audit --json');
+      const { stdout } = await execAsync("npm audit --json");
       const auditResult = JSON.parse(stdout);
 
       const issues: SecurityIssue[] = [];
 
-      for (const [name, advisory] of Object.entries(auditResult.vulnerabilities || {})) {
+      for (const [name, advisory] of Object.entries(
+        auditResult.vulnerabilities || {},
+      )) {
         const vuln = advisory as any;
 
         issues.push({
           severity: vuln.severity,
           title: vuln.via[0]?.title || name,
-          description: vuln.via[0]?.url || '',
-          remediation: `Update ${name} to ${vuln.fixAvailable || 'latest'}`
+          description: vuln.via[0]?.url || "",
+          remediation: `Update ${name} to ${vuln.fixAvailable || "latest"}`,
         });
       }
 
       return issues;
     } catch (error) {
-      console.error('Dependency scan failed:', error);
+      console.error("Dependency scan failed:", error);
       return [];
     }
   }
@@ -351,29 +363,38 @@ class SecurityScanner {
 
     // Simple regex-based secret detection
     const patterns = [
-      { name: 'API Key', pattern: /api[_-]?key['"]?\s*[:=]\s*['"]([a-zA-Z0-9]{32,})['"]/ },
-      { name: 'AWS Key', pattern: /(AKIA[0-9A-Z]{16})/ },
-      { name: 'Private Key', pattern: /-----BEGIN (RSA |EC )?PRIVATE KEY-----/ },
-      { name: 'Password', pattern: /password['"]?\s*[:=]\s*['"]((?!<%= ).{8,})['"]/ }
+      {
+        name: "API Key",
+        pattern: /api[_-]?key['"]?\s*[:=]\s*['"]([a-zA-Z0-9]{32,})['"]/,
+      },
+      { name: "AWS Key", pattern: /(AKIA[0-9A-Z]{16})/ },
+      {
+        name: "Private Key",
+        pattern: /-----BEGIN (RSA |EC )?PRIVATE KEY-----/,
+      },
+      {
+        name: "Password",
+        pattern: /password['"]?\s*[:=]\s*['"]((?!<%= ).{8,})['"]/,
+      },
     ];
 
     // Scan files
     const files = this.getFiles(directory);
 
     for (const file of files) {
-      const content = fs.readFileSync(file, 'utf-8');
-      const lines = content.split('\n');
+      const content = fs.readFileSync(file, "utf-8");
+      const lines = content.split("\n");
 
       for (let i = 0; i < lines.length; i++) {
         for (const { name, pattern } of patterns) {
           if (pattern.test(lines[i])) {
             issues.push({
-              severity: 'critical',
+              severity: "critical",
               title: `Potential ${name} detected`,
               description: `Found in ${file}:${i + 1}`,
               file,
               line: i + 1,
-              remediation: 'Remove secret and use environment variables'
+              remediation: "Remove secret and use environment variables",
             });
           }
         }
@@ -389,13 +410,16 @@ class SecurityScanner {
   }
 
   generateReport(issues: SecurityIssue[]): string {
-    let report = '# Security Scan Report\n\n';
+    let report = "# Security Scan Report\n\n";
 
-    const grouped = issues.reduce((acc, issue) => {
-      acc[issue.severity] = acc[issue.severity] || [];
-      acc[issue.severity].push(issue);
-      return acc;
-    }, {} as Record<string, SecurityIssue[]>);
+    const grouped = issues.reduce(
+      (acc, issue) => {
+        acc[issue.severity] = acc[issue.severity] || [];
+        acc[issue.severity].push(issue);
+        return acc;
+      },
+      {} as Record<string, SecurityIssue[]>,
+    );
 
     for (const [severity, items] of Object.entries(grouped)) {
       report += `## ${severity.toUpperCase()} (${items.length})\n\n`;
@@ -406,7 +430,7 @@ class SecurityScanner {
         if (issue.remediation) {
           report += `**Remediation:** ${issue.remediation}\n`;
         }
-        report += '\n';
+        report += "\n";
       }
     }
 
@@ -417,7 +441,7 @@ class SecurityScanner {
 // Usage
 const scanner = new SecurityScanner();
 const depIssues = await scanner.scanDependencies();
-const secretIssues = await scanner.scanSecrets('./src');
+const secretIssues = await scanner.scanSecrets("./src");
 
 const allIssues = [...depIssues, ...secretIssues];
 console.log(scanner.generateReport(allIssues));
@@ -426,6 +450,7 @@ console.log(scanner.generateReport(allIssues));
 ## Best Practices
 
 ### ✅ DO
+
 - Run linters in CI/CD
 - Use pre-commit hooks
 - Configure IDE integration
@@ -435,6 +460,7 @@ console.log(scanner.generateReport(allIssues));
 - Automate security scanning
 
 ### ❌ DON'T
+
 - Ignore all warnings
 - Skip linter setup
 - Commit lint violations

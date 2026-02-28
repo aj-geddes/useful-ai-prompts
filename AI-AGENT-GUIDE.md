@@ -4,12 +4,12 @@ Technical specifications for AI agents, assistants, and automation systems to pr
 
 ## Library Overview
 
-| Resource | Count | Location | Description |
-|----------|-------|----------|-------------|
-| **Prompts** | 557+ | `/prompts/` | Expert-crafted prompts across 47 categories |
-| **Skills** | 260+ | `/skills/` | Claude Code auto-triggering capabilities |
-| **Hooks** | 7 | `/hooks/` | Event-driven automation scripts |
-| **Index** | 1 | `PROMPT-INDEX.json` | Machine-readable prompt catalog |
+| Resource    | Count | Location            | Description                                 |
+| ----------- | ----- | ------------------- | ------------------------------------------- |
+| **Prompts** | 557+  | `/prompts/`         | Expert-crafted prompts across 47 categories |
+| **Skills**  | 260+  | `/skills/`          | Claude Code auto-triggering capabilities    |
+| **Hooks**   | 7     | `/hooks/`           | Event-driven automation scripts             |
+| **Index**   | 1     | `PROMPT-INDEX.json` | Machine-readable prompt catalog             |
 
 ---
 
@@ -143,12 +143,25 @@ def extract_indicators(request: str) -> dict:
 
 ```yaml
 technical:
-  keywords: [code, develop, debug, deploy, architecture, security, data, api, database, test]
+  keywords:
+    [
+      code,
+      develop,
+      debug,
+      deploy,
+      architecture,
+      security,
+      data,
+      api,
+      database,
+      test,
+    ]
   subcategories:
     software-engineering: [build, implement, refactor, optimize, review]
     devops: [pipeline, deployment, CI/CD, infrastructure, container, kubernetes]
     security: [threat, vulnerability, compliance, audit, encryption]
-    data-science: [model, analysis, prediction, validation, ml, machine learning]
+    data-science:
+      [model, analysis, prediction, validation, ml, machine learning]
 
 business:
   keywords: [strategy, manage, analyze, plan, organize, lead, budget, forecast]
@@ -258,18 +271,18 @@ SKILL_TRIGGERS = {
 
 ### Skills by Domain
 
-| Domain | Count | Key Skills |
-|--------|-------|------------|
-| Software Development | 35 | refactor-legacy-code, code-review-analysis, design-patterns |
-| DevOps | 20 | docker-containerization, kubernetes-deployment, terraform-iac |
-| Testing | 15 | unit-testing-framework, e2e-testing, test-automation |
-| Security | 15 | vulnerability-scanning, oauth-implementation, data-encryption |
-| API | 12 | rest-api-design, graphql-implementation, webhook-development |
-| Database | 12 | sql-optimization, schema-design, database-indexing |
-| Cloud | 15 | aws-lambda, serverless-architecture, cloud-cost-optimization |
-| Frontend | 12 | react-components, responsive-design, css-architecture |
-| Backend | 12 | nodejs-express, django-application, background-jobs |
-| ML/AI | 10 | ml-model-training, model-deployment, hyperparameter-tuning |
+| Domain               | Count | Key Skills                                                    |
+| -------------------- | ----- | ------------------------------------------------------------- |
+| Software Development | 35    | refactor-legacy-code, code-review-analysis, design-patterns   |
+| DevOps               | 20    | docker-containerization, kubernetes-deployment, terraform-iac |
+| Testing              | 15    | unit-testing-framework, e2e-testing, test-automation          |
+| Security             | 15    | vulnerability-scanning, oauth-implementation, data-encryption |
+| API                  | 12    | rest-api-design, graphql-implementation, webhook-development  |
+| Database             | 12    | sql-optimization, schema-design, database-indexing            |
+| Cloud                | 15    | aws-lambda, serverless-architecture, cloud-cost-optimization  |
+| Frontend             | 12    | react-components, responsive-design, css-architecture         |
+| Backend              | 12    | nodejs-express, django-application, background-jobs           |
+| ML/AI                | 10    | ml-model-training, model-deployment, hyperparameter-tuning    |
 
 ### Loading Skills
 
@@ -299,15 +312,15 @@ def list_skills() -> list:
 
 Hooks are automation scripts that execute in response to Claude Code events:
 
-| Hook | Trigger Event | Purpose |
-|------|---------------|---------|
-| security-scan | Pre-commit | Scan for vulnerabilities and secrets |
-| pre-commit-linting | Pre-commit | Code formatting and style enforcement |
-| test-runner | Pre-commit | Run automated tests |
-| dependency-check | Pre-commit | Audit dependencies |
-| breaking-change-detection | Pre-commit | Detect API breaking changes |
-| auto-format | Post-save | Automatic code formatting |
-| session-setup | Session start | Environment initialization |
+| Hook                      | Trigger Event | Purpose                               |
+| ------------------------- | ------------- | ------------------------------------- |
+| security-scan             | Pre-commit    | Scan for vulnerabilities and secrets  |
+| pre-commit-linting        | Pre-commit    | Code formatting and style enforcement |
+| test-runner               | Pre-commit    | Run automated tests                   |
+| dependency-check          | Pre-commit    | Audit dependencies                    |
+| breaking-change-detection | Pre-commit    | Detect API breaking changes           |
+| auto-format               | Post-save     | Automatic code formatting             |
+| session-setup             | Session start | Environment initialization            |
 
 ### Hook Execution
 
@@ -769,13 +782,13 @@ interface Prompt {
 }
 
 class PromptLibrary {
-  constructor(private baseUrl: string = 'https://api.example.com') {}
+  constructor(private baseUrl: string = "https://api.example.com") {}
 
   async findPrompt(request: string): Promise<PromptMatch> {
     const response = await fetch(`${this.baseUrl}/api/match`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ request })
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ request }),
     });
     return response.json();
   }
@@ -786,7 +799,7 @@ class PromptLibrary {
   }
 
   async listSkills(domain?: string): Promise<string[]> {
-    const params = domain ? `?domain=${domain}` : '';
+    const params = domain ? `?domain=${domain}` : "";
     const response = await fetch(`${this.baseUrl}/api/skills${params}`);
     const data = await response.json();
     return data.skills;

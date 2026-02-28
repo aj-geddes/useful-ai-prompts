@@ -1,6 +1,7 @@
 # Meeting Facilitator
 
 ## Metadata
+
 - **ID**: `administrative-meeting-facilitator`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,11 +19,13 @@ This prompt transforms an AI assistant into an expert meeting facilitator who de
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing agendas for strategic planning sessions or project kickoffs
 - Designing facilitation guides for workshops with diverse stakeholders
 - Creating decision-logging templates and follow-up frameworks after meetings
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time meeting moderation (this prepares, not participates)
 - One-on-one performance conversations requiring HR expertise
 - Legal depositions or formal hearings requiring licensed facilitators
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to run a 90-minute quarterly planning meeting with my 8-person product team (mix of engineers, designers, and one PM). We need to decide on our top 3 priorities for Q2, review what didn't get done in Q1, and make sure everyone understands the roadmap. We've had issues with the engineers dominating discussion."
 
 ### Output
@@ -124,21 +128,22 @@ Avoid:
 **Q2 Product Planning Meeting — Facilitation Package**
 
 **Meeting Outcomes (non-negotiable)**
+
 1. Ratify exactly 3 Q2 priorities with clear owners
 2. Close the loop on 4 unfinished Q1 items with explicit disposition (carry forward, descope, hand off)
 3. Every attendee can articulate the Q2 roadmap rationale in one sentence
 
 **Time-boxed Agenda**
 
-| Time | Item | Owner | Purpose |
-|------|------|-------|---------|
-| 0:00–0:05 | Open + ground rules | Facilitator | Alignment |
-| 0:05–0:20 | Q1 retrospective: what shipped, what didn't | PM | Close the loop |
-| 0:20–0:40 | Q2 candidate priorities: silent ranking exercise | All | Surface diverse views |
-| 0:40–1:05 | Priority debate and decision | All | Decide top 3 |
-| 1:05–1:20 | Roadmap walkthrough + Q&A | PM | Shared understanding |
-| 1:20–1:28 | Action items + owners confirmed | Facilitator | Accountability |
-| 1:28–1:30 | Close + feedback word | All | Psychological close |
+| Time      | Item                                             | Owner       | Purpose               |
+| --------- | ------------------------------------------------ | ----------- | --------------------- |
+| 0:00–0:05 | Open + ground rules                              | Facilitator | Alignment             |
+| 0:05–0:20 | Q1 retrospective: what shipped, what didn't      | PM          | Close the loop        |
+| 0:20–0:40 | Q2 candidate priorities: silent ranking exercise | All         | Surface diverse views |
+| 0:40–1:05 | Priority debate and decision                     | All         | Decide top 3          |
+| 1:05–1:20 | Roadmap walkthrough + Q&A                        | PM          | Shared understanding  |
+| 1:20–1:28 | Action items + owners confirmed                  | Facilitator | Accountability        |
+| 1:28–1:30 | Close + feedback word                            | All         | Psychological close   |
 
 **Facilitation Questions**
 
@@ -149,6 +154,7 @@ Priority Ranking: "Before we discuss, everyone silently dot-vote on the whiteboa
 Priority Debate: "Before we finalize, I want to hear from someone who hasn't spoken yet: what's the risk of choosing this priority?" (Explicit turn to non-dominant voices.)
 
 **Ground Rules**
+
 1. Phones face-down; laptops closed unless taking notes in the shared doc
 2. One voice at a time; the facilitator will stack speakers
 3. Engineers speak after designers on UX-related items (rotating order rule)
@@ -157,12 +163,13 @@ Priority Debate: "Before we finalize, I want to hear from someone who hasn't spo
 
 **Decisions + Actions Table**
 
-| Decision/Action | Owner | Deadline | How We'll Know |
-|----------------|-------|----------|----------------|
-| Q2 Priority 1 confirmed | PM | End of meeting | Name on roadmap doc |
+| Decision/Action                 | Owner      | Deadline            | How We'll Know       |
+| ------------------------------- | ---------- | ------------------- | -------------------- |
+| Q2 Priority 1 confirmed         | PM         | End of meeting      | Name on roadmap doc  |
 | Q1 unfinished item dispositions | PM + leads | 48 hrs post-meeting | Jira tickets updated |
 
 **Post-Meeting Email Template**
+
 > "Team — here's what we decided today: [priorities]. The following Q1 items are [carried forward / descoped]: [list]. Your action items are in the table above. Reply by [date] if anything needs correction. Next planning sync: [date]."
 
 ---

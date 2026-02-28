@@ -203,6 +203,7 @@ credentials.json
 ### 4. Rotate Exposed Credentials
 
 If secrets are accidentally committed:
+
 1. Rotate/revoke the exposed credentials immediately
 2. Remove secrets from git history using `git filter-branch` or BFG Repo-Cleaner
 3. Force push the cleaned history (coordinate with team)
@@ -284,6 +285,7 @@ If the hook incorrectly flags safe content:
 ### Hook Not Running
 
 Check:
+
 - Hook script is executable: `chmod +x hook.sh`
 - Path in settings.json is absolute and correct
 - Pattern matches the tool being used (e.g., "^Bash$")
@@ -307,6 +309,7 @@ MIT License - Use freely in your projects
 ## Contributing
 
 Contributions welcome! Please submit:
+
 - New secret patterns
 - Performance improvements
 - Additional features

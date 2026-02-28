@@ -439,6 +439,7 @@ node "Cache Cluster" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use consistent notation and symbols
 - Include legends for complex diagrams
 - Keep diagrams focused on one aspect
@@ -453,6 +454,7 @@ node "Cache Cluster" {
 - Use subgraphs for logical grouping
 
 ### ❌ DON'T
+
 - Overcrowd diagrams with details
 - Use inconsistent styling
 - Skip diagram legends

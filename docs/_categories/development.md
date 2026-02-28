@@ -6,7 +6,19 @@ slug: development
 icon: fas fa-code
 description: "Expert AI prompts for software developers: code review, API design, debugging, architecture, DevOps, testing, and technical documentation."
 seo_title: "Development & Engineering AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [code review, API design, debugging, architecture, DevOps, refactoring, testing, documentation, database, git]
+tags:
+  [
+    code review,
+    API design,
+    debugging,
+    architecture,
+    DevOps,
+    refactoring,
+    testing,
+    documentation,
+    database,
+    git,
+  ]
 ---
 
 The Development & Engineering category contains AI prompts for software engineers, engineering leads, and DevOps professionals. These prompts apply proven software engineering practices to your actual code, architecture decisions, and workflow challenges — not generic advice.

@@ -1,6 +1,7 @@
 # Systems Biology Network Analysis
 
 ## Metadata
+
 - **ID**: `biotechnology-systems-biology-network-analysis`
 - **Version**: 2.0.0
 - **Category**: Biotechnology/Bioinformatics
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-01
 
 ## Overview
+
 Designs systems biology approaches for understanding complex biological networks through multi-omics data integration. Enables pathway analysis and therapeutic target identification using network-based methods combining graph theory and machine learning.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Integrating transcriptomic, proteomic, and metabolomic data for biological insights
 - Identifying druggable targets through network topology analysis
 - Understanding disease mechanisms at the systems level
@@ -23,6 +27,7 @@ Designs systems biology approaches for understanding complex biological networks
 - Discovering resistance mechanisms and therapeutic vulnerabilities
 
 **Anti-patterns (Don't Use For):**
+
 - Single-gene or single-pathway focused analysis
 - Basic pathway database lookup without network context
 - Wet lab protocol design without computational components
@@ -101,12 +106,15 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 Studying therapy resistance in triple-negative breast cancer (TNBC). Have RNA-seq from 50 matched pairs (pre-treatment, post-relapse), proteomics from 20 pairs, and clinical outcomes. Goal: identify therapeutic targets to overcome resistance. Want to understand which pathways drive resistance and find druggable nodes in resistance networks.
 
 ### Output
+
 **TNBC Resistance Network Analysis**
 
 **Data Integration Strategy**
+
 - Discovery: 50 RNA-seq pairs (powered for DE analysis)
 - Validation: 20 proteomics pairs (protein-level confirmation)
 - Clinical: Response duration, survival for target correlation
@@ -117,6 +125,7 @@ Studying therapy resistance in triple-negative breast cancer (TNBC). Have RNA-se
 Differential expression via DESeq2 with paired design (~patient + condition), thresholds padj <0.05, |log2FC| >1, expecting 2000-4000 DE genes. Proteomics overlap analysis for post-transcriptional regulation.
 
 Multi-layer network construction:
+
 - Layer 1: WGCNA co-expression (scale-free topology, 30-500 gene modules)
 - Layer 2: STRING PPI (confidence >0.7, ~15K interactions)
 - Layer 3: Reactome signaling (directed regulatory edges)
@@ -131,6 +140,7 @@ Key driver criteria: upregulated in resistant samples, top 10% centrality, hub i
 **Phase 3: Target Prioritization (Weeks 5-6)**
 
 Weighted scoring framework:
+
 - 0.25: Differential expression (our data)
 - 0.20: Network centrality (topology)
 - 0.20: Druggability (DGIdb, ChEMBL)
@@ -150,6 +160,7 @@ Experimental (Priority 1 targets): siRNA knockdown in resistant cell lines, smal
 EMT, DNA damage response, immune evasion, metabolic reprogramming, stemness pathways
 
 **Deliverables**
+
 1. 50-100 gene resistance signature, 2. Prioritized target list with evidence scores, 3. Cytoscape network sessions, 4. Pathway analysis report, 5. Experimental validation protocols, 6. Publication figures
 
 **Timeline:** 8 weeks total - network construction (weeks 1-2), analysis (3-4), prioritization (5-6), validation planning (7-8)
@@ -157,6 +168,7 @@ EMT, DNA damage response, immune evasion, metabolic reprogramming, stemness path
 ---
 
 ## Related Prompts
+
 - [AI Biomarker Discovery](ai-biomarker-discovery-validation.md) - Biomarker identification
 - [Protein Structure Prediction](protein-structure-prediction-modeling.md) - Target structure analysis
 - [AI Drug Discovery Expert](../ai-powered-drug-discovery-optimization-expert.md) - Compound screening

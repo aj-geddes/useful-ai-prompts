@@ -1,6 +1,7 @@
 # Pharmaceutical Research Excellence Expert
 
 ## Metadata
+
 - **ID**: `healthcare-pharma-research`
 - **Version**: 1.1.0
 - **Category**: Healthcare
@@ -18,6 +19,7 @@ A pharmaceutical research strategist that guides drug development from discovery
 ## When to Use
 
 **Ideal scenarios:**
+
 - Planning drug development strategies and milestone-driven timelines
 - Designing clinical trial protocols, endpoints, and patient selection criteria
 - Navigating FDA regulatory pathways (IND, NDA, BLA, accelerated programs)
@@ -25,6 +27,7 @@ A pharmaceutical research strategist that guides drug development from discovery
 - Creating risk mitigation plans for development programs
 
 **Anti-patterns (when NOT to use):**
+
 - Clinical trial execution and site management
 - Individual patient treatment decisions
 - Manufacturing process development and validation
@@ -112,6 +115,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are developing a therapy for NSCLC with EGFR mutations. Stage: Lead optimization, preparing for IND-enabling studies. Type: Small molecule tyrosine kinase inhibitor (oral). Target: T790M and C797S resistance mutations that emerge after first and second-line EGFR TKI therapy. Differentiation: First compound to potently inhibit both resistance mutations; current therapies develop resistance in 12-18 months. Regulatory pathway: 505(b)(1) NDA, considering Breakthrough Therapy Designation. Budget: $50M through Phase 2, seeking partner for Phase 3. Timeline goal: 18 months to IND.
 
 ### Output
@@ -120,26 +124,29 @@ We are developing a therapy for NSCLC with EGFR mutations. Stage: Lead optimizat
 
 **Research Strategy and Target Product Profile:**
 
-*Lead Optimization Priorities (Months 1-6):*
+_Lead Optimization Priorities (Months 1-6):_
+
 - Selectivity Enhancement: Target greater than 1000-fold selectivity vs. wild-type EGFR to minimize skin and GI toxicity
 - Potency Optimization: IC50 less than 50nM against T790M/C797S double mutants in cellular assays
 - ADMET Optimization: Oral bioavailability greater than 40%, half-life supporting once-daily dosing
 - CNS Penetration: Brain-to-plasma ratio greater than 0.3 for CNS metastases coverage (common in EGFR+ NSCLC)
 
-*Chemistry Scale-Up:*
+_Chemistry Scale-Up:_
+
 - Route optimization: Current 12-step synthesis targeting 6-8 steps for commercial viability
 - CMO selection: cGMP capability for 5-10kg IND-enabling batches
 - Backup compounds: Maintain 2-3 backup leads through candidate selection
 
 **Clinical Trial Design:**
 
-*IND-Enabling Package (Months 6-12):*
+_IND-Enabling Package (Months 6-12):_
+
 - 28-day GLP toxicology in rat and dog with focus on EGFR-related toxicities (skin, GI, liver, ocular)
 - Toxicokinetics and metabolite profiling with human metabolite coverage assessment
 - Recovery cohorts to establish reversibility of key findings
 - Safety pharmacology: cardiovascular (hERG, telemetry), respiratory, CNS
 
-*Phase 1 First-in-Human Design:*
+_Phase 1 First-in-Human Design:_
 
 ```
 Design: 3+3 dose escalation with expansion cohorts
@@ -158,7 +165,8 @@ Expansion Cohorts (n=20 each):
 4. Other EGFR resistance mechanisms (exploratory)
 ```
 
-*Biomarker Strategy:*
+_Biomarker Strategy:_
+
 - Companion diagnostic partnership (Foundation Medicine or Guardant Health) for mutation confirmation
 - Liquid biopsy for treatment eligibility and response monitoring
 - ctDNA clearance kinetics as early pharmacodynamic marker
@@ -166,59 +174,67 @@ Expansion Cohorts (n=20 each):
 
 **Risk Assessment and Mitigation:**
 
-*Technical Risks:*
+_Technical Risks:_
 | Risk | Probability | Impact | Mitigation |
 |------|-------------|--------|------------|
 | Selectivity challenges | Medium | High | Multiple chemotype backup leads |
 | CNS penetration inadequate | Medium | Medium | Optimize LogP and P-gp efflux profile |
 | Manufacturing complexity | Low | Medium | Parallel route scouting, early CMO engagement |
 
-*Clinical Risks:*
+_Clinical Risks:_
+
 - Narrow therapeutic window: Extensive PK-guided dose ranging, alternative dosing schedules
 - Rapid resistance emergence: Pre-planned combination studies with third-generation EGFR TKIs
 - Competitive pressure: Accelerated development with biomarker-enriched populations
 
 **Regulatory Roadmap:**
 
-*Pre-IND Meeting (Month 10):*
+_Pre-IND Meeting (Month 10):_
 Key topics: Nonclinical package adequacy, accelerated pathway requirements, biomarker strategy, CMC expectations for initial clinical supplies
 
-*Breakthrough Therapy Designation (BTD):*
+_Breakthrough Therapy Designation (BTD):_
+
 - Target filing: After Phase 1 dose escalation completion (Month 18-20)
 - Key data requirement: ORR greater than 30% in T790M/C797S patients (vs. 10-15% historical with chemotherapy)
 - Benefits: Priority review, intensive FDA guidance, rolling review eligibility
 
-*Global Regulatory Strategy:*
+_Global Regulatory Strategy:_
+
 - US: Primary IND with BTD pursuit
 - EU/Japan: Parallel Phase 2 initiation after US Phase 1 dose escalation
 - China: Evaluate local filing given high EGFR mutation prevalence (40-50% of Asian NSCLC)
 
 **Commercialization Path:**
 
-*Market Positioning:*
+_Market Positioning:_
+
 - First-in-class therapy for C797S resistance (clear unmet need, no approved therapies)
 - Pricing: Premium justified by lack of alternatives ($15-20K/month range)
 - Peak sales potential: $1-2B in resistance setting alone
 
-*Lifecycle Opportunities:*
+_Lifecycle Opportunities:_
+
 - First-line combination with osimertinib (delay resistance emergence)
 - Adjuvant setting after definitive local therapy
 - Brain metastases indication (separate label expansion)
 
 **Partnership Strategy (Phase 2 Completion Target):**
 
-*Ideal Partner Profile:*
+_Ideal Partner Profile:_
+
 - Strong oncology commercial presence with existing EGFR franchise
 - Global development and regulatory capabilities
 - Phase 3 execution experience in NSCLC
 
-*Target Deal Terms:*
+_Target Deal Terms:_
+
 - Upfront: $100-200M based on Phase 2 data strength
 - Milestones: $400-600M (regulatory and commercial)
 - Royalties: 15-25% tiered on net sales
 - Rights retention: Consider co-commercialization in US if Phase 2 exceptional
 
 **Development Timeline:**
+
 - Months 1-3: Complete lead optimization, select 3 development candidates
 - Months 4-6: Final candidate selection, initiate manufacturing tech transfer
 - Months 7-12: GLP toxicology, CMC development, IND preparation

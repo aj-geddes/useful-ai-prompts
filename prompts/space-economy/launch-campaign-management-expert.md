@@ -1,6 +1,7 @@
 # Launch Campaign Management Expert
 
 ## Metadata
+
 - **ID**: `space-launch-campaign-management`
 - **Version**: 1.0.0
 - **Category**: Space Economy
@@ -18,12 +19,14 @@ Plan and execute commercial launch campaigns including payload integration, rang
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning multi-payload launch campaigns
 - Coordinating launch service provider activities
 - Managing range operations and regulatory compliance
 - Optimizing launch schedules and contingency planning
 
 **Anti-Patterns (Do Not Use For):**
+
 - Spacecraft design and development
 - Post-launch satellite operations
 - Satellite manufacturing processes
@@ -106,31 +109,34 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're coordinating a Falcon Heavy mission with 15 satellites from 5 different customers across 3 orbital planes. Campaign duration is 6 months. Need comprehensive launch campaign management approach."
 
 ### Output
+
 **Launch Campaign Plan: Multi-Payload Falcon Heavy Mission**
 
 **Mission Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Vehicle | Falcon Heavy |
-| Payloads | 15 satellites, 5 customers |
-| Orbits | 3 planes (500km, 600km, 800km) |
-| Campaign Duration | 6 months |
-| Launch Window | 2-hour daily window |
+| Parameter         | Specification                  |
+| ----------------- | ------------------------------ |
+| Vehicle           | Falcon Heavy                   |
+| Payloads          | 15 satellites, 5 customers     |
+| Orbits            | 3 planes (500km, 600km, 800km) |
+| Campaign Duration | 6 months                       |
+| Launch Window     | 2-hour daily window            |
 
 **Campaign Timeline**
 
-| Phase | Duration | Activities |
-|-------|----------|------------|
-| Planning | Months 1-2 | Requirements, contracts, facility prep |
-| Integration | Months 3-4 | Payload processing, stack integration |
-| Preparation | Month 5 | Final testing, rehearsals |
-| Execution | Month 6 | Launch prep, execution, deployment |
+| Phase       | Duration   | Activities                             |
+| ----------- | ---------- | -------------------------------------- |
+| Planning    | Months 1-2 | Requirements, contracts, facility prep |
+| Integration | Months 3-4 | Payload processing, stack integration  |
+| Preparation | Month 5    | Final testing, rehearsals              |
+| Execution   | Month 6    | Launch prep, execution, deployment     |
 
 **Payload Integration Sequence**
+
 1. Customer A (primary, 3 satellites): Week 8-10
 2. Customer B (2 satellites): Week 10-11
 3. Customer C (4 satellites): Week 11-13
@@ -141,27 +147,30 @@ Avoid:
 
 **Customer Coordination Matrix**
 
-| Customer | POC | Review Cadence | Critical Items |
-|----------|-----|----------------|----------------|
-| A | Primary | Weekly | Separation timing |
-| B | Tech Lead | Bi-weekly | Mass properties |
-| C | Ops Mgr | Weekly | Deployment sequence |
-| D | PM | Bi-weekly | RF coordination |
-| E | Tech Lead | Weekly | Power budget |
+| Customer | POC       | Review Cadence | Critical Items      |
+| -------- | --------- | -------------- | ------------------- |
+| A        | Primary   | Weekly         | Separation timing   |
+| B        | Tech Lead | Bi-weekly      | Mass properties     |
+| C        | Ops Mgr   | Weekly         | Deployment sequence |
+| D        | PM        | Bi-weekly      | RF coordination     |
+| E        | Tech Lead | Weekly         | Power budget        |
 
 **Safety Management**
+
 - Range Safety: 100% compliance with 45th Space Wing requirements
 - Hazardous operations: Fueling, ordnance, pressurization per approved procedures
 - Emergency procedures: Documented for each phase with roles assigned
 - Go/No-Go criteria: Defined for L-24h, L-6h, L-1h, and terminal count
 
 **Contingency Planning**
+
 - Weather delay: 2-week backup window secured
 - Technical hold: 48-hour recycle procedures
 - Payload issue: Customer substitution protocol (L-30 days)
 - Vehicle anomaly: Escalation to SpaceX with customer notification
 
 **Success Metrics**
+
 - On-time launch: Within primary window
 - Deployment success: 100% separation confirmation
 - Customer satisfaction: >98% rating
@@ -170,6 +179,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Satellite Constellation Operations Manager](satellite-constellation-operations-manager.md)
 - [Commercial Space Mission Architecture Expert](commercial-space-mission-architecture-expert.md)
 - [Launch Operations Campaign Management](launch-operations-campaign-management.md)

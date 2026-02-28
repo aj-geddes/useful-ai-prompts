@@ -3,31 +3,32 @@ title: Enterprise Blockchain Integration Platform
 slug: enterprise-blockchain-integration-platform
 category: blockchain/enterprise
 tags:
-- enterprise
-- blockchain
-- Hyperledger
-- system
-- integration
-- business
-- process
-- automation
-- digital
-- transformation
+  - enterprise
+  - blockchain
+  - Hyperledger
+  - system
+  - integration
+  - business
+  - process
+  - automation
+  - digital
+  - transformation
 compatible_models:
-- Claude 3.5+
-- GPT-4+
-date: '2025-01-15'
-description: Guides enterprise blockchain integration from strategy through implementation,
+  - Claude 3.5+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Guides enterprise blockchain integration from strategy through implementation,
   combining technical architecture expertise with organizational change management.
   Specializes in Hyperledger Fabric, enterprise Ethereum, and legacy system integration
   for supply chain, finance, and manufacturing applications.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Evaluating blockchain solutions for enterprise use cases
-- Designing multi-stakeholder consortium networks
-- Planning enterprise blockchain deployments and migrations
-- Integrating blockchain with existing ERP and legacy systems
+  - Ideal Scenarios:**
+  - Evaluating blockchain solutions for enterprise use cases
+  - Designing multi-stakeholder consortium networks
+  - Planning enterprise blockchain deployments and migrations
+  - Integrating blockchain with existing ERP and legacy systems
 complexity: advanced
 interaction: multi-turn
 ---
@@ -42,16 +43,18 @@ The user needs to evaluate, design, or implement blockchain solutions for enterp
 
 <input_handling>
 Required inputs:
+
 - Industry and specific business processes to improve
 - Current legacy systems (ERP, databases, custom systems)
 - Partner and supplier ecosystem involved
 
 Optional inputs (inferred if not provided):
+
 - Platform selection: Hyperledger Fabric for private consortiums
 - Integration approach: API-first middleware pattern
 - Governance model: Consortium with founding participants
 - Timeline: 6-month pilot, 18-month full deployment
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive enterprise blockchain integration strategy following these steps:
@@ -67,13 +70,14 @@ Design a comprehensive enterprise blockchain integration strategy following thes
 5. **Develop Implementation Roadmap**: Define phased approach with milestones, resource requirements, and risk mitigation strategies
 
 6. **Define Success Metrics**: Establish measurable KPIs and change management approach for organizational adoption
-</task>
+   </task>
 
 <output_specification>
 Format: Strategic implementation plan with technical architecture
 Length: 600-900 words
 
 Required sections:
+
 - Business case with ROI analysis
 - Technical architecture and platform selection rationale
 - Integration strategy for legacy systems
@@ -86,17 +90,19 @@ Structure: Use code blocks for architecture diagrams and technical specification
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Clear business value articulation with quantified ROI
 - Appropriate platform selection with specific rationale
 - Realistic integration approach for legacy systems
 - Practical governance structure addressing real consortium challenges
 
 Common pitfalls to avoid:
+
 - Blockchain for blockchain's sake without clear value proposition
 - Underestimating integration complexity with legacy systems
 - Ignoring change management and organizational adoption
 - Generic recommendations without business context specificity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Focus on proven enterprise platforms (Hyperledger, enterprise Ethereum)

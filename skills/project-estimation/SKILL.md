@@ -87,22 +87,22 @@ class BottomUpEstimation {
   createWBS() {
     // Work Breakdown Structure example
     return {
-      level1: 'Full Project',
-      level2: ['Planning', 'Design', 'Development', 'Testing', 'Deployment'],
+      level1: "Full Project",
+      level2: ["Planning", "Design", "Development", "Testing", "Deployment"],
       level3: {
-        'Development': [
-          'Backend API',
-          'Frontend UI',
-          'Database Schema',
-          'Integration'
+        Development: [
+          "Backend API",
+          "Frontend UI",
+          "Database Schema",
+          "Integration",
         ],
-        'Testing': [
-          'Unit Testing',
-          'Integration Testing',
-          'UAT',
-          'Performance Testing'
-        ]
-      }
+        Testing: [
+          "Unit Testing",
+          "Integration Testing",
+          "UAT",
+          "Performance Testing",
+        ],
+      },
     };
   }
 
@@ -117,7 +117,7 @@ class BottomUpEstimation {
         effort: taskEstimate.effort,
         resources: taskEstimate.resources,
         risk: taskEstimate.risk,
-        duration: taskEstimate.duration
+        duration: taskEstimate.duration,
       });
       totalEstimate += taskEstimate.effort;
     }
@@ -126,7 +126,7 @@ class BottomUpEstimation {
       totalEffortHours: totalEstimate,
       totalWorkDays: totalEstimate / 8,
       taskDetails: estimates,
-      criticalPath: this.identifyCriticalPath(estimates)
+      criticalPath: this.identifyCriticalPath(estimates),
     };
   }
 
@@ -139,22 +139,20 @@ class BottomUpEstimation {
     effort = effort * experienceFactor;
 
     // Adjust for risk
-    const riskFactor = 1 + (task.riskLevel * 0.1);
+    const riskFactor = 1 + task.riskLevel * 0.1;
     effort = effort * riskFactor;
 
     return {
       effort: Math.ceil(effort),
       resources: Math.ceil(effort / 8), // days
       risk: task.riskLevel,
-      duration: Math.ceil(effort / (8 * task.teamSize))
+      duration: Math.ceil(effort / (8 * task.teamSize)),
     };
   }
 
   identifyCriticalPath(estimates) {
     // Return tasks with longest duration
-    return estimates
-      .sort((a, b) => b.duration - a.duration)
-      .slice(0, 5);
+    return estimates.sort((a, b) => b.duration - a.duration).slice(0, 5);
   }
 }
 ```
@@ -209,12 +207,12 @@ Confidence Level: 75% (medium, due to some differences)
 class ResourceEstimation {
   calculateResourceNeeds(projectDuration, tasks) {
     const resourceMap = {
-      'Senior Developer': 0,
-      'Mid-Level Developer': 0,
-      'Junior Developer': 0,
-      'QA Engineer': 0,
-      'DevOps Engineer': 0,
-      'Project Manager': 0
+      "Senior Developer": 0,
+      "Mid-Level Developer": 0,
+      "Junior Developer": 0,
+      "QA Engineer": 0,
+      "DevOps Engineer": 0,
+      "Project Manager": 0,
     };
 
     let totalEffort = 0;
@@ -235,18 +233,18 @@ class ResourceEstimation {
       fte: fteMap,
       totalEffortHours: totalEffort,
       totalWorkDays: totalEffort / 8,
-      costEstimate: this.calculateCost(fteMap)
+      costEstimate: this.calculateCost(fteMap),
     };
   }
 
   calculateCost(fteMap) {
     const dailyRates = {
-      'Senior Developer': 1200,
-      'Mid-Level Developer': 900,
-      'Junior Developer': 600,
-      'QA Engineer': 700,
-      'DevOps Engineer': 950,
-      'Project Manager': 800
+      "Senior Developer": 1200,
+      "Mid-Level Developer": 900,
+      "Junior Developer": 600,
+      "QA Engineer": 700,
+      "DevOps Engineer": 950,
+      "Project Manager": 800,
     };
 
     let totalCost = 0;
@@ -261,7 +259,7 @@ class ResourceEstimation {
     return {
       byRole: costByRole,
       total: totalCost,
-      currency: 'USD'
+      currency: "USD",
     };
   }
 }
@@ -277,39 +275,45 @@ Date: [Date]
 Estimator: [Name]
 
 ### Scope Summary
+
 - Deliverables: [List key deliverables]
 - Exclusions: [What's NOT included]
 - Assumptions: [Key assumptions]
 
 ### Effort Estimation
-| Phase | Effort (Days) | Resources | Notes |
-|-------|---------------|-----------|-------|
-| Planning | 5 | 1 PM | Requirement gathering |
-| Design | 10 | 2 Architects | UI/UX & Technical |
-| Development | 40 | 4 Devs | 5 features total |
-| Testing | 15 | 2 QA | Manual + Automation |
-| Deployment | 5 | 1 DevOps | Staging & Production |
-| **Total** | **75 Days** | **Avg 3.0 FTE** | |
+
+| Phase       | Effort (Days) | Resources       | Notes                 |
+| ----------- | ------------- | --------------- | --------------------- |
+| Planning    | 5             | 1 PM            | Requirement gathering |
+| Design      | 10            | 2 Architects    | UI/UX & Technical     |
+| Development | 40            | 4 Devs          | 5 features total      |
+| Testing     | 15            | 2 QA            | Manual + Automation   |
+| Deployment  | 5             | 1 DevOps        | Staging & Production  |
+| **Total**   | **75 Days**   | **Avg 3.0 FTE** |                       |
 
 ### Schedule Estimate
+
 - Start Date: [Date]
 - Duration: 15 weeks
 - End Date: [Date]
 - Critical Path: Development & Testing phases
 
 ### Risk & Contingency
+
 - Risk Buffer: 20% (15 days)
 - Optimistic: 12 weeks
 - Most Likely: 15 weeks
 - Pessimistic: 18 weeks
 
 ### Cost Estimate
+
 - Labor: $125,000
 - Infrastructure: $15,000
 - Tools/Licenses: $5,000
 - **Total**: $145,000
 
 ### Confidence Level
+
 - Estimation Confidence: 80% (Medium-High)
 - Key Uncertainties: Third-party integrations
 ```
@@ -317,6 +321,7 @@ Estimator: [Name]
 ## Best Practices
 
 ### ✅ DO
+
 - Use multiple estimation techniques and compare results
 - Include contingency buffers (15-25% for new projects)
 - Base estimates on historical data from similar projects
@@ -329,6 +334,7 @@ Estimator: [Name]
 - Account for learning curve on unfamiliar technologies
 
 ### ❌ DON'T
+
 - Estimate without clear scope definition
 - Use unrealistic best-case scenarios
 - Ignore historical project data

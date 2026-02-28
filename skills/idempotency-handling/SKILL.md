@@ -26,13 +26,13 @@ Implement idempotency to ensure operations produce the same result regardless of
 ### 1. **Express Idempotency Middleware**
 
 ```typescript
-import express from 'express';
-import Redis from 'ioredis';
-import crypto from 'crypto';
+import express from "express";
+import Redis from "ioredis";
+import crypto from "crypto";
 
 interface IdempotentRequest {
   key: string;
-  status: 'processing' | 'completed' | 'failed';
+  status: "processing" | "completed" | "failed";
   response?: any;
   error?: string;
   createdAt: number;
@@ -52,61 +52,52 @@ class IdempotencyService {
     return data ? JSON.parse(data) : null;
   }
 
-  async setRequest(
-    key: string,
-    request: IdempotentRequest
-  ): Promise<void> {
+  async setRequest(key: string, request: IdempotentRequest): Promise<void> {
     await this.redis.setex(
       `idempotency:${key}`,
       this.ttl,
-      JSON.stringify(request)
+      JSON.stringify(request),
     );
   }
 
   async startProcessing(key: string): Promise<boolean> {
     const request: IdempotentRequest = {
       key,
-      status: 'processing',
-      createdAt: Date.now()
+      status: "processing",
+      createdAt: Date.now(),
     };
 
     // Use SET NX to ensure only one request processes
     const result = await this.redis.set(
       `idempotency:${key}`,
       JSON.stringify(request),
-      'EX',
+      "EX",
       this.ttl,
-      'NX'
+      "NX",
     );
 
-    return result === 'OK';
+    return result === "OK";
   }
 
-  async completeRequest(
-    key: string,
-    response: any
-  ): Promise<void> {
+  async completeRequest(key: string, response: any): Promise<void> {
     const request: IdempotentRequest = {
       key,
-      status: 'completed',
+      status: "completed",
       response,
       createdAt: Date.now(),
-      completedAt: Date.now()
+      completedAt: Date.now(),
     };
 
     await this.setRequest(key, request);
   }
 
-  async failRequest(
-    key: string,
-    error: string
-  ): Promise<void> {
+  async failRequest(key: string, error: string): Promise<void> {
     const request: IdempotentRequest = {
       key,
-      status: 'failed',
+      status: "failed",
       error,
       createdAt: Date.now(),
-      completedAt: Date.now()
+      completedAt: Date.now(),
     };
 
     await this.setRequest(key, request);
@@ -117,18 +108,18 @@ function idempotencyMiddleware(idempotency: IdempotencyService) {
   return async (
     req: express.Request,
     res: express.Response,
-    next: express.NextFunction
+    next: express.NextFunction,
   ) => {
     // Only apply to POST, PUT, PATCH, DELETE
-    if (!['POST', 'PUT', 'PATCH', 'DELETE'].includes(req.method)) {
+    if (!["POST", "PUT", "PATCH", "DELETE"].includes(req.method)) {
       return next();
     }
 
-    const idempotencyKey = req.headers['idempotency-key'] as string;
+    const idempotencyKey = req.headers["idempotency-key"] as string;
 
     if (!idempotencyKey) {
       return res.status(400).json({
-        error: 'Idempotency-Key header required'
+        error: "Idempotency-Key header required",
       });
     }
 
@@ -136,21 +127,21 @@ function idempotencyMiddleware(idempotency: IdempotencyService) {
     const existing = await idempotency.getRequest(idempotencyKey);
 
     if (existing) {
-      if (existing.status === 'processing') {
+      if (existing.status === "processing") {
         return res.status(409).json({
-          error: 'Request already processing',
-          message: 'Please wait and retry'
+          error: "Request already processing",
+          message: "Please wait and retry",
         });
       }
 
-      if (existing.status === 'completed') {
+      if (existing.status === "completed") {
         return res.status(200).json(existing.response);
       }
 
-      if (existing.status === 'failed') {
+      if (existing.status === "failed") {
         return res.status(500).json({
-          error: 'Previous request failed',
-          message: existing.error
+          error: "Previous request failed",
+          message: existing.error,
         });
       }
     }
@@ -160,7 +151,7 @@ function idempotencyMiddleware(idempotency: IdempotencyService) {
 
     if (!canProcess) {
       return res.status(409).json({
-        error: 'Request already processing'
+        error: "Request already processing",
       });
     }
 
@@ -176,7 +167,9 @@ function idempotencyMiddleware(idempotency: IdempotencyService) {
     const originalNext = next;
     next = (err?: any) => {
       if (err) {
-        idempotency.failRequest(idempotencyKey, err.message).catch(console.error);
+        idempotency
+          .failRequest(idempotencyKey, err.message)
+          .catch(console.error);
       }
       return originalNext(err);
     };
@@ -187,13 +180,13 @@ function idempotencyMiddleware(idempotency: IdempotencyService) {
 
 // Usage
 const app = express();
-const redis = new Redis('redis://localhost:6379');
-const idempotency = new IdempotencyService('redis://localhost:6379');
+const redis = new Redis("redis://localhost:6379");
+const idempotency = new IdempotencyService("redis://localhost:6379");
 
 app.use(express.json());
 app.use(idempotencyMiddleware(idempotency));
 
-app.post('/api/payments', async (req, res) => {
+app.post("/api/payments", async (req, res) => {
   const { amount, userId } = req.body;
 
   // Process payment
@@ -208,7 +201,7 @@ async function processPayment(amount: number, userId: string) {
     id: crypto.randomUUID(),
     amount,
     userId,
-    status: 'completed'
+    status: "completed",
   };
 }
 
@@ -218,7 +211,7 @@ app.listen(3000);
 ### 2. **Database-Based Idempotency**
 
 ```typescript
-import { Pool } from 'pg';
+import { Pool } from "pg";
 
 interface IdempotencyRecord {
   key: string;
@@ -255,11 +248,11 @@ class DatabaseIdempotency {
 
   async checkIdempotency(
     key: string,
-    requestBody: any
+    requestBody: any,
   ): Promise<IdempotencyRecord | null> {
     const result = await this.db.query(
-      'SELECT * FROM idempotency_keys WHERE key = $1',
-      [key]
+      "SELECT * FROM idempotency_keys WHERE key = $1",
+      [key],
     );
 
     if (result.rows.length === 0) {
@@ -270,59 +263,60 @@ class DatabaseIdempotency {
 
     // Check if request body matches
     if (JSON.stringify(record.request_body) !== JSON.stringify(requestBody)) {
-      throw new Error('Request body mismatch for idempotency key');
+      throw new Error("Request body mismatch for idempotency key");
     }
 
     return record;
   }
 
-  async startProcessing(
-    key: string,
-    requestBody: any
-  ): Promise<boolean> {
+  async startProcessing(key: string, requestBody: any): Promise<boolean> {
     try {
       const expiresAt = new Date(Date.now() + 86400 * 1000); // 24 hours
 
-      await this.db.query(`
+      await this.db.query(
+        `
         INSERT INTO idempotency_keys (key, request_body, status, expires_at)
         VALUES ($1, $2, 'processing', $3)
-      `, [key, requestBody, expiresAt]);
+      `,
+        [key, requestBody, expiresAt],
+      );
 
       return true;
     } catch (error: any) {
-      if (error.code === '23505') { // Unique violation
+      if (error.code === "23505") {
+        // Unique violation
         return false;
       }
       throw error;
     }
   }
 
-  async completeRequest(
-    key: string,
-    responseBody: any
-  ): Promise<void> {
-    await this.db.query(`
+  async completeRequest(key: string, responseBody: any): Promise<void> {
+    await this.db.query(
+      `
       UPDATE idempotency_keys
       SET
         response_body = $1,
         status = 'completed',
         completed_at = NOW()
       WHERE key = $2
-    `, [responseBody, key]);
+    `,
+      [responseBody, key],
+    );
   }
 
-  async failRequest(
-    key: string,
-    errorMessage: string
-  ): Promise<void> {
-    await this.db.query(`
+  async failRequest(key: string, errorMessage: string): Promise<void> {
+    await this.db.query(
+      `
       UPDATE idempotency_keys
       SET
         error_message = $1,
         status = 'failed',
         completed_at = NOW()
       WHERE key = $2
-    `, [errorMessage, key]);
+    `,
+      [errorMessage, key],
+    );
   }
 
   async cleanup(): Promise<number> {
@@ -561,7 +555,7 @@ class IdempotentMessageProcessor {
       WHERE processed_at > NOW() - INTERVAL '24 hours'
     `);
 
-    result.rows.forEach(row => {
+    result.rows.forEach((row) => {
       this.processedMessages.add(row.message_id);
     });
   }
@@ -598,14 +592,17 @@ class IdempotentMessageProcessor {
 
   private async markAsProcessing(messageId: string): Promise<boolean> {
     try {
-      await this.db.query(`
+      await this.db.query(
+        `
         INSERT INTO processed_messages (message_id, status, processed_at)
         VALUES ($1, 'processing', NOW())
-      `, [messageId]);
+      `,
+        [messageId],
+      );
 
       return true;
     } catch (error: any) {
-      if (error.code === '23505') {
+      if (error.code === "23505") {
         return false;
       }
       throw error;
@@ -613,27 +610,30 @@ class IdempotentMessageProcessor {
   }
 
   private async markAsCompleted(messageId: string): Promise<void> {
-    await this.db.query(`
+    await this.db.query(
+      `
       UPDATE processed_messages
       SET status = 'completed', completed_at = NOW()
       WHERE message_id = $1
-    `, [messageId]);
+    `,
+      [messageId],
+    );
   }
 
-  private async markAsFailed(
-    messageId: string,
-    error: string
-  ): Promise<void> {
-    await this.db.query(`
+  private async markAsFailed(messageId: string, error: string): Promise<void> {
+    await this.db.query(
+      `
       UPDATE processed_messages
       SET status = 'failed', error = $2, completed_at = NOW()
       WHERE message_id = $1
-    `, [messageId, error]);
+    `,
+      [messageId, error],
+    );
   }
 
   private async handleMessage(message: Message): Promise<void> {
     // Actual message processing logic
-    console.log('Processing message:', message);
+    console.log("Processing message:", message);
   }
 }
 ```
@@ -641,6 +641,7 @@ class IdempotentMessageProcessor {
 ## Best Practices
 
 ### ✅ DO
+
 - Require idempotency keys for mutations
 - Store request and response together
 - Set appropriate TTL for idempotency records
@@ -651,6 +652,7 @@ class IdempotentMessageProcessor {
 - Use database constraints for atomicity
 
 ### ❌ DON'T
+
 - Apply idempotency to GET requests
 - Store idempotency data forever
 - Skip validation of request body

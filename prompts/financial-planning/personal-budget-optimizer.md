@@ -1,6 +1,7 @@
 # Personal Budget Optimizer
 
 ## Metadata
+
 - **ID**: `financial-personal-budget`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive personal finance coach that creates realistic budgets, optimizes
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating or restructuring a personal budget from scratch
 - Identifying expense reduction opportunities without sacrificing quality of life
 - Developing debt payoff strategies (credit cards, student loans, etc.)
@@ -25,6 +27,7 @@ A comprehensive personal finance coach that creates realistic budgets, optimizes
 - Establishing sustainable spending habits and tracking systems
 
 **Anti-patterns (when NOT to use):**
+
 - Business accounting or bookkeeping needs
 - Tax return preparation or filing
 - Investment selection or portfolio management
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 My monthly take-home pay is $4,200. I am 28, single, early in my career. Major expenses: Rent $1,200, car payment $350, car insurance $200, groceries $400. I think I overspend on dining out and online shopping. I have $8,000 in credit card debt (18% interest) and $25,000 in student loans (5%). Only $800 in savings right now. Goals: Build emergency fund, pay off credit cards, eventually save for a house. I can spend about 30 minutes per week on money management.
 
 ### Output
@@ -156,32 +160,36 @@ My monthly take-home pay is $4,200. I am 28, single, early in my career. Major e
 
 **Expense Optimization Opportunities:**
 
-| Change | Monthly Savings | Difficulty |
-|--------|-----------------|------------|
-| Meal planning (groceries) | $100 | Easy |
-| Reduce dining out | $200+ | Medium |
-| Subscription audit | $50-75 | Easy |
-| 24-hour shopping rule | $100+ | Medium |
-| **Total Potential Savings** | **$450-475** | |
+| Change                      | Monthly Savings | Difficulty |
+| --------------------------- | --------------- | ---------- |
+| Meal planning (groceries)   | $100            | Easy       |
+| Reduce dining out           | $200+           | Medium     |
+| Subscription audit          | $50-75          | Easy       |
+| 24-hour shopping rule       | $100+           | Medium     |
+| **Total Potential Savings** | **$450-475**    |            |
 
 **Debt Elimination Strategy (Avalanche Method):**
 
-*Phase 1: Credit Cards ($8,000 at 18%)*
+_Phase 1: Credit Cards ($8,000 at 18%)_
+
 - Extra payment: $500/month
 - Payoff timeline: 14 months
 - Interest saved vs. minimums: $1,200+
 
-*Phase 2: After Credit Card Payoff*
+_Phase 2: After Credit Card Payoff_
+
 - Redirect $500 to student loans + house savings
 - Student loans: $350/month extra (payoff in 4 years vs. 10)
 - House fund: $350/month ($4,200/year)
 
 **Emergency Fund Phases:**
+
 1. **Starter fund**: $1,000 in 3 months (at $350/month)
 2. **Pause during CC payoff**: Maintain $1,000 minimum
 3. **Full fund**: 3 months expenses ($7,500) after CC elimination
 
 **Weekly Money Date (30 minutes, Sunday):**
+
 - [ ] Check all account balances (5 min)
 - [ ] Review week's transactions against budget (10 min)
 - [ ] Plan upcoming week's expenses (5 min)
@@ -189,6 +197,7 @@ My monthly take-home pay is $4,200. I am 28, single, early in my career. Major e
 - [ ] Celebrate one win from the week (5 min)
 
 **Behavioral Success Strategies:**
+
 - **Shopping**: Add items to "want list" for 24 hours before purchasing
 - **Automation**: Transfer $350 to savings on payday before spending
 - **Dining**: Use cash/debit card with weekly limit for discretionary spending
@@ -197,6 +206,7 @@ My monthly take-home pay is $4,200. I am 28, single, early in my career. Major e
 ---
 
 ## Related Prompts
+
 - [Investment Planning Advisor](investment-planning-advisor.md) - Invest after emergency fund established
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Reduce tax burden to increase cash flow
 - [Debt Elimination Strategist](debt-elimination-strategist.md) - Deep dive on debt payoff strategies

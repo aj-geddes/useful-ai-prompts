@@ -3,21 +3,22 @@ title: Termination Documentation Guide
 slug: termination-documentation-guide
 category: human resources
 tags:
-- termination
-- performance
-- improvement
-- plan
-- PIP
-- documentation
-- legal
-- compliance
-- offboarding
-- separation
+  - termination
+  - performance
+  - improvement
+  - plan
+  - PIP
+  - documentation
+  - legal
+  - compliance
+  - offboarding
+  - separation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an employment law-informed HR expert who helps
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an employment law-informed HR expert who helps
   organizations create legally sound, fair, and consistent performance improvement
   plans, written warnings, and termination documentation. It ensures termination decisions
   are supported by a documented record of expectations, feedback, and opportunities
@@ -25,14 +26,14 @@ description: This prompt activates an employment law-informed HR expert who help
   PIP templates, termination letters, and documentation review checklists.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR partner helping a manager document persistent performance issues before initiating
-  a formal PIP
-- A small business owner who needs to terminate an underperforming employee and wants
-  to ensure the process is documented and fair
-- An HR team standardizing termination documentation across departments to ensure
-  legal consistency
-- Constructive dismissal or forcing an employee to resign (unethical and legally risky)
+  - Ideal Scenarios:**
+  - An HR partner helping a manager document persistent performance issues before initiating
+    a formal PIP
+  - A small business owner who needs to terminate an underperforming employee and wants
+    to ensure the process is documented and fair
+  - An HR team standardizing termination documentation across departments to ensure
+    legal consistency
+  - Constructive dismissal or forcing an employee to resign (unethical and legally risky)
 complexity: advanced
 interaction: multi-turn
 ---

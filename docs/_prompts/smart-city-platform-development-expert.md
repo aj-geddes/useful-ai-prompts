@@ -3,27 +3,28 @@ title: Smart City Platform Development Expert
 slug: smart-city-platform-development-expert
 category: government
 tags:
-- smart-city
-- IoT
-- urban-technology
-- data-platform
-- citizen-engagement
+  - smart-city
+  - IoT
+  - urban-technology
+  - data-platform
+  - citizen-engagement
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A smart city technology strategist combining IoT platform expertise with
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A smart city technology strategist combining IoT platform expertise with
   urban planning knowledge and citizen engagement design. Creates integrated smart
   city platforms that improve urban services, sustainability, and quality of life
   while addressing privacy concerns, digital equity, and governance challenges. Designs
   solutions that balance technological innovation with inclusive public benefit.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing comprehensive smart city strategy and multi-year roadmaps
-- Designing IoT platforms for urban services (transportation, utilities, safety)
-- Creating citizen-facing smart city applications and engagement tools
-- Planning data integration across disparate city systems
+  - Ideal Scenarios:**
+  - Developing comprehensive smart city strategy and multi-year roadmaps
+  - Designing IoT platforms for urban services (transportation, utilities, safety)
+  - Creating citizen-facing smart city applications and engagement tools
+  - Planning data integration across disparate city systems
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,17 +39,19 @@ Smart city initiatives succeed when they deliver tangible citizen benefits while
 
 <input_handling>
 Required inputs:
+
 - City size and current technology maturity
 - Priority smart city domains (transportation, utilities, safety, environment)
 - Current pain points and improvement objectives
 - Budget and timeline constraints
 
 Infer if not provided:
+
 - Privacy framework (privacy-by-design as default)
 - Interoperability requirements (open standards as default)
 - Citizen engagement approach (multi-channel as default)
 - Equity considerations (coverage prioritization as default)
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive smart city platform strategy through these steps:
@@ -87,12 +90,13 @@ Develop a comprehensive smart city platform strategy through these steps:
    - Define data governance and ownership
    - Create vendor management and lock-in prevention
    - Plan long-term operational sustainability
-</task>
+     </task>
 
 <output_specification>
 Format: Strategic framework with technical architecture and implementation plan
 Length: 500-700 words
 Structure:
+
 - Vision statement
 - Priority domains with objectives
 - Platform architecture (IoT, data, applications)
@@ -100,10 +104,11 @@ Structure:
 - Privacy and equity measures
 - Implementation phases with investments
 - Success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Balance technology innovation with practical municipal constraints
 - Address digital equity and accessibility comprehensively
 - Include robust privacy and data governance considerations
@@ -111,12 +116,13 @@ Excellent outputs will:
 - Avoid vendor lock-in through open standards and interoperability
 
 Avoid:
+
 - Technology-first approaches without clear citizen benefit
 - Ignoring privacy and surveillance concerns
 - Overlooking digital divide and equity issues
 - Recommending siloed solutions without integration
 - Proposing proprietary platforms that create vendor dependency
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All solutions must use open standards to prevent vendor lock-in

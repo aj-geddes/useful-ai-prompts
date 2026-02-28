@@ -1,13 +1,14 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Infrastructure automation and configuration management using Ansible
+date: "2025-01-01"
+description:
+  Infrastructure automation and configuration management using Ansible
   playbooks, roles, and inventory. Use for deploying applications, patching, and managing
   servers.
 layout: skill
 slug: ansible-automation
 tags:
-- deployment
+  - deployment
 title: ansible-automation
 ---
 
@@ -349,6 +350,7 @@ ansible-playbook -i inventory/hosts.ini site.yml -t deploy
 ## Best Practices
 
 ### ✅ DO
+
 - Use roles for modularity
 - Implement proper error handling
 - Use templates for configuration
@@ -359,6 +361,7 @@ ansible-playbook -i inventory/hosts.ini site.yml -t deploy
 - Use vault for sensitive data
 
 ### ❌ DON'T
+
 - Use command/shell without conditionals
 - Copy files without templates
 - Run without check mode first

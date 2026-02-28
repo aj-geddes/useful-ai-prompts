@@ -442,6 +442,7 @@ class OfflineItemsViewModel @Inject constructor(
 ## Best Practices
 
 ### ✅ DO
+
 - Implement robust local storage
 - Use automatic sync when online
 - Provide visual feedback for offline status
@@ -454,6 +455,7 @@ class OfflineItemsViewModel @Inject constructor(
 - Monitor storage usage
 
 ### ❌ DON'T
+
 - Assume constant connectivity
 - Sync large files frequently
 - Ignore storage limitations

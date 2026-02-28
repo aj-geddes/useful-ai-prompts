@@ -1,6 +1,7 @@
 # Predictive Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-predictive-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds forecasts and predictive models for demand planning, risk prediction, and business forecasting. Delivers accurate predictions with confidence intervals, key drivers, and actionable recommendations.
 
 ## When to Use
+
 - Planning inventory or resource allocation
 - Forecasting sales, demand, or revenue
 - Predicting customer behavior or churn
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Predict monthly product demand for inventory planning, next 6 months (July-December), by product category and warehouse location. 3 years of daily sales data. Strong seasonality (peak Nov-Dec), promotions, new product launches. External factors: weather (affects certain categories), competitor pricing. 95% data complete, some stockout data missing. Need +/-15% accuracy at category level for procurement decisions.
 ```
 
 ### Output
+
 ```
 **6-Month Demand Forecast Analysis**
 
@@ -171,6 +176,7 @@ Monthly: Rerun model, adjust safety stock, update allocations
 ---
 
 ## Related Prompts
+
 - `analysis-pattern-recognition-expert`: Pattern detection and anomaly analysis
 - `analysis-data-analysis-expert`: Exploratory data analysis
 - `analysis-risk-assessment-expert`: Risk prediction and assessment

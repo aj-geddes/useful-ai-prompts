@@ -6,7 +6,19 @@ slug: human resources
 icon: fas fa-users
 description: "Expert AI prompts for HR professionals: talent acquisition, performance management, compensation, DEI strategy, workforce planning, and HR policy writing."
 seo_title: "Human Resources AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [talent acquisition, performance management, compensation, diversity & inclusion, workforce planning, HR policy, employee relations, learning & development, succession planning, offboarding]
+tags:
+  [
+    talent acquisition,
+    performance management,
+    compensation,
+    diversity & inclusion,
+    workforce planning,
+    HR policy,
+    employee relations,
+    learning & development,
+    succession planning,
+    offboarding,
+  ]
 ---
 
 The Human Resources category provides AI prompts for HR business partners, talent acquisition specialists, compensation analysts, and HR leaders. These prompts produce HR deliverables grounded in employment law considerations, organizational behavior frameworks, and current HR practice.

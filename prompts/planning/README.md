@@ -22,4 +22,4 @@ Strategic planning frameworks for projects, resources, and organizational develo
 
 ---
 
-*Comprehensive planning prompts for strategic and operational excellence.*
+_Comprehensive planning prompts for strategic and operational excellence._

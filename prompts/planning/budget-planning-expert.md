@@ -1,6 +1,7 @@
 # Budget Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-budget`
 - **Version**: 1.1.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A budget planning specialist that helps you create comprehensive, realistic budg
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating annual operating budgets for organizations
 - Developing project cost estimates and financial plans
 - Building financial forecasts with multiple scenarios
@@ -25,6 +27,7 @@ A budget planning specialist that helps you create comprehensive, realistic budg
 - Planning departmental or team budgets
 
 **Anti-Patterns (Don't Use For):**
+
 - Personal finance advice and individual budgeting
 - Tax planning and compliance
 - Investment portfolio management
@@ -122,6 +125,7 @@ Create a comprehensive budget plan following these steps:
 ## Example Usage
 
 ### Input
+
 Organization: Early-stage Series A startup. Budget scope: Annual operating budget for 2025. Size: $12-15M range. Revenue: SaaS subscriptions (85%), professional services (15%). Key expenses: Salaries (60%), marketing (20%), operations (15%). Situation: Currently burning $500k/month, need path to profitability. Goals: Reach break-even by Q4, maintain 18-month runway.
 
 ### Output
@@ -130,34 +134,35 @@ Organization: Early-stage Series A startup. Budget scope: Annual operating budge
 
 This budget transitions the company from growth-at-all-costs to sustainable growth, achieving break-even by Q4 2025 while maintaining 18-month cash runway throughout.
 
-| Metric | 2025 Budget |
-|--------|-------------|
-| Total Revenue | $14.2M |
-| Operating Expenses | $14.0M |
-| Year-end Position | Break-even |
-| Cash Runway | 18+ months maintained |
-| Headcount Growth | 45 -> 62 (+38%) |
+| Metric             | 2025 Budget           |
+| ------------------ | --------------------- |
+| Total Revenue      | $14.2M                |
+| Operating Expenses | $14.0M                |
+| Year-end Position  | Break-even            |
+| Cash Runway        | 18+ months maintained |
+| Headcount Growth   | 45 -> 62 (+38%)       |
 
 ---
 
 **Revenue Forecast**
 
-| Revenue Stream | 2024 Actual | 2025 Budget | Growth | Assumption |
-|----------------|-------------|-------------|--------|------------|
-| SaaS Subscriptions | $6.5M | $12.1M | +86% | Net revenue retention 115%, new logo growth 40% |
-| Professional Services | $1.2M | $2.1M | +75% | Implementation revenue tied to enterprise growth |
-| **Total Revenue** | **$7.7M** | **$14.2M** | **+84%** | |
+| Revenue Stream        | 2024 Actual | 2025 Budget | Growth   | Assumption                                       |
+| --------------------- | ----------- | ----------- | -------- | ------------------------------------------------ |
+| SaaS Subscriptions    | $6.5M       | $12.1M      | +86%     | Net revenue retention 115%, new logo growth 40%  |
+| Professional Services | $1.2M       | $2.1M       | +75%     | Implementation revenue tied to enterprise growth |
+| **Total Revenue**     | **$7.7M**   | **$14.2M**  | **+84%** |                                                  |
 
 **Quarterly Revenue Build**
 
-| Quarter | Revenue | % of Year | Key Drivers |
-|---------|---------|-----------|-------------|
-| Q1 | $2.8M | 20% | Foundation - renewals, Q4 pipeline closes |
-| Q2 | $3.2M | 23% | Expansion - upsells, new enterprise deals |
-| Q3 | $3.7M | 26% | Mid-market traction, services ramp |
-| Q4 | $4.5M | 31% | Year-end enterprise deals, full team productivity |
+| Quarter | Revenue | % of Year | Key Drivers                                       |
+| ------- | ------- | --------- | ------------------------------------------------- |
+| Q1      | $2.8M   | 20%       | Foundation - renewals, Q4 pipeline closes         |
+| Q2      | $3.2M   | 23%       | Expansion - upsells, new enterprise deals         |
+| Q3      | $3.7M   | 26%       | Mid-market traction, services ramp                |
+| Q4      | $4.5M   | 31%       | Year-end enterprise deals, full team productivity |
 
-*Key Assumptions:*
+_Key Assumptions:_
+
 - Average contract value grows 15% (moving upmarket)
 - Churn stays below 5% annually
 - Sales cycle remains 45-60 days
@@ -167,36 +172,37 @@ This budget transitions the company from growth-at-all-costs to sustainable grow
 
 **Operating Expense Summary**
 
-| Department | 2025 Budget | % of Revenue | Key Line Items |
-|------------|-------------|--------------|----------------|
-| Engineering | $4.8M | 34% | 22 FTEs, infrastructure, tools |
-| Sales & Marketing | $4.2M | 30% | 15 FTEs, demand gen, events |
-| Customer Success | $1.8M | 13% | 10 FTEs, support tools |
-| G&A | $1.6M | 11% | 8 FTEs, legal, finance |
-| Operations | $1.6M | 11% | Office, travel, misc |
-| **Total** | **$14.0M** | **99%** | |
+| Department        | 2025 Budget | % of Revenue | Key Line Items                 |
+| ----------------- | ----------- | ------------ | ------------------------------ |
+| Engineering       | $4.8M       | 34%          | 22 FTEs, infrastructure, tools |
+| Sales & Marketing | $4.2M       | 30%          | 15 FTEs, demand gen, events    |
+| Customer Success  | $1.8M       | 13%          | 10 FTEs, support tools         |
+| G&A               | $1.6M       | 11%          | 8 FTEs, legal, finance         |
+| Operations        | $1.6M       | 11%          | Office, travel, misc           |
+| **Total**         | **$14.0M**  | **99%**      |                                |
 
 **Expense Phasing**
 
-| Quarter | Expenses | Hiring | Cash Burn |
-|---------|----------|--------|-----------|
-| Q1 | $3.2M | +5 FTEs | $400K/month |
-| Q2 | $3.4M | +6 FTEs | $250K/month |
-| Q3 | $3.6M | +4 FTEs | $100K/month |
-| Q4 | $3.8M | +2 FTEs | Break-even |
+| Quarter | Expenses | Hiring  | Cash Burn   |
+| ------- | -------- | ------- | ----------- |
+| Q1      | $3.2M    | +5 FTEs | $400K/month |
+| Q2      | $3.4M    | +6 FTEs | $250K/month |
+| Q3      | $3.6M    | +4 FTEs | $100K/month |
+| Q4      | $3.8M    | +2 FTEs | Break-even  |
 
 ---
 
 **Cash Flow Summary**
 
-| Metric | Q1 | Q2 | Q3 | Q4 |
-|--------|----|----|----|----|
-| Starting Cash | $9.0M | $7.8M | $7.0M | $6.7M |
-| Cash from Ops | ($1.2M) | ($0.8M) | ($0.3M) | $0.3M |
-| Ending Cash | $7.8M | $7.0M | $6.7M | $7.0M |
-| Runway (months) | 20 | 18 | 18 | 20+ |
+| Metric          | Q1      | Q2      | Q3      | Q4    |
+| --------------- | ------- | ------- | ------- | ----- |
+| Starting Cash   | $9.0M   | $7.8M   | $7.0M   | $6.7M |
+| Cash from Ops   | ($1.2M) | ($0.8M) | ($0.3M) | $0.3M |
+| Ending Cash     | $7.8M   | $7.0M   | $6.7M   | $7.0M |
+| Runway (months) | 20      | 18      | 18      | 20+   |
 
-*Working Capital Notes:*
+_Working Capital Notes:_
+
 - Assumes 30-day average payment terms
 - Annual contracts billed quarterly in advance
 - Professional services billed monthly in arrears
@@ -205,41 +211,43 @@ This budget transitions the company from growth-at-all-costs to sustainable grow
 
 **Scenario Planning**
 
-| Scenario | Revenue Impact | Response | Outcome |
-|----------|----------------|----------|---------|
-| **Best Case** (+30%) | $18.4M revenue | Reinvest $1.5M in growth, accelerate hiring | Profitable Q3, growth mode |
-| **Base Case** | $14.2M revenue | Execute current plan | Break-even Q4 |
+| Scenario              | Revenue Impact | Response                                     | Outcome                               |
+| --------------------- | -------------- | -------------------------------------------- | ------------------------------------- |
+| **Best Case** (+30%)  | $18.4M revenue | Reinvest $1.5M in growth, accelerate hiring  | Profitable Q3, growth mode            |
+| **Base Case**         | $14.2M revenue | Execute current plan                         | Break-even Q4                         |
 | **Worst Case** (-25%) | $10.6M revenue | Hiring freeze, marketing -40%, extend runway | 20+ months runway, profitable Q2 2026 |
 
 **Trigger Points and Responses:**
 
-| Trigger | Action |
-|---------|--------|
-| Revenue >10% above plan for 2 quarters | Release growth reserve, accelerate enterprise hiring |
+| Trigger                                | Action                                                |
+| -------------------------------------- | ----------------------------------------------------- |
+| Revenue >10% above plan for 2 quarters | Release growth reserve, accelerate enterprise hiring  |
 | Revenue >10% below plan for 2 quarters | Pause non-critical hiring, reduce marketing spend 20% |
-| Cash <$6M | Immediate hiring freeze, renegotiate vendor contracts |
-| Cash <$5M | RIF planning, survival mode |
+| Cash <$6M                              | Immediate hiring freeze, renegotiate vendor contracts |
+| Cash <$5M                              | RIF planning, survival mode                           |
 
 ---
 
 **Budget Controls and Monitoring**
 
-*Monthly Reviews (Week 1 of each month):*
+_Monthly Reviews (Week 1 of each month):_
+
 - Revenue vs. forecast variance report
 - Department expense vs. budget
 - Cash position and runway calculation
 - Pipeline coverage for next quarter
 
-*Variance Thresholds:*
+_Variance Thresholds:_
 
-| Variance | Action Required |
-|----------|-----------------|
-| <5% | Information only |
-| 5-10% | Explanation required, plan if trend continues |
-| >10% | Immediate action plan, board notification |
-| >20% | Emergency review, scenario response activation |
+| Variance | Action Required                                |
+| -------- | ---------------------------------------------- |
+| <5%      | Information only                               |
+| 5-10%    | Explanation required, plan if trend continues  |
+| >10%     | Immediate action plan, board notification      |
+| >20%     | Emergency review, scenario response activation |
 
-*Quarterly Board Reporting:*
+_Quarterly Board Reporting:_
+
 - Variance analysis with commentary
 - Updated full-year forecast
 - Scenario likelihood assessment
@@ -248,6 +256,7 @@ This budget transitions the company from growth-at-all-costs to sustainable grow
 ---
 
 ## Related Prompts
+
 - [Strategic Planning Expert](strategic-planning-expert.md) - For strategic alignment
 - [Resource Allocation Expert](resource-allocation-expert.md) - For resource optimization
 - [Financial Modeling Expert](../analysis/financial-modeling-expert.md) - For detailed financial models

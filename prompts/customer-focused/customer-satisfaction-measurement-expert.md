@@ -1,6 +1,7 @@
 # Customer Satisfaction Measurement Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-satisfaction-measurement-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Design comprehensive customer satisfaction measurement systems that provide acti
 ## When to Use
 
 ### Ideal Scenarios
+
 - Implementing or redesigning customer satisfaction measurement programs
 - Moving from ad-hoc surveys to systematic feedback collection
 - Connecting satisfaction metrics to business outcomes (retention, revenue)
@@ -26,6 +28,7 @@ Design comprehensive customer satisfaction measurement systems that provide acti
 - Integrating satisfaction data into operational dashboards
 
 ### Anti-Patterns (When Not to Use)
+
 - One-time feedback collection for specific initiative (use targeted survey)
 - When organization has no capacity to act on feedback
 - Purely compliance-driven measurement with no improvement intent
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Current metrics: Only track NPS annually, currently at 32
 2. Collection methods: Email survey sent once per year to all customers
@@ -132,20 +136,21 @@ Your current annual NPS of 32 provides limited actionability due to infrequent c
 
 **Relationship Metrics (Account-Level Health):**
 
-| Metric | Purpose | Calculation | Collection | Target |
-|--------|---------|-------------|------------|--------|
-| NPS | Loyalty and advocacy | % Promoters minus % Detractors | Quarterly | 50+ |
-| Customer Health Score | Composite account health | Usage (40%) + Engagement (30%) + Satisfaction (30%) | Continuous | 80+ |
+| Metric                | Purpose                  | Calculation                                         | Collection | Target |
+| --------------------- | ------------------------ | --------------------------------------------------- | ---------- | ------ |
+| NPS                   | Loyalty and advocacy     | % Promoters minus % Detractors                      | Quarterly  | 50+    |
+| Customer Health Score | Composite account health | Usage (40%) + Engagement (30%) + Satisfaction (30%) | Continuous | 80+    |
 
 **Transactional Metrics (Touchpoint-Level):**
 
-| Metric | Purpose | Calculation | Collection | Target |
-|--------|---------|-------------|------------|--------|
-| CSAT | Transaction satisfaction | Average rating (1-5 scale) | Post-interaction | 4.5+ |
-| CES | Effort required | Average effort score (1-5, lower is better) | After support | 2.0 or less |
-| Onboarding Completion Score | Onboarding success | Weighted milestone completion | Day 7, 30, 60 | 85%+ |
+| Metric                      | Purpose                  | Calculation                                 | Collection       | Target      |
+| --------------------------- | ------------------------ | ------------------------------------------- | ---------------- | ----------- |
+| CSAT                        | Transaction satisfaction | Average rating (1-5 scale)                  | Post-interaction | 4.5+        |
+| CES                         | Effort required          | Average effort score (1-5, lower is better) | After support    | 2.0 or less |
+| Onboarding Completion Score | Onboarding success       | Weighted milestone completion               | Day 7, 30, 60    | 85%+        |
 
 **Why This Combination:**
+
 - NPS captures relationship strength and predicts retention
 - CSAT measures immediate satisfaction after specific interactions
 - CES identifies friction that causes churn even with satisfied customers
@@ -183,12 +188,14 @@ Your current annual NPS of 32 provides limited actionability due to infrequent c
 **SURVEY DESIGN BEST PRACTICES**
 
 **Question Design:**
+
 - Use consistent rating scales across surveys (1-5 for CSAT, 0-10 for NPS)
 - Place quantitative rating questions first, open-ended last
 - Limit surveys to 3-5 questions maximum (every additional question reduces response by 5-10%)
 - Include one open-ended question for context
 
 **Delivery Optimization:**
+
 - Send surveys from a recognizable person (CSM name), not generic address
 - Mobile-optimize all surveys (40%+ of B2B opens are mobile)
 - Include estimated completion time ("Takes 30 seconds")
@@ -197,11 +204,13 @@ Your current annual NPS of 32 provides limited actionability due to infrequent c
 **Sample Questions:**
 
 Onboarding Day 7:
+
 1. "How confident are you in using [Product] for your daily work?" (1-5 scale)
 2. "Was your onboarding experience clear and well-organized?" (1-5 scale)
 3. "What's your biggest question or blocker right now?" (Open text)
 
 Support CES:
+
 1. "How easy was it to get your issue resolved?" (1-5 scale, 1=Very Easy)
 2. "How satisfied are you with the support you received?" (1-5 scale)
 3. "Anything else we should know?" (Optional open text)
@@ -213,12 +222,12 @@ Support CES:
 **Driver Analysis:**
 Quarterly, analyze which factors most influence NPS and retention:
 
-| Potential Driver | Analysis Method | Data Source |
-|------------------|-----------------|-------------|
-| Onboarding quality | Correlation: Day 30 CSAT to 12-month retention | Survey + CRM |
-| Support experience | Correlation: CES scores to churn | Survey + Support |
-| Product usage | Correlation: Feature adoption to NPS | Product analytics |
-| CS engagement | Correlation: QBR attendance to renewal | CS data |
+| Potential Driver   | Analysis Method                                | Data Source       |
+| ------------------ | ---------------------------------------------- | ----------------- |
+| Onboarding quality | Correlation: Day 30 CSAT to 12-month retention | Survey + CRM      |
+| Support experience | Correlation: CES scores to churn               | Survey + Support  |
+| Product usage      | Correlation: Feature adoption to NPS           | Product analytics |
+| CS engagement      | Correlation: QBR attendance to renewal         | CS data           |
 
 **Segmentation Analysis:**
 | Segment | Comparison Focus |
@@ -229,6 +238,7 @@ Quarterly, analyze which factors most influence NPS and retention:
 | Health score cohort | Risk identification, intervention timing |
 
 **Reporting Cadence:**
+
 - Weekly: Support CSAT and CES trends, at-risk alerts
 - Monthly: NPS trend, segment analysis, driver insights
 - Quarterly: Executive dashboard, benchmark comparison, improvement tracking
@@ -240,12 +250,14 @@ Quarterly, analyze which factors most influence NPS and retention:
 **Tier 1: Immediate Response (Within 24 Hours)**
 
 Triggers:
+
 - NPS score 0-6 (Detractor)
 - CSAT 1-2 (Very Dissatisfied)
 - CES 4-5 (High Effort)
 - Negative open-text sentiment
 
 Process:
+
 1. Automated alert to account CSM and CS manager
 2. CSM reviews feedback and account context
 3. Personal outreach within 24 hours via phone or email
@@ -256,6 +268,7 @@ Process:
 **Tier 2: Pattern Response (Weekly)**
 
 Process:
+
 1. VoC analyst reviews weekly feedback themes
 2. Identifies patterns affecting multiple customers
 3. Creates issue tickets for Product, Support, or Operations
@@ -264,6 +277,7 @@ Process:
 **Tier 3: Strategic Response (Quarterly)**
 
 Process:
+
 1. Quarterly deep-dive analysis of satisfaction trends
 2. Driver analysis to identify highest-impact improvements
 3. Executive presentation with recommended actions
@@ -276,14 +290,15 @@ Process:
 
 **Score Targets:**
 
-| Metric | Current | 6-Month Target | 12-Month Target |
-|--------|---------|----------------|-----------------|
-| NPS | 32 | 40 | 50 |
-| Onboarding CSAT (Day 30) | Not measured | 4.2 | 4.5 |
-| Support CES | Not measured | 2.5 | 2.0 |
-| Support CSAT | Not measured | 4.3 | 4.5 |
+| Metric                   | Current      | 6-Month Target | 12-Month Target |
+| ------------------------ | ------------ | -------------- | --------------- |
+| NPS                      | 32           | 40             | 50              |
+| Onboarding CSAT (Day 30) | Not measured | 4.2            | 4.5             |
+| Support CES              | Not measured | 2.5            | 2.0             |
+| Support CSAT             | Not measured | 4.3            | 4.5             |
 
 **Action Effectiveness Measurement:**
+
 - Baseline satisfaction before intervention
 - Measure same cohort after intervention
 - Control group comparison where possible
@@ -302,24 +317,28 @@ Process:
 **STAKEHOLDER DASHBOARDS**
 
 **CEO/Executive:**
+
 - Overall NPS trend with benchmark comparison
 - Account health score distribution
 - Top 3 satisfaction drivers
 - Key improvement initiative status
 
 **Product Team:**
+
 - Feature-specific satisfaction scores
 - Feature requests from open-text analysis
 - Usage correlation with satisfaction
 - Competitive mention frequency
 
 **Customer Success:**
+
 - Account-level health scores and trends
 - At-risk account alerts
 - CSM performance by account satisfaction
 - Renewal forecast with satisfaction input
 
 **Support Team:**
+
 - CES and CSAT by agent, team, issue type
 - First-response time vs. satisfaction correlation
 - Training need identification from feedback themes
@@ -330,24 +349,28 @@ Process:
 **IMPLEMENTATION PHASES**
 
 **Phase 1 (Weeks 1-4):** Foundation
+
 - Select and implement survey tool (recommend: Delighted, ChurnZero, or Qualtrics)
 - Design surveys for support and onboarding
 - Set up closed-loop alert workflow
 - Train CS team on response process
 
 **Phase 2 (Weeks 5-8):** Launch
+
 - Deploy support CES/CSAT surveys
 - Deploy onboarding pulse surveys
 - Activate closed-loop response process
 - Begin weekly reporting
 
 **Phase 3 (Weeks 9-12):** Expand
+
 - Shift NPS to quarterly collection
 - Implement QBR and renewal surveys
 - Build driver analysis capability
 - Launch stakeholder dashboards
 
 **Phase 4 (Ongoing):** Optimize
+
 - Refine survey timing and questions based on response rates
 - Deepen driver analysis
 - Connect satisfaction to retention and revenue outcomes

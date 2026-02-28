@@ -1,13 +1,14 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Design color palettes that are accessible to all users including those
+date: "2025-01-01"
+description:
+  Design color palettes that are accessible to all users including those
   with color blindness. Ensure sufficient contrast, meaningful use of color, and inclusive
   design.
 layout: skill
 slug: color-accessibility
 tags:
-- development
+  - development
 title: color-accessibility
 ---
 
@@ -45,7 +46,6 @@ WCAG AAA (Enhanced):
   - Better for accessibility
 
 ---
-
 Testing Contrast:
 
 Tools:
@@ -54,8 +54,7 @@ Tools:
   - Figma plugins
   - Browser DevTools
 
-Formula (WCAG):
-  Contrast = (L1 + 0.05) / (L2 + 0.05)
+Formula (WCAG): Contrast = (L1 + 0.05) / (L2 + 0.05)
   Where L = relative luminance
 
 Example Pairs:
@@ -168,7 +167,6 @@ Info:
   Don't: Use ONLY blue
 
 ---
-
 Data Visualization:
 
 Charts & Graphs:
@@ -188,7 +186,6 @@ Heat Maps:
   - Test with simulator
 
 ---
-
 UI Component States:
 
 Button States:
@@ -222,10 +219,10 @@ class ColorAccessibilityTesting {
       colorblind_test: this.simulateColorBlindness(palette),
       usage_test: this.testColorUsage(palette),
       tools_used: [
-        'WebAIM Contrast Checker',
-        'Color Oracle simulator',
-        'WAVE accessibility checker'
-      ]
+        "WebAIM Contrast Checker",
+        "Color Oracle simulator",
+        "WAVE accessibility checker",
+      ],
     };
   }
 
@@ -238,7 +235,7 @@ class ColorAccessibilityTesting {
         color: color,
         luminance: contrast,
         passes_aa: contrast >= 4.5,
-        passes_aaa: contrast >= 7.0
+        passes_aaa: contrast >= 7.0,
       });
     }
 
@@ -250,7 +247,7 @@ class ColorAccessibilityTesting {
       protanopia: this.convertToProtanopia(palette),
       deuteranopia: this.convertToDeuteranopia(palette),
       tritanopia: this.convertToTritanopia(palette),
-      all_distinguishable: this.checkDistinguishability(palette)
+      all_distinguishable: this.checkDistinguishability(palette),
     };
   }
 }
@@ -259,6 +256,7 @@ class ColorAccessibilityTesting {
 ## Best Practices
 
 ### ✅ DO
+
 - Ensure 4.5:1 contrast minimum (WCAG AA)
 - Test with color blindness simulator
 - Use patterns or icons with color
@@ -271,6 +269,7 @@ class ColorAccessibilityTesting {
 - Include focus indicators
 
 ### ❌ DON'T
+
 - Use color alone to convey information
 - Create low-contrast text
 - Assume users see colors correctly

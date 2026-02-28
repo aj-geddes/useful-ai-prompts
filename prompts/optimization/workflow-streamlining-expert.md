@@ -1,6 +1,7 @@
 # Workflow Streamlining Expert
 
 ## Metadata
+
 - **ID**: `optimization-workflow-streamlining`
 - **Version**: 1.0.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Streamlines complex workflows by eliminating unnecessary steps, automating repet
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Workflows with many manual handoffs creating delays
 - Repetitive tasks consuming significant staff time
 - Multiple systems requiring duplicate data entry
@@ -25,6 +27,7 @@ Streamlines complex workflows by eliminating unnecessary steps, automating repet
 - Information getting lost or delayed between teams
 
 **Anti-Patterns (When NOT to Use):**
+
 - Strategic process redesign requiring organizational change
 - System selection and technology procurement
 - Organizational restructuring
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our content publishing workflow takes 2 weeks with 8 approval steps across 4 departments (marketing, legal, brand, executive). The main bottlenecks are legal review and executive approval. We want to reduce the cycle time to under 1 week."
 
 ### Output
@@ -113,6 +117,7 @@ Avoid:
 **1. Current Workflow Analysis**
 
 Process map:
+
 1. Content creation (Marketing) - 2-3 days
 2. Initial review (Marketing Manager) - 1 day
 3. Brand review (Brand team) - 1-2 days
@@ -126,6 +131,7 @@ Timeline: 10-14 days average, up to 3 weeks with revisions
 Bottlenecks: Legal (3 days wait) and Executive (2 days wait)
 
 Pain points identified:
+
 - Sequential approvals where each waits for previous completion
 - Inconsistent feedback format (email, doc comments, verbal)
 - Revision loops restart the entire process
@@ -137,23 +143,28 @@ Pain points identified:
 Redesigned process:
 
 Step 1: Content creation with templates (Marketing) - 1-2 days
+
 - Improvement: Pre-approved templates reduce variation
 - Checklists prevent common legal and brand issues upfront
 
 Step 2: Parallel review (Brand + Legal + Manager) - 2 days max
+
 - Improvement: Reviews happen simultaneously, not sequentially
 - Single shared document with consolidated feedback
 
 Step 3: Conditional executive review - 1 day (if needed)
+
 - Improvement: Tiered approval based on risk and sensitivity
 - Low-risk content: No executive review needed
 - High-risk content: Executive review required
 
 Step 4: Revision (if needed) - 1 day
+
 - Improvement: Single revision cycle with all feedback addressed
 - Clear decision: Approve or one more revision maximum
 
 Step 5: Automated publishing - Same day
+
 - Improvement: Scheduled publishing, automated formatting
 - No manual handoff to web team
 
@@ -170,11 +181,13 @@ Approval tiering:
 **3. Technology Stack**
 
 Current tools:
+
 - Content: Google Docs
 - Review: Email and document comments
 - Publishing: CMS with manual upload
 
 Recommended additions:
+
 1. Workflow automation platform (Asana, Monday, or Notion)
    - Automated routing based on content type
    - Status visibility for all stakeholders
@@ -201,30 +214,35 @@ Recommended additions:
 **4. Implementation**
 
 Phase 1 (Week 1-2): Foundation
+
 - Define approval tiers and criteria with stakeholders
 - Configure workflow tool with routing rules
 - Create content templates for top 5 content types
 - Train content team on new process
 
 Phase 2 (Week 3-4): Pilot
+
 - Pilot with one content type (blog posts)
 - Test parallel review process
 - Gather feedback from reviewers
 - Adjust templates and routing as needed
 
 Phase 3 (Week 5-6): Rollout
+
 - Expand to all content types
 - Full team training
 - Retire old approval email process
 - Monitor and adjust
 
 Change management:
+
 - Communication: Explain benefits for each stakeholder group
 - Training: 30-minute session per team
 - Support: Designated workflow admin for questions
 - Celebration: Share time savings and faster publishing wins
 
 Success metrics:
+
 - Cycle time: 14 days to 6 days (target)
 - Revision loops: Reduce by 50%
 - Stakeholder satisfaction: Quarterly survey

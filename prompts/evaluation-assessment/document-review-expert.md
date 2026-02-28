@@ -1,6 +1,7 @@
 # Document Review Expert
 
 ## Metadata
+
 - **ID**: `evaluation-document-review`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Content
@@ -18,12 +19,14 @@ Review and improve documents for clarity, accuracy, and effectiveness. Evaluates
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing business documents before distribution
 - Improving technical documentation clarity
 - Ensuring reports are executive-ready
 - Checking content for consistency and accuracy
 
 **Anti-patterns:**
+
 - Creative writing feedback requiring artistic perspective
 - Legal document review requiring attorney expertise
 - Highly technical content outside your domain knowledge
@@ -97,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Review this executive summary for our board meeting. Audience is non-technical board members. Concerned about length and clarity."
 
 "Q3 saw significant progress on our digital transformation initiative. We implemented the new CRM system which was a major undertaking that required extensive resources and coordination across multiple departments. Customer satisfaction increased. Revenue grew. We also launched the mobile app which users seem to like based on early feedback. There were some challenges with the ERP migration but we're working through them. Next quarter we plan to continue these efforts and expand into new markets."
 
 ### Output
+
 **Document Review: Board Executive Summary**
 
 **Overall Assessment**
@@ -127,6 +132,7 @@ The summary covers key topics but lacks the specificity and structure board memb
 **Structural Recommendations**
 
 Restructure using executive summary format:
+
 ```
 **Key Highlights** (2-3 bullet points with metrics)
 **Progress Against Objectives** (brief table format)
@@ -136,6 +142,7 @@ Restructure using executive summary format:
 ```
 
 **Language Improvements**
+
 - Replace "significant progress" with specific accomplishments
 - Remove filler phrases like "which was a major undertaking"
 - Use active voice: "We implemented" is good, continue this pattern
@@ -143,6 +150,7 @@ Restructure using executive summary format:
 
 **Suggested Revision**
 "Q3 Digital Transformation Progress:
+
 - CRM Implementation: Completed on schedule; customer satisfaction up 12%
 - Mobile App Launch: 4.6 star rating, 15,000 downloads in first month
 - Revenue: $2.4M (+8% vs. Q3 last year)
@@ -152,5 +160,6 @@ Challenge: ERP migration delayed 3 weeks due to data quality issues. Mitigation 
 Q4 Priorities: Complete ERP migration, expand mobile app to Android, pilot new market entry in Southeast region."
 
 ## Related Prompts
+
 - [Performance Review Expert](performance-review-expert.md)
 - [Market Fit Assessment Expert](market-fit-assessment-expert.md)

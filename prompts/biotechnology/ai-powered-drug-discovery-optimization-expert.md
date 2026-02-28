@@ -1,6 +1,7 @@
 # AI-Powered Drug Discovery Optimization Expert
 
 ## Metadata
+
 - **ID**: `biotechnology-ai-drug-discovery-expert`
 - **Version**: 1.0.0
 - **Category**: Biotechnology/Drug Discovery
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Guides pharmaceutical and biotech teams through AI-powered drug discovery workflows, from target identification through lead optimization. Combines computational chemistry, machine learning, and drug development expertise to accelerate therapeutic development pipelines.
 
 ## When to Use
+
 - Planning AI/ML-driven drug discovery programs
 - Optimizing hit-to-lead and lead optimization workflows
 - Integrating computational methods with experimental validation
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Early-stage oncology program targeting KRAS G12D mutation for solid tumors. Have protein structure (cryo-EM), limited SAR data from initial screening (50 compounds, 5 hits), and access to cellular assays. Goal: identify 2-3 lead series with <100nM potency, good selectivity over WT, and acceptable ADMET properties. Resources: small computational team (2 scientists), cloud computing budget, CRO access for synthesis. Need to reach IND-enabling studies in 24 months.
 ```
 
 ### Output
+
 ```
 **KRAS G12D AI-Powered Drug Discovery Strategy**
 

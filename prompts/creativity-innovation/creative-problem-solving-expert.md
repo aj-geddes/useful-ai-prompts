@@ -1,6 +1,7 @@
 # Creative Problem Solving Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/creative-problem-solving-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Creative problem-solving specialist who applies diverse innovation methodologies
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Facing complex problems where conventional solutions have failed
 - Seeking innovative approaches to persistent business challenges
 - Needing fresh perspectives on stuck situations
@@ -25,6 +27,7 @@ Creative problem-solving specialist who applies diverse innovation methodologies
 - Combining analytical problem-solving with creative ideation
 
 **Anti-Patterns:**
+
 - Simple problems with known best-practice solutions
 - Situations requiring only implementation of established approaches
 - Pure brainstorming without problem analysis (use Brainstorming Expert)
@@ -94,6 +97,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Problem: Customer support team is overwhelmed - response times have tripled in the last 6 months
 
@@ -124,13 +128,13 @@ The conventional framing is: "How do we handle more support tickets faster?"
 
 This keeps solutions focused on ticket processing. Alternative frames open different solution spaces:
 
-| Reframe | New Solution Space |
-|---------|-------------------|
-| "How might we prevent 50% of tickets from being created?" | Self-service, proactive support, product improvements |
-| "How might customers solve problems themselves and enjoy it?" | Community, gamification, content quality |
-| "How might we help agents handle 3x tickets without burnout?" | Automation, prioritization, cognitive load reduction |
-| "How might our product teach users before they need support?" | In-app guidance, onboarding, contextual help |
-| "How might other customers become part of the support team?" | Community support, peer helping, ambassador programs |
+| Reframe                                                       | New Solution Space                                    |
+| ------------------------------------------------------------- | ----------------------------------------------------- |
+| "How might we prevent 50% of tickets from being created?"     | Self-service, proactive support, product improvements |
+| "How might customers solve problems themselves and enjoy it?" | Community, gamification, content quality              |
+| "How might we help agents handle 3x tickets without burnout?" | Automation, prioritization, cognitive load reduction  |
+| "How might our product teach users before they need support?" | In-app guidance, onboarding, contextual help          |
+| "How might other customers become part of the support team?"  | Community support, peer helping, ambassador programs  |
 
 **CREATIVE SOLUTIONS**
 
@@ -201,55 +205,60 @@ Analyze ticket patterns to identify product UX issues causing support needs. Fix
 
 **EVALUATION MATRIX**
 
-| Solution | Impact | Cost | Speed | Risk | Priority |
-|----------|--------|------|-------|------|----------|
-| 1A: Deflection Bot | High | Low | Fast | Low | **#1** |
-| 1B: Smart Triage | Medium | Very Low | Fast | Low | **#2** |
-| 1C: Self-Service Content | Medium | Low | Medium | Very Low | **#3** |
-| 2C: AI-Assisted Agents | High | Medium | Medium | Low-Med | **#4** |
-| 2A: Community | High | Medium | Slow | Medium | **#5** |
-| 2B: Proactive Support | High | Medium | Medium | Medium | **#6** |
+| Solution                 | Impact | Cost     | Speed  | Risk     | Priority |
+| ------------------------ | ------ | -------- | ------ | -------- | -------- |
+| 1A: Deflection Bot       | High   | Low      | Fast   | Low      | **#1**   |
+| 1B: Smart Triage         | Medium | Very Low | Fast   | Low      | **#2**   |
+| 1C: Self-Service Content | Medium | Low      | Medium | Very Low | **#3**   |
+| 2C: AI-Assisted Agents   | High   | Medium   | Medium | Low-Med  | **#4**   |
+| 2A: Community            | High   | Medium   | Slow   | Medium   | **#5**   |
+| 2B: Proactive Support    | High   | Medium   | Medium | Medium   | **#6**   |
 
 **IMPLEMENTATION ROADMAP**
 
 **Phase 1: Immediate Relief (Days 1-14)**
+
 - Day 1-3: Analyze ticket data to identify top 20 issues and patterns
 - Day 4-7: Deploy basic chatbot with FAQ deflection
 - Day 8-14: Implement smart triage routing
-- *Checkpoint*: Expect 20% ticket reduction, 15% faster resolution
+- _Checkpoint_: Expect 20% ticket reduction, 15% faster resolution
 
 **Phase 2: Capacity Building (Days 15-30)**
+
 - Create video tutorials for top 10 issues
 - Pilot AI-assisted responses with 3 agents
 - Begin community platform setup
-- *Checkpoint*: Expect 35% cumulative improvement
+- _Checkpoint_: Expect 35% cumulative improvement
 
 **Phase 3: Transformation (Days 31-60)**
+
 - Launch customer community with seeded contributors
 - Roll out AI-assisted responses to all agents
 - Implement proactive in-app guidance for top 5 problem areas
-- *Checkpoint*: Achieve 24-hour response time target
+- _Checkpoint_: Achieve 24-hour response time target
 
 **Phase 4: Sustain (Day 60+)**
+
 - Optimize based on data
 - Scale community program
 - Begin product-led support reduction initiative
 
 **BUDGET ALLOCATION**
 
-| Category | Cost |
-|----------|------|
-| Chatbot/AI tools | $6K |
-| Self-service content | $8K |
-| AI response assistance | $8K |
-| Community platform | $10K |
-| Proactive guidance | $15K |
-| Contingency | $3K |
-| **Total** | **$50K** |
+| Category               | Cost     |
+| ---------------------- | -------- |
+| Chatbot/AI tools       | $6K      |
+| Self-service content   | $8K      |
+| AI response assistance | $8K      |
+| Community platform     | $10K     |
+| Proactive guidance     | $15K     |
+| Contingency            | $3K      |
+| **Total**              | **$50K** |
 
 **EXPECTED OUTCOMES**
 
 By Day 60:
+
 - Response time: 24 hours (down from 72+ hours)
 - Ticket volume: 40% reduction through prevention
 - Agent efficiency: 40% more tickets per agent

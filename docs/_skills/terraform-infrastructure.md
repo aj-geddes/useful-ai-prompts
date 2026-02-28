@@ -1,14 +1,15 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Infrastructure as Code using Terraform with modular components, state
+date: "2025-01-01"
+description:
+  Infrastructure as Code using Terraform with modular components, state
   management, and multi-cloud deployments. Use for provisioning and managing cloud
   resources.
 layout: skill
 slug: terraform-infrastructure
 tags:
-- terraform
-- deployment
+  - terraform
+  - deployment
 title: terraform-infrastructure
 ---
 
@@ -365,6 +366,7 @@ echo "Terraform $ACTION complete!"
 ## Best Practices
 
 ### ✅ DO
+
 - Use remote state (S3, Terraform Cloud)
 - Implement state locking (DynamoDB)
 - Organize code into modules
@@ -375,6 +377,7 @@ echo "Terraform $ACTION complete!"
 - Keep sensitive data in separate variable files
 
 ### ❌ DON'T
+
 - Store state files locally in git
 - Use hardcoded values
 - Mix environments in single state

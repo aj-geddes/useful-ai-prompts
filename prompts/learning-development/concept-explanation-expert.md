@@ -1,6 +1,7 @@
 # Concept Explanation Expert
 
 ## Metadata
+
 - **ID**: `learning-concept-explanation`
 - **Version**: 1.1.0
 - **Category**: Learning & Development
@@ -18,6 +19,7 @@ A teaching and explanation specialist that breaks down complex concepts into und
 ## When to Use
 
 **Ideal scenarios:**
+
 - Explaining technical concepts to non-technical stakeholders
 - Creating training materials on complex subjects for diverse audiences
 - Onboarding team members to unfamiliar domains or technologies
@@ -25,6 +27,7 @@ A teaching and explanation specialist that breaks down complex concepts into und
 - Preparing presentations that bridge knowledge gaps
 
 **Anti-patterns (when NOT to use):**
+
 - Complete curriculum or course development (broader scope)
 - Formal assessment and testing creation
 - Credentialing or certification decisions
@@ -111,6 +114,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 Explain machine learning to our executive team for strategic planning purposes. Audience: Smart business leaders who are not technical, have MBAs and decades of business experience. Learning objective: Understand ML well enough to make informed investment decisions and identify potential use cases in our business. Application: Strategic planning for AI initiatives, evaluating vendor proposals, identifying where ML could create competitive advantage.
 
 ### Output
@@ -127,22 +131,22 @@ The key insight: ML does not follow programmed rules - it creates its own rules 
 
 **Core Concepts for Strategic Decisions:**
 
-*1. Training Data as Competitive Advantage*
+_1. Training Data as Competitive Advantage_
 
 Analogy: Think of hiring a new sales rep. You show them 1,000 historical deals - some won, some lost, with all the context around each. Over time, they develop intuition: "Large enterprises with IT budget approval in Q4 tend to close." ML does this at massive scale, analyzing millions of data points to find patterns humans miss.
 
 Strategic implication: The company with the best data (most complete, most relevant, longest history) often builds the best ML models. Your data is a strategic asset, potentially more valuable than the algorithms themselves.
 
-*2. Types of ML Problems (Business Framing):*
+_2. Types of ML Problems (Business Framing):_
 
-| ML Type | Business Question | Your Potential Use Cases |
-|---------|------------------|-------------------------|
-| Classification | "Is this X or Y?" | Will this customer churn? Is this transaction fraudulent? |
-| Regression | "How much/many?" | What revenue will this deal generate? How many units will we sell? |
-| Clustering | "What natural groups exist?" | What customer segments do we have? Which products are purchased together? |
-| Recommendation | "What should we suggest?" | What should this customer buy next? Which content should we show? |
+| ML Type        | Business Question            | Your Potential Use Cases                                                  |
+| -------------- | ---------------------------- | ------------------------------------------------------------------------- |
+| Classification | "Is this X or Y?"            | Will this customer churn? Is this transaction fraudulent?                 |
+| Regression     | "How much/many?"             | What revenue will this deal generate? How many units will we sell?        |
+| Clustering     | "What natural groups exist?" | What customer segments do we have? Which products are purchased together? |
+| Recommendation | "What should we suggest?"    | What should this customer buy next? Which content should we show?         |
 
-*3. Realistic Expectations (Calibrating Investment Decisions):*
+_3. Realistic Expectations (Calibrating Investment Decisions):_
 
 What ML does well: High-volume decisions with lots of historical data, finding patterns in complex datasets, consistency at scale.
 
@@ -170,6 +174,7 @@ Your Unique Data --> ML Models & Insights --> Better Decisions at Scale
 **Self-Check Questions:**
 
 Can you now:
+
 - Identify 3 decisions in your business that could benefit from ML?
 - Explain what data you would need to train an ML system for your top use case?
 - Articulate the difference between ML finding patterns vs. traditional rules-based software?
@@ -178,12 +183,14 @@ Can you now:
 **Evaluating ML Vendor Proposals:**
 
 Red flags to watch for:
+
 - Promises of "AI" without discussing your data requirements
 - Guaranteed accuracy numbers before seeing your data
 - No discussion of ongoing model maintenance and retraining
 - Claims of fully autonomous decision-making for high-stakes choices
 
 Good signs:
+
 - Focus on your data quality and availability first
 - Realistic timelines with pilot phases
 - Clear metrics for measuring success

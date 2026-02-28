@@ -1,6 +1,7 @@
 # Schedule Development Expert
 
 ## Metadata
+
 - **ID**: `planning-schedule-development`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A project scheduling specialist that helps you create realistic, optimized proje
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating detailed project schedules with complex dependencies
 - Optimizing timelines with constrained resources
 - Identifying and managing critical path activities
@@ -25,6 +27,7 @@ A project scheduling specialist that helps you create realistic, optimized proje
 - Coordinating multi-team or multi-workstream timelines
 
 **Anti-patterns (Don't Use For):**
+
 - Personal calendar management
 - Team meeting scheduling
 - Sprint planning (use agile planning tools)
@@ -150,14 +153,16 @@ Context: Similar project took 8 months with more features
 
 **Schedule Overview**
 
-*Project Parameters*
+_Project Parameters_
+
 - Total Duration: 26 weeks (May 15 - November 15)
 - Working Days: 130 days (5 days/week)
 - Sprint Count: 13 sprints (2 weeks each)
 - Buffer Allocation: 4 weeks (15% of duration)
 - Critical Path: Architecture -> Payment Integration -> System Testing -> Launch
 
-*Key Constraints*
+_Key Constraints_
+
 - Fixed end date: November 15 (holiday season launch)
 - External dependency: Payment gateway API documentation (Week 3)
 - External dependency: Shipping API sandbox access (Week 8)
@@ -165,69 +170,70 @@ Context: Similar project took 8 months with more features
 
 **Work Breakdown Structure**
 
-*Phase 1: Foundation (Weeks 1-4) - 4 weeks*
+_Phase 1: Foundation (Weeks 1-4) - 4 weeks_
 
-| Activity | Duration | Resources | Dependencies |
-|----------|----------|-----------|--------------|
-| 1.1 Project kickoff | 3 days | All | None |
-| 1.2 Requirements finalization | 5 days | PM, Designers | 1.1 |
-| 1.3 Architecture design | 8 days | Sr. Developer | 1.2 |
-| 1.4 UI/UX wireframes | 8 days | Designers | 1.2 |
-| 1.5 Development environment setup | 3 days | Developers | 1.3 |
-| 1.6 Design system creation | 5 days | Designers | 1.4 |
+| Activity                          | Duration | Resources     | Dependencies |
+| --------------------------------- | -------- | ------------- | ------------ |
+| 1.1 Project kickoff               | 3 days   | All           | None         |
+| 1.2 Requirements finalization     | 5 days   | PM, Designers | 1.1          |
+| 1.3 Architecture design           | 8 days   | Sr. Developer | 1.2          |
+| 1.4 UI/UX wireframes              | 8 days   | Designers     | 1.2          |
+| 1.5 Development environment setup | 3 days   | Developers    | 1.3          |
+| 1.6 Design system creation        | 5 days   | Designers     | 1.4          |
 
 Phase Deliverables: Approved requirements, technical architecture, design system, dev environment
 
-*Phase 2: Core Development (Weeks 5-16) - 12 weeks*
+_Phase 2: Core Development (Weeks 5-16) - 12 weeks_
 
-| Activity | Duration | Resources | Dependencies |
-|----------|----------|-----------|--------------|
-| 2.1 User authentication | 2 weeks | 1 Developer | Environment |
-| 2.2 Product catalog | 3 weeks | 2 Developers | Environment |
-| 2.3 Shopping cart | 2 weeks | 1 Developer | 2.2 |
-| 2.4 Payment integration | 3 weeks | Sr. Dev + 1 | 2.3, External API |
-| 2.5 Order management | 2 weeks | 1 Developer | 2.4 |
-| 2.6 Admin panel | 3 weeks | 1 Developer | 2.2 |
-| 2.7 Customer portal | 2 weeks | 1 Developer | 2.1 |
-| 2.8 UI implementation | 8 weeks | 2 Developers | Design system |
+| Activity                | Duration | Resources    | Dependencies      |
+| ----------------------- | -------- | ------------ | ----------------- |
+| 2.1 User authentication | 2 weeks  | 1 Developer  | Environment       |
+| 2.2 Product catalog     | 3 weeks  | 2 Developers | Environment       |
+| 2.3 Shopping cart       | 2 weeks  | 1 Developer  | 2.2               |
+| 2.4 Payment integration | 3 weeks  | Sr. Dev + 1  | 2.3, External API |
+| 2.5 Order management    | 2 weeks  | 1 Developer  | 2.4               |
+| 2.6 Admin panel         | 3 weeks  | 1 Developer  | 2.2               |
+| 2.7 Customer portal     | 2 weeks  | 1 Developer  | 2.1               |
+| 2.8 UI implementation   | 8 weeks  | 2 Developers | Design system     |
 
 Phase Deliverables: Functional e-commerce platform with all core features
 
-*Phase 3: Integrations (Weeks 13-18) - 6 weeks (overlaps with Phase 2)*
+_Phase 3: Integrations (Weeks 13-18) - 6 weeks (overlaps with Phase 2)_
 
-| Activity | Duration | Resources | Dependencies |
-|----------|----------|-----------|--------------|
-| 3.1 Inventory system integration | 3 weeks | 1 Developer | 2.2, 2.5 |
-| 3.2 Shipping API integration | 2 weeks | 1 Developer | 2.5, External API |
-| 3.3 Email/notification system | 2 weeks | 1 Developer | 2.1, 2.5 |
-| 3.4 Analytics implementation | 1 week | 1 Developer | 2.2 |
+| Activity                         | Duration | Resources   | Dependencies      |
+| -------------------------------- | -------- | ----------- | ----------------- |
+| 3.1 Inventory system integration | 3 weeks  | 1 Developer | 2.2, 2.5          |
+| 3.2 Shipping API integration     | 2 weeks  | 1 Developer | 2.5, External API |
+| 3.3 Email/notification system    | 2 weeks  | 1 Developer | 2.1, 2.5          |
+| 3.4 Analytics implementation     | 1 week   | 1 Developer | 2.2               |
 
 Phase Deliverables: Fully integrated platform with external systems
 
-*Phase 4: Testing and Launch (Weeks 19-26) - 8 weeks*
+_Phase 4: Testing and Launch (Weeks 19-26) - 8 weeks_
 
-| Activity | Duration | Resources | Dependencies |
-|----------|----------|-----------|--------------|
-| 4.1 Integration testing | 2 weeks | QA + Devs | All features |
-| 4.2 Performance testing | 1 week | QA + Sr. Dev | 4.1 |
-| 4.3 Security testing | 1 week | External + QA | 4.1 |
-| 4.4 User acceptance testing | 2 weeks | QA, Client | 4.2, 4.3 |
-| 4.5 Bug fixes and optimization | 2 weeks | All Devs | 4.4 |
-| 4.6 Production deployment | 3 days | Sr. Dev + DevOps | 4.5 |
-| 4.7 Go-live monitoring | 1 week | All | 4.6 |
+| Activity                       | Duration | Resources        | Dependencies |
+| ------------------------------ | -------- | ---------------- | ------------ |
+| 4.1 Integration testing        | 2 weeks  | QA + Devs        | All features |
+| 4.2 Performance testing        | 1 week   | QA + Sr. Dev     | 4.1          |
+| 4.3 Security testing           | 1 week   | External + QA    | 4.1          |
+| 4.4 User acceptance testing    | 2 weeks  | QA, Client       | 4.2, 4.3     |
+| 4.5 Bug fixes and optimization | 2 weeks  | All Devs         | 4.4          |
+| 4.6 Production deployment      | 3 days   | Sr. Dev + DevOps | 4.5          |
+| 4.7 Go-live monitoring         | 1 week   | All              | 4.6          |
 
 Phase Deliverables: Tested, deployed, stable production system
 
 **Critical Path Analysis**
 
-*Critical Path (Zero Float)*
+_Critical Path (Zero Float)_
+
 ```
 Requirements -> Architecture -> Payment Integration -> Integration Testing -> UAT -> Launch
 ```
 
 Total Critical Path Duration: 22 weeks
 
-*Critical Activities Detail*
+_Critical Activities Detail_
 | Activity | Duration | Why Critical |
 |----------|----------|--------------|
 | Architecture design | 8 days | Foundation for all development |
@@ -236,7 +242,7 @@ Total Critical Path Duration: 22 weeks
 | UAT | 2 weeks | Client approval required |
 | Production deployment | 3 days | Fixed sequence |
 
-*Float Analysis*
+_Float Analysis_
 | Activity | Total Float | Can Slip Without Impact |
 |----------|-------------|------------------------|
 | Admin panel | 2 weeks | Yes - parallel to core |
@@ -246,7 +252,7 @@ Total Critical Path Duration: 22 weeks
 
 **Resource Allocation**
 
-*Allocation by Phase*
+_Allocation by Phase_
 | Role | Phase 1 | Phase 2 | Phase 3 | Phase 4 |
 |------|---------|---------|---------|---------|
 | PM | 100% | 75% | 75% | 100% |
@@ -255,55 +261,59 @@ Total Critical Path Duration: 22 weeks
 | Designers (2) | 100% | 50% | 25% | 10% |
 | QA | 10% | 25% | 50% | 100% |
 
-*Resource Conflicts Identified*
+_Resource Conflicts Identified_
+
 - Week 12: Senior developer vacation - mitigate with knowledge transfer in Week 11
 - Weeks 5-8: Potential designer underutilization - assign to marketing assets
 - Weeks 17-20: Testing bottleneck - consider contract QA
 
 **Buffer Strategy**
 
-*Buffer Allocation*
+_Buffer Allocation_
 | Buffer Type | Location | Duration | Purpose |
 |-------------|----------|----------|---------|
 | Project buffer | Before launch | 2 weeks | Critical path protection |
 | Integration buffer | After payment integration | 1 week | External dependency risk |
 | Testing buffer | Within Phase 4 | 1 week | Quality assurance |
 
-*Buffer Consumption Rules*
+_Buffer Consumption Rules_
+
 - Green: <33% buffer consumed at milestone
 - Yellow: 33-66% buffer consumed, review schedule
 - Red: >66% buffer consumed, escalation required
 
 **Milestone Tracking**
 
-| Milestone | Target Date | Success Criteria | Buffer Status |
-|-----------|-------------|------------------|---------------|
-| Architecture complete | Week 4 (Jun 12) | Design approved, environment ready | Check |
-| Core features demo | Week 12 (Aug 7) | 10/15 features functional | Check |
-| Payment working | Week 16 (Sep 4) | End-to-end transaction successful | Check |
-| Testing complete | Week 22 (Oct 16) | UAT sign-off received | Check |
-| Go-live | Week 24 (Oct 30) | Production stable | 2 weeks to deadline |
-| Stabilization complete | Week 26 (Nov 13) | All critical issues resolved | 2 days to deadline |
+| Milestone              | Target Date      | Success Criteria                   | Buffer Status       |
+| ---------------------- | ---------------- | ---------------------------------- | ------------------- |
+| Architecture complete  | Week 4 (Jun 12)  | Design approved, environment ready | Check               |
+| Core features demo     | Week 12 (Aug 7)  | 10/15 features functional          | Check               |
+| Payment working        | Week 16 (Sep 4)  | End-to-end transaction successful  | Check               |
+| Testing complete       | Week 22 (Oct 16) | UAT sign-off received              | Check               |
+| Go-live                | Week 24 (Oct 30) | Production stable                  | 2 weeks to deadline |
+| Stabilization complete | Week 26 (Nov 13) | All critical issues resolved       | 2 days to deadline  |
 
 **Variance Management**
 
-*Weekly Monitoring*
+_Weekly Monitoring_
+
 - Sprint velocity vs. plan
 - Critical path status
 - Resource utilization
 - External dependency status
 
-*Variance Thresholds*
+_Variance Thresholds_
 | Variance | Status | Action |
 |----------|--------|--------|
 | <5% | Green | Continue as planned |
 | 5-10% | Yellow | Root cause analysis, recovery plan |
 | >10% | Red | Escalation, scope/resource decisions |
 
-*Escalation Path*
+_Escalation Path_
+
 1. PM identifies variance >5%
 2. Team recovery plan within 48 hours
-3. >10% variance: Client/stakeholder notification
+3. > 10% variance: Client/stakeholder notification
 4. Critical path at risk: Executive escalation
 
 ---

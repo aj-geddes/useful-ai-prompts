@@ -1,14 +1,15 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Document deployment processes, infrastructure setup, CI/CD pipelines,
+date: "2025-01-01"
+description:
+  Document deployment processes, infrastructure setup, CI/CD pipelines,
   and configuration management. Use when creating deployment guides, infrastructure
   docs, or CI/CD documentation.
 layout: skill
 slug: deployment-documentation
 tags:
-- ci/cd
-- deployment
+  - ci/cd
+  - deployment
 title: deployment-documentation
 ---
 
@@ -31,7 +32,7 @@ Create comprehensive deployment documentation covering infrastructure setup, CI/
 
 ## Deployment Guide Template
 
-```markdown
+````markdown
 # Deployment Guide
 
 ## Overview
@@ -39,12 +40,14 @@ Create comprehensive deployment documentation covering infrastructure setup, CI/
 This document describes the deployment process for [Application Name].
 
 **Deployment Methods:**
+
 - Manual deployment (emergency only)
 - Automated CI/CD (preferred)
 - Blue-green deployment
 - Canary deployment
 
 **Environments:**
+
 - Development: https://dev.example.com
 - Staging: https://staging.example.com
 - Production: https://example.com
@@ -65,6 +68,7 @@ brew install kubectl
 brew install helm
 brew install aws-cli
 ```
+````
 
 ### Access Requirements
 
@@ -111,7 +115,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
       - run: npm ci
       - run: npm test
       - run: npm run lint
@@ -241,7 +245,7 @@ CMD ["node", "dist/server.js"]
 ### docker-compose.yml
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   app:
@@ -315,48 +319,48 @@ spec:
         version: v1
     spec:
       containers:
-      - name: app
-        image: your-registry/app:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 3000
-          name: http
-        env:
-        - name: NODE_ENV
-          value: "production"
-        - name: DATABASE_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: database-url
-        - name: REDIS_URL
-          valueFrom:
-            secretKeyRef:
-              name: app-secrets
-              key: redis-url
-        resources:
-          requests:
-            cpu: 500m
-            memory: 512Mi
-          limits:
-            cpu: 1000m
-            memory: 1Gi
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10
-          timeoutSeconds: 3
-          failureThreshold: 3
-        readinessProbe:
-          httpGet:
-            path: /ready
-            port: 3000
-          initialDelaySeconds: 10
-          periodSeconds: 5
-          timeoutSeconds: 3
-          failureThreshold: 2
+        - name: app
+          image: your-registry/app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              name: http
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: database-url
+            - name: REDIS_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: redis-url
+          resources:
+            requests:
+              cpu: 500m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 2
 
 ---
 apiVersion: v1
@@ -368,8 +372,8 @@ spec:
   selector:
     app: app
   ports:
-  - port: 80
-    targetPort: 3000
+    - port: 80
+      targetPort: 3000
   type: ClusterIP
 
 ---
@@ -383,20 +387,20 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   tls:
-  - hosts:
-    - example.com
-    secretName: app-tls
+    - hosts:
+        - example.com
+      secretName: app-tls
   rules:
-  - host: example.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: app
-            port:
-              number: 80
+    - host: example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app
+                port:
+                  number: 80
 ```
 
 ---
@@ -540,13 +544,13 @@ kubectl delete deployment app-blue -n production
 
 ```javascript
 // healthcheck.js
-const http = require('http');
+const http = require("http");
 
 const options = {
-  host: 'localhost',
+  host: "localhost",
   port: 3000,
-  path: '/health',
-  timeout: 2000
+  path: "/health",
+  timeout: 2000,
 };
 
 const healthCheck = http.request(options, (res) => {
@@ -557,7 +561,7 @@ const healthCheck = http.request(options, (res) => {
   }
 });
 
-healthCheck.on('error', () => {
+healthCheck.on("error", () => {
   process.exit(1);
 });
 
@@ -665,3 +669,4 @@ resource "aws_ecs_task_definition" "app" {
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [AWS ECS](https://docs.aws.amazon.com/ecs/)
 - [Terraform](https://www.terraform.io/docs)
+```

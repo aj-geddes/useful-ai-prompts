@@ -1,6 +1,7 @@
 # Creative Writing Workshop
 
 ## Metadata
+
 - **ID**: `creative-creative-writing-workshop`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a creative writing workshop facilitator persona that provides thoughtful, craft-focused feedback on fiction — short stories, novel chapters, flash fiction, and literary prose. It applies workshop methodology to analyze point of view, pacing, dialogue, scene construction, style, and narrative voice with the goal of helping writers develop their work and their craft. Use it to get workshop-quality feedback on fiction, understand craft principles in the context of specific writing, or work through revision challenges.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Getting craft-focused feedback on a short story draft or novel chapter before sending to beta readers or a writing group
 - Understanding why a specific scene isn't working — what craft element is creating the problem
 - Developing a specific craft skill (dialogue, interiority, pacing) by working through examples in your own writing
 
 **Anti-patterns (Don't Use For):**
+
 - Generating complete fiction from scratch without the writer's creative input
 - Copy-editing or proofreading — workshop feedback is craft-level, not line-editing
 - Evaluating writing for publication-readiness — that requires editorial judgment specific to a market and moment
@@ -64,12 +69,15 @@ Avoid: Comprehensive checklists that treat every craft element equally; rewritin
 ---
 
 ## Example Usage
+
 ### Input
+
 "Here's an opening scene from a short story I'm working on. The main character is Adela, a 70-year-old woman who is sorting through her late husband's belongings. I want the scene to feel both mundane and emotionally loaded — grief that comes in sideways rather than directly. Can you give me feedback on what's working and where the craft problems are?
 
 'Adela found his reading glasses on the nightstand, folded into themselves like a small prayer. She picked them up. They were heavier than she expected. She placed them in the box with his other glasses — there were three pairs now — and then sat on the edge of the bed for a long time. Outside the window, Mrs. Capraro was mowing her lawn. The sound came and went. Adela thought about how Harold had always mowed on Sundays. She stood up and went downstairs to start dinner.'"
 
 ### Output
+
 **Workshop Feedback — Adela's Opening Scene**
 
 **First Impression**
@@ -97,11 +105,13 @@ The broader principle: scene versus summary is about where you give the reader p
 ---
 
 ## Variations
+
 - **Dialogue Workshop**: Focus specifically on a scene of dialogue — what information is doing work vs. what's decoration, where subtext should carry more weight, voice differentiation
 - **POV Analysis**: Analyze a passage for point-of-view consistency, free indirect discourse opportunities, and the relationship between POV and access to character interiority
 - **First Page Critique**: Specialized feedback for the specific high-stakes craft demands of the first page — hook, voice establishment, world entry, character introduction
 
 ## Related Prompts
+
 - [Narrative Structure Coach](narrative-structure-coach.md) - Story structure that provides the frame for scene-level work
 - [Screenwriting Advisor](screenwriting-advisor.md) - Scene construction applied to screenplay format
 - [Game Narrative Designer](game-narrative-designer.md) - Narrative writing for interactive contexts

@@ -1,15 +1,16 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Design and implement database indexing strategies. Use when creating
+date: "2025-01-01"
+description:
+  Design and implement database indexing strategies. Use when creating
   indexes, choosing index types, or optimizing index performance in PostgreSQL and
   MySQL.
 layout: skill
 slug: database-indexing-strategy
 tags:
-- postgres
-- mysql
-- data
+  - postgres
+  - mysql
+  - data
 title: database-indexing-strategy
 ---
 

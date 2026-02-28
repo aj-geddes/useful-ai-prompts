@@ -1,13 +1,14 @@
 ---
 category: documentation
-date: '2025-01-01'
-description: Document API changes, breaking changes, migration guides, and version
+date: "2025-01-01"
+description:
+  Document API changes, breaking changes, migration guides, and version
   history for APIs. Use when documenting API versioning, breaking changes, or creating
   API migration guides.
 layout: skill
 slug: api-changelog-versioning
 tags:
-- api
+  - api
 title: api-changelog-versioning
 ---
 
@@ -29,7 +30,7 @@ Create comprehensive API changelogs that document changes, deprecations, breakin
 
 ## API Changelog Template
 
-```markdown
+````markdown
 # API Changelog
 
 ## Version 3.0.0 - 2025-01-15
@@ -39,12 +40,15 @@ Create comprehensive API changelogs that document changes, deprecations, breakin
 #### Authentication Method Changed
 
 **Previous (v2):**
+
 ```http
 GET /api/users
 Authorization: Token abc123
 ```
+````
 
 **Current (v3):**
+
 ```http
 GET /api/v3/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
@@ -53,6 +57,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 **Impact:** All API consumers must switch from API tokens to JWT Bearer tokens
 
 **Migration Steps:**
+
 1. Obtain JWT token from `/api/v3/auth/login` endpoint
 2. Replace `Authorization: Token` with `Authorization: Bearer`
 3. Update token refresh logic (JWT tokens expire after 1 hour)
@@ -66,6 +71,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 #### Response Format Changed
 
 **Previous (v2):**
+
 ```json
 {
   "id": "123",
@@ -75,6 +81,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 ```
 
 **Current (v3):**
+
 ```json
 {
   "data": {
@@ -91,6 +98,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 **Impact:** All API responses now follow JSON:API specification
 
 **Migration:**
+
 ```javascript
 // Before (v2)
 const user = await response.json();
@@ -101,8 +109,8 @@ const { data } = await response.json();
 console.log(data.attributes.name);
 
 // Or use our SDK which handles this automatically
-import { ApiClient } from '@company/api-sdk';
-const user = await client.users.get('123');
+import { ApiClient } from "@company/api-sdk";
+const user = await client.users.get("123");
 console.log(user.name); // SDK unwraps the response
 ```
 
@@ -110,11 +118,11 @@ console.log(user.name); // SDK unwraps the response
 
 #### Removed Endpoints
 
-| Removed Endpoint | Replacement | Notes |
-|------------------|-------------|-------|
-| `GET /api/users/list` | `GET /api/v3/users` | Use pagination parameters |
-| `POST /api/users/create` | `POST /api/v3/users` | RESTful convention |
-| `GET /api/search` | `GET /api/v3/search` | Now supports advanced filters |
+| Removed Endpoint         | Replacement          | Notes                         |
+| ------------------------ | -------------------- | ----------------------------- |
+| `GET /api/users/list`    | `GET /api/v3/users`  | Use pagination parameters     |
+| `POST /api/users/create` | `POST /api/v3/users` | RESTful convention            |
+| `GET /api/search`        | `GET /api/v3/search` | Now supports advanced filters |
 
 ---
 
@@ -136,6 +144,7 @@ Content-Type: application/json
 ```
 
 **Webhook Payload:**
+
 ```json
 {
   "event": "user.created",
@@ -184,6 +193,7 @@ Content-Type: application/json
 ```
 
 **Response:**
+
 ```json
 {
   "results": [
@@ -207,6 +217,7 @@ GET /api/v3/users/123?fields=id,name,email
 ```
 
 **Before (full response):**
+
 ```json
 {
   "data": {
@@ -217,8 +228,12 @@ GET /api/v3/users/123?fields=id,name,email
       "email": "john@example.com",
       "phone": "+1234567890",
       "address": { "street": "123 Main St", "city": "NYC" },
-      "preferences": { /* ... */ },
-      "metadata": { /* ... */ }
+      "preferences": {
+        /* ... */
+      },
+      "metadata": {
+        /* ... */
+      }
       // ... many more fields
     }
   }
@@ -226,6 +241,7 @@ GET /api/v3/users/123?fields=id,name,email
 ```
 
 **After (filtered response):**
+
 ```json
 {
   "data": {
@@ -240,6 +256,7 @@ GET /api/v3/users/123?fields=id,name,email
 ```
 
 **Benefits:**
+
 - Reduced response size (up to 80% smaller)
 - Faster response times
 - Lower bandwidth usage
@@ -257,17 +274,18 @@ GET /api/v3/users/123?fields=id,name,email
 
 **Benchmark Comparison:**
 
-| Endpoint | v2 (avg) | v3 (avg) | Improvement |
-|----------|----------|----------|-------------|
-| GET /users | 320ms | 140ms | 56% faster |
-| GET /users/{id} | 180ms | 60ms | 67% faster |
-| POST /users | 250ms | 120ms | 52% faster |
+| Endpoint        | v2 (avg) | v3 (avg) | Improvement |
+| --------------- | -------- | -------- | ----------- |
+| GET /users      | 320ms    | 140ms    | 56% faster  |
+| GET /users/{id} | 180ms    | 60ms     | 67% faster  |
+| POST /users     | 250ms    | 120ms    | 52% faster  |
 
 ---
 
 #### Better Error Messages
 
 **Before (v2):**
+
 ```json
 {
   "error": "Validation failed"
@@ -275,6 +293,7 @@ GET /api/v3/users/123?fields=id,name,email
 ```
 
 **After (v3):**
+
 ```json
 {
   "errors": [
@@ -311,11 +330,11 @@ Retry-After: 3600
 
 **Rate Limits by Plan:**
 
-| Plan | Requests/Hour | Burst | Reset |
-|------|---------------|-------|-------|
-| Free | 100 | 10/min | 1 hour |
-| Pro | 1,000 | 50/min | 1 hour |
-| Enterprise | 10,000 | 200/min | 1 hour |
+| Plan       | Requests/Hour | Burst   | Reset  |
+| ---------- | ------------- | ------- | ------ |
+| Free       | 100           | 10/min  | 1 hour |
+| Pro        | 1,000         | 50/min  | 1 hour |
+| Enterprise | 10,000        | 200/min | 1 hour |
 
 ---
 
@@ -333,12 +352,12 @@ Retry-After: 3600
 
 #### Deprecation Schedule
 
-| Feature | Deprecated | Removal Date | Replacement |
-|---------|------------|--------------|-------------|
-| API Token Auth | v3.0.0 | 2025-06-01 | JWT Bearer tokens |
-| XML Response Format | v3.0.0 | 2025-04-01 | JSON only |
-| `/api/v1/*` endpoints | v3.0.0 | 2025-03-01 | `/api/v3/*` |
-| Query param `filter` | v3.0.0 | 2025-05-01 | Use `filters[field]=value` |
+| Feature               | Deprecated | Removal Date | Replacement                |
+| --------------------- | ---------- | ------------ | -------------------------- |
+| API Token Auth        | v3.0.0     | 2025-06-01   | JWT Bearer tokens          |
+| XML Response Format   | v3.0.0     | 2025-04-01   | JSON only                  |
+| `/api/v1/*` endpoints | v3.0.0     | 2025-03-01   | `/api/v3/*`                |
+| Query param `filter`  | v3.0.0     | 2025-05-01   | Use `filters[field]=value` |
 
 **Deprecation Warnings:**
 
@@ -355,13 +374,14 @@ Link: <https://docs.example.com/migration/v2-to-v3>; rel="deprecation"
 
 ### 📊 Version Support Policy
 
-| Version | Status | Release Date | End of Support |
-|---------|--------|--------------|----------------|
-| v3.x | Current | 2025-01-15 | TBD |
-| v2.x | Maintenance | 2024-01-01 | 2025-07-01 |
-| v1.x | End of Life | 2023-01-01 | 2024-12-31 |
+| Version | Status      | Release Date | End of Support |
+| ------- | ----------- | ------------ | -------------- |
+| v3.x    | Current     | 2025-01-15   | TBD            |
+| v2.x    | Maintenance | 2024-01-01   | 2025-07-01     |
+| v1.x    | End of Life | 2023-01-01   | 2024-12-31     |
 
 **Support Levels:**
+
 - **Current:** Full support, new features
 - **Maintenance:** Bug fixes and security patches only
 - **End of Life:** No support, upgrade required
@@ -374,10 +394,10 @@ Link: <https://docs.example.com/migration/v2-to-v3>; rel="deprecation"
 
 ```javascript
 // Before
-const API_BASE = 'https://api.example.com/api';
+const API_BASE = "https://api.example.com/api";
 
 // After
-const API_BASE = 'https://api.example.com/api/v3';
+const API_BASE = "https://api.example.com/api/v3";
 ```
 
 ### Step 2: Migrate Authentication
@@ -386,22 +406,22 @@ const API_BASE = 'https://api.example.com/api/v3';
 // Before (v2) - API Token
 const response = await fetch(`${API_BASE}/users`, {
   headers: {
-    'Authorization': `Token ${apiToken}`
-  }
+    Authorization: `Token ${apiToken}`,
+  },
 });
 
 // After (v3) - JWT Bearer
 const tokenResponse = await fetch(`${API_BASE}/auth/login`, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email, password })
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ email, password }),
 });
 const { token } = await tokenResponse.json();
 
 const response = await fetch(`${API_BASE}/users`, {
   headers: {
-    'Authorization': `Bearer ${token}`
-  }
+    Authorization: `Bearer ${token}`,
+  },
 });
 ```
 
@@ -417,9 +437,9 @@ const { data } = await response.json();
 console.log(data.attributes.name);
 
 // Or use SDK
-import { ApiClient } from '@company/api-sdk';
+import { ApiClient } from "@company/api-sdk";
 const client = new ApiClient(token);
-const user = await client.users.get('123');
+const user = await client.users.get("123");
 console.log(user.name); // SDK handles unwrapping
 ```
 
@@ -442,7 +462,7 @@ try {
   const response = await fetch(`${API_BASE}/users`);
   if (!response.ok) {
     const { errors } = await response.json();
-    errors.forEach(err => {
+    errors.forEach((err) => {
       console.error(`${err.field}: ${err.message}`);
       console.log(`Suggestion: ${err.suggestion}`);
     });
@@ -500,17 +520,17 @@ const API_BASE = USE_V3
 
 ### Feature Matrix
 
-| Feature | v1 | v2 | v3 |
-|---------|----|----|-----|
-| REST API | ✅ | ✅ | ✅ |
-| GraphQL | ❌ | ❌ | ✅ |
-| Webhooks | ❌ | ❌ | ✅ |
-| Batch Operations | ❌ | ❌ | ✅ |
-| Field Filtering | ❌ | ✅ | ✅ |
-| JSON:API Format | ❌ | ❌ | ✅ |
-| JWT Auth | ❌ | ✅ | ✅ |
-| API Token Auth | ✅ | ✅ | ⚠️ Deprecated |
-| XML Responses | ✅ | ⚠️ Deprecated | ❌ |
+| Feature          | v1  | v2            | v3            |
+| ---------------- | --- | ------------- | ------------- |
+| REST API         | ✅  | ✅            | ✅            |
+| GraphQL          | ❌  | ❌            | ✅            |
+| Webhooks         | ❌  | ❌            | ✅            |
+| Batch Operations | ❌  | ❌            | ✅            |
+| Field Filtering  | ❌  | ✅            | ✅            |
+| JSON:API Format  | ❌  | ❌            | ✅            |
+| JWT Auth         | ❌  | ✅            | ✅            |
+| API Token Auth   | ✅  | ✅            | ⚠️ Deprecated |
+| XML Responses    | ✅  | ⚠️ Deprecated | ❌            |
 
 Legend: ✅ Supported | ❌ Not Available | ⚠️ Deprecated
 
@@ -545,6 +565,7 @@ go get github.com/company/api-sdk/v3
 - **API Status:** https://status.example.com
 - **Community Forum:** https://community.example.com
 - **GitHub Issues:** https://github.com/company/api/issues
+
 ```
 
 ## Best Practices
@@ -575,3 +596,4 @@ go get github.com/company/api-sdk/v3
 - [GitHub API Changes](https://docs.github.com/en/rest/overview/api-versions)
 - [Semantic Versioning](https://semver.org/)
 - [JSON:API Specification](https://jsonapi.org/)
+```

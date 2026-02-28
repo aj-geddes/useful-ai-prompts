@@ -1,14 +1,15 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Optimize and manage cloud costs across AWS, Azure, and GCP using reserved
+date: "2025-01-01"
+description:
+  Optimize and manage cloud costs across AWS, Azure, and GCP using reserved
   instances, spot pricing, and cost monitoring tools.
 layout: skill
 slug: cloud-cost-management
 tags:
-- aws
-- azure
-- gcp
+  - aws
+  - azure
+  - gcp
 title: cloud-cost-management
 ---
 
@@ -443,6 +444,7 @@ print(monitor.generate_cost_report())
 ## Best Practices
 
 ### ✅ DO
+
 - Use Reserved Instances for stable workloads
 - Implement Savings Plans for flexibility
 - Right-size instances based on metrics
@@ -454,6 +456,7 @@ print(monitor.generate_cost_report())
 - Review monthly cost reports
 
 ### ❌ DON'T
+
 - Leave unused resources running
 - Ignore cost optimization recommendations
 - Use on-demand for predictable workloads

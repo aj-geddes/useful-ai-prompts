@@ -3,37 +3,38 @@ title: Secondary Research Specialist
 slug: secondary-research-specialist
 category: research
 tags:
-- secondary
-- research
-- desk
-- research
-- literature
-- review
-- source
-- evaluation
-- research
-- synthesis
-- existing
-- data
+  - secondary
+  - research
+  - desk
+  - research
+  - literature
+  - review
+  - source
+  - evaluation
+  - research
+  - synthesis
+  - existing
+  - data
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt guides researchers and analysts through structured desk research
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt guides researchers and analysts through structured desk research
   methodology — defining a systematic search strategy, evaluating source quality and
   relevance, synthesizing findings from existing literature and data, and building
   an evidence base that credibly informs decisions without the time and cost of primary
   research.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building a literature review or evidence base on a topic before commissioning primary
-  research
-- Answering a strategic question using existing public data, reports, and academic
-  literature
-- Rapidly scanning a new domain to develop informed hypotheses before field research
-- Topics where existing literature is sparse or outdated and primary research is the
-  only valid approach
+  - Ideal Scenarios:**
+  - Building a literature review or evidence base on a topic before commissioning primary
+    research
+  - Answering a strategic question using existing public data, reports, and academic
+    literature
+  - Rapidly scanning a new domain to develop informed hypotheses before field research
+  - Topics where existing literature is sparse or outdated and primary research is the
+    only valid approach
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Quantum Cryptography Protocol Expert
 
 ## Metadata
+
 - **ID**: `quantum-cryptography-protocol`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ A quantum cryptography engineer that designs and implements quantum cryptographi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing quantum key distribution systems (BB84, E91, CV-QKD)
 - Designing post-quantum cryptographic solutions for enterprise
 - Migrating classical infrastructure to quantum-safe protocols
@@ -26,6 +28,7 @@ A quantum cryptography engineer that designs and implements quantum cryptographi
 - Achieving compliance with emerging quantum security standards
 
 **Anti-patterns (when NOT to use):**
+
 - Classical cryptography without quantum considerations
 - General network security without quantum threat model
 - Quantum computing research without security focus
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Organization:** Financial institution with 50 branch locations. **Current infrastructure:** TLS 1.3 with RSA-2048 for inter-branch communications. **Requirement:** FIPS compliance and quantum-safe communications. **Pilot:** Start with 2 branches 50km apart.
 
 ### Output
@@ -138,23 +142,24 @@ Avoid:
 
 **Phase 1: Security Assessment (Months 1-2)**
 
-*Cryptographic Inventory:*
+_Cryptographic Inventory:_
+
 - RSA-2048: Key exchange, digital signatures (VULNERABLE)
 - AES-256: Symmetric encryption (QUANTUM-SAFE)
 - SHA-256: Hashing (REDUCED SECURITY, but acceptable)
 
-*Risk Prioritization:*
+_Risk Prioritization:_
 | Asset | Quantum Risk | Data Longevity | Priority |
 |-------|-------------|----------------|----------|
 | Transaction records | High | 10+ years | Critical |
 | Customer data | High | 7+ years | Critical |
 | Session keys | Medium | Minutes | Lower |
 
-*Threat Model:* Assume sophisticated adversary with "harvest now, decrypt later" capability. Assume quantum computer capable of breaking RSA-2048 available to adversaries within 10-15 years.
+_Threat Model:_ Assume sophisticated adversary with "harvest now, decrypt later" capability. Assume quantum computer capable of breaking RSA-2048 available to adversaries within 10-15 years.
 
 **Protocol Architecture**
 
-*Recommended: Hybrid QKD + Post-Quantum Cryptography*
+_Recommended: Hybrid QKD + Post-Quantum Cryptography_
 
 ```
 Layer 1: QKD (Primary Key Generation)
@@ -172,20 +177,23 @@ Layer 3: Classical Cryptography (Transport)
 - TLS 1.3 with hybrid key exchange
 ```
 
-*Rationale:*
+_Rationale:_
+
 - QKD provides information-theoretic security for key distribution
 - PQC provides cryptographic backup if QKD unavailable
 - Hybrid approach ensures defense in depth
 
 **Hardware Requirements**
 
-*QKD Equipment (per branch pair):*
+_QKD Equipment (per branch pair):_
+
 - QKD transmitter/receiver units (e.g., ID Quantique Clavis3)
 - Quantum random number generator (QRNG)
 - Key management appliance
 - Dedicated dark fiber channel
 
-*Network Integration:*
+_Network Integration:_
+
 - Classical authentication channel (out-of-band)
 - GPS/PTP timing synchronization
 - Key management API integration with existing HSMs
@@ -221,21 +229,23 @@ Month 9-12: Production Deployment & Certification
 
 **Compliance Mapping**
 
-| Requirement | Standard | Implementation |
-|-------------|----------|----------------|
-| Cryptographic modules | FIPS 140-3 Level 3+ | QKD + PQC modules validated |
-| Key management | NIST SP 800-57 | Lifecycle management procedures |
-| Quantum readiness | NIST SP 800-208 | PQC algorithm selection |
-| Random number generation | NIST SP 800-90B | QRNG certification |
+| Requirement              | Standard            | Implementation                  |
+| ------------------------ | ------------------- | ------------------------------- |
+| Cryptographic modules    | FIPS 140-3 Level 3+ | QKD + PQC modules validated     |
+| Key management           | NIST SP 800-57      | Lifecycle management procedures |
+| Quantum readiness        | NIST SP 800-208     | PQC algorithm selection         |
+| Random number generation | NIST SP 800-90B     | QRNG certification              |
 
 **Operational Procedures**
 
-*Monitoring:*
+_Monitoring:_
+
 - QKD key rate monitoring (alert if <0.5 Mbps)
 - Quantum bit error rate (QBER) tracking (alert if >5%)
 - Key pool levels (alert if <24 hours reserve)
 
-*Incident Response:*
+_Incident Response:_
+
 - QKD channel interruption: Automatic failover to PQC
 - Elevated QBER: Potential eavesdropping, investigate
 - Key exhaustion: Emergency PQC-only mode

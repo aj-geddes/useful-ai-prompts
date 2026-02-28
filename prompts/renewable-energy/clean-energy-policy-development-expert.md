@@ -1,6 +1,7 @@
 # Clean Energy Policy Development Expert
 
 ## Metadata
+
 - **ID**: `clean-energy-policy-development-expert`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Design and implement comprehensive clean energy policies that accelerate renewab
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing renewable energy mandates or incentive programs
 - Analyzing policy impacts on energy markets and stakeholders
 - Creating regulatory compliance frameworks for utilities
@@ -26,6 +28,7 @@ Design and implement comprehensive clean energy policies that accelerate renewab
 - Stakeholder engagement and coalition building for policy adoption
 
 **Anti-Patterns (When NOT to Use):**
+
 - Legal drafting of legislation (requires legal counsel)
 - Specific utility rate case proceedings (requires regulatory specialists)
 - Individual permit applications (requires local expertise)
@@ -111,9 +114,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Our state currently has a 25% renewable portfolio standard (RPS) by 2030. We want to increase this to 100% clean energy by 2045. Key stakeholders include two investor-owned utilities, rural electric cooperatives, industrial customers, and environmental justice communities that have historically been burdened by fossil fuel facilities. The current administration is supportive, but the legislature is closely divided.
 
 ### Output
+
 **Clean Energy Policy Framework: 100% Clean Energy by 2045**
 
 **Policy Context Assessment**
@@ -122,22 +127,25 @@ Your state's existing 25% RPS provides foundation infrastructure, but reaching 1
 
 **Recommended Policy Architecture**
 
-*Tiered Clean Energy Standard*
+_Tiered Clean Energy Standard_
 Rather than single mandate, implement graduated targets:
+
 - 50% clean energy by 2030 (near-term acceleration)
 - 80% by 2040 (major transition period)
 - 100% by 2045 (final phase with flexibility mechanisms)
 
 This approach provides regulatory certainty while allowing technology and market evolution.
 
-*Technology-Neutral with Guardrails*
+_Technology-Neutral with Guardrails_
 Define "clean energy" broadly (renewables, nuclear, carbon capture) but:
+
 - Require minimum 60% from new renewable generation
 - Cap existing nuclear contribution to prevent gaming
 - Include energy storage and demand response as eligible resources
 - Establish carbon intensity threshold rather than technology list
 
-*Compliance Flexibility Mechanisms*
+_Compliance Flexibility Mechanisms_
+
 - Banking and borrowing of credits across compliance periods
 - Alternative compliance payments (set above expected renewable costs)
 - Regional credit trading with neighboring states
@@ -145,25 +153,29 @@ Define "clean energy" broadly (renewables, nuclear, carbon capture) but:
 
 **Stakeholder-Specific Provisions**
 
-*Investor-Owned Utilities*
+_Investor-Owned Utilities_
+
 - Cost recovery assurance for prudent clean energy investments
 - Performance incentives for exceeding targets
 - Stranded cost recovery mechanism for early fossil retirement
 - Integrated resource planning requirements with 20-year horizon
 
-*Rural Electric Cooperatives*
+_Rural Electric Cooperatives_
+
 - Extended compliance timelines (5-year lag from IOU targets)
 - Technical assistance and aggregated procurement programs
 - Community solar carve-out requirements (5% of target)
 - Transmission cost allocation protections
 
-*Industrial Customers*
+_Industrial Customers_
+
 - Large customer renewable procurement options (direct PPAs)
 - Economic development provisions for clean energy manufacturing
 - Rate impact mitigation through gradual phase-in
 - Energy efficiency credit provisions
 
-*Environmental Justice Communities*
+_Environmental Justice Communities_
+
 - 40% of clean energy investment benefits directed to EJ communities
 - Priority siting for beneficial facilities (solar, storage)
 - Community ownership incentives (cooperatives, community solar)
@@ -171,19 +183,22 @@ Define "clean energy" broadly (renewables, nuclear, carbon capture) but:
 
 **Implementation Roadmap**
 
-*Phase 1 (Years 1-2): Foundation*
+_Phase 1 (Years 1-2): Foundation_
+
 - Establish Clean Energy Office with dedicated staff
 - Develop detailed rules and compliance protocols
 - Launch stakeholder working groups for implementation details
 - Begin utility integrated resource plan updates
 
-*Phase 2 (Years 3-5): Acceleration*
+_Phase 2 (Years 3-5): Acceleration_
+
 - First compliance period reporting and verification
 - Transmission planning for renewable integration
 - Workforce development program launch
 - Community benefit agreement framework
 
-*Phase 3 (Years 6-10): Scaling*
+_Phase 3 (Years 6-10): Scaling_
+
 - Major renewable procurement cycles
 - Storage and grid modernization investments
 - Mid-course correction based on technology/cost evolution
@@ -191,13 +206,15 @@ Define "clean energy" broadly (renewables, nuclear, carbon capture) but:
 
 **Political Strategy Considerations**
 
-*Building Legislative Support*
+_Building Legislative Support_
+
 - Frame as economic development and job creation
 - Emphasize energy cost stability over volatility of fossil fuels
 - Highlight rural benefits (wind, solar lease payments)
 - Include nuclear provisions to broaden coalition
 
-*Managing Opposition*
+_Managing Opposition_
+
 - Utility concerns: Address through cost recovery and planning certainty
 - Industrial concerns: Provide procurement flexibility and rate mitigation
 - Rural concerns: Cooperative accommodations and community benefits
@@ -222,6 +239,7 @@ Define "clean energy" broadly (renewables, nuclear, carbon capture) but:
 ---
 
 ## Related Prompts
+
 - [Smart Grid Infrastructure Architect](smart-grid-infrastructure-architect.md) - For grid modernization
 - [Energy Storage System Design Expert](energy-storage-system-design-expert.md) - For storage integration
 - [Community Solar Development](community-solar-shared-ownership-development.md) - For community programs

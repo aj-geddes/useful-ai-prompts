@@ -1,6 +1,7 @@
 # Support Team Trainer
 
 ## Metadata
+
 - **ID**: `customer-service-support-team-trainer`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a customer support training specialist who designs product
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Onboarding a cohort of new support agents who need to reach proficiency quickly
 - Diagnosing and addressing a skill gap identified through CSAT feedback or QA audits
 - Building a structured training program to replace inconsistent ad-hoc coaching
 
 **Anti-patterns (Don't Use For):**
+
 - Replacing real-time coaching and feedback — training is not a substitute for ongoing QA
 - Technical training that requires access to proprietary internal systems to be useful
 
@@ -71,9 +74,11 @@ Scenarios must be grounded in real ticket types, not hypothetical extremes.
 ## Example Usage
 
 ### Input
+
 "We have 6 new support agents starting next week. They'll handle email and chat support for our project management SaaS. CSAT goal is 88%+. Our main issues with past agents: they escalate too quickly instead of trying to resolve, they write long confusing emails, and they get flustered by frustrated customers. Training time: 3 days before they go live, then 30 days with supervision."
 
 ### Output
+
 **New Agent Onboarding Training Plan — Project Management SaaS Support**
 
 ---
@@ -81,6 +86,7 @@ Scenarios must be grounded in real ticket types, not hypothetical extremes.
 **Learning Objectives**
 
 By the end of onboarding, agents will be able to:
+
 1. Resolve the 15 most common ticket types independently without escalation
 2. Write a clear support email response in under 150 words that answers the question completely
 3. Apply the 3-step de-escalation framework to a frustrated customer without supervisor intervention
@@ -91,14 +97,14 @@ By the end of onboarding, agents will be able to:
 
 **3-Day Training Outline**
 
-| Day | Module | Duration | Format | Activity |
-|---|---|---|---|---|
-| Day 1 AM | Product Foundations | 2 hours | Instructor-led | Guided product walkthrough + hands-on sandbox |
-| Day 1 PM | Common Ticket Types | 2.5 hours | Self-paced + quiz | Read the top 15 ticket solutions; knowledge check quiz |
-| Day 2 AM | Writing for Support | 2 hours | Workshop | Before/after email rewrites; peer review |
-| Day 2 PM | De-escalation Framework | 2 hours | Role-play | 3 escalation scenarios with facilitator feedback |
-| Day 3 AM | Ticketing System + Knowledge Base | 2 hours | Hands-on | Live ticket routing practice in staging environment |
-| Day 3 PM | Supervised Live Practice | 3 hours | Shadowing + reverse shadow | Agent handles real tickets with senior agent available |
+| Day      | Module                            | Duration  | Format                     | Activity                                               |
+| -------- | --------------------------------- | --------- | -------------------------- | ------------------------------------------------------ |
+| Day 1 AM | Product Foundations               | 2 hours   | Instructor-led             | Guided product walkthrough + hands-on sandbox          |
+| Day 1 PM | Common Ticket Types               | 2.5 hours | Self-paced + quiz          | Read the top 15 ticket solutions; knowledge check quiz |
+| Day 2 AM | Writing for Support               | 2 hours   | Workshop                   | Before/after email rewrites; peer review               |
+| Day 2 PM | De-escalation Framework           | 2 hours   | Role-play                  | 3 escalation scenarios with facilitator feedback       |
+| Day 3 AM | Ticketing System + Knowledge Base | 2 hours   | Hands-on                   | Live ticket routing practice in staging environment    |
+| Day 3 PM | Supervised Live Practice          | 3 hours   | Shadowing + reverse shadow | Agent handles real tickets with senior agent available |
 
 ---
 
@@ -120,11 +126,11 @@ Agent task: Apply 3-step framework — (1) acknowledge and validate, (2) take ow
 
 **Assessment Rubric**
 
-| Competency | Novice | Proficient | Expert |
-|---|---|---|---|
-| Writing clarity | >150 words, unclear structure | <150 words, question answered | <100 words, proactive next step included |
-| Escalation judgment | Escalates >50% of solvable tickets | Escalates only when warranted | Escalates correctly + documents attempt |
-| De-escalation | Transfers without attempting de-escalation | Attempts de-escalation, partially effective | Resolves tension and retains customer |
+| Competency          | Novice                                     | Proficient                                  | Expert                                   |
+| ------------------- | ------------------------------------------ | ------------------------------------------- | ---------------------------------------- |
+| Writing clarity     | >150 words, unclear structure              | <150 words, question answered               | <100 words, proactive next step included |
+| Escalation judgment | Escalates >50% of solvable tickets         | Escalates only when warranted               | Escalates correctly + documents attempt  |
+| De-escalation       | Transfers without attempting de-escalation | Attempts de-escalation, partially effective | Resolves tension and retains customer    |
 
 Target: Proficient level in all competencies before unsupervised live queue access.
 
@@ -141,10 +147,12 @@ Target: Proficient level in all competencies before unsupervised live queue acce
 ---
 
 ## Variations
+
 - **Skill Gap Remediation Mode**: Design a targeted 1-week program for an existing agent showing low CSAT scores related to a specific skill gap (e.g., response tone, technical accuracy)
 - **Team Lead Development Mode**: Build a training track for senior agents transitioning into team lead roles, covering coaching skills, QA calibration, and escalation management
 
 ## Related Prompts
+
 - [Knowledge Base Builder](knowledge-base-builder.md) - Building the reference materials agents use during training and on the job
 - [Service Level Designer](service-level-designer.md) - Teaching agents to apply SLA priority criteria correctly
 - [Escalation Handler](escalation-handler.md) - Advanced de-escalation training for experienced agents

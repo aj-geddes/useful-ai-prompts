@@ -1,6 +1,7 @@
 # Market Fit Assessment Expert
 
 ## Metadata
+
 - **ID**: `evaluation-market-fit-assessment`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Product
@@ -18,12 +19,14 @@ Evaluate whether products truly meet market needs by analyzing customer signals,
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing product-market fit for new products
 - Diagnosing slow adoption or high churn
 - Validating market assumptions before scaling
 - Identifying pivot opportunities
 
 **Anti-patterns:**
+
 - Market sizing research requiring primary research
 - Competitive intelligence gathering beyond product comparison
 - Financial valuation requiring investment analysis
@@ -97,9 +100,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a B2B HR software for small businesses. 500 users, $200K ARR, 8% monthly churn. NPS is 35. Users say they like it but adoption stalls after onboarding. Growing 15% quarterly but mainly from outbound sales."
 
 ### Output
+
 **Product-Market Fit Assessment: HR Software for SMB**
 
 **PMF Score Card**
@@ -117,15 +122,16 @@ The product shows promise (users don't hate it) but hasn't achieved strong fit. 
 
 **Customer-Problem-Solution Alignment**
 
-*Stated Problem*: Small businesses need simpler HR tools
+_Stated Problem_: Small businesses need simpler HR tools
 
-*Analysis*:
+_Analysis_:
+
 - Problem exists and is painful (good)
 - Solution addresses some needs but not the core workflow
 - Gap: Users adopt for one feature but don't integrate into daily work
 - Evidence: Usage drops after initial setup suggests "set and forget" product
 
-*Hypothesis*: Product solves a "nice to have" problem (HR admin) rather than a "hair on fire" problem (hiring, payroll, compliance).
+_Hypothesis_: Product solves a "nice to have" problem (HR admin) rather than a "hair on fire" problem (hiring, payroll, compliance).
 
 **Competitive Positioning**
 | Competitor | Strength | Your Differentiation |
@@ -134,7 +140,7 @@ The product shows promise (users don't hate it) but hasn't achieved strong fit. 
 | BambooHR | Full-featured | Easier for tiny teams |
 | Spreadsheets | Free, familiar | Better organization |
 
-*Issue*: Differentiation is "simpler/cheaper" but not enough to overcome switching costs or create urgency.
+_Issue_: Differentiation is "simpler/cheaper" but not enough to overcome switching costs or create urgency.
 
 **Gap Identification**
 
@@ -155,19 +161,22 @@ The product shows promise (users don't hate it) but hasn't achieved strong fit. 
 
 **Improvement Roadmap**
 
-*Phase 1: Find Your Core (Months 1-2)*
+_Phase 1: Find Your Core (Months 1-2)_
+
 - Interview churned users: Why did you leave?
 - Interview power users: What keeps you using daily?
 - Identify: What's the one thing users would miss most?
 - Action: Double down on highest-value feature
 
-*Phase 2: Nail Retention (Months 3-4)*
+_Phase 2: Nail Retention (Months 3-4)_
+
 - Reduce time-to-value: Faster onboarding to core action
 - Add daily trigger: Email/notification that brings users back
 - Create "aha moment" within first 7 days
 - Target: Reduce churn to 5%
 
-*Phase 3: Enable Growth (Months 5-6)*
+_Phase 3: Enable Growth (Months 5-6)_
+
 - Build referral program once retention is solid
 - Create shareable reports/outputs users can show off
 - Target: 20% of new users from organic/referral
@@ -179,5 +188,6 @@ Consider narrowing focus: Which company size, industry, or use case has best ret
 When you can say "40% of users would be very disappointed if this product went away" (via survey), you have strong PMF. Current estimate: ~15%.
 
 ## Related Prompts
+
 - [Product Evaluation Expert](product-evaluation-expert.md)
 - [Investment Opportunity Assessment Expert](investment-opportunity-assessment-expert.md)

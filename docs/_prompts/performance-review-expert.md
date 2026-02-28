@@ -3,26 +3,27 @@ title: Performance Review Expert
 slug: performance-review-expert
 category: evaluation & assessment/hr
 tags:
-- performance-review
-- employee-evaluation
-- feedback
-- goals
-- career-development
+  - performance-review
+  - employee-evaluation
+  - feedback
+  - goals
+  - career-development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Create comprehensive, fair, and actionable performance reviews that develop
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Create comprehensive, fair, and actionable performance reviews that develop
   employee capabilities while providing clear feedback on achievements and growth
   areas. Supports annual reviews, quarterly check-ins, and performance improvement
   plans.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing annual or quarterly performance reviews
-- Preparing for performance conversations
-- Creating performance improvement plans
-- Setting goals for the next review period
+  - Ideal Scenarios:**
+  - Writing annual or quarterly performance reviews
+  - Preparing for performance conversations
+  - Creating performance improvement plans
+  - Setting goals for the next review period
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Performance reviews serve dual purposes: documenting past performance and guidin
 
 <input_handling>
 Required:
+
 - Employee name and role
 - Review period
 - Key achievements and areas for improvement
 
 Infer if not provided:
+
 - Review type (assume annual if not specified)
 - Rating scale (use standard exceeds/meets/needs improvement)
 - Goal framework (use SMART goals)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive performance review with specific examples and development plan.
@@ -55,28 +58,31 @@ Create a comprehensive performance review with specific examples and development
 3. Identify development areas with constructive framing
 4. Create SMART goals for the next period
 5. Provide talking points for the review conversation
-</task>
+   </task>
 
 <output_specification>
 **Performance Review Document**
+
 - Format: Structured review with achievements, development, and goals
 - Length: 700-1000 words
 - Must include: Overall rating, specific achievements, development areas, SMART goals, conversation talking points
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Uses specific examples rather than generalizations
 - Balances positive feedback with constructive development areas
 - Creates actionable, measurable goals
 - Provides clear expectations for advancement
 
 Avoid:
+
 - Vague feedback without examples
 - Overly positive reviews that miss growth opportunities
 - Negative framing without constructive suggestions
 - Goals that aren't specific or measurable
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Use specific, observable examples for all feedback

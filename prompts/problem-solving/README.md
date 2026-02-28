@@ -22,4 +22,4 @@ Systematic approaches to identifying, analyzing, and resolving complex problems.
 
 ---
 
-*Strategic problem-solving prompts for complex challenges and systematic solutions.*
+_Strategic problem-solving prompts for complex challenges and systematic solutions._

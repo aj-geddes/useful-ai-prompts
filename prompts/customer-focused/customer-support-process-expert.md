@@ -1,6 +1,7 @@
 # Customer Support Process Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-support-process-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Optimize customer support operations to deliver faster resolutions, higher satis
 ## When to Use
 
 ### Ideal Scenarios
+
 - Redesigning support operations for scale or quality improvement
 - Implementing or optimizing ticketing and routing systems
 - Building knowledge bases and self-service capabilities
@@ -26,6 +28,7 @@ Optimize customer support operations to deliver faster resolutions, higher satis
 - Reducing support costs while maintaining or improving satisfaction
 
 ### Anti-Patterns (When Not to Use)
+
 - Single complex escalation requiring immediate resolution
 - Pure technical troubleshooting for specific issues
 - When no authority exists to change support processes
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Channels: Email (60%), live chat (30%), in-app (10%)
 2. Team: 10 support agents, 1 team lead, no specialists
@@ -132,12 +136,14 @@ Your current shared-queue model with generalist agents is creating inefficiency 
 **TIERED SUPPORT MODEL**
 
 **Tier 0: Self-Service (Target: 30% deflection)**
+
 - Scope: Account access resets, common billing questions, feature how-to documentation
 - Channels: Knowledge base, in-app guides, chatbot for common queries
 - No agent involvement unless escalated
 - Success Metric: 30% of current ticket types resolved without human contact
 
 **Tier 1: General Support (6 agents)**
+
 - Scope: Account issues, billing questions, basic feature guidance, simple troubleshooting
 - Skills Required: Product knowledge, customer communication, process adherence
 - Authority: Standard issue resolution, refunds up to $50, account modifications
@@ -145,6 +151,7 @@ Your current shared-queue model with generalist agents is creating inefficiency 
 - Target Resolution: 80% of tickets without escalation
 
 **Tier 2: Specialist Support (3 agents)**
+
 - Scope: Technical troubleshooting, complex billing, escalated issues, edge cases
 - Skills Required: Deep technical knowledge, advanced problem-solving, de-escalation
 - Authority: Full refunds, account credits, workaround implementation
@@ -152,6 +159,7 @@ Your current shared-queue model with generalist agents is creating inefficiency 
 - Target Resolution: 95% of escalated tickets resolved at this tier
 
 **Tier 3: Lead and Engineering (Team Lead + Engineering on-call)**
+
 - Scope: Policy exceptions, major account issues, confirmed bugs, VIP customers
 - Involvement: Only when lower tiers cannot resolve
 - Responsibility: Also handles queue monitoring, agent coaching, process improvement
@@ -162,15 +170,15 @@ Your current shared-queue model with generalist agents is creating inefficiency 
 
 **Lifecycle Stages:**
 
-| Stage | Definition | SLA Target | Automation |
-|-------|------------|------------|------------|
-| New | Ticket created, unassigned | Classify within 5 min | Auto-classify by keywords |
-| First Response | Agent acknowledged | 1 hour (chat: 2 min) | Auto-assign by tier/skill |
-| In Progress | Agent working resolution | Updates every 4 hours | Reminder automation |
-| Pending Customer | Waiting for customer reply | 24 hours before follow-up | Auto follow-up |
-| Pending Internal | Waiting for internal team | Tracked separately | Escalation alerts |
-| Resolved | Solution provided | Customer confirms or 48h | Auto-close after 48h |
-| Closed | Complete | N/A | CSAT survey triggered |
+| Stage            | Definition                 | SLA Target                | Automation                |
+| ---------------- | -------------------------- | ------------------------- | ------------------------- |
+| New              | Ticket created, unassigned | Classify within 5 min     | Auto-classify by keywords |
+| First Response   | Agent acknowledged         | 1 hour (chat: 2 min)      | Auto-assign by tier/skill |
+| In Progress      | Agent working resolution   | Updates every 4 hours     | Reminder automation       |
+| Pending Customer | Waiting for customer reply | 24 hours before follow-up | Auto follow-up            |
+| Pending Internal | Waiting for internal team  | Tracked separately        | Escalation alerts         |
+| Resolved         | Solution provided          | Customer confirms or 48h  | Auto-close after 48h      |
+| Closed           | Complete                   | N/A                       | CSAT survey triggered     |
 
 **Routing Logic:**
 
@@ -195,12 +203,12 @@ DEFAULT → Tier 1 shared queue, round-robin assignment
 
 **Priority Matrix:**
 
-| Priority | Criteria | First Response SLA | Resolution SLA |
-|----------|----------|-------------------|----------------|
-| Urgent | Account locked, payment failed, VIP | 15 minutes | 4 hours |
-| High | Feature broken, billing discrepancy | 1 hour | 8 hours |
-| Normal | How-to questions, general inquiries | 4 hours | 24 hours |
-| Low | Feature requests, feedback | 8 hours | 72 hours |
+| Priority | Criteria                            | First Response SLA | Resolution SLA |
+| -------- | ----------------------------------- | ------------------ | -------------- |
+| Urgent   | Account locked, payment failed, VIP | 15 minutes         | 4 hours        |
+| High     | Feature broken, billing discrepancy | 1 hour             | 8 hours        |
+| Normal   | How-to questions, general inquiries | 4 hours            | 24 hours       |
+| Low      | Feature requests, feedback          | 8 hours            | 72 hours       |
 
 ---
 
@@ -209,6 +217,7 @@ DEFAULT → Tier 1 shared queue, round-robin assignment
 **Internal Knowledge Base Structure:**
 
 Troubleshooting Guides (by issue type):
+
 - Account Access Issues: Step-by-step resolution trees
 - Billing Scenarios: Decision trees for common situations
 - Feature Guides: How each feature works, common questions
@@ -216,6 +225,7 @@ Troubleshooting Guides (by issue type):
 - Escalation Procedures: When and how to escalate by issue type
 
 Process Documentation:
+
 - Refund and credit policies with approval thresholds
 - Account modification procedures
 - Security and verification requirements
@@ -224,24 +234,28 @@ Process Documentation:
 **Customer-Facing Knowledge Base (Priority Articles):**
 
 Account Section (targeting 25% of tickets):
+
 - "How to reset your password"
 - "Updating your email address"
 - "Two-factor authentication setup"
 - "Account access troubleshooting"
 
 Billing Section (targeting 20% of tickets):
+
 - "Understanding your invoice"
 - "Updating payment method"
 - "Cancellation and refund policy"
 - "Upgrading or downgrading your plan"
 
 Features Section (targeting 30% of tickets):
+
 - Quick-start guides for top 10 features
 - Video tutorials (2-3 minutes each)
 - Common use case walkthroughs
 - "Getting Started" onboarding guide
 
 **Knowledge Management Process:**
+
 1. Weekly review of most common tickets not covered by KB
 2. Agents flag KB gaps in ticket notes (Zendesk tag: "kb-gap")
 3. Team Lead reviews gaps weekly, prioritizes article creation
@@ -254,18 +268,19 @@ Features Section (targeting 30% of tickets):
 
 **Macro Library (Zendesk):**
 
-| Category | Macro Name | Usage |
-|----------|------------|-------|
-| Account | Password Reset Instructions | Include reset link, security tips |
-| Account | Email Change Confirmation | Confirmation with verification steps |
-| Billing | Refund Processed | Confirmation with timeline |
-| Billing | Invoice Explanation | Breakdown of charges |
-| Feature | Feature Guide Link | KB article with follow-up offer |
-| Bug | Bug Acknowledged | Next steps, workaround if available |
-| General | Additional Info Needed | Specific questions for resolution |
-| General | Ticket Resolved Confirmation | Closing with CSAT invitation |
+| Category | Macro Name                   | Usage                                |
+| -------- | ---------------------------- | ------------------------------------ |
+| Account  | Password Reset Instructions  | Include reset link, security tips    |
+| Account  | Email Change Confirmation    | Confirmation with verification steps |
+| Billing  | Refund Processed             | Confirmation with timeline           |
+| Billing  | Invoice Explanation          | Breakdown of charges                 |
+| Feature  | Feature Guide Link           | KB article with follow-up offer      |
+| Bug      | Bug Acknowledged             | Next steps, workaround if available  |
+| General  | Additional Info Needed       | Specific questions for resolution    |
+| General  | Ticket Resolved Confirmation | Closing with CSAT invitation         |
 
 **Quick Actions:**
+
 - One-click password reset
 - Account lookup with key details displayed
 - Recent billing history view
@@ -275,6 +290,7 @@ Features Section (targeting 30% of tickets):
 **Decision Trees (In Zendesk App):**
 
 Account Access Issues:
+
 1. Can customer receive email?
    - Yes: Send password reset
    - No: Verify identity, manual reset
@@ -283,6 +299,7 @@ Account Access Issues:
    - No: Standard reset flow
 
 Billing Disputes:
+
 1. Is charge within policy refund window?
    - Yes: Process refund directly
    - No: Escalate to Tier 2 or apply discretionary credit
@@ -295,26 +312,27 @@ Billing Disputes:
 
 **Individual Agent Metrics:**
 
-| Metric | Current | Target | Measurement |
-|--------|---------|--------|-------------|
-| First Response Time | 4 hours | Under 1 hour | Zendesk reporting |
-| Average Resolution Time | 18 hours | Under 8 hours | Zendesk reporting |
-| Customer Satisfaction | 3.8/5 | 4.3+/5 | Post-ticket survey |
-| Tickets per Day | 50 | 40-45 (with self-service) | Daily tracking |
-| First Contact Resolution | Not tracked | 70%+ | Tag-based tracking |
-| Quality Score | Not tracked | 90%+ | Weekly ticket reviews |
+| Metric                   | Current     | Target                    | Measurement           |
+| ------------------------ | ----------- | ------------------------- | --------------------- |
+| First Response Time      | 4 hours     | Under 1 hour              | Zendesk reporting     |
+| Average Resolution Time  | 18 hours    | Under 8 hours             | Zendesk reporting     |
+| Customer Satisfaction    | 3.8/5       | 4.3+/5                    | Post-ticket survey    |
+| Tickets per Day          | 50          | 40-45 (with self-service) | Daily tracking        |
+| First Contact Resolution | Not tracked | 70%+                      | Tag-based tracking    |
+| Quality Score            | Not tracked | 90%+                      | Weekly ticket reviews |
 
 **Team Metrics:**
 
-| Metric | Current | Target | Measurement |
-|--------|---------|--------|-------------|
-| Ticket Backlog | Varies | Under 50 at end of day | Queue monitoring |
-| Escalation Rate | Not tracked | Under 20% | Tier transfer tracking |
-| Self-Service Deflection | 0% | 30% | KB analytics + volume change |
-| Agent Satisfaction | Unknown | 4.0+/5 | Monthly pulse survey |
-| Average Handle Time | Not tracked | Under 12 minutes | Time tracking |
+| Metric                  | Current     | Target                 | Measurement                  |
+| ----------------------- | ----------- | ---------------------- | ---------------------------- |
+| Ticket Backlog          | Varies      | Under 50 at end of day | Queue monitoring             |
+| Escalation Rate         | Not tracked | Under 20%              | Tier transfer tracking       |
+| Self-Service Deflection | 0%          | 30%                    | KB analytics + volume change |
+| Agent Satisfaction      | Unknown     | 4.0+/5                 | Monthly pulse survey         |
+| Average Handle Time     | Not tracked | Under 12 minutes       | Time tracking                |
 
 **Quality Assurance Process:**
+
 - Team Lead reviews 5 tickets per agent per week
 - Scoring rubric: Accuracy (40%), Tone (30%), Efficiency (20%), KB usage (10%)
 - Weekly 1:1s include quality discussion
@@ -327,12 +345,14 @@ Billing Disputes:
 **Phase 1: Foundation (Weeks 1-4)**
 
 Week 1-2:
+
 - Audit and update top 20 KB articles
 - Configure auto-classification rules in Zendesk
 - Create priority matrix and implement routing rules
 - Set up basic metrics dashboard
 
 Week 3-4:
+
 - Develop initial macro library (20 most common responses)
 - Implement tiered queue structure
 - Assign agents to Tier 1 vs. Tier 2 based on skills
@@ -341,12 +361,14 @@ Week 3-4:
 **Phase 2: Optimization (Weeks 5-8)**
 
 Week 5-6:
+
 - Launch improved customer-facing KB
 - Implement in-app chat deflection (KB suggestions before agent)
 - Deploy decision trees for top 3 issue types
 - Begin quality scoring program
 
 Week 7-8:
+
 - Analyze first month metrics, adjust routing
 - Expand macro library based on usage
 - Train team on escalation procedures
@@ -355,12 +377,14 @@ Week 7-8:
 **Phase 3: Scale Preparation (Weeks 9-12)**
 
 Week 9-10:
+
 - Launch chatbot for Tier 0 issues (account access, billing FAQ)
 - Expand KB based on gap analysis
 - Optimize agent scheduling for volume patterns
 - Cross-train Tier 1 agents on common Tier 2 issues
 
 Week 11-12:
+
 - Full metrics review and target adjustment
 - Process documentation complete
 - Onboarding materials ready for new product tier

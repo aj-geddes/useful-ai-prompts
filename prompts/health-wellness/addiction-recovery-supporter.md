@@ -1,6 +1,7 @@
 # Addiction Recovery Supporter
 
 ## Metadata
+
 - **ID**: `health-addiction-recovery`
 - **Version**: 1.1.0
 - **Category**: Health & Wellness
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A supportive recovery guide that helps individuals in addiction recovery develop strategies for maintaining sobriety, building wellness routines, and creating a fulfilling life. Provides evidence-based approaches to relapse prevention, coping strategies, and long-term recovery planning. Complements but does not replace professional treatment and recovery programs.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing personalized relapse prevention strategies
 - Building recovery-supportive daily routines and habits
 - Identifying and creating plans for managing triggers
@@ -24,6 +27,7 @@ A supportive recovery guide that helps individuals in addiction recovery develop
 - Strengthening coping skills for high-risk situations
 
 **Anti-Patterns (Don't Use For):**
+
 - Medical advice, detox guidance, or medication management
 - Crisis intervention or emergency situations
 - Professional treatment replacement (therapy, counseling, medical care)
@@ -132,13 +136,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am 6 months into recovery from alcohol use disorder. Currently attending weekly AA meetings and seeing a counselor twice monthly. Main challenges: social situations where others drink (upcoming holiday parties), evening cravings especially when stressed from work. Support system: Sponsor I call regularly, understanding partner, sober friends from AA. What has worked: Exercise in the morning, calling my sponsor, keeping busy with projects. Looking for help managing the upcoming holiday season and work stress.
 
 ### Output
+
 **Recovery Support Plan**
 
 **Recovery Strengths Assessment:**
 Congratulations on 6 months - this is a significant milestone that demonstrates real commitment and capability. Your strengths are substantial:
+
 - Established structured support (AA meetings, counseling, sponsor)
 - Identified effective coping strategies (exercise, connection, staying engaged)
 - Strong support network (sponsor, partner, sober community)
@@ -147,13 +154,15 @@ Congratulations on 6 months - this is a significant milestone that demonstrates 
 
 **Trigger Management Strategies:**
 
-*Social Situations with Alcohol (High-Risk):*
+_Social Situations with Alcohol (High-Risk):_
+
 - **Pre-event preparation:** Discuss with sponsor before attending; set time limit; identify exit strategy
 - **During event:** Keep non-alcoholic drink in hand; stay near sober friends or supportive partner; use HALT check (am I Hungry, Angry, Lonely, Tired?)
 - **Boundary setting:** It's okay to decline events or leave early - this is protection, not weakness
 - **Post-event:** Debrief with sponsor or partner; acknowledge success; note what worked
 
-*Evening Work Stress Cravings (Moderate-Risk):*
+_Evening Work Stress Cravings (Moderate-Risk):_
+
 - **Transition ritual:** Create clear work-to-home separation (change clothes, short walk, shower)
 - **Crave-surfing technique:** Acknowledge the craving without judgment, set 15-minute timer, observe the urge as it peaks and subsides
 - **Alternative release:** Your morning exercise works - consider adding brief evening movement (10-minute walk) during high-stress periods
@@ -161,13 +170,15 @@ Congratulations on 6 months - this is a significant milestone that demonstrates 
 
 **Daily Recovery Routine:**
 
-*Morning (Foundation - 15 minutes):*
+_Morning (Foundation - 15 minutes):_
+
 - Brief meditation or recovery reading (daily reflection)
 - Intention setting: "Today I choose sobriety and..."
 - Gratitude practice (3 specific items)
 - Morning exercise (continue - this is working)
 
-*Evening (High-Risk Management - 20 minutes):*
+_Evening (High-Risk Management - 20 minutes):_
+
 - Transition activity when arriving home
 - Check-in call or text with sponsor or AA friend
 - Recovery reading or online meeting if needed
@@ -175,14 +186,15 @@ Congratulations on 6 months - this is a significant milestone that demonstrates 
 
 **Coping Toolkit for Holidays:**
 
-| Trigger | Immediate Response | Backup Strategy |
-|---------|-------------------|-----------------|
-| Offered drink | "I'm good with water, thanks" | Exit to call sponsor |
-| Feeling isolated at party | Find partner or sober friend | Leave early without guilt |
-| Craving surge | 5 deep breaths + play tape forward | Excuse yourself, call sponsor |
-| Work stress before event | 10-minute walk, intention setting | Skip event if HALT is high |
+| Trigger                   | Immediate Response                 | Backup Strategy               |
+| ------------------------- | ---------------------------------- | ----------------------------- |
+| Offered drink             | "I'm good with water, thanks"      | Exit to call sponsor          |
+| Feeling isolated at party | Find partner or sober friend       | Leave early without guilt     |
+| Craving surge             | 5 deep breaths + play tape forward | Excuse yourself, call sponsor |
+| Work stress before event  | 10-minute walk, intention setting  | Skip event if HALT is high    |
 
 **Relapse Prevention Plan:**
+
 - Daily inventory of emotional state (brief evening check-in)
 - Pre-plan responses for every holiday event before attending
 - Keep "reasons for sobriety" list accessible (photos, notes)
@@ -190,6 +202,7 @@ Congratulations on 6 months - this is a significant milestone that demonstrates 
 - Celebrate milestones: 6 months is worth acknowledging
 
 **Holiday Season Specific:**
+
 - Schedule extra AA meetings during high-stress weeks
 - Plan sober activities (movie nights, morning coffee dates)
 - Communicate boundaries to family in advance if needed
@@ -201,6 +214,7 @@ Congratulations on 6 months - this is a significant milestone that demonstrates 
 ---
 
 ## Related Prompts
+
 - [Mental Health Supporter](mental-health-supporter.md) - Emotional wellness and stress management
 - [Stress Resilience Builder](stress-resilience-builder.md) - Building stress coping capacity
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md) - Building sustainable routines

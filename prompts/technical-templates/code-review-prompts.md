@@ -1,6 +1,7 @@
 # Automated Code Review System
 
 ## Metadata
+
 - **ID**: `automated-code-review-system`
 - **Version**: 1.1.0
 - **Category**: Technical / Code Quality
@@ -18,6 +19,7 @@ Designs comprehensive automated code review systems with multi-layer analysis ca
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building automated code review pipelines for development teams at scale
 - Implementing quality gates with security scanning and performance analysis
 - Creating customizable rulesets for language-specific and project-specific best practices
@@ -25,6 +27,7 @@ Designs comprehensive automated code review systems with multi-layer analysis ca
 - Establishing audit trails and compliance documentation for regulated environments
 
 **Anti-patterns (when not to use):**
+
 - Manual code review process guidance without automation focus
 - Simple linting setup for individual projects
 - Single-file reviews not requiring systematic automation
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We are building a code review system for a Node.js/TypeScript monorepo with React frontend and Express backend. Team of 25 developers using GitHub Actions. Main concerns: security vulnerabilities in dependencies, code complexity getting out of control, inconsistent patterns across teams, and slow manual reviews taking 2-3 days. Need SOC 2 compliance with audit trails.
 
 ### Output
@@ -118,31 +122,36 @@ This automated code review system reduces review cycle time from 2-3 days to und
 
 **Multi-Layer Analysis Architecture**
 
-*Layer 1: Syntax and Formatting (Blocking)*
+_Layer 1: Syntax and Formatting (Blocking)_
+
 - ESLint with TypeScript parser for style enforcement (airbnb-typescript base)
 - Prettier integration with format-on-save and CI verification
 - Import sorting with eslint-plugin-import and auto-fix capability
 - Target: Zero formatting issues in merged code
 
-*Layer 2: Semantic Analysis (Blocking/Warning)*
+_Layer 2: Semantic Analysis (Blocking/Warning)_
+
 - TypeScript strict mode enabling noImplicitAny, strictNullChecks, strictFunctionTypes
 - Custom ESLint rules for project patterns (React hooks exhaustive deps, async/await patterns)
 - React-specific rules: hooks rules (react-hooks/exhaustive-deps), accessibility (jsx-a11y)
 - Express security patterns (helmet usage, input validation)
 
-*Layer 3: Security Scanning (Blocking)*
+_Layer 3: Security Scanning (Blocking)_
+
 - SAST: Semgrep with OWASP JavaScript/TypeScript rules (injection, XSS, SSRF patterns)
 - Dependency scanning: Snyk or npm audit with severity thresholds (critical/high block, medium warn)
 - Secrets detection: GitLeaks in pre-commit hooks and CI pipeline
 - Container scanning for production Docker images (Trivy)
 
-*Layer 4: Quality Metrics (Warning/Advisory)*
+_Layer 4: Quality Metrics (Warning/Advisory)_
+
 - Cyclomatic complexity limits: maximum 10 per function, warning at 8
 - Cognitive complexity tracking with refactoring suggestions
 - Test coverage enforcement: 80% minimum for new code, 70% overall
 - Code duplication detection: maximum 5% duplication threshold
 
-*Layer 5: Architectural Compliance (Advisory)*
+_Layer 5: Architectural Compliance (Advisory)_
+
 - Dependency direction rules preventing circular imports
 - Layer boundary enforcement (components, hooks, services, utils)
 - API contract validation against OpenAPI specifications

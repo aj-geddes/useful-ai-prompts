@@ -1,6 +1,7 @@
 # Financial Modeling Expert
 
 ## Metadata
+
 - **ID**: `analysis-financial-modeling-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds comprehensive financial models and valuations for investment decisions, M&A analysis, and strategic planning. Combines DCF, comparable company analysis, and scenario modeling for rigorous valuation.
 
 ## When to Use
+
 - Valuing companies for acquisition or investment
 - Building financial projections for fundraising
 - Analyzing M&A opportunities and deal structures
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Evaluating acquisition of TechFlow Inc., a B2B SaaS workflow automation company with $50M ARR, growing 35% annually. 90% recurring revenue, 80% gross margin, 15% EBITDA (reinvesting heavily). No debt, $20M cash, 10M shares. 7 years old, profitable, growth stage. Comparables: Asana, Monday.com, Smartsheet. Expect growth to taper to 30/25/20/10% over next 5 years. Need 20% IRR minimum.
 ```
 
 ### Output
+
 ```
 **TechFlow Inc. Valuation Analysis**
 
@@ -162,6 +167,7 @@ Bear Case    20%     $325M    14%     20% growth, competition
 ---
 
 ## Related Prompts
+
 - `analysis-cost-benefit-analysis-expert`: Investment decision analysis
 - `analysis-risk-assessment-expert`: Risk evaluation for investments
 - `financial-planning-investment-strategy-optimizer`: Portfolio-level analysis

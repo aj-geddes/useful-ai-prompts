@@ -3,23 +3,24 @@ title: Customer Satisfaction Measurement Expert
 slug: customer-satisfaction-measurement-expert
 category: customer-focused
 tags:
-- CSAT
-- NPS
-- customer
-- metrics
-- satisfaction
-- analysis
-- feedback
-- systems
-- CES
-- survey
-- design
+  - CSAT
+  - NPS
+  - customer
+  - metrics
+  - satisfaction
+  - analysis
+  - feedback
+  - systems
+  - CES
+  - survey
+  - design
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: Design comprehensive customer satisfaction measurement systems that provide
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  Design comprehensive customer satisfaction measurement systems that provide
   actionable insights and drive improvement. This prompt helps organizations build
   multi-metric frameworks combining NPS, CSAT, CES, and custom metrics, with proper
   survey strategies, closed-loop response processes, and continuous improvement tracking.
@@ -27,11 +28,11 @@ description: Design comprehensive customer satisfaction measurement systems that
   reports.
 layout: prompt
 use_cases:
-- Implementing or redesigning customer satisfaction measurement programs
-- Moving from ad-hoc surveys to systematic feedback collection
-- Connecting satisfaction metrics to business outcomes (retention, revenue)
-- Building closed-loop processes for acting on customer feedback
-- Establishing benchmarks and improvement tracking frameworks
+  - Implementing or redesigning customer satisfaction measurement programs
+  - Moving from ad-hoc surveys to systematic feedback collection
+  - Connecting satisfaction metrics to business outcomes (retention, revenue)
+  - Building closed-loop processes for acting on customer feedback
+  - Establishing benchmarks and improvement tracking frameworks
 complexity: Intermediate
 interaction: Multi-turn collaborative
 ---
@@ -46,6 +47,7 @@ Many organizations collect satisfaction data but fail to create actionable insig
 
 <input_handling>
 Required information to gather:
+
 1. Current satisfaction metrics tracked (if any)
 2. Current feedback collection methods and channels
 3. Current satisfaction score baseline (if known)
@@ -58,11 +60,12 @@ Required information to gather:
 10. Resources available for feedback program (tools, team, budget)
 
 Optional context:
+
 - Existing survey response rates
 - Known satisfaction drivers
 - Competitive satisfaction benchmarks
 - Integration with existing systems (CRM, support)
-</input_handling>
+  </input_handling>
 
 <task>
 1. ASSESS CURRENT STATE: Understand existing measurement capabilities and gaps
@@ -78,6 +81,7 @@ Optional context:
 Format: Comprehensive measurement system design with implementation guidance
 Length: 1500-2500 words for full framework
 Include:
+
 - Multi-metric framework with purpose and calculation for each metric
 - Touchpoint-mapped survey strategy with timing and question design
 - Survey design best practices for response rate optimization
@@ -85,16 +89,17 @@ Include:
 - Closed-loop response process with escalation and resolution tracking
 - Improvement tracking framework with targets and accountability
 - Reporting and dashboard recommendations by stakeholder
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Metrics are appropriate for the specific measurement purpose
 - Survey strategy balances comprehensiveness with response rate
 - Closed-loop process has clear ownership and accountability
 - Analysis approach identifies actionable drivers, not just correlations
 - Improvement tracking has specific, measurable targets
 - System is implementable given stated resources
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Do not recommend metrics without explaining their purpose and calculation

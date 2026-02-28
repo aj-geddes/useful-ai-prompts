@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Plan, coordinate, and execute software releases across environments.
+date: "2025-01-01"
+description:
+  Plan, coordinate, and execute software releases across environments.
   Manage versioning, rollout strategies, rollback procedures, and stakeholder communication
   for smooth deployments.
 layout: skill
 slug: release-planning
 tags:
-- deployment
+  - deployment
 title: release-planning
 ---
 
@@ -339,29 +340,23 @@ Versioning Strategy:
 
 Format: MAJOR.MINOR.PATCH
 
-Examples:
-  v2.5.1 - Patch release (bug fixes)
+Examples: v2.5.1 - Patch release (bug fixes)
   v2.6.0 - Minor release (new features, backwards compatible)
   v3.0.0 - Major release (breaking changes)
 
 ---
-
 Release Cadence:
   Major: Annually (Jan)
   Minor: Quarterly (Jan, Apr, Jul, Oct)
   Patch: Weekly or as-needed
-
 ---
-
 Version Naming Convention:
   Feature Release: v2.5.0
   Hotfix: v2.5.1
   Release Candidate: v2.5.0-rc.1
   Beta: v2.5.0-beta.1
   Alpha: v2.5.0-alpha.1
-
 ---
-
 Backwards Compatibility:
   - Maintain n-1 and n-2 major versions
   - Deprecate APIs 2 quarters before removal
@@ -382,7 +377,7 @@ class ReleaseRollout {
       errorRate: 0,
       responseTime: 0,
       userCount: 0,
-      conversionRate: 0
+      conversionRate: 0,
     };
   }
 
@@ -390,40 +385,40 @@ class ReleaseRollout {
     return [
       {
         phase: 1,
-        name: 'Canary',
-        rollout: '5%',
-        duration: '2 hours',
+        name: "Canary",
+        rollout: "5%",
+        duration: "2 hours",
         successCriteria: {
-          errorRate: '<0.1%',
-          responseTime: '<2s',
-          conversionRate: 'No significant change'
+          errorRate: "<0.1%",
+          responseTime: "<2s",
+          conversionRate: "No significant change",
         },
-        gatekeeper: 'Automated checks + human approval'
+        gatekeeper: "Automated checks + human approval",
       },
       {
         phase: 2,
-        name: 'Early Access',
-        rollout: '25%',
-        duration: '4 hours',
+        name: "Early Access",
+        rollout: "25%",
+        duration: "4 hours",
         successCriteria: {
-          errorRate: '<0.2%',
-          responseTime: '<2.5s',
-          conversionRate: 'No drop'
+          errorRate: "<0.2%",
+          responseTime: "<2.5s",
+          conversionRate: "No drop",
         },
-        gatekeeper: 'Manual verification'
+        gatekeeper: "Manual verification",
       },
       {
         phase: 3,
-        name: 'General Availability',
-        rollout: '100%',
-        duration: 'Ongoing',
+        name: "General Availability",
+        rollout: "100%",
+        duration: "Ongoing",
         successCriteria: {
-          errorRate: '<0.1%',
-          responseTime: '<2s',
-          businessMetrics: 'Targets met'
+          errorRate: "<0.1%",
+          responseTime: "<2s",
+          businessMetrics: "Targets met",
         },
-        gatekeeper: 'Continuous monitoring'
-      }
+        gatekeeper: "Continuous monitoring",
+      },
     ];
   }
 
@@ -433,11 +428,11 @@ class ReleaseRollout {
         errorRate: this.getErrorRate(),
         responseTime: this.getResponseTime(),
         userCount: this.getUserCount(),
-        conversionRate: this.getConversionRate()
+        conversionRate: this.getConversionRate(),
       },
       health: this.calculateReleaseHealth(),
       alerts: this.checkForAnomalies(),
-      recommendation: this.getRolloutRecommendation()
+      recommendation: this.getRolloutRecommendation(),
     };
   }
 
@@ -446,11 +441,11 @@ class ReleaseRollout {
       this.metrics.errorRate < 0.1,
       this.metrics.responseTime < 2000,
       this.metrics.conversionRate > -5,
-      this.metrics.userCount > 0
+      this.metrics.userCount > 0,
     ];
 
     const healthScore = (checks.filter(Boolean).length / checks.length) * 100;
-    return healthScore > 80 ? 'Healthy' : 'Degraded';
+    return healthScore > 80 ? "Healthy" : "Degraded";
   }
 }
 ```
@@ -458,6 +453,7 @@ class ReleaseRollout {
 ## Best Practices
 
 ### ✅ DO
+
 - Plan releases with clear timeline and milestones
 - Communicate early and often with stakeholders
 - Test thoroughly in staging environment
@@ -470,6 +466,7 @@ class ReleaseRollout {
 - Plan releases during lower-traffic periods
 
 ### ❌ DON'T
+
 - Release without adequate testing
 - Deploy Friday afternoon
 - Release without monitoring in place

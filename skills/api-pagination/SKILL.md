@@ -97,11 +97,11 @@ def list_users():
 // Cursor-based pagination for better performance
 class CursorPagination {
   static encode(value) {
-    return Buffer.from(String(value)).toString('base64');
+    return Buffer.from(String(value)).toString("base64");
   }
 
   static decode(cursor) {
-    return Buffer.from(cursor, 'base64').toString('utf-8');
+    return Buffer.from(cursor, "base64").toString("utf-8");
   }
 
   static generateCursor(resource) {
@@ -111,14 +111,16 @@ class CursorPagination {
   static parseCursor(cursor) {
     if (!cursor) return null;
     const decoded = this.decode(cursor);
-    const [id, timestamp] = decoded.split(':');
+    const [id, timestamp] = decoded.split(":");
     return { id, timestamp: parseInt(timestamp) };
   }
 }
 
-app.get('/api/users/cursor', async (req, res) => {
+app.get("/api/users/cursor", async (req, res) => {
   const limit = Math.min(parseInt(req.query.limit) || 20, 100);
-  const after = req.query.after ? CursorPagination.parseCursor(req.query.after) : null;
+  const after = req.query.after
+    ? CursorPagination.parseCursor(req.query.after)
+    : null;
 
   try {
     const query = {};
@@ -129,23 +131,27 @@ app.get('/api/users/cursor', async (req, res) => {
     const users = await User.find(query)
       .sort({ createdAt: -1, _id: -1 })
       .limit(limit + 1)
-      .select('id email firstName lastName createdAt');
+      .select("id email firstName lastName createdAt");
 
     const hasMore = users.length > limit;
     const data = hasMore ? users.slice(0, limit) : users;
-    const nextCursor = hasMore ? CursorPagination.generateCursor(data[data.length - 1]) : null;
+    const nextCursor = hasMore
+      ? CursorPagination.generateCursor(data[data.length - 1])
+      : null;
 
     res.json({
       data,
       pageInfo: {
         hasNextPage: hasMore,
         endCursor: nextCursor,
-        totalCount: await User.countDocuments()
+        totalCount: await User.countDocuments(),
       },
       links: {
         self: `/api/users/cursor?limit=${limit}`,
-        next: nextCursor ? `/api/users/cursor?limit=${limit}&after=${nextCursor}` : null
-      }
+        next: nextCursor
+          ? `/api/users/cursor?limit=${limit}&after=${nextCursor}`
+          : null,
+      },
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -157,10 +163,10 @@ app.get('/api/users/cursor', async (req, res) => {
 
 ```javascript
 // Keyset pagination (most efficient for large datasets)
-app.get('/api/products/keyset', async (req, res) => {
+app.get("/api/products/keyset", async (req, res) => {
   const limit = Math.min(parseInt(req.query.limit) || 20, 100);
   const lastId = req.query.lastId;
-  const sortBy = req.query.sort || 'price'; // price or createdAt
+  const sortBy = req.query.sort || "price"; // price or createdAt
 
   try {
     const query = {};
@@ -169,15 +175,15 @@ app.get('/api/products/keyset', async (req, res) => {
     if (lastId) {
       const lastProduct = await Product.findById(lastId);
 
-      if (sortBy === 'price') {
+      if (sortBy === "price") {
         query.$or = [
           { price: { $lt: lastProduct.price } },
-          { price: lastProduct.price, _id: { $lt: lastId } }
+          { price: lastProduct.price, _id: { $lt: lastId } },
         ];
       } else {
         query.$or = [
           { createdAt: { $lt: lastProduct.createdAt } },
-          { createdAt: lastProduct.createdAt, _id: { $lt: lastId } }
+          { createdAt: lastProduct.createdAt, _id: { $lt: lastId } },
         ];
       }
     }
@@ -193,13 +199,14 @@ app.get('/api/products/keyset', async (req, res) => {
       data,
       pageInfo: {
         hasMore,
-        lastId: data.length > 0 ? data[data.length - 1]._id : null
+        lastId: data.length > 0 ? data[data.length - 1]._id : null,
       },
       links: {
-        next: hasMore && data.length > 0
-          ? `/api/products/keyset?lastId=${data[data.length - 1]._id}&sort=${sortBy}&limit=${limit}`
-          : null
-      }
+        next:
+          hasMore && data.length > 0
+            ? `/api/products/keyset?lastId=${data[data.length - 1]._id}&sort=${sortBy}&limit=${limit}`
+            : null,
+      },
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -211,14 +218,14 @@ app.get('/api/products/keyset', async (req, res) => {
 
 ```javascript
 // Full-text search with pagination
-app.get('/api/search', async (req, res) => {
+app.get("/api/search", async (req, res) => {
   const query = req.query.q;
   const page = parseInt(req.query.page) || 1;
   const limit = Math.min(parseInt(req.query.limit) || 20, 100);
   const offset = (page - 1) * limit;
 
   if (!query) {
-    return res.status(400).json({ error: 'Search query required' });
+    return res.status(400).json({ error: "Search query required" });
   }
 
   try {
@@ -226,12 +233,12 @@ app.get('/api/search', async (req, res) => {
     const [results, total] = await Promise.all([
       Product.find(
         { $text: { $search: query } },
-        { score: { $meta: 'textScore' } }
+        { score: { $meta: "textScore" } },
       )
-        .sort({ score: { $meta: 'textScore' } })
+        .sort({ score: { $meta: "textScore" } })
         .skip(offset)
         .limit(limit),
-      Product.countDocuments({ $text: { $search: query } })
+      Product.countDocuments({ $text: { $search: query } }),
     ]);
 
     const totalPages = Math.ceil(total / limit);
@@ -243,8 +250,8 @@ app.get('/api/search', async (req, res) => {
         page,
         limit,
         total,
-        totalPages
-      }
+        totalPages,
+      },
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -256,27 +263,27 @@ async function searchElasticsearch(query, page = 1, limit = 20) {
   const from = (page - 1) * limit;
 
   const response = await esClient.search({
-    index: 'products',
+    index: "products",
     body: {
       from,
       size: limit,
       query: {
         multi_match: {
           query,
-          fields: ['name^2', 'description', 'category']
-        }
-      }
-    }
+          fields: ["name^2", "description", "category"],
+        },
+      },
+    },
   });
 
   return {
-    results: response.hits.hits.map(hit => hit._source),
+    results: response.hits.hits.map((hit) => hit._source),
     pagination: {
       page,
       limit,
       total: response.hits.total.value,
-      totalPages: Math.ceil(response.hits.total.value / limit)
-    }
+      totalPages: Math.ceil(response.hits.total.value / limit),
+    },
   };
 }
 ```
@@ -378,6 +385,7 @@ class Query(graphene.ObjectType):
 ## Best Practices
 
 ### ✅ DO
+
 - Use cursor pagination for large datasets
 - Set reasonable maximum limits (e.g., 100)
 - Include total count when feasible
@@ -390,6 +398,7 @@ class Query(graphene.ObjectType):
 - Use keyset for extremely large datasets
 
 ### ❌ DON'T
+
 - Use offset with billions of rows
 - Allow unlimited page sizes
 - Count rows for every request

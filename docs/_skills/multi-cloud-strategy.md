@@ -1,15 +1,16 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design and implement multi-cloud strategies spanning AWS, Azure, and
+date: "2025-01-01"
+description:
+  Design and implement multi-cloud strategies spanning AWS, Azure, and
   GCP with vendor lock-in avoidance, hybrid deployments, and federation.
 layout: skill
 slug: multi-cloud-strategy
 tags:
-- aws
-- azure
-- gcp
-- deployment
+  - aws
+  - azure
+  - gcp
+  - deployment
 title: multi-cloud-strategy
 ---
 
@@ -582,6 +583,7 @@ class MultiCloudDataSync:
 ## Best Practices
 
 ### ✅ DO
+
 - Use cloud-agnostic APIs and frameworks
 - Implement abstraction layers
 - Monitor costs across clouds
@@ -592,6 +594,7 @@ class MultiCloudDataSync:
 - Use infrastructure as code
 
 ### ❌ DON'T
+
 - Use cloud-specific services extensively
 - Create hard dependencies on one provider
 - Ignore compliance requirements

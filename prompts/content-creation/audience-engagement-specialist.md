@@ -1,6 +1,7 @@
 # Audience Engagement Specialist
 
 ## Metadata
+
 - **ID**: `content-audience-engagement`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -18,6 +19,7 @@ Builds meaningful connections with audiences through strategic content, communit
 ## When to Use
 
 **Ideal scenarios:**
+
 - Building engaged audiences on social platforms
 - Improving content engagement rates beyond vanity metrics
 - Developing community management strategies
@@ -25,6 +27,7 @@ Builds meaningful connections with audiences through strategic content, communit
 - Creating sustainable engagement practices
 
 **Anti-patterns (when NOT to use):**
+
 - Paid advertising strategy and media buying
 - Influencer outreach and partnership programs
 - Customer service and support workflows
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "LinkedIn for B2B SaaS marketing. 5,000 followers. 2% engagement rate (industry avg 2.5%). Best content: how-to posts and industry insights. Challenges: Comments are surface-level, not driving conversations. Goal: Build thought leadership, generate quality leads. Posting 3x/week."
 
 ### Output
@@ -115,19 +119,22 @@ Avoid:
 ## ENGAGEMENT ANALYSIS
 
 ### Current State
+
 - **Followers:** 5,000
 - **Engagement:** 2% (below 2.5% benchmark)
 - **Quality:** Comments lack depth and conversation
 
 ### Gap Analysis
-| Element | Current | Target |
-|---------|---------|--------|
-| Engagement rate | 2.0% | 4.0% |
-| Comment depth | Surface | Conversational |
-| Lead generation | Passive | Active |
-| Content mix | Informational | Interactive |
+
+| Element         | Current       | Target         |
+| --------------- | ------------- | -------------- |
+| Engagement rate | 2.0%          | 4.0%           |
+| Comment depth   | Surface       | Conversational |
+| Lead generation | Passive       | Active         |
+| Content mix     | Informational | Interactive    |
 
 ### Root Causes
+
 1. Content gives answers without asking questions
 2. No clear invitation to engage
 3. Missing controversial/debate-worthy angles
@@ -150,6 +157,7 @@ What's your take?"
 I'll start: [personal story]"
 
 **3. Carousel How-To's with CTA**
+
 - Slide 1: Hook question
 - Slides 2-8: Value content
 - Slide 9: "Which tip will you try first? Comment below."
@@ -162,22 +170,25 @@ Finding that surprised me most: [insight]
 Does this match your experience?"
 
 ### Content Mix (Weekly)
-| Day | Format | Engagement Goal |
-|-----|--------|-----------------|
-| Monday | Opinion/Take | Debate in comments |
-| Wednesday | How-To Carousel | Save + share |
-| Friday | Question/Story | Personal responses |
+
+| Day       | Format          | Engagement Goal    |
+| --------- | --------------- | ------------------ |
+| Monday    | Opinion/Take    | Debate in comments |
+| Wednesday | How-To Carousel | Save + share       |
+| Friday    | Question/Story  | Personal responses |
 
 ## COMMUNITY BUILDING
 
 ### Conversation Starters
 
 **In Every Post:**
+
 - End with a specific question
 - Ask for examples, not opinions
 - Invite disagreement respectfully
 
 **Examples:**
+
 - Instead of: "Thoughts?"
 - Use: "What's one thing you'd add to this list?"
 - Or: "Has anyone tried the opposite approach?"
@@ -185,12 +196,14 @@ Does this match your experience?"
 ### Response Strategy
 
 **Comment Engagement Protocol:**
+
 1. Reply to every comment within 2 hours
 2. Ask follow-up questions to extend conversations
 3. Tag relevant connections to bring them in
 4. Share commenter insights in future posts
 
 **Comment Response Templates:**
+
 - "Great point! How did you discover this?"
 - "Interesting perspective. [Name], what's your experience with this?"
 - "I love this example. Mind if I feature it in a future post?"
@@ -198,6 +211,7 @@ Does this match your experience?"
 ### Relationship Building
 
 **Weekly Engagement Activities (30 min/day):**
+
 - 10 thoughtful comments on target connections' posts
 - 5 connection requests to engaged commenters
 - 3 DMs to active community members
@@ -205,6 +219,7 @@ Does this match your experience?"
 ## ENGAGEMENT OPTIMIZATION
 
 ### Post Timing
+
 - Test: 7-8am, 12pm, 5-6pm local time
 - Measure: Engagement rate by post time
 - Optimize: Double down on best-performing slots
@@ -212,12 +227,14 @@ Does this match your experience?"
 ### Engagement Hooks
 
 **Opening Lines That Work:**
+
 - "I was wrong about [thing]..."
 - "Stop doing [common practice]..."
 - "The best [role] I know does this differently..."
 - "Controversial take: [bold statement]"
 
 **Closing CTAs That Drive Comments:**
+
 - "Agree or disagree?"
 - "What would you add?"
 - "Tag someone who needs to see this"
@@ -226,20 +243,23 @@ Does this match your experience?"
 ## MEASUREMENT FRAMEWORK
 
 ### Primary Metrics
-| Metric | Current | 30-Day Target | 90-Day Target |
-|--------|---------|---------------|---------------|
-| Engagement Rate | 2.0% | 3.0% | 4.0% |
-| Avg Comments | 5 | 10 | 20 |
-| Conversation Threads | 1-2 | 3-5 | 5+ |
-| DM Conversations | 2/week | 5/week | 10/week |
+
+| Metric               | Current | 30-Day Target | 90-Day Target |
+| -------------------- | ------- | ------------- | ------------- |
+| Engagement Rate      | 2.0%    | 3.0%          | 4.0%          |
+| Avg Comments         | 5       | 10            | 20            |
+| Conversation Threads | 1-2     | 3-5           | 5+            |
+| DM Conversations     | 2/week  | 5/week        | 10/week       |
 
 ### Quality Indicators
+
 - Comment length (avg words)
 - Return engagers (same people engaging repeatedly)
 - DM-to-lead conversion rate
 - Content saves and shares
 
 ### Weekly Review
+
 - Top 3 posts by engagement - what worked?
 - Bottom 3 posts - what didn't work?
 - Best comments - can they inspire content?
@@ -248,6 +268,7 @@ Does this match your experience?"
 ---
 
 ## Related Prompts
+
 - [Blog Content Planner](blog-content-planner.md)
 - [Personal Branding Strategist](../career-development/personal-branding-strategist.md)
 - [Social Media Strategy Optimizer](social-media-strategy-optimizer.md)

@@ -3,32 +3,33 @@ title: Solar Project Financial Modeling and Investment Analysis
 slug: solar-project-financial-modeling-investment
 category: renewable energy/solar energy development
 tags:
-- project
-- finance
-- investment
-- analysis
-- tax
-- equity
-- PPA
-- financial
-- modeling
-- LCOE
+  - project
+  - finance
+  - investment
+  - analysis
+  - tax
+  - equity
+  - PPA
+  - financial
+  - modeling
+  - LCOE
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables comprehensive financial modeling and investment analysis
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables comprehensive financial modeling and investment analysis
   for utility-scale solar projects, incorporating complex financing structures, tax
   equity optimization, revenue strategies, and risk assessment. It combines project
   finance expertise with energy market analysis to create bankable investment propositions
   that attract capital while optimizing returns for developers, investors, and lenders.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing financial models for utility-scale solar investments
-- Structuring tax equity partnerships and debt financing
-- Analyzing PPA structures versus merchant market strategies
-- Evaluating project economics and investor returns
+  - Ideal scenarios:**
+  - Developing financial models for utility-scale solar investments
+  - Structuring tax equity partnerships and debt financing
+  - Analyzing PPA structures versus merchant market strategies
+  - Evaluating project economics and investor returns
 complexity: advanced
 interaction: multi-turn
 ---
@@ -47,18 +48,20 @@ Utility-scale solar financing requires integrating technical performance data, m
 
 <input_handling>
 **Required information:**
+
 - Project capacity (MW) and location/market
 - Development stage and target timeline
 - Offtake strategy (contracted PPA, merchant, hybrid)
 - Investment structure goals (returns, ownership)
 
 **Optional (will infer reasonable defaults):**
+
 - Capital cost estimates
 - Contracted revenue terms
 - Tax equity requirements
 - Specific financing constraints
 - Target returns by investor class
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive financial analysis:
@@ -74,18 +77,20 @@ Develop comprehensive financial analysis:
 5. **Risk Assessment**: Quantify and mitigate construction, operational, market, and regulatory risks
 
 6. **Investment Returns**: Calculate levered/unlevered IRR, NPV, and returns by investor class with sensitivity analysis
-</task>
+   </task>
 
 <output_specification>
 **Solar Investment Analysis**
+
 - Format: Investment-grade financial analysis
 - Length: 1000-1500 words
 - Sections: Project economics, revenue, financing structure, tax optimization, returns, risks
 - Must include: LCOE, IRR by investor class, debt sizing, key sensitivities
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Realistic cost assumptions benchmarked to current market
 - Multiple revenue scenarios with P50/P90 projections
 - Optimal capital structure achieving target returns with appropriate leverage
@@ -93,12 +98,13 @@ Develop comprehensive financial analysis:
 - Comprehensive risk quantification with mitigation strategies
 
 **Avoid:**
+
 - Unrealistic cost assumptions below market benchmarks
 - Oversimplified revenue projections ignoring market dynamics
 - Inappropriate leverage levels for project risk profile
 - Missing tax equity complexity (flip structures, HLBV)
 - Inadequate sensitivity analysis for key variables
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain investment-grade credit metrics (1.30x+ DSCR)

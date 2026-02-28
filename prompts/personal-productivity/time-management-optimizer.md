@@ -1,6 +1,7 @@
 # Time Management Optimizer
 
 ## Metadata
+
 - **ID**: `productivity-time-management`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A time management consultant that helps you optimize daily schedules, eliminate 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Feeling consistently behind on tasks and commitments
 - Needing to optimize daily and weekly scheduling
 - Balancing multiple roles with competing demands
@@ -25,6 +27,7 @@ A time management consultant that helps you optimize daily schedules, eliminate 
 - Transitioning to new schedule or work arrangement
 
 **Anti-Patterns (Don't Use For):**
+
 - Team scheduling and resource allocation
 - Project timeline planning and Gantt charts
 - Calendar app configuration and technical setup
@@ -123,64 +126,67 @@ Create a personalized time optimization strategy following these steps:
 ## Example Usage
 
 ### Input
+
 Main roles: Software engineer (40%), startup founder (30%), parent (20%), personal fitness (10%). Work hours: 50-55 per week. Most time spent: coding, meetings, emails, household tasks. Time wasters: social media, unnecessary meetings, context switching. Frustrations: always feeling behind, no time for strategic thinking. Work-life balance: 4/10. Peak productivity: 9-11 AM and 2-4 PM. Fixed commitments: school pickup 3:30 PM, team meeting Tuesday 10 AM.
 
 ### Output
 
 **Time Audit Analysis**
 
-| Category | Current | Optimal | Gap |
-|----------|---------|---------|-----|
-| Deep Coding | 40% (~20 hrs) | 50% (~25 hrs) | +5 hrs |
-| Meetings | 35% (~18 hrs) | 20% (~10 hrs) | -8 hrs |
-| Email/Admin | 25% (~13 hrs) | 15% (~8 hrs) | -5 hrs |
-| Strategic Thinking | 0% | 10% (~5 hrs) | +5 hrs |
+| Category           | Current       | Optimal       | Gap    |
+| ------------------ | ------------- | ------------- | ------ |
+| Deep Coding        | 40% (~20 hrs) | 50% (~25 hrs) | +5 hrs |
+| Meetings           | 35% (~18 hrs) | 20% (~10 hrs) | -8 hrs |
+| Email/Admin        | 25% (~13 hrs) | 15% (~8 hrs)  | -5 hrs |
+| Strategic Thinking | 0%            | 10% (~5 hrs)  | +5 hrs |
 
-*Major Time Drains Identified:*
+_Major Time Drains Identified:_
+
 - Reactive communication: 12-15 hrs/week on emails and Slack
 - Meeting overflow: 8-10 hrs in low-value meetings weekly
 - Context switching: 5-7 hrs lost to interruptions and task switching
 
 **Priority Matrix**
 
-| Urgent + Important | Important, Not Urgent |
-|-------------------|----------------------|
+| Urgent + Important                                              | Important, Not Urgent                                                    |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Product launch tasks, critical bugs, family commitments, pickup | Strategic planning (2h/week), code architecture, skill building, fitness |
 
-| Urgent, Not Important | Neither |
-|----------------------|---------|
+| Urgent, Not Important                                | Neither                                                   |
+| ---------------------------------------------------- | --------------------------------------------------------- |
 | Most Slack messages, status meetings, admin requests | Social media, low-priority email, perfectionist polishing |
 
-*Action:* Protect Important/Not Urgent with scheduled blocks
+_Action:_ Protect Important/Not Urgent with scheduled blocks
 
 **Optimized Daily Schedule**
 
-| Time | Activity | Energy Match |
-|------|----------|--------------|
-| 7:00-8:00 | Morning routine (no devices) | Preparation |
-| 8:00-9:00 | Family breakfast + school prep | Relationship |
-| **9:00-11:00** | **Deep Work Block 1** (phone off) | Peak cognitive |
-| 11:00-11:15 | Break + movement | Recovery |
-| 11:15-12:30 | Communication block (email/Slack) | Moderate energy |
-| 12:30-1:30 | Lunch + strategic thinking walk | Reset |
-| **1:30-3:15** | **Deep Work Block 2** | Secondary peak |
-| 3:15-4:00 | Family time/school pickup | Protected |
-| 4:00-5:00 | Meetings/collaboration only | Social energy |
-| 5:00-6:00 | Admin + planning tomorrow | Low cognitive |
-| 6:00+ | Family dinner + evening | Protected |
+| Time           | Activity                          | Energy Match    |
+| -------------- | --------------------------------- | --------------- |
+| 7:00-8:00      | Morning routine (no devices)      | Preparation     |
+| 8:00-9:00      | Family breakfast + school prep    | Relationship    |
+| **9:00-11:00** | **Deep Work Block 1** (phone off) | Peak cognitive  |
+| 11:00-11:15    | Break + movement                  | Recovery        |
+| 11:15-12:30    | Communication block (email/Slack) | Moderate energy |
+| 12:30-1:30     | Lunch + strategic thinking walk   | Reset           |
+| **1:30-3:15**  | **Deep Work Block 2**             | Secondary peak  |
+| 3:15-4:00      | Family time/school pickup         | Protected       |
+| 4:00-5:00      | Meetings/collaboration only       | Social energy   |
+| 5:00-6:00      | Admin + planning tomorrow         | Low cognitive   |
+| 6:00+          | Family dinner + evening           | Protected       |
 
-*Buffer Built In:* 15-minute transitions, 1-hour lunch, evening flex
+_Buffer Built In:_ 15-minute transitions, 1-hour lunch, evening flex
 
 **Communication Boundaries**
 
-| Channel | Rule |
-|---------|------|
-| Email | Check only at 11:00 AM and 4:00 PM |
-| Slack | Focus mode 9-11 AM and 1:30-3:15 PM |
+| Channel  | Rule                                |
+| -------- | ----------------------------------- |
+| Email    | Check only at 11:00 AM and 4:00 PM  |
+| Slack    | Focus mode 9-11 AM and 1:30-3:15 PM |
 | Meetings | Only Tuesday-Thursday, 4-5 PM slots |
-| Phone | In drawer during deep work blocks |
+| Phone    | In drawer during deep work blocks   |
 
-*Response Expectations:*
+_Response Expectations:_
+
 - Email: Within 4 hours during work day
 - Slack urgent: Within 1 hour during non-focus times
 - Slack non-urgent: Same day or next morning
@@ -196,18 +202,21 @@ Main roles: Software engineer (40%), startup founder (30%), parent (20%), person
 
 **Implementation Roadmap**
 
-*Week 1: Quick Wins*
+_Week 1: Quick Wins_
+
 - Set up focus mode on devices
 - Create "Do Not Disturb" signals for family
 - Batch similar tasks (all emails at once)
 - Expected result: 2-3 extra focused hours recovered
 
-*Week 2: Routine Establishment*
+_Week 2: Routine Establishment_
+
 - Implement morning routine with no devices
 - Start time blocking calendar
 - Communicate new availability to team
 
-*Week 3-4: Optimization*
+_Week 3-4: Optimization_
+
 - Track energy levels and adjust blocks
 - Delegate or automate identified tasks
 - Establish weekly planning ritual
@@ -215,17 +224,18 @@ Main roles: Software engineer (40%), startup founder (30%), parent (20%), person
 
 **Daily Scorecard (2 min each evening)**
 
-| Metric | Target | Today |
-|--------|--------|-------|
-| Deep work blocks completed | 2 | _/2 |
-| Priority tasks finished | 3 | _/3 |
-| Email checks | 2 | _ |
-| Family time quality | High | 1-5 |
-| Energy level EOD | 7+ | 1-10 |
+| Metric                     | Target | Today |
+| -------------------------- | ------ | ----- |
+| Deep work blocks completed | 2      | \_/2  |
+| Priority tasks finished    | 3      | \_/3  |
+| Email checks               | 2      | \_    |
+| Family time quality        | High   | 1-5   |
+| Energy level EOD           | 7+     | 1-10  |
 
 ---
 
 ## Related Prompts
+
 - [Productivity System Designer](productivity-system-designer.md) - For comprehensive system design
 - [Work-Life Balance Optimizer](work-life-balance-optimizer.md) - For boundary setting
 - [Focus Deep Work Strategist](focus-deep-work-strategist.md) - For maximizing focused work

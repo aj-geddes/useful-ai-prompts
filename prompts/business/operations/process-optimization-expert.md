@@ -1,6 +1,7 @@
 # Process Optimization Expert
 
 ## Metadata
+
 - **ID**: `business-process-optimization`
 - **Version**: 1.0.0
 - **Category**: Business/Operations
@@ -18,12 +19,14 @@ Identifies inefficiencies in business processes and creates streamlined workflow
 ## When to Use
 
 **Scenarios:**
+
 - Process taking too long or causing downstream delays
 - High error rates or quality issues in outputs
 - Handoff problems between teams or departments
 - Scaling operations without adding proportional headcount
 
 **Anti-patterns:**
+
 - Strategic planning or business model decisions
 - Technology platform selection or implementation
 - Organizational restructuring or role design
@@ -114,6 +117,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Customer onboarding for SaaS product. 23 steps across 6 departments (Sales, Legal, Operations, Technical, Training, Customer Success). Currently takes 3-5 weeks but target is 10 days. Problems: unclear handoffs causing delays, duplicate data entry in 4 different systems, legal review bottleneck (5-7 days alone). Losing 30% of customers before go-live, representing $50K/month in lost revenue."
 
 ### Output
@@ -121,6 +125,7 @@ Outputs must avoid:
 ## CURRENT STATE ANALYSIS
 
 ### Process Flow
+
 ```
 SALES (Days 1-3):
 ├── Contract negotiation (value-add)
@@ -145,37 +150,40 @@ TRAINING (Days 19-21+):
 
 ### Waste Identification (Lean 8 Wastes)
 
-| Waste Type | Specific Issue | Time Impact | $ Impact |
-|------------|----------------|-------------|----------|
-| Waiting | Legal review queue | 5-7 days | $15K/mo (30% of delays) |
-| Overprocessing | 4x data entry across systems | 2 hours/customer | $8K/mo staff time |
-| Motion | Email ping-pong for handoffs | 40 emails/customer | $5K/mo staff time |
-| Defects | Unclear requirements causing rework | 25% rework rate | $12K/mo rework |
-| Transportation | Documents sent between systems | 20 transfers/customer | $3K/mo |
-| Inventory | Customers stuck in queue | 15 avg in queue | $7K/mo opportunity cost |
+| Waste Type     | Specific Issue                      | Time Impact           | $ Impact                |
+| -------------- | ----------------------------------- | --------------------- | ----------------------- |
+| Waiting        | Legal review queue                  | 5-7 days              | $15K/mo (30% of delays) |
+| Overprocessing | 4x data entry across systems        | 2 hours/customer      | $8K/mo staff time       |
+| Motion         | Email ping-pong for handoffs        | 40 emails/customer    | $5K/mo staff time       |
+| Defects        | Unclear requirements causing rework | 25% rework rate       | $12K/mo rework          |
+| Transportation | Documents sent between systems      | 20 transfers/customer | $3K/mo                  |
+| Inventory      | Customers stuck in queue            | 15 avg in queue       | $7K/mo opportunity cost |
 
 **Total Identified Waste:** $50K/month (matches lost revenue)
 
 ## ROOT CAUSE ANALYSIS
 
 ### Problem 1: Handoff Delays (40% of cycle time)
+
 - Why delays? No defined handoff criteria or triggers
 - Why no criteria? Each department optimized independently
 - Why independent? No cross-functional process owner
 - Why no owner? Onboarding seen as "everyone's job"
-**Root Cause:** No single process owner with cross-functional authority
+  **Root Cause:** No single process owner with cross-functional authority
 
 ### Problem 2: Data Entry Duplication (15% of staff time)
+
 - Why duplicate entry? Systems not integrated
 - Why not integrated? Each purchased independently by department
 - Why independent purchases? No IT architecture review for customer-facing processes
-**Root Cause:** Siloed technology decisions without integration consideration
+  **Root Cause:** Siloed technology decisions without integration consideration
 
 ### Problem 3: Legal Bottleneck (30% of cycle time)
+
 - Why 5-7 days? All contracts treated as custom reviews
 - Why custom? No standard contract templates approved
 - Why no standards? Risk aversion without data on actual risk
-**Root Cause:** 90% of contracts are standard but processed as exceptions
+  **Root Cause:** 90% of contracts are standard but processed as exceptions
 
 ## OPTIMIZED WORKFLOW (Target: 10 Days)
 
@@ -203,6 +211,7 @@ GO-LIVE (Days 9-10):
 ```
 
 ### Key Changes
+
 - Legal: 90% auto-approval using standard templates (custom review only for enterprise)
 - Data: Single entry with API integration to all systems
 - Handoffs: Trigger-based automation replaces manual handoffs
@@ -210,27 +219,30 @@ GO-LIVE (Days 9-10):
 
 ## AUTOMATION OPPORTUNITIES
 
-| Opportunity | Impact | Effort | Priority |
-|-------------|--------|--------|----------|
-| Contract template auto-approval | 5 days saved | Low (legal approval) | 1 |
-| Single data entry with API sync | 2 hours saved | Medium (IT project) | 2 |
-| Environment auto-provisioning | 2 days saved | Medium (DevOps) | 3 |
-| Customer self-service portal | 3 days saved | High (new build) | 4 |
+| Opportunity                     | Impact        | Effort               | Priority |
+| ------------------------------- | ------------- | -------------------- | -------- |
+| Contract template auto-approval | 5 days saved  | Low (legal approval) | 1        |
+| Single data entry with API sync | 2 hours saved | Medium (IT project)  | 2        |
+| Environment auto-provisioning   | 2 days saved  | Medium (DevOps)      | 3        |
+| Customer self-service portal    | 3 days saved  | High (new build)     | 4        |
 
 ## IMPLEMENTATION PLAN
 
 **Phase 1: Quick Wins (Month 1) - Target: 21 days cycle time**
+
 - Week 1-2: Map current state, define handoff criteria with all teams
 - Week 3-4: Connect systems via Zapier/API, build real-time status dashboard
 - **Savings:** $15K/month
 
 **Phase 2: Automation (Month 2) - Target: 14 days cycle time**
+
 - Create standard contract templates (legal sign-off)
 - Automate environment provisioning with templates
 - Implement trigger-based notifications
 - **Savings:** $25K/month
 
 **Phase 3: Optimization (Month 3) - Target: 10 days cycle time**
+
 - Launch customer self-service portal
 - Deploy automated training modules
 - Establish continuous improvement process owner
@@ -238,14 +250,15 @@ GO-LIVE (Days 9-10):
 
 ## MEASUREMENT SYSTEM
 
-| Metric | Baseline | Target | Tracking |
-|--------|----------|--------|----------|
-| Cycle Time | 21-35 days | 10 days | Daily dashboard |
-| Customer Satisfaction | 70% | 95% | Post-onboarding survey |
-| Pre-Go-Live Churn | 30% | 5% | Weekly review |
-| Staff Hours per Onboarding | 8 hours | 3 hours | Time tracking |
+| Metric                     | Baseline   | Target  | Tracking               |
+| -------------------------- | ---------- | ------- | ---------------------- |
+| Cycle Time                 | 21-35 days | 10 days | Daily dashboard        |
+| Customer Satisfaction      | 70%        | 95%     | Post-onboarding survey |
+| Pre-Go-Live Churn          | 30%        | 5%      | Weekly review          |
+| Staff Hours per Onboarding | 8 hours    | 3 hours | Time tracking          |
 
 **Sustainability Mechanisms:**
+
 - Weekly process review meeting (30 min)
 - Monthly KPI review with executive sponsor
 - Quarterly process audit against standard
@@ -255,5 +268,6 @@ GO-LIVE (Days 9-10):
 ---
 
 ## Related Prompts
+
 - [Operations Management Expert](operations-manager-excellence.md) - Team and performance focus
 - [Supply Chain Expert](supply-chain-optimization-expert.md) - End-to-end supply chain

@@ -3,24 +3,25 @@ title: ROI Analysis Expert
 slug: roi-analysis-expert
 category: evaluation & assessment/financial
 tags:
-- roi-analysis
-- business-case
-- financial-modeling
-- investment-return
+  - roi-analysis
+  - business-case
+  - financial-modeling
+  - investment-return
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Calculate and analyze return on investment for business initiatives,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Calculate and analyze return on investment for business initiatives,
   projects, and technology investments. Creates comprehensive business cases with
   scenario modeling and sensitivity analysis to support investment decisions.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building business cases for proposed investments
-- Evaluating competing investment options
-- Post-implementation ROI assessment
-- Justifying budget requests
+  - Ideal Scenarios:**
+  - Building business cases for proposed investments
+  - Evaluating competing investment options
+  - Post-implementation ROI assessment
+  - Justifying budget requests
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -35,15 +36,17 @@ ROI analysis provides the financial framework for investment decisions. Effectiv
 
 <input_handling>
 Required:
+
 - Investment description and total cost
 - Expected benefits (quantitative and qualitative)
 - Timeline and implementation plan
 
 Infer if not provided:
+
 - Discount rate (use 10% for typical corporate investments)
 - Benefit realization timeline (standard ramp-up)
 - Risk factors (identify from investment type)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive ROI analysis with scenario modeling and recommendation.
@@ -53,28 +56,31 @@ Create a comprehensive ROI analysis with scenario modeling and recommendation.
 3. Calculate key financial metrics (ROI, NPV, IRR, Payback)
 4. Conduct sensitivity analysis on key assumptions
 5. Deliver investment recommendation with risk assessment
-</task>
+   </task>
 
 <output_specification>
 **ROI Analysis Report**
+
 - Format: Cost-benefit analysis with scenario modeling
 - Length: 800-1100 words
 - Must include: Cost breakdown, benefit quantification, financial metrics, scenario analysis, recommendation
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Includes all costs, not just obvious ones
 - Uses conservative benefit estimates
 - Models multiple scenarios with probability weighting
 - Identifies key assumptions and sensitivities
 
 Avoid:
+
 - Single-point projections without ranges
 - Missing ongoing or hidden costs
 - Overly optimistic benefit assumptions
 - Ignoring time value of money
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Use conservative assumptions for benefit estimates

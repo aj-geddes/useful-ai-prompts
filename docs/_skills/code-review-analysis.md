@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Perform comprehensive code reviews with best practices, security checks,
+date: "2025-01-01"
+description:
+  Perform comprehensive code reviews with best practices, security checks,
   and constructive feedback. Use when reviewing pull requests, analyzing code quality,
   checking for security vulnerabilities, or providing code improvement suggestions.
 layout: skill
 slug: code-review-analysis
 tags:
-- security
+  - security
 title: code-review-analysis
 ---
 
@@ -42,6 +43,7 @@ git log main...feature-branch --oneline
 ```
 
 **Quick Checklist:**
+
 - [ ] PR description is clear and complete
 - [ ] Changes match the stated purpose
 - [ ] No unrelated changes included
@@ -51,6 +53,7 @@ git log main...feature-branch --oneline
 ### 2. **Code Quality Analysis**
 
 #### Readability
+
 ```python
 # ❌ Poor readability
 def p(u,o):
@@ -65,12 +68,13 @@ def calculate_order_total(user: User, order: Order) -> float:
 ```
 
 #### Complexity
+
 ```javascript
 // ❌ High cognitive complexity
 function processData(data) {
   if (data) {
-    if (data.type === 'user') {
-      if (data.status === 'active') {
+    if (data.type === "user") {
+      if (data.status === "active") {
         if (data.permissions && data.permissions.length > 0) {
           // deeply nested logic
         }
@@ -82,8 +86,8 @@ function processData(data) {
 // ✅ Reduced complexity with early returns
 function processData(data) {
   if (!data) return null;
-  if (data.type !== 'user') return null;
-  if (data.status !== 'active') return null;
+  if (data.type !== "user") return null;
+  if (data.status !== "active") return null;
   if (!data.permissions?.length) return null;
 
   // main logic at top level
@@ -95,6 +99,7 @@ function processData(data) {
 #### Common Vulnerabilities
 
 **SQL Injection**
+
 ```python
 # ❌ Vulnerable to SQL injection
 query = f"SELECT * FROM users WHERE email = '{user_email}'"
@@ -105,6 +110,7 @@ cursor.execute(query, (user_email,))
 ```
 
 **XSS Prevention**
+
 ```javascript
 // ❌ XSS vulnerable
 element.innerHTML = userInput;
@@ -115,17 +121,18 @@ element.textContent = userInput;
 ```
 
 **Authentication & Authorization**
+
 ```typescript
 // ❌ Missing authorization check
-app.delete('/api/users/:id', async (req, res) => {
+app.delete("/api/users/:id", async (req, res) => {
   await deleteUser(req.params.id);
   res.json({ success: true });
 });
 
 // ✅ Proper authorization
-app.delete('/api/users/:id', requireAuth, async (req, res) => {
+app.delete("/api/users/:id", requireAuth, async (req, res) => {
   if (req.user.id !== req.params.id && !req.user.isAdmin) {
-    return res.status(403).json({ error: 'Forbidden' });
+    return res.status(403).json({ error: "Forbidden" });
   }
   await deleteUser(req.params.id);
   res.json({ success: true });
@@ -143,7 +150,7 @@ for (const user of users) {
 
 // ✅ Eager loading
 const users = await User.findAll({
-  include: [{ model: Order }]
+  include: [{ model: Order }],
 });
 ```
 
@@ -161,19 +168,20 @@ result = [item * 2 for item in large_list if item % 2 == 0]
 ### 5. **Testing Review**
 
 **Test Coverage**
+
 ```javascript
-describe('User Service', () => {
+describe("User Service", () => {
   // ✅ Tests edge cases
-  it('should handle empty input', () => {
+  it("should handle empty input", () => {
     expect(processUser(null)).toBeNull();
   });
 
-  it('should handle invalid data', () => {
+  it("should handle invalid data", () => {
     expect(() => processUser({})).toThrow(ValidationError);
   });
 
   // ✅ Tests happy path
-  it('should process valid user', () => {
+  it("should process valid user", () => {
     const result = processUser(validUserData);
     expect(result.id).toBeDefined();
   });
@@ -181,6 +189,7 @@ describe('User Service', () => {
 ```
 
 **Check for:**
+
 - [ ] Unit tests for new functions
 - [ ] Integration tests for new features
 - [ ] Edge cases covered
@@ -190,6 +199,7 @@ describe('User Service', () => {
 ### 6. **Best Practices**
 
 #### Error Handling
+
 ```typescript
 // ❌ Silent failures
 try {
@@ -202,12 +212,13 @@ try {
 try {
   await saveData(data);
 } catch (error) {
-  logger.error('Failed to save data', { error, data });
-  throw new DataSaveError('Could not save data', { cause: error });
+  logger.error("Failed to save data", { error, data });
+  throw new DataSaveError("Could not save data", { cause: error });
 }
 ```
 
 #### Resource Management
+
 ```python
 # ❌ Resources not closed
 file = open('data.txt')
@@ -222,13 +233,15 @@ with open('data.txt') as file:
 
 ## Review Feedback Template
 
-```markdown
+````markdown
 ## Code Review: [PR Title]
 
 ### Summary
+
 Brief overview of changes and overall assessment.
 
 ### ✅ Strengths
+
 - Well-structured error handling
 - Comprehensive test coverage
 - Clear documentation
@@ -236,7 +249,9 @@ Brief overview of changes and overall assessment.
 ### 🔍 Issues Found
 
 #### 🔴 Critical (Must Fix)
+
 1. **Security**: SQL injection vulnerability in user query (line 45)
+
    ```python
    # Current code
    query = f"SELECT * FROM users WHERE id = '{user_id}'"
@@ -245,21 +260,26 @@ Brief overview of changes and overall assessment.
    query = "SELECT * FROM users WHERE id = ?"
    cursor.execute(query, (user_id,))
    ```
+````
 
 #### 🟡 Moderate (Should Fix)
+
 1. **Performance**: N+1 query problem (lines 78-82)
    - Suggest using eager loading to reduce database queries
 
 #### 🟢 Minor (Consider)
+
 1. **Style**: Consider extracting this function for better testability
 2. **Naming**: `proc_data` could be more descriptive as `processUserData`
 
 ### 💡 Suggestions
+
 - Consider adding input validation
 - Could benefit from additional edge case tests
 - Documentation could include usage examples
 
 ### 📋 Checklist
+
 - [ ] Security vulnerabilities addressed
 - [ ] Tests added and passing
 - [ ] Documentation updated
@@ -267,7 +287,9 @@ Brief overview of changes and overall assessment.
 - [ ] Error handling is appropriate
 
 ### Verdict
+
 ✅ **Approved with minor suggestions** | ⏸️ **Needs changes** | ❌ **Needs major revision**
+
 ```
 
 ## Common Issues Checklist
@@ -346,3 +368,4 @@ Brief overview of changes and overall assessment.
 ## Examples
 
 See the refactor-legacy-code skill for detailed refactoring examples that often apply during code review.
+```

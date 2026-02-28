@@ -3,20 +3,21 @@ title: Financial Reporting Specialist
 slug: financial-reporting-specialist
 category: finance
 tags:
-- financial
-- reporting
-- management
-- reporting
-- P&L
-- KPI
-- dashboard
-- board
-- reporting
+  - financial
+  - reporting
+  - management
+  - reporting
+  - P&L
+  - KPI
+  - dashboard
+  - board
+  - reporting
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt designs and writes executive-ready financial management reports
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt designs and writes executive-ready financial management reports
   — including monthly P&L commentary, KPI dashboards, board reporting packages, and
   variance analysis narratives. It transforms raw financial data into clear, decision-oriented
   reports that give leadership and boards the information they need to manage the
@@ -24,14 +25,14 @@ description: This prompt designs and writes executive-ready financial management
   rationale, and ready-to-use narrative commentary.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a new monthly management reporting package for a leadership team or board
-  of directors
-- Writing the narrative commentary for a monthly or quarterly financial close package
-- Building a KPI dashboard structure that surfaces the metrics most critical to business
-  performance
-- Statutory financial reporting and audit-related disclosures — those require GAAP/IFRS
-  expertise and CPA review
+  - Ideal Scenarios:**
+  - Designing a new monthly management reporting package for a leadership team or board
+    of directors
+  - Writing the narrative commentary for a monthly or quarterly financial close package
+  - Building a KPI dashboard structure that surfaces the metrics most critical to business
+    performance
+  - Statutory financial reporting and audit-related disclosures — those require GAAP/IFRS
+    expertise and CPA review
 complexity: intermediate
 interaction: multi-turn
 ---

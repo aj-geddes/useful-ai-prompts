@@ -1,6 +1,7 @@
 # Repository Setup Automation
 
 ## Metadata
+
 - **ID**: `project-management-repo-setup-automation`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -99,14 +100,17 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Repository name: my-api-service. Project type: python. Visibility: private. Description: REST API for user management.
 ```
 
 ### Output
+
 **Repository Created**: `my-api-service`
 
 **Directory Structure**
+
 ```
 my-api-service/
 ├── src/
@@ -132,6 +136,7 @@ my-api-service/
 ```
 
 **CI/CD Workflow** (`.github/workflows/ci.yml`)
+
 ```yaml
 name: CI
 
@@ -149,7 +154,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
@@ -163,23 +168,27 @@ jobs:
 ```
 
 **Configuration Files Created**
+
 - `pyproject.toml`: Build config with black, flake8, pytest settings
 - `requirements-dev.txt`: pytest, black, flake8, pre-commit
 - `.gitignore`: Python-specific ignores
 - `pytest.ini`: Test configuration with coverage
 
 **GitHub Configuration Applied**
+
 - Labels: bug, enhancement, documentation, good first issue
 - Branch protection: Require PR reviews for main
 - Security: Dependabot alerts enabled
 
 **Configuration Summary**
+
 - Repository created with Python best practices
 - CI pipeline: Linting, formatting, testing with coverage
 - Security: Dependabot enabled, branch protection active
 - Documentation: README template, CONTRIBUTING guide
 
 **Next Steps**
+
 1. Clone: `git clone git@github.com:username/my-api-service.git`
 2. Install: `pip install -r requirements-dev.txt`
 3. Setup hooks: `pre-commit install`

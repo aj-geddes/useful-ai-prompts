@@ -3,21 +3,22 @@ title: Cost Reduction Advisor
 slug: cost-reduction-advisor
 category: finance
 tags:
-- cost
-- reduction
-- operational
-- efficiency
-- spend
-- analysis
-- EBITDA
-- improvement
-- margin
-- expansion
+  - cost
+  - reduction
+  - operational
+  - efficiency
+  - spend
+  - analysis
+  - EBITDA
+  - improvement
+  - margin
+  - expansion
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt identifies, prioritizes, and builds business cases for cost
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt identifies, prioritizes, and builds business cases for cost
   reduction initiatives across business operations — from procurement and headcount
   to vendor contracts, facilities, and operational inefficiencies. It distinguishes
   between tactical cost cuts and structural efficiency improvements, and ensures savings
@@ -25,15 +26,15 @@ description: This prompt identifies, prioritizes, and builds business cases for 
   prioritized cost reduction roadmap with business cases for each initiative.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business needs to improve EBITDA margins ahead of a capital raise, acquisition,
-  or profitability target
-- A new CFO or leadership team needs to rapidly identify cost improvement opportunities
-  across the P&L
-- Conducting a cost baseline analysis before a significant investment to ensure the
-  business is operating efficiently
-- Across-the-board headcount cuts without understanding which functions drive value
-  — blunt cuts damage capability
+  - Ideal Scenarios:**
+  - A business needs to improve EBITDA margins ahead of a capital raise, acquisition,
+    or profitability target
+  - A new CFO or leadership team needs to rapidly identify cost improvement opportunities
+    across the P&L
+  - Conducting a cost baseline analysis before a significant investment to ensure the
+    business is operating efficiently
+  - Across-the-board headcount cuts without understanding which functions drive value
+    — blunt cuts damage capability
 complexity: advanced
 interaction: multi-turn
 ---

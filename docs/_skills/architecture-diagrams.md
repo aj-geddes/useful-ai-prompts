@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Create system architecture diagrams using Mermaid, PlantUML, C4 model,
+date: "2025-01-01"
+description:
+  Create system architecture diagrams using Mermaid, PlantUML, C4 model,
   flowcharts, and sequence diagrams. Use when documenting architecture, system design,
   data flows, or technical workflows.
 layout: skill
 slug: architecture-diagrams
 tags:
-- data
+  - data
 title: architecture-diagrams
 ---
 
@@ -447,6 +448,7 @@ node "Cache Cluster" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use consistent notation and symbols
 - Include legends for complex diagrams
 - Keep diagrams focused on one aspect
@@ -461,6 +463,7 @@ node "Cache Cluster" {
 - Use subgraphs for logical grouping
 
 ### ❌ DON'T
+
 - Overcrowd diagrams with details
 - Use inconsistent styling
 - Skip diagram legends

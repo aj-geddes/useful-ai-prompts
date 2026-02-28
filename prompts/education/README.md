@@ -8,4 +8,4 @@ Instructional design and teaching excellence frameworks for educators and traine
 
 ---
 
-*Professional education prompts for teachers, instructional designers, and educational administrators.*
+_Professional education prompts for teachers, instructional designers, and educational administrators._

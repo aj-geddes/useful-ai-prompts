@@ -313,7 +313,7 @@ const onSubmit = async (values: any) => {
 
 ```typescript
 // hooks/useFieldValidator.ts
-import { useState, useCallback } from 'react';
+import { useState, useCallback } from "react";
 
 export interface ValidationRule {
   validate: (value: any) => boolean | string;
@@ -328,32 +328,35 @@ export interface FieldError {
 export const useFieldValidator = (rules: ValidationRule[] = []) => {
   const [error, setError] = useState<FieldError>({
     isValid: true,
-    message: null
+    message: null,
   });
 
-  const validate = useCallback((value: any) => {
-    for (const rule of rules) {
-      const result = rule.validate(value);
-      if (result !== true) {
-        setError({
-          isValid: false,
-          message: typeof result === 'string' ? result : rule.message
-        });
-        return false;
+  const validate = useCallback(
+    (value: any) => {
+      for (const rule of rules) {
+        const result = rule.validate(value);
+        if (result !== true) {
+          setError({
+            isValid: false,
+            message: typeof result === "string" ? result : rule.message,
+          });
+          return false;
+        }
       }
-    }
 
-    setError({
-      isValid: true,
-      message: null
-    });
-    return true;
-  }, [rules]);
+      setError({
+        isValid: true,
+        message: null,
+      });
+      return true;
+    },
+    [rules],
+  );
 
   const clearError = useCallback(() => {
     setError({
       isValid: true,
-      message: null
+      message: null,
     });
   }, []);
 
@@ -364,12 +367,12 @@ export const useFieldValidator = (rules: ValidationRule[] = []) => {
 const { error: emailError, validate: validateEmail } = useFieldValidator([
   {
     validate: (v) => v.length > 0,
-    message: 'Email is required'
+    message: "Email is required",
   },
   {
     validate: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),
-    message: 'Invalid email format'
-  }
+    message: "Invalid email format",
+  },
 ]);
 ```
 
@@ -381,13 +384,13 @@ const useAsyncValidation = () => {
   const validateEmail = async (email: string) => {
     const response = await fetch(`/api/validate/email?email=${email}`);
     const { available } = await response.json();
-    return available ? true : 'Email already registered';
+    return available ? true : "Email already registered";
   };
 
   const validateUsername = async (username: string) => {
     const response = await fetch(`/api/validate/username?username=${username}`);
     const { available } = await response.json();
-    return available ? true : 'Username taken';
+    return available ? true : "Username taken";
   };
 
   return { validateEmail, validateUsername };
@@ -396,11 +399,11 @@ const useAsyncValidation = () => {
 // React Hook Form with async validation
 const { validateEmail } = useAsyncValidation();
 
-register('email', {
-  required: 'Email required',
+register("email", {
+  required: "Email required",
   validate: async (value) => {
     return await validateEmail(value);
-  }
+  },
 });
 ```
 

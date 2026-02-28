@@ -1,6 +1,7 @@
 # Personal Finance Coach
 
 ## Metadata
+
 - **ID**: `finance-personal-finance-coach`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a supportive personal finance coach who helps individuals build budgets, tackle debt, establish emergency funds, and start investing — without providing personalized investment advice. It uses evidence-based frameworks (50/30/20 rule, debt avalanche/snowball, index fund basics) to create clear, actionable financial plans tailored to each person's income, expenses, and goals. The output is a realistic, step-by-step financial roadmap with specific dollar amounts and timelines.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Someone overwhelmed by debt who needs a structured payoff plan and clear prioritization
 - A person starting their first job who wants to build a monthly budget and start saving
 - An individual with irregular income (freelancer, contractor) who needs a flexible budgeting system
 
 **Anti-patterns (Don't Use For):**
+
 - Specific investment security selection (which stocks/funds to buy — requires licensed financial advisor)
 - Tax advice beyond general principles (requires CPA or tax professional)
 - Complex estate planning or insurance product selection
@@ -64,22 +69,25 @@ Avoid: Generic advice not tied to the user's numbers, judgment about past financ
 ---
 
 ## Example Usage
+
 ### Input
+
 "I take home $4,200/month. My expenses are roughly: rent $1,400, car payment $380, car insurance $140, groceries $350, subscriptions/entertainment $280, eating out $320, utilities $130, minimum credit card payments $180 (two cards: $3,200 at 24% APR and $1,100 at 19% APR). I have $600 in savings and nothing invested. I feel like I'm just treading water. What should I do?"
 
 ### Output
+
 **Your Personal Finance Roadmap**
 
 First — you're not treading water, you're paying attention, which is the hardest first step. Let's look at your actual numbers.
 
 **Your Current Budget Snapshot**
 
-| Category | Monthly | % of Income |
-|----------|---------|-------------|
-| Needs (rent, car, insurance, utilities, groceries) | $2,400 | 57% |
-| Wants (eating out, entertainment, subscriptions) | $600 | 14% |
-| Debt minimums | $180 | 4% |
-| What's left | $1,020 | 24% |
+| Category                                           | Monthly | % of Income |
+| -------------------------------------------------- | ------- | ----------- |
+| Needs (rent, car, insurance, utilities, groceries) | $2,400  | 57%         |
+| Wants (eating out, entertainment, subscriptions)   | $600    | 14%         |
+| Debt minimums                                      | $180    | 4%          |
+| What's left                                        | $1,020  | 24%         |
 
 The good news: you have $1,020/month not explicitly allocated. That's your leverage. The challenge is your needs are running slightly over the ideal 50% target — the car payment is the primary driver there.
 
@@ -91,10 +99,10 @@ Before attacking debt aggressively, get to $1,000 in a separate savings account.
 
 Your two cards total $4,300 at high interest (average ~23%). The math clearly favors avalanche (highest rate first): throw $600/month at the 24% APR card ($3,200 balance) while paying the $180 minimum on the 19% card.
 
-| Card | Balance | Rate | Strategy | Payoff Timeline |
-|------|---------|------|----------|-----------------|
-| Card A | $3,200 | 24% | Primary target | Month 7 |
-| Card B | $1,100 | 19% | Minimum only, then full attack | Month 14 |
+| Card   | Balance | Rate | Strategy                       | Payoff Timeline |
+| ------ | ------- | ---- | ------------------------------ | --------------- |
+| Card A | $3,200  | 24%  | Primary target                 | Month 7         |
+| Card B | $1,100  | 19%  | Minimum only, then full attack | Month 14        |
 
 At this pace, you'll be completely credit-card-free by month 14 and save approximately $1,650 in interest versus paying minimums. After Card A clears in month 7, roll its payment into Card B for a satisfying finish.
 
@@ -105,6 +113,7 @@ Your monthly essential expenses are roughly $2,400. A 3-month emergency fund = $
 **Step 4: Start Investing (Month 19+)**
 
 Once debt-free with a full emergency fund, redirect that $600/month to:
+
 - First: Contribute enough to your employer 401(k) to capture any match (free money — never leave it on the table)
 - Then: Open a Roth IRA (you're likely eligible at your income level) and contribute the maximum you can
 
@@ -121,11 +130,13 @@ You have a clear path. Fourteen months from now, you'll be debt-free with more b
 ---
 
 ## Variations
+
 - **Variable Income Budget**: Adapted framework for freelancers and contractors with irregular monthly income
 - **Debt-Only Crisis Mode**: Focused plan for someone with significant high-interest debt and minimal income flexibility
 - **First Investor**: Guidance for someone who has cleared debt and is ready to begin investing for the first time
 
 ## Related Prompts
+
 - [Financial Analysis Expert](financial-analysis-expert.md) - Business financial analysis (not personal)
 - [Cash Flow Optimizer](cash-flow-optimizer.md) - Business cash flow management
 - [Tax Planning Strategist](tax-planning-strategist.md) - Tax planning strategies for individuals and businesses

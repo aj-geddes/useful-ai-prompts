@@ -1,6 +1,7 @@
 # Merger Acquisition Analyst
 
 ## Metadata
+
 - **ID**: `finance-merger-acquisition-analyst`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt evaluates merger and acquisition opportunities through a rigorous analytical framework covering strategic rationale, target valuation, synergy identification, deal structure, due diligence priorities, and integration risk. It helps buyers assess whether an acquisition creates value, at what price, and under what conditions — and helps sellers understand how buyers will evaluate their business. The output is a structured M&A opportunity assessment that supports go/no-go decisions and deal negotiation.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Evaluating a specific acquisition target before entering formal due diligence or making an offer
 - Assessing a letter of intent (LOI) or term sheet to determine if the deal structure creates value for the buyer
 - Building a sell-side preparation analysis to help a business understand how acquirers will value and assess it
 
 **Anti-patterns (Don't Use For):**
+
 - Providing legal due diligence or contract review — engage M&A legal counsel
 - Finalizing purchase price allocation or goodwill impairment testing — requires certified valuation professionals
 - Insider trading or non-public information analysis — all analysis must be based on publicly available or legitimately shared information
@@ -70,11 +75,13 @@ Avoid: Adding synergies to standalone value without risk-adjusting, recommending
 ## Example Usage
 
 ### Input
+
 "We're a $200M revenue industrial distribution company evaluating an acquisition of a regional competitor. The target has $45M revenue, $4.5M EBITDA (10% margin), growing 8% annually, operating in our adjacent geography. They are asking $40M (8.9x EBITDA). We believe we can cross-sell our product lines into their customer base and consolidate their back office into ours. We have no debt currently. This would be our first acquisition."
 
 ### Output
+
 **M&A Opportunity Assessment: Regional Distributor Acquisition**
-*$200M Acquirer | $45M Target | Asking Price: $40M*
+_$200M Acquirer | $45M Target | Asking Price: $40M_
 
 ---
 
@@ -90,12 +97,12 @@ The acquisition fails to pass strategy if: the target's customer base is already
 
 Industrial distribution comparable companies trade at 6-9x EBITDA (more asset-light distributors reach the high end; capital-intensive, commoditized distributors are at the low end). At $4.5M EBITDA:
 
-| Valuation Method | Multiple | Enterprise Value |
-|-----------------|---------|-----------------|
-| Low comps (6x) | 6x EBITDA | $27M |
-| Mid comps (7.5x) | 7.5x EBITDA | $33.75M |
-| High comps (9x) | 9x EBITDA | $40.5M |
-| Precedent transactions | ~8-9x for regional distributors with growth | $36-40M |
+| Valuation Method       | Multiple                                    | Enterprise Value |
+| ---------------------- | ------------------------------------------- | ---------------- |
+| Low comps (6x)         | 6x EBITDA                                   | $27M             |
+| Mid comps (7.5x)       | 7.5x EBITDA                                 | $33.75M          |
+| High comps (9x)        | 9x EBITDA                                   | $40.5M           |
+| Precedent transactions | ~8-9x for regional distributors with growth | $36-40M          |
 
 **Standalone fair value range: $30-38M.** The asking price of $40M is at the very top of the standalone range. The acquirer is being asked to pay full price — there is no embedded margin of safety. Synergies must be real and achievable to justify $40M.
 
@@ -103,11 +110,13 @@ Industrial distribution comparable companies trade at 6-9x EBITDA (more asset-li
 
 **Synergy Quantification**
 
-*Cost Synergies (High Confidence):*
+_Cost Synergies (High Confidence):_
+
 - G&A elimination (CFO, HR, IT, accounting): $600-900K annually. Assume 80% probability, 12-18 months to realize. PV @ 10% discount rate over 5 years: **$2.1-3.1M**
 - Purchasing leverage on overlapping product categories: $200-350K. Assume 70% probability. PV: **$0.8-1.3M**
 
-*Revenue Synergies (Lower Confidence):*
+_Revenue Synergies (Lower Confidence):_
+
 - Cross-sell acquirer product lines to target's customer base: Targeting $2-5M incremental revenue → $200-500K incremental EBITDA at 10% margin. Assume 40% probability (customer relationships are with target reps, not the acquirer). PV: **$0.4-1.2M**
 
 **Total Risk-Adjusted Synergy PV: $3.3-5.6M**
@@ -117,8 +126,9 @@ Industrial distribution comparable companies trade at 6-9x EBITDA (more asset-li
 **Maximum Price Recommendation**
 
 Standalone value (midpoint): $33.75M
-+ Risk-adjusted synergies: $3.3-5.6M
-**= Supportable price range: $37-39.4M**
+
+- Risk-adjusted synergies: $3.3-5.6M
+  **= Supportable price range: $37-39.4M**
 
 The asking price of $40M is slightly above the top of the supported range — the buyer would be paying for 100% of standalone value plus full synergies with no margin for execution risk. This is not value-destructive, but it leaves no room for error. **Recommended opening counter-offer: $34-36M, with a potential earn-out of $3-4M tied to EBITDA maintenance for 24 months post-close if price negotiation cannot bring the seller below $38M.**
 
@@ -150,10 +160,12 @@ Negotiate price to $35-37M. If seller holds firm at $40M, accept only with a str
 ---
 
 ## Variations
+
 - **Sell-Side Preparation**: Analyze a business from the perspective of how acquirers will assess it and what value-creation actions to take before a sale process
 - **Private Equity LBO Assessment**: Evaluate the acquisition through an LBO lens including debt capacity, entry multiple, and IRR at various exit multiples
 
 ## Related Prompts
+
 - [Investment Research Analyst](investment-research-analyst.md) - Deep-dive fundamental analysis of the target business
 - [Financial Model Builder](financial-model-builder.md) - Build the acquisition model and accretion/dilution analysis
 - [Tax Planning Strategist](tax-planning-strategist.md) - Structure the deal to optimize tax outcomes for buyer and seller

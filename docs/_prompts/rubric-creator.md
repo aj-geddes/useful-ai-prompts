@@ -3,20 +3,21 @@ title: Rubric Creator
 slug: rubric-creator
 category: education
 tags:
-- rubric
-- grading
-- assessment
-- analytic
-- rubric
-- holistic
-- rubric
-- performance
-- task
+  - rubric
+  - grading
+  - assessment
+  - analytic
+  - rubric
+  - holistic
+  - rubric
+  - performance
+  - task
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt designs clear, fair, and instructionally useful grading rubrics
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt designs clear, fair, and instructionally useful grading rubrics
   for essays, projects, presentations, lab reports, and performance tasks. It creates
   rubrics that communicate expectations to students before they work, guide consistent
   grading across student work, and provide feedback that explains why a student earned
@@ -24,14 +25,14 @@ description: This prompt designs clear, fair, and instructionally useful grading
   grid and implementation guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Creating a rubric for a major assignment where consistent, transparent grading matters
-- Designing a student-facing rubric that can double as a self-assessment and revision
-  checklist
-- Building a shared rubric for a department or grade-level team to norm grading across
-  classrooms
-- Rubrics for selected-response assessments (tests with right/wrong answers do not
-  need rubrics)
+  - Ideal Scenarios:**
+  - Creating a rubric for a major assignment where consistent, transparent grading matters
+  - Designing a student-facing rubric that can double as a self-assessment and revision
+    checklist
+  - Building a shared rubric for a department or grade-level team to norm grading across
+    classrooms
+  - Rubrics for selected-response assessments (tests with right/wrong answers do not
+    need rubrics)
 complexity: intermediate
 interaction: single-shot
 ---

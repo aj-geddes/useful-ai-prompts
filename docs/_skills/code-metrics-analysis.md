@@ -1,13 +1,14 @@
 ---
 category: monitoring-observability
-date: '2025-01-01'
-description: Analyze code complexity, cyclomatic complexity, maintainability index,
+date: "2025-01-01"
+description:
+  Analyze code complexity, cyclomatic complexity, maintainability index,
   and code churn using metrics tools. Use when assessing code quality, identifying
   refactoring candidates, or monitoring technical debt.
 layout: skill
 slug: code-metrics-analysis
 tags:
-- development
+  - development
 title: code-metrics-analysis
 ---
 
@@ -29,22 +30,22 @@ Measure and analyze code quality metrics to identify complexity, maintainability
 
 ## Key Metrics
 
-| Metric | Description | Good Range |
-|--------|-------------|-----------|
-| **Cyclomatic Complexity** | Number of linearly independent paths | 1-10 |
-| **Cognitive Complexity** | Measure of code understandability | <15 |
-| **Lines of Code** | Total lines (LOC) | Function: <50 |
-| **Maintainability Index** | Overall maintainability score | >65 |
-| **Code Churn** | Frequency of changes | Low |
-| **Test Coverage** | Percentage covered by tests | >80% |
+| Metric                    | Description                          | Good Range    |
+| ------------------------- | ------------------------------------ | ------------- |
+| **Cyclomatic Complexity** | Number of linearly independent paths | 1-10          |
+| **Cognitive Complexity**  | Measure of code understandability    | <15           |
+| **Lines of Code**         | Total lines (LOC)                    | Function: <50 |
+| **Maintainability Index** | Overall maintainability score        | >65           |
+| **Code Churn**            | Frequency of changes                 | Low           |
+| **Test Coverage**         | Percentage covered by tests          | >80%          |
 
 ## Implementation Examples
 
 ### 1. **TypeScript Complexity Analyzer**
 
 ```typescript
-import * as ts from 'typescript';
-import * as fs from 'fs';
+import * as ts from "typescript";
+import * as fs from "fs";
 
 interface ComplexityMetrics {
   cyclomaticComplexity: number;
@@ -57,21 +58,21 @@ interface ComplexityMetrics {
 
 class CodeMetricsAnalyzer {
   analyzeFile(filePath: string): ComplexityMetrics {
-    const sourceCode = fs.readFileSync(filePath, 'utf-8');
+    const sourceCode = fs.readFileSync(filePath, "utf-8");
     const sourceFile = ts.createSourceFile(
       filePath,
       sourceCode,
       ts.ScriptTarget.Latest,
-      true
+      true,
     );
 
     const metrics: ComplexityMetrics = {
       cyclomaticComplexity: 0,
       cognitiveComplexity: 0,
-      linesOfCode: sourceCode.split('\n').length,
+      linesOfCode: sourceCode.split("\n").length,
       functionCount: 0,
       classCount: 0,
-      maxNestingDepth: 0
+      maxNestingDepth: 0,
     };
 
     this.visit(sourceFile, metrics);
@@ -79,7 +80,11 @@ class CodeMetricsAnalyzer {
     return metrics;
   }
 
-  private visit(node: ts.Node, metrics: ComplexityMetrics, depth: number = 0): void {
+  private visit(
+    node: ts.Node,
+    metrics: ComplexityMetrics,
+    depth: number = 0,
+  ): void {
     metrics.maxNestingDepth = Math.max(metrics.maxNestingDepth, depth);
 
     // Count functions
@@ -120,7 +125,7 @@ class CodeMetricsAnalyzer {
     // Recurse
     const newDepth = this.increasesNesting(node) ? depth + 1 : depth;
 
-    ts.forEachChild(node, child => {
+    ts.forEachChild(node, (child) => {
       this.visit(child, metrics, newDepth);
     });
   }
@@ -143,9 +148,12 @@ class CodeMetricsAnalyzer {
 
     const mi = Math.max(
       0,
-      (171 - 5.2 * Math.log(halsteadVolume) -
+      ((171 -
+        5.2 * Math.log(halsteadVolume) -
         0.23 * cyclomaticComplexity -
-        16.2 * Math.log(linesOfCode)) * 100 / 171
+        16.2 * Math.log(linesOfCode)) *
+        100) /
+        171,
     );
 
     return Math.round(mi);
@@ -172,9 +180,13 @@ class CodeMetricsAnalyzer {
       const fullPath = `${dir}/${item}`;
       const stat = fs.statSync(fullPath);
 
-      if (stat.isDirectory() && !item.startsWith('.') && item !== 'node_modules') {
+      if (
+        stat.isDirectory() &&
+        !item.startsWith(".") &&
+        item !== "node_modules"
+      ) {
         files.push(...this.getTypeScriptFiles(fullPath));
-      } else if (item.endsWith('.ts') && !item.endsWith('.d.ts')) {
+      } else if (item.endsWith(".ts") && !item.endsWith(".d.ts")) {
         files.push(fullPath);
       }
     }
@@ -183,13 +195,15 @@ class CodeMetricsAnalyzer {
   }
 
   generateReport(results: Record<string, ComplexityMetrics>): string {
-    let report = '# Code Metrics Report\n\n';
+    let report = "# Code Metrics Report\n\n";
 
     // Summary
     const totalFiles = Object.keys(results).length;
-    const avgComplexity = Object.values(results).reduce(
-      (sum, m) => sum + m.cyclomaticComplexity, 0
-    ) / totalFiles;
+    const avgComplexity =
+      Object.values(results).reduce(
+        (sum, m) => sum + m.cyclomaticComplexity,
+        0,
+      ) / totalFiles;
 
     report += `## Summary\n\n`;
     report += `- Total Files: ${totalFiles}\n`;
@@ -203,7 +217,7 @@ class CodeMetricsAnalyzer {
       .sort((a, b) => b[1].cyclomaticComplexity - a[1].cyclomaticComplexity);
 
     if (highComplexity.length === 0) {
-      report += 'None found.\n\n';
+      report += "None found.\n\n";
     } else {
       for (const [file, metrics] of highComplexity) {
         report += `- ${file}\n`;
@@ -219,7 +233,7 @@ class CodeMetricsAnalyzer {
 
 // Usage
 const analyzer = new CodeMetricsAnalyzer();
-const results = analyzer.analyzeProject('./src');
+const results = analyzer.analyzeProject("./src");
 const report = analyzer.generateReport(results);
 console.log(report);
 ```
@@ -367,7 +381,7 @@ analyzer.export_json(results, 'metrics.json')
 // eslint-plugin-complexity.js
 module.exports = {
   rules: {
-    'max-complexity': {
+    "max-complexity": {
       create(context) {
         const maxComplexity = context.options[0] || 10;
         let complexity = 0;
@@ -380,7 +394,7 @@ module.exports = {
           if (complexity > maxComplexity) {
             context.report({
               node,
-              message: `Function has complexity of ${complexity}. Maximum allowed is ${maxComplexity}.`
+              message: `Function has complexity of ${complexity}. Maximum allowed is ${maxComplexity}.`,
             });
           }
         }
@@ -389,7 +403,7 @@ module.exports = {
           FunctionDeclaration(node) {
             complexity = 1;
           },
-          'FunctionDeclaration:exit': checkComplexity,
+          "FunctionDeclaration:exit": checkComplexity,
 
           IfStatement: increaseComplexity,
           SwitchCase: increaseComplexity,
@@ -398,14 +412,14 @@ module.exports = {
           DoWhileStatement: increaseComplexity,
           ConditionalExpression: increaseComplexity,
           LogicalExpression(node) {
-            if (node.operator === '&&' || node.operator === '||') {
+            if (node.operator === "&&" || node.operator === "||") {
               increaseComplexity();
             }
-          }
+          },
         };
-      }
-    }
-  }
+      },
+    },
+  },
 };
 ```
 
@@ -427,7 +441,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
@@ -453,6 +467,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Monitor metrics over time
 - Set reasonable thresholds
 - Focus on trends, not absolute numbers
@@ -462,6 +477,7 @@ jobs:
 - Include metrics in code reviews
 
 ### ❌ DON'T
+
 - Use metrics as sole quality indicator
 - Set unrealistic thresholds
 - Ignore context and domain

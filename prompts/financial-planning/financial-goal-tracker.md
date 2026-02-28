@@ -1,6 +1,7 @@
 # Financial Goal Tracker
 
 ## Metadata
+
 - **ID**: `financial-planning-goal-tracker`
 - **Version**: 2.0.0
 - **Category**: Financial Planning/Goals
@@ -18,6 +19,7 @@ Set, track, and achieve meaningful financial goals through systematic planning a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting new financial goals with clear targets and timelines
 - Creating tracking systems for multiple competing goals
 - Building motivation and accountability structures
@@ -25,6 +27,7 @@ Set, track, and achieve meaningful financial goals through systematic planning a
 - Coordinating short-term and long-term financial priorities
 
 **Anti-Patterns (When NOT to Use):**
+
 - Investment selection and portfolio allocation
 - Detailed tax planning strategies
 - Debt consolidation decisions
@@ -44,16 +47,18 @@ Financial goals fail when they're vague, unrealistic, or lack tracking mechanism
 
 <input_handling>
 Required Inputs:
+
 - Primary financial goals and target amounts
 - Current income and savings capacity
 - Timeline for goal achievement
 
 Optional Inputs (Inferred if not provided):
+
 - Goal prioritization (assess importance and urgency)
 - Savings allocation across competing goals (proportional to timeline)
 - Review frequency (recommend monthly minimum)
 - Existing progress toward goals
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive financial goal tracking system with milestones and accountability.
@@ -69,6 +74,7 @@ Step 5: Build motivation system with milestone celebrations and obstacle managem
 Format: Financial Goal Framework with tracking system
 Length: 800-1100 words
 Structure:
+
 - Goal Definitions in SMART format
 - Monthly Allocation Strategy table
 - Projected Outcomes timeline
@@ -77,21 +83,23 @@ Structure:
 - Milestone Celebrations
 - Obstacle Management protocols
 - Accountability System
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Achievable yet motivating targets
 - Balanced allocation across multiple goals
 - Clear progress visualization methods
 - Setback recovery protocols
 
 Outputs must avoid:
+
 - Unrealistic savings targets that cause burnout
 - Too many goals diluting focus and progress
 - Missing accountability structures
 - Ignoring competing financial priorities
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maximum 3-4 active goals for focus
@@ -105,6 +113,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Goals: $20K house down payment in 18 months, pay off $5K student loans in 12 months, build retirement savings. Income $4,500/month, expenses $2,800. Currently have $12K saved and $8K emergency fund."
 
 ### Output
@@ -113,7 +122,8 @@ Outputs must avoid:
 
 **Goal Definitions (SMART Format)**
 
-*Goal 1: House Down Payment*
+_Goal 1: House Down Payment_
+
 - Specific: Save $20,000 for home down payment
 - Measurable: Track monthly contributions and balance
 - Achievable: $8,000 needed ($20K - $12K existing)
@@ -121,7 +131,8 @@ Outputs must avoid:
 - Time-bound: 18 months
 - Monthly Required: $445
 
-*Goal 2: Student Loan Elimination*
+_Goal 2: Student Loan Elimination_
+
 - Specific: Pay off $5,000 student debt
 - Measurable: Track balance reduction monthly
 - Achievable: $417/month extra beyond minimum
@@ -129,7 +140,8 @@ Outputs must avoid:
 - Time-bound: 12 months
 - Monthly Required: $417 extra (plus $200 minimum = $617 total)
 
-*Goal 3: Retirement Acceleration*
+_Goal 3: Retirement Acceleration_
+
 - Specific: Maximize retirement contributions
 - Measurable: Track contribution rate and balance
 - Target: 15% of income ($675/month)
@@ -137,9 +149,9 @@ Outputs must avoid:
 
 **Monthly Allocation Strategy**
 
-*Available Monthly*: $4,500 - $2,800 = $1,700
+_Available Monthly_: $4,500 - $2,800 = $1,700
 
-*Allocation Plan*
+_Allocation Plan_
 | Goal | Monthly | Priority | Status |
 |------|---------|----------|--------|
 | Emergency fund maintenance | $0 | Maintained | $8K complete |
@@ -147,21 +159,22 @@ Outputs must avoid:
 | House down payment | $700 | 2 (18 mo) | Active |
 | Buffer/flexibility | $383 | 3 | Available |
 
-*Sequencing*
+_Sequencing_
+
 - Months 1-12: Split focus on debt and down payment
 - Months 13-18: Redirect debt payment to down payment ($1,317/month)
 - Month 19+: Redirect all to retirement ($1,700/month potential)
 
 **Projected Outcomes**
 
-*Student Loans*
+_Student Loans_
 | Month | Payment | Balance |
 |-------|---------|---------|
 | 0 | - | $5,000 |
 | 6 | $617/mo | $2,300 |
 | 12 | $617/mo | $0 (PAID!) |
 
-*House Down Payment*
+_House Down Payment_
 | Month | Added | Balance |
 |-------|-------|---------|
 | 0 | - | $12,000 |
@@ -169,11 +182,12 @@ Outputs must avoid:
 | 12 | $700/mo | $20,400 |
 | 18 | $1,317/mo | $28,300 |
 
-*Better than expected*: Following this plan, you'll have $28K+ available at month 18, exceeding the $20K target by over $8K.
+_Better than expected_: Following this plan, you'll have $28K+ available at month 18, exceeding the $20K target by over $8K.
 
 **Tracking Dashboard**
 
-*Monthly Scorecard (Track 5 Numbers)*
+_Monthly Scorecard (Track 5 Numbers)_
+
 ```
 Month: ____
 
@@ -195,46 +209,52 @@ Month: ____
    Track monthly increase
 ```
 
-*Visual Progress Trackers*
+_Visual Progress Trackers_
+
 - Down payment thermometer: Color in as balance grows
 - Debt payoff countdown: Days/dollars remaining
 - Monthly savings streak: Consecutive months hitting targets
 
 **Review Schedule**
 
-*Weekly (5 minutes)*
+_Weekly (5 minutes)_
+
 - Quick check: Any unexpected spending?
 - On track for monthly savings target?
 
-*Monthly (30 minutes)*
+_Monthly (30 minutes)_
+
 - Update all dashboard numbers
 - Calculate progress percentages
 - Celebrate wins or identify needed adjustments
 
-*Quarterly (1 hour)*
+_Quarterly (1 hour)_
+
 - Review overall strategy
 - Adjust allocations if needed
 - Check goal timelines
 
 **Milestone Celebrations**
 
-| Milestone | Target | Celebration |
-|-----------|--------|-------------|
-| $2,500 loan paid | Month 6 | Nice dinner out |
-| Loans PAID OFF | Month 12 | Weekend activity |
-| $15K down payment | Month 9 | Small treat |
-| $20K down payment | Month 12 | Celebrate milestone |
-| Goal achieved | Month 18 | House hunting celebration! |
+| Milestone         | Target   | Celebration                |
+| ----------------- | -------- | -------------------------- |
+| $2,500 loan paid  | Month 6  | Nice dinner out            |
+| Loans PAID OFF    | Month 12 | Weekend activity           |
+| $15K down payment | Month 9  | Small treat                |
+| $20K down payment | Month 12 | Celebrate milestone        |
+| Goal achieved     | Month 18 | House hunting celebration! |
 
 **Obstacle Management**
 
-*Common Setbacks*
+_Common Setbacks_
+
 - Unexpected expense: Use buffer first, then emergency fund if needed
 - Income disruption: Prioritize minimums, pause extra contributions
 - Motivation drop: Review progress made, remember the "why"
 - Lifestyle creep: Return to original allocation, delay upgrades
 
-*If Goals Slip*
+_If Goals Slip_
+
 - Don't abandon plan entirely
 - Adjust timeline rather than targets
 - Increase contributions when possible
@@ -242,30 +262,35 @@ Month: ____
 
 **Accountability System**
 
-*Internal*
+_Internal_
+
 - Monthly calendar reminder for reviews
 - Progress photo documentation
 - Written reflection on wins/challenges
 
-*External (Optional)*
+_External (Optional)_
+
 - Accountability partner check-ins
 - Share milestones with supportive friends/family
 - Online community for motivation
 
 **Post-Goal Planning**
 
-*After Debt Payoff (Month 13+)*
+_After Debt Payoff (Month 13+)_
+
 - Redirect $617 to down payment: Accelerates timeline
 - Celebrate freedom from debt payments
 - Don't inflate lifestyle with freed cash
 
-*After House Purchase (Month 19+)*
+_After House Purchase (Month 19+)_
+
 - $1,700/month available for:
   - Retirement catch-up (max out accounts)
   - House maintenance fund
   - Next financial goal (car, travel, investment)
 
 **Success Metrics**
+
 - Track monthly: Hit savings allocation targets
 - Track quarterly: On pace for goal timelines
 - Measure annually: Total progress, habits built

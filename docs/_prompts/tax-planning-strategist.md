@@ -3,23 +3,24 @@ title: Tax Planning Strategist
 slug: tax-planning-strategist
 category: finance
 tags:
-- tax
-- planning
-- tax
-- strategy
-- business
-- tax
-- R&D
-- credits
-- entity
-- structure
-- tax
-- optimization
+  - tax
+  - planning
+  - tax
+  - strategy
+  - business
+  - tax
+  - R&D
+  - credits
+  - entity
+  - structure
+  - tax
+  - optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt identifies and prioritizes legal tax optimization strategies
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt identifies and prioritizes legal tax optimization strategies
   for businesses — covering entity structure, timing of income and deductions, tax
   credits, international considerations, and proactive planning opportunities. It
   frames tax planning as a strategic CFO function rather than a year-end compliance
@@ -28,15 +29,15 @@ description: This prompt identifies and prioritizes legal tax optimization strat
   opportunities and implementation guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A growing business that has never had proactive tax planning and wants to identify
-  structural optimization opportunities
-- A CFO or business owner preparing for a significant transaction (sale, acquisition,
-  capital raise) where tax structure matters enormously
-- A company with significant R&D activity, multi-state operations, or international
-  presence that may be leaving tax savings on the table
-- Tax evasion strategies — this prompt addresses only legal tax avoidance and optimization
-  within applicable law
+  - Ideal Scenarios:**
+  - A growing business that has never had proactive tax planning and wants to identify
+    structural optimization opportunities
+  - A CFO or business owner preparing for a significant transaction (sale, acquisition,
+    capital raise) where tax structure matters enormously
+  - A company with significant R&D activity, multi-state operations, or international
+    presence that may be leaving tax savings on the table
+  - Tax evasion strategies — this prompt addresses only legal tax avoidance and optimization
+    within applicable law
 complexity: advanced
 interaction: multi-turn
 ---

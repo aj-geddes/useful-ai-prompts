@@ -1,13 +1,14 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Launch and configure EC2 instances with security groups, IAM roles, key
+date: "2025-01-01"
+description:
+  Launch and configure EC2 instances with security groups, IAM roles, key
   pairs, AMIs, and auto-scaling. Use for virtual servers and managed infrastructure.
 layout: skill
 slug: aws-ec2-setup
 tags:
-- aws
-- security
+  - aws
+  - security
 title: aws-ec2-setup
 ---
 
@@ -409,6 +410,7 @@ resource "aws_autoscaling_group" "app" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use security groups for network control
 - Attach IAM roles for AWS access
 - Enable CloudWatch monitoring
@@ -419,6 +421,7 @@ resource "aws_autoscaling_group" "app" {
 - Keep systems patched and updated
 
 ### ❌ DON'T
+
 - Use overly permissive security groups
 - Store credentials in user data
 - Ignore CloudWatch metrics

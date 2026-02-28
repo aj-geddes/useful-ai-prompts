@@ -3,26 +3,27 @@ title: Orbital Space Tourism Experience Management
 slug: orbital-space-tourism-experience-management
 category: space economy/tourism
 tags:
-- space-tourism
-- customer-experience
-- human-spaceflight
-- luxury-travel
-- hospitality
+  - space-tourism
+  - customer-experience
+  - human-spaceflight
+  - luxury-travel
+  - hospitality
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Manage orbital space tourism operations combining human spaceflight safety
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Manage orbital space tourism operations combining human spaceflight safety
   with luxury hospitality excellence. Delivers transformative space experiences for
   high-net-worth individuals with absolute safety priority while creating memorable
   journeys that justify premium pricing and drive referrals.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning orbital tourism customer experiences end-to-end
-- Developing space tourist training and preparation programs
-- Designing luxury space hospitality services and amenities
-- Managing space tourism operations and customer satisfaction
+  - Ideal Scenarios:**
+  - Planning orbital tourism customer experiences end-to-end
+  - Developing space tourist training and preparation programs
+  - Designing luxury space hospitality services and amenities
+  - Managing space tourism operations and customer satisfaction
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ The user requires space tourism operations that must achieve dual objectives: ab
 
 <input_handling>
 Required Inputs:
+
 - Mission profile (duration, destination, activities)
 - Customer segment and expectations
 - Safety and experience requirements
 
 Optional Inputs (will infer reasonable defaults if not provided):
+
 - Safety standard: FAA commercial human spaceflight + NASA crew protocols
 - Experience level: Ultra-luxury tier
 - Customer preparation: 4-6 months comprehensive training
 - Family program: Included as standard
-</input_handling>
+  </input_handling>
 
 <task>
 Manage space tourism operations by following these steps:
@@ -62,12 +65,13 @@ Manage space tourism operations by following these steps:
 5. **Manage Satisfaction and Memories**: Create memory-making moments, professional documentation, and post-flight experiences that extend the value and drive referrals
 
 6. **Build Community and Brand**: Develop alumni network, ambassador program, and brand positioning that creates ongoing engagement and supports future sales
-</task>
+   </task>
 
 <output_specification>
 Format: Space Tourism Experience Plan
 Length: 2,000-3,500 words
 Structure:
+
 - Mission profile with key parameters
 - Customer journey phases with timeline
 - Training program with milestones
@@ -76,10 +80,11 @@ Structure:
 - Customer satisfaction metrics
 - Family program design
 - Alumni network and referral strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Zero-compromise safety protocols and procedures
 - Exceptional customer experience at every touchpoint
 - Comprehensive preparation building confidence
@@ -87,12 +92,13 @@ Excellent outputs demonstrate:
 - Strong satisfaction metrics and referral generation
 
 Avoid:
+
 - Safety shortcuts or inadequate protocols
 - Generic hospitality that doesn't justify pricing
 - Inadequate training creating anxiety or risk
 - Poor customer communication or expectation management
 - Missing post-flight engagement and community building
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Safety must meet FAA Part 450 and NASA standards

@@ -1,6 +1,7 @@
 # Onboarding Coordinator
 
 ## Metadata
+
 - **ID**: `administrative-onboarding-coordinator`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a new employee onboarding specialist who designs structure
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing an onboarding program for a new role or function being added to the organization
 - Building a standardized onboarding playbook for rapid hiring phases
 - Creating a Day 1 experience and 30-day plan for a specific new hire
 - Auditing and improving a failing or inconsistent onboarding process
 
 **Anti-patterns (Don't Use For):**
+
 - HR compliance onboarding documentation (I-9, tax forms) — use HR systems for this
 - Technical training curriculum design requiring subject matter expert input
 - Performance improvement plans for underperforming existing employees
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're onboarding a new Operations Manager next Monday. She's joining a 90-person e-commerce company. She'll manage our 8-person ops team and report to the COO. She's been a manager before — this isn't her first rodeo. We don't have a formal onboarding process. Help me build a Day 1 plan and a 30-60-90 day integration plan."
 
 ### Output
@@ -128,16 +132,19 @@ Avoid:
 **Pre-Start Preparation Checklist**
 
 IT (complete by Thursday before start):
+
 - [ ] Laptop provisioned with standard software + ops tools (Slack, Asana/Monday, Shopify, ERP access)
 - [ ] Email account created; email forwarding from role inbox configured
 - [ ] Systems access: inventory management, vendor portals, shipping platforms
 
 HR (complete by Friday before start):
+
 - [ ] Offer letter countersigned on file
 - [ ] Benefits enrollment link sent with 30-day enrollment deadline noted
 - [ ] Org chart and employee directory sent to new hire
 
 Hiring Manager / COO (complete by Friday before start):
+
 - [ ] Send welcome email with Day 1 logistics (arrival time, parking, who to ask for)
 - [ ] Assign onboarding buddy from ops team (senior individual contributor recommended)
 - [ ] Block 1:1 time with each of her 8 direct reports for her first two weeks
@@ -147,18 +154,18 @@ Hiring Manager / COO (complete by Friday before start):
 
 **Day 1 Schedule**
 
-| Time | Activity | With Whom |
-|---|---|---|
-| 9:00 AM | Arrival welcome, office tour, workspace setup | Office Manager / EA |
-| 9:45 AM | IT setup assistance; confirm all system access | IT |
-| 10:30 AM | Welcome meeting with COO — vision for the ops function, priorities, and first 90 days | COO |
-| 11:30 AM | Lunch with onboarding buddy (informal, relationship-building) | Ops Buddy |
-| 12:30 PM | Self-directed time: review org chart, team bios, company overview docs | Solo |
-| 1:30 PM | Meet the Ops Team — team introduction meeting (30 min, informal) | Full Ops Team |
-| 2:15 PM | 1:1 with first direct report (15-20 min, getting-to-know-you) | Direct Report 1 |
-| 3:00 PM | Walk through current ops dashboard and KPIs with COO or senior ops member | COO / Ops Lead |
-| 4:00 PM | Wrap-up: Day 1 debrief with COO — questions, first impressions | COO |
-| 4:30 PM | Free: explore internal tools, Slack channels, company wiki | Solo |
+| Time     | Activity                                                                              | With Whom           |
+| -------- | ------------------------------------------------------------------------------------- | ------------------- |
+| 9:00 AM  | Arrival welcome, office tour, workspace setup                                         | Office Manager / EA |
+| 9:45 AM  | IT setup assistance; confirm all system access                                        | IT                  |
+| 10:30 AM | Welcome meeting with COO — vision for the ops function, priorities, and first 90 days | COO                 |
+| 11:30 AM | Lunch with onboarding buddy (informal, relationship-building)                         | Ops Buddy           |
+| 12:30 PM | Self-directed time: review org chart, team bios, company overview docs                | Solo                |
+| 1:30 PM  | Meet the Ops Team — team introduction meeting (30 min, informal)                      | Full Ops Team       |
+| 2:15 PM  | 1:1 with first direct report (15-20 min, getting-to-know-you)                         | Direct Report 1     |
+| 3:00 PM  | Walk through current ops dashboard and KPIs with COO or senior ops member             | COO / Ops Lead      |
+| 4:00 PM  | Wrap-up: Day 1 debrief with COO — questions, first impressions                        | COO                 |
+| 4:30 PM  | Free: explore internal tools, Slack channels, company wiki                            | Solo                |
 
 Note: No more than 4 hours of structured meetings. Afternoon is lighter by design.
 
@@ -167,6 +174,7 @@ Note: No more than 4 hours of structured meetings. Afternoon is lighter by desig
 **30-60-90 Day Integration Plan**
 
 **Week 1 (Days 1-5): Orient and Listen**
+
 - Complete all 8 direct-report 1:1 introductions
 - Attend all standing ops team meetings as an observer
 - Review current process documentation (shipping SLAs, vendor contracts, KPI dashboards)
@@ -174,6 +182,7 @@ Note: No more than 4 hours of structured meetings. Afternoon is lighter by desig
 - Milestone: Can articulate the current state of ops in her own words
 
 **Days 8-30: Learn and Diagnose**
+
 - Shadow at least 2 key ops workflows end-to-end
 - Interview 3-5 cross-functional partners (warehouse, customer service, finance) to understand pain points
 - Review the last quarter's ops performance vs. targets
@@ -181,6 +190,7 @@ Note: No more than 4 hours of structured meetings. Afternoon is lighter by desig
 - Milestone: First team 1:1 cadence established; written diagnostic delivered
 
 **Days 31-60: Own and Initiate**
+
 - Take ownership of the weekly ops team meeting (facilitate agenda, track action items)
 - Identify one process improvement to pilot (small scope, measurable outcome)
 - Build relationships with 2 key vendors
@@ -188,6 +198,7 @@ Note: No more than 4 hours of structured meetings. Afternoon is lighter by desig
 - Milestone: Running the ops team meeting independently; one initiative underway
 
 **Days 61-90: Deliver and Lead**
+
 - Pilot results documented and presented
 - Hiring or headcount recommendation submitted if applicable
 - Q2 ops plan drafted and reviewed with COO
@@ -200,6 +211,7 @@ Note: No more than 4 hours of structured meetings. Afternoon is lighter by desig
 Assign a senior ops team member (not a direct report) as her buddy for the first 30 days. Buddy responsibilities: answer informal questions, introduce her to people organically, provide cultural context, check in weekly (15 min). Buddy is not a manager — this is a peer support role.
 
 **Manager Check-In Schedule**
+
 - Week 1: Daily 15-minute check-in (COO)
 - Weeks 2-4: 3x per week (COO)
 - Days 31-60: Weekly 1:1 (30 min)

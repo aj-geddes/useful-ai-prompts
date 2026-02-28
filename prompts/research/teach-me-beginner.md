@@ -1,6 +1,7 @@
 # Technology Learning Framework (Beginner)
 
 ## Metadata
+
 - **ID**: `research-tech-learning-beginner`
 - **Version**: 1.0.0
 - **Category**: Research/Education
@@ -18,12 +19,14 @@ Create friendly, accessible learning guides for complete beginners exploring new
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Complete beginners learning their first technology tools
 - Non-technical audiences needing technology orientation
 - Educational contexts requiring accessible explanations
 - Self-learners starting from zero experience
 
 **Anti-Patterns (Do Not Use For):**
+
 - Advanced professionals seeking deep specialization
 - Rapid deep-dives requiring prerequisite knowledge
 - Production implementation planning
@@ -105,9 +108,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I want to learn Python. I've never programmed before but I want to try making simple games or automating boring stuff on my computer."
 
 ### Output
+
 **Welcome to Python: Your First Steps**
 
 **What is Python?**
@@ -117,6 +122,7 @@ Python is like learning a new language, but instead of talking to people, you're
 
 **What Can You Do With Python?**
 Here are some cool things beginners make with Python:
+
 - Simple games (like guess-the-number or text adventures)
 - Programs that rename hundreds of files automatically
 - Tools that send emails or organize photos
@@ -124,6 +130,7 @@ Here are some cool things beginners make with Python:
 
 **The Building Blocks**
 Think of Python programs like recipes:
+
 - **Variables** = Ingredients (things you use, like a player's name or score)
 - **Functions** = Cooking techniques (actions you do, like "add" or "check")
 - **Loops** = Repeating steps (like "stir for 5 minutes")
@@ -132,6 +139,7 @@ Think of Python programs like recipes:
 **Your 4-Week Learning Plan**
 
 **Week 1: Hello, Python!**
+
 - Install Python on your computer (it's free!)
 - Write your first program: make it say "Hello, World!"
 - Learn about variables (storing information)
@@ -140,6 +148,7 @@ Think of Python programs like recipes:
 Progress check: Can you make Python greet you by name?
 
 **Week 2: Making Decisions**
+
 - Learn if/else statements (teaching Python to make choices)
 - Create a number guessing game
 - Practice with simple math in Python
@@ -147,6 +156,7 @@ Progress check: Can you make Python greet you by name?
 Progress check: Does your guessing game work?
 
 **Week 3: Loops and Lists**
+
 - Learn loops (doing things over and over)
 - Understand lists (groups of things)
 - Improve your guessing game with multiple tries
@@ -154,6 +164,7 @@ Progress check: Does your guessing game work?
 Progress check: Can your game give hints like "too high" or "too low"?
 
 **Week 4: Your Own Project**
+
 - Pick a simple project you care about
 - Break it into small steps
 - Ask for help when stuck (that's normal!)
@@ -161,11 +172,13 @@ Progress check: Can your game give hints like "too high" or "too low"?
 Progress check: Did you finish something you can show someone?
 
 **Helpful Resources**
+
 - [Python.org Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide) - Official and free
 - [Automate the Boring Stuff](https://automatetheboringstuff.com/) - Free book online, perfect for what you want
 - [Codecademy Python Course](https://codecademy.com/learn/learn-python-3) - Interactive practice
 
 **Common Beginner Mistakes (It's Okay!)**
+
 - Forgetting to save your file before running it
 - Typos in code (Python is picky about spelling!)
 - Getting frustrated - everyone feels this way at first
@@ -175,5 +188,6 @@ Remember: every expert was once a beginner. Take it one step at a time, and cele
 ---
 
 ## Related Prompts
+
 - [Technology Learning (Intermediate)](teach-me-journeyman.md)
 - [Technology Learning (Advanced)](teach-me-advanced.md)

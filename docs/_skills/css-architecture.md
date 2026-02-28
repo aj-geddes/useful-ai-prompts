@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Organize CSS using BEM, SMACSS, and CSS-in-JS patterns. Use when building
+date: "2025-01-01"
+description:
+  Organize CSS using BEM, SMACSS, and CSS-in-JS patterns. Use when building
   scalable, maintainable styling systems with proper naming conventions.
 layout: skill
 slug: css-architecture
 tags:
-- development
+  - development
 title: css-architecture
 ---
 
@@ -82,7 +83,7 @@ Build maintainable CSS systems using methodologies like BEM (Block Element Modif
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card__header {
@@ -102,7 +103,7 @@ Build maintainable CSS systems using methodologies like BEM (Block Element Modif
 }
 
 .card--elevated {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 ```
 
@@ -118,7 +119,8 @@ Build maintainable CSS systems using methodologies like BEM (Block Element Modif
 
 html {
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -273,7 +275,8 @@ export const Button = (props: ButtonProps) => <StyledButton {...props} />;
   --color-border: #e0e0e0;
 
   /* Typography */
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-base:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-size-base: 16px;
   --font-size-lg: 18px;
   --font-size-sm: 14px;
@@ -287,9 +290,9 @@ export const Button = (props: ButtonProps) => <StyledButton {...props} />;
   --spacing-xl: 32px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --shadow-md: 0 2px 4px rgba(0,0,0,0.1);
-  --shadow-lg: 0 4px 8px rgba(0,0,0,0.15);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
 
   /* Border Radius */
   --radius-sm: 4px;
@@ -337,10 +340,14 @@ export const Button = (props: ButtonProps) => <StyledButton {...props} />;
   <p class="text-gray-600 leading-relaxed">Description</p>
 
   <div class="flex gap-2">
-    <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+    <button
+      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+    >
       Primary
     </button>
-    <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition">
+    <button
+      class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition"
+    >
       Secondary
     </button>
   </div>
@@ -348,22 +355,56 @@ export const Button = (props: ButtonProps) => <StyledButton {...props} />;
 
 <style>
   /* Utility classes */
-  .flex { display: flex; }
-  .flex-col { flex-direction: column; }
-  .gap-4 { gap: 1rem; }
-  .gap-2 { gap: 0.5rem; }
-  .p-6 { padding: 1.5rem; }
-  .px-4 { padding-left: 1rem; padding-right: 1rem; }
-  .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-  .bg-white { background-color: white; }
-  .bg-blue-500 { background-color: #3b82f6; }
-  .text-white { color: white; }
-  .text-gray-900 { color: #111827; }
-  .text-2xl { font-size: 1.5rem; }
-  .font-bold { font-weight: bold; }
-  .rounded { border-radius: 0.375rem; }
-  .rounded-lg { border-radius: 0.5rem; }
-  .shadow-md { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .flex {
+    display: flex;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .gap-4 {
+    gap: 1rem;
+  }
+  .gap-2 {
+    gap: 0.5rem;
+  }
+  .p-6 {
+    padding: 1.5rem;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+  .text-white {
+    color: white;
+  }
+  .text-gray-900 {
+    color: #111827;
+  }
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+  .rounded {
+    border-radius: 0.375rem;
+  }
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 </style>
 ```
 

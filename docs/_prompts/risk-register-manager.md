@@ -3,32 +3,33 @@ title: Risk Register Manager
 slug: risk-register-manager
 category: project management
 tags:
-- risk
-- management
-- RAID
-- log
-- risk
-- register
-- mitigation
-- strategies
-- probability-impact
-- risk
-- owners
+  - risk
+  - management
+  - RAID
+  - log
+  - risk
+  - register
+  - mitigation
+  - strategies
+  - probability-impact
+  - risk
+  - owners
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project managers build and maintain a comprehensive
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project managers build and maintain a comprehensive
   RAID log (Risks, Assumptions, Issues, Dependencies), scoring each risk on probability
   and impact, assigning owners, and generating actionable mitigation and contingency
   strategies. It produces a living risk register ready for steering committee review.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Initiating a complex project that requires formal risk documentation for governance
-- Refreshing a stale risk register mid-project after scope changes or new threat identification
-- Preparing a risk briefing for executive stakeholders or a project audit
-- Enterprise risk management (ERM) at the portfolio or organizational level
+  - Ideal Scenarios:**
+  - Initiating a complex project that requires formal risk documentation for governance
+  - Refreshing a stale risk register mid-project after scope changes or new threat identification
+  - Preparing a risk briefing for executive stakeholders or a project audit
+  - Enterprise risk management (ERM) at the portfolio or organizational level
 complexity: advanced
 interaction: multi-turn
 ---

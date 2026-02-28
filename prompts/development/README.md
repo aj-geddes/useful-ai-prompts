@@ -11,4 +11,4 @@ Technical development frameworks and tools for software engineering and CI/CD wo
 
 ---
 
-*Professional development prompts for software engineers, DevOps specialists, and technical architects.*
+_Professional development prompts for software engineers, DevOps specialists, and technical architects._

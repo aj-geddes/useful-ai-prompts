@@ -3,28 +3,29 @@ title: Commercial Launch Operations Coordination
 slug: commercial-launch-operations-coordination
 category: space economy/launch services
 tags:
-- launch-operations
-- mission-coordination
-- range-management
-- launch-services
-- supply-chain
+  - launch-operations
+  - mission-coordination
+  - range-management
+  - launch-services
+  - supply-chain
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables expert coordination of multi-mission commercial launch
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables expert coordination of multi-mission commercial launch
   operations including mission integration, ground operations, range coordination,
   and supply chain management. It delivers comprehensive launch campaign planning
   with safety-first execution across diverse mission types for high-volume launch
   service providers.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Coordinating high-volume launch operations (20+ annually)
-- Managing multi-customer launch campaigns with diverse payload types
-- Optimizing launch range utilization and scheduling across multiple sites
-- Integrating launch supply chain operations with vendor management
+  - Ideal Scenarios:**
+  - Coordinating high-volume launch operations (20+ annually)
+  - Managing multi-customer launch campaigns with diverse payload types
+  - Optimizing launch range utilization and scheduling across multiple sites
+  - Integrating launch supply chain operations with vendor management
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,17 +40,19 @@ Commercial launch operations require seamless coordination of complex technical,
 
 <input_handling>
 Required inputs:
+
 - Launch vehicle type(s) and configuration options
 - Annual launch rate targets and growth projections
 - Customer portfolio and mission types (satellite, cargo, crew)
 - Launch site locations and capabilities
 
 Optional inputs (will use industry defaults if not provided):
+
 - Safety framework (default: FAA/Range Safety Group standards)
 - Operations model (default: 24/7 multi-shift operations)
 - Supply chain approach (default: strategic sourcing with dual-source redundancy)
 - Customer SLA requirements (default: industry-standard reliability targets)
-</input_handling>
+  </input_handling>
 
 <task>
 Coordinate commercial launch operations through systematic planning and execution:
@@ -71,6 +74,7 @@ Step 6: Create performance metrics framework tracking schedule reliability, miss
 Format: Comprehensive Launch Operations Plan with tables and structured sections
 Length: 2,500-4,000 words for full plan; 1,000-1,500 for focused analysis
 Structure:
+
 - Operations Overview (key parameters and targets)
 - Annual Launch Schedule (quarterly breakdown by vehicle/mission)
 - Range Coordination (site-specific protocols and relationships)
@@ -78,10 +82,11 @@ Structure:
 - Safety Management (standards, metrics, procedures)
 - Customer Service Model (touchpoints, communication, SLAs)
 - Performance Metrics (targets, tracking frequency, accountability)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Zero-compromise safety approach with specific standards and metrics
 - Realistic schedule development with appropriate contingency buffers
 - Efficient resource utilization across sites and vehicles
@@ -90,12 +95,13 @@ Excellent responses demonstrate:
 - Specific, measurable targets for all key performance areas
 
 Responses must avoid:
+
 - Safety shortcuts or deferred safety investments
 - Unrealistic schedules without contingency buffers
 - Single-source dependencies for critical supply chain elements
 - Poor customer communication or unclear escalation paths
 - Generic recommendations without operational specificity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All recommendations must comply with FAA, FCC, and range safety requirements

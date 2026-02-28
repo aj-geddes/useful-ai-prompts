@@ -28,7 +28,7 @@ Serverless architecture enables building complete applications without managing 
 # serverless.yml - Serverless Framework
 service: my-app
 
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -162,14 +162,14 @@ plugins:
 
 ```javascript
 // src/handlers/processUserCreated.js
-const AWS = require('aws-sdk');
+const AWS = require("aws-sdk");
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 
-const userService = require('../services/userService');
-const emailService = require('../services/emailService');
+const userService = require("../services/userService");
+const emailService = require("../services/emailService");
 
 exports.handler = async (event, context) => {
-  console.log('Processing user created event:', JSON.stringify(event));
+  console.log("Processing user created event:", JSON.stringify(event));
 
   try {
     // Parse SNS message
@@ -186,17 +186,19 @@ exports.handler = async (event, context) => {
       await emailService.sendWelcomeEmail(user);
 
       // Initialize user preferences
-      await dynamodb.put({
-        TableName: process.env.DYNAMODB_TABLE,
-        Item: {
-          id: userId,
-          preferences: {
-            newsletter: true,
-            notifications: true
+      await dynamodb
+        .put({
+          TableName: process.env.DYNAMODB_TABLE,
+          Item: {
+            id: userId,
+            preferences: {
+              newsletter: true,
+              notifications: true,
+            },
+            createdAt: Date.now(),
           },
-          createdAt: Date.now()
-        }
-      }).promise();
+        })
+        .promise();
 
       // Log success
       console.log(`Successfully processed user creation for ${userId}`);
@@ -204,16 +206,16 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Processed' })
+      body: JSON.stringify({ message: "Processed" }),
     };
   } catch (error) {
-    console.error('Error processing event:', error);
+    console.error("Error processing event:", error);
     throw error; // SNS will retry
   }
 };
 
 // src/handlers/processImageUpload.js
-const AWS = require('aws-sdk');
+const AWS = require("aws-sdk");
 const s3 = new AWS.S3();
 const rekognition = new AWS.Rekognition();
 
@@ -226,16 +228,18 @@ exports.handler = async (event, context) => {
       console.log(`Processing image: s3://${bucket}/${key}`);
 
       // Analyze image with Rekognition
-      const labels = await rekognition.detectLabels({
-        Image: {
-          S3Object: {
-            Bucket: bucket,
-            Name: key
-          }
-        },
-        MaxLabels: 10,
-        MinConfidence: 70
-      }).promise();
+      const labels = await rekognition
+        .detectLabels({
+          Image: {
+            S3Object: {
+              Bucket: bucket,
+              Name: key,
+            },
+          },
+          MaxLabels: 10,
+          MinConfidence: 70,
+        })
+        .promise();
 
       // Create thumbnail
       await createThumbnail(bucket, key);
@@ -246,7 +250,7 @@ exports.handler = async (event, context) => {
       console.log(`Completed processing ${key}`);
     }
   } catch (error) {
-    console.error('Error processing S3 event:', error);
+    console.error("Error processing S3 event:", error);
     throw error;
   }
 };
@@ -415,6 +419,7 @@ def process_order(event):
 ## Best Practices
 
 ### ✅ DO
+
 - Design idempotent functions
 - Use event sources efficiently
 - Implement proper error handling
@@ -425,6 +430,7 @@ def process_order(event):
 - Use environment variables for configuration
 
 ### ❌ DON'T
+
 - Create long-running functions
 - Store state in functions
 - Ignore cold start optimization

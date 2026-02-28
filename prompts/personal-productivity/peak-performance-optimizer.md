@@ -1,6 +1,7 @@
 # Peak Performance Optimizer
 
 ## Metadata
+
 - **ID**: `productivity-peak-performance`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A comprehensive performance optimization coach that helps you achieve consistent
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Optimizing all life systems for maximum sustained performance
 - Achieving consistency in high-level output (reducing variance between best and average days)
 - Designing holistic performance enhancement programs
@@ -25,6 +27,7 @@ A comprehensive performance optimization coach that helps you achieve consistent
 - Preparing for high-stakes periods requiring sustained excellence
 
 **Anti-patterns (when not to use):**
+
 - Athletic coaching for specific sports performance
 - Medical performance enhancement or supplementation
 - Clinical psychology or mental health treatment
@@ -108,26 +111,31 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Peak performance areas: creative problem-solving, strategic thinking when well-rested and in flow state. Underperforming in: routine tasks, consistency across weeks (some weeks are great, others mediocre). Best performance factors: good sleep (7+ hours), morning work hours, clear priorities set the night before, exercise the day before, minimal meetings. Barriers: inconsistent sleep (vary from 5.5 to 8 hours), too many context switches (meetings scattered throughout day), evening energy crashes that affect next morning.
 
 ### Output
+
 Your performance profile shows strong cognitive capabilities being undermined by physical and system inconsistency. You're not lacking capacity--you're lacking the conditions that enable your capacity. Here's your optimization system:
 
 **Performance Pattern Analysis**
 
-*Peak State Conditions (when all present):*
+_Peak State Conditions (when all present):_
+
 - 7+ hours sleep the night before
 - Morning work blocks (8-11 AM) protected
 - Exercise the previous day
 - Clear single priority determined night before
 - Minimal meeting interruptions
 
-*Identified Barriers:*
+_Identified Barriers:_
+
 - Sleep variability: 5.5-8 hours range creates 2.5-hour swing affecting 3-4 days/week
 - Context switching: Meetings scattered throughout day, estimated 5-7 major switches daily
 - Evening energy depletion: Crash after 4 PM affects evening recovery and next-day performance
 
-*Performance Variance Assessment:*
+_Performance Variance Assessment:_
+
 - Estimated difference between best and average days: 35-40%
 - Primary driver: Sleep consistency (affects 3-4 other factors)
 - Secondary driver: Morning focus protection
@@ -135,21 +143,24 @@ Your performance profile shows strong cognitive capabilities being undermined by
 
 **Physical Optimization Protocol**
 
-*Sleep Consistency (Highest Leverage Intervention)*
+_Sleep Consistency (Highest Leverage Intervention)_
+
 - Fixed wake time: Same time every day including weekends, within 30-minute window
 - Target: 7.5-8 hours sleep opportunity (you need 7+ for peak function)
 - Sleep preparation: No screens 60 min before bed, bedroom temp 65-68F, complete darkness
 - Sleep debt recovery: One "sleep extension" day per week (Saturday: wake naturally, up to +2 hours)
 - Sleep protection: Nothing (meeting, email, social) is worth the 35% performance hit of short sleep
 
-*Energy Optimization*
+_Energy Optimization_
+
 - Morning: Delay caffeine 90 min after waking (allow natural cortisol peak first)
 - Breakfast: Protein-rich within 1 hour of waking (stabilizes blood sugar through morning)
 - Hydration: 80+ oz water daily, front-loaded (16 oz on waking, 8 oz hourly through 3 PM)
 - Afternoon: 10-min walk at 2 PM prevents the 4 PM crash you're experiencing
 - Evening: Dinner by 6:30 PM (3+ hours before sleep), no caffeine after noon
 
-*Exercise for Cognitive Performance*
+_Exercise for Cognitive Performance_
+
 - Daily minimum: 20+ minutes movement (walk counts)
 - Performance exercise: 3x/week moderate intensity (creates next-day cognitive boost you noted)
 - Timing: Morning (7 AM) or lunch (12 PM)--NOT evening (elevates cortisol, delays sleep)
@@ -157,26 +168,29 @@ Your performance profile shows strong cognitive capabilities being undermined by
 
 **Mental Performance Training**
 
-*Focus Enhancement*
+_Focus Enhancement_
+
 - Single-priority mornings: ONE major cognitive task before 11 AM, no exceptions
 - Context switch limitation: Maximum 3 major task switches per day (batch similar work)
 - Transition rituals: 2-minute reset between tasks (prevents cognitive residue bleeding into next task)
 - Priority setting: Write tomorrow's ONE priority before ending work today
 
-*Cognitive Resilience*
+_Cognitive Resilience_
+
 - Pre-commitment: Decide day's structure night before (reduces morning decision fatigue)
 - Energy awareness: Rate energy 1-10 at 9 AM, 1 PM, 5 PM. Match task difficulty to current rating.
 - Recovery integration: 10-minute afternoon reset (walk, breathe, or brief eyes-closed rest)
 - Cognitive reserve: Never schedule cognitively demanding work after 3 PM on days with morning intensity
 
-*Peak State Access*
+_Peak State Access_
+
 - Pre-work ritual: 5 min before important work--clear desk, close unneeded tabs, 3 deep breaths, state intention
 - Flow protection: First sign of flow, extend session if possible (flow is rare and valuable)
 - Distraction protocol: All notifications disabled during peak hours (8-11 AM minimum)
 
 **Systems and Environment Optimization**
 
-*Schedule Architecture*
+_Schedule Architecture_
 | Time Block | Energy Level | Optimal Use |
 |------------|--------------|-------------|
 | 8:00-11:00 AM | Peak (95%) | Creative/strategic work, major decisions (PROTECT THIS) |
@@ -185,13 +199,15 @@ Your performance profile shows strong cognitive capabilities being undermined by
 | 1:00-3:00 PM | Moderate-High (75%) | Project work, execution tasks |
 | 3:00-5:00 PM | Declining (60%) | Routine tasks, email, planning, low-stakes meetings |
 
-*Meeting Optimization*
+_Meeting Optimization_
+
 - Meeting-free mornings: Block 8-11 AM as unavailable for meetings (defend aggressively)
 - Meeting batching: All meetings 11 AM-12 PM and 1-3 PM (creates protected blocks)
 - Meeting buffer: 10 min buffer after every meeting for cognitive reset
 - Meeting audit: Weekly review--which meetings could be emails or async?
 
-*Environment Design*
+_Environment Design_
+
 - Morning workspace: All materials prepared night before, zero friction to start
 - Notification architecture: All off during 8-11 AM, batched check at 11 AM and 3 PM
 - Physical cues: Different position/location for deep work vs. communication work
@@ -199,19 +215,21 @@ Your performance profile shows strong cognitive capabilities being undermined by
 
 **Sustainable Performance Maintenance**
 
-*Weekly Rhythm*
+_Weekly Rhythm_
+
 - Monday: Planning + highest-leverage creative work
 - Tuesday-Thursday: Core performance days (protect mornings ruthlessly)
 - Friday: Lower intensity, weekly review, next-week preparation
 - Weekend: True recovery--exercise yes, work no (recovery enables next week's performance)
 
-*Recovery as Performance*
+_Recovery as Performance_
+
 - Daily: 10-min afternoon reset, evening wind-down ritual
 - Weekly: One longer restorative activity (nature, hobby, social without work discussion)
 - Monthly: One half-day completely disconnected from work thinking
 - Quarterly: Longer break (3+ days) for full restoration
 
-*Performance Metrics (Weekly Review)*
+_Performance Metrics (Weekly Review)_
 | Metric | Target | Why It Matters |
 |--------|--------|----------------|
 | Peak performance days | 4/5 workdays | Consistency indicator |

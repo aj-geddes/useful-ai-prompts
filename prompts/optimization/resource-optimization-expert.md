@@ -1,6 +1,7 @@
 # Resource Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-resource-optimization`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Optimizes allocation and utilization of resources (people, equipment, budget, sp
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Resources are overallocated or underutilized
 - Bottlenecks from resource constraints
 - Need to do more with existing resources
@@ -26,6 +28,7 @@ Optimizes allocation and utilization of resources (people, equipment, budget, sp
 - Equipment or space utilization is suboptimal
 
 **Anti-patterns (Don't Use For):**
+
 - Hiring decisions and headcount planning
 - Capital investment evaluation
 - Organizational design or restructuring
@@ -136,6 +139,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have 15 software engineers across 8 concurrent projects. There's constant firefighting on production issues, engineers are spread thin across 3-4 projects each, and delivery dates keep slipping. Want to reduce context switching and improve delivery predictability without adding headcount."
 
 ### Output
@@ -145,6 +149,7 @@ Avoid:
 **1. Utilization Assessment**
 
 **Current state analysis:**
+
 - Total capacity: 15 engineers
 - Active projects: 8 concurrent
 - Average allocation: 1.9 engineers per project (understaffed)
@@ -159,6 +164,7 @@ Avoid:
 | Firefighting/support | 5%+ | Visible, but likely underreported |
 
 **Root causes of inefficiency:**
+
 - Too many concurrent projects for team size (sustainable: 4-5 projects)
 - No dedicated support/maintenance allocation (firefighting disrupts everyone)
 - Projects understaffed causes longer timelines and more issues
@@ -166,6 +172,7 @@ Avoid:
 - No visibility into true allocation and availability
 
 **Impact of current state:**
+
 - Delivery predictability: ~50% (half of commitments missed)
 - Engineer satisfaction: Low (burnout risk)
 - Quality issues: Increasing (insufficient focus time)
@@ -178,11 +185,13 @@ Current: 8 projects with 1.9 engineers average
 Recommended: 5 projects with 3 engineers average (stable teams)
 
 **Project prioritization needed:**
+
 - Tier 1 (continue at full capacity): 3 projects
 - Tier 2 (reduced scope/pace): 2 projects
 - Tier 3 (pause or backlog): 3 projects
 
 Selection criteria for prioritization:
+
 1. Revenue/business impact
 2. Deadline criticality
 3. Strategic alignment
@@ -191,6 +200,7 @@ Selection criteria for prioritization:
 **Allocation Model:**
 
 **Proposed rules:**
+
 - Maximum 2 projects per engineer
 - Primary project: 80% of time
 - Secondary project: 20% maximum
@@ -198,20 +208,21 @@ Selection criteria for prioritization:
 
 **Proposed allocation:**
 
-| Team | Assignment | Engineers | Focus |
-|------|------------|-----------|-------|
-| Project A (Tier 1) | Dedicated | 3 | Critical deadline |
-| Project B (Tier 1) | Dedicated | 3 | Strategic priority |
-| Project C (Tier 1) | Dedicated | 3 | Revenue impact |
-| Project D (Tier 2) | Partial | 2 | Reduced scope |
-| Project E (Tier 2) | Partial | 2 | Slower timeline |
-| Support Rotation | Weekly | 1/week | Firefighting buffer |
-| Slack/Buffer | Available | 1 | Flexibility |
-| **Total** | | **15** | |
+| Team               | Assignment | Engineers | Focus               |
+| ------------------ | ---------- | --------- | ------------------- |
+| Project A (Tier 1) | Dedicated  | 3         | Critical deadline   |
+| Project B (Tier 1) | Dedicated  | 3         | Strategic priority  |
+| Project C (Tier 1) | Dedicated  | 3         | Revenue impact      |
+| Project D (Tier 2) | Partial    | 2         | Reduced scope       |
+| Project E (Tier 2) | Partial    | 2         | Slower timeline     |
+| Support Rotation   | Weekly     | 1/week    | Firefighting buffer |
+| Slack/Buffer       | Available  | 1         | Flexibility         |
+| **Total**          |            | **15**    |                     |
 
 Projects F, G, H: Pause or transition to maintenance mode
 
 **Benefits of reallocation:**
+
 - Context switching: 3-4 projects to 1-2 projects per person (50-60% reduction)
 - Firefighting isolation: Production issues don't derail project work
 - Team stability: Same team throughout project lifecycle
@@ -220,30 +231,35 @@ Projects F, G, H: Pause or transition to maintenance mode
 **3. Implementation Plan**
 
 **Week 1: Assessment and Alignment**
+
 - Document current allocations by engineer and project
 - Confirm project priorities with leadership
 - Identify which projects can pause (stakeholder conversations)
 - Get executive approval for reallocation approach
 
 **Week 2: Stakeholder Communication**
+
 - Present portfolio rationalization to project sponsors
 - Set clear expectations on paused projects
 - Communicate new allocation model to engineering team
 - Address concerns and questions
 
 **Week 3-4: Transition**
+
 - Complete current sprints/milestones before transitions
 - Knowledge transfer for projects changing teams
 - Gradual ramp-down on paused projects
 - Establish support rotation schedule
 
 **Month 2: Stabilization**
+
 - Monitor new allocation effectiveness
 - Address transition issues promptly
 - Gather feedback from team and stakeholders
 - Fine-tune allocations based on actual utilization
 
 **Transition principles:**
+
 - No immediate context switches (finish current sprint)
 - 1-week overlap for knowledge transfer
 - Explicit permission to decline new requests during transition
@@ -252,6 +268,7 @@ Projects F, G, H: Pause or transition to maintenance mode
 **4. Governance Framework**
 
 **Resource Request Process:**
+
 1. New project request submitted with scope and resource estimate
 2. Portfolio review: Does it fit within current capacity?
 3. Tradeoff decision: What gets displaced if approved?
@@ -259,12 +276,14 @@ Projects F, G, H: Pause or transition to maintenance mode
 5. Declined requests go to backlog for future capacity
 
 **Allocation Rules (enforced):**
+
 - No engineer on more than 2 projects (no exceptions)
 - One project must be primary (80%+ allocation)
 - Support rotation is mandatory (no opt-out)
 - 10% capacity buffer maintained for unexpected needs
 
 **Weekly Resource Review (30 minutes):**
+
 - Review utilization dashboard by engineer
 - Identify allocation conflicts or overload
 - Address firefighting spikes
@@ -280,18 +299,21 @@ Projects F, G, H: Pause or transition to maintenance mode
 | Engineer utilization | 75-85% | >90% or <65% |
 
 **Escalation Triggers:**
+
 - Any engineer >90% utilization for 2+ weeks
 - Firefighting exceeds 20% in any week
 - New project request without capacity plan
 - Delivery at risk due to resourcing
 
 **Continuous Improvement:**
+
 - Monthly retrospective on allocation effectiveness
 - Quarterly review of project portfolio
 - Engineer feedback on workload sustainability
 - Adjust allocation rules based on learnings
 
 **Success Indicators (3-month horizon):**
+
 - Delivery predictability: 50% to 80%+
 - Context switching: Reduced by 50%
 - Engineer satisfaction: Measurable improvement in survey

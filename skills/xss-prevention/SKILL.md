@@ -24,11 +24,11 @@ Implement comprehensive Cross-Site Scripting (XSS) prevention using input saniti
 
 ```javascript
 // xss-prevention.js
-const createDOMPurify = require('dompurify');
-const { JSDOM } = require('jsdom');
-const he = require('he');
+const createDOMPurify = require("dompurify");
+const { JSDOM } = require("jsdom");
+const he = require("he");
 
-const window = new JSDOM('').window;
+const window = new JSDOM("").window;
 const DOMPurify = createDOMPurify(window);
 
 class XSSPrevention {
@@ -38,7 +38,7 @@ class XSSPrevention {
   static encodeHTML(str) {
     return he.encode(str, {
       useNamedReferences: true,
-      encodeEverything: false
+      encodeEverything: false,
     });
   }
 
@@ -48,16 +48,27 @@ class XSSPrevention {
   static sanitizeHTML(dirty) {
     const config = {
       ALLOWED_TAGS: [
-        'p', 'br', 'strong', 'em', 'u', 'h1', 'h2', 'h3',
-        'ul', 'ol', 'li', 'a', 'img', 'blockquote', 'code'
+        "p",
+        "br",
+        "strong",
+        "em",
+        "u",
+        "h1",
+        "h2",
+        "h3",
+        "ul",
+        "ol",
+        "li",
+        "a",
+        "img",
+        "blockquote",
+        "code",
       ],
-      ALLOWED_ATTR: [
-        'href', 'src', 'alt', 'title', 'class'
-      ],
+      ALLOWED_ATTR: ["href", "src", "alt", "title", "class"],
       ALLOWED_URI_REGEXP: /^(?:https?|mailto):/i,
       KEEP_CONTENT: true,
       RETURN_DOM: false,
-      RETURN_DOM_FRAGMENT: false
+      RETURN_DOM_FRAGMENT: false,
     };
 
     return DOMPurify.sanitize(dirty, config);
@@ -68,9 +79,9 @@ class XSSPrevention {
    */
   static sanitizeStrict(dirty) {
     return DOMPurify.sanitize(dirty, {
-      ALLOWED_TAGS: ['b', 'i', 'em', 'strong'],
+      ALLOWED_TAGS: ["b", "i", "em", "strong"],
       ALLOWED_ATTR: [],
-      KEEP_CONTENT: true
+      KEEP_CONTENT: true,
     });
   }
 
@@ -80,11 +91,11 @@ class XSSPrevention {
   static encodeForJS(str) {
     return str.replace(/[<>"'&]/g, (char) => {
       const escape = {
-        '<': '\\x3C',
-        '>': '\\x3E',
-        '"': '\\x22',
-        "'": '\\x27',
-        '&': '\\x26'
+        "<": "\\x3C",
+        ">": "\\x3E",
+        '"': "\\x22",
+        "'": "\\x27",
+        "&": "\\x26",
       };
       return escape[char];
     });
@@ -102,12 +113,12 @@ class XSSPrevention {
    */
   static encodeAttribute(str) {
     return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#x27;')
-      .replace(/\//g, '&#x2F;');
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#x27;")
+      .replace(/\//g, "&#x2F;");
   }
 
   /**
@@ -118,13 +129,13 @@ class XSSPrevention {
       const parsed = new URL(url);
 
       // Only allow safe protocols
-      if (!['http:', 'https:', 'mailto:'].includes(parsed.protocol)) {
-        return '';
+      if (!["http:", "https:", "mailto:"].includes(parsed.protocol)) {
+        return "";
       }
 
       return parsed.href;
     } catch {
-      return '';
+      return "";
     }
   }
 
@@ -132,7 +143,7 @@ class XSSPrevention {
    * Strip all HTML tags
    */
   static stripHTML(str) {
-    return str.replace(/<[^>]*>/g, '');
+    return str.replace(/<[^>]*>/g, "");
   }
 
   /**
@@ -140,7 +151,7 @@ class XSSPrevention {
    */
   static escapeForReact(str) {
     return {
-      __html: DOMPurify.sanitize(str)
+      __html: DOMPurify.sanitize(str),
     };
   }
 }
@@ -164,9 +175,9 @@ function sanitizeObject(obj) {
   const sanitized = {};
 
   for (const [key, value] of Object.entries(obj)) {
-    if (typeof value === 'string') {
+    if (typeof value === "string") {
       sanitized[key] = XSSPrevention.stripHTML(value);
-    } else if (typeof value === 'object' && value !== null) {
+    } else if (typeof value === "object" && value !== null) {
       sanitized[key] = sanitizeObject(value);
     } else {
       sanitized[key] = value;
@@ -177,13 +188,13 @@ function sanitizeObject(obj) {
 }
 
 // Express example
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.use(express.json());
 app.use(xssProtection);
 
-app.post('/api/comments', (req, res) => {
+app.post("/api/comments", (req, res) => {
   const { comment } = req.body;
 
   // Additional sanitization for rich content
@@ -352,8 +363,8 @@ def sanitize_html_filter(value):
 
 ```javascript
 // XSSSafeComponent.jsx
-import React from 'react';
-import DOMPurify from 'dompurify';
+import React from "react";
+import DOMPurify from "dompurify";
 
 // Safe text rendering (React automatically escapes)
 function SafeText({ text }) {
@@ -363,15 +374,11 @@ function SafeText({ text }) {
 // Sanitized HTML rendering
 function SafeHTML({ html }) {
   const sanitized = DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: ['p', 'br', 'strong', 'em', 'u', 'a'],
-    ALLOWED_ATTR: ['href']
+    ALLOWED_TAGS: ["p", "br", "strong", "em", "u", "a"],
+    ALLOWED_ATTR: ["href"],
   });
 
-  return (
-    <div
-      dangerouslySetInnerHTML={{ __html: sanitized }}
-    />
-  );
+  return <div dangerouslySetInnerHTML={{ __html: sanitized }} />;
 }
 
 // Safe URL attribute
@@ -379,11 +386,7 @@ function SafeLink({ href, children }) {
   const safeHref = sanitizeURL(href);
 
   return (
-    <a
-      href={safeHref}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a href={safeHref} rel="noopener noreferrer" target="_blank">
       {children}
     </a>
   );
@@ -393,24 +396,24 @@ function sanitizeURL(url) {
   try {
     const parsed = new URL(url);
 
-    if (!['http:', 'https:'].includes(parsed.protocol)) {
-      return '';
+    if (!["http:", "https:"].includes(parsed.protocol)) {
+      return "";
     }
 
     return parsed.href;
   } catch {
-    return '';
+    return "";
   }
 }
 
 // Input sanitization hook
-function useSanitizedInput(initialValue = '') {
+function useSanitizedInput(initialValue = "") {
   const [value, setValue] = React.useState(initialValue);
 
   const handleChange = (e) => {
     const sanitized = DOMPurify.sanitize(e.target.value, {
       ALLOWED_TAGS: [],
-      KEEP_CONTENT: true
+      KEEP_CONTENT: true,
     });
 
     setValue(sanitized);
@@ -426,10 +429,10 @@ function CommentForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch('/api/comments', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ comment })
+    await fetch("/api/comments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ comment }),
     });
   };
 
@@ -452,46 +455,48 @@ export { SafeText, SafeHTML, SafeLink, useSanitizedInput };
 
 ```javascript
 // csp-config.js
-const helmet = require('helmet');
+const helmet = require("helmet");
 
 function setupCSP(app) {
-  app.use(helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["'self'"],
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
 
-      // Only allow scripts from trusted sources
-      scriptSrc: [
-        "'self'",
-        "'nonce-RANDOM_NONCE'", // Use dynamic nonces
-        "https://cdn.example.com"
-      ],
+        // Only allow scripts from trusted sources
+        scriptSrc: [
+          "'self'",
+          "'nonce-RANDOM_NONCE'", // Use dynamic nonces
+          "https://cdn.example.com",
+        ],
 
-      // Styles
-      styleSrc: [
-        "'self'",
-        "'nonce-RANDOM_NONCE'",
-        "https://fonts.googleapis.com"
-      ],
+        // Styles
+        styleSrc: [
+          "'self'",
+          "'nonce-RANDOM_NONCE'",
+          "https://fonts.googleapis.com",
+        ],
 
-      // No inline styles/scripts
-      objectSrc: ["'none'"],
-      baseUri: ["'self'"],
+        // No inline styles/scripts
+        objectSrc: ["'none'"],
+        baseUri: ["'self'"],
 
-      // Report violations
-      reportUri: ['/api/csp-violations']
-    }
-  }));
+        // Report violations
+        reportUri: ["/api/csp-violations"],
+      },
+    }),
+  );
 
   // CSP violation reporter
-  app.post('/api/csp-violations', (req, res) => {
-    console.error('CSP Violation:', req.body);
+  app.post("/api/csp-violations", (req, res) => {
+    console.error("CSP Violation:", req.body);
     res.status(204).end();
   });
 }
 
 // Generate nonce for inline scripts
 function generateNonce() {
-  return require('crypto').randomBytes(16).toString('base64');
+  return require("crypto").randomBytes(16).toString("base64");
 }
 
 // Express middleware to add nonce
@@ -506,6 +511,7 @@ app.use((req, res, next) => {
 ## Best Practices
 
 ### ✅ DO
+
 - Encode output by default
 - Use templating engines
 - Implement CSP headers
@@ -516,6 +522,7 @@ app.use((req, res, next) => {
 - Use secure frameworks
 
 ### ❌ DON'T
+
 - Trust user input
 - Use innerHTML directly
 - Skip output encoding

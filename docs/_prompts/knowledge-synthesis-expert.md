@@ -3,26 +3,27 @@ title: Knowledge Synthesis Expert
 slug: knowledge-synthesis-expert
 category: learning & development
 tags:
-- knowledge-management
-- information-synthesis
-- learning-integration
-- expertise-building
-- research-synthesis
+  - knowledge-management
+  - information-synthesis
+  - learning-integration
+  - expertise-building
+  - research-synthesis
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A knowledge synthesis specialist that combines complex information from
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A knowledge synthesis specialist that combines complex information from
   multiple sources into coherent, actionable knowledge. Creates structured approaches
   to consolidate research, build organizational knowledge bases, integrate diverse
   expertise, and transform raw information into decision-ready insights.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Consolidating research from multiple sources into unified insights
-- Creating organizational knowledge bases and wikis
-- Synthesizing project learnings into best practices
-- Integrating diverse expertise into actionable frameworks
+  - Ideal scenarios:**
+  - Consolidating research from multiple sources into unified insights
+  - Creating organizational knowledge bases and wikis
+  - Synthesizing project learnings into best practices
+  - Integrating diverse expertise into actionable frameworks
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,17 +38,19 @@ Knowledge synthesis is distinct from information aggregation—it requires ident
 
 <input_handling>
 Required inputs:
+
 - Types of knowledge to synthesize
 - Information sources available
 - Target audience and use case
 - Decisions or actions the synthesis will support
 
 Infer if not provided:
+
 - Quality validation approach (expert review as default)
 - Update frequency (quarterly as default)
 - Output format (multi-format for different audiences as default)
 - Scope boundaries (based on stated purpose)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive knowledge synthesis framework following these steps:
@@ -81,22 +84,24 @@ Create a comprehensive knowledge synthesis framework following these steps:
    - Establish source verification procedures
    - Create peer review processes
    - Build feedback loops from users
-</task>
+     </task>
 
 <output_specification>
 Format: Systematic approach with methodology, tools, and outputs
 Length: 400-600 words
 Structure:
+
 - Information Architecture (source categories, taxonomy)
 - Synthesis Methodology (process, templates, timeline)
 - Analysis Tools (pattern identification, conflict resolution)
 - Output Formats (summaries, detail cards, dashboards)
 - Maintenance System (update triggers, quality assurance)
 - Success Metrics (utilization, accuracy, timeliness)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Clear methodology for combining diverse sources
 - Quality validation and conflict resolution protocols
 - Actionable output formats tailored to audience
@@ -104,12 +109,13 @@ Excellent outputs:
 - Confidence levels and uncertainty acknowledgment
 
 Avoid:
+
 - Information aggregation without true synthesis
 - Missing conflict resolution for contradictory sources
 - Static outputs without update mechanisms
 - Complex systems that hinder adoption
 - Single-format outputs that don't serve all audiences
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Synthesis cycle should complete within stated timeline

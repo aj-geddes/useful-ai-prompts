@@ -81,7 +81,7 @@ metadata:
   name: postgres-backup
   namespace: databases
 spec:
-  schedule: "0 2 * * *"  # 2 AM daily
+  schedule: "0 2 * * *" # 2 AM daily
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
   jobTemplate:
@@ -444,6 +444,7 @@ data:
 ## Best Practices
 
 ### ✅ DO
+
 - Perform regular backup testing
 - Use multiple backup locations
 - Implement automated backups
@@ -454,6 +455,7 @@ data:
 - Encrypt backups at rest and in transit
 
 ### ❌ DON'T
+
 - Rely on a single backup location
 - Ignore backup failures
 - Store backups with production data

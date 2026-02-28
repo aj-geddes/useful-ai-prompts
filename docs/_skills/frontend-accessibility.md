@@ -1,12 +1,13 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Implement WCAG compliance using semantic HTML, ARIA, keyboard navigation,
+date: "2025-01-01"
+description:
+  Implement WCAG compliance using semantic HTML, ARIA, keyboard navigation,
   and screen reader support. Use when building inclusive applications for all users.
 layout: skill
 slug: frontend-accessibility
 tags:
-- development
+  - development
 title: frontend-accessibility
 ---
 

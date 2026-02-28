@@ -1,6 +1,7 @@
 # Scope Change Analyzer
 
 ## Metadata
+
 - **ID**: `project-management-scope-change-analyzer`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps project managers rigorously evaluate change requests by analyzing the impact on cost, schedule, scope, quality, and risk before making an approval recommendation. It transforms ad hoc scope conversations into structured change control decisions that protect project baselines and document the rationale for all approved or rejected changes.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A stakeholder requests a new feature, expanded deliverable, or changed requirement mid-project
 - The team has identified that existing work differs from the original scope and needs formal re-baselining
 - A change control board meeting is approaching and each request needs a recommendation memo
 
 **Anti-patterns (Don't Use For):**
+
 - Routine bug fixes or corrections to work that never met the agreed definition of done
 - Strategic portfolio or program-level investment decisions
 - Contract renegotiation requiring legal or procurement expertise
@@ -67,10 +72,13 @@ Avoid: Advocating for or against the change based on who requested it; omitting 
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're building a customer self-service portal. We're in month 4 of a 9-month project. The marketing team is requesting we add a referral tracking feature — users could generate referral codes and track who signed up using their code. This wasn't in the original scope. The CMO says it's critical for Q3 growth. Our budget is $800K and we've spent $360K. Current go-live is September 30."
 
 ### Output
+
 **Change Request Analysis — CR-007: Referral Tracking Feature**
 Project: Customer Self-Service Portal | Date: 2026-02-28 | Analyst: [PM Name]
 
@@ -86,12 +94,12 @@ The Marketing team requests addition of a user referral tracking capability to t
 
 **Impact Assessment**
 
-| Dimension | Impact | Estimate | Confidence | Basis |
-|-----------|--------|----------|------------|-------|
-| Schedule | Delayed | +5-7 weeks | Medium | Referral engine, code generation, dashboard, and reporting = ~350 additional dev hours at current team velocity |
-| Budget | Over baseline | +$95K–$120K | Medium | 350 dev hours + QA + infrastructure + referral data storage; excludes ongoing ops costs |
-| Quality | Moderate risk | New attack surface from referral code exposure | Medium | Referral codes require anti-abuse controls not currently designed; introduces fraud risk |
-| Risk | Increases | Compression pressure on existing deliverables | High | Adding scope in month 4 of 9 shifts team focus; existing workstreams may slip |
+| Dimension | Impact        | Estimate                                       | Confidence | Basis                                                                                                           |
+| --------- | ------------- | ---------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
+| Schedule  | Delayed       | +5-7 weeks                                     | Medium     | Referral engine, code generation, dashboard, and reporting = ~350 additional dev hours at current team velocity |
+| Budget    | Over baseline | +$95K–$120K                                    | Medium     | 350 dev hours + QA + infrastructure + referral data storage; excludes ongoing ops costs                         |
+| Quality   | Moderate risk | New attack surface from referral code exposure | Medium     | Referral codes require anti-abuse controls not currently designed; introduces fraud risk                        |
+| Risk      | Increases     | Compression pressure on existing deliverables  | High       | Adding scope in month 4 of 9 shifts team focus; existing workstreams may slip                                   |
 
 **Revised Go-Live if Approved**: November 14 – November 28, 2026 (6-8 week delay from September 30)
 **Revised Budget if Approved**: $895K – $920K (12-15% over $800K baseline)
@@ -99,6 +107,7 @@ The Marketing team requests addition of a user referral tracking capability to t
 ---
 
 **Downstream Effects**
+
 - The authentication team must extend the user account schema for referral code storage — requires a schema migration affecting 3 other workstreams
 - QA test scope increases by approximately 25%; UAT period must expand by 2 weeks
 - The referral dashboard requires a new reporting data pipeline; if the data team is not available, this extends the timeline further
@@ -135,9 +144,11 @@ Approve the referral code generation and tracking mechanics only. Defer the user
 ---
 
 ## Variations
+
 - **Batch Change Review**: Simultaneous analysis of multiple pending change requests for a change board meeting
 - **Emergency Change Fast-Track**: Abbreviated analysis for urgent changes requiring same-day decision
 
 ## Related Prompts
+
 - [Risk Register Manager](risk-register-manager.md) - Log change-introduced risks into the project risk register
 - [Project Status Reporter](project-status-reporter.md) - Reflect approved changes in updated baseline status reporting

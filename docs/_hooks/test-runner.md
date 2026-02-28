@@ -1,15 +1,16 @@
 ---
-date: '2025-01-01'
-description: A PreToolUse hook that automatically runs tests before commits to ensure
+date: "2025-01-01"
+description:
+  A PreToolUse hook that automatically runs tests before commits to ensure
   code quality and prevent breaking changes.
 event_type: PreToolUse
 features:
-- Jest support
-- pytest support
-- RSpec support
-- Go test support
-- Auto framework detection
-- Failure prevention
+  - Jest support
+  - pytest support
+  - RSpec support
+  - Go test support
+  - Auto framework detection
+  - Failure prevention
 icon: fa-check-circle
 icon_class: testing
 layout: hook
@@ -166,6 +167,7 @@ Next steps:
 ## Supported Test Frameworks
 
 ### JavaScript/TypeScript
+
 - Jest
 - Mocha
 - Vitest
@@ -174,27 +176,33 @@ Next steps:
 - Tape
 
 ### Python
+
 - pytest
 - unittest
 - nose2
 - doctest
 
 ### Ruby
+
 - RSpec
 - Minitest
 - Test::Unit
 
 ### Go
+
 - go test
 
 ### Rust
+
 - cargo test
 
 ### Java
+
 - JUnit
 - TestNG
 
 ### PHP
+
 - PHPUnit
 - Codeception
 
@@ -331,12 +339,12 @@ go test ./pkg/auth/...
 
 ```javascript
 // Good - focused, fast
-test('validates email format', () => {
-  expect(isValidEmail('user@example.com')).toBe(true);
+test("validates email format", () => {
+  expect(isValidEmail("user@example.com")).toBe(true);
 });
 
 // Bad - too broad, slow
-test('complete user registration flow', () => {
+test("complete user registration flow", () => {
   // Tests 10 different things...
 });
 ```
@@ -352,7 +360,7 @@ test('complete user registration flow', () => {
 
 ```javascript
 // Use factories or fixtures
-const user = createTestUser({ role: 'admin' });
+const user = createTestUser({ role: "admin" });
 
 // Clean up after tests
 afterEach(() => {
@@ -418,6 +426,7 @@ jobs:
 ### Tests Pass Locally But Fail in Hook
 
 Check:
+
 - Environment variables are set
 - Dependencies are installed
 - Database is initialized
@@ -426,6 +435,7 @@ Check:
 ### Hook Takes Too Long
 
 Optimize:
+
 - Enable test caching
 - Use `TEST_SCOPE=changed`
 - Run tests in parallel
@@ -434,6 +444,7 @@ Optimize:
 ### False Failures
 
 If tests are flaky:
+
 - Fix non-deterministic tests
 - Add proper teardown
 - Increase timeouts for async operations
@@ -442,6 +453,7 @@ If tests are flaky:
 ### Hook Not Running
 
 Verify:
+
 - Script is executable: `chmod +x hook.sh`
 - Path in settings.json is correct
 - Pattern matches: "^Bash$"

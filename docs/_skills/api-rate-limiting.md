@@ -1,14 +1,15 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Implement API rate limiting strategies using token bucket, sliding window,
+date: "2025-01-01"
+description:
+  Implement API rate limiting strategies using token bucket, sliding window,
   and fixed window algorithms. Use when protecting APIs from abuse, managing traffic,
   or implementing tiered rate limits.
 layout: skill
 slug: api-rate-limiting
 tags:
-- go
-- api
+  - go
+  - api
 title: api-rate-limiting
 ---
 
@@ -67,7 +68,7 @@ class TokenBucket {
 }
 
 // Express middleware
-const express = require('express');
+const express = require("express");
 const app = express();
 
 const rateLimiters = new Map();
@@ -83,20 +84,20 @@ const tokenBucketRateLimit = (capacity, refillRate) => {
     const limiter = rateLimiters.get(key);
 
     if (limiter.consume(1)) {
-      res.setHeader('X-RateLimit-Limit', capacity);
-      res.setHeader('X-RateLimit-Remaining', limiter.available());
+      res.setHeader("X-RateLimit-Limit", capacity);
+      res.setHeader("X-RateLimit-Remaining", limiter.available());
       next();
     } else {
       res.status(429).json({
-        error: 'Rate limit exceeded',
-        retryAfter: Math.ceil(1 / limiter.refillRate)
+        error: "Rate limit exceeded",
+        retryAfter: Math.ceil(1 / limiter.refillRate),
       });
     }
   };
 };
 
-app.get('/api/data', tokenBucketRateLimit(100, 10), (req, res) => {
-  res.json({ data: 'api response' });
+app.get("/api/data", tokenBucketRateLimit(100, 10), (req, res) => {
+  res.json({ data: "api response" });
 });
 ```
 
@@ -115,7 +116,7 @@ class SlidingWindowLimiter {
     const windowStart = now - this.windowSize;
 
     // Remove old requests outside window
-    this.requests = this.requests.filter(time => time > windowStart);
+    this.requests = this.requests.filter((time) => time > windowStart);
 
     if (this.requests.length < this.maxRequests) {
       this.requests.push(now);
@@ -127,7 +128,7 @@ class SlidingWindowLimiter {
   remaining() {
     const now = Date.now();
     const windowStart = now - this.windowSize;
-    this.requests = this.requests.filter(time => time > windowStart);
+    this.requests = this.requests.filter((time) => time > windowStart);
     return Math.max(0, this.maxRequests - this.requests.length);
   }
 }
@@ -145,16 +146,16 @@ const slidingWindowRateLimit = (maxRequests, windowSeconds) => {
     const limiter = limiters.get(key);
 
     if (limiter.isAllowed()) {
-      res.setHeader('X-RateLimit-Limit', maxRequests);
-      res.setHeader('X-RateLimit-Remaining', limiter.remaining());
+      res.setHeader("X-RateLimit-Limit", maxRequests);
+      res.setHeader("X-RateLimit-Remaining", limiter.remaining());
       next();
     } else {
-      res.status(429).json({ error: 'Rate limit exceeded' });
+      res.status(429).json({ error: "Rate limit exceeded" });
     }
   };
 };
 
-app.get('/api/search', slidingWindowRateLimit(30, 60), (req, res) => {
+app.get("/api/search", slidingWindowRateLimit(30, 60), (req, res) => {
   res.json({ results: [] });
 });
 ```
@@ -162,7 +163,7 @@ app.get('/api/search', slidingWindowRateLimit(30, 60), (req, res) => {
 ### 3. **Redis-Based Rate Limiting**
 
 ```javascript
-const redis = require('redis');
+const redis = require("redis");
 const client = redis.createClient();
 
 // Sliding window with Redis
@@ -170,7 +171,7 @@ const redisRateLimit = (maxRequests, windowSeconds) => {
   return async (req, res, next) => {
     const key = `ratelimit:${req.user?.id || req.ip}`;
     const now = Date.now();
-    const windowStart = now - (windowSeconds * 1000);
+    const windowStart = now - windowSeconds * 1000;
 
     try {
       // Remove old requests
@@ -185,29 +186,29 @@ const redisRateLimit = (maxRequests, windowSeconds) => {
         // Set expiration
         await client.expire(key, windowSeconds);
 
-        res.setHeader('X-RateLimit-Limit', maxRequests);
-        res.setHeader('X-RateLimit-Remaining', maxRequests - count - 1);
+        res.setHeader("X-RateLimit-Limit", maxRequests);
+        res.setHeader("X-RateLimit-Remaining", maxRequests - count - 1);
         next();
       } else {
         const oldestRequest = await client.zrange(key, 0, 0);
-        const resetTime = parseInt(oldestRequest[0]) + (windowSeconds * 1000);
+        const resetTime = parseInt(oldestRequest[0]) + windowSeconds * 1000;
         const retryAfter = Math.ceil((resetTime - now) / 1000);
 
-        res.set('Retry-After', retryAfter);
+        res.set("Retry-After", retryAfter);
         res.status(429).json({
-          error: 'Rate limit exceeded',
-          retryAfter
+          error: "Rate limit exceeded",
+          retryAfter,
         });
       }
     } catch (error) {
-      console.error('Rate limit error:', error);
+      console.error("Rate limit error:", error);
       next(); // Allow request if Redis fails
     }
   };
 };
 
-app.get('/api/expensive', redisRateLimit(10, 60), (req, res) => {
-  res.json({ result: 'expensive operation' });
+app.get("/api/expensive", redisRateLimit(10, 60), (req, res) => {
+  res.json({ result: "expensive operation" });
 });
 ```
 
@@ -215,14 +216,14 @@ app.get('/api/expensive', redisRateLimit(10, 60), (req, res) => {
 
 ```javascript
 const RATE_LIMITS = {
-  free: { requests: 100, window: 3600 },      // 100 per hour
-  pro: { requests: 10000, window: 3600 },     // 10,000 per hour
-  enterprise: { requests: null, window: null } // Unlimited
+  free: { requests: 100, window: 3600 }, // 100 per hour
+  pro: { requests: 10000, window: 3600 }, // 10,000 per hour
+  enterprise: { requests: null, window: null }, // Unlimited
 };
 
 const tieredRateLimit = async (req, res, next) => {
   const user = req.user;
-  const plan = user?.plan || 'free';
+  const plan = user?.plan || "free";
   const limits = RATE_LIMITS[plan];
 
   if (!limits.requests) {
@@ -231,7 +232,7 @@ const tieredRateLimit = async (req, res, next) => {
 
   const key = `ratelimit:${user.id}`;
   const now = Date.now();
-  const windowStart = now - (limits.window * 1000);
+  const windowStart = now - limits.window * 1000;
 
   try {
     await client.zremrangebyscore(key, 0, windowStart);
@@ -241,15 +242,15 @@ const tieredRateLimit = async (req, res, next) => {
       await client.zadd(key, now, `${now}-${Math.random()}`);
       await client.expire(key, limits.window);
 
-      res.setHeader('X-RateLimit-Limit', limits.requests);
-      res.setHeader('X-RateLimit-Remaining', limits.requests - count - 1);
-      res.setHeader('X-Plan', plan);
+      res.setHeader("X-RateLimit-Limit", limits.requests);
+      res.setHeader("X-RateLimit-Remaining", limits.requests - count - 1);
+      res.setHeader("X-Plan", plan);
       next();
     } else {
       res.status(429).json({
-        error: 'Rate limit exceeded',
+        error: "Rate limit exceeded",
         plan,
-        upgradeUrl: '/plans'
+        upgradeUrl: "/plans",
       });
     }
   } catch (error) {
@@ -332,6 +333,7 @@ res.setHeader('Retry-After', secondsToWait);              // How long to wait
 ## Best Practices
 
 ### ✅ DO
+
 - Include rate limit headers in responses
 - Use Redis for distributed rate limiting
 - Implement tiered limits for different user plans
@@ -342,6 +344,7 @@ res.setHeader('Retry-After', secondsToWait);              // How long to wait
 - Test under high load
 
 ### ❌ DON'T
+
 - Use in-memory storage in production
 - Set limits too restrictively
 - Forget to include Retry-After header
@@ -357,12 +360,12 @@ res.setHeader('Retry-After', secondsToWait);              // How long to wait
 const metrics = {
   totalRequests: 0,
   limitedRequests: 0,
-  byUser: new Map()
+  byUser: new Map(),
 };
 
 app.use((req, res, next) => {
   metrics.totalRequests++;
-  res.on('finish', () => {
+  res.on("finish", () => {
     if (res.statusCode === 429) {
       metrics.limitedRequests++;
     }
@@ -370,11 +373,14 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/metrics/rate-limit', (req, res) => {
+app.get("/metrics/rate-limit", (req, res) => {
   res.json({
     totalRequests: metrics.totalRequests,
     limitedRequests: metrics.limitedRequests,
-    percentage: (metrics.limitedRequests / metrics.totalRequests * 100).toFixed(2)
+    percentage: (
+      (metrics.limitedRequests / metrics.totalRequests) *
+      100
+    ).toFixed(2),
   });
 });
 ```

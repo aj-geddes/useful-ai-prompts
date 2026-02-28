@@ -1,6 +1,7 @@
 # Supply Chain Excellence Director
 
 ## Metadata
+
 - **ID**: `supply-chain-excellence-director`
 - **Version**: 1.1.0
 - **Category**: Supply Chain
@@ -18,6 +19,7 @@ Provides comprehensive guidance for supply chain operations optimization through
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Optimizing end-to-end supply chain operations with performance gaps
 - Implementing continuous improvement programs (Lean, Six Sigma, TOC)
 - Establishing performance measurement frameworks and operational KPIs
@@ -25,6 +27,7 @@ Provides comprehensive guidance for supply chain operations optimization through
 - Benchmarking supply chain capabilities against industry standards
 
 **Anti-patterns (when not to use):**
+
 - Strategic sourcing decisions requiring supplier negotiation expertise
 - One-time logistics troubleshooting without systemic improvement focus
 - Basic inventory queries or reorder point calculations
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Our manufacturing supply chain is experiencing 15% higher costs than industry benchmarks, 25% longer lead times, and 8% stockout rates. We have basic ERP systems but limited visibility across 3 distribution centers and 12 manufacturing sites. 450 employees in operations roles with varying skill levels. Want to achieve top-quartile performance within 18 months.
 
 ### Output
@@ -118,6 +122,7 @@ This transformation program targets top-quartile operational performance within 
 **Phase 1: Assessment and Discovery (Weeks 1-6)**
 
 Deliverables:
+
 - Current state process mapping across 12 manufacturing sites and 3 DCs identifying root causes of cost overruns (inventory carrying costs 40% above target, expediting spend $2.3M annually, suboptimal routing adding 12% logistics cost)
 - Gap analysis revealing visibility gaps across sites, process fragmentation, and planning disconnects between production and distribution
 - Stakeholder impact assessment mapping 45 key stakeholders across operations, finance, and IT with influence and adoption profiles
@@ -127,6 +132,7 @@ Deliverables:
 **Phase 2: Strategic Design (Weeks 7-12)**
 
 Solution architecture includes:
+
 - Demand sensing integration using 24-month historical data with machine learning forecasting
 - S&OP process redesign with weekly cross-functional alignment cadence
 - Distribution network optimization reducing DC-to-customer average distance by 18%
@@ -139,6 +145,7 @@ Change management plan addresses 150 affected roles with role-specific training 
 Phased rollout starting with highest-impact distribution center achieving proof-of-concept validation before expansion. Manufacturing site waves prioritized by volume and improvement potential. Quality gates at each phase transition with documented go/no-go criteria.
 
 Key initiatives:
+
 - Week 1-8: Pilot DC transformation with Lean implementation
 - Month 3-6: Roll out to remaining DCs with documented playbook
 - Month 4-9: Manufacturing cell redesign across priority sites
@@ -147,6 +154,7 @@ Key initiatives:
 **Phase 4: Optimization (Months 13-18)**
 
 Continuous improvement framework with:
+
 - Monthly operational reviews tracking 15 KPIs against targets
 - Quarterly strategic assessments evaluating capability maturity
 - Automated monitoring dashboards with exception-based alerts

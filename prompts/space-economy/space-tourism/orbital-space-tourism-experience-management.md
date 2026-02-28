@@ -1,6 +1,7 @@
 # Orbital Space Tourism Experience Management
 
 ## Metadata
+
 - **ID**: `space-tourism-experience`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Tourism
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Manage orbital space tourism operations combining human spaceflight safety with luxury hospitality excellence. Delivers transformative space experiences for high-net-worth individuals with absolute safety priority while creating memorable journeys that justify premium pricing and drive referrals.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning orbital tourism customer experiences end-to-end
 - Developing space tourist training and preparation programs
 - Designing luxury space hospitality services and amenities
@@ -23,6 +27,7 @@ Manage orbital space tourism operations combining human spaceflight safety with 
 - Building space tourism brand and referral programs
 
 **Anti-Patterns (When NOT to Use):**
+
 - Suborbital flight experiences (different profile)
 - Cargo-only missions
 - Professional astronaut training programs
@@ -114,24 +119,27 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're launching orbital space tourism - 3-day missions for ultra-high-net-worth individuals. Need complete experience design from first contact through post-flight, achieving 100% safety and 98%+ satisfaction."
 
 ### Output
+
 **Orbital Space Tourism Experience Plan**
 
 **Mission Profile**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Duration | 3 days orbital |
-| Altitude | 400km (ISS orbit) |
-| Customers per mission | 4 |
-| Price point | $55M per seat |
-| Annual missions | 8 |
+| Parameter             | Specification     |
+| --------------------- | ----------------- |
+| Duration              | 3 days orbital    |
+| Altitude              | 400km (ISS orbit) |
+| Customers per mission | 4                 |
+| Price point           | $55M per seat     |
+| Annual missions       | 8                 |
 
 **Customer Journey Phases**
 
 **Phase 1: Discovery (Day 1 - Month 1)**
+
 - Personal consultation with astronaut ambassador
 - Medical pre-screening (discrete, respectful)
 - Family engagement and information program
@@ -139,14 +147,15 @@ Avoid:
 
 **Phase 2: Preparation (Months 2-4)**
 
-| Week | Training Focus | Hours |
-|------|----------------|-------|
-| 1-4 | Medical clearance, fitness baseline | 20 |
-| 5-8 | Spacecraft systems, safety procedures | 40 |
-| 9-12 | Zero-G training, emergency drills | 60 |
-| 13-16 | Full mission simulations | 40 |
+| Week  | Training Focus                        | Hours |
+| ----- | ------------------------------------- | ----- |
+| 1-4   | Medical clearance, fitness baseline   | 20    |
+| 5-8   | Spacecraft systems, safety procedures | 40    |
+| 9-12  | Zero-G training, emergency drills     | 60    |
+| 13-16 | Full mission simulations              | 40    |
 
 **Phase 3: Pre-Flight (Month 5-Launch)**
+
 - Final medical certification
 - Custom suit fitting and personalization
 - Family farewell experiences
@@ -154,13 +163,14 @@ Avoid:
 
 **Phase 4: Mission (3 Days)**
 
-| Day | Experience |
-|-----|------------|
+| Day        | Experience                                                   |
+| ---------- | ------------------------------------------------------------ |
 | Launch Day | Suit-up ceremony, launch, orbit insertion, first Earth views |
-| Day 2 | Peak experiences: 16 sunrises, personal time, calls home |
-| Day 3 | Final views, preparation, reentry, landing, celebration |
+| Day 2      | Peak experiences: 16 sunrises, personal time, calls home     |
+| Day 3      | Final views, preparation, reentry, landing, celebration      |
 
 **Phase 5: Post-Flight (Months 6-12)**
+
 - VIP recovery and medical support
 - Astronaut certification ceremony
 - Alumni program enrollment
@@ -168,51 +178,53 @@ Avoid:
 
 **Safety Framework**
 
-| Element | Standard | Verification |
-|---------|----------|--------------|
-| Vehicle certification | FAA Part 450 | Annual audit |
-| Crew qualification | NASA astronaut standards | Per mission |
-| Customer training | 100% completion required | Competency gates |
-| Emergency procedures | 12 drills minimum | Performance verification |
-| Medical support | Flight surgeon 24/7 | Per mission |
+| Element               | Standard                 | Verification             |
+| --------------------- | ------------------------ | ------------------------ |
+| Vehicle certification | FAA Part 450             | Annual audit             |
+| Crew qualification    | NASA astronaut standards | Per mission              |
+| Customer training     | 100% completion required | Competency gates         |
+| Emergency procedures  | 12 drills minimum        | Performance verification |
+| Medical support       | Flight surgeon 24/7      | Per mission              |
 
 **Emergency Preparedness**
 
-| Scenario | Response | Training |
-|----------|----------|----------|
-| Cabin depressurization | Suit protection, abort | 6 drills |
-| Fire | Suppression, isolation | 4 drills |
-| Medical emergency | First response, ground support | 8 scenarios |
-| Abort options | Return capability within 24h | Fully rehearsed |
+| Scenario               | Response                       | Training        |
+| ---------------------- | ------------------------------ | --------------- |
+| Cabin depressurization | Suit protection, abort         | 6 drills        |
+| Fire                   | Suppression, isolation         | 4 drills        |
+| Medical emergency      | First response, ground support | 8 scenarios     |
+| Abort options          | Return capability within 24h   | Fully rehearsed |
 
 **Luxury Experience Elements**
 
-| Touchpoint | Experience |
-|------------|------------|
-| Accommodation | Private training compound, 5-star resort |
-| Dining | Personal chef, custom menu, celebration dinners |
-| Transportation | Private aviation throughout program |
-| Personal service | Dedicated concierge 24/7, family coordinator |
-| Documentation | Professional photo/video team, personal film |
-| Gifts | Custom flight suit, space-flown items, memorabilia |
+| Touchpoint       | Experience                                         |
+| ---------------- | -------------------------------------------------- |
+| Accommodation    | Private training compound, 5-star resort           |
+| Dining           | Personal chef, custom menu, celebration dinners    |
+| Transportation   | Private aviation throughout program                |
+| Personal service | Dedicated concierge 24/7, family coordinator       |
+| Documentation    | Professional photo/video team, personal film       |
+| Gifts            | Custom flight suit, space-flown items, memorabilia |
 
 **Customer Satisfaction Metrics**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Pre-flight preparation | >98% | Post-training survey |
-| Safety confidence | 100% | Pre-flight certification |
-| Peak experience moments | >10 per mission | Post-flight debrief |
-| Overall satisfaction | >98% | 30-day survey |
-| Referral rate | >90% | 6-month follow-up |
+| Metric                  | Target          | Measurement              |
+| ----------------------- | --------------- | ------------------------ |
+| Pre-flight preparation  | >98%            | Post-training survey     |
+| Safety confidence       | 100%            | Pre-flight certification |
+| Peak experience moments | >10 per mission | Post-flight debrief      |
+| Overall satisfaction    | >98%            | 30-day survey            |
+| Referral rate           | >90%            | 6-month follow-up        |
 
 **Family Program**
+
 - Launch viewing with dedicated hospitality
 - Real-time communication during mission (scheduled calls)
 - Recovery day celebration and reunion
 - Family keepsakes and documentation package
 
 **Alumni Network**
+
 - Exclusive community access (private events, communications)
 - Anniversary celebrations and reunions
 - Future mission priority and family pricing
@@ -221,6 +233,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Commercial Crew Mission Management](../commercial-spaceflight/commercial-crew-mission-management.md)
 - [Commercial Space Mission Architecture Expert](../commercial-space-mission-architecture-expert.md)
 - [Space Insurance Risk Management](../space-insurance/satellite-insurance-risk-management.md)

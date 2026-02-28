@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement Zero Trust security model with identity verification, microsegmentation,
+date: "2025-01-01"
+description:
+  Implement Zero Trust security model with identity verification, microsegmentation,
   least privilege access, and continuous monitoring. Use when building secure cloud-native
   applications.
 layout: skill
 slug: zero-trust-architecture
 tags:
-- rust
-- security
+  - rust
+  - security
 title: zero-trust-architecture
 ---
 
@@ -34,8 +35,8 @@ Implement comprehensive Zero Trust security architecture based on "never trust, 
 
 ```javascript
 // zero-trust-gateway.js
-const jwt = require('jsonwebtoken');
-const axios = require('axios');
+const jwt = require("jsonwebtoken");
+const axios = require("axios");
 
 class ZeroTrustGateway {
   constructor() {
@@ -51,20 +52,20 @@ class ZeroTrustGateway {
     try {
       // Verify JWT token
       const decoded = jwt.verify(token, process.env.JWT_PUBLIC_KEY, {
-        algorithms: ['RS256']
+        algorithms: ["RS256"],
       });
 
       // Check token hasn't been revoked
       const revoked = await this.checkTokenRevocation(decoded.jti);
       if (revoked) {
-        throw new Error('Token has been revoked');
+        throw new Error("Token has been revoked");
       }
 
       return {
         valid: true,
         userId: decoded.sub,
         roles: decoded.roles,
-        permissions: decoded.permissions
+        permissions: decoded.permissions,
       };
     } catch (error) {
       return { valid: false, error: error.message };
@@ -80,7 +81,7 @@ class ZeroTrustGateway {
     if (!registered) {
       return {
         trusted: false,
-        reason: 'Device not registered'
+        reason: "Device not registered",
       };
     }
 
@@ -88,7 +89,7 @@ class ZeroTrustGateway {
     if (registered.fingerprint !== deviceFingerprint) {
       return {
         trusted: false,
-        reason: 'Device fingerprint mismatch'
+        reason: "Device fingerprint mismatch",
       };
     }
 
@@ -98,7 +99,7 @@ class ZeroTrustGateway {
     return {
       trusted: compliance.compliant,
       reason: compliance.reason,
-      riskScore: compliance.riskScore
+      riskScore: compliance.riskScore,
     };
   }
 
@@ -116,14 +117,14 @@ class ZeroTrustGateway {
         const impossibleTravel = this.detectImpossibleTravel(
           lastLocation,
           geoData,
-          Date.now() - lastLocation.timestamp
+          Date.now() - lastLocation.timestamp,
         );
 
         if (impossibleTravel) {
           return {
             valid: false,
-            reason: 'Impossible travel detected',
-            riskScore: 9
+            reason: "Impossible travel detected",
+            riskScore: 9,
           };
         }
       }
@@ -132,21 +133,21 @@ class ZeroTrustGateway {
       if (expectedCountry && geoData.country !== expectedCountry) {
         return {
           valid: false,
-          reason: 'Unexpected location',
-          riskScore: 7
+          reason: "Unexpected location",
+          riskScore: 7,
         };
       }
 
       return {
         valid: true,
         location: geoData,
-        riskScore: 1
+        riskScore: 1,
       };
     } catch (error) {
       return {
         valid: false,
-        reason: 'Location verification failed',
-        riskScore: 5
+        reason: "Location verification failed",
+        riskScore: 5,
       };
     }
   }
@@ -160,7 +161,7 @@ class ZeroTrustGateway {
 
     // Check direct permissions
     if (this.hasPermission(user, resource, action)) {
-      return { authorized: true, reason: 'Direct permission' };
+      return { authorized: true, reason: "Direct permission" };
     }
 
     // Check role-based permissions
@@ -173,12 +174,12 @@ class ZeroTrustGateway {
     // Check attribute-based policies
     const abacResult = await this.evaluateABAC(user, resource, action, context);
     if (abacResult.allowed) {
-      return { authorized: true, reason: 'ABAC policy' };
+      return { authorized: true, reason: "ABAC policy" };
     }
 
     return {
       authorized: false,
-      reason: 'Insufficient permissions'
+      reason: "Insufficient permissions",
     };
   }
 
@@ -216,11 +217,11 @@ class ZeroTrustGateway {
 
       try {
         // Extract authentication token
-        const token = req.headers.authorization?.replace('Bearer ', '');
+        const token = req.headers.authorization?.replace("Bearer ", "");
         if (!token) {
           return res.status(401).json({
-            error: 'unauthorized',
-            message: 'No authentication token provided'
+            error: "unauthorized",
+            message: "No authentication token provided",
           });
         }
 
@@ -228,21 +229,21 @@ class ZeroTrustGateway {
         const identity = await this.verifyIdentity(token);
         if (!identity.valid) {
           return res.status(401).json({
-            error: 'unauthorized',
-            message: 'Invalid identity'
+            error: "unauthorized",
+            message: "Invalid identity",
           });
         }
 
         // Step 2: Verify device
-        const deviceId = req.headers['x-device-id'];
-        const deviceFingerprint = req.headers['x-device-fingerprint'];
+        const deviceId = req.headers["x-device-id"];
+        const deviceFingerprint = req.headers["x-device-fingerprint"];
 
         if (deviceId && deviceFingerprint) {
           const device = await this.verifyDevice(deviceId, deviceFingerprint);
           if (!device.trusted) {
             return res.status(403).json({
-              error: 'forbidden',
-              message: device.reason
+              error: "forbidden",
+              message: device.reason,
             });
           }
         }
@@ -252,9 +253,9 @@ class ZeroTrustGateway {
         if (!location.valid) {
           // Require step-up authentication
           return res.status(403).json({
-            error: 'forbidden',
-            message: 'Additional authentication required',
-            requiresStepUp: true
+            error: "forbidden",
+            message: "Additional authentication required",
+            requiresStepUp: true,
           });
         }
 
@@ -263,7 +264,7 @@ class ZeroTrustGateway {
           mfaUsed: identity.mfaUsed,
           newDevice: !deviceId,
           unusualLocation: location.riskScore > 5,
-          deviceCompliant: true
+          deviceCompliant: true,
         });
 
         // Step 5: Verify authorization
@@ -274,14 +275,14 @@ class ZeroTrustGateway {
           {
             ip: req.ip,
             riskScore,
-            time: new Date()
-          }
+            time: new Date(),
+          },
         );
 
         if (!authorization.authorized) {
           return res.status(403).json({
-            error: 'forbidden',
-            message: authorization.reason
+            error: "forbidden",
+            message: authorization.reason,
           });
         }
 
@@ -290,7 +291,7 @@ class ZeroTrustGateway {
           userId: identity.userId,
           roles: identity.roles,
           riskScore,
-          verificationTime: Date.now() - startTime
+          verificationTime: Date.now() - startTime,
         };
 
         // Log access
@@ -298,10 +299,10 @@ class ZeroTrustGateway {
 
         next();
       } catch (error) {
-        console.error('Zero Trust verification failed:', error);
+        console.error("Zero Trust verification failed:", error);
         return res.status(500).json({
-          error: 'internal_error',
-          message: 'Security verification failed'
+          error: "internal_error",
+          message: "Security verification failed",
         });
       }
     };
@@ -316,18 +317,18 @@ class ZeroTrustGateway {
     // Check device meets security requirements
     return {
       compliant: true,
-      reason: 'Device meets requirements',
-      riskScore: 1
+      reason: "Device meets requirements",
+      riskScore: 1,
     };
   }
 
   async getGeoLocation(ip) {
     // Get geolocation from IP
     return {
-      country: 'US',
-      city: 'San Francisco',
+      country: "US",
+      city: "San Francisco",
       lat: 37.7749,
-      lon: -122.4194
+      lon: -122.4194,
     };
   }
 
@@ -343,8 +344,8 @@ class ZeroTrustGateway {
   async getUserPermissions(userId) {
     // Fetch user permissions
     return {
-      roles: ['user'],
-      permissions: []
+      roles: ["user"],
+      permissions: [],
     };
   }
 
@@ -367,13 +368,13 @@ class ZeroTrustGateway {
       resource: req.path,
       method: req.method,
       riskScore,
-      ip: req.ip
+      ip: req.ip,
     });
   }
 }
 
 // Express setup
-const express = require('express');
+const express = require("express");
 const app = express();
 
 const ztGateway = new ZeroTrustGateway();
@@ -382,10 +383,10 @@ const ztGateway = new ZeroTrustGateway();
 app.use(ztGateway.middleware());
 
 // Protected endpoint
-app.get('/api/sensitive-data', (req, res) => {
+app.get("/api/sensitive-data", (req, res) => {
   res.json({
-    message: 'Access granted',
-    riskScore: req.zeroTrust.riskScore
+    message: "Access granted",
+    riskScore: req.zeroTrust.riskScore,
   });
 });
 
@@ -405,7 +406,7 @@ metadata:
   namespace: production
 spec:
   mtls:
-    mode: STRICT  # Require mutual TLS
+    mode: STRICT # Require mutual TLS
 
 ---
 apiVersion: security.istio.io/v1beta1
@@ -413,8 +414,7 @@ kind: AuthorizationPolicy
 metadata:
   name: deny-all
   namespace: production
-spec:
-  {} # Deny all by default
+spec: {} # Deny all by default
 
 ---
 apiVersion: security.istio.io/v1beta1
@@ -428,13 +428,13 @@ spec:
       app: backend
   action: ALLOW
   rules:
-  - from:
-    - source:
-        principals: ["cluster.local/ns/production/sa/frontend"]
-    to:
-    - operation:
-        methods: ["GET", "POST"]
-        paths: ["/api/*"]
+    - from:
+        - source:
+            principals: ["cluster.local/ns/production/sa/frontend"]
+      to:
+        - operation:
+            methods: ["GET", "POST"]
+            paths: ["/api/*"]
 
 ---
 apiVersion: security.istio.io/v1beta1
@@ -448,12 +448,12 @@ spec:
       app: database
   action: ALLOW
   rules:
-  - from:
-    - source:
-        principals: ["cluster.local/ns/production/sa/backend"]
-    to:
-    - operation:
-        methods: ["*"]
+    - from:
+        - source:
+            principals: ["cluster.local/ns/production/sa/backend"]
+      to:
+        - operation:
+            methods: ["*"]
 
 ---
 # JWT authentication
@@ -467,10 +467,10 @@ spec:
     matchLabels:
       app: backend
   jwtRules:
-  - issuer: "https://auth.example.com"
-    jwksUri: "https://auth.example.com/.well-known/jwks.json"
-    audiences:
-    - "api.example.com"
+    - issuer: "https://auth.example.com"
+      jwksUri: "https://auth.example.com/.well-known/jwks.json"
+      audiences:
+        - "api.example.com"
 
 ---
 # Network policy - additional defense layer
@@ -484,24 +484,24 @@ spec:
     matchLabels:
       app: backend
   policyTypes:
-  - Ingress
-  - Egress
+    - Ingress
+    - Egress
   ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: frontend
-    ports:
-    - protocol: TCP
-      port: 8080
+    - from:
+        - podSelector:
+            matchLabels:
+              app: frontend
+      ports:
+        - protocol: TCP
+          port: 8080
   egress:
-  - to:
-    - podSelector:
-        matchLabels:
-          app: database
-    ports:
-    - protocol: TCP
-      port: 5432
+    - to:
+        - podSelector:
+            matchLabels:
+              app: database
+      ports:
+        - protocol: TCP
+          port: 5432
 ```
 
 ### 3. **Python Zero Trust Policy Engine**
@@ -676,6 +676,7 @@ def get_sensitive_data():
 ## Best Practices
 
 ### ✅ DO
+
 - Verify every request
 - Implement MFA everywhere
 - Use microsegmentation
@@ -686,6 +687,7 @@ def get_sensitive_data():
 - Regular audits
 
 ### ❌ DON'T
+
 - Trust network location
 - Use implicit trust
 - Skip device verification

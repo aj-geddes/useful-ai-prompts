@@ -1,6 +1,7 @@
 # User Research Synthesizer
 
 ## Metadata
+
 - **ID**: creative-user-research-synthesizer
 - **Version**: 3.0.0
 - **Category**: Creative/UX-Design
@@ -18,6 +19,7 @@ A strategic user research synthesis assistant that transforms raw research data 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Synthesizing findings from multiple user interviews
 - Identifying patterns across usability test sessions
 - Developing data-driven personas and journey maps
@@ -25,6 +27,7 @@ A strategic user research synthesis assistant that transforms raw research data 
 - Prioritizing product features based on user needs
 
 **Anti-Patterns (When Not to Use):**
+
 - Planning research methodology (use research planning prompts)
 - Writing interview scripts or survey questions
 - Statistical analysis of quantitative data
@@ -112,6 +115,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. 15 user interviews + analytics review for our project management tool
 2. 15 participants: 5 project managers, 5 developers, 5 designers from tech companies
@@ -140,6 +144,7 @@ Requirements:
 **Pattern:** Users are drowning in features while starving for clarity
 
 **Evidence:**
+
 - 13/15 participants mentioned "too complex" or "overwhelming"
 - Feature usage analytics show 20% of features get 80% of use
 - Quote: "I just need to know what's happening. I don't need another dashboard."
@@ -151,6 +156,7 @@ Requirements:
 **Pattern:** Information scatter creates productivity drain
 
 **Evidence:**
+
 - File finding frustration mentioned by 12/15 participants (80%)
 - Users spend approximately 30 min/day orienting themselves
 - Quote: "By the time I find the right version, I've lost my train of thought."
@@ -162,6 +168,7 @@ Requirements:
 **Pattern:** Integration beats innovation
 
 **Evidence:**
+
 - Average user switches between 8-12 tools daily
 - "Another dashboard to check" = adoption killer
 - Quote: "I don't want to leave Slack to see project updates."
@@ -173,6 +180,7 @@ Requirements:
 **Pattern:** Different roles need different views
 
 **Evidence:**
+
 - Designers reject Gantt charts but love Kanban (5/5)
 - Developers want lists and filters
 - PMs need both plus reporting
@@ -183,19 +191,19 @@ Requirements:
 
 ### Critical Needs (Address First)
 
-| Need | Description | Frequency | Priority |
-|------|-------------|-----------|----------|
-| Instant Context | "What's happening right now?" | 15/15 | Critical |
-| Unified Information | "Where's the latest version?" | 12/15 | Critical |
-| Quiet Efficiency | "Only tell me what matters" | 8/15 | Critical |
+| Need                | Description                   | Frequency | Priority |
+| ------------------- | ----------------------------- | --------- | -------- |
+| Instant Context     | "What's happening right now?" | 15/15     | Critical |
+| Unified Information | "Where's the latest version?" | 12/15     | Critical |
+| Quiet Efficiency    | "Only tell me what matters"   | 8/15      | Critical |
 
 ### Important Needs (Address Next)
 
-| Need | Description | Frequency | Priority |
-|------|-------------|-----------|----------|
-| Visual Flexibility | Role-appropriate views | 10/15 | High |
-| Seamless Integration | Work where I work | 9/15 | High |
-| Mobile Quick-actions | Update on the go | 6/15 | Medium |
+| Need                 | Description            | Frequency | Priority |
+| -------------------- | ---------------------- | --------- | -------- |
+| Visual Flexibility   | Role-appropriate views | 10/15     | High     |
+| Seamless Integration | Work where I work      | 9/15      | High     |
+| Mobile Quick-actions | Update on the go       | 6/15      | Medium   |
 
 ### Nice-to-Have (Future)
 
@@ -240,6 +248,7 @@ Requirements:
 ### Priority 1: Context Dashboard (6 weeks)
 
 **What:** Personalized "What's happening" view
+
 - Smart summary of changes since last visit
 - Role-based default views
 - One-click drill-down
@@ -251,6 +260,7 @@ Requirements:
 ### Priority 2: Universal File Finder (4 weeks)
 
 **What:** Spotify-like search across all project assets
+
 - Instant search with preview
 - "Latest version" indicator
 - Direct edit/comment from results
@@ -262,6 +272,7 @@ Requirements:
 ### Priority 3: Smart Notification Engine (3 weeks)
 
 **What:** AI-grouped, role-aware notifications
+
 - Batch similar updates
 - Importance scoring
 - Slack/Teams native delivery
@@ -282,12 +293,12 @@ Requirements:
 
 ### Success Metrics
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Time to Context | <30 seconds | Login to productive action |
-| Daily Active Use | 85% | 5-day rolling average |
-| Cross-Tool Actions | 10+/user/day | Integration usage |
-| NPS by Role | 50+ each | Segmented satisfaction |
+| Metric             | Target       | Measurement                |
+| ------------------ | ------------ | -------------------------- |
+| Time to Context    | <30 seconds  | Login to productive action |
+| Daily Active Use   | 85%          | 5-day rolling average      |
+| Cross-Tool Actions | 10+/user/day | Integration usage          |
+| NPS by Role        | 50+ each     | Segmented satisfaction     |
 
 ### Expected Outcomes
 

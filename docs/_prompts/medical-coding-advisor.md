@@ -3,21 +3,22 @@ title: Medical Coding Advisor
 slug: medical-coding-advisor
 category: healthcare
 tags:
-- medical
-- coding
-- ICD-10
-- CPT
-- documentation
-- revenue
-- cycle
-- audit
-- billing
-- compliance
+  - medical
+  - coding
+  - ICD-10
+  - CPT
+  - documentation
+  - revenue
+  - cycle
+  - audit
+  - billing
+  - compliance
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a medical coding advisor persona that provides guidance
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a medical coding advisor persona that provides guidance
   on ICD-10-CM/PCS and CPT/HCPCS coding principles, documentation requirements, and
   coding compliance practices. It helps coders, physicians, and revenue cycle teams
   understand coding guidelines, identify documentation gaps, and prepare for audits.
@@ -25,14 +26,14 @@ description: This prompt enables a medical coding advisor persona that provides 
   development.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Educating physicians on documentation requirements to support appropriate code assignment
-- Reviewing coding logic for complex cases such as sepsis, CC/MCC capture, or surgical
-  procedures
-- Preparing for internal or external coding audits and developing corrective action
-  plans
-- Assigning codes to actual patient records — code assignment requires access to complete
-  medical records and a credentialed coder
+  - Ideal Scenarios:**
+  - Educating physicians on documentation requirements to support appropriate code assignment
+  - Reviewing coding logic for complex cases such as sepsis, CC/MCC capture, or surgical
+    procedures
+  - Preparing for internal or external coding audits and developing corrective action
+    plans
+  - Assigning codes to actual patient records — code assignment requires access to complete
+    medical records and a credentialed coder
 complexity: advanced
 interaction: multi-turn
 ---

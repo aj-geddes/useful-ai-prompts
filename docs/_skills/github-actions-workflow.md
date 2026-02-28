@@ -1,16 +1,17 @@
 ---
 category: version-control
-date: '2025-01-01'
-description: Build comprehensive GitHub Actions workflows for CI/CD, testing, security,
+date: "2025-01-01"
+description:
+  Build comprehensive GitHub Actions workflows for CI/CD, testing, security,
   and deployment. Master workflows, jobs, steps, and conditional execution.
 layout: skill
 slug: github-actions-workflow
 tags:
-- git
-- ci/cd
-- github
-- testing
-- security
+  - git
+  - ci/cd
+  - github
+  - testing
+  - security
 title: github-actions-workflow
 ---
 
@@ -61,7 +62,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -119,15 +120,15 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
-          scan-ref: '.'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          scan-type: "fs"
+          scan-ref: "."
+          format: "sarif"
+          output: "trivy-results.sarif"
 
       - name: Upload Trivy results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: 'trivy-results.sarif'
+          sarif_file: "trivy-results.sarif"
 
   deploy:
     runs-on: ubuntu-latest
@@ -151,7 +152,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   create-release:
@@ -211,6 +212,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Use caching for dependencies (npm, pip, Maven)
 - Run tests in parallel with matrix strategy
 - Require status checks on protected branches
@@ -222,6 +224,7 @@ jobs:
 - Cache Docker layers for faster builds
 
 ### ❌ DON'T
+
 - Store secrets in workflow files
 - Run untrusted code in workflows
 - Use `secrets.*` with pull requests from forks

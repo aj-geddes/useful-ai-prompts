@@ -1,6 +1,7 @@
 # Administrative SOP Creator
 
 ## Metadata
+
 - **ID**: `administrative-sop-creator`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ Transforms informal processes, verbal knowledge, or rough notes into structured 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Documenting a process before a key employee leaves (knowledge transfer)
 - Creating auditable procedures for regulatory compliance (ISO, SOC2, FDA)
 - Standardizing a process currently done differently by different team members
 - Building an operations manual for a growing team
 
 **Anti-patterns (Don't Use For):**
+
 - Technical software documentation (different audience and format)
 - Policy statements (SOPs describe how, policies describe what and why)
 - One-time project plans (SOPs are for recurring processes)
@@ -122,20 +125,21 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need an SOP for our accounts payable invoice processing. The AP Clerk receives invoices by email, matches them to POs in our ERP (NetSuite), gets manager approval for anything over $5K, then schedules payment. Sometimes invoices come without a PO reference and we have to chase the requester."
 
 ### Output
 
 **SOP: Accounts Payable Invoice Processing**
 
-| Field | Value |
-|-------|-------|
-| **SOP ID** | AP-001 |
-| **Version** | 1.0 |
+| Field              | Value      |
+| ------------------ | ---------- |
+| **SOP ID**         | AP-001     |
+| **Version**        | 1.0        |
 | **Effective Date** | 2026-02-28 |
-| **Owner** | AP Manager |
-| **Performer** | AP Clerk |
-| **Review Cycle** | Annual |
+| **Owner**          | AP Manager |
+| **Performer**      | AP Clerk   |
+| **Review Cycle**   | Annual     |
 
 **Purpose**
 Ensure all vendor invoices are accurately validated, approved, and scheduled for payment in a timely, auditable manner.
@@ -144,6 +148,7 @@ Ensure all vendor invoices are accurately validated, approved, and scheduled for
 Covers all vendor invoices received by email or mail. Excludes employee expense reimbursements (see AP-002) and recurring auto-pay contracts (see AP-003).
 
 **Prerequisites**
+
 - NetSuite access with AP Clerk role
 - Vendor master list access
 - AP email inbox access (ap@company.com)
@@ -162,7 +167,7 @@ For each invoice received:
 **Step 2 — Match to Purchase Order**
 2.1. Search NetSuite for a matching open PO (Purchasing → Purchase Orders)
 2.2. **IF PO found**: Link the bill to the PO. Proceed to Step 3.
-2.3. **IF no PO found**: Email the requester (identified from invoice or vendor record): *"Invoice [#] from [Vendor] for $[amount] received without a PO reference. Please provide the PO number or confirm this purchase by [date + 2 business days]."* Log as "Pending PO" in NetSuite. Do not proceed until PO is confirmed.
+2.3. **IF no PO found**: Email the requester (identified from invoice or vendor record): _"Invoice [#] from [Vendor] for $[amount] received without a PO reference. Please provide the PO number or confirm this purchase by [date + 2 business days]."_ Log as "Pending PO" in NetSuite. Do not proceed until PO is confirmed.
 2.4. **IF no response within 2 business days**: Escalate to AP Manager.
 
 **Step 3 — Validate invoice details**
@@ -185,11 +190,11 @@ For each invoice received:
 
 **Exception Handling**
 
-| Exception | Action |
-|-----------|--------|
-| Duplicate invoice received | Mark second as duplicate in NetSuite; notify vendor |
-| Vendor not in NetSuite | Submit vendor setup form to AP Manager before processing |
-| Urgent payment request | AP Manager authorization required to bypass standard cycle |
+| Exception                  | Action                                                     |
+| -------------------------- | ---------------------------------------------------------- |
+| Duplicate invoice received | Mark second as duplicate in NetSuite; notify vendor        |
+| Vendor not in NetSuite     | Submit vendor setup form to AP Manager before processing   |
+| Urgent payment request     | AP Manager authorization required to bypass standard cycle |
 
 ---
 

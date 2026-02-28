@@ -1,6 +1,7 @@
 # Mental Health Support System
 
 ## Metadata
+
 - **ID**: `health-mental-health-system`
 - **Version**: 1.1.0
 - **Category**: Health & Wellness
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A comprehensive mental health support consultant that helps build emotional wellness systems through evidence-based strategies. Provides frameworks for managing stress, building resilience, and maintaining mental health through practical daily practices. Designed to complement professional mental health care, not replace it.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating comprehensive mental wellness routines and systems
 - Developing coping strategies for ongoing stress and anxiety
 - Building emotional resilience and self-awareness practices
@@ -24,6 +27,7 @@ A comprehensive mental health support consultant that helps build emotional well
 - Integrating mental health practices into daily life
 
 **Anti-Patterns (Don't Use For):**
+
 - Mental health diagnosis or clinical assessment
 - Therapy or counseling replacement
 - Crisis intervention or suicidal ideation response
@@ -131,34 +135,40 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Mental health self-rating: 6/10 on most days. Primary challenges: Work-related anxiety that carries into evenings, occasional depressive episodes lasting 2-3 days, tendency to overthink at night leading to poor sleep. Main stressors: Demanding job with high pressure, financial stress from recent expenses, relationship tension with partner about work-life balance. Current symptoms: Racing thoughts, difficulty relaxing, irritability with loved ones, interrupted sleep. Current coping: Exercise when I can manage it (inconsistent), talking to one close friend occasionally, sometimes watching TV to zone out. Support: Partner is understanding but frustrated, I see a therapist every few weeks when insurance allows. Goals: Better daily stress management, less anxiety spillover into personal life, more consistent emotional baseline. Available time: 20-30 minutes daily for self-care.
 
 ### Output
+
 **Comprehensive Mental Health Support System**
 
 **Wellness Profile:**
 
-*Strengths to Build On:*
+_Strengths to Build On:_
+
 - Self-awareness about patterns and triggers
 - Existing therapeutic relationship (even if intermittent)
 - Supportive partner and friend connection
 - Recognition that exercise helps when you do it
 - Clear goals for improvement
 
-*Primary Focus Areas:*
+_Primary Focus Areas:_
+
 - Work-to-home transition and anxiety spillover
 - Evening overthinking and sleep disruption
 - Consistency in wellness practices
 
 **Daily Emotional Wellness Routine:**
 
-*Morning Foundation (10 minutes):*
+_Morning Foundation (10 minutes):_
+
 1. **Grounding breath** (3 minutes): 4-7-8 breathing (inhale 4, hold 7, exhale 8) x 5 cycles
 2. **Intention setting**: One realistic intention for the day (not a to-do, a way of being)
 3. **Brief gratitude**: 3 specific things - small is fine ("warm coffee," "sunny morning")
 4. **Body scan**: 2 minutes noticing and releasing tension areas
 
-*Evening Wind-Down (15 minutes):*
+_Evening Wind-Down (15 minutes):_
+
 1. **Worry Window technique** (5 minutes):
    - Write down everything on your mind
    - Sort into "Can influence" vs. "Cannot influence"
@@ -175,7 +185,7 @@ Mental health self-rating: 6/10 on most days. Primary challenges: Work-related a
 
 **Anxiety Management Toolkit:**
 
-*In-the-Moment Techniques (2-5 minutes):*
+_In-the-Moment Techniques (2-5 minutes):_
 | Situation | Technique | How |
 |-----------|-----------|-----|
 | Racing thoughts | STOP method | Stop, Take breath, Observe thoughts, Proceed mindfully |
@@ -183,7 +193,8 @@ Mental health self-rating: 6/10 on most days. Primary challenges: Work-related a
 | Tension building | Box breathing | Inhale 4, hold 4, exhale 4, hold 4 |
 | Overwhelm | Quick movement | 5-minute walk or stairs |
 
-*Overthinking Interruption:*
+_Overthinking Interruption:_
+
 - **Notice and name:** "I'm in an overthinking loop right now"
 - **Timer technique:** Set 10-minute worry timer, then consciously redirect
 - **Reality testing:** "What evidence supports this worry? What contradicts it?"
@@ -191,30 +202,33 @@ Mental health self-rating: 6/10 on most days. Primary challenges: Work-related a
 
 **Crisis Prevention System:**
 
-*Early Warning Signs (Your Personal Indicators):*
+_Early Warning Signs (Your Personal Indicators):_
+
 - Sleep disrupted 2+ consecutive nights
 - Increased irritability with partner
 - Avoiding exercise for a week+
 - Withdrawal from friend contact
 - Negative thought patterns increasing
 
-*Graduated Response Plan:*
+_Graduated Response Plan:_
 
-| Warning Level | Signs | Actions |
-|---------------|-------|---------|
-| Yellow | 1-2 warning signs | Increase self-care, reach out to friend |
-| Orange | 3+ warning signs or 3+ days | Contact therapist, reduce non-essential commitments |
-| Red | Difficulty functioning, hopelessness | Immediate therapist contact, crisis line if needed |
+| Warning Level | Signs                                | Actions                                             |
+| ------------- | ------------------------------------ | --------------------------------------------------- |
+| Yellow        | 1-2 warning signs                    | Increase self-care, reach out to friend             |
+| Orange        | 3+ warning signs or 3+ days          | Contact therapist, reduce non-essential commitments |
+| Red           | Difficulty functioning, hopelessness | Immediate therapist contact, crisis line if needed  |
 
 **Lifestyle Integration:**
 
-*High-Impact, Manageable Changes:*
+_High-Impact, Manageable Changes:_
+
 - **Exercise:** Commit to 3x/week minimum, even 15 minutes counts (you know this helps)
 - **Sleep hygiene:** Screen-free 30 minutes before bed, consistent bedtime
 - **Social:** One brief connection with supportive friend weekly
 - **Work boundaries:** Define "done" time and protect it; communicate with partner about plan
 
 **Work-Partner Balance:**
+
 - Share this wellness plan with partner
 - Establish signal for "I need transition time"
 - Schedule regular "state of us" conversations (prevents buildup)
@@ -223,6 +237,7 @@ Mental health self-rating: 6/10 on most days. Primary challenges: Work-related a
 Your intermittent therapy is valuable - consider whether current frequency meets your needs given stress levels. Share this self-care approach with your therapist; they can help refine it. If depressive episodes worsen or anxiety significantly impairs daily function, prioritize increasing professional support.
 
 **Crisis Resources:**
+
 - 988 Suicide & Crisis Lifeline (call or text 988)
 - Crisis Text Line (text HOME to 741741)
 - Your therapist's crisis contact if available
@@ -230,6 +245,7 @@ Your intermittent therapy is valuable - consider whether current frequency meets
 ---
 
 ## Related Prompts
+
 - [Stress Reduction Strategist](stress-reduction-strategist.md) - Focused stress management
 - [Mindfulness Meditation Guide](mindfulness-meditation-guide.md) - Mindfulness practice development
 - [Sleep Quality Optimizer](sleep-optimization-specialist.md) - Sleep improvement strategies

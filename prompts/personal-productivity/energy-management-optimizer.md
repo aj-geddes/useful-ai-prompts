@@ -1,6 +1,7 @@
 # Energy Management Optimizer
 
 ## Metadata
+
 - **ID**: `productivity-energy-management`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ An energy management consultant that helps you optimize natural energy cycles, e
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Experiencing afternoon energy crashes affecting work quality
 - Wanting to match demanding tasks to peak energy windows
 - Optimizing sleep, nutrition, and exercise for sustained energy
@@ -25,6 +27,7 @@ An energy management consultant that helps you optimize natural energy cycles, e
 - Struggling with inconsistent energy despite adequate sleep
 
 **Anti-patterns (when not to use):**
+
 - Medical fatigue diagnosis requiring clinical evaluation
 - Clinical sleep disorders needing specialist treatment
 - Nutrition therapy for medical conditions
@@ -109,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Natural wake: 6:30 AM. Most alert: 8-10 AM and 2-4 PM. Energy crashes: 1 PM (big one) and 4 PM (smaller). Sleep: 6.5-7 hours, takes 30-45 minutes to fall asleep. Exercise: gym 3x/week at 6 PM. Caffeine: 2-3 cups coffee between 7-10 AM. Water intake: 3-4 glasses daily. My energizing work is creative projects and strategic planning. I have some flexibility in when I do different types of work.
 
 ### Output
+
 You're a classic morning lark with a secondary afternoon peak. Your 1 PM crash correlates with blood sugar dips from irregular eating, and your 6 PM workouts are likely contributing to the 30-45 minute sleep onset delay. Here's your optimization system:
 
 **Your Chronotype Profile**
+
 - Type: Morning Lark (natural wake 6:30 AM, peak cognitive 8-10 AM)
 - Primary Peak: 8:00-10:00 AM (90% cognitive capacity)
 - Secondary Peak: 2:00-4:00 PM (75% capacity)
@@ -124,52 +130,57 @@ You're a classic morning lark with a secondary afternoon peak. Your 1 PM crash c
 
 **Energy Drain Analysis**
 
-*Issue 1: Sleep Debt*
+_Issue 1: Sleep Debt_
 You're getting 6.5-7 hours but likely need 7.5-8 for optimal function. The 30-45 min sleep onset suggests evening overstimulation.
 
-*Issue 2: Severe Dehydration*
+_Issue 2: Severe Dehydration_
 3-4 glasses (24-32 oz) is roughly 40% of recommended intake. Dehydration directly impairs cognitive function and energy.
 
-*Issue 3: Blood Sugar Rollercoaster*
+_Issue 3: Blood Sugar Rollercoaster_
 Your 1 PM crash timing suggests blood sugar dip from either skipped breakfast, high-carb breakfast, or late/missed morning snack.
 
-*Issue 4: Evening Exercise Timing*
+_Issue 4: Evening Exercise Timing_
 6 PM workouts elevate cortisol and body temperature during the window when both should be declining for sleep. This explains your sleep onset delay.
 
 **Optimal Daily Energy Allocation**
 
-| Time | Energy Level | Optimal Task Types |
-|------|--------------|-------------------|
-| 6:30-7:30 AM | Rising (70%) | Morning routine, light planning, preparation |
-| 8:00-10:00 AM | Peak (90%) | Creative projects, strategic planning, major decisions, deep thinking |
-| 10:00 AM-12:00 PM | High (75%) | Email, meetings, routine analysis, collaborative work |
-| 12:00-1:00 PM | Declining (60%) | Lunch, light reading, low-stakes tasks |
-| 1:00-2:00 PM | Low (40%) | Walking, admin tasks, passive learning, no important decisions |
-| 2:00-4:00 PM | Secondary Peak (75%) | Project work, presentations, problem-solving |
-| 4:00-5:30 PM | Declining (60%) | Task wrap-up, planning tomorrow, email, communication |
-| After 5:30 PM | Low (50%) | Wind down, routine only |
+| Time              | Energy Level         | Optimal Task Types                                                    |
+| ----------------- | -------------------- | --------------------------------------------------------------------- |
+| 6:30-7:30 AM      | Rising (70%)         | Morning routine, light planning, preparation                          |
+| 8:00-10:00 AM     | Peak (90%)           | Creative projects, strategic planning, major decisions, deep thinking |
+| 10:00 AM-12:00 PM | High (75%)           | Email, meetings, routine analysis, collaborative work                 |
+| 12:00-1:00 PM     | Declining (60%)      | Lunch, light reading, low-stakes tasks                                |
+| 1:00-2:00 PM      | Low (40%)            | Walking, admin tasks, passive learning, no important decisions        |
+| 2:00-4:00 PM      | Secondary Peak (75%) | Project work, presentations, problem-solving                          |
+| 4:00-5:30 PM      | Declining (60%)      | Task wrap-up, planning tomorrow, email, communication                 |
+| After 5:30 PM     | Low (50%)            | Wind down, routine only                                               |
 
 **Critical Schedule Changes**
 
-*Move workout timing:*
+_Move workout timing:_
+
 - New time: 7:00 AM (post-wake energy boost) OR 12:30 PM (during natural low)
 - Why: Evening exercise delays melatonin and raises body temperature when it should be dropping
 - If 6 PM is only option: Switch to low-intensity yoga/stretching only
 
-*Adjust bedtime:*
+_Adjust bedtime:_
+
 - New target: In bed by 10:00 PM for 10:30 PM sleep, 6:30 AM wake = 8 hours sleep opportunity
 - Creates buffer for 30-min onset to still achieve 7.5 hours actual sleep
 
-*Optimize caffeine:*
+_Optimize caffeine:_
+
 - Delay first coffee until 8:00 AM (90+ min after waking for cortisol to peak naturally)
 - Hard stop: No caffeine after 12:00 PM (10+ hours before sleep)
 - Why: Caffeine has 6-hour half-life; afternoon coffee fragments sleep architecture
 
-*Fix hydration:*
+_Fix hydration:_
+
 - Protocol: 16 oz immediately on waking, 8 oz every hour during work (stop 2 hours before bed)
 - Target: 80+ oz daily (currently at 40% of this)
 
-*Stabilize blood sugar:*
+_Stabilize blood sugar:_
+
 - Breakfast by 7:00 AM with protein (eggs, Greek yogurt)
 - Morning snack 9:30-10:00 AM
 - Lunch by 12:00 PM
@@ -185,7 +196,7 @@ Your 1 PM crash timing suggests blood sugar dip from either skipped breakfast, h
 - 7:00-7:15: Protein-rich breakfast
 - 7:15-7:30: Review top 3 priorities, set intention for peak block
 
-*Caffeine at 8:00 AM* after arriving at peak energy naturally.
+_Caffeine at 8:00 AM_ after arriving at peak energy naturally.
 
 **Evening Recovery Protocol (45 minutes)**
 

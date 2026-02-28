@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Analyze network structures, identify communities, measure centrality,
+date: "2025-01-01"
+description:
+  Analyze network structures, identify communities, measure centrality,
   and visualize relationships for social networks and organizational structures
 layout: skill
 slug: network-analysis
 tags:
-- development
+  - development
 title: Network Analysis
 ---
 

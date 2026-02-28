@@ -1,6 +1,7 @@
 # DevOps Workflow Design Expert
 
 ## Metadata
+
 - **ID**: `devops-workflow-design-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Designs comprehensive DevOps workflows that automate the entire software deliver
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing DevOps practices for new or transforming teams
 - Automating development, testing, and deployment workflows end-to-end
 - Building infrastructure as code foundations with proper state management
 - Creating observability stacks and incident management processes
 
 **Anti-patterns (Don't Use For):**
+
 - Individual tool configuration without workflow context
 - Single pipeline setup (use Deployment Pipeline Expert)
 - Pure development workflows without operations concerns
@@ -113,12 +116,14 @@ We're a 10-person startup using GitHub, deploying manually to AWS with SSH and s
 **Current State Assessment**
 
 Identified gaps:
+
 - Manual SSH deployments: ~30 minutes per deploy, error-prone
 - Configuration drift: Production differs from what's in Git
 - No centralized logging: Debugging requires SSH access
 - No deployment visibility: Team unaware when deploys complete
 
 Quick wins (Week 1-2):
+
 1. GitHub Actions for automated testing on PRs
 2. Centralized logging with CloudWatch Logs
 3. Basic health check monitoring with CloudWatch Alarms
@@ -134,11 +139,13 @@ main (production-ready, always deployable)
 ```
 
 Branch protections:
+
 - Require PR reviews before merge
 - Require passing CI checks (tests, linting)
 - No direct pushes to main
 
 Environment strategy:
+
 - Staging: Auto-deploy on merge to main
 - Production: Promote after staging validation
 
@@ -214,6 +221,7 @@ module "database" {
 ```
 
 Module structure:
+
 ```
 terraform/
   modules/
@@ -227,15 +235,16 @@ terraform/
 
 **Observability Stack (Budget-Conscious)**
 
-| Layer | Tool | Cost | Purpose |
-|-------|------|------|---------|
-| Metrics | CloudWatch | Included | System and application metrics |
-| Logs | CloudWatch Logs | ~$50/mo | Centralized log aggregation |
-| Alerting | CloudWatch Alarms | Low | Threshold-based alerts |
-| Tracing | AWS X-Ray | Pay-per-trace | Request tracing (optional) |
-| Dashboards | CloudWatch Dashboards | Free | Visualization |
+| Layer      | Tool                  | Cost          | Purpose                        |
+| ---------- | --------------------- | ------------- | ------------------------------ |
+| Metrics    | CloudWatch            | Included      | System and application metrics |
+| Logs       | CloudWatch Logs       | ~$50/mo       | Centralized log aggregation    |
+| Alerting   | CloudWatch Alarms     | Low           | Threshold-based alerts         |
+| Tracing    | AWS X-Ray             | Pay-per-trace | Request tracing (optional)     |
+| Dashboards | CloudWatch Dashboards | Free          | Visualization                  |
 
 Structured logging format:
+
 ```json
 {
   "timestamp": "2025-01-15T10:30:00Z",
@@ -248,6 +257,7 @@ Structured logging format:
 ```
 
 Key alerts (actionable, not noisy):
+
 - Error rate >1% for 5 minutes → Slack #incidents
 - Response time p99 >2s for 10 minutes → Slack #incidents
 - Disk usage >85% → Slack #ops
@@ -256,6 +266,7 @@ Key alerts (actionable, not noisy):
 **Incident Management**
 
 Process flow:
+
 1. Alert fires → Notification to Slack #incidents
 2. On-call acknowledges within 15 minutes
 3. Incident commander assigned for P1/P2 severity
@@ -263,35 +274,40 @@ Process flow:
 5. Post-mortem document within 48 hours for P1/P2
 
 Runbook template:
+
 ```markdown
 # Runbook: High Error Rate
 
 ## Symptoms
+
 - Error rate alert fired
 - Users reporting failures
 
 ## Diagnosis Steps
+
 1. Check CloudWatch Logs for error patterns
 2. Verify recent deployments in GitHub Actions
 3. Check downstream dependencies (database, external APIs)
 
 ## Resolution Actions
+
 - If recent deploy: Rollback via GitHub Actions
 - If database: Check RDS metrics and connections
 - If external API: Verify status page, enable fallback
 
 ## Escalation
+
 - If unresolved after 30 minutes: Page senior engineer
 ```
 
 **DORA Metrics Tracking**
 
-| Metric | Target | How to Measure |
-|--------|--------|----------------|
-| Deployment Frequency | Daily | GitHub Actions deployments/week |
-| Lead Time for Changes | <1 day | PR open to production deploy |
-| Change Failure Rate | <5% | Rollbacks / total deployments |
-| Time to Restore | <1 hour | Alert to resolution time |
+| Metric                | Target  | How to Measure                  |
+| --------------------- | ------- | ------------------------------- |
+| Deployment Frequency  | Daily   | GitHub Actions deployments/week |
+| Lead Time for Changes | <1 day  | PR open to production deploy    |
+| Change Failure Rate   | <5%     | Rollbacks / total deployments   |
+| Time to Restore       | <1 hour | Alert to resolution time        |
 
 ---
 

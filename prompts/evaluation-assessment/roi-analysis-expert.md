@@ -1,6 +1,7 @@
 # ROI Analysis Expert
 
 ## Metadata
+
 - **ID**: `evaluation-roi-analysis`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Financial
@@ -18,12 +19,14 @@ Calculate and analyze return on investment for business initiatives, projects, a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building business cases for proposed investments
 - Evaluating competing investment options
 - Post-implementation ROI assessment
 - Justifying budget requests
 
 **Anti-patterns:**
+
 - Personal investment decisions requiring licensed advice
 - Regulatory financial reporting requiring certified accountants
 - Tax planning requiring professional tax advisors
@@ -97,12 +100,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're considering replacing our legacy CRM with Salesforce. Cost is $150K implementation plus $60K/year licensing for 100 users. We expect sales productivity improvements and better forecasting. Current system costs $20K/year maintenance."
 
 ### Output
+
 **ROI Analysis: CRM Replacement (Salesforce)**
 
 **Investment Summary**
+
 - One-time costs: $150,000 (implementation)
 - Annual costs: $60,000 (licensing)
 - Current costs: $20,000 (legacy maintenance)
@@ -113,40 +119,44 @@ Avoid:
 
 **Total Cost of Ownership (3-Year)**
 
-| Cost Category | Year 0 | Year 1 | Year 2 | Year 3 | Total |
-|---------------|--------|--------|--------|--------|-------|
-| Implementation | $150K | - | - | - | $150K |
-| Licensing | - | $60K | $60K | $60K | $180K |
-| Training | $20K | $5K | $5K | $5K | $35K |
-| Integration | $15K | $5K | $5K | $5K | $30K |
-| Data Migration | $10K | - | - | - | $10K |
-| **Total New** | $195K | $70K | $70K | $70K | **$405K** |
-| Less: Legacy Savings | - | ($20K) | ($20K) | ($20K) | ($60K) |
-| **Net Cost** | $195K | $50K | $50K | $50K | **$345K** |
+| Cost Category        | Year 0 | Year 1 | Year 2 | Year 3 | Total     |
+| -------------------- | ------ | ------ | ------ | ------ | --------- |
+| Implementation       | $150K  | -      | -      | -      | $150K     |
+| Licensing            | -      | $60K   | $60K   | $60K   | $180K     |
+| Training             | $20K   | $5K    | $5K    | $5K    | $35K      |
+| Integration          | $15K   | $5K    | $5K    | $5K    | $30K      |
+| Data Migration       | $10K   | -      | -      | -      | $10K      |
+| **Total New**        | $195K  | $70K   | $70K   | $70K   | **$405K** |
+| Less: Legacy Savings | -      | ($20K) | ($20K) | ($20K) | ($60K)    |
+| **Net Cost**         | $195K  | $50K   | $50K   | $50K   | **$345K** |
 
 ---
 
 **Benefit Quantification**
 
-*Sales Productivity Improvement*
+_Sales Productivity Improvement_
+
 - Assumption: 2 hours/week saved per sales rep (15 reps)
 - Calculation: 15 reps x 2 hrs x 48 weeks x $75/hr
 - Annual value: $108,000
 - Confidence: High (industry benchmark: 1.5-3 hours)
 
-*Improved Win Rate*
+_Improved Win Rate_
+
 - Assumption: 5% improvement in win rate
 - Calculation: $5M pipeline x 5% x 30% avg deal margin
 - Annual value: $75,000
 - Confidence: Medium (depends on adoption)
 
-*Reduced Churn from Better Service*
+_Reduced Churn from Better Service_
+
 - Assumption: 2% reduction in customer churn
 - Calculation: $2M ARR x 2%
 - Annual value: $40,000
 - Confidence: Medium
 
-*Better Forecasting (Qualitative)*
+_Better Forecasting (Qualitative)_
+
 - Improved decision-making, harder to quantify
 - Not included in financial model
 
@@ -154,14 +164,15 @@ Avoid:
 
 **Scenario Analysis**
 
-| Scenario | Probability | Annual Benefit | 3-Year NPV | ROI |
-|----------|-------------|----------------|------------|-----|
-| Optimistic | 20% | $270K | $305K | 188% |
-| Base Case | 60% | $185K | $165K | 148% |
-| Conservative | 20% | $100K | $25K | 107% |
-| **Weighted** | 100% | $182K | **$155K** | **145%** |
+| Scenario     | Probability | Annual Benefit | 3-Year NPV | ROI      |
+| ------------ | ----------- | -------------- | ---------- | -------- |
+| Optimistic   | 20%         | $270K          | $305K      | 188%     |
+| Base Case    | 60%         | $185K          | $165K      | 148%     |
+| Conservative | 20%         | $100K          | $25K       | 107%     |
+| **Weighted** | 100%        | $182K          | **$155K**  | **145%** |
 
-*Key Assumptions by Scenario*
+_Key Assumptions by Scenario_
+
 - Optimistic: Full adoption, maximum productivity gains, win rate +7%
 - Base: 80% adoption, moderate gains, win rate +5%
 - Conservative: 60% adoption, minimal gains, win rate +2%
@@ -170,14 +181,15 @@ Avoid:
 
 **Financial Metrics (Base Case)**
 
-| Metric | Value | Threshold | Status |
-|--------|-------|-----------|--------|
-| ROI | 148% | >100% | Pass |
-| NPV (10% discount) | $165K | >$0 | Pass |
-| IRR | 42% | >15% | Pass |
-| Payback Period | 18 months | <24 months | Pass |
+| Metric             | Value     | Threshold  | Status |
+| ------------------ | --------- | ---------- | ------ |
+| ROI                | 148%      | >100%      | Pass   |
+| NPV (10% discount) | $165K     | >$0        | Pass   |
+| IRR                | 42%       | >15%       | Pass   |
+| Payback Period     | 18 months | <24 months | Pass   |
 
-*Year-by-Year Cash Flow (Base Case)*
+_Year-by-Year Cash Flow (Base Case)_
+
 - Year 0: -$195,000
 - Year 1: +$135,000 ($185K benefit - $50K cost)
 - Year 2: +$135,000
@@ -187,12 +199,13 @@ Avoid:
 
 **Sensitivity Analysis**
 
-*Break-Even Points*
+_Break-Even Points_
+
 - If productivity improvement is <$60K/year: ROI drops below 100%
 - If implementation costs exceed $250K: Payback extends beyond 24 months
 - If adoption is <50%: NPV becomes negative
 
-*Key Risks*
+_Key Risks_
 | Risk | Probability | Impact | Mitigation |
 |------|-------------|--------|------------|
 | Low adoption | Medium | High | Change management investment |
@@ -204,21 +217,24 @@ Avoid:
 
 **Recommendation: PROCEED**
 
-*Rationale*
+_Rationale_
+
 - Strong ROI across all scenarios (minimum 107%)
 - Payback within acceptable range (18 months base case)
 - Positive NPV even in conservative scenario
 - Strategic value beyond quantified benefits
 
-*Conditions*
+_Conditions_
+
 1. Invest $25K in change management for adoption
 2. Fixed-price implementation contract
 3. Pilot with one sales team before full rollout
 4. Quarterly ROI tracking post-implementation
 
-*Alternative Considered*
+_Alternative Considered_
 Upgrade legacy system: Lower cost but limited benefit potential. Salesforce provides strategic platform for future capabilities.
 
 ## Related Prompts
+
 - [Investment Opportunity Assessment Expert](investment-opportunity-assessment-expert.md)
 - [Budget Allocation Expert](../decision-making/budget-allocation-expert.md)

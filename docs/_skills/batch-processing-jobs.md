@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement robust batch processing systems with job queues, schedulers,
+date: "2025-01-01"
+description:
+  Implement robust batch processing systems with job queues, schedulers,
   background tasks, and distributed workers. Use when processing large datasets, scheduled
   tasks, async operations, or resource-intensive computations.
 layout: skill
 slug: batch-processing-jobs
 tags:
-- data
+  - data
 title: batch-processing-jobs
 ---
 
@@ -48,8 +49,8 @@ Implement scalable batch processing systems for handling large-scale data proces
 ### 1. **Bull Queue (Node.js)**
 
 ```typescript
-import Queue from 'bull';
-import { v4 as uuidv4 } from 'uuid';
+import Queue from "bull";
+import { v4 as uuidv4 } from "uuid";
 
 interface JobData {
   id: string;
@@ -73,25 +74,25 @@ class BatchProcessor {
 
   constructor(redisUrl: string) {
     // Main processing queue
-    this.queue = new Queue('batch-jobs', redisUrl, {
+    this.queue = new Queue("batch-jobs", redisUrl, {
       defaultJobOptions: {
         attempts: 3,
         backoff: {
-          type: 'exponential',
-          delay: 2000
+          type: "exponential",
+          delay: 2000,
         },
         removeOnComplete: 1000,
         removeOnFail: 5000,
-        timeout: 300000 // 5 minutes
+        timeout: 300000, // 5 minutes
       },
       settings: {
         maxStalledCount: 2,
-        stalledInterval: 30000
-      }
+        stalledInterval: 30000,
+      },
     });
 
     // Results queue
-    this.resultQueue = new Queue('batch-results', redisUrl);
+    this.resultQueue = new Queue("batch-results", redisUrl);
 
     this.setupProcessors();
     this.setupEvents();
@@ -99,7 +100,7 @@ class BatchProcessor {
 
   private setupProcessors(): void {
     // Data processing job
-    this.queue.process('process-data', 10, async (job) => {
+    this.queue.process("process-data", 10, async (job) => {
       const startTime = Date.now();
       const { payload } = job.data;
 
@@ -109,9 +110,8 @@ class BatchProcessor {
         // Update progress
         await job.progress(0);
 
-        const results = await this.processDataBatch(
-          payload.items,
-          (progress) => job.progress(progress)
+        const results = await this.processDataBatch(payload.items, (progress) =>
+          job.progress(progress),
         );
 
         const duration = Date.now() - startTime;
@@ -120,7 +120,7 @@ class BatchProcessor {
           success: true,
           data: results,
           processedAt: Date.now(),
-          duration
+          duration,
         };
       } catch (error: any) {
         const duration = Date.now() - startTime;
@@ -129,13 +129,13 @@ class BatchProcessor {
     });
 
     // Report generation job
-    this.queue.process('generate-report', 2, async (job) => {
+    this.queue.process("generate-report", 2, async (job) => {
       const { payload } = job.data;
 
       const report = await this.generateReport(
         payload.type,
         payload.filters,
-        payload.format
+        payload.format,
       );
 
       return {
@@ -143,48 +143,44 @@ class BatchProcessor {
         data: {
           reportId: uuidv4(),
           url: report.url,
-          size: report.size
+          size: report.size,
         },
         processedAt: Date.now(),
-        duration: 0
+        duration: 0,
       };
     });
 
     // Email batch job
-    this.queue.process('send-emails', 5, async (job) => {
+    this.queue.process("send-emails", 5, async (job) => {
       const { payload } = job.data;
       const { recipients, template, data } = payload;
 
-      const results = await this.sendEmailBatch(
-        recipients,
-        template,
-        data
-      );
+      const results = await this.sendEmailBatch(recipients, template, data);
 
       return {
         success: true,
         data: {
           sent: results.successful,
-          failed: results.failed
+          failed: results.failed,
         },
         processedAt: Date.now(),
-        duration: 0
+        duration: 0,
       };
     });
   }
 
   private setupEvents(): void {
-    this.queue.on('completed', (job, result) => {
+    this.queue.on("completed", (job, result) => {
       console.log(`Job ${job.id} completed:`, result);
 
       // Store result
       this.resultQueue.add({
         jobId: job.id,
-        ...result
+        ...result,
       });
     });
 
-    this.queue.on('failed', (job, error) => {
+    this.queue.on("failed", (job, error) => {
       console.error(`Job ${job?.id} failed:`, error.message);
 
       // Store failure
@@ -193,15 +189,15 @@ class BatchProcessor {
         success: false,
         error: error.message,
         processedAt: Date.now(),
-        duration: 0
+        duration: 0,
       });
     });
 
-    this.queue.on('progress', (job, progress) => {
+    this.queue.on("progress", (job, progress) => {
       console.log(`Job ${job.id} progress: ${progress}%`);
     });
 
-    this.queue.on('stalled', (job) => {
+    this.queue.on("stalled", (job) => {
       console.warn(`Job ${job.id} stalled`);
     });
   }
@@ -209,22 +205,22 @@ class BatchProcessor {
   async addJob(
     type: string,
     payload: any,
-    options?: Queue.JobOptions
+    options?: Queue.JobOptions,
   ): Promise<Queue.Job<JobData>> {
     const jobData: JobData = {
       id: uuidv4(),
       type,
       payload,
       metadata: {
-        createdAt: Date.now()
-      }
+        createdAt: Date.now(),
+      },
     };
 
     return this.queue.add(type, jobData, options);
   }
 
   async addBulkJobs(
-    jobs: Array<{ type: string; payload: any; options?: Queue.JobOptions }>
+    jobs: Array<{ type: string; payload: any; options?: Queue.JobOptions }>,
   ): Promise<Queue.Job<JobData>[]> {
     const bulkData = jobs.map(({ type, payload, options }) => ({
       name: type,
@@ -232,9 +228,9 @@ class BatchProcessor {
         id: uuidv4(),
         type,
         payload,
-        metadata: { createdAt: Date.now() }
+        metadata: { createdAt: Date.now() },
       },
-      opts: options || {}
+      opts: options || {},
     }));
 
     return this.queue.addBulk(bulkData);
@@ -243,18 +239,18 @@ class BatchProcessor {
   async scheduleJob(
     type: string,
     payload: any,
-    cronExpression: string
+    cronExpression: string,
   ): Promise<Queue.Job<JobData>> {
     return this.addJob(type, payload, {
       repeat: {
-        cron: cronExpression
-      }
+        cron: cronExpression,
+      },
     });
   }
 
   private async processDataBatch(
     items: any[],
-    onProgress: (progress: number) => Promise<void>
+    onProgress: (progress: number) => Promise<void>,
   ): Promise<any[]> {
     const results = [];
     const total = items.length;
@@ -273,31 +269,31 @@ class BatchProcessor {
 
   private async processItem(item: any): Promise<any> {
     // Simulate processing
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 100));
     return { ...item, processed: true };
   }
 
   private async generateReport(
     type: string,
     filters: any,
-    format: string
+    format: string,
   ): Promise<any> {
     // Simulate report generation
     return {
       url: `https://cdn.example.com/reports/${uuidv4()}.${format}`,
-      size: 1024 * 1024
+      size: 1024 * 1024,
     };
   }
 
   private async sendEmailBatch(
     recipients: string[],
     template: string,
-    data: any
+    data: any,
   ): Promise<{ successful: number; failed: number }> {
     // Simulate email sending
     return {
       successful: recipients.length,
-      failed: 0
+      failed: 0,
     };
   }
 
@@ -318,26 +314,20 @@ class BatchProcessor {
       failedReason: job.failedReason,
       finishedOn: job.finishedOn,
       processedOn: job.processedOn,
-      logs: logs.logs
+      logs: logs.logs,
     };
   }
 
   async getQueueStats(): Promise<any> {
-    const [
-      waiting,
-      active,
-      completed,
-      failed,
-      delayed,
-      paused
-    ] = await Promise.all([
-      this.queue.getWaitingCount(),
-      this.queue.getActiveCount(),
-      this.queue.getCompletedCount(),
-      this.queue.getFailedCount(),
-      this.queue.getDelayedCount(),
-      this.queue.getPausedCount()
-    ]);
+    const [waiting, active, completed, failed, delayed, paused] =
+      await Promise.all([
+        this.queue.getWaitingCount(),
+        this.queue.getActiveCount(),
+        this.queue.getCompletedCount(),
+        this.queue.getFailedCount(),
+        this.queue.getDelayedCount(),
+        this.queue.getPausedCount(),
+      ]);
 
     return {
       waiting,
@@ -345,7 +335,7 @@ class BatchProcessor {
       completed,
       failed,
       delayed,
-      paused
+      paused,
     };
   }
 
@@ -358,8 +348,8 @@ class BatchProcessor {
   }
 
   async clean(grace: number = 0): Promise<void> {
-    await this.queue.clean(grace, 'completed');
-    await this.queue.clean(grace, 'failed');
+    await this.queue.clean(grace, "completed");
+    await this.queue.clean(grace, "failed");
   }
 
   async close(): Promise<void> {
@@ -369,39 +359,43 @@ class BatchProcessor {
 }
 
 // Usage
-const processor = new BatchProcessor('redis://localhost:6379');
+const processor = new BatchProcessor("redis://localhost:6379");
 
 // Add single job
-const job = await processor.addJob('process-data', {
-  items: [{ id: 1 }, { id: 2 }, { id: 3 }]
+const job = await processor.addJob("process-data", {
+  items: [{ id: 1 }, { id: 2 }, { id: 3 }],
 });
 
 // Add bulk jobs
 await processor.addBulkJobs([
   {
-    type: 'process-data',
-    payload: { items: [/* ... */] }
+    type: "process-data",
+    payload: {
+      items: [
+        /* ... */
+      ],
+    },
   },
   {
-    type: 'generate-report',
-    payload: { type: 'sales', format: 'pdf' }
-  }
+    type: "generate-report",
+    payload: { type: "sales", format: "pdf" },
+  },
 ]);
 
 // Schedule recurring job
 await processor.scheduleJob(
-  'generate-report',
-  { type: 'daily-summary' },
-  '0 0 * * *' // Daily at midnight
+  "generate-report",
+  { type: "daily-summary" },
+  "0 0 * * *", // Daily at midnight
 );
 
 // Check status
 const status = await processor.getJobStatus(job.id!);
-console.log('Job status:', status);
+console.log("Job status:", status);
 
 // Get queue stats
 const stats = await processor.getQueueStats();
-console.log('Queue stats:', stats);
+console.log("Queue stats:", stats);
 ```
 
 ### 2. **Celery-Style Worker (Python)**
@@ -635,7 +629,7 @@ if __name__ == '__main__':
 ### 3. **Cron Job Scheduler**
 
 ```typescript
-import cron from 'node-cron';
+import cron from "node-cron";
 
 interface ScheduledJob {
   name: string;
@@ -729,39 +723,40 @@ const scheduler = new JobScheduler();
 
 // Register jobs
 scheduler.register({
-  name: 'daily-backup',
-  schedule: '0 2 * * *', // 2 AM daily
+  name: "daily-backup",
+  schedule: "0 2 * * *", // 2 AM daily
   enabled: true,
   handler: async () => {
-    console.log('Running daily backup...');
+    console.log("Running daily backup...");
     // Backup logic
-  }
+  },
 });
 
 scheduler.register({
-  name: 'hourly-cleanup',
-  schedule: '0 * * * *', // Every hour
+  name: "hourly-cleanup",
+  schedule: "0 * * * *", // Every hour
   enabled: true,
   handler: async () => {
-    console.log('Running cleanup...');
+    console.log("Running cleanup...");
     // Cleanup logic
-  }
+  },
 });
 
 scheduler.register({
-  name: 'weekly-report',
-  schedule: '0 9 * * 1', // Monday 9 AM
+  name: "weekly-report",
+  schedule: "0 9 * * 1", // Monday 9 AM
   enabled: true,
   handler: async () => {
-    console.log('Generating weekly report...');
+    console.log("Generating weekly report...");
     // Report generation
-  }
+  },
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Implement idempotency for all jobs
 - Use job queues for distributed processing
 - Monitor job success/failure rates
@@ -776,6 +771,7 @@ scheduler.register({
 - Monitor queue depth and processing time
 
 ### ❌ DON'T
+
 - Process jobs synchronously in request handlers
 - Ignore failed jobs
 - Set unlimited retries

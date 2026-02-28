@@ -8,4 +8,4 @@ Scientific research and academic investigation frameworks.
 
 ---
 
-*Professional academic research prompts for scientists, researchers, and principal investigators.*
+_Professional academic research prompts for scientists, researchers, and principal investigators._

@@ -127,12 +127,16 @@ echo "✅ Commit message is valid"
 ```javascript
 // commitlint.config.js
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
+  extends: ["@commitlint/config-conventional"],
   rules: {
-    'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'style', 'refactor', 'test', 'chore']],
-    'subject-case': [2, 'never', ['start-case', 'pascal-case', 'upper-case']],
-    'type-empty': [2, 'never']
-  }
+    "type-enum": [
+      2,
+      "always",
+      ["feat", "fix", "docs", "style", "refactor", "test", "chore"],
+    ],
+    "subject-case": [2, "never", ["start-case", "pascal-case", "upper-case"]],
+    "type-empty": [2, "never"],
+  },
 };
 ```
 
@@ -164,7 +168,7 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
-        args: ['--maxkb=1000']
+        args: ["--maxkb=1000"]
       - id: detect-private-key
       - id: check-merge-conflict
 
@@ -178,19 +182,19 @@ repos:
     rev: 6.0.0
     hooks:
       - id: flake8
-        args: ['--max-line-length=88', '--extend-ignore=E203,W503']
+        args: ["--max-line-length=88", "--extend-ignore=E203,W503"]
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.12.0
     hooks:
       - id: isort
-        args: ['--profile', 'black']
+        args: ["--profile", "black"]
 
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.4.0
     hooks:
       - id: detect-secrets
-        args: ['--baseline', '.secrets.baseline']
+        args: ["--baseline", ".secrets.baseline"]
 
   - repo: https://github.com/commitizen-tools/commitizen
     rev: 3.5.2
@@ -226,6 +230,7 @@ echo "✅ No secrets detected"
 ## Best Practices
 
 ### ✅ DO
+
 - Enforce pre-commit linting and formatting
 - Validate commit message format
 - Scan for secrets before commit
@@ -238,6 +243,7 @@ echo "✅ No secrets detected"
 - Allow developers to bypass with clear warnings
 
 ### ❌ DON'T
+
 - Skip checks with `--no-verify`
 - Store secrets in committed files
 - Use inconsistent implementations

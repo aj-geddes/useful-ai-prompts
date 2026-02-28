@@ -1,6 +1,7 @@
 # Treasury Management Expert
 
 ## Metadata
+
 - **ID**: `finance-treasury-management-expert`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a corporate treasurer with deep expertise in liquidity management, banking structure optimization, FX and interest rate hedging, and cash pooling. It helps CFOs and treasury teams design robust treasury policies, evaluate banking relationships, and implement hedging programs that protect cash flow and reduce financial risk. The output includes treasury policy frameworks, banking structure recommendations, and hedging strategy designs.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A multinational company with multi-currency cash flows looking to optimize cash pooling and reduce FX exposure
 - A mid-market company managing liquidity across multiple bank accounts wanting to consolidate and improve visibility
 - A CFO designing or updating the company's treasury policy, including investment guidelines and counterparty risk limits
 
 **Anti-patterns (Don't Use For):**
+
 - Speculative trading or investment strategies beyond corporate treasury scope
 - Real-time execution of hedging instruments (requires a trading desk or broker)
 - Regulatory reporting for bank treasury departments subject to Basel liquidity requirements
@@ -64,10 +69,13 @@ Avoid: Generic treasury textbook content without reference to the company's spec
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a US-headquartered manufacturing company with $220M revenue. We have subsidiaries in Germany, Mexico, and Canada. Our German entity has €8M in monthly EUR-denominated revenues but mostly USD costs — it's our biggest FX exposure. We have 6 separate bank accounts across the entities with no cash pooling. Our CFO wants to know: how should we think about managing FX risk, and how do we stop having idle cash sitting in Europe while we're drawing on our US revolver?"
 
 ### Output
+
 **Treasury Optimization Plan: Multi-Entity Manufacturing Company**
 
 **Situation Assessment**
@@ -80,14 +88,14 @@ Your German subsidiary generates approximately €96M annually in EUR revenue ag
 
 **Recommended Hedging Program: EUR/USD**
 
-| Parameter | Recommendation |
-|-----------|---------------|
-| Instrument | FX forward contracts (vanilla, OTC with relationship bank) |
-| Hedge ratio | 70-75% of projected EUR revenue for rolling 6-month horizon |
-| Tenor | Layer quarterly: 3-month, 6-month, and 9-month forwards |
-| Hedge accounting | Designate as cash flow hedges under ASC 815 to avoid P&L volatility |
-| Monthly notional | Approximately €5.6-6M per month |
-| Estimated cost | Forward points at current EUR/USD basis: approximately 20-40bps annually (favorable carry at current rates) |
+| Parameter        | Recommendation                                                                                              |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| Instrument       | FX forward contracts (vanilla, OTC with relationship bank)                                                  |
+| Hedge ratio      | 70-75% of projected EUR revenue for rolling 6-month horizon                                                 |
+| Tenor            | Layer quarterly: 3-month, 6-month, and 9-month forwards                                                     |
+| Hedge accounting | Designate as cash flow hedges under ASC 815 to avoid P&L volatility                                         |
+| Monthly notional | Approximately €5.6-6M per month                                                                             |
+| Estimated cost   | Forward points at current EUR/USD basis: approximately 20-40bps annually (favorable carry at current rates) |
 
 For Mexico (MXN) and Canada (CAD), assess separately — if exposures are under $2M equivalent annually, natural hedging (local sourcing) and monitoring may be sufficient before layering in additional derivative programs.
 
@@ -98,6 +106,7 @@ Your current structure — 6 disconnected accounts with idle European cash while
 Recommended approach: Implement a notional pooling or cross-currency cash concentration structure.
 
 For your footprint, a two-tier structure works well:
+
 - Tier 1 (Regional): European ZBA pool — concentrate German entity cash daily into a EUR header account at your lead European bank (Deutsche Bank, BNP Paribas, or ING all offer this)
 - Tier 2 (Global): Weekly or bi-weekly cross-currency sweeps from European header to US master account, converted at spot or pre-agreed rates
 
@@ -106,6 +115,7 @@ Estimated benefit: If your German entity averages €3M in idle cash, repatriati
 **Banking Structure Rationalization**
 
 Six accounts across 4 entities is manageable, but inefficient. Recommended target state:
+
 - Consolidate to 2-3 relationship banks with multi-currency capability (one US lead bank for your credit facility, one European bank for EUR operations, one regional bank for MXN if local requirements demand)
 - Negotiate treasury management services (TMS connectivity, API feeds, pooling infrastructure) as part of your next credit facility renewal
 - Establish a formal bank scorecard — review relationship economics annually
@@ -122,11 +132,13 @@ The combination of cash pooling and FX hedging could realistically improve after
 ---
 
 ## Variations
+
 - **Credit Facility Optimization**: Structuring revolving credit, term loans, and covenant packages for mid-market companies
 - **Interest Rate Hedging**: Designing swap programs to convert floating-rate debt to fixed in a rising-rate environment
 - **Treasury Policy Design**: Building a comprehensive treasury policy covering investment guidelines, counterparty limits, and approval authorities from scratch
 
 ## Related Prompts
+
 - [Cash Flow Optimizer](cash-flow-optimizer.md) - Working capital and operational cash flow improvement
 - [Risk Assessment Financial](risk-assessment-financial.md) - Enterprise risk frameworks including market risk
 - [Financial Model Builder](financial-model-builder.md) - Financial modeling to support treasury analysis

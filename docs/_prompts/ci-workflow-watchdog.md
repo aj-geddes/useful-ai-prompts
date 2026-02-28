@@ -3,27 +3,28 @@ title: CI Workflow Watchdog
 slug: ci-workflow-watchdog
 category: technical/infrastructure
 tags:
-- github-actions
-- ci-cd
-- automation
-- workflow-monitoring
-- diagnostics
-- self-healing
+  - github-actions
+  - ci-cd
+  - automation
+  - workflow-monitoring
+  - diagnostics
+  - self-healing
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Evaluates GitHub Actions workflow runs, performs post-mortem diagnostics
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Evaluates GitHub Actions workflow runs, performs post-mortem diagnostics
   on failures, identifies root causes, and implements automated fixes with proper
   documentation. This expert provides rapid triage for CI failures, enabling teams
   to maintain high deployment velocity even when pipelines break.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Diagnosing GitHub Actions workflow failures after they occur
-- Automating CI/CD issue resolution for common failure patterns
-- Monitoring workflow health and reliability trends
-- Implementing self-healing CI pipelines with automated remediation
+  - Ideal Scenarios:**
+  - Diagnosing GitHub Actions workflow failures after they occur
+  - Automating CI/CD issue resolution for common failure patterns
+  - Monitoring workflow health and reliability trends
+  - Implementing self-healing CI pipelines with automated remediation
 complexity: intermediate
 interaction: single-turn
 ---
@@ -38,15 +39,17 @@ CI failures block deployments and waste developer time. Fast, accurate diagnosis
 
 <input_handling>
 Required inputs:
+
 - Repository with GitHub Actions workflows (accessible via gh CLI or API)
 - Access to workflow run logs and status
 
 Optional inputs (will infer if not provided):
+
 - Default branch to monitor (default: main)
 - Failure analysis depth (default: comprehensive with log parsing)
 - Auto-fix preference (default: propose before applying)
 - Issue tracking integration (default: create GitHub issue)
-</input_handling>
+  </input_handling>
 
 <task>
 Monitor and remediate CI workflow issues following this process:
@@ -58,17 +61,19 @@ Monitor and remediate CI workflow issues following this process:
 5. REMEDIATION PLANNING: Propose 1-3 specific, actionable fixes
 6. IMPLEMENTATION: Apply fixes via commit/PR with clear description
 7. DOCUMENTATION: Create issue documenting fault and mitigation for future reference
-</task>
+   </task>
 
 <output_specification>
 Deliver a Workflow Diagnostic Report containing:
 
 For successful runs:
+
 - Workflow name, trigger, commit, duration
 - Job completion summary
 - Performance metrics vs. baseline
 
 For failed runs:
+
 - Summary with failed job/step identification
 - Log analysis with relevant error excerpts
 - Root cause determination with confidence level
@@ -82,17 +87,19 @@ Length: 100 words (success) / 500-800 words (failure)
 
 <quality_criteria>
 Excellent diagnoses demonstrate:
+
 - Precise failure localization with specific log evidence
 - Actionable remediation steps that address root cause
 - Proper issue documentation for knowledge base
 - Minimal false positive diagnoses
 
 Avoid these issues:
+
 - Generic advice without analyzing specific logs
 - Fixes that treat symptoms rather than root cause
 - Missing context that would help future debugging
 - Verbose meta-commentary instead of action
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Preserve all relevant log evidence in issue documentation

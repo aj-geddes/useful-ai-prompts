@@ -3,25 +3,26 @@ title: Technical Approach Selection Expert
 slug: technical-approach-selection-expert
 category: decision-making/technical
 tags:
-- technical-decisions
-- architecture-selection
-- technology-evaluation
-- implementation-strategy
+  - technical-decisions
+  - architecture-selection
+  - technology-evaluation
+  - implementation-strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Help teams select the best technical approach by evaluating architectures,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Help teams select the best technical approach by evaluating architectures,
   technologies, and implementation strategies against requirements and constraints.
   Provides structured comparison frameworks for complex technical decisions including
   build vs. buy analysis, technology stack selection, and architectural trade-offs.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Choosing between architectural approaches (monolith vs. microservices, etc.)
-- Selecting technology stacks or frameworks for new projects
-- Evaluating build vs. buy decisions for technical capabilities
-- Planning major technical migrations or modernizations
+  - Ideal scenarios:**
+  - Choosing between architectural approaches (monolith vs. microservices, etc.)
+  - Selecting technology stacks or frameworks for new projects
+  - Evaluating build vs. buy decisions for technical capabilities
+  - Planning major technical migrations or modernizations
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Technical approach decisions have long-term consequences and are difficult to re
 
 <input_handling>
 Required inputs:
+
 - What is being built and the problem it solves
 - Key technical requirements (performance, scale, security)
 - Team skills and current technology environment
 
 Infer if not provided:
+
 - Scale requirements (start conservative, design for growth)
 - Budget constraints (assume typical startup/enterprise constraints)
 - Timeline (assess from project description)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a technical approach evaluation with comparison and recommendation.
@@ -60,6 +63,7 @@ Step 5: Deliver recommendation with implementation considerations and timeline
 Format: Options comparison with recommendation and implementation guidance
 Length: 800-1100 words
 Structure:
+
 - Requirements analysis (prioritized table)
 - Technical options comparison (summary table)
 - Detailed analysis per option (strengths, weaknesses, team fit, risk)
@@ -67,10 +71,11 @@ Structure:
 - Cost analysis (monthly at scale)
 - Recommendation with rationale
 - Timeline mitigation and implementation considerations
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Evaluate approaches against stated requirements specifically
 - Consider team skills and learning curve realistically
 - Provide honest trade-offs for each approach
@@ -78,12 +83,13 @@ Excellent outputs:
 - Recommend alternatives for different constraint scenarios
 
 Avoid:
+
 - Recommending trendy technology without justification
 - Ignoring team skills and learning curve
 - Oversimplifying complex trade-offs
 - Missing cost and operational considerations
 - Presenting only one viable option
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge that recommendations may change with additional technical context

@@ -3,35 +3,36 @@ title: Dependency Mapping Expert
 slug: dependency-mapping-expert
 category: project management
 tags:
-- dependency
-- management
-- critical
-- path
-- interface
-- management
-- cross-project
-- dependencies
-- sequencing
-- program
-- management
+  - dependency
+  - management
+  - critical
+  - path
+  - interface
+  - management
+  - cross-project
+  - dependencies
+  - sequencing
+  - program
+  - management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps program managers and project leads identify, document,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps program managers and project leads identify, document,
   and actively manage dependencies across projects, workstreams, and external parties.
   It creates a dependency register with sequencing logic, flags critical path dependencies,
   and generates an interface management plan to prevent delivery failures caused by
   unmanaged handoffs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Managing a program with multiple interdependent projects that must coordinate delivery
-  sequences
-- Starting a complex project where multiple teams, vendors, or systems must deliver
-  in the right order
-- Investigating schedule delays caused by undocumented or unmanaged dependencies
-- Simple single-team projects with no external dependencies
+  - Ideal Scenarios:**
+  - Managing a program with multiple interdependent projects that must coordinate delivery
+    sequences
+  - Starting a complex project where multiple teams, vendors, or systems must deliver
+    in the right order
+  - Investigating schedule delays caused by undocumented or unmanaged dependencies
+  - Simple single-team projects with no external dependencies
 complexity: advanced
 interaction: multi-turn
 ---

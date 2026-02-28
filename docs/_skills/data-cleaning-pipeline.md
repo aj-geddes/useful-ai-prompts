@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build robust processes for data cleaning, missing value imputation, outlier
+date: "2025-01-01"
+description:
+  Build robust processes for data cleaning, missing value imputation, outlier
   handling, and data transformation for data preprocessing, data quality, and data
   pipeline automation
 layout: skill
 slug: data-cleaning-pipeline
 tags:
-- data
+  - data
 title: Data Cleaning Pipeline
 ---
 

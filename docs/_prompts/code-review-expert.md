@@ -3,25 +3,26 @@ title: Code Review Expert
 slug: code-review-expert
 category: evaluation & assessment/technical
 tags:
-- code-review
-- code-quality
-- software-development
-- best-practices
+  - code-review
+  - code-quality
+  - software-development
+  - best-practices
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Conduct thorough code reviews that improve code quality, catch bugs early,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Conduct thorough code reviews that improve code quality, catch bugs early,
   and develop team skills through constructive feedback. Establishes review standards
   and provides structured feedback frameworks that balance quality with pragmatic
   development needs.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Reviewing pull requests or code changes
-- Establishing team code review standards and guidelines
-- Evaluating code quality and maintainability
-- Providing constructive feedback to developers
+  - Ideal scenarios:**
+  - Reviewing pull requests or code changes
+  - Establishing team code review standards and guidelines
+  - Evaluating code quality and maintainability
+  - Providing constructive feedback to developers
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Code reviews serve multiple purposes: catching bugs, improving code quality, kno
 
 <input_handling>
 Required inputs:
+
 - Code language and framework
 - Purpose of the code change
 - Specific concerns or focus areas
 
 Infer if not provided:
+
 - Coding standards (use industry best practices)
 - Team experience level (provide appropriate detail)
 - Performance requirements (flag obvious issues)
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct a comprehensive code review with prioritized, actionable feedback.
@@ -60,15 +63,17 @@ Step 5: Provide categorized feedback with improvement suggestions
 Format: Categorized issues with specific suggestions
 Length: 600-1000 words (depending on code complexity)
 Structure:
+
 - Critical issues (must fix before merge)
 - Major issues (should fix, significant impact)
 - Minor issues (nice to have, style or minor improvements)
 - Positive observations (what was done well)
 - Suggested refactor (if applicable, with code example)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Focus on correctness and security first
 - Provide specific, actionable suggestions with code examples
 - Explain the "why" behind recommendations
@@ -76,12 +81,13 @@ Excellent outputs:
 - Prioritize by impact and risk
 
 Avoid:
+
 - Style nitpicking without substance
 - Vague feedback without solutions
 - Condescending or demoralizing tone
 - Missing critical bugs for minor issues
 - Over-engineering suggestions for simple code
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge when issues require additional context to fully assess

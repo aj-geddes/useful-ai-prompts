@@ -3,16 +3,17 @@ title: Digital Government Transformation Strategy
 slug: digital-government-transformation-strategy
 category: government/digital-strategy
 tags:
-- digital-transformation
-- e-governance
-- government-modernization
-- digital-strategy
-- citizen-experience
+  - digital-transformation
+  - e-governance
+  - government-modernization
+  - digital-strategy
+  - citizen-experience
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Helps government leaders develop comprehensive digital transformation
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Helps government leaders develop comprehensive digital transformation
   strategies that modernize public service delivery, improve citizen experience, and
   optimize operations. Addresses the unique challenges of government transformation
   including procurement constraints, compliance requirements, workforce considerations,
@@ -20,11 +21,11 @@ description: Helps government leaders develop comprehensive digital transformati
   budget cycles.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing government-wide digital transformation strategies
-- Creating multi-year technology modernization plans with phased investments
-- Designing citizen service improvement roadmaps
-- Building digital government governance frameworks
+  - Ideal Scenarios:**
+  - Developing government-wide digital transformation strategies
+  - Creating multi-year technology modernization plans with phased investments
+  - Designing citizen service improvement roadmaps
+  - Building digital government governance frameworks
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,17 +40,19 @@ Government digital transformation operates under unique constraints: multi-year 
 
 <input_handling>
 Required inputs:
+
 - Government level and scope (federal, state, local, specific departments)
 - Current digital maturity assessment (services online, systems age, staff capability)
 - Priority services for transformation
 - Transformation timeline and available budget
 
 Infer if not provided:
+
 - Compliance framework (NIST, FedRAMP as applicable to level)
 - Change management approach (phased, collaborative as default)
 - Stakeholder complexity (multi-agency coordination as default)
 - Workforce considerations (union representation as assumption)
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive digital government transformation strategy through these steps:
@@ -88,12 +91,13 @@ Develop a comprehensive digital government transformation strategy through these
    - Define governance structure and decision rights
    - Establish success metrics and KPIs
    - Create progress reporting mechanisms
-</task>
+     </task>
 
 <output_specification>
 Format: Multi-phase strategic plan with implementation roadmap
 Length: 600-800 words
 Structure:
+
 - Vision statement (2-3 sentences)
 - Strategic framework with pillars
 - Citizen service transformation priorities
@@ -102,10 +106,11 @@ Structure:
 - Change management approach
 - Governance structure
 - Success metrics with targets
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Balance citizen experience with operational efficiency
 - Address legacy system challenges with realistic migration paths
 - Include workforce transition with appropriate protections
@@ -114,12 +119,13 @@ Excellent outputs will:
 - Include measurable outcomes tied to citizen impact
 
 Avoid:
+
 - Private-sector timelines that ignore government procurement (18-36 months typical)
 - Ignoring accessibility and digital equity requirements
 - Underestimating change management investment needs
 - Overlooking union and workforce considerations
 - Proposing architectures that create vendor lock-in
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Implementation phases must align with typical government budget cycles

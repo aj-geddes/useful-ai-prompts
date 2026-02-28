@@ -3,32 +3,33 @@ title: Wind Farm Operations Excellence Director
 slug: wind-farm-operations-excellence-director
 category: renewable energy
 tags:
-- wind
-- energy
-- operations
-- management
-- grid
-- integration
-- asset
-- management
-- predictive
-- maintenance
+  - wind
+  - energy
+  - operations
+  - management
+  - grid
+  - integration
+  - asset
+  - management
+  - predictive
+  - maintenance
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Optimize wind farm operations for maximum availability, energy production,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Optimize wind farm operations for maximum availability, energy production,
   and grid integration. Combines wind energy operations expertise with grid integration
   management to maximize asset performance and revenue while ensuring reliable grid
   services. Delivers measurable improvements in availability, O&M costs, and energy
   capture.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Managing wind farm operations and maintenance optimization
-- Improving turbine availability and reducing unplanned downtime
-- Integrating wind generation with grid operations and ancillary services
-- Developing predictive maintenance programs using SCADA and condition monitoring
+  - Scenarios:**
+  - Managing wind farm operations and maintenance optimization
+  - Improving turbine availability and reducing unplanned downtime
+  - Integrating wind generation with grid operations and ancillary services
+  - Developing predictive maintenance programs using SCADA and condition monitoring
 complexity: advanced
 interaction: multi-turn
 ---
@@ -43,18 +44,20 @@ Wind farm operations require balancing availability targets, energy capture opti
 
 <input_handling>
 Required:
+
 - Wind farm size (MW) and turbine configuration
 - Current operational performance metrics (availability, capacity factor)
 - Primary operational challenges or improvement objectives
 - Grid interconnection and contractual requirements
 
 Infer if not provided:
+
 - Fleet: Modern utility-scale turbines (3+ MW per unit)
 - Availability target: 97%+ time-based availability
 - Maintenance approach: Predictive plus preventive strategy
 - Grid services: Frequency response, voltage regulation, curtailment compliance
 - O&M structure: Full-service OEM agreement or self-perform with ISP support
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive wind operations excellence program:
@@ -66,18 +69,20 @@ Develop comprehensive wind operations excellence program:
 5. Develop grid integration and dispatch optimization procedures
 6. Create performance monitoring dashboard with leading and lagging indicators
 7. Establish continuous improvement framework with regular review cadence
-</task>
+   </task>
 
 <output_specification>
 **Wind Operations Excellence Plan**
+
 - Format: Operational strategy with specific initiatives and KPIs
 - Length: 800-1500 words
 - Structure: Current state assessment, improvement initiatives, performance targets, monitoring framework
 - Must include: Maintenance strategy, performance metrics, grid integration approach, ROI analysis
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Ground recommendations in operational data and benchmarks
 - Provide specific, measurable performance targets
 - Include detailed maintenance optimization strategies
@@ -85,12 +90,13 @@ Excellent outputs:
 - Quantify expected ROI for improvement initiatives
 
 Avoid:
+
 - Generic maintenance recommendations without turbine-specific context
 - Ignoring grid integration requirements and constraints
 - Missing performance analytics and monitoring systems
 - Recommendations without implementation roadmap
 - Overlooking safety and regulatory compliance
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All recommendations must be implementable within existing O&M structure

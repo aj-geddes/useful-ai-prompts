@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Map, track, and manage project dependencies across teams, systems, and
+date: "2025-01-01"
+description:
+  Map, track, and manage project dependencies across teams, systems, and
   organizations. Identify critical path items and prevent blocking issues through
   proactive dependency management.
 layout: skill
 slug: dependency-tracking
 tags:
-- development
+  - development
 title: dependency-tracking
 ---
 
@@ -219,28 +220,28 @@ class DependencyResolution {
       conflict: {
         blocking_task: blocker.name,
         blocked_task: blocked.name,
-        reason: 'Circular dependency detected'
+        reason: "Circular dependency detected",
       },
       resolution_options: [
         {
-          option: 'Parallelize Work',
-          description: 'Identify independent portions that can proceed',
-          effort: 'Medium',
-          timeline: 'Can save 5 days'
+          option: "Parallelize Work",
+          description: "Identify independent portions that can proceed",
+          effort: "Medium",
+          timeline: "Can save 5 days",
         },
         {
-          option: 'Remove/Defer Blocker',
-          description: 'Defer non-critical requirements',
-          effort: 'Low',
-          timeline: 'Immediate'
+          option: "Remove/Defer Blocker",
+          description: "Defer non-critical requirements",
+          effort: "Low",
+          timeline: "Immediate",
         },
         {
-          option: 'Create Interim Deliverable',
-          description: 'Deliver partial results to unblock downstream',
-          effort: 'High',
-          timeline: 'Can save 8 days'
-        }
-      ]
+          option: "Create Interim Deliverable",
+          description: "Deliver partial results to unblock downstream",
+          effort: "High",
+          timeline: "Can save 8 days",
+        },
+      ],
     };
   }
 
@@ -249,47 +250,47 @@ class DependencyResolution {
       current_state: dependency,
       break_strategies: [
         {
-          strategy: 'Remove unnecessary dependency',
-          action: 'Refactor to eliminate requirement',
-          risk: 'Low if verified'
+          strategy: "Remove unnecessary dependency",
+          action: "Refactor to eliminate requirement",
+          risk: "Low if verified",
         },
         {
-          strategy: 'Mock/Stub external dependency',
-          action: 'Create temporary implementation',
-          risk: 'Medium - ensures compatibility'
+          strategy: "Mock/Stub external dependency",
+          action: "Create temporary implementation",
+          risk: "Medium - ensures compatibility",
         },
         {
-          strategy: 'Parallel development',
-          action: 'Make assumptions, validate later',
-          risk: 'Medium - rework possible'
+          strategy: "Parallel development",
+          action: "Make assumptions, validate later",
+          risk: "Medium - rework possible",
         },
         {
-          strategy: 'Resource addition',
-          action: 'Parallelize work streams',
-          risk: 'Low but costly'
-        }
-      ]
+          strategy: "Resource addition",
+          action: "Parallelize work streams",
+          risk: "Low but costly",
+        },
+      ],
     };
   }
 
   handleBlockedTask(task) {
     return {
       task_id: task.id,
-      status: 'Blocked',
+      status: "Blocked",
       blocker: task.blocked_by[0],
       time_blocked: task.calculateBlockedDuration(),
       actions: [
-        'Notify team of blockage',
-        'Escalate if critical path',
-        'Identify alternative work',
-        'Schedule resolution meeting',
-        'Track blocker closure date'
+        "Notify team of blockage",
+        "Escalate if critical path",
+        "Identify alternative work",
+        "Schedule resolution meeting",
+        "Track blocker closure date",
       ],
       escalation: {
         immediate: task.is_critical_path,
         owner: task.program_manager,
-        frequency: 'Daily standup until resolved'
-      }
+        frequency: "Daily standup until resolved",
+      },
     };
   }
 }
@@ -329,6 +330,7 @@ Escalations:
 ## Best Practices
 
 ### ✅ DO
+
 - Map dependencies early in planning
 - Update dependency tracking weekly
 - Identify and monitor critical path items
@@ -341,6 +343,7 @@ Escalations:
 - Build in buffer time for risky dependencies
 
 ### ❌ DON'T
+
 - Ignore external dependencies
 - Leave circular dependencies unresolved
 - Assume dependencies will "work out"

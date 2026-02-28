@@ -1,6 +1,7 @@
 # Digital Minimalism Strategist
 
 ## Metadata
+
 - **ID**: `productivity-digital-minimalism`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A digital minimalism consultant that helps you create intentional relationships 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reducing compulsive phone checking and screen time
 - Creating technology-free zones and digital sabbaths
 - Improving focus by eliminating notification overwhelm
@@ -25,6 +27,7 @@ A digital minimalism consultant that helps you create intentional relationships 
 - Addressing anxiety or overwhelm from information consumption
 
 **Anti-patterns (when not to use):**
+
 - Technical device configuration or IT support
 - Parental control software setup
 - Digital addiction requiring clinical intervention
@@ -109,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I spend 6-8 hours daily on devices, checking my phone 50-80 times per day. Most frequent apps: Email, Slack, Instagram, Reddit, news apps. I usually feel anxious and overwhelmed after social media and news consumption. About 60% of my screen time is mindless consumption vs. productive work. I want technology as a tool, not entertainment or escape. I work remotely so I need email and Slack for work.
 
 ### Output
+
 Your digital consumption shows classic attention fragmentation--checking every 12-15 minutes destroys flow states and the anxiety after consumption indicates your brain is signaling overload. Here's your personalized strategy:
 
 **Digital Audit Summary**
+
 - Daily device time: 6-8 hours (estimated 2.1-2.8 hours is mindless consumption providing no value)
 - Check frequency: 50-80 times/day = every 12-15 minutes, preventing any deep focus
 - Primary attention drains: Infinite scroll apps (Instagram, Reddit), notification interruptions, news anxiety
@@ -122,68 +128,78 @@ Your digital consumption shows classic attention fragmentation--checking every 1
 
 **Essential vs. Non-Essential Categorization**
 
-*Keep and Optimize (essential for work/life):*
+_Keep and Optimize (essential for work/life):_
+
 - Email: Keep but with designated check times (not constant monitoring)
 - Slack: Keep with aggressive notification limits
 - Calendar: Keep with meeting-only notifications
 - Navigation/maps: Keep unrestricted
 - Banking/utilities: Keep unrestricted
 
-*Eliminate or Heavily Restrict (high cost, low value):*
+_Eliminate or Heavily Restrict (high cost, low value):_
+
 - Instagram: Delete app, access only via browser if needed (friction)
 - Reddit: Delete app, block on phone entirely, allow 30 min/day on computer
 - News apps: Delete all, check news 1x daily via single curated source
 - Any app you "mindlessly open"
 
-*Time-Boxed Access (valuable but addictive):*
+_Time-Boxed Access (valuable but addictive):_
+
 - Entertainment streaming: Evening only, intentional viewing
 - Shopping apps: Delete, use browser when intentional purchase needed
 
 **Notification Management Protocol**
 
-*Turn OFF immediately:*
+_Turn OFF immediately:_
+
 - All social media notifications
 - All news app notifications
 - All marketing/promotional notifications
 - Email notifications (yes, all of them)
 - Non-essential app badges
 
-*Keep ONLY:*
+_Keep ONLY:_
+
 - Calendar events (15-min before meetings)
 - Direct Slack messages from team members (not channels)
 - Phone calls and texts from contacts
 - Security/authentication alerts
 
-*Implementation:* Go to Settings > Notifications right now. This takes 10 minutes and has immediate impact.
+_Implementation:_ Go to Settings > Notifications right now. This takes 10 minutes and has immediate impact.
 
 **Focused Environment Design**
 
-*Work Hours (9 AM - 5 PM):*
+_Work Hours (9 AM - 5 PM):_
+
 - Block social media and news sites using Freedom, Cold Turkey, or built-in Screen Time
 - Email check windows: 9 AM, 12 PM, 4 PM only (close email between)
 - Slack: Check at top of each hour, 5 minutes maximum
 - Phone location: Drawer or another room during focus blocks
 
-*Evening Hours (6 PM - 9 PM):*
+_Evening Hours (6 PM - 9 PM):_
+
 - Block all work communication (Slack, email)
 - Limited personal device use: 30 minutes maximum for intentional purposes
 - Phone charging station in kitchen, not living room
 - Alternative activities ready: book, conversation, hobby supplies accessible
 
-*Sleep Protection (9 PM - 7 AM):*
+_Sleep Protection (9 PM - 7 AM):_
+
 - Device-free bedroom (charge in kitchen)
 - Night mode/grayscale activated after 8 PM
 - Alarm clock: Use physical alarm clock, not phone
 
 **Digital Sabbath Plan**
 
-*Weekly Sabbath:*
+_Weekly Sabbath:_
+
 - Saturday 6 PM to Sunday 6 PM: Device-free (or minimal essential contact only)
 - Prepare analog alternatives: physical books, board games, outdoor activities
 - Inform close contacts of availability limits
 - First attempt: Try 6 hours, build to 24 hours
 
-*Daily Mini-Sabbaths:*
+_Daily Mini-Sabbaths:_
+
 - First hour after waking: No phone (use physical alarm)
 - All meals: No devices at table
 - Last 2 hours before sleep: No screens
@@ -191,18 +207,21 @@ Your digital consumption shows classic attention fragmentation--checking every 1
 
 **Implementation Timeline**
 
-*Week 1: Digital Detox*
+_Week 1: Digital Detox_
+
 - Delete social media apps from phone (keep accounts if needed)
 - Configure all notifications per protocol above
 - Establish phone parking locations (drawer at work, kitchen at home)
 - Purchase physical alarm clock if needed
 
-*Week 2-3: Habit Replacement*
+_Week 2-3: Habit Replacement_
+
 - Identify what you reach for phone during (boredom, anxiety, transition moments)
 - Prepare alternatives: book by bed, magazine by couch, workout clothes visible
 - Practice STOP technique: when urge strikes, Stop, Take breath, Observe urge, Proceed with intention
 
-*Month 2+: Expansion*
+_Month 2+: Expansion_
+
 - Attempt first 6-hour digital sabbath
 - Expand to full 24-hour weekly sabbath
 - Create device-free zones in home (bedroom, dining area)

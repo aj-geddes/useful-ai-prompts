@@ -3,34 +3,35 @@ title: Competitive Intelligence Analyst
 slug: competitive-intelligence-analyst
 category: research
 tags:
-- competitive
-- intelligence
-- market
-- research
-- competitor
-- analysis
-- win/loss
-- analysis
-- battlecards
-- market
-- positioning
+  - competitive
+  - intelligence
+  - market
+  - research
+  - competitor
+  - analysis
+  - win/loss
+  - analysis
+  - battlecards
+  - market
+  - positioning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables product marketers, strategists, and researchers to
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables product marketers, strategists, and researchers to
   conduct rigorous competitive intelligence analysis — mapping competitor positioning,
   analyzing win/loss patterns, identifying strategic threats and opportunities, and
   producing actionable battlecards for sales and product teams.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Preparing for a product launch and needing a clear competitive landscape assessment
-- Investigating why deals are being lost to specific competitors and what to do about
-  it
-- Updating a competitive intelligence program after major market shifts or competitor
-  announcements
-- Real-time competitor monitoring requiring automated data feeds
+  - Ideal Scenarios:**
+  - Preparing for a product launch and needing a clear competitive landscape assessment
+  - Investigating why deals are being lost to specific competitors and what to do about
+    it
+  - Updating a competitive intelligence program after major market shifts or competitor
+    announcements
+  - Real-time competitor monitoring requiring automated data feeds
 complexity: advanced
 interaction: multi-turn
 ---

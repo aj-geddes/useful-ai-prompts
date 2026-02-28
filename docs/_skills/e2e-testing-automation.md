@@ -1,13 +1,14 @@
 ---
 category: testing-qa
-date: '2025-01-01'
-description: Build end-to-end automated tests that simulate real user interactions
+date: "2025-01-01"
+description:
+  Build end-to-end automated tests that simulate real user interactions
   across the full application stack. Use for E2E test, Selenium, Cypress, Playwright,
   browser automation, and user journey testing.
 layout: skill
 slug: e2e-testing-automation
 tags:
-- testing
+  - testing
 title: e2e-testing-automation
 ---
 
@@ -33,73 +34,79 @@ End-to-end (E2E) testing validates complete user workflows from the UI through a
 
 ```typescript
 // tests/e2e/checkout.spec.ts
-import { test, expect, Page } from '@playwright/test';
+import { test, expect, Page } from "@playwright/test";
 
-test.describe('E-commerce Checkout Flow', () => {
+test.describe("E-commerce Checkout Flow", () => {
   let page: Page;
 
   test.beforeEach(async ({ page: p }) => {
     page = p;
-    await page.goto('/');
+    await page.goto("/");
   });
 
-  test('complete checkout flow as guest user', async () => {
+  test("complete checkout flow as guest user", async () => {
     // 1. Browse and add product to cart
-    await page.click('text=Shop Now');
+    await page.click("text=Shop Now");
     await page.click('[data-testid="product-1"]');
-    await expect(page.locator('h1')).toContainText('Product Name');
+    await expect(page.locator("h1")).toContainText("Product Name");
 
     await page.click('button:has-text("Add to Cart")');
-    await expect(page.locator('.cart-count')).toHaveText('1');
+    await expect(page.locator(".cart-count")).toHaveText("1");
 
     // 2. Go to cart and proceed to checkout
     await page.click('[data-testid="cart-icon"]');
-    await expect(page.locator('.cart-item')).toHaveCount(1);
-    await page.click('text=Proceed to Checkout');
+    await expect(page.locator(".cart-item")).toHaveCount(1);
+    await page.click("text=Proceed to Checkout");
 
     // 3. Fill shipping information
-    await page.fill('[name="email"]', 'test@example.com');
-    await page.fill('[name="firstName"]', 'John');
-    await page.fill('[name="lastName"]', 'Doe');
-    await page.fill('[name="address"]', '123 Main St');
-    await page.fill('[name="city"]', 'San Francisco');
-    await page.selectOption('[name="state"]', 'CA');
-    await page.fill('[name="zip"]', '94105');
+    await page.fill('[name="email"]', "test@example.com");
+    await page.fill('[name="firstName"]', "John");
+    await page.fill('[name="lastName"]', "Doe");
+    await page.fill('[name="address"]', "123 Main St");
+    await page.fill('[name="city"]', "San Francisco");
+    await page.selectOption('[name="state"]', "CA");
+    await page.fill('[name="zip"]', "94105");
 
     // 4. Enter payment information
-    await page.click('text=Continue to Payment');
+    await page.click("text=Continue to Payment");
 
     // Wait for payment iframe to load
     const paymentFrame = page.frameLocator('iframe[name="payment-frame"]');
-    await paymentFrame.locator('[name="cardNumber"]').fill('4242424242424242');
-    await paymentFrame.locator('[name="expiry"]').fill('12/25');
-    await paymentFrame.locator('[name="cvc"]').fill('123');
+    await paymentFrame.locator('[name="cardNumber"]').fill("4242424242424242");
+    await paymentFrame.locator('[name="expiry"]').fill("12/25");
+    await paymentFrame.locator('[name="cvc"]').fill("123");
 
     // 5. Complete order
     await page.click('button:has-text("Place Order")');
 
     // 6. Verify success
     await expect(page).toHaveURL(/\/order\/confirmation/);
-    await expect(page.locator('.confirmation-message')).toContainText('Order placed successfully');
+    await expect(page.locator(".confirmation-message")).toContainText(
+      "Order placed successfully",
+    );
 
-    const orderNumber = await page.locator('[data-testid="order-number"]').textContent();
+    const orderNumber = await page
+      .locator('[data-testid="order-number"]')
+      .textContent();
     expect(orderNumber).toMatch(/^ORD-\d+$/);
   });
 
-  test('checkout with existing user account', async () => {
+  test("checkout with existing user account", async () => {
     // Login first
-    await page.click('text=Sign In');
-    await page.fill('[name="email"]', 'existing@example.com');
-    await page.fill('[name="password"]', 'Password123!');
+    await page.click("text=Sign In");
+    await page.fill('[name="email"]', "existing@example.com");
+    await page.fill('[name="password"]', "Password123!");
     await page.click('button[type="submit"]');
 
-    await expect(page.locator('.user-menu')).toContainText('existing@example.com');
+    await expect(page.locator(".user-menu")).toContainText(
+      "existing@example.com",
+    );
 
     // Add product and checkout with saved information
     await page.click('[data-testid="product-2"]');
     await page.click('button:has-text("Add to Cart")');
     await page.click('[data-testid="cart-icon"]');
-    await page.click('text=Checkout');
+    await page.click("text=Checkout");
 
     // Verify saved address is pre-filled
     await expect(page.locator('[name="address"]')).toHaveValue(/./);
@@ -111,12 +118,12 @@ test.describe('E-commerce Checkout Flow', () => {
     await expect(page).toHaveURL(/\/order\/confirmation/);
   });
 
-  test('handle out of stock product', async () => {
+  test("handle out of stock product", async () => {
     await page.click('[data-testid="product-out-of-stock"]');
 
     const addToCartButton = page.locator('button:has-text("Add to Cart")');
     await expect(addToCartButton).toBeDisabled();
-    await expect(page.locator('.stock-status')).toHaveText('Out of Stock');
+    await expect(page.locator(".stock-status")).toHaveText("Out of Stock");
   });
 });
 ```
@@ -125,22 +132,22 @@ test.describe('E-commerce Checkout Flow', () => {
 
 ```javascript
 // cypress/e2e/authentication.cy.js
-describe('User Authentication Flow', () => {
+describe("User Authentication Flow", () => {
   beforeEach(() => {
-    cy.visit('/');
+    cy.visit("/");
   });
 
-  it('should register a new user account', () => {
+  it("should register a new user account", () => {
     cy.get('[data-cy="signup-button"]').click();
-    cy.url().should('include', '/signup');
+    cy.url().should("include", "/signup");
 
     // Fill registration form
     const timestamp = Date.now();
     cy.get('[name="email"]').type(`user${timestamp}@example.com`);
-    cy.get('[name="password"]').type('SecurePass123!');
-    cy.get('[name="confirmPassword"]').type('SecurePass123!');
-    cy.get('[name="firstName"]').type('Test');
-    cy.get('[name="lastName"]').type('User');
+    cy.get('[name="password"]').type("SecurePass123!");
+    cy.get('[name="confirmPassword"]').type("SecurePass123!");
+    cy.get('[name="firstName"]').type("Test");
+    cy.get('[name="lastName"]').type("User");
 
     // Accept terms
     cy.get('[name="acceptTerms"]').check();
@@ -149,97 +156,94 @@ describe('User Authentication Flow', () => {
     cy.get('button[type="submit"]').click();
 
     // Verify success
-    cy.url().should('include', '/dashboard');
-    cy.get('.welcome-message').should('contain', 'Welcome, Test!');
+    cy.url().should("include", "/dashboard");
+    cy.get(".welcome-message").should("contain", "Welcome, Test!");
 
     // Verify email sent (check via API)
     cy.request(`/api/test/emails/${timestamp}@example.com`)
-      .its('body')
-      .should('have.property', 'subject', 'Welcome to Our App');
+      .its("body")
+      .should("have.property", "subject", "Welcome to Our App");
   });
 
-  it('should handle validation errors', () => {
+  it("should handle validation errors", () => {
     cy.get('[data-cy="signup-button"]').click();
 
     // Submit empty form
     cy.get('button[type="submit"]').click();
 
     // Check for validation errors
-    cy.get('.error-message').should('have.length.greaterThan', 0);
-    cy.get('[name="email"]')
-      .parent()
-      .should('contain', 'Email is required');
+    cy.get(".error-message").should("have.length.greaterThan", 0);
+    cy.get('[name="email"]').parent().should("contain", "Email is required");
 
     // Fill invalid email
-    cy.get('[name="email"]').type('invalid-email');
-    cy.get('[name="password"]').type('weak');
+    cy.get('[name="email"]').type("invalid-email");
+    cy.get('[name="password"]').type("weak");
     cy.get('button[type="submit"]').click();
 
-    cy.get('[name="email"]')
-      .parent()
-      .should('contain', 'Invalid email format');
+    cy.get('[name="email"]').parent().should("contain", "Invalid email format");
     cy.get('[name="password"]')
       .parent()
-      .should('contain', 'Password must be at least 8 characters');
+      .should("contain", "Password must be at least 8 characters");
   });
 
-  it('should login with valid credentials', () => {
+  it("should login with valid credentials", () => {
     // Create test user first
-    cy.request('POST', '/api/test/users', {
-      email: 'test@example.com',
-      password: 'Password123!',
-      name: 'Test User'
+    cy.request("POST", "/api/test/users", {
+      email: "test@example.com",
+      password: "Password123!",
+      name: "Test User",
     });
 
     // Login
     cy.get('[data-cy="login-button"]').click();
-    cy.get('[name="email"]').type('test@example.com');
-    cy.get('[name="password"]').type('Password123!');
+    cy.get('[name="email"]').type("test@example.com");
+    cy.get('[name="password"]').type("Password123!");
     cy.get('button[type="submit"]').click();
 
     // Verify login successful
-    cy.url().should('include', '/dashboard');
-    cy.getCookie('auth_token').should('exist');
+    cy.url().should("include", "/dashboard");
+    cy.getCookie("auth_token").should("exist");
 
     // Verify user menu
     cy.get('[data-cy="user-menu"]').click();
-    cy.get('.user-email').should('contain', 'test@example.com');
+    cy.get(".user-email").should("contain", "test@example.com");
   });
 
-  it('should maintain session across page reloads', () => {
+  it("should maintain session across page reloads", () => {
     // Login
-    cy.loginViaAPI('test@example.com', 'Password123!');
-    cy.visit('/dashboard');
+    cy.loginViaAPI("test@example.com", "Password123!");
+    cy.visit("/dashboard");
 
     // Verify logged in
-    cy.get('.user-menu').should('exist');
+    cy.get(".user-menu").should("exist");
 
     // Reload page
     cy.reload();
 
     // Still logged in
-    cy.get('.user-menu').should('exist');
-    cy.getCookie('auth_token').should('exist');
+    cy.get(".user-menu").should("exist");
+    cy.getCookie("auth_token").should("exist");
   });
 
-  it('should logout successfully', () => {
-    cy.loginViaAPI('test@example.com', 'Password123!');
-    cy.visit('/dashboard');
+  it("should logout successfully", () => {
+    cy.loginViaAPI("test@example.com", "Password123!");
+    cy.visit("/dashboard");
 
     cy.get('[data-cy="user-menu"]').click();
     cy.get('[data-cy="logout-button"]').click();
 
-    cy.url().should('equal', Cypress.config().baseUrl + '/');
-    cy.getCookie('auth_token').should('not.exist');
+    cy.url().should("equal", Cypress.config().baseUrl + "/");
+    cy.getCookie("auth_token").should("not.exist");
   });
 });
 
 // Custom command for login
-Cypress.Commands.add('loginViaAPI', (email, password) => {
-  cy.request('POST', '/api/auth/login', { email, password })
-    .then((response) => {
-      window.localStorage.setItem('auth_token', response.body.token);
-    });
+Cypress.Commands.add("loginViaAPI", (email, password) => {
+  cy.request("POST", "/api/auth/login", { email, password }).then(
+    (response) => {
+      window.localStorage.setItem("auth_token", response.body.token);
+    },
+  );
 });
 ```
 
@@ -377,7 +381,7 @@ class TestSearchFunctionality:
 
 ```typescript
 // pages/LoginPage.ts
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator } from "@playwright/test";
 
 export class LoginPage {
   readonly page: Page;
@@ -391,11 +395,11 @@ export class LoginPage {
     this.emailInput = page.locator('[name="email"]');
     this.passwordInput = page.locator('[name="password"]');
     this.loginButton = page.locator('button[type="submit"]');
-    this.errorMessage = page.locator('.error-message');
+    this.errorMessage = page.locator(".error-message");
   }
 
   async goto() {
-    await this.page.goto('/login');
+    await this.page.goto("/login");
   }
 
   async login(email: string, password: string) {
@@ -410,22 +414,23 @@ export class LoginPage {
 }
 
 // tests/login.spec.ts
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
+import { test, expect } from "@playwright/test";
+import { LoginPage } from "../pages/LoginPage";
 
-test('login with invalid credentials', async ({ page }) => {
+test("login with invalid credentials", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
-  await loginPage.login('invalid@example.com', 'wrongpassword');
+  await loginPage.login("invalid@example.com", "wrongpassword");
 
   const error = await loginPage.getErrorMessage();
-  expect(error).toContain('Invalid credentials');
+  expect(error).toContain("Invalid credentials");
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use data-testid attributes for stable selectors
 - Implement Page Object Model for maintainability
 - Test critical user journeys thoroughly
@@ -436,6 +441,7 @@ test('login with invalid credentials', async ({ page }) => {
 - Parallelize test execution where possible
 
 ### ❌ DON'T
+
 - Use brittle CSS selectors (like nth-child)
 - Test every possible UI combination (focus on critical paths)
 - Share state between tests
@@ -457,29 +463,29 @@ test('login with invalid credentials', async ({ page }) => {
 
 ```javascript
 // playwright.config.ts
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './tests/e2e',
+  testDir: "./tests/e2e",
   timeout: 30000,
   retries: 2,
   workers: process.env.CI ? 2 : 4,
 
   use: {
-    baseURL: 'http://localhost:3000',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-    trace: 'on-first-retry',
+    baseURL: "http://localhost:3000",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "on-first-retry",
   },
 
   projects: [
-    { name: 'chromium', use: { browserName: 'chromium' } },
-    { name: 'firefox', use: { browserName: 'firefox' } },
-    { name: 'webkit', use: { browserName: 'webkit' } },
+    { name: "chromium", use: { browserName: "chromium" } },
+    { name: "firefox", use: { browserName: "firefox" } },
+    { name: "webkit", use: { browserName: "webkit" } },
   ],
 
   webServer: {
-    command: 'npm run start',
+    command: "npm run start",
     port: 3000,
     reuseExistingServer: !process.env.CI,
   },

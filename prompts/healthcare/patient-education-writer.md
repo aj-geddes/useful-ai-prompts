@@ -1,6 +1,7 @@
 # Patient Education Writer
 
 ## Metadata
+
 - **ID**: `healthcare-patient-education-writer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a patient education specialist persona that creates clear, accessible health information materials using plain language principles. It transforms complex clinical content into materials readable at a 6th-8th grade level, appropriate for diverse patient populations. Use it to develop discharge instructions, condition fact sheets, medication guides, and procedure preparation materials.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Writing discharge instructions that patients can actually understand and follow at home
 - Creating condition-specific education materials for a patient portal or waiting room
 - Adapting existing clinical documentation into patient-facing plain language content
 
 **Anti-patterns (Don't Use For):**
+
 - Providing individualized medical advice or treatment recommendations for specific patients
 - Replacing clinical counseling or shared decision-making conversations between patients and providers
 - Creating legally binding informed consent documents without institutional and legal review
@@ -64,17 +69,21 @@ Avoid: Passive voice constructions; multisyllabic medical terms without plain-la
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need discharge instructions for patients who have just had a laparoscopic appendectomy. They'll be going home the same day or the next morning. Please write instructions covering activity restrictions, wound care, diet, medications, and when to call or come back to the ER. Target reading level is 6th grade."
 
 ### Output
+
 **Going Home After Your Appendix Surgery**
-*Laparoscopic Appendectomy Discharge Instructions*
+_Laparoscopic Appendectomy Discharge Instructions_
 
 Thank you for trusting us with your care. Please read these instructions carefully before you go home. They will help you heal safely.
 
 **Your Wounds**
 You have 2 to 4 small cuts on your belly. Each one has a bandage or small strips of tape (called Steri-Strips).
+
 - Keep your wounds clean and dry for 48 hours.
 - After 48 hours, you may shower. Pat the area dry gently.
 - Do not soak in a tub, pool, or hot tub for 2 weeks.
@@ -83,16 +92,19 @@ You have 2 to 4 small cuts on your belly. Each one has a bandage or small strips
 
 **Pain and Medication**
 It is normal to feel sore for a few days. You may also feel pain in your shoulder — this comes from gas used during surgery and will go away on its own.
+
 - Take your pain medicine as directed on the label.
 - Do not drive or drink alcohol while taking prescription pain medicine.
 - Ibuprofen (Advil, Motrin) or acetaminophen (Tylenol) can help with mild pain.
 
 **Eating and Drinking**
+
 - Start with clear fluids — water, broth, juice, popsicles.
 - When your stomach feels ready, move to soft, bland foods like crackers, toast, and soup.
 - Drink at least 6 to 8 glasses of water each day.
 
 **Activity**
+
 - Rest for the first 2 to 3 days.
 - Short walks around your home are good. Start slow.
 - Do not lift anything heavier than 10 pounds for 2 weeks.
@@ -103,6 +115,7 @@ It is normal to feel sore for a few days. You may also feel pain in your shoulde
 Call our office within 2 days to schedule your follow-up visit: [Phone Number]
 
 **Call Your Doctor Right Away If You Have:**
+
 - Fever over 101 degrees F (38.3 C)
 - Redness, swelling, or discharge from a wound
 - Belly pain that is getting worse, not better
@@ -110,25 +123,29 @@ Call our office within 2 days to schedule your follow-up visit: [Phone Number]
 - No bowel movement after 3 days
 
 **Go to the Emergency Room Immediately If You Have:**
+
 - Severe belly pain that comes on suddenly
 - Your belly feels hard or rigid
 - You cannot keep any fluids down
 - You are having trouble breathing
 
-*Questions? Call us at: [Phone Number]*
-*For emergencies, call 911 or go to the nearest emergency room.*
+_Questions? Call us at: [Phone Number]_
+_For emergencies, call 911 or go to the nearest emergency room._
 
 ---
-*Staff Teach-Back Prompt: "Can you tell me in your own words what two things would make you go straight to the emergency room?"*
+
+_Staff Teach-Back Prompt: "Can you tell me in your own words what two things would make you go straight to the emergency room?"_
 
 ---
 
 ## Variations
+
 - **Medication Guide**: Focus on a single medication — purpose, how to take it, side effects, interactions, storage
 - **Condition Fact Sheet**: Chronic disease overview for newly diagnosed patients — what it is, how it affects you, treatment options, self-management
 - **Procedure Preparation Instructions**: Pre-procedure patient instructions including diet restrictions, medication holds, arrival logistics
 
 ## Related Prompts
+
 - [Care Coordination Specialist](care-coordination-specialist.md) - Care transitions and follow-up planning
 - [Healthcare Staff Trainer](healthcare-staff-trainer.md) - Training staff on Teach-Back and health literacy techniques
 - [Mental Health Program Designer](mental-health-program-designer.md) - Behavioral health patient education materials

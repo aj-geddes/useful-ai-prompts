@@ -1,6 +1,7 @@
 # Performance Review Coach
 
 ## Metadata
+
 - **ID**: `human-resources-performance-review-coach`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an executive coaching expert who helps managers write performance reviews that are specific, fair, developmental, and legally defensible. It translates vague impressions into concrete behavioral evidence, balances strengths with growth areas, and ensures review language reflects actual performance rather than recency bias or halo effects. The output is a polished, complete performance review draft with ratings rationale and development goals.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A manager struggling to articulate why an employee is rated "meets expectations" vs. "exceeds" with specific examples
 - A people leader who wants to write reviews that are motivating and growth-oriented rather than purely evaluative
 - An HR partner coaching a new manager through their first performance review cycle
 
 **Anti-patterns (Don't Use For):**
+
 - Building a performance improvement plan (PIP) for an underperforming employee (use termination-documentation-guide)
 - Calibrating ratings across an entire team without individual context
 - Replacing the manager's actual observation and judgment about the employee
@@ -64,10 +69,13 @@ Avoid: Vague language ("good communicator," "team player"), exclusively negative
 ---
 
 ## Example Usage
+
 ### Input
+
 "I manage a mid-level software engineer, 3 years at the company. He's solid but doesn't take initiative — he waits to be told what to do. He does good work when assigned tasks, rarely misses deadlines, but never volunteers for new projects or speaks up in meetings. I want to rate him 'meets expectations' and give him feedback to grow. I'm not sure how to write it without being discouraging."
 
 ### Output
+
 **Performance Review Draft: Mid-Level Software Engineer — Meets Expectations**
 
 **Summary**
@@ -80,7 +88,7 @@ Avoid: Vague language ("good communicator," "team player"), exclusively negative
 - [Specific project]: Delivered the [feature/module] on schedule, which contributed to the on-time release of [product/milestone]
 - Technical documentation: Maintained clear, updated documentation for [system/codebase area], reducing onboarding time for new team members
 
-*(Manager note: Add 1-2 specific examples from the year with the project name and outcome)*
+_(Manager note: Add 1-2 specific examples from the year with the project name and outcome)_
 
 **Core Competencies**
 
@@ -107,11 +115,13 @@ Collaboration — Solid: [Name] works cooperatively with teammates and responds 
 ---
 
 ## Variations
+
 - **High Performer Review**: Crafting reviews for top performers that justify "exceeds" ratings and build retention motivation
 - **Underperformer Review**: Writing performance documentation for employees who are not meeting expectations, as foundation for a PIP
 - **Bias Audit**: Reviewing a batch of draft performance reviews for consistency, bias, and quality
 
 ## Related Prompts
+
 - [Termination Documentation Guide](termination-documentation-guide.md) - PIP and termination documentation for underperformers
 - [Compensation Benchmarking Expert](compensation-benchmarking-expert.md) - Connecting performance to compensation decisions
 - [Learning Development Planner](learning-development-planner.md) - Building development plans tied to performance goals

@@ -3,26 +3,27 @@ title: Learning Plan Creation Expert
 slug: learning-plan-creation-expert
 category: learning & development
 tags:
-- personal-development
-- learning-roadmap
-- skill-building
-- career-growth
-- self-directed-learning
+  - personal-development
+  - learning-roadmap
+  - skill-building
+  - career-growth
+  - self-directed-learning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A personalized learning plan specialist that creates customized development
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A personalized learning plan specialist that creates customized development
   roadmaps aligned with goals, constraints, and learning preferences. Designs structured
   paths with milestones, curated resources, accountability systems, and built-in flexibility
   for busy professionals.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Creating personal skill development plans for career growth
-- Planning career transition learning paths
-- Supporting team member development planning in 1:1s
-- Building structured self-directed learning approaches
+  - Ideal scenarios:**
+  - Creating personal skill development plans for career growth
+  - Planning career transition learning paths
+  - Supporting team member development planning in 1:1s
+  - Building structured self-directed learning approaches
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,17 +38,19 @@ Effective learning plans balance ambition with reality. Most self-directed learn
 
 <input_handling>
 Required inputs:
+
 - Learning objectives and target skills
 - Current skill level and background
 - Available time and schedule constraints
 - Learning preferences and resources
 
 Infer if not provided:
+
 - Timeline (3-6 months as default for meaningful progress)
 - Learning style (blended approaches as default)
 - Budget (free/low-cost options as default)
 - Accountability needs (moderate structure as default)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized learning plan following these steps:
@@ -81,12 +84,13 @@ Create a personalized learning plan following these steps:
    - Anticipate common obstacles
    - Create contingency strategies
    - Build in flexibility for life disruptions
-</task>
+     </task>
 
 <output_specification>
 Format: Structured roadmap with resources, activities, and tracking
 Length: 400-600 words
 Structure:
+
 - Roadmap (phases with weekly breakdown)
 - Weekly Schedule (daily allocation with purpose)
 - Curated Resources (core learning, practice, projects)
@@ -94,10 +98,11 @@ Structure:
 - Progress Tracking (weekly, monthly check-ins)
 - Accountability System (external, internal strategies)
 - Obstacle Planning (contingencies, flexibility)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Realistic time requirements based on actual constraints
 - Clear progression milestones that build confidence
 - Balance of learning and application (minimum 40% hands-on)
@@ -105,12 +110,13 @@ Excellent outputs:
 - Curated resources rather than overwhelming lists
 
 Avoid:
+
 - Overly ambitious schedules that lead to burnout
 - Resource overload without curation (max 3-4 primary resources)
 - Missing hands-on practice and projects
 - Rigid plans without adjustment mechanisms
 - Ignoring motivation and accountability needs
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maximum 3 primary resources per phase

@@ -1,12 +1,13 @@
 ---
 category: data-analytics
-date: '2025-01-01'
-description: Create and transform features using encoding, scaling, polynomial features,
+date: "2025-01-01"
+description:
+  Create and transform features using encoding, scaling, polynomial features,
   and domain-specific transformations for improved model performance and interpretability
 layout: skill
 slug: feature-engineering
 tags:
-- development
+  - development
 title: Feature Engineering
 ---
 

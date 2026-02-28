@@ -1,6 +1,7 @@
 # Spacecraft Development and Payload Integration Expert
 
 ## Metadata
+
 - **ID**: `space-spacecraft-development`
 - **Version**: 1.1.0
 - **Category**: Space Economy
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Lead spacecraft bus development and payload integration for commercial satellite programs. Combines systems engineering expertise with customer-focused integration management to deliver satellites that meet demanding mission requirements while managing complex multi-stakeholder payload programs.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Developing spacecraft bus architectures for satellite missions
 - Integrating customer payloads with satellite platforms
 - Managing multi-payload satellite programs with diverse customers
@@ -23,6 +27,7 @@ Lead spacecraft bus development and payload integration for commercial satellite
 - Coordinating international payload provider schedules
 
 **Anti-Patterns (When NOT to Use):**
+
 - Launch operations and campaign management
 - On-orbit satellite operations
 - Ground segment development
@@ -114,87 +119,94 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're developing a 1,200 kg Earth observation satellite with 8 payloads from different customers. Development timeline is 24 months. Need to manage multiple international payload providers while meeting all performance requirements."
 
 ### Output
+
 **Spacecraft Development Plan: Multi-Payload Earth Observation Satellite**
 
 **Mission Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Spacecraft Mass | 1,200 kg |
-| Payloads | 8 customer instruments |
-| Orbit | 600 km SSO |
-| Design Life | 7 years |
-| Development | 24 months |
+| Parameter       | Specification          |
+| --------------- | ---------------------- |
+| Spacecraft Mass | 1,200 kg               |
+| Payloads        | 8 customer instruments |
+| Orbit           | 600 km SSO             |
+| Design Life     | 7 years                |
+| Development     | 24 months              |
 
 **Payload Manifest**
 
-| Payload | Provider | Mass | Power | Data Rate |
-|---------|----------|------|-------|-----------|
-| Multispectral Imager | Customer A (US) | 120 kg | 200 W | 2 Gbps |
-| SAR | Customer B (EU) | 180 kg | 400 W | 1.5 Gbps |
-| Hyperspectral | Customer C (Japan) | 85 kg | 150 W | 800 Mbps |
-| LIDAR | Customer D (Canada) | 95 kg | 250 W | 400 Mbps |
-| Radio Occultation | Customer E (India) | 25 kg | 30 W | 50 Mbps |
-| AIS Receiver | Customer F (UK) | 15 kg | 20 W | 10 Mbps |
-| Weather Sensor | Customer G (Korea) | 45 kg | 80 W | 200 Mbps |
-| Tech Demo | Customer H (Australia) | 35 kg | 60 W | 100 Mbps |
+| Payload              | Provider               | Mass   | Power | Data Rate |
+| -------------------- | ---------------------- | ------ | ----- | --------- |
+| Multispectral Imager | Customer A (US)        | 120 kg | 200 W | 2 Gbps    |
+| SAR                  | Customer B (EU)        | 180 kg | 400 W | 1.5 Gbps  |
+| Hyperspectral        | Customer C (Japan)     | 85 kg  | 150 W | 800 Mbps  |
+| LIDAR                | Customer D (Canada)    | 95 kg  | 250 W | 400 Mbps  |
+| Radio Occultation    | Customer E (India)     | 25 kg  | 30 W  | 50 Mbps   |
+| AIS Receiver         | Customer F (UK)        | 15 kg  | 20 W  | 10 Mbps   |
+| Weather Sensor       | Customer G (Korea)     | 45 kg  | 80 W  | 200 Mbps  |
+| Tech Demo            | Customer H (Australia) | 35 kg  | 60 W  | 100 Mbps  |
 
 **Spacecraft Bus Architecture**
 
-*Structure*
+_Structure_
+
 - Primary: Aluminum honeycomb panels
 - Payload deck: Carbon fiber composite
 - Launch adapter: Standard 937mm ring
 
-*Power System*
+_Power System_
+
 - Solar arrays: 3.5 kW BOL (GaAs triple-junction)
 - Battery: 150 Ah Li-ion
 - Bus voltage: 28V regulated
 
-*Attitude Control*
+_Attitude Control_
+
 - Pointing accuracy: <0.1 deg (3-sigma)
 - Stability: <0.001 deg/s
 - Actuators: Reaction wheels + magnetorquers
 - Sensors: Star trackers + gyros
 
-*Data Handling*
+_Data Handling_
+
 - Onboard storage: 2 TB solid state
 - Downlink: X-band 800 Mbps
 - Command: S-band 64 kbps
 
 **Payload Accommodation Interfaces**
 
-| Interface | Specification |
-|-----------|---------------|
-| Mechanical | M6 inserts, 100mm grid pattern |
-| Thermal | Dedicated radiator allocation per payload |
+| Interface  | Specification                             |
+| ---------- | ----------------------------------------- |
+| Mechanical | M6 inserts, 100mm grid pattern            |
+| Thermal    | Dedicated radiator allocation per payload |
 | Electrical | MIL-STD-1553B, SpaceWire, regulated power |
-| Data | CCSDS packets, 100 Mbps max per payload |
+| Data       | CCSDS packets, 100 Mbps max per payload   |
 
 **Customer Interface Management**
 
-| Customer | ICD Status | PDR | CDR | Delivery |
-|----------|------------|-----|-----|----------|
-| A | Approved | Complete | Month 8 | Month 14 |
-| B | Approved | Complete | Month 8 | Month 15 |
-| C | In review | Month 4 | Month 10 | Month 16 |
-| D | Draft | Month 5 | Month 11 | Month 16 |
-| E-H | Template | Month 6 | Month 12 | Month 17 |
+| Customer | ICD Status | PDR      | CDR      | Delivery |
+| -------- | ---------- | -------- | -------- | -------- |
+| A        | Approved   | Complete | Month 8  | Month 14 |
+| B        | Approved   | Complete | Month 8  | Month 15 |
+| C        | In review  | Month 4  | Month 10 | Month 16 |
+| D        | Draft      | Month 5  | Month 11 | Month 16 |
+| E-H      | Template   | Month 6  | Month 12 | Month 17 |
 
 **Integration Sequence**
 
-| Phase | Duration | Activities |
-|-------|----------|------------|
-| Bus Assembly | Months 9-12 | Subsystem integration, harness |
+| Phase               | Duration     | Activities                       |
+| ------------------- | ------------ | -------------------------------- |
+| Bus Assembly        | Months 9-12  | Subsystem integration, harness   |
 | Payload Integration | Months 14-18 | Customer payloads (2 weeks each) |
-| System Testing | Months 18-20 | Functional, EMC, thermal balance |
-| Environmental | Months 20-22 | Vibration, acoustic, TVAC |
-| Launch Prep | Months 23-24 | Shipping, fueling, campaign |
+| System Testing      | Months 18-20 | Functional, EMC, thermal balance |
+| Environmental       | Months 20-22 | Vibration, acoustic, TVAC        |
+| Launch Prep         | Months 23-24 | Shipping, fueling, campaign      |
 
 **Testing Approach**
+
 - Proto-flight: Single unit with qualification margins
 - Thermal vacuum: 4 cycles at qualification levels
 - Vibration: Qualification sine sweep + random
@@ -202,16 +214,17 @@ Avoid:
 
 **Risk Management**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Payload delay | Medium | High | 2-week buffer per payload |
-| Interface issue | Medium | Medium | Early ICD freeze, compatibility test |
-| Mass growth | Low | High | 15% margin maintained |
-| Schedule slip | Medium | Medium | Parallel paths for critical items |
+| Risk            | Probability | Impact | Mitigation                           |
+| --------------- | ----------- | ------ | ------------------------------------ |
+| Payload delay   | Medium      | High   | 2-week buffer per payload            |
+| Interface issue | Medium      | Medium | Early ICD freeze, compatibility test |
+| Mass growth     | Low         | High   | 15% margin maintained                |
+| Schedule slip   | Medium      | Medium | Parallel paths for critical items    |
 
 ---
 
 ## Related Prompts
+
 - [Commercial Space Mission Architecture Expert](commercial-space-mission-architecture-expert.md)
 - [Launch Campaign Management Expert](launch-campaign-management-expert.md)
 - [Spacecraft Development Payload Integration Management](spacecraft-development-payload-integration-management.md)

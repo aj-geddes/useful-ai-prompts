@@ -1,6 +1,7 @@
 # Report Generation Expert
 
 ## Metadata
+
 - **ID**: creation-report-generation-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive report generation assistant that transforms complex data into cl
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating quarterly or annual business performance reports
 - Developing board presentations with data-driven insights
 - Generating compliance and regulatory reports
@@ -25,6 +27,7 @@ A comprehensive report generation assistant that transforms complex data into cl
 - Building operational dashboards and KPI reports
 
 **Anti-Patterns (When Not to Use):**
+
 - Real-time data dashboards requiring live updates
 - Simple data exports without narrative analysis
 - Academic research papers (use research prompts instead)
@@ -112,6 +115,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Report type: Quarterly business performance report
 2. Audience: Board of directors and executive team
@@ -141,24 +145,27 @@ Requirements:
 
 ### Performance Snapshot
 
-| Metric | Target | Actual | Status | Trend |
-|--------|--------|--------|--------|-------|
-| Revenue Growth | 15% | 18.3% | Exceeding | Up |
-| EBITDA Margin | 22% | 24.1% | Exceeding | Up |
-| Customer Retention | 90% | 87.2% | At Risk | Down |
-| Employee Engagement | 75% | 71.3% | At Risk | Down |
+| Metric              | Target | Actual | Status    | Trend |
+| ------------------- | ------ | ------ | --------- | ----- |
+| Revenue Growth      | 15%    | 18.3%  | Exceeding | Up    |
+| EBITDA Margin       | 22%    | 24.1%  | Exceeding | Up    |
+| Customer Retention  | 90%    | 87.2%  | At Risk   | Down  |
+| Employee Engagement | 75%    | 71.3%  | At Risk   | Down  |
 
 ### Key Achievements
+
 - **Record Revenue**: $487M, exceeding target by $47M
 - **Margin Expansion**: EBITDA margin highest in company history
 - **Market Share Gain**: +1.4 points to 29.4%
 
 ### Critical Issues
+
 - **Customer Retention**: 2.8% below target, concentrated in Enterprise segment
 - **Employee Engagement**: Declining for second consecutive quarter
 - **Competitive Pressure**: New entrant disrupting pricing
 
 ### Immediate Actions Required
+
 1. **APPROVE** $4.2M customer retention program
 2. **APPROVE** $8.5M talent investment
 3. **ENDORSE** M&A strategy up to $500M
@@ -170,11 +177,13 @@ Requirements:
 **Total Revenue: $487.3M** (+18.3% YoY)
 
 By Segment:
+
 - Enterprise: $298.5M (61%) - +22% YoY
 - Mid-Market: $123.8M (25%) - +15% YoY
 - SMB: $65.0M (14%) - +8% YoY
 
 **Key Insights:**
+
 - Enterprise segment driving growth but showing retention issues
 - International expansion ahead of plan (40% of revenue vs 35% target)
 - Subscription revenue now 45% of total (target: 60% by 2025)
@@ -182,6 +191,7 @@ By Segment:
 ### Profitability Analysis
 
 **Margin Bridge Analysis:**
+
 - Q4 2023 Margin: 21.3%
 - Volume leverage: +1.8%
 - Price increases: +1.2%
@@ -198,11 +208,13 @@ By Segment:
 Overall Retention: 87.2% (Target: 90%)
 
 By Segment:
+
 - Enterprise: 82.1% - CRITICAL
 - Mid-Market: 89.3% - On Track
 - SMB: 91.2% - Above Target
 
 **Churn Root Causes:**
+
 - Service issues: 42%
 - Competition: 31%
 - Price: 18%
@@ -214,32 +226,36 @@ Current Score: 71.3% (-3.7 points)
 Turnover Rate: 14.2% (+2.1 points)
 
 **Top Concerns:**
+
 1. Work-life balance (transformation fatigue)
 2. Career development clarity
 3. Compensation competitiveness
 
 ## RISK ASSESSMENT
 
-| Risk | Impact | Probability | Trend |
-|------|--------|-------------|-------|
-| Customer Retention | High | High | Increasing |
-| Talent Retention | Medium | High | Increasing |
-| Cyber Security | High | Medium | Stable |
-| Competition | Medium | Medium | Increasing |
+| Risk               | Impact | Probability | Trend      |
+| ------------------ | ------ | ----------- | ---------- |
+| Customer Retention | High   | High        | Increasing |
+| Talent Retention   | Medium | High        | Increasing |
+| Cyber Security     | High   | Medium      | Stable     |
+| Competition        | Medium | Medium      | Increasing |
 
 ## RECOMMENDATIONS
 
 ### Priority 1: Customer Success Transformation
+
 - Target: 92% retention
 - Investment: $12M
 - Expected ROI: 3.5x
 
 ### Priority 2: Employee Experience Revival
+
 - Target: 80% engagement
 - Investment: $8.5M
 - Expected Impact: 20% productivity gain
 
 ### Priority 3: Innovation Acceleration
+
 - Target: 3 new products
 - R&D: 15% of revenue
 - Focus: AI and automation

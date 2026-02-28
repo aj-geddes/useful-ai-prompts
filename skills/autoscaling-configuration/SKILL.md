@@ -391,6 +391,7 @@ data:
 ## Best Practices
 
 ### ✅ DO
+
 - Set appropriate min/max replicas
 - Monitor metric aggregation window
 - Implement cooldown periods
@@ -401,6 +402,7 @@ data:
 - Implement fallback strategies
 
 ### ❌ DON'T
+
 - Set min replicas to 1
 - Scale too aggressively
 - Ignore cooldown periods

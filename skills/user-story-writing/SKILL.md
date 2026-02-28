@@ -229,7 +229,6 @@ Scenario 5: Security
   And the connection is HTTPS
 
 ---
-
 Non-Functional Requirements:
   - Performance: Form save must complete in <2 seconds
   - Usability: Form must be completable in <3 steps
@@ -245,62 +244,62 @@ Non-Functional Requirements:
 
 class StorySpitting {
   SPLITTING_STRATEGIES = [
-    'By workflow step',
-    'By user role',
-    'By CRUD operation',
-    'By business rule',
-    'By technical layer',
-    'By risk/complexity',
-    'By priority'
+    "By workflow step",
+    "By user role",
+    "By CRUD operation",
+    "By business rule",
+    "By technical layer",
+    "By risk/complexity",
+    "By priority",
   ];
 
   splitLargeStory(largeStory) {
     return {
       original_story: largeStory.title,
       original_points: largeStory.story_points,
-      strategy: 'Split by workflow step',
+      strategy: "Split by workflow step",
       split_stories: [
         {
-          id: 'US-201',
-          title: 'Add payment method - Form UI',
+          id: "US-201",
+          title: "Add payment method - Form UI",
           points: 3,
-          description: 'Build payment form UI with validation',
-          depends_on: 'None',
-          priority: 'First'
+          description: "Build payment form UI with validation",
+          depends_on: "None",
+          priority: "First",
         },
         {
-          id: 'US-202',
-          title: 'Add payment method - Backend API',
+          id: "US-202",
+          title: "Add payment method - Backend API",
           points: 5,
-          description: 'Create API endpoint to save payment method',
-          depends_on: 'US-201',
-          priority: 'Second'
+          description: "Create API endpoint to save payment method",
+          depends_on: "US-201",
+          priority: "Second",
         },
         {
-          id: 'US-203',
-          title: 'Add payment method - Integration',
+          id: "US-203",
+          title: "Add payment method - Integration",
           points: 3,
-          description: 'Connect form to API, handle responses',
-          depends_on: 'US-202',
-          priority: 'Third'
+          description: "Connect form to API, handle responses",
+          depends_on: "US-202",
+          priority: "Third",
         },
         {
-          id: 'US-204',
-          title: 'Add payment method - Security hardening',
+          id: "US-204",
+          title: "Add payment method - Security hardening",
           points: 2,
-          description: 'PCI compliance, encryption, data protection',
-          depends_on: 'US-202',
-          priority: 'Critical'
-        }
+          description: "PCI compliance, encryption, data protection",
+          depends_on: "US-202",
+          priority: "Critical",
+        },
       ],
       total_split_points: 13,
-      complexity_reduction: 'From 13pt single story to 5pt max',
+      complexity_reduction: "From 13pt single story to 5pt max",
       benefits: [
-        'Faster feedback cycles',
-        'Parallel development possible',
-        'Easier testing',
-        'Clearer scope per story'
-      ]
+        "Faster feedback cycles",
+        "Parallel development possible",
+        "Easier testing",
+        "Clearer scope per story",
+      ],
     };
   }
 }
@@ -360,6 +359,7 @@ Estimation Tips:
 ## Best Practices
 
 ### ✅ DO
+
 - Write from the user's perspective
 - Focus on value, not implementation
 - Create stories small enough for one sprint
@@ -372,6 +372,7 @@ Estimation Tips:
 - Create testable stories
 
 ### ❌ DON'T
+
 - Write technical task-focused stories
 - Create overly detailed specifications
 - Write stories that require multiple sprints

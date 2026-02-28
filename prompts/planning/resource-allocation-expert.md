@@ -1,6 +1,7 @@
 # Resource Allocation Expert
 
 ## Metadata
+
 - **ID**: `planning-resource-allocation`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A resource optimization specialist that helps you deploy resources effectively t
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Optimizing budget and resource distribution across initiatives
 - Prioritizing investments when resources are constrained
 - Building capacity plans for growing organizations
@@ -25,6 +27,7 @@ A resource optimization specialist that helps you deploy resources effectively t
 - Planning annual or quarterly resource allocation cycles
 
 **Anti-patterns (Don't Use For):**
+
 - Individual project budgeting (use project planning)
 - Personal finance decisions
 - Hiring decisions for specific roles
@@ -151,7 +154,7 @@ Not working: Limited sales capacity constraining growth, platform scaling becomi
 
 **Current State Assessment**
 
-*Resource Utilization Analysis*
+_Resource Utilization Analysis_
 | Metric | Current | Benchmark | Gap |
 |--------|---------|-----------|-----|
 | Revenue per employee | $100K | $150K | -33% |
@@ -159,13 +162,15 @@ Not working: Limited sales capacity constraining growth, platform scaling becomi
 | Sales pipeline coverage | 2.5x | 4x | Under-resourced |
 | Customer acquisition cost | $5K | $4K | +25% |
 
-*Key Findings*
+_Key Findings_
+
 - Engineering is over-indexed relative to current revenue (40% vs. typical 25-30% for growth stage)
 - Sales capacity is the primary growth constraint (only 2.5x pipeline coverage)
 - Operations running efficiently but manual processes limiting scale
 - Product-market fit validated; need to shift from build to sell
 
-*Efficiency Gaps*
+_Efficiency Gaps_
+
 1. Sales capacity limiting revenue growth (primary constraint)
 2. Platform architecture approaching scaling limits
 3. Manual operations creating overhead
@@ -173,14 +178,15 @@ Not working: Limited sales capacity constraining growth, platform scaling becomi
 
 **Strategic Priority Mapping**
 
-| Priority | Strategic Goal | Investment Needed | Expected Return |
-|----------|---------------|-------------------|-----------------|
-| Revenue Engine | 3x revenue | High | Direct revenue impact |
-| Platform Scale | Support 5x customers | Medium | Enables growth |
-| Market Expansion | New geography | Medium | Opens new TAM |
-| Operational Efficiency | 25% cost reduction | Low | Margin improvement |
+| Priority               | Strategic Goal       | Investment Needed | Expected Return       |
+| ---------------------- | -------------------- | ----------------- | --------------------- |
+| Revenue Engine         | 3x revenue           | High              | Direct revenue impact |
+| Platform Scale         | Support 5x customers | Medium            | Enables growth        |
+| Market Expansion       | New geography        | Medium            | Opens new TAM         |
+| Operational Efficiency | 25% cost reduction   | Low               | Margin improvement    |
 
-*Priority Ranking Rationale*
+_Priority Ranking Rationale_
+
 1. Revenue Engine is primary because sales capacity is the binding constraint
 2. Platform Scale prevents growth from causing customer experience issues
 3. Market Expansion diversifies revenue and increases TAM
@@ -188,7 +194,7 @@ Not working: Limited sales capacity constraining growth, platform scaling becomi
 
 **2025 Allocation Strategy**
 
-*Allocation Shift Summary*
+_Allocation Shift Summary_
 | Category | Current | Proposed | Change | Rationale |
 |----------|---------|----------|--------|-----------|
 | Sales & Marketing | 30% ($1.5M) | 40% ($2.0M) | +$500K | Address primary growth constraint |
@@ -198,63 +204,68 @@ Not working: Limited sales capacity constraining growth, platform scaling becomi
 
 **Priority Allocation Breakdown**
 
-*Priority 1: Revenue Engine ($2.0M - 40%)*
+_Priority 1: Revenue Engine ($2.0M - 40%)_
 Investment justification: Address primary growth constraint
 
-| Component | Budget | Headcount | Expected ROI |
-|-----------|--------|-----------|--------------|
-| Inside Sales Team | $1.2M | 12 FTE | 5:1 (revenue) |
-| Marketing & Demand Gen | $500K | 5 FTE | 4:1 (pipeline) |
-| Sales Enablement | $300K | 3 FTE | Productivity gain |
+| Component              | Budget | Headcount | Expected ROI      |
+| ---------------------- | ------ | --------- | ----------------- |
+| Inside Sales Team      | $1.2M  | 12 FTE    | 5:1 (revenue)     |
+| Marketing & Demand Gen | $500K  | 5 FTE     | 4:1 (pipeline)    |
+| Sales Enablement       | $300K  | 3 FTE     | Productivity gain |
 
 Expected Impact:
+
 - Revenue: $10M additional (5:1 ROI)
 - Pipeline: 4x coverage achieved
 - Sales cycle: 20% reduction
 
-*Priority 2: Product Scalability ($1.5M - 30%)*
+_Priority 2: Product Scalability ($1.5M - 30%)_
 Investment justification: Enable 5x customer growth without degradation
 
-| Component | Budget | Headcount | Expected ROI |
-|-----------|--------|-----------|--------------|
-| Platform Architecture | $800K | 8 FTE | Enables growth |
-| Performance Optimization | $400K | 4 FTE | 50% latency reduction |
-| DevOps & Infrastructure | $300K | 3 FTE | 99.9% uptime |
+| Component                | Budget | Headcount | Expected ROI          |
+| ------------------------ | ------ | --------- | --------------------- |
+| Platform Architecture    | $800K  | 8 FTE     | Enables growth        |
+| Performance Optimization | $400K  | 4 FTE     | 50% latency reduction |
+| DevOps & Infrastructure  | $300K  | 3 FTE     | 99.9% uptime          |
 
 Expected Impact:
+
 - Capacity: 5x current customer load
 - Performance: 50% improvement
 - Reliability: 99.9% uptime achieved
 
-*Priority 3: Market Expansion ($1.0M - 20%)*
+_Priority 3: Market Expansion ($1.0M - 20%)_
 Investment justification: Opens $10M TAM in new geography
 
-| Component | Budget | Headcount | Expected ROI |
-|-----------|--------|-----------|--------------|
-| New Market Entry | $600K | 6 FTE | 2:1 (Year 2) |
-| Localization & Partnerships | $400K | 4 FTE | Accelerates entry |
+| Component                   | Budget | Headcount | Expected ROI      |
+| --------------------------- | ------ | --------- | ----------------- |
+| New Market Entry            | $600K  | 6 FTE     | 2:1 (Year 2)      |
+| Localization & Partnerships | $400K  | 4 FTE     | Accelerates entry |
 
 Expected Impact:
+
 - New market revenue: $2M (Year 1), $5M (Year 2)
 - Customer base: +200 customers
 - Brand recognition in new geography
 
-*Priority 4: Operations Excellence ($0.5M - 10%)*
+_Priority 4: Operations Excellence ($0.5M - 10%)_
 Investment justification: 25% efficiency gain
 
-| Component | Budget | Headcount | Expected ROI |
-|-----------|--------|-----------|--------------|
-| Customer Success | $300K | 3 FTE | Retention improvement |
-| Process Automation | $200K | 2 FTE | 25% efficiency gain |
+| Component          | Budget | Headcount | Expected ROI          |
+| ------------------ | ------ | --------- | --------------------- |
+| Customer Success   | $300K  | 3 FTE     | Retention improvement |
+| Process Automation | $200K  | 2 FTE     | 25% efficiency gain   |
 
 Expected Impact:
+
 - Support costs: 25% reduction
 - Customer retention: 95% -> 97%
 - Manual processes: 50% automated
 
 **Implementation Phases**
 
-*Q1 ($1.2M): Foundation*
+_Q1 ($1.2M): Foundation_
+
 - Begin sales team hiring and onboarding
 - Initiate platform architecture assessment
 - Complete market research for expansion
@@ -262,7 +273,8 @@ Expected Impact:
 
 Key Milestone: Sales team at 50% capacity, architecture plan approved
 
-*Q2-Q3 ($2.4M): Acceleration*
+_Q2-Q3 ($2.4M): Acceleration_
+
 - Full sales team operational
 - Platform scaling implementation
 - Market entry preparation complete
@@ -270,7 +282,8 @@ Key Milestone: Sales team at 50% capacity, architecture plan approved
 
 Key Milestone: Revenue run rate at 2x, platform scaled
 
-*Q4 ($1.4M): Optimization*
+_Q4 ($1.4M): Optimization_
+
 - Market expansion launch
 - Performance optimization completion
 - 2026 planning and resource assessment
@@ -279,7 +292,7 @@ Key Milestone: 3x revenue achieved, new market generating revenue
 
 **Monitoring & Reallocation Framework**
 
-*Monthly KPIs*
+_Monthly KPIs_
 | Metric | Target | Warning | Trigger |
 |--------|--------|---------|---------|
 | Revenue growth rate | 25% QoQ | <20% | <15% |
@@ -288,13 +301,15 @@ Key Milestone: 3x revenue achieved, new market generating revenue
 | New market pipeline | $2M | <$1M | <$500K |
 | Customer retention | 97% | <95% | <90% |
 
-*Reallocation Triggers*
+_Reallocation Triggers_
+
 - Sales productivity <80% target: Reduce hiring pace, increase enablement
 - Platform issues impacting customers: Shift resources from expansion to engineering
 - Market entry exceeding targets: Accelerate expansion investment
 - Cash runway <12 months: Reduce discretionary spending, extend runway
 
-*Governance*
+_Governance_
+
 - Monthly: Leadership resource review
 - Quarterly: Full allocation reassessment
 - Ad-hoc: Trigger-based reallocation decisions

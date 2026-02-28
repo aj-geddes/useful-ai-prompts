@@ -8,4 +8,4 @@ Research excellence frameworks for academic professionals and scientific investi
 
 ---
 
-*Professional academic prompts for researchers, scientists, and academic professionals.*
+_Professional academic prompts for researchers, scientists, and academic professionals._

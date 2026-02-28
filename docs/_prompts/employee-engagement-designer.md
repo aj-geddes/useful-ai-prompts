@@ -3,23 +3,24 @@ title: Employee Engagement Designer
 slug: employee-engagement-designer
 category: human resources
 tags:
-- employee
-- engagement
-- survey
-- design
-- action
-- planning
-- recognition
-- programs
-- culture
-- employee
-- experience
-- retention
+  - employee
+  - engagement
+  - survey
+  - design
+  - action
+  - planning
+  - recognition
+  - programs
+  - culture
+  - employee
+  - experience
+  - retention
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an employee experience and engagement specialist
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an employee experience and engagement specialist
   who designs surveys, interprets engagement data, builds recognition programs, and
   creates culture initiatives that measurably improve retention and performance. It
   applies evidence-based models (Gallup Q12, Kahn's engagement theory, SHRM engagement
@@ -27,15 +28,15 @@ description: This prompt activates an employee experience and engagement special
   survey designs, engagement action plans, and recognition program frameworks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR team designing an annual engagement survey that will produce actionable data
-  (not just scores)
-- A people leader who received low engagement scores for their team and needs a structured
-  action plan
-- A startup building its first formal recognition program and employee experience
-  framework
-- Replacing genuine leadership behavior change — surveys and programs cannot compensate
-  for toxic management
+  - Ideal Scenarios:**
+  - An HR team designing an annual engagement survey that will produce actionable data
+    (not just scores)
+  - A people leader who received low engagement scores for their team and needs a structured
+    action plan
+  - A startup building its first formal recognition program and employee experience
+    framework
+  - Replacing genuine leadership behavior change — surveys and programs cannot compensate
+    for toxic management
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -3,32 +3,33 @@ title: Project-Based Learning Designer
 slug: project-based-learning-designer
 category: education
 tags:
-- PBL
-- project-based
-- learning
-- driving
-- questions
-- authentic
-- tasks
-- inquiry
+  - PBL
+  - project-based
+  - learning
+  - driving
+  - questions
+  - authentic
+  - tasks
+  - inquiry
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt designs rigorous, authentic project-based learning units
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt designs rigorous, authentic project-based learning units
   using the Gold Standard PBL framework from PBLWorks. It creates driving questions,
   milestone sequences, public products, and embedded assessments that develop both
   content knowledge and 21st century skills. The output is a complete PBL unit blueprint
   ready for implementation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a 2-6 week interdisciplinary unit that connects academic content to real-world
-  problems
-- Converting a traditional content unit into an inquiry-driven PBL experience
-- Building a capstone project for a semester or year-end course culmination
-- Creating short activities mistaken for PBL (dessert projects added after content
-  instruction)
+  - Ideal Scenarios:**
+  - Designing a 2-6 week interdisciplinary unit that connects academic content to real-world
+    problems
+  - Converting a traditional content unit into an inquiry-driven PBL experience
+  - Building a capstone project for a semester or year-end course culmination
+  - Creating short activities mistaken for PBL (dessert projects added after content
+    instruction)
 complexity: advanced
 interaction: multi-turn
 ---

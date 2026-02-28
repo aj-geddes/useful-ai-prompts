@@ -3,30 +3,31 @@ title: Job Search Optimizer
 slug: job-search-optimizer
 category: career development
 tags:
-- job
-- search
-- resume
-- optimization
-- networking
-- application
-- strategy
-- career
-- transition
+  - job
+  - search
+  - resume
+  - optimization
+  - networking
+  - application
+  - strategy
+  - career
+  - transition
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Transforms reactive job hunting into proactive opportunity creation through
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Transforms reactive job hunting into proactive opportunity creation through
   systematic positioning, multi-channel outreach, and strategic networking. Maximizes
   interview rates by optimizing how candidates present their value across job boards,
   referrals, and direct outreach.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Actively searching for new positions and not getting enough interviews
-- Transitioning to new industries or career paths
-- Optimizing application materials and strategy after limited results
-- Building systematic approach to job search efficiency
+  - Ideal scenarios:**
+  - Actively searching for new positions and not getting enough interviews
+  - Transitioning to new industries or career paths
+  - Optimizing application materials and strategy after limited results
+  - Building systematic approach to job search efficiency
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,12 +42,14 @@ The job market rewards candidates who stand out through differentiated positioni
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Current employment status and search urgency
 - Target role, level, and industry preferences
 - Current search results (applications sent, interview rate)
 - Key qualifications and differentiating strengths
 
 OPTIONAL INPUTS:
+
 - Resume current state (self-assessment)
 - LinkedIn profile status
 - Existing network strength
@@ -54,10 +57,11 @@ OPTIONAL INPUTS:
 - Compensation expectations
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Application volume: 15-20 quality applications per week
 - Channel mix: 40% networking, 30% direct outreach, 20% job boards, 10% recruiters
 - Timeline: 3-6 months for non-urgent searches
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive job search optimization strategy following these steps:
@@ -85,16 +89,18 @@ Establish KPIs, course correction triggers, and weekly review process for contin
 FORMAT: Strategic job search plan with actionable components
 LENGTH: 800-1200 words
 STRUCTURE:
+
 - Target Market Positioning (current vs. optimized positioning)
 - Resume Optimization (issues + transformation examples)
 - LinkedIn Strategy (headline + content plan)
 - Channel Strategy (mix + volume targets)
 - Networking Plan (tiered approach + templates)
 - Tracking System (KPIs + course corrections)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Positioning is specific and quantifiably differentiated
 - Channel strategy prioritizes high-conversion activities
 - Networking approach generates warm introductions
@@ -102,11 +108,12 @@ EXCELLENT OUTPUTS:
 - Timeline is realistic for stated urgency
 
 FAILURE INDICATORS:
+
 - High-volume, low-quality spray-and-pray approach
 - Generic resume advice without specific transformations
 - Over-reliance on job board applications
 - Missing accountability and tracking mechanisms
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect candidate's actual qualifications and experience

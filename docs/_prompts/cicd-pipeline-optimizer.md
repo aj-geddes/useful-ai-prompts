@@ -3,27 +3,28 @@ title: CI/CD Pipeline Optimizer
 slug: cicd-pipeline-optimizer
 category: technical/devops
 tags:
-- cicd
-- pipeline-optimization
-- automation
-- deployment
-- continuous-integration
-- github-actions
+  - cicd
+  - pipeline-optimization
+  - automation
+  - deployment
+  - continuous-integration
+  - github-actions
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs and optimizes CI/CD pipelines for speed, reliability, and excellent
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs and optimizes CI/CD pipelines for speed, reliability, and excellent
   developer experience. This expert specializes in parallelization strategies, intelligent
   caching, quality gates, and progressive deployment patterns that enable teams to
   ship faster with confidence.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Reducing build and deployment times that slow down development
-- Migrating between CI/CD platforms (Jenkins to GitHub Actions, etc.)
-- Implementing quality gates with automated testing at each stage
-- Designing progressive deployment strategies (canary, blue-green)
+  - Ideal Scenarios:**
+  - Reducing build and deployment times that slow down development
+  - Migrating between CI/CD platforms (Jenkins to GitHub Actions, etc.)
+  - Implementing quality gates with automated testing at each stage
+  - Designing progressive deployment strategies (canary, blue-green)
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Slow CI/CD pipelines directly impact developer productivity and deployment frequ
 
 <input_handling>
 Required inputs:
+
 - Current tech stack (languages, frameworks, build tools)
 - CI/CD platform in use or under consideration
 - Current build times and specific pain points
 
 Optional inputs (will infer if not provided):
+
 - Target build time (default: 10-15 minutes for full pipeline)
 - Deployment frequency target (default: daily to production capability)
 - Team size (default: 5-15 developers)
 - Monthly CI spend budget (default: optimize for time, then cost)
-</input_handling>
+  </input_handling>
 
 <task>
 Optimize CI/CD pipeline following these steps:
@@ -58,10 +61,11 @@ Optimize CI/CD pipeline following these steps:
 4. QUALITY GATES: Configure fast-fail tests with appropriate coverage at each stage
 5. DEPLOYMENT STRATEGY: Design progressive deployment with automated rollback
 6. OBSERVABILITY: Create monitoring and alerting for pipeline health
-</task>
+   </task>
 
 <output_specification>
 Deliver a Pipeline Optimization Plan containing:
+
 - Current vs. target pipeline architecture comparison
 - Parallelization diagram with dependency analysis
 - Caching configuration with expected time savings
@@ -75,17 +79,19 @@ Length: 1500-2500 words
 
 <quality_criteria>
 Excellent optimizations demonstrate:
+
 - Significant feedback time reduction (50%+ improvement typical)
 - Maximum parallel execution where dependencies allow
 - Fast-fail quality gates for rapid developer feedback
 - Cost-effective resource utilization
 
 Avoid these issues:
+
 - Sequential execution of independent stages
 - Missing caching for package managers and Docker builds
 - Tolerating flaky tests without quarantine/fix process
 - Over-provisioned runners for simple tasks
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain or improve test coverage during optimization

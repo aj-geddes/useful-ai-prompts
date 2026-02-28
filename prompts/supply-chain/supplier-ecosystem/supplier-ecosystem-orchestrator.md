@@ -1,6 +1,7 @@
 # Supplier Ecosystem Orchestrator
 
 ## Metadata
+
 - **ID**: `supplier-ecosystem-orchestrator`
 - **Version**: 1.1.0
 - **Category**: Supply Chain / Supplier Ecosystem
@@ -18,6 +19,7 @@ Designs and orchestrates comprehensive supplier ecosystems that transform transa
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building strategic supplier partnership programs with innovation collaboration
 - Developing multi-dimensional supplier performance scorecards
 - Creating supplier development and capability enhancement programs
@@ -25,6 +27,7 @@ Designs and orchestrates comprehensive supplier ecosystems that transform transa
 - Designing governance structures for strategic vendor relationships
 
 **Anti-patterns (when not to use):**
+
 - One-time vendor selection or simple RFP processes
 - Basic procurement transactions without strategic relationship focus
 - Tactical spot-buying decisions
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We have 1,850 active suppliers with $1.8B annual spend (65% direct materials, 25% services, 10% indirect). Currently using basic A/B/C tier system with mostly transactional relationships. Top 20 suppliers represent 58% of spend. Pain points: limited innovation collaboration, inconsistent quality, poor visibility, lack of supplier development. Goals: 20% cost reduction, increase innovation pipeline, improve supply security, enhance sustainability (carbon neutral by 2030). Automotive manufacturing with intense competition and rapid technology change.
 
 ### Output
@@ -118,23 +122,24 @@ Your supplier portfolio shows classic signs of transactional procurement: high f
 
 **Four-Tier Ecosystem Framework**
 
-*Tier 1: Strategic Innovation Partners (5% of suppliers, 40% of value)*
+_Tier 1: Strategic Innovation Partners (5% of suppliers, 40% of value)_
 Current: 8 suppliers meeting criteria. Target: 25 strategic partners.
 Engagement model includes joint product development with shared R&D investments, executive-level governance with quarterly strategic reviews, long-term technology roadmap alignment, and dedicated supplier development resources. Investment: $45M in partnership development over 3 years including joint innovation labs, co-located engineering, and shared risk/reward agreements.
 
-*Tier 2: Preferred Performance Partners (15% of suppliers, 35% of value)*
+_Tier 2: Preferred Performance Partners (15% of suppliers, 35% of value)_
 Current: 47 suppliers. Target: 125 preferred partners after consolidation.
 Engagement includes performance-based contracts with continuous improvement clauses, monthly performance reviews and capability development support, collaborative planning and forecasting integration, and first access to new business opportunities.
 
-*Tier 3: Competitive Suppliers (60% of suppliers, 20% of value)*
+_Tier 3: Competitive Suppliers (60% of suppliers, 20% of value)_
 Optimize from 1,245 suppliers to 1,000 through strategic consolidation. Market-based competitive sourcing with annual contract terms, standard performance requirements with clear quality thresholds, and efficient digital transaction management.
 
-*Tier 4: Tactical Suppliers (20% of suppliers, 5% of value)*
+_Tier 4: Tactical Suppliers (20% of suppliers, 5% of value)_
 Reduce from 550 to 400 suppliers through process automation and catalog buying. Spot purchasing with simplified procurement processes and automated ordering.
 
 **Multi-Dimensional Performance Scorecard**
 
 Weighting structure balancing operational and strategic dimensions:
+
 - Core Performance (40%): Quality (PPM defects), delivery (OTIF%), cost competitiveness (market index)
 - Strategic Value (35%): Innovation contribution (ideas implemented), sustainability (carbon reduction), collaboration (joint planning participation)
 - Risk and Compliance (25%): Financial stability score, operational resilience, regulatory compliance
@@ -142,11 +147,13 @@ Weighting structure balancing operational and strategic dimensions:
 **Investment Summary and Value Creation**
 
 Total program investment: $80M over 3 years
+
 - Technology platform: $25M (digital supplier management, performance analytics)
 - Supplier development fund: $35M (capability building, innovation partnerships)
 - Process and organization: $20M (procurement transformation, training)
 
 Projected value creation: $585M
+
 - Cost reduction through consolidation: $180M
 - Innovation-driven revenue: $240M
 - Quality and warranty savings: $90M

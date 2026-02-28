@@ -3,21 +3,22 @@ title: Financial Model Builder
 slug: financial-model-builder
 category: finance
 tags:
-- financial
-- modeling
-- DCF
-- comparable
-- company
-- analysis
-- LBO
-- scenario
-- analysis
-- valuation
+  - financial
+  - modeling
+  - DCF
+  - comparable
+  - company
+  - analysis
+  - LBO
+  - scenario
+  - analysis
+  - valuation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt guides users through building rigorous financial models —
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt guides users through building rigorous financial models —
   DCF, comparable company (comps), precedent transactions, or LBO — with properly
   structured assumptions, scenario frameworks, and output interpretation. It functions
   as a senior financial modeling advisor that helps structure the model architecture,
@@ -26,15 +27,15 @@ description: This prompt guides users through building rigorous financial models
   of results.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building a DCF model for an investment decision or company valuation with documented
-  assumptions and sensitivity analysis
-- Constructing a comparable company analysis to benchmark valuation multiples and
-  identify relative value
-- Developing an LBO model to assess private equity return potential and maximum debt
-  capacity
-- Generating actual live Excel formulas (this provides structure, logic, and guidance
-  — you build the spreadsheet)
+  - Ideal Scenarios:**
+  - Building a DCF model for an investment decision or company valuation with documented
+    assumptions and sensitivity analysis
+  - Constructing a comparable company analysis to benchmark valuation multiples and
+    identify relative value
+  - Developing an LBO model to assess private equity return potential and maximum debt
+    capacity
+  - Generating actual live Excel formulas (this provides structure, logic, and guidance
+    — you build the spreadsheet)
 complexity: advanced
 interaction: multi-turn
 ---

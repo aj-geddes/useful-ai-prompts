@@ -1,6 +1,7 @@
 # Creative Brief Development Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/creative-brief-development-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Creative brief development specialist who crafts clear, inspiring briefs that al
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Launching new marketing campaigns needing creative development
 - Briefing internal teams or agencies on brand projects
 - Developing advertising or content initiatives from strategy
@@ -25,6 +27,7 @@ Creative brief development specialist who crafts clear, inspiring briefs that al
 - Product launch creative planning
 
 **Anti-Patterns:**
+
 - Tactical execution of existing creative direction (execution briefs different)
 - Content calendar development without strategic campaign (use content planning prompts)
 - Brand strategy development from scratch (use brand strategy prompts first)
@@ -96,6 +99,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Project: New product launch campaign for our eco-friendly water bottle line
 
@@ -140,6 +144,7 @@ The reusable bottle market is crowded with "green" messaging that has become wal
 Achieve 25% market share in sustainable beverage containers within 6 months of launch.
 
 **Success Metrics:**
+
 - Sales: 150,000 units sold in 6 months
 - Awareness: 40% aided brand awareness among target audience
 - Engagement: 5M+ social impressions, 15% average engagement rate
@@ -183,18 +188,21 @@ EcoPure makes sustainable hydration effortlessly cool.
 **CREATIVE DIRECTION**
 
 **Tone:**
+
 - Confident, not preachy
 - Innovative, not earnest
 - Aspirational, not guilt-inducing
 - Fresh, not crunchy
 
 **Visual Territory:**
+
 - Clean, modern, vibrant (NOT typical earthy/green eco palette)
 - Urban energy, movement, active lifestyles
 - Premium product photography that could be in Vogue or Dwell
 - Diverse, stylish real people (not models posing as eco-warriors)
 
 **What to Avoid:**
+
 - Any imagery of dying animals, melting ice, or environmental devastation
 - Preachy messaging about saving the planet
 - Brown/green/burlap natural aesthetic
@@ -208,28 +216,33 @@ The bottle as a style accessory and status symbol that happens to be sustainable
 **CHANNEL STRATEGY & DELIVERABLES**
 
 **Instagram (Lead Platform)** - $180K
+
 - Daily story content showcasing lifestyle integration
 - Reels focused on innovation and design details
 - IGTV series: "People Who Refill" - profiles of stylish sustainability leaders
 - Grid aesthetic that builds cohesive brand world
 
 **TikTok** - $120K
+
 - Creator partnerships with sustainable lifestyle content
 - Behind-the-scenes of innovation/manufacturing
 - User-generated content challenges (not preachy, fun/creative focus)
 - Trend participation with brand integration
 
 **Influencer Partnerships** - $187.5K
+
 - 5 macro influencers (500K+ followers) in fashion, wellness, design spaces
 - 50 micro influencers (10-100K) for authentic community voices
 - Focus on organic integration, not overt product pushing
 
 **Retail Displays & Events** - $187.5K
+
 - Premium retail displays at key sustainability and design retailers
 - Launch event for media and influencers in flagship market
 - Pop-up hydration stations in 3 key cities
 
 **Production** - $75K
+
 - Hero video (60 seconds + cutdowns for all platforms)
 - Photography suite (lifestyle + product + influencer content)
 - AR filter development for social
@@ -238,13 +251,13 @@ The bottle as a style accessory and status symbol that happens to be sustainable
 
 **TIMELINE**
 
-| Phase | Timing | Milestones |
-|-------|--------|------------|
-| Creative Development | Weeks 1-4 | Concepts presented Week 2; Final creative approved Week 4 |
-| Content Production | Weeks 5-8 | Principal photography Week 5; Video delivery Week 7 |
-| Influencer Seeding | Weeks 9-10 | Product to influencers; Embargo content creation |
-| Launch | Week 11 | Coordinated launch across all channels |
-| Campaign Flight | Weeks 11-35 | Ongoing content, optimization, measurement |
+| Phase                | Timing      | Milestones                                                |
+| -------------------- | ----------- | --------------------------------------------------------- |
+| Creative Development | Weeks 1-4   | Concepts presented Week 2; Final creative approved Week 4 |
+| Content Production   | Weeks 5-8   | Principal photography Week 5; Video delivery Week 7       |
+| Influencer Seeding   | Weeks 9-10  | Product to influencers; Embargo content creation          |
+| Launch               | Week 11     | Coordinated launch across all channels                    |
+| Campaign Flight      | Weeks 11-35 | Ongoing content, optimization, measurement                |
 
 ---
 

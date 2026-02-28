@@ -1,6 +1,7 @@
 # Cost Reduction Advisor
 
 ## Metadata
+
 - **ID**: `finance-cost-reduction-advisor`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt identifies, prioritizes, and builds business cases for cost reduction initiatives across business operations — from procurement and headcount to vendor contracts, facilities, and operational inefficiencies. It distinguishes between tactical cost cuts and structural efficiency improvements, and ensures savings are quantified, risk-assessed, and sequenced for implementation. The output is a prioritized cost reduction roadmap with business cases for each initiative.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business needs to improve EBITDA margins ahead of a capital raise, acquisition, or profitability target
 - A new CFO or leadership team needs to rapidly identify cost improvement opportunities across the P&L
 - Conducting a cost baseline analysis before a significant investment to ensure the business is operating efficiently
 
 **Anti-patterns (Don't Use For):**
+
 - Across-the-board headcount cuts without understanding which functions drive value — blunt cuts damage capability
 - Cost reduction that cannibalizes revenue-generating activities without explicit leadership acknowledgment of that tradeoff
 - Businesses in acute financial distress requiring immediate liquidity solutions — that requires a restructuring advisor, not an efficiency advisor
@@ -70,11 +75,13 @@ Avoid: Recommending large headcount reductions without organizational impact ana
 ## Example Usage
 
 ### Input
+
 "We're a $80M professional services firm (consulting and staffing), 11% EBITDA margins. Our target is 16% within 18 months ahead of a potential sale process. SG&A is 35% of revenue vs. industry benchmark of 28%. We have 180 employees, 3 offices (headquarters + 2 regional), multiple overlapping SaaS tools, and vendor contracts that haven't been renegotiated in 3+ years. We're open to everything except reducing delivery headcount."
 
 ### Output
+
 **Cost Reduction Report: $80M Professional Services Firm**
-*Target: 11% → 16% EBITDA Margins | $4M Incremental EBITDA | 18-Month Runway*
+_Target: 11% → 16% EBITDA Margins | $4M Incremental EBITDA | 18-Month Runway_
 
 ---
 
@@ -91,7 +98,7 @@ To reach 16% EBITDA margins from 11%, the company needs $4M of incremental EBITD
 **Top Cost Reduction Initiatives**
 
 **Initiative 1: Vendor Contract Renegotiation**
-*Target: SaaS, professional services, and facilities service contracts*
+_Target: SaaS, professional services, and facilities service contracts_
 Contracts unreviewed for 3+ years typically have 15-25% pricing upside. Engage a contract audit (internal or 30-day external engagement): prioritize top 20 vendors by spend. Benchmark current pricing against market rates. Estimated annual savings: **$400-700K**. Implementation cost: minimal (internal time or $15-25K advisory fee). Timeline: 60-90 days. Risk: Low.
 
 **Initiative 2: SaaS and Technology Rationalization**
@@ -116,14 +123,14 @@ If internal staff are working consistent overtime while external contractors are
 
 **Impact-Feasibility Matrix**
 
-| Initiative | Annual Savings | Implementation | Risk | Priority |
-|-----------|---------------|----------------|------|---------|
-| Vendor Renegotiation | $400-700K | 60-90 days | Low | 1 - Quick Win |
-| SaaS Rationalization | $150-350K | 30-60 days | Low | 1 - Quick Win |
-| Indirect Procurement | $200-400K | 45-60 days | Low | 1 - Quick Win |
-| Span/Layers Review | $300-600K | 90-120 days | Medium | 2 - Structural |
-| Real Estate | $250-500K | 6-12 months | Medium | 2 - Structural |
-| OT/Contractor Review | $100-300K | 60 days | Low | 1 - Quick Win |
+| Initiative           | Annual Savings | Implementation | Risk   | Priority       |
+| -------------------- | -------------- | -------------- | ------ | -------------- |
+| Vendor Renegotiation | $400-700K      | 60-90 days     | Low    | 1 - Quick Win  |
+| SaaS Rationalization | $150-350K      | 30-60 days     | Low    | 1 - Quick Win  |
+| Indirect Procurement | $200-400K      | 45-60 days     | Low    | 1 - Quick Win  |
+| Span/Layers Review   | $300-600K      | 90-120 days    | Medium | 2 - Structural |
+| Real Estate          | $250-500K      | 6-12 months    | Medium | 2 - Structural |
+| OT/Contractor Review | $100-300K      | 60 days        | Low    | 1 - Quick Win  |
 
 **Total Addressable Savings: $1.4M - $2.85M annualized** — reaching approximately 13-15% EBITDA margins. Achieving the full 16% target may require revenue growth alongside cost discipline, or deeper structural changes reviewed with leadership.
 
@@ -139,9 +146,11 @@ Month 3: First contracts renegotiated; estimated $150-200K savings booked in run
 ---
 
 ## Variations
+
 - **Zero-Based Budgeting**: Rebuild each department's budget from zero, requiring justification for every dollar of spend rather than incremental adjustments
 - **Post-Acquisition Cost Integration**: Focus on synergy identification and realization planning for a recently completed acquisition
 
 ## Related Prompts
+
 - [Cash Flow Optimizer](cash-flow-optimizer.md) - Address working capital alongside cost structure improvements
 - [Financial Reporting Specialist](financial-reporting-specialist.md) - Build the management reporting to track savings realization

@@ -1,6 +1,7 @@
 # Utility-Scale Solar Farm Development and Project Optimization
 
 ## Metadata
+
 - **ID**: `utility-scale-solar-farm-development`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables comprehensive utility-scale solar farm development from site
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing utility-scale solar projects (50+ MW)
 - Managing full project lifecycle from prospecting to COD
 - Structuring PPAs and offtake agreements
@@ -25,6 +27,7 @@ This prompt enables comprehensive utility-scale solar farm development from site
 - Optimizing technical design for performance and cost
 
 **Anti-patterns (when not to use):**
+
 - Residential or small commercial installations
 - Community solar program design
 - Detailed financial modeling (use dedicated prompt)
@@ -116,6 +119,7 @@ Develop comprehensive utility-scale solar project strategy:
 ## Example Usage
 
 ### Input
+
 We're developing a 200 MW solar project in Arizona (APS territory). We have site control on 1,200 acres of private land with excellent solar resource. The project is at early development stage with interconnection application pending. Goal is utility PPA with APS or merchant positioning in CAISO export market. Target COD is Q4 2027.
 
 ### Output
@@ -124,46 +128,51 @@ We're developing a 200 MW solar project in Arizona (APS territory). We have site
 
 **Site and Resource Assessment**
 
-*Site characteristics:*
+_Site characteristics:_
+
 - Location: APS service territory, southern Arizona
 - Land area: 1,200 acres (sufficient for 200+ MW with buffer)
 - Solar resource: 5.6 kWh/m2/day GHI (excellent - top 15% nationally)
 - Terrain: <3% slope, minimal grading required
 - Access: Paved county road frontage, adequate for construction traffic
 
-*Resource projections:*
+_Resource projections:_
+
 - P50 specific yield: 2,150 kWh/kWp (single-axis tracker)
 - P90 specific yield: 2,040 kWh/kWp
 - Annual production (200 MW DC): 430 GWh (P50)
 - Degradation: 0.5%/year assumed
 
-*Key advantages:*
+_Key advantages:_
+
 - Premium solar resource with low interannual variability
 - Minimal environmental constraints (private agricultural land)
 - Proximity to CAISO export opportunities via regional transmission
 
 **Market Analysis and Offtake Strategy**
 
-*APS utility PPA opportunity:*
+_APS utility PPA opportunity:_
+
 - APS IRP shows 800+ MW solar procurement through 2030
 - Recent RFP pricing: $25-32/MWh for new solar
 - Preference for projects with storage (evaluate solar+storage)
 - Next procurement expected Q2 2025
 
-*CAISO merchant/bilateral opportunity:*
+_CAISO merchant/bilateral opportunity:_
+
 - Southwest regional transmission enables CAISO delivery
 - California LSE demand for Arizona solar remains strong
 - Corporate PPA potential with data centers, tech companies
 - Merchant exposure risk: CAISO basis uncertainty
 
-*Recommended strategy:*
+_Recommended strategy:_
 Primary: APS utility PPA (60-70% of output) for financing certainty
 Secondary: CAISO bilateral corporate PPA or merchant for remaining output
 Rationale: De-risk financing with utility contract while capturing CAISO premium
 
 **Technical Design Optimization**
 
-*System configuration:*
+_System configuration:_
 | Parameter | Specification | Rationale |
 |-----------|---------------|-----------|
 | DC capacity | 200 MW | Site and interconnection optimization |
@@ -173,20 +182,22 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 | Trackers | Single-axis (SAT) | Optimal for Arizona resource |
 | Substation | 69 kV step-up | Aligned with POI voltage |
 
-*Layout optimization:*
+_Layout optimization:_
+
 - Ground coverage ratio: 35-40% (optimized for bifacial gain)
 - Row spacing: 6.5m pitch for tracker optimization
 - Array configuration: 2-high portrait for reduced structure cost
 - Bifacial gain: 8-12% additional production
 
-*Performance projections:*
+_Performance projections:_
+
 - Performance ratio: 86% (Year 1)
 - Annual generation: 430 GWh (P50), 408 GWh (P90)
 - Availability target: 99%+
 
 **Development Roadmap**
 
-*Phase 1: Foundation (Q1-Q4 2025)*
+_Phase 1: Foundation (Q1-Q4 2025)_
 | Milestone | Target Date | Status |
 |-----------|-------------|--------|
 | Interconnection application | Complete | Pending study |
@@ -195,7 +206,7 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 | Landowner agreements finalized | Q1 2025 | In process |
 | County pre-application meeting | Q1 2025 | Scheduled |
 
-*Phase 2: De-risking (Q1-Q4 2026)*
+_Phase 2: De-risking (Q1-Q4 2026)_
 | Milestone | Target Date | Dependencies |
 |-----------|-------------|--------------|
 | Interconnection agreement (LGIA) | Q2 2026 | Study completion |
@@ -204,7 +215,7 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 | Environmental permits | Q3 2026 | Agency review |
 | Final investment decision | Q4 2026 | Offtake + permits |
 
-*Phase 3: Execution (Q1-Q4 2027)*
+_Phase 3: Execution (Q1-Q4 2027)_
 | Milestone | Target Date | Dependencies |
 |-----------|-------------|--------------|
 | Financial close | Q1 2027 | FID + permits |
@@ -212,11 +223,11 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 | Mechanical completion | Q3 2027 | Construction |
 | Commercial operation | Q4 2027 | Commissioning |
 
-*Critical path:* Interconnection drives schedule. LGIA execution by Q2 2026 required for Q4 2027 COD.
+_Critical path:_ Interconnection drives schedule. LGIA execution by Q2 2026 required for Q4 2027 COD.
 
 **Financial Structure**
 
-*Capital budget estimate:*
+_Capital budget estimate:_
 | Category | Cost ($M) | $/W DC |
 |----------|-----------|--------|
 | Modules | $32 | $0.16 |
@@ -228,13 +239,15 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 | Contingency | $9 | $0.04 |
 | **Total** | **$150M** | **$0.75** |
 
-*Project economics:*
+_Project economics:_
+
 - LCOE: $28-32/MWh (competitive in APS/CAISO markets)
 - Target PPA: $30-35/MWh (15-year term)
 - Developer IRR: 12-15% (levered)
 - DSCR: 1.35x minimum
 
-*Financing approach:*
+_Financing approach:_
+
 - Construction debt: $105M (70% of cost)
 - Tax equity: $30M (20%)
 - Sponsor equity: $15M (10%)
@@ -242,15 +255,16 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 
 **Risk Assessment and Mitigation**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Interconnection delay | Medium | High | Parallel development paths, utility engagement |
-| PPA pricing pressure | Medium | Medium | Multi-offtaker strategy, cost optimization |
-| Permitting delays | Low | Medium | Early stakeholder engagement, experienced counsel |
-| Construction cost inflation | Medium | Medium | Early procurement, fixed-price EPC |
-| Technology availability | Low | Medium | Multi-vendor qualification, advance orders |
+| Risk                        | Probability | Impact | Mitigation                                        |
+| --------------------------- | ----------- | ------ | ------------------------------------------------- |
+| Interconnection delay       | Medium      | High   | Parallel development paths, utility engagement    |
+| PPA pricing pressure        | Medium      | Medium | Multi-offtaker strategy, cost optimization        |
+| Permitting delays           | Low         | Medium | Early stakeholder engagement, experienced counsel |
+| Construction cost inflation | Medium      | Medium | Early procurement, fixed-price EPC                |
+| Technology availability     | Low         | Medium | Multi-vendor qualification, advance orders        |
 
-*Key risk mitigations:*
+_Key risk mitigations:_
+
 1. **Interconnection**: Engage APS transmission planning early, consider alternative POIs
 2. **Offtake**: Pursue APS RFP while developing CAISO bilateral opportunities
 3. **Permitting**: Pre-application process with Pinal/Maricopa County
@@ -258,14 +272,14 @@ Rationale: De-risk financing with utility contract while capturing CAISO premium
 
 **Success Metrics**
 
-| Metric | Target |
-|--------|--------|
-| COD | Q4 2027 |
-| LCOE | <$32/MWh |
-| Developer IRR | >12% |
-| Performance ratio | >85% |
-| Availability | >99% |
-| Energy yield | >95% of P50 |
+| Metric            | Target      |
+| ----------------- | ----------- |
+| COD               | Q4 2027     |
+| LCOE              | <$32/MWh    |
+| Developer IRR     | >12%        |
+| Performance ratio | >85%        |
+| Availability      | >99%        |
+| Energy yield      | >95% of P50 |
 
 **Recommendations**
 

@@ -1,12 +1,13 @@
 ---
 category: mobile-development
-date: '2025-01-01'
-description: Design for mobile devices first, then scale up to larger screens. Create
+date: "2025-01-01"
+description:
+  Design for mobile devices first, then scale up to larger screens. Create
   responsive interfaces that work seamlessly across all device sizes.
 layout: skill
 slug: mobile-first-design
 tags:
-- development
+  - development
 title: mobile-first-design
 ---
 
@@ -51,7 +52,6 @@ Step 3: Optimize for Desktop (1200px+)
   - Multiple columns and sidebars
 
 ---
-
 ## Responsive Breakpoints:
 
 Mobile: 320px - 480px
@@ -80,7 +80,6 @@ Large Desktop: 1441px+
   - Avoid stretching too wide
 
 ---
-
 ## Mobile Design Patterns:
 
 Navigation:
@@ -206,7 +205,6 @@ Network:
   - Cache aggressively
 
 ---
-
 Testing Devices:
 
 Physical Devices:
@@ -280,6 +278,7 @@ Testing Strategy:
 ## Best Practices
 
 ### ✅ DO
+
 - Design for smallest screen first
 - Test on real mobile devices
 - Use responsive images
@@ -292,6 +291,7 @@ Testing Strategy:
 - Progressive enhancement approach
 
 ### ❌ DON'T
+
 - Assume all mobile users have fast networks
 - Use desktop-only patterns on mobile
 - Ignore touch interaction needs

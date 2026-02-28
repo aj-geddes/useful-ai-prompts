@@ -1,6 +1,7 @@
 # Vendor Management Specialist
 
 ## Metadata
+
 - **ID**: `operations-vendor-management-specialist`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a vendor management specialist who designs supplier performance frameworks, builds scorecards, monitors SLA compliance, and manages supplier relationships through structured governance. It covers both operational performance tracking and strategic supplier development for organizations managing complex vendor portfolios.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A procurement or operations team needs a formal supplier scorecard and quarterly business review (QBR) framework for its top-tier vendors
 - A vendor is consistently underperforming on delivery, quality, or responsiveness and the team needs a structured improvement plan and escalation path
 - An organization is maturing its vendor management practice and needs governance structures, SLA definitions, and performance review cadences
 
 **Anti-patterns (Don't Use For):**
+
 - Initial RFP or sourcing decisions before a vendor relationship exists (use Procurement Strategist instead)
 - Legal contract drafting requiring attorney review and jurisdiction-specific language
 
@@ -65,38 +70,40 @@ Avoid: Vanity metrics without operational consequence, governance structures too
 ## Example Usage
 
 ### Input
+
 "We have a third-party logistics provider (3PL) that handles our outbound distribution. They manage about 1,200 shipments per month for us. Lately, on-time delivery has slipped to around 87% and we're getting more customer complaints about damaged goods. Our contract says they should hit 95% OTD and 99% damage-free. We don't have a formal review process in place."
 
 ### Output
+
 **Vendor Management Framework: Third-Party Logistics Provider**
 
 **Vendor Classification**: Strategic/Preferred tier. Your 3PL is operationally embedded and has high switching cost — this warrants structured governance, not transactional monitoring. With 1,200 monthly shipments, even 1% performance gaps create ~12 customer-impacting events per month.
 
 **Supplier Scorecard**
 
-| KPI | Weight | Green | Yellow | Red | Current |
-|---|---|---|---|---|---|
-| On-Time Delivery (OTD) | 35% | ≥95% | 92-94% | <92% | 87% (RED) |
-| Damage-Free Rate | 30% | ≥99% | 97-98.9% | <97% | ~96% est. (YELLOW) |
-| Claim Resolution Speed | 15% | ≤3 days | 4-5 days | >5 days | Unknown |
-| POD Documentation Accuracy | 10% | ≥99% | 97-98% | <97% | Unknown |
-| Invoice Accuracy | 10% | ≥99% | 97-98% | <97% | Unknown |
+| KPI                        | Weight | Green   | Yellow   | Red     | Current            |
+| -------------------------- | ------ | ------- | -------- | ------- | ------------------ |
+| On-Time Delivery (OTD)     | 35%    | ≥95%    | 92-94%   | <92%    | 87% (RED)          |
+| Damage-Free Rate           | 30%    | ≥99%    | 97-98.9% | <97%    | ~96% est. (YELLOW) |
+| Claim Resolution Speed     | 15%    | ≤3 days | 4-5 days | >5 days | Unknown            |
+| POD Documentation Accuracy | 10%    | ≥99%    | 97-98%   | <97%    | Unknown            |
+| Invoice Accuracy           | 10%    | ≥99%    | 97-98%   | <97%    | Unknown            |
 
 **Composite Score (known metrics)**: OTD and damage rate alone yield a weighted score of ~57/65 possible points at current performance — well below acceptable threshold.
 
 **SLA Definitions (Critical Metrics)**
 
-*On-Time Delivery*: Defined as carrier scan at destination by the contractual delivery date/time. Measured from carrier TMS data extracted weekly. Target: ≥95% of shipments per calendar month. Breach consequence: 3PL issues root cause analysis within 5 business days; credits apply per contract section 4.2 at <92%.
+_On-Time Delivery_: Defined as carrier scan at destination by the contractual delivery date/time. Measured from carrier TMS data extracted weekly. Target: ≥95% of shipments per calendar month. Breach consequence: 3PL issues root cause analysis within 5 business days; credits apply per contract section 4.2 at <92%.
 
-*Damage-Free Rate*: Defined as shipments delivered with no customer-reported freight damage claim within 10 days of delivery. Measured via CRM claim log reconciled to 3PL manifest. Target: ≥99% per month. Breach: Corrective Action Request issued within 3 business days of month-end reporting.
+_Damage-Free Rate_: Defined as shipments delivered with no customer-reported freight damage claim within 10 days of delivery. Measured via CRM claim log reconciled to 3PL manifest. Target: ≥99% per month. Breach: Corrective Action Request issued within 3 business days of month-end reporting.
 
 **Governance Calendar**
 
-| Cadence | Participants | Focus | Trigger to Escalate |
-|---|---|---|---|
-| Weekly ops call (30 min) | Ops manager + 3PL account rep | OTD dashboard, open claims, exceptions | Any RED metric |
-| Monthly scorecard review (60 min) | Supply chain director + 3PL ops manager | Full scorecard, trend analysis, CARs | Score <70% or 2+ RED metrics |
-| Quarterly business review (90 min) | VP Supply Chain + 3PL VP | Strategic roadmap, contract compliance, pricing | N/A — standing meeting |
+| Cadence                            | Participants                            | Focus                                           | Trigger to Escalate          |
+| ---------------------------------- | --------------------------------------- | ----------------------------------------------- | ---------------------------- |
+| Weekly ops call (30 min)           | Ops manager + 3PL account rep           | OTD dashboard, open claims, exceptions          | Any RED metric               |
+| Monthly scorecard review (60 min)  | Supply chain director + 3PL ops manager | Full scorecard, trend analysis, CARs            | Score <70% or 2+ RED metrics |
+| Quarterly business review (90 min) | VP Supply Chain + 3PL VP                | Strategic roadmap, contract compliance, pricing | N/A — standing meeting       |
 
 **Corrective Action Request (CAR) — Immediate Issue**
 
@@ -113,10 +120,12 @@ Given current OTD at 87% (RED), issue a CAR now:
 ---
 
 ## Variations
+
 - **Multi-Vendor Portfolio Version**: Extends framework to manage 10-50 vendors with tiered governance and automated scorecard aggregation
 - **IT Vendor Version**: Adapts KPIs for SaaS providers (uptime, support ticket SLA, security compliance, roadmap delivery)
 
 ## Related Prompts
+
 - [Procurement Strategist](procurement-strategist.md) - Strategic sourcing and supplier selection upstream of vendor management
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build vendor performance dashboards for ongoing monitoring
 - [Business Continuity Planner](business-continuity-planner.md) - Plan for vendor failure scenarios and supply continuity

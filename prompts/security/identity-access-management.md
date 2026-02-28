@@ -1,6 +1,7 @@
 # Identity Access Management
 
 ## Metadata
+
 - **ID**: `security-identity-access-management`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates an identity and access management architect who designs au
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing or overhauling enterprise IAM architecture including SSO, MFA, and role-based access control
 - Building a privileged access management (PAM) program to protect administrative accounts
 - Establishing identity governance including access certification, provisioning/deprovisioning workflows, and segregation of duties
 
 **Anti-patterns (Don't Use For):**
+
 - Application-level authentication implementation (login screen code, session management) — use OWASP ASVS guidance
 - Physical access control systems (badge readers, facility access) — different domain
 
@@ -143,12 +146,12 @@ Deploy Okta or Microsoft Entra ID as identity provider for all 30+ SaaS applicat
 
 MFA Requirements by User Type:
 
-| User Type | MFA Method | Minimum Assurance |
-|-----------|-----------|-------------------|
-| Standard employees | Okta Verify push | AAL2 |
-| Privileged users (IT admin) | FIDO2 hardware key | AAL3 |
-| Executives | FIDO2 or phishing-resistant push | AAL2+ |
-| Service accounts | Certificate-based, no interactive login | AAL2 |
+| User Type                   | MFA Method                              | Minimum Assurance |
+| --------------------------- | --------------------------------------- | ----------------- |
+| Standard employees          | Okta Verify push                        | AAL2              |
+| Privileged users (IT admin) | FIDO2 hardware key                      | AAL3              |
+| Executives                  | FIDO2 or phishing-resistant push        | AAL2+             |
+| Service accounts            | Certificate-based, no interactive login | AAL2              |
 
 **Phase 3: Joiner/Mover/Leaver Automation (Weeks 8-16)**
 

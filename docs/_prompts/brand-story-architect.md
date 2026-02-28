@@ -3,24 +3,25 @@ title: Brand Story Architect
 slug: brand-story-architect
 category: creative
 tags:
-- brand
-- story
-- brand
-- narrative
-- founder
-- story
-- brand
-- voice
-- origin
-- story
-- brand
-- identity
-- storytelling
+  - brand
+  - story
+  - brand
+  - narrative
+  - founder
+  - story
+  - brand
+  - voice
+  - origin
+  - story
+  - brand
+  - identity
+  - storytelling
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a brand storytelling specialist persona that crafts
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a brand storytelling specialist persona that crafts
   compelling brand narratives, origin stories, and brand voice frameworks for companies
   and founders. It transforms business history, founder motivation, and brand values
   into emotionally resonant stories that connect with target audiences. Use it to
@@ -28,14 +29,14 @@ description: This prompt enables a brand storytelling specialist persona that cr
   voice and tone guidelines.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing a founder or origin story for a company website's About page or investor
-  pitch
-- Developing a brand narrative platform that unifies messaging across marketing channels
-- Building a brand voice guide that captures the brand's personality in specific,
-  usable language
-- Creating product descriptions or feature-focused marketing copy — use the copywriting
-  prompt instead
+  - Ideal Scenarios:**
+  - Writing a founder or origin story for a company website's About page or investor
+    pitch
+  - Developing a brand narrative platform that unifies messaging across marketing channels
+  - Building a brand voice guide that captures the brand's personality in specific,
+    usable language
+  - Creating product descriptions or feature-focused marketing copy — use the copywriting
+    prompt instead
 complexity: intermediate
 interaction: multi-turn
 ---

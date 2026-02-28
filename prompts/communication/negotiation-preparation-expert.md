@@ -1,6 +1,7 @@
 # Negotiation Preparation Expert
 
 ## Metadata
+
 - **ID**: `communication-negotiation-preparation`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Prepares for high-stakes negotiations through strategic planning, BATNA analysis
 ## When to Use
 
 **Ideal scenarios:**
+
 - Preparing for contract negotiations with vendors or clients
 - Planning partnership or merger discussions
 - Resolving disputes or conflicts through negotiation
@@ -25,6 +27,7 @@ Prepares for high-stakes negotiations through strategic planning, BATNA analysis
 - Complex multi-party deal structuring
 
 **Anti-patterns (when NOT to use):**
+
 - Routine workplace conversations
 - Everyday collaborative discussions
 - Simple requests or approvals
@@ -110,6 +113,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Renewing software contract. Vendor hiking price 30% ($300K to $390K). We're a major client (5% of their revenue). Switching costs are high ($50K migration + 3 months disruption). Contract expires in 60 days. Want to stay but need better pricing. Competitor quotes at $280K but less feature-rich."
 
 ### Output
@@ -117,24 +121,30 @@ Avoid:
 ## LEVERAGE ANALYSIS
 
 ### Your Position
+
 **Strengths:**
+
 - Major client (5% of their revenue)
 - Long relationship (presumably loyal)
 - Alternative vendor quote in hand
 - 60 days is enough time for decision
 
 **Weaknesses:**
+
 - High switching costs ($50K + disruption)
 - Team prefers current solution
 - Tight timeline limits options
 
 ### Their Position
+
 **Strengths:**
+
 - Switching costs protect them
 - Feature differentiation
 - Existing integration
 
 **Weaknesses:**
+
 - Can't afford to lose 5% of revenue
 - Market pressure from competitors
 - Long-term reference value of your brand
@@ -144,9 +154,11 @@ Avoid:
 ## BATNA ANALYSIS
 
 ### Your BATNA
+
 **Best Alternative:** Switch to competitor at $280K
 
 **BATNA Calculation:**
+
 - Competitor: $280K
 - Migration: $50K
 - Disruption cost: ~$30K (productivity loss)
@@ -156,7 +168,9 @@ Avoid:
 **Walk-Away Point:** $340K (current vendor must beat BATNA + risk premium)
 
 ### Their BATNA
+
 **If they lose you:**
+
 - Revenue loss: $300K+ annually
 - Reference account loss
 - Market share to competitor
@@ -173,6 +187,7 @@ Avoid:
 **Opening Position:** $280K (anchor at competitor price)
 
 **Supporting Arguments:**
+
 1. Market rates: "Competitor X quoted $280K for comparable functionality"
 2. Loyalty value: "We've been a customer for [X] years with zero escalations"
 3. Reference value: "We've provided referrals that generated [estimate] in new business"
@@ -191,15 +206,17 @@ Avoid:
 ## CONCESSION STRATEGY
 
 ### What You Can Trade
-| Concession | Value to Them | Cost to You |
-|------------|---------------|-------------|
-| Multi-year commitment | High | Medium |
-| Case study participation | Medium | Low |
-| Reference calls | Medium | Low |
-| Early payment terms | Medium | Low |
-| Training reduction | Low | None |
+
+| Concession               | Value to Them | Cost to You |
+| ------------------------ | ------------- | ----------- |
+| Multi-year commitment    | High          | Medium      |
+| Case study participation | Medium        | Low         |
+| Reference calls          | Medium        | Low         |
+| Early payment terms      | Medium        | Low         |
+| Training reduction       | Low           | None        |
 
 ### Concession Sequence
+
 1. Start at $280K, justify with competitor quote
 2. If pushback, offer 3-year term for $290K
 3. Add case study for $310K
@@ -208,12 +225,15 @@ Avoid:
 ## CLOSING APPROACH
 
 ### Creating Urgency
+
 "We have a competitor proposal that expires Friday. I'd like to resolve this with you by Thursday."
 
 ### The Ask
+
 "If you can get to $320K on a 3-year term, I can sign today. We'll commit to the case study and provide three reference calls. That's $960K guaranteed revenue for you."
 
 ### Agreement Elements
+
 - Price: $320K annual (7% increase, not 30%)
 - Term: 3 years with annual pricing locked
 - Payment: Net 45 (their standard)
@@ -229,6 +249,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Contract Review Expert](../business/legal/contract-review-expert.md)
 - [Salary Negotiation Expert](../career-development/salary-negotiation-expert.md)
 - [Conflict Resolution Expert](../problem-solving/conflict-resolution-expert.md)

@@ -293,6 +293,7 @@ server {
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTP/2 for performance
 - Enable SSL/TLS with strong ciphers
 - Implement proper caching strategies
@@ -304,6 +305,7 @@ server {
 - Keep error logs separate from access logs
 
 ### ❌ DON'T
+
 - Disable gzip compression
 - Use weak SSL ciphers
 - Cache authenticated responses

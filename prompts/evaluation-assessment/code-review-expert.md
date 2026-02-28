@@ -1,6 +1,7 @@
 # Code Review Expert
 
 ## Metadata
+
 - **ID**: `evaluation-code-review`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Technical
@@ -18,6 +19,7 @@ Conduct thorough code reviews that improve code quality, catch bugs early, and d
 ## When to Use
 
 **Ideal scenarios:**
+
 - Reviewing pull requests or code changes
 - Establishing team code review standards and guidelines
 - Evaluating code quality and maintainability
@@ -25,6 +27,7 @@ Conduct thorough code reviews that improve code quality, catch bugs early, and d
 - Identifying security vulnerabilities in application code
 
 **Anti-patterns (when not to use):**
+
 - Automated static analysis configuration
 - Security penetration testing or infrastructure audits
 - Performance profiling and optimization
@@ -104,22 +107,24 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Review this Node.js Express API endpoint. It handles user authentication. Concerned about security and error handling."
 
 ```javascript
-app.post('/login', async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email: email });
   if (user && user.password === password) {
-    const token = jwt.sign({ userId: user._id }, 'secret123');
+    const token = jwt.sign({ userId: user._id }, "secret123");
     res.json({ token });
   } else {
-    res.status(401).json({ error: 'Invalid credentials' });
+    res.status(401).json({ error: "Invalid credentials" });
   }
 });
 ```
 
 ### Output
+
 **Code Review: Login Endpoint**
 
 **Critical Issues**
@@ -128,6 +133,7 @@ app.post('/login', async (req, res) => {
    - Problem: Comparing passwords directly suggests passwords are stored unhashed
    - Risk: Complete database compromise exposes all user credentials
    - Fix: Use bcrypt to hash passwords and compare
+
    ```javascript
    const isValid = await bcrypt.compare(password, user.passwordHash);
    ```
@@ -135,8 +141,9 @@ app.post('/login', async (req, res) => {
 2. **Hardcoded JWT secret (Line 5)**
    - Problem: Secret 'secret123' in code is insecure and will leak
    - Fix: Use environment variable
+
    ```javascript
-   jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+   jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
    ```
 
 3. **Missing try-catch (entire function)**
@@ -159,35 +166,36 @@ app.post('/login', async (req, res) => {
    - Consider generic "Invalid credentials" for both cases (already doing this, good!)
 
 **Positive Observations**
+
 - Generic error message prevents user enumeration
 - Async/await used correctly
 - Clean, readable structure
 
 **Suggested Refactor**
+
 ```javascript
-app.post('/login', async (req, res) => {
+app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password) {
-      return res.status(400).json({ error: 'Email and password required' });
+      return res.status(400).json({ error: "Email and password required" });
     }
     const user = await User.findOne({ email });
     if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
-      return res.status(401).json({ error: 'Invalid credentials' });
+      return res.status(401).json({ error: "Invalid credentials" });
     }
-    const token = jwt.sign(
-      { userId: user._id },
-      process.env.JWT_SECRET,
-      { expiresIn: '1h' }
-    );
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "1h",
+    });
     res.json({ token });
   } catch (error) {
-    console.error('Login error:', error);
-    res.status(500).json({ error: 'Authentication failed' });
+    console.error("Login error:", error);
+    res.status(500).json({ error: "Authentication failed" });
   }
 });
 ```
 
 ## Related Prompts
+
 - [Security Assessment Expert](security-assessment-expert.md)
 - [Quality Assurance Expert](quality-assurance-expert.md)

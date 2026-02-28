@@ -1,6 +1,7 @@
 # Pipeline Design Architect
 
 ## Metadata
+
 - **ID**: `pipeline-design-architect`
 - **Version**: 1.1.0
 - **Category**: Technical/Data Engineering
@@ -18,6 +19,7 @@ Designs robust, scalable data pipelines that efficiently process batch and strea
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building new data pipeline architectures from scratch
 - Modernizing legacy ETL systems to cloud-native or lakehouse architectures
 - Implementing real-time streaming data processing systems
@@ -25,6 +27,7 @@ Designs robust, scalable data pipelines that efficiently process batch and strea
 - Unifying batch and streaming data processing
 
 **Anti-patterns (when NOT to use):**
+
 - Simple data exports or CSV file transfers
 - One-time data migrations (use migration tools)
 - BI report development or dashboard creation
@@ -149,25 +152,25 @@ Kafka Stream ──→ Direct ────────────┘    (Landin
 
 **Technology Stack Selection**
 
-| Layer | Technology | Rationale | Alternatives Considered |
-|-------|------------|-----------|------------------------|
-| Orchestration | Apache Airflow | Mature, extensible, team familiar | Dagster (newer, better testing) |
-| Batch Processing | Apache Spark + dbt | Handles 50GB+ efficiently, SQL-based transforms | Snowflake (higher cost at scale) |
-| Stream Processing | Apache Flink | True streaming with exactly-once, low latency | Spark Streaming (micro-batch latency) |
-| Message Queue | Apache Kafka | Already in use, proven at scale | Pulsar (better multi-tenancy) |
-| Storage | S3 + Delta Lake | Cost-effective, ACID on object storage | Iceberg (newer, less tooling) |
-| Data Quality | Great Expectations | Declarative, good dbt integration | dbt tests (less flexible) |
-| Feature Store | Redis + Feast | Sub-ms reads for real-time serving | DynamoDB (higher latency) |
-| Warehouse | Snowflake | BI tool compatibility, separation from processing | Databricks SQL (good but bundle-only) |
+| Layer             | Technology         | Rationale                                         | Alternatives Considered               |
+| ----------------- | ------------------ | ------------------------------------------------- | ------------------------------------- |
+| Orchestration     | Apache Airflow     | Mature, extensible, team familiar                 | Dagster (newer, better testing)       |
+| Batch Processing  | Apache Spark + dbt | Handles 50GB+ efficiently, SQL-based transforms   | Snowflake (higher cost at scale)      |
+| Stream Processing | Apache Flink       | True streaming with exactly-once, low latency     | Spark Streaming (micro-batch latency) |
+| Message Queue     | Apache Kafka       | Already in use, proven at scale                   | Pulsar (better multi-tenancy)         |
+| Storage           | S3 + Delta Lake    | Cost-effective, ACID on object storage            | Iceberg (newer, less tooling)         |
+| Data Quality      | Great Expectations | Declarative, good dbt integration                 | dbt tests (less flexible)             |
+| Feature Store     | Redis + Feast      | Sub-ms reads for real-time serving                | DynamoDB (higher latency)             |
+| Warehouse         | Snowflake          | BI tool compatibility, separation from processing | Databricks SQL (good but bundle-only) |
 
 **Data Flow Stages**
 
-| Stage | Processing | Quality Checks | Latency Target |
-|-------|------------|----------------|----------------|
-| Raw/Landing | Schema validation, deduplication | Format, completeness | < 5 min (batch), < 10s (stream) |
-| Cleaned | Null handling, type casting, PII masking | Type conformance, referential integrity | < 30 min (batch), < 30s (stream) |
-| Curated | Business transformations, joins, aggregations | Business rules, range checks | < 2 hr (batch), < 1 min (stream) |
-| Serving | Indexing, partitioning, caching | Row counts, freshness SLA | By 6 AM (batch), real-time (stream) |
+| Stage       | Processing                                    | Quality Checks                          | Latency Target                      |
+| ----------- | --------------------------------------------- | --------------------------------------- | ----------------------------------- |
+| Raw/Landing | Schema validation, deduplication              | Format, completeness                    | < 5 min (batch), < 10s (stream)     |
+| Cleaned     | Null handling, type casting, PII masking      | Type conformance, referential integrity | < 30 min (batch), < 30s (stream)    |
+| Curated     | Business transformations, joins, aggregations | Business rules, range checks            | < 2 hr (batch), < 1 min (stream)    |
+| Serving     | Indexing, partitioning, caching               | Row counts, freshness SLA               | By 6 AM (batch), real-time (stream) |
 
 **Batch Pipeline Configuration**
 
@@ -223,29 +226,30 @@ clicks
 
 **Monitoring and Alerting**
 
-| Metric | Target | Warning | Critical | Dashboard |
-|--------|--------|---------|----------|-----------|
-| Batch completion time | < 3 hours | > 2.5 hours | > 3.5 hours (SLA miss) | Pipeline Health |
-| Stream processing lag | < 30s | > 1 min | > 5 min | Real-time Metrics |
-| Data freshness | < 6 hours | > 5 hours | > 8 hours | Data Quality |
-| Error rate | < 0.1% | > 0.5% | > 2% | Pipeline Health |
-| Record counts | Within 5% expected | 10% deviation | 25% deviation | Data Quality |
+| Metric                | Target             | Warning       | Critical               | Dashboard         |
+| --------------------- | ------------------ | ------------- | ---------------------- | ----------------- |
+| Batch completion time | < 3 hours          | > 2.5 hours   | > 3.5 hours (SLA miss) | Pipeline Health   |
+| Stream processing lag | < 30s              | > 1 min       | > 5 min                | Real-time Metrics |
+| Data freshness        | < 6 hours          | > 5 hours     | > 8 hours              | Data Quality      |
+| Error rate            | < 0.1%             | > 0.5%        | > 2%                   | Pipeline Health   |
+| Record counts         | Within 5% expected | 10% deviation | 25% deviation          | Data Quality      |
 
 **Cost Estimation (Monthly)**
 
-| Component | Specification | Cost |
-|-----------|---------------|------|
-| Spark cluster | 4x r5.2xlarge, 8 hours/day | $1,200 |
-| Flink cluster | 2x r5.xlarge, 24/7 | $800 |
-| Kafka (MSK) | 3 brokers, m5.large | $600 |
-| S3 storage | 5TB with lifecycle | $150 |
-| Snowflake | XS warehouse, 4 hr/day | $400 |
-| Redis (ElastiCache) | r6g.large | $200 |
-| **Total** | | **$3,350/month** |
+| Component           | Specification              | Cost             |
+| ------------------- | -------------------------- | ---------------- |
+| Spark cluster       | 4x r5.2xlarge, 8 hours/day | $1,200           |
+| Flink cluster       | 2x r5.xlarge, 24/7         | $800             |
+| Kafka (MSK)         | 3 brokers, m5.large        | $600             |
+| S3 storage          | 5TB with lifecycle         | $150             |
+| Snowflake           | XS warehouse, 4 hr/day     | $400             |
+| Redis (ElastiCache) | r6g.large                  | $200             |
+| **Total**           |                            | **$3,350/month** |
 
 ---
 
 ## Related Prompts
+
 - [Database Schema Development Expert](../../technical-workflows/database-schema-development-expert.md) - Design source database schemas
 - [DevOps Workflow Design Expert](../../technical-workflows/devops-workflow-design-expert.md) - Deploy pipeline infrastructure
 - [Data Analysis Expert](../../analysis/data-analysis-expert.md) - Analyze pipeline output data

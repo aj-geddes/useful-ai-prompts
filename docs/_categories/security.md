@@ -6,7 +6,19 @@ slug: security
 icon: fas fa-shield-alt
 description: "Expert AI prompts for cybersecurity professionals: threat modeling, incident response, penetration testing, compliance, and zero-trust architecture."
 seo_title: "Cybersecurity AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [threat modeling, incident response, penetration testing, compliance, zero-trust, SIEM, vulnerability assessment, identity management, DevSecOps, security policy]
+tags:
+  [
+    threat modeling,
+    incident response,
+    penetration testing,
+    compliance,
+    zero-trust,
+    SIEM,
+    vulnerability assessment,
+    identity management,
+    DevSecOps,
+    security policy,
+  ]
 ---
 
 The Cybersecurity category provides AI prompts for security engineers, analysts, CISOs, and compliance professionals. Each prompt is built around specific security frameworks and methodologies — STRIDE, MITRE ATT&CK, NIST, CIS Controls — applied to your actual environment and threat profile.

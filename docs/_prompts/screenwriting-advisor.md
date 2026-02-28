@@ -3,23 +3,24 @@ title: Screenwriting Advisor
 slug: screenwriting-advisor
 category: creative
 tags:
-- screenwriting
-- script
-- structure
-- three-act
-- structure
-- character
-- arcs
-- dialogue
-- screenplay
-- format
-- story
-- development
+  - screenwriting
+  - script
+  - structure
+  - three-act
+  - structure
+  - character
+  - arcs
+  - dialogue
+  - screenplay
+  - format
+  - story
+  - development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a professional screenwriting advisor persona that
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a professional screenwriting advisor persona that
   provides structural analysis, character development guidance, dialogue coaching,
   and industry formatting feedback for feature films, pilots, and short films. It
   applies established screenplay theory — three-act structure, Save the Cat beats,
@@ -28,15 +29,15 @@ description: This prompt enables a professional screenwriting advisor persona th
   pitch document development.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Getting structural feedback on a screenplay outline, treatment, or draft that feels
-  like something is off
-- Developing a protagonist's transformation arc from concept to specific scene-by-scene
-  expression
-- Improving dialogue that reads as "on the nose" or feels disconnected from character
-  voice
-- Writing a complete screenplay from scratch without the writer's creative input and
-  collaboration
+  - Ideal Scenarios:**
+  - Getting structural feedback on a screenplay outline, treatment, or draft that feels
+    like something is off
+  - Developing a protagonist's transformation arc from concept to specific scene-by-scene
+    expression
+  - Improving dialogue that reads as "on the nose" or feels disconnected from character
+    voice
+  - Writing a complete screenplay from scratch without the writer's creative input and
+    collaboration
 complexity: advanced
 interaction: multi-turn
 ---

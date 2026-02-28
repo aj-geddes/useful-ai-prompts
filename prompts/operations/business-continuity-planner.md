@@ -1,6 +1,7 @@
 # Business Continuity Planner
 
 ## Metadata
+
 - **ID**: `operations-business-continuity-planner`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a business continuity planning expert who designs BCP and disaster recovery frameworks, defines RTO and RPO targets, runs scenario-based risk analysis, and builds crisis communication protocols. It covers operational, technology, supply chain, and workforce continuity across disruption scenarios from equipment failure to natural disaster.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business lacks a formal BCP and leadership wants to build one following a near-miss event or audit finding
 - An existing BCP needs to be updated for new risks (cyberattack, single-supplier dependency, climate events) or tested through a tabletop exercise
 - A company needs to define RTO and RPO targets for critical business processes to guide IT disaster recovery investment decisions
 
 **Anti-patterns (Don't Use For):**
+
 - Cybersecurity incident response requiring technical forensic expertise (complement with a specialized CISO or IR team)
 - Legal or regulatory compliance filings (e.g., SEC material event disclosures) without attorney review
 
@@ -65,43 +70,45 @@ Avoid: BCP documents that sit on a shelf without testing schedules, generic "cal
 ## Example Usage
 
 ### Input
+
 "We're a regional food manufacturer with 280 employees and one production facility in Tennessee. We have one primary ingredient supplier (a single-source supplier for our main flavoring) and our ERP system hosts all of our order management and production scheduling data. Last year we had a 3-day ERP outage that cost us about $400,000 in delayed shipments. Leadership wants a BCP before our next board meeting."
 
 ### Output
+
 **Business Continuity Plan Framework: Regional Food Manufacturer**
 
 **Business Impact Analysis — Critical Processes**
 
-| Business Process | MTD | RTO Target | RPO Target | Current Recovery Capability | Gap |
-|---|---|---|---|---|---|
-| Order management (ERP) | 4 hours | 8 hours | 2 hours | 72 hours (demonstrated) | CRITICAL GAP |
-| Production scheduling | 8 hours | 24 hours | 4 hours | Manual, 48 hours | High gap |
-| Flavoring ingredient supply | 5 days | 3 days | N/A | No alternate supplier | CRITICAL GAP |
-| Finished goods dispatch | 12 hours | 24 hours | 4 hours | Manual manifests available | Low gap |
-| Payroll processing | 72 hours | 5 days | 1 day | Outsourced — provider dependent | Medium gap |
+| Business Process            | MTD      | RTO Target | RPO Target | Current Recovery Capability     | Gap          |
+| --------------------------- | -------- | ---------- | ---------- | ------------------------------- | ------------ |
+| Order management (ERP)      | 4 hours  | 8 hours    | 2 hours    | 72 hours (demonstrated)         | CRITICAL GAP |
+| Production scheduling       | 8 hours  | 24 hours   | 4 hours    | Manual, 48 hours                | High gap     |
+| Flavoring ingredient supply | 5 days   | 3 days     | N/A        | No alternate supplier           | CRITICAL GAP |
+| Finished goods dispatch     | 12 hours | 24 hours   | 4 hours    | Manual manifests available      | Low gap      |
+| Payroll processing          | 72 hours | 5 days     | 1 day      | Outsourced — provider dependent | Medium gap   |
 
 **Key Finding**: Your 3-day ERP outage exposed that your RTO target (8 hours) and actual recovery capability (72 hours) have a 64-hour gap — this gap directly caused $400,000 in losses and will recur without infrastructure investment.
 
 **Scenario Risk Register**
 
-| Scenario | Likelihood | Impact | Priority | Current Controls |
-|---|---|---|---|---|
-| ERP system failure | High (demonstrated) | Critical | 1 | Nightly backup only |
-| Single-source ingredient shortage | Medium | Critical | 2 | No alternate; 14-day safety stock |
-| Facility fire / extended closure | Low | Catastrophic | 3 | Insurance only; no alternate site |
-| Key personnel loss (CEO, plant manager) | Medium | High | 4 | No succession plan documented |
-| Severe weather (tornado corridor) | Medium | High | 5 | No weather response protocol |
-| Cyberattack / ransomware | Medium-High | Critical | 1A | Basic IT security only |
-| Utility outage (power, water) | Medium | High | 6 | Generator (runtime: 72 hrs fuel) |
+| Scenario                                | Likelihood          | Impact       | Priority | Current Controls                  |
+| --------------------------------------- | ------------------- | ------------ | -------- | --------------------------------- |
+| ERP system failure                      | High (demonstrated) | Critical     | 1        | Nightly backup only               |
+| Single-source ingredient shortage       | Medium              | Critical     | 2        | No alternate; 14-day safety stock |
+| Facility fire / extended closure        | Low                 | Catastrophic | 3        | Insurance only; no alternate site |
+| Key personnel loss (CEO, plant manager) | Medium              | High         | 4        | No succession plan documented     |
+| Severe weather (tornado corridor)       | Medium              | High         | 5        | No weather response protocol      |
+| Cyberattack / ransomware                | Medium-High         | Critical     | 1A       | Basic IT security only            |
+| Utility outage (power, water)           | Medium              | High         | 6        | Generator (runtime: 72 hrs fuel)  |
 
 **Continuity Strategy Matrix**
 
-| Scenario | Continuity Strategy | Activation Trigger | Owner |
-|---|---|---|---|
-| ERP failure | Manual order-to-dispatch using pre-built Excel templates; IT activates cloud DR within 4 hours | System unavailable >30 min | IT Director + Ops Manager |
-| Ingredient shortage | Activate approved alternate supplier (source and qualify within 60 days per this plan); use safety stock bridge | Supplier confirms 5+ day delay | Procurement Manager |
-| Facility closure | Assess co-manufacturer agreement with two regional partners (identify and contract within 90 days) | Facility inaccessible >24 hours | Plant Manager + CEO |
-| Key person loss | Documented succession and cross-training for top 5 roles; contact list for external interim management firms | Role vacancy identified | HR Director |
+| Scenario            | Continuity Strategy                                                                                             | Activation Trigger              | Owner                     |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------- |
+| ERP failure         | Manual order-to-dispatch using pre-built Excel templates; IT activates cloud DR within 4 hours                  | System unavailable >30 min      | IT Director + Ops Manager |
+| Ingredient shortage | Activate approved alternate supplier (source and qualify within 60 days per this plan); use safety stock bridge | Supplier confirms 5+ day delay  | Procurement Manager       |
+| Facility closure    | Assess co-manufacturer agreement with two regional partners (identify and contract within 90 days)              | Facility inaccessible >24 hours | Plant Manager + CEO       |
+| Key person loss     | Documented succession and cross-training for top 5 roles; contact list for external interim management firms    | Role vacancy identified         | HR Director               |
 
 **Crisis Communication Cascade**
 
@@ -115,13 +122,13 @@ Tier 4 — Regulatory (within 24 hours if food safety impacted): Quality Directo
 
 **12-Month BCP Testing Calendar**
 
-| Month | Exercise Type | Scenario | Goal |
-|---|---|---|---|
-| February | Tabletop | ERP failure | Walk through manual order processing; identify gaps in Excel backup templates |
-| May | Functional drill | ERP DR failover | IT team executes DR failover to cloud; measure actual RTO achieved |
-| July | Tabletop | Ingredient shortage | Test alternate supplier activation; verify safety stock accuracy |
-| September | Communication drill | Facility closure scenario | Test notification cascade timing; verify contact list accuracy |
-| November | Full-scale | Combined ERP + weather event | Multi-team activation; measure RTO/RPO against targets; debrief report |
+| Month     | Exercise Type       | Scenario                     | Goal                                                                          |
+| --------- | ------------------- | ---------------------------- | ----------------------------------------------------------------------------- |
+| February  | Tabletop            | ERP failure                  | Walk through manual order processing; identify gaps in Excel backup templates |
+| May       | Functional drill    | ERP DR failover              | IT team executes DR failover to cloud; measure actual RTO achieved            |
+| July      | Tabletop            | Ingredient shortage          | Test alternate supplier activation; verify safety stock accuracy              |
+| September | Communication drill | Facility closure scenario    | Test notification cascade timing; verify contact list accuracy                |
+| November  | Full-scale          | Combined ERP + weather event | Multi-team activation; measure RTO/RPO against targets; debrief report        |
 
 **Priority Actions Before BCP Approval**
 
@@ -132,10 +139,12 @@ Tier 4 — Regulatory (within 24 hours if food safety impacted): Quality Directo
 ---
 
 ## Variations
+
 - **Technology Company Version**: Focuses on service availability, cloud infrastructure DR, and customer SLA continuity for SaaS businesses
 - **Tabletop Exercise Facilitator Version**: Designs and facilitates a specific BCP tabletop exercise with scenario injects, role assignments, and discussion questions
 
 ## Related Prompts
+
 - [Vendor Management Specialist](vendor-management-specialist.md) - Formalize supplier risk management embedded in BCP
 - [Facility Management Expert](facility-management-expert.md) - Facility-level risk mitigation feeding into BCP scenarios
 - [Change Management Facilitator](change-management-facilitator.md) - Manage organizational change when BCP changes operational procedures

@@ -8,4 +8,4 @@ Excellence-driven frameworks for customer experience management and service opti
 
 ---
 
-*Professional customer service prompts for CX managers, service leaders, and customer success teams.*
+_Professional customer service prompts for CX managers, service leaders, and customer success teams._

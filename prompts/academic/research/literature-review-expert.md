@@ -1,6 +1,7 @@
 # Literature Review Expert
 
 ## Metadata
+
 - **ID**: `academic-literature-review-expert`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,12 +19,14 @@ Guides researchers through systematic literature reviews by structuring search s
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing the literature review section of a thesis or dissertation
 - Conducting a systematic review for a journal article
 - Identifying gaps in existing research to justify a new study
 - Synthesizing conflicting findings across multiple studies
 
 **Anti-patterns (Don't Use For):**
+
 - Primary data collection or empirical analysis
 - Citation formatting (use reference management software)
 - Writing complete research papers (section-specific prompt)
@@ -121,6 +124,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm writing a thesis on remote work and employee mental health. I need a literature review for my psychology PhD. I want to show there's a gap in research on long-term (3+ year) remote workers vs. hybrid workers."
 
 ### Output
@@ -128,6 +132,7 @@ Avoid:
 **Literature Review Framework: Remote Work and Employee Mental Health**
 
 **Search Strategy**
+
 ```
 Database: PsycINFO, PubMed, Web of Science
 Search string: ("remote work" OR "telework" OR "work from home") AND ("mental health" OR "psychological wellbeing" OR "burnout" OR "depression" OR "anxiety") AND ("employee" OR "worker")
@@ -140,12 +145,12 @@ Expected results: 200-400; target 40-60 after screening
 
 **Thematic Organization**
 
-| Theme | Key Finding | Dominant Studies | Limitation |
-|-------|-------------|-----------------|------------|
-| Remote work and work-life balance | Mixed — autonomy benefits vs. boundary erosion | Kelliher & Anderson (2010), Gajendran & Harrison (2007) | Pre-pandemic context |
-| Social isolation and loneliness | Consistent negative association with wellbeing | Cacioppo (2008), Vander Elst et al. (2017) | Lab vs. naturalistic |
-| Hybrid arrangements | Emerging benefits for psychological safety | Bloom et al. (2022), Choudhury et al. (2021) | Short follow-up periods |
-| Long-term outcomes (3+ years) | **Largely absent from literature** | — | Gap identified |
+| Theme                             | Key Finding                                    | Dominant Studies                                        | Limitation              |
+| --------------------------------- | ---------------------------------------------- | ------------------------------------------------------- | ----------------------- |
+| Remote work and work-life balance | Mixed — autonomy benefits vs. boundary erosion | Kelliher & Anderson (2010), Gajendran & Harrison (2007) | Pre-pandemic context    |
+| Social isolation and loneliness   | Consistent negative association with wellbeing | Cacioppo (2008), Vander Elst et al. (2017)              | Lab vs. naturalistic    |
+| Hybrid arrangements               | Emerging benefits for psychological safety     | Bloom et al. (2022), Choudhury et al. (2021)            | Short follow-up periods |
+| Long-term outcomes (3+ years)     | **Largely absent from literature**             | —                                                       | Gap identified          |
 
 **Sample Review Section (300 words)**
 

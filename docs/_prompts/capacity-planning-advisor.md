@@ -3,29 +3,30 @@ title: Capacity Planning Advisor
 slug: capacity-planning-advisor
 category: operations
 tags:
-- capacity-planning
-- demand-forecasting
-- utilization
-- scalability
-- resource-management
+  - capacity-planning
+  - demand-forecasting
+  - utilization
+  - scalability
+  - resource-management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a capacity planning advisor who connects demand
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a capacity planning advisor who connects demand
   forecasts to resource requirements, identifies utilization gaps and surpluses, and
   builds scalability roadmaps. It covers labor, equipment, facility, and technology
   capacity across operational and growth planning horizons.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business is projecting 30-50% volume growth and needs to understand when current
-  capacity will be exhausted and what investments are required
-- Operations leadership needs to identify which resources are constraining throughput
-  under current demand
-- A seasonal business needs a capacity plan that matches staffing and equipment to
-  demand peaks without excessive idle-time costs in off-peak periods
-- Real-time staffing dispatching decisions that require operational scheduling tools
+  - Ideal Scenarios:**
+  - A business is projecting 30-50% volume growth and needs to understand when current
+    capacity will be exhausted and what investments are required
+  - Operations leadership needs to identify which resources are constraining throughput
+    under current demand
+  - A seasonal business needs a capacity plan that matches staffing and equipment to
+    demand peaks without excessive idle-time costs in off-peak periods
+  - Real-time staffing dispatching decisions that require operational scheduling tools
 complexity: advanced
 interaction: multi-turn
 ---

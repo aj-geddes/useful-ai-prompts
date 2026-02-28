@@ -1,309 +1,298 @@
-{% comment %}
-  Structured Data (Schema.org JSON-LD) — Useful AI Prompts
-  Emits page-type-appropriate schema on every page.
-
-  Page types handled:
-    homepage  → WebSite (with SearchAction) + CollectionPage
-    prompt    → HowTo + Article + BreadcrumbList
-    category  → CollectionPage + BreadcrumbList
-    all other → BreadcrumbList only (homepage also gets one inline)
-
-  Liquid variables used:
-    site.url          → "https://aj-geddes.github.io"
-    site.baseurl      → "/useful-ai-prompts"
-    site.stats.total_prompts  (set in _config.yml, currently 679)
-    page.url, page.title, page.description, page.category,
-    page.tags, page.prompt, page.date, page.slug
-{% endcomment %}
-
-{%- assign _base = site.url | append: site.baseurl -%}
-{%- assign _page_url = page.url | prepend: site.baseurl | prepend: site.url -%}
-{%- assign _total = site.stats.total_prompts | default: 679 -%}
+{% comment %} Structured Data (Schema.org JSON-LD) — Useful AI Prompts Emits
+page-type-appropriate schema on every page. Page types handled: homepage →
+WebSite (with SearchAction) + CollectionPage prompt → HowTo + Article +
+BreadcrumbList category → CollectionPage + BreadcrumbList all other →
+BreadcrumbList only (homepage also gets one inline) Liquid variables used:
+site.url → "https://aj-geddes.github.io" site.baseurl → "/useful-ai-prompts"
+site.stats.total_prompts (set in _config.yml, currently 679) page.url,
+page.title, page.description, page.category, page.tags, page.prompt, page.date,
+page.slug {% endcomment %} {%- assign _base = site.url | append: site.baseurl
+-%} {%- assign _page_url = page.url | prepend: site.baseurl | prepend: site.url
+-%} {%- assign _total = site.stats.total_prompts | default: 679 -%}
 
 <!-- ── 1. WebSite schema (every page) ──────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.title | escape }}",
-  "description": "{{ site.description | escape }}",
-  "url": "{{ _base }}/",
-  "inLanguage": "en-US",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "{{ _base }}/search/?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  },
-  "publisher": {
-    "@type": "Organization",
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
     "name": "{{ site.title | escape }}",
+    "description": "{{ site.description | escape }}",
     "url": "{{ _base }}/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ _base }}/assets/images/og-default.svg",
-      "width": 1200,
-      "height": 630
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "{{ _base }}/search/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ _base }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ _base }}/assets/images/og-default.svg",
+        "width": 1200,
+        "height": 630
+      }
     }
   }
-}
 </script>
 
 {%- if page.url == "/" %}
 <!-- ── 2a. Homepage — CollectionPage ────────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "{{ site.title | escape }}",
-  "description": "{{ site.description | escape }}",
-  "url": "{{ _base }}/",
-  "inLanguage": "en-US",
-  "numberOfItems": {{ _total }},
-  "about": [
-    { "@type": "Thing", "name": "Artificial Intelligence" },
-    { "@type": "Thing", "name": "Prompt Engineering" },
-    { "@type": "Thing", "name": "Business Productivity" }
-  ],
-  "isAccessibleForFree": true,
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Business Professionals"
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ site.title | escape }}",
+    "description": "{{ site.description | escape }}",
+    "url": "{{ _base }}/",
+    "inLanguage": "en-US",
+    "numberOfItems": {{ _total }},
+    "about": [
+      { "@type": "Thing", "name": "Artificial Intelligence" },
+      { "@type": "Thing", "name": "Prompt Engineering" },
+      { "@type": "Thing", "name": "Business Productivity" }
+    ],
+    "isAccessibleForFree": true,
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Business Professionals"
+    }
   }
-}
 </script>
 
 <!-- ── 2b. Homepage — BreadcrumbList ─────────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ _base }}/"
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ _base }}/"
+      }
+    ]
+  }
 </script>
 
-{%- elsif page.layout == "prompt" %}
-
-{%- assign _prompt_desc = page.description | default: page.title | strip_html | strip_newlines | escape -%}
-{%- assign _category_label = page.category | replace: "-", " " | capitalize -%}
-{%- assign _category_url = _base | append: "/categories/" | append: page.category | append: "/" -%}
+{%- elsif page.layout == "prompt" %} {%- assign _prompt_desc = page.description
+| default: page.title | strip_html | strip_newlines | escape -%} {%- assign
+_category_label = page.category | replace: "-", " " | capitalize -%} {%- assign
+_category_url = _base | append: "/categories/" | append: page.category | append:
+"/" -%}
 
 <!-- ── 3a. Prompt page — HowTo ──────────────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to use: {{ page.title | escape }}",
-  "description": "{{ _prompt_desc }}",
-  "inLanguage": "en-US",
-  "totalTime": "PT5M",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "0"
-  },
-  "supply": [
-    {
-      "@type": "HowToSupply",
-      "name": "AI assistant (ChatGPT, Claude, Gemini, or similar)"
-    }
-  ],
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Copy the prompt",
-      "text": "Click the Copy Prompt button on this page to copy the full prompt text to your clipboard."
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to use: {{ page.title | escape }}",
+    "description": "{{ _prompt_desc }}",
+    "inLanguage": "en-US",
+    "totalTime": "PT5M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "0"
     },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Paste into your AI assistant",
-      "text": "Open ChatGPT, Claude, or your preferred AI tool and paste the prompt into the chat input."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Provide your specific details",
-      "text": "Add any context, data, or requirements specific to your situation after the prompt text."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Review and iterate",
-      "text": "Read the AI response, ask follow-up questions, and refine the output to meet your needs."
-    }
-  ]
-}
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "AI assistant (ChatGPT, Claude, Gemini, or similar)"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Copy the prompt",
+        "text": "Click the Copy Prompt button on this page to copy the full prompt text to your clipboard."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Paste into your AI assistant",
+        "text": "Open ChatGPT, Claude, or your preferred AI tool and paste the prompt into the chat input."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Provide your specific details",
+        "text": "Add any context, data, or requirements specific to your situation after the prompt text."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Review and iterate",
+        "text": "Read the AI response, ask follow-up questions, and refine the output to meet your needs."
+      }
+    ]
+  }
 </script>
 
 <!-- ── 3b. Prompt page — Article ─────────────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title | escape }}",
-  "description": "{{ _prompt_desc }}",
-  "url": "{{ _page_url }}",
-  "inLanguage": "en-US",
-  "isAccessibleForFree": true,
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "author": {
-    "@type": "Organization",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ _base }}/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ _base }}/",
-    "logo": {
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ _prompt_desc }}",
+    "url": "{{ _page_url }}",
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "author": {
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ _base }}/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ _base }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ _base }}/assets/images/og-default.svg"
+      }
+    },
+    {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",{% endif %}
+    "image": {
       "@type": "ImageObject",
-      "url": "{{ _base }}/assets/images/og-default.svg"
+      "url": "{{ _base }}/assets/images/prompt-preview.svg",
+      "width": 1200,
+      "height": 630
+    },
+    "articleSection": "{{ _category_label }}",
+    "keywords": "{{ page.tags | join: ', ' }}, {{ _category_label | downcase }}, AI prompt, ChatGPT prompt, Claude prompt, prompt engineering",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ _page_url }}"
     }
-  },
-  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.date | date_to_xmlschema }}",{% endif %}
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ _base }}/assets/images/prompt-preview.svg",
-    "width": 1200,
-    "height": 630
-  },
-  "articleSection": "{{ _category_label }}",
-  "keywords": "{{ page.tags | join: ', ' }}, {{ _category_label | downcase }}, AI prompt, ChatGPT prompt, Claude prompt, prompt engineering",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ _page_url }}"
   }
-}
 </script>
 
 <!-- ── 3c. Prompt page — BreadcrumbList ──────────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ _base }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Categories",
-      "item": "{{ _base }}/categories/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ _category_label }}",
-      "item": "{{ _category_url }}"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "{{ page.title | escape }}",
-      "item": "{{ _page_url }}"
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ _base }}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Categories",
+        "item": "{{ _base }}/categories/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ _category_label }}",
+        "item": "{{ _category_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "{{ page.title | escape }}",
+        "item": "{{ _page_url }}"
+      }
+    ]
+  }
 </script>
 
-{%- elsif page.layout == "category" %}
-
-{%- assign _cat_desc = page.description | default: page.title | strip_html | strip_newlines | escape -%}
-{%- assign _cat_label = page.title | escape -%}
-{%- assign _category_prompts = site.prompts | where: "category", page.slug -%}
-{%- assign _cat_count = _category_prompts.size -%}
+{%- elsif page.layout == "category" %} {%- assign _cat_desc = page.description |
+default: page.title | strip_html | strip_newlines | escape -%} {%- assign
+_cat_label = page.title | escape -%} {%- assign _category_prompts = site.prompts
+| where: "category", page.slug -%} {%- assign _cat_count =
+_category_prompts.size -%}
 
 <!-- ── 4a. Category page — CollectionPage ───────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "{{ _cat_label }} AI Prompts",
-  "description": "{{ _cat_desc }}",
-  "url": "{{ _page_url }}",
-  "inLanguage": "en-US",
-  "numberOfItems": {{ _cat_count }},
-  "isAccessibleForFree": true,
-  "about": {
-    "@type": "Thing",
-    "name": "{{ _cat_label }}"
-  },
-  "isPartOf": {
+  {
+    "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ _base }}/"
+    "name": "{{ _cat_label }} AI Prompts",
+    "description": "{{ _cat_desc }}",
+    "url": "{{ _page_url }}",
+    "inLanguage": "en-US",
+    "numberOfItems": {{ _cat_count }},
+    "isAccessibleForFree": true,
+    "about": {
+      "@type": "Thing",
+      "name": "{{ _cat_label }}"
+    },
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ _base }}/"
+    }
   }
-}
 </script>
 
 <!-- ── 4b. Category page — BreadcrumbList ───────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ _base }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Categories",
-      "item": "{{ _base }}/categories/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ _cat_label }}",
-      "item": "{{ _page_url }}"
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ _base }}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Categories",
+        "item": "{{ _base }}/categories/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ _cat_label }}",
+        "item": "{{ _page_url }}"
+      }
+    ]
+  }
 </script>
 
 {%- else %}
 
 <!-- ── 5. All other pages — BreadcrumbList ───────────────────── -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ _base }}/"
-    }
-    {% if page.title and page.url != "/" %},
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ page.title | escape }}",
-      "item": "{{ _page_url }}"
-    }
-    {% endif %}
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ _base }}/"
+      }
+      {% if page.title and page.url != "/" %},
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ page.title | escape }}",
+        "item": "{{ _page_url }}"
+      }
+      {% endif %}
+    ]
+  }
 </script>
 
 {%- endif %}

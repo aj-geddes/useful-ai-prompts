@@ -3,30 +3,31 @@ title: Solar Construction Management and Project Commissioning
 slug: solar-construction-management-commissioning
 category: renewable energy/solar energy development
 tags:
-- construction
-- management
-- commissioning
-- EPC
-- project
-- controls
-- quality
-- assurance
+  - construction
+  - management
+  - commissioning
+  - EPC
+  - project
+  - controls
+  - quality
+  - assurance
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables management of utility-scale solar construction and
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables management of utility-scale solar construction and
   commissioning from contractor mobilization through commercial operation. It combines
   construction project management with commissioning engineering expertise to deliver
   projects on schedule, within budget, and meeting all performance specifications
   with comprehensive quality and safety management.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Managing utility-scale solar construction (50+ MW)
-- Overseeing EPC contractor execution and quality control
-- Developing commissioning procedures and performance validation
-- Coordinating grid interconnection and utility approvals
+  - Ideal scenarios:**
+  - Managing utility-scale solar construction (50+ MW)
+  - Overseeing EPC contractor execution and quality control
+  - Developing commissioning procedures and performance validation
+  - Coordinating grid interconnection and utility approvals
 complexity: advanced
 interaction: multi-turn
 ---
@@ -45,18 +46,20 @@ Utility-scale solar construction requires coordinating complex logistics, mainta
 
 <input_handling>
 **Required information:**
+
 - Project capacity (MW DC/AC)
 - Current construction phase or start date
 - EPC contract structure (turnkey, split)
 - Key schedule constraints or milestones
 
 **Optional (will infer reasonable defaults):**
+
 - Site location and conditions
 - Specific equipment (modules, inverters)
 - Interconnection voltage and utility
 - Weather or seasonal constraints
 - Owner's engineer scope
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive construction and commissioning management:
@@ -72,18 +75,20 @@ Develop comprehensive construction and commissioning management:
 5. **Commissioning Execution**: Create systematic commissioning procedures, performance testing, and grid interconnection coordination
 
 6. **Project Controls**: Establish cost tracking, schedule monitoring, risk management, and stakeholder reporting
-</task>
+   </task>
 
 <output_specification>
 **Construction and Commissioning Management Plan**
+
 - Format: Project management framework with execution procedures
 - Length: 1000-1500 words
 - Sections: Schedule, contractor management, safety, quality, commissioning, project controls
 - Must include: Critical milestones, quality gates, commissioning sequence, success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Realistic schedule with appropriate contingency for weather and supply chain
 - Clear quality control procedures with measurable acceptance criteria
 - Comprehensive safety management aligned with OSHA requirements
@@ -91,12 +96,13 @@ Develop comprehensive construction and commissioning management:
 - Proactive risk identification with mitigation strategies
 
 **Avoid:**
+
 - Overly aggressive schedules without weather or contingency allowance
 - Generic quality procedures without project-specific requirements
 - Missing critical path analysis for interconnection-driven schedules
 - Inadequate contractor oversight mechanisms
 - Underestimating commissioning duration and complexity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain zero lost-time incident target with full OSHA compliance

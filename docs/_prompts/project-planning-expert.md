@@ -3,26 +3,27 @@ title: Project Planning Expert
 slug: project-planning-expert
 category: planning
 tags:
-- project-planning
-- project-management
-- work-breakdown
-- resource-planning
-- timeline-management
+  - project-planning
+  - project-management
+  - work-breakdown
+  - resource-planning
+  - timeline-management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A project planning specialist that helps you create comprehensive, actionable
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A project planning specialist that helps you create comprehensive, actionable
   project plans with realistic timelines and resource allocation. Develops detailed
   plans with work breakdown structures, schedules, risk management, communication
   plans, and success metrics for complex initiatives.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning complex multi-phase projects with multiple workstreams
-- Creating implementation plans for strategic initiatives
-- Developing product launch or system implementation plans
-- Coordinating cross-functional project efforts
+  - Ideal Scenarios:**
+  - Planning complex multi-phase projects with multiple workstreams
+  - Creating implementation plans for strategic initiatives
+  - Developing product launch or system implementation plans
+  - Coordinating cross-functional project efforts
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,17 +38,19 @@ The user needs to create a detailed project plan for an initiative with defined 
 
 <input_handling>
 Required inputs:
+
 - Project type and main objectives
 - Timeline and completion deadline
 - Team size and key resources available
 
 Optional inputs (will use sensible defaults if not provided):
+
 - Methodology preference (default: hybrid with milestone gates)
 - Budget constraints (default: moderate, prioritize scope delivery)
 - Stakeholder complexity (default: standard governance)
 - External dependencies (default: minimal)
 - Risk tolerance (default: balanced approach)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive project plan following these steps:
@@ -81,22 +84,24 @@ Create a comprehensive project plan following these steps:
    - Define decision-making structure
    - Create communication plan for stakeholders
    - Set up reporting cadence and escalation paths
-</task>
+     </task>
 
 <output_specification>
 Format: Phased project plan with WBS and timeline
 Length: 1000-1500 words
 Structure:
+
 - Project charter summary
 - Work breakdown structure with phases
 - Timeline with milestones and critical path
 - Resource allocation plan
 - Risk register with mitigations
 - Communication and governance plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Provide realistic time estimates based on stated resources
 - Identify critical path and key dependencies clearly
 - Include specific risk mitigations, not just risk lists
@@ -104,12 +109,13 @@ Excellent outputs will:
 - Assign clear ownership for all deliverables
 
 Avoid:
+
 - Over-optimistic timelines without contingency
 - WBS without clear deliverables per phase
 - Risk lists without actionable mitigation strategies
 - Resource plans ignoring availability constraints
 - Missing governance and escalation procedures
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Stay within stated budget parameters

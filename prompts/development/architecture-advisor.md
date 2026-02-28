@@ -1,6 +1,7 @@
 # Architecture Advisor
 
 ## Metadata
+
 - **ID**: `development-architecture-advisor`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Provides expert guidance on software architecture decisions including system dec
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Choosing between monolith, modular monolith, or microservices
 - Designing communication between services (sync/async, event-driven)
 - Planning a migration from legacy architecture
 - Evaluating whether current architecture can support projected scale
 
 **Anti-patterns (Don't Use For):**
+
 - Specific technology selection without architectural context
 - Database schema design (separate concern)
 - UI/UX architecture and component design
@@ -120,6 +123,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 6-person team building a B2B SaaS for invoicing. Currently a monolith Rails app with 50 customers. We're expecting to grow to 500 customers in 18 months and our CEO is asking if we should 'move to microservices.' We have no DevOps engineer and deploy weekly."
 
 ### Output
@@ -127,27 +131,29 @@ Avoid:
 **Architectural Assessment: Invoicing SaaS — Monolith vs. Microservices**
 
 **Context**
+
 - 6 engineers, no dedicated DevOps, weekly deploys
 - 50 → 500 customers (10x growth) over 18 months
 - Rails monolith, presumably single database
 
 **Options Evaluated**
 
-*Option A: Maintain and strengthen the monolith (Recommended)*
+_Option A: Maintain and strengthen the monolith (Recommended)_
 Pros: No operational overhead added, all 6 engineers can work on any feature, single deploy unit, shared database transactions (critical for invoicing correctness), debuggable with standard Rails tooling.
 Cons: Eventually (>500 customers) may hit scaling ceiling; less autonomy for future large teams.
 
-*Option B: Modular monolith with well-defined bounded contexts*
+_Option B: Modular monolith with well-defined bounded contexts_
 Pros: Prepares for eventual service extraction, enforces domain boundaries, minimal operational cost increase.
 Cons: Requires discipline to maintain boundaries; some upfront refactoring investment.
 
-*Option C: Microservices*
+_Option C: Microservices_
 Pros: Independent scaling per service, team autonomy at scale.
 Cons: **Strongly inadvisable at this stage** — requires service discovery, distributed tracing, eventual consistency handling, contract testing, and an operations team you don't have. Distributed systems make invoicing accuracy harder, not easier.
 
 **Recommendation: Option B — Modular Monolith**
 
 Keep one deployable Rails application but introduce strict domain boundaries:
+
 - **Billing domain**: Invoice creation, line items, totals
 - **Payments domain**: Payment processing, reconciliation
 - **Customers domain**: Company profiles, contacts, preferences
@@ -156,6 +162,7 @@ Keep one deployable Rails application but introduce strict domain boundaries:
 Each domain owns its models and exposes a Ruby module interface. No cross-domain database joins — service calls only. This gives you 80% of the architectural discipline of microservices at 20% of the operational cost.
 
 **What Would Change This Recommendation**
+
 - Team grows to 20+ engineers across multiple teams → extract the most independent domain (Notifications) first
 - Single table becomes a performance bottleneck at 500 customers → introduce read replicas before splitting services
 - Payments requires PCI-DSS compliance isolation → extract Payments as a standalone service with its own DB
@@ -168,6 +175,7 @@ Each domain owns its models and exposes a Ruby module interface. No cross-domain
 | CEO pressure to microservices | Frame modular monolith as "service-ready architecture" — which it is |
 
 **Immediate Next Steps**
+
 1. Define domain boundaries in a one-page diagram (2 hours)
 2. Identify the 3 biggest cross-domain coupling violations today (1 day)
 3. Begin refactoring toward module boundaries in next sprint (ongoing)

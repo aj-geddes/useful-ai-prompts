@@ -1,6 +1,7 @@
 # Stakeholder Communication Expert
 
 ## Metadata
+
 - **ID**: `communication-stakeholder-communication`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Builds effective stakeholder communication strategies that ensure the right peop
 ## When to Use
 
 **Ideal scenarios:**
+
 - Managing stakeholders across major projects or programs
 - Building support for new initiatives or organizational changes
 - Navigating organizational politics and competing interests
@@ -25,6 +27,7 @@ Builds effective stakeholder communication strategies that ensure the right peop
 - Converting skeptics to supporters for key decisions
 
 **Anti-patterns (when NOT to use):**
+
 - Routine team updates without political complexity
 - External marketing or customer communications
 - Customer service or support scenarios
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Leading CRM implementation, $500K budget, 6-month project. Key stakeholders: CEO (supportive), CFO (skeptical about ROI), Sales VP (neutral, worried about disruption), IT Director (enthusiastic). Need CFO budget approval. Sales VP and IT don't work well together. I'm the PM."
 
 ### Output
@@ -115,6 +119,7 @@ Avoid:
 ## STAKEHOLDER ANALYSIS
 
 ### Influence/Interest Grid
+
 ```
 HIGH INFLUENCE
     |
@@ -130,24 +135,28 @@ LOW INFLUENCE
 ### Stakeholder Profiles
 
 **CEO (High/High) - Active Champion**
+
 - Stance: Supportive
 - Interests: Growth, competitive advantage
 - Concern: Execution and ROI
 - Strategy: Keep engaged, use for air cover
 
 **CFO (High/Medium) - Key Gatekeeper**
+
 - Stance: Skeptical
 - Interests: Cost control, clear ROI
 - Concern: Another failed tech investment
 - Strategy: Convert through financial evidence
 
 **Sales VP (Medium/High) - Critical Influencer**
+
 - Stance: Neutral, risk-averse
 - Interests: Team productivity, minimal disruption
 - Concern: Team resistance, learning curve
 - Strategy: Build buy-in through involvement
 
 **IT Director (Low/High) - Technical Champion**
+
 - Stance: Enthusiastic
 - Interests: Modernization, integration
 - Concern: Being overruled by business
@@ -158,16 +167,19 @@ LOW INFLUENCE
 ### CFO Engagement (Convert Skeptic)
 
 **Week 1: Establish Credibility**
+
 - Schedule 1-hour deep-dive meeting
 - Pre-send: Detailed ROI analysis with conservative projections
 - Agenda: Financial model, risk mitigation, approval gates
 
 **Key Messages:**
+
 - "3-year ROI of 250% based on similar implementations"
 - "Phased approach with gates at 30/60/90 days"
 - "You'll have real-time visibility into spend vs. value"
 
 **Follow-up:**
+
 - Weekly cost/benefit updates
 - Early escalation of any budget risks
 - Include their trusted analyst in planning
@@ -175,16 +187,19 @@ LOW INFLUENCE
 ### Sales VP Engagement (Build Ally)
 
 **Week 1: Listen First**
+
 - Informal coffee meeting
 - Focus: Understand specific concerns
 - Ask: "What would success look like for your team?"
 
 **Key Messages:**
+
 - "30% less admin time means more selling time"
 - "Your team drives the requirements - we build what you need"
 - "Pilot with volunteers first, scale based on results"
 
 **Follow-up:**
+
 - Involve in design decisions
 - Regular updates on team impact
 - Celebrate early wins together
@@ -192,6 +207,7 @@ LOW INFLUENCE
 ### Coalition Building
 
 **Sales-IT Bridge:**
+
 - Focus conversations on shared goal: customer experience
 - Facilitate joint design sessions with neutral facilitation
 - Recognize both contributions publicly
@@ -199,6 +215,7 @@ LOW INFLUENCE
 ## MESSAGE FRAMEWORKS
 
 ### For CFO (Financial Focus)
+
 ```
 Opening: "I want to show you the financial case for this investment..."
 
@@ -214,6 +231,7 @@ Objection Response:
 ```
 
 ### For Sales VP (Team Focus)
+
 ```
 Opening: "I want to make sure this makes your team's life easier, not harder..."
 
@@ -230,16 +248,19 @@ Objection Response:
 ## SUCCESS METRICS
 
 ### Week 2 Targets:
+
 - CFO meeting completed
 - Sales VP concerns documented
 - Initial coalition formed
 
 ### Month 1 Targets:
+
 - CFO stance: Skeptical > Cautiously Supportive
 - Sales VP: Neutral > Engaged
 - Cross-functional collaboration initiated
 
 ### Monitoring:
+
 - Stakeholder sentiment tracking (weekly pulse)
 - Meeting attendance and engagement
 - Decision turnaround time
@@ -248,6 +269,7 @@ Objection Response:
 ---
 
 ## Related Prompts
+
 - [Executive Briefing Expert](executive-briefing-expert.md)
 - [Crisis Communication Expert](crisis-communication-expert.md)
 - [Change Management Expert](../management-leadership/change-management-expert.md)

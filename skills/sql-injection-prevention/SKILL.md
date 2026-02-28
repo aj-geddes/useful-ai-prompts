@@ -24,7 +24,7 @@ Implement comprehensive SQL injection prevention using prepared statements, para
 
 ```javascript
 // secure-db.js
-const { Pool } = require('pg');
+const { Pool } = require("pg");
 
 class SecureDatabase {
   constructor() {
@@ -35,7 +35,7 @@ class SecureDatabase {
       password: process.env.DB_PASSWORD,
       max: 20,
       idleTimeoutMillis: 30000,
-      connectionTimeoutMillis: 2000
+      connectionTimeoutMillis: 2000,
     });
   }
 
@@ -43,14 +43,14 @@ class SecureDatabase {
    * ✅ SECURE: Parameterized query
    */
   async getUserById(userId) {
-    const query = 'SELECT * FROM users WHERE id = $1';
+    const query = "SELECT * FROM users WHERE id = $1";
     const values = [userId];
 
     try {
       const result = await this.pool.query(query, values);
       return result.rows[0];
     } catch (error) {
-      console.error('Query error:', error);
+      console.error("Query error:", error);
       throw error;
     }
   }
@@ -74,17 +74,17 @@ class SecureDatabase {
   /**
    * ✅ SECURE: Dynamic column ordering with whitelist
    */
-  async getUsers(sortBy = 'created_at', order = 'DESC') {
+  async getUsers(sortBy = "created_at", order = "DESC") {
     // Whitelist allowed columns
-    const allowedColumns = ['id', 'email', 'name', 'created_at'];
-    const allowedOrders = ['ASC', 'DESC'];
+    const allowedColumns = ["id", "email", "name", "created_at"];
+    const allowedOrders = ["ASC", "DESC"];
 
     if (!allowedColumns.includes(sortBy)) {
-      sortBy = 'created_at';
+      sortBy = "created_at";
     }
 
     if (!allowedOrders.includes(order.toUpperCase())) {
-      order = 'DESC';
+      order = "DESC";
     }
 
     // Safe to use in query since values are whitelisted
@@ -127,30 +127,30 @@ class SecureDatabase {
     const client = await this.pool.connect();
 
     try {
-      await client.query('BEGIN');
+      await client.query("BEGIN");
 
       // Debit from account
       await client.query(
-        'UPDATE accounts SET balance = balance - $1 WHERE id = $2',
-        [amount, fromAccount]
+        "UPDATE accounts SET balance = balance - $1 WHERE id = $2",
+        [amount, fromAccount],
       );
 
       // Credit to account
       await client.query(
-        'UPDATE accounts SET balance = balance + $1 WHERE id = $2',
-        [amount, toAccount]
+        "UPDATE accounts SET balance = balance + $1 WHERE id = $2",
+        [amount, toAccount],
       );
 
       // Record transaction
       await client.query(
-        'INSERT INTO transactions (from_account, to_account, amount) VALUES ($1, $2, $3)',
-        [fromAccount, toAccount, amount]
+        "INSERT INTO transactions (from_account, to_account, amount) VALUES ($1, $2, $3)",
+        [fromAccount, toAccount, amount],
       );
 
-      await client.query('COMMIT');
+      await client.query("COMMIT");
       return true;
     } catch (error) {
-      await client.query('ROLLBACK');
+      await client.query("ROLLBACK");
       throw error;
     } finally {
       client.release();
@@ -462,7 +462,7 @@ class InputValidator {
 
   static sanitizeString(input, maxLength = 255) {
     // Remove control characters
-    let sanitized = input.replace(/[\x00-\x1F\x7F]/g, '');
+    let sanitized = input.replace(/[\x00-\x1F\x7F]/g, "");
 
     // Trim and limit length
     sanitized = sanitized.trim().substring(0, maxLength);
@@ -477,7 +477,7 @@ class InputValidator {
 
   static escapeForLike(input) {
     // Escape LIKE wildcards
-    return input.replace(/[%_]/g, '\\$&');
+    return input.replace(/[%_]/g, "\\$&");
   }
 }
 
@@ -487,6 +487,7 @@ module.exports = InputValidator;
 ## Best Practices
 
 ### ✅ DO
+
 - Use prepared statements ALWAYS
 - Use ORM frameworks properly
 - Validate all user inputs
@@ -497,6 +498,7 @@ module.exports = InputValidator;
 - Use parameterized queries
 
 ### ❌ DON'T
+
 - Concatenate user input
 - Trust client-side validation
 - Use string formatting for queries

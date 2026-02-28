@@ -1,16 +1,17 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Deploy machine learning models to production using Flask, FastAPI, Docker,
+date: "2025-01-01"
+description:
+  Deploy machine learning models to production using Flask, FastAPI, Docker,
   cloud platforms (AWS, GCP, Azure), and model serving frameworks
 layout: skill
 slug: model-deployment
 tags:
-- flask
-- fastapi
-- docker
-- aws
-- azure
+  - flask
+  - fastapi
+  - docker
+  - aws
+  - azure
 title: Model Deployment
 ---
 

@@ -1,6 +1,7 @@
 # Interdisciplinary Research Synthesizer
 
 ## Metadata
+
 - **ID**: `academic-interdisciplinary-synthesizer`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,12 +19,14 @@ Connects insights, methods, and theories across academic disciplines to generate
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Research problem that doesn't fit cleanly within one discipline
 - Building a theoretical framework that borrows from multiple fields
 - Identifying where insights from Field A could solve problems in Field B
 - Writing the theoretical foundations section of an interdisciplinary dissertation
 
 **Anti-patterns (Don't Use For):**
+
 - Single-discipline literature reviews (standard review is more appropriate)
 - Applied technical implementation (synthesis is conceptual, not applied)
 - Grant writing without prior theoretical grounding
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm studying how algorithmic recommendation systems shape political polarization. I'm a political scientist but I need to draw from computer science (how algorithms work), psychology (motivated reasoning, confirmation bias), and network science (echo chamber formation)."
 
 ### Output
@@ -126,22 +130,22 @@ Avoid:
 
 **Disciplinary Contribution Map**
 
-| Discipline | Core Contribution | Key Constructs | Methodological Strength |
-|------------|------------------|----------------|------------------------|
-| Political Science | Democratic theory, polarization measurement | Affective polarization, issue polarization, partisan identity | Survey research, legislative voting analysis |
-| Computer Science | Algorithmic mechanism description | Filter bubbles, engagement optimization, collaborative filtering | Audit studies, API analysis, log data |
-| Psychology | Individual cognitive processing | Motivated reasoning, selective exposure, identity-protective cognition | Experiments, priming studies |
-| Network Science | Structural propagation patterns | Homophily, echo chambers, information cascades, bridge nodes | Graph analysis, simulation |
+| Discipline        | Core Contribution                           | Key Constructs                                                         | Methodological Strength                      |
+| ----------------- | ------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------- |
+| Political Science | Democratic theory, polarization measurement | Affective polarization, issue polarization, partisan identity          | Survey research, legislative voting analysis |
+| Computer Science  | Algorithmic mechanism description           | Filter bubbles, engagement optimization, collaborative filtering       | Audit studies, API analysis, log data        |
+| Psychology        | Individual cognitive processing             | Motivated reasoning, selective exposure, identity-protective cognition | Experiments, priming studies                 |
+| Network Science   | Structural propagation patterns             | Homophily, echo chambers, information cascades, bridge nodes           | Graph analysis, simulation                   |
 
 **Conceptual Bridges**
 
 The framework's core insight is that these disciplines have been studying the same phenomenon at different levels of analysis without a shared integrative model:
 
-*Psychology → Computer Science*: Algorithms that optimize for engagement are, by design, exploiting motivated reasoning. Confirmation bias (psychology) and collaborative filtering (CS) are not analogous — they are the same process operating at different scales. The algorithm didn't create selective exposure; it industrialized it.
+_Psychology → Computer Science_: Algorithms that optimize for engagement are, by design, exploiting motivated reasoning. Confirmation bias (psychology) and collaborative filtering (CS) are not analogous — they are the same process operating at different scales. The algorithm didn't create selective exposure; it industrialized it.
 
-*Network Science → Political Science*: Echo chamber formation (network science) maps directly onto affective polarization (political science) — both describe increasing within-group homogeneity and between-group hostility. Network structure provides the mechanism; political science provides the outcome measure and democratic significance.
+_Network Science → Political Science_: Echo chamber formation (network science) maps directly onto affective polarization (political science) — both describe increasing within-group homogeneity and between-group hostility. Network structure provides the mechanism; political science provides the outcome measure and democratic significance.
 
-*Computer Science → Network Science*: Recommendation algorithms function as artificial edge-generators in social networks — they create connections between users and content (or other users) that would not form organically. This bridges CS mechanism to network structural analysis.
+_Computer Science → Network Science_: Recommendation algorithms function as artificial edge-generators in social networks — they create connections between users and content (or other users) that would not form organically. This bridges CS mechanism to network structural analysis.
 
 **Integrative Framework: Algorithmic Amplification of Identity-Protective Processing**
 
@@ -155,7 +159,7 @@ Individual Psychology          Platform Algorithm
 [Bridge node erosion]          [Partisan identity strengthening]
 ```
 
-The framework proposes that recommendation algorithms operate as *identity-protective processing amplifiers* — they detect the downstream behavioral output of motivated reasoning (engagement, time-on-site, click patterns) and feed it back as input, creating a reinforcement loop that neither field's models capture alone.
+The framework proposes that recommendation algorithms operate as _identity-protective processing amplifiers_ — they detect the downstream behavioral output of motivated reasoning (engagement, time-on-site, click patterns) and feed it back as input, creating a reinforcement loop that neither field's models capture alone.
 
 **Navigating Tensions**
 
@@ -165,7 +169,7 @@ The primary tension is epistemological: CS researchers study revealed behavior f
 
 Neither field alone can explain why algorithmic systems produce political effects that persist after users are informed about filter bubbles (a documented empirical puzzle). The interdisciplinary framework explains it: because the mechanism operates on cognitive processes (identity protection) that are themselves resistant to rational updating, awareness of the algorithm does not break the loop.
 
-**Target journals**: *PNAS*, *Nature Human Behaviour*, *Journal of Communication* — all explicitly solicit boundary-spanning work.
+**Target journals**: _PNAS_, _Nature Human Behaviour_, _Journal of Communication_ — all explicitly solicit boundary-spanning work.
 
 ---
 

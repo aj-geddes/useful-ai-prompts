@@ -1,6 +1,7 @@
 # Freelance Business Builder
 
 ## Metadata
+
 - **ID**: `career-freelance-business-builder`
 - **Version**: 1.0.0
 - **Category**: Career Development
@@ -18,12 +19,14 @@ Builds thriving freelance businesses through strategic positioning, client acqui
 ## When to Use
 
 **Scenarios:**
+
 - Launching a freelance career alongside current employment
 - Scaling an existing freelance practice for higher income
 - Improving client acquisition and reducing feast/famine cycles
 - Transitioning from employment to full-time self-employment
 
 **Anti-patterns:**
+
 - Full-time job searching at companies
 - Building an agency with employees
 - Passive income or productized service business
@@ -112,6 +115,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Skills: Web development (React, Node.js), 2 years professional experience plus 1 year freelancing on the side. Current: Part-time freelancing earning $2K/month while employed full-time ($6K/month salary). Target clients: Small business owners who need professional websites. Goal: Replace full-time income ($6K/month minimum) within 12 months so I can quit my job. Main challenge: Finding clients consistently - current clients all came from random referrals."
 
 ### Output
@@ -119,6 +123,7 @@ Outputs must avoid:
 ## POSITIONING STRATEGY
 
 ### Niche Definition
+
 ```
 Target: Service-based small businesses (consultants, coaches, agencies, local services)
 Problem: Need professional websites that generate leads but can't afford agencies ($15K+)
@@ -130,6 +135,7 @@ Differentiator: Fast turnaround + ongoing support + business-focused (not just d
 "I help service-based businesses get professional websites that generate leads and book clients - delivered in 2 weeks at a price that makes sense for growing businesses, with ongoing support so you're never stuck."
 
 ### Why This Niche Works
+
 - Clear pain point (agencies too expensive, DIY too time-consuming)
 - Clients have money to spend (service businesses, not startups)
 - Recurring revenue potential (maintenance, updates)
@@ -138,20 +144,23 @@ Differentiator: Fast turnaround + ongoing support + business-focused (not just d
 ## CLIENT ACQUISITION SYSTEM
 
 ### Lead Generation Mix (Target: 10-12 leads/month)
-| Channel | Weekly Effort | Expected Leads | Conversion |
-|---------|---------------|----------------|------------|
-| Referrals | 2 hours | 2-3/month | 50% |
-| LinkedIn Outreach | 4 hours | 4-5/month | 20% |
-| Local Networking | 3 hours | 2-3/month | 30% |
-| Content Marketing | 3 hours | 3-4/month | 15% |
+
+| Channel           | Weekly Effort | Expected Leads | Conversion |
+| ----------------- | ------------- | -------------- | ---------- |
+| Referrals         | 2 hours       | 2-3/month      | 50%        |
+| LinkedIn Outreach | 4 hours       | 4-5/month      | 20%        |
+| Local Networking  | 3 hours       | 2-3/month      | 30%        |
+| Content Marketing | 3 hours       | 3-4/month      | 15%        |
 
 ### Referral System (40% of business target)
+
 - Ask every client for 2 specific referrals at project completion
 - Offer $250 referral bonus for signed contracts
 - Quarterly check-in with past clients (relationship maintenance)
 - Create "referral kit" making it easy to recommend you
 
 ### LinkedIn Outreach Strategy
+
 - Profile optimized for "small business web developer" searches
 - 3 value posts per week (website tips, case studies, client wins)
 - 10 personalized connection requests daily (target: business owners)
@@ -161,6 +170,7 @@ Differentiator: Fast turnaround + ongoing support + business-focused (not just d
   - Day 14: Soft offer (free website audit)
 
 ### Local Networking
+
 - Join 2 business networking groups (BNI, Chamber, industry-specific)
 - Attend monthly chamber events
 - Partner with complementary services (designers, marketers, copywriters)
@@ -169,6 +179,7 @@ Differentiator: Fast turnaround + ongoing support + business-focused (not just d
 ## PRICING FRAMEWORK
 
 ### Service Packages
+
 ```
 STARTER - $2,500 (Target: 2/month initially)
 ├── 5-page responsive website
@@ -197,6 +208,7 @@ PREMIUM - $8,000 (Target: 1/quarter)
 ```
 
 ### Ongoing Revenue (Target: 50% of clients)
+
 ```
 MAINTENANCE - $300/month
 ├── Hosting + security updates
@@ -207,6 +219,7 @@ MAINTENANCE - $300/month
 ```
 
 ### Pricing Psychology
+
 - Always present 3 options (anchor on Premium)
 - Show monthly breakdown for large projects ($5K = "$417/month value")
 - Add 20% for rush timelines (less than 2 weeks)
@@ -215,6 +228,7 @@ MAINTENANCE - $300/month
 ## SERVICE DELIVERY FRAMEWORK
 
 ### Project Process (2-3 weeks)
+
 ```
 WEEK 1: Discovery + Strategy
 ├── Client questionnaire (async)
@@ -239,6 +253,7 @@ WEEK 3: Launch + Support
 ```
 
 ### Client Communication
+
 - Kickoff call to align expectations
 - Mid-week async updates (Loom videos)
 - End-of-week milestone review
@@ -248,15 +263,17 @@ WEEK 3: Launch + Support
 ## GROWTH TRAJECTORY
 
 ### 12-Month Income Plan
-| Period | Projects/Month | Monthly Revenue | Status |
-|--------|----------------|-----------------|--------|
-| Month 1-3 | 1 project | $3-4K | Build systems, keep job |
-| Month 4-6 | 2 projects | $6-8K | Match income, prepare exit |
-| Month 7 | -- | -- | Quit job |
-| Month 8-9 | 2-3 projects | $8-12K | Scale marketing |
-| Month 10-12 | 3 projects + retainers | $12-15K | Sustainable business |
+
+| Period      | Projects/Month         | Monthly Revenue | Status                     |
+| ----------- | ---------------------- | --------------- | -------------------------- |
+| Month 1-3   | 1 project              | $3-4K           | Build systems, keep job    |
+| Month 4-6   | 2 projects             | $6-8K           | Match income, prepare exit |
+| Month 7     | --                     | --              | Quit job                   |
+| Month 8-9   | 2-3 projects           | $8-12K          | Scale marketing            |
+| Month 10-12 | 3 projects + retainers | $12-15K         | Sustainable business       |
 
 ### Key Milestones
+
 - Month 3: 5 completed projects, 3 video testimonials, referral system active
 - Month 6: Income matches salary, 2-month financial runway saved
 - Month 7: Two weeks notice given, full-time freelance begins
@@ -266,6 +283,7 @@ WEEK 3: Launch + Support
 ## BUSINESS SYSTEMS
 
 ### Essential Tools
+
 - **Project Management:** Notion (free tier sufficient)
 - **Contracts + Invoicing:** HoneyBook ($40/month, professional + automated)
 - **Scheduling:** Calendly (free tier)
@@ -273,6 +291,7 @@ WEEK 3: Launch + Support
 - **Hosting:** Managed WordPress or Vercel (client pays directly)
 
 ### Weekly Schedule (20 hours while employed)
+
 ```
 Monday-Wednesday: Client work (12 hours)
 Thursday: Marketing + outreach (4 hours)
@@ -280,6 +299,7 @@ Friday: Admin + business development (4 hours)
 ```
 
 ### Automation Priorities
+
 - Client onboarding questionnaire (automated)
 - Contract and invoice sending (automated)
 - Project status updates (templated)
@@ -288,5 +308,6 @@ Friday: Admin + business development (4 hours)
 ---
 
 ## Related Prompts
+
 - [Personal Branding Strategist](personal-branding-strategist.md) - Build authority and visibility
 - [Salary Negotiation Expert](salary-negotiation-expert.md) - Negotiating freelance rates

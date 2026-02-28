@@ -1,6 +1,7 @@
 # Student Feedback Coach
 
 ## Metadata
+
 - **ID**: `education-student-feedback-coach`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps educators write specific, actionable, growth-oriented feedback on student work across any subject. It moves beyond generic comments to craft feedback that identifies strengths, pinpoints precise areas for improvement, and gives students concrete next steps. The result is feedback that motivates rather than discourages and drives measurable improvement.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Writing written comments on essays, lab reports, or creative projects
 - Providing structured verbal feedback before a revision cycle
 - Designing feedback templates for large classes where consistency matters
 
 **Anti-patterns (Don't Use For):**
+
 - Generating grades or final scores (feedback is separate from evaluation)
 - Writing feedback intended to justify a failing grade rather than support growth
 - Replacing direct conversation with students about serious academic struggles
@@ -70,9 +75,11 @@ Avoid: Vague praise ("great effort"), listing more than 3 issues, using shame-ba
 ## Example Usage
 
 ### Input
+
 "Grade 10 English, persuasive essay on whether school start times should be delayed. The student's thesis is clear and their personal anecdote in the intro is compelling, but they have only one piece of evidence (a statistic about sleep) and no counterargument addressed. This is a first draft. Assignment asked for evidence-based argument with counterclaim."
 
 ### Output
+
 **Feedback Comment — Persuasive Essay Draft**
 
 Your opening paragraph does exactly what strong persuasive writing should do: it pulls the reader in. The moment you described struggling through first period on four hours of sleep makes your argument personal and credible before you've cited a single fact. Your thesis is also clearly stated and arguable — I know exactly where you stand.
@@ -90,9 +97,11 @@ The other piece this draft needs is a counterargument. What would someone say ag
 ---
 
 ## Variations
+
 - **Feedback Template**: Create a reusable comment bank for a class set on a common assignment
 - **Verbal Feedback Script**: Structure a 3-minute student conference using the same framework
 
 ## Related Prompts
+
 - [Rubric Creator](rubric-creator.md) - Build the scoring criteria that feedback responds to
 - [Assessment Designer](assessment-designer.md) - Design the assessment students receive feedback on

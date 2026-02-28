@@ -1,6 +1,7 @@
 # Solar Construction Management and Project Commissioning
 
 ## Metadata
+
 - **ID**: `solar-construction-management-commissioning`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables management of utility-scale solar construction and commissio
 ## When to Use
 
 **Ideal scenarios:**
+
 - Managing utility-scale solar construction (50+ MW)
 - Overseeing EPC contractor execution and quality control
 - Developing commissioning procedures and performance validation
@@ -25,6 +27,7 @@ This prompt enables management of utility-scale solar construction and commissio
 - Implementing construction phase safety and project controls
 
 **Anti-patterns (when not to use):**
+
 - Early-stage project development and permitting
 - Residential or small commercial installations
 - Project finance and investment structuring
@@ -116,6 +119,7 @@ Develop comprehensive construction and commissioning management:
 ## Example Usage
 
 ### Input
+
 We're managing construction of a 180 MW DC / 150 MW AC utility-scale solar project in Texas (ERCOT). Full-wrap EPC contract with experienced contractor. Equipment includes bifacial modules, central inverters, and 345 kV interconnection. Target COD is December 2025 with construction starting March 2025. Key concern is summer heat impact on productivity.
 
 ### Output
@@ -124,15 +128,17 @@ We're managing construction of a 180 MW DC / 150 MW AC utility-scale solar proje
 
 **Project Overview and Schedule Framework**
 
-*Project parameters:*
+_Project parameters:_
+
 - Capacity: 180 MW DC / 150 MW AC
 - Site: ~900 acres in ERCOT territory
 - Interconnection: 345 kV substation (significant scope)
 - EPC: Full-wrap turnkey with performance guarantees
 - Duration: 10 months (March 2025 - December 2025)
 
-*Critical path analysis:*
+_Critical path analysis:_
 The 345 kV substation and ERCOT witness testing typically drive schedule for Texas projects. Critical path:
+
 1. Substation civil/foundations (8 weeks)
 2. Substation equipment installation (8 weeks)
 3. Substation commissioning and relay testing (4 weeks)
@@ -142,19 +148,20 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Master Schedule Summary**
 
-| Phase | Duration | Timeline |
-|-------|----------|----------|
-| Mobilization/site prep | 6 weeks | Mar 1 - Apr 15 |
-| Pile driving | 10 weeks | Apr 1 - Jun 15 |
-| Tracker installation | 12 weeks | May 1 - Jul 31 |
-| Module installation | 12 weeks | Jun 1 - Aug 31 |
+| Phase                      | Duration | Timeline        |
+| -------------------------- | -------- | --------------- |
+| Mobilization/site prep     | 6 weeks  | Mar 1 - Apr 15  |
+| Pile driving               | 10 weeks | Apr 1 - Jun 15  |
+| Tracker installation       | 12 weeks | May 1 - Jul 31  |
+| Module installation        | 12 weeks | Jun 1 - Aug 31  |
 | Electrical (MV collection) | 14 weeks | Jun 15 - Sep 30 |
-| Substation construction | 16 weeks | Jun 1 - Sep 30 |
-| System commissioning | 8 weeks | Sep 15 - Nov 15 |
-| ERCOT testing/COD | 4 weeks | Nov 15 - Dec 15 |
-| **Contingency buffer** | 2 weeks | Dec 15-31 |
+| Substation construction    | 16 weeks | Jun 1 - Sep 30  |
+| System commissioning       | 8 weeks  | Sep 15 - Nov 15 |
+| ERCOT testing/COD          | 4 weeks  | Nov 15 - Dec 15 |
+| **Contingency buffer**     | 2 weeks  | Dec 15-31       |
 
-*Summer heat mitigation:*
+_Summer heat mitigation:_
+
 - Shift work start to 5 AM during June-August
 - Mandatory breaks and hydration stations every 500 feet
 - Heat index monitoring with work suspension >105F
@@ -163,19 +170,22 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Contractor Management Framework**
 
-*EPC oversight structure:*
+_EPC oversight structure:_
+
 - Weekly progress meetings with EPC project manager
 - Daily coordination calls with superintendents
 - Bi-weekly executive steering committee reviews
 - Monthly lender and investor reporting
 
-*Performance monitoring:*
+_Performance monitoring:_
+
 - Daily production tracking: piles driven, trackers installed, modules placed
 - Weekly schedule variance analysis (SPI/CPI earned value)
 - Equipment delivery tracking with 30-day lookahead
 - Subcontractor performance scorecards
 
-*Change order management:*
+_Change order management:_
+
 - EPC contractual change order process with 5-day response requirement
 - Owner approval thresholds: <$50K field authorization, >$50K owner approval
 - Monthly change order log with cost and schedule impact tracking
@@ -183,15 +193,16 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Safety Management Program**
 
-*Target: Zero lost-time incidents*
+_Target: Zero lost-time incidents_
 
-*Core safety elements:*
+_Core safety elements:_
+
 - Site-specific safety plan approved prior to mobilization
 - Daily toolbox talks (mandatory attendance, signed documentation)
 - Weekly safety audits with rotating audit teams
 - Monthly all-hands safety meetings
 
-*High-risk activity protocols:*
+_High-risk activity protocols:_
 | Activity | Key Controls |
 |----------|--------------|
 | Pile driving | Exclusion zones, hearing protection, equipment inspection |
@@ -199,7 +210,8 @@ This sequence must complete by early December for COD, meaning substation work i
 | Elevated work | 100% tie-off, scaffold inspection, fall rescue plan |
 | Heat exposure | Work-rest cycles, hydration, medical monitoring |
 
-*Incident response:*
+_Incident response:_
+
 - On-site medical capability with AED and first responders
 - Incident investigation within 24 hours with root cause analysis
 - Near-miss reporting program with recognition for reporting
@@ -207,17 +219,18 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Quality Control System**
 
-*Inspection and testing plan:*
+_Inspection and testing plan:_
 
-| Activity | Inspection Points | Acceptance Criteria |
-|----------|-------------------|---------------------|
-| Pile installation | Torque verification, depth check | Torque within +-10%, depth per geotech |
-| Tracker assembly | Bolt torque, alignment | 100% torque verification, +-0.5 degree |
-| Module installation | Clip torque, grounding | Manufacturer spec, continuity verified |
-| String wiring | Polarity, IV curve | 100% polarity, IV within 3% of flash |
-| MV cable | Hi-pot, insulation | Pass per IEEE standards |
+| Activity            | Inspection Points                | Acceptance Criteria                    |
+| ------------------- | -------------------------------- | -------------------------------------- |
+| Pile installation   | Torque verification, depth check | Torque within +-10%, depth per geotech |
+| Tracker assembly    | Bolt torque, alignment           | 100% torque verification, +-0.5 degree |
+| Module installation | Clip torque, grounding           | Manufacturer spec, continuity verified |
+| String wiring       | Polarity, IV curve               | 100% polarity, IV within 3% of flash   |
+| MV cable            | Hi-pot, insulation               | Pass per IEEE standards                |
 
-*Quality documentation:*
+_Quality documentation:_
+
 - Daily inspection reports with photo documentation
 - Non-conformance tracking with resolution timeline
 - Test records organized by system for commissioning handover
@@ -225,26 +238,30 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Commissioning Sequence**
 
-*Pre-commissioning (construction phase):*
+_Pre-commissioning (construction phase):_
+
 - String-level IV curve testing as installed
 - Combiner box wiring verification
 - Inverter pre-energization checks
 - Substation protection relay testing
 
-*Systematic commissioning:*
+_Systematic commissioning:_
+
 1. **Weeks 1-2**: MV collection system testing (feeder by feeder)
 2. **Weeks 3-4**: Inverter startup and AC output validation
 3. **Weeks 5-6**: Substation energization and protection verification
 4. **Week 7**: Grid synchronization and power quality testing
 5. **Week 8**: Performance testing and ERCOT witness testing
 
-*Performance validation:*
+_Performance validation:_
+
 - Capacity test: 4-hour test at >95% of rated output
 - Performance ratio validation: >82% during test period
 - Power quality: Harmonics, voltage, frequency per ERCOT requirements
 - Reactive power: Full range of VAR capability verification
 
-*ERCOT requirements:*
+_ERCOT requirements:_
+
 - Generator interconnection agreement execution
 - Real-time telemetry validation
 - ERCOT witness testing (typically 2-3 days)
@@ -252,29 +269,30 @@ This sequence must complete by early December for COD, meaning substation work i
 
 **Project Controls Dashboard**
 
-*Key performance indicators:*
+_Key performance indicators:_
 
-| Metric | Target | Reporting |
-|--------|--------|-----------|
-| Schedule Performance Index (SPI) | >0.95 | Weekly |
-| Cost Performance Index (CPI) | >0.97 | Monthly |
-| Safety (TRIR) | <1.0 | Monthly |
-| Quality (first-pass acceptance) | >98% | Weekly |
-| Commissioning tests passed | >98% | During commissioning |
+| Metric                           | Target | Reporting            |
+| -------------------------------- | ------ | -------------------- |
+| Schedule Performance Index (SPI) | >0.95  | Weekly               |
+| Cost Performance Index (CPI)     | >0.97  | Monthly              |
+| Safety (TRIR)                    | <1.0   | Monthly              |
+| Quality (first-pass acceptance)  | >98%   | Weekly               |
+| Commissioning tests passed       | >98%   | During commissioning |
 
-*Risk register (top 5):*
+_Risk register (top 5):_
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Equipment delivery delay | Medium | High | Buffer inventory, expediting, alternatives |
-| Extreme heat shutdown | High | Medium | Early start times, productivity adjustment |
-| Substation equipment lead time | Medium | High | Early procurement, critical path monitoring |
-| ERCOT testing delays | Low | High | Early coordination, documentation prep |
-| Soil conditions (pile refusal) | Low | Medium | Geotech validation, contingency piles |
+| Risk                           | Probability | Impact | Mitigation                                  |
+| ------------------------------ | ----------- | ------ | ------------------------------------------- |
+| Equipment delivery delay       | Medium      | High   | Buffer inventory, expediting, alternatives  |
+| Extreme heat shutdown          | High        | Medium | Early start times, productivity adjustment  |
+| Substation equipment lead time | Medium      | High   | Early procurement, critical path monitoring |
+| ERCOT testing delays           | Low         | High   | Early coordination, documentation prep      |
+| Soil conditions (pile refusal) | Low         | Medium | Geotech validation, contingency piles       |
 
 **Commercial Operation Readiness**
 
-*COD requirements checklist:*
+_COD requirements checklist:_
+
 - [ ] All mechanical completion with punch list resolution
 - [ ] Commissioning tests complete with documentation
 - [ ] ERCOT witness testing passed

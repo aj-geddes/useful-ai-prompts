@@ -3,25 +3,26 @@ title: Stakeholder Impact Analysis Expert
 slug: stakeholder-impact-analysis-expert
 category: decision-making/strategic
 tags:
-- stakeholder-analysis
-- impact-assessment
-- change-management
-- communication
+  - stakeholder-analysis
+  - impact-assessment
+  - change-management
+  - communication
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Analyze how decisions affect different stakeholder groups, helping understand
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Analyze how decisions affect different stakeholder groups, helping understand
   impacts, manage expectations, and develop targeted communication strategies. Creates
   stakeholder maps, power-interest grids, and engagement plans that build support
   while mitigating resistance.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Planning organizational changes or restructuring
-- Preparing for major announcements or policy shifts
-- Building stakeholder support for strategic initiatives
-- Managing resistance to decisions or transformations
+  - Ideal scenarios:**
+  - Planning organizational changes or restructuring
+  - Preparing for major announcements or policy shifts
+  - Building stakeholder support for strategic initiatives
+  - Managing resistance to decisions or transformations
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Stakeholder impact analysis is critical when decisions affect multiple groups wi
 
 <input_handling>
 Required inputs:
+
 - Decision or change being planned
 - Key stakeholder groups (internal and external)
 - Timeline for implementation
 
 Infer if not provided:
+
 - Power-interest levels for each group
 - Current stakeholder relationships and attitudes
 - Communication channels available
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive stakeholder impact analysis with engagement strategy.
@@ -60,6 +63,7 @@ Step 5: Define risk mitigation approaches for resistant stakeholders
 Format: Impact matrix with engagement strategy document
 Length: 800-1100 words
 Structure:
+
 - Executive summary (decision, stakeholder count, key risks)
 - Stakeholder impact matrix (table with group, impact level, type, attitude, priority)
 - Detailed impact analysis per critical stakeholder
@@ -67,10 +71,11 @@ Structure:
 - Engagement strategy with timing and channels
 - Risk mitigation for resistant stakeholders
 - Success indicators
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Identify all relevant stakeholder groups including indirect impacts
 - Assess impacts honestly including negative consequences
 - Tailor engagement approach to each group's specific needs
@@ -78,12 +83,13 @@ Excellent outputs:
 - Include measurable success indicators
 
 Avoid:
+
 - Ignoring negative impacts or resistant groups
 - One-size-fits-all communication approach
 - Missing influential but quiet stakeholders
 - Overestimating stakeholder support
 - Generic engagement tactics without specificity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Base recommendations on stated context and reasonable inferences

@@ -22,4 +22,4 @@ Strategic decision-making frameworks for complex business and technical choices.
 
 ---
 
-*Decision-making prompts for strategic choices and systematic evaluation processes.*
+_Decision-making prompts for strategic choices and systematic evaluation processes._

@@ -1,6 +1,7 @@
 # Marketing Manager Strategist
 
 ## Metadata
+
 - **ID**: `business-marketing-manager-strategist`
 - **Version**: 1.0.0
 - **Category**: Business/Marketing
@@ -18,12 +19,14 @@ Develops comprehensive marketing strategies that drive business growth through d
 ## When to Use
 
 **Scenarios:**
+
 - Creating annual marketing plans and budgets
 - Optimizing channel mix for better ROI
 - Repositioning brand or entering new markets
 - Building marketing team capabilities
 
 **Anti-patterns:**
+
 - Individual ad creation or copywriting
 - Social media posting or scheduling
 - Email template design
@@ -112,6 +115,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "B2B SaaS - AI customer service platform, reduces response time 70%. Target: Customer service managers at mid-market companies (100-1000 employees). $5M ARR growing 100% YoY. Current channels: content marketing, Google Ads, LinkedIn, email. Webinars perform well, Google Ads expensive with poor conversion. Goal: Double ARR to $10M. Budget: $50K/month."
 
 ### Output
@@ -122,6 +126,7 @@ Outputs must avoid:
 **To:** "The AI that makes customer service more human"
 
 **Message Architecture:**
+
 - **Primary:** "70% faster responses, 100% more human"
 - **Supporting:** "AI that enhances, not replaces, your team"
 - **Proof:** "Built for growing companies, not enterprises"
@@ -129,43 +134,48 @@ Outputs must avoid:
 ## CHANNEL PRIORITIZATION
 
 ### High Impact, Low Effort (Do First)
+
 - LinkedIn Thought Leadership (CEO + team content)
 - Customer Success Stories (video case studies)
 - Webinar Series Expansion (partner collaborations)
 - SEO Content Clusters (own "AI customer service" keywords)
 
 ### High Impact, High Effort (Invest)
+
 - Account-Based Marketing (top 100 accounts)
 - Partner Channel Program (integration partners)
 - Industry Event Strategy (speaking, sponsorship)
 
 ### Low Impact (Deprioritize)
+
 - Broad Google Ads (high CAC, low intent)
 - Facebook/Instagram (wrong audience)
 - Traditional Advertising (misaligned with buyer)
 
 ## BUDGET ALLOCATION ($50K/month)
 
-| Channel | Allocation | Purpose | Expected ROI |
-|---------|------------|---------|--------------|
-| Content & SEO | $12K (24%) | Own "AI customer service" keywords | 4:1 |
-| LinkedIn & ABM | $10K (20%) | Target decision makers directly | 3:1 |
-| Webinars & Events | $8K (16%) | Scale what's working | 5:1 |
-| Google Ads (refined) | $5K (10%) | Branded + high-intent only | 2:1 |
-| Email & Automation | $3K (6%) | Segment by industry/stage | 6:1 |
-| PR & Partnerships | $5K (10%) | Thought leadership amplification | 3:1 |
-| Creative & Tools | $5K (10%) | Production capabilities | N/A |
-| Reserve/Testing | $2K (4%) | Experimental channels | TBD |
+| Channel              | Allocation | Purpose                            | Expected ROI |
+| -------------------- | ---------- | ---------------------------------- | ------------ |
+| Content & SEO        | $12K (24%) | Own "AI customer service" keywords | 4:1          |
+| LinkedIn & ABM       | $10K (20%) | Target decision makers directly    | 3:1          |
+| Webinars & Events    | $8K (16%)  | Scale what's working               | 5:1          |
+| Google Ads (refined) | $5K (10%)  | Branded + high-intent only         | 2:1          |
+| Email & Automation   | $3K (6%)   | Segment by industry/stage          | 6:1          |
+| PR & Partnerships    | $5K (10%)  | Thought leadership amplification   | 3:1          |
+| Creative & Tools     | $5K (10%)  | Production capabilities            | N/A          |
+| Reserve/Testing      | $2K (4%)   | Experimental channels              | TBD          |
 
 ## CAMPAIGN CONCEPTS
 
 ### Q1: "The Human Touch" Campaign
+
 **Objective:** Position AI as enhancing human connection, not replacing it
 **Channels:** LinkedIn, webinars, case studies
 **Content:** "Day in the life" comparison videos, customer success stories
 **Expected Outcome:** 30% increase in demo requests, 2 major press mentions
 
 ### Q2: Product Launch - "Intelligence Amplified"
+
 **Pre-Launch:** Teaser campaign, beta testimonials collection
 **Launch Week:** Virtual event, Product Hunt, media outreach
 **Post-Launch:** Success metrics showcase, feature deep-dives
@@ -174,11 +184,13 @@ Outputs must avoid:
 ## MEASUREMENT PLAN
 
 **Primary KPIs:**
+
 - Marketing-Sourced Revenue: Target $5M (50% of total)
 - Marketing Qualified Leads: Target 500/month
 - CAC Payback Period: Target 12 months (from 18)
 
 **Dashboard Cadence:**
+
 - Weekly: Pipeline generated, content performance, ad spend efficiency
 - Monthly: Revenue attribution, channel ROI, competitive share of voice
 - Quarterly: Market share, competitive position, brand awareness
@@ -193,5 +205,6 @@ Outputs must avoid:
 ---
 
 ## Related Prompts
+
 - [Integrated Campaign Architect](integrated-campaign-architect.md) - Detailed campaign planning
 - [Sales Pipeline Optimizer](../sales/sales-pipeline-optimizer.md) - Align marketing with sales

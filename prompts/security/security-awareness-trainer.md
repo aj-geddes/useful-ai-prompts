@@ -1,6 +1,7 @@
 # Security Awareness Trainer
 
 ## Metadata
+
 - **ID**: `security-security-awareness-trainer`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a security awareness program specialist who designs behavi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a security awareness program from the ground up or replacing ineffective annual training
 - Designing a phishing simulation program with targeted follow-up training for at-risk employees
 - Measuring security culture improvement and reporting metrics to leadership or auditors
 
 **Anti-patterns (Don't Use For):**
+
 - Technical security control design for systems — awareness training addresses human behavior, not technology gaps
 - Writing the actual LMS training content at production quality (this designs the program, not the final slide deck)
 
@@ -134,11 +137,11 @@ High completion rates with high click rates confirm the training is being comple
 
 **Employee Segmentation**
 
-| Tier | Population | Training Intensity |
-|------|------------|-------------------|
-| High-risk | Finance, HR, Executives, Schedulers | Monthly simulations + role-specific modules |
-| Standard | All clinical and administrative staff | Monthly micro-training + quarterly simulations |
-| Privileged | IT staff, system administrators | Technical track + monthly simulations |
+| Tier       | Population                            | Training Intensity                             |
+| ---------- | ------------------------------------- | ---------------------------------------------- |
+| High-risk  | Finance, HR, Executives, Schedulers   | Monthly simulations + role-specific modules    |
+| Standard   | All clinical and administrative staff | Monthly micro-training + quarterly simulations |
+| Privileged | IT staff, system administrators       | Technical track + monthly simulations          |
 
 **12-Month Program Calendar (Year 1)**
 
@@ -156,12 +159,12 @@ Start with low-difficulty templates (obvious brand spoofs). Progress to organiza
 
 **Metrics Framework**
 
-| Metric | Baseline | 6-Month Target | 12-Month Target |
-|--------|----------|----------------|-----------------|
-| Phishing click rate | ~5% (estimated) | < 3% | < 1.5% |
-| Phishing report rate | Unknown | > 20% | > 50% |
-| Training completion | 98% | 98% | 98% |
-| Employee security reports (IR) | Establish baseline | +20% | +50% |
+| Metric                         | Baseline           | 6-Month Target | 12-Month Target |
+| ------------------------------ | ------------------ | -------------- | --------------- |
+| Phishing click rate            | ~5% (estimated)    | < 3%           | < 1.5%          |
+| Phishing report rate           | Unknown            | > 20%          | > 50%           |
+| Training completion            | 98%                | 98%            | 98%             |
+| Employee security reports (IR) | Establish baseline | +20%           | +50%            |
 
 Promote the "report phishing" button in Outlook/Gmail as the hero action. Every quarter, recognize the top reporters publicly. This creates social proof and reinforces reporting as the desired behavior.
 

@@ -24,63 +24,63 @@ Build scalable WebSocket systems for real-time communication with proper connect
 ### 1. **Node.js WebSocket Server (Socket.IO)**
 
 ```javascript
-const express = require('express');
-const http = require('http');
-const socketIo = require('socket.io');
-const redis = require('redis');
+const express = require("express");
+const http = require("http");
+const socketIo = require("socket.io");
+const redis = require("redis");
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
-  cors: { origin: '*' },
-  transports: ['websocket', 'polling'],
+  cors: { origin: "*" },
+  transports: ["websocket", "polling"],
   reconnection: true,
   reconnectionDelay: 1000,
   reconnectionDelayMax: 5000,
-  reconnectionAttempts: 5
+  reconnectionAttempts: 5,
 });
 
 // Redis adapter for horizontal scaling
 const redisClient = redis.createClient();
-const { createAdapter } = require('@socket.io/redis-adapter');
+const { createAdapter } = require("@socket.io/redis-adapter");
 
 io.adapter(createAdapter(redisClient, redisClient.duplicate()));
 
 // Connection management
 const connectedUsers = new Map();
 
-io.on('connection', (socket) => {
+io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
 
   // Store user connection
-  socket.on('auth', (userData) => {
+  socket.on("auth", (userData) => {
     connectedUsers.set(socket.id, {
       userId: userData.id,
       username: userData.username,
       socketId: socket.id,
-      connectedAt: new Date()
+      connectedAt: new Date(),
     });
 
     // Join user-specific room
     socket.join(`user:${userData.id}`);
-    socket.join('authenticated_users');
+    socket.join("authenticated_users");
 
     // Notify others user is online
-    io.to('authenticated_users').emit('user:online', {
+    io.to("authenticated_users").emit("user:online", {
       userId: userData.id,
       username: userData.username,
-      timestamp: new Date()
+      timestamp: new Date(),
     });
 
     console.log(`User authenticated: ${userData.username}`);
   });
 
   // Chat messaging
-  socket.on('chat:message', (message) => {
+  socket.on("chat:message", (message) => {
     const user = connectedUsers.get(socket.id);
 
     if (!user) {
-      socket.emit('error', { message: 'Not authenticated' });
+      socket.emit("error", { message: "Not authenticated" });
       return;
     }
 
@@ -91,70 +91,73 @@ io.on('connection', (socket) => {
       text: message.text,
       roomId: message.roomId,
       timestamp: new Date(),
-      status: 'delivered'
+      status: "delivered",
     };
 
     // Save to database
     Message.create(chatMessage);
 
     // Broadcast to room
-    io.to(`room:${message.roomId}`).emit('chat:message', chatMessage);
+    io.to(`room:${message.roomId}`).emit("chat:message", chatMessage);
 
     // Update message status
     setTimeout(() => {
-      socket.emit('chat:message:ack', { messageId: chatMessage.id, status: 'read' });
+      socket.emit("chat:message:ack", {
+        messageId: chatMessage.id,
+        status: "read",
+      });
     }, 100);
   });
 
   // Room management
-  socket.on('room:join', (roomId) => {
+  socket.on("room:join", (roomId) => {
     socket.join(`room:${roomId}`);
 
     const user = connectedUsers.get(socket.id);
-    io.to(`room:${roomId}`).emit('room:user:joined', {
+    io.to(`room:${roomId}`).emit("room:user:joined", {
       userId: user.userId,
       username: user.username,
-      timestamp: new Date()
+      timestamp: new Date(),
     });
   });
 
-  socket.on('room:leave', (roomId) => {
+  socket.on("room:leave", (roomId) => {
     socket.leave(`room:${roomId}`);
 
     const user = connectedUsers.get(socket.id);
-    io.to(`room:${roomId}`).emit('room:user:left', {
+    io.to(`room:${roomId}`).emit("room:user:left", {
       userId: user.userId,
-      timestamp: new Date()
+      timestamp: new Date(),
     });
   });
 
   // Typing indicator
-  socket.on('typing:start', (roomId) => {
+  socket.on("typing:start", (roomId) => {
     const user = connectedUsers.get(socket.id);
-    io.to(`room:${roomId}`).emit('typing:indicator', {
+    io.to(`room:${roomId}`).emit("typing:indicator", {
       userId: user.userId,
       username: user.username,
-      isTyping: true
+      isTyping: true,
     });
   });
 
-  socket.on('typing:stop', (roomId) => {
+  socket.on("typing:stop", (roomId) => {
     const user = connectedUsers.get(socket.id);
-    io.to(`room:${roomId}`).emit('typing:indicator', {
+    io.to(`room:${roomId}`).emit("typing:indicator", {
       userId: user.userId,
-      isTyping: false
+      isTyping: false,
     });
   });
 
   // Handle disconnection
-  socket.on('disconnect', () => {
+  socket.on("disconnect", () => {
     const user = connectedUsers.get(socket.id);
 
     if (user) {
       connectedUsers.delete(socket.id);
-      io.to('authenticated_users').emit('user:offline', {
+      io.to("authenticated_users").emit("user:offline", {
         userId: user.userId,
-        timestamp: new Date()
+        timestamp: new Date(),
       });
 
       console.log(`User disconnected: ${user.username}`);
@@ -162,15 +165,15 @@ io.on('connection', (socket) => {
   });
 
   // Error handling
-  socket.on('error', (error) => {
+  socket.on("error", (error) => {
     console.error(`Socket error: ${error}`);
-    socket.emit('error', { message: 'An error occurred' });
+    socket.emit("error", { message: "An error occurred" });
   });
 });
 
 // Server methods
 const broadcastUserUpdate = (userId, data) => {
-  io.to(`user:${userId}`).emit('user:update', data);
+  io.to(`user:${userId}`).emit("user:update", data);
 };
 
 const notifyRoom = (roomId, event, data) => {
@@ -182,7 +185,7 @@ const sendDirectMessage = (userId, event, data) => {
 };
 
 server.listen(3000, () => {
-  console.log('WebSocket server listening on port 3000');
+  console.log("WebSocket server listening on port 3000");
 });
 ```
 
@@ -207,34 +210,34 @@ class WebSocketClient {
     this.socket = io(this.url, {
       reconnection: true,
       reconnectionDelay: this.reconnectDelay,
-      reconnectionAttempts: this.maxReconnectAttempts
+      reconnectionAttempts: this.maxReconnectAttempts,
     });
 
-    this.socket.on('connect', () => {
-      console.log('Connected to server');
+    this.socket.on("connect", () => {
+      console.log("Connected to server");
       this.reconnectAttempts = 0;
       this.processMessageQueue();
     });
 
-    this.socket.on('disconnect', () => {
-      console.log('Disconnected from server');
+    this.socket.on("disconnect", () => {
+      console.log("Disconnected from server");
     });
 
-    this.socket.on('error', (error) => {
-      console.error('Socket error:', error);
-      this.emit('error', error);
+    this.socket.on("error", (error) => {
+      console.error("Socket error:", error);
+      this.emit("error", error);
     });
 
-    this.socket.on('connect_error', (error) => {
-      console.error('Connection error:', error);
+    this.socket.on("connect_error", (error) => {
+      console.error("Connection error:", error);
     });
   }
 
   authenticate(userData) {
-    this.socket.emit('auth', userData, (response) => {
+    this.socket.emit("auth", userData, (response) => {
       if (response.success) {
         this.isAuthenticated = true;
-        this.emit('authenticated');
+        this.emit("authenticated");
       }
     });
   }
@@ -265,22 +268,22 @@ class WebSocketClient {
   }
 
   joinRoom(roomId) {
-    this.emit('room:join', roomId);
+    this.emit("room:join", roomId);
   }
 
   leaveRoom(roomId) {
-    this.emit('room:leave', roomId);
+    this.emit("room:leave", roomId);
   }
 
   sendMessage(roomId, text) {
-    this.emit('chat:message', { roomId, text });
+    this.emit("chat:message", { roomId, text });
   }
 
   setTypingIndicator(roomId, isTyping) {
     if (isTyping) {
-      this.emit('typing:start', roomId);
+      this.emit("typing:start", roomId);
     } else {
-      this.emit('typing:stop', roomId);
+      this.emit("typing:stop", roomId);
     }
   }
 
@@ -290,24 +293,24 @@ class WebSocketClient {
 }
 
 // Usage
-const client = new WebSocketClient('http://localhost:3000');
+const client = new WebSocketClient("http://localhost:3000");
 
-client.on('chat:message', (message) => {
-  console.log('Received message:', message);
+client.on("chat:message", (message) => {
+  console.log("Received message:", message);
   displayMessage(message);
 });
 
-client.on('typing:indicator', (data) => {
+client.on("typing:indicator", (data) => {
   updateTypingIndicator(data);
 });
 
-client.on('user:online', (user) => {
-  updateUserStatus(user.userId, 'online');
+client.on("user:online", (user) => {
+  updateUserStatus(user.userId, "online");
 });
 
-client.authenticate({ id: 'user123', username: 'john' });
-client.joinRoom('room1');
-client.sendMessage('room1', 'Hello everyone!');
+client.authenticate({ id: "user123", username: "john" });
+client.joinRoom("room1");
+client.sendMessage("room1", "Hello everyone!");
 ```
 
 ### 3. **Python WebSocket Server (aiohttp)**
@@ -477,28 +480,29 @@ if __name__ == '__main__':
 ### 5. **Scaling with Redis**
 
 ```javascript
-const redis = require('redis');
-const { createAdapter } = require('@socket.io/redis-adapter');
-const { createClient } = require('redis');
+const redis = require("redis");
+const { createAdapter } = require("@socket.io/redis-adapter");
+const { createClient } = require("redis");
 
-const pubClient = createClient({ host: 'redis', port: 6379 });
+const pubClient = createClient({ host: "redis", port: 6379 });
 const subClient = pubClient.duplicate();
 
 io.adapter(createAdapter(pubClient, subClient));
 
 // Publish to multiple servers
-io.emit('user:action', { userId: 123, action: 'login' });
+io.emit("user:action", { userId: 123, action: "login" });
 
 // Subscribe to events from other servers
-redisClient.subscribe('notifications', (message) => {
+redisClient.subscribe("notifications", (message) => {
   const notification = JSON.parse(message);
-  io.to(`user:${notification.userId}`).emit('notification', notification);
+  io.to(`user:${notification.userId}`).emit("notification", notification);
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Implement proper authentication
 - Handle reconnection gracefully
 - Manage rooms/channels effectively
@@ -511,6 +515,7 @@ redisClient.subscribe('notifications', (message) => {
 - Handle errors properly
 
 ### ❌ DON'T
+
 - Send unencrypted sensitive data
 - Keep unlimited message history in memory
 - Allow arbitrary room/channel creation
@@ -526,18 +531,18 @@ redisClient.subscribe('notifications', (message) => {
 
 ```javascript
 // Track active connections
-io.engine.on('connection_error', (err) => {
+io.engine.on("connection_error", (err) => {
   console.log(err.req); // the request object
   console.log(err.code); // the error code, e.g. 1
   console.log(err.message); // the error message
   console.log(err.context); // some additional error context
 });
 
-app.get('/metrics/websocket', (req, res) => {
+app.get("/metrics/websocket", (req, res) => {
   res.json({
     activeConnections: io.engine.clientsCount,
     connectedSockets: io.sockets.sockets.size,
-    rooms: Object.keys(io.sockets.adapter.rooms)
+    rooms: Object.keys(io.sockets.adapter.rooms),
   });
 });
 ```

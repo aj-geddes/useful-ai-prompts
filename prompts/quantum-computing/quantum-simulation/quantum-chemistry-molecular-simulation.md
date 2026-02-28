@@ -1,6 +1,7 @@
 # Quantum Chemistry Molecular Simulation
 
 ## Metadata
+
 - **ID**: `quantum-chemistry-simulation`
 - **Version**: 1.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ Design and execute quantum chemistry simulations using VQE, quantum phase estima
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Calculating ground state energies of molecular systems beyond classical tractability
 - Simulating chemical reaction pathways and transition states
 - Studying strongly correlated electron systems where DFT fails
@@ -25,6 +27,7 @@ Design and execute quantum chemistry simulations using VQE, quantum phase estima
 - Drug discovery molecular property prediction
 
 **Anti-Patterns (When NOT to Use):**
+
 - Classical DFT calculations sufficient for the problem
 - Non-chemistry quantum simulation applications
 - Systems small enough for exact classical methods (Full CI)
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I want to simulate the water dissociation reaction H2O -> H + OH to study bond breaking. Need chemical accuracy (<1 kcal/mol) for the potential energy surface. Have access to IBM Quantum (27 qubits) and want to understand quantum advantage potential.
 
 ### Output
@@ -116,12 +120,14 @@ I want to simulate the water dissociation reaction H2O -> H + OH to study bond b
 **Molecular System Analysis**
 
 **Electronic Structure**
+
 - H2O: 10 electrons, 7 molecular orbitals (minimal basis)
 - Bond breaking challenge: Strong correlation as O-H bond stretches
 - Active space for dissociation: 4 electrons in 4 orbitals (bonding/antibonding)
 - Qubit requirement: 8 qubits (Jordan-Wigner encoding)
 
 **Hamiltonian Construction**
+
 ```python
 from qiskit_nature.drivers import PySCFDriver
 
@@ -144,6 +150,7 @@ def build_h2o_hamiltonian(oh_distance):
 **VQE Implementation**
 
 **Ansatz Selection**
+
 ```
 Option 1: UCCSD (chemically motivated)
 - Single and double excitations from HF reference
@@ -159,6 +166,7 @@ Option 2: Hardware-Efficient Ansatz
 ```
 
 **Optimization Strategy**
+
 ```python
 optimizer_sequence = [
     ('COBYLA', {'maxiter': 100}),   # Coarse global search
@@ -173,6 +181,7 @@ error_mitigation = ZNE(noise_amplification=[1, 1.5, 2])
 ```
 
 **Potential Energy Surface Calculation**
+
 ```
 PES Scan Protocol:
 - O-H distance range: 0.8 to 3.0 Angstrom (20 points)
@@ -186,6 +195,7 @@ PES Scan Protocol:
 **Validation Framework**
 
 **Classical Reference Methods**
+
 - Hartree-Fock: Baseline (no correlation)
 - CCSD: Good for equilibrium, fails at dissociation
 - CCSD(T): Gold standard target
@@ -193,12 +203,14 @@ PES Scan Protocol:
 - CASSCF(4,4): Multi-reference comparison
 
 **Accuracy Metrics**
+
 - Mean absolute error vs CCSD(T) across PES
 - Barrier height error for reaction profile
 - Equilibrium geometry deviation
 - Dissociation energy accuracy
 
 **Resource Analysis**
+
 ```
 Current hardware (27 qubits):
 - Active space 4e/4o: 8 qubits - FEASIBLE
@@ -215,6 +227,7 @@ Shot budget:
 ```
 
 **Quantum Advantage Assessment**
+
 - H2O specifically: No quantum advantage (classically tractable)
 - Value: Validation testbed for larger systems
 - Target for advantage: 50+ qubit active spaces (Fe-S clusters, enzyme active sites)
@@ -223,6 +236,7 @@ Shot budget:
 ---
 
 ## Related Prompts
+
 - [Quantum Algorithm Development Expert](../quantum-algorithm-development-expert.md)
 - [Quantum Hardware Characterization Expert](../quantum-hardware-characterization-expert.md)
 - [Quantum Optimization Algorithm Design](../quantum-optimization/quantum-optimization-algorithm-design.md)

@@ -1,6 +1,7 @@
 # Protein Structure Prediction and Molecular Modeling
 
 ## Metadata
+
 - **ID**: `biotechnology-protein-structure-prediction`
 - **Version**: 2.0.0
 - **Category**: Biotechnology/Bioinformatics
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-01
 
 ## Overview
+
 Designs protein structure prediction and molecular modeling workflows for drug discovery and structural biology research. Integrates AI-based structure prediction (AlphaFold2, ESMFold) with molecular dynamics simulations and drug-target interaction analysis for therapeutic development.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Predicting structures for novel drug target proteins lacking experimental data
 - Modeling protein-ligand interactions for virtual screening
 - Analyzing binding sites and druggability assessment
@@ -23,6 +27,7 @@ Designs protein structure prediction and molecular modeling workflows for drug d
 - Preparing receptor structures for structure-based drug discovery
 
 **Anti-patterns (Don't Use For):**
+
 - Basic sequence analysis without structural context
 - Experimental structure determination planning (X-ray, cryo-EM)
 - Clinical applications requiring experimentally validated structures
@@ -101,18 +106,22 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 Need to model a novel GPCR target for CNS drug discovery. Have human sequence (400 residues, Class A GPCR), no experimental structure available. Closest homolog has 35% identity (crystal structure exists). Want to understand: orthosteric binding site, allosteric sites, receptor activation mechanism. Plan to use models for virtual screening and lead optimization. Need high confidence in binding site residues.
 
 ### Output
+
 **GPCR Structure Modeling: CNS Drug Discovery Target**
 
 **Target Assessment**
+
 - Sequence: 400 residues, Class A GPCR (rhodopsin-like)
 - Best template: 35% sequence identity
 - TM helix prediction: 7 confirmed via TMHMM
 - Disordered regions: N-terminus (1-30), ICL3 (220-280) - exclude from binding analysis
 
 **AlphaFold2 Confidence Expectations**
+
 - TM helices: pLDDT >85 (high confidence, suitable for docking)
 - Binding pocket: pLDDT >75 (good confidence, validate key residues)
 - Loop regions: pLDDT 50-70 (use MD for refinement)
@@ -131,16 +140,19 @@ Orthosteric site: FPocket cavity detection, SiteMap druggability scoring. Expect
 Ensemble docking using 5 representative conformations from MD clustering. Glide workflow: HTVS (1M to 100K), SP (100K to 10K), XP (10K to 1K), MM-GBSA rescoring top 500.
 
 **Confidence for Drug Design**
+
 - High (use directly): TM backbone, conserved binding residues, H-bonding capacity
 - Moderate (MD-validated): Loop conformations, side chain orientations
 - Low (treat cautiously): N/C-termini, ICL3, induced-fit poses
 
 **Deliverables**
+
 1. Refined PDB model, 2. Binding site report, 3. Druggability assessment, 4. MD trajectory files, 5. VS-ready receptor grids, 6. PyMOL sessions for figures
 
 ---
 
 ## Related Prompts
+
 - [AI Drug Discovery Expert](../ai-powered-drug-discovery-optimization-expert.md) - Virtual screening workflows
 - [Systems Biology Network Analysis](systems-biology-network-analysis.md) - Target identification
 - [Genomic Sequence Analysis](genomic-sequence-analysis-pipeline.md) - Variant impact on structure

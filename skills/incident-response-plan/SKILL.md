@@ -334,30 +334,28 @@ if __name__ == '__main__':
 
 ```javascript
 // incident-detector.js
-const winston = require('winston');
-const axios = require('axios');
+const winston = require("winston");
+const axios = require("axios");
 
 class IncidentDetector {
   constructor() {
     this.logger = winston.createLogger({
-      level: 'info',
+      level: "info",
       format: winston.format.json(),
-      transports: [
-        new winston.transports.File({ filename: 'incidents.log' })
-      ]
+      transports: [new winston.transports.File({ filename: "incidents.log" })],
     });
 
     this.thresholds = {
       failedLogins: 5,
       timeWindow: 300000, // 5 minutes
       errorRate: 0.1, // 10%
-      responseTime: 5000 // 5 seconds
+      responseTime: 5000, // 5 seconds
     };
 
     this.metrics = {
       failedLogins: new Map(),
       errors: 0,
-      requests: 0
+      requests: 0,
     };
   }
 
@@ -377,19 +375,19 @@ class IncidentDetector {
 
     // Clean old attempts
     const validAttempts = attempts.filter(
-      time => now - time < this.thresholds.timeWindow
+      (time) => now - time < this.thresholds.timeWindow,
     );
 
     this.metrics.failedLogins.set(key, validAttempts);
 
     if (validAttempts.length >= this.thresholds.failedLogins) {
       this.createIncident({
-        type: 'brute_force_attack',
-        severity: 'high',
+        type: "brute_force_attack",
+        severity: "high",
         description: `Brute force detected: ${validAttempts.length} failed attempts`,
         source: ip,
         target: username,
-        indicators: validAttempts.map(t => new Date(t).toISOString())
+        indicators: validAttempts.map((t) => new Date(t).toISOString()),
       });
 
       return true;
@@ -407,28 +405,28 @@ class IncidentDetector {
     // Unusual time access
     const hour = new Date().getHours();
     if (hour < 6 || hour > 22) {
-      anomalies.push('Access during unusual hours');
+      anomalies.push("Access during unusual hours");
     }
 
     // Unusual location
-    if (metadata.country && metadata.country !== 'US') {
+    if (metadata.country && metadata.country !== "US") {
       anomalies.push(`Access from unexpected location: ${metadata.country}`);
     }
 
     // Privilege escalation attempt
-    if (action.includes('admin') && !metadata.isAdmin) {
-      anomalies.push('Privilege escalation attempt');
+    if (action.includes("admin") && !metadata.isAdmin) {
+      anomalies.push("Privilege escalation attempt");
     }
 
     if (anomalies.length > 0) {
       this.createIncident({
-        type: 'anomalous_behavior',
-        severity: 'medium',
+        type: "anomalous_behavior",
+        severity: "medium",
         description: `Suspicious activity detected for user ${userId}`,
         anomalies,
         userId,
         action,
-        metadata
+        metadata,
       });
 
       return true;
@@ -446,12 +444,12 @@ class IncidentDetector {
 
     if (downloadSize > sizeThreshold || filesAccessed > filesThreshold) {
       this.createIncident({
-        type: 'data_exfiltration',
-        severity: 'critical',
-        description: 'Potential data exfiltration detected',
+        type: "data_exfiltration",
+        severity: "critical",
+        description: "Potential data exfiltration detected",
         userId,
         downloadSize: `${(downloadSize / 1024 / 1024).toFixed(2)} MB`,
-        filesAccessed
+        filesAccessed,
       });
 
       return true;
@@ -469,10 +467,10 @@ class IncidentDetector {
     const fullIncident = {
       id: incidentId,
       timestamp: new Date().toISOString(),
-      ...incident
+      ...incident,
     };
 
-    this.logger.error('Security incident detected', fullIncident);
+    this.logger.error("Security incident detected", fullIncident);
 
     // Send to SIEM/monitoring system
     this.sendToSIEM(fullIncident);
@@ -493,19 +491,19 @@ class IncidentDetector {
     console.log(`\n🚨 Automated response for ${incident.type}`);
 
     switch (incident.type) {
-      case 'brute_force_attack':
+      case "brute_force_attack":
         // Block IP address
         console.log(`Blocking IP: ${incident.source}`);
         // await this.blockIP(incident.source);
         break;
 
-      case 'data_exfiltration':
+      case "data_exfiltration":
         // Disable user account
         console.log(`Disabling account: ${incident.userId}`);
         // await this.disableAccount(incident.userId);
         break;
 
-      case 'anomalous_behavior':
+      case "anomalous_behavior":
         // Require MFA
         console.log(`Requiring MFA for: ${incident.userId}`);
         // await this.requireMFA(incident.userId);
@@ -518,9 +516,9 @@ class IncidentDetector {
    */
   async sendToSIEM(incident) {
     try {
-      await axios.post('https://siem.example.com/api/incidents', incident);
+      await axios.post("https://siem.example.com/api/incidents", incident);
     } catch (error) {
-      console.error('Failed to send to SIEM:', error.message);
+      console.error("Failed to send to SIEM:", error.message);
     }
   }
 
@@ -534,20 +532,22 @@ class IncidentDetector {
 
     const message = {
       text: `🚨 Security Incident: ${incident.type}`,
-      attachments: [{
-        color: incident.severity === 'critical' ? 'danger' : 'warning',
-        fields: [
-          { title: 'Incident ID', value: incident.id, short: true },
-          { title: 'Severity', value: incident.severity, short: true },
-          { title: 'Description', value: incident.description }
-        ]
-      }]
+      attachments: [
+        {
+          color: incident.severity === "critical" ? "danger" : "warning",
+          fields: [
+            { title: "Incident ID", value: incident.id, short: true },
+            { title: "Severity", value: incident.severity, short: true },
+            { title: "Description", value: incident.description },
+          ],
+        },
+      ],
     };
 
     try {
       await axios.post(webhookUrl, message);
     } catch (error) {
-      console.error('Failed to send notification:', error.message);
+      console.error("Failed to send notification:", error.message);
     }
   }
 }
@@ -556,14 +556,14 @@ class IncidentDetector {
 const detector = new IncidentDetector();
 
 // Simulate brute force detection
-detector.detectBruteForce('admin', '192.168.1.100');
-detector.detectBruteForce('admin', '192.168.1.100');
-detector.detectBruteForce('admin', '192.168.1.100');
-detector.detectBruteForce('admin', '192.168.1.100');
-detector.detectBruteForce('admin', '192.168.1.100');
+detector.detectBruteForce("admin", "192.168.1.100");
+detector.detectBruteForce("admin", "192.168.1.100");
+detector.detectBruteForce("admin", "192.168.1.100");
+detector.detectBruteForce("admin", "192.168.1.100");
+detector.detectBruteForce("admin", "192.168.1.100");
 
 // Simulate data exfiltration
-detector.detectDataExfiltration('user123', 150 * 1024 * 1024, 75);
+detector.detectDataExfiltration("user123", 150 * 1024 * 1024, 75);
 
 module.exports = IncidentDetector;
 ```
@@ -571,6 +571,7 @@ module.exports = IncidentDetector;
 ## Best Practices
 
 ### ✅ DO
+
 - Maintain incident response plan
 - Define clear escalation paths
 - Practice incident drills
@@ -581,6 +582,7 @@ module.exports = IncidentDetector;
 - Update playbooks regularly
 
 ### ❌ DON'T
+
 - Panic or rush
 - Delete evidence
 - Skip documentation

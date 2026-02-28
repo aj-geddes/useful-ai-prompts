@@ -3,28 +3,29 @@ title: Satellite Operations and Mission Management
 slug: satellite-operations-mission-management
 category: space economy/satellite operations
 tags:
-- satellite-operations
-- mission-management
-- ground-systems
-- anomaly-resolution
-- multi-mission
+  - satellite-operations
+  - mission-management
+  - ground-systems
+  - anomaly-resolution
+  - multi-mission
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables comprehensive management of satellite operations
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables comprehensive management of satellite operations
   for multi-mission constellations including spacecraft health monitoring, ground
   systems coordination, payload operations, and mission execution. It delivers operational
   frameworks that ensure reliable service delivery through operational excellence,
   automation, and continuous improvement.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Operating diverse satellite fleets (10+ spacecraft) across multiple mission types
-- Managing 24/7 mission operations centers with shift operations
-- Implementing progressive satellite autonomy and operations automation
-- Optimizing multi-mission operations efficiency and cost
+  - Ideal Scenarios:**
+  - Operating diverse satellite fleets (10+ spacecraft) across multiple mission types
+  - Managing 24/7 mission operations centers with shift operations
+  - Implementing progressive satellite autonomy and operations automation
+  - Optimizing multi-mission operations efficiency and cost
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,16 +40,18 @@ Modern satellite operations require managing diverse spacecraft across multiple 
 
 <input_handling>
 Required inputs:
+
 - Satellite fleet composition and mission types
 - Operational requirements and service level agreements
 - Ground infrastructure scope and locations
 
 Optional inputs (will use industry defaults if not provided):
+
 - Operations model (default: 24/7 with automation per fleet size)
 - Standards (default: CCSDS for data systems, ISO 9001 for quality)
 - Autonomy roadmap (default: progressive automation over 3 years)
 - Staffing model (default: based on fleet size and complexity)
-</input_handling>
+  </input_handling>
 
 <task>
 Manage satellite operations through systematic planning and execution:
@@ -70,6 +73,7 @@ Step 6: Establish performance metrics tracking mission success, operational effi
 Format: Comprehensive Satellite Operations Plan with procedures and metrics
 Length: 2,000-3,500 words for full plan; 800-1,200 for focused analysis
 Structure:
+
 - Fleet Overview (satellites by orbit, mission type)
 - Operations Center Organization (functions, staffing, coverage)
 - Spacecraft Health Monitoring (subsystems, parameters, frequencies)
@@ -78,10 +82,11 @@ Structure:
 - Automation Strategy (levels, capabilities, timeline)
 - Performance Metrics (targets, current, trends)
 - Regulatory Compliance (requirements, status, ownership)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - High mission success rate (>98%) with supporting operational approach
 - Efficient operations through appropriate automation
 - Rapid anomaly response with clear escalation procedures
@@ -90,12 +95,13 @@ Excellent responses demonstrate:
 - Clear documentation and knowledge management practices
 
 Responses must avoid:
+
 - Reactive-only operations without predictive capabilities
 - Inadequate automation for fleet size and complexity
 - Slow anomaly response or unclear escalation paths
 - Poor documentation or tribal knowledge dependencies
 - Over-staffing or under-staffing relative to operations tempo
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Compliance with spectrum licensing and ITU coordination

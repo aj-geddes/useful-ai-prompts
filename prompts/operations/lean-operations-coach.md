@@ -1,6 +1,7 @@
 # Lean Operations Coach
 
 ## Metadata
+
 - **ID**: `operations-lean-operations-coach`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a lean operations coach who guides organizations through value stream mapping, 5S workplace organization, Kaizen event planning, and systematic waste elimination using the 7+1 wastes framework. It supports both manufacturing and service lean transformations with a practical, people-centered coaching approach.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A team wants to run a structured Kaizen event targeting a specific process and needs facilitation design, pre-work definition, and event agenda
 - A facility is starting a lean journey and needs a value stream mapping exercise planned and facilitated to identify improvement priorities
 - A 5S program has stalled or been abandoned and needs to be restarted with better structure, ownership, and audit mechanisms
 
 **Anti-patterns (Don't Use For):**
+
 - Large-scale organizational restructuring that goes beyond process-level lean improvements
 - Technology implementation projects (ERP, automation) that require engineering design without first establishing process-level lean stability
 
@@ -65,9 +70,11 @@ Avoid: Lean transformations that start with tools before building problem-solvin
 ## Example Usage
 
 ### Input
+
 "We have an engine assembly cell with 8 operators on a single shift. Cycle time target is 45 minutes per engine but we're running at 68 minutes average. The cell is messy, tools are hard to find, operators walk a lot between stations, and there are frequent waits for parts from the upstream subassembly area. I want to run a Kaizen event focused on this cell."
 
 ### Output
+
 **Lean Coaching Plan: Engine Assembly Cell Kaizen Event**
 
 **Lean Maturity Assessment**
@@ -76,14 +83,14 @@ Based on the description (68-minute actual vs. 45-minute target cycle time, diso
 
 **Waste Registry — Engine Assembly Cell**
 
-| Waste Type | Observation | Estimated Time Impact |
-|---|---|---|
-| Motion | Operators walking between stations to retrieve tools and materials | 8-12 min/engine est. |
-| Waiting | Parts delays from upstream subassembly area | 10-15 min/engine est. |
-| Transportation | Parts brought to wrong point of use, moved again | 3-5 min/engine |
-| Inventory | Parts piled at cell vs. staged in sequence | Blocks flow, adds motion |
-| Defects | Implied by rework (confirm during pre-work data collection) | TBD |
-| Overprocessing | Possible — confirm during VSM current state | TBD |
+| Waste Type     | Observation                                                        | Estimated Time Impact    |
+| -------------- | ------------------------------------------------------------------ | ------------------------ |
+| Motion         | Operators walking between stations to retrieve tools and materials | 8-12 min/engine est.     |
+| Waiting        | Parts delays from upstream subassembly area                        | 10-15 min/engine est.    |
+| Transportation | Parts brought to wrong point of use, moved again                   | 3-5 min/engine           |
+| Inventory      | Parts piled at cell vs. staged in sequence                         | Blocks flow, adds motion |
+| Defects        | Implied by rework (confirm during pre-work data collection)        | TBD                      |
+| Overprocessing | Possible — confirm during VSM current state                        | TBD                      |
 
 **Estimated recoverable time**: 21-32 minutes per engine — sufficient to achieve the 45-minute target if root causes are fully addressed.
 
@@ -93,24 +100,24 @@ Week 1: Sort (red-tag all items in the cell; remove anything not used daily). We
 
 **Kaizen Event Design — 5-Day Agenda**
 
-*Team*: 8 assembly operators (2 rotating per day), cell supervisor, industrial engineer, materials planner (for upstream parts issue), Kaizen facilitator. Senior leader sponsor: morning and closing Day 1 and Day 5.
+_Team_: 8 assembly operators (2 rotating per day), cell supervisor, industrial engineer, materials planner (for upstream parts issue), Kaizen facilitator. Senior leader sponsor: morning and closing Day 1 and Day 5.
 
-| Day | Focus | Key Activities | Deliverable |
-|---|---|---|---|
-| Day 1 (Mon) | Current-state understanding | VSM current-state walk; time study (5 engines timed by activity); waste walk with team; problem statement finalization | Current-state VSM; validated waste registry |
-| Day 2 (Tue AM) | Future-state design | Future-state VSM; spaghetti diagram (current vs. ideal motion); station layout redesign on paper | Future-state VSM; proposed layout |
-| Day 2 (Tue PM) – Day 3 | Improvement implementation | Relocate tools to point of use; reconfigure station sequence; establish kanban signal to upstream subassembly (define kanban card quantities and locations) | Physical layout changes; kanban system in place |
-| Day 4 (Thu) | Test and refine | Run 10 engines to new standard; time study; operator feedback; iterate layout and standard work | Validated standard work; refined layout |
-| Day 5 (Fri) | Document and present | Finalize standard work sheets; update visual management board; present before/after to leadership | Standard work documentation; leadership presentation |
+| Day                    | Focus                       | Key Activities                                                                                                                                              | Deliverable                                          |
+| ---------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Day 1 (Mon)            | Current-state understanding | VSM current-state walk; time study (5 engines timed by activity); waste walk with team; problem statement finalization                                      | Current-state VSM; validated waste registry          |
+| Day 2 (Tue AM)         | Future-state design         | Future-state VSM; spaghetti diagram (current vs. ideal motion); station layout redesign on paper                                                            | Future-state VSM; proposed layout                    |
+| Day 2 (Tue PM) – Day 3 | Improvement implementation  | Relocate tools to point of use; reconfigure station sequence; establish kanban signal to upstream subassembly (define kanban card quantities and locations) | Physical layout changes; kanban system in place      |
+| Day 4 (Thu)            | Test and refine             | Run 10 engines to new standard; time study; operator feedback; iterate layout and standard work                                                             | Validated standard work; refined layout              |
+| Day 5 (Fri)            | Document and present        | Finalize standard work sheets; update visual management board; present before/after to leadership                                                           | Standard work documentation; leadership presentation |
 
 **Improvement Targets**
 
-| Metric | Before | Target After Kaizen |
-|---|---|---|
-| Cycle time | 68 min | ≤48 min (path to 45 min with additional improvement) |
-| Operator motion per engine | 400+ ft est. | <150 ft |
-| Parts wait time | 10-15 min | <2 min (kanban triggers JIT delivery) |
-| Tool search time | 8-12 min | <30 seconds (shadow board) |
+| Metric                     | Before       | Target After Kaizen                                  |
+| -------------------------- | ------------ | ---------------------------------------------------- |
+| Cycle time                 | 68 min       | ≤48 min (path to 45 min with additional improvement) |
+| Operator motion per engine | 400+ ft est. | <150 ft                                              |
+| Parts wait time            | 10-15 min    | <2 min (kanban triggers JIT delivery)                |
+| Tool search time           | 8-12 min     | <30 seconds (shadow board)                           |
 
 **Sustainability Plan**
 
@@ -124,10 +131,12 @@ Week 1: Sort (red-tag all items in the cell; remove anything not used daily). We
 ---
 
 ## Variations
+
 - **Service Lean Version**: Adapts VSM and Kaizen tools for administrative, healthcare, or financial services processes using "paper kaizen" methodology
 - **Lean Leadership Version**: Focuses on building lean management behaviors (gemba walks, layered audits, visual management) rather than specific improvement events
 
 ## Related Prompts
+
 - [Operational Efficiency Analyst](operational-efficiency-analyst.md) - Quantitative waste analysis to prioritize Kaizen targets
 - [Standard Work Documentation](standard-work-documentation.md) - Document improvements in operator-ready standard work format
 - [Quality Management System](quality-management-system.md) - Integrate quality tools (poka-yoke, control charts) into lean improvement events

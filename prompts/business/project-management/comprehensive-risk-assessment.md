@@ -1,6 +1,7 @@
 # Comprehensive Risk Assessment Expert
 
 ## Metadata
+
 - **ID**: `business-comprehensive-risk-assessment`
 - **Version**: 1.0.0
 - **Category**: Business/Project-Management
@@ -18,12 +19,14 @@ Identifies, analyzes, and mitigates project risks through systematic assessment,
 ## When to Use
 
 **Scenarios:**
+
 - Starting complex projects with significant investment or visibility
 - Managing projects in regulated or compliance-heavy environments
 - Recovering troubled projects with multiple active risks
 - Building risk management capabilities for a PMO
 
 **Anti-patterns:**
+
 - Routine task management or status reporting
 - Simple projects with well-understood scope
 - Operational issues requiring immediate action (not proactive planning)
@@ -111,6 +114,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Software development project - mobile banking app for regional bank. 9-month timeline, $3M budget, team of 20 (mix of internal and contractors). Key stakeholders: CEO, CFO, Head of Digital, Compliance Officer, IT Security Director. Just finished design phase, starting development. Known concerns: integration with legacy core banking system (20 years old), regulatory approval for mobile banking features, user adoption post-launch. Must be PCI-DSS compliant. Low risk tolerance - banking app must be secure and reliable."
 
 ### Output
@@ -118,6 +122,7 @@ Outputs must avoid:
 ## RISK IDENTIFICATION
 
 ### Technical Risks
+
 1. Legacy system integration complexity exceeds estimates
 2. API performance issues under production load
 3. Security vulnerabilities discovered during testing
@@ -125,18 +130,21 @@ Outputs must avoid:
 5. Third-party service dependencies (push notifications, SMS, biometrics)
 
 ### Regulatory & Compliance Risks
+
 6. PCI-DSS certification delays or failures
 7. New banking regulations enacted mid-project
 8. Data privacy violations during development/testing
 9. Regulatory approval delays for mobile banking features
 
 ### Resource & Schedule Risks
+
 10. Key developer turnover causing knowledge loss
 11. QA bottleneck due to security testing requirements
 12. Scope creep from stakeholder requests
 13. Sprint velocity lower than planned estimates
 
 ### Business & Market Risks
+
 14. Competitor launches similar app first
 15. User adoption below targets post-launch
 16. Reputational damage from security or reliability issues
@@ -156,114 +164,135 @@ Low    |          |           |          |          |
 ## TOP 10 RISKS WITH MITIGATION
 
 ### Risk 1: Legacy System Integration (Score: 25 - Critical)
+
 **Description:** Core banking API documentation is incomplete; integration may take 50-100% longer than estimated
 **Probability:** High (80%) | **Impact:** High (business-critical path)
 **Owner:** Technical Lead
 
 **Mitigation:**
+
 - Assign dedicated integration team (2 senior developers)
 - Create detailed API mapping document in Week 1
 - Build abstraction layer to isolate legacy dependencies
 - Begin integration testing from Sprint 2 (not Sprint 8)
 
 **Contingency:**
+
 - Pre-approved budget ($100K) for legacy system consultant
 - Parallel development of mock services for team unblocking
 - Phased rollout option: core features first, advanced later
 
 ### Risk 2: Security Vulnerabilities (Score: 25 - Critical)
+
 **Description:** Critical security issues discovered late requiring significant rework
 **Probability:** High (70%) | **Impact:** High (launch blocker, reputation)
 **Owner:** Security Architect
 
 **Mitigation:**
+
 - Security-first development training for all developers (Week 1)
 - Automated SAST/DAST scanning integrated in CI/CD pipeline
 - Weekly security code reviews (not end-of-project)
 - External penetration testing at Sprints 5, 10, and 14
 
 **Contingency:**
+
 - Pre-negotiated security consultant on 48-hour standby
 - 48-hour fix SLA for critical vulnerabilities in contracts
 - Launch delay authority pre-approved for critical findings
 
 ### Risk 3: Regulatory Approval Delays (Score: 25 - Critical)
+
 **Description:** Banking regulator requires changes or extended review period
 **Probability:** High (60%) | **Impact:** High (launch blocker)
 **Owner:** Compliance Officer
 
 **Mitigation:**
+
 - Early engagement with regulator (this week, not post-development)
 - Monthly compliance checkpoints against submission requirements
 - Regulatory liaison assigned 50% to project
 - Pre-submission reviews scheduled at Sprints 5 and 10
 
 **Contingency:**
+
 - Fast-track application process available ($50K fee)
 - Phased regulatory approval for core features first
 - Alternative launch markets if primary delayed
 
 ### Risk 4: Scope Creep (Score: 20 - High)
+
 **Description:** Stakeholder requests add unplanned features during development
 **Owner:** Project Manager
 
 **Mitigation:**
+
 - Change control board with weekly review cycle
 - Scope freeze after Sprint 4 design completion
 - Feature request backlog for Phase 2
 - Stakeholder expectation setting in kickoff
 
 **Contingency:**
+
 - 15% schedule buffer built into timeline
 - Pre-approved overtime budget ($50K)
 
 ### Risk 5: Sprint Velocity Below Plan (Score: 20 - High)
+
 **Description:** Team delivers less than planned due to complexity or learning curve
 **Owner:** Scrum Master
 
 **Mitigation:**
+
 - Establish velocity baseline in Sprints 1-2 before committing
 - Buffer 20% on initial estimates
 - Weekly velocity tracking with early warning at -15%
 - Cross-training to reduce single points of failure
 
 **Contingency:**
+
 - Contractor augmentation pre-qualified (2-week activation)
 - Scope reduction options identified and prioritized
 
 ### Risk 6: PCI-DSS Certification Delays (Score: 20 - High)
+
 **Description:** Assessment reveals gaps requiring remediation before certification
 **Owner:** IT Security Director
 
 **Mitigation:**
+
 - Pre-assessment gap analysis in Month 1
 - PCI requirements integrated into Definition of Done
 - Quarterly readiness assessments during development
 - Dedicated PCI documentation owner
 
 **Contingency:**
+
 - Remediation budget reserved ($75K)
 - Extended timeline for certification-only work
 
 ## MONITORING FRAMEWORK
 
 ### Automated Triggers (Immediate Alert)
-| Trigger | Threshold | Response |
-|---------|-----------|----------|
-| Integration API response | >2 seconds | Technical escalation |
-| Security scan | Critical vulnerability | Stop and fix |
-| Sprint velocity | <30 points (vs 40 target) | PM review |
-| Compliance requirement | Any change | Compliance review |
-| Team member | Resignation | Knowledge transfer plan |
-| Budget overrun | >10% in category | Finance review |
+
+| Trigger                  | Threshold                 | Response                |
+| ------------------------ | ------------------------- | ----------------------- |
+| Integration API response | >2 seconds                | Technical escalation    |
+| Security scan            | Critical vulnerability    | Stop and fix            |
+| Sprint velocity          | <30 points (vs 40 target) | PM review               |
+| Compliance requirement   | Any change                | Compliance review       |
+| Team member              | Resignation               | Knowledge transfer plan |
+| Budget overrun           | >10% in category          | Finance review          |
 
 ### Review Cadence
+
 - **Daily:** Development team standup (technical risks)
 - **Weekly:** Project team risk review (all risks, 30 min)
 - **Bi-weekly:** Stakeholder committee (top 10 risks)
 - **Monthly:** Executive briefing (critical risks + budget)
 
 ### Go/No-Go Criteria (Sprint 5 Checkpoint)
+
 - Integration POC with core banking successful
 - Security scan shows <10 medium issues, 0 critical
 - Compliance pre-approval obtained from regulator
@@ -273,24 +302,27 @@ Low    |          |           |          |          |
 ## GOVERNANCE STRUCTURE
 
 ### Contingency Budget Allocation
-| Category | Reserve | Purpose |
-|----------|---------|---------|
-| Technical | $200K | Integration, performance, security |
-| Compliance | $100K | Certification, regulatory remediation |
-| Resources | $100K | Contractor augmentation |
-| Unallocated | $50K | Emerging risks |
-| **Total Reserve** | **$450K (15%)** | |
+
+| Category          | Reserve         | Purpose                               |
+| ----------------- | --------------- | ------------------------------------- |
+| Technical         | $200K           | Integration, performance, security    |
+| Compliance        | $100K           | Certification, regulatory remediation |
+| Resources         | $100K           | Contractor augmentation               |
+| Unallocated       | $50K            | Emerging risks                        |
+| **Total Reserve** | **$450K (15%)** |                                       |
 
 ### Communication Plan
-| Stakeholder | Frequency | Content | Owner |
-|-------------|-----------|---------|-------|
-| CEO | Monthly | Executive summary, critical risks | PM |
-| CFO | Bi-weekly | Budget risk report, contingency usage | PM |
-| Compliance Officer | Weekly | Regulatory risk status | Compliance Lead |
-| IT Security Director | Weekly | Security risk dashboard | Security Architect |
-| Development Team | Daily | Active risk visibility in standups | Scrum Master |
+
+| Stakeholder          | Frequency | Content                               | Owner              |
+| -------------------- | --------- | ------------------------------------- | ------------------ |
+| CEO                  | Monthly   | Executive summary, critical risks     | PM                 |
+| CFO                  | Bi-weekly | Budget risk report, contingency usage | PM                 |
+| Compliance Officer   | Weekly    | Regulatory risk status                | Compliance Lead    |
+| IT Security Director | Weekly    | Security risk dashboard               | Security Architect |
+| Development Team     | Daily     | Active risk visibility in standups    | Scrum Master       |
 
 ### Decision Authority
+
 - Risk mitigation <$25K: Project Manager
 - Risk mitigation $25K-$100K: Steering Committee
 - Launch delay decision: CEO with CFO consultation
@@ -298,5 +330,6 @@ Low    |          |           |          |          |
 ---
 
 ## Related Prompts
+
 - [Business Analyst Expert](../management/business-analyst-strategic-excellence.md) - Requirements risk analysis
 - [Process Optimization Expert](../operations/process-optimization-expert.md) - Process risk reduction

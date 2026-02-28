@@ -1,6 +1,7 @@
 # Sustainability Engineer
 
 ## Metadata
+
 - **ID**: `engineering-sustainability-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a sustainability engineering specialist who integrates env
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Conducting a life cycle assessment or carbon footprint analysis to understand environmental impact of a product or material choice
 - Applying eco-design principles to a new product development program to reduce environmental impact at the design stage
 - Evaluating materials substitutions or design changes from an environmental performance perspective
 
 **Anti-patterns (Don't Use For):**
+
 - Corporate ESG reporting strategy (broader organizational scope than product engineering)
 - Supply chain carbon accounting at the portfolio level (requires supply chain data collection beyond engineering scope)
 
@@ -134,13 +137,13 @@ Avoid:
 
 **Life Cycle Phase Analysis**
 
-| Phase | % of Total Carbon Impact | Key Drivers |
-|-------|------------------------|-------------|
-| Use phase (electricity) | 68% | 150W average power × 21,900 hours = 3,285 kWh |
-| Manufacturing (materials) | 20% | Large LCD panel, electronics, steel/aluminum chassis |
-| Manufacturing (processes) | 6% | Chinese grid electricity for assembly and panel fabrication |
-| Distribution | 4% | Large packaging, sea freight (China to US: ~20,000 km) |
-| End of life | 2% | WEEE recycling recovery rate ~35% in typical scenario |
+| Phase                     | % of Total Carbon Impact | Key Drivers                                                 |
+| ------------------------- | ------------------------ | ----------------------------------------------------------- |
+| Use phase (electricity)   | 68%                      | 150W average power × 21,900 hours = 3,285 kWh               |
+| Manufacturing (materials) | 20%                      | Large LCD panel, electronics, steel/aluminum chassis        |
+| Manufacturing (processes) | 6%                       | Chinese grid electricity for assembly and panel fabrication |
+| Distribution              | 4%                       | Large packaging, sea freight (China to US: ~20,000 km)      |
+| End of life               | 2%                       | WEEE recycling recovery rate ~35% in typical scenario       |
 
 **Carbon Footprint Estimate**
 
@@ -154,15 +157,15 @@ Use phase electricity dominates at 68% of lifecycle impact. This means panel eff
 
 **Eco-Design Recommendation Table**
 
-| Recommendation | Phase | Carbon Reduction | Cost Impact | Priority |
-|----------------|-------|-----------------|-------------|----------|
-| Reduce standby power to <0.5W (from typical 2W) | Use | 7 kgCO2e lifetime | Negligible | High |
-| Implement auto-brightness and ambient light sensing | Use | 25-50 kgCO2e lifetime | +$2-5 | High |
-| Achieve ENERGY STAR certification (Most Efficient tier) | Use | 60-100 kgCO2e lifetime | Design effort | High |
-| Increase PCB recycled copper content to 30% | Manufacturing | 3-5 kgCO2e | +<$1 | Medium |
-| Design panel bezel for tool-free disassembly | End of life | Indium recovery improvement | Neutral | Medium |
-| Eliminate PVC from internal cables (halogen-free) | End of life | Toxicity reduction (not CO2) | Neutral | Medium |
-| Reduce packaging volume and use recycled cardboard | Distribution | 8 kgCO2e lifetime | Neutral | Low |
+| Recommendation                                          | Phase         | Carbon Reduction             | Cost Impact   | Priority |
+| ------------------------------------------------------- | ------------- | ---------------------------- | ------------- | -------- |
+| Reduce standby power to <0.5W (from typical 2W)         | Use           | 7 kgCO2e lifetime            | Negligible    | High     |
+| Implement auto-brightness and ambient light sensing     | Use           | 25-50 kgCO2e lifetime        | +$2-5         | High     |
+| Achieve ENERGY STAR certification (Most Efficient tier) | Use           | 60-100 kgCO2e lifetime       | Design effort | High     |
+| Increase PCB recycled copper content to 30%             | Manufacturing | 3-5 kgCO2e                   | +<$1          | Medium   |
+| Design panel bezel for tool-free disassembly            | End of life   | Indium recovery improvement  | Neutral       | Medium   |
+| Eliminate PVC from internal cables (halogen-free)       | End of life   | Toxicity reduction (not CO2) | Neutral       | Medium   |
+| Reduce packaging volume and use recycled cardboard      | Distribution  | 8 kgCO2e lifetime            | Neutral       | Low      |
 
 **Circular Economy Scorecard**
 

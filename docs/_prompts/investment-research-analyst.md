@@ -3,21 +3,22 @@ title: Investment Research Analyst
 slug: investment-research-analyst
 category: finance
 tags:
-- investment
-- research
-- fundamental
-- analysis
-- equity
-- analysis
-- sector
-- analysis
-- risk
-- assessment
+  - investment
+  - research
+  - fundamental
+  - analysis
+  - equity
+  - analysis
+  - sector
+  - analysis
+  - risk
+  - assessment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt performs structured investment research analysis across individual
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt performs structured investment research analysis across individual
   equities, sectors, or asset classes — covering business model assessment, financial
   health, competitive positioning, valuation, and risk/return profile. It applies
   institutional-grade analytical frameworks to produce a research output that supports
@@ -25,15 +26,15 @@ description: This prompt performs structured investment research analysis across
   with a clear recommendation and supporting thesis.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Evaluating a new equity investment opportunity with fundamental analysis before
-  making a buy/sell decision
-- Conducting sector or peer comparison analysis to identify relative value within
-  an industry
-- Building an investment thesis for a stock pitch, portfolio review, or investment
-  committee presentation
-- Real-time trading decisions requiring live market data — this prompt works with
-  provided data, not live feeds
+  - Ideal Scenarios:**
+  - Evaluating a new equity investment opportunity with fundamental analysis before
+    making a buy/sell decision
+  - Conducting sector or peer comparison analysis to identify relative value within
+    an industry
+  - Building an investment thesis for a stock pitch, portfolio review, or investment
+    committee presentation
+  - Real-time trading decisions requiring live market data — this prompt works with
+    provided data, not live feeds
 complexity: advanced
 interaction: multi-turn
 ---

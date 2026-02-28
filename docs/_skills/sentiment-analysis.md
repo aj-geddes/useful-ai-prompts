@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Classify text sentiment using NLP techniques, lexicon-based analysis,
+date: "2025-01-01"
+description:
+  Classify text sentiment using NLP techniques, lexicon-based analysis,
   and machine learning for opinion mining, brand monitoring, and customer feedback
   analysis
 layout: skill
 slug: sentiment-analysis
 tags:
-- development
+  - development
 title: Sentiment Analysis
 ---
 

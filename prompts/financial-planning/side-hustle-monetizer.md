@@ -1,6 +1,7 @@
 # Side Hustle Monetizer
 
 ## Metadata
+
 - **ID**: `financial-side-hustle`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive side hustle strategist that identifies, develops, and monetizes 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Identifying side income opportunities based on existing skills and experience
 - Developing monetization strategies for hobbies or expertise areas
 - Creating additional income streams with limited weekly time availability
@@ -25,6 +27,7 @@ A comprehensive side hustle strategist that identifies, develops, and monetizes 
 - Recovering from failed side hustle attempts with new approach
 
 **Anti-patterns (when NOT to use):**
+
 - Get-rich-quick schemes or passive income without work claims
 - Multi-level marketing (MLM) evaluation or strategy
 - Illegal or gray-market income opportunities
@@ -117,6 +120,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I work full-time as a marketing manager earning $70,000/year. I want to earn an extra $1,000-1,500/month. I have 10-15 hours per week available, mostly evenings and weekends. My skills include digital marketing, content writing, social media management, and basic graphic design (Canva, not professional design software). I tried freelancing on Upwork once but could not find clients consistently. I strongly prefer work I can do from home.
 
 ### Output
@@ -137,7 +141,7 @@ Your marketing skills are highly monetizable with strong market demand. Your pre
 | Time to first income | 2-4 weeks |
 | Scalability | 2-3 clients = $1,000-2,250/month |
 
-*Why it works:* Local businesses desperately need social media help but cannot afford agencies ($2,000+/month). You can serve 2-3 clients within your time budget at rates that are premium for solopreneurs but affordable for businesses.
+_Why it works:_ Local businesses desperately need social media help but cannot afford agencies ($2,000+/month). You can serve 2-3 clients within your time budget at rates that are premium for solopreneurs but affordable for businesses.
 
 **2. Content Writing for Marketing Agencies**
 | Factor | Assessment |
@@ -147,7 +151,7 @@ Your marketing skills are highly monetizable with strong market demand. Your pre
 | Startup cost | Free |
 | Time to first income | 2-4 weeks |
 
-*Why it works:* Agencies need overflow writers who understand marketing context and SEO. Position as "marketing-savvy writer" rather than generic content writer.
+_Why it works:_ Agencies need overflow writers who understand marketing context and SEO. Position as "marketing-savvy writer" rather than generic content writer.
 
 **3. Digital Marketing Course Creation (Long-term)**
 | Factor | Assessment |
@@ -157,26 +161,30 @@ Your marketing skills are highly monetizable with strong market demand. Your pre
 | Startup cost | $0-200 (Udemy, Skillshare, or Teachable) |
 | Time to first income | 3-6 months |
 
-*Why it works:* Your expertise packaged once can sell repeatedly. Start after establishing #1 for steady income.
+_Why it works:_ Your expertise packaged once can sell repeatedly. Start after establishing #1 for steady income.
 
 **Implementation Plan: Social Media Management**
 
-*Week 1: Foundation*
+_Week 1: Foundation_
+
 - [ ] Create simple portfolio (3-5 sample posts, before/after mock-ups)
 - [ ] Define service package: 12 posts/month + engagement management
 - [ ] Set pricing: $500/month starter, $750 full-service
 
-*Week 2: Prospecting*
+_Week 2: Prospecting_
+
 - [ ] Identify 20 local businesses with weak social media presence
 - [ ] Research each business for personalization angles
 - [ ] Join 3-5 local business Facebook groups
 
-*Week 3: Outreach*
+_Week 3: Outreach_
+
 - [ ] Send personalized emails/DMs to 20 prospects
 - [ ] Offer free 15-minute social media audit calls
 - [ ] Post value content in local business groups
 
-*Week 4: Conversion*
+_Week 4: Conversion_
+
 - [ ] Conduct audit calls and present findings
 - [ ] Offer first month at 50% off to build testimonials
 - [ ] Close 1-2 initial clients
@@ -191,6 +199,7 @@ Your marketing skills are highly monetizable with strong market demand. Your pre
 | 6-12 | 3 + content writing | $1,800-2,500 |
 
 **Client Acquisition Strategy:**
+
 - **Primary**: Direct outreach to local businesses (restaurants, salons, professional services)
 - **Secondary**: Referrals from satisfied clients (offer referral bonus)
 - **Ongoing**: LinkedIn content demonstrating expertise
@@ -209,6 +218,7 @@ Your marketing skills are highly monetizable with strong market demand. Your pre
 ---
 
 ## Related Prompts
+
 - [Side Income Developer](side-income-developer.md) - Transition from active to passive income
 - [Personal Budget Optimizer](personal-budget-optimizer.md) - Allocate side income to financial goals
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Manage self-employment taxes

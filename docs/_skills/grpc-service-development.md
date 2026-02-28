@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Build high-performance gRPC services with Protocol Buffers, bidirectional
+date: "2025-01-01"
+description:
+  Build high-performance gRPC services with Protocol Buffers, bidirectional
   streaming, and microservice communication. Use when building gRPC servers, defining
   service contracts, or implementing inter-service communication.
 layout: skill
 slug: grpc-service-development
 tags:
-- development
+  - development
 title: grpc-service-development
 ---
 
@@ -106,14 +107,17 @@ service EventService {
 ### 2. **Node.js gRPC Server Implementation**
 
 ```javascript
-const grpc = require('@grpc/grpc-js');
-const protoLoader = require('@grpc/proto-loader');
-const path = require('path');
+const grpc = require("@grpc/grpc-js");
+const protoLoader = require("@grpc/proto-loader");
+const path = require("path");
 
-const packageDef = protoLoader.loadSync(
-  path.join(__dirname, 'user.proto'),
-  { keepCase: true, longs: String, enums: String, defaults: true, oneofs: true }
-);
+const packageDef = protoLoader.loadSync(path.join(__dirname, "user.proto"), {
+  keepCase: true,
+  longs: String,
+  enums: String,
+  defaults: true,
+  oneofs: true,
+});
 
 const userProto = grpc.loadPackageDefinition(packageDef).user.service;
 
@@ -124,7 +128,10 @@ const userServiceImpl = {
   getUser: (call, callback) => {
     const user = users.get(call.request.id);
     if (!user) {
-      return callback({ code: grpc.status.NOT_FOUND, details: 'User not found' });
+      return callback({
+        code: grpc.status.NOT_FOUND,
+        details: "User not found",
+      });
     }
     callback(null, user);
   },
@@ -140,7 +147,7 @@ const userServiceImpl = {
     callback(null, {
       users: paginatedUsers,
       total: userArray.length,
-      page: page
+      page: page,
     });
   },
 
@@ -153,7 +160,7 @@ const userServiceImpl = {
       last_name: call.request.last_name,
       role: call.request.role,
       created_at: Date.now(),
-      updated_at: Date.now()
+      updated_at: Date.now(),
     };
     users.set(id, user);
     callback(null, user);
@@ -162,14 +169,17 @@ const userServiceImpl = {
   updateUser: (call, callback) => {
     const user = users.get(call.request.id);
     if (!user) {
-      return callback({ code: grpc.status.NOT_FOUND, details: 'User not found' });
+      return callback({
+        code: grpc.status.NOT_FOUND,
+        details: "User not found",
+      });
     }
 
     Object.assign(user, {
       email: call.request.email || user.email,
       first_name: call.request.first_name || user.first_name,
       last_name: call.request.last_name || user.last_name,
-      updated_at: Date.now()
+      updated_at: Date.now(),
     });
 
     callback(null, user);
@@ -181,7 +191,7 @@ const userServiceImpl = {
   },
 
   streamUsers: (call) => {
-    Array.from(users.values()).forEach(user => {
+    Array.from(users.values()).forEach((user) => {
       call.write(user);
     });
     call.end();
@@ -190,7 +200,7 @@ const userServiceImpl = {
   bulkCreateUsers: (call, callback) => {
     const createdUsers = [];
 
-    call.on('data', (request) => {
+    call.on("data", (request) => {
       const id = String(userIdCounter++);
       const user = {
         id,
@@ -199,29 +209,37 @@ const userServiceImpl = {
         last_name: request.last_name,
         role: request.role,
         created_at: Date.now(),
-        updated_at: Date.now()
+        updated_at: Date.now(),
       };
       users.set(id, user);
       createdUsers.push(user);
     });
 
-    call.on('end', () => {
-      callback(null, { users: createdUsers, total: createdUsers.length, page: 1 });
+    call.on("end", () => {
+      callback(null, {
+        users: createdUsers,
+        total: createdUsers.length,
+        page: 1,
+      });
     });
 
-    call.on('error', (err) => {
+    call.on("error", (err) => {
       callback(err);
     });
-  }
+  },
 };
 
 const server = new grpc.Server();
 server.addService(userProto.UserService.service, userServiceImpl);
 
-server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), () => {
-  console.log('gRPC server running on port 50051');
-  server.start();
-});
+server.bindAsync(
+  "0.0.0.0:50051",
+  grpc.ServerCredentials.createInsecure(),
+  () => {
+    console.log("gRPC server running on port 50051");
+    server.start();
+  },
+);
 ```
 
 ### 3. **Python gRPC Server (grpcio)**
@@ -306,46 +324,56 @@ if __name__ == '__main__':
 ### 4. **Client Implementation**
 
 ```javascript
-const grpc = require('@grpc/grpc-js');
-const protoLoader = require('@grpc/proto-loader');
-const path = require('path');
+const grpc = require("@grpc/grpc-js");
+const protoLoader = require("@grpc/proto-loader");
+const path = require("path");
 
-const packageDef = protoLoader.loadSync(
-  path.join(__dirname, 'user.proto')
-);
+const packageDef = protoLoader.loadSync(path.join(__dirname, "user.proto"));
 
 const userProto = grpc.loadPackageDefinition(packageDef).user.service;
-const client = new userProto.UserService('localhost:50051', grpc.credentials.createInsecure());
+const client = new userProto.UserService(
+  "localhost:50051",
+  grpc.credentials.createInsecure(),
+);
 
 // Unary call
-client.getUser({ id: '123' }, (err, user) => {
+client.getUser({ id: "123" }, (err, user) => {
   if (err) console.error(err);
-  console.log('User:', user);
+  console.log("User:", user);
 });
 
 // Server streaming
 const stream = client.streamUsers({});
-stream.on('data', (user) => {
-  console.log('Received user:', user);
+stream.on("data", (user) => {
+  console.log("Received user:", user);
 });
-stream.on('end', () => {
-  console.log('Stream ended');
+stream.on("end", () => {
+  console.log("Stream ended");
 });
 
 // Client streaming
 const writeStream = client.bulkCreateUsers((err, response) => {
   if (err) console.error(err);
-  console.log('Created users:', response.users.length);
+  console.log("Created users:", response.users.length);
 });
 
-writeStream.write({ email: 'user1@example.com', first_name: 'John', last_name: 'Doe' });
-writeStream.write({ email: 'user2@example.com', first_name: 'Jane', last_name: 'Smith' });
+writeStream.write({
+  email: "user1@example.com",
+  first_name: "John",
+  last_name: "Doe",
+});
+writeStream.write({
+  email: "user2@example.com",
+  first_name: "Jane",
+  last_name: "Smith",
+});
 writeStream.end();
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use clear message and service naming
 - Implement proper error handling with gRPC status codes
 - Add metadata for logging and tracing
@@ -355,6 +383,7 @@ writeStream.end();
 - Monitor gRPC metrics
 
 ### ❌ DON'T
+
 - Use gRPC for browser-based clients (use gRPC-Web)
 - Expose sensitive data in proto definitions
 - Create deeply nested messages

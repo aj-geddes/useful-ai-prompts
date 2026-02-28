@@ -394,6 +394,7 @@ def create_partitioned_data_lake(source_file, bucket, format='parquet'):
 ## Best Practices
 
 ### ✅ DO
+
 - Use Parquet or ORC formats for analytics
 - Implement tiered storage strategy
 - Partition data by time and queryable dimensions
@@ -404,6 +405,7 @@ def create_partitioned_data_lake(source_file, bucket, format='parquet'):
 - Archive infrequently accessed data
 
 ### ❌ DON'T
+
 - Store uncompressed data
 - Keep raw logs long-term
 - Ignore storage optimization

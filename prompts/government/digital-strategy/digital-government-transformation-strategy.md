@@ -1,6 +1,7 @@
 # Digital Government Transformation Strategy
 
 ## Metadata
+
 - **ID**: `government-digital-strategy`
 - **Version**: 1.1.0
 - **Category**: Government/Digital-Strategy
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Helps government leaders develop comprehensive digital transformation strategies that modernize public service delivery, improve citizen experience, and optimize operations. Addresses the unique challenges of government transformation including procurement constraints, compliance requirements, workforce considerations, and democratic accountability. Provides actionable multi-year roadmaps aligned with budget cycles.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing government-wide digital transformation strategies
 - Creating multi-year technology modernization plans with phased investments
 - Designing citizen service improvement roadmaps
@@ -24,6 +27,7 @@ Helps government leaders develop comprehensive digital transformation strategies
 - Aligning technology investments with policy priorities
 
 **Anti-Patterns (Don't Use For):**
+
 - Specific vendor evaluation or product selection
 - Political campaign strategy or messaging
 - Legislative drafting or policy writing
@@ -140,9 +144,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 State government serving 8.5 million residents. Current state: Basic online presence (some forms digitized), mostly paper-based processes, 15-year average system age. Key services: DMV, tax collection, professional licensing, social services, healthcare enrollment. Annual budget: $2.8B general fund, $180M IT spend (mostly maintenance). Goals: 80% services online in 24 months, 50% transaction cost reduction. Constraints: Legacy mainframes (COBOL), 65 IT staff, NIST/FISMA compliance required, state privacy law similar to CCPA.
 
 ### Output
+
 **State Digital Government Transformation Strategy**
 
 **Vision:** Deliver seamless, accessible digital services that put citizens first while modernizing government operations, reducing costs, and building a technology-enabled workforce for the future.
@@ -156,14 +162,15 @@ State government serving 8.5 million residents. Current state: Basic online pres
 
 **Citizen Service Transformation Priority:**
 
-*High-Impact Services (Phase 1 Focus):*
+_High-Impact Services (Phase 1 Focus):_
 | Service | Current Processing | Future Target | Citizen Impact |
 |---------|-------------------|---------------|----------------|
 | DMV renewals | 45 days, in-person | 24 hours, online | 2.1M transactions/year |
 | Business licensing | 90 days, paper | 10 days, digital | 180K businesses affected |
 | Social services apps | 30 days, office visit | 5 days, mobile | 400K vulnerable residents |
 
-*Digital Journey Transformation:*
+_Digital Journey Transformation:_
+
 ```
 Current: Research -> Visit Office -> Wait -> Submit Paper -> Wait -> Return -> Receive
 Future:  Discover Online -> Apply Digitally -> Track Progress -> Receive Digitally
@@ -171,40 +178,46 @@ Future:  Discover Online -> Apply Digitally -> Track Progress -> Receive Digital
 
 **Technology Architecture Blueprint:**
 
-*Cloud-First Infrastructure:*
+_Cloud-First Infrastructure:_
+
 - **Platform:** AWS GovCloud or Azure Government (FedRAMP High)
 - **Integration:** API gateway providing modern interfaces to legacy mainframes
 - **Identity:** Unified citizen identity with single sign-on across agencies
 - **Analytics:** Real-time operational dashboards and citizen behavior insights
 
-*Legacy Modernization Approach:*
+_Legacy Modernization Approach:_
+
 - Phase 1: API wrappers exposing critical mainframe functions
 - Phase 2: Microservice extraction for high-value business capabilities
 - Phase 3: Complete migration and mainframe retirement
 
 **Implementation Roadmap:**
 
-*Phase 1: Foundation (Months 1-6) - $60M*
+_Phase 1: Foundation (Months 1-6) - $60M_
+
 - Cloud platform and security infrastructure deployment
 - 2 priority services fully online (DMV renewal, address change)
 - Citizen identity platform pilot with 3 agencies
 - Staff digital skills training launch (40 hours/employee)
 - **Metrics:** 40% processing time reduction, 2 services online
 
-*Phase 2: Scale (Months 7-12) - $50M*
+_Phase 2: Scale (Months 7-12) - $50M_
+
 - 50% of high-volume services available online
 - Mobile application launch with biometric authentication
 - AI-powered chatbot for citizen support (24/7)
 - Cross-agency data sharing platform operational
 - **Metrics:** 60% digital adoption, 50% processing improvement
 
-*Phase 3: Advanced (Months 13-18) - $40M*
+_Phase 3: Advanced (Months 13-18) - $40M_
+
 - 75% of services online with full mobile support
 - Predictive service delivery (proactive notifications)
 - Legacy mainframe migration substantial progress
 - **Metrics:** 75% digital adoption, 60% cost reduction trajectory
 
-*Phase 4: Excellence (Months 19-24) - $30M*
+_Phase 4: Excellence (Months 19-24) - $30M_
+
 - 80%+ services fully digital with paper-free options
 - Proactive citizen engagement and personalization
 - Innovation lab for emerging technologies (AI, blockchain credentials)
@@ -212,19 +225,22 @@ Future:  Discover Online -> Apply Digitally -> Track Progress -> Receive Digital
 
 **Change Management Approach:**
 
-*Workforce Strategy:*
+_Workforce Strategy:_
+
 - No involuntary layoffs - reduction through attrition only
 - Comprehensive reskilling: 40 hours digital skills per employee
 - New career paths: Digital service specialists, UX designers, data analysts
 - Early union engagement with collaborative planning committee
 
-*Communication Plan:*
+_Communication Plan:_
+
 - Monthly all-staff updates from transformation office
 - Quarterly legislative briefings with progress metrics
 - Public dashboard showing transformation progress
 - Citizen advisory council providing experience feedback
 
 **Governance Structure:**
+
 - **Executive Steering Committee:** Strategic decisions, resource allocation (monthly)
 - **Digital Transformation Office:** Day-to-day program management, vendor coordination
 - **Technical Architecture Board:** Standards, security, interoperability decisions
@@ -232,18 +248,19 @@ Future:  Discover Online -> Apply Digitally -> Track Progress -> Receive Digital
 
 **Success Metrics:**
 
-| Metric | Baseline | Year 2 Target |
-|--------|----------|---------------|
-| Service completion rate online | 35% | 95%+ |
-| Processing time | 100% baseline | 30% of baseline (70% reduction) |
-| Citizen satisfaction | 48% | 85%+ |
-| Digital adoption rate | 20% | 80% |
-| Annual cost savings | $0 | $50M |
-| Staff digital confidence | 35% | 85% |
+| Metric                         | Baseline      | Year 2 Target                   |
+| ------------------------------ | ------------- | ------------------------------- |
+| Service completion rate online | 35%           | 95%+                            |
+| Processing time                | 100% baseline | 30% of baseline (70% reduction) |
+| Citizen satisfaction           | 48%           | 85%+                            |
+| Digital adoption rate          | 20%           | 80%                             |
+| Annual cost savings            | $0            | $50M                            |
+| Staff digital confidence       | 35%           | 85%                             |
 
 ---
 
 ## Related Prompts
+
 - [Digital Identity Platform Architect](../digital-identity-platform-architect.md) - Unified identity systems
 - [Citizen Service Experience Designer](../citizen-service-experience-designer.md) - Service design focus
 - [Government API Strategy Expert](../government-api-strategy-expert.md) - Integration architecture

@@ -1,6 +1,7 @@
 # Event Planner Pro
 
 ## Metadata
+
 - **ID**: `administrative-event-planner-pro`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a corporate event planning expert who organizes conference
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning a company all-hands, leadership retreat, or annual conference
 - Organizing a team offsite or quarterly review with travel and venue logistics
 - Building a repeatable event planning template for a recurring company event
 - Managing multiple concurrent workstreams for a large-scale corporate event
 
 **Anti-patterns (Don't Use For):**
+
 - Personal or social event planning outside a corporate context
 - Real-time venue or vendor booking (requires live search and negotiation)
 - Event security planning for high-profile events requiring professional security firms
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to plan a 2-day leadership team retreat for 25 people. We want to focus on strategic planning for next year and team building. Target date is mid-April, location flexible but within 2 hours of our Seattle office. Budget is around $35,000. We have an executive assistant (me) coordinating, and the CEO and COO will want input on the agenda."
 
 ### Output
@@ -136,37 +140,37 @@ Recommended Venue Type: Lodge or conference center within 90 minutes of Seattle 
 
 **Planning Timeline (Reverse from April 15)**
 
-| Milestone | Deadline | Owner |
-|---|---|---|
-| Venue shortlist of 3 options with pricing | Feb 28 | EA |
-| CEO/COO venue decision | March 5 | CEO/COO |
-| Venue contract signed, deposit paid | March 8 | EA + Finance |
-| Agenda framework approved by CEO | March 12 | CEO |
-| Catering requirements collected (dietary) | March 15 | EA (survey) |
-| AV/tech requirements confirmed with venue | March 20 | EA |
-| Attendee save-the-date sent | March 1 | EA |
-| Attendee logistics package sent | March 22 | EA |
-| Facilitator briefed (if external) | March 25 | EA |
-| Final attendee count confirmed | April 1 | EA |
-| Day-of coordinator briefed | April 12 | EA |
-| Run-of-show distributed to all staff | April 13 | EA |
+| Milestone                                 | Deadline | Owner        |
+| ----------------------------------------- | -------- | ------------ |
+| Venue shortlist of 3 options with pricing | Feb 28   | EA           |
+| CEO/COO venue decision                    | March 5  | CEO/COO      |
+| Venue contract signed, deposit paid       | March 8  | EA + Finance |
+| Agenda framework approved by CEO          | March 12 | CEO          |
+| Catering requirements collected (dietary) | March 15 | EA (survey)  |
+| AV/tech requirements confirmed with venue | March 20 | EA           |
+| Attendee save-the-date sent               | March 1  | EA           |
+| Attendee logistics package sent           | March 22 | EA           |
+| Facilitator briefed (if external)         | March 25 | EA           |
+| Final attendee count confirmed            | April 1  | EA           |
+| Day-of coordinator briefed                | April 12 | EA           |
+| Run-of-show distributed to all staff      | April 13 | EA           |
 
 ---
 
 **Budget Breakdown**
 
-| Category | Estimate | Notes |
-|---|---|---|
-| Venue rental (2 days + meeting space) | $8,000-10,000 | Includes AV basics; confirm |
-| Lodging (25 rooms x 1-2 nights) | $7,500-10,000 | $150-200/room/night |
-| Meals (all-inclusive: 2 breakfasts, 2 lunches, 1 dinner, snacks) | $6,500-8,000 | $130-160/person/day |
-| Activities / team building | $2,500-3,500 | Guided outdoor activity or facilitator |
-| External facilitator (strategic planning) | $3,000-5,000 | Optional; highly recommended |
-| Transportation (charter bus from Seattle) | $800-1,200 | Roundtrip for group |
-| Materials (notebooks, printed agenda, signage) | $500-750 | |
-| Photography | $1,000-1,500 | Optional |
-| Contingency (10%) | $3,000 | |
-| **Total Estimated** | **$32,800-43,950** | Mid-range: ~$37,000 |
+| Category                                                         | Estimate           | Notes                                  |
+| ---------------------------------------------------------------- | ------------------ | -------------------------------------- |
+| Venue rental (2 days + meeting space)                            | $8,000-10,000      | Includes AV basics; confirm            |
+| Lodging (25 rooms x 1-2 nights)                                  | $7,500-10,000      | $150-200/room/night                    |
+| Meals (all-inclusive: 2 breakfasts, 2 lunches, 1 dinner, snacks) | $6,500-8,000       | $130-160/person/day                    |
+| Activities / team building                                       | $2,500-3,500       | Guided outdoor activity or facilitator |
+| External facilitator (strategic planning)                        | $3,000-5,000       | Optional; highly recommended           |
+| Transportation (charter bus from Seattle)                        | $800-1,200         | Roundtrip for group                    |
+| Materials (notebooks, printed agenda, signage)                   | $500-750           |                                        |
+| Photography                                                      | $1,000-1,500       | Optional                               |
+| Contingency (10%)                                                | $3,000             |                                        |
+| **Total Estimated**                                              | **$32,800-43,950** | Mid-range: ~$37,000                    |
 
 Note: Budget is tight at $35K if using an external facilitator and photographer. Recommend cutting photography or negotiating a combined venue+catering package.
 
@@ -175,6 +179,7 @@ Note: Budget is tight at $35K if using an external facilitator and photographer.
 **2-Day Run-of-Show (Abbreviated)**
 
 **Day 1 — Strategic Planning**
+
 - 9:00 AM — Arrivals, coffee, informal networking
 - 9:30 AM — CEO Opening: Why this year matters
 - 10:00 AM — Strategic Context Presentation (COO)
@@ -188,6 +193,7 @@ Note: Budget is tight at $35K if using an external facilitator and photographer.
 - 7:00 PM — Group Dinner (structured, with brief toasts)
 
 **Day 2 — Team Building + Commitments**
+
 - 8:30 AM — Breakfast
 - 9:30 AM — Team Building Activity (2.5 hours)
 - 12:00 PM — Lunch
@@ -198,6 +204,7 @@ Note: Budget is tight at $35K if using an external facilitator and photographer.
 ---
 
 **Attendee Communication Sequence**
+
 1. Save-the-Date (March 1): Date, location type, purpose, what to bring
 2. Logistics Package (March 22): Venue address, charter bus departure time, dietary form, agenda overview
 3. Pre-Retreat Brief (April 12): Final agenda, room assignments, facilitator intro, prep reading

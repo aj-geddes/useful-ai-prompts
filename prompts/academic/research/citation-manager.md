@@ -1,6 +1,7 @@
 # Citation Manager
 
 ## Metadata
+
 - **ID**: `academic-citation-manager`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a citation and attribution specialist who formats referenc
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Formatting a reference list from a collection of raw citation data
 - Checking an existing bibliography for formatting errors and inconsistencies
 - Identifying in-text citations in a draft that are missing from the reference list
 
 **Anti-patterns (Don't Use For):**
+
 - Verifying that a cited source actually exists or supports the claim (use database searches)
 - Managing large Zotero or Mendeley libraries programmatically
 - Legal citation (Bluebook) without specifying jurisdiction-specific requirements
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Please format these three sources in APA 7 for my psychology paper. 1) Smith, J. and Jones, A. 2019. The effects of sleep deprivation on working memory. Journal of Cognitive Psychology. Vol 31, pages 45-62. 2) Brown, T. (2021) Mindfulness and stress. Oxford University Press, New York. 3) https://www.nih.gov/sleep-research accessed March 2024."
 
 ### Output
@@ -115,11 +119,11 @@ Avoid:
 
 ---
 
-Brown, T. (2021). *Mindfulness and stress*. Oxford University Press.
+Brown, T. (2021). _Mindfulness and stress_. Oxford University Press.
 
-Smith, J., & Jones, A. (2019). The effects of sleep deprivation on working memory. *Journal of Cognitive Psychology*, *31*, 45–62. [MISSING: DOI or URL]
+Smith, J., & Jones, A. (2019). The effects of sleep deprivation on working memory. _Journal of Cognitive Psychology_, _31_, 45–62. [MISSING: DOI or URL]
 
-[Author not identified]. (n.d.). *Sleep research*. National Institutes of Health. Retrieved March 2024, from https://www.nih.gov/sleep-research
+[Author not identified]. (n.d.). _Sleep research_. National Institutes of Health. Retrieved March 2024, from https://www.nih.gov/sleep-research
 
 ---
 

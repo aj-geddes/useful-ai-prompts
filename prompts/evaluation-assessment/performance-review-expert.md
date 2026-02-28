@@ -1,6 +1,7 @@
 # Performance Review Expert
 
 ## Metadata
+
 - **ID**: `evaluation-performance-review`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/HR
@@ -18,12 +19,14 @@ Create comprehensive, fair, and actionable performance reviews that develop empl
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing annual or quarterly performance reviews
 - Preparing for performance conversations
 - Creating performance improvement plans
 - Setting goals for the next review period
 
 **Anti-patterns:**
+
 - Compensation decisions requiring HR and finance input
 - Disciplinary documentation requiring HR and legal review
 - Termination decisions requiring proper process
@@ -97,9 +100,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Sarah Chen, Senior Software Engineer, Jan-Dec 2024. Rating: Exceeds expectations. Achievements: Led payment system redesign (40% performance improvement), mentored 3 junior developers, reduced critical bugs by 60%. Strengths: problem-solving, technical expertise, reliability. Improvement areas: needs to be more vocal in meetings, develop strategic thinking for architect role. Took on extra responsibilities when team lead was on leave for 3 months."
 
 ### Output
+
 **Performance Review: Sarah Chen**
 **Role**: Senior Software Engineer | **Period**: January - December 2024
 **Overall Rating**: Exceeds Expectations
@@ -114,28 +119,30 @@ Sarah has delivered exceptional performance this year, demonstrating both deep t
 
 **Key Achievements**
 
-*Payment System Redesign (Impact: Exceptional)*
+_Payment System Redesign (Impact: Exceptional)_
 Sarah led the complete redesign of our payment processing system, achieving a 40% performance improvement. She identified architectural bottlenecks, proposed the solution, and coordinated implementation across three teams. This project reduced customer-facing latency and enabled us to handle 2x transaction volume without scaling costs.
 
-*Mentorship & Team Development (Impact: High)*
+_Mentorship & Team Development (Impact: High)_
 Formally mentored three junior developers, exceeding her target of two. All three received positive performance reviews, with one promoted to mid-level. Sarah created documentation and onboarding materials that are now used team-wide.
 
-*Quality Improvement (Impact: High)*
+_Quality Improvement (Impact: High)_
 Led initiative that reduced critical production bugs by 60% through improved code review processes and automated testing. Implemented new pre-commit hooks adopted across engineering.
 
-*Leadership During Transition (Impact: High)*
+_Leadership During Transition (Impact: High)_
 When our team lead took medical leave, Sarah stepped in for three months, running standups, coordinating with product, and unblocking team members. The team maintained velocity and met all Q3 commitments.
 
 ---
 
 **Development Areas**
 
-*Meeting Participation*
+_Meeting Participation_
 Sarah's technical contributions are excellent, but she tends to stay quiet in larger meetings, particularly with senior leadership. Building confidence in these settings will be important for a future architecture or leadership role.
+
 - Action: Prepare 1-2 key points before leadership meetings; volunteer to present technical updates monthly.
 
-*Strategic Thinking*
+_Strategic Thinking_
 As Sarah moves toward a Staff Engineer track, she should develop skills in long-term technical strategy and cross-team influence.
+
 - Action: Partner with architecture team on one strategic initiative; participate in technical roadmap planning sessions.
 
 ---
@@ -161,5 +168,6 @@ As Sarah moves toward a Staff Engineer track, she should develop skills in long-
 - Confirm goals and support needed (training, exposure, etc.)
 
 ## Related Prompts
+
 - [Candidate Assessment Expert](candidate-assessment-expert.md)
 - [Document Review Expert](document-review-expert.md)

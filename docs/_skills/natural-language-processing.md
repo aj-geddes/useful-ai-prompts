@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build NLP applications using transformers library, BERT, GPT, text classification,
+date: "2025-01-01"
+description:
+  Build NLP applications using transformers library, BERT, GPT, text classification,
   named entity recognition, and sentiment analysis
 layout: skill
 slug: natural-language-processing
 tags:
-- development
+  - development
 title: Natural Language Processing
 ---
 

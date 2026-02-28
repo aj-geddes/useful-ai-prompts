@@ -1,6 +1,7 @@
 # Legal Precedent Research Expert
 
 ## Metadata
+
 - **ID**: `research-legal-precedent`
 - **Version**: 1.0.0
 - **Category**: Research/Legal
@@ -18,6 +19,7 @@ Conduct comprehensive legal precedent research including case law analysis, auth
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing motions, briefs, or legal memoranda requiring case law support
 - Assessing litigation risk or case viability based on precedent
 - Analyzing regulatory compliance obligations under case law interpretation
@@ -25,6 +27,7 @@ Conduct comprehensive legal precedent research including case law analysis, auth
 - Researching circuit splits or conflicting authority
 
 **Anti-Patterns (Don't Use For):**
+
 - Providing legal advice (consult licensed attorney for actual legal matters)
 - Non-common law jurisdictions without significant adaptation
 - Statutory interpretation without case law component
@@ -108,9 +111,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to research precedents on whether our employee non-compete agreement is enforceable. The employee was a mid-level sales manager in California who left for a competitor. Non-compete was 2 years with a 50-mile radius. We're considering litigation to enforce."
 
 ### Output
+
 **Legal Research Memorandum: Non-Compete Enforceability**
 
 **Issue**
@@ -122,6 +127,7 @@ The non-compete is almost certainly unenforceable. California Business and Profe
 **Controlling Authority**
 
 **Edwards v. Arthur Andersen LLP (2008) 44 Cal.4th 937**
+
 - **Holding**: Section 16600 prohibits all non-compete agreements except for the narrow statutory exceptions enumerated in Sections 16601-16602 (sale of business, partnership dissolution, LLC member departure)
 - **Rationale**: Court explicitly rejected the "narrow restraint" or "reasonableness" exceptions recognized in other states, finding the statutory language unambiguous
 - **Procedural Posture**: California Supreme Court review of summary judgment; definitive interpretation
@@ -129,6 +135,7 @@ The non-compete is almost certainly unenforceable. California Business and Profe
 
 **Application to Facts**
 California courts have consistently invalidated employee non-competes regardless of:
+
 - **Duration**: Even short periods (6 months) held unenforceable
 - **Geographic scope**: Even narrow radius (10-mile) held unenforceable
 - **Position level**: Applies uniformly to executives, managers, and entry-level employees
@@ -138,17 +145,20 @@ Your employee's mid-level status, 2-year duration, and 50-mile radius are irrele
 
 **Alternative Protections Available**
 California does permit certain protective agreements:
+
 1. **Trade Secret Protection**: California Uniform Trade Secrets Act provides injunctive relief for actual misappropriation
 2. **Confidentiality Agreements**: Enforceable if limited to truly confidential information
-3. **Non-Solicitation of Customers**: *Dowell v. Biosense Webster* (2009) 179 Cal.App.4th 564 upheld narrow customer non-solicitation provisions, though subsequent cases have limited this
+3. **Non-Solicitation of Customers**: _Dowell v. Biosense Webster_ (2009) 179 Cal.App.4th 564 upheld narrow customer non-solicitation provisions, though subsequent cases have limited this
 
 **Strategic Recommendation**
 Do not pursue litigation to enforce the non-compete in California. Such action would likely result in:
+
 1. Summary judgment for defendant with potential attorney fee award
 2. Possible unfair competition counterclaim
 3. Negative precedent for future enforcement attempts
 
 Instead, consider:
+
 1. Review confidentiality provisions for viable trade secret claims
 2. Document any actual misappropriation of trade secrets or customer lists
 3. Revise future employment agreements to use enforceable alternatives
@@ -156,6 +166,7 @@ Instead, consider:
 ---
 
 ## Related Prompts
+
 - [Patent Research Expert](patent-research-expert.md) - Intellectual property research methodology
 - [Historical Research Expert](historical-research-expert.md) - Historical document and precedent analysis
 - [Literature Review Expert](literature-review-expert.md) - Systematic research synthesis techniques

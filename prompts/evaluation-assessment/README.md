@@ -22,4 +22,4 @@ Comprehensive evaluation frameworks for products, processes, and performance.
 
 ---
 
-*Professional evaluation and assessment prompts for comprehensive analysis and decision-making.*
+_Professional evaluation and assessment prompts for comprehensive analysis and decision-making._

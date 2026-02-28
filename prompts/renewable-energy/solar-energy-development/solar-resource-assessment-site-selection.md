@@ -1,6 +1,7 @@
 # Solar Resource Assessment and Strategic Site Selection
 
 ## Metadata
+
 - **ID**: `solar-resource-assessment-site-selection`
 - **Version**: 2.0.0
 - **Category**: Renewable Energy/Solar Energy Development
@@ -18,6 +19,7 @@ This prompt enables comprehensive solar resource assessment and strategic site s
 ## When to Use
 
 **Ideal scenarios:**
+
 - Prospecting new regions for solar development opportunities
 - Conducting detailed resource analysis for specific sites
 - Designing measurement campaigns for bankable resource assessments
@@ -25,6 +27,7 @@ This prompt enables comprehensive solar resource assessment and strategic site s
 - Creating P50/P90 energy yield estimates for financing
 
 **Anti-patterns (when not to use):**
+
 - Residential rooftop solar feasibility
 - Construction phase project management
 - Financial modeling and investment structuring
@@ -115,6 +118,7 @@ Develop comprehensive resource assessment and site selection:
 ## Example Usage
 
 ### Input
+
 We're prospecting for utility-scale solar development opportunities in New Mexico. Looking to develop a 200+ MW portfolio over the next 3 years. Priority is identifying sites with strong resource, available transmission, and minimal environmental constraints. Need to prioritize 3-5 sites for detailed assessment and potential measurement campaigns.
 
 ### Output
@@ -125,7 +129,7 @@ We're prospecting for utility-scale solar development opportunities in New Mexic
 
 New Mexico ranks among the top U.S. states for solar resource quality, with significant variation across regions:
 
-*Irradiance characteristics (NSRDB/SolarGIS validated):*
+_Irradiance characteristics (NSRDB/SolarGIS validated):_
 | Region | GHI (kWh/m2/day) | DNI (kWh/m2/day) | Ranking |
 |--------|------------------|------------------|---------|
 | Southeast (Lea, Eddy) | 5.8-6.2 | 6.5-7.2 | Excellent |
@@ -133,7 +137,8 @@ New Mexico ranks among the top U.S. states for solar resource quality, with sign
 | Southwest (Luna, Hidalgo) | 5.7-6.1 | 6.4-7.0 | Excellent |
 | Northwest (San Juan) | 5.4-5.8 | 6.0-6.5 | Good |
 
-*Climate considerations:*
+_Climate considerations:_
+
 - Interannual variability: +-5% typical for NM sites
 - Seasonal pattern: Strong summer/winter differential (40%)
 - Dust/soiling: Moderate concern in southern regions
@@ -141,7 +146,8 @@ New Mexico ranks among the top U.S. states for solar resource quality, with sign
 
 **Multi-Criteria Site Screening**
 
-*GIS screening layers applied:*
+_GIS screening layers applied:_
+
 1. Solar resource (GHI >5.5 kWh/m2/day)
 2. Land availability (>1,000 contiguous acres)
 3. Transmission proximity (<10 miles to 115 kV+ substation)
@@ -149,7 +155,8 @@ New Mexico ranks among the top U.S. states for solar resource quality, with sign
 5. Environmental (exclude protected lands, critical habitat)
 6. Land use (exclude irrigated agriculture, urban areas)
 
-*Screening results:*
+_Screening results:_
+
 - Initial candidate areas: 850,000 acres meeting base criteria
 - After environmental screening: 420,000 acres
 - With transmission access: 180,000 acres
@@ -157,7 +164,7 @@ New Mexico ranks among the top U.S. states for solar resource quality, with sign
 
 **Priority Site Evaluation**
 
-*Site 1: Lea County East (Top Priority)*
+_Site 1: Lea County East (Top Priority)_
 | Factor | Assessment |
 |--------|------------|
 | Location | 15 miles east of Hobbs |
@@ -170,7 +177,7 @@ New Mexico ranks among the top U.S. states for solar resource quality, with sign
 
 Development readiness: High - Proceed with land optioning and measurement
 
-*Site 2: Valencia County Central*
+_Site 2: Valencia County Central_
 | Factor | Assessment |
 |--------|------------|
 | Location | 20 miles south of Albuquerque |
@@ -183,7 +190,7 @@ Development readiness: High - Proceed with land optioning and measurement
 
 Development readiness: Medium - Environmental pre-assessment recommended
 
-*Site 3: Luna County Southwest*
+_Site 3: Luna County Southwest_
 | Factor | Assessment |
 |--------|------------|
 | Location | 10 miles north of Deming |
@@ -196,19 +203,21 @@ Development readiness: Medium - Environmental pre-assessment recommended
 
 Development readiness: Medium - Transmission study required
 
-*Sites 4-5:* Torrance County and Eddy County locations identified for secondary evaluation.
+_Sites 4-5:_ Torrance County and Eddy County locations identified for secondary evaluation.
 
 **Measurement Campaign Strategy**
 
-*Recommended approach for Site 1 (Lea County):*
+_Recommended approach for Site 1 (Lea County):_
 
 Equipment:
+
 - Primary station: Class A pyranometer (Kipp & Zonen CMP11)
 - Secondary sensors: DHI, DNI (pyrheliometer), temperature, wind
 - Data logger: Campbell Scientific with cellular telemetry
 - Quality control: Automatic flagging, daily review
 
 Campaign design:
+
 - Duration: 12 months minimum (18 months preferred)
 - Station location: Representative of array footprint
 - Data validation: Cross-reference with NSRDB, SolarGIS, Solcast
@@ -225,22 +234,23 @@ Cost: ~$45,000 for 12-month campaign including equipment and analysis
 
 **Energy Yield Projections**
 
-*Site 1 preliminary estimates (200 MW DC system):*
+_Site 1 preliminary estimates (200 MW DC system):_
 
-| Scenario | Annual Production | Specific Yield | Basis |
-|----------|-------------------|----------------|-------|
-| P50 | 460 GWh | 2,300 kWh/kWp | Expected median |
-| P75 | 438 GWh | 2,190 kWh/kWp | 75% exceedance |
-| P90 | 414 GWh | 2,070 kWh/kWp | 90% exceedance |
-| P99 | 391 GWh | 1,955 kWh/kWp | 99% exceedance |
+| Scenario | Annual Production | Specific Yield | Basis           |
+| -------- | ----------------- | -------------- | --------------- |
+| P50      | 460 GWh           | 2,300 kWh/kWp  | Expected median |
+| P75      | 438 GWh           | 2,190 kWh/kWp  | 75% exceedance  |
+| P90      | 414 GWh           | 2,070 kWh/kWp  | 90% exceedance  |
+| P99      | 391 GWh           | 1,955 kWh/kWp  | 99% exceedance  |
 
-*Assumptions:*
+_Assumptions:_
+
 - Technology: Single-axis tracker, bifacial modules
 - Performance ratio: 84% (Year 1)
 - Degradation: 0.5%/year
 - Losses: Soiling 3%, availability 99%, other 5%
 
-*Uncertainty breakdown:*
+_Uncertainty breakdown:_
 | Factor | Uncertainty |
 |--------|-------------|
 | Resource (satellite) | +-5.0% |
@@ -251,17 +261,18 @@ Cost: ~$45,000 for 12-month campaign including equipment and analysis
 
 **Development Prioritization**
 
-*Recommended portfolio approach:*
+_Recommended portfolio approach:_
 
-| Priority | Site | Capacity | Action | Timeline |
-|----------|------|----------|--------|----------|
-| 1 | Lea County East | 200 MW | Land option, measurement | Immediate |
-| 2 | Luna County SW | 150 MW | Transmission study | Q1 |
-| 3 | Valencia Central | 100 MW | Environmental screening | Q1-Q2 |
-| 4 | Torrance County | 100 MW | Preliminary assessment | Q2 |
-| 5 | Eddy County | 150 MW | Initial screening | Q3 |
+| Priority | Site             | Capacity | Action                   | Timeline  |
+| -------- | ---------------- | -------- | ------------------------ | --------- |
+| 1        | Lea County East  | 200 MW   | Land option, measurement | Immediate |
+| 2        | Luna County SW   | 150 MW   | Transmission study       | Q1        |
+| 3        | Valencia Central | 100 MW   | Environmental screening  | Q1-Q2     |
+| 4        | Torrance County  | 100 MW   | Preliminary assessment   | Q2        |
+| 5        | Eddy County      | 150 MW   | Initial screening        | Q3        |
 
-*Portfolio resource characteristics:*
+_Portfolio resource characteristics:_
+
 - Combined capacity potential: 700+ MW
 - Average GHI: 5.9 kWh/m2/day
 - Resource correlation: <0.75 across sites (good diversification)
@@ -269,13 +280,13 @@ Cost: ~$45,000 for 12-month campaign including equipment and analysis
 
 **Risk Assessment**
 
-| Risk | Probability | Mitigation |
-|------|-------------|------------|
-| Resource overestimate | Low | 12-month measurement, conservative modeling |
-| Transmission constraints | Medium | Early interconnection studies, utility engagement |
-| Environmental issues | Low-Medium | Desktop screening, early agency consultation |
-| Land acquisition | Low | Multiple sites, parallel negotiations |
-| Permitting delays | Low | County pre-application meetings |
+| Risk                     | Probability | Mitigation                                        |
+| ------------------------ | ----------- | ------------------------------------------------- |
+| Resource overestimate    | Low         | 12-month measurement, conservative modeling       |
+| Transmission constraints | Medium      | Early interconnection studies, utility engagement |
+| Environmental issues     | Low-Medium  | Desktop screening, early agency consultation      |
+| Land acquisition         | Low         | Multiple sites, parallel negotiations             |
+| Permitting delays        | Low         | County pre-application meetings                   |
 
 **Recommendations**
 

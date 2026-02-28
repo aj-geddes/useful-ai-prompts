@@ -1,6 +1,7 @@
 # Operations Management Expert
 
 ## Metadata
+
 - **ID**: `business-operations-manager-excellence`
 - **Version**: 1.0.0
 - **Category**: Business/Operations
@@ -18,12 +19,14 @@ Optimizes operations through systematic process improvement, team development, a
 ## When to Use
 
 **Scenarios:**
+
 - Scaling operations to handle growth without proportional headcount increase
 - Reducing errors and improving quality metrics
 - Building team capabilities and reducing turnover
 - Establishing operational KPIs and performance dashboards
 
 **Anti-patterns:**
+
 - Strategic business planning or market positioning
 - Technology selection or IT infrastructure decisions
 - Financial modeling or investment analysis
@@ -112,6 +115,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "E-commerce fulfillment center processing 200K orders/month. Team of 45 across receiving, picking, packing, and shipping stations. Challenges: Can't keep up with growth projections, error rate increasing (92% accuracy vs 98% target), 30% annual turnover, 6-week training time for new hires. Goal: Scale to 300K orders with better accuracy and improved team satisfaction."
 
 ### Output
@@ -127,12 +131,14 @@ Outputs must avoid:
 | Training Time | 6 weeks | 3 weeks | +3 weeks | $150K in productivity loss |
 
 **Process Efficiency Audit (Lean Waste Analysis):**
+
 - Receiving: 15% time wasted on manual data entry (overprocessing)
 - Picking: 25% walking time due to poor layout (motion waste)
 - Packing: 20% rework due to upstream quality issues (defects)
 - Shipping: 30% delays waiting for carrier pickups (waiting)
 
 **Root Causes:**
+
 1. System Integration: Manual handoffs between WMS and other systems
 2. Layout Optimization: Warehouse flow not aligned with order patterns
 3. Quality Control: Reactive inspection instead of preventive checks
@@ -141,38 +147,44 @@ Outputs must avoid:
 ## PROCESS OPTIMIZATION
 
 ### Receiving (Target: 50% faster processing)
+
 **OLD:** Receive > Manual count > Excel entry > WMS update > Putaway
 **NEW:** Receive > Scan > Auto-count verification > Direct WMS > Putaway
 **Impact:** 15 min/shipment saved, 80% fewer data entry errors
 
 ### Pick Path Optimization (Target: 25% faster picks)
+
 - Implement wave planning with optimized routes based on order clustering
 - Group orders by zone and shipping method for batch efficiency
 - Deploy pick-and-pass method for large multi-item orders
-**Impact:** 25% faster pick times, reduced walking distance by 40%
+  **Impact:** 25% faster pick times, reduced walking distance by 40%
 
 ### Quality Control System (Target: 98% accuracy)
+
 - Receiving: Barcode scan verification (catch 99% of errors at source)
 - Picking: Spot checks on 10% of picks with instant feedback
 - Packing: Weight verification system flags discrepancies
 - Shipping: Final scan before carrier handoff
-**Impact:** Catch 95% of issues before shipping, reduce returns 60%
+  **Impact:** Catch 95% of issues before shipping, reduce returns 60%
 
 ## TEAM DEVELOPMENT PROGRAM
 
 ### 3-Week Onboarding (reduced from 6 weeks)
 
 **Week 1: Foundation**
+
 - Safety certification and warehouse navigation
 - System basics and scanning procedures
 - Shadow experienced team member (all stations)
 
 **Week 2: Skill Building**
+
 - Independent picking with supervisor check-ins (4 per day)
 - Packing training with real-time quality metrics visible
 - Error correction procedures and escalation paths
 
 **Week 3: Proficiency**
+
 - Full independence with coaching available
 - Cross-training in second station
 - Peer mentoring assignment for next new hire
@@ -180,16 +192,19 @@ Outputs must avoid:
 ### Performance Management Cadence
 
 **Daily Huddles (15 min):**
+
 - Yesterday's performance vs. targets (visual board)
 - Today's priorities and anticipated challenges
 - Recognition of top performers (specific behaviors)
 
 **Weekly Team Meetings (30 min):**
+
 - Deep dive on one improvement opportunity
 - Employee suggestions review and implementation updates
 - Skills development mini-session
 
 **Monthly Reviews:**
+
 - Individual performance coaching with development plan
 - Goal setting for next month aligned to career progression
 - Retention conversation (engagement, growth, concerns)
@@ -207,18 +222,21 @@ Outputs must avoid:
 ## IMPLEMENTATION ROADMAP
 
 **Month 1: Foundation (Target: $40K monthly savings)**
+
 - Deploy barcode scanning system and receiving automation
 - Implement daily huddle routine across all stations
 - Launch real-time performance dashboards
 - Create new 3-week onboarding curriculum
 
 **Month 2-3: Systems Integration (Target: $80K monthly savings)**
+
 - Deploy weight verification system for packing
 - Automate returns sorting and restocking
 - Implement voice picking pilot in high-volume zone
 - Optimize warehouse layout based on order analysis
 
 **Month 4-6: Scale and Optimize (Target: $120K monthly savings)**
+
 - Full automation deployment across all stations
 - Cross-training program expansion (all staff trained on 2+ stations)
 - Continuous improvement culture with employee-led Kaizen
@@ -233,5 +251,6 @@ Outputs must avoid:
 ---
 
 ## Related Prompts
+
 - [Process Optimization Expert](process-optimization-expert.md) - Deep-dive process analysis
 - [Supply Chain Expert](supply-chain-optimization-expert.md) - End-to-end supply chain

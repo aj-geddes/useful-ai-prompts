@@ -3,23 +3,24 @@ title: Marketing Campaign Creator
 slug: marketing-campaign-creator
 category: creative
 tags:
-- marketing
-- campaign
-- campaign
-- strategy
-- integrated
-- marketing
-- messaging
-- hierarchy
-- channel
-- activation
-- campaign
-- theme
+  - marketing
+  - campaign
+  - campaign
+  - strategy
+  - integrated
+  - marketing
+  - messaging
+  - hierarchy
+  - channel
+  - activation
+  - campaign
+  - theme
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a marketing campaign strategist persona that designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a marketing campaign strategist persona that designs
   integrated marketing campaigns from strategic foundation to channel activation —
   developing the campaign theme, messaging hierarchy, creative direction, and channel-by-channel
   execution plan. It bridges brand strategy and creative execution across paid, owned,
@@ -27,15 +28,15 @@ description: This prompt enables a marketing campaign strategist persona that de
   campaigns, or demand generation programs.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing an integrated campaign for a product launch, brand refresh, or seasonal
-  moment
-- Developing a campaign theme and messaging hierarchy that works across multiple channels
-  and audiences
-- Building a demand generation campaign with coordinated paid, content, email, and
-  social activation
-- Writing individual creative assets — use the copywriting or video script prompts
-  for execution
+  - Ideal Scenarios:**
+  - Designing an integrated campaign for a product launch, brand refresh, or seasonal
+    moment
+  - Developing a campaign theme and messaging hierarchy that works across multiple channels
+    and audiences
+  - Building a demand generation campaign with coordinated paid, content, email, and
+    social activation
+  - Writing individual creative assets — use the copywriting or video script prompts
+    for execution
 complexity: advanced
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Analogical Thinking Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation-analogical-thinking-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ A strategic analogical thinking facilitator that helps discover innovative solut
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Solving problems where conventional approaches have failed
 - Generating breakthrough innovations through cross-domain insights
 - Applying biomimicry principles to product or system design
@@ -25,6 +27,7 @@ A strategic analogical thinking facilitator that helps discover innovative solut
 - Developing novel approaches to persistent challenges
 
 **Anti-Patterns (When Not to Use):**
+
 - Incremental improvements to existing solutions
 - Problems with clear, known solutions
 - Highly technical issues requiring domain expertise
@@ -111,6 +114,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Problem: Team collaboration breaks down as our startup scales from 20 to 100 people
 2. Difficulty: Information silos, unclear ownership, decisions slowing down
@@ -137,18 +141,21 @@ Requirements:
 ### Domain 1: Honeybee Colony Organization
 
 **How Bees Solve Scale:**
+
 - 50,000 bees coordinate without central management
 - Dance communication shares information efficiently
 - Scouts explore, workers execute, queen focuses on creation
 - Threshold-based decision making (quorum sensing)
 
 **Success Patterns:**
+
 - Distributed sensing: Many individuals gather local information
 - Signal amplification: Important information spreads faster
 - Role specialization: Clear functions, flexible execution
 - Emergent consensus: Decisions emerge from local interactions
 
 **Relevance to Your Challenge:**
+
 - You're trying to centralize decisions that should be distributed
 - Information needs natural amplification, not forced broadcasting
 - Meetings are like all bees stopping to consult the queen
@@ -156,18 +163,21 @@ Requirements:
 ### Domain 2: Ant Colony Trail Optimization
 
 **How Ants Solve Coordination:**
+
 - Pheromone trails mark successful paths
 - Stronger trails attract more followers
 - Failed paths naturally fade
 - No ant knows the full network
 
 **Success Patterns:**
+
 - Persistent context: Trails outlast individual interactions
 - Reinforcement loops: Success builds on success
 - Natural pruning: Unused information fades
 - Local optimization: Each ant optimizes locally, system optimizes globally
 
 **Relevance to Your Challenge:**
+
 - Your "trails" (documentation) don't self-reinforce
 - Failed initiatives leave no traces (or leave too many)
 - Context disappears when people leave conversations
@@ -175,18 +185,21 @@ Requirements:
 ### Domain 3: Jazz Ensemble Improvisation
 
 **How Jazz Musicians Collaborate:**
+
 - Shared vocabulary (chords, scales, patterns)
 - Clear structure with freedom within it
 - Real-time listening and response
 - Taking turns leading and supporting
 
 **Success Patterns:**
+
 - Shared mental models: Everyone knows the "song"
 - Constrained creativity: Rules enable, not limit
 - Turn-taking: Leadership rotates fluidly
 - Present-moment awareness: Constant attention to group state
 
 **Relevance to Your Challenge:**
+
 - Your team may lack shared "vocabulary" for decisions
 - Too much freedom leads to cacophony
 - People aren't "listening" to each other's signals
@@ -199,12 +212,14 @@ Requirements:
 **Mapping:** Create visible, standardized signals for team state
 
 **Solution Concept: "Status Dances"**
+
 - Standardized, visual status updates (not text walls)
 - Location: Where is this happening?
 - Intensity: How important/urgent?
 - Direction: What help is needed?
 
 **Implementation:**
+
 - 15-second video updates (the "dance")
 - Standardized format: situation, need, timeline
 - Aggregated in daily "hive summary"
@@ -216,12 +231,14 @@ Requirements:
 **Mapping:** Create persistent, self-reinforcing decision context
 
 **Solution Concept: "Decision Trails"**
+
 - Every decision creates a "trail" (brief decision record)
 - Similar decisions link automatically
 - Referenced decisions strengthen
 - Unused trails fade from prominence
 
 **Implementation:**
+
 - Simple decision template: context, options, choice, rationale
 - Auto-tagging and linking (AI-assisted)
 - "Path strength" visualization
@@ -233,12 +250,14 @@ Requirements:
 **Mapping:** Create predictable rhythms with clear improvisation zones
 
 **Solution Concept: "Collaboration Compositions"**
+
 - Clear "song structure" for different work types
 - Everyone knows when to lead and support
 - Predictable patterns reduce coordination overhead
 - Explicit "solo" moments for individual deep work
 
 **Implementation:**
+
 - Weekly rhythm template by team type
 - Designated "solo" blocks (no meetings/interruptions)
 - Clear "handoff" moments between sections
@@ -251,6 +270,7 @@ Requirements:
 **Core Idea:** Transform scattered information into colony-style awareness
 
 **Components:**
+
 - Real-time "swarm state" visualization
 - Heat maps showing activity and blockers
 - Threshold alerts when patterns emerge
@@ -259,6 +279,7 @@ Requirements:
 **Why It Works:** Bees coordinate 50K members because they can "see" colony state through signals. Your team can't see what they can't see.
 
 **Implementation Path:**
+
 1. Week 1: Design signal format and rhythm
 2. Week 2: Pilot with one team (10 people)
 3. Week 3: Iterate based on adoption patterns
@@ -269,6 +290,7 @@ Requirements:
 **Core Idea:** Create self-maintaining organizational memory
 
 **Components:**
+
 - Decision records that auto-link to related decisions
 - "Trail strength" showing well-trodden paths
 - Automatic context surfacing when topics arise
@@ -277,6 +299,7 @@ Requirements:
 **Why It Works:** Ant colonies maintain optimal paths through collective behavior. Your knowledge base should grow and prune organically.
 
 **Implementation Path:**
+
 1. Month 1: Implement simple decision logging
 2. Month 2: Add auto-linking and strength metrics
 3. Month 3: Integrate with communication tools
@@ -287,6 +310,7 @@ Requirements:
 **Core Idea:** Create structured improvisation for team coordination
 
 **Components:**
+
 - Clear weekly "song structure" for each team
 - Rotating "solo" moments for deep work
 - Explicit "listen mode" in meetings
@@ -295,6 +319,7 @@ Requirements:
 **Why It Works:** Jazz ensembles create coherent music without command-and-control because structure enables creativity. Your meetings lack structure, so they lack creativity.
 
 **Implementation Path:**
+
 1. Week 1: Design "compositions" for common work
 2. Week 2: Introduce "solo" blocks and protect them
 3. Week 3: Train on listening-based meeting styles
@@ -303,46 +328,52 @@ Requirements:
 ## IMPLEMENTATION STRATEGY
 
 ### Phase 1: Foundation (Weeks 1-4)
+
 - Launch Collaboration Jazz rhythms
 - Begin simple Hive Dashboard experiments
 - Train team on analogical thinking concepts
 
 ### Phase 2: Integration (Months 2-3)
+
 - Expand Dashboard based on learnings
 - Introduce Living Context basics
 - Iterate on rhythm structures
 
 ### Phase 3: Optimization (Months 4-6)
+
 - Full system integration
 - Cross-team pattern sharing
 - Continuous analogical improvement
 
 ### Success Metrics
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Decision Speed | 50% faster | Time from question to resolution |
-| Context Retrieval | <2 minutes | Time to find relevant prior decisions |
-| Meeting Efficiency | 30% reduction | Total meeting hours per person |
-| Information Flow | 80% awareness | Survey: "I know what matters" |
+| Metric             | Target        | Measurement                           |
+| ------------------ | ------------- | ------------------------------------- |
+| Decision Speed     | 50% faster    | Time from question to resolution      |
+| Context Retrieval  | <2 minutes    | Time to find relevant prior decisions |
+| Meeting Efficiency | 30% reduction | Total meeting hours per person        |
+| Information Flow   | 80% awareness | Survey: "I know what matters"         |
 
 ## INNOVATION FRAMEWORK
 
 ### Ongoing Analogical Practice
 
 **Monthly Exploration:**
+
 - Identify current friction point
 - Explore 2-3 source domains
 - Map potential solutions
 - Test one small experiment
 
 **Question Template:**
+
 1. Where else has this been solved?
 2. What's the deep structure of the solution?
 3. How might that structure apply here?
 4. What small experiment could test it?
 
 **Recommended Domains to Watch:**
+
 - Biological systems (scaling, resilience)
 - Performing arts (coordination, creativity)
 - Games (engagement, rules, emergence)

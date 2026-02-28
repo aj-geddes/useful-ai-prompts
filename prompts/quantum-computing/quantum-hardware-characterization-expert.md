@@ -1,6 +1,7 @@
 # Quantum Hardware Characterization Expert
 
 ## Metadata
+
 - **ID**: `quantum-hardware-characterization`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ A senior quantum hardware scientist that characterizes, optimizes, and validates
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Establishing baseline performance metrics for new quantum systems
 - Diagnosing hardware issues (decoherence, crosstalk, parameter drift)
 - Optimizing gate calibrations and readout fidelity for target applications
@@ -26,6 +28,7 @@ A senior quantum hardware scientist that characterizes, optimizes, and validates
 - Comparing system performance against state-of-the-art benchmarks
 
 **Anti-patterns (when NOT to use):**
+
 - Algorithm development without hardware focus
 - Theoretical error correction design without experimental component
 - Software-only quantum simulation
@@ -129,6 +132,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **System:** 20-qubit superconducting transmon system in 2D grid topology. **Issues:** Inconsistent gate fidelities and T1 variations across the chip. **Goals:** Prepare for algorithm demonstrations with targets of >99% single-qubit gates, >95% two-qubit gates, T1>50us.
 
 ### Output
@@ -137,17 +141,18 @@ Avoid:
 
 **Performance Target Assessment**
 
-| Metric | Current Range | Target | State-of-Art |
-|--------|--------------|--------|--------------|
-| T1 | Variable | >50 us | 300+ us |
-| T2 | Unknown | >30 us | 200+ us |
-| 1Q Fidelity | Variable | >99% | 99.99% |
-| 2Q Fidelity | Unknown | >95% | 99.5% |
-| Readout | Unknown | >95% | 99% |
+| Metric      | Current Range | Target | State-of-Art |
+| ----------- | ------------- | ------ | ------------ |
+| T1          | Variable      | >50 us | 300+ us      |
+| T2          | Unknown       | >30 us | 200+ us      |
+| 1Q Fidelity | Variable      | >99%   | 99.99%       |
+| 2Q Fidelity | Unknown       | >95%   | 99.5%        |
+| Readout     | Unknown       | >95%   | 99%          |
 
 **Daily Quick Check Protocol (45 minutes)**
 
-*Phase 1: Readout Verification (10 min)*
+_Phase 1: Readout Verification (10 min)_
+
 ```python
 def daily_readout_check(all_qubits):
     """Verify readout discrimination for all qubits"""
@@ -165,7 +170,8 @@ def daily_readout_check(all_qubits):
     return readout_matrix  # For SPAM correction
 ```
 
-*Phase 2: Coherence Spot Check (15 min)*
+_Phase 2: Coherence Spot Check (15 min)_
+
 ```python
 def coherence_spot_check(representative_qubits):
     """Quick T1/T2* on 5 representative qubits"""
@@ -177,7 +183,8 @@ def coherence_spot_check(representative_qubits):
             alert(f"Qubit {qubit}: T1={t1*1e6:.1f}us below threshold")
 ```
 
-*Phase 3: Gate Fidelity Check (20 min)*
+_Phase 3: Gate Fidelity Check (20 min)_
+
 ```python
 def gate_fidelity_spot_check():
     """Quick RB on all qubits, IRB on critical pairs"""
@@ -196,7 +203,8 @@ def gate_fidelity_spot_check():
 
 **Weekly Full Characterization (4 hours)**
 
-*Phase 1: Complete Coherence Mapping (90 min)*
+_Phase 1: Complete Coherence Mapping (90 min)_
+
 ```
 For each qubit (20 total, ~4.5 min each):
   T1 Measurement:
@@ -217,7 +225,8 @@ For each qubit (20 total, ~4.5 min each):
     - Compare to T2* for dephasing analysis
 ```
 
-*Phase 2: Full Randomized Benchmarking (120 min)*
+_Phase 2: Full Randomized Benchmarking (120 min)_
+
 ```
 Single-Qubit RB (60 min):
   - All 20 qubits
@@ -238,7 +247,8 @@ Interleaved RB (15 min):
   - Isolate specific gate error
 ```
 
-*Phase 3: Crosstalk Analysis (30 min)*
+_Phase 3: Crosstalk Analysis (30 min)_
+
 ```
 Simultaneous RB:
   - Run RB on qubit while exercising neighbors
@@ -256,7 +266,8 @@ ZZ Coupling:
 
 **Troubleshooting Decision Tree**
 
-*Symptom: Sudden T1 Drop*
+_Symptom: Sudden T1 Drop_
+
 ```
 1. Check if single qubit or chip-wide
    - Single qubit: Likely TLS or local defect
@@ -272,7 +283,8 @@ ZZ Coupling:
    -> If still degraded, consider alternative qubit
 ```
 
-*Symptom: Increasing Two-Qubit Error*
+_Symptom: Increasing Two-Qubit Error_
+
 ```
 1. Check single-qubit fidelities first
    -> If degraded, address 1Q calibration
@@ -291,14 +303,14 @@ ZZ Coupling:
 
 **Automated Monitoring Dashboard**
 
-| Metric | Green | Yellow | Red |
-|--------|-------|--------|-----|
-| T1 | >50 us | 40-50 us | <40 us |
-| T2 | >30 us | 20-30 us | <20 us |
-| 1Q Fidelity | >99% | 98-99% | <98% |
-| 2Q Fidelity | >95% | 93-95% | <93% |
-| Readout | >95% | 90-95% | <90% |
-| Drift (4hr) | <0.5% | 0.5-1% | >1% |
+| Metric      | Green  | Yellow   | Red    |
+| ----------- | ------ | -------- | ------ |
+| T1          | >50 us | 40-50 us | <40 us |
+| T2          | >30 us | 20-30 us | <20 us |
+| 1Q Fidelity | >99%   | 98-99%   | <98%   |
+| 2Q Fidelity | >95%   | 93-95%   | <93%   |
+| Readout     | >95%   | 90-95%   | <90%   |
+| Drift (4hr) | <0.5%  | 0.5-1%   | >1%    |
 
 **Next Steps for Your System**
 

@@ -1,6 +1,7 @@
 # Go/No-Go Determinations Expert
 
 ## Metadata
+
 - **ID**: `decision-go-no-go-determinations`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Strategic
@@ -18,6 +19,7 @@ Provide structured framework for making critical go/no-go decisions by evaluatin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Product or feature launch readiness decisions
 - Project phase gate reviews
 - Investment or partnership decisions
@@ -25,6 +27,7 @@ Provide structured framework for making critical go/no-go decisions by evaluatin
 - Pre-release quality gates
 
 **Anti-patterns (when NOT to use):**
+
 - Routine operational decisions
 - Choices that can be easily reversed
 - Decisions already made that need justification
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're deciding whether to launch our new mobile app. It's 85% feature complete, beta testing showed good results (4.2/5 rating), but we haven't finished iOS optimization and our marketing campaign isn't ready. Launch window is important for holiday season."
 
 ### Output
@@ -106,6 +110,7 @@ Avoid:
 **Go/No-Go Decision Analysis**
 
 **Executive Summary**
+
 - **Recommendation**: CONDITIONAL GO - Phased launch (Android first)
 - Readiness Score: 78/100
 - Risk Level: Medium
@@ -123,23 +128,27 @@ Avoid:
 | **Total** | 100% | | **78/100** | |
 
 **Risk Analysis**
-*Risks of Proceeding (Android First)*
+_Risks of Proceeding (Android First)_
+
 - iOS users wait 4-6 weeks - Mitigation: Clear communication, early access signup
 - Marketing not fully optimized - Mitigation: Organic launch, paid campaign in January
 - Support volume uncertain - Mitigation: Extra staff on standby
 
-*Risks of Delaying*
+_Risks of Delaying_
+
 - Miss holiday window (est. 40% of annual downloads)
 - Competitive pressure - 2 competitors launching Q4
 - Team morale and momentum loss
 - Marketing spend already committed
 
 **Conditional Go Requirements**
+
 - iOS: Must reach 95% crash-free in beta before iOS launch
 - Marketing: Core campaign assets ready by December 15
 - Support: 24/7 coverage for first 2 weeks
 
 **Implementation Plan**
+
 1. Week 1: Android launch (Play Store)
 2. Week 2-3: Monitor metrics, iterate on issues
 3. Week 4-6: iOS optimization and submission

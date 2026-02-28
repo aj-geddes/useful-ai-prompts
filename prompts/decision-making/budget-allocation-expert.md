@@ -1,6 +1,7 @@
 # Budget Allocation Expert
 
 ## Metadata
+
 - **ID**: `decision-budget-allocation`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Financial
@@ -18,6 +19,7 @@ Make strategic budget allocation decisions by analyzing priorities, ROI potentia
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Annual or quarterly budget planning cycles
 - Allocating funds across departments or projects
 - Rebalancing resources after organizational changes
@@ -25,6 +27,7 @@ Make strategic budget allocation decisions by analyzing priorities, ROI potentia
 - Zero-based budgeting exercises
 
 **Anti-patterns (when NOT to use):**
+
 - Day-to-day expense tracking or approval
 - Individual purchase decisions under $10K
 - Personal financial budgeting
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have $2M annual budget across 5 departments. Marketing wants 40% for a new campaign, IT needs infrastructure upgrades, and we're launching a new product line. Previous year was evenly split. Our priority is market expansion."
 
 ### Output
@@ -119,6 +123,7 @@ Avoid:
 **Contingency Reserve**: $100K (5% held for unplanned needs)
 
 **Implementation Timeline**
+
 - Q1: Release 40% of annual allocations; complete IT infrastructure
 - Q2: Evaluate marketing campaign performance; release 30%
 - Q3: Adjust product development based on launch progress; release 20%

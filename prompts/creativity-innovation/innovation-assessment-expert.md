@@ -1,6 +1,7 @@
 # Innovation Assessment Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/innovation-assessment-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Innovation assessment specialist who evaluates ideas and innovations for feasibi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Evaluating innovation concepts before significant investment
 - Prioritizing among multiple innovation opportunities
 - Making go/no-go decisions on development projects
@@ -25,6 +27,7 @@ Innovation assessment specialist who evaluates ideas and innovations for feasibi
 - Portfolio management of innovation investments
 
 **Anti-Patterns:**
+
 - Still generating initial ideas (use Idea Generation Expert first)
 - Developing concepts that haven't been assessed (assessment should precede heavy development)
 - Pure market research without innovation context (use market research prompts)
@@ -97,6 +100,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Innovation: AI-powered personal nutrition app that creates custom meal plans based on DNA analysis
 
@@ -143,18 +147,19 @@ This innovation shows strong market potential in a growing sector with meaningfu
 
 **Opportunity Analysis:**
 
-| Factor | Assessment | Score |
-|--------|------------|-------|
-| Market Size | $8B and growing - substantial opportunity | 8/10 |
-| Growth Rate | 15% CAGR indicates strong tailwind | 8/10 |
-| Timing | Consumer awareness of personalized nutrition increasing | 7/10 |
-| Competition | Limited direct competition in daily planning space | 8/10 |
-| Barriers to Entry | Moderate - DNA partnerships and content creation | 6/10 |
+| Factor            | Assessment                                              | Score |
+| ----------------- | ------------------------------------------------------- | ----- |
+| Market Size       | $8B and growing - substantial opportunity               | 8/10  |
+| Growth Rate       | 15% CAGR indicates strong tailwind                      | 8/10  |
+| Timing            | Consumer awareness of personalized nutrition increasing | 7/10  |
+| Competition       | Limited direct competition in daily planning space      | 8/10  |
+| Barriers to Entry | Moderate - DNA partnerships and content creation        | 6/10  |
 
 **Competitive Landscape:**
-- *Direct competitors* (Nutrigenomix, DNAfit) focus on one-time reports, not ongoing engagement
-- *Indirect competitors* (MyFitnessPal, Noom) lack genetic personalization
-- *First-mover advantage* in combining DNA + daily meal planning is real but time-limited
+
+- _Direct competitors_ (Nutrigenomix, DNAfit) focus on one-time reports, not ongoing engagement
+- _Indirect competitors_ (MyFitnessPal, Noom) lack genetic personalization
+- _First-mover advantage_ in combining DNA + daily meal planning is real but time-limited
 
 **Market Potential Score: 8/10**
 
@@ -166,38 +171,38 @@ Strong market opportunity with meaningful white space. Timing is favorable as pe
 
 **Technical Feasibility:**
 
-| Component | Assessment | Score |
-|-----------|------------|-------|
-| DNA Analysis | Partner with established labs (proven technology) | 8/10 |
-| AI Meal Planning | Achievable with current ML capabilities | 7/10 |
-| Mobile App | Standard development, team has expertise | 9/10 |
-| Meal Database | Significant content creation required | 5/10 |
-| Integration | API connections to DNA labs manageable | 7/10 |
+| Component        | Assessment                                        | Score |
+| ---------------- | ------------------------------------------------- | ----- |
+| DNA Analysis     | Partner with established labs (proven technology) | 8/10  |
+| AI Meal Planning | Achievable with current ML capabilities           | 7/10  |
+| Mobile App       | Standard development, team has expertise          | 9/10  |
+| Meal Database    | Significant content creation required             | 5/10  |
+| Integration      | API connections to DNA labs manageable            | 7/10  |
 
-*Key Technical Risk:* Building comprehensive meal database with genetic marker correlations is substantial undertaking. This is rate-limiting factor.
+_Key Technical Risk:_ Building comprehensive meal database with genetic marker correlations is substantial undertaking. This is rate-limiting factor.
 
 **Operational Feasibility:**
 
-| Component | Assessment | Score |
-|-----------|------------|-------|
-| Team Capability | Strong tech, missing nutrition science | 5/10 |
-| Partnership Needs | DNA lab partnership critical | 6/10 |
-| Scaling Path | Subscription model scales well | 8/10 |
-| Support Requirements | Personalization means complex support | 6/10 |
+| Component            | Assessment                             | Score |
+| -------------------- | -------------------------------------- | ----- |
+| Team Capability      | Strong tech, missing nutrition science | 5/10  |
+| Partnership Needs    | DNA lab partnership critical           | 6/10  |
+| Scaling Path         | Subscription model scales well         | 8/10  |
+| Support Requirements | Personalization means complex support  | 6/10  |
 
-*Key Operational Risk:* Team lacks nutrition science and regulatory expertise. These gaps must be filled before launch.
+_Key Operational Risk:_ Team lacks nutrition science and regulatory expertise. These gaps must be filled before launch.
 
 **Financial Feasibility:**
 
-| Metric | Projection | Confidence |
-|--------|------------|------------|
-| Development Cost | $2M to launch | Medium |
-| Break-even | ~3,000 subscribers ($150K MRR) | Medium |
-| Customer Acquisition Cost | $100-150 estimated | Low |
-| Lifetime Value | $600-1000 (12-20 months) | Low |
-| LTV:CAC Ratio | 4-10x (healthy if accurate) | Low |
+| Metric                    | Projection                     | Confidence |
+| ------------------------- | ------------------------------ | ---------- |
+| Development Cost          | $2M to launch                  | Medium     |
+| Break-even                | ~3,000 subscribers ($150K MRR) | Medium     |
+| Customer Acquisition Cost | $100-150 estimated             | Low        |
+| Lifetime Value            | $600-1000 (12-20 months)       | Low        |
+| LTV:CAC Ratio             | 4-10x (healthy if accurate)    | Low        |
 
-*Key Financial Risk:* CAC and retention projections have low confidence. Beta data helpful but may not represent paid acquisition reality.
+_Key Financial Risk:_ CAC and retention projections have low confidence. Beta data helpful but may not represent paid acquisition reality.
 
 **Technical Feasibility Score: 7/10**
 
@@ -207,19 +212,19 @@ Strong market opportunity with meaningful white space. Timing is favorable as pe
 
 **High Severity Risks:**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Scientific validity questioned | Medium | High | Partner with research institutions; transparent about evidence levels |
-| Regulatory action (FDA) | Medium | High | Position as "wellness" not "medical"; get legal review before launch |
-| Genetic data breach | Low | Critical | Top-tier security; independent audits; user control of data |
+| Risk                           | Probability | Impact   | Mitigation                                                            |
+| ------------------------------ | ----------- | -------- | --------------------------------------------------------------------- |
+| Scientific validity questioned | Medium      | High     | Partner with research institutions; transparent about evidence levels |
+| Regulatory action (FDA)        | Medium      | High     | Position as "wellness" not "medical"; get legal review before launch  |
+| Genetic data breach            | Low         | Critical | Top-tier security; independent audits; user control of data           |
 
 **Medium Severity Risks:**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| User retention drops after novelty | Medium | Medium | Gamification; continuous optimization; community features |
-| DNA partner terms unfavorable | Medium | Medium | Negotiate with multiple partners; consider in-house long-term |
-| Competition enters quickly | Medium | Medium | Speed to market; build data moat; strong brand |
+| Risk                               | Probability | Impact | Mitigation                                                    |
+| ---------------------------------- | ----------- | ------ | ------------------------------------------------------------- |
+| User retention drops after novelty | Medium      | Medium | Gamification; continuous optimization; community features     |
+| DNA partner terms unfavorable      | Medium      | Medium | Negotiate with multiple partners; consider in-house long-term |
+| Competition enters quickly         | Medium      | Medium | Speed to market; build data moat; strong brand                |
 
 **Risk Level: MEDIUM-HIGH**
 
@@ -231,14 +236,14 @@ Risks are meaningful but manageable with proper mitigation. Regulatory and scien
 
 **Capability Alignment:**
 
-| Capability | Status | Gap Severity |
-|------------|--------|--------------|
-| Mobile development | Strong in-house | None |
-| AI/ML | Adequate in-house | Minor |
-| Nutrition science | Not present | **Critical** |
-| Regulatory/compliance | Not present | **Critical** |
-| DNA partnerships | Not established | **Significant** |
-| Content creation | Limited | Moderate |
+| Capability            | Status            | Gap Severity    |
+| --------------------- | ----------------- | --------------- |
+| Mobile development    | Strong in-house   | None            |
+| AI/ML                 | Adequate in-house | Minor           |
+| Nutrition science     | Not present       | **Critical**    |
+| Regulatory/compliance | Not present       | **Critical**    |
+| DNA partnerships      | Not established   | **Significant** |
+| Content creation      | Limited           | Moderate        |
 
 **Strategic Fit Score: 6/10**
 
@@ -249,15 +254,18 @@ Strong technical foundation but critical gaps in domain expertise. Gaps are fill
 **FINANCIAL PROJECTION**
 
 **Conservative Scenario (50% probability):**
+
 - Year 1: 5,000 users = $3M ARR
 - Year 2: 25,000 users = $15M ARR
 - Year 3: 60,000 users = $36M ARR
 
 **Optimistic Scenario (30% probability):**
+
 - Year 1: 10,000 users = $6M ARR
 - Year 3: 100,000 users = $60M ARR
 
 **Downside Scenario (20% probability):**
+
 - Fail to achieve product-market fit
 - Pivot or wind down with $1-1.5M spent
 
@@ -267,14 +275,14 @@ Strong technical foundation but critical gaps in domain expertise. Gaps are fill
 
 **OVERALL SCORING**
 
-| Dimension | Score | Weight | Weighted |
-|-----------|-------|--------|----------|
-| Market Potential | 8/10 | 25% | 2.0 |
-| Technical Feasibility | 7/10 | 25% | 1.75 |
-| Strategic Fit | 6/10 | 20% | 1.2 |
-| Financial Viability | 7/10 | 20% | 1.4 |
-| Risk Profile | 5/10 | 10% | 0.5 |
-| **Total** | | | **6.85/10** |
+| Dimension             | Score | Weight | Weighted    |
+| --------------------- | ----- | ------ | ----------- |
+| Market Potential      | 8/10  | 25%    | 2.0         |
+| Technical Feasibility | 7/10  | 25%    | 1.75        |
+| Strategic Fit         | 6/10  | 20%    | 1.2         |
+| Financial Viability   | 7/10  | 20%    | 1.4         |
+| Risk Profile          | 5/10  | 10%    | 0.5         |
+| **Total**             |       |        | **6.85/10** |
 
 ---
 
@@ -292,11 +300,11 @@ Proceed with staged investment tied to milestone achievement. Do not commit full
 
 **Staged Investment Approach:**
 
-| Phase | Investment | Milestone | Go/No-Go Criteria |
-|-------|------------|-----------|-------------------|
-| Phase 1 | $500K | Team + partnerships | Key hires made; DNA partner signed; regulatory path clear |
-| Phase 2 | $750K | Product + beta expansion | 500 beta users; 60% monthly retention; scientific advisory board |
-| Phase 3 | $750K | Launch + scale | 2,000 paying users; CAC under $150; positive unit economics |
+| Phase   | Investment | Milestone                | Go/No-Go Criteria                                                |
+| ------- | ---------- | ------------------------ | ---------------------------------------------------------------- |
+| Phase 1 | $500K      | Team + partnerships      | Key hires made; DNA partner signed; regulatory path clear        |
+| Phase 2 | $750K      | Product + beta expansion | 500 beta users; 60% monthly retention; scientific advisory board |
+| Phase 3 | $750K      | Launch + scale           | 2,000 paying users; CAC under $150; positive unit economics      |
 
 **Key Success Milestones:**
 

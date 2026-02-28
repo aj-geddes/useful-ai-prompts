@@ -35,59 +35,58 @@ Stress testing pushes systems beyond normal operating capacity to identify break
 
 ```javascript
 // stress-test.js
-import http from 'k6/http';
-import { check, sleep } from 'k6';
-import { Rate } from 'k6/metrics';
+import http from "k6/http";
+import { check, sleep } from "k6";
+import { Rate } from "k6/metrics";
 
-const errorRate = new Rate('errors');
+const errorRate = new Rate("errors");
 
 export const options = {
   stages: [
     // Stress testing: Progressive load increase
-    { duration: '2m', target: 100 },    // Normal load
-    { duration: '5m', target: 100 },    // Sustain normal
-    { duration: '2m', target: 200 },    // Above normal
-    { duration: '5m', target: 200 },    // Sustain above normal
-    { duration: '2m', target: 300 },    // Breaking point approaching
-    { duration: '5m', target: 300 },    // Sustain high load
-    { duration: '2m', target: 400 },    // Beyond capacity
-    { duration: '5m', target: 400 },    // System under stress
-    { duration: '5m', target: 0 },      // Gradual recovery
+    { duration: "2m", target: 100 }, // Normal load
+    { duration: "5m", target: 100 }, // Sustain normal
+    { duration: "2m", target: 200 }, // Above normal
+    { duration: "5m", target: 200 }, // Sustain above normal
+    { duration: "2m", target: 300 }, // Breaking point approaching
+    { duration: "5m", target: 300 }, // Sustain high load
+    { duration: "2m", target: 400 }, // Beyond capacity
+    { duration: "5m", target: 400 }, // System under stress
+    { duration: "5m", target: 0 }, // Gradual recovery
   ],
   thresholds: {
-    http_req_duration: ['p(99)<1000'],  // 99% under 1s during stress
-    http_req_failed: ['rate<0.05'],     // Allow 5% error rate under stress
-    errors: ['rate<0.1'],
+    http_req_duration: ["p(99)<1000"], // 99% under 1s during stress
+    http_req_failed: ["rate<0.05"], // Allow 5% error rate under stress
+    errors: ["rate<0.1"],
   },
 };
 
-const BASE_URL = __ENV.BASE_URL || 'http://localhost:3000';
+const BASE_URL = __ENV.BASE_URL || "http://localhost:3000";
 
 export function setup() {
   // Prepare test data
   const res = http.post(`${BASE_URL}/api/auth/login`, {
-    email: 'stress-test@example.com',
-    password: 'test123',
+    email: "stress-test@example.com",
+    password: "test123",
   });
 
-  return { token: res.json('token') };
+  return { token: res.json("token") };
 }
 
 export default function (data) {
   const headers = {
     Authorization: `Bearer ${data.token}`,
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   };
 
   // Heavy database query
-  const productsRes = http.get(
-    `${BASE_URL}/api/products?page=1&limit=100`,
-    { headers }
-  );
+  const productsRes = http.get(`${BASE_URL}/api/products?page=1&limit=100`, {
+    headers,
+  });
 
   const productsCheck = check(productsRes, {
-    'products loaded': (r) => r.status === 200,
-    'has products': (r) => r.json('products').length > 0,
+    "products loaded": (r) => r.status === 200,
+    "has products": (r) => r.json("products").length > 0,
   });
 
   if (!productsCheck) {
@@ -99,9 +98,7 @@ export default function (data) {
 
   // Write operation - stress database
   const orderPayload = JSON.stringify({
-    items: [
-      { productId: Math.floor(Math.random() * 100), quantity: 2 },
-    ],
+    items: [{ productId: Math.floor(Math.random() * 100), quantity: 2 }],
   });
 
   const orderRes = http.post(`${BASE_URL}/api/orders`, orderPayload, {
@@ -109,8 +106,8 @@ export default function (data) {
   });
 
   const orderCheck = check(orderRes, {
-    'order created': (r) => r.status === 201 || r.status === 503,
-    'response within 5s': (r) => r.timings.duration < 5000,
+    "order created": (r) => r.status === 201 || r.status === 503,
+    "response within 5s": (r) => r.timings.duration < 5000,
   });
 
   if (!orderCheck) {
@@ -119,7 +116,7 @@ export default function (data) {
 
   // Monitor degradation
   if (orderRes.status === 503) {
-    console.log('Service unavailable - system at capacity');
+    console.log("Service unavailable - system at capacity");
   }
 
   sleep(1);
@@ -127,7 +124,7 @@ export default function (data) {
 
 export function teardown(data) {
   // Log final metrics
-  console.log('Stress test completed');
+  console.log("Stress test completed");
 }
 ```
 
@@ -135,30 +132,30 @@ export function teardown(data) {
 
 ```javascript
 // spike-test.js
-import http from 'k6/http';
-import { check } from 'k6';
+import http from "k6/http";
+import { check } from "k6";
 
 export const options = {
   stages: [
-    { duration: '30s', target: 10 },     // Normal baseline
-    { duration: '1m', target: 10 },      // Stable baseline
-    { duration: '10s', target: 1000 },   // SPIKE! 100x increase
-    { duration: '3m', target: 1000 },    // Maintain spike
-    { duration: '10s', target: 10 },     // Drop back
-    { duration: '3m', target: 10 },      // Recovery period
+    { duration: "30s", target: 10 }, // Normal baseline
+    { duration: "1m", target: 10 }, // Stable baseline
+    { duration: "10s", target: 1000 }, // SPIKE! 100x increase
+    { duration: "3m", target: 1000 }, // Maintain spike
+    { duration: "10s", target: 10 }, // Drop back
+    { duration: "3m", target: 10 }, // Recovery period
   ],
   thresholds: {
-    http_req_duration: ['p(95)<5000'],   // Allow degradation during spike
-    http_req_failed: ['rate<0.1'],       // Allow 10% errors during spike
+    http_req_duration: ["p(95)<5000"], // Allow degradation during spike
+    http_req_failed: ["rate<0.1"], // Allow 10% errors during spike
   },
 };
 
 export default function () {
-  const res = http.get('http://api.example.com/health');
+  const res = http.get("http://api.example.com/health");
 
   check(res, {
-    'system responsive': (r) => r.status === 200 || r.status === 429,
-    'response received': (r) => r.body.length > 0,
+    "system responsive": (r) => r.status === 200 || r.status === 429,
+    "response received": (r) => r.body.length > 0,
   });
 }
 ```
@@ -370,12 +367,12 @@ if __name__ == '__main__':
 
 ```typescript
 // test-autoscaling.ts
-import { test, expect } from '@playwright/test';
-import axios from 'axios';
+import { test, expect } from "@playwright/test";
+import axios from "axios";
 
-test.describe('Auto-scaling Stress Test', () => {
-  test('system should scale up under load', async () => {
-    const baseUrl = 'http://api.example.com';
+test.describe("Auto-scaling Stress Test", () => {
+  test("system should scale up under load", async () => {
+    const baseUrl = "http://api.example.com";
     const cloudwatch = new AWS.CloudWatch();
 
     // Initial instance count
@@ -386,14 +383,15 @@ test.describe('Auto-scaling Stress Test', () => {
     const requests = [];
     for (let i = 0; i < 1000; i++) {
       requests.push(
-        axios.get(`${baseUrl}/api/heavy-operation`)
-          .catch(err => ({ error: err.message }))
+        axios
+          .get(`${baseUrl}/api/heavy-operation`)
+          .catch((err) => ({ error: err.message })),
       );
     }
 
     // Wait for auto-scaling trigger
     await Promise.all(requests);
-    await new Promise(resolve => setTimeout(resolve, 120000)); // 2 min
+    await new Promise((resolve) => setTimeout(resolve, 120000)); // 2 min
 
     // Check if scaled up
     const scaledInstances = await getInstanceCount();
@@ -402,13 +400,15 @@ test.describe('Auto-scaling Stress Test', () => {
     expect(scaledInstances).toBeGreaterThan(initialInstances);
 
     // Verify metrics
-    const cpuMetrics = await cloudwatch.getMetricStatistics({
-      Namespace: 'AWS/EC2',
-      MetricName: 'CPUUtilization',
-      // ... metric params
-    }).promise();
+    const cpuMetrics = await cloudwatch
+      .getMetricStatistics({
+        Namespace: "AWS/EC2",
+        MetricName: "CPUUtilization",
+        // ... metric params
+      })
+      .promise();
 
-    expect(cpuMetrics.Datapoints.some(d => d.Average > 70)).toBe(true);
+    expect(cpuMetrics.Datapoints.some((d) => d.Average > 70)).toBe(true);
   });
 });
 ```
@@ -515,6 +515,7 @@ test.find_breaking_point()
 ## Metrics to Monitor
 
 ### Application Metrics
+
 - Response times (P50, P95, P99, Max)
 - Error rates and types
 - Throughput (req/s)
@@ -522,6 +523,7 @@ test.find_breaking_point()
 - Circuit breaker trips
 
 ### System Metrics
+
 - CPU utilization
 - Memory usage and leaks
 - Disk I/O
@@ -529,6 +531,7 @@ test.find_breaking_point()
 - Thread/connection pools
 
 ### Database Metrics
+
 - Query execution times
 - Connection pool usage
 - Lock contention
@@ -538,6 +541,7 @@ test.find_breaking_point()
 ## Best Practices
 
 ### ✅ DO
+
 - Test in production-like environment
 - Monitor all system resources
 - Gradually increase load to find limits
@@ -548,6 +552,7 @@ test.find_breaking_point()
 - Monitor for memory leaks
 
 ### ❌ DON'T
+
 - Test in production without safeguards
 - Skip recovery testing
 - Ignore warning signs (CPU, memory)

@@ -3,23 +3,24 @@ title: Game Narrative Designer
 slug: game-narrative-designer
 category: creative
 tags:
-- game
-- narrative
-- world-building
-- branching
-- narrative
-- interactive
-- storytelling
-- game
-- writing
-- character
-- development
-- lore
+  - game
+  - narrative
+  - world-building
+  - branching
+  - narrative
+  - interactive
+  - storytelling
+  - game
+  - writing
+  - character
+  - development
+  - lore
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a game narrative designer persona that develops world-building
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a game narrative designer persona that develops world-building
   frameworks, branching narrative systems, character backstories, dialogue trees,
   and lore documentation for video games, tabletop RPGs, and interactive fiction.
   It applies both narrative craft and the specific structural demands of interactive
@@ -28,15 +29,15 @@ description: This prompt enables a game narrative designer persona that develops
   design branching story systems, write character dialogue, or build lore documentation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing the world-building foundation and lore system for a new game — history,
-  factions, cosmology, culture
-- Designing a branching narrative structure for a dialogue system or quest with meaningful
-  player choice
-- Writing character backstories and dialogue voices that feel consistent and alive
-  across a large cast of NPCs
-- Game design systems, mechanics, and balance — game narrative is one discipline within
-  game design, not all of it
+  - Ideal Scenarios:**
+  - Developing the world-building foundation and lore system for a new game — history,
+    factions, cosmology, culture
+  - Designing a branching narrative structure for a dialogue system or quest with meaningful
+    player choice
+  - Writing character backstories and dialogue voices that feel consistent and alive
+    across a large cast of NPCs
+  - Game design systems, mechanics, and balance — game narrative is one discipline within
+    game design, not all of it
 complexity: advanced
 interaction: multi-turn
 ---

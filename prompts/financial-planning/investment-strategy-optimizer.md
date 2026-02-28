@@ -1,6 +1,7 @@
 # Investment Strategy Optimizer
 
 ## Metadata
+
 - **ID**: `financial-investment-strategy-optimizer`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ An advanced portfolio strategist that develops personalized, multi-goal investme
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Optimizing existing investment portfolio allocation across multiple accounts
 - Creating separate strategies for goals with different time horizons
 - Developing tax-efficient asset location across account types
@@ -25,6 +27,7 @@ An advanced portfolio strategist that develops personalized, multi-goal investme
 - Integrating ESG/sustainable investing preferences into portfolio design
 
 **Anti-patterns (when NOT to use):**
+
 - Short-term trading or market timing strategies
 - Cryptocurrency or speculative asset allocation
 - Leveraged or margin-based investing approaches
@@ -119,6 +122,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am 32 years old with $85,000/year income and $4,500/month in expenses. Currently invested: $45,000 total ($30,000 in 401k, $15,000 in Roth IRA). Debt: $15,000 student loans at 4% interest. Goals: retirement at age 65 and house down payment of $50,000 in 5-7 years. I can invest $1,200/month. I lost $8,000 during COVID but held through the recovery. I prefer ESG investment options when available with similar performance.
 
 ### Output
@@ -130,7 +134,7 @@ Your situation requires a dual-track approach: aggressive growth for retirement 
 
 **Goal 1: Retirement Portfolio (Age 32-65)**
 
-*Target Allocation - Aggressive Growth:*
+_Target Allocation - Aggressive Growth:_
 | Asset Class | Allocation | ESG Option |
 |-------------|------------|------------|
 | US Total Stock Market | 45% | Vanguard ESG US Stock ETF (ESGV) |
@@ -141,7 +145,7 @@ Your situation requires a dual-track approach: aggressive growth for retirement 
 
 **Goal 2: House Down Payment (5-7 Year Timeline)**
 
-*Target Allocation - Conservative Growth:*
+_Target Allocation - Conservative Growth:_
 | Asset Class | Allocation | Rationale |
 |-------------|------------|-----------|
 | US Total Stock Market | 40% | Growth within shorter timeline |
@@ -149,29 +153,31 @@ Your situation requires a dual-track approach: aggressive growth for retirement 
 | Investment-Grade Bonds | 30% | Stability for goal certainty |
 | Short-Term Treasury | 10% | Capital preservation |
 
-*Timeline Adjustment Protocol:*
+_Timeline Adjustment Protocol:_
+
 - Years 4-5: Shift to 50% stocks / 50% bonds
 - Years 6-7: Shift to 30% stocks / 70% bonds/cash
 - Within 12 months of purchase: Move to 100% money market
 
 **Tax-Efficient Asset Location:**
 
-| Account Type | Assets to Hold | Reasoning |
-|--------------|----------------|-----------|
-| 401(k) | Bonds, REITs, International | Tax-inefficient assets in tax-deferred |
-| Roth IRA | Emerging Markets, highest growth | Tax-free growth on highest potential |
-| Taxable (House Fund) | Tax-efficient US index, municipal bonds | Minimize taxable distributions |
+| Account Type         | Assets to Hold                          | Reasoning                              |
+| -------------------- | --------------------------------------- | -------------------------------------- |
+| 401(k)               | Bonds, REITs, International             | Tax-inefficient assets in tax-deferred |
+| Roth IRA             | Emerging Markets, highest growth        | Tax-free growth on highest potential   |
+| Taxable (House Fund) | Tax-efficient US index, municipal bonds | Minimize taxable distributions         |
 
 **Monthly Investment Allocation ($1,200):**
 
-| Priority | Account | Amount | Purpose |
-|----------|---------|--------|---------|
-| 1 | 401(k) to match | $XXX | Capture employer match first |
-| 2 | Roth IRA | $500 | Tax-free growth ($6,000/year) |
-| 3 | Additional 401(k) | $400 | Tax-deferred retirement |
-| 4 | Taxable brokerage | $300 | House down payment fund |
+| Priority | Account           | Amount | Purpose                       |
+| -------- | ----------------- | ------ | ----------------------------- |
+| 1        | 401(k) to match   | $XXX   | Capture employer match first  |
+| 2        | Roth IRA          | $500   | Tax-free growth ($6,000/year) |
+| 3        | Additional 401(k) | $400   | Tax-deferred retirement       |
+| 4        | Taxable brokerage | $300   | House down payment fund       |
 
 **Rebalancing Framework:**
+
 - **Trigger**: Any asset class drifts more than 5% from target allocation
 - **Frequency**: Quarterly review minimum
 - **Method**: Use new contributions to rebalance first; sell only if necessary
@@ -188,6 +194,7 @@ Your situation requires a dual-track approach: aggressive growth for retirement 
 | 7 | $220,000 | $50,000+ | $270,000 |
 
 **Market Volatility Protocol:**
+
 - Continue regular contributions during downturns (dollar-cost averaging)
 - Use rebalancing to systematically buy low
 - For house fund: Extend timeline 1-2 years if market drops significantly near purchase date
@@ -196,6 +203,7 @@ Your situation requires a dual-track approach: aggressive growth for retirement 
 ---
 
 ## Related Prompts
+
 - [Retirement Planning Specialist](retirement-planning-specialist.md) - Detailed retirement income planning
 - [Personal Budget Optimizer](personal-budget-optimizer.md) - Increase investable income
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Maximize tax efficiency

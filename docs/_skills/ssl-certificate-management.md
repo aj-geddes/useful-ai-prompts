@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Manage SSL/TLS certificates with automated provisioning, renewal, and
+date: "2025-01-01"
+description:
+  Manage SSL/TLS certificates with automated provisioning, renewal, and
   monitoring using Let's Encrypt, ACM, or Vault.
 layout: skill
 slug: ssl-certificate-management
 tags:
-- development
+  - development
 title: ssl-certificate-management
 ---
 
@@ -82,8 +83,8 @@ spec:
     - www.myapp.com
     - api.myapp.com
     - "*.myapp.com"
-  duration: 2160h  # 90 days
-  renewBefore: 720h  # 30 days before expiry
+  duration: 2160h # 90 days
+  renewBefore: 720h # 30 days before expiry
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -252,7 +253,7 @@ metadata:
   name: certificate-renewal
   namespace: operations
 spec:
-  schedule: "0 2 * * 0"  # Weekly at 2 AM Sunday
+  schedule: "0 2 * * 0" # Weekly at 2 AM Sunday
   jobTemplate:
     spec:
       template:
@@ -342,6 +343,7 @@ server {
 ## Best Practices
 
 ### ✅ DO
+
 - Automate certificate renewal
 - Use Let's Encrypt for public certs
 - Monitor certificate expiration
@@ -352,6 +354,7 @@ server {
 - Use strong key sizes (2048+ RSA, 256+ ECDSA)
 
 ### ❌ DON'T
+
 - Manual certificate management
 - Self-signed certs in production
 - Share private keys

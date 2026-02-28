@@ -3,27 +3,28 @@ title: Spacecraft Development Payload Integration Management
 slug: spacecraft-development-payload-integration-management
 category: space economy
 tags:
-- payload-integration
-- spacecraft-assembly
-- customer-management
-- satellite-testing
-- interface-control
+  - payload-integration
+  - spacecraft-assembly
+  - customer-management
+  - satellite-testing
+  - interface-control
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Manage spacecraft payload integration including customer coordination,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Manage spacecraft payload integration including customer coordination,
   interface management, integration testing, and delivery preparation. Focuses on
   multi-payload satellite programs with international customers, optimizing integration
   sequences and resolving the inevitable challenges of bringing together hardware
   from diverse sources.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Integrating customer payloads into satellite bus platforms
-- Managing multi-customer payload programs with schedule pressure
-- Coordinating payload delivery and testing schedules across time zones
-- Resolving integration issues and interface conflicts
+  - Ideal Scenarios:**
+  - Integrating customer payloads into satellite bus platforms
+  - Managing multi-customer payload programs with schedule pressure
+  - Coordinating payload delivery and testing schedules across time zones
+  - Resolving integration issues and interface conflicts
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ The user requires payload integration management that balances technical rigor w
 
 <input_handling>
 Required Inputs:
+
 - Payload manifest and customer list
 - Integration timeline and constraints
 - Interface requirements status
 
 Optional Inputs (will infer reasonable defaults if not provided):
+
 - Integration sequence: Largest/most complex payloads first
 - Testing approach: Standalone validation then integrated testing
 - Customer coordination: Weekly status, monthly formal reviews
 - Issue escalation: 24-hour response for critical issues
-</input_handling>
+  </input_handling>
 
 <task>
 Manage payload integration by following these steps:
@@ -63,12 +66,13 @@ Manage payload integration by following these steps:
 5. **Resolve Issues**: Establish issue identification, communication, and resolution protocols that solve problems quickly while maintaining customer relationships
 
 6. **Deliver Integrated Spacecraft**: Complete system-level testing and prepare integrated spacecraft for environmental testing and launch
-</task>
+   </task>
 
 <output_specification>
 Format: Payload Integration Plan
 Length: 2,000-3,500 words for full plan
 Structure:
+
 - Payload status overview with delivery tracking
 - Integration sequence strategy (original and contingency)
 - Weekly integration schedule
@@ -78,10 +82,11 @@ Structure:
 - Integration issue protocol
 - Testing and verification plan
 - Success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Clear integration sequence with dependency management
 - Comprehensive interface control with frozen ICDs
 - Effective multi-customer communication protocols
@@ -89,12 +94,13 @@ Excellent outputs demonstrate:
 - Proactive issue identification and resolution
 
 Avoid:
+
 - Unclear integration dependencies causing conflicts
 - Missing or incomplete interface requirements
 - Poor customer communication causing surprises
 - Inadequate testing or verification gaps
 - Reactive issue management without escalation paths
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Clean room availability and scheduling constraints

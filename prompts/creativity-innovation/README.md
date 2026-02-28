@@ -22,4 +22,4 @@ Innovation frameworks and creative thinking tools for breakthrough solutions.
 
 ---
 
-*Innovation and creativity prompts for breakthrough thinking and systematic innovation.*
+_Innovation and creativity prompts for breakthrough thinking and systematic innovation._

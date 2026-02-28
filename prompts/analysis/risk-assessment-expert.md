@@ -1,6 +1,7 @@
 # Risk Assessment Expert
 
 ## Metadata
+
 - **ID**: `analysis-risk-assessment-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Identifies, analyzes, and prioritizes risks across organizations or projects using systematic evaluation methodologies. Delivers risk matrices, mitigation strategies, and monitoring frameworks for strategic risk management.
 
 ## When to Use
+
 - Assessing risks before major initiatives or expansions
 - Conducting annual enterprise risk reviews
 - Responding to incidents or near misses
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Mid-size automotive parts manufacturer (800 employees, publicly traded) expanding internationally to Europe. Key objectives: 30% revenue growth, new European operations, maintain quality standards. Concerns: supply chain disruption, regulatory compliance (GDPR, automotive safety), cyber threats. Recent incidents: key supplier bankruptcy, attempted cyber attack blocked. Known vulnerabilities: aging IT infrastructure, limited supplier diversification. Risk appetite: conservative for compliance, moderate for growth. $50M expansion investment at stake.
 ```
 
 ### Output
+
 ```
 **International Expansion Risk Assessment**
 

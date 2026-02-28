@@ -1,13 +1,14 @@
 ---
 category: monitoring-observability
-date: '2025-01-01'
-description: Set up Prometheus monitoring for applications with custom metrics, scraping
+date: "2025-01-01"
+description:
+  Set up Prometheus monitoring for applications with custom metrics, scraping
   configurations, and service discovery. Use when implementing time-series metrics
   collection, monitoring applications, or building observability infrastructure.
 layout: skill
 slug: prometheus-monitoring
 tags:
-- api
+  - api
 title: prometheus-monitoring
 ---
 
@@ -40,32 +41,32 @@ global:
 alerting:
   alertmanagers:
     - static_configs:
-        - targets: ['localhost:9093']
+        - targets: ["localhost:9093"]
 
 rule_files:
-  - '/etc/prometheus/alert_rules.yml'
+  - "/etc/prometheus/alert_rules.yml"
 
 scrape_configs:
-  - job_name: 'prometheus'
+  - job_name: "prometheus"
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ["localhost:9090"]
 
-  - job_name: 'node'
+  - job_name: "node"
     static_configs:
-      - targets: ['localhost:9100']
+      - targets: ["localhost:9100"]
 
-  - job_name: 'api-service'
+  - job_name: "api-service"
     static_configs:
-      - targets: ['localhost:8080/metrics']
+      - targets: ["localhost:8080/metrics"]
     scrape_interval: 10s
 
-  - job_name: 'kubernetes-pods'
+  - job_name: "kubernetes-pods"
     kubernetes_sd_configs:
       - role: pod
     relabel_configs:
       - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
         action: keep
-        regex: 'true'
+        regex: "true"
       - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
         action: replace
         target_label: __metrics_path__
@@ -75,45 +76,43 @@ scrape_configs:
 
 ```javascript
 // metrics.js
-const promClient = require('prom-client');
+const promClient = require("prom-client");
 const register = new promClient.Registry();
 
 promClient.collectDefaultMetrics({ register });
 
 const httpRequestDuration = new promClient.Histogram({
-  name: 'http_request_duration_seconds',
-  help: 'HTTP request duration',
-  labelNames: ['method', 'route', 'status_code'],
+  name: "http_request_duration_seconds",
+  help: "HTTP request duration",
+  labelNames: ["method", "route", "status_code"],
   buckets: [0.1, 0.5, 1, 2, 5],
-  registers: [register]
+  registers: [register],
 });
 
 const requestsTotal = new promClient.Counter({
-  name: 'requests_total',
-  help: 'Total requests',
-  labelNames: ['method', 'route', 'status_code'],
-  registers: [register]
+  name: "requests_total",
+  help: "Total requests",
+  labelNames: ["method", "route", "status_code"],
+  registers: [register],
 });
 
 // Express middleware
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/metrics', (req, res) => {
-  res.set('Content-Type', register.contentType);
+app.get("/metrics", (req, res) => {
+  res.set("Content-Type", register.contentType);
   res.end(register.metrics());
 });
 
 app.use((req, res, next) => {
   const start = Date.now();
-  res.on('finish', () => {
+  res.on("finish", () => {
     const duration = (Date.now() - start) / 1000;
     httpRequestDuration
       .labels(req.method, req.path, res.statusCode)
       .observe(duration);
-    requestsTotal
-      .labels(req.method, req.path, res.statusCode)
-      .inc();
+    requestsTotal.labels(req.method, req.path, res.statusCode).inc();
   });
   next();
 });
@@ -184,7 +183,7 @@ groups:
 ### 5. **Docker Compose Setup**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 services:
   prometheus:
     image: prom/prometheus:latest
@@ -195,9 +194,9 @@ services:
       - ./alert_rules.yml:/etc/prometheus/alert_rules.yml
       - prometheus_data:/prometheus
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--storage.tsdb.path=/prometheus'
-      - '--storage.tsdb.retention.time=30d'
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--storage.tsdb.retention.time=30d"
 
   node-exporter:
     image: prom/node-exporter:latest
@@ -211,6 +210,7 @@ volumes:
 ## Best Practices
 
 ### ✅ DO
+
 - Use consistent metric naming conventions
 - Add comprehensive labels for filtering
 - Set appropriate scrape intervals (10-60s)
@@ -220,6 +220,7 @@ volumes:
 - Document metric meanings
 
 ### ❌ DON'T
+
 - Add unbounded cardinality labels
 - Scrape too frequently (< 10s)
 - Ignore metric naming conventions

@@ -1,6 +1,7 @@
 # Market Research Expert
 
 ## Metadata
+
 - **ID**: `research-market-analysis`
 - **Version**: 1.0.0
 - **Category**: Research/Business
@@ -18,6 +19,7 @@ Design and execute comprehensive market research to understand customer needs, m
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Launching new products or entering new markets requiring customer validation
 - Sizing market opportunities and prioritizing target segments
 - Understanding customer needs, pain points, and purchase decision factors
@@ -25,6 +27,7 @@ Design and execute comprehensive market research to understand customer needs, m
 - Validating product-market fit before significant investment
 
 **Anti-Patterns (Don't Use For):**
+
 - Academic research without business application or commercial intent
 - Competitor-only analysis without customer perspective
 - Pure financial modeling without primary research component
@@ -109,21 +112,24 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're launching a plant-based snack line and need to understand the market. Target is health-conscious consumers aged 25-45. Budget is $75K for research, and we need findings in 8 weeks for product development decisions. We're particularly interested in understanding what drives purchase in this category and how to differentiate from existing options."
 
 ### Output
+
 **Market Research Plan: Plant-Based Snacks Category**
 
 **Research Design**
 
-| Phase | Method | Sample | Budget | Timeline |
-|-------|--------|--------|--------|----------|
-| 1: Exploratory | Focus groups (4 groups) | n=32 | $18K | Weeks 1-3 |
-| 2: Quantitative | Online survey panel | n=1,200 | $35K | Weeks 3-6 |
-| 3: Competitive | Retail shelf audit + analysis | 50 stores | $12K | Weeks 2-4 |
-| 4: Synthesis | Analysis + reporting | - | $10K | Weeks 6-8 |
+| Phase           | Method                        | Sample    | Budget | Timeline  |
+| --------------- | ----------------------------- | --------- | ------ | --------- |
+| 1: Exploratory  | Focus groups (4 groups)       | n=32      | $18K   | Weeks 1-3 |
+| 2: Quantitative | Online survey panel           | n=1,200   | $35K   | Weeks 3-6 |
+| 3: Competitive  | Retail shelf audit + analysis | 50 stores | $12K   | Weeks 2-4 |
+| 4: Synthesis    | Analysis + reporting          | -         | $10K   | Weeks 6-8 |
 
 **Research Objectives Alignment:**
+
 - Product development: Attribute importance, flavor preferences, format expectations
 - Positioning: Differentiation opportunities, messaging resonance
 - Go-to-market: Channel priorities, price sensitivity, purchase occasions
@@ -133,6 +139,7 @@ Avoid:
 **Segmentation Framework**
 
 **Segment 1: Wellness Warriors (28% of category, $1.2B)**
+
 - **Profile**: 25-35 years, urban, HHI $85K+, fitness-focused lifestyle
 - **Purchase Drivers**: Protein content (minimum 8g), clean label (<10 ingredients), post-workout positioning
 - **Price Sensitivity**: Low - willing to pay 40%+ premium for aligned benefits
@@ -140,6 +147,7 @@ Avoid:
 - **Competitive Set**: RXBAR, Perfect Bar, Chomps
 
 **Segment 2: Flexitarian Families (35% of category, $1.5B)**
+
 - **Profile**: 32-45 years, suburban, HHI $65K+, health-aware parents
 - **Purchase Drivers**: Kid-friendly taste, allergen-free options, familiar flavors
 - **Price Sensitivity**: Medium - 15-25% premium acceptable for health halo
@@ -147,6 +155,7 @@ Avoid:
 - **Competitive Set**: Hippeas, Lesser Evil, Siete
 
 **Segment 3: Eco-Conscious Explorers (22% of category, $950M)**
+
 - **Profile**: 22-38 years, values-driven, diverse geography
 - **Purchase Drivers**: Sustainability credentials, novel ingredients, ethical sourcing narrative
 - **Price Sensitivity**: Medium-low - pays for verified values alignment
@@ -157,11 +166,11 @@ Avoid:
 
 **Market Sizing**
 
-| Tier | Scope | Size (2024) | CAGR |
-|------|-------|-------------|------|
-| TAM | US Plant-Based Snacks | $4.2B | 11% |
-| SAM | Health-Conscious 25-45 | $1.8B | 13% |
-| SOM | Realistic Year 3 Target | $12-18M | - |
+| Tier | Scope                   | Size (2024) | CAGR |
+| ---- | ----------------------- | ----------- | ---- |
+| TAM  | US Plant-Based Snacks   | $4.2B       | 11%  |
+| SAM  | Health-Conscious 25-45  | $1.8B       | 13%  |
+| SOM  | Realistic Year 3 Target | $12-18M     | -    |
 
 **Methodology**: Top-down from Euromonitor category data, validated against retailer scanner data. SAM derived from segmentation analysis applying demographic and behavioral filters. SOM assumes 0.7-1.0% segment share with distribution in 2,500 retail doors.
 
@@ -170,6 +179,7 @@ Avoid:
 **Key Consumer Insights**
 
 **Purchase Drivers (Ranked by MaxDiff analysis):**
+
 1. Taste/flavor quality (utility score: 42)
 2. Protein content (utility score: 28)
 3. Clean ingredient list (utility score: 24)
@@ -184,16 +194,17 @@ Avoid:
 
 **Strategic Recommendations**
 
-| Priority | Recommendation | Rationale |
-|----------|----------------|-----------|
-| P1 | Target Flexitarian Families first | Largest segment, mainstream channel access, proven price tolerance |
-| P1 | Lead with taste, support with health | Consumer hierarchy demands taste-first positioning |
-| P2 | Develop kid-friendly flavor variants | Family purchase driver, competition gap |
-| P3 | Build sustainability credentials | Required for Segment 3 expansion, rising table stakes |
+| Priority | Recommendation                       | Rationale                                                          |
+| -------- | ------------------------------------ | ------------------------------------------------------------------ |
+| P1       | Target Flexitarian Families first    | Largest segment, mainstream channel access, proven price tolerance |
+| P1       | Lead with taste, support with health | Consumer hierarchy demands taste-first positioning                 |
+| P2       | Develop kid-friendly flavor variants | Family purchase driver, competition gap                            |
+| P3       | Build sustainability credentials     | Required for Segment 3 expansion, rising table stakes              |
 
 ---
 
 ## Related Prompts
+
 - [Consumer Behavior Research Expert](consumer-behavior-research-expert.md) - Deep behavioral analysis
 - [Competitive Intelligence Expert](competitive-intelligence-expert.md) - Competitor strategy analysis
 - [User Research Expert](user-research-expert.md) - Product-specific user insights

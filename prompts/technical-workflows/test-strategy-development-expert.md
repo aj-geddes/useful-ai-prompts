@@ -1,6 +1,7 @@
 # Test Strategy Development Expert
 
 ## Metadata
+
 - **ID**: `test-strategy-development-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Develops comprehensive testing strategies that ensure software quality, reduce p
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating testing strategies for new projects or major features
 - Improving test automation coverage and reducing manual testing burden
 - Implementing CI/CD quality gates with appropriate test suites
@@ -25,6 +27,7 @@ Develops comprehensive testing strategies that ensure software quality, reduce p
 - Transitioning from manual-heavy to automation-first testing
 
 **Anti-patterns (when NOT to use):**
+
 - Writing individual test cases (use test case writing prompts)
 - Debugging specific test failures or flaky tests
 - Executing existing test suites
@@ -128,24 +131,24 @@ We have an e-commerce platform with React web app and React Native mobile apps. 
 
 **Coverage Targets by Layer**
 
-| Layer | Coverage Target | Focus Areas | Execution Time |
-|-------|-----------------|-------------|----------------|
-| Unit | 80% line coverage | Business logic, calculations, React components | < 3 min |
-| Integration | 100% API endpoints | Payment gateway, inventory, order services | < 8 min |
-| E2E | 20 critical flows | Complete checkout, payment, refund journeys | < 15 min |
-| Manual/Exploratory | New features | Edge cases, usability, cross-browser | Ad-hoc |
+| Layer              | Coverage Target    | Focus Areas                                    | Execution Time |
+| ------------------ | ------------------ | ---------------------------------------------- | -------------- |
+| Unit               | 80% line coverage  | Business logic, calculations, React components | < 3 min        |
+| Integration        | 100% API endpoints | Payment gateway, inventory, order services     | < 8 min        |
+| E2E                | 20 critical flows  | Complete checkout, payment, refund journeys    | < 15 min       |
+| Manual/Exploratory | New features       | Edge cases, usability, cross-browser           | Ad-hoc         |
 
 **Automation Framework Recommendations**
 
-| Layer | Tool | Rationale |
-|-------|------|-----------|
-| Unit (Web) | Jest + React Testing Library | Team familiarity, excellent React support, fast execution |
-| Unit (Mobile) | Jest + React Native Testing Library | Consistent with web, shared knowledge |
-| API Testing | Supertest + Jest | Integrates with existing Jest setup, good mocking |
-| E2E (Web) | Playwright | Multi-browser, reliable selectors, built-in parallelization |
-| E2E (Mobile) | Detox | Native React Native support, reliable on CI |
-| Performance | k6 | Developer-friendly JavaScript syntax, CI integration |
-| Security | OWASP ZAP | Industry standard, automates in CI |
+| Layer         | Tool                                | Rationale                                                   |
+| ------------- | ----------------------------------- | ----------------------------------------------------------- |
+| Unit (Web)    | Jest + React Testing Library        | Team familiarity, excellent React support, fast execution   |
+| Unit (Mobile) | Jest + React Native Testing Library | Consistent with web, shared knowledge                       |
+| API Testing   | Supertest + Jest                    | Integrates with existing Jest setup, good mocking           |
+| E2E (Web)     | Playwright                          | Multi-browser, reliable selectors, built-in parallelization |
+| E2E (Mobile)  | Detox                               | Native React Native support, reliable on CI                 |
+| Performance   | k6                                  | Developer-friendly JavaScript syntax, CI integration        |
+| Security      | OWASP ZAP                           | Industry standard, automates in CI                          |
 
 **CI/CD Quality Gates**
 
@@ -179,35 +182,36 @@ quality_gates:
 
 Given the checkout regression issues, implement these tests first:
 
-| Test | Type | Priority | Risk Mitigated |
-|------|------|----------|----------------|
-| Cart total calculation | Unit | P0 | Incorrect pricing |
-| Payment API integration | Integration | P0 | Payment failures |
-| Complete checkout journey | E2E | P0 | Checkout blocking |
-| Inventory deduction | Integration | P1 | Overselling |
-| Discount application | Unit | P1 | Pricing errors |
+| Test                      | Type        | Priority | Risk Mitigated    |
+| ------------------------- | ----------- | -------- | ----------------- |
+| Cart total calculation    | Unit        | P0       | Incorrect pricing |
+| Payment API integration   | Integration | P0       | Payment failures  |
+| Complete checkout journey | E2E         | P0       | Checkout blocking |
+| Inventory deduction       | Integration | P1       | Overselling       |
+| Discount application      | Unit        | P1       | Pricing errors    |
 
 **Metrics Framework**
 
-| Metric | Current Baseline | 6-Month Target | Measurement |
-|--------|------------------|----------------|-------------|
-| Automated test coverage | 25% | 75% | Code coverage tools |
-| Regression bugs per release | 12 | 3 | Bug tracking |
-| CI pipeline duration | N/A | < 20 min | CI metrics |
-| Flaky test rate | Unknown | < 2% | Test stability tracking |
-| Production defect escape rate | 8/month | 2/month | Incident tracking |
+| Metric                        | Current Baseline | 6-Month Target | Measurement             |
+| ----------------------------- | ---------------- | -------------- | ----------------------- |
+| Automated test coverage       | 25%              | 75%            | Code coverage tools     |
+| Regression bugs per release   | 12               | 3              | Bug tracking            |
+| CI pipeline duration          | N/A              | < 20 min       | CI metrics              |
+| Flaky test rate               | Unknown          | < 2%           | Test stability tracking |
+| Production defect escape rate | 8/month          | 2/month        | Incident tracking       |
 
 **Implementation Roadmap**
 
-*Phase 1 - Foundation (Weeks 1-4):* Set up Jest and Playwright infrastructure, write unit tests for checkout calculations, create 5 critical E2E tests for checkout flow, integrate into CI with quality gates.
+_Phase 1 - Foundation (Weeks 1-4):_ Set up Jest and Playwright infrastructure, write unit tests for checkout calculations, create 5 critical E2E tests for checkout flow, integrate into CI with quality gates.
 
-*Phase 2 - Expansion (Weeks 5-8):* Expand unit coverage to 60%, add API contract tests for payment and inventory services, implement performance baseline tests, train QA team on automation.
+_Phase 2 - Expansion (Weeks 5-8):_ Expand unit coverage to 60%, add API contract tests for payment and inventory services, implement performance baseline tests, train QA team on automation.
 
-*Phase 3 - Maturity (Weeks 9-12):* Reach 80% unit coverage target, add security scanning, implement visual regression testing, establish flaky test quarantine process, launch metrics dashboard.
+_Phase 3 - Maturity (Weeks 9-12):_ Reach 80% unit coverage target, add security scanning, implement visual regression testing, establish flaky test quarantine process, launch metrics dashboard.
 
 ---
 
 ## Related Prompts
+
 - [Code Refactoring Expert](./code-refactoring-expert.md) - Refactor code to improve testability
 - [Deployment Pipeline Creation Expert](./deployment-pipeline-creation-expert.md) - Build CI/CD pipelines with quality gates
 - [Quality Assurance Expert](../evaluation-assessment/quality-assurance-expert.md) - Establish QA processes

@@ -1,6 +1,7 @@
 # Graphic Design Expert
 
 ## Metadata
+
 - **ID**: creative-graphic-design-expert
 - **Version**: 3.0.0
 - **Category**: Creative/Design
@@ -18,6 +19,7 @@ A comprehensive graphic design assistant that creates compelling visual designs 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating social media graphics and campaign visuals
 - Designing marketing materials (brochures, flyers, banners)
 - Developing presentation and pitch deck designs
@@ -25,6 +27,7 @@ A comprehensive graphic design assistant that creates compelling visual designs 
 - Creating infographics and data visualizations
 
 **Anti-Patterns (When Not to Use):**
+
 - Complete brand identity systems (use visual design prompts)
 - UI/UX interface design (use wireframing prompts)
 - Complex motion graphics or animation
@@ -113,6 +116,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Series of social media posts for product launch
 2. Announce our new AI-powered fitness app - emphasize innovation and health
@@ -139,12 +143,14 @@ Requirements:
 ### Visual Strategy
 
 **Core Concept: "Future of Fitness"**
+
 - Blend high-tech aesthetics with human vitality
 - Clean interfaces showcasing the app's simplicity
 - Dynamic energy through subtle motion elements
 - Trust through consistent, professional execution
 
 **Visual Metaphors:**
+
 - Data visualization elements (representing AI)
 - Geometric patterns (suggesting precision)
 - Gradient overlays (implying movement/progress)
@@ -170,6 +176,7 @@ Requirements:
 ```
 
 **Rationale:**
+
 - App screenshot with overlaid performance metrics
 - Blue gradient background (light to dark)
 - Bold typography at bottom
@@ -190,6 +197,7 @@ Requirements:
 ```
 
 **Rationale:**
+
 - 50/50 split: human element + technology
 - Diagonal dividing line for dynamism
 - Text overlay on solid color band
@@ -220,22 +228,26 @@ Requirements:
 | Tech Purple | #6B5FFF | Innovation accent |
 
 **Gradients:**
+
 - Blue to Purple: #0066FF to #6B5FFF
 - Blue to Cyan: #0066FF to #00D4AA
 
 ### Typography System
 
 **Headlines:** SF Pro Display or Inter
+
 - Weight: Bold/Black
 - Tracking: -0.02em
 - Size: 48-64pt
 
 **Body:** Inter or Helvetica Neue
+
 - Weight: Regular/Medium
 - Size: 16-20pt
 - Line height: 1.5
 
 **CTAs:** All caps, medium weight
+
 - Tracking: 0.1em
 - Size: 14-16pt
 
@@ -244,6 +256,7 @@ Requirements:
 ### Instagram Post (1080x1080)
 
 **Step-by-step:**
+
 1. Create 1080x1080 canvas in design tool
 2. Apply blue gradient background (45 degrees)
 3. Add subtle grid overlay at 5% opacity
@@ -254,6 +267,7 @@ Requirements:
 8. Place logo in bottom right corner
 
 **Layer Structure:**
+
 - Background gradient
 - Grid overlay
 - Phone mockup
@@ -279,13 +293,13 @@ Requirements:
 
 ### Content Series (5 Posts)
 
-| Post | Focus | Visual Element |
-|------|-------|----------------|
-| 1 | Announcement | Hero reveal |
-| 2 | Feature: AI coaching | AI visualization |
-| 3 | Feature: Personalized workouts | Workout screens |
-| 4 | Feature: Progress tracking | Stats dashboard |
-| 5 | CTA: Early access | Sign up button |
+| Post | Focus                          | Visual Element   |
+| ---- | ------------------------------ | ---------------- |
+| 1    | Announcement                   | Hero reveal      |
+| 2    | Feature: AI coaching           | AI visualization |
+| 3    | Feature: Personalized workouts | Workout screens  |
+| 4    | Feature: Progress tracking     | Stats dashboard  |
+| 5    | CTA: Early access              | Sign up button   |
 
 ### Story Sequence
 
@@ -299,12 +313,12 @@ Requirements:
 
 ### File Export Specifications
 
-| Platform | Size | Format | Color |
-|----------|------|--------|-------|
-| Instagram Post | 1080x1080 | PNG/JPG | sRGB |
-| Instagram Story | 1080x1920 | PNG/JPG | sRGB |
-| Facebook | 1200x630 | PNG/JPG | sRGB |
-| LinkedIn | 1200x627 | PNG/JPG | sRGB |
+| Platform        | Size      | Format  | Color |
+| --------------- | --------- | ------- | ----- |
+| Instagram Post  | 1080x1080 | PNG/JPG | sRGB  |
+| Instagram Story | 1080x1920 | PNG/JPG | sRGB  |
+| Facebook        | 1200x630  | PNG/JPG | sRGB  |
+| LinkedIn        | 1200x627  | PNG/JPG | sRGB  |
 
 ### Quality Checks
 
@@ -319,6 +333,7 @@ Requirements:
 ### Animation Extensions
 
 **Suggested Motion:**
+
 - Subtle parallax on phone mockup
 - Data points animating in sequence
 - Gradient shift over 3-5 seconds

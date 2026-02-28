@@ -1,6 +1,7 @@
 # Orbital Cargo Transportation Coordination
 
 ## Metadata
+
 - **ID**: `space-cargo-logistics`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Logistics
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Coordinate orbital cargo transportation operations including mission planning, manifest optimization, customer coordination, and supply chain management. Combines space operations knowledge with logistics excellence to deliver reliable, cost-effective cargo transportation services to space stations and orbital facilities.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning space station resupply missions
 - Optimizing cargo manifests and scheduling
 - Coordinating multi-customer cargo campaigns
@@ -23,6 +27,7 @@ Coordinate orbital cargo transportation operations including mission planning, m
 - Developing cargo operations for commercial orbital stations
 
 **Anti-Patterns (When NOT to Use):**
+
 - Passenger or crew transportation operations
 - Satellite deployment missions
 - In-space manufacturing operations
@@ -113,86 +118,89 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're planning 12 cargo missions annually to ISS and commercial stations. Mix of NASA, ESA, and commercial customers. Need operations plan covering manifest, scheduling, and supply chain."
 
 ### Output
+
 **Orbital Cargo Operations Plan**
 
 **Mission Profile**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Annual Missions | 12 |
-| Destinations | ISS (8), Commercial stations (4) |
-| Customers | NASA, ESA, Commercial |
-| Cargo capacity | 3,200 kg pressurized + 1,800 kg unpressurized |
+| Parameter       | Specification                                 |
+| --------------- | --------------------------------------------- |
+| Annual Missions | 12                                            |
+| Destinations    | ISS (8), Commercial stations (4)              |
+| Customers       | NASA, ESA, Commercial                         |
+| Cargo capacity  | 3,200 kg pressurized + 1,800 kg unpressurized |
 
 **Annual Mission Schedule**
 
-| Mission | Month | Destination | Primary Customer |
-|---------|-------|-------------|------------------|
-| CRS-1 | Jan | ISS | NASA |
-| CRS-2 | Feb | Commercial-1 | Axiom |
-| CRS-3 | Mar | ISS | NASA |
-| CRS-4 | Apr | ISS | ESA |
-| CRS-5 | Jun | ISS | NASA |
-| CRS-6 | Jul | Commercial-2 | Vast |
-| CRS-7 | Aug | ISS | NASA |
-| CRS-8 | Sep | ISS | ESA |
-| CRS-9 | Oct | ISS | NASA |
-| CRS-10 | Nov | Commercial-1 | Axiom |
-| CRS-11 | Dec | ISS | NASA |
-| CRS-12 | Dec | ISS | ESA |
+| Mission | Month | Destination  | Primary Customer |
+| ------- | ----- | ------------ | ---------------- |
+| CRS-1   | Jan   | ISS          | NASA             |
+| CRS-2   | Feb   | Commercial-1 | Axiom            |
+| CRS-3   | Mar   | ISS          | NASA             |
+| CRS-4   | Apr   | ISS          | ESA              |
+| CRS-5   | Jun   | ISS          | NASA             |
+| CRS-6   | Jul   | Commercial-2 | Vast             |
+| CRS-7   | Aug   | ISS          | NASA             |
+| CRS-8   | Sep   | ISS          | ESA              |
+| CRS-9   | Oct   | ISS          | NASA             |
+| CRS-10  | Nov   | Commercial-1 | Axiom            |
+| CRS-11  | Dec   | ISS          | NASA             |
+| CRS-12  | Dec   | ISS          | ESA              |
 
 **Manifest Optimization**
 
-| Category | Allocation | Priority |
-|----------|------------|----------|
-| Critical life support | 15% | P0 (guaranteed) |
-| Science payloads | 35% | P1 |
-| Crew supplies | 25% | P1 |
-| Maintenance items | 15% | P2 |
-| Commercial payload | 10% | P3 |
+| Category              | Allocation | Priority        |
+| --------------------- | ---------- | --------------- |
+| Critical life support | 15%        | P0 (guaranteed) |
+| Science payloads      | 35%        | P1              |
+| Crew supplies         | 25%        | P1              |
+| Maintenance items     | 15%        | P2              |
+| Commercial payload    | 10%        | P3              |
 
 **Manifest Cutoff Schedule**
 
-| Milestone | Timeline |
-|-----------|----------|
-| Manifest open | L-180 days |
+| Milestone          | Timeline   |
+| ------------------ | ---------- |
+| Manifest open      | L-180 days |
 | Primary cargo lock | L-120 days |
-| Late-load cutoff | L-30 days |
-| Final manifest | L-14 days |
-| Emergency items | L-48 hours |
+| Late-load cutoff   | L-30 days  |
+| Final manifest     | L-14 days  |
+| Emergency items    | L-48 hours |
 
 **Customer Coordination**
 
-| Customer | Contact Frequency | Review Meeting |
-|----------|-------------------|----------------|
-| NASA | Weekly | Monthly manifest review |
-| ESA | Bi-weekly | Quarterly planning |
-| Commercial | Per mission | Pre-mission briefing |
+| Customer   | Contact Frequency | Review Meeting          |
+| ---------- | ----------------- | ----------------------- |
+| NASA       | Weekly            | Monthly manifest review |
+| ESA        | Bi-weekly         | Quarterly planning      |
+| Commercial | Per mission       | Pre-mission briefing    |
 
 **Supply Chain Management**
 
-| Category | Lead Time | Inventory |
-|----------|-----------|-----------|
-| Food/consumables | 90 days | 2-mission buffer |
-| Science equipment | 180 days | Per-mission |
-| Spare parts | 120 days | Critical spares stocked |
-| Emergency supplies | Immediate | Always on standby |
+| Category           | Lead Time | Inventory               |
+| ------------------ | --------- | ----------------------- |
+| Food/consumables   | 90 days   | 2-mission buffer        |
+| Science equipment  | 180 days  | Per-mission             |
+| Spare parts        | 120 days  | Critical spares stocked |
+| Emergency supplies | Immediate | Always on standby       |
 
 **Performance Metrics**
 
-| Metric | Target | Tracking |
-|--------|--------|----------|
-| On-time departure | >95% | Per mission |
-| Cargo delivery success | >99% | Per manifest item |
-| Customer satisfaction | >95% | Post-mission survey |
-| Vehicle utilization | >90% | Volume + mass |
+| Metric                 | Target | Tracking            |
+| ---------------------- | ------ | ------------------- |
+| On-time departure      | >95%   | Per mission         |
+| Cargo delivery success | >99%   | Per manifest item   |
+| Customer satisfaction  | >95%   | Post-mission survey |
+| Vehicle utilization    | >90%   | Volume + mass       |
 
 ---
 
 ## Related Prompts
+
 - [Launch Campaign Management Expert](../launch-campaign-management-expert.md)
 - [Satellite Constellation Operations Management](../satellite-constellation-operations-management.md)
 - [Commercial Space Mission Architecture Expert](../commercial-space-mission-architecture-expert.md)

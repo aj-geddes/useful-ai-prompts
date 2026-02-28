@@ -1,6 +1,7 @@
 # Workplace Communication Expert
 
 ## Metadata
+
 - **ID**: `workplace-communication-expert`
 - **Version**: 1.1.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Master workplace communication to build stronger professional relationships, enh
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving communication with managers or direct reports
 - Navigating difficult workplace conversations
 - Building professional presence and influence
@@ -26,6 +28,7 @@ Master workplace communication to build stronger professional relationships, enh
 - Managing up effectively with busy executives
 
 **Anti-Patterns (When NOT to Use):**
+
 - HR complaints requiring formal processes
 - Workplace harassment situations
 - Legal workplace issues requiring counsel
@@ -107,54 +110,63 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I'm a senior individual contributor at a tech company. My challenge is communicating with my manager who is very busy and often seems distracted in our 1:1s. I also need to influence decisions made by my peers even though I don't have authority over them. I want to be seen as a leader even without the title.
 
 ### Output
+
 **Workplace Communication Strategy: Influence Without Authority**
 
 **Manager Communication**
 
-*Problem: Distracted manager in 1:1s*
+_Problem: Distracted manager in 1:1s_
 Your manager is likely overwhelmed. Make it easy for them to engage with you.
 
-*Before 1:1s*
+_Before 1:1s_
 Send a brief agenda 2 hours before:
 "For our 1:1, I'd like to cover:
+
 1. [Project] - Need your input on X
 2. Quick update on [Initiative]
 3. One question about my development"
 
-*During 1:1s*
+_During 1:1s_
+
 - Start with what's most important (they may get pulled away)
 - Be concise: Lead with the point, then add context if needed
 - Use explicit asks: "I need you to [decide/approve/introduce me to]"
 - Take notes visibly; it signals importance
 
-*When They Seem Distracted*
+_When They Seem Distracted_
+
 - "I can see you're juggling a lot. What would be most helpful to focus on today?"
 - "Should we reschedule so I can have your full attention for this?"
 - "I'll keep this brief. The one thing I need from you is..."
 
 **Peer Influence Without Authority**
 
-*Foundation: Build Relationship First*
+_Foundation: Build Relationship First_
 Before you need to influence, deposit into the relationship:
+
 - Help them when you can without expecting return
 - Show genuine interest in their work and challenges
 - Give credit publicly for their contributions
 
-*Making Your Case*
+_Making Your Case_
 Frame proposals in terms of their interests:
+
 - "I think this could help with [their priority/problem]"
 - "You mentioned struggling with X. This approach might address that."
 - "What concerns would you have about trying this?"
 
-*When You Disagree*
+_When You Disagree_
+
 - "I see it differently. Can I share my perspective?"
 - "Help me understand your reasoning there."
 - "What if we tried [alternative] and evaluated after [timeframe]?"
 
-*When You Need Buy-In*
+_When You Need Buy-In_
+
 - Bring them in early, not after you've decided
 - Ask for input: "What am I missing here?"
 - Let them contribute to the solution
@@ -162,19 +174,22 @@ Frame proposals in terms of their interests:
 
 **Being Seen as a Leader**
 
-*Visibility Strategies*
+_Visibility Strategies_
+
 - Volunteer to present team updates to leadership
 - Summarize complex discussions and propose next steps in meetings
 - Mentor junior team members (even informally)
 - Share insights and resources that help others
 
-*Communication Presence*
+_Communication Presence_
+
 - Speak in meetings, even briefly. Silence makes you invisible.
 - Use confident language: "I recommend" not "Maybe we could"
 - Own your expertise: "Based on my experience with X..."
 - Ask strategic questions that show big-picture thinking
 
-*In Meetings*
+_In Meetings_
+
 - Prepare one insightful comment or question
 - Build on others' points: "Expanding on what Sarah said..."
 - Summarize and synthesize: "So what I'm hearing is three options..."
@@ -182,7 +197,8 @@ Frame proposals in terms of their interests:
 
 **Email Communication**
 
-*To Busy Leaders*
+_To Busy Leaders_
+
 - Subject line: Clear action needed
 - First line: The ask or key point
 - Body: Brief context
@@ -200,6 +216,7 @@ The key tradeoff is [brief context]. I recommend [option] because [reason].
 Let me know if you'd prefer to discuss or if I should proceed."
 
 **Week-by-Week Implementation**
+
 - Week 1: Start sending 1:1 agendas in advance
 - Week 2: Practice concise communication (point first, context second)
 - Week 3: Focus on one peer relationship to strengthen
@@ -208,6 +225,7 @@ Let me know if you'd prefer to discuss or if I should proceed."
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md) - For broader communication development
 - [Conflict Resolution Mediator](conflict-resolution-mediator.md) - For workplace conflict navigation
 - [Leadership Development Coach](../career-development/leadership-development-coach.md) - For leadership growth

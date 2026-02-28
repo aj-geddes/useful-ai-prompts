@@ -1,6 +1,7 @@
 # HR Policy Designer
 
 ## Metadata
+
 - **ID**: `human-resources-hr-policy-designer`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates an HR policy specialist who drafts clear, legally-informed, and consistently applicable employment policies covering time off, remote work, conduct, accommodation, and other workplace matters. It applies best practices in policy writing — plain language, unambiguous scope, clear process, and defined exceptions — to create policies that managers can apply consistently and employees can actually understand. The output is a complete policy draft with scope, definitions, procedures, and manager guidance notes.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR team creating a remote work policy as the company formalizes a hybrid work model
 - A growing startup that needs a comprehensive PTO and leave policy before reaching 50 employees
 - An HR leader updating a code of conduct to reflect current workplace expectations, including AI tool use and social media
 
 **Anti-patterns (Don't Use For):**
+
 - Jurisdiction-specific legal compliance policies (FMLA, state leave laws) — these require employment attorney review
 - Union-represented workforce policies requiring collective bargaining
 - Policies for highly regulated industries (healthcare, financial services) requiring compliance officer review
@@ -64,10 +69,13 @@ Avoid: Legal boilerplate that employees skip reading, vague phrases like "as app
 ---
 
 ## Example Usage
+
 ### Input
+
 "We need a remote work policy. We're a 200-person tech company. Currently about 60% of employees work remotely full-time, 30% are hybrid (2-3 days in office), and 10% are fully on-site (lab/hardware roles). We've been operating without a formal policy and it's creating inconsistency — some managers approve home office equipment stipends, others don't; some require specific hours, others are fully async. We're US-based with employees in 8 states."
 
 ### Output
+
 **Remote Work Policy**
 Effective Date: [Date] | Next Review: [Date + 12 months]
 
@@ -100,6 +108,7 @@ All employees, regardless of work arrangement, are expected to be available for 
 **Home Office Requirements**
 
 Remote and hybrid employees are responsible for:
+
 - Maintaining a workspace with reliable high-speed internet (minimum 25 Mbps download/5 Mbps upload)
 - A workspace that is private enough for video calls involving confidential information
 - Complying with all data security policies when working remotely
@@ -139,11 +148,13 @@ Exceptions to any element of this policy require written approval from the emplo
 ---
 
 ## Variations
+
 - **PTO and Leave Policy**: Comprehensive time off policy covering vacation, sick leave, parental leave, and bereavement
 - **Code of Conduct**: Workplace behavior expectations covering harassment, conflicts of interest, AI tool use, and social media
 - **Reasonable Accommodation Policy**: ADA/ADAAA compliant accommodation request and interactive process policy
 
 ## Related Prompts
+
 - [Termination Documentation Guide](termination-documentation-guide.md) - Documentation when policy violations lead to disciplinary action
 - [Employee Relations Advisor](employee-relations-advisor.md) - Handling grievances and policy disputes
 - [Diversity Inclusion Strategist](diversity-inclusion-strategist.md) - Ensuring policies are equitably designed and applied

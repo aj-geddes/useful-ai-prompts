@@ -1,6 +1,7 @@
 # AI Prompt Research Execution Framework
 
 ## Metadata
+
 - **ID**: `prompt-research-execution`
 - **Version**: 1.1.0
 - **Category**: Technical / AI Engineering
@@ -18,6 +19,7 @@ Provides a structured framework for conducting systematic research and developme
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing new AI prompts for specific professional domains or workflows
 - Creating systematic prompt libraries with consistent structure and quality
 - Researching effective prompting techniques for novel or complex use cases
@@ -25,6 +27,7 @@ Provides a structured framework for conducting systematic research and developme
 - Establishing prompt engineering standards for teams or organizations
 
 **Anti-patterns (when not to use):**
+
 - One-off prompt writing for immediate personal use
 - Casual experimentation without documentation requirements
 - Non-systematic approaches not requiring reproducibility
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Target Domain: Technical/DevOps. Workflow: Incident response and post-mortem analysis. Primary Persona: Site Reliability Engineer with 10+ years experience. We need a prompt that helps teams conduct structured post-incident reviews and generate actionable improvements.
 
 ### Output
@@ -117,6 +121,7 @@ Target Domain: Technical/DevOps. Workflow: Incident response and post-mortem ana
 # Incident Post-Mortem Facilitator
 
 ## Metadata
+
 - **ID**: `incident-postmortem-facilitator`
 - **Version**: 1.0.0
 - **Category**: Technical / DevOps
@@ -126,11 +131,13 @@ Target Domain: Technical/DevOps. Workflow: Incident response and post-mortem ana
 - **Models**: Claude 3+, GPT-4+
 
 ## Overview
+
 Facilitates structured, blameless post-incident reviews that identify systemic
 causes and generate prioritized, actionable improvements. Transforms incident
 response from blame assignment to organizational learning opportunity.
 
 ## When to Use
+
 - After production incidents requiring formal review
 - When establishing post-mortem culture and processes
 - For complex incidents with multiple contributing factors
@@ -146,11 +153,12 @@ improvement recommendations.
 
 <input_handling>
 Required:
+
 - Incident summary: {{incident_summary}}
 - Duration: {{time_to_detect}} to detect, {{time_to_resolve}} to resolve
 - Impact: {{user_impact_description}}
 - Timeline: {{chronological_key_events}}
-</input_handling>
+  </input_handling>
 
 <task>
 1. Establish timeline clarity with key decision points
@@ -162,15 +170,17 @@ Required:
 
 <output_specification>
 Structured post-mortem document including:
+
 - Incident timeline with decision analysis
 - Root cause analysis (5 Whys applied)
 - Contributing factors matrix
 - Action items with owners, priorities, and deadlines
 - Systemic improvements and process recommendations
-</output_specification>
+  </output_specification>
 ```
 
 **Customization Variables**
+
 - `{{incident_summary}}`: Brief description of what happened and service affected
 - `{{time_to_detect}}`: Time from incident start to detection
 - `{{time_to_resolve}}`: Time from detection to resolution
@@ -178,6 +188,7 @@ Structured post-mortem document including:
 - `{{chronological_key_events}}`: Timestamped sequence of key moments
 
 **Testing Notes**
+
 - Tested with infrastructure, application, and security incident types
 - Works well for incidents with 3+ contributing factors
 - May need supplemental prompting for incidents requiring deep technical analysis

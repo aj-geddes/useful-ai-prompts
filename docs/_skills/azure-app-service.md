@@ -1,13 +1,14 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Deploy and manage web apps using Azure App Service with auto-scaling,
+date: "2025-01-01"
+description:
+  Deploy and manage web apps using Azure App Service with auto-scaling,
   deployment slots, SSL/TLS, and monitoring. Use for hosting web applications on Azure.
 layout: skill
 slug: azure-app-service
 tags:
-- azure
-- deployment
+  - azure
+  - deployment
 title: azure-app-service
 ---
 
@@ -372,7 +373,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
@@ -418,6 +419,7 @@ az monitor metrics list-definitions \
 ## Best Practices
 
 ### ✅ DO
+
 - Use deployment slots for zero-downtime deployments
 - Enable Application Insights
 - Configure autoscaling based on metrics
@@ -428,6 +430,7 @@ az monitor metrics list-definitions \
 - Implement health checks
 
 ### ❌ DON'T
+
 - Store secrets in configuration
 - Disable HTTPS
 - Ignore Application Insights

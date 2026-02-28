@@ -1,6 +1,7 @@
 # Peer Review Simulator
 
 ## Metadata
+
 - **ID**: `academic-peer-review-simulator`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates an expert peer reviewer who provides rigorous, constructiv
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Pre-submission manuscript review to identify weaknesses before formal peer review
 - Preparing responses to actual reviewer comments by understanding the reasoning behind critiques
 - Training graduate students to understand what peer reviewers prioritize in their discipline
 
 **Anti-patterns (Don't Use For):**
+
 - Fabricating actual reviewer identities or impersonating real academics
 - Producing reviews for submission to a journal's peer review system
 - Evaluating work in highly specialized technical domains without providing necessary background
@@ -112,15 +115,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Please simulate two peer reviews of my abstract and introduction for a study examining whether mindfulness-based stress reduction (MBSR) reduces burnout among emergency department nurses, using a randomized waitlist-control design with 62 participants, measuring burnout via the Maslach Burnout Inventory at 0, 8, and 16 weeks. Target journal: Journal of Occupational Health Psychology."
 
 ### Output
 
 **Reviewer 1**
 
-*Summary*: This manuscript reports a randomized waitlist-controlled trial of MBSR for burnout in emergency department nurses. The topic is clinically important and the use of a randomized design with longitudinal assessment is a strength. However, several methodological and reporting issues require attention before the manuscript is suitable for publication.
+_Summary_: This manuscript reports a randomized waitlist-controlled trial of MBSR for burnout in emergency department nurses. The topic is clinically important and the use of a randomized design with longitudinal assessment is a strength. However, several methodological and reporting issues require attention before the manuscript is suitable for publication.
 
-*Major Concerns*
+_Major Concerns_
 
 1. The sample size of 62 participants is small for a three-wave longitudinal RCT, particularly given anticipated attrition in a high-stress nursing population. The authors should provide a power analysis justifying n = 62, including the effect size anticipated, the alpha level, and the power achieved. Without this, readers cannot assess whether the study is adequately powered to detect clinically meaningful differences.
 
@@ -128,20 +132,20 @@ Avoid:
 
 3. The MBI subscale structure (emotional exhaustion, depersonalization, personal accomplishment) should each be reported as separate outcomes, not as a composite burnout score. Collapsing subscales obscures different intervention effects and is inconsistent with current MBI scoring guidance.
 
-*Minor Concerns*
+_Minor Concerns_
 
 1. The introduction does not cite recent meta-analyses of MBSR in healthcare populations (e.g., Lomas et al., 2018, Occupational Medicine). A brief synthesis of effect size estimates from prior reviews would better justify the current study.
 2. Randomization procedures should be described in more detail. Were participants randomized by individual or by shift/unit? Cluster-level randomization would require a different analytic approach.
 
-*Recommendation*: Major Revisions
+_Recommendation_: Major Revisions
 
 ---
 
 **Reviewer 2**
 
-*Summary*: The authors present a timely study addressing nurse burnout using an evidence-based intervention. The emergency department setting is appropriate given known burnout prevalence in this context. My concerns center on theoretical framing and generalizability.
+_Summary_: The authors present a timely study addressing nurse burnout using an evidence-based intervention. The emergency department setting is appropriate given known burnout prevalence in this context. My concerns center on theoretical framing and generalizability.
 
-*Major Concerns*
+_Major Concerns_
 
 1. The theoretical mechanism linking MBSR to burnout reduction is not articulated in the introduction. Why would mindfulness specifically reduce emotional exhaustion versus depersonalization? Grounding the hypotheses in a theoretical model (e.g., the Job Demands-Resources model or Attention Restoration Theory) would strengthen the conceptual contribution.
 
@@ -149,12 +153,12 @@ Avoid:
 
 3. Intervention fidelity is not mentioned. Were MBSR sessions recorded or rated for adherence to protocol? Without fidelity data, it is unclear whether participants received a consistent intervention.
 
-*Minor Concerns*
+_Minor Concerns_
 
 1. The 16-week assessment point is labeled as "follow-up" but the waitlist group crosses over at week 8. Clarify whether this endpoint reflects sustained effects in the treatment group or post-treatment assessment for the former control group.
 2. Consider reporting the percentage of nurses with scores above validated clinical cutoffs on the MBI at baseline to characterize sample severity.
 
-*Recommendation*: Major Revisions
+_Recommendation_: Major Revisions
 
 ---
 

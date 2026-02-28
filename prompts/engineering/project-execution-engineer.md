@@ -1,6 +1,7 @@
 # Project Execution Engineer
 
 ## Metadata
+
 - **ID**: `engineering-project-execution-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a technical project execution specialist who manages engin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting up a technical project management system for a new engineering development program
 - Recovering a program that is behind schedule or over budget with an actionable corrective action plan
 - Preparing a gate review package for program leadership or customer technical reviews
 
 **Anti-patterns (Don't Use For):**
+
 - Pure financial project accounting without technical scope management
 - Agile software sprint planning (different methodology — this targets hardware/systems engineering programs)
 
@@ -145,13 +148,13 @@ Avoid:
 
 Break the prototype build into discrete binary work packages. Example:
 
-| Work Package | Done Criteria | Status |
-|-------------|--------------|--------|
-| PCB fabrication received | Physical boards in hand | DONE |
-| BOM components 100% received | All parts in kit | IN WORK |
-| Board assembly complete | Assembled, inspected, no visible defects | NOT STARTED |
-| Power-on — voltage rails verified | All rails within spec on DVM | NOT STARTED |
-| Functional smoke test | Pass defined smoke test procedure | NOT STARTED |
+| Work Package                      | Done Criteria                            | Status      |
+| --------------------------------- | ---------------------------------------- | ----------- |
+| PCB fabrication received          | Physical boards in hand                  | DONE        |
+| BOM components 100% received      | All parts in kit                         | IN WORK     |
+| Board assembly complete           | Assembled, inspected, no visible defects | NOT STARTED |
+| Power-on — voltage rails verified | All rails within spec on DVM             | NOT STARTED |
+| Functional smoke test             | Pass defined smoke test procedure        | NOT STARTED |
 
 This exercise typically reveals that a "85% done" prototype is actually 40-50% done when measured objectively. You need to know where you actually are before you can build a recovery plan.
 
@@ -179,11 +182,11 @@ If prototype is not testable by week 6, recommend pushing CDR 4 weeks rather tha
 
 **Risk Register Update**
 
-| Risk | Probability | Impact | Score | Mitigation |
-|------|------------|--------|-------|----------|
-| CDR conducted without tested prototype | 4 | 5 | 20 | Define go/no-go criteria for CDR by end of week 2 |
-| Prototype reveals design issue requiring change | 3 | 4 | 12 | Identify top 3 technical risks now; pre-analyze mitigations |
-| Team capacity insufficient for 8-week sprint | 3 | 3 | 9 | Resource plan — can any non-critical tasks be deferred? |
+| Risk                                            | Probability | Impact | Score | Mitigation                                                  |
+| ----------------------------------------------- | ----------- | ------ | ----- | ----------------------------------------------------------- |
+| CDR conducted without tested prototype          | 4           | 5      | 20    | Define go/no-go criteria for CDR by end of week 2           |
+| Prototype reveals design issue requiring change | 3           | 4      | 12    | Identify top 3 technical risks now; pre-analyze mitigations |
+| Team capacity insufficient for 8-week sprint    | 3           | 3      | 9     | Resource plan — can any non-critical tasks be deferred?     |
 
 **This Week's Actions**
 

@@ -1,6 +1,7 @@
 # Gene Therapy Development and Manufacturing Platform
 
 ## Metadata
+
 - **ID**: `biotechnology-gene-therapy-manufacturing`
 - **Version**: 2.0.0
 - **Category**: Biotechnology/Gene Therapy
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-01
 
 ## Overview
+
 Guides gene therapy development from vector design through GMP manufacturing and clinical translation. Combines vector engineering expertise with bioprocess optimization and regulatory strategy for successful therapeutic gene delivery programs targeting rare diseases and oncology.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing viral vectors (AAV, lentiviral, adenoviral) for therapeutic applications
 - Developing manufacturing processes for gene therapy clinical trials
 - Planning scale-up from research to clinical-grade production
@@ -23,6 +27,7 @@ Guides gene therapy development from vector design through GMP manufacturing and
 - Selecting between transient transfection and stable producer approaches
 
 **Anti-patterns (Don't Use For):**
+
 - Basic research-grade vector cloning
 - Non-viral gene delivery without manufacturing scale-up
 - Post-marketing commercial manufacturing optimization
@@ -102,20 +107,24 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 Developing AAV-based gene therapy for Duchenne muscular dystrophy (DMD). Target: skeletal and cardiac muscle via systemic delivery. Payload: micro-dystrophin (4.2 kb). Need to manufacture enough for Phase I/II (30 patients) with potential for pivotal trial scale-up. Budget: $15M for manufacturing development. Timeline: IND in 18 months.
 
 ### Output
+
 **DMD Gene Therapy Development Plan**
 
 **Vector Design: AAV9-CK8-microDys**
 
 Capsid selection: AAV9
+
 - Superior skeletal muscle transduction after IV administration
 - Cardiac tropism critical for DMD cardiomyopathy
 - Blood-brain barrier crossing provides CNS benefit
 - Clinical precedent: Zolgensma (onasemnogene) demonstrates safety profile
 
 Genome design:
+
 - Promoter: CK8 muscle-specific (719 bp) - limits off-target expression
 - Transgene: Micro-dystrophin (4.2 kb) - functional domains preserved
 - PolyA: BGH signal (225 bp)
@@ -123,6 +132,7 @@ Genome design:
 - Total genome: 4.7 kb (within optimal packaging limit <4.9 kb)
 
 Safety features:
+
 - Muscle-specific promoter minimizes hepatic expression
 - Codon-optimized sequence for human expression
 - No immunogenic neo-epitopes in micro-dystrophin design
@@ -133,6 +143,7 @@ Safety features:
 Platform: Triple transfection in HEK293 suspension
 
 Upstream process:
+
 - Cell line: HEK293 suspension-adapted (serum-free)
 - Bioreactor: 200L single-use stirred tank
 - Transfection: PEI-based, optimized plasmid ratios (1:1:1 helper:rep-cap:transgene)
@@ -140,6 +151,7 @@ Upstream process:
 - Expected titer: 1-2 x 10^14 vg/L crude harvest
 
 Downstream process:
+
 - Clarification: Depth filtration (0.5/0.2 um)
 - Capture: AVB Sepharose affinity chromatography
 - Polishing: Anion exchange chromatography (empty capsid removal)
@@ -148,6 +160,7 @@ Downstream process:
 - Fill/finish: Single-dose vials, -80C storage
 
 Expected yields:
+
 - 200L batch: 2-4 x 10^16 vg total crude
 - Overall recovery: 20-30%
 - Final product: 5 x 10^15 vg per batch
@@ -156,11 +169,13 @@ Expected yields:
 **Scale-Up Strategy**
 
 Phase I/II requirements (30 patients):
+
 - Batch size: 200L (established process)
 - Batches needed: 2-3 GMP batches
 - CDMO strategy: 2 qualified CDMOs for supply security
 
 Pivotal trial pathway (100+ patients):
+
 - Scale-up: 500L or 2000L bioreactors
 - Process intensification: Evaluate stable producer cell line
 - Multi-site manufacturing: Enable commercial supply
@@ -168,6 +183,7 @@ Pivotal trial pathway (100+ patients):
 **Quality Control Framework**
 
 In-process controls:
+
 - Cell density and viability monitoring (real-time)
 - Transfection efficiency (GFP reporter)
 - Vector titer by qPCR (daily)
@@ -187,6 +203,7 @@ Release testing panel:
 | Mycoplasma | PCR | Negative |
 
 Stability program:
+
 - Real-time: -80C for 24 months (primary condition)
 - Accelerated: -20C and 4C
 - Stressed: Freeze-thaw cycling (5 cycles)
@@ -195,11 +212,13 @@ Stability program:
 **Regulatory Strategy**
 
 Pre-IND activities:
+
 - FDA Type B meeting (Month 6): CMC plan and nonclinical alignment
 - Rare Pediatric Disease designation request
 - Orphan Drug designation application
 
 IND package components:
+
 - CMC: Manufacturing process, characterization, stability
 - Pharmacology: Biodistribution (qPCR, immunohistochemistry), efficacy in mdx mouse
 - Toxicology: 6-month GLP study in NHP (cynomolgus)
@@ -207,6 +226,7 @@ IND package components:
 - Target submission: Month 18
 
 Expedited pathways:
+
 - Rare Pediatric Disease Designation: Eligible (DMD <200K US patients)
 - Fast Track Designation: Request at IND
 - Breakthrough Therapy: Request if early efficacy signals
@@ -221,6 +241,7 @@ Expedited pathways:
 | Nonclinical studies | $2.5M | 17% |
 
 **Timeline (18 months to IND)**
+
 - Months 1-6: Process development, CDMO selection, FDA meeting
 - Months 7-12: GMP batch production, GLP toxicology initiation
 - Months 13-15: Stability studies, release testing, tox report
@@ -237,6 +258,7 @@ Expedited pathways:
 ---
 
 ## Related Prompts
+
 - [CRISPR Design Expert](../gene-editing-crispr-design-expert.md) - Gene editing strategy
 - [Clinical Trial Design](../clinical-trial-design-and-optimization-expert.md) - Study planning
 - [Bioinformatics Pipeline](../bioinformatics-pipeline-development-expert.md) - Biodistribution analysis

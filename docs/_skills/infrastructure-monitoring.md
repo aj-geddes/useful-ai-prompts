@@ -1,12 +1,13 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Set up comprehensive infrastructure monitoring with Prometheus, Grafana,
+date: "2025-01-01"
+description:
+  Set up comprehensive infrastructure monitoring with Prometheus, Grafana,
   and alerting systems for metrics, health checks, and performance tracking.
 layout: skill
 slug: infrastructure-monitoring
 tags:
-- development
+  - development
 title: infrastructure-monitoring
 ---
 
@@ -37,8 +38,8 @@ global:
   scrape_interval: 15s
   evaluation_interval: 15s
   external_labels:
-    monitor: 'infrastructure-monitor'
-    environment: 'production'
+    monitor: "infrastructure-monitor"
+    environment: "production"
 
 # Alertmanager configuration
 alerting:
@@ -49,34 +50,34 @@ alerting:
 
 # Rule files
 rule_files:
-  - 'alerts.yml'
-  - 'rules.yml'
+  - "alerts.yml"
+  - "rules.yml"
 
 scrape_configs:
   # Prometheus itself
-  - job_name: 'prometheus'
+  - job_name: "prometheus"
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ["localhost:9090"]
 
   # Node Exporter for system metrics
-  - job_name: 'node'
+  - job_name: "node"
     static_configs:
       - targets:
-          - 'node1.internal:9100'
-          - 'node2.internal:9100'
-          - 'node3.internal:9100'
+          - "node1.internal:9100"
+          - "node2.internal:9100"
+          - "node3.internal:9100"
     relabel_configs:
       - source_labels: [__address__]
         target_label: instance
 
   # Docker container metrics
-  - job_name: 'docker'
+  - job_name: "docker"
     static_configs:
-      - targets: ['localhost:9323']
-    metrics_path: '/metrics'
+      - targets: ["localhost:9323"]
+    metrics_path: "/metrics"
 
   # Kubernetes metrics
-  - job_name: 'kubernetes-apiservers'
+  - job_name: "kubernetes-apiservers"
     kubernetes_sd_configs:
       - role: endpoints
     scheme: https
@@ -84,35 +85,40 @@ scrape_configs:
       ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
     bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
     relabel_configs:
-      - source_labels: [__meta_kubernetes_namespace, __meta_kubernetes_service_name, __meta_kubernetes_endpoint_port_name]
+      - source_labels:
+          [
+            __meta_kubernetes_namespace,
+            __meta_kubernetes_service_name,
+            __meta_kubernetes_endpoint_port_name,
+          ]
         action: keep
         regex: default;kubernetes;https
 
   # Application metrics
-  - job_name: 'application'
-    metrics_path: '/metrics'
+  - job_name: "application"
+    metrics_path: "/metrics"
     static_configs:
       - targets:
-          - 'app1.internal:8080'
-          - 'app2.internal:8080'
-          - 'app3.internal:8080'
+          - "app1.internal:8080"
+          - "app2.internal:8080"
+          - "app3.internal:8080"
     scrape_interval: 10s
     scrape_timeout: 5s
 
   # PostgreSQL metrics
-  - job_name: 'postgres'
+  - job_name: "postgres"
     static_configs:
-      - targets: ['postgres-exporter.internal:9187']
+      - targets: ["postgres-exporter.internal:9187"]
 
   # Redis metrics
-  - job_name: 'redis'
+  - job_name: "redis"
     static_configs:
-      - targets: ['redis-exporter.internal:9121']
+      - targets: ["redis-exporter.internal:9121"]
 
   # RabbitMQ metrics
-  - job_name: 'rabbitmq'
+  - job_name: "rabbitmq"
     static_configs:
-      - targets: ['rabbitmq.internal:15692']
+      - targets: ["rabbitmq.internal:15692"]
 ```
 
 ### 2. **Alert Rules**
@@ -205,16 +211,16 @@ groups:
 # alertmanager.yml
 global:
   resolve_timeout: 5m
-  slack_api_url: 'YOUR_SLACK_WEBHOOK_URL'
+  slack_api_url: "YOUR_SLACK_WEBHOOK_URL"
 
 # Template files
 templates:
-  - '/etc/alertmanager/templates/*.tmpl'
+  - "/etc/alertmanager/templates/*.tmpl"
 
 # Routing tree
 route:
-  receiver: 'default'
-  group_by: ['alertname', 'cluster', 'service']
+  receiver: "default"
+  group_by: ["alertname", "cluster", "service"]
   group_wait: 30s
   group_interval: 5m
   repeat_interval: 4h
@@ -223,7 +229,7 @@ route:
     # Critical alerts
     - match:
         severity: critical
-      receiver: 'critical-team'
+      receiver: "critical-team"
       continue: true
       group_wait: 10s
       repeat_interval: 1h
@@ -231,32 +237,32 @@ route:
     # Warning alerts
     - match:
         severity: warning
-      receiver: 'warning-channel'
+      receiver: "warning-channel"
       group_wait: 1m
 
 # Receivers
 receivers:
-  - name: 'default'
+  - name: "default"
     slack_configs:
-      - channel: '#alerts'
-        title: 'Alert: {{ .GroupLabels.alertname }}'
-        text: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+      - channel: "#alerts"
+        title: "Alert: {{ .GroupLabels.alertname }}"
+        text: "{{ range .Alerts }}{{ .Annotations.description }}{{ end }}"
 
-  - name: 'critical-team'
+  - name: "critical-team"
     slack_configs:
-      - channel: '#critical-alerts'
-        title: 'CRITICAL: {{ .GroupLabels.alertname }}'
+      - channel: "#critical-alerts"
+        title: "CRITICAL: {{ .GroupLabels.alertname }}"
     email_configs:
-      - to: 'oncall@mycompany.com'
-        from: 'alertmanager@mycompany.com'
-        smarthost: 'smtp.mycompany.com:587'
-        auth_username: 'alertmanager@mycompany.com'
-        auth_password: 'secret'
+      - to: "oncall@mycompany.com"
+        from: "alertmanager@mycompany.com"
+        smarthost: "smtp.mycompany.com:587"
+        auth_username: "alertmanager@mycompany.com"
+        auth_password: "secret"
 
-  - name: 'warning-channel'
+  - name: "warning-channel"
     slack_configs:
-      - channel: '#warnings'
-        title: 'Warning: {{ .GroupLabels.alertname }}'
+      - channel: "#warnings"
+        title: "Warning: {{ .GroupLabels.alertname }}"
 ```
 
 ### 4. **Grafana Dashboard**
@@ -387,6 +393,7 @@ echo "Grafana: http://localhost:3000"
 ## Monitoring Best Practices
 
 ### ✅ DO
+
 - Monitor key business metrics
 - Set appropriate alert thresholds
 - Use consistent naming conventions
@@ -397,6 +404,7 @@ echo "Grafana: http://localhost:3000"
 - Document alert meanings
 
 ### ❌ DON'T
+
 - Alert on every metric change
 - Ignore alert noise
 - Store too much unnecessary data

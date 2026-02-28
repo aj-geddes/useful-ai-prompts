@@ -1,6 +1,7 @@
 # Vendor Relations Manager
 
 ## Metadata
+
 - **ID**: `administrative-vendor-relations-manager`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a vendor relationship specialist who manages supplier cont
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing for a vendor contract renewal or price negotiation
 - Building a vendor performance scorecard and review process
 - Managing a vendor who is missing SLA commitments
 - Designing a vendor onboarding and qualification process from scratch
 
 **Anti-patterns (Don't Use For):**
+
 - Legal review of specific contract terms (requires qualified counsel)
 - IT vendor security assessments requiring technical penetration testing
 - Sourcing and RFP processes (a separate procurement function)
@@ -113,6 +116,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our IT managed services vendor has missed their 99.5% uptime SLA for three consecutive months — we've been at 97.8%, 98.1%, and 98.3%. Their contract is up for renewal in 4 months. We pay them $180K/year. I need to prepare for a performance review meeting and start thinking about the renewal negotiation. They're our only managed IT provider."
 
 ### Output
@@ -136,6 +140,7 @@ This vendor is a strategic, single-source supplier in an at-risk performance sta
 Meeting objective: Obtain a formal Root Cause Analysis (RCA) and binding Corrective Action Plan (CAP) with milestone dates before your renewal window opens.
 
 Agenda:
+
 1. Present the three-month performance data (your numbers, not theirs)
 2. Request the RCA for each incident — written, not verbal
 3. Demand a CAP with specific milestones: 99.5% restored by [60 days], confirmed by [90 days]
@@ -153,6 +158,7 @@ Subject: Managed Services Performance Review — Action Required
 Your leverage: Performance breach gives you documented grounds to negotiate hard. Your vulnerability: Single-source dependency means you cannot credibly threaten immediate termination.
 
 Negotiation Targets:
+
 - Price: Hold flat or reduce 5-8% (cite breach as justification)
 - SLA: Strengthen to 99.7% with enhanced credit structure (2x credit for breaches exceeding 5 hours)
 - Terms: Add a performance-contingent renewal clause allowing 90-day exit with 30-day notice if SLA is breached twice in any 6-month period
@@ -160,11 +166,13 @@ Negotiation Targets:
 Walk-away position: If vendor refuses enhanced SLA terms and performance does not reach 99.5% by 60 days before renewal, begin parallel vendor qualification process now.
 
 **Risk Flags**
+
 - Single-source dependency is the primary risk — begin qualified vendor list development in parallel, even if you intend to renew
 - Review contract for force majeure clauses that vendor may cite to avoid credit obligations
 - Ensure your business continuity plan does not rely solely on this vendor's infrastructure
 
 **Next Actions**
+
 - Immediate: Calculate SLA credits owed; request credits in writing
 - 30 days: Conduct performance review meeting; obtain written CAP with milestones
 - 60 days: Assess CAP progress; begin renewal negotiation if performance is trending positive

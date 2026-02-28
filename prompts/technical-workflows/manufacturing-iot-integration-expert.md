@@ -1,6 +1,7 @@
 # Manufacturing IoT Integration Expert
 
 ## Metadata
+
 - **ID**: `manufacturing-iot-integration-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Combines Industrial IoT Engineer and Manufacturing Systems Manager expertise to 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing IoT sensor networks in manufacturing facilities
 - Building OT/IT convergence architectures with proper security boundaries
 - Creating predictive maintenance systems for industrial equipment
@@ -25,6 +27,7 @@ Combines Industrial IoT Engineer and Manufacturing Systems Manager expertise to 
 - Connecting brownfield equipment to modern data platforms
 
 **Anti-Patterns (Don't Use For):**
+
 - Consumer IoT or smart home applications
 - Simple monitoring dashboards without industrial requirements
 - Non-manufacturing environments (retail, office buildings)
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We're an automotive parts manufacturer with 15 CNC machines, 8 injection molding machines, and 3 assembly lines. Currently we have minimal connectivity - operators manually log machine status on paper, and we compile production reports the next day.
 
@@ -160,12 +164,12 @@ Budget is approximately $500K for Year 1, with ongoing operational costs afterwa
 
 **Current State Assessment**
 
-| Dimension | Current State | Gap Analysis |
-|-----------|---------------|--------------|
-| Equipment | 23 production machines, ages 5-20 years | Mixed PLC generations, inconsistent connectivity |
-| Visibility | Manual paper logs, 24-hour data latency | No real-time visibility into production status |
-| Downtime | Estimated 15% unplanned, actual unknown | Cannot measure or improve what we cannot see |
-| Quality | Customer complaints drive investigation | Reactive mode, no in-process tracking |
+| Dimension  | Current State                           | Gap Analysis                                     |
+| ---------- | --------------------------------------- | ------------------------------------------------ |
+| Equipment  | 23 production machines, ages 5-20 years | Mixed PLC generations, inconsistent connectivity |
+| Visibility | Manual paper logs, 24-hour data latency | No real-time visibility into production status   |
+| Downtime   | Estimated 15% unplanned, actual unknown | Cannot measure or improve what we cannot see     |
+| Quality    | Customer complaints drive investigation | Reactive mode, no in-process tracking            |
 
 **IoT Architecture Design**
 
@@ -181,11 +185,11 @@ This architecture implements a four-layer approach: field devices, edge processi
 
 **Sensor Integration Specification**
 
-| Machine Type | Data Points | Protocol | Frequency | Justification |
-|--------------|-------------|----------|-----------|---------------|
-| CNC Machines (15) | Spindle load, temperature, vibration | OPC-UA | 100ms | Predictive maintenance |
-| Injection Molding (8) | Pressure, cycle time, cavity temp | Modbus TCP | 500ms | Quality correlation |
-| Assembly Lines (3) | Count, cycle time, fault codes | Ethernet/IP | 1s | OEE calculation |
+| Machine Type          | Data Points                          | Protocol    | Frequency | Justification          |
+| --------------------- | ------------------------------------ | ----------- | --------- | ---------------------- |
+| CNC Machines (15)     | Spindle load, temperature, vibration | OPC-UA      | 100ms     | Predictive maintenance |
+| Injection Molding (8) | Pressure, cycle time, cavity temp    | Modbus TCP  | 500ms     | Quality correlation    |
+| Assembly Lines (3)    | Count, cycle time, fault codes       | Ethernet/IP | 1s        | OEE calculation        |
 
 **Network Architecture (IEC 62443)**
 
@@ -212,12 +216,12 @@ Level 0-1 [PLCs/Sensors] -- Firewall --> Level 2 [Edge Gateway]
 
 Each production area receives a ruggedized edge gateway:
 
-| Capability | Specification | Purpose |
-|------------|---------------|---------|
-| Local Processing | 72-hour data buffer | Network resilience |
-| Edge Analytics | Real-time anomaly detection | Immediate operator alerts |
-| Protocol Translation | OPC-UA to MQTT | Standardized upstream data |
-| Security | Encrypted storage, certificate auth | IEC 62443 compliance |
+| Capability           | Specification                       | Purpose                    |
+| -------------------- | ----------------------------------- | -------------------------- |
+| Local Processing     | 72-hour data buffer                 | Network resilience         |
+| Edge Analytics       | Real-time anomaly detection         | Immediate operator alerts  |
+| Protocol Translation | OPC-UA to MQTT                      | Standardized upstream data |
+| Security             | Encrypted storage, certificate auth | IEC 62443 compliance       |
 
 **Analytics Pipeline**
 
@@ -229,6 +233,7 @@ Operator Alerts      12-month retention   Anomaly Models    Shift Reports
 ```
 
 **Phase 1 Dashboards (OEE Focus):**
+
 - Real-time machine status (running, idle, down)
 - OEE by machine, line, and shift
 - Top downtime reasons (Pareto analysis)
@@ -236,29 +241,29 @@ Operator Alerts      12-month retention   Anomaly Models    Shift Reports
 
 **Expected Outcomes**
 
-| Metric | Current | Year 1 Target | Year 2 Target |
-|--------|---------|---------------|---------------|
-| OEE Visibility | 0% | 100% real-time | 100% |
-| Unplanned Downtime | ~15% | 10% | 5% |
-| Quality Escape Detection | Reactive | +50% in-process | +85% |
-| Data Latency | 24 hours | Real-time | Real-time |
+| Metric                   | Current  | Year 1 Target   | Year 2 Target |
+| ------------------------ | -------- | --------------- | ------------- |
+| OEE Visibility           | 0%       | 100% real-time  | 100%          |
+| Unplanned Downtime       | ~15%     | 10%             | 5%            |
+| Quality Escape Detection | Reactive | +50% in-process | +85%          |
+| Data Latency             | 24 hours | Real-time       | Real-time     |
 
 **ROI Projection**
 
-| Investment | Year 1 | Ongoing |
-|------------|--------|---------|
-| Edge hardware | $120K | - |
-| Sensors and installation | $180K | - |
-| Platform and analytics | $100K | $50K/year |
-| Integration services | $80K | - |
-| Training | $20K | $10K/year |
-| **Total** | **$500K** | **$60K/year** |
+| Investment               | Year 1    | Ongoing       |
+| ------------------------ | --------- | ------------- |
+| Edge hardware            | $120K     | -             |
+| Sensors and installation | $180K     | -             |
+| Platform and analytics   | $100K     | $50K/year     |
+| Integration services     | $80K      | -             |
+| Training                 | $20K      | $10K/year     |
+| **Total**                | **$500K** | **$60K/year** |
 
-| Savings | Year 1 | Year 2 | Year 3 |
-|---------|--------|--------|--------|
-| Downtime reduction (15% to 10%) | $200K | $350K | $400K |
-| Quality improvement | $50K | $100K | $150K |
-| **Total Savings** | **$250K** | **$450K** | **$550K** |
+| Savings                         | Year 1    | Year 2    | Year 3    |
+| ------------------------------- | --------- | --------- | --------- |
+| Downtime reduction (15% to 10%) | $200K     | $350K     | $400K     |
+| Quality improvement             | $50K      | $100K     | $150K     |
+| **Total Savings**               | **$250K** | **$450K** | **$550K** |
 
 **Payback period: 18 months**
 

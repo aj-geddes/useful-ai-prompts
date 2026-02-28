@@ -25,13 +25,13 @@ Implement robust encryption strategies for protecting sensitive data at rest and
 
 ```javascript
 // encryption-service.js
-const crypto = require('crypto');
-const fs = require('fs').promises;
+const crypto = require("crypto");
+const fs = require("fs").promises;
 
 class EncryptionService {
   constructor() {
     // AES-256-GCM for symmetric encryption
-    this.algorithm = 'aes-256-gcm';
+    this.algorithm = "aes-256-gcm";
     this.keyLength = 32; // 256 bits
     this.ivLength = 16; // 128 bits
     this.saltLength = 64;
@@ -59,11 +59,11 @@ class EncryptionService {
         salt,
         100000, // iterations
         this.keyLength,
-        'sha512',
+        "sha512",
         (err, derivedKey) => {
           if (err) reject(err);
           else resolve({ key: derivedKey, salt });
-        }
+        },
       );
     });
   }
@@ -75,16 +75,16 @@ class EncryptionService {
     const iv = crypto.randomBytes(this.ivLength);
     const cipher = crypto.createCipheriv(this.algorithm, key, iv);
 
-    let encrypted = cipher.update(data, 'utf8', 'hex');
-    encrypted += cipher.final('hex');
+    let encrypted = cipher.update(data, "utf8", "hex");
+    encrypted += cipher.final("hex");
 
     const tag = cipher.getAuthTag();
 
     // Return IV + encrypted data + auth tag
     return {
       encrypted: encrypted,
-      iv: iv.toString('hex'),
-      tag: tag.toString('hex')
+      iv: iv.toString("hex"),
+      tag: tag.toString("hex"),
     };
   }
 
@@ -95,13 +95,13 @@ class EncryptionService {
     const decipher = crypto.createDecipheriv(
       this.algorithm,
       key,
-      Buffer.from(iv, 'hex')
+      Buffer.from(iv, "hex"),
     );
 
-    decipher.setAuthTag(Buffer.from(tag, 'hex'));
+    decipher.setAuthTag(Buffer.from(tag, "hex"));
 
-    let decrypted = decipher.update(encryptedData, 'hex', 'utf8');
-    decrypted += decipher.final('utf8');
+    let decrypted = decipher.update(encryptedData, "hex", "utf8");
+    decrypted += decipher.final("utf8");
 
     return decrypted;
   }
@@ -114,10 +114,7 @@ class EncryptionService {
     const cipher = crypto.createCipheriv(this.algorithm, key, iv);
 
     const input = await fs.readFile(inputPath);
-    const encrypted = Buffer.concat([
-      cipher.update(input),
-      cipher.final()
-    ]);
+    const encrypted = Buffer.concat([cipher.update(input), cipher.final()]);
 
     const tag = cipher.getAuthTag();
 
@@ -125,7 +122,7 @@ class EncryptionService {
     const output = Buffer.concat([iv, encrypted, tag]);
     await fs.writeFile(outputPath, output);
 
-    return { iv: iv.toString('hex'), tag: tag.toString('hex') };
+    return { iv: iv.toString("hex"), tag: tag.toString("hex") };
   }
 
   /**
@@ -136,14 +133,17 @@ class EncryptionService {
 
     const iv = data.subarray(0, this.ivLength);
     const tag = data.subarray(data.length - this.tagLength);
-    const encrypted = data.subarray(this.ivLength, data.length - this.tagLength);
+    const encrypted = data.subarray(
+      this.ivLength,
+      data.length - this.tagLength,
+    );
 
     const decipher = crypto.createDecipheriv(this.algorithm, key, iv);
     decipher.setAuthTag(tag);
 
     const decrypted = Buffer.concat([
       decipher.update(encrypted),
-      decipher.final()
+      decipher.final(),
     ]);
 
     await fs.writeFile(outputPath, decrypted);
@@ -156,20 +156,13 @@ class EncryptionService {
     const salt = crypto.randomBytes(16);
 
     return new Promise((resolve, reject) => {
-      crypto.pbkdf2(
-        password,
-        salt,
-        100000,
-        64,
-        'sha512',
-        (err, hash) => {
-          if (err) reject(err);
-          else {
-            const combined = Buffer.concat([salt, hash]);
-            resolve(combined.toString('hex'));
-          }
+      crypto.pbkdf2(password, salt, 100000, 64, "sha512", (err, hash) => {
+        if (err) reject(err);
+        else {
+          const combined = Buffer.concat([salt, hash]);
+          resolve(combined.toString("hex"));
         }
-      );
+      });
     });
   }
 
@@ -177,7 +170,7 @@ class EncryptionService {
    * Verify password hash
    */
   async verifyPassword(password, hashedPassword) {
-    const combined = Buffer.from(hashedPassword, 'hex');
+    const combined = Buffer.from(hashedPassword, "hex");
     const salt = combined.subarray(0, 16);
     const hash = combined.subarray(16);
 
@@ -187,11 +180,11 @@ class EncryptionService {
         salt,
         100000,
         64,
-        'sha512',
+        "sha512",
         (err, derivedHash) => {
           if (err) reject(err);
           else resolve(crypto.timingSafeEqual(hash, derivedHash));
-        }
+        },
       );
     });
   }
@@ -200,18 +193,18 @@ class EncryptionService {
    * Generate RSA key pair
    */
   generateKeyPair() {
-    return crypto.generateKeyPairSync('rsa', {
+    return crypto.generateKeyPairSync("rsa", {
       modulusLength: 4096,
       publicKeyEncoding: {
-        type: 'spki',
-        format: 'pem'
+        type: "spki",
+        format: "pem",
       },
       privateKeyEncoding: {
-        type: 'pkcs8',
-        format: 'pem',
-        cipher: 'aes-256-cbc',
-        passphrase: process.env.KEY_PASSPHRASE || 'top-secret'
-      }
+        type: "pkcs8",
+        format: "pem",
+        cipher: "aes-256-cbc",
+        passphrase: process.env.KEY_PASSPHRASE || "top-secret",
+      },
     });
   }
 
@@ -223,9 +216,9 @@ class EncryptionService {
       {
         key: publicKey,
         padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
-        oaepHash: 'sha256'
+        oaepHash: "sha256",
       },
-      Buffer.from(data)
+      Buffer.from(data),
     );
   }
 
@@ -237,9 +230,9 @@ class EncryptionService {
       {
         key: privateKey,
         padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
-        oaepHash: 'sha256'
+        oaepHash: "sha256",
       },
-      encrypted
+      encrypted,
     );
   }
 }
@@ -250,32 +243,43 @@ async function main() {
 
   // 1. Symmetric encryption
   const key = encryptionService.generateKey();
-  const encrypted = encryptionService.encrypt('Secret message', key);
-  console.log('Encrypted:', encrypted);
+  const encrypted = encryptionService.encrypt("Secret message", key);
+  console.log("Encrypted:", encrypted);
 
   const decrypted = encryptionService.decrypt(
     encrypted.encrypted,
     key,
     encrypted.iv,
-    encrypted.tag
+    encrypted.tag,
   );
-  console.log('Decrypted:', decrypted);
+  console.log("Decrypted:", decrypted);
 
   // 2. Password-based encryption
-  const { key: derivedKey, salt } = await encryptionService.deriveKey('myPassword');
-  const passwordEncrypted = encryptionService.encrypt('Data', derivedKey);
-  console.log('Password encrypted:', passwordEncrypted);
+  const { key: derivedKey, salt } =
+    await encryptionService.deriveKey("myPassword");
+  const passwordEncrypted = encryptionService.encrypt("Data", derivedKey);
+  console.log("Password encrypted:", passwordEncrypted);
 
   // 3. Password hashing
-  const hashedPassword = await encryptionService.hashPassword('userPassword123');
-  const isValid = await encryptionService.verifyPassword('userPassword123', hashedPassword);
-  console.log('Password valid:', isValid);
+  const hashedPassword =
+    await encryptionService.hashPassword("userPassword123");
+  const isValid = await encryptionService.verifyPassword(
+    "userPassword123",
+    hashedPassword,
+  );
+  console.log("Password valid:", isValid);
 
   // 4. RSA encryption
   const { publicKey, privateKey } = encryptionService.generateKeyPair();
-  const rsaEncrypted = encryptionService.encryptWithPublicKey('Secret', publicKey);
-  const rsaDecrypted = encryptionService.decryptWithPrivateKey(rsaEncrypted, privateKey);
-  console.log('RSA decrypted:', rsaDecrypted.toString());
+  const rsaEncrypted = encryptionService.encryptWithPublicKey(
+    "Secret",
+    publicKey,
+  );
+  const rsaDecrypted = encryptionService.decryptWithPrivateKey(
+    rsaEncrypted,
+    privateKey,
+  );
+  console.log("RSA decrypted:", rsaDecrypted.toString());
 }
 
 main().catch(console.error);
@@ -537,33 +541,33 @@ CREATE TRIGGER encrypt_before_insert
 
 ```javascript
 // tls-server.js - HTTPS server with strong TLS
-const https = require('https');
-const fs = require('fs');
+const https = require("https");
+const fs = require("fs");
 
 const tlsOptions = {
-  key: fs.readFileSync('private-key.pem'),
-  cert: fs.readFileSync('certificate.pem'),
-  ca: fs.readFileSync('ca-cert.pem'), // Certificate authority
+  key: fs.readFileSync("private-key.pem"),
+  cert: fs.readFileSync("certificate.pem"),
+  ca: fs.readFileSync("ca-cert.pem"), // Certificate authority
 
   // TLS version restrictions
-  minVersion: 'TLSv1.2',
-  maxVersion: 'TLSv1.3',
+  minVersion: "TLSv1.2",
+  maxVersion: "TLSv1.3",
 
   // Strong cipher suites
   ciphers: [
-    'TLS_AES_256_GCM_SHA384',
-    'TLS_CHACHA20_POLY1305_SHA256',
-    'TLS_AES_128_GCM_SHA256',
-    'ECDHE-RSA-AES256-GCM-SHA384',
-    'ECDHE-RSA-AES128-GCM-SHA256'
-  ].join(':'),
+    "TLS_AES_256_GCM_SHA384",
+    "TLS_CHACHA20_POLY1305_SHA256",
+    "TLS_AES_128_GCM_SHA256",
+    "ECDHE-RSA-AES256-GCM-SHA384",
+    "ECDHE-RSA-AES128-GCM-SHA256",
+  ].join(":"),
 
   // Prefer server cipher order
   honorCipherOrder: true,
 
   // Require client certificate (mutual TLS)
   requestCert: true,
-  rejectUnauthorized: true
+  rejectUnauthorized: true,
 };
 
 const server = https.createServer(tlsOptions, (req, res) => {
@@ -572,21 +576,22 @@ const server = https.createServer(tlsOptions, (req, res) => {
 
   if (req.client.authorized) {
     res.writeHead(200);
-    res.end('Secure connection established');
+    res.end("Secure connection established");
   } else {
     res.writeHead(401);
-    res.end('Unauthorized');
+    res.end("Unauthorized");
   }
 });
 
 server.listen(443, () => {
-  console.log('Secure server running on port 443');
+  console.log("Secure server running on port 443");
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use AES-256-GCM for symmetric encryption
 - Use RSA-4096 or ECC for asymmetric encryption
 - Implement proper key rotation
@@ -597,6 +602,7 @@ server.listen(443, () => {
 - Use authenticated encryption
 
 ### ❌ DON'T
+
 - Roll your own crypto
 - Store keys in code
 - Use ECB mode

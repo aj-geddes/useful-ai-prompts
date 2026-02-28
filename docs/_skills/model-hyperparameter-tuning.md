@@ -1,12 +1,13 @@
 ---
 category: machine-learning
-date: '2025-01-01'
-description: Optimize hyperparameters using grid search, random search, Bayesian optimization,
+date: "2025-01-01"
+description:
+  Optimize hyperparameters using grid search, random search, Bayesian optimization,
   and automated ML frameworks like Optuna and Hyperopt
 layout: skill
 slug: model-hyperparameter-tuning
 tags:
-- development
+  - development
 title: Model Hyperparameter Tuning
 ---
 

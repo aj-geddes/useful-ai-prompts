@@ -1,6 +1,7 @@
 # Email Newsletter Strategist
 
 ## Metadata
+
 - **ID**: `content-creation-newsletter-strategist`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Marketing consultant wanting to build authority and generate leads. Target: small business owners who handle their own marketing. Goal: 1,000 engaged subscribers in 6 months, converting some to consulting clients.
 ```
 
 ### Output
+
 ```
 **Newsletter Strategy: Marketing Consultant**
 

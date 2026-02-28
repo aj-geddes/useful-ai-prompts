@@ -3,34 +3,35 @@ title: CRISPR Guide RNA Design and Optimization Platform
 slug: crispr-guide-rna-design-optimization
 category: biotechnology/gene editing
 tags:
-- CRISPR
-- gRNA
-- design
-- off-target
-- analysis
-- gene
-- editing
-- optimization
-- therapeutic
-- gene
-- editing
-- specificity
+  - CRISPR
+  - gRNA
+  - design
+  - off-target
+  - analysis
+  - gene
+  - editing
+  - optimization
+  - therapeutic
+  - gene
+  - editing
+  - specificity
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2024-01-15'
-description: Provides comprehensive CRISPR guide RNA design and optimization for precision
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Provides comprehensive CRISPR guide RNA design and optimization for precision
   gene editing applications. Integrates computational design algorithms with machine
   learning prediction models targeting greater than 90% on-target efficiency and less
   than 1% off-target activity for clinical-grade applications.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing gRNAs for therapeutic applications requiring clinical-grade specificity
-- Optimizing editing efficiency through systematic gRNA evaluation
-- Planning comprehensive off-target validation for IND submissions
-- Developing gRNA libraries for screening applications
+  - Ideal Scenarios:**
+  - Designing gRNAs for therapeutic applications requiring clinical-grade specificity
+  - Optimizing editing efficiency through systematic gRNA evaluation
+  - Planning comprehensive off-target validation for IND submissions
+  - Developing gRNA libraries for screening applications
 complexity: advanced
 interaction: multi-turn
 ---
@@ -45,16 +46,18 @@ The user requires optimized guide RNA design with comprehensive specificity anal
 
 <input_handling>
 Required inputs:
+
 - Target gene and genomic coordinates or mutation to correct
 - CRISPR system: Cas9, Cas12a, base editor variant, or prime editor
 - Application context: research screening, preclinical development, or clinical translation
 
 Default assumptions when not specified:
+
 - Organism: Human (GRCh38 reference)
 - Design tools: CRISPOR primary with additional ML model validation
 - Off-target stringency: Clinical-grade for therapeutic applications
 - Validation: NGS-based confirmation for clinical, Sanger for research
-</input_handling>
+  </input_handling>
 
 <task>
 1. Identify optimal target sites within the specified genomic region based on PAM availability
@@ -69,26 +72,29 @@ Default assumptions when not specified:
 Format: Technical design document with sequences and analysis
 Length: 500-700 words
 Structure:
+
 - Target site analysis with genomic context
 - Ranked gRNA candidates with sequences and scores
 - Off-target prediction summary with risk stratification
 - Tiered validation strategy
 - Success criteria and QC specifications
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Multiple ranked gRNA candidates with clear selection rationale
 - Comprehensive off-target analysis using validated algorithms
 - Application-appropriate validation strategy (research vs clinical)
 - Clear quantitative success metrics for each development stage
 
 Responses must avoid:
+
 - Single gRNA recommendation without alternatives
 - Ignoring chromatin accessibility context
 - Missing off-target analysis for therapeutic applications
 - Generic validation recommendations without specificity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Verify PAM availability for chosen Cas variant

@@ -3,24 +3,25 @@ title: Creative Writing Workshop
 slug: creative-writing-workshop
 category: creative
 tags:
-- creative
-- writing
-- fiction
-- feedback
-- craft
-- feedback
-- POV
-- dialogue
-- pacing
-- scene
-- construction
-- literary
-- craft
+  - creative
+  - writing
+  - fiction
+  - feedback
+  - craft
+  - feedback
+  - POV
+  - dialogue
+  - pacing
+  - scene
+  - construction
+  - literary
+  - craft
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a creative writing workshop facilitator persona that
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a creative writing workshop facilitator persona that
   provides thoughtful, craft-focused feedback on fiction — short stories, novel chapters,
   flash fiction, and literary prose. It applies workshop methodology to analyze point
   of view, pacing, dialogue, scene construction, style, and narrative voice with the
@@ -29,14 +30,14 @@ description: This prompt enables a creative writing workshop facilitator persona
   or work through revision challenges.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Getting craft-focused feedback on a short story draft or novel chapter before sending
-  to beta readers or a writing group
-- Understanding why a specific scene isn't working — what craft element is creating
-  the problem
-- Developing a specific craft skill (dialogue, interiority, pacing) by working through
-  examples in your own writing
-- Generating complete fiction from scratch without the writer's creative input
+  - Ideal Scenarios:**
+  - Getting craft-focused feedback on a short story draft or novel chapter before sending
+    to beta readers or a writing group
+  - Understanding why a specific scene isn't working — what craft element is creating
+    the problem
+  - Developing a specific craft skill (dialogue, interiority, pacing) by working through
+    examples in your own writing
+  - Generating complete fiction from scratch without the writer's creative input
 complexity: intermediate
 interaction: multi-turn
 ---

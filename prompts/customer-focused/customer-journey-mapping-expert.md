@@ -1,6 +1,7 @@
 # Customer Journey Mapping Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-journey-mapping-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Create comprehensive customer journey maps that reveal every interaction, emotio
 ## When to Use
 
 ### Ideal Scenarios
+
 - Mapping new customer experiences before design or development
 - Diagnosing pain points in existing customer journeys
 - Aligning cross-functional teams around customer experience
@@ -26,6 +28,7 @@ Create comprehensive customer journey maps that reveal every interaction, emotio
 - Preparing for digital transformation initiatives
 
 ### Anti-Patterns (When Not to Use)
+
 - Internal process mapping without customer perspective (use process mapping)
 - Single touchpoint optimization (use touchpoint-specific analysis)
 - When no customer data or research is available
@@ -108,6 +111,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Persona: First-time home furniture buyer, millennial professional (28-38), dual income, moving into first home together, researches extensively online but wants to see furniture in person before major purchase
 2. Goal: Furnish their new living room with a cohesive set (sofa, chairs, tables, storage)
@@ -135,6 +139,7 @@ Persona: Maya and James, 32 and 34, dual-income professionals moving into their 
 Customer Mindset: Excited about new home, overwhelmed by options, seeking style direction
 
 Customer Goals:
+
 - Understand style preferences as a couple
 - Get inspiration for living room vision
 - Begin to understand price ranges
@@ -150,6 +155,7 @@ Touchpoints:
 Emotions: Excited (8/10), Curious but Slightly Overwhelmed (6/10)
 
 Pain Points:
+
 - Room planner tool crashes on mobile (32% of users)
 - Difficult to save and share inspiration across devices
 - No easy way to see complete room sets together
@@ -159,6 +165,7 @@ Pain Points:
 Customer Mindset: Getting serious, comparing options, concerned about making wrong choice
 
 Customer Goals:
+
 - Narrow to specific products
 - Understand quality, materials, dimensions
 - Compare with competitors
@@ -176,6 +183,7 @@ Touchpoints:
 Emotions: Excited (7/10), Anxious about Measurements (5/10), Frustrated with Information Overload (4/10)
 
 Pain Points:
+
 - Product dimensions hard to visualize (top complaint)
 - No way to see coordinating pieces together easily
 - Reviews don't filter by room size or use case
@@ -186,6 +194,7 @@ Pain Points:
 Customer Mindset: Ready to touch and feel, want to finalize decision, need reassurance
 
 Customer Goals:
+
 - Confirm quality matches expectations
 - Test comfort and scale in person
 - Get expert advice on coordination
@@ -203,6 +212,7 @@ Touchpoints:
 Emotions: Hopeful (7/10), Overwhelmed by Store Size (5/10), Frustrated if Can't Find Items (3/10)
 
 Pain Points:
+
 - Cannot find specific items browsed online (major friction)
 - Salespeople don't know customer's online browsing history
 - Design consultation not offered proactively
@@ -215,6 +225,7 @@ Pain Points:
 Customer Mindset: Committed to purchase, want smooth transaction, anxious about delivery
 
 Customer Goals:
+
 - Complete purchase easily
 - Schedule delivery for convenient time
 - Understand what to expect
@@ -231,6 +242,7 @@ Touchpoints:
 Emotions: Relieved to Decide (7/10), Frustrated with Scheduling (4/10), Anxious about Delivery (5/10)
 
 Pain Points:
+
 - Delivery windows are 4-hour blocks during workdays only
 - Rescheduling requires phone call and long hold times
 - No visibility into delivery preparation needs (door measurements, assembly time)
@@ -241,6 +253,7 @@ Pain Points:
 Customer Mindset: Eager for furniture, anxious about process, wants it done
 
 Customer Goals:
+
 - Successful delivery without damage
 - Quick and competent setup
 - Immediate enjoyment of new furniture
@@ -258,6 +271,7 @@ Touchpoints:
 Emotions: Excited (8/10) to Frustrated if Issues (2/10), Relief when Complete (9/10)
 
 Pain Points:
+
 - Assembly instructions are primary post-purchase complaint
 - Missing or incorrect hardware causes significant frustration
 - Support hold times during delivery hours are longest
@@ -268,6 +282,7 @@ Pain Points:
 Customer Mindset: Evaluating decision, sharing with others, addressing issues
 
 Customer Goals:
+
 - Confirm satisfaction with purchase
 - Address any issues quickly
 - Share experience with others
@@ -284,6 +299,7 @@ Touchpoints:
 Emotions: Satisfied if No Issues (8/10), Delighted if Experience Exceeded Expectations (10/10)
 
 Pain Points:
+
 - Review request comes before customer has fully assembled and used product
 - No proactive satisfaction check
 - Cross-sell emails generic rather than complementary to purchased items
@@ -316,33 +332,36 @@ Valley Moments: Measurement anxiety (research), can't find items in store, deliv
 
 **OPPORTUNITY MATRIX**
 
-| Opportunity | Impact | Effort | Priority |
-|-------------|--------|--------|----------|
-| Connect online browsing to in-store experience | High | Medium | 1 |
-| Proactive design consultation offer | High | Low | 2 |
-| AR tool promotion and mobile optimization | High | Medium | 3 |
-| Delivery window flexibility (weekends) | High | High | 4 |
-| Assembly instruction redesign with video | Medium | Medium | 5 |
-| Post-purchase satisfaction check (Day 7 call) | Medium | Low | 6 |
-| Smart cross-sell based on room completion | Medium | Medium | 7 |
+| Opportunity                                    | Impact | Effort | Priority |
+| ---------------------------------------------- | ------ | ------ | -------- |
+| Connect online browsing to in-store experience | High   | Medium | 1        |
+| Proactive design consultation offer            | High   | Low    | 2        |
+| AR tool promotion and mobile optimization      | High   | Medium | 3        |
+| Delivery window flexibility (weekends)         | High   | High   | 4        |
+| Assembly instruction redesign with video       | Medium | Medium | 5        |
+| Post-purchase satisfaction check (Day 7 call)  | Medium | Low    | 6        |
+| Smart cross-sell based on room completion      | Medium | Medium | 7        |
 
 ---
 
 **IMPLEMENTATION ROADMAP**
 
 **Quick Wins (0-30 Days):**
+
 1. Add QR codes in store linking to AR tool for items
 2. Train staff to offer design consultation during first greeting
 3. Move review request to Day 14 instead of Day 3
 4. Add assembly video links to confirmation email
 
 **Medium-Term (30-90 Days):**
+
 1. Implement clienteling app connecting online browse history to in-store tablets
 2. Redesign assembly instructions with QR-linked videos
 3. Add proactive Day 7 satisfaction call for purchases over $1,000
 4. Launch room completion recommendations based on purchase
 
 **Long-Term (90+ Days):**
+
 1. Expand delivery windows to include weekends and evening options
 2. Develop personalized cross-sell journey based on purchased room
 3. Implement design consultation booking online before store visit

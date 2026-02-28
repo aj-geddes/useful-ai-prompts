@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Identify unusual patterns, outliers, and anomalies in data using statistical
+date: "2025-01-01"
+description:
+  Identify unusual patterns, outliers, and anomalies in data using statistical
   methods, isolation forests, and autoencoders for fraud detection and quality monitoring
 layout: skill
 slug: anomaly-detection
 tags:
-- data
+  - data
 title: Anomaly Detection
 ---
 

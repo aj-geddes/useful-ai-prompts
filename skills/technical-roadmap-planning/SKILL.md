@@ -137,7 +137,7 @@ class RoadmapDependency {
   mapDependencies(initiatives) {
     const dependencyMap = {};
 
-    initiatives.forEach(init => {
+    initiatives.forEach((init) => {
       dependencyMap[init.id] = {
         name: init.name,
         dependsOn: init.blockedBy || [],
@@ -145,7 +145,7 @@ class RoadmapDependency {
         criticalPath: init.criticalPath || false,
         startDate: init.plannedStart,
         endDate: init.plannedEnd,
-        buffer: init.buffer || '2 weeks'
+        buffer: init.buffer || "2 weeks",
       };
     });
 
@@ -161,22 +161,22 @@ class RoadmapDependency {
       // Check for circular dependencies
       if (this.hasCircularDependency(init, current.dependsOn, dependencyMap)) {
         issues.push({
-          type: 'Circular Dependency',
+          type: "Circular Dependency",
           initiative: current.name,
-          severity: 'Critical'
+          severity: "Critical",
         });
       }
 
       // Check for timeline conflicts
-      current.dependsOn.forEach(dep => {
+      current.dependsOn.forEach((dep) => {
         const depInit = dependencyMap[dep];
         if (depInit && depInit.endDate > current.startDate) {
           issues.push({
-            type: 'Timeline Conflict',
+            type: "Timeline Conflict",
             initiative: current.name,
             blockedBy: depInit.name,
             gap: this.calculateGap(depInit.endDate, current.startDate),
-            severity: 'Medium'
+            severity: "Medium",
           });
         }
       });
@@ -185,7 +185,7 @@ class RoadmapDependency {
     return {
       dependencyMap,
       issues,
-      isValid: issues.length === 0
+      isValid: issues.length === 0,
     };
   }
 
@@ -194,7 +194,9 @@ class RoadmapDependency {
     visited.add(node);
 
     for (let dep of deps) {
-      if (this.hasCircularDependency(dep, map[dep]?.dependsOn || [], map, visited)) {
+      if (
+        this.hasCircularDependency(dep, map[dep]?.dependsOn || [], map, visited)
+      ) {
         return true;
       }
     }
@@ -219,7 +221,7 @@ class RoadmapDependency {
       path: criticalPath,
       duration: maxDuration,
       initiatives: criticalPath,
-      delayImpact: 'All dependent initiatives delayed'
+      delayImpact: "All dependent initiatives delayed",
     };
   }
 }
@@ -340,6 +342,7 @@ Success Metrics:
 ## Best Practices
 
 ### ✅ DO
+
 - Align technical roadmap with business strategy
 - Include time for technical debt reduction
 - Plan for buffer/contingency in critical paths
@@ -352,6 +355,7 @@ Success Metrics:
 - Build in learning & experimentation time
 
 ### ❌ DON'T
+
 - Pursue every new technology trend
 - Plan at 100% utilization (no buffer)
 - Ignore team capability and training needs

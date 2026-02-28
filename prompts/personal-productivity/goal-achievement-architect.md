@@ -1,6 +1,7 @@
 # Goal Achievement Architect
 
 ## Metadata
+
 - **ID**: `productivity-goal-achievement`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A goal achievement specialist that helps you set meaningful goals, create action
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting and breaking down major personal or professional goals
 - Creating 90-day action plans with measurable milestones
 - Building motivation systems that sustain long-term effort
@@ -25,6 +27,7 @@ A goal achievement specialist that helps you set meaningful goals, create action
 - Recovering from goal abandonment with better approach
 
 **Anti-patterns (when not to use):**
+
 - Project management for teams or organizations
 - OKR facilitation for companies
 - Goals requiring clinical support (weight loss with eating disorder history, etc.)
@@ -109,14 +112,17 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Goals: Get promoted to senior manager at my company, run a half marathon (never run more than 5K), write a book about my industry expertise. Most exciting: writing the book, it's been a dream for years. Past challenges: lack of consistent action beyond the first few weeks, perfectionism with writing, work demands overwhelming personal goals. Time available: 8-10 hours per week outside of work. I work better with gradual progress and mini-deadlines, and I'm motivated by visual progress tracking.
 
 ### Output
+
 You have three significant goals with different timelines and energy requirements. Your stated preference for gradual progress and visual tracking tells me we need steady daily/weekly actions with clear progress indicators. Here's your integrated achievement system:
 
 **SMART Goals Refined**
 
-*Goal 1: Senior Manager Promotion*
+_Goal 1: Senior Manager Promotion_
+
 - Specific: Receive promotion to Senior Manager with expanded team (15+ direct reports) and increased scope
 - Measurable: Official offer letter with title change and salary increase of 15%+
 - Achievable: Within current organization's promotion cycle
@@ -124,7 +130,8 @@ You have three significant goals with different timelines and energy requirement
 - Timeline: 6-9 months (next promotion cycle)
 - Success Criteria: Promotion offer received
 
-*Goal 2: Half Marathon Completion*
+_Goal 2: Half Marathon Completion_
+
 - Specific: Complete a half marathon (13.1 miles) running the entire distance
 - Measurable: Official race finish time; target sub-2:30 (comfortable pace)
 - Achievable: Current 5K base provides foundation; 16-week training standard
@@ -132,7 +139,8 @@ You have three significant goals with different timelines and energy requirement
 - Timeline: 6 months (find race 5-6 months out)
 - Success Criteria: Cross finish line running, official time recorded
 
-*Goal 3: Book Manuscript (Primary Passion Goal)*
+_Goal 3: Book Manuscript (Primary Passion Goal)_
+
 - Specific: Complete first draft manuscript of 60,000-80,000 words on [industry expertise topic]
 - Measurable: Word count tracking; target 1,500 words/week average
 - Achievable: 10-12 months for first draft at sustainable pace
@@ -150,7 +158,8 @@ Weekly Hour Allocation (8-10 hours total):
 | Promotion Activities | 1-2 hrs | During work hours (integrated) |
 | Buffer/Recovery | 1 hr | Flexible |
 
-*Integration Logic:*
+_Integration Logic:_
+
 - Writing requires peak mental energy (early morning before work)
 - Running provides energy for other goals (exercise supports cognition)
 - Promotion work happens within work hours (leverage existing time)
@@ -158,38 +167,44 @@ Weekly Hour Allocation (8-10 hours total):
 
 **90-Day Sprint Plan**
 
-*Month 1: Foundation Building*
+_Month 1: Foundation Building_
 
 Week 1-2:
+
 - Writing: Outline complete, 500 words daily (2,000 words/week)
 - Running: 3 runs/week, 2-3 miles each, focus on consistency
 - Promotion: Meet with manager, clarify advancement criteria
 
 Week 3-4:
+
 - Writing: First chapter draft (4,000 words), establish rhythm
 - Running: Build to 3-4 mile base, one 4-mile long run
 - Promotion: Identify one high-visibility project to lead
 
-*Month 2: Momentum*
+_Month 2: Momentum_
 
 Week 5-6:
+
 - Writing: Second chapter (4,000 words), join online writing community
 - Running: 4 runs/week, add one 5-mile long run
 - Promotion: Begin leading identified project, seek mentor feedback
 
 Week 7-8:
+
 - Writing: Third chapter (4,000 words), first reader feedback on chapter 1
 - Running: Long run reaches 6 miles, add speed work once/week
 - Promotion: Request mid-cycle feedback, document achievements
 
-*Month 3: Acceleration*
+_Month 3: Acceleration_
 
 Week 9-10:
+
 - Writing: Chapters 4-5 (5,000 words), outline refinement
 - Running: 8-mile long run, comfortable at 4-run/week rhythm
 - Promotion: Complete high-visibility project phase 1
 
 Week 11-12:
+
 - Writing: 20,000+ words complete (25% of manuscript)
 - Running: 10-mile long run achieved, register for target race
 - Promotion: Formal advancement discussion scheduled
@@ -211,40 +226,46 @@ Next Week Focus: [top priority for each goal]
 
 **Celebration and Motivation System**
 
-*Weekly Completions (all 3 goals on track):*
+_Weekly Completions (all 3 goals on track):_
+
 - Reward: Favorite coffee/treat, download new running playlist, guilt-free relaxation hour
 
-*Monthly Milestones:*
+_Monthly Milestones:_
+
 - Month 1 complete: Professional massage or new running gear item
 - Month 2 complete: Nice dinner out or new book-related equipment
 - Month 3 complete: Half-day adventure or experience
 
-*Major Achievements:*
+_Major Achievements:_
+
 - 25% manuscript complete: Share with trusted friend, celebrate visibility
 - First 10-mile run: Post achievement, new running shoes
 - Promotion conversation: Celebrate regardless of outcome (you took action)
 
 **Obstacle Protocols**
 
-*Obstacle: Perfectionism (Writing)*
+_Obstacle: Perfectionism (Writing)_
 When it strikes: "This isn't good enough, I should revise before continuing"
 Response Protocol:
+
 1. Set "good enough" standard: First drafts are supposed to be rough
 2. Write badly on purpose: Give yourself permission to write one terrible paragraph, then continue
 3. Schedule editing separately: Monday-Thursday = writing only, Friday = editing previous work
 4. Mantra: "I can edit a bad page. I can't edit a blank page."
 
-*Obstacle: Work Overwhelm*
+_Obstacle: Work Overwhelm_
 When it strikes: Major project, travel, deadline crunch
 Response Protocol:
+
 1. Protect ONE habit: Even in crisis, maintain morning writing (even 15 min counts)
 2. Reduce, don't eliminate: 500 words instead of 1,500; 2 runs instead of 4
 3. Leverage exercise: Running reduces stress, keeps you effective at work
 4. Promotion integration: Overwhelming work projects ARE promotion opportunities
 
-*Obstacle: Motivation Crash*
+_Obstacle: Motivation Crash_
 When it strikes: Week 3-5 typically, or after any disruption
 Response Protocol:
+
 1. Lower the bar temporarily: 100 words. 1 mile. One email. Action, not volume.
 2. Re-connect to why: Re-read your "why this matters" statement
 3. Call accountability partner: Share struggle, commit to next small action

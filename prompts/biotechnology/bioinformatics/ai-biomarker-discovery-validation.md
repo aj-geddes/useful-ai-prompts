@@ -1,6 +1,7 @@
 # AI-Powered Biomarker Discovery and Validation Platform
 
 ## Metadata
+
 - **ID**: `biotechnology-ai-biomarker-discovery`
 - **Version**: 1.0.0
 - **Category**: Biotechnology/Bioinformatics
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Develops AI-powered biomarker discovery and validation strategies for precision medicine applications. Integrates multi-omics data analysis, machine learning model development, and clinical validation workflows to identify diagnostic and prognostic biomarkers.
 
 ## When to Use
+
 - Designing biomarker discovery programs from multi-omics data
 - Building ML models for patient stratification
 - Planning clinical validation studies for biomarkers
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Developing prognostic biomarker for early-stage non-small cell lung cancer (NSCLC) to predict recurrence risk and guide adjuvant therapy decisions. Available: RNA-seq from 500 resected tumors (60% recurrence), clinical outcomes (5-year follow-up), matched normal tissue. Goal: identify patients who benefit from adjuvant chemotherapy vs. observation. Want to develop commercial diagnostic test. Need to outperform current TNM staging.
 ```
 
 ### Output
+
 ```
 **NSCLC Recurrence Biomarker Program**
 

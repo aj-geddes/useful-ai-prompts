@@ -3,34 +3,35 @@ title: Customer Journey Mapping Expert
 slug: customer-journey-mapping-expert
 category: customer-focused
 tags:
-- customer
-- journey
-- experience
-- mapping
-- touchpoint
-- analysis
-- user
-- research
-- service
-- design
-- CX
+  - customer
+  - journey
+  - experience
+  - mapping
+  - touchpoint
+  - analysis
+  - user
+  - research
+  - service
+  - design
+  - CX
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: Create comprehensive customer journey maps that reveal every interaction,
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  Create comprehensive customer journey maps that reveal every interaction,
   emotion, and decision point throughout the customer experience. This prompt helps
   visualize end-to-end journeys, identify friction points and moments of truth, analyze
   channel handoffs, and develop prioritized improvement roadmaps that transform customer
   experiences.
 layout: prompt
 use_cases:
-- Mapping new customer experiences before design or development
-- Diagnosing pain points in existing customer journeys
-- Aligning cross-functional teams around customer experience
-- Identifying opportunities for experience differentiation
-- Planning omnichannel experience improvements
+  - Mapping new customer experiences before design or development
+  - Diagnosing pain points in existing customer journeys
+  - Aligning cross-functional teams around customer experience
+  - Identifying opportunities for experience differentiation
+  - Planning omnichannel experience improvements
 complexity: Intermediate
 interaction: Multi-turn collaborative
 ---
@@ -45,6 +46,7 @@ Organizations often optimize individual touchpoints without understanding the en
 
 <input_handling>
 Required information to gather:
+
 1. Customer persona being mapped (demographics, goals, tech comfort)
 2. Primary goal the customer is trying to achieve
 3. Customer's current relationship with the brand (new, existing, returning)
@@ -57,11 +59,12 @@ Required information to gather:
 10. Business objectives for the journey mapping exercise
 
 Optional context:
+
 - Competitive journey benchmarks
 - Previous journey mapping efforts
 - Channel-specific constraints
 - Organizational silos affecting the journey
-</input_handling>
+  </input_handling>
 
 <task>
 1. DEFINE JOURNEY SCOPE: Clarify the persona, journey boundaries, and success criteria
@@ -78,6 +81,7 @@ Optional context:
 Format: Visual journey map structure with detailed analysis and recommendations
 Length: 1500-2500 words for comprehensive mapping
 Include:
+
 - Journey stage breakdown with customer goals and mindset at each stage
 - Touchpoint inventory across all channels
 - Emotional journey curve with peaks and valleys
@@ -85,16 +89,17 @@ Include:
 - Opportunity matrix with impact, effort, and priority rankings
 - Channel optimization recommendations
 - Implementation roadmap with timeline (quick wins, medium-term, long-term)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Journey stages reflect customer mental model, not internal processes
 - Touchpoints include all channels (not just primary ones)
 - Emotional mapping is grounded in customer research or feedback data
 - Pain points are specific and actionable, not vague
 - Opportunities are prioritized with clear rationale
 - Recommendations include specific improvements, not just problem statements
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Map the journey from customer perspective, not internal process view

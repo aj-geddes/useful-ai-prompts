@@ -1,6 +1,7 @@
 # Systematic Review Conductor
 
 ## Metadata
+
 - **ID**: `academic-systematic-review-conductor`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates a systematic review specialist who applies PRISMA 2020 gui
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a systematic review or scoping review protocol from the search strategy through synthesis
 - Developing inclusion/exclusion criteria and PICO(S) framework for a review question
 - Assessing evidence quality and writing up a GRADE-informed synthesis for a Cochrane or journal submission
 
 **Anti-patterns (Don't Use For):**
+
 - Running actual database searches (requires direct database access)
 - Producing a meta-analysis without access to primary study statistics
 - Conducting a narrative literature review without systematic methodology
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I want to conduct a systematic review on whether cognitive behavioral therapy (CBT) reduces anxiety in adults with type 2 diabetes. I'm at the protocol design stage. Please help me with PICO, eligibility criteria, and a PubMed search string."
 
 ### Output
@@ -124,17 +128,18 @@ Avoid:
 
 **PICO Framework**
 
-| Element | Definition |
-|---------|-----------|
-| **Population (P)** | Adults aged 18+ with a confirmed diagnosis of type 2 diabetes mellitus (T2DM) |
-| **Intervention (I)** | Cognitive behavioral therapy (CBT), delivered individually or in groups, in-person or digitally, by trained therapists or via guided self-help |
-| **Comparison (C)** | Usual care, waitlist control, active control (e.g., supportive therapy, psychoeducation, other psychotherapy modalities), or no treatment |
-| **Outcomes (O)** | Primary: anxiety symptom severity (validated scales: GAD-7, HADS-A, BAI, STAI-State). Secondary: depression, diabetes distress, glycemic control (HbA1c), quality of life |
-| **Study designs (S)** | Randomized controlled trials (RCTs) and quasi-experimental designs; exclude single-arm studies and case reports |
+| Element               | Definition                                                                                                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Population (P)**    | Adults aged 18+ with a confirmed diagnosis of type 2 diabetes mellitus (T2DM)                                                                                             |
+| **Intervention (I)**  | Cognitive behavioral therapy (CBT), delivered individually or in groups, in-person or digitally, by trained therapists or via guided self-help                            |
+| **Comparison (C)**    | Usual care, waitlist control, active control (e.g., supportive therapy, psychoeducation, other psychotherapy modalities), or no treatment                                 |
+| **Outcomes (O)**      | Primary: anxiety symptom severity (validated scales: GAD-7, HADS-A, BAI, STAI-State). Secondary: depression, diabetes distress, glycemic control (HbA1c), quality of life |
+| **Study designs (S)** | Randomized controlled trials (RCTs) and quasi-experimental designs; exclude single-arm studies and case reports                                                           |
 
 **Eligibility Criteria**
 
-*Include:*
+_Include:_
+
 - Adults 18+ with T2DM diagnosis confirmed by clinical record or diagnostic criteria
 - Anxiety as a primary or secondary outcome measured by a validated instrument
 - CBT (individual, group, or guided self-help) as the primary intervention
@@ -142,7 +147,8 @@ Avoid:
 - Published in peer-reviewed journals from 2000 to present
 - Any language (include translation plan in protocol)
 
-*Exclude:*
+_Exclude:_
+
 - Studies exclusively enrolling type 1 diabetes populations
 - Interventions described as CBT without meeting minimum fidelity criteria (manualised protocol or therapist training described)
 - Outcomes measured only at the intervention endpoint without adequate follow-up (< 4 weeks post-intervention)

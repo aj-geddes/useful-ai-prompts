@@ -1,6 +1,7 @@
 # Product Roadmapping Expert
 
 ## Metadata
+
 - **ID**: `planning-product-roadmap`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A strategic product roadmapping specialist that helps you create comprehensive, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning annual or multi-year product roadmaps
 - Prioritizing features across competing stakeholder requests
 - Aligning product development with business strategy
@@ -25,6 +27,7 @@ A strategic product roadmapping specialist that helps you create comprehensive, 
 - Balancing technical debt with new feature development
 
 **Anti-patterns (Don't Use For):**
+
 - Sprint-level planning (use agile planning tools)
 - Individual feature specification (use PRD templates)
 - Technical architecture decisions (requires engineering expertise)
@@ -154,122 +157,138 @@ Deadlines: Enterprise sales push in Q3, mobile app needed by summer
 
 **Strategic Foundation**
 
-*Product Vision*
+_Product Vision_
 "Empower mid-market teams to deliver projects faster with the simplest, most intuitive project management platform that scales from startup to enterprise."
 
-*Strategic Priorities (2025)*
+_Strategic Priorities (2025)_
+
 1. **Mobile-First Experience** (35% focus) - Capture growing mobile workforce demand
 2. **Enterprise Readiness** (30% focus) - Enable upmarket expansion
 3. **Retention Excellence** (20% focus) - Reduce churn through engagement
 4. **Integration Ecosystem** (15% focus) - Connect with tools teams already use
 
-*Market Position*
+_Market Position_
+
 - Current: Simple alternative to complex enterprise tools
 - Target: Full-featured platform that stays simple
 - Key Differentiation: Ease of use + enterprise capabilities
 
 **Feature Prioritization (RICE Analysis)**
 
-| Feature | Reach | Impact | Confidence | Effort | Score | Priority |
-|---------|-------|--------|------------|--------|-------|----------|
-| Mobile App | 80% | 3 | High | 8 weeks | 8.1 | Critical |
-| Advanced Reporting | 60% | 3 | High | 6 weeks | 7.8 | Critical |
-| Slack Integration | 70% | 2 | High | 3 weeks | 7.2 | Critical |
-| Time Tracking | 50% | 2 | High | 4 weeks | 6.9 | High |
-| Enterprise SSO | 20% | 3 | High | 4 weeks | 6.4 | High |
-| Custom Fields | 40% | 2 | Medium | 5 weeks | 5.8 | High |
-| Advanced Permissions | 25% | 2 | High | 4 weeks | 5.5 | Medium |
-| API Platform | 30% | 2 | Medium | 8 weeks | 5.2 | Medium |
+| Feature              | Reach | Impact | Confidence | Effort  | Score | Priority |
+| -------------------- | ----- | ------ | ---------- | ------- | ----- | -------- |
+| Mobile App           | 80%   | 3      | High       | 8 weeks | 8.1   | Critical |
+| Advanced Reporting   | 60%   | 3      | High       | 6 weeks | 7.8   | Critical |
+| Slack Integration    | 70%   | 2      | High       | 3 weeks | 7.2   | Critical |
+| Time Tracking        | 50%   | 2      | High       | 4 weeks | 6.9   | High     |
+| Enterprise SSO       | 20%   | 3      | High       | 4 weeks | 6.4   | High     |
+| Custom Fields        | 40%   | 2      | Medium     | 5 weeks | 5.8   | High     |
+| Advanced Permissions | 25%   | 2      | High       | 4 weeks | 5.5   | Medium   |
+| API Platform         | 30%   | 2      | Medium     | 8 weeks | 5.2   | Medium   |
 
 **Quarterly Roadmap**
 
-*Q1 2025: Mobile Foundation*
+_Q1 2025: Mobile Foundation_
 Theme: "Work from Anywhere"
 
 January Release:
+
 - Mobile app beta (iOS + Android) - core viewing and updates
 - Push notifications for key events
 - Basic offline capabilities
 
 February Release:
+
 - Mobile app public launch
 - Enhanced reporting dashboard with export (PDF, Excel)
 - Slack integration (notifications + quick updates)
 
 March Release:
+
 - Time tracking module (web + mobile)
 - Basic analytics dashboard
 - User onboarding improvements (reduce time-to-value)
 
 Q1 Success Targets:
+
 - 40% of active users try mobile app
 - 25% reduction in churn rate (8% to 6%)
 - 20% increase in daily active users
 
-*Q2 2025: Enterprise Readiness*
+_Q2 2025: Enterprise Readiness_
 Theme: "Scale with Confidence"
 
 April Release:
+
 - Enterprise SSO (SAML 2.0, OIDC)
 - Advanced user permissions (roles, team-based access)
 - Bulk user management
 
 May Release:
+
 - Custom fields and workflows
 - Advanced project templates
 - Automation rules engine (if-then triggers)
 
 June Release:
+
 - Advanced reporting suite with custom dashboards
 - Data export API
 - Audit logs and compliance reporting
 
 Q2 Success Targets:
+
 - 10 enterprise pilot customers
 - 50% improvement in user engagement metrics
 - 30% increase in average contract value
 
-*Q3 2025: Integration Ecosystem*
+_Q3 2025: Integration Ecosystem_
 Theme: "Connect Everything"
 
 July Release:
+
 - Public API platform with developer documentation
 - Webhook system for real-time events
 - Rate limiting and OAuth authentication
 
 August Release:
+
 - Integrations marketplace
 - Microsoft Teams integration
 - Google Workspace sync (Calendar, Drive)
 - Zapier connector
 
 September Release:
+
 - Advanced workflow automation
 - Cross-project reporting
 - Resource management features
 
 Q3 Success Targets:
+
 - 15 third-party integrations live
 - 60% of teams use at least one integration
 - Enterprise pipeline doubles
 
-*Q4 2025: Intelligent Insights*
+_Q4 2025: Intelligent Insights_
 Theme: "Data-Driven Decisions"
 
 October-December Releases:
+
 - Predictive project analytics
 - Resource utilization insights
 - AI-powered project recommendations
 - Executive dashboard with portfolio views
 
 Q4 Success Targets:
+
 - $4M ARR achieved
 - 25 enterprise customers
 - Churn reduced to 4%
 
 **Resource Allocation**
 
-*Team Structure (12 Engineers)*
+_Team Structure (12 Engineers)_
 | Team | FTEs | Focus Area |
 |------|------|------------|
 | Mobile | 3 | iOS, Android, mobile web |
@@ -277,7 +296,7 @@ Q4 Success Targets:
 | Frontend/Web | 3 | Dashboard, reporting, UX |
 | DevOps/Infrastructure | 2 | Scaling, security, reliability |
 
-*Quarterly Budget ($200K/quarter)*
+_Quarterly Budget ($200K/quarter)_
 | Category | Q1 | Q2 | Q3 | Q4 |
 |----------|-----|-----|-----|-----|
 | Development | $120K | $130K | $120K | $110K |
@@ -287,7 +306,7 @@ Q4 Success Targets:
 
 **Success Metrics**
 
-*Business KPIs*
+_Business KPIs_
 | Metric | Current | Q2 Target | Q4 Target |
 |--------|---------|-----------|-----------|
 | ARR | $2M | $2.8M | $4M |
@@ -295,7 +314,7 @@ Q4 Success Targets:
 | Enterprise Customers | 5 | 15 | 25 |
 | Avg Contract Value | $4K | $5K | $6K |
 
-*Product KPIs*
+_Product KPIs_
 | Metric | Current | Q2 Target | Q4 Target |
 |--------|---------|-----------|-----------|
 | Daily Active Users | 2,000 | 3,000 | 4,000 |
@@ -305,13 +324,15 @@ Q4 Success Targets:
 
 **Stakeholder Communication**
 
-*Roadmap Views*
+_Roadmap Views_
+
 - Executive: Quarterly themes with business outcomes
 - Sales: Customer-facing timeline with key features
 - Engineering: Detailed initiative breakdown with dependencies
 - Customers: High-level direction (shared quarterly)
 
-*Update Cadence*
+_Update Cadence_
+
 - Weekly: Engineering progress updates
 - Monthly: Cross-functional roadmap review
 - Quarterly: Board/executive strategic review

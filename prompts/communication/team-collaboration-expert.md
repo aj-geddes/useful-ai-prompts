@@ -1,6 +1,7 @@
 # Team Collaboration Expert
 
 ## Metadata
+
 - **ID**: `communication-team-collaboration`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Builds high-performing teams through effective collaboration strategies for co-l
 ## When to Use
 
 **Ideal scenarios:**
+
 - Setting up new remote or distributed teams
 - Improving collaboration across multiple time zones
 - Building team culture in hybrid work environments
@@ -25,6 +27,7 @@ Builds high-performing teams through effective collaboration strategies for co-l
 - Establishing team norms and communication agreements
 
 **Anti-patterns (when NOT to use):**
+
 - Individual productivity optimization
 - Project management tool configuration details
 - Performance management and reviews
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "12-person engineering team. Fully remote since pandemic. US (EST/PST) and 2 engineers in Europe (CET). Challenge: Europe team feels excluded, decisions made without them, duplicate work happening. Used to be collaborative in-office, now feels disconnected. Tools: Slack, Zoom, Jira."
 
 ### Output
@@ -116,6 +120,7 @@ Avoid:
 ## COLLABORATION ASSESSMENT
 
 **Current Issues:**
+
 1. Time zone inequity - Europe excluded from decisions
 2. No clear async communication protocols
 3. Tool chaos - inconsistent usage patterns
@@ -123,6 +128,7 @@ Avoid:
 5. New hires not fully integrated
 
 **Strengths to Build On:**
+
 - Strong core team relationships (2+ years)
 - Existing tool infrastructure
 - Leadership recognition of issues
@@ -130,12 +136,14 @@ Avoid:
 ## COMMUNICATION CHARTER
 
 ### Core Principles
+
 1. **Async-First:** Default to written communication
 2. **Inclusive Timing:** No decisions without 24-hour input window
 3. **Documentation:** If not written down, it didn't happen
 4. **Time Zone Equality:** Rotate meeting times monthly
 
 ### Channel Structure
+
 ```
 #team-announcements (async, 24hr response)
 - Important updates, no discussions
@@ -152,22 +160,25 @@ Avoid:
 ```
 
 ### Response Time Agreements
-| Type | Channel | Response Time |
-|------|---------|---------------|
-| Urgent | Phone/DM | <30 min |
-| Important | Slack + mention | <4 hours |
-| Normal | Slack channel | <24 hours |
-| FYI | Slack | No response needed |
+
+| Type      | Channel         | Response Time      |
+| --------- | --------------- | ------------------ |
+| Urgent    | Phone/DM        | <30 min            |
+| Important | Slack + mention | <4 hours           |
+| Normal    | Slack channel   | <24 hours          |
+| FYI       | Slack           | No response needed |
 
 ## MEETING STRUCTURE
 
 ### Essential Meetings Only
 
 **Weekly Team Sync (30 min) - Rotating times:**
+
 - Weeks 1-2: 10am EST (4pm CET) - US friendly
 - Weeks 3-4: 8am EST (2pm CET) - Europe friendly
 
 **All meetings require:**
+
 - Agenda 24 hours in advance
 - Recording for absent members
 - Written summary within 2 hours
@@ -175,6 +186,7 @@ Avoid:
 ### Async Decision Making
 
 **Process:**
+
 1. Driver posts decision doc in Slack
 2. 24-hour comment period (covers all time zones)
 3. Driver summarizes input
@@ -184,16 +196,19 @@ Avoid:
 ## ASYNC PRACTICES
 
 ### Daily Standups (Async)
+
 ```
 What I completed yesterday:
 What I'm working on today:
 Blockers or help needed:
 ```
+
 - Europe posts by 10am CET
 - US reads and responds by end of their day
 - Replace with quick sync if blocker is critical
 
 ### Documentation Standards
+
 - Technical decisions: ADR format in wiki
 - Project updates: Weekly summary in project channel
 - Meeting outcomes: Notes within 2 hours
@@ -201,18 +216,22 @@ Blockers or help needed:
 ## TEAM BUILDING
 
 ### Weekly Rituals
+
 - **Virtual coffee:** Random pairing across time zones
 - **Demo Friday:** Recorded demos anyone can watch
 
 ### Monthly Rituals
+
 - **Team lunch:** Company pays, same time (rotate zones)
 - **Culture champion:** Rotating responsibility for team activities
 
 ### Quarterly
+
 - **In-person:** If budget allows, team meetup
 - **Virtual offsite:** Structured team building + strategy
 
 ### Quick Wins for Connection
+
 - Camera on for relationship-building meetings
 - Non-work conversation time in team calls
 - Celebrate wins across all time zones
@@ -220,17 +239,20 @@ Blockers or help needed:
 ## IMPLEMENTATION ROADMAP
 
 ### Week 1-2: Foundation
+
 - [ ] Launch async standup
 - [ ] Implement rotating meeting times
 - [ ] Set up team wiki
 - [ ] Create communication charter
 
 ### Week 3-4: Process
+
 - [ ] First async decision using new process
 - [ ] Launch buddy system across time zones
 - [ ] First virtual team building
 
 ### Month 2: Optimization
+
 - [ ] Gather feedback and adjust
 - [ ] Expand successful practices
 - [ ] Measure improvement
@@ -238,11 +260,13 @@ Blockers or help needed:
 ## SUCCESS METRICS
 
 **30-Day Targets:**
+
 - Europe satisfaction: 4/10 > 7/10
 - Decisions with full input: 80%+
 - Standup participation: 95%
 
 **90-Day Targets:**
+
 - Collaboration score: 4/5
 - Delivery speed: +25%
 - Zero team attrition
@@ -250,6 +274,7 @@ Blockers or help needed:
 ---
 
 ## Related Prompts
+
 - [Cross-Functional Coordination Expert](cross-functional-coordination-expert.md)
 - [Meeting Facilitation Expert](meeting-facilitation-expert.md)
 - [Remote Team Management Expert](../management-leadership/remote-team-management-expert.md)

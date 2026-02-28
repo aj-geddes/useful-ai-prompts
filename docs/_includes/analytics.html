@@ -3,118 +3,128 @@
 <!-- Google Analytics 4 (Enhanced for Social Traffic) -->
 <!-- To enable: Replace G-XXXXXXXXXX with actual GA4 ID in _config.yml -->
 {% if site.google_analytics and site.google_analytics != "G-XXXXXXXXXX" %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
   // Enhanced GA4 configuration for social media tracking
-  gtag('config', '{{ site.google_analytics }}', {
+  gtag("config", "{{ site.google_analytics }}", {
     // Enhanced measurement for social interactions
     enhanced_measurement: true,
-    
+
     // Custom parameters for social media tracking
     custom_parameters: {
-      'social_platform': '{{ page.shared_from | default: "direct" }}',
-      'content_category': '{{ page.category | default: "general" }}',
-      'prompt_title': '{{ page.title | default: site.title | truncate: 100 }}'
+      social_platform: '{{ page.shared_from | default: "direct" }}',
+      content_category: '{{ page.category | default: "general" }}',
+      prompt_title: "{{ page.title | default: site.title | truncate: 100 }}",
     },
-    
+
     // Page view tracking with social context
-    page_title: '{{ page.title | default: site.title }}',
+    page_title: "{{ page.title | default: site.title }}",
     page_location: window.location.href,
-    
+
     // Social engagement tracking
     engagement: {
-      'share_tracking': true,
-      'copy_tracking': true,
-      'community_tracking': true
-    }
+      share_tracking: true,
+      copy_tracking: true,
+      community_tracking: true,
+    },
   });
-  
+
   // Custom events for social media optimization
   function trackSocialEvent(eventName, parameters) {
-    gtag('event', eventName, {
-      'event_category': 'social_engagement',
-      'event_label': parameters.platform || 'unknown',
-      'value': 1,
-      ...parameters
+    gtag("event", eventName, {
+      event_category: "social_engagement",
+      event_label: parameters.platform || "unknown",
+      value: 1,
+      ...parameters,
     });
   }
-  
+
   // Track viral features usage
   function trackViralFeature(featureName, data) {
-    gtag('event', 'viral_feature_used', {
-      'event_category': 'viral_features',
-      'event_label': featureName,
-      'custom_parameter_1': data.prompt_title || '',
-      'custom_parameter_2': data.category || '',
-      'value': 1
+    gtag("event", "viral_feature_used", {
+      event_category: "viral_features",
+      event_label: featureName,
+      custom_parameter_1: data.prompt_title || "",
+      custom_parameter_2: data.category || "",
+      value: 1,
     });
   }
-  
+
   // Track community engagement
   function trackCommunityEngagement(platform, action, data) {
-    gtag('event', 'community_engagement', {
-      'event_category': 'community',
-      'event_label': `${platform}_${action}`,
-      'custom_parameter_1': data.content || '',
-      'custom_parameter_2': data.subreddit || data.channel || '',
-      'value': 1
+    gtag("event", "community_engagement", {
+      event_category: "community",
+      event_label: `${platform}_${action}`,
+      custom_parameter_1: data.content || "",
+      custom_parameter_2: data.subreddit || data.channel || "",
+      value: 1,
     });
   }
-  
+
   // Enhanced page view tracking with social context
   function trackEnhancedPageView(additionalData = {}) {
-    gtag('event', 'page_view', {
-      'page_title': document.title,
-      'page_location': window.location.href,
-      'social_referrer': document.referrer,
-      'utm_source': new URLSearchParams(window.location.search).get('utm_source') || 'direct',
-      'utm_medium': new URLSearchParams(window.location.search).get('utm_medium') || 'none',
-      'utm_campaign': new URLSearchParams(window.location.search).get('utm_campaign') || 'none',
-      ...additionalData
+    gtag("event", "page_view", {
+      page_title: document.title,
+      page_location: window.location.href,
+      social_referrer: document.referrer,
+      utm_source:
+        new URLSearchParams(window.location.search).get("utm_source") ||
+        "direct",
+      utm_medium:
+        new URLSearchParams(window.location.search).get("utm_medium") || "none",
+      utm_campaign:
+        new URLSearchParams(window.location.search).get("utm_campaign") ||
+        "none",
+      ...additionalData,
     });
   }
-  
+
   // Social media referrer detection and tracking
   function detectSocialReferrer() {
     const referrer = document.referrer.toLowerCase();
     const socialPlatforms = {
-      'twitter.com': 'twitter',
-      't.co': 'twitter',
-      'facebook.com': 'facebook',
-      'linkedin.com': 'linkedin',
-      'reddit.com': 'reddit',
-      'discord.com': 'discord',
-      'youtube.com': 'youtube',
-      'instagram.com': 'instagram',
-      'tiktok.com': 'tiktok'
+      "twitter.com": "twitter",
+      "t.co": "twitter",
+      "facebook.com": "facebook",
+      "linkedin.com": "linkedin",
+      "reddit.com": "reddit",
+      "discord.com": "discord",
+      "youtube.com": "youtube",
+      "instagram.com": "instagram",
+      "tiktok.com": "tiktok",
     };
-    
+
     for (const [domain, platform] of Object.entries(socialPlatforms)) {
       if (referrer.includes(domain)) {
-        gtag('event', 'social_referral', {
-          'event_category': 'traffic_source',
-          'event_label': platform,
-          'value': 1
+        gtag("event", "social_referral", {
+          event_category: "traffic_source",
+          event_label: platform,
+          value: 1,
         });
         return platform;
       }
     }
     return null;
   }
-  
+
   // Initialize social referrer tracking
   detectSocialReferrer();
-  
+
   // Export functions for use by other scripts
   window.analytics = {
     trackSocial: trackSocialEvent,
     trackViral: trackViralFeature,
     trackCommunity: trackCommunityEngagement,
-    trackPageView: trackEnhancedPageView
+    trackPageView: trackEnhancedPageView,
   };
 </script>
 {% endif %}
@@ -123,31 +133,44 @@
 <!-- To enable: Add facebook_pixel_id to _config.yml -->
 {% if site.facebook_pixel_id %}
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js",
+  );
 
-fbq('init', '{{ site.facebook_pixel_id }}');
-fbq('track', 'PageView');
+  fbq("init", "{{ site.facebook_pixel_id }}");
+  fbq("track", "PageView");
 
-function trackFacebookShare(contentType, contentId) {
-  if (typeof fbq !== 'undefined') {
-    fbq('track', 'Share', {
-      content_type: contentType,
-      content_id: contentId,
-      content_category: '{{ page.category | default: "general" }}'
-    });
+  function trackFacebookShare(contentType, contentId) {
+    if (typeof fbq !== "undefined") {
+      fbq("track", "Share", {
+        content_type: contentType,
+        content_id: contentId,
+        content_category: '{{ page.category | default: "general" }}',
+      });
+    }
   }
-}
 
-window.facebookTracking = {
-  trackShare: trackFacebookShare
-};
+  window.facebookTracking = {
+    trackShare: trackFacebookShare,
+  };
 </script>
 {% endif %}
 
@@ -155,26 +178,37 @@ window.facebookTracking = {
 <!-- To enable: Add twitter_tracking_id to _config.yml -->
 {% if site.twitter_tracking_id %}
 <script>
-!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  !(function (e, t, n, s, u, a) {
+    e.twq ||
+      ((s = e.twq =
+        function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }),
+      (s.version = "1.1"),
+      (s.queue = []),
+      (u = t.createElement(n)),
+      (u.async = !0),
+      (u.src = "//static.ads-twitter.com/uwt.js"),
+      (a = t.getElementsByTagName(n)[0]),
+      a.parentNode.insertBefore(u, a));
+  })(window, document, "script");
 
-twq('init','{{ site.twitter_tracking_id }}');
-twq('track','PageView');
+  twq("init", "{{ site.twitter_tracking_id }}");
+  twq("track", "PageView");
 
-function trackTwitterEngagement(action, content) {
-  if (typeof twq !== 'undefined') {
-    twq('track', 'Engagement', {
-      engagement_type: action,
-      content_name: content,
-      content_category: '{{ page.category | default: "general" }}'
-    });
+  function trackTwitterEngagement(action, content) {
+    if (typeof twq !== "undefined") {
+      twq("track", "Engagement", {
+        engagement_type: action,
+        content_name: content,
+        content_category: '{{ page.category | default: "general" }}',
+      });
+    }
   }
-}
 
-window.twitterTracking = {
-  trackEngagement: trackTwitterEngagement
-};
+  window.twitterTracking = {
+    trackEngagement: trackTwitterEngagement,
+  };
 </script>
 {% endif %}
 
@@ -182,346 +216,389 @@ window.twitterTracking = {
 <!-- To enable: Add linkedin_partner_id to _config.yml -->
 {% if site.linkedin_partner_id %}
 <script type="text/javascript">
-_linkedin_partner_id = "{{ site.linkedin_partner_id }}";
-window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  _linkedin_partner_id = "{{ site.linkedin_partner_id }}";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
 </script>
 <script type="text/javascript">
-(function(l) {
-if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-window.lintrk.q=[]}
-var s = document.getElementsByTagName("script")[0];
-var b = document.createElement("script");
-b.type = "text/javascript";b.async = true;
-b.src = "https://snap.licdn.com/li.js";
-s.parentNode.insertBefore(b, s);})(window.lintrk);
+  (function (l) {
+    if (!l) {
+      window.lintrk = function (a, b) {
+        window.lintrk.q.push([a, b]);
+      };
+      window.lintrk.q = [];
+    }
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";
+    b.async = true;
+    b.src = "https://snap.licdn.com/li.js";
+    s.parentNode.insertBefore(b, s);
+  })(window.lintrk);
 </script>
 {% endif %}
 
 <!-- Custom Analytics for Social Media ROI -->
 <script>
-class SocialMediaAnalytics {
-  constructor() {
-    this.sessionId = this.generateSessionId();
-    this.startTime = Date.now();
-    this.events = [];
-    this.socialSources = new Set();
-    
-    this.initializeTracking();
-  }
-  
-  generateSessionId() {
-    return 'session_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
-  }
-  
-  initializeTracking() {
-    // Track UTM parameters
-    this.trackUTMParameters();
-    
-    // Track social media referrers
-    this.trackSocialReferrers();
-    
-    // Track time on page
-    this.trackTimeOnPage();
-    
-    // Track scroll depth
-    this.trackScrollDepth();
-    
-    // Track social interactions
-    this.trackSocialInteractions();
-  }
-  
-  trackUTMParameters() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const utmData = {
-      source: urlParams.get('utm_source'),
-      medium: urlParams.get('utm_medium'),
-      campaign: urlParams.get('utm_campaign'),
-      term: urlParams.get('utm_term'),
-      content: urlParams.get('utm_content')
-    };
-    
-    if (utmData.source) {
-      this.trackEvent('utm_tracking', {
-        ...utmData,
-        timestamp: new Date().toISOString(),
-        page: window.location.pathname
-      });
-      
-      // Store UTM data for session
-      sessionStorage.setItem('utm_data', JSON.stringify(utmData));
+  class SocialMediaAnalytics {
+    constructor() {
+      this.sessionId = this.generateSessionId();
+      this.startTime = Date.now();
+      this.events = [];
+      this.socialSources = new Set();
+
+      this.initializeTracking();
     }
-  }
-  
-  trackSocialReferrers() {
-    const referrer = document.referrer;
-    const socialDomains = [
-      'twitter.com', 't.co', 'facebook.com', 'linkedin.com', 
-      'reddit.com', 'discord.com', 'youtube.com', 'instagram.com',
-      'tiktok.com', 'pinterest.com', 'snapchat.com'
-    ];
-    
-    const socialSource = socialDomains.find(domain => referrer.includes(domain));
-    
-    if (socialSource) {
-      this.socialSources.add(socialSource);
-      this.trackEvent('social_referrer', {
-        platform: socialSource,
-        referrer: referrer,
-        timestamp: new Date().toISOString()
-      });
-    }
-  }
-  
-  trackTimeOnPage() {
-    // Track time milestones
-    const milestones = [10, 30, 60, 120, 300]; // seconds
-    
-    milestones.forEach(seconds => {
-      setTimeout(() => {
-        this.trackEvent('time_on_page_milestone', {
-          seconds: seconds,
-          page: window.location.pathname,
-          timestamp: new Date().toISOString()
-        });
-      }, seconds * 1000);
-    });
-    
-    // Track time on page before leaving
-    window.addEventListener('beforeunload', () => {
-      const timeSpent = Math.round((Date.now() - this.startTime) / 1000);
-      this.trackEvent('session_end', {
-        time_spent: timeSpent,
-        page: window.location.pathname,
-        social_sources: Array.from(this.socialSources),
-        timestamp: new Date().toISOString()
-      });
-    });
-  }
-  
-  trackScrollDepth() {
-    let maxScroll = 0;
-    const milestones = [25, 50, 75, 90, 100];
-    const tracked = new Set();
-    
-    window.addEventListener('scroll', () => {
-      const scrollPercent = Math.round(
-        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+
+    generateSessionId() {
+      return (
+        "session_" + Math.random().toString(36).substr(2, 9) + "_" + Date.now()
       );
-      
-      if (scrollPercent > maxScroll) {
-        maxScroll = scrollPercent;
-        
-        milestones.forEach(milestone => {
-          if (scrollPercent >= milestone && !tracked.has(milestone)) {
-            tracked.add(milestone);
-            this.trackEvent('scroll_depth', {
-              percentage: milestone,
-              page: window.location.pathname,
-              timestamp: new Date().toISOString()
-            });
-          }
+    }
+
+    initializeTracking() {
+      // Track UTM parameters
+      this.trackUTMParameters();
+
+      // Track social media referrers
+      this.trackSocialReferrers();
+
+      // Track time on page
+      this.trackTimeOnPage();
+
+      // Track scroll depth
+      this.trackScrollDepth();
+
+      // Track social interactions
+      this.trackSocialInteractions();
+    }
+
+    trackUTMParameters() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmData = {
+        source: urlParams.get("utm_source"),
+        medium: urlParams.get("utm_medium"),
+        campaign: urlParams.get("utm_campaign"),
+        term: urlParams.get("utm_term"),
+        content: urlParams.get("utm_content"),
+      };
+
+      if (utmData.source) {
+        this.trackEvent("utm_tracking", {
+          ...utmData,
+          timestamp: new Date().toISOString(),
+          page: window.location.pathname,
+        });
+
+        // Store UTM data for session
+        sessionStorage.setItem("utm_data", JSON.stringify(utmData));
+      }
+    }
+
+    trackSocialReferrers() {
+      const referrer = document.referrer;
+      const socialDomains = [
+        "twitter.com",
+        "t.co",
+        "facebook.com",
+        "linkedin.com",
+        "reddit.com",
+        "discord.com",
+        "youtube.com",
+        "instagram.com",
+        "tiktok.com",
+        "pinterest.com",
+        "snapchat.com",
+      ];
+
+      const socialSource = socialDomains.find((domain) =>
+        referrer.includes(domain),
+      );
+
+      if (socialSource) {
+        this.socialSources.add(socialSource);
+        this.trackEvent("social_referrer", {
+          platform: socialSource,
+          referrer: referrer,
+          timestamp: new Date().toISOString(),
         });
       }
-    });
-  }
-  
-  trackSocialInteractions() {
-    // Track all social sharing button clicks
-    document.addEventListener('click', (e) => {
-      const target = e.target.closest('[class*="share"], [class*="social"]');
-      if (target) {
-        const platform = this.extractPlatformFromElement(target);
-        if (platform) {
-          this.trackEvent('social_share_attempt', {
-            platform: platform,
-            element: target.className,
+    }
+
+    trackTimeOnPage() {
+      // Track time milestones
+      const milestones = [10, 30, 60, 120, 300]; // seconds
+
+      milestones.forEach((seconds) => {
+        setTimeout(() => {
+          this.trackEvent("time_on_page_milestone", {
+            seconds: seconds,
             page: window.location.pathname,
-            timestamp: new Date().toISOString()
+            timestamp: new Date().toISOString(),
+          });
+        }, seconds * 1000);
+      });
+
+      // Track time on page before leaving
+      window.addEventListener("beforeunload", () => {
+        const timeSpent = Math.round((Date.now() - this.startTime) / 1000);
+        this.trackEvent("session_end", {
+          time_spent: timeSpent,
+          page: window.location.pathname,
+          social_sources: Array.from(this.socialSources),
+          timestamp: new Date().toISOString(),
+        });
+      });
+    }
+
+    trackScrollDepth() {
+      let maxScroll = 0;
+      const milestones = [25, 50, 75, 90, 100];
+      const tracked = new Set();
+
+      window.addEventListener("scroll", () => {
+        const scrollPercent = Math.round(
+          (window.scrollY /
+            (document.documentElement.scrollHeight - window.innerHeight)) *
+            100,
+        );
+
+        if (scrollPercent > maxScroll) {
+          maxScroll = scrollPercent;
+
+          milestones.forEach((milestone) => {
+            if (scrollPercent >= milestone && !tracked.has(milestone)) {
+              tracked.add(milestone);
+              this.trackEvent("scroll_depth", {
+                percentage: milestone,
+                page: window.location.pathname,
+                timestamp: new Date().toISOString(),
+              });
+            }
           });
         }
-      }
-    });
-    
-    // Track copy actions
-    document.addEventListener('copy', () => {
-      this.trackEvent('content_copy', {
-        page: window.location.pathname,
-        timestamp: new Date().toISOString()
       });
-    });
-  }
-  
-  extractPlatformFromElement(element) {
-    const classNames = element.className.toLowerCase();
-    const platforms = ['twitter', 'facebook', 'linkedin', 'reddit', 'discord', 'whatsapp', 'telegram'];
-    
-    return platforms.find(platform => classNames.includes(platform)) || 'unknown';
-  }
-  
-  trackEvent(eventName, data) {
-    const event = {
-      event: eventName,
-      session_id: this.sessionId,
-      ...data
-    };
-    
-    this.events.push(event);
-    
-    // Send to Google Analytics if available
-    if (typeof gtag !== 'undefined') {
-      gtag('event', eventName, data);
     }
-    
-    // Send to custom analytics endpoint
-    this.sendToAnalytics(event);
-  }
-  
-  async sendToAnalytics(eventData) {
-    try {
-      // This would send to your custom analytics endpoint
-      // await fetch('/api/analytics', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(eventData)
-      // });
-      
-      // For now, just log to console
-      console.log('Analytics Event:', eventData);
-      
-    } catch (error) {
-      console.error('Analytics tracking error:', error);
+
+    trackSocialInteractions() {
+      // Track all social sharing button clicks
+      document.addEventListener("click", (e) => {
+        const target = e.target.closest('[class*="share"], [class*="social"]');
+        if (target) {
+          const platform = this.extractPlatformFromElement(target);
+          if (platform) {
+            this.trackEvent("social_share_attempt", {
+              platform: platform,
+              element: target.className,
+              page: window.location.pathname,
+              timestamp: new Date().toISOString(),
+            });
+          }
+        }
+      });
+
+      // Track copy actions
+      document.addEventListener("copy", () => {
+        this.trackEvent("content_copy", {
+          page: window.location.pathname,
+          timestamp: new Date().toISOString(),
+        });
+      });
+    }
+
+    extractPlatformFromElement(element) {
+      const classNames = element.className.toLowerCase();
+      const platforms = [
+        "twitter",
+        "facebook",
+        "linkedin",
+        "reddit",
+        "discord",
+        "whatsapp",
+        "telegram",
+      ];
+
+      return (
+        platforms.find((platform) => classNames.includes(platform)) || "unknown"
+      );
+    }
+
+    trackEvent(eventName, data) {
+      const event = {
+        event: eventName,
+        session_id: this.sessionId,
+        ...data,
+      };
+
+      this.events.push(event);
+
+      // Send to Google Analytics if available
+      if (typeof gtag !== "undefined") {
+        gtag("event", eventName, data);
+      }
+
+      // Send to custom analytics endpoint
+      this.sendToAnalytics(event);
+    }
+
+    async sendToAnalytics(eventData) {
+      try {
+        // This would send to your custom analytics endpoint
+        // await fetch('/api/analytics', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify(eventData)
+        // });
+
+        // For now, just log to console
+        console.log("Analytics Event:", eventData);
+      } catch (error) {
+        console.error("Analytics tracking error:", error);
+      }
+    }
+
+    // Public method to track custom events
+    track(eventName, data = {}) {
+      this.trackEvent(eventName, data);
+    }
+
+    // Get session summary
+    getSessionSummary() {
+      return {
+        session_id: this.sessionId,
+        duration: Math.round((Date.now() - this.startTime) / 1000),
+        events_count: this.events.length,
+        social_sources: Array.from(this.socialSources),
+        utm_data: JSON.parse(sessionStorage.getItem("utm_data") || "{}"),
+      };
     }
   }
-  
-  // Public method to track custom events
-  track(eventName, data = {}) {
-    this.trackEvent(eventName, data);
-  }
-  
-  // Get session summary
-  getSessionSummary() {
-    return {
-      session_id: this.sessionId,
-      duration: Math.round((Date.now() - this.startTime) / 1000),
-      events_count: this.events.length,
-      social_sources: Array.from(this.socialSources),
-      utm_data: JSON.parse(sessionStorage.getItem('utm_data') || '{}')
-    };
-  }
-}
 
-// Initialize social media analytics
-const socialAnalytics = new SocialMediaAnalytics();
+  // Initialize social media analytics
+  const socialAnalytics = new SocialMediaAnalytics();
 
-// Export for use by other scripts
-window.customAnalytics = socialAnalytics;
+  // Export for use by other scripts
+  window.customAnalytics = socialAnalytics;
 </script>
 
 <!-- Hotjar (for user behavior analysis) -->
 <!-- To enable: Add a valid hotjar_id to _config.yml -->
 {% if site.hotjar_id and site.hotjar_id != "1234567" %}
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:{{ site.hotjar_id }},hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:{{ site.hotjar_id }},hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 {% endif %}
 
 <!-- Social Media Conversion Tracking -->
 <script>
-// Track conversions from social media traffic
-function trackSocialConversion(action, value = 1) {
-  const utmSource = new URLSearchParams(window.location.search).get('utm_source');
-  const socialPlatforms = ['twitter', 'facebook', 'linkedin', 'reddit', 'discord'];
-  
-  if (utmSource && socialPlatforms.includes(utmSource)) {
-    // Track in Google Analytics
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'conversion', {
-        'event_category': 'social_conversion',
-        'event_label': utmSource,
-        'action': action,
-        'value': value
-      });
-    }
-    
-    // Track in Facebook Pixel
-    if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead', {
-        source: utmSource,
-        action: action
-      });
-    }
-    
-    // Track in custom analytics
-    if (window.customAnalytics) {
-      window.customAnalytics.track('social_conversion', {
-        platform: utmSource,
-        action: action,
-        value: value,
-        timestamp: new Date().toISOString()
-      });
+  // Track conversions from social media traffic
+  function trackSocialConversion(action, value = 1) {
+    const utmSource = new URLSearchParams(window.location.search).get(
+      "utm_source",
+    );
+    const socialPlatforms = [
+      "twitter",
+      "facebook",
+      "linkedin",
+      "reddit",
+      "discord",
+    ];
+
+    if (utmSource && socialPlatforms.includes(utmSource)) {
+      // Track in Google Analytics
+      if (typeof gtag !== "undefined") {
+        gtag("event", "conversion", {
+          event_category: "social_conversion",
+          event_label: utmSource,
+          action: action,
+          value: value,
+        });
+      }
+
+      // Track in Facebook Pixel
+      if (typeof fbq !== "undefined") {
+        fbq("track", "Lead", {
+          source: utmSource,
+          action: action,
+        });
+      }
+
+      // Track in custom analytics
+      if (window.customAnalytics) {
+        window.customAnalytics.track("social_conversion", {
+          platform: utmSource,
+          action: action,
+          value: value,
+          timestamp: new Date().toISOString(),
+        });
+      }
     }
   }
-}
 
-// Export conversion tracking
-window.trackConversion = trackSocialConversion;
+  // Export conversion tracking
+  window.trackConversion = trackSocialConversion;
 </script>
 
 <!-- Performance Monitoring for Social Features -->
 <script>
-// Monitor performance of social features
-const socialFeaturePerformance = {
-  init() {
-    this.measureShareButtonLoadTime();
-    this.measureSocialWidgetLoadTime();
-    this.trackSocialAPILatency();
-  },
-  
-  measureShareButtonLoadTime() {
-    const observer = new PerformanceObserver((list) => {
-      list.getEntries().forEach((entry) => {
-        if (entry.name.includes('social') || entry.name.includes('share')) {
-          console.log('Social feature loaded:', entry.name, entry.duration + 'ms');
-        }
-      });
-    });
-    observer.observe({ entryTypes: ['measure', 'navigation'] });
-  },
-  
-  measureSocialWidgetLoadTime() {
-    window.addEventListener('load', () => {
-      const socialWidgets = document.querySelectorAll('[class*="social"], [class*="share"]');
-      console.log(`${socialWidgets.length} social widgets loaded`);
-    });
-  },
-  
-  trackSocialAPILatency() {
-    // Monitor GitHub API calls for stats
-    const originalFetch = window.fetch;
-    window.fetch = function(...args) {
-      const startTime = performance.now();
-      return originalFetch.apply(this, args).then(response => {
-        const endTime = performance.now();
-        const url = args[0];
-        
-        if (typeof url === 'string' && url.includes('api.github.com')) {
-          console.log(`GitHub API call took ${endTime - startTime}ms`);
-        }
-        
-        return response;
-      });
-    };
-  }
-};
+  // Monitor performance of social features
+  const socialFeaturePerformance = {
+    init() {
+      this.measureShareButtonLoadTime();
+      this.measureSocialWidgetLoadTime();
+      this.trackSocialAPILatency();
+    },
 
-// Initialize performance monitoring
-socialFeaturePerformance.init();
+    measureShareButtonLoadTime() {
+      const observer = new PerformanceObserver((list) => {
+        list.getEntries().forEach((entry) => {
+          if (entry.name.includes("social") || entry.name.includes("share")) {
+            console.log(
+              "Social feature loaded:",
+              entry.name,
+              entry.duration + "ms",
+            );
+          }
+        });
+      });
+      observer.observe({ entryTypes: ["measure", "navigation"] });
+    },
+
+    measureSocialWidgetLoadTime() {
+      window.addEventListener("load", () => {
+        const socialWidgets = document.querySelectorAll(
+          '[class*="social"], [class*="share"]',
+        );
+        console.log(`${socialWidgets.length} social widgets loaded`);
+      });
+    },
+
+    trackSocialAPILatency() {
+      // Monitor GitHub API calls for stats
+      const originalFetch = window.fetch;
+      window.fetch = function (...args) {
+        const startTime = performance.now();
+        return originalFetch.apply(this, args).then((response) => {
+          const endTime = performance.now();
+          const url = args[0];
+
+          if (typeof url === "string" && url.includes("api.github.com")) {
+            console.log(`GitHub API call took ${endTime - startTime}ms`);
+          }
+
+          return response;
+        });
+      };
+    },
+  };
+
+  // Initialize performance monitoring
+  socialFeaturePerformance.init();
 </script>

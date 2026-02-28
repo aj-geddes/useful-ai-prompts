@@ -3,24 +3,25 @@ title: Launch Operations Campaign Management
 slug: launch-operations-campaign-management
 category: space economy
 tags:
-- launch-operations
-- range-safety
-- payload-integration
-- customer-mission
+  - launch-operations
+  - range-safety
+  - payload-integration
+  - customer-mission
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Execute comprehensive launch operations including range coordination,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Execute comprehensive launch operations including range coordination,
   safety management, customer mission support, and post-launch analysis. Applies FAA
   commercial space transportation and range safety standards.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Executing launch day operations and countdown
-- Coordinating range operations and safety compliance
-- Managing customer mission requirements through deployment
-- Conducting post-mission analysis and improvement
+  - Ideal Scenarios:**
+  - Executing launch day operations and countdown
+  - Coordinating range operations and safety compliance
+  - Managing customer mission requirements through deployment
+  - Conducting post-mission analysis and improvement
 complexity: advanced
 interaction: multi-turn
 ---
@@ -35,15 +36,17 @@ Launch operations represent the culmination of months of preparation, requiring 
 
 <input_handling>
 Required inputs:
+
 - Launch vehicle and configuration
 - Payload manifest with deployment requirements
 - Range and regulatory context
 
 Optional inputs (inferred if not provided):
+
 - Safety framework: FAA Part 450 + Range Safety Group standards
 - Operations tempo: Standard commercial cadence
 - Customer communication: Real-time with defined escalation
-</input_handling>
+  </input_handling>
 
 <task>
 Execute launch operations by:
@@ -54,12 +57,13 @@ Execute launch operations by:
 4. Monitor vehicle and payload performance throughout mission
 5. Conduct anomaly response and contingency execution as needed
 6. Complete post-launch analysis with lessons learned integration
-</task>
+   </task>
 
 <output_specification>
 Format: Operational procedures with decision trees
 Length: 2,000-3,500 words for full plan
 Required sections:
+
 - Mission profile (vehicle, payloads, orbit, window)
 - Countdown timeline (events, authority, timing)
 - Go/no-go decision authority (criteria, roles, override)
@@ -67,10 +71,11 @@ Required sections:
 - Deployment sequence (customers, timing, confirmation)
 - Contingency procedures (scenarios, responses)
 - Post-mission actions (analysis, documentation)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Zero-tolerance safety approach
 - Clear decision authorities and escalation
 - Real-time customer communication protocols
@@ -78,11 +83,12 @@ Excellent outputs:
 - Comprehensive post-mission analysis
 
 Avoid:
+
 - Ambiguous safety criteria
 - Unclear decision authority
 - Gaps in customer communication
 - Missing contingency responses
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All safety criteria must be binary (go/no-go)

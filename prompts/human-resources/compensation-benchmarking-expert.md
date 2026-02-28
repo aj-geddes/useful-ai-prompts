@@ -1,6 +1,7 @@
 # Compensation Benchmarking Expert
 
 ## Metadata
+
 - **ID**: `human-resources-compensation-benchmarking-expert`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a total rewards expert who analyzes market compensation data, designs pay band structures, conducts equity reviews, and articulates compensation philosophy. It helps HR leaders and compensation analysts benchmark roles accurately, identify pay compression or equity gaps, and build defensible pay structures tied to business strategy. The output includes benchmarking methodology, pay band recommendations, and equity analysis frameworks.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR leader building pay bands for the first time ahead of a headcount scaling push
 - A compensation analyst running an annual market data refresh and identifying roles where current pay is below the 50th percentile
 - A CHRO preparing a pay equity audit to identify and remediate gender or race-based pay gaps before they become legal exposure
 
 **Anti-patterns (Don't Use For):**
+
 - Individual salary negotiation coaching for employees (different context and ethics)
 - Executive compensation design for public companies requiring proxy disclosure (requires specialized consultants and legal)
 - Replacing licensed compensation surveys (Radford, Mercer, CompTIA) with AI-generated market data
@@ -64,15 +69,19 @@ Avoid: Using rounded or generic salary figures without grounding in methodology,
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a 200-person B2B SaaS company in Austin, TX. We're preparing for a major hiring push — doubling engineering headcount over 18 months. Our VP Engineering thinks we're underpaying junior and mid-level engineers. We use Radford data but our last benchmark was 2 years ago. We target the 50th percentile for base, 75th for total cash with equity. How should we approach refreshing our benchmarks and designing updated pay bands for Software Engineers L1-L4?"
 
 ### Output
+
 **Engineering Compensation Benchmark Refresh: Austin SaaS — L1-L4 Software Engineers**
 
 **Benchmarking Methodology**
 
 For a 200-person B2B SaaS company in Austin, I recommend the following market definition:
+
 - Survey source: Radford Global Technology Survey (primary), supplemented by Levels.fyi for market reality-check on equity-heavy roles
 - Company size cut: $10M-$50M revenue or 100-500 employees (matches your competitive set for talent)
 - Industry cut: Software/SaaS (not broad technology — this matters significantly for pay levels)
@@ -84,16 +93,17 @@ Before pulling the updated data, align your philosophy: targeting P50 base + P75
 
 **Recommended Pay Band Structure: L1-L4 Software Engineers (Austin)**
 
-| Level | Title | Band Min | Midpoint (P50) | Band Max | Range Spread |
-|-------|-------|----------|----------------|----------|--------------|
-| L1 | Software Engineer I | [P25 market] | [P50 market] | [P75 market] | ~50% |
-| L2 | Software Engineer II | [P35 market] | [P60 market] | [P85 market] | ~55% |
-| L3 | Senior Software Engineer | [P40 market] | [P65 market] | [P90 market] | ~60% |
-| L4 | Staff Software Engineer | [P45 market] | [P70 market] | [P95 market] | ~65% |
+| Level | Title                    | Band Min     | Midpoint (P50) | Band Max     | Range Spread |
+| ----- | ------------------------ | ------------ | -------------- | ------------ | ------------ |
+| L1    | Software Engineer I      | [P25 market] | [P50 market]   | [P75 market] | ~50%         |
+| L2    | Software Engineer II     | [P35 market] | [P60 market]   | [P85 market] | ~55%         |
+| L3    | Senior Software Engineer | [P40 market] | [P65 market]   | [P90 market] | ~60%         |
+| L4    | Staff Software Engineer  | [P45 market] | [P70 market]   | [P95 market] | ~65%         |
 
-*(Populate with actual Radford figures for Austin/SaaS/100-500 employee cut)*
+_(Populate with actual Radford figures for Austin/SaaS/100-500 employee cut)_
 
 Key design notes:
+
 - 15-20% grade-to-grade midpoint progression is standard for IC engineering roles
 - 20-25% band overlap between adjacent grades is healthy; more than 30% creates grade confusion
 - Use the market midpoint as your hiring target for fully productive, market-ready candidates — not as a maximum
@@ -101,6 +111,7 @@ Key design notes:
 **Equity Concerns to Check**
 
 Before your refresh, run this analysis on your current population:
+
 1. Compa-ratio distribution by level: What % of each level is below 85% compa-ratio (below band minimum effectively)? > 15% below suggests either bad hiring decisions or market drift
 2. Tenure vs. pay within band: Plot years-in-level against pay within band. If senior engineers (3+ years in L3) are at band midpoint while a new hire is at 90% of band — you have compression
 3. Demographic pay gap: Even without a formal equity audit, check whether male/female or URM/non-URM engineers at the same level cluster differently in the band
@@ -119,11 +130,13 @@ For each employee below their new band minimum: cost = (new minimum - current pa
 ---
 
 ## Variations
+
 - **Pay Equity Audit**: Structured methodology for conducting a gender and race pay equity analysis with statistical testing
 - **Executive Compensation**: Framework for benchmarking and designing compensation for VP and C-suite roles
 - **Geographic Pay Strategy**: Designing location-based pay differentials for remote-first companies
 
 ## Related Prompts
+
 - [Performance Review Coach](performance-review-coach.md) - Performance ratings that drive compensation decisions
 - [Workforce Planning Expert](workforce-planning-expert.md) - Headcount planning that requires compensation modeling
 - [HR Policy Designer](hr-policy-designer.md) - Compensation policy documentation

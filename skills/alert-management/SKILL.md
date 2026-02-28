@@ -23,43 +23,43 @@ Design and implement sophisticated alert management systems with PagerDuty integ
 
 ```javascript
 // pagerduty-client.js
-const axios = require('axios');
+const axios = require("axios");
 
 class PagerDutyClient {
   constructor(apiToken) {
     this.apiToken = apiToken;
-    this.baseUrl = 'https://api.pagerduty.com';
-    this.eventUrl = 'https://events.pagerduty.com/v2/enqueue';
+    this.baseUrl = "https://api.pagerduty.com";
+    this.eventUrl = "https://events.pagerduty.com/v2/enqueue";
 
     this.client = axios.create({
       baseURL: this.baseUrl,
       headers: {
-        'Authorization': `Token token=${apiToken}`,
-        'Accept': 'application/vnd.pagerduty+json;version=2'
-      }
+        Authorization: `Token token=${apiToken}`,
+        Accept: "application/vnd.pagerduty+json;version=2",
+      },
     });
   }
 
   async triggerEvent(config) {
     const event = {
       routing_key: config.routingKey,
-      event_action: config.eventAction || 'trigger',
+      event_action: config.eventAction || "trigger",
       dedup_key: config.dedupKey || `event-${Date.now()}`,
       payload: {
         summary: config.summary,
         timestamp: new Date().toISOString(),
-        severity: config.severity || 'error',
-        source: config.source || 'Monitoring System',
+        severity: config.severity || "error",
+        source: config.source || "Monitoring System",
         component: config.component,
-        custom_details: config.customDetails || {}
-      }
+        custom_details: config.customDetails || {},
+      },
     };
 
     try {
       const response = await axios.post(this.eventUrl, event);
       return response.data;
     } catch (error) {
-      console.error('Failed to trigger PagerDuty event:', error);
+      console.error("Failed to trigger PagerDuty event:", error);
       throw error;
     }
   }
@@ -67,53 +67,53 @@ class PagerDutyClient {
   async resolveEvent(dedupKey) {
     const event = {
       routing_key: process.env.PAGERDUTY_ROUTING_KEY,
-      event_action: 'resolve',
-      dedup_key: dedupKey
+      event_action: "resolve",
+      dedup_key: dedupKey,
     };
 
     try {
       return await axios.post(this.eventUrl, event);
     } catch (error) {
-      console.error('Failed to resolve event:', error);
+      console.error("Failed to resolve event:", error);
       throw error;
     }
   }
 
   async getServices() {
-    const response = await this.client.get('/services');
+    const response = await this.client.get("/services");
     return response.data.services;
   }
 
   async getEscalationPolicies() {
-    const response = await this.client.get('/escalation_policies');
+    const response = await this.client.get("/escalation_policies");
     return response.data.escalation_policies;
   }
 
   async createIncident(config) {
     const incident = {
-      type: 'incident',
+      type: "incident",
       title: config.title,
       service: {
         id: config.serviceId,
-        type: 'service_reference'
+        type: "service_reference",
       },
       escalation_policy: {
         id: config.escalationPolicyId,
-        type: 'escalation_policy_reference'
+        type: "escalation_policy_reference",
       },
       body: {
-        type: 'incident_body',
-        details: config.details || ''
-      }
+        type: "incident_body",
+        details: config.details || "",
+      },
     };
 
     try {
-      const response = await this.client.post('/incidents', incident, {
-        headers: { 'From': process.env.PAGERDUTY_EMAIL }
+      const response = await this.client.post("/incidents", incident, {
+        headers: { From: process.env.PAGERDUTY_EMAIL },
       });
       return response.data.incident;
     } catch (error) {
-      console.error('Failed to create incident:', error);
+      console.error("Failed to create incident:", error);
       throw error;
     }
   }
@@ -123,17 +123,19 @@ class PagerDutyClient {
       const response = await this.client.put(
         `/incidents/${incidentId}`,
         {
-          incidents: [{
-            id: incidentId,
-            type: 'incident_reference',
-            status: 'acknowledged'
-          }]
+          incidents: [
+            {
+              id: incidentId,
+              type: "incident_reference",
+              status: "acknowledged",
+            },
+          ],
         },
-        { headers: { 'From': process.env.PAGERDUTY_EMAIL } }
+        { headers: { From: process.env.PAGERDUTY_EMAIL } },
       );
       return response.data.incidents[0];
     } catch (error) {
-      console.error('Failed to acknowledge:', error);
+      console.error("Failed to acknowledge:", error);
       throw error;
     }
   }
@@ -143,17 +145,19 @@ class PagerDutyClient {
       const response = await this.client.put(
         `/incidents/${incidentId}`,
         {
-          incidents: [{
-            id: incidentId,
-            type: 'incident_reference',
-            status: 'resolved'
-          }]
+          incidents: [
+            {
+              id: incidentId,
+              type: "incident_reference",
+              status: "resolved",
+            },
+          ],
         },
-        { headers: { 'From': process.env.PAGERDUTY_EMAIL } }
+        { headers: { From: process.env.PAGERDUTY_EMAIL } },
       );
       return response.data.incidents[0];
     } catch (error) {
-      console.error('Failed to resolve:', error);
+      console.error("Failed to resolve:", error);
       throw error;
     }
   }
@@ -168,14 +172,14 @@ module.exports = PagerDutyClient;
 # /etc/alertmanager/alertmanager.yml
 global:
   resolve_timeout: 5m
-  slack_api_url: '${SLACK_WEBHOOK_URL}'
+  slack_api_url: "${SLACK_WEBHOOK_URL}"
 
 templates:
-  - '/etc/alertmanager/templates/*.tmpl'
+  - "/etc/alertmanager/templates/*.tmpl"
 
 route:
-  receiver: 'default'
-  group_by: ['alertname', 'cluster', 'service']
+  receiver: "default"
+  group_by: ["alertname", "cluster", "service"]
   group_wait: 10s
   group_interval: 10s
   repeat_interval: 4h
@@ -197,40 +201,40 @@ route:
       group_wait: 30s
 
 receivers:
-  - name: 'default'
+  - name: "default"
     slack_configs:
-      - channel: '#alerts'
-        title: 'Alert: {{ .GroupLabels.alertname }}'
+      - channel: "#alerts"
+        title: "Alert: {{ .GroupLabels.alertname }}"
 
-  - name: 'pagerduty'
+  - name: "pagerduty"
     pagerduty_configs:
-      - service_key: '${PAGERDUTY_SERVICE_KEY}'
-        description: '{{ .GroupLabels.alertname }}'
+      - service_key: "${PAGERDUTY_SERVICE_KEY}"
+        description: "{{ .GroupLabels.alertname }}"
 
-  - name: 'slack'
+  - name: "slack"
     slack_configs:
-      - channel: '#alerts'
-        title: 'Warning: {{ .GroupLabels.alertname }}'
+      - channel: "#alerts"
+        title: "Warning: {{ .GroupLabels.alertname }}"
 
-  - name: 'payment-team'
+  - name: "payment-team"
     pagerduty_configs:
-      - service_key: '${PAYMENT_PAGERDUTY_KEY}'
+      - service_key: "${PAYMENT_PAGERDUTY_KEY}"
     slack_configs:
-      - channel: '#payment-alerts'
+      - channel: "#payment-alerts"
 
 inhibit_rules:
   - source_match:
-      severity: 'critical'
+      severity: "critical"
     target_match:
-      severity: 'warning'
-    equal: ['alertname', 'service']
+      severity: "warning"
+    equal: ["alertname", "service"]
 ```
 
 ### 3. **Alert Handler Middleware**
 
 ```javascript
 // alert-handler.js
-const PagerDutyClient = require('./pagerduty-client');
+const PagerDutyClient = require("./pagerduty-client");
 
 const pdClient = new PagerDutyClient(process.env.PAGERDUTY_API_TOKEN);
 
@@ -254,77 +258,78 @@ class AlertHandler {
   }
 
   determineSeverity(value, thresholds) {
-    if (value >= thresholds.critical) return 'critical';
-    if (value >= thresholds.warning) return 'warning';
-    return 'info';
+    if (value >= thresholds.critical) return "critical";
+    if (value >= thresholds.warning) return "warning";
+    return "info";
   }
 
   async sendAlert(config) {
-    const dedupKey = config.dedupKey || `alert-${config.alertName}-${Date.now()}`;
+    const dedupKey =
+      config.dedupKey || `alert-${config.alertName}-${Date.now()}`;
 
     try {
       if (!this.shouldSendAlert(dedupKey)) {
-        console.log('Alert recently sent, skipping');
+        console.log("Alert recently sent, skipping");
         return;
       }
 
       const event = {
         routingKey: config.routingKey,
-        eventAction: config.eventAction || 'trigger',
+        eventAction: config.eventAction || "trigger",
         dedupKey: dedupKey,
         summary: config.summary,
         severity: config.severity,
-        source: config.source || 'Monitoring System',
+        source: config.source || "Monitoring System",
         component: config.component,
         customDetails: {
           ...config.customDetails,
           alertName: config.alertName,
-          timestamp: new Date().toISOString()
-        }
+          timestamp: new Date().toISOString(),
+        },
       };
 
       const result = await pdClient.triggerEvent(event);
       this.recordAlert(dedupKey);
 
-      console.log('Alert sent', {
+      console.log("Alert sent", {
         alertName: config.alertName,
-        severity: config.severity
+        severity: config.severity,
       });
 
       return result;
     } catch (error) {
-      console.error('Failed to send alert:', error);
+      console.error("Failed to send alert:", error);
       await this.sendSlackAlert(config);
     }
   }
 
   async sendSlackAlert(config) {
-    const axios = require('axios');
+    const axios = require("axios");
     const webhookUrl = process.env.SLACK_WEBHOOK_URL;
 
     const message = {
-      color: config.severity === 'critical' ? 'danger' : 'warning',
+      color: config.severity === "critical" ? "danger" : "warning",
       title: config.summary,
-      text: config.customDetails?.description || '',
+      text: config.customDetails?.description || "",
       fields: [
-        { title: 'Severity', value: config.severity, short: true },
-        { title: 'Component', value: config.component, short: true }
-      ]
+        { title: "Severity", value: config.severity, short: true },
+        { title: "Component", value: config.component, short: true },
+      ],
     };
 
     try {
       await axios.post(webhookUrl, { attachments: [message] });
     } catch (error) {
-      console.error('Failed to send Slack alert:', error);
+      console.error("Failed to send Slack alert:", error);
     }
   }
 
   async resolveAlert(dedupKey) {
     try {
       await pdClient.resolveEvent(dedupKey);
-      console.log('Alert resolved');
+      console.log("Alert resolved");
     } catch (error) {
-      console.error('Failed to resolve alert:', error);
+      console.error("Failed to resolve alert:", error);
     }
   }
 }
@@ -346,7 +351,7 @@ class AlertRouter {
       priority: rule.priority || 0,
       condition: rule.condition,
       handler: rule.handler,
-      escalation: rule.escalation
+      escalation: rule.escalation,
     });
     this.routes.sort((a, b) => b.priority - a.priority);
   }
@@ -361,8 +366,8 @@ class AlertRouter {
   }
 
   async defaultHandler(alert) {
-    console.log('Routing to default handler:', alert.name);
-    return { routed: true, handler: 'default' };
+    console.log("Routing to default handler:", alert.name);
+    return { routed: true, handler: "default" };
   }
 }
 
@@ -371,29 +376,30 @@ const router = new AlertRouter();
 
 router.addRoute({
   priority: 100,
-  condition: (alert) => alert.severity === 'critical' && alert.component === 'database',
+  condition: (alert) =>
+    alert.severity === "critical" && alert.component === "database",
   handler: async (alert) => {
-    console.log('Routing critical database alert to DBA team');
-    return { team: 'dba', escalation: 'immediate' };
-  }
+    console.log("Routing critical database alert to DBA team");
+    return { team: "dba", escalation: "immediate" };
+  },
 });
 
 router.addRoute({
   priority: 90,
-  condition: (alert) => alert.component === 'payment-service',
+  condition: (alert) => alert.component === "payment-service",
   handler: async (alert) => {
-    console.log('Routing to payment team');
-    return { team: 'payment', escalation: 'payment-policy' };
-  }
+    console.log("Routing to payment team");
+    return { team: "payment", escalation: "payment-policy" };
+  },
 });
 
 router.addRoute({
   priority: 10,
-  condition: (alert) => alert.severity === 'warning',
+  condition: (alert) => alert.severity === "warning",
   handler: async (alert) => {
-    console.log('Routing warning to Slack');
-    return { handler: 'slack-only' };
-  }
+    console.log("Routing warning to Slack");
+    return { handler: "slack-only" };
+  },
 });
 
 module.exports = router;
@@ -403,7 +409,7 @@ module.exports = router;
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 services:
   prometheus:
     image: prom/prometheus:latest
@@ -438,6 +444,7 @@ services:
 ## Best Practices
 
 ### ✅ DO
+
 - Set appropriate thresholds
 - Implement alert deduplication
 - Use clear alert names
@@ -450,6 +457,7 @@ services:
 - Document alert meanings
 
 ### ❌ DON'T
+
 - Alert on every anomaly
 - Ignore alert fatigue
 - Set thresholds arbitrarily

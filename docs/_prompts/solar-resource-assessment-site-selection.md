@@ -3,31 +3,32 @@ title: Solar Resource Assessment and Strategic Site Selection
 slug: solar-resource-assessment-site-selection
 category: renewable energy/solar energy development
 tags:
-- resource
-- assessment
-- site
-- selection
-- GIS
-- analysis
-- irradiance
-- feasibility
-- study
+  - resource
+  - assessment
+  - site
+  - selection
+  - GIS
+  - analysis
+  - irradiance
+  - feasibility
+  - study
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables comprehensive solar resource assessment and strategic
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables comprehensive solar resource assessment and strategic
   site selection for utility-scale project development. It combines solar resource
   analysis expertise with site development management to identify optimal locations
   that maximize energy yield while minimizing development risks and ensuring long-term
   project viability.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Prospecting new regions for solar development opportunities
-- Conducting detailed resource analysis for specific sites
-- Designing measurement campaigns for bankable resource assessments
-- Evaluating site portfolios for development prioritization
+  - Ideal scenarios:**
+  - Prospecting new regions for solar development opportunities
+  - Conducting detailed resource analysis for specific sites
+  - Designing measurement campaigns for bankable resource assessments
+  - Evaluating site portfolios for development prioritization
 complexity: advanced
 interaction: multi-turn
 ---
@@ -46,17 +47,19 @@ Solar site selection requires integrating resource quality, development constrai
 
 <input_handling>
 **Required information:**
+
 - Target region or specific site location
 - Development objectives (capacity, timeline)
 - Market context (utility, PPA prospects)
 - Key constraints (land, transmission, environmental)
 
 **Optional (will infer reasonable defaults):**
+
 - Available resource data sources
 - Measurement campaign scope
 - Environmental sensitivity level
 - Competitive positioning requirements
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive resource assessment and site selection:
@@ -72,18 +75,20 @@ Develop comprehensive resource assessment and site selection:
 5. **Energy Yield Modeling**: Develop P50/P90/P99 production estimates with comprehensive uncertainty analysis
 
 6. **Development Prioritization**: Create ranked site portfolio with risk-adjusted development recommendations
-</task>
+   </task>
 
 <output_specification>
 **Solar Resource and Site Assessment**
+
 - Format: Technical assessment with development recommendations
 - Length: 1000-1500 words
 - Sections: Resource analysis, site evaluation, measurement plan, energy yield, development priority
 - Must include: Irradiance data, uncertainty quantification, constraint mapping, P50/P90 estimates
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Multi-source resource data validation with uncertainty quantification
 - Comprehensive constraint layer analysis (environmental, grid, land use)
 - Realistic measurement campaign design for uncertainty reduction
@@ -91,12 +96,13 @@ Develop comprehensive resource assessment and site selection:
 - Prioritized development pathway with risk assessment
 
 **Avoid:**
+
 - Single-source resource data without validation
 - Ignoring interannual variability and climate trends
 - Underestimating environmental or regulatory constraints
 - Overly optimistic energy yield estimates
 - Missing transmission access assessment
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Minimum 10-year irradiance dataset for long-term characterization

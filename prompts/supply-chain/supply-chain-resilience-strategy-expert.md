@@ -1,6 +1,7 @@
 # Supply Chain Resilience Strategy Expert
 
 ## Metadata
+
 - **ID**: `supply-chain-resilience-expert`
 - **Version**: 1.1.0
 - **Category**: Supply Chain
@@ -18,6 +19,7 @@ Provides comprehensive guidance for building resilient supply chains through sys
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing and mitigating multi-tier supply chain risks after disruption events
 - Developing supplier management strategies with continuity planning
 - Building recovery procedures and contingency playbooks
@@ -25,6 +27,7 @@ Provides comprehensive guidance for building resilient supply chains through sys
 - Preparing regulatory compliance documentation for critical supply chains
 
 **Anti-patterns (when not to use):**
+
 - Day-to-day procurement operations without strategic focus
 - Simple vendor selection for non-critical components
 - Routine logistics decisions without risk considerations
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Our pharmaceutical supply chain has experienced 3 critical supplier disruptions in 2 years. We have 450 suppliers with 35% single-source for active pharmaceutical ingredients (APIs). Regulatory requirements mandate 6-month inventory buffers for critical products. Current monitoring is reactive with no early warning capability. Need to reduce disruption impact by 50% while maintaining cost competitiveness.
 
 ### Output
@@ -118,6 +122,7 @@ This resilience strategy transforms your pharmaceutical supply chain from reacti
 **Phase 1: Assessment and Discovery (Weeks 1-8)**
 
 Deliverables:
+
 - Multi-tier supplier risk mapping identifying 45 critical single-source dependencies across APIs and key excipients, with 12 suppliers representing potential single points of failure for top-revenue products
 - Financial health scoring revealing 12 suppliers with elevated risk indicators including declining margins, ownership changes, or regulatory warning letters
 - Geographic concentration analysis showing 60% of API sourcing from 2 regions (India and China) with 8 production sites in high-risk zones
@@ -126,6 +131,7 @@ Deliverables:
 **Phase 2: Strategic Design (Weeks 9-16)**
 
 Resilience strategy architecture:
+
 - Dual-sourcing qualification program for 25 critical APIs targeting reduction from 35% to less than 15% single-source within 24 months
 - Strategic inventory positioning increasing buffer from 6 to 9 months for top 15 products representing 70% of revenue
 - Supplier financial monitoring platform with early warning triggers at 60-day horizon
@@ -135,6 +141,7 @@ Resilience strategy architecture:
 **Phase 3: Implementation (Months 5-12)**
 
 Execution priorities:
+
 - Qualify 15 alternative suppliers for highest-risk APIs with expedited validation protocols
 - Deploy supplier monitoring dashboard integrating 45 risk indicators with automated alerting
 - Conduct tabletop recovery exercises quarterly for top 5 disruption scenarios with cross-functional participation
@@ -144,6 +151,7 @@ Execution priorities:
 **Phase 4: Optimization (Months 13-18)**
 
 Continuous resilience improvement:
+
 - Predictive risk analytics leveraging supplier data, market indicators, and external intelligence feeds
 - Supplier health monitoring with automated alerts at configurable thresholds
 - Quarterly resilience reviews with executive dashboard and improvement tracking
@@ -153,6 +161,7 @@ Continuous resilience improvement:
 **Investment and Value Summary**
 
 Total investment: $18M over 18 months
+
 - Supplier qualification and development: $8M
 - Technology and monitoring platform: $5M
 - Strategic inventory positioning: $4M

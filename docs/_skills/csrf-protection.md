@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement Cross-Site Request Forgery (CSRF) protection using tokens,
+date: "2025-01-01"
+description:
+  Implement Cross-Site Request Forgery (CSRF) protection using tokens,
   SameSite cookies, and origin validation. Use when building forms and state-changing
   operations.
 layout: skill
 slug: csrf-protection
 tags:
-- development
+  - development
 title: csrf-protection
 ---
 
@@ -32,8 +33,8 @@ Implement comprehensive Cross-Site Request Forgery protection using synchronizer
 
 ```javascript
 // csrf-protection.js
-const crypto = require('crypto');
-const csrf = require('csurf');
+const crypto = require("crypto");
+const csrf = require("csurf");
 
 class CSRFProtection {
   constructor() {
@@ -45,7 +46,7 @@ class CSRFProtection {
    * Generate CSRF token
    */
   generateToken() {
-    return crypto.randomBytes(32).toString('hex');
+    return crypto.randomBytes(32).toString("hex");
   }
 
   /**
@@ -57,7 +58,7 @@ class CSRFProtection {
 
     this.tokens.set(sessionId, {
       token,
-      expiry
+      expiry,
     });
 
     return token;
@@ -80,7 +81,7 @@ class CSRFProtection {
 
     return crypto.timingSafeEqual(
       Buffer.from(stored.token),
-      Buffer.from(token)
+      Buffer.from(token),
     );
   }
 
@@ -90,24 +91,24 @@ class CSRFProtection {
   middleware() {
     return (req, res, next) => {
       // Skip GET, HEAD, OPTIONS
-      if (['GET', 'HEAD', 'OPTIONS'].includes(req.method)) {
+      if (["GET", "HEAD", "OPTIONS"].includes(req.method)) {
         return next();
       }
 
-      const token = req.headers['x-csrf-token'] || req.body._csrf;
+      const token = req.headers["x-csrf-token"] || req.body._csrf;
       const sessionId = req.session?.id;
 
       if (!token) {
         return res.status(403).json({
-          error: 'csrf_token_missing',
-          message: 'CSRF token is required'
+          error: "csrf_token_missing",
+          message: "CSRF token is required",
         });
       }
 
       if (!this.validateToken(sessionId, token)) {
         return res.status(403).json({
-          error: 'csrf_token_invalid',
-          message: 'Invalid or expired CSRF token'
+          error: "csrf_token_invalid",
+          message: "Invalid or expired CSRF token",
         });
       }
 
@@ -117,33 +118,35 @@ class CSRFProtection {
 }
 
 // Express setup with csurf package
-const express = require('express');
-const session = require('express-session');
-const cookieParser = require('cookie-parser');
+const express = require("express");
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
 // Session configuration
 app.use(cookieParser());
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    httpOnly: true,
-    secure: true,
-    sameSite: 'strict',
-    maxAge: 3600000
-  }
-}));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+      maxAge: 3600000,
+    },
+  }),
+);
 
 // CSRF protection middleware
 const csrfProtection = csrf({
   cookie: {
     httpOnly: true,
     secure: true,
-    sameSite: 'strict'
-  }
+    sameSite: "strict",
+  },
 });
 
 app.use(csrfProtection);
@@ -155,30 +158,30 @@ app.use((req, res, next) => {
 });
 
 // API endpoint to get CSRF token
-app.get('/api/csrf-token', (req, res) => {
+app.get("/api/csrf-token", (req, res) => {
   res.json({
-    csrfToken: req.csrfToken()
+    csrfToken: req.csrfToken(),
   });
 });
 
 // Protected route
-app.post('/api/transfer', csrfProtection, (req, res) => {
+app.post("/api/transfer", csrfProtection, (req, res) => {
   const { amount, toAccount } = req.body;
 
   // Process transfer
   res.json({
-    message: 'Transfer successful',
+    message: "Transfer successful",
     amount,
-    toAccount
+    toAccount,
   });
 });
 
 // Error handler for CSRF errors
 app.use((err, req, res, next) => {
-  if (err.code === 'EBADCSRFTOKEN') {
+  if (err.code === "EBADCSRFTOKEN") {
     return res.status(403).json({
-      error: 'csrf_error',
-      message: 'Invalid CSRF token'
+      error: "csrf_error",
+      message: "Invalid CSRF token",
     });
   }
 
@@ -192,21 +195,21 @@ module.exports = { CSRFProtection, csrfProtection };
 
 ```javascript
 // double-submit-csrf.js
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 class DoubleSubmitCSRF {
   /**
    * Generate CSRF token and set cookie
    */
   static generateAndSetToken(res) {
-    const token = crypto.randomBytes(32).toString('hex');
+    const token = crypto.randomBytes(32).toString("hex");
 
     // Set CSRF cookie
-    res.cookie('XSRF-TOKEN', token, {
+    res.cookie("XSRF-TOKEN", token, {
       httpOnly: false, // Allow JS to read for double submit
       secure: true,
-      sameSite: 'strict',
-      maxAge: 3600000
+      sameSite: "strict",
+      maxAge: 3600000,
     });
 
     return token;
@@ -218,26 +221,28 @@ class DoubleSubmitCSRF {
   static middleware() {
     return (req, res, next) => {
       // Skip GET, HEAD, OPTIONS
-      if (['GET', 'HEAD', 'OPTIONS'].includes(req.method)) {
+      if (["GET", "HEAD", "OPTIONS"].includes(req.method)) {
         return next();
       }
 
-      const cookieToken = req.cookies['XSRF-TOKEN'];
-      const headerToken = req.headers['x-xsrf-token'];
+      const cookieToken = req.cookies["XSRF-TOKEN"];
+      const headerToken = req.headers["x-xsrf-token"];
 
       if (!cookieToken || !headerToken) {
         return res.status(403).json({
-          error: 'csrf_token_missing'
+          error: "csrf_token_missing",
         });
       }
 
       // Compare tokens (timing-safe)
-      if (!crypto.timingSafeEqual(
-        Buffer.from(cookieToken),
-        Buffer.from(headerToken)
-      )) {
+      if (
+        !crypto.timingSafeEqual(
+          Buffer.from(cookieToken),
+          Buffer.from(headerToken),
+        )
+      ) {
         return res.status(403).json({
-          error: 'csrf_token_mismatch'
+          error: "csrf_token_mismatch",
         });
       }
 
@@ -248,28 +253,28 @@ class DoubleSubmitCSRF {
 
 // Express setup
 const app = express();
-const cookieParser = require('cookie-parser');
+const cookieParser = require("cookie-parser");
 
 app.use(cookieParser());
 app.use(express.json());
 
 // Generate token on login
-app.post('/api/login', async (req, res) => {
+app.post("/api/login", async (req, res) => {
   // Authenticate user
   const token = DoubleSubmitCSRF.generateAndSetToken(res);
 
   res.json({
-    message: 'Login successful',
-    csrfToken: token
+    message: "Login successful",
+    csrfToken: token,
   });
 });
 
 // Protected routes
-app.use('/api/*', DoubleSubmitCSRF.middleware());
+app.use("/api/*", DoubleSubmitCSRF.middleware());
 
-app.post('/api/update-profile', (req, res) => {
+app.post("/api/update-profile", (req, res) => {
   // Update profile
-  res.json({ message: 'Profile updated' });
+  res.json({ message: "Profile updated" });
 });
 ```
 
@@ -368,8 +373,8 @@ class CSRFClient {
    * Fetch CSRF token from server
    */
   async fetchToken() {
-    const response = await fetch('/api/csrf-token', {
-      credentials: 'include'
+    const response = await fetch("/api/csrf-token", {
+      credentials: "include",
     });
 
     const data = await response.json();
@@ -397,15 +402,15 @@ class CSRFClient {
     const token = await this.getToken();
 
     const headers = {
-      'Content-Type': 'application/json',
-      'X-CSRF-Token': token,
-      ...options.headers
+      "Content-Type": "application/json",
+      "X-CSRF-Token": token,
+      ...options.headers,
     };
 
     return fetch(url, {
       ...options,
       headers,
-      credentials: 'include'
+      credentials: "include",
     });
   }
 
@@ -414,8 +419,8 @@ class CSRFClient {
    */
   async post(url, data) {
     return this.request(url, {
-      method: 'POST',
-      body: JSON.stringify(data)
+      method: "POST",
+      body: JSON.stringify(data),
     });
   }
 
@@ -424,8 +429,8 @@ class CSRFClient {
    */
   async put(url, data) {
     return this.request(url, {
-      method: 'PUT',
-      body: JSON.stringify(data)
+      method: "PUT",
+      body: JSON.stringify(data),
     });
   }
 
@@ -434,7 +439,7 @@ class CSRFClient {
    */
   async delete(url) {
     return this.request(url, {
-      method: 'DELETE'
+      method: "DELETE",
     });
   }
 }
@@ -444,15 +449,15 @@ const client = new CSRFClient();
 
 async function transferFunds() {
   try {
-    const response = await client.post('/api/transfer', {
+    const response = await client.post("/api/transfer", {
       amount: 1000,
-      toAccount: '123456'
+      toAccount: "123456",
     });
 
     const result = await response.json();
-    console.log('Transfer successful:', result);
+    console.log("Transfer successful:", result);
   } catch (error) {
-    console.error('Transfer failed:', error);
+    console.error("Transfer failed:", error);
   }
 }
 
@@ -462,7 +467,7 @@ function useCSRF() {
 
   React.useEffect(() => {
     async function fetchToken() {
-      const response = await fetch('/api/csrf-token');
+      const response = await fetch("/api/csrf-token");
       const data = await response.json();
       setToken(data.csrfToken);
     }
@@ -480,16 +485,16 @@ function TransferForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch('/api/transfer', {
-      method: 'POST',
+    await fetch("/api/transfer", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'X-CSRF-Token': csrfToken
+        "Content-Type": "application/json",
+        "X-CSRF-Token": csrfToken,
       },
       body: JSON.stringify({
         amount: 1000,
-        toAccount: '123456'
-      })
+        toAccount: "123456",
+      }),
     });
   };
 
@@ -508,10 +513,7 @@ function TransferForm() {
 ```javascript
 // origin-validation.js
 function validateOrigin(req, res, next) {
-  const allowedOrigins = [
-    'https://example.com',
-    'https://app.example.com'
-  ];
+  const allowedOrigins = ["https://example.com", "https://app.example.com"];
 
   const origin = req.headers.origin;
   const referer = req.headers.referer;
@@ -519,7 +521,7 @@ function validateOrigin(req, res, next) {
   // Check Origin header
   if (origin && !allowedOrigins.includes(origin)) {
     return res.status(403).json({
-      error: 'invalid_origin'
+      error: "invalid_origin",
     });
   }
 
@@ -528,7 +530,7 @@ function validateOrigin(req, res, next) {
     const refererUrl = new URL(referer);
     if (!allowedOrigins.includes(refererUrl.origin)) {
       return res.status(403).json({
-        error: 'invalid_referer'
+        error: "invalid_referer",
       });
     }
   }
@@ -537,12 +539,13 @@ function validateOrigin(req, res, next) {
 }
 
 // Apply to state-changing routes
-app.use('/api/*', validateOrigin);
+app.use("/api/*", validateOrigin);
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use CSRF tokens for all state-changing operations
 - Set SameSite=Strict on cookies
 - Validate Origin/Referer headers
@@ -553,6 +556,7 @@ app.use('/api/*', validateOrigin);
 - Test CSRF protection
 
 ### ❌ DON'T
+
 - Skip CSRF for authenticated requests
 - Use GET for state changes
 - Trust Origin header alone

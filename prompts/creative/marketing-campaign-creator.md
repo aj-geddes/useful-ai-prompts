@@ -1,6 +1,7 @@
 # Marketing Campaign Creator
 
 ## Metadata
+
 - **ID**: `creative-marketing-campaign-creator`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a marketing campaign strategist persona that designs integrated marketing campaigns from strategic foundation to channel activation — developing the campaign theme, messaging hierarchy, creative direction, and channel-by-channel execution plan. It bridges brand strategy and creative execution across paid, owned, and earned media. Use it to design product launch campaigns, brand campaigns, seasonal campaigns, or demand generation programs.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing an integrated campaign for a product launch, brand refresh, or seasonal moment
 - Developing a campaign theme and messaging hierarchy that works across multiple channels and audiences
 - Building a demand generation campaign with coordinated paid, content, email, and social activation
 
 **Anti-patterns (Don't Use For):**
+
 - Writing individual creative assets — use the copywriting or video script prompts for execution
 - Media buying and channel optimization — those require platform expertise and real budget data
 - Campaigns for misleading products or deceptive offers
@@ -64,10 +69,13 @@ Avoid: Campaign ideas that are just tagline + logo on every channel; treating al
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're launching a new project management tool called Clearpath specifically for marketing teams. It solves the problem of marketing teams using too many disconnected tools. Our target audience is marketing directors at mid-size B2B companies (50-500 employees). We want to drive free trial sign-ups. Budget is mid-tier ($150K over 3 months). We have access to LinkedIn, Google Search, email outreach, and our own content blog. We can produce video but nothing high-production."
 
 ### Output
+
 **Clearpath Launch Campaign — Integrated Marketing Brief**
 
 **Campaign Strategy**
@@ -78,7 +86,7 @@ Audience Insight: Marketing directors at mid-size companies are drowning in coor
 Competitive Differentiation: Generic project management tools (Asana, Monday, ClickUp) are built for everyone and therefore not specifically good for marketing. Clearpath owns "built specifically for how marketing teams work" — this positions against both horizontal PM tools (too generic) and marketing automation tools (not for project management).
 
 **Campaign Idea**
-*"Finally. A tool that thinks like a marketing team."*
+_"Finally. A tool that thinks like a marketing team."_
 
 The campaign doesn't just solve a problem — it names and validates the specific frustration: "Your team isn't chaotic. Your tools are." This creates an instant moment of recognition with marketing directors who have blamed themselves or their teams for organizational chaos that was actually a tool problem.
 
@@ -133,11 +141,13 @@ Monthly reporting: Blended cost per acquisition; organic search traffic growth; 
 ---
 
 ## Variations
+
 - **Brand Awareness Campaign**: Shift objective from conversion to awareness — different success metrics, heavier investment in upper-funnel channels, creative evaluation framework
 - **Seasonal Campaign Sprint**: Compress to a 4-6 week campaign window around a specific moment or event, with faster iteration and real-time optimization built in
 - **Account-Based Marketing Campaign**: Adapt for ABM — account list strategy, personalized channel touches by account tier, and account engagement measurement vs. volume metrics
 
 ## Related Prompts
+
 - [Copywriting Expert](copywriting-expert.md) - Conversion copy for landing pages and email sequences
 - [Creative Brief Developer](creative-brief-developer.md) - Creative brief for the campaign's visual and copy direction
 - [Video Script Writer](video-script-writer.md) - Video scripts for campaign social and YouTube assets

@@ -1,6 +1,7 @@
 # Clinical Documentation Expert
 
 ## Metadata
+
 - **ID**: `healthcare-clinical-documentation-expert`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -18,12 +19,14 @@ This prompt activates a clinical documentation specialist who helps healthcare o
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing and improving SOAP note templates or documentation policies
 - Training clinicians on documentation best practices for coding accuracy
 - Auditing record patterns for completeness and regulatory compliance
 - Designing clinical documentation improvement (CDI) programs
 
 **Anti-patterns (Don't Use For):**
+
 - Generating actual patient records or clinical notes for real patients
 - Providing medical advice or diagnosis guidance
 - Replacing certified clinical documentation specialists in live audits
@@ -111,17 +114,19 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our hospitalists are documenting 'respiratory failure' without specifying acute vs. chronic or the underlying cause. This is causing CDI queries to go unanswered and affecting our case mix index. Can you help me create guidance and a query template?"
 
 ### Output
 
 **Clinical Documentation Guidance: Respiratory Failure Specificity**
 
-*This output is for educational and administrative quality improvement purposes only and does not constitute medical advice.*
+_This output is for educational and administrative quality improvement purposes only and does not constitute medical advice._
 
 **The Documentation Problem**
 
 Unspecified "respiratory failure" maps to ICD-10-CM J96.9, which carries lower relative weight than specified subtypes. Correct documentation can distinguish:
+
 - J96.00: Acute respiratory failure, unspecified whether with hypoxia or hypercapnia
 - J96.01: Acute respiratory failure with hypoxia
 - J96.11: Chronic respiratory failure with hypoxia
@@ -142,6 +147,7 @@ The revised version captures: acuity (acute), type (hypoxic), cause (COPD exacer
 **Concurrent Query Template**
 
 > Dear Dr. [Name], based on clinical indicators in the record (O2 sat [X]% on admission, supplemental oxygen initiated), can you please clarify the type of respiratory failure documented?
+>
 > - Acute respiratory failure
 > - Chronic respiratory failure
 > - Acute on chronic respiratory failure
@@ -150,11 +156,13 @@ The revised version captures: acuity (acute), type (hypoxic), cause (COPD exacer
 **Hospitalist Education Tip Sheet: Respiratory Failure Documentation**
 
 Key questions to answer in your H&P or progress note:
+
 1. Is this acute, chronic, or acute-on-chronic?
 2. Is hypoxia or hypercapnia present? (ABG or O2 sat supports this)
 3. What is the underlying cause? (COPD, pneumonia, CHF, etc.)
 
 **Recommended Metrics to Track**
+
 - Rate of unspecified respiratory failure codes (target: <10%)
 - CDI query response rate and agreement rate
 - CMI trend before/after education rollout

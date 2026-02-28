@@ -1,6 +1,7 @@
 # Concept Development Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/concept-development-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Concept development specialist who transforms raw ideas into detailed, actionabl
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing an initial idea into a comprehensive product or service plan
 - Refining a rough concept with target user segments and value propositions
 - Creating implementation roadmaps for innovation projects
@@ -25,6 +27,7 @@ Concept development specialist who transforms raw ideas into detailed, actionabl
 - Transitioning from ideation phase to prototype planning
 
 **Anti-Patterns:**
+
 - Still in early brainstorming needing quantity over quality (use Brainstorming Expert)
 - Need to generate initial ideas from scratch (use Idea Generation Expert)
 - Ready to evaluate completed innovation for go/no-go (use Innovation Assessment Expert)
@@ -94,6 +97,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Initial idea: A smart home garden system that helps people grow vegetables indoors
 
@@ -119,6 +123,7 @@ I will develop your smart home garden concept into a comprehensive, implementati
 **One-Sentence Pitch**: "The first smart garden that guarantees fresh vegetables in any apartment, using AI to eliminate the guesswork and 90% of the work."
 
 **Key Differentiators**:
+
 - Guaranteed harvest (or money back) removes fear of failure
 - Whisper-quiet operation (under 40dB) for apartment living
 - 30-day first harvest creates rapid gratification
@@ -127,6 +132,7 @@ I will develop your smart home garden concept into a comprehensive, implementati
 **TARGET USER SEGMENTS**
 
 **Primary Segment: Urban Health Optimizers (60% of market)**
+
 - Demographics: Ages 28-42, household income $60K+, urban apartments
 - Psychographics: Values health, sustainability, technology adoption
 - Behaviors: Shops at Whole Foods/farmers markets, follows wellness influencers
@@ -135,6 +141,7 @@ I will develop your smart home garden concept into a comprehensive, implementati
 - Size: Approximately 15M households in US metros
 
 **Secondary Segment: Conscious Families (25%)**
+
 - Demographics: Parents with children 4-12, suburban/urban
 - Psychographics: Wants to teach kids about food, reduce pesticide exposure
 - Behaviors: Family cooking, educational activities
@@ -142,6 +149,7 @@ I will develop your smart home garden concept into a comprehensive, implementati
 - Size: Approximately 8M households
 
 **Tertiary Segment: Culinary Enthusiasts (15%)**
+
 - Demographics: Ages 30-55, cooking hobbyists
 - Psychographics: Values premium ingredients, Instagram-worthy kitchens
 - Pain Points: Specialty herbs and microgreens expensive/unavailable
@@ -150,6 +158,7 @@ I will develop your smart home garden concept into a comprehensive, implementati
 **SOLUTION ARCHITECTURE**
 
 **Hardware Components**:
+
 - Growing chamber: Stackable 2x2 ft modules with modular tray system
 - Lighting: Full-spectrum LEDs (30W, mimics natural sunlight cycles)
 - Water system: Closed-loop hydroponics with sound-dampened pump (<35dB)
@@ -157,12 +166,14 @@ I will develop your smart home garden concept into a comprehensive, implementati
 - Controller: WiFi-enabled microcontroller with OTA updates
 
 **Software Stack**:
+
 - Mobile app (iOS/Android): Plant monitoring, notifications, guidance
 - Plant AI: Species-specific care optimization using sensor data
 - Content library: Growing guides, recipes, troubleshooting
 - Backend: User data, plant databases, subscription management
 
 **Key Technical Decisions**:
+
 - Hydroponic vs. soil: Recommend offering both via interchangeable pods
 - Pre-seeded pods eliminate germination failure (highest user drop-off point)
 - Modular design allows expansion without replacing base unit
@@ -171,20 +182,22 @@ I will develop your smart home garden concept into a comprehensive, implementati
 
 **Revenue Streams**:
 
-| Stream | Price | Margin | Year 1 Revenue |
-|--------|-------|--------|----------------|
-| Hardware starter kit | $299 | 60% | $150K (500 units) |
-| Pod subscription | $19.99/month | 70% | $48K (200 subscribers avg) |
-| Expansion modules | $149 | 55% | $22K (150 units) |
-| **Total** | | | **$220K** |
+| Stream               | Price        | Margin | Year 1 Revenue             |
+| -------------------- | ------------ | ------ | -------------------------- |
+| Hardware starter kit | $299         | 60%    | $150K (500 units)          |
+| Pod subscription     | $19.99/month | 70%    | $48K (200 subscribers avg) |
+| Expansion modules    | $149         | 55%    | $22K (150 units)           |
+| **Total**            |              |        | **$220K**                  |
 
 **Unit Economics**:
+
 - Hardware COGS: $110 (including packaging, shipping)
 - Customer Acquisition Cost: $45 (target)
 - Lifetime Value: $550+ (hardware + 18 months subscription)
 - LTV:CAC Ratio: 12:1 (excellent)
 
 **Cost Structure (Year 1)**:
+
 - Product development: $25K
 - Initial inventory (100 units): $12K
 - Marketing/launch: $8K
@@ -195,36 +208,41 @@ I will develop your smart home garden concept into a comprehensive, implementati
 **DEVELOPMENT ROADMAP**
 
 **Phase 1: Prototype Development (Weeks 1-8)**
+
 - Weeks 1-2: Finalize technical specifications and component sourcing
 - Weeks 3-4: Order components; begin CAD design and 3D printing
 - Weeks 5-6: Build 3 working prototypes
 - Weeks 7-8: Internal testing - verify noise levels, growing success, app MVP
-- *Milestone*: Working prototype meeting all specifications
-- *Budget*: $8K
+- _Milestone_: Working prototype meeting all specifications
+- _Budget_: $8K
 
 **Phase 2: User Validation (Weeks 9-16)**
+
 - Weeks 9-10: Recruit 10 beta testers from target segments
 - Weeks 11-14: 30-day in-home trials with weekly check-ins
 - Week 15: Analyze feedback, identify critical improvements
 - Week 16: Iterate design based on user data
-- *Milestone*: 80%+ beta users successfully harvest; NPS 50+
-- *Budget*: $4K (prototypes, user compensation)
+- _Milestone_: 80%+ beta users successfully harvest; NPS 50+
+- _Budget_: $4K (prototypes, user compensation)
 
 **Phase 3: Manufacturing Prep (Weeks 17-20)**
+
 - Weeks 17-18: Finalize design for manufacturing
 - Weeks 19-20: Identify and vet manufacturing partners; get quotes
-- *Milestone*: Manufacturing partner selected; cost targets confirmed
-- *Budget*: $2K (samples, travel)
+- _Milestone_: Manufacturing partner selected; cost targets confirmed
+- _Budget_: $2K (samples, travel)
 
 **Phase 4: Marketing and Launch Prep (Weeks 21-24)**
+
 - Week 21: Create product photography, video, website
 - Week 22: Build email list (goal: 1,000 subscribers)
 - Week 23: Seed units to influencers and press
 - Week 24: Launch crowdfunding campaign
-- *Milestone*: Campaign live with $50K funding goal
-- *Budget*: $6K
+- _Milestone_: Campaign live with $50K funding goal
+- _Budget_: $6K
 
 **Phase 5: Fulfillment and Scale (Weeks 25+)**
+
 - Production run based on campaign results
 - Fulfill pre-orders
 - Begin subscription program
@@ -232,28 +250,31 @@ I will develop your smart home garden concept into a comprehensive, implementati
 
 **RISK ASSESSMENT**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Growing failure rate too high | Medium | High | Extensive beta testing; pre-seeded pods; guarantee program |
-| Noise exceeds apartment tolerance | Low | High | Sound engineering priority; 35dB target with 5dB buffer |
-| Manufacturing costs exceed targets | Medium | Medium | Get 3+ quotes; design for manufacturability |
-| Crowdfunding underperforms | Medium | Medium | Build email list to 1000+ before launch; PR push |
-| Competitor launches similar product | Low | Medium | Speed to market; patent provisional; brand building |
+| Risk                                | Probability | Impact | Mitigation                                                 |
+| ----------------------------------- | ----------- | ------ | ---------------------------------------------------------- |
+| Growing failure rate too high       | Medium      | High   | Extensive beta testing; pre-seeded pods; guarantee program |
+| Noise exceeds apartment tolerance   | Low         | High   | Sound engineering priority; 35dB target with 5dB buffer    |
+| Manufacturing costs exceed targets  | Medium      | Medium | Get 3+ quotes; design for manufacturability                |
+| Crowdfunding underperforms          | Medium      | Medium | Build email list to 1000+ before launch; PR push           |
+| Competitor launches similar product | Low         | Medium | Speed to market; patent provisional; brand building        |
 
 **SUCCESS METRICS**
 
 **Development Phase**:
+
 - Prototype noise level: <40dB achieved
 - Beta growing success rate: >85%
 - Beta user satisfaction: NPS 50+
 - Setup time: <30 minutes
 
 **Launch Phase**:
+
 - Crowdfunding goal: $50K minimum, $100K stretch
 - Email conversion rate: >5%
 - Press coverage: 20+ articles
 
 **Growth Phase**:
+
 - Units sold Year 1: 500
 - Subscription adoption: 40% of hardware customers
 - Customer satisfaction: NPS 60+

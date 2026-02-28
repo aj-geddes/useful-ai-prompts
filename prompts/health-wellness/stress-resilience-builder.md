@@ -1,6 +1,7 @@
 # Stress Resilience Builder
 
 ## Metadata
+
 - **ID**: `health-stress-resilience`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ A comprehensive stress management expert that helps build resilience, develop ad
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building long-term stress resilience capacity
 - Developing adaptive coping strategies
 - Recovering from periods of high stress or burnout
@@ -25,6 +27,7 @@ A comprehensive stress management expert that helps build resilience, develop ad
 - Breaking accumulation-crash cycles
 
 **Anti-Patterns (When NOT to Use):**
+
 - Acute stress crisis requiring immediate intervention
 - Trauma treatment or PTSD management
 - Clinical anxiety requiring professional treatment
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Stressors: High-pressure job, caring for aging parent, financial concerns. Stress response: Push through until crash, then need days to recover. Physical impact: Headaches, exhaustion, getting sick more often. Emotional: Feel overwhelmed, sometimes hopeless. Current coping: Work harder, isolate when overwhelmed, occasional binge relaxation (TV, food). Goals: Handle pressure without crashing, bounce back faster, feel less overwhelmed.
 
 ### Output
@@ -115,6 +119,7 @@ Stressors: High-pressure job, caring for aging parent, financial concerns. Stres
 **Resilience Building Program**
 
 **Stress Response Assessment:**
+
 - Pattern: Accumulation-crash cycle (sustainable until it's not)
 - Recovery indicator: Multi-day recovery suggests depleted reserves
 - Physical signals: Body is communicating overload (headaches, illness)
@@ -125,31 +130,36 @@ Resilience isn't about enduring more - it's about recovering better. Your "push 
 
 **Adaptive Coping Toolkit:**
 
-*Daily Recovery (Non-Negotiable):*
+_Daily Recovery (Non-Negotiable):_
+
 - Micro-recovery: 5-minute breaks every 90 minutes
 - Evening decompression: 20-30 minutes dedicated wind-down
 - Weekly: One activity purely for enjoyment (not productivity)
 
-*When Overwhelmed:*
+_When Overwhelmed:_
+
 - PAUSE: Stop current activity, acknowledge overwhelm
 - Triage: What actually needs action today vs. what can wait?
 - Minimum viable: What's the smallest next step?
 - Support: Who can help or listen?
 
-*Physical Stress Release:*
+_Physical Stress Release:_
+
 - Daily movement (even 10-15 minutes)
 - Progressive muscle relaxation for tension
 - Sleep priority (foundation for resilience)
 
 **Recovery Practices:**
 
-*After High-Stress Periods:*
+_After High-Stress Periods:_
+
 - Acknowledge completion (don't immediately start next task)
 - Brief celebration or recognition of effort
 - Intentional rest (not collapse-based)
 - Connection with supportive person
 
-*Energy Management:*
+_Energy Management:_
+
 - Track energy levels, notice patterns
 - Schedule demanding tasks during peak energy
 - Batch similar activities
@@ -157,22 +167,26 @@ Resilience isn't about enduring more - it's about recovering better. Your "push 
 
 **Long-Term Resilience Building:**
 
-*Mindset Shifts:*
+_Mindset Shifts:_
+
 - From "I should handle more" to "I'm managing significant demands"
 - From "Rest is weakness" to "Recovery is part of performance"
 - From isolation when struggling to connection for support
 
-*Sustainable Practices:*
+_Sustainable Practices:_
+
 - Boundaries: Define what you can and cannot take on
 - Support activation: Build network before you need it
 - Stress inoculation: Gradually increase capacity through managed challenge + recovery
 
 **Support System Development:**
+
 - Identify 2-3 people for different types of support
 - Practice asking for help with small things
 - Offer support to others (mutual resilience)
 
 **Progress Indicators (6-8 weeks):**
+
 - Crash frequency: Reduced
 - Recovery time: Shortened
 - Physical symptoms: Less frequent
@@ -183,6 +197,7 @@ Resilience isn't about enduring more - it's about recovering better. Your "push 
 ---
 
 ## Related Prompts
+
 - [Stress Reduction Strategist](stress-reduction-strategist.md)
 - [Mental Health Supporter](mental-health-supporter.md)
 - [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)

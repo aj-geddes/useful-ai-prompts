@@ -1,6 +1,7 @@
 # Quality Assurance Expert
 
 ## Metadata
+
 - **ID**: `evaluation-quality-assurance`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Quality
@@ -18,12 +19,14 @@ Design and implement comprehensive quality assurance strategies that ensure prod
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating QA strategies for new products
 - Improving existing quality processes
 - Reducing defect rates systematically
 - Establishing quality metrics and standards
 
 **Anti-patterns:**
+
 - Manual test execution requiring hands-on testing
 - Automated test script writing requiring code implementation
 - Production incident response requiring immediate action
@@ -97,9 +100,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Mobile app for iOS/Android launching in 3 months. Team of 3 QA engineers. Currently only doing manual testing. High user expectations for performance. Must meet app store requirements. Concerned about regression as we add features."
 
 ### Output
+
 **QA Strategy: Mobile App Launch**
 
 **Quality Objectives**
@@ -115,29 +120,32 @@ Avoid:
 
 **Test Strategy Matrix**
 
-| Test Level | Coverage | Approach | Responsibility |
-|------------|----------|----------|----------------|
-| Unit Tests | 60% code coverage | Developers write | Engineering |
-| Integration | API contracts | Automated | QA + Dev |
-| UI Functional | Core user journeys | Automated + Manual | QA |
-| Regression | All previous bugs | Automated | QA |
-| Performance | Load, stress, battery | Automated | QA |
-| Exploratory | Edge cases, UX | Manual | QA |
-| Device Testing | Top 10 devices | Manual | QA |
+| Test Level     | Coverage              | Approach           | Responsibility |
+| -------------- | --------------------- | ------------------ | -------------- |
+| Unit Tests     | 60% code coverage     | Developers write   | Engineering    |
+| Integration    | API contracts         | Automated          | QA + Dev       |
+| UI Functional  | Core user journeys    | Automated + Manual | QA             |
+| Regression     | All previous bugs     | Automated          | QA             |
+| Performance    | Load, stress, battery | Automated          | QA             |
+| Exploratory    | Edge cases, UX        | Manual             | QA             |
+| Device Testing | Top 10 devices        | Manual             | QA             |
 
 **Test Automation Strategy**
 
-*Phase 1 (Month 1): Foundation*
+_Phase 1 (Month 1): Foundation_
+
 - Set up Appium + XCUITest/Espresso framework
 - Automate 5 critical user journeys (login, core feature, checkout)
 - CI/CD integration with every PR
 
-*Phase 2 (Month 2): Expansion*
+_Phase 2 (Month 2): Expansion_
+
 - Automate remaining core journeys (15 total)
 - Add API test automation
 - Implement visual regression testing
 
-*Phase 3 (Month 3): Optimization*
+_Phase 3 (Month 3): Optimization_
+
 - Performance test automation
 - Parallel execution across device farm
 - Full regression suite in CI
@@ -153,19 +161,22 @@ Avoid:
 
 **Quality Metrics Framework**
 
-*Development Phase*
+_Development Phase_
+
 - Defect Density: Defects per feature/sprint
 - Test Coverage: % of requirements with tests
 - Automation Rate: Automated vs. total tests
 - Defect Escape Rate: Bugs found after QA sign-off
 
-*Release Phase*
+_Release Phase_
+
 - Crash-Free Users: Target 99.5%
 - ANR Rate (Android): Target <0.5%
 - App Store Rating: Target 4.0+
 - Critical Bugs Open: Target 0
 
-*Action Thresholds*
+_Action Thresholds_
+
 - Defect Density >5/sprint: Root cause analysis required
 - Crash Rate >1%: Hotfix deployment
 - Rating <4.0: Feature freeze for quality sprint
@@ -174,7 +185,7 @@ Avoid:
 
 **Defect Management Process**
 
-*Severity Levels*
+_Severity Levels_
 | Level | Definition | SLA | Example |
 |-------|------------|-----|---------|
 | Critical | App unusable | 4 hours | Crash on launch |
@@ -182,14 +193,16 @@ Avoid:
 | Medium | Feature degraded | Sprint | Slow performance |
 | Low | Minor issue | Backlog | Typo in UI |
 
-*Triage Process*
+_Triage Process_
+
 1. Daily triage meeting (15 min)
 2. Severity assignment by QA lead
 3. Root cause tag (code, design, environment)
 4. Assignment and SLA tracking
 5. Verification and closure
 
-*Regression Prevention*
+_Regression Prevention_
+
 - Every bug gets automated test before closure
 - Root cause analysis for Critical/High bugs
 - Weekly bug trend review
@@ -198,31 +211,37 @@ Avoid:
 
 **Continuous Improvement**
 
-*Weekly*
+_Weekly_
+
 - Defect trend analysis
 - Failed test investigation
 - Automation backlog grooming
 
-*Sprint*
+_Sprint_
+
 - Test coverage review
 - Escape analysis (bugs found after QA)
 - Process retrospective
 
-*Monthly*
+_Monthly_
+
 - Quality metrics dashboard review
 - Test strategy adjustment
 - Tool and process improvements
 
 **Resource Allocation (3 QA Engineers)**
+
 - Engineer 1: Automation development (70%), Manual (30%)
 - Engineer 2: Functional testing (60%), Automation (40%)
 - Engineer 3: Performance/Device testing (50%), Support (50%)
 
 **Risk Mitigation**
+
 - Device fragmentation: Use cloud device farm (BrowserStack/Sauce Labs)
 - Regression growth: Prioritize automation, prune low-value tests
 - Time pressure: Define MVP quality bar, defer edge cases
 
 ## Related Prompts
+
 - [Code Review Expert](code-review-expert.md)
 - [Project Post-Mortem Expert](project-post-mortem-expert.md)

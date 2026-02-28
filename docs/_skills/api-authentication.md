@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Implement secure API authentication with JWT, OAuth 2.0, API keys, and
+date: "2025-01-01"
+description:
+  Implement secure API authentication with JWT, OAuth 2.0, API keys, and
   session management. Use when securing APIs, managing tokens, or implementing user
   authentication flows.
 layout: skill
 slug: api-authentication
 tags:
-- api
+  - api
 title: api-authentication
 ---
 
@@ -158,50 +159,54 @@ app.post('/api/auth/logout', verifyToken, async (req, res) => {
 ### 2. **OAuth 2.0 Implementation**
 
 ```javascript
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const passport = require("passport");
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
-passport.use(new GoogleStrategy(
-  {
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: '/api/auth/google/callback'
-  },
-  async (accessToken, refreshToken, profile, done) => {
-    try {
-      let user = await User.findOne({ googleId: profile.id });
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      callbackURL: "/api/auth/google/callback",
+    },
+    async (accessToken, refreshToken, profile, done) => {
+      try {
+        let user = await User.findOne({ googleId: profile.id });
 
-      if (!user) {
-        user = await User.create({
-          googleId: profile.id,
-          email: profile.emails[0].value,
-          firstName: profile.name.givenName,
-          lastName: profile.name.familyName
-        });
+        if (!user) {
+          user = await User.create({
+            googleId: profile.id,
+            email: profile.emails[0].value,
+            firstName: profile.name.givenName,
+            lastName: profile.name.familyName,
+          });
+        }
+
+        return done(null, user);
+      } catch (error) {
+        return done(error);
       }
-
-      return done(null, user);
-    } catch (error) {
-      return done(error);
-    }
-  }
-));
-
-// OAuth routes
-app.get('/api/auth/google',
-  passport.authenticate('google', { scope: ['profile', 'email'] })
+    },
+  ),
 );
 
-app.get('/api/auth/google/callback',
-  passport.authenticate('google', { failureRedirect: '/login' }),
+// OAuth routes
+app.get(
+  "/api/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] }),
+);
+
+app.get(
+  "/api/auth/google/callback",
+  passport.authenticate("google", { failureRedirect: "/login" }),
   (req, res) => {
     const token = jwt.sign(
       { userId: req.user.id, email: req.user.email },
       SECRET_KEY,
-      { expiresIn: '7d' }
+      { expiresIn: "7d" },
     );
     res.redirect(`/dashboard?token=${token}`);
-  }
+  },
 );
 ```
 
@@ -316,6 +321,7 @@ def admin_endpoint():
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTPS for all authentication
 - Store tokens securely (HttpOnly cookies)
 - Implement token refresh mechanism
@@ -328,6 +334,7 @@ def admin_endpoint():
 - Rotate secrets regularly
 
 ### ❌ DON'T
+
 - Store passwords in plain text
 - Send tokens in URL parameters
 - Use weak secret keys
@@ -342,10 +349,13 @@ def admin_endpoint():
 
 ```javascript
 app.use((req, res, next) => {
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('X-Frame-Options', 'DENY');
-  res.setHeader('X-XSS-Protection', '1; mode=block');
-  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("X-XSS-Protection", "1; mode=block");
+  res.setHeader(
+    "Strict-Transport-Security",
+    "max-age=31536000; includeSubDomains",
+  );
   next();
 });
 ```

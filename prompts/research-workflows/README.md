@@ -22,4 +22,4 @@ Comprehensive research methodologies across multiple domains and industries.
 
 ---
 
-*Professional research workflow prompts for analysts, researchers, and subject matter experts across industries.*
+_Professional research workflow prompts for analysts, researchers, and subject matter experts across industries._

@@ -3,34 +3,35 @@ title: Customer Support Process Expert
 slug: customer-support-process-expert
 category: customer-focused
 tags:
-- customer
-- support
-- help
-- desk
-- ticket
-- management
-- support
-- processes
-- service
-- operations
-- ITSM
+  - customer
+  - support
+  - help
+  - desk
+  - ticket
+  - management
+  - support
+  - processes
+  - service
+  - operations
+  - ITSM
 compatible_models:
-- Claude 3+
-- GPT-4+
-- Gemini Pro
-date: '2025-01-15'
-description: Optimize customer support operations to deliver faster resolutions, higher
+  - Claude 3+
+  - GPT-4+
+  - Gemini Pro
+date: "2025-01-15"
+description:
+  Optimize customer support operations to deliver faster resolutions, higher
   satisfaction, and improved team efficiency. This prompt helps design tiered support
   models, ticket workflow optimization, knowledge management systems, agent enablement
   tools, and performance frameworks that balance cost-effectiveness with customer
   experience quality.
 layout: prompt
 use_cases:
-- Redesigning support operations for scale or quality improvement
-- Implementing or optimizing ticketing and routing systems
-- Building knowledge bases and self-service capabilities
-- Establishing support metrics frameworks and SLAs
-- Training support teams on best practices
+  - Redesigning support operations for scale or quality improvement
+  - Implementing or optimizing ticketing and routing systems
+  - Building knowledge bases and self-service capabilities
+  - Establishing support metrics frameworks and SLAs
+  - Training support teams on best practices
 complexity: Intermediate
 interaction: Multi-turn collaborative
 ---
@@ -45,6 +46,7 @@ Support operations face constant tension between cost efficiency and customer ex
 
 <input_handling>
 Required information to gather:
+
 1. Support channels currently offered (email, chat, phone, social, in-app)
 2. Team size and current structure
 3. Current ticket volume and common issue types
@@ -57,11 +59,12 @@ Required information to gather:
 10. Budget and resource constraints
 
 Optional context:
+
 - Customer segments and their support expectations
 - Integration with product and engineering teams
 - Current self-service capabilities
 - Agent turnover and satisfaction data
-</input_handling>
+  </input_handling>
 
 <task>
 1. ASSESS CURRENT STATE: Understand support volume, structure, tools, and performance gaps
@@ -77,6 +80,7 @@ Optional context:
 Format: Comprehensive support operations design with implementation guidance
 Length: 1500-2500 words for full framework
 Include:
+
 - Tiered support model with scope and skills per tier
 - Ticket workflow with stages, SLAs, and automation
 - Routing logic with prioritization criteria
@@ -84,16 +88,17 @@ Include:
 - Agent enablement tools and templates
 - Performance metrics framework with targets
 - Implementation roadmap with phases
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
+
 - Tier structure matches stated volume and complexity
 - Routing logic is clear and implementable
 - SLAs are realistic given current performance and resources
 - Knowledge strategy addresses both internal and external needs
 - Metrics are actionable and include leading indicators
 - Implementation is phased appropriately for stated resources
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Recommendations must work with stated tools or include migration guidance

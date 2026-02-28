@@ -1,6 +1,7 @@
 # Comprehensive Test Strategist
 
 ## Metadata
+
 - **ID**: `comprehensive-test-strategist`
 - **Version**: 1.0.0
 - **Category**: Technical/Quality Assurance
@@ -18,6 +19,7 @@ Develops comprehensive testing strategies that ensure software quality through s
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating testing strategies for new projects or major features
 - Transforming manual testing to automated pipelines
 - Improving test coverage and reducing escaped defects
@@ -25,6 +27,7 @@ Develops comprehensive testing strategies that ensure software quality through s
 - Optimizing test execution time in CI/CD pipelines
 
 **Anti-patterns (Don't Use For):**
+
 - Writing individual test cases or test code
 - Debugging specific test failures
 - Test execution or running test suites
@@ -142,6 +145,7 @@ Current (Inverted)              Target (Healthy)
 ```
 
 **Gap Analysis:**
+
 - Unit test coverage: 25% (target: 80%)
 - Integration tests: None automated
 - API contract tests: None
@@ -150,28 +154,28 @@ Current (Inverted)              Target (Healthy)
 
 **Risk-Based Test Priority Matrix**
 
-| Priority | Flow | Automation Target | Business Rationale |
-|----------|------|-------------------|-------------------|
-| P0 - Critical | Payment processing | 100% | Revenue impact, PCI compliance |
-| P0 - Critical | Checkout flow | 100% | Direct conversion impact |
-| P1 - High | Cart operations | 80% | High usage, frequent regression source |
-| P1 - High | User authentication | 80% | Security, access control |
-| P2 - Medium | Product search/browse | 50% | Important but more resilient |
-| P3 - Low | Admin functions | 20% | Internal only, lower risk |
+| Priority      | Flow                  | Automation Target | Business Rationale                     |
+| ------------- | --------------------- | ----------------- | -------------------------------------- |
+| P0 - Critical | Payment processing    | 100%              | Revenue impact, PCI compliance         |
+| P0 - Critical | Checkout flow         | 100%              | Direct conversion impact               |
+| P1 - High     | Cart operations       | 80%               | High usage, frequent regression source |
+| P1 - High     | User authentication   | 80%               | Security, access control               |
+| P2 - Medium   | Product search/browse | 50%               | Important but more resilient           |
+| P3 - Low      | Admin functions       | 20%               | Internal only, lower risk              |
 
 **Automation Framework Selection**
 
-| Layer | Tool | Rationale |
-|-------|------|-----------|
-| Unit (React) | Jest + React Testing Library | Fast execution, React ecosystem standard |
-| Unit (Node.js) | Jest | Consistent tooling, excellent mocking |
-| Unit (Mobile) | Jest + React Native Testing Library | Cross-platform consistency |
-| API Integration | Supertest | Jest integration, easy assertions |
-| API Contracts | Pact | Consumer-driven contracts |
-| E2E Web | Playwright | Multi-browser, reliable selectors, fast |
-| E2E Mobile | Detox | React Native optimized |
-| Performance | k6 | Developer-friendly, CI integration |
-| Visual Regression | Percy | Component and page-level diffs |
+| Layer             | Tool                                | Rationale                                |
+| ----------------- | ----------------------------------- | ---------------------------------------- |
+| Unit (React)      | Jest + React Testing Library        | Fast execution, React ecosystem standard |
+| Unit (Node.js)    | Jest                                | Consistent tooling, excellent mocking    |
+| Unit (Mobile)     | Jest + React Native Testing Library | Cross-platform consistency               |
+| API Integration   | Supertest                           | Jest integration, easy assertions        |
+| API Contracts     | Pact                                | Consumer-driven contracts                |
+| E2E Web           | Playwright                          | Multi-browser, reliable selectors, fast  |
+| E2E Mobile        | Detox                               | React Native optimized                   |
+| Performance       | k6                                  | Developer-friendly, CI integration       |
+| Visual Regression | Percy                               | Component and page-level diffs           |
 
 **CI/CD Quality Gates**
 
@@ -208,25 +212,25 @@ pre_deploy_production:
 
 **Metrics Framework**
 
-| Metric | Current | 3-Month Target | 6-Month Target |
-|--------|---------|----------------|----------------|
-| Unit test coverage | 25% | 60% | 80% |
-| Automated test coverage | 10% | 50% | 75% |
-| Regression bugs per release | 12 | 5 | 2 |
-| Test execution time (PR) | N/A | < 5 min | < 3 min |
-| Flaky test rate | N/A | < 5% | < 2% |
-| Escaped defects to production | 8/month | 4/month | 2/month |
-| Time to test results | 2 days | 30 min | 10 min |
+| Metric                        | Current | 3-Month Target | 6-Month Target |
+| ----------------------------- | ------- | -------------- | -------------- |
+| Unit test coverage            | 25%     | 60%            | 80%            |
+| Automated test coverage       | 10%     | 50%            | 75%            |
+| Regression bugs per release   | 12      | 5              | 2              |
+| Test execution time (PR)      | N/A     | < 5 min        | < 3 min        |
+| Flaky test rate               | N/A     | < 5%           | < 2%           |
+| Escaped defects to production | 8/month | 4/month        | 2/month        |
+| Time to test results          | 2 days  | 30 min         | 10 min         |
 
 **Implementation Roadmap**
 
-| Phase | Timeline | Focus Areas | Deliverables |
-|-------|----------|-------------|--------------|
-| Foundation | Weeks 1-4 | Framework setup, CI integration | Jest configured, Playwright installed, PR gates active |
-| Critical Path | Weeks 5-8 | Checkout and payment automation | 100% E2E coverage of P0 flows, 60% unit coverage |
-| Scale | Weeks 9-12 | Expand unit and integration coverage | 75% unit coverage, API contracts for all services |
-| Optimize | Weeks 13-16 | Performance, visual regression | Performance baselines, visual regression active |
-| Mature | Ongoing | Continuous improvement | Flaky test elimination, coverage maintenance |
+| Phase         | Timeline    | Focus Areas                          | Deliverables                                           |
+| ------------- | ----------- | ------------------------------------ | ------------------------------------------------------ |
+| Foundation    | Weeks 1-4   | Framework setup, CI integration      | Jest configured, Playwright installed, PR gates active |
+| Critical Path | Weeks 5-8   | Checkout and payment automation      | 100% E2E coverage of P0 flows, 60% unit coverage       |
+| Scale         | Weeks 9-12  | Expand unit and integration coverage | 75% unit coverage, API contracts for all services      |
+| Optimize      | Weeks 13-16 | Performance, visual regression       | Performance baselines, visual regression active        |
+| Mature        | Ongoing     | Continuous improvement               | Flaky test elimination, coverage maintenance           |
 
 **Team Enablement Plan**
 

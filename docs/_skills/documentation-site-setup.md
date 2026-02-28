@@ -1,13 +1,14 @@
 ---
 category: documentation
-date: '2025-01-01'
-description: Set up documentation websites using Docusaurus, MkDocs, VitePress, GitBook,
+date: "2025-01-01"
+description:
+  Set up documentation websites using Docusaurus, MkDocs, VitePress, GitBook,
   or static site generators. Use when creating docs sites, setting up documentation
   portals, or building static documentation.
 layout: skill
 slug: documentation-site-setup
 tags:
-- git
+  - git
 title: documentation-site-setup
 ---
 
@@ -76,32 +77,32 @@ my-docs/
 ```javascript
 // docusaurus.config.js
 module.exports = {
-  title: 'My Documentation',
-  tagline: 'Comprehensive documentation for developers',
-  url: 'https://docs.example.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'myorg',
-  projectName: 'my-docs',
+  title: "My Documentation",
+  tagline: "Comprehensive documentation for developers",
+  url: "https://docs.example.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "myorg",
+  projectName: "my-docs",
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/myorg/my-docs/tree/main/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/myorg/my-docs/tree/main/",
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/myorg/my-docs/tree/main/',
+          editUrl: "https://github.com/myorg/my-docs/tree/main/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
@@ -109,56 +110,56 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: 'My Docs',
+      title: "My Docs",
       logo: {
-        alt: 'Logo',
-        src: 'img/logo.svg',
+        alt: "Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "Docs",
         },
         {
-          to: '/blog',
-          label: 'Blog',
-          position: 'left'
+          to: "/blog",
+          label: "Blog",
+          position: "left",
         },
         {
-          href: 'https://github.com/myorg/repo',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/myorg/repo",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/intro',
+              label: "Getting Started",
+              to: "/docs/intro",
             },
             {
-              label: 'API Reference',
-              to: '/docs/api/reference',
+              label: "API Reference",
+              to: "/docs/api/reference",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/example',
+              label: "Discord",
+              href: "https://discord.gg/example",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/example',
+              label: "Twitter",
+              href: "https://twitter.com/example",
             },
           ],
         },
@@ -166,14 +167,14 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} My Company.`,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
-      additionalLanguages: ['bash', 'diff', 'json'],
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
+      additionalLanguages: ["bash", "diff", "json"],
     },
     algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      appId: "YOUR_APP_ID",
+      apiKey: "YOUR_SEARCH_API_KEY",
+      indexName: "YOUR_INDEX_NAME",
     },
   },
 };
@@ -185,33 +186,25 @@ module.exports = {
 // sidebars.js
 module.exports = {
   docs: [
-    'intro',
+    "intro",
     {
-      type: 'category',
-      label: 'Getting Started',
+      type: "category",
+      label: "Getting Started",
       items: [
-        'getting-started/installation',
-        'getting-started/quick-start',
-        'getting-started/configuration',
+        "getting-started/installation",
+        "getting-started/quick-start",
+        "getting-started/configuration",
       ],
     },
     {
-      type: 'category',
-      label: 'Guides',
-      items: [
-        'guides/authentication',
-        'guides/database',
-        'guides/deployment',
-      ],
+      type: "category",
+      label: "Guides",
+      items: ["guides/authentication", "guides/database", "guides/deployment"],
     },
     {
-      type: 'category',
-      label: 'API Reference',
-      items: [
-        'api/overview',
-        'api/endpoints',
-        'api/errors',
-      ],
+      type: "category",
+      label: "API Reference",
+      items: ["api/overview", "api/endpoints", "api/errors"],
     },
   ],
 };
@@ -347,14 +340,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quick-start.md
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
   - Guides:
-    - Tutorial: guides/tutorial.md
-    - Best Practices: guides/best-practices.md
+      - Tutorial: guides/tutorial.md
+      - Best Practices: guides/best-practices.md
   - API Reference:
-    - Overview: api/overview.md
-    - Endpoints: api/reference.md
+      - Overview: api/overview.md
+      - Endpoints: api/reference.md
 
 extra:
   social:
@@ -370,19 +363,19 @@ extra:
 
 ```markdown
 !!! note
-    This is a note
+This is a note
 
 !!! tip
-    This is a tip
+This is a tip
 
 !!! warning
-    This is a warning
+This is a warning
 
 !!! danger
-    This is dangerous
+This is dangerous
 
 !!! info "Custom Title"
-    Custom admonition with title
+Custom admonition with title
 ```
 
 ### Deployment
@@ -432,58 +425,56 @@ echo '# Hello VitePress' > docs/index.md
 ```javascript
 // docs/.vitepress/config.js
 export default {
-  title: 'My Documentation',
-  description: 'Comprehensive documentation',
+  title: "My Documentation",
+  description: "Comprehensive documentation",
   themeConfig: {
     nav: [
-      { text: 'Guide', link: '/guide/' },
-      { text: 'API', link: '/api/' },
-      { text: 'GitHub', link: 'https://github.com/myorg/repo' }
+      { text: "Guide", link: "/guide/" },
+      { text: "API", link: "/api/" },
+      { text: "GitHub", link: "https://github.com/myorg/repo" },
     ],
     sidebar: {
-      '/guide/': [
+      "/guide/": [
         {
-          text: 'Getting Started',
+          text: "Getting Started",
           items: [
-            { text: 'Introduction', link: '/guide/' },
-            { text: 'Installation', link: '/guide/installation' },
-            { text: 'Quick Start', link: '/guide/quick-start' }
-          ]
+            { text: "Introduction", link: "/guide/" },
+            { text: "Installation", link: "/guide/installation" },
+            { text: "Quick Start", link: "/guide/quick-start" },
+          ],
         },
         {
-          text: 'Advanced',
+          text: "Advanced",
           items: [
-            { text: 'Configuration', link: '/guide/configuration' },
-            { text: 'Deployment', link: '/guide/deployment' }
-          ]
-        }
+            { text: "Configuration", link: "/guide/configuration" },
+            { text: "Deployment", link: "/guide/deployment" },
+          ],
+        },
       ],
-      '/api/': [
+      "/api/": [
         {
-          text: 'API Reference',
+          text: "API Reference",
           items: [
-            { text: 'Overview', link: '/api/' },
-            { text: 'Endpoints', link: '/api/endpoints' }
-          ]
-        }
-      ]
+            { text: "Overview", link: "/api/" },
+            { text: "Endpoints", link: "/api/endpoints" },
+          ],
+        },
+      ],
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/myorg/repo' }
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/myorg/repo" }],
     editLink: {
-      pattern: 'https://github.com/myorg/repo/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      pattern: "https://github.com/myorg/repo/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
     },
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-present My Company'
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2025-present My Company",
     },
     search: {
-      provider: 'local'
-    }
-  }
-}
+      provider: "local",
+    },
+  },
+};
 ```
 
 ---
@@ -549,19 +540,22 @@ my-docs/
 ```markdown
 # Summary
 
-* [Introduction](README.md)
+- [Introduction](README.md)
 
 ## Getting Started
-* [Installation](chapters/installation.md)
-* [Quick Start](chapters/quick-start.md)
+
+- [Installation](chapters/installation.md)
+- [Quick Start](chapters/quick-start.md)
 
 ## Guides
-* [Tutorial](chapters/tutorial.md)
-* [Best Practices](chapters/best-practices.md)
+
+- [Tutorial](chapters/tutorial.md)
+- [Best Practices](chapters/best-practices.md)
 
 ## API Reference
-* [Overview](chapters/api-overview.md)
-* [Endpoints](chapters/api-endpoints.md)
+
+- [Overview](chapters/api-overview.md)
+- [Endpoints](chapters/api-endpoints.md)
 ```
 
 ---
@@ -631,12 +625,12 @@ docs.example.com -> username.github.io
 module.exports = {
   themeConfig: {
     algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      appId: "YOUR_APP_ID",
+      apiKey: "YOUR_SEARCH_API_KEY",
+      indexName: "YOUR_INDEX_NAME",
       contextualSearch: true,
       searchParameters: {},
-      searchPagePath: 'search',
+      searchPagePath: "search",
     },
   },
 };
@@ -657,6 +651,7 @@ pip install mkdocs-material[search]
 ## Best Practices
 
 ### ✅ DO
+
 - Use consistent navigation structure
 - Enable search functionality
 - Add edit links to pages
@@ -672,6 +667,7 @@ pip install mkdocs-material[search]
 - Test on mobile devices
 
 ### ❌ DON'T
+
 - Use outdated frameworks
 - Skip search functionality
 - Forget mobile responsiveness

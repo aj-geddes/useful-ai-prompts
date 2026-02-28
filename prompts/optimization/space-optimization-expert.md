@@ -1,6 +1,7 @@
 # Space Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-space-optimization`
 - **Version**: 1.0.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Optimizes physical space utilization for maximum efficiency and functionality. A
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Space feels cramped or inefficient despite adequate square footage
 - Underutilized areas coexist with crowded spaces
 - Workflow hampered by current layout or traffic patterns
@@ -25,6 +27,7 @@ Optimizes physical space utilization for maximum efficiency and functionality. A
 - Transitioning to hybrid work requiring space reconfiguration
 
 **Anti-Patterns (When NOT to Use):**
+
 - Real estate acquisition or leasing decisions
 - Construction planning and building codes
 - Architectural design and structural changes
@@ -105,6 +108,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a 15,000 sq ft office with 100 employees but it feels cramped. Many conference rooms sit empty while people struggle to find desk space. We are moving to hybrid work with about 60% in office on any given day. We want to accommodate growth to 130 employees without moving locations."
 
 ### Output
@@ -114,18 +118,21 @@ Avoid:
 **1. Space Analysis**
 
 Current allocation (estimated):
+
 - Individual desks: 9,000 sq ft (60%) - 100 desks at 90 sq ft each
 - Conference rooms: 3,000 sq ft (20%) - 8 rooms
 - Common areas: 1,500 sq ft (10%) - kitchen, reception
 - Circulation/support: 1,500 sq ft (10%)
 
 Utilization findings:
+
 - Desk occupancy: 60% on peak days (hybrid effect)
 - Conference room usage: 40% (oversupplied for current needs)
 - Common area: Crowded at peak times, underused otherwise
 - Capacity: Designed for 100, feels cramped due to inefficient layout
 
 Hybrid work reality:
+
 - Average daily attendance: 60 people (60%)
 - Peak attendance: 80 people (80%)
 - Desk need: 80-85 workstations (not 100 assigned desks)
@@ -144,11 +151,13 @@ Space reallocation:
 | Circulation | 1,500 sq ft | 1,000 sq ft | -33% |
 
 Workstation strategy:
+
 - Reduce from 100 to 70 assigned desks (for regular in-office employees)
 - Add 15 hot desks for hybrid workers
 - Total: 85 workstations supporting 130 employees at 65% attendance
 
 Meeting space redesign:
+
 - Keep: 2 large conference rooms (12-person capacity)
 - Convert: 3 medium rooms to open collaboration zones
 - Add: 6 phone booths/focus pods (from 3 small rooms)
@@ -157,18 +166,21 @@ Meeting space redesign:
 **3. Implementation**
 
 Phase 1 (Week 1-2): Planning and Communication
+
 - Finalize layout design with stakeholder input
 - Communicate changes to employees with rationale
 - Address concerns through Q&A sessions
 - Order furniture and equipment
 
 Phase 2 (Week 3-4): Preparation
+
 - Install hot desk booking system
 - Prepare focus pods and phone booths
 - Test technology in new configurations
 - Create wayfinding signage and guidelines
 
 Phase 3 (Week 5-6): Transition
+
 - Execute over 2 weekends for minimal disruption
 - Weekend 1: Remove excess desks, reconfigure zones
 - Weekend 2: Install collaboration areas, complete details
@@ -177,12 +189,14 @@ Phase 3 (Week 5-6): Transition
 **4. Future-Proofing**
 
 Flexibility features:
+
 - Modular furniture allowing easy reconfiguration
 - Power and data access throughout (not just at desks)
 - Movable partitions between zones
 - Scalable hot desk booking system
 
 Expected outcomes:
+
 - Capacity: 100 to 130 employees (30% increase)
 - Employee satisfaction: Improved variety and amenities
 - Space efficiency: 90 sq ft to 70 sq ft per person

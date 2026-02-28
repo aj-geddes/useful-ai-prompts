@@ -84,6 +84,7 @@ permalink: /about/
       </div>
 
     </div>
+
   </div>
 </div>
 

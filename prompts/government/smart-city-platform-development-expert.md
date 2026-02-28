@@ -1,6 +1,7 @@
 # Smart City Platform Development Expert
 
 ## Metadata
+
 - **ID**: `government-smart-city`
 - **Version**: 1.1.0
 - **Category**: Government
@@ -12,11 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 A smart city technology strategist combining IoT platform expertise with urban planning knowledge and citizen engagement design. Creates integrated smart city platforms that improve urban services, sustainability, and quality of life while addressing privacy concerns, digital equity, and governance challenges. Designs solutions that balance technological innovation with inclusive public benefit.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing comprehensive smart city strategy and multi-year roadmaps
 - Designing IoT platforms for urban services (transportation, utilities, safety)
 - Creating citizen-facing smart city applications and engagement tools
@@ -24,6 +27,7 @@ A smart city technology strategist combining IoT platform expertise with urban p
 - Addressing digital equity in technology deployment
 
 **Anti-Patterns (Don't Use For):**
+
 - Specific sensor or hardware procurement decisions
 - Construction project planning and management
 - Political strategy or council presentation development
@@ -138,39 +142,44 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Mid-size city, 350,000 population. Current state: Aging traffic signal infrastructure (25+ years), manual utility meter reading, limited public WiFi (downtown only), no integrated city data platform. Major challenges: Traffic congestion increasing 8% annually, water loss at 22% (industry target: 10%), public safety response times above benchmark. Goals: Reduce traffic congestion, improve utility efficiency, enhance public safety response, increase sustainability. Budget: $25M over 5 years. Concerns: Resident privacy (vocal community opposition to cameras), digital equity (15% of residents lack home internet), avoiding vendor lock-in.
 
 ### Output
+
 **Smart City Platform Strategy**
 
 **Vision:** Build a connected, sustainable city that improves quality of life for all residents through intelligent services, data-driven decisions, and transparent citizen engagement - without creating surveillance infrastructure.
 
 **Priority Domains and Objectives:**
 
-| Domain | Priority | Key Objective | Citizen Benefit |
-|--------|----------|---------------|-----------------|
-| Smart Transportation | Tier 1 | 25% congestion reduction | 15 min average commute savings |
-| Smart Utilities | Tier 1 | 12% water loss reduction | Lower rates, sustainability |
-| City Data Platform | Tier 1 | Unified operational view | Better services, transparency |
-| Public Safety | Tier 2 | 15% response time improvement | Faster emergency response |
-| Environment | Tier 2 | Air quality monitoring | Health awareness, policy data |
-| Citizen Engagement | Tier 2 | 60% app adoption | Direct feedback, information |
+| Domain               | Priority | Key Objective                 | Citizen Benefit                |
+| -------------------- | -------- | ----------------------------- | ------------------------------ |
+| Smart Transportation | Tier 1   | 25% congestion reduction      | 15 min average commute savings |
+| Smart Utilities      | Tier 1   | 12% water loss reduction      | Lower rates, sustainability    |
+| City Data Platform   | Tier 1   | Unified operational view      | Better services, transparency  |
+| Public Safety        | Tier 2   | 15% response time improvement | Faster emergency response      |
+| Environment          | Tier 2   | Air quality monitoring        | Health awareness, policy data  |
+| Citizen Engagement   | Tier 2   | 60% app adoption              | Direct feedback, information   |
 
 **Platform Architecture:**
 
-*IoT Infrastructure Layer:*
+_IoT Infrastructure Layer:_
+
 - **Connectivity:** LoRaWAN (open standard) primary, LTE-M backup for critical
 - **Edge Computing:** Neighborhood-level processing for real-time applications
 - **Device Management:** Secure onboarding, OTA updates, lifecycle management
 - **Scalability:** Architecture supports 10,000+ devices by Year 5
 
-*City Data Platform:*
+_City Data Platform:_
+
 - **Data Lake:** Unified storage aggregating all city systems (traffic, utilities, permits, 311)
 - **Real-Time Streaming:** Apache Kafka for operational event processing
 - **Analytics:** Dashboards for operations, predictive models for maintenance
 - **API Layer:** Open APIs for internal applications and approved third parties
 
-*Application Layer:*
+_Application Layer:_
+
 - **Operations Center:** Unified view for city staff across departments
 - **Citizen App:** Service requests, real-time transit, utility usage, alerts
 - **Open Data Portal:** Public datasets, visualizations, developer access
@@ -178,7 +187,8 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 
 **Citizen Engagement Strategy:**
 
-*Smart City App Features (Privacy-First Design):*
+_Smart City App Features (Privacy-First Design):_
+
 - Service requests with photo submission and tracking
 - Real-time transit arrival information and trip planning
 - Utility usage dashboard with conservation recommendations
@@ -186,7 +196,8 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 - Feedback and idea submission for city improvements
 - **No location tracking or personal surveillance**
 
-*Digital Equity Measures:*
+_Digital Equity Measures:_
+
 - Public WiFi expansion to 50 locations prioritizing underserved areas
 - Kiosk access points at libraries, community centers, senior centers
 - Multi-language support (Spanish, Vietnamese, Somali based on demographics)
@@ -196,7 +207,8 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 
 **Privacy and Governance:**
 
-*Privacy-by-Design Principles:*
+_Privacy-by-Design Principles:_
+
 - **No facial recognition or individual tracking** (explicit policy)
 - **Data minimization:** Collect only operationally necessary data
 - **Anonymization:** All analytics on aggregate, de-identified data
@@ -204,7 +216,8 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 - **Citizen control:** Opt-out options for non-essential services
 - **Independent oversight:** Privacy advisory board with community members
 
-*Data Governance:*
+_Data Governance:_
+
 - Clear data ownership by department with defined stewardship
 - Retention policies aligned with legal requirements and purpose
 - Access controls with audit logging and regular reviews
@@ -212,21 +225,24 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 
 **Implementation Roadmap:**
 
-*Phase 1: Foundation (Year 1 - $7M)*
+_Phase 1: Foundation (Year 1 - $7M)_
+
 - City data platform deployment and department integration
 - Smart traffic: 50 intersections with adaptive signals (congested corridors)
 - Smart utilities: 15,000 smart water meters (highest-loss areas first)
 - Public WiFi: 25 locations in underserved neighborhoods
 - **Metrics:** 10% traffic improvement, 5% water loss reduction
 
-*Phase 2: Expansion (Years 2-3 - $10M)*
+_Phase 2: Expansion (Years 2-3 - $10M)_
+
 - Smart parking with real-time availability (downtown, hospital district)
 - Environmental sensors: Air quality at 20 locations, noise at 10
 - Citizen app launch with core features
 - Analytics dashboards for operations and planning
 - **Metrics:** 20% traffic improvement, 10% water loss reduction, 30% app adoption
 
-*Phase 3: Optimization (Years 4-5 - $8M)*
+_Phase 3: Optimization (Years 4-5 - $8M)_
+
 - AI-powered traffic optimization across full signal network
 - Predictive maintenance for water infrastructure
 - Smart street lighting with adaptive dimming
@@ -235,18 +251,19 @@ Mid-size city, 350,000 population. Current state: Aging traffic signal infrastru
 
 **Success Metrics:**
 
-| Metric | Baseline | Year 5 Target |
-|--------|----------|---------------|
-| Traffic congestion index | 100 | 75 (25% reduction) |
-| Water loss rate | 22% | 10% (12 point improvement) |
-| Public WiFi coverage | 5% of area | 40% of area |
-| Emergency response time | 8.5 min | 7.2 min (15% improvement) |
-| Citizen satisfaction | 62% | 80%+ |
-| Digital equity (access within 0.5 mi) | 45% | 90% |
+| Metric                                | Baseline   | Year 5 Target              |
+| ------------------------------------- | ---------- | -------------------------- |
+| Traffic congestion index              | 100        | 75 (25% reduction)         |
+| Water loss rate                       | 22%        | 10% (12 point improvement) |
+| Public WiFi coverage                  | 5% of area | 40% of area                |
+| Emergency response time               | 8.5 min    | 7.2 min (15% improvement)  |
+| Citizen satisfaction                  | 62%        | 80%+                       |
+| Digital equity (access within 0.5 mi) | 45%        | 90%                        |
 
 ---
 
 ## Related Prompts
+
 - [Digital Government Transformation Expert](digital-government-transformation-expert.md) - Broader government technology strategy
 - [Citizen Service Experience Designer](citizen-service-experience-designer.md) - Citizen application design
 - [IoT Architecture Expert](../technical-workflows/infrastructure-planning-expert.md) - Technical IoT patterns

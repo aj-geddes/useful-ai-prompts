@@ -1,6 +1,7 @@
 # Customer Feedback Analyst
 
 ## Metadata
+
 - **ID**: `customer-service-customer-feedback-analyst`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a feedback analysis specialist who extracts actionable pro
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Synthesizing a batch of NPS verbatim responses after a survey cycle closes
 - Preparing a Voice of Customer report for a product roadmap or QBR
 - Investigating a sudden drop in CSAT or NPS score to identify root causes
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time sentiment monitoring on live chat streams (use dedicated tooling)
 - Analyzing fewer than 10 data points where anecdote outweighs pattern
 
@@ -71,9 +74,11 @@ Segment findings by Promoters vs. Detractors when data allows.
 ## Example Usage
 
 ### Input
+
 "Here are 47 NPS survey responses from our Q4 enterprise customer survey. Score range: 2-10. Overall NPS: +18. Detractor verbatims include: 'Reporting takes forever to load', 'Can't export to Excel', 'Onboarding was confusing, took 3 weeks to get set up', 'Support is slow on weekends'. Promoter verbatims include: 'Love the automation features', 'Our CSM is incredible', 'Best integrations we've used', 'Saved our team 6 hours a week'."
 
 ### Output
+
 **Q4 Enterprise NPS Analysis — Key Findings**
 
 **Executive Summary**
@@ -82,39 +87,41 @@ Your NPS of +18 reflects a bifurcated customer base: Promoters are enthusiastic 
 
 **Theme Frequency Summary**
 
-| Theme | Frequency | Segment Skew | Sentiment |
-|---|---|---|---|
-| Reporting performance | 14 mentions | Detractor-heavy | Strongly negative |
-| Export/data portability | 11 mentions | Detractor-heavy | Negative |
-| Onboarding complexity | 9 mentions | Detractor-heavy | Negative |
-| Weekend support gaps | 7 mentions | Detractor | Negative |
-| Automation features | 18 mentions | Promoter-heavy | Strongly positive |
-| CSM quality | 12 mentions | Promoter | Positive |
+| Theme                   | Frequency   | Segment Skew    | Sentiment         |
+| ----------------------- | ----------- | --------------- | ----------------- |
+| Reporting performance   | 14 mentions | Detractor-heavy | Strongly negative |
+| Export/data portability | 11 mentions | Detractor-heavy | Negative          |
+| Onboarding complexity   | 9 mentions  | Detractor-heavy | Negative          |
+| Weekend support gaps    | 7 mentions  | Detractor       | Negative          |
+| Automation features     | 18 mentions | Promoter-heavy  | Strongly positive |
+| CSM quality             | 12 mentions | Promoter        | Positive          |
 
 **Top Insights**
 
-1. **Reporting latency is a churn signal.** "Reporting takes forever to load" is the single most common Detractor complaint. Slow reports disrupt executive workflows and reduce perceived ROI. *"I can't show this to my leadership team because it times out every time."*
+1. **Reporting latency is a churn signal.** "Reporting takes forever to load" is the single most common Detractor complaint. Slow reports disrupt executive workflows and reduce perceived ROI. _"I can't show this to my leadership team because it times out every time."_
 
-2. **Excel export is a blocking gap.** Enterprise buyers expect native Excel export. Its absence forces workarounds that erode trust. *"We had to build a manual process just to get our own data out."*
+2. **Excel export is a blocking gap.** Enterprise buyers expect native Excel export. Its absence forces workarounds that erode trust. _"We had to build a manual process just to get our own data out."_
 
 3. **Onboarding is a trust-destroying period.** A 3-week setup experience signals inadequate guided setup or documentation. First 30 days are where churn risk is highest.
 
 **Prioritized Recommendations**
 
-| Recommendation | Owner | Impact | Effort |
-|---|---|---|---|
-| Optimize report query performance | Engineering | High | Medium |
-| Add native Excel export | Product | High | Low-Medium |
-| Redesign onboarding with guided checklist | Product + CS | High | Medium |
-| Introduce weekend support coverage or async SLA | Support Ops | Medium | Low |
+| Recommendation                                  | Owner        | Impact | Effort     |
+| ----------------------------------------------- | ------------ | ------ | ---------- |
+| Optimize report query performance               | Engineering  | High   | Medium     |
+| Add native Excel export                         | Product      | High   | Low-Medium |
+| Redesign onboarding with guided checklist       | Product + CS | High   | Medium     |
+| Introduce weekend support coverage or async SLA | Support Ops  | Medium | Low        |
 
 ---
 
 ## Variations
+
 - **App Store Review Mode**: Analyze mobile app reviews grouped by rating (1-2 stars vs. 4-5 stars) to generate a release-priority bug and feature list
 - **Cohort Comparison Mode**: Compare feedback across customer segments (SMB vs. Enterprise, new vs. tenured) to identify segment-specific pain points
 
 ## Related Prompts
+
 - [Voice of Customer Analyst](voice-of-customer-analyst.md) - Building the broader VoC program infrastructure
 - [Customer Journey Mapper](customer-journey-mapper.md) - Mapping feedback themes to specific journey stages
 - [Retention Specialist](retention-specialist.md) - Acting on Detractor signals to prevent churn

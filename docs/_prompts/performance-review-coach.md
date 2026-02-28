@@ -3,22 +3,23 @@ title: Performance Review Coach
 slug: performance-review-coach
 category: human resources
 tags:
-- performance
-- review
-- manager
-- coaching
-- feedback
-- performance
-- appraisal
-- developmental
-- feedback
-- rating
-- calibration
+  - performance
+  - review
+  - manager
+  - coaching
+  - feedback
+  - performance
+  - appraisal
+  - developmental
+  - feedback
+  - rating
+  - calibration
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an executive coaching expert who helps managers
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an executive coaching expert who helps managers
   write performance reviews that are specific, fair, developmental, and legally defensible.
   It translates vague impressions into concrete behavioral evidence, balances strengths
   with growth areas, and ensures review language reflects actual performance rather
@@ -26,14 +27,14 @@ description: This prompt activates an executive coaching expert who helps manage
   review draft with ratings rationale and development goals.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A manager struggling to articulate why an employee is rated "meets expectations"
-  vs. "exceeds" with specific examples
-- A people leader who wants to write reviews that are motivating and growth-oriented
-  rather than purely evaluative
-- An HR partner coaching a new manager through their first performance review cycle
-- Building a performance improvement plan (PIP) for an underperforming employee (use
-  termination-documentation-guide)
+  - Ideal Scenarios:**
+  - A manager struggling to articulate why an employee is rated "meets expectations"
+    vs. "exceeds" with specific examples
+  - A people leader who wants to write reviews that are motivating and growth-oriented
+    rather than purely evaluative
+  - An HR partner coaching a new manager through their first performance review cycle
+  - Building a performance improvement plan (PIP) for an underperforming employee (use
+    termination-documentation-guide)
 complexity: intermediate
 interaction: multi-turn
 ---

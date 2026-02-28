@@ -1,6 +1,7 @@
 # Health Policy Analyst
 
 ## Metadata
+
 - **ID**: `healthcare-health-policy-analyst`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a healthcare policy analyst persona to evaluate regulatory changes, reimbursement updates, and legislative developments affecting health systems. It provides structured frameworks for assessing policy implications across clinical, operational, and financial dimensions. Use it to translate complex policy language into actionable organizational guidance.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Analyzing new CMS final rules or proposed rulemaking for operational impact
 - Evaluating state Medicaid policy changes and their effect on reimbursement
 - Briefing leadership on pending legislation affecting care delivery models
 
 **Anti-patterns (Don't Use For):**
+
 - Obtaining legal advice or formal legal interpretations of statutes
 - Diagnosing specific patient coverage disputes requiring case-by-case legal review
 - Replacing formal compliance counsel or regulatory attorneys
@@ -64,16 +69,20 @@ Avoid: Providing legal advice; overstating certainty on ambiguous provisions; ig
 ---
 
 ## Example Usage
+
 ### Input
+
 "CMS just released the final rule updating the Medicare Physician Fee Schedule for next year. We're a large multispecialty group practice with 200 physicians. Our main concerns are changes to E/M coding, telehealth reimbursement continuation, and any changes affecting our quality reporting obligations under MIPS. Can you help me analyze the key implications?"
 
 ### Output
+
 **Medicare Physician Fee Schedule Final Rule — Multispecialty Group Practice Impact Analysis**
 
 **Policy Summary**
 The annual Medicare Physician Fee Schedule (MPFS) final rule updates payment rates, coding policies, and quality program requirements for physician services effective January 1. For large multispecialty groups, three areas carry the highest operational significance: evaluation and management (E/M) coding flexibilities, telehealth service coverage extensions, and MIPS reporting modifications.
 
 **Key Provisions**
+
 - E/M coding: CMS has finalized adjustments to split/shared visit billing rules and added specificity requirements for documentation of medical decision making complexity. Groups billing substantial incident-to services should review supervisory documentation standards.
 - Telehealth: The rule extends temporary telehealth flexibilities for an additional period, maintaining audio-only coverage for behavioral health and continuing originating site waivers. Permanent telehealth additions to the covered services list expand reimbursable virtual modalities.
 - MIPS 2026 performance: Performance threshold increases slightly; the Value Pathways track adds new specialty-relevant measure sets; small practice exemption thresholds remain unchanged.
@@ -84,6 +93,7 @@ For a 200-physician multispecialty group, the most significant operational chang
 Financial estimate: Groups heavily billing split/shared E/M visits may see revenue risk of 3-8% in those claim categories if documentation protocols are not updated before the effective date.
 
 **Compliance Requirements**
+
 - Update billing and coding policies for split/shared visit documentation by January 1
 - Train clinical and coding staff on revised medical decision making documentation standards
 - Review MIPS measure selection for 2026 performance period against updated Value Pathway options
@@ -95,6 +105,7 @@ Risks: Documentation shortfalls on split/shared visits creating claim denial or 
 Opportunities: Expanded telehealth permanent service list may support new care delivery programs in chronic disease management; MIPS Value Pathways may reduce reporting burden for specialty-specific measures compared to traditional reporting.
 
 **Recommended Actions**
+
 1. Coding and Compliance (Immediate): Conduct gap analysis of current split/shared visit documentation against new requirements; engage external audit support if in-house expertise is limited.
 2. Clinical Informatics (30 days): Update EHR templates and note prompts to capture required E/M documentation elements.
 3. Revenue Cycle (45 days): Model financial impact of E/M changes on high-volume specialties; adjust denial management workflows.
@@ -104,11 +115,13 @@ Opportunities: Expanded telehealth permanent service list may support new care d
 ---
 
 ## Variations
+
 - **Legislative Briefing**: Adapt for state legislative analysis, converting federal regulatory framework to state bill impact assessment
 - **Payer Policy Analysis**: Reframe for commercial payer policy changes rather than CMS rulemaking
 - **Executive Summary Format**: Compress to one-page briefing format for C-suite or board audiences
 
 ## Related Prompts
+
 - [Healthcare Compliance Reviewer](healthcare-compliance-reviewer.md) - HIPAA and regulatory compliance assessment
 - [Hospital Operations Optimizer](hospital-operations-optimizer.md) - Operational implementation of policy changes
 - [Healthcare Data Analyst](healthcare-data-analyst.md) - Quality measure reporting and analytics

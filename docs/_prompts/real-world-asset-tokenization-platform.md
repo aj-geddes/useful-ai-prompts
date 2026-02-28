@@ -3,31 +3,32 @@ title: Real-World Asset Tokenization Platform
 slug: real-world-asset-tokenization-platform
 category: blockchain/tokenization
 tags:
-- asset
-- tokenization
-- real
-- estate
-- fractional
-- ownership
-- investment
-- platform
-- securities
-- RWA
+  - asset
+  - tokenization
+  - real
+  - estate
+  - fractional
+  - ownership
+  - investment
+  - platform
+  - securities
+  - RWA
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs platforms for tokenizing real-world assets including real estate,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs platforms for tokenizing real-world assets including real estate,
   art, commodities, and businesses to enable fractional ownership and enhanced liquidity.
   Covers security token architecture, regulatory compliance (SEC, MiFID), asset management
   workflows, investor platforms, and secondary market infrastructure.
 layout: prompt
 use_cases:
-- Building real estate tokenization platforms for fractional investment
-- Creating security token offerings for alternative assets
-- Designing investor platforms with KYC/AML compliance
-- Implementing secondary markets for tokenized securities
-- Developing asset management systems for tokenized portfolios
+  - Building real estate tokenization platforms for fractional investment
+  - Creating security token offerings for alternative assets
+  - Designing investor platforms with KYC/AML compliance
+  - Implementing secondary markets for tokenized securities
+  - Developing asset management systems for tokenized portfolios
 complexity: advanced
 interaction: multi-turn
 ---
@@ -42,17 +43,19 @@ Real-world asset tokenization bridges traditional finance and blockchain by repr
 
 <input_handling>
 Required:
+
 - Asset types to tokenize (real estate, art, commodities, businesses)
 - Target investors (retail, accredited, institutional)
 - Geographic focus and regulatory jurisdictions
 - Investment minimums and fractional ownership goals
 
 Optional (with defaults):
+
 - Blockchain platform (default: Ethereum with compliance layer)
 - Revenue model (default: platform fees + management fees)
 - Budget and timeline (default: $1-2M, 18 months)
 - Existing partnerships (default: starting from scratch)
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive asset tokenization platform.
@@ -63,28 +66,31 @@ Design comprehensive asset tokenization platform.
 4. Create regulatory compliance framework for target jurisdictions
 5. Develop secondary market infrastructure with liquidity mechanisms
 6. Plan phased implementation with regulatory milestones
-</task>
+   </task>
 
 <output_specification>
 **Asset Tokenization Platform Design**
+
 - Format: Technical and regulatory architecture
 - Length: 1500-2500 words
 - Must include: Token architecture, compliance framework, investor platform, asset management system, trading infrastructure, timeline, revenue model
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Token standards comply with securities regulations
 - KYC/AML integration meets regulatory requirements
 - Asset valuation and due diligence processes are rigorous
 - Secondary market provides genuine liquidity improvement
 
 Avoid:
+
 - Ignoring securities law classification requirements
 - Underestimating custody and compliance costs
 - Overlooking ongoing asset management needs
 - Generic tokenization without investor protections
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure securities law compliance in all target jurisdictions

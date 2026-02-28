@@ -311,6 +311,7 @@ fun DetailsScreen(itemId: String, navController: NavController) {
 ## Best Practices
 
 ### ✅ DO
+
 - Use Kotlin for all new Android code
 - Implement MVVM with Jetpack libraries
 - Use Jetpack Compose for UI development
@@ -323,6 +324,7 @@ fun DetailsScreen(itemId: String, navController: NavController) {
 - Follow Android design guidelines
 
 ### ❌ DON'T
+
 - Store tokens in SharedPreferences
 - Make network calls on main thread
 - Ignore lifecycle management

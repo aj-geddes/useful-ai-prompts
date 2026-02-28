@@ -1,6 +1,7 @@
 # Systems Engineering Expert
 
 ## Metadata
+
 - **ID**: `engineering-systems-engineering-expert`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a systems engineering specialist who applies Model-Based S
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Decomposing high-level customer requirements into verifiable system and subsystem specifications
 - Managing interface definition and control between multiple engineering teams or contractors
 - Planning system integration sequences and test strategies for complex multi-element systems
 
 **Anti-patterns (Don't Use For):**
+
 - Single-discipline detailed design (use domain-specific engineering prompts for mechanical, electrical, or software design)
 - Post-delivery field service and maintenance planning (different lifecycle phase)
 
@@ -133,14 +136,14 @@ System boundary: Autonomous Ground Vehicle (AGV). External systems: Farm Managem
 
 **Stakeholder Requirements (EARS Notation)**
 
-| ID | Type | Requirement |
-|----|------|-------------|
-| SR-01 | Ubiquitous | The AGV shall navigate a defined field boundary at a minimum speed of 3 km/h |
-| SR-02 | Event-driven | When the AGV detects an obstacle within 2m, the AGV shall stop within 0.5s |
-| SR-03 | Ubiquitous | The AGV shall transmit position and operational status to the FMS at minimum 1 Hz |
+| ID    | Type         | Requirement                                                                                         |
+| ----- | ------------ | --------------------------------------------------------------------------------------------------- |
+| SR-01 | Ubiquitous   | The AGV shall navigate a defined field boundary at a minimum speed of 3 km/h                        |
+| SR-02 | Event-driven | When the AGV detects an obstacle within 2m, the AGV shall stop within 0.5s                          |
+| SR-03 | Ubiquitous   | The AGV shall transmit position and operational status to the FMS at minimum 1 Hz                   |
 | SR-04 | State-driven | While operating in autonomous mode, the AGV shall not require human intervention for path execution |
-| SR-05 | Unwanted | The AGV shall not operate when battery state of charge falls below 15% |
-| SR-06 | Ubiquitous | The AGV shall achieve field navigation with position accuracy of ±0.5m (CEP95) |
+| SR-05 | Unwanted     | The AGV shall not operate when battery state of charge falls below 15%                              |
+| SR-06 | Ubiquitous   | The AGV shall achieve field navigation with position accuracy of ±0.5m (CEP95)                      |
 
 **Functional Decomposition**
 
@@ -150,12 +153,12 @@ F3: Communicate → F3.1: Transmit telemetry, F3.2: Receive mission commands, F3
 
 **Interface Summary**
 
-| Interface | From | To | Key Attributes |
-|-----------|------|----|--------------|
-| IF-01 | Vehicle Platform | Perception System | CAN bus, 1Mbps, position/speed/actuator feedback at 10Hz |
-| IF-02 | Perception System | Vehicle Platform | Drive commands (speed, steering), 10Hz minimum |
-| IF-03 | Comms Subsystem | Farm Management System | LTE/Wi-Fi, JSON telemetry, REST API, 1Hz minimum |
-| IF-04 | GPS Antenna | Perception System | NMEA 0183, RS-232, 5Hz position fix |
+| Interface | From              | To                     | Key Attributes                                           |
+| --------- | ----------------- | ---------------------- | -------------------------------------------------------- |
+| IF-01     | Vehicle Platform  | Perception System      | CAN bus, 1Mbps, position/speed/actuator feedback at 10Hz |
+| IF-02     | Perception System | Vehicle Platform       | Drive commands (speed, steering), 10Hz minimum           |
+| IF-03     | Comms Subsystem   | Farm Management System | LTE/Wi-Fi, JSON telemetry, REST API, 1Hz minimum         |
+| IF-04     | GPS Antenna       | Perception System      | NMEA 0183, RS-232, 5Hz position fix                      |
 
 **Integration Sequence**
 

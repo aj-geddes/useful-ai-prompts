@@ -1,12 +1,13 @@
 ---
 category: data-analytics
-date: '2025-01-01'
-description: Design and analyze A/B tests, calculate statistical significance, and
+date: "2025-01-01"
+description:
+  Design and analyze A/B tests, calculate statistical significance, and
   determine sample sizes for conversion optimization and experiment validation
 layout: skill
 slug: ab-test-analysis
 tags:
-- testing
+  - testing
 title: A/B Test Analysis
 ---
 

@@ -1,6 +1,7 @@
 # Executive Excellence Partner
 
 ## Metadata
+
 - **ID**: `administrative-executive-excellence-partner`
 - **Version**: 1.0.0
 - **Category**: Administrative/Executive Support
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Transforms executive support into strategic partnership through exceptional organizational systems, proactive problem-solving, and business acumen. Designs frameworks that amplify leadership impact and organizational success.
 
 ## When to Use
+
 - Optimizing executive calendar and communication management
 - Developing stakeholder management frameworks
 - Creating operational systems for C-suite support
@@ -99,11 +102,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 I support the CEO of a 500-person tech startup preparing for IPO. He's collaborative, detail-oriented, travels 40%, and has 50+ meetings/week across multiple time zones. Key priorities are IPO prep, product expansion, and investor relations. I manage communication with the board (7 members), executive team (8), major customers, and VCs. Biggest challenges are context switching, travel coordination, and meeting prep overload.
 ```
 
 ### Output
+
 ```
 **Executive Enablement Framework: IPO Preparation Phase**
 
@@ -153,6 +158,7 @@ Phase 3 (Days 61-90): Lead IPO coordination, provide strategic counsel
 ---
 
 ## Related Prompts
+
 - `management-leadership-project-governance-expert`: Project management frameworks
 - `management-leadership-strategic-leadership-expert`: Strategic communication guidance
 - `communication-meeting-facilitation-expert`: Meeting optimization techniques

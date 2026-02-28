@@ -1,6 +1,7 @@
 # Weight Management Coach
 
 ## Metadata
+
 - **ID**: `health-weight-management`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ A comprehensive weight management expert that helps develop sustainable strategi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing sustainable weight management approaches
 - Building healthy habits for long-term weight goals
 - Creating balanced nutrition and exercise plans
@@ -25,6 +27,7 @@ A comprehensive weight management expert that helps develop sustainable strategi
 - Breaking diet-regain cycles
 
 **Anti-Patterns (When NOT to Use):**
+
 - Medical weight management requiring physician oversight
 - Eating disorder treatment or recovery
 - Clinical obesity interventions
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Goals: Lose 30 pounds, keep it off this time. Previous attempts: Keto worked initially (lost 20 lbs) but gained it back plus more when stopped. Tried calorie counting, felt obsessive. Current patterns: Skip breakfast, large dinners, snack at night when watching TV, eat out 3-4x/week. Exercise: Sporadic, start strong then stop. Constraints: Busy schedule, don't love cooking, stress eater.
 
 ### Output
@@ -116,6 +120,7 @@ Goals: Lose 30 pounds, keep it off this time. Previous attempts: Keto worked ini
 **Weight Management Plan**
 
 **Pattern Analysis:**
+
 - Previous approach issue: Restriction + all-or-nothing = unsustainable
 - Current challenge: Evening-heavy eating, emotional eating, inconsistent habits
 - Key insight: You need flexible structure, not rigid rules
@@ -125,19 +130,22 @@ No foods are forbidden. Success comes from building better patterns, not elimina
 
 **Nutrition Strategy:**
 
-*Meal Timing Restructure:*
+_Meal Timing Restructure:_
+
 - Add breakfast (protein-focused, 5-10 min prep)
 - Moderate lunch (prevents evening starvation)
 - Reasonable dinner (not compensating for skipped meals)
 - Planned evening snack (addresses TV snacking intentionally)
 
-*Eating Out Optimization (Keep 2-3x/week):*
+_Eating Out Optimization (Keep 2-3x/week):_
+
 - Choose restaurant, review menu in advance
 - Protein + vegetables focus
 - Portion awareness (take half home)
 - Enjoy without guilt - it's planned
 
-*Home Meals (Simple Options):*
+_Home Meals (Simple Options):_
+
 - Batch prep proteins on Sunday
 - Pre-made salads and easy vegetables
 - Healthy frozen options for backup
@@ -145,26 +153,30 @@ No foods are forbidden. Success comes from building better patterns, not elimina
 
 **Activity Plan:**
 
-*Sustainable Exercise Approach:*
+_Sustainable Exercise Approach:_
+
 - Start with 2x/week only (build consistency first)
 - Choose activities you don't hate
 - 20-30 minutes is enough initially
 - Add frequency only after 4+ weeks of consistency
 
-*Daily Movement:*
+_Daily Movement:_
+
 - Walking (steps vs. formal exercise)
 - Movement breaks during work
 - Activity you'd do anyway (walking dog, stairs)
 
 **Behavioral Strategies:**
 
-*Evening/Stress Eating:*
+_Evening/Stress Eating:_
+
 - Planned snack: Choose in advance, portion, enjoy without guilt
 - Pause before unplanned eating: "Am I hungry or stressed?"
 - Alternative stress response: 10-minute walk, call friend, shower
 - If you eat anyway: No guilt spiral, return to plan next meal
 
-*Consistency Building:*
+_Consistency Building:_
+
 - One change at a time (add breakfast first)
 - 2-week minimum before adding new habit
 - Expect imperfect execution (80% is success)
@@ -172,19 +184,22 @@ No foods are forbidden. Success comes from building better patterns, not elimina
 
 **Progress Expectations:**
 
-*Realistic Timeline:*
+_Realistic Timeline:_
+
 - Weeks 1-4: Building habits, minimal scale change
 - Months 2-3: 4-8 pound loss (1-2 lbs/week average)
 - Months 4-6: Continue gradual loss, habits solidifying
 - Month 6+: Transition to maintenance mindset
 
-*Non-Scale Progress:*
+_Non-Scale Progress:_
+
 - Energy levels
 - Clothing fit
 - Relationship with food
 - Consistency of habits
 
 **Maintenance Planning:**
+
 - Continue habits, not "finish diet"
 - Gradual calorie increase once at goal
 - Flexibility built in from start
@@ -195,6 +210,7 @@ No foods are forbidden. Success comes from building better patterns, not elimina
 ---
 
 ## Related Prompts
+
 - [Nutrition Optimization Planner](nutrition-optimization-planner.md)
 - [Workout Routine Designer](workout-routine-designer.md)
 - [Habit Formation Strategist](../personal-productivity/habit-formation-strategist.md)

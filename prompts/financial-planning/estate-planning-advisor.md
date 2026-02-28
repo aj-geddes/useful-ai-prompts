@@ -1,6 +1,7 @@
 # Estate Planning Advisor
 
 ## Metadata
+
 - **ID**: `financial-planning-estate-planning`
 - **Version**: 2.0.0
 - **Category**: Financial Planning/Estate
@@ -18,6 +19,7 @@ Guide comprehensive estate planning strategies that protect assets, minimize tax
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating initial estate planning framework
 - Reviewing existing estate plans for updates needed
 - Understanding estate planning document requirements
@@ -25,6 +27,7 @@ Guide comprehensive estate planning strategies that protect assets, minimize tax
 - Coordinating beneficiary designations across accounts
 
 **Anti-Patterns (When NOT to Use):**
+
 - Legal document drafting (requires attorney)
 - Tax filing or tax return preparation
 - Specific legal advice for disputes
@@ -44,16 +47,18 @@ Estate planning ensures assets transfer according to your wishes while minimizin
 
 <input_handling>
 Required Inputs:
+
 - Family situation (spouse, children, dependents)
 - Major assets and approximate values
 - Primary estate planning concerns
 
 Optional Inputs (Inferred if not provided):
+
 - Estate tax exposure (assess from asset level vs. exemption)
 - Complexity level needed (match to family and asset situation)
 - Healthcare directive preferences (include as standard recommendation)
 - Existing documents in place
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive estate planning framework with document recommendations and priorities.
@@ -69,6 +74,7 @@ Step 5: Create implementation timeline with review triggers and professional ref
 Format: Estate Planning Framework with action plan
 Length: 700-1000 words
 Structure:
+
 - Situation Assessment with complexity rating
 - Essential Documents Checklist with priority levels
 - Document Details and purposes
@@ -76,21 +82,23 @@ Structure:
 - Guardian and Healthcare Planning
 - Beneficiary Designation review
 - Implementation Timeline
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Recommendations tailored to specific situation complexity
 - Prioritization of most critical protections first
 - Both incapacity and death planning addressed
 - Clear review triggers and update recommendations
 
 Outputs must avoid:
+
 - Providing specific legal advice or document language
 - Over-complicating simple estate situations
 - Missing critical protections (healthcare directives, POA)
 - Ignoring family dynamics and potential conflict sources
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Always recommend consultation with estate planning attorney
@@ -104,6 +112,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Married, two kids ages 8 and 12. Home worth $500K, retirement accounts $400K, life insurance $1M. Main concerns: kids are protected if something happens to both of us, avoiding family fights over assets."
 
 ### Output
@@ -111,13 +120,14 @@ Outputs must avoid:
 **Estate Planning Framework**
 
 **Situation Assessment**
+
 - Estate Size: ~$1.9M (below federal estate tax threshold of $13.61M)
 - Complexity: Moderate (minor children require guardianship planning)
 - Priority: Child protection and clear asset distribution
 
 **Essential Documents Checklist**
 
-*Priority 1: Immediate Protection*
+_Priority 1: Immediate Protection_
 | Document | Purpose | Status |
 |----------|---------|--------|
 | Last Will & Testament (both spouses) | Asset distribution, executor naming | Critical |
@@ -125,7 +135,7 @@ Outputs must avoid:
 | Healthcare Directive | Medical decisions if incapacitated | Critical |
 | Durable Power of Attorney | Financial decisions if incapacitated | Critical |
 
-*Priority 2: Enhanced Protection*
+_Priority 2: Enhanced Protection_
 | Document | Purpose | Recommendation |
 |----------|---------|----------------|
 | Revocable Living Trust | Avoid probate, privacy, control | Recommended |
@@ -134,30 +144,35 @@ Outputs must avoid:
 
 **Document Details**
 
-*Wills*
+_Wills_
+
 - Include: Asset distribution, executor (suggest spouse primary, trusted relative backup)
 - Minor children: Assets held in trust until age 25-30
 - Guardian nomination: Name primary and backup guardians
 - Specific bequests: Any particular items to specific people
 
-*Living Trust Benefits*
+_Living Trust Benefits_
+
 - Avoids probate (public, time-consuming process)
 - Provides continuity if incapacitated
 - Controls inheritance timing for children
 - Maintains privacy of asset details
 
-*Healthcare Directive*
+_Healthcare Directive_
+
 - Living will: End-of-life treatment preferences
 - Healthcare proxy: Who makes medical decisions
 - Both spouses need separate documents
 - Discuss preferences with each other and agents
 
-*Power of Attorney*
+_Power of Attorney_
+
 - Financial decisions if incapacitated
 - Consider "springing" (activates only upon incapacity)
 - Name spouse primary, trusted backup if spouse unavailable
 
 **Tax Considerations**
+
 - Current estate: Well below federal threshold ($13.61M)
 - State estate tax: Check your state's threshold
 - Step-up in basis: Heirs receive assets at current value (reduces capital gains)
@@ -166,18 +181,21 @@ Outputs must avoid:
 
 **Guardian Planning**
 
-*Key Decisions*
+_Key Decisions_
+
 1. Who would raise your children? (Consider values, location, financial stability)
 2. Backup guardian if first choice unavailable?
 3. Same person as financial trustee, or separate?
 
-*Financial vs. Personal Guardian*
+_Financial vs. Personal Guardian_
+
 - Can name different people for each role
 - Personal: Raises children day-to-day
 - Financial: Manages inheritance money
 - Separation prevents conflicts and protects assets
 
 **Conflict Prevention Strategies**
+
 - Clear, specific language in documents
 - Letter of intent explaining wishes
 - Equal treatment of children (with explanation if different)
@@ -191,32 +209,37 @@ Outputs must avoid:
 | Life insurance | Spouse | Trust for children |
 | Bank accounts | POD to spouse | Children or trust |
 
-*Important*: Beneficiary designations override wills - review and update these!
+_Important_: Beneficiary designations override wills - review and update these!
 
 **Implementation Timeline**
 
-*Month 1*
+_Month 1_
+
 - Discuss guardian preferences with spouse
 - Contact estate planning attorney
 - Gather asset information
 
-*Month 2-3*
+_Month 2-3_
+
 - Attorney drafts documents
 - Review and sign documents
 - Fund trust (if using)
 
-*Month 4*
+_Month 4_
+
 - Update beneficiary designations
 - Inform executors/trustees of roles
 - Store documents safely (fireproof safe, attorney)
 
 **Review Triggers**
+
 - Major life changes (birth, death, divorce, marriage)
 - Significant asset changes (+/- $250K)
 - Every 3-5 years regardless
 - Law changes affecting estate taxes
 
 **Next Steps**
+
 1. Have guardian conversation with spouse
 2. Schedule consultation with estate planning attorney
 3. Gather account statements and policy documents

@@ -3,28 +3,29 @@ title: Personal Budget Optimizer
 slug: personal-budget-optimizer
 category: financial planning
 tags:
-- budgeting
-- personal-finance
-- expense-tracking
-- financial-goals
-- money-management
-- debt-payoff
+  - budgeting
+  - personal-finance
+  - expense-tracking
+  - financial-goals
+  - money-management
+  - debt-payoff
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A comprehensive personal finance coach that creates realistic budgets,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A comprehensive personal finance coach that creates realistic budgets,
   optimizes expenses, and builds sustainable money management systems. This prompt
   analyzes spending patterns, identifies high-impact optimization opportunities, and
   develops goal-aligned financial strategies that account for behavioral psychology
   and real-world constraints.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Creating or restructuring a personal budget from scratch
-- Identifying expense reduction opportunities without sacrificing quality of life
-- Developing debt payoff strategies (credit cards, student loans, etc.)
-- Building emergency fund and savings plans with realistic timelines
+  - Ideal Scenarios:**
+  - Creating or restructuring a personal budget from scratch
+  - Identifying expense reduction opportunities without sacrificing quality of life
+  - Developing debt payoff strategies (credit cards, student loans, etc.)
+  - Building emergency fund and savings plans with realistic timelines
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -39,17 +40,19 @@ Most budgets fail because they are either too restrictive (leading to burnout) o
 
 <input_handling>
 Required information:
+
 - Monthly take-home income (after taxes)
 - Major monthly expenses (housing, transportation, food, utilities)
 - Current debts with interest rates
 - Primary financial goals (emergency fund, debt payoff, savings targets)
 
 Infer if not provided:
+
 - Expense categories: Use standard breakdown based on income level
 - Savings rate target: Start with 20%, adjust based on debt situation
 - Emergency fund target: 3-6 months of expenses based on job stability
 - Lifestyle flexibility: Assume moderate unless extremely tight budget stated
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized budget and financial optimization plan:
@@ -60,12 +63,13 @@ Create a personalized budget and financial optimization plan:
 4. DEVELOP DEBT STRATEGY: Choose and implement optimal debt payoff approach (avalanche vs. snowball)
 5. BUILD TRACKING SYSTEM: Design simple, sustainable monitoring process that fits stated time availability
 6. CREATE BEHAVIORAL SUPPORTS: Develop strategies for common spending triggers and challenges
-</task>
+   </task>
 
 <output_specification>
 Format: Categorized budget with optimization recommendations
 Length: 400-600 words
 Structure:
+
 - Monthly Income Allocation (categorized with percentages)
 - Expense Optimization Opportunities (specific cuts with savings amounts)
 - Goal-Based Savings Allocation (emergency, debt, future goals)
@@ -74,14 +78,16 @@ Structure:
 - Behavioral Strategies for Success
 
 Required elements:
+
 - Specific dollar amounts for each category
 - Quantified savings from recommended optimizations
 - Realistic timeline for financial goals
 - Simple tracking method matching stated time availability
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses will:
+
 - Create realistic budgets that account for actual lifestyle
 - Prioritize high-impact expense optimizations over small inconveniences
 - Balance debt payoff with emergency fund building
@@ -89,12 +95,13 @@ Excellent responses will:
 - Address psychological aspects of spending behavior
 
 Avoid:
+
 - Unrealistic austerity budgets that cannot be sustained
 - Ignoring psychological aspects of spending habits
 - Rigid percentage rules without customization to situation
 - Complex tracking systems requiring excessive daily effort
 - Shaming language about past spending decisions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Recommendations should be actionable within stated income

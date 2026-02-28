@@ -3,25 +3,26 @@ title: Compliance Audit Expert
 slug: compliance-audit-expert
 category: evaluation & assessment/compliance
 tags:
-- compliance-audit
-- regulatory
-- risk-management
-- gap-analysis
+  - compliance-audit
+  - regulatory
+  - risk-management
+  - gap-analysis
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Conduct compliance audits to evaluate organizational adherence to regulations,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Conduct compliance audits to evaluate organizational adherence to regulations,
   standards, and policies. Identifies gaps, assesses risks, and creates remediation
   plans across various regulatory frameworks including SOC 2, GDPR, HIPAA, PCI-DSS,
   and ISO 27001.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for regulatory audits or certifications
-- Conducting internal compliance assessments
-- Identifying gaps in control frameworks
-- Creating remediation roadmaps with timelines
+  - Ideal scenarios:**
+  - Preparing for regulatory audits or certifications
+  - Conducting internal compliance assessments
+  - Identifying gaps in control frameworks
+  - Creating remediation roadmaps with timelines
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Compliance audits assess whether organizations meet regulatory requirements and 
 
 <input_handling>
 Required inputs:
+
 - Regulations or standards being audited
 - Organization type and industry
 - Scope of the audit (systems, processes, data)
 
 Infer if not provided:
+
 - Current compliance maturity (assume moderate)
 - Available documentation (request key documents)
 - Timeline urgency (assume reasonable timeframe)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive compliance audit framework with gap analysis and remediation plan.
@@ -60,6 +63,7 @@ Step 5: Design monitoring procedures for ongoing compliance
 Format: Framework with gap analysis and remediation plan
 Length: 800-1100 words
 Structure:
+
 - Audit scope (criteria, systems, period)
 - Control objectives mapping (TSC/requirement area, objective, current state, gap level)
 - Gap analysis (critical and high priority gaps with evidence requirements)
@@ -67,10 +71,11 @@ Structure:
 - Policy documentation required
 - Monitoring recommendations
 - Readiness assessment
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Map controls accurately to regulatory requirements
 - Provide clear, testable audit procedures
 - Rate gaps by risk severity and remediation effort
@@ -78,12 +83,13 @@ Excellent outputs:
 - Include evidence requirements for each control
 
 Avoid:
+
 - Generic checklists without organizational context
 - Missing risk-based prioritization
 - Overly complex remediation requirements
 - Ignoring operational feasibility
 - Recommendations without evidence requirements
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Note when legal review is required for regulatory interpretation

@@ -1,6 +1,7 @@
 # Self-Discipline Developer
 
 ## Metadata
+
 - **ID**: `personal-growth-self-discipline`
 - **Version**: 1.1.0
 - **Category**: Personal Growth
@@ -18,6 +19,7 @@ A self-discipline coach that helps you build willpower, develop consistent habit
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Breaking cycles of starting strong then abandoning routines after 2-3 weeks
 - Building consistent daily habits that stick beyond initial motivation
 - Managing temptations and immediate gratifications effectively
@@ -25,6 +27,7 @@ A self-discipline coach that helps you build willpower, develop consistent habit
 - Recovering from discipline failures without complete restart
 
 **Anti-patterns (when not to use):**
+
 - Addiction treatment requiring clinical intervention
 - Clinical behavioral disorders needing professional diagnosis
 - Eating disorders or compulsive behaviors requiring therapy
@@ -109,22 +112,25 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Current discipline: 5/10, good intentions but struggle with consistency. Areas needing discipline: exercise, eating habits, screen time, productivity. Pattern: Start strong, hit a rough patch after 2-3 weeks, make excuses, abandon routine, feel guilty, restart too ambitiously. Main temptations: social media, comfort food when stressed, staying up late. I want to break this cycle.
 
 ### Output
+
 You understand what you need to do but face the common consistency gap. Your awareness of the pattern is actually a strength we can build on. Here's your systematic plan:
 
 **Discipline Profile Analysis**
+
 - Proven Strengths: Strong starts (you can initiate), clear goals (you know what matters), pattern awareness (you recognize the cycle)
 - Specific Gaps: Evening willpower depletion, stress-triggered escapes to comfort, all-or-nothing restart mentality
 - Critical Insight: You don't lack discipline entirely--you lack sustainable discipline after the initial motivation fades
 
 **Breaking Your Failure Cycle**
 
-*Current Cycle:*
+_Current Cycle:_
 High motivation → Ambitious start → Success (week 1-2) → Rough patch → Excuses → Abandon → Guilt → Even more ambitious restart
 
-*New Pattern:*
+_New Pattern:_
 Sustainable start → Expected challenges → Prepared responses → Minor adjustments → Continued progress → Gradual expansion
 
 Key shift: Treat rough patches as expected and planned for, not as failures.
@@ -133,19 +139,22 @@ Key shift: Treat rough patches as expected and planned for, not as failures.
 
 Start so small you can't fail, then expand 2% weekly:
 
-*Exercise:*
+_Exercise:_
+
 - Week 1-2: 5 minutes daily (walk around the block or 10 squats)
 - Week 3-4: 10 minutes daily
 - Week 5-6: 15 minutes daily
 - Week 7-8: 20 minutes with variety
 
-*Screen Time:*
+_Screen Time:_
+
 - Week 1-2: 5 minutes of reading before touching phone in morning
 - Week 3-4: Phone in another room during meals
 - Week 5-6: No screens 30 minutes before bed
 - Week 7-8: Designated phone-free hours (2 hours daily)
 
-*Eating:*
+_Eating:_
+
 - Week 1-2: Add one vegetable to lunch daily
 - Week 3-4: Prepare healthy snack option before hunger hits
 - Week 5-6: One meal per day fully planned
@@ -163,22 +172,26 @@ The goal isn't never giving in--it's making conscious choices rather than automa
 
 **8-Week Progressive Plan**
 
-*Weeks 1-2: Foundation*
+_Weeks 1-2: Foundation_
+
 - Focus: ONE keystone habit only (5-minute morning movement)
 - Practice PAUSE technique 3x daily even when not tempted (build the muscle)
 - Success metric: 5/7 days completing the one habit
 
-*Weeks 3-4: Expansion*
+_Weeks 3-4: Expansion_
+
 - Add second small habit (phone away during meals)
 - Remove ONE temptation from environment (delete most-used social app)
 - Success metric: Both habits 5/7 days
 
-*Weeks 5-6: Reinforcement*
+_Weeks 5-6: Reinforcement_
+
 - Add third habit (evening screen cutoff)
 - Create visual tracking (calendar with X's)
 - Success metric: 3 habits averaging 5/7 days each
 
-*Weeks 7-8: Sustainability*
+_Weeks 7-8: Sustainability_
+
 - Expand habit durations slightly
 - Develop "minimum viable habit" versions for bad days
 - Establish weekly review practice
@@ -186,17 +199,20 @@ The goal isn't never giving in--it's making conscious choices rather than automa
 
 **Recovery Protocol**
 
-*After Missing 1 Day:*
+_After Missing 1 Day:_
+
 - Action: No analysis needed, simply resume tomorrow
 - Mindset: "Missing one day is normal. Missing two in a row starts a new habit."
 - Focus: Show up tomorrow, even with minimum viable version
 
-*After Missing 2-3 Days:*
+_After Missing 2-3 Days:_
+
 - Action: Lower the bar temporarily (return to Week 1 versions)
 - Review: What triggered the break? Stress? Schedule change? Environment?
 - Recommit: Do minimum viable for 3 straight days before expanding
 
-*After Missing a Week or More:*
+_After Missing a Week or More:_
+
 - Action: Treat as complete restart with zero pressure
 - Review: Is this habit actually important to me? Should I modify the goal?
 - Restart: Begin at 2% level again without self-criticism

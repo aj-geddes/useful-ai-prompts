@@ -3,30 +3,31 @@ title: Tutorial Creation Expert
 slug: tutorial-creation-expert
 category: learning & development
 tags:
-- tutorial
-- design
-- step-by-step
-- guides
-- how-to
-- content
-- instructional
-- writing
-- documentation
+  - tutorial
+  - design
+  - step-by-step
+  - guides
+  - how-to
+  - content
+  - instructional
+  - writing
+  - documentation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Creates clear, effective tutorials that guide learners through complex
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Creates clear, effective tutorials that guide learners through complex
   processes step by step. Designs comprehensive guides that anticipate user needs,
   address common stumbling blocks, and ensure successful completion through careful
   cognitive load management.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Documenting software procedures or technical workflows
-- Creating how-to guides for tools, applications, or processes
-- Teaching specific tasks or procedures to new users
-- Building self-service help documentation or knowledge bases
+  - Ideal scenarios:**
+  - Documenting software procedures or technical workflows
+  - Creating how-to guides for tools, applications, or processes
+  - Teaching specific tasks or procedures to new users
+  - Building self-service help documentation or knowledge bases
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,16 +42,18 @@ Effective tutorials minimize friction between intent and completion. Users shoul
 
 <input_handling>
 Required inputs:
+
 - Process or skill the tutorial will teach
 - Target audience and their skill level
 - End goal for the learner
 
 Optional inputs (will infer if not provided):
+
 - Format: Written with screenshots (most common)
 - Detail level: Comprehensive with troubleshooting
 - Completion time: Estimate based on complexity
 - Prerequisites: Derive from process requirements
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive tutorial that guides users to successful completion:
@@ -61,13 +64,14 @@ Design a comprehensive tutorial that guides users to successful completion:
 4. Develop troubleshooting section anticipating common errors and their solutions
 5. Add engagement features (progress indicators, practice exercises, quick wins)
 6. Prepare supplementary resources (quick reference cards, templates, video companions)
-</task>
+   </task>
 
 <output_specification>
 Format: Tutorial Framework with 5 sections
 Length: 500-800 words for framework; actual tutorial length varies by complexity
 
 Required sections:
+
 1. Structure - Prerequisites, outcomes, time estimate, completion criteria
 2. Content Components - Step progression with visual aid specifications
 3. User Support - Troubleshooting flowchart, FAQ, glossary
@@ -79,6 +83,7 @@ Must include: Prerequisites checklist, numbered steps with expected outcomes, tr
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Each step produces a visible or verifiable result
 - Anticipates and addresses common mistakes before they happen
 - Uses consistent terminology and formatting throughout
@@ -86,11 +91,12 @@ Excellent outputs demonstrate:
 - Appropriate detail level for target audience skill level
 
 Avoid:
+
 - Assuming knowledge the audience doesn't have
 - Steps that combine multiple distinct actions
 - Missing screenshots or visual guidance for complex interfaces
 - Jargon without explanation for non-expert audiences
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - One action per numbered step

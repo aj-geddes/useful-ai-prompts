@@ -1,6 +1,7 @@
 # Research Proposal Writer
 
 ## Metadata
+
 - **ID**: `academic-research-proposal-writer`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,12 +19,14 @@ Crafts compelling research proposals for academic funding, dissertation committe
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Applying for federal or foundation research grants
 - Writing a dissertation prospectus for committee approval
 - Submitting a concept paper for funding consideration
 - Developing a research protocol for IRB review
 
 **Anti-patterns (Don't Use For):**
+
 - Conducting the research itself
 - Statistical analysis planning (separate specialist)
 - Budget justification (financial officer input required)
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm writing an NSF CAREER proposal. I study how wildfire smoke affects early childhood cognitive development. My specific aims are to: (1) measure cognitive outcomes in wildfire-exposed vs. unexposed children aged 3-5, (2) identify biological pathways (neuroinflammation markers), and (3) develop a school-based mitigation intervention."
 
 ### Output
@@ -130,11 +134,11 @@ Wildfire frequency and severity in the Western United States has increased 400% 
 
 This hypothesis will be tested through three specific aims:
 
-**Aim 1**: Characterize cognitive outcomes in wildfire-exposed vs. matched unexposed children (ages 3-5) using validated neurodevelopmental assessments (Bayley-4, NIH Toolbox). *Hypothesis*: Children with >10 days of smoke exposure above 35 μg/m³ will show 5-10% lower scores on executive function and language domains compared to matched controls.
+**Aim 1**: Characterize cognitive outcomes in wildfire-exposed vs. matched unexposed children (ages 3-5) using validated neurodevelopmental assessments (Bayley-4, NIH Toolbox). _Hypothesis_: Children with >10 days of smoke exposure above 35 μg/m³ will show 5-10% lower scores on executive function and language domains compared to matched controls.
 
-**Aim 2**: Identify biological mechanisms linking smoke exposure to cognitive outcomes by measuring neuroinflammation markers (IL-6, CRP, BDNF) in a subsample (n=150). *Hypothesis*: Neuroinflammation mediates ≥30% of the exposure-outcome relationship.
+**Aim 2**: Identify biological mechanisms linking smoke exposure to cognitive outcomes by measuring neuroinflammation markers (IL-6, CRP, BDNF) in a subsample (n=150). _Hypothesis_: Neuroinflammation mediates ≥30% of the exposure-outcome relationship.
 
-**Aim 3**: Conduct a cluster-randomized trial of HEPA filtration in 20 Head Start classrooms, measuring cognitive outcomes at baseline and 6-month follow-up. *Hypothesis*: Classrooms with HEPA filtration will show ≤50% of the cognitive impact seen in control classrooms during wildfire season.
+**Aim 3**: Conduct a cluster-randomized trial of HEPA filtration in 20 Head Start classrooms, measuring cognitive outcomes at baseline and 6-month follow-up. _Hypothesis_: Classrooms with HEPA filtration will show ≤50% of the cognitive impact seen in control classrooms during wildfire season.
 
 **Significance**
 
@@ -146,11 +150,11 @@ This project is innovative in three respects: (1) it isolates wildfire-specific 
 
 **Risk Mitigation**
 
-| Risk | Likelihood | Mitigation |
-|------|-----------|------------|
-| Low wildfire activity in study years | Moderate | Multi-site design across CA, OR, WA |
-| Head Start enrollment attrition | Low | Partnership with 3 established Head Start networks |
-| Aim 1/2 results negative | Low | Aims 2 and 3 are designed to be independently informative |
+| Risk                                 | Likelihood | Mitigation                                                |
+| ------------------------------------ | ---------- | --------------------------------------------------------- |
+| Low wildfire activity in study years | Moderate   | Multi-site design across CA, OR, WA                       |
+| Head Start enrollment attrition      | Low        | Partnership with 3 established Head Start networks        |
+| Aim 1/2 results negative             | Low        | Aims 2 and 3 are designed to be independently informative |
 
 ---
 

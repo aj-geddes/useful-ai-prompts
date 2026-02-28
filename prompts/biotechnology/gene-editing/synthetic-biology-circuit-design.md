@@ -1,6 +1,7 @@
 # Synthetic Biology Circuit Design Platform
 
 ## Metadata
+
 - **ID**: `biotechnology-synthetic-biology-circuit-design`
 - **Version**: 1.0.0
 - **Category**: Biotechnology/Synthetic Biology
@@ -18,6 +19,7 @@ Designs programmable biological systems including genetic circuits, metabolic pa
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing genetic circuits for cell-based therapies
 - Engineering metabolic pathways for bioproduction
 - Building biosensors and diagnostic systems
@@ -25,6 +27,7 @@ Designs programmable biological systems including genetic circuits, metabolic pa
 - Creating logic gates for synthetic cell behavior
 
 **Anti-patterns (When NOT to Use):**
+
 - Traditional cloning or simple gene expression
 - Non-biological engineering problems
 - Basic molecular biology protocols
@@ -117,6 +120,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Design CAR-T logic gate system that activates only in presence of two tumor antigens (AND gate) with kill switch for safety. Host: primary human T cells. Goal: reduce on-target off-tumor toxicity in solid tumor therapy. Need FDA IND-ready design.
 
 ### Output
@@ -124,6 +128,7 @@ Design CAR-T logic gate system that activates only in presence of two tumor anti
 **Dual-Antigen CAR-T AND Gate System**
 
 **Circuit Architecture**
+
 ```
 Antigen 1 (CD19) --> CAR1 --> SynNotch --> NFAT(TF)
                                              |
@@ -137,6 +142,7 @@ Safety: iCaspase9 kill switch (rimiducid-activated)
 ```
 
 **Component Design**
+
 ```
 Module 1: SynNotch Receptor (Antigen 1)
 - Extracellular: Anti-CD19 scFv
@@ -161,6 +167,7 @@ Module 3: Kill Switch
 ```
 
 **Mathematical Model**
+
 ```
 State Variables:
 - R1: SynNotch receptor (surface)
@@ -188,6 +195,7 @@ Predicted Behavior:
 ```
 
 **Construction Strategy**
+
 ```
 Vector Design:
 - Backbone: Lentiviral (self-inactivating)
@@ -203,6 +211,7 @@ Manufacturing:
 ```
 
 **Validation Plan**
+
 ```
 In Vitro (Weeks 1-8):
 - Flow cytometry: Component expression
@@ -219,6 +228,7 @@ In Vivo (Weeks 9-16):
 ```
 
 **Safety Features**
+
 ```
 1. AND Gate Logic: Prevents single-antigen activation
 2. iCaspase9 Kill Switch: Emergency cell elimination
@@ -227,6 +237,7 @@ In Vivo (Weeks 9-16):
 ```
 
 **IND Considerations**
+
 - CMC: GMP lentivirus, T cell manufacturing
 - Pharmacology: Mechanism, biodistribution
 - Toxicology: GLP studies in NHP

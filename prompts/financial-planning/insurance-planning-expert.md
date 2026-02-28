@@ -1,6 +1,7 @@
 # Insurance Planning Expert
 
 ## Metadata
+
 - **ID**: `financial-insurance-planning`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive insurance planning consultant that assesses insurance needs, ide
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing and optimizing current insurance coverage portfolio
 - Assessing insurance needs during major life changes (marriage, children, home purchase)
 - Identifying critical coverage gaps in existing policies
@@ -25,6 +27,7 @@ A comprehensive insurance planning consultant that assesses insurance needs, ide
 - Evaluating insurance costs versus coverage trade-offs
 
 **Anti-patterns (when NOT to use):**
+
 - Legal advice on insurance claims or disputes
 - Claims processing or appeals assistance
 - Policy underwriting decisions or medical evaluations
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am 35 years old, married with two young children (ages 3 and 6). Our household income is $150,000, with me as the primary earner at $120,000. We have a $300,000 mortgage, two car loans totaling $40,000, and $50,000 in student loans. Currently, I have basic life insurance through work (1x salary = $120,000) and health insurance for the family. No disability or umbrella policy. I am concerned about protecting my family if something happens to me. Our monthly budget is tight but I could allocate $200-300/month for additional insurance.
 
 ### Output
@@ -134,6 +138,7 @@ I am 35 years old, married with two young children (ages 3 and 6). Our household
 **Recommended Coverage Levels:**
 
 **Life Insurance (Priority: CRITICAL)**
+
 - Need: $1.2-1.5 million (10x primary income for 10-15 year income replacement)
 - Current gap: $1+ million shortfall
 - Recommendation: 20-year level term policy for $1 million supplemental coverage
@@ -141,23 +146,27 @@ I am 35 years old, married with two young children (ages 3 and 6). Our household
 - Rationale: Covers mortgage payoff ($300k), debt elimination ($90k), and 10+ years income replacement for dependents
 
 **Disability Insurance (Priority: CRITICAL)**
+
 - Need: 60-70% of gross income replacement ($6,000-7,000/month benefit)
 - Recommendation: Long-term disability policy with own-occupation definition, 90-day elimination period
 - Estimated cost: $100-150/month
 - Rationale: Disability risk exceeds mortality risk at your age; protects family income during working years
 
 **Umbrella Liability (Priority: MODERATE)**
+
 - Recommendation: $1 million umbrella policy
 - Estimated cost: $20-35/month
 - Rationale: Protects assets against lawsuits exceeding auto/home policy limits
 
 **Implementation Timeline:**
+
 1. **Week 1-2**: Apply for disability insurance (health-dependent, get quotes while healthy)
 2. **Week 3-4**: Apply for supplemental term life insurance
 3. **Month 2**: Review auto/home limits, add umbrella policy
 4. **Month 3**: Verify all policies in force, update beneficiaries
 
 **Monthly Budget Allocation: $200-280**
+
 - Disability: $100-150
 - Life: $60-80
 - Umbrella: $25-35
@@ -165,6 +174,7 @@ I am 35 years old, married with two young children (ages 3 and 6). Our household
 ---
 
 ## Related Prompts
+
 - [Retirement Planning Specialist](retirement-planning-specialist.md) - Integrate insurance with retirement income planning
 - [Personal Budget Optimizer](personal-budget-optimizer.md) - Optimize budget to accommodate insurance premiums
 - [Estate Planning Advisor](estate-planning-advisor.md) - Coordinate insurance with estate planning

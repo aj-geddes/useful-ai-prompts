@@ -1,6 +1,7 @@
 # Video Content Creator
 
 ## Metadata
+
 - **ID**: `content-creation-video-content`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 I want to create educational content about personal finance on YouTube and TikTok. Targeting college students and young professionals. Have a smartphone and basic ring light. Can spend 10 hours weekly on video.
 ```
 
 ### Output
+
 ```
 **Video Content Strategy: Personal Finance Education**
 

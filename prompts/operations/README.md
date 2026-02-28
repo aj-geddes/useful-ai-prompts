@@ -8,4 +8,4 @@ Supply chain and operational excellence frameworks for operations leaders.
 
 ---
 
-*Professional operations prompts for operations managers, supply chain directors, and logistics professionals.*
+_Professional operations prompts for operations managers, supply chain directors, and logistics professionals._

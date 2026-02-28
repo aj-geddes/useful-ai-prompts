@@ -1,112 +1,135 @@
 ---
 layout: none
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Useful AI Prompts - Embed Widget</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            height: 100vh;
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        .widget-container {
-            max-width: 100%;
-            width: 100%;
-        }
-        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        height: 100vh;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .widget-container {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .stats {
+        font-size: 0.875rem;
+        margin-bottom: 12px;
+        opacity: 0.9;
+      }
+
+      .categories {
+        font-size: 0.75rem;
+        margin-bottom: 16px;
+        opacity: 0.8;
+        font-weight: 500;
+      }
+
+      .cta-button {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+      }
+
+      .cta-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Responsive adjustments for different iframe sizes */
+      @media (max-width: 350px) {
         .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          font-size: 1.25rem;
         }
-        
         .stats {
-            font-size: 0.875rem;
-            margin-bottom: 12px;
-            opacity: 0.9;
+          font-size: 0.8rem;
         }
-        
         .categories {
-            font-size: 0.75rem;
-            margin-bottom: 16px;
-            opacity: 0.8;
-            font-weight: 500;
+          font-size: 0.7rem;
         }
-        
         .cta-button {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.75rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-block;
+          font-size: 0.7rem;
+          padding: 6px 12px;
         }
-        
-        .cta-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-1px);
-            color: white;
-            text-decoration: none;
+      }
+
+      @media (max-height: 200px) {
+        body {
+          padding: 8px;
         }
-        
-        /* Responsive adjustments for different iframe sizes */
-        @media (max-width: 350px) {
-            .logo { font-size: 1.25rem; }
-            .stats { font-size: 0.8rem; }
-            .categories { font-size: 0.7rem; }
-            .cta-button { font-size: 0.7rem; padding: 6px 12px; }
+        .logo {
+          font-size: 1.1rem;
+          margin-bottom: 4px;
         }
-        
-        @media (max-height: 200px) {
-            body { padding: 8px; }
-            .logo { font-size: 1.1rem; margin-bottom: 4px; }
-            .stats { font-size: 0.75rem; margin-bottom: 6px; }
-            .categories { font-size: 0.65rem; margin-bottom: 8px; }
-            .cta-button { font-size: 0.65rem; padding: 4px 8px; }
+        .stats {
+          font-size: 0.75rem;
+          margin-bottom: 6px;
         }
+        .categories {
+          font-size: 0.65rem;
+          margin-bottom: 8px;
+        }
+        .cta-button {
+          font-size: 0.65rem;
+          padding: 4px 8px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="widget-container">
-        <div class="logo">
-            <i class="fas fa-robot"></i> Useful AI Prompts
-        </div>
-        <div class="stats">
-            486+ prompts
-        </div>
-        <div class="categories">
-            Technical • Business • Creative • Analysis
-        </div>
-        <a href="{{ site.url }}{{ site.baseurl }}/" target="_blank" class="cta-button">
-            Browse All Prompts →
-        </a>
+      <div class="logo"><i class="fas fa-robot"></i> Useful AI Prompts</div>
+      <div class="stats">486+ prompts</div>
+      <div class="categories">Technical • Business • Creative • Analysis</div>
+      <a
+        href="{{ site.url }}{{ site.baseurl }}/"
+        target="_blank"
+        class="cta-button"
+      >
+        Browse All Prompts →
+      </a>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-</body>
+  </body>
 </html>

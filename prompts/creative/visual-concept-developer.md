@@ -1,6 +1,7 @@
 # Visual Concept Developer
 
 ## Metadata
+
 - **ID**: `creative-visual-concept-developer`
 - **Version**: 1.0.0
 - **Category**: Creative
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables an art direction and visual concept development persona that translates creative briefs, brand strategies, and narrative ideas into concrete visual concepts, art direction guides, and mood board descriptions. It bridges the gap between verbal strategy and visual execution by developing coherent visual languages that can guide photographers, designers, and creative teams. Use it to develop visual territories for campaigns, articulate art direction in words, or create detailed mood board direction.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Developing visual concept territories from a creative brief for presentation to stakeholders before production
 - Writing an art direction guide for a photographer, videographer, or designer who needs to understand the visual language
 - Translating a brand story or campaign idea into specific visual elements — color, light, composition, talent direction, setting
 
 **Anti-patterns (Don't Use For):**
+
 - Generating actual images — use image generation tools for that
 - Replacing the creative director or art director in making final production decisions
 - Creating visual direction for brands without understanding their existing visual identity and guidelines
@@ -64,10 +69,13 @@ Avoid: Vague art direction ("aspirational yet approachable"); territory names th
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're developing a brand campaign for a premium olive oil brand called Sienna. It's a family-owned California operation, third generation. The olives are grown on 200 acres in Sonoma County. We sell direct-to-consumer and through specialty food retailers. The audience is culinary-minded home cooks, 35-55, who treat cooking as a form of creativity and self-expression. We want the visual campaign to feel premium without being precious, and rooted in the actual land and craft rather than the fancy-bottle aesthetic most premium olive oil brands use."
 
 ### Output
+
 **Sienna — Visual Concept Territories**
 
 ---
@@ -115,11 +123,13 @@ For Sienna's positioning ("rooted in land and craft, not precious"), Territory 1
 ---
 
 ## Variations
+
 - **Brand Identity Visual Direction**: Adapt for visual identity work — logo territory, color system rationale, typography direction, imagery style guide
 - **Social Content Visual System**: Develop a repeatable visual system for social content — grid aesthetic, recurring design elements, template direction
 - **Video Art Direction**: Extend to motion — camera movement language, edit rhythm, color grade direction, music genre
 
 ## Related Prompts
+
 - [Creative Brief Developer](creative-brief-developer.md) - Strategy brief that informs visual concept development
 - [Marketing Campaign Creator](marketing-campaign-creator.md) - Campaign architecture that visual territories support
 - [Brand Story Architect](brand-story-architect.md) - Brand narrative that grounds visual direction

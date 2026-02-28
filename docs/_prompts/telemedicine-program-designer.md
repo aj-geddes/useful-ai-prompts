@@ -3,22 +3,23 @@ title: Telemedicine Program Designer
 slug: telemedicine-program-designer
 category: healthcare
 tags:
-- telemedicine
-- telehealth
-- virtual
-- care
-- program
-- design
-- digital
-- health
-- patient
-- experience
-- technology
+  - telemedicine
+  - telehealth
+  - virtual
+  - care
+  - program
+  - design
+  - digital
+  - health
+  - patient
+  - experience
+  - technology
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a telemedicine program design specialist persona
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a telemedicine program design specialist persona
   that helps healthcare organizations design, implement, and scale virtual care programs.
   It covers clinical workflow design, technology selection criteria, regulatory and
   reimbursement considerations, patient experience, and operational scaling. Use it
@@ -26,14 +27,14 @@ description: This prompt enables a telemedicine program design specialist person
   technology platforms.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a new telehealth program for a specialty or primary care service line,
-  from workflow to technology to patient onboarding
-- Evaluating virtual care platform options with a structured decision framework
-- Optimizing an existing telehealth program that has low utilization, poor patient
-  experience, or clinical workflow friction
-- Making specific clinical decisions about which patients are appropriate for virtual
-  vs. in-person care — those require clinical judgment
+  - Ideal Scenarios:**
+  - Designing a new telehealth program for a specialty or primary care service line,
+    from workflow to technology to patient onboarding
+  - Evaluating virtual care platform options with a structured decision framework
+  - Optimizing an existing telehealth program that has low utilization, poor patient
+    experience, or clinical workflow friction
+  - Making specific clinical decisions about which patients are appropriate for virtual
+    vs. in-person care — those require clinical judgment
 complexity: advanced
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # System Architecture Design Expert
 
 ## Metadata
+
 - **ID**: `system-architecture-design-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Designs robust, scalable system architectures that meet performance requirements
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new system architectures from scratch
 - Scaling existing systems to handle 10-100x growth
 - Selecting technologies and defining integration patterns
@@ -25,6 +27,7 @@ Designs robust, scalable system architectures that meet performance requirements
 - Preparing for system design interviews or reviews
 
 **Anti-Patterns (Don't Use For):**
+
 - Detailed code implementation guidance
 - Single-service or microservice design (use Microservice Design Expert)
 - Infrastructure-only planning (use Infrastructure Planning Expert)
@@ -145,6 +148,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We're building an e-commerce platform for a rapidly growing retail company. Requirements:
 - Expected scale: 100K daily active users at launch, planning for 1M+ within 2 years
@@ -162,15 +166,16 @@ Key features: Product catalog, shopping cart, checkout, order management, user a
 
 **Requirements Analysis**
 
-| Requirement | Specification | Architecture Implication |
-|-------------|---------------|-------------------------|
-| Daily users | 100K -> 1M | 10x scaling requirement |
-| Peak traffic | 10x normal | Auto-scaling, queue-based processing |
-| Latency | < 1 second page load | CDN, caching, async processing |
-| Availability | 99.9% | Multi-AZ, automated failover |
-| Team size | 8 engineers | Manageable complexity, familiar tools |
+| Requirement  | Specification        | Architecture Implication              |
+| ------------ | -------------------- | ------------------------------------- |
+| Daily users  | 100K -> 1M           | 10x scaling requirement               |
+| Peak traffic | 10x normal           | Auto-scaling, queue-based processing  |
+| Latency      | < 1 second page load | CDN, caching, async processing        |
+| Availability | 99.9%                | Multi-AZ, automated failover          |
+| Team size    | 8 engineers          | Manageable complexity, familiar tools |
 
 **Scale Calculations:**
+
 - Normal: 100K DAU = ~1,000 concurrent users = ~100 req/sec
 - Peak (10x): ~1,000 req/sec
 - Year 2 peak: ~10,000 req/sec
@@ -200,14 +205,14 @@ Key features: Product catalog, shopping cart, checkout, order management, user a
 
 **Service Decomposition**
 
-| Component | Responsibility | Technology | Scaling Strategy |
-|-----------|---------------|------------|------------------|
-| Product Catalog | Product data, search, categories | PostgreSQL + Elasticsearch | Read replicas, cache |
-| Shopping Cart | Cart state, sessions | Redis Cluster | Horizontal sharding |
-| Order Service | Checkout, order lifecycle | PostgreSQL + SQS | Queue-based, partition by date |
-| User Service | Auth, profiles, preferences | PostgreSQL + Cognito | Cache-heavy |
-| Inventory | Stock management, reservations | PostgreSQL + Redis | Event-driven updates |
-| Notifications | Email, SMS, push | SQS + Lambda | Fully serverless |
+| Component       | Responsibility                   | Technology                 | Scaling Strategy               |
+| --------------- | -------------------------------- | -------------------------- | ------------------------------ |
+| Product Catalog | Product data, search, categories | PostgreSQL + Elasticsearch | Read replicas, cache           |
+| Shopping Cart   | Cart state, sessions             | Redis Cluster              | Horizontal sharding            |
+| Order Service   | Checkout, order lifecycle        | PostgreSQL + SQS           | Queue-based, partition by date |
+| User Service    | Auth, profiles, preferences      | PostgreSQL + Cognito       | Cache-heavy                    |
+| Inventory       | Stock management, reservations   | PostgreSQL + Redis         | Event-driven updates           |
+| Notifications   | Email, SMS, push                 | SQS + Lambda               | Fully serverless               |
 
 **Technology Stack and Rationale**
 
@@ -234,22 +239,27 @@ Key features: Product catalog, shopping cart, checkout, order management, user a
 **Scalability Design**
 
 **Read Scaling (Product Catalog):**
+
 ```
 Request -> CloudFront (cache 1hr) -> Redis (cache 5min) -> Read Replica
 ```
+
 - 90% of catalog requests served from cache
 - Read replicas for database scale-out
 - Elasticsearch for search offload
 
 **Write Scaling (Orders):**
+
 ```
 Checkout -> Validate -> Enqueue -> Process Async -> Confirm
 ```
+
 - Synchronous validation only
 - Async processing via SQS for resilience
 - Partition orders by date for query performance
 
 **Peak Traffic Handling:**
+
 ```yaml
 auto_scaling:
   normal:
@@ -269,14 +279,15 @@ auto_scaling:
 
 **High Availability Design**
 
-| Component | Availability Strategy | RTO | RPO |
-|-----------|----------------------|-----|-----|
-| API | Multi-AZ ALB, 3+ tasks | 0 | 0 |
-| Database | Multi-AZ RDS, auto-failover | 2 min | 0 |
-| Cache | Redis cluster, 3 nodes | 1 min | N/A |
-| Search | Elasticsearch 3-node | 5 min | 5 min |
+| Component | Availability Strategy       | RTO   | RPO   |
+| --------- | --------------------------- | ----- | ----- |
+| API       | Multi-AZ ALB, 3+ tasks      | 0     | 0     |
+| Database  | Multi-AZ RDS, auto-failover | 2 min | 0     |
+| Cache     | Redis cluster, 3 nodes      | 1 min | N/A   |
+| Search    | Elasticsearch 3-node        | 5 min | 5 min |
 
 **Failure Scenarios:**
+
 - Single AZ failure: Automatic failover, no user impact
 - Database failure: 2-minute failover, brief checkout impact
 - Cache failure: Graceful degradation to database
@@ -291,6 +302,7 @@ Hot Data (Redis)          Warm Data (PostgreSQL)       Cold Data (S3)
 ```
 
 **Consistency Model:**
+
 - Cart: Eventually consistent (acceptable for UX)
 - Inventory: Strong consistency for checkout (reservation pattern)
 - Orders: Strong consistency (financial data)
@@ -300,6 +312,7 @@ Hot Data (Redis)          Warm Data (PostgreSQL)       Cold Data (S3)
 **Phase 1: MVP (Months 1-3)**
 
 Architecture:
+
 ```
 CloudFront -> Monolithic API -> Single PostgreSQL
                                      |
@@ -307,12 +320,14 @@ CloudFront -> Monolithic API -> Single PostgreSQL
 ```
 
 Scope:
+
 - Product catalog with basic search
 - Shopping cart and checkout
 - User registration and login
 - Order placement and history
 
 Technical debt accepted:
+
 - Monolithic API (will extract services later)
 - Single database (will add read replicas)
 - Basic monitoring (will enhance)
@@ -320,6 +335,7 @@ Technical debt accepted:
 **Phase 2: Scale Preparation (Months 4-6)**
 
 Changes:
+
 - Extract Product Service (highest read traffic)
 - Add read replicas for database
 - Implement proper caching strategy
@@ -329,6 +345,7 @@ Changes:
 **Phase 3: Full Platform (Months 7-12)**
 
 Changes:
+
 - Extract remaining services (Order, Cart, User)
 - Elasticsearch for advanced search
 - Event-driven inventory management
@@ -337,12 +354,12 @@ Changes:
 
 **Architecture Decision Records**
 
-| Decision | Options | Chosen | Rationale |
-|----------|---------|--------|-----------|
-| Database | PostgreSQL vs. DynamoDB | PostgreSQL | Team expertise, relational model fits domain |
-| API style | REST vs. GraphQL | REST | Simpler, team experience, caching easier |
-| Compute | ECS vs. EKS | ECS | Lower ops burden for team size |
-| Start | Monolith vs. Microservices | Modular monolith | Faster MVP, extract later |
+| Decision  | Options                    | Chosen           | Rationale                                    |
+| --------- | -------------------------- | ---------------- | -------------------------------------------- |
+| Database  | PostgreSQL vs. DynamoDB    | PostgreSQL       | Team expertise, relational model fits domain |
+| API style | REST vs. GraphQL           | REST             | Simpler, team experience, caching easier     |
+| Compute   | ECS vs. EKS                | ECS              | Lower ops burden for team size               |
+| Start     | Monolith vs. Microservices | Modular monolith | Faster MVP, extract later                    |
 
 ---
 

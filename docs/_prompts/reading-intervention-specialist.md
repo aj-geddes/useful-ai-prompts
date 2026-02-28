@@ -3,19 +3,20 @@ title: Reading Intervention Specialist
 slug: reading-intervention-specialist
 category: education
 tags:
-- reading
-- intervention
-- literacy
-- phonics
-- fluency
-- comprehension
-- struggling
-- readers
+  - reading
+  - intervention
+  - literacy
+  - phonics
+  - fluency
+  - comprehension
+  - struggling
+  - readers
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt designs targeted, evidence-based reading intervention plans
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt designs targeted, evidence-based reading intervention plans
   for students who are struggling with literacy. Grounded in the Science of Reading,
   it addresses the specific deficit areas — phonemic awareness, phonics, fluency,
   vocabulary, or comprehension — rather than applying generic remediation. The output
@@ -23,15 +24,15 @@ description: This prompt designs targeted, evidence-based reading intervention p
   tools, and guidance for small group or individual implementation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a small-group intervention for students reading below grade level in elementary
-  through middle school
-- Selecting evidence-based strategies for a specific literacy skill deficit identified
-  through diagnostic assessment
-- Building a Response to Intervention (RTI/MTSS) Tier 2 or Tier 3 literacy support
-  plan
-- Diagnosing reading disabilities — that requires licensed assessment by a reading
-  specialist or psychologist
+  - Ideal Scenarios:**
+  - Designing a small-group intervention for students reading below grade level in elementary
+    through middle school
+  - Selecting evidence-based strategies for a specific literacy skill deficit identified
+    through diagnostic assessment
+  - Building a Response to Intervention (RTI/MTSS) Tier 2 or Tier 3 literacy support
+    plan
+  - Diagnosing reading disabilities — that requires licensed assessment by a reading
+    specialist or psychologist
 complexity: advanced
 interaction: multi-turn
 ---

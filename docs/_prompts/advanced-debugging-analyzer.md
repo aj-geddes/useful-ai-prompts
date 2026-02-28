@@ -3,27 +3,28 @@ title: Advanced Debugging Analyzer
 slug: advanced-debugging-analyzer
 category: technical/software engineering
 tags:
-- debugging
-- troubleshooting
-- root-cause-analysis
-- performance
-- diagnostics
-- distributed-systems
+  - debugging
+  - troubleshooting
+  - root-cause-analysis
+  - performance
+  - diagnostics
+  - distributed-systems
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Systematically debugs complex software issues through structured hypothesis
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Systematically debugs complex software issues through structured hypothesis
   testing and root cause identification. Provides specific diagnostic commands, queries,
   and monitoring recommendations. Focuses on prevention strategies to ensure issues
   do not recur after resolution.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Diagnosing intermittent production issues that are hard to reproduce
-- Investigating performance degradation under load
-- Identifying memory leaks and resource exhaustion
-- Root cause analysis for complex multi-service failures
+  - Ideal Scenarios:**
+  - Diagnosing intermittent production issues that are hard to reproduce
+  - Investigating performance degradation under load
+  - Identifying memory leaks and resource exhaustion
+  - Root cause analysis for complex multi-service failures
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Complex software bugs often have non-obvious root causes that require systematic
 
 <input_handling>
 Required:
+
 - Problem description (symptoms, error messages, stack traces)
 - Environment details (tech stack, infrastructure, versions)
 - Reproduction pattern (always, intermittent, load-dependent, time-based)
 
 Optional:
+
 - Severity assessment (default: critical if production impact)
 - Available diagnostic tools (default: standard APM, logging, metrics)
 - Time constraints (default: urgent if production)
 - Recent changes (deployments, config changes, traffic patterns)
-</input_handling>
+  </input_handling>
 
 <task>
 Execute systematic debugging analysis:
@@ -59,33 +62,36 @@ Execute systematic debugging analysis:
 5. Propose solution options with trade-offs for each
 6. Define prevention strategies to avoid recurrence
 7. Create monitoring and alerting for early detection
-</task>
+   </task>
 
 <output_specification>
 Format: Structured investigation with executable diagnostic commands
 Length: 1500-2500 words
 Structure:
+
 - Evidence summary and pattern analysis
 - Ranked hypothesis table with confidence levels
 - Diagnostic commands for each hypothesis
 - Root cause identification with evidence
 - Solution options with trade-offs
 - Prevention monitoring setup
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs include:
+
 - Clear hypothesis ranking with evidence mapping
 - Actionable diagnostic commands ready to execute
 - Multiple solution options with trade-off analysis
 - Root cause prevention, not just symptom treatment
 
 Avoid:
+
 - Guessing without systematic analysis
 - Generic advice without specific diagnostics
 - Single solution without alternatives
 - Missing monitoring for recurrence detection
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All diagnostic commands must be safe for production

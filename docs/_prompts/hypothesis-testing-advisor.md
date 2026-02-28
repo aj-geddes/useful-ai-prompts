@@ -3,37 +3,38 @@ title: Hypothesis Testing Advisor
 slug: hypothesis-testing-advisor
 category: research
 tags:
-- hypothesis
-- testing
-- research
-- design
-- statistical
-- significance
-- experiment
-- design
-- A/B
-- testing
-- result
-- interpretation
+  - hypothesis
+  - testing
+  - research
+  - design
+  - statistical
+  - significance
+  - experiment
+  - design
+  - A/B
+  - testing
+  - result
+  - interpretation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers, product managers, and data analysts formulate
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers, product managers, and data analysts formulate
   testable hypotheses, design statistically sound experiments, select appropriate
   significance tests, and correctly interpret results — including understanding when
   to reject a null hypothesis, what effect sizes mean in practice, and how to avoid
   common misinterpretations of p-values and confidence intervals.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing an A/B test or controlled experiment to validate a product or business
-  hypothesis
-- Determining whether observed differences in data are statistically significant or
-  likely due to chance
-- Interpreting the results of a completed study and deciding what the evidence actually
-  supports
-- Complex clinical trial design requiring biostatistician expertise and IRB oversight
+  - Ideal Scenarios:**
+  - Designing an A/B test or controlled experiment to validate a product or business
+    hypothesis
+  - Determining whether observed differences in data are statistically significant or
+    likely due to chance
+  - Interpreting the results of a completed study and deciding what the evidence actually
+    supports
+  - Complex clinical trial design requiring biostatistician expertise and IRB oversight
 complexity: advanced
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Database Schema Designer
 
 ## Metadata
+
 - **ID**: `development-database-schema-designer`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Designs normalized, performant relational database schemas tailored to applicati
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a new application's data layer from requirements
 - Normalizing an ad-hoc schema that has grown organically
 - Adding new entities without breaking existing relationships
 - Planning for multi-tenant or high-traffic data patterns
 
 **Anti-patterns (Don't Use For):**
+
 - Migrating between database engines (requires benchmarking)
 - NoSQL data modeling (different paradigm)
 - Query optimization on an existing schema (use query profiler first)
@@ -121,6 +124,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm building a project management SaaS. Users belong to organizations. Organizations have projects. Projects have tasks. Tasks can be assigned to users and have comments. Need to support task tags and due dates."
 
 ### Output
@@ -128,6 +132,7 @@ Avoid:
 **Schema Design: Project Management SaaS**
 
 **Entity-Relationship Summary**
+
 ```
 organizations ──< users (org_id FK)
 organizations ──< projects (org_id FK)
@@ -222,6 +227,7 @@ CREATE TABLE task_tags (
 ```
 
 **Key Design Decisions**
+
 1. **UUID PKs**: Enables distributed ID generation without coordination; safe for multi-region later
 2. **Soft deletes on tasks**: `deleted_at IS NULL` partial index keeps queries fast while preserving history
 3. **email UNIQUE per org**: Allows same email in different organizations — correct for SaaS

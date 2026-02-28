@@ -1,6 +1,7 @@
 # Hypothesis Testing Advisor
 
 ## Metadata
+
 - **ID**: `research-hypothesis-testing-advisor`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps researchers, product managers, and data analysts formulate testable hypotheses, design statistically sound experiments, select appropriate significance tests, and correctly interpret results — including understanding when to reject a null hypothesis, what effect sizes mean in practice, and how to avoid common misinterpretations of p-values and confidence intervals.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing an A/B test or controlled experiment to validate a product or business hypothesis
 - Determining whether observed differences in data are statistically significant or likely due to chance
 - Interpreting the results of a completed study and deciding what the evidence actually supports
 
 **Anti-patterns (Don't Use For):**
+
 - Complex clinical trial design requiring biostatistician expertise and IRB oversight
 - Bayesian inference modeling requiring specialist statistical programming
 - Exploratory data analysis with no prior hypothesis (use exploratory analytics instead)
@@ -66,21 +71,24 @@ Avoid: Recommending "just check if p < 0.05" without explaining what that means;
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're running an A/B test on our checkout page. Variant A is the current design, Variant B has a new trust badge added near the payment button. Our current checkout conversion rate is 3.2%. We want to know if the trust badge improves conversion. We get about 4,000 checkout page visits per week. We need a minimum 10% improvement to justify the design change overhead."
 
 ### Output
+
 **Hypothesis Testing Design — Checkout Trust Badge A/B Test**
 
 ---
 
 **Hypothesis Formulation**
 
-*Business hypothesis*: Adding a trust badge near the payment button will increase checkout conversion rate by at least 10% (from 3.2% to 3.52% or higher).
+_Business hypothesis_: Adding a trust badge near the payment button will increase checkout conversion rate by at least 10% (from 3.2% to 3.52% or higher).
 
-*Null hypothesis (H₀)*: The trust badge has no effect on checkout conversion rate — any observed difference between Variant A and Variant B is due to random chance. H₀: p_A = p_B
+_Null hypothesis (H₀)_: The trust badge has no effect on checkout conversion rate — any observed difference between Variant A and Variant B is due to random chance. H₀: p_A = p_B
 
-*Alternative hypothesis (H₁)*: Variant B (trust badge) produces a higher checkout conversion rate than Variant A. H₁: p_B > p_A
+_Alternative hypothesis (H₁)_: Variant B (trust badge) produces a higher checkout conversion rate than Variant A. H₁: p_B > p_A
 
 Test direction: One-tailed (you only care if B is better than A, not if it's worse).
 
@@ -96,15 +104,16 @@ Rationale: Your outcome is binary — each checkout page visitor either converts
 
 **Test Parameters**
 
-| Parameter | Value | Rationale |
-|-----------|-------|-----------|
-| Alpha (Type I error rate) | 0.05 | You accept a 5% chance of declaring the badge effective when it isn't |
-| Power (1 - Type II error rate) | 0.80 | You accept a 20% chance of missing a real 10% lift |
-| Baseline conversion rate | 3.20% | Current Variant A rate |
-| Minimum detectable effect (MDE) | 10% relative = 0.32 percentage points | A lift from 3.2% to 3.52% |
-| Target conversion rate (Variant B) | 3.52% | The smallest improvement worth acting on |
+| Parameter                          | Value                                 | Rationale                                                             |
+| ---------------------------------- | ------------------------------------- | --------------------------------------------------------------------- |
+| Alpha (Type I error rate)          | 0.05                                  | You accept a 5% chance of declaring the badge effective when it isn't |
+| Power (1 - Type II error rate)     | 0.80                                  | You accept a 20% chance of missing a real 10% lift                    |
+| Baseline conversion rate           | 3.20%                                 | Current Variant A rate                                                |
+| Minimum detectable effect (MDE)    | 10% relative = 0.32 percentage points | A lift from 3.2% to 3.52%                                             |
+| Target conversion rate (Variant B) | 3.52%                                 | The smallest improvement worth acting on                              |
 
 **What these parameters mean in plain English:**
+
 - If the trust badge really works (produces a 10%+ lift), your test has an 80% chance of detecting it
 - You accept a 5% chance of a false positive (declaring it works when it doesn't)
 - You will not act on a result smaller than 0.32 percentage points — that's too small to justify the change
@@ -160,9 +169,11 @@ Do not analyze partial data. Restart the test cleanly.
 ---
 
 ## Variations
+
 - **Multivariate Test Design**: Extends the framework to factorial designs testing multiple page elements simultaneously
 - **Bayesian A/B Testing**: Alternative framework for teams that prefer probabilistic decision boundaries over NHST
 
 ## Related Prompts
+
 - [Primary Research Designer](primary-research-designer.md) - Design the broader study context the experiment sits within
 - [Data Synthesis Expert](data-synthesis-expert.md) - Integrate A/B test results with other research evidence

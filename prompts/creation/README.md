@@ -22,4 +22,4 @@ Content and document creation prompts for professional output across all media t
 
 ---
 
-*Professional creation prompts for writers, designers, and content creators.*
+_Professional creation prompts for writers, designers, and content creators._

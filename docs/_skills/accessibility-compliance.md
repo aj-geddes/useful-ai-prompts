@@ -1,13 +1,14 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Implement WCAG 2.1/2.2 accessibility standards, screen reader compatibility,
+date: "2025-01-01"
+description:
+  Implement WCAG 2.1/2.2 accessibility standards, screen reader compatibility,
   keyboard navigation, and a11y testing. Use when building inclusive web applications,
   ensuring regulatory compliance, or improving user experience for people with disabilities.
 layout: skill
 slug: accessibility-compliance
 tags:
-- testing
+  - testing
 title: accessibility-compliance
 ---
 
@@ -159,31 +160,31 @@ export default AccessibleModal;
 export const KeyboardNavigation = {
   // Handle arrow key navigation in lists
   handleListNavigation: (event: KeyboardEvent, items: HTMLElement[]) => {
-    const currentIndex = items.findIndex(item =>
-      item === document.activeElement
+    const currentIndex = items.findIndex(
+      (item) => item === document.activeElement,
     );
 
     let nextIndex: number;
 
     switch (event.key) {
-      case 'ArrowDown':
+      case "ArrowDown":
         event.preventDefault();
         nextIndex = Math.min(currentIndex + 1, items.length - 1);
         items[nextIndex]?.focus();
         break;
 
-      case 'ArrowUp':
+      case "ArrowUp":
         event.preventDefault();
         nextIndex = Math.max(currentIndex - 1, 0);
         items[nextIndex]?.focus();
         break;
 
-      case 'Home':
+      case "Home":
         event.preventDefault();
         items[0]?.focus();
         break;
 
-      case 'End':
+      case "End":
         event.preventDefault();
         items[items.length - 1]?.focus();
         break;
@@ -191,20 +192,17 @@ export const KeyboardNavigation = {
   },
 
   // Make element keyboard accessible
-  makeAccessible: (
-    element: HTMLElement,
-    onClick: () => void
-  ): void => {
-    element.setAttribute('tabindex', '0');
-    element.setAttribute('role', 'button');
+  makeAccessible: (element: HTMLElement, onClick: () => void): void => {
+    element.setAttribute("tabindex", "0");
+    element.setAttribute("role", "button");
 
-    element.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
+    element.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         onClick();
       }
     });
-  }
+  },
 };
 ```
 
@@ -283,11 +281,11 @@ class ScreenReaderAnnouncer {
   }
 
   private createLiveRegion(): HTMLElement {
-    const region = document.createElement('div');
-    region.setAttribute('role', 'status');
-    region.setAttribute('aria-live', 'polite');
-    region.setAttribute('aria-atomic', 'true');
-    region.className = 'sr-only';
+    const region = document.createElement("div");
+    region.setAttribute("role", "status");
+    region.setAttribute("aria-live", "polite");
+    region.setAttribute("aria-atomic", "true");
+    region.className = "sr-only";
     region.style.cssText = `
       position: absolute;
       left: -10000px;
@@ -299,11 +297,11 @@ class ScreenReaderAnnouncer {
     return region;
   }
 
-  announce(message: string, priority: 'polite' | 'assertive' = 'polite'): void {
-    this.liveRegion.setAttribute('aria-live', priority);
+  announce(message: string, priority: "polite" | "assertive" = "polite"): void {
+    this.liveRegion.setAttribute("aria-live", priority);
 
     // Clear then set message to ensure announcement
-    this.liveRegion.textContent = '';
+    this.liveRegion.textContent = "";
     setTimeout(() => {
       this.liveRegion.textContent = message;
     }, 100);
@@ -318,10 +316,10 @@ class ScreenReaderAnnouncer {
 const announcer = new ScreenReaderAnnouncer();
 
 // Announce form validation error
-announcer.announce('Email field is required', 'assertive');
+announcer.announce("Email field is required", "assertive");
 
 // Announce successful action
-announcer.announce('Item added to cart', 'polite');
+announcer.announce("Item added to cart", "polite");
 ```
 
 ### 6. **Focus Management**
@@ -329,17 +327,17 @@ announcer.announce('Item added to cart', 'polite');
 ```typescript
 class FocusManager {
   private focusableSelectors = [
-    'a[href]',
-    'button:not([disabled])',
-    'textarea:not([disabled])',
-    'input:not([disabled])',
-    'select:not([disabled])',
-    '[tabindex]:not([tabindex="-1"])'
-  ].join(', ');
+    "a[href]",
+    "button:not([disabled])",
+    "textarea:not([disabled])",
+    "input:not([disabled])",
+    "select:not([disabled])",
+    '[tabindex]:not([tabindex="-1"])',
+  ].join(", ");
 
   getFocusableElements(container: HTMLElement): HTMLElement[] {
     return Array.from(
-      container.querySelectorAll(this.focusableSelectors)
+      container.querySelectorAll(this.focusableSelectors),
     ) as HTMLElement[];
   }
 
@@ -349,7 +347,7 @@ class FocusManager {
     const lastFocusable = focusable[focusable.length - 1];
 
     const handleTabKey = (e: KeyboardEvent) => {
-      if (e.key !== 'Tab') return;
+      if (e.key !== "Tab") return;
 
       if (e.shiftKey) {
         if (document.activeElement === firstFocusable) {
@@ -364,9 +362,9 @@ class FocusManager {
       }
     };
 
-    container.addEventListener('keydown', handleTabKey);
+    container.addEventListener("keydown", handleTabKey);
 
-    return () => container.removeEventListener('keydown', handleTabKey);
+    return () => container.removeEventListener("keydown", handleTabKey);
   }
 }
 ```
@@ -408,6 +406,7 @@ describe('Accessibility', () => {
 ## Best Practices
 
 ### ✅ DO
+
 - Use semantic HTML elements
 - Provide text alternatives for images
 - Ensure sufficient color contrast (4.5:1 minimum)
@@ -420,6 +419,7 @@ describe('Accessibility', () => {
 - Support text resizing up to 200%
 
 ### ❌ DON'T
+
 - Rely solely on color to convey information
 - Remove focus indicators
 - Use only mouse/touch interactions

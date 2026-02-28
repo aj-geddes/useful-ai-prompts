@@ -6,7 +6,19 @@ slug: engineering
 icon: fas fa-drafting-compass
 description: "Expert AI prompts for engineers: failure analysis, design review, technical specifications, materials selection, reliability engineering, and regulatory compliance."
 seo_title: "Engineering AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [failure analysis, design review, technical specifications, materials selection, reliability engineering, root cause analysis, FMEA, systems engineering, sustainability, regulatory compliance]
+tags:
+  [
+    failure analysis,
+    design review,
+    technical specifications,
+    materials selection,
+    reliability engineering,
+    root cause analysis,
+    FMEA,
+    systems engineering,
+    sustainability,
+    regulatory compliance,
+  ]
 ---
 
 The Engineering category contains AI prompts for mechanical, civil, electrical, systems, and reliability engineers. These prompts apply established engineering methodologies — FMEA, FTA, RCA, design FMECA — to structured problem-solving and technical documentation across engineering disciplines.

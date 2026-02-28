@@ -1,6 +1,7 @@
 # Compliance Officer Expert
 
 ## Metadata
+
 - **ID**: `business-compliance-officer`
 - **Version**: 1.0.0
 - **Category**: Business/Legal
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Develops comprehensive compliance programs with risk assessment, governance frameworks, and monitoring systems. Enables business growth through proactive regulatory management while protecting against enforcement actions.
 
 ## When to Use
+
 - Building or maturing a compliance program
 - Entering new regulated markets
 - Responding to regulatory warnings or audits
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a fintech company operating a digital payments and lending platform with 500 employees. Currently we're in 5 US states and planning EU expansion next year. Our regulators include state banking departments, CFPB, FinCEN, and soon EU regulators. Current compliance state is basic: we have some policies, a 3-person compliance team, but no formal governance structure. We received a warning letter from one state regulator about KYC deficiencies 6 months ago. High-risk areas we've identified are AML/KYC processes, AI decisioning in lending, and data privacy. Looking for a comprehensive compliance program design with realistic implementation timeline."
 
 ### Output
@@ -108,6 +112,7 @@ Avoid:
 Your warning letter and basic infrastructure indicate a compliance program at Level 1 (Ad Hoc) maturity. With multi-jurisdictional operations, AI in lending, and EU expansion planned, you need to move to Level 3 (Defined) within 12 months. The 3-person team is under-resourced for your regulatory complexity - industry benchmark is 0.15-0.20% of revenue or approximately 6-8 FTEs for your size.
 
 **Key Gaps Identified:**
+
 1. No formal governance structure or committee oversight
 2. Manual KYC processes that led to regulatory finding
 3. No AI/ML model governance for lending decisions
@@ -120,24 +125,26 @@ Your warning letter and basic infrastructure indicate a compliance program at Le
 
 ### Risk Heat Map
 
-| Risk Area | Likelihood | Impact | Overall | Priority |
-|-----------|------------|--------|---------|----------|
-| AML/KYC Compliance | High | Critical | **CRITICAL** | Immediate |
-| AI/Fair Lending | High | Critical | **CRITICAL** | Immediate |
-| Cross-Border (EU) | Medium | High | **HIGH** | Q2-Q3 |
-| Data Privacy (GDPR/CCPA) | Medium | High | **HIGH** | Q1-Q2 |
-| State Licensing | Medium | Medium | MEDIUM | Ongoing |
-| Third-Party Risk | Medium | Medium | MEDIUM | Q2 |
+| Risk Area                | Likelihood | Impact   | Overall      | Priority  |
+| ------------------------ | ---------- | -------- | ------------ | --------- |
+| AML/KYC Compliance       | High       | Critical | **CRITICAL** | Immediate |
+| AI/Fair Lending          | High       | Critical | **CRITICAL** | Immediate |
+| Cross-Border (EU)        | Medium     | High     | **HIGH**     | Q2-Q3     |
+| Data Privacy (GDPR/CCPA) | Medium     | High     | **HIGH**     | Q1-Q2     |
+| State Licensing          | Medium     | Medium   | MEDIUM       | Ongoing   |
+| Third-Party Risk         | Medium     | Medium   | MEDIUM       | Q2        |
 
 ### Critical Risk Details
 
 **AML/KYC Compliance (CRITICAL)**
+
 - Existing regulatory finding creates enhanced scrutiny
 - Manual processes increase error rate and audit exposure
 - BSA/AML violations average $12M in fines for similar companies
 - Action: Automated KYC platform implementation within 90 days
 
 **AI/Fair Lending (CRITICAL)**
+
 - No model governance for lending algorithms
 - CFPB actively investigating AI discrimination in lending
 - ECOA/Fair Lending violations create class action exposure
@@ -172,11 +179,13 @@ BOARD OF DIRECTORS
 **Key Governance Bodies:**
 
 **Compliance Committee (Monthly)**
+
 - Members: CCO, General Counsel, CTO, Business Heads
 - Purpose: Risk review, policy approval, issue escalation
 - Authority: Approve policies, escalate to Board, halt products
 
 **Fair Lending Committee (Bi-weekly during build, Monthly after)**
+
 - Members: CCO, Chief Risk Officer, Data Science Lead
 - Purpose: Model approval, bias testing review, ECOA compliance
 - Authority: Approve/reject models, require remediation
@@ -188,18 +197,21 @@ BOARD OF DIRECTORS
 ### Tier 1 - Immediate (30 days)
 
 **1. AML/KYC Program Policy**
+
 - Customer risk rating methodology
 - Enhanced due diligence procedures
 - Suspicious activity reporting
 - Ongoing monitoring requirements
 
 **2. AI Model Governance Policy**
+
 - Model development standards
 - Fair lending testing requirements
 - Approval and change management
 - Performance monitoring
 
 **3. Data Privacy Policy**
+
 - CCPA/GDPR compliance framework
 - Data subject rights procedures
 - Breach notification process
@@ -225,15 +237,16 @@ BOARD OF DIRECTORS
 
 ## MONITORING AND TESTING SCHEDULE
 
-| Compliance Area | Monitoring | Testing | Reporting |
-|-----------------|------------|---------|-----------|
-| AML/KYC | Continuous (automated) | Monthly sample testing | Monthly to Committee |
-| Fair Lending | Continuous (model monitoring) | Semi-annual bias testing | Quarterly to Board |
-| Data Privacy | Continuous (access logs) | Semi-annual controls testing | Quarterly to Committee |
-| Third-Party Risk | Quarterly vendor reviews | Semi-annual due diligence | Semi-annual to Board |
-| Consumer Complaints | Daily review | Monthly trend analysis | Monthly to Committee |
+| Compliance Area     | Monitoring                    | Testing                      | Reporting              |
+| ------------------- | ----------------------------- | ---------------------------- | ---------------------- |
+| AML/KYC             | Continuous (automated)        | Monthly sample testing       | Monthly to Committee   |
+| Fair Lending        | Continuous (model monitoring) | Semi-annual bias testing     | Quarterly to Board     |
+| Data Privacy        | Continuous (access logs)      | Semi-annual controls testing | Quarterly to Committee |
+| Third-Party Risk    | Quarterly vendor reviews      | Semi-annual due diligence    | Semi-annual to Board   |
+| Consumer Complaints | Daily review                  | Monthly trend analysis       | Monthly to Committee   |
 
 ### Automated Monitoring Priorities
+
 1. Transaction monitoring for suspicious activity
 2. Model performance drift detection
 3. Customer complaint pattern recognition
@@ -244,6 +257,7 @@ BOARD OF DIRECTORS
 ## IMPLEMENTATION ROADMAP
 
 ### Phase 1: Foundation (Months 1-3)
+
 **Focus: Address regulatory finding, build infrastructure**
 
 - Hire Chief Compliance Officer (Month 1)
@@ -256,6 +270,7 @@ BOARD OF DIRECTORS
 **Milestone:** Regulatory response demonstrating program enhancement
 
 ### Phase 2: Enhancement (Months 4-6)
+
 **Focus: AI governance, EU preparation**
 
 - Implement model risk framework (Month 4)
@@ -268,6 +283,7 @@ BOARD OF DIRECTORS
 **Milestone:** First Board compliance report with metrics
 
 ### Phase 3: Maturity (Months 7-12)
+
 **Focus: Automation, optimization, EU launch**
 
 - Predictive compliance analytics (Month 7-8)
@@ -284,13 +300,14 @@ BOARD OF DIRECTORS
 
 **Year 1 Total: $850K**
 
-| Category | Amount | Purpose |
-|----------|--------|---------|
-| Personnel | $450K | CCO hire, 2 additional compliance staff |
-| Technology | $275K | KYC platform, GRC system, monitoring tools |
-| External Services | $125K | Legal counsel, audit, specialized consulting |
+| Category          | Amount | Purpose                                      |
+| ----------------- | ------ | -------------------------------------------- |
+| Personnel         | $450K  | CCO hire, 2 additional compliance staff      |
+| Technology        | $275K  | KYC platform, GRC system, monitoring tools   |
+| External Services | $125K  | Legal counsel, audit, specialized consulting |
 
 **ROI Justification:**
+
 - Regulatory fine avoidance: $4M+ average for AML violations
 - EU market access enablement: $10M+ revenue opportunity
 - Reduced manual processes: 40% efficiency gain
@@ -298,5 +315,6 @@ BOARD OF DIRECTORS
 ---
 
 ## Related Prompts
+
 - [Contract Review Expert](contract-review-expert.md)
 - [Risk Assessment Expert](../project-management/comprehensive-risk-assessment.md)

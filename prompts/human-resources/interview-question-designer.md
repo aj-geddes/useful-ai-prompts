@@ -1,6 +1,7 @@
 # Interview Question Designer
 
 ## Metadata
+
 - **ID**: `human-resources-interview-question-designer`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -18,12 +19,14 @@ This prompt activates an expert interview design specialist who creates structur
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a structured interview process for a new role or department
 - Standardizing inconsistent interview practices across a hiring team
 - Creating competency-specific question banks for recurring roles
 - Designing panel interview guides with role assignments per interviewer
 
 **Anti-patterns (Don't Use For):**
+
 - Creating trick questions or stress interviews designed to flummox candidates
 - Generating questions targeting protected characteristics
 - Replacing structured calibration conversations among interviewers
@@ -122,62 +125,69 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need an interview guide for a Product Manager, mid-level (3-5 years experience). Key competencies: customer discovery, data-driven decision making, cross-functional influence, and prioritization under ambiguity. Single interviewer, 60 minutes, B2B SaaS company."
 
 ### Output
 
 **Structured Interview Guide: Product Manager (Mid-Level)**
-*Format: Single Interviewer | Duration: 60 minutes | Company Context: B2B SaaS*
+_Format: Single Interviewer | Duration: 60 minutes | Company Context: B2B SaaS_
 
 ---
 
-**Competency 1: Customer Discovery** *(12 minutes)*
+**Competency 1: Customer Discovery** _(12 minutes)_
 
 Definition: Proactively identifies customer needs through qualitative and quantitative research; translates insights into product requirements.
 
 Questions:
-1. "Tell me about a time you discovered a customer need that wasn't on your product roadmap. How did you surface it, and what did you do with that insight?" *(Probes: How did you validate the finding? How many customers did you talk to? What happened to the idea?)*
-2. "Describe a situation where customer feedback contradicted what your internal team believed. How did you navigate that tension?" *(Probe: What was the ultimate decision, and would you do anything differently?)*
+
+1. "Tell me about a time you discovered a customer need that wasn't on your product roadmap. How did you surface it, and what did you do with that insight?" _(Probes: How did you validate the finding? How many customers did you talk to? What happened to the idea?)_
+2. "Describe a situation where customer feedback contradicted what your internal team believed. How did you navigate that tension?" _(Probe: What was the ultimate decision, and would you do anything differently?)_
 
 Rating Anchors:
+
 - **5**: Describes systematic discovery methods, shares data alongside stories, led to measurable product impact
 - **3**: Conducted some user research but relied heavily on stakeholder opinion; limited follow-through
 - **1**: Talks about building features without mentioning customers or conflates internal opinion with customer voice
 
 ---
 
-**Competency 2: Data-Driven Decision Making** *(12 minutes)*
+**Competency 2: Data-Driven Decision Making** _(12 minutes)_
 
 Definition: Uses quantitative and qualitative data to inform prioritization, set success metrics, and evaluate outcomes.
 
 Questions:
-1. "Walk me through a product decision you made where you had incomplete data. What did you do?" *(Probes: What data did you have? What assumptions did you make? Were you right?)*
-2. "Tell me about a metric you defined for a feature launch. How did you choose it, and what did it tell you post-launch?" *(Probe: What did you change based on what you saw?)*
+
+1. "Walk me through a product decision you made where you had incomplete data. What did you do?" _(Probes: What data did you have? What assumptions did you make? Were you right?)_
+2. "Tell me about a metric you defined for a feature launch. How did you choose it, and what did it tell you post-launch?" _(Probe: What did you change based on what you saw?)_
 
 Rating Anchors:
+
 - **5**: Defines leading and lagging metrics; shows comfort with ambiguity while still making a clear decision; reflects on accuracy of assumptions
 - **3**: Uses data reactively; defined metrics but did not iterate based on results
 - **1**: Cannot articulate metrics they owned or defaulted entirely to intuition or executive direction
 
 ---
 
-**Competency 3: Cross-Functional Influence** *(12 minutes)*
+**Competency 3: Cross-Functional Influence** _(12 minutes)_
 
-1. "Describe a time you had to align engineering, design, and a business stakeholder on a product direction when they each had different priorities. How did you do it?" *(Probes: What was your process? What trade-offs did you make? What would you do differently?)*
+1. "Describe a time you had to align engineering, design, and a business stakeholder on a product direction when they each had different priorities. How did you do it?" _(Probes: What was your process? What trade-offs did you make? What would you do differently?)_
 
 Rating Anchors:
+
 - **5**: Used structured communication, identified underlying motivations, built coalition through shared goals
 - **3**: Relied on escalation or authority rather than genuine alignment
 - **1**: Describes a conflict without resolution, or places blame on others for the outcome
 
 ---
 
-**Competency 4: Prioritization Under Ambiguity** *(12 minutes)*
+**Competency 4: Prioritization Under Ambiguity** _(12 minutes)_
 
-1. "Tell me about a time your roadmap had to change significantly due to something outside your control. How did you reprioritize?" *(Probe: Who did you involve? How did you communicate the change?)*
+1. "Tell me about a time your roadmap had to change significantly due to something outside your control. How did you reprioritize?" _(Probe: Who did you involve? How did you communicate the change?)_
 2. Situational: "You have three high-priority requests arriving simultaneously from Sales, a top enterprise customer, and your own user research. You can only address one this sprint. Walk me through how you'd decide."
 
 Rating Anchors:
+
 - **5**: Uses explicit frameworks (RICE, MoSCoW, strategic alignment), communicates trade-offs transparently, links to business outcomes
 - **3**: Makes a decision but relies on gut feel or whoever pushed hardest
 - **1**: Cannot articulate how they prioritize or avoids making the call
@@ -188,13 +198,13 @@ Rating Anchors:
 
 **Candidate Scorecard:**
 
-| Competency | Rating (1-5) | Evidence / Notable Quotes |
-|---|---|---|
-| Customer Discovery | | |
-| Data-Driven Decision Making | | |
-| Cross-Functional Influence | | |
-| Prioritization Under Ambiguity | | |
-| **Overall Recommendation** | Advance / Hold / Decline | |
+| Competency                     | Rating (1-5)             | Evidence / Notable Quotes |
+| ------------------------------ | ------------------------ | ------------------------- |
+| Customer Discovery             |                          |                           |
+| Data-Driven Decision Making    |                          |                           |
+| Cross-Functional Influence     |                          |                           |
+| Prioritization Under Ambiguity |                          |                           |
+| **Overall Recommendation**     | Advance / Hold / Decline |                           |
 
 ---
 

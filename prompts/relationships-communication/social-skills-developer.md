@@ -1,6 +1,7 @@
 # Social Skills Developer
 
 ## Metadata
+
 - **ID**: `social-skills-developer`
 - **Version**: 1.1.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Improve interpersonal communication, build stronger relationships, and develop c
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building social confidence in new situations
 - Improving conversation abilities and small talk
 - Developing networking and connection skills
@@ -26,6 +28,7 @@ Improve interpersonal communication, build stronger relationships, and develop c
 - Making meaningful connections beyond surface-level
 
 **Anti-Patterns (When NOT to Use):**
+
 - Clinical social anxiety disorder requiring treatment
 - Autism spectrum support needing specialized approaches
 - Professional therapy needs
@@ -107,9 +110,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I rate my social skills at 4/10. I'm okay in small, familiar groups but struggle at networking events and parties where I don't know people. I run out of things to say after initial small talk. I feel like I'm boring. I need to improve for both my career and my desire to make new friends.
 
 ### Output
+
 **Social Skills Development Plan: From Awkward to Engaged**
 
 **Assessment**
@@ -120,39 +125,45 @@ Stop trying to be interesting. Try to be interested. The most socially skilled p
 
 **Conversation Architecture**
 
-*Opening (Small Talk Phase)*
+_Opening (Small Talk Phase)_
 Start with context + genuine curiosity:
+
 - "How do you know [host/organizer]?"
 - "What brings you to this event?"
 - "Have you been to one of these before?"
 
-*Bridge (The Transition)*
+_Bridge (The Transition)_
 This is where you go deeper. After their answer, follow the thread:
+
 - "What got you into that?"
 - "What's the best part of that for you?"
 - "That's interesting; tell me more about that."
 
-*Depth (Real Connection)*
+_Depth (Real Connection)_
 Share something personal in return:
+
 - "I can relate to that. I've experienced something similar when..."
 - "That reminds me of..."
 - "I've always been curious about that because..."
 
 **The "Boring" Problem**
 You run out of things to say because you're thinking about yourself. Shift focus to them:
+
 - Their answers contain 3-4 follow-up questions. Listen for them.
 - People love talking about themselves. Let them.
 - Your job is to be curious, not entertaining.
 
 **Conversation Survival Kit**
 
-*Universal Questions That Go Deeper*
+_Universal Questions That Go Deeper_
+
 - "What are you excited about right now?"
 - "What's been the highlight of your week?"
 - "What's something you're looking forward to?"
 - "What do you do when you're not working?"
 
-*When You Don't Know What to Say*
+_When You Don't Know What to Say_
+
 - "Tell me more about that."
 - "What was that like?"
 - "How did you get into that?"
@@ -160,34 +171,40 @@ You run out of things to say because you're thinking about yourself. Shift focus
 
 **Graceful Exits**
 You don't have to talk to one person all night:
+
 - "It was great talking with you. I'm going to grab a drink/say hi to someone."
 - "I'll let you mingle. Enjoy the rest of the event!"
 - "I'd love to continue this conversation sometime. Are you on LinkedIn?"
 
 **Confidence-Building Approach**
 
-*Progressive Challenges*
+_Progressive Challenges_
+
 - Week 1: Arrive at events with 3 questions prepared. Use them.
 - Week 2: Goal of 5-minute conversations with 3 people at an event
 - Week 3: Initiate one conversation by approaching someone standing alone
 - Week 4: Follow up with one person you met (LinkedIn, text)
 
-*Before Events*
+_Before Events_
+
 - Remind yourself: "I'm here to learn about interesting people"
 - Review your go-to questions
 - Arrive early (fewer people, lower pressure)
 
-*During Events*
+_During Events_
+
 - Look for others standing alone; they want to be approached
 - Sit at tables that aren't full yet
 - Position near the food/drinks (natural conversation spot)
 
 **Practice in Low-Stakes Situations**
+
 - Chat with baristas, grocery clerks, people in lines
 - Make small talk with colleagues you don't usually talk to
 - Practice asking deeper follow-up questions with friends
 
 **Signs of Progress**
+
 - Conversations lasting longer naturally
 - People seeking you out at events
 - Feeling less dread before social situations
@@ -196,6 +213,7 @@ You don't have to talk to one person all night:
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md) - For broader communication development
 - [Active Listening Trainer](active-listening-trainer.md) - For deep listening skills
 - [Networking Strategist](../career-development/networking-strategist.md) - For professional networking focus

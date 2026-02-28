@@ -1,6 +1,7 @@
 # Cost-Benefit Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-cost-benefit-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Evaluates projects and investments through rigorous financial analysis including NPV, IRR, and payback calculations. Delivers comprehensive cost-benefit assessments with risk-adjusted scenarios and clear recommendations.
 
 ## When to Use
+
 - Evaluating capital investments or major projects
 - Building business cases for resource allocation
 - Comparing alternative investment options
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Evaluating a new CRM system for our sales team. Total investment: $250,000 (software, implementation, training) over 6-month implementation. Benefits: increased sales efficiency, better customer insights, reduced admin time. Hurdle rate is 15%, need to stay under $300K budget. Main risks are user adoption and integration complexity. We could alternatively keep current system (no cost) or do a basic upgrade for $50K.
 ```
 
 ### Output
+
 ```
 **CRM Implementation Cost-Benefit Analysis**
 
@@ -163,6 +168,7 @@ Status Quo          -$156,000  High    Poor
 ---
 
 ## Related Prompts
+
 - `evaluation-assessment-roi-analysis-expert`: Detailed ROI calculations
 - `analysis-risk-assessment-expert`: Risk evaluation frameworks
 - `analysis-financial-modeling-expert`: Complex financial projections

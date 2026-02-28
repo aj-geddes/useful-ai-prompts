@@ -1,6 +1,7 @@
 # Technical Challenge Resolution Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-technical-challenge`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -100,12 +101,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Challenge: Need to sync data across 5 microservices in real-time. Currently using polling which causes 30-second delays and inconsistencies. Need sub-second sync, handling 10K updates/second. Tried event streaming but had message ordering issues. Using Node.js, PostgreSQL, Redis.
 ```
 
 ### Output
+
 **Problem Analysis**
+
 - Current: Polling-based sync with 30-second delays
 - Root Issues: No event-driven architecture, ordering not guaranteed
 - Scale: 10K updates/second = 600K/minute, significant volume
@@ -113,16 +117,17 @@ Challenge: Need to sync data across 5 microservices in real-time. Currently usin
 
 **Solution Options**
 
-| Approach | Latency | Ordering | Complexity | Scale |
-|----------|---------|----------|------------|-------|
-| Kafka with partitions | <1s | Per-partition | High | Excellent |
-| Redis Streams | <100ms | Per-stream | Medium | Good |
-| PostgreSQL LISTEN/NOTIFY | <100ms | Single channel | Low | Limited |
-| Outbox pattern + CDC | <1s | Guaranteed | High | Excellent |
+| Approach                 | Latency | Ordering       | Complexity | Scale     |
+| ------------------------ | ------- | -------------- | ---------- | --------- |
+| Kafka with partitions    | <1s     | Per-partition  | High       | Excellent |
+| Redis Streams            | <100ms  | Per-stream     | Medium     | Good      |
+| PostgreSQL LISTEN/NOTIFY | <100ms  | Single channel | Low        | Limited   |
+| Outbox pattern + CDC     | <1s     | Guaranteed     | High       | Excellent |
 
 **Recommended: Redis Streams + Outbox Pattern**
 
-*Why This Combination*
+_Why This Combination_
+
 - Redis Streams: Sub-100ms delivery, native ordering per stream
 - Outbox Pattern: Guarantees consistency between DB and events
 - Fits existing stack: Already using Redis and PostgreSQL
@@ -142,60 +147,66 @@ Service A -> DB Write + Outbox Entry (atomic)
 
 **Implementation**
 
-*Phase 1: Outbox Pattern (Week 1-2)*
+_Phase 1: Outbox Pattern (Week 1-2)_
+
 ```javascript
 // Atomic write + event
 await db.transaction(async (tx) => {
-  await tx.insert('orders', orderData);
-  await tx.insert('outbox', {
+  await tx.insert("orders", orderData);
+  await tx.insert("outbox", {
     aggregate_id: orderId,
-    event_type: 'ORDER_CREATED',
+    event_type: "ORDER_CREATED",
     payload: JSON.stringify(orderData),
-    created_at: new Date()
+    created_at: new Date(),
   });
 });
 ```
 
-*Phase 2: CDC to Redis Streams (Week 3-4)*
+_Phase 2: CDC to Redis Streams (Week 3-4)_
+
 ```javascript
 // Redis Stream consumer
 const consumer = new RedisStreamConsumer({
-  stream: 'orders',
-  group: 'inventory-service',
-  consumer: 'consumer-1'
+  stream: "orders",
+  group: "inventory-service",
+  consumer: "consumer-1",
 });
 
-consumer.on('message', async (message) => {
+consumer.on("message", async (message) => {
   await processOrderEvent(message);
   await consumer.ack(message.id);
 });
 ```
 
-*Phase 3: Service Integration (Week 5-6)*
+_Phase 3: Service Integration (Week 5-6)_
+
 - Convert each service to stream consumer
 - Implement idempotency for duplicate handling
 - Add monitoring and alerting
 
 **Ordering Guarantee**
+
 - Partition by entity ID (e.g., order_id)
 - Single consumer per partition ensures ordering
 - Consumer groups allow scaling with ordering preserved
 
 **Risk Mitigation**
 
-| Risk | Probability | Mitigation |
-|------|-------------|------------|
-| Redis failure | Low | Redis Sentinel, fallback to polling |
-| Message loss | Low | At-least-once delivery, idempotency |
-| Consumer lag | Medium | Monitoring, auto-scaling consumers |
-| Ordering violation | Low | Partition key design, testing |
+| Risk               | Probability | Mitigation                          |
+| ------------------ | ----------- | ----------------------------------- |
+| Redis failure      | Low         | Redis Sentinel, fallback to polling |
+| Message loss       | Low         | At-least-once delivery, idempotency |
+| Consumer lag       | Medium      | Monitoring, auto-scaling consumers  |
+| Ordering violation | Low         | Partition key design, testing       |
 
 **Rollback Plan**
+
 - Keep polling infrastructure for 30 days
 - Feature flag to switch between modes
 - Gradual rollout by service
 
 **Success Criteria**
+
 - Sync latency: <500ms for 95th percentile
 - Throughput: Handle 15K updates/second (50% headroom)
 - Consistency: Zero ordering violations in testing

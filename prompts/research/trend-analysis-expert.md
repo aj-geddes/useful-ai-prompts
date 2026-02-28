@@ -1,6 +1,7 @@
 # Trend Analysis Expert
 
 ## Metadata
+
 - **ID**: `research-trend-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables strategists, analysts, and researchers to rigorously identify and evaluate market, technology, and social trends — distinguishing meaningful signals from noise, assessing trend maturity and adoption trajectory, and building scenario plans that prepare organizations for multiple plausible futures.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Building a strategic plan that must account for medium-to-long-term market or technology shifts
 - Evaluating whether a specific trend is relevant to your business and at what timescale
 - Preparing a foresight report for leadership on emerging forces that may disrupt current strategy
 
 **Anti-patterns (Don't Use For):**
+
 - Short-term market prediction or financial forecasting requiring quantitative models
 - Trend tracking requiring real-time data feeds or market monitoring tools
 - Consumer trend validation requiring primary research with actual consumers
@@ -66,10 +71,13 @@ Avoid: Treating all trends as equally relevant regardless of maturity; scenarios
 ---
 
 ## Example Usage
+
 ### Input
+
 "I'm a strategy director at a mid-size commercial real estate firm. We manage 2.8M square feet of office properties. Our CEO wants a trend analysis to inform our 2027-2030 strategy. The biggest uncertainty is the future of office demand — we need to understand the forces shaping that and what scenarios we should plan for."
 
 ### Output
+
 **Trend Analysis — Commercial Office Real Estate, 2026-2030**
 Client Context: 2.8M sq ft office portfolio | Time Horizon: 3-5 years
 
@@ -77,31 +85,34 @@ Client Context: 2.8M sq ft office portfolio | Time Horizon: 3-5 years
 
 **Trend Inventory**
 
-| # | Trend | Dimension | Maturity | Your Relevance | Time Horizon |
-|---|-------|-----------|----------|----------------|-------------|
-| T-01 | Hybrid work as permanent workforce expectation, not temporary COVID response | Social/Labor | Growing | HIGH | Now-2027 |
-| T-02 | Flight to quality — tenants consolidating into smaller, higher-spec space | Market | Growing | HIGH | Now-2027 |
-| T-03 | AI-driven space utilization analytics enabling precise right-sizing | Technology | Emerging | HIGH | 2027-2029 |
-| T-04 | Office-to-residential conversion as viable alternative use | Market/Regulatory | Growing | HIGH | Now-2028 |
-| T-05 | ESG mandates requiring LEED/BREEAM certification for institutional tenant leases | Regulatory | Maturing | HIGH | Now-2026 |
-| T-06 | Distributed HQ model — companies leaving major CBDs for secondary cities | Market | Emerging | MEDIUM | 2027-2030 |
-| T-07 | Biophilic and wellness-designed offices as talent retention tool | Social | Growing | MEDIUM | Now-2028 |
-| T-08 | Remote-first tech companies reducing physical footprint permanently | Market | Growing | MEDIUM | Now-2027 |
+| #    | Trend                                                                            | Dimension         | Maturity | Your Relevance | Time Horizon |
+| ---- | -------------------------------------------------------------------------------- | ----------------- | -------- | -------------- | ------------ |
+| T-01 | Hybrid work as permanent workforce expectation, not temporary COVID response     | Social/Labor      | Growing  | HIGH           | Now-2027     |
+| T-02 | Flight to quality — tenants consolidating into smaller, higher-spec space        | Market            | Growing  | HIGH           | Now-2027     |
+| T-03 | AI-driven space utilization analytics enabling precise right-sizing              | Technology        | Emerging | HIGH           | 2027-2029    |
+| T-04 | Office-to-residential conversion as viable alternative use                       | Market/Regulatory | Growing  | HIGH           | Now-2028     |
+| T-05 | ESG mandates requiring LEED/BREEAM certification for institutional tenant leases | Regulatory        | Maturing | HIGH           | Now-2026     |
+| T-06 | Distributed HQ model — companies leaving major CBDs for secondary cities         | Market            | Emerging | MEDIUM         | 2027-2030    |
+| T-07 | Biophilic and wellness-designed offices as talent retention tool                 | Social            | Growing  | MEDIUM         | Now-2028     |
+| T-08 | Remote-first tech companies reducing physical footprint permanently              | Market            | Growing  | MEDIUM         | Now-2027     |
 
 ---
 
 **Signal vs. Noise Assessment**
 
 **Strong Signals (structural drivers present):**
+
 - T-01 (Hybrid permanence): Labor market data, lease renewal patterns, and corporate real estate surveys consistently show hybrid as the new baseline, not a transition phase. CBRE reports 60%+ of office leases renewed post-2023 involved footprint reductions.
 - T-02 (Flight to quality): Class A vacancy rates in major markets are declining while Class B/C vacancy is rising. This is not hype — it reflects tenant consolidation into fewer, better spaces.
 - T-05 (ESG mandates): Corporate sustainability commitments are now embedded in many Fortune 500 real estate procurement criteria. This trend has structural regulatory backing (EU CSRD, SEC climate disclosure).
 
 **Mixed Signal / Monitor:**
+
 - T-04 (Office-to-residential): Real conversions are happening but remain challenged by building structure, zoning, and unit economics. High hype; moderate near-term impact.
 - T-06 (Distributed HQ): Anecdotal evidence strong; aggregate data still shows talent concentration in major metros. Watch carefully — could inflect by 2028.
 
 **Noise / Overhyped:**
+
 - Fully virtual/metaverse office (not included in inventory): consistently fails to gain enterprise adoption beyond experimentation.
 
 ---
@@ -109,6 +120,7 @@ Client Context: 2.8M sq ft office portfolio | Time Horizon: 3-5 years
 **Scenario Matrix**
 
 Axes selected based on highest uncertainty AND highest impact:
+
 - Axis X: Office demand trajectory (Gradual stabilization → Continued structural decline)
 - Axis Y: Capital market conditions (Favorable financing available → Constrained/high-cost capital)
 
@@ -149,9 +161,11 @@ Strategic implications: Extend remaining leases aggressively now while demand ex
 ---
 
 ## Variations
+
 - **Technology Trend Radar**: Deep-dive technology trend analysis for product or innovation strategy teams
 - **Regulatory Foresight Scan**: Focused on emerging regulatory trends and compliance implications for a specific industry
 
 ## Related Prompts
+
 - [Secondary Research Specialist](secondary-research-specialist.md) - Gather literature and reports to substantiate trend drivers
 - [Research Findings Presenter](research-findings-presenter.md) - Turn foresight analysis into a compelling executive presentation

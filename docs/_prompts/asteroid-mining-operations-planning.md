@@ -3,26 +3,27 @@ title: Asteroid Mining Operations Planning
 slug: asteroid-mining-operations-planning
 category: space economy/resources
 tags:
-- asteroid-mining
-- space-resources
-- extraction-technology
-- resource-economics
-- deep-space
+  - asteroid-mining
+  - space-resources
+  - extraction-technology
+  - resource-economics
+  - deep-space
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Plan asteroid mining operations including target selection, mission architecture,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Plan asteroid mining operations including target selection, mission architecture,
   extraction technology, and resource economics. Combines space engineering expertise
   with mining economics to develop technically feasible and commercially viable resource
   extraction operations from near-Earth and main-belt asteroids.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing asteroid mining mission architectures
-- Evaluating asteroid targets and resource potential
-- Developing extraction and processing technology strategies
-- Assessing space mining economics and investment cases
+  - Ideal Scenarios:**
+  - Designing asteroid mining mission architectures
+  - Evaluating asteroid targets and resource potential
+  - Developing extraction and processing technology strategies
+  - Assessing space mining economics and investment cases
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ The user requires planning for asteroid mining operations that must address sign
 
 <input_handling>
 Required Inputs:
+
 - Target resource type (water, platinum group metals, metals, volatiles)
 - Mission scope and development timeline
 - Investment parameters and budget constraints
 
 Optional Inputs (will infer reasonable defaults if not provided):
+
 - Mission type: Robotic autonomous extraction
 - Target class: Near-Earth asteroids (low delta-v, <6 km/s)
 - Processing approach: In-situ processing with Earth return for high-value materials
 - Development philosophy: Phased with decision gates
-</input_handling>
+  </input_handling>
 
 <task>
 Plan asteroid mining operations by following these steps:
@@ -62,12 +65,13 @@ Plan asteroid mining operations by following these steps:
 5. **Plan Logistics and Return**: Design material return approach (Earth return vs. in-space utilization) optimizing for target market and value chain
 
 6. **Assess Risks and Mitigation**: Identify key technical, market, and execution risks with probability, impact, and mitigation strategies
-</task>
+   </task>
 
 <output_specification>
 Format: Asteroid Mining Operations Plan with Economic Analysis
 Length: 2,000-3,500 words
 Structure:
+
 - Mission overview with key parameters
 - Target selection with prioritized asteroid list
 - Phased mission architecture with timeline and costs
@@ -76,10 +80,11 @@ Structure:
 - Economic analysis with return scenarios
 - Risk assessment with mitigation strategies
 - Development pathway with decision gates
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Technically feasible mission architecture
 - Realistic economic analysis with appropriate uncertainty
 - Appropriate technology readiness assessment
@@ -87,12 +92,13 @@ Excellent outputs demonstrate:
 - Clear development pathway with decision gates
 
 Avoid:
+
 - Technically infeasible concepts (ignoring physics constraints)
 - Overly optimistic economics without uncertainty ranges
 - Ignoring technology gaps or TRL requirements
 - Underestimating mission complexity or costs
 - Single-scenario projections without sensitivity analysis
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Apply realistic delta-v requirements and orbital mechanics

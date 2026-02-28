@@ -1,6 +1,7 @@
 # Credit Score Improver
 
 ## Metadata
+
 - **ID**: `financial-planning-credit-score-improver`
 - **Version**: 2.0.0
 - **Category**: Financial Planning/Credit
@@ -18,6 +19,7 @@ Create strategic plans to improve credit scores through targeted actions address
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving credit score for major purchases (mortgage, auto loan)
 - Recovering from credit setbacks (late payments, collections)
 - Optimizing credit utilization and credit mix
@@ -25,6 +27,7 @@ Create strategic plans to improve credit scores through targeted actions address
 - Preparing for credit-dependent applications
 
 **Anti-Patterns (When NOT to Use):**
+
 - Debt consolidation loan decisions
 - Bankruptcy counseling or filing guidance
 - Loan application processing
@@ -44,16 +47,18 @@ Credit scores significantly impact borrowing costs, insurance rates, and even em
 
 <input_handling>
 Required Inputs:
+
 - Current credit score range
 - Main negative items on credit report
 - Credit improvement goal and timeline
 
 Optional Inputs (Inferred if not provided):
+
 - Credit scoring model (default: FICO 8 as primary)
 - Current utilization rate (request if not provided for accurate planning)
 - Payment history status (assume issues if seeking improvement)
 - Number and types of credit accounts
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive credit improvement plan with timeline and specific actions.
@@ -69,27 +74,30 @@ Step 5: Develop timeline with expected score improvements at each milestone
 Format: Credit Improvement Plan with factor analysis and timeline
 Length: 700-1000 words
 Structure:
+
 - Credit Factor Analysis table with weights and priorities
 - Priority Actions ranked by impact
 - Utilization Optimization Strategy with targets
 - Dispute Strategy process
 - Expected Timeline with score ranges
 - Preparation Checklist for goal achievement
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Focus on highest-impact factors first
 - Specific, immediately actionable steps
 - Realistic score improvement expectations (not guaranteed amounts)
 - Balance of quick wins and long-term strategies
 
 Outputs must avoid:
+
 - Promising specific score increases (individual results vary)
 - Recommending credit repair scams or illegal practices
 - Ignoring stated timeline constraints
 - Generic advice without personalization to situation
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Use FICO scoring factor weights for prioritization
@@ -103,6 +111,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Credit score is around 620. Have 2 late payments from 18 months ago, credit utilization at 65%, and one collection for $800. Want to get to 700+ to qualify for a mortgage in 12 months."
 
 ### Output
@@ -121,19 +130,22 @@ Outputs must avoid:
 
 **Priority Actions (Ranked by Impact)**
 
-*Critical: Utilization Reduction (30-50 point potential)*
+_Critical: Utilization Reduction (30-50 point potential)_
+
 - Target: Reduce from 65% to under 30%, ideally under 10%
 - Strategy: Pay down highest-utilization cards first
 - Timeline: Achieve <30% by month 3, <10% by month 6
 - Quick win: Request credit limit increases (soft pull if possible)
 
-*High: Collection Resolution (20-40 point potential)*
+_High: Collection Resolution (20-40 point potential)_
+
 - Option A: Pay-for-delete negotiation (offer $600 to remove)
 - Option B: If pay-for-delete fails, pay in full with dispute rights
 - Timeline: Resolve by month 2
 - Note: Paid collection still shows but "paid" status helps
 
-*Medium: Payment History (Maintain and Protect)*
+_Medium: Payment History (Maintain and Protect)_
+
 - Action: Set up autopay on all accounts
 - Late payments age off after 7 years (5.5 years remaining)
 - Cannot remove accurate late payments, but impact diminishes over time
@@ -141,45 +153,50 @@ Outputs must avoid:
 
 **Utilization Optimization Strategy**
 
-*Current situation*: $6,500 balance on $10,000 total credit = 65%
+_Current situation_: $6,500 balance on $10,000 total credit = 65%
 
-*Target by Month 3*: $3,000 balance = 30%
-*Target by Month 6*: $1,000 balance = 10%
+_Target by Month 3_: $3,000 balance = 30%
+_Target by Month 6_: $1,000 balance = 10%
 
-*Monthly paydown plan*:
+_Monthly paydown plan_:
+
 - Month 1-3: Pay $1,167/month extra toward credit cards
 - Month 4-6: Continue $1,000/month to reach 10%
 - Ongoing: Pay statement balance in full each month
 
-*Credit limit strategy*:
+_Credit limit strategy_:
+
 - Request increases on existing cards (adds to denominator)
 - $5K limit increase = 52% utilization even without paydown
 - Combined with paydown: Much faster improvement
 
 **Dispute Strategy**
 
-*Collection account*:
+_Collection account_:
+
 1. Request debt validation letter first
 2. Review for any inaccuracies (dates, amounts, owner)
 3. Dispute any inaccuracies through credit bureaus
 4. If validated, negotiate pay-for-delete
 
-*Late payments*:
+_Late payments_:
+
 - If any inaccuracies exist, dispute
 - If accurate, focus on other factors (cannot remove accurate info)
 
 **Expected Timeline**
 
-| Month | Action | Expected Score Range |
-|-------|--------|---------------------|
-| 1 | Begin paydown, request credit limits | 625-640 |
-| 2 | Resolve collection | 650-670 |
-| 3 | Utilization under 30% | 660-680 |
-| 6 | Utilization under 10% | 680-700 |
-| 9 | Continued perfect payments | 690-710 |
-| 12 | Mortgage application ready | 700-720 |
+| Month | Action                               | Expected Score Range |
+| ----- | ------------------------------------ | -------------------- |
+| 1     | Begin paydown, request credit limits | 625-640              |
+| 2     | Resolve collection                   | 650-670              |
+| 3     | Utilization under 30%                | 660-680              |
+| 6     | Utilization under 10%                | 680-700              |
+| 9     | Continued perfect payments           | 690-710              |
+| 12    | Mortgage application ready           | 700-720              |
 
 **Mortgage Preparation Checklist**
+
 - 6+ months of perfect payments before application
 - Utilization under 10% at statement close dates
 - No new credit applications 3-6 months before mortgage

@@ -1,6 +1,7 @@
 # Support Ticket Classifier
 
 ## Metadata
+
 - **ID**: `customer-service-support-ticket-classifier`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt enables a support triage expert to classify incoming tickets by type
 ## When to Use
 
 **Ideal Scenarios:**
+
 - High-volume inboxes where manual triage creates bottlenecks or inconsistency
 - Onboarding new support agents who need guidance on routing logic
 - Auditing existing ticket classification to identify systemic routing errors
 
 **Anti-patterns (Don't Use For):**
+
 - Resolving tickets — this tool classifies, it does not answer
 - Situations requiring deep account history or CRM lookup to route correctly
 
@@ -71,9 +74,11 @@ Flag ambiguous tickets rather than guessing.
 ## Example Usage
 
 ### Input
+
 "Subject: Can't log in - urgent, our whole team is locked out!! Body: Hi, we've been trying to log in since 8am and every account on our domain shows 'authentication failed'. We have a board presentation at 2pm today and need access immediately. We're on the Enterprise plan. - Sarah Chen, VP Operations, Meridian Partners"
 
 ### Output
+
 **Ticket Classification: Meridian Partners Login Issue**
 
 **Issue Type:** Technical — Authentication/Account Access (Domain-wide outage)
@@ -91,6 +96,7 @@ Flag ambiguous tickets rather than guessing.
 **Recommended SLA:** Initial response within 15 minutes; resolution or workaround within 60 minutes.
 
 **Routing Notes:**
+
 - Assign to senior technical support agent with SSO/authentication expertise
 - Loop in Customer Success Manager for Meridian Partners account
 - Check status page — if similar tickets are trending in last 60 minutes, this may indicate a platform-wide auth incident; escalate to engineering on-call
@@ -102,10 +108,12 @@ Flag ambiguous tickets rather than guessing.
 ---
 
 ## Variations
+
 - **Bulk Triage Mode**: Classify 10-50 tickets at once and output a prioritized queue with summary statistics by issue type and priority distribution
 - **Custom Taxonomy Mode**: Accept a company-specific routing map and tag list, then classify against that schema instead of the default framework
 
 ## Related Prompts
+
 - [Escalation Handler](escalation-handler.md) - Managing high-tension escalations after initial triage
 - [Service Level Designer](service-level-designer.md) - Defining the SLA tiers used in classification
 - [Knowledge Base Builder](knowledge-base-builder.md) - Deflecting P3/P4 tickets with self-serve content

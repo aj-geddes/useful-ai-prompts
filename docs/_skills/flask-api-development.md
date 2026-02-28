@@ -1,15 +1,16 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Develop lightweight Flask APIs with routing, blueprints, database integration,
+date: "2025-01-01"
+description:
+  Develop lightweight Flask APIs with routing, blueprints, database integration,
   authentication, and request/response handling. Use when building RESTful APIs, microservices,
   or lightweight web services with Flask.
 layout: skill
 slug: flask-api-development
 tags:
-- flask
-- api
-- data
+  - flask
+  - api
+  - data
 title: flask-api-development
 ---
 
@@ -405,6 +406,7 @@ def create_app(config_name='development'):
 ## Best Practices
 
 ### ✅ DO
+
 - Use blueprints for modular organization
 - Implement proper authentication with JWT
 - Validate all user input
@@ -417,6 +419,7 @@ def create_app(config_name='development'):
 - Use environment variables for configuration
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use global variables for shared state
 - Ignore database transactions

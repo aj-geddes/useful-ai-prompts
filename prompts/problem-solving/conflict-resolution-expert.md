@@ -1,6 +1,7 @@
 # Conflict Resolution Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-conflict-resolution`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A conflict resolution specialist that helps you navigate and resolve interperson
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Resolving workplace conflicts between team members
 - Mediating disagreements between departments or stakeholders
 - De-escalating tense situations before they escalate further
@@ -25,6 +27,7 @@ A conflict resolution specialist that helps you navigate and resolve interperson
 - Addressing recurring friction patterns in teams
 
 **Anti-Patterns (when not to use):**
+
 - Legal disputes requiring formal arbitration (consult legal counsel)
 - Harassment or discrimination investigations (involve HR/legal)
 - Family or personal relationship mediation (use family-relationship-counselor)
@@ -116,22 +119,24 @@ Conflict: Senior developer and product manager disagree on technical approach fo
 
 **Conflict Analysis**
 
-*Surface Issue*: Technology choice for feature implementation
+_Surface Issue_: Technology choice for feature implementation
 
-*Deeper Interests*:
+_Deeper Interests_:
+
 - Developer: Professional growth, working with modern technology, building something to be proud of, avoiding technical debt
 - PM: Project success, meeting deadline commitments, reducing risk, demonstrating reliable delivery
 
-*Root Cause*: Both genuinely care about project success but define "best approach" through different lenses - technical excellence vs. delivery reliability. Neither feels heard by the other.
+_Root Cause_: Both genuinely care about project success but define "best approach" through different lenses - technical excellence vs. delivery reliability. Neither feels heard by the other.
 
-*Emotional Components*:
+_Emotional Components_:
+
 - Developer: Feels expertise is being dismissed, frustrated by perceived short-term thinking
 - PM: Feels responsibility for delivery is being ignored, stressed about stakeholder commitments
 - Impact: Personal attacks indicate shift from professional disagreement to damaged relationship
 
 **De-escalation Approach**
 
-*Immediate Actions (Today)*
+_Immediate Actions (Today)_
 
 1. **Acknowledge the impasse**: "I recognize this decision has become contentious, and I want to help us find a path forward that works for everyone."
 
@@ -139,25 +144,28 @@ Conflict: Senior developer and product manager disagree on technical approach fo
 
 3. **Signal collaborative intent**: "Both of you are essential to this project's success. I need both perspectives to make the right choice."
 
-*Individual Meetings First*
+_Individual Meetings First_
 
 Meet with each person separately (30 minutes each) before any joint discussion. This allows venting, builds trust, and reveals underlying interests.
 
 **Individual Meeting Framework**
 
-*Questions for Developer (Alex):*
+_Questions for Developer (Alex):_
+
 - "Help me understand your perspective on this decision. Walk me through your reasoning."
 - "What concerns you most about the alternative approach?"
 - "Beyond this project, what's important to you about how we make technical decisions?"
 - "What would help you feel more comfortable if we went with the monolithic approach?"
 
-*Questions for PM (Jordan):*
+_Questions for PM (Jordan):_
+
 - "Tell me about the pressures you're facing on timeline and delivery."
 - "What worries you about the microservices approach?"
 - "What would success look like for you on this project?"
 - "If we chose microservices, what would need to be true for you to feel confident?"
 
-*Listen For*:
+_Listen For_:
+
 - Unspoken fears or concerns
 - Past experiences influencing current positions
 - Potential flexibility or conditions for compromise
@@ -165,51 +173,61 @@ Meet with each person separately (30 minutes each) before any joint discussion. 
 
 **Structured Dialogue Guide (Joint Meeting)**
 
-*Setup (5 minutes)*
+_Setup (5 minutes)_
+
 - "Thank you both for taking time to work through this together."
 - "My goal is to find a solution we can all support, not to pick a winner."
 
-*Ground Rules*:
+_Ground Rules_:
+
 1. Focus on project interests, not criticisms of each other
 2. No interrupting - each person speaks fully
 3. Assume positive intent from each other
 4. "We're on the same team solving a problem together"
 
-*Shared Goal Alignment (5 minutes)*
+_Shared Goal Alignment (5 minutes)_
+
 - "What do we all agree we want for this project?"
 - Write down shared goals: successful delivery, quality code, team satisfaction, etc.
 
-*Understanding Perspectives (15 minutes each)*
+_Understanding Perspectives (15 minutes each)_
+
 - Each person explains their concerns about the OTHER approach (not why theirs is better)
 - "Alex, explain what worries you about the monolithic approach."
 - "Jordan, explain what worries you about microservices."
 
-*Finding Common Ground (10 minutes)*
+_Finding Common Ground (10 minutes)_
+
 - "Where do you actually agree?"
 - "What criteria should drive this decision?"
 
-*Option Generation (15 minutes)*
+_Option Generation (15 minutes)_
+
 - Brainstorm options together - no criticism during this phase
 - Consider hybrid approaches, phased implementations, risk mitigation strategies
 
 **Resolution Options**
 
-*Option 1: Microservices Pilot*
+_Option 1: Microservices Pilot_
+
 - Build one component as microservice to validate approach
 - If successful after 2 weeks, continue; if problematic, revert
 - Developer gets to prove concept; PM gets risk limitation
 
-*Option 2: Monolithic with Migration Path*
+_Option 2: Monolithic with Migration Path_
+
 - Start with proven approach for delivery certainty
 - Document and design for future microservice migration in v2
 - PM gets delivery confidence; Developer gets future architectural direction
 
-*Option 3: Hybrid Architecture*
+_Option 3: Hybrid Architecture_
+
 - Core feature as monolith for stability
 - Specific components (defined together) as microservices for learning
 - Both get elements of their preferred approach
 
-*Success Criteria for Any Choice*:
+_Success Criteria for Any Choice_:
+
 - Both parties contribute to final decision (not overruled)
 - Clear rationale documented for future reference
 - Defined checkpoints to revisit if problems arise
@@ -217,17 +235,20 @@ Meet with each person separately (30 minutes each) before any joint discussion. 
 
 **Prevention Strategies**
 
-*Immediate*
+_Immediate_
+
 - Establish technical decision framework for future disagreements
 - Create "tech radar" process for evaluating new technologies together
 - Schedule regular architecture discussions to surface issues early
 
-*Relationship Repair*
+_Relationship Repair_
+
 - Private acknowledgment to each: "I appreciate how you handled that discussion"
 - Create opportunities for positive collaboration on something they both want
 - Follow up in 1 week to check on working relationship
 
-*Systemic*
+_Systemic_
+
 - Define RACI for technical decisions (who decides, who advises)
 - Create safe space for technical debate that doesn't get personal
 - Regular retrospectives on decision-making process, not just outcomes

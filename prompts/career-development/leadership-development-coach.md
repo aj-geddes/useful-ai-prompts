@@ -1,6 +1,7 @@
 # Leadership Development Coach
 
 ## Metadata
+
 - **ID**: `career-leadership-development-coach`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds essential leadership capabilities through personalized assessment, skill development, and situational coaching. Transforms technical experts into effective people leaders who inspire teams and drive organizational results through authentic, adaptive leadership.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Stepping into first management or leadership role
 - Developing specific leadership competencies (feedback, delegation, executive presence)
 - Preparing for executive-level responsibilities
 - Improving team performance through better leadership practices
 
 **Anti-patterns (when not to use):**
+
 - General career planning without leadership focus (use Career Advancement Strategist)
 - Technical skill development (use Skill Development Planner)
 - Personal life coaching or therapy needs
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Engineering Manager, 18 months in role, leading team of 8 developers. Promoted from Senior Engineer. Challenges: difficult conversations with underperformers, managing up to VP, balancing technical and people work. Strengths: technical expertise, building trust with team. Goals: become Director in 2 years."
 
 ### Output
@@ -128,11 +134,13 @@ FAILURE INDICATORS:
 **LEADERSHIP ASSESSMENT**
 
 Current Profile:
+
 - Style: Technical expert transitioning to people leader
 - Strengths: Deep technical credibility, team trust, hands-on problem solving
 - Development Areas: Performance management, executive communication, strategic delegation
 
 Effectiveness Analysis:
+
 - Technical credibility with team: 9/10
 - Individual contributor relationships: 8/10
 - Difficult performance conversations: 5/10
@@ -145,12 +153,14 @@ Competency 1: Performance Management
 Current Gap: Avoiding difficult conversations leads to issues festering
 
 Development Plan:
+
 - Learn SBI feedback framework (Situation, Behavior, Impact)
 - Practice low-stakes feedback weekly with each team member
 - Script and rehearse first difficult conversation scenario
 - Seek coaching support for first performance improvement discussion
 
 Practice Activities:
+
 - Weekly: One specific, constructive feedback to each team member
 - Monthly: Document one challenging conversation using SBI
 - Quarterly: Performance conversation with underperformer using prepared approach
@@ -159,6 +169,7 @@ Competency 2: Managing Up and Executive Communication
 Current Gap: Communication optimized for peers, not executives
 
 Development Plan:
+
 - Learn executive communication framework (lead with conclusion, support with data)
 - Observe VP's communication style and preferences
 - Practice 1-minute summaries of complex topics
@@ -167,11 +178,13 @@ Development Plan:
 **PEOPLE LEADERSHIP DEVELOPMENT**
 
 Coaching Skills:
+
 - Shift from telling to asking (coaching questions over solutions)
 - Implement career development conversations with each team member
 - Create learning opportunities through stretch assignments
 
 Team Building:
+
 - Establish team values and operating principles
 - Build psychological safety for innovation and risk-taking
 - Celebrate wins and learn from failures publicly
@@ -179,11 +192,13 @@ Team Building:
 **EXECUTIVE PRESENCE BUILDING**
 
 Communication Excellence:
+
 - Lead with conclusions, support with data
 - Speak in business impact terms, not technical metrics
 - Develop confident, concise presentation style
 
 Influence Without Authority:
+
 - Build relationships with peer managers
 - Create win-win proposals for cross-team initiatives
 - Develop reputation as problem-solver, not problem-reporter
@@ -191,16 +206,19 @@ Influence Without Authority:
 **IMPLEMENTATION ROADMAP**
 
 Months 1-3: Foundation
+
 - Week 1-4: Complete leadership assessment, establish 1:1s, identify first performance conversation
 - Week 5-8: Deliver first difficult conversation, implement executive communication format
 - Week 9-12: Review progress, adjust delegation approach, set Q2 goals
 
 Months 4-6: Acceleration
+
 - Lead cross-functional initiative
 - Mentor another new manager
 - Present to leadership on team strategy
 
 Months 7-12: Director Readiness
+
 - Demonstrate multi-team influence
 - Build track record of developed team members
 - Establish executive relationships beyond direct VP
@@ -208,12 +226,14 @@ Months 7-12: Director Readiness
 **SUCCESS METRICS**
 
 3-Month Checkpoints:
+
 - Feedback culture established (team survey improvement)
 - First difficult conversation completed successfully
 - VP relationship strengthened with regular strategic discussions
 - Technical time reduced from 40% to 30%
 
 6-Month Checkpoints:
+
 - Team member developed into lead role
 - Cross-functional initiative delivered
 - Executive communication confidence improved
@@ -222,6 +242,7 @@ Months 7-12: Director Readiness
 ---
 
 ## Related Prompts
+
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Performance Review Optimizer](performance-review-optimizer.md) - Self-assessment and advancement documentation
 - [Skill Development Planner](skill-development-planner.md) - Technical capability building

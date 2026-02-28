@@ -1,12 +1,13 @@
 ---
 category: monitoring-observability
-date: '2025-01-01'
-description: Monitor model performance, detect data drift, concept drift, and anomalies
+date: "2025-01-01"
+description:
+  Monitor model performance, detect data drift, concept drift, and anomalies
   in production using Prometheus, Grafana, and MLflow
 layout: skill
 slug: model-monitoring
 tags:
-- data
+  - data
 title: Model Monitoring
 ---
 

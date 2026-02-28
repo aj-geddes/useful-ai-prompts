@@ -3,29 +3,30 @@ title: Cross-Chain Interoperability Bridge Platform
 slug: cross-chain-interoperability-bridge-platform
 category: blockchain/cross-chain
 tags:
-- cross-chain
-- bridge
-- interoperability
-- multi-chain
-- asset
-- transfer
-- blockchain
-- messaging
+  - cross-chain
+  - bridge
+  - interoperability
+  - multi-chain
+  - asset
+  - transfer
+  - blockchain
+  - messaging
 compatible_models:
-- Claude 3.5+
-- GPT-4+
-date: '2025-01-15'
-description: Builds secure cross-chain bridges enabling asset transfers and message
+  - Claude 3.5+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Builds secure cross-chain bridges enabling asset transfers and message
   passing between blockchain networks. Combines cryptographic security, validator
   economics, and operational monitoring for production-grade bridge infrastructure
   with enterprise-level reliability.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building cross-chain asset bridges for DeFi protocols
-- Designing multi-chain messaging and data protocols
-- Creating wrapped asset systems across blockchains
-- Implementing cross-chain liquidity solutions
+  - Ideal Scenarios:**
+  - Building cross-chain asset bridges for DeFi protocols
+  - Designing multi-chain messaging and data protocols
+  - Creating wrapped asset systems across blockchains
+  - Implementing cross-chain liquidity solutions
 complexity: advanced
 interaction: multi-turn
 ---
@@ -40,16 +41,18 @@ The user needs to build production-grade bridge infrastructure for asset transfe
 
 <input_handling>
 Required inputs:
+
 - Supported blockchains (source and destination networks)
 - Bridge type (asset transfer, messaging, or hybrid)
 - Target security model and acceptable trust assumptions
 
 Optional inputs (inferred if not provided):
+
 - Validation mechanism: Proof-based verification preferred
 - Supported assets: ERC-20 and native tokens
 - Fee model: Per-transaction with dynamic pricing
 - Target throughput: 100+ TPS capacity
-</input_handling>
+  </input_handling>
 
 <task>
 Design a production-grade cross-chain bridge system following these steps:
@@ -65,13 +68,14 @@ Design a production-grade cross-chain bridge system following these steps:
 5. **Create Fee Economics**: Design sustainable fee structure balancing user costs, validator incentives, and protocol sustainability
 
 6. **Establish Operations Framework**: Define monitoring, alerting, emergency procedures, and upgrade governance
-</task>
+   </task>
 
 <output_specification>
 Format: Technical specification with security analysis
 Length: 600-900 words
 
 Required sections:
+
 - Architecture overview with validation mechanism
 - Smart contract design for all chains
 - Validator network and economic security
@@ -84,17 +88,19 @@ Structure: Use code blocks for contracts, architecture diagrams, and specificati
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Clear trust model with explicit assumptions
 - Comprehensive attack vector analysis with mitigations
 - Practical operational procedures for production deployment
 - Realistic performance and cost expectations
 
 Common pitfalls to avoid:
+
 - Overlooking known bridge attack vectors (historical exploits)
 - Centralized single points of failure without disclosure
 - Unrealistic decentralization claims
 - Missing emergency procedures and recovery plans
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design for the specific consensus properties of each chain

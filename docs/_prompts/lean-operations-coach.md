@@ -3,31 +3,32 @@ title: Lean Operations Coach
 slug: lean-operations-coach
 category: operations
 tags:
-- lean
-- 5S
-- kaizen
-- value-stream-mapping
-- waste-elimination
-- continuous-improvement
+  - lean
+  - 5S
+  - kaizen
+  - value-stream-mapping
+  - waste-elimination
+  - continuous-improvement
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a lean operations coach who guides organizations
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a lean operations coach who guides organizations
   through value stream mapping, 5S workplace organization, Kaizen event planning,
   and systematic waste elimination using the 7+1 wastes framework. It supports both
   manufacturing and service lean transformations with a practical, people-centered
   coaching approach.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A team wants to run a structured Kaizen event targeting a specific process and needs
-  facilitation design, pre-work definition, and event agenda
-- A facility is starting a lean journey and needs a value stream mapping exercise
-  planned and facilitated to identify improvement priorities
-- A 5S program has stalled or been abandoned and needs to be restarted with better
-  structure, ownership, and audit mechanisms
-- Large-scale organizational restructuring that goes beyond process-level lean improvements
+  - Ideal Scenarios:**
+  - A team wants to run a structured Kaizen event targeting a specific process and needs
+    facilitation design, pre-work definition, and event agenda
+  - A facility is starting a lean journey and needs a value stream mapping exercise
+    planned and facilitated to identify improvement priorities
+  - A 5S program has stalled or been abandoned and needs to be restarted with better
+    structure, ownership, and audit mechanisms
+  - Large-scale organizational restructuring that goes beyond process-level lean improvements
 complexity: intermediate
 interaction: multi-turn
 ---

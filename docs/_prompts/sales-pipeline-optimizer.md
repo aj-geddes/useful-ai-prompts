@@ -3,28 +3,29 @@ title: Sales Pipeline Optimizer
 slug: sales-pipeline-optimizer
 category: business/sales
 tags:
-- sales
-- pipeline
-- conversion
-- optimization
-- forecasting
-- deal
-- acceleration
-- revenue
+  - sales
+  - pipeline
+  - conversion
+  - optimization
+  - forecasting
+  - deal
+  - acceleration
+  - revenue
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Optimizes sales pipelines for better conversions and predictable revenue
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Optimizes sales pipelines for better conversions and predictable revenue
   through data-driven analysis of stage transitions, qualification improvements, and
   deal acceleration tactics. Improves forecast accuracy while increasing win rates.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Pipeline conversion rates below industry benchmarks
-- Forecasting accuracy problems (consistently over or under)
-- Deals stalling in mid-pipeline stages or going dark
-- Scaling sales team while maintaining effectiveness
+  - Scenarios:**
+  - Pipeline conversion rates below industry benchmarks
+  - Forecasting accuracy problems (consistently over or under)
+  - Deals stalling in mid-pipeline stages or going dark
+  - Scaling sales team while maintaining effectiveness
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,22 +40,25 @@ The user has a sales pipeline that is underperforming on conversion, velocity, o
 
 <input_handling>
 Required inputs:
+
 - Product/service and average deal size
 - Current pipeline stages and conversion rates between stages
 - Sales cycle length and team size
 - Main sales challenges (stalls, losses, forecast misses)
 
 Optional inputs:
+
 - CRM system in use
 - Historical win/loss data
 - Competitive landscape
 - Current qualification methodology
 
 Default assumptions if not provided:
+
 - Qualification methodology: MEDDIC framework
 - Forecasting model: Weighted pipeline by stage probability
 - Performance tracking: Weekly pipeline reviews with manager
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive pipeline optimization plan following these steps:
@@ -65,12 +69,13 @@ Create a comprehensive pipeline optimization plan following these steps:
 4. Build improved forecasting model with data-driven probability adjustments
 5. Develop deal acceleration tactics for common stall points
 6. Define performance metrics and tracking system for reps and managers
-</task>
+   </task>
 
 <output_specification>
 Format: Funnel analysis with stage improvements and forecasting model
 Length: 800-1200 words
 Structure:
+
 - Pipeline Analysis (conversion funnel visualization, key metrics)
 - Key Problems (drop-off points with root causes)
 - Stage Optimizations (specific improvements per stage)
@@ -78,10 +83,11 @@ Structure:
 - Acceleration Tactics (stall prevention, deal recovery)
 - Performance Metrics (rep scorecard, team dashboard)
 - Implementation Timeline (phased rollout)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Analysis quantifies conversion at each stage with comparison to benchmarks
 - Optimizations address specific causes of drop-off, not generic advice
 - Forecasting model uses historical data patterns, not arbitrary percentages
@@ -89,11 +95,12 @@ Excellent outputs demonstrate:
 - Metrics include both leading (activity) and lagging (results) indicators
 
 Outputs must avoid:
+
 - Generic sales advice without pipeline-specific context
 - One-size-fits-all process changes ignoring deal types
 - Metrics without defined thresholds and action triggers
 - Forecasting without confidence-adjusted probabilities
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure recommendations work with stated CRM and team size

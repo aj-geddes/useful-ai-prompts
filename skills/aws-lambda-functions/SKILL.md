@@ -66,13 +66,14 @@ aws lambda invoke \
 ```javascript
 // index.js
 exports.handler = async (event) => {
-  console.log('Event:', JSON.stringify(event));
+  console.log("Event:", JSON.stringify(event));
 
   try {
     // Parse different event sources
-    const body = typeof event.body === 'string'
-      ? JSON.parse(event.body)
-      : event.body || {};
+    const body =
+      typeof event.body === "string"
+        ? JSON.parse(event.body)
+        : event.body || {};
 
     // Process S3 event
     if (event.Records && event.Records[0].s3) {
@@ -87,19 +88,19 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
-        message: 'Success',
-        data: results
-      })
+        message: "Success",
+        data: results,
+      }),
     };
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message })
+      body: JSON.stringify({ error: error.message }),
     };
   }
 };
@@ -212,7 +213,7 @@ resource "aws_s3_bucket_notification" "bucket_notification" {
 
 ```yaml
 # template.yaml
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 
 Globals:
@@ -233,7 +234,7 @@ Resources:
   MyFunction:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub '${Environment}-my-function'
+      FunctionName: !Sub "${Environment}-my-function"
       CodeUri: src/
       Handler: index.handler
       Architectures:
@@ -268,7 +269,7 @@ Resources:
   DataTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: !Sub '${Environment}-data'
+      TableName: !Sub "${Environment}-data"
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions:
         - AttributeName: id
@@ -281,7 +282,7 @@ Resources:
   DataBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub '${Environment}-data-${AWS::AccountId}'
+      BucketName: !Sub "${Environment}-data-${AWS::AccountId}"
       VersioningConfiguration:
         Status: Enabled
 
@@ -289,7 +290,7 @@ Resources:
   MyApi:
     Type: AWS::Serverless::Api
     Properties:
-      Name: !Sub '${Environment}-api'
+      Name: !Sub "${Environment}-api"
       StageName: !Ref Environment
       Cors:
         AllowMethods: "'*'"
@@ -300,7 +301,7 @@ Outputs:
   FunctionArn:
     Value: !GetAtt MyFunction.Arn
   ApiEndpoint:
-    Value: !Sub 'https://${MyApi}.execute-api.${AWS::Region}.amazonaws.com'
+    Value: !Sub "https://${MyApi}.execute-api.${AWS::Region}.amazonaws.com"
 ```
 
 ### 5. **Lambda Layers for Code Sharing**
@@ -327,6 +328,7 @@ aws lambda publish-layer-version \
 ## Best Practices
 
 ### ✅ DO
+
 - Use environment variables for configuration
 - Implement proper error handling and logging
 - Optimize package size and dependencies
@@ -337,6 +339,7 @@ aws lambda publish-layer-version \
 - Use reserved concurrency for critical functions
 
 ### ❌ DON'T
+
 - Store sensitive data in code
 - Create long-running operations (>15 min)
 - Ignore cold start optimization

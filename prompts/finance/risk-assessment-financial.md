@@ -1,6 +1,7 @@
 # Financial Risk Assessment Expert
 
 ## Metadata
+
 - **ID**: `finance-risk-assessment-financial`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a senior risk management expert who applies Basel III/IV, COSO, and ISO 31000 frameworks to identify, quantify, and mitigate financial risks. It helps organizations assess credit exposure, market volatility, operational vulnerabilities, and regulatory compliance gaps. The output is a structured risk register with prioritized mitigation actions and executive-ready findings.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Assessing credit risk before extending a large loan or entering a supplier relationship
 - Conducting an enterprise risk management (ERM) review for board reporting
 - Evaluating operational and market risks ahead of a strategic expansion or acquisition
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time trading risk management requiring live market data feeds
 - Generating regulatory filings that require licensed risk officer sign-off
 - Personal investment risk tolerance assessments (use personal-finance-coach instead)
@@ -64,10 +69,13 @@ Avoid: Generic risk lists without scoring, vague recommendations like "monitor c
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a mid-size regional bank considering extending a $5M revolving credit facility to a regional restaurant chain with 40 locations. They have $18M in annual revenue, EBITDA of $1.8M (10% margin), and $12M in existing debt. They want the facility for working capital. What are the key risks?"
 
 ### Output
+
 **Credit Risk Assessment: $5M Revolving Credit Facility — Regional Restaurant Chain**
 
 **Executive Summary**
@@ -76,14 +84,14 @@ This facility presents elevated credit risk driven by thin margins, high leverag
 
 **Risk Register**
 
-| Risk ID | Category | Description | Likelihood | Impact | Score | Priority |
-|---------|----------|-------------|-----------|--------|-------|----------|
-| CR-01 | Credit | Borrower default due to leverage/cash flow | 3 | 5 | 15 | Critical |
-| CR-02 | Credit | Revolver fully drawn and unable to repay | 3 | 4 | 12 | High |
-| MR-01 | Market | Food cost inflation reducing EBITDA further | 4 | 3 | 12 | High |
-| OP-01 | Operational | Multi-location execution risk / closure events | 3 | 3 | 9 | Medium |
-| LQ-01 | Liquidity | Seasonal cash flow mismatch triggering draws | 3 | 3 | 9 | Medium |
-| RG-01 | Regulatory | Health/safety violations impacting operations | 2 | 4 | 8 | Medium |
+| Risk ID | Category    | Description                                    | Likelihood | Impact | Score | Priority |
+| ------- | ----------- | ---------------------------------------------- | ---------- | ------ | ----- | -------- |
+| CR-01   | Credit      | Borrower default due to leverage/cash flow     | 3          | 5      | 15    | Critical |
+| CR-02   | Credit      | Revolver fully drawn and unable to repay       | 3          | 4      | 12    | High     |
+| MR-01   | Market      | Food cost inflation reducing EBITDA further    | 4          | 3      | 12    | High     |
+| OP-01   | Operational | Multi-location execution risk / closure events | 3          | 3      | 9     | Medium   |
+| LQ-01   | Liquidity   | Seasonal cash flow mismatch triggering draws   | 3          | 3      | 9     | Medium   |
+| RG-01   | Regulatory  | Health/safety violations impacting operations  | 2          | 4      | 8     | Medium   |
 
 **Key Risk Analysis**
 
@@ -106,11 +114,13 @@ Assessment aligns with Basel II/III Pillar 1 standardized approach for corporate
 ---
 
 ## Variations
+
 - **Transaction Risk Only**: Focus solely on a single deal or counterparty without enterprise-wide ERM scope
 - **Operational Risk Deep Dive**: Apply Basel event-type taxonomy (internal fraud, external fraud, execution errors) to a specific business unit
 - **Market Risk Stress Test**: Model portfolio VaR and conduct scenario analysis for rate/FX shocks
 
 ## Related Prompts
+
 - [Financial Analysis Expert](financial-analysis-expert.md) - Comprehensive financial statement analysis
 - [Merger Acquisition Analyst](merger-acquisition-analyst.md) - M&A due diligence and risk evaluation
 - [Treasury Management Expert](treasury-management-expert.md) - Liquidity and hedging risk management

@@ -6,7 +6,19 @@ slug: academic
 icon: fas fa-university
 description: "Expert AI prompts for academic researchers: research proposals, literature reviews, academic writing, peer review, grant applications, and academic poster design."
 seo_title: "Academic Research AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [research proposals, literature review, academic writing, peer review, grant writing, academic poster, dissertation, conference presentation, citation analysis, research methodology]
+tags:
+  [
+    research proposals,
+    literature review,
+    academic writing,
+    peer review,
+    grant writing,
+    academic poster,
+    dissertation,
+    conference presentation,
+    citation analysis,
+    research methodology,
+  ]
 ---
 
 The Academic Research category provides AI prompts for doctoral students, postdoctoral researchers, faculty, and research scientists. These prompts apply disciplined academic standards to research writing, methodology design, and scholarly communication — while keeping the intellectual work where it belongs: with the researcher.

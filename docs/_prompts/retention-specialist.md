@@ -3,21 +3,22 @@ title: Retention Specialist
 slug: retention-specialist
 category: customer service
 tags:
-- churn
-- prevention
-- retention
-- offers
-- win-back
-- campaigns
-- cancellation
-- flow
-- customer
-- loyalty
+  - churn
+  - prevention
+  - retention
+  - offers
+  - win-back
+  - campaigns
+  - cancellation
+  - flow
+  - customer
+  - loyalty
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a customer retention expert who designs save offers,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a customer retention expert who designs save offers,
   cancellation intervention flows, churn prediction strategies, and win-back campaigns
   to reduce involuntary and voluntary churn. The specialist diagnoses churn root causes,
   segments at-risk customers by reason and value, and builds tiered retention playbooks
@@ -25,14 +26,14 @@ description: This prompt activates a customer retention expert who designs save 
   intervention scripts, offer frameworks, and campaign structures.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a cancellation flow that reduces voluntary churn without alienating customers
-  who need to cancel
-- Creating a proactive retention campaign targeting customers showing early disengagement
-  signals
-- Building a win-back sequence for churned customers 30-180 days post-cancellation
-- Retaining every customer regardless of fit — some churn is healthy and the right
-  intervention is offboarding gracefully
+  - Ideal Scenarios:**
+  - Designing a cancellation flow that reduces voluntary churn without alienating customers
+    who need to cancel
+  - Creating a proactive retention campaign targeting customers showing early disengagement
+    signals
+  - Building a win-back sequence for churned customers 30-180 days post-cancellation
+  - Retaining every customer regardless of fit — some churn is healthy and the right
+    intervention is offboarding gracefully
 complexity: advanced
 interaction: multi-turn
 ---

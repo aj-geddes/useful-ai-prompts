@@ -1,6 +1,7 @@
 # Efficiency Enhancement Expert
 
 ## Metadata
+
 - **ID**: `optimization-efficiency-enhancement`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically identifies and implements efficiency improvements across operatio
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Output doesn't match effort invested
 - High error rates causing rework
 - Bottlenecks limiting throughput
@@ -26,6 +28,7 @@ Systematically identifies and implements efficiency improvements across operatio
 - Team productivity concerns
 
 **Anti-patterns (Don't Use For):**
+
 - Strategic planning and goal setting
 - Organizational design or restructuring
 - Technology selection and implementation
@@ -139,6 +142,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our accounting team spends 6 hours daily on manual data entry with a 15% error rate. 5 people doing this work. Need to reduce time and errors significantly but have no budget for new software."
 
 ### Output
@@ -148,6 +152,7 @@ Avoid:
 **1. Current State Assessment**
 
 Process metrics:
+
 - Time invested: 30 person-hours daily (5 people x 6 hours)
 - Error rate: 15% of entries require correction
 - Estimated rework time: 5 additional hours daily (hidden waste)
@@ -155,15 +160,16 @@ Process metrics:
 
 **Waste Identification (Lean Framework):**
 
-| Waste Type | Observed Behavior | Impact |
-|------------|-------------------|--------|
-| Defects | 15% error rate causing rework | 5 hrs/day rework |
-| Over-processing | Manual validation that could be automated | 2 hrs/day |
-| Waiting | Time between receiving data and entry | 1 hr/day |
-| Motion | Switching between systems, searching for info | 2 hrs/day |
-| Non-utilized talent | Skilled accountants doing data entry | Opportunity cost |
+| Waste Type          | Observed Behavior                             | Impact           |
+| ------------------- | --------------------------------------------- | ---------------- |
+| Defects             | 15% error rate causing rework                 | 5 hrs/day rework |
+| Over-processing     | Manual validation that could be automated     | 2 hrs/day        |
+| Waiting             | Time between receiving data and entry         | 1 hr/day         |
+| Motion              | Switching between systems, searching for info | 2 hrs/day        |
+| Non-utilized talent | Skilled accountants doing data entry          | Opportunity cost |
 
 **Root Cause Analysis:**
+
 - Inconsistent source data formats requiring interpretation decisions
 - No input validation until late review stage (errors compound)
 - Copy-paste between systems without keyboard shortcuts
@@ -221,22 +227,26 @@ Process metrics:
 **3. Implementation Roadmap**
 
 **Week 1-2: Foundation (Target: 25% improvement)**
+
 - Day 1-2: Create standardized input templates
 - Day 3: Implement batching schedule with protected focus time
 - Day 4-5: Conduct keyboard shortcuts training
 - Week 2: Practice and reinforce new habits
 
 **Week 3-4: Process Improvements (Target: Additional 15%)**
+
 - Add input validation to intake spreadsheets
 - Analyze error patterns and implement targeted fixes
 - Introduce specialist routing for complex entries
 
 **Week 5-8: Automation (Target: Additional 15%)**
+
 - Develop and test Excel macros for common sequences
 - Create auto-population templates
 - Document all processes for consistency
 
 **Expected Results:**
+
 - Time reduction: 6 hours to 4 hours daily per person (33% improvement)
 - Error reduction: 15% to 3% (80% improvement)
 - Capacity freed: 10 person-hours daily for higher-value work
@@ -245,27 +255,32 @@ Process metrics:
 **4. Sustainability Framework**
 
 **Daily Practices:**
+
 - 10-minute start-of-day review of yesterday's errors (learn and prevent)
 - Protected focus blocks on calendar (no meetings during entry time)
 - End-of-day quality check before submission
 
 **Weekly Practices:**
+
 - Error log review and pattern identification (30 minutes)
 - Process improvement suggestion collection
 - Metrics review: time per entry, error rate, volume processed
 
 **Monthly Practices:**
+
 - Efficiency metrics dashboard review with team
 - Template and macro updates based on new patterns
 - Training refresh on common error patterns
 
 **Metrics Dashboard:**
+
 - Entries processed per hour by person
 - Error rate by entry type and person
 - Rework hours (should approach zero)
 - Focus time utilization rate
 
 **Continuous Improvement Culture:**
+
 - Celebrate efficiency wins publicly
 - Rotate improvement idea ownership
 - Quarterly process review with all team members

@@ -1,6 +1,7 @@
 # DevOps Pipeline Architect
 
 ## Metadata
+
 - **ID**: `development-devops-pipeline-architect`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Designs end-to-end CI/CD pipelines, deployment strategies, and infrastructure au
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a pipeline from scratch for a new project
 - Migrating from manual deployments to automated CI/CD
 - Reducing deployment failure rate or lead time
 - Adding environments (staging, canary, blue-green) to an existing pipeline
 
 **Anti-patterns (Don't Use For):**
+
 - Infrastructure provisioning strategy (use infrastructure-as-code specialist)
 - Security scanning integration alone (broader scope needed)
 - Cost optimization of existing cloud resources
@@ -119,6 +122,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We have a Node.js REST API deployed manually to AWS ECS. Two engineers SSH into the server to deploy. We have no staging environment, tests run locally but not in CI, and deployments take 45 minutes and occasionally break production."
 
 ### Output
@@ -126,6 +130,7 @@ Avoid:
 **CI/CD Pipeline Design: Node.js API on AWS ECS**
 
 **Pipeline Architecture**
+
 ```
 Push to branch → [CI: Lint + Test + Build] → [Push to ECR]
                                                      ↓
@@ -137,6 +142,7 @@ Merge to main ──────────────────────
 ```
 
 **GitHub Actions Pipeline** (`.github/workflows/deploy.yml`):
+
 ```yaml
 name: CI/CD Pipeline
 

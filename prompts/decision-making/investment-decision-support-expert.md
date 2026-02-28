@@ -1,6 +1,7 @@
 # Investment Decision Support Expert
 
 ## Metadata
+
 - **ID**: `decision-investment-support`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Financial
@@ -18,6 +19,7 @@ Evaluate investment opportunities by analyzing financial returns, risks, and str
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Evaluating capital expenditure proposals
 - Comparing investment alternatives (technology, facilities, acquisitions)
 - Building business cases for major initiatives
@@ -25,6 +27,7 @@ Evaluate investment opportunities by analyzing financial returns, risks, and str
 - Make vs. buy decisions
 
 **Anti-patterns (when NOT to use):**
+
 - Personal investment advice or securities trading
 - Compliance-related financial approvals requiring legal review
 - Day-to-day operational spending decisions
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Considering $500K investment in new automation technology. Vendor promises 30% cost savings, 2-year payback. But it requires 3 months training and might disrupt operations during implementation."
 
 ### Output
@@ -106,6 +110,7 @@ Avoid:
 **Investment Decision Analysis**
 
 **Executive Summary**
+
 - Investment: $500K automation technology
 - Recommendation: PROCEED with phased implementation
 - Expected IRR: 28% (base case)
@@ -120,9 +125,10 @@ Avoid:
 | Worst Case | 20% | 15% ($75K/yr) | -$55K | 8% | 4.2 yrs |
 | **Weighted Average** | | | **$103K** | **25%** | |
 
-*Assumptions*: 10% discount rate, 5-year useful life, $50K implementation costs included.
+_Assumptions_: 10% discount rate, 5-year useful life, $50K implementation costs included.
 
 **Adjusted Projections** (vendor claims reduced by 20% for conservatism)
+
 - Year 0: -$500K (investment)
 - Year 1: +$80K (partial year after 3-month implementation)
 - Year 2-5: +$125K annually (base case)
@@ -146,11 +152,13 @@ Avoid:
 
 **Decision Framework**
 Proceed if:
+
 - Pilot achieves >20% savings in 60-day test
 - Vendor provides performance guarantee with 80% of savings
 - Implementation timeline confirmed at 90 days or less
 
 Reconsider if:
+
 - Pilot savings <15%
 - Key technical integration fails
 - Staff turnover exceeds 10% during implementation

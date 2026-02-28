@@ -5,10 +5,12 @@ This category contains prompts designed to help professionals advance their care
 ## Available Prompts
 
 ### Career Advancement and Strategy
+
 - **[Career Advancement Strategist](./career-advancement-strategist.md)** - Strategic plans for promotion and leadership development
 - **[Job Search Optimizer](./job-search-optimizer.md)** - Comprehensive job hunting strategy from resume to salary negotiation
 
 ### Professional Skills and Networking
+
 - **[Professional Networking Strategist](./professional-networking-strategist.md)** - Build meaningful professional relationships and expand your network
 - **[Skill Development Planner](./skill-development-planner.md)** - Strategic skill building aligned with career goals and market demands
 

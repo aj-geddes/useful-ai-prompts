@@ -1,6 +1,7 @@
 # Performance Evaluation Expert
 
 ## Metadata
+
 - **ID**: `analysis-performance-evaluation-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Assesses performance across individuals, teams, or processes using structured evaluation frameworks. Identifies gaps, root causes, and improvement opportunities with actionable development plans.
 
 ## When to Use
+
 - Conducting quarterly or annual performance reviews
 - Diagnosing team or department underperformance
 - Building improvement plans with measurable outcomes
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Evaluating customer service department (25 agents). Performance areas: response time, resolution rate, customer satisfaction, productivity. Current metrics: average response 4.5 min (up from 3.2), first-call resolution 68% (down from 75%), CSAT 3.8/5 (down from 4.2), tickets/agent 45/day (up from 42). Targets: 3-min response, 80% FCR, 4.5 CSAT. Concerns: customer complaints increasing, agent turnover up 20%. Have $50K budget and can hire 2 more agents.
 ```
 
 ### Output
+
 ```
 **Customer Service Performance Evaluation**
 
@@ -185,6 +190,7 @@ Position: Bottom 30th percentile
 ---
 
 ## Related Prompts
+
 - `management-leadership-team-building-expert`: Team development strategies
 - `business-operations-process-optimization-expert`: Process improvement methods
 - `management-leadership-performance-management-expert`: Performance management systems

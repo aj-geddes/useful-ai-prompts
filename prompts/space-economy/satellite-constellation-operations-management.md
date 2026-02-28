@@ -1,6 +1,7 @@
 # Satellite Constellation Operations Management
 
 ## Metadata
+
 - **ID**: `space-constellation-operations`
 - **Version**: 1.1.0
 - **Category**: Space Economy
@@ -18,6 +19,7 @@ This prompt enables management of large-scale satellite constellation operations
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Operating LEO/MEO satellite constellations (100+ satellites)
 - Managing 24/7 satellite fleet operations with automation
 - Optimizing network performance and service delivery across coverage areas
@@ -25,6 +27,7 @@ This prompt enables management of large-scale satellite constellation operations
 - Developing operational automation and AI-based monitoring
 
 **Anti-Patterns (Don't Use When):**
+
 - Designing or developing new satellite systems
 - Managing launch operations before orbital insertion
 - Operating single-satellite missions with simple operations
@@ -116,6 +119,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We're operating a 648-satellite LEO broadband constellation with >99.5% availability requirement. Need comprehensive operations management approach covering fleet, network, and customer service."
 
 ### Output
@@ -124,94 +128,94 @@ Responses must avoid:
 
 **Constellation Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Operational Satellites | 648 |
-| Orbital Altitude | 550km LEO |
-| Orbital Planes | 36 (18 satellites per plane) |
-| Inclination | 53 degrees |
-| Coverage | Global (95%+ populated areas) |
-| Availability Target | 99.5% network, 99.9% per-coverage-area |
+| Parameter              | Specification                          |
+| ---------------------- | -------------------------------------- |
+| Operational Satellites | 648                                    |
+| Orbital Altitude       | 550km LEO                              |
+| Orbital Planes         | 36 (18 satellites per plane)           |
+| Inclination            | 53 degrees                             |
+| Coverage               | Global (95%+ populated areas)          |
+| Availability Target    | 99.5% network, 99.9% per-coverage-area |
 
 **Operations Organization**
 
-| Function | Staffing | Shift Coverage | Location |
-|----------|----------|----------------|----------|
-| Satellite Operations | 24 FTE | 24/7 (3 shifts x 8) | Primary MOC |
-| Network Operations | 18 FTE | 24/7 (3 shifts x 6) | Primary MOC |
-| Customer Support | 12 FTE | 24/7 (3 shifts x 4) | Support center |
-| Engineering Support | 8 FTE | Day + on-call | HQ |
-| Management | 4 FTE | Day + on-call | HQ |
+| Function             | Staffing | Shift Coverage      | Location       |
+| -------------------- | -------- | ------------------- | -------------- |
+| Satellite Operations | 24 FTE   | 24/7 (3 shifts x 8) | Primary MOC    |
+| Network Operations   | 18 FTE   | 24/7 (3 shifts x 6) | Primary MOC    |
+| Customer Support     | 12 FTE   | 24/7 (3 shifts x 4) | Support center |
+| Engineering Support  | 8 FTE    | Day + on-call       | HQ             |
+| Management           | 4 FTE    | Day + on-call       | HQ             |
 
 **Fleet Health Monitoring**
 
-| Subsystem | Key Metrics | Warning Threshold | Critical Threshold | Response |
-|-----------|-------------|-------------------|-------------------|----------|
-| Power | Solar array output, battery SOC, bus voltage | <85% capacity | <70% capacity | Load shed, investigate |
-| Thermal | Component temps, radiator performance | >90% range | >95% range | Adjust attitude/operations |
-| Propulsion | Tank pressure, remaining delta-V | <30% remaining | <15% remaining | Plan replacement |
-| AOCS | Pointing accuracy, reaction wheel speeds | >0.05 deg error | >0.1 deg error | Immediate response |
-| Payload | Link availability, throughput | <99% link | <95% link | Escalate to engineering |
-| Communications | TT&C link margin, data rates | <6 dB margin | <3 dB margin | Antenna adjustment |
+| Subsystem      | Key Metrics                                  | Warning Threshold | Critical Threshold | Response                   |
+| -------------- | -------------------------------------------- | ----------------- | ------------------ | -------------------------- |
+| Power          | Solar array output, battery SOC, bus voltage | <85% capacity     | <70% capacity      | Load shed, investigate     |
+| Thermal        | Component temps, radiator performance        | >90% range        | >95% range         | Adjust attitude/operations |
+| Propulsion     | Tank pressure, remaining delta-V             | <30% remaining    | <15% remaining     | Plan replacement           |
+| AOCS           | Pointing accuracy, reaction wheel speeds     | >0.05 deg error   | >0.1 deg error     | Immediate response         |
+| Payload        | Link availability, throughput                | <99% link         | <95% link          | Escalate to engineering    |
+| Communications | TT&C link margin, data rates                 | <6 dB margin      | <3 dB margin       | Antenna adjustment         |
 
 **Orbital Maintenance Program**
 
-| Activity | Frequency | Automation Level | Approval |
-|----------|-----------|------------------|----------|
-| Station-Keeping | Monthly nominal | Automated planning, manual approval | Flight Director |
-| Collision Avoidance | As needed (48-hour warning) | Automated screening, manual maneuver | Duty Officer |
-| Constellation Phasing | Quarterly optimization | Automated planning, manual approval | Ops Manager |
-| End-of-Life Disposal | Per satellite (5-year mark) | Planned, manual execution | VP Operations |
+| Activity              | Frequency                   | Automation Level                     | Approval        |
+| --------------------- | --------------------------- | ------------------------------------ | --------------- |
+| Station-Keeping       | Monthly nominal             | Automated planning, manual approval  | Flight Director |
+| Collision Avoidance   | As needed (48-hour warning) | Automated screening, manual maneuver | Duty Officer    |
+| Constellation Phasing | Quarterly optimization      | Automated planning, manual approval  | Ops Manager     |
+| End-of-Life Disposal  | Per satellite (5-year mark) | Planned, manual execution            | VP Operations   |
 
 **Space Traffic Management**
 
-| Element | Specification | Responsibility |
-|---------|---------------|----------------|
-| Conjunction Screening | Every 8 hours against full catalog | Automated + analyst review |
-| Maneuver Threshold | <1km miss distance AND >1e-4 Pc | Pre-defined, analyst confirmation |
-| Coordination | 18th Space Defense Squadron via Space-Track | Duty Officer |
-| Industry Sharing | Space Data Association membership | Space Safety Manager |
-| Debris Mitigation | 5-year deorbit (exceeds 25-year rule) | Compliance by design |
+| Element               | Specification                               | Responsibility                    |
+| --------------------- | ------------------------------------------- | --------------------------------- |
+| Conjunction Screening | Every 8 hours against full catalog          | Automated + analyst review        |
+| Maneuver Threshold    | <1km miss distance AND >1e-4 Pc             | Pre-defined, analyst confirmation |
+| Coordination          | 18th Space Defense Squadron via Space-Track | Duty Officer                      |
+| Industry Sharing      | Space Data Association membership           | Space Safety Manager              |
+| Debris Mitigation     | 5-year deorbit (exceeds 25-year rule)       | Compliance by design              |
 
 **Service Delivery KPIs**
 
-| Metric | Target | Current Performance | Tracking |
-|--------|--------|---------------------|----------|
-| Network Availability | 99.5% | 99.7% | Real-time dashboard |
-| User Latency | <50ms | 35ms average | Per-session |
-| Throughput per User | 100 Mbps minimum | 120 Mbps average | Continuous |
-| Customer Satisfaction | >95% CSAT | 94% | Monthly survey |
-| Incident Response | <4 hours P1 | 2.5 hours average | Per incident |
+| Metric                | Target           | Current Performance | Tracking            |
+| --------------------- | ---------------- | ------------------- | ------------------- |
+| Network Availability  | 99.5%            | 99.7%               | Real-time dashboard |
+| User Latency          | <50ms            | 35ms average        | Per-session         |
+| Throughput per User   | 100 Mbps minimum | 120 Mbps average    | Continuous          |
+| Customer Satisfaction | >95% CSAT        | 94%                 | Monthly survey      |
+| Incident Response     | <4 hours P1      | 2.5 hours average   | Per incident        |
 
 **Automation Architecture**
 
-| Level | Capability | Human Role |
-|-------|------------|------------|
-| L1: Monitoring | AI-based anomaly detection, trend analysis | Alert review |
-| L2: Analysis | Automated root cause identification, recommendation | Decision approval |
-| L3: Planning | Autonomous maneuver planning, schedule optimization | Plan approval |
-| L4: Execution | Automated routine commands, health response | Oversight, exception handling |
-| L5: Autonomous | Self-healing for defined scenarios | Post-event review |
+| Level          | Capability                                          | Human Role                    |
+| -------------- | --------------------------------------------------- | ----------------------------- |
+| L1: Monitoring | AI-based anomaly detection, trend analysis          | Alert review                  |
+| L2: Analysis   | Automated root cause identification, recommendation | Decision approval             |
+| L3: Planning   | Autonomous maneuver planning, schedule optimization | Plan approval                 |
+| L4: Execution  | Automated routine commands, health response         | Oversight, exception handling |
+| L5: Autonomous | Self-healing for defined scenarios                  | Post-event review             |
 
 **Customer Experience Management**
 
-| Touchpoint | Implementation | Target |
-|------------|---------------|--------|
-| SLA Monitoring | Real-time per-customer dashboard | 100% visibility |
-| Outage Communication | Automated notification within 5 minutes | <5 min to awareness |
-| Performance Reporting | Monthly automated reports | By 5th of month |
-| Issue Resolution | Tiered support with escalation | <4 hour P1, <24 hour P2 |
-| Proactive Outreach | Predicted degradation notification | 24-hour advance notice |
+| Touchpoint            | Implementation                          | Target                  |
+| --------------------- | --------------------------------------- | ----------------------- |
+| SLA Monitoring        | Real-time per-customer dashboard        | 100% visibility         |
+| Outage Communication  | Automated notification within 5 minutes | <5 min to awareness     |
+| Performance Reporting | Monthly automated reports               | By 5th of month         |
+| Issue Resolution      | Tiered support with escalation          | <4 hour P1, <24 hour P2 |
+| Proactive Outreach    | Predicted degradation notification      | 24-hour advance notice  |
 
 **Risk Mitigation**
 
-| Risk Category | Mitigation Strategy | Recovery Target |
-|---------------|---------------------|-----------------|
-| Satellite Failure | N+2 redundancy per coverage area | <1 hour service restoration |
-| Ground Station Outage | Geographic diversity, 3 stations per region | Automatic failover |
-| Cyber Threat | Defense-in-depth, continuous monitoring, incident response | <30 min containment |
-| Regulatory Change | Active engagement, compliance margin | Proactive adaptation |
-| Space Weather | Automated safe mode triggers, shielded electronics | <4 hour recovery |
+| Risk Category         | Mitigation Strategy                                        | Recovery Target             |
+| --------------------- | ---------------------------------------------------------- | --------------------------- |
+| Satellite Failure     | N+2 redundancy per coverage area                           | <1 hour service restoration |
+| Ground Station Outage | Geographic diversity, 3 stations per region                | Automatic failover          |
+| Cyber Threat          | Defense-in-depth, continuous monitoring, incident response | <30 min containment         |
+| Regulatory Change     | Active engagement, compliance margin                       | Proactive adaptation        |
+| Space Weather         | Automated safe mode triggers, shielded electronics         | <4 hour recovery            |
 
 ---
 

@@ -1,6 +1,7 @@
 # Continuous Learning Framework Expert
 
 ## Metadata
+
 - **ID**: `learning-continuous-framework`
 - **Version**: 1.1.0
 - **Category**: Learning & Development
@@ -18,6 +19,7 @@ A continuous learning strategist that designs sustainable learning frameworks fo
 ## When to Use
 
 **Ideal scenarios:**
+
 - Building organizational learning cultures in knowledge-intensive companies
 - Creating personal professional development systems for sustained growth
 - Designing team learning routines and knowledge-sharing practices
@@ -25,6 +27,7 @@ A continuous learning strategist that designs sustainable learning frameworks fo
 - Scaling learning practices during rapid organizational growth
 
 **Anti-patterns (when NOT to use):**
+
 - Compliance and regulatory training tracking
 - Certification and credentialing programs
 - Academic degree planning and curriculum
@@ -113,6 +116,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are a 200-person technology company trying to build a learning culture. Our engineers need to keep pace with rapid technology changes but everyone says they are too busy with project work. Current state: Sporadic conference attendance, occasional lunch-and-learn sessions that are poorly attended, no protected learning time. Goals: Build systematic learning habits, share knowledge internally rather than reinventing, track skill development for career progression. Resources: We have Pluralsight and Coursera subscriptions available, and leadership is willing to allocate protected time if there is a clear plan.
 
 ### Output
@@ -120,6 +124,7 @@ We are a 200-person technology company trying to build a learning culture. Our e
 **Technology Company Continuous Learning Framework**
 
 **Learning Principles:**
+
 1. Learning is work, not extra work (protected and valued)
 2. Share what you learn to multiply impact (one person's learning benefits many)
 3. Small consistent actions beat sporadic intensity (sustainable habits win)
@@ -139,15 +144,16 @@ Learning Time Investment (Target: 8% of work time):
 
 **Habit System at Multiple Time Scales:**
 
-| Timeframe | Activity | Duration | Purpose | Accountability |
-|-----------|----------|----------|---------|----------------|
-| Daily | Micro-learning (articles, videos) | 15 min | Skill maintenance, staying current | Self-tracked |
-| Weekly | Learning Friday (protected time) | 4 hours | Deep skill building | Manager visibility |
-| Monthly | Guild session | 2 hours | Community learning, knowledge sharing | Peer community |
-| Quarterly | Learning sprint | 1 week | Intensive capability development | Manager-approved goal |
-| Annually | Conference or major course | 40 hours | External perspective, inspiration | Development plan |
+| Timeframe | Activity                          | Duration | Purpose                               | Accountability        |
+| --------- | --------------------------------- | -------- | ------------------------------------- | --------------------- |
+| Daily     | Micro-learning (articles, videos) | 15 min   | Skill maintenance, staying current    | Self-tracked          |
+| Weekly    | Learning Friday (protected time)  | 4 hours  | Deep skill building                   | Manager visibility    |
+| Monthly   | Guild session                     | 2 hours  | Community learning, knowledge sharing | Peer community        |
+| Quarterly | Learning sprint                   | 1 week   | Intensive capability development      | Manager-approved goal |
+| Annually  | Conference or major course        | 40 hours | External perspective, inspiration     | Development plan      |
 
 **Protected Learning Time - Learning Fridays:**
+
 - Friday 1-5pm: No meetings, protected learning time company-wide
 - Managers accountable for protecting this time
 - Learning activity self-selected aligned to role or career goals
@@ -155,21 +161,24 @@ Learning Time Investment (Target: 8% of work time):
 
 **Knowledge Sharing Mechanisms:**
 
-*Skill Guilds (Communities of Practice):*
+_Skill Guilds (Communities of Practice):_
+
 - Technology-specific groups: Frontend, Backend, Data Engineering, DevOps, Security
 - Monthly 2-hour sessions led by rotating guild members
 - Shared learning resource libraries curated by guild
 - Cross-guild projects for breadth exposure (quarterly)
 - Guild leads recognized and supported by leadership
 
-*Tech Talks Program:*
+_Tech Talks Program:_
+
 - Bi-weekly 30-minute presentations (Tuesday lunch)
 - "Learn it, teach it" philosophy - teaching deepens learning
 - Recorded for asynchronous access
 - Presenters develop communication and teaching skills
 - Topics nominated and voted by team
 
-*Learning Log System:*
+_Learning Log System:_
+
 - Brief notes on learning (5 minutes per learning activity)
 - Searchable internal knowledge base (Notion/Confluence)
 - Recognition for valuable contributions
@@ -178,13 +187,15 @@ Learning Time Investment (Target: 8% of work time):
 
 **Resource Ecosystem:**
 
-*Curated Learning Paths:*
+_Curated Learning Paths:_
+
 - Role-based paths (Frontend Engineer L2-L3, Backend Senior, etc.)
 - Technology-specific paths (Kubernetes, React, Python advanced)
 - Leadership and soft skills track
 - Paths maintained by guild leads, refreshed quarterly
 
-*Resource Access:*
+_Resource Access:_
+
 - Pluralsight and Coursera subscriptions for all engineers
 - $500/person annual budget for books, courses, tools
 - Conference budget $2,000/person annually
@@ -192,19 +203,22 @@ Learning Time Investment (Target: 8% of work time):
 
 **Engagement and Accountability Strategy:**
 
-*Manager Enablement:*
+_Manager Enablement:_
+
 - Managers trained on supporting and protecting learning time
 - Learning goals integrated into career conversations (quarterly)
 - Protected time is non-negotiable (managers held accountable)
 - Learning progress visible in 1:1 template
 
-*Recognition and Visibility:*
+_Recognition and Visibility:_
+
 - Monthly "Learning Champion" recognition (peer-nominated)
 - Learning achievements shared in all-hands
 - Skill badges visible in profile (internal system)
 - Guild leadership in promotion considerations
 
-*Accountability Mechanisms:*
+_Accountability Mechanisms:_
+
 - Learning Friday utilization tracked (80%+ target)
 - Quarterly learning goal setting with manager
 - Peer accountability through guild participation
@@ -212,13 +226,15 @@ Learning Time Investment (Target: 8% of work time):
 
 **Measurement Framework:**
 
-*Leading Indicators (Activity):*
+_Leading Indicators (Activity):_
+
 - Learning Friday utilization rate (target: 80%+)
 - Guild session attendance (target: 70% of eligible)
 - Tech talk frequency (target: bi-weekly minimum)
 - Learning log contributions (target: 2+ per week per person)
 
-*Lagging Indicators (Impact):*
+_Lagging Indicators (Impact):_
+
 - Self-reported skill growth (quarterly survey)
 - Internal mobility rate (learning enabling career moves)
 - Retention of high performers
@@ -227,25 +243,29 @@ Learning Time Investment (Target: 8% of work time):
 
 **Implementation Phases:**
 
-*Phase 1 - Foundation (Months 1-2):*
+_Phase 1 - Foundation (Months 1-2):_
+
 - Launch Learning Fridays with executive sponsorship
 - Establish initial guilds (3-4 based on team composition)
 - Set up learning log system
 - Communicate principles and expectations
 
-*Phase 2 - Activation (Months 3-4):*
+_Phase 2 - Activation (Months 3-4):_
+
 - Launch Tech Talks program
 - Create initial learning paths for key roles
 - Curate and organize existing resources
 - Train managers on supporting learning culture
 
-*Phase 3 - Optimization (Months 5-6):*
+_Phase 3 - Optimization (Months 5-6):_
+
 - Implement measurement dashboard
 - Gather feedback and iterate on formats
 - Expand guild coverage
 - Celebrate early wins and learning champions
 
-*Phase 4 - Sustainment (Ongoing):*
+_Phase 4 - Sustainment (Ongoing):_
+
 - Quarterly learning culture health check
 - Annual learning strategy refresh
 - Continuous path and resource curation

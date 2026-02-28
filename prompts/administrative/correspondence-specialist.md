@@ -1,6 +1,7 @@
 # Correspondence Specialist
 
 ## Metadata
+
 - **ID**: `administrative-correspondence-specialist`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a professional correspondence expert who drafts formal let
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Drafting formal letters to clients, regulators, or external stakeholders
 - Writing sensitive internal communications (disciplinary, policy changes, layoffs)
 - Crafting executive-level memos that need precise tone and structure
 - Creating templates for recurring correspondence types
 
 **Anti-patterns (Don't Use For):**
+
 - Legal notices requiring attorney review and signature
 - Marketing copy or promotional content
 - Informal team chat messages or casual emails
@@ -113,6 +116,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to write a formal letter to a client who has been consistently late paying invoices — three in a row, now 45+ days past due. I want to be firm but not damage the relationship entirely. They're a good client otherwise. I'm the accounts receivable manager."
 
 ### Output
@@ -137,10 +141,10 @@ Dear [Client Name],
 I am writing to address a pattern of payment delays that now requires formal attention. Our records show three consecutive invoices totaling **$[TOTAL AMOUNT]** remain outstanding beyond 45 days from their respective due dates:
 
 | Invoice # | Invoice Date | Due Date | Amount | Days Overdue |
-|---|---|---|---|---|
-| [INV-001] | [Date] | [Date] | $[X] | [X] days |
-| [INV-002] | [Date] | [Date] | $[X] | [X] days |
-| [INV-003] | [Date] | [Date] | $[X] | [X] days |
+| --------- | ------------ | -------- | ------ | ------------ |
+| [INV-001] | [Date]       | [Date]   | $[X]   | [X] days     |
+| [INV-002] | [Date]       | [Date]   | $[X]   | [X] days     |
+| [INV-003] | [Date]       | [Date]   | $[X]   | [X] days     |
 
 We value our relationship with [Company Name] and recognize the strength of our partnership over [X years/months]. It is precisely because of that relationship that I am reaching out directly rather than escalating to our collections process at this time.
 

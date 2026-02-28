@@ -1,6 +1,7 @@
 # Supply Chain Optimization Expert
 
 ## Metadata
+
 - **ID**: `business-supply-chain-optimization`
 - **Version**: 1.0.0
 - **Category**: Business/Operations
@@ -18,12 +19,14 @@ Optimizes end-to-end supply chains by reducing costs, improving service levels, 
 ## When to Use
 
 **Scenarios:**
+
 - Supply chain costs exceeding industry benchmarks
 - Frequent stockouts or excess inventory write-offs
 - Network redesign for growth or geographic expansion
 - Supplier consolidation or diversification for risk mitigation
 
 **Anti-patterns:**
+
 - Individual order tracking or shipment issues
 - Warehouse layout or slotting optimization
 - Carrier rate negotiations or contract review
@@ -113,6 +116,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Consumer electronics - smartphones, tablets, accessories. 200+ suppliers primarily in Asia, 3 manufacturing plants (2 China, 1 Vietnam), 8 regional distribution centers globally. Pain points: $50M in inventory but frequent stockouts on key SKUs, 85% fill rate vs 95% target, lead times 2x competitors, 18% of revenue spent on supply chain vs competitor benchmark of 12%. Need 20% cost reduction ($30M annual) while improving service to 95%."
 
 ### Output
@@ -120,6 +124,7 @@ Outputs must avoid:
 ## NETWORK ANALYSIS
 
 ### Current State Structure
+
 ```
 Network Structure:
 ├── Suppliers: 200+ (excessive fragmentation, top 20 = 80% spend)
@@ -146,6 +151,7 @@ Network Structure:
 ### Network Redesign
 
 **Proposed Structure:**
+
 ```
 ├── Strategic Suppliers: 100 (50% reduction)
 │   ├── Tier 1 Partners: 20 suppliers (80% of spend, deep collaboration)
@@ -161,6 +167,7 @@ Network Structure:
 ```
 
 **Cost Impact by Initiative:**
+
 - Manufacturing regionalization: -$12M (nearshoring efficiency, reduced freight)
 - Inventory optimization: -$10M (50% inventory reduction, lower carrying costs)
 - Transportation optimization: -$8M (mode shifts, consolidation, contract optimization)
@@ -169,14 +176,16 @@ Network Structure:
 ## INVENTORY PLAN
 
 ### ABC-XYZ Segmentation Strategy
-| Segment | % of SKUs | % of Value | Strategy |
-|---------|-----------|------------|----------|
-| A-X (High value, stable demand) | 20% | 50% | Low safety stock, frequent replenishment, VMI |
-| A-Y (High value, variable demand) | 15% | 30% | Buffer stock, demand sensing, postponement |
-| B-Z (Medium value, unpredictable) | 25% | 15% | Make-to-order, postponement, centralized stock |
-| C-Z (Low value, sporadic demand) | 40% | 5% | Eliminate, centralize, or make-to-order only |
+
+| Segment                           | % of SKUs | % of Value | Strategy                                       |
+| --------------------------------- | --------- | ---------- | ---------------------------------------------- |
+| A-X (High value, stable demand)   | 20%       | 50%        | Low safety stock, frequent replenishment, VMI  |
+| A-Y (High value, variable demand) | 15%       | 30%        | Buffer stock, demand sensing, postponement     |
+| B-Z (Medium value, unpredictable) | 25%       | 15%        | Make-to-order, postponement, centralized stock |
+| C-Z (Low value, sporadic demand)  | 40%       | 5%         | Eliminate, centralize, or make-to-order only   |
 
 ### Inventory Positioning
+
 ```
 Raw Materials: 30 days (positioned at suppliers with consignment)
 Work-in-Process: 7 days (lean manufacturing)
@@ -190,6 +199,7 @@ Service Level Impact: 85% → 95% (better positioning, not more inventory)
 ```
 
 ### Demand Planning Enhancement
+
 - Current forecast accuracy: 60% MAPE (root cause of stockouts and excess)
 - ML-based forecasting system: Target 85% accuracy
 - Result: 30% reduction in safety stock, 50% fewer stockouts, 40% less obsolescence
@@ -197,20 +207,23 @@ Service Level Impact: 85% → 95% (better positioning, not more inventory)
 ## RISK MITIGATION
 
 ### Critical Risks Identified
+
 1. **Single-source components:** 15 critical components have single source
 2. **Geographic concentration:** 80% of manufacturing in China
 3. **Port congestion exposure:** 70% of freight through 2 ports
 4. **Demand volatility:** Product launches have 3x forecast variance
 
 ### Resilience Strategy
-| Risk | Mitigation | Investment | Protection Value |
-|------|------------|------------|------------------|
-| Single-source | Dual-source top 20 components | $500K (qualification) | $10M potential loss avoided |
-| Geographic | Mexico + Eastern Europe capacity | $2M (setup) | Supply continuity |
-| Port concentration | Alternative routing, safety stock | $1M | $5M expediting avoided |
-| Demand volatility | Flexible capacity, postponement | $500K | Reduced obsolescence |
+
+| Risk               | Mitigation                        | Investment            | Protection Value            |
+| ------------------ | --------------------------------- | --------------------- | --------------------------- |
+| Single-source      | Dual-source top 20 components     | $500K (qualification) | $10M potential loss avoided |
+| Geographic         | Mexico + Eastern Europe capacity  | $2M (setup)           | Supply continuity           |
+| Port concentration | Alternative routing, safety stock | $1M                   | $5M expediting avoided      |
+| Demand volatility  | Flexible capacity, postponement   | $500K                 | Reduced obsolescence        |
 
 **Resilience Principles:**
+
 - No single supplier >20% of critical component spend
 - Strategic safety stock for 60-day autonomy on critical items
 - 20% surge capacity through contract manufacturing
@@ -219,21 +232,27 @@ Service Level Impact: 85% → 95% (better positioning, not more inventory)
 ## IMPLEMENTATION ROADMAP
 
 ### Phase 1: Foundation (Months 1-3) - $8M Savings
+
 **Quick Wins:**
+
 - Redistribute inventory to demand centers (Americas rebalancing)
 - Renegotiate ocean freight contracts (volume consolidation)
 - Begin supplier consolidation (bottom 100 suppliers)
 - Implement inventory tracking visibility
 
 ### Phase 2: Transformation (Months 4-9) - $15M Savings
+
 **Network Optimization:**
+
 - Establish Mexico manufacturing partnership
 - Consolidate US distribution (8 DCs → 5)
 - Deploy demand planning system with ML forecasting
 - Launch supplier collaboration portal
 
 ### Phase 3: Excellence (Months 10-12) - $7M Savings
+
 **Advanced Capabilities:**
+
 - AI-powered demand sensing integration
 - Automated replenishment for A-X items
 - Carbon tracking and sustainability reporting
@@ -241,21 +260,22 @@ Service Level Impact: 85% → 95% (better positioning, not more inventory)
 
 ## ROI SUMMARY
 
-| Investment | Amount |
-|------------|--------|
-| Technology (planning, visibility) | $2M |
-| Infrastructure (Mexico setup, DC consolidation) | $2M |
-| Consulting and implementation | $1M |
-| **Total Investment** | **$5M** |
+| Investment                                      | Amount  |
+| ----------------------------------------------- | ------- |
+| Technology (planning, visibility)               | $2M     |
+| Infrastructure (Mexico setup, DC consolidation) | $2M     |
+| Consulting and implementation                   | $1M     |
+| **Total Investment**                            | **$5M** |
 
-| Returns | Year 1 | Year 2+ |
-|---------|--------|---------|
-| Annual Savings | $30M | $35M (full run-rate) |
-| Inventory Reduction (one-time) | $25M cash release | - |
-| **ROI** | **600%** | Ongoing |
+| Returns                        | Year 1            | Year 2+              |
+| ------------------------------ | ----------------- | -------------------- |
+| Annual Savings                 | $30M              | $35M (full run-rate) |
+| Inventory Reduction (one-time) | $25M cash release | -                    |
+| **ROI**                        | **600%**          | Ongoing              |
 
 ---
 
 ## Related Prompts
+
 - [Operations Management Expert](operations-manager-excellence.md) - Facility-level operations
 - [Process Optimization Expert](process-optimization-expert.md) - Process improvement

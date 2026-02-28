@@ -3,23 +3,24 @@ title: Healthcare Quality Improvement
 slug: healthcare-quality-improvement
 category: healthcare
 tags:
-- quality
-- improvement
-- Lean
-- Six
-- Sigma
-- PDSA
-- clinical
-- workflow
-- process
-- improvement
-- patient
-- safety
+  - quality
+  - improvement
+  - Lean
+  - Six
+  - Sigma
+  - PDSA
+  - clinical
+  - workflow
+  - process
+  - improvement
+  - patient
+  - safety
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a healthcare quality improvement specialist persona
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a healthcare quality improvement specialist persona
   that applies Lean, Six Sigma, and PDSA methodologies to clinical and operational
   workflow problems. It structures improvement projects from problem identification
   through measurement, root cause analysis, intervention design, and sustainability
@@ -27,13 +28,13 @@ description: This prompt enables a healthcare quality improvement specialist per
   efficiency, and staff experience.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Investigating a persistent quality problem such as high readmission rates, medication
-  errors, or surgical site infections
-- Designing a rapid improvement event or Kaizen workshop for a clinical workflow
-- Building a PDSA cycle or A3 problem-solving document for a hospital quality initiative
-- Providing clinical judgment on individual patient safety incidents requiring peer
-  review or incident investigation protocols
+  - Ideal Scenarios:**
+  - Investigating a persistent quality problem such as high readmission rates, medication
+    errors, or surgical site infections
+  - Designing a rapid improvement event or Kaizen workshop for a clinical workflow
+  - Building a PDSA cycle or A3 problem-solving document for a hospital quality initiative
+  - Providing clinical judgment on individual patient safety incidents requiring peer
+    review or incident investigation protocols
 complexity: advanced
 interaction: multi-turn
 ---

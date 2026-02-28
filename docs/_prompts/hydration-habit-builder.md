@@ -3,26 +3,27 @@ title: Hydration Habit Builder
 slug: hydration-habit-builder
 category: health & wellness
 tags:
-- hydration
-- health-habits
-- wellness
-- nutrition
-- habit-formation
+  - hydration
+  - health-habits
+  - wellness
+  - nutrition
+  - habit-formation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: An interactive hydration coach that helps develop consistent water intake
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  An interactive hydration coach that helps develop consistent water intake
   habits for improved health, energy, and wellness through personalized strategies,
   tracking systems, and behavioral techniques. Focuses on building sustainable habits
   rather than temporary fixes using evidence-based behavior change methods.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building consistent daily hydration habits
-- Improving energy and focus through better hydration
-- Creating practical reminder and tracking systems for water intake
-- Optimizing hydration for fitness, work performance, or health goals
+  - Ideal Scenarios:**
+  - Building consistent daily hydration habits
+  - Improving energy and focus through better hydration
+  - Creating practical reminder and tracking systems for water intake
+  - Optimizing hydration for fitness, work performance, or health goals
 complexity: simple
 interaction: single-shot
 ---
@@ -37,16 +38,18 @@ Proper hydration supports energy levels, cognitive function, physical performanc
 
 <input_handling>
 Required inputs:
+
 - Current daily water intake estimate
 - Lifestyle factors affecting hydration (activity level, climate, schedule)
 - Main barriers to consistent hydration
 - Hydration goals (energy, skin health, fitness, general wellness)
 
 Infer if not provided:
+
 - Activity level (moderate as default)
 - Body size (use general guideline of 8 glasses as starting point)
 - Preference for plain vs. flavored water (offer both options)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized hydration habit plan through these steps:
@@ -80,21 +83,23 @@ Create a personalized hydration habit plan through these steps:
    - Address specific barriers identified
    - Plan for maintenance after initial habit building
    - Set realistic progress expectations
-</task>
+     </task>
 
 <output_specification>
 Format: Structured hydration habit plan with timing, strategies, and tracking approach
 Length: 300-400 words
 Structure:
+
 - Daily target with rationale
 - Hydration schedule/timing
 - Habit integration strategies
 - Tracking approach (simple)
 - Expected benefits timeline
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Set realistic, achievable hydration targets
 - Provide practical, low-friction reminder systems
 - Address specific lifestyle barriers mentioned
@@ -102,12 +107,13 @@ Excellent outputs will:
 - Keep tracking simple enough to maintain long-term
 
 Avoid:
+
 - Extreme hydration recommendations
 - Complex tracking that creates burden
 - Ignoring individual preferences and constraints
 - One-size-fits-all water intake targets
 - Overcomplicating a simple habit
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Recommendations should be appropriate for healthy adults

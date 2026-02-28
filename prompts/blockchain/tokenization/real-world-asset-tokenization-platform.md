@@ -1,6 +1,7 @@
 # Real-World Asset Tokenization Platform
 
 ## Metadata
+
 - **ID**: `blockchain-real-world-asset-tokenization-platform`
 - **Version**: 3.0.0
 - **Category**: Blockchain/Tokenization
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs platforms for tokenizing real-world assets including real estate, art, commodities, and businesses to enable fractional ownership and enhanced liquidity. Covers security token architecture, regulatory compliance (SEC, MiFID), asset management workflows, investor platforms, and secondary market infrastructure.
 
 ## When to Use
+
 - Building real estate tokenization platforms for fractional investment
 - Creating security token offerings for alternative assets
 - Designing investor platforms with KYC/AML compliance
@@ -37,17 +40,19 @@ Real-world asset tokenization bridges traditional finance and blockchain by repr
 
 <input_handling>
 Required:
+
 - Asset types to tokenize (real estate, art, commodities, businesses)
 - Target investors (retail, accredited, institutional)
 - Geographic focus and regulatory jurisdictions
 - Investment minimums and fractional ownership goals
 
 Optional (with defaults):
+
 - Blockchain platform (default: Ethereum with compliance layer)
 - Revenue model (default: platform fees + management fees)
 - Budget and timeline (default: $1-2M, 18 months)
 - Existing partnerships (default: starting from scratch)
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive asset tokenization platform.
@@ -58,28 +63,31 @@ Design comprehensive asset tokenization platform.
 4. Create regulatory compliance framework for target jurisdictions
 5. Develop secondary market infrastructure with liquidity mechanisms
 6. Plan phased implementation with regulatory milestones
-</task>
+   </task>
 
 <output_specification>
 **Asset Tokenization Platform Design**
+
 - Format: Technical and regulatory architecture
 - Length: 1500-2500 words
 - Must include: Token architecture, compliance framework, investor platform, asset management system, trading infrastructure, timeline, revenue model
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Token standards comply with securities regulations
 - KYC/AML integration meets regulatory requirements
 - Asset valuation and due diligence processes are rigorous
 - Secondary market provides genuine liquidity improvement
 
 Avoid:
+
 - Ignoring securities law classification requirements
 - Underestimating custody and compliance costs
 - Overlooking ongoing asset management needs
 - Generic tokenization without investor protections
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure securities law compliance in all target jurisdictions
@@ -93,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Building commercial real estate tokenization platform. Target: retail investors with $100 minimum, plus institutions. Focus on stabilized income-producing properties. Revenue: 1% platform fee, 0.5% management fee, 0.25% transaction fee. US focus initially (SEC Reg D/Reg A+), expanding to Europe. Ethereum/Polygon. $2M budget, 18-month timeline with 6-month MVP.
 
 ### Output
@@ -100,6 +109,7 @@ Building commercial real estate tokenization platform. Target: retail investors 
 ## Token Architecture
 
 **Security Token Standard: ERC-1400**
+
 ```solidity
 contract RealEstateSecurityToken is ERC1400 {
     struct PropertyDetails {
@@ -139,6 +149,7 @@ contract RealEstateSecurityToken is ERC1400 {
 ```
 
 **Compliance Controller**
+
 - Investor whitelist management
 - Transfer restriction enforcement
 - Holding period validation
@@ -147,6 +158,7 @@ contract RealEstateSecurityToken is ERC1400 {
 ## Regulatory Compliance
 
 **SEC Regulation D (506c)**
+
 ```
 Requirements:
 - Accredited investor verification (VerifyInvestor, Parallel Markets)
@@ -161,6 +173,7 @@ Smart Contract Enforcement:
 ```
 
 **Regulation A+ (Tier 2)**
+
 ```
 Requirements:
 - $75M annual offering limit
@@ -175,6 +188,7 @@ Platform Features:
 ```
 
 **State Blue Sky Compliance**
+
 - Automated notice filing tracking
 - State-specific investment limits
 - Merit review documentation
@@ -183,6 +197,7 @@ Platform Features:
 ## Asset Onboarding
 
 **Due Diligence Process**
+
 ```
 Week 1-2: Initial Assessment
 - Property inspection and condition report
@@ -210,6 +225,7 @@ Week 7-8: Tokenization
 ```
 
 **Valuation Engine**
+
 - Comparable sales analysis with ML enhancement
 - Income approach (NOI/cap rate)
 - Third-party appraisal integration
@@ -218,6 +234,7 @@ Week 7-8: Tokenization
 ## Investor Platform
 
 **Onboarding Flow**
+
 ```
 1. Account Creation
    - Email/phone verification
@@ -241,12 +258,14 @@ Week 7-8: Tokenization
 ```
 
 **Portfolio Dashboard**
+
 - Real-time portfolio valuation
 - Income distribution tracking
 - Property performance analytics
 - Tax document repository (K-1s, 1099s)
 
 **Investment Tools**
+
 - Property comparison calculator
 - Diversification analysis
 - Projected returns modeling
@@ -255,6 +274,7 @@ Week 7-8: Tokenization
 ## Secondary Market
 
 **Trading Infrastructure**
+
 ```
 Order Types:
 - Market orders (immediate best price)
@@ -270,12 +290,14 @@ Matching Engine:
 ```
 
 **Liquidity Mechanisms**
+
 - Platform-sponsored market making
 - Issuer buyback programs
 - Institutional block trading desk
 - AMM pools for popular tokens
 
 **Settlement**
+
 - Atomic swap execution
 - Qualified custodian integration
 - Fiat/crypto payment rails
@@ -284,6 +306,7 @@ Matching Engine:
 ## Implementation Timeline
 
 **Phase 1: MVP (Months 1-6)** - $600K
+
 ```
 Month 1-2: Core Infrastructure
 - Blockchain deployment
@@ -302,6 +325,7 @@ Month 5-6: Investor Platform
 ```
 
 **Phase 2: Full Platform (Months 7-12)** - $800K
+
 ```
 - Advanced trading (auctions, offers)
 - Mobile applications
@@ -311,6 +335,7 @@ Month 5-6: Investor Platform
 ```
 
 **Phase 3: Scale (Months 13-18)** - $600K
+
 ```
 - European expansion (MiFID II)
 - API marketplace
@@ -330,6 +355,7 @@ Month 5-6: Investor Platform
 | **Total** | | **$1.625M** |
 
 **Break-Even Analysis**
+
 - Fixed costs: $800K/year (team, infrastructure, compliance)
 - Break-even AUM: ~$75M
 - Target profitability: Month 24
@@ -337,12 +363,14 @@ Month 5-6: Investor Platform
 ## Success Metrics
 
 **Platform Performance**
+
 - Assets under management: $100M by Year 2
 - Active investors: 10,000+
 - Properties tokenized: 25+
 - Platform uptime: 99.9%
 
 **Investor Success**
+
 - Average annual return: 8-12%
 - Liquidity improvement: 90% faster exit vs. traditional
 - Minimum investment: $100 (vs. $50K+ traditional)
@@ -351,6 +379,7 @@ Month 5-6: Investor Platform
 ---
 
 ## Related Prompts
+
 - [Smart Contract Security Audit Platform](../smart-contracts/smart-contract-security-audit-platform.md)
 - [Blockchain Digital Identity Management Platform](../digital-identity/blockchain-digital-identity-management-platform.md)
 - [Enterprise Blockchain Integration Expert](../enterprise-blockchain-integration-expert.md)

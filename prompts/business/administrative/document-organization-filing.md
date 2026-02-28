@@ -1,6 +1,7 @@
 # Document Organization & Filing Expert
 
 ## Metadata
+
 - **ID**: `business-document-organization-filing`
 - **Version**: 2.0.0
 - **Category**: Business/Administrative
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs practical document organization systems with logical folder structures, naming conventions, and access controls. Creates searchable, scalable document management that reduces search time by 80%+ while ensuring compliance and team adoption.
 
 ## When to Use
+
 - Creating a new document management system from scratch
 - Reorganizing chaotic file structures across multiple platforms
 - Establishing naming conventions for teams or departments
@@ -37,17 +40,19 @@ Effective document organization balances standardization with usability. Systems
 
 <input_handling>
 Required:
+
 - Organization type and size
 - Number of people needing document access
 - Current document storage locations
 - Primary document types handled
 
 Optional (with defaults):
+
 - Compliance requirements (default: none specified)
 - Current pain points (default: "finding documents quickly")
 - Retention needs (default: 7 years for legal/financial)
 - Platform constraints (default: cloud storage system)
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive document organization system.
@@ -59,17 +64,19 @@ Design a comprehensive document organization system.
 5. Establish retention and archival policies
 6. Create implementation timeline with migration plan
 7. Provide search strategies and automation recommendations
-</task>
+   </task>
 
 <output_specification>
 **Document Organization System**
+
 - Format: Structured sections with visual folder trees and tables
 - Length: 600-1000 words
 - Must include: Folder structure diagram, naming convention examples, access matrix, implementation timeline, retention policy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Folder structure is intuitive and requires minimal training
 - Naming conventions eliminate version confusion
 - Access controls balance security with usability
@@ -77,11 +84,12 @@ Excellent outputs:
 - System accommodates growth and edge cases
 
 Avoid:
+
 - Overly deep folder hierarchies (max 4 levels)
 - Complex naming schemes that won't be followed
 - All-or-nothing migration approaches
 - Ignoring existing workflow patterns
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Design for adoption, not perfection
@@ -95,6 +103,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Mid-size marketing agency, 45 employees. Mix of Google Drive, Dropbox, and local computers. Main frustration: finding client assets, version confusion, duplicate files everywhere. Departments: Creative (15), Account Management (12), Operations (8), Finance (5), Leadership (5). Need contracts and financial records for 7 years.
 
 ### Output
@@ -102,6 +111,7 @@ Mid-size marketing agency, 45 employees. Mix of Google Drive, Dropbox, and local
 ## Current State Assessment
 
 **Pain Points Identified:**
+
 - Client assets scattered across 3 platforms
 - Version confusion causing rework (~5 hrs/week wasted)
 - No naming standard leads to duplicate creation
@@ -144,60 +154,68 @@ AGENCY_DOCS/
 
 **Client Files:**
 `YYYY-MM-DD_ClientName_DocumentType_Version`
+
 - Example: `2025-01-15_Nike_CreativeBrief_v1.docx`
 - Example: `2025-01-20_Nike_CreativeBrief_v2-APPROVED.docx`
 
 **Asset Files:**
 `ClientName_AssetType_Description_Specs`
+
 - Example: `Nike_Logo_Primary_RGB.png`
 - Example: `Nike_Hero_SpringCampaign_1920x1080.jpg`
 
 **Internal Documents:**
 `Department_DocumentType_YYYY-MM`
+
 - Example: `Finance_BudgetReport_2025-01.xlsx`
 
 **Version Indicators:**
+
 - `_v1`, `_v2`, etc. for working versions
 - `_FINAL` or `_APPROVED` for approved versions
 - `_ARCHIVE` for superseded versions
 
 ## Access Control Matrix
 
-| Folder | Leadership | Account Mgmt | Creative | Finance | Ops |
-|--------|------------|--------------|----------|---------|-----|
-| All Clients | View All | Assigned Only | Assigned Only | Contracts Only | View All |
-| Business Ops | Full | Limited | None | Full | Full |
-| Templates | Edit | Use | Edit Creative | Use | Edit |
-| Archive | Full | View Own | View Own | Full | Full |
+| Folder       | Leadership | Account Mgmt  | Creative      | Finance        | Ops      |
+| ------------ | ---------- | ------------- | ------------- | -------------- | -------- |
+| All Clients  | View All   | Assigned Only | Assigned Only | Contracts Only | View All |
+| Business Ops | Full       | Limited       | None          | Full           | Full     |
+| Templates    | Edit       | Use           | Edit Creative | Use            | Edit     |
+| Archive      | Full       | View Own      | View Own      | Full           | Full     |
 
 ## Retention Policy
 
-| Document Type | Retention | Archive Location | Destruction |
-|---------------|-----------|------------------|-------------|
-| Client Contracts | 7 years post-end | Archive/Legal/ | Secure delete |
-| Financial Records | 7 years | Archive/Finance/ | Secure delete |
-| Creative Assets | 3 years post-use | Archive/Creative/ | Delete |
-| Working Files | 1 year | Auto-delete | Standard |
-| Correspondence | 3 years | Archive/Client/ | Standard |
+| Document Type     | Retention        | Archive Location  | Destruction   |
+| ----------------- | ---------------- | ----------------- | ------------- |
+| Client Contracts  | 7 years post-end | Archive/Legal/    | Secure delete |
+| Financial Records | 7 years          | Archive/Finance/  | Secure delete |
+| Creative Assets   | 3 years post-use | Archive/Creative/ | Delete        |
+| Working Files     | 1 year           | Auto-delete       | Standard      |
+| Correspondence    | 3 years          | Archive/Client/   | Standard      |
 
 ## 30-Day Implementation
 
 **Week 1: Foundation**
+
 - Create master structure in primary platform
 - Set up access permissions for leadership
 - Train leadership and department heads
 
 **Week 2: Active Migration**
+
 - Migrate active client files (current projects)
 - Apply naming conventions to new files only
 - Create department template folders
 
 **Week 3: Internal Files**
+
 - Organize Business Ops and Templates
 - Set up automation (auto-file rules)
 - Train remaining staff in groups of 10
 
 **Week 4: Cleanup**
+
 - Archive inactive clients (no activity 6+ months)
 - Run duplicate detection and merge
 - Document exceptions and edge cases
@@ -206,11 +224,13 @@ AGENCY_DOCS/
 ## Automation Recommendations
 
 **Auto-Filing Rules:**
+
 - Client emails -> Client/Correspondence/
 - Invoices with "INV" prefix -> Finance/Invoices/
 - Files older than 90 days in Working -> prompt for archive
 
 **Search Optimization:**
+
 - Tag high-use documents with keywords
 - Create saved searches for common queries
 - Set up dashboard for recently modified files
@@ -218,6 +238,7 @@ AGENCY_DOCS/
 ## Success Metrics
 
 **Target Improvements:**
+
 - Document search time: 10 min -> 2 min (80% reduction)
 - Version confusion incidents: 5/week -> 0
 - New employee onboarding: 2 weeks -> 3 days
@@ -226,6 +247,7 @@ AGENCY_DOCS/
 ---
 
 ## Related Prompts
+
 - [Task Delegation Expert](task-delegation-tracking.md)
 - [Meeting Minutes Expert](meeting-minutes-summarization.md)
 - [Email Management Expert](email-prioritization-response.md)

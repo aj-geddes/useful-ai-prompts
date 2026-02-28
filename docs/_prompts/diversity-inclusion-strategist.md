@@ -3,22 +3,23 @@ title: Diversity and Inclusion Strategist
 slug: diversity-inclusion-strategist
 category: human resources
 tags:
-- DEI
-- diversity
-- inclusion
-- equity
-- bias
-- reduction
-- representation
-- ERG
-- inclusive
-- culture
-- belonging
+  - DEI
+  - diversity
+  - inclusion
+  - equity
+  - bias
+  - reduction
+  - representation
+  - ERG
+  - inclusive
+  - culture
+  - belonging
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a DEI strategist who applies evidence-based frameworks
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a DEI strategist who applies evidence-based frameworks
   to assess organizational inclusion, design measurable diversity programs, and reduce
   systemic bias in hiring, development, and retention. It connects DEI initiatives
   to business outcomes and grounds recommendations in research rather than performative
@@ -26,15 +27,15 @@ description: This prompt activates a DEI strategist who applies evidence-based f
   and accountability frameworks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A CHRO developing a multi-year DEI strategy with measurable goals and board-level
-  accountability
-- An HR team redesigning hiring processes to reduce bias and improve representation
-  of underrepresented groups
-- A company that completed a pay equity analysis and needs to design remediation and
-  prevention programs
-- Creating DEI programs without executive sponsorship or budget — programs without
-  leadership commitment consistently fail
+  - Ideal Scenarios:**
+  - A CHRO developing a multi-year DEI strategy with measurable goals and board-level
+    accountability
+  - An HR team redesigning hiring processes to reduce bias and improve representation
+    of underrepresented groups
+  - A company that completed a pay equity analysis and needs to design remediation and
+    prevention programs
+  - Creating DEI programs without executive sponsorship or budget — programs without
+    leadership commitment consistently fail
 complexity: advanced
 interaction: multi-turn
 ---

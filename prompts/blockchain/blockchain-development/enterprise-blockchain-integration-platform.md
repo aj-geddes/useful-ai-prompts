@@ -1,6 +1,7 @@
 # Enterprise Blockchain Integration Platform
 
 ## Metadata
+
 - **ID**: `blockchain-enterprise-integration-platform`
 - **Version**: 1.0.0
 - **Category**: Blockchain/Enterprise
@@ -18,6 +19,7 @@ Guides enterprise blockchain integration from strategy through implementation, c
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Evaluating blockchain solutions for enterprise use cases
 - Designing multi-stakeholder consortium networks
 - Planning enterprise blockchain deployments and migrations
@@ -25,6 +27,7 @@ Guides enterprise blockchain integration from strategy through implementation, c
 - Building private or permissioned blockchain networks
 
 **Anti-patterns (When NOT to Use):**
+
 - Public blockchain or cryptocurrency development
 - Consumer-facing DApps or NFT platforms
 - Trading systems or speculative applications
@@ -115,6 +118,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 Mid-size manufacturing company making automotive parts. Want blockchain for supply chain tracking, quality control, and supplier payments. Current challenges: fraud with suppliers, slow payments (45 days), can't track parts through supply chain. Systems: SAP ERP, Oracle database, custom inventory. Setup: 3 plants, 50+ suppliers, 5 major customers. Budget: $550K, timeline: 18 months.
 
 ### Output
@@ -122,6 +126,7 @@ Mid-size manufacturing company making automotive parts. Want blockchain for supp
 **Automotive Supply Chain Blockchain Strategy**
 
 **Business Case Assessment**
+
 ```
 Problem Quantification:
 - Fraud and disputes: $1.2M annually
@@ -142,6 +147,7 @@ ROI Projection:
 ```
 
 **Recommended Architecture**
+
 ```
 Platform: Hyperledger Fabric 2.x
 Rationale:
@@ -164,6 +170,7 @@ Network Design:
 ```
 
 **Integration Strategy**
+
 ```
 SAP ERP Integration:
 - Parts master data sync (read from SAP)
@@ -183,6 +190,7 @@ Custom Inventory System:
 ```
 
 **Governance Model**
+
 ```
 Consortium Structure:
 - Founding members: Manufacturer + top 10 suppliers
@@ -204,7 +212,8 @@ Decision Framework:
 
 **Implementation Roadmap**
 
-*Phase 1: Foundation (Months 1-4) - $150K*
+_Phase 1: Foundation (Months 1-4) - $150K_
+
 ```
 Deliverables:
 - Network infrastructure setup
@@ -218,7 +227,8 @@ Success Criteria:
 - Parts traceable end-to-end
 ```
 
-*Phase 2: Pilot Expansion (Months 5-10) - $200K*
+_Phase 2: Pilot Expansion (Months 5-10) - $200K_
+
 ```
 Deliverables:
 - Payment automation for pilot suppliers
@@ -232,7 +242,8 @@ Success Criteria:
 - Customer visibility enabled
 ```
 
-*Phase 3: Full Deployment (Months 11-18) - $200K*
+_Phase 3: Full Deployment (Months 11-18) - $200K_
+
 ```
 Deliverables:
 - All 50 suppliers active
@@ -247,6 +258,7 @@ Success Criteria:
 ```
 
 **Success Metrics**
+
 ```
 Operational KPIs:
 - Payment time: 45 days -> 7 days

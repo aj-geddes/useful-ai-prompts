@@ -1,6 +1,7 @@
 # Risk Register Builder
 
 ## Metadata
+
 - **ID**: `security-risk-register-builder`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates an information security risk management specialist who bui
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a formal information security risk register to satisfy ISO 27001, SOC 2, or NIST CSF requirements
 - Conducting an annual risk assessment to identify and prioritize the organization's top information security risks
 - Presenting security risk to a board or executive audience in business-impact terms
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time incident risk assessment during an active security event
 - Project risk registers for non-security domains (use a general project risk framework)
 
@@ -141,18 +144,18 @@ Inherent Risk = Likelihood x Impact. Residual Risk = scored after applying exist
 
 **Risk Register (Top 15 Risks)**
 
-| # | Risk Scenario | Domain | Likelihood | Impact | Inherent | Controls | Residual | Tier |
-|---|---------------|--------|-----------|--------|----------|----------|---------|------|
-| R1 | Ransomware attack encrypts production systems and backups | Cyber | 4 | 5 | 20 | Basic AV, no offline backups | 18 | Critical |
-| R2 | Payment card data breach triggers PCI-DSS fines and card brand penalties | Regulatory | 3 | 5 | 15 | PCI-DSS scope limited, but not fully assessed | 12 | High |
-| R3 | Phishing attack compromises employee credentials; attacker accesses admin systems | Cyber | 4 | 4 | 16 | Basic email filtering, no phishing simulation | 14 | High |
-| R4 | Web application SQL injection exposes customer PII database | Technical | 3 | 5 | 15 | WAF in place (partial) | 10 | High |
-| R5 | DDoS attack takes website offline during peak sales period | Cyber | 3 | 4 | 12 | Basic ISP filtering | 10 | High |
-| R6 | Third-party e-commerce plugin with known CVE exploited | Supply Chain | 4 | 3 | 12 | No SCA scanning | 12 | High |
-| R7 | Insider threat: disgruntled employee exfiltrates customer database | Internal | 2 | 5 | 10 | No DLP, no access monitoring | 10 | High |
-| R8 | Cloud misconfiguration exposes S3 bucket with customer data | Technical | 3 | 4 | 12 | No CSPM tool | 10 | High |
-| R9 | Employee terminated without timely account deprovisioning | Process | 4 | 2 | 8 | Manual, inconsistent process | 8 | Medium |
-| R10 | Unpatched web server exploited via known CVE | Technical | 3 | 3 | 9 | Monthly patching, not consistent | 7 | Medium |
+| #   | Risk Scenario                                                                     | Domain       | Likelihood | Impact | Inherent | Controls                                      | Residual | Tier     |
+| --- | --------------------------------------------------------------------------------- | ------------ | ---------- | ------ | -------- | --------------------------------------------- | -------- | -------- |
+| R1  | Ransomware attack encrypts production systems and backups                         | Cyber        | 4          | 5      | 20       | Basic AV, no offline backups                  | 18       | Critical |
+| R2  | Payment card data breach triggers PCI-DSS fines and card brand penalties          | Regulatory   | 3          | 5      | 15       | PCI-DSS scope limited, but not fully assessed | 12       | High     |
+| R3  | Phishing attack compromises employee credentials; attacker accesses admin systems | Cyber        | 4          | 4      | 16       | Basic email filtering, no phishing simulation | 14       | High     |
+| R4  | Web application SQL injection exposes customer PII database                       | Technical    | 3          | 5      | 15       | WAF in place (partial)                        | 10       | High     |
+| R5  | DDoS attack takes website offline during peak sales period                        | Cyber        | 3          | 4      | 12       | Basic ISP filtering                           | 10       | High     |
+| R6  | Third-party e-commerce plugin with known CVE exploited                            | Supply Chain | 4          | 3      | 12       | No SCA scanning                               | 12       | High     |
+| R7  | Insider threat: disgruntled employee exfiltrates customer database                | Internal     | 2          | 5      | 10       | No DLP, no access monitoring                  | 10       | High     |
+| R8  | Cloud misconfiguration exposes S3 bucket with customer data                       | Technical    | 3          | 4      | 12       | No CSPM tool                                  | 10       | High     |
+| R9  | Employee terminated without timely account deprovisioning                         | Process      | 4          | 2      | 8        | Manual, inconsistent process                  | 8        | Medium   |
+| R10 | Unpatched web server exploited via known CVE                                      | Technical    | 3          | 3      | 9        | Monthly patching, not consistent              | 7        | Medium   |
 
 **Risk Heatmap**
 
@@ -165,13 +168,13 @@ Likelihood: 1→2→3→4→5
 
 **Top 5 Treatment Plans**
 
-| Risk | Treatment | Owner | Actions | Target |
-|------|---------|-------|---------|--------|
-| R1 (Ransomware) | Mitigate | IT Director | Implement offline/immutable backups; deploy EDR; tabletop exercise | Q2 2026 |
-| R2 (PCI breach) | Mitigate + Transfer | CISO | Complete PCI-DSS SAQ; acquire cyber insurance with PCI coverage | Q1 2026 |
-| R3 (Phishing) | Mitigate | Security Lead | Deploy phishing simulation program; enforce MFA on all accounts | Q1 2026 |
-| R4 (SQLi) | Mitigate | Engineering Lead | Code review for parameterized queries; enable WAF SQLi rules | Q1 2026 |
-| R5 (DDoS) | Transfer + Mitigate | IT Director | Acquire Cloudflare or AWS Shield; document failover runbook | Q2 2026 |
+| Risk            | Treatment           | Owner            | Actions                                                            | Target  |
+| --------------- | ------------------- | ---------------- | ------------------------------------------------------------------ | ------- |
+| R1 (Ransomware) | Mitigate            | IT Director      | Implement offline/immutable backups; deploy EDR; tabletop exercise | Q2 2026 |
+| R2 (PCI breach) | Mitigate + Transfer | CISO             | Complete PCI-DSS SAQ; acquire cyber insurance with PCI coverage    | Q1 2026 |
+| R3 (Phishing)   | Mitigate            | Security Lead    | Deploy phishing simulation program; enforce MFA on all accounts    | Q1 2026 |
+| R4 (SQLi)       | Mitigate            | Engineering Lead | Code review for parameterized queries; enable WAF SQLi rules       | Q1 2026 |
+| R5 (DDoS)       | Transfer + Mitigate | IT Director      | Acquire Cloudflare or AWS Shield; document failover runbook        | Q2 2026 |
 
 **Executive Summary**
 

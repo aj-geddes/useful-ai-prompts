@@ -208,7 +208,7 @@ metadata:
   namespace: istio-system
 spec:
   mtls:
-    mode: STRICT  # Enforce mTLS for all workloads
+    mode: STRICT # Enforce mTLS for all workloads
 
 ---
 apiVersion: security.istio.io/v1beta1
@@ -379,12 +379,14 @@ istioctl version
 ## Service Mesh Patterns
 
 ### Traffic Management
+
 - **Canary Deployments**: Gradually shift traffic
 - **A/B Testing**: Route based on headers
 - **Circuit Breaking**: Fail fast with outlier detection
 - **Rate Limiting**: Control request flow
 
 ### Security
+
 - **mTLS**: Mutual authentication
 - **Authorization Policies**: Fine-grained access control
 - **JWT Validation**: Token verification
@@ -393,6 +395,7 @@ istioctl version
 ## Best Practices
 
 ### ✅ DO
+
 - Enable mTLS for all workloads
 - Implement proper authorization policies
 - Use virtual services for traffic management
@@ -403,6 +406,7 @@ istioctl version
 - Use namespace isolation
 
 ### ❌ DON'T
+
 - Disable mTLS in production
 - Allow permissive traffic policies
 - Ignore observability setup

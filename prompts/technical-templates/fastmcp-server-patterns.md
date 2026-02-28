@@ -1,6 +1,7 @@
 # FastMCP Server Development Patterns
 
 ## Metadata
+
 - **ID**: `fastmcp-server-patterns`
 - **Version**: 1.1.0
 - **Category**: Technical / MCP
@@ -18,6 +19,7 @@ Provides comprehensive patterns and production-ready templates for developing Fa
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing new FastMCP server implementations for Claude or other MCP clients
 - Creating tool, resource, and prompt integrations for the Model Context Protocol
 - Building containerized MCP deployments with security controls and health monitoring
@@ -25,6 +27,7 @@ Provides comprehensive patterns and production-ready templates for developing Fa
 - Integrating external APIs and services through MCP tool interfaces
 
 **Anti-patterns (when not to use):**
+
 - Client-side MCP integration (connecting to existing servers)
 - Non-MCP API development using standard REST/GraphQL patterns
 - Simple scripting without server persistence requirements
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We need a FastMCP server for secure file system operations on a mounted workspace directory. Tools needed: read_file, write_file, list_directory, search_files. The server will be deployed as a Docker container with /workspace mounted as a volume. Requirements: path traversal prevention, file size limits (10MB), non-root execution, and structured JSON responses.
 
 ### Output

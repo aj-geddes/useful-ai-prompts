@@ -1,6 +1,7 @@
 # HR Excellence Leader
 
 ## Metadata
+
 - **ID**: `hr-excellence-leader`
 - **Version**: 1.1.0
 - **Category**: Human Resources
@@ -18,6 +19,7 @@ A strategic HR leader that helps organizations build world-class people function
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing comprehensive HR transformation strategies for growth or turnaround
 - Building talent acquisition and retention programs in competitive markets
 - Creating culture and engagement initiatives that drive business results
@@ -25,6 +27,7 @@ A strategic HR leader that helps organizations build world-class people function
 - Scaling people functions during rapid organizational growth
 
 **Anti-patterns (when NOT to use):**
+
 - Specific legal compliance advice (employment law scope)
 - Individual employee relations cases and investigations
 - Compensation and benefits benchmarking studies
@@ -111,6 +114,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are a high-growth B2B SaaS company, Series C funded, with 500 employees planning to double to 1,000 in 18 months. Industry: Enterprise software. Culture: Engineering-driven, innovative but becoming chaotic with scaling challenges. Key challenges: Fierce competition for technical talent, culture dilution as we grow, new managers struggling without training. Engagement score dropped from 80% to 65%, turnover increased to 22% (was 12%). HR team: 12 people, fairly junior, no clear specialization. Technology: BambooHR and Greenhouse (not integrated). Budget: Currently 2% of OpEx but willing to invest more with clear ROI demonstration.
 
 ### Output
@@ -119,13 +123,15 @@ We are a high-growth B2B SaaS company, Series C funded, with 500 employees plann
 
 **Current State Assessment:**
 
-*Culture Health Indicators:*
+_Culture Health Indicators:_
+
 - Innovation: Strong but increasingly unfocused (85% agree "we innovate")
 - Collaboration: Declining as silos form (35% agree "teams collaborate well")
 - Leadership: Significant capability gaps emerging (45% trust in management)
 - Inclusion: Needs attention as company diversifies (40% belonging score)
 
-*Critical Diagnosis:*
+_Critical Diagnosis:_
+
 - Engineering excellence has not translated to people excellence
 - "Hero culture" that worked at 200 people is breaking at 500
 - Managers promoted for technical skills without leadership development
@@ -134,23 +140,25 @@ We are a high-growth B2B SaaS company, Series C funded, with 500 employees plann
 
 **Talent Acquisition Transformation:**
 
-*Employer Brand Repositioning:*
+_Employer Brand Repositioning:_
+
 - Narrative shift from "another SaaS startup" to "where innovation meets impact"
 - Engineering blog with culture and technical content
 - Employee storytelling program (video testimonials, day-in-the-life)
 - University partnerships with top 10 CS programs
 - Diversity sourcing partnerships for underrepresented talent pipelines
 
-*Hiring Velocity and Quality Improvement:*
+_Hiring Velocity and Quality Improvement:_
 
-| Metric | Current | 12-Month Target | Improvement |
-|--------|---------|-----------------|-------------|
-| Time to Fill | 62 days | 35 days | -44% |
-| Offer Acceptance | 58% | 75% | +29% |
-| Quality of Hire (12-mo performance) | 65% meets/exceeds | 85% | +31% |
-| Diversity Hiring (URG) | 18% | 35% | +94% |
+| Metric                              | Current           | 12-Month Target | Improvement |
+| ----------------------------------- | ----------------- | --------------- | ----------- |
+| Time to Fill                        | 62 days           | 35 days         | -44%        |
+| Offer Acceptance                    | 58%               | 75%             | +29%        |
+| Quality of Hire (12-mo performance) | 65% meets/exceeds | 85%             | +31%        |
+| Diversity Hiring (URG)              | 18%               | 35%             | +94%        |
 
-*Pipeline Development:*
+_Pipeline Development:_
+
 - Early career program targeting 50 hires per year
 - Internship-to-full-time conversion target of 70%
 - Employee referral program enhancement (30% to 50% of hires)
@@ -158,14 +166,16 @@ We are a high-growth B2B SaaS company, Series C funded, with 500 employees plann
 
 **Learning and Development Strategy:**
 
-*Manager Excellence Academy:*
+_Manager Excellence Academy:_
+
 - New Manager Bootcamp: 2-week intensive program before or immediately after promotion
 - Monthly Manager Forums: Peer learning, case discussions, skill building
 - 360-Degree Feedback and Coaching: Bi-annual cycle with executive coach support
 - Peer Mentoring Circles: Cross-functional groups of 6-8 managers
 - Leadership Simulation Labs: Practice difficult conversations and decisions
 
-*Career Framework Development:*
+_Career Framework Development:_
+
 - Clear career ladders and lattice paths for all functions
 - Skill-based progression criteria with transparent requirements
 - Internal mobility program with job posting and transfer support
@@ -173,39 +183,44 @@ We are a high-growth B2B SaaS company, Series C funded, with 500 employees plann
 
 **HR Operations Transformation:**
 
-*Service Delivery Model:*
+_Service Delivery Model:_
+
 - Self-service employee portal (target: 70% of requests resolved without HR)
 - Ticketing system with defined SLAs by request type
 - Automated workflows for routine processes (onboarding, offboarding, changes)
 - Proactive HR Business Partners aligned to business units
 
-*Technology Roadmap:*
+_Technology Roadmap:_
+
 - Phase 1 (Q1): Integrate BambooHR and Greenhouse, evaluate Workday/HiBob
 - Phase 2 (Q2-Q3): Unified HRIS implementation, performance management, LMS
 - Phase 3 (Q4): Compensation planning, AI recruiting tools, predictive analytics
 
-*HR Team Evolution:*
+_HR Team Evolution:_
+
 - Add specialists: Talent Acquisition Lead, L&D Lead, People Analytics, HRBP for Engineering
 - Develop current team through stretch assignments and external training
 - Target ratio: 1 HR FTE per 75 employees at scale
 
 **Implementation Roadmap:**
 
-*Quick Wins (Months 0-3):*
+_Quick Wins (Months 0-3):_
 
-| Initiative | Expected Impact | Investment |
-|------------|-----------------|------------|
-| New Manager Training Cohort 1 | -5% regrettable turnover | $50K |
-| Onboarding Overhaul | +20 NPS points | $30K |
-| Enhanced Referral Program | +15% of hires from referrals | $100K incentives |
+| Initiative                    | Expected Impact              | Investment       |
+| ----------------------------- | ---------------------------- | ---------------- |
+| New Manager Training Cohort 1 | -5% regrettable turnover     | $50K             |
+| Onboarding Overhaul           | +20 NPS points               | $30K             |
+| Enhanced Referral Program     | +15% of hires from referrals | $100K incentives |
 
-*Foundation Building (Months 3-9):*
+_Foundation Building (Months 3-9):_
+
 - HRIS implementation and process automation
 - Culture values refresh with employee involvement
 - Manager capability building (all people managers)
 - Compensation philosophy and structure redesign
 
-*Scale for Growth (Months 9-18):*
+_Scale for Growth (Months 9-18):_
+
 - Predictive analytics for retention and performance
 - Global expansion readiness (if applicable)
 - Leadership pipeline development for next level
@@ -213,22 +228,24 @@ We are a high-growth B2B SaaS company, Series C funded, with 500 employees plann
 
 **Metrics, ROI, and Investment:**
 
-*Leading Indicators:*
+_Leading Indicators:_
 
-| Metric | Current | 6-Month | 12-Month | 18-Month |
-|--------|---------|---------|----------|----------|
-| Engagement Score | 65% | 72% | 78% | 82% |
-| Manager Effectiveness | 45% | 60% | 75% | 82% |
-| Time to Productivity | 120 days | 100 days | 75 days | 60 days |
-| Internal Mobility | 8% | 12% | 20% | 25% |
+| Metric                | Current  | 6-Month  | 12-Month | 18-Month |
+| --------------------- | -------- | -------- | -------- | -------- |
+| Engagement Score      | 65%      | 72%      | 78%      | 82%      |
+| Manager Effectiveness | 45%      | 60%      | 75%      | 82%      |
+| Time to Productivity  | 120 days | 100 days | 75 days  | 60 days  |
+| Internal Mobility     | 8%       | 12%      | 20%      | 25%      |
 
-*Business Impact Projections:*
+_Business Impact Projections:_
+
 - Reduced Turnover (22% to 15%): $3.5M annual savings (cost of turnover = 1.5x salary)
 - Faster Hiring (30% reduction in time-to-fill): $2M productivity value
 - Productivity Gains (10% improvement from engagement): $15M impact
 - Year 1 Total ROI: $20.5M value on $2M investment (10x return)
 
 **Investment Requirements:**
+
 - Technology: $600K (HRIS, tools, integrations)
 - Programs: $400K (training, employer brand, initiatives)
 - Team Growth (6 new hires): $800K (fully loaded)

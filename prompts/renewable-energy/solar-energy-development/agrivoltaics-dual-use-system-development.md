@@ -1,6 +1,7 @@
 # Agrivoltaics and Dual-Use Solar System Development
 
 ## Metadata
+
 - **ID**: `agrivoltaics-dual-use-system-development`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Design and implement agrivoltaic systems that combine solar energy generation wi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing solar installations compatible with agricultural operations
 - Selecting crops and farming practices for agrivoltaic conditions
 - Optimizing solar array configurations for dual-use applications
@@ -26,6 +28,7 @@ Design and implement agrivoltaic systems that combine solar energy generation wi
 - Engaging farmers and agricultural stakeholders
 
 **Anti-Patterns (When NOT to Use):**
+
 - Standard utility-scale solar without agricultural component
 - Detailed crop science requiring agronomist expertise
 - Specific land use permits (requires local counsel)
@@ -111,46 +114,54 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We have a 200-acre farm in the Mid-Atlantic region currently growing vegetables and some hay. The farmer wants to continue agricultural operations while adding solar for additional income. Main crops are leafy greens, peppers, and tomatoes. We're targeting 10-15 MW of solar capacity while maintaining productive agriculture. Farmer is concerned about equipment access and wants to keep the farm looking like a farm.
 
 ### Output
+
 **Agrivoltaic Development Framework: 200-Acre Mid-Atlantic Vegetable Farm**
 
 **Site Assessment**
 
 Your Mid-Atlantic location offers excellent agrivoltaic potential:
+
 - Sufficient solar resource (4.5-5.0 kWh/m2/day)
 - Hot summers where shade can benefit crops
 - Established vegetable production with market access
 - Mix of crops with varying shade tolerance
 
-*Current Land Use Analysis*
+_Current Land Use Analysis_
+
 - Leafy greens: High agrivoltaic compatibility (shade-tolerant)
 - Peppers/tomatoes: Moderate compatibility (partial shade acceptable)
 - Hay: Excellent compatibility (reduced water stress under panels)
 
 **Solar System Design for Agricultural Compatibility**
 
-*Array Configuration*
+_Array Configuration_
+
 - Elevated fixed-tilt system (10-15 foot clearance)
 - North-south row orientation for uniform light distribution
 - 30-40 foot row spacing (accommodates standard farm equipment)
 - Bifacial modules to capture ground-reflected light
 
-*Capacity Optimization*
+_Capacity Optimization_
 With agricultural spacing requirements, expect reduced density versus utility-scale:
+
 - Standard utility-scale: 4-5 acres/MW
 - Agrivoltaic design: 12-18 acres/MW
 - 200-acre site: 10-15 MW capacity (as targeted)
 - Actual farmable area under arrays: 60-70% of array footprint
 
-*Structure Design*
+_Structure Design_
+
 - Single-post or minimal-post foundation to reduce ground disruption
 - Driven piles (not concrete) for soil preservation
 - Adjustable tilt capability for seasonal optimization
 - Cable management above farming zone
 
-*Equipment Access*
+_Equipment Access_
+
 - 12-foot minimum row width for tractor passage
 - Clear turning areas at row ends
 - Designated equipment crossings every 500 feet
@@ -158,95 +169,110 @@ With agricultural spacing requirements, expect reduced density versus utility-sc
 
 **Crop Selection and Zoning Strategy**
 
-*Zone 1: Under-Panel Intensive (60 acres)*
+_Zone 1: Under-Panel Intensive (60 acres)_
 Priority crops for partial shade conditions:
+
 - Leafy greens: Lettuce, spinach, kale, arugula (30-50% light reduction beneficial in summer)
 - Asian greens: Bok choy, mizuna (shade-tolerant, heat-sensitive)
 - Herbs: Cilantro, parsley, chives (bolt-resistant with cooling)
 - Root crops: Radishes, beets (moderate shade tolerance)
 
-*Zone 2: Inter-Row Production (40 acres)*
+_Zone 2: Inter-Row Production (40 acres)_
 Crops between rows receiving fuller sun:
+
 - Peppers and tomatoes in wider inter-row spaces
 - Squash and melons with trailing growth patterns
 - Cut flowers for local markets
 
-*Zone 3: Perimeter and Buffer (30 acres)*
+_Zone 3: Perimeter and Buffer (30 acres)_
 Traditional production outside array:
+
 - Full-sun crops (corn, peppers, tomatoes)
 - Pollinator habitat strips
 - Customer-facing U-pick areas
 
-*Hay Integration (70 acres)*
+_Hay Integration (70 acres)_
+
 - Existing hay production continues under/around arrays
 - Reduced mowing frequency with shaded growth
 - Grazing potential for sheep (vegetation management)
 
 **Microclimate Benefits**
 
-*Temperature Moderation*
+_Temperature Moderation_
+
 - 5-10F cooler soil temperatures in summer
 - Reduced heat stress on leafy crops
 - Extended harvest season for heat-sensitive varieties
 - Reduced bolting in lettuce and cilantro
 
-*Water Management*
+_Water Management_
+
 - 20-30% reduced irrigation needs under panels
 - Panel drip edge creates water concentration zones
 - Soil moisture retention from shading
 - Opportunity for drip irrigation integration with structure
 
-*Wind and Weather Protection*
+_Wind and Weather Protection_
+
 - Reduced wind stress on tender crops
 - Hail protection for high-value vegetables
 - Extended growing season through microclimate buffering
 
 **Economic Model**
 
-*Solar Revenue Stream*
+_Solar Revenue Stream_
+
 - 12 MW installation generating ~18,000 MWh/year
 - Land lease: $1,200-1,800/acre/year (above typical agricultural rent)
 - 25-year lease provides income stability
 - Farmer participation options (investment, revenue share)
 
-*Agricultural Revenue Optimization*
+_Agricultural Revenue Optimization_
+
 - Specialty crops command premium prices
 - Reduced input costs (irrigation, season extension)
 - Marketing differentiation ("solar-grown" branding)
 - Research partnership revenue potential
 
-*Combined Economics (per acre)*
+_Combined Economics (per acre)_
+
 - Solar lease: $1,200-1,800
 - Continued agricultural income: $2,000-5,000 (high-value vegetables)
 - Total: $3,200-6,800/acre vs. $3,000-4,500 traditional vegetable production
 
 **Research and Monitoring Framework**
 
-*Research Partnerships*
+_Research Partnerships_
+
 - University extension service collaboration
 - USDA NIFA funding opportunities for agrivoltaics research
 - Data sharing with national agrivoltaic networks
 
-*Monitoring Program*
+_Monitoring Program_
+
 - Crop yield comparison (under panel vs. control plots)
 - Soil moisture and temperature sensors
 - Microclimate monitoring stations
 - Water use tracking by zone
 
-*Adaptive Management*
+_Adaptive Management_
+
 - Annual crop rotation adjustments based on performance
 - Panel tilt optimization for seasonal crop needs
 - Variety trials for agrivoltaic conditions
 
 **Farmer Engagement and Implementation**
 
-*Farmer-Centered Approach*
+_Farmer-Centered Approach_
+
 - Farmer retains agricultural decision-making
 - Equipment compatibility verified before construction
 - Construction timed to avoid critical growing seasons
 - Ongoing operational flexibility for farming needs
 
-*Knowledge Transfer*
+_Knowledge Transfer_
+
 - Training on agrivoltaic-specific practices
 - Connection to agrivoltaic farmer networks
 - Annual performance review and optimization
@@ -255,6 +281,7 @@ Traditional production outside array:
 **Visual and Community Integration**
 
 To maintain "farm appearance":
+
 - Perimeter plantings and visual buffers
 - Customer-facing areas remain traditional
 - Educational signage about dual-use approach
@@ -263,6 +290,7 @@ To maintain "farm appearance":
 ---
 
 ## Related Prompts
+
 - [Solar Construction and Commissioning](../solar-construction-management-commissioning-optimization.md) - For construction management
 - [Community Solar Development](../community-solar-shared-ownership-development.md) - For community ownership models
 - [Clean Energy Policy Expert](../clean-energy-policy-development-expert.md) - For policy incentives

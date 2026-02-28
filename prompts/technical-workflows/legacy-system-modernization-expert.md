@@ -1,6 +1,7 @@
 # Legacy System Modernization Expert
 
 ## Metadata
+
 - **ID**: `legacy-system-modernization-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Transforms legacy systems into modern, maintainable applications while preservin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Modernizing legacy applications with embedded critical business logic
 - Migrating from outdated technology stacks (COBOL, mainframe, older frameworks)
 - Decomposing tightly-coupled monoliths into modern architectures
@@ -25,6 +27,7 @@ Transforms legacy systems into modern, maintainable applications while preservin
 - Addressing skills gaps when original developers are unavailable
 
 **Anti-Patterns (Don't Use For):**
+
 - Simple code refactoring within the same technology stack
 - Greenfield development projects
 - Minor version upgrades or patch updates
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We have a 30-year-old COBOL system handling core banking operations. The system has approximately 2 million lines of code with poor documentation, and all original developers have retired. We need to modernize to enable API access for our digital banking initiatives and eventual cloud deployment.
 
@@ -162,13 +166,13 @@ Current state:
 
 **Current State Assessment**
 
-| Dimension | Assessment | Risk Level |
-|-----------|------------|------------|
-| Technology | COBOL on z/OS, VSAM, DB2 | High - limited talent pool |
-| Size | 2M LOC, 500+ programs, 200+ copybooks | High - extensive scope |
-| Criticality | Core banking - zero tolerance for data loss | Critical |
-| Documentation | Minimal - requires reverse engineering | High |
-| Dependencies | Unknown until discovery phase | High |
+| Dimension     | Assessment                                  | Risk Level                 |
+| ------------- | ------------------------------------------- | -------------------------- |
+| Technology    | COBOL on z/OS, VSAM, DB2                    | High - limited talent pool |
+| Size          | 2M LOC, 500+ programs, 200+ copybooks       | High - extensive scope     |
+| Criticality   | Core banking - zero tolerance for data loss | Critical                   |
+| Documentation | Minimal - requires reverse engineering      | High                       |
+| Dependencies  | Unknown until discovery phase               | High                       |
 
 The assessment reveals a high-complexity, high-risk modernization requiring extensive discovery before any migration activities begin.
 
@@ -176,11 +180,11 @@ The assessment reveals a high-complexity, high-risk modernization requiring exte
 
 After evaluating three approaches, we recommend the Strangler Fig pattern:
 
-| Approach | Risk | Timeline | Cost | Recommendation |
-|----------|------|----------|------|----------------|
-| Big-bang rewrite | Very High | 18-24 months | $10M+ | Not recommended |
-| Lift and shift | Low | 6-12 months | $3M | Does not meet API goal |
-| **Strangler Fig** | **Medium** | **24-36 months** | **$8M** | **Recommended** |
+| Approach          | Risk       | Timeline         | Cost    | Recommendation         |
+| ----------------- | ---------- | ---------------- | ------- | ---------------------- |
+| Big-bang rewrite  | Very High  | 18-24 months     | $10M+   | Not recommended        |
+| Lift and shift    | Low        | 6-12 months      | $3M     | Does not meet API goal |
+| **Strangler Fig** | **Medium** | **24-36 months** | **$8M** | **Recommended**        |
 
 Rationale: Strangler Fig enables incremental validation while maintaining the 99.99% uptime requirement. Each migrated service can run in parallel with the legacy system until validated.
 
@@ -201,12 +205,14 @@ The architecture enables gradual migration by routing requests through the API g
 **Phase 1: Foundation (Months 1-6) - $1.5M**
 
 Objectives:
+
 - Deploy API gateway facade over existing COBOL services via MQ integration
 - Implement event capture for all transactions flowing to new event store
 - Build parallel data store infrastructure for new services
 - Complete business logic discovery and documentation for Phase 2 scope
 
 Success Criteria:
+
 - 100% of legacy transactions captured in event store
 - API gateway routing 100% of traffic to legacy (passthrough mode)
 - Zero business logic changes - infrastructure only
@@ -216,11 +222,13 @@ Rollback: Remove API gateway, direct traffic to legacy
 **Phase 2: Edge Services (Months 7-12) - $2M**
 
 Objectives:
+
 - Migrate read-only reporting services (lowest risk)
 - Customer profile services with cache-first architecture
 - Validate through 30-day parallel runs with automated comparison
 
 Success Criteria:
+
 - 100% data parity between legacy and new services
 - Performance equal or better than legacy
 - Zero customer-facing issues during parallel run
@@ -230,11 +238,13 @@ Rollback: Route traffic back to COBOL services via feature flags
 **Phase 3: Core Services (Months 13-24) - $3M**
 
 Objectives:
+
 - Account management services with saga pattern for consistency
 - Transaction processing using strangler pattern
 - Each service validates 30 days parallel before cutover
 
 Success Criteria:
+
 - Zero financial discrepancies during parallel runs
 - Successful handling of month-end and quarter-end processing
 - Disaster recovery tested and validated
@@ -244,6 +254,7 @@ Rollback: Service-level rollback via API gateway routing
 **Phase 4: Decommission (Months 25-36) - $1.5M**
 
 Objectives:
+
 - Migrate final COBOL services
 - Complete data migration and validation
 - Mainframe decommissioning and cost savings realization
@@ -259,12 +270,12 @@ Our validation approach ensures zero-defect migration:
 
 **Risk Mitigation**
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| Undocumented business logic | High | High | Extended discovery phase, business SME involvement |
-| Data migration errors | Medium | Critical | Parallel run with automated reconciliation |
-| Performance degradation | Medium | High | Performance testing at 150% production load |
-| Team capability gaps | High | Medium | Training program, external consultants for COBOL expertise |
+| Risk                        | Likelihood | Impact   | Mitigation                                                 |
+| --------------------------- | ---------- | -------- | ---------------------------------------------------------- |
+| Undocumented business logic | High       | High     | Extended discovery phase, business SME involvement         |
+| Data migration errors       | Medium     | Critical | Parallel run with automated reconciliation                 |
+| Performance degradation     | Medium     | High     | Performance testing at 150% production load                |
+| Team capability gaps        | High       | Medium   | Training program, external consultants for COBOL expertise |
 
 ---
 

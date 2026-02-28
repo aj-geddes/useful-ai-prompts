@@ -1,6 +1,7 @@
 # Space Mission Planning and Systems Integration
 
 ## Metadata
+
 - **ID**: `space-mission-planning-integration`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Satellite Operations
@@ -18,6 +19,7 @@ This prompt enables leadership of space mission planning and systems integration
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning complex multi-payload or multi-partner space missions
 - Managing spacecraft systems integration and interface control
 - Coordinating international space agency partnerships
@@ -25,6 +27,7 @@ This prompt enables leadership of space mission planning and systems integration
 - Developing integrated master schedules for space programs
 
 **Anti-Patterns (Don't Use When):**
+
 - Managing routine satellite operations after commissioning
 - Focusing on spacecraft manufacturing rather than integration
 - Handling post-launch mission management without integration scope
@@ -116,6 +119,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We're integrating a complex Earth observation mission with 4 payloads from 3 countries, launching in 36 months. Need mission planning and integration approach ensuring technical success while managing international partnerships."
 
 ### Output
@@ -124,129 +128,129 @@ Responses must avoid:
 
 **Mission Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Mission Type | Earth Observation (multi-sensor) |
-| Payloads | 4 instruments from 3 nations |
-| Spacecraft Class | 800kg, 3-axis stabilized |
-| Orbit | 650km Sun-synchronous, 10:30 LTAN |
-| Design Life | 7 years (5 primary + 2 extended) |
-| Development Duration | 36 months |
-| Partners | US (Prime), EU (ESA), Japan (JAXA) |
+| Parameter            | Specification                      |
+| -------------------- | ---------------------------------- |
+| Mission Type         | Earth Observation (multi-sensor)   |
+| Payloads             | 4 instruments from 3 nations       |
+| Spacecraft Class     | 800kg, 3-axis stabilized           |
+| Orbit                | 650km Sun-synchronous, 10:30 LTAN  |
+| Design Life          | 7 years (5 primary + 2 extended)   |
+| Development Duration | 36 months                          |
+| Partners             | US (Prime), EU (ESA), Japan (JAXA) |
 
 **Mission Architecture**
 
-| Element | Responsible Party | Key Interfaces |
-|---------|------------------|----------------|
-| Spacecraft Bus | US Prime Contractor | All payloads, launch vehicle |
-| Hyperspectral Imager | US (NASA instrument) | Bus power, thermal, data |
-| SAR Payload | EU (ESA contribution) | Bus power, pointing, data |
-| Atmospheric Sounder | Japan (JAXA contribution) | Bus thermal, data |
-| Technology Demonstrator | US Prime | Bus power, data |
-| Launch Services | US Prime | Spacecraft separation |
-| Ground Segment | Distributed (national segments) | All elements |
+| Element                 | Responsible Party               | Key Interfaces               |
+| ----------------------- | ------------------------------- | ---------------------------- |
+| Spacecraft Bus          | US Prime Contractor             | All payloads, launch vehicle |
+| Hyperspectral Imager    | US (NASA instrument)            | Bus power, thermal, data     |
+| SAR Payload             | EU (ESA contribution)           | Bus power, pointing, data    |
+| Atmospheric Sounder     | Japan (JAXA contribution)       | Bus thermal, data            |
+| Technology Demonstrator | US Prime                        | Bus power, data              |
+| Launch Services         | US Prime                        | Spacecraft separation        |
+| Ground Segment          | Distributed (national segments) | All elements                 |
 
 **Program Schedule**
 
-| Phase | Duration | Key Milestones | Review Gates |
-|-------|----------|----------------|--------------|
-| Phase A: Concept | Months 1-6 | Mission Requirements, System Concept | MDR (M3), SRR (M6) |
-| Phase B: Definition | Months 7-15 | Preliminary Design, ICD Approval | PDR (M12), ICD Freeze (M15) |
-| Phase C: Design | Months 16-24 | Detailed Design, Manufacturing Start | CDR (M21) |
-| Phase D: Build/Test | Months 25-33 | Integration, Environmental Test | PSR (M30), FRR (M33) |
-| Phase E: Operations | Months 34-36 | Launch, Commissioning | LRR (M35), ORR (M36+60d) |
+| Phase               | Duration     | Key Milestones                       | Review Gates                |
+| ------------------- | ------------ | ------------------------------------ | --------------------------- |
+| Phase A: Concept    | Months 1-6   | Mission Requirements, System Concept | MDR (M3), SRR (M6)          |
+| Phase B: Definition | Months 7-15  | Preliminary Design, ICD Approval     | PDR (M12), ICD Freeze (M15) |
+| Phase C: Design     | Months 16-24 | Detailed Design, Manufacturing Start | CDR (M21)                   |
+| Phase D: Build/Test | Months 25-33 | Integration, Environmental Test      | PSR (M30), FRR (M33)        |
+| Phase E: Operations | Months 34-36 | Launch, Commissioning                | LRR (M35), ORR (M36+60d)    |
 
 **Critical Path Analysis**
 
-| Path Element | Duration | Float | Risk Driver |
-|--------------|----------|-------|-------------|
-| SAR Payload Development | 24 months | 0 | Long-lead components |
-| Bus-Payload Integration | 4 months | 2 weeks | Interface verification |
-| Environmental Test | 3 months | 3 weeks | Thermal vacuum schedule |
-| Launch Campaign | 6 weeks | 2 weeks | Range availability |
+| Path Element            | Duration  | Float   | Risk Driver             |
+| ----------------------- | --------- | ------- | ----------------------- |
+| SAR Payload Development | 24 months | 0       | Long-lead components    |
+| Bus-Payload Integration | 4 months  | 2 weeks | Interface verification  |
+| Environmental Test      | 3 months  | 3 weeks | Thermal vacuum schedule |
+| Launch Campaign         | 6 weeks   | 2 weeks | Range availability      |
 
 **Integration Approach**
 
-| Level | Scope | Location | Duration |
-|-------|-------|----------|----------|
-| Component | Subsystem parts, units | Supplier facilities | Per component |
-| Subsystem | Complete subsystem assembly | Supplier/partner sites | Per subsystem |
-| Payload | Integrated payload with GSE | Partner facilities | 2-3 months each |
-| Spacecraft | Bus + all payloads | Prime contractor facility | 4 months |
-| System | S/C + ground segment | Integration facility | 2 months |
-| Mission | End-to-end validation | Distributed sites | 1 month |
+| Level      | Scope                       | Location                  | Duration        |
+| ---------- | --------------------------- | ------------------------- | --------------- |
+| Component  | Subsystem parts, units      | Supplier facilities       | Per component   |
+| Subsystem  | Complete subsystem assembly | Supplier/partner sites    | Per subsystem   |
+| Payload    | Integrated payload with GSE | Partner facilities        | 2-3 months each |
+| Spacecraft | Bus + all payloads          | Prime contractor facility | 4 months        |
+| System     | S/C + ground segment        | Integration facility      | 2 months        |
+| Mission    | End-to-end validation       | Distributed sites         | 1 month         |
 
 **Interface Management**
 
-| Interface | ICD Document | Owner | Control Board |
-|-----------|-------------|-------|---------------|
-| Bus-to-Hyperspectral | ICD-001 | US Prime | System ICB |
-| Bus-to-SAR | ICD-002 | US Prime / ESA | Joint ICB |
-| Bus-to-Sounder | ICD-003 | US Prime / JAXA | Joint ICB |
-| Bus-to-Demo | ICD-004 | US Prime | System ICB |
-| Spacecraft-to-LV | ICD-005 | US Prime / LV | LV ICB |
-| Ground Interfaces | ICD-006 | Ground Segment Lead | Ground ICB |
+| Interface            | ICD Document | Owner               | Control Board |
+| -------------------- | ------------ | ------------------- | ------------- |
+| Bus-to-Hyperspectral | ICD-001      | US Prime            | System ICB    |
+| Bus-to-SAR           | ICD-002      | US Prime / ESA      | Joint ICB     |
+| Bus-to-Sounder       | ICD-003      | US Prime / JAXA     | Joint ICB     |
+| Bus-to-Demo          | ICD-004      | US Prime            | System ICB    |
+| Spacecraft-to-LV     | ICD-005      | US Prime / LV       | LV ICB        |
+| Ground Interfaces    | ICD-006      | Ground Segment Lead | Ground ICB    |
 
 **ICD Control Process**
 
-| Stage | Authority | Timeline |
-|-------|-----------|----------|
-| Draft Release | Interface Owners | PDR-6 months |
-| Baseline Approval | Joint ICB | PDR |
-| Change Requests | Interface Owners | Any time |
-| Change Approval | Joint ICB | 30-day review cycle |
-| Verification Closure | V&V Lead | Per integration phase |
+| Stage                | Authority        | Timeline              |
+| -------------------- | ---------------- | --------------------- |
+| Draft Release        | Interface Owners | PDR-6 months          |
+| Baseline Approval    | Joint ICB        | PDR                   |
+| Change Requests      | Interface Owners | Any time              |
+| Change Approval      | Joint ICB        | 30-day review cycle   |
+| Verification Closure | V&V Lead         | Per integration phase |
 
 **Verification and Validation Program**
 
-| Verification Level | Method | Responsibility | Documentation |
-|-------------------|--------|----------------|---------------|
-| Component | Test | Supplier | Test reports |
-| Subsystem | Test + Analysis | Partner | Verification package |
-| Payload | Test + Demonstration | Partner | Acceptance report |
-| Spacecraft | Test + Analysis | Prime | Integration V&V matrix |
-| System | Demonstration + Analysis | Prime + Partners | System verification report |
-| Mission | Demonstration | Mission Team | Commissioning report |
+| Verification Level | Method                   | Responsibility   | Documentation              |
+| ------------------ | ------------------------ | ---------------- | -------------------------- |
+| Component          | Test                     | Supplier         | Test reports               |
+| Subsystem          | Test + Analysis          | Partner          | Verification package       |
+| Payload            | Test + Demonstration     | Partner          | Acceptance report          |
+| Spacecraft         | Test + Analysis          | Prime            | Integration V&V matrix     |
+| System             | Demonstration + Analysis | Prime + Partners | System verification report |
+| Mission            | Demonstration            | Mission Team     | Commissioning report       |
 
 **V&V Method Matrix**
 
-| Requirement Type | Primary Method | Secondary Method |
-|-----------------|---------------|------------------|
-| Performance | Test | Analysis |
-| Interface | Inspection + Test | Demonstration |
-| Environmental | Test | Analysis (margins) |
-| Functional | Demonstration | Test |
-| Operational | Demonstration | Simulation |
+| Requirement Type | Primary Method    | Secondary Method   |
+| ---------------- | ----------------- | ------------------ |
+| Performance      | Test              | Analysis           |
+| Interface        | Inspection + Test | Demonstration      |
+| Environmental    | Test              | Analysis (margins) |
+| Functional       | Demonstration     | Test               |
+| Operational      | Demonstration     | Simulation         |
 
 **Stakeholder Coordination Framework**
 
-| Forum | Frequency | Participants | Purpose |
-|-------|-----------|--------------|---------|
-| Executive Steering Committee | Quarterly | Agency heads, Prime CEO | Strategic decisions, escalation |
-| Program Management Board | Monthly | Program managers, Partner leads | Schedule, budget, major issues |
-| Technical Coordination Group | Bi-weekly | Technical leads, Chief Engineers | Technical decisions, integration |
-| Interface Working Groups | Weekly | Interface owners, cognizant engineers | ICD development, issue resolution |
-| Risk Review Board | Monthly | Risk owners, Program Manager | Risk status, mitigation tracking |
+| Forum                        | Frequency | Participants                          | Purpose                           |
+| ---------------------------- | --------- | ------------------------------------- | --------------------------------- |
+| Executive Steering Committee | Quarterly | Agency heads, Prime CEO               | Strategic decisions, escalation   |
+| Program Management Board     | Monthly   | Program managers, Partner leads       | Schedule, budget, major issues    |
+| Technical Coordination Group | Bi-weekly | Technical leads, Chief Engineers      | Technical decisions, integration  |
+| Interface Working Groups     | Weekly    | Interface owners, cognizant engineers | ICD development, issue resolution |
+| Risk Review Board            | Monthly   | Risk owners, Program Manager          | Risk status, mitigation tracking  |
 
 **Risk Management**
 
-| Risk | Probability | Impact | Mitigation | Owner |
-|------|-------------|--------|------------|-------|
-| SAR payload schedule slip | Medium (40%) | High | Parallel development paths, early long-lead orders | ESA PM |
-| International interface issues | Medium (35%) | Medium | Early ICD freeze, joint integration testing | System Engineer |
-| Payload late delivery | Medium (30%) | High | Schedule buffers, contingency integration sequence | Prime PM |
-| Integration issues discovered late | Low (20%) | High | Early interface verification, pathfinder testing | Integration Lead |
-| Budget growth | Medium (35%) | Medium | Management reserve, descope options defined | Program Manager |
+| Risk                               | Probability  | Impact | Mitigation                                         | Owner            |
+| ---------------------------------- | ------------ | ------ | -------------------------------------------------- | ---------------- |
+| SAR payload schedule slip          | Medium (40%) | High   | Parallel development paths, early long-lead orders | ESA PM           |
+| International interface issues     | Medium (35%) | Medium | Early ICD freeze, joint integration testing        | System Engineer  |
+| Payload late delivery              | Medium (30%) | High   | Schedule buffers, contingency integration sequence | Prime PM         |
+| Integration issues discovered late | Low (20%)    | High   | Early interface verification, pathfinder testing   | Integration Lead |
+| Budget growth                      | Medium (35%) | Medium | Management reserve, descope options defined        | Program Manager  |
 
 **Success Criteria**
 
-| Criterion | Metric | Verification |
-|-----------|--------|--------------|
-| Launch Date | Month 36 +/- 1 month | Schedule tracking |
-| All Payloads Operational | 4/4 commissioned | Commissioning review |
-| Performance Requirements | 100% Level 1 met | Requirements verification matrix |
-| Budget | Within 5% of baseline | Monthly financial review |
-| Partner Satisfaction | Positive assessment | Post-launch survey |
+| Criterion                | Metric                | Verification                     |
+| ------------------------ | --------------------- | -------------------------------- |
+| Launch Date              | Month 36 +/- 1 month  | Schedule tracking                |
+| All Payloads Operational | 4/4 commissioned      | Commissioning review             |
+| Performance Requirements | 100% Level 1 met      | Requirements verification matrix |
+| Budget                   | Within 5% of baseline | Monthly financial review         |
+| Partner Satisfaction     | Positive assessment   | Post-launch survey               |
 
 ---
 

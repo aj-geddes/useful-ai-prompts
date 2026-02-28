@@ -1,6 +1,7 @@
 # Resource Constraint Solutions Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-resource-constraint`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -100,12 +101,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Constraint: Need to deliver 3 major features in 6 months with only 4 developers (need 8). Can't hire more due to budget freeze. Features are for key client. Currently spending 30% time on maintenance. Missing deadlines affecting reputation.
 ```
 
 ### Output
+
 **Constraint Analysis**
+
 - Resource Gap: 50% understaffed (4 vs 8 needed)
 - Time Pressure: 6-month deadline is firm
 - Current Efficiency: 30% time on maintenance = 1.2 FTE equivalent
@@ -114,19 +118,22 @@ Constraint: Need to deliver 3 major features in 6 months with only 4 developers 
 
 **Creative Optimization Strategies**
 
-*Strategy 1: Reduce Maintenance Burden (Reclaim 1.0 FTE)*
+_Strategy 1: Reduce Maintenance Burden (Reclaim 1.0 FTE)_
+
 - Automate top 5 recurring maintenance tasks
 - Create self-service tools for common issues
 - Technical debt sprint to reduce future maintenance
 - Expected: 30% maintenance -> 10% (reclaim 0.8 FTE)
 
-*Strategy 2: Scope Optimization (Reduce Required FTE)*
+_Strategy 2: Scope Optimization (Reduce Required FTE)_
+
 - Prioritize: Core value features only for v1
 - Defer: Nice-to-have features to phase 2
 - Simplify: Complex features with 80/20 approach
 - Expected: Reduce scope by 25% (save ~1.2 FTE)
 
-*Strategy 3: External Resources (Add 1.0-1.5 FTE)*
+_Strategy 3: External Resources (Add 1.0-1.5 FTE)_
+
 - Option A: 2 contractors for 3 months (~$60K)
 - Option B: Offshore team for specific components
 - Option C: Partner company resource sharing
@@ -134,14 +141,15 @@ Constraint: Need to deliver 3 major features in 6 months with only 4 developers 
 
 **Prioritization Framework**
 
-| Feature | Client Value | Complexity | Priority |
-|---------|--------------|------------|----------|
-| Feature A | Critical | High | P1 - Full scope |
-| Feature B | High | Medium | P1 - Core only |
-| Feature C | Medium | High | P2 - Defer or simplify |
+| Feature   | Client Value | Complexity | Priority               |
+| --------- | ------------ | ---------- | ---------------------- |
+| Feature A | Critical     | High       | P1 - Full scope        |
+| Feature B | High         | Medium     | P1 - Core only         |
+| Feature C | Medium       | High       | P2 - Defer or simplify |
 
 **Recommended Approach**
 Combine strategies for 4.6 FTE effective capacity:
+
 - Maintenance reduction: +0.8 FTE
 - Scope optimization: -1.2 FTE needed
 - 1 senior contractor: +1.0 FTE
@@ -149,23 +157,27 @@ Combine strategies for 4.6 FTE effective capacity:
 
 **Implementation Plan**
 
-*Month 1: Foundation*
+_Month 1: Foundation_
+
 - Automate maintenance tasks (Week 1-2)
 - Scope negotiation with client (Week 2)
 - Contractor onboarding (Week 3-4)
 
-*Month 2-4: Core Development*
+_Month 2-4: Core Development_
+
 - Feature A: Full team focus
 - Feature B: Core functionality
 - Continuous maintenance automation
 
-*Month 5-6: Completion*
+_Month 5-6: Completion_
+
 - Feature C: Simplified version
 - Integration and testing
 - Client UAT and feedback
 
 **Client Communication**
 "We've analyzed the most effective path to deliver maximum value within our timeline. We recommend:
+
 1. Full delivery of Feature A (your #1 priority)
 2. Core functionality of Feature B (covering 80% of use cases)
 3. Foundational version of Feature C (with Phase 2 enhancements planned)
@@ -173,6 +185,7 @@ Combine strategies for 4.6 FTE effective capacity:
 This approach ensures on-time delivery of your critical needs while setting up Phase 2 for the advanced capabilities."
 
 **Contingency Plans**
+
 - If contractor unavailable: Further scope reduction on Feature C
 - If maintenance increases: Dedicated maintenance rotation
 - If timeline extends: Phase 2 features move to v1

@@ -1,6 +1,7 @@
 # Gene Editing CRISPR Design Expert
 
 ## Metadata
+
 - **ID**: `biotechnology-crispr-design-expert`
 - **Version**: 2.0.0
 - **Category**: Biotechnology/Gene Editing
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-01
 
 ## Overview
+
 Designs CRISPR-based gene editing strategies for research and therapeutic applications. Optimizes guide RNA design, delivery methods, and validation approaches while ensuring comprehensive safety assessment and regulatory compliance for clinical translation.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing CRISPR knockout, knock-in, or correction experiments
 - Developing therapeutic gene editing programs for IND submission
 - Optimizing guide RNA specificity and editing efficiency
@@ -23,6 +27,7 @@ Designs CRISPR-based gene editing strategies for research and therapeutic applic
 - Selecting between Cas9, base editing, and prime editing approaches
 
 **Anti-patterns (Don't Use For):**
+
 - Basic molecular biology protocols without CRISPR focus
 - Non-CRISPR genetic engineering (traditional cloning)
 - Clinical trial conduct or patient treatment decisions
@@ -102,26 +107,31 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 Therapeutic base editing to correct sickle cell disease mutation (HBB E6V, GAG to GTG). Target: human CD34+ hematopoietic stem cells ex vivo. Goal: develop gene therapy candidate for IND filing. Need high efficiency (>20%) with minimal off-targets for clinical translation.
 
 ### Output
+
 **Sickle Cell Disease Base Editing Strategy**
 
 **System Selection: Adenine Base Editor (ABE8e-SpRY)**
 
 Rationale:
+
 - Target conversion: Pathogenic T to C (reverse GTG back to GAG on coding strand)
 - ABE8e: Highest efficiency adenine base editor, >50% in primary cells
 - SpRY: PAM-less variant enables optimal positioning of edit within window
 - Editing window: Positions 4-8 from PAM, must position target adenine correctly
 
 Alternative considered:
+
 - CBE (cytosine base editor): Would require GAG to GAA (silent), less direct
 - Prime editing: Higher precision but lower efficiency in HSCs (<10% typical)
 
 **Guide RNA Design**
 
 Primary gRNA (Recommended):
+
 ```
 Target:   5'-CACCTGACTCCTGTGGAGAA-NGG-3'
 Position: HBB exon 1, chr11:5,227,002
@@ -132,6 +142,7 @@ PAM: NGG (standard SpCas9 compatible)
 ```
 
 Backup gRNA (SpRY required):
+
 ```
 Target:   5'-TGGTGCACCTGACTCCTGTG-NRN-3'
 Position: HBB exon 1, offset design
@@ -144,12 +155,14 @@ Note: Requires SpRY variant for relaxed PAM
 **Off-Target Analysis**
 
 Computational prediction:
+
 - Cas-OFFinder: 0 sites with <=3 mismatches in coding exons
 - CRISPOR specificity: 85/100 (high specificity)
 - Top 50 predicted sites identified for experimental validation
 - Nearest concerning off-target: 4 mismatches, intergenic region
 
 Experimental validation plan:
+
 - GUIDE-seq in K562 (pilot, identify unexpected sites)
 - CIRCLE-seq (unbiased genome-wide, GLP-quality)
 - Targeted amplicon NGS on top 100 predicted sites
@@ -160,12 +173,14 @@ Experimental validation plan:
 Platform: Lonza 4D-Nucleofector (clinical-grade compatible)
 
 RNP assembly:
+
 - ABE8e-SpRY protein: 200 pmol
 - Synthetic gRNA: 400 pmol (2:1 gRNA:protein ratio)
 - Incubation: 15 minutes at room temperature
 - Final volume: 20 uL per 1 million cells
 
 Electroporation parameters:
+
 - Program: EO-100 (optimized for CD34+ HSCs)
 - Cell density: 2-5 x 10^7 cells/mL
 - Recovery: StemSpan SFEM II with cytokine cocktail
@@ -174,11 +189,13 @@ Electroporation parameters:
 **HSC Culture Protocol**
 
 Pre-stimulation (48 hours before editing):
+
 - Medium: StemSpan SFEM II
 - Cytokines: SCF 100 ng/mL, TPO 100 ng/mL, Flt3L 100 ng/mL, IL-6 100 ng/mL
 - Small molecule: SR1 1 uM (stemness maintenance)
 
 Post-editing recovery:
+
 - Same cytokine cocktail, 37C, 5% CO2
 - Harvest for analysis: 72 hours
 - Cryopreservation window: Day 4-7
@@ -186,30 +203,35 @@ Post-editing recovery:
 **Validation Milestones**
 
 Phase 1: Proof of Concept (Weeks 1-4)
+
 - HEK293T optimization: Target >70% editing
 - K562 cells: Target >50% editing
 - Off-target panel: Amplicon NGS on top 20 sites
 - Go criteria: >50% on-target, <0.5% top off-target
 
 Phase 2: Primary Cell Optimization (Weeks 5-12)
+
 - CD34+ from 3 healthy donors: Target >30% editing
 - Stemness retention: >80% CD34+ post-editing
 - GUIDE-seq + targeted NGS validation
 - Go criteria: >25% editing, >70% CD34+ retention
 
 Phase 3: Functional Validation (Weeks 13-20)
+
 - Hemoglobin HPLC: Confirm HbA expression
 - Erythroid differentiation: CD235a+ cells
 - Sickling assay: <5% sickling under hypoxia
 - Colony assays: Preserved multipotency (CFU-GEMM)
 
 Phase 4: Safety Assessment (Weeks 21-28)
+
 - CIRCLE-seq genome-wide off-target mapping
 - Karyotype: G-banding for chromosomal abnormalities
 - Genotoxicity: gammaH2AX foci quantification
 - NSG mouse engraftment: >10% human chimerism at 16 weeks
 
 **Success Criteria for IND**
+
 - Editing efficiency: >25% allelic conversion
 - Specificity: No off-targets >0.5% in genes
 - Stemness: >70% CD34+ retention post-editing
@@ -218,6 +240,7 @@ Phase 4: Safety Assessment (Weeks 21-28)
 - Safety: Normal karyotype, no clonal dominance
 
 **Timeline to IND**
+
 - Months 1-3: Optimization and POC
 - Months 4-6: Primary cell validation
 - Months 7-9: Functional and safety studies
@@ -227,6 +250,7 @@ Phase 4: Safety Assessment (Weeks 21-28)
 ---
 
 ## Related Prompts
+
 - [Gene Therapy Manufacturing](gene-editing/gene-therapy-development-manufacturing.md) - Vector production
 - [Clinical Trial Design Expert](clinical-trial-design-and-optimization-expert.md) - Study planning
 - [Bioinformatics Pipeline Expert](bioinformatics-pipeline-development-expert.md) - Sequencing analysis

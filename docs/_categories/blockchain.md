@@ -5,7 +5,19 @@ category: blockchain
 slug: blockchain
 icon: fas fa-cubes
 description: "Comprehensive blockchain prompts for smart contracts, DeFi protocols, NFT platforms, cross-chain interoperability, and Web3 development."
-tags: [blockchain, smart contracts, DeFi, NFTs, Web3, cryptocurrency, tokenization, DAOs, cross-chain, security audits]
+tags:
+  [
+    blockchain,
+    smart contracts,
+    DeFi,
+    NFTs,
+    Web3,
+    cryptocurrency,
+    tokenization,
+    DAOs,
+    cross-chain,
+    security audits,
+  ]
 ---
 
 The Blockchain category provides expert-level prompts for blockchain developers, Web3 architects, and decentralized application builders. These prompts cover smart contract development, DeFi protocol design, security auditing, and blockchain integration strategies.

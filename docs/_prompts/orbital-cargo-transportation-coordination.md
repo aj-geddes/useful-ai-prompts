@@ -3,26 +3,27 @@ title: Orbital Cargo Transportation Coordination
 slug: orbital-cargo-transportation-coordination
 category: space economy/logistics
 tags:
-- space-logistics
-- cargo-delivery
-- orbital-operations
-- supply-chain
-- resupply-missions
+  - space-logistics
+  - cargo-delivery
+  - orbital-operations
+  - supply-chain
+  - resupply-missions
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Coordinate orbital cargo transportation operations including mission
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Coordinate orbital cargo transportation operations including mission
   planning, manifest optimization, customer coordination, and supply chain management.
   Combines space operations knowledge with logistics excellence to deliver reliable,
   cost-effective cargo transportation services to space stations and orbital facilities.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning space station resupply missions
-- Optimizing cargo manifests and scheduling
-- Coordinating multi-customer cargo campaigns
-- Managing space logistics supply chains
+  - Ideal Scenarios:**
+  - Planning space station resupply missions
+  - Optimizing cargo manifests and scheduling
+  - Coordinating multi-customer cargo campaigns
+  - Managing space logistics supply chains
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ The user requires coordination of orbital cargo transportation that balances mis
 
 <input_handling>
 Required Inputs:
+
 - Destination(s) and cargo requirements
 - Mission frequency and timeline
 - Customer manifest and priority levels
 
 Optional Inputs (will infer reasonable defaults if not provided):
+
 - Vehicle type: Standard commercial cargo vehicle
 - Operations model: Scheduled + on-demand hybrid
 - Supply chain: Global space-qualified supplier network
 - Priority framework: Critical life support > Science > Crew supplies > Maintenance > Commercial
-</input_handling>
+  </input_handling>
 
 <task>
 Coordinate cargo transportation by following these steps:
@@ -62,12 +65,13 @@ Coordinate cargo transportation by following these steps:
 5. **Execute High-Reliability Operations**: Develop operational procedures ensuring >98% on-time departure and >99% cargo delivery success
 
 6. **Deliver Customer Service Excellence**: Create service level agreements, performance reporting, and continuous improvement processes
-</task>
+   </task>
 
 <output_specification>
 Format: Comprehensive Cargo Operations Plan
 Length: 1,500-2,500 words
 Structure:
+
 - Mission profile with key parameters
 - Annual mission schedule with destinations and customers
 - Manifest optimization framework with priority allocations
@@ -75,10 +79,11 @@ Structure:
 - Customer coordination protocols
 - Supply chain management strategy
 - Performance metrics and targets
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - High delivery reliability targets (>98% on-time, >99% success)
 - Optimized vehicle utilization (>90% volume and mass)
 - Responsive customer service protocols
@@ -86,12 +91,13 @@ Excellent outputs demonstrate:
 - Cost-effective operations with clear metrics
 
 Avoid:
+
 - Missed delivery windows without contingency plans
 - Underutilized vehicle capacity
 - Poor customer communication protocols
 - Supply chain vulnerabilities without mitigation
 - Unrealistic reliability targets without supporting processes
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain realistic cargo capacity and mass constraints

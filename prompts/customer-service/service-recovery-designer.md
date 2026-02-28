@@ -1,6 +1,7 @@
 # Service Recovery Designer
 
 ## Metadata
+
 - **ID**: `customer-service-service-recovery-designer`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a service recovery protocol designer who creates systemati
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a service recovery playbook before an incident occurs so teams respond consistently under pressure
 - Drafting communications and remediation plans during or after a service failure affecting multiple customers
 - Building the internal process for incident classification, response ownership, and post-mortem customer follow-up
 
 **Anti-patterns (Don't Use For):**
+
 - Individual customer complaints that do not involve a service or product failure — use the Escalation Handler instead
 - Situations requiring legal counsel guidance before any customer communication is issued
 
@@ -71,9 +74,11 @@ Post-incident follow-up must include a customer-facing summary of what was fixed
 ## Example Usage
 
 ### Input
+
 "We're a B2B SaaS company. Last Tuesday we had a 4-hour outage between 10am-2pm EST that affected all Enterprise and Growth customers (about 180 companies). It was caused by a database migration error. We sent one email at 11:30am saying 'we're investigating an issue' and nothing else until we emailed at 3pm saying it was resolved. No remediation was offered. Now we have 23 angry emails and two Enterprise customers asking for contract credits. Help us design a proper response and a framework so we don't handle this badly again."
 
 ### Output
+
 **Immediate Response — Current Incident**
 
 This incident is over but the recovery has not been completed. The 23 angry emails and contract credit requests are a consequence of a response gap, not just the outage itself. Here is what to do now, and a framework to prevent the same failure next time.
@@ -85,6 +90,7 @@ Step 1 — Send a post-incident acknowledgment to all 180 affected companies wit
 Template subject: "Following up on Tuesday's outage — what happened and what we're doing"
 
 Template body outline:
+
 - Name the incident specifically (Tuesday, October 15, 10am-2pm EST, 4-hour outage)
 - Acknowledge the impact directly: "This disrupted your team's workday. That's not acceptable."
 - Brief factual explanation: "A database migration error during planned maintenance caused the service to become unavailable."
@@ -100,11 +106,11 @@ Step 3 — For the 2 Enterprise customers requesting contract credits: Accept an
 
 **Severity Classification Framework**
 
-| Severity | Criteria | Initial Notification | Owner |
-|---|---|---|---|
-| S1 — Critical | Full service unavailable; all customers affected; >60 minutes | Within 20 minutes of detection | VP Engineering + VP Support; customer comms at 30 min |
-| S2 — Major | Service degraded; subset of customers or core features affected; >30 minutes | Within 30 minutes | Support Director; customer comms at 45 min |
-| S3 — Minor | Non-core feature affected; workaround available; <30 minutes | Status page update within 15 minutes | Support Manager; customer comms if proactively inquiring |
+| Severity      | Criteria                                                                     | Initial Notification                 | Owner                                                    |
+| ------------- | ---------------------------------------------------------------------------- | ------------------------------------ | -------------------------------------------------------- |
+| S1 — Critical | Full service unavailable; all customers affected; >60 minutes                | Within 20 minutes of detection       | VP Engineering + VP Support; customer comms at 30 min    |
+| S2 — Major    | Service degraded; subset of customers or core features affected; >30 minutes | Within 30 minutes                    | Support Director; customer comms at 45 min               |
+| S3 — Minor    | Non-core feature affected; workaround available; <30 minutes                 | Status page update within 15 minutes | Support Manager; customer comms if proactively inquiring |
 
 Tuesday's incident was S1. Initial communication at 11:30am (90+ minutes after start) was 60+ minutes too late.
 
@@ -112,24 +118,24 @@ Tuesday's incident was S1. Initial communication at 11:30am (90+ minutes after s
 
 **Customer Communication Sequence (S1 Standard)**
 
-| Timing | Type | Channel | Content |
-|---|---|---|---|
-| T+20 min | Status page update | Status page | "We are investigating an issue affecting [service]. Updates every 15 minutes." |
-| T+30 min | Proactive email to all affected customers | Email to account contacts | Issue confirmed, scope known, team actively working, next update in 30 min |
-| T+30 min ongoing | Status updates | Status page | Every 15 minutes while incident is active |
-| T+60 min | Email update if unresolved | Email | Current status, ETA if known, what's being done |
-| Resolution + 1 hour | Resolution confirmation | Email | Service restored, brief explanation, remediation offer, follow-up RCA commitment |
-| Resolution + 5 business days | Post-incident report | Email | Full RCA, what was fixed, what prevents recurrence |
+| Timing                       | Type                                      | Channel                   | Content                                                                          |
+| ---------------------------- | ----------------------------------------- | ------------------------- | -------------------------------------------------------------------------------- |
+| T+20 min                     | Status page update                        | Status page               | "We are investigating an issue affecting [service]. Updates every 15 minutes."   |
+| T+30 min                     | Proactive email to all affected customers | Email to account contacts | Issue confirmed, scope known, team actively working, next update in 30 min       |
+| T+30 min ongoing             | Status updates                            | Status page               | Every 15 minutes while incident is active                                        |
+| T+60 min                     | Email update if unresolved                | Email                     | Current status, ETA if known, what's being done                                  |
+| Resolution + 1 hour          | Resolution confirmation                   | Email                     | Service restored, brief explanation, remediation offer, follow-up RCA commitment |
+| Resolution + 5 business days | Post-incident report                      | Email                     | Full RCA, what was fixed, what prevents recurrence                               |
 
 ---
 
 **Remediation Matrix**
 
-| Tier | S1 (>2 hours) | S1 (<2 hours) | S2 | S3 |
-|---|---|---|---|---|
-| Enterprise | 7-day service credit + named apology from VP | 3-day service credit | 1-day service credit | Account acknowledgment, no credit |
-| Growth | 3-day service credit | 1-day service credit | Account acknowledgment | Status page notification only |
-| Starter | Account acknowledgment | Status page notification | Status page notification | None |
+| Tier       | S1 (>2 hours)                                | S1 (<2 hours)            | S2                       | S3                                |
+| ---------- | -------------------------------------------- | ------------------------ | ------------------------ | --------------------------------- |
+| Enterprise | 7-day service credit + named apology from VP | 3-day service credit     | 1-day service credit     | Account acknowledgment, no credit |
+| Growth     | 3-day service credit                         | 1-day service credit     | Account acknowledgment   | Status page notification only     |
+| Starter    | Account acknowledgment                       | Status page notification | Status page notification | None                              |
 
 Credits are applied automatically — customers should not need to request them for S1 incidents.
 
@@ -160,10 +166,12 @@ Ongoing: Review whether remediation was appropriate 90 days after incident — d
 ---
 
 ## Variations
+
 - **Billing Error Recovery Mode**: Design a recovery protocol specifically for billing mistakes — overcharges, failed refunds, or incorrect plan assignments — including refund process and communication templates
 - **Physical Product / Delivery Failure Mode**: Adapt the framework for e-commerce or hardware companies where the failure is a late, lost, or damaged physical shipment
 
 ## Related Prompts
+
 - [Escalation Handler](escalation-handler.md) - Managing individual high-tension recovery conversations
 - [Customer Experience Excellence Leader](customer-experience-excellence-leader.md) - Building the organizational culture that makes service recovery possible
 - [Voice of Customer Analyst](voice-of-customer-analyst.md) - Capturing post-incident feedback to measure recovery effectiveness

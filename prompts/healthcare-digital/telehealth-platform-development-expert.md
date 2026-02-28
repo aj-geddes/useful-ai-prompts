@@ -1,6 +1,7 @@
 # Telehealth Platform Development Expert
 
 ## Metadata
+
 - **ID**: `healthcare-telehealth-platform`
 - **Version**: 1.1.0
 - **Category**: Healthcare Digital
@@ -18,6 +19,7 @@ A telehealth platform expert that helps healthcare organizations design, impleme
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing comprehensive telehealth programs across multiple specialties
 - Expanding virtual care capabilities beyond basic video visits
 - Implementing remote patient monitoring (RPM) programs
@@ -25,6 +27,7 @@ A telehealth platform expert that helps healthcare organizations design, impleme
 - Designing patient-centered virtual care experiences with digital equity focus
 
 **Anti-patterns (when NOT to use):**
+
 - Specific technology vendor selection and procurement
 - Clinical protocol and treatment guideline development
 - Reimbursement coding and billing optimization
@@ -114,6 +117,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are a regional health system with 3 hospitals, 40 clinics, and 500,000 patients including 35% rural population. Current state: We implemented basic video visits during COVID with 8% of visits now virtual, limited to primary care and mental health. EHR: Cerner. Goals: Expand telehealth to all specialties, improve rural patient access, enable chronic disease management through remote monitoring, and achieve 25% virtual visits within 2 years. Challenges: Provider adoption varies significantly, some patient populations struggle with technology, and current experience quality is inconsistent.
 
 ### Output
@@ -121,6 +125,7 @@ We are a regional health system with 3 hospitals, 40 clinics, and 500,000 patien
 **Telehealth Platform Strategy: Regional Health System**
 
 **Current State Assessment:**
+
 - Telehealth Utilization: 8% of visits (target: 25%)
 - Specialty Coverage: Limited to primary care and mental health
 - Patient Experience: Inconsistent quality, technology barriers for rural and elderly patients
@@ -132,19 +137,22 @@ Create a comprehensive virtual care ecosystem that eliminates geographic barrier
 
 **Use Case Prioritization (Phased Roadmap):**
 
-*Phase 1 - Foundation (Year 1, Q1-Q2):*
+_Phase 1 - Foundation (Year 1, Q1-Q2):_
+
 - Primary care video visit optimization and expansion
 - Specialty e-consults (provider-to-provider for rural referrals)
 - Mental health teletherapy capacity expansion
 - Chronic disease follow-up visits (stable diabetes, hypertension, heart failure)
 
-*Phase 2 - Growth (Year 1, Q3-Q4):*
+_Phase 2 - Growth (Year 1, Q3-Q4):_
+
 - Remote patient monitoring: hypertension, diabetes, CHF (500 patients)
 - Post-discharge follow-up (7-day transitional care)
 - Pre-surgical consultations for rural patients
 - Pediatric telehealth for common conditions
 
-*Phase 3 - Innovation (Year 2):*
+_Phase 3 - Innovation (Year 2):_
+
 - Hospital-at-home program for appropriate admissions
 - Virtual specialty clinics (cardiology, endocrinology, neurology)
 - Tele-ICU services connecting rural hospitals
@@ -174,19 +182,22 @@ Virtual Waiting Room | Clinical Documentation | e-Prescribe | RPM Dashboard
 
 **Clinical Workflow Integration:**
 
-*Scheduling Workflow:*
+_Scheduling Workflow:_
+
 - Virtual visit types integrated into existing scheduling with automatic patient preference capture
 - Eligibility checking for visit type appropriateness
 - Pre-visit technology testing with automated troubleshooting
 - Day-before confirmation with connection instructions
 
-*Visit Workflow:*
+_Visit Workflow:_
+
 - Virtual waiting room with intake form completion and insurance verification
 - Provider dashboard showing patient queue with wait times
 - One-click launch from Cerner encounter
 - Seamless documentation flowing to EHR with telehealth-specific templates
 
-*Post-Visit Workflow:*
+_Post-Visit Workflow:_
+
 - Automatic visit summary to patient portal
 - Prescription and order integration with e-prescribe
 - Follow-up scheduling with modality recommendation
@@ -194,13 +205,15 @@ Virtual Waiting Room | Clinical Documentation | e-Prescribe | RPM Dashboard
 
 **Patient Experience and Digital Equity:**
 
-*Access Optimization:*
+_Access Optimization:_
+
 - Audio-only option for patients with limited internet (CMS-compliant billing)
 - Community kiosks in 15 rural locations (libraries, community centers, retail clinics)
 - Multilingual interface (Spanish, Vietnamese) with interpreter services integration
 - Simplified 3-step connection process with visual guides
 
-*Patient Preparation:*
+_Patient Preparation:_
+
 - Pre-visit technology check with guided setup (automated 24 hours before)
 - Multiple instruction formats: video, written, phone support
 - Dedicated tech support line for real-time visit issues
@@ -208,13 +221,15 @@ Virtual Waiting Room | Clinical Documentation | e-Prescribe | RPM Dashboard
 
 **Provider Adoption Strategy:**
 
-*Training and Support:*
+_Training and Support:_
+
 - Role-based training by specialty with hands-on practice
 - Super-user program (2 per department) for peer support
 - On-demand support during live visits
 - Monthly best practice sharing and case reviews
 
-*Workflow Optimization:*
+_Workflow Optimization:_
+
 - Balanced schedules mixing virtual and in-person visits
 - Visit length optimization by visit type and complexity
 - Documentation templates reducing charting burden
@@ -222,33 +237,38 @@ Virtual Waiting Room | Clinical Documentation | e-Prescribe | RPM Dashboard
 
 **Remote Patient Monitoring (RPM) Program:**
 
-*Phase 1 Target Conditions:*
+_Phase 1 Target Conditions:_
+
 - Hypertension: Cellular BP cuff, daily readings, automated alerts
 - Diabetes: Connected glucose meter, pattern analysis, medication titration support
 - CHF: Weight scale and symptom tracking, early decompensation detection
 
-*Care Model:*
+_Care Model:_
+
 - Daily data transmission with automated threshold monitoring
 - Nurse reviewer for alerts, care manager for complex patients
 - Virtual visits triggered by concerning trends
 - Monthly RPM review visits with medication optimization
 
-*Target Enrollment:* 500 patients Year 1, 2,000 patients Year 2
+_Target Enrollment:_ 500 patients Year 1, 2,000 patients Year 2
 
 **Success Metrics:**
 
-*Utilization:*
+_Utilization:_
+
 - Virtual visit percentage: 8% to 25% over 2 years
 - Specialty coverage: 3 to 15 specialties
 - RPM enrollment: 500 patients Year 1, 2,000 Year 2
 
-*Quality:*
+_Quality:_
+
 - Patient satisfaction: greater than 4.5/5.0
 - Provider satisfaction: greater than 4.0/5.0
 - Technical success rate: greater than 95%
 - No-show rate: less than 5% (vs. 12% in-person)
 
-*Access:*
+_Access:_
+
 - Rural patient virtual visits: 35% of rural patient volume
 - Time to specialty appointment: 40% reduction
 - After-hours availability: 7 days/week for urgent needs

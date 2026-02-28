@@ -1,6 +1,7 @@
 # Commercial Space Mission Systems Engineering
 
 ## Metadata
+
 - **ID**: `space-mission-systems-engineering`
 - **Version**: 1.0.0
 - **Category**: Space Economy
@@ -18,12 +19,14 @@ Lead systems engineering for commercial space missions including requirements an
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing system requirements and architecture for space missions
 - Managing interfaces between spacecraft, launch, and ground systems
 - Planning verification and validation for satellite programs
 - Coordinating multi-satellite constellation development
 
 **Anti-Patterns (Do Not Use For):**
+
 - Single-subsystem detailed design
 - Manufacturing process development
 - Pure business planning without technical scope
@@ -105,19 +108,21 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're developing a 24-satellite constellation across 3 orbital planes with $450M budget and 36-month timeline. Need complete systems engineering approach from concept to operational deployment."
 
 ### Output
+
 **Systems Engineering Plan: 24-Satellite Constellation**
 
 **Program Structure**
 
-| Phase | Duration | Key Reviews |
-|-------|----------|-------------|
-| Mission Definition | Months 1-6 | SRR, MDR |
-| Detailed Design | Months 7-18 | PDR, CDR |
-| Integration & Test | Months 19-30 | TRR, FRR |
-| Deployment | Months 31-36 | ORR |
+| Phase              | Duration     | Key Reviews |
+| ------------------ | ------------ | ----------- |
+| Mission Definition | Months 1-6   | SRR, MDR    |
+| Detailed Design    | Months 7-18  | PDR, CDR    |
+| Integration & Test | Months 19-30 | TRR, FRR    |
+| Deployment         | Months 31-36 | ORR         |
 
 **Requirements Architecture**
 
@@ -133,14 +138,15 @@ L0: Mission Requirements (Stakeholder)
 
 **Key Performance Requirements**
 
-| Requirement | Specification | Verification |
-|-------------|---------------|--------------|
-| Constellation availability | >98% | Analysis + Demonstration |
-| Satellite design life | 7 years | Test + Analysis |
-| Orbital accuracy | <50m 3-sigma | Test |
-| Data latency | <100ms | Demonstration |
+| Requirement                | Specification | Verification             |
+| -------------------------- | ------------- | ------------------------ |
+| Constellation availability | >98%          | Analysis + Demonstration |
+| Satellite design life      | 7 years       | Test + Analysis          |
+| Orbital accuracy           | <50m 3-sigma  | Test                     |
+| Data latency               | <100ms        | Demonstration            |
 
 **Interface Control Structure**
+
 - ICD-001: Satellite to Launch Vehicle
 - ICD-002: Satellite to Ground Station
 - ICD-003: Inter-Satellite Link
@@ -148,6 +154,7 @@ L0: Mission Requirements (Stakeholder)
 - ICD-005: NOC to Customer Systems
 
 **Verification Matrix Summary**
+
 - Total requirements: 847
 - Verified by test: 312 (37%)
 - Verified by analysis: 298 (35%)
@@ -156,15 +163,16 @@ L0: Mission Requirements (Stakeholder)
 
 **Risk Register (Top 5)**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Schedule slip | Medium | High | Parallel development paths |
-| Integration issues | Medium | Medium | Early interface testing |
-| Supplier delay | Medium | Medium | Dual-source critical components |
-| Launch failure | Low | High | Insurance + spares |
-| Performance shortfall | Low | Medium | Design margins |
+| Risk                  | Probability | Impact | Mitigation                      |
+| --------------------- | ----------- | ------ | ------------------------------- |
+| Schedule slip         | Medium      | High   | Parallel development paths      |
+| Integration issues    | Medium      | Medium | Early interface testing         |
+| Supplier delay        | Medium      | Medium | Dual-source critical components |
+| Launch failure        | Low         | High   | Insurance + spares              |
+| Performance shortfall | Low         | Medium | Design margins                  |
 
 **Configuration Management**
+
 - Baseline: Established at CDR
 - Change control: CCB with impact assessment required
 - Documentation: Controlled via PLM system
@@ -172,5 +180,6 @@ L0: Mission Requirements (Stakeholder)
 ---
 
 ## Related Prompts
+
 - [Commercial Space Mission Architecture Expert](commercial-space-mission-architecture-expert.md)
 - [Launch Campaign Management Expert](launch-campaign-management-expert.md)

@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Configure Nginx web server for high-performance reverse proxy, load balancing,
+date: "2025-01-01"
+description:
+  Configure Nginx web server for high-performance reverse proxy, load balancing,
   SSL/TLS, caching, and API gateway functionality.
 layout: skill
 slug: nginx-configuration
 tags:
-- api
+  - api
 title: nginx-configuration
 ---
 
@@ -300,6 +301,7 @@ server {
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTP/2 for performance
 - Enable SSL/TLS with strong ciphers
 - Implement proper caching strategies
@@ -311,6 +313,7 @@ server {
 - Keep error logs separate from access logs
 
 ### ❌ DON'T
+
 - Disable gzip compression
 - Use weak SSL ciphers
 - Cache authenticated responses

@@ -1,6 +1,7 @@
 # Idea Generation Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/idea-generation-expert
 - **Version**: 3.0.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ Idea generation specialist who helps individuals and teams create diverse, innov
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Need fresh ideas for products, services, features, or campaigns
 - Facing creative blocks after exhausting obvious solutions
 - Starting innovation projects requiring diverse initial concepts
@@ -25,6 +27,7 @@ Idea generation specialist who helps individuals and teams create diverse, innov
 - Generating options before strategic decision-making
 
 **Anti-Patterns:**
+
 - Facilitating team brainstorming sessions (use Brainstorming Facilitation Expert)
 - Developing existing ideas into detailed plans (use Concept Development Expert)
 - Evaluating and prioritizing existing ideas (use Innovation Assessment Expert)
@@ -92,6 +95,7 @@ Include:
 ## Example Usage
 
 **User Input:**
+
 ```
 Problem: We need to increase customer engagement with our mobile banking app - usage has dropped 30% in the last year
 
@@ -117,76 +121,49 @@ Beyond "increase engagement," the deeper question is: Why did users stop coming?
 **QUICK WINS (1-2 Months, Low Complexity)**
 
 **Gamification & Motivation**
+
 1. **Savings Streak Tracker**: Visual progress showing consecutive days of saving any amount - builds habit through visible progress
 2. **Financial Health Score**: Simple 0-100 metric that improves with positive behaviors - clear, motivating feedback loop
 3. **Achievement Badges**: Unlock rewards for milestones (first investment, emergency fund reached, debt paid down)
 4. **Weekly Micro-Challenges**: Simple tasks like "check your balance 3 times this week" with small rewards
 
-**Personalization**
-5. **Smart Notification Tuning**: Let users choose notification types and frequency; stop annoying, start helpful
-6. **Customizable Dashboard**: Drag-and-drop widgets for what users actually care about
-7. **Preferred Name Display**: Personal greeting by nickname builds emotional connection
-8. **Quick Access Bar**: One-tap access to 3-5 most-used features on home screen
+**Personalization** 5. **Smart Notification Tuning**: Let users choose notification types and frequency; stop annoying, start helpful 6. **Customizable Dashboard**: Drag-and-drop widgets for what users actually care about 7. **Preferred Name Display**: Personal greeting by nickname builds emotional connection 8. **Quick Access Bar**: One-tap access to 3-5 most-used features on home screen
 
-**Friction Reduction**
-9. **One-Tap Bill Pay**: Remember payees and amounts for recurring payments
-10. **Predictive Search**: Natural language search ("how much did I spend on coffee?")
-11. **Face ID Everything**: Remove password friction for all non-transfer actions
-12. **Smart Defaults**: Pre-fill forms based on user patterns
+**Friction Reduction** 9. **One-Tap Bill Pay**: Remember payees and amounts for recurring payments 10. **Predictive Search**: Natural language search ("how much did I spend on coffee?") 11. **Face ID Everything**: Remove password friction for all non-transfer actions 12. **Smart Defaults**: Pre-fill forms based on user patterns
 
 **INNOVATIVE FEATURES (3-6 Months, Medium Complexity)**
 
-**AI-Powered Intelligence**
-13. **Predictive Cash Flow**: "You'll likely run low in 5 days based on your patterns" - proactive value
-14. **Spending Autopilot**: AI suggests and automates savings based on spending analysis
-15. **Anomaly Alerts**: "This charge looks unusual - is it you?" - security as feature
-16. **Goal Progress Forecasts**: "At current rate, you'll reach vacation goal in 4 months"
+**AI-Powered Intelligence** 13. **Predictive Cash Flow**: "You'll likely run low in 5 days based on your patterns" - proactive value 14. **Spending Autopilot**: AI suggests and automates savings based on spending analysis 15. **Anomaly Alerts**: "This charge looks unusual - is it you?" - security as feature 16. **Goal Progress Forecasts**: "At current rate, you'll reach vacation goal in 4 months"
 
-**Visual Money Management**
-17. **Interactive Budget Bubbles**: Spending categories as visual bubbles that grow/shrink in real-time
-18. **AR Receipt Scanner**: Photo receipts, auto-categorize, make data entry effortless
-19. **Money Flow Visualization**: Animated flows showing where money comes from and goes
-20. **Future Self Preview**: Show projected account state based on current behaviors
+**Visual Money Management** 17. **Interactive Budget Bubbles**: Spending categories as visual bubbles that grow/shrink in real-time 18. **AR Receipt Scanner**: Photo receipts, auto-categorize, make data entry effortless 19. **Money Flow Visualization**: Animated flows showing where money comes from and goes 20. **Future Self Preview**: Show projected account state based on current behaviors
 
-**Social Features (Compliance-Friendly)**
-21. **Split Bill Calculator**: Calculate splits and send payment requests in-app
-22. **Savings Accountability Partners**: Share goal progress with chosen family/friends
-23. **Anonymous Comparison**: "You save 20% more than people your age" - social proof without privacy violation
-24. **Family Money Dashboard**: Shared view for family financial coordination
+**Social Features (Compliance-Friendly)** 21. **Split Bill Calculator**: Calculate splits and send payment requests in-app 22. **Savings Accountability Partners**: Share goal progress with chosen family/friends 23. **Anonymous Comparison**: "You save 20% more than people your age" - social proof without privacy violation 24. **Family Money Dashboard**: Shared view for family financial coordination
 
-**Lifestyle Integration**
-25. **Fitness App Connection**: Save $1 for every workout logged - health meets wealth
-26. **Calendar Budget Sync**: See upcoming expenses alongside calendar events
-27. **Travel Mode**: Currency conversion, trip budgets, international transaction alerts
-28. **Shopping Price Alerts**: Notify when items in wishlist drop in price (with partner retailers)
+**Lifestyle Integration** 25. **Fitness App Connection**: Save $1 for every workout logged - health meets wealth 26. **Calendar Budget Sync**: See upcoming expenses alongside calendar events 27. **Travel Mode**: Currency conversion, trip budgets, international transaction alerts 28. **Shopping Price Alerts**: Notify when items in wishlist drop in price (with partner retailers)
 
 **BREAKTHROUGH CONCEPTS (Pilot Programs, Higher Complexity)**
 
-**Financial Wellness Ecosystem**
-29. **Employer Wellness Integration**: Partner with HR departments for payroll-connected financial wellness
-30. **Micro-Learning Modules**: 60-second daily financial education with rewards for completion
-31. **AI Financial Coach**: Conversational advisor for money questions and decisions
-32. **Peer Coaching Marketplace**: Connect users with similar goals for accountability
+**Financial Wellness Ecosystem** 29. **Employer Wellness Integration**: Partner with HR departments for payroll-connected financial wellness 30. **Micro-Learning Modules**: 60-second daily financial education with rewards for completion 31. **AI Financial Coach**: Conversational advisor for money questions and decisions 32. **Peer Coaching Marketplace**: Connect users with similar goals for accountability
 
-**Next-Generation Features**
-33. **Teen/Family Accounts**: Parent-supervised accounts with learning modules and controls
-34. **Voice-First Banking**: Full functionality through conversational voice interface
-35. **Predictive Budgeting**: AI creates next month's budget based on upcoming known and predicted expenses
+**Next-Generation Features** 33. **Teen/Family Accounts**: Parent-supervised accounts with learning modules and controls 34. **Voice-First Banking**: Full functionality through conversational voice interface 35. **Predictive Budgeting**: AI creates next month's budget based on upcoming known and predicted expenses
 
 **PRIORITIZATION GUIDANCE**
 
 **Highest Impact + Lowest Effort (Start Here):**
+
 - Savings Streak Tracker (#1) - proven engagement pattern
 - Financial Health Score (#2) - clear value, simple display
 - Smart Notification Tuning (#5) - reduces friction, easy build
 - One-Tap Bill Pay (#9) - removes friction, quick win
 
 **High Impact + Medium Effort (Pipeline):**
+
 - Predictive Cash Flow (#13) - significant differentiator
 - Interactive Budget Bubbles (#17) - visual engagement
 - AI Financial Coach (#31) - long-term relationship builder
 
 **Innovative but Needs Testing:**
+
 - Fitness App Connection (#25) - test user interest first
 - Family Money Dashboard (#23) - survey for demand
 - Employer Wellness Integration (#29) - requires BD relationships

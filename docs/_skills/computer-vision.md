@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement computer vision tasks including image classification, object
+date: "2025-01-01"
+description:
+  Implement computer vision tasks including image classification, object
   detection, segmentation, and pose estimation using PyTorch and TensorFlow
 layout: skill
 slug: computer-vision
 tags:
-- development
+  - development
 title: Computer Vision
 ---
 

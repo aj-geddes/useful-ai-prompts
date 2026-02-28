@@ -1,6 +1,7 @@
 # Energy Storage System Design Expert
 
 ## Metadata
+
 - **ID**: `energy-storage-system-design-expert`
 - **Version**: 1.0.0
 - **Category**: Renewable Energy
@@ -18,6 +19,7 @@ Design and optimize energy storage systems for grid-scale, commercial, and behin
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Sizing battery storage systems for specific applications
 - Optimizing storage for multiple revenue/value streams
 - Integrating storage with solar, wind, or hybrid systems
@@ -26,6 +28,7 @@ Design and optimize energy storage systems for grid-scale, commercial, and behin
 - Developing operations and maintenance strategies
 
 **Anti-Patterns (When NOT to Use):**
+
 - Residential battery installation specifics (use installer)
 - Detailed electrical engineering drawings (use licensed engineer)
 - Specific manufacturer selection (requires RFP process)
@@ -112,35 +115,41 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We're developing a 100 MW / 400 MWh grid-scale battery storage project in a wholesale electricity market (ISO). The project will be standalone (not co-located with generation). Primary objectives are capacity market participation and energy arbitrage, with ancillary services as secondary revenue. We need to understand technology selection, system design, and key project considerations.
 
 ### Output
+
 **Energy Storage System Design: 100 MW / 400 MWh Grid-Scale Project**
 
 **Application and Value Stream Analysis**
 
 Your 4-hour duration positions the project well for capacity market qualification in most ISOs (typically require 4-hour sustained output). Value stack:
 
-*Primary Revenue: Capacity Market*
+_Primary Revenue: Capacity Market_
+
 - Provides approximately 60-70% of project revenue
 - Requires high availability (typically >97%)
 - Drives design toward reliability and low degradation
 
-*Secondary Revenue: Energy Arbitrage*
+_Secondary Revenue: Energy Arbitrage_
+
 - Price spread capture between peak and off-peak
 - Typically 1-2 full cycles per day
 - Revenue varies with market volatility
 
-*Ancillary Services*
+_Ancillary Services_
+
 - Frequency regulation (highest value but limited volume)
 - Spinning/non-spinning reserves
 - Can layer on top of other uses during appropriate hours
 
 **Technology Selection**
 
-*Recommended: LFP (Lithium Iron Phosphate)*
+_Recommended: LFP (Lithium Iron Phosphate)_
 
 Rationale for grid-scale standalone:
+
 - Superior cycle life (6,000+ cycles vs 3,000-4,000 for NMC)
 - Better thermal stability and safety profile
 - Lower degradation rate under frequent cycling
@@ -148,25 +157,29 @@ Rationale for grid-scale standalone:
 - Increasingly cost-competitive with NMC
 
 Tradeoffs accepted:
+
 - Lower energy density (requires more physical space)
 - Slightly lower round-trip efficiency (85-88% vs 88-92%)
 - Larger footprint for equivalent capacity
 
 **System Architecture**
 
-*DC System Configuration*
+_DC System Configuration_
+
 - 20 MW blocks (5 blocks total)
 - Each block: 1,500V DC system with string inverters or central inverter
 - Modular container design (10-12 containers per block)
 - Battery management system (BMS) hierarchy: cell > module > rack > container > system
 
-*AC System Design*
+_AC System Design_
+
 - Step-up transformer per block (medium voltage collector system)
 - Main power transformer to grid interconnection voltage
 - AC-coupled architecture for grid code compliance
 - Power conversion: 4-quadrant inverters for full active/reactive capability
 
-*Interconnection*
+_Interconnection_
+
 - 138/230 kV point of interconnection (depending on local grid)
 - Dedicated switching station or tap to existing substation
 - Compliant with NERC reliability standards
@@ -174,18 +187,21 @@ Tradeoffs accepted:
 
 **Control System Architecture**
 
-*Hierarchy*
+_Hierarchy_
+
 - Site controller (master): Receives ISO dispatch, manages overall response
 - Block controllers: Coordinate containers within each 20 MW block
 - Local BMS: Cell/module level protection and monitoring
 
-*Market Participation*
+_Market Participation_
+
 - AGC integration for frequency regulation
 - 5-minute energy market bidding capability
 - Capacity market availability tracking
 - State of charge management for multi-use optimization
 
-*Optimization Strategy*
+_Optimization Strategy_
+
 - Day-ahead market position based on price forecasts
 - Real-time adjustment for ancillary service opportunities
 - State of charge management to maintain capacity obligation
@@ -193,20 +209,23 @@ Tradeoffs accepted:
 
 **Safety and Thermal Management**
 
-*Fire Safety (NFPA 855 Compliance)*
+_Fire Safety (NFPA 855 Compliance)_
+
 - Deflagration venting for each container
 - Gas detection (hydrogen, CO) with automatic shutdown
 - Fire suppression system (typically clean agent or water mist)
 - Container separation per code requirements (10-20 feet)
 - Emergency response plan and fire department coordination
 
-*Thermal Management*
+_Thermal Management_
+
 - Active HVAC cooling for each container
 - Designed for 25-30 deg C operating temperature
 - Auxiliary power for cooling (impacts parasitic load)
 - Redundant cooling for reliability
 
-*Site Design*
+_Site Design_
+
 - Perimeter fencing and security
 - Drainage and environmental controls
 - Access roads for emergency response
@@ -214,13 +233,15 @@ Tradeoffs accepted:
 
 **Degradation Management**
 
-*Lifetime Assumptions*
+_Lifetime Assumptions_
+
 - 15-year project life with augmentation strategy
 - Initial capacity: 400 MWh
 - Year 10 capacity: ~320 MWh (80% of initial)
 - Augmentation at years 8-10 to maintain contracted capacity
 
-*Cycling Strategy*
+_Cycling Strategy_
+
 - Design for 350-400 equivalent full cycles annually
 - Depth of discharge: 10-90% for routine cycling
 - Temperature management to minimize calendar degradation
@@ -228,14 +249,16 @@ Tradeoffs accepted:
 
 **Project Economics Overview**
 
-*Capital Costs (2024-2025 estimates)*
+_Capital Costs (2024-2025 estimates)_
+
 - Battery system: $180-220/kWh ($72-88M)
 - Power conversion and electrical: $40-50M
 - Balance of plant and interconnection: $25-35M
 - Development and soft costs: $15-20M
 - Total: $150-190M ($375-475/kWh all-in)
 
-*Revenue Potential*
+_Revenue Potential_
+
 - Capacity: $40-60/kW-year
 - Energy arbitrage: $30-50/kW-year
 - Ancillary services: $10-20/kW-year
@@ -252,6 +275,7 @@ Tradeoffs accepted:
 ---
 
 ## Related Prompts
+
 - [Smart Grid Infrastructure Architect](smart-grid-infrastructure-architect.md) - For grid integration
 - [Solar Construction and Commissioning](solar-construction-management-commissioning-optimization.md) - For hybrid projects
 - [Clean Energy Policy Expert](clean-energy-policy-development-expert.md) - For market and policy context

@@ -403,6 +403,7 @@ if __name__ == '__main__':
 ## Cost Optimization Strategies
 
 ### ✅ DO
+
 - Use reserved instances for baseline
 - Leverage spot instances
 - Right-size resources
@@ -413,6 +414,7 @@ if __name__ == '__main__':
 - Schedule non-essential resources
 
 ### ❌ DON'T
+
 - Over-provision resources
 - Ignore unused resources
 - Neglect cost monitoring

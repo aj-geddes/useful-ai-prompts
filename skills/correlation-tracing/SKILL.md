@@ -24,11 +24,11 @@ Implement correlation IDs and distributed tracing to track requests across multi
 ### 1. **Correlation ID Middleware (Express)**
 
 ```typescript
-import express from 'express';
-import { v4 as uuidv4 } from 'uuid';
+import express from "express";
+import { v4 as uuidv4 } from "uuid";
 
 // Async local storage for context
-import { AsyncLocalStorage } from 'async_hooks';
+import { AsyncLocalStorage } from "async_hooks";
 
 const traceContext = new AsyncLocalStorage<Map<string, any>>();
 
@@ -43,23 +43,23 @@ function correlationMiddleware(serviceName: string) {
   return (
     req: express.Request,
     res: express.Response,
-    next: express.NextFunction
+    next: express.NextFunction,
   ) => {
     // Extract or generate trace ID
-    const traceId = req.headers['x-trace-id'] as string || uuidv4();
-    const parentSpanId = req.headers['x-span-id'] as string;
+    const traceId = (req.headers["x-trace-id"] as string) || uuidv4();
+    const parentSpanId = req.headers["x-span-id"] as string;
     const spanId = uuidv4();
 
     // Set context
     const context = new Map<string, any>();
-    context.set('traceId', traceId);
-    context.set('spanId', spanId);
-    context.set('parentSpanId', parentSpanId);
-    context.set('serviceName', serviceName);
+    context.set("traceId", traceId);
+    context.set("spanId", spanId);
+    context.set("parentSpanId", parentSpanId);
+    context.set("serviceName", serviceName);
 
     // Inject trace headers
-    res.setHeader('X-Trace-Id', traceId);
-    res.setHeader('X-Span-Id', spanId);
+    res.setHeader("X-Trace-Id", traceId);
+    res.setHeader("X-Span-Id", spanId);
 
     // Run in context
     traceContext.run(context, () => {
@@ -74,10 +74,10 @@ function getTraceContext(): TraceContext | null {
   if (!context) return null;
 
   return {
-    traceId: context.get('traceId'),
-    spanId: context.get('spanId'),
-    parentSpanId: context.get('parentSpanId'),
-    serviceName: context.get('serviceName')
+    traceId: context.get("traceId"),
+    spanId: context.get("spanId"),
+    parentSpanId: context.get("parentSpanId"),
+    serviceName: context.get("serviceName"),
   };
 }
 
@@ -91,22 +91,22 @@ class TracedLogger {
       message,
       ...data,
       ...context,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     console.log(JSON.stringify(logEntry));
   }
 
   info(message: string, data?: any): void {
-    this.log('info', message, data);
+    this.log("info", message, data);
   }
 
   error(message: string, data?: any): void {
-    this.log('error', message, data);
+    this.log("error", message, data);
   }
 
   warn(message: string, data?: any): void {
-    this.log('warn', message, data);
+    this.log("warn", message, data);
   }
 }
 
@@ -115,16 +115,16 @@ const logger = new TracedLogger();
 // HTTP client with trace propagation
 async function tracedFetch(
   url: string,
-  options: RequestInit = {}
+  options: RequestInit = {},
 ): Promise<Response> {
   const context = getTraceContext();
 
   const headers = new Headers(options.headers);
 
   if (context) {
-    headers.set('X-Trace-Id', context.traceId);
-    headers.set('X-Span-Id', context.spanId);
-    headers.set('X-Parent-Span-Id', context.spanId);
+    headers.set("X-Trace-Id", context.traceId);
+    headers.set("X-Span-Id", context.spanId);
+    headers.set("X-Parent-Span-Id", context.spanId);
   }
 
   const startTime = Date.now();
@@ -132,27 +132,27 @@ async function tracedFetch(
   try {
     const response = await fetch(url, {
       ...options,
-      headers
+      headers,
     });
 
     const duration = Date.now() - startTime;
 
-    logger.info('HTTP request completed', {
-      method: options.method || 'GET',
+    logger.info("HTTP request completed", {
+      method: options.method || "GET",
       url,
       statusCode: response.status,
-      duration
+      duration,
     });
 
     return response;
   } catch (error) {
     const duration = Date.now() - startTime;
 
-    logger.error('HTTP request failed', {
-      method: options.method || 'GET',
+    logger.error("HTTP request failed", {
+      method: options.method || "GET",
       url,
       error: (error as Error).message,
-      duration
+      duration,
     });
 
     throw error;
@@ -162,19 +162,19 @@ async function tracedFetch(
 // Usage
 const app = express();
 
-app.use(correlationMiddleware('api-service'));
+app.use(correlationMiddleware("api-service"));
 
-app.get('/api/users/:id', async (req, res) => {
-  logger.info('Fetching user', { userId: req.params.id });
+app.get("/api/users/:id", async (req, res) => {
+  logger.info("Fetching user", { userId: req.params.id });
 
   // Call another service with trace propagation
   const response = await tracedFetch(
-    `http://user-service/users/${req.params.id}`
+    `http://user-service/users/${req.params.id}`,
   );
 
   const data = await response.json();
 
-  logger.info('User fetched successfully');
+  logger.info("User fetched successfully");
 
   res.json(data);
 });
@@ -183,30 +183,30 @@ app.get('/api/users/:id', async (req, res) => {
 ### 2. **OpenTelemetry Integration**
 
 ```typescript
-import { NodeSDK } from '@opentelemetry/sdk-node';
-import { getNodeAutoInstrumentations } from '@opentelemetry/auto-instrumentations-node';
-import { JaegerExporter } from '@opentelemetry/exporter-jaeger';
-import { Resource } from '@opentelemetry/resources';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { NodeSDK } from "@opentelemetry/sdk-node";
+import { getNodeAutoInstrumentations } from "@opentelemetry/auto-instrumentations-node";
+import { JaegerExporter } from "@opentelemetry/exporter-jaeger";
+import { Resource } from "@opentelemetry/resources";
+import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
 
 // Configure OpenTelemetry
 const sdk = new NodeSDK({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'my-service',
-    [SemanticResourceAttributes.SERVICE_VERSION]: '1.0.0',
+    [SemanticResourceAttributes.SERVICE_NAME]: "my-service",
+    [SemanticResourceAttributes.SERVICE_VERSION]: "1.0.0",
   }),
   traceExporter: new JaegerExporter({
-    endpoint: 'http://localhost:14268/api/traces',
+    endpoint: "http://localhost:14268/api/traces",
   }),
   instrumentations: [
     getNodeAutoInstrumentations({
-      '@opentelemetry/instrumentation-http': {
+      "@opentelemetry/instrumentation-http": {
         enabled: true,
       },
-      '@opentelemetry/instrumentation-express': {
+      "@opentelemetry/instrumentation-express": {
         enabled: true,
       },
-      '@opentelemetry/instrumentation-pg': {
+      "@opentelemetry/instrumentation-pg": {
         enabled: true,
       },
     }),
@@ -216,18 +216,18 @@ const sdk = new NodeSDK({
 sdk.start();
 
 // Custom spans
-import { trace, SpanStatusCode } from '@opentelemetry/api';
+import { trace, SpanStatusCode } from "@opentelemetry/api";
 
-const tracer = trace.getTracer('my-service');
+const tracer = trace.getTracer("my-service");
 
 async function processOrder(orderId: string) {
-  const span = tracer.startSpan('process_order');
+  const span = tracer.startSpan("process_order");
 
-  span.setAttribute('order.id', orderId);
+  span.setAttribute("order.id", orderId);
 
   try {
     // Validate order
-    const validateSpan = tracer.startSpan('validate_order', {
+    const validateSpan = tracer.startSpan("validate_order", {
       parent: span,
     });
 
@@ -236,7 +236,7 @@ async function processOrder(orderId: string) {
     validateSpan.end();
 
     // Process payment
-    const paymentSpan = tracer.startSpan('process_payment', {
+    const paymentSpan = tracer.startSpan("process_payment", {
       parent: span,
     });
 
@@ -344,16 +344,13 @@ interface Span {
   duration?: number;
   tags: Record<string, any>;
   logs: Array<{ timestamp: number; message: string; fields?: any }>;
-  status: 'ok' | 'error';
+  status: "ok" | "error";
 }
 
 class DistributedTracer {
   private spans: Span[] = [];
 
-  startSpan(
-    name: string,
-    parentSpanId?: string
-  ): Span {
+  startSpan(name: string, parentSpanId?: string): Span {
     const context = getTraceContext();
 
     const span: Span = {
@@ -361,11 +358,11 @@ class DistributedTracer {
       spanId: uuidv4(),
       parentSpanId: parentSpanId || context?.parentSpanId,
       name,
-      serviceName: context?.serviceName || 'unknown',
+      serviceName: context?.serviceName || "unknown",
       startTime: Date.now(),
       tags: {},
       logs: [],
-      status: 'ok'
+      status: "ok",
     };
 
     this.spans.push(span);
@@ -388,20 +385,20 @@ class DistributedTracer {
     span.logs.push({
       timestamp: Date.now(),
       message,
-      fields
+      fields,
     });
   }
 
   setError(span: Span, error: Error): void {
-    span.status = 'error';
-    span.tags['error'] = true;
-    span.tags['error.message'] = error.message;
-    span.tags['error.stack'] = error.stack;
+    span.status = "error";
+    span.tags["error"] = true;
+    span.tags["error.message"] = error.message;
+    span.tags["error.stack"] = error.stack;
   }
 
   private async reportSpan(span: Span): Promise<void> {
     // Send to Jaeger, Zipkin, or other backend
-    console.log('Reporting span:', JSON.stringify(span, null, 2));
+    console.log("Reporting span:", JSON.stringify(span, null, 2));
 
     // In production:
     // await fetch('http://tracing-collector/api/spans', {
@@ -416,7 +413,7 @@ class DistributedTracer {
   }
 
   getTrace(traceId: string): Span[] {
-    return this.spans.filter(s => s.traceId === traceId);
+    return this.spans.filter((s) => s.traceId === traceId);
   }
 }
 
@@ -424,51 +421,54 @@ const tracer = new DistributedTracer();
 
 // Usage
 async function handleRequest() {
-  const span = tracer.startSpan('handle_request');
+  const span = tracer.startSpan("handle_request");
 
-  tracer.setTag(span, 'http.method', 'GET');
-  tracer.setTag(span, 'http.url', '/api/users/123');
+  tracer.setTag(span, "http.method", "GET");
+  tracer.setTag(span, "http.url", "/api/users/123");
 
   try {
     // Database operation
-    const dbSpan = tracer.startSpan('database_query', span.spanId);
-    tracer.setTag(dbSpan, 'db.type', 'postgresql');
-    tracer.setTag(dbSpan, 'db.statement', 'SELECT * FROM users WHERE id = $1');
+    const dbSpan = tracer.startSpan("database_query", span.spanId);
+    tracer.setTag(dbSpan, "db.type", "postgresql");
+    tracer.setTag(dbSpan, "db.statement", "SELECT * FROM users WHERE id = $1");
 
     await queryDatabase();
 
     tracer.endSpan(dbSpan);
 
     // External API call
-    const apiSpan = tracer.startSpan('external_api_call', span.spanId);
-    tracer.setTag(apiSpan, 'http.url', 'https://api.example.com/data');
+    const apiSpan = tracer.startSpan("external_api_call", span.spanId);
+    tracer.setTag(apiSpan, "http.url", "https://api.example.com/data");
 
     await callExternalAPI();
 
     tracer.endSpan(apiSpan);
 
-    tracer.logEvent(span, 'Request completed successfully');
+    tracer.logEvent(span, "Request completed successfully");
     tracer.endSpan(span);
   } catch (error) {
     tracer.setError(span, error as Error);
-    tracer.logEvent(span, 'Request failed', { error: (error as Error).message });
+    tracer.logEvent(span, "Request failed", {
+      error: (error as Error).message,
+    });
     tracer.endSpan(span);
     throw error;
   }
 }
 
 async function queryDatabase() {
-  await new Promise(resolve => setTimeout(resolve, 100));
+  await new Promise((resolve) => setTimeout(resolve, 100));
 }
 
 async function callExternalAPI() {
-  await new Promise(resolve => setTimeout(resolve, 200));
+  await new Promise((resolve) => setTimeout(resolve, 200));
 }
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Generate trace IDs at entry points
 - Propagate trace context across services
 - Include correlation IDs in logs
@@ -479,6 +479,7 @@ async function callExternalAPI() {
 - Implement context propagation
 
 ### ❌ DON'T
+
 - Skip trace propagation
 - Log without correlation context
 - Create too many spans

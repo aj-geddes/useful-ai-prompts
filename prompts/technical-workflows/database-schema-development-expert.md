@@ -1,6 +1,7 @@
 # Database Schema Development Expert
 
 ## Metadata
+
 - **ID**: `database-schema-development-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Designs efficient, normalized database schemas that support application data req
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new database schemas from application requirements
 - Optimizing existing schemas for query performance
 - Planning database migrations and versioning strategies
 - Creating multi-tenant or high-scale database architectures
 
 **Anti-patterns (Don't Use For):**
+
 - NoSQL document database design (different paradigm)
 - Data warehouse dimensional modeling (use OLAP-specific approaches)
 - ETL pipeline design (use data engineering patterns)

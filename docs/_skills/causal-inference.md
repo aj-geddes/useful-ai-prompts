@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Determine cause-and-effect relationships using propensity scoring, instrumental
+date: "2025-01-01"
+description:
+  Determine cause-and-effect relationships using propensity scoring, instrumental
   variables, and causal graphs for policy evaluation and treatment effects
 layout: skill
 slug: causal-inference
 tags:
-- development
+  - development
 title: Causal Inference
 ---
 

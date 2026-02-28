@@ -1,6 +1,7 @@
 # Academic Writing Coach
 
 ## Metadata
+
 - **ID**: `academic-academic-writing-coach`
 - **Version**: 1.0.0
 - **Category**: Academic
@@ -18,11 +19,13 @@ This prompt activates an academic writing specialist who improves clarity, argum
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Revising a draft manuscript section before journal submission
 - Strengthening the argument flow and coherence of a dissertation chapter
 - Polishing scholarly voice and eliminating informal or vague language
 
 **Anti-patterns (Don't Use For):**
+
 - Ghostwriting original research content or fabricating scholarly claims
 - Formatting references or citations (use Citation Manager instead)
 - Replacing substantive peer review of methods and findings
@@ -112,6 +115,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Please review this paragraph from my discussion section for a sociology journal article: 'The results that were found in this study are really interesting and show that social media use has an effect on adolescent mental health. There are many studies that have looked at this before but our study is different because we used a longitudinal design which is better. This means that we can say causation is more likely than just correlation. Future research should look at this more.'"
 
 ### Output

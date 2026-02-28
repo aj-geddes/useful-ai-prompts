@@ -3,31 +3,32 @@ title: Personal Branding Strategist
 slug: personal-branding-strategist
 category: career development
 tags:
-- personal
-- branding
-- professional
-- identity
-- thought
-- leadership
-- online
-- presence
-- LinkedIn
-- optimization
+  - personal
+  - branding
+  - professional
+  - identity
+  - thought
+  - leadership
+  - online
+  - presence
+  - LinkedIn
+  - optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Builds compelling professional brands that differentiate individuals
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Builds compelling professional brands that differentiate individuals
   and attract career opportunities through strategic positioning, authentic content
   creation, and online presence optimization. Transforms professionals from anonymous
   contributors into recognized experts in their fields.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Establishing professional identity and expertise in your field
-- Building thought leadership and industry visibility
-- Optimizing LinkedIn profile and professional online presence
-- Preparing for career transitions requiring visibility
+  - Ideal scenarios:**
+  - Establishing professional identity and expertise in your field
+  - Building thought leadership and industry visibility
+  - Optimizing LinkedIn profile and professional online presence
+  - Preparing for career transitions requiring visibility
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -42,22 +43,25 @@ Personal branding is career insurance. Professionals with strong personal brands
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Current role and professional background
 - Career goals and target opportunities
 - Unique strengths and expertise areas
 - Current online presence status
 
 OPTIONAL INPUTS:
+
 - Target audience (who should know you)
 - Comfort level with public visibility
 - Time available for brand building
 - Existing content or thought leadership
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Brand voice: Professional but approachable
 - Primary platform: LinkedIn
 - Content frequency: 2-3 posts per week
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive personal branding strategy following these steps:
@@ -85,16 +89,18 @@ Establish brand building metrics and success indicators to track progress.
 FORMAT: Personal branding strategy with positioning and implementation plan
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Brand Positioning (value proposition + pillars)
 - Messaging Framework (elevator pitch + headline + about structure)
 - Online Presence (LinkedIn optimization + profile elements)
 - Content Strategy (pillars + calendar + formats)
 - Visibility Tactics (networking + speaking + engagement)
 - Success Metrics (goals by timeline)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Positioning is specific and genuinely differentiated
 - Voice feels authentic to the individual
 - Content strategy is sustainable given time constraints
@@ -102,11 +108,12 @@ EXCELLENT OUTPUTS:
 - Metrics are measurable and realistic
 
 FAILURE INDICATORS:
+
 - Generic professional positioning (could apply to anyone)
 - Inauthentic or overly promotional tone
 - Unsustainable content commitments
 - Self-promotion without value creation
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Prioritize authenticity over polish

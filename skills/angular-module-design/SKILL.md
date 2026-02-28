@@ -23,18 +23,18 @@ Architect scalable Angular applications using feature modules, lazy loading, ser
 
 ```typescript
 // users.module.ts
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { UsersRoutingModule } from './users-routing.module';
-import { UsersListComponent } from './components/users-list/users-list.component';
-import { UserDetailComponent } from './components/user-detail/user-detail.component';
-import { UsersService } from './services/users.service';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule } from "@angular/forms";
+import { UsersRoutingModule } from "./users-routing.module";
+import { UsersListComponent } from "./components/users-list/users-list.component";
+import { UserDetailComponent } from "./components/user-detail/user-detail.component";
+import { UsersService } from "./services/users.service";
 
 @NgModule({
   declarations: [UsersListComponent, UserDetailComponent],
   imports: [CommonModule, ReactiveFormsModule, UsersRoutingModule],
-  providers: [UsersService]
+  providers: [UsersService],
 })
 export class UsersModule {}
 ```
@@ -43,27 +43,29 @@ export class UsersModule {}
 
 ```typescript
 // app-routing.module.ts
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: "", component: DashboardComponent },
   {
-    path: 'users',
-    loadChildren: () => import('./features/users/users.module')
-      .then(m => m.UsersModule)
+    path: "users",
+    loadChildren: () =>
+      import("./features/users/users.module").then((m) => m.UsersModule),
   },
   {
-    path: 'products',
-    loadChildren: () => import('./features/products/products.module')
-      .then(m => m.ProductsModule)
-  }
+    path: "products",
+    loadChildren: () =>
+      import("./features/products/products.module").then(
+        (m) => m.ProductsModule,
+      ),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
 ```
@@ -72,10 +74,10 @@ export class AppRoutingModule {}
 
 ```typescript
 // users.service.ts
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, throwError } from 'rxjs';
-import { map, catchError, tap } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { BehaviorSubject, Observable, throwError } from "rxjs";
+import { map, catchError, tap } from "rxjs/operators";
 
 interface User {
   id: number;
@@ -83,7 +85,7 @@ interface User {
   email: string;
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class UsersService {
   private usersSubject = new BehaviorSubject<User[]>([]);
   public users$ = this.usersSubject.asObservable();
@@ -91,12 +93,12 @@ export class UsersService {
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>('/api/users').pipe(
-      tap(users => this.usersSubject.next(users)),
-      catchError(error => {
-        console.error('Error fetching users:', error);
-        return throwError(() => new Error('Failed to load users'));
-      })
+    return this.http.get<User[]>("/api/users").pipe(
+      tap((users) => this.usersSubject.next(users)),
+      catchError((error) => {
+        console.error("Error fetching users:", error);
+        return throwError(() => new Error("Failed to load users"));
+      }),
     );
   }
 
@@ -104,25 +106,25 @@ export class UsersService {
     return this.http.get<User>(`/api/users/${id}`);
   }
 
-  createUser(user: Omit<User, 'id'>): Observable<User> {
-    return this.http.post<User>('/api/users', user).pipe(
-      tap(newUser => {
+  createUser(user: Omit<User, "id">): Observable<User> {
+    return this.http.post<User>("/api/users", user).pipe(
+      tap((newUser) => {
         const currentUsers = this.usersSubject.value;
         this.usersSubject.next([...currentUsers, newUser]);
-      })
+      }),
     );
   }
 
   updateUser(id: number, user: User): Observable<User> {
     return this.http.put<User>(`/api/users/${id}`, user).pipe(
-      tap(updatedUser => {
+      tap((updatedUser) => {
         const currentUsers = this.usersSubject.value;
-        const index = currentUsers.findIndex(u => u.id === id);
+        const index = currentUsers.findIndex((u) => u.id === id);
         if (index !== -1) {
           currentUsers[index] = updatedUser;
           this.usersSubject.next([...currentUsers]);
         }
-      })
+      }),
     );
   }
 
@@ -130,8 +132,8 @@ export class UsersService {
     return this.http.delete<void>(`/api/users/${id}`).pipe(
       tap(() => {
         const currentUsers = this.usersSubject.value;
-        this.usersSubject.next(currentUsers.filter(u => u.id !== id));
-      })
+        this.usersSubject.next(currentUsers.filter((u) => u.id !== id));
+      }),
     );
   }
 }
@@ -141,9 +143,9 @@ export class UsersService {
 
 ```typescript
 // users-list.component.ts (Smart)
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { UsersService } from '../../services/users.service';
+import { Component, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
+import { UsersService } from "../../services/users.service";
 
 interface User {
   id: number;
@@ -152,7 +154,7 @@ interface User {
 }
 
 @Component({
-  selector: 'app-users-list',
+  selector: "app-users-list",
   template: `
     <div>
       <h2>Users</h2>
@@ -163,7 +165,7 @@ interface User {
         (delete)="deleteUser($event)"
       ></app-user-item>
     </div>
-  `
+  `,
 })
 export class UsersListComponent implements OnInit {
   users$: Observable<User[]>;
@@ -186,7 +188,7 @@ export class UsersListComponent implements OnInit {
 }
 
 // user-item.component.ts (Presentational)
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 interface User {
   id: number;
@@ -195,7 +197,7 @@ interface User {
 }
 
 @Component({
-  selector: 'app-user-item',
+  selector: "app-user-item",
   template: `
     <div class="user-item">
       <h3>{{ user.name }}</h3>
@@ -203,7 +205,7 @@ interface User {
       <button (click)="onDelete()">Delete</button>
     </div>
   `,
-  styleUrls: ['./user-item.component.css']
+  styleUrls: ["./user-item.component.css"],
 })
 export class UserItemComponent {
   @Input() user!: User;
@@ -219,18 +221,18 @@ export class UserItemComponent {
 
 ```typescript
 // config.service.ts
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 interface AppConfig {
   apiUrl: string;
   environment: string;
 }
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class ConfigService {
   private config: AppConfig = {
-    apiUrl: 'https://api.example.com',
-    environment: 'production'
+    apiUrl: "https://api.example.com",
+    environment: "production",
   };
 
   get(key: keyof AppConfig): any {
@@ -239,18 +241,18 @@ export class ConfigService {
 }
 
 // app.module.ts with providers
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ConfigService } from './services/config.service';
-import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { ConfigService } from "./services/config.service";
+import { AuthInterceptor } from "./interceptors/auth.interceptor";
 
 @NgModule({
   imports: [BrowserModule, HttpClientModule],
   providers: [
     ConfigService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
-  ]
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+  ],
 })
 export class AppModule {}
 ```

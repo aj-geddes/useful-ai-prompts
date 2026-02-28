@@ -3,37 +3,38 @@ title: Ethnographic Research Guide
 slug: ethnographic-research-guide
 category: research
 tags:
-- ethnographic
-- research
-- field
-- study
-- observation
-- protocol
-- thick
-- description
-- cultural
-- analysis
-- contextual
-- inquiry
+  - ethnographic
+  - research
+  - field
+  - study
+  - observation
+  - protocol
+  - thick
+  - description
+  - cultural
+  - analysis
+  - contextual
+  - inquiry
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers design and conduct ethnographic field studies
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers design and conduct ethnographic field studies
   — developing structured observation protocols, contextual inquiry guides, field
   note practices, and analysis frameworks that capture authentic human behavior in
   natural contexts. It supports both academic ethnography and applied commercial ethnography
   for product, service, and organizational design.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Understanding how people actually use a product or service in their natural environment
-  (not a lab)
-- Discovering unspoken needs, workarounds, and cultural practices that users cannot
-  or do not articulate in interviews
-- Designing for a context you are unfamiliar with and need to observe before designing
-  (healthcare, industrial settings, underserved communities)
-- Rapid usability testing with a defined prototype (use moderated usability testing)
+  - Ideal Scenarios:**
+  - Understanding how people actually use a product or service in their natural environment
+    (not a lab)
+  - Discovering unspoken needs, workarounds, and cultural practices that users cannot
+    or do not articulate in interviews
+  - Designing for a context you are unfamiliar with and need to observe before designing
+    (healthcare, industrial settings, underserved communities)
+  - Rapid usability testing with a defined prototype (use moderated usability testing)
 complexity: advanced
 interaction: multi-turn
 ---

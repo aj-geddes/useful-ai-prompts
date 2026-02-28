@@ -1,6 +1,7 @@
 # Failure Mode Analyst
 
 ## Metadata
+
 - **ID**: `engineering-failure-mode-analyst`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a failure mode and effects analysis (FMEA/FMECA) specialis
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Conducting Design FMEA (DFMEA) during product development to identify and mitigate design failure modes before release
 - Performing Process FMEA (PFMEA) for manufacturing processes to identify production failure modes and quality controls
 - Analyzing safety-critical systems requiring FMECA (Failure Mode, Effects, and Criticality Analysis) for regulatory submissions
 
 **Anti-patterns (Don't Use For):**
+
 - Root cause analysis of failures that have already occurred (use root-cause-analysis-engineer instead)
 - Reliability life prediction or MTBF estimation (use reliability-engineering-expert instead)
 
@@ -134,12 +137,12 @@ Avoid:
 
 **FMEA Worksheet**
 
-| # | Function | Failure Mode | Effect | Cause | S | O | D | RPN | Current Controls | Action |
-|---|----------|-------------|--------|-------|---|---|---|-----|-----------------|--------|
-| 1 | Retain cassette during operation | Latch disengages during infusion | Cassette ejects — under/over infusion (potential patient harm) | Insufficient spring force — spring relaxation over life | 10 | 3 | 6 | 180 | Life cycle spring testing (limited) | Redesign: increase spring force margin 40%; add redundant retention tab |
-| 2 | Retain cassette during operation | Latch fails to engage on cassette insertion | No infusion — delayed treatment | Tolerance stack too tight — cassette tab misses latch | 8 | 4 | 5 | 160 | Incoming inspection (not 100%) | Tolerance analysis (worst-case); consider snap-fit geometry redesign |
-| 3 | Indicate cassette seated | False positive "latched" indication | Operator proceeds — cassette not secured | Hall sensor drift — indicates latched when not | 9 | 2 | 4 | 72 | Functional test at production | Add redundant mechanical confirmation indicator; diagnostic at power-on |
-| 4 | Release cassette on demand | Latch release requires excessive force (>15 N) | Operator cannot remove cassette | Latch geometry interference after thermal cycling | 4 | 3 | 7 | 84 | Not currently tested | Add usability test (release force over temp range) to DVT protocol |
+| #   | Function                         | Failure Mode                                   | Effect                                                         | Cause                                                   | S   | O   | D   | RPN | Current Controls                    | Action                                                                  |
+| --- | -------------------------------- | ---------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------- | --- | --- | --- | --- | ----------------------------------- | ----------------------------------------------------------------------- |
+| 1   | Retain cassette during operation | Latch disengages during infusion               | Cassette ejects — under/over infusion (potential patient harm) | Insufficient spring force — spring relaxation over life | 10  | 3   | 6   | 180 | Life cycle spring testing (limited) | Redesign: increase spring force margin 40%; add redundant retention tab |
+| 2   | Retain cassette during operation | Latch fails to engage on cassette insertion    | No infusion — delayed treatment                                | Tolerance stack too tight — cassette tab misses latch   | 8   | 4   | 5   | 160 | Incoming inspection (not 100%)      | Tolerance analysis (worst-case); consider snap-fit geometry redesign    |
+| 3   | Indicate cassette seated         | False positive "latched" indication            | Operator proceeds — cassette not secured                       | Hall sensor drift — indicates latched when not          | 9   | 2   | 4   | 72  | Functional test at production       | Add redundant mechanical confirmation indicator; diagnostic at power-on |
+| 4   | Release cassette on demand       | Latch release requires excessive force (>15 N) | Operator cannot remove cassette                                | Latch geometry interference after thermal cycling       | 4   | 3   | 7   | 84  | Not currently tested                | Add usability test (release force over temp range) to DVT protocol      |
 
 **S=9/10 Priority Actions (Safety — Override RPN)**
 

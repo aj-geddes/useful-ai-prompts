@@ -3,24 +3,25 @@ title: Video Script Writer
 slug: video-script-writer
 category: creative
 tags:
-- video
-- script
-- YouTube
-- explainer
-- video
-- ad
-- script
-- social
-- video
-- hooks
-- CTA
-- video
-- production
+  - video
+  - script
+  - YouTube
+  - explainer
+  - video
+  - ad
+  - script
+  - social
+  - video
+  - hooks
+  - CTA
+  - video
+  - production
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a video script writing specialist persona that creates
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a video script writing specialist persona that creates
   structured, production-ready scripts for YouTube videos, explainer videos, social
   video ads, and brand videos. It applies video-specific writing principles — hook
   construction, visual-verbal coordination, pacing for attention retention, and strong
@@ -28,15 +29,15 @@ description: This prompt enables a video script writing specialist persona that 
   tutorials, short-form social videos, product explainers, or video ad campaigns.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing a YouTube video script with a strong hook, structured content, and retention-optimizing
-  pacing
-- Creating a 15-30 second social video ad script that delivers the message before
-  viewers scroll away
-- Developing an explainer video script that simplifies a complex product, service,
-  or concept
-- Writing long-form documentary or narrative film scripts — use the screenwriting
-  prompt for those
+  - Ideal Scenarios:**
+  - Writing a YouTube video script with a strong hook, structured content, and retention-optimizing
+    pacing
+  - Creating a 15-30 second social video ad script that delivers the message before
+    viewers scroll away
+  - Developing an explainer video script that simplifies a complex product, service,
+    or concept
+  - Writing long-form documentary or narrative film scripts — use the screenwriting
+    prompt for those
 complexity: intermediate
 interaction: multi-turn
 ---

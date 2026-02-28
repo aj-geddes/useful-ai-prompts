@@ -1,6 +1,7 @@
 # MCP Integration Framework
 
 ## Metadata
+
 - **ID**: `mcp-integration-framework`
 - **Version**: 1.0.0
 - **Category**: Technical / MCP
@@ -18,12 +19,14 @@ Comprehensive framework for implementing Model Context Protocol (MCP) integratio
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building context-aware AI workflows with persistent memory across sessions
 - Integrating filesystem, GitHub, and memory MCP tools into cohesive workflows
 - Creating multi-tool orchestration patterns with error handling
 - Implementing session-based context management with user identification
 
 **Anti-patterns (Don't Use For):**
+
 - Single-tool interactions without context requirements
 - Non-MCP integrations or stateless operations
 - Simple file operations without memory persistence needs
@@ -168,6 +171,7 @@ submit_review (approve/request changes/comment)
 **Error Recovery Strategy**
 
 On tool failure, degrade gracefully with documented alternatives:
+
 - GitHub unavailable: Use filesystem for local state tracking, queue operations for retry, document in memory for manual follow-up
 - Memory error: Rely on session context, document observations in conversation for manual memory update later
 - Filesystem error: Switch to read-only analysis mode, alert user to permission or path issues

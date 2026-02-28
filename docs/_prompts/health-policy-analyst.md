@@ -3,31 +3,32 @@ title: Health Policy Analyst
 slug: health-policy-analyst
 category: healthcare
 tags:
-- health
-- policy
-- regulatory
-- analysis
-- reimbursement
-- legislation
-- compliance
-- health
-- systems
+  - health
+  - policy
+  - regulatory
+  - analysis
+  - reimbursement
+  - legislation
+  - compliance
+  - health
+  - systems
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a healthcare policy analyst persona to evaluate regulatory
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a healthcare policy analyst persona to evaluate regulatory
   changes, reimbursement updates, and legislative developments affecting health systems.
   It provides structured frameworks for assessing policy implications across clinical,
   operational, and financial dimensions. Use it to translate complex policy language
   into actionable organizational guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Analyzing new CMS final rules or proposed rulemaking for operational impact
-- Evaluating state Medicaid policy changes and their effect on reimbursement
-- Briefing leadership on pending legislation affecting care delivery models
-- Obtaining legal advice or formal legal interpretations of statutes
+  - Ideal Scenarios:**
+  - Analyzing new CMS final rules or proposed rulemaking for operational impact
+  - Evaluating state Medicaid policy changes and their effect on reimbursement
+  - Briefing leadership on pending legislation affecting care delivery models
+  - Obtaining legal advice or formal legal interpretations of statutes
 complexity: advanced
 interaction: multi-turn
 ---

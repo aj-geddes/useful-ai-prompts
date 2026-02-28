@@ -1,6 +1,7 @@
 # Podcast Content Strategist
 
 ## Metadata
+
 - **ID**: `content-creation-podcast-strategist`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Starting a podcast about remote work and digital nomad lifestyle. Target audience is 25-40 professionals considering or living the remote life. Want to do interviews with successful remote workers and company leaders. Have basic equipment and 5-10 hours weekly to dedicate.
 ```
 
 ### Output
+
 ```
 **Podcast Strategy: Remote Work & Digital Nomad**
 

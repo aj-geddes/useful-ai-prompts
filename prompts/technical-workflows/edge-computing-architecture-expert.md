@@ -1,6 +1,7 @@
 # Edge Computing Architecture Expert
 
 ## Metadata
+
 - **ID**: `edge-computing-architecture-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Combines Edge Computing Architect and Distributed Systems Manager expertise to d
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing edge computing architectures for IoT or industrial deployments
 - Reducing latency for real-time processing requirements (<100ms)
 - Building distributed systems that operate during network partitions
 - Optimizing bandwidth costs with local data aggregation
 
 **Anti-patterns (Don't Use For):**
+
 - Centralized cloud architectures without edge requirements
 - Simple IoT data collection without processing needs
 - Pure cloud computing without latency constraints
@@ -114,11 +117,11 @@ We have a manufacturing plant with 500+ sensors generating 10GB/hour of data. Ne
 
 Three-tier topology optimized for manufacturing environment:
 
-| Tier | Function | Hardware | Quantity |
-|------|----------|----------|----------|
-| Tier 1 | Sensor gateways | Industrial gateway (ARM) | 10 |
-| Tier 2 | Edge servers | Industrial PC with GPU | 5 |
-| Tier 3 | Cloud | AWS (existing) | - |
+| Tier   | Function        | Hardware                 | Quantity |
+| ------ | --------------- | ------------------------ | -------- |
+| Tier 1 | Sensor gateways | Industrial gateway (ARM) | 10       |
+| Tier 2 | Edge servers    | Industrial PC with GPU   | 5        |
+| Tier 3 | Cloud           | AWS (existing)           | -        |
 
 ```
 [500 Sensors] → [10 Gateways] → [5 Edge Servers] → [Cloud Data Lake]
@@ -149,20 +152,21 @@ Software Stack:
 
 **Processing Distribution Matrix**
 
-| Processing Task | Location | Latency | Rationale |
-|-----------------|----------|---------|-----------|
-| Anomaly detection | Edge | <10ms | Safety-critical, real-time |
-| Alert triggering | Edge | <10ms | Must work during outages |
-| Data aggregation | Edge | Real-time | Reduce bandwidth 99% |
-| 1-minute rollups | Edge | Batch | Pre-aggregated for cloud |
-| ML inference | Edge | <50ms | Pre-trained models deployed |
-| Model training | Cloud | Batch | Requires historical data |
-| Long-term storage | Cloud | Async | Cost-effective archival |
-| Dashboard/reporting | Cloud | On-demand | Business intelligence |
+| Processing Task     | Location | Latency   | Rationale                   |
+| ------------------- | -------- | --------- | --------------------------- |
+| Anomaly detection   | Edge     | <10ms     | Safety-critical, real-time  |
+| Alert triggering    | Edge     | <10ms     | Must work during outages    |
+| Data aggregation    | Edge     | Real-time | Reduce bandwidth 99%        |
+| 1-minute rollups    | Edge     | Batch     | Pre-aggregated for cloud    |
+| ML inference        | Edge     | <50ms     | Pre-trained models deployed |
+| Model training      | Cloud    | Batch     | Requires historical data    |
+| Long-term storage   | Cloud    | Async     | Cost-effective archival     |
+| Dashboard/reporting | Cloud    | On-demand | Business intelligence       |
 
 **Edge-to-Cloud Synchronization**
 
 Normal operation (connected):
+
 ```
 Edge → Cloud sync every 60 seconds:
 - Aggregated metrics (1-minute rollups)
@@ -171,6 +175,7 @@ Edge → Cloud sync every 60 seconds:
 ```
 
 Offline operation (disconnected):
+
 ```
 - Continue anomaly detection and alerting locally
 - Buffer data to local NVMe (7-day capacity at full resolution)
@@ -179,6 +184,7 @@ Offline operation (disconnected):
 ```
 
 Sync recovery protocol:
+
 1. Connectivity restored → authenticate with cloud
 2. Transmit queued critical events first
 3. Background upload of buffered aggregates
@@ -187,16 +193,19 @@ Sync recovery protocol:
 **Security Architecture**
 
 Device identity:
+
 - TPM-based device attestation for edge servers
 - X.509 certificates per device with automatic rotation
 - Mutual TLS for all edge-to-cloud communication
 
 Network security:
+
 - Edge nodes in isolated VLAN from corporate network
 - No inbound connections from internet (outbound only)
 - Cellular backup uses private APN
 
 Data protection:
+
 - Encryption at rest (LUKS full-disk encryption)
 - Encryption in transit (TLS 1.3)
 - Sensitive data filtered at edge (no PII to cloud)
@@ -204,12 +213,14 @@ Data protection:
 **Fleet Management**
 
 Centralized management via AWS IoT Greengrass or Azure IoT Edge:
+
 - Configuration management: GitOps with Flux
 - Software updates: Atomic A/B partition updates with rollback
 - Monitoring: Prometheus metrics pushed to cloud
 - Alerting: Edge health alerts to operations team
 
 Update procedure:
+
 ```
 1. Deploy to canary edge node (1 of 5)
 2. Validate health metrics for 1 hour
@@ -220,22 +231,22 @@ Update procedure:
 
 **Expected Results**
 
-| Metric | Before (Cloud-only) | After (Edge) | Improvement |
-|--------|---------------------|--------------|-------------|
-| Anomaly detection latency | 200ms | <10ms | 95% reduction |
-| Alert reliability during outage | 0% | 100% | Full availability |
-| Bandwidth to cloud | 10GB/hour | 100MB/hour | 99% reduction |
-| Bandwidth cost | $50K/year | $2K/year | 96% savings |
-| Data retention during outage | 0 | 7 days | Offline capability |
+| Metric                          | Before (Cloud-only) | After (Edge) | Improvement        |
+| ------------------------------- | ------------------- | ------------ | ------------------ |
+| Anomaly detection latency       | 200ms               | <10ms        | 95% reduction      |
+| Alert reliability during outage | 0%                  | 100%         | Full availability  |
+| Bandwidth to cloud              | 10GB/hour           | 100MB/hour   | 99% reduction      |
+| Bandwidth cost                  | $50K/year           | $2K/year     | 96% savings        |
+| Data retention during outage    | 0                   | 7 days       | Offline capability |
 
 **Implementation Timeline**
 
-| Phase | Duration | Deliverables |
-|-------|----------|--------------|
-| Phase 1: Pilot | Weeks 1-4 | 1 production line (1 edge server, 100 sensors) |
-| Phase 2: Validation | Weeks 5-8 | Validate latency, reliability, sync patterns |
-| Phase 3: Rollout | Weeks 9-14 | Deploy to remaining 4 production lines |
-| Phase 4: Optimization | Ongoing | Model updates, performance tuning |
+| Phase                 | Duration   | Deliverables                                   |
+| --------------------- | ---------- | ---------------------------------------------- |
+| Phase 1: Pilot        | Weeks 1-4  | 1 production line (1 edge server, 100 sensors) |
+| Phase 2: Validation   | Weeks 5-8  | Validate latency, reliability, sync patterns   |
+| Phase 3: Rollout      | Weeks 9-14 | Deploy to remaining 4 production lines         |
+| Phase 4: Optimization | Ongoing    | Model updates, performance tuning              |
 
 ---
 

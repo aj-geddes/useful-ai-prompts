@@ -1,6 +1,7 @@
 # Resource Allocation Decisions Expert
 
 ## Metadata
+
 - **ID**: `decision-resource-allocation`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Operations
@@ -18,6 +19,7 @@ Optimize resource allocation decisions by analyzing capacity, demand, priorities
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Distributing team members across projects
 - Allocating shared resources (equipment, facilities, budget)
 - Planning capacity for upcoming period
@@ -25,6 +27,7 @@ Optimize resource allocation decisions by analyzing capacity, demand, priorities
 - Matrix organization resource conflicts
 
 **Anti-patterns (when NOT to use):**
+
 - Individual task assignment within a project
 - Hiring decisions (use Hiring Decision Framework)
 - Budget allocation (use Budget Allocation Expert)
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I have 12 developers for Q1. Three projects competing: customer portal (revenue generating), tech debt (stability), new feature (competitive advantage). Also need 20% time for maintenance and support."
 
 ### Output
@@ -106,6 +110,7 @@ Avoid:
 **Resource Allocation Strategy: Q1 Development Team**
 
 **Executive Summary**
+
 - Team: 12 developers (480 person-weeks Q1)
 - Utilization target: 85% (408 productive person-weeks)
 - Allocation approach: Priority-weighted with flexibility buffer
@@ -137,38 +142,45 @@ Avoid:
 | Maintenance | 1.5 dev | SLA compliance | Operational |
 
 **Critical Success Factors**
+
 - Portal: Must have 3 developers minimum to meet deadline
 - Tech Debt: Cannot drop below 2 developers (stability risk)
 - New Feature: 3 developers required for Q2 launch timeline
 
 **Contingency Scenarios**
 
-*If Portal needs more resources:*
+_If Portal needs more resources:_
+
 - Week 1-4: Pull from Flex Pool (+1 dev)
 - Week 5+: Temporarily reduce New Feature (-1 dev, delay 2 weeks acceptable)
 
-*If critical production issue:*
+_If critical production issue:_
+
 - Activate Flex Pool immediately
 - If >1 week: Pause New Feature, all-hands on issue
 
-*If developer leaves:*
+_If developer leaves:_
+
 - Backfill from Flex Pool
 - Reduce lowest-priority project proportionally
 - Hire contractor for Maintenance if needed
 
 **Implementation Plan**
+
 - Week 1: Communicate allocations, team assignments
 - Week 2: Project kickoffs with resource confirmation
 - Week 4: First checkpoint, minor adjustments
 - Week 8: Mid-quarter review, rebalance if needed
 
 **Performance Metrics**
+
 - Utilization: Target 80-85%
 - Velocity by project: Track story points delivered
 - On-time delivery: Portal milestones, Feature timeline
 - Stability: Tech debt metrics (incidents, MTTR)
 
 **Rebalancing Triggers**
+
 - Project >2 weeks behind schedule
 - Utilization <75% or >90% for 2+ weeks
 - Priority shift from leadership

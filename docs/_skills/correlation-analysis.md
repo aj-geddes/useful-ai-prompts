@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Measure relationships between variables using correlation coefficients,
+date: "2025-01-01"
+description:
+  Measure relationships between variables using correlation coefficients,
   correlation matrices, and association tests for correlation measurement, relationship
   analysis, and multicollinearity detection
 layout: skill
 slug: correlation-analysis
 tags:
-- testing
+  - testing
 title: Correlation Analysis
 ---
 

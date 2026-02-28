@@ -1,6 +1,7 @@
 # Training Material Development Expert
 
 ## Metadata
+
 - **ID**: `learning-training-material-development`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Creates effective training materials that enhance learning and retention for courses, workshops, or self-study resources. Balances theory with practice while maintaining learner engagement and driving real skill development through proven instructional design methodologies.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Developing corporate training programs for employee skill development
 - Creating workshop materials for in-person or virtual delivery
 - Building e-learning or self-paced courses for distributed teams
@@ -23,6 +27,7 @@ Creates effective training materials that enhance learning and retention for cou
 - Structuring blended learning curricula combining multiple modalities
 
 **Anti-patterns (when NOT to use):**
+
 - Individual skill development plans (use Skill Acquisition Expert)
 - Tutorial/how-to content for specific tasks (use Tutorial Creation Expert)
 - Academic curriculum design for formal education
@@ -107,39 +112,45 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Creating customer service training for retail staff. Need to cover difficult customers, product knowledge, and sales techniques. 2-day in-person workshop for groups of 20."
 
 ### Output
+
 **Training Material Development Plan: Retail Customer Excellence**
 
 **1. Content Architecture (2 days, 14 hours total)**
 
-| Module | Duration | Focus |
-|--------|----------|-------|
-| Day 1 AM: Foundations | 3 hrs | Customer psychology, service mindset, first impressions |
-| Day 1 PM: Difficult Situations | 3.5 hrs | De-escalation, complaint handling, saying no gracefully |
-| Day 2 AM: Product Mastery | 3 hrs | Knowledge frameworks, feature-benefit translation, competitive positioning |
-| Day 2 PM: Sales Excellence | 3.5 hrs | Needs discovery, recommendation techniques, closing with integrity |
+| Module                         | Duration | Focus                                                                      |
+| ------------------------------ | -------- | -------------------------------------------------------------------------- |
+| Day 1 AM: Foundations          | 3 hrs    | Customer psychology, service mindset, first impressions                    |
+| Day 1 PM: Difficult Situations | 3.5 hrs  | De-escalation, complaint handling, saying no gracefully                    |
+| Day 2 AM: Product Mastery      | 3 hrs    | Knowledge frameworks, feature-benefit translation, competitive positioning |
+| Day 2 PM: Sales Excellence     | 3.5 hrs  | Needs discovery, recommendation techniques, closing with integrity         |
 
 Learning objectives by module:
+
 - Foundations: Identify customer emotional states and apply appropriate response strategies
 - Difficult Situations: Demonstrate 3 de-escalation techniques in role-play scenarios
 - Product Mastery: Translate technical features into customer benefits for top 10 products
 - Sales Excellence: Execute complete consultative sales conversation with 80% checklist completion
 
 **2. Core Materials**
+
 - Facilitator guide: Detailed script with timing, transition cues, answer keys, and common participant questions
 - Participant workbook: 40 pages with note spaces, exercise sheets, quick reference cards, and self-assessment tools
 - Slide deck: 120 slides (max 8 words per slide, heavy on visuals and scenarios)
 - Video library: 6 example interactions (3 excellent, 3 showing common mistakes for analysis)
 
 **3. Engagement Elements**
+
 - "Customer Carousel": Groups rotate through 4 stations with different customer types (15 min each)
 - Product Knowledge Game: Team quiz competition with buzzer system, points for speed and accuracy
 - Video Analysis: Watch clips, identify techniques, discuss alternative approaches in small groups
 - "What Would You Do?": Real scenarios from the company's customer feedback analyzed in pairs
 
 **4. Practice Resources**
+
 - Role-play cards: 20 scenarios with customer personas, hidden objectives, and escalation triggers
 - Observation checklists: Peer feedback forms for role-play exercises with specific behavior criteria
 - Product challenge sheets: Translate features to benefits under time pressure
@@ -147,6 +158,7 @@ Learning objectives by module:
 - Assessment rubric: Behaviorally anchored rating scale for all practice activities
 
 **5. Support Materials**
+
 - Pocket reference cards: De-escalation steps, sales conversation framework, common objection responses
 - Manager briefing guide: How to reinforce training on the floor, coaching conversation starters
 - 30-day follow-up email series: Weekly tips, micro-challenges, and reflection prompts
@@ -156,6 +168,7 @@ Learning objectives by module:
 ---
 
 ## Related Prompts
+
 - [Tutorial Creation Expert](tutorial-creation-expert.md) - Step-by-step how-to guides
 - [Skill Acquisition Expert](skill-acquisition-expert.md) - Individual skill development plans
 - [Change Management Expert](../management-leadership/change-management-expert.md) - Organizational change support

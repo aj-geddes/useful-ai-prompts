@@ -22,24 +22,27 @@ Create comprehensive operational runbooks that provide step-by-step procedures f
 
 ## Incident Response Runbook Template
 
-```markdown
+````markdown
 # Incident Response Runbook
 
 ## Quick Reference
 
 **Severity Levels:**
+
 - P0 (Critical): Complete outage, data loss, security breach
 - P1 (High): Major feature down, significant user impact
 - P2 (Medium): Minor feature degradation, limited user impact
 - P3 (Low): Cosmetic issues, minimal user impact
 
 **Response Times:**
+
 - P0: Immediate (24/7)
 - P1: 15 minutes (business hours), 1 hour (after hours)
 - P2: 4 hours (business hours)
 - P3: Next business day
 
 **Escalation Contacts:**
+
 - On-call Engineer: PagerDuty rotation
 - Engineering Manager: +1-555-0100
 - VP Engineering: +1-555-0101
@@ -60,6 +63,7 @@ Create comprehensive operational runbooks that provide step-by-step procedures f
 ## Service Down
 
 ### Symptoms
+
 - Health check endpoint returning 500 errors
 - Users unable to access application
 - Load balancer showing all instances unhealthy
@@ -74,14 +78,17 @@ Create comprehensive operational runbooks that provide step-by-step procedures f
    # Acknowledge in PagerDuty
    # Post in #incidents Slack channel
    ```
+````
 
 2. **Create incident channel**
+
    ```
    Create Slack channel: #incident-YYYY-MM-DD-service-down
    Post incident details and status updates
    ```
 
 3. **Assess impact**
+
    ```bash
    # Check service status
    kubectl get pods -n production
@@ -252,6 +259,7 @@ kubectl logs deployment/api -n production --tail=100 | grep -i error
 ### Communication
 
 **Initial Update (within 5 minutes):**
+
 ```
 🚨 INCIDENT: Service Down
 
@@ -267,6 +275,7 @@ Next update in 15 minutes.
 ```
 
 **Progress Update (every 15 minutes):**
+
 ```
 🔍 UPDATE: Service Down
 
@@ -279,6 +288,7 @@ We have identified the issue and are implementing a fix.
 ```
 
 **Resolution Update:**
+
 ```
 ✅ RESOLVED: Service Down
 
@@ -312,6 +322,7 @@ and will conduct a post-mortem to prevent future occurrences.
 ### High Connection Count
 
 **Symptoms:**
+
 - Database rejecting new connections
 - Error: "too many connections"
 - Alert: `db_connections_high`
@@ -341,6 +352,7 @@ kubectl rollout restart deployment/api -n production
 ### Slow Queries
 
 **Symptoms:**
+
 - API response times > 5 seconds
 - Database CPU at 100%
 - Alert: `slow_query_detected`
@@ -379,6 +391,7 @@ SELECT pg_terminate_backend(12345);  -- Replace with actual PID
 ## High CPU/Memory Usage
 
 ### Symptoms
+
 - Pods being OOMKilled
 - Response times increasing
 - Alert: `high_memory_usage`, `high_cpu_usage`
@@ -504,6 +517,7 @@ aws cloudwatch get-metric-statistics ...
 # PagerDuty: https://example.pagerduty.com
 # Status Page: https://status.example.com
 ```
+
 ```
 
 ## Best Practices
@@ -535,3 +549,4 @@ aws cloudwatch get-metric-statistics ...
 - [PagerDuty Incident Response](https://response.pagerduty.com/)
 - [Google SRE Book](https://sre.google/books/)
 - [Atlassian Incident Handbook](https://www.atlassian.com/incident-management/handbook)
+```

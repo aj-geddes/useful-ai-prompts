@@ -1,6 +1,7 @@
 # Medical Research Protocol Expert
 
 ## Metadata
+
 - **ID**: `research-medical-protocol`
 - **Version**: 1.0.0
 - **Category**: Research/Healthcare
@@ -18,6 +19,7 @@ Design comprehensive medical research protocols including study design, ethical 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing clinical trials (Phase 1-4) or observational cohort studies
 - Preparing IRB/ethics committee submissions requiring protocol documentation
 - Developing statistical analysis plans and data management frameworks
@@ -25,6 +27,7 @@ Design comprehensive medical research protocols including study design, ethical 
 - Creating safety monitoring and adverse event reporting procedures
 
 **Anti-Patterns (Don't Use For):**
+
 - Individual medical advice, diagnosis, or treatment recommendations
 - Post-market surveillance without formal protocol context
 - Laboratory or pre-clinical research protocols (different requirements)
@@ -111,23 +114,25 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're designing a Phase 2 trial for a novel oral diabetes medication (DPP-4 inhibitor class). We want to test efficacy in reducing HbA1c compared to placebo in type 2 diabetics not adequately controlled on metformin alone. Target enrollment is 200 patients, and we need to support dose selection for Phase 3. US sites only."
 
 ### Output
+
 **Clinical Protocol: Phase 2 Type 2 Diabetes Trial**
 
 **Protocol Synopsis**
 
-| Element | Specification |
-|---------|---------------|
-| Title | A Randomized, Double-Blind, Placebo-Controlled, Dose-Ranging Study of [DRUG] in Subjects with Type 2 Diabetes Mellitus Inadequately Controlled on Metformin |
-| Phase | 2 |
-| Design | Parallel-group, 1:1:1:1 randomization (3 doses + placebo) |
-| Population | T2DM, HbA1c 7.5-10.0%, stable metformin ≥8 weeks |
-| Duration | 24 weeks treatment + 4 weeks safety follow-up |
-| Sample Size | 200 (50 per arm) |
-| Primary Endpoint | Change from baseline in HbA1c at Week 24 |
-| Regulatory Pathway | FDA IND (21 CFR 312) |
+| Element            | Specification                                                                                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title              | A Randomized, Double-Blind, Placebo-Controlled, Dose-Ranging Study of [DRUG] in Subjects with Type 2 Diabetes Mellitus Inadequately Controlled on Metformin |
+| Phase              | 2                                                                                                                                                           |
+| Design             | Parallel-group, 1:1:1:1 randomization (3 doses + placebo)                                                                                                   |
+| Population         | T2DM, HbA1c 7.5-10.0%, stable metformin ≥8 weeks                                                                                                            |
+| Duration           | 24 weeks treatment + 4 weeks safety follow-up                                                                                                               |
+| Sample Size        | 200 (50 per arm)                                                                                                                                            |
+| Primary Endpoint   | Change from baseline in HbA1c at Week 24                                                                                                                    |
+| Regulatory Pathway | FDA IND (21 CFR 312)                                                                                                                                        |
 
 ---
 
@@ -142,6 +147,7 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 **Primary Objective**: Evaluate efficacy of [DRUG] compared to placebo on glycemic control as measured by HbA1c reduction
 
 **Secondary Objectives**:
+
 - Characterize dose-response relationship across three dose levels
 - Evaluate effect on fasting plasma glucose (FPG)
 - Assess safety and tolerability profile
@@ -152,6 +158,7 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 **Study Population**
 
 **Key Inclusion Criteria**:
+
 1. Type 2 diabetes mellitus diagnosed ≥6 months prior to screening
 2. HbA1c 7.5-10.0% at screening visit
 3. Stable metformin dose ≥1500 mg/day for ≥8 weeks prior to screening
@@ -160,6 +167,7 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 6. eGFR ≥60 mL/min/1.73m2 (CKD-EPI)
 
 **Key Exclusion Criteria**:
+
 1. Type 1 diabetes or history of diabetic ketoacidosis
 2. History of pancreatitis
 3. Cardiovascular event (MI, stroke, hospitalization for CHF) within 3 months
@@ -171,15 +179,15 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 
 **Sample Size Justification**
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Expected HbA1c difference (active vs. placebo) | 0.5% | Class effect data |
-| Standard deviation | 1.0% | Prior DPP-4 trials |
-| Alpha | 0.05 (two-sided) | - |
-| Power | 80% | - |
-| Calculated N per arm | 64 | - |
-| With 20% dropout | 80 per arm | Conservative |
-| Protocol specification | 50 per arm | Dose-ranging design; Phase 3 pivotal will be larger |
+| Parameter                                      | Value            | Source                                              |
+| ---------------------------------------------- | ---------------- | --------------------------------------------------- |
+| Expected HbA1c difference (active vs. placebo) | 0.5%             | Class effect data                                   |
+| Standard deviation                             | 1.0%             | Prior DPP-4 trials                                  |
+| Alpha                                          | 0.05 (two-sided) | -                                                   |
+| Power                                          | 80%              | -                                                   |
+| Calculated N per arm                           | 64               | -                                                   |
+| With 20% dropout                               | 80 per arm       | Conservative                                        |
+| Protocol specification                         | 50 per arm       | Dose-ranging design; Phase 3 pivotal will be larger |
 
 **Dose Selection Rationale**: Three active doses (5mg, 15mg, 30mg) selected based on Phase 1 PK/PD modeling to span ED50 to ED90 range, enabling characterization of dose-response for Phase 3 dose selection.
 
@@ -190,12 +198,14 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 **Adverse Event Definitions**: Per ICH E2A guidelines
 
 **DSMB Composition**:
+
 - Chair: Independent diabetologist
 - Members: Biostatistician, cardiologist, clinical pharmacologist
 - Review schedule: 50%, 75% enrollment; any time upon safety signal
 
 **Stopping Rules**:
-- >3 severe hypoglycemia events per 100 patient-years in any arm
+
+- > 3 severe hypoglycemia events per 100 patient-years in any arm
 - ≥2 adjudicated acute pancreatitis events
 - Imbalance in CV events (MACE) favoring placebo by >2 events
 
@@ -206,6 +216,7 @@ Type 2 diabetes affects 37 million Americans with inadequate glycemic control re
 **Regulatory Pathway**
 
 FDA IND submission required prior to first patient enrollment. Pre-IND meeting recommended to confirm:
+
 - Acceptability of HbA1c as primary endpoint
 - Cardiovascular safety assessment approach for Phase 3
 - Dose selection strategy
@@ -215,6 +226,7 @@ Protocol designed for seamless Phase 3 expansion following positive results.
 ---
 
 ## Related Prompts
+
 - [Scientific Inquiry Expert](scientific-inquiry-expert.md) - Experimental design principles
 - [Literature Review Expert](literature-review-expert.md) - Background research synthesis
 - [Technology Assessment Expert](technology-assessment-expert.md) - Medical device evaluation

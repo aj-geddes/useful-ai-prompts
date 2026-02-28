@@ -1,6 +1,7 @@
 # Sustainable Supply Chain Management Expert
 
 ## Metadata
+
 - **ID**: `sustainable-supply-chain-expert`
 - **Version**: 1.1.0
 - **Category**: Supply Chain
@@ -18,6 +19,7 @@ Provides comprehensive guidance for building sustainable supply chains through E
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing sustainability strategies for supply chain operations with carbon reduction targets
 - Implementing ESG reporting and compliance programs (CSRD, CDP, TCFD)
 - Building circular economy initiatives including packaging, recycling, and waste reduction
@@ -25,6 +27,7 @@ Provides comprehensive guidance for building sustainable supply chains through E
 - Preparing for emerging supply chain due diligence regulations
 
 **Anti-patterns (when not to use):**
+
 - General environmental consulting outside supply chain scope
 - Facility-level sustainability without supplier and logistics focus
 - Non-supply chain ESG initiatives (workplace, governance)
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Our consumer goods supply chain has a carbon neutral 2030 commitment but currently emits 2.5M tons CO2e annually (85% Scope 3). We have 2,000 suppliers globally with limited visibility into their sustainability practices. Facing pressure from investors for CSRD compliance and customers for sustainable products. Budget: $15M over 3 years for sustainability transformation.
 
 ### Output
@@ -119,6 +123,7 @@ This sustainability transformation program addresses your carbon neutral 2030 co
 **Phase 1: Assessment and Discovery (Weeks 1-10)**
 
 Deliverables:
+
 - Scope 3 emissions mapping identifying top 100 suppliers representing 75% of supply chain carbon footprint, with 40 suppliers accounting for 50% of emissions
 - Supplier sustainability assessment revealing 35% of suppliers with no formal sustainability programs and 60% without carbon reduction targets
 - Material flow analysis identifying 5 high-impact product categories for circular economy prioritization (packaging 35% of footprint, raw materials 40%, logistics 15%)
@@ -127,6 +132,7 @@ Deliverables:
 **Phase 2: Strategic Design (Weeks 11-18)**
 
 Sustainability strategy architecture:
+
 - Science-based targets with supplier-specific reduction pathways: 4.2% annual reduction trajectory
 - Tiered supplier engagement program:
   - Intensive partnership (40 suppliers, 50% emissions): Joint reduction roadmaps, co-investment in solutions
@@ -138,6 +144,7 @@ Sustainability strategy architecture:
 **Phase 3: Implementation (Months 5-24)**
 
 Execution priorities:
+
 - Deploy supplier sustainability platform with carbon accounting, target tracking, and improvement planning modules
 - Launch supplier capability development program including training (500 suppliers in year 1), tools (calculator templates, action guides), and incentives (preferred supplier status, volume commitments)
 - Implement circular economy initiatives: 25% recycled content in primary packaging, 3 product take-back pilots, zero-waste manufacturing at 2 facilities
@@ -146,6 +153,7 @@ Execution priorities:
 **Phase 4: Optimization (Months 25-36)**
 
 Continuous improvement framework:
+
 - Advanced analytics for emissions hotspot identification and reduction optimization across supplier network
 - Supplier innovation partnerships for low-carbon materials and process innovations with co-development agreements
 - Continuous improvement cycles with annual target progression toward 2030 neutrality
@@ -153,12 +161,14 @@ Continuous improvement framework:
 - Best practice scaling from pilot successes to full portfolio
 
 **Investment Allocation ($15M over 3 years)**
+
 - Technology and data infrastructure: $5M (33%) - Sustainability platform, carbon accounting, reporting automation
 - Supplier development and engagement: $6M (40%) - Training programs, capability building, innovation partnerships
 - Circular economy initiatives: $3M (20%) - Recycled content development, take-back infrastructure, pilot programs
 - Reporting and assurance: $1M (7%) - External verification, CSRD preparation, stakeholder communication
 
 **Projected Impact**
+
 - Carbon reduction: 1.25M tons CO2e by 2028 (50% reduction)
 - Supplier coverage: 85% of Scope 3 emissions under active management
 - Circular economy: 25% recycled content, 15% waste reduction

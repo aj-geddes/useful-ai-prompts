@@ -1,13 +1,14 @@
 ---
 category: monitoring-observability
-date: '2025-01-01'
-description: Create professional Grafana dashboards with visualizations, templating,
+date: "2025-01-01"
+description:
+  Create professional Grafana dashboards with visualizations, templating,
   and alerts. Use when building monitoring dashboards, creating data visualizations,
   or setting up operational insights.
 layout: skill
 slug: grafana-dashboard
 tags:
-- data
+  - data
 title: grafana-dashboard
 ---
 
@@ -57,7 +58,7 @@ Design and implement comprehensive Grafana dashboards with multiple visualizatio
         "id": 1,
         "title": "Request Rate",
         "type": "graph",
-        "gridPos": {"x": 0, "y": 0, "w": 12, "h": 8},
+        "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
         "targets": [
           {
             "expr": "sum(rate(requests_total{service=\"$service\"}[5m]))",
@@ -75,7 +76,7 @@ Design and implement comprehensive Grafana dashboards with multiple visualizatio
         "id": 2,
         "title": "Error Rate",
         "type": "graph",
-        "gridPos": {"x": 12, "y": 0, "w": 12, "h": 8},
+        "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
         "targets": [
           {
             "expr": "sum(rate(requests_total{status_code=~\"5..\",service=\"$service\"}[5m])) / sum(rate(requests_total{service=\"$service\"}[5m]))",
@@ -87,7 +88,7 @@ Design and implement comprehensive Grafana dashboards with multiple visualizatio
         "id": 3,
         "title": "Response Latency (p95)",
         "type": "graph",
-        "gridPos": {"x": 0, "y": 8, "w": 12, "h": 8},
+        "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
         "targets": [
           {
             "expr": "histogram_quantile(0.95, rate(request_duration_seconds_bucket{service=\"$service\"}[5m]))",
@@ -99,7 +100,7 @@ Design and implement comprehensive Grafana dashboards with multiple visualizatio
         "id": 4,
         "title": "Active Connections",
         "type": "stat",
-        "gridPos": {"x": 12, "y": 8, "w": 12, "h": 8},
+        "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
         "targets": [
           {
             "expr": "sum(active_connections{service=\"$service\"})"
@@ -118,9 +119,9 @@ Design and implement comprehensive Grafana dashboards with multiple visualizatio
 apiVersion: 1
 
 providers:
-  - name: 'Dashboards'
+  - name: "Dashboards"
     orgId: 1
-    folder: 'Production'
+    folder: "Production"
     type: file
     disableDeletion: false
     updateIntervalSeconds: 10
@@ -141,7 +142,7 @@ datasources:
     isDefault: true
     editable: true
     jsonData:
-      timeInterval: '30s'
+      timeInterval: "30s"
 ```
 
 ### 3. **Grafana Alert Configuration**
@@ -168,7 +169,7 @@ groups:
                   params: [A, 5m, now]
         for: 5m
         annotations:
-          description: 'Error rate is {{ $values.A }}'
+          description: "Error rate is {{ $values.A }}"
         labels:
           severity: critical
           team: platform
@@ -178,7 +179,7 @@ groups:
 
 ```javascript
 // grafana-api-client.js
-const axios = require('axios');
+const axios = require("axios");
 
 class GrafanaClient {
   constructor(baseUrl, apiKey) {
@@ -186,16 +187,16 @@ class GrafanaClient {
     this.client = axios.create({
       baseURL: baseUrl,
       headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
-      }
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
     });
   }
 
   async createDashboard(dashboard) {
-    const response = await this.client.post('/api/dashboards/db', {
+    const response = await this.client.post("/api/dashboards/db", {
       dashboard: dashboard,
-      overwrite: true
+      overwrite: true,
     });
     return response.data;
   }
@@ -206,12 +207,12 @@ class GrafanaClient {
   }
 
   async createAlert(alert) {
-    const response = await this.client.post('/api/alerts', alert);
+    const response = await this.client.post("/api/alerts", alert);
     return response.data;
   }
 
   async listDashboards() {
-    const response = await this.client.get('/api/search?query=');
+    const response = await this.client.get("/api/search?query=");
     return response.data;
   }
 }
@@ -222,7 +223,7 @@ module.exports = GrafanaClient;
 ### 5. **Docker Compose Setup**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 services:
   grafana:
     image: grafana/grafana:latest
@@ -230,7 +231,7 @@ services:
       - "3000:3000"
     environment:
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
-      GF_USERS_ALLOW_SIGN_UP: 'false'
+      GF_USERS_ALLOW_SIGN_UP: "false"
       GF_SERVER_ROOT_URL: http://grafana.example.com
     volumes:
       - ./provisioning:/etc/grafana/provisioning
@@ -254,6 +255,7 @@ volumes:
 ## Best Practices
 
 ### ✅ DO
+
 - Use meaningful dashboard titles
 - Add documentation panels
 - Implement row-based organization
@@ -265,6 +267,7 @@ volumes:
 - Version control dashboard JSON
 
 ### ❌ DON'T
+
 - Overload dashboards with too many panels
 - Mix different time ranges without justification
 - Create without runbooks

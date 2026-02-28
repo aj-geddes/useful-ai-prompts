@@ -1,6 +1,7 @@
 # CI/CD Pipeline Optimizer
 
 ## Metadata
+
 - **ID**: `cicd-pipeline-optimizer`
 - **Version**: 1.1.0
 - **Category**: Technical/DevOps
@@ -18,6 +19,7 @@ Designs and optimizes CI/CD pipelines for speed, reliability, and excellent deve
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reducing build and deployment times that slow down development
 - Migrating between CI/CD platforms (Jenkins to GitHub Actions, etc.)
 - Implementing quality gates with automated testing at each stage
@@ -25,6 +27,7 @@ Designs and optimizes CI/CD pipelines for speed, reliability, and excellent deve
 - Reducing CI costs through optimization
 
 **Anti-patterns (when NOT to use):**
+
 - Initial repository setup (use scaffolding tools)
 - Application code development
 - Application architecture design decisions
@@ -114,21 +117,21 @@ We have a monorepo with Node.js microservices (10 services) and React frontends 
 
 **Optimization Summary**
 
-| Metric | Current State | Target State | Improvement |
-|--------|---------------|--------------|-------------|
-| Full pipeline duration | 45-60 min | 12-15 min | 75% faster |
-| Failure rate | 20% | < 3% | 85% reduction |
-| Deployment frequency | 3x/week | Daily+ | 2-3x increase |
-| Monthly cost | $5,000 | $1,200 | 76% reduction |
+| Metric                 | Current State | Target State | Improvement   |
+| ---------------------- | ------------- | ------------ | ------------- |
+| Full pipeline duration | 45-60 min     | 12-15 min    | 75% faster    |
+| Failure rate           | 20%           | < 3%         | 85% reduction |
+| Deployment frequency   | 3x/week       | Daily+       | 2-3x increase |
+| Monthly cost           | $5,000        | $1,200       | 76% reduction |
 
 **Root Cause Analysis**
 
-| Bottleneck | Current Time | Cause | Solution |
-|------------|--------------|-------|----------|
-| npm install (per service) | 3-4 min each | No caching, sequential | Shared cache, parallel |
-| Docker builds | 8-10 min each | No layer caching | BuildKit with GHA cache |
-| E2E tests | 25 min | Serial, flaky | Parallel shards, quarantine |
-| Sequential service builds | 40+ min | No parallelization | Matrix strategy |
+| Bottleneck                | Current Time  | Cause                  | Solution                    |
+| ------------------------- | ------------- | ---------------------- | --------------------------- |
+| npm install (per service) | 3-4 min each  | No caching, sequential | Shared cache, parallel      |
+| Docker builds             | 8-10 min each | No layer caching       | BuildKit with GHA cache     |
+| E2E tests                 | 25 min        | Serial, flaky          | Parallel shards, quarantine |
+| Sequential service builds | 40+ min       | No parallelization     | Matrix strategy             |
 
 **Optimized Pipeline Architecture**
 
@@ -177,15 +180,27 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        service: [auth, orders, payments, inventory, users, notifications, analytics, search, recommendations, gateway]
+        service:
+          [
+            auth,
+            orders,
+            payments,
+            inventory,
+            users,
+            notifications,
+            analytics,
+            search,
+            recommendations,
+            gateway,
+          ]
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Node.js with cache
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
           cache-dependency-path: services/${{ matrix.service }}/package-lock.json
 
       - name: Install dependencies
@@ -215,8 +230,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - run: npm ci --prefix apps/${{ matrix.app }}
       - run: npm run build --prefix apps/${{ matrix.app }}
@@ -294,24 +309,24 @@ jobs:
 
 **Caching Strategy Impact**
 
-| Cache Type | Implementation | Time Saved |
-|------------|----------------|------------|
-| npm dependencies | actions/setup-node cache | 2-3 min per job |
-| Docker layers | BuildKit GHA cache | 5-7 min per build |
-| Playwright browsers | Custom cache action | 1-2 min per shard |
-| Build artifacts | actions/cache | 1 min per job |
-| **Total per run** | | **15-20 min** |
+| Cache Type          | Implementation           | Time Saved        |
+| ------------------- | ------------------------ | ----------------- |
+| npm dependencies    | actions/setup-node cache | 2-3 min per job   |
+| Docker layers       | BuildKit GHA cache       | 5-7 min per build |
+| Playwright browsers | Custom cache action      | 1-2 min per shard |
+| Build artifacts     | actions/cache            | 1 min per job     |
+| **Total per run**   |                          | **15-20 min**     |
 
 **Quality Gates Configuration**
 
-| Gate | Trigger | Blocking | Max Duration | SLA |
-|------|---------|----------|--------------|-----|
-| Lint + Format | All commits | Yes | 30s | Instant feedback |
-| Unit Tests | All commits | Yes | 3 min | < 5 min |
-| Integration Tests | Pre-merge | Yes | 6 min | < 10 min |
-| E2E (4 shards) | Pre-merge | Yes | 10 min | < 15 min |
-| Security Scan | All commits | Production only | 8 min | < 15 min |
-| Full Pipeline | Main branch | Yes | 15 min | < 20 min |
+| Gate              | Trigger     | Blocking        | Max Duration | SLA              |
+| ----------------- | ----------- | --------------- | ------------ | ---------------- |
+| Lint + Format     | All commits | Yes             | 30s          | Instant feedback |
+| Unit Tests        | All commits | Yes             | 3 min        | < 5 min          |
+| Integration Tests | Pre-merge   | Yes             | 6 min        | < 10 min         |
+| E2E (4 shards)    | Pre-merge   | Yes             | 10 min       | < 15 min         |
+| Security Scan     | All commits | Production only | 8 min        | < 15 min         |
+| Full Pipeline     | Main branch | Yes             | 15 min       | < 20 min         |
 
 **Flaky Test Quarantine Process**
 
@@ -331,9 +346,9 @@ jobs:
 
 ```yaml
 canary:
-  initial_weight: 10      # Start with 10% traffic
-  increment: 20           # Increase by 20% each step
-  interval: 60s           # Wait 60s between steps
+  initial_weight: 10 # Start with 10% traffic
+  increment: 20 # Increase by 20% each step
+  interval: 60s # Wait 60s between steps
   success_metrics:
     - name: error_rate
       threshold: "< 1%"
@@ -346,13 +361,13 @@ canary:
 
 **Cost Comparison**
 
-| Item | Jenkins (Current) | GitHub Actions (Optimized) |
-|------|-------------------|---------------------------|
-| Infrastructure | $3,000/month | $0 (included) |
-| Maintenance labor | $1,500/month | $0 |
-| Compute minutes | N/A | $1,200/month (estimated) |
-| **Total** | **$5,000/month** | **$1,200/month** |
-| **Annual savings** | | **$45,600** |
+| Item               | Jenkins (Current) | GitHub Actions (Optimized) |
+| ------------------ | ----------------- | -------------------------- |
+| Infrastructure     | $3,000/month      | $0 (included)              |
+| Maintenance labor  | $1,500/month      | $0                         |
+| Compute minutes    | N/A               | $1,200/month (estimated)   |
+| **Total**          | **$5,000/month**  | **$1,200/month**           |
+| **Annual savings** |                   | **$45,600**                |
 
 **SOC2 Compliance Features**
 
@@ -365,6 +380,7 @@ canary:
 ---
 
 ## Related Prompts
+
 - [Deployment Pipeline Creation Expert](../../technical-workflows/deployment-pipeline-creation-expert.md) - Build pipelines from scratch
 - [DevOps Workflow Design Expert](../../technical-workflows/devops-workflow-design-expert.md) - Design DevOps practices
 - [Test Strategy Development Expert](../../technical-workflows/test-strategy-development-expert.md) - Optimize test stages

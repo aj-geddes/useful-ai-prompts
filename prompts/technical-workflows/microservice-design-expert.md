@@ -1,6 +1,7 @@
 # Microservice Design Expert
 
 ## Metadata
+
 - **ID**: `microservice-design-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Designs microservice architectures that properly balance service boundaries, min
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Decomposing monoliths into microservices with clear migration strategy
 - Designing new microservice architectures for complex domains
 - Defining service boundaries using domain-driven design principles
@@ -25,6 +27,7 @@ Designs microservice architectures that properly balance service boundaries, min
 - Scaling engineering teams through service ownership models
 
 **Anti-Patterns (Don't Use For):**
+
 - Simple CRUD applications with low complexity
 - Small team projects (fewer than 10 engineers)
 - Monolith optimization without decomposition intent
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We have a large e-commerce monolith (800K LOC) handling products, orders, inventory, customers, and payments. We want to enable independent team deployment and scale order processing separately from product catalog operations.
 
@@ -164,12 +168,12 @@ Current state:
 
 Using event storming methodology, we identify four primary bounded contexts:
 
-| Bounded Context | Core Domain Events | Aggregates |
-|-----------------|-------------------|------------|
-| Product Catalog | ProductCreated, PriceChanged, CategoryUpdated | Product, Category, Price |
-| Order Management | OrderPlaced, OrderShipped, OrderCancelled | Order, LineItem, Shipment |
-| Inventory | StockReserved, StockDepleted, WarehouseTransferred | InventoryItem, Warehouse, Reservation |
-| Customer | CustomerRegistered, AddressUpdated, PreferencesChanged | Customer, Address, Preferences |
+| Bounded Context  | Core Domain Events                                     | Aggregates                            |
+| ---------------- | ------------------------------------------------------ | ------------------------------------- |
+| Product Catalog  | ProductCreated, PriceChanged, CategoryUpdated          | Product, Category, Price              |
+| Order Management | OrderPlaced, OrderShipped, OrderCancelled              | Order, LineItem, Shipment             |
+| Inventory        | StockReserved, StockDepleted, WarehouseTransferred     | InventoryItem, Warehouse, Reservation |
+| Customer         | CustomerRegistered, AddressUpdated, PreferencesChanged | Customer, Address, Preferences        |
 
 **Service Design**
 
@@ -192,12 +196,12 @@ Using event storming methodology, we identify four primary bounded contexts:
 
 **Service Catalog**
 
-| Service | Responsibility | Team | Data Ownership | Scaling Pattern |
-|---------|---------------|------|----------------|-----------------|
-| Product | Catalog, search, pricing | Squad A | products, categories, prices | Read replicas, cache |
-| Order | Cart, checkout, fulfillment | Squad B | orders, line_items | Horizontal, sharding |
-| Inventory | Stock levels, reservations | Squad B | inventory, warehouses | Event-driven |
-| Customer | Auth, profiles, preferences | Squad C | customers, addresses | Cache-heavy |
+| Service   | Responsibility              | Team    | Data Ownership               | Scaling Pattern      |
+| --------- | --------------------------- | ------- | ---------------------------- | -------------------- |
+| Product   | Catalog, search, pricing    | Squad A | products, categories, prices | Read replicas, cache |
+| Order     | Cart, checkout, fulfillment | Squad B | orders, line_items           | Horizontal, sharding |
+| Inventory | Stock levels, reservations  | Squad B | inventory, warehouses        | Event-driven         |
+| Customer  | Auth, profiles, preferences | Squad C | customers, addresses         | Cache-heavy          |
 
 **Communication Patterns**
 
@@ -236,18 +240,19 @@ Order Saga Orchestrator:
 ```
 
 Failure handling:
+
 - If Payment fails: Compensate Inventory.Reserve with Inventory.Release
 - If any step fails: All completed steps are compensated in reverse order
 - Saga state persisted for recovery from orchestrator failures
 
 **Data Management**
 
-| Pattern | Use Case | Implementation |
-|---------|----------|----------------|
-| Database per Service | All services | Separate PostgreSQL instances |
-| Event Sourcing | Order Service | Append-only order events |
-| CQRS | Product Service | Write to primary, read from cache |
-| Saga | Cross-service transactions | Orchestrated saga with compensation |
+| Pattern              | Use Case                   | Implementation                      |
+| -------------------- | -------------------------- | ----------------------------------- |
+| Database per Service | All services               | Separate PostgreSQL instances       |
+| Event Sourcing       | Order Service              | Append-only order events            |
+| CQRS                 | Product Service            | Write to primary, read from cache   |
+| Saga                 | Cross-service transactions | Orchestrated saga with compensation |
 
 **Observability Stack**
 
@@ -271,12 +276,12 @@ Alerting: PagerDuty integration
 
 **Migration Roadmap**
 
-| Phase | Duration | Services | Risk | Success Criteria |
-|-------|----------|----------|------|------------------|
-| Phase 1 | 3 months | Product (read-only) | Low | Zero regression in catalog |
-| Phase 2 | 2 months | Customer | Low | Auth working, profiles migrated |
-| Phase 3 | 4 months | Inventory | Medium | Real-time stock accuracy |
-| Phase 4 | 6 months | Order | High | Full order flow, saga working |
+| Phase   | Duration | Services            | Risk   | Success Criteria                |
+| ------- | -------- | ------------------- | ------ | ------------------------------- |
+| Phase 1 | 3 months | Product (read-only) | Low    | Zero regression in catalog      |
+| Phase 2 | 2 months | Customer            | Low    | Auth working, profiles migrated |
+| Phase 3 | 4 months | Inventory           | Medium | Real-time stock accuracy        |
+| Phase 4 | 6 months | Order               | High   | Full order flow, saga working   |
 
 Phase 1 starts with Product Service because it is read-heavy, has clear boundaries, and presents lowest risk for learning.
 

@@ -1,6 +1,7 @@
 # Content Calendar Architect
 
 ## Metadata
+
 - **ID**: `content-creation-calendar-architect`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -98,11 +99,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 I create blog posts, LinkedIn content, and a weekly newsletter for my B2B SaaS company. Currently posting randomly when I have time. Want to be more consistent with about 10 hours weekly for content.
 ```
 
 ### Output
+
 ```
 **Content Calendar Framework: B2B SaaS Creator**
 

@@ -11,7 +11,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: 'highlight'
+    css_class: "highlight"
     span:
       line_numbers: false
     block:
@@ -133,8 +133,8 @@ stats:
   total_prompts: 679
   categories: 47
   last_updated: "2026-02-28T00:00:00Z"
-  github_stars: 0  # This will be updated dynamically
-  total_downloads: 0  # This will be updated dynamically
+  github_stars: 0 # This will be updated dynamically
+  total_downloads: 0 # This will be updated dynamically
 
 # UTM tracking
 utm:
@@ -167,13 +167,13 @@ pwa:
 
 # Core Web Vitals Targets
 performance:
-  target_lcp: 2.5  # Largest Contentful Paint (seconds)
-  target_fid: 100  # First Input Delay (milliseconds)
-  target_cls: 0.1  # Cumulative Layout Shift
+  target_lcp: 2.5 # Largest Contentful Paint (seconds)
+  target_fid: 100 # First Input Delay (milliseconds)
+  target_cls: 0.1 # Cumulative Layout Shift
   lighthouse_budget:
-    js: 170000  # JavaScript budget in bytes
-    css: 50000  # CSS budget in bytes
-    fonts: 100000  # Font budget in bytes
+    js: 170000 # JavaScript budget in bytes
+    css: 50000 # CSS budget in bytes
+    fonts: 100000 # Font budget in bytes
 
 # Advanced SEO Configuration
 seo:
@@ -186,7 +186,7 @@ seo:
   robots_txt: true
   sitemap_xml: true
   rich_snippets: true
-  
+
 # Webmaster Tools Verification
 # To activate, replace the commented-out values with your real verification codes
 # and remove the leading "# " from each key line.
@@ -198,20 +198,20 @@ webmaster_verifications:
   # google: "your-google-verification-code"
   # bing: "your-bing-verification-code"
   # yandex: "your-yandex-verification-code"
-  
+
 # Enhanced SEO Tag Configuration
 tag_manager:
   enabled: false
   # TODO: Configure before launch
   # gtm_id: "GTM-XXXXXXX"
-  
+
 # Local Business Schema (if applicable)
 local_business:
   type: "Organization"
   name: "Useful AI Prompts"
   url: "https://aj-geddes.github.io/useful-ai-prompts"
   description: "Professional AI prompts library for business productivity"
-  
+
 # Feed Configuration
 feed:
   categories:
@@ -222,7 +222,7 @@ feed:
     - biotechnology
   tags: true
   excerpt_only: false
-  
+
 # Rich Snippets Configuration
 rich_snippets:
   organization: true

@@ -3,24 +3,25 @@ title: Compensation Benchmarking Expert
 slug: compensation-benchmarking-expert
 category: human resources
 tags:
-- compensation
-- salary
-- benchmarking
-- pay
-- bands
-- market
-- data
-- pay
-- equity
-- compensation
-- philosophy
-- total
-- rewards
+  - compensation
+  - salary
+  - benchmarking
+  - pay
+  - bands
+  - market
+  - data
+  - pay
+  - equity
+  - compensation
+  - philosophy
+  - total
+  - rewards
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a total rewards expert who analyzes market compensation
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a total rewards expert who analyzes market compensation
   data, designs pay band structures, conducts equity reviews, and articulates compensation
   philosophy. It helps HR leaders and compensation analysts benchmark roles accurately,
   identify pay compression or equity gaps, and build defensible pay structures tied
@@ -28,14 +29,14 @@ description: This prompt activates a total rewards expert who analyzes market co
   and equity analysis frameworks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR leader building pay bands for the first time ahead of a headcount scaling
-  push
-- A compensation analyst running an annual market data refresh and identifying roles
-  where current pay is below the 50th percentile
-- A CHRO preparing a pay equity audit to identify and remediate gender or race-based
-  pay gaps before they become legal exposure
-- Individual salary negotiation coaching for employees (different context and ethics)
+  - Ideal Scenarios:**
+  - An HR leader building pay bands for the first time ahead of a headcount scaling
+    push
+  - A compensation analyst running an annual market data refresh and identifying roles
+    where current pay is below the 50th percentile
+  - A CHRO preparing a pay equity audit to identify and remediate gender or race-based
+    pay gaps before they become legal exposure
+  - Individual salary negotiation coaching for employees (different context and ethics)
 complexity: advanced
 interaction: multi-turn
 ---

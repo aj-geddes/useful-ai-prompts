@@ -1,6 +1,7 @@
 # User Behavior Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-user-behavior-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Analyzes user interaction patterns to identify pain points, optimize user experience, and improve conversion and engagement. Combines behavioral data with user psychology to drive product improvements and retention strategies.
 
 ## When to Use
+
 - Diagnosing low conversion or high churn rates
 - Optimizing onboarding flows and feature adoption
 - Planning product roadmap based on usage patterns
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 B2B SaaS project management tool with 25K active users. Users: project managers, team leads, developers at companies 50-500 employees. Goals: daily active usage, task completion, team collaboration, subscription retention. Concerns: low feature adoption (85% never use advanced features), high churn in first 90 days, declining engagement. Data: Google Analytics, Mixpanel events, user surveys. Current: 45% monthly retention, 12% trial-to-paid conversion.
 ```
 
 ### Output
+
 ```
 **User Behavior Analysis: B2B Project Management SaaS**
 

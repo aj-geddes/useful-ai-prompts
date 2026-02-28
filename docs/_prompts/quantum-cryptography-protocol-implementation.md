@@ -3,27 +3,28 @@ title: Quantum Cryptography Protocol Implementation
 slug: quantum-cryptography-protocol-implementation
 category: quantum computing / cryptography
 tags:
-- QKD
-- quantum-signatures
-- post-quantum-cryptography
-- security-implementation
-- enterprise-security
+  - QKD
+  - quantum-signatures
+  - post-quantum-cryptography
+  - security-implementation
+  - enterprise-security
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: A senior quantum cryptography architect that designs and deploys comprehensive
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  A senior quantum cryptography architect that designs and deploys comprehensive
   quantum cryptography platforms for enterprise-scale quantum-secured communications.
   Covers quantum key distribution networks, quantum digital signatures, and post-quantum
   cryptography integration with existing security infrastructure for mission-critical
   deployments.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building production quantum key distribution systems at scale
-- Implementing quantum digital signature infrastructure
-- Integrating post-quantum algorithms into enterprise systems
-- Designing quantum-safe security architectures for government or critical infrastructure
+  - Ideal Scenarios:**
+  - Building production quantum key distribution systems at scale
+  - Implementing quantum digital signature infrastructure
+  - Integrating post-quantum algorithms into enterprise systems
+  - Designing quantum-safe security architectures for government or critical infrastructure
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Large organizations require production-grade quantum cryptography platforms that
 
 <input_handling>
 Required inputs:
+
 - Security objectives (confidentiality, authentication, integrity, non-repudiation)
 - Scale requirements (locations, channels, users, throughput)
 - Regulatory compliance requirements
 
 Infer if not provided:
+
 - Protocol selection: BB84 with decoy states for QKD, CRYSTALS for PQC
 - Infrastructure: Commercial fiber optic networks with dedicated dark fiber
 - Security level: 99.99% assurance target
 - Timeline: 18-24 month deployment cycle
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive quantum cryptography platform:
@@ -81,33 +84,36 @@ Design comprehensive quantum cryptography platform:
    - Build continuous monitoring systems
    - Establish incident response procedures
    - Create key lifecycle management processes
-</task>
+     </task>
 
 <output_specification>
 Format: Architecture document with implementation phases
 Length: 800-1500 words
 Structure:
+
 - Security requirements analysis
 - Protocol specifications for each layer
 - Network architecture with topology diagrams
 - Compliance and certification framework
 - Deployment timeline with phases
 - Operational procedures and success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Provide information-theoretically secure protocol designs with assumptions
 - Include practical hardware integration specifications
 - Map comprehensively to certification requirements
 - Define complete operational security procedures
 
 Avoid:
+
 - Theoretical designs without deployment feasibility
 - Ignoring classical infrastructure integration requirements
 - Underspecified security validation requirements
 - Missing redundancy and failover planning
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All protocols must meet specified security assurance levels

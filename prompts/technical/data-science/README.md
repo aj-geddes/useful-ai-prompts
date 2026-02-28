@@ -5,8 +5,9 @@ Advanced prompts for machine learning, statistical analysis, and data-driven ins
 ## Available Prompts
 
 ### Machine Learning
+
 - [Model Evaluation Framework](./model-evaluation-framework.md) - Comprehensive ML model assessment and optimization
 
 ---
 
-*Unlock data potential with AI-enhanced analytical frameworks.*
+_Unlock data potential with AI-enhanced analytical frameworks._

@@ -1,12 +1,13 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Manage application state using Redux, MobX, Zustand, and Context API.
+date: "2025-01-01"
+description:
+  Manage application state using Redux, MobX, Zustand, and Context API.
   Use when centralizing state for complex applications with multiple components.
 layout: skill
 slug: frontend-state-management
 tags:
-- api
+  - api
 title: frontend-state-management
 ---
 

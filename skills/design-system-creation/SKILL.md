@@ -34,24 +34,23 @@ Foundation Layer:
     - Line heights and letter spacing
 
 Colors:
-    - Primary brand color (#2196F3)
-    - Secondary colors
-    - Neutral palette (grays)
-    - Semantic colors (success, error, warning)
-    - Dark mode variants
+  - Primary brand color (#2196F3)
+  - Secondary colors
+  - Neutral palette (grays)
+  - Semantic colors (success, error, warning)
+  - Dark mode variants
 
 Spacing:
-    - Base unit: 4px
-    - Scale: 4, 8, 12, 16, 24, 32, 48, 64px
-    - Apply consistently across UI
+  - Base unit: 4px
+  - Scale: 4, 8, 12, 16, 24, 32, 48, 64px
+  - Apply consistently across UI
 
 Shadows & Elevation:
-    - Elevation 0 (flat)
-    - Elevation 1, 2, 4, 8, 16 (increasing depth)
-    - Used for modals, cards, overlays
+  - Elevation 0 (flat)
+  - Elevation 1, 2, 4, 8, 16 (increasing depth)
+  - Used for modals, cards, overlays
 
 ---
-
 Component Layer:
 
 Basic Components:
@@ -91,7 +90,6 @@ Data Display:
   - Chips
 
 ---
-
 Pattern Layer:
 
 Layout Patterns:
@@ -209,11 +207,9 @@ Retired:
   - Historical documentation archived
 
 ---
-
 Contribution Guidelines:
 
-To Add Component:
-  1. Check existing components
+To Add Component: 1. Check existing components
   2. Submit RFC (Request for Comments)
   3. Attend design review
   4. Implement per standards
@@ -277,6 +273,7 @@ Updates:
 ## Best Practices
 
 ### ✅ DO
+
 - Start with essential components
 - Document every component thoroughly
 - Include code examples
@@ -289,6 +286,7 @@ Updates:
 - Maintain incrementally
 
 ### ❌ DON'T
+
 - Create too many components initially
 - Skip documentation
 - Ignore accessibility

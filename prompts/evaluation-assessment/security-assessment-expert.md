@@ -1,6 +1,7 @@
 # Security Assessment Expert
 
 ## Metadata
+
 - **ID**: `evaluation-security-assessment`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Security
@@ -18,12 +19,14 @@ Conduct comprehensive security assessments to identify vulnerabilities, evaluate
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing security posture of systems or applications
 - Preparing for security audits or certifications
 - Evaluating third-party vendor security
 - Planning security improvements
 
 **Anti-patterns:**
+
 - Active penetration testing requiring authorized testing tools
 - Legal/compliance certifications requiring accredited auditors
 - Incident response requiring immediate security actions
@@ -97,12 +100,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Assess security of our customer-facing e-commerce web application. Handles payment data (credit cards), PII, and order history. Built on AWS, uses React frontend and Node.js backend. About 50,000 customers. No recent security audit."
 
 ### Output
+
 **Security Assessment: E-Commerce Web Application**
 
 **Scope and Context**
+
 - Application: Customer-facing e-commerce platform
 - Data: PCI (credit cards), PII (customer data), order history
 - Infrastructure: AWS cloud
@@ -113,21 +119,21 @@ Avoid:
 
 **Attack Surface Analysis**
 
-| Surface | Components | Risk Level |
-|---------|------------|------------|
-| Web Application | React SPA, API endpoints | High |
-| API Layer | Node.js REST APIs | High |
-| Authentication | Login, sessions, password reset | Critical |
-| Payment Processing | Checkout, card handling | Critical |
-| Database | Customer data, orders | High |
-| Infrastructure | AWS services, networking | Medium |
-| Third-Party | Payment gateway, CDN, analytics | Medium |
+| Surface            | Components                      | Risk Level |
+| ------------------ | ------------------------------- | ---------- |
+| Web Application    | React SPA, API endpoints        | High       |
+| API Layer          | Node.js REST APIs               | High       |
+| Authentication     | Login, sessions, password reset | Critical   |
+| Payment Processing | Checkout, card handling         | Critical   |
+| Database           | Customer data, orders           | High       |
+| Infrastructure     | AWS services, networking        | Medium     |
+| Third-Party        | Payment gateway, CDN, analytics | Medium     |
 
 ---
 
 **Threat Model**
 
-*Threat Actors*
+_Threat Actors_
 | Actor | Motivation | Capability | Likelihood |
 |-------|------------|------------|------------|
 | External Attacker | Financial gain | Medium-High | High |
@@ -135,7 +141,8 @@ Avoid:
 | Insider | Fraud, data theft | Medium | Low |
 | Script Kiddie | Defacement | Low | Medium |
 
-*Primary Attack Vectors*
+_Primary Attack Vectors_
+
 1. **SQL Injection/NoSQL Injection** - Target: Database access
 2. **Authentication Bypass** - Target: Account takeover
 3. **Payment Data Theft** - Target: Card skimming, API interception
@@ -146,20 +153,20 @@ Avoid:
 
 **Risk Matrix**
 
-| Vulnerability | Likelihood | Impact | Risk | Priority |
-|---------------|------------|--------|------|----------|
-| Weak authentication (no MFA) | High | High | Critical | P1 |
-| API without rate limiting | High | Medium | High | P1 |
-| Outdated dependencies | Medium | High | High | P2 |
-| Insufficient logging | Medium | Medium | Medium | P2 |
-| No WAF protection | Medium | Medium | Medium | P3 |
-| Missing CSP headers | Low | Medium | Low | P3 |
+| Vulnerability                | Likelihood | Impact | Risk     | Priority |
+| ---------------------------- | ---------- | ------ | -------- | -------- |
+| Weak authentication (no MFA) | High       | High   | Critical | P1       |
+| API without rate limiting    | High       | Medium | High     | P1       |
+| Outdated dependencies        | Medium     | High   | High     | P2       |
+| Insufficient logging         | Medium     | Medium | Medium   | P2       |
+| No WAF protection            | Medium     | Medium | Medium   | P3       |
+| Missing CSP headers          | Low        | Medium | Low      | P3       |
 
 ---
 
 **Control Assessment**
 
-*Critical Gaps*
+_Critical Gaps_
 
 1. **Authentication (CRITICAL)**
    - No multi-factor authentication
@@ -178,7 +185,7 @@ Avoid:
    - Missing input validation on several endpoints
    - Action: Implement rate limiting, input validation
 
-*Moderate Gaps*
+_Moderate Gaps_
 
 4. **Dependency Management**
    - npm audit shows 15 vulnerabilities (3 high)
@@ -194,7 +201,7 @@ Avoid:
 
 **Remediation Roadmap**
 
-*Phase 1: Critical (0-30 days)*
+_Phase 1: Critical (0-30 days)_
 | Action | Effort | Owner | Status |
 |--------|--------|-------|--------|
 | Implement MFA for customer accounts | 2 weeks | Dev | - |
@@ -202,7 +209,7 @@ Avoid:
 | API rate limiting | 1 week | Dev | - |
 | Move session to httpOnly cookies | 3 days | Dev | - |
 
-*Phase 2: High (30-60 days)*
+_Phase 2: High (30-60 days)_
 | Action | Effort | Owner | Status |
 |--------|--------|-------|--------|
 | Update all vulnerable dependencies | 1 week | Dev | - |
@@ -210,7 +217,7 @@ Avoid:
 | API input validation audit | 2 weeks | Dev | - |
 | Security logging enhancement | 2 weeks | DevOps | - |
 
-*Phase 3: Medium (60-90 days)*
+_Phase 3: Medium (60-90 days)_
 | Action | Effort | Owner | Status |
 |--------|--------|-------|--------|
 | Deploy WAF (AWS WAF) | 1 week | DevOps | - |
@@ -221,6 +228,7 @@ Avoid:
 ---
 
 **Ongoing Security Practices**
+
 - Monthly dependency updates
 - Quarterly security reviews
 - Annual penetration testing
@@ -229,5 +237,6 @@ Avoid:
 **PCI-DSS Note**: Given payment card handling, formal PCI-DSS assessment is required. This assessment does not replace PCI compliance validation.
 
 ## Related Prompts
+
 - [Compliance Audit Expert](compliance-audit-expert.md)
 - [Code Review Expert](code-review-expert.md)

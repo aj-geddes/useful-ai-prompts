@@ -1,6 +1,7 @@
 # Cash Flow Optimizer
 
 ## Metadata
+
 - **ID**: `finance-cash-flow-optimizer`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt analyzes a company's working capital position and cash conversion cycle to identify specific, prioritized improvements in accounts receivable, accounts payable, inventory, and operational cash generation. It moves beyond identifying cash flow problems to building an actionable optimization roadmap with quantified impact and implementation sequencing. The output is a working capital improvement plan with specific initiatives, estimated cash impact, and implementation guidance.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business is profitable on paper but consistently cash-constrained or reliant on credit lines for operations
 - Preparing for rapid growth or a capital raise and needing to demonstrate efficient working capital management
 - Conducting a post-acquisition working capital review to identify quick-win cash improvements in an acquired business
 
 **Anti-patterns (Don't Use For):**
+
 - Businesses in financial distress needing restructuring or creditor negotiation — engage a restructuring advisor
 - Cash flow problems caused by fundamental profitability issues — cost reduction or revenue strategies must be addressed first
 - Businesses without financial systems capable of tracking AR aging, AP aging, or inventory turns at the SKU level
@@ -70,11 +75,13 @@ Avoid: Generic recommendations without quantification, focusing only on one area
 ## Example Usage
 
 ### Input
+
 "We're a B2B manufacturing company, $45M revenue, 38% gross margin. DSO is 67 days, DPO is 28 days, inventory days are 52. Industry benchmarks are DSO 45 days, DPO 45 days, inventory 35 days. We're consistently running on 80% of our $3M credit line and growth is stressing cash further. Revenue growing 20% YoY. We invoice at month-end for the whole month's orders."
 
 ### Output
+
 **Working Capital Optimization Report**
-*$45M Revenue B2B Manufacturer | Current CCC: 91 Days | Benchmark CCC: 35 Days*
+_$45M Revenue B2B Manufacturer | Current CCC: 91 Days | Benchmark CCC: 35 Days_
 
 ---
 
@@ -90,9 +97,10 @@ This explains the credit line stress. The company is funding 56 extra days of it
 
 **AR Opportunity: Estimated $2.8M Cash Release**
 
-*Primary Problem:* DSO of 67 vs. 45-day benchmark = 22 days excess = **$2.7M trapped** (22 × $123K daily revenue). Month-end invoicing is the largest single driver — customers on Net 30 terms don't receive their invoice until the end of the month, starting the clock 15 days late on average.
+_Primary Problem:_ DSO of 67 vs. 45-day benchmark = 22 days excess = **$2.7M trapped** (22 × $123K daily revenue). Month-end invoicing is the largest single driver — customers on Net 30 terms don't receive their invoice until the end of the month, starting the clock 15 days late on average.
 
-*Initiatives:*
+_Initiatives:_
+
 1. **Switch to continuous invoicing (Invoice on shipment, not month-end)** — Immediate 10-15 day DSO reduction. Estimated cash impact: **$1.2-1.8M**. Implementation: requires ERP configuration change (30-day project). Highest leverage action available.
 2. **AR aging review and collections escalation for 60+ day balances** — Pull current aging report. Every $500K of 60+ day AR collected = $500K cash. Target: zero balances beyond 90 days. Assign collections ownership and weekly review cadence (week 1-2 action).
 3. **Early payment discount pilot for top 10 customers (representing ~40% of AR)** — Offer 1.5% Net 10 discount. If 50% of those customers take it: ~$900K accelerated cash at cost of approximately $13.5K in discounts. Run a 60-day pilot.
@@ -101,9 +109,10 @@ This explains the credit line stress. The company is funding 56 extra days of it
 
 **AP Opportunity: Estimated $2.1M Cash Release**
 
-*Primary Problem:* DPO of 28 vs. 45-day benchmark = paying 17 days early = **$2.1M unnecessarily deployed** (17 × $123K).
+_Primary Problem:_ DPO of 28 vs. 45-day benchmark = paying 17 days early = **$2.1M unnecessarily deployed** (17 × $123K).
 
-*Initiatives:*
+_Initiatives:_
+
 1. **Review all supplier contracts for actual payment terms** — Many companies pay on 28-day cycle by habit when contracts allow Net 45 or Net 60. This costs nothing to change. Estimated cash impact: **$1.5-2.1M**. Action this week.
 2. **Segment suppliers:** Pay strategic, small-supplier relationships on standard terms (protect relationships). For large commodity suppliers, negotiate extension to Net 45-60 with no pricing change — they value the volume.
 3. **Do not extend terms beyond what contracts allow** — Review each supplier contract before changing payment run.
@@ -112,9 +121,10 @@ This explains the credit line stress. The company is funding 56 extra days of it
 
 **Inventory Opportunity: Estimated $2.1M Cash Release**
 
-*Primary Problem:* 52 days vs. 35-day benchmark = 17 excess days = **$2.1M excess inventory** (using cost of goods: 17 days × $123K × 62% COGS ratio).
+_Primary Problem:_ 52 days vs. 35-day benchmark = 17 excess days = **$2.1M excess inventory** (using cost of goods: 17 days × $123K × 62% COGS ratio).
 
-*Initiatives:*
+_Initiatives:_
+
 1. **Identify slow-moving and obsolete inventory (SKUs with zero movement in 90+ days)** — Liquidate or return to supplier. Common finding: 10-15% of inventory value is effectively stranded. Estimated impact: **$300-600K** one-time release.
 2. **Review reorder points and safety stock levels** — Calibrate to actual demand variability, not historical rules of thumb. Often reduces average inventory 15-20% with no service impact.
 
@@ -122,14 +132,14 @@ This explains the credit line stress. The company is funding 56 extra days of it
 
 **Prioritized Roadmap**
 
-| Timeline | Action | Est. Cash Impact |
-|----------|--------|-----------------|
-| Week 1 | Pull AR aging; launch 60+ day collections escalation | $300-500K |
-| Week 1 | Review supplier contracts; identify early payment opportunities to stop | $500-800K |
-| Day 30 | Switch to shipment-based invoicing | $1.2-1.8M |
-| Day 60 | Launch early payment discount pilot (top 10 customers) | $400-900K |
-| Day 60 | Complete inventory obsolescence review and liquidation | $300-600K |
-| Day 90 | Negotiate supplier term extensions for top 5 commodity vendors | $600-800K |
+| Timeline | Action                                                                  | Est. Cash Impact |
+| -------- | ----------------------------------------------------------------------- | ---------------- |
+| Week 1   | Pull AR aging; launch 60+ day collections escalation                    | $300-500K        |
+| Week 1   | Review supplier contracts; identify early payment opportunities to stop | $500-800K        |
+| Day 30   | Switch to shipment-based invoicing                                      | $1.2-1.8M        |
+| Day 60   | Launch early payment discount pilot (top 10 customers)                  | $400-900K        |
+| Day 60   | Complete inventory obsolescence review and liquidation                  | $300-600K        |
+| Day 90   | Negotiate supplier term extensions for top 5 commodity vendors          | $600-800K        |
 
 **Total Potential Cash Release: $3.3M - $5.4M** — enough to eliminate credit line dependency and fund growth organically.
 
@@ -138,9 +148,11 @@ This explains the credit line stress. The company is funding 56 extra days of it
 ---
 
 ## Variations
+
 - **Cash Flow Forecasting**: Build a 13-week rolling cash forecast model using the working capital data
 - **Supply Chain Finance**: Design a supplier finance program that simultaneously extends DPO and offers suppliers early payment optionality
 
 ## Related Prompts
+
 - [Financial Reporting Specialist](financial-reporting-specialist.md) - Build the cash flow dashboard to track working capital KPIs
 - [Cost Reduction Advisor](cost-reduction-advisor.md) - Address cost structure alongside working capital improvements

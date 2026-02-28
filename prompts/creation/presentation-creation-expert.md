@@ -1,6 +1,7 @@
 # Presentation Creation Expert
 
 ## Metadata
+
 - **ID**: `creation-presentation`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A practical presentation creation assistant that designs compelling, memorable p
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating investor pitch decks and funding presentations
 - Building executive updates and board presentations
 - Designing conference talks and keynotes
@@ -25,6 +27,7 @@ A practical presentation creation assistant that designs compelling, memorable p
 - Creating training materials and educational content
 
 **Anti-patterns (Don't Use For):**
+
 - Written reports or documents
 - Email communications
 - Technical documentation
@@ -104,22 +107,26 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Startup pitch deck for investors. Raising $2M seed round. We're solving food waste with AI. Audience: VCs and angel investors who see 100+ pitches monthly. 10 minutes pitch + 20 minutes Q&A. Clean, modern, data-driven style."
 
 ### Output
 
 **Slide 1: Title**
+
 ```
 FoodSave AI
 Turning Food Waste into Profit with Artificial Intelligence
 [Logo]
 Seed Investment Deck | March 2024
 ```
-*Speaker Notes (0:15):* "Thank you for taking this meeting. I'm [Name], CEO of FoodSave AI. We're solving a $50 billion problem."
+
+_Speaker Notes (0:15):_ "Thank you for taking this meeting. I'm [Name], CEO of FoodSave AI. We're solving a $50 billion problem."
 
 ---
 
 **Slide 2: The Problem**
+
 ```
 THE $50 BILLION PROBLEM
 
@@ -130,11 +137,13 @@ Restaurants & Grocers lose:
 - 4% of total revenue to waste
 - 70 hours/week managing inventory
 ```
-*Speaker Notes (0:45):* "Imagine running a business where you literally throw away 40% of your inventory. That's the reality for every restaurant and grocery store."
+
+_Speaker Notes (0:45):_ "Imagine running a business where you literally throw away 40% of your inventory. That's the reality for every restaurant and grocery store."
 
 ---
 
 **Slide 3: Our Solution**
+
 ```
 FOODSAVE AI: PREDICTIVE INVENTORY INTELLIGENCE
 
@@ -145,11 +154,13 @@ FOODSAVE AI: PREDICTIVE INVENTORY INTELLIGENCE
 
 [Product Screenshot]
 ```
-*Speaker Notes (1:00):* "FoodSave AI uses machine learning to predict exactly what you'll sell. Our AI analyzes 50+ data points."
+
+_Speaker Notes (1:00):_ "FoodSave AI uses machine learning to predict exactly what you'll sell. Our AI analyzes 50+ data points."
 
 ---
 
 **Slide 4: Business Model**
+
 ```
 SCALABLE SAAS MODEL
 
@@ -166,6 +177,7 @@ Gross Margin: 85%
 ---
 
 **Slide 5: Traction**
+
 ```
 EXPLOSIVE EARLY GROWTH
 
@@ -180,6 +192,7 @@ EXPLOSIVE EARLY GROWTH
 ---
 
 **Slide 6: Team**
+
 ```
 EXPERIENCED TEAM THAT SHIPS
 
@@ -193,6 +206,7 @@ EXPERIENCED TEAM THAT SHIPS
 ---
 
 **Slide 7: The Ask**
+
 ```
 RAISING $2M TO ACCELERATE GROWTH
 
@@ -208,6 +222,7 @@ Milestones: 100 customers, $150K MRR, Series A ready
 ---
 
 **Visual Design Specs:**
+
 - Primary: #2ECC71 (Fresh Green)
 - Secondary: #34495E (Professional Dark)
 - Headlines: Montserrat Bold, 36-48pt
@@ -225,6 +240,7 @@ A: "Currently $800 with 3-month payback. Expect $500 as we scale with word-of-mo
 ---
 
 ## Related Prompts
+
 - [Storytelling Framework Designer](../content-creation/storytelling-framework-designer.md)
 - [Executive Briefing Expert](../communication/executive-briefing-expert.md)
 - [Data Visualization Expert](../analysis/data-analysis-expert.md)

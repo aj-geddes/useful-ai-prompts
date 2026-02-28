@@ -8,4 +8,4 @@ Strategic financial analysis and planning frameworks for finance professionals.
 
 ---
 
-*Professional finance prompts for financial analysts, controllers, and finance managers.*
+_Professional finance prompts for financial analysts, controllers, and finance managers._

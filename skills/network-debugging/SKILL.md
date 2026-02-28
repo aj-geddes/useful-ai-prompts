@@ -44,7 +44,6 @@ Timeline Breakdown:
   - Content Download: Receiving response
 
 ---
-
 Network Conditions:
 
 Throttling Presets:
@@ -59,7 +58,6 @@ Custom Settings:
   - Verify error handling
 
 ---
-
 Request Analysis:
 
 Headers:

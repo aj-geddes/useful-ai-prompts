@@ -6,7 +6,19 @@ slug: project management
 icon: fas fa-calendar-alt
 description: "Expert AI prompts for project managers: project charters, risk registers, sprint planning, stakeholder communication, and project closeout documentation."
 seo_title: "Project Management AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [project charter, risk register, agile, sprint planning, stakeholder communication, milestone planning, resource allocation, scope management, vendor management, project retrospective]
+tags:
+  [
+    project charter,
+    risk register,
+    agile,
+    sprint planning,
+    stakeholder communication,
+    milestone planning,
+    resource allocation,
+    scope management,
+    vendor management,
+    project retrospective,
+  ]
 ---
 
 The Project Management category contains AI prompts for project managers, program managers, scrum masters, and project leads across industries. These prompts apply recognized PM frameworks — PMI, Agile, PRINCE2 — to the real constraints and stakeholder dynamics of your projects.

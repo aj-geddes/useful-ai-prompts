@@ -1,6 +1,7 @@
 # Networking Strategist
 
 ## Metadata
+
 - **ID**: `career-networking-strategist`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds powerful professional networks through strategic relationship development, value-focused outreach, and sustainable nurturing systems. Creates networking approaches that feel authentic while systematically achieving career objectives through genuine connection.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Building professional network strategically for career advancement
 - Preparing for career transitions requiring new industry connections
 - Seeking mentors, sponsors, or advisors
 - Creating business development or partnership opportunities
 
 **Anti-patterns (when not to use):**
+
 - Social media marketing or follower growth (use content strategy approaches)
 - Sales prospecting or lead generation (use sales methodology frameworks)
 - Personal relationship advice
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Product Manager wanting to transition to VP Product in 2 years. Current network: strong within current company, limited external connections in tech industry. Somewhat introverted, prefer smaller conversations to large events. 5-8 hours/month available for networking. Want to connect with VPs, founders, and product leaders at growth-stage companies."
 
 ### Output
@@ -128,27 +134,32 @@ FAILURE INDICATORS:
 **NETWORK ASSESSMENT**
 
 Current State:
+
 - Internal network: Strong (colleagues, leadership access)
 - External network: Limited (few industry connections)
 - Key gaps: Peer PMs at other companies, VPs/Directors, founders, investors
 
 Network Mapping:
+
 - Strong Connections: Current company colleagues (50+), current leadership (5-10), former colleagues (10-15)
 - Gap Areas: Peer PMs at target companies (0), VP/Director product leaders (2-3), Startup founders (1-2), Investors/advisors (0)
 
 **TARGET CONNECTIONS**
 
 Tier 1 - Strategic Relationships (Monthly focus):
+
 - Who: VP/Director Product at growth-stage startups
 - Why: Career pathway, mentorship, future opportunities
 - Goal: 5-10 meaningful relationships over 12 months
 
 Tier 2 - Peer Network (Weekly activity):
+
 - Who: Senior PMs at similar company stages
 - Why: Knowledge exchange, industry awareness, referrals
 - Goal: 20-30 connections over 12 months
 
 Tier 3 - Ecosystem Connections (Quarterly):
+
 - Who: Founders, investors, product community leaders
 - Why: Visibility, opportunities, industry perspective
 - Goal: 10-15 connections over 12 months
@@ -159,12 +170,14 @@ LinkedIn Connection Strategy:
 "Hi [Name], I've been following your work at [Company] and was impressed by [specific achievement]. As a PM working toward product leadership, I'd love to learn from your experience. Would you be open to a brief conversation about [specific topic]?"
 
 Follow-up Sequence:
+
 - Day 1: Connection request with personalized note
 - Day 3: If accepted, thank you message + specific question
 - Week 2: Share relevant article or insight
 - Week 4: Request 20-minute conversation
 
 20-Minute Informational Call Framework (Introvert-Friendly):
+
 - 2 min: Thank them, share brief background
 - 8 min: Ask about their path and current challenges
 - 5 min: Share relevant insight or experience
@@ -174,6 +187,7 @@ Follow-up Sequence:
 **VALUE EXCHANGE FRAMEWORK**
 
 What You Can Offer:
+
 - Knowledge: Share insights from your product work
 - Introductions: Connect people across your internal network
 - Content: Share relevant articles, research, or resources
@@ -181,6 +195,7 @@ What You Can Offer:
 - Support: Amplify their content, recommend their services
 
 Value-Add Follow-ups:
+
 - Share article relevant to conversation topic
 - Make introduction to someone who could help them
 - Send summary of insights from conversation
@@ -195,6 +210,7 @@ Touchpoint Calendar:
 | Tier 3 (Ecosystem) | Semi-annual | Conference or event interaction |
 
 Simple CRM (Spreadsheet):
+
 - Name, company, role
 - How connected, last contact date
 - Their interests/challenges
@@ -204,33 +220,39 @@ Simple CRM (Spreadsheet):
 **MONTHLY ACTIVITY PLAN (5-8 Hours)**
 
 Week 1 (2 hours):
+
 - 30 min: Research 5 target connections
 - 30 min: Send 5 personalized connection requests
 - 30 min: Comment on 5-10 connections' posts
 - 30 min: Follow up with recent connections
 
 Week 2 (1.5 hours):
+
 - 45 min: One informational conversation
 - 45 min: Prepare value-add content to share
 
 Week 3 (2 hours):
+
 - 60 min: Small group virtual event or community participation
 - 30 min: Follow up with new connections
 - 30 min: Send meaningful article to key connection
 
 Week 4 (1.5 hours):
+
 - 45 min: One informational conversation
 - 45 min: Update CRM, plan next month's outreach
 
 **SUCCESS METRICS**
 
 6-Month Checkpoints:
+
 - 15+ new meaningful connections
 - 2-3 mentor/advisor relationships developing
 - 5+ two-way value exchanges completed
 - Improved industry awareness
 
 12-Month Goals:
+
 - 30+ strategic connections
 - 1-2 strong mentor relationships
 - Recognition in product community
@@ -239,6 +261,7 @@ Week 4 (1.5 hours):
 ---
 
 ## Related Prompts
+
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Personal Branding Strategist](personal-branding-strategist.md) - Thought leadership and visibility
 - [Professional Networking Strategist](professional-networking-strategist.md) - Alternative networking approach

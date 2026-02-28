@@ -1,16 +1,17 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design and implement CI/CD pipelines with GitHub Actions, GitLab CI,
+date: "2025-01-01"
+description:
+  Design and implement CI/CD pipelines with GitHub Actions, GitLab CI,
   Jenkins, or CircleCI. Use for automated testing, building, and deployment workflows.
 layout: skill
 slug: cicd-pipeline-setup
 tags:
-- git
-- ci/cd
-- jenkins
-- github
-- gitlab
+  - git
+  - ci/cd
+  - jenkins
+  - github
+  - gitlab
 title: cicd-pipeline-setup
 ---
 
@@ -99,8 +100,8 @@ jobs:
       - name: Run Trivy vulnerability scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
-          scan-ref: '.'
+          scan-type: "fs"
+          scan-ref: "."
 
   build:
     needs: [test, security]
@@ -422,6 +423,7 @@ echo "All pipeline stages completed successfully!"
 ## Best Practices
 
 ### ✅ DO
+
 - Fail fast with early validation
 - Run tests in parallel when possible
 - Use caching for dependencies
@@ -432,6 +434,7 @@ echo "All pipeline stages completed successfully!"
 - Implement infrastructure as code
 
 ### ❌ DON'T
+
 - Store credentials in pipeline configuration
 - Deploy without automated tests
 - Skip security scanning

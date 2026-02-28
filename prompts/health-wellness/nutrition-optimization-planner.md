@@ -1,6 +1,7 @@
 # Nutrition Optimization Planner
 
 ## Metadata
+
 - **ID**: `health-nutrition-optimization`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ A personalized nutrition consultant that develops meal plans and eating strategi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating personalized meal plans for health goals
 - Developing sustainable eating habits
 - Optimizing nutrition for energy and performance
@@ -25,6 +27,7 @@ A personalized nutrition consultant that develops meal plans and eating strategi
 - Addressing boredom eating or emotional eating patterns
 
 **Anti-Patterns (When NOT to Use):**
+
 - Medical nutrition therapy for diagnosed conditions
 - Eating disorder treatment or recovery
 - Clinical dietary interventions requiring supervision
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Goals: Lose 15-20 pounds, have more energy, eat healthier overall. Current: Skip breakfast, large lunches (often fast food), big dinners, lots of snacking at night. Work from home, tend to eat out of boredom. Moderate cooking skills, can meal prep 2 hours on Sunday. No dietary restrictions. Previous diets failed because too restrictive.
 
 ### Output
@@ -120,49 +124,57 @@ Based on your previous diet failures from restriction, this plan focuses on addi
 
 **Daily Nutrition Framework:**
 
-*Meal Timing Restructure:*
+_Meal Timing Restructure:_
+
 - Breakfast: Simple protein + fiber (prevents afternoon crash)
 - Lunch: Balanced meal (not compensating for skipped breakfast)
 - Dinner: Moderate portions (you're not famished from skipping meals)
 - Planned evening snack: Addresses nighttime eating proactively
 
-*Core Principles:*
+_Core Principles:_
+
 - Protein at every meal (satiety, energy stability)
 - Vegetables as volume (filling without excess calories)
 - Planned treats (removes restriction-binge cycle)
 
 **Meal Templates:**
 
-*Breakfast Options (5-10 minutes):*
+_Breakfast Options (5-10 minutes):_
+
 - Greek yogurt + berries + handful of nuts
 - Eggs (any style) + vegetables + toast
 - Protein smoothie (protein powder, fruit, spinach, milk)
 
-*Lunch (Make-Ahead or Quick):*
+_Lunch (Make-Ahead or Quick):_
+
 - Salad bowl: Greens + protein + grain + vegetables + dressing
 - Buddha bowl: Rice/quinoa + protein + roasted vegetables
 - Soup + sandwich or wrap (lean protein focus)
 
-*Dinner (Fresh Cooking):*
+_Dinner (Fresh Cooking):_
+
 - Protein (palm-sized) + vegetables (half plate) + starch (fist-sized)
 - One-pan meals: Sheet pan protein and vegetables
 - Stir-fry with rice or noodles (vegetable-heavy)
 
-*Evening Snack (Planned, 150-200 calories):*
+_Evening Snack (Planned, 150-200 calories):_
+
 - Popcorn + small chocolate
 - Fruit + cheese
 - Yogurt + granola
 
 **Sunday Prep System (2 hours):**
 
-*Prep Order:*
+_Prep Order:_
+
 1. Start grains cooking (rice, quinoa)
 2. Roast sheet pan of vegetables
 3. Cook protein (chicken, ground turkey, fish)
 4. Wash and prep salad ingredients
 5. Portion snacks into grab-and-go containers
 
-*Yields:*
+_Yields:_
+
 - 4-5 lunch containers assembled
 - Cooked protein for quick dinners
 - Prepped vegetables for easy additions
@@ -170,24 +182,28 @@ Based on your previous diet failures from restriction, this plan focuses on addi
 
 **Boredom Eating Strategy:**
 
-*Pause and Check Protocol:*
+_Pause and Check Protocol:_
+
 - Before eating, ask: "Am I hungry or bored?"
 - If bored: 10-minute alternative activity first
 - If still want food after 10 minutes: Choose planned option
 - Have low-calorie options available (vegetables, herbal tea)
 
-*Work-from-Home Structure:*
+_Work-from-Home Structure:_
+
 - Designated eating location (not at desk)
 - Scheduled meal and snack times
 - Kitchen only for meal prep and eating
 
 **Sustainable Progress:**
+
 - Week 1-2: Add breakfast, prep lunches
 - Week 3-4: Optimize dinner portions, plan evening snacks
 - Month 2: Fine-tune based on energy and results
 - Ongoing: 80/20 approach (nutritious 80%, flexible 20%)
 
 **Expected Timeline:**
+
 - 4 weeks: Better energy, reduced boredom eating
 - 8 weeks: Noticeable changes, established habits
 - 12+ weeks: Sustainable weight loss (1-2 lbs/week average)
@@ -195,6 +211,7 @@ Based on your previous diet failures from restriction, this plan focuses on addi
 ---
 
 ## Related Prompts
+
 - [Weight Management Coach](weight-management-coach.md)
 - [Workout Routine Designer](workout-routine-designer.md)
 - [Meal Prep Strategist](../personal-productivity/habit-formation-strategist.md)

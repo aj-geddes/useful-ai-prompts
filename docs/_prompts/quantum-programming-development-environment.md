@@ -3,30 +3,31 @@ title: Quantum Programming Development Environment
 slug: quantum-programming-development-environment
 category: quantum computing
 tags:
-- quantum
-- IDE
-- quantum
-- debugging
-- quantum
-- testing
-- development
-- tools
-- CI/CD
+  - quantum
+  - IDE
+  - quantum
+  - debugging
+  - quantum
+  - testing
+  - development
+  - tools
+  - CI/CD
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Design and implement comprehensive quantum programming development environments
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Design and implement comprehensive quantum programming development environments
   including IDEs, debugging tools, testing frameworks, and deployment pipelines. This
   prompt optimizes quantum software development productivity across research and enterprise
   contexts with quantum-specific tooling.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Building quantum development tooling, IDEs, or extensions
-- Creating quantum debugging and state visualization tools
-- Implementing quantum testing frameworks and validation suites
-- Designing CI/CD pipelines for quantum applications
+  - Ideal Scenarios:**
+  - Building quantum development tooling, IDEs, or extensions
+  - Creating quantum debugging and state visualization tools
+  - Implementing quantum testing frameworks and validation suites
+  - Designing CI/CD pipelines for quantum applications
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,16 +42,18 @@ Quantum software development presents unique challenges including state visualiz
 
 <input_handling>
 Required inputs:
+
 - Target user base (researchers, developers, students, enterprise)
 - Quantum backends to support (IBM, Google, IonQ, simulators)
 - Key development workflows to optimize
 
 Infer if not provided:
+
 - IDE platform: VS Code extension or web-based interface
 - Languages: Qiskit, Cirq, PennyLane multi-framework support
 - Deployment: Cloud-based with local development option
 - Scale: 100-1000 initial users with growth path
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive quantum development environment:
@@ -61,22 +64,24 @@ Design comprehensive quantum development environment:
 4. Build simulator integration with seamless backend switching
 5. Implement CI/CD pipeline for quantum applications with hardware qualification
 6. Establish developer experience optimization metrics and feedback loops
-</task>
+   </task>
 
 <output_specification>
 Format: Platform architecture with detailed tool specifications
 Length: 800-1500 words
 Structure:
+
 - IDE architecture and extension framework
 - Debugging and visualization tool design
 - Testing framework specifications
 - Backend integration approach
 - CI/CD pipeline configuration
 - Developer experience metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Intuitive quantum-specific debugging with state inspection
 - Comprehensive testing for quantum correctness and reproducibility
 - Seamless multi-backend support with unified interface
@@ -84,11 +89,12 @@ Excellent outputs demonstrate:
 - Clear documentation and onboarding path
 
 Avoid:
+
 - Ignoring quantum-specific debugging needs (state collapse, entanglement)
 - Missing circuit visualization and optimization capabilities
 - Poor simulator performance impacting development speed
 - Overly complex workflows that hinder adoption
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ensure framework-agnostic design where possible

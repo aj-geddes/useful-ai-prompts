@@ -1,13 +1,14 @@
 ---
 category: backend-development
-date: '2025-01-01'
-description: Implement secure session management systems with JWT tokens, session
+date: "2025-01-01"
+description:
+  Implement secure session management systems with JWT tokens, session
   storage, token refresh, logout handling, and CSRF protection. Use when managing
   user authentication state, handling token lifecycle, and securing sessions.
 layout: skill
 slug: session-management
 tags:
-- go
+  - go
 title: session-management
 ---
 
@@ -109,122 +110,122 @@ class TokenManager:
 
 ```javascript
 // Node.js/Express Example
-const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
-const redis = require('redis');
+const jwt = require("jsonwebtoken");
+const crypto = require("crypto");
+const redis = require("redis");
 
 class SessionManager {
-    constructor() {
-        this.secretKey = process.env.JWT_SECRET || 'dev-secret';
-        this.algorithm = 'HS256';
-        this.accessTokenExpiry = '1h';
-        this.refreshTokenExpiry = '7d';
-        this.redisClient = redis.createClient();
+  constructor() {
+    this.secretKey = process.env.JWT_SECRET || "dev-secret";
+    this.algorithm = "HS256";
+    this.accessTokenExpiry = "1h";
+    this.refreshTokenExpiry = "7d";
+    this.redisClient = redis.createClient();
+  }
+
+  generateTokens(userId, email, role = "user") {
+    const now = new Date();
+    const jti = crypto.randomBytes(16).toString("hex");
+
+    const accessToken = jwt.sign(
+      {
+        userId,
+        email,
+        role,
+        type: "access",
+        jti,
+        iat: Math.floor(now.getTime() / 1000),
+      },
+      this.secretKey,
+      { algorithm: this.algorithm, expiresIn: this.accessTokenExpiry },
+    );
+
+    const refreshToken = jwt.sign(
+      {
+        userId,
+        type: "refresh",
+        jti,
+        iat: Math.floor(now.getTime() / 1000),
+      },
+      this.secretKey,
+      { algorithm: this.algorithm, expiresIn: this.refreshTokenExpiry },
+    );
+
+    return {
+      accessToken,
+      refreshToken,
+      expiresIn: 3600,
+      tokenType: "Bearer",
+    };
+  }
+
+  verifyToken(token, tokenType = "access") {
+    try {
+      const decoded = jwt.verify(token, this.secretKey, {
+        algorithms: [this.algorithm],
+      });
+
+      if (decoded.type !== tokenType) {
+        return { payload: null, error: "Invalid token type" };
+      }
+
+      return { payload: decoded, error: null };
+    } catch (err) {
+      if (err.name === "TokenExpiredError") {
+        return { payload: null, error: "Token expired" };
+      }
+      return { payload: null, error: "Invalid token" };
+    }
+  }
+
+  async isTokenBlacklisted(jti) {
+    const result = await this.redisClient.get(`blacklist:${jti}`);
+    return result !== null;
+  }
+
+  async blacklistToken(jti, expiresIn) {
+    await this.redisClient.setex(`blacklist:${jti}`, expiresIn, "1");
+  }
+
+  async logout(token) {
+    const decoded = jwt.decode(token);
+    if (decoded && decoded.jti) {
+      const expiresIn = decoded.exp - Math.floor(Date.now() / 1000);
+      await this.blacklistToken(decoded.jti, expiresIn);
+    }
+  }
+
+  refreshAccessToken(refreshToken) {
+    const { payload, error } = this.verifyToken(refreshToken, "refresh");
+    if (error) {
+      return { tokens: null, error };
     }
 
-    generateTokens(userId, email, role = 'user') {
-        const now = new Date();
-        const jti = crypto.randomBytes(16).toString('hex');
-
-        const accessToken = jwt.sign(
-            {
-                userId,
-                email,
-                role,
-                type: 'access',
-                jti,
-                iat: Math.floor(now.getTime() / 1000)
-            },
-            this.secretKey,
-            { algorithm: this.algorithm, expiresIn: this.accessTokenExpiry }
-        );
-
-        const refreshToken = jwt.sign(
-            {
-                userId,
-                type: 'refresh',
-                jti,
-                iat: Math.floor(now.getTime() / 1000)
-            },
-            this.secretKey,
-            { algorithm: this.algorithm, expiresIn: this.refreshTokenExpiry }
-        );
-
-        return {
-            accessToken,
-            refreshToken,
-            expiresIn: 3600,
-            tokenType: 'Bearer'
-        };
-    }
-
-    verifyToken(token, tokenType = 'access') {
-        try {
-            const decoded = jwt.verify(token, this.secretKey, {
-                algorithms: [this.algorithm]
-            });
-
-            if (decoded.type !== tokenType) {
-                return { payload: null, error: 'Invalid token type' };
-            }
-
-            return { payload: decoded, error: null };
-        } catch (err) {
-            if (err.name === 'TokenExpiredError') {
-                return { payload: null, error: 'Token expired' };
-            }
-            return { payload: null, error: 'Invalid token' };
-        }
-    }
-
-    async isTokenBlacklisted(jti) {
-        const result = await this.redisClient.get(`blacklist:${jti}`);
-        return result !== null;
-    }
-
-    async blacklistToken(jti, expiresIn) {
-        await this.redisClient.setex(`blacklist:${jti}`, expiresIn, '1');
-    }
-
-    async logout(token) {
-        const decoded = jwt.decode(token);
-        if (decoded && decoded.jti) {
-            const expiresIn = decoded.exp - Math.floor(Date.now() / 1000);
-            await this.blacklistToken(decoded.jti, expiresIn);
-        }
-    }
-
-    refreshAccessToken(refreshToken) {
-        const { payload, error } = this.verifyToken(refreshToken, 'refresh');
-        if (error) {
-            return { tokens: null, error };
-        }
-
-        return {
-            tokens: this.generateTokens(payload.userId, payload.email, payload.role),
-            error: null
-        };
-    }
+    return {
+      tokens: this.generateTokens(payload.userId, payload.email, payload.role),
+      error: null,
+    };
+  }
 }
 
 // Middleware
 const authMiddleware = (req, res, next) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
-    if (!token) {
-        return res.status(401).json({ error: 'No token provided' });
-    }
+  if (!token) {
+    return res.status(401).json({ error: "No token provided" });
+  }
 
-    const sessionManager = new SessionManager();
-    const { payload, error } = sessionManager.verifyToken(token);
+  const sessionManager = new SessionManager();
+  const { payload, error } = sessionManager.verifyToken(token);
 
-    if (error) {
-        return res.status(401).json({ error });
-    }
+  if (error) {
+    return res.status(401).json({ error });
+  }
 
-    req.user = payload;
-    next();
+  req.user = payload;
+  next();
 };
 ```
 
@@ -370,7 +371,7 @@ async function login(email, password) {
 
 ```javascript
 // Node.js middleware chain
-const express = require('express');
+const express = require("express");
 const app = express();
 
 // 1. Parse cookies
@@ -378,61 +379,63 @@ app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
 // 2. Session middleware
-app.use(session({
+app.use(
+  session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'strict',
-        maxAge: 24 * 60 * 60 * 1000
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+      maxAge: 24 * 60 * 60 * 1000,
     },
-    store: new RedisStore({ client: redisClient })
-}));
+    store: new RedisStore({ client: redisClient }),
+  }),
+);
 
 // 3. CSRF protection
 const csrfProtection = csrf({ cookie: false });
 
 // 4. Rate limiting per session
 const sessionRateLimit = rateLimit({
-    store: new RedisStore({ client: redisClient }),
-    keyGenerator: (req) => req.sessionID,
-    windowMs: 15 * 60 * 1000,
-    max: 100
+  store: new RedisStore({ client: redisClient }),
+  keyGenerator: (req) => req.sessionID,
+  windowMs: 15 * 60 * 1000,
+  max: 100,
 });
 
 app.use(sessionRateLimit);
 
 // 5. Authentication check
 const requireAuth = (req, res, next) => {
-    if (!req.session.user) {
-        return res.status(401).json({ error: 'Unauthorized' });
-    }
-    req.user = req.session.user;
-    next();
+  if (!req.session.user) {
+    return res.status(401).json({ error: "Unauthorized" });
+  }
+  req.user = req.session.user;
+  next();
 };
 
-app.post('/api/login', csrfProtection, async (req, res) => {
-    // Verify credentials
-    const user = await User.findOne({ email: req.body.email });
-    if (user && await user.verifyPassword(req.body.password)) {
-        req.session.user = { id: user.id, email: user.email, role: user.role };
-        req.session.regenerate((err) => {
-            if (err) return res.status(500).json({ error: 'Server error' });
-            res.json({ success: true });
-        });
-    } else {
-        res.status(401).json({ error: 'Invalid credentials' });
-    }
+app.post("/api/login", csrfProtection, async (req, res) => {
+  // Verify credentials
+  const user = await User.findOne({ email: req.body.email });
+  if (user && (await user.verifyPassword(req.body.password))) {
+    req.session.user = { id: user.id, email: user.email, role: user.role };
+    req.session.regenerate((err) => {
+      if (err) return res.status(500).json({ error: "Server error" });
+      res.json({ success: true });
+    });
+  } else {
+    res.status(401).json({ error: "Invalid credentials" });
+  }
 });
 
-app.post('/api/logout', requireAuth, (req, res) => {
-    req.session.destroy((err) => {
-        if (err) return res.status(500).json({ error: 'Logout failed' });
-        res.clearCookie('connect.sid');
-        res.json({ success: true });
-    });
+app.post("/api/logout", requireAuth, (req, res) => {
+  req.session.destroy((err) => {
+    if (err) return res.status(500).json({ error: "Logout failed" });
+    res.clearCookie("connect.sid");
+    res.json({ success: true });
+  });
 });
 ```
 
@@ -521,6 +524,7 @@ cleanup.start()
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTPS for all session transmission
 - Implement secure cookies (httpOnly, sameSite, secure flags)
 - Use JWT with proper expiration times
@@ -534,6 +538,7 @@ cleanup.start()
 - Use CSRF tokens for state-changing requests
 
 ### ❌ DON'T
+
 - Store sensitive data in tokens
 - Use short secret keys
 - Transmit tokens in URLs

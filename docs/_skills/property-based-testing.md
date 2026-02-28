@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design property-based tests that verify code properties hold for all
+date: "2025-01-01"
+description:
+  Design property-based tests that verify code properties hold for all
   inputs using automatic test case generation. Use for property-based, QuickCheck,
   hypothesis testing, generative testing, and invariant verification.
 layout: skill
 slug: property-based-testing
 tags:
-- testing
+  - testing
 title: property-based-testing
 ---
 
@@ -232,52 +233,52 @@ TestStack = StackMachine.TestCase
 
 ```typescript
 // string.test.ts
-import * as fc from 'fast-check';
+import * as fc from "fast-check";
 
-describe('String Operations', () => {
-  test('reverse twice returns original', () => {
+describe("String Operations", () => {
+  test("reverse twice returns original", () => {
     fc.assert(
       fc.property(fc.string(), (s) => {
-        const reversed = s.split('').reverse().join('');
-        const doubleReversed = reversed.split('').reverse().join('');
+        const reversed = s.split("").reverse().join("");
+        const doubleReversed = reversed.split("").reverse().join("");
         return s === doubleReversed;
-      })
+      }),
     );
   });
 
-  test('concatenation length', () => {
+  test("concatenation length", () => {
     fc.assert(
       fc.property(fc.string(), fc.string(), (s1, s2) => {
         return (s1 + s2).length === s1.length + s2.length;
-      })
+      }),
     );
   });
 
-  test('uppercase is idempotent', () => {
+  test("uppercase is idempotent", () => {
     fc.assert(
       fc.property(fc.string(), (s) => {
         const once = s.toUpperCase();
         const twice = once.toUpperCase();
         return once === twice;
-      })
+      }),
     );
   });
 });
 
 // array.test.ts
-import * as fc from 'fast-check';
+import * as fc from "fast-check";
 
 function quickSort(arr: number[]): number[] {
   if (arr.length <= 1) return arr;
   const pivot = arr[Math.floor(arr.length / 2)];
-  const left = arr.filter(x => x < pivot);
-  const middle = arr.filter(x => x === pivot);
-  const right = arr.filter(x => x > pivot);
+  const left = arr.filter((x) => x < pivot);
+  const middle = arr.filter((x) => x === pivot);
+  const right = arr.filter((x) => x > pivot);
   return [...quickSort(left), ...middle, ...quickSort(right)];
 }
 
-describe('Sorting Properties', () => {
-  test('sorted array is ordered', () => {
+describe("Sorting Properties", () => {
+  test("sorted array is ordered", () => {
     fc.assert(
       fc.property(fc.array(fc.integer()), (arr) => {
         const sorted = quickSort(arr);
@@ -285,41 +286,41 @@ describe('Sorting Properties', () => {
           if (sorted[i] > sorted[i + 1]) return false;
         }
         return true;
-      })
+      }),
     );
   });
 
-  test('sorting preserves length', () => {
+  test("sorting preserves length", () => {
     fc.assert(
       fc.property(fc.array(fc.integer()), (arr) => {
         return quickSort(arr).length === arr.length;
-      })
+      }),
     );
   });
 
-  test('sorting preserves elements', () => {
+  test("sorting preserves elements", () => {
     fc.assert(
       fc.property(fc.array(fc.integer()), (arr) => {
         const sorted = quickSort(arr);
         const originalSorted = [...arr].sort((a, b) => a - b);
         return JSON.stringify(sorted) === JSON.stringify(originalSorted);
-      })
+      }),
     );
   });
 
-  test('sorting is idempotent', () => {
+  test("sorting is idempotent", () => {
     fc.assert(
       fc.property(fc.array(fc.integer()), (arr) => {
         const once = quickSort(arr);
         const twice = quickSort(once);
         return JSON.stringify(once) === JSON.stringify(twice);
-      })
+      }),
     );
   });
 });
 
 // object.test.ts
-import * as fc from 'fast-check';
+import * as fc from "fast-check";
 
 interface User {
   id: number;
@@ -335,22 +336,22 @@ const userArbitrary = fc.record({
   age: fc.integer({ min: 0, max: 120 }),
 });
 
-describe('User Validation', () => {
-  test('serialization round trip', () => {
+describe("User Validation", () => {
+  test("serialization round trip", () => {
     fc.assert(
       fc.property(userArbitrary, (user) => {
         const json = JSON.stringify(user);
         const parsed = JSON.parse(json);
         return JSON.stringify(parsed) === json;
-      })
+      }),
     );
   });
 
-  test('age validation', () => {
+  test("age validation", () => {
     fc.assert(
       fc.property(userArbitrary, (user) => {
         return user.age >= 0 && user.age <= 120;
-      })
+      }),
     );
   });
 });
@@ -358,27 +359,27 @@ describe('User Validation', () => {
 // custom generators
 const positiveIntegerArray = fc.array(fc.integer({ min: 1 }), { minLength: 1 });
 
-test('sum of positives is positive', () => {
+test("sum of positives is positive", () => {
   fc.assert(
     fc.property(positiveIntegerArray, (arr) => {
       const sum = arr.reduce((a, b) => a + b, 0);
       return sum > 0;
-    })
+    }),
   );
 });
 
 // test with shrinking
-test('find minimum failing case', () => {
+test("find minimum failing case", () => {
   try {
     fc.assert(
       fc.property(fc.array(fc.integer()), (arr) => {
         // This will fail for arrays with negative numbers
-        return arr.every(n => n >= 0);
-      })
+        return arr.every((n) => n >= 0);
+      }),
     );
   } catch (error) {
     // fast-check will shrink to minimal failing case: [-1] or similar
-    console.log('Minimal failing case found:', error);
+    console.log("Minimal failing case found:", error);
   }
 });
 ```
@@ -501,6 +502,7 @@ public class MathOperationsTest {
 ## Common Properties to Test
 
 ### Universal Properties
+
 - **Idempotence**: `f(f(x)) = f(x)`
 - **Identity**: `f(x, identity) = x`
 - **Commutativity**: `f(a, b) = f(b, a)`
@@ -508,6 +510,7 @@ public class MathOperationsTest {
 - **Inverse**: `f(inverse_f(x)) = x`
 
 ### Data Structure Properties
+
 - **Round-trip**: `decode(encode(x)) = x`
 - **Preservation**: Operation preserves length, elements, or structure
 - **Ordering**: Elements maintain required order
@@ -517,6 +520,7 @@ public class MathOperationsTest {
 ## Best Practices
 
 ### ✅ DO
+
 - Focus on general properties, not specific cases
 - Test mathematical properties (commutativity, associativity)
 - Verify round-trip encoding/decoding
@@ -526,6 +530,7 @@ public class MathOperationsTest {
 - Generate realistic input distributions
 
 ### ❌ DON'T
+
 - Test properties that are tautologies
 - Over-constrain input generation
 - Ignore shrunk test failures

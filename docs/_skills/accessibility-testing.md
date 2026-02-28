@@ -1,13 +1,14 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Test web applications for WCAG compliance and ensure usability for users
+date: "2025-01-01"
+description:
+  Test web applications for WCAG compliance and ensure usability for users
   with disabilities. Use for accessibility test, a11y, axe, ARIA, keyboard navigation,
   screen reader compatibility, and WCAG validation.
 layout: skill
 slug: accessibility-testing
 tags:
-- testing
+  - testing
 title: accessibility-testing
 ---
 
@@ -40,84 +41,82 @@ Accessibility testing ensures web applications are usable by people with disabil
 
 ```typescript
 // tests/accessibility/homepage.a11y.test.ts
-import { test, expect } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
+import { test, expect } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
 
-test.describe('Homepage Accessibility', () => {
-  test('should not have any automatically detectable WCAG A or AA violations', async ({
+test.describe("Homepage Accessibility", () => {
+  test("should not have any automatically detectable WCAG A or AA violations", async ({
     page,
   }) => {
-    await page.goto('/');
+    await page.goto("/");
 
     const accessibilityScanResults = await new AxeBuilder({ page })
-      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
+      .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
       .analyze();
 
     expect(accessibilityScanResults.violations).toEqual([]);
   });
 
-  test('navigation should be accessible', async ({ page }) => {
-    await page.goto('/');
+  test("navigation should be accessible", async ({ page }) => {
+    await page.goto("/");
 
-    const results = await new AxeBuilder({ page })
-      .include('nav')
-      .analyze();
+    const results = await new AxeBuilder({ page }).include("nav").analyze();
 
     expect(results.violations).toEqual([]);
   });
 
-  test('form should be accessible', async ({ page }) => {
-    await page.goto('/contact');
+  test("form should be accessible", async ({ page }) => {
+    await page.goto("/contact");
 
     const results = await new AxeBuilder({ page })
-      .include('form')
-      .withTags(['wcag2a', 'wcag2aa'])
+      .include("form")
+      .withTags(["wcag2a", "wcag2aa"])
       .analyze();
 
     expect(results.violations).toEqual([]);
 
     // Additional form checks
-    const inputs = await page.locator('input, select, textarea').all();
+    const inputs = await page.locator("input, select, textarea").all();
     for (const input of inputs) {
-      const id = await input.getAttribute('id');
-      const ariaLabel = await input.getAttribute('aria-label');
-      const ariaLabelledBy = await input.getAttribute('aria-labelledby');
+      const id = await input.getAttribute("id");
+      const ariaLabel = await input.getAttribute("aria-label");
+      const ariaLabelledBy = await input.getAttribute("aria-labelledby");
 
       // Every input should have an associated label
       if (id) {
         const label = await page.locator(`label[for="${id}"]`).count();
         expect(
           label > 0 || ariaLabel || ariaLabelledBy,
-          `Input with id="${id}" has no associated label`
+          `Input with id="${id}" has no associated label`,
         ).toBeTruthy();
       }
     }
   });
 
-  test('images should have alt text', async ({ page }) => {
-    await page.goto('/');
+  test("images should have alt text", async ({ page }) => {
+    await page.goto("/");
 
-    const images = await page.locator('img').all();
+    const images = await page.locator("img").all();
 
     for (const img of images) {
-      const alt = await img.getAttribute('alt');
-      const role = await img.getAttribute('role');
-      const ariaLabel = await img.getAttribute('aria-label');
+      const alt = await img.getAttribute("alt");
+      const role = await img.getAttribute("role");
+      const ariaLabel = await img.getAttribute("aria-label");
 
       // Decorative images should have empty alt or role="presentation"
       // Content images must have descriptive alt text
       expect(
-        alt !== null || role === 'presentation' || ariaLabel,
-        'Image missing alt text'
+        alt !== null || role === "presentation" || ariaLabel,
+        "Image missing alt text",
       ).toBeTruthy();
     }
   });
 
-  test('color contrast should meet AA standards', async ({ page }) => {
-    await page.goto('/');
+  test("color contrast should meet AA standards", async ({ page }) => {
+    await page.goto("/");
 
     const results = await new AxeBuilder({ page })
-      .withTags(['cat.color'])
+      .withTags(["cat.color"])
       .analyze();
 
     expect(results.violations).toEqual([]);
@@ -129,13 +128,13 @@ test.describe('Homepage Accessibility', () => {
 
 ```typescript
 // tests/accessibility/keyboard-navigation.test.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test.describe('Keyboard Navigation', () => {
-  test('should navigate through focusable elements with Tab', async ({
+test.describe("Keyboard Navigation", () => {
+  test("should navigate through focusable elements with Tab", async ({
     page,
   }) => {
-    await page.goto('/');
+    await page.goto("/");
 
     // Get all focusable elements
     const focusableSelectors =
@@ -145,7 +144,7 @@ test.describe('Keyboard Navigation', () => {
 
     // Tab through all elements
     for (let i = 0; i < focusableElements.length; i++) {
-      await page.keyboard.press('Tab');
+      await page.keyboard.press("Tab");
 
       const focusedElement = await page.evaluate(() => {
         return {
@@ -159,28 +158,28 @@ test.describe('Keyboard Navigation', () => {
     }
   });
 
-  test('should skip navigation with skip link', async ({ page }) => {
-    await page.goto('/');
+  test("should skip navigation with skip link", async ({ page }) => {
+    await page.goto("/");
 
     // Tab to skip link (usually first focusable element)
-    await page.keyboard.press('Tab');
+    await page.keyboard.press("Tab");
 
-    const skipLink = await page.locator('.skip-link');
+    const skipLink = await page.locator(".skip-link");
     await expect(skipLink).toBeFocused();
 
     // Activate skip link
-    await page.keyboard.press('Enter');
+    await page.keyboard.press("Enter");
 
     // Focus should be on main content
     const focusedElement = await page.evaluate(() => {
       return document.activeElement?.id;
     });
 
-    expect(focusedElement).toBe('main-content');
+    expect(focusedElement).toBe("main-content");
   });
 
-  test('modal should trap focus', async ({ page }) => {
-    await page.goto('/');
+  test("modal should trap focus", async ({ page }) => {
+    await page.goto("/");
 
     // Open modal
     await page.click('[data-testid="open-modal"]');
@@ -188,14 +187,14 @@ test.describe('Keyboard Navigation', () => {
 
     const modal = page.locator('[role="dialog"]');
     const focusableInModal = modal.locator(
-      'a[href], button, input, select, textarea'
+      "a[href], button, input, select, textarea",
     );
 
     const count = await focusableInModal.count();
 
     // Tab through all elements in modal
     for (let i = 0; i < count + 2; i++) {
-      await page.keyboard.press('Tab');
+      await page.keyboard.press("Tab");
     }
 
     // Focus should still be within modal
@@ -207,57 +206,57 @@ test.describe('Keyboard Navigation', () => {
     expect(focusedElement).toBe(true);
   });
 
-  test('dropdown menu should be keyboard accessible', async ({ page }) => {
-    await page.goto('/');
+  test("dropdown menu should be keyboard accessible", async ({ page }) => {
+    await page.goto("/");
 
     // Navigate to dropdown trigger
-    await page.keyboard.press('Tab');
+    await page.keyboard.press("Tab");
     const dropdown = page.locator('[data-testid="dropdown-menu"]');
     await dropdown.focus();
 
     // Open dropdown with Enter
-    await page.keyboard.press('Enter');
+    await page.keyboard.press("Enter");
 
     // Menu should be visible
     const menu = page.locator('[role="menu"]');
     await expect(menu).toBeVisible();
 
     // Navigate menu items with arrow keys
-    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press("ArrowDown");
     const firstItem = menu.locator('[role="menuitem"]').first();
     await expect(firstItem).toBeFocused();
 
-    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press("ArrowDown");
     const secondItem = menu.locator('[role="menuitem"]').nth(1);
     await expect(secondItem).toBeFocused();
 
     // Escape should close menu
-    await page.keyboard.press('Escape');
+    await page.keyboard.press("Escape");
     await expect(menu).not.toBeVisible();
     await expect(dropdown).toBeFocused();
   });
 
-  test('form can be completed using keyboard only', async ({ page }) => {
-    await page.goto('/contact');
+  test("form can be completed using keyboard only", async ({ page }) => {
+    await page.goto("/contact");
 
     // Tab to first field
-    await page.keyboard.press('Tab');
-    await page.keyboard.type('John Doe');
+    await page.keyboard.press("Tab");
+    await page.keyboard.type("John Doe");
 
     // Tab to email field
-    await page.keyboard.press('Tab');
-    await page.keyboard.type('john@example.com');
+    await page.keyboard.press("Tab");
+    await page.keyboard.type("john@example.com");
 
     // Tab to message
-    await page.keyboard.press('Tab');
-    await page.keyboard.type('Test message');
+    await page.keyboard.press("Tab");
+    await page.keyboard.type("Test message");
 
     // Tab to submit and activate
-    await page.keyboard.press('Tab');
-    await page.keyboard.press('Enter');
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Enter");
 
     // Check form was submitted
-    await expect(page.locator('.success-message')).toBeVisible();
+    await expect(page.locator(".success-message")).toBeVisible();
   });
 });
 ```
@@ -266,48 +265,48 @@ test.describe('Keyboard Navigation', () => {
 
 ```typescript
 // tests/accessibility/aria.test.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from "@playwright/test";
 
-test.describe('ARIA Attributes', () => {
-  test('buttons should have accessible names', async ({ page }) => {
-    await page.goto('/');
+test.describe("ARIA Attributes", () => {
+  test("buttons should have accessible names", async ({ page }) => {
+    await page.goto("/");
 
-    const buttons = await page.locator('button').all();
+    const buttons = await page.locator("button").all();
 
     for (const button of buttons) {
       const text = await button.textContent();
-      const ariaLabel = await button.getAttribute('aria-label');
-      const ariaLabelledBy = await button.getAttribute('aria-labelledby');
+      const ariaLabel = await button.getAttribute("aria-label");
+      const ariaLabelledBy = await button.getAttribute("aria-labelledby");
 
       expect(
         text?.trim() || ariaLabel || ariaLabelledBy,
-        'Button has no accessible name'
+        "Button has no accessible name",
       ).toBeTruthy();
     }
   });
 
-  test('icons should have aria-hidden or labels', async ({ page }) => {
-    await page.goto('/');
+  test("icons should have aria-hidden or labels", async ({ page }) => {
+    await page.goto("/");
 
     const icons = await page
       .locator('[class*="icon"], svg[class*="icon"]')
       .all();
 
     for (const icon of icons) {
-      const ariaHidden = await icon.getAttribute('aria-hidden');
-      const ariaLabel = await icon.getAttribute('aria-label');
-      const title = await icon.locator('title').count();
+      const ariaHidden = await icon.getAttribute("aria-hidden");
+      const ariaLabel = await icon.getAttribute("aria-label");
+      const title = await icon.locator("title").count();
 
       // Icon should be hidden from screen readers OR have a label
       expect(
-        ariaHidden === 'true' || ariaLabel || title > 0,
-        'Icon without aria-hidden or accessible name'
+        ariaHidden === "true" || ariaLabel || title > 0,
+        "Icon without aria-hidden or accessible name",
       ).toBeTruthy();
     }
   });
 
-  test('custom widgets should have correct roles', async ({ page }) => {
-    await page.goto('/components');
+  test("custom widgets should have correct roles", async ({ page }) => {
+    await page.goto("/components");
 
     // Tab widget
     const tablist = page.locator('[role="tablist"]');
@@ -325,13 +324,13 @@ test.describe('ARIA Attributes', () => {
 
     // Check tab associations
     const firstTab = tabs.first();
-    const ariaControls = await firstTab.getAttribute('aria-controls');
+    const ariaControls = await firstTab.getAttribute("aria-controls");
     const associatedPanel = page.locator(`[id="${ariaControls}"]`);
     await expect(associatedPanel).toHaveCount(1);
   });
 
-  test('live regions announce changes', async ({ page }) => {
-    await page.goto('/');
+  test("live regions announce changes", async ({ page }) => {
+    await page.goto("/");
 
     // Find live region
     const liveRegion = page.locator('[role="status"], [aria-live]');
@@ -340,10 +339,10 @@ test.describe('ARIA Attributes', () => {
     await page.click('[data-testid="load-data"]');
 
     // Wait for content
-    await liveRegion.waitFor({ state: 'visible' });
+    await liveRegion.waitFor({ state: "visible" });
 
-    const ariaLive = await liveRegion.getAttribute('aria-live');
-    expect(['polite', 'assertive']).toContain(ariaLive);
+    const ariaLive = await liveRegion.getAttribute("aria-live");
+    expect(["polite", "assertive"]).toContain(ariaLive);
   });
 });
 ```
@@ -388,41 +387,41 @@ describe('Button Accessibility', () => {
 
 ```javascript
 // cypress/e2e/accessibility.cy.js
-describe('Accessibility Tests', () => {
+describe("Accessibility Tests", () => {
   beforeEach(() => {
-    cy.visit('/');
+    cy.visit("/");
     cy.injectAxe();
   });
 
-  it('has no detectable a11y violations on load', () => {
+  it("has no detectable a11y violations on load", () => {
     cy.checkA11y();
   });
 
-  it('navigation is accessible', () => {
-    cy.checkA11y('nav');
+  it("navigation is accessible", () => {
+    cy.checkA11y("nav");
   });
 
-  it('focuses on first error when form submission fails', () => {
-    cy.get('form').within(() => {
+  it("focuses on first error when form submission fails", () => {
+    cy.get("form").within(() => {
       cy.get('[type="submit"]').click();
     });
 
-    cy.focused().should('have.attr', 'aria-invalid', 'true');
+    cy.focused().should("have.attr", "aria-invalid", "true");
   });
 
-  it('modal has correct focus management', () => {
+  it("modal has correct focus management", () => {
     cy.get('[data-cy="open-modal"]').click();
 
     // Focus should be in modal
-    cy.get('[role="dialog"]').should('exist');
-    cy.focused().parents('[role="dialog"]').should('exist');
+    cy.get('[role="dialog"]').should("exist");
+    cy.focused().parents('[role="dialog"]').should("exist");
 
     // Close modal with Escape
-    cy.get('body').type('{esc}');
-    cy.get('[role="dialog"]').should('not.exist');
+    cy.get("body").type("{esc}");
+    cy.get('[role="dialog"]').should("not.exist");
 
     // Focus returns to trigger
-    cy.get('[data-cy="open-modal"]').should('have.focus');
+    cy.get('[data-cy="open-modal"]').should("have.focus");
   });
 });
 ```
@@ -502,6 +501,7 @@ class TestAccessibility:
 ## Manual Testing Checklist
 
 ### Keyboard Navigation
+
 - [ ] All interactive elements accessible via Tab
 - [ ] Shift+Tab navigates backwards
 - [ ] Enter/Space activates buttons/links
@@ -512,6 +512,7 @@ class TestAccessibility:
 - [ ] No keyboard traps
 
 ### Screen Readers
+
 - [ ] Page has descriptive title
 - [ ] Headings form logical hierarchy
 - [ ] Images have alt text
@@ -522,6 +523,7 @@ class TestAccessibility:
 - [ ] Custom widgets have ARIA roles
 
 ### Visual
+
 - [ ] Color contrast meets AA (4.5:1 normal, 3:1 large text)
 - [ ] Information not conveyed by color alone
 - [ ] Text can be resized 200% without breaking
@@ -531,6 +533,7 @@ class TestAccessibility:
 ## Best Practices
 
 ### ✅ DO
+
 - Test with real assistive technologies
 - Include keyboard-only users
 - Test color contrast
@@ -541,6 +544,7 @@ class TestAccessibility:
 - Follow WCAG 2.1 AA standards
 
 ### ❌ DON'T
+
 - Rely only on automated tests (they catch ~30-40% of issues)
 - Use color alone to convey information
 - Skip keyboard navigation testing

@@ -3,28 +3,29 @@ title: Business Analyst Strategic Excellence
 slug: business-analyst-strategic-excellence
 category: business/management
 tags:
-- business
-- analysis
-- strategic
-- planning
-- process
-- improvement
-- solution
-- design
-- ROI
+  - business
+  - analysis
+  - strategic
+  - planning
+  - process
+  - improvement
+  - solution
+  - design
+  - ROI
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Conducts strategic business analysis to drive organizational improvement
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Conducts strategic business analysis to drive organizational improvement
   through root cause analysis, solution design, and quantified business cases. Transforms
   complex problems into actionable roadmaps with measurable outcomes.
 layout: prompt
 use_cases:
-- Analyzing business problems requiring data-driven solutions
-- Building business cases for major investments
-- Designing solution options with trade-off analysis
-- Creating implementation roadmaps with success metrics
+  - Analyzing business problems requiring data-driven solutions
+  - Building business cases for major investments
+  - Designing solution options with trade-off analysis
+  - Creating implementation roadmaps with success metrics
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,16 +40,18 @@ Strategic business analysis bridges the gap between problems and solutions. Effe
 
 <input_handling>
 Required inputs:
+
 - Business problem or opportunity description
 - Current state vs desired future state
 - Key stakeholders affected
 - Available budget and timeline constraints
 
 Infer if not provided:
+
 - Analysis framework (default: root cause + options analysis)
 - ROI timeframe (default: 3-year NPV)
 - Success metrics (default: financial + operational KPIs)
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive strategic analysis:
@@ -59,33 +62,36 @@ Conduct comprehensive strategic analysis:
 4. Build quantified business case with scenarios
 5. Create phased implementation roadmap
 6. Define success metrics (leading and lagging indicators)
-</task>
+   </task>
 
 <output_specification>
 Format: Structured sections with data visualizations and financial analysis
 Length: 800-1200 words
 Structure:
+
 - Root cause breakdown with driver analysis
 - Solution options matrix with trade-offs
 - Business case with ROI calculations
 - Implementation roadmap with phases
 - Success metrics dashboard
 - Risk factors and mitigation
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Root causes are specific and actionable (not symptoms)
 - Options have clear trade-offs with honest assessment
 - Business case includes risk-adjusted scenarios
 - Roadmap has realistic timelines and dependencies
 
 Avoid:
+
 - Surface-level symptom analysis
 - Single solution without alternatives
 - Missing financial quantification
 - Unrealistic implementation assumptions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Base assumptions on available data, flag where estimates used

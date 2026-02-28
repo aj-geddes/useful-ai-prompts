@@ -1,6 +1,7 @@
 # Skill Acquisition Expert
 
 ## Metadata
+
 - **ID**: `learning-skill-acquisition-expert`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Designs effective strategies for acquiring new skills quickly using science-based approaches. Applies deliberate practice principles, motor learning science, and cognitive skill development research to accelerate skill building for technical abilities, soft skills, or professional capabilities.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Learning a new technical or professional skill with limited time
 - Developing soft skills like communication, leadership, or negotiation
 - Creating skill development programs for individuals or small teams
@@ -23,6 +27,7 @@ Designs effective strategies for acquiring new skills quickly using science-base
 - Preparing for skill demonstrations (interviews, presentations, performances)
 
 **Anti-patterns (don't use for):**
+
 - Academic course design requiring curriculum standards (use Curriculum Development Expert)
 - One-time knowledge acquisition without skill practice
 - Pure memorization tasks without application
@@ -128,113 +133,130 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I'm a technical expert who needs to improve public speaking for conference presentations. Get nervous, tend to be too detailed, and lose the audience. Have 30 minutes daily to practice.
 
 ### Output
+
 **Skill Acquisition Framework: Conference Presentation Skills**
 
 **1. Skill Breakdown**
 
-*Core Sub-skills:*
+_Core Sub-skills:_
+
 - Anxiety management (physiological control, mental reframing)
 - Audience engagement (connection, reading the room)
 - Content simplification (abstraction, analogies, "curse of knowledge")
 - Vocal delivery (pace, pause, projection, variety)
 - Stage presence (movement, gesture, eye contact)
 
-*Prerequisites:* Basic slide creation (assumed), subject matter expertise (confirmed)
+_Prerequisites:_ Basic slide creation (assumed), subject matter expertise (confirmed)
 
-*Priority Sequence:* Anxiety management first (blocking other skills), then simplification, then delivery, finally stage presence
+_Priority Sequence:_ Anxiety management first (blocking other skills), then simplification, then delivery, finally stage presence
 
 **2. Practice Design (30 min/day)**
 
-*Weeks 1-2: Foundation (Anxiety + Simplification)*
+_Weeks 1-2: Foundation (Anxiety + Simplification)_
 
 Daily routine:
+
 - 5 min: Box breathing exercise (4-4-4-4)
 - 10 min: "Explain to a 12-year-old" drill - pick one technical concept, explain in 2 minutes with zero jargon
 - 10 min: Record and review - watch for filler words, jargon slips
 - 5 min: Reflection journaling - what felt hard, what improved
 
-*Weeks 3-4: Delivery Focus*
+_Weeks 3-4: Delivery Focus_
 
 Daily routine:
+
 - 3 min: Vocal warm-up (tongue twisters, projection exercises)
 - 12 min: "Pause power" drill - practice 5-minute segment with deliberate 2-second pauses after key points
 - 10 min: Record with focus on pace variation - aim for slow (key points) and normal (transitions)
 - 5 min: Compare to expert model - note 2 specific techniques to try
 
-*Weeks 5-6: Engagement + Integration*
+_Weeks 5-6: Engagement + Integration_
 
 Daily routine:
+
 - 5 min: Opening hook practice - 3 different openings for same topic
 - 15 min: "What-So What-Now What" framework - structured 10-minute talk
 - 10 min: Review with audience engagement lens - where would you lose them?
 
-*Weeks 7-8: Full Performance*
+_Weeks 7-8: Full Performance_
 
 Daily routine:
+
 - 5 min: Pre-talk ritual (breathing, power pose, affirmations)
 - 20 min: Full 15-minute presentation rehearsal with simulated Q&A
 - 5 min: Self-assessment against rubric
 
 **3. Resources**
 
-*Video Review:* Record all practice on phone, review immediately after each session
+_Video Review:_ Record all practice on phone, review immediately after each session
 
-*Expert Models:* Watch 3 TED talks weekly, actively annotate:
+_Expert Models:_ Watch 3 TED talks weekly, actively annotate:
+
 - Recommended: Chris Anderson, Amy Cuddy, Simon Sinek
 - Note: Opening technique, transition language, pace variation, audience callbacks
 
-*Feedback Sources:*
+_Feedback Sources:_
+
 - Join Toastmasters (weekly) or virtual practice group
 - Recruit 2-3 colleagues for monthly practice audience
 - Schedule 1 session with presentation coach (Week 4)
 
-*Tools:*
+_Tools:_
+
 - Anxiety: Headspace app (speaking anxiety series)
 - Practice: Orai app for filler word detection
 - Recording: Phone tripod for consistent angle
 
 **4. Progress Tracking**
 
-*Weekly Metrics:*
+_Weekly Metrics:_
+
 - Filler word count per minute (target: < 2)
 - Audience-friendly terminology ratio (target: > 80%)
 - Comfort rating self-assessment (1-10)
 - Practice completion rate
 
-*Milestones:*
+_Milestones:_
+
 - Week 2: Complete 5-minute recording without restart
 - Week 4: Explain complex topic in 2 minutes to non-expert
 - Week 6: Deliver to live audience of 3+ people
 - Week 8: Complete full presentation with < 3 filler words
 
-*Video Comparison:* Week 1 vs. Week 8 side-by-side review
+_Video Comparison:_ Week 1 vs. Week 8 side-by-side review
 
 **5. Integration Plan**
 
-*Real-World Application:*
+_Real-World Application:_
+
 - Week 4: Volunteer for 5-minute team meeting presentation
 - Week 6: Present at department meeting (10 min)
 - Week 8: Submit proposal for local meetup or internal conference
 
-*Performance Opportunities:*
+_Performance Opportunities:_
+
 - Monthly Toastmasters or similar
 - Quarterly internal tech talks
 - Annual conference presentation goal
 
-*Maintenance Schedule:*
+_Maintenance Schedule:_
+
 - One practice recording weekly after initial 8 weeks
 - Quarterly full presentation commitment
 - Annual presentation skills refresh workshop
 
-*Plateau Breakers:*
+_Plateau Breakers:_
+
 - If anxiety persists: Add exposure therapy (present to strangers online)
 - If content stays complex: Force "tweet-sized" summaries
 - If engagement lags: Study comedian timing and callbacks
 
 ## Related Prompts
+
 - [Training Material Development Expert](training-material-development-expert.md) - For creating supporting materials
 - [Public Speaking Coach](../learning-skills/public-speaking-coach.md) - For general speaking development
 - [Learning Plan Creation Expert](learning-plan-creation-expert.md) - For comprehensive learning roadmaps

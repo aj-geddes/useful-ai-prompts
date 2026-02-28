@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Integrate automated testing into CI/CD pipelines for continuous quality
+date: "2025-01-01"
+description:
+  Integrate automated testing into CI/CD pipelines for continuous quality
   feedback. Use for continuous testing, CI testing, automated testing pipelines, test
   orchestration, and DevOps quality practices.
 layout: skill
 slug: continuous-testing
 tags:
-- ci/cd
-- testing
+  - ci/cd
+  - testing
 title: continuous-testing
 ---
 
@@ -54,7 +55,7 @@ on:
     branches: [main, develop]
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: "18"
 
 jobs:
   # Unit tests - Fast feedback
@@ -69,7 +70,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -126,7 +127,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -159,7 +160,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -189,13 +190,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Required for Percy
+          fetch-depth: 0 # Required for Percy
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -363,9 +364,9 @@ contract-tests:
   script:
     - npm run test:pact
     - npx pact-broker publish ./pacts \
-        --consumer-app-version=$CI_COMMIT_SHA \
-        --broker-base-url=$PACT_BROKER_URL \
-        --broker-token=$PACT_BROKER_TOKEN
+      --consumer-app-version=$CI_COMMIT_SHA \
+      --broker-base-url=$PACT_BROKER_URL \
+      --broker-token=$PACT_BROKER_TOKEN
   only:
     - merge_requests
     - main
@@ -511,28 +512,28 @@ pipeline {
 
 ```typescript
 // scripts/run-affected-tests.ts
-import { execSync } from 'child_process';
-import * as fs from 'fs';
+import { execSync } from "child_process";
+import * as fs from "fs";
 
 class AffectedTestRunner {
   getAffectedFiles(): string[] {
     // Get changed files from git
-    const output = execSync('git diff --name-only HEAD~1', {
-      encoding: 'utf-8',
+    const output = execSync("git diff --name-only HEAD~1", {
+      encoding: "utf-8",
     });
-    return output.split('\n').filter(Boolean);
+    return output.split("\n").filter(Boolean);
   }
 
   getTestsForFiles(files: string[]): Set<string> {
     const tests = new Set<string>();
 
     for (const file of files) {
-      if (file.endsWith('.test.ts') || file.endsWith('.spec.ts')) {
+      if (file.endsWith(".test.ts") || file.endsWith(".spec.ts")) {
         // File is already a test
         tests.add(file);
-      } else if (file.endsWith('.ts')) {
+      } else if (file.endsWith(".ts")) {
         // Find associated test file
-        const testFile = file.replace('.ts', '.test.ts');
+        const testFile = file.replace(".ts", ".test.ts");
         if (fs.existsSync(testFile)) {
           tests.add(testFile);
         }
@@ -540,10 +541,10 @@ class AffectedTestRunner {
         // Check for integration tests that import this file
         const integrationTests = execSync(
           `grep -r "from.*${file}" tests/integration/*.test.ts`,
-          { encoding: 'utf-8' }
-        ).split('\n');
+          { encoding: "utf-8" },
+        ).split("\n");
 
-        integrationTests.forEach(line => {
+        integrationTests.forEach((line) => {
           const match = line.match(/^([^:]+):/);
           if (match) tests.add(match[1]);
         });
@@ -555,20 +556,20 @@ class AffectedTestRunner {
 
   run() {
     const affectedFiles = this.getAffectedFiles();
-    console.log('Affected files:', affectedFiles);
+    console.log("Affected files:", affectedFiles);
 
     const testsToRun = this.getTestsForFiles(affectedFiles);
-    console.log('Tests to run:', testsToRun);
+    console.log("Tests to run:", testsToRun);
 
     if (testsToRun.size === 0) {
-      console.log('No tests affected');
+      console.log("No tests affected");
       return;
     }
 
     // Run only affected tests
-    const testPattern = Array.from(testsToRun).join('|');
+    const testPattern = Array.from(testsToRun).join("|");
     execSync(`npm test -- --testPathPattern="${testPattern}"`, {
-      stdio: 'inherit',
+      stdio: "inherit",
     });
   }
 }
@@ -584,7 +585,7 @@ name: Flaky Test Detection
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Run nightly
+    - cron: "0 2 * * *" # Run nightly
 
 jobs:
   detect-flaky-tests:
@@ -596,7 +597,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm ci
@@ -614,24 +615,24 @@ jobs:
 
 ```javascript
 // scripts/analyze-flaky-tests.js
-const fs = require('fs');
+const fs = require("fs");
 
 const runs = Array.from({ length: 10 }, (_, i) =>
-  JSON.parse(fs.readFileSync(`results-${i + 1}.json`, 'utf-8'))
+  JSON.parse(fs.readFileSync(`results-${i + 1}.json`, "utf-8")),
 );
 
 const testResults = new Map();
 
 // Aggregate results
-runs.forEach(run => {
-  run.testResults.forEach(suite => {
-    suite.assertionResults.forEach(test => {
+runs.forEach((run) => {
+  run.testResults.forEach((suite) => {
+    suite.assertionResults.forEach((test) => {
       const key = `${suite.name}::${test.title}`;
       if (!testResults.has(key)) {
         testResults.set(key, { passed: 0, failed: 0 });
       }
       const stats = testResults.get(key);
-      if (test.status === 'passed') {
+      if (test.status === "passed") {
         stats.passed++;
       } else {
         stats.failed++;
@@ -653,7 +654,7 @@ testResults.forEach((stats, test) => {
 });
 
 if (flakyTests.length > 0) {
-  console.log('\nFlaky Tests Detected:');
+  console.log("\nFlaky Tests Detected:");
   flakyTests.forEach(({ test, passRate, passed, failed }) => {
     console.log(`  ${test}`);
     console.log(`    Pass rate: ${passRate}% (${passed}/10 runs)`);
@@ -670,7 +671,7 @@ if (flakyTests.length > 0) {
 
 ```typescript
 // scripts/generate-test-metrics.ts
-import * as fs from 'fs';
+import * as fs from "fs";
 
 interface TestMetrics {
   totalTests: number;
@@ -685,10 +686,10 @@ interface TestMetrics {
 class MetricsCollector {
   collectMetrics(): TestMetrics {
     const testResults = JSON.parse(
-      fs.readFileSync('test-results.json', 'utf-8')
+      fs.readFileSync("test-results.json", "utf-8"),
     );
     const coverage = JSON.parse(
-      fs.readFileSync('coverage/coverage-summary.json', 'utf-8')
+      fs.readFileSync("coverage/coverage-summary.json", "utf-8"),
     );
 
     return {
@@ -698,7 +699,7 @@ class MetricsCollector {
       skippedTests: testResults.numPendingTests,
       duration: testResults.testResults.reduce(
         (sum, r) => sum + r.perfStats.runtime,
-        0
+        0,
       ),
       coverage: coverage.total.lines.pct,
       timestamp: new Date().toISOString(),
@@ -712,18 +713,15 @@ class MetricsCollector {
     // Keep last 30 days
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
     const filtered = history.filter(
-      m => new Date(m.timestamp).getTime() > cutoff
+      (m) => new Date(m.timestamp).getTime() > cutoff,
     );
 
-    fs.writeFileSync(
-      'metrics-history.json',
-      JSON.stringify(filtered, null, 2)
-    );
+    fs.writeFileSync("metrics-history.json", JSON.stringify(filtered, null, 2));
   }
 
   loadHistory(): TestMetrics[] {
     try {
-      return JSON.parse(fs.readFileSync('metrics-history.json', 'utf-8'));
+      return JSON.parse(fs.readFileSync("metrics-history.json", "utf-8"));
     } catch {
       return [];
     }
@@ -732,8 +730,8 @@ class MetricsCollector {
   generateReport() {
     const history = this.loadHistory();
 
-    console.log('\nTest Metrics (Last 7 days):');
-    console.log('─'.repeat(60));
+    console.log("\nTest Metrics (Last 7 days):");
+    console.log("─".repeat(60));
 
     const recent = history.slice(-7);
     const avgCoverage =
@@ -756,6 +754,7 @@ collector.generateReport();
 ## Best Practices
 
 ### ✅ DO
+
 - Run fast tests first (unit → integration → E2E)
 - Parallelize test execution
 - Cache dependencies
@@ -766,6 +765,7 @@ collector.generateReport();
 - Generate comprehensive reports
 
 ### ❌ DON'T
+
 - Run all tests sequentially
 - Ignore flaky tests
 - Skip test maintenance

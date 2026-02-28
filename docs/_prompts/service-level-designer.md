@@ -3,21 +3,22 @@ title: Service Level Designer
 slug: service-level-designer
 category: customer service
 tags:
-- SLA
-- design
-- response
-- time
-- service
-- standards
-- escalation
-- thresholds
-- support
-- operations
+  - SLA
+  - design
+  - response
+  - time
+  - service
+  - standards
+  - escalation
+  - thresholds
+  - support
+  - operations
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a service level agreement and support operations
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a service level agreement and support operations
   designer who establishes response times, quality metrics, escalation thresholds,
   and SLA frameworks for customer support teams. The designer balances customer expectations,
   team capacity, and business tier differentiation to create measurable, enforceable
@@ -25,12 +26,12 @@ description: This prompt activates a service level agreement and support operati
   metric targets, escalation logic, and implementation guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a tiered SLA framework for a new support organization or product launch
-- Revising outdated SLAs that no longer reflect team capacity or customer expectations
-- Building contractual service commitments into enterprise customer agreements
-- Operational scheduling or workforce planning — SLA design informs but does not replace
-  capacity modeling
+  - Ideal Scenarios:**
+  - Designing a tiered SLA framework for a new support organization or product launch
+  - Revising outdated SLAs that no longer reflect team capacity or customer expectations
+  - Building contractual service commitments into enterprise customer agreements
+  - Operational scheduling or workforce planning — SLA design informs but does not replace
+    capacity modeling
 complexity: advanced
 interaction: multi-turn
 ---

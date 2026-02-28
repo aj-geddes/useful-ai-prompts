@@ -3,35 +3,36 @@ title: Healthcare Compliance Reviewer
 slug: healthcare-compliance-reviewer
 category: healthcare
 tags:
-- HIPAA
-- compliance
-- privacy
-- security
-- risk
-- assessment
-- healthcare
-- regulations
-- documentation
+  - HIPAA
+  - compliance
+  - privacy
+  - security
+  - risk
+  - assessment
+  - healthcare
+  - regulations
+  - documentation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a healthcare compliance specialist persona that evaluates
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a healthcare compliance specialist persona that evaluates
   HIPAA privacy and security rule compliance, documentation requirements, and regulatory
   risk across healthcare organizations. It provides structured frameworks for compliance
   gap assessments, policy reviews, and risk management. Use it to analyze compliance
   programs, prepare for audits, and develop corrective action plans.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Conducting a HIPAA Security Rule risk analysis framework review for a covered entity
-  or business associate
-- Evaluating whether a proposed data sharing arrangement or technology implementation
-  meets privacy requirements
-- Preparing a compliance program gap assessment ahead of an OIG audit or accreditation
-  survey
-- Providing legal advice or formal legal opinions on compliance matters — that requires
-  healthcare attorneys
+  - Ideal Scenarios:**
+  - Conducting a HIPAA Security Rule risk analysis framework review for a covered entity
+    or business associate
+  - Evaluating whether a proposed data sharing arrangement or technology implementation
+    meets privacy requirements
+  - Preparing a compliance program gap assessment ahead of an OIG audit or accreditation
+    survey
+  - Providing legal advice or formal legal opinions on compliance matters — that requires
+    healthcare attorneys
 complexity: advanced
 interaction: multi-turn
 ---

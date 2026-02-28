@@ -69,6 +69,7 @@ cp -r hooks/* /your/project/.claude/hooks/
 **Type:** PreToolUse (before git commits)
 
 Prevents accidental exposure of secrets by scanning for:
+
 - AWS keys and secrets
 - API tokens and keys
 - Private keys (RSA, SSH, PEM)
@@ -79,6 +80,7 @@ Prevents accidental exposure of secrets by scanning for:
 [View Documentation](security-scan/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "pattern": "^Bash$",
@@ -92,6 +94,7 @@ Prevents accidental exposure of secrets by scanning for:
 **Type:** PreToolUse (before git commits)
 
 Automatically runs tests before commits to ensure code quality:
+
 - Auto-detects test framework (Jest, pytest, RSpec, Go test, etc.)
 - Runs tests for changed files
 - Blocks commits if tests fail
@@ -100,6 +103,7 @@ Automatically runs tests before commits to ensure code quality:
 [View Documentation](test-runner/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "pattern": "^Bash$",
@@ -113,6 +117,7 @@ Automatically runs tests before commits to ensure code quality:
 **Type:** SessionStart (when Claude Code session starts)
 
 Initializes your development environment:
+
 - Loads environment variables from .env
 - Checks required dependencies
 - Verifies runtime versions
@@ -122,6 +127,7 @@ Initializes your development environment:
 [View Documentation](session-setup/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "command": "/path/to/hooks/session-setup/hook.sh",
@@ -134,6 +140,7 @@ Initializes your development environment:
 **Type:** PostToolUse (after file edits)
 
 Automatically formats code after edits:
+
 - Detects file type and runs appropriate formatter
 - Supports Prettier, Black, RuboCop, gofmt, rustfmt, etc.
 - Shows formatting changes
@@ -142,6 +149,7 @@ Automatically formats code after edits:
 [View Documentation](auto-format/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "pattern": "^(Edit|Write)$",
@@ -155,6 +163,7 @@ Automatically formats code after edits:
 **Type:** PreToolUse (before git commits)
 
 Prevents unintentional breaking changes:
+
 - Compares API signatures before/after
 - Detects removed functions and classes
 - Identifies changed function parameters
@@ -163,6 +172,7 @@ Prevents unintentional breaking changes:
 [View Documentation](breaking-change-detection/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "pattern": "^Bash$",
@@ -176,6 +186,7 @@ Prevents unintentional breaking changes:
 **Type:** PreToolUse (before git commits)
 
 Checks for vulnerable dependencies:
+
 - Runs npm audit, pip-audit, bundle audit, etc.
 - Blocks commits with high-severity vulnerabilities
 - Suggests upgrade paths
@@ -184,6 +195,7 @@ Checks for vulnerable dependencies:
 [View Documentation](dependency-check/README.md)
 
 **Quick Example:**
+
 ```json
 {
   "pattern": "^Bash$",
@@ -199,16 +211,18 @@ Claude Code supports three types of hooks:
 ### PreToolUse
 
 Runs **before** a tool is executed. Common uses:
+
 - Validate input before operations
 - Check conditions before commits
 - Scan for issues before changes
 
 **Configuration:**
+
 ```json
 {
   "PreToolUse": [
     {
-      "pattern": "^Bash$",  // Regex matching tool name
+      "pattern": "^Bash$", // Regex matching tool name
       "command": "/path/to/hook.sh",
       "description": "Hook description"
     }
@@ -219,16 +233,18 @@ Runs **before** a tool is executed. Common uses:
 ### PostToolUse
 
 Runs **after** a tool is executed. Common uses:
+
 - Format code after edits
 - Generate documentation after changes
 - Update indexes after file operations
 
 **Configuration:**
+
 ```json
 {
   "PostToolUse": [
     {
-      "pattern": "^(Edit|Write)$",  // Match multiple tools
+      "pattern": "^(Edit|Write)$", // Match multiple tools
       "command": "/path/to/hook.sh",
       "description": "Hook description"
     }
@@ -239,12 +255,14 @@ Runs **after** a tool is executed. Common uses:
 ### SessionStart
 
 Runs when a Claude Code session starts. Common uses:
+
 - Initialize environment
 - Load configuration
 - Display project status
 - Start required services
 
 **Configuration:**
+
 ```json
 {
   "SessionStart": [
@@ -407,6 +425,7 @@ See individual hook documentation for specific customization options.
 ### Hooks Not Running
 
 Check:
+
 1. Hook script is executable: `chmod +x hook.sh`
 2. Path in settings.json is absolute and correct
 3. Pattern matches the tool being used
@@ -445,6 +464,7 @@ readlink -f hooks/security-scan/hook.sh
 ### 1. Start Small
 
 Don't enable all hooks at once:
+
 ```
 Day 1: Add session-setup
 Day 2: Add auto-format
@@ -455,6 +475,7 @@ etc.
 ### 2. Configure Appropriately
 
 Tune hook settings for your workflow:
+
 - Use `permissive` mode during development
 - Use `strict` mode in CI/CD
 - Whitelist known issues
@@ -462,10 +483,12 @@ Tune hook settings for your workflow:
 ### 3. Document Your Setup
 
 Add to your project README:
+
 ```markdown
 ## Development Setup
 
 This project uses Claude Code hooks for:
+
 - Security scanning
 - Automated testing
 - Code formatting
@@ -476,6 +499,7 @@ See `.claude/settings.json` for configuration.
 ### 4. Team Consistency
 
 Share hook configuration across team:
+
 ```bash
 # Commit hooks configuration
 git add .claude/settings.json
@@ -487,6 +511,7 @@ git add hooks/
 ### 5. Monitor Performance
 
 Track hook execution time:
+
 ```bash
 # Add timing to hooks
 time ./hook.sh
@@ -498,6 +523,7 @@ time ./hook.sh
 ### 6. CI/CD Integration
 
 Run same hooks in CI:
+
 ```yaml
 # .github/workflows/ci.yml
 - name: Run Hooks
@@ -523,6 +549,7 @@ MIT License - Use freely in your projects
 ## Support
 
 For issues or questions:
+
 - Check individual hook documentation
 - Review troubleshooting sections
 - Open an issue in the repository

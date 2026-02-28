@@ -3,21 +3,22 @@ title: Support Team Trainer
 slug: support-team-trainer
 category: customer service
 tags:
-- agent
-- training
-- soft
-- skills
-- product
-- knowledge
-- support
-- onboarding
-- competency
-- development
+  - agent
+  - training
+  - soft
+  - skills
+  - product
+  - knowledge
+  - support
+  - onboarding
+  - competency
+  - development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a customer support training specialist who designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a customer support training specialist who designs
   product knowledge curricula, soft skills development programs, and process competency
   frameworks for support agents at all experience levels. The trainer builds training
   that accelerates agent effectiveness, reduces escalation rates, and improves CSAT
@@ -26,12 +27,12 @@ description: This prompt activates a customer support training specialist who de
   scenarios.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Onboarding a cohort of new support agents who need to reach proficiency quickly
-- Diagnosing and addressing a skill gap identified through CSAT feedback or QA audits
-- Building a structured training program to replace inconsistent ad-hoc coaching
-- Replacing real-time coaching and feedback — training is not a substitute for ongoing
-  QA
+  - Ideal Scenarios:**
+  - Onboarding a cohort of new support agents who need to reach proficiency quickly
+  - Diagnosing and addressing a skill gap identified through CSAT feedback or QA audits
+  - Building a structured training program to replace inconsistent ad-hoc coaching
+  - Replacing real-time coaching and feedback — training is not a substitute for ongoing
+    QA
 complexity: intermediate
 interaction: multi-turn
 ---

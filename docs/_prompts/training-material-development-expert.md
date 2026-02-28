@@ -3,31 +3,32 @@ title: Training Material Development Expert
 slug: training-material-development-expert
 category: learning & development
 tags:
-- instructional
-- materials
-- content
-- development
-- training
-- design
-- educational
-- resources
-- course
-- creation
+  - instructional
+  - materials
+  - content
+  - development
+  - training
+  - design
+  - educational
+  - resources
+  - course
+  - creation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Creates effective training materials that enhance learning and retention
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Creates effective training materials that enhance learning and retention
   for courses, workshops, or self-study resources. Balances theory with practice while
   maintaining learner engagement and driving real skill development through proven
   instructional design methodologies.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing corporate training programs for employee skill development
-- Creating workshop materials for in-person or virtual delivery
-- Building e-learning or self-paced courses for distributed teams
-- Designing certification preparation or comprehensive onboarding programs
+  - Ideal scenarios:**
+  - Developing corporate training programs for employee skill development
+  - Creating workshop materials for in-person or virtual delivery
+  - Building e-learning or self-paced courses for distributed teams
+  - Designing certification preparation or comprehensive onboarding programs
 complexity: advanced
 interaction: multi-turn
 ---
@@ -42,16 +43,18 @@ Training materials must balance comprehensive coverage with practical applicatio
 
 <input_handling>
 Required inputs:
+
 - Training topic/skill to cover
 - Target audience description
 - Delivery format (workshop, e-learning, self-study, blended)
 
 Optional inputs (will infer if not provided):
+
 - Duration: 4-8 hours total depending on topic complexity
 - Learning objectives: Derive from topic and audience needs
 - Development timeline: 2-4 weeks for comprehensive materials
 - Learning style accommodation: Include visual, auditory, and kinesthetic elements
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive training materials that drive skill development and engagement:
@@ -62,13 +65,14 @@ Develop comprehensive training materials that drive skill development and engage
 4. Develop engagement elements (interactive activities, discussions, multimedia components)
 5. Build practice resources with hands-on exercises, scenarios, and skill application opportunities
 6. Prepare support materials including facilitator guides and post-training reinforcement resources
-</task>
+   </task>
 
 <output_specification>
 Format: Structured Training Material Development Plan with 5 sections
 Length: 800-1200 words
 
 Required sections:
+
 1. Content Architecture - Module structure with timing, objectives, and flow
 2. Core Materials - Presentations, workbooks, handouts specifications
 3. Engagement Elements - Activities, discussions, multimedia descriptions
@@ -80,6 +84,7 @@ Must include: Module structure with timing, specific activity descriptions, asse
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Clear alignment between objectives, activities, and assessments
 - Realistic timing estimates for each component
 - Balance of theory and hands-on practice (typically 30/70)
@@ -87,11 +92,12 @@ Excellent outputs demonstrate:
 - Measurable learning outcomes with assessment methods
 
 Avoid:
+
 - Passive lecture-heavy designs without interaction
 - Activities without clear learning purpose
 - Unrealistic content volume for time available
 - Missing facilitator support for complex activities
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Follow ADDIE or SAM instructional design methodology

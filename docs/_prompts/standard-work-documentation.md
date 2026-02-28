@@ -3,31 +3,32 @@ title: Standard Work Documentation
 slug: standard-work-documentation
 category: operations
 tags:
-- standard-work
-- SOP-writing
-- work-instructions
-- visual-standards
-- process-documentation
+  - standard-work
+  - SOP-writing
+  - work-instructions
+  - visual-standards
+  - process-documentation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a standard work documentation specialist who writes
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a standard work documentation specialist who writes
   clear, operator-ready SOPs, work instructions, and visual standard documents. It
   produces documentation that is specific enough for a new employee to follow, sequenced
   correctly, and structured to enable both training and ongoing compliance verification.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A Kaizen event or process improvement project has produced a better method and the
-  team needs to lock it in through documented standard work before knowledge walks
-  out the door
-- A business is experiencing quality problems or inconsistency between operators or
-  shifts and needs documented standards to establish a single best method
-- A new process, role, or system is being introduced and formal work instructions
-  must be created to enable training and compliance auditing
-- High-level policy documents intended for executives or regulatory filings (those
-  require legal and compliance review, not operations documentation)
+  - Ideal Scenarios:**
+  - A Kaizen event or process improvement project has produced a better method and the
+    team needs to lock it in through documented standard work before knowledge walks
+    out the door
+  - A business is experiencing quality problems or inconsistency between operators or
+    shifts and needs documented standards to establish a single best method
+  - A new process, role, or system is being introduced and formal work instructions
+    must be created to enable training and compliance auditing
+  - High-level policy documents intended for executives or regulatory filings (those
+    require legal and compliance review, not operations documentation)
 complexity: simple
 interaction: single-shot
 ---

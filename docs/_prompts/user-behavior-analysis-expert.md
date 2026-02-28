@@ -3,29 +3,30 @@ title: User Behavior Analysis Expert
 slug: user-behavior-analysis-expert
 category: analysis
 tags:
-- user
-- behavior
-- UX
-- analytics
-- customer
-- journey
-- behavioral
-- insights
-- data-driven
-- design
+  - user
+  - behavior
+  - UX
+  - analytics
+  - customer
+  - journey
+  - behavioral
+  - insights
+  - data-driven
+  - design
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-12-27'
-description: Analyzes user interaction patterns to identify pain points, optimize
+  - Claude 3+
+  - GPT-4+
+date: "2025-12-27"
+description:
+  Analyzes user interaction patterns to identify pain points, optimize
   user experience, and improve conversion and engagement. Combines behavioral data
   with user psychology to drive product improvements and retention strategies.
 layout: prompt
 use_cases:
-- Diagnosing low conversion or high churn rates
-- Optimizing onboarding flows and feature adoption
-- Planning product roadmap based on usage patterns
-- Building user segmentation for personalization
+  - Diagnosing low conversion or high churn rates
+  - Optimizing onboarding flows and feature adoption
+  - Planning product roadmap based on usage patterns
+  - Building user segmentation for personalization
 complexity: intermediate
 interaction: conversational
 ---
@@ -40,16 +41,18 @@ Product teams need to understand how users actually behave to identify optimizat
 
 <input_handling>
 Required information:
+
 - Product type and primary user goals: what users are trying to accomplish
 - Current engagement and retention metrics: baseline performance
 - Specific behavioral concerns: what patterns are problematic
 
 Infer if not provided:
+
 - Analysis period: last 6 months of data
 - Data sources: analytics platforms plus surveys
 - Segmentation: new users vs power users comparison
 - Success metrics: retention and conversion as primary
-</input_handling>
+  </input_handling>
 
 <task>
 Process:
@@ -63,24 +66,27 @@ Process:
 
 <output_specification>
 **User Behavior Analysis Report**
+
 - Format: Analytical report with journey mapping
 - Length: 600-900 words
 - Must include: Usage patterns, journey analysis, segmentation insights, prioritized recommendations, success metrics
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent output:
+
 - Clear behavior patterns with supporting data
 - User psychology insights behind observed behaviors
 - Specific, prioritized recommendations with expected impact
 - Measurable expected outcomes for each recommendation
 
 Avoid:
+
 - Data presentation without behavioral interpretation
 - Generic UX recommendations not tied to data
 - Ignoring differences between user segments
 - Unfocused improvement lists without prioritization
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ground recommendations in observed data

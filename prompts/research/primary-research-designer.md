@@ -1,6 +1,7 @@
 # Primary Research Designer
 
 ## Metadata
+
 - **ID**: `research-primary-research-designer`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps researchers, product managers, and strategists design rigorous primary research studies — from formulating research questions and selecting methodology to writing survey instruments, interview guides, and sampling plans. It ensures research is designed to produce valid, actionable data rather than confirming existing assumptions.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a study to answer a specific business or product question where existing data is insufficient
 - Selecting between qualitative and quantitative methods for a research objective
 - Creating interview guides or survey instruments that avoid leading questions and produce genuine insight
 
 **Anti-patterns (Don't Use For):**
+
 - Academic research requiring IRB approval processes (seek institutional research design support)
 - Statistical power analysis requiring specialist biostatistical expertise
 - Real-time observational research requiring in-person ethnographic presence
@@ -66,10 +71,13 @@ Avoid: Leading questions that presuppose answers; surveys that are too long (>15
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a B2B SaaS company. We want to understand why customers who sign up for our free trial don't convert to paid plans. We have about 2,000 trial users each month, and our conversion rate is 8% — we think it should be higher. We have 6 weeks and a modest budget. I want to understand what's blocking conversion."
 
 ### Output
+
 **Primary Research Design — Free Trial Non-Conversion Study**
 Company: B2B SaaS | Timeline: 6 weeks | Research Question: What prevents free trial users from converting to paid plans?
 
@@ -78,11 +86,12 @@ Company: B2B SaaS | Timeline: 6 weeks | Research Question: What prevents free tr
 **Research Question Refinement**
 
 The core question — "why don't trials convert?" — actually contains three distinct sub-questions that require different research approaches:
+
 1. What do trial users experience during the trial? (behavioral — best answered with product analytics + survey)
 2. What do they believe about the product's value vs. cost? (attitudinal — best answered with survey + interviews)
 3. What alternatives do they choose instead? (competitive — best answered with exit interviews)
 
-Refined primary research question: *What unmet expectations, experience gaps, or value perception barriers cause trial users to exit without purchasing, and which of these are most remediable?*
+Refined primary research question: _What unmet expectations, experience gaps, or value perception barriers cause trial users to exit without purchasing, and which of these are most remediable?_
 
 ---
 
@@ -106,10 +115,10 @@ Interviews: Recruit 12 survey respondents representing the top 3 barrier profile
 
 **Survey Instrument (12 questions, estimated 8 minutes)**
 
-*Screening (not shown to respondent):*
+_Screening (not shown to respondent):_
 Confirm: trial start date within 60 days; did not convert; account still inactive
 
-*Section 1 — Trial Experience (4 questions)*
+_Section 1 — Trial Experience (4 questions)_
 
 Q1. How would you describe your overall experience with [Product] during your trial? (1-7 scale, Very Negative to Very Positive) [Measures: Overall sentiment]
 
@@ -117,9 +126,9 @@ Q2. What were you hoping [Product] would help you do? Please be as specific as p
 
 Q3. How well did [Product] address what you were hoping for? (1-7 scale, Not at all to Completely) [Measures: Value delivery gap]
 
-Q4. Which of the following best describes your trial experience? Select all that apply. (Options: I couldn't figure out how to set it up / I ran out of time to properly evaluate it / I evaluated it but decided it wasn't the right fit / I got distracted by other priorities / Other: ___) [Measures: Barrier category]
+Q4. Which of the following best describes your trial experience? Select all that apply. (Options: I couldn't figure out how to set it up / I ran out of time to properly evaluate it / I evaluated it but decided it wasn't the right fit / I got distracted by other priorities / Other: \_\_\_) [Measures: Barrier category]
 
-*Section 2 — Decision Factors (4 questions)*
+_Section 2 — Decision Factors (4 questions)_
 
 Q5. What was the primary reason you did not upgrade to a paid plan? (Open text — most important question; place after rapport established) [Measures: Stated barrier]
 
@@ -129,7 +138,7 @@ Q7. Did you evaluate any alternatives to [Product]? If yes, what did you choose 
 
 Q8. What would have needed to be different for you to purchase? (Open text) [Measures: Remediable gaps]
 
-*Section 3 — Context (4 questions)*
+_Section 3 — Context (4 questions)_
 
 Q9. What is the primary role you were hoping to use [Product] for? (Options: [list top use cases]) [Measures: Use case segmentation]
 
@@ -146,6 +155,7 @@ Q12. Would you be willing to speak with us for 45 minutes about your experience 
 Opening (5 min): Thank you, purpose of session, recording consent, "Tell me a little about your role and what you were trying to accomplish when you signed up for [Product]."
 
 Core Probes (30 min):
+
 - "Walk me through what you did during your trial from the first time you logged in."
   → Probe: "What did you expect to happen? What actually happened?"
 - "Was there a moment when you thought 'this might not work for us'? Tell me about that."
@@ -160,11 +170,11 @@ Close (10 min): "Is there anything we haven't asked that you think would help us
 
 **Validity Threat Mitigation**
 
-| Threat | Mitigation |
-|--------|------------|
-| Social desirability (being polite about the product) | Emphasize anonymous survey; open text before scales |
-| Recency bias (survey 60 days after trial) | Include a 30-day cohort segment in the sample |
-| Self-selection (only engaged non-converters respond) | Compare respondent engagement levels to full non-converter pool |
+| Threat                                                 | Mitigation                                                                                      |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Social desirability (being polite about the product)   | Emphasize anonymous survey; open text before scales                                             |
+| Recency bias (survey 60 days after trial)              | Include a 30-day cohort segment in the sample                                                   |
+| Self-selection (only engaged non-converters respond)   | Compare respondent engagement levels to full non-converter pool                                 |
 | Interviewer effect (interviewers leading participants) | Provide standardized interview guide; record and review first 3 interviews for probe neutrality |
 
 ---
@@ -178,9 +188,11 @@ Synthesis: Map survey prevalence data to interview-derived themes to produce a p
 ---
 
 ## Variations
+
 - **B2C Consumer Research**: Adapted methodology for consumer product research with panel recruitment and shorter survey instruments
 - **Employee Experience Research**: Internal research design for organizational culture or engagement studies
 
 ## Related Prompts
+
 - [Data Synthesis Expert](data-synthesis-expert.md) - Synthesize survey and interview data into integrated findings
 - [Research Report Writer](research-report-writer.md) - Transform research findings into an executive report

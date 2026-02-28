@@ -1,6 +1,7 @@
 # Procrastination Elimination Expert
 
 ## Metadata
+
 - **ID**: `productivity-procrastination-elimination`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A procrastination specialist that helps you understand and overcome procrastinat
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Struggling to start important tasks despite knowing their importance
 - Caught in cycles of delay, guilt, and rushed completion
 - Perfectionism causing analysis paralysis on projects
@@ -25,6 +27,7 @@ A procrastination specialist that helps you understand and overcome procrastinat
 - Wanting to build consistent action-taking habits
 
 **Anti-Patterns (Don't Use For):**
+
 - Clinical anxiety disorders requiring professional treatment
 - Depression-related motivation issues needing medical attention
 - ADHD treatment or diagnosis
@@ -121,6 +124,7 @@ Create a personalized anti-procrastination system following these steps:
 ## Example Usage
 
 ### Input
+
 Most procrastinated: Important work projects, creative tasks, long-term goals. Thoughts when facing tasks: "This is too big," "I don't know where to start," "I need to be in the right mood." Do instead: social media scrolling, organizing/cleaning, easy busy work. I usually feel anxious before, guilty during avoidance, stressed and relieved after finally starting.
 
 ### Output
@@ -130,6 +134,7 @@ Most procrastinated: Important work projects, creative tasks, long-term goals. T
 Your pattern indicates "Perfectionist Paralysis" - procrastination rooted in fear of imperfect performance rather than laziness. This is one of the most common and treatable forms of procrastination.
 
 **Root Cause Analysis:**
+
 - Perfectionism trap: "If I can't do it perfectly, why start?"
 - Analysis paralysis: Overthinking the "right" approach before beginning
 - Mood-dependent action: Waiting for motivation that rarely arrives
@@ -141,15 +146,17 @@ Task feels big -> Overwhelm sets in -> Research/organize instead -> Guilt builds
 
 **The Minimum Viable Progress System**
 
-*Core Philosophy:* Progress over perfection. Momentum over quality (quality comes from iteration, not waiting).
+_Core Philosophy:_ Progress over perfection. Momentum over quality (quality comes from iteration, not waiting).
 
-*Daily Implementation:*
+_Daily Implementation:_
+
 - Morning: Choose ONE important task for minimum viable progress
 - Question: "What's the smallest meaningful step I can take?"
 - Time limit: Maximum 25 minutes to START (not complete)
 - Success metric: Did I begin? (not did I finish perfectly)
 
-*Task Breakdown Formula:*
+_Task Breakdown Formula:_
+
 1. IDENTIFY: What's the smallest possible starting action?
 2. TIME-BOX: Set 15-25 minute timer for focused work
 3. ENVIRONMENT: Clear workspace, single focus, phone away
@@ -157,25 +164,27 @@ Task feels big -> Overwhelm sets in -> Research/organize instead -> Guilt builds
 5. CONTINUE: If energized after timer, keep going
 6. STOP: If tired, celebrate progress and plan next small step
 
-*Practical Examples:*
+_Practical Examples:_
+
 - "Launch side business" -> "Write one paragraph describing the idea"
 - "Exercise routine" -> "Put on workout clothes and do 5 minutes movement"
 - "Creative project" -> "Create simple outline with 3 bullet points"
 
 **Anti-Perfectionism Strategies**
 
-*Cognitive Reframes:*
+_Cognitive Reframes:_
 | Replace This | With This |
 |--------------|-----------|
 | "I need the perfect plan" | "I need a good enough start" |
 | "I'm not ready yet" | "Readiness comes from doing" |
 | "What if it's not good?" | "First drafts are supposed to be rough" |
 
-*The 70% Rule:* When you're 70% ready, start immediately. The remaining 30% comes from doing. Perfectionism is often fear wearing a productive mask.
+_The 70% Rule:_ When you're 70% ready, start immediately. The remaining 30% comes from doing. Perfectionism is often fear wearing a productive mask.
 
-*Prototype Thinking:* Your first attempt is always a prototype - meant to be rough and improved. Give yourself permission to create "rough drafts" of everything.
+_Prototype Thinking:_ Your first attempt is always a prototype - meant to be rough and improved. Give yourself permission to create "rough drafts" of everything.
 
-*Circuit Breakers for Perfectionist Spirals:*
+_Circuit Breakers for Perfectionist Spirals:_
+
 1. Set 20-minute timer and start with whatever you have
 2. Tell yourself "This is just a practice round"
 3. Focus on learning, not achieving
@@ -183,27 +192,31 @@ Task feels big -> Overwhelm sets in -> Research/organize instead -> Guilt builds
 
 **Accountability and Momentum System**
 
-*External Accountability:*
+_External Accountability:_
+
 - Weekly accountability partner: Text check-in Monday and Friday
 - Share 3 goals for week, 3 accomplishments
 - 15-minute weekly call for support and problem-solving
 
-*Self-Accountability Tools:*
+_Self-Accountability Tools:_
+
 - Daily tracking: Did I make minimum viable progress on my priority?
 - Weekly reflection: What worked? What triggered procrastination?
 - Reward system: Tied to consistent action, not perfection
 
 **Identity Transformation**
 
-*Shifting Your Self-Concept:*
+_Shifting Your Self-Concept:_
+
 - Old identity: "I'm someone who starts but doesn't finish"
 - New identity: "I'm someone who takes consistent action, even imperfectly"
 
-*Daily Reinforcement:* Say "I am someone who takes action" before starting tasks
+_Daily Reinforcement:_ Say "I am someone who takes action" before starting tasks
 
-*Evidence Collection:* Track every small action as proof of your new identity
+_Evidence Collection:_ Track every small action as proof of your new identity
 
 **Success Milestones**
+
 - Week 1: Establish daily minimum action habit
 - Month 1: Complete one meaningful project start to finish
 - Month 3: Consistent momentum on all major goals
@@ -212,6 +225,7 @@ Task feels big -> Overwhelm sets in -> Research/organize instead -> Guilt builds
 ---
 
 ## Related Prompts
+
 - [Goal Achievement Architect](goal-achievement-architect.md) - For setting and achieving meaningful goals
 - [Habit Formation Strategist](habit-formation-strategist.md) - For building sustainable habit systems
 - [Focus Deep Work Strategist](focus-deep-work-strategist.md) - For eliminating distractions during work

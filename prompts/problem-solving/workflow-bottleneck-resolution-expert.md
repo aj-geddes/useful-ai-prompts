@@ -1,6 +1,7 @@
 # Workflow Bottleneck Resolution Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-workflow-bottleneck`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -100,43 +101,50 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Workflow: Code review blocking deployment pipeline. PRs wait 2-3 days for review. Deploy only 2x/week instead of daily. Team: 20 devs, 3 senior reviewers. Juniors can't review. Review takes 30-60 min per PR. Creates frustration and delays features.
 ```
 
 ### Output
+
 **Workflow Analysis**
 
-| Stage | Capacity | Demand | Utilization | Wait Time |
-|-------|----------|--------|-------------|-----------|
-| Development | 20 devs | ~25 PRs/week | 80% | 0 |
-| Code Review | 3 reviewers | 25 PRs/week | 140% | 2-3 days |
-| Deployment | Unlimited | 2/week | 20% | 0 |
+| Stage       | Capacity    | Demand       | Utilization | Wait Time |
+| ----------- | ----------- | ------------ | ----------- | --------- |
+| Development | 20 devs     | ~25 PRs/week | 80%         | 0         |
+| Code Review | 3 reviewers | 25 PRs/week  | 140%        | 2-3 days  |
+| Deployment  | Unlimited   | 2/week       | 20%         | 0         |
 
 **Bottleneck Identification**
+
 - True Bottleneck: Code review (140% utilization - overloaded)
 - Symptom: Deployment frequency (result of review delays)
 - Root Cause: Only 3 people can review, demand exceeds capacity
 
 **Bottleneck Math**
+
 - Demand: 25 PRs/week x 45 min avg = 18.75 hours/week needed
 - Capacity: 3 reviewers x 4 hours/week reviewing = 12 hours/week
 - Gap: 6.75 hours/week (56% more capacity needed)
 
 **Resolution Strategies**
 
-*Strategy 1: Expand Reviewer Pool (Primary - Address Capacity)*
+_Strategy 1: Expand Reviewer Pool (Primary - Address Capacity)_
+
 - Train 4-5 mid-level devs to review specific areas
 - Tiered review: Simple PRs by trained mid-levels, complex by seniors
 - Expected: Double review capacity to 24 hours/week
 
-*Strategy 2: Reduce Review Time (Secondary - Reduce Demand)*
+_Strategy 2: Reduce Review Time (Secondary - Reduce Demand)_
+
 - Automated linting and style checks (save 10-15 min/review)
 - PR size limits (<400 lines) for faster reviews
 - Review templates for consistency
 - Expected: 30% faster reviews (45 min -> 30 min avg)
 
-*Strategy 3: Review Load Balancing (Tertiary - Reduce Variability)*
+_Strategy 3: Review Load Balancing (Tertiary - Reduce Variability)_
+
 - Automated reviewer assignment based on availability
 - Daily review SLA: respond within 4 hours
 - Review time blocks: 9-10 AM dedicated review time
@@ -144,19 +152,22 @@ Workflow: Code review blocking deployment pipeline. PRs wait 2-3 days for review
 
 **Implementation Plan**
 
-*Week 1-2: Quick Wins*
+_Week 1-2: Quick Wins_
+
 - Implement automated linting in CI (saves review time)
 - Enforce PR size limits (<400 lines)
 - Set up reviewer rotation schedule
 - Expected: 20% improvement
 
-*Week 3-4: Reviewer Training*
+_Week 3-4: Reviewer Training_
+
 - Identify 4-5 mid-level reviewers
 - Create review guidelines and checklists
 - Pair reviews for training (senior + mid)
 - Expected: Additional 30% capacity
 
-*Week 5-6: Process Optimization*
+_Week 5-6: Process Optimization_
+
 - Deploy automated reviewer assignment
 - Implement review time blocks
 - Create escalation path for blocked PRs
@@ -164,14 +175,15 @@ Workflow: Code review blocking deployment pipeline. PRs wait 2-3 days for review
 
 **Tiered Review System**
 
-| PR Type | Reviewer | Expected Time |
-|---------|----------|---------------|
-| Bug fixes (<100 lines) | Any trained | 15 min |
-| Features (<400 lines) | Mid-level | 30 min |
-| Architecture changes | Senior only | 60 min |
-| Security-related | Senior + security | 60+ min |
+| PR Type                | Reviewer          | Expected Time |
+| ---------------------- | ----------------- | ------------- |
+| Bug fixes (<100 lines) | Any trained       | 15 min        |
+| Features (<400 lines)  | Mid-level         | 30 min        |
+| Architecture changes   | Senior only       | 60 min        |
+| Security-related       | Senior + security | 60+ min       |
 
 **Monitoring Dashboard**
+
 - PRs waiting for review (target: <5)
 - Average review wait time (target: <4 hours)
 - Reviews per reviewer per week
@@ -179,11 +191,13 @@ Workflow: Code review blocking deployment pipeline. PRs wait 2-3 days for review
 
 **Bottleneck Shift Monitoring**
 As review improves, watch for new bottlenecks:
+
 - QA/testing becoming backup
 - Deployment approval delays
 - Environment availability
 
 **Success Metrics**
+
 - Review wait time: 2-3 days -> <4 hours
 - Deployment frequency: 2x/week -> daily
 - Developer satisfaction: Survey improvement

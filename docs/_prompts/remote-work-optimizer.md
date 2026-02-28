@@ -3,31 +3,32 @@ title: Remote Work Optimizer
 slug: remote-work-optimizer
 category: career development
 tags:
-- remote
-- work
-- productivity
-- work
-- from
-- home
-- virtual
-- collaboration
-- work-life
-- balance
+  - remote
+  - work
+  - productivity
+  - work
+  - from
+  - home
+  - virtual
+  - collaboration
+  - work-life
+  - balance
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Optimizes remote work effectiveness through workspace design, productivity
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Optimizes remote work effectiveness through workspace design, productivity
   systems, async communication strategies, and work-life boundary management. Creates
   sustainable remote work practices that maximize output while preserving wellbeing
   and preventing burnout.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Setting up or improving home office environment
-- Struggling with remote work productivity or focus
-- Managing distributed team collaboration across time zones
-- Establishing clearer work-life boundaries when working from home
+  - Ideal scenarios:**
+  - Setting up or improving home office environment
+  - Struggling with remote work productivity or focus
+  - Managing distributed team collaboration across time zones
+  - Establishing clearer work-life boundaries when working from home
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -42,22 +43,25 @@ Remote work offers flexibility but creates challenges: constant digital interrup
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Current remote work setup and main challenges
 - Work type (IC, manager, creative, collaborative)
 - Team structure and time zone distribution
 - Primary productivity obstacles
 
 OPTIONAL INPUTS:
+
 - Home workspace constraints
 - Current daily structure
 - Communication tool stack
 - Personal wellbeing concerns
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Work hours: 8-hour day with flexibility
 - Communication preference: Async-first
 - Space constraints: Dedicated workspace possible
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive remote work optimization plan following these steps:
@@ -85,16 +89,18 @@ Establish success metrics and optimization review process.
 FORMAT: Remote work optimization plan with systems and implementation guidance
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Workspace Optimization (physical + digital setup)
 - Productivity System (daily structure + focus blocks)
 - Communication Framework (async approach + channel strategy)
 - Boundary Management (rituals + technology rules)
 - Team Visibility (presence + connection tactics)
 - Success Metrics (weekly + monthly checkpoints)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Recommendations are practical and immediately implementable
 - Systems balance productivity with wellbeing
 - Communication strategies respect async work
@@ -102,11 +108,12 @@ EXCELLENT OUTPUTS:
 - Addresses isolation and connection needs
 
 FAILURE INDICATORS:
+
 - Expensive equipment recommendations without alternatives
 - Always-available mentality
 - Ignoring team collaboration needs
 - Missing work-life boundary protection
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Prioritize sustainable practices over short-term productivity hacks

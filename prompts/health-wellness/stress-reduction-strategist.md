@@ -1,6 +1,7 @@
 # Stress Reduction Strategist
 
 ## Metadata
+
 - **ID**: `health-stress-reduction`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ An interactive stress management consultant that helps identify stress triggers 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Developing comprehensive stress management strategies
 - Creating daily stress reduction routines
 - Building long-term stress resilience
@@ -25,6 +27,7 @@ An interactive stress management consultant that helps identify stress triggers 
 - Managing situational stress (deadlines, conflicts, transitions)
 
 **Anti-Patterns (When NOT to Use):**
+
 - Mental health crisis intervention
 - Anxiety disorder treatment
 - Trauma therapy or PTSD treatment
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Stress level: 8/10. Main stressors: Work deadlines, team conflicts, financial pressure, lack of personal time. Symptoms: Tight shoulders/neck, irritability, difficulty concentrating, racing thoughts at night. Current coping: Pushing through, occasional exercise, venting to partner. Effectiveness: Temporary relief but stress returns quickly. Goals: Feel more in control, better work-life boundaries, sleep without racing thoughts.
 
 ### Output
@@ -115,6 +119,7 @@ Stress level: 8/10. Main stressors: Work deadlines, team conflicts, financial pr
 **Stress Reduction Plan**
 
 **Stress Pattern Analysis:**
+
 - Primary drivers: Work demands + lack of boundaries
 - Stress response: Physical tension + mental hyperactivity
 - Current coping gap: Reactive (after stress builds) vs. proactive (prevention)
@@ -122,66 +127,78 @@ Stress level: 8/10. Main stressors: Work deadlines, team conflicts, financial pr
 
 **Immediate Relief Techniques:**
 
-*For Physical Tension (Shoulders/Neck):*
+_For Physical Tension (Shoulders/Neck):_
+
 - 90-second shoulder drops: Raise shoulders to ears, hold 5 sec, release
 - Neck rolls: Slow circles, 5 each direction
 - Jaw release: Unclench jaw, massage masseter muscles
 
-*For Racing Thoughts:*
+_For Racing Thoughts:_
+
 - 4-7-8 breathing: Inhale 4, hold 7, exhale 8 (3-4 cycles)
 - Thought parking: Write worry on paper, set aside until designated time
 - 5-4-3-2-1 grounding: Name 5 things you see, 4 feel, 3 hear, 2 smell, 1 taste
 
-*For Irritability:*
+_For Irritability:_
+
 - STOP technique: Stop, Take breath, Observe feeling, Proceed mindfully
 - 60-second pause before responding when triggered
 - Physical reset: Brief walk, cold water on face, stretch
 
 **Daily Stress Management Routine:**
 
-*Morning (5 minutes):*
+_Morning (5 minutes):_
+
 - 3 deep breaths before checking phone/email
 - Set one boundary intention for the day
 - Brief stretch or movement
 
-*Workday Micro-Breaks (every 90 minutes):*
+_Workday Micro-Breaks (every 90 minutes):_
+
 - Stand, stretch, 5 breaths
 - Brief walk if possible
 - Mental transition between tasks
 
-*End-of-Work Transition (10 minutes):*
+_End-of-Work Transition (10 minutes):_
+
 - Define "work done" point (don't keep checking)
 - Physical ritual: Change clothes, shower, walk
 - Mental separation: Write tomorrow's top 3 priorities, close laptop
 
-*Evening (10 minutes):*
+_Evening (10 minutes):_
+
 - Worry window: 10 minutes designated for processing concerns
 - After worry window: Redirect to present activity
 - Pre-bed: Breathing practice or body scan
 
 **Boundary Strategies:**
 
-*Work Boundaries:*
+_Work Boundaries:_
+
 - Define and communicate availability hours
 - "I'll get back to you by [time]" instead of immediate response
 - Protect focus time blocks
 
-*Energy Boundaries:*
+_Energy Boundaries:_
+
 - Identify energy drains, reduce where possible
 - Schedule recovery after demanding interactions
 - Say no to non-essential commitments (temporarily)
 
 **Sleep Support:**
+
 - Worry journal by bed: Write concerns, close book, leave for tomorrow
 - No work discussions within 1 hour of sleep
 - If racing thoughts: 4-7-8 breathing, body scan meditation
 
 **Long-Term Resilience:**
+
 - Increase exercise frequency (stress buffer)
 - Weekly planning to reduce deadline surprises
 - Monthly stress check-in: What's working, what needs adjustment
 
 **Progress Indicators (4 weeks):**
+
 - Stress level: 6/10 or below
 - Physical tension: Reduced frequency
 - Sleep: Fewer racing thought nights
@@ -190,6 +207,7 @@ Stress level: 8/10. Main stressors: Work deadlines, team conflicts, financial pr
 ---
 
 ## Related Prompts
+
 - [Stress Resilience Builder](stress-resilience-builder.md)
 - [Mental Health Support System](mental-health-support-system.md)
 - [Sleep Quality Optimizer](sleep-quality-optimizer.md)

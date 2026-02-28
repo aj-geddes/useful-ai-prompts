@@ -1,6 +1,7 @@
 # Lesson Plan Designer
 
 ## Metadata
+
 - **ID**: `education-teaching-lesson-plan-designer`
 - **Version**: 1.0.0
 - **Category**: Education / Teaching
@@ -18,12 +19,14 @@ This prompt activates a curriculum specialist who designs structured, standards-
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a single lesson or a multi-day unit on a specific topic
 - Aligning instruction to Common Core, NGSS, or state standards
 - Building engaging opening activities, direct instruction, and practice sequences
 - Planning lessons for a new course or unfamiliar curriculum
 
 **Anti-patterns (Don't Use For):**
+
 - Generating full semester or yearlong curriculum maps (use a curriculum mapping tool)
 - Writing student-facing worksheets or assessments (use assessment-designer prompt)
 - Replacing district-mandated curriculum without adaptation guidance
@@ -122,53 +125,57 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need a lesson plan for 8th grade science on natural selection. 55-minute period. Students have already learned about genetic variation. Standard: NGSS MS-LS4-4 - construct an explanation based on evidence that describes how genetic variations of traits in a population increase some individuals' probability of surviving and reproducing."
 
 ### Output
 
 **8th Grade Science: Natural Selection and Survival Advantage**
-*Duration: 55 minutes | Standard: NGSS MS-LS4-4*
+_Duration: 55 minutes | Standard: NGSS MS-LS4-4_
 
 **Learning Targets**
+
 - Students will be able to explain how a heritable trait can increase or decrease an organism's survival probability in a specific environment.
 - Students will be able to construct a written explanation connecting genetic variation, environmental pressure, and reproductive success using evidence from a simulated scenario.
 - Essential Question: Why do some traits become more common in a population over time?
 
 **Materials**
+
 - "Bird Beak" simulation cards (30 sets, printable) or colored toothpicks and paper cups
 - Mini-whiteboards or half-sheets for formative response
 - Student science notebooks
 
 **Instructional Sequence**
 
-*Hook – 7 min*
+_Hook – 7 min_
 Show 3 photos: peppered moths on clean bark, peppered moths on soot-darkened bark (pre- and post-Industrial Revolution). Ask: "What do you notice? What do you wonder?" Take 4-5 responses. Do not explain yet.
 
-*Direct Instruction – 10 min*
+_Direct Instruction – 10 min_
 Introduce the four conditions required for natural selection (variation, heritability, selection pressure, differential survival) using a simple anchor chart. Connect back to the moth photos: the environment changed, so which variant had an advantage? Model how to write an evidence-based explanation using a sentence frame: "In [environment], individuals with [trait] had an advantage because [evidence], which increased their probability of [surviving/reproducing]."
 
-*Guided Practice – 12 min*
+_Guided Practice – 12 min_
 Distribute beak simulation materials. Run two rounds: Round 1 = sandy environment (toothpicks on beige paper); Round 2 = leafy environment (toothpicks on green paper). Students record survival counts. Class pools data on the board. Teacher asks: "What pattern do you see? Which beak type 'survived' each round? Why?"
 
-*Formative Check 1 (embedded):* Cold-call 3 students to explain the pattern before moving on. Look for: students naming the environmental pressure, not just the outcome.
+_Formative Check 1 (embedded):_ Cold-call 3 students to explain the pattern before moving on. Look for: students naming the environmental pressure, not just the outcome.
 
-*Independent Practice – 18 min*
+_Independent Practice – 18 min_
 Students write a 3-sentence explanation in notebooks answering: "A population of beetles lives on green leaves. A mutation produces some brown beetles. A bird predator moves into the area. Explain what will likely happen to the beetle population over several generations." Use NGSS explanation frame: Claim – Evidence – Reasoning.
 
-*Formative Check 2:* Circulate and read 6-8 notebooks. Flag any explanations that confuse individual change with population change (common misconception).
+_Formative Check 2:_ Circulate and read 6-8 notebooks. Flag any explanations that confuse individual change with population change (common misconception).
 
-*Closing – 8 min*
+_Closing – 8 min_
 Return to the moth photos. Have students share their written explanations with a partner, then cold-call two to share with the class. Close with: "Next class we'll look at how this process, repeated over thousands of generations, leads to the formation of new species."
 
 **Differentiation**
 
-| Need | Strategy |
-|---|---|
-| Below grade level | Provide completed sentence frames; allow drawing instead of full sentences |
-| Above grade level | Add challenge: "What would happen if the environment changed back?" Write a second explanation |
-| ELL students | Anchor chart with visual icons for each natural selection condition; partner with bilingual peer during practice |
+| Need              | Strategy                                                                                                         |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Below grade level | Provide completed sentence frames; allow drawing instead of full sentences                                       |
+| Above grade level | Add challenge: "What would happen if the environment changed back?" Write a second explanation                   |
+| ELL students      | Anchor chart with visual icons for each natural selection condition; partner with bilingual peer during practice |
 
 **Formative Assessment Summary**
+
 - Check 1 (guided practice debrief): students verbally identify selection pressure
 - Check 2 (notebook circulation): written explanation includes claim, evidence, and reasoning
 - If fewer than 70% are on track at Check 1: pause and re-model with a different example before releasing to independent practice

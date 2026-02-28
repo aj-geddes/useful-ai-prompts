@@ -1,14 +1,15 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Build cross-platform mobile apps with React Native. Covers navigation
+date: "2025-01-01"
+description:
+  Build cross-platform mobile apps with React Native. Covers navigation
   with React Navigation, state management with Redux/Context API, API integration,
   and platform-specific features.
 layout: skill
 slug: react-native-app
 tags:
-- react
-- api
+  - react
+  - api
 title: react-native-app
 ---
 
@@ -32,11 +33,11 @@ Create robust cross-platform mobile applications using React Native with modern 
 
 ```javascript
 // Navigation with React Navigation
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -45,15 +46,15 @@ function HomeStack() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: '#6200ee' },
-        headerTintColor: '#fff',
-        headerTitleStyle: { fontWeight: 'bold' }
+        headerStyle: { backgroundColor: "#6200ee" },
+        headerTintColor: "#fff",
+        headerTitleStyle: { fontWeight: "bold" },
       }}
     >
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{ title: 'Home Feed' }}
+        options={{ title: "Home Feed" }}
       />
       <Stack.Screen name="Details" component={DetailsScreen} />
     </Stack.Navigator>
@@ -63,15 +64,19 @@ function HomeStack() {
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          const icons = {
-            HomeTab: focused ? 'home' : 'home-outline',
-            ProfileTab: focused ? 'person' : 'person-outline'
-          };
-          return <Ionicons name={icons[route.name]} size={size} color={color} />;
-        }
-      })}>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            const icons = {
+              HomeTab: focused ? "home" : "home-outline",
+              ProfileTab: focused ? "person" : "person-outline",
+            };
+            return (
+              <Ionicons name={icons[route.name]} size={size} color={color} />
+            );
+          },
+        })}
+      >
         <Tab.Screen name="HomeTab" component={HomeStack} />
         <Tab.Screen name="ProfileTab" component={ProfileScreen} />
       </Tab.Navigator>
@@ -83,39 +88,41 @@ export default function App() {
 ### 2. **State Management with Redux**
 
 ```javascript
-import { createSlice, configureStore } from '@reduxjs/toolkit';
-import { useSelector, useDispatch } from 'react-redux';
+import { createSlice, configureStore } from "@reduxjs/toolkit";
+import { useSelector, useDispatch } from "react-redux";
 
 const itemsSlice = createSlice({
-  name: 'items',
+  name: "items",
   initialState: { list: [], loading: false, error: null },
   reducers: {
     setItems: (state, action) => {
       state.list = action.payload;
       state.loading = false;
     },
-    setLoading: (state) => { state.loading = true; },
+    setLoading: (state) => {
+      state.loading = true;
+    },
     setError: (state, action) => {
       state.error = action.payload;
       state.loading = false;
-    }
-  }
+    },
+  },
 });
 
 export const store = configureStore({
-  reducer: { items: itemsSlice.reducer }
+  reducer: { items: itemsSlice.reducer },
 });
 
 export function HomeScreen() {
   const dispatch = useDispatch();
-  const { list, loading, error } = useSelector(state => state.items);
+  const { list, loading, error } = useSelector((state) => state.items);
 
   React.useEffect(() => {
     dispatch(setLoading());
-    fetch('https://api.example.com/items')
-      .then(r => r.json())
-      .then(data => dispatch(setItems(data)))
-      .catch(err => dispatch(setError(err.message)));
+    fetch("https://api.example.com/items")
+      .then((r) => r.json())
+      .then((data) => dispatch(setItems(data)))
+      .catch((err) => dispatch(setError(err.message)));
   }, [dispatch]);
 
   if (loading) return <ActivityIndicator size="large" />;
@@ -123,7 +130,9 @@ export function HomeScreen() {
 
   return (
     <ScrollView>
-      {list.map(item => <ItemCard key={item.id} item={item} />)}
+      {list.map((item) => (
+        <ItemCard key={item.id} item={item} />
+      ))}
     </ScrollView>
   );
 }
@@ -132,24 +141,24 @@ export function HomeScreen() {
 ### 3. **API Integration with Axios**
 
 ```javascript
-import axios from 'axios';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from "axios";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const apiClient = axios.create({
-  baseURL: 'https://api.example.com',
-  timeout: 10000
+  baseURL: "https://api.example.com",
+  timeout: 10000,
 });
 
 // Request interceptor for auth
 apiClient.interceptors.request.use(
   async (config) => {
-    const token = await AsyncStorage.getItem('authToken');
+    const token = await AsyncStorage.getItem("authToken");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 
 // Response interceptor for token refresh
@@ -161,12 +170,12 @@ apiClient.interceptors.response.use(
     if (error.response?.status === 401 && !originalRequest._retry) {
       originalRequest._retry = true;
       try {
-        const refreshToken = await AsyncStorage.getItem('refreshToken');
+        const refreshToken = await AsyncStorage.getItem("refreshToken");
         const { data } = await axios.post(
-          'https://api.example.com/auth/refresh',
-          { refreshToken }
+          "https://api.example.com/auth/refresh",
+          { refreshToken },
         );
-        await AsyncStorage.setItem('authToken', data.accessToken);
+        await AsyncStorage.setItem("authToken", data.accessToken);
         apiClient.defaults.headers.Authorization = `Bearer ${data.accessToken}`;
         return apiClient(originalRequest);
       } catch (refreshError) {
@@ -174,21 +183,25 @@ apiClient.interceptors.response.use(
       }
     }
     return Promise.reject(error);
-  }
+  },
 );
 
-export const fetchUser = () => apiClient.get('/user/profile');
+export const fetchUser = () => apiClient.get("/user/profile");
 export const fetchItems = (page) => apiClient.get(`/items?page=${page}`);
-export const createItem = (data) => apiClient.post('/items', data);
+export const createItem = (data) => apiClient.post("/items", data);
 ```
 
 ### 4. **Functional Component with Hooks**
 
 ```javascript
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from "react";
 import {
-  View, Text, TouchableOpacity, StyleSheet, ActivityIndicator
-} from 'react-native';
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  ActivityIndicator,
+} from "react-native";
 
 export function DetailsScreen({ route, navigation }) {
   const { itemId } = route.params;
@@ -203,9 +216,7 @@ export function DetailsScreen({ route, navigation }) {
   const loadItem = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch(
-        `https://api.example.com/items/${itemId}`
-      );
+      const response = await fetch(`https://api.example.com/items/${itemId}`);
       const data = await response.json();
       setItem(data);
     } catch (err) {
@@ -234,16 +245,17 @@ export function DetailsScreen({ route, navigation }) {
 
 const styles = StyleSheet.create({
   container: { padding: 16, flex: 1 },
-  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 8 },
-  description: { fontSize: 16, color: '#666', marginBottom: 16 },
-  button: { backgroundColor: '#6200ee', padding: 12, borderRadius: 8 },
-  buttonText: { color: '#fff', fontWeight: 'bold', textAlign: 'center' }
+  title: { fontSize: 24, fontWeight: "bold", marginBottom: 8 },
+  description: { fontSize: 16, color: "#666", marginBottom: 16 },
+  button: { backgroundColor: "#6200ee", padding: 12, borderRadius: 8 },
+  buttonText: { color: "#fff", fontWeight: "bold", textAlign: "center" },
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use functional components with React Hooks
 - Implement proper error handling and loading states
 - Use Redux or Context API for state management
@@ -256,6 +268,7 @@ const styles = StyleSheet.create({
 - Implement proper memory management
 
 ### ❌ DON'T
+
 - Use inline styles excessively (use StyleSheet)
 - Make API calls without error handling
 - Store sensitive data in plain text

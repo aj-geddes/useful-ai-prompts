@@ -1,13 +1,14 @@
 ---
 category: monitoring-observability
-date: '2025-01-01'
-description: Implement structured logging across applications with log aggregation
+date: "2025-01-01"
+description:
+  Implement structured logging across applications with log aggregation
   and centralized analysis. Use when setting up application logging, implementing
   ELK stack, or analyzing application behavior.
 layout: skill
 slug: application-logging
 tags:
-- development
+  - development
 title: application-logging
 ---
 
@@ -31,36 +32,36 @@ Implement comprehensive structured logging with proper levels, context, and cent
 
 ```javascript
 // logger.js
-const winston = require('winston');
+const winston = require("winston");
 
 const logFormat = winston.format.combine(
-  winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+  winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
   winston.format.errors({ stack: true }),
-  winston.format.json()
+  winston.format.json(),
 );
 
 const logger = winston.createLogger({
-  level: process.env.LOG_LEVEL || 'info',
+  level: process.env.LOG_LEVEL || "info",
   format: logFormat,
   defaultMeta: {
-    service: 'api-service',
-    environment: process.env.NODE_ENV || 'development'
+    service: "api-service",
+    environment: process.env.NODE_ENV || "development",
   },
   transports: [
     new winston.transports.Console({
       format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.simple()
-      )
+        winston.format.simple(),
+      ),
     }),
     new winston.transports.File({
-      filename: 'logs/error.log',
-      level: 'error'
+      filename: "logs/error.log",
+      level: "error",
     }),
     new winston.transports.File({
-      filename: 'logs/combined.log'
-    })
-  ]
+      filename: "logs/combined.log",
+    }),
+  ],
 });
 
 module.exports = logger;
@@ -70,42 +71,44 @@ module.exports = logger;
 
 ```javascript
 // Express middleware
-const express = require('express');
-const expressWinston = require('express-winston');
-const logger = require('./logger');
+const express = require("express");
+const expressWinston = require("express-winston");
+const logger = require("./logger");
 
 const app = express();
 
-app.use(expressWinston.logger({
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: 'logs/http.log' })
-  ],
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json()
-  ),
-  meta: true,
-  msg: 'HTTP {{req.method}} {{req.url}}',
-  expressFormat: true
-}));
+app.use(
+  expressWinston.logger({
+    transports: [
+      new winston.transports.Console(),
+      new winston.transports.File({ filename: "logs/http.log" }),
+    ],
+    format: winston.format.combine(
+      winston.format.timestamp(),
+      winston.format.json(),
+    ),
+    meta: true,
+    msg: "HTTP {{req.method}} {{req.url}}",
+    expressFormat: true,
+  }),
+);
 
-app.get('/api/users/:id', (req, res) => {
-  const requestId = req.headers['x-request-id'] || Math.random().toString();
+app.get("/api/users/:id", (req, res) => {
+  const requestId = req.headers["x-request-id"] || Math.random().toString();
 
-  logger.info('User request started', { requestId, userId: req.params.id });
+  logger.info("User request started", { requestId, userId: req.params.id });
 
   try {
-    const user = { id: req.params.id, name: 'John Doe' };
-    logger.debug('User data retrieved', { requestId, user });
+    const user = { id: req.params.id, name: "John Doe" };
+    logger.debug("User data retrieved", { requestId, user });
     res.json(user);
   } catch (error) {
-    logger.error('User retrieval failed', {
+    logger.error("User retrieval failed", {
       requestId,
       error: error.message,
-      stack: error.stack
+      stack: error.stack,
     });
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 ```
@@ -191,7 +194,7 @@ def get_order(order_id):
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.0.0
@@ -259,6 +262,7 @@ output {
 ## Best Practices
 
 ### ✅ DO
+
 - Use structured JSON logging
 - Include request IDs for tracing
 - Log at appropriate levels
@@ -269,6 +273,7 @@ output {
 - Filter sensitive data
 
 ### ❌ DON'T
+
 - Log passwords or secrets
 - Log at INFO for every operation
 - Use unstructured messages

@@ -1,13 +1,14 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Distribute content globally using CloudFront with caching, security headers,
+date: "2025-01-01"
+description:
+  Distribute content globally using CloudFront with caching, security headers,
   WAF integration, and origin configuration. Use for low-latency content delivery.
 layout: skill
 slug: aws-cloudfront-cdn
 tags:
-- aws
-- security
+  - aws
+  - security
 title: aws-cloudfront-cdn
 ---
 
@@ -422,6 +423,7 @@ aws cloudfront create-response-headers-policy \
 ## Best Practices
 
 ### ✅ DO
+
 - Use Origin Access Identity (OAI) for S3
 - Enable HTTPS only for viewers
 - Compress content at CloudFront
@@ -432,6 +434,7 @@ aws cloudfront create-response-headers-policy \
 - Use multiple origins for redundancy
 
 ### ❌ DON'T
+
 - Make S3 buckets public
 - Cache sensitive data
 - Use HTTP for production

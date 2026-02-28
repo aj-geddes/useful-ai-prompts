@@ -5,7 +5,18 @@ category: biotechnology
 slug: biotechnology
 icon: fas fa-dna
 description: "Advanced biotechnology prompts for drug discovery, bioinformatics, gene editing, genomic analysis, and biotech innovation workflows."
-tags: [drug discovery, bioinformatics, gene editing, CRISPR, genomics, protein analysis, biomarker discovery, clinical trials, synthetic biology]
+tags:
+  [
+    drug discovery,
+    bioinformatics,
+    gene editing,
+    CRISPR,
+    genomics,
+    protein analysis,
+    biomarker discovery,
+    clinical trials,
+    synthetic biology,
+  ]
 ---
 
 The Biotechnology category contains cutting-edge prompts designed for professionals working in biotechnology, pharmaceutical research, and life sciences. These prompts leverage advanced frameworks to accelerate drug discovery, optimize genomic analysis, and enhance biotech innovation workflows.

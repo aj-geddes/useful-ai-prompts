@@ -3,30 +3,31 @@ title: Public Speaking Preparation Expert
 slug: public-speaking-preparation-expert
 category: communication
 tags:
-- public
-- speaking
-- presentation
-- skills
-- speech
-- preparation
-- stage
-- presence
-- keynotes
+  - public
+  - speaking
+  - presentation
+  - skills
+  - speech
+  - preparation
+  - stage
+  - presence
+  - keynotes
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Prepares compelling presentations and speeches through structure design,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Prepares compelling presentations and speeches through structure design,
   delivery techniques, and anxiety management. Combines speech architecture with performance
   psychology to build confidence for any speaking engagement, from team meetings to
   keynote addresses.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for conference talks or keynote presentations
-- Building presentation skills systematically
-- Managing speaking anxiety and stage fright
-- Developing executive presence for leadership communication
+  - Ideal scenarios:**
+  - Preparing for conference talks or keynote presentations
+  - Building presentation skills systematically
+  - Managing speaking anxiety and stage fright
+  - Developing executive presence for leadership communication
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,18 +42,20 @@ Great presentations combine solid structure with authentic delivery. Most speake
 
 <input_handling>
 Required inputs:
+
 - Speaking occasion and time limit
 - Audience composition and size
 - Key message or topic
 - Current speaking experience level
 
 Optional inputs (will use defaults if not provided):
+
 - Presentation style (default: conversational with structure)
 - Visual aid approach (default: minimal, supportive slides)
 - Anxiety level (default: moderate, addressable with techniques)
 - Specific challenges or concerns
 - Preparation timeline available
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive speaking preparation plan through these steps:
@@ -63,33 +66,36 @@ Create a comprehensive speaking preparation plan through these steps:
 4. **Build audience engagement tactics** - Design interaction points, questions, and attention-recapture moments
 5. **Prepare Q&A handling approach** - Anticipate questions and develop response frameworks
 6. **Design practice and rehearsal plan** - Create timeline for preparation with specific practice activities
-</task>
+   </task>
 
 <output_specification>
 Format: Comprehensive speaking preparation plan
 Length: 700-1000 words
 Structure:
+
 - Speech structure with narrative arc
 - Delivery techniques for stage presence
 - Anxiety management strategies
 - Audience engagement tactics
 - Q&A preparation
 - Practice timeline and checklist
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Build speech structure toward clear, memorable conclusion
 - Match techniques to speaker's experience level and style
 - Provide practical, actionable anxiety management strategies
 - Create achievable practice plan within stated timeline
 
 Avoid:
+
 - Generic speech advice that applies to any topic
 - Over-scripting that kills authenticity and natural delivery
 - Ignoring speaker's stated experience level
 - Unrealistic practice schedules
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Keep speech structure flexible enough for natural delivery

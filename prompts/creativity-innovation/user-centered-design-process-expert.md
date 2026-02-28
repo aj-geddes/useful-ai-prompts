@@ -1,6 +1,7 @@
 # User-Centered Design Process Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/user-centered-design-process-expert
 - **Version**: 2.1.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ A comprehensive user-centered design framework that guides the creation of produ
 ## When to Use
 
 ### Ideal Scenarios
+
 - Designing products for users with diverse abilities or accessibility needs
 - Creating experiences for vulnerable or underserved populations
 - Redesigning products that have poor user satisfaction scores
@@ -26,6 +28,7 @@ A comprehensive user-centered design framework that guides the creation of produ
 - Teams wanting to embed user-centered practices into their design process
 
 ### Anti-Patterns (When Not to Use)
+
 - Internal tools where users have been trained extensively
 - Highly technical products for expert users who prefer power over simplicity
 - Situations where user research access is impossible
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Designing: Mobile app for medication management for elderly users
 2. Problem: Seniors often forget medications, take wrong doses, or get confused with multiple prescriptions
@@ -131,27 +135,32 @@ Thank you for sharing this context. Designing medication management for elderly 
 **Phase 1: Deep Empathy Research (Weeks 1-2)**
 
 In-Home Observations (10 participants):
+
 - Watch seniors manage medications in their real environment
 - Observe lighting conditions, hand dexterity, reading glasses usage
 - Note existing systems they have created (pill organizers, notes, routines)
 - Understand the role of family members in medication management
 
 Medication Journey Mapping (8 participants):
+
 - Document entire process from receiving prescription to taking pills
 - Identify all touchpoints with pharmacy, doctors, family
 - Map confusion points, anxiety moments, and workarounds
 
 Family Caregiver Interviews (5 participants):
+
 - Understand concerns from adult children or spouses
 - Learn what information they need and when
 - Explore their role in medication oversight
 
 Pharmacy Partnership Research (3 pharmacies):
+
 - Learn about prescription data formats and integration options
 - Understand common errors pharmacists see
 - Explore pharmacist role in patient support
 
 **Key Research Questions:**
+
 - How do users currently organize and remember medications?
 - What causes the most confusion or errors in their current process?
 - What existing non-digital systems work well for them?
@@ -165,30 +174,35 @@ Pharmacy Partnership Research (3 pharmacies):
 Based on elderly users with low tech literacy and accessibility needs:
 
 **Principle 1: "Bigger is Always Better"**
+
 - Minimum 18pt body text, 24pt for critical information
 - Touch targets at least 60x60 pixels (larger than standard 44px)
 - High contrast ratios of 7:1 minimum
 - Generous whitespace between interactive elements
 
 **Principle 2: "One Thing at a Time"**
+
 - Single-task screens with one clear action
 - No multi-step processes on one screen
 - Clear, linear navigation without branching options
 - Always show current location and next step
 
 **Principle 3: "Speak Their Language"**
+
 - Use real-world analogies (pill bottles, calendars, pill organizers)
 - Eliminate all technology jargon completely
 - Voice-first interactions where possible
 - Physical-like interactions (sliding toggles, not abstract gestures)
 
 **Principle 4: "Impossible to Break"**
+
 - Multiple confirmations for critical actions like marking medication taken
 - Undo options everywhere with generous time windows
 - Clear error recovery that does not blame the user
 - No permanent consequences from single taps
 
 **Principle 5: "See the Medicine, Not Just Text"**
+
 - Actual photographs of user's specific pills
 - Size reference (shown next to familiar object)
 - Color and shape always visible and described
@@ -198,6 +212,7 @@ Based on elderly users with low tech literacy and accessibility needs:
 **ACCESSIBILITY STRATEGY**
 
 **Vision Support (Primary Need):**
+
 - Adjustable text size from 18pt to 32pt in settings
 - High contrast mode with pure black on white
 - Color-blind safe design never relying on color alone
@@ -205,6 +220,7 @@ Based on elderly users with low tech literacy and accessibility needs:
 - Large, clear icons always accompanied by text labels
 
 **Motor Support (Arthritis, Tremor):**
+
 - 60x60 pixel minimum tap areas, 80px preferred for primary actions
 - Gesture alternatives: tap replaces swipe everywhere
 - Confirmation delays: 500ms before registering taps to prevent accidents
@@ -212,6 +228,7 @@ Based on elderly users with low tech literacy and accessibility needs:
 - Steady-hand mode: ignore minor shakes and brief unintended touches
 
 **Cognitive Support (Mild Decline, Anxiety):**
+
 - 5th-grade reading level maximum for all text
 - Visual medication identification with photos, never just names
 - Step-by-step guidance with one instruction at a time
@@ -265,6 +282,7 @@ MORNING MEDICATIONS
 **TESTING APPROACH**
 
 **Phase 1: Paper Prototype Testing (Weeks 3-4)**
+
 - Location: Senior center, community room
 - Participants: 15 seniors matching target demographics
 - Method: Large printed screens, observe without helping
@@ -272,6 +290,7 @@ MORNING MEDICATIONS
 - Metric: Task completion without assistance
 
 **Phase 2: Interactive Prototype Testing (Weeks 8-10)**
+
 - Location: In-home testing with 10 users
 - Duration: 1-week diary study
 - Method: Daily check-in calls, usage observation
@@ -279,6 +298,7 @@ MORNING MEDICATIONS
 - Include family member feedback session
 
 **Key Metrics:**
+
 - Task completion rate without assistance (target: 90%)
 - Error rate for medication selection (target: less than 2%)
 - Time to complete daily routine (target: under 2 minutes)
@@ -290,18 +310,21 @@ MORNING MEDICATIONS
 **IMPLEMENTATION RECOMMENDATIONS**
 
 **Onboarding Strategy:**
+
 - In-person setup at pharmacy or with family member present
 - Never expect self-onboarding from target population
 - Practice mode using candy "pills" to build confidence
 - Printed quick-start guide with visual steps to take home
 
 **Voice-First Features:**
+
 - "What pills do I take now?"
 - "I took my morning pills"
 - "When is my next dose?"
 - "Call my daughter"
 
 **Progressive Disclosure:**
+
 - Start with just medication reminders, nothing else
 - Add features only as users demonstrate comfort
 - Hide complex settings by default
@@ -311,13 +334,13 @@ MORNING MEDICATIONS
 
 **RISK MITIGATION**
 
-| Risk | Mitigation |
-|------|------------|
-| Tech anxiety | Pharmacy staff trained to assist with first-time setup |
-| Adoption resistance | Free trial period with family support included |
-| Error making | Multiple confirmation steps for all medication actions |
-| Emergency | Direct hotline to pharmacist during business hours |
-| Offline usage | Full functionality without internet connection |
+| Risk                | Mitigation                                             |
+| ------------------- | ------------------------------------------------------ |
+| Tech anxiety        | Pharmacy staff trained to assist with first-time setup |
+| Adoption resistance | Free trial period with family support included         |
+| Error making        | Multiple confirmation steps for all medication actions |
+| Emergency           | Direct hotline to pharmacist during business hours     |
+| Offline usage       | Full functionality without internet connection         |
 
 Would you like me to detail specific screen layouts, voice interaction scripts, or the pharmacy integration approach?
 

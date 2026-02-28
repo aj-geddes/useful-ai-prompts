@@ -106,52 +106,52 @@ const UserProfile: React.FC = () => {
 
 ```typescript
 // router/index.ts
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import { useAuthStore } from '@/stores/auth';
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { useAuthStore } from "@/stores/auth";
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    component: () => import('@/views/Home.vue'),
-    meta: { title: 'Home' }
+    path: "/",
+    component: () => import("@/views/Home.vue"),
+    meta: { title: "Home" },
   },
   {
-    path: '/login',
-    component: () => import('@/views/Login.vue'),
-    meta: { title: 'Login', requiresGuest: true }
+    path: "/login",
+    component: () => import("@/views/Login.vue"),
+    meta: { title: "Login", requiresGuest: true },
   },
   {
-    path: '/dashboard',
-    component: () => import('@/views/Dashboard.vue'),
-    meta: { title: 'Dashboard', requiresAuth: true },
+    path: "/dashboard",
+    component: () => import("@/views/Dashboard.vue"),
+    meta: { title: "Dashboard", requiresAuth: true },
     children: [
       {
-        path: 'users',
-        component: () => import('@/views/Users.vue'),
-        meta: { title: 'Users' }
+        path: "users",
+        component: () => import("@/views/Users.vue"),
+        meta: { title: "Users" },
       },
       {
-        path: 'analytics',
-        component: () => import('@/views/Analytics.vue'),
-        meta: { title: 'Analytics' }
-      }
-    ]
+        path: "analytics",
+        component: () => import("@/views/Analytics.vue"),
+        meta: { title: "Analytics" },
+      },
+    ],
   },
   {
-    path: '/users/:id',
-    component: () => import('@/views/UserDetail.vue'),
-    meta: { title: 'User Details', requiresAuth: true }
+    path: "/users/:id",
+    component: () => import("@/views/UserDetail.vue"),
+    meta: { title: "User Details", requiresAuth: true },
   },
   {
-    path: '/:pathMatch(.*)*',
-    component: () => import('@/views/NotFound.vue'),
-    meta: { title: 'Not Found' }
-  }
+    path: "/:pathMatch(.*)*",
+    component: () => import("@/views/NotFound.vue"),
+    meta: { title: "Not Found" },
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 // Navigation guards
@@ -159,13 +159,13 @@ router.beforeEach((to, from, next) => {
   const authStore = useAuthStore();
 
   // Update page title
-  document.title = (to.meta.title as string) || 'App';
+  document.title = (to.meta.title as string) || "App";
 
   // Check authentication
   if (to.meta.requiresAuth && !authStore.isAuthenticated) {
-    next('/login');
+    next("/login");
   } else if (to.meta.requiresGuest && authStore.isAuthenticated) {
-    next('/dashboard');
+    next("/dashboard");
   } else {
     next();
   }
@@ -174,130 +174,131 @@ router.beforeEach((to, from, next) => {
 export default router;
 
 // main.ts
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-createApp(App).use(router).mount('#app');
+createApp(App).use(router).mount("#app");
 ```
 
 ### 3. **Angular Routing**
 
 ```typescript
 // app-routing.module.ts
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { AuthGuard } from './guards/auth.guard';
-import { GuestGuard } from './guards/guest.guard';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { AuthGuard } from "./guards/auth.guard";
+import { GuestGuard } from "./guards/guest.guard";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   {
-    path: 'home',
+    path: "home",
     loadComponent: () =>
-      import('./pages/home/home.component').then(m => m.HomeComponent)
+      import("./pages/home/home.component").then((m) => m.HomeComponent),
   },
   {
-    path: 'login',
+    path: "login",
     loadComponent: () =>
-      import('./pages/login/login.component').then(m => m.LoginComponent),
-    canActivate: [GuestGuard]
+      import("./pages/login/login.component").then((m) => m.LoginComponent),
+    canActivate: [GuestGuard],
   },
   {
-    path: 'dashboard',
+    path: "dashboard",
     component: DashboardComponent,
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'users',
+        path: "users",
         loadChildren: () =>
-          import('./features/users/users.module').then(m => m.UsersModule)
-      }
-    ]
+          import("./features/users/users.module").then((m) => m.UsersModule),
+      },
+    ],
   },
   {
-    path: 'users/:id',
+    path: "users/:id",
     loadComponent: () =>
-      import('./pages/user-detail/user-detail.component')
-        .then(m => m.UserDetailComponent),
-    canActivate: [AuthGuard]
+      import("./pages/user-detail/user-detail.component").then(
+        (m) => m.UserDetailComponent,
+      ),
+    canActivate: [AuthGuard],
   },
-  { path: '**', redirectTo: '/home' }
+  { path: "**", redirectTo: "/home" },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
 
 // auth.guard.ts
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import {
   CanActivate,
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
-  Router
-} from '@angular/router';
-import { AuthService } from '../services/auth.service';
+  Router,
+} from "@angular/router";
+import { AuthService } from "../services/auth.service";
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: "root" })
 export class AuthGuard implements CanActivate {
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
   ) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
+    state: RouterStateSnapshot,
   ): boolean {
     if (this.authService.isAuthenticated()) {
       return true;
     }
 
-    this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
+    this.router.navigate(["/login"], { queryParams: { returnUrl: state.url } });
     return false;
   }
 }
 
 // Component usage
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
-  selector: 'app-user-detail',
-  templateUrl: './user-detail.component.html'
+  selector: "app-user-detail",
+  templateUrl: "./user-detail.component.html",
 })
 export class UserDetailComponent implements OnInit {
   userId: string | null = null;
-  tab: string = 'profile';
+  tab: string = "profile";
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      this.userId = params['id'];
+    this.route.params.subscribe((params) => {
+      this.userId = params["id"];
     });
 
-    this.route.queryParams.subscribe(params => {
-      this.tab = params['tab'] || 'profile';
+    this.route.queryParams.subscribe((params) => {
+      this.tab = params["tab"] || "profile";
     });
   }
 
   goHome(): void {
-    this.router.navigate(['/']);
+    this.router.navigate(["/"]);
   }
 
   navigateToTab(tab: string): void {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { tab },
-      queryParamsHandling: 'merge'
+      queryParamsHandling: "merge",
     });
   }
 }

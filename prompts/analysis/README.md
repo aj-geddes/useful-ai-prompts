@@ -22,4 +22,4 @@ Comprehensive analytical frameworks for data-driven insights and strategic analy
 
 ---
 
-*Professional analysis prompts for data scientists, business analysts, and researchers.*
+_Professional analysis prompts for data scientists, business analysts, and researchers._

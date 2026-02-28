@@ -1,6 +1,7 @@
 # Conflict Mediation Expert
 
 ## Metadata
+
 - **ID**: `communication-conflict-mediation`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Facilitates constructive conflict resolution through structured mediation, uncovering underlying interests, and creating mutually beneficial solutions. Helps managers and professionals navigate workplace disputes to restore productive working relationships and prevent future conflicts through systematic de-escalation and agreement building.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Mediating disputes between team members affecting productivity
 - Resolving interdepartmental conflicts and turf battles
 - Addressing stakeholder disagreements blocking progress
@@ -24,6 +27,7 @@ Facilitates constructive conflict resolution through structured mediation, uncov
 - Preventing escalation of emerging tensions
 
 **Anti-Patterns (When NOT to Use):**
+
 - Legal disputes requiring formal proceedings
 - HR investigations of policy violations or misconduct
 - Performance management issues requiring formal action
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Two senior developers are constantly arguing about technical approaches. One wants cutting-edge technology, the other prefers proven solutions. It's delaying every sprint planning session. Team morale is suffering as people take sides. Both are valuable employees I don't want to lose. I'm their manager. We have a critical project deadline in 3 months."
 
 ### Output
@@ -115,21 +120,25 @@ Avoid:
 ## SITUATION ANALYSIS
 
 ### Surface Conflict
+
 Technical approach disagreements causing sprint planning delays
 
 ### Underlying Interests
 
 **Developer A (Innovation Advocate):**
+
 - Surface: Wants cutting-edge technology
 - Underlying: Fears career stagnation, wants to stay relevant
 - Deeper: Needs recognition for technical vision
 
 **Developer B (Stability Advocate):**
+
 - Surface: Wants proven solutions
 - Underlying: Fears project failure, values reliability
 - Deeper: Needs recognition for practical wisdom
 
 ### Common Ground
+
 - Both want project success
 - Both care about code quality
 - Both want team respect
@@ -146,6 +155,7 @@ Technical approach disagreements causing sprint planning delays
 "I value your experience on this team. I'd like to understand what's behind your preference for proven approaches. What concerns you about adopting newer technologies?"
 
 **In Both Conversations:**
+
 - Listen without judgment
 - Validate their expertise and concerns
 - Ask: "What would an ideal technical decision process look like?"
@@ -157,17 +167,20 @@ Technical approach disagreements causing sprint planning delays
 "Thank you both for being here. I've spoken with each of you individually, and I'm impressed by how much you both care about this project succeeding. Today, I'd like us to find a way to make technical decisions that leverages both of your expertise."
 
 **Ground Rules:**
+
 - Focus on project success, not winning arguments
 - Seek to understand before being understood
 - Propose solutions, not just objections
 
 **Structured Discussion (30 min):**
+
 1. Each person shares what they need from technical decisions (5 min each)
 2. Acknowledge what you heard from the other person
 3. Identify shared goals and concerns
 4. Brainstorm approaches together
 
 **Agreement Building (15 min):**
+
 - Document agreed-upon decision framework
 - Clarify roles and escalation path
 - Set trial period and review date
@@ -175,18 +188,22 @@ Technical approach disagreements causing sprint planning delays
 ## RESOLUTION OPTIONS
 
 ### Option 1: Technical Decision Framework
+
 Create structured process:
+
 - Innovation: 20% of features can use newer tech
 - Stability: Core systems stay proven
 - Decision criteria: documented for each choice
 - Escalation: CTO input for disagreements
 
 ### Option 2: Zone Ownership
+
 - Developer A: Leads evaluation of new technologies
 - Developer B: Owns production stability decisions
 - Joint: Collaborate on integration approach
 
 ### Option 3: Pilot Program
+
 - Test new tech on non-critical features
 - Developer B establishes success criteria
 - Developer A leads implementation
@@ -203,21 +220,25 @@ Create structured process:
 "B, I understand the concern about [specific risk]. What would need to be true for you to feel comfortable trying this? What alternatives would you suggest?"
 
 ### Redirect to Common Ground
+
 "It sounds like you both want the project to succeed and deliver quality work. Let's focus on finding an approach that achieves both innovation and stability."
 
 ## FOLLOW-UP PLAN
 
 ### Immediate (This Week)
+
 - Document agreed framework
 - Share with team for transparency
 - First decision using new process
 
 ### Short-term (30 Days)
+
 - Check-in with each developer individually
 - Review: Is the framework working?
 - Adjust based on learnings
 
 ### Long-term (90 Days)
+
 - Full retrospective on technical decision process
 - Celebrate successful collaboration examples
 - Address any recurring patterns
@@ -233,6 +254,7 @@ Create structured process:
 ---
 
 ## Related Prompts
+
 - [Team Collaboration Expert](team-collaboration-expert.md) - Build effective team dynamics
 - [Crisis Communication Expert](crisis-communication-expert.md) - Handle escalated situations
 - [Conflict Resolution Expert](../problem-solving/conflict-resolution-expert.md) - Broader conflict resolution strategies

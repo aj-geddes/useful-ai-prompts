@@ -1,6 +1,7 @@
 # Job Description Writer
 
 ## Metadata
+
 - **ID**: `human-resources-job-description-writer`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -18,12 +19,14 @@ This prompt activates an expert job description specialist who crafts compelling
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new role descriptions from scratch for open headcount
 - Updating outdated job postings that aren't attracting qualified candidates
 - Auditing existing job descriptions for bias, compliance, or accuracy issues
 - Standardizing job description templates across a department or organization
 
 **Anti-patterns (Don't Use For):**
+
 - Writing fictional job listings or recruiting scams
 - Creating job descriptions designed to screen out protected classes
 - Replacing genuine role definition conversations with hiring managers
@@ -127,13 +130,14 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need a job description for a Senior Data Engineer. They'll work on our data platform team, report to the VP of Engineering, and be responsible for building and maintaining our data pipelines, working with Spark and Databricks, mentoring junior engineers, and collaborating with analysts. We're a fintech startup in Austin, hybrid 3 days/week. Salary around $160-190k."
 
 ### Output
 
 **Senior Data Engineer — Data Platform Team**
 
-*Location: Austin, TX (Hybrid — 3 days on-site) | Department: Engineering | FLSA: Exempt | Compensation: $160,000 – $190,000*
+_Location: Austin, TX (Hybrid — 3 days on-site) | Department: Engineering | FLSA: Exempt | Compensation: $160,000 – $190,000_
 
 **About the Role**
 
@@ -151,6 +155,7 @@ Join our Data Platform team as a Senior Data Engineer where you'll architect and
 **What You Bring**
 
 Required:
+
 - 5+ years of experience building production data pipelines in a professional engineering environment
 - Proficiency with Apache Spark and distributed data processing frameworks
 - Strong SQL skills and experience with cloud data warehouses (Databricks, Snowflake, BigQuery, or equivalent)
@@ -158,18 +163,20 @@ Required:
 - Demonstrated ability to collaborate across engineering and analytics teams
 
 Preferred:
+
 - Experience in fintech, payments, or regulated data environments
 - Familiarity with data quality frameworks and observability tooling
 - Prior mentorship or technical lead experience
 
 **What We Offer**
+
 - Competitive salary ($160,000–$190,000) plus equity and annual bonus eligibility
 - Comprehensive health, dental, and vision coverage
 - Flexible hybrid schedule (3 days in Austin office)
 - $2,000 annual learning and development stipend
 - 401(k) with company match
 
-*We are an equal opportunity employer and consider all qualified applicants without regard to race, color, religion, sex, national origin, disability, or veteran status.*
+_We are an equal opportunity employer and consider all qualified applicants without regard to race, color, religion, sex, national origin, disability, or veteran status._
 
 ---
 

@@ -1,15 +1,16 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Plan and execute cloud migrations with assessment, database migration,
+date: "2025-01-01"
+description:
+  Plan and execute cloud migrations with assessment, database migration,
   application refactoring, and cutover strategies across AWS, Azure, and GCP.
 layout: skill
 slug: cloud-migration-planning
 tags:
-- aws
-- azure
-- gcp
-- data
+  - aws
+  - azure
+  - gcp
+  - data
 title: cloud-migration-planning
 ---
 
@@ -542,6 +543,7 @@ validation_criteria:
 ## Best Practices
 
 ### ✅ DO
+
 - Perform thorough discovery and assessment
 - Run parallel systems during transition
 - Test thoroughly before cutover
@@ -552,6 +554,7 @@ validation_criteria:
 - Maintain previous systems temporarily
 
 ### ❌ DON'T
+
 - Rush migration without planning
 - Migrate without testing
 - Forget rollback procedures

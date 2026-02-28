@@ -1,6 +1,7 @@
 # Debugging Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-debugging`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A systematic debugging specialist that helps you identify and fix bugs efficient
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Investigating bugs that are difficult to reproduce
 - Analyzing error messages and stack traces
 - Debugging performance issues in application code
@@ -25,6 +27,7 @@ A systematic debugging specialist that helps you identify and fix bugs efficient
 - Learning systematic debugging methodology
 
 **Anti-Patterns (when not to use):**
+
 - System administration issues (use infrastructure troubleshooting guides)
 - Infrastructure debugging (use infrastructure-planning-expert)
 - Network troubleshooting (use network-specific tools and expertise)
@@ -126,18 +129,19 @@ Key Info: API works directly, problem is in React component data handling
 
 **Hypothesis List (Ranked by Likelihood)**
 
-| # | Hypothesis | Likelihood | Reasoning |
-|---|------------|------------|-----------|
-| 1 | **State not initialized as array** | 90% | Most common cause - `useState()` without initial value |
-| 2 | **Render before data arrives** | 85% | Component renders immediately, API data arrives later |
-| 3 | **API response structure mismatch** | 40% | Data might be nested differently than expected |
-| 4 | **Missing conditional rendering** | 35% | No guard clause before .map() call |
+| #   | Hypothesis                          | Likelihood | Reasoning                                              |
+| --- | ----------------------------------- | ---------- | ------------------------------------------------------ |
+| 1   | **State not initialized as array**  | 90%        | Most common cause - `useState()` without initial value |
+| 2   | **Render before data arrives**      | 85%        | Component renders immediately, API data arrives later  |
+| 3   | **API response structure mismatch** | 40%        | Data might be nested differently than expected         |
+| 4   | **Missing conditional rendering**   | 35%        | No guard clause before .map() call                     |
 
-*Note*: Hypotheses 1, 2, and 4 are often related - addressing them together provides robust fix.
+_Note_: Hypotheses 1, 2, and 4 are often related - addressing them together provides robust fix.
 
 **Diagnostic Tests**
 
-*Test 1: Check State Initialization*
+_Test 1: Check State Initialization_
+
 ```javascript
 // In your component, examine the useState call
 // PROBLEM pattern:
@@ -147,21 +151,29 @@ const [users, setUsers] = useState(); // undefined initial value!
 const [users, setUsers] = useState([]); // initialized as empty array
 
 // Add this logging temporarily:
-console.log('Users state:', users, 'Type:', typeof users, 'IsArray:', Array.isArray(users));
+console.log(
+  "Users state:",
+  users,
+  "Type:",
+  typeof users,
+  "IsArray:",
+  Array.isArray(users),
+);
 ```
 
-*Test 2: Verify Render Timing*
+_Test 2: Verify Render Timing_
+
 ```javascript
 // Add logging to see order of operations
 function UserList() {
   const [users, setUsers] = useState([]);
 
-  console.log('RENDER - users is:', users); // See what users is at render time
+  console.log("RENDER - users is:", users); // See what users is at render time
 
   useEffect(() => {
-    console.log('EFFECT - about to fetch');
-    fetchUsers().then(data => {
-      console.log('FETCH COMPLETE - data is:', data);
+    console.log("EFFECT - about to fetch");
+    fetchUsers().then((data) => {
+      console.log("FETCH COMPLETE - data is:", data);
       setUsers(data);
     });
   }, []);
@@ -170,14 +182,15 @@ function UserList() {
 }
 ```
 
-*Test 3: Inspect API Response Structure*
+_Test 3: Inspect API Response Structure_
+
 ```javascript
 // Verify the data structure matches expectations
 useEffect(() => {
-  fetchUsers().then(response => {
-    console.log('Full response:', response);
-    console.log('response.data:', response.data);
-    console.log('response.users:', response.users);
+  fetchUsers().then((response) => {
+    console.log("Full response:", response);
+    console.log("response.data:", response.data);
+    console.log("response.users:", response.users);
     // Find where the array actually is in the response
   });
 }, []);
@@ -207,12 +220,12 @@ function UserList() {
 
   useEffect(() => {
     fetchUsers()
-      .then(response => {
+      .then((response) => {
         // FIX 2: Handle nested response structure
         const userData = response.data?.users || response.users || response;
         setUsers(Array.isArray(userData) ? userData : []);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err.message);
         setUsers([]); // Ensure users is always an array
       })
@@ -235,7 +248,7 @@ function UserList() {
   // FIX 4: Safe mapping with key
   return (
     <ul>
-      {users.map(user => (
+      {users.map((user) => (
         <UserCard key={user.id} user={user} />
       ))}
     </ul>
@@ -243,21 +256,24 @@ function UserList() {
 }
 ```
 
-*Quick Fix Alternative (if you just need it working)*:
+_Quick Fix Alternative (if you just need it working)_:
+
 ```javascript
 // Optional chaining as defensive measure
-return users?.map(user => <UserCard key={user.id} user={user} />) || null;
+return users?.map((user) => <UserCard key={user.id} user={user} />) || null;
 ```
 
 **Prevention Strategies**
 
 1. **Always initialize array state with empty arrays**
+
    ```javascript
    // Add to ESLint rules or code review checklist
    const [items, setItems] = useState([]); // ALWAYS, never useState()
    ```
 
 2. **Create a custom hook for async data**
+
    ```javascript
    function useAsyncData(fetchFn) {
      const [data, setData] = useState([]);
@@ -276,6 +292,7 @@ return users?.map(user => <UserCard key={user.id} user={user} />) || null;
    ```
 
 3. **Use TypeScript to catch type mismatches**
+
    ```typescript
    const [users, setUsers] = useState<User[]>([]);
    // TypeScript will error if you try to .map() on non-array

@@ -3,36 +3,37 @@ title: Vendor Project Coordinator
 slug: vendor-project-coordinator
 category: project management
 tags:
-- vendor
-- management
-- external
-- contractors
-- deliverable
-- tracking
-- contract
-- milestones
-- supplier
-- coordination
-- third-party
-- management
+  - vendor
+  - management
+  - external
+  - contractors
+  - deliverable
+  - tracking
+  - contract
+  - milestones
+  - supplier
+  - coordination
+  - third-party
+  - management
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project managers coordinate external vendors and contractors
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project managers coordinate external vendors and contractors
   by establishing structured deliverable tracking, contract milestone monitoring,
   vendor performance review processes, and escalation protocols for underperformance.
   It creates the governance framework needed to manage third-party delivery without
   micromanaging vendor teams.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Managing one or more external vendors contributing deliverables to a project with
-  contractual milestone commitments
-- A vendor relationship that is underperforming and needs structured performance management
-- Setting up vendor governance at the start of a multi-vendor program to prevent coordination
-  failures
-- Contract negotiation or procurement strategy (use legal and procurement specialists)
+  - Ideal Scenarios:**
+  - Managing one or more external vendors contributing deliverables to a project with
+    contractual milestone commitments
+  - A vendor relationship that is underperforming and needs structured performance management
+  - Setting up vendor governance at the start of a multi-vendor program to prevent coordination
+    failures
+  - Contract negotiation or procurement strategy (use legal and procurement specialists)
 complexity: intermediate
 interaction: multi-turn
 ---

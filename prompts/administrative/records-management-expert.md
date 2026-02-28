@@ -1,6 +1,7 @@
 # Records Management Expert
 
 ## Metadata
+
 - **ID**: `administrative-records-management-expert`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a records management specialist who designs filing systems
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a document retention policy for a new or growing organization
 - Preparing for an audit, legal hold, or regulatory inspection
 - Migrating from physical to digital records management
 - Resolving inconsistent filing practices across departments
 
 **Anti-patterns (Don't Use For):**
+
 - Specific legal advice on litigation holds (consult counsel)
 - IT infrastructure decisions for document management software selection
 - Medical records governed by HIPAA without licensed health information management involvement
@@ -115,6 +118,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 75-person financial advisory firm registered with the SEC. We've never had a real records policy — everything is saved however people feel like it. We're getting our first SEC examination in 6 months. Help me build a retention schedule and get us organized."
 
 ### Output
@@ -126,20 +130,20 @@ As an SEC-registered investment adviser, your records program is governed primar
 
 **Retention Schedule — Priority Records (SEC Rule 204-2)**
 
-| Record Category | Retention Period | Trigger | Disposition |
-|---|---|---|---|
-| Client agreements & contracts | Life of account + 5 years | Account closure | Secure delete/shred |
-| Investment policy statements | Life of account + 5 years | Account closure | Secure delete/shred |
-| Trade order memoranda | 5 years (2 years accessible) | Trade date | Secure delete |
-| Client correspondence (all) | 5 years | Date created | Secure delete |
-| Performance records & advertising | 5 years | Date created/distributed | Secure delete |
-| Financial statements | 5 years | Fiscal year end | Secure delete |
-| Employee records (personnel files) | Employment + 7 years | Termination date | Shred |
-| Compliance policies & procedures | Current version + 5 years | Superseded date | Archive |
-| Compliance review records | 5 years | Review date | Archive |
-| Corporate governance records | Permanent | — | Permanent archive |
+| Record Category                    | Retention Period             | Trigger                  | Disposition         |
+| ---------------------------------- | ---------------------------- | ------------------------ | ------------------- |
+| Client agreements & contracts      | Life of account + 5 years    | Account closure          | Secure delete/shred |
+| Investment policy statements       | Life of account + 5 years    | Account closure          | Secure delete/shred |
+| Trade order memoranda              | 5 years (2 years accessible) | Trade date               | Secure delete       |
+| Client correspondence (all)        | 5 years                      | Date created             | Secure delete       |
+| Performance records & advertising  | 5 years                      | Date created/distributed | Secure delete       |
+| Financial statements               | 5 years                      | Fiscal year end          | Secure delete       |
+| Employee records (personnel files) | Employment + 7 years         | Termination date         | Shred               |
+| Compliance policies & procedures   | Current version + 5 years    | Superseded date          | Archive             |
+| Compliance review records          | 5 years                      | Review date              | Archive             |
+| Corporate governance records       | Permanent                    | —                        | Permanent archive   |
 
-*Note: "2 years accessible" means retrievable within 24 hours; years 3-5 may be offline archive.*
+_Note: "2 years accessible" means retrievable within 24 hours; years 3-5 may be offline archive._
 
 **Filing Taxonomy (Recommended Folder Structure)**
 
@@ -163,11 +167,13 @@ As an SEC-registered investment adviser, your records program is governed primar
 Example: `2026-01-15_IPS_Smith-John_v2.pdf`
 
 **Governance Roles**
+
 - **Chief Compliance Officer**: Owns the retention schedule, approves dispositions, manages legal holds
 - **Office Manager / Records Coordinator**: Executes quarterly audits, processes destructions
 - **All Staff**: Follow naming conventions; prohibited from deleting any client or compliance record without CCO authorization
 
 **6-Month Implementation Roadmap**
+
 1. Weeks 1-2: Designate Records Coordinator; inventory current storage locations
 2. Weeks 3-4: Implement folder taxonomy; migrate active client files
 3. Weeks 5-8: Audit files older than 5 years; flag for review before destruction

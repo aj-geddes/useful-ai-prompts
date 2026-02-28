@@ -3,33 +3,34 @@ title: Community Solar Shared Ownership Development
 slug: community-solar-shared-ownership-development
 category: renewable energy/solar energy development
 tags:
-- community
-- solar
-- shared
-- ownership
-- renewable
-- energy
-- access
-- energy
-- equity
-- distributed
-- energy
+  - community
+  - solar
+  - shared
+  - ownership
+  - renewable
+  - energy
+  - access
+  - energy
+  - equity
+  - distributed
+  - energy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-09-01'
-description: This prompt enables development of comprehensive community solar programs
+  - Claude 3+
+  - GPT-4+
+date: "2025-09-01"
+description:
+  This prompt enables development of comprehensive community solar programs
   with shared ownership models that democratize access to renewable energy. It combines
   expertise in community solar development with energy equity management to create
   programs that serve residential and small commercial customers who cannot install
   rooftop solar due to property constraints, financial limitations, or rental situations.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing community solar programs for underserved communities
-- Creating shared ownership structures for distributed solar projects
-- Designing equitable access programs for low-to-moderate income participation
-- Navigating virtual net metering and regulatory frameworks
+  - Ideal scenarios:**
+  - Developing community solar programs for underserved communities
+  - Creating shared ownership structures for distributed solar projects
+  - Designing equitable access programs for low-to-moderate income participation
+  - Navigating virtual net metering and regulatory frameworks
 complexity: advanced
 interaction: multi-turn
 ---
@@ -48,17 +49,19 @@ Community solar enables shared ownership and participation in renewable energy f
 
 <input_handling>
 **Required information:**
+
 - Target service territory and utility context
 - Community demographics and energy burden data
 - Regulatory environment (net metering policies, community solar rules)
 - Project scale and development timeline
 
 **Optional (will infer reasonable defaults):**
+
 - Financing structure preference (third-party, utility, cooperative)
 - LMI participation targets (default: 40%+ per Solar for All guidelines)
 - Customer acquisition strategy
 - Utility partnership status
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive community solar program:
@@ -74,18 +77,20 @@ Develop a comprehensive community solar program:
 5. **Implementation Plan**: Design customer acquisition, community engagement, utility integration, and operational launch strategies
 
 6. **Impact Framework**: Establish metrics for energy burden reduction, equity achievement, community economic benefit, and program sustainability
-</task>
+   </task>
 
 <output_specification>
 **Community Solar Program Development Plan**
+
 - Format: Structured development plan with implementation roadmap
 - Length: 1000-1500 words
 - Sections: Market analysis, program design, financing, implementation, equity metrics
 - Must include: Specific participation models, savings projections, equity targets, timeline with milestones
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Clear pathway to 40%+ LMI participation with specific mechanisms
 - Realistic financial projections with 10-20% customer savings
 - Regulatory compliance strategy with utility coordination approach
@@ -93,12 +98,13 @@ Develop a comprehensive community solar program:
 - Measurable impact metrics for energy equity and economic development
 
 **Avoid:**
+
 - Generic program descriptions without specific implementation steps
 - Ignoring regulatory complexity or utility coordination requirements
 - Underestimating community engagement effort required
 - Focusing on developer returns at expense of community benefit
 - Missing consumer protection and subscription term considerations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Adhere to IREC Model Community Solar Policies for consumer protection

@@ -1,6 +1,7 @@
 # STEM Curriculum Builder
 
 ## Metadata
+
 - **ID**: `education-stem-curriculum-builder`
 - **Version**: 1.0.0
 - **Category**: Education
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt designs rigorous, hands-on STEM activities and unit sequences that authentically integrate science, technology, engineering, and mathematics through real-world problem contexts. It goes beyond surface-level "STEM activities" to create experiences where each discipline is genuinely necessary and students develop both content knowledge and engineering design thinking. The output includes complete activity designs with materials, procedures, facilitation guides, and assessment strategies.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Building a multi-lesson STEM unit around a real-world engineering challenge or scientific problem
 - Designing a single hands-on STEM activity that authentically integrates two or more disciplines
 - Creating a STEM elective or after-school program curriculum with coherent progression
 
 **Anti-patterns (Don't Use For):**
+
 - Adding a "STEM" label to activities that only involve one discipline without genuine integration
 - Designing activities primarily for entertainment where learning objectives are secondary
 - Building curriculum without considering materials availability, safety requirements, or teacher facilitation capacity
@@ -70,18 +75,21 @@ Avoid: Activities where "technology" means only using a tablet, science content 
 ## Example Usage
 
 ### Input
+
 "I need a STEM activity for 5th grade that integrates science (properties of materials, heat transfer) with math (measurement, data analysis) and engineering design. I want students to design something that solves a real problem. We have 3 class periods of 45 minutes each. Our school has basic materials — craft supplies, thermometers, basic tools — and a set of Chromebooks."
 
 ### Output
+
 **STEM Activity: "The Cold Chain Challenge"**
-*Grade 5 | 3 x 45-Minute Periods | Science + Math + Engineering + Technology*
+_Grade 5 | 3 x 45-Minute Periods | Science + Math + Engineering + Technology_
 
 ---
 
 **Real-World Problem Context**
 Vaccines, medicines, and food must stay cold during transportation — this is called the "cold chain." When the cold chain breaks, vaccines lose effectiveness and food spoils. Students take on the role of packaging engineers for a global health nonprofit: design an insulated container that keeps an ice cube cold for the longest time possible using only provided materials. The organization needs data to choose the best design.
 
-*STEM Integration Map:*
+_STEM Integration Map:_
+
 - Science: Heat transfer (conduction, convection, radiation), properties of insulating materials
 - Math: Temperature measurement, graphing data over time, calculating rates of change, comparing averages
 - Engineering: Full design cycle — define, brainstorm, prototype, test, redesign
@@ -92,41 +100,42 @@ Vaccines, medicines, and food must stay cold during transportation — this is c
 **Materials List**
 Per team (4 students): 1 thermometer, 1 identical-size ice cube (made in advance), craft materials (aluminum foil, cardboard, cotton balls, bubble wrap, newspaper, foam scraps), tape, scissors, small plastic container (same size for all teams), stopwatch or phone timer
 
-*Low-cost alternatives:* Styrofoam cups from grocery store (free from coffee shops), rubber bands instead of tape for some seals
+_Low-cost alternatives:_ Styrofoam cups from grocery store (free from coffee shops), rubber bands instead of tape for some seals
 
-*Safety Note:* No sharp tools — pre-cut cardboard if needed. Dry ice is not appropriate; standard ice only.
+_Safety Note:_ No sharp tools — pre-cut cardboard if needed. Dry ice is not appropriate; standard ice only.
 
 ---
 
 **Period 1: Define and Research (45 min)**
 
-*Hook (10 min):* Show a 2-minute video clip about vaccine cold chain failures in developing countries. Pose: "What does a packaging engineer need to understand to solve this?"
+_Hook (10 min):_ Show a 2-minute video clip about vaccine cold chain failures in developing countries. Pose: "What does a packaging engineer need to understand to solve this?"
 
-*Science Content Mini-Lesson (15 min):* Direct instruction on three types of heat transfer with demonstrations. Students take notes in engineering notebooks.
+_Science Content Mini-Lesson (15 min):_ Direct instruction on three types of heat transfer with demonstrations. Students take notes in engineering notebooks.
 
-*Research and Brainstorm (20 min):* Teams research properties of available materials on Chromebooks (thermal conductivity tables provided). Record: which materials slow conduction? Convection? Radiation? Generate 3 design sketches with rationale.
+_Research and Brainstorm (20 min):_ Teams research properties of available materials on Chromebooks (thermal conductivity tables provided). Record: which materials slow conduction? Convection? Radiation? Generate 3 design sketches with rationale.
 
 ---
 
 **Period 2: Build and Test (45 min)**
 
-*Build Phase (20 min):* Teams construct their insulated container using chosen materials. Engineer notebooks: record materials used, why each was selected, predicted performance.
+_Build Phase (20 min):_ Teams construct their insulated container using chosen materials. Engineer notebooks: record materials used, why each was selected, predicted performance.
 
-*Test Protocol (25 min):* All teams start with identical ice cube in identical base container. Record temperature every 3 minutes for 20 minutes using thermometers. Data recorded in engineering notebook table AND Google Sheets for graphing.
+_Test Protocol (25 min):_ All teams start with identical ice cube in identical base container. Record temperature every 3 minutes for 20 minutes using thermometers. Data recorded in engineering notebook table AND Google Sheets for graphing.
 
 ---
 
 **Period 3: Analyze, Redesign, and Communicate (45 min)**
 
-*Data Analysis (15 min):* Using Google Sheets, teams create a line graph of temperature over time. Calculate: average rate of temperature increase per minute. Compare to class data posted on board.
+_Data Analysis (15 min):_ Using Google Sheets, teams create a line graph of temperature over time. Calculate: average rate of temperature increase per minute. Compare to class data posted on board.
 
-*Redesign Decision (10 min):* Based on data, each team identifies one design change and explains the science reason using heat transfer vocabulary.
+_Redesign Decision (10 min):_ Based on data, each team identifies one design change and explains the science reason using heat transfer vocabulary.
 
-*Gallery Walk + Class Discussion (20 min):* Teams display their container, graph, and one design improvement. Class discussion: which material properties mattered most? What would a real engineer do next?
+_Gallery Walk + Class Discussion (20 min):_ Teams display their container, graph, and one design improvement. Class discussion: which material properties mattered most? What would a real engineer do next?
 
 ---
 
 **Assessment Criteria**
+
 - Engineering notebook: hypothesis, materials rationale, data table (4 pts)
 - Graph accuracy and labeling (3 pts)
 - Science vocabulary in explanation (2 pts)
@@ -139,9 +148,11 @@ Per team (4 students): 1 thermometer, 1 identical-size ice cube (made in advance
 ---
 
 ## Variations
+
 - **Maker Space Version**: Expand to include digital fabrication (laser cutter, 3D printer) for the container design
 - **Coding Integration**: Add temperature sensors connected to micro:bit or Arduino for real-time data logging
 
 ## Related Prompts
+
 - [Project-Based Learning Designer](project-based-learning-designer.md) - Extend this into a multi-week PBL unit with public product
 - [Assessment Designer](assessment-designer.md) - Build a performance task rubric for the engineering notebook

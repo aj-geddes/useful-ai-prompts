@@ -1,14 +1,15 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Create safe, reversible database migration scripts with rollback capabilities,
+date: "2025-01-01"
+description:
+  Create safe, reversible database migration scripts with rollback capabilities,
   data validation, and zero-downtime deployments. Use when changing database schemas,
   migrating data between systems, or performing large-scale data transformations.
 layout: skill
 slug: data-migration-scripts
 tags:
-- data
-- deployment
+  - data
+  - deployment
 title: data-migration-scripts
 ---
 
@@ -44,19 +45,24 @@ Create robust, safe, and reversible data migration scripts for database schema c
 ### 1. **Knex.js Migrations (Node.js)**
 
 ```typescript
-import { Knex } from 'knex';
+import { Knex } from "knex";
 
 // migrations/20240101000000_add_user_preferences.ts
 export async function up(knex: Knex): Promise<void> {
   // Create new table
-  await knex.schema.createTable('user_preferences', (table) => {
-    table.uuid('id').primary().defaultTo(knex.raw('gen_random_uuid()'));
-    table.uuid('user_id').notNullable().references('id').inTable('users').onDelete('CASCADE');
-    table.jsonb('preferences').defaultTo('{}');
-    table.timestamp('created_at').defaultTo(knex.fn.now());
-    table.timestamp('updated_at').defaultTo(knex.fn.now());
+  await knex.schema.createTable("user_preferences", (table) => {
+    table.uuid("id").primary().defaultTo(knex.raw("gen_random_uuid()"));
+    table
+      .uuid("user_id")
+      .notNullable()
+      .references("id")
+      .inTable("users")
+      .onDelete("CASCADE");
+    table.jsonb("preferences").defaultTo("{}");
+    table.timestamp("created_at").defaultTo(knex.fn.now());
+    table.timestamp("updated_at").defaultTo(knex.fn.now());
 
-    table.index('user_id');
+    table.index("user_id");
   });
 
   // Migrate existing data
@@ -70,7 +76,10 @@ export async function up(knex: Knex): Promise<void> {
     WHERE theme IS NOT NULL OR notifications_enabled IS NOT NULL
   `);
 
-  console.log('Migrated user preferences for', await knex('user_preferences').count());
+  console.log(
+    "Migrated user preferences for",
+    await knex("user_preferences").count(),
+  );
 }
 
 export async function down(knex: Knex): Promise<void> {
@@ -85,7 +94,7 @@ export async function down(knex: Knex): Promise<void> {
   `);
 
   // Drop new table
-  await knex.schema.dropTableIfExists('user_preferences');
+  await knex.schema.dropTableIfExists("user_preferences");
 }
 ```
 
@@ -93,32 +102,32 @@ export async function down(knex: Knex): Promise<void> {
 // migrations/20240102000000_add_email_verification.ts
 export async function up(knex: Knex): Promise<void> {
   // Add new columns
-  await knex.schema.table('users', (table) => {
-    table.boolean('email_verified').defaultTo(false);
-    table.timestamp('email_verified_at').nullable();
-    table.string('verification_token').nullable();
+  await knex.schema.table("users", (table) => {
+    table.boolean("email_verified").defaultTo(false);
+    table.timestamp("email_verified_at").nullable();
+    table.string("verification_token").nullable();
   });
 
   // Backfill verified status for existing users
-  await knex('users')
-    .where('created_at', '<', knex.raw("NOW() - INTERVAL '30 days'"))
+  await knex("users")
+    .where("created_at", "<", knex.raw("NOW() - INTERVAL '30 days'"))
     .update({
       email_verified: true,
-      email_verified_at: knex.fn.now()
+      email_verified_at: knex.fn.now(),
     });
 
   // Add index
-  await knex.schema.table('users', (table) => {
-    table.index('verification_token');
+  await knex.schema.table("users", (table) => {
+    table.index("verification_token");
   });
 }
 
 export async function down(knex: Knex): Promise<void> {
-  await knex.schema.table('users', (table) => {
-    table.dropIndex('verification_token');
-    table.dropColumn('email_verified');
-    table.dropColumn('email_verified_at');
-    table.dropColumn('verification_token');
+  await knex.schema.table("users", (table) => {
+    table.dropIndex("verification_token");
+    table.dropColumn("email_verified");
+    table.dropColumn("email_verified_at");
+    table.dropColumn("verification_token");
   });
 }
 ```
@@ -196,7 +205,7 @@ def downgrade():
 ### 3. **Large Data Migration with Batching**
 
 ```typescript
-import { Knex } from 'knex';
+import { Knex } from "knex";
 
 interface MigrationProgress {
   total: number;
@@ -211,15 +220,15 @@ class LargeDataMigration {
     total: 0,
     processed: 0,
     errors: 0,
-    startTime: Date.now()
+    startTime: Date.now(),
   };
 
   async migrate(knex: Knex): Promise<void> {
-    console.log('Starting large data migration...');
+    console.log("Starting large data migration...");
 
     // Get total count
-    const result = await knex('old_table').count('* as count').first();
-    this.progress.total = parseInt(result?.count as string || '0');
+    const result = await knex("old_table").count("* as count").first();
+    this.progress.total = parseInt((result?.count as string) || "0");
 
     console.log(`Total records to migrate: ${this.progress.total}`);
 
@@ -236,7 +245,7 @@ class LargeDataMigration {
       await this.delay(100);
     }
 
-    console.log('Migration complete!');
+    console.log("Migration complete!");
     this.logProgress();
   }
 
@@ -245,19 +254,16 @@ class LargeDataMigration {
 
     try {
       // Fetch batch
-      const records = await trx('old_table')
-        .select('*')
+      const records = await trx("old_table")
+        .select("*")
         .limit(this.batchSize)
         .offset(offset);
 
       // Transform and insert
-      const transformed = records.map(record => this.transformRecord(record));
+      const transformed = records.map((record) => this.transformRecord(record));
 
       if (transformed.length > 0) {
-        await trx('new_table')
-          .insert(transformed)
-          .onConflict('id')
-          .merge(); // Upsert
+        await trx("new_table").insert(transformed).onConflict("id").merge(); // Upsert
       }
 
       await trx.commit();
@@ -279,24 +285,27 @@ class LargeDataMigration {
       user_id: record.userId,
       data: JSON.stringify(record.legacyData),
       created_at: record.createdAt,
-      updated_at: new Date()
+      updated_at: new Date(),
     };
   }
 
   private logProgress(): void {
-    const percent = ((this.progress.processed / this.progress.total) * 100).toFixed(2);
+    const percent = (
+      (this.progress.processed / this.progress.total) *
+      100
+    ).toFixed(2);
     const elapsed = Date.now() - this.progress.startTime;
     const rate = this.progress.processed / (elapsed / 1000);
 
     console.log(
       `Progress: ${this.progress.processed}/${this.progress.total} (${percent}%) ` +
-      `Errors: ${this.progress.errors} ` +
-      `Rate: ${rate.toFixed(2)} records/sec`
+        `Errors: ${this.progress.errors} ` +
+        `Rate: ${rate.toFixed(2)} records/sec`,
     );
   }
 
   private delay(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
 
@@ -312,11 +321,11 @@ export async function up(knex: Knex): Promise<void> {
 ```typescript
 // Phase 1: Add new column (nullable)
 export async function up_phase1(knex: Knex): Promise<void> {
-  await knex.schema.table('users', (table) => {
-    table.string('email_new').nullable();
+  await knex.schema.table("users", (table) => {
+    table.string("email_new").nullable();
   });
 
-  console.log('Phase 1: Added new column');
+  console.log("Phase 1: Added new column");
 }
 
 // Phase 2: Backfill data
@@ -325,12 +334,12 @@ export async function up_phase2(knex: Knex): Promise<void> {
   let processed = 0;
 
   while (true) {
-    const result = await knex('users')
-      .whereNull('email_new')
-      .whereNotNull('email')
+    const result = await knex("users")
+      .whereNull("email_new")
+      .whereNotNull("email")
       .limit(batchSize)
       .update({
-        email_new: knex.raw('email')
+        email_new: knex.raw("email"),
       });
 
     processed += result;
@@ -338,7 +347,7 @@ export async function up_phase2(knex: Knex): Promise<void> {
     if (result < batchSize) break;
 
     console.log(`Backfilled ${processed} records`);
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 100));
   }
 
   console.log(`Phase 2: Backfilled ${processed} total records`);
@@ -346,25 +355,25 @@ export async function up_phase2(knex: Knex): Promise<void> {
 
 // Phase 3: Add constraint
 export async function up_phase3(knex: Knex): Promise<void> {
-  await knex.schema.alterTable('users', (table) => {
-    table.string('email_new').notNullable().alter();
-    table.unique('email_new');
+  await knex.schema.alterTable("users", (table) => {
+    table.string("email_new").notNullable().alter();
+    table.unique("email_new");
   });
 
-  console.log('Phase 3: Added constraints');
+  console.log("Phase 3: Added constraints");
 }
 
 // Phase 4: Drop old column
 export async function up_phase4(knex: Knex): Promise<void> {
-  await knex.schema.table('users', (table) => {
-    table.dropColumn('email');
+  await knex.schema.table("users", (table) => {
+    table.dropColumn("email");
   });
 
-  await knex.schema.table('users', (table) => {
-    table.renameColumn('email_new', 'email');
+  await knex.schema.table("users", (table) => {
+    table.renameColumn("email_new", "email");
   });
 
-  console.log('Phase 4: Completed migration');
+  console.log("Phase 4: Completed migration");
 }
 ```
 
@@ -379,16 +388,16 @@ class MigrationValidator {
       this.checkDataIntegrity(knex),
       this.checkConstraints(knex),
       this.checkIndexes(knex),
-      this.checkRowCounts(knex)
+      this.checkRowCounts(knex),
     ];
 
     const results = await Promise.all(checks);
-    const passed = results.every(r => r);
+    const passed = results.every((r) => r);
 
     if (passed) {
-      console.log('✓ All validation checks passed');
+      console.log("✓ All validation checks passed");
     } else {
-      console.error('✗ Validation failed');
+      console.error("✗ Validation failed");
     }
 
     return passed;
@@ -396,20 +405,20 @@ class MigrationValidator {
 
   private async checkDataIntegrity(knex: Knex): Promise<boolean> {
     // Check for orphaned records
-    const orphaned = await knex('user_roles')
-      .leftJoin('users', 'user_roles.user_id', 'users.id')
-      .whereNull('users.id')
-      .count('* as count')
+    const orphaned = await knex("user_roles")
+      .leftJoin("users", "user_roles.user_id", "users.id")
+      .whereNull("users.id")
+      .count("* as count")
       .first();
 
-    const count = parseInt(orphaned?.count as string || '0');
+    const count = parseInt((orphaned?.count as string) || "0");
 
     if (count > 0) {
       console.error(`Found ${count} orphaned user_roles records`);
       return false;
     }
 
-    console.log('✓ Data integrity check passed');
+    console.log("✓ Data integrity check passed");
     return true;
   }
 
@@ -426,11 +435,11 @@ class MigrationValidator {
     const hasConstraint = result.rows[0].count > 0;
 
     if (!hasConstraint) {
-      console.error('Email unique constraint missing');
+      console.error("Email unique constraint missing");
       return false;
     }
 
-    console.log('✓ Constraints check passed');
+    console.log("✓ Constraints check passed");
     return true;
   }
 
@@ -444,29 +453,29 @@ class MigrationValidator {
     `);
 
     if (result.rows.length === 0) {
-      console.error('Email index missing');
+      console.error("Email index missing");
       return false;
     }
 
-    console.log('✓ Indexes check passed');
+    console.log("✓ Indexes check passed");
     return true;
   }
 
   private async checkRowCounts(knex: Knex): Promise<boolean> {
     const [oldCount, newCount] = await Promise.all([
-      knex('users').count('* as count').first(),
-      knex('user_preferences').count('* as count').first()
+      knex("users").count("* as count").first(),
+      knex("user_preferences").count("* as count").first(),
     ]);
 
-    const old = parseInt(oldCount?.count as string || '0');
-    const new_ = parseInt(newCount?.count as string || '0');
+    const old = parseInt((oldCount?.count as string) || "0");
+    const new_ = parseInt((newCount?.count as string) || "0");
 
     if (Math.abs(old - new_) > old * 0.01) {
       console.error(`Row count mismatch: ${old} vs ${new_}`);
       return false;
     }
 
-    console.log('✓ Row counts check passed');
+    console.log("✓ Row counts check passed");
     return true;
   }
 }
@@ -478,10 +487,10 @@ export async function up(knex: Knex): Promise<void> {
 
   // Validate
   const validator = new MigrationValidator();
-  const valid = await validator.validate(knex, 'add_user_preferences');
+  const valid = await validator.validate(knex, "add_user_preferences");
 
   if (!valid) {
-    throw new Error('Migration validation failed');
+    throw new Error("Migration validation failed");
   }
 }
 ```
@@ -564,6 +573,7 @@ class CrossDatabaseMigration:
 ## Best Practices
 
 ### ✅ DO
+
 - Always write both `up` and `down` migrations
 - Test migrations on production-like data
 - Use transactions for atomic operations
@@ -579,6 +589,7 @@ class CrossDatabaseMigration:
 - Use idempotent operations
 
 ### ❌ DON'T
+
 - Run untested migrations on production
 - Make breaking changes without backwards compatibility
 - Process millions of rows in single transaction

@@ -5,6 +5,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 ## Skills Overview
 
 ### Container & Orchestration
+
 1. **kubernetes-deployment** (357 lines)
    - Deployments, StatefulSets, DaemonSets, rolling updates
    - Resource management, health checks, RBAC
@@ -18,6 +19,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
    - Files: service-mesh-implementation/SKILL.md
 
 ### Infrastructure as Code
+
 3. **terraform-infrastructure** (394 lines)
    - AWS VPC, subnets, security groups, routing
    - Load balancers, databases, auto-scaling groups
@@ -31,6 +33,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
    - Files: ansible-automation/SKILL.md
 
 ### Web Servers & Load Balancing
+
 5. **nginx-configuration** (331 lines)
    - Reverse proxy, load balancing, SSL/TLS termination
    - Gzip compression, caching, rate limiting
@@ -44,6 +47,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
    - Files: load-balancer-setup/SKILL.md
 
 ### CI/CD & Deployment
+
 7. **cicd-pipeline-setup** (438 lines)
    - GitHub Actions, GitLab CI, Jenkins pipelines
    - Multi-stage builds, testing, security scanning
@@ -63,6 +67,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
    - Files: canary-deployment/SKILL.md
 
 ### Monitoring & Observability
+
 10. **infrastructure-monitoring** (407 lines)
     - Prometheus setup and configuration
     - Grafana dashboards and visualization
@@ -76,6 +81,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: log-aggregation/SKILL.md
 
 ### Data Protection & Security
+
 12. **backup-disaster-recovery** (471 lines)
     - Database backup strategies and automation
     - Cross-region replication and failover
@@ -95,6 +101,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: ssl-certificate-management/SKILL.md
 
 ### Scaling & Performance
+
 15. **autoscaling-configuration** (426 lines)
     - Kubernetes HPA with custom metrics
     - AWS Auto Scaling and scheduled scaling
@@ -102,6 +109,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: autoscaling-configuration/SKILL.md
 
 ### Network & DNS
+
 16. **network-security-groups** (470 lines)
     - AWS security groups with fine-grained rules
     - Kubernetes network policies
@@ -115,6 +123,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: dns-management/SKILL.md
 
 ### Cost & Optimization
+
 18. **infrastructure-cost-optimization** (438 lines)
     - Reserved instances and spot instance usage
     - Right-sizing and cost tracking
@@ -122,6 +131,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: infrastructure-cost-optimization/SKILL.md
 
 ### Testing & Reliability
+
 19. **disaster-recovery-testing** (407 lines)
     - DR test planning and execution
     - RTO/RPO measurement and validation
@@ -129,6 +139,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
     - Files: disaster-recovery-testing/SKILL.md
 
 ### Artifact Management
+
 20. **container-registry-management** (522 lines)
     - AWS ECR setup and lifecycle policies
     - Image scanning and vulnerability detection
@@ -138,11 +149,13 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 ## Skills by Technology Stack
 
 ### Cloud Platforms
+
 - **AWS**: Terraform, CloudFormation, Auto Scaling, Route53, ECR, ACM, Secrets Manager
 - **Kubernetes**: Deployments, HPA, Network Policies, cert-manager, service-mesh
 - **Multi-cloud**: DNS, monitoring, logging (platform-agnostic patterns)
 
 ### Languages & Formats
+
 - **YAML**: Kubernetes manifests, Ansible playbooks, Docker Compose
 - **HCL/Terraform**: Infrastructure code, AWS resources
 - **Bash**: Deployment scripts, automation utilities
@@ -152,6 +165,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 - **Nginx/HAProxy**: Web server configurations
 
 ### Tools & Frameworks
+
 - Prometheus + Grafana
 - ELK Stack (Elasticsearch, Logstash, Kibana)
 - Istio service mesh
@@ -164,6 +178,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 ## How to Use These Skills
 
 ### Quick Start
+
 1. Navigate to `/home/user/useful-ai-prompts/skills/<skill-name>/SKILL.md`
 2. Read the Overview and When to Use section
 3. Review Implementation Examples with code samples
@@ -171,12 +186,14 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 5. Check Resources for additional learning
 
 ### Integration
+
 - Copy YAML files and adapt for your infrastructure
 - Modify Terraform configurations for your AWS/cloud account
 - Adapt shell scripts for your environment
 - Use as reference templates and starting points
 
 ### Learning Path
+
 1. Start with Kubernetes & basic infrastructure concepts
 2. Move to configuration management (Terraform, Ansible)
 3. Setup CI/CD pipelines
@@ -186,32 +203,35 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 
 ## File Statistics
 
-| Metric | Value |
-|--------|-------|
-| Total Skills | 20 |
-| Total Lines of Content | 8,451 |
-| Code Examples | 150+ |
-| Shell Scripts | 40+ |
-| Configuration Files | 200+ |
-| Average Lines per Skill | 423 |
-| Minimum Lines | 331 |
-| Maximum Lines | 522 |
+| Metric                  | Value |
+| ----------------------- | ----- |
+| Total Skills            | 20    |
+| Total Lines of Content  | 8,451 |
+| Code Examples           | 150+  |
+| Shell Scripts           | 40+   |
+| Configuration Files     | 200+  |
+| Average Lines per Skill | 423   |
+| Minimum Lines           | 331   |
+| Maximum Lines           | 522   |
 
 ## Coverage by Topic
 
 ### Deployment Strategies
+
 - Rolling updates (Kubernetes)
 - Blue-green deployments
 - Canary deployments with automatic rollback
 - Shadow traffic testing
 
 ### High Availability
+
 - Multi-region failover (DNS + Route53)
 - Auto-scaling (HPA, AWS ASG)
 - Health checks and circuit breakers
 - Distributed backups
 
 ### Security
+
 - Network policies and security groups
 - RBAC (Role-Based Access Control)
 - Secret management and rotation
@@ -219,18 +239,21 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 - Image scanning in registries
 
 ### Observability
+
 - Metrics collection (Prometheus)
 - Log aggregation (ELK, Loki)
 - Distributed tracing
 - Custom dashboards
 
 ### Cost Optimization
+
 - Reserved instances
 - Spot instances
 - Resource right-sizing
 - Cost analysis and tracking
 
 ### Disaster Recovery
+
 - Automated backups
 - Cross-region replication
 - Failover testing
@@ -239,6 +262,7 @@ Complete collection of 20 production-ready DevOps and infrastructure automation 
 ## Key Features
 
 Each skill includes:
+
 - Clear overview and use cases
 - Multiple implementation examples
 - Production-ready configurations

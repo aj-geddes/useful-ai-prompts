@@ -1,6 +1,7 @@
 # Global Satellite Internet Constellation Management
 
 ## Metadata
+
 - **ID**: `space-satellite-internet-management`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Satellite Communications
@@ -18,6 +19,7 @@ This prompt enables management of global satellite internet mega-constellation o
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Operating LEO broadband mega-constellations (1,000+ satellites)
 - Managing satellite internet subscriber services at scale (millions of users)
 - Optimizing global network performance, capacity, and latency
@@ -25,6 +27,7 @@ This prompt enables management of global satellite internet mega-constellation o
 - Developing tiered service offerings for residential and enterprise markets
 
 **Anti-Patterns (Don't Use When):**
+
 - Operating traditional GEO satellite systems with limited capacity
 - Managing single-satellite or small constellation missions
 - Focusing on non-communication satellite payloads
@@ -116,6 +119,7 @@ Responses must avoid:
 ## Example Usage
 
 ### Input
+
 "We're operating a 4,200 satellite LEO constellation serving 50 million subscribers globally. Need comprehensive operations approach for network, subscribers, and service quality achieving 99.9% availability and <30ms latency."
 
 ### Output
@@ -124,100 +128,100 @@ Responses must avoid:
 
 **Constellation Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Operational Satellites | 4,200 |
-| Orbital Altitude | 550km LEO |
-| Orbital Planes | 72 (multi-inclination) |
-| Gateway Sites | 120 worldwide |
-| Active Subscribers | 50 million |
-| Coverage | Global (excluding polar >70 degrees) |
-| Availability SLA | 99.9% |
-| Latency Target | <30ms (typical 20-25ms) |
+| Parameter              | Specification                        |
+| ---------------------- | ------------------------------------ |
+| Operational Satellites | 4,200                                |
+| Orbital Altitude       | 550km LEO                            |
+| Orbital Planes         | 72 (multi-inclination)               |
+| Gateway Sites          | 120 worldwide                        |
+| Active Subscribers     | 50 million                           |
+| Coverage               | Global (excluding polar >70 degrees) |
+| Availability SLA       | 99.9%                                |
+| Latency Target         | <30ms (typical 20-25ms)              |
 
 **Network Architecture**
 
-| Component | Count/Capacity | Distribution |
-|-----------|---------------|--------------|
-| Satellites | 4,200 operational + 200 spares | 72 planes, 58 sats/plane |
-| Orbital Planes | 72 | Multi-inclination (53, 70, 97 degrees) |
-| Gateways | 120 sites | Distributed globally, <1,000km spacing |
-| POPs | 50 | Major internet exchanges |
-| User Terminals | 52M deployed | Subscriber locations |
-| Fiber Backhaul | 2.4 Tbps aggregate | Redundant paths per gateway |
+| Component      | Count/Capacity                 | Distribution                           |
+| -------------- | ------------------------------ | -------------------------------------- |
+| Satellites     | 4,200 operational + 200 spares | 72 planes, 58 sats/plane               |
+| Orbital Planes | 72                             | Multi-inclination (53, 70, 97 degrees) |
+| Gateways       | 120 sites                      | Distributed globally, <1,000km spacing |
+| POPs           | 50                             | Major internet exchanges               |
+| User Terminals | 52M deployed                   | Subscriber locations                   |
+| Fiber Backhaul | 2.4 Tbps aggregate             | Redundant paths per gateway            |
 
 **Service Tier Structure**
 
-| Tier | Download | Upload | Latency | Monthly Price | Target Market |
-|------|----------|--------|---------|---------------|---------------|
-| Residential Basic | 50 Mbps | 10 Mbps | <50ms | $50 | Rural residential |
-| Residential Premium | 200 Mbps | 25 Mbps | <30ms | $100 | Work-from-home |
-| Business | 350 Mbps | 50 Mbps | <25ms | $300 | SMB, retail, remote offices |
-| Enterprise | 500+ Mbps | 100 Mbps | <20ms | Custom | Corporate, critical infrastructure |
-| Maritime | 100+ Mbps | 20 Mbps | <40ms | Custom | Commercial vessels |
-| Aviation | 100+ Mbps | 20 Mbps | <40ms | Custom | Commercial airlines |
+| Tier                | Download  | Upload   | Latency | Monthly Price | Target Market                      |
+| ------------------- | --------- | -------- | ------- | ------------- | ---------------------------------- |
+| Residential Basic   | 50 Mbps   | 10 Mbps  | <50ms   | $50           | Rural residential                  |
+| Residential Premium | 200 Mbps  | 25 Mbps  | <30ms   | $100          | Work-from-home                     |
+| Business            | 350 Mbps  | 50 Mbps  | <25ms   | $300          | SMB, retail, remote offices        |
+| Enterprise          | 500+ Mbps | 100 Mbps | <20ms   | Custom        | Corporate, critical infrastructure |
+| Maritime            | 100+ Mbps | 20 Mbps  | <40ms   | Custom        | Commercial vessels                 |
+| Aviation            | 100+ Mbps | 20 Mbps  | <40ms   | Custom        | Commercial airlines                |
 
 **Network Operations Organization**
 
-| Function | Scope | Staffing | Coverage |
-|----------|-------|----------|----------|
-| Network Operations Center | 24/7 constellation + ground network | 200 FTE | 4 global sites |
-| Security Operations Center | 24/7 cyber monitoring, threat response | 50 FTE | 2 sites + remote |
-| Customer Care | 24/7 tier 1-3 technical support | 2,000 FTE | 6 global sites |
-| Field Operations | Regional deployment and service | 1,500 FTE | Per-market teams |
-| Engineering Support | Escalation, root cause, improvements | 150 FTE | HQ + distributed |
+| Function                   | Scope                                  | Staffing  | Coverage         |
+| -------------------------- | -------------------------------------- | --------- | ---------------- |
+| Network Operations Center  | 24/7 constellation + ground network    | 200 FTE   | 4 global sites   |
+| Security Operations Center | 24/7 cyber monitoring, threat response | 50 FTE    | 2 sites + remote |
+| Customer Care              | 24/7 tier 1-3 technical support        | 2,000 FTE | 6 global sites   |
+| Field Operations           | Regional deployment and service        | 1,500 FTE | Per-market teams |
+| Engineering Support        | Escalation, root cause, improvements   | 150 FTE   | HQ + distributed |
 
 **Performance Monitoring**
 
-| Metric | Target | Monitoring | Alert Threshold |
-|--------|--------|------------|-----------------|
-| Network Availability | 99.9% | Per-second | <99.5% triggers P1 |
-| User Latency | <30ms typical | Real-time per terminal | >50ms triggers investigation |
-| Throughput | Per-tier SLA | Continuous sampling | <80% SLA triggers action |
-| Packet Loss | <0.1% | Per-second | >0.5% triggers P2 |
-| Gateway Uptime | 99.99% | Continuous | Any outage is P1 |
+| Metric               | Target        | Monitoring             | Alert Threshold              |
+| -------------------- | ------------- | ---------------------- | ---------------------------- |
+| Network Availability | 99.9%         | Per-second             | <99.5% triggers P1           |
+| User Latency         | <30ms typical | Real-time per terminal | >50ms triggers investigation |
+| Throughput           | Per-tier SLA  | Continuous sampling    | <80% SLA triggers action     |
+| Packet Loss          | <0.1%         | Per-second             | >0.5% triggers P2            |
+| Gateway Uptime       | 99.99%        | Continuous             | Any outage is P1             |
 
 **Subscriber Management Lifecycle**
 
-| Stage | Process | Timeline | Systems |
-|-------|---------|----------|---------|
-| Acquisition | Online, retail, partner channels | Instant approval | eCommerce, CRM |
-| Fulfillment | Terminal shipping | 3-7 business days | Logistics, inventory |
-| Installation | Self-install (90%) or professional | Same day or scheduled | Mobile app, field service |
-| Activation | Automated provisioning | <1 hour from power-on | Provisioning platform |
-| Ongoing Support | 24/7 multi-channel (chat, phone, app) | Continuous | CRM, ticketing |
-| Retention | Proactive outreach, loyalty programs | Trigger-based | Analytics, CRM |
+| Stage           | Process                               | Timeline              | Systems                   |
+| --------------- | ------------------------------------- | --------------------- | ------------------------- |
+| Acquisition     | Online, retail, partner channels      | Instant approval      | eCommerce, CRM            |
+| Fulfillment     | Terminal shipping                     | 3-7 business days     | Logistics, inventory      |
+| Installation    | Self-install (90%) or professional    | Same day or scheduled | Mobile app, field service |
+| Activation      | Automated provisioning                | <1 hour from power-on | Provisioning platform     |
+| Ongoing Support | 24/7 multi-channel (chat, phone, app) | Continuous            | CRM, ticketing            |
+| Retention       | Proactive outreach, loyalty programs  | Trigger-based         | Analytics, CRM            |
 
 **Capacity Management**
 
-| Region | Current Utilization | Year-End Forecast | Expansion Actions |
-|--------|--------------------|--------------------|-------------------|
-| North America | 85% | 95% | Add 8 gateways by Q2 |
-| Europe | 75% | 88% | Add 4 gateways by Q3 |
-| Asia-Pacific | 60% | 80% | On track, monitor |
-| Latin America | 50% | 70% | Growth focus |
-| Other | 45% | 65% | Expansion phase |
+| Region        | Current Utilization | Year-End Forecast | Expansion Actions    |
+| ------------- | ------------------- | ----------------- | -------------------- |
+| North America | 85%                 | 95%               | Add 8 gateways by Q2 |
+| Europe        | 75%                 | 88%               | Add 4 gateways by Q3 |
+| Asia-Pacific  | 60%                 | 80%               | On track, monitor    |
+| Latin America | 50%                 | 70%               | Growth focus         |
+| Other         | 45%                 | 65%               | Expansion phase      |
 
 **Customer Experience Metrics**
 
-| Metric | Target | Current | Improvement Initiatives |
-|--------|--------|---------|------------------------|
-| Net Promoter Score | >50 | 45 | App experience, proactive comm |
-| First Call Resolution | >80% | 78% | Agent training, knowledge base |
-| Monthly Churn | <2.5% | 2.8% | Retention program, service quality |
-| CSAT | >90% | 88% | Response time, issue resolution |
-| Terminal Failure Rate | <3%/year | 3.2%/year | Hardware quality, logistics |
+| Metric                | Target   | Current   | Improvement Initiatives            |
+| --------------------- | -------- | --------- | ---------------------------------- |
+| Net Promoter Score    | >50      | 45        | App experience, proactive comm     |
+| First Call Resolution | >80%     | 78%       | Agent training, knowledge base     |
+| Monthly Churn         | <2.5%    | 2.8%      | Retention program, service quality |
+| CSAT                  | >90%     | 88%       | Response time, issue resolution    |
+| Terminal Failure Rate | <3%/year | 3.2%/year | Hardware quality, logistics        |
 
 **Revenue Model**
 
-| Stream | Annual Revenue | YoY Growth | Margin |
-|--------|---------------|------------|--------|
-| Residential | $5.2B | 25% | 35% |
-| Business | $1.8B | 40% | 45% |
-| Enterprise | $800M | 35% | 55% |
-| Maritime | $300M | 50% | 50% |
-| Aviation | $100M | 80% | 45% |
-| **Total** | **$8.2B** | **30%** | **40%** |
+| Stream      | Annual Revenue | YoY Growth | Margin  |
+| ----------- | -------------- | ---------- | ------- |
+| Residential | $5.2B          | 25%        | 35%     |
+| Business    | $1.8B          | 40%        | 45%     |
+| Enterprise  | $800M          | 35%        | 55%     |
+| Maritime    | $300M          | 50%        | 50%     |
+| Aviation    | $100M          | 80%        | 45%     |
+| **Total**   | **$8.2B**      | **30%**    | **40%** |
 
 ---
 

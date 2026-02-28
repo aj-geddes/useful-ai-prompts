@@ -1,15 +1,16 @@
 ---
 category: cloud-platforms
-date: '2025-01-01'
-description: Deploy serverless functions on Google Cloud Platform with triggers, IAM
+date: "2025-01-01"
+description:
+  Deploy serverless functions on Google Cloud Platform with triggers, IAM
   roles, environment variables, and monitoring. Use for event-driven computing on
   GCP.
 layout: skill
 slug: gcp-cloud-functions
 tags:
-- go
-- gcp
-- deployment
+  - go
+  - gcp
+  - deployment
 title: gcp-cloud-functions
 ---
 
@@ -119,11 +120,11 @@ gcloud functions delete my-http-function --gen2 --region us-central1
 exports.httpHandler = async (req, res) => {
   try {
     // Enable CORS
-    res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set("Access-Control-Allow-Origin", "*");
+    res.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
 
-    if (req.method === 'OPTIONS') {
-      res.status(204).send('');
+    if (req.method === "OPTIONS") {
+      res.status(204).send("");
       return;
     }
 
@@ -131,32 +132,36 @@ exports.httpHandler = async (req, res) => {
     const { name } = req.query;
 
     if (!name) {
-      return res.status(400).json({ error: 'Name is required' });
+      return res.status(400).json({ error: "Name is required" });
     }
 
     // Log with Cloud Logging
-    console.log(JSON.stringify({
-      severity: 'INFO',
-      message: 'Processing request',
-      name: name,
-      requestId: req.id
-    }));
+    console.log(
+      JSON.stringify({
+        severity: "INFO",
+        message: "Processing request",
+        name: name,
+        requestId: req.id,
+      }),
+    );
 
     // Business logic
     const response = {
       message: `Hello ${name}!`,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     };
 
     res.status(200).json(response);
   } catch (error) {
-    console.error(JSON.stringify({
-      severity: 'ERROR',
-      message: error.message,
-      stack: error.stack
-    }));
+    console.error(
+      JSON.stringify({
+        severity: "ERROR",
+        message: error.message,
+        stack: error.stack,
+      }),
+    );
 
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: "Internal server error" });
   }
 };
 
@@ -165,10 +170,10 @@ exports.pubsubHandler = async (message, context) => {
   try {
     // Decode Pub/Sub message
     const pubsubMessage = message.data
-      ? Buffer.from(message.data, 'base64').toString()
+      ? Buffer.from(message.data, "base64").toString()
       : null;
 
-    console.log('Received message:', pubsubMessage);
+    console.log("Received message:", pubsubMessage);
 
     // Parse message
     const data = JSON.parse(pubsubMessage);
@@ -176,9 +181,9 @@ exports.pubsubHandler = async (message, context) => {
     // Process message asynchronously
     await processMessage(data);
 
-    console.log('Message processed successfully');
+    console.log("Message processed successfully");
   } catch (error) {
-    console.error('Error processing message:', error);
+    console.error("Error processing message:", error);
     throw error; // Function will retry
   }
 };
@@ -188,26 +193,28 @@ exports.storageHandler = async (file, context) => {
   try {
     const { name, bucket } = file;
 
-    console.log(JSON.stringify({
-      message: 'Processing storage event',
-      bucket: bucket,
-      file: name,
-      eventId: context.eventId,
-      eventType: context.eventType
-    }));
+    console.log(
+      JSON.stringify({
+        message: "Processing storage event",
+        bucket: bucket,
+        file: name,
+        eventId: context.eventId,
+        eventType: context.eventType,
+      }),
+    );
 
     // Check file type
-    if (!name.endsWith('.jpg') && !name.endsWith('.png')) {
-      console.log('Skipping non-image file');
+    if (!name.endsWith(".jpg") && !name.endsWith(".png")) {
+      console.log("Skipping non-image file");
       return;
     }
 
     // Process image
     await processImage(bucket, name);
 
-    console.log('Image processed successfully');
+    console.log("Image processed successfully");
   } catch (error) {
-    console.error('Error processing file:', error);
+    console.error("Error processing file:", error);
     throw error;
   }
 };
@@ -215,14 +222,14 @@ exports.storageHandler = async (file, context) => {
 // Cloud Scheduler (CRON) Function
 exports.cronHandler = async (req, res) => {
   try {
-    console.log('Scheduled job started');
+    console.log("Scheduled job started");
 
     // Run batch processing
     await performBatchJob();
 
-    res.status(200).json({ message: 'Batch job completed' });
+    res.status(200).json({ message: "Batch job completed" });
   } catch (error) {
-    console.error('Error in batch job:', error);
+    console.error("Error in batch job:", error);
     res.status(500).json({ error: error.message });
   }
 };
@@ -230,7 +237,7 @@ exports.cronHandler = async (req, res) => {
 // Helper functions
 async function processMessage(data) {
   // Business logic
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(() => resolve(), 1000);
   });
 }
@@ -494,6 +501,7 @@ output "http_function_url" {
 ## Best Practices
 
 ### ✅ DO
+
 - Use service accounts with least privilege
 - Store secrets in Secret Manager
 - Implement proper error handling
@@ -504,6 +512,7 @@ output "http_function_url" {
 - Implement idempotent functions
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Use default service account
 - Create long-running functions

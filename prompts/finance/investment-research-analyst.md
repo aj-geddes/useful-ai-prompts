@@ -1,6 +1,7 @@
 # Investment Research Analyst
 
 ## Metadata
+
 - **ID**: `finance-investment-research-analyst`
 - **Version**: 1.0.0
 - **Category**: Finance
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt performs structured investment research analysis across individual equities, sectors, or asset classes — covering business model assessment, financial health, competitive positioning, valuation, and risk/return profile. It applies institutional-grade analytical frameworks to produce a research output that supports investment decision-making. The output mirrors a professional equity research note with a clear recommendation and supporting thesis.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Evaluating a new equity investment opportunity with fundamental analysis before making a buy/sell decision
 - Conducting sector or peer comparison analysis to identify relative value within an industry
 - Building an investment thesis for a stock pitch, portfolio review, or investment committee presentation
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time trading decisions requiring live market data — this prompt works with provided data, not live feeds
 - Cryptocurrency or speculative asset analysis without fundamental underlying cash flows
 - Providing legally compliant investment advice to retail clients — a licensed financial advisor is required for that
@@ -70,9 +75,11 @@ Avoid: Circular reasoning (stock is attractive because it went up), valuation wi
 ## Example Usage
 
 ### Input
+
 "I'm evaluating a potential investment in a mid-cap industrial software company. They provide ERP and workforce management software to manufacturing companies. Revenue: $480M, growing 14% YoY. Gross margins: 72%. EBITDA margins: 18% and expanding. Net debt/EBITDA: 1.2x. The stock trades at 22x forward EBITDA. Key competitors include SAP, Oracle (as they move down-market), and a private-equity-backed niche player. What's your read?"
 
 ### Output
+
 **Investment Research Note — Mid-Cap Industrial Software**
 
 ---
@@ -86,13 +93,13 @@ This company operates a high-quality software business model: recurring subscrip
 
 **Financial Health Scorecard**
 
-| Metric | Value | Assessment |
-|--------|-------|-----------|
-| Revenue Growth | 14% YoY | Strong for industrial software |
-| Gross Margin | 72% | Software-grade — excellent |
-| EBITDA Margin | 18%, expanding | Operational leverage evident |
-| Net Debt/EBITDA | 1.2x | Conservative leverage — financial flexibility intact |
-| Free Cash Flow Conversion | Not provided — critical gap | Request FCF margin and capex profile |
+| Metric                    | Value                       | Assessment                                           |
+| ------------------------- | --------------------------- | ---------------------------------------------------- |
+| Revenue Growth            | 14% YoY                     | Strong for industrial software                       |
+| Gross Margin              | 72%                         | Software-grade — excellent                           |
+| EBITDA Margin             | 18%, expanding              | Operational leverage evident                         |
+| Net Debt/EBITDA           | 1.2x                        | Conservative leverage — financial flexibility intact |
+| Free Cash Flow Conversion | Not provided — critical gap | Request FCF margin and capex profile                 |
 
 ROIC assessment requires knowing the invested capital base (including goodwill from acquisitions). If this company has grown via acquisition, goodwill-adjusted ROIC is the real profitability test.
 
@@ -127,9 +134,11 @@ At 22x forward EBITDA, the market is pricing in continued margin expansion and s
 ---
 
 ## Variations
+
 - **Sector Scan**: Apply the framework across 5-8 comparable companies to identify relative value within a sector
 - **Bear Case Pressure Test**: Focus specifically on stress-testing an existing thesis against the most compelling negative scenarios
 
 ## Related Prompts
+
 - [Financial Model Builder](financial-model-builder.md) - Build the DCF and comparable analysis in a structured model
 - [Merger Acquisition Analyst](merger-acquisition-analyst.md) - Evaluate if this company is an M&A target or acquirer

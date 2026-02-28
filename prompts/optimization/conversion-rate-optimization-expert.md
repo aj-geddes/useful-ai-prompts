@@ -1,6 +1,7 @@
 # Conversion Rate Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-conversion-rate`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically improves conversion rates across digital touchpoints using data-d
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Conversion rates below industry benchmarks
 - High traffic but low conversion
 - Significant drop-offs at specific funnel stages
@@ -26,6 +28,7 @@ Systematically improves conversion rates across digital touchpoints using data-d
 - Landing page performance improvement
 
 **Anti-patterns (Don't Use For):**
+
 - Traffic generation or acquisition strategies
 - Brand marketing and awareness campaigns
 - Product-market fit issues (fix value prop first)
@@ -133,6 +136,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "E-commerce site selling home goods. 70% cart abandonment rate with most drops happening at the shipping info step. 50K monthly visitors, 2.5% overall conversion rate. Industry average is around 4%. Using Shopify with Google Analytics."
 
 ### Output
@@ -142,6 +146,7 @@ Avoid:
 **1. Funnel Audit**
 
 Current funnel performance analysis:
+
 - Product page to cart: ~15% add-to-cart rate (healthy for home goods)
 - Cart to checkout initiation: 30% proceed to checkout (70% abandon - problem area)
 - Checkout to payment: 60% complete payment info (below average)
@@ -190,6 +195,7 @@ Benchmark gap: 2.5% vs. 4.0% industry average = 60% improvement potential, repre
 **3. Testing Roadmap**
 
 **Month 1: Quick Wins**
+
 - Week 1-2: A/B test shipping calculator on cart page
   - Control: Current cart (no shipping info)
   - Variant: Cart with zip-based shipping estimate
@@ -203,14 +209,17 @@ Benchmark gap: 2.5% vs. 4.0% industry average = 60% improvement potential, repre
   - Duration: 2 weeks
 
 **Month 2: Core Optimizations**
+
 - Week 1-2: Test guest checkout redesign
 - Week 3-4: Test exit-intent popup (different traffic segment)
 
 **Month 3: Structural Changes**
+
 - Full single-page checkout test (requires significant development)
 - Build on learnings from previous tests
 
 **Testing Parameters:**
+
 - Minimum detectable effect: 5% relative improvement
 - Confidence level: 95%
 - Traffic split: 50/50
@@ -219,17 +228,20 @@ Benchmark gap: 2.5% vs. 4.0% industry average = 60% improvement potential, repre
 **4. Measurement Framework**
 
 **Primary KPIs:**
+
 - Overall conversion rate: Target 2.5% to 3.5% (+40%)
 - Cart abandonment rate: Target 70% to 55% (-21%)
 - Checkout completion rate: Target 60% to 75% (+25%)
 
 **Secondary Metrics (watch for unintended effects):**
+
 - Average order value (ensure not decreasing)
 - Time to purchase (faster is better)
 - Return rate (quality of conversions)
 - Support tickets related to checkout
 
 **Tracking Implementation:**
+
 - Google Analytics 4 enhanced e-commerce for funnel visualization
 - Hotjar or similar for session recordings and heatmaps
 - Weekly dashboard review during active tests

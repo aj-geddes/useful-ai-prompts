@@ -3,27 +3,28 @@ title: Space Technology Development Innovation Manager
 slug: space-technology-development-innovation-manager
 category: space economy
 tags:
-- space-technology
-- innovation-management
-- technology-development
-- r-and-d
-- rapid-prototyping
+  - space-technology
+  - innovation-management
+  - technology-development
+  - r-and-d
+  - rapid-prototyping
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Manage space technology innovation programs including technology scouting,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Manage space technology innovation programs including technology scouting,
   development acceleration, testing validation, and IP strategy. Focuses on rapid
   technology advancement using agile methodologies and innovation acceleration techniques
   to bring promising concepts to commercial viability faster than traditional development
   approaches.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Accelerating space technology development timelines
-- Managing technology innovation portfolios with limited budgets
-- Evaluating emerging space technologies for investment
-- Developing IP and technology transfer strategies for startups
+  - Ideal Scenarios:**
+  - Accelerating space technology development timelines
+  - Managing technology innovation portfolios with limited budgets
+  - Evaluating emerging space technologies for investment
+  - Developing IP and technology transfer strategies for startups
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ The user requires innovation management that accelerates technology development 
 
 <input_handling>
 Required Inputs:
+
 - Technology innovation challenge or opportunity
 - Current development status (TRL, key constraints)
 - Commercial or mission objectives
 
 Optional Inputs (will infer reasonable defaults if not provided):
+
 - Innovation methodology: Stage-gate with agile elements
 - Validation approach: Incremental testing with decision gates
 - IP focus: Patentable innovations with licensing potential
 - Risk tolerance: Higher than traditional aerospace for speed
-</input_handling>
+  </input_handling>
 
 <task>
 Manage technology innovation by following these steps:
@@ -63,12 +66,13 @@ Manage technology innovation by following these steps:
 5. **Build Innovation Partnerships**: Identify academic, lab, and industry partners that can accelerate development through shared resources, expertise, and market access
 
 6. **Establish Metrics and Decisions**: Define success metrics, decision criteria, and governance structure that enables rapid iteration while maintaining technical rigor
-</task>
+   </task>
 
 <output_specification>
 Format: Innovation Program Assessment
 Length: 1,500-3,000 words
 Structure:
+
 - Technology status assessment
 - Innovation acceleration strategy with phases
 - Acceleration techniques and time savings
@@ -76,10 +80,11 @@ Structure:
 - IP strategy with filing timeline
 - Commercialization options analysis
 - Recommendations and next steps
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Clear innovation stage gates with objective criteria
 - Practical acceleration techniques with realistic time savings
 - Rigorous technical validation despite compressed timeline
@@ -87,12 +92,13 @@ Excellent outputs demonstrate:
 - Ecosystem partnership approach for resource leverage
 
 Avoid:
+
 - Unrealistic acceleration timelines ignoring physics/engineering
 - Missing critical technical validation steps
 - Weak IP strategy that leaves innovations unprotected
 - Isolated development without leveraging partnerships
 - Acceleration that introduces unacceptable technical risk
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain technical rigor despite accelerated timelines

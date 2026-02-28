@@ -3,30 +3,31 @@ title: Stakeholder Communication Expert
 slug: stakeholder-communication-expert
 category: communication
 tags:
-- stakeholder
-- management
-- strategic
-- communication
-- relationship
-- building
-- influence
-- organizational
-- politics
+  - stakeholder
+  - management
+  - strategic
+  - communication
+  - relationship
+  - building
+  - influence
+  - organizational
+  - politics
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Builds effective stakeholder communication strategies that ensure the
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Builds effective stakeholder communication strategies that ensure the
   right people get the right information at the right time. Combines influence mapping
   with message customization to navigate complex organizational dynamics and build
   lasting support for initiatives.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Managing stakeholders across major projects or programs
-- Building support for new initiatives or organizational changes
-- Navigating organizational politics and competing interests
-- Communicating change programs or transformations
+  - Ideal scenarios:**
+  - Managing stakeholders across major projects or programs
+  - Building support for new initiatives or organizational changes
+  - Navigating organizational politics and competing interests
+  - Communicating change programs or transformations
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,18 +42,20 @@ Stakeholder management determines project success more than technical execution.
 
 <input_handling>
 Required inputs:
+
 - Initiative or project being communicated
 - Key stakeholders (roles, influence level, current stance)
 - What support or approvals are needed
 - Communication challenges being faced
 
 Optional inputs (will use defaults if not provided):
+
 - Stakeholder mapping approach (default: influence/interest grid)
 - Communication cadence (default: weekly for key stakeholders)
 - Escalation approach (default: use executive sponsors strategically)
 - Organizational culture context
 - Timeline and urgency
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive stakeholder communication strategy through these steps:
@@ -63,33 +66,36 @@ Create a comprehensive stakeholder communication strategy through these steps:
 4. **Create tactics for different stances** - Build approaches for champions, neutrals, and skeptics
 5. **Build coalition and support strategy** - Identify allies and create momentum through strategic sequencing
 6. **Define success metrics and monitoring** - Establish how to track stakeholder sentiment and adjust
-</task>
+   </task>
 
 <output_specification>
 Format: Comprehensive stakeholder communication strategy
 Length: 700-1000 words
 Structure:
+
 - Stakeholder analysis with influence/interest grid
 - Individual stakeholder profiles and strategies
 - Tailored message frameworks
 - Engagement plan with specific activities
 - Coalition building approach
 - Success metrics and monitoring plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Address specific concerns for each stakeholder
 - Provide realistic and actionable engagement plans
 - Include tactics that can convert skeptics to supporters
 - Enable real-time monitoring for course correction
 
 Avoid:
+
 - One-size-fits-all communication approaches
 - Ignoring or avoiding resistant stakeholders
 - Over-communicating without clear purpose
 - Underestimating political dynamics
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect stakeholder time and attention

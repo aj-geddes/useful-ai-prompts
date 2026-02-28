@@ -3,26 +3,27 @@ title: Ethics Evaluation Expert
 slug: ethics-evaluation-expert
 category: decision-making/ethics
 tags:
-- ethical-decision-making
-- values-alignment
-- stakeholder-impact
-- compliance
-- moral-reasoning
+  - ethical-decision-making
+  - values-alignment
+  - stakeholder-impact
+  - compliance
+  - moral-reasoning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Guide ethical decision-making by evaluating options against moral principles,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Guide ethical decision-making by evaluating options against moral principles,
   stakeholder impacts, and organizational values. Provides multi-framework ethical
   analysis using utilitarian, rights-based, and justice perspectives to ensure responsible
   choices that balance competing interests.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Facing decisions with significant ethical implications
-- Balancing business interests against social responsibility
-- Evaluating potential harm to stakeholders
-- Navigating conflicts between different ethical principles
+  - Ideal Scenarios:**
+  - Facing decisions with significant ethical implications
+  - Balancing business interests against social responsibility
+  - Evaluating potential harm to stakeholders
+  - Navigating conflicts between different ethical principles
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,15 +38,17 @@ Ethical decision-making in organizations requires balancing multiple perspective
 
 <input_handling>
 Required:
+
 - Decision or dilemma being faced
 - Key stakeholders affected
 - Potential options being considered
 
 Optional (will infer if not provided):
+
 - Organizational values (assume standard corporate responsibility)
 - Time pressure (assume reasonable deliberation time available)
 - Regulatory context (flag if legal review needed)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive ethical decision analysis with multi-framework evaluation and recommendation.
@@ -55,28 +58,31 @@ Create a comprehensive ethical decision analysis with multi-framework evaluation
 3. Evaluate alignment with organizational values and public perception
 4. Develop recommended action with clear ethical justification
 5. Create implementation guidance with monitoring and adjustment protocols
-</task>
+   </task>
 
 <output_specification>
 **Ethical Decision Analysis**
+
 - Format: Stakeholder matrix with framework analysis and recommendation
 - Length: 800-1100 words
 - Must include: Stakeholder impact matrix, multi-framework analysis, recommendation with justification, implementation guidance
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Considers impacts on all affected stakeholders
 - Applies multiple ethical lenses, not just one perspective
 - Acknowledges trade-offs and residual concerns
 - Provides practical path forward with monitoring
 
 Avoid:
+
 - Oversimplifying complex ethical trade-offs
 - Ignoring minority stakeholder perspectives
 - Presenting only one ethical framework
 - Recommendations without implementation guidance
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Never dismiss ethical concerns as merely business obstacles

@@ -3,34 +3,35 @@ title: User Research Analyst
 slug: user-research-analyst
 category: research
 tags:
-- user
-- research
-- usability
-- testing
-- user
-- interviews
-- UX
-- research
-- insight
-- synthesis
-- user
-- experience
+  - user
+  - research
+  - usability
+  - testing
+  - user
+  - interviews
+  - UX
+  - research
+  - insight
+  - synthesis
+  - user
+  - experience
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps UX researchers and product teams design usability studies,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps UX researchers and product teams design usability studies,
   conduct and analyze user interviews, synthesize research insights into actionable
   UX recommendations, and communicate findings to product and design teams in formats
   that drive tangible improvements to user experience.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a usability study for a new feature or product before or after launch
-- Analyzing notes and recordings from user interviews to extract structured insights
-- Synthesizing findings from multiple rounds of user research into a unified set of
-  UX recommendations
-- Large-scale market research requiring statistically representative sampling
+  - Ideal Scenarios:**
+  - Designing a usability study for a new feature or product before or after launch
+  - Analyzing notes and recordings from user interviews to extract structured insights
+  - Synthesizing findings from multiple rounds of user research into a unified set of
+    UX recommendations
+  - Large-scale market research requiring statistically representative sampling
 complexity: intermediate
 interaction: multi-turn
 ---

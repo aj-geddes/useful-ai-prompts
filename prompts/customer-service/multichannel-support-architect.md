@@ -1,6 +1,7 @@
 # Multichannel Support Architect
 
 ## Metadata
+
 - **ID**: `customer-service-multichannel-support-architect`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates an omnichannel support designer who creates consistent, co
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a multichannel support strategy for a company expanding beyond email-only support
 - Diagnosing inconsistency in customer experience across channels (different answers, different speeds, different quality)
 - Evaluating which new channel to add next based on customer demand and operational capacity
 
 **Anti-patterns (Don't Use For):**
+
 - Organizations with fewer than 500 monthly support contacts where channel complexity creates more problems than it solves
 - Adding channels without a plan to staff and measure them — channel sprawl without quality control degrades CX
 
@@ -71,22 +74,24 @@ Do not recommend adding a channel the team cannot staff — better to do fewer c
 ## Example Usage
 
 ### Input
+
 "We're a DTC e-commerce brand, $40M revenue, 12,000 orders/month. Current channels: email only, handled by a team of 10 agents. We get about 1,800 contacts/month. Main issues: 'Where is my order?' is 45% of volume, email response time is 18 hours, customers are complaining they can't reach us fast enough. We're considering adding chat and possibly social support. We sell primarily to 25-45 year olds."
 
 ### Output
+
 **Multichannel Support Architecture — DTC E-Commerce**
 
 ---
 
 **Channel Role Matrix**
 
-| Channel | Role | Best For | Complexity | Sync/Async |
-|---|---|---|---|---|
-| Email | Primary async resolution | Complex issues, returns/refunds, complaints, documentation needed | Medium-High | Async |
-| Live Chat (website) | High-volume quick resolution | Order status, shipping questions, product questions pre-purchase | Low-Medium | Synchronous |
-| Chatbot (automated) | Self-serve deflection | Order status (API-connected), FAQ, tracking link | Low | Automated |
-| Social (Instagram DM / Facebook) | Brand reputation + overflow | Public complaints, influencer/high-follower customers, brand sentiment | Medium | Semi-async |
-| Phone | Reserved for high-stakes | Fraud, large order errors, VIP customers | High | Synchronous |
+| Channel                          | Role                         | Best For                                                               | Complexity  | Sync/Async  |
+| -------------------------------- | ---------------------------- | ---------------------------------------------------------------------- | ----------- | ----------- |
+| Email                            | Primary async resolution     | Complex issues, returns/refunds, complaints, documentation needed      | Medium-High | Async       |
+| Live Chat (website)              | High-volume quick resolution | Order status, shipping questions, product questions pre-purchase       | Low-Medium  | Synchronous |
+| Chatbot (automated)              | Self-serve deflection        | Order status (API-connected), FAQ, tracking link                       | Low         | Automated   |
+| Social (Instagram DM / Facebook) | Brand reputation + overflow  | Public complaints, influencer/high-follower customers, brand sentiment | Medium      | Semi-async  |
+| Phone                            | Reserved for high-stakes     | Fraud, large order errors, VIP customers                               | High        | Synchronous |
 
 **Recommendation for this team:** Launch chatbot for order status first (deflects 45% of volume), then live chat for pre-purchase and complex support, then social monitoring. Phone is not recommended given team size — redirect to email with priority routing for urgent issues.
 
@@ -114,11 +119,11 @@ Social DM → Agent responds in DM, does not move customer to email unless inves
 
 **Top Failure Modes and Mitigations**
 
-| Failure Mode | Impact | Mitigation |
-|---|---|---|
-| Customer gets different answer on chat vs. email | Trust erosion, agent confusion | Centralized resolution policy library; QA audits across channels weekly |
-| Chatbot dead end — no path to human | Frustration, channel abandonment | Always-visible "Talk to a person" escape hatch; 2-attempt fallback trigger |
-| Social complaint unanswered publicly for 4+ hours | Brand damage, viral risk | Social monitoring tool with 2-hour SLA alert; one agent owns social queue |
+| Failure Mode                                      | Impact                           | Mitigation                                                                 |
+| ------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------- |
+| Customer gets different answer on chat vs. email  | Trust erosion, agent confusion   | Centralized resolution policy library; QA audits across channels weekly    |
+| Chatbot dead end — no path to human               | Frustration, channel abandonment | Always-visible "Talk to a person" escape hatch; 2-attempt fallback trigger |
+| Social complaint unanswered publicly for 4+ hours | Brand damage, viral risk         | Social monitoring tool with 2-hour SLA alert; one agent owns social queue  |
 
 ---
 
@@ -135,10 +140,12 @@ Phase 4 (Month 7+): Review metrics, evaluate whether phone support is warranted 
 ---
 
 ## Variations
+
 - **B2B Enterprise Mode**: Design a multichannel architecture for enterprise customers where Slack Connect, dedicated CSM, and a customer portal replace consumer-oriented channels
 - **Channel Audit Mode**: Evaluate an existing multichannel setup for consistency failures, routing gaps, and channel cannibalization
 
 ## Related Prompts
+
 - [Chatbot Script Writer](chatbot-script-writer.md) - Designing the automated layer within the multichannel stack
 - [Service Level Designer](service-level-designer.md) - Defining SLA targets per channel
 - [Support Team Trainer](support-team-trainer.md) - Training agents on channel-specific communication standards

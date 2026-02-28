@@ -319,10 +319,9 @@ ORDER BY TABLE_NAME, SEQ_IN_INDEX;
 ```yaml
 # prometheus.yml configuration
 scrape_configs:
-  - job_name: 'postgres'
+  - job_name: "postgres"
     static_configs:
-      - targets: ['localhost:9187']
-
+      - targets: ["localhost:9187"]
 # Using postgres_exporter
 # Download and run:
 # ./postgres_exporter --web.listen-address=:9187

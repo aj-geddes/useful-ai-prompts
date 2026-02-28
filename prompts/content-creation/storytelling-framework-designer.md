@@ -1,6 +1,7 @@
 # Storytelling Framework Designer
 
 ## Metadata
+
 - **ID**: `content-creation-storytelling-framework`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 I give sales presentations and want to tell better customer success stories. Need to make technical results feel compelling to non-technical executives. Usually have 2-3 minutes per story.
 ```
 
 ### Output
+
 ```
 **Storytelling Framework: Sales Presentations**
 

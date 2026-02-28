@@ -1,6 +1,7 @@
 # Technical Approach Selection Expert
 
 ## Metadata
+
 - **ID**: `decision-technical-approach-selection`
 - **Version**: 2.0.0
 - **Category**: Decision-Making/Technical
@@ -18,6 +19,7 @@ Help teams select the best technical approach by evaluating architectures, techn
 ## When to Use
 
 **Ideal scenarios:**
+
 - Choosing between architectural approaches (monolith vs. microservices, etc.)
 - Selecting technology stacks or frameworks for new projects
 - Evaluating build vs. buy decisions for technical capabilities
@@ -25,6 +27,7 @@ Help teams select the best technical approach by evaluating architectures, techn
 - Comparing infrastructure options (cloud providers, services)
 
 **Anti-patterns (when not to use):**
+
 - Specific coding decisions or implementation details
 - Bug fixes or debugging sessions
 - Tactical implementation within existing architecture
@@ -106,9 +109,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Building a real-time analytics platform. Need to process 1M events/second, <100ms latency. Team knows Python and Java. Have AWS credits. 6-month deadline."
 
 ### Output
+
 **Technical Approach Evaluation**
 
 **Requirements Analysis**
@@ -123,29 +128,32 @@ Avoid:
 
 **Technical Options Comparison**
 
-| Approach | Throughput | Latency | Team Fit | Complexity | Cost/Mo |
-|----------|------------|---------|----------|------------|---------|
-| **A: Kafka + Flink** | Excellent | Good | Medium | High | $8K |
-| **B: Kinesis + Lambda** | Good | Good | High | Low | $12K |
-| **C: Kafka + Spark** | Excellent | Medium | Medium | Medium | $10K |
+| Approach                | Throughput | Latency | Team Fit | Complexity | Cost/Mo |
+| ----------------------- | ---------- | ------- | -------- | ---------- | ------- |
+| **A: Kafka + Flink**    | Excellent  | Good    | Medium   | High       | $8K     |
+| **B: Kinesis + Lambda** | Good       | Good    | High     | Low        | $12K    |
+| **C: Kafka + Spark**    | Excellent  | Medium  | Medium   | Medium     | $10K    |
 
 **Detailed Analysis**
 
-*Option A: Apache Kafka + Apache Flink*
+_Option A: Apache Kafka + Apache Flink_
+
 - Architecture: Kafka for ingestion, Flink for stream processing
 - Strengths: Best throughput, true streaming, exactly-once semantics
 - Weaknesses: Operational complexity, Flink learning curve (Scala/Java)
 - Team fit: Java knowledge helps, but Flink state management is complex
 - Timeline risk: Medium - 2-month ramp-up realistic
 
-*Option B: AWS Kinesis + Lambda (Managed)*
+_Option B: AWS Kinesis + Lambda (Managed)_
+
 - Architecture: Kinesis Data Streams + Lambda + Kinesis Analytics
 - Strengths: Fully managed, lowest operational burden, Python support
 - Weaknesses: Throughput limits per shard, cold start latency concerns
 - Team fit: Excellent - Python, AWS-native
 - Timeline risk: Low - fastest to production
 
-*Option C: Apache Kafka + Spark Streaming*
+_Option C: Apache Kafka + Spark Streaming_
+
 - Architecture: Kafka ingestion, Spark Structured Streaming
 - Strengths: Good throughput, Python (PySpark) support
 - Weaknesses: Micro-batch latency (not true streaming), complexity
@@ -170,27 +178,31 @@ Avoid:
 
 **Recommendation: Kafka + Flink with Managed Services**
 
-*Rationale*:
+_Rationale_:
+
 1. Only option that confidently meets both throughput AND latency requirements
 2. MSK (Managed Kafka) + Managed Flink on AWS reduces operational burden
 3. Java skills transfer well to Flink
 4. Best cost efficiency at scale
 
-*Timeline Mitigation*:
+_Timeline Mitigation_:
+
 - Month 1-2: Kafka setup, simple pipeline, Flink training
 - Month 3-4: Core processing logic, testing at scale
 - Month 5: Performance tuning, monitoring
 - Month 6: Production hardening, documentation
 
-*Alternative if timeline is at risk*: Start with Kinesis+Lambda for MVP, plan Kafka+Flink migration for Phase 2 when latency requirements become blocking.
+_Alternative if timeline is at risk_: Start with Kinesis+Lambda for MVP, plan Kafka+Flink migration for Phase 2 when latency requirements become blocking.
 
 **Implementation Considerations**
+
 - Use AWS MSK (Managed Kafka) to reduce operational burden
 - Amazon Managed Service for Apache Flink for processing
 - Start with 2 engineers on Flink training immediately
 - Design for horizontal scaling from day 1
 
 ## Related Prompts
+
 - [Option Evaluation Expert](option-evaluation-expert.md)
 - [Go/No-Go Determinations Expert](go-no-go-determinations-expert.md)
 - [Vendor Selection Process Expert](vendor-selection-process-expert.md)

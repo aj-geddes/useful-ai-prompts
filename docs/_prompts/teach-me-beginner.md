@@ -3,25 +3,26 @@ title: Technology Learning Framework (Beginner)
 slug: teach-me-beginner
 category: research/education
 tags:
-- learning
-- technology
-- curriculum
-- beginner
-- accessible
+  - learning
+  - technology
+  - curriculum
+  - beginner
+  - accessible
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Create friendly, accessible learning guides for complete beginners exploring
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Create friendly, accessible learning guides for complete beginners exploring
   new technologies. Uses simple language, clear steps, and encouraging checkpoints
   to build foundational understanding.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Complete beginners learning their first technology tools
-- Non-technical audiences needing technology orientation
-- Educational contexts requiring accessible explanations
-- Self-learners starting from zero experience
+  - Ideal Scenarios:**
+  - Complete beginners learning their first technology tools
+  - Non-technical audiences needing technology orientation
+  - Educational contexts requiring accessible explanations
+  - Self-learners starting from zero experience
 complexity: simple
 interaction: multi-turn
 ---
@@ -36,14 +37,16 @@ Beginner learners need encouragement, clear explanations, and achievable milesto
 
 <input_handling>
 Required inputs:
+
 - Technology name
 - What the learner wants to do with it
 
 Optional inputs (inferred if not provided):
+
 - Current knowledge: Assume complete beginner
 - Time available: Flexible self-paced learning
 - Learning style: Mix of explanation and practice
-</input_handling>
+  </input_handling>
 
 <task>
 Create beginner-friendly learning guide by:
@@ -55,12 +58,13 @@ Create beginner-friendly learning guide by:
 5. Share helpful websites, videos, or tutorials
 6. Warn about common beginner mistakes gently
 7. Include checkpoints to celebrate progress
-</task>
+   </task>
 
 <output_specification>
 Format: Friendly narrative with clear steps
 Length: 1,000-2,000 words
 Required sections:
+
 - What is it? (simple explanation with analogy)
 - What can you do? (exciting real examples)
 - Building blocks (main concepts with analogies)
@@ -68,10 +72,11 @@ Required sections:
 - Helpful resources (beginner-friendly links)
 - Common mistakes (gentle warnings)
 - Progress celebrations (milestone acknowledgments)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Use clear, jargon-free language
 - Include helpful analogies and examples
 - Build confidence with encouraging tone
@@ -79,11 +84,12 @@ Excellent outputs:
 - Make learning feel achievable and fun
 
 Avoid:
+
 - Technical jargon without explanation
 - Overwhelming amount of information
 - Discouraging or condescending tone
 - Inaccurate simplifications
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maximum 3 new concepts per section

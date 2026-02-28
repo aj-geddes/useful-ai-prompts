@@ -3,26 +3,27 @@ title: Language Learning Accelerator
 slug: language-learning-accelerator
 category: learning & skills
 tags:
-- language-learning
-- fluency-building
-- communication-skills
-- cultural-competency
-- study-methods
+  - language-learning
+  - fluency-building
+  - communication-skills
+  - cultural-competency
+  - study-methods
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Creates personalized strategies for rapid language acquisition and fluency
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Creates personalized strategies for rapid language acquisition and fluency
   development. Combines comprehensible input theory, spaced repetition, and structured
   communication practice to accelerate progress toward conversational and professional
   fluency.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Learning a new language for travel, work, or personal enrichment
-- Accelerating progress in a language already being studied
-- Preparing for language proficiency tests (DELE, JLPT, DELF, etc.)
-- Developing professional-level language skills for international work
+  - Ideal scenarios:**
+  - Learning a new language for travel, work, or personal enrichment
+  - Accelerating progress in a language already being studied
+  - Preparing for language proficiency tests (DELE, JLPT, DELF, etc.)
+  - Developing professional-level language skills for international work
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ Language acquisition is fundamentally different from other learning - it require
 
 <input_handling>
 Required inputs:
+
 - Target language
 - Current proficiency level (beginner/intermediate/advanced or CEFR level)
 - Primary goal (conversation, business, travel, academic, test preparation)
 
 Optional inputs (will infer if not provided):
+
 - Timeline: 6-12 months for conversational fluency
 - Daily time available: 30-60 minutes
 - Learning style: Balance of input (listening/reading) and output (speaking/writing)
 - Native speaker access: Assume limited; recommend online resources
-</input_handling>
+  </input_handling>
 
 <task>
 Design an accelerated language learning plan for rapid fluency development:
@@ -57,13 +60,14 @@ Design an accelerated language learning plan for rapid fluency development:
 4. Build speaking practice system that works without constant native speaker access
 5. Develop grammar integration approach (implicit acquisition over explicit drilling)
 6. Set progress milestones with self-assessment checkpoints
-</task>
+   </task>
 
 <output_specification>
 Format: Language Acceleration Plan with 5 sections
 Length: 600-900 words
 
 Required sections:
+
 1. Level Assessment - Current proficiency, target level, language difficulty rating
 2. Daily Practice - Time allocation, activity breakdown, resource recommendations
 3. Immersion Strategy - Passive immersion, active listening, media recommendations
@@ -75,6 +79,7 @@ Must include: Daily practice schedule, specific resource recommendations for the
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Emphasis on comprehensible input and active use over grammar drilling
 - Specific resource recommendations for the target language
 - Addresses speaking practice even for learners without native speaker access
@@ -82,11 +87,12 @@ Excellent outputs demonstrate:
 - Progressive structure matching acquisition stages
 
 Avoid:
+
 - Grammar-first approaches that delay communication
 - Unrealistic fluency timelines for difficult languages
 - Ignoring the importance of listening comprehension
 - One-method-fits-all recommendations regardless of language
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Align timelines with FSI language difficulty categories

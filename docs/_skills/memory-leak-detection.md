@@ -1,13 +1,14 @@
 ---
 category: troubleshooting
-date: '2025-01-01'
-description: Detect and fix memory leaks using heap snapshots, memory profiling, and
+date: "2025-01-01"
+description:
+  Detect and fix memory leaks using heap snapshots, memory profiling, and
   leak detection tools. Use when investigating memory growth, OOM errors, or optimizing
   memory usage.
 layout: skill
 slug: memory-leak-detection
 tags:
-- development
+  - development
 title: memory-leak-detection
 ---
 
@@ -30,8 +31,8 @@ Identify and fix memory leaks to prevent out-of-memory crashes and optimize appl
 ### 1. **Node.js Heap Snapshots**
 
 ```typescript
-import v8 from 'v8';
-import fs from 'fs';
+import v8 from "v8";
+import fs from "fs";
 
 class MemoryProfiler {
   takeSnapshot(filename: string): void {
@@ -50,7 +51,7 @@ class MemoryProfiler {
   printMemoryUsage(): void {
     const usage = this.getMemoryUsage();
 
-    console.log('Memory Usage:');
+    console.log("Memory Usage:");
     console.log(`  RSS: ${this.formatMemory(usage.rss)}`);
     console.log(`  Heap Total: ${this.formatMemory(usage.heapTotal)}`);
     console.log(`  Heap Used: ${this.formatMemory(usage.heapUsed)}`);
@@ -68,13 +69,13 @@ class MemoryProfiler {
 const profiler = new MemoryProfiler();
 
 // Take initial snapshot
-profiler.takeSnapshot('./heap-before.heapsnapshot');
+profiler.takeSnapshot("./heap-before.heapsnapshot");
 
 // Run application
 await runApp();
 
 // Take final snapshot
-profiler.takeSnapshot('./heap-after.heapsnapshot');
+profiler.takeSnapshot("./heap-after.heapsnapshot");
 
 // Compare in Chrome DevTools to find leaks
 ```
@@ -109,10 +110,11 @@ class LeakDetector {
   startMonitoring(interval: number = 10000): void {
     setInterval(() => {
       if (this.checkForLeak()) {
-        console.warn('⚠️  Potential memory leak detected!');
-        console.warn('Memory samples:', this.samples.map(s =>
-          `${(s / 1024 / 1024).toFixed(2)} MB`
-        ));
+        console.warn("⚠️  Potential memory leak detected!");
+        console.warn(
+          "Memory samples:",
+          this.samples.map((s) => `${(s / 1024 / 1024).toFixed(2)} MB`),
+        );
       }
     }, interval);
   }
@@ -129,12 +131,12 @@ detector.startMonitoring();
 // BAD: Event listener leak
 class BadComponent {
   constructor() {
-    window.addEventListener('resize', this.handleResize);
+    window.addEventListener("resize", this.handleResize);
   }
 
   handleResize = () => {
     // Handler logic
-  }
+  };
 
   // Missing cleanup!
 }
@@ -142,15 +144,15 @@ class BadComponent {
 // GOOD: Proper cleanup
 class GoodComponent {
   constructor() {
-    window.addEventListener('resize', this.handleResize);
+    window.addEventListener("resize", this.handleResize);
   }
 
   handleResize = () => {
     // Handler logic
-  }
+  };
 
   destroy() {
-    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener("resize", this.handleResize);
   }
 }
 
@@ -173,19 +175,19 @@ function goodFunction() {
 
 // BAD: Closure leak
 function createClosure() {
-  const largeData = new Array(1000000).fill('data');
+  const largeData = new Array(1000000).fill("data");
 
-  return function() {
+  return function () {
     // largeData kept in memory even if unused
-    console.log('closure');
+    console.log("closure");
   };
 }
 
 // GOOD: Don't capture unnecessary data
 function createClosure() {
-  const needed = 'small data';
+  const needed = "small data";
 
-  return function() {
+  return function () {
     console.log(needed);
   };
 }
@@ -308,7 +310,7 @@ class WeakCache<K extends object, V> {
 const cache = new WeakCache<object, string>();
 let obj = { id: 1 };
 
-cache.set(obj, 'data');
+cache.set(obj, "data");
 
 // When obj is no longer referenced, it can be GC'd
 obj = null as any;
@@ -320,15 +322,17 @@ obj = null as any;
 class MemoryMonitor {
   private alerts: Array<(usage: NodeJS.MemoryUsage) => void> = [];
 
-  startMonitoring(options: {
-    interval?: number;
-    heapThreshold?: number;
-    rssThreshold?: number;
-  } = {}): void {
+  startMonitoring(
+    options: {
+      interval?: number;
+      heapThreshold?: number;
+      rssThreshold?: number;
+    } = {},
+  ): void {
     const {
       interval = 60000,
       heapThreshold = 0.9,
-      rssThreshold = 0.95
+      rssThreshold = 0.95,
     } = options;
 
     setInterval(() => {
@@ -337,14 +341,14 @@ class MemoryMonitor {
 
       if (heapUsedPercent > heapThreshold) {
         console.warn(
-          `⚠️  High heap usage: ${(heapUsedPercent * 100).toFixed(2)}%`
+          `⚠️  High heap usage: ${(heapUsedPercent * 100).toFixed(2)}%`,
         );
 
-        this.alerts.forEach(fn => fn(usage));
+        this.alerts.forEach((fn) => fn(usage));
 
         // Force GC if available
         if (global.gc) {
-          console.log('Forcing garbage collection...');
+          console.log("Forcing garbage collection...");
           global.gc();
         }
       }
@@ -361,18 +365,19 @@ const monitor = new MemoryMonitor();
 
 monitor.onAlert((usage) => {
   // Send alert to monitoring service
-  console.error('Memory alert triggered:', usage);
+  console.error("Memory alert triggered:", usage);
 });
 
 monitor.startMonitoring({
   interval: 30000,
-  heapThreshold: 0.85
+  heapThreshold: 0.85,
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Remove event listeners when done
 - Clear timers and intervals
 - Use WeakMap/WeakRef for caches
@@ -382,6 +387,7 @@ monitor.startMonitoring({
 - Clean up after tests
 
 ### ❌ DON'T
+
 - Create circular references
 - Hold references to large objects unnecessarily
 - Forget to clean up resources

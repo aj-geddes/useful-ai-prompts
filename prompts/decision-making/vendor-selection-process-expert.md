@@ -1,6 +1,7 @@
 # Vendor Selection Process Expert
 
 ## Metadata
+
 - **ID**: `decision-vendor-selection-process`
 - **Version**: 2.0.0
 - **Category**: Decision-Making/Procurement
@@ -18,12 +19,14 @@ Guide systematic vendor selection using objective criteria, structured evaluatio
 ## When to Use
 
 **Ideal scenarios:**
+
 - Selecting between multiple vendor proposals or RFP responses
 - Creating RFP evaluation criteria and scoring frameworks
 - Making final vendor selection decisions with stakeholder buy-in
 - Documenting vendor selection rationale for compliance or audit
 
 **Anti-patterns (when not to use):**
+
 - Contract negotiation (post-selection phase)
 - Vendor performance management or renewals
 - Single-source procurement with no alternatives
@@ -106,9 +109,11 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Selecting a CRM system for 500 users. Budget $200K/year. Need strong sales automation, customer service features, and API integration. Considering Salesforce, HubSpot, and Microsoft Dynamics."
 
 ### Output
+
 **Vendor Selection Analysis: CRM System**
 
 **Evaluation Criteria**
@@ -145,17 +150,20 @@ Avoid:
 
 **Vendor Deep Dive**
 
-*Salesforce (Score: 8.25)*
+_Salesforce (Score: 8.25)_
+
 - Strengths: Most complete functionality, best AppExchange ecosystem
 - Weaknesses: Highest cost, complexity can slow adoption
 - Risk: Cost overruns on customization, feature bloat
 
-*Microsoft Dynamics (Score: 8.20)*
+_Microsoft Dynamics (Score: 8.20)_
+
 - Strengths: Microsoft 365 integration, strong enterprise features
 - Weaknesses: Steeper learning curve, UI dated
 - Opportunity: Already use Microsoft 365, seamless integration
 
-*HubSpot (Score: 7.65)*
+_HubSpot (Score: 7.65)_
+
 - Strengths: Best UX, fastest adoption, lowest cost
 - Weaknesses: Less enterprise depth, weaker service features
 - Risk: May outgrow capabilities in 2-3 years
@@ -170,15 +178,17 @@ Avoid:
 
 **Recommendation: Microsoft Dynamics 365**
 
-*Rationale*:
+_Rationale_:
+
 1. Best value for capability: Nearly matches Salesforce functionality at 11% lower TCO
 2. Integration advantage: Your Microsoft 365 environment creates synergies
 3. Long-term fit: Enterprise-ready as you scale, no platform migration risk
 4. Competitive TCO: $100K savings vs. Salesforce over 3 years
 
-*Alternative*: If rapid adoption is critical and you don't need enterprise service features, HubSpot offers best value and user experience at lowest cost.
+_Alternative_: If rapid adoption is critical and you don't need enterprise service features, HubSpot offers best value and user experience at lowest cost.
 
 **Negotiation Points**
+
 - Request 15% multi-year discount
 - Include implementation support in license fee
 - Negotiate training credits for first year
@@ -186,12 +196,14 @@ Avoid:
 - Request pilot period before full commitment
 
 **Next Steps**
+
 1. Reference checks with similar-size companies
 2. Technical POC with integration testing
 3. Contract negotiation with recommended terms
 4. Implementation planning with success criteria
 
 ## Related Prompts
+
 - [Option Evaluation Expert](option-evaluation-expert.md)
 - [Investment Decision Support Expert](investment-decision-support-expert.md)
 - [Technical Approach Selection Expert](technical-approach-selection-expert.md)

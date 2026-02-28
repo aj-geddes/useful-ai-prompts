@@ -3,24 +3,25 @@ title: Market Fit Assessment Expert
 slug: market-fit-assessment-expert
 category: evaluation & assessment/product
 tags:
-- product-market-fit
-- market-validation
-- customer-feedback
-- product-strategy
+  - product-market-fit
+  - market-validation
+  - customer-feedback
+  - product-strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Evaluate whether products truly meet market needs by analyzing customer
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Evaluate whether products truly meet market needs by analyzing customer
   signals, usage patterns, and competitive positioning. Identifies paths to stronger
   market alignment and provides actionable roadmaps for achieving product-market fit.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Assessing product-market fit for new products
-- Diagnosing slow adoption or high churn
-- Validating market assumptions before scaling
-- Identifying pivot opportunities
+  - Ideal Scenarios:**
+  - Assessing product-market fit for new products
+  - Diagnosing slow adoption or high churn
+  - Validating market assumptions before scaling
+  - Identifying pivot opportunities
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -35,15 +36,17 @@ Product-market fit is the degree to which a product satisfies strong market dema
 
 <input_handling>
 Required:
+
 - Product description and value proposition
 - Target customer profile
 - Current adoption and retention metrics
 
 Infer if not provided:
+
 - Stage of product development (assess from metrics)
 - Competitive alternatives (identify likely competitors)
 - Market maturity (assess from product description)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive product-market fit assessment with improvement roadmap.
@@ -53,28 +56,31 @@ Create a comprehensive product-market fit assessment with improvement roadmap.
 3. Assess competitive positioning and differentiation
 4. Identify gaps and improvement opportunities
 5. Develop roadmap to stronger product-market fit
-</task>
+   </task>
 
 <output_specification>
 **Product-Market Fit Assessment**
+
 - Format: Indicator analysis with gap identification and roadmap
 - Length: 800-1100 words
 - Must include: PMF score card, customer alignment analysis, gap identification, improvement roadmap
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Uses specific metrics to assess fit, not just opinions
 - Identifies root causes of weak signals
 - Provides actionable path to improvement
 - Distinguishes between product and go-to-market issues
 
 Avoid:
+
 - Relying only on stated feedback vs. behavior
 - Missing competitive context
 - Prescribing solutions without diagnosis
 - Ignoring segment-specific differences
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ground assessments in behavioral data over stated preferences

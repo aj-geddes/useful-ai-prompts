@@ -1,6 +1,7 @@
 # Cross-Functional Coordination Expert
 
 ## Metadata
+
 - **ID**: `communication-cross-functional-coordination`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Breaks down organizational silos and creates effective cross-functional collaboration through clear governance, communication frameworks, and alignment processes. Enables teams to work together seamlessly on complex initiatives by establishing shared accountability, information flow, and decision rights across departmental boundaries.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Aligning teams for product launches or major initiatives
 - Resolving interdepartmental coordination issues and handoff failures
 - Establishing collaboration processes across functions
@@ -24,6 +27,7 @@ Breaks down organizational silos and creates effective cross-functional collabor
 - Improving cross-functional project delivery
 
 **Anti-Patterns (When NOT to Use):**
+
 - Single-team processes and workflows
 - Individual task management
 - Performance management of individuals
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Product, Marketing, and Sales teams work in silos. We're launching a major product in Q2. Marketing promises features not built yet. Sales doesn't know release dates. Product doesn't understand customer needs. I'm VP Operations, tasked with fixing this. 50 people across 3 teams, all remote."
 
 ### Output
@@ -115,6 +120,7 @@ Avoid:
 ## COLLABORATION ASSESSMENT
 
 ### Current State Analysis
+
 ```
 PRODUCT TEAM:
 ├── Pain: Unclear priorities from business
@@ -133,6 +139,7 @@ SALES TEAM:
 ```
 
 ### Root Causes
+
 1. **No single source of truth** for product status
 2. **Unclear handoff points** between teams
 3. **Misaligned timelines** across functions
@@ -142,42 +149,45 @@ SALES TEAM:
 
 ### RACI Matrix (Key Processes)
 
-| Activity | Product | Marketing | Sales | Ops |
-|----------|---------|-----------|-------|-----|
-| Feature Definition | R | C | C | I |
-| Release Timeline | R | C | I | A |
-| Go-to-Market Plan | C | R | C | A |
-| Customer Messaging | I | R | C | I |
-| Sales Enablement | C | R | R | I |
-| Customer Feedback | I | C | R | A |
+| Activity           | Product | Marketing | Sales | Ops |
+| ------------------ | ------- | --------- | ----- | --- |
+| Feature Definition | R       | C         | C     | I   |
+| Release Timeline   | R       | C         | I     | A   |
+| Go-to-Market Plan  | C       | R         | C     | A   |
+| Customer Messaging | I       | R         | C     | I   |
+| Sales Enablement   | C       | R         | R     | I   |
+| Customer Feedback  | I       | C         | R     | A   |
 
 **R=Responsible, A=Accountable, C=Consulted, I=Informed**
 
 ### Decision Rights
 
-| Decision | Authority | Escalation |
-|----------|-----------|------------|
-| Feature scope changes | Product Lead | VP Product |
-| Launch date changes | Product Lead | Launch Team |
-| Messaging/positioning | Marketing Lead | VP Marketing |
-| Pricing decisions | Sales Lead + Product | VP Ops |
-| Priority conflicts | Launch Team | VP Ops |
+| Decision              | Authority            | Escalation   |
+| --------------------- | -------------------- | ------------ |
+| Feature scope changes | Product Lead         | VP Product   |
+| Launch date changes   | Product Lead         | Launch Team  |
+| Messaging/positioning | Marketing Lead       | VP Marketing |
+| Pricing decisions     | Sales Lead + Product | VP Ops       |
+| Priority conflicts    | Launch Team          | VP Ops       |
 
 ## COMMUNICATION FRAMEWORK
 
 ### Meeting Structure
 
 **Weekly Launch Sync (30 min):**
+
 - Participants: Product, Marketing, Sales leads
 - Agenda: Status, blockers, decisions needed
 - Output: Updated status dashboard, action items
 
 **Bi-Weekly Customer Insights (30 min):**
+
 - Participants: Sales, Product, Customer Success
 - Agenda: Customer feedback, feature requests, patterns
 - Output: Prioritized feedback summary to Product
 
 **Monthly Strategy Alignment (60 min):**
+
 - Participants: VPs + Team leads
 - Agenda: Roadmap review, GTM planning, resource needs
 - Output: Updated quarterly plan
@@ -185,21 +195,25 @@ SALES TEAM:
 ### Information Flow
 
 **Daily Async:**
+
 - Slack channel: #q2-launch (all updates here)
 - Status updates by 10am from each team lead
 - Questions tagged by team for quick routing
 
 **Weekly:**
+
 - Dashboard update (automated from project tool)
 - Blockers escalation if unresolved in 24 hours
 
 **On Release Decision:**
+
 - 48-hour notice for timeline changes
 - Marketing sign-off required before announcement
 
 ## COLLABORATION PROCESSES
 
 ### Feature Handoff Process
+
 ```
 PRODUCT → MARKETING (Features):
 ├── What: Feature brief with screenshots, use cases
@@ -215,6 +229,7 @@ MARKETING → SALES (Enablement):
 ```
 
 ### Feedback Loop Process
+
 ```
 SALES → PRODUCT (Customer Feedback):
 ├── What: Feature requests, objections, competitor insights
@@ -226,6 +241,7 @@ SALES → PRODUCT (Customer Feedback):
 ## SINGLE SOURCE OF TRUTH
 
 ### Launch Dashboard (Notion/Asana)
+
 - Feature status (by product)
 - Release timeline (by product)
 - Marketing assets (by marketing)
@@ -237,24 +253,28 @@ SALES → PRODUCT (Customer Feedback):
 ## IMPLEMENTATION ROADMAP
 
 ### Phase 1: Foundation (Weeks 1-2)
+
 - Launch Slack channel and dashboard
 - First weekly sync meeting
 - RACI document socialized
 - Feedback form created
 
 ### Phase 2: Process Pilot (Weeks 3-4)
+
 - First feature handoff using new process
 - First sales enablement session
 - Feedback loop operational
 - Adjust based on learnings
 
 ### Phase 3: Full Operation (Weeks 5-8)
+
 - All features using new process
 - Dashboard fully populated
 - Meeting cadence established
 - Team feedback collected
 
 ### Phase 4: Optimization (Weeks 9-12)
+
 - Process refinement based on Q2 launch
 - Automation of status updates
 - Template library completed
@@ -263,11 +283,13 @@ SALES → PRODUCT (Customer Feedback):
 ## SUCCESS METRICS
 
 **Coordination Quality:**
+
 - Features launched on communicated dates: 90%+
 - Sales enablement complete before launch: 100%
 - Blockers resolved within 48 hours: 85%+
 
 **Team Satisfaction:**
+
 - Cross-functional collaboration rating: 7+/10
 - Meeting effectiveness: 8+/10
 - Information accessibility: 8+/10
@@ -275,6 +297,7 @@ SALES → PRODUCT (Customer Feedback):
 ---
 
 ## Related Prompts
+
 - [Team Collaboration Expert](team-collaboration-expert.md) - Build effective team dynamics
 - [Meeting Facilitation Expert](meeting-facilitation-expert.md) - Run effective cross-functional meetings
 - [Project Governance Expert](../management-leadership/project-governance-expert.md) - Project-level governance

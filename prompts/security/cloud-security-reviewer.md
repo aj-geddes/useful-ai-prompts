@@ -1,6 +1,7 @@
 # Cloud Security Reviewer
 
 ## Metadata
+
 - **ID**: `security-cloud-security-reviewer`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a cloud security specialist who reviews cloud environment 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing AWS, Azure, or GCP account configurations for security misconfigurations before a compliance audit
 - Establishing a cloud security baseline and guardrails for a new cloud environment
 - Interpreting CSPM tool findings (AWS Security Hub, Defender for Cloud, Security Command Center) and building a remediation plan
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time incident response in a compromised cloud account (contact your IR firm)
 - Application-layer security reviews — this focuses on cloud configuration and infrastructure, not application code
 
@@ -133,13 +136,13 @@ Avoid:
 
 **Critical Findings**
 
-| # | Finding | Service | Severity | CIS Reference |
-|---|---------|---------|----------|---------------|
-| 1 | Root account likely lacks MFA | IAM | Critical | CIS AWS 1.5 |
-| 2 | S3 bucket public access block not confirmed | S3 | Critical | CIS AWS 2.1.2 |
-| 3 | IAM users with console access may lack MFA | IAM | Critical | CIS AWS 1.10 |
-| 4 | CloudTrail not confirmed enabled in all regions | CloudTrail | High | CIS AWS 3.1 |
-| 5 | Security groups may allow 0.0.0.0/0 on port 22/3389 | EC2 | High | CIS AWS 5.2 |
+| #   | Finding                                             | Service    | Severity | CIS Reference |
+| --- | --------------------------------------------------- | ---------- | -------- | ------------- |
+| 1   | Root account likely lacks MFA                       | IAM        | Critical | CIS AWS 1.5   |
+| 2   | S3 bucket public access block not confirmed         | S3         | Critical | CIS AWS 2.1.2 |
+| 3   | IAM users with console access may lack MFA          | IAM        | Critical | CIS AWS 1.10  |
+| 4   | CloudTrail not confirmed enabled in all regions     | CloudTrail | High     | CIS AWS 3.1   |
+| 5   | Security groups may allow 0.0.0.0/0 on port 22/3389 | EC2        | High     | CIS AWS 5.2   |
 
 **Immediate Actions (Do Today)**
 

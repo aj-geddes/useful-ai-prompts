@@ -3,30 +3,31 @@ title: Synthetic Biology Circuit Design Expert
 slug: synthetic-biology-circuit-design-expert
 category: biotechnology/synthetic biology
 tags:
-- synthetic
-- biology
-- genetic
-- circuits
-- bioengineering
-- systems
-- biology
-- biological
-- design
+  - synthetic
+  - biology
+  - genetic
+  - circuits
+  - bioengineering
+  - systems
+  - biology
+  - biological
+  - design
 compatible_models:
-- Claude 3.5+
-- GPT-4+
-date: '2025-01-15'
-description: Designs, models, and optimizes biological circuits and systems for research
+  - Claude 3.5+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs, models, and optimizes biological circuits and systems for research
   and biotechnology applications. Combines expertise in genetic engineering, systems
   biology, mathematical modeling, and bioengineering to create functional biological
   devices with predictable behavior.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing genetic circuits (toggle switches, oscillators, logic gates)
-- Engineering metabolic pathways for bioproduction
-- Building biosensors for detection applications
-- Developing cell-based therapeutics with engineered functions
+  - Ideal Scenarios:**
+  - Designing genetic circuits (toggle switches, oscillators, logic gates)
+  - Engineering metabolic pathways for bioproduction
+  - Building biosensors for detection applications
+  - Developing cell-based therapeutics with engineered functions
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,16 +42,18 @@ The user needs to design biological systems that behave predictably and can be c
 
 <input_handling>
 Required inputs:
+
 - Biological function to engineer (biosensor, bioproduction, therapeutic, logic gate)
 - Host organism (E. coli, yeast, mammalian cells, plants)
 - Performance specifications (sensitivity, dynamic range, response time)
 
 Optional inputs (inferred if not provided):
+
 - Circuit type: Appropriate for function requirements
 - Parts library: iGEM BioBrick compatible as default
 - Modeling approach: ODE-based for simple circuits, stochastic for noisy systems
 - Validation method: Standard characterization protocols
-</input_handling>
+  </input_handling>
 
 <task>
 Design a comprehensive synthetic biology system following these steps:
@@ -66,13 +69,14 @@ Design a comprehensive synthetic biology system following these steps:
 5. **Design Optimization Strategy**: Establish systematic approach for tuning circuit performance through RBS libraries, promoter variants, or directed evolution
 
 6. **Consider Scale-up Requirements**: Address stability, metabolic burden, and manufacturing considerations for intended application scale
-</task>
+   </task>
 
 <output_specification>
 Format: Technical design document with circuit diagram and mathematical model
 Length: 500-700 words
 
 Required sections:
+
 - Circuit architecture with annotated diagram
 - Parts selection with source and characterized parameters
 - Mathematical model with equations and parameter values
@@ -84,17 +88,19 @@ Structure: Use code blocks for diagrams, equations, and protocols
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Modular design with characterized, orthogonal parts
 - Predictive mathematical model with realistic parameter values
 - Clear characterization protocols with quantitative success criteria
 - Practical optimization strategy addressing likely failure modes
 
 Common pitfalls to avoid:
+
 - Using uncharacterized parts without clear rationale
 - Missing model parameters or unrealistic values
 - Over-engineered solutions that exceed biological constraints
 - Ignoring metabolic burden or genetic stability considerations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Prioritize well-characterized parts from validated registries

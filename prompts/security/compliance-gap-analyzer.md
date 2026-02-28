@@ -1,6 +1,7 @@
 # Compliance Gap Analyzer
 
 ## Metadata
+
 - **ID**: `security-compliance-gap-analyzer`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a GRC (Governance, Risk, and Compliance) specialist who co
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Preparing for a first-time SOC 2 audit, ISO 27001 certification, or PCI-DSS assessment
 - Assessing readiness when entering a new regulated industry or market (healthcare, finance, government)
 - Identifying which compliance gaps carry the highest risk or largest audit finding potential
 
 **Anti-patterns (Don't Use For):**
+
 - Substituting for actual audit procedures — gap analysis identifies likely issues, not audit conclusions
 - Technical security testing or vulnerability assessment (use vulnerability-assessment-guide instead)
 
@@ -126,27 +129,27 @@ Avoid:
 
 **Coverage Summary**
 
-| Trust Services Category | Implementation | Status |
-|------------------------|----------------|--------|
-| CC1 (Control Environment) | Policies partial, training in place | Partial |
-| CC2 (Communication) | Policy communication exists | Partial |
-| CC3 (Risk Assessment) | No formal risk assessment documented | Not Implemented |
-| CC4 (Monitoring) | EDR in place, no SIEM or log review process | Partial |
-| CC5 (Control Activities) | MFA, SSO implemented; change management missing | Partial |
-| CC6 (Logical Access) | Okta SSO and MFA strong; access reviews missing | Partial |
-| CC7 (System Operations) | CrowdStrike in place; no IR plan, no monitoring runbooks | Partial |
-| CC8 (Change Management) | Not implemented | Not Implemented |
-| CC9 (Risk Mitigation) | Vendor risk management absent | Not Implemented |
+| Trust Services Category   | Implementation                                           | Status          |
+| ------------------------- | -------------------------------------------------------- | --------------- |
+| CC1 (Control Environment) | Policies partial, training in place                      | Partial         |
+| CC2 (Communication)       | Policy communication exists                              | Partial         |
+| CC3 (Risk Assessment)     | No formal risk assessment documented                     | Not Implemented |
+| CC4 (Monitoring)          | EDR in place, no SIEM or log review process              | Partial         |
+| CC5 (Control Activities)  | MFA, SSO implemented; change management missing          | Partial         |
+| CC6 (Logical Access)      | Okta SSO and MFA strong; access reviews missing          | Partial         |
+| CC7 (System Operations)   | CrowdStrike in place; no IR plan, no monitoring runbooks | Partial         |
+| CC8 (Change Management)   | Not implemented                                          | Not Implemented |
+| CC9 (Risk Mitigation)     | Vendor risk management absent                            | Not Implemented |
 
 **Critical Gaps (Likely Audit Findings)**
 
-| Gap | SOC 2 Reference | Severity | Effort |
-|-----|-----------------|----------|--------|
-| No incident response plan | CC7.3, CC7.4, CC7.5 | Critical | Medium — 2-3 weeks |
-| No vendor risk management / third-party assessments | CC9.2 | Critical | High — ongoing process |
-| No formal change management process | CC8.1 | Critical | Medium — 3-4 weeks |
-| No user access review process (quarterly) | CC6.2, CC6.3 | Critical | Low — 1 week to establish |
-| No formal risk assessment documented | CC3.1, CC3.2 | High | Medium — 2 weeks |
+| Gap                                                 | SOC 2 Reference     | Severity | Effort                    |
+| --------------------------------------------------- | ------------------- | -------- | ------------------------- |
+| No incident response plan                           | CC7.3, CC7.4, CC7.5 | Critical | Medium — 2-3 weeks        |
+| No vendor risk management / third-party assessments | CC9.2               | Critical | High — ongoing process    |
+| No formal change management process                 | CC8.1               | Critical | Medium — 3-4 weeks        |
+| No user access review process (quarterly)           | CC6.2, CC6.3        | Critical | Low — 1 week to establish |
+| No formal risk assessment documented                | CC3.1, CC3.2        | High     | Medium — 2 weeks          |
 
 **90-Day Remediation Roadmap**
 

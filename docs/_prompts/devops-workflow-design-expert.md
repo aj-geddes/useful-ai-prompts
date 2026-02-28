@@ -3,27 +3,28 @@ title: DevOps Workflow Design Expert
 slug: devops-workflow-design-expert
 category: technical workflows
 tags:
-- devops
-- automation
-- ci-cd
-- infrastructure-as-code
-- gitops
-- observability
+  - devops
+  - automation
+  - ci-cd
+  - infrastructure-as-code
+  - gitops
+  - observability
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Designs comprehensive DevOps workflows that automate the entire software
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Designs comprehensive DevOps workflows that automate the entire software
   delivery lifecycle from development through production operations. Covers development
   automation, infrastructure as code, observability, incident management, and continuous
   improvement for building high-performing engineering teams.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Implementing DevOps practices for new or transforming teams
-- Automating development, testing, and deployment workflows end-to-end
-- Building infrastructure as code foundations with proper state management
-- Creating observability stacks and incident management processes
+  - Ideal Scenarios:**
+  - Implementing DevOps practices for new or transforming teams
+  - Automating development, testing, and deployment workflows end-to-end
+  - Building infrastructure as code foundations with proper state management
+  - Creating observability stacks and incident management processes
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,15 +39,17 @@ DevOps success requires aligning people, processes, and tools across development
 
 <input_handling>
 Required inputs:
+
 - Current development and deployment process (pain points, bottlenecks)
 - Existing tooling (version control, CI/CD, monitoring, infrastructure)
 - Primary automation goals (speed, reliability, cost reduction)
 
 Infer if not provided:
+
 - Team structure: Integrated DevOps (developers own operations)
 - Cloud platform: AWS or Kubernetes-based infrastructure
 - Tooling preference: Open source stack for flexibility
-</input_handling>
+  </input_handling>
 
 <task>
 Design comprehensive DevOps workflows for the organization:
@@ -58,12 +61,13 @@ Design comprehensive DevOps workflows for the organization:
 5. Build observability stack (metrics, logs, traces) with actionable alerting
 6. Establish incident management process with runbooks and post-mortems
 7. Define DevOps metrics (DORA) and continuous improvement practices
-</task>
+   </task>
 
 <output_specification>
 Format: Comprehensive workflow documentation with implementation guidance
 Length: 1500-2500 words
 Structure:
+
 - Current State Assessment (gaps, opportunities, quick wins)
 - Development Workflow (branching, review, environments)
 - CI/CD Architecture (pipeline design, quality gates)
@@ -71,21 +75,23 @@ Structure:
 - Observability Stack (metrics, logs, traces, dashboards)
 - Incident Management (alerting, response, post-mortem)
 - Metrics and Improvement (DORA metrics, retrospectives)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - End-to-end automation from commit to production with minimal manual steps
 - Infrastructure as code with proper state management and version control
 - Comprehensive observability with actionable alerts (not noise)
 - Clear incident response procedures with documented runbooks
 
 Avoid:
+
 - Tool-centric design without workflow and process consideration
 - Manual steps in critical paths (testing, deployment, rollback)
 - Alerting fatigue from non-actionable or low-severity alerts
 - Ignoring organizational change management and training needs
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All infrastructure changes must go through version control

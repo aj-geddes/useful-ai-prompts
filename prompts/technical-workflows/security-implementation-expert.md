@@ -1,6 +1,7 @@
 # Security Implementation Expert
 
 ## Metadata
+
 - **ID**: `security-implementation-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Implements comprehensive security measures across applications and infrastructur
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing security controls for new applications or systems
 - Achieving compliance certifications (SOC 2, HIPAA, PCI-DSS, GDPR)
 - Designing zero-trust security architectures
@@ -25,6 +27,7 @@ Implements comprehensive security measures across applications and infrastructur
 - Security hardening for production deployments
 
 **Anti-Patterns (Don't Use For):**
+
 - Penetration testing execution (use specialized pentest services)
 - Active threat hunting and response (use SOC services)
 - Security operations monitoring configuration
@@ -145,6 +148,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We're building a payment processing API that will handle credit card data. Requirements:
 - PCI-DSS Level 1 compliance required
@@ -192,6 +196,7 @@ Internet -> CloudFront + WAF -> API Gateway -> Lambda/ECS -> Tokenization Servic
 ```
 
 **Network Security Design:**
+
 - Public subnet: Only ALB with WAF
 - Private subnet: Application layer, no internet access
 - Isolated subnet: Tokenization service with HSM access
@@ -199,17 +204,17 @@ Internet -> CloudFront + WAF -> API Gateway -> Lambda/ECS -> Tokenization Servic
 
 **PCI-DSS Control Implementation**
 
-| Requirement | Control | Implementation | Evidence |
-|-------------|---------|----------------|----------|
-| **1.1** Network segmentation | VPC design | Cardholder data in isolated subnet | VPC diagrams, security groups |
-| **3.4** Protect stored PAN | Tokenization | Never store PAN - immediate tokenization via Stripe/payment processor | Token flow documentation |
-| **4.1** Encrypt transmission | TLS 1.3 | ALB termination, mTLS internal | SSL Labs scan, certificate inventory |
-| **6.5** Secure coding | SAST/DAST | Semgrep in CI, OWASP ZAP weekly | Scan reports, remediation tracking |
-| **7.1** Restrict access | RBAC | IAM roles with least privilege | IAM policy review, access matrix |
-| **8.3** MFA | Strong auth | Okta with hardware keys for admin access | Okta configuration, MFA enrollment |
-| **10.1** Audit trails | Logging | CloudTrail + application logs to SIEM | Log retention configuration, SIEM dashboards |
-| **11.2** Vulnerability scans | Scanning | Qualys weekly scans | Scan reports, remediation SLAs |
-| **12.10** Incident response | Playbooks | Documented and tested procedures | Playbook documents, tabletop exercises |
+| Requirement                  | Control      | Implementation                                                        | Evidence                                     |
+| ---------------------------- | ------------ | --------------------------------------------------------------------- | -------------------------------------------- |
+| **1.1** Network segmentation | VPC design   | Cardholder data in isolated subnet                                    | VPC diagrams, security groups                |
+| **3.4** Protect stored PAN   | Tokenization | Never store PAN - immediate tokenization via Stripe/payment processor | Token flow documentation                     |
+| **4.1** Encrypt transmission | TLS 1.3      | ALB termination, mTLS internal                                        | SSL Labs scan, certificate inventory         |
+| **6.5** Secure coding        | SAST/DAST    | Semgrep in CI, OWASP ZAP weekly                                       | Scan reports, remediation tracking           |
+| **7.1** Restrict access      | RBAC         | IAM roles with least privilege                                        | IAM policy review, access matrix             |
+| **8.3** MFA                  | Strong auth  | Okta with hardware keys for admin access                              | Okta configuration, MFA enrollment           |
+| **10.1** Audit trails        | Logging      | CloudTrail + application logs to SIEM                                 | Log retention configuration, SIEM dashboards |
+| **11.2** Vulnerability scans | Scanning     | Qualys weekly scans                                                   | Scan reports, remediation SLAs               |
+| **12.10** Incident response  | Playbooks    | Documented and tested procedures                                      | Playbook documents, tabletop exercises       |
 
 **Authentication and Authorization**
 
@@ -243,15 +248,16 @@ authorization:
 
 **Encryption Configuration**
 
-| Layer | Algorithm | Key Management | Rotation |
-|-------|-----------|----------------|----------|
-| TLS (transit) | TLS 1.3 only | ACM managed | Auto-renew |
-| Application data | AES-256-GCM | AWS KMS CMK | Annual |
-| Tokenization | HSM-backed | CloudHSM cluster | Per policy |
-| Database | AES-256 | RDS managed | Annual |
-| Backups | AES-256 | Separate CMK | Annual |
+| Layer            | Algorithm    | Key Management   | Rotation   |
+| ---------------- | ------------ | ---------------- | ---------- |
+| TLS (transit)    | TLS 1.3 only | ACM managed      | Auto-renew |
+| Application data | AES-256-GCM  | AWS KMS CMK      | Annual     |
+| Tokenization     | HSM-backed   | CloudHSM cluster | Per policy |
+| Database         | AES-256      | RDS managed      | Annual     |
+| Backups          | AES-256      | Separate CMK     | Annual     |
 
 **Cardholder Data Flow:**
+
 ```
 Card Number -> TLS 1.3 -> API Gateway -> Tokenization Service -> Token returned
                                               |
@@ -287,6 +293,7 @@ compliance_monitoring:
 ```
 
 **SIEM Integration:**
+
 - All CloudTrail events forwarded to Splunk
 - Application logs with transaction correlation IDs
 - WAF logs for threat intelligence
@@ -303,6 +310,7 @@ compliance_monitoring:
 | Low | Minor security issue | 24 hours | Policy violation |
 
 **Response Playbook: Suspected Card Data Breach**
+
 ```
 1. Detection (SIEM alert or external notification)
    -> On-call acknowledges within 15 minutes

@@ -97,8 +97,14 @@ module.exports = {
 ```html
 <!-- Picture element with srcset for responsive images -->
 <picture>
-  <source media="(min-width: 1024px)" srcset="image-large.jpg, image-large@2x.jpg 2x" />
-  <source media="(min-width: 640px)" srcset="image-medium.jpg, image-medium@2x.jpg 2x" />
+  <source
+    media="(min-width: 1024px)"
+    srcset="image-large.jpg, image-large@2x.jpg 2x"
+  />
+  <source
+    media="(min-width: 640px)"
+    srcset="image-medium.jpg, image-medium@2x.jpg 2x"
+  />
   <source srcset="image-small.jpg, image-small@2x.jpg 2x" />
   <img src="image-fallback.jpg" alt="Description" loading="lazy" />
 </picture>
@@ -111,40 +117,40 @@ module.exports = {
 
 <!-- TypeScript Image Component -->
 <script lang="typescript">
-interface ImageProps {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  sizes?: string;
-  loading?: 'lazy' | 'eager';
-}
+  interface ImageProps {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    sizes?: string;
+    loading?: "lazy" | "eager";
+  }
 
-const OptimizedImage: React.FC<ImageProps> = ({
-  src,
-  alt,
-  width,
-  height,
-  sizes = '100vw',
-  loading = 'lazy'
-}) => {
-  const webpSrc = src.replace(/\.(jpg|png)$/, '.webp');
+  const OptimizedImage: React.FC<ImageProps> = ({
+    src,
+    alt,
+    width,
+    height,
+    sizes = "100vw",
+    loading = "lazy",
+  }) => {
+    const webpSrc = src.replace(/\.(jpg|png)$/, ".webp");
 
-  return (
-    <picture>
-      <source srcSet={webpSrc} type="image/webp" />
-      <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        sizes={sizes}
-        loading={loading}
-        decoding="async"
-      />
-    </picture>
-  );
-};
+    return (
+      <picture>
+        <source srcSet={webpSrc} type="image/webp" />
+        <img
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          sizes={sizes}
+          loading={loading}
+          decoding="async"
+        />
+      </picture>
+    );
+  };
 </script>
 ```
 
@@ -152,53 +158,51 @@ const OptimizedImage: React.FC<ImageProps> = ({
 
 ```typescript
 // service-worker.ts
-const CACHE_NAME = 'v1';
-const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js'
-];
+const CACHE_NAME = "v1";
+const ASSETS_TO_CACHE = ["/", "/index.html", "/css/style.css", "/js/app.js"];
 
-self.addEventListener('install', (event: ExtendableEvent) => {
+self.addEventListener("install", (event: ExtendableEvent) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
+    caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS_TO_CACHE);
-    })
+    }),
   );
 });
 
-self.addEventListener('fetch', (event: FetchEvent) => {
+self.addEventListener("fetch", (event: FetchEvent) => {
   // Cache first, fall back to network
   event.respondWith(
-    caches.match(event.request).then(response => {
+    caches.match(event.request).then((response) => {
       if (response) return response;
 
-      return fetch(event.request).then(response => {
-        // Clone the response
-        const cloned = response.clone();
+      return fetch(event.request)
+        .then((response) => {
+          // Clone the response
+          const cloned = response.clone();
 
-        // Cache successful responses
-        if (response.status === 200) {
-          caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, cloned);
-          });
-        }
+          // Cache successful responses
+          if (response.status === 200) {
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, cloned);
+            });
+          }
 
-        return response;
-      }).catch(() => {
-        // Return offline page if available
-        return caches.match('/offline.html');
-      });
-    })
+          return response;
+        })
+        .catch(() => {
+          // Return offline page if available
+          return caches.match("/offline.html");
+        });
+    }),
   );
 });
 
 // Register service worker
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .catch(err => console.error('SW registration failed:', err));
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .catch((err) => console.error("SW registration failed:", err));
   });
 }
 ```
@@ -251,14 +255,16 @@ gzip_proxied any;
 ```typescript
 // utils/performanceMonitor.ts
 interface PerformanceMetrics {
-  fcp: number;  // First Contentful Paint
-  lcp: number;  // Largest Contentful Paint
-  cls: number;  // Cumulative Layout Shift
-  fid: number;  // First Input Delay
+  fcp: number; // First Contentful Paint
+  lcp: number; // Largest Contentful Paint
+  cls: number; // Cumulative Layout Shift
+  fid: number; // First Input Delay
   ttfb: number; // Time to First Byte
 }
 
-export const observeWebVitals = (callback: (metrics: Partial<PerformanceMetrics>) => void) => {
+export const observeWebVitals = (
+  callback: (metrics: Partial<PerformanceMetrics>) => void,
+) => {
   const metrics: Partial<PerformanceMetrics> = {};
 
   // LCP
@@ -270,9 +276,9 @@ export const observeWebVitals = (callback: (metrics: Partial<PerformanceMetrics>
   });
 
   try {
-    lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+    lcpObserver.observe({ entryTypes: ["largest-contentful-paint"] });
   } catch (e) {
-    console.warn('LCP observer not supported');
+    console.warn("LCP observer not supported");
   }
 
   // CLS
@@ -286,9 +292,9 @@ export const observeWebVitals = (callback: (metrics: Partial<PerformanceMetrics>
   });
 
   try {
-    clsObserver.observe({ entryTypes: ['layout-shift'] });
+    clsObserver.observe({ entryTypes: ["layout-shift"] });
   } catch (e) {
-    console.warn('CLS observer not supported');
+    console.warn("CLS observer not supported");
   }
 
   // FID via INP
@@ -300,44 +306,52 @@ export const observeWebVitals = (callback: (metrics: Partial<PerformanceMetrics>
   });
 
   try {
-    inputObserver.observe({ entryTypes: ['first-input', 'event'] });
+    inputObserver.observe({ entryTypes: ["first-input", "event"] });
   } catch (e) {
-    console.warn('FID observer not supported');
+    console.warn("FID observer not supported");
   }
 
   // TTFB
-  const navigationTiming = performance.getEntriesByType('navigation')[0];
+  const navigationTiming = performance.getEntriesByType("navigation")[0];
   if (navigationTiming) {
-    metrics.ttfb = (navigationTiming as any).responseStart - (navigationTiming as any).requestStart;
+    metrics.ttfb =
+      (navigationTiming as any).responseStart -
+      (navigationTiming as any).requestStart;
     callback(metrics);
   }
 };
 
 // Usage
 observeWebVitals((metrics) => {
-  console.log('Performance metrics:', metrics);
+  console.log("Performance metrics:", metrics);
   // Send to analytics
-  fetch('/api/metrics', {
-    method: 'POST',
-    body: JSON.stringify(metrics)
+  fetch("/api/metrics", {
+    method: "POST",
+    body: JSON.stringify(metrics),
   });
 });
 
 // Chrome DevTools Protocol for performance testing
-import puppeteer from 'puppeteer';
+import puppeteer from "puppeteer";
 
 async function measurePagePerformance(url: string) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.goto(url, { waitUntil: 'networkidle2' });
+  await page.goto(url, { waitUntil: "networkidle2" });
 
   const metrics = JSON.parse(
-    await page.evaluate(() => JSON.stringify(window.performance))
+    await page.evaluate(() => JSON.stringify(window.performance)),
   );
 
-  console.log('Page Load Time:', metrics.timing.loadEventEnd - metrics.timing.navigationStart);
-  console.log('DOM Content Loaded:', metrics.timing.domContentLoadedEventEnd - metrics.timing.navigationStart);
+  console.log(
+    "Page Load Time:",
+    metrics.timing.loadEventEnd - metrics.timing.navigationStart,
+  );
+  console.log(
+    "DOM Content Loaded:",
+    metrics.timing.domContentLoadedEventEnd - metrics.timing.navigationStart,
+  );
 
   await browser.close();
 }

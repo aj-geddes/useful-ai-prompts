@@ -1,15 +1,16 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build enterprise Spring Boot applications with annotations, dependency
+date: "2025-01-01"
+description:
+  Build enterprise Spring Boot applications with annotations, dependency
   injection, data persistence, REST controllers, and security. Use when developing
   Spring applications, managing beans, implementing services, and configuring Spring
   Boot projects.
 layout: skill
 slug: spring-boot-application
 tags:
-- security
-- data
+  - security
+  - data
 title: spring-boot-application
 ---
 
@@ -522,6 +523,7 @@ server:
 ## Best Practices
 
 ### ✅ DO
+
 - Use dependency injection for loose coupling
 - Implement service layer for business logic
 - Use repositories for data access
@@ -534,6 +536,7 @@ server:
 - Use Spring's @Async for async operations
 
 ### ❌ DON'T
+
 - Put business logic in controllers
 - Access database directly in controllers
 - Store secrets in configuration files

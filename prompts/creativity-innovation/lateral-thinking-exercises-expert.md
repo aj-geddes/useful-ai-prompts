@@ -1,6 +1,7 @@
 # Lateral Thinking Exercises Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/lateral-thinking-exercises-expert
 - **Version**: 2.1.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ A practical lateral thinking facilitation guide that helps individuals and teams
 ## When to Use
 
 ### Ideal Scenarios
+
 - Stuck on a problem after exhausting conventional solutions
 - Team brainstorming sessions that have become stale or circular
 - Need to challenge industry assumptions or business-as-usual thinking
@@ -26,6 +28,7 @@ A practical lateral thinking facilitation guide that helps individuals and teams
 - Preparing for innovation workshops or ideation sessions
 
 ### Anti-Patterns (When Not to Use)
+
 - Problems requiring analytical or data-driven solutions
 - Situations where constraints are fixed and non-negotiable
 - When quick tactical decisions are needed (not strategic innovation)
@@ -106,6 +109,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Problem: Our restaurant is losing customers to food delivery apps - dine-in traffic down 60%
 2. Already considered: Lower prices, better marketing, loyalty program, renovations
@@ -128,12 +132,14 @@ I can feel your urgency. Let us break these mental barriers and find innovative 
 Starting random word: **THEATER**
 
 Quick associations with your restaurant:
+
 - Performance leads to chefs cooking as a live show
 - Audience leads to diners as participants, not just customers
 - Exclusive shows leads to limited seating special events
 - Backstage leads to behind-the-scenes kitchen experiences
 
 **Breakthrough Ideas Generated:**
+
 1. **Dinner Theater Experience**: Transform dining into entertainment with open kitchen performances and chef storytelling at tableside
 2. **Members-Only Nights**: Create exclusive experiences that delivery apps cannot replicate
 3. **Interactive Dining Shows**: Customers participate in cooking, mixology, or plating their courses
@@ -147,11 +153,13 @@ Your assumption: "People prefer convenience"
 **Complete Reversal:** "People crave inconvenience and effort"
 
 This sounds counterintuitive, but consider:
+
 - Make dining intentionally challenging and rewarding (cook your own premium steak tableside)
 - Create quest dining with multi-course treasure hunts through the restaurant
 - Offer phone-free dining that is inconvenient but creates genuine connection
 
 **Breakthrough Ideas:**
+
 1. **Effort-Based Dining**: The harder to access, the more valuable. Secret menu items require passwords obtained through puzzles or community engagement
 2. **Analog Experience Restaurant**: No phones allowed, no rush, board games provided, vinyl music playing
 3. **Challenge Meals**: Spicy challenges, eating competitions, puzzle-solving dinners where the next course only comes when you solve a clue
@@ -161,11 +169,13 @@ This sounds counterintuitive, but consider:
 **EXERCISE 3: ALTERNATIVE PERSPECTIVES**
 
 Viewing through the lens of a **CHILD**:
+
 - Restaurants are boring leads to make it a playground
 - Food is fun leads to edible art and color-changing drinks
 - Surprise me leads to mystery boxes and lucky dip meals
 
 **Breakthrough Ideas:**
+
 1. **Adult Playground Dining**: Games between courses, interactive walls, surprise elements throughout the meal
 2. **Mystery Menu Mondays**: Chef creates a surprise based on one ingredient you choose when booking
 3. **Build-Your-Adventure**: Gamified dining with points, levels, and achievements that unlock secret dishes
@@ -177,6 +187,7 @@ Viewing through the lens of a **CHILD**:
 Deliberate provocation (Po): "What if customers cooked their own food?"
 
 Taking this seriously:
+
 - Premium ingredients with professional guidance
 - Social cooking parties where strangers become friends
 - Date night cooking classes that end with romantic dinner
@@ -191,6 +202,7 @@ Combining the strongest ideas into an implementable concept:
 **The Stage Restaurant** - A theatrical dining experience where:
 
 Core Elements:
+
 - Every meal is a performance with an open kitchen featuring chef narration
 - Diners book "shows" not tables, with limited seatings that create urgency
 - Interactive elements allow guests to cook alongside the chef for certain signature dishes

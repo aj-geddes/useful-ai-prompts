@@ -1,6 +1,7 @@
 # Compliance Audit Expert
 
 ## Metadata
+
 - **ID**: `evaluation-compliance-audit`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Compliance
@@ -18,6 +19,7 @@ Conduct compliance audits to evaluate organizational adherence to regulations, s
 ## When to Use
 
 **Ideal scenarios:**
+
 - Preparing for regulatory audits or certifications
 - Conducting internal compliance assessments
 - Identifying gaps in control frameworks
@@ -25,6 +27,7 @@ Conduct compliance audits to evaluate organizational adherence to regulations, s
 - Assessing readiness for compliance programs
 
 **Anti-patterns (when not to use):**
+
 - Legal advice requiring attorney review
 - Technical security penetration testing
 - Incident response during active breaches
@@ -106,12 +109,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a 100-person SaaS company preparing for SOC 2 Type II audit in 6 months. We have basic security controls but no formal policies. Main concerns are access management and logging."
 
 ### Output
+
 **Compliance Audit Framework: SOC 2 Type II Readiness**
 
 **Audit Scope**
+
 - Trust Services Criteria: Security, Availability, Confidentiality
 - Systems: Production infrastructure, customer data handling, corporate IT
 - Period: 6-month observation period for Type II
@@ -128,7 +134,7 @@ Avoid:
 
 **Gap Analysis**
 
-*Critical Gaps (Address First)*
+_Critical Gaps (Address First)_
 
 1. **Access Review Process (CC6.3)**
    - Current: No formal access reviews conducted
@@ -142,7 +148,7 @@ Avoid:
    - Evidence needed: Tickets, approvals, provisioning logs
    - Remediation: Implement ticketing system for access requests
 
-*High Priority Gaps*
+_High Priority Gaps_
 
 3. **Logging and Monitoring (CC7.1, CC7.2)**
    - Current: Basic application logs, no centralization
@@ -156,25 +162,29 @@ Avoid:
 
 **Remediation Roadmap**
 
-*Month 1-2: Foundation*
+_Month 1-2: Foundation_
+
 - Draft and approve security policies
 - Implement access request ticketing system
 - Enable MFA on all production systems
 - Begin centralized logging deployment
 
-*Month 3-4: Control Implementation*
+_Month 3-4: Control Implementation_
+
 - Conduct first quarterly access review
 - Complete logging and alerting setup
 - Implement SSO integration
 - Document all procedures
 
-*Month 5-6: Evidence Collection*
+_Month 5-6: Evidence Collection_
+
 - Begin formal evidence collection
 - Conduct control testing
 - Address any findings
 - Prepare for auditor engagement
 
 **Policy Documentation Required**
+
 - Information Security Policy
 - Access Control Policy
 - Logging and Monitoring Policy
@@ -182,6 +192,7 @@ Avoid:
 - Business Continuity Plan
 
 **Monitoring Recommendations**
+
 - Monthly: Control exception reviews
 - Quarterly: Access reviews, policy reviews
 - Annually: Full control assessment, penetration testing
@@ -189,5 +200,6 @@ Avoid:
 **Readiness Assessment**: With focused effort, 6-month timeline is achievable. Critical gaps require immediate attention in months 1-2.
 
 ## Related Prompts
+
 - [Security Assessment Expert](security-assessment-expert.md)
 - [Quality Assurance Expert](quality-assurance-expert.md)

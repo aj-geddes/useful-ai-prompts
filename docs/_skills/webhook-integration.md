@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Implement secure webhook systems for event-driven integrations, including
+date: "2025-01-01"
+description:
+  Implement secure webhook systems for event-driven integrations, including
   signature verification, retry logic, and delivery guarantees. Use when building
   third-party integrations, event notifications, or real-time data synchronization.
 layout: skill
 slug: webhook-integration
 tags:
-- data
+  - data
 title: webhook-integration
 ---
 
@@ -48,8 +49,8 @@ Implement robust webhook systems for event-driven architectures, enabling real-t
 ### 1. **Webhook Sender (TypeScript)**
 
 ```typescript
-import crypto from 'crypto';
-import axios from 'axios';
+import crypto from "crypto";
+import axios from "axios";
 
 interface WebhookEvent {
   id: string;
@@ -81,14 +82,8 @@ class WebhookSender {
   /**
    * Generate HMAC signature for webhook payload
    */
-  private generateSignature(
-    payload: string,
-    secret: string
-  ): string {
-    return crypto
-      .createHmac('sha256', secret)
-      .update(payload)
-      .digest('hex');
+  private generateSignature(payload: string, secret: string): string {
+    return crypto.createHmac("sha256", secret).update(payload).digest("hex");
   }
 
   /**
@@ -96,10 +91,10 @@ class WebhookSender {
    */
   async send(
     endpoint: WebhookEndpoint,
-    event: WebhookEvent
+    event: WebhookEvent,
   ): Promise<DeliveryAttempt[]> {
     if (!endpoint.active) {
-      throw new Error('Endpoint is not active');
+      throw new Error("Endpoint is not active");
     }
 
     if (!endpoint.events.includes(event.type)) {
@@ -117,14 +112,14 @@ class WebhookSender {
       try {
         const response = await axios.post(endpoint.url, payload, {
           headers: {
-            'Content-Type': 'application/json',
-            'X-Webhook-Signature': signature,
-            'X-Webhook-ID': event.id,
-            'X-Webhook-Timestamp': event.timestamp.toString(),
-            'User-Agent': 'WebhookService/1.0'
+            "Content-Type": "application/json",
+            "X-Webhook-Signature": signature,
+            "X-Webhook-ID": event.id,
+            "X-Webhook-Timestamp": event.timestamp.toString(),
+            "User-Agent": "WebhookService/1.0",
           },
           timeout: this.timeout,
-          validateStatus: (status) => status >= 200 && status < 300
+          validateStatus: (status) => status >= 200 && status < 300,
         });
 
         const duration = Date.now() - startTime;
@@ -133,11 +128,11 @@ class WebhookSender {
           attemptNumber: attempt + 1,
           timestamp: Date.now(),
           statusCode: response.status,
-          duration
+          duration,
         });
 
         console.log(
-          `Webhook delivered successfully to ${endpoint.url} (attempt ${attempt + 1})`
+          `Webhook delivered successfully to ${endpoint.url} (attempt ${attempt + 1})`,
         );
 
         return attempts;
@@ -149,12 +144,12 @@ class WebhookSender {
           timestamp: Date.now(),
           statusCode: error.response?.status,
           error: error.message,
-          duration
+          duration,
         });
 
         console.error(
           `Webhook delivery failed to ${endpoint.url} (attempt ${attempt + 1}):`,
-          error.message
+          error.message,
         );
 
         // Wait before retry (except on last attempt)
@@ -165,7 +160,7 @@ class WebhookSender {
     }
 
     throw new Error(
-      `Webhook delivery failed after ${this.maxRetries} attempts`
+      `Webhook delivery failed after ${this.maxRetries} attempts`,
     );
   }
 
@@ -174,7 +169,7 @@ class WebhookSender {
    */
   async sendBatch(
     endpoints: WebhookEndpoint[],
-    event: WebhookEvent
+    event: WebhookEvent,
   ): Promise<Map<string, DeliveryAttempt[]>> {
     const results = new Map<string, DeliveryAttempt[]>();
 
@@ -186,14 +181,14 @@ class WebhookSender {
         } catch (error) {
           console.error(`Failed to deliver to ${endpoint.url}:`, error);
         }
-      })
+      }),
     );
 
     return results;
   }
 
   private delay(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
 
@@ -201,20 +196,20 @@ class WebhookSender {
 const sender = new WebhookSender();
 
 const endpoint: WebhookEndpoint = {
-  url: 'https://api.example.com/webhooks',
-  secret: 'your-webhook-secret',
-  events: ['user.created', 'user.updated'],
-  active: true
+  url: "https://api.example.com/webhooks",
+  secret: "your-webhook-secret",
+  events: ["user.created", "user.updated"],
+  active: true,
 };
 
 const event: WebhookEvent = {
   id: crypto.randomUUID(),
-  type: 'user.created',
+  type: "user.created",
   timestamp: Date.now(),
   data: {
-    userId: '123',
-    email: 'user@example.com'
-  }
+    userId: "123",
+    email: "user@example.com",
+  },
 };
 
 await sender.send(endpoint, event);
@@ -223,9 +218,9 @@ await sender.send(endpoint, event);
 ### 2. **Webhook Receiver (Express)**
 
 ```typescript
-import express from 'express';
-import crypto from 'crypto';
-import { body, validationResult } from 'express-validator';
+import express from "express";
+import crypto from "crypto";
+import { body, validationResult } from "express-validator";
 
 interface WebhookConfig {
   secret: string;
@@ -239,18 +234,15 @@ class WebhookReceiver {
   /**
    * Verify webhook signature
    */
-  verifySignature(
-    payload: string,
-    signature: string
-  ): boolean {
+  verifySignature(payload: string, signature: string): boolean {
     const expectedSignature = crypto
-      .createHmac('sha256', this.config.secret)
+      .createHmac("sha256", this.config.secret)
       .update(payload)
-      .digest('hex');
+      .digest("hex");
 
     return crypto.timingSafeEqual(
       Buffer.from(signature),
-      Buffer.from(expectedSignature)
+      Buffer.from(expectedSignature),
     );
   }
 
@@ -271,24 +263,24 @@ class WebhookReceiver {
     return async (
       req: express.Request,
       res: express.Response,
-      next: express.NextFunction
+      next: express.NextFunction,
     ) => {
       try {
         const signature = req.headers[this.config.signatureHeader] as string;
         const timestamp = parseInt(
-          req.headers['x-webhook-timestamp'] as string
+          req.headers["x-webhook-timestamp"] as string,
         );
 
         if (!signature) {
           return res.status(401).json({
-            error: 'Missing signature'
+            error: "Missing signature",
           });
         }
 
         // Verify timestamp
         if (!this.verifyTimestamp(timestamp)) {
           return res.status(401).json({
-            error: 'Invalid timestamp'
+            error: "Invalid timestamp",
           });
         }
 
@@ -298,15 +290,15 @@ class WebhookReceiver {
         // Verify signature
         if (!this.verifySignature(payload, signature)) {
           return res.status(401).json({
-            error: 'Invalid signature'
+            error: "Invalid signature",
           });
         }
 
         next();
       } catch (error) {
-        console.error('Webhook verification error:', error);
+        console.error("Webhook verification error:", error);
         res.status(500).json({
-          error: 'Verification failed'
+          error: "Verification failed",
         });
       }
     };
@@ -317,26 +309,25 @@ class WebhookReceiver {
 const app = express();
 
 // Use raw body parser for signature verification
-app.use(express.json({
-  verify: (req: any, res, buf) => {
-    req.rawBody = buf.toString();
-  }
-}));
+app.use(
+  express.json({
+    verify: (req: any, res, buf) => {
+      req.rawBody = buf.toString();
+    },
+  }),
+);
 
 const receiver = new WebhookReceiver({
   secret: process.env.WEBHOOK_SECRET!,
-  signatureHeader: 'x-webhook-signature',
-  timestampTolerance: 300 // 5 minutes
+  signatureHeader: "x-webhook-signature",
+  timestampTolerance: 300, // 5 minutes
 });
 
 // Webhook endpoint
-app.post('/webhooks',
+app.post(
+  "/webhooks",
   receiver.createMiddleware(),
-  [
-    body('id').isString(),
-    body('type').isString(),
-    body('data').isObject()
-  ],
+  [body("id").isString(), body("type").isString(), body("data").isObject()],
   async (req, res) => {
     // Validate request
     const errors = validationResult(req);
@@ -353,26 +344,26 @@ app.post('/webhooks',
       // Respond immediately
       res.status(200).json({
         received: true,
-        eventId: id
+        eventId: id,
       });
 
       // Process asynchronously if needed
       processEventAsync(type, data).catch(console.error);
     } catch (error) {
-      console.error('Webhook processing error:', error);
+      console.error("Webhook processing error:", error);
       res.status(500).json({
-        error: 'Processing failed'
+        error: "Processing failed",
       });
     }
-  }
+  },
 );
 
 async function processWebhookEvent(type: string, data: any): Promise<void> {
   switch (type) {
-    case 'user.created':
+    case "user.created":
       await handleUserCreated(data);
       break;
-    case 'payment.success':
+    case "payment.success":
       await handlePaymentSuccess(data);
       break;
     default:
@@ -385,23 +376,23 @@ async function processEventAsync(type: string, data: any): Promise<void> {
 }
 
 async function handleUserCreated(data: any): Promise<void> {
-  console.log('User created:', data);
+  console.log("User created:", data);
 }
 
 async function handlePaymentSuccess(data: any): Promise<void> {
-  console.log('Payment successful:', data);
+  console.log("Payment successful:", data);
 }
 
 app.listen(3000, () => {
-  console.log('Webhook receiver listening on port 3000');
+  console.log("Webhook receiver listening on port 3000");
 });
 ```
 
 ### 3. **Webhook Queue with Bull**
 
 ```typescript
-import Queue from 'bull';
-import axios from 'axios';
+import Queue from "bull";
+import axios from "axios";
 
 interface WebhookJob {
   endpoint: WebhookEndpoint;
@@ -412,16 +403,16 @@ class WebhookQueue {
   private queue: Queue.Queue<WebhookJob>;
 
   constructor(redisUrl: string) {
-    this.queue = new Queue('webhooks', redisUrl, {
+    this.queue = new Queue("webhooks", redisUrl, {
       defaultJobOptions: {
         attempts: 3,
         backoff: {
-          type: 'exponential',
-          delay: 2000
+          type: "exponential",
+          delay: 2000,
         },
         removeOnComplete: 100,
-        removeOnFail: 1000
-      }
+        removeOnFail: 1000,
+      },
     });
 
     this.setupProcessors();
@@ -430,7 +421,7 @@ class WebhookQueue {
 
   private setupProcessors(): void {
     // Process webhook deliveries
-    this.queue.process('delivery', 5, async (job) => {
+    this.queue.process("delivery", 5, async (job) => {
       const { endpoint, event } = job.data;
 
       job.log(`Delivering webhook to ${endpoint.url}`);
@@ -441,21 +432,21 @@ class WebhookQueue {
       return {
         endpoint: endpoint.url,
         attempts,
-        success: true
+        success: true,
       };
     });
   }
 
   private setupEventHandlers(): void {
-    this.queue.on('completed', (job, result) => {
+    this.queue.on("completed", (job, result) => {
       console.log(`Webhook delivered: ${job.id}`, result);
     });
 
-    this.queue.on('failed', (job, err) => {
+    this.queue.on("failed", (job, err) => {
       console.error(`Webhook delivery failed: ${job?.id}`, err);
     });
 
-    this.queue.on('stalled', (job) => {
+    this.queue.on("stalled", (job) => {
       console.warn(`Webhook delivery stalled: ${job.id}`);
     });
   }
@@ -463,28 +454,28 @@ class WebhookQueue {
   async enqueue(
     endpoint: WebhookEndpoint,
     event: WebhookEvent,
-    options?: Queue.JobOptions
+    options?: Queue.JobOptions,
   ): Promise<Queue.Job<WebhookJob>> {
     return this.queue.add(
-      'delivery',
+      "delivery",
       { endpoint, event },
       {
         jobId: `${event.id}-${endpoint.url}`,
-        ...options
-      }
+        ...options,
+      },
     );
   }
 
   async enqueueBatch(
     endpoints: WebhookEndpoint[],
-    event: WebhookEvent
+    event: WebhookEvent,
   ): Promise<Queue.Job<WebhookJob>[]> {
-    const jobs = endpoints.map(endpoint => ({
-      name: 'delivery',
+    const jobs = endpoints.map((endpoint) => ({
+      name: "delivery",
       data: { endpoint, event },
       opts: {
-        jobId: `${event.id}-${endpoint.url}`
-      }
+        jobId: `${event.id}-${endpoint.url}`,
+      },
     }));
 
     return this.queue.addBulk(jobs);
@@ -501,14 +492,14 @@ class WebhookQueue {
       attempts: job.attemptsMade,
       failedReason: job.failedReason,
       finishedOn: job.finishedOn,
-      processedOn: job.processedOn
+      processedOn: job.processedOn,
     };
   }
 
   async retryFailed(jobId: string): Promise<void> {
     const job = await this.queue.getJob(jobId);
     if (!job) {
-      throw new Error('Job not found');
+      throw new Error("Job not found");
     }
 
     await job.retry();
@@ -528,27 +519,27 @@ class WebhookQueue {
 }
 
 // Usage
-const webhookQueue = new WebhookQueue('redis://localhost:6379');
+const webhookQueue = new WebhookQueue("redis://localhost:6379");
 
 // Enqueue single webhook
 await webhookQueue.enqueue(endpoint, event, {
   delay: 1000, // Delay 1 second
-  priority: 1
+  priority: 1,
 });
 
 // Enqueue to multiple endpoints
 await webhookQueue.enqueueBatch(endpoints, event);
 
 // Check job status
-const status = await webhookQueue.getJobStatus('job-id');
-console.log('Job status:', status);
+const status = await webhookQueue.getJobStatus("job-id");
+console.log("Job status:", status);
 ```
 
 ### 4. **Webhook Testing Utilities**
 
 ```typescript
-import express from 'express';
-import crypto from 'crypto';
+import express from "express";
+import crypto from "crypto";
 
 class WebhookTester {
   private app: express.Application;
@@ -562,11 +553,11 @@ class WebhookTester {
   private setupTestEndpoint(): void {
     this.app.use(express.json());
 
-    this.app.post('/test-webhook', (req, res) => {
+    this.app.post("/test-webhook", (req, res) => {
       const event = req.body;
 
       // Validate signature if provided
-      const signature = req.headers['x-webhook-signature'] as string;
+      const signature = req.headers["x-webhook-signature"] as string;
       if (signature) {
         // Verify signature here
       }
@@ -574,31 +565,31 @@ class WebhookTester {
       // Store received event
       this.receivedEvents.push(event);
 
-      console.log('Received webhook:', event);
+      console.log("Received webhook:", event);
 
       // Respond based on test scenario
       res.status(200).json({
         received: true,
-        eventId: event.id
+        eventId: event.id,
       });
     });
 
     // Endpoint that simulates failures
-    this.app.post('/test-webhook/fail', (req, res) => {
+    this.app.post("/test-webhook/fail", (req, res) => {
       const failureType = req.query.type;
 
       switch (failureType) {
-        case 'timeout':
+        case "timeout":
           // Don't respond (simulates timeout)
           break;
-        case 'server-error':
-          res.status(500).json({ error: 'Internal server error' });
+        case "server-error":
+          res.status(500).json({ error: "Internal server error" });
           break;
-        case 'unauthorized':
-          res.status(401).json({ error: 'Unauthorized' });
+        case "unauthorized":
+          res.status(401).json({ error: "Unauthorized" });
           break;
         default:
-          res.status(400).json({ error: 'Bad request' });
+          res.status(400).json({ error: "Bad request" });
       }
     });
   }
@@ -625,7 +616,7 @@ class WebhookTester {
       id: crypto.randomUUID(),
       type,
       timestamp: Date.now(),
-      data
+      data,
     };
   }
 }
@@ -635,30 +626,31 @@ const tester = new WebhookTester();
 tester.start(3001);
 
 // Send test webhook
-const mockEvent = WebhookTester.createMockEvent('user.created', {
-  userId: '123',
-  email: 'test@example.com'
+const mockEvent = WebhookTester.createMockEvent("user.created", {
+  userId: "123",
+  email: "test@example.com",
 });
 
 const sender = new WebhookSender();
 await sender.send(
   {
-    url: 'http://localhost:3001/test-webhook',
-    secret: 'test-secret',
-    events: ['user.created'],
-    active: true
+    url: "http://localhost:3001/test-webhook",
+    secret: "test-secret",
+    events: ["user.created"],
+    active: true,
   },
-  mockEvent
+  mockEvent,
 );
 
 // Verify received
 const received = tester.getReceivedEvents();
-console.log('Received events:', received);
+console.log("Received events:", received);
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use HMAC signatures for verification
 - Implement idempotency with event IDs
 - Return 200 OK quickly, process asynchronously
@@ -673,6 +665,7 @@ console.log('Received events:', received);
 - Support webhook versioning
 
 ### ❌ DON'T
+
 - Send sensitive data in webhooks
 - Skip signature verification
 - Block responses with heavy processing

@@ -1,12 +1,13 @@
 ---
 category: mobile-development
-date: '2025-01-01'
-description: Develop native Android apps with Kotlin. Covers MVVM with Jetpack, Compose
+date: "2025-01-01"
+description:
+  Develop native Android apps with Kotlin. Covers MVVM with Jetpack, Compose
   for modern UI, Retrofit for API calls, Room for local storage, and navigation architecture.
 layout: skill
 slug: android-kotlin-development
 tags:
-- api
+  - api
 title: android-kotlin-development
 ---
 
@@ -318,6 +319,7 @@ fun DetailsScreen(itemId: String, navController: NavController) {
 ## Best Practices
 
 ### ✅ DO
+
 - Use Kotlin for all new Android code
 - Implement MVVM with Jetpack libraries
 - Use Jetpack Compose for UI development
@@ -330,6 +332,7 @@ fun DetailsScreen(itemId: String, navController: NavController) {
 - Follow Android design guidelines
 
 ### ❌ DON'T
+
 - Store tokens in SharedPreferences
 - Make network calls on main thread
 - Ignore lifecycle management

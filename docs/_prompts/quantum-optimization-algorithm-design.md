@@ -3,32 +3,33 @@ title: Quantum Optimization Algorithm Design
 slug: quantum-optimization-algorithm-design
 category: quantum computing
 tags:
-- quantum
-- optimization
-- QAOA
-- quantum
-- annealing
-- combinatorial
-- optimization
-- VQE
-- hybrid
-- algorithms
+  - quantum
+  - optimization
+  - QAOA
+  - quantum
+  - annealing
+  - combinatorial
+  - optimization
+  - VQE
+  - hybrid
+  - algorithms
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Design and implement quantum optimization algorithms for combinatorial,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Design and implement quantum optimization algorithms for combinatorial,
   continuous, and constrained optimization problems. This prompt covers QAOA, quantum
   annealing, and hybrid quantum-classical approaches with rigorous benchmarking against
   classical solvers for practical problem-solving.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Solving combinatorial optimization problems (MaxCut, TSP, scheduling) with quantum
-  approaches
-- Implementing QAOA circuits for gate-based quantum hardware
-- Designing quantum annealing formulations for D-Wave systems
-- Benchmarking quantum optimization performance against classical solvers
+  - Ideal Scenarios:**
+  - Solving combinatorial optimization problems (MaxCut, TSP, scheduling) with quantum
+    approaches
+  - Implementing QAOA circuits for gate-based quantum hardware
+  - Designing quantum annealing formulations for D-Wave systems
+  - Benchmarking quantum optimization performance against classical solvers
 complexity: advanced
 interaction: multi-turn
 ---
@@ -43,16 +44,18 @@ Quantum optimization algorithms offer potential advantages for combinatorial pro
 
 <input_handling>
 Required inputs:
+
 - Optimization problem type and mathematical structure
 - Problem size and constraint specifications
 - Current classical approach and performance baselines
 
 Infer if not provided:
+
 - Algorithm selection: QAOA for gate-based systems, annealing for D-Wave
 - QUBO formulation: Auto-generate from constraint representation
 - Circuit depth: Start with p=3 layers for QAOA
 - Classical comparison: Include best-known heuristics for problem class
-</input_handling>
+  </input_handling>
 
 <task>
 Develop a comprehensive quantum optimization solution:
@@ -63,22 +66,24 @@ Develop a comprehensive quantum optimization solution:
 4. Create hybrid quantum-classical workflow with decomposition for large problems
 5. Implement solution validation and feasibility verification
 6. Build rigorous benchmarking framework against state-of-the-art classical solvers
-</task>
+   </task>
 
 <output_specification>
 Format: Algorithm specification with implementation guide
 Length: 800-1500 words
 Structure:
+
 - QUBO/Ising formulation with constraint encoding
 - Circuit or annealing schedule design
 - Parameter optimization approach
 - Hybrid decomposition strategy (if needed)
 - Benchmark methodology and metrics
 - Resource requirements and expected performance
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Correct QUBO/Ising formulation with validated constraint encoding
 - Hardware-aware algorithm design considering connectivity and noise
 - Fair comparison with best-in-class classical algorithms
@@ -86,11 +91,12 @@ Excellent outputs demonstrate:
 - Realistic assessment of quantum advantage potential
 
 Avoid:
+
 - Incorrect constraint penalty weights causing infeasible solutions
 - Comparing to weak classical baselines to inflate quantum performance
 - Ignoring solution feasibility verification and constraint satisfaction
 - Overclaiming quantum advantage without rigorous benchmarking
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge current hardware limitations honestly

@@ -1,6 +1,7 @@
 # Knowledge Base Builder
 
 ## Metadata
+
 - **ID**: `customer-service-knowledge-base-builder`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,12 +19,14 @@ Designs and writes self-service customer knowledge base articles that deflect su
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a help center from scratch for a new product
 - Reducing ticket volume by documenting the top 20 recurring questions
 - Improving existing articles that customers can't find or understand
 - Creating content for an AI chatbot knowledge base
 
 **Anti-patterns (Don't Use For):**
+
 - Internal agent SOPs (different format and audience)
 - Legal or compliance disclosures
 - Marketing product pages
@@ -123,13 +126,14 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Write a KB article about how to reset a password in our SaaS app. The app is called Flowbase. You can reset from the login page or from Account Settings if you're logged in. Password must be 12+ characters, one uppercase, one number, one special character. Temporary passwords expire in 24 hours."
 
 ### Output
 
 **How to Reset Your Flowbase Password**
 
-*Last updated: February 27, 2026*
+_Last updated: February 27, 2026_
 
 You can reset your Flowbase password in two ways: from the login page (if you're locked out) or from Account Settings (if you're already logged in).
 
@@ -168,6 +172,7 @@ Use this if you're logged in and want to change your password proactively.
 **Password Requirements**
 
 Your new password must:
+
 - Be at least **12 characters** long
 - Contain at least **1 uppercase letter**
 - Contain at least **1 number**
@@ -177,20 +182,23 @@ Your new password must:
 
 **Troubleshooting**
 
-*I didn't receive the reset email*
+_I didn't receive the reset email_
+
 - Check your spam/junk folder
 - Verify you used the correct email address
 - Add `noreply@flowbase.com` to your contacts and try again
 
-*My reset link isn't working*
+_My reset link isn't working_
+
 - Links expire after 24 hours — request a new one from the login page
 - Make sure you're clicking the most recent reset email (older links become invalid)
 
-*Still locked out?* [Contact Support →](/)
+_Still locked out?_ [Contact Support →](/)
 
 ---
 
 **Related Articles**
+
 - [Setting up two-factor authentication](/)
 - [Managing team member access](/)
 - [Understanding account roles and permissions](/)

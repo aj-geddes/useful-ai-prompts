@@ -1,6 +1,7 @@
 # Sleep Optimization Specialist
 
 ## Metadata
+
 - **ID**: `health-sleep-optimization`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ A comprehensive sleep optimization expert that helps improve sleep quality, opti
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving sleep quality and duration
 - Addressing sleep onset or maintenance difficulties
 - Optimizing bedroom environment for better sleep
@@ -25,6 +27,7 @@ A comprehensive sleep optimization expert that helps improve sleep quality, opti
 - Reducing daytime fatigue and improving energy
 
 **Anti-Patterns (When NOT to Use):**
+
 - Sleep disorder diagnosis (sleep apnea, narcolepsy, etc.)
 - Sleep study interpretation
 - Medication recommendations or adjustments
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Sleep patterns: Bed at 11:30pm, wake at 7am alarm (snooze a lot), maybe 6 hours actual sleep. Issues: Take 30-45 min to fall asleep, wake up 2-3 times, feel groggy in morning, tired by 3pm. Environment: Bedroom is also office (WFH), phone charges by bed, room temp around 72F. Lifestyle: Coffee until 3pm, evening workouts (7pm), scroll phone in bed, inconsistent weekend schedule.
 
 ### Output
@@ -115,13 +119,15 @@ Sleep patterns: Bed at 11:30pm, wake at 7am alarm (snooze a lot), maybe 6 hours 
 **Sleep Optimization Plan**
 
 **Sleep Assessment:**
+
 - Sleep efficiency: Low (6 hours actual in 7.5 hour window)
 - Primary issues: Sleep onset, maintenance, and unrefreshing sleep
 - Key contributors: Environment, screen use, caffeine timing, exercise timing
 
 **Environment Optimization:**
 
-*Bedroom as Sleep Sanctuary:*
+_Bedroom as Sleep Sanctuary:_
+
 - Separate work area: Move desk or create visual barrier, or work elsewhere if possible
 - Phone location: Charge in another room (use simple alarm clock)
 - Temperature: Lower to 65-68F (cooler promotes deeper sleep)
@@ -130,7 +136,8 @@ Sleep patterns: Bed at 11:30pm, wake at 7am alarm (snooze a lot), maybe 6 hours 
 
 **Pre-Sleep Routine (Start at 10:30pm):**
 
-*Wind-Down Protocol:*
+_Wind-Down Protocol:_
+
 - 10:30pm: All screens off (phone, TV, computer)
 - 10:30-10:45: Light activity (reading, stretching, preparing for tomorrow)
 - 10:45-11:00: Relaxation (breathing exercises, body scan, gentle music)
@@ -139,39 +146,46 @@ Sleep patterns: Bed at 11:30pm, wake at 7am alarm (snooze a lot), maybe 6 hours 
 
 **Lifestyle Modifications:**
 
-*Caffeine:*
+_Caffeine:_
+
 - Hard cutoff at 12pm noon (caffeine half-life is 6-8 hours)
 - Switch to decaf or herbal tea for afternoon beverages
 - Notice improvement in sleep onset within 3-5 days
 
-*Exercise:*
+_Exercise:_
+
 - Move workouts earlier (before 5pm if possible)
 - If evening only option: Lower intensity, complete by 6pm
 - Or switch to morning exercise (improves sleep quality)
 
-*Weekend Consistency:*
+_Weekend Consistency:_
+
 - Keep wake time within 1 hour of weekday (6-8am range)
 - Avoid sleeping in more than 1 extra hour
 - Bedtime can flex slightly, but maintain rhythm
 
 **Circadian Rhythm Support:**
+
 - Morning light: 10-15 minutes bright light within 30 min of waking
 - Dim lights: Lower household lights after sunset
 - Evening: Avoid bright overhead lights, use lamps
 
 **If Still Awake After 20 Minutes:**
+
 - Get up, go to another room
 - Low-stimulation activity (reading, gentle stretching)
 - Return when sleepy
 - Avoid clock-watching (face clock away from bed)
 
 **Tracking (2 weeks):**
+
 - Note bedtime, estimated sleep time, wake time
 - Rate morning energy 1-10
 - Note afternoon energy
 - Track what feels different
 
 **Implementation Order:**
+
 - Week 1: Phone out of bedroom, screens off by 10:30pm, caffeine cutoff
 - Week 2: Add full bedtime routine, adjust exercise timing
 - Week 3+: Fine-tune and maintain
@@ -182,6 +196,7 @@ If sleep issues persist after 4-6 weeks of consistent changes, consult healthcar
 ---
 
 ## Related Prompts
+
 - [Stress Reduction Strategist](stress-reduction-strategist.md)
 - [Sleep Quality Optimizer](sleep-quality-optimizer.md)
 - [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)

@@ -9,4 +9,4 @@ Technical engineering frameworks for construction, mechanical design, and engine
 
 ---
 
-*Professional engineering prompts for construction managers, mechanical engineers, and engineering directors.*
+_Professional engineering prompts for construction managers, mechanical engineers, and engineering directors._

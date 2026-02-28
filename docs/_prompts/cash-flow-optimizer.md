@@ -3,22 +3,23 @@ title: Cash Flow Optimizer
 slug: cash-flow-optimizer
 category: finance
 tags:
-- cash
-- flow
-- working
-- capital
-- accounts
-- receivable
-- accounts
-- payable
-- cash
-- conversion
-- cycle
+  - cash
+  - flow
+  - working
+  - capital
+  - accounts
+  - receivable
+  - accounts
+  - payable
+  - cash
+  - conversion
+  - cycle
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt analyzes a company's working capital position and cash conversion
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt analyzes a company's working capital position and cash conversion
   cycle to identify specific, prioritized improvements in accounts receivable, accounts
   payable, inventory, and operational cash generation. It moves beyond identifying
   cash flow problems to building an actionable optimization roadmap with quantified
@@ -26,15 +27,15 @@ description: This prompt analyzes a company's working capital position and cash 
   plan with specific initiatives, estimated cash impact, and implementation guidance.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business is profitable on paper but consistently cash-constrained or reliant on
-  credit lines for operations
-- Preparing for rapid growth or a capital raise and needing to demonstrate efficient
-  working capital management
-- Conducting a post-acquisition working capital review to identify quick-win cash
-  improvements in an acquired business
-- Businesses in financial distress needing restructuring or creditor negotiation —
-  engage a restructuring advisor
+  - Ideal Scenarios:**
+  - A business is profitable on paper but consistently cash-constrained or reliant on
+    credit lines for operations
+  - Preparing for rapid growth or a capital raise and needing to demonstrate efficient
+    working capital management
+  - Conducting a post-acquisition working capital review to identify quick-win cash
+    improvements in an acquired business
+  - Businesses in financial distress needing restructuring or creditor negotiation —
+    engage a restructuring advisor
 complexity: intermediate
 interaction: multi-turn
 ---

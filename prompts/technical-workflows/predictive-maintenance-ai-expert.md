@@ -1,6 +1,7 @@
 # Predictive Maintenance AI Expert
 
 ## Metadata
+
 - **ID**: `predictive-maintenance-ai-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Combines Predictive Maintenance Engineer and Industrial AI Manager expertise to 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Implementing predictive maintenance for industrial equipment fleets
 - Building ML models for equipment failure prediction
 - Optimizing maintenance schedules with data-driven insights
@@ -25,6 +27,7 @@ Combines Predictive Maintenance Engineer and Industrial AI Manager expertise to 
 - Transitioning from reactive or time-based maintenance to condition-based
 
 **Anti-Patterns (Don't Use For):**
+
 - Reactive maintenance process design
 - Simple scheduled/time-based maintenance
 - Non-equipment maintenance (facilities, IT assets)
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We have a fleet of 200 CNC machines across 3 plants. Currently operating in reactive maintenance mode with approximately 12% unplanned downtime. We have basic PLCs on each machine but no centralized data collection or historian.
 
@@ -166,14 +170,15 @@ Current pain points:
 
 **Current State Assessment**
 
-| Dimension | Current State | Maturity Level |
-|-----------|---------------|----------------|
-| Maintenance approach | Reactive (fix when broken) | Level 1 of 5 |
-| Data collection | Basic PLC signals, no historian | Level 1 |
-| Downtime visibility | Manual tracking, incomplete | Level 1 |
-| Spare parts | Reactive ordering | Level 1 |
+| Dimension            | Current State                   | Maturity Level |
+| -------------------- | ------------------------------- | -------------- |
+| Maintenance approach | Reactive (fix when broken)      | Level 1 of 5   |
+| Data collection      | Basic PLC signals, no historian | Level 1        |
+| Downtime visibility  | Manual tracking, incomplete     | Level 1        |
+| Spare parts          | Reactive ordering               | Level 1        |
 
 **Downtime Cost Analysis:**
+
 - Current downtime: 12% across 200 machines
 - Cost per machine-hour downtime: $150 (estimated)
 - Annual downtime cost: 200 machines x 8,760 hours x 12% x $150 = **$3.6M/year**
@@ -192,12 +197,12 @@ Temperature    Store-forward   retention      Retraining
 
 **Sensor Integration**
 
-| Signal | Source | Frequency | Health Indicator | Failure Mode |
-|--------|--------|-----------|------------------|--------------|
-| Spindle load | PLC (existing) | 100ms | Load variation, trends | Bearing wear |
-| Vibration | New sensor | 1kHz FFT | Harmonics, amplitude | Bearing, balance |
-| Temperature | PLC (existing) | 1s | Thermal cycling, drift | Lubrication, cooling |
-| Tool wear | Calculated | Per cycle | Wear rate, remaining life | Tool failure |
+| Signal       | Source         | Frequency | Health Indicator          | Failure Mode         |
+| ------------ | -------------- | --------- | ------------------------- | -------------------- |
+| Spindle load | PLC (existing) | 100ms     | Load variation, trends    | Bearing wear         |
+| Vibration    | New sensor     | 1kHz FFT  | Harmonics, amplitude      | Bearing, balance     |
+| Temperature  | PLC (existing) | 1s        | Thermal cycling, drift    | Lubrication, cooling |
+| Tool wear    | Calculated     | Per cycle | Wear rate, remaining life | Tool failure         |
 
 **New Sensor Investment: $600 per machine x 200 = $120K**
 
@@ -226,6 +231,7 @@ features_ops = [
 **ML Model Architecture**
 
 **Model 1: Anomaly Detection (Early Warning)**
+
 - Algorithm: Isolation Forest + LSTM Autoencoder ensemble
 - Input: 50 features per machine
 - Output: Anomaly score (0-100)
@@ -233,12 +239,13 @@ features_ops = [
 
 ```yaml
 alert_thresholds:
-  warning: score > 60  # Investigate within 48 hours
+  warning: score > 60 # Investigate within 48 hours
   critical: score > 75 # Investigate within 8 hours
-  urgent: score > 90   # Stop and inspect immediately
+  urgent: score > 90 # Stop and inspect immediately
 ```
 
 **Model 2: Remaining Useful Life (RUL)**
+
 - Algorithm: Gradient Boosting + Survival Analysis
 - Input: Anomaly score + operational parameters + maintenance history
 - Output: Days to predicted failure (P50, P90 confidence intervals)
@@ -277,28 +284,28 @@ automated_workflows:
 
 **Change Management for Maintenance Team**
 
-| Phase | Duration | Focus | Activities |
-|-------|----------|-------|------------|
-| Awareness | Month 1-2 | Build trust | Show examples, explain approach |
-| Pilot | Month 3-6 | Validate with team | 10 machines, daily reviews |
-| Expand | Month 7-12 | Scale with confidence | Full fleet, feedback integration |
-| Optimize | Month 13+ | Continuous improvement | Model tuning, new failure modes |
+| Phase     | Duration   | Focus                  | Activities                       |
+| --------- | ---------- | ---------------------- | -------------------------------- |
+| Awareness | Month 1-2  | Build trust            | Show examples, explain approach  |
+| Pilot     | Month 3-6  | Validate with team     | 10 machines, daily reviews       |
+| Expand    | Month 7-12 | Scale with confidence  | Full fleet, feedback integration |
+| Optimize  | Month 13+  | Continuous improvement | Model tuning, new failure modes  |
 
 **ROI Projection**
 
-| Category | Year 1 | Year 2 | Year 3 |
-|----------|--------|--------|--------|
-| **Investment** ||||
-| Sensors and edge | $300K | - | - |
-| Platform and ML | $400K | $100K | $100K |
-| Integration | $200K | $50K | $50K |
-| Training/change mgmt | $100K | $50K | $50K |
+| Category             | Year 1    | Year 2    | Year 3    |
+| -------------------- | --------- | --------- | --------- |
+| **Investment**       |           |           |           |
+| Sensors and edge     | $300K     | -         | -         |
+| Platform and ML      | $400K     | $100K     | $100K     |
+| Integration          | $200K     | $50K      | $50K      |
+| Training/change mgmt | $100K     | $50K      | $50K      |
 | **Total Investment** | **$1.0M** | **$200K** | **$200K** |
-| **Savings** ||||
-| Downtime reduction | $900K | $1.5M | $1.8M |
-| Parts optimization | $100K | $200K | $300K |
-| **Total Savings** | **$1.0M** | **$1.7M** | **$2.1M** |
-| **Cumulative ROI** | **$0** | **$1.5M** | **$3.4M** |
+| **Savings**          |           |           |           |
+| Downtime reduction   | $900K     | $1.5M     | $1.8M     |
+| Parts optimization   | $100K     | $200K     | $300K     |
+| **Total Savings**    | **$1.0M** | **$1.7M** | **$2.1M** |
+| **Cumulative ROI**   | **$0**    | **$1.5M** | **$3.4M** |
 
 **Payback period: 12 months**
 

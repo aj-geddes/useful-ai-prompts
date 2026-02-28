@@ -1,6 +1,7 @@
 # Talent Acquisition Strategist
 
 ## Metadata
+
 - **ID**: `human-resources-talent-acquisition-strategist`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a talent acquisition strategist who designs comprehensive recruiting programs covering sourcing strategy, employer brand positioning, structured interview frameworks, and offer management. It helps organizations build hiring systems that are fast, equitable, and predictive — connecting candidate experience to retention outcomes. The output includes sourcing strategies, interview process designs, employer brand frameworks, and offer management guidance.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A Head of Talent building a recruiting function from scratch at a Series B company preparing for rapid headcount growth
 - A TA leader redesigning the interview process to reduce time-to-fill and improve offer acceptance rates for engineering roles
 - An HR Director developing an employer branding strategy to compete with larger companies for specialized talent
 
 **Anti-patterns (Don't Use For):**
+
 - Writing specific job descriptions (use job-description-writer for that)
 - Designing interview questions (use interview-question-designer for that)
 - Executive search strategy for C-suite roles, which typically requires specialized retained search firms
@@ -64,10 +69,13 @@ Avoid: Generic sourcing advice (just post on LinkedIn), interview processes that
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're a 150-person fintech startup. We need to hire 30 engineers in the next 9 months. Our current average time-to-fill for engineers is 85 days. Our offer acceptance rate is about 60%. Candidates tell us we lose to companies paying 20-30% more. We don't have a strong employer brand. Where do we start?"
 
 ### Output
+
 **Engineering Talent Acquisition Strategy: 30 Hires in 9 Months**
 
 **Diagnosis**
@@ -83,6 +91,7 @@ You have a three-layer problem, in order of impact:
 **Priority 1: Fix Compensation Positioning (Do This First)**
 
 Before spending a dollar on sourcing or branding, run a compensation analysis. If engineers are consistently citing 20-30% gaps:
+
 - Either your bands are behind market and need to be reset (work with finance immediately — this is not optional for a 30-hire plan)
 - Or you are competing for the wrong candidate pool (Big Tech alumni at Big Tech salaries, where your fintech equity story is the right differentiator)
 
@@ -94,13 +103,13 @@ Offer acceptance target: 80%+ within 90 days of intervention.
 
 Current 85 days → Target 50 days. Here is where to find the 35 days:
 
-| Stage | Current (est.) | Target | How |
-|-------|---------------|--------|-----|
-| Sourcing to screen | 15 days | 7 days | Dedicated sourcer; active pipeline before req opens |
-| Screen to debrief | 5 days | 3 days | Same-day debrief scheduling; interviewer calendars held in advance |
-| Debrief to offer | 8 days | 3 days | Pre-approved comp bands so offers don't require multi-level approval |
-| Offer to acceptance | 10 days | 5 days | Verbal offer call before written; hiring manager closes |
-| Misc delays | 47 days | 32 days | |
+| Stage               | Current (est.) | Target  | How                                                                  |
+| ------------------- | -------------- | ------- | -------------------------------------------------------------------- |
+| Sourcing to screen  | 15 days        | 7 days  | Dedicated sourcer; active pipeline before req opens                  |
+| Screen to debrief   | 5 days         | 3 days  | Same-day debrief scheduling; interviewer calendars held in advance   |
+| Debrief to offer    | 8 days         | 3 days  | Pre-approved comp bands so offers don't require multi-level approval |
+| Offer to acceptance | 10 days        | 5 days  | Verbal offer call before written; hiring manager closes              |
+| Misc delays         | 47 days        | 32 days |                                                                      |
 
 Key structural change: Require interviewers to complete feedback within 24 hours of interview. Block panel debriefs within 48 hours of final interview. These two changes alone reduce 10-15 days.
 
@@ -108,13 +117,13 @@ Key structural change: Require interviewers to complete feedback within 24 hours
 
 You need approximately 300 qualified applicants in the funnel to yield 30 hires (assuming 10:1 funnel from qualified apply to hire, which is standard for engineering).
 
-| Channel | Target % of Pipeline | Rationale |
-|---------|---------------------|-----------|
-| Employee referrals | 30% | Highest quality, fastest time-to-hire (avg 20-30 days) — launch a $3-5K referral bonus immediately |
-| Outbound LinkedIn/direct sourcing | 40% | Required at this volume; hire 1-2 dedicated sourcers or use a specialized sourcing agency for fintech |
-| Job boards (LinkedIn, Lever/Greenhouse network) | 15% | Brand-dependent; expect lower quality without EVP investment |
-| Fintech/FS community channels | 10% | Fintech Slack communities, CFT, relevant meetups — high signal, passive candidates |
-| University / bootcamp partnerships | 5% | Junior and entry-level pipeline; 6-month lead time required |
+| Channel                                         | Target % of Pipeline | Rationale                                                                                             |
+| ----------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
+| Employee referrals                              | 30%                  | Highest quality, fastest time-to-hire (avg 20-30 days) — launch a $3-5K referral bonus immediately    |
+| Outbound LinkedIn/direct sourcing               | 40%                  | Required at this volume; hire 1-2 dedicated sourcers or use a specialized sourcing agency for fintech |
+| Job boards (LinkedIn, Lever/Greenhouse network) | 15%                  | Brand-dependent; expect lower quality without EVP investment                                          |
+| Fintech/FS community channels                   | 10%                  | Fintech Slack communities, CFT, relevant meetups — high signal, passive candidates                    |
+| University / bootcamp partnerships              | 5%                   | Junior and entry-level pipeline; 6-month lead time required                                           |
 
 **Employer Value Proposition: Fintech**
 
@@ -137,11 +146,13 @@ Put this language on your careers page, in recruiter outreach, and in every hiri
 ---
 
 ## Variations
+
 - **Diversity Recruiting Strategy**: Sourcing and process changes specifically designed to improve representation in candidate pipelines
 - **Agency vs. In-House Recruiting**: Framework for deciding when to use retained search, RPO, or staffing firms vs. building internal TA capacity
 - **Campus and Early-Career Recruiting**: University partnership strategy, internship programs, and new grad pipelines
 
 ## Related Prompts
+
 - [Interview Question Designer](interview-question-designer.md) - Structured interview questions for specific roles
 - [Job Description Writer](job-description-writer.md) - Job descriptions that attract the right candidates
 - [Diversity Inclusion Strategist](diversity-inclusion-strategist.md) - Inclusive hiring practices and diverse pipeline strategies

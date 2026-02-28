@@ -1,6 +1,7 @@
 # Information Architecture Researcher
 
 ## Metadata
+
 - **ID**: `research-information-architecture-researcher`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt supports UX researchers, content strategists, and knowledge managers in designing and evaluating information architectures — creating taxonomies, designing navigation systems, evaluating findability, and applying card sorting and tree testing methodologies to ensure users can locate what they need efficiently.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Redesigning a website, intranet, or knowledge base with unclear or user-unfriendly navigation
 - Creating a taxonomy for a new content system or product documentation library
 - Evaluating whether current information organization matches how users actually think and search
 
 **Anti-patterns (Don't Use For):**
+
 - Database schema design requiring technical data architecture expertise
 - Search engine optimization focused on crawler behavior rather than user findability
 - Physical space wayfinding design (signage, building navigation)
@@ -66,10 +71,13 @@ Avoid: Taxonomies organized around internal org structure; labels that mean some
 ---
 
 ## Example Usage
+
 ### Input
+
 "We have a B2B software knowledge base with about 800 articles. Our users are IT administrators and business users at our customers' companies. Currently it's organized by our product module names (things like 'Module 3: Advanced Configuration' and 'Integration Services') which reflect our development roadmap, not how customers think about using the product. Analytics show 65% of support tickets are for things that are documented — users just can't find them. We need to redesign the IA."
 
 ### Output
+
 **Information Architecture Research Plan — Customer Knowledge Base**
 Content Volume: 800 articles | Primary Users: IT Admins and Business Users
 
@@ -80,6 +88,7 @@ Content Volume: 800 articles | Primary Users: IT Admins and Business Users
 The core problem is organization-centric taxonomy vs. user-centric taxonomy. "Module 3: Advanced Configuration" and "Integration Services" are meaningful to your product team but not to a business user who wants to know "how do I add a new employee to the system." The 65% documented-but-unfound support ticket rate is a classic IA failure mode: the content exists but is not organized or labeled in ways that match user search behavior.
 
 **Secondary issues likely present:**
+
 - Search is probably compensating but inadequately — users searching for terms your documentation doesn't use
 - No task-oriented entry points — users are expected to know product architecture before they can find help
 - The IT Admin and Business User mental models likely diverge significantly and may require separate navigation paths or faceted filtering
@@ -89,11 +98,13 @@ The core problem is organization-centric taxonomy vs. user-centric taxonomy. "Mo
 **User Mental Model Research**
 
 **IT Administrators** likely think in terms of:
+
 - System configuration tasks ("setting up," "connecting," "managing permissions")
 - Error resolution ("why is X not working," "error code [n]")
 - Integrations by system name ("Salesforce," "Active Directory," "SSO")
 
 **Business Users** likely think in terms of:
+
 - Job-to-be-done ("add a user," "run a report," "export data")
 - Features by name as they experience them in the UI (button names, menu labels)
 - "How do I..." questions
@@ -109,6 +120,7 @@ These two mental models may require different navigation entry points or a role-
 Purpose: Understand how users naturally categorize your content
 Participants: 15-20 participants split between IT Admins (8-10) and Business Users (8-10)
 Cards: Select 35 representative article titles, rewritten as user tasks not product terms. Examples:
+
 - "How to add a new user to the system" (not: "User Administration — Module 2")
 - "Connecting to Salesforce" (not: "Integration Services — CRM Connectors")
 - "What to do when users can't log in" (not: "Authentication Troubleshooting — Section 4.3")
@@ -130,42 +142,49 @@ After Phase 1, propose 6-8 top-level categories. Test with 20 new participants s
 Based on typical B2B SaaS user mental models:
 
 **1. Getting Started**
+
 - First-time setup
 - Inviting your team
 - System requirements
 
 **2. Managing Users and Access**
+
 - Adding and removing users
 - User roles and permissions
 - Single sign-on (SSO) setup
 - Password and login help
 
 **3. Connecting Your Other Tools**
+
 - CRM integrations (Salesforce, HubSpot)
 - HR systems
 - Email and calendar connections
 - API and custom integrations
 
 **4. Daily Tasks and How-Tos**
+
 - [Sub-organized by the top 20 user tasks identified from support ticket taxonomy]
 
 **5. Reports and Data**
+
 - Running reports
 - Exporting data
 - Scheduled reporting
 - Data retention and privacy
 
 **6. Account and Billing**
+
 - Subscription management
 - Invoices and payments
 - Account security settings
 
 **7. Troubleshooting**
+
 - Error messages (by code)
 - Common problems and fixes
 - Contact support
 
-*Note: "Module 3" and "Integration Services" do not appear. All top-level labels pass the grandmother test.*
+_Note: "Module 3" and "Integration Services" do not appear. All top-level labels pass the grandmother test._
 
 ---
 
@@ -186,6 +205,7 @@ Success rate target: 75%+ task completion without backtracking. Any task below 6
 **Faceted Classification Recommendation**
 
 For articles with multiple relevant attributes, implement filters overlaid on the taxonomy:
+
 - Role filter: IT Admin / Business User / Manager
 - Product area filter (internal use, not primary nav)
 - Content type: How-to / Troubleshooting / Reference / Video
@@ -195,9 +215,11 @@ This allows users to navigate by task AND by role without duplicating content.
 ---
 
 ## Variations
+
 - **Intranet IA Redesign**: Adapted methodology for internal employee-facing knowledge systems with HR, IT, and policy content
 - **E-Commerce Category Architecture**: Faceted taxonomy design for product catalog navigation with multiple attribute dimensions
 
 ## Related Prompts
+
 - [User Research Analyst](user-research-analyst.md) - Conduct user interviews to uncover mental models informing the IA design
 - [Research Report Writer](research-report-writer.md) - Document IA research findings for stakeholder review

@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Handle cross-platform compatibility including file paths, environment
+date: "2025-01-01"
+description:
+  Handle cross-platform compatibility including file paths, environment
   detection, platform-specific dependencies, and testing across Windows, macOS, and
   Linux. Use when dealing with platform-specific code or OS compatibility.
 layout: skill
 slug: cross-platform-compatibility
 tags:
-- testing
+  - testing
 title: cross-platform-compatibility
 ---
 
@@ -33,32 +34,34 @@ Comprehensive guide to writing code that works seamlessly across Windows, macOS,
 ### 1. **File Path Handling**
 
 #### Node.js Path Module
+
 ```typescript
 // ❌ BAD: Hardcoded paths with platform-specific separators
-const configPath = 'C:\\Users\\user\\config.json';  // Windows only
-const dataPath = '/home/user/data.txt';             // Unix only
+const configPath = "C:\\Users\\user\\config.json"; // Windows only
+const dataPath = "/home/user/data.txt"; // Unix only
 
 // ✅ GOOD: Use path module
-import path from 'path';
-import os from 'os';
+import path from "path";
+import os from "os";
 
 // Platform-independent path construction
-const configPath = path.join(os.homedir(), 'config', 'app.json');
-const dataPath = path.join(process.cwd(), 'data', 'users.txt');
+const configPath = path.join(os.homedir(), "config", "app.json");
+const dataPath = path.join(process.cwd(), "data", "users.txt");
 
 // Resolve relative paths
-const absolutePath = path.resolve('./config/settings.json');
+const absolutePath = path.resolve("./config/settings.json");
 
 // Get path components
-const dirname = path.dirname('/path/to/file.txt');    // '/path/to'
-const basename = path.basename('/path/to/file.txt');  // 'file.txt'
-const extname = path.extname('/path/to/file.txt');    // '.txt'
+const dirname = path.dirname("/path/to/file.txt"); // '/path/to'
+const basename = path.basename("/path/to/file.txt"); // 'file.txt'
+const extname = path.extname("/path/to/file.txt"); // '.txt'
 
 // Normalize paths (handle .. and .)
-const normalized = path.normalize('/path/to/../file.txt');  // '/path/file.txt'
+const normalized = path.normalize("/path/to/../file.txt"); // '/path/file.txt'
 ```
 
 #### Python Path Handling
+
 ```python
 # ❌ BAD: Hardcoded separators
 config_path = 'C:\\Users\\user\\config.json'  # Windows only
@@ -90,6 +93,7 @@ output_dir.mkdir(parents=True, exist_ok=True)
 ```
 
 #### Go Path Handling
+
 ```go
 package main
 
@@ -122,22 +126,27 @@ func main() {
 ### 2. **Platform Detection**
 
 #### Node.js Platform Detection
+
 ```typescript
 // platform-utils.ts
-import os from 'os';
+import os from "os";
 
 export const Platform = {
-  isWindows: process.platform === 'win32',
-  isMacOS: process.platform === 'darwin',
-  isLinux: process.platform === 'linux',
-  isUnix: process.platform !== 'win32',
+  isWindows: process.platform === "win32",
+  isMacOS: process.platform === "darwin",
+  isLinux: process.platform === "linux",
+  isUnix: process.platform !== "win32",
 
-  get current(): 'windows' | 'macos' | 'linux' | 'unknown' {
+  get current(): "windows" | "macos" | "linux" | "unknown" {
     switch (process.platform) {
-      case 'win32': return 'windows';
-      case 'darwin': return 'macos';
-      case 'linux': return 'linux';
-      default: return 'unknown';
+      case "win32":
+        return "windows";
+      case "darwin":
+        return "macos";
+      case "linux":
+        return "linux";
+      default:
+        return "unknown";
     }
   },
 
@@ -151,28 +160,29 @@ export const Platform = {
 
   get tempDir(): string {
     return os.tmpdir();
-  }
+  },
 };
 
 // Usage
 if (Platform.isWindows) {
   // Windows-specific code
-  console.log('Running on Windows');
+  console.log("Running on Windows");
 } else if (Platform.isMacOS) {
   // macOS-specific code
-  console.log('Running on macOS');
+  console.log("Running on macOS");
 } else if (Platform.isLinux) {
   // Linux-specific code
-  console.log('Running on Linux');
+  console.log("Running on Linux");
 }
 
 // Architecture detection
-if (Platform.arch === 'arm64') {
-  console.log('Running on ARM architecture');
+if (Platform.arch === "arm64") {
+  console.log("Running on ARM architecture");
 }
 ```
 
 #### Python Platform Detection
+
 ```python
 # platform_utils.py
 import platform
@@ -229,12 +239,12 @@ elif Platform.is_linux():
 
 ```typescript
 // line-endings.ts
-import os from 'os';
+import os from "os";
 
 export const LineEnding = {
-  LF: '\n',      // Unix/Linux/macOS
-  CRLF: '\r\n',  // Windows
-  CR: '\r',      // Old Mac (pre-OS X)
+  LF: "\n", // Unix/Linux/macOS
+  CRLF: "\r\n", // Windows
+  CR: "\r", // Old Mac (pre-OS X)
 
   get platform(): string {
     return os.EOL; // Returns platform-specific line ending
@@ -251,11 +261,11 @@ export const LineEnding = {
 
   toWindows(text: string): string {
     return this.normalize(text, this.CRLF);
-  }
+  },
 };
 
 // Usage
-const fileContent = fs.readFileSync('file.txt', 'utf8');
+const fileContent = fs.readFileSync("file.txt", "utf8");
 
 // Normalize to platform-specific line endings
 const normalized = LineEnding.normalize(fileContent);
@@ -264,7 +274,7 @@ const normalized = LineEnding.normalize(fileContent);
 const unixContent = LineEnding.toUnix(fileContent);
 
 // Write with platform-specific line endings
-fs.writeFileSync('output.txt', normalized);
+fs.writeFileSync("output.txt", normalized);
 ```
 
 ### 4. **Environment Variables**
@@ -279,22 +289,22 @@ export class EnvUtils {
 
   // Get PATH separator (: on Unix, ; on Windows)
   static get pathSeparator(): string {
-    return process.platform === 'win32' ? ';' : ':';
+    return process.platform === "win32" ? ";" : ":";
   }
 
   // Split PATH into array
   static getPaths(): string[] {
-    const pathVar = process.env.PATH || '';
+    const pathVar = process.env.PATH || "";
     return pathVar.split(this.pathSeparator);
   }
 
   // Get common paths
   static get home(): string {
-    return process.env.HOME || process.env.USERPROFILE || '';
+    return process.env.HOME || process.env.USERPROFILE || "";
   }
 
   static get user(): string {
-    return process.env.USER || process.env.USERNAME || '';
+    return process.env.USER || process.env.USERNAME || "";
   }
 
   // Check if running in CI
@@ -313,8 +323,8 @@ export class EnvUtils {
 
 ```typescript
 // shell-utils.ts
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { exec } from "child_process";
+import { promisify } from "util";
 
 const execAsync = promisify(exec);
 
@@ -323,7 +333,7 @@ export class ShellUtils {
   static async execute(command: string): Promise<string> {
     try {
       const { stdout, stderr } = await execAsync(command, {
-        shell: this.getShell()
+        shell: this.getShell(),
       });
       if (stderr) console.error(stderr);
       return stdout.trim();
@@ -334,32 +344,32 @@ export class ShellUtils {
 
   // Get platform-specific shell
   static getShell(): string {
-    if (process.platform === 'win32') {
-      return 'cmd.exe';
+    if (process.platform === "win32") {
+      return "cmd.exe";
     }
-    return process.env.SHELL || '/bin/sh';
+    return process.env.SHELL || "/bin/sh";
   }
 
   // Platform-specific commands
   static async listFiles(directory: string): Promise<string> {
-    if (process.platform === 'win32') {
+    if (process.platform === "win32") {
       return this.execute(`dir "${directory}"`);
     }
     return this.execute(`ls -la "${directory}"`);
   }
 
   static async clearScreen(): Promise<void> {
-    if (process.platform === 'win32') {
-      await this.execute('cls');
+    if (process.platform === "win32") {
+      await this.execute("cls");
     } else {
-      await this.execute('clear');
+      await this.execute("clear");
     }
   }
 
   static async openFile(filepath: string): Promise<void> {
-    if (process.platform === 'win32') {
+    if (process.platform === "win32") {
       await this.execute(`start "" "${filepath}"`);
-    } else if (process.platform === 'darwin') {
+    } else if (process.platform === "darwin") {
       await this.execute(`open "${filepath}"`);
     } else {
       await this.execute(`xdg-open "${filepath}"`);
@@ -372,23 +382,23 @@ export class ShellUtils {
 
 ```typescript
 // permissions.ts
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 export class FilePermissions {
   // Make file executable (Unix only)
   static makeExecutable(filepath: string): void {
-    if (process.platform !== 'win32') {
+    if (process.platform !== "win32") {
       fs.chmodSync(filepath, 0o755);
     }
   }
 
   // Check if file is executable
   static isExecutable(filepath: string): boolean {
-    if (process.platform === 'win32') {
+    if (process.platform === "win32") {
       // On Windows, check file extension
       const ext = path.extname(filepath).toLowerCase();
-      return ['.exe', '.bat', '.cmd', '.com'].includes(ext);
+      return [".exe", ".bat", ".cmd", ".com"].includes(ext);
     }
 
     try {
@@ -403,7 +413,7 @@ export class FilePermissions {
   static createWithPermissions(
     filepath: string,
     content: string,
-    mode: number = 0o644
+    mode: number = 0o644,
   ): void {
     fs.writeFileSync(filepath, content, { mode });
   }
@@ -414,45 +424,42 @@ export class FilePermissions {
 
 ```typescript
 // process-utils.ts
-import { spawn, ChildProcess } from 'child_process';
+import { spawn, ChildProcess } from "child_process";
 
 export class ProcessUtils {
   // Kill process by PID with platform-specific signal
   static kill(pid: number, signal?: string): void {
-    if (process.platform === 'win32') {
+    if (process.platform === "win32") {
       // Windows doesn't support signals, use taskkill
-      spawn('taskkill', ['/pid', pid.toString(), '/f', '/t']);
+      spawn("taskkill", ["/pid", pid.toString(), "/f", "/t"]);
     } else {
-      process.kill(pid, signal || 'SIGTERM');
+      process.kill(pid, signal || "SIGTERM");
     }
   }
 
   // Spawn process with platform-specific handling
-  static spawnCommand(
-    command: string,
-    args: string[] = []
-  ): ChildProcess {
-    if (process.platform === 'win32') {
+  static spawnCommand(command: string, args: string[] = []): ChildProcess {
+    if (process.platform === "win32") {
       // Windows requires cmd.exe to run commands
-      return spawn('cmd', ['/c', command, ...args], {
-        stdio: 'inherit',
-        shell: true
+      return spawn("cmd", ["/c", command, ...args], {
+        stdio: "inherit",
+        shell: true,
       });
     }
 
     return spawn(command, args, {
-      stdio: 'inherit',
-      shell: true
+      stdio: "inherit",
+      shell: true,
     });
   }
 
   // Find process by name
   static async findProcess(name: string): Promise<number[]> {
-    if (process.platform === 'win32') {
+    if (process.platform === "win32") {
       const { stdout } = await execAsync(`tasklist /FI "IMAGENAME eq ${name}"`);
       // Parse Windows tasklist output
       const pids: number[] = [];
-      const lines = stdout.split('\n');
+      const lines = stdout.split("\n");
       for (const line of lines) {
         const match = line.match(/\s+(\d+)\s+/);
         if (match) pids.push(parseInt(match[1]));
@@ -460,7 +467,7 @@ export class ProcessUtils {
       return pids;
     } else {
       const { stdout } = await execAsync(`pgrep ${name}`);
-      return stdout.split('\n').filter(Boolean).map(Number);
+      return stdout.split("\n").filter(Boolean).map(Number);
     }
   }
 }
@@ -487,12 +494,12 @@ export class ProcessUtils {
 ```typescript
 // platform-specific-module.ts
 export async function loadPlatformModule() {
-  if (process.platform === 'win32') {
-    return await import('./windows/module');
-  } else if (process.platform === 'darwin') {
-    return await import('./macos/module');
+  if (process.platform === "win32") {
+    return await import("./windows/module");
+  } else if (process.platform === "darwin") {
+    return await import("./macos/module");
   } else {
-    return await import('./linux/module');
+    return await import("./linux/module");
   }
 }
 
@@ -500,22 +507,23 @@ export async function loadPlatformModule() {
 export function useFSEvents() {
   try {
     // fsevents is macOS only
-    if (process.platform === 'darwin') {
-      const fsevents = require('fsevents');
+    if (process.platform === "darwin") {
+      const fsevents = require("fsevents");
       return fsevents;
     }
   } catch (error) {
-    console.warn('fsevents not available, using fallback');
+    console.warn("fsevents not available, using fallback");
   }
 
   // Fallback to chokidar or fs.watch
-  return require('chokidar');
+  return require("chokidar");
 }
 ```
 
 ### 9. **Testing Across Platforms**
 
 #### GitHub Actions Matrix
+
 ```yaml
 # .github/workflows/test.yml
 name: Cross-Platform Tests
@@ -559,14 +567,15 @@ jobs:
 ```
 
 #### Platform-Specific Tests
+
 ```typescript
 // tests/platform.test.ts
-import { Platform } from '../src/platform-utils';
+import { Platform } from "../src/platform-utils";
 
-describe('Platform-specific tests', () => {
-  describe('File paths', () => {
-    it('should handle paths correctly', () => {
-      const configPath = path.join(os.homedir(), 'config.json');
+describe("Platform-specific tests", () => {
+  describe("File paths", () => {
+    it("should handle paths correctly", () => {
+      const configPath = path.join(os.homedir(), "config.json");
 
       if (Platform.isWindows) {
         expect(configPath).toMatch(/^[A-Z]:\\/);
@@ -576,22 +585,22 @@ describe('Platform-specific tests', () => {
     });
   });
 
-  describe.skipIf(Platform.isWindows)('Unix-only tests', () => {
-    it('should work with symlinks', () => {
+  describe.skipIf(Platform.isWindows)("Unix-only tests", () => {
+    it("should work with symlinks", () => {
       // Symlink tests
     });
 
-    it('should handle file permissions', () => {
+    it("should handle file permissions", () => {
       // Permission tests
     });
   });
 
-  describe.skipIf(!Platform.isWindows)('Windows-only tests', () => {
-    it('should work with UNC paths', () => {
+  describe.skipIf(!Platform.isWindows)("Windows-only tests", () => {
+    it("should work with UNC paths", () => {
       // UNC path tests
     });
 
-    it('should handle drive letters', () => {
+    it("should handle drive letters", () => {
       // Drive letter tests
     });
   });
@@ -602,19 +611,19 @@ describe('Platform-specific tests', () => {
 
 ```typescript
 // encoding-utils.ts
-import iconv from 'iconv-lite';
+import iconv from "iconv-lite";
 
 export class EncodingUtils {
   // Read file with specific encoding
-  static readFile(filepath: string, encoding: string = 'utf8'): string {
+  static readFile(filepath: string, encoding: string = "utf8"): string {
     const buffer = fs.readFileSync(filepath);
 
-    if (encoding === 'utf8') {
+    if (encoding === "utf8") {
       // Remove BOM if present
-      if (buffer[0] === 0xEF && buffer[1] === 0xBB && buffer[2] === 0xBF) {
-        return buffer.slice(3).toString('utf8');
+      if (buffer[0] === 0xef && buffer[1] === 0xbb && buffer[2] === 0xbf) {
+        return buffer.slice(3).toString("utf8");
       }
-      return buffer.toString('utf8');
+      return buffer.toString("utf8");
     }
 
     return iconv.decode(buffer, encoding);
@@ -624,10 +633,10 @@ export class EncodingUtils {
   static writeFile(
     filepath: string,
     content: string,
-    encoding: string = 'utf8'
+    encoding: string = "utf8",
   ): void {
-    if (encoding === 'utf8') {
-      fs.writeFileSync(filepath, content, 'utf8');
+    if (encoding === "utf8") {
+      fs.writeFileSync(filepath, content, "utf8");
     } else {
       const buffer = iconv.encode(content, encoding);
       fs.writeFileSync(filepath, buffer);
@@ -639,18 +648,18 @@ export class EncodingUtils {
     const buffer = fs.readFileSync(filepath);
 
     // Check for BOM
-    if (buffer[0] === 0xEF && buffer[1] === 0xBB && buffer[2] === 0xBF) {
-      return 'utf8';
+    if (buffer[0] === 0xef && buffer[1] === 0xbb && buffer[2] === 0xbf) {
+      return "utf8";
     }
-    if (buffer[0] === 0xFE && buffer[1] === 0xFF) {
-      return 'utf16be';
+    if (buffer[0] === 0xfe && buffer[1] === 0xff) {
+      return "utf16be";
     }
-    if (buffer[0] === 0xFF && buffer[1] === 0xFE) {
-      return 'utf16le';
+    if (buffer[0] === 0xff && buffer[1] === 0xfe) {
+      return "utf16le";
     }
 
     // Default to UTF-8
-    return 'utf8';
+    return "utf8";
   }
 }
 ```
@@ -660,34 +669,35 @@ export class EncodingUtils {
 ```typescript
 // rollup.config.js
 export default {
-  input: 'src/index.ts',
+  input: "src/index.ts",
   output: [
     {
-      file: 'dist/index.js',
-      format: 'cjs'
+      file: "dist/index.js",
+      format: "cjs",
     },
     {
-      file: 'dist/index.esm.js',
-      format: 'esm'
-    }
+      file: "dist/index.esm.js",
+      format: "esm",
+    },
   ],
   external: [
     // Mark platform-specific modules as external
-    'fsevents'
+    "fsevents",
   ],
   plugins: [
     // Replace platform checks at build time for better tree-shaking
     replace({
-      'process.platform': JSON.stringify(process.platform),
-      preventAssignment: true
-    })
-  ]
+      "process.platform": JSON.stringify(process.platform),
+      preventAssignment: true,
+    }),
+  ],
 };
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use path.join() or path.resolve() for paths
 - Use os.EOL for line endings
 - Detect platform at runtime when needed
@@ -702,6 +712,7 @@ export default {
 - Use CI/CD to test on multiple platforms
 
 ### ❌ DON'T
+
 - Hardcode file paths with backslashes or forward slashes
 - Assume Unix-only features (signals, permissions, symlinks)
 - Ignore Windows-specific quirks (drive letters, UNC paths)
@@ -715,6 +726,7 @@ export default {
 ## Common Patterns
 
 ### Pattern 1: Platform Factory
+
 ```typescript
 export interface PlatformHandler {
   openFile(path: string): Promise<void>;
@@ -726,7 +738,7 @@ class WindowsHandler implements PlatformHandler {
     await exec(`start "" "${path}"`);
   }
   getConfigPath() {
-    return path.join(process.env.APPDATA!, 'myapp', 'config.json');
+    return path.join(process.env.APPDATA!, "myapp", "config.json");
   }
 }
 
@@ -735,27 +747,28 @@ class UnixHandler implements PlatformHandler {
     await exec(`xdg-open "${path}"`);
   }
   getConfigPath() {
-    return path.join(os.homedir(), '.config', 'myapp', 'config.json');
+    return path.join(os.homedir(), ".config", "myapp", "config.json");
   }
 }
 
 export function createPlatformHandler(): PlatformHandler {
-  return process.platform === 'win32'
+  return process.platform === "win32"
     ? new WindowsHandler()
     : new UnixHandler();
 }
 ```
 
 ### Pattern 2: Conditional Imports
+
 ```typescript
 const platformModule = await (async () => {
   switch (process.platform) {
-    case 'win32':
-      return import('./platforms/windows');
-    case 'darwin':
-      return import('./platforms/macos');
+    case "win32":
+      return import("./platforms/windows");
+    case "darwin":
+      return import("./platforms/macos");
     default:
-      return import('./platforms/linux');
+      return import("./platforms/linux");
   }
 })();
 ```

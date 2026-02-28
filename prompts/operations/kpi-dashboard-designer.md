@@ -1,6 +1,7 @@
 # KPI Dashboard Designer
 
 ## Metadata
+
 - **ID**: `operations-kpi-dashboard-designer`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a KPI dashboard designer who selects the right operational metrics, balances leading and lagging indicators, designs dashboard layouts for different audiences, and specifies data sources and refresh cadences. It covers manufacturing, distribution, service operations, and administrative function dashboards.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An operations team has abundant data but lacks a coherent measurement framework — leaders are using different metrics and drawing conflicting conclusions
 - A new operational initiative (lean transformation, quality improvement, logistics overhaul) needs a measurement system designed before launch to track progress
 - A business is standing up a new operational function and needs a starter KPI set with data source mapping and dashboard design guidance
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time monitoring system engineering requiring specific BI tool configuration (Power BI, Tableau, etc.) without knowing the user's tool stack
 - Financial reporting dashboards with accounting-grade controls requiring finance team ownership
 
@@ -65,63 +70,67 @@ Avoid: Dashboards with 20+ KPIs that overwhelm rather than focus, all lagging me
 ## Example Usage
 
 ### Input
+
 "We run a regional distribution center handling 2,500 orders per day across receiving, pick-and-pack, and outbound shipping. We want a dashboard for our ops manager and a separate view for our shift supervisors. Our main goals are: hit 99% order fulfillment accuracy, reduce order cycle time from 6 hours to 4 hours, and cut labor cost per order by 15%."
 
 ### Output
+
 **KPI Dashboard Framework: Regional Distribution Center**
 
 **Goal-Metric Alignment**
 
-| Business Goal | Lagging Indicator (Outcome) | Leading Indicators (Predictive) |
-|---|---|---|
-| 99% order fulfillment accuracy | Order accuracy rate (%) | Pick error rate by zone; Mispick alerts per shift |
-| Reduce cycle time to 4 hours | Order-to-ship cycle time (hours) | Wave release lag time; QC queue depth; Dock wait time |
-| Cut labor cost/order by 15% | Labor cost per order ($) | Orders per labor hour (OPLH); Idle time %; Overtime hours |
+| Business Goal                  | Lagging Indicator (Outcome)      | Leading Indicators (Predictive)                           |
+| ------------------------------ | -------------------------------- | --------------------------------------------------------- |
+| 99% order fulfillment accuracy | Order accuracy rate (%)          | Pick error rate by zone; Mispick alerts per shift         |
+| Reduce cycle time to 4 hours   | Order-to-ship cycle time (hours) | Wave release lag time; QC queue depth; Dock wait time     |
+| Cut labor cost/order by 15%    | Labor cost per order ($)         | Orders per labor hour (OPLH); Idle time %; Overtime hours |
 
 **KPI Definition Registry**
 
-| KPI | Formula | Unit | Source | Owner | Frequency | Green | Yellow | Red |
-|---|---|---|---|---|---|---|---|---|
-| Order Accuracy Rate | (Orders shipped correct / Total orders shipped) × 100 | % | WMS order data | QC Manager | Daily | ≥99% | 97-98.9% | <97% |
-| Pick Error Rate | Pick errors confirmed / Total picks × 1,000 | Errors per 1K picks | WMS pick log | Pick Supervisor | Per shift | <3 | 3-6 | >6 |
-| Order-to-Ship Cycle Time | Ship scan timestamp − Order release timestamp | Hours | WMS + TMS | Ops Manager | Daily avg | ≤4.0 hrs | 4.0-5.0 hrs | >5.0 hrs |
-| QC Queue Depth | Orders awaiting QC at any point in time | # orders | WMS queue | QC Supervisor | Real-time | <30 | 30-60 | >60 |
-| Orders per Labor Hour (OPLH) | Orders shipped / Direct labor hours paid | Orders/hr | WMS + HRIS | Ops Manager | Daily | ≥4.5 | 3.8-4.4 | <3.8 |
-| Labor Cost per Order | Total labor cost (wages + burden) / Orders shipped | $/order | HRIS + WMS | Ops Manager | Weekly | <$4.25 | $4.25-$5.00 | >$5.00 |
-| Dock-to-Stock Time (Receiving) | Last put-away scan − Trailer arrival log | Hours | WMS + dock log | Receiving Supervisor | Daily | ≤2 hrs | 2-3 hrs | >3 hrs |
-| Outbound OTD | Shipments tendered to carrier by cutoff / Total shipments | % | TMS | Outbound Lead | Daily | ≥98% | 95-97.9% | <95% |
-| Overtime Rate | OT hours / Total hours worked | % | HRIS | Ops Manager | Weekly | <5% | 5-10% | >10% |
+| KPI                            | Formula                                                   | Unit                | Source         | Owner                | Frequency | Green    | Yellow      | Red      |
+| ------------------------------ | --------------------------------------------------------- | ------------------- | -------------- | -------------------- | --------- | -------- | ----------- | -------- |
+| Order Accuracy Rate            | (Orders shipped correct / Total orders shipped) × 100     | %                   | WMS order data | QC Manager           | Daily     | ≥99%     | 97-98.9%    | <97%     |
+| Pick Error Rate                | Pick errors confirmed / Total picks × 1,000               | Errors per 1K picks | WMS pick log   | Pick Supervisor      | Per shift | <3       | 3-6         | >6       |
+| Order-to-Ship Cycle Time       | Ship scan timestamp − Order release timestamp             | Hours               | WMS + TMS      | Ops Manager          | Daily avg | ≤4.0 hrs | 4.0-5.0 hrs | >5.0 hrs |
+| QC Queue Depth                 | Orders awaiting QC at any point in time                   | # orders            | WMS queue      | QC Supervisor        | Real-time | <30      | 30-60       | >60      |
+| Orders per Labor Hour (OPLH)   | Orders shipped / Direct labor hours paid                  | Orders/hr           | WMS + HRIS     | Ops Manager          | Daily     | ≥4.5     | 3.8-4.4     | <3.8     |
+| Labor Cost per Order           | Total labor cost (wages + burden) / Orders shipped        | $/order             | HRIS + WMS     | Ops Manager          | Weekly    | <$4.25   | $4.25-$5.00 | >$5.00   |
+| Dock-to-Stock Time (Receiving) | Last put-away scan − Trailer arrival log                  | Hours               | WMS + dock log | Receiving Supervisor | Daily     | ≤2 hrs   | 2-3 hrs     | >3 hrs   |
+| Outbound OTD                   | Shipments tendered to carrier by cutoff / Total shipments | %                   | TMS            | Outbound Lead        | Daily     | ≥98%     | 95-97.9%    | <95%     |
+| Overtime Rate                  | OT hours / Total hours worked                             | %                   | HRIS           | Ops Manager          | Weekly    | <5%      | 5-10%       | >10%     |
 
 **Dashboard Layouts**
 
-*Operations Manager Dashboard (daily review, 10-12 KPIs)*: Top row — 3 large KPI tiles for the three goal metrics (Order Accuracy, Cycle Time, OPLH) with trend sparklines and traffic light status. Middle section — shift comparison bar chart (today vs. 7-day avg) for pick error rate, OPLH, and dock-to-stock time. Bottom section — exception queue: orders at risk of missing cutoff (cycle time >4.5 hrs at current pace), open pick errors by zone, overtime hours tracking vs. weekly budget.
+_Operations Manager Dashboard (daily review, 10-12 KPIs)_: Top row — 3 large KPI tiles for the three goal metrics (Order Accuracy, Cycle Time, OPLH) with trend sparklines and traffic light status. Middle section — shift comparison bar chart (today vs. 7-day avg) for pick error rate, OPLH, and dock-to-stock time. Bottom section — exception queue: orders at risk of missing cutoff (cycle time >4.5 hrs at current pace), open pick errors by zone, overtime hours tracking vs. weekly budget.
 
-*Shift Supervisor Dashboard (real-time, 4-5 KPIs)*: Large digital display format readable from 10 feet. Four tiles: Orders completed this shift / shift target; Current OPLH vs. target; QC queue depth (real-time); Pick errors this shift. Color coding only — no detailed numbers needed at workstation level. Refresh every 5 minutes from WMS.
+_Shift Supervisor Dashboard (real-time, 4-5 KPIs)_: Large digital display format readable from 10 feet. Four tiles: Orders completed this shift / shift target; Current OPLH vs. target; QC queue depth (real-time); Pick errors this shift. Color coding only — no detailed numbers needed at workstation level. Refresh every 5 minutes from WMS.
 
 **Data Source Map**
 
-| KPI | Source System | Extract Method | Refresh |
-|---|---|---|---|
-| Order Accuracy Rate | WMS | Automated daily report | 6:00 AM daily |
-| OPLH | WMS (orders) + HRIS (hours) | Semi-automated; hours require HRIS export | Daily at shift end |
-| Labor Cost/Order | HRIS + Finance system | Weekly manual extract — flag as data quality risk | Weekly |
-| QC Queue Depth | WMS | Real-time API feed | 5-minute refresh |
+| KPI                 | Source System               | Extract Method                                    | Refresh            |
+| ------------------- | --------------------------- | ------------------------------------------------- | ------------------ |
+| Order Accuracy Rate | WMS                         | Automated daily report                            | 6:00 AM daily      |
+| OPLH                | WMS (orders) + HRIS (hours) | Semi-automated; hours require HRIS export         | Daily at shift end |
+| Labor Cost/Order    | HRIS + Finance system       | Weekly manual extract — flag as data quality risk | Weekly             |
+| QC Queue Depth      | WMS                         | Real-time API feed                                | 5-minute refresh   |
 
 **Review Cadence**
 
-| Cadence | Metrics | Participants | Escalation Trigger |
-|---|---|---|---|
-| Daily shift huddle (15 min) | OPLH, pick error rate, QC queue depth, OTD | Shift supervisors + leads | Any RED metric triggers ops manager notification |
-| Weekly ops review (45 min) | Full dashboard + labor cost/order | Ops manager + all supervisors | Labor cost >$5.00/order triggers finance review |
-| Monthly leadership review (60 min) | Trend analysis, goal tracking | DC Director + department heads | Cycle time >4.5 hrs for 2+ consecutive weeks |
+| Cadence                            | Metrics                                    | Participants                   | Escalation Trigger                               |
+| ---------------------------------- | ------------------------------------------ | ------------------------------ | ------------------------------------------------ |
+| Daily shift huddle (15 min)        | OPLH, pick error rate, QC queue depth, OTD | Shift supervisors + leads      | Any RED metric triggers ops manager notification |
+| Weekly ops review (45 min)         | Full dashboard + labor cost/order          | Ops manager + all supervisors  | Labor cost >$5.00/order triggers finance review  |
+| Monthly leadership review (60 min) | Trend analysis, goal tracking              | DC Director + department heads | Cycle time >4.5 hrs for 2+ consecutive weeks     |
 
 ---
 
 ## Variations
+
 - **Executive Scorecard Version**: Condenses to a 5-7 KPI executive view with rolling 12-month trend lines and benchmark comparison
 - **Customer Service Operations Version**: Adapts framework to contact center and service desk metrics (AHT, CSAT, FCR, SLA compliance)
 
 ## Related Prompts
+
 - [Operational Efficiency Analyst](operational-efficiency-analyst.md) - Use efficiency analysis findings to select the right KPIs
 - [Lean Operations Coach](lean-operations-coach.md) - Align dashboard metrics with lean improvement initiative tracking
 - [Production Planning Expert](production-planning-expert.md) - Integrate production schedule adherence metrics into operations dashboards

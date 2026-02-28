@@ -1,6 +1,7 @@
 # Quantum Machine Learning Algorithm Development
 
 ## Metadata
+
 - **ID**: `quantum-ml-algorithm-platform`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing / Machine Learning
@@ -18,6 +19,7 @@ A senior quantum machine learning architect that designs comprehensive QML platf
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building quantum ML research and development platforms
 - Implementing large-scale variational algorithm experiments
 - Creating hybrid classical-quantum ML pipelines for production
@@ -26,6 +28,7 @@ A senior quantum machine learning architect that designs comprehensive QML platf
 - Building MLOps infrastructure for quantum workloads
 
 **Anti-patterns (when NOT to use):**
+
 - Single algorithm implementation (use development-expert instead)
 - Classical ML optimization without quantum component
 - One-off experiments without platform requirements
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **Scope:** Research platform for 100+ researchers across 20 institutions. **Domains:** Variational algorithms, quantum kernels, and QNN experiments with focus on chemistry and optimization applications. **Requirements:** Automated benchmarking, paper-ready results, cloud deployment with access to IBM and Google quantum hardware. **Timeline:** 18 months to production.
 
 ### Output
@@ -140,7 +144,8 @@ Avoid:
 
 A multi-tenant QML research platform supporting collaborative development, systematic experimentation, and rigorous benchmarking across institutions.
 
-*Architecture Principles:*
+_Architecture Principles:_
+
 - Modular: Independent, composable components
 - Reproducible: Complete experiment versioning
 - Scalable: 100+ concurrent experiments
@@ -148,7 +153,8 @@ A multi-tenant QML research platform supporting collaborative development, syste
 
 **Core Algorithm Library**
 
-*Variational Algorithm Suite:*
+_Variational Algorithm Suite:_
+
 ```python
 from abc import ABC, abstractmethod
 
@@ -185,7 +191,8 @@ class VariationalAlgorithmLibrary:
         return cls.algorithms[algorithm_type](config)
 ```
 
-*Quantum Neural Network Framework:*
+_Quantum Neural Network Framework:_
+
 ```python
 class QNNArchitecture:
     """Modular QNN building blocks"""
@@ -220,7 +227,8 @@ class QNNArchitecture:
 
 **Feature Encoding Library**
 
-*Encoding Strategies:*
+_Encoding Strategies:_
+
 ```python
 class EncodingLibrary:
     """Comprehensive quantum feature encoding"""
@@ -254,7 +262,8 @@ class EncodingLibrary:
 
 **Training Infrastructure**
 
-*Multi-Optimizer Engine:*
+_Multi-Optimizer Engine:_
+
 ```python
 class OptimizationEngine:
     """Unified optimization interface"""
@@ -292,7 +301,8 @@ class OptimizationEngine:
         return result, history
 ```
 
-*Distributed Training:*
+_Distributed Training:_
+
 ```python
 class DistributedTrainer:
     """Scale training across multiple backends"""
@@ -398,7 +408,8 @@ class QuantumAdvantageAnalyzer:
 
 **MLOps Pipeline**
 
-*Experiment Tracking:*
+_Experiment Tracking:_
+
 ```python
 class ExperimentTracker:
     """Complete experiment lifecycle management"""
@@ -431,7 +442,8 @@ class ExperimentTracker:
         # Include circuit params, encoding config, training history
 ```
 
-*Reproducibility System:*
+_Reproducibility System:_
+
 ```python
 class ReproducibilityManager:
     """Guarantee experiment reproducibility"""
@@ -460,7 +472,8 @@ class ReproducibilityManager:
 
 **Deployment Architecture**
 
-*Platform Components:*
+_Platform Components:_
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    API Gateway (FastAPI)                     │
@@ -479,12 +492,12 @@ class ReproducibilityManager:
 
 **Success Metrics**
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Concurrent experiments | 100+ | Load testing |
-| Reproducibility rate | 100% | Audit verification |
-| Experiment turnaround | <24 hours | End-to-end timing |
-| Paper-ready results | Automated | LaTeX/figure generation |
+| Metric                 | Target    | Measurement             |
+| ---------------------- | --------- | ----------------------- |
+| Concurrent experiments | 100+      | Load testing            |
+| Reproducibility rate   | 100%      | Audit verification      |
+| Experiment turnaround  | <24 hours | End-to-end timing       |
+| Paper-ready results    | Automated | LaTeX/figure generation |
 
 **Implementation Timeline**
 

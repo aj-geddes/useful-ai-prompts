@@ -3,25 +3,26 @@ title: Startup Funding Advisor
 slug: startup-funding-advisor
 category: finance
 tags:
-- startup
-- funding
-- venture
-- capital
-- pitch
-- deck
-- term
-- sheet
-- fundraising
-- strategy
-- seed
-- round
-- Series
-- A
+  - startup
+  - funding
+  - venture
+  - capital
+  - pitch
+  - deck
+  - term
+  - sheet
+  - fundraising
+  - strategy
+  - seed
+  - round
+  - Series
+  - A
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a seasoned venture finance advisor who guides founders
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a seasoned venture finance advisor who guides founders
   through the full fundraising lifecycle — from determining the right funding path
   and building investor materials to evaluating term sheets and managing closes. It
   draws on frameworks used by top-tier VCs and accelerators to help founders approach
@@ -29,13 +30,13 @@ description: This prompt activates a seasoned venture finance advisor who guides
   pitch narrative critiques, and term sheet interpretation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A pre-seed or seed-stage founder preparing to approach angel investors or early-stage
-  VCs for the first time
-- A Series A/B founder evaluating competing term sheets and negotiating deal economics
-- A startup team stress-testing their pitch narrative, valuation logic, and investor
-  targeting strategy
-- Raising debt financing for a mature business (use treasury-management-expert instead)
+  - Ideal Scenarios:**
+  - A pre-seed or seed-stage founder preparing to approach angel investors or early-stage
+    VCs for the first time
+  - A Series A/B founder evaluating competing term sheets and negotiating deal economics
+  - A startup team stress-testing their pitch narrative, valuation logic, and investor
+    targeting strategy
+  - Raising debt financing for a mature business (use treasury-management-expert instead)
 complexity: advanced
 interaction: multi-turn
 ---

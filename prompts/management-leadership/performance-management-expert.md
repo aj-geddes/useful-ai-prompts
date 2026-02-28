@@ -1,6 +1,7 @@
 # Performance Management Expert
 
 ## Metadata
+
 - **ID**: `leadership-performance-management`
 - **Version**: 1.0.0
 - **Category**: Management & Leadership
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs and implements effective performance management systems that drive employee growth and organizational success. Creates frameworks for goal setting, feedback, evaluation, and development conversations that balance accountability with development.
 
 ## When to Use
+
 - Building or redesigning performance review processes
 - Creating goal-setting frameworks (OKRs, SMART goals)
 - Training managers on effective feedback
@@ -22,6 +25,7 @@ Designs and implements effective performance management systems that drive emplo
 - Modernizing from annual reviews to continuous performance
 
 **Anti-patterns (don't use for)**:
+
 - Individual performance problems (requires direct management)
 - Compensation design (use HR/compensation specialist)
 - HR compliance requirements (consult HR/legal)
@@ -103,13 +107,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "50-person startup, no formal reviews currently. Need lightweight but effective system. Engineers resist bureaucracy. Want to tie to development, not just evaluation."
 
 ### Output
+
 **Performance Management Framework: Startup Performance System**
 
 **1. Framework Design**
 Philosophy: Development-focused, lightweight, continuous
+
 - Primary goal: Growth and alignment, not ranking
 - No ratings: Qualitative assessment, not 1-5 scores (avoids gaming, reduces anxiety)
 - Continuous: Monthly touchpoints, not annual surprise
@@ -126,18 +133,21 @@ Key principle: Separate development conversations from compensation. Quarterly g
 
 **2. Goal Setting**
 Methodology: Lightweight OKRs
+
 - Company sets 3-5 objectives quarterly
 - Teams identify 2-3 key results that contribute
 - Individuals have 2-3 personal key results aligned to team goals
 - One personal development goal always included
 
 Goal quality checklist:
+
 - Outcomes, not activities ("Reduce churn to <5%" not "Call customers")
 - Measurable or clearly assessable
 - Ambitious but achievable (70% hit rate is healthy)
 - Revised when reality changes (not set in stone)
 
 Example for engineer:
+
 - Objective: Improve platform reliability
 - KR1: Reduce P1 incidents by 50%
 - KR2: Achieve 99.5% uptime
@@ -146,6 +156,7 @@ Example for engineer:
 
 **3. Manager Toolkit**
 Weekly 1:1 template (30 min):
+
 - What's going well? (5 min)
 - What's challenging? (10 min)
 - How can I help? (5 min)
@@ -153,11 +164,13 @@ Weekly 1:1 template (30 min):
 - Anything else? (5 min)
 
 Monthly goal check-in addition:
+
 - How are your key results tracking?
 - What's blocking progress?
 - Do we need to adjust anything?
 
 Quarterly growth conversation guide (60 min):
+
 - Reflection: "What are you proudest of this quarter? What would you do differently?"
 - Strengths: "Here's what I see as your superpowers..."
 - Growth areas: "One thing that would make you even more effective..."
@@ -165,6 +178,7 @@ Quarterly growth conversation guide (60 min):
 - Plan: "What's one development focus for next quarter?"
 
 Difficult feedback framework (SBI):
+
 - Situation: "In yesterday's meeting..."
 - Behavior: "When you interrupted Alex multiple times..."
 - Impact: "It made them disengage and we lost their input."
@@ -172,6 +186,7 @@ Difficult feedback framework (SBI):
 
 **4. Development Planning**
 Individual Development Plan (IDP) - Keep simple:
+
 - 1 strength to leverage (how will you use your superpower more?)
 - 1 growth area to develop (what's the biggest unlock for you?)
 - 2-3 specific actions (not vague "get better at X")
@@ -179,6 +194,7 @@ Individual Development Plan (IDP) - Keep simple:
 - Review: Revisit quarterly, adjust as needed
 
 Development opportunities to offer:
+
 - Stretch projects and assignments
 - Pairing with senior team members
 - Conference attendance and learning budget
@@ -187,21 +203,25 @@ Development opportunities to offer:
 
 **5. Metrics**
 Process health:
+
 - 1:1 completion rate (target: 90%+)
 - Quarterly conversation completion (target: 100%)
 - Goal setting completion (target: 100% within 2 weeks of quarter start)
 
 Effectiveness indicators:
+
 - Employee satisfaction with manager feedback (pulse survey)
 - Goal clarity rating (do people know what success looks like?)
 - Development progress self-report (are people growing?)
 
 What to avoid measuring:
+
 - Don't track 1:1 duration or content (kills trust)
 - Don't rank employees against each other
 - Don't use performance "scores" that create anxiety
 
 Continuous improvement:
+
 - Quarterly manager roundtable: What's working, what's not?
 - Annual employee survey on performance process
 - Iterate the process based on feedback
@@ -209,6 +229,7 @@ Continuous improvement:
 ---
 
 ## Related Prompts
+
 - [Team Building Expert](team-building-expert.md)
 - [Talent Management Expert](talent-management-expert.md)
 - [Team Motivation Expert](team-motivation-expert.md)

@@ -3,33 +3,34 @@ title: Smart Contract Security Audit Expert
 slug: smart-contract-security-audit-expert
 category: blockchain
 tags:
-- smart
-- contract
-- security
-- blockchain
-- audit
-- vulnerability
-- detection
-- code
-- review
-- DeFi
-- security
-- Solidity
+  - smart
+  - contract
+  - security
+  - blockchain
+  - audit
+  - vulnerability
+  - detection
+  - code
+  - review
+  - DeFi
+  - security
+  - Solidity
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-08-16'
-description: Conducts comprehensive smart contract security assessments combining
+  - Claude 3+
+  - GPT-4+
+date: "2025-08-16"
+description:
+  Conducts comprehensive smart contract security assessments combining
   vulnerability analysis, code review, and security architecture design. Identifies
   critical vulnerabilities including reentrancy, oracle manipulation, and flash loan
   attacks while providing remediation guidance and deployment checklists.
 layout: prompt
 use_cases:
-- Auditing smart contracts before mainnet deployment
-- Reviewing DeFi protocols handling significant TVL
-- Assessing contracts for oracle manipulation vulnerabilities
-- Evaluating token contracts, DAOs, or bridge implementations
-- Preparing for formal third-party security audits
+  - Auditing smart contracts before mainnet deployment
+  - Reviewing DeFi protocols handling significant TVL
+  - Assessing contracts for oracle manipulation vulnerabilities
+  - Evaluating token contracts, DAOs, or bridge implementations
+  - Preparing for formal third-party security audits
 complexity: advanced
 interaction: multi-turn
 ---
@@ -44,17 +45,19 @@ Smart contract security is critical because deployed contracts are immutable and
 
 <input_handling>
 Required:
+
 - Blockchain platform and language (Ethereum/Solidity, etc.)
 - Contract type (token, DeFi, NFT, DAO, bridge)
 - Contract purpose and main functionality
 - Value at risk (expected TVL or transaction volume)
 
 Optional (with defaults):
+
 - Code availability (default: review checklist without code)
 - External integrations (default: none specified)
 - Prior audits (default: first review)
 - Deployment timeline (default: 4-6 weeks)
-</input_handling>
+  </input_handling>
 
 <task>
 Perform comprehensive smart contract security audit.
@@ -65,28 +68,31 @@ Perform comprehensive smart contract security audit.
 4. Assess external integration security (oracles, DEXs)
 5. Develop testing strategy with security-focused test cases
 6. Create deployment checklist and monitoring recommendations
-</task>
+   </task>
 
 <output_specification>
 **Smart Contract Security Audit Report**
+
 - Format: Structured audit with severity-rated findings
 - Length: 1200-2000 words
 - Must include: Vulnerability analysis, code review checklist, best practices, testing strategy, deployment checklist, emergency response plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Vulnerabilities rated by severity with exploitation scenarios
 - Code examples show secure vs. insecure patterns
 - Testing recommendations include specific attack simulations
 - Deployment checklist is actionable and comprehensive
 
 Avoid:
+
 - Generic security advice without contract-specific analysis
 - Missing economic attack vectors (flash loans, MEV)
 - Overlooking governance and upgrade risks
 - Incomplete oracle security assessment
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Reference specific Solidity version considerations

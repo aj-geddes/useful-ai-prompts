@@ -1,6 +1,7 @@
 # Energy Efficiency Expert
 
 ## Metadata
+
 - **ID**: `optimization-energy-efficiency`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Identifies and implements energy efficiency improvements to reduce costs and env
 ## When to Use
 
 **Ideal Scenarios:**
+
 - High energy costs impacting profitability
 - Sustainability commitments requiring energy reduction
 - Aging facilities or equipment needing optimization
@@ -26,6 +28,7 @@ Identifies and implements energy efficiency improvements to reduce costs and env
 - ESG reporting requirements
 
 **Anti-patterns (Don't Use For):**
+
 - Renewable energy project development (solar, wind installations)
 - Utility contract negotiation
 - Environmental compliance and reporting
@@ -135,6 +138,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "50,000 sq ft office building in Chicago. $200K annual energy spend split roughly 70% gas/30% electric. 15-year-old HVAC system with original controls. Want to reduce costs by 30% and meet corporate sustainability goals. Available budget: $500K for improvements."
 
 ### Output
@@ -144,23 +148,27 @@ Avoid:
 **1. Energy Assessment**
 
 **Current consumption breakdown (estimated):**
+
 - HVAC (heating/cooling): $120K (60%) - typical for aging system in Chicago climate
 - Lighting: $40K (20%) - likely older fluorescent fixtures
 - Plug loads/equipment: $30K (15%)
 - Other (elevators, misc): $10K (5%)
 
 **Benchmark comparison:**
+
 - Current EUI: ~$4.00/sq ft annually
 - ENERGY STAR benchmark for Chicago offices: $2.50-3.00/sq ft
 - Gap: 30-40% above benchmark (consistent with 30% reduction target)
 
 **Key inefficiency indicators:**
+
 - 15-year-old HVAC operating at 70-80% of rated efficiency
 - Original controls lack scheduling and optimization capability
 - Likely T8 fluorescent or older lighting technology
 - No building automation system integration
 
 **Seasonal patterns (Chicago climate):**
+
 - Winter heating (Dec-Feb): Highest gas consumption
 - Summer cooling (Jun-Aug): Highest electric consumption
 - Shoulder seasons: Best optimization opportunity
@@ -169,39 +177,40 @@ Avoid:
 
 **No-Cost/Low-Cost (Immediate) - $20K annual savings:**
 
-| Improvement | Annual Savings | Cost | Payback |
-|-------------|----------------|------|---------|
-| HVAC scheduling optimization | $10K | $2K | 2 months |
-| Thermostat setback (nights/weekends) | $6K | $0 | Immediate |
-| Lighting schedule audit | $4K | $500 | 1.5 months |
+| Improvement                          | Annual Savings | Cost | Payback    |
+| ------------------------------------ | -------------- | ---- | ---------- |
+| HVAC scheduling optimization         | $10K           | $2K  | 2 months   |
+| Thermostat setback (nights/weekends) | $6K            | $0   | Immediate  |
+| Lighting schedule audit              | $4K            | $500 | 1.5 months |
 
 **Medium Investment - $38K annual savings, $150K cost:**
 
-| Improvement | Annual Savings | Cost | Payback |
-|-------------|----------------|------|---------|
-| LED retrofit (all lighting) | $20K | $75K | 3.75 years |
-| Occupancy sensors | $6K | $25K | 4 years |
-| VFDs on HVAC fans | $12K | $50K | 4 years |
+| Improvement                 | Annual Savings | Cost | Payback    |
+| --------------------------- | -------------- | ---- | ---------- |
+| LED retrofit (all lighting) | $20K           | $75K | 3.75 years |
+| Occupancy sensors           | $6K            | $25K | 4 years    |
+| VFDs on HVAC fans           | $12K           | $50K | 4 years    |
 
 **Major Investment - $34K annual savings, $300K cost:**
 
-| Improvement | Annual Savings | Cost | Payback |
-|-------------|----------------|------|---------|
-| HVAC system upgrade | $24K | $250K | 10.4 years |
-| Building automation system | $10K | $50K | 5 years |
+| Improvement                | Annual Savings | Cost  | Payback    |
+| -------------------------- | -------------- | ----- | ---------- |
+| HVAC system upgrade        | $24K           | $250K | 10.4 years |
+| Building automation system | $10K           | $50K  | 5 years    |
 
 **3. Financial Analysis**
 
 **Project Summary:**
 
-| Category | Investment | Annual Savings | Simple Payback |
-|----------|------------|----------------|----------------|
-| No-cost/Low-cost | $2.5K | $20K | 1.5 months |
-| Medium investment | $150K | $38K | 4.0 years |
-| Major investment | $300K | $34K | 8.8 years |
-| **Total** | **$452.5K** | **$92K** | **4.9 years** |
+| Category          | Investment  | Annual Savings | Simple Payback |
+| ----------------- | ----------- | -------------- | -------------- |
+| No-cost/Low-cost  | $2.5K       | $20K           | 1.5 months     |
+| Medium investment | $150K       | $38K           | 4.0 years      |
+| Major investment  | $300K       | $34K           | 8.8 years      |
+| **Total**         | **$452.5K** | **$92K**       | **4.9 years**  |
 
 **Incentive Opportunities (Chicago/ComEd/Peoples Gas):**
+
 - ComEd LED rebates: $15K (estimated at $0.08/kWh saved)
 - Peoples Gas HVAC incentives: $25K (high-efficiency equipment)
 - VFD rebates: $8K
@@ -209,6 +218,7 @@ Avoid:
 - **Total potential incentives: $60K**
 
 **Adjusted financials with incentives:**
+
 - Net investment: $392.5K (within $500K budget)
 - Adjusted payback: 4.3 years
 - 10-year net savings: $527.5K
@@ -217,12 +227,14 @@ Avoid:
 **4. Implementation Roadmap**
 
 **Phase 1: Quick Wins (Month 1-2)**
+
 - HVAC scheduling optimization and setback programming
 - Lighting schedule audit and adjustment
 - Thermostat setting adjustments
 - **Savings begin: $20K/year immediately**
 
 **Phase 2: Lighting and Controls (Month 3-6)**
+
 - LED retrofit (coordinate by floor/zone to minimize disruption)
 - Occupancy sensor installation in conference rooms, restrooms, common areas
 - VFD installation on air handling units
@@ -230,6 +242,7 @@ Avoid:
 - **Additional savings: $38K/year**
 
 **Phase 3: Major Systems (Month 7-12)**
+
 - HVAC equipment replacement (schedule during mild weather - spring/fall)
 - Building automation system upgrade
 - Commission all systems together
@@ -237,6 +250,7 @@ Avoid:
 - **Additional savings: $34K/year**
 
 **Year 2 and Beyond:**
+
 - Fine-tune systems based on performance data
 - Ongoing behavioral programs
 - Annual retro-commissioning
@@ -245,6 +259,7 @@ Avoid:
 **5. Monitoring Framework**
 
 **Key Metrics:**
+
 - Energy Use Intensity (kBtu/sq ft/year)
 - Cost per square foot ($/sq ft)
 - Peak demand (kW)
@@ -252,23 +267,27 @@ Avoid:
 - HVAC efficiency metrics (COP, kW/ton)
 
 **Measurement and Verification:**
+
 - Install submetering on major systems (HVAC, lighting, plug loads)
 - Monthly utility bill analysis with weather normalization
 - Quarterly energy review meetings with facilities team
 - Annual benchmarking comparison (ENERGY STAR Portfolio Manager)
 
 **Continuous Improvement:**
+
 - Retro-commissioning every 3 years
 - Equipment maintenance optimization
 - Employee awareness and engagement program
 - Annual technology upgrade evaluation
 
 **Target Achievement Timeline:**
+
 - Year 1: 25% reduction achieved ($50K savings)
 - Year 2: 40% reduction achieved ($80K savings, exceeding 30% target)
 - Cost per sq ft: $4.00 to $2.40 (40% reduction)
 
 **Sustainability Impact:**
+
 - Estimated CO2 reduction: 200-250 metric tons annually
 - Equivalent to removing 45-55 cars from the road
 - Supports corporate ESG reporting and sustainability goals

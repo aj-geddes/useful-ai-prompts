@@ -1,14 +1,15 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Create optimized Docker containers with multi-stage builds, security
+date: "2025-01-01"
+description:
+  Create optimized Docker containers with multi-stage builds, security
   best practices, and minimal image sizes. Use when containerizing applications, creating
   Dockerfiles, optimizing container images, or setting up Docker Compose services.
 layout: skill
 slug: docker-containerization
 tags:
-- docker
-- security
+  - docker
+  - security
 title: docker-containerization
 ---
 
@@ -60,6 +61,7 @@ CMD ["node", "dist/index.js"]
 ### 2. **Optimization Techniques**
 
 #### Layer Caching
+
 ```dockerfile
 # ❌ Poor caching - changes in source code invalidate dependency install
 FROM python:3.11-slim
@@ -76,6 +78,7 @@ COPY . .
 ```
 
 #### Minimize Image Size
+
 ```dockerfile
 # ❌ Large image (~800MB)
 FROM ubuntu:latest
@@ -125,7 +128,7 @@ LABEL maintainer="team@example.com" \
 
 ```yaml
 # docker-compose.yml
-version: '3.8'
+version: "3.8"
 
 services:
   app:
@@ -206,6 +209,7 @@ __pycache__
 ## Best Practices
 
 ### ✅ DO
+
 - Use official base images
 - Implement multi-stage builds
 - Run as non-root user
@@ -217,6 +221,7 @@ __pycache__
 - Use build caching effectively
 
 ### ❌ DON'T
+
 - Use 'latest' tag in production
 - Run as root user
 - Include secrets in images
@@ -228,6 +233,7 @@ __pycache__
 ## Examples by Language
 
 ### Python (Django/Flask)
+
 ```dockerfile
 FROM python:3.11-slim
 WORKDIR /app
@@ -240,6 +246,7 @@ CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
 ```
 
 ### Java (Spring Boot)
+
 ```dockerfile
 FROM eclipse-temurin:17-jdk-alpine AS build
 WORKDIR /app
@@ -256,6 +263,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
 ### Go
+
 ```dockerfile
 FROM golang:1.21-alpine AS builder
 WORKDIR /app
@@ -302,12 +310,14 @@ docker system prune -a
 ## Troubleshooting
 
 **Container exits immediately:**
+
 ```bash
 docker logs container-name
 docker inspect container-name
 ```
 
 **Build fails:**
+
 ```bash
 docker build --progress=plain -t myapp .
 ```
@@ -316,6 +326,7 @@ docker build --progress=plain -t myapp .
 Ensure proper user setup and volume permissions.
 
 **Large image size:**
+
 - Use alpine base images
 - Implement multi-stage builds
 - Remove unnecessary files

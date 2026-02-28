@@ -25,37 +25,39 @@ Comprehensive guide to implementing internationalization and localization in app
 ### 1. **i18next (JavaScript/TypeScript)**
 
 #### Basic Setup
+
 ```typescript
 // i18n.ts
-import i18next from 'i18next';
-import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18next from "i18next";
+import Backend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 await i18next
   .use(Backend)
   .use(LanguageDetector)
   .init({
-    fallbackLng: 'en',
-    debug: process.env.NODE_ENV === 'development',
+    fallbackLng: "en",
+    debug: process.env.NODE_ENV === "development",
 
     interpolation: {
-      escapeValue: false // React already escapes
+      escapeValue: false, // React already escapes
     },
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json'
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
 
     detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'navigator'],
-      caches: ['localStorage', 'cookie']
-    }
+      order: ["querystring", "cookie", "localStorage", "navigator"],
+      caches: ["localStorage", "cookie"],
+    },
   });
 
 export default i18next;
 ```
 
 #### Translation Files
+
 ```json
 // locales/en/translation.json
 {
@@ -108,6 +110,7 @@ export default i18next;
 ```
 
 #### React Integration
+
 ```typescript
 // App.tsx
 import { useTranslation } from 'react-i18next';
@@ -153,36 +156,37 @@ export function UserProfile() {
 ```
 
 #### Node.js/Express Backend
+
 ```typescript
 // i18n-middleware.ts
-import i18next from 'i18next';
-import Backend from 'i18next-fs-backend';
-import middleware from 'i18next-http-middleware';
+import i18next from "i18next";
+import Backend from "i18next-fs-backend";
+import middleware from "i18next-http-middleware";
 
 i18next
   .use(Backend)
   .use(middleware.LanguageDetector)
   .init({
-    fallbackLng: 'en',
-    preload: ['en', 'es', 'fr'],
+    fallbackLng: "en",
+    preload: ["en", "es", "fr"],
     backend: {
-      loadPath: './locales/{{lng}}/{{ns}}.json'
-    }
+      loadPath: "./locales/{{lng}}/{{ns}}.json",
+    },
   });
 
 export const i18nMiddleware = middleware.handle(i18next);
 
 // app.ts
-import express from 'express';
-import { i18nMiddleware } from './i18n-middleware';
+import express from "express";
+import { i18nMiddleware } from "./i18n-middleware";
 
 const app = express();
 app.use(i18nMiddleware);
 
-app.get('/api/welcome', (req, res) => {
+app.get("/api/welcome", (req, res) => {
   res.json({
-    message: req.t('welcome'),
-    greeting: req.t('greeting', { name: 'User' })
+    message: req.t("welcome"),
+    greeting: req.t("greeting", { name: "User" }),
   });
 });
 ```
@@ -318,6 +322,7 @@ print(i18n.tn("You have {n} item", "You have {n} items", 5))
 ### 4. **Date and Time Formatting**
 
 #### JavaScript (Intl API)
+
 ```typescript
 // date-formatter.ts
 export class DateFormatter {
@@ -331,58 +336,59 @@ export class DateFormatter {
   // Predefined formats
   short(date: Date): string {
     return this.formatDate(date, {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
+      year: "numeric",
+      month: "short",
+      day: "numeric",
     });
   }
 
   long(date: Date): string {
     return this.formatDate(date, {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      weekday: 'long'
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      weekday: "long",
     });
   }
 
   time(date: Date): string {
     return this.formatDate(date, {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
     });
   }
 
   relative(date: Date): string {
-    const rtf = new Intl.RelativeTimeFormat(this.locale, { numeric: 'auto' });
+    const rtf = new Intl.RelativeTimeFormat(this.locale, { numeric: "auto" });
     const diff = date.getTime() - Date.now();
     const days = Math.round(diff / (1000 * 60 * 60 * 24));
 
     if (Math.abs(days) < 1) {
       const hours = Math.round(diff / (1000 * 60 * 60));
-      return rtf.format(hours, 'hour');
+      return rtf.format(hours, "hour");
     }
 
-    return rtf.format(days, 'day');
+    return rtf.format(days, "day");
   }
 }
 
 // Usage
-const enFormatter = new DateFormatter('en-US');
-const esFormatter = new DateFormatter('es-ES');
-const jaFormatter = new DateFormatter('ja-JP');
+const enFormatter = new DateFormatter("en-US");
+const esFormatter = new DateFormatter("es-ES");
+const jaFormatter = new DateFormatter("ja-JP");
 
-const date = new Date('2024-01-15');
+const date = new Date("2024-01-15");
 
-console.log(enFormatter.short(date));  // Jan 15, 2024
-console.log(esFormatter.short(date));  // 15 ene 2024
-console.log(jaFormatter.short(date));  // 2024年1月15日
+console.log(enFormatter.short(date)); // Jan 15, 2024
+console.log(esFormatter.short(date)); // 15 ene 2024
+console.log(jaFormatter.short(date)); // 2024年1月15日
 
-console.log(enFormatter.relative(new Date(Date.now() - 86400000)));  // yesterday
+console.log(enFormatter.relative(new Date(Date.now() - 86400000))); // yesterday
 ```
 
 #### React-Intl Date Formatting
+
 ```typescript
 import { FormattedDate, FormattedTime, FormattedRelativeTime } from 'react-intl';
 
@@ -428,17 +434,17 @@ export class NumberFormatter {
   // Currency
   currency(value: number, currency: string): string {
     return this.formatNumber(value, {
-      style: 'currency',
-      currency
+      style: "currency",
+      currency,
     });
   }
 
   // Percentage
   percent(value: number): string {
     return this.formatNumber(value, {
-      style: 'percent',
+      style: "percent",
       minimumFractionDigits: 0,
-      maximumFractionDigits: 2
+      maximumFractionDigits: 2,
     });
   }
 
@@ -446,30 +452,30 @@ export class NumberFormatter {
   decimal(value: number, decimals: number = 2): string {
     return this.formatNumber(value, {
       minimumFractionDigits: decimals,
-      maximumFractionDigits: decimals
+      maximumFractionDigits: decimals,
     });
   }
 
   // Compact notation (1.2K, 1.5M)
   compact(value: number): string {
     return this.formatNumber(value, {
-      notation: 'compact',
-      compactDisplay: 'short'
+      notation: "compact",
+      compactDisplay: "short",
     });
   }
 }
 
 // Usage
-const enFormatter = new NumberFormatter('en-US');
-const deFormatter = new NumberFormatter('de-DE');
-const jaFormatter = new NumberFormatter('ja-JP');
+const enFormatter = new NumberFormatter("en-US");
+const deFormatter = new NumberFormatter("de-DE");
+const jaFormatter = new NumberFormatter("ja-JP");
 
-console.log(enFormatter.currency(1234.56, 'USD'));  // $1,234.56
-console.log(deFormatter.currency(1234.56, 'EUR'));  // 1.234,56 €
-console.log(jaFormatter.currency(1234.56, 'JPY'));  // ¥1,235
+console.log(enFormatter.currency(1234.56, "USD")); // $1,234.56
+console.log(deFormatter.currency(1234.56, "EUR")); // 1.234,56 €
+console.log(jaFormatter.currency(1234.56, "JPY")); // ¥1,235
 
-console.log(enFormatter.percent(0.1234));  // 12.34%
-console.log(enFormatter.compact(1234567));  // 1.2M
+console.log(enFormatter.percent(0.1234)); // 12.34%
+console.log(enFormatter.compact(1234567)); // 1.2M
 ```
 
 ### 6. **Pluralization Rules**
@@ -493,45 +499,50 @@ export class PluralRules {
 }
 
 // Usage
-const enRules = new PluralRules('en');
+const enRules = new PluralRules("en");
 
-console.log(enRules.format(0, {
-  zero: 'No items',
-  one: 'One item',
-  other: '{{count}} items'
-}));
+console.log(
+  enRules.format(0, {
+    zero: "No items",
+    one: "One item",
+    other: "{{count}} items",
+  }),
+);
 
-console.log(enRules.format(1, {
-  one: 'One item',
-  other: '{{count}} items'
-}));
+console.log(
+  enRules.format(1, {
+    one: "One item",
+    other: "{{count}} items",
+  }),
+);
 
 // Different languages have different plural rules
-const arRules = new PluralRules('ar'); // Arabic has 6 plural forms
-const plRules = new PluralRules('pl'); // Polish has complex plural rules
+const arRules = new PluralRules("ar"); // Arabic has 6 plural forms
+const plRules = new PluralRules("pl"); // Polish has complex plural rules
 ```
 
 #### ICU Message Format
+
 ```typescript
 // Using intl-messageformat
-import IntlMessageFormat from 'intl-messageformat';
+import IntlMessageFormat from "intl-messageformat";
 
 const message = new IntlMessageFormat(
-  '{count, plural, =0 {No items} one {# item} other {# items}}',
-  'en'
+  "{count, plural, =0 {No items} one {# item} other {# items}}",
+  "en",
 );
 
-console.log(message.format({ count: 0 }));  // No items
-console.log(message.format({ count: 1 }));  // 1 item
-console.log(message.format({ count: 5 }));  // 5 items
+console.log(message.format({ count: 0 })); // No items
+console.log(message.format({ count: 1 })); // 1 item
+console.log(message.format({ count: 5 })); // 5 items
 
 // With gender
 const genderMessage = new IntlMessageFormat(
-  '{gender, select, male {He} female {She} other {They}} bought {count, plural, one {# item} other {# items}}',
-  'en'
+  "{gender, select, male {He} female {She} other {They}} bought {count, plural, one {# item} other {# items}}",
+  "en",
 );
 
-console.log(genderMessage.format({ gender: 'female', count: 2 }));
+console.log(genderMessage.format({ gender: "female", count: 2 }));
 // She bought 2 items
 ```
 
@@ -539,15 +550,15 @@ console.log(genderMessage.format({ gender: 'female', count: 2 }));
 
 ```typescript
 // rtl-utils.ts
-const RTL_LANGUAGES = ['ar', 'he', 'fa', 'ur'];
+const RTL_LANGUAGES = ["ar", "he", "fa", "ur"];
 
 export function isRTL(locale: string): boolean {
-  const lang = locale.split('-')[0];
+  const lang = locale.split("-")[0];
   return RTL_LANGUAGES.includes(lang);
 }
 
-export function getDirection(locale: string): 'ltr' | 'rtl' {
-  return isRTL(locale) ? 'rtl' : 'ltr';
+export function getDirection(locale: string): "ltr" | "rtl" {
+  return isRTL(locale) ? "rtl" : "ltr";
 }
 ```
 
@@ -611,10 +622,11 @@ export function App() {
 ### 8. **Translation Management**
 
 #### Message Extraction
+
 ```typescript
 // extract-messages.ts
-import { sync as globSync } from 'glob';
-import fs from 'fs';
+import { sync as globSync } from "glob";
+import fs from "fs";
 
 const TRANSLATION_PATTERN = /t\(['"]([^'"]+)['"]\)/g;
 
@@ -623,7 +635,7 @@ export function extractMessages(pattern: string): Set<string> {
   const files = globSync(pattern);
 
   for (const file of files) {
-    const content = fs.readFileSync(file, 'utf8');
+    const content = fs.readFileSync(file, "utf8");
     let match;
 
     while ((match = TRANSLATION_PATTERN.exec(content)) !== null) {
@@ -646,21 +658,22 @@ export function generateTemplate(messages: Set<string>): object {
 }
 
 // Usage
-const messages = extractMessages('src/**/*.{ts,tsx}');
+const messages = extractMessages("src/**/*.{ts,tsx}");
 const template = generateTemplate(messages);
 
 fs.writeFileSync(
-  'locales/en/translation.json',
-  JSON.stringify(template, null, 2)
+  "locales/en/translation.json",
+  JSON.stringify(template, null, 2),
 );
 ```
 
 #### Translation Status
+
 ```typescript
 // check-translations.ts
 export function checkTranslationStatus(
   baseLocale: object,
-  targetLocale: object
+  targetLocale: object,
 ): {
   missing: string[];
   extra: string[];
@@ -669,8 +682,8 @@ export function checkTranslationStatus(
   const baseKeys = new Set(Object.keys(baseLocale));
   const targetKeys = new Set(Object.keys(targetLocale));
 
-  const missing = [...baseKeys].filter(key => !targetKeys.has(key));
-  const extra = [...targetKeys].filter(key => !baseKeys.has(key));
+  const missing = [...baseKeys].filter((key) => !targetKeys.has(key));
+  const extra = [...targetKeys].filter((key) => !baseKeys.has(key));
 
   const coverage = (targetKeys.size / baseKeys.size) * 100;
 
@@ -678,12 +691,12 @@ export function checkTranslationStatus(
 }
 
 // Usage
-const enMessages = require('./locales/en/translation.json');
-const esMessages = require('./locales/es/translation.json');
+const enMessages = require("./locales/en/translation.json");
+const esMessages = require("./locales/es/translation.json");
 
 const status = checkTranslationStatus(enMessages, esMessages);
 console.log(`Spanish translation coverage: ${status.coverage.toFixed(2)}%`);
-console.log(`Missing keys: ${status.missing.join(', ')}`);
+console.log(`Missing keys: ${status.missing.join(", ")}`);
 ```
 
 ### 9. **Locale Detection**
@@ -693,28 +706,28 @@ console.log(`Missing keys: ${status.missing.join(', ')}`);
 export class LocaleDetector {
   // Detect from browser
   static fromBrowser(): string {
-    return navigator.language || navigator.languages[0] || 'en';
+    return navigator.language || navigator.languages[0] || "en";
   }
 
   // Detect from URL
   static fromURL(): string | null {
     const params = new URLSearchParams(window.location.search);
-    return params.get('lang') || params.get('locale');
+    return params.get("lang") || params.get("locale");
   }
 
   // Detect from cookie
-  static fromCookie(name: string = 'locale'): string | null {
+  static fromCookie(name: string = "locale"): string | null {
     const match = document.cookie.match(new RegExp(`${name}=([^;]+)`));
     return match ? match[1] : null;
   }
 
   // Detect from localStorage
-  static fromStorage(key: string = 'locale'): string | null {
+  static fromStorage(key: string = "locale"): string | null {
     return localStorage.getItem(key);
   }
 
   // Detect with priority
-  static detect(defaultLocale: string = 'en'): string {
+  static detect(defaultLocale: string = "en"): string {
     return (
       this.fromURL() ||
       this.fromStorage() ||
@@ -726,7 +739,7 @@ export class LocaleDetector {
 
   // Save locale
   static save(locale: string): void {
-    localStorage.setItem('locale', locale);
+    localStorage.setItem("locale", locale);
     document.cookie = `locale=${locale}; path=/; max-age=31536000`;
   }
 }
@@ -772,6 +785,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 ## Best Practices
 
 ### ✅ DO
+
 - Extract all user-facing strings to translation files
 - Use ICU message format for complex messages
 - Support pluralization correctly for each language
@@ -787,6 +801,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 - Use translation memory tools
 
 ### ❌ DON'T
+
 - Hardcode user-facing strings in code
 - Concatenate translated strings
 - Assume English grammar rules apply to all languages
@@ -802,6 +817,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 ## Common Patterns
 
 ### Pattern 1: Translation Hook
+
 ```typescript
 export function useLocale() {
   const { i18n } = useTranslation();
@@ -811,14 +827,16 @@ export function useLocale() {
     changeLocale: (lng: string) => i18n.changeLanguage(lng),
     t: i18n.t,
     formatDate: (date: Date) => new DateFormatter(i18n.language).short(date),
-    formatNumber: (num: number) => new NumberFormatter(i18n.language).formatNumber(num),
+    formatNumber: (num: number) =>
+      new NumberFormatter(i18n.language).formatNumber(num),
     formatCurrency: (amount: number, currency: string) =>
-      new NumberFormatter(i18n.language).currency(amount, currency)
+      new NumberFormatter(i18n.language).currency(amount, currency),
   };
 }
 ```
 
 ### Pattern 2: Language Switcher Component
+
 ```typescript
 export function LanguageSwitcher() {
   const { locale, changeLocale } = useLocale();

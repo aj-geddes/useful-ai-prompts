@@ -1,6 +1,7 @@
 # Performance Tuning Expert
 
 ## Metadata
+
 - **ID**: `optimization-performance-tuning`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically identifies and resolves performance bottlenecks in systems, appli
 ## When to Use
 
 **Ideal Scenarios:**
+
 - System performance degrading over time
 - Not meeting performance SLAs or user experience targets
 - Preparing for increased load or scale
@@ -26,6 +28,7 @@ Systematically identifies and resolves performance bottlenecks in systems, appli
 - API response time improvements
 
 **Anti-patterns (Don't Use For):**
+
 - Functional debugging or logic errors
 - Architecture redesign or migration planning
 - Capacity planning and infrastructure sizing
@@ -137,6 +140,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "E-commerce website takes 8 seconds to load on average, target is 2 seconds. Losing approximately 20% of visitors due to slow performance. Running on AWS with standard cloud infrastructure. We have Google Analytics and basic server monitoring."
 
 ### Output
@@ -146,12 +150,14 @@ Avoid:
 **1. Performance Assessment**
 
 **Current baseline:**
+
 - Page load time: 8 seconds average (target: 2 seconds)
 - Time to First Byte (TTFB): Estimated 2-3 seconds (indicates server issues)
 - Largest Contentful Paint (LCP): Estimated 6-7 seconds
 - Business impact: 20% visitor drop-off (significant revenue loss)
 
 **Performance budget for 2-second target:**
+
 - TTFB: <600ms
 - First Contentful Paint: <1.5s
 - Largest Contentful Paint: <2.0s
@@ -160,6 +166,7 @@ Avoid:
 **Gap to close:** 6 seconds reduction (75% improvement needed)
 
 **Diagnostic approach:**
+
 - Run WebPageTest for waterfall analysis
 - Check Core Web Vitals in Search Console
 - Review server-side APM data
@@ -170,23 +177,27 @@ Avoid:
 **Bottleneck identification by category:**
 
 **Server-side issues (TTFB problems):**
+
 - Unoptimized database queries (likely N+1 queries, missing indexes)
 - No page or query caching
 - Slow server processing (inefficient code paths)
 - Container/function cold starts
 
 **Network issues (transfer time):**
+
 - No CDN for static assets (all served from origin)
 - Uncompressed responses (no gzip/brotli)
 - Too many HTTP requests (unoptimized asset loading)
 
 **Client-side issues (rendering time):**
+
 - Large, unoptimized images (no WebP, no lazy loading)
 - Render-blocking CSS and JavaScript
 - Large JavaScript bundles slowing TTI
 - No resource hints (preconnect, prefetch)
 
 **Priority ranking by impact:**
+
 1. CDN + compression (biggest quick win, affects all requests)
 2. Image optimization (typically largest payload)
 3. Caching (server-side response time)
@@ -197,50 +208,54 @@ Avoid:
 
 **Week 1: Quick Wins - Target 8s to 5s**
 
-| Optimization | Expected Impact | Effort | Risk |
-|--------------|-----------------|--------|------|
-| Enable Gzip/Brotli compression | -1.5s (60-80% payload reduction) | 1 hour | Low |
-| Implement CDN (CloudFront) | -1.0s for global users | 4 hours | Low |
-| Optimize images (WebP, sizing) | -1.0s | 1 day | Low |
+| Optimization                   | Expected Impact                  | Effort  | Risk |
+| ------------------------------ | -------------------------------- | ------- | ---- |
+| Enable Gzip/Brotli compression | -1.5s (60-80% payload reduction) | 1 hour  | Low  |
+| Implement CDN (CloudFront)     | -1.0s for global users           | 4 hours | Low  |
+| Optimize images (WebP, sizing) | -1.0s                            | 1 day   | Low  |
 
 **Week 2-3: Core Optimizations - Target 5s to 3s**
 
-| Optimization | Expected Impact | Effort | Risk |
-|--------------|-----------------|--------|------|
-| Implement page caching | -1.0s TTFB improvement | 2 days | Medium |
-| Lazy load images below fold | -0.5s LCP improvement | 1 day | Low |
-| Defer non-critical JavaScript | -0.5s render blocking | 1 day | Medium |
+| Optimization                  | Expected Impact        | Effort | Risk   |
+| ----------------------------- | ---------------------- | ------ | ------ |
+| Implement page caching        | -1.0s TTFB improvement | 2 days | Medium |
+| Lazy load images below fold   | -0.5s LCP improvement  | 1 day  | Low    |
+| Defer non-critical JavaScript | -0.5s render blocking  | 1 day  | Medium |
 
 **Week 4: Advanced Optimizations - Target 3s to 2s**
 
-| Optimization | Expected Impact | Effort | Risk |
-|--------------|-----------------|--------|------|
-| Database query optimization | -0.3s backend | 3 days | Medium |
-| Critical CSS inlining | -0.3s FCP improvement | 2 days | Low |
-| Resource hints (preconnect) | -0.2s connection overhead | 2 hours | Low |
-| JavaScript bundle splitting | -0.2s TTI improvement | 2 days | Medium |
+| Optimization                | Expected Impact           | Effort  | Risk   |
+| --------------------------- | ------------------------- | ------- | ------ |
+| Database query optimization | -0.3s backend             | 3 days  | Medium |
+| Critical CSS inlining       | -0.3s FCP improvement     | 2 days  | Low    |
+| Resource hints (preconnect) | -0.2s connection overhead | 2 hours | Low    |
+| JavaScript bundle splitting | -0.2s TTI improvement     | 2 days  | Medium |
 
 **4. Implementation and Monitoring**
 
 **Testing Protocol:**
+
 - Before each change: 3 baseline measurements (WebPageTest from 3 locations)
 - After each change: 3 measurements from same locations
 - Compare: Validate improvement or roll back
 - Document: Log all changes and results
 
 **Validation Criteria:**
+
 - Lighthouse performance score target: 90+
 - Core Web Vitals all in "Good" range
 - No increase in error rate
 - No functional regressions
 
 **Rollback Procedures:**
+
 - CDN: Revert DNS to origin
 - Caching: Disable cache layer or clear cache
 - Code changes: Deploy previous version
 - Always have rollback tested before deploying
 
 **A/B Testing:**
+
 - For major changes, test on 10% of traffic first
 - Monitor conversion rate alongside speed
 - Full rollout only after validation
@@ -248,22 +263,26 @@ Avoid:
 **Monitoring Framework:**
 
 **Real-time metrics:**
+
 - Synthetic monitoring (Pingdom, WebPageTest API) - hourly checks
 - Real User Monitoring (RUM) via Google Analytics or similar
 - Server APM for backend performance
 
 **Alerting thresholds:**
+
 - Page load time >3s: Warning
 - Page load time >5s: Critical
 - TTFB >1s: Warning
 - Error rate increase >1%: Critical
 
 **Weekly Review:**
+
 - Core Web Vitals dashboard review
 - Performance by page type and geography
 - Correlation with business metrics (bounce rate, conversion)
 
 **Expected Outcome:**
+
 - Page load: 8s to <2s (75% improvement achieved)
 - Visitor retention: Recover 15-20% of previously lost visitors
 - Conversion impact: 2-5% improvement typical for speed gains

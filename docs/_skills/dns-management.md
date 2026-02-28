@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Manage DNS records, routing policies, and failover configurations for
+date: "2025-01-01"
+description:
+  Manage DNS records, routing policies, and failover configurations for
   high availability and disaster recovery.
 layout: skill
 slug: dns-management
 tags:
-- development
+  - development
 title: dns-management
 ---
 
@@ -354,7 +355,7 @@ metadata:
   name: dns-health-check
   namespace: operations
 spec:
-  schedule: "*/5 * * * *"  # Every 5 minutes
+  schedule: "*/5 * * * *" # Every 5 minutes
   jobTemplate:
     spec:
       template:
@@ -386,6 +387,7 @@ spec:
 ## Best Practices
 
 ### ✅ DO
+
 - Use health checks with failover
 - Set appropriate TTL values
 - Implement geolocation routing
@@ -396,6 +398,7 @@ spec:
 - Use DNS DNSSEC
 
 ### ❌ DON'T
+
 - Use TTL of 0
 - Point to single endpoint
 - Forget health checks

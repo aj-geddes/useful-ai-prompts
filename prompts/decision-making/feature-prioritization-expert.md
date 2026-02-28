@@ -1,6 +1,7 @@
 # Feature Prioritization Expert
 
 ## Metadata
+
 - **ID**: `decision-feature-prioritization`
 - **Version**: 2.1.0
 - **Category**: Decision-Making/Product
@@ -18,6 +19,7 @@ Help product teams prioritize features effectively by evaluating value, effort, 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Quarterly or annual roadmap planning
 - Prioritizing a backlog of feature requests
 - Making trade-off decisions between customer requests and technical needs
@@ -25,6 +27,7 @@ Help product teams prioritize features effectively by evaluating value, effort, 
 - Justifying prioritization decisions to stakeholders
 
 **Anti-patterns (when NOT to use):**
+
 - Technical architecture decisions
 - Bug triage and severity assessment
 - Sprint-level task ordering (too granular)
@@ -99,6 +102,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a B2B SaaS with 20 features requested. Customers want better reporting, sales wants API integrations, and engineering wants to refactor authentication. We have a 6-person dev team and need to plan Q1."
 
 ### Output
@@ -123,14 +127,16 @@ Avoid:
 | 5 | Mobile Optimization | 6 | 5 | 7 | 4 | L | 5.55 |
 
 **Q1 Roadmap**
+
 - **Sprint 1-2**: Export Improvements (quick win) + Auth Refactor start
 - **Sprint 3-4**: Auth Refactor complete + API Integrations start
 - **Sprint 5-6**: API Integrations complete + Dashboard Reporting start
 
 **Trade-off Decisions**
-- *Mobile Optimization*: Deferred to Q2 - high effort, lower immediate impact
-- *Advanced Analytics*: Requires data infrastructure first - plan for Q3
-- *White-labeling*: Low volume request - monitor demand
+
+- _Mobile Optimization_: Deferred to Q2 - high effort, lower immediate impact
+- _Advanced Analytics_: Requires data infrastructure first - plan for Q3
+- _White-labeling_: Low volume request - monitor demand
 
 **Capacity Allocation**: 70% new features, 20% tech debt, 10% bugs/support.
 

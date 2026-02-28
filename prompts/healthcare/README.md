@@ -9,4 +9,4 @@ Advanced healthcare management and pharmaceutical research frameworks for medica
 
 ---
 
-*Professional healthcare prompts for medical administrators, pharmaceutical researchers, and healthcare operations managers.*
+_Professional healthcare prompts for medical administrators, pharmaceutical researchers, and healthcare operations managers._

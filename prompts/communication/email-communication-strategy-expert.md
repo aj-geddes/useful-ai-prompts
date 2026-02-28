@@ -1,6 +1,7 @@
 # Email Communication Strategy Expert
 
 ## Metadata
+
 - **ID**: `communication-email-strategy`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Creates effective email communication strategies including crafting individual high-impact emails, inbox management systems, and team-wide email best practices. Helps professionals improve response rates, reduce email overwhelm, and communicate with clarity and influence through written channels.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Crafting important emails that need to drive action or decisions
 - Managing inbox overload and improving email efficiency
 - Establishing team email standards and practices
@@ -24,6 +27,7 @@ Creates effective email communication strategies including crafting individual h
 - Communicating sensitive or complex topics via email
 
 **Anti-Patterns (When NOT to Use):**
+
 - Marketing email campaigns and automation
 - Newsletter creation and distribution
 - CRM automation and sequences
@@ -107,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to update our CEO on a project delay without causing panic. It's a technical issue but I need to use business language. We have a 3-week delay on a major product launch. I have a solid mitigation plan. The CEO prefers brief updates and tends to skim long emails."
 
 ### Output
@@ -114,6 +119,7 @@ Avoid:
 ## EMAIL STRUCTURE
 
 ### Subject Line Options
+
 1. "Q2 Launch: 3-Week Adjustment + Mitigation Plan" (recommended)
 2. "Project Update: Revised Timeline with Strong Mitigation"
 3. "Quick Update: Launch Timeline Adjustment"
@@ -130,16 +136,19 @@ Hi [CEO Name],
 During integration testing, we discovered [brief technical issue in business terms]. Launching without addressing this would risk [customer-facing impact].
 
 **Our response:**
+
 - Issue isolated and fix in progress
 - Additional testing to prevent recurrence
 - Marketing/Sales notified and adjusting plans
 
 **Impact:**
+
 - 3-week delay to launch date
 - No additional budget needed
 - Customer commitments can be met with adjusted timeline
 
 **Next steps:**
+
 1. Fix deployed by [Date]
 2. Final testing [Date range]
 3. Launch [New Date]
@@ -153,17 +162,20 @@ I'll provide a brief update Friday. Happy to discuss if you have questions.
 ## EMAIL BEST PRACTICES APPLIED
 
 ### Structure Principles
+
 - **Lead with the conclusion:** CEO sees headline in first line
 - **Bullet the details:** Easy to scan, no wall of text
 - **End with action:** Clear next steps and offer
 
 ### Tone Calibration
+
 - Confident, not defensive
 - Factual, not over-explaining
 - Proactive, not apologetic
 - Solution-focused, not problem-dwelling
 
 ### Length Optimization
+
 - Under 150 words body text
 - No unnecessary context
 - Details available if asked
@@ -171,10 +183,13 @@ I'll provide a brief update Friday. Happy to discuss if you have questions.
 ## FOLLOW-UP STRATEGY
 
 ### If no response in 24 hours:
+
 Don't follow up - this is an FYI update
 
 ### If questions come back:
+
 Have ready:
+
 - Technical details (for CTO conversation)
 - Customer impact analysis
 - Detailed timeline with milestones
@@ -185,6 +200,7 @@ Have ready:
 **Subject:** Launch Update: On Track for [New Date]
 
 Quick update as promised:
+
 - [Milestone 1]: Complete
 - [Milestone 2]: On schedule for [Date]
 - No new issues identified
@@ -196,6 +212,7 @@ We're on track. Full team meeting Monday to finalize launch readiness.
 ## TEMPLATES FOR COMMON SCENARIOS
 
 ### Delay Announcement (Stakeholder)
+
 **Subject:** [Project] Timeline Update: [New Date]
 
 Hi [Name],
@@ -213,6 +230,7 @@ Quick update on [Project] timing:
 I'm available to discuss. Would [Day/Time] work for a quick call?
 
 ### Decision Request
+
 **Subject:** Decision Needed: [Topic] by [Date]
 
 Hi [Name],
@@ -222,6 +240,7 @@ I need your decision on [specific matter] by [Date].
 **The question:** [Clear, specific question]
 
 **Options:**
+
 1. [Option A]: [One-line impact]
 2. [Option B]: [One-line impact]
 
@@ -230,6 +249,7 @@ I need your decision on [specific matter] by [Date].
 Can you confirm your preference by [Date]?
 
 ### Follow-Up (No Response)
+
 **Subject:** Re: [Original Subject] - Quick Follow-Up
 
 Hi [Name],
@@ -243,6 +263,7 @@ Could you let me know by [Date]? Happy to work around your schedule.
 ---
 
 ## Related Prompts
+
 - [Executive Briefing Expert](executive-briefing-expert.md) - Executive-level communications
 - [Status Reporting Expert](status-reporting-expert.md) - Regular status updates
 - [Stakeholder Communication Expert](stakeholder-communication-expert.md) - Multi-stakeholder communication

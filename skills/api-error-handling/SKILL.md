@@ -52,19 +52,19 @@ Build robust error handling systems with standardized error responses, detailed 
 ### 2. **Node.js Error Handling**
 
 ```javascript
-const express = require('express');
+const express = require("express");
 const app = express();
 
 // Error codes and mappings
 const ERROR_CODES = {
-  VALIDATION_ERROR: { status: 422, message: 'Validation failed' },
-  NOT_FOUND: { status: 404, message: 'Resource not found' },
-  UNAUTHORIZED: { status: 401, message: 'Authentication required' },
-  FORBIDDEN: { status: 403, message: 'Access denied' },
-  CONFLICT: { status: 409, message: 'Resource conflict' },
-  RATE_LIMITED: { status: 429, message: 'Too many requests' },
-  INTERNAL_ERROR: { status: 500, message: 'Internal server error' },
-  SERVICE_UNAVAILABLE: { status: 503, message: 'Service unavailable' }
+  VALIDATION_ERROR: { status: 422, message: "Validation failed" },
+  NOT_FOUND: { status: 404, message: "Resource not found" },
+  UNAUTHORIZED: { status: 401, message: "Authentication required" },
+  FORBIDDEN: { status: 403, message: "Access denied" },
+  CONFLICT: { status: 409, message: "Resource conflict" },
+  RATE_LIMITED: { status: 429, message: "Too many requests" },
+  INTERNAL_ERROR: { status: 500, message: "Internal server error" },
+  SERVICE_UNAVAILABLE: { status: 503, message: "Service unavailable" },
 };
 
 // Custom error class
@@ -90,36 +90,53 @@ app.use((err, req, res, next) => {
     method: req.method,
     path: req.path,
     query: req.query,
-    userId: req.user?.id
+    userId: req.user?.id,
   });
 
   // Handle different error types
   if (err instanceof ApiError) {
-    return res.status(err.statusCode).json(formatErrorResponse(err, requestId, traceId));
+    return res
+      .status(err.statusCode)
+      .json(formatErrorResponse(err, requestId, traceId));
   }
 
-  if (err instanceof SyntaxError && 'body' in err) {
-    const apiError = new ApiError('VALIDATION_ERROR', 'Invalid JSON', 400);
-    return res.status(400).json(formatErrorResponse(apiError, requestId, traceId));
+  if (err instanceof SyntaxError && "body" in err) {
+    const apiError = new ApiError("VALIDATION_ERROR", "Invalid JSON", 400);
+    return res
+      .status(400)
+      .json(formatErrorResponse(apiError, requestId, traceId));
   }
 
-  if (err.name === 'ValidationError') {
-    const details = Object.keys(err.errors).map(field => ({
+  if (err.name === "ValidationError") {
+    const details = Object.keys(err.errors).map((field) => ({
       field,
       message: err.errors[field].message,
-      code: 'VALIDATION_FAILED'
+      code: "VALIDATION_FAILED",
     }));
-    const apiError = new ApiError('VALIDATION_ERROR', 'Validation failed', 422, details);
-    return res.status(422).json(formatErrorResponse(apiError, requestId, traceId));
+    const apiError = new ApiError(
+      "VALIDATION_ERROR",
+      "Validation failed",
+      422,
+      details,
+    );
+    return res
+      .status(422)
+      .json(formatErrorResponse(apiError, requestId, traceId));
   }
 
-  if (err.name === 'CastError') {
-    const apiError = new ApiError('NOT_FOUND', 'Invalid resource ID', 404);
-    return res.status(404).json(formatErrorResponse(apiError, requestId, traceId));
+  if (err.name === "CastError") {
+    const apiError = new ApiError("NOT_FOUND", "Invalid resource ID", 404);
+    return res
+      .status(404)
+      .json(formatErrorResponse(apiError, requestId, traceId));
   }
 
   // Unknown error
-  const internalError = new ApiError('INTERNAL_ERROR', 'An unexpected error occurred', 500);
+  const internalError = new ApiError(
+    "INTERNAL_ERROR",
+    "An unexpected error occurred",
+    500,
+  );
   res.status(500).json(formatErrorResponse(internalError, requestId, traceId));
 });
 
@@ -133,8 +150,8 @@ function formatErrorResponse(error, requestId, traceId) {
       requestId,
       timestamp: error.timestamp,
       ...(error.details && { details: error.details }),
-      traceId
-    }
+      traceId,
+    },
   };
 }
 
@@ -146,42 +163,45 @@ function logError(error, context) {
     errorMessage: error.message,
     statusCode: error.statusCode,
     stack: error.stack,
-    context
+    context,
   };
 
   // Log to different levels based on severity
   if (error.statusCode >= 500) {
-    console.error('[ERROR]', JSON.stringify(logData));
+    console.error("[ERROR]", JSON.stringify(logData));
     // Send to error tracking service (Sentry, etc)
     trackError(logData);
   } else if (error.statusCode >= 400) {
-    console.warn('[WARN]', JSON.stringify(logData));
+    console.warn("[WARN]", JSON.stringify(logData));
   }
 }
 
 // Route with error handling
-app.post('/api/users', async (req, res, next) => {
+app.post("/api/users", async (req, res, next) => {
   try {
     const { email, firstName, lastName } = req.body;
 
     // Validation
     if (!email || !firstName || !lastName) {
       throw new ApiError(
-        'VALIDATION_ERROR',
-        'Missing required fields',
+        "VALIDATION_ERROR",
+        "Missing required fields",
         422,
         [
-          !email && { field: 'email', message: 'Email is required' },
-          !firstName && { field: 'firstName', message: 'First name is required' },
-          !lastName && { field: 'lastName', message: 'Last name is required' }
-        ].filter(Boolean)
+          !email && { field: "email", message: "Email is required" },
+          !firstName && {
+            field: "firstName",
+            message: "First name is required",
+          },
+          !lastName && { field: "lastName", message: "Last name is required" },
+        ].filter(Boolean),
       );
     }
 
     // Check for conflicts
     const existing = await User.findOne({ email });
     if (existing) {
-      throw new ApiError('CONFLICT', 'Email already exists', 409);
+      throw new ApiError("CONFLICT", "Email already exists", 409);
     }
 
     const user = await User.create({ email, firstName, lastName });
@@ -196,20 +216,23 @@ const asyncHandler = (fn) => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
 };
 
-app.get('/api/users/:id', asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id);
+app.get(
+  "/api/users/:id",
+  asyncHandler(async (req, res) => {
+    const user = await User.findById(req.params.id);
 
-  if (!user) {
-    throw new ApiError('NOT_FOUND', 'User not found', 404);
-  }
+    if (!user) {
+      throw new ApiError("NOT_FOUND", "User not found", 404);
+    }
 
-  res.json({ data: user });
-}));
+    res.json({ data: user });
+  }),
+);
 
 // Handle unhandled rejections
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection:', reason);
-  trackError({ type: 'unhandledRejection', reason });
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled Rejection:", reason);
+  trackError({ type: "unhandledRejection", reason });
 });
 ```
 
@@ -343,16 +366,20 @@ class CircuitBreaker {
     this.failureCount = 0;
     this.failureThreshold = failureThreshold;
     this.timeout = timeout;
-    this.state = 'CLOSED'; // CLOSED, OPEN, HALF_OPEN
+    this.state = "CLOSED"; // CLOSED, OPEN, HALF_OPEN
     this.nextAttempt = Date.now();
   }
 
   async execute(fn) {
-    if (this.state === 'OPEN') {
+    if (this.state === "OPEN") {
       if (Date.now() < this.nextAttempt) {
-        throw new ApiError('SERVICE_UNAVAILABLE', 'Circuit breaker is open', 503);
+        throw new ApiError(
+          "SERVICE_UNAVAILABLE",
+          "Circuit breaker is open",
+          503,
+        );
       }
-      this.state = 'HALF_OPEN';
+      this.state = "HALF_OPEN";
     }
 
     try {
@@ -367,13 +394,13 @@ class CircuitBreaker {
 
   onSuccess() {
     this.failureCount = 0;
-    this.state = 'CLOSED';
+    this.state = "CLOSED";
   }
 
   onFailure() {
     this.failureCount++;
     if (this.failureCount >= this.failureThreshold) {
-      this.state = 'OPEN';
+      this.state = "OPEN";
       this.nextAttempt = Date.now() + this.timeout;
     }
   }
@@ -388,7 +415,7 @@ async function retryWithBackoff(fn, maxRetries = 3) {
       if (attempt === maxRetries - 1) throw error;
 
       const delay = Math.pow(2, attempt) * 1000;
-      await new Promise(resolve => setTimeout(resolve, delay));
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
 }
@@ -398,7 +425,7 @@ async function retryWithBackoff(fn, maxRetries = 3) {
 
 ```javascript
 // Sentry integration
-const Sentry = require('@sentry/node');
+const Sentry = require("@sentry/node");
 
 Sentry.init({ dsn: process.env.SENTRY_DSN });
 
@@ -406,9 +433,9 @@ function trackError(errorData) {
   Sentry.captureException(new Error(errorData.errorMessage), {
     tags: {
       code: errorData.errorCode,
-      status: errorData.statusCode
+      status: errorData.statusCode,
     },
-    extra: errorData.context
+    extra: errorData.context,
   });
 }
 
@@ -416,16 +443,17 @@ function trackError(errorData) {
 const errorMetrics = {
   total: 0,
   byCode: {},
-  byStatus: {}
+  byStatus: {},
 };
 
 function recordError(error) {
   errorMetrics.total++;
   errorMetrics.byCode[error.code] = (errorMetrics.byCode[error.code] || 0) + 1;
-  errorMetrics.byStatus[error.statusCode] = (errorMetrics.byStatus[error.statusCode] || 0) + 1;
+  errorMetrics.byStatus[error.statusCode] =
+    (errorMetrics.byStatus[error.statusCode] || 0) + 1;
 }
 
-app.get('/metrics/errors', (req, res) => {
+app.get("/metrics/errors", (req, res) => {
   res.json(errorMetrics);
 });
 ```
@@ -433,6 +461,7 @@ app.get('/metrics/errors', (req, res) => {
 ## Best Practices
 
 ### ✅ DO
+
 - Use consistent error response format
 - Include request ID for tracing
 - Log with appropriate severity levels
@@ -445,6 +474,7 @@ app.get('/metrics/errors', (req, res) => {
 - Handle all error types
 
 ### ❌ DON'T
+
 - Expose stack traces to clients
 - Return 200 for errors
 - Ignore errors silently

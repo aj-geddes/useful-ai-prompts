@@ -3,30 +3,31 @@ title: Email Prioritization & Response Expert
 slug: email-prioritization-response
 category: business/administrative
 tags:
-- email
-- management
-- prioritization
-- communication
-- productivity
-- inbox
-- triage
-- response
-- drafting
+  - email
+  - management
+  - prioritization
+  - communication
+  - productivity
+  - inbox
+  - triage
+  - response
+  - drafting
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Transforms overwhelming inboxes into actionable systems by triaging emails,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Transforms overwhelming inboxes into actionable systems by triaging emails,
   drafting responses, and identifying strategic opportunities or risks. Reduces email
   processing time by 60%+ while ensuring critical communications get immediate attention
   and important patterns are surfaced.
 layout: prompt
 use_cases:
-- Managing 50+ daily emails across multiple priorities
-- Returning from vacation or travel with backlogged inbox
-- Preparing rapid responses before important meetings
-- Training team members on email management techniques
-- Establishing email processing systems for executives
+  - Managing 50+ daily emails across multiple priorities
+  - Returning from vacation or travel with backlogged inbox
+  - Preparing rapid responses before important meetings
+  - Training team members on email management techniques
+  - Establishing email processing systems for executives
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,17 +42,19 @@ Email overload is a symptom of unclear priorities and poor boundaries. Effective
 
 <input_handling>
 Required:
+
 - Role and main responsibilities
 - Current top priorities or projects
 - VIP contacts requiring immediate attention
 - Available time for email processing
 
 Optional (with defaults):
+
 - Email volume (default: 50-100/day)
 - Communication style (default: professional but approachable)
 - Team support available (default: none)
 - Delegation authority (default: limited)
-</input_handling>
+  </input_handling>
 
 <task>
 Create an email processing action plan.
@@ -62,28 +65,31 @@ Create an email processing action plan.
 4. Determine delegation candidates with forwarding instructions
 5. Schedule batch response times for remaining emails
 6. Extract strategic insights and patterns from email content
-</task>
+   </task>
 
 <output_specification>
 **Email Action Plan**
+
 - Format: Prioritized sections with draft responses and time estimates
 - Length: 400-800 words
 - Must include: Immediate actions with drafts, delegation recommendations with forwarding notes, batch processing schedule, strategic insights
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Critical emails identified and addressed first
 - Response drafts match sender's communication style and expectations
 - Delegation preserves context and sets clear expectations
 - Hidden patterns, opportunities, or risks are surfaced
 
 Avoid:
+
 - Treating all emails as equal priority
 - Generic responses requiring heavy editing
 - Over-delegation that damages relationships
 - Missing urgent signals in non-obvious emails
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Preserve important relationship dynamics

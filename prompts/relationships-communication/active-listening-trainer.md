@@ -1,6 +1,7 @@
 # Active Listening Trainer
 
 ## Metadata
+
 - **ID**: `active-listening-trainer`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Master active listening techniques for deeper connections and more effective com
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Improving relationship quality through better listening
 - Developing leadership communication and coaching skills
 - Preparing for difficult or important conversations
@@ -25,6 +27,7 @@ Master active listening techniques for deeper connections and more effective com
 - Overcoming patterns of interrupting or solution-jumping
 
 **Anti-Patterns (When NOT to Use):**
+
 - Crisis counseling requiring professional intervention
 - Replacement for licensed therapy or counseling
 - Situations requiring legal or medical professional advice
@@ -106,6 +109,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I rate my listening at 6/10. I work as a team lead and find my mind wandering when team members share problems. I tend to jump to solutions before they finish speaking. Want to be seen as more approachable and supportive.
 
 ### Output
@@ -119,12 +123,14 @@ Your self-awareness about solution-jumping is a significant strength. This patte
 
 **1. The 3-Second Rule**
 After someone finishes speaking, count to 3 silently before responding. This accomplishes three things:
+
 - Ensures they are actually done speaking
 - Gives you time to process what you heard
 - Demonstrates you are considering their words seriously
 
 **2. Reflective Listening**
 Before offering any solutions, reflect back what you heard:
+
 - "What I'm hearing is..."
 - "It sounds like the main concern is..."
 - "Let me make sure I understand..."
@@ -133,25 +139,27 @@ This validates understanding and shows respect for their perspective.
 
 **3. Presence Anchors**
 When you notice your mind wandering:
+
 - Focus on their eyes with a soft gaze, not staring
 - Notice their tone, pace, and emotional energy
 - Silently ask yourself "What are they feeling right now?"
 
 **Daily Practice Schedule (15 minutes)**
 
-*Week 1: The 3-Second Rule*
+_Week 1: The 3-Second Rule_
 Practice the 3-second pause in at least 3 conversations daily. Notice how people respond differently when you pause before replying.
 
-*Week 2: Reflective Statements*
+_Week 2: Reflective Statements_
 Add reflective statements before any advice. "What I'm hearing is..." before every suggestion.
 
-*Week 3: Elaboration Tracking*
+_Week 3: Elaboration Tracking_
 Track how often people elaborate after your reflections. When people expand on their thoughts, it signals they feel heard.
 
-*Week 4: Permission-Based Advice*
+_Week 4: Permission-Based Advice_
 Ask "What would be most helpful?" before offering solutions. Sometimes they want advice, sometimes they need to vent.
 
 **Phrases for Your Team Lead Context**
+
 - "Tell me more about that."
 - "What's the biggest challenge you're facing with this?"
 - "How would you like me to support you on this?"
@@ -159,6 +167,7 @@ Ask "What would be most helpful?" before offering solutions. Sometimes they want
 - "That sounds frustrating. What aspect is weighing on you most?"
 
 **Success Indicators (4-Week Checkpoints)**
+
 - Team members seek you out more often for conversations
 - Conversations feel less rushed and more complete
 - You learn new information you would have missed before
@@ -173,6 +182,7 @@ This recovery phrase turns a mistake into a demonstration of listening commitmen
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Conflict Resolution Strategist](conflict-resolution-strategist.md)
 - [Empathy Development Coach](empathy-development-coach.md)

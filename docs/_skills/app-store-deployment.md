@@ -1,13 +1,14 @@
 ---
 category: devops-infrastructure
-date: '2025-01-01'
-description: Deploy iOS and Android apps to App Store and Google Play. Covers signing,
+date: "2025-01-01"
+description:
+  Deploy iOS and Android apps to App Store and Google Play. Covers signing,
   versioning, build configuration, submission process, and release management.
 layout: skill
 slug: app-store-deployment
 tags:
-- go
-- deployment
+  - go
+  - deployment
 title: app-store-deployment
 ---
 
@@ -191,7 +192,7 @@ name: Deploy to App Stores
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build-ios:
@@ -202,7 +203,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
@@ -236,12 +237,12 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: "11"
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
@@ -286,6 +287,7 @@ jobs:
 
 ```markdown
 # iOS Checklist
+
 - [ ] Increment version (CFBundleShortVersionString)
 - [ ] Update build number (CFBundleVersion)
 - [ ] Run all tests (>80% coverage)
@@ -300,6 +302,7 @@ jobs:
 - [ ] Test on real devices
 
 # Android Checklist
+
 - [ ] Increment versionCode and versionName
 - [ ] Run all tests (>80% coverage)
 - [ ] Test on API 21+ devices
@@ -317,6 +320,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Use signed certificates and provisioning profiles
 - Automate builds with CI/CD
 - Test on real devices before submission
@@ -331,6 +335,7 @@ jobs:
 - Maintain release notes
 
 ### ❌ DON'T
+
 - Commit signing materials to git
 - Skip device testing
 - Release untested code

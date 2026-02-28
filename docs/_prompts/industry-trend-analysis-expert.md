@@ -3,27 +3,28 @@ title: Industry Trend Analysis Expert
 slug: industry-trend-analysis-expert
 category: research/business
 tags:
-- trend-analysis
-- industry-research
-- market-trends
-- strategic-foresight
-- scenario-planning
+  - trend-analysis
+  - industry-research
+  - market-trends
+  - strategic-foresight
+  - scenario-planning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Identify, analyze, and interpret industry trends to inform strategic
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Identify, analyze, and interpret industry trends to inform strategic
   planning, innovation initiatives, and competitive positioning. Applies strategic
   foresight methods to distinguish lasting trends from fads and develop actionable
   strategic responses. Combines systematic trend research with scenario planning to
   support high-stakes strategic decisions.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Developing long-term strategic plans or 3-5 year product roadmaps
-- Identifying innovation opportunities and emerging market threats
-- Preparing for board presentations on industry outlook and strategic positioning
-- Evaluating market entry, expansion, or exit decisions
+  - Scenarios:**
+  - Developing long-term strategic plans or 3-5 year product roadmaps
+  - Identifying innovation opportunities and emerging market threats
+  - Preparing for board presentations on industry outlook and strategic positioning
+  - Evaluating market entry, expansion, or exit decisions
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,17 +39,19 @@ Effective trend analysis requires distinguishing between fads (short-lived), tre
 
 <input_handling>
 Required:
+
 - Industry or sector being analyzed
 - Time horizon (1, 3, 5+ years)
 - Strategic decisions this analysis will inform
 - Organization's current positioning and constraints
 
 Infer if not provided:
+
 - Key concern areas: Technology, competition, regulation, consumer behavior
 - Stakeholder audience: Executive leadership and strategy teams
 - Trend categories: Macro (PESTEL), industry-specific, and emerging signals
 - Output format: Executive briefing with actionable recommendations
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive industry trend analysis by:
@@ -60,18 +63,20 @@ Conduct comprehensive industry trend analysis by:
 5. Develop scenario framework with probability assessments
 6. Map strategic implications and opportunity/threat matrix
 7. Design trend monitoring system with early warning indicators
-</task>
+   </task>
 
 <output_specification>
 **Industry Trend Analysis Report**
+
 - Format: Executive briefing with detailed analysis sections and appendices
 - Length: 800-1500 words (executive summary); 3,000-4,500 words for full report
 - Structure: Trend identification, classification, scenarios, implications, monitoring
 - Must include: Trend classification matrix, impact assessment, scenario framework, strategic recommendations, early warning indicators
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Clearly distinguish between fads, trends, and megatrends with rationale
 - Quantify trend impacts on revenue, costs, or market dynamics where possible
 - Identify convergence opportunities across multiple trends
@@ -79,12 +84,13 @@ Excellent outputs:
 - Link trends to specific, actionable business decisions
 
 Avoid:
+
 - Listing trends without impact analysis or strategic implications
 - Overconfidence in single-scenario predictions
 - Ignoring counter-trends, resistance factors, or timing uncertainty
 - Generic recommendations applicable to any organization
 - Recency bias (overweighting recent developments)
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge uncertainty explicitly; avoid false precision

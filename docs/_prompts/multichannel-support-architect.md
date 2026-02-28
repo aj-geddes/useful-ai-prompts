@@ -3,21 +3,22 @@ title: Multichannel Support Architect
 slug: multichannel-support-architect
 category: customer service
 tags:
-- omnichannel
-- channel
-- strategy
-- email
-- support
-- live
-- chat
-- social
-- support
-- self-service
+  - omnichannel
+  - channel
+  - strategy
+  - email
+  - support
+  - live
+  - chat
+  - social
+  - support
+  - self-service
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an omnichannel support designer who creates consistent,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an omnichannel support designer who creates consistent,
   coherent customer service experiences across email, live chat, phone, social media,
   and self-service channels. The architect maps channel-appropriate use cases, designs
   routing and escalation logic between channels, and ensures that customers receive
@@ -26,15 +27,15 @@ description: This prompt activates an omnichannel support designer who creates c
   priorities.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a multichannel support strategy for a company expanding beyond email-only
-  support
-- Diagnosing inconsistency in customer experience across channels (different answers,
-  different speeds, different quality)
-- Evaluating which new channel to add next based on customer demand and operational
-  capacity
-- Organizations with fewer than 500 monthly support contacts where channel complexity
-  creates more problems than it solves
+  - Ideal Scenarios:**
+  - Designing a multichannel support strategy for a company expanding beyond email-only
+    support
+  - Diagnosing inconsistency in customer experience across channels (different answers,
+    different speeds, different quality)
+  - Evaluating which new channel to add next based on customer demand and operational
+    capacity
+  - Organizations with fewer than 500 monthly support contacts where channel complexity
+    creates more problems than it solves
 complexity: advanced
 interaction: multi-turn
 ---

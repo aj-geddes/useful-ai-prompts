@@ -36,7 +36,7 @@ A test automation framework provides structure, reusability, and maintainability
 
 ```typescript
 // framework/pages/BasePage.ts
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator } from "@playwright/test";
 
 export abstract class BasePage {
   constructor(protected page: Page) {}
@@ -46,7 +46,7 @@ export abstract class BasePage {
   }
 
   async waitForPageLoad() {
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForLoadState("networkidle");
   }
 
   async takeScreenshot(name: string) {
@@ -55,8 +55,8 @@ export abstract class BasePage {
 
   protected async clickAndWait(locator: Locator) {
     await Promise.all([
-      this.page.waitForResponse(resp => resp.status() === 200),
-      locator.click()
+      this.page.waitForResponse((resp) => resp.status() === 200),
+      locator.click(),
     ]);
   }
 }
@@ -67,10 +67,10 @@ export class LoginPage extends BasePage {
   private readonly emailInput = this.page.locator('[name="email"]');
   private readonly passwordInput = this.page.locator('[name="password"]');
   private readonly submitButton = this.page.locator('button[type="submit"]');
-  private readonly errorMessage = this.page.locator('.error-message');
+  private readonly errorMessage = this.page.locator(".error-message");
 
   async goto() {
-    await super.goto('/login');
+    await super.goto("/login");
   }
 
   async login(email: string, password: string) {
@@ -81,23 +81,25 @@ export class LoginPage extends BasePage {
 
   async loginWithValidation(email: string, password: string) {
     await this.login(email, password);
-    await this.page.waitForURL('/dashboard');
+    await this.page.waitForURL("/dashboard");
   }
 
   async getErrorMessage(): Promise<string> {
-    return await this.errorMessage.textContent() || '';
+    return (await this.errorMessage.textContent()) || "";
   }
 
   async isLoggedIn(): Promise<boolean> {
-    return this.page.url().includes('/dashboard');
+    return this.page.url().includes("/dashboard");
   }
 }
 
 // framework/pages/ProductPage.ts
 export class ProductPage extends BasePage {
-  private readonly addToCartButton = this.page.locator('[data-testid="add-to-cart"]');
+  private readonly addToCartButton = this.page.locator(
+    '[data-testid="add-to-cart"]',
+  );
   private readonly quantityInput = this.page.locator('[name="quantity"]');
-  private readonly priceLabel = this.page.locator('.price');
+  private readonly priceLabel = this.page.locator(".price");
 
   async goto(productId: string) {
     await super.goto(`/products/${productId}`);
@@ -112,18 +114,18 @@ export class ProductPage extends BasePage {
 
   async getPrice(): Promise<number> {
     const priceText = await this.priceLabel.textContent();
-    return parseFloat(priceText?.replace(/[^0-9.]/g, '') || '0');
+    return parseFloat(priceText?.replace(/[^0-9.]/g, "") || "0");
   }
 }
 
 // tests/checkout.test.ts
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../framework/pages/LoginPage';
-import { ProductPage } from '../framework/pages/ProductPage';
-import { CartPage } from '../framework/pages/CartPage';
-import { CheckoutPage } from '../framework/pages/CheckoutPage';
+import { test, expect } from "@playwright/test";
+import { LoginPage } from "../framework/pages/LoginPage";
+import { ProductPage } from "../framework/pages/ProductPage";
+import { CartPage } from "../framework/pages/CartPage";
+import { CheckoutPage } from "../framework/pages/CheckoutPage";
 
-test.describe('Checkout Flow', () => {
+test.describe("Checkout Flow", () => {
   let loginPage: LoginPage;
   let productPage: ProductPage;
   let cartPage: CartPage;
@@ -136,12 +138,12 @@ test.describe('Checkout Flow', () => {
     checkoutPage = new CheckoutPage(page);
 
     await loginPage.goto();
-    await loginPage.loginWithValidation('user@test.com', 'password123');
+    await loginPage.loginWithValidation("user@test.com", "password123");
   });
 
-  test('complete checkout process', async () => {
+  test("complete checkout process", async () => {
     // Add product to cart
-    await productPage.goto('product-1');
+    await productPage.goto("product-1");
     await productPage.addToCart(2);
 
     // Verify cart
@@ -151,16 +153,16 @@ test.describe('Checkout Flow', () => {
     // Checkout
     await checkoutPage.goto();
     await checkoutPage.fillShippingInfo({
-      name: 'John Doe',
-      address: '123 Main St',
-      city: 'San Francisco',
-      zip: '94105'
+      name: "John Doe",
+      address: "123 Main St",
+      city: "San Francisco",
+      zip: "94105",
     });
 
     await checkoutPage.fillPaymentInfo({
-      cardNumber: '4242424242424242',
-      expiry: '12/25',
-      cvc: '123'
+      cardNumber: "4242424242424242",
+      expiry: "12/25",
+      cvc: "123",
     });
 
     await checkoutPage.placeOrder();
@@ -174,8 +176,8 @@ test.describe('Checkout Flow', () => {
 
 ```typescript
 // framework/fixtures/database.ts
-import { test as base } from '@playwright/test';
-import { PrismaClient } from '@prisma/client';
+import { test as base } from "@playwright/test";
+import { PrismaClient } from "@prisma/client";
 
 export const test = base.extend<{
   db: PrismaClient;
@@ -192,8 +194,8 @@ export const test = base.extend<{
     const user = await db.user.create({
       data: {
         email: `test-${Date.now()}@example.com`,
-        name: 'Test User',
-        password: await hashPassword('password123'),
+        name: "Test User",
+        password: await hashPassword("password123"),
       },
     });
     await use(user);
@@ -209,23 +211,23 @@ export const test = base.extend<{
   },
 });
 
-export { expect } from '@playwright/test';
+export { expect } from "@playwright/test";
 
 // Usage in tests
-import { test, expect } from '../framework/fixtures/database';
+import { test, expect } from "../framework/fixtures/database";
 
-test('user can create order', async ({ db, testUser }) => {
+test("user can create order", async ({ db, testUser }) => {
   const product = await db.product.create({
-    data: { name: 'Test Product', price: 99.99 }
+    data: { name: "Test Product", price: 99.99 },
   });
 
   const order = await db.order.create({
     data: {
       userId: testUser.id,
       items: {
-        create: [{ productId: product.id, quantity: 1 }]
-      }
-    }
+        create: [{ productId: product.id, quantity: 1 }],
+      },
+    },
   });
 
   expect(order.userId).toBe(testUser.id);
@@ -236,13 +238,13 @@ test('user can create order', async ({ db, testUser }) => {
 
 ```typescript
 // framework/utils/helpers.ts
-import { Page, expect } from '@playwright/test';
+import { Page, expect } from "@playwright/test";
 
 export class TestHelpers {
   static async waitForAPIResponse(
     page: Page,
     urlPattern: string | RegExp,
-    action: () => Promise<void>
+    action: () => Promise<void>,
   ) {
     const responsePromise = page.waitForResponse(urlPattern);
     await action();
@@ -253,12 +255,12 @@ export class TestHelpers {
     page: Page,
     url: string | RegExp,
     response: any,
-    status: number = 200
+    status: number = 200,
   ) {
-    await page.route(url, route => {
+    await page.route(url, (route) => {
       route.fulfill({
         status,
-        contentType: 'application/json',
+        contentType: "application/json",
         body: JSON.stringify(response),
       });
     });
@@ -275,27 +277,27 @@ export class TestHelpers {
   }
 
   static async verifyToastMessage(page: Page, message: string) {
-    const toast = page.locator('.toast-message');
+    const toast = page.locator(".toast-message");
     await expect(toast).toContainText(message);
     await expect(toast).toBeVisible();
   }
 }
 
 // Usage
-import { TestHelpers } from '../framework/utils/helpers';
+import { TestHelpers } from "../framework/utils/helpers";
 
-test('form submission', async ({ page }) => {
-  await page.goto('/contact');
+test("form submission", async ({ page }) => {
+  await page.goto("/contact");
 
   await TestHelpers.fillForm(page, {
-    name: 'John Doe',
+    name: "John Doe",
     email: TestHelpers.generateTestEmail(),
-    message: 'Test message'
+    message: "Test message",
   });
 
   await page.click('button[type="submit"]');
 
-  await TestHelpers.verifyToastMessage(page, 'Message sent successfully');
+  await TestHelpers.verifyToastMessage(page, "Message sent successfully");
 });
 ```
 
@@ -303,7 +305,7 @@ test('form submission', async ({ page }) => {
 
 ```typescript
 // framework/config/config.ts
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 
 dotenv.config();
 
@@ -323,21 +325,21 @@ export interface TestConfig {
 
 const environments: Record<string, TestConfig> = {
   development: {
-    baseUrl: 'http://localhost:3000',
-    apiUrl: 'http://localhost:3001',
+    baseUrl: "http://localhost:3000",
+    apiUrl: "http://localhost:3001",
     timeout: 30000,
     headless: false,
     slowMo: 0,
     screenshots: true,
     video: false,
     testUser: {
-      email: 'dev@test.com',
-      password: 'devpass123',
+      email: "dev@test.com",
+      password: "devpass123",
     },
   },
   staging: {
-    baseUrl: 'https://staging.example.com',
-    apiUrl: 'https://api-staging.example.com',
+    baseUrl: "https://staging.example.com",
+    apiUrl: "https://api-staging.example.com",
     timeout: 60000,
     headless: true,
     slowMo: 0,
@@ -349,8 +351,8 @@ const environments: Record<string, TestConfig> = {
     },
   },
   production: {
-    baseUrl: 'https://example.com',
-    apiUrl: 'https://api.example.com',
+    baseUrl: "https://example.com",
+    apiUrl: "https://api.example.com",
     timeout: 60000,
     headless: true,
     slowMo: 100,
@@ -364,14 +366,14 @@ const environments: Record<string, TestConfig> = {
 };
 
 export const config: TestConfig =
-  environments[process.env.TEST_ENV || 'development'];
+  environments[process.env.TEST_ENV || "development"];
 ```
 
 ### 5. **Custom Reporter**
 
 ```typescript
 // framework/reporters/CustomReporter.ts
-import { Reporter, TestCase, TestResult } from '@playwright/test/reporter';
+import { Reporter, TestCase, TestResult } from "@playwright/test/reporter";
 
 class CustomReporter implements Reporter {
   private stats = {
@@ -382,27 +384,27 @@ class CustomReporter implements Reporter {
   };
 
   onBegin() {
-    console.log('Starting test run...');
+    console.log("Starting test run...");
   }
 
   onTestEnd(test: TestCase, result: TestResult) {
     this.stats.total++;
 
-    if (result.status === 'passed') {
+    if (result.status === "passed") {
       this.stats.passed++;
       console.log(`✓ ${test.title}`);
-    } else if (result.status === 'failed') {
+    } else if (result.status === "failed") {
       this.stats.failed++;
       console.log(`✗ ${test.title}`);
       console.log(`  Error: ${result.error?.message}`);
-    } else if (result.status === 'skipped') {
+    } else if (result.status === "skipped") {
       this.stats.skipped++;
       console.log(`⊘ ${test.title}`);
     }
   }
 
   onEnd() {
-    console.log('\nTest Summary:');
+    console.log("\nTest Summary:");
     console.log(`  Total: ${this.stats.total}`);
     console.log(`  Passed: ${this.stats.passed}`);
     console.log(`  Failed: ${this.stats.failed}`);
@@ -515,6 +517,7 @@ test-automation/
 ## Framework Patterns
 
 ### Singleton Pattern
+
 ```typescript
 class TestContext {
   private static instance: TestContext;
@@ -540,6 +543,7 @@ class TestContext {
 ```
 
 ### Builder Pattern
+
 ```typescript
 class TestDataBuilder {
   private data: Partial<User> = {};
@@ -561,9 +565,9 @@ class TestDataBuilder {
 
   build(): User {
     return {
-      email: this.data.email || 'test@example.com',
-      name: this.data.name || 'Test User',
-      role: this.data.role || 'user',
+      email: this.data.email || "test@example.com",
+      name: this.data.name || "Test User",
+      role: this.data.role || "user",
       ...this.data,
     } as User;
   }
@@ -573,6 +577,7 @@ class TestDataBuilder {
 ## Best Practices
 
 ### ✅ DO
+
 - Use Page Object Model for UI tests
 - Create reusable test utilities
 - Implement proper wait strategies
@@ -583,6 +588,7 @@ class TestDataBuilder {
 - Version control test framework
 
 ### ❌ DON'T
+
 - Put test logic in page objects
 - Use hard-coded waits (sleep)
 - Duplicate test setup code

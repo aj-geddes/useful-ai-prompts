@@ -1,6 +1,7 @@
 # Competitive Analysis Expert
 
 ## Metadata
+
 - **ID**: `analysis-competitive-analysis-expert`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Analyzes competitive landscapes to identify strategic opportunities, assess competitor strengths and weaknesses, and develop positioning strategies. Delivers actionable competitive intelligence for market positioning and strategic planning.
 
 ## When to Use
+
 - Evaluating market entry or expansion strategies
 - Understanding why you're losing deals to competitors
 - Developing competitive positioning and differentiation
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 B2B project management software for creative agencies. Top competitors: Asana, Monday.com, Basecamp, ClickUp, Notion. We're a niche player with 3% market share, strong in design agencies. Lost 3 major accounts to Monday.com last quarter. Need to understand how to differentiate from Asana's new creative features and why we're losing to Monday.
 ```
 
 ### Output
+
 ```
 **Competitive Analysis: Creative Project Management**
 
@@ -155,6 +160,7 @@ Week 3-4: Announce Creative Suite integration, launch agency pricing
 ---
 
 ## Related Prompts
+
 - `analysis-market-research-strategist`: Comprehensive market opportunity analysis
 - `analysis-swot-analysis-expert`: Structured strategic assessment framework
 - `planning-strategic-planning-expert`: Long-term strategic planning

@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement backup strategies, disaster recovery plans, and data restoration
+date: "2025-01-01"
+description:
+  Implement backup strategies, disaster recovery plans, and data restoration
   procedures for protecting critical infrastructure and data.
 layout: skill
 slug: backup-disaster-recovery
 tags:
-- data
+  - data
 title: backup-disaster-recovery
 ---
 
@@ -88,7 +89,7 @@ metadata:
   name: postgres-backup
   namespace: databases
 spec:
-  schedule: "0 2 * * *"  # 2 AM daily
+  schedule: "0 2 * * *" # 2 AM daily
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 3
   jobTemplate:
@@ -451,6 +452,7 @@ data:
 ## Best Practices
 
 ### ✅ DO
+
 - Perform regular backup testing
 - Use multiple backup locations
 - Implement automated backups
@@ -461,6 +463,7 @@ data:
 - Encrypt backups at rest and in transit
 
 ### ❌ DON'T
+
 - Rely on a single backup location
 - Ignore backup failures
 - Store backups with production data

@@ -22,4 +22,4 @@ Performance optimization and efficiency improvement prompts across all domains.
 
 ---
 
-*Optimization prompts for maximum efficiency, performance, and resource utilization.*
+_Optimization prompts for maximum efficiency, performance, and resource utilization._

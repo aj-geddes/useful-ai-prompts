@@ -1,6 +1,7 @@
 # Quantum Hardware Calibration and Characterization
 
 ## Metadata
+
 - **ID**: `quantum-hardware-calibration`
 - **Version**: 2.0.0
 - **Category**: Quantum Computing / Hardware Systems
@@ -18,7 +19,8 @@ A quantum hardware specialist that designs characterization protocols and calibr
 ## When to Use
 
 **Ideal Scenarios:**
-- Characterizing qubit coherence times (T1, T2*, T2) for new or updated systems
+
+- Characterizing qubit coherence times (T1, T2\*, T2) for new or updated systems
 - Calibrating quantum gates for improved fidelity
 - Diagnosing noise sources, crosstalk, and parameter drift
 - Benchmarking quantum processor performance with RB, GST, or QPT
@@ -26,6 +28,7 @@ A quantum hardware specialist that designs characterization protocols and calibr
 - Building automated monitoring and recalibration systems
 
 **Anti-patterns (when NOT to use):**
+
 - Quantum algorithm design without hardware focus
 - Software-only quantum simulation optimization
 - Classical computing performance tuning
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 **System:** Transmon superconducting qubits (5-qubit chip in 2D connectivity). **Current metrics:** T1 = 80us, T2 = 50us, single-qubit fidelity ~99.5%, two-qubit fidelity ~98%. **Goal:** Improve two-qubit gate fidelity to >99%. Observing drift in CNOT calibration over 4-hour periods.
 
 ### Output
@@ -138,14 +142,14 @@ Avoid:
 
 **Current Performance Assessment**
 
-| Metric | Current | Target | State-of-Art |
-|--------|---------|--------|--------------|
-| T1 | 80 us | 100+ us | 300+ us |
-| T2 | 50 us | 80+ us | 200+ us |
-| 1Q Fidelity | 99.5% | 99.9% | 99.99% |
-| 2Q Fidelity | 98% | 99%+ | 99.5%+ |
+| Metric      | Current | Target  | State-of-Art |
+| ----------- | ------- | ------- | ------------ |
+| T1          | 80 us   | 100+ us | 300+ us      |
+| T2          | 50 us   | 80+ us  | 200+ us      |
+| 1Q Fidelity | 99.5%   | 99.9%   | 99.99%       |
+| 2Q Fidelity | 98%     | 99%+    | 99.5%+       |
 
-*Initial Assessment:* Your T2/T1 ratio of 0.625 indicates significant dephasing noise, likely from low-frequency flux noise or TLS defects. The 2Q fidelity gap is consistent with coherence-limited operation plus potential pulse calibration drift.
+_Initial Assessment:_ Your T2/T1 ratio of 0.625 indicates significant dephasing noise, likely from low-frequency flux noise or TLS defects. The 2Q fidelity gap is consistent with coherence-limited operation plus potential pulse calibration drift.
 
 **Daily Quick Check Protocol (30 minutes)**
 
@@ -168,7 +172,8 @@ Phase 3: Two-Qubit Gate Spot Check (10 min)
 
 **Weekly Full Characterization (4 hours)**
 
-*Phase 1: Coherence Measurement (60 min)*
+_Phase 1: Coherence Measurement (60 min)_
+
 ```python
 def characterize_coherence(qubit):
     # T1: Prepare |1>, wait, measure
@@ -184,12 +189,14 @@ def characterize_coherence(qubit):
     # Compare to T2* for low-frequency noise assessment
 ```
 
-*Phase 2: Gate Characterization (90 min)*
+_Phase 2: Gate Characterization (90 min)_
+
 - Single-qubit: Full RB on all 5 qubits, depths [1,10,20,50,100,200]
 - Two-qubit: Interleaved RB for each CNOT to isolate gate error
 - Process tomography on critical gate pairs
 
-*Phase 3: Crosstalk Analysis (60 min)*
+_Phase 3: Crosstalk Analysis (60 min)_
+
 - Simultaneous RB while driving neighbors
 - Idle error during adjacent qubit operations
 - ZZ coupling measurement during idle
@@ -225,7 +232,8 @@ class CRCalibration:
 
 **Drift Mitigation Strategy**
 
-*Automated Recalibration Protocol:*
+_Automated Recalibration Protocol:_
+
 ```python
 class DriftMonitor:
     def __init__(self, fidelity_threshold=0.985, check_interval=3600):
@@ -248,16 +256,17 @@ class DriftMonitor:
 
 **Root Cause Diagnosis**
 
-| Symptom | Likely Cause | Diagnostic | Remediation |
-|---------|--------------|------------|-------------|
-| Periodic fidelity drop | Temperature fluctuation | Monitor fridge temp | Stabilize thermal environment |
-| Slow T1 degradation | TLS drift | Repeated T1 vs time | Wait 24h or anneal junction |
-| Sudden all-qubit change | Cosmic ray/quasiparticle | Check T1 across chip | Usually recovers in minutes |
-| Frequency drift | Flux noise | Ramsey frequency tracking | Recalibrate flux bias |
+| Symptom                 | Likely Cause             | Diagnostic                | Remediation                   |
+| ----------------------- | ------------------------ | ------------------------- | ----------------------------- |
+| Periodic fidelity drop  | Temperature fluctuation  | Monitor fridge temp       | Stabilize thermal environment |
+| Slow T1 degradation     | TLS drift                | Repeated T1 vs time       | Wait 24h or anneal junction   |
+| Sudden all-qubit change | Cosmic ray/quasiparticle | Check T1 across chip      | Usually recovers in minutes   |
+| Frequency drift         | Flux noise               | Ramsey frequency tracking | Recalibrate flux bias         |
 
 **Validation Criteria**
 
 Before algorithm demonstrations, confirm:
+
 1. Single-qubit RB: F > 99.5% on all qubits
 2. Two-qubit RB: F > 99% on all pairs
 3. Drift: <0.5% fidelity change over 4 hours
@@ -265,6 +274,7 @@ Before algorithm demonstrations, confirm:
 5. Readout assignment: >95% on all qubits
 
 **Next Steps for 99%+ Two-Qubit Fidelity:**
+
 1. Implement CR echo calibration to reduce ZZ error
 2. Optimize DRAG coefficient for leakage suppression
 3. Add flux noise filtering if frequency drift persists

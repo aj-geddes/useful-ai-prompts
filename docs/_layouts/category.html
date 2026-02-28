@@ -3,143 +3,169 @@ layout: default
 ---
 
 {%- assign category_prompts = site.prompts | where: "category", page.slug -%}
-{%- assign sorted_prompts    = category_prompts | sort: 'title' -%}
-{%- assign prompt_count      = category_prompts.size -%}
-{%- assign category_label    = page.title | replace: "-", " " -%}
+{%- assign sorted_prompts = category_prompts | sort: 'title' -%} {%- assign
+prompt_count = category_prompts.size -%} {%- assign category_label = page.title
+| replace: "-", " " -%}
 
 <div class="category-page">
-    <div class="container">
-        <div class="category-header">
+  <div class="container">
+    <div class="category-header">
+      <!-- Visible breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ '/categories/' | relative_url }}">Categories</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{{ category_label }}</span>
+      </nav>
 
-            <!-- Visible breadcrumb -->
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="{{ '/' | relative_url }}">Home</a>
-                <span aria-hidden="true">/</span>
-                <a href="{{ '/categories/' | relative_url }}">Categories</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">{{ category_label }}</span>
-            </nav>
+      <!-- H1: "Category AI Prompts" pattern for keyword targeting -->
+      <h1 class="category-title">
+        <i
+          class="{{ page.icon | default: 'fas fa-folder' }}"
+          aria-hidden="true"
+        ></i>
+        {{ category_label }} AI Prompts
+        <span
+          class="prompt-count-badge"
+          aria-label="{{ prompt_count }} prompts in this category"
+        >
+          {{ prompt_count }} prompts
+        </span>
+      </h1>
 
-            <!-- H1: "Category AI Prompts" pattern for keyword targeting -->
-            <h1 class="category-title">
-                <i class="{{ page.icon | default: 'fas fa-folder' }}" aria-hidden="true"></i>
-                {{ category_label }} AI Prompts
-                <span class="prompt-count-badge" aria-label="{{ prompt_count }} prompts in this category">
-                    {{ prompt_count }} prompts
-                </span>
-            </h1>
+      <!-- Visible intro paragraph using category description -->
+      {% if page.description %}
+      <p class="category-description">{{ page.description }}</p>
+      {% else %}
+      <p class="category-description">
+        Browse {{ prompt_count }} free, ready-to-use {{ category_label |
+        downcase }} AI prompts. Copy any prompt directly into Claude, ChatGPT,
+        or your preferred AI assistant to get professional-quality results
+        immediately — no signup required.
+      </p>
+      {% endif %} {% if page.tags %}
+      <div class="category-tags" aria-label="Category topics">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <!-- /.category-header -->
 
-            <!-- Visible intro paragraph using category description -->
-            {% if page.description %}
-            <p class="category-description">{{ page.description }}</p>
-            {% else %}
-            <p class="category-description">
-                Browse {{ prompt_count }} free, ready-to-use {{ category_label | downcase }} AI prompts.
-                Copy any prompt directly into Claude, ChatGPT, or your preferred AI assistant to get
-                professional-quality results immediately — no signup required.
+    <div class="category-content">
+      {% if content %}
+      <div class="category-intro">{{ content }}</div>
+      {% endif %}
+
+      <div class="prompts-section">
+        <div class="section-header">
+          <h2>Available {{ category_label }} Prompts</h2>
+          <div class="view-controls">
+            <button
+              class="view-btn active"
+              data-view="grid"
+              aria-label="Grid view"
+              aria-pressed="true"
+            >
+              <i class="fas fa-th-large" aria-hidden="true"></i>
+            </button>
+            <button
+              class="view-btn"
+              data-view="list"
+              aria-label="List view"
+              aria-pressed="false"
+            >
+              <i class="fas fa-list" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        {% if prompt_count > 0 %}
+        <div class="prompts-grid" id="promptsContainer">
+          {% for prompt in sorted_prompts %}
+          <div class="prompt-card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <a href="{{ prompt.url | relative_url }}">{{ prompt.title }}</a>
+              </h3>
+              {% if prompt.version %}
+              <span class="version-badge">v{{ prompt.version }}</span>
+              {% endif %}
+            </div>
+
+            {% if prompt.description %}
+            <p class="card-description">
+              {{ prompt.description | truncate: 120 }}
             </p>
             {% endif %}
 
-            {% if page.tags %}
-            <div class="category-tags" aria-label="Category topics">
-                {% for tag in page.tags %}
-                    <span class="tag">{{ tag }}</span>
-                {% endfor %}
-            </div>
-            {% endif %}
-
-        </div><!-- /.category-header -->
-
-        <div class="category-content">
-
-            {% if content %}
-            <div class="category-intro">
-                {{ content }}
-            </div>
-            {% endif %}
-
-            <div class="prompts-section">
-                <div class="section-header">
-                    <h2>Available {{ category_label }} Prompts</h2>
-                    <div class="view-controls">
-                        <button class="view-btn active" data-view="grid"
-                                aria-label="Grid view" aria-pressed="true">
-                            <i class="fas fa-th-large" aria-hidden="true"></i>
-                        </button>
-                        <button class="view-btn" data-view="list"
-                                aria-label="List view" aria-pressed="false">
-                            <i class="fas fa-list" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-
-                {% if prompt_count > 0 %}
-                <div class="prompts-grid" id="promptsContainer">
-                    {% for prompt in sorted_prompts %}
-                    <div class="prompt-card">
-                        <div class="card-header">
-                            <h3 class="card-title">
-                                <a href="{{ prompt.url | relative_url }}">{{ prompt.title }}</a>
-                            </h3>
-                            {% if prompt.version %}
-                            <span class="version-badge">v{{ prompt.version }}</span>
-                            {% endif %}
-                        </div>
-
-                        {% if prompt.description %}
-                        <p class="card-description">{{ prompt.description | truncate: 120 }}</p>
-                        {% endif %}
-
-                        <div class="card-meta">
-                            {% if prompt.tags %}
-                            <div class="card-tags">
-                                {% for tag in prompt.tags limit:3 %}
-                                    <span class="tag">{{ tag }}</span>
-                                {% endfor %}
-                                {% if prompt.tags.size > 3 %}
-                                    <span class="tag-more">+{{ prompt.tags.size | minus: 3 }}</span>
-                                {% endif %}
-                            </div>
-                            {% endif %}
-
-                            {% if prompt.compatible_models %}
-                            <div class="model-support">
-                                <i class="fas fa-robot" aria-hidden="true"
-                                   title="Compatible Models"></i>
-                                <span>{{ prompt.compatible_models | join: ", " | truncate: 30 }}</span>
-                            </div>
-                            {% endif %}
-                        </div>
-
-                        <div class="card-actions">
-                            <a href="{{ prompt.url | relative_url }}" class="btn btn-primary">
-                                View Prompt
-                            </a>
-                            {% if prompt.prompt %}
-                            <button class="btn btn-secondary copy-btn"
-                                    data-clipboard-text="{{ prompt.prompt | strip | escape }}"
-                                    aria-label="Copy {{ prompt.title }} prompt">
-                                <i class="fas fa-copy" aria-hidden="true"></i>
-                            </button>
-                            {% endif %}
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div><!-- /.prompts-grid -->
-
-                {% else %}
-                <div class="no-prompts">
-                    <i class="fas fa-search" aria-hidden="true"></i>
-                    <h3>No prompts in this category yet</h3>
-                    <p>Be the first to contribute a {{ category_label | downcase }} prompt.</p>
-                    <a href="{{ site.github_url }}/issues/new" class="btn btn-primary"
-                       rel="noopener noreferrer" target="_blank">
-                        Suggest a Prompt
-                    </a>
-                </div>
+            <div class="card-meta">
+              {% if prompt.tags %}
+              <div class="card-tags">
+                {% for tag in prompt.tags limit:3 %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %} {% if prompt.tags.size > 3 %}
+                <span class="tag-more">+{{ prompt.tags.size | minus: 3 }}</span>
                 {% endif %}
+              </div>
+              {% endif %} {% if prompt.compatible_models %}
+              <div class="model-support">
+                <i
+                  class="fas fa-robot"
+                  aria-hidden="true"
+                  title="Compatible Models"
+                ></i>
+                <span
+                  >{{ prompt.compatible_models | join: ", " | truncate: 30
+                  }}</span
+                >
+              </div>
+              {% endif %}
+            </div>
 
-            </div><!-- /.prompts-section -->
-        </div><!-- /.category-content -->
-    </div><!-- /.container -->
-</div><!-- /.category-page -->
+            <div class="card-actions">
+              <a href="{{ prompt.url | relative_url }}" class="btn btn-primary">
+                View Prompt
+              </a>
+              {% if prompt.prompt %}
+              <button
+                class="btn btn-secondary copy-btn"
+                data-clipboard-text="{{ prompt.prompt | strip | escape }}"
+                aria-label="Copy {{ prompt.title }} prompt"
+              >
+                <i class="fas fa-copy" aria-hidden="true"></i>
+              </button>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- /.prompts-grid -->
+
+        {% else %}
+        <div class="no-prompts">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <h3>No prompts in this category yet</h3>
+          <p>
+            Be the first to contribute a {{ category_label | downcase }} prompt.
+          </p>
+          <a
+            href="{{ site.github_url }}/issues/new"
+            class="btn btn-primary"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Suggest a Prompt
+          </a>
+        </div>
+        {% endif %}
+      </div>
+      <!-- /.prompts-section -->
+    </div>
+    <!-- /.category-content -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.category-page -->

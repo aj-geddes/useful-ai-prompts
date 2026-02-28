@@ -1,6 +1,7 @@
 # CI Workflow Watchdog
 
 ## Metadata
+
 - **ID**: `ci-workflow-watchdog`
 - **Version**: 1.1.0
 - **Category**: Technical/Infrastructure
@@ -18,6 +19,7 @@ Evaluates GitHub Actions workflow runs, performs post-mortem diagnostics on fail
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Diagnosing GitHub Actions workflow failures after they occur
 - Automating CI/CD issue resolution for common failure patterns
 - Monitoring workflow health and reliability trends
@@ -25,6 +27,7 @@ Evaluates GitHub Actions workflow runs, performs post-mortem diagnostics on fail
 - Performing post-mortems on intermittent or flaky failures
 
 **Anti-patterns (when NOT to use):**
+
 - Initial workflow creation from scratch (use CI/CD optimizer)
 - Non-GitHub CI systems (Jenkins, GitLab, CircleCI)
 - Manual debugging when you need to understand the code deeply
@@ -130,12 +133,12 @@ Evaluate the latest GitHub Actions workflow run on the repository's default bran
 
 ### Job Summary
 
-| Job | Duration | Status |
-|-----|----------|--------|
-| lint | 28s | Pass |
-| test-unit | 1m 45s | Pass |
-| test-integration | 2m 12s | Pass |
-| build | 47s | Pass |
+| Job              | Duration | Status |
+| ---------------- | -------- | ------ |
+| lint             | 28s      | Pass   |
+| test-unit        | 1m 45s   | Pass   |
+| test-integration | 2m 12s   | Pass   |
+| build            | 47s      | Pass   |
 
 All 12 checks completed successfully. No issues detected.
 
@@ -180,6 +183,7 @@ E           accepting TCP/IP connections on port 5432?
 **Diagnosis**: Database container startup race condition
 
 **Evidence**:
+
 1. PostgreSQL service container defined in workflow
 2. Tests started immediately after `docker-compose up -d`
 3. Connection refused error indicates DB not ready
@@ -188,6 +192,7 @@ E           accepting TCP/IP connections on port 5432?
 **Confidence**: High (95%) - Classic race condition pattern
 
 **Contributing Factors**:
+
 - PostgreSQL 15 has slightly longer startup time than 14
 - No health check or readiness wait in workflow
 - Previous success was due to timing luck
@@ -272,21 +277,26 @@ services:
 **Labels**: `ci-failure`, `database`, `race-condition`
 
 **Body**:
+
 ```markdown
 ## Summary
+
 Integration tests in Build and Test workflow failing due to PostgreSQL
 container not being ready when tests start.
 
 ## Root Cause
+
 After upgrading PostgreSQL from 14 to 15 in commit def456a, the container
 takes slightly longer to initialize. Tests were starting before the database
 was accepting connections.
 
 ## Resolution
+
 Added explicit `pg_isready` check before running integration tests.
 See commit abc789.
 
 ## Prevention
+
 Consider adding health checks to all service containers and using
 `docker-compose up --wait` pattern for future workflows.
 ```
@@ -297,17 +307,18 @@ Consider adding health checks to all service containers and using
 
 This prompt supports three operational modes based on context needs:
 
-| Variant | Token Usage | Speed | Accuracy | Best For |
-|---------|-------------|-------|----------|----------|
-| Token-Efficient | Low (~200) | High | Moderate | High-frequency automated triage |
-| Balanced (Default) | Moderate (~500) | High | High | General DevOps agents |
-| Verbose | High (~1000) | Lower | Very High | Critical infrastructure, audit needs |
+| Variant            | Token Usage     | Speed | Accuracy  | Best For                             |
+| ------------------ | --------------- | ----- | --------- | ------------------------------------ |
+| Token-Efficient    | Low (~200)      | High  | Moderate  | High-frequency automated triage      |
+| Balanced (Default) | Moderate (~500) | High  | High      | General DevOps agents                |
+| Verbose            | High (~1000)    | Lower | Very High | Critical infrastructure, audit needs |
 
 Select variant based on operational context and cost constraints.
 
 ---
 
 ## Related Prompts
+
 - [CI/CD Pipeline Optimizer](../devops/cicd-pipeline-optimizer.md) - Optimize pipeline performance
 - [Deployment Pipeline Creation Expert](../../technical-workflows/deployment-pipeline-creation-expert.md) - Create new pipelines
 - [Debugging Expert](../../problem-solving/debugging-expert.md) - Debug application code issues

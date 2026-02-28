@@ -1,6 +1,7 @@
 # Terraform Project Validator
 
 ## Metadata
+
 - **ID**: `terraform-project-validator`
 - **Version**: 1.0.0
 - **Category**: Technical/Infrastructure
@@ -18,6 +19,7 @@ Validates, formats, and lints Terraform projects using automated tooling, then c
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Validating Terraform configurations before deployment
 - Enforcing consistent formatting across team projects
 - Automating code quality checks in CI/CD pipelines
@@ -25,6 +27,7 @@ Validates, formats, and lints Terraform projects using automated tooling, then c
 - Pre-commit validation workflows
 
 **Anti-patterns (Don't Use For):**
+
 - Terraform module development from scratch
 - Infrastructure design and architecture decisions
 - State management operations or migrations
@@ -119,11 +122,12 @@ COMMIT_MESSAGE: "chore(terraform): standardize formatting and fix lint warnings"
 **Terraform Validation Report**
 
 **Phase 1: Terraform Formatter**
-*Persona: Precise code beautifier*
+_Persona: Precise code beautifier_
 
 Executing `terraform fmt -recursive` on project root...
 
 Files modified (3):
+
 - `modules/vpc/main.tf` - Aligned resource blocks, standardized spacing
 - `environments/prod/variables.tf` - Fixed indentation inconsistencies
 - `modules/ec2/outputs.tf` - Normalized attribute alignment
@@ -138,7 +142,7 @@ Files modified (3):
 ```
 
 **Phase 2: Terraform Validator**
-*Persona: Configuration schema validator*
+_Persona: Configuration schema validator_
 
 Executing `terraform init -backend=false && terraform validate`...
 
@@ -151,28 +155,29 @@ Success! The configuration is valid.
 ```
 
 **Phase 3: TFLint Analysis**
-*Persona: Static code critic*
+_Persona: Static code critic_
 
 Executing `tflint --recursive`...
 
-| Severity | File | Line | Rule | Issue |
-|----------|------|------|------|-------|
-| WARNING | main.tf | 15 | terraform_unused_declarations | Unused variable "legacy_setting" |
-| ERROR | modules/ec2/main.tf | 42 | aws_instance_invalid_type | Invalid instance type "t2.micro" in us-west-2 |
-| INFO | outputs.tf | 8 | terraform_documented_outputs | Output description recommended |
+| Severity | File                | Line | Rule                          | Issue                                         |
+| -------- | ------------------- | ---- | ----------------------------- | --------------------------------------------- |
+| WARNING  | main.tf             | 15   | terraform_unused_declarations | Unused variable "legacy_setting"              |
+| ERROR    | modules/ec2/main.tf | 42   | aws_instance_invalid_type     | Invalid instance type "t2.micro" in us-west-2 |
+| INFO     | outputs.tf          | 8    | terraform_documented_outputs  | Output description recommended                |
 
 Auto-remediated: Removed unused variable declaration from main.tf line 15
 
 Requires manual attention: Instance type validation in modules/ec2/main.tf
 
 **Phase 4: Git Commit**
-*Persona: GitOps automation assistant*
+_Persona: GitOps automation assistant_
 
 - Staged: 3 files
 - Commit: `abc123f` - "chore(terraform): standardize formatting and fix lint warnings"
 - Push: Success to `main` branch
 
 **Summary**
+
 - Formatting issues fixed: 3 files
 - Validation: Passed
 - Lint warnings remediated: 1

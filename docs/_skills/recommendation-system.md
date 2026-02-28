@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build collaborative and content-based recommendation engines for product
+date: "2025-01-01"
+description:
+  Build collaborative and content-based recommendation engines for product
   recommendations, personalization, and improving user engagement
 layout: skill
 slug: recommendation-system
 tags:
-- development
+  - development
 title: Recommendation System
 ---
 

@@ -292,6 +292,7 @@ class ProfileScreen extends StatelessWidget {
 ## Best Practices
 
 ### ✅ DO
+
 - Use widgets for every UI element
 - Implement proper state management
 - Use const constructors where possible
@@ -304,6 +305,7 @@ class ProfileScreen extends StatelessWidget {
 - Document custom widgets
 
 ### ❌ DON'T
+
 - Build entire screens in build() method
 - Use setState for complex state logic
 - Make network calls in build()

@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Build binary and multiclass classification models using logistic regression,
+date: "2025-01-01"
+description:
+  Build binary and multiclass classification models using logistic regression,
   decision trees, and ensemble methods for categorical prediction and classification
 layout: skill
 slug: classification-modeling
 tags:
-- go
+  - go
 title: Classification Modeling
 ---
 

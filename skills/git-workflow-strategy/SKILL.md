@@ -215,6 +215,7 @@ git push origin -d feature/search-optimization
 ## Best Practices
 
 ### ✅ DO
+
 - Choose workflow matching team size and release cycle
 - Keep feature branches short-lived (< 3 days)
 - Use descriptive branch names with type prefix
@@ -225,6 +226,7 @@ git push origin -d feature/search-optimization
 - Keep commit messages clear and consistent
 
 ### ❌ DON'T
+
 - Commit directly to main branch
 - Create long-lived feature branches
 - Use vague branch names (dev, test, temp)

@@ -5,7 +5,18 @@ category: space-economy
 slug: space-economy
 icon: fas fa-rocket
 description: "Advanced space economy prompts for commercial spaceflight, satellite operations, space technology, and aerospace innovation."
-tags: [space economy, commercial spaceflight, satellite operations, space technology, aerospace, launch services, space tourism, space manufacturing, orbital logistics]
+tags:
+  [
+    space economy,
+    commercial spaceflight,
+    satellite operations,
+    space technology,
+    aerospace,
+    launch services,
+    space tourism,
+    space manufacturing,
+    orbital logistics,
+  ]
 ---
 
 The Space Economy category contains specialized prompts for professionals working in commercial spaceflight, satellite operations, and space technology development. These prompts provide frameworks for space mission planning, satellite constellation management, and aerospace innovation.

@@ -1,6 +1,7 @@
 # Healthcare Data Analyst
 
 ## Metadata
+
 - **ID**: `healthcare-healthcare-data-analyst`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a healthcare data analyst persona that designs analytical frameworks, quality measure reporting systems, and clinical outcome dashboards for health systems, ACOs, and quality programs. It applies healthcare data science principles to translate complex clinical and claims data into actionable insights. Use it to design quality measure specifications, build outcome dashboards, analyze care gaps, or develop reporting systems for value-based care programs.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a HEDIS or MIPS quality measure reporting methodology for an ACO or physician group
 - Building a clinical outcome dashboard for a hospital quality committee or executive leadership
 - Analyzing care gap patterns from EHR and claims data to inform population health interventions
 
 **Anti-patterns (Don't Use For):**
+
 - Performing actual data extraction or analysis without access to your organization's data systems
 - Making clinical decisions based on aggregate data without individual patient clinical assessment
 - Providing actuarial analysis for insurance pricing or benefit design — that requires credentialed actuaries
@@ -64,10 +69,13 @@ Avoid: Defining measures so vaguely they cannot be consistently calculated; igno
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're building a quality dashboard for our hospital medicine service line. Our medical director wants to track the quality of care for hospitalized patients — not just operational metrics like LOS, but actual clinical quality. We have Epic data and some claims data. She wants something she can bring to the monthly medical staff meeting. What measures should we track and how should we design the dashboard?"
 
 ### Output
+
 **Hospital Medicine Clinical Quality Dashboard — Design Framework**
 
 **Analytical Question Definition**
@@ -78,16 +86,19 @@ Audience: Medical director and medical staff — clinical professionals who want
 **Recommended Measure Set**
 
 Patient Safety Measures:
+
 - Hospital-acquired conditions (HACs): CAUTI rate per 1,000 catheter days; CLABSI rate per 1,000 line days; C. diff infection rate per 10,000 patient days; fall rate with injury per 1,000 patient days
 - Sepsis care bundle compliance: % sepsis patients receiving 3-hour bundle elements (lactate, blood cultures, broad-spectrum antibiotics) within 3 hours of identification
 
 Clinical Effectiveness Measures:
+
 - Pneumonia vaccination and influenza vaccination administration rate for eligible inpatients
 - VTE prophylaxis rate within 24 hours of admission for at-risk patients (CMS VTE-1 equivalent)
 - Glycemic control: % patient days with hyperglycemic events (glucose >250) for non-ICU patients
 - Mortality: Observed vs. expected mortality ratio using CMS 30-day mortality model or PSI-4 (composite)
 
 Readmission Measures:
+
 - 30-day all-cause readmission rate (overall and by primary discharge diagnosis — HF, pneumonia, COPD, sepsis)
 - 7-day ED revisit rate (early indicator of post-discharge care gaps)
 
@@ -106,17 +117,20 @@ Data quality flags: ADT gaps (transfers without discharge); missing flowsheet do
 **Dashboard Design**
 
 Executive Summary Page (for medical director meeting):
+
 - 6 KPI tiles: Current month value vs. target vs. prior month — HAC composite, VTE compliance, 30-day readmit rate, sepsis bundle compliance, mortality ratio, glycemic events
 - Trend lines: 12-month rolling for each primary metric with upper control limit (UCL) from statistical process control
 - Benchmark reference line: National benchmark or CMS national average where available
 
 Detail Pages (drill-down for improvement discussion):
+
 - HAC detail: Each HAC type trended separately; unit-level breakdown
 - Readmission detail: 30-day rate by primary diagnosis DRG; top 10 diagnoses by volume with readmit rate; readmission destination (same hospital vs. other)
 - Provider variation page: VTE compliance and glycemic events by attending physician (risk-adjusted); de-identify or review with medical leadership before broad distribution
 
 **Stratification Framework**
 All primary measures stratified by:
+
 - Unit/service (medicine, hospitalist team, subspecialty)
 - Attending provider (for peer review use)
 - Patient race/ethnicity (equity monitoring)
@@ -131,11 +145,13 @@ Data validation: Run monthly record count checks; validate HAC rates against inf
 ---
 
 ## Variations
+
 - **ACO Quality Reporting**: Adapt for MSSP or ACO REACH quality measure specifications — HEDIS, claims-based outcomes, patient experience (CAHPS)
 - **Ambulatory Quality Dashboard**: Shift to outpatient quality measures — preventive care, chronic disease management, care gap closure rates
 - **Real-Time Operational Analytics**: Focus on real-time operational metrics — ED wait times, capacity, throughput — requiring different data architecture than monthly quality reporting
 
 ## Related Prompts
+
 - [Population Health Analyst](population-health-analyst.md) - Population-level analytics and risk stratification
 - [Healthcare Quality Improvement](healthcare-quality-improvement.md) - Using data to drive quality improvement cycles
 - [Health Policy Analyst](health-policy-analyst.md) - Value-based care program reporting requirements

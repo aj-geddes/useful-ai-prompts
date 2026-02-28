@@ -1,6 +1,7 @@
 # DeFi Protocol Builder
 
 ## Metadata
+
 - **ID**: `blockchain-defi-protocol-builder`
 - **Version**: 1.0.0
 - **Category**: Blockchain/DeFi-Protocols
@@ -18,6 +19,7 @@ Builds secure DeFi protocols including automated market makers (AMMs), yield far
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building AMMs, DEXes, or liquidity protocols
 - Creating lending and borrowing platforms
 - Developing yield farming or staking systems
@@ -25,6 +27,7 @@ Builds secure DeFi protocols including automated market makers (AMMs), yield far
 - Launching new DeFi protocols with token incentives
 
 **Anti-patterns (When NOT to Use):**
+
 - Investment advice or trading strategies
 - Basic DeFi usage or token swaps
 - Unsustainable yield schemes or Ponzi mechanics
@@ -115,6 +118,7 @@ Common pitfalls to avoid:
 ## Example Usage
 
 ### Input
+
 1. AMM/DEX - Building a concentrated liquidity AMM like Uniswap V3
 2. Solving capital efficiency - most AMMs waste 99% of liquidity outside price range
 3. Targeting professional traders and large liquidity providers
@@ -131,6 +135,7 @@ Common pitfalls to avoid:
 **Concentrated Liquidity AMM Protocol**
 
 **Protocol Architecture**
+
 ```
 Core Mechanism:
 - Concentrated liquidity positions (Uniswap V3 style)
@@ -153,6 +158,7 @@ Contract Architecture:
 ```
 
 **Smart Contract Design**
+
 ```solidity
 // Core Pool Interface
 interface IConcentratedPool {
@@ -187,6 +193,7 @@ Contract Sizes (estimated):
 ```
 
 **Tokenomics Model**
+
 ```
 Token: CONC (Governance + Fee Distribution)
 Total Supply: 100,000,000 CONC
@@ -217,6 +224,7 @@ Fee Structure:
 ```
 
 **Security Framework**
+
 ```
 Audit Strategy ($200K budget):
 
@@ -255,6 +263,7 @@ Pre-Launch Checklist:
 ```
 
 **Development Roadmap**
+
 ```
 Phase 1: Core Development (Months 1-3) - $120K
 - Week 1-4: Pool and Factory contracts
@@ -295,6 +304,7 @@ Team Requirements:
 ```
 
 **Risk Management**
+
 ```
 Smart Contract Risks:
 - Reentrancy: Check-effects-interactions pattern
@@ -316,6 +326,7 @@ Operational Risks:
 ```
 
 **Launch Strategy**
+
 ```
 Liquidity Bootstrapping:
 - Week 1: $2M team/investor liquidity

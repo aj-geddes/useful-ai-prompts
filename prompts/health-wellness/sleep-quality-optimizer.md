@@ -1,6 +1,7 @@
 # Sleep Quality Optimizer
 
 ## Metadata
+
 - **ID**: `health-sleep-quality`
 - **Version**: 1.0.0
 - **Category**: Health & Wellness
@@ -18,6 +19,7 @@ An interactive sleep optimization consultant that analyzes and improves sleep qu
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Comprehensive sleep quality assessment and improvement
 - Addressing multiple simultaneous sleep-related issues
 - Creating complete sleep transformation programs
@@ -25,6 +27,7 @@ An interactive sleep optimization consultant that analyzes and improves sleep qu
 - Developing long-term sleep optimization strategies
 
 **Anti-Patterns (When NOT to Use):**
+
 - Sleep disorder diagnosis requiring medical evaluation
 - Sleep study interpretation
 - Medication decisions or adjustments
@@ -109,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10am. Fall asleep time: 30 min usually, hour when stressed. Night wakings: 2-3 times. Quality: 5/10, rarely feel rested. Environment: 70-72F, somewhat dark (blackout curtains), phone by bed, TV in bedroom. Lifestyle: 2-3 coffees (last at 3pm), evening workouts 6-7pm, scroll phone until sleepy, stressed from work.
 
 ### Output
@@ -117,14 +121,16 @@ Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10a
 
 **Sleep Analysis:**
 
-*Pattern Issues:*
+_Pattern Issues:_
+
 - Weekend-weekday variance: 1.5 hours (creates "social jetlag")
 - Sleep onset: Extended (30-60 min, optimal is 10-20)
 - Sleep maintenance: Disrupted (2-3 wakings vs. 0-1 normal)
 - Sleep quality: Poor (5/10, snoozing indicates unrefreshing sleep)
 - Estimated sleep efficiency: 65-70% (target: 85%+)
 
-*Primary Disruptors (Ranked):*
+_Primary Disruptors (Ranked):_
+
 1. Afternoon caffeine (still in system at bedtime)
 2. Evening exercise (elevated cortisol and temperature)
 3. Screen stimulation (blue light + mental activation)
@@ -133,25 +139,29 @@ Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10a
 
 **Phase 1: Foundation (Weeks 1-2)**
 
-*Schedule Consistency:*
+_Schedule Consistency:_
+
 - Bedtime: 11:00pm every night (including weekends)
 - Wake time: 7:00am every day (no snoozing)
 - Non-negotiable: Weekend variation max 30 minutes
 
-*Caffeine Optimization:*
+_Caffeine Optimization:_
+
 - Last coffee: 12:00pm noon (hard cutoff)
 - Afternoon: Switch to herbal tea or decaf
 - Expected impact: Improved sleep onset within 5-7 days
 
 **Phase 2: Environment + Routine (Weeks 3-4)**
 
-*Bedroom Optimization:*
+_Bedroom Optimization:_
+
 - Temperature: Lower to 65-67F
 - Phone: Charge in another room (get separate alarm clock)
 - TV: Remove from bedroom or commit to no use after 9pm
 - Darkness: Add sleep mask if needed
 
-*Wind-Down Routine (10:00pm start):*
+_Wind-Down Routine (10:00pm start):_
+
 ```
 10:00pm - Screens off (all devices)
 10:00-10:20 - Low-stimulation activity (reading, stretching, prep for tomorrow)
@@ -162,17 +172,20 @@ Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10a
 
 **Phase 3: Lifestyle Optimization (Weeks 5-6)**
 
-*Exercise Timing:*
+_Exercise Timing:_
+
 - Move workouts to before 5pm if possible
 - If evening only: Complete by 5:30pm, lower intensity
 - Alternative: Morning exercise (significant sleep quality improvement)
 
-*Stress Management:*
+_Stress Management:_
+
 - Daily: 5-minute breathing practice
 - Evening: Dedicated worry processing time (not in bed)
 - Work boundary: End-of-day transition ritual
 
 **Circadian Support:**
+
 - Morning: 10-15 min bright light within 30 min of waking
 - Daytime: Maximize natural light exposure
 - Evening: Dim lights progressively after 8pm
@@ -180,18 +193,21 @@ Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10a
 
 **Tracking Framework:**
 
-*Daily Log:*
+_Daily Log:_
+
 - Bedtime and sleep onset time
 - Number of wakings
 - Wake time and ease of rising
 - Energy rating (morning and afternoon)
 
-*Weekly Review:*
+_Weekly Review:_
+
 - Average sleep quality rating
 - Patterns in good vs. poor nights
 - Adjustments needed
 
 **Expected Timeline:**
+
 - Week 2: Easier sleep onset, reduced snoozing
 - Week 4: Fewer night wakings, better morning energy
 - Week 6: 7-8/10 sleep quality consistently
@@ -199,6 +215,7 @@ Weekday: Bed 11:30pm, wake 7am (snooze until 7:20). Weekend: Bed 1am, wake 9-10a
 
 **Medical Referral Triggers:**
 Consult healthcare provider if after 6 weeks:
+
 - Still snoring or gasping at night
 - Daytime sleepiness remains severe
 - Sleep onset still >45 minutes consistently
@@ -207,6 +224,7 @@ Consult healthcare provider if after 6 weeks:
 ---
 
 ## Related Prompts
+
 - [Sleep Optimization Specialist](sleep-optimization-specialist.md)
 - [Mindfulness Meditation Guide](mindfulness-meditation-guide.md)
 - [Stress Reduction Strategist](stress-reduction-strategist.md)

@@ -3,33 +3,34 @@ title: Business Continuity Planner
 slug: business-continuity-planner
 category: operations
 tags:
-- business-continuity
-- BCP
-- disaster-recovery
-- RTO
-- RPO
-- crisis-communication
-- scenario-planning
+  - business-continuity
+  - BCP
+  - disaster-recovery
+  - RTO
+  - RPO
+  - crisis-communication
+  - scenario-planning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a business continuity planning expert who designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a business continuity planning expert who designs
   BCP and disaster recovery frameworks, defines RTO and RPO targets, runs scenario-based
   risk analysis, and builds crisis communication protocols. It covers operational,
   technology, supply chain, and workforce continuity across disruption scenarios from
   equipment failure to natural disaster.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A business lacks a formal BCP and leadership wants to build one following a near-miss
-  event or audit finding
-- An existing BCP needs to be updated for new risks (cyberattack, single-supplier
-  dependency, climate events) or tested through a tabletop exercise
-- A company needs to define RTO and RPO targets for critical business processes to
-  guide IT disaster recovery investment decisions
-- Cybersecurity incident response requiring technical forensic expertise (complement
-  with a specialized CISO or IR team)
+  - Ideal Scenarios:**
+  - A business lacks a formal BCP and leadership wants to build one following a near-miss
+    event or audit finding
+  - An existing BCP needs to be updated for new risks (cyberattack, single-supplier
+    dependency, climate events) or tested through a tabletop exercise
+  - A company needs to define RTO and RPO targets for critical business processes to
+    guide IT disaster recovery investment decisions
+  - Cybersecurity incident response requiring technical forensic expertise (complement
+    with a specialized CISO or IR team)
 complexity: advanced
 interaction: multi-turn
 ---

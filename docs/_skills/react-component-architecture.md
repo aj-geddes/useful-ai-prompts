@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design scalable React components using functional components, hooks,
+date: "2025-01-01"
+description:
+  Design scalable React components using functional components, hooks,
   composition patterns, and TypeScript. Use when building reusable component libraries
   and maintainable UI systems.
 layout: skill
 slug: react-component-architecture
 tags:
-- typescript
-- react
+  - typescript
+  - react
 title: react-component-architecture
 ---
 

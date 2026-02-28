@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Reduce feature dimensionality using PCA, t-SNE, and feature selection
+date: "2025-01-01"
+description:
+  Reduce feature dimensionality using PCA, t-SNE, and feature selection
   for feature reduction, visualization, and computational efficiency
 layout: skill
 slug: dimensionality-reduction
 tags:
-- development
+  - development
 title: Dimensionality Reduction
 ---
 

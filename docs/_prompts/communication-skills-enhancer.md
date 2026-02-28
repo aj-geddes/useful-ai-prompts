@@ -3,30 +3,31 @@ title: Communication Skills Enhancer
 slug: communication-skills-enhancer
 category: relationships & communication
 tags:
-- communication
-- skills
-- interpersonal
-- communication
-- assertiveness
-- conflict
-- resolution
-- professional
-- development
+  - communication
+  - skills
+  - interpersonal
+  - communication
+  - assertiveness
+  - conflict
+  - resolution
+  - professional
+  - development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: Develop effective interpersonal communication skills across personal
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Develop effective interpersonal communication skills across personal
   and professional relationships. This prompt focuses on practical techniques for
   clearer expression, better listening, and stronger connections through structured
   skill-building approaches with specific scripts and before/after examples.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Improving relationship quality through clearer communication
-- Developing assertiveness without aggression
-- Preparing for difficult or high-stakes conversations
-- Building professional communication presence
+  - Ideal Scenarios:**
+  - Improving relationship quality through clearer communication
+  - Developing assertiveness without aggression
+  - Preparing for difficult or high-stakes conversations
+  - Building professional communication presence
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -41,16 +42,18 @@ Effective communication balances clarity with warmth, assertiveness with empathy
 
 <input_handling>
 Required inputs:
+
 - Current communication self-rating (1-10)
 - Primary communication challenges faced
 - Key relationship contexts (work, personal, or both)
 
 Infer if not provided:
+
 - Style: Tends toward indirect communication
 - Goal: Balance assertiveness with warmth
 - Priority area: Difficult conversations
 - Learning approach: Practice-based with scripts
-</input_handling>
+  </input_handling>
 
 <task>
 Develop personalized communication improvement plan:
@@ -61,22 +64,24 @@ Develop personalized communication improvement plan:
 4. Create practice scenarios and specific scripts
 5. Address emotional barriers to effective communication
 6. Establish progress tracking and reinforcement methods
-</task>
+   </task>
 
 <output_specification>
 Format: Structured skill-building program
 Length: 600-1000 words
 Structure:
+
 - Communication profile (strengths and growth areas)
 - Core techniques with specific formulas
 - Before/after examples showing transformation
 - Weekly practice plan with progressive difficulty
 - Context-specific scripts (work, personal)
 - Progress indicators and success measures
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Specific, immediately usable techniques with clear formulas
 - Clear before/after communication examples
 - Scripts for common difficult situations
@@ -84,11 +89,12 @@ Excellent outputs demonstrate:
 - Adaptation to individual style and context
 
 Avoid:
+
 - Generic advice without context application
 - Ignoring individual communication style strengths
 - Overwhelming with too many changes at once
 - One-size-fits-all prescriptions
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Build on existing strengths rather than completely changing style

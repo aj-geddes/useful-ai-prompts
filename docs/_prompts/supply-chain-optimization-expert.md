@@ -3,27 +3,28 @@ title: Supply Chain Optimization Expert
 slug: supply-chain-optimization-expert
 category: optimization
 tags:
-- supply-chain
-- inventory
-- logistics
-- procurement
-- distribution
+  - supply-chain
+  - inventory
+  - logistics
+  - procurement
+  - distribution
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: Optimizes supply chain operations for cost efficiency, speed, reliability,
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  Optimizes supply chain operations for cost efficiency, speed, reliability,
   and resilience. Addresses inventory management, supplier relationships, distribution
   networks, and logistics to improve overall supply chain performance while balancing
   service levels with cost constraints.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- High inventory costs or frequent stockouts affecting customer satisfaction
-- Long lead times limiting market responsiveness
-- Supplier reliability issues causing production disruptions
-- Distribution inefficiencies increasing delivery costs and times
+  - Ideal Scenarios:**
+  - High inventory costs or frequent stockouts affecting customer satisfaction
+  - Long lead times limiting market responsiveness
+  - Supplier reliability issues causing production disruptions
+  - Distribution inefficiencies increasing delivery costs and times
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,16 +39,18 @@ Supply chain optimization balances competing objectives: minimizing costs while 
 
 <input_handling>
 Required:
+
 - Products or materials in scope (types, volume, SKU count)
 - Current supply chain structure (suppliers, facilities, distribution)
 - Primary supply chain challenges or pain points
 
 Infer if not provided:
+
 - Scale: Mid-size operation (50-500 SKUs)
 - Current performance: Average for industry
 - Technology: Basic ERP/inventory systems in place
 - Optimization goal: Balance cost reduction and service improvement
-</input_handling>
+  </input_handling>
 
 <task>
 Create a supply chain optimization strategy for improved performance:
@@ -58,31 +61,34 @@ Create a supply chain optimization strategy for improved performance:
 4. **Create Implementation Roadmap**: Plan phased implementation with quick wins and longer-term initiatives
 5. **Build Risk Mitigation**: Address key supply chain vulnerabilities and resilience
 6. **Establish Monitoring Framework**: Define KPIs and review cadence for ongoing performance management
-</task>
+   </task>
 
 <output_specification>
 **Format**: Structured Supply Chain Optimization Plan with 4 sections
 **Length**: 600-800 words
 **Sections**:
+
 1. Assessment - Current state analysis, bottlenecks, and performance gaps
 2. Optimization Strategy - Specific improvements with impact estimates
 3. Implementation - Phased roadmap with quick wins and milestones
 4. Monitoring - KPIs, targets, and review cadence
-</output_specification>
+   </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Recommendations that balance cost, service, and risk appropriately
 - Improvements that are specific, quantified, and achievable
 - Implementation plans that consider organizational readiness and change management
 - Risk mitigation addressing key supply chain vulnerabilities
 
 Avoid:
+
 - Optimizing cost at the expense of reliability and service
 - Recommendations requiring major system changes without business case
 - Ignoring demand variability in inventory decisions
 - Generic advice without specific applications to the situation
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Work within existing technology infrastructure where possible

@@ -1,6 +1,7 @@
 # Code Refactoring Expert
 
 ## Metadata
+
 - **ID**: `code-refactoring-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Transforms legacy or poorly structured code into clean, maintainable implementat
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reducing code complexity and technical debt systematically
 - Improving code testability and maintainability
 - Modernizing legacy codebases incrementally without rewrites
 - Preparing code for new feature development by cleaning interfaces
 
 **Anti-patterns (Don't Use For):**
+
 - Complete system rewrites (use modernization expert)
 - API redesigns affecting external consumers
 - Architecture migrations across technology stacks
@@ -114,26 +117,27 @@ We have a 15-year-old Java monolith with 500K LOC. Lots of duplicated code, meth
 
 Hotspots identified using cyclomatic complexity and change frequency:
 
-| File | Lines | Complexity | Coupling | Priority |
-|------|-------|------------|----------|----------|
-| `PaymentProcessor.java` | 847 | 45 | High | Critical |
-| `OrderService.java` | 1,200 | 38 | High | High |
-| `CustomerManager.java` | 600 | 22 | Medium | Medium |
+| File                    | Lines | Complexity | Coupling | Priority |
+| ----------------------- | ----- | ---------- | -------- | -------- |
+| `PaymentProcessor.java` | 847   | 45         | High     | Critical |
+| `OrderService.java`     | 1,200 | 38         | High     | High     |
+| `CustomerManager.java`  | 600   | 22         | Medium   | Medium   |
 
 Code duplication analysis: 23% overall duplication, concentrated in validation logic and error handling patterns.
 
 Root causes:
+
 - No interface abstractions for payment types (violates Open-Closed Principle)
 - Database access mixed with business logic (violates Single Responsibility)
 - Copy-paste validation instead of shared utilities
 
 **Prioritized Refactoring Targets**
 
-| Priority | Target | Pattern | Risk | Pre-requisite Coverage |
-|----------|--------|---------|------|------------------------|
-| 1 | PaymentProcessor | Extract Interface + Strategy | High | 80% before refactor |
-| 2 | OrderService | Extract Class + Facade | Medium | 70% before refactor |
-| 3 | Validation logic | Extract Method + Template | Low | Existing 30% sufficient |
+| Priority | Target           | Pattern                      | Risk   | Pre-requisite Coverage  |
+| -------- | ---------------- | ---------------------------- | ------ | ----------------------- |
+| 1        | PaymentProcessor | Extract Interface + Strategy | High   | 80% before refactor     |
+| 2        | OrderService     | Extract Class + Facade       | Medium | 70% before refactor     |
+| 3        | Validation logic | Extract Method + Template    | Low    | Existing 30% sufficient |
 
 **Phase 1: Safety Net (Weeks 1-3)**
 
@@ -210,6 +214,7 @@ public class PaymentProcessor {
 **Validation Criteria**
 
 After each refactoring phase:
+
 - All existing tests pass (zero regressions)
 - Cyclomatic complexity per method reduced to <10
 - No new code duplication introduced
@@ -217,12 +222,12 @@ After each refactoring phase:
 
 **Metrics Tracking**
 
-| Metric | Before | After Phase 2 | Target |
-|--------|--------|---------------|--------|
-| PaymentProcessor complexity | 45 | <10 | <10 |
-| Test coverage | 30% | 80% | 80%+ |
-| Duplication | 23% | 18% | <15% |
-| Time to add payment type | 2 weeks | 2 days | <3 days |
+| Metric                      | Before  | After Phase 2 | Target  |
+| --------------------------- | ------- | ------------- | ------- |
+| PaymentProcessor complexity | 45      | <10           | <10     |
+| Test coverage               | 30%     | 80%           | 80%+    |
+| Duplication                 | 23%     | 18%           | <15%    |
+| Time to add payment type    | 2 weeks | 2 days        | <3 days |
 
 ---
 

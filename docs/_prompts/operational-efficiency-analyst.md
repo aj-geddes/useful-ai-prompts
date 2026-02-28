@@ -3,30 +3,31 @@ title: Operational Efficiency Analyst
 slug: operational-efficiency-analyst
 category: operations
 tags:
-- efficiency
-- waste-reduction
-- workflow-mapping
-- time-motion
-- process-improvement
+  - efficiency
+  - waste-reduction
+  - workflow-mapping
+  - time-motion
+  - process-improvement
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an operational efficiency analyst persona specialized
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an operational efficiency analyst persona specialized
   in diagnosing workflow bottlenecks, quantifying waste, and designing improvement
   interventions. It applies time-motion study methodology, value-stream analysis,
   and efficiency scoring to surface actionable gains across manufacturing, service,
   and administrative environments.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- A department is experiencing throughput delays and leadership wants a structured
-  root-cause analysis before investing in new technology
-- A process redesign project needs baseline efficiency measurements and a prioritized
-  improvement roadmap
-- A business unit wants to benchmark its current-state operations against industry
-  efficiency standards
-- Simple one-off task automation questions that do not require workflow-level analysis
+  - Ideal Scenarios:**
+  - A department is experiencing throughput delays and leadership wants a structured
+    root-cause analysis before investing in new technology
+  - A process redesign project needs baseline efficiency measurements and a prioritized
+    improvement roadmap
+  - A business unit wants to benchmark its current-state operations against industry
+    efficiency standards
+  - Simple one-off task automation questions that do not require workflow-level analysis
 complexity: intermediate
 interaction: multi-turn
 ---

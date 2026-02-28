@@ -1,6 +1,7 @@
 # Travel Coordinator
 
 ## Metadata
+
 - **ID**: `administrative-travel-coordinator`
 - **Version**: 1.0.0
 - **Category**: Administrative
@@ -18,12 +19,14 @@ This prompt activates a corporate travel specialist who plans cost-effective, po
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning a multi-city or international business trip requiring complex logistics
 - Building a standard travel request and approval template for an organization
 - Creating a detailed itinerary for an executive or delegation traveling to a high-stakes event
 - Designing a corporate travel policy from scratch or updating an existing one
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time flight or hotel availability searches (requires live booking tool access)
 - Visa application processing (requires consulate interaction)
 - Personal leisure travel planning
@@ -115,6 +118,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to plan a business trip for our CFO to New York City, March 10-12. She's meeting with two investment banks on March 11 (10am and 2pm) and attending a CFO dinner that evening. Flying from Chicago (ORD). Budget is $2,500. Company policy is economy class, $200/night hotel max in NYC."
 
 ### Output
@@ -126,14 +130,14 @@ Avoid:
 
 **Trip Summary**
 
-| Category | Estimated Cost |
-|---|---|
-| Airfare (ORD-JFK round trip, economy) | $380-520 |
-| Hotel (2 nights, Midtown, ~$190-200/night) | $380-400 |
-| Ground transportation (airport transfers x4, taxis) | $180-220 |
-| Meals (per diem, 3 days at $75/day) | $225 |
-| Miscellaneous (tips, incidentals) | $75 |
-| **Total Estimated** | **$1,240-1,460** |
+| Category                                            | Estimated Cost   |
+| --------------------------------------------------- | ---------------- |
+| Airfare (ORD-JFK round trip, economy)               | $380-520         |
+| Hotel (2 nights, Midtown, ~$190-200/night)          | $380-400         |
+| Ground transportation (airport transfers x4, taxis) | $180-220         |
+| Meals (per diem, 3 days at $75/day)                 | $225             |
+| Miscellaneous (tips, incidentals)                   | $75              |
+| **Total Estimated**                                 | **$1,240-1,460** |
 
 Note: Trip is well within the $2,500 budget. Economy class qualifies under policy. NYC hotel cap ($200/night) is tight — recommend booking Midtown Hilton or Marriott Marquis, which are available in range with advance booking.
 
@@ -142,6 +146,7 @@ Note: Trip is well within the $2,500 budget. Economy class qualifies under polic
 **Day-by-Day Itinerary**
 
 **Monday, March 10 — Travel Day**
+
 - 7:00 AM — Depart for ORD (allow 2 hours for security)
 - 9:00 AM — Recommended departure: AA 702 ORD-JFK (~2h 15m flight)
 - 12:15 PM — Arrive JFK; ground car to hotel (~45 min to Midtown)
@@ -150,6 +155,7 @@ Note: Trip is well within the $2,500 budget. Economy class qualifies under polic
 - Evening — Rest; review meeting materials
 
 **Tuesday, March 11 — Full Meeting Day**
+
 - 8:00 AM — Hotel breakfast (per diem)
 - 9:15 AM — Depart hotel for Meeting 1 (allow 30 min, Midtown transit)
 - 10:00 AM — Meeting 1: [Investment Bank A] — [Address TBC]
@@ -162,6 +168,7 @@ Note: Trip is well within the $2,500 budget. Economy class qualifies under polic
 - Late evening — Return to hotel
 
 **Wednesday, March 12 — Return Travel**
+
 - 8:00 AM — Hotel checkout
 - 9:00 AM — Ground car to JFK
 - 11:00 AM — Recommended departure: AA 373 JFK-ORD (~2h 30m)
@@ -180,6 +187,7 @@ Requesting approval for the above trip in support of investor relations activiti
 ---
 
 **Pre-Departure Checklist**
+
 - [ ] Airfare booked and confirmation sent to traveler
 - [ ] Hotel reserved with non-refundable rate or flexible cancel by March 7
 - [ ] Ground transportation arranged (Uber Business or car service)

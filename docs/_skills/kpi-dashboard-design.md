@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design and build dashboards that track key performance indicators. Select
+date: "2025-01-01"
+description:
+  Design and build dashboards that track key performance indicators. Select
   relevant metrics, visualize data effectively, and communicate insights to stakeholders.
 layout: skill
 slug: kpi-dashboard-design
 tags:
-- data
+  - data
 title: kpi-dashboard-design
 ---
 
@@ -239,10 +240,10 @@ class KPIDashboard {
       threshold: this.calculateThreshold(kpi),
       visualization: {
         type: kpi.chart_type, // 'gauge', 'number', 'chart'
-        config: this.getVisualizationConfig(kpi)
+        config: this.getVisualizationConfig(kpi),
       },
       drill_down: true,
-      refresh_frequency: kpi.refresh_rate || 'hourly'
+      refresh_frequency: kpi.refresh_rate || "hourly",
     };
   }
 
@@ -251,19 +252,19 @@ class KPIDashboard {
 
     return {
       green: kpi.target_value,
-      yellow: kpi.target_value - (range * 0.2),
-      red: kpi.target_value - (range * 0.5),
+      yellow: kpi.target_value - range * 0.2,
+      red: kpi.target_value - range * 0.5,
       status: this.getStatus(kpi),
-      trend: this.calculateTrend(kpi)
+      trend: this.calculateTrend(kpi),
     };
   }
 
   getStatus(kpi) {
     const percentOfTarget = kpi.current_value / kpi.target_value;
 
-    if (percentOfTarget >= 1) return 'Green';
-    if (percentOfTarget >= 0.8) return 'Yellow';
-    return 'Red';
+    if (percentOfTarget >= 1) return "Green";
+    if (percentOfTarget >= 0.8) return "Yellow";
+    return "Red";
   }
 
   calculateTrend(kpi) {
@@ -271,28 +272,28 @@ class KPIDashboard {
     const changePercent = (change / kpi.previous_period_value) * 100;
 
     return {
-      direction: change > 0 ? 'Up' : 'Down',
+      direction: change > 0 ? "Up" : "Down",
       value: Math.abs(changePercent).toFixed(1),
-      momentum: this.assessMomentum(change, kpi)
+      momentum: this.assessMomentum(change, kpi),
     };
   }
 
   generateAlerts() {
     return this.widgets
-      .filter(w => w.threshold.status !== 'Green')
-      .map(w => ({
+      .filter((w) => w.threshold.status !== "Green")
+      .map((w) => ({
         severity: w.threshold.status,
         message: `${w.title} is ${w.threshold.status} (${w.metric_value} vs ${w.target_value} target)`,
-        action: 'Review and investigate',
-        timestamp: new Date()
+        action: "Review and investigate",
+        timestamp: new Date(),
       }));
   }
 
   exportReport() {
     return {
-      format: ['PDF', 'Excel', 'CSV'],
-      include: ['Metrics', 'Charts', 'Trends', 'Commentary'],
-      schedule: 'Weekly, every Monday morning'
+      format: ["PDF", "Excel", "CSV"],
+      include: ["Metrics", "Charts", "Trends", "Commentary"],
+      schedule: "Weekly, every Monday morning",
     };
   }
 }
@@ -357,6 +358,7 @@ Common KPI Mistakes to Avoid:
 ## Best Practices
 
 ### ✅ DO
+
 - Start with business goals, not data
 - Limit dashboards to 5-7 core metrics
 - Include both leading and lagging indicators
@@ -369,6 +371,7 @@ Common KPI Mistakes to Avoid:
 - Document metric definitions
 
 ### ❌ DON'T
+
 - Create dashboards without clear purpose
 - Include too many metrics (analysis paralysis)
 - Forget about data quality

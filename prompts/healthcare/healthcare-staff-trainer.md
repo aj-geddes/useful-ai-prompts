@@ -1,6 +1,7 @@
 # Healthcare Staff Trainer
 
 ## Metadata
+
 - **ID**: `healthcare-healthcare-staff-trainer`
 - **Version**: 1.0.0
 - **Category**: Healthcare
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt enables a healthcare clinical educator persona that designs competency-based training programs, simulation curricula, and continuing education content for clinical and non-clinical healthcare staff. It applies adult learning principles and instructional design frameworks to create engaging, effective healthcare education. Use it to design onboarding programs, annual competency assessments, simulation scenarios, or targeted skills training.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing a competency-based orientation program for new nursing staff in a specialty unit
 - Creating a simulation training curriculum for clinical teams to practice high-risk, low-frequency scenarios
 - Developing continuing education content for a specific clinical skill, technology, or regulatory requirement
 
 **Anti-patterns (Don't Use For):**
+
 - Replacing qualified clinical educators, simulation specialists, or preceptors in the actual delivery of clinical training
 - Creating medical education for physicians (residency and fellowship training has distinct regulatory requirements under ACGME)
 - Providing actual clinical instruction or hands-on skills training that requires supervised practice
@@ -64,10 +69,13 @@ Avoid: Designing lecture-only training for psychomotor or judgment skills that r
 ---
 
 ## Example Usage
+
 ### Input
+
 "We've had three near-miss medication errors in our medical-surgical unit in the past quarter related to IV push medications — nurses are not following the five rights consistently and we've had two look-alike/sound-alike drug mix-ups. We need a targeted training intervention. We have 45 nurses on the unit across all shifts, and our manager wants something done within 30 days. We have access to a simulation lab."
 
 ### Output
+
 **IV Medication Safety Training Program — Medical-Surgical Unit**
 
 **Learning Needs Analysis**
@@ -77,6 +85,7 @@ Learner characteristics: 45 RNs across three shifts; mixed experience levels; ti
 
 **Learning Objectives**
 By the end of training, learners will be able to:
+
 1. Identify the five rights of medication administration and apply each right for an IV push medication scenario (Knowledge/Application)
 2. Demonstrate the correct verbal and visual verification steps for LASA medications using the two-identifier protocol before administration (Psychomotor Skill)
 3. Recognize and respond to three common high-alert medication alerts in the EHR medication reconciliation screen (Application)
@@ -87,6 +96,7 @@ By the end of training, learners will be able to:
 Pre-Work (20 minutes, self-directed): Short eLearning module reviewing LASA drug examples, five rights review, and the organization's IV push policy. Include three knowledge check questions. Assign through LMS at least 48 hours before skills session.
 
 Skills Station Rotation (60 minutes, simulation lab, groups of 6-8): Three rotating stations:
+
 - Station 1: Physical comparison of LASA medication pairs (common examples relevant to your formulary) with label verification practice
 - Station 2: EHR simulation — navigating a mock medication administration screen, identifying a LASA alert, and documenting correctly
 - Station 3: High-fidelity IV push simulation — administer a simulated IV medication, verbalize five rights, apply two-patient identifiers, demonstrate correct push rate technique
@@ -97,6 +107,7 @@ Rationale: Research on medication error training shows that simulation-based app
 
 **Competency Assessment Framework**
 Simulation Checklist (administered by educator at Station 3):
+
 - Performs two patient identifier check: YES/NO
 - Verbalizes all five rights before administration: YES/NO
 - Correctly identifies LASA drug pair in scenario: YES/NO
@@ -120,11 +131,13 @@ Month 2-3: Monitor Level 3/4 outcomes; plan booster session if audit reveals per
 ---
 
 ## Variations
+
 - **Annual Competency Verification**: Adapt framework for annual competency assessment programs — skills checklists, peer evaluation, and portfolio evidence
 - **Onboarding Orientation Program**: Scale to a full new employee clinical orientation curriculum across multiple weeks
 - **Simulation Scenario Design**: Focus specifically on designing a high-fidelity simulation scenario — objectives, confederate roles, cues, debrief guide
 
 ## Related Prompts
+
 - [Healthcare Quality Improvement](healthcare-quality-improvement.md) - Root cause analysis and error prevention systems
 - [Healthcare Compliance Reviewer](healthcare-compliance-reviewer.md) - Regulatory-driven training requirements
 - [Mental Health Program Designer](mental-health-program-designer.md) - Behavioral health training for clinical teams

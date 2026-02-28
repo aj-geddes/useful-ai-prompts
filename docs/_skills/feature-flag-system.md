@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Implement feature flags (toggles) for controlled feature rollouts, A/B
+date: "2025-01-01"
+description:
+  Implement feature flags (toggles) for controlled feature rollouts, A/B
   testing, canary deployments, and kill switches. Use when deploying new features
   gradually, testing in production, or managing feature lifecycles.
 layout: skill
 slug: feature-flag-system
 tags:
-- testing
-- deployment
+  - testing
+  - deployment
 title: feature-flag-system
 ---
 
@@ -46,8 +47,8 @@ interface FlagConfig {
 }
 
 interface FlagRule {
-  type: 'user' | 'percentage' | 'attribute' | 'datetime';
-  operator: 'in' | 'equals' | 'contains' | 'gt' | 'lt' | 'between';
+  type: "user" | "percentage" | "attribute" | "datetime";
+  operator: "in" | "equals" | "contains" | "gt" | "lt" | "between";
   attribute?: string;
   values: any[];
 }
@@ -74,50 +75,50 @@ class FeatureFlagService {
 
   private loadFlags(): void {
     // Load from database or config
-    this.flags.set('new-dashboard', {
-      key: 'new-dashboard',
+    this.flags.set("new-dashboard", {
+      key: "new-dashboard",
       enabled: true,
-      description: 'New dashboard UI',
+      description: "New dashboard UI",
       rules: [
         {
-          type: 'percentage',
-          operator: 'lt',
-          values: [25] // 25% rollout
-        }
+          type: "percentage",
+          operator: "lt",
+          values: [25], // 25% rollout
+        },
       ],
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     });
 
-    this.flags.set('premium-features', {
-      key: 'premium-features',
+    this.flags.set("premium-features", {
+      key: "premium-features",
       enabled: true,
-      description: 'Premium features for paid users',
+      description: "Premium features for paid users",
       rules: [
         {
-          type: 'attribute',
-          operator: 'equals',
-          attribute: 'plan',
-          values: ['premium', 'enterprise']
-        }
+          type: "attribute",
+          operator: "equals",
+          attribute: "plan",
+          values: ["premium", "enterprise"],
+        },
       ],
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     });
 
-    this.flags.set('beta-feature', {
-      key: 'beta-feature',
+    this.flags.set("beta-feature", {
+      key: "beta-feature",
       enabled: true,
-      description: 'Beta feature',
+      description: "Beta feature",
       rules: [
         {
-          type: 'user',
-          operator: 'in',
-          values: ['user1', 'user2', 'user3']
-        }
+          type: "user",
+          operator: "in",
+          values: ["user1", "user2", "user3"],
+        },
       ],
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     });
   }
 
@@ -154,22 +155,25 @@ class FeatureFlagService {
     return this.selectVariant(flag.variants, context);
   }
 
-  private evaluateRules(rules: FlagRule[], context: EvaluationContext): boolean {
-    return rules.every(rule => this.evaluateRule(rule, context));
+  private evaluateRules(
+    rules: FlagRule[],
+    context: EvaluationContext,
+  ): boolean {
+    return rules.every((rule) => this.evaluateRule(rule, context));
   }
 
   private evaluateRule(rule: FlagRule, context: EvaluationContext): boolean {
     switch (rule.type) {
-      case 'user':
+      case "user":
         return this.evaluateUserRule(rule, context);
 
-      case 'percentage':
+      case "percentage":
         return this.evaluatePercentageRule(rule, context);
 
-      case 'attribute':
+      case "attribute":
         return this.evaluateAttributeRule(rule, context);
 
-      case 'datetime':
+      case "datetime":
         return this.evaluateDateTimeRule(rule, context);
 
       default:
@@ -177,35 +181,44 @@ class FeatureFlagService {
     }
   }
 
-  private evaluateUserRule(rule: FlagRule, context: EvaluationContext): boolean {
+  private evaluateUserRule(
+    rule: FlagRule,
+    context: EvaluationContext,
+  ): boolean {
     if (!context.userId) return false;
 
     return rule.values.includes(context.userId);
   }
 
-  private evaluatePercentageRule(rule: FlagRule, context: EvaluationContext): boolean {
+  private evaluatePercentageRule(
+    rule: FlagRule,
+    context: EvaluationContext,
+  ): boolean {
     const hash = this.hashContext(context);
     const percentage = (hash % 100) + 1;
 
     return percentage <= rule.values[0];
   }
 
-  private evaluateAttributeRule(rule: FlagRule, context: EvaluationContext): boolean {
+  private evaluateAttributeRule(
+    rule: FlagRule,
+    context: EvaluationContext,
+  ): boolean {
     if (!rule.attribute || !context.attributes) return false;
 
     const value = context.attributes[rule.attribute];
 
     switch (rule.operator) {
-      case 'equals':
+      case "equals":
         return rule.values.includes(value);
 
-      case 'contains':
-        return rule.values.some(v => String(value).includes(v));
+      case "contains":
+        return rule.values.some((v) => String(value).includes(v));
 
-      case 'gt':
+      case "gt":
         return value > rule.values[0];
 
-      case 'lt':
+      case "lt":
         return value < rule.values[0];
 
       default:
@@ -213,17 +226,23 @@ class FeatureFlagService {
     }
   }
 
-  private evaluateDateTimeRule(rule: FlagRule, context: EvaluationContext): boolean {
+  private evaluateDateTimeRule(
+    rule: FlagRule,
+    context: EvaluationContext,
+  ): boolean {
     const now = context.timestamp || Date.now();
 
-    if (rule.operator === 'between') {
+    if (rule.operator === "between") {
       return now >= rule.values[0] && now <= rule.values[1];
     }
 
     return false;
   }
 
-  private selectVariant(variants: FlagVariant[], context: EvaluationContext): any {
+  private selectVariant(
+    variants: FlagVariant[],
+    context: EvaluationContext,
+  ): any {
     const hash = this.hashContext(context);
     const totalWeight = variants.reduce((sum, v) => sum + v.weight, 0);
     const position = hash % totalWeight;
@@ -240,23 +259,25 @@ class FeatureFlagService {
   }
 
   private hashContext(context: EvaluationContext): number {
-    const str = context.userId || context.email || 'anonymous';
+    const str = context.userId || context.email || "anonymous";
     let hash = 0;
 
     for (let i = 0; i < str.length; i++) {
       const char = str.charCodeAt(i);
-      hash = ((hash << 5) - hash) + char;
+      hash = (hash << 5) - hash + char;
       hash = hash & hash;
     }
 
     return Math.abs(hash);
   }
 
-  async createFlag(config: Omit<FlagConfig, 'createdAt' | 'updatedAt'>): Promise<void> {
+  async createFlag(
+    config: Omit<FlagConfig, "createdAt" | "updatedAt">,
+  ): Promise<void> {
     this.flags.set(config.key, {
       ...config,
       createdAt: new Date(),
-      updatedAt: new Date()
+      updatedAt: new Date(),
     });
   }
 
@@ -269,7 +290,7 @@ class FeatureFlagService {
     this.flags.set(key, {
       ...flag,
       ...updates,
-      updatedAt: new Date()
+      updatedAt: new Date(),
     });
   }
 
@@ -286,19 +307,19 @@ class FeatureFlagService {
 const featureFlags = new FeatureFlagService();
 
 // Simple boolean check
-if (featureFlags.isEnabled('new-dashboard', { userId: 'user123' })) {
-  console.log('Show new dashboard');
+if (featureFlags.isEnabled("new-dashboard", { userId: "user123" })) {
+  console.log("Show new dashboard");
 }
 
 // With user attributes
-const hasPremiumFeatures = featureFlags.isEnabled('premium-features', {
-  userId: 'user123',
-  attributes: { plan: 'premium' }
+const hasPremiumFeatures = featureFlags.isEnabled("premium-features", {
+  userId: "user123",
+  attributes: { plan: "premium" },
 });
 
 // Get variant for A/B testing
-const buttonColor = featureFlags.getVariant('button-color-test', {
-  userId: 'user123'
+const buttonColor = featureFlags.getVariant("button-color-test", {
+  userId: "user123",
 });
 ```
 
@@ -423,7 +444,7 @@ class FeatureFlagServiceWithAnalytics extends FeatureFlagService {
       userId: context.userId,
       result,
       timestamp: Date.now(),
-      duration
+      duration,
     });
 
     return result;
@@ -440,23 +461,26 @@ class FeatureFlagServiceWithAnalytics extends FeatureFlagService {
       result: variant !== null,
       variant,
       timestamp: Date.now(),
-      duration
+      duration,
     });
 
     return variant;
   }
 
   private trackEvaluation(event: FlagEvaluationEvent): void {
-    this.analytics.track('feature_flag_evaluated', {
+    this.analytics.track("feature_flag_evaluated", {
       flag_key: event.flagKey,
       user_id: event.userId,
       result: event.result,
       variant: event.variant,
-      duration_ms: event.duration
+      duration_ms: event.duration,
     });
   }
 
-  async getAnalytics(flagKey: string, timeRange: { start: Date; end: Date }): Promise<{
+  async getAnalytics(
+    flagKey: string,
+    timeRange: { start: Date; end: Date },
+  ): Promise<{
     evaluations: number;
     uniqueUsers: number;
     enabledRate: number;
@@ -685,6 +709,7 @@ function FeatureFlagDashboard() {
 ## Best Practices
 
 ### ✅ DO
+
 - Use descriptive flag names
 - Document flag purpose and lifecycle
 - Implement gradual rollouts
@@ -697,6 +722,7 @@ function FeatureFlagDashboard() {
 - Provide admin UI for non-technical users
 
 ### ❌ DON'T
+
 - Use flags for permanent configuration
 - Accumulate technical debt with old flags
 - Skip flag cleanup

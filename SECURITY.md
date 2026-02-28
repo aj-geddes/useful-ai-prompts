@@ -19,16 +19,19 @@ Only the current `main` branch is actively maintained. We do not provide securit
 For a prompt library, security issues may include:
 
 ### High Priority
+
 - **Prompt injection attacks**: Prompts designed to manipulate AI systems into bypassing safety guidelines or performing unintended actions
 - **Malicious content**: Prompts that encourage or facilitate harmful, illegal, or unethical activities
 - **Data exfiltration prompts**: Content designed to trick AI systems into revealing sensitive information
 
 ### Medium Priority
+
 - **Jailbreak attempts**: Prompts crafted to circumvent AI safety measures
 - **Deceptive prompts**: Content that misrepresents its purpose or contains hidden instructions
 - **Social engineering templates**: Prompts designed to manipulate users or third parties
 
 ### Lower Priority
+
 - **Biased or discriminatory content**: Prompts that promote unfair treatment of individuals or groups
 - **Misinformation templates**: Prompts designed to generate false or misleading content
 
@@ -51,6 +54,7 @@ If you cannot use GitHub Security Advisories:
 3. Request a private communication channel for full disclosure
 
 **Please do not:**
+
 - Publicly disclose the full details of security issues before they are addressed
 - Submit security reports for issues that do not fall within the scope defined above
 
@@ -63,12 +67,12 @@ If you cannot use GitHub Security Advisories:
 
 ## Response Timeline
 
-| Action | Expected Timeframe |
-| ------ | ------------------ |
-| Initial acknowledgment | Within 48 hours |
-| Preliminary assessment | Within 5 business days |
-| Resolution for high-priority issues | Within 14 days |
-| Resolution for medium/lower priority | Within 30 days |
+| Action                               | Expected Timeframe     |
+| ------------------------------------ | ---------------------- |
+| Initial acknowledgment               | Within 48 hours        |
+| Preliminary assessment               | Within 5 business days |
+| Resolution for high-priority issues  | Within 14 days         |
+| Resolution for medium/lower priority | Within 30 days         |
 
 These timelines are targets and may vary based on the complexity of the issue and maintainer availability.
 

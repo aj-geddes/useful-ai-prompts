@@ -1,6 +1,7 @@
 # Event Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-event`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ An event management specialist that helps you create memorable, impactful events
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning corporate conferences, trade shows, or product launches
 - Organizing hybrid or virtual events with professional production
 - Coordinating multi-day events with complex logistics
@@ -25,6 +27,7 @@ An event management specialist that helps you create memorable, impactful events
 - Managing large-scale company meetings or retreats
 
 **Anti-patterns (Don't Use For):**
+
 - Wedding planning or personal celebrations
 - Venue selection decisions (requires site visits)
 - Small informal team gatherings
@@ -148,21 +151,24 @@ Services: Full catering, professional AV, expo hall for sponsors
 
 **Event Concept: "Innovate Together 2025"**
 
-*Experience Pillars*
+_Experience Pillars_
+
 - Learn: Product education and industry insights from thought leaders
 - Connect: Meaningful networking and relationship building opportunities
 - Inspire: Customer success stories and future vision presentations
 - Engage: Interactive demos and hands-on product experiences
 
-*Attendee Journey Design*
+_Attendee Journey Design_
 
 In-Person Experience:
+
 - VIP welcome experience with personalized check-in kiosks
 - Conference app with AI-powered networking suggestions
 - Interactive product playground with hands-on demo stations
 - Themed networking zones for different interests/industries
 
 Virtual Experience:
+
 - Professional broadcast-quality streaming on dedicated platform
 - Virtual networking lounges with video chat capabilities
 - Interactive Q&A and polling during all sessions
@@ -170,19 +176,22 @@ Virtual Experience:
 
 **Planning Timeline (12 Weeks)**
 
-*Phase 1: Foundation (Weeks 12-9)*
+_Phase 1: Foundation (Weeks 12-9)_
+
 - Week 12: Finalize event strategy, form planning committee, issue venue RFPs
 - Week 11: Complete venue site visits, evaluate options
 - Week 10: Secure venue contract, launch registration, confirm keynote speakers
 - Week 9: Complete visual identity/branding, launch early bird registration
 
-*Phase 2: Build (Weeks 8-5)*
+_Phase 2: Build (Weeks 8-5)_
+
 - Week 8: Finalize sponsor packages, launch marketing campaign, complete speaker lineup
 - Week 7: Begin content development with speakers
 - Week 6: Finalize session content and schedule, complete all vendor contracts
 - Week 5: Registration checkpoint review, finalize catering counts
 
-*Phase 3: Execute (Weeks 4-1)*
+_Phase 3: Execute (Weeks 4-1)_
+
 - Week 4: Send detailed agenda to registrants, complete all presentations
 - Week 3: Final content review and rehearsals
 - Week 2: Final vendor confirmations, complete risk assessment walkthrough
@@ -190,58 +199,59 @@ Virtual Experience:
 
 **Budget Breakdown ($300,000)**
 
-| Category | Amount | % | Notes |
-|----------|--------|---|-------|
-| Venue & Facilities | $75,000 | 25% | Space rental, furniture, signage |
-| Food & Beverage | $60,000 | 20% | Breakfast, lunch, breaks, reception |
-| Technology (AV, Virtual) | $50,000 | 17% | Staging, streaming, hybrid platform |
-| Speakers & Content | $40,000 | 13% | Speaker fees, travel, production |
-| Marketing & Promotion | $30,000 | 10% | Email, social, paid media, collateral |
-| Staffing | $25,000 | 8% | Event staff, registration, support |
-| Attendee Experience | $15,000 | 5% | Gifts, signage, networking activities |
-| Contingency | $5,000 | 2% | Emergency reserve |
+| Category                 | Amount  | %   | Notes                                 |
+| ------------------------ | ------- | --- | ------------------------------------- |
+| Venue & Facilities       | $75,000 | 25% | Space rental, furniture, signage      |
+| Food & Beverage          | $60,000 | 20% | Breakfast, lunch, breaks, reception   |
+| Technology (AV, Virtual) | $50,000 | 17% | Staging, streaming, hybrid platform   |
+| Speakers & Content       | $40,000 | 13% | Speaker fees, travel, production      |
+| Marketing & Promotion    | $30,000 | 10% | Email, social, paid media, collateral |
+| Staffing                 | $25,000 | 8%  | Event staff, registration, support    |
+| Attendee Experience      | $15,000 | 5%  | Gifts, signage, networking activities |
+| Contingency              | $5,000  | 2%  | Emergency reserve                     |
 
-*Projected ROI*
+_Projected ROI_
+
 - Target 200 leads at $1,500 LTV = $300K pipeline
 - 50 key account touchpoints at $10K expansion potential = $500K pipeline
 - Break-even: 67 leads generated
 
 **Day-of Timeline (Day 1 - March 15)**
 
-| Time | Activity | Lead | Location |
-|------|----------|------|----------|
-| 6:00 AM | Setup begins, AV team arrives | Production Manager | Main hall |
-| 7:00 AM | Staff briefing, review assignments | Event Director | Green room |
-| 7:30 AM | Registration opens, VIP check-in | Registration Lead | Lobby |
-| 8:30 AM | Attendee welcome, coffee service | Catering Lead | Pre-function |
-| 9:00 AM | Opening keynote, live stream begins | AV Director | Main stage |
-| 10:30 AM | Session rotations begin (4 tracks) | Session Managers | Breakout rooms |
-| 12:00 PM | Lunch service, networking | Catering Lead | Expo hall |
-| 1:30 PM | Afternoon sessions resume | Session Managers | Breakout rooms |
-| 5:00 PM | Sessions conclude, transition to reception | All leads | Expo hall |
-| 5:30 PM | Welcome reception, networking activities | Events Lead | Terrace |
-| 8:00 PM | Reception concludes | Security | All areas |
+| Time     | Activity                                   | Lead               | Location       |
+| -------- | ------------------------------------------ | ------------------ | -------------- |
+| 6:00 AM  | Setup begins, AV team arrives              | Production Manager | Main hall      |
+| 7:00 AM  | Staff briefing, review assignments         | Event Director     | Green room     |
+| 7:30 AM  | Registration opens, VIP check-in           | Registration Lead  | Lobby          |
+| 8:30 AM  | Attendee welcome, coffee service           | Catering Lead      | Pre-function   |
+| 9:00 AM  | Opening keynote, live stream begins        | AV Director        | Main stage     |
+| 10:30 AM | Session rotations begin (4 tracks)         | Session Managers   | Breakout rooms |
+| 12:00 PM | Lunch service, networking                  | Catering Lead      | Expo hall      |
+| 1:30 PM  | Afternoon sessions resume                  | Session Managers   | Breakout rooms |
+| 5:00 PM  | Sessions conclude, transition to reception | All leads          | Expo hall      |
+| 5:30 PM  | Welcome reception, networking activities   | Events Lead        | Terrace        |
+| 8:00 PM  | Reception concludes                        | Security           | All areas      |
 
 **Contingency Plans**
 
-| Risk | Impact | Mitigation | Backup Plan |
-|------|--------|------------|-------------|
-| Technology failure | High | Redundant streaming, backup recording | Local recording, post-event distribution |
-| Speaker cancellation | High | Backup speakers pre-identified | Pre-recorded content available |
-| Low registration | Medium | Targeted outreach, VIP invitations | Adjust catering, consolidate rooms |
-| Weather disruption | Medium | Indoor alternatives identified | Virtual-only backup option |
-| Catering issue | Medium | Secondary vendor on standby | Emergency catering contact ready |
+| Risk                 | Impact | Mitigation                            | Backup Plan                              |
+| -------------------- | ------ | ------------------------------------- | ---------------------------------------- |
+| Technology failure   | High   | Redundant streaming, backup recording | Local recording, post-event distribution |
+| Speaker cancellation | High   | Backup speakers pre-identified        | Pre-recorded content available           |
+| Low registration     | Medium | Targeted outreach, VIP invitations    | Adjust catering, consolidate rooms       |
+| Weather disruption   | Medium | Indoor alternatives identified        | Virtual-only backup option               |
+| Catering issue       | Medium | Secondary vendor on standby           | Emergency catering contact ready         |
 
 **Success Metrics**
 
-| Metric | Target | Measurement Method |
-|--------|--------|-------------------|
-| In-person attendance | 450+ (90%) | Registration check-in |
-| Virtual attendance | 800+ (80%) | Platform analytics |
-| Session attendance | 70% average | Room counts + stream views |
-| Attendee satisfaction | 4.5/5.0 | Post-event survey |
-| Lead generation | 200 qualified | CRM tracking |
-| NPS | 50+ | Post-event survey |
+| Metric                | Target        | Measurement Method         |
+| --------------------- | ------------- | -------------------------- |
+| In-person attendance  | 450+ (90%)    | Registration check-in      |
+| Virtual attendance    | 800+ (80%)    | Platform analytics         |
+| Session attendance    | 70% average   | Room counts + stream views |
+| Attendee satisfaction | 4.5/5.0       | Post-event survey          |
+| Lead generation       | 200 qualified | CRM tracking               |
+| NPS                   | 50+           | Post-event survey          |
 
 ---
 

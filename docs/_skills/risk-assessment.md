@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Identify, analyze, and prioritize project risks using qualitative and
+date: "2025-01-01"
+description:
+  Identify, analyze, and prioritize project risks using qualitative and
   quantitative methods. Develop mitigation strategies to minimize impact and maximize
   project success probability.
 layout: skill
 slug: risk-assessment
 tags:
-- development
+  - development
 title: risk-assessment
 ---
 
@@ -121,20 +122,20 @@ class RiskAnalysis {
 
   // Probability scale 1-5
   static PROBABILITY = {
-    1: { name: 'Very Low', percentage: 0.1, color: 'Green' },
-    2: { name: 'Low', percentage: 0.3, color: 'Green' },
-    3: { name: 'Medium', percentage: 0.5, color: 'Yellow' },
-    4: { name: 'High', percentage: 0.7, color: 'Orange' },
-    5: { name: 'Very High', percentage: 0.9, color: 'Red' }
+    1: { name: "Very Low", percentage: 0.1, color: "Green" },
+    2: { name: "Low", percentage: 0.3, color: "Green" },
+    3: { name: "Medium", percentage: 0.5, color: "Yellow" },
+    4: { name: "High", percentage: 0.7, color: "Orange" },
+    5: { name: "Very High", percentage: 0.9, color: "Red" },
   };
 
   // Impact scale 1-5
   static IMPACT = {
-    1: { name: 'Negligible', value: 1, scope: 'Minor inconvenience' },
-    2: { name: 'Minor', value: 10, scope: 'Some delay or cost' },
-    3: { name: 'Moderate', value: 100, scope: 'Significant delay or cost' },
-    4: { name: 'Major', value: 1000, scope: 'Critical failure risk' },
-    5: { name: 'Catastrophic', value: 10000, scope: 'Project cancellation' }
+    1: { name: "Negligible", value: 1, scope: "Minor inconvenience" },
+    2: { name: "Minor", value: 10, scope: "Some delay or cost" },
+    3: { name: "Moderate", value: 100, scope: "Significant delay or cost" },
+    4: { name: "Major", value: 1000, scope: "Critical failure risk" },
+    5: { name: "Catastrophic", value: 10000, scope: "Project cancellation" },
   };
 
   analyzeRisk(risk) {
@@ -153,23 +154,23 @@ class RiskAnalysis {
       riskExposure,
       priority: this.calculatePriority(riskScore),
       severity: this.calculateSeverity(riskScore),
-      mitigationUrgency: riskExposure > 100 ? 'Immediate' : 'Planned'
+      mitigationUrgency: riskExposure > 100 ? "Immediate" : "Planned",
     };
   }
 
   calculatePriority(riskScore) {
-    if (riskScore >= 16) return 'Critical';
-    if (riskScore >= 12) return 'High';
-    if (riskScore >= 6) return 'Medium';
-    if (riskScore >= 2) return 'Low';
-    return 'Very Low';
+    if (riskScore >= 16) return "Critical";
+    if (riskScore >= 12) return "High";
+    if (riskScore >= 6) return "Medium";
+    if (riskScore >= 2) return "Low";
+    return "Very Low";
   }
 
   calculateSeverity(riskScore) {
     return {
       score: riskScore,
       rating: this.calculatePriority(riskScore),
-      responseNeeded: riskScore >= 12
+      responseNeeded: riskScore >= 12,
     };
   }
 
@@ -180,17 +181,17 @@ class RiskAnalysis {
       high: [],
       medium: [],
       low: [],
-      veryLow: []
+      veryLow: [],
     };
 
-    risks.forEach(risk => {
+    risks.forEach((risk) => {
       const analysis = this.analyzeRisk(risk);
       const priority = analysis.priority.toLowerCase();
 
       if (matrix[priority]) {
         matrix[priority].push({
           ...risk,
-          ...analysis
+          ...analysis,
         });
       }
     });
@@ -278,7 +279,7 @@ class RiskMonitoring {
 
   createRiskRegister(risks) {
     return risks.map((risk, index) => ({
-      id: `RK-${String(index + 1).padStart(3, '0')}`,
+      id: `RK-${String(index + 1).padStart(3, "0")}`,
       description: risk.description,
       category: risk.category,
       probability: risk.probability,
@@ -286,12 +287,12 @@ class RiskMonitoring {
       riskScore: risk.probability * risk.impact,
       responseStrategy: risk.strategy,
       owner: risk.owner,
-      status: 'Active',
+      status: "Active",
       triggers: risk.triggers,
       contingencyPlan: risk.contingency,
       createdDate: new Date(),
       lastReviewDate: new Date(),
-      closeDate: null
+      closeDate: null,
     }));
   }
 
@@ -300,22 +301,22 @@ class RiskMonitoring {
       riskId: risk.id,
       triggers: [
         {
-          trigger: 'Vendor communication delay >1 week',
-          indicator: 'No response from vendor',
-          escalationAction: 'Contact vendor PM, evaluate alternatives'
+          trigger: "Vendor communication delay >1 week",
+          indicator: "No response from vendor",
+          escalationAction: "Contact vendor PM, evaluate alternatives",
         },
         {
-          trigger: 'Team member absence >3 days',
-          indicator: 'Unplanned time off',
-          escalationAction: 'Activate cross-training plan'
+          trigger: "Team member absence >3 days",
+          indicator: "Unplanned time off",
+          escalationAction: "Activate cross-training plan",
         },
         {
-          trigger: 'Performance test fails baseline',
-          indicator: 'Response time > 500ms',
-          escalationAction: 'Emergency optimization sprint'
-        }
+          trigger: "Performance test fails baseline",
+          indicator: "Response time > 500ms",
+          escalationAction: "Emergency optimization sprint",
+        },
       ],
-      reviewFrequency: 'Weekly standup'
+      reviewFrequency: "Weekly standup",
     };
   }
 
@@ -324,13 +325,15 @@ class RiskMonitoring {
       timestamp: new Date(),
       summary: {
         total: riskRegister.length,
-        active: riskRegister.filter(r => r.status === 'Active').length,
-        mitigated: riskRegister.filter(r => r.status === 'Mitigated').length,
-        closed: riskRegister.filter(r => r.status === 'Closed').length
+        active: riskRegister.filter((r) => r.status === "Active").length,
+        mitigated: riskRegister.filter((r) => r.status === "Mitigated").length,
+        closed: riskRegister.filter((r) => r.status === "Closed").length,
       },
-      criticalRisks: riskRegister.filter(r => r.riskScore >= 16),
-      highRisks: riskRegister.filter(r => r.riskScore >= 12 && r.riskScore < 16),
-      triggeredRisks: riskRegister.filter(r => r.triggered === true)
+      criticalRisks: riskRegister.filter((r) => r.riskScore >= 16),
+      highRisks: riskRegister.filter(
+        (r) => r.riskScore >= 12 && r.riskScore < 16,
+      ),
+      triggeredRisks: riskRegister.filter((r) => r.triggered === true),
     };
 
     return statusReport;
@@ -341,6 +344,7 @@ class RiskMonitoring {
 ## Best Practices
 
 ### ✅ DO
+
 - Identify risks early in project planning
 - Involve diverse team members in risk identification
 - Quantify risk impact when possible
@@ -353,6 +357,7 @@ class RiskMonitoring {
 - Communicate risks transparently to stakeholders
 
 ### ❌ DON'T
+
 - Wait until problems occur to identify risks
 - Assume risks will not materialize
 - Treat all risks as equal priority

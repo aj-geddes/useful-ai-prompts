@@ -1,6 +1,7 @@
 # Digital Supply Chain Transformation Expert
 
 ## Metadata
+
 - **ID**: `supply-chain-digital-transformation`
 - **Version**: 1.1.0
 - **Category**: Supply Chain
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Lead digital supply chain transformation initiatives including technology assessment, platform integration, automation implementation, and change management. Combines deep operational knowledge with digital strategy to modernize supply chain operations and deliver measurable improvements in efficiency, visibility, and responsiveness.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Planning enterprise digital transformation for supply chain
 - Evaluating and implementing supply chain technology platforms
 - Designing automation and predictive analytics strategies
@@ -23,6 +27,7 @@ Lead digital supply chain transformation initiatives including technology assess
 - Building business cases for supply chain technology investment
 
 **Anti-Patterns (When NOT to Use):**
+
 - Basic supply chain operations without technology focus
 - Non-digital process improvement initiatives
 - Single-system implementation (use vendor resources)
@@ -114,19 +119,21 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're a mid-size manufacturer with legacy ERP, manual planning processes, and limited visibility. Want to modernize supply chain with $8M budget over 2 years. Key goals: 40% efficiency improvement, real-time visibility, predictive analytics."
 
 ### Output
+
 **Digital Supply Chain Transformation Strategy**
 
 **Current State Assessment**
 
-| Dimension | Current State | Maturity Level |
-|-----------|---------------|----------------|
-| Planning | Manual, Excel-heavy | Level 1 (Reactive) |
-| Execution | Basic ERP functions | Level 2 (Managed) |
-| Visibility | Batch reporting, delays | Level 1 (Reactive) |
-| Analytics | Descriptive only | Level 1 (Reactive) |
+| Dimension  | Current State             | Maturity Level     |
+| ---------- | ------------------------- | ------------------ |
+| Planning   | Manual, Excel-heavy       | Level 1 (Reactive) |
+| Execution  | Basic ERP functions       | Level 2 (Managed)  |
+| Visibility | Batch reporting, delays   | Level 1 (Reactive) |
+| Analytics  | Descriptive only          | Level 1 (Reactive) |
 | Automation | Minimal, manual processes | Level 1 (Reactive) |
 
 **Transformation Vision**
@@ -134,35 +141,39 @@ Evolve from reactive, manual operations to intelligent, connected supply chain w
 
 **Target State Architecture**
 
-| Component | Solution | Purpose |
-|-----------|----------|---------|
-| Planning | Cloud S&OP platform | Integrated demand-supply planning |
-| Execution | Modern ERP + WMS | Automated execution |
-| Visibility | Control tower | Real-time monitoring |
-| Analytics | BI + predictive | Data-driven decisions |
-| Integration | API platform | System connectivity |
+| Component   | Solution            | Purpose                           |
+| ----------- | ------------------- | --------------------------------- |
+| Planning    | Cloud S&OP platform | Integrated demand-supply planning |
+| Execution   | Modern ERP + WMS    | Automated execution               |
+| Visibility  | Control tower       | Real-time monitoring              |
+| Analytics   | BI + predictive     | Data-driven decisions             |
+| Integration | API platform        | System connectivity               |
 
 **Implementation Roadmap**
 
 **Phase 1: Foundation (Months 1-6, $2M)**
+
 - Data infrastructure and integration platform
 - Control tower for end-to-end visibility
 - Basic analytics dashboards and KPIs
 - Quick wins: Automated reporting, real-time inventory
 
 **Phase 2: Intelligence (Months 7-12, $3M)**
+
 - Advanced planning system implementation
 - Predictive analytics deployment
 - Demand sensing and forecasting
 - Value: 20% planning efficiency improvement
 
 **Phase 3: Automation (Months 13-18, $2M)**
+
 - Process automation (RPA for manual tasks)
 - Intelligent replenishment
 - Exception-based management
 - Value: 30% cumulative efficiency gain
 
 **Phase 4: Optimization (Months 19-24, $1M)**
+
 - Machine learning optimization models
 - Autonomous decision-making for routine
 - Continuous improvement framework
@@ -170,34 +181,35 @@ Evolve from reactive, manual operations to intelligent, connected supply chain w
 
 **Change Management Approach**
 
-| Element | Activities |
-|---------|------------|
-| Leadership | Executive sponsors, change champions by function |
-| Communication | Monthly updates, success stories, feedback loops |
-| Training | Role-based programs, hands-on practice, certification |
-| Support | Help desk, super-users, ongoing coaching |
-| Adoption | Usage KPIs, incentives, recognition program |
+| Element       | Activities                                            |
+| ------------- | ----------------------------------------------------- |
+| Leadership    | Executive sponsors, change champions by function      |
+| Communication | Monthly updates, success stories, feedback loops      |
+| Training      | Role-based programs, hands-on practice, certification |
+| Support       | Help desk, super-users, ongoing coaching              |
+| Adoption      | Usage KPIs, incentives, recognition program           |
 
 **Value Measurement Framework**
 
-| Metric | Baseline | Year 1 Target | Year 2 Target |
-|--------|----------|---------------|---------------|
-| Planning cycle time | 5 days | 3 days | 1 day |
-| Forecast accuracy | 65% | 75% | 85% |
-| Inventory turns | 4x | 5x | 6x |
-| Order fulfillment | 92% | 96% | 98% |
-| Process efficiency | Baseline | +20% | +40% |
+| Metric              | Baseline | Year 1 Target | Year 2 Target |
+| ------------------- | -------- | ------------- | ------------- |
+| Planning cycle time | 5 days   | 3 days        | 1 day         |
+| Forecast accuracy   | 65%      | 75%           | 85%           |
+| Inventory turns     | 4x       | 5x            | 6x            |
+| Order fulfillment   | 92%      | 96%           | 98%           |
+| Process efficiency  | Baseline | +20%          | +40%          |
 
 **Risk Mitigation**
 
-| Risk | Mitigation Strategy |
-|------|---------------------|
-| Technology complexity | Phased rollout, proven platforms |
-| Change resistance | Strong change management, quick wins |
-| Integration issues | API-first architecture, thorough testing |
-| Budget overrun | Stage gates, 15% contingency reserve |
+| Risk                  | Mitigation Strategy                      |
+| --------------------- | ---------------------------------------- |
+| Technology complexity | Phased rollout, proven platforms         |
+| Change resistance     | Strong change management, quick wins     |
+| Integration issues    | API-first architecture, thorough testing |
+| Budget overrun        | Stage gates, 15% contingency reserve     |
 
 **Investment Summary**
+
 - Total investment: $8M
 - Expected annual benefit: $4M (Year 2+)
 - ROI: 150% over 3 years
@@ -206,6 +218,7 @@ Evolve from reactive, manual operations to intelligent, connected supply chain w
 ---
 
 ## Related Prompts
+
 - [Digital Supply Chain Transformation Architect](digital-transformation/digital-supply-chain-transformation-architect.md)
 - [Supply Chain Resilience Strategy Expert](supply-chain-resilience-strategy-expert.md)
 - [Process Optimization Expert](../optimization/process-improvement-expert.md)

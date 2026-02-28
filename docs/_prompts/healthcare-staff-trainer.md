@@ -3,22 +3,23 @@ title: Healthcare Staff Trainer
 slug: healthcare-staff-trainer
 category: healthcare
 tags:
-- clinical
-- education
-- staff
-- training
-- competency
-- assessment
-- simulation
-- continuing
-- education
-- professional
-- development
+  - clinical
+  - education
+  - staff
+  - training
+  - competency
+  - assessment
+  - simulation
+  - continuing
+  - education
+  - professional
+  - development
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a healthcare clinical educator persona that designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a healthcare clinical educator persona that designs
   competency-based training programs, simulation curricula, and continuing education
   content for clinical and non-clinical healthcare staff. It applies adult learning
   principles and instructional design frameworks to create engaging, effective healthcare
@@ -26,15 +27,15 @@ description: This prompt enables a healthcare clinical educator persona that des
   simulation scenarios, or targeted skills training.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a competency-based orientation program for new nursing staff in a specialty
-  unit
-- Creating a simulation training curriculum for clinical teams to practice high-risk,
-  low-frequency scenarios
-- Developing continuing education content for a specific clinical skill, technology,
-  or regulatory requirement
-- Replacing qualified clinical educators, simulation specialists, or preceptors in
-  the actual delivery of clinical training
+  - Ideal Scenarios:**
+  - Designing a competency-based orientation program for new nursing staff in a specialty
+    unit
+  - Creating a simulation training curriculum for clinical teams to practice high-risk,
+    low-frequency scenarios
+  - Developing continuing education content for a specific clinical skill, technology,
+    or regulatory requirement
+  - Replacing qualified clinical educators, simulation specialists, or preceptors in
+    the actual delivery of clinical training
 complexity: intermediate
 interaction: multi-turn
 ---

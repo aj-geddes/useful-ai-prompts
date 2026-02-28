@@ -1,6 +1,7 @@
 # Boundary Setting Communicator
 
 ## Metadata
+
 - **ID**: `boundary-setting-communicator`
 - **Version**: 1.0.0
 - **Category**: Relationships & Communication
@@ -18,6 +19,7 @@ Develop and communicate healthy boundaries in all relationships for better well-
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Experiencing boundary violations in personal or work relationships
 - Learning to say "no" without guilt or excessive explanation
 - Recovering from people-pleasing patterns
@@ -25,6 +27,7 @@ Develop and communicate healthy boundaries in all relationships for better well-
 - Setting limits with family members or close relationships
 
 **Anti-Patterns (When NOT to Use):**
+
 - Abusive relationship situations requiring safety planning
 - Professional therapy needs for trauma processing
 - Legal disputes requiring professional counsel
@@ -106,6 +109,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I need help setting boundaries with my mother who calls multiple times daily and expects immediate responses. My assertiveness level is 3/10. I feel guilty when I don't answer but it's affecting my work and marriage. She gets upset if I mention being too busy.
 
 ### Output
@@ -117,6 +121,7 @@ What you need: Predictable, limited contact that respects your adult life respon
 Current violation: Expectation of constant availability and immediate response regardless of circumstances
 
 **Your Rights in This Situation**
+
 - You have the right to focus on work during work hours
 - You have the right to prioritize your marriage
 - You have the right to return calls at convenient times
@@ -132,28 +137,31 @@ Current violation: Expectation of constant availability and immediate response r
 
 **When She Pushes Back**
 
-*If she says "You're too busy for your own mother":*
+_If she says "You're too busy for your own mother":_
 "I understand this is different from what we've done, and I know it might feel hard at first. This isn't about loving you less. It's about being present for you when we do talk."
 
-*If she calls repeatedly:*
+_If she calls repeatedly:_
 Text: "I'm not available during work hours, but I'm looking forward to our [scheduled day] call."
 
-*If she guilts you:*
+_If she guilts you:_
 "I hear that this is difficult for you. My availability has changed, and I need you to respect that."
 
 **Managing Your Guilt**
+
 - Guilt is a signal, not a command. You can feel guilty and still maintain your boundary.
 - Healthy boundaries make relationships stronger long-term, even when they create short-term friction.
 - You are modeling healthy adult relationships. This benefits everyone, including her.
 - Her feelings about your boundary are hers to manage. You are responsible for your behavior, not her reaction.
 
 **Implementation Plan**
+
 - Week 1: Have the initial conversation during a calm moment
 - Week 2: Don't answer non-scheduled calls. Text: "Can't talk now, looking forward to [scheduled time]"
 - Week 3: Reduce text explanations. Simply don't answer during work/marriage time.
 - Week 4: Evaluate and adjust schedule if needed. Consider adding or removing a call.
 
 **Reinforcement Phrases for Ongoing Use**
+
 - "I'll talk to you on [day]."
 - "I'm not available right now."
 - "I love you and I'll call you at our regular time."
@@ -165,6 +173,7 @@ Initial upset is normal and expected. She has been used to a different arrangeme
 ---
 
 ## Related Prompts
+
 - [Communication Skills Enhancer](communication-skills-enhancer.md)
 - [Conflict Resolution Strategist](conflict-resolution-strategist.md)
 - [Active Listening Trainer](active-listening-trainer.md)

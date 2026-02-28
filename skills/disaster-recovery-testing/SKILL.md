@@ -367,6 +367,7 @@ spec:
 ## Best Practices
 
 ### ✅ DO
+
 - Schedule regular DR tests
 - Document procedures in advance
 - Test in isolated environments
@@ -377,6 +378,7 @@ spec:
 - Update procedures based on results
 
 ### ❌ DON'T
+
 - Skip DR testing
 - Test during business hours
 - Test against production

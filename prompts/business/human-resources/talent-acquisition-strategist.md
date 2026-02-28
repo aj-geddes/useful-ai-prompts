@@ -1,6 +1,7 @@
 # Talent Acquisition Strategy Expert
 
 ## Metadata
+
 - **ID**: `business-talent-acquisition-strategist`
 - **Version**: 1.0.0
 - **Category**: Business/Human Resources
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Creates comprehensive talent acquisition strategies covering sourcing, interview design, and candidate experience. Builds structured hiring processes that attract top talent while ensuring fair, effective evaluation.
 
 ## When to Use
+
 - Building or scaling a hiring function
 - Designing structured interview processes
 - Competing for talent in competitive markets
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to hire 3 Senior Software Engineers for our platform team in the next 90 days. Requirements are 5-8 years experience, strong React and Node.js skills, and system design capability. Our budget is $15K for the search, and the salary range is $150-180K plus equity. We're a Series B startup in the SF Bay Area, hybrid work model (2 days in office). We're competing with FAANG companies and well-funded startups. Previous hires have come mainly through LinkedIn and referrals, but our offer acceptance rate is only 60%."
 
 ### Output
@@ -107,6 +111,7 @@ Avoid:
 ### CANDIDATE PERSONA ANALYSIS
 
 **Primary Persona: "The Growth-Seeking Builder"**
+
 - **Profile:** 5-8 years at Series B-D startups
 - **Motivations:** Ownership, technical challenges, visible impact
 - **Values:** Work-life balance over maximum compensation
@@ -115,6 +120,7 @@ Avoid:
 - **Compelling Message:** "Own the architecture. Ship weekly. See your impact."
 
 **Secondary Persona: "The FAANG Escapee"**
+
 - **Profile:** 3-5 years at large tech company (Google, Meta, Amazon)
 - **Motivations:** Seeking broader scope, direct impact, faster decisions
 - **Values:** Learning velocity, autonomy, meaningful work
@@ -122,6 +128,7 @@ Avoid:
 - **Compelling Message:** "Skip the approval layers. Build end-to-end. Move fast."
 
 **Why Your Acceptance Rate is 60%:**
+
 - FAANG offers stability and brand prestige you can't match
 - Your hybrid model may be less flexible than competitors
 - Equity story may not be compelling enough vs. cash-heavy offers
@@ -130,14 +137,15 @@ Avoid:
 
 ### SOURCING STRATEGY (Budget: $15K)
 
-| Channel | Budget | Target | Focus Area |
-|---------|--------|--------|------------|
-| LinkedIn Recruiter | $6K (40%) | 45 candidates | Alumni of Stripe, Airbnb, Figma |
-| Job Boards | $4.5K (30%) | 30 candidates | AngelList, Hired, Stack Overflow |
-| Referrals | $3K (20%) | 15 candidates | $3K bonus per successful hire |
-| Events/Meetups | $1.5K (10%) | 10 candidates | React SF, Node.js meetups |
+| Channel            | Budget      | Target        | Focus Area                       |
+| ------------------ | ----------- | ------------- | -------------------------------- |
+| LinkedIn Recruiter | $6K (40%)   | 45 candidates | Alumni of Stripe, Airbnb, Figma  |
+| Job Boards         | $4.5K (30%) | 30 candidates | AngelList, Hired, Stack Overflow |
+| Referrals          | $3K (20%)   | 15 candidates | $3K bonus per successful hire    |
+| Events/Meetups     | $1.5K (10%) | 10 candidates | React SF, Node.js meetups        |
 
 **Outreach Targeting:**
+
 - Primary: Engineers at Series C-E startups facing layoffs or stagnation
 - Secondary: FAANG engineers with startup experience in their history
 - Avoid: Candidates with no startup experience (culture fit risk)
@@ -147,12 +155,14 @@ Avoid:
 ### INTERVIEW PROCESS (4 Stages, 10 Business Days)
 
 **Stage 1: Recruiter Screen (30 minutes)**
+
 - Purpose: Role fit, motivation assessment, logistics alignment
 - Pass Criteria: Technical background matches, genuine interest, salary aligned
 - Fail Signals: Only interested in remote, misaligned on seniority
 - SLA: Schedule within 48 hours of application
 
 **Stage 2: Technical Screen (60 minutes)**
+
 - Format: Video call with hiring manager
 - Structure:
   - 15 min: Background discussion, project deep-dive
@@ -162,6 +172,7 @@ Avoid:
 - SLA: Feedback within 24 hours
 
 **Stage 3: Virtual Onsite (3 hours)**
+
 - Format: 3 sessions, 60 minutes each
 - Session A: System Design
   - Problem: Design a real-time notification system
@@ -175,6 +186,7 @@ Avoid:
 - SLA: Complete all sessions in single day, feedback within 48 hours
 
 **Stage 4: Team Fit & Close (45 minutes)**
+
 - Format: Informal conversation with 2 potential teammates
 - Purpose: Answer candidate questions, assess team chemistry
 - Close: Address concerns, sell the opportunity, discuss next steps
@@ -184,12 +196,12 @@ Avoid:
 
 ### EVALUATION RUBRIC
 
-| Criteria | Weight | 1 (No Hire) | 3 (Meets Bar) | 5 (Strong Hire) |
-|----------|--------|-------------|---------------|-----------------|
-| Technical Skills | 40% | Struggles with basics | Solves problems competently | Elegant solutions, teaches us |
-| System Thinking | 30% | No scalability awareness | Considers trade-offs | Designs for scale proactively |
-| Communication | 20% | Unclear, defensive | Clear explanations | Explains complex topics simply |
-| Culture Fit | 10% | Misaligned values | Comfortable fit | Elevates team culture |
+| Criteria         | Weight | 1 (No Hire)              | 3 (Meets Bar)               | 5 (Strong Hire)                |
+| ---------------- | ------ | ------------------------ | --------------------------- | ------------------------------ |
+| Technical Skills | 40%    | Struggles with basics    | Solves problems competently | Elegant solutions, teaches us  |
+| System Thinking  | 30%    | No scalability awareness | Considers trade-offs        | Designs for scale proactively  |
+| Communication    | 20%    | Unclear, defensive       | Clear explanations          | Explains complex topics simply |
+| Culture Fit      | 10%    | Misaligned values        | Comfortable fit             | Elevates team culture          |
 
 **Hire Decision:** Average score >= 3.5, no criteria below 2.5
 
@@ -198,21 +210,25 @@ Avoid:
 ### 90-DAY TIMELINE
 
 **Weeks 1-2: Setup & Launch**
+
 - Finalize job description, interview guides, rubrics
 - Launch sourcing across all channels
 - Target: 50 qualified applications
 
 **Weeks 3-6: Active Sourcing & Screens**
+
 - Recruiter screens: 30 candidates
 - Technical screens: 18 candidates
 - Target: 12 virtual onsites scheduled
 
 **Weeks 7-10: Onsites & Decisions**
+
 - Complete 12 onsites
 - Target: 6 offers extended
 - Expected accepts: 4 (improving to 67% rate)
 
 **Weeks 11-12: Closes & Contingency**
+
 - Close remaining negotiations
 - Backup candidates if needed
 - Target: 3 signed offers, start dates confirmed
@@ -221,15 +237,16 @@ Avoid:
 
 ### SUCCESS METRICS
 
-| Metric | Current | Target |
-|--------|---------|--------|
-| Offer Acceptance Rate | 60% | 75% |
-| Time to Offer | Unknown | 14 days |
-| Candidate NPS | Unknown | 60+ |
-| Source Quality (interview rate) | Unknown | 40%+ |
-| Cost per Hire | Unknown | $5K |
+| Metric                          | Current | Target  |
+| ------------------------------- | ------- | ------- |
+| Offer Acceptance Rate           | 60%     | 75%     |
+| Time to Offer                   | Unknown | 14 days |
+| Candidate NPS                   | Unknown | 60+     |
+| Source Quality (interview rate) | Unknown | 40%+    |
+| Cost per Hire                   | Unknown | $5K     |
 
 **Communication SLAs:**
+
 - Application acknowledgment: Same day (automated)
 - Recruiter screen scheduling: Within 48 hours
 - Interview feedback: Within 24 hours
@@ -238,5 +255,6 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Interview Preparation Coach](../../career-development/interview-preparation-coach.md)
 - [Personal Branding Strategist](../../career-development/personal-branding-strategist.md)

@@ -1,6 +1,7 @@
 # Ethnographic Research Guide
 
 ## Metadata
+
 - **ID**: `research-ethnographic-research-guide`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps researchers design and conduct ethnographic field studies — developing structured observation protocols, contextual inquiry guides, field note practices, and analysis frameworks that capture authentic human behavior in natural contexts. It supports both academic ethnography and applied commercial ethnography for product, service, and organizational design.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Understanding how people actually use a product or service in their natural environment (not a lab)
 - Discovering unspoken needs, workarounds, and cultural practices that users cannot or do not articulate in interviews
 - Designing for a context you are unfamiliar with and need to observe before designing (healthcare, industrial settings, underserved communities)
 
 **Anti-patterns (Don't Use For):**
+
 - Large-scale quantitative behavioral measurement (use analytics tools)
 - Rapid usability testing with a defined prototype (use moderated usability testing)
 - Market sizing or statistical generalization (ethnographic findings are not statistically representative)
@@ -66,10 +71,13 @@ Avoid: Reducing ethnographic observation to a list of what people did; treating 
 ---
 
 ## Example Usage
+
 ### Input
+
 "We're designing a new meal kit service aimed at working parents with children under 10. Before we design anything, we want to understand how cooking and meal prep actually happens in these households — the chaos, the shortcuts, the negotiations with picky kids, everything. We have access to conduct 2-hour home visits with 8-10 families. What's the research design?"
 
 ### Output
+
 **Ethnographic Research Design — Cooking and Meal Prep in Working Parent Households**
 Method: Rapid Contextual Inquiry (Home Visits) | Participants: 8-10 families | Duration: 2 hours per household
 
@@ -96,21 +104,25 @@ Recruit 8-10 households meeting all of: at least one child aged 3-10; both adult
 Observe and document across four behavioral dimensions:
 
 **1. Physical Environment and Tools**
+
 - Kitchen layout and storage organization: what is within easy reach vs. buried?
 - Technology present: tablets, phones, smart speakers, instant read thermometers, delivery boxes
 - What artifacts does the family have that they created to solve cooking problems? (written grocery lists, whiteboard menus, app shortcuts, refrigerator magnets with restaurant numbers)
 
 **2. Temporal and Interruption Patterns**
+
 - When does cooking start? What triggers it — time, hunger signals, a child's request?
 - How many times is the primary cook interrupted during a 30-minute cooking window?
 - What causes interruptions: children, devices, work notifications, partner, unexpected task?
 
 **3. Decision-Making and Adaptation**
+
 - What decisions are made in real-time that were not pre-planned? (ingredient substitutions, menu changes, task delegation)
 - What causes visible stress or frustration? (document exact trigger, not just "stress observed")
 - How do children participate, negotiate, or resist?
 
 **4. Shortcut and Workaround Behaviors**
+
 - What pre-made, pre-chopped, or partially prepared items are used?
 - What would be "ideal" that clearly isn't happening? (signs of compromise behavior)
 - What apps, services, or products are already integrated into the routine?
@@ -136,10 +148,10 @@ Ask only when a specific behavior has just occurred — do not interrupt flow to
 
 Use a two-column format during or immediately after each session:
 
-| Raw Observation | Researcher Interpretation |
-|----------------|--------------------------|
-| "Parent opened refrigerator, stared for approximately 15 seconds, closed it, opened a cabinet, then reopened the refrigerator" | Appears to be deciding between options; may not have a plan at this point in the session |
-| "Child entered kitchen, said 'not pasta again,' and left without waiting for a response" | Child has visibility into meal patterns; vocal rejection is normalized behavior that parent did not react to |
+| Raw Observation                                                                                                                | Researcher Interpretation                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| "Parent opened refrigerator, stared for approximately 15 seconds, closed it, opened a cabinet, then reopened the refrigerator" | Appears to be deciding between options; may not have a plan at this point in the session                     |
+| "Child entered kitchen, said 'not pasta again,' and left without waiting for a response"                                       | Child has visibility into meal patterns; vocal rejection is normalized behavior that parent did not react to |
 
 Record verbatim dialogue with quotation marks. Record behavioral timing (note start of cooking, note interruptions with timestamps).
 
@@ -149,7 +161,7 @@ Record verbatim dialogue with quotation marks. Record behavioral timing (note st
 
 The following is an example of the level of description to target in field notes, capturing context, behavior, and the researcher's sense of meaning:
 
-*"At 5:47pm, the kitchen is operating at full volume. Maya, 8, is at the kitchen table doing homework — or doing it intermittently, as she has been asking her mother a question approximately every 90 seconds for the past 10 minutes. Her mother, Priya, is simultaneously monitoring rice on the back burner, chopping bell peppers at the island, and responding to each question without visible frustration — this appears to be a practiced rhythm, not an exception. The phone on the counter shows a work Slack notification — Priya glances at it, visibly hesitates, and returns to chopping. The notification is still unread when I leave 45 minutes later. The meal she is preparing (a vegetable stir-fry with rice) takes 25 minutes from start to table. When asked afterward, Priya describes this as 'a simple night.'"*
+_"At 5:47pm, the kitchen is operating at full volume. Maya, 8, is at the kitchen table doing homework — or doing it intermittently, as she has been asking her mother a question approximately every 90 seconds for the past 10 minutes. Her mother, Priya, is simultaneously monitoring rice on the back burner, chopping bell peppers at the island, and responding to each question without visible frustration — this appears to be a practiced rhythm, not an exception. The phone on the counter shows a work Slack notification — Priya glances at it, visibly hesitates, and returns to chopping. The notification is still unread when I leave 45 minutes later. The meal she is preparing (a vegetable stir-fry with rice) takes 25 minutes from start to table. When asked afterward, Priya describes this as 'a simple night.'"_
 
 This level of description reveals: the parallel cognitive demands of cooking + parenting + work; that "simple" is highly relative; and that the phone represents a documented but suppressed source of mental load — none of which would appear in an interview response.
 
@@ -170,6 +182,7 @@ This level of description reveals: the parallel cognitive demands of cooking + p
 After all sessions: transcribe field notes → create observation cards (one behavior per card) → affinity diagram by behavioral category → identify patterns that appear across 3+ households → develop cultural insight statements → map insight to design implication.
 
 Distinguish three levels:
+
 1. Observation (what happened)
 2. Pattern (what happens repeatedly)
 3. Cultural meaning (why it matters, what it reveals about how this group understands their world)
@@ -177,9 +190,11 @@ Distinguish three levels:
 ---
 
 ## Variations
+
 - **Remote Ethnography**: Adapted for video diary studies, screen share observations, and asynchronous contextual inquiry when home visits are not feasible
 - **Organizational Ethnography**: Adapted for workplace observation — understanding how teams actually work vs. how they describe their work
 
 ## Related Prompts
+
 - [User Research Analyst](user-research-analyst.md) - Complement field observation with structured usability testing
 - [Primary Research Designer](primary-research-designer.md) - Integrate ethnographic insights into a broader mixed-methods research design

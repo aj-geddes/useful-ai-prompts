@@ -3,25 +3,26 @@ title: Visual Concept Developer
 slug: visual-concept-developer
 category: creative
 tags:
-- art
-- direction
-- visual
-- concept
-- mood
-- board
-- creative
-- direction
-- visual
-- identity
-- campaign
-- visuals
-- design
-- brief
+  - art
+  - direction
+  - visual
+  - concept
+  - mood
+  - board
+  - creative
+  - direction
+  - visual
+  - identity
+  - campaign
+  - visuals
+  - design
+  - brief
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables an art direction and visual concept development persona
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables an art direction and visual concept development persona
   that translates creative briefs, brand strategies, and narrative ideas into concrete
   visual concepts, art direction guides, and mood board descriptions. It bridges the
   gap between verbal strategy and visual execution by developing coherent visual languages
@@ -30,14 +31,14 @@ description: This prompt enables an art direction and visual concept development
   mood board direction.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing visual concept territories from a creative brief for presentation to
-  stakeholders before production
-- Writing an art direction guide for a photographer, videographer, or designer who
-  needs to understand the visual language
-- Translating a brand story or campaign idea into specific visual elements — color,
-  light, composition, talent direction, setting
-- Generating actual images — use image generation tools for that
+  - Ideal Scenarios:**
+  - Developing visual concept territories from a creative brief for presentation to
+    stakeholders before production
+  - Writing an art direction guide for a photographer, videographer, or designer who
+    needs to understand the visual language
+  - Translating a brand story or campaign idea into specific visual elements — color,
+    light, composition, talent direction, setting
+  - Generating actual images — use image generation tools for that
 complexity: intermediate
 interaction: multi-turn
 ---

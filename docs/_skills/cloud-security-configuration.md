@@ -1,15 +1,16 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Implement comprehensive cloud security across AWS, Azure, and GCP with
+date: "2025-01-01"
+description:
+  Implement comprehensive cloud security across AWS, Azure, and GCP with
   IAM, encryption, network security, compliance, and threat detection.
 layout: skill
 slug: cloud-security-configuration
 tags:
-- aws
-- azure
-- gcp
-- security
+  - aws
+  - azure
+  - gcp
+  - security
 title: cloud-security-configuration
 ---
 
@@ -530,6 +531,7 @@ gcloud access-context-manager perimeters create my-perimeter \
 ## Best Practices
 
 ### ✅ DO
+
 - Implement least privilege access
 - Enable MFA everywhere
 - Use service accounts for applications
@@ -542,6 +544,7 @@ gcloud access-context-manager perimeters create my-perimeter \
 - Keep systems patched
 
 ### ❌ DON'T
+
 - Use root/default credentials
 - Store secrets in code
 - Over-permissive security groups

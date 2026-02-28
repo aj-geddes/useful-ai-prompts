@@ -1,6 +1,7 @@
 # Penetration Test Planner
 
 ## Metadata
+
 - **ID**: `security-penetration-test-planner`
 - **Version**: 1.0.0
 - **Category**: Security
@@ -18,11 +19,13 @@ This prompt activates a penetration testing program specialist who designs the s
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning an annual penetration test or red team exercise for authorized scope
 - Defining rules of engagement and scope boundaries before engaging a third-party pen test firm
 - Establishing an internal penetration testing program with proper authorization and documentation
 
 **Anti-patterns (Don't Use For):**
+
 - Any testing of systems you do not own or have explicit written authorization to test
 - Generating exploitation code, working payloads, or attack tooling
 - Active exploitation guidance during a live engagement
@@ -136,12 +139,12 @@ Primary question: Can an external attacker compromise our web applications and r
 
 **Scope Definition**
 
-| Category | Included | Excluded |
-|----------|----------|----------|
+| Category         | Included                                                                                                    | Excluded                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | Web Applications | Primary e-commerce site (www.example.com), admin portal (admin.example.com), customer API (api.example.com) | Payment processor hosted pages (Stripe-owned), third-party CDN |
-| Network | External IP ranges: x.x.x.0/24 (DMZ), x.x.x.0/24 (load balancers) | Corporate office network, employee VPN ranges |
-| Cloud | AWS account production environment (by account ID) | AWS accounts owned by third-party vendors |
-| Exclusions | No DoS/DDoS testing; no physical access attempts; no social engineering | — |
+| Network          | External IP ranges: x.x.x.0/24 (DMZ), x.x.x.0/24 (load balancers)                                           | Corporate office network, employee VPN ranges                  |
+| Cloud            | AWS account production environment (by account ID)                                                          | AWS accounts owned by third-party vendors                      |
+| Exclusions       | No DoS/DDoS testing; no physical access attempts; no social engineering                                     | —                                                              |
 
 **Rules of Engagement**
 
@@ -153,13 +156,13 @@ Primary question: Can an external attacker compromise our web applications and r
 
 **Testing Timeline (2 Weeks)**
 
-| Days | Phase | Activities |
-|------|-------|-----------|
-| 1-2 | Reconnaissance | OSINT, DNS enumeration, technology fingerprinting |
-| 3-5 | Scanning and discovery | Port scanning, service enumeration, web crawling |
-| 6-10 | Exploitation | Vulnerability exploitation, privilege escalation, lateral movement attempts |
-| 11-12 | Post-exploitation | Access depth demonstration, data exposure assessment |
-| 13-14 | Reporting | Draft report, debrief call |
+| Days  | Phase                  | Activities                                                                  |
+| ----- | ---------------------- | --------------------------------------------------------------------------- |
+| 1-2   | Reconnaissance         | OSINT, DNS enumeration, technology fingerprinting                           |
+| 3-5   | Scanning and discovery | Port scanning, service enumeration, web crawling                            |
+| 6-10  | Exploitation           | Vulnerability exploitation, privilege escalation, lateral movement attempts |
+| 11-12 | Post-exploitation      | Access depth demonstration, data exposure assessment                        |
+| 13-14 | Reporting              | Draft report, debrief call                                                  |
 
 **Reporting and Remediation**
 

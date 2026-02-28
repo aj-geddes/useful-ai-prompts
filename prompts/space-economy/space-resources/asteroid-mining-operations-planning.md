@@ -1,6 +1,7 @@
 # Asteroid Mining Operations Planning
 
 ## Metadata
+
 - **ID**: `space-asteroid-mining`
 - **Version**: 1.1.0
 - **Category**: Space Economy/Resources
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Plan asteroid mining operations including target selection, mission architecture, extraction technology, and resource economics. Combines space engineering expertise with mining economics to develop technically feasible and commercially viable resource extraction operations from near-Earth and main-belt asteroids.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Designing asteroid mining mission architectures
 - Evaluating asteroid targets and resource potential
 - Developing extraction and processing technology strategies
@@ -23,6 +27,7 @@ Plan asteroid mining operations including target selection, mission architecture
 - Planning phased development programs for resource extraction
 
 **Anti-Patterns (When NOT to Use):**
+
 - Lunar surface mining operations
 - Terrestrial mining applications
 - Satellite operations or communications
@@ -114,48 +119,51 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're planning a platinum group metals extraction mission from near-Earth asteroids. $2B investment over 15 years. Need mission architecture and economic analysis."
 
 ### Output
+
 **Asteroid PGM Mining Operations Plan**
 
 **Mission Overview**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Target Resource | Platinum Group Metals |
-| Investment | $2B over 15 years |
-| Target Asteroids | M-type NEAs |
-| Mission Type | Robotic extraction + Earth return |
+| Parameter        | Specification                     |
+| ---------------- | --------------------------------- |
+| Target Resource  | Platinum Group Metals             |
+| Investment       | $2B over 15 years                 |
+| Target Asteroids | M-type NEAs                       |
+| Mission Type     | Robotic extraction + Earth return |
 
 **Target Selection**
 
-| Asteroid | Type | Delta-V | PGM Estimate | Priority |
-|----------|------|---------|--------------|----------|
-| 1986 DA | M-type | 5.2 km/s | 10,000 tonnes | High |
-| 2016 ED85 | M-type | 4.8 km/s | 2,500 tonnes | High |
-| (TBD survey) | M-type | <6 km/s | Variable | Medium |
+| Asteroid     | Type   | Delta-V  | PGM Estimate  | Priority |
+| ------------ | ------ | -------- | ------------- | -------- |
+| 1986 DA      | M-type | 5.2 km/s | 10,000 tonnes | High     |
+| 2016 ED85    | M-type | 4.8 km/s | 2,500 tonnes  | High     |
+| (TBD survey) | M-type | <6 km/s  | Variable      | Medium   |
 
 **Mission Architecture**
 
-| Phase | Timeline | Cost | Activities |
-|-------|----------|------|------------|
-| Survey | Years 1-3 | $150M | Characterization missions to 5+ targets |
-| Demo | Years 4-6 | $300M | Technology demonstration with sample return |
-| Pilot | Years 7-10 | $650M | First extraction mission (100 tonne scale) |
-| Production | Years 11-15 | $900M | Scaled operations (500+ tonne/year) |
+| Phase      | Timeline    | Cost  | Activities                                  |
+| ---------- | ----------- | ----- | ------------------------------------------- |
+| Survey     | Years 1-3   | $150M | Characterization missions to 5+ targets     |
+| Demo       | Years 4-6   | $300M | Technology demonstration with sample return |
+| Pilot      | Years 7-10  | $650M | First extraction mission (100 tonne scale)  |
+| Production | Years 11-15 | $900M | Scaled operations (500+ tonne/year)         |
 
 **Technology Development**
 
-| System | Current TRL | Required TRL | Development Timeline |
-|--------|-------------|--------------|---------------------|
-| Autonomous navigation | 5 | 8 | 3 years |
-| Surface anchoring | 3 | 7 | 4 years |
-| Extraction system | 2 | 7 | 5 years |
-| Processing | 3 | 6 | 4 years |
-| Earth return vehicle | 5 | 8 | 3 years |
+| System                | Current TRL | Required TRL | Development Timeline |
+| --------------------- | ----------- | ------------ | -------------------- |
+| Autonomous navigation | 5           | 8            | 3 years              |
+| Surface anchoring     | 3           | 7            | 4 years              |
+| Extraction system     | 2           | 7            | 5 years              |
+| Processing            | 3           | 6            | 4 years              |
+| Earth return vehicle  | 5           | 8            | 3 years              |
 
 **Extraction Approach**
+
 1. Surface mining of regolith (mechanical excavation)
 2. Magnetic separation of metal-rich fraction
 3. Electrolytic processing for PGM concentration
@@ -163,31 +171,32 @@ Avoid:
 
 **Economic Analysis**
 
-| Parameter | Value |
-|-----------|-------|
+| Parameter         | Value                        |
+| ----------------- | ---------------------------- |
 | Target extraction | 100 tonnes PGM (pilot phase) |
-| Market value | ~$3B (at current prices) |
-| Extraction cost | $20M/kg delivered to Earth |
-| Breakeven | Year 12 (production phase) |
+| Market value      | ~$3B (at current prices)     |
+| Extraction cost   | $20M/kg delivered to Earth   |
+| Breakeven         | Year 12 (production phase)   |
 
 **Return Scenarios**
 
-| Scenario | PGM Extracted | Revenue | ROI |
-|----------|---------------|---------|-----|
-| Conservative | 50 tonnes | $1.5B | -25% |
-| Base | 150 tonnes | $4.5B | +125% |
-| Optimistic | 300 tonnes | $9B | +350% |
+| Scenario     | PGM Extracted | Revenue | ROI   |
+| ------------ | ------------- | ------- | ----- |
+| Conservative | 50 tonnes     | $1.5B   | -25%  |
+| Base         | 150 tonnes    | $4.5B   | +125% |
+| Optimistic   | 300 tonnes    | $9B     | +350% |
 
 **Key Risks**
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Technology failure | Medium | High | Phased development with gates |
-| Target mismatch | Medium | High | Survey missions first |
-| Market price crash | Low | High | Diversify applications |
-| Mission loss | Medium | Medium | Insurance, redundancy |
+| Risk               | Probability | Impact | Mitigation                    |
+| ------------------ | ----------- | ------ | ----------------------------- |
+| Technology failure | Medium      | High   | Phased development with gates |
+| Target mismatch    | Medium      | High   | Survey missions first         |
+| Market price crash | Low         | High   | Diversify applications        |
+| Mission loss       | Medium      | Medium | Insurance, redundancy         |
 
 **Development Pathway**
+
 - Years 1-3: Survey missions to characterize 5+ candidate targets
 - Year 4: Technology downselect based on survey results
 - Years 5-6: Demonstration mission with sample return
@@ -195,6 +204,7 @@ Avoid:
 - Years 11+: Production scaling based on pilot economics
 
 **Decision Gates**
+
 - Gate 1 (Year 3): Survey confirms viable target with sufficient resource
 - Gate 2 (Year 6): Demo achieves technical objectives
 - Gate 3 (Year 10): Pilot economics validated for production investment
@@ -202,6 +212,7 @@ Avoid:
 ---
 
 ## Related Prompts
+
 - [Space Technology Development and Innovation Management](../space-technology-development-innovation-management.md)
 - [Commercial Space Mission Architecture Expert](../commercial-space-mission-architecture-expert.md)
 - [Space Investment Portfolio Management](../space-finance/space-investment-portfolio-management.md)

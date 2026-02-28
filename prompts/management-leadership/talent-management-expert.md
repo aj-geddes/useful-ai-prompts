@@ -1,6 +1,7 @@
 # Talent Management Expert
 
 ## Metadata
+
 - **ID**: `leadership-talent-management-expert`
 - **Version**: 1.0.0
 - **Category**: Management & Leadership
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Builds comprehensive talent management strategies that attract, develop, and retain top performers. Addresses succession planning, high-potential development, retention strategies, and talent pipeline building with systematic processes and individualized approaches.
 
 ## When to Use
+
 - Building succession plans for critical roles
 - Developing high-potential employee programs
 - Creating retention strategies for key talent
@@ -22,6 +25,7 @@ Builds comprehensive talent management strategies that attract, develop, and ret
 - Addressing talent gaps in leadership bench
 
 **Anti-patterns (don't use for)**:
+
 - Individual performance management (use Performance Management Expert)
 - Recruitment tactics (use recruiting/HR)
 - Compensation design (use HR/compensation specialist)
@@ -103,30 +107,36 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Tech company losing senior engineers to competitors. 30% turnover in senior roles. Need to build bench strength. 200 employees, growing 50% YoY."
 
 ### Output
+
 **Talent Management Strategy: Engineering Talent Excellence**
 
 **1. Talent Assessment**
 Critical role analysis:
+
 - Tier 1 (Business critical): Engineering Directors, Principal Engineers, Tech Leads of key systems
 - Tier 2 (Important): Senior Engineers, Engineering Managers
 - Tier 3 (Foundational): Mid-level Engineers, Junior Engineers (pipeline)
 
 Current state:
+
 - Tier 1 turnover: 30% (crisis level - industry average ~15%)
 - Succession depth: 0-1 ready-now candidates for most Tier 1 roles
 - Development pipeline: Limited structured development
 - Competitive position: Behind on compensation, mixed on other factors
 
 Diagnostic (conduct exit interviews, stay interviews):
+
 - Why leaving: Compensation gap, limited growth, technical autonomy concerns
 - Why staying: Mission, team, learning opportunities
 - Missing: Clear career path, technical ladder, recognition
 
 **2. Succession Planning**
 Framework approach:
+
 - Identify 10-15 Tier 1 critical roles
 - Assess current bench: Ready now, ready in 1-2 years, developing
 - Target: 2+ candidates at "ready in 1-2 years" for each role
@@ -139,11 +149,13 @@ Succession depth chart template:
 | Principal Eng (Platform) | Marcus | [Gap] | Chen | Sara, Kim |
 
 Gap response:
+
 - Ready Now gap: External search as backup, accelerate internal development
 - Ready 1-2 Years gap: Identify high-potentials, intensive development
 - Developing gap: Strengthen entry pipeline, earlier identification
 
 Development for successors:
+
 - Stretch assignments in adjacent domains
 - Executive exposure (present to leadership, attend SteerCo)
 - Cross-functional projects (work with product, business)
@@ -151,18 +163,21 @@ Development for successors:
 
 **3. High-Potential Program**
 Identification criteria (evidence-based, not just manager opinion):
+
 - Consistent high performance (top 20% for 2+ years)
 - Learning agility (demonstrated ability to learn new domains)
 - Drive for results (self-motivated, high impact orientation)
 - Leadership potential (influence beyond formal authority)
 
 Assessment process:
+
 - Annual nomination by managers (calibrated across org)
 - Leadership review (calibration to avoid bias)
 - Assessment center for borderline candidates
 - Communicate selection transparently (no secret lists)
 
 HiPo program design:
+
 - Duration: 18-24 months (enough time for meaningful development)
 - Cohort size: 10-15 (manageable, creates peer community)
 - Components:
@@ -173,6 +188,7 @@ HiPo program design:
   - Career conversation with CHRO/CEO
 
 Managing non-HiPos:
+
 - All employees have development conversations and plans
 - Multiple career paths (technical, management, specialist)
 - HiPo program is "accelerated" development, not "only" development
@@ -180,34 +196,40 @@ Managing non-HiPos:
 
 **4. Retention Strategy**
 Retention priorities (based on assessment):
+
 1. Address compensation gap (immediate)
 2. Build clear career paths (short-term)
 3. Strengthen technical culture (medium-term)
 
 Compensation response:
+
 - Conduct market analysis, adjust to 60th percentile minimum
 - Equity refresh program for senior engineers
 - Retention bonuses for flight-risk critical talent
 
 Career architecture:
+
 - Dual ladder: Technical and management tracks with equal prestige
 - Clear levels: Junior, Mid, Senior, Staff, Principal, Fellow
 - Level definitions: Skills, scope, impact expectations
 - Progression transparency: What it takes to get to next level
 
 Technical culture enhancement:
+
 - "Innovation time": 10% time for personal projects
 - Tech talks: Weekly internal sharing, monthly external speakers
 - Conference budget: $5K/year per engineer
 - Technical decision authority: Push decisions to engineers
 
 Stay interview program:
+
 - Quarterly "stay conversations" with top performers
 - Questions: What keeps you here? What might cause you to leave? What do you need?
 - Action: Address concerns promptly, track trends
 
 **5. Talent Analytics**
 Key metrics dashboard:
+
 - Turnover by level and tenure (spot patterns)
 - Succession coverage ratio (% of critical roles with ready successors)
 - High-potential retention rate (are HiPos staying?)
@@ -216,18 +238,21 @@ Key metrics dashboard:
 - Employee engagement scores (overall and by segment)
 
 Early warning indicators:
+
 - Performance decline in top performers
 - Disengagement signals (reduced participation, visible frustration)
 - Market comp gap widening
 - LinkedIn activity spikes
 
 Quarterly talent review:
+
 - Review succession depth and development progress
 - Discuss retention risk for key talent
 - Update HiPo nominations and program status
 - Surface talent concerns to leadership
 
 Annual talent planning:
+
 - Workforce plan aligned to business growth
 - Succession depth improvement targets
 - HiPo program cohort selection
@@ -236,6 +261,7 @@ Annual talent planning:
 ---
 
 ## Related Prompts
+
 - [Performance Management Expert](performance-management-expert.md)
 - [Organizational Development Expert](organizational-development-expert.md)
 - [Team Building Expert](team-building-expert.md)

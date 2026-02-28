@@ -1,6 +1,7 @@
 # Status Reporting Expert
 
 ## Metadata
+
 - **ID**: `communication-status-reporting`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Creates clear, actionable status reports that inform stakeholders and drive deci
 ## When to Use
 
 **Ideal scenarios:**
+
 - Building project or program reporting frameworks
 - Improving status update quality and consistency
 - Creating executive dashboards and summaries
@@ -25,6 +27,7 @@ Creates clear, actionable status reports that inform stakeholders and drive deci
 - Establishing escalation and exception reporting
 
 **Anti-patterns (when NOT to use):**
+
 - Real-time operational metrics dashboards
 - Marketing analytics and campaign reporting
 - Financial reporting and accounting statements
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Software project - mobile app, 9-month timeline. Reports go to: VP (weekly), CEO (monthly), Board (quarterly). VP wants detail on features/timeline, CEO wants budget/ROI summary, Board wants strategic impact. Currently takes 5 hours/week on reports. Different people want different formats."
 
 ### Output
@@ -150,17 +154,20 @@ User Profiles     [==>         ]  15% | Starting
 **Subject:** Mobile App - Month 3 Status
 
 **EXECUTIVE SUMMARY**
+
 - Project: **YELLOW** - Delays contained, mitigation active
 - Budget: **GREEN** - 4% under budget
 - ROI: **ON TRACK** - Q4 launch supports $2M target
 
 **EXCEPTIONS REQUIRING ATTENTION**
+
 1. **Vendor delay** (2 weeks)
    - Impact: Checkout feature delayed
    - Mitigation: Parallel development
    - Resolution: Vendor committed to delivery date
 
 **FINANCIAL SNAPSHOT**
+
 - Spent: $180K of $500K (36%)
 - Projected: $480K (-4% vs budget)
 - ROI timeline: Unchanged
@@ -170,6 +177,7 @@ User Profiles     [==>         ]  15% | Starting
 ### Quarterly Board Slides (3 max)
 
 **Slide 1: Strategic Update**
+
 ```
 Mobile App: ON TRACK for Q4 Launch
 - 40% complete, meeting milestones
@@ -178,6 +186,7 @@ Mobile App: ON TRACK for Q4 Launch
 ```
 
 **Slide 2: Metrics**
+
 ```
 Progress: Design [====] | Dev [====>  ] | Test [    ]
 Budget: $180K of $500K (on track)
@@ -185,6 +194,7 @@ Quality: 0 critical issues
 ```
 
 **Slide 3: Risks & Next Steps**
+
 ```
 Managed: Vendor dependency, complexity
 Upcoming: MVP delivery, beta testing
@@ -193,16 +203,19 @@ Upcoming: MVP delivery, beta testing
 ## VISUAL DASHBOARD ELEMENTS
 
 ### Traffic Light System
+
 - **GREEN:** On track, no action needed
 - **YELLOW:** Minor issues, mitigation in progress
 - **RED:** Significant risk, escalation required
 
 ### Progress Visualization
+
 - Completion bars for each workstream
 - Budget burn chart (planned vs. actual)
 - Milestone timeline with status
 
 ### Escalation Indicators
+
 - Flag icons for items requiring attention
 - Clear owner and action needed
 - Resolution date and status
@@ -210,11 +223,13 @@ Upcoming: MVP delivery, beta testing
 ## REPORTING EFFICIENCY PROCESS
 
 ### Automated Data Collection
+
 - Pull from Jira: Sprint progress, features
 - Pull from time tracking: Hours logged
 - Pull from finance: Budget actuals
 
 ### Weekly Process (5 hours to 1.5 hours)
+
 ```
 Thursday 3pm: Automated data pull
 Friday 9am:  Review and validate (30 min)
@@ -223,6 +238,7 @@ Friday 10:00: Customize for audiences (30 min)
 ```
 
 ### Template Library
+
 - Standard status categories
 - Pre-written risk descriptions
 - Milestone update formulas
@@ -231,14 +247,16 @@ Friday 10:00: Customize for audiences (30 min)
 ## ESCALATION FRAMEWORK
 
 ### Severity Levels
-| Level | Trigger | Response Time | Audience |
-|-------|---------|---------------|----------|
-| 1 | Minor delay | Weekly report | VP |
-| 2 | >2 week delay | 48 hours | VP |
-| 3 | >4 week delay | 24 hours | CEO |
-| 4 | Critical failure | Immediate | CEO/Board |
+
+| Level | Trigger          | Response Time | Audience  |
+| ----- | ---------------- | ------------- | --------- |
+| 1     | Minor delay      | Weekly report | VP        |
+| 2     | >2 week delay    | 48 hours      | VP        |
+| 3     | >4 week delay    | 24 hours      | CEO       |
+| 4     | Critical failure | Immediate     | CEO/Board |
 
 ### Escalation Template
+
 ```
 Issue: [Brief description]
 Impact: [Timeline/Budget/Quality]
@@ -252,11 +270,13 @@ Decision needed by: [Date]
 ## SUCCESS METRICS
 
 ### Report Effectiveness
+
 - Questions after distribution: Target <2
 - Action items completed: Target 90%
 - Stakeholder satisfaction: Target 8+/10
 
 ### Efficiency Goals
+
 - Creation time: <90 minutes/week
 - Automation rate: 70% of data
 - Format consistency: 100%
@@ -264,6 +284,7 @@ Decision needed by: [Date]
 ---
 
 ## Related Prompts
+
 - [Executive Briefing Expert](executive-briefing-expert.md)
 - [Stakeholder Communication Expert](stakeholder-communication-expert.md)
 - [Project Planning Expert](../planning/project-planning-expert.md)

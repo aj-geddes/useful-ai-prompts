@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Design and implement GraphQL APIs with schema design, resolvers, queries,
+date: "2025-01-01"
+description:
+  Design and implement GraphQL APIs with schema design, resolvers, queries,
   mutations, subscriptions, and best practices. Use when building GraphQL servers,
   designing schemas, or migrating from REST to GraphQL.
 layout: skill
 slug: graphql-implementation
 tags:
-- api
+  - api
 title: graphql-implementation
 ---
 
@@ -123,8 +124,8 @@ scalar DateTime
 ### 2. **Node.js Apollo Server Implementation**
 
 ```javascript
-const { ApolloServer, gql } = require('apollo-server-express');
-const express = require('express');
+const { ApolloServer, gql } = require("apollo-server-express");
+const express = require("express");
 
 const typeDefs = gql`
   type Query {
@@ -160,19 +161,19 @@ const resolvers = {
     },
     users: async (_, __, { db }) => {
       return db.users.findAll();
-    }
+    },
   },
 
   User: {
     posts: async (user, _, { db }) => {
       return db.posts.findByAuthorId(user.id);
-    }
+    },
   },
 
   Post: {
     author: async (post, _, { db }) => {
       return db.users.findById(post.authorId);
-    }
+    },
   },
 
   Mutation: {
@@ -182,12 +183,17 @@ const resolvers = {
       return user;
     },
     createPost: async (_, { title, content }, { user, db }) => {
-      if (!user) throw new Error('Unauthorized');
-      const post = { id: Date.now().toString(), title, content, authorId: user.id };
+      if (!user) throw new Error("Unauthorized");
+      const post = {
+        id: Date.now().toString(),
+        title,
+        content,
+        authorId: user.id,
+      };
       db.posts.save(post);
       return post;
-    }
-  }
+    },
+  },
 };
 
 const server = new ApolloServer({
@@ -195,14 +201,14 @@ const server = new ApolloServer({
   resolvers,
   context: ({ req }) => ({
     user: req.user,
-    db: require('./database')
-  })
+    db: require("./database"),
+  }),
 });
 
 const app = express();
 server.start().then(() => {
   server.applyMiddleware({ app });
-  app.listen(4000, () => console.log('GraphQL server running on port 4000'));
+  app.listen(4000, () => console.log("GraphQL server running on port 4000"));
 });
 ```
 
@@ -336,34 +342,35 @@ const resolvers = {
       try {
         const user = await User.findById(id);
         if (!user) {
-          throw new GraphQLError('User not found', {
+          throw new GraphQLError("User not found", {
             extensions: {
-              code: 'NOT_FOUND',
-              userId: id
-            }
+              code: "NOT_FOUND",
+              userId: id,
+            },
           });
         }
         return user;
       } catch (error) {
-        throw new GraphQLError('Database error', {
+        throw new GraphQLError("Database error", {
           originalError: error,
-          extensions: { code: 'INTERNAL_ERROR' }
+          extensions: { code: "INTERNAL_ERROR" },
         });
       }
-    }
-  }
+    },
+  },
 };
 
 server.formatError = (formattedError) => ({
   message: formattedError.message,
-  code: formattedError.extensions?.code || 'INTERNAL_ERROR',
-  timestamp: new Date().toISOString()
+  code: formattedError.extensions?.code || "INTERNAL_ERROR",
+  timestamp: new Date().toISOString(),
 });
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use clear, descriptive field names
 - Design schemas around client needs
 - Implement proper error handling
@@ -374,6 +381,7 @@ server.formatError = (formattedError) => ({
 - Use federation for scalability
 
 ### ❌ DON'T
+
 - Over-nest queries deeply
 - Expose internal database IDs
 - Return sensitive data without authorization

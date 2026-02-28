@@ -3,31 +3,32 @@ title: Utility-Scale Solar Farm Development and Optimization
 slug: utility-scale-solar-farm-development-optimization
 category: renewable energy
 tags:
-- utility-scale
-- solar
-- project
-- development
-- renewable
-- energy
-- EPC
-- management
-- permitting
+  - utility-scale
+  - solar
+  - project
+  - development
+  - renewable
+  - energy
+  - EPC
+  - management
+  - permitting
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Develop comprehensive utility-scale solar farm projects from site selection
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Develop comprehensive utility-scale solar farm projects from site selection
   through commercial operation. Combines project development expertise with technical
   engineering to deliver successful large-scale solar installations meeting performance,
   financial, and regulatory requirements. Navigates complex stakeholder relationships
   across landowners, utilities, regulators, and investors.
 layout: prompt
 use_cases:
-- Scenarios:**
-- Developing utility-scale solar projects (50+ MW) from greenfield
-- Managing full project lifecycle across multiple development phases
-- Optimizing project economics through design and contract negotiations
-- Navigating complex permitting and interconnection processes
+  - Scenarios:**
+  - Developing utility-scale solar projects (50+ MW) from greenfield
+  - Managing full project lifecycle across multiple development phases
+  - Optimizing project economics through design and contract negotiations
+  - Navigating complex permitting and interconnection processes
 complexity: advanced
 interaction: multi-turn
 ---
@@ -42,18 +43,20 @@ Utility-scale solar development requires orchestrating multiple parallel workstr
 
 <input_handling>
 Required:
+
 - Project size (MW) and location/region
 - Current development stage and key milestones achieved
 - Target commercial operation date
 - Key challenges, constraints, or objectives
 
 Infer if not provided:
+
 - Technology: Single-axis tracking with bifacial modules
 - Offtake: PPA with creditworthy utility or corporate buyer
 - Financing: Tax equity partnership plus project debt
 - Development timeline: 24-36 months concept to COD
 - Land control: Lease with option to purchase
-</input_handling>
+  </input_handling>
 
 <task>
 Develop comprehensive utility-scale solar project strategy:
@@ -65,18 +68,20 @@ Develop comprehensive utility-scale solar project strategy:
 5. Optimize project financing across tax equity, debt, and sponsor equity
 6. Oversee EPC selection, construction management, and commissioning
 7. Develop risk register with mitigation strategies for each critical path item
-</task>
+   </task>
 
 <output_specification>
 **Utility-Scale Solar Development Plan**
+
 - Format: Comprehensive development strategy with timeline and risk assessment
 - Length: 800-1500 words
 - Structure: Development phases, timeline, risk assessment, financial structure, key milestones
 - Must include: Phase-by-phase plan, Gantt-style timeline, risk matrix, financial summary, success factors
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Provide realistic development timelines based on jurisdiction
 - Identify all critical path dependencies and sequencing
 - Quantify development risks with probability and impact
@@ -84,12 +89,13 @@ Excellent outputs:
 - Address stakeholder management across all parties
 
 Avoid:
+
 - Underestimating permitting or interconnection timelines
 - Oversimplifying utility interconnection requirements
 - Missing key development risks or fatal flaws
 - Generic recommendations without project-specific context
 - Ignoring market timing for PPA and financing
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - All timelines must account for jurisdiction-specific requirements

@@ -1,14 +1,15 @@
 ---
 category: frontend-development
-date: '2025-01-01'
-description: Implement reactive programming patterns using RxJS, streams, observables,
+date: "2025-01-01"
+description:
+  Implement reactive programming patterns using RxJS, streams, observables,
   and backpressure handling. Use when building event-driven UIs, handling async data
   streams, or managing complex data flows.
 layout: skill
 slug: reactive-programming
 tags:
-- react
-- data
+  - react
+  - data
 title: reactive-programming
 ---
 
@@ -32,11 +33,23 @@ Build responsive applications using reactive streams and observables for handlin
 ### 1. **RxJS Basics**
 
 ```typescript
-import { Observable, Subject, BehaviorSubject, fromEvent, interval } from 'rxjs';
-import { map, filter, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import {
+  Observable,
+  Subject,
+  BehaviorSubject,
+  fromEvent,
+  interval,
+} from "rxjs";
+import {
+  map,
+  filter,
+  debounceTime,
+  distinctUntilChanged,
+  switchMap,
+} from "rxjs/operators";
 
 // Create observable from array
-const numbers$ = new Observable<number>(subscriber => {
+const numbers$ = new Observable<number>((subscriber) => {
   subscriber.next(1);
   subscriber.next(2);
   subscriber.next(3);
@@ -44,23 +57,23 @@ const numbers$ = new Observable<number>(subscriber => {
 });
 
 numbers$.subscribe({
-  next: value => console.log(value),
-  error: err => console.error(err),
-  complete: () => console.log('Done')
+  next: (value) => console.log(value),
+  error: (err) => console.error(err),
+  complete: () => console.log("Done"),
 });
 
 // Subject (multicast)
 const subject = new Subject<number>();
 
-subject.subscribe(value => console.log('Sub 1:', value));
-subject.subscribe(value => console.log('Sub 2:', value));
+subject.subscribe((value) => console.log("Sub 1:", value));
+subject.subscribe((value) => console.log("Sub 2:", value));
 
 subject.next(1); // Both subscribers receive
 
 // BehaviorSubject (with initial value)
 const state$ = new BehaviorSubject({ count: 0 });
 
-state$.subscribe(state => console.log('State:', state));
+state$.subscribe((state) => console.log("State:", state));
 
 state$.next({ count: 1 });
 state$.next({ count: 2 });
@@ -68,41 +81,48 @@ state$.next({ count: 2 });
 // Operators
 const source$ = interval(1000);
 
-source$.pipe(
-  map(n => n * 2),
-  filter(n => n > 5),
-  take(5)
-).subscribe(value => console.log(value));
+source$
+  .pipe(
+    map((n) => n * 2),
+    filter((n) => n > 5),
+    take(5),
+  )
+  .subscribe((value) => console.log(value));
 ```
 
 ### 2. **Search with Debounce**
 
 ```typescript
-import { fromEvent } from 'rxjs';
-import { debounceTime, distinctUntilChanged, switchMap, catchError } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { fromEvent } from "rxjs";
+import {
+  debounceTime,
+  distinctUntilChanged,
+  switchMap,
+  catchError,
+} from "rxjs/operators";
+import { of } from "rxjs";
 
-const searchInput = document.querySelector('#search') as HTMLInputElement;
+const searchInput = document.querySelector("#search") as HTMLInputElement;
 
-const search$ = fromEvent(searchInput, 'input').pipe(
+const search$ = fromEvent(searchInput, "input").pipe(
   map((event: Event) => (event.target as HTMLInputElement).value),
   debounceTime(300), // Wait 300ms after typing
   distinctUntilChanged(), // Only if value changed
-  switchMap(query => {
+  switchMap((query) => {
     if (!query) return of([]);
 
     return fetch(`/api/search?q=${query}`)
-      .then(res => res.json())
+      .then((res) => res.json())
       .catch(() => of([]));
   }),
-  catchError(error => {
-    console.error('Search error:', error);
+  catchError((error) => {
+    console.error("Search error:", error);
     return of([]);
-  })
+  }),
 );
 
-search$.subscribe(results => {
-  console.log('Search results:', results);
+search$.subscribe((results) => {
+  console.log("Search results:", results);
   displayResults(results);
 });
 
@@ -114,8 +134,8 @@ function displayResults(results: any[]) {
 ### 3. **State Management**
 
 ```typescript
-import { BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject } from "rxjs";
+import { map } from "rxjs/operators";
 
 interface AppState {
   user: { id: string; name: string } | null;
@@ -127,39 +147,37 @@ class StateManager {
   private state$ = new BehaviorSubject<AppState>({
     user: null,
     cart: [],
-    loading: false
+    loading: false,
   });
 
   // Selectors
   user$ = this.state$.pipe(
-    map(state => state.user),
-    distinctUntilChanged()
+    map((state) => state.user),
+    distinctUntilChanged(),
   );
 
   cart$ = this.state$.pipe(
-    map(state => state.cart),
-    distinctUntilChanged()
+    map((state) => state.cart),
+    distinctUntilChanged(),
   );
 
   cartTotal$ = this.cart$.pipe(
-    map(cart => cart.reduce((sum, item) => sum + item.quantity, 0))
+    map((cart) => cart.reduce((sum, item) => sum + item.quantity, 0)),
   );
 
-  loading$ = this.state$.pipe(
-    map(state => state.loading)
-  );
+  loading$ = this.state$.pipe(map((state) => state.loading));
 
   // Actions
-  setUser(user: AppState['user']): void {
+  setUser(user: AppState["user"]): void {
     this.state$.next({
       ...this.state$.value,
-      user
+      user,
     });
   }
 
   addToCart(item: { id: string; quantity: number }): void {
     const cart = [...this.state$.value.cart];
-    const existing = cart.find(i => i.id === item.id);
+    const existing = cart.find((i) => i.id === item.id);
 
     if (existing) {
       existing.quantity += item.quantity;
@@ -169,14 +187,14 @@ class StateManager {
 
     this.state$.next({
       ...this.state$.value,
-      cart
+      cart,
     });
   }
 
   setLoading(loading: boolean): void {
     this.state$.next({
       ...this.state$.value,
-      loading
+      loading,
     });
   }
 
@@ -188,33 +206,33 @@ class StateManager {
 // Usage
 const store = new StateManager();
 
-store.user$.subscribe(user => {
-  console.log('User:', user);
+store.user$.subscribe((user) => {
+  console.log("User:", user);
 });
 
-store.cartTotal$.subscribe(total => {
-  console.log('Cart items:', total);
+store.cartTotal$.subscribe((total) => {
+  console.log("Cart items:", total);
 });
 
-store.setUser({ id: '123', name: 'John' });
-store.addToCart({ id: 'item1', quantity: 2 });
+store.setUser({ id: "123", name: "John" });
+store.addToCart({ id: "item1", quantity: 2 });
 ```
 
 ### 4. **WebSocket with Reconnection**
 
 ```typescript
-import { Observable, timer } from 'rxjs';
-import { retryWhen, tap, delayWhen } from 'rxjs/operators';
+import { Observable, timer } from "rxjs";
+import { retryWhen, tap, delayWhen } from "rxjs/operators";
 
 function createWebSocketObservable(url: string): Observable<any> {
-  return new Observable(subscriber => {
+  return new Observable((subscriber) => {
     let ws: WebSocket;
 
     const connect = () => {
       ws = new WebSocket(url);
 
       ws.onopen = () => {
-        console.log('WebSocket connected');
+        console.log("WebSocket connected");
       };
 
       ws.onmessage = (event) => {
@@ -222,18 +240,18 @@ function createWebSocketObservable(url: string): Observable<any> {
           const data = JSON.parse(event.data);
           subscriber.next(data);
         } catch (error) {
-          console.error('Parse error:', error);
+          console.error("Parse error:", error);
         }
       };
 
       ws.onerror = (error) => {
-        console.error('WebSocket error:', error);
+        console.error("WebSocket error:", error);
         subscriber.error(error);
       };
 
       ws.onclose = () => {
-        console.log('WebSocket closed');
-        subscriber.error(new Error('Connection closed'));
+        console.log("WebSocket closed");
+        subscriber.error(new Error("Connection closed"));
       };
     };
 
@@ -245,57 +263,57 @@ function createWebSocketObservable(url: string): Observable<any> {
       }
     };
   }).pipe(
-    retryWhen(errors =>
+    retryWhen((errors) =>
       errors.pipe(
-        tap(err => console.log('Retrying connection...', err)),
-        delayWhen((_, i) => timer(Math.min(1000 * Math.pow(2, i), 30000)))
-      )
-    )
+        tap((err) => console.log("Retrying connection...", err)),
+        delayWhen((_, i) => timer(Math.min(1000 * Math.pow(2, i), 30000))),
+      ),
+    ),
   );
 }
 
 // Usage
-const ws$ = createWebSocketObservable('wss://api.example.com/ws');
+const ws$ = createWebSocketObservable("wss://api.example.com/ws");
 
 ws$.subscribe({
-  next: data => console.log('Received:', data),
-  error: err => console.error('Error:', err)
+  next: (data) => console.log("Received:", data),
+  error: (err) => console.error("Error:", err),
 });
 ```
 
 ### 5. **Combining Multiple Streams**
 
 ```typescript
-import { combineLatest, merge, forkJoin, zip } from 'rxjs';
+import { combineLatest, merge, forkJoin, zip } from "rxjs";
 
 // combineLatest - emits when any input emits
 const users$ = fetchUsers();
 const settings$ = fetchSettings();
 
 combineLatest([users$, settings$]).subscribe(([users, settings]) => {
-  console.log('Users:', users);
-  console.log('Settings:', settings);
+  console.log("Users:", users);
+  console.log("Settings:", settings);
 });
 
 // merge - combine multiple observables
-const clicks$ = fromEvent(button1, 'click');
-const hovers$ = fromEvent(button2, 'mouseover');
+const clicks$ = fromEvent(button1, "click");
+const hovers$ = fromEvent(button2, "mouseover");
 
-merge(clicks$, hovers$).subscribe(event => {
-  console.log('Event:', event.type);
+merge(clicks$, hovers$).subscribe((event) => {
+  console.log("Event:", event.type);
 });
 
 // forkJoin - wait for all to complete (like Promise.all)
 forkJoin({
   users: fetchUsers(),
   posts: fetchPosts(),
-  comments: fetchComments()
+  comments: fetchComments(),
 }).subscribe(({ users, posts, comments }) => {
-  console.log('All data loaded:', { users, posts, comments });
+  console.log("All data loaded:", { users, posts, comments });
 });
 
 // zip - combine corresponding values
-const names$ = of('Alice', 'Bob', 'Charlie');
+const names$ = of("Alice", "Bob", "Charlie");
 const ages$ = of(25, 30, 35);
 
 zip(names$, ages$).subscribe(([name, age]) => {
@@ -306,28 +324,32 @@ zip(names$, ages$).subscribe(([name, age]) => {
 ### 6. **Backpressure Handling**
 
 ```typescript
-import { Subject } from 'rxjs';
-import { bufferTime, throttleTime } from 'rxjs/operators';
+import { Subject } from "rxjs";
+import { bufferTime, throttleTime } from "rxjs/operators";
 
 // Buffer events
 const events$ = new Subject<string>();
 
-events$.pipe(
-  bufferTime(1000), // Collect events for 1 second
-  filter(buffer => buffer.length > 0)
-).subscribe(events => {
-  console.log('Batch:', events);
-  processBatch(events);
-});
+events$
+  .pipe(
+    bufferTime(1000), // Collect events for 1 second
+    filter((buffer) => buffer.length > 0),
+  )
+  .subscribe((events) => {
+    console.log("Batch:", events);
+    processBatch(events);
+  });
 
 // Throttle events
-const clicks$ = fromEvent(button, 'click');
+const clicks$ = fromEvent(button, "click");
 
-clicks$.pipe(
-  throttleTime(1000) // Only allow one every second
-).subscribe(() => {
-  console.log('Click processed');
-});
+clicks$
+  .pipe(
+    throttleTime(1000), // Only allow one every second
+  )
+  .subscribe(() => {
+    console.log("Click processed");
+  });
 
 function processBatch(events: string[]) {
   // Process batch
@@ -337,34 +359,37 @@ function processBatch(events: string[]) {
 ### 7. **Custom Operators**
 
 ```typescript
-import { Observable } from 'rxjs';
+import { Observable } from "rxjs";
 
 function tapLog<T>(message: string) {
   return (source: Observable<T>) => {
-    return new Observable<T>(subscriber => {
+    return new Observable<T>((subscriber) => {
       return source.subscribe({
-        next: value => {
+        next: (value) => {
           console.log(message, value);
           subscriber.next(value);
         },
-        error: err => subscriber.error(err),
-        complete: () => subscriber.complete()
+        error: (err) => subscriber.error(err),
+        complete: () => subscriber.complete(),
       });
     });
   };
 }
 
 // Usage
-source$.pipe(
-  tapLog('Before map:'),
-  map(x => x * 2),
-  tapLog('After map:')
-).subscribe();
+source$
+  .pipe(
+    tapLog("Before map:"),
+    map((x) => x * 2),
+    tapLog("After map:"),
+  )
+  .subscribe();
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Unsubscribe to prevent memory leaks
 - Use operators to transform data
 - Handle errors properly
@@ -373,6 +398,7 @@ source$.pipe(
 - Test reactive code
 
 ### ❌ DON'T
+
 - Subscribe multiple times to same observable
 - Forget to unsubscribe
 - Use nested subscriptions
@@ -381,18 +407,18 @@ source$.pipe(
 
 ## Common Operators
 
-| Operator | Purpose |
-|----------|---------|
-| **map** | Transform values |
-| **filter** | Filter values |
-| **debounceTime** | Wait before emitting |
-| **distinctUntilChanged** | Only emit if changed |
-| **switchMap** | Switch to new observable |
-| **mergeMap** | Merge multiple observables |
-| **catchError** | Handle errors |
-| **tap** | Side effects |
-| **take** | Take n values |
-| **takeUntil** | Take until condition |
+| Operator                 | Purpose                    |
+| ------------------------ | -------------------------- |
+| **map**                  | Transform values           |
+| **filter**               | Filter values              |
+| **debounceTime**         | Wait before emitting       |
+| **distinctUntilChanged** | Only emit if changed       |
+| **switchMap**            | Switch to new observable   |
+| **mergeMap**             | Merge multiple observables |
+| **catchError**           | Handle errors              |
+| **tap**                  | Side effects               |
+| **take**                 | Take n values              |
+| **takeUntil**            | Take until condition       |
 
 ## Resources
 

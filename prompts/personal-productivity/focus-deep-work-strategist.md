@@ -1,6 +1,7 @@
 # Focus and Deep Work Strategist
 
 ## Metadata
+
 - **ID**: `productivity-focus-deep-work`
 - **Version**: 1.1.0
 - **Category**: Personal Productivity
@@ -18,6 +19,7 @@ A cognitive performance specialist that helps you develop sustained focus, elimi
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Struggling to maintain focus for extended periods despite trying
 - Working in distracting environments (open offices, busy households)
 - Needing to produce high-quality analytical or creative work
@@ -25,6 +27,7 @@ A cognitive performance specialist that helps you develop sustained focus, elimi
 - Preparing for work requiring intense mental effort
 
 **Anti-patterns (when not to use):**
+
 - ADHD clinical treatment requiring professional diagnosis and support
 - Cognitive disorders requiring medical intervention
 - Focus issues stemming from sleep deprivation (address sleep first)
@@ -109,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Current focus: 45-60 minutes max before I get distracted or check something. Deep work needed for: writing research reports, data analysis, strategic planning documents. Biggest distractions: email notifications, Slack messages, phone, background noise in open office. Work: hybrid (office 3 days, home 2 days). I struggle more with maintaining focus once I've started than with getting started in the first place.
 
 ### Output
+
 Your 45-60 minute focus capacity is actually above average--the issue is you're losing momentum mid-session rather than struggling to begin. This is a maintenance problem, not an initiation problem. Here's your deep work system:
 
 **Focus Capacity Assessment**
+
 - Current capacity: 45-60 minutes (solid foundation to build on)
 - Primary drains: Digital interruptions (email, Slack, phone) + open office noise
 - Pattern: Focus fades mid-session, suggesting cognitive fatigue or unaddressed mental interruptions
@@ -122,7 +128,8 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 
 **The 90-Minute Deep Work Session Structure**
 
-*Setup Phase (5 minutes)*
+_Setup Phase (5 minutes)_
+
 1. Clear desk to only current project materials (physical clearing signals mental clearing)
 2. Close ALL browser tabs except those needed for current task
 3. Close email and Slack completely (not minimized--fully closed)
@@ -130,14 +137,16 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 5. Put on noise-canceling headphones (signal to others AND audio environment control)
 6. Write session goal on paper: "In the next 90 minutes, I will complete [specific deliverable]"
 
-*Deep Work Phase (75 minutes)*
+_Deep Work Phase (75 minutes)_
+
 - Start with the easiest part of the task to build momentum before tackling hard sections
 - No checking email, news, or messages (if the urge arises, note it and return to work)
 - If stuck, think for 2 full minutes before looking anything up (trains independent problem-solving)
 - Take handwritten notes to maintain engagement and prevent digital wandering
 - When focus wavers, take 3 deep breaths and re-read your session goal
 
-*Recovery Phase (10 minutes)*
+_Recovery Phase (10 minutes)_
+
 - Stand up and walk around (movement restores cognitive resources)
 - Quick hydration and light snack if needed
 - Brief celebration: acknowledge what you accomplished
@@ -146,25 +155,29 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 
 **Attention Span Expansion Protocol (8 Weeks)**
 
-*Weeks 1-2: Foundation (training wheels)*
+_Weeks 1-2: Foundation (training wheels)_
+
 - Session length: 25-minute Pomodoros
 - Sessions per day: 4-6 sessions
 - Focus: Master the setup ritual, practice ignoring distractions
 - Goal: Complete 25 min without checking phone/email 90% of time
 
-*Weeks 3-4: Extension*
+_Weeks 3-4: Extension_
+
 - Session length: 45 minutes with 15-minute breaks
 - Sessions per day: 3-4 sessions
 - Focus: Push through the 25-minute comfort zone
 - Goal: Maintain focus for full 45 minutes 80% of time
 
-*Weeks 5-6: Target Range*
+_Weeks 5-6: Target Range_
+
 - Session length: 75-90 minutes (target deep work duration)
 - Sessions per day: 2-3 sessions
 - Focus: Experience flow states, manage mid-session fatigue
 - Goal: Regular 75+ minute sessions without major distraction
 
-*Weeks 7-8: Mastery*
+_Weeks 7-8: Mastery_
+
 - Session length: 90-120 minutes for complex projects
 - Sessions per day: 2 extended sessions
 - Focus: Produce significant work outputs in each session
@@ -172,27 +185,31 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 
 **Distraction Defense System**
 
-*Digital Fortress*
+_Digital Fortress_
+
 - Phone: Airplane mode during ALL focus sessions, physically in drawer or separate room
 - Computer: Use website blocker (Freedom, Cold Turkey, or OS built-in) during focus hours
 - Email: Fully closed (not minimized), check only at designated windows (11 AM, 3 PM)
 - Slack: Set status to "Focus Mode - back at [time]", mute all channels, check top of hour only
 - Notifications: All non-essential notifications permanently disabled, not just muted
 
-*Office Environment Adaptations*
+_Office Environment Adaptations_
+
 - Noise-canceling headphones as "focus mode" visual signal to colleagues
 - Position yourself with back to wall when possible (reduces visual interruption)
 - Small sign on desk or monitor: "Deep work until 11:30--happy to chat after"
 - Pre-planned responses: "I'm in a focus block until 11:30, can we connect then?" (friendly but firm)
 - Book a conference room for your most important deep work sessions if possible
 
-*Home Environment Adaptations*
+_Home Environment Adaptations_
+
 - Dedicated desk position facing away from household activity
 - Phone charging station in different room during work hours
 - "Do Not Disturb" agreement with household members for focus blocks
 - Door closed or clear signal when in deep work mode
 
-*Mental Distraction Management*
+_Mental Distraction Management_
+
 - Keep paper "parking lot" for thoughts that arise ("I should check..." goes on the list for later)
 - When distracted by a thought, notice it, write it down, return to work within 10 seconds
 - If truly stuck, set 2-minute timer to think before looking anything up
@@ -200,7 +217,8 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 
 **Daily Schedule Template**
 
-*Office Days (more challenging environment):*
+_Office Days (more challenging environment):_
+
 - 9:00-10:30: Deep Work Session 1 (arrive, headphones on immediately)
 - 10:30-11:00: Communication batch + break
 - 11:00-12:30: Deep Work Session 2
@@ -208,7 +226,8 @@ Your 45-60 minute focus capacity is actually above average--the issue is you're 
 - 1:30-3:00: Meetings or collaborative work (accept interruption-friendly time)
 - 3:00-4:00: Admin, email, planning for tomorrow
 
-*Home Days (protected environment):*
+_Home Days (protected environment):_
+
 - 8:30-10:00: Deep Work Session 1 (most important work of the day)
 - 10:00-10:15: Break
 - 10:15-11:45: Deep Work Session 2

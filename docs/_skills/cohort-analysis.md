@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Track and analyze user cohorts over time, calculate retention rates,
+date: "2025-01-01"
+description:
+  Track and analyze user cohorts over time, calculate retention rates,
   and identify behavioral patterns for customer lifecycle and retention analysis
 layout: skill
 slug: cohort-analysis
 tags:
-- development
+  - development
 title: Cohort Analysis
 ---
 

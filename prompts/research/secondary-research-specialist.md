@@ -1,6 +1,7 @@
 # Secondary Research Specialist
 
 ## Metadata
+
 - **ID**: `research-secondary-research-specialist`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt guides researchers and analysts through structured desk research methodology — defining a systematic search strategy, evaluating source quality and relevance, synthesizing findings from existing literature and data, and building an evidence base that credibly informs decisions without the time and cost of primary research.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Building a literature review or evidence base on a topic before commissioning primary research
 - Answering a strategic question using existing public data, reports, and academic literature
 - Rapidly scanning a new domain to develop informed hypotheses before field research
 
 **Anti-patterns (Don't Use For):**
+
 - Topics where existing literature is sparse or outdated and primary research is the only valid approach
 - Legal or regulatory research requiring qualified legal expertise
 - Systematic reviews requiring formal protocol registration (PROSPERO, etc.) for clinical evidence
@@ -66,10 +71,13 @@ Avoid: Listing sources without evaluating their quality; treating industry-produ
 ---
 
 ## Example Usage
+
 ### Input
+
 "I need to research the effectiveness of four-day work weeks. Our HR director is proposing we pilot a 4-day work week and the CEO wants to know what the existing evidence says before we commit. What does research actually show about productivity, employee wellbeing, and business outcomes? We have about 2 weeks for this research."
 
 ### Output
+
 **Secondary Research Strategy — Four-Day Work Week Effectiveness**
 Research Question: What does existing evidence show about the effects of four-day work weeks on productivity, employee wellbeing, and business outcomes?
 Intended Use: Executive decision support for HR pilot proposal | Timeline: 2 weeks
@@ -79,6 +87,7 @@ Intended Use: Executive decision support for HR pilot proposal | Timeline: 2 wee
 **Research Question Bounding**
 
 The term "four-day work week" covers two distinct models that must be separated in the research:
+
 1. **Compressed schedule (4x10)**: 40 hours in 4 days — same total hours, different distribution
 2. **Reduced hours (4x8 or similar)**: Genuinely shorter week with 20-32 hours — the more radical model
 
@@ -89,6 +98,7 @@ Most recent high-profile pilots (Iceland, Microsoft Japan, Perpetual Guardian, U
 **Search Strategy**
 
 Search terms (use Boolean operators across databases):
+
 - ("four-day work week" OR "4-day workweek" OR "reduced working hours" OR "32-hour work week") AND (productivity OR performance OR "employee wellbeing" OR retention OR outcomes)
 - "compressed workweek" vs. "reduced hours" — search both separately
 - Exclude: "gig economy" and "freelance" contexts (different population)
@@ -96,14 +106,14 @@ Search terms (use Boolean operators across databases):
 
 Source Categories and Priority:
 
-| Priority | Source Type | Specific Sources |
-|----------|-------------|-----------------|
-| HIGH | Peer-reviewed academic research | JSTOR, Google Scholar, PubMed (wellbeing focus), SSRN |
-| HIGH | Government-sponsored studies | Iceland government/Autonomy UK report, EU labor studies |
-| HIGH | Rigorous non-profit research | Autonomy UK, 4 Day Week Global reports |
-| MEDIUM | Industry/consulting reports | Deloitte, McKinsey workforce reports (evaluate for bias) |
-| MEDIUM | News coverage of specific pilots | Financial Times, Harvard Business Review (for case summaries) |
-| LOW | Company blog posts and advocacy material | Note and disclose funding source |
+| Priority | Source Type                              | Specific Sources                                              |
+| -------- | ---------------------------------------- | ------------------------------------------------------------- |
+| HIGH     | Peer-reviewed academic research          | JSTOR, Google Scholar, PubMed (wellbeing focus), SSRN         |
+| HIGH     | Government-sponsored studies             | Iceland government/Autonomy UK report, EU labor studies       |
+| HIGH     | Rigorous non-profit research             | Autonomy UK, 4 Day Week Global reports                        |
+| MEDIUM   | Industry/consulting reports              | Deloitte, McKinsey workforce reports (evaluate for bias)      |
+| MEDIUM   | News coverage of specific pilots         | Financial Times, Harvard Business Review (for case summaries) |
+| LOW      | Company blog posts and advocacy material | Note and disclose funding source                              |
 
 Inclusion criteria: Studies with measurable outcome data, defined intervention period, at least 20 employees; both positive and negative findings
 Exclusion criteria: Opinion pieces without data; studies of freelancers or gig workers; pre-2015 evidence on knowledge worker contexts
@@ -112,14 +122,14 @@ Exclusion criteria: Opinion pieces without data; studies of freelancers or gig w
 
 **Evidence Table (Key Sources)**
 
-| Source | Type | Key Findings | Quality | Limitations |
-|--------|------|-------------|---------|-------------|
-| Iceland Trial (2015-2019, n=2,500 workers) — Autonomy/ALDA report | Government-sponsored field study | Productivity maintained or improved in 86% of worksites; worker wellbeing improved significantly; unions negotiated shift to shorter hours permanently | HIGH — large sample, government oversight, longitudinal | Specific to Icelandic public sector; model was 35-hour week, not 32-hour |
-| Microsoft Japan (2019, n=2,300) | Corporate case study, self-reported | 40% productivity increase (measured by sales per employee); 23% reduction in electricity use | MEDIUM — single company, one month, vendor-interested reporting | Very short duration; productivity measured by sales volume which may have been influenced by the novelty of the change |
-| 4 Day Week Global UK Pilot (2022, n=3,300, 61 companies) | Non-profit coordinated trial | 71% less burnout; 48% more satisfied with work-life balance; revenue grew 35% on average during trial; only 6 of 61 companies reverted | MEDIUM-HIGH — largest study to date, multi-company; methodology published | Self-selected companies (motivated to succeed); no control group; 6-month duration may not capture long-term sustainability |
-| Barnes (2022) Meta-analysis, 22 studies | Peer-reviewed academic | Wellbeing benefits consistently found; productivity evidence mixed and methodologically weak in most studies | HIGH — academic meta-analysis | Most underlying studies are small and lack control groups; productivity measurement is inconsistent across studies |
-| Pencavel (2014) Stanford historical study | Peer-reviewed academic | Diminishing returns on output begin above 49 hours/week; output per hour increases when hours decrease | HIGH — rigorous historical analysis | Manufacturing context; may not translate to knowledge work |
-| Deloitte (2023) Workforce Trends Report | Industry report | 63% of executives expect flexible work to become permanent; talent retention cited as primary driver | MEDIUM — large survey; Deloitte has consulting interest in adoption | Self-report survey; no controlled data |
+| Source                                                            | Type                                | Key Findings                                                                                                                                           | Quality                                                                   | Limitations                                                                                                                 |
+| ----------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Iceland Trial (2015-2019, n=2,500 workers) — Autonomy/ALDA report | Government-sponsored field study    | Productivity maintained or improved in 86% of worksites; worker wellbeing improved significantly; unions negotiated shift to shorter hours permanently | HIGH — large sample, government oversight, longitudinal                   | Specific to Icelandic public sector; model was 35-hour week, not 32-hour                                                    |
+| Microsoft Japan (2019, n=2,300)                                   | Corporate case study, self-reported | 40% productivity increase (measured by sales per employee); 23% reduction in electricity use                                                           | MEDIUM — single company, one month, vendor-interested reporting           | Very short duration; productivity measured by sales volume which may have been influenced by the novelty of the change      |
+| 4 Day Week Global UK Pilot (2022, n=3,300, 61 companies)          | Non-profit coordinated trial        | 71% less burnout; 48% more satisfied with work-life balance; revenue grew 35% on average during trial; only 6 of 61 companies reverted                 | MEDIUM-HIGH — largest study to date, multi-company; methodology published | Self-selected companies (motivated to succeed); no control group; 6-month duration may not capture long-term sustainability |
+| Barnes (2022) Meta-analysis, 22 studies                           | Peer-reviewed academic              | Wellbeing benefits consistently found; productivity evidence mixed and methodologically weak in most studies                                           | HIGH — academic meta-analysis                                             | Most underlying studies are small and lack control groups; productivity measurement is inconsistent across studies          |
+| Pencavel (2014) Stanford historical study                         | Peer-reviewed academic              | Diminishing returns on output begin above 49 hours/week; output per hour increases when hours decrease                                                 | HIGH — rigorous historical analysis                                       | Manufacturing context; may not translate to knowledge work                                                                  |
+| Deloitte (2023) Workforce Trends Report                           | Industry report                     | 63% of executives expect flexible work to become permanent; talent retention cited as primary driver                                                   | MEDIUM — large survey; Deloitte has consulting interest in adoption       | Self-report survey; no controlled data                                                                                      |
 
 ---
 
@@ -146,9 +156,11 @@ Business outcome data (revenue, retention) is emerging but not yet causally esta
 ---
 
 ## Variations
+
 - **Rapid Evidence Review**: Condensed 1-week scan for urgent decisions with lower comprehensiveness requirements
 - **Systematic Literature Review**: Formal PRISMA-protocol review for academic or policy contexts requiring rigorous methodology documentation
 
 ## Related Prompts
+
 - [Data Synthesis Expert](data-synthesis-expert.md) - Synthesize secondary findings with primary research data
 - [Hypothesis Testing Advisor](hypothesis-testing-advisor.md) - Use secondary research gaps to formulate primary research hypotheses

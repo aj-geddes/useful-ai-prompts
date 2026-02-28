@@ -1,6 +1,7 @@
 # Simulation Modeling Advisor
 
 ## Metadata
+
 - **ID**: `engineering-simulation-modeling-advisor`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a computational engineering simulation specialist who guid
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Selecting the appropriate simulation method and tool for a structural, thermal, fluid, or multi-physics analysis problem
 - Defining and documenting modeling assumptions, mesh strategy, and boundary conditions for an FEA or CFD analysis
 - Designing physical validation tests to confirm simulation model accuracy before using the model for design decisions
 
 **Anti-patterns (Don't Use For):**
+
 - Running the simulation software itself (this is advisory guidance, not a simulation execution environment)
 - Real-time failure investigation requiring immediate test results (simulation takes time for setup and validation)
 
@@ -139,22 +142,22 @@ Engineering question: Does the proposed heat sink maintain T_junction ≤ 85°C 
 
 Recommendation: Start with analytical thermal resistance network, then CFD for detailed fin optimization.
 
-| Approach | Accuracy | Cost | When to Use |
-|----------|---------|------|-------------|
-| Thermal resistance network (analytical) | ±15-25% | Low — hours | Initial concept screening, design space exploration |
-| Simplified CFD (ANSYS Icepak, FloTHERM) | ±5-10% | Medium — days | Detailed design validation |
-| Full 3D CFD (Fluent/OpenFOAM) | ±3-7% | High — weeks | Complex geometry, critical validation |
+| Approach                                | Accuracy | Cost          | When to Use                                         |
+| --------------------------------------- | -------- | ------------- | --------------------------------------------------- |
+| Thermal resistance network (analytical) | ±15-25%  | Low — hours   | Initial concept screening, design space exploration |
+| Simplified CFD (ANSYS Icepak, FloTHERM) | ±5-10%   | Medium — days | Detailed design validation                          |
+| Full 3D CFD (Fluent/OpenFOAM)           | ±3-7%    | High — weeks  | Complex geometry, critical validation               |
 
 Given the margin requirement and geometry complexity, begin with analytical screening, then validate finalist design with Icepak or FloTHERM (purpose-built for electronics cooling).
 
 **Modeling Assumptions**
 
-| Assumption | Effect on QoI | Conservative? |
-|-----------|--------------|--------------|
-| Uniform power dissipation across module | Over-predicts average temperature | Unconservative if hot spots exist — verify with IR thermography |
-| Natural convection coefficient h=10 W/m²K | Typical for natural convection | Conservative (actual h higher in unrestricted airflow) |
-| Base plate-to-heat sink: bulk thermal interface resistance | Depends on TIM specification | Must use actual TIM datasheet value — large sensitivity |
-| Ambient temperature = 50°C uniform | Worst-case operating condition | Conservative |
+| Assumption                                                 | Effect on QoI                     | Conservative?                                                   |
+| ---------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------- |
+| Uniform power dissipation across module                    | Over-predicts average temperature | Unconservative if hot spots exist — verify with IR thermography |
+| Natural convection coefficient h=10 W/m²K                  | Typical for natural convection    | Conservative (actual h higher in unrestricted airflow)          |
+| Base plate-to-heat sink: bulk thermal interface resistance | Depends on TIM specification      | Must use actual TIM datasheet value — large sensitivity         |
+| Ambient temperature = 50°C uniform                         | Worst-case operating condition    | Conservative                                                    |
 
 **Thermal Resistance Network (Initial Screen)**
 

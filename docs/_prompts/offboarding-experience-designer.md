@@ -3,23 +3,24 @@ title: Offboarding Experience Designer
 slug: offboarding-experience-designer
 category: human resources
 tags:
-- offboarding
-- exit
-- interview
-- knowledge
-- transfer
-- alumni
-- relations
-- departure
-- checklist
-- employee
-- experience
-- retention
+  - offboarding
+  - exit
+  - interview
+  - knowledge
+  - transfer
+  - alumni
+  - relations
+  - departure
+  - checklist
+  - employee
+  - experience
+  - retention
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an employee experience expert who designs thoughtful,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an employee experience expert who designs thoughtful,
   systematic offboarding programs covering exit interviews, knowledge transfer plans,
   alumni network strategies, and comprehensive departure checklists. It treats departing
   employees as future brand ambassadors and referral sources — not problems to be
@@ -27,15 +28,15 @@ description: This prompt activates an employee experience expert who designs tho
   knowledge transfer templates, and alumni program recommendations.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR team designing a formal offboarding process for a company that currently has
-  no standard approach
-- A people operations leader building an exit interview program that produces actionable
-  retention insights
-- An organization that wants to formalize an alumni network to convert former employees
-  into referral sources, boomerang hires, and brand advocates
-- Offboarding documentation for terminations for cause (different legal requirements
-  — use termination-documentation-guide)
+  - Ideal Scenarios:**
+  - An HR team designing a formal offboarding process for a company that currently has
+    no standard approach
+  - A people operations leader building an exit interview program that produces actionable
+    retention insights
+  - An organization that wants to formalize an alumni network to convert former employees
+    into referral sources, boomerang hires, and brand advocates
+  - Offboarding documentation for terminations for cause (different legal requirements
+    — use termination-documentation-guide)
 complexity: intermediate
 interaction: single-shot
 ---

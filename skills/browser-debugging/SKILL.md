@@ -67,7 +67,6 @@ Memory:
   - Detect leaks
 
 ---
-
 Essential Shortcuts:
 
 F12 / Ctrl+Shift+I: Open DevTools

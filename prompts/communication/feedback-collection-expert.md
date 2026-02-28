@@ -1,6 +1,7 @@
 # Feedback Collection Expert
 
 ## Metadata
+
 - **ID**: `communication-feedback-collection`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -12,11 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Designs effective feedback collection systems including surveys, interviews, and continuous feedback loops that generate actionable insights. Turns collected feedback into improvements through structured collection methodology, unbiased question design, and analysis frameworks that close the loop between input and action.
 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing employee engagement surveys
 - Collecting customer or product feedback
 - Creating post-event or post-project feedback systems
@@ -24,6 +27,7 @@ Designs effective feedback collection systems including surveys, interviews, and
 - Rebuilding trust in feedback processes after failed initiatives
 
 **Anti-Patterns (When NOT to Use):**
+
 - Formal performance reviews (use performance management prompts)
 - Formal research studies requiring IRB approval
 - Compliance surveys with regulatory requirements
@@ -108,6 +112,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need to run our annual employee engagement survey. We have 500 employees across 5 offices. We want honest feedback about management and culture. Last year's survey had only 45% response rate and employees felt nothing changed afterward. We need to rebuild trust in the process."
 
 ### Output
@@ -117,17 +122,20 @@ Avoid:
 ### Approach: Rebuilt Trust Model
 
 **Key Changes from Last Year:**
+
 1. Shorter survey (15 min vs. 30 min)
 2. Visible action plan from results
 3. Manager accountability for follow-up
 4. Progress updates throughout year
 
 ### Collection Method
+
 - **Primary:** Anonymous digital survey (10-15 minutes)
 - **Secondary:** Focus groups for deep-dive topics (optional)
 - **Follow-up:** Pulse surveys quarterly (3 questions)
 
 ### Anonymity Framework
+
 - Fully anonymous responses
 - No demographic cuts that could identify individuals
 - Minimum 5 responses required to show team-level data
@@ -202,21 +210,25 @@ Open text (optional)
 ## DISTRIBUTION PLAN
 
 ### Pre-Launch (Week -1)
+
 - CEO video message explaining purpose and commitment to action
 - Manager briefing on survey and their role
 - Preview in all-hands meeting
 
 ### Launch (Week 1)
+
 - Monday AM: Email with survey link
 - Wednesday: Reminder to non-responders
 - Friday: Manager reminder to encourage participation
 
 ### Week 2
+
 - Monday: Status update (response rate)
 - Wednesday: Final reminder
 - Friday: Survey closes
 
 ### Target: 70% Response Rate
+
 - Incentive: Survey completion = entry for prizes
 - Accountability: Manager response rates tracked
 - Transparency: Real-time response rate dashboard
@@ -224,14 +236,16 @@ Open text (optional)
 ## ANALYSIS FRAMEWORK
 
 ### Quantitative Analysis
-| Metric | Benchmark | Action Trigger |
-|--------|-----------|----------------|
-| Overall Satisfaction | 7.0+ | Below 6.5 requires action plan |
-| eNPS | +20 | Below 0 is critical |
-| Manager Score | 4.0+ | Below 3.5 requires intervention |
-| Culture Score | 4.0+ | Below 3.5 requires initiative |
+
+| Metric               | Benchmark | Action Trigger                  |
+| -------------------- | --------- | ------------------------------- |
+| Overall Satisfaction | 7.0+      | Below 6.5 requires action plan  |
+| eNPS                 | +20       | Below 0 is critical             |
+| Manager Score        | 4.0+      | Below 3.5 requires intervention |
+| Culture Score        | 4.0+      | Below 3.5 requires initiative   |
 
 ### Theme Analysis (Open-Ended)
+
 - Code responses into themes
 - Identify top 5 themes by frequency
 - Flag urgent issues for immediate action
@@ -240,6 +254,7 @@ Open text (optional)
 ## ACTION PLANNING
 
 ### Results Timeline
+
 - Week 1: Analysis complete
 - Week 2: Executive review and action planning
 - Week 3: All-hands results presentation
@@ -247,30 +262,34 @@ Open text (optional)
 - Month 2-12: Quarterly pulse checks
 
 ### Accountability Structure
+
 - 3 company-wide initiatives from results
 - Each manager creates team action plan
 - Quarterly progress updates to all employees
 - Next year's survey measures improvement
 
 ### Closing the Loop
+
 "You said, we did" communications:
+
 - Monthly updates on action progress
 - Visible changes connected to feedback
 - Acknowledgment even when action isn't possible
 
 ## SUCCESS METRICS
 
-| Metric | Target |
-|--------|--------|
-| Response Rate | 70%+ (up from 45%) |
-| Completion Rate | 90%+ |
-| Action Plans Created | 100% of teams |
-| Quarterly Pulse Participation | 60%+ |
-| Year-over-Year Improvement | +5% on key metrics |
+| Metric                        | Target             |
+| ----------------------------- | ------------------ |
+| Response Rate                 | 70%+ (up from 45%) |
+| Completion Rate               | 90%+               |
+| Action Plans Created          | 100% of teams      |
+| Quarterly Pulse Participation | 60%+               |
+| Year-over-Year Improvement    | +5% on key metrics |
 
 ---
 
 ## Related Prompts
+
 - [Team Collaboration Expert](team-collaboration-expert.md) - Build effective team dynamics
 - [Performance Review Optimizer](../career-development/performance-review-optimizer.md) - Performance feedback systems
 - [Voice of Customer Analysis Expert](../customer-focused/voice-of-customer-analysis-expert.md) - Customer feedback analysis

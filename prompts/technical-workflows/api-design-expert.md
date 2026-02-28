@@ -1,6 +1,7 @@
 # API Design Expert
 
 ## Metadata
+
 - **ID**: `api-design-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Designs clean, intuitive APIs following industry best practices for REST and Gra
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing new REST or GraphQL APIs for products or platforms
 - Creating OpenAPI/GraphQL specifications and documentation
 - Improving API developer experience and consistency
 - Planning API versioning, deprecation, and migration strategies
 
 **Anti-patterns (Don't Use For):**
+
 - Internal function interfaces or method signatures
 - Database schema design (use Database Schema Expert)
 - Message queue or event streaming protocols
@@ -129,12 +132,12 @@ Nested Resources (max 2 levels):
 
 **Authentication Design**
 
-| Audience | Auth Method | Use Case |
-|----------|-------------|----------|
-| Public catalog | API key (header) | Product browsing, search |
-| Customer actions | OAuth 2.0 (authorization code) | Orders, profile management |
-| Partner integration | OAuth 2.0 (client credentials) | Bulk operations, webhooks |
-| Admin operations | OAuth 2.0 + MFA | Product management, refunds |
+| Audience            | Auth Method                    | Use Case                    |
+| ------------------- | ------------------------------ | --------------------------- |
+| Public catalog      | API key (header)               | Product browsing, search    |
+| Customer actions    | OAuth 2.0 (authorization code) | Orders, profile management  |
+| Partner integration | OAuth 2.0 (client credentials) | Bulk operations, webhooks   |
+| Admin operations    | OAuth 2.0 + MFA                | Product management, refunds |
 
 Header: `Authorization: Bearer <token>` for OAuth, `X-API-Key: <key>` for public
 
@@ -187,11 +190,13 @@ Location: /v1/orders/ord_new789
 **Rate Limiting**
 
 Headers returned on every response:
+
 - `X-RateLimit-Limit: 1000` - Requests allowed per minute
 - `X-RateLimit-Remaining: 847` - Requests remaining
 - `X-RateLimit-Reset: 1703689200` - Unix timestamp when limit resets
 
 Limits by tier:
+
 - Public API key: 100 requests/minute
 - Partner OAuth: 1,000 requests/minute
 - Enterprise: 10,000 requests/minute (custom)

@@ -1,6 +1,7 @@
 # Performance Review Optimizer
 
 ## Metadata
+
 - **ID**: `career-performance-review-optimizer`
 - **Version**: 1.1.0
 - **Category**: Career Development
@@ -12,16 +13,20 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Transforms performance reviews from anxiety-inducing exercises into strategic career advancement opportunities through compelling achievement documentation, evidence-based rating justification, and promotion case building. Creates self-assessments that position professionals for recognition and advancement.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Preparing for annual or quarterly performance review cycles
 - Writing self-assessments and achievement documentation
 - Building evidence-based cases for promotion or compensation increases
 - Planning development conversations with managers
 
 **Anti-patterns (when not to use):**
+
 - Resume or cover letter writing for external positions
 - External job applications or interview preparation
 - Writing peer reviews or feedback for others
@@ -121,6 +126,7 @@ FAILURE INDICATORS:
 ## Example Usage
 
 ### Input
+
 "Senior Software Engineer, 18 months in role (promoted from Software Engineer). Review period achievements: Led payment system migration (40% faster, 99.9% uptime), mentored 2 junior devs (both promoted), took on security review responsibilities. Rating scale 1-5 (3=meets, 4=exceeds, 5=outstanding). Goal: Staff Engineer within 18 months. Gaps: distributed systems experience, cross-team influence."
 
 ### Output
@@ -128,18 +134,21 @@ FAILURE INDICATORS:
 **ACHIEVEMENT DOCUMENTATION**
 
 Achievement 1: Payment System Migration
+
 - Situation: Legacy payment system causing performance issues and maintenance burden
 - Task: Lead migration to modern architecture while maintaining 100% uptime
 - Action: Designed microservices architecture, created migration plan with rollback procedures, led 4-person team through 6-month implementation
 - Result: 40% improvement in API response times (200ms to 120ms), 99.9% system uptime during transition, $150K annual cost savings from infrastructure optimization, zero critical incidents
 
 Achievement 2: Team Development and Mentoring
+
 - Situation: Team had 2 junior developers struggling with code quality and growth
 - Task: Provide mentorship while maintaining project velocity
 - Action: Created structured mentoring program, developed code review guidelines, established weekly learning sessions
 - Result: Both junior developers promoted within 12 months, code review rejection rate decreased from 35% to 15%, knowledge sharing sessions adopted by 3 other teams
 
 Achievement 3: Security Initiative Leadership
+
 - Situation: Security vulnerabilities identified across multiple team APIs
 - Task: Implement security best practices without disrupting development
 - Action: Voluntarily led security review, created automated scanning pipeline, facilitated team training
@@ -150,18 +159,21 @@ Achievement 3: Security Initiative Leadership
 Target: 4 (Exceeds Expectations)
 
 Technical Excellence (4/5):
+
 - Successfully led complex migration ahead of schedule
 - Improved performance beyond targets (40% vs 25% goal)
 - Became go-to expert for payment system and security
 - Evidence: Zero critical incidents, $150K savings documented
 
 Leadership and Collaboration (4/5):
+
 - Mentored 2 developers to promotion (beyond role requirements)
 - Led cross-team security initiative (voluntary additional responsibility)
 - Invited to senior-level architecture meetings
 - Evidence: Mentee promotions, security process adoption
 
 Professional Development (5/5):
+
 - AWS certification achieved 6 months ahead of plan
 - Knowledge-sharing sessions attended by 50+ engineers
 - Documentation and best practices adopted organization-wide
@@ -170,18 +182,21 @@ Professional Development (5/5):
 **PROMOTION CASE: STAFF ENGINEER**
 
 Technical Leadership Demonstrated:
+
 - Architecture design for critical payment system
 - Complex performance problem-solving with $150K measurable impact
 - Expertise expansion into security domain
 - Mentoring on advanced technical concepts
 
 Organizational Impact Delivered:
+
 - $150K annual cost savings documented
 - Security risk mitigation (~$2M value protected)
 - Team productivity improvements through best practices
 - Knowledge capital creation through documentation
 
 Gap Acknowledgment and Plan:
+
 - Gap: Large-scale distributed systems experience
 - Plan: Lead multi-region payment processing design Q2
 - Gap: Cross-department influence
@@ -190,6 +205,7 @@ Gap Acknowledgment and Plan:
 **DEVELOPMENT PLAN**
 
 6-Month Roadmap:
+
 - Months 1-2: Complete advanced distributed systems course, participate in architecture review board
 - Months 3-4: Lead design of multi-region payment processing, contribute to quarterly technical roadmap
 - Months 5-6: Lead cross-departmental technical initiative, present strategy to executive leadership
@@ -208,11 +224,13 @@ If feedback includes growth areas:
 **POST-REVIEW ACTIONS**
 
 Within 1 Week:
+
 - Send thank-you email summarizing discussion and agreed development goals
 - Create detailed development plan based on feedback
 - Schedule first follow-up on development opportunities
 
 Quarterly Check-ins:
+
 - Review progress against development goals
 - Seek feedback on contributions
 - Maintain promotion timeline discussion
@@ -220,6 +238,7 @@ Quarterly Check-ins:
 ---
 
 ## Related Prompts
+
 - [Career Advancement Strategist](career-advancement-strategist.md) - Long-term career positioning
 - [Salary Negotiation Expert](salary-negotiation-expert.md) - Compensation negotiation preparation
 - [Skill Development Planner](skill-development-planner.md) - Capability building roadmap

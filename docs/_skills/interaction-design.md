@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Design meaningful interactions and microinteractions. Create delightful
+date: "2025-01-01"
+description:
+  Design meaningful interactions and microinteractions. Create delightful
   user experiences through thoughtful animation, feedback, and responsive interface
   design.
 layout: skill
 slug: interaction-design
 tags:
-- development
+  - development
 title: interaction-design
 ---
 
@@ -59,7 +60,6 @@ Double Tap:
   Conflict: Avoid 300ms delay confusion
 
 ---
-
 ## Microinteractions
 
 Loading States:
@@ -221,35 +221,35 @@ Visual Feedback:
 class AccessibleInteractions {
   ensureKeyboardAccess() {
     return {
-      tab_order: 'Logical, top-to-bottom',
-      focus_visible: 'Clear focus indicator (not removed)',
-      enter_key: 'Activates buttons and links',
-      space_key: 'Activates buttons',
-      escape_key: 'Closes modals and menus',
-      arrow_keys: 'Navigate lists, menus, carousels'
+      tab_order: "Logical, top-to-bottom",
+      focus_visible: "Clear focus indicator (not removed)",
+      enter_key: "Activates buttons and links",
+      space_key: "Activates buttons",
+      escape_key: "Closes modals and menus",
+      arrow_keys: "Navigate lists, menus, carousels",
     };
   }
 
   respectMotionPreferences() {
     return {
       prefers_reduced_motion: {
-        media_query: '@media (prefers-reduced-motion: reduce)',
+        media_query: "@media (prefers-reduced-motion: reduce)",
         actions: [
-          'Disable animations',
-          'Reduce animation duration',
-          'Remove parallax effects',
-          'Disable autoplay'
-        ]
-      }
+          "Disable animations",
+          "Reduce animation duration",
+          "Remove parallax effects",
+          "Disable autoplay",
+        ],
+      },
     };
   }
 
   screenReaderConsiderations() {
     return {
-      announcements: 'Use ARIA live regions for updates',
-      feedback: 'Provide screen reader feedback for interactions',
-      labels: 'Clear, descriptive button labels',
-      states: 'Announce state changes (expanded, selected)'
+      announcements: "Use ARIA live regions for updates",
+      feedback: "Provide screen reader feedback for interactions",
+      labels: "Clear, descriptive button labels",
+      states: "Announce state changes (expanded, selected)",
     };
   }
 }
@@ -258,6 +258,7 @@ class AccessibleInteractions {
 ## Best Practices
 
 ### ✅ DO
+
 - Keep animations under 400ms
 - Provide clear visual feedback
 - Use animations to guide attention
@@ -270,6 +271,7 @@ class AccessibleInteractions {
 - Document interaction behavior
 
 ### ❌ DON'T
+
 - Animate for decoration only
 - Use animations longer than 500ms
 - Ignore motion-sensitive users

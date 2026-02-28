@@ -143,6 +143,7 @@ pipeline {
 ## Best Practices
 
 ### ✅ DO
+
 - Use declarative pipelines for clarity
 - Use credentials plugin for secrets
 - Archive artifacts and reports
@@ -150,6 +151,7 @@ pipeline {
 - Keep pipelines modular and reusable
 
 ### ❌ DON'T
+
 - Store credentials in pipeline code
 - Ignore pipeline errors
 - Skip test coverage reporting

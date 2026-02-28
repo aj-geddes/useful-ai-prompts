@@ -24,15 +24,15 @@ Implement comprehensive API security measures including authentication, authoriz
 
 ```javascript
 // secure-api.js - Comprehensive API security
-const express = require('express');
-const helmet = require('helmet');
-const rateLimit = require('express-rate-limit');
-const mongoSanitize = require('express-mongo-sanitize');
-const xss = require('xss-clean');
-const hpp = require('hpp');
-const cors = require('cors');
-const jwt = require('jsonwebtoken');
-const validator = require('validator');
+const express = require("express");
+const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
+const mongoSanitize = require("express-mongo-sanitize");
+const xss = require("xss-clean");
+const hpp = require("hpp");
+const cors = require("cors");
+const jwt = require("jsonwebtoken");
+const validator = require("validator");
 
 class SecureAPIServer {
   constructor() {
@@ -43,40 +43,39 @@ class SecureAPIServer {
 
   setupSecurityMiddleware() {
     // 1. Helmet - Set security headers
-    this.app.use(helmet({
-      contentSecurityPolicy: {
-        directives: {
-          defaultSrc: ["'self'"],
-          styleSrc: ["'self'", "'unsafe-inline'"],
-          scriptSrc: ["'self'"],
-          imgSrc: ["'self'", "data:", "https:"]
-        }
-      },
-      hsts: {
-        maxAge: 31536000,
-        includeSubDomains: true,
-        preload: true
-      }
-    }));
+    this.app.use(
+      helmet({
+        contentSecurityPolicy: {
+          directives: {
+            defaultSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'"],
+            scriptSrc: ["'self'"],
+            imgSrc: ["'self'", "data:", "https:"],
+          },
+        },
+        hsts: {
+          maxAge: 31536000,
+          includeSubDomains: true,
+          preload: true,
+        },
+      }),
+    );
 
     // 2. CORS configuration
     const corsOptions = {
       origin: (origin, callback) => {
-        const whitelist = [
-          'https://example.com',
-          'https://app.example.com'
-        ];
+        const whitelist = ["https://example.com", "https://app.example.com"];
 
         if (!origin || whitelist.includes(origin)) {
           callback(null, true);
         } else {
-          callback(new Error('Not allowed by CORS'));
+          callback(new Error("Not allowed by CORS"));
         }
       },
       credentials: true,
       optionsSuccessStatus: 200,
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      allowedHeaders: ['Content-Type', 'Authorization']
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      allowedHeaders: ["Content-Type", "Authorization"],
     };
 
     this.app.use(cors(corsOptions));
@@ -85,30 +84,30 @@ class SecureAPIServer {
     const generalLimiter = rateLimit({
       windowMs: 15 * 60 * 1000, // 15 minutes
       max: 100, // limit each IP to 100 requests per windowMs
-      message: 'Too many requests from this IP',
+      message: "Too many requests from this IP",
       standardHeaders: true,
       legacyHeaders: false,
       handler: (req, res) => {
         res.status(429).json({
-          error: 'rate_limit_exceeded',
-          message: 'Too many requests, please try again later',
-          retryAfter: req.rateLimit.resetTime
+          error: "rate_limit_exceeded",
+          message: "Too many requests, please try again later",
+          retryAfter: req.rateLimit.resetTime,
         });
-      }
+      },
     });
 
     const authLimiter = rateLimit({
       windowMs: 15 * 60 * 1000,
       max: 5, // Stricter limit for auth endpoints
-      skipSuccessfulRequests: true
+      skipSuccessfulRequests: true,
     });
 
-    this.app.use('/api/', generalLimiter);
-    this.app.use('/api/auth/', authLimiter);
+    this.app.use("/api/", generalLimiter);
+    this.app.use("/api/auth/", authLimiter);
 
     // 4. Body parsing with size limits
-    this.app.use(express.json({ limit: '10kb' }));
-    this.app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+    this.app.use(express.json({ limit: "10kb" }));
+    this.app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
     // 5. NoSQL injection prevention
     this.app.use(mongoSanitize());
@@ -121,8 +120,8 @@ class SecureAPIServer {
 
     // 8. Request ID for tracking
     this.app.use((req, res, next) => {
-      req.id = require('crypto').randomUUID();
-      res.setHeader('X-Request-ID', req.id);
+      req.id = require("crypto").randomUUID();
+      res.setHeader("X-Request-ID", req.id);
       next();
     });
 
@@ -134,7 +133,7 @@ class SecureAPIServer {
     return (req, res, next) => {
       const startTime = Date.now();
 
-      res.on('finish', () => {
+      res.on("finish", () => {
         const duration = Date.now() - startTime;
 
         const logEntry = {
@@ -145,16 +144,16 @@ class SecureAPIServer {
           statusCode: res.statusCode,
           duration,
           ip: req.ip,
-          userAgent: req.get('user-agent')
+          userAgent: req.get("user-agent"),
         };
 
         // Log suspicious activity
         if (res.statusCode === 401 || res.statusCode === 403) {
-          console.warn('Security event:', logEntry);
+          console.warn("Security event:", logEntry);
         }
 
         if (res.statusCode >= 500) {
-          console.error('Server error:', logEntry);
+          console.error("Server error:", logEntry);
         }
       });
 
@@ -167,10 +166,10 @@ class SecureAPIServer {
     return (req, res, next) => {
       const authHeader = req.headers.authorization;
 
-      if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      if (!authHeader || !authHeader.startsWith("Bearer ")) {
         return res.status(401).json({
-          error: 'unauthorized',
-          message: 'Missing or invalid authorization header'
+          error: "unauthorized",
+          message: "Missing or invalid authorization header",
         });
       }
 
@@ -178,24 +177,24 @@ class SecureAPIServer {
 
       try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET, {
-          algorithms: ['HS256'],
-          issuer: 'api.example.com',
-          audience: 'api.example.com'
+          algorithms: ["HS256"],
+          issuer: "api.example.com",
+          audience: "api.example.com",
         });
 
         req.user = decoded;
         next();
       } catch (error) {
-        if (error.name === 'TokenExpiredError') {
+        if (error.name === "TokenExpiredError") {
           return res.status(401).json({
-            error: 'token_expired',
-            message: 'Token has expired'
+            error: "token_expired",
+            message: "Token has expired",
           });
         }
 
         return res.status(401).json({
-          error: 'invalid_token',
-          message: 'Invalid token'
+          error: "invalid_token",
+          message: "Invalid token",
         });
       }
     };
@@ -218,25 +217,29 @@ class SecureAPIServer {
 
           if (value) {
             // Type validation
-            if (rules.type === 'email' && !validator.isEmail(value)) {
+            if (rules.type === "email" && !validator.isEmail(value)) {
               errors.push(`${field} must be a valid email`);
             }
 
-            if (rules.type === 'uuid' && !validator.isUUID(value)) {
+            if (rules.type === "uuid" && !validator.isUUID(value)) {
               errors.push(`${field} must be a valid UUID`);
             }
 
-            if (rules.type === 'url' && !validator.isURL(value)) {
+            if (rules.type === "url" && !validator.isURL(value)) {
               errors.push(`${field} must be a valid URL`);
             }
 
             // Length validation
             if (rules.minLength && value.length < rules.minLength) {
-              errors.push(`${field} must be at least ${rules.minLength} characters`);
+              errors.push(
+                `${field} must be at least ${rules.minLength} characters`,
+              );
             }
 
             if (rules.maxLength && value.length > rules.maxLength) {
-              errors.push(`${field} must be at most ${rules.maxLength} characters`);
+              errors.push(
+                `${field} must be at most ${rules.maxLength} characters`,
+              );
             }
 
             // Pattern validation
@@ -249,9 +252,9 @@ class SecureAPIServer {
 
       if (errors.length > 0) {
         return res.status(400).json({
-          error: 'validation_error',
-          message: 'Input validation failed',
-          details: errors
+          error: "validation_error",
+          message: "Input validation failed",
+          details: errors,
         });
       }
 
@@ -264,15 +267,15 @@ class SecureAPIServer {
     return (req, res, next) => {
       if (!req.user) {
         return res.status(401).json({
-          error: 'unauthorized',
-          message: 'Authentication required'
+          error: "unauthorized",
+          message: "Authentication required",
         });
       }
 
       if (roles.length > 0 && !roles.includes(req.user.role)) {
         return res.status(403).json({
-          error: 'forbidden',
-          message: 'Insufficient permissions'
+          error: "forbidden",
+          message: "Insufficient permissions",
         });
       }
 
@@ -282,20 +285,21 @@ class SecureAPIServer {
 
   setupRoutes() {
     // Public endpoint
-    this.app.get('/api/health', (req, res) => {
-      res.json({ status: 'healthy' });
+    this.app.get("/api/health", (req, res) => {
+      res.json({ status: "healthy" });
     });
 
     // Protected endpoint with validation
-    this.app.post('/api/users',
+    this.app.post(
+      "/api/users",
       this.authenticateJWT(),
-      this.authorize('admin'),
+      this.authorize("admin"),
       this.validateInput({
         body: {
-          email: { required: true, type: 'email' },
+          email: { required: true, type: "email" },
           name: { required: true, minLength: 2, maxLength: 100 },
-          password: { required: true, minLength: 8 }
-        }
+          password: { required: true, minLength: 8 },
+        },
       }),
       async (req, res) => {
         try {
@@ -304,26 +308,26 @@ class SecureAPIServer {
 
           // Process request
           res.status(201).json({
-            message: 'User created successfully',
-            userId: '123'
+            message: "User created successfully",
+            userId: "123",
           });
         } catch (error) {
           res.status(500).json({
-            error: 'internal_error',
-            message: 'An error occurred'
+            error: "internal_error",
+            message: "An error occurred",
           });
         }
-      }
+      },
     );
 
     // Error handling middleware
     this.app.use((err, req, res, next) => {
-      console.error('Unhandled error:', err);
+      console.error("Unhandled error:", err);
 
       res.status(500).json({
-        error: 'internal_error',
-        message: 'An unexpected error occurred',
-        requestId: req.id
+        error: "internal_error",
+        message: "An unexpected error occurred",
+        requestId: req.id,
       });
     });
   }
@@ -622,6 +626,7 @@ http {
 ## Best Practices
 
 ### ✅ DO
+
 - Use HTTPS everywhere
 - Implement rate limiting
 - Validate all inputs
@@ -632,6 +637,7 @@ http {
 - Version your APIs
 
 ### ❌ DON'T
+
 - Expose stack traces
 - Return detailed errors
 - Trust user input

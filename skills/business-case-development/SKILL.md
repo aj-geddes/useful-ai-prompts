@@ -393,6 +393,7 @@ Key Messages to Emphasize:
 ## Best Practices
 
 ### ✅ DO
+
 - Tie business case to strategic goals
 - Quantify benefits wherever possible
 - Be realistic about timelines and costs
@@ -405,6 +406,7 @@ Key Messages to Emphasize:
 - Define success metrics upfront
 
 ### ❌ DON'T
+
 - Over-promise benefits
 - Underestimate costs
 - Ignore alternative solutions

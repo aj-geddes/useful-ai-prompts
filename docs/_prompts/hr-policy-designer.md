@@ -3,27 +3,28 @@ title: HR Policy Designer
 slug: hr-policy-designer
 category: human resources
 tags:
-- HR
-- policy
-- employment
-- policy
-- PTO
-- policy
-- remote
-- work
-- policy
-- code
-- of
-- conduct
-- accommodation
-- policy
-- employee
-- handbook
+  - HR
+  - policy
+  - employment
+  - policy
+  - PTO
+  - policy
+  - remote
+  - work
+  - policy
+  - code
+  - of
+  - conduct
+  - accommodation
+  - policy
+  - employee
+  - handbook
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates an HR policy specialist who drafts clear, legally-informed,
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates an HR policy specialist who drafts clear, legally-informed,
   and consistently applicable employment policies covering time off, remote work,
   conduct, accommodation, and other workplace matters. It applies best practices in
   policy writing — plain language, unambiguous scope, clear process, and defined exceptions
@@ -32,15 +33,15 @@ description: This prompt activates an HR policy specialist who drafts clear, leg
   and manager guidance notes.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR team creating a remote work policy as the company formalizes a hybrid work
-  model
-- A growing startup that needs a comprehensive PTO and leave policy before reaching
-  50 employees
-- An HR leader updating a code of conduct to reflect current workplace expectations,
-  including AI tool use and social media
-- Jurisdiction-specific legal compliance policies (FMLA, state leave laws) — these
-  require employment attorney review
+  - Ideal Scenarios:**
+  - An HR team creating a remote work policy as the company formalizes a hybrid work
+    model
+  - A growing startup that needs a comprehensive PTO and leave policy before reaching
+    50 employees
+  - An HR leader updating a code of conduct to reflect current workplace expectations,
+    including AI tool use and social media
+  - Jurisdiction-specific legal compliance policies (FMLA, state leave laws) — these
+    require employment attorney review
 complexity: intermediate
 interaction: single-shot
 ---

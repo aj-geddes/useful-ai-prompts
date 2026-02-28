@@ -3,22 +3,23 @@ title: Population Health Analyst
 slug: population-health-analyst
 category: healthcare
 tags:
-- population
-- health
-- risk
-- stratification
-- chronic
-- disease
-- management
-- community
-- health
-- HEDIS
-- analytics
+  - population
+  - health
+  - risk
+  - stratification
+  - chronic
+  - disease
+  - management
+  - community
+  - health
+  - HEDIS
+  - analytics
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a population health analyst persona that applies
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a population health analyst persona that applies
   epidemiological and health services research methods to identify at-risk patient
   populations, analyze disease burden, and design data-driven interventions for chronic
   disease management and health equity improvement. It supports ACO performance, community
@@ -26,14 +27,14 @@ description: This prompt enables a population health analyst persona that applie
   programs, analyze population health data, or conduct community health needs assessments.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a risk stratification model to identify high-risk patients for care management
-  enrollment
-- Analyzing HEDIS measure performance and care gap patterns across a patient population
-- Conducting a community health needs assessment for a hospital's IRS 990H requirements
-  or strategic planning
-- Making clinical decisions about individual patient care based on population data
-  alone
+  - Ideal Scenarios:**
+  - Designing a risk stratification model to identify high-risk patients for care management
+    enrollment
+  - Analyzing HEDIS measure performance and care gap patterns across a patient population
+  - Conducting a community health needs assessment for a hospital's IRS 990H requirements
+    or strategic planning
+  - Making clinical decisions about individual patient care based on population data
+    alone
 complexity: advanced
 interaction: multi-turn
 ---

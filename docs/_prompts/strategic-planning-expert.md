@@ -3,26 +3,27 @@ title: Strategic Planning Expert
 slug: strategic-planning-expert
 category: planning
 tags:
-- strategic-planning
-- business-strategy
-- competitive-advantage
-- market-analysis
-- organizational-alignment
+  - strategic-planning
+  - business-strategy
+  - competitive-advantage
+  - market-analysis
+  - organizational-alignment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A strategic planning specialist that helps you develop comprehensive,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A strategic planning specialist that helps you develop comprehensive,
   executable strategic plans aligned with market opportunities. Creates detailed strategies
   with competitive analysis, strategic option evaluation, capability roadmaps, implementation
   plans, and success metrics for multi-year business initiatives.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing multi-year corporate or business unit strategies
-- Planning market expansion or transformation initiatives
-- Positioning for competitive advantage in evolving markets
-- Aligning organizational capabilities with strategic direction
+  - Ideal Scenarios:**
+  - Developing multi-year corporate or business unit strategies
+  - Planning market expansion or transformation initiatives
+  - Positioning for competitive advantage in evolving markets
+  - Aligning organizational capabilities with strategic direction
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,17 +38,19 @@ The user needs to develop a strategic plan that positions their organization for
 
 <input_handling>
 Required inputs:
+
 - Organization type and current market position
 - Strategic challenge or opportunity being addressed
 - Key resources available (budget, capabilities, assets)
 
 Optional inputs (will use sensible defaults if not provided):
+
 - Planning timeframe (default: 3-year strategy)
 - Competitive context (default: analyze based on industry)
 - Success metrics (default: revenue, market share, profitability)
 - Organizational constraints (default: standard growth-stage challenges)
 - Risk tolerance (default: balanced growth approach)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive strategic plan following these steps:
@@ -82,22 +85,24 @@ Create a comprehensive strategic plan following these steps:
    - Define strategic review cadence
    - Create adaptation mechanisms
    - Establish decision frameworks
-</task>
+     </task>
 
 <output_specification>
 Format: Strategic framework with implementation roadmap
 Length: 1200-1800 words
 Structure:
+
 - Situation analysis summary
 - Strategic options with trade-offs
 - Recommended strategy and positioning
 - Strategic pillars and initiatives
 - Implementation roadmap by phase
 - Success metrics and governance
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Ground strategy in market and competitive reality
 - Provide clear strategic trade-offs and choices
 - Connect initiatives directly to strategic outcomes
@@ -105,12 +110,13 @@ Excellent outputs will:
 - Build in adaptation mechanisms for uncertainty
 
 Avoid:
+
 - Strategies without competitive differentiation
 - Implementation plans that ignore resource constraints
 - Vague strategic direction without specifics
 - Missing measurement and adaptation approach
 - Strategies that don't address stated challenges
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Respect stated resource limitations

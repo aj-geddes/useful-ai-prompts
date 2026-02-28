@@ -3,30 +3,31 @@ title: Student Feedback Coach
 slug: student-feedback-coach
 category: education
 tags:
-- feedback
-- student
-- work
-- growth
-- mindset
-- writing
-- feedback
-- assessment
+  - feedback
+  - student
+  - work
+  - growth
+  - mindset
+  - writing
+  - feedback
+  - assessment
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps educators write specific, actionable, growth-oriented
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps educators write specific, actionable, growth-oriented
   feedback on student work across any subject. It moves beyond generic comments to
   craft feedback that identifies strengths, pinpoints precise areas for improvement,
   and gives students concrete next steps. The result is feedback that motivates rather
   than discourages and drives measurable improvement.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing written comments on essays, lab reports, or creative projects
-- Providing structured verbal feedback before a revision cycle
-- Designing feedback templates for large classes where consistency matters
-- Generating grades or final scores (feedback is separate from evaluation)
+  - Ideal Scenarios:**
+  - Writing written comments on essays, lab reports, or creative projects
+  - Providing structured verbal feedback before a revision cycle
+  - Designing feedback templates for large classes where consistency matters
+  - Generating grades or final scores (feedback is separate from evaluation)
 complexity: intermediate
 interaction: multi-turn
 ---

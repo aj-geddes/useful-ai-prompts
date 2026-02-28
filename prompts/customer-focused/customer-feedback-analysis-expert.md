@@ -1,6 +1,7 @@
 # Customer Feedback Analysis Expert
 
 ## Metadata
+
 - **ID**: customer-focused/customer-feedback-analysis-expert
 - **Version**: 2.1.0
 - **Category**: Customer-Focused
@@ -18,6 +19,7 @@ Transform raw customer feedback from multiple sources into actionable insights t
 ## When to Use
 
 ### Ideal Scenarios
+
 - Analyzing large volumes of customer feedback from multiple channels
 - Identifying root causes behind customer satisfaction scores (NPS, CSAT)
 - Prioritizing product or service improvements based on customer input
@@ -26,6 +28,7 @@ Transform raw customer feedback from multiple sources into actionable insights t
 - Building data-driven cases for resource allocation
 
 ### Anti-Patterns (When Not to Use)
+
 - Single customer complaint requiring individual response (use support escalation)
 - Feedback collection design (use survey design prompts)
 - When feedback volume is too small for pattern analysis (fewer than 50 responses)
@@ -108,6 +111,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 Feedback sources: 3,000 support tickets and 500 NPS survey responses from last quarter
 
@@ -137,16 +141,19 @@ Analysis of 3,500 feedback items reveals the UI redesign is the primary driver o
 **SENTIMENT DISTRIBUTION**
 
 **Overall Sentiment:**
+
 - Positive: 28% (down from 45% previous quarter)
 - Neutral: 31% (stable)
 - Negative: 41% (up from 23% previous quarter)
 
 **Trend Analysis:**
+
 - Negative sentiment spiked immediately following UI launch (Week 1: +35% negative)
 - Partial recovery in Weeks 4-6 as users adapted (currently +18% vs. baseline)
 - NPS decline correlates strongly with UI sentiment (r=0.84)
 
 **Channel Comparison:**
+
 - Support tickets: 52% negative (highest volume of UI complaints)
 - NPS responses: 38% negative (broader sentiment including non-UI issues)
 - Correlation between ticket submission and low NPS score: 73% of detractors had open tickets
@@ -155,30 +162,27 @@ Analysis of 3,500 feedback items reveals the UI redesign is the primary driver o
 
 **TOP THEMES IDENTIFIED**
 
-| Theme | Frequency | Sentiment | Trend | Example Quote |
-|-------|-----------|-----------|-------|---------------|
-| UI Navigation Changes | 34% | 89% Negative | Increasing | "I can't find anything anymore. Took me 20 minutes to do what used to take 2." |
-| Workflow Disruption | 23% | 94% Negative | Stable | "My saved templates and shortcuts are all gone. This is destroying our productivity." |
-| Performance/Speed Issues | 18% | 78% Negative | Decreasing | "The new interface is noticeably slower, especially loading dashboards." |
-| Pricing Concerns | 12% | 71% Negative | Stable | "The 10% increase doesn't feel justified with all these usability problems." |
-| Feature Requests | 8% | Mixed | Stable | "When will you add bulk editing? We've been asking for years." |
-| Positive: New Design Aesthetics | 5% | 95% Positive | Stable | "The new look is modern and clean. Just need to find where everything moved." |
+| Theme                           | Frequency | Sentiment    | Trend      | Example Quote                                                                         |
+| ------------------------------- | --------- | ------------ | ---------- | ------------------------------------------------------------------------------------- |
+| UI Navigation Changes           | 34%       | 89% Negative | Increasing | "I can't find anything anymore. Took me 20 minutes to do what used to take 2."        |
+| Workflow Disruption             | 23%       | 94% Negative | Stable     | "My saved templates and shortcuts are all gone. This is destroying our productivity." |
+| Performance/Speed Issues        | 18%       | 78% Negative | Decreasing | "The new interface is noticeably slower, especially loading dashboards."              |
+| Pricing Concerns                | 12%       | 71% Negative | Stable     | "The 10% increase doesn't feel justified with all these usability problems."          |
+| Feature Requests                | 8%        | Mixed        | Stable     | "When will you add bulk editing? We've been asking for years."                        |
+| Positive: New Design Aesthetics | 5%        | 95% Positive | Stable     | "The new look is modern and clean. Just need to find where everything moved."         |
 
 ---
 
 **PRIORITY MATRIX**
 
 **Critical (High Frequency + High Impact):**
+
 1. Navigation confusion - 34% of feedback, directly causing productivity loss
 2. Workflow/template disruption - 23% of feedback, causing enterprise customer escalations
 
-**Important (Moderate Frequency + High Impact):**
-3. Performance degradation - 18% of feedback, affecting user experience daily
-4. Pricing value perception - 12% of feedback, particularly affecting conversion
+**Important (Moderate Frequency + High Impact):** 3. Performance degradation - 18% of feedback, affecting user experience daily 4. Pricing value perception - 12% of feedback, particularly affecting conversion
 
-**Monitor (Lower Frequency or Impact):**
-5. Feature requests - ongoing but not driving current satisfaction decline
-6. Design aesthetic concerns - minimal negative feedback, some positive response
+**Monitor (Lower Frequency or Impact):** 5. Feature requests - ongoing but not driving current satisfaction decline 6. Design aesthetic concerns - minimal negative feedback, some positive response
 
 ---
 
@@ -193,6 +197,7 @@ Analysis of 3,500 feedback items reveals the UI redesign is the primary driver o
 | Support Ticket Volume | +85% vs. baseline | +22% vs. baseline |
 
 Enterprise customers are disproportionately affected due to:
+
 - Heavier reliance on customized workflows that were disrupted
 - More users per account requiring retraining
 - Higher productivity cost per hour of confusion
@@ -211,18 +216,21 @@ New customers showing pricing sensitivity, but also struggling with onboarding d
 **ROOT CAUSE ANALYSIS**
 
 **Issue: Navigation Confusion**
+
 - Surface Complaint: "Can't find features"
 - Immediate Cause: Information architecture changed without clear mental model
 - Root Cause: Redesign prioritized visual refresh over user testing for navigation patterns
 - Contributing Factors: No migration guide, help documentation not updated, search functionality not improved
 
 **Issue: Workflow Disruption**
+
 - Surface Complaint: "My templates and shortcuts are gone"
 - Immediate Cause: Template migration failed for subset of accounts, shortcuts not preserved
 - Root Cause: Data migration testing insufficient for complex enterprise configurations
 - Contributing Factors: No pre-migration communication, no recovery process documented
 
 **Issue: Performance Degradation**
+
 - Surface Complaint: "Interface is slow"
 - Immediate Cause: New front-end framework has higher resource requirements
 - Root Cause: Performance benchmarks not established before launch
@@ -233,6 +241,7 @@ New customers showing pricing sensitivity, but also struggling with onboarding d
 **ACTION PLAN**
 
 **Immediate Actions (This Week):**
+
 1. Deploy emergency navigation guide modal for first login after update
    - Owner: Product team
    - Success metric: 50% reduction in navigation-related tickets within 2 weeks
@@ -246,6 +255,7 @@ New customers showing pricing sensitivity, but also struggling with onboarding d
    - Success metric: Direct contact with all accounts showing more than 5 tickets
 
 **Short-Term (Next 30 Days):**
+
 1. Update all help documentation and video tutorials for new UI
    - Owner: Documentation team
    - Success metric: Documentation coverage for top 20 support ticket topics
@@ -263,6 +273,7 @@ New customers showing pricing sensitivity, but also struggling with onboarding d
    - Success metric: Weekly feedback sessions with 10 power users
 
 **Strategic (Quarter):**
+
 1. Implement user testing requirements for all major UX changes going forward
    - Owner: Product leadership
    - Success metric: User testing gate added to release process
@@ -280,12 +291,14 @@ New customers showing pricing sensitivity, but also struggling with onboarding d
 **TRACKING METRICS**
 
 Weekly monitoring:
+
 - Support ticket volume by category
 - NPS responses and verbatim themes
 - Enterprise customer health scores
 - Navigation-related support contacts
 
 Success indicators at 30 days:
+
 - NPS recovery to 36+ (halfway back to baseline)
 - Enterprise negative sentiment below 40%
 - Support ticket volume within 110% of baseline

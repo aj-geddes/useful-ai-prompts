@@ -56,6 +56,7 @@ GET    /api/users/123/orders/456   # Get specific order
 ### 3. **Request Examples**
 
 #### Creating a Resource
+
 ```http
 POST /api/users
 Content-Type: application/json
@@ -81,6 +82,7 @@ Location: /api/users/789
 ```
 
 #### Updating a Resource
+
 ```http
 PATCH /api/users/789
 Content-Type: application/json
@@ -125,6 +127,7 @@ GET /api/orders?status=pending&customer=123&sort=createdAt,desc&limit=50
 ### 5. **Response Formats**
 
 #### Success Response
+
 ```json
 {
   "data": {
@@ -140,6 +143,7 @@ GET /api/orders?status=pending&customer=123&sort=createdAt,desc&limit=50
 ```
 
 #### Collection Response with Pagination
+
 ```json
 {
   "data": [
@@ -165,6 +169,7 @@ GET /api/orders?status=pending&customer=123&sort=createdAt,desc&limit=50
 ```
 
 #### Error Response
+
 ```json
 {
   "error": {
@@ -274,7 +279,7 @@ paths:
             type: integer
             default: 20
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json:
@@ -284,7 +289,7 @@ paths:
                   data:
                     type: array
                     items:
-                      $ref: '#/components/schemas/User'
+                      $ref: "#/components/schemas/User"
 
     post:
       summary: Create a new user
@@ -293,17 +298,17 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/UserInput'
+              $ref: "#/components/schemas/UserInput"
       responses:
-        '201':
+        "201":
           description: User created
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
-        '400':
+                $ref: "#/components/schemas/User"
+        "400":
           description: Invalid input
-        '409':
+        "409":
           description: Email already exists
 
 components:
@@ -343,6 +348,7 @@ components:
 ## Best Practices
 
 ### ✅ DO
+
 - Use nouns for resources, not verbs
 - Use plural names for collections
 - Be consistent with naming conventions
@@ -357,6 +363,7 @@ components:
 - Use ISO 8601 for dates
 
 ### ❌ DON'T
+
 - Use verbs in endpoint names
 - Return 200 for errors
 - Expose internal IDs unnecessarily
@@ -369,13 +376,13 @@ components:
 ## Complete Example: Express.js
 
 ```javascript
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.use(express.json());
 
 // List users with pagination
-app.get('/api/v1/users', async (req, res) => {
+app.get("/api/v1/users", async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 20;
@@ -384,7 +391,7 @@ app.get('/api/v1/users', async (req, res) => {
     const users = await User.findAndCountAll({
       limit,
       offset,
-      attributes: ['id', 'email', 'firstName', 'lastName']
+      attributes: ["id", "email", "firstName", "lastName"],
     });
 
     res.json({
@@ -393,30 +400,30 @@ app.get('/api/v1/users', async (req, res) => {
         page,
         limit,
         total: users.count,
-        totalPages: Math.ceil(users.count / limit)
-      }
+        totalPages: Math.ceil(users.count / limit),
+      },
     });
   } catch (error) {
     res.status(500).json({
       error: {
-        code: 'INTERNAL_ERROR',
-        message: 'An error occurred while fetching users'
-      }
+        code: "INTERNAL_ERROR",
+        message: "An error occurred while fetching users",
+      },
     });
   }
 });
 
 // Get single user
-app.get('/api/v1/users/:id', async (req, res) => {
+app.get("/api/v1/users/:id", async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id);
 
     if (!user) {
       return res.status(404).json({
         error: {
-          code: 'NOT_FOUND',
-          message: 'User not found'
-        }
+          code: "NOT_FOUND",
+          message: "User not found",
+        },
       });
     }
 
@@ -424,15 +431,15 @@ app.get('/api/v1/users/:id', async (req, res) => {
   } catch (error) {
     res.status(500).json({
       error: {
-        code: 'INTERNAL_ERROR',
-        message: 'An error occurred'
-      }
+        code: "INTERNAL_ERROR",
+        message: "An error occurred",
+      },
     });
   }
 });
 
 // Create user
-app.post('/api/v1/users', async (req, res) => {
+app.post("/api/v1/users", async (req, res) => {
   try {
     const { email, firstName, lastName } = req.body;
 
@@ -440,36 +447,40 @@ app.post('/api/v1/users', async (req, res) => {
     if (!email || !firstName || !lastName) {
       return res.status(400).json({
         error: {
-          code: 'VALIDATION_ERROR',
-          message: 'Missing required fields',
+          code: "VALIDATION_ERROR",
+          message: "Missing required fields",
           details: [
-            !email && { field: 'email', message: 'Email is required' },
-            !firstName && { field: 'firstName', message: 'First name is required' },
-            !lastName && { field: 'lastName', message: 'Last name is required' }
-          ].filter(Boolean)
-        }
+            !email && { field: "email", message: "Email is required" },
+            !firstName && {
+              field: "firstName",
+              message: "First name is required",
+            },
+            !lastName && {
+              field: "lastName",
+              message: "Last name is required",
+            },
+          ].filter(Boolean),
+        },
       });
     }
 
     const user = await User.create({ email, firstName, lastName });
 
-    res.status(201)
-       .location(`/api/v1/users/${user.id}`)
-       .json({ data: user });
+    res.status(201).location(`/api/v1/users/${user.id}`).json({ data: user });
   } catch (error) {
-    if (error.name === 'SequelizeUniqueConstraintError') {
+    if (error.name === "SequelizeUniqueConstraintError") {
       return res.status(409).json({
         error: {
-          code: 'CONFLICT',
-          message: 'Email already exists'
-        }
+          code: "CONFLICT",
+          message: "Email already exists",
+        },
       });
     }
     res.status(500).json({
       error: {
-        code: 'INTERNAL_ERROR',
-        message: 'An error occurred'
-      }
+        code: "INTERNAL_ERROR",
+        message: "An error occurred",
+      },
     });
   }
 });

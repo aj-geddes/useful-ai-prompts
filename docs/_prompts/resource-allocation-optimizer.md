@@ -3,36 +3,37 @@ title: Resource Allocation Optimizer
 slug: resource-allocation-optimizer
 category: project management
 tags:
-- resource
-- management
-- capacity
-- planning
-- skills
-- matching
-- utilization
-- allocation
-- conflicts
-- team
-- planning
+  - resource
+  - management
+  - capacity
+  - planning
+  - skills
+  - matching
+  - utilization
+  - allocation
+  - conflicts
+  - team
+  - planning
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps project and resource managers optimize team allocation
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps project and resource managers optimize team allocation
   across projects and workstreams by analyzing skills requirements, individual capacity,
   allocation conflicts, and utilization rates. It produces a balanced resource plan
   that prevents burnout, surfaces gaps requiring backfill or contractor support, and
   resolves competing priorities across a project portfolio.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning resource needs for an upcoming project while managing ongoing work in a
-  team
-- Resolving allocation conflicts when multiple project managers are competing for
-  the same specialists
-- Diagnosing team burnout or underperformance caused by overallocation or poor skills
-  matching
-- Individual performance management or HR capacity decisions
+  - Ideal Scenarios:**
+  - Planning resource needs for an upcoming project while managing ongoing work in a
+    team
+  - Resolving allocation conflicts when multiple project managers are competing for
+    the same specialists
+  - Diagnosing team burnout or underperformance caused by overallocation or poor skills
+    matching
+  - Individual performance management or HR capacity decisions
 complexity: advanced
 interaction: multi-turn
 ---

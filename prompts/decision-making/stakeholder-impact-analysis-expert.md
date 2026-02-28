@@ -1,6 +1,7 @@
 # Stakeholder Impact Analysis Expert
 
 ## Metadata
+
 - **ID**: `decision-stakeholder-impact-analysis`
 - **Version**: 2.0.0
 - **Category**: Decision-Making/Strategic
@@ -18,6 +19,7 @@ Analyze how decisions affect different stakeholder groups, helping understand im
 ## When to Use
 
 **Ideal scenarios:**
+
 - Planning organizational changes or restructuring
 - Preparing for major announcements or policy shifts
 - Building stakeholder support for strategic initiatives
@@ -25,6 +27,7 @@ Analyze how decisions affect different stakeholder groups, helping understand im
 - Designing communication strategies for diverse audiences
 
 **Anti-patterns (when not to use):**
+
 - Individual relationship management or coaching
 - Customer service escalations or complaint handling
 - Day-to-day operational communications
@@ -106,12 +109,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're implementing a new CRM system company-wide. It'll change how sales, support, and marketing work. Customers will see a new interface. Timeline is 6 months."
 
 ### Output
+
 **Stakeholder Impact Analysis: CRM Implementation**
 
 **Executive Summary**
+
 - Decision: Company-wide CRM system replacement
 - Stakeholders: 8 groups identified
 - Overall Impact: Mixed - significant benefits, notable disruption
@@ -131,23 +137,27 @@ Avoid:
 
 **Detailed Impact Analysis**
 
-*Sales Team (Critical)*
+_Sales Team (Critical)_
+
 - Positive: Better customer data, mobile access, automation
 - Negative: Learning curve, productivity dip, data migration anxiety
 - Concern: Q4 timing conflicts with sales season
 - Strategy: Champion network, early wins demonstration, protected selling time
 
-*Support Team (High)*
+_Support Team (High)_
+
 - Positive: Unified customer view, faster resolution, better tracking
 - Negative: Process changes, ticket system migration
 - Strategy: Training focus, emphasize efficiency gains
 
-*Customers (Medium)*
+_Customers (Medium)_
+
 - Positive: Better service experience long-term
 - Negative: Portal login changes, temporary service disruption
 - Strategy: Minimal disruption, clear communication, support during transition
 
 **Power-Interest Grid**
+
 ```
 High Power  | Senior Leadership  | Sales Team
             | (Keep Satisfied)   | (Manage Closely)
@@ -160,7 +170,7 @@ Low Power   | Finance, Partners  | Support, Marketing
 
 **Engagement Strategy**
 
-*Pre-Announcement (Week -2 to 0)*
+_Pre-Announcement (Week -2 to 0)_
 | Stakeholder | Channel | Message | Timing |
 |-------------|---------|---------|--------|
 | Sales Leadership | Private meeting | Strategic benefits, address concerns | Week -2 |
@@ -168,7 +178,8 @@ Low Power   | Finance, Partners  | Support, Marketing
 | Senior Leadership | Exec briefing | ROI, timeline, risk mitigation | Week -1 |
 | All employees | All-hands | Vision, benefits, support available | Week 0 |
 
-*During Implementation (Months 1-6)*
+_During Implementation (Months 1-6)_
+
 - Weekly: Progress updates (all employees)
 - Bi-weekly: Sales champion meetings
 - Monthly: Customer communication (if needed)
@@ -176,23 +187,27 @@ Low Power   | Finance, Partners  | Support, Marketing
 
 **Risk Mitigation**
 
-*Sales Team Resistance*
+_Sales Team Resistance_
+
 - Risk: Productivity drop, CRM avoidance, complaints
 - Mitigation: Sales leadership buy-in first, protect Q4, gamified adoption
 - Contingency: Extended parallel running, dedicated sales support
 
-*Customer Confusion*
+_Customer Confusion_
+
 - Risk: Support ticket spike, negative feedback
 - Mitigation: Gradual portal transition, proactive communication
 - Contingency: Dedicated hotline during cutover
 
 **Success Indicators**
+
 - Sales team adoption: 80% daily active by month 3
 - Support CSAT: No decline during transition
 - Customer complaints: <5% increase
 - Stakeholder satisfaction: Survey at month 6
 
 ## Related Prompts
+
 - [Policy Decision Framework Expert](policy-decision-framework-expert.md)
 - [Ethics Evaluation Expert](ethics-evaluation-expert.md)
 - [Go/No-Go Determinations Expert](go-no-go-determinations-expert.md)

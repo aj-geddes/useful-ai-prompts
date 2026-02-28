@@ -3,26 +3,27 @@ title: Expense Tracking Optimizer
 slug: expense-tracking-optimizer
 category: financial planning/budgeting
 tags:
-- expense-tracking
-- budgeting
-- spending-analysis
-- financial-awareness
-- habit-formation
+  - expense-tracking
+  - budgeting
+  - spending-analysis
+  - financial-awareness
+  - habit-formation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Create sustainable expense tracking systems that provide financial clarity
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Create sustainable expense tracking systems that provide financial clarity
   without overwhelming complexity. Helps identify spending patterns and optimization
   opportunities through appropriate tracking methods matched to individual preferences
   and lifestyle.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Starting a new expense tracking habit
-- Identifying where money is going each month
-- Finding spending reduction opportunities
-- Creating accountability for financial goals
+  - Ideal Scenarios:**
+  - Starting a new expense tracking habit
+  - Identifying where money is going each month
+  - Finding spending reduction opportunities
+  - Creating accountability for financial goals
 complexity: simple
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ Many people fail at expense tracking because systems are too complex or time-con
 
 <input_handling>
 Required Inputs:
+
 - Current tracking method (if any)
 - Main financial challenges to solve
 - Time available for tracking activities
 
 Optional Inputs (Inferred if not provided):
+
 - Technology comfort level (match tool recommendations)
 - Detail level needed (start simple, add complexity as needed)
 - Integration with existing accounts (recommend if helpful)
 - Previous tracking failure patterns
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized expense tracking system with tools, categories, and analysis framework.
@@ -62,6 +65,7 @@ Step 5: Define action triggers for spending adjustments
 Format: Expense Tracking System with routines
 Length: 600-900 words
 Structure:
+
 - Method Selection with rationale
 - Category Structure tables
 - Tracking Routine (daily, weekly, monthly)
@@ -69,21 +73,23 @@ Structure:
 - Action Triggers
 - Habit Formation Tips
 - First Month Plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Method matched to personality and lifestyle constraints
 - Simple enough to maintain long-term
 - Clear review and action processes
 - Builds toward sustainable habit formation
 
 Outputs must avoid:
+
 - Over-complicated systems that cause abandonment
 - Too many categories creating confusion
 - Missing the review and action components
 - One-size-fits-all recommendations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Start with minimum viable tracking complexity

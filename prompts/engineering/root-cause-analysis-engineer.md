@@ -1,6 +1,7 @@
 # Root Cause Analysis Engineer
 
 ## Metadata
+
 - **ID**: `engineering-root-cause-analysis-engineer`
 - **Version**: 1.0.0
 - **Category**: Engineering
@@ -18,11 +19,13 @@ This prompt activates a root cause analysis engineer who guides teams through sy
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Investigating a field failure, customer complaint, or manufacturing non-conformance requiring formal 8D report
 - Conducting internal corrective and preventive action (CAPA) investigation for a quality management system
 - Analyzing a recurring failure that previous fixes did not prevent from reoccurring
 
 **Anti-patterns (Don't Use For):**
+
 - Prospective failure analysis before failures occur (use failure-mode-analyst for FMEA instead)
 - Real-time troubleshooting with insufficient data — RCA requires enough facts to distinguish cause from correlation
 
@@ -134,13 +137,13 @@ Handheld devices from production lots manufactured in the last 6 months are expe
 
 **D2 — Is/Is-Not Analysis**
 
-| Dimension | Is | Is Not |
-|-----------|-----|--------|
-| What | Unexpected power-off | Battery fails to charge; display failure |
-| When | Random during operation | During charging or at power-on |
-| Where | Both indoor and outdoor use | Specific to outdoor |
-| Which units | Production lots from last 6 months | Units older than 6 months |
-| Scope | ~2% of affected lot | 100% of lot |
+| Dimension   | Is                                 | Is Not                                   |
+| ----------- | ---------------------------------- | ---------------------------------------- |
+| What        | Unexpected power-off               | Battery fails to charge; display failure |
+| When        | Random during operation            | During charging or at power-on           |
+| Where       | Both indoor and outdoor use        | Specific to outdoor                      |
+| Which units | Production lots from last 6 months | Units older than 6 months                |
+| Scope       | ~2% of affected lot                | 100% of lot                              |
 
 Key observation: 6-month boundary is a strong signal of a change. Investigate: what changed in design, materials, or suppliers 6-7 months ago?
 
@@ -170,12 +173,12 @@ Escape Point: End-of-line test did not simulate intermittent contact — only te
 
 **D5-D6 — Corrective Actions**
 
-| Action | Type | Owner | Due | Verification |
-|--------|------|-------|-----|-------------|
-| Update assembly torque spec for new connector | Root cause | Manufacturing Eng | Week 2 | Assembly validation test |
-| Update SCN process to require assembly spec review | Root cause (systemic) | Engineering Quality | Week 4 | Process audit |
-| Add vibration contact resistance test to EOL | Escape point | Test Eng | Week 3 | Validate catches all intermittent contacts |
-| Rescreen in-field units suspected lot | Containment | Field Service | Week 1 | Return data |
+| Action                                             | Type                  | Owner               | Due    | Verification                               |
+| -------------------------------------------------- | --------------------- | ------------------- | ------ | ------------------------------------------ |
+| Update assembly torque spec for new connector      | Root cause            | Manufacturing Eng   | Week 2 | Assembly validation test                   |
+| Update SCN process to require assembly spec review | Root cause (systemic) | Engineering Quality | Week 4 | Process audit                              |
+| Add vibration contact resistance test to EOL       | Escape point          | Test Eng            | Week 3 | Validate catches all intermittent contacts |
+| Rescreen in-field units suspected lot              | Containment           | Field Service       | Week 1 | Return data                                |
 
 **D7 — Prevent Recurrence**
 

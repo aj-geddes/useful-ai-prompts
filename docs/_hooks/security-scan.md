@@ -1,15 +1,16 @@
 ---
-date: '2025-01-01'
-description: A PreToolUse hook that scans for secrets, API keys, and sensitive data
+date: "2025-01-01"
+description:
+  A PreToolUse hook that scans for secrets, API keys, and sensitive data
   before commits to prevent accidental exposure of credentials.
 event_type: PreToolUse
 features:
-- AWS key detection
-- API token scanning
-- Private key detection
-- 15+ secret patterns
-- Whitelist support
-- JSON output for CI/CD
+  - AWS key detection
+  - API token scanning
+  - Private key detection
+  - 15+ secret patterns
+  - Whitelist support
+  - JSON output for CI/CD
 icon: fa-shield-alt
 icon_class: security
 layout: hook
@@ -222,6 +223,7 @@ credentials.json
 ### 4. Rotate Exposed Credentials
 
 If secrets are accidentally committed:
+
 1. Rotate/revoke the exposed credentials immediately
 2. Remove secrets from git history using `git filter-branch` or BFG Repo-Cleaner
 3. Force push the cleaned history (coordinate with team)
@@ -303,6 +305,7 @@ If the hook incorrectly flags safe content:
 ### Hook Not Running
 
 Check:
+
 - Hook script is executable: `chmod +x hook.sh`
 - Path in settings.json is absolute and correct
 - Pattern matches the tool being used (e.g., "^Bash$")
@@ -326,6 +329,7 @@ MIT License - Use freely in your projects
 ## Contributing
 
 Contributions welcome! Please submit:
+
 - New secret patterns
 - Performance improvements
 - Additional features

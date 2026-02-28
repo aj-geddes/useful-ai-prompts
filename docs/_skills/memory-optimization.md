@@ -1,12 +1,13 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Profile and optimize application memory usage. Identify memory leaks,
+date: "2025-01-01"
+description:
+  Profile and optimize application memory usage. Identify memory leaks,
   reduce memory footprint, and improve efficiency for better performance and reliability.
 layout: skill
 slug: memory-optimization
 tags:
-- development
+  - development
 title: memory-optimization
 ---
 

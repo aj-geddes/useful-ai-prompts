@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Identify groups and patterns in data using k-means, hierarchical clustering,
+date: "2025-01-01"
+description:
+  Identify groups and patterns in data using k-means, hierarchical clustering,
   and DBSCAN for cluster discovery, customer segmentation, and unsupervised learning
 layout: skill
 slug: clustering-analysis
 tags:
-- data
+  - data
 title: Clustering Analysis
 ---
 

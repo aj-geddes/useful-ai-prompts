@@ -1,6 +1,7 @@
 # Policy Development Expert
 
 ## Metadata
+
 - **ID**: `creation-policy-development`
 - **Version**: 2.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A policy development specialist that creates comprehensive, enforceable organiza
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating new organizational policies from scratch
 - Updating outdated policies for regulatory compliance
 - Developing governance frameworks and standards
@@ -25,6 +27,7 @@ A policy development specialist that creates comprehensive, enforceable organiza
 - Standardizing practices across departments
 
 **Anti-patterns (Don't Use For):**
+
 - Legal advice or contract drafting
 - Regulatory interpretation without legal review
 - One-off process documentation
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Remote work security policy for a mid-size software company (500 employees). Need SOC 2 and GDPR compliance. Must balance security with user experience."
 
 ### Output
@@ -124,6 +128,7 @@ This policy establishes security requirements for employees and contractors work
 **Applies to:** All employees and contractors with remote access to company systems.
 
 **Definitions:**
+
 - **Remote Work:** Any work performed outside company-controlled premises
 - **Company Data:** All information stored, processed, or transmitted using company systems
 - **Personal Device:** Any device not provided or managed by the company
@@ -139,6 +144,7 @@ This policy establishes security requirements for employees and contractors work
 ## 3. Requirements
 
 ### 3.1 Device Security
+
 - [ ] Full disk encryption enabled (FileVault/BitLocker)
 - [ ] Antivirus software with real-time scanning active
 - [ ] Automatic operating system updates enabled
@@ -146,18 +152,21 @@ This policy establishes security requirements for employees and contractors work
 - [ ] Company-approved endpoint protection installed
 
 ### 3.2 Network Security
+
 - [ ] VPN required for all access to company resources
 - [ ] WPA2/WPA3 WiFi encryption on home networks
 - [ ] No use of public WiFi without VPN connection
 - [ ] Personal hotspot as backup only with VPN
 
 ### 3.3 Data Protection
+
 - [ ] No local storage of customer personal data
 - [ ] Cloud storage limited to approved systems only
 - [ ] Screen positioned away from public view
 - [ ] Physical documents secured or shredded
 
 ### 3.4 Physical Security
+
 - [ ] Dedicated workspace with privacy
 - [ ] Devices never left unattended in public
 - [ ] Work calls in private locations only
@@ -168,18 +177,21 @@ This policy establishes security requirements for employees and contractors work
 ## 4. Roles and Responsibilities
 
 **Employees:**
+
 - Follow all requirements in this policy
 - Complete required security training annually
 - Report security incidents within 24 hours
 - Request exceptions through proper channels
 
 **IT Security Team:**
+
 - Provide and maintain security tools
 - Monitor compliance through automated checks
 - Respond to security incidents
 - Conduct quarterly compliance reviews
 
 **Managers:**
+
 - Approve remote work arrangements
 - Ensure team compliance
 - Escalate security concerns promptly
@@ -189,6 +201,7 @@ This policy establishes security requirements for employees and contractors work
 ## 5. Exceptions
 
 Exception requests must be submitted to IT Security with:
+
 - Business justification
 - Risk assessment
 - Compensating controls proposed
@@ -201,15 +214,18 @@ Exceptions approved by CISO only. Maximum duration: 90 days.
 ## 6. Violations
 
 **Minor Violations:** (First occurrence)
+
 - Counseling and retraining
 - Documented in personnel file
 
 **Major Violations:** (Repeated or serious)
+
 - Written warning
 - Remote work privileges suspended
 - Mandatory additional training
 
 **Severe Violations:** (Data breach, willful non-compliance)
+
 - Termination of employment
 - Potential legal action
 - Regulatory notification if required
@@ -228,20 +244,24 @@ Exceptions approved by CISO only. Maximum duration: 90 days.
 ## Quick Reference Card
 
 **Daily:**
+
 - Connect via VPN before accessing any company systems
 - Lock screen when away from device (Win+L or Cmd+Ctrl+Q)
 
 **Weekly:**
+
 - Run security scan
 - Check for and install updates
 
 **Always:**
+
 - Report suspicious activity immediately to security@company.com
 - Never share credentials or bypass security controls
 
 ---
 
 ## Related Prompts
+
 - [Compliance Audit Expert](../evaluation-assessment/compliance-audit-expert.md)
 - [Documentation Writing Expert](documentation-writing-expert.md)
 - [Security Implementation Expert](../technical-workflows/security-implementation-expert.md)

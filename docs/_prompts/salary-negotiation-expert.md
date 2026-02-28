@@ -3,30 +3,31 @@ title: Salary Negotiation Expert
 slug: salary-negotiation-expert
 category: career development
 tags:
-- salary
-- negotiation
-- compensation
-- career
-- advancement
-- job
-- offers
-- workplace
-- advocacy
+  - salary
+  - negotiation
+  - compensation
+  - career
+  - advancement
+  - job
+  - offers
+  - workplace
+  - advocacy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2024-01-15'
-description: Prepares and executes salary negotiations through market research, value
+  - Claude 3+
+  - GPT-4+
+date: "2024-01-15"
+description:
+  Prepares and executes salary negotiations through market research, value
   quantification, strategic conversation planning, and objection handling. Maximizes
   compensation outcomes while maintaining positive professional relationships and
   long-term career positioning.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Preparing for salary review conversations with current employer
-- Negotiating new job offer compensation packages
-- Requesting promotions or significant raises
-- Evaluating and comparing total compensation packages
+  - Ideal scenarios:**
+  - Preparing for salary review conversations with current employer
+  - Negotiating new job offer compensation packages
+  - Requesting promotions or significant raises
+  - Evaluating and comparing total compensation packages
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,22 +42,25 @@ Salary negotiation is a high-stakes skill most professionals never learn. Resear
 
 <input_handling>
 REQUIRED INPUTS:
+
 - Current role and total compensation
 - Target salary and rationale
 - Key accomplishments and quantified value delivered
 - Negotiation context (annual review, new offer, promotion)
 
 OPTIONAL INPUTS:
+
 - Market research already completed
 - Relationship with decision-maker
 - Company's financial situation
 - Alternative offers or options (BATNA)
 
 DEFAULT ASSUMPTIONS (when not specified):
+
 - Market research sources: Glassdoor, Levels.fyi, industry surveys, recruiter data
 - Negotiation style: Collaborative and value-focused
 - Risk tolerance: Moderate, willing to walk away if necessary but preferring agreement
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive salary negotiation strategy following these steps:
@@ -84,16 +88,18 @@ Design post-negotiation approach for both successful and unsuccessful outcomes t
 FORMAT: Salary negotiation strategy with scripts and objection handling
 LENGTH: 600-1000 words
 STRUCTURE:
+
 - Market Analysis (data sources + justified range)
 - Value Documentation (quantified contributions)
 - Conversation Scripts (opening + ask + closing)
 - Objection Responses (4-6 common objections)
 - Alternative Options (non-salary compensation)
 - Post-Negotiation Strategy (success + delay + decline scenarios)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 EXCELLENT OUTPUTS:
+
 - Market data is specific and from credible sources
 - Value quantification is compelling and defensible
 - Scripts sound natural and confident, not aggressive or desperate
@@ -101,11 +107,12 @@ EXCELLENT OUTPUTS:
 - Relationship preservation is prioritized throughout
 
 FAILURE INDICATORS:
+
 - Aggressive or confrontational tactics
 - Unrealistic salary expectations without market support
 - Missing alternative options for flexibility
 - Ultimatums or bridge-burning approaches
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Maintain honest representation of contributions

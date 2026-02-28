@@ -95,6 +95,7 @@ exit 0
 ## Setup
 
 1. Make the script executable:
+
 ```bash
 chmod +x .claude/hooks/pre-commit-linting/check.sh
 ```
@@ -102,17 +103,20 @@ chmod +x .claude/hooks/pre-commit-linting/check.sh
 2. Install linters for your stack:
 
 **JavaScript/TypeScript:**
+
 ```bash
 npm install --save-dev eslint prettier
 npx eslint --init
 ```
 
 **Python:**
+
 ```bash
 pip install pylint black
 ```
 
 **Ruby:**
+
 ```bash
 gem install rubocop
 ```

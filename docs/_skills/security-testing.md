@@ -1,14 +1,15 @@
 ---
 category: security-compliance
-date: '2025-01-01'
-description: Identify security vulnerabilities through SAST, DAST, penetration testing,
+date: "2025-01-01"
+description:
+  Identify security vulnerabilities through SAST, DAST, penetration testing,
   and dependency scanning. Use for security test, vulnerability scanning, OWASP, SQL
   injection, XSS, CSRF, and penetration testing.
 layout: skill
 slug: security-testing
 tags:
-- testing
-- security
+  - testing
+  - security
 title: security-testing
 ---
 
@@ -130,11 +131,11 @@ scanner.report(results)
 
 ```typescript
 // tests/security/sql-injection.test.ts
-import { test, expect } from '@playwright/test';
-import request from 'supertest';
-import { app } from '../../src/app';
+import { test, expect } from "@playwright/test";
+import request from "supertest";
+import { app } from "../../src/app";
 
-test.describe('SQL Injection Protection', () => {
+test.describe("SQL Injection Protection", () => {
   const sqlInjectionPayloads = [
     "' OR '1'='1",
     "'; DROP TABLE users; --",
@@ -144,14 +145,12 @@ test.describe('SQL Injection Protection', () => {
     "1' AND '1'='1",
   ];
 
-  test('login should prevent SQL injection', async () => {
+  test("login should prevent SQL injection", async () => {
     for (const payload of sqlInjectionPayloads) {
-      const response = await request(app)
-        .post('/api/auth/login')
-        .send({
-          email: payload,
-          password: payload,
-        });
+      const response = await request(app).post("/api/auth/login").send({
+        email: payload,
+        password: payload,
+      });
 
       // Should return 400/401, not 500 (SQL error)
       expect([400, 401]).toContain(response.status);
@@ -159,10 +158,10 @@ test.describe('SQL Injection Protection', () => {
     }
   });
 
-  test('search should sanitize input', async () => {
+  test("search should sanitize input", async () => {
     for (const payload of sqlInjectionPayloads) {
       const response = await request(app)
-        .get('/api/products/search')
+        .get("/api/products/search")
         .query({ q: payload });
 
       // Should not cause SQL error
@@ -171,9 +170,9 @@ test.describe('SQL Injection Protection', () => {
     }
   });
 
-  test('numeric parameters should be validated', async () => {
+  test("numeric parameters should be validated", async () => {
     const response = await request(app)
-      .get('/api/users/abc')  // Non-numeric ID
+      .get("/api/users/abc") // Non-numeric ID
       .expect(400);
 
     expect(response.body.error).toBeTruthy();
@@ -185,28 +184,28 @@ test.describe('SQL Injection Protection', () => {
 
 ```javascript
 // tests/security/xss.test.js
-describe('XSS Protection', () => {
+describe("XSS Protection", () => {
   const xssPayloads = [
     '<script>alert("XSS")</script>',
     '<img src=x onerror=alert("XSS")>',
     '<svg onload=alert("XSS")>',
     'javascript:alert("XSS")',
-    '<iframe src="javascript:alert(\'XSS\')">',
+    "<iframe src=\"javascript:alert('XSS')\">",
     '<body onload=alert("XSS")>',
   ];
 
-  test('user input should be escaped', async () => {
+  test("user input should be escaped", async () => {
     const { page } = await browser.newPage();
 
     for (const payload of xssPayloads) {
-      await page.goto('/');
+      await page.goto("/");
 
       // Submit comment with XSS payload
       await page.fill('[name="comment"]', payload);
       await page.click('[type="submit"]');
 
       // Wait for comment to appear
-      await page.waitForSelector('.comment');
+      await page.waitForSelector(".comment");
 
       // Check that script was not executed
       const dialogAppeared = await page.evaluate(() => {
@@ -216,15 +215,15 @@ describe('XSS Protection', () => {
       expect(dialogAppeared).toBe(false);
 
       // Check HTML is escaped
-      const commentHTML = await page.$eval('.comment', el => el.innerHTML);
-      expect(commentHTML).not.toContain('<script>');
-      expect(commentHTML).toContain('&lt;script&gt;');
+      const commentHTML = await page.$eval(".comment", (el) => el.innerHTML);
+      expect(commentHTML).not.toContain("<script>");
+      expect(commentHTML).toContain("&lt;script&gt;");
     }
   });
 
-  test('URLs should be validated', async () => {
+  test("URLs should be validated", async () => {
     const response = await request(app)
-      .post('/api/links')
+      .post("/api/links")
       .send({ url: 'javascript:alert("XSS")' })
       .expect(400);
 
@@ -237,77 +236,71 @@ describe('XSS Protection', () => {
 
 ```typescript
 // tests/security/auth.test.ts
-describe('Authentication Security', () => {
-  test('should reject weak passwords', async () => {
+describe("Authentication Security", () => {
+  test("should reject weak passwords", async () => {
     const weakPasswords = [
-      'password',
-      '12345678',
-      'qwerty',
-      'abc123',
-      'password123',
+      "password",
+      "12345678",
+      "qwerty",
+      "abc123",
+      "password123",
     ];
 
     for (const password of weakPasswords) {
-      const response = await request(app)
-        .post('/api/users')
-        .send({
-          email: 'test@example.com',
-          password,
-        });
+      const response = await request(app).post("/api/users").send({
+        email: "test@example.com",
+        password,
+      });
 
       expect(response.status).toBe(400);
-      expect(response.body.error).toMatch(/password.*weak|password.*requirements/i);
+      expect(response.body.error).toMatch(
+        /password.*weak|password.*requirements/i,
+      );
     }
   });
 
-  test('should rate limit login attempts', async () => {
+  test("should rate limit login attempts", async () => {
     const credentials = {
-      email: 'test@example.com',
-      password: 'wrongpassword',
+      email: "test@example.com",
+      password: "wrongpassword",
     };
 
     // Try 10 failed logins
     for (let i = 0; i < 10; i++) {
-      await request(app)
-        .post('/api/auth/login')
-        .send(credentials);
+      await request(app).post("/api/auth/login").send(credentials);
     }
 
     // 11th attempt should be rate limited
     const response = await request(app)
-      .post('/api/auth/login')
+      .post("/api/auth/login")
       .send(credentials);
 
     expect(response.status).toBe(429);
     expect(response.body.error).toMatch(/too many attempts|rate limit/i);
   });
 
-  test('should prevent unauthorized access', async () => {
-    const response = await request(app)
-      .get('/api/admin/users')
-      .expect(401);
+  test("should prevent unauthorized access", async () => {
+    const response = await request(app).get("/api/admin/users").expect(401);
   });
 
-  test('should prevent privilege escalation', async () => {
+  test("should prevent privilege escalation", async () => {
     const regularUserToken = await getRegularUserToken();
 
     const response = await request(app)
-      .delete('/api/users/999')  // Try to delete another user
-      .set('Authorization', `Bearer ${regularUserToken}`)
+      .delete("/api/users/999") // Try to delete another user
+      .set("Authorization", `Bearer ${regularUserToken}`)
       .expect(403);
   });
 
-  test('JWT tokens should expire', async () => {
+  test("JWT tokens should expire", async () => {
     // Create expired token
-    const expiredToken = jwt.sign(
-      { userId: '123' },
-      JWT_SECRET,
-      { expiresIn: '-1s' }
-    );
+    const expiredToken = jwt.sign({ userId: "123" }, JWT_SECRET, {
+      expiresIn: "-1s",
+    });
 
     const response = await request(app)
-      .get('/api/protected')
-      .set('Authorization', `Bearer ${expiredToken}`)
+      .get("/api/protected")
+      .set("Authorization", `Bearer ${expiredToken}`)
       .expect(401);
   });
 });
@@ -410,46 +403,49 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.7.0
         with:
-          target: 'http://localhost:3000'
+          target: "http://localhost:3000"
 ```
 
 ### 7. **Security Headers Testing**
 
 ```typescript
 // tests/security/headers.test.ts
-test.describe('Security Headers', () => {
-  test('should have required security headers', async () => {
-    const response = await request(app).get('/');
+test.describe("Security Headers", () => {
+  test("should have required security headers", async () => {
+    const response = await request(app).get("/");
 
     expect(response.headers).toMatchObject({
-      'x-frame-options': 'DENY',
-      'x-content-type-options': 'nosniff',
-      'x-xss-protection': '1; mode=block',
-      'strict-transport-security': expect.stringMatching(/max-age=/),
-      'content-security-policy': expect.any(String),
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "strict-transport-security": expect.stringMatching(/max-age=/),
+      "content-security-policy": expect.any(String),
     });
   });
 
-  test('should not expose sensitive headers', async () => {
-    const response = await request(app).get('/');
+  test("should not expose sensitive headers", async () => {
+    const response = await request(app).get("/");
 
-    expect(response.headers['x-powered-by']).toBeUndefined();
-    expect(response.headers['server']).not.toMatch(/express|nginx|apache/i);
+    expect(response.headers["x-powered-by"]).toBeUndefined();
+    expect(response.headers["server"]).not.toMatch(/express|nginx|apache/i);
   });
 
-  test('CSP should prevent inline scripts', async ({ page }) => {
-    await page.goto('/');
+  test("CSP should prevent inline scripts", async ({ page }) => {
+    await page.goto("/");
 
     const cspViolations = [];
-    page.on('console', msg => {
-      if (msg.type() === 'error' && msg.text().includes('Content Security Policy')) {
+    page.on("console", (msg) => {
+      if (
+        msg.type() === "error" &&
+        msg.text().includes("Content Security Policy")
+      ) {
         cspViolations.push(msg.text());
       }
     });
 
     // Try to inject inline script
     await page.evaluate(() => {
-      const script = document.createElement('script');
+      const script = document.createElement("script");
       script.textContent = 'alert("test")';
       document.body.appendChild(script);
     });
@@ -491,6 +487,7 @@ trufflehog git https://github.com/user/repo --only-verified
 ## Best Practices
 
 ### ✅ DO
+
 - Run security scans in CI/CD
 - Test with real attack vectors
 - Scan dependencies regularly
@@ -501,6 +498,7 @@ trufflehog git https://github.com/user/repo --only-verified
 - Test authentication/authorization thoroughly
 
 ### ❌ DON'T
+
 - Store secrets in code
 - Trust user input
 - Expose detailed error messages
@@ -513,23 +511,27 @@ trufflehog git https://github.com/user/repo --only-verified
 ## Tools
 
 ### SAST
+
 - **Semgrep**: Multi-language static analysis
 - **SonarQube**: Code quality and security
 - **Bandit**: Python security linter
 - **ESLint plugins**: JavaScript security
 
 ### DAST
+
 - **OWASP ZAP**: Web app security scanner
 - **Burp Suite**: Security testing platform
 - **Nikto**: Web server scanner
 
 ### SCA
+
 - **Snyk**: Dependency vulnerability scanning
 - **npm audit**: Node.js dependencies
 - **OWASP Dependency-Check**: Multi-language
 - **Safety**: Python dependencies
 
 ### Secrets
+
 - **detect-secrets**: Pre-commit hook
 - **GitGuardian**: Secrets detection
 - **TruffleHog**: Git history scanning
@@ -537,6 +539,7 @@ trufflehog git https://github.com/user/repo --only-verified
 ## Penetration Testing Checklist
 
 ### Input Validation
+
 - [ ] SQL injection attempts blocked
 - [ ] XSS payloads escaped
 - [ ] Command injection prevented
@@ -544,6 +547,7 @@ trufflehog git https://github.com/user/repo --only-verified
 - [ ] File upload restrictions
 
 ### Authentication
+
 - [ ] Strong password policy
 - [ ] Account lockout after failed attempts
 - [ ] Session timeout implemented
@@ -551,12 +555,14 @@ trufflehog git https://github.com/user/repo --only-verified
 - [ ] MFA available
 
 ### Authorization
+
 - [ ] Role-based access control
 - [ ] Privilege escalation prevented
 - [ ] Direct object reference secure
 - [ ] API endpoints protected
 
 ### Data Protection
+
 - [ ] Sensitive data encrypted
 - [ ] HTTPS enforced
 - [ ] Secure cookies (HttpOnly, Secure)

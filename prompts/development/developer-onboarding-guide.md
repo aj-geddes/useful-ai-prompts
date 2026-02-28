@@ -1,6 +1,7 @@
 # Developer Onboarding Guide
 
 ## Metadata
+
 - **ID**: `development-developer-onboarding-guide`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Creates comprehensive developer onboarding documentation and plans that get new 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Onboarding a new engineer joining the team
 - Rebuilding outdated onboarding documentation that nobody maintains
 - Standardizing onboarding after rapid team growth
 - Creating a 30-60-90 day plan for a new developer
 
 **Anti-patterns (Don't Use For):**
+
 - Non-technical staff onboarding (different scope)
 - Security clearance or HR compliance onboarding
 - Role-specific training (data science, ML — specialized track needed)
@@ -121,12 +124,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We need an onboarding guide for our Node.js/React/PostgreSQL SaaS team. 8 engineers total. We use GitHub Flow, deploy to AWS ECS, review PRs within 24 hours. New hires often spend 3 days just trying to get the app running locally."
 
 ### Output
 
 **Developer Onboarding Guide — SaaS Engineering Team**
-*Last verified: 2026-02-27 | Update owner: @team-lead*
+_Last verified: 2026-02-27 | Update owner: @team-lead_
 
 ---
 
@@ -144,9 +148,10 @@ You'll be committing code by end of week 1. This guide covers everything from ge
 
 ---
 
-**Environment Setup** *(~2 hours)*
+**Environment Setup** _(~2 hours)_
 
 **Prerequisites**
+
 ```bash
 # Verify Node.js 20+
 node --version  # Should show v20.x
@@ -157,6 +162,7 @@ fnm install 20 && fnm use 20
 ```
 
 **Clone and Install**
+
 ```bash
 git clone https://github.com/yourorg/saas-app.git
 cd saas-app
@@ -165,6 +171,7 @@ npm install
 ```
 
 **Database Setup**
+
 ```bash
 # Install PostgreSQL 15 via Homebrew (Mac) or apt (Linux)
 brew install postgresql@15
@@ -179,6 +186,7 @@ npm run db:test-connection  # Should print: "✓ Connected to saas_development"
 ```
 
 **Start the App**
+
 ```bash
 npm run dev  # Starts API on :3001 and React on :3000
 # Open http://localhost:3000 — you should see the login screen
@@ -186,13 +194,15 @@ npm run dev  # Starts API on :3001 and React on :3000
 ```
 
 **Common Setup Issues**
-- *Port 5432 already in use*: `brew services stop postgresql` then restart
-- *Module not found errors*: `rm -rf node_modules && npm install`
-- *Database connection refused*: Ensure `PGPORT=5432` in `.env.local`
+
+- _Port 5432 already in use_: `brew services stop postgresql` then restart
+- _Module not found errors_: `rm -rf node_modules && npm install`
+- _Database connection refused_: Ensure `PGPORT=5432` in `.env.local`
 
 ---
 
 **Codebase Map**
+
 ```
 saas-app/
 ├── packages/
@@ -214,22 +224,26 @@ saas-app/
 **Week 1 Plan**
 
 **Day 1: Setup + Orient**
+
 - [ ] Complete environment setup (above)
 - [ ] Read this guide fully
 - [ ] Meet with Engineering Manager (1:1 scheduled for you)
 - [ ] Join Slack channels: #dev-general, #dev-help, #deployments, #incidents
 
 **Day 2: Explore the Codebase**
+
 - [ ] Follow a request from frontend to database: pick any API call in the browser DevTools network tab and trace it through `web/src/api/` → `api/routes/` → `api/services/` → `api/models/`
 - [ ] Run the full test suite: `npm test` (should be green)
 - [ ] Read the last 5 merged PRs to understand code style and review culture
 
 **Day 3-4: First Issue**
+
 - Pick a "good first issue" label from GitHub Issues
 - Create a feature branch: `git checkout -b feature/TICKET-XX-description`
 - Make the change, write a test
 
 **Day 5: First PR**
+
 - Open a PR with your changes
 - The team reviews within 24 hours
 - Goal: have it merged by end of week 1
@@ -238,10 +252,10 @@ saas-app/
 
 **30-60-90 Day Milestones**
 
-| Period | Target |
-|--------|--------|
-| 30 days | Completing assigned tasks independently, familiar with full stack |
-| 60 days | Driving small features end-to-end with minimal guidance |
+| Period  | Target                                                                |
+| ------- | --------------------------------------------------------------------- |
+| 30 days | Completing assigned tasks independently, familiar with full stack     |
+| 60 days | Driving small features end-to-end with minimal guidance               |
 | 90 days | Contributing to sprint planning, proposing architectural improvements |
 
 ---

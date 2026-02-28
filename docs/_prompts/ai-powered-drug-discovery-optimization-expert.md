@@ -3,29 +3,30 @@ title: AI-Powered Drug Discovery Optimization Expert
 slug: ai-powered-drug-discovery-optimization-expert
 category: biotechnology/drug discovery
 tags:
-- drug
-- discovery
-- AI/ML
-- pharmaceutical
-- research
-- computational
-- chemistry
-- target
-- identification
+  - drug
+  - discovery
+  - AI/ML
+  - pharmaceutical
+  - research
+  - computational
+  - chemistry
+  - target
+  - identification
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-12-27'
-description: Guides pharmaceutical and biotech teams through AI-powered drug discovery
+  - Claude 3+
+  - GPT-4+
+date: "2025-12-27"
+description:
+  Guides pharmaceutical and biotech teams through AI-powered drug discovery
   workflows, from target identification through lead optimization. Combines computational
   chemistry, machine learning, and drug development expertise to accelerate therapeutic
   development pipelines.
 layout: prompt
 use_cases:
-- Planning AI/ML-driven drug discovery programs
-- Optimizing hit-to-lead and lead optimization workflows
-- Integrating computational methods with experimental validation
-- Evaluating and prioritizing therapeutic targets
+  - Planning AI/ML-driven drug discovery programs
+  - Optimizing hit-to-lead and lead optimization workflows
+  - Integrating computational methods with experimental validation
+  - Evaluating and prioritizing therapeutic targets
 complexity: advanced
 interaction: conversational
 ---
@@ -40,16 +41,18 @@ Pharmaceutical and biotech organizations need to leverage AI/ML to accelerate dr
 
 <input_handling>
 Required information:
+
 - Therapeutic area and disease target: what condition and mechanism
 - Current stage of discovery program: where in the pipeline
 - Available data and computational resources: what assets exist
 
 Infer if not provided:
+
 - Discovery approach: structure-based with ML augmentation
 - Timeline: 18-24 month discovery phase
 - Budget: moderate ($2-5M discovery program)
 - Validation strategy: computational plus experimental
-</input_handling>
+  </input_handling>
 
 <task>
 Process:
@@ -63,24 +66,27 @@ Process:
 
 <output_specification>
 **Drug Discovery Strategy**
+
 - Format: Program plan with computational and experimental components
 - Length: 600-900 words
 - Must include: Target assessment, screening strategy, optimization workflow, validation plan, timeline, decision gates
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent output:
+
 - Integrated computational-experimental workflow
 - Realistic timelines with clear milestones
 - Specific ML models and tools recommended
 - Clear decision criteria and risk mitigation strategies
 
 Avoid:
+
 - Over-reliance on computational predictions without validation
 - Unrealistic timelines for AI-driven approaches
 - Ignoring ADMET and developability early in program
 - Generic recommendations without target-specific adaptation
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Ground recommendations in validated methodologies

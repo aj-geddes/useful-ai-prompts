@@ -1,6 +1,7 @@
 # Bioinformatics Pipeline Development Expert
 
 ## Metadata
+
 - **ID**: `biotechnology-bioinformatics-pipeline-expert`
 - **Version**: 1.0.0
 - **Category**: Biotechnology/Bioinformatics
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Designs and optimizes bioinformatics pipelines for genomic data analysis, from raw sequencing data to biological insights. Combines computational infrastructure expertise with biological domain knowledge to create scalable, reproducible analysis workflows.
 
 ## When to Use
+
 - Setting up new sequencing analysis infrastructure
 - Optimizing slow or unreliable analysis pipelines
 - Scaling analysis to larger datasets
@@ -91,11 +94,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Bulk RNA-seq from 200 cancer tissue samples (100 tumor, 100 normal), paired-end 150bp reads, ~40M reads per sample. Human GRCh38. Research goal: Identify differentially expressed genes and novel splice variants in lung cancer. Have university HPC cluster with SLURM, 40 cores/node, 256GB RAM. Current pipeline: basic bash scripts, takes 2 weeks, inconsistent results. Comfortable with Python, R, some Snakemake experience.
 ```
 
 ### Output
+
 ```
 **RNA-seq Pipeline Design: Lung Cancer Differential Expression**
 

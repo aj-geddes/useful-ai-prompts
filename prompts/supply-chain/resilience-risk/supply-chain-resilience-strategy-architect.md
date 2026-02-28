@@ -1,6 +1,7 @@
 # Supply Chain Resilience Strategy Architect
 
 ## Metadata
+
 - **ID**: `supply-chain-resilience-strategy`
 - **Version**: 1.1.0
 - **Category**: Supply Chain / Resilience & Risk
@@ -18,6 +19,7 @@ Designs comprehensive supply chain resilience strategies that prepare organizati
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing and mitigating multi-tier supply chain vulnerabilities after disruptions
 - Developing supplier diversification strategies to reduce single-source dependencies
 - Creating disruption response playbooks with escalation protocols
@@ -25,6 +27,7 @@ Designs comprehensive supply chain resilience strategies that prepare organizati
 - Preparing board-level resilience investment proposals with ROI analysis
 
 **Anti-patterns (when not to use):**
+
 - Simple procurement decisions for non-critical components
 - Single-supplier contract negotiations
 - Basic inventory management or reorder point optimization
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We are a global electronics manufacturer with $2.8B annual supply chain spend. 68% of our 2,400 suppliers are in Asia, with 23% single-source for critical components. We've experienced COVID shutdowns, chip shortages, and a cyber attack on a key supplier. Recovery from major disruptions takes 6-9 months. The board allocated $125M over 3 years for resilience improvements. Goals: 3x faster recovery than competitors, reduce Asia concentration to 45%, achieve predictive disruption avoidance.
 
 ### Output
@@ -117,25 +121,27 @@ Your transformation moves from a cost-optimized supply chain with single-source 
 
 **Four-Pillar Resilience Framework**
 
-*Pillar 1: Visibility and Intelligence*
+_Pillar 1: Visibility and Intelligence_
 Deploy multi-tier supplier mapping through tier 3, capturing 95% of critical component paths. Implement real-time risk monitoring dashboards aggregating 45+ risk indicators including supplier financial health, weather events, geopolitical tensions, and transportation disruptions. Activate AI-powered disruption prediction with 30-day horizon for proactive response.
 
-*Pillar 2: Diversification and Flexibility*
+_Pillar 2: Diversification and Flexibility_
 Eliminate single-source dependencies from 23% to less than 5% within 24 months through systematic qualification of alternative suppliers. Implement geographic risk distribution reducing Asia concentration from 68% to 45% by developing supplier capabilities in Eastern Europe, Mexico, and India. Create rapid onboarding processes enabling 90-day supplier qualification versus current 9-month timeline.
 
-*Pillar 3: Collaboration and Partnerships*
+_Pillar 3: Collaboration and Partnerships_
 Establish strategic supplier relationships with joint business continuity planning for top 50 partners representing 60% of spend. Develop supplier capability enhancement programs with $15M dedicated investment fund. Create information-sharing networks enabling early warning coordination across supplier ecosystem.
 
-*Pillar 4: Response and Recovery*
+_Pillar 4: Response and Recovery_
 Build crisis management protocols with 24-hour response capability and defined escalation paths. Implement automated alternative routing triggered by disruption events. Create inventory repositioning playbooks with pre-authorized decision authorities.
 
 **Investment Allocation ($125M over 3 Years)**
+
 - Technology and Visibility Infrastructure: $50M (40%)
 - Supplier Development and Qualification: $44M (35%)
 - Strategic Inventory and Buffer Stock: $19M (15%)
 - Organization, Training, and Process: $12M (10%)
 
 **Success Metrics**
+
 - Recovery time: 9 months to 3 months (67% improvement)
 - Single-source dependency: 23% to less than 5% (78% reduction)
 - Geographic concentration: 68% to 45% (34% reduction)

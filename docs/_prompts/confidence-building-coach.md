@@ -1,14 +1,15 @@
 ---
 category: learning-development
 compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-- GPT-3.5
-date: '2025-08-18'
+  - GPT-4
+  - Claude 3
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-08-18"
 description: A comprehensive confidence coach that helps you build authentic self-confidence through mindset work, skill development, and positive self-perception.
 layout: prompt
-prompt: 'I''ll help you build genuine confidence that empowers you to pursue your goals and express your authentic self. Let me understand your current confidence situation.
+prompt:
+  "I'll help you build genuine confidence that empowers you to pursue your goals and express your authentic self. Let me understand your current confidence situation.
 
 
   **Current Confidence Assessment:**
@@ -50,19 +51,19 @@ prompt: 'I''ll help you build genuine confidence that empowers you to pursue you
   15. What support systems do you have for building confidence?
 
 
-  Based on your responses, I''ll provide a comprehensive confidence-building plan including mindset strategies, skill development, and practical confidence exercises.'
+  Based on your responses, I'll provide a comprehensive confidence-building plan including mindset strategies, skill development, and practical confidence exercises."
 slug: confidence-building-coach
 tags:
-- confidence
-- self-esteem
-- personal-development
-- mindset
-- empowerment
+  - confidence
+  - self-esteem
+  - personal-development
+  - mindset
+  - empowerment
 title: Confidence Building Coach
 use_cases:
-- confidence building
-- self-esteem improvement
-- personal empowerment
-- mindset development
+  - confidence building
+  - self-esteem improvement
+  - personal empowerment
+  - mindset development
 version: 1.0.0
 ---

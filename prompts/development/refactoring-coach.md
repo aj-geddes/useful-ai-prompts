@@ -1,6 +1,7 @@
 # Refactoring Coach
 
 ## Metadata
+
 - **ID**: `development-refactoring-coach`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Guides developers through safe, incremental code refactoring to improve readabil
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Inherited codebase with high complexity and low readability
 - Pre-release code cleanup before major feature work
 - Removing duplication across multiple modules
 - Preparing code for testability or new architecture patterns
 
 **Anti-patterns (Don't Use For):**
+
 - Adding new functionality (refactor first, then add features)
 - Performance optimization (profile first, then optimize)
 - Complete rewrites from scratch
@@ -116,6 +119,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Here's a Python function that's gotten out of hand. It fetches user orders, applies discounts, sends confirmation emails, and logs everything — all in one 80-line function. Tests keep breaking whenever we touch it."
 
 ### Output
@@ -125,17 +129,19 @@ Avoid:
 **Diagnosis**
 
 The described function exhibits three critical code smells:
+
 1. **Long Method** — 80 lines violates the single-responsibility rule
 2. **Multiple responsibilities** — I/O (email, logging), business logic (discounts), and data fetching in one unit
 3. **Hidden coupling** — changes to email logic break discount tests (confirms interleaved concerns)
 
 **Prioritized Refactoring Steps**
 
-*Step 1 — Write characterization tests (Risk: Low)*
+_Step 1 — Write characterization tests (Risk: Low)_
 Before touching anything, write integration tests that capture current input/output behavior. Don't test internals — test the public contract. This gives a safety net for all subsequent steps.
 
-*Step 2 — Extract `_calculate_discount(order)` (Risk: Low)*
+_Step 2 — Extract `_calculate_discount(order)` (Risk: Low)_
 **Before:**
+
 ```python
 # inside process_order():
 if order.total > 100:
@@ -145,7 +151,9 @@ elif order.is_member:
 else:
     discount = 0
 ```
+
 **After:**
+
 ```python
 def _calculate_discount(order) -> float:
     if order.total > 100:
@@ -154,19 +162,21 @@ def _calculate_discount(order) -> float:
         return order.total * 0.05
     return 0.0
 ```
-*Run tests. Should pass unchanged.*
 
-*Step 3 — Extract `_send_confirmation(order, discount)` (Risk: Low)*
+_Run tests. Should pass unchanged._
+
+_Step 3 — Extract `_send_confirmation(order, discount)` (Risk: Low)_
 Move all email-related code into a dedicated function. Inject any dependencies (SMTP client) as parameters rather than globals. Run tests.
 
-*Step 4 — Extract `_log_order_processing(order, result)` (Risk: Low)*
+_Step 4 — Extract `_log_order_processing(order, result)` (Risk: Low)_
 Isolate all logging calls. This makes logging testable with a mock and removes noise from business logic. Run tests.
 
-*Step 5 — Extract `_fetch_user_orders(user_id)` (Risk: Medium)*
+_Step 5 — Extract `_fetch_user_orders(user_id)` (Risk: Medium)_
 Separate data access from processing. If using an ORM or DB calls directly, this step enables mocking in unit tests. May require interface changes — verify with callers first.
 
-*Step 6 — Rename `process_order()` to orchestrate responsibilities (Risk: Low)*
+_Step 6 — Rename `process_order()` to orchestrate responsibilities (Risk: Low)_
 After extraction, the main function becomes a clean orchestrator:
+
 ```python
 def process_order(user_id: str, order_id: str) -> OrderResult:
     order = _fetch_user_orders(user_id, order_id)
@@ -178,6 +188,7 @@ def process_order(user_id: str, order_id: str) -> OrderResult:
 ```
 
 **Validation Checklist**
+
 - [ ] Characterization tests pass after every step
 - [ ] No public API signatures changed
 - [ ] Each extracted function has its own unit tests added

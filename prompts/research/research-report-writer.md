@@ -1,6 +1,7 @@
 # Research Report Writer
 
 ## Metadata
+
 - **ID**: `research-research-report-writer`
 - **Version**: 1.0.0
 - **Category**: Research
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt helps researchers and analysts transform raw research findings into polished, structured reports that communicate insights clearly to executive and non-specialist audiences. It applies narrative structure, evidence hierarchy, and visualization guidance to ensure findings drive decisions rather than sit unread in slide decks.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - Translating a completed research study into an executive briefing document or slide-ready report
 - Structuring research findings that are currently in scattered notes, spreadsheets, or slide fragments
 - Writing a research report for a non-specialist audience who needs implications, not methodology
 
 **Anti-patterns (Don't Use For):**
+
 - Academic journal article writing with discipline-specific citation and methodology standards
 - Real-time research dashboards requiring live data integration
 - Marketing reports or content pieces that are advocacy rather than objective research findings
@@ -67,10 +72,13 @@ Avoid: Data dumps that list statistics without interpretation; findings that are
 ---
 
 ## Example Usage
+
 ### Input
+
 "I just finished a research project studying why mid-market companies (100-500 employees) don't adopt cybersecurity best practices even when they know they should. I interviewed 18 IT directors and did a survey with 210 responses. Key themes I found: they don't have dedicated security staff (73% said security is one of many IT responsibilities), they feel overwhelmed by the complexity of choosing what to implement first, they often wait until after an incident to act, and cost is a barrier but not the top barrier — lack of clarity about what to do first was rated higher than cost in our survey. Audience: our executive team who wants to understand this market to inform our product roadmap."
 
 ### Output
+
 **Research Report — Mid-Market Cybersecurity Adoption Barriers**
 Audience: Executive Team — Product Roadmap Decision | Research Period: [Quarter] 2026
 
@@ -83,40 +91,40 @@ Mid-market IT directors know cybersecurity matters — but most are flying blind
 ---
 
 **Finding 1: Security Is an Afterthought, Not a Role**
-*Most mid-market IT directors manage security as a fraction of a full-time job, creating a structural barrier that no amount of product education overcomes.*
+_Most mid-market IT directors manage security as a fraction of a full-time job, creating a structural barrier that no amount of product education overcomes._
 
 Evidence: 73% of survey respondents (153/210) reported that security is one of multiple responsibilities for their IT function; 61% have no dedicated security budget line item. In interviews, IT directors described security as "always the thing I'll get to when the fires are out" — and the fires are never out.
 
 Implication: Products that require significant configuration, learning investment, or ongoing attention will fail in this market. The buyer persona is time-starved and expert-deficient — not unmotivated.
 
-*Recommended Visualization: Donut chart showing breakdown of "primary IT responsibility" distribution; alongside bar chart showing % with/without dedicated security budget.*
+_Recommended Visualization: Donut chart showing breakdown of "primary IT responsibility" distribution; alongside bar chart showing % with/without dedicated security budget._
 
 ---
 
 **Finding 2: Paralysis by Complexity Is the Real Barrier — Not Cost**
-*When asked what prevents security investment, "I don't know where to start" ranked higher than cost for the first time — displacing a years-old assumption about mid-market price sensitivity.*
+_When asked what prevents security investment, "I don't know where to start" ranked higher than cost for the first time — displacing a years-old assumption about mid-market price sensitivity._
 
 Evidence: Survey question "What most prevents you from implementing stronger cybersecurity measures?" (rank all that apply) — "Lack of clarity about what to prioritize first" was selected by 67% of respondents; "Cost/budget constraints" by 58%. Interview verbatim: "Every vendor tells me their thing is the most important. I have no way to know if they're right, so I do nothing."
 
 Implication: The market is ready to buy — it needs someone to tell them where to start, credibly and simply. "Comprehensive" is a product liability in this market; "opinionated" is a competitive advantage.
 
-*Recommended Visualization: Horizontal ranked bar chart of all barrier options sorted by % selected; use a callout annotation on "Lack of clarity" bar to highlight the key finding.*
+_Recommended Visualization: Horizontal ranked bar chart of all barrier options sorted by % selected; use a callout annotation on "Lack of clarity" bar to highlight the key finding._
 
 ---
 
 **Finding 3: Incidents Are the Primary Adoption Catalyst — But This Is an Opportunity**
-*Over half of IT directors who adopted significant security measures in the past two years did so reactively — after an incident. This reveals a prevention marketing opportunity that is currently being missed.*
+_Over half of IT directors who adopted significant security measures in the past two years did so reactively — after an incident. This reveals a prevention marketing opportunity that is currently being missed._
 
 Evidence: Survey: 54% of companies that significantly increased security investment in the past 24 months cited a security incident as the precipitating event. Interviews: "We got hit with ransomware in 2024. That's the only reason we have what we have now." Zero interview participants mentioned a product marketing campaign as a trigger.
 
 Implication: A "prevention-value" narrative is underserved and undersold. Companies would rather prevent the incident than recover from it — but no one is making that case compellingly enough to drive pre-incident action.
 
-*Recommended Visualization: Simple flow diagram: Incident → Action → "54% of improvements came after an incident" callout. Pair with timeline showing average cost of a mid-market breach vs. prevention investment.*
+_Recommended Visualization: Simple flow diagram: Incident → Action → "54% of improvements came after an incident" callout. Pair with timeline showing average cost of a mid-market breach vs. prevention investment._
 
 ---
 
 **Finding 4: Compliance Requirements Are the Most Reliable External Motivator**
-*When asked what has successfully driven security action, regulatory compliance requirements ranked first — suggesting that compliance-framed products and messaging outperform fear-based security marketing.*
+_When asked what has successfully driven security action, regulatory compliance requirements ranked first — suggesting that compliance-framed products and messaging outperform fear-based security marketing._
 
 Evidence: 71% of companies that implemented at least one significant security control in the past year cited compliance requirements (SOC 2, HIPAA, CMMC, state data privacy laws) as the driver — more than any other factor.
 
@@ -143,9 +151,11 @@ This study captured IT director perspectives — it does not reflect CEO or CFO 
 ---
 
 ## Variations
+
 - **Slide-Ready Research Brief**: Condensed to 8-10 slide-equivalent sections with chart descriptions for presentation building
 - **Technical Research Report**: Extended version with full methodology appendix for technically sophisticated audiences
 
 ## Related Prompts
+
 - [Data Synthesis Expert](data-synthesis-expert.md) - Synthesize multi-source findings before writing the report
 - [Research Findings Presenter](research-findings-presenter.md) - Design the presentation to accompany the written report

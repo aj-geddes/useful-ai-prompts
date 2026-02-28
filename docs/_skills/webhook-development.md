@@ -1,13 +1,14 @@
 ---
 category: api-integration
-date: '2025-01-01'
-description: Implement webhook systems for event-driven integration with retry logic,
+date: "2025-01-01"
+description:
+  Implement webhook systems for event-driven integration with retry logic,
   signature verification, and delivery guarantees. Use when creating event notification
   systems, integrating with external services, or building event-driven architectures.
 layout: skill
 slug: webhook-development
 tags:
-- development
+  - development
 title: webhook-development
 ---
 
@@ -58,38 +59,38 @@ Build reliable webhook systems with event delivery, signature verification, retr
 ### 2. **Node.js Webhook Service**
 
 ```javascript
-const express = require('express');
-const crypto = require('crypto');
-const axios = require('axios');
-const Bull = require('bull');
+const express = require("express");
+const crypto = require("crypto");
+const axios = require("axios");
+const Bull = require("bull");
 
 const app = express();
 app.use(express.json());
 
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
-const webhookQueue = new Bull('webhooks', {
-  redis: { host: 'localhost', port: 6379 }
+const webhookQueue = new Bull("webhooks", {
+  redis: { host: "localhost", port: 6379 },
 });
 
 // Register webhook subscription
-app.post('/api/webhooks/subscribe', async (req, res) => {
+app.post("/api/webhooks/subscribe", async (req, res) => {
   const { url, events, secret } = req.body;
 
   // Validate URL
   try {
     new URL(url);
   } catch {
-    return res.status(400).json({ error: 'Invalid URL' });
+    return res.status(400).json({ error: "Invalid URL" });
   }
 
   const webhook = {
-    id: crypto.randomBytes(16).toString('hex'),
+    id: crypto.randomBytes(16).toString("hex"),
     url,
     events,
-    secret: secret || crypto.randomBytes(32).toString('hex'),
+    secret: secret || crypto.randomBytes(32).toString("hex"),
     active: true,
     createdAt: new Date(),
-    failureCount: 0
+    failureCount: 0,
   };
 
   // Save to database
@@ -98,7 +99,7 @@ app.post('/api/webhooks/subscribe', async (req, res) => {
   res.status(201).json({
     id: webhook.id,
     secret: webhook.secret,
-    message: 'Webhook registered successfully'
+    message: "Webhook registered successfully",
   });
 });
 
@@ -106,7 +107,7 @@ app.post('/api/webhooks/subscribe', async (req, res) => {
 const sendWebhookEvent = async (eventType, data) => {
   const webhooks = await WebhookSubscription.find({
     events: eventType,
-    active: true
+    active: true,
   });
 
   for (const webhook of webhooks) {
@@ -114,10 +115,10 @@ const sendWebhookEvent = async (eventType, data) => {
       id: `evt_${Date.now()}`,
       timestamp: new Date().toISOString(),
       event: eventType,
-      version: '1.0',
+      version: "1.0",
       data,
       attempt: 1,
-      retryable: true
+      retryable: true,
     };
 
     // Add to queue
@@ -126,11 +127,11 @@ const sendWebhookEvent = async (eventType, data) => {
       {
         attempts: 5,
         backoff: {
-          type: 'exponential',
-          delay: 2000
+          type: "exponential",
+          delay: 2000,
         },
-        removeOnComplete: true
-      }
+        removeOnComplete: true,
+      },
     );
   }
 };
@@ -144,12 +145,12 @@ webhookQueue.process(async (job) => {
 
     const response = await axios.post(webhook.url, event, {
       headers: {
-        'Content-Type': 'application/json',
-        'X-Webhook-Signature': signature,
-        'X-Webhook-ID': event.id,
-        'X-Webhook-Attempt': event.attempt
+        "Content-Type": "application/json",
+        "X-Webhook-Signature": signature,
+        "X-Webhook-ID": event.id,
+        "X-Webhook-Attempt": event.attempt,
       },
-      timeout: 10000
+      timeout: 10000,
     });
 
     if (response.status >= 200 && response.status < 300) {
@@ -157,9 +158,9 @@ webhookQueue.process(async (job) => {
       await WebhookDelivery.create({
         webhookId: webhook.id,
         eventId: event.id,
-        status: 'delivered',
+        status: "delivered",
         statusCode: response.status,
-        deliveredAt: new Date()
+        deliveredAt: new Date(),
       });
       return;
     }
@@ -176,7 +177,7 @@ webhookQueue.process(async (job) => {
         eventId: event.id,
         event,
         error: error.message,
-        failedAt: new Date()
+        failedAt: new Date(),
       });
 
       // Update failure count
@@ -190,25 +191,25 @@ webhookQueue.process(async (job) => {
 });
 
 // Webhook endpoint (receiving webhooks)
-app.post('/webhooks/:id', async (req, res) => {
-  const signature = req.headers['x-webhook-signature'];
+app.post("/webhooks/:id", async (req, res) => {
+  const signature = req.headers["x-webhook-signature"];
   const webhookId = req.params.id;
   const event = req.body;
 
   try {
     const webhook = await WebhookSubscription.findOne({ id: webhookId });
     if (!webhook) {
-      return res.status(404).json({ error: 'Webhook not found' });
+      return res.status(404).json({ error: "Webhook not found" });
     }
 
     // Verify signature
     const expectedSignature = generateSignature(event, webhook.secret);
     if (signature !== expectedSignature) {
-      return res.status(401).json({ error: 'Invalid signature' });
+      return res.status(401).json({ error: "Invalid signature" });
     }
 
     // Process event
-    console.log('Received webhook event:', event);
+    console.log("Received webhook event:", event);
 
     res.status(200).json({ received: true });
   } catch (error) {
@@ -219,36 +220,36 @@ app.post('/webhooks/:id', async (req, res) => {
 // Signature generation
 const generateSignature = (payload, secret) => {
   const message = JSON.stringify(payload);
-  return crypto.createHmac('sha256', secret).update(message).digest('hex');
+  return crypto.createHmac("sha256", secret).update(message).digest("hex");
 };
 
 // List webhook subscriptions
-app.get('/api/webhooks', async (req, res) => {
+app.get("/api/webhooks", async (req, res) => {
   const webhooks = await WebhookSubscription.find({}, { secret: 0 });
   res.json(webhooks);
 });
 
 // Test webhook delivery
-app.post('/api/webhooks/:id/test', async (req, res) => {
+app.post("/api/webhooks/:id/test", async (req, res) => {
   const webhook = await WebhookSubscription.findOne({ id: req.params.id });
 
   const testEvent = {
     id: `evt_test_${Date.now()}`,
     timestamp: new Date().toISOString(),
-    event: 'webhook.test',
-    data: { message: 'Test event' }
+    event: "webhook.test",
+    data: { message: "Test event" },
   };
 
   await webhookQueue.add({ webhook, event: testEvent });
 
-  res.json({ message: 'Test event queued' });
+  res.json({ message: "Test event queued" });
 });
 
 // Retry failed deliveries
-app.post('/api/webhooks/deliveries/:id/retry', async (req, res) => {
+app.post("/api/webhooks/deliveries/:id/retry", async (req, res) => {
   const delivery = await WebhookDelivery.findOne({ _id: req.params.id });
   if (!delivery) {
-    return res.status(404).json({ error: 'Delivery not found' });
+    return res.status(404).json({ error: "Delivery not found" });
   }
 
   const webhook = await WebhookSubscription.findOne({ id: delivery.webhookId });
@@ -256,34 +257,34 @@ app.post('/api/webhooks/deliveries/:id/retry', async (req, res) => {
 
   await webhookQueue.add({ webhook, event });
 
-  res.json({ message: 'Retry queued' });
+  res.json({ message: "Retry queued" });
 });
 
 // List webhook deliveries
-app.get('/api/webhooks/:id/deliveries', async (req, res) => {
+app.get("/api/webhooks/:id/deliveries", async (req, res) => {
   const deliveries = await WebhookDelivery.find({
-    webhookId: req.params.id
+    webhookId: req.params.id,
   }).limit(100);
 
   res.json(deliveries);
 });
 
 // Event trigger examples
-app.post('/api/orders', async (req, res) => {
+app.post("/api/orders", async (req, res) => {
   const order = await Order.create(req.body);
 
   // Send webhook event
-  await sendWebhookEvent('order.created', {
+  await sendWebhookEvent("order.created", {
     orderId: order.id,
     customerId: order.customerId,
     amount: order.amount,
-    status: order.status
+    status: order.status,
   });
 
   res.status(201).json(order);
 });
 
-app.listen(3000, () => console.log('Server on port 3000'));
+app.listen(3000, () => console.log("Server on port 3000"));
 ```
 
 ### 3. **Python Webhook Handler**
@@ -466,20 +467,22 @@ Standard Event Types:
 ## Monitoring
 
 ```javascript
-app.get('/api/webhooks/metrics', async (req, res) => {
+app.get("/api/webhooks/metrics", async (req, res) => {
   const total = await WebhookDelivery.countDocuments();
-  const delivered = await WebhookDelivery.countDocuments({ status: 'delivered' });
-  const failed = await WebhookDelivery.countDocuments({ status: 'failed' });
+  const delivered = await WebhookDelivery.countDocuments({
+    status: "delivered",
+  });
+  const failed = await WebhookDelivery.countDocuments({ status: "failed" });
   const avgLatency = await WebhookDelivery.aggregate([
-    { $group: { _id: null, avg: { $avg: '$latency' } } }
+    { $group: { _id: null, avg: { $avg: "$latency" } } },
   ]);
 
   res.json({
     total,
     delivered,
     failed,
-    successRate: (delivered / total * 100).toFixed(2),
-    averageLatency: avgLatency[0]?.avg || 0
+    successRate: ((delivered / total) * 100).toFixed(2),
+    averageLatency: avgLatency[0]?.avg || 0,
   });
 });
 ```

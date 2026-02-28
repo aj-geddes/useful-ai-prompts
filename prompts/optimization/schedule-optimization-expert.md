@@ -1,6 +1,7 @@
 # Schedule Optimization Expert
 
 ## Metadata
+
 - **ID**: `optimization-schedule-optimization`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Creates optimal schedules that balance resource availability, demand patterns, c
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Scheduling is inefficient or perceived as unfair
 - Coverage gaps or overstaffing at certain times
 - High overtime costs
@@ -26,6 +28,7 @@ Creates optimal schedules that balance resource availability, demand patterns, c
 - Appointment or booking optimization
 
 **Anti-patterns (Don't Use For):**
+
 - Project management and task sequencing
 - Capacity expansion decisions (hire more people)
 - Long-term workforce planning
@@ -138,6 +141,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "24/7 call center with 50 agents. Call volume is very uneven - 3x volume during peak hours compared to overnight. Currently have coverage gaps on weekends and high overtime costs (averaging $50K/month). Need a balanced schedule that reduces overtime and improves weekend coverage without hurting morale."
 
 ### Output
@@ -156,12 +160,14 @@ Avoid:
 | Weekend night | 15 | 4 | 5-7 |
 
 **Key problems identified:**
+
 - Weekend coverage: Currently 10 agents, need 15-18 (33-80% short)
 - Peak coverage: Sometimes understaffed during high volume
 - Overtime: $50K/month (too high - indicates structural problem)
 - Fairness issue: Same people always work weekends (morale impact)
 
 **Root causes:**
+
 - Insufficient dedicated weekend staff
 - No rotation mechanism for weekend distribution
 - Ad-hoc overtime to fill gaps (expensive, unsustainable)
@@ -178,15 +184,16 @@ Avoid:
 
 **Team Rotation Model:**
 
-| Team | Size | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
-|------|------|-----|-----|-----|-----|-----|-----|-----|
-| Alpha | 12 | Day | Day | Day | Day | Day | Off | Off |
-| Beta | 12 | Mid | Mid | Mid | Mid | Mid | Off | Off |
-| Gamma | 12 | Off | Off | Eve | Eve | Eve | Eve | Eve |
-| Delta | 7 | Off | Off | Day | Day | Day | Day | Day |
-| Echo | 7 | Off | Off | Eve | Eve | Eve | Eve | Eve |
+| Team  | Size | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+| ----- | ---- | --- | --- | --- | --- | --- | --- | --- |
+| Alpha | 12   | Day | Day | Day | Day | Day | Off | Off |
+| Beta  | 12   | Mid | Mid | Mid | Mid | Mid | Off | Off |
+| Gamma | 12   | Off | Off | Eve | Eve | Eve | Eve | Eve |
+| Delta | 7    | Off | Off | Day | Day | Day | Day | Day |
+| Echo  | 7    | Off | Off | Eve | Eve | Eve | Eve | Eve |
 
 **Coverage achieved:**
+
 - Weekday peak: Alpha + Beta overlap (24 agents) + portion of Gamma = 30-35 agents
 - Weekend day: Delta (7) + weekend rotation (6) = 13-15 agents
 - Weekend evening: Echo (7) + Gamma overlap = 12-14 agents
@@ -195,6 +202,7 @@ Avoid:
 **Fairness Mechanism:**
 
 **Weekend rotation for weekday teams:**
+
 - Every 6 weeks, weekday team members rotate one weekend
 - Weekend shifts paid at 1.25x premium
 - Rotation is predictable and published 2 months ahead
@@ -205,6 +213,7 @@ Avoid:
 **3. Implementation**
 
 **Week 1-2: Communication and Feedback**
+
 - Present new schedule concept to all agents
 - Explain fairness rotation and premium pay structure
 - Collect feedback on shift preferences
@@ -212,18 +221,21 @@ Avoid:
 - Finalize team assignments
 
 **Week 3-4: Team Assignment**
+
 - Assign agents to teams based on preferences + seniority + skills
 - Balance experience across all teams
 - Ensure critical skills represented in each shift
 - Publish initial 8-week schedule
 
 **Week 5-8: Pilot Period**
+
 - Run new schedule with close monitoring
 - Track coverage vs. demand by hour
 - Collect feedback on problems
 - Adjust as needed
 
 **Week 9+: Steady State**
+
 - Finalize schedule based on pilot learnings
 - Establish ongoing rotation and swap processes
 - Set up quarterly schedule review
@@ -231,17 +243,20 @@ Avoid:
 **Exception Handling:**
 
 **Call-outs/Absences:**
+
 - On-call list by shift (2 agents designated weekly)
 - First call: On-call agents at standard rate
 - Second tier: Voluntary overtime at 1.5x
 - Emergency: Mandatory overtime (rare, with compensation)
 
 **Vacation/PTO:**
+
 - Minimum 2 weeks notice for scheduled PTO
 - Coverage verification before approval
 - Blackout dates for high-volume periods
 
 **Shift Swaps:**
+
 - Agent-initiated with manager approval
 - Must maintain coverage and skills balance
 - 48-hour notice minimum
@@ -264,18 +279,21 @@ Avoid:
 | Weekend premium cost | N/A | $15K |
 
 **Fairness Metrics:**
+
 - Weekend hours per agent (should be equal across year)
 - Holiday distribution (tracked by agent)
 - Shift preference satisfaction rate (quarterly survey)
 - Schedule-related complaints (target: <5/month)
 
 **Quarterly Review:**
+
 - Analyze coverage vs. actual demand patterns
 - Review fairness metrics by agent
 - Collect satisfaction feedback
 - Adjust rotation and team sizes as needed
 
 **Expected Outcomes:**
+
 - Weekend coverage: 10 to 15 agents (+50%)
 - Overtime reduction: $50K to $25-30K monthly (-40-50%)
 - Agent satisfaction: Improved through predictable, fair rotation

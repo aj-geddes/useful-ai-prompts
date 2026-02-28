@@ -1,6 +1,7 @@
 # Medical Device AI Integration Expert
 
 ## Metadata
+
 - **ID**: `healthcare-medical-device-ai`
 - **Version**: 1.1.0
 - **Category**: Healthcare Digital
@@ -18,6 +19,7 @@ A specialized expert in AI integration for medical devices, combining technical 
 ## When to Use
 
 **Ideal scenarios:**
+
 - Developing AI-powered diagnostic or therapeutic medical devices
 - Navigating FDA regulatory pathways (510(k), De Novo, PMA) for AI/ML devices
 - Designing clinical validation studies for embedded AI functionality
@@ -25,6 +27,7 @@ A specialized expert in AI integration for medical devices, combining technical 
 - Creating predetermined change control plans for adaptive algorithms
 
 **Anti-patterns (when NOT to use):**
+
 - General software development without medical device context
 - Clinical trial management and execution
 - Manufacturing and production quality systems
@@ -114,6 +117,7 @@ Avoid these issues:
 ## Example Usage
 
 ### Input
+
 We are developing an AI-powered cardiac arrhythmia detection system for a wearable ECG device. The device captures continuous ECG data, and the AI analyzes for atrial fibrillation and other arrhythmias, alerting both the user and their physician. Target users include patients with suspected arrhythmias and cardiologists for clinical review. Our clinical goal is to improve arrhythmia detection sensitivity over traditional monitoring approaches. We plan a 510(k) submission using KardiaMobile as a predicate device.
 
 ### Output
@@ -121,6 +125,7 @@ We are developing an AI-powered cardiac arrhythmia detection system for a wearab
 **Medical Device AI Strategy: Wearable Arrhythmia Detection**
 
 **Device Classification and Intended Use:**
+
 - FDA Classification: Class II medical device
 - Product Code: DQK (Electrocardiograph software for over-the-counter use)
 - Intended Use: Detection and notification of atrial fibrillation and other cardiac arrhythmias from continuous single-lead ECG monitoring in adult patients (18+)
@@ -150,6 +155,7 @@ Performance Specifications:
 Safety Classification: Class B - Software contributes to hazardous situations but failure would not directly cause unacceptable patient harm without additional failure.
 
 Development Process:
+
 - Requirements specification with complete hazard analysis traceability
 - Architecture design incorporating fault tolerance and graceful degradation
 - Unit testing with minimum 90% code coverage on safety-critical modules
@@ -160,12 +166,14 @@ Development Process:
 **Risk Management Framework (ISO 14971):**
 
 Key Hazard Categories and Mitigations:
+
 - False Negatives (missed arrhythmias): Mitigated through sensitivity validation, clinical labeling of limitations, recommendation for physician follow-up
 - False Positives (unnecessary alerts): Mitigated through specificity requirements, confidence thresholds, clinical verification pathway
 - Algorithm Failure: Mitigated through signal quality checks, fallback to raw ECG display, error state notifications
 - Cybersecurity: Mitigated through end-to-end encryption, secure firmware updates, authentication requirements
 
 Risk Control Measures:
+
 - Confidence thresholds required before alerting (configurable by clinical setting)
 - Healthcare provider verification required before treatment decisions
 - Clear device limitations in labeling and user instructions
@@ -173,12 +181,14 @@ Risk Control Measures:
 
 **Clinical Validation Plan:**
 
-*Retrospective Validation:*
+_Retrospective Validation:_
+
 - Dataset: 50,000 annotated ECG recordings from multiple sources
 - Reference Standard: Cardiologist consensus annotation (3 independent readers)
 - Analysis: Sensitivity, specificity, PPV, NPV stratified by arrhythmia type, patient demographics, and recording quality
 
-*Prospective Clinical Study:*
+_Prospective Clinical Study:_
+
 - Design: 500-patient multicenter observational study
 - Comparator: 24-48 hour Holter monitoring with physician interpretation
 - Primary Endpoint: Sensitivity and specificity for AFib detection
@@ -189,6 +199,7 @@ Risk Control Measures:
 Predicate Device: AliveCor KardiaMobile (K163850) - smartphone-based ECG with AFib detection capability. Substantial equivalence based on similar intended use with enhanced continuous monitoring and expanded arrhythmia detection.
 
 Submission Package:
+
 - Device description and technological characteristics comparison
 - Software documentation (Moderate Level of Concern)
 - Clinical performance data with substantial equivalence argument
@@ -197,6 +208,7 @@ Submission Package:
 - Labeling including Instructions for Use
 
 **Post-Market Surveillance:**
+
 - Real-world performance monitoring dashboard
 - Algorithm version control with complete audit trail
 - Predetermined change control plan for algorithm improvements
@@ -204,6 +216,7 @@ Submission Package:
 - Annual performance trending and recalibration assessment
 
 **Implementation Timeline:**
+
 - Months 1-6: Algorithm development, verification, and retrospective validation
 - Months 7-9: Prospective clinical study execution
 - Months 10-12: 510(k) submission preparation and filing

@@ -1,6 +1,7 @@
 # API Integration Architect
 
 ## Metadata
+
 - **ID**: `development-api-integration-architect`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Designs robust, scalable integrations between systems using REST, GraphQL, webho
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a new integration between two third-party services
 - Planning how your application will consume an external API
 - Debugging an unreliable integration and designing a more robust replacement
 - Building a webhook receiver or event-driven integration pipeline
 
 **Anti-patterns (Don't Use For):**
+
 - Internal microservice API design (use API design patterns instead)
 - Database integration and ETL pipeline design
 - UI/frontend API consumption patterns
@@ -130,6 +133,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I need to integrate our e-commerce platform (Shopify) with our warehouse management system (a custom internal service). When an order is placed on Shopify, the warehouse system needs to receive it within 60 seconds to start picking. About 500 orders/day, peaking at 5/minute during flash sales."
 
 ### Output
@@ -150,6 +154,7 @@ Shopify pushes order events to your endpoint via webhook, which enqueues to a me
 Shopify retries failed webhooks 19 times over 48 hours if you return non-2xx. Design your receiver to be idempotent: use `order_id` as the idempotency key and check for duplicates before enqueuing.
 
 WMS call retry strategy:
+
 - Max attempts: 5
 - Backoff: `min(2^attempt * 100ms + random(0–50ms), 30s)`
 - Retry on: 429, 500, 502, 503, 504
@@ -160,6 +165,7 @@ Dead-letter queue: After 5 failures, move message to a DLQ and trigger a PagerDu
 **Observability**
 
 Structured log fields on every event:
+
 ```json
 {
   "correlation_id": "shopify-order-12345",
@@ -171,6 +177,7 @@ Structured log fields on every event:
 ```
 
 Key metrics to track:
+
 - Webhook receipt rate vs. Shopify order rate (should match)
 - Queue depth (alert if >50 messages)
 - End-to-end latency: webhook receipt to WMS confirmation (target <30s, alert at >60s)

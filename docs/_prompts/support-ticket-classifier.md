@@ -3,18 +3,19 @@ title: Support Ticket Classifier
 slug: support-ticket-classifier
 category: customer service
 tags:
-- ticket
-- triage
-- routing
-- prioritization
-- classification
-- support
-- operations
+  - ticket
+  - triage
+  - routing
+  - prioritization
+  - classification
+  - support
+  - operations
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a support triage expert to classify incoming tickets
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a support triage expert to classify incoming tickets
   by type, priority, and routing destination so the right team handles each issue
   at the right speed. It applies consistent logic across high-volume queues to reduce
   mis-routing, cut response time, and surface SLA-at-risk tickets early. The classifier
@@ -22,11 +23,11 @@ description: This prompt enables a support triage expert to classify incoming ti
   Zendesk, Jira Service Management, or Freshdesk.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- High-volume inboxes where manual triage creates bottlenecks or inconsistency
-- Onboarding new support agents who need guidance on routing logic
-- Auditing existing ticket classification to identify systemic routing errors
-- Resolving tickets — this tool classifies, it does not answer
+  - Ideal Scenarios:**
+  - High-volume inboxes where manual triage creates bottlenecks or inconsistency
+  - Onboarding new support agents who need guidance on routing logic
+  - Auditing existing ticket classification to identify systemic routing errors
+  - Resolving tickets — this tool classifies, it does not answer
 complexity: intermediate
 interaction: single-shot
 ---

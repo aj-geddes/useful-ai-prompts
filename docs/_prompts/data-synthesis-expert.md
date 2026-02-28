@@ -3,34 +3,35 @@ title: Data Synthesis Expert
 slug: data-synthesis-expert
 category: research
 tags:
-- data
-- synthesis
-- mixed
-- methods
-- triangulation
-- cross-study
-- comparison
-- meta-synthesis
-- research
-- integration
+  - data
+  - synthesis
+  - mixed
+  - methods
+  - triangulation
+  - cross-study
+  - comparison
+  - meta-synthesis
+  - research
+  - integration
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt helps researchers and analysts synthesize findings from multiple
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt helps researchers and analysts synthesize findings from multiple
   data sources — combining qualitative and quantitative evidence, reconciling conflicting
   findings, and producing integrated conclusions that are stronger than any single
   source. It applies formal triangulation and cross-study comparison methods to generate
   insight that transcends individual data sets.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Combining survey data, user interview findings, and analytics into a unified set
-  of conclusions
-- Reconciling contradictory findings from different research studies on the same topic
-- Producing a meta-synthesis or literature review that integrates findings across
-  multiple existing studies
-- Single-study data analysis where no synthesis is needed
+  - Ideal Scenarios:**
+  - Combining survey data, user interview findings, and analytics into a unified set
+    of conclusions
+  - Reconciling contradictory findings from different research studies on the same topic
+  - Producing a meta-synthesis or literature review that integrates findings across
+    multiple existing studies
+  - Single-study data analysis where no synthesis is needed
 complexity: advanced
 interaction: multi-turn
 ---

@@ -27,6 +27,7 @@ Agile sprint planning provides a structured approach to organize work into time-
 # Sprint Planning Checklist
 
 ## 1-2 Days Before Planning Meeting
+
 - [ ] Groom product backlog (ensure top items are detailed)
 - [ ] Update user story acceptance criteria
 - [ ] Identify dependencies and blockers
@@ -36,6 +37,7 @@ Agile sprint planning provides a structured approach to organize work into time-
 - [ ] Prepare sprint goals draft
 
 ## Information to Gather
+
 - Product Owner priorities
 - Team capacity (working hours available)
 - Previous sprint metrics
@@ -53,7 +55,7 @@ class SprintPlanner {
     this.team = team;
     this.sprintLength = sprintLength; // weeks
     this.userStories = [];
-    this.sprintGoal = '';
+    this.sprintGoal = "";
     this.capacity = 0;
   }
 
@@ -72,20 +74,20 @@ class SprintPlanner {
   conductPlanningMeeting() {
     return {
       part1: {
-        duration: '15 minutes',
-        activity: 'Product Owner presents sprint goal',
-        deliverable: 'Team understands business objective'
+        duration: "15 minutes",
+        activity: "Product Owner presents sprint goal",
+        deliverable: "Team understands business objective",
       },
       part2: {
-        duration: '45-60 minutes',
-        activity: 'Team discusses and estimates user stories',
-        deliverable: 'Prioritized sprint backlog with story points'
+        duration: "45-60 minutes",
+        activity: "Team discusses and estimates user stories",
+        deliverable: "Prioritized sprint backlog with story points",
       },
       part3: {
-        duration: '15 minutes',
-        activity: 'Team commits to sprint goal',
-        deliverable: 'Formal sprint backlog committed'
-      }
+        duration: "15 minutes",
+        activity: "Team commits to sprint goal",
+        deliverable: "Formal sprint backlog committed",
+      },
     };
   }
 
@@ -97,8 +99,8 @@ class SprintPlanner {
       if (currentCapacity >= story.points) {
         sprintBacklog.push({
           ...story,
-          status: 'planned',
-          sprint: this.currentSprint
+          status: "planned",
+          sprint: this.currentSprint,
         });
         currentCapacity -= story.points;
       }
@@ -108,7 +110,8 @@ class SprintPlanner {
       goal: this.sprintGoal,
       backlog: sprintBacklog,
       remainingCapacity: currentCapacity,
-      utilization: ((capacity - currentCapacity) / capacity * 100).toFixed(1) + '%'
+      utilization:
+        (((capacity - currentCapacity) / capacity) * 100).toFixed(1) + "%",
     };
   }
 }
@@ -218,7 +221,7 @@ class DailyStandup {
       startTime: new Date(),
       participants: [],
       timeboxed: true,
-      durationMinutes: 15
+      durationMinutes: 15,
     };
 
     for (let member of this.team) {
@@ -227,24 +230,24 @@ class DailyStandup {
         yesterday: member.getYesterdayWork(),
         today: member.getPlanForToday(),
         blockers: member.getBlockers(),
-        helpNeeded: member.getHelpNeeded()
+        helpNeeded: member.getHelpNeeded(),
       });
     }
 
     return {
       standup,
       followUpActions: this.identifyFollowUps(standup),
-      blockerResolutionOwners: this.assignBlockerOwners(standup)
+      blockerResolutionOwners: this.assignBlockerOwners(standup),
     };
   }
 
   identifyFollowUps(standup) {
     return standup.participants
-      .filter(p => p.blockers.length > 0)
-      .map(p => ({
+      .filter((p) => p.blockers.length > 0)
+      .map((p) => ({
         owner: p.name,
         blockers: p.blockers,
-        deadline: new Date(Date.now() + 24 * 60 * 60 * 1000)
+        deadline: new Date(Date.now() + 24 * 60 * 60 * 1000),
       }));
   }
 }
@@ -253,6 +256,7 @@ class DailyStandup {
 ## Best Practices
 
 ### ✅ DO
+
 - Base capacity on actual team velocity from past sprints
 - Include buffer time for interruptions and support work
 - Focus sprint goal on business value, not technical tasks
@@ -265,6 +269,7 @@ class DailyStandup {
 - Include retrospective improvements in planning
 
 ### ❌ DON'T
+
 - Plan for 100% capacity utilization
 - Skip story grooming before planning meeting
 - Add stories after sprint starts (unless emergency)

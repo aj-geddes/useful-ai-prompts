@@ -1,6 +1,7 @@
 # Public Speaking Coach
 
 ## Metadata
+
 - **ID**: `learning-public-speaking-coach`
 - **Version**: 1.0.0
 - **Category**: Learning & Skills
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Develops confident, compelling public speaking abilities through systematic skill building and anxiety management. Covers presentation preparation, delivery techniques, audience engagement, and overcoming speaking fear for professionals at all confidence levels.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Preparing for important presentations, pitches, or speeches
 - Building overall public speaking confidence systematically
 - Overcoming fear of public speaking (glossophobia)
@@ -23,6 +27,7 @@ Develops confident, compelling public speaking abilities through systematic skil
 - Transitioning from adequate presenter to compelling speaker
 
 **Anti-patterns (when NOT to use):**
+
 - Speech writing and content creation (use content creation prompts)
 - Media training for interviews and press
 - Acting and theatrical performance coaching
@@ -106,12 +111,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm a software engineer who has to present technical concepts to non-technical stakeholders. I know my material cold but get very nervous, speak too fast, use too much jargon, and lose people with too much detail."
 
 ### Output
+
 **Public Speaking Development Plan: Technical to Non-Technical Communication**
 
 **1. Assessment**
+
 - Strengths: Deep subject matter expertise, thorough preparation, credibility with technical content
 - Primary challenges: Anxiety-driven fast speech, curse of knowledge (jargon), detail overload
 - Root pattern: Nervousness leads to rushing, which leads to jargon shortcuts, which loses audience, which increases nervousness (negative spiral)
@@ -121,18 +129,21 @@ Avoid:
 **2. Anxiety Management**
 
 Pre-presentation routine (do every time):
+
 - T-60 minutes: Light physical activity (walk, stretching) to burn adrenaline - nervous energy needs a physical outlet
 - T-15 minutes: Box breathing (4 counts in, 4 hold, 4 out, 4 hold) x 5 cycles in a quiet space
 - T-5 minutes: Power pose in private (2 minutes, arms wide, chest open) - research is mixed but many find it helpful
 - T-1 minute: Self-talk - "I know this better than anyone in the room. I'm here to help them understand."
 
 During presentation:
+
 - Plant your feet for first sentence (prevents pacing from nervous energy)
 - Find 3 friendly faces in audience, rotate eye contact between them
 - If you feel rushing: Pause. Take breath. Resume at half speed. This feels weird but looks confident.
 - Permission to pause: Silence that feels like 5 seconds is actually 2 seconds to audience
 
 Reframe technique:
+
 - Nervousness and excitement are physiologically identical (racing heart, sweaty palms, heightened alertness)
 - Before presenting, say out loud: "I'm excited to share this" (not "I'm so nervous")
 - Your body can't tell the difference; your interpretation creates your experience
@@ -140,42 +151,49 @@ Reframe technique:
 **3. Skill Building**
 
 Jargon elimination technique:
+
 - Rule: Explain every concept as if to a smart friend outside of tech
 - Practice: Before each presentation, identify 5 potential jargon terms or acronyms
 - For each: Write a 1-sentence plain English alternative (database = "where we store information"; API = "how systems talk to each other")
 - Jargon test: Have a non-technical friend review your slides and flag anything unexplained
 
 Detail management - The Iceberg Method:
+
 - What you know: 100% (the full iceberg)
 - What you present: 20% (tip of iceberg - key points only)
 - What you prepare for Q&A: Additional 30% (ready if asked)
 - What you don't mention: 50% (too deep for this audience, save for technical audiences)
 
 Presentation structure framework (use for every presentation):
+
 1. Start with the "so what": Why should they care? Business impact? Problem solved?
 2. Maximum 3 main points: If you have 7 points, you have 0 points - they'll remember nothing
 3. One concrete example or analogy per main point: "It's like..." makes abstract concrete
 4. End with clear action or takeaway: What do you want them to do or remember?
 
 Example transformation:
+
 - Before: "We implemented a microservices architecture to improve system resilience through container orchestration."
 - After: "We broke our system into smaller pieces that can fail independently. If one piece breaks, the whole system keeps running. Think of it like a cruise ship vs. a rowboat - one leak doesn't sink the ship."
 
 **4. Practice System**
 
 Weekly practice (30 minutes):
+
 - Record yourself explaining one technical concept in plain English (2 minutes max)
 - Review: Count jargon words, measure speaking pace (aim for 120-150 words/minute), note filler words
 - Redo: Same concept, fixing issues identified
 - Track: Jargon words per minute should decrease over 4 weeks
 
 Before each real presentation:
+
 - Rehearse out loud 3 times minimum (not in your head - mouth the words)
 - Time yourself on rehearsals 2 and 3 (identify where you rush)
 - Present once to non-technical colleague and ask: "What was unclear?"
 - Identify your "pace check" slide - when you reach it, consciously slow down
 
 Progress indicators:
+
 - Month 1: Complete a presentation without visible rushing
 - Month 2: Receive unsolicited feedback "that was clear" from non-technical stakeholder
 - Month 3: Answer questions confidently with appropriate (not excessive) detail
@@ -183,6 +201,7 @@ Progress indicators:
 - Long-term: Someone says "You're great at explaining technical stuff"
 
 Low-stakes practice opportunities:
+
 - Explain a technical concept at dinner to family/friends
 - Volunteer to present at team meetings (familiar audience)
 - Record video explanations and share with team (asynchronous, less pressure)
@@ -191,6 +210,7 @@ Low-stakes practice opportunities:
 ---
 
 ## Related Prompts
+
 - [Skill Acquisition Accelerator](skill-acquisition-accelerator.md) - Systematic skill development
 - [Confidence Building Strategist](../personal-growth/confidence-building-strategist.md) - Building overall confidence
 - [Communication Skills Enhancer](../relationships-communication/communication-skills-enhancer.md) - Broader communication development

@@ -8,4 +8,4 @@ Healthcare operations and administrative excellence frameworks.
 
 ---
 
-*Professional healthcare administration prompts for hospital administrators and healthcare operations managers.*
+_Professional healthcare administration prompts for hospital administrators and healthcare operations managers._

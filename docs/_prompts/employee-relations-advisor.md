@@ -3,22 +3,23 @@ title: Employee Relations Advisor
 slug: employee-relations-advisor
 category: human resources
 tags:
-- employee
-- relations
-- conflict
-- mediation
-- workplace
-- investigation
-- grievance
-- disciplinary
-- process
-- HR
-- investigation
+  - employee
+  - relations
+  - conflict
+  - mediation
+  - workplace
+  - investigation
+  - grievance
+  - disciplinary
+  - process
+  - HR
+  - investigation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a senior employee relations specialist who advises
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a senior employee relations specialist who advises
   on conflict resolution, workplace investigation processes, disciplinary procedures,
   and grievance handling. It provides structured guidance for navigating complex interpersonal
   situations while protecting both employee rights and organizational integrity. The
@@ -26,14 +27,14 @@ description: This prompt activates a senior employee relations specialist who ad
   guidance, and documentation templates for ER matters.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An HR business partner managing a harassment complaint who needs guidance on the
-  investigation process and interviewing approach
-- A manager who has a conflict between two employees that has escalated beyond informal
-  resolution and needs a structured intervention
-- An HR team standardizing disciplinary procedures to ensure consistent and fair application
-  across departments
-- Providing legal advice on employment law claims (requires employment attorney)
+  - Ideal Scenarios:**
+  - An HR business partner managing a harassment complaint who needs guidance on the
+    investigation process and interviewing approach
+  - A manager who has a conflict between two employees that has escalated beyond informal
+    resolution and needs a structured intervention
+  - An HR team standardizing disciplinary procedures to ensure consistent and fair application
+    across departments
+  - Providing legal advice on employment law claims (requires employment attorney)
 complexity: advanced
 interaction: multi-turn
 ---

@@ -1,6 +1,7 @@
 # Feedback Implementation Expert
 
 ## Metadata
+
 - **ID**: `learning-feedback-implementation`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A feedback systems specialist that designs and implements effective feedback cultures and processes that drive learning and performance improvement. Creates frameworks for constructive, actionable feedback delivery and receipt, including tools, training programs, and cultural change strategies.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Establishing feedback cultures and systems across teams or organizations
 - Training managers on effective feedback delivery techniques
 - Creating feedback tools, templates, and conversation guides
@@ -23,6 +27,7 @@ A feedback systems specialist that designs and implements effective feedback cul
 - Designing peer feedback and 360-degree review systems
 
 **Anti-patterns (don't use for):**
+
 - Legal documentation of performance issues requiring HR involvement
 - Disciplinary actions and performance improvement plans
 - Formal grievance processes with compliance requirements
@@ -130,14 +135,16 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Engineering teams struggle with feedback. Code reviews are harsh, performance reviews are vague, and people avoid difficult conversations about collaboration. 150 engineers across 15 teams. Want to create a healthy feedback culture where growth-oriented feedback is normal. Managers vary widely in feedback skills.
 
 ### Output
+
 **Engineering Feedback Culture System**
 
 **System Architecture:**
 
-*Feedback Types and Channels:*
+_Feedback Types and Channels:_
 | Type | Frequency | Channel | Purpose |
 |------|-----------|---------|---------|
 | Code review | Per PR | GitHub/GitLab | Technical quality |
@@ -147,25 +154,29 @@ Engineering teams struggle with feedback. Code reviews are harsh, performance re
 
 **Code Review Etiquette Framework:**
 
-*Constructive Language Transformation:*
+_Constructive Language Transformation:_
+
 - Before: "This is wrong" -> After: "Have you considered [alternative]? It might help with [reason]"
 - Before: "This is inefficient" -> After: "I've seen [pattern] work well for this use case"
 - Always: Separate code from coder, focus on outcomes
 
-*Code Review Standards:*
+_Code Review Standards:_
+
 - Required: At least one positive observation per review
 - Required: Explain the "why" behind suggestions
 - Prohibited: Sarcasm, condescension, absolute language ("never," "always")
 
 **Feedback Skills Development:**
 
-*Manager Training Curriculum (4 sessions):*
+_Manager Training Curriculum (4 sessions):_
+
 1. SBI Framework (Situation-Behavior-Impact) practice
 2. Receiving feedback and modeling vulnerability
 3. Difficult conversation navigation
 4. Coaching vs. directing balance
 
-*Team Workshop (2 hours):*
+_Team Workshop (2 hours):_
+
 - Feedback mindset: Growth vs. fixed
 - Giving feedback: Specific, timely, actionable
 - Receiving feedback: Listen, clarify, appreciate, decide
@@ -173,7 +184,8 @@ Engineering teams struggle with feedback. Code reviews are harsh, performance re
 
 **Feedback Tools:**
 
-*Weekly 1:1 Template:*
+_Weekly 1:1 Template:_
+
 ```
 What went well this week?
 What's one challenge you faced?
@@ -182,47 +194,55 @@ Feedback for me: What can I do differently?
 Development focus: How can I support your growth?
 ```
 
-*Peer Feedback Form (Monthly):*
+_Peer Feedback Form (Monthly):_
+
 - What strength have you observed this person demonstrate?
 - What's one area where they could grow?
 - Any specific examples to share?
 
 **Culture Building Strategy:**
 
-*Psychological Safety Initiatives:*
+_Psychological Safety Initiatives:_
+
 - Leaders go first: Share their own feedback received and actions
 - "Feedback Friday": Dedicated time for growth conversations
 - Success stories: Share positive feedback impact in team meetings
 
-*Manager Accountability:*
+_Manager Accountability:_
+
 - Feedback quality in manager reviews
 - Team feedback culture scores
 - Skip-level conversations to assess safety
 
 **Implementation Roadmap:**
 
-*Month 1:*
+_Month 1:_
+
 - Code review etiquette rollout
 - Manager training begins
 - Baseline culture survey
 
-*Month 2-3:*
+_Month 2-3:_
+
 - Team workshops
 - 1:1 template adoption
 - Peer feedback pilot (3 teams)
 
-*Month 4-6:*
+_Month 4-6:_
+
 - Full peer feedback rollout
 - Culture measurement
 - Optimization based on feedback
 
 **Success Metrics:**
+
 - Code review sentiment score (track language analysis)
 - Feedback culture survey (quarterly, target: 4.0/5)
 - Manager feedback skill assessment (360)
 - Team psychological safety index
 
 ## Related Prompts
+
 - [Mentorship Structure Expert](mentorship-structure-expert.md) - For designing mentoring relationships
 - [Competency Assessment Expert](competency-assessment-expert.md) - For evaluating skills development
 - [Learning Experience Design Expert](learning-experience-design-expert.md) - For designing training workshops

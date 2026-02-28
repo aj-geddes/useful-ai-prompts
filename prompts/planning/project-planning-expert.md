@@ -1,6 +1,7 @@
 # Project Planning Expert
 
 ## Metadata
+
 - **ID**: `planning-project`
 - **Version**: 2.0.0
 - **Category**: Planning
@@ -18,6 +19,7 @@ A project planning specialist that helps you create comprehensive, actionable pr
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning complex multi-phase projects with multiple workstreams
 - Creating implementation plans for strategic initiatives
 - Developing product launch or system implementation plans
@@ -25,6 +27,7 @@ A project planning specialist that helps you create comprehensive, actionable pr
 - Building business cases with detailed execution plans
 
 **Anti-patterns (Don't Use For):**
+
 - Personal task management or to-do lists
 - Agile sprint planning (use sprint planning templates)
 - Simple single-task execution
@@ -149,25 +152,27 @@ Challenges: Data migration from old system, user adoption concerns, integration 
 
 **Project Charter Summary**
 
-*Project*: Sales CRM Implementation
-*Duration*: 6 months (January 1 - June 30, 2025)
-*Budget*: $150,000
-*Team*: 5 resources (3 IT + 1 contractor + PM)
+_Project_: Sales CRM Implementation
+_Duration_: 6 months (January 1 - June 30, 2025)
+_Budget_: $150,000
+_Team_: 5 resources (3 IT + 1 contractor + PM)
 
-*Objectives*
+_Objectives_
+
 1. Replace legacy CRM with modern cloud-based platform
 2. Achieve 25% improvement in sales team efficiency
 3. Establish single source of truth for customer data
 4. Enable email/calendar integration for all 50 sales reps
 
-*Success Criteria*
+_Success Criteria_
+
 - 100% of sales reps trained and actively using new system
 - Complete data migration with 99.5% accuracy
 - Email/calendar integration working seamlessly
 - User satisfaction score greater than 8/10
 - Go-live on schedule and within budget
 
-*Key Stakeholders*
+_Key Stakeholders_
 | Stakeholder | Role | Interest |
 |-------------|------|----------|
 | VP Sales | Executive Sponsor | Business outcomes, adoption |
@@ -176,35 +181,40 @@ Challenges: Data migration from old system, user adoption concerns, integration 
 
 **Work Breakdown Structure**
 
-*Phase 1: Project Initiation (Weeks 1-4)*
+_Phase 1: Project Initiation (Weeks 1-4)_
+
 - 1.1 Project kickoff and team alignment
 - 1.2 Requirements gathering with stakeholders
 - 1.3 Vendor evaluation and selection
 - 1.4 Contract negotiation and signing
 - **Deliverables**: Project charter, requirements document, vendor contract
 
-*Phase 2: Planning and Design (Weeks 5-8)*
+_Phase 2: Planning and Design (Weeks 5-8)_
+
 - 2.1 Detailed project schedule development
 - 2.2 CRM configuration design
 - 2.3 Data migration strategy and mapping
 - 2.4 Environment setup and security configuration
 - **Deliverables**: Technical design document, migration plan, test environment
 
-*Phase 3: Development and Configuration (Weeks 9-16)*
+_Phase 3: Development and Configuration (Weeks 9-16)_
+
 - 3.1 Core CRM setup and customization
 - 3.2 Data migration execution and validation
 - 3.3 Email/calendar integration implementation
 - 3.4 Reporting dashboard configuration
 - **Deliverables**: Configured CRM system, migrated data, working integrations
 
-*Phase 4: Testing and Training (Weeks 17-22)*
+_Phase 4: Testing and Training (Weeks 17-22)_
+
 - 4.1 System testing (functional, integration, performance)
 - 4.2 User acceptance testing with sales team
 - 4.3 Training program development and delivery
 - 4.4 Documentation and support materials
 - **Deliverables**: Test results, trained users, support documentation
 
-*Phase 5: Go-Live and Stabilization (Weeks 23-26)*
+_Phase 5: Go-Live and Stabilization (Weeks 23-26)_
+
 - 5.1 Production deployment
 - 5.2 Post-launch monitoring and support
 - 5.3 Issue resolution and optimization
@@ -213,34 +223,35 @@ Challenges: Data migration from old system, user adoption concerns, integration 
 
 **Timeline and Milestones**
 
-| Milestone | Target Date | Success Criteria | Gate |
-|-----------|-------------|------------------|------|
-| Requirements Approved | Jan 31 | 95% requirement coverage signed off | Go/No-Go |
-| Vendor Selected | Feb 15 | Contract signed, team onboarded | Go/No-Go |
-| Design Complete | Mar 15 | Technical design approved | Go/No-Go |
-| Configuration Complete | Apr 30 | System functional in test environment | Go/No-Go |
-| UAT Approved | May 31 | All test cases passed, user sign-off | Go/No-Go |
-| Go-Live | Jun 30 | Production deployment successful | Launch |
+| Milestone              | Target Date | Success Criteria                      | Gate     |
+| ---------------------- | ----------- | ------------------------------------- | -------- |
+| Requirements Approved  | Jan 31      | 95% requirement coverage signed off   | Go/No-Go |
+| Vendor Selected        | Feb 15      | Contract signed, team onboarded       | Go/No-Go |
+| Design Complete        | Mar 15      | Technical design approved             | Go/No-Go |
+| Configuration Complete | Apr 30      | System functional in test environment | Go/No-Go |
+| UAT Approved           | May 31      | All test cases passed, user sign-off  | Go/No-Go |
+| Go-Live                | Jun 30      | Production deployment successful      | Launch   |
 
-*Critical Path*
+_Critical Path_
 Requirements -> Vendor Selection -> Data Migration Design -> Migration Execution -> UAT -> Go-Live
 
-*Buffer Allocation*
+_Buffer Allocation_
+
 - 1 week buffer after vendor selection
 - 1 week buffer after configuration
 - 2 weeks buffer before go-live
 
 **Resource Allocation**
 
-| Role | Name/Type | Allocation | Phase Focus |
-|------|-----------|------------|-------------|
-| Project Manager | Internal | 100% | All phases |
-| IT Lead | Internal | 100% | Architecture, integration |
-| IT Developer | Internal | 75% | Configuration, customization |
-| IT Support | Internal | 50% | Testing, training, support |
-| CRM Consultant | Contractor | 80% (Months 2-6) | Migration, configuration |
+| Role            | Name/Type  | Allocation       | Phase Focus                  |
+| --------------- | ---------- | ---------------- | ---------------------------- |
+| Project Manager | Internal   | 100%             | All phases                   |
+| IT Lead         | Internal   | 100%             | Architecture, integration    |
+| IT Developer    | Internal   | 75%              | Configuration, customization |
+| IT Support      | Internal   | 50%              | Testing, training, support   |
+| CRM Consultant  | Contractor | 80% (Months 2-6) | Migration, configuration     |
 
-*Budget Breakdown*
+_Budget Breakdown_
 | Category | Amount | % | Notes |
 |----------|--------|---|-------|
 | Software Licenses | $60,000 | 40% | Annual subscription |
@@ -251,25 +262,26 @@ Requirements -> Vendor Selection -> Data Migration Design -> Migration Execution
 
 **Risk Register**
 
-| Risk | Probability | Impact | Mitigation | Contingency |
-|------|-------------|--------|------------|-------------|
-| Data migration complexity | Medium | High | Multiple test migrations, early data analysis, dedicated contractor | Extend timeline, reduce scope |
-| User adoption resistance | Medium | High | Early involvement, champion network, comprehensive training | Extended support period, incentives |
-| Integration challenges | High | Medium | Technical spike in Phase 2, vendor support engaged | Phased integration approach |
-| Timeline pressure | Medium | Medium | Built-in buffers, scope prioritization | Scope reduction options identified |
-| Key resource unavailability | Low | High | Cross-training, documentation | Contractor backup identified |
+| Risk                        | Probability | Impact | Mitigation                                                          | Contingency                         |
+| --------------------------- | ----------- | ------ | ------------------------------------------------------------------- | ----------------------------------- |
+| Data migration complexity   | Medium      | High   | Multiple test migrations, early data analysis, dedicated contractor | Extend timeline, reduce scope       |
+| User adoption resistance    | Medium      | High   | Early involvement, champion network, comprehensive training         | Extended support period, incentives |
+| Integration challenges      | High        | Medium | Technical spike in Phase 2, vendor support engaged                  | Phased integration approach         |
+| Timeline pressure           | Medium      | Medium | Built-in buffers, scope prioritization                              | Scope reduction options identified  |
+| Key resource unavailability | Low         | High   | Cross-training, documentation                                       | Contractor backup identified        |
 
 **Communication Plan**
 
-| Audience | Format | Frequency | Owner |
-|----------|--------|-----------|-------|
-| Executive Sponsors | Status Report | Weekly | PM |
-| Steering Committee | Review Meeting | Bi-weekly | PM |
-| Project Team | Stand-up | Daily | IT Lead |
-| Sales Team | Newsletter | Monthly | PM + Sales Manager |
-| All Stakeholders | Milestone Update | At gates | PM |
+| Audience           | Format           | Frequency | Owner              |
+| ------------------ | ---------------- | --------- | ------------------ |
+| Executive Sponsors | Status Report    | Weekly    | PM                 |
+| Steering Committee | Review Meeting   | Bi-weekly | PM                 |
+| Project Team       | Stand-up         | Daily     | IT Lead            |
+| Sales Team         | Newsletter       | Monthly   | PM + Sales Manager |
+| All Stakeholders   | Milestone Update | At gates  | PM                 |
 
-*Escalation Path*
+_Escalation Path_
+
 1. Issue identified -> IT Lead (24 hours to resolve)
 2. Unresolved -> PM (48 hours to resolve)
 3. Unresolved -> Steering Committee (decision within 1 week)

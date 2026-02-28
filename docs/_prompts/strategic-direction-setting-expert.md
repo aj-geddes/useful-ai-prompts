@@ -3,25 +3,26 @@ title: Strategic Direction Setting Expert
 slug: strategic-direction-setting-expert
 category: decision-making/leadership
 tags:
-- strategic-planning
-- vision-setting
-- direction-setting
-- leadership
+  - strategic-planning
+  - vision-setting
+  - direction-setting
+  - leadership
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Guide leadership teams through setting strategic direction by analyzing
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Guide leadership teams through setting strategic direction by analyzing
   market position, capabilities, and opportunities to define clear paths forward.
   Creates strategic frameworks with options analysis, implementation roadmaps, and
   success metrics for multi-year planning horizons.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Annual strategic planning processes
-- Major business model decisions or pivots
-- Response to market disruption or competitive threats
-- New leadership establishing organizational direction
+  - Ideal scenarios:**
+  - Annual strategic planning processes
+  - Major business model decisions or pivots
+  - Response to market disruption or competitive threats
+  - New leadership establishing organizational direction
 complexity: advanced
 interaction: multi-turn
 ---
@@ -36,15 +37,17 @@ Strategic direction setting requires balancing ambition with reality, analyzing 
 
 <input_handling>
 Required inputs:
+
 - Organization's current focus and market position
 - Key strengths, assets, and capabilities
 - Market trends and competitive dynamics
 
 Infer if not provided:
+
 - Time horizon (assume 3-5 year strategic view)
 - Risk appetite (assess from organizational context)
 - Resource constraints (assume typical limitations)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a strategic direction framework with options analysis and implementation roadmap.
@@ -60,6 +63,7 @@ Step 5: Define success metrics and strategic KPIs for tracking progress
 Format: Situation analysis with strategic options and implementation roadmap
 Length: 900-1200 words
 Structure:
+
 - Situation assessment (current position, dynamics, imperative)
 - Strategic options analysis (table comparing 2-3 directions)
 - Recommended direction with strategic vision statement
@@ -68,10 +72,11 @@ Structure:
 - Resource requirements
 - Strategic KPIs with targets
 - Risk management approach
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Ground recommendations in situational analysis
 - Present genuine strategic options with real trade-offs
 - Create actionable pillars with clear initiatives
@@ -79,12 +84,13 @@ Excellent outputs:
 - Provide measurable success metrics with specific targets
 
 Avoid:
+
 - Generic strategy without situational grounding
 - False choice between obviously different quality options
 - Strategy without implementation path
 - Missing success metrics and milestones
 - Overly complex frameworks that obscure clarity
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Acknowledge limitations of analysis without full organizational data

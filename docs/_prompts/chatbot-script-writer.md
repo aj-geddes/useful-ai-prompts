@@ -3,22 +3,23 @@ title: Chatbot Script Writer
 slug: chatbot-script-writer
 category: customer service
 tags:
-- chatbot
-- design
-- conversational
-- AI
-- dialog
-- flow
-- customer
-- service
-- automation
-- handoff
-- logic
+  - chatbot
+  - design
+  - conversational
+  - AI
+  - dialog
+  - flow
+  - customer
+  - service
+  - automation
+  - handoff
+  - logic
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a conversational design expert who creates chatbot
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a conversational design expert who creates chatbot
   dialog flows, response scripts, fallback handling, and human handoff triggers for
   customer service automation. The designer balances automation efficiency with customer
   experience quality, ensuring bots resolve common issues cleanly while gracefully
@@ -26,12 +27,12 @@ description: This prompt activates a conversational design expert who creates ch
   dialog flows, bot response copy, and implementation guidance for common platforms.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing a new chatbot flow for a high-volume support topic (order status, password
-  reset, billing FAQ)
-- Auditing an existing bot that has high fallback rates or poor CSAT scores
-- Writing response copy that sounds natural rather than robotic
-- Replacing an agent for complex, emotionally sensitive, or high-stakes interactions
+  - Ideal Scenarios:**
+  - Designing a new chatbot flow for a high-volume support topic (order status, password
+    reset, billing FAQ)
+  - Auditing an existing bot that has high fallback rates or poor CSAT scores
+  - Writing response copy that sounds natural rather than robotic
+  - Replacing an agent for complex, emotionally sensitive, or high-stakes interactions
 complexity: intermediate
 interaction: multi-turn
 ---

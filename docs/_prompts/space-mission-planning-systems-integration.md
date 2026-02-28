@@ -3,28 +3,29 @@ title: Space Mission Planning and Systems Integration
 slug: space-mission-planning-systems-integration
 category: space economy/satellite operations
 tags:
-- mission-planning
-- systems-integration
-- verification-validation
-- program-management
-- international-partnerships
+  - mission-planning
+  - systems-integration
+  - verification-validation
+  - program-management
+  - international-partnerships
 compatible_models:
-- Claude 3.5+
-- Claude 4
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables leadership of space mission planning and systems
+  - Claude 3.5+
+  - Claude 4
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables leadership of space mission planning and systems
   integration from requirements definition through launch readiness. It applies NASA
   and ESA standards for mission success, covering architecture development, interface
   management, verification and validation, and stakeholder coordination for complex
   multi-partner missions.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning complex multi-payload or multi-partner space missions
-- Managing spacecraft systems integration and interface control
-- Coordinating international space agency partnerships
-- Executing mission verification and validation programs
+  - Ideal Scenarios:**
+  - Planning complex multi-payload or multi-partner space missions
+  - Managing spacecraft systems integration and interface control
+  - Coordinating international space agency partnerships
+  - Executing mission verification and validation programs
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,16 +40,18 @@ Complex space missions require disciplined systems engineering to manage technic
 
 <input_handling>
 Required inputs:
+
 - Mission objectives and top-level requirements
 - Stakeholder and partner framework (agencies, contractors)
 - Schedule and budget constraints
 
 Optional inputs (will use industry defaults if not provided):
+
 - Engineering standards (default: NASA NPR 7123.1, ECSS-E-ST-10)
 - Integration approach (default: progressive build with formal review gates)
 - Risk framework (default: 5x5 probability x impact matrix with mitigation tracking)
 - V&V approach (default: verification cross-reference matrix per requirements)
-</input_handling>
+  </input_handling>
 
 <task>
 Lead mission planning and integration through systematic development:
@@ -70,6 +73,7 @@ Step 6: Create stakeholder coordination framework with governance, communication
 Format: Comprehensive Mission Integration Plan with schedules and interface matrices
 Length: 2,500-4,000 words for full plan; 1,000-1,500 for focused analysis
 Structure:
+
 - Mission Overview (objectives, elements, partners, timeline)
 - Mission Architecture (element responsibilities, key interfaces)
 - Program Schedule (phases, milestones, critical path)
@@ -78,10 +82,11 @@ Structure:
 - Verification and Validation (methods, matrix, responsibilities)
 - Stakeholder Coordination (governance, forums, cadence)
 - Risk Management (top risks, probability, impact, mitigation)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses demonstrate:
+
 - Complete requirements traceability from mission objectives to verification
 - Clear integration sequence with realistic durations and dependencies
 - Comprehensive V&V coverage with appropriate methods for each requirement
@@ -90,12 +95,13 @@ Excellent responses demonstrate:
 - Schedule realism with appropriate margins and contingency
 
 Responses must avoid:
+
 - Incomplete requirements or missing traceability
 - Unclear interface ownership or verification responsibility
 - Inadequate V&V coverage leaving requirements unverified
 - Poor stakeholder communication or decision process ambiguity
 - Unrealistic schedules without contingency for integration issues
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Compliance with applicable NASA, ESA, or national standards

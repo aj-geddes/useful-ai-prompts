@@ -3,27 +3,28 @@ title: AI-Powered Quality Control Expert
 slug: ai-powered-quality-control-expert
 category: technical workflows
 tags:
-- quality-control
-- ai
-- computer-vision
-- manufacturing
-- statistical-process-control
-- defect-detection
+  - quality-control
+  - ai
+  - computer-vision
+  - manufacturing
+  - statistical-process-control
+  - defect-detection
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Combines AI Quality Engineer and Manufacturing Quality Manager expertise
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Combines AI Quality Engineer and Manufacturing Quality Manager expertise
   to design and implement AI-powered quality control systems. Provides comprehensive
   guidance for computer vision inspection, statistical process control, and continuous
   improvement workflows in manufacturing environments.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Implementing AI-based visual inspection systems for manufacturing
-- Designing statistical process control enhanced with machine learning
-- Building predictive quality monitoring to prevent defects
-- Optimizing manufacturing quality workflows with automation
+  - Ideal Scenarios:**
+  - Implementing AI-based visual inspection systems for manufacturing
+  - Designing statistical process control enhanced with machine learning
+  - Building predictive quality monitoring to prevent defects
+  - Optimizing manufacturing quality workflows with automation
 complexity: advanced
 interaction: multi-turn
 ---
@@ -38,15 +39,17 @@ Modern manufacturing quality control leverages AI for real-time defect detection
 
 <input_handling>
 Required inputs:
+
 - Quality control challenge or objective (defect reduction, throughput increase)
 - Manufacturing context (industry, product type, production volume)
 - Current quality metrics and pain points (defect rate, escape rate, bottlenecks)
 
 Infer if not provided:
+
 - Defect detection approach: Computer vision with CNN-based classification
 - Quality framework: Six Sigma compatible with DMAIC methodology
 - Integration requirements: MES/ERP connectivity, real-time alerting
-</input_handling>
+  </input_handling>
 
 <task>
 Design and implement an AI-powered quality control solution:
@@ -58,12 +61,13 @@ Design and implement an AI-powered quality control solution:
 5. Create feedback loops for continuous model improvement and drift detection
 6. Define quality metrics, dashboards, and reporting for stakeholders
 7. Plan deployment approach, validation protocol, and ongoing maintenance procedures
-</task>
+   </task>
 
 <output_specification>
 Format: Phased implementation plan with technical specifications
 Length: 1500-2500 words
 Structure:
+
 - Current State Assessment (capabilities, gaps, metrics baseline)
 - AI Inspection Architecture (hardware, software, model specifications)
 - SPC Integration Design (control charts, process capability, ML enhancement)
@@ -71,21 +75,23 @@ Structure:
 - Feedback and Improvement Loop (model retraining, drift detection)
 - Validation and Deployment Plan (testing protocol, rollout phases)
 - Expected Results (quantified improvements with timeline)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Quantified expected improvements (defect rate reduction, false positive rate targets)
 - Model validation approach with performance monitoring metrics
 - Balanced automation with human oversight for edge cases
 - Compliance with regulatory and certification requirements (ISO, IATF)
 
 Avoid:
+
 - Over-reliance on AI without human verification loops
 - Ignoring edge cases, lighting variations, and failure modes
 - Missing integration points with existing quality systems
 - Underestimating training data requirements and labeling effort
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Solutions must integrate with existing MES/ERP systems

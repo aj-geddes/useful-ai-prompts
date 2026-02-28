@@ -1,13 +1,14 @@
 ---
 category: mobile-development
-date: '2025-01-01'
-description: Implement offline-first mobile apps with local storage, sync strategies,
+date: "2025-01-01"
+description:
+  Implement offline-first mobile apps with local storage, sync strategies,
   and conflict resolution. Covers AsyncStorage, Realm, SQLite, and background sync
   patterns.
 layout: skill
 slug: mobile-offline-support
 tags:
-- development
+  - development
 title: mobile-offline-support
 ---
 
@@ -450,6 +451,7 @@ class OfflineItemsViewModel @Inject constructor(
 ## Best Practices
 
 ### ✅ DO
+
 - Implement robust local storage
 - Use automatic sync when online
 - Provide visual feedback for offline status
@@ -462,6 +464,7 @@ class OfflineItemsViewModel @Inject constructor(
 - Monitor storage usage
 
 ### ❌ DON'T
+
 - Assume constant connectivity
 - Sync large files frequently
 - Ignore storage limitations

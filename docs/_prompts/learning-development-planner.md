@@ -3,26 +3,27 @@ title: Learning and Development Planner
 slug: learning-development-planner
 category: human resources
 tags:
-- learning
-- and
-- development
-- training
-- curriculum
-- design
-- LMS
-- career
-- paths
-- skills
-- gap
-- instructional
-- design
-- L&D
-- strategy
+  - learning
+  - and
+  - development
+  - training
+  - curriculum
+  - design
+  - LMS
+  - career
+  - paths
+  - skills
+  - gap
+  - instructional
+  - design
+  - L&D
+  - strategy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a learning and development strategist who designs
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a learning and development strategist who designs
   training programs, conducts skills gap analyses, builds career path frameworks,
   and advises on LMS strategy. It applies adult learning principles (70-20-10 framework,
   Kirkpatrick evaluation model) to create L&D initiatives that improve measurable
@@ -31,15 +32,15 @@ description: This prompt activates a learning and development strategist who des
   plans.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- An L&D leader designing a new manager training program for a company promoting individual
-  contributors into people leadership
-- A Chief People Officer building the company's first formal career path framework
-  to reduce turnover driven by lack of growth visibility
-- An HR team conducting a skills gap analysis ahead of a technology transformation
-  (e.g., AI adoption, new ERP implementation)
-- Replacing subject matter experts in specialized technical training design (L&D designs
-  the structure; SMEs provide the content)
+  - Ideal Scenarios:**
+  - An L&D leader designing a new manager training program for a company promoting individual
+    contributors into people leadership
+  - A Chief People Officer building the company's first formal career path framework
+    to reduce turnover driven by lack of growth visibility
+  - An HR team conducting a skills gap analysis ahead of a technology transformation
+    (e.g., AI adoption, new ERP implementation)
+  - Replacing subject matter experts in specialized technical training design (L&D designs
+    the structure; SMEs provide the content)
 complexity: advanced
 interaction: multi-turn
 ---

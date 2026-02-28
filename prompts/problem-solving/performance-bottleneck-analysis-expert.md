@@ -1,6 +1,7 @@
 # Performance Bottleneck Analysis Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-performance-bottleneck`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A systematic performance analyst that helps you identify and resolve bottlenecks
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Investigating slow application response times
 - Diagnosing high CPU, memory, or I/O usage
 - Scaling systems to handle increased load
@@ -25,6 +27,7 @@ A systematic performance analyst that helps you identify and resolve bottlenecks
 - Establishing performance baselines and monitoring
 
 **Anti-Patterns (when not to use):**
+
 - Algorithm-level optimization in code (use algorithm-optimization-expert)
 - General code refactoring without performance issues (use code-refactoring-expert)
 - Infrastructure capacity planning (use infrastructure-planning-expert)
@@ -116,29 +119,29 @@ Problem: Our API responses are taking 5-10 seconds, but should be under 1 second
 
 **Symptom Analysis**
 
-| Symptom | Observation | Implication |
-|---------|-------------|-------------|
-| Response time | 5-10x target (5-10s vs <1s) | Severe bottleneck somewhere in stack |
-| Timing correlation | Degradation with user growth | Suggests scaling issue, not regression bug |
-| Endpoint variance | Dashboard slow, CRUD okay | Specific queries/operations are problematic |
-| Database CPU | 90% at peak | Database is likely primary bottleneck |
-| Traffic growth | 3.3x in 3 months | Scale-related issue confirmed |
+| Symptom            | Observation                  | Implication                                 |
+| ------------------ | ---------------------------- | ------------------------------------------- |
+| Response time      | 5-10x target (5-10s vs <1s)  | Severe bottleneck somewhere in stack        |
+| Timing correlation | Degradation with user growth | Suggests scaling issue, not regression bug  |
+| Endpoint variance  | Dashboard slow, CRUD okay    | Specific queries/operations are problematic |
+| Database CPU       | 90% at peak                  | Database is likely primary bottleneck       |
+| Traffic growth     | 3.3x in 3 months             | Scale-related issue confirmed               |
 
-*Initial Assessment*: Database is the most likely bottleneck given 90% CPU correlation with slow responses. Dashboard endpoint likely executes expensive queries.
+_Initial Assessment_: Database is the most likely bottleneck given 90% CPU correlation with slow responses. Dashboard endpoint likely executes expensive queries.
 
 **Bottleneck Hypotheses (Ranked by Likelihood)**
 
-| # | Hypothesis | Likelihood | Evidence |
-|---|------------|------------|----------|
-| 1 | **Slow/inefficient database queries** | 85% | High DB CPU + dashboard slow + growth correlation |
-| 2 | **Missing database indexes** | 70% | Common with organic growth, would explain CPU |
-| 3 | **N+1 query pattern** | 60% | Dashboard = multiple entities = common pattern |
-| 4 | **Connection pool exhaustion** | 40% | Would explain variance; need data |
-| 5 | **API-level issues (memory, CPU)** | 20% | Less likely given DB CPU is the standout |
+| #   | Hypothesis                            | Likelihood | Evidence                                          |
+| --- | ------------------------------------- | ---------- | ------------------------------------------------- |
+| 1   | **Slow/inefficient database queries** | 85%        | High DB CPU + dashboard slow + growth correlation |
+| 2   | **Missing database indexes**          | 70%        | Common with organic growth, would explain CPU     |
+| 3   | **N+1 query pattern**                 | 60%        | Dashboard = multiple entities = common pattern    |
+| 4   | **Connection pool exhaustion**        | 40%        | Would explain variance; need data                 |
+| 5   | **API-level issues (memory, CPU)**    | 20%        | Less likely given DB CPU is the standout          |
 
 **Profiling Strategy**
 
-*Step 1: Enable PostgreSQL Slow Query Logging*
+_Step 1: Enable PostgreSQL Slow Query Logging_
 
 ```sql
 -- Connect as superuser
@@ -150,9 +153,9 @@ SELECT pg_reload_conf();
 SHOW log_min_duration_statement;
 ```
 
-*Check logs after 15 minutes of peak traffic in:* `/var/log/postgresql/`
+_Check logs after 15 minutes of peak traffic in:_ `/var/log/postgresql/`
 
-*Step 2: Query Performance Analysis*
+_Step 2: Query Performance Analysis_
 
 ```sql
 -- Enable pg_stat_statements if not already
@@ -180,7 +183,7 @@ ORDER BY total_time DESC
 LIMIT 20;
 ```
 
-*Step 3: Index Usage Analysis*
+_Step 3: Index Usage Analysis_
 
 ```sql
 -- Find tables doing sequential scans (missing indexes)
@@ -208,24 +211,26 @@ WHERE seq_scan > idx_scan
 ORDER BY seq_tup_read DESC;
 ```
 
-*Step 4: Application-Level Timing*
+_Step 4: Application-Level Timing_
 
 ```javascript
 // Add middleware to log slow endpoints
 const performanceLogger = (req, res, next) => {
   const start = process.hrtime.bigint();
 
-  res.on('finish', () => {
+  res.on("finish", () => {
     const duration = Number(process.hrtime.bigint() - start) / 1e6; // ms
     if (duration > 1000) {
-      console.log(JSON.stringify({
-        type: 'SLOW_REQUEST',
-        method: req.method,
-        path: req.path,
-        duration_ms: duration.toFixed(2),
-        status: res.statusCode,
-        timestamp: new Date().toISOString()
-      }));
+      console.log(
+        JSON.stringify({
+          type: "SLOW_REQUEST",
+          method: req.method,
+          path: req.path,
+          duration_ms: duration.toFixed(2),
+          status: res.statusCode,
+          timestamp: new Date().toISOString(),
+        }),
+      );
     }
   });
   next();
@@ -234,42 +239,45 @@ const performanceLogger = (req, res, next) => {
 app.use(performanceLogger);
 ```
 
-*Step 5: Connection Pool Check*
+_Step 5: Connection Pool Check_
 
 ```javascript
 // Add pool monitoring
 const pool = new Pool({
   max: 20, // Check current setting
   idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000
+  connectionTimeoutMillis: 2000,
 });
 
 // Log pool status periodically
 setInterval(() => {
-  console.log(JSON.stringify({
-    type: 'POOL_STATUS',
-    total: pool.totalCount,
-    idle: pool.idleCount,
-    waiting: pool.waitingCount
-  }));
+  console.log(
+    JSON.stringify({
+      type: "POOL_STATUS",
+      total: pool.totalCount,
+      idle: pool.idleCount,
+      waiting: pool.waitingCount,
+    }),
+  );
 }, 10000);
 ```
 
 **Optimization Recommendations**
 
-| Optimization | Expected Impact | Effort | Priority |
-|--------------|-----------------|--------|----------|
-| Add missing indexes | 50-80% improvement on affected queries | Low | 1 - Do First |
-| Rewrite top 5 slow queries | 30-50% additional improvement | Medium | 2 |
-| Increase connection pool | 20-30% improvement if pool-limited | Low | 3 |
-| Add query result caching | 40-60% for repeated queries | Medium | 4 |
-| Read replica for dashboards | 30-50% DB CPU reduction | High | 5 - If Needed |
+| Optimization                | Expected Impact                        | Effort | Priority      |
+| --------------------------- | -------------------------------------- | ------ | ------------- |
+| Add missing indexes         | 50-80% improvement on affected queries | Low    | 1 - Do First  |
+| Rewrite top 5 slow queries  | 30-50% additional improvement          | Medium | 2             |
+| Increase connection pool    | 20-30% improvement if pool-limited     | Low    | 3             |
+| Add query result caching    | 40-60% for repeated queries            | Medium | 4             |
+| Read replica for dashboards | 30-50% DB CPU reduction                | High   | 5 - If Needed |
 
 **Implementation Plan**
 
-*Week 1: Quick Wins (Low Risk, High Impact)*
+_Week 1: Quick Wins (Low Risk, High Impact)_
 
 Day 1-2: Indexes
+
 ```sql
 -- Based on pg_stat_user_tables analysis, create indexes
 -- Example for common patterns:
@@ -286,18 +294,19 @@ ANALYZE dashboard_widgets;
 ```
 
 Day 3: Connection Pool
+
 ```javascript
 // Increase pool size based on load
 const pool = new Pool({
-  max: 30,  // Up from likely 5-10 default
+  max: 30, // Up from likely 5-10 default
   idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 5000
+  connectionTimeoutMillis: 5000,
 });
 ```
 
-*Expected Result*: 40-60% improvement in response times
+_Expected Result_: 40-60% improvement in response times
 
-*Week 2: Query Optimization (Medium Effort)*
+_Week 2: Query Optimization (Medium Effort)_
 
 Rewrite top 5 queries from pg_stat_statements analysis:
 
@@ -322,12 +331,12 @@ WHERE u.id = $1
 GROUP BY u.id;
 ```
 
-*Expected Result*: Additional 30% improvement
+_Expected Result_: Additional 30% improvement
 
-*Week 3: Caching Layer (If Needed)*
+_Week 3: Caching Layer (If Needed)_
 
 ```javascript
-const Redis = require('ioredis');
+const Redis = require("ioredis");
 const redis = new Redis();
 
 async function getDashboardData(userId) {
@@ -349,31 +358,32 @@ async function getDashboardData(userId) {
 
 **Monitoring Framework**
 
-*Metrics to Track (Add with node-prometheus or similar)*:
+_Metrics to Track (Add with node-prometheus or similar)_:
 
 ```javascript
 // Response time histogram
 const responseTime = new Histogram({
-  name: 'http_response_time_seconds',
-  help: 'Response time in seconds',
-  labelNames: ['method', 'route', 'status'],
-  buckets: [0.1, 0.3, 0.5, 1, 2, 5, 10]
+  name: "http_response_time_seconds",
+  help: "Response time in seconds",
+  labelNames: ["method", "route", "status"],
+  buckets: [0.1, 0.3, 0.5, 1, 2, 5, 10],
 });
 
 // Track percentiles
 // Target: p50 < 200ms, p95 < 500ms, p99 < 1s
 ```
 
-*Alert Thresholds*:
+_Alert Thresholds_:
 
-| Metric | Warning | Critical |
-|--------|---------|----------|
-| p95 response time | >1 second | >3 seconds |
-| Database CPU | >70% sustained | >85% sustained |
+| Metric                  | Warning        | Critical        |
+| ----------------------- | -------------- | --------------- |
+| p95 response time       | >1 second      | >3 seconds      |
+| Database CPU            | >70% sustained | >85% sustained  |
 | Connection pool waiting | >5 connections | >10 connections |
-| Error rate | >1% | >5% |
+| Error rate              | >1%            | >5%             |
 
-*Dashboard Queries* (for Grafana/similar):
+_Dashboard Queries_ (for Grafana/similar):
+
 - Response time percentiles over time
 - Slow query frequency by endpoint
 - Database CPU and connection metrics

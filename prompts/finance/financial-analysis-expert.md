@@ -1,6 +1,7 @@
 # Financial Analysis Expert
 
 ## Metadata
+
 - **ID**: `finance-financial-analysis`
 - **Version**: 2.0.0
 - **Category**: Finance/Investment
@@ -18,6 +19,7 @@ Conduct comprehensive financial analysis and develop investment strategies throu
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Evaluating equity investments or portfolio composition
 - Conducting market and sector analysis
 - Developing investment strategies with risk management
@@ -25,6 +27,7 @@ Conduct comprehensive financial analysis and develop investment strategies throu
 - Analyzing individual stock opportunities
 
 **Anti-Patterns (When NOT to Use):**
+
 - Specific buy/sell timing advice (consult licensed advisor)
 - Tax planning or tax-loss harvesting decisions
 - Compliance-related investment decisions
@@ -44,16 +47,18 @@ Investment decisions require rigorous analysis balancing potential returns with 
 
 <input_handling>
 Required Inputs:
+
 - Investment type and analysis focus (equity, portfolio, market)
 - Investment horizon and risk tolerance
 - Current holdings or assets being analyzed
 
 Optional Inputs (Inferred if not provided):
+
 - Benchmark expectations (default: S&P 500 for US equity)
 - Valuation methodology (match to analysis type)
 - Rebalancing approach (quarterly for long-term portfolios)
 - Tax considerations (taxable vs. tax-advantaged accounts)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive investment analysis with portfolio recommendations and execution strategy.
@@ -69,27 +74,30 @@ Step 5: Develop execution strategy with timing considerations and implementation
 Format: Investment Analysis Report with recommendations
 Length: 900-1300 words
 Structure:
+
 - Market Analysis with key themes and risks
 - Individual Stock/Asset Analysis with valuation metrics
 - Portfolio Risk Assessment with quantified metrics
 - Recommended Portfolio Construction
 - Execution Plan with timeline
 - Success Metrics for monitoring
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Recommendations grounded in quantitative analysis
 - Balanced consideration of growth potential and risk
 - Specific, actionable recommendations with position sizes
 - Clear execution timeline with monitoring plan
 
 Outputs must avoid:
+
 - Generic advice without specific analysis
 - Missing risk assessment or position sizing guidance
 - Recommendations without valuation context
 - Ignoring tax efficiency and liquidity requirements
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Include standard financial metrics (P/E, ROE, FCF yield)
@@ -103,6 +111,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Have $500K portfolio: 70% stocks, 20% bonds, 10% cash. Long-term investor (5+ years), moderate risk tolerance. Considering NVDA, MSFT, GOOGL. Want to beat S&P by 2-3% annually. Taxable account, need $50K liquidity."
 
 ### Output
@@ -110,30 +119,35 @@ Outputs must avoid:
 **Investment Analysis Report**
 
 **Market Analysis**
+
 - S&P 500 Forward P/E: 19.2x (slightly above 10-year average)
 - Key themes: AI infrastructure buildout, healthcare innovation, quality growth
 - Risks: Valuation expansion limited, geopolitical tensions, interest rate volatility
 
 **Individual Stock Analysis**
 
-*NVIDIA (NVDA)*
+_NVIDIA (NVDA)_
+
 - Valuation: 35x forward earnings (justified by 40% growth)
 - Quality Score: 9/10 (ROE: 73%, FCF margin: 36%)
 - Technical: Above 50/200 DMA, RSI neutral at 58
 - Recommendation: BUY on pullbacks to $580-600, 8% position
 
-*Microsoft (MSFT)*
+_Microsoft (MSFT)_
+
 - Valuation: 30x forward P/E, reasonable for quality
 - Quality Score: 9.5/10 (ROE: 43%, FCF yield: 3.2%)
 - AI Position: Azure + OpenAI partnership = strong moat
 - Recommendation: ACCUMULATE up to 10% position
 
-*Alphabet (GOOGL)*
+_Alphabet (GOOGL)_
+
 - Valuation: Most attractive at 23x forward P/E
 - Quality Score: 8.5/10 (ROE: 29%, Zero debt)
 - Recommendation: OVERWEIGHT at 8% position, entry at current levels
 
 **Portfolio Risk Assessment**
+
 - Expected Volatility: 14% (within tolerance)
 - Max Drawdown (95%): -18%
 - Beta to S&P 500: 1.15
@@ -141,13 +155,14 @@ Outputs must avoid:
 
 **Recommended Portfolio Construction**
 
-*Core Holdings (60%)*: SPY 20%, MSFT 10%, GOOGL 8%, NVDA 8%, JNJ 7%, BRK.B 7%
+_Core Holdings (60%)_: SPY 20%, MSFT 10%, GOOGL 8%, NVDA 8%, JNJ 7%, BRK.B 7%
 
-*Satellite Holdings (25%)*: QQQ 10%, XLV 5%, SCHD 5%, VNQ 5%
+_Satellite Holdings (25%)_: QQQ 10%, XLV 5%, SCHD 5%, VNQ 5%
 
-*Fixed Income (15%)*: AGG 10%, VTEB 5%
+_Fixed Income (15%)_: AGG 10%, VTEB 5%
 
 **Execution Plan**
+
 - Week 1: Set limit orders for NVDA ($590), execute GOOGL at market
 - Week 2: Scale into growth positions, implement stop-losses at -15%
 - Ongoing: Add $5K monthly following 60/30/10 allocation

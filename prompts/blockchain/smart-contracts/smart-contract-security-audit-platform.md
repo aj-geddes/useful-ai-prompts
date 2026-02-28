@@ -1,6 +1,7 @@
 # Smart Contract Security Audit Platform
 
 ## Metadata
+
 - **ID**: `blockchain-smart-contract-security-audit-platform`
 - **Version**: 3.0.0
 - **Category**: Blockchain/Smart-Contracts
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Provides systematic smart contract security audits with vulnerability detection, secure coding guidance, and deployment readiness assessment. Covers common attack vectors (reentrancy, oracle manipulation, flash loans), testing strategies, and production-ready security checklists for DeFi, NFT, and DAO contracts.
 
 ## When to Use
+
 - Preparing smart contracts for mainnet deployment
 - Conducting pre-audit security review before hiring auditors
 - Assessing DeFi protocols for economic attack vulnerabilities
@@ -37,17 +40,19 @@ Smart contract security requires understanding both code-level vulnerabilities a
 
 <input_handling>
 Required:
+
 - Blockchain and programming language
 - Contract type and functionality
 - Value at risk (TVL or transaction volume)
 - External contract interactions (oracles, DEXs, bridges)
 
 Optional (with defaults):
+
 - Code available for review (default: checklist-based review)
 - Existing test coverage (default: assume minimal)
 - Prior security reviews (default: first audit)
 - Timeline to deployment (default: 4-8 weeks)
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct comprehensive smart contract security audit.
@@ -58,28 +63,31 @@ Conduct comprehensive smart contract security audit.
 4. Evaluate oracle and external contract integration security
 5. Design security testing strategy with attack simulations
 6. Create deployment checklist and emergency response procedures
-</task>
+   </task>
 
 <output_specification>
 **Smart Contract Security Audit**
+
 - Format: Audit report with severity-rated findings
 - Length: 1500-2500 words
 - Must include: Vulnerability analysis by category, secure code examples, testing recommendations, deployment checklist, monitoring setup, incident response plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Findings include exploitation scenarios and remediation code
 - Testing strategy covers both unit tests and fuzzing
 - Deployment checklist is specific and actionable
 - Economic attack vectors are thoroughly analyzed
 
 Avoid:
+
 - Generic checklists without contract-specific analysis
 - Missing flash loan and MEV considerations
 - Overlooking governance attack surfaces
 - Incomplete oracle manipulation assessment
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Reference specific Solidity version behaviors
@@ -93,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Ethereum DeFi lending protocol (Compound-style). Solidity 0.8.19, OpenZeppelin, Hardhat. Chainlink oracles for pricing, Uniswap V3 for liquidations. Expected $10-50M TVL. Main concerns: oracle manipulation, flash loan attacks, liquidation mechanics. 85% current test coverage. Ran Slither and Mythril. Planning Trail of Bits audit in 6 weeks.
 
 ### Output
@@ -102,6 +111,7 @@ Ethereum DeFi lending protocol (Compound-style). Solidity 0.8.19, OpenZeppelin, 
 ### Critical Risk Areas
 
 **1. Oracle Manipulation (CRITICAL)**
+
 ```
 Attack Vector: Flash loan price manipulation for unfair liquidations
 Pattern: Borrow flash loan -> Trade on DEX -> Trigger liquidation
@@ -115,6 +125,7 @@ Specific Checks:
 ```
 
 **2. Flash Loan Attacks (CRITICAL)**
+
 ```
 Attack Patterns:
 - Single-transaction collateral manipulation
@@ -129,6 +140,7 @@ Mitigation:
 ```
 
 **3. Liquidation Vulnerabilities (HIGH)**
+
 ```
 Risk Scenarios:
 - Sandwich attacks on liquidation transactions
@@ -145,6 +157,7 @@ Protections:
 ## Code Review Findings
 
 **Access Control Pattern**
+
 ```solidity
 // SECURE: Timelock + validation + events
 function setLiquidationThreshold(uint256 _threshold)
@@ -168,6 +181,7 @@ function setLiquidationThreshold(uint256 _t) external onlyOwner {
 ```
 
 **Reentrancy Protection (CEI Pattern)**
+
 ```solidity
 // SECURE: Checks-Effects-Interactions
 function withdraw(uint256 amount) external nonReentrant {
@@ -186,6 +200,7 @@ function withdraw(uint256 amount) external nonReentrant {
 ```
 
 **Oracle Security**
+
 ```solidity
 function getAssetPrice(address asset) public view returns (uint256) {
     AggregatorV3Interface feed = priceFeeds[asset];
@@ -216,23 +231,25 @@ function getAssetPrice(address asset) public view returns (uint256) {
 ## Testing Strategy
 
 **Unit Test Requirements (Target: 100%)**
+
 ```javascript
 describe("Liquidation Security", () => {
-    it("prevents liquidation below threshold", async () => {
-        // Test collateral ratio enforcement
-    });
+  it("prevents liquidation below threshold", async () => {
+    // Test collateral ratio enforcement
+  });
 
-    it("handles oracle manipulation attempts", async () => {
-        // Mock extreme price swings, verify circuit breakers
-    });
+  it("handles oracle manipulation attempts", async () => {
+    // Mock extreme price swings, verify circuit breakers
+  });
 
-    it("enforces partial liquidation limits", async () => {
-        // Verify max 50% liquidation per transaction
-    });
+  it("enforces partial liquidation limits", async () => {
+    // Verify max 50% liquidation per transaction
+  });
 });
 ```
 
 **Fuzz Testing (Echidna)**
+
 ```solidity
 contract LendingInvariants {
     function echidna_deposits_match_balance() public returns (bool) {
@@ -246,6 +263,7 @@ contract LendingInvariants {
 ```
 
 **Mainnet Fork Integration Tests**
+
 - Real Chainlink oracle data validation
 - Uniswap liquidation execution paths
 - Market stress scenario simulation
@@ -253,6 +271,7 @@ contract LendingInvariants {
 ## Deployment Checklist
 
 **Pre-Deployment**
+
 - [ ] 100% test coverage on critical paths
 - [ ] Slither: 0 high/medium findings
 - [ ] Mythril: 0 critical findings
@@ -260,6 +279,7 @@ contract LendingInvariants {
 - [ ] External audit completed and findings addressed
 
 **Deployment Configuration**
+
 - [ ] Multi-sig wallet deployed (3/5 signers)
 - [ ] 48-hour timelock for parameter changes
 - [ ] Emergency pause tested on testnet
@@ -267,24 +287,27 @@ contract LendingInvariants {
 - [ ] Bug bounty program launched
 
 **Post-Deployment Monitoring**
+
 ```javascript
 // Alert triggers
 const alerts = [
-    { metric: "price_deviation", threshold: ">10%", action: "page_oncall" },
-    { metric: "large_liquidation", threshold: ">$100K", action: "slack_alert" },
-    { metric: "admin_function_call", threshold: "any", action: "audit_log" }
+  { metric: "price_deviation", threshold: ">10%", action: "page_oncall" },
+  { metric: "large_liquidation", threshold: ">$100K", action: "slack_alert" },
+  { metric: "admin_function_call", threshold: "any", action: "audit_log" },
 ];
 ```
 
 ## Emergency Response
 
 **Incident Playbook**
+
 1. **Detect**: Automated alerts + community reports
 2. **Assess**: Severity classification, impact scope
 3. **Respond**: Emergency pause, communication, fix development
 4. **Recover**: Deploy fix, gradual unpause, post-mortem
 
 **War Room Contacts**
+
 - Security Lead (primary oncall)
 - Multi-sig signers (3 required for emergency actions)
 - Audit firm hotline
@@ -293,6 +316,7 @@ const alerts = [
 ---
 
 ## Related Prompts
+
 - [Enterprise Blockchain Integration Expert](../enterprise-blockchain-integration-expert.md)
 - [NFT Marketplace Development Platform](../nft-platforms/nft-marketplace-development-platform.md)
 - [Cross-Chain Interoperability Bridge Platform](../cross-chain/cross-chain-interoperability-bridge-platform.md)

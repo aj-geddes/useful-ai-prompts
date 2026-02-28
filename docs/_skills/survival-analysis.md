@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Analyze time-to-event data, calculate survival probabilities, and compare
+date: "2025-01-01"
+description:
+  Analyze time-to-event data, calculate survival probabilities, and compare
   groups using Kaplan-Meier and Cox proportional hazards models
 layout: skill
 slug: survival-analysis
 tags:
-- data
+  - data
 title: Survival Analysis
 ---
 

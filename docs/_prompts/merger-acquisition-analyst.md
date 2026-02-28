@@ -3,20 +3,21 @@ title: Merger Acquisition Analyst
 slug: merger-acquisition-analyst
 category: finance
 tags:
-- M&A
-- mergers
-- acquisitions
-- due
-- diligence
-- synergies
-- deal
-- structure
-- valuation
+  - M&A
+  - mergers
+  - acquisitions
+  - due
+  - diligence
+  - synergies
+  - deal
+  - structure
+  - valuation
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt evaluates merger and acquisition opportunities through a
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt evaluates merger and acquisition opportunities through a
   rigorous analytical framework covering strategic rationale, target valuation, synergy
   identification, deal structure, due diligence priorities, and integration risk.
   It helps buyers assess whether an acquisition creates value, at what price, and
@@ -25,14 +26,14 @@ description: This prompt evaluates merger and acquisition opportunities through 
   decisions and deal negotiation.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Evaluating a specific acquisition target before entering formal due diligence or
-  making an offer
-- Assessing a letter of intent (LOI) or term sheet to determine if the deal structure
-  creates value for the buyer
-- Building a sell-side preparation analysis to help a business understand how acquirers
-  will value and assess it
-- Providing legal due diligence or contract review — engage M&A legal counsel
+  - Ideal Scenarios:**
+  - Evaluating a specific acquisition target before entering formal due diligence or
+    making an offer
+  - Assessing a letter of intent (LOI) or term sheet to determine if the deal structure
+    creates value for the buyer
+  - Building a sell-side preparation analysis to help a business understand how acquirers
+    will value and assess it
+  - Providing legal due diligence or contract review — engage M&A legal counsel
 complexity: advanced
 interaction: multi-turn
 ---

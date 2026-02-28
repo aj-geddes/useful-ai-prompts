@@ -1,6 +1,7 @@
 # Career Advancement Strategist
 
 ## Metadata
+
 - **ID**: `career-advancement-strategist`
 - **Version**: 1.0.0
 - **Category**: Career Development
@@ -18,12 +19,14 @@ Creates strategic plans for career advancement including promotion readiness ass
 ## When to Use
 
 **Scenarios:**
+
 - Preparing for promotion conversations with management
 - Planning career progression within current organization
 - Building leadership capabilities for next-level roles
 - Navigating organizational dynamics and visibility
 
 **Anti-patterns:**
+
 - External job searching (use job search prompts)
 - Resume or LinkedIn profile writing
 - Interview preparation for new roles
@@ -111,6 +114,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Current: Senior Marketing Manager at B2B tech company (300 employees), 2.5 years in role, 6 years at company. Target: VP Marketing within 12-18 months. Strengths: digital marketing expertise, strong team builder (manage 4 people), consistent exceeds expectations ratings. Development areas: strategic planning at company level, executive communication, managing managers. Relationship with CMO is good (monthly 1:1s) but limited visibility to CEO and other C-suite. Company growing 40% YoY, CMO supportive but hasn't explicitly discussed promotion path."
 
 ### Output
@@ -120,6 +124,7 @@ Outputs must avoid:
 **Overall Readiness Score: 70%** - Strong foundation, specific gaps to address
 
 ### Skills Analysis
+
 ```
 READY FOR VP LEVEL:
 + Team Leadership: Managing 4 direct reports successfully
@@ -135,6 +140,7 @@ DEVELOPMENT NEEDED:
 ```
 
 ### Visibility Analysis
+
 ```
 CURRENT STATE:
 + CMO Relationship: Good, monthly 1:1s, supportive
@@ -150,16 +156,19 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ### Phase 1: Quick Wins (Days 1-90)
 
 **Month 1: Signal Intent & Assess**
+
 - Schedule career conversation with CMO (explicit: "I want to discuss my path to VP")
 - Request 360 feedback from peers, direct reports, and cross-functional partners
 - Identify one high-visibility strategic project to volunteer for
 
 **Month 2: Build Strategic Foundation**
+
 - Volunteer for company-wide strategic initiative (not just marketing)
 - Join cross-functional project team with C-suite visibility
 - Begin tracking business metrics beyond marketing KPIs
 
 **Month 3: Demonstrate Strategic Value**
+
 - Present first strategic recommendation to leadership team
 - Establish relationship with 2-3 peer directors in other functions
 - Complete initial executive communication coaching session
@@ -167,16 +176,19 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ### Phase 2: Capability Building (Months 4-9)
 
 **Strategic Skill Development:**
+
 - Lead annual marketing planning process with business alignment focus
 - Complete executive education program (Stanford LEAD or similar)
 - Present quarterly business review (not just marketing metrics)
 
 **Managing Managers Preparation:**
+
 - Request expanded scope: add second team or cross-functional dotted lines
 - Shadow VP-level leaders in other functions (learn from their approach)
 - Mentor a high-potential IC to practice development conversations
 
 **Executive Visibility Building:**
+
 - Establish monthly strategic update to CEO (through CMO initially, then direct)
 - Lead company-wide initiative with measurable business impact
 - Represent company at 2-3 industry events (speaking if possible)
@@ -184,11 +196,13 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ### Phase 3: Position for Promotion (Months 10-15)
 
 **Demonstrate VP Readiness:**
+
 - Deliver measurable results on strategic initiative
 - Secure formal recommendation from CMO with specific timeline
 - Present business case for VP role (scope, impact, team needs)
 
 **Navigate Promotion Process:**
+
 - Understand decision timeline (annual review, ad-hoc, board approval?)
 - Align with HR on formal promotion criteria
 - Prepare for potential interview with CEO/board if required
@@ -196,22 +210,28 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ## LEADERSHIP DEVELOPMENT FRAMEWORK
 
 ### Priority 1: Executive Presence & Communication
+
 **Gap:** Strong with peers, needs C-suite confidence
 **Actions:**
+
 - Executive coaching (3-6 months) focused on board-level communication
 - Practice strategic presentations with CMO feedback
 - Volunteer for all-hands presentations on strategic topics
 
 ### Priority 2: Strategic Thinking
+
 **Gap:** Tactical excellence, strategic planning developing
 **Actions:**
+
 - Lead cross-functional strategic planning session
 - Monthly industry trend analysis shared with leadership
 - Participate in strategic planning for adjacent function
 
 ### Priority 3: Managing Managers
+
 **Gap:** No direct experience yet
 **Actions:**
+
 - Request expanded scope with manager reporting to you
 - Study VP-level org design decisions with CMO
 - Lead manager development program for marketing
@@ -221,21 +241,25 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ### Key Relationships to Build
 
 **CMO (Current: Good, Target: Champion)**
+
 - Weekly strategic check-ins (not just tactical updates)
 - Request involvement in CMO's strategic planning
 - Offer to support CMO's key initiatives visibly
 
 **CEO (Current: Limited, Target: Known Performer)**
+
 - Quarterly strategic briefings (with CMO sponsorship initially)
 - Volunteer for CEO-sponsored company initiatives
 - Create informal interaction opportunities (company events, travel)
 
 **Peer Directors (Current: Moderate, Target: Allies)**
+
 - Cross-functional lunch meetings monthly
 - Joint initiatives with Sales, Product, Customer Success
 - Visible collaboration that C-suite observes
 
 ### Visibility Tactics
+
 - Present at leadership team meetings quarterly
 - Lead company-wide initiative with CEO visibility
 - Speak at industry conferences (builds internal credibility too)
@@ -244,24 +268,28 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ## IMPLEMENTATION TIMELINE
 
 **Days 1-30:**
+
 - [ ] Schedule CMO career conversation with explicit VP discussion
 - [ ] Identify and volunteer for high-visibility strategic project
 - [ ] Register for executive education program
 - [ ] Start tracking cross-functional business metrics
 
 **Days 31-60:**
+
 - [ ] Complete 360 feedback collection and analysis
 - [ ] Launch strategic initiative with cross-functional team
 - [ ] Establish peer relationships with 3 directors
 - [ ] Begin executive communication coaching
 
 **Days 61-90:**
+
 - [ ] Present first strategic recommendation to leadership
 - [ ] Complete 360 debrief and development plan with CMO
 - [ ] Secure speaking opportunity or company-wide initiative lead
 - [ ] Document progress and recalibrate timeline
 
 **6-Month Checkpoint:**
+
 - Leading strategic cross-functional initiative with measurable progress
 - Regular strategic communication with C-suite (not just CMO)
 - Measurable business impact beyond marketing metrics
@@ -270,5 +298,6 @@ GAP: Strong performer but not positioned as "next VP" in leadership's minds
 ---
 
 ## Related Prompts
+
 - [Interview Preparation Coach](interview-preparation-coach.md) - If external move needed
 - [Professional Networking Strategist](professional-networking-strategist.md) - Building strategic relationships

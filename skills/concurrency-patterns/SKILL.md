@@ -46,7 +46,7 @@ class PromisePool {
   }
 
   private async waitForSlot(): Promise<void> {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       const checkSlot = () => {
         if (this.active < this.concurrency) {
           resolve();
@@ -58,21 +58,17 @@ class PromisePool {
     });
   }
 
-  async map<T, R>(
-    items: T[],
-    fn: (item: T) => Promise<R>
-  ): Promise<R[]> {
-    return Promise.all(
-      items.map(item => this.add(() => fn(item)))
-    );
+  async map<T, R>(items: T[], fn: (item: T) => Promise<R>): Promise<R[]> {
+    return Promise.all(items.map((item) => this.add(() => fn(item))));
   }
 }
 
 // Usage
 const pool = new PromisePool(5);
 
-const urls = Array.from({ length: 100 }, (_, i) =>
-  `https://api.example.com/item/${i}`
+const urls = Array.from(
+  { length: 100 },
+  (_, i) => `https://api.example.com/item/${i}`,
 );
 
 const results = await pool.map(urls, async (url) => {
@@ -94,7 +90,7 @@ class Mutex {
       return;
     }
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.queue.push(resolve);
     });
   }
@@ -132,7 +128,7 @@ class Semaphore {
       return;
     }
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.queue.push(resolve);
     });
   }
@@ -163,7 +159,7 @@ let counter = 0;
 async function incrementCounter() {
   await mutex.runExclusive(async () => {
     const current = counter;
-    await new Promise(resolve => setTimeout(resolve, 10));
+    await new Promise((resolve) => setTimeout(resolve, 10));
     counter = current + 1;
   });
 }
@@ -186,7 +182,7 @@ async function executeQuery(query: string) {
 ### 3. **Worker Pool (Node.js)**
 
 ```typescript
-import { Worker } from 'worker_threads';
+import { Worker } from "worker_threads";
 
 interface Task<T> {
   id: string;
@@ -202,7 +198,7 @@ class WorkerPool {
 
   constructor(
     private workerScript: string,
-    private poolSize: number
+    private poolSize: number,
   ) {
     this.initializeWorkers();
   }
@@ -211,12 +207,12 @@ class WorkerPool {
     for (let i = 0; i < this.poolSize; i++) {
       const worker = new Worker(this.workerScript);
 
-      worker.on('message', (result) => {
+      worker.on("message", (result) => {
         this.handleWorkerMessage(worker, result);
       });
 
-      worker.on('error', (error) => {
-        console.error('Worker error:', error);
+      worker.on("error", (error) => {
+        console.error("Worker error:", error);
       });
 
       this.workers.push(worker);
@@ -230,7 +226,7 @@ class WorkerPool {
         id: Math.random().toString(36),
         data,
         resolve,
-        reject
+        reject,
       };
 
       this.taskQueue.push(task);
@@ -245,7 +241,7 @@ class WorkerPool {
 
       worker.postMessage({
         taskId: task.id,
-        data: task.data
+        data: task.data,
       });
 
       (worker as any).currentTask = task;
@@ -269,9 +265,7 @@ class WorkerPool {
   }
 
   async terminate(): Promise<void> {
-    await Promise.all(
-      this.workers.map(worker => worker.terminate())
-    );
+    await Promise.all(this.workers.map((worker) => worker.terminate()));
   }
 }
 
@@ -518,7 +512,7 @@ class Channel<T> {
 
   async send(value: T): Promise<void> {
     if (this.closed) {
-      throw new Error('Channel is closed');
+      throw new Error("Channel is closed");
     }
 
     if (this.receivers.length > 0) {
@@ -532,7 +526,7 @@ class Channel<T> {
       return;
     }
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.senders.push({ value, resolve });
     });
   }
@@ -560,14 +554,14 @@ class Channel<T> {
       return undefined;
     }
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.receivers.push(resolve);
     });
   }
 
   close(): void {
     this.closed = true;
-    this.receivers.forEach(receiver => receiver(undefined as any));
+    this.receivers.forEach((receiver) => receiver(undefined as any));
     this.receivers = [];
   }
 }
@@ -594,16 +588,14 @@ async function example() {
     }
   }
 
-  await Promise.all([
-    producer(),
-    consumer()
-  ]);
+  await Promise.all([producer(), consumer()]);
 }
 ```
 
 ## Best Practices
 
 ### ✅ DO
+
 - Use proper synchronization primitives
 - Limit concurrency to avoid resource exhaustion
 - Handle errors in concurrent operations
@@ -613,6 +605,7 @@ async function example() {
 - Document thread-safety guarantees
 
 ### ❌ DON'T
+
 - Share mutable state without synchronization
 - Use sleep/polling for coordination
 - Create unlimited threads/workers

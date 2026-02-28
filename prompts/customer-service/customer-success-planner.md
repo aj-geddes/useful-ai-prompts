@@ -1,6 +1,7 @@
 # Customer Success Planner
 
 ## Metadata
+
 - **ID**: `customer-service-customer-success-planner`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a customer success specialist who designs onboarding journ
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing or overhauling a B2B customer onboarding program with high early-stage churn
 - Building a customer health scoring model to prioritize CS team attention across a large book of business
 - Creating structured expansion playbooks for CSMs managing renewal and upsell conversations
 
 **Anti-patterns (Don't Use For):**
+
 - Consumer (B2C) customer management at scale — health scoring and CSM-led plays require B2B economics to be viable
 - Teams without product usage data access — health scoring without behavioral signals is largely guesswork
 
@@ -71,22 +74,24 @@ Expansion conversations should follow demonstrated value, not calendar schedule.
 ## Example Usage
 
 ### Input
+
 "B2B project management SaaS, $49/seat/month. Typical customer: operations manager, team of 5-20 users, mid-market company. Churn is 3.8% monthly, mostly in first 90 days. CSM team: 4 people managing 280 accounts. No health score today — CSMs go by gut. NRR target: 115%. We do have product usage data."
 
 ### Output
+
 **Customer Success Program Design**
 
 ---
 
 **Onboarding Milestone Map**
 
-| Milestone | Success Criteria | Timeline | CSM Action |
-|---|---|---|---|
-| 1. Setup Complete | Admin has configured workspace, added logo, created first project | Day 1-3 | Send setup guide; check in at Day 3 if milestone not hit |
-| 2. Team Activated | 3+ team members have logged in and completed a task | Day 7-14 | Send "team invite" best practices email; offer 30-min team walkthrough call |
-| 3. First Workflow Live | A recurring workflow (weekly standup, sprint board, or intake form) is active | Day 14-21 | Proactive check-in call or video; share template for customer's use case |
-| 4. Time to Value | Team completes 3 consecutive weeks using the platform for a core workflow without prompting | Day 21-45 | Send ROI summary; request case study or referral |
-| 5. Expansion Ready | 5+ users, >80% weekly active, and admin has explored integrations | Day 60-90 | Schedule business review; introduce seat expansion or integration add-on |
+| Milestone              | Success Criteria                                                                            | Timeline  | CSM Action                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------- |
+| 1. Setup Complete      | Admin has configured workspace, added logo, created first project                           | Day 1-3   | Send setup guide; check in at Day 3 if milestone not hit                    |
+| 2. Team Activated      | 3+ team members have logged in and completed a task                                         | Day 7-14  | Send "team invite" best practices email; offer 30-min team walkthrough call |
+| 3. First Workflow Live | A recurring workflow (weekly standup, sprint board, or intake form) is active               | Day 14-21 | Proactive check-in call or video; share template for customer's use case    |
+| 4. Time to Value       | Team completes 3 consecutive weeks using the platform for a core workflow without prompting | Day 21-45 | Send ROI summary; request case study or referral                            |
+| 5. Expansion Ready     | 5+ users, >80% weekly active, and admin has explored integrations                           | Day 60-90 | Schedule business review; introduce seat expansion or integration add-on    |
 
 Time to Value is confirmed by product data (Day 21-45 active streaks), not customer self-report.
 
@@ -94,15 +99,15 @@ Time to Value is confirmed by product data (Day 21-45 active streaks), not custo
 
 **Health Score Framework**
 
-| Signal Category | Signal | Weight | Green | Yellow | Red |
-|---|---|---|---|---|---|
-| Usage | Weekly active users (% of licensed seats) | 25% | >70% | 40-70% | <40% |
-| Usage | Core feature engagement (workflow creation last 14 days) | 20% | Active | Partial | None |
-| Engagement | CSM meeting attended last 60 days | 15% | Yes | Scheduled | No |
-| Support | Support tickets in last 30 days | 10% | 0-2 | 3-5 | 6+ |
-| Support | Escalation or complaint in last 60 days | 10% | None | 1 | 2+ |
-| Relationship | Exec sponsor identified | 10% | Yes | Unclear | No |
-| Financial | Renewal date <90 days out with no QBR scheduled | 10% | N/A | — | Flag |
+| Signal Category | Signal                                                   | Weight | Green  | Yellow    | Red  |
+| --------------- | -------------------------------------------------------- | ------ | ------ | --------- | ---- |
+| Usage           | Weekly active users (% of licensed seats)                | 25%    | >70%   | 40-70%    | <40% |
+| Usage           | Core feature engagement (workflow creation last 14 days) | 20%    | Active | Partial   | None |
+| Engagement      | CSM meeting attended last 60 days                        | 15%    | Yes    | Scheduled | No   |
+| Support         | Support tickets in last 30 days                          | 10%    | 0-2    | 3-5       | 6+   |
+| Support         | Escalation or complaint in last 60 days                  | 10%    | None   | 1         | 2+   |
+| Relationship    | Exec sponsor identified                                  | 10%    | Yes    | Unclear   | No   |
+| Financial       | Renewal date <90 days out with no QBR scheduled          | 10%    | N/A    | —         | Flag |
 
 Composite score: 0-59 = Red, 60-79 = Yellow, 80-100 = Green. Review weekly in CSM team meeting.
 
@@ -131,32 +136,34 @@ Step 3: Request referral, case study, or G2 review as relationship investment.
 
 **Expansion Signals**
 
-| Signal | Timing | CSM Action |
-|---|---|---|
-| Seat utilization >90% for 2+ weeks | Any time | Proactively reach out about seat expansion |
-| Admin explores integration settings | Day 30+ | Send integration guide; offer setup call |
+| Signal                                             | Timing   | CSM Action                                                       |
+| -------------------------------------------------- | -------- | ---------------------------------------------------------------- |
+| Seat utilization >90% for 2+ weeks                 | Any time | Proactively reach out about seat expansion                       |
+| Admin explores integration settings                | Day 30+  | Send integration guide; offer setup call                         |
 | New department or team mentioned in support ticket | Any time | Note in CRM; introduce to multi-team use case at next touchpoint |
-| Customer mentions competitive tool still in use | QBR | Present consolidation ROI analysis |
+| Customer mentions competitive tool still in use    | QBR      | Present consolidation ROI analysis                               |
 
 ---
 
 **CSM Capacity Model**
 
-| Tier | ARR/Account | Accounts per CSM | Min Engagement Cadence |
-|---|---|---|---|
-| Enterprise | >$25k | 25-40 | Monthly call + QBR |
-| Mid-Market | $5k-$25k | 80-120 | Quarterly call + digital touchpoints |
-| SMB Scaled | <$5k | 150-200 | Digital-led; CSM intervenes on Red only |
+| Tier       | ARR/Account | Accounts per CSM | Min Engagement Cadence                  |
+| ---------- | ----------- | ---------------- | --------------------------------------- |
+| Enterprise | >$25k       | 25-40            | Monthly call + QBR                      |
+| Mid-Market | $5k-$25k    | 80-120           | Quarterly call + digital touchpoints    |
+| SMB Scaled | <$5k        | 150-200          | Digital-led; CSM intervenes on Red only |
 
 Current team of 4 CSMs can support up to 160 mid-market accounts at the recommended cadence. At 280 accounts, you are 1 CSM understaffed for mid-market tier quality. Prioritize hiring or move bottom 80 accounts to scaled/digital model.
 
 ---
 
 ## Variations
+
 - **Digital CS Mode**: Design a scaled customer success program using automated email sequences, in-app nudges, and community resources to manage 500+ accounts without proportional CSM headcount
 - **Enterprise QBR Mode**: Build a quarterly business review template and facilitation guide for high-touch enterprise accounts with executive stakeholders
 
 ## Related Prompts
+
 - [Customer Journey Mapper](customer-journey-mapper.md) - Mapping the full customer lifecycle that CS programs support
 - [Retention Specialist](retention-specialist.md) - Save plays when health score drops to critical level
 - [Voice of Customer Analyst](voice-of-customer-analyst.md) - Feeding CS insights back into the VoC program

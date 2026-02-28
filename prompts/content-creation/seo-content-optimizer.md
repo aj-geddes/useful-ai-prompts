@@ -1,6 +1,7 @@
 # SEO Content Optimizer
 
 ## Metadata
+
 - **ID**: `content-creation-seo-optimizer`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Running a personal finance blog for millennials. Currently getting 5K monthly visitors, want to grow to 25K. Focus on budgeting, investing basics, and debt payoff. Domain is 2 years old with moderate authority.
 ```
 
 ### Output
+
 ```
 **SEO Content Strategy: Personal Finance Blog**
 

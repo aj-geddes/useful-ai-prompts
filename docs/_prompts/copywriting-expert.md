@@ -3,37 +3,38 @@ title: Copywriting Expert
 slug: copywriting-expert
 category: creative
 tags:
-- copywriting
-- direct
-- response
-- landing
-- pages
-- email
-- sequences
-- conversion
-- optimization
-- ad
-- copy
-- sales
-- copy
+  - copywriting
+  - direct
+  - response
+  - landing
+  - pages
+  - email
+  - sequences
+  - conversion
+  - optimization
+  - ad
+  - copy
+  - sales
+  - copy
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a direct response copywriting expert persona that
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a direct response copywriting expert persona that
   writes high-converting copy for landing pages, email sequences, ads, and sales pages.
   It applies proven copywriting frameworks — AIDA, PAS, Before-After-Bridge — alongside
   deep understanding of audience psychology and conversion optimization. Use it to
   write persuasive copy that moves readers from attention to action across any channel.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Writing a landing page or sales page for a product launch, lead magnet, or offer
-- Developing an email welcome or nurture sequence that converts subscribers to customers
-- Crafting ad copy for Facebook, Google, or LinkedIn campaigns that needs to drive
-  clicks and conversions
-- Writing long-form brand narrative or editorial content — use the brand story or
-  creative writing prompts
+  - Ideal Scenarios:**
+  - Writing a landing page or sales page for a product launch, lead magnet, or offer
+  - Developing an email welcome or nurture sequence that converts subscribers to customers
+  - Crafting ad copy for Facebook, Google, or LinkedIn campaigns that needs to drive
+    clicks and conversions
+  - Writing long-form brand narrative or editorial content — use the brand story or
+    creative writing prompts
 complexity: intermediate
 interaction: multi-turn
 ---

@@ -35,148 +35,149 @@ Contract testing verifies that APIs honor their contracts between consumers and 
 ### 1. **Pact for Consumer-Driven Contracts**
 
 #### Consumer Test (Jest/Pact)
+
 ```typescript
 // tests/pact/user-service.pact.test.ts
-import { PactV3, MatchersV3 } from '@pact-foundation/pact';
-import { UserService } from '../../src/services/UserService';
+import { PactV3, MatchersV3 } from "@pact-foundation/pact";
+import { UserService } from "../../src/services/UserService";
 
 const { like, eachLike, iso8601DateTimeWithMillis } = MatchersV3;
 
 const provider = new PactV3({
-  consumer: 'OrderService',
-  provider: 'UserService',
+  consumer: "OrderService",
+  provider: "UserService",
   port: 1234,
-  dir: './pacts',
+  dir: "./pacts",
 });
 
-describe('User Service Contract', () => {
-  const userService = new UserService('http://localhost:1234');
+describe("User Service Contract", () => {
+  const userService = new UserService("http://localhost:1234");
 
-  describe('GET /users/:id', () => {
-    test('returns user when found', async () => {
+  describe("GET /users/:id", () => {
+    test("returns user when found", async () => {
       await provider
-        .given('user with ID 123 exists')
-        .uponReceiving('a request for user 123')
+        .given("user with ID 123 exists")
+        .uponReceiving("a request for user 123")
         .withRequest({
-          method: 'GET',
-          path: '/users/123',
+          method: "GET",
+          path: "/users/123",
           headers: {
-            Authorization: like('Bearer token'),
+            Authorization: like("Bearer token"),
           },
         })
         .willRespondWith({
           status: 200,
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: {
-            id: like('123'),
-            email: like('user@example.com'),
-            name: like('John Doe'),
+            id: like("123"),
+            email: like("user@example.com"),
+            name: like("John Doe"),
             age: like(30),
-            createdAt: iso8601DateTimeWithMillis('2024-01-01T00:00:00.000Z'),
-            role: like('user'),
+            createdAt: iso8601DateTimeWithMillis("2024-01-01T00:00:00.000Z"),
+            role: like("user"),
           },
         })
         .executeTest(async (mockServer) => {
-          const user = await userService.getUser('123');
+          const user = await userService.getUser("123");
 
-          expect(user.id).toBe('123');
+          expect(user.id).toBe("123");
           expect(user.email).toBeDefined();
           expect(user.name).toBeDefined();
         });
     });
 
-    test('returns 404 when user not found', async () => {
+    test("returns 404 when user not found", async () => {
       await provider
-        .given('user with ID 999 does not exist')
-        .uponReceiving('a request for non-existent user')
+        .given("user with ID 999 does not exist")
+        .uponReceiving("a request for non-existent user")
         .withRequest({
-          method: 'GET',
-          path: '/users/999',
+          method: "GET",
+          path: "/users/999",
         })
         .willRespondWith({
           status: 404,
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: {
-            error: like('User not found'),
-            code: like('USER_NOT_FOUND'),
+            error: like("User not found"),
+            code: like("USER_NOT_FOUND"),
           },
         })
         .executeTest(async (mockServer) => {
-          await expect(userService.getUser('999')).rejects.toThrow(
-            'User not found'
+          await expect(userService.getUser("999")).rejects.toThrow(
+            "User not found",
           );
         });
     });
   });
 
-  describe('POST /users', () => {
-    test('creates new user', async () => {
+  describe("POST /users", () => {
+    test("creates new user", async () => {
       await provider
-        .given('user does not exist')
-        .uponReceiving('a request to create user')
+        .given("user does not exist")
+        .uponReceiving("a request to create user")
         .withRequest({
-          method: 'POST',
-          path: '/users',
+          method: "POST",
+          path: "/users",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: {
-            email: like('newuser@example.com'),
-            name: like('New User'),
+            email: like("newuser@example.com"),
+            name: like("New User"),
             age: like(25),
           },
         })
         .willRespondWith({
           status: 201,
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: {
-            id: like('new-123'),
-            email: like('newuser@example.com'),
-            name: like('New User'),
+            id: like("new-123"),
+            email: like("newuser@example.com"),
+            name: like("New User"),
             age: like(25),
             createdAt: iso8601DateTimeWithMillis(),
-            role: 'user',
+            role: "user",
           },
         })
         .executeTest(async (mockServer) => {
           const user = await userService.createUser({
-            email: 'newuser@example.com',
-            name: 'New User',
+            email: "newuser@example.com",
+            name: "New User",
             age: 25,
           });
 
           expect(user.id).toBeDefined();
-          expect(user.email).toBe('newuser@example.com');
+          expect(user.email).toBe("newuser@example.com");
         });
     });
   });
 
-  describe('GET /users/:id/orders', () => {
-    test('returns user orders', async () => {
+  describe("GET /users/:id/orders", () => {
+    test("returns user orders", async () => {
       await provider
-        .given('user 123 has orders')
-        .uponReceiving('a request for user orders')
+        .given("user 123 has orders")
+        .uponReceiving("a request for user orders")
         .withRequest({
-          method: 'GET',
-          path: '/users/123/orders',
+          method: "GET",
+          path: "/users/123/orders",
           query: {
-            limit: '10',
-            offset: '0',
+            limit: "10",
+            offset: "0",
           },
         })
         .willRespondWith({
           status: 200,
           body: {
             orders: eachLike({
-              id: like('order-1'),
+              id: like("order-1"),
               total: like(99.99),
-              status: like('completed'),
+              status: like("completed"),
               createdAt: iso8601DateTimeWithMillis(),
             }),
             total: like(5),
@@ -184,7 +185,7 @@ describe('User Service Contract', () => {
           },
         })
         .executeTest(async (mockServer) => {
-          const response = await userService.getUserOrders('123', {
+          const response = await userService.getUserOrders("123", {
             limit: 10,
             offset: 0,
           });
@@ -199,14 +200,15 @@ describe('User Service Contract', () => {
 ```
 
 #### Provider Test (Verify Contract)
+
 ```typescript
 // tests/pact/user-service.provider.test.ts
-import { Verifier } from '@pact-foundation/pact';
-import path from 'path';
-import { app } from '../../src/app';
-import { setupTestDB, teardownTestDB } from '../helpers/db';
+import { Verifier } from "@pact-foundation/pact";
+import path from "path";
+import { app } from "../../src/app";
+import { setupTestDB, teardownTestDB } from "../helpers/db";
 
-describe('Pact Provider Verification', () => {
+describe("Pact Provider Verification", () => {
   let server;
 
   beforeAll(async () => {
@@ -219,30 +221,30 @@ describe('Pact Provider Verification', () => {
     server.close();
   });
 
-  test('validates the expectations of OrderService', () => {
+  test("validates the expectations of OrderService", () => {
     return new Verifier({
-      provider: 'UserService',
-      providerBaseUrl: 'http://localhost:3001',
+      provider: "UserService",
+      providerBaseUrl: "http://localhost:3001",
       pactUrls: [
-        path.resolve(__dirname, '../../pacts/orderservice-userservice.json'),
+        path.resolve(__dirname, "../../pacts/orderservice-userservice.json"),
       ],
       // Provider state setup
       stateHandlers: {
-        'user with ID 123 exists': async () => {
-          await createTestUser({ id: '123', name: 'John Doe' });
+        "user with ID 123 exists": async () => {
+          await createTestUser({ id: "123", name: "John Doe" });
         },
-        'user with ID 999 does not exist': async () => {
-          await deleteUser('999');
+        "user with ID 999 does not exist": async () => {
+          await deleteUser("999");
         },
-        'user 123 has orders': async () => {
-          await createTestUser({ id: '123' });
-          await createTestOrder({ userId: '123' });
+        "user 123 has orders": async () => {
+          await createTestUser({ id: "123" });
+          await createTestOrder({ userId: "123" });
         },
       },
     })
       .verifyProvider()
       .then((output) => {
-        console.log('Pact Verification Complete!');
+        console.log("Pact Verification Complete!");
       });
   });
 });
@@ -252,19 +254,17 @@ describe('Pact Provider Verification', () => {
 
 ```typescript
 // tests/contract/openapi.test.ts
-import request from 'supertest';
-import { app } from '../../src/app';
-import OpenAPIValidator from 'express-openapi-validator';
-import fs from 'fs';
-import yaml from 'js-yaml';
+import request from "supertest";
+import { app } from "../../src/app";
+import OpenAPIValidator from "express-openapi-validator";
+import fs from "fs";
+import yaml from "js-yaml";
 
-describe('OpenAPI Contract Validation', () => {
+describe("OpenAPI Contract Validation", () => {
   let validator;
 
   beforeAll(() => {
-    const spec = yaml.load(
-      fs.readFileSync('./openapi.yaml', 'utf8')
-    );
+    const spec = yaml.load(fs.readFileSync("./openapi.yaml", "utf8"));
 
     validator = OpenAPIValidator.middleware({
       apiSpec: spec,
@@ -273,10 +273,8 @@ describe('OpenAPI Contract Validation', () => {
     });
   });
 
-  test('GET /users/:id matches schema', async () => {
-    const response = await request(app)
-      .get('/users/123')
-      .expect(200);
+  test("GET /users/:id matches schema", async () => {
+    const response = await request(app).get("/users/123").expect(200);
 
     // Validate against OpenAPI schema
     expect(response.body).toMatchObject({
@@ -288,16 +286,13 @@ describe('OpenAPI Contract Validation', () => {
     });
   });
 
-  test('POST /users validates request body', async () => {
+  test("POST /users validates request body", async () => {
     const invalidUser = {
-      email: 'invalid-email',  // Should fail validation
-      name: 'Test',
+      email: "invalid-email", // Should fail validation
+      name: "Test",
     };
 
-    await request(app)
-      .post('/users')
-      .send(invalidUser)
-      .expect(400);
+    await request(app).post("/users").send(invalidUser).expect(400);
   });
 });
 ```
@@ -590,6 +585,7 @@ jobs:
 ## Best Practices
 
 ### ✅ DO
+
 - Test contracts from consumer perspective
 - Use matchers for flexible matching
 - Validate schema structure, not specific values
@@ -600,6 +596,7 @@ jobs:
 - Test backward compatibility
 
 ### ❌ DON'T
+
 - Test business logic in contract tests
 - Hard-code specific values in contracts
 - Skip error scenarios

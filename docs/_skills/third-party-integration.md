@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Integrate external APIs and services with error handling, retry logic,
+date: "2025-01-01"
+description:
+  Integrate external APIs and services with error handling, retry logic,
   and data transformation. Use when connecting to payment processors, messaging services,
   analytics platforms, or other third-party providers.
 layout: skill
 slug: third-party-integration
 tags:
-- api
-- data
+  - api
+  - data
 title: third-party-integration
 ---
 
@@ -32,7 +33,7 @@ Build robust integrations with external services using standardized patterns for
 ### 1. **Third-Party Client Wrapper**
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 class ThirdPartyClient {
   constructor(config) {
@@ -45,9 +46,9 @@ class ThirdPartyClient {
       baseURL: this.baseUrl,
       timeout: this.timeout,
       headers: {
-        'Authorization': `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json'
-      }
+        Authorization: `Bearer ${this.apiKey}`,
+        "Content-Type": "application/json",
+      },
     });
   }
 
@@ -61,14 +62,14 @@ class ThirdPartyClient {
           url: endpoint,
           data,
           timeout: this.timeout,
-          ...options
+          ...options,
         });
 
         return {
           success: true,
           data: response.data,
           statusCode: response.status,
-          headers: response.headers
+          headers: response.headers,
         };
       } catch (error) {
         lastError = error;
@@ -103,8 +104,8 @@ class ThirdPartyClient {
           message: error.response.data?.message || error.message,
           code: error.response.data?.code || error.response.status,
           status: error.response.status,
-          data: error.response.data
-        }
+          data: error.response.data,
+        },
       };
     }
 
@@ -112,51 +113,51 @@ class ThirdPartyClient {
       success: false,
       error: {
         message: error.message,
-        code: 'NETWORK_ERROR'
-      }
+        code: "NETWORK_ERROR",
+      },
     };
   }
 
   sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   async get(endpoint) {
-    return this.request('GET', endpoint);
+    return this.request("GET", endpoint);
   }
 
   async post(endpoint, data) {
-    return this.request('POST', endpoint, data);
+    return this.request("POST", endpoint, data);
   }
 
   async put(endpoint, data) {
-    return this.request('PUT', endpoint, data);
+    return this.request("PUT", endpoint, data);
   }
 
   async delete(endpoint) {
-    return this.request('DELETE', endpoint);
+    return this.request("DELETE", endpoint);
   }
 }
 
 // Usage
 const stripeClient = new ThirdPartyClient({
   apiKey: process.env.STRIPE_API_KEY,
-  baseUrl: 'https://api.stripe.com/v1',
+  baseUrl: "https://api.stripe.com/v1",
   timeout: 30000,
-  retryAttempts: 3
+  retryAttempts: 3,
 });
 
-const result = await stripeClient.post('/charges', {
+const result = await stripeClient.post("/charges", {
   amount: 10000,
-  currency: 'usd',
-  source: 'tok_visa'
+  currency: "usd",
+  source: "tok_visa",
 });
 ```
 
 ### 2. **Payment Processor Integration (Stripe)**
 
 ```javascript
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 class PaymentService {
   async createCharge(userId, amount, paymentMethodId) {
@@ -165,10 +166,10 @@ class PaymentService {
 
       const charge = await stripe.charges.create({
         amount: Math.round(amount * 100), // cents
-        currency: 'usd',
+        currency: "usd",
         customer: customer.id,
         payment_method: paymentMethodId,
-        confirm: true
+        confirm: true,
       });
 
       // Log transaction
@@ -177,19 +178,19 @@ class PaymentService {
         chargeId: charge.id,
         amount,
         status: charge.status,
-        createdAt: new Date(charge.created * 1000)
+        createdAt: new Date(charge.created * 1000),
       });
 
       return {
         success: true,
         chargeId: charge.id,
-        status: charge.status
+        status: charge.status,
       };
     } catch (error) {
-      console.error('Charge error:', error.message);
+      console.error("Charge error:", error.message);
 
-      if (error.code === 'card_declined') {
-        return { success: false, error: 'Card declined' };
+      if (error.code === "card_declined") {
+        return { success: false, error: "Card declined" };
       }
 
       throw error;
@@ -200,17 +201,17 @@ class PaymentService {
     try {
       const refund = await stripe.refunds.create({
         charge: chargeId,
-        amount: amount ? Math.round(amount * 100) : undefined
+        amount: amount ? Math.round(amount * 100) : undefined,
       });
 
       await Transaction.updateOne(
         { chargeId },
-        { refundId: refund.id, status: 'refunded' }
+        { refundId: refund.id, status: "refunded" },
       );
 
       return { success: true, refundId: refund.id };
     } catch (error) {
-      console.error('Refund error:', error.message);
+      console.error("Refund error:", error.message);
       throw error;
     }
   }
@@ -220,12 +221,12 @@ class PaymentService {
 
     if (!customer) {
       const stripeCustomer = await stripe.customers.create({
-        metadata: { userId }
+        metadata: { userId },
       });
 
       customer = await Customer.create({
         userId,
-        stripeId: stripeCustomer.id
+        stripeId: stripeCustomer.id,
       });
     }
 
@@ -234,13 +235,13 @@ class PaymentService {
 
   async handleWebhook(event) {
     switch (event.type) {
-      case 'charge.succeeded':
+      case "charge.succeeded":
         await this.handleChargeSucceeded(event.data.object);
         break;
-      case 'charge.failed':
+      case "charge.failed":
         await this.handleChargeFailed(event.data.object);
         break;
-      case 'refund.created':
+      case "refund.created":
         await this.handleRefund(event.data.object);
         break;
     }
@@ -248,28 +249,32 @@ class PaymentService {
 }
 
 // Webhook endpoint
-app.post('/webhooks/stripe', express.raw({type: 'application/json'}), async (req, res) => {
-  const sig = req.headers['stripe-signature'];
+app.post(
+  "/webhooks/stripe",
+  express.raw({ type: "application/json" }),
+  async (req, res) => {
+    const sig = req.headers["stripe-signature"];
 
-  try {
-    const event = stripe.webhooks.constructEvent(
-      req.body,
-      sig,
-      process.env.STRIPE_WEBHOOK_SECRET
-    );
+    try {
+      const event = stripe.webhooks.constructEvent(
+        req.body,
+        sig,
+        process.env.STRIPE_WEBHOOK_SECRET,
+      );
 
-    await paymentService.handleWebhook(event);
-    res.json({ received: true });
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-});
+      await paymentService.handleWebhook(event);
+      res.json({ received: true });
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  },
+);
 ```
 
 ### 3. **Email Service Integration (SendGrid)**
 
 ```javascript
-const sgMail = require('@sendgrid/mail');
+const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 class EmailService {
@@ -281,12 +286,12 @@ class EmailService {
         templateId,
         dynamicTemplateData: {
           ...templateData,
-          timestamp: new Date().toISOString()
+          timestamp: new Date().toISOString(),
         },
         trackingSettings: {
           clickTracking: { enabled: true },
-          openTracking: { enabled: true }
-        }
+          openTracking: { enabled: true },
+        },
       };
 
       const response = await sgMail.send(message);
@@ -295,20 +300,20 @@ class EmailService {
       await EmailLog.create({
         to,
         templateId,
-        messageId: response[0].headers['x-message-id'],
-        status: 'sent',
-        sentAt: new Date()
+        messageId: response[0].headers["x-message-id"],
+        status: "sent",
+        sentAt: new Date(),
       });
 
-      return { success: true, messageId: response[0].headers['x-message-id'] };
+      return { success: true, messageId: response[0].headers["x-message-id"] };
     } catch (error) {
-      console.error('Email error:', error.message);
+      console.error("Email error:", error.message);
 
       await EmailLog.create({
         to,
         templateId,
         error: error.message,
-        status: 'failed'
+        status: "failed",
       });
 
       throw error;
@@ -316,11 +321,11 @@ class EmailService {
   }
 
   async sendBulk(recipients, templateId, templateData) {
-    const promises = recipients.map(recipient =>
-      this.sendEmail(recipient, templateId, templateData).catch(err => ({
+    const promises = recipients.map((recipient) =>
+      this.sendEmail(recipient, templateId, templateData).catch((err) => ({
         recipient,
-        error: err.message
-      }))
+        error: err.message,
+      })),
     );
 
     return Promise.allSettled(promises);
@@ -331,7 +336,7 @@ class EmailService {
 
     await EmailLog.updateOne(
       { messageId },
-      { status: eventType, updatedAt: new Date() }
+      { status: eventType, updatedAt: new Date() },
     );
   }
 }
@@ -339,11 +344,11 @@ class EmailService {
 // Usage
 const emailService = new EmailService();
 
-app.post('/api/send-welcome-email', async (req, res) => {
+app.post("/api/send-welcome-email", async (req, res) => {
   const { email, firstName } = req.body;
 
-  const result = await emailService.sendEmail(email, 'd-welcome-template-id', {
-    firstName
+  const result = await emailService.sendEmail(email, "d-welcome-template-id", {
+    firstName,
   });
 
   res.json(result);
@@ -461,7 +466,7 @@ class DataMapper {
       status: charge.status,
       customerId: charge.customer,
       createdAt: new Date(charge.created * 1000),
-      metadata: charge.metadata
+      metadata: charge.metadata,
     };
   }
 
@@ -471,7 +476,7 @@ class DataMapper {
       email: event.email,
       eventType: event.event,
       timestamp: new Date(event.timestamp * 1000),
-      metadata: event
+      metadata: event,
     };
   }
 
@@ -481,7 +486,7 @@ class DataMapper {
       size: s3Object.Size,
       lastModified: s3Object.LastModified,
       etag: s3Object.ETag,
-      bucket: s3Object.Bucket
+      bucket: s3Object.Bucket,
     };
   }
 }
@@ -490,6 +495,7 @@ class DataMapper {
 ## Best Practices
 
 ### ✅ DO
+
 - Implement retry logic with exponential backoff
 - Validate webhook signatures
 - Log all API interactions
@@ -502,6 +508,7 @@ class DataMapper {
 - Test with sandbox/test API keys
 
 ### ❌ DON'T
+
 - Hardcode API keys
 - Retry all errors indefinitely
 - Log sensitive data

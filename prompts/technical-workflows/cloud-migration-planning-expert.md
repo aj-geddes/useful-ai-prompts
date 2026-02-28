@@ -1,6 +1,7 @@
 # Cloud Migration Planning Expert
 
 ## Metadata
+
 - **ID**: `cloud-migration-planning-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Plans and executes cloud migrations that minimize risk, optimize costs, and leve
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Planning data center to cloud migrations (lift-and-shift or modernization)
 - Evaluating cloud providers and selecting migration strategies (6R's)
 - Designing target cloud architecture with cost optimization
 - Creating phased migration roadmaps with risk mitigation
 
 **Anti-patterns (Don't Use For):**
+
 - Simple VM provisioning or single application deployments
 - Cloud-native new builds without migration requirements
 - Day-to-day cloud operations and optimization
@@ -112,13 +115,13 @@ We have 50 applications in an on-premise data center, mix of legacy Java apps an
 
 **Application Portfolio Assessment**
 
-| Strategy | Count | Description | Examples |
-|----------|-------|-------------|----------|
-| Rehost (Lift & Shift) | 18 | Legacy apps with minimal changes, stable and low risk | On-prem VMs, file servers |
-| Replatform | 15 | Database migrations, containerization | Oracle to RDS, IIS to ECS |
-| Refactor | 8 | High-value apps benefiting from cloud-native | Core platform services |
-| Repurchase | 5 | Replace with SaaS solutions | HR system, CRM, email |
-| Retire | 4 | Decommission unused or redundant applications | Legacy reporting tools |
+| Strategy              | Count | Description                                           | Examples                  |
+| --------------------- | ----- | ----------------------------------------------------- | ------------------------- |
+| Rehost (Lift & Shift) | 18    | Legacy apps with minimal changes, stable and low risk | On-prem VMs, file servers |
+| Replatform            | 15    | Database migrations, containerization                 | Oracle to RDS, IIS to ECS |
+| Refactor              | 8     | High-value apps benefiting from cloud-native          | Core platform services    |
+| Repurchase            | 5     | Replace with SaaS solutions                           | HR system, CRM, email     |
+| Retire                | 4     | Decommission unused or redundant applications         | Legacy reporting tools    |
 
 **Dependency Mapping and Wave Design**
 
@@ -152,28 +155,29 @@ Organization Structure:
 
 **Cost Analysis**
 
-| Category | Current (Annual) | AWS Year 1 | AWS Year 2+ |
-|----------|------------------|------------|-------------|
-| Infrastructure | $2,400,000 | $1,800,000 | $1,600,000 |
-| Savings (Reserved Instances) | - | - | $200,000 |
-| Migration Investment | - | $450,000 | - |
-| **Net Cost** | **$2,400,000** | **$2,250,000** | **$1,600,000** |
+| Category                     | Current (Annual) | AWS Year 1     | AWS Year 2+    |
+| ---------------------------- | ---------------- | -------------- | -------------- |
+| Infrastructure               | $2,400,000       | $1,800,000     | $1,600,000     |
+| Savings (Reserved Instances) | -                | -              | $200,000       |
+| Migration Investment         | -                | $450,000       | -              |
+| **Net Cost**                 | **$2,400,000**   | **$2,250,000** | **$1,600,000** |
 
 ROI: Break-even at month 14, 33% annual savings from year 2
 
 **Migration Roadmap**
 
-| Wave | Duration | Applications | Key Milestones |
-|------|----------|--------------|----------------|
-| Wave 0 | Month 1-2 | Foundation | Landing zone, Direct Connect, security baseline |
-| Wave 1 | Month 3-4 | 5 pilot apps | Validate migration patterns, refine runbooks |
-| Wave 2 | Month 5-8 | 20 core apps | Database migrations, container platform |
-| Wave 3 | Month 9-12 | 16 complex apps | HIPAA validation, refactored services |
-| Wave 4 | Month 13-14 | Retire/cleanup | Data center exit, contract termination |
+| Wave   | Duration    | Applications    | Key Milestones                                  |
+| ------ | ----------- | --------------- | ----------------------------------------------- |
+| Wave 0 | Month 1-2   | Foundation      | Landing zone, Direct Connect, security baseline |
+| Wave 1 | Month 3-4   | 5 pilot apps    | Validate migration patterns, refine runbooks    |
+| Wave 2 | Month 5-8   | 20 core apps    | Database migrations, container platform         |
+| Wave 3 | Month 9-12  | 16 complex apps | HIPAA validation, refactored services           |
+| Wave 4 | Month 13-14 | Retire/cleanup  | Data center exit, contract termination          |
 
 **Risk Mitigation**
 
 Each wave includes:
+
 - Pre-migration testing in isolated environment
 - Rollback procedure with defined trigger criteria
 - 72-hour hypercare with on-call escalation

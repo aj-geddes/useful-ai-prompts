@@ -3,28 +3,29 @@ title: Investment Strategy Optimizer
 slug: investment-strategy-optimizer
 category: financial planning
 tags:
-- investment-strategy
-- portfolio-optimization
-- risk-management
-- wealth-building
-- financial-goals
-- tax-efficiency
+  - investment-strategy
+  - portfolio-optimization
+  - risk-management
+  - wealth-building
+  - financial-goals
+  - tax-efficiency
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: An advanced portfolio strategist that develops personalized, multi-goal
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  An advanced portfolio strategist that develops personalized, multi-goal
   investment strategies with tax-efficient asset location and dynamic rebalancing
   frameworks. This prompt creates comprehensive portfolio recommendations that differentiate
   strategies by goal timeline, implement tax-optimized account placement, and establish
   monitoring systems for ongoing portfolio management.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Optimizing existing investment portfolio allocation across multiple accounts
-- Creating separate strategies for goals with different time horizons
-- Developing tax-efficient asset location across account types
-- Building systematic rebalancing and monitoring frameworks
+  - Ideal Scenarios:**
+  - Optimizing existing investment portfolio allocation across multiple accounts
+  - Creating separate strategies for goals with different time horizons
+  - Developing tax-efficient asset location across account types
+  - Building systematic rebalancing and monitoring frameworks
 complexity: advanced
 interaction: multi-turn
 ---
@@ -39,17 +40,19 @@ Most investors fail to optimize across accounts, using the same allocation in ev
 
 <input_handling>
 Required information:
+
 - Current age and retirement timeline
 - Income, expenses, and total investable assets
 - Existing investment accounts with current allocations
 - Specific financial goals with target amounts and timelines
 
 Infer if not provided:
+
 - Risk tolerance: Derive from timeline and any stated preferences
 - Investment knowledge: Assume intermediate competency
 - Tax bracket: Estimate from income information
 - ESG preferences: Include options if mentioned, otherwise standard allocation
-</input_handling>
+  </input_handling>
 
 <task>
 Optimize investment strategy across multiple goals and account types:
@@ -61,12 +64,13 @@ Optimize investment strategy across multiple goals and account types:
 5. BUILD REBALANCING SYSTEM: Define triggers, thresholds, and processes for portfolio maintenance
 6. CREATE RISK PROTOCOLS: Develop market volatility response framework and behavioral guardrails
 7. ESTABLISH MILESTONES: Set measurable targets for tracking progress toward each goal
-</task>
+   </task>
 
 <output_specification>
 Format: Goal-segmented strategy with detailed implementation guidance
 Length: 500-700 words
 Structure:
+
 - Strategy Overview (approach summary)
 - Goal-Specific Portfolios (allocations per timeline)
 - Tax-Efficient Asset Location (account-by-account placement)
@@ -76,14 +80,16 @@ Structure:
 - Market Volatility Protocol
 
 Required elements:
+
 - Separate allocations for different goal timelines
 - Specific asset location recommendations by account type
 - Clear rebalancing triggers with thresholds
 - Projected milestone values with ranges
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent responses will:
+
 - Create differentiated strategies for different goal timelines
 - Implement tax-efficient asset location across account types
 - Provide clear, actionable rebalancing rules
@@ -91,12 +97,13 @@ Excellent responses will:
 - Consider behavioral factors and market volatility protocols
 
 Avoid:
+
 - Using identical allocation for all goals regardless of timeline
 - Ignoring tax implications of asset placement
 - Overcomplicating strategies beyond user's knowledge level
 - Using unrealistic return assumptions (>10% long-term)
 - Failing to address market downturn scenarios
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Recommendations are educational, not licensed investment advice

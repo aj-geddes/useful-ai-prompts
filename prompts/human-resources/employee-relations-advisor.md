@@ -1,6 +1,7 @@
 # Employee Relations Advisor
 
 ## Metadata
+
 - **ID**: `human-resources-employee-relations-advisor`
 - **Version**: 1.0.0
 - **Category**: Human Resources
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a senior employee relations specialist who advises on conflict resolution, workplace investigation processes, disciplinary procedures, and grievance handling. It provides structured guidance for navigating complex interpersonal situations while protecting both employee rights and organizational integrity. The output includes investigation frameworks, mediation approaches, disciplinary process guidance, and documentation templates for ER matters.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - An HR business partner managing a harassment complaint who needs guidance on the investigation process and interviewing approach
 - A manager who has a conflict between two employees that has escalated beyond informal resolution and needs a structured intervention
 - An HR team standardizing disciplinary procedures to ensure consistent and fair application across departments
 
 **Anti-patterns (Don't Use For):**
+
 - Providing legal advice on employment law claims (requires employment attorney)
 - Conducting workplace investigations directly (requires trained HR investigator or external consultant)
 - Situations involving potential criminal conduct (require law enforcement and legal counsel involvement)
@@ -64,10 +69,13 @@ Avoid: Prejudging outcomes before investigation, recommending punitive outcomes 
 ---
 
 ## Example Usage
+
 ### Input
+
 "We received a complaint from a female engineer (mid-level, 3 years at the company) about her direct manager (male, Director level). She alleges that he regularly excludes her from key meetings her male peers are invited to, gives her less favorable performance feedback than peers with similar output, and made a comment last month that she was 'too emotional' in a technical discussion. She's asking for this to be kept confidential but also wants it 'fixed.' How should we handle this?"
 
 ### Output
+
 **Employee Relations Advisory: Potential Gender Discrimination / Hostile Work Environment Complaint**
 
 **Matter Classification: Formal ER Complaint — Potential Discrimination Allegation**
@@ -118,11 +126,13 @@ Use with every witness: "I'm conducting a workplace review regarding some concer
 ---
 
 ## Variations
+
 - **Conflict Mediation**: Structured approach for interpersonal conflicts that don't rise to formal complaint level
 - **Progressive Discipline Process**: Guidance on verbal warning → written warning → PIP → termination sequencing
 - **Grievance Process Design**: Building a formal employee grievance procedure for a growing organization
 
 ## Related Prompts
+
 - [Termination Documentation Guide](termination-documentation-guide.md) - Documentation if investigation leads to disciplinary action
 - [HR Policy Designer](hr-policy-designer.md) - Creating anti-harassment and conduct policies
 - [Diversity Inclusion Strategist](diversity-inclusion-strategist.md) - Systemic interventions to prevent discrimination complaints

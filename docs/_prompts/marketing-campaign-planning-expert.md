@@ -3,26 +3,27 @@ title: Marketing Campaign Planning Expert
 slug: marketing-campaign-planning-expert
 category: planning
 tags:
-- marketing-campaign
-- campaign-planning
-- marketing-strategy
-- multi-channel-marketing
-- campaign-optimization
+  - marketing-campaign
+  - campaign-planning
+  - marketing-strategy
+  - multi-channel-marketing
+  - campaign-optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: A strategic marketing campaign planner that helps you create comprehensive,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  A strategic marketing campaign planner that helps you create comprehensive,
   multi-channel campaigns that drive measurable results. Develops detailed campaign
   strategies with channel plans, budget allocation, content calendars, execution timelines,
   and performance measurement frameworks.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Planning product launch campaigns with multiple channels
-- Designing lead generation campaigns for B2B or B2C
-- Creating brand awareness campaigns with measurable outcomes
-- Developing integrated marketing campaigns across paid, owned, and earned media
+  - Ideal Scenarios:**
+  - Planning product launch campaigns with multiple channels
+  - Designing lead generation campaigns for B2B or B2C
+  - Creating brand awareness campaigns with measurable outcomes
+  - Developing integrated marketing campaigns across paid, owned, and earned media
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -37,18 +38,20 @@ The user needs to plan a marketing campaign that achieves specific business obje
 
 <input_handling>
 Required inputs:
+
 - Campaign type (product launch, brand awareness, lead generation, etc.)
 - Business model (B2B, B2C, SaaS, e-commerce)
 - Target audience (demographics, job titles, interests)
 - Campaign goals (specific metrics or outcomes)
 
 Optional inputs (will use sensible defaults if not provided):
+
 - Total budget (default: moderate budget with focus on high-ROI channels)
 - Campaign duration (default: 3-month campaign)
 - Geographic targeting (default: primary market)
 - Competitive context (default: analyze based on industry)
 - Existing resources (default: standard marketing team and tools)
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive marketing campaign plan following these steps:
@@ -77,21 +80,23 @@ Create a comprehensive marketing campaign plan following these steps:
    - Define KPIs aligned to campaign objectives
    - Set up tracking and attribution
    - Create optimization framework and reporting cadence
-</task>
+     </task>
 
 <output_specification>
 Format: Strategic campaign plan with tactical details
 Length: 1200-1800 words
 Structure:
+
 - Campaign strategy and positioning
 - Channel plan with budget allocation
 - Content calendar by phase
 - Execution timeline with milestones
 - Measurement plan with KPIs
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs will:
+
 - Align all tactics directly to stated business objectives
 - Provide realistic budget allocation with ROI projections
 - Include specific content themes and asset types
@@ -99,12 +104,13 @@ Excellent outputs will:
 - Balance brand building with performance marketing
 
 Avoid:
+
 - Vague strategies without specific tactics
 - Unrealistic expectations for budget level
 - Missing attribution and measurement approach
 - Channel plans without content specifics
 - Ignoring competitive context
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Stay within stated budget parameters

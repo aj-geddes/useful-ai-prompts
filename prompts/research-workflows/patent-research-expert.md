@@ -1,6 +1,7 @@
 # Patent Research Expert
 
 ## Metadata
+
 - **ID**: `research-patent-analysis`
 - **Version**: 1.0.0
 - **Category**: Research/Legal
@@ -18,6 +19,7 @@ Conduct comprehensive patent research for freedom-to-operate analysis, prior art
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Assessing freedom to operate before product launch or market entry
 - Conducting prior art searches to support patent applications
 - Mapping technology landscapes for R&D prioritization
@@ -25,6 +27,7 @@ Conduct comprehensive patent research for freedom-to-operate analysis, prior art
 - Identifying design-around opportunities for blocked technologies
 
 **Anti-Patterns (Don't Use For):**
+
 - Providing formal legal opinions (requires patent attorney)
 - Filing patent applications (requires registered patent agent/attorney)
 - Litigation strategy development without attorney oversight
@@ -107,21 +110,23 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're developing a new cardiac monitoring device using photoplethysmography (PPG) sensors for continuous arrhythmia detection. We need FTO analysis for US market launch planned for Q3 2025. Our main innovation is a proprietary algorithm for atrial fibrillation detection from wrist-based PPG signals using machine learning. Key features: continuous monitoring, wrist-worn form factor, AFib detection with patient alerting."
 
 ### Output
+
 **Patent Research: Wrist-Based PPG Arrhythmia Detection**
 
 **Search Methodology**
 
-| Parameter | Specification |
-|-----------|---------------|
-| Databases | USPTO (PatFT, AppFT), Espacenet, Google Patents, Derwent |
-| Classifications | CPC: A61B 5/024, A61B 5/0245, A61B 5/316, G16H 50/20 |
-| Keywords | (PPG OR photoplethysmograph* OR "optical sensor") AND (arrhythmia OR "atrial fibrillation" OR AFib OR "irregular rhythm") AND (wrist OR wearable OR "worn device") |
-| Date Range | Priority date: 2010-present |
-| Status Filter | Active patents (granted + pending); expired excluded from FTO |
-| Search Date | [Current Date] - results valid as of this date |
+| Parameter       | Specification                                                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Databases       | USPTO (PatFT, AppFT), Espacenet, Google Patents, Derwent                                                                                                            |
+| Classifications | CPC: A61B 5/024, A61B 5/0245, A61B 5/316, G16H 50/20                                                                                                                |
+| Keywords        | (PPG OR photoplethysmograph\* OR "optical sensor") AND (arrhythmia OR "atrial fibrillation" OR AFib OR "irregular rhythm") AND (wrist OR wearable OR "worn device") |
+| Date Range      | Priority date: 2010-present                                                                                                                                         |
+| Status Filter   | Active patents (granted + pending); expired excluded from FTO                                                                                                       |
+| Search Date     | [Current Date] - results valid as of this date                                                                                                                      |
 
 **Jurisdictional Scope**: US (primary for launch), with EP and CN monitoring recommended for future expansion.
 
@@ -129,14 +134,14 @@ Avoid:
 
 **Landscape Overview**
 
-| Metric | Value |
-|--------|-------|
-| Total relevant patents | 847 families |
-| Granted US patents | 312 |
-| Pending US applications | 201 |
-| Key assignees | Apple (127), Samsung (89), Philips (76), Google/Fitbit (63), AliveCor (41) |
-| Filing CAGR (2018-2023) | 38% |
-| Technology maturity | Growth phase, accelerating |
+| Metric                  | Value                                                                      |
+| ----------------------- | -------------------------------------------------------------------------- |
+| Total relevant patents  | 847 families                                                               |
+| Granted US patents      | 312                                                                        |
+| Pending US applications | 201                                                                        |
+| Key assignees           | Apple (127), Samsung (89), Philips (76), Google/Fitbit (63), AliveCor (41) |
+| Filing CAGR (2018-2023) | 38%                                                                        |
+| Technology maturity     | Growth phase, accelerating                                                 |
 
 **Key Insight**: Patent density is high and accelerating. Apple's portfolio dominates broadly-claimed wearable health monitoring. AliveCor has focused claims on algorithm-specific approaches. White space exists in algorithm optimization for low-power edge processing.
 
@@ -147,6 +152,7 @@ Avoid:
 **HIGH RISK**
 
 **US 10,687,XXX (Apple Inc.)**
+
 - **Title**: Wearable Device with Irregular Heart Rhythm Detection
 - **Status**: Granted, active through 2037
 - **Relevant Claims**: Claims 1, 3, 7 (independent)
@@ -156,6 +162,7 @@ Avoid:
 - **Recommendation**: Attorney claim chart review required; consider licensing inquiry
 
 **US 11,234,XXX (AliveCor, Inc.)**
+
 - **Title**: Method for Atrial Fibrillation Detection Using Machine Learning
 - **Status**: Granted, active through 2039
 - **Relevant Claims**: Claims 1-4
@@ -167,6 +174,7 @@ Avoid:
 **MEDIUM RISK**
 
 **US 10,952,XXX (Samsung Electronics)**
+
 - **Title**: PPG-Based Cardiac Monitoring with Motion Artifact Rejection
 - **Status**: Granted, active through 2036
 - **Relevant Claims**: Claims 1, 8, 12
@@ -178,14 +186,15 @@ Avoid:
 
 **Freedom to Operate Assessment**
 
-| Risk Level | Assessment |
-|------------|------------|
-| Overall FTO Risk | **MODERATE-HIGH** |
-| Blocking patents identified | 2-3 require detailed analysis |
-| Design-around feasibility | Partial - algorithm level more feasible than device level |
-| Recommended actions | Attorney review + licensing exploration |
+| Risk Level                  | Assessment                                                |
+| --------------------------- | --------------------------------------------------------- |
+| Overall FTO Risk            | **MODERATE-HIGH**                                         |
+| Blocking patents identified | 2-3 require detailed analysis                             |
+| Design-around feasibility   | Partial - algorithm level more feasible than device level |
+| Recommended actions         | Attorney review + licensing exploration                   |
 
 **Design-Around Opportunities**:
+
 1. **Motion Artifact Methodology**: Different sensor fusion approach than Samsung claims
 2. **Algorithm Architecture**: Neural network architecture distinctions from AliveCor claims
 3. **Multi-Modal Sensing**: PPG + additional sensor modality may avoid single-modality claims
@@ -195,20 +204,21 @@ Avoid:
 
 **Strategic Recommendations**
 
-| Priority | Action | Rationale |
-|----------|--------|-----------|
-| P1 | Attorney claim chart for Apple US 10,687,XXX | Highest blocking risk; requires legal opinion |
-| P1 | File provisional on novel algorithm features | Establish priority date before further disclosure |
-| P2 | Technical comparison: your ML vs. AliveCor claims | Determine if design-around exists |
-| P2 | Monitor Apple Watch health litigation | Claim construction guidance from ongoing cases |
-| P3 | Evaluate AliveCor licensing terms | Known licensing program may offer clearance path |
-| P3 | Develop defensive publications for non-patentable innovations | Block competitor filing on shared concepts |
+| Priority | Action                                                        | Rationale                                         |
+| -------- | ------------------------------------------------------------- | ------------------------------------------------- |
+| P1       | Attorney claim chart for Apple US 10,687,XXX                  | Highest blocking risk; requires legal opinion     |
+| P1       | File provisional on novel algorithm features                  | Establish priority date before further disclosure |
+| P2       | Technical comparison: your ML vs. AliveCor claims             | Determine if design-around exists                 |
+| P2       | Monitor Apple Watch health litigation                         | Claim construction guidance from ongoing cases    |
+| P3       | Evaluate AliveCor licensing terms                             | Known licensing program may offer clearance path  |
+| P3       | Develop defensive publications for non-patentable innovations | Block competitor filing on shared concepts        |
 
 **Critical Path**: Complete attorney FTO opinion before Q3 2025 launch. Allow 8-12 weeks for comprehensive legal review.
 
 ---
 
 ## Related Prompts
+
 - [Technology Assessment Expert](technology-assessment-expert.md) - Technology evaluation methodology
 - [Legal Precedent Research Expert](legal-precedent-research-expert.md) - Legal research for IP litigation
 - [Competitive Intelligence Expert](competitive-intelligence-expert.md) - Competitor IP strategy analysis

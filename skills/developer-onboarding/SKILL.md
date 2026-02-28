@@ -23,7 +23,7 @@ Create comprehensive onboarding documentation that helps new developers quickly 
 
 ## Comprehensive README Template
 
-```markdown
+````markdown
 # Project Name
 
 Brief project description (1-2 sentences explaining what this project does).
@@ -75,6 +75,7 @@ npm run db:migrate
 # Start development server
 npm run dev
 ```
+````
 
 Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
@@ -89,6 +90,7 @@ Before you begin, ensure you have the following installed:
 - **Docker** (optional, for containerized development)
 
 **Recommended Tools:**
+
 - [VS Code](https://code.visualstudio.com/) with recommended extensions
 - [Postman](https://www.postman.com/) for API testing
 - [pgAdmin](https://www.pgadmin.org/) for database management
@@ -176,6 +178,7 @@ npm run dev
 ```
 
 If everything is set up correctly, you should see:
+
 ```
 ✓ Server running on http://localhost:3000
 ✓ Database connected
@@ -192,17 +195,17 @@ Edit `config/database.js`:
 module.exports = {
   development: {
     url: process.env.DATABASE_URL,
-    dialect: 'postgres',
+    dialect: "postgres",
     logging: console.log,
   },
   test: {
     url: process.env.TEST_DATABASE_URL,
-    dialect: 'postgres',
+    dialect: "postgres",
     logging: false,
   },
   production: {
     url: process.env.DATABASE_URL,
-    dialect: 'postgres',
+    dialect: "postgres",
     logging: false,
     pool: {
       max: 20,
@@ -221,14 +224,14 @@ Main config file: `config/app.js`
 ```javascript
 module.exports = {
   port: process.env.PORT || 3000,
-  env: process.env.NODE_ENV || 'development',
-  apiVersion: 'v1',
+  env: process.env.NODE_ENV || "development",
+  apiVersion: "v1",
   rateLimit: {
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // limit each IP to 100 requests per windowMs
   },
   cors: {
-    origin: process.env.CORS_ORIGIN || '*',
+    origin: process.env.CORS_ORIGIN || "*",
     credentials: true,
   },
 };
@@ -304,20 +307,22 @@ npm start                # Start production server
 We use ESLint and Prettier for consistent code style:
 
 **ESLint Config:**
+
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier'],
+  extends: ["airbnb-base", "prettier"],
+  plugins: ["prettier"],
   rules: {
-    'prettier/prettier': 'error',
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    "prettier/prettier": "error",
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
   },
 };
 ```
 
 **Prettier Config:**
+
 ```json
 {
   "semi": true,
@@ -347,6 +352,7 @@ git push origin feature/your-feature-name
 ```
 
 **Branch Naming Convention:**
+
 - `feature/` - New features
 - `bugfix/` - Bug fixes
 - `hotfix/` - Urgent production fixes
@@ -366,6 +372,7 @@ footer
 ```
 
 **Types:**
+
 - `feat:` - New feature
 - `fix:` - Bug fix
 - `docs:` - Documentation changes
@@ -375,6 +382,7 @@ footer
 - `chore:` - Maintenance tasks
 
 **Examples:**
+
 ```bash
 feat(auth): add OAuth2 authentication
 fix(api): resolve race condition in order processing
@@ -405,30 +413,30 @@ npm test -- --grep "User API"
 
 ```javascript
 // tests/unit/user.service.test.js
-const { expect } = require('chai');
-const UserService = require('../../src/services/user.service');
+const { expect } = require("chai");
+const UserService = require("../../src/services/user.service");
 
-describe('UserService', () => {
-  describe('createUser', () => {
-    it('should create a new user', async () => {
+describe("UserService", () => {
+  describe("createUser", () => {
+    it("should create a new user", async () => {
       const userData = {
-        email: 'test@example.com',
-        password: 'password123',
-        name: 'Test User',
+        email: "test@example.com",
+        password: "password123",
+        name: "Test User",
       };
 
       const user = await UserService.createUser(userData);
 
-      expect(user).to.have.property('id');
+      expect(user).to.have.property("id");
       expect(user.email).to.equal(userData.email);
       expect(user.password).to.not.equal(userData.password); // Should be hashed
     });
 
-    it('should throw error for duplicate email', async () => {
-      const userData = { email: 'existing@example.com' };
+    it("should throw error for duplicate email", async () => {
+      const userData = { email: "existing@example.com" };
 
       await expect(UserService.createUser(userData)).to.be.rejectedWith(
-        'Email already exists'
+        "Email already exists",
       );
     });
   });
@@ -439,23 +447,23 @@ describe('UserService', () => {
 
 ```javascript
 // tests/integration/auth.test.js
-const request = require('supertest');
-const app = require('../../src/app');
+const request = require("supertest");
+const app = require("../../src/app");
 
-describe('Auth API', () => {
-  describe('POST /api/auth/register', () => {
-    it('should register a new user', async () => {
+describe("Auth API", () => {
+  describe("POST /api/auth/register", () => {
+    it("should register a new user", async () => {
       const response = await request(app)
-        .post('/api/auth/register')
+        .post("/api/auth/register")
         .send({
-          email: 'newuser@example.com',
-          password: 'password123',
-          name: 'New User',
+          email: "newuser@example.com",
+          password: "password123",
+          name: "New User",
         })
         .expect(201);
 
-      expect(response.body).to.have.property('token');
-      expect(response.body.user).to.have.property('id');
+      expect(response.body).to.have.property("token");
+      expect(response.body.user).to.have.property("id");
     });
   });
 });
@@ -580,6 +588,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - List contributors
 - Credit third-party libraries
 - Thank sponsors
+
 ```
 
 ## Best Practices
@@ -613,3 +622,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
 - [Standard README](https://github.com/RichardLitt/standard-readme)
 - [README Template](https://github.com/othneildrew/Best-README-Template)
+```

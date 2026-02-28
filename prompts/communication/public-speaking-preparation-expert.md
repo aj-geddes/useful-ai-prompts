@@ -1,6 +1,7 @@
 # Public Speaking Preparation Expert
 
 ## Metadata
+
 - **ID**: `communication-public-speaking-preparation`
 - **Version**: 1.0.0
 - **Category**: Communication
@@ -18,6 +19,7 @@ Prepares compelling presentations and speeches through structure design, deliver
 ## When to Use
 
 **Ideal scenarios:**
+
 - Preparing for conference talks or keynote presentations
 - Building presentation skills systematically
 - Managing speaking anxiety and stage fright
@@ -25,6 +27,7 @@ Prepares compelling presentations and speeches through structure design, deliver
 - Designing workshop or training delivery
 
 **Anti-patterns (when NOT to use):**
+
 - Written communication or document creation
 - Detailed slide design (visual design focus)
 - Video content creation and editing
@@ -108,6 +111,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "30-minute keynote at industry conference. 300 people. Topic: 'Future of AI in Healthcare.' Experienced presenter but never this big. Worried about stage presence and holding attention for 30 minutes. Need to create slides from scratch."
 
 ### Output
@@ -124,21 +128,25 @@ Avoid:
 "Today, I'll show you how AI is making that prediction a reality."
 
 **Why It Matters Now (5 min)**
+
 - Healthcare costs rising 6% annually
 - 70% of diagnoses could be improved with AI
 - We're at an inflection point
 
 **Three Key Insights (18 min)**
+
 1. **Prediction** (6 min): AI that sees disease before symptoms
 2. **Personalization** (6 min): Treatment tailored to your biology
 3. **Access** (6 min): Expert care available everywhere
 
 **Call to Action (4 min)**
+
 - What healthcare leaders should do now
 - What patients should ask for
 - The future we can build together
 
 ### Key Transitions
+
 - "Now that you understand the prediction power, let's talk about personalization..."
 - "If prediction and personalization excite you, wait until you see how this democratizes access..."
 
@@ -147,22 +155,26 @@ Avoid:
 ### Stage Presence for 300 People
 
 **Movement Pattern:**
+
 ```
 [Screen] <-- 10ft --> [Center] <-- 10ft --> [Screen]
 Position 1          Position 2           Position 3
 ```
+
 - Position 1: Opening and closing (grounded authority)
 - Position 2: Main content (engaged storytelling)
 - Position 3: Data and examples (technical credibility)
 - Walk during transitions, plant for key points
 
 **Voice Techniques:**
+
 - Opening: Conversational pace, warm tone
 - Statistics: Slow down, lower pitch for impact
 - Stories: Varied pace, emotional connection
 - Closing: Slow, powerful, memorable
 
 **Eye Contact:**
+
 - Divide room into 6 sections
 - Speak to one person per section
 - Hold eye contact for complete thoughts
@@ -171,16 +183,19 @@ Position 1          Position 2           Position 3
 ## ANXIETY MANAGEMENT
 
 ### Week Before
+
 - Daily 10-min practice of opening and closing
 - Visualization: See yourself succeeding
 - Physical exercise to manage stress
 
 ### Day Before
+
 - Light review only (not cramming)
 - Good sleep, light dinner
 - Lay out clothes and materials
 
 ### Day Of
+
 - Protein breakfast, limit caffeine
 - Arrive 90 minutes early
 - Walk the stage, test all tech
@@ -188,6 +203,7 @@ Position 1          Position 2           Position 3
 - Power pose for 2 minutes before going on
 
 ### Emergency Recovery Phrases
+
 - Lost your place: "The key point here is..."
 - Mind blank: "This brings me to an important question..."
 - Technical failure: "While we sort this out, let me ask you..."
@@ -195,6 +211,7 @@ Position 1          Position 2           Position 3
 ## AUDIENCE ENGAGEMENT
 
 ### Every 5-7 Minutes, Use One:
+
 1. **Rhetorical question:** "What would happen if...?"
 2. **Show of hands:** "How many of you have seen...?"
 3. **Brief story:** 90-second illustrative anecdote
@@ -202,6 +219,7 @@ Position 1          Position 2           Position 3
 5. **Pair share:** "Turn to your neighbor and share..."
 
 ### Slide Design Principles
+
 - Maximum 6 words per slide
 - Images > bullets always
 - One chart per slide, clear takeaway
@@ -211,21 +229,25 @@ Position 1          Position 2           Position 3
 ## PRACTICE PLAN
 
 ### Week 1: Content
+
 - Days 1-2: Finalize structure and key points
 - Days 3-4: Create slide deck
 - Days 5-7: First full run-through (record yourself)
 
 ### Week 2: Delivery
+
 - Days 8-10: Practice 10-minute segments
 - Days 11-12: Full runs with timer
 - Days 13-14: Practice with test audience
 
 ### Week 3: Polish
+
 - Days 15-17: Refine based on feedback
 - Days 18-19: Tech rehearsal if possible
 - Days 20-21: Rest and mental preparation
 
 ### Day-Of Checklist
+
 - [ ] Arrive 90 minutes early
 - [ ] Test mic, clicker, slides
 - [ ] Walk stage, check sightlines
@@ -237,11 +259,13 @@ Position 1          Position 2           Position 3
 ## Q&A PREPARATION
 
 ### Anticipated Questions:
+
 1. "What about privacy concerns?"
 2. "When will this be widely available?"
 3. "How do we trust AI decisions?"
 
 ### Q&A Technique:
+
 1. Repeat/rephrase for the room
 2. Answer briefly (90 seconds max)
 3. Bridge to your key message
@@ -250,6 +274,7 @@ Position 1          Position 2           Position 3
 ---
 
 ## Related Prompts
+
 - [Client Presentation Expert](client-presentation-expert.md)
 - [Executive Briefing Expert](executive-briefing-expert.md)
 - [Confidence Building Strategist](../personal-growth/confidence-building-strategist.md)

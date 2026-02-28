@@ -3,27 +3,31 @@ name: Bug Report
 about: Report an issue with a prompt (unclear instructions, errors, unexpected behavior)
 title: "[BUG] "
 labels: bug
-assignees: ''
-
+assignees: ""
 ---
 
 ## Prompt Information
 
 **Prompt Name:**
+
 <!-- The name of the prompt you're reporting an issue with -->
 
 **Prompt Location:**
+
 <!-- Path to the prompt file, e.g., prompts/technical/devops/kubernetes-migration-planner.md -->
 
 **Category:**
+
 <!-- e.g., technical, business, creative, specialized -->
 
 ## Describe the Issue
 
 **What happened:**
+
 <!-- A clear and concise description of the problem -->
 
 **What you expected:**
+
 <!-- What you expected the prompt to do or produce -->
 
 ## Steps to Reproduce
@@ -35,12 +39,15 @@ assignees: ''
 ## Context
 
 **AI Model Used:**
+
 <!-- e.g., Claude 3.5 Sonnet, GPT-4, etc. -->
 
 **Input Provided:**
+
 <!-- What input or context did you provide to the prompt? -->
 
 **Output Received:**
+
 <!-- What was the actual output? (Include relevant portions if lengthy) -->
 
 ## Issue Type

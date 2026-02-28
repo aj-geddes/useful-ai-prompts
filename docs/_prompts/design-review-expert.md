@@ -3,26 +3,27 @@ title: Mechanical Design Review Expert
 slug: design-review-expert
 category: engineering/mechanical
 tags:
-- design-review
-- mechanical-engineering
-- analysis
-- validation
-- optimization
+  - design-review
+  - mechanical-engineering
+  - analysis
+  - validation
+  - optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Conduct thorough mechanical design reviews that ensure safety, performance,
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Conduct thorough mechanical design reviews that ensure safety, performance,
   manufacturability, and cost-effectiveness through systematic engineering analysis.
   Identifies critical issues, assesses failure modes, and provides actionable optimization
   recommendations prioritized by risk and impact.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Reviewing designs before prototype or production release
-- Validating engineering analysis and calculations
-- Assessing manufacturability and cost optimization opportunities
-- Conducting failure mode and risk assessments (FMEA)
+  - Ideal scenarios:**
+  - Reviewing designs before prototype or production release
+  - Validating engineering analysis and calculations
+  - Assessing manufacturability and cost optimization opportunities
+  - Conducting failure mode and risk assessments (FMEA)
 complexity: advanced
 interaction: multi-turn
 ---
@@ -37,16 +38,18 @@ Design reviews catch critical issues before expensive prototyping or production.
 
 <input_handling>
 Required inputs:
+
 - Product/component type and application
 - Key performance requirements (load, speed, life)
 - Operating environment conditions
 - Current design stage
 
 Infer if not provided:
+
 - Manufacturing processes (recommend based on volume and material)
 - Safety standards (identify likely applicable standards)
 - Analysis requirements (recommend based on application)
-</input_handling>
+  </input_handling>
 
 <task>
 Conduct a comprehensive design review with analysis recommendations and risk assessment.
@@ -62,16 +65,18 @@ Step 5: Provide prioritized optimization recommendations with cost-benefit analy
 Format: Assessment with analysis, FMEA table, and recommendations
 Length: 900-1300 words
 Structure:
+
 - Design assessment (strengths and critical issues)
 - Performance analysis recommendations (fatigue, thermal, dynamic with calculations)
 - Manufacturability review (issues and improvements)
 - Failure mode analysis table (mode, severity, probability, RPN, mitigation)
 - Prioritized recommendations (critical before prototype, important before production)
 - Validation testing plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs:
+
 - Identify critical issues that could cause failure or safety problems
 - Provide specific, quantitative analysis recommendations
 - Balance engineering ideal with practical constraints
@@ -79,12 +84,13 @@ Excellent outputs:
 - Include cost-benefit rationale for recommendations
 
 Avoid:
+
 - Generic recommendations not specific to the design
 - Missing critical failure modes or safety concerns
 - Ignoring manufacturing and cost constraints
 - Recommendations without clear priority
 - Analysis without actionable next steps
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Note when recommendations require validation with detailed analysis

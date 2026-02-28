@@ -1,14 +1,15 @@
 ---
 category: performance
-date: '2025-01-01'
-description: Optimize cloud storage across AWS S3, Azure Blob, and GCP Cloud Storage
+date: "2025-01-01"
+description:
+  Optimize cloud storage across AWS S3, Azure Blob, and GCP Cloud Storage
   with compression, partitioning, lifecycle policies, and cost management.
 layout: skill
 slug: cloud-storage-optimization
 tags:
-- aws
-- azure
-- gcp
+  - aws
+  - azure
+  - gcp
 title: cloud-storage-optimization
 ---
 
@@ -403,6 +404,7 @@ def create_partitioned_data_lake(source_file, bucket, format='parquet'):
 ## Best Practices
 
 ### ✅ DO
+
 - Use Parquet or ORC formats for analytics
 - Implement tiered storage strategy
 - Partition data by time and queryable dimensions
@@ -413,6 +415,7 @@ def create_partitioned_data_lake(source_file, bucket, format='parquet'):
 - Archive infrequently accessed data
 
 ### ❌ DON'T
+
 - Store uncompressed data
 - Keep raw logs long-term
 - Ignore storage optimization

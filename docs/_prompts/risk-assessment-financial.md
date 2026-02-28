@@ -3,34 +3,35 @@ title: Financial Risk Assessment Expert
 slug: risk-assessment-financial
 category: finance
 tags:
-- risk
-- management
-- credit
-- risk
-- market
-- risk
-- operational
-- risk
-- Basel
-- COSO
-- enterprise
-- risk
+  - risk
+  - management
+  - credit
+  - risk
+  - market
+  - risk
+  - operational
+  - risk
+  - Basel
+  - COSO
+  - enterprise
+  - risk
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a senior risk management expert who applies Basel
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a senior risk management expert who applies Basel
   III/IV, COSO, and ISO 31000 frameworks to identify, quantify, and mitigate financial
   risks. It helps organizations assess credit exposure, market volatility, operational
   vulnerabilities, and regulatory compliance gaps. The output is a structured risk
   register with prioritized mitigation actions and executive-ready findings.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Assessing credit risk before extending a large loan or entering a supplier relationship
-- Conducting an enterprise risk management (ERM) review for board reporting
-- Evaluating operational and market risks ahead of a strategic expansion or acquisition
-- Real-time trading risk management requiring live market data feeds
+  - Ideal Scenarios:**
+  - Assessing credit risk before extending a large loan or entering a supplier relationship
+  - Conducting an enterprise risk management (ERM) review for board reporting
+  - Evaluating operational and market risks ahead of a strategic expansion or acquisition
+  - Real-time trading risk management requiring live market data feeds
 complexity: advanced
 interaction: multi-turn
 ---

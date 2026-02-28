@@ -62,6 +62,7 @@ This security policy defines the security standards, practices, and procedures t
 ### Scope
 
 This policy applies to:
+
 - All employees, contractors, and third-party vendors
 - All systems, applications, and infrastructure
 - All customer and company data
@@ -74,6 +75,7 @@ This policy applies to:
 ### 2.1 Password Requirements
 
 **Minimum Requirements:**
+
 - Length: Minimum 12 characters
 - Complexity: Mix of uppercase, lowercase, numbers, and symbols
 - History: Cannot reuse last 5 passwords
@@ -82,9 +84,11 @@ This policy applies to:
 
 **Example Strong Password:**
 ```
+
 Good: MyC0mplex!Pass#2025
 Bad: password123
-```
+
+````
 
 **Implementation:**
 
@@ -102,11 +106,12 @@ function validatePassword(password) {
 
   return Object.values(requirements).every(Boolean);
 }
-```
+````
 
 ### 2.2 Multi-Factor Authentication (MFA)
 
 **Requirements:**
+
 - **Mandatory** for:
   - Production system access
   - Administrative accounts
@@ -115,6 +120,7 @@ function validatePassword(password) {
   - Source code repositories
 
 **Supported Methods:**
+
 1. TOTP (Google Authenticator, Authy)
 2. SMS (backup only, not primary)
 3. Hardware tokens (YubiKey)
@@ -131,17 +137,17 @@ async function verifyMFA(userId, token) {
   // Verify TOTP token
   const isValid = speakeasy.totp.verify({
     secret,
-    encoding: 'base32',
+    encoding: "base32",
     token,
-    window: 2 // Allow 1 minute time drift
+    window: 2, // Allow 1 minute time drift
   });
 
   if (isValid) {
-    await logSecurityEvent('mfa_success', userId);
+    await logSecurityEvent("mfa_success", userId);
     return true;
   }
 
-  await logSecurityEvent('mfa_failure', userId);
+  await logSecurityEvent("mfa_failure", userId);
   return false;
 }
 ```
@@ -152,13 +158,13 @@ async function verifyMFA(userId, token) {
 
 **Roles:**
 
-| Role | Permissions | Access Level |
-|------|-------------|--------------|
-| Admin | Full system access | Read/Write/Delete All |
-| Developer | Code, staging env | Read/Write Dev/Staging |
-| Support | Customer data (limited) | Read customer data |
-| Auditor | Logs, audit trails | Read-only all |
-| User | Own data only | Read/Write own data |
+| Role      | Permissions             | Access Level           |
+| --------- | ----------------------- | ---------------------- |
+| Admin     | Full system access      | Read/Write/Delete All  |
+| Developer | Code, staging env       | Read/Write Dev/Staging |
+| Support   | Customer data (limited) | Read customer data     |
+| Auditor   | Logs, audit trails      | Read-only all          |
+| User      | Own data only           | Read/Write own data    |
 
 **Implementation:**
 
@@ -170,14 +176,14 @@ const requirePermission = (permission) => {
     const userPermissions = await getUserPermissions(user.role);
 
     if (!userPermissions.includes(permission)) {
-      await logSecurityEvent('unauthorized_access', user.id, {
+      await logSecurityEvent("unauthorized_access", user.id, {
         permission,
-        endpoint: req.path
+        endpoint: req.path,
       });
 
       return res.status(403).json({
-        error: 'Insufficient permissions',
-        required: permission
+        error: "Insufficient permissions",
+        required: permission,
       });
     }
 
@@ -186,7 +192,7 @@ const requirePermission = (permission) => {
 };
 
 // Usage
-app.delete('/api/users/:id', requirePermission('users:delete'), deleteUser);
+app.delete("/api/users/:id", requirePermission("users:delete"), deleteUser);
 ```
 
 ---
@@ -195,42 +201,44 @@ app.delete('/api/users/:id', requirePermission('users:delete'), deleteUser);
 
 ### 3.1 Data Classification
 
-| Classification | Description | Examples | Protection |
-|----------------|-------------|----------|------------|
-| **Public** | Non-sensitive, publicly available | Marketing materials | None required |
-| **Internal** | Internal use only | Company policies | Access control |
-| **Confidential** | Sensitive business data | Financial reports | Encryption + MFA |
-| **Restricted** | Highly sensitive | PII, passwords, keys | Encryption + strict access |
+| Classification   | Description                       | Examples             | Protection                 |
+| ---------------- | --------------------------------- | -------------------- | -------------------------- |
+| **Public**       | Non-sensitive, publicly available | Marketing materials  | None required              |
+| **Internal**     | Internal use only                 | Company policies     | Access control             |
+| **Confidential** | Sensitive business data           | Financial reports    | Encryption + MFA           |
+| **Restricted**   | Highly sensitive                  | PII, passwords, keys | Encryption + strict access |
 
 ### 3.2 Encryption Standards
 
 **Data at Rest:**
+
 - Algorithm: AES-256
 - Key Management: AWS KMS / HashiCorp Vault
 - Database: Transparent Data Encryption (TDE)
 
 ```javascript
 // Encrypt sensitive data before storage
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 function encryptData(plaintext, key) {
   const iv = crypto.randomBytes(16);
-  const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);
+  const cipher = crypto.createCipheriv("aes-256-gcm", key, iv);
 
-  let encrypted = cipher.update(plaintext, 'utf8', 'hex');
-  encrypted += cipher.final('hex');
+  let encrypted = cipher.update(plaintext, "utf8", "hex");
+  encrypted += cipher.final("hex");
 
   const authTag = cipher.getAuthTag();
 
   return {
     encrypted,
-    iv: iv.toString('hex'),
-    authTag: authTag.toString('hex')
+    iv: iv.toString("hex"),
+    authTag: authTag.toString("hex"),
   };
 }
 ```
 
 **Data in Transit:**
+
 - Protocol: TLS 1.3 (minimum TLS 1.2)
 - Cipher Suites: Strong ciphers only
 - Certificate: Valid SSL/TLS certificate
@@ -246,12 +254,12 @@ ssl_session_timeout 10m;
 
 ### 3.3 Data Retention
 
-| Data Type | Retention Period | Deletion Method |
-|-----------|------------------|-----------------|
-| Customer data | Until account deletion + 30 days | Secure wipe |
-| Access logs | 90 days | Automated deletion |
-| Audit logs | 7 years | Archived, then deleted |
-| Backups | 30 days | Overwrite + shred |
+| Data Type     | Retention Period                 | Deletion Method        |
+| ------------- | -------------------------------- | ---------------------- |
+| Customer data | Until account deletion + 30 days | Secure wipe            |
+| Access logs   | 90 days                          | Automated deletion     |
+| Audit logs    | 7 years                          | Archived, then deleted |
+| Backups       | 30 days                          | Overwrite + shred      |
 
 ---
 
@@ -263,24 +271,24 @@ ssl_session_timeout 10m;
 
 ```javascript
 // ✅ Good - Validate and sanitize input
-const validator = require('validator');
+const validator = require("validator");
 
 function createUser(req, res) {
   const { email, name } = req.body;
 
   // Validate email
   if (!validator.isEmail(email)) {
-    return res.status(400).json({ error: 'Invalid email' });
+    return res.status(400).json({ error: "Invalid email" });
   }
 
   // Sanitize name
   const sanitizedName = validator.escape(name);
 
   // Use parameterized queries
-  db.query(
-    'INSERT INTO users (email, name) VALUES ($1, $2)',
-    [email, sanitizedName]
-  );
+  db.query("INSERT INTO users (email, name) VALUES ($1, $2)", [
+    email,
+    sanitizedName,
+  ]);
 }
 
 // ❌ Bad - SQL injection vulnerability
@@ -296,19 +304,19 @@ function createUserBad(req, res) {
 // Content Security Policy headers
 app.use((req, res, next) => {
   res.setHeader(
-    'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"
+    "Content-Security-Policy",
+    "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';",
   );
   next();
 });
 
 // Sanitize output
-import DOMPurify from 'isomorphic-dompurify';
+import DOMPurify from "isomorphic-dompurify";
 
 function renderComment(comment) {
   const clean = DOMPurify.sanitize(comment, {
-    ALLOWED_TAGS: ['b', 'i', 'em', 'strong'],
-    ALLOWED_ATTR: []
+    ALLOWED_TAGS: ["b", "i", "em", "strong"],
+    ALLOWED_ATTR: [],
   });
   return clean;
 }
@@ -320,17 +328,20 @@ function renderComment(comment) {
 // Security headers middleware
 app.use((req, res, next) => {
   // Prevent clickjacking
-  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader("X-Frame-Options", "DENY");
 
   // XSS protection
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('X-XSS-Protection', '1; mode=block');
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-XSS-Protection", "1; mode=block");
 
   // HTTPS enforcement
-  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  res.setHeader(
+    "Strict-Transport-Security",
+    "max-age=31536000; includeSubDomains",
+  );
 
   // Referrer policy
-  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
 
   next();
 });
@@ -341,17 +352,17 @@ app.use((req, res, next) => {
 **Rate Limiting:**
 
 ```javascript
-const rateLimit = require('express-rate-limit');
+const rateLimit = require("express-rate-limit");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 100, // limit each IP to 100 requests per windowMs
-  message: 'Too many requests from this IP',
+  message: "Too many requests from this IP",
   standardHeaders: true,
-  legacyHeaders: false
+  legacyHeaders: false,
 });
 
-app.use('/api/', limiter);
+app.use("/api/", limiter);
 ```
 
 ---
@@ -361,6 +372,7 @@ app.use('/api/', limiter);
 ### 5.1 Network Security
 
 **Firewall Rules:**
+
 - Default deny all
 - Allow only required ports
 - Whitelist trusted IPs for admin access
@@ -382,6 +394,7 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ### 5.2 Server Hardening
 
 **Checklist:**
+
 - [ ] Disable root SSH login
 - [ ] Use SSH keys, disable password auth
 - [ ] Install security updates automatically
@@ -397,46 +410,52 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
 ### 6.1 Security Incident Severity
 
-| Severity | Description | Response Time | Examples |
-|----------|-------------|---------------|----------|
-| **Critical** | Massive data breach, ransomware | Immediate | Database exposed, encryption compromised |
-| **High** | Significant security compromise | < 1 hour | Admin account compromised, DDoS |
-| **Medium** | Limited security issue | < 4 hours | XSS vulnerability, phishing attempt |
-| **Low** | Minor security concern | < 24 hours | Weak password, outdated library |
+| Severity     | Description                     | Response Time | Examples                                 |
+| ------------ | ------------------------------- | ------------- | ---------------------------------------- |
+| **Critical** | Massive data breach, ransomware | Immediate     | Database exposed, encryption compromised |
+| **High**     | Significant security compromise | < 1 hour      | Admin account compromised, DDoS          |
+| **Medium**   | Limited security issue          | < 4 hours     | XSS vulnerability, phishing attempt      |
+| **Low**      | Minor security concern          | < 24 hours    | Weak password, outdated library          |
 
 ### 6.2 Incident Response Plan
 
 **Phase 1: Detection (0-15 minutes)**
+
 1. Alert received via monitoring/user report
 2. Triage severity level
 3. Assemble incident response team
 4. Create incident ticket
 
 **Phase 2: Containment (15-60 minutes)**
+
 1. Isolate affected systems
 2. Block malicious IPs/domains
 3. Revoke compromised credentials
 4. Enable additional monitoring
 
 **Phase 3: Investigation (1-4 hours)**
+
 1. Analyze logs and forensics
 2. Identify attack vector
 3. Determine scope of breach
 4. Document findings
 
 **Phase 4: Eradication (4-24 hours)**
+
 1. Remove malware/backdoors
 2. Patch vulnerabilities
 3. Update security controls
 4. Verify systems are clean
 
 **Phase 5: Recovery (24-48 hours)**
+
 1. Restore from clean backups
 2. Gradually restore services
 3. Monitor for re-infection
 4. Update documentation
 
 **Phase 6: Post-Incident (1 week)**
+
 1. Conduct post-mortem
 2. Update security policies
 3. Implement preventive measures
@@ -449,6 +468,7 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ### 7.1 GDPR Compliance
 
 **Requirements:**
+
 - [ ] Data processing records
 - [ ] Privacy policy
 - [ ] Cookie consent
@@ -459,6 +479,7 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ### 7.2 SOC 2 Compliance
 
 **Trust Services Criteria:**
+
 - **Security:** Protect against unauthorized access
 - **Availability:** System is available as committed
 - **Processing Integrity:** Processing is complete and accurate
@@ -475,12 +496,14 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 **PGP Key:** [Link to public key]
 
 **Reward Program:**
+
 - Critical: $5,000 - $10,000
 - High: $1,000 - $5,000
 - Medium: $500 - $1,000
 - Low: $100 - $500
 
 **Scope:**
+
 - ✅ In scope: Production systems, APIs, mobile apps
 - ❌ Out of scope: Test environments, third-party services
 
@@ -499,7 +522,7 @@ function logSecurityEvent(event, userId, metadata = {}) {
     ip: metadata.ip,
     userAgent: metadata.userAgent,
     resource: metadata.resource,
-    outcome: metadata.outcome
+    outcome: metadata.outcome,
   });
 }
 
@@ -511,6 +534,7 @@ function logSecurityEvent(event, userId, metadata = {}) {
 // - data_export
 // - admin_action
 ```
+
 ```
 
 ## Best Practices
@@ -543,3 +567,4 @@ function logSecurityEvent(event, userId, metadata = {}) {
 - [CIS Controls](https://www.cisecurity.org/controls)
 - [GDPR Compliance](https://gdpr.eu/)
 - [SOC 2 Compliance](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report)
+```

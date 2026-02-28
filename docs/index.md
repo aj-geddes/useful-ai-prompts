@@ -39,6 +39,7 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- What Is This -->
@@ -364,6 +365,7 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
 
         </div>
     </div>
+
 </section>
 
 <!-- Featured Prompts -->
@@ -441,6 +443,7 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
 
         </div>
     </div>
+
 </section>
 
 <!-- Browse All Prompts -->
@@ -505,6 +508,7 @@ canonical_url: "https://aj-geddes.github.io/useful-ai-prompts/"
             <p>No prompts found. Try a different search term or category filter.</p>
         </div>
     </div>
+
 </section>
 
 <!-- Footer CTA -->

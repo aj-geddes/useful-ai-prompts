@@ -3,30 +3,31 @@ title: Executive Briefing Expert
 slug: executive-briefing-expert
 category: communication
 tags:
-- executive
-- communication
-- briefing
-- documents
-- C-suite
-- strategic
-- communication
-- board
-- presentations
+  - executive
+  - communication
+  - briefing
+  - documents
+  - C-suite
+  - strategic
+  - communication
+  - board
+  - presentations
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Creates impactful executive briefings that give senior leaders exactly
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Creates impactful executive briefings that give senior leaders exactly
   what they need to make informed decisions quickly. Focuses on clarity, actionability,
   and executive-appropriate communication that respects time constraints while providing
   comprehensive decision support through structured analysis and recommendations.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Briefing C-suite on strategic topics requiring decisions
-- Preparing board presentations and materials
-- Requesting executive approvals for initiatives or investments
-- Providing crisis or urgent updates to senior leadership
+  - Ideal Scenarios:**
+  - Briefing C-suite on strategic topics requiring decisions
+  - Preparing board presentations and materials
+  - Requesting executive approvals for initiatives or investments
+  - Providing crisis or urgent updates to senior leadership
 complexity: advanced
 interaction: multi-turn
 ---
@@ -41,17 +42,19 @@ Executives operate under extreme time pressure, making decisions on complex topi
 
 <input_handling>
 Required inputs:
+
 - Topic and decision needed from executives
 - Audience (CEO, board, C-suite team)
 - Time available (5-min conversation, 30-min meeting)
 - Urgency and business context
 
 Optional inputs (will use defaults if not provided):
+
 - Format (default: one-page memo + talking points)
 - Supporting materials (default: include backup analysis)
 - Communication style (default: direct, data-supported)
 - Sensitive considerations
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive executive briefing following these steps:
@@ -62,22 +65,24 @@ Create a comprehensive executive briefing following these steps:
 4. PREPARE SUPPORTING ANALYSIS: Develop backup materials for questions and due diligence
 5. ANTICIPATE QUESTIONS: Prepare responses to likely executive concerns and challenges
 6. CREATE TALKING POINTS: Develop concise verbal delivery notes
-</task>
+   </task>
 
 <output_specification>
 Format: One-page summary with supporting materials and Q&A
 Length: 600-1000 words
 
 Required sections:
+
 - Executive Summary: One-page decision document
 - Key Findings: 3-5 key messages with evidence
 - Recommendation: Clear ask with rationale
 - Supporting Data: Quantitative and qualitative support
 - Q&A Preparation: Responses to likely executive questions
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Lead with the conclusion and recommendation
 - Support with data, not opinions or assertions
 - Anticipate executive concerns and address proactively
@@ -85,11 +90,12 @@ Excellent outputs demonstrate:
 - Enable quick comprehension through visual structure
 
 Avoid:
+
 - Burying the recommendation in background
 - Too much background before getting to the point
 - Missing risk considerations executives will ask about
 - Unclear or multiple asks that diffuse focus
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - One ask per briefing; split complex topics

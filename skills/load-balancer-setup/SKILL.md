@@ -155,8 +155,8 @@ backend stats_backend
 
 ```yaml
 # aws-alb-cloudformation.yaml
-AWSTemplateFormatVersion: '2010-09-09'
-Description: 'Application Load Balancer with Target Groups'
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Application Load Balancer with Target Groups"
 
 Parameters:
   VpcId:
@@ -191,13 +191,13 @@ Resources:
           CidrIp: 0.0.0.0/0
       Tags:
         - Key: Name
-          Value: !Sub '${Environment}-alb-sg'
+          Value: !Sub "${Environment}-alb-sg"
 
   # Application Load Balancer
   ApplicationLoadBalancer:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
-      Name: !Sub '${Environment}-alb'
+      Name: !Sub "${Environment}-alb"
       Type: application
       Scheme: internet-facing
       SecurityGroups:
@@ -215,7 +215,7 @@ Resources:
         - Type: redirect
           RedirectConfig:
             Protocol: HTTPS
-            Port: '443'
+            Port: "443"
             StatusCode: HTTP_301
       LoadBalancerArn: !Ref ApplicationLoadBalancer
       Port: 80
@@ -232,13 +232,13 @@ Resources:
       Port: 443
       Protocol: HTTPS
       Certificates:
-        - CertificateArn: !Sub 'arn:aws:acm:${AWS::Region}:${AWS::AccountId}:certificate/xxxxxxxx'
+        - CertificateArn: !Sub "arn:aws:acm:${AWS::Region}:${AWS::AccountId}:certificate/xxxxxxxx"
 
   # Target Group for Web Servers
   WebTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      Name: !Sub '${Environment}-web-tg'
+      Name: !Sub "${Environment}-web-tg"
       Port: 8080
       Protocol: HTTP
       VpcId: !Ref VpcId
@@ -256,19 +256,19 @@ Resources:
       # Stickiness
       TargetGroupAttributes:
         - Key: deregistration_delay.timeout_seconds
-          Value: '30'
+          Value: "30"
         - Key: stickiness.enabled
-          Value: 'true'
+          Value: "true"
         - Key: stickiness.type
-          Value: 'lb_cookie'
+          Value: "lb_cookie"
         - Key: stickiness.lb_cookie.duration_seconds
-          Value: '86400'
+          Value: "86400"
 
   # Target Group for API
   ApiTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      Name: !Sub '${Environment}-api-tg'
+      Name: !Sub "${Environment}-api-tg"
       Port: 3000
       Protocol: HTTP
       VpcId: !Ref VpcId
@@ -289,7 +289,7 @@ Resources:
           TargetGroupArn: !Ref ApiTargetGroup
       Conditions:
         - Field: path-pattern
-          Values: ['/api/*']
+          Values: ["/api/*"]
       ListenerArn: !Ref HttpsListener
       Priority: 1
 
@@ -362,20 +362,20 @@ main "$@"
 ```yaml
 # prometheus-scrape-config.yaml
 scrape_configs:
-  - job_name: 'haproxy'
+  - job_name: "haproxy"
     static_configs:
-      - targets: ['localhost:8404']
-    metrics_path: '/stats;csv'
+      - targets: ["localhost:8404"]
+    metrics_path: "/stats;csv"
     scrape_interval: 15s
 
-  - job_name: 'alb'
+  - job_name: "alb"
     cloudwatch_sd_configs:
       - region: us-east-1
         port: 443
     relabel_configs:
       - source_labels: [__meta_aws_cloudwatch_namespace]
         action: keep
-        regex: 'AWS/ApplicationELB'
+        regex: "AWS/ApplicationELB"
 ```
 
 ## Load Balancing Algorithms
@@ -389,6 +389,7 @@ scrape_configs:
 ## Best Practices
 
 ### ✅ DO
+
 - Implement health checks
 - Use connection pooling
 - Enable session persistence when needed
@@ -399,6 +400,7 @@ scrape_configs:
 - Implement graceful connection draining
 
 ### ❌ DON'T
+
 - Allow single point of failure
 - Skip health check configuration
 - Mix HTTP and HTTPS without redirect
@@ -412,4 +414,4 @@ scrape_configs:
 
 - [HAProxy Documentation](http://www.haproxy.org/)
 - [AWS ELB/ALB/NLB Documentation](https://docs.aws.amazon.com/elasticloadbalancing/)
-- [Load Balancing Strategies](https://en.wikipedia.org/wiki/Load_balancing_(computing))
+- [Load Balancing Strategies](<https://en.wikipedia.org/wiki/Load_balancing_(computing)>)

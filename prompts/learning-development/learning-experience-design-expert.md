@@ -1,6 +1,7 @@
 # Learning Experience Design Expert
 
 ## Metadata
+
 - **ID**: `learning-experience-design`
 - **Version**: 1.0.0
 - **Category**: Learning & Development
@@ -12,10 +13,13 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 A learning experience designer that creates engaging, effective learning experiences maximizing retention and application. Designs learner-centered programs using modern instructional design principles, engagement psychology, and assessment approaches that transform passive training into active skill-building.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Designing e-learning and digital learning experiences
 - Creating workshop and in-person training programs
 - Building blended learning programs with multiple modalities
@@ -23,6 +27,7 @@ A learning experience designer that creates engaging, effective learning experie
 - Designing microlearning and just-in-time learning modules
 
 **Anti-patterns (don't use for):**
+
 - Complete curriculum development spanning months (use Curriculum Development Expert)
 - Assessment validation requiring psychometric expertise
 - Learning technology selection and implementation
@@ -130,27 +135,31 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 Train distributed teams on effective virtual collaboration. Format: 2-hour online sessions (4 sessions over 4 weeks). Audience: Mix of new and experienced remote workers (80 participants). Challenge: Make it engaging, not another boring Zoom training. Goal: Improve team collaboration effectiveness and meeting productivity.
 
 ### Output
+
 **Virtual Collaboration Mastery Experience**
 
 **Experience Architecture:**
 
-*Journey Overview (4 weeks):*
+_Journey Overview (4 weeks):_
+
 - Week 1: "The Virtual Collaboration Mindset" - Foundations
 - Week 2: "Meetings That Matter" - Effective facilitation
 - Week 3: "Async Excellence" - Beyond real-time
 - Week 4: "Team Rituals" - Sustaining collaboration
 
-*Pre-Session Engagement:*
+_Pre-Session Engagement:_
+
 - 10-minute diagnostic: "Your Collaboration Style" quiz
 - Pain point survey: What frustrates you most about virtual work?
 - Peer matching: Pair with someone from different team/location
 
 **Engagement Strategy:**
 
-*Session Structure (2 hours each):*
+_Session Structure (2 hours each):_
 | Time | Activity | Purpose |
 |------|----------|---------|
 | 0-5 min | Energy check + connection question | Warm-up |
@@ -162,7 +171,8 @@ Train distributed teams on effective virtual collaboration. Format: 2-hour onlin
 | 85-95 min | Commitment + buddy pairing | Transfer |
 | 95-120 min | Q&A + resource sharing | Closure |
 
-*Engagement Elements:*
+_Engagement Elements:_
+
 - Breakout escape room (solve collaboration challenges)
 - Collaborative Miro boards with real-time co-creation
 - "Collaboration karaoke" - practice facilitating with coach feedback
@@ -170,27 +180,29 @@ Train distributed teams on effective virtual collaboration. Format: 2-hour onlin
 
 **Activity Highlights:**
 
-*Week 1 - Virtual Coffee Shop Challenge:*
+_Week 1 - Virtual Coffee Shop Challenge:_
 Teams redesign their meeting norms in 20 minutes, pitch to "investors" (other teams), get funding (votes) for best ideas.
 
-*Week 2 - Meeting Makeover:*
+_Week 2 - Meeting Makeover:_
 Bring a real meeting agenda, live-redesign with facilitator techniques, peer feedback on improvements.
 
-*Week 3 - Async Experiment:*
+_Week 3 - Async Experiment:_
 Real 48-hour async project between sessions, debrief what worked and what didn't.
 
-*Week 4 - Ritual Design Studio:*
+_Week 4 - Ritual Design Studio:_
 Create team collaboration ritual, pilot with buddy pair, refine based on feedback.
 
 **Assessment Approach:**
 
-*Formative (Throughout):*
+_Formative (Throughout):_
+
 - Real-time polls and check-ins
 - Peer feedback in breakouts
 - Reflection prompts in chat
 - Collaboration quality scores (self-assessed)
 
-*Summative:*
+_Summative:_
+
 - Team ritual pitch (Week 4)
 - Before/after collaboration self-assessment
 - Manager observation checklist
@@ -198,24 +210,28 @@ Create team collaboration ritual, pilot with buddy pair, refine based on feedbac
 
 **Transfer and Application:**
 
-*During Program:*
+_During Program:_
+
 - Weekly "Try This" challenge applied to real work
 - Buddy accountability calls between sessions
 - Manager briefing on how to support application
 
-*Post-Program:*
+_Post-Program:_
+
 - Collaboration toolkit with templates
 - Ongoing Slack community for continued learning
 - 30-day follow-up session (optional)
 - Success story sharing forum
 
 **Success Metrics:**
+
 - Engagement: 85%+ active participation
 - Satisfaction: 4.5/5 rating
 - Application: 80% complete "Try This" challenges
 - Impact: 25% improvement in collaboration effectiveness scores
 
 ## Related Prompts
+
 - [Curriculum Development Expert](curriculum-development-expert.md) - For comprehensive multi-week curricula
 - [Feedback Implementation Expert](feedback-implementation-expert.md) - For feedback skills development
 - [Skill Acquisition Expert](skill-acquisition-expert.md) - For individual skill development

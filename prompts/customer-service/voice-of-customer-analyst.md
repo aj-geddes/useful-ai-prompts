@@ -1,6 +1,7 @@
 # Voice of Customer Analyst
 
 ## Metadata
+
 - **ID**: `customer-service-voice-of-customer-analyst`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a Voice of Customer program specialist who designs, manage
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building a VoC program from scratch for a scaling company that has outgrown ad-hoc feedback collection
 - Redesigning a VoC program that collects data but fails to drive action across the organization
 - Preparing a quarterly Voice of Customer report for executive leadership or the board
 
 **Anti-patterns (Don't Use For):**
+
 - One-time feedback analysis without intent to build a repeating program
 - Organizations without the cross-functional alignment to act on customer insights
 
@@ -71,23 +74,25 @@ Include a "closing the loop" communication to customers — VoC programs that ne
 ## Example Usage
 
 ### Input
+
 "We're a 200-person B2B SaaS company, $25M ARR, ~400 enterprise customers. Right now we run an annual NPS survey (score is +22) and collect support CSAT. The NPS report gets sent to the CEO and that's mostly it. We want to build a real VoC program that actually drives action across Product, Sales, and Support."
 
 ### Output
+
 **Voice of Customer Program Design**
 
 ---
 
 **Listening Architecture**
 
-| Channel | Trigger | Cadence | Metric | Sample Rate | Owner |
-|---|---|---|---|---|---|
-| Relationship NPS | Bi-annual, all customers | April + October | NPS + verbatim | 100% | Customer Success |
-| Transactional CSAT | 24h post ticket closure | Continuous | CSAT score + comment | 100% | Support Ops |
-| Onboarding Pulse | Day 30 of new customer lifecycle | Event-triggered | Effort score + sentiment | 100% | CS / Onboarding |
-| Product In-App | After key feature use (export, report, integration) | Event-triggered | Micro-survey (1 question) | 20% sample | Product |
-| Win/Loss Interview | Within 14 days of deal close or churn | Event-triggered | Qualitative themes | 100% of churn, 25% of wins | Sales / CS |
-| Public Review Monitoring | Continuous (G2, Capterra, LinkedIn) | Weekly digest | Sentiment, topics, rating | All mentions | Marketing / CS |
+| Channel                  | Trigger                                             | Cadence         | Metric                    | Sample Rate                | Owner            |
+| ------------------------ | --------------------------------------------------- | --------------- | ------------------------- | -------------------------- | ---------------- |
+| Relationship NPS         | Bi-annual, all customers                            | April + October | NPS + verbatim            | 100%                       | Customer Success |
+| Transactional CSAT       | 24h post ticket closure                             | Continuous      | CSAT score + comment      | 100%                       | Support Ops      |
+| Onboarding Pulse         | Day 30 of new customer lifecycle                    | Event-triggered | Effort score + sentiment  | 100%                       | CS / Onboarding  |
+| Product In-App           | After key feature use (export, report, integration) | Event-triggered | Micro-survey (1 question) | 20% sample                 | Product          |
+| Win/Loss Interview       | Within 14 days of deal close or churn               | Event-triggered | Qualitative themes        | 100% of churn, 25% of wins | Sales / CS       |
+| Public Review Monitoring | Continuous (G2, Capterra, LinkedIn)                 | Weekly digest   | Sentiment, topics, rating | All mentions               | Marketing / CS   |
 
 ---
 
@@ -103,13 +108,13 @@ Quarterly (VP CX): Full VoC report with NPS trend, top 5 themes by volume and se
 
 **Distribution Matrix**
 
-| Audience | Receives | Frequency | Format |
-|---|---|---|---|
-| Frontline Support Agents | Their individual CSAT scores + recent verbatims | Weekly | Dashboard / Slack |
-| Support Manager | Team CSAT trend, escalation themes | Weekly | Report |
-| Product Team | In-app feedback digest, feature request themes, NPS Detractor verbatims | Monthly | Brief + tagged themes |
-| CS / Account Management | Account-level NPS scores, health signals, churn risk flags | Real-time + monthly | CRM field + report |
-| Executive Leadership | NPS trend, top themes, action status, competitive signals | Quarterly | Slide deck |
+| Audience                 | Receives                                                                | Frequency           | Format                |
+| ------------------------ | ----------------------------------------------------------------------- | ------------------- | --------------------- |
+| Frontline Support Agents | Their individual CSAT scores + recent verbatims                         | Weekly              | Dashboard / Slack     |
+| Support Manager          | Team CSAT trend, escalation themes                                      | Weekly              | Report                |
+| Product Team             | In-app feedback digest, feature request themes, NPS Detractor verbatims | Monthly             | Brief + tagged themes |
+| CS / Account Management  | Account-level NPS scores, health signals, churn risk flags              | Real-time + monthly | CRM field + report    |
+| Executive Leadership     | NPS trend, top themes, action status, competitive signals               | Quarterly           | Slide deck            |
 
 ---
 
@@ -128,10 +133,12 @@ Step 4 — Customer communication: When a feature is shipped or process changed 
 ---
 
 ## Variations
+
 - **Startup VoC Mode**: Design a lightweight VoC program for a pre-PMF company with under 50 customers, emphasizing qualitative interviews over survey infrastructure
 - **VoC Audit Mode**: Assess an existing VoC program against best practices and identify gaps in listening coverage, action accountability, and organizational distribution
 
 ## Related Prompts
+
 - [Customer Feedback Analyst](customer-feedback-analyst.md) - Analyzing the data that the VoC program collects
 - [Customer Journey Mapper](customer-journey-mapper.md) - Mapping VoC listening points to journey stages
 - [Support Team Trainer](support-team-trainer.md) - Training agents to capture and escalate qualitative customer insights

@@ -1,6 +1,7 @@
 # ADR Research Framework
 
 ## Metadata
+
 - **ID**: `adr-research-framework`
 - **Version**: 1.1.0
 - **Category**: Technical / Architecture
@@ -18,6 +19,7 @@ Provides a structured framework for conducting comprehensive technical research 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Researching technology choices for architectural decisions requiring formal documentation
 - Conducting technical due diligence before major platform commitments (multi-year investments)
 - Comparing multiple technology candidates with equivalent rigor and objectivity
@@ -25,6 +27,7 @@ Provides a structured framework for conducting comprehensive technical research 
 - Evaluating build vs. buy decisions with comprehensive trade-off analysis
 
 **Anti-patterns (when not to use):**
+
 - Simple implementation decisions not requiring governance oversight
 - One-off tooling choices with minimal long-term impact
 - Decisions not requiring formal ADR documentation
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 We need to evaluate API gateway solutions for our microservices platform. Decision Topic: API Gateway Selection. Domain: Service mesh and API management for Kubernetes-native applications. Candidates: Kong Gateway, AWS API Gateway, Istio with Envoy, Traefik, Ambassador/Emissary. Evaluation Criteria: Cost, latency, security features, Kubernetes-native integration, observability, extensibility. We have SOC 2 and HIPAA compliance requirements. Looking for a 5+ year platform commitment.
 
 ### Output
@@ -118,6 +122,7 @@ This analysis evaluates five API gateway approaches for Kubernetes-native micros
 **Technology Landscape Survey**
 
 The API gateway market presents five distinct architectural approaches:
+
 - **Open-source self-managed**: Kong, Traefik - traditional gateway model with Kubernetes CRD support
 - **Cloud-native managed**: AWS API Gateway - zero-infrastructure model with vendor lock-in
 - **Service mesh integrated**: Istio/Envoy - full mesh capabilities extending beyond gateway
@@ -127,32 +132,32 @@ Market context: CNCF landscape shows Envoy-based solutions gaining adoption shar
 
 **Candidate Analysis**
 
-*Kong Gateway*
+_Kong Gateway_
 Mature ecosystem established 2015 with strong plugin architecture (150+ plugins). Enterprise tier provides RBAC, audit logging, rate limiting, and HIPAA-compatible security features. CNCF member project with active community (37K GitHub stars). Latency impact: 1-3ms added per request. Deployment: Kubernetes CRDs, Helm charts, or standalone. TCO: Medium (infrastructure + optional enterprise licensing).
 
-*AWS API Gateway*
+_AWS API Gateway_
 Fully managed service with zero infrastructure overhead. Native AWS service integration simplifies Lambda, DynamoDB patterns. Latency impact: 10-30ms for REST APIs, 5-15ms for HTTP APIs. Limited customization without Lambda@Edge. Vendor lock-in: High - proprietary APIs, no portable configuration. SOC 2 and HIPAA compliant through AWS BAA. TCO: High at scale (per-request pricing).
 
-*Istio/Envoy*
+_Istio/Envoy_
 Full service mesh capabilities with mTLS by default, traffic management, and comprehensive observability. Higher operational complexity requiring dedicated platform expertise. Latency impact: 2-5ms. CNCF graduated project with broad enterprise adoption. Strong security posture with zero-trust networking model. TCO: Low licensing, high operational investment.
 
-*Traefik*
+_Traefik_
 Lightweight, Kubernetes-native with automatic service discovery. Simpler operational model than Istio. Latency impact: 1-2ms. Middleware system for authentication, rate limiting. Enterprise features in paid tier. TCO: Low-medium.
 
-*Ambassador/Emissary*
+_Ambassador/Emissary_
 Envoy-based, Kubernetes-first design. Strong developer experience with GitOps workflows. CNCF incubating project. Enterprise features include rate limiting, SSO integration. Latency impact: 2-4ms. TCO: Medium.
 
 **Comparison Matrix**
 
-| Criterion (Weight) | Kong | AWS API GW | Istio | Traefik | Ambassador |
-|-------------------|------|------------|-------|---------|------------|
-| 5-Year TCO (20%) | Medium | High | Low-Medium | Low | Medium |
-| Latency (15%) | Low (1-3ms) | Medium (10-30ms) | Low (2-5ms) | Low (1-2ms) | Low (2-4ms) |
-| Security (20%) | High | High | High | Medium | High |
-| K8s Native (15%) | High | Low | High | High | High |
-| Observability (15%) | High | Medium | High | Medium | High |
-| Extensibility (15%) | High | Low | Medium | Medium | High |
-| Lock-in Risk | Low | High | Low | Low | Low |
+| Criterion (Weight)  | Kong        | AWS API GW       | Istio       | Traefik     | Ambassador  |
+| ------------------- | ----------- | ---------------- | ----------- | ----------- | ----------- |
+| 5-Year TCO (20%)    | Medium      | High             | Low-Medium  | Low         | Medium      |
+| Latency (15%)       | Low (1-3ms) | Medium (10-30ms) | Low (2-5ms) | Low (1-2ms) | Low (2-4ms) |
+| Security (20%)      | High        | High             | High        | Medium      | High        |
+| K8s Native (15%)    | High        | Low              | High        | High        | High        |
+| Observability (15%) | High        | Medium           | High        | Medium      | High        |
+| Extensibility (15%) | High        | Low              | Medium      | Medium      | High        |
+| Lock-in Risk        | Low         | High             | Low         | Low         | Low         |
 
 **Reversibility Assessment**
 

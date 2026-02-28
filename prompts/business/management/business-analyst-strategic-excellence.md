@@ -1,6 +1,7 @@
 # Business Analyst Strategic Excellence
 
 ## Metadata
+
 - **ID**: `business-analyst-strategic-excellence`
 - **Version**: 1.0.0
 - **Category**: Business/Management
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Conducts strategic business analysis to drive organizational improvement through root cause analysis, solution design, and quantified business cases. Transforms complex problems into actionable roadmaps with measurable outcomes.
 
 ## When to Use
+
 - Analyzing business problems requiring data-driven solutions
 - Building business cases for major investments
 - Designing solution options with trade-off analysis
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "We're experiencing high customer churn - 25% annually compared to 15% industry average. This translates to roughly $5M in lost revenue per year. Our current state is reactive: we have siloed customer data across 5 systems, no predictive analytics, and our customer success team only intervenes after escalations. We want to move to proactive customer engagement with churn below 15%. Key stakeholders are Customer Success, Sales, Product, IT, and Executive leadership. Our budget is approximately $500K for this initiative with a 6-month implementation timeline. We need a comprehensive analysis with options and a clear business case to present to the executive team."
 
 ### Output
@@ -142,12 +146,12 @@ ANNUAL CHURN: 25% (Target: 15%)
 
 ### Systemic Issues Enabling Churn
 
-| Issue | Impact | Current State |
-|-------|--------|---------------|
-| Data Silos | Prevents early warning | 5 disconnected systems |
-| Reactive Model | Intervention too late | Action only after escalation |
-| No Prediction | No early warning signals | Missing predictive indicators |
-| Value Tracking | Can't demonstrate ROI | No value realization by Day 90 |
+| Issue          | Impact                   | Current State                  |
+| -------------- | ------------------------ | ------------------------------ |
+| Data Silos     | Prevents early warning   | 5 disconnected systems         |
+| Reactive Model | Intervention too late    | Action only after escalation   |
+| No Prediction  | No early warning signals | Missing predictive indicators  |
+| Value Tracking | Can't demonstrate ROI    | No value realization by Day 90 |
 
 ---
 
@@ -157,21 +161,23 @@ ANNUAL CHURN: 25% (Target: 15%)
 
 **Approach:** Unified data platform + predictive analytics + automated interventions
 
-| Dimension | Assessment |
-|-----------|------------|
-| Investment | $350K (70% of budget) |
-| Timeline | 4 months to pilot, 6 months full |
-| Churn Reduction | 10 percentage points (25% to 15%) |
-| ROI Timeline | 14 months to breakeven |
+| Dimension           | Assessment                          |
+| ------------------- | ----------------------------------- |
+| Investment          | $350K (70% of budget)               |
+| Timeline            | 4 months to pilot, 6 months full    |
+| Churn Reduction     | 10 percentage points (25% to 15%)   |
+| ROI Timeline        | 14 months to breakeven              |
 | Implementation Risk | Medium (requires change management) |
 
 **Strengths:**
+
 - Addresses root cause (data visibility + prediction)
 - 85% prediction accuracy achievable based on benchmarks
 - Scalable foundation for growth
 - Enables proactive intervention at optimal timing
 
 **Weaknesses:**
+
 - Higher upfront investment
 - Requires organizational change management
 - 4-month delay before initial results
@@ -184,20 +190,22 @@ ANNUAL CHURN: 25% (Target: 15%)
 
 **Approach:** Separate tools for specific problems (onboarding software, health scoring addon)
 
-| Dimension | Assessment |
-|-----------|------------|
-| Investment | $150K |
-| Timeline | 2 months |
-| Churn Reduction | 5-7 percentage points |
-| ROI Timeline | 8 months |
-| Implementation Risk | Low |
+| Dimension           | Assessment            |
+| ------------------- | --------------------- |
+| Investment          | $150K                 |
+| Timeline            | 2 months              |
+| Churn Reduction     | 5-7 percentage points |
+| ROI Timeline        | 8 months              |
+| Implementation Risk | Low                   |
 
 **Strengths:**
+
 - Faster implementation
 - Lower initial investment
 - Less organizational change required
 
 **Weaknesses:**
+
 - Doesn't solve core data integration issue
 - Limited prediction capability
 - Creates new integration burden
@@ -211,19 +219,21 @@ ANNUAL CHURN: 25% (Target: 15%)
 
 **Approach:** Hire additional CSMs, improve processes without technology
 
-| Dimension | Assessment |
-|-----------|------------|
-| Investment | $200K (2 additional CSMs) |
-| Timeline | 3 months |
-| Churn Reduction | 3-5 percentage points |
-| ROI Timeline | 18 months |
-| Implementation Risk | Low |
+| Dimension           | Assessment                |
+| ------------------- | ------------------------- |
+| Investment          | $200K (2 additional CSMs) |
+| Timeline            | 3 months                  |
+| Churn Reduction     | 3-5 percentage points     |
+| ROI Timeline        | 18 months                 |
+| Implementation Risk | Low                       |
 
 **Strengths:**
+
 - Human touch increases relationship quality
 - Immediate execution possible
 
 **Weaknesses:**
+
 - Not scalable beyond current customer count
 - High ongoing cost (recurring vs. one-time)
 - Still reactive without data visibility
@@ -238,6 +248,7 @@ ANNUAL CHURN: 25% (Target: 15%)
 ### Financial Analysis
 
 **Current Annual Loss from Excess Churn:**
+
 ```
 Lost Revenue:                    $5,000,000
 Customer Acquisition to Replace: $1,500,000 (at $3K CAC)
@@ -246,6 +257,7 @@ Total Annual Impact:             $6,500,000
 ```
 
 **Projected Annual Benefit (at 15% churn):**
+
 ```
 Revenue Retained:                $3,000,000 (60% of lost revenue recovered)
 Reduced Acquisition Costs:       $  900,000 (60% fewer replacements needed)
@@ -255,6 +267,7 @@ Total Annual Benefit:            $4,400,000
 ```
 
 **Investment Summary:**
+
 ```
 Platform & Integration:          $200,000
 Implementation Services:         $  75,000
@@ -274,11 +287,11 @@ Total Investment:                $350,000
 
 ### Scenario Analysis
 
-| Scenario | Probability | Churn Reduction | Year 1 Benefit | NPV |
-|----------|-------------|-----------------|----------------|-----|
-| Conservative | 30% | 7pp (to 18%) | $2,600,000 | $5,100,000 |
-| Base | 50% | 10pp (to 15%) | $4,400,000 | $8,200,000 |
-| Optimistic | 20% | 12pp (to 13%) | $5,500,000 | $10,800,000 |
+| Scenario     | Probability | Churn Reduction | Year 1 Benefit | NPV         |
+| ------------ | ----------- | --------------- | -------------- | ----------- |
+| Conservative | 30%         | 7pp (to 18%)    | $2,600,000     | $5,100,000  |
+| Base         | 50%         | 10pp (to 15%)   | $4,400,000     | $8,200,000  |
+| Optimistic   | 20%         | 12pp (to 13%)   | $5,500,000     | $10,800,000 |
 
 **Expected Value:** $6,920,000 NPV (probability-weighted)
 
@@ -287,6 +300,7 @@ Total Investment:                $350,000
 ## IMPLEMENTATION ROADMAP
 
 ### Phase 1: Foundation (Months 1-2)
+
 **Investment: $150K | Team: PM + 2 Engineers + CS Lead**
 
 - Data integration: Connect 5 source systems via APIs
@@ -297,6 +311,7 @@ Total Investment:                $350,000
 **Milestone:** Health scores correlating 70%+ with actual churn
 
 ### Phase 2: Pilot (Month 3)
+
 **Investment: $50K | Team: Same + Data Analyst**
 
 - Deploy to 100 customer accounts (stratified sample)
@@ -307,6 +322,7 @@ Total Investment:                $350,000
 **Milestone:** 60%+ of at-risk interventions improve health score
 
 ### Phase 3: Rollout (Months 4-5)
+
 **Investment: $100K | Team: Full CS team + Training**
 
 - Wave 1: High-value customers (top 20% by revenue)
@@ -317,6 +333,7 @@ Total Investment:                $350,000
 **Milestone:** 100% customer coverage with proactive monitoring
 
 ### Phase 4: Optimization (Month 6+)
+
 **Investment: $50K | Team: Ongoing operations**
 
 - Model refinement based on intervention outcomes
@@ -331,34 +348,37 @@ Total Investment:                $350,000
 ## SUCCESS METRICS DASHBOARD
 
 ### Leading Indicators (Weekly Tracking)
-| Metric | Baseline | Month 3 Target | Month 6 Target |
-|--------|----------|----------------|----------------|
-| Avg Health Score | 45% healthy | 55% healthy | 70% healthy |
-| Onboarding Completion | 40% | 60% | 80% |
-| Time to First Value | 45 days | 35 days | 25 days |
-| At-Risk Intervention Rate | 0% | 50% | 90% |
+
+| Metric                    | Baseline    | Month 3 Target | Month 6 Target |
+| ------------------------- | ----------- | -------------- | -------------- |
+| Avg Health Score          | 45% healthy | 55% healthy    | 70% healthy    |
+| Onboarding Completion     | 40%         | 60%            | 80%            |
+| Time to First Value       | 45 days     | 35 days        | 25 days        |
+| At-Risk Intervention Rate | 0%          | 50%            | 90%            |
 
 ### Lagging Indicators (Monthly Tracking)
-| Metric | Baseline | Month 6 Target | Month 12 Target |
-|--------|----------|----------------|-----------------|
-| Monthly Churn Rate | 2.1% | 1.5% | 1.25% |
-| Net Revenue Retention | 95% | 102% | 110% |
-| Customer Health Score Avg | 45 | 65 | 75 |
-| Revenue Retained | - | $2.2M | $4.4M |
+
+| Metric                    | Baseline | Month 6 Target | Month 12 Target |
+| ------------------------- | -------- | -------------- | --------------- |
+| Monthly Churn Rate        | 2.1%     | 1.5%           | 1.25%           |
+| Net Revenue Retention     | 95%      | 102%           | 110%            |
+| Customer Health Score Avg | 45       | 65             | 75              |
+| Revenue Retained          | -        | $2.2M          | $4.4M           |
 
 ---
 
 ## RISK FACTORS AND MITIGATION
 
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| Data quality issues | Medium | High | Data audit in Week 1, cleansing budget |
-| Change resistance | Medium | Medium | Executive sponsorship, early wins |
-| Integration delays | Low | High | Contingency timeline, phased approach |
-| Prediction accuracy | Low | Medium | Pilot validation before full rollout |
+| Risk                | Likelihood | Impact | Mitigation                             |
+| ------------------- | ---------- | ------ | -------------------------------------- |
+| Data quality issues | Medium     | High   | Data audit in Week 1, cleansing budget |
+| Change resistance   | Medium     | Medium | Executive sponsorship, early wins      |
+| Integration delays  | Low        | High   | Contingency timeline, phased approach  |
+| Prediction accuracy | Low        | Medium | Pilot validation before full rollout   |
 
 ---
 
 ## Related Prompts
+
 - [Process Optimization Expert](../operations/process-optimization-expert.md)
 - [Requirements Engineering Expert](../business-analysis/requirements-engineering-expert.md)

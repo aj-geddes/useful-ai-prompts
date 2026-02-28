@@ -1,14 +1,15 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Develop Ruby on Rails applications with models, controllers, views, Active
+date: "2025-01-01"
+description:
+  Develop Ruby on Rails applications with models, controllers, views, Active
   Record ORM, authentication, and RESTful routes. Use when building Rails applications,
   managing database relationships, and implementing MVC architecture.
 layout: skill
 slug: ruby-rails-application
 tags:
-- ruby
-- data
+  - ruby
+  - data
 title: ruby-rails-application
 ---
 
@@ -462,6 +463,7 @@ end
 ## Best Practices
 
 ### ✅ DO
+
 - Use conventions over configuration
 - Leverage Active Record associations
 - Implement proper scopes for queries
@@ -474,11 +476,12 @@ end
 - Use before_action filters appropriately
 
 ### ❌ DON'T
+
 - Use raw SQL without parameterization
 - Implement business logic in controllers
 - Trust user input without validation
 - Store secrets in code
-- Use select * without specifying columns
+- Use select \* without specifying columns
 - Forget N+1 query problems (use includes/joins)
 - Implement authentication in each controller
 - Use global variables

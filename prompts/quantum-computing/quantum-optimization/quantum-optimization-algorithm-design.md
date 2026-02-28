@@ -1,6 +1,7 @@
 # Quantum Optimization Algorithm Design
 
 ## Metadata
+
 - **ID**: `quantum-optimization-algorithm`
 - **Version**: 1.0.0
 - **Category**: Quantum Computing
@@ -18,6 +19,7 @@ Design and implement quantum optimization algorithms for combinatorial, continuo
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Solving combinatorial optimization problems (MaxCut, TSP, scheduling) with quantum approaches
 - Implementing QAOA circuits for gate-based quantum hardware
 - Designing quantum annealing formulations for D-Wave systems
@@ -25,6 +27,7 @@ Design and implement quantum optimization algorithms for combinatorial, continuo
 - Developing hybrid quantum-classical optimization workflows
 
 **Anti-Patterns (When NOT to Use):**
+
 - Pure continuous optimization without discrete components
 - Classical optimization problems with known polynomial-time algorithms
 - Problems where classical solvers already achieve optimal performance
@@ -107,6 +110,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I need to solve vehicle routing problems with 50 stops and capacity constraints. Currently using OR-Tools with solutions in 30 seconds but want to explore quantum approaches for potential advantage. Have access to IBM Quantum (100+ qubits) and D-Wave.
 
 ### Output
@@ -116,6 +120,7 @@ I need to solve vehicle routing problems with 50 stops and capacity constraints.
 **Problem Formulation**
 
 **QUBO Representation**
+
 ```
 Variables: x_{i,j,k} = 1 if vehicle k visits stop i at position j
 
@@ -131,11 +136,13 @@ Penalty weights: A=100, B=50, C=75 (tuned via penalty scaling)
 ```
 
 **Qubit Requirements Analysis**
+
 - Full encoding: 50 stops x 50 positions x 5 vehicles = 12,500 variables
 - Exceeds current hardware capacity
 - Decomposition strategy required
 
 **Hybrid Decomposition Strategy**
+
 ```python
 class HybridVRPSolver:
     def solve(self, problem):
@@ -153,6 +160,7 @@ class HybridVRPSolver:
 ```
 
 **QAOA Implementation (per cluster)**
+
 ```
 Circuit Structure:
 - Cost Hamiltonian: Distance objective + constraint penalties
@@ -167,6 +175,7 @@ Parameter Optimization:
 ```
 
 **D-Wave Annealing Approach**
+
 ```
 Direct QUBO submission:
 - Minor embedding for Pegasus topology mapping
@@ -176,6 +185,7 @@ Direct QUBO submission:
 ```
 
 **Benchmarking Framework**
+
 ```
 Classical Baselines:
 - OR-Tools (30 sec reference): Best known performance
@@ -190,12 +200,14 @@ Metrics:
 ```
 
 **Expected Results Assessment**
+
 - Full 50-stop problem: No quantum advantage expected
 - 10-stop subproblems: Competitive quality, longer runtime
 - Value proposition: Hybrid approach for exploring solution diversity
 - Path to advantage: 50+ logical qubit systems with error correction
 
 **Implementation Timeline**
+
 - Weeks 1-2: QUBO formulation validation and classical baselines
 - Weeks 3-4: QAOA implementation and simulator testing
 - Weeks 5-6: D-Wave experiments and hybrid integration
@@ -204,6 +216,7 @@ Metrics:
 ---
 
 ## Related Prompts
+
 - [Quantum Algorithm Development Expert](../quantum-algorithm-development-expert.md)
 - [Quantum Machine Learning Development Expert](../quantum-machine-learning-development-expert.md)
 - [Quantum Hardware Characterization Expert](../quantum-hardware-characterization-expert.md)

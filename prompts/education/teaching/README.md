@@ -8,4 +8,4 @@ Instructional design and classroom teaching excellence frameworks.
 
 ---
 
-*Professional teaching prompts for educators, instructors, and curriculum developers.*
+_Professional teaching prompts for educators, instructors, and curriculum developers._

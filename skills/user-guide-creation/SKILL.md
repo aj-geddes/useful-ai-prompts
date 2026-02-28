@@ -23,7 +23,7 @@ Create clear, user-friendly documentation that helps users understand and effect
 
 ## User Guide Template
 
-```markdown
+````markdown
 # [Product Name] User Guide
 
 ## Table of Contents
@@ -45,6 +45,7 @@ Create clear, user-friendly documentation that helps users understand and effect
 ### Who is this guide for?
 
 This guide is designed for:
+
 - New users getting started with [Product Name]
 - Existing users looking to learn advanced features
 - Administrators managing [Product Name]
@@ -52,6 +53,7 @@ This guide is designed for:
 ### What you'll learn
 
 By the end of this guide, you'll be able to:
+
 - ✓ Set up and configure [Product Name]
 - ✓ Perform common tasks efficiently
 - ✓ Troubleshoot common issues
@@ -63,12 +65,12 @@ By the end of this guide, you'll be able to:
 
 Before you begin, ensure your system meets these requirements:
 
-| Requirement | Minimum | Recommended |
-|-------------|---------|-------------|
+| Requirement      | Minimum                               | Recommended    |
+| ---------------- | ------------------------------------- | -------------- |
 | Operating System | Windows 10, macOS 10.15, Ubuntu 20.04 | Latest version |
-| RAM | 4 GB | 8 GB |
-| Disk Space | 500 MB | 1 GB |
-| Internet | Required for setup | Required |
+| RAM              | 4 GB                                  | 8 GB           |
+| Disk Space       | 500 MB                                | 1 GB           |
+| Internet         | Required for setup                    | Required       |
 
 ### Installation
 
@@ -112,6 +114,7 @@ sudo dpkg -i product-name.deb
 # Install dependencies if needed
 sudo apt-get install -f
 ```
+````
 
 #### Step 3: First Launch
 
@@ -200,6 +203,7 @@ Let's say you want to [specific use case]:
 **Time required:** 5 minutes
 
 **Prerequisites:**
+
 - Active account
 - Completed initial setup
 
@@ -214,6 +218,7 @@ Let's say you want to [specific use case]:
    - Click **Blank Project** for this tutorial
 
 3. **Configure project settings**
+
    ```
    Name: My First Project
    Location: ~/Documents/Projects
@@ -246,6 +251,7 @@ Let's say you want to [specific use case]:
    - **From Database:** Connect to an external database
 
 3. **For File Import:**
+
    ```
    - Click "Choose File"
    - Select your CSV/JSON file
@@ -258,7 +264,7 @@ Let's say you want to [specific use case]:
    - Preview the mapping
 
    | Source Field | Destination Field | Type |
-   |--------------|-------------------|------|
+   | ------------ | ----------------- | ---- |
    | email        | Email Address     | Text |
    | name         | Full Name         | Text |
    | created      | Created Date      | Date |
@@ -271,6 +277,7 @@ Let's say you want to [specific use case]:
 6. Click **Start Import**
 
 **Progress:** You'll see a progress bar showing:
+
 - Records processed
 - Successful imports
 - Errors encountered
@@ -290,6 +297,7 @@ Let's say you want to [specific use case]:
    - **Excel:** For analysis
 
 4. Configure export options:
+
    ```
    Include headers: ✓
    Date format: YYYY-MM-DD
@@ -309,6 +317,7 @@ Let's say you want to [specific use case]:
 **Symptoms:** Double-clicking the icon doesn't launch the app
 
 **Possible causes:**
+
 - Corrupted installation
 - Insufficient permissions
 - Conflicting software
@@ -319,6 +328,7 @@ Let's say you want to [specific use case]:
    - Often resolves temporary issues
 
 2. **Reinstall the application**
+
    ```bash
    # Windows: Use Add/Remove Programs
    # Mac: Delete from Applications and reinstall
@@ -352,6 +362,7 @@ Let's say you want to [specific use case]:
    - Passwords are case-sensitive
 
 3. **Clear browser cache** (web version)
+
    ```
    Chrome: Ctrl+Shift+Delete
    Firefox: Ctrl+Shift+Delete
@@ -384,6 +395,7 @@ Let's say you want to [specific use case]:
 **Q: Is [Product Name] free?**
 
 A: [Product Name] offers both free and paid plans:
+
 - **Free:** Basic features, 1 project, 100 MB storage
 - **Pro ($9.99/month):** Unlimited projects, 100 GB storage, priority support
 - **Enterprise:** Custom pricing, dedicated support, SSO
@@ -405,6 +417,7 @@ A: Data is stored on secure AWS servers in [region]. Enterprise customers can ch
 **Q: Is my data encrypted?**
 
 A: Yes, all data is encrypted:
+
 - In transit: TLS 1.3
 - At rest: AES-256 encryption
 
@@ -421,9 +434,11 @@ A: Yes, go to Settings > Data > Export All Data.
 **Community Forum:** [https://community.example.com](https://community.example.com)
 
 **Email Support:** support@example.com
+
 - Response time: 24 hours for Free, 4 hours for Pro, 1 hour for Enterprise
 
 **Live Chat:** Available for Pro and Enterprise customers
+
 - Monday-Friday, 9 AM - 5 PM EST
 
 **Phone Support:** 1-800-EXAMPLE (Enterprise only)
@@ -451,6 +466,7 @@ Have an idea? We'd love to hear it:
 Current version: 2.5.0
 Release date: January 15, 2025
 [View release notes](https://example.com/releases)
+
 ```
 
 ## Best Practices
@@ -484,3 +500,4 @@ Release date: January 15, 2025
 - [Microsoft Style Guide](https://docs.microsoft.com/style-guide/)
 - [Grammarly](https://www.grammarly.com/)
 - [Hemingway Editor](https://hemingwayapp.com/)
+```

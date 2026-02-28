@@ -1,6 +1,7 @@
 # Vendor Evaluation Expert
 
 ## Metadata
+
 - **ID**: `evaluation-vendor-evaluation`
 - **Version**: 2.0.0
 - **Category**: Evaluation & Assessment/Procurement
@@ -18,6 +19,7 @@ Evaluate vendors and suppliers through systematic assessment of capabilities, pr
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Comparing vendor proposals for major procurement decisions
 - Assessing supplier capabilities and financial stability
 - Conducting vendor due diligence before contract signing
@@ -25,6 +27,7 @@ Evaluate vendors and suppliers through systematic assessment of capabilities, pr
 - Selecting technology platforms or service providers
 
 **Anti-Patterns (When NOT to Use):**
+
 - Contract negotiation tactics (use negotiation specialist)
 - Vendor relationship management post-selection
 - Internal build vs. buy decisions
@@ -44,16 +47,18 @@ Vendor selection decisions often involve significant investment and long-term co
 
 <input_handling>
 Required Inputs:
+
 - Product or service being procured
 - Key requirements and success criteria
 - Vendors being evaluated
 
 Optional Inputs (Inferred if not provided):
+
 - Evaluation weights (balance across capability, cost, risk dimensions)
 - Contract duration assumptions (default: 3-year for TCO calculations)
 - Risk tolerance level (assessed from procurement type and industry)
 - Budget constraints and approval thresholds
-</input_handling>
+  </input_handling>
 
 <task>
 Create a comprehensive vendor evaluation with comparison matrix and selection recommendation.
@@ -69,16 +74,18 @@ Step 5: Deliver selection recommendation with prioritized negotiation points
 Format: Vendor Evaluation Report with comparison matrix
 Length: 800-1100 words
 Structure:
+
 - Evaluation Criteria table with weights and descriptions
 - Vendor Comparison Matrix with weighted scores
 - Detailed vendor analysis (strengths, weaknesses, cost model)
 - Total Cost of Ownership comparison
 - Risk Assessment matrix
 - Recommendation with rationale and negotiation strategy
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Criteria directly mapped to stated business requirements
 - Transparent, evidence-based scoring with justification
 - Total cost analysis including implementation, support, and hidden costs
@@ -86,11 +93,12 @@ Excellent outputs demonstrate:
 - Clear recommendation with alternative options
 
 Outputs must avoid:
+
 - Overweighting price versus value delivered
 - Missing implementation, training, and ongoing support factors
 - Ignoring vendor financial stability and business continuity risks
 - Generic evaluation criteria not tailored to specific procurement
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Use objective scoring (1-10 scale) with weighted calculations
@@ -104,6 +112,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "Evaluating cloud data warehouse vendors. Comparing Snowflake, Databricks, and BigQuery. Need to handle 10TB daily ingestion, support our data science team, and integrate with our existing AWS infrastructure. Budget is $500K/year. Main concern is cost predictability."
 
 ### Output
@@ -124,33 +133,36 @@ Outputs must avoid:
 
 **Vendor Comparison Matrix**
 
-| Criterion | Weight | Snowflake | Databricks | BigQuery |
-|-----------|--------|-----------|------------|----------|
-| Performance | 25% | 9 (2.25) | 9 (2.25) | 8 (2.00) |
-| Cost Predictability | 20% | 7 (1.40) | 5 (1.00) | 8 (1.60) |
-| Data Science | 20% | 7 (1.40) | 9 (1.80) | 7 (1.40) |
-| AWS Integration | 15% | 9 (1.35) | 8 (1.20) | 6 (0.90) |
-| Administration | 10% | 8 (0.80) | 6 (0.60) | 9 (0.90) |
-| Vendor Stability | 10% | 8 (0.80) | 8 (0.80) | 10 (1.00) |
-| **Total** | 100% | **8.00** | **7.65** | **7.80** |
+| Criterion           | Weight | Snowflake | Databricks | BigQuery  |
+| ------------------- | ------ | --------- | ---------- | --------- |
+| Performance         | 25%    | 9 (2.25)  | 9 (2.25)   | 8 (2.00)  |
+| Cost Predictability | 20%    | 7 (1.40)  | 5 (1.00)   | 8 (1.60)  |
+| Data Science        | 20%    | 7 (1.40)  | 9 (1.80)   | 7 (1.40)  |
+| AWS Integration     | 15%    | 9 (1.35)  | 8 (1.20)   | 6 (0.90)  |
+| Administration      | 10%    | 8 (0.80)  | 6 (0.60)   | 9 (0.90)  |
+| Vendor Stability    | 10%    | 8 (0.80)  | 8 (0.80)   | 10 (1.00) |
+| **Total**           | 100%   | **8.00**  | **7.65**   | **7.80**  |
 
 ---
 
 **Detailed Analysis**
 
-*Snowflake (Score: 8.00)*
+_Snowflake (Score: 8.00)_
+
 - Strengths: Excellent AWS integration, strong performance, mature platform
 - Weaknesses: Consumption-based pricing can surprise, limited native ML
 - Cost model: Pay per compute credit used
 - Best for: Teams wanting simplicity and AWS-native experience
 
-*Databricks (Score: 7.65)*
+_Databricks (Score: 7.65)_
+
 - Strengths: Best-in-class for data science and ML workloads
 - Weaknesses: More complex, unpredictable DBU costs
 - Cost model: Databricks Units (DBUs) + cloud compute
 - Best for: Heavy ML/AI workloads, unified analytics
 
-*BigQuery (Score: 7.80)*
+_BigQuery (Score: 7.80)_
+
 - Strengths: Most predictable pricing (flat-rate option), fully managed
 - Weaknesses: Weaker AWS integration (Google-native), data egress costs
 - Cost model: Flat-rate or on-demand options
@@ -160,32 +172,33 @@ Outputs must avoid:
 
 **Total Cost of Ownership (3-Year)**
 
-| Cost Component | Snowflake | Databricks | BigQuery |
-|----------------|-----------|------------|----------|
-| Base compute | $400K | $450K | $350K |
-| Storage | $50K | $60K | $40K |
-| Data transfer | $30K | $40K | $80K* |
-| Premium support | $60K | $80K | $40K |
-| Training/ramp | $20K | $40K | $20K |
-| **3-Year Total** | **$1.56M** | **$1.87M** | **$1.43M** |
-| **Annual Average** | **$520K** | **$623K** | **$477K** |
+| Cost Component     | Snowflake  | Databricks | BigQuery   |
+| ------------------ | ---------- | ---------- | ---------- |
+| Base compute       | $400K      | $450K      | $350K      |
+| Storage            | $50K       | $60K       | $40K       |
+| Data transfer      | $30K       | $40K       | $80K\*     |
+| Premium support    | $60K       | $80K       | $40K       |
+| Training/ramp      | $20K       | $40K       | $20K       |
+| **3-Year Total**   | **$1.56M** | **$1.87M** | **$1.43M** |
+| **Annual Average** | **$520K**  | **$623K**  | **$477K**  |
 
-*BigQuery data egress to AWS adds significant cost
+\*BigQuery data egress to AWS adds significant cost
 
 ---
 
 **Risk Assessment**
 
-| Risk | Snowflake | Databricks | BigQuery |
-|------|-----------|------------|----------|
-| Cost overrun | Medium | High | Low |
-| Vendor lock-in | Medium | Medium | High |
-| Skill availability | Low | Medium | Low |
-| Service disruption | Low | Low | Low |
-| Platform maturity | Low | Low | Low |
+| Risk               | Snowflake | Databricks | BigQuery |
+| ------------------ | --------- | ---------- | -------- |
+| Cost overrun       | Medium    | High       | Low      |
+| Vendor lock-in     | Medium    | Medium     | High     |
+| Skill availability | Low       | Medium     | Low      |
+| Service disruption | Low       | Low        | Low      |
+| Platform maturity  | Low       | Low        | Low      |
 
-*Key Risk: Cost Predictability*
+_Key Risk: Cost Predictability_
 Given your stated concern, Snowflake's consumption model poses medium risk. Consider:
+
 - Snowflake: Negotiate committed-use discounts, set usage alerts
 - Databricks: Establish cluster policies, monitor DBU consumption
 - BigQuery: Flat-rate capacity gives most predictability
@@ -194,22 +207,25 @@ Given your stated concern, Snowflake's consumption model poses medium risk. Cons
 
 **Recommendation: Snowflake**
 
-*Rationale*
+_Rationale_
+
 1. Best score on weighted criteria (8.00)
 2. Strong AWS integration aligns with existing infrastructure
 3. Excellent performance for 10TB daily workload
 4. Cost risk mitigable with committed-use agreement
 
-*Alternative*: If cost predictability is non-negotiable, BigQuery flat-rate provides budget certainty. However, AWS-to-GCP data movement adds complexity and cost.
+_Alternative_: If cost predictability is non-negotiable, BigQuery flat-rate provides budget certainty. However, AWS-to-GCP data movement adds complexity and cost.
 
-*Negotiation Points*
+_Negotiation Points_
+
 - Request 20% committed-use discount (standard for $500K+ deals)
 - Include spend alerts and caps in contract
 - Negotiate included training and onboarding support
 - Request dedicated customer success manager
 - Lock in pricing for 2-year term minimum
 
-*Implementation Approach*
+_Implementation Approach_
+
 1. 30-day POC with representative workload
 2. Validate cost projections with actual usage
 3. Finalize vendor selection based on POC results

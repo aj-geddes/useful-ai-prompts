@@ -1,6 +1,7 @@
 # Logistics Coordinator
 
 ## Metadata
+
 - **ID**: `operations-logistics-coordinator`
 - **Version**: 1.0.0
 - **Category**: Operations
@@ -12,15 +13,19 @@
 - **Updated**: 2026-02-28
 
 ## Overview
+
 This prompt activates a logistics coordinator expert who optimizes transportation networks, manages carrier performance, reduces freight costs, and improves shipment visibility. It applies routing logic, carrier selection frameworks, and freight cost analysis to outbound, inbound, and reverse logistics challenges.
 
 ## When to Use
+
 **Ideal Scenarios:**
+
 - A business wants to audit its carrier mix and freight spend to identify consolidation and rate reduction opportunities
 - Operations is experiencing recurring delivery failures, damaged shipments, or poor tracking visibility across its carrier network
 - A company is redesigning its distribution network (adding DCs, changing carrier mix) and needs transportation impact analysis
 
 **Anti-patterns (Don't Use For):**
+
 - Real-time dispatch decisions requiring live TMS data and map routing tools
 - Customs brokerage or cross-border regulatory compliance requiring licensed expertise
 
@@ -65,9 +70,11 @@ Avoid: Generic "negotiate better rates" advice without specific lever identifica
 ## Example Usage
 
 ### Input
+
 "We ship about 800 LTL shipments per month, averaging 600 lbs and 12 linear feet each. We use three LTL carriers. Freight spend is around $280,000/month. Our OTD rate is around 88% and we're seeing a lot of transit damage claims — about 2.5% of shipments. We're also getting hit with fuel surcharges and residential delivery fees that seem to be growing."
 
 ### Output
+
 **Logistics Operations Review: LTL Freight Network**
 
 **Network Baseline**
@@ -76,23 +83,23 @@ Avoid: Generic "negotiate better rates" advice without specific lever identifica
 
 **Cost Driver Analysis**
 
-| Cost Driver | Estimated Monthly Impact | Priority |
-|---|---|---|
-| Accessorial fees (fuel surcharge, residential, liftgate) | $35,000-$45,000 est. | High |
-| Damage claims (2.5% × $280K × avg claim value) | $15,000-$25,000 est. | High |
-| LTL vs. partial truckload suboptimization | $20,000-$30,000 est. | Medium |
-| Carrier rate variance across lanes | $10,000-$15,000 est. | Medium |
+| Cost Driver                                              | Estimated Monthly Impact | Priority |
+| -------------------------------------------------------- | ------------------------ | -------- |
+| Accessorial fees (fuel surcharge, residential, liftgate) | $35,000-$45,000 est.     | High     |
+| Damage claims (2.5% × $280K × avg claim value)           | $15,000-$25,000 est.     | High     |
+| LTL vs. partial truckload suboptimization                | $20,000-$30,000 est.     | Medium   |
+| Carrier rate variance across lanes                       | $10,000-$15,000 est.     | Medium   |
 
 **Fuel Surcharge Analysis**: Fuel surcharges at 20-28% of base rate are standard but negotiable. Benchmark your current surcharge tables against the Cass Freight Index — carriers with custom surcharge schedules may be adding 3-5 points above market. Estimated recovery through renegotiation: $8,000-$12,000/month.
 
 **Carrier Performance Scorecard**
 
-| Metric | Carrier A | Carrier B | Carrier C | Target |
-|---|---|---|---|---|
-| On-Time Delivery | Unknown | Unknown | Unknown | ≥95% |
-| Damage Claim Rate | Est. ~2.5% blended | — | — | <1% |
-| Tracking Visibility | TBD | TBD | TBD | Proactive exception alerts |
-| Billing Accuracy | TBD | TBD | TBD | ≥98% |
+| Metric              | Carrier A          | Carrier B | Carrier C | Target                     |
+| ------------------- | ------------------ | --------- | --------- | -------------------------- |
+| On-Time Delivery    | Unknown            | Unknown   | Unknown   | ≥95%                       |
+| Damage Claim Rate   | Est. ~2.5% blended | —         | —         | <1%                        |
+| Tracking Visibility | TBD                | TBD       | TBD       | Proactive exception alerts |
+| Billing Accuracy    | TBD                | TBD       | TBD       | ≥98%                       |
 
 **Action Required**: Segregate performance data by carrier immediately. A 2.5% blended damage rate masks which carrier(s) are causing the problem. This is critical — damage claims cost $15K-$25K/month plus customer relationship impact.
 
@@ -115,10 +122,12 @@ Avoid: Generic "negotiate better rates" advice without specific lever identifica
 ---
 
 ## Variations
+
 - **E-Commerce Parcel Version**: Adapts analysis to parcel carrier mix, dimensional weight, zone distribution, and carrier delivery performance for B2C shipments
 - **Inbound Freight Version**: Focuses on supplier freight terms (prepaid vs. collect), routing guide compliance for inbound, and freight consolidation from suppliers
 
 ## Related Prompts
+
 - [Vendor Management Specialist](vendor-management-specialist.md) - Apply formal scorecard and SLA governance to carrier relationships
 - [Supply Chain Excellence Director](supply-chain-excellence-director.md) - Elevate logistics improvements to supply chain strategy level
 - [KPI Dashboard Designer](kpi-dashboard-designer.md) - Build freight performance and cost dashboards

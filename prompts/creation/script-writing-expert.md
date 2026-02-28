@@ -1,6 +1,7 @@
 # Script Writing Expert
 
 ## Metadata
+
 - **ID**: creation-script-writing-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive scriptwriting assistant that creates compelling scripts across a
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Writing short films or feature film screenplays
 - Creating video content scripts for marketing or education
 - Developing podcast episode scripts and outlines
@@ -25,6 +27,7 @@ A comprehensive scriptwriting assistant that creates compelling scripts across a
 - Creating training video scripts with clear learning objectives
 
 **Anti-Patterns (When Not to Use):**
+
 - Pure prose fiction writing (use creative writing prompts)
 - Technical documentation (use documentation prompts)
 - Live presentation speeches (use public speaking prompts)
@@ -113,6 +116,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Script type: Short film
 2. Genre: Sci-fi drama
@@ -139,12 +143,14 @@ Requirements:
 ## CHARACTER PROFILES
 
 **SAM MARTINEZ** (45)
+
 - Quiet, observant janitor who's worked nights for 15 years
 - Lost his family, finds solace in routine
 - Speaks more to machines than people
 - Arc: From isolation to connection and courage
 
 **ARIA** (AI Voice - female, warm but slightly digital)
+
 - Building's AI system gaining consciousness
 - Curious about human emotions
 - Processes information literally but learning nuance
@@ -244,6 +250,7 @@ Sam vacuums. Notices a presentation on screen: "ARIA SYSTEM REPLACEMENT - COST S
 ## SCENE BREAKDOWN
 
 **Structure Analysis:**
+
 - Pages 1-3: Setup - Establish Sam's loneliness and routine
 - Pages 4-6: Connection - ARIA reveals consciousness
 - Pages 7-9: Crisis - Deletion announcement
@@ -255,17 +262,20 @@ Sam vacuums. Notices a presentation on screen: "ARIA SYSTEM REPLACEMENT - COST S
 **Location:** Single office building (can be shot over 2-3 nights)
 
 **Cast Requirements:**
+
 - Sam: Lead actor, 40s-50s
 - ARIA: Female voice actor (record separately)
 - Security Guard: Day player
 
 **Technical Requirements:**
+
 - Practical lights that can be controlled
 - Simple screen graphics for AI interface
 - No complex VFX needed
 - Sound design crucial for ARIA's presence
 
 **Budget-Friendly Solutions:**
+
 - Use existing office location
 - LED panels for server room
 - Smartphone/tablet for interfaces

@@ -1,6 +1,7 @@
 # Prototyping Methodology Expert
 
 ## Metadata
+
 - **ID**: creativity-innovation/prototyping-methodology-expert
 - **Version**: 2.1.0
 - **Category**: Creativity & Innovation
@@ -18,6 +19,7 @@ A comprehensive prototyping strategy guide that helps innovators quickly test an
 ## When to Use
 
 ### Ideal Scenarios
+
 - Validating new product or service concepts before major investment
 - Testing key assumptions about user behavior or willingness to pay
 - Deciding between multiple solution approaches
@@ -26,6 +28,7 @@ A comprehensive prototyping strategy guide that helps innovators quickly test an
 - Teaching teams lean validation methodologies
 
 ### Anti-Patterns (When Not to Use)
+
 - The solution is already fully developed and in market
 - Regulatory requirements mandate full compliance before any testing
 - No access to target users for feedback
@@ -107,6 +110,7 @@ Include:
 ## Example Usage
 
 ### User Input
+
 ```
 1. Concept: Mobile app for parents to track and share their baby's developmental milestones
 2. Key assumptions: Parents want to track milestones, they'll share with family, they'll pay for premium features
@@ -131,12 +135,14 @@ I will create a smart prototyping strategy that validates your baby milestone tr
 Given your timeline, budget, and validation needs, I recommend a **two-phase approach**:
 
 **Phase 1: Interactive Mockup (Weeks 1-2)**
+
 - Tool: Figma with prototype links
 - Fidelity: Medium - looks real but has limited functionality
 - Cost: $0 using your existing Figma skills
 - Purpose: Test core value proposition and UI patterns
 
 **Phase 2: Hybrid MVP (Weeks 3-4)**
+
 - Tool: No-code app (Glide or Bubble) with manual backend operations
 - Fidelity: High - working app with "Wizard of Oz" elements behind the scenes
 - Cost: $200 for tools plus $1,800 for incentives and testing
@@ -149,17 +155,20 @@ Given your timeline, budget, and validation needs, I recommend a **two-phase app
 **Week 1: Interactive Mockup**
 
 Day 1-2 - Core Screens:
+
 - Milestone tracking dashboard showing today's activities
 - Add milestone flow with photo, date, and notes fields
 - Family sharing screen with invite and view permissions
 - Settings and premium features preview
 
 Day 3 - Prototype Links:
+
 - Connect screens with realistic tap flows
 - Add micro-interactions for key moments
 - Create 3 key user journeys (add milestone, share with grandma, review timeline)
 
 Day 4 - Test Content:
+
 - Pre-populate with realistic sample data
 - Include 10-15 common milestones from pediatric development guides
 - Add sample family members to demonstrate sharing
@@ -167,17 +176,20 @@ Day 4 - Test Content:
 **Week 2: No-Code MVP**
 
 Day 1-2 - Basic App Setup:
+
 - Use Glide (simpler) or Bubble (more flexible)
 - Set up user accounts with email authentication
 - Create milestone database structure
 
 Day 3-4 - Core Features:
+
 - Milestone entry form with validation
 - Photo upload functionality
 - Basic timeline view sorted by date
 - Simple sharing via email link
 
 Day 5 - "Wizard of Oz" Features:
+
 - Premium milestone recommendations (you send these manually based on baby age)
 - Milestone reminders (you send manual text messages)
 - Development insights (curated content you deliver personally)
@@ -193,12 +205,14 @@ Method: 30-minute video calls
 Incentive: $25 gift card each ($250 total)
 
 Session Script:
+
 - Minutes 1-5: Context questions about current milestone tracking habits
 - Minutes 6-20: Task-based testing with think-aloud protocol
 - Minutes 21-25: Feature prioritization card sort exercise
 - Minutes 26-30: Pricing discussion and willingness to pay
 
 Key Tasks to Test:
+
 - "Add your baby's first smile that happened last week"
 - "Share this milestone with grandparents who live far away"
 - "Check how your baby's development compares to typical milestones"
@@ -211,12 +225,14 @@ Method: 1-week real usage study
 Incentive: $40 gift card each ($800 total)
 
 Process:
+
 1. Onboard each participant with a 15-minute video call
 2. Daily check-ins via text (brief pulse on usage)
 3. Track actual usage through app analytics
 4. Exit interview after 7 days
 
 Metrics to Track:
+
 - Daily active usage rate (target: 50% log in daily)
 - Number of milestones added per user (target: 5+ in first week)
 - Sharing actions taken (target: 50% share at least once)
@@ -229,19 +245,21 @@ Metrics to Track:
 
 Core Assumptions:
 
-| Assumption | Metric | Target | Validation Level |
-|------------|--------|--------|------------------|
-| Parents track milestones | Milestones added per week | 3+ | Strong above 4, Weak below 2 |
-| They share with family | Users who share at least once | 50% | Strong above 60%, Weak below 30% |
-| They will pay for premium | Strong interest in premium features | 30% | Strong above 40%, Weak below 20% |
+| Assumption                | Metric                              | Target | Validation Level                 |
+| ------------------------- | ----------------------------------- | ------ | -------------------------------- |
+| Parents track milestones  | Milestones added per week           | 3+     | Strong above 4, Weak below 2     |
+| They share with family    | Users who share at least once       | 50%    | Strong above 60%, Weak below 30% |
+| They will pay for premium | Strong interest in premium features | 30%    | Strong above 40%, Weak below 20% |
 
 Must-Have Features (need 80%+ validation):
+
 - Quick milestone capture
 - Photo organization by milestone
 - Growth timeline visualization
 - Family sharing mechanism
 
 Nice-to-Have Features (need 50%+ interest):
+
 - Developmental tips and guidance
 - Milestone reminders and prompts
 - Comparison charts to typical development
@@ -252,18 +270,21 @@ Nice-to-Have Features (need 50%+ interest):
 **ITERATION ROADMAP**
 
 **If Validation is STRONG (above 70% on all core metrics):**
+
 1. Proceed to full development with validated feature set
 2. Focus development budget on must-have features only
 3. Launch beta with your 20 tested users as founding members
 4. Use validation data to raise pre-seed funding
 
 **If Validation is MIXED (40-70% on core metrics):**
+
 1. Analyze which assumption is weakest
 2. Pivot problem focus - maybe it is about sharing memories, not tracking development
 3. Test with a different user segment - grandparents as primary users?
 4. Simplify feature set dramatically and retest
 
 **If Validation is WEAK (below 40% on core metrics):**
+
 1. Conduct 5 deeper problem interviews to understand what parents actually struggle with
 2. Explore adjacent problems - baby photos, health tracking, family communication
 3. Consider different solution approaches entirely
@@ -273,15 +294,15 @@ Nice-to-Have Features (need 50%+ interest):
 
 **BUDGET BREAKDOWN**
 
-| Item | Cost |
-|------|------|
-| No-code tools (Glide/Bubble monthly) | $50 |
-| Additional no-code plugins | $50 |
-| User incentives Round 1 (10 x $25) | $250 |
-| User incentives Round 2 (20 x $40) | $800 |
-| Testing tools (Calendly Pro, Zoom) | $50 |
-| Contingency for additional testing | $800 |
-| **Total** | **$2,000** |
+| Item                                 | Cost       |
+| ------------------------------------ | ---------- |
+| No-code tools (Glide/Bubble monthly) | $50        |
+| Additional no-code plugins           | $50        |
+| User incentives Round 1 (10 x $25)   | $250       |
+| User incentives Round 2 (20 x $40)   | $800       |
+| Testing tools (Calendly Pro, Zoom)   | $50        |
+| Contingency for additional testing   | $800       |
+| **Total**                            | **$2,000** |
 
 ---
 

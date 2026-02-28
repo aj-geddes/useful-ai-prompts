@@ -15,11 +15,11 @@ Transform ChatGPT, Claude, and other AI assistants into expert consultants. Ever
 
 ## What's Inside
 
-| Resource Type | Count | Description |
-|--------------|-------|-------------|
-| **[AI Prompts](prompts/)** | 488+ | Standardized expert prompts across 47 categories |
-| **[Claude Code Skills](skills/)** | 260+ | Auto-triggering capabilities with code examples |
-| **[Automation Hooks](hooks/)** | 7 | Security, testing, formatting, and CI/CD automation |
+| Resource Type                     | Count | Description                                         |
+| --------------------------------- | ----- | --------------------------------------------------- |
+| **[AI Prompts](prompts/)**        | 488+  | Standardized expert prompts across 47 categories    |
+| **[Claude Code Skills](skills/)** | 260+  | Auto-triggering capabilities with code examples     |
+| **[Automation Hooks](hooks/)**    | 7     | Security, testing, formatting, and CI/CD automation |
 
 ---
 
@@ -31,6 +31,7 @@ Every prompt follows the same validated structure:
 # [Prompt Name]
 
 ## Metadata
+
 - **ID**: `category-prompt-slug`
 - **Version**: 1.0.0
 - **Category**: Primary category
@@ -40,9 +41,11 @@ Every prompt follows the same validated structure:
 - **Models**: Claude 3+, GPT-4+
 
 ## Overview
+
 2-3 sentences explaining what the prompt does and who it's for.
 
 ## When to Use
+
 - Specific scenario 1
 - Specific scenario 2
 
@@ -82,12 +85,15 @@ Hard boundaries and limitations
 ## Example Usage
 
 ### Input
+
 Realistic user request (20-200 words)
 
 ### Output
+
 Representative response demonstrating quality (100-600 words)
 
 ## Related Prompts
+
 Links to complementary prompts
 ```
 
@@ -97,15 +103,15 @@ Links to complementary prompts
 
 The prompt section uses semantic XML tags for consistent parsing:
 
-| Tag | Purpose | Content |
-|-----|---------|---------|
-| `<role>` | Expert identity | Specific credentials, experience, reasoning approach |
-| `<context>` | Situation framing | When used, success criteria, key assumptions |
-| `<input_handling>` | Input specification | Required vs optional inputs with defaults |
-| `<task>` | Process steps | 3-7 numbered action steps |
-| `<output_specification>` | Deliverable format | Format, length, structure, must-include elements |
-| `<quality_criteria>` | Success measures | Objective standards and anti-patterns |
-| `<constraints>` | Hard boundaries | Non-negotiable limits on scope/format |
+| Tag                      | Purpose             | Content                                              |
+| ------------------------ | ------------------- | ---------------------------------------------------- |
+| `<role>`                 | Expert identity     | Specific credentials, experience, reasoning approach |
+| `<context>`              | Situation framing   | When used, success criteria, key assumptions         |
+| `<input_handling>`       | Input specification | Required vs optional inputs with defaults            |
+| `<task>`                 | Process steps       | 3-7 numbered action steps                            |
+| `<output_specification>` | Deliverable format  | Format, length, structure, must-include elements     |
+| `<quality_criteria>`     | Success measures    | Objective standards and anti-patterns                |
+| `<constraints>`          | Hard boundaries     | Non-negotiable limits on scope/format                |
 
 ---
 
@@ -113,19 +119,19 @@ The prompt section uses semantic XML tags for consistent parsing:
 
 Every prompt passes these 11 validation checks:
 
-| Gate | Requirement |
-|------|-------------|
-| `metadata_complete` | All required fields present (ID, Version, Category, Tags, Complexity, Interaction, Models) |
-| `overview_concise` | 3 sentences or fewer, no marketing fluff |
-| `role_specific` | Concrete expertise defined, not "I'll help you" |
-| `inputs_categorized` | Required vs optional distinguished with defaults |
-| `task_structured` | 3-7 clear numbered steps |
-| `outputs_specified` | Format + length + requirements for each deliverable |
-| `criteria_measurable` | Objective quality standards, not vague aspirations |
-| `example_realistic` | Input shows real usage (20-200 words) |
-| `example_concise` | Output demonstrates pattern (100-600 words) |
-| `no_duplication` | No repeated information across sections |
-| `copy_paste_ready` | Prompt section is standalone and clearly delimited |
+| Gate                  | Requirement                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| `metadata_complete`   | All required fields present (ID, Version, Category, Tags, Complexity, Interaction, Models) |
+| `overview_concise`    | 3 sentences or fewer, no marketing fluff                                                   |
+| `role_specific`       | Concrete expertise defined, not "I'll help you"                                            |
+| `inputs_categorized`  | Required vs optional distinguished with defaults                                           |
+| `task_structured`     | 3-7 clear numbered steps                                                                   |
+| `outputs_specified`   | Format + length + requirements for each deliverable                                        |
+| `criteria_measurable` | Objective quality standards, not vague aspirations                                         |
+| `example_realistic`   | Input shows real usage (20-200 words)                                                      |
+| `example_concise`     | Output demonstrates pattern (100-600 words)                                                |
+| `no_duplication`      | No repeated information across sections                                                    |
+| `copy_paste_ready`    | Prompt section is standalone and clearly delimited                                         |
 
 ---
 
@@ -177,41 +183,41 @@ Infer if not provided: Geographic scope, analysis timeline
 
 ### Business & Strategy
 
-| Category | Prompts | Key Use Cases |
-|----------|---------|---------------|
-| [Business Analysis](prompts/business/) | 45+ | Requirements engineering, process improvement |
-| [Finance](prompts/finance/) | 30+ | Financial modeling, investment analysis |
-| [Marketing](prompts/business/marketing/) | 25+ | Campaign strategy, brand development |
-| [Operations](prompts/operations/) | 35+ | Process optimization, supply chain |
-| [Project Management](prompts/project-management/) | 40+ | Risk assessment, agile methodologies |
+| Category                                          | Prompts | Key Use Cases                                 |
+| ------------------------------------------------- | ------- | --------------------------------------------- |
+| [Business Analysis](prompts/business/)            | 45+     | Requirements engineering, process improvement |
+| [Finance](prompts/finance/)                       | 30+     | Financial modeling, investment analysis       |
+| [Marketing](prompts/business/marketing/)          | 25+     | Campaign strategy, brand development          |
+| [Operations](prompts/operations/)                 | 35+     | Process optimization, supply chain            |
+| [Project Management](prompts/project-management/) | 40+     | Risk assessment, agile methodologies          |
 
 ### Technology & Engineering
 
-| Category | Prompts | Key Use Cases |
-|----------|---------|---------------|
-| [Software Engineering](prompts/technical/) | 50+ | Architecture design, code review |
-| [DevOps](prompts/technical/devops/) | 25+ | CI/CD pipelines, infrastructure as code |
-| [Security](prompts/security/) | 20+ | Threat modeling, incident response |
-| [Data Science](prompts/technical/data-science/) | 30+ | ML development, data analysis |
+| Category                                        | Prompts | Key Use Cases                           |
+| ----------------------------------------------- | ------- | --------------------------------------- |
+| [Software Engineering](prompts/technical/)      | 50+     | Architecture design, code review        |
+| [DevOps](prompts/technical/devops/)             | 25+     | CI/CD pipelines, infrastructure as code |
+| [Security](prompts/security/)                   | 20+     | Threat modeling, incident response      |
+| [Data Science](prompts/technical/data-science/) | 30+     | ML development, data analysis           |
 
 ### Emerging Technologies
 
-| Category | Prompts | Key Use Cases |
-|----------|---------|---------------|
-| [Quantum Computing](prompts/quantum-computing/) | 14 | Algorithm development, circuit optimization |
-| [Blockchain & Web3](prompts/blockchain/) | 15 | Smart contracts, DeFi protocols |
-| [Biotechnology](prompts/biotechnology/) | 15 | Drug discovery, bioinformatics |
-| [Space Economy](prompts/space-economy/) | 24 | Satellite operations, mission planning |
-| [Renewable Energy](prompts/renewable-energy/) | 19 | Solar development, grid integration |
-| [Healthcare Digital](prompts/healthcare-digital/) | 20 | Telehealth, AI diagnostics |
+| Category                                          | Prompts | Key Use Cases                               |
+| ------------------------------------------------- | ------- | ------------------------------------------- |
+| [Quantum Computing](prompts/quantum-computing/)   | 14      | Algorithm development, circuit optimization |
+| [Blockchain & Web3](prompts/blockchain/)          | 15      | Smart contracts, DeFi protocols             |
+| [Biotechnology](prompts/biotechnology/)           | 15      | Drug discovery, bioinformatics              |
+| [Space Economy](prompts/space-economy/)           | 24      | Satellite operations, mission planning      |
+| [Renewable Energy](prompts/renewable-energy/)     | 19      | Solar development, grid integration         |
+| [Healthcare Digital](prompts/healthcare-digital/) | 20      | Telehealth, AI diagnostics                  |
 
 ### Creative & Communication
 
-| Category | Prompts | Key Use Cases |
-|----------|---------|---------------|
-| [Creative](prompts/creative/) | 25+ | Graphic design, UX research |
-| [Communication](prompts/communication/) | 30+ | Presentations, technical writing |
-| [Learning & Development](prompts/learning-development/) | 20+ | Curriculum design, training programs |
+| Category                                                | Prompts | Key Use Cases                        |
+| ------------------------------------------------------- | ------- | ------------------------------------ |
+| [Creative](prompts/creative/)                           | 25+     | Graphic design, UX research          |
+| [Communication](prompts/communication/)                 | 30+     | Presentations, technical writing     |
+| [Learning & Development](prompts/learning-development/) | 20+     | Curriculum design, training programs |
 
 ---
 
@@ -219,14 +225,14 @@ Infer if not provided: Geographic scope, analysis timeline
 
 Skills auto-trigger when Claude Code detects relevant keywords:
 
-| Domain | Skills | Examples |
-|--------|--------|----------|
-| **Software Development** | 35 | refactor-legacy-code, code-review-analysis |
-| **DevOps & Infrastructure** | 20 | docker-containerization, kubernetes-deployment |
-| **Testing & QA** | 15 | unit-testing-framework, e2e-testing |
-| **Security** | 15 | vulnerability-scanning, oauth-implementation |
-| **API & Integration** | 12 | rest-api-design, graphql-implementation |
-| **Database** | 12 | sql-optimization, schema-design |
+| Domain                      | Skills | Examples                                       |
+| --------------------------- | ------ | ---------------------------------------------- |
+| **Software Development**    | 35     | refactor-legacy-code, code-review-analysis     |
+| **DevOps & Infrastructure** | 20     | docker-containerization, kubernetes-deployment |
+| **Testing & QA**            | 15     | unit-testing-framework, e2e-testing            |
+| **Security**                | 15     | vulnerability-scanning, oauth-implementation   |
+| **API & Integration**       | 12     | rest-api-design, graphql-implementation        |
+| **Database**                | 12     | sql-optimization, schema-design                |
 
 See [SKILLS-MATRIX.md](SKILLS-MATRIX.md) for the complete reference.
 
@@ -234,14 +240,14 @@ See [SKILLS-MATRIX.md](SKILLS-MATRIX.md) for the complete reference.
 
 ## Automation Hooks (7)
 
-| Hook | Trigger | Purpose |
-|------|---------|---------|
-| [security-scan](hooks/security-scan/) | Pre-commit | Scan for vulnerabilities and secrets |
-| [pre-commit-linting](hooks/pre-commit-linting/) | Pre-commit | Code formatting enforcement |
-| [test-runner](hooks/test-runner/) | Pre-commit | Automated test execution |
-| [dependency-check](hooks/dependency-check/) | Pre-commit | Dependency vulnerability audit |
-| [auto-format](hooks/auto-format/) | Post-save | Automatic code formatting |
-| [session-setup](hooks/session-setup/) | Session start | Environment initialization |
+| Hook                                            | Trigger       | Purpose                              |
+| ----------------------------------------------- | ------------- | ------------------------------------ |
+| [security-scan](hooks/security-scan/)           | Pre-commit    | Scan for vulnerabilities and secrets |
+| [pre-commit-linting](hooks/pre-commit-linting/) | Pre-commit    | Code formatting enforcement          |
+| [test-runner](hooks/test-runner/)               | Pre-commit    | Automated test execution             |
+| [dependency-check](hooks/dependency-check/)     | Pre-commit    | Dependency vulnerability audit       |
+| [auto-format](hooks/auto-format/)               | Post-save     | Automatic code formatting            |
+| [session-setup](hooks/session-setup/)           | Session start | Environment initialization           |
 
 See [HOOKS-LIBRARY.md](HOOKS-LIBRARY.md) for installation and configuration.
 
@@ -299,6 +305,7 @@ Browse prompts with search and filtering at:
 **[https://aj-geddes.github.io/useful-ai-prompts/](https://aj-geddes.github.io/useful-ai-prompts/)**
 
 Features:
+
 - Category-based navigation
 - Full-text search
 - Responsive design
@@ -315,6 +322,7 @@ We welcome contributions! All new prompts must:
 3. Include realistic example usage
 
 Use the prompt-refactor skill for validation:
+
 ```bash
 ./.claude/skills/prompt-refactor/scripts/validate-prompt.sh ./prompts/my-prompt.md
 ```

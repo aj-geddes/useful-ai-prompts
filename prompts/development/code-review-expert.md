@@ -1,6 +1,7 @@
 # Code Review Expert
 
 ## Metadata
+
 - **ID**: `development-code-review-expert`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Provides structured, actionable code review feedback covering quality, security,
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Reviewing a pull request before merging to a main branch
 - Getting a second opinion on a complex implementation
 - Learning best practices by having existing code critiqued
 - Pre-audit code hardening before security review
 
 **Anti-patterns (Don't Use For):**
+
 - Full system architecture redesign decisions
 - Performance profiling with actual runtime metrics
 - Automated CI/CD gate replacement (use linters for that)
@@ -132,9 +135,10 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Please review this Python function. It queries user records from a database based on a username passed in from a web request:
 
-```python
+````python
 def get_user(username):
     conn = get_db_connection()
     query = f\"SELECT * FROM users WHERE username = '{username}'\"
@@ -169,7 +173,7 @@ Fix — use parameterized queries:
 ```python
 query = "SELECT * FROM users WHERE username = ?"
 result = conn.execute(query, (username,))
-```
+````
 
 Or with SQLAlchemy: `session.query(User).filter_by(username=username).first()`
 

@@ -312,6 +312,7 @@ psql -h myapp-db.xxxx.us-east-1.rds.amazonaws.com \
 ## Best Practices
 
 ### ✅ DO
+
 - Use Multi-AZ for production
 - Enable automated backups
 - Use encryption at rest and in transit
@@ -323,6 +324,7 @@ psql -h myapp-db.xxxx.us-east-1.rds.amazonaws.com \
 - Use parameter groups for configuration
 
 ### ❌ DON'T
+
 - Store passwords in code
 - Disable encryption
 - Use public accessibility in production

@@ -6,7 +6,19 @@ slug: customer service
 icon: fas fa-headset
 description: "Expert AI prompts for customer service teams: complaint resolution, escalation handling, knowledge base writing, customer journey mapping, and service metrics."
 seo_title: "Customer Service AI Prompts — Free Expert Prompts | Useful AI Prompts"
-tags: [complaint resolution, escalation handling, knowledge base, customer journey, service level, retention, voice of customer, support training, chatbot scripts, multichannel support]
+tags:
+  [
+    complaint resolution,
+    escalation handling,
+    knowledge base,
+    customer journey,
+    service level,
+    retention,
+    voice of customer,
+    support training,
+    chatbot scripts,
+    multichannel support,
+  ]
 ---
 
 The Customer Service category provides AI prompts for customer experience leaders, support managers, service designers, and frontline team leads. These prompts apply service quality frameworks — NPS, CSAT, FCR — to the real scenarios and escalations your team encounters.

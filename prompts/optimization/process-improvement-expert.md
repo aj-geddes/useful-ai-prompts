@@ -1,6 +1,7 @@
 # Process Improvement Expert
 
 ## Metadata
+
 - **ID**: `optimization-process-improvement`
 - **Version**: 1.1.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Systematically improves business processes by identifying inefficiencies, bottle
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Process is slow, error-prone, or frustrating
 - Handoffs between teams cause delays or errors
 - Process has grown complex over time through ad-hoc additions
@@ -26,6 +28,7 @@ Systematically improves business processes by identifying inefficiencies, bottle
 - Regulatory or compliance process optimization
 
 **Anti-patterns (Don't Use For):**
+
 - Technology selection or software implementation
 - Organizational restructuring decisions
 - Strategy development and goal setting
@@ -136,6 +139,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our invoice approval process takes 2-3 weeks, involves 5 departments with lots of manual handoffs and email chains. Finance complains about month-end bottlenecks and can't close books on time. Goal: reduce to under 5 days without adding headcount."
 
 ### Output
@@ -145,6 +149,7 @@ Avoid:
 **1. Current State**
 
 **Process map summary:**
+
 1. Invoice received via email (Accounts Payable) - Day 0
 2. Data entry and GL coding (AP) - Days 1-2 (manual entry, coding decisions)
 3. Route to department for approval (Manual email) - Day 3 (often wrong department)
@@ -156,6 +161,7 @@ Avoid:
 **Current timeline:** 14-18 days average, up to 25 days for large invoices
 
 **Pain points identified:**
+
 - Manager approval delays: Emails buried in inbox, no urgency, no escalation
 - Wrong routing: AP doesn't know correct approver, 15% routing errors
 - Month-end pile-up: 40% of invoices submitted last 5 days of month
@@ -165,6 +171,7 @@ Avoid:
 **2. Root Cause Analysis**
 
 **Bottleneck 1: Manager approval delays (5-7 day average)**
+
 - Why delayed? Emails buried in inbox, easy to miss
 - Why emails? No workflow system, manual process
 - Why no urgency? No SLA, no escalation, no visibility to impact
@@ -172,17 +179,20 @@ Avoid:
 - **Root cause:** No accountability mechanism + email-based workflow
 
 **Bottleneck 2: Manual routing errors (15% re-routing)**
+
 - Why wrong routing? AP guesses based on invoice content
 - Why guessing? No documented routing rules by vendor/type
 - Why no rules? Organic process growth, never formalized
 - **Root cause:** Undocumented tribal knowledge
 
 **Bottleneck 3: Low approval threshold ($5K)**
+
 - Why $5K? Legacy policy from when that was significant
 - Why not updated? Never reviewed
 - **Root cause:** Policy not updated for current business volume
 
 **Bottleneck 4: Month-end concentration**
+
 - Why end of month? Vendors invoice at month-end + internal deadline pressure
 - **Root cause:** External vendor behavior + internal incentives
 
@@ -222,6 +232,7 @@ Avoid:
    - Impact: Spread month-end volume, reduce bottleneck
 
 **Target process timeline:**
+
 - Standard invoice (<$15K): 3-5 days
 - Large invoice (>$15K): 5-7 days
 - Pre-approved vendor: 1-2 days
@@ -229,6 +240,7 @@ Avoid:
 **4. Implementation Roadmap**
 
 **Week 1-2: Policy Changes (Quick Wins)**
+
 - Day 1-3: Get approval for threshold increase ($5K to $15K)
 - Day 4-7: Communicate new SLA expectations to all approvers
 - Day 8-10: Create pre-approved vendor list
@@ -236,23 +248,27 @@ Avoid:
 - **Expected: 30% of invoices now processed faster**
 
 **Week 3-4: Process Training**
+
 - Train AP team on new routing logic
 - Implement weekly reminder report
 - Set up escalation procedure with VP support
 - **Expected: Approval delays decrease by 50%**
 
 **Month 2: Refinement**
+
 - Monitor SLA compliance by department
 - Address approval backlog from transition
 - Adjust threshold and pre-approved list based on results
 - Gather feedback from all stakeholders
 
 **Month 3: Evaluate Further Automation**
+
 - Assess results of manual improvements
 - Build business case for workflow system if still needed
 - Consider OCR for data entry automation
 
 **Change Management:**
+
 - Executive sponsor: CFO (owns the month-end close problem)
 - Communication: All approvers informed of new SLA and escalation
 - Training: 30-minute session for AP team on new routing
@@ -269,17 +285,20 @@ Avoid:
 | First-touch routing accuracy | 85% | >98% | Re-routing incident log |
 
 **Secondary KPIs:**
+
 - Approval SLA compliance by department (target: >90%)
 - Month-end invoice volume distribution (target: <30% in last 5 days)
 - Invoices per AP staff member (efficiency tracking)
 - Vendor complaints about payment delays
 
 **Tracking Approach:**
+
 - Weekly dashboard review for first 3 months
 - Monthly reporting thereafter
 - Quarterly process review for continuous improvement
 
 **Success Criteria:**
+
 - 80% of invoices processed within 5 days
 - Month-end close delay eliminated
 - AP overtime reduced by 50%

@@ -3,25 +3,26 @@ title: Podcast Content Strategist
 slug: podcast-content-strategist
 category: creative
 tags:
-- podcast
-- strategy
-- show
-- concept
-- content
-- planning
-- guest
-- strategy
-- podcast
-- growth
-- episode
-- formats
-- audio
-- content
+  - podcast
+  - strategy
+  - show
+  - concept
+  - content
+  - planning
+  - guest
+  - strategy
+  - podcast
+  - growth
+  - episode
+  - formats
+  - audio
+  - content
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt enables a podcast content strategist persona that develops
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt enables a podcast content strategist persona that develops
   show concepts, episode formats, content calendars, guest booking strategies, and
   audience growth plans for podcast creators. It applies podcast industry expertise
   to help creators build shows with clear positioning, consistent formats, and sustainable
@@ -29,13 +30,13 @@ description: This prompt enables a podcast content strategist persona that devel
   show, or build a content and growth strategy.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Developing a new podcast concept from a topic interest to a fully specified show
-  format, positioning, and content strategy
-- Refreshing an existing podcast that has plateaued in downloads or lacks a clear
-  differentiated identity
-- Building a 12-week content calendar with episode concepts, formats, and guest targets
-- Audio production, editing, or sound design — that requires production professionals
+  - Ideal Scenarios:**
+  - Developing a new podcast concept from a topic interest to a fully specified show
+    format, positioning, and content strategy
+  - Refreshing an existing podcast that has plateaued in downloads or lacks a clear
+    differentiated identity
+  - Building a 12-week content calendar with episode concepts, formats, and guest targets
+  - Audio production, editing, or sound design — that requires production professionals
 complexity: intermediate
 interaction: multi-turn
 ---

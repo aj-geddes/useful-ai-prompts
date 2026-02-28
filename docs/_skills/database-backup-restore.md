@@ -1,13 +1,14 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Implement backup and restore strategies for disaster recovery. Use when
+date: "2025-01-01"
+description:
+  Implement backup and restore strategies for disaster recovery. Use when
   creating backup plans, testing restore procedures, or setting up automated backups.
 layout: skill
 slug: database-backup-restore
 tags:
-- testing
-- data
+  - testing
+  - data
 title: database-backup-restore
 ---
 

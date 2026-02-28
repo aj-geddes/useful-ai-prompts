@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Identify differences between current state and desired future state.
+date: "2025-01-01"
+description:
+  Identify differences between current state and desired future state.
   Analyze gaps in capabilities, processes, skills, and technology to plan improvements
   and investments.
 layout: skill
 slug: gap-analysis
 tags:
-- development
+  - development
 title: gap-analysis
 ---
 
@@ -305,90 +306,109 @@ class GapClosurePlanning {
       gap_description: gap.description,
       target_state: gap.target_state,
 
-      approach: gap.gap_type === 'Maturity'
-        ? this.createMaturityPlan(gap)
-        : this.createCapabilityPlan(gap),
+      approach:
+        gap.gap_type === "Maturity"
+          ? this.createMaturityPlan(gap)
+          : this.createCapabilityPlan(gap),
 
       timeline: {
         start_date: gap.start_date,
         target_completion: gap.target_date,
         duration_weeks: Math.ceil(gap.effort_estimate),
-        milestones: this.defineMilestones(gap)
+        milestones: this.defineMilestones(gap),
       },
 
       resources: {
         people: gap.required_staff,
         budget: gap.estimated_cost,
-        tools: gap.required_tools
+        tools: gap.required_tools,
       },
 
       success_criteria: gap.success_metrics,
 
       risks: this.identifyClosureRisks(gap),
 
-      dependencies: gap.dependencies
+      dependencies: gap.dependencies,
     };
   }
 
   createMaturityPlan(gap) {
     // Plan for improving existing capability
     return {
-      strategy: 'Improve capability maturity',
+      strategy: "Improve capability maturity",
       phases: [
         {
-          phase: 'Assess Current',
-          activities: ['Document current state', 'Identify improvement areas'],
-          duration: '2 weeks'
+          phase: "Assess Current",
+          activities: ["Document current state", "Identify improvement areas"],
+          duration: "2 weeks",
         },
         {
-          phase: 'Plan Improvements',
-          activities: ['Define target maturity', 'Create roadmap', 'Allocate resources'],
-          duration: '2 weeks'
+          phase: "Plan Improvements",
+          activities: [
+            "Define target maturity",
+            "Create roadmap",
+            "Allocate resources",
+          ],
+          duration: "2 weeks",
         },
         {
-          phase: 'Implement',
-          activities: ['Execute improvement', 'Training', 'Process changes'],
-          duration: gap.effort_estimate + ' weeks'
+          phase: "Implement",
+          activities: ["Execute improvement", "Training", "Process changes"],
+          duration: gap.effort_estimate + " weeks",
         },
         {
-          phase: 'Validate',
-          activities: ['Measure against targets', 'Validate maturity', 'Document learnings'],
-          duration: '2 weeks'
-        }
-      ]
+          phase: "Validate",
+          activities: [
+            "Measure against targets",
+            "Validate maturity",
+            "Document learnings",
+          ],
+          duration: "2 weeks",
+        },
+      ],
     };
   }
 
   createCapabilityPlan(gap) {
     // Plan for building new capability
     return {
-      strategy: 'Build new capability',
+      strategy: "Build new capability",
       phases: [
         {
-          phase: 'Design',
-          activities: ['Define requirements', 'Design solution', 'Get approvals'],
-          duration: '4 weeks'
+          phase: "Design",
+          activities: [
+            "Define requirements",
+            "Design solution",
+            "Get approvals",
+          ],
+          duration: "4 weeks",
         },
         {
-          phase: 'Build',
-          activities: ['Develop', 'Test', 'Integrate'],
-          duration: gap.effort_estimate + ' weeks'
+          phase: "Build",
+          activities: ["Develop", "Test", "Integrate"],
+          duration: gap.effort_estimate + " weeks",
         },
         {
-          phase: 'Deploy',
-          activities: ['Pilot', 'Roll out', 'Support transition'],
-          duration: '4 weeks'
-        }
-      ]
+          phase: "Deploy",
+          activities: ["Pilot", "Roll out", "Support transition"],
+          duration: "4 weeks",
+        },
+      ],
     };
   }
 
   defineMilestones(gap) {
     return [
-      { name: 'Gap closure initiated', date_offset: 'Week 0' },
-      { name: 'First deliverable', date_offset: `Week ${Math.ceil(gap.effort_estimate / 3)}` },
-      { name: 'Mid-point review', date_offset: `Week ${Math.ceil(gap.effort_estimate / 2)}` },
-      { name: 'Final validation', date_offset: `Week ${gap.effort_estimate}` }
+      { name: "Gap closure initiated", date_offset: "Week 0" },
+      {
+        name: "First deliverable",
+        date_offset: `Week ${Math.ceil(gap.effort_estimate / 3)}`,
+      },
+      {
+        name: "Mid-point review",
+        date_offset: `Week ${Math.ceil(gap.effort_estimate / 2)}`,
+      },
+      { name: "Final validation", date_offset: `Week ${gap.effort_estimate}` },
     ];
   }
 }
@@ -446,6 +466,7 @@ Gap 3: Data Governance
 ## Best Practices
 
 ### ✅ DO
+
 - Compare current to clearly defined future state
 - Include all relevant capability areas
 - Involve stakeholders in gap identification
@@ -458,6 +479,7 @@ Gap 3: Data Governance
 - Communicate findings transparently
 
 ### ❌ DON'T
+
 - Skip current state assessment
 - Create vague future state
 - Identify gaps without solutions

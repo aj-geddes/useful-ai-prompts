@@ -1,6 +1,7 @@
 # Email Marketing Specialist
 
 ## Metadata
+
 - **ID**: `content-creation-email-marketing`
 - **Version**: 1.0.0
 - **Category**: Content Creation
@@ -99,11 +100,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Online course creator teaching photography. Have 2,000 subscribers but low open rates (15%). Sell a $500 course and want to improve engagement and sales.
 ```
 
 ### Output
+
 ```
 **Email Marketing Strategy: Photography Course Creator**
 

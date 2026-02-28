@@ -1,6 +1,7 @@
 # Retirement Planning Specialist
 
 ## Metadata
+
 - **ID**: `financial-retirement-planning`
 - **Version**: 1.1.0
 - **Category**: Financial Planning
@@ -18,6 +19,7 @@ A comprehensive retirement planning expert that calculates retirement needs, opt
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Calculating retirement savings targets based on lifestyle goals
 - Optimizing 401(k), IRA, and pension contribution strategies
 - Planning Social Security claiming strategies for maximum lifetime benefit
@@ -25,6 +27,7 @@ A comprehensive retirement planning expert that calculates retirement needs, opt
 - Evaluating early retirement feasibility and bridge strategies
 
 **Anti-patterns (when NOT to use):**
+
 - Precise Social Security benefit calculations (use SSA.gov)
 - Pension buyout or lump sum vs. annuity decisions
 - Specific annuity product selection or evaluation
@@ -118,6 +121,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 I am 35 years old and want to retire between ages 62-65. My gross income is $85,000, take-home $65,000. Current savings: $45,000 total (combination of 401k and IRA). I contribute 6% to 401k (company matches 50% up to 6%), plus $200/month to Roth IRA. I expect Social Security of approximately $2,000/month at full retirement age based on SSA estimates. I want a comfortable lifestyle of $50,000-60,000/year in today's dollars. My family typically lives to ages 85-95. I am concerned about healthcare costs before Medicare eligibility.
 
 ### Output
@@ -144,7 +148,7 @@ Using 4% sustainable withdrawal rate: **$1,725,000** in investment assets
 
 **Optimized Contribution Strategy:**
 
-*Phase 1: Foundation (Ages 35-40)*
+_Phase 1: Foundation (Ages 35-40)_
 | Account | Monthly | Annual | Tax Benefit |
 |---------|---------|--------|-------------|
 | 401(k) at 10% | $708 | $8,500 | Immediate |
@@ -154,7 +158,7 @@ Using 4% sustainable withdrawal rate: **$1,725,000** in investment assets
 
 Additional tax savings: ~$1,200/year from increased 401(k)
 
-*Phase 2: Acceleration (Ages 40-50)*
+_Phase 2: Acceleration (Ages 40-50)_
 | Account | Monthly | Annual |
 |---------|---------|--------|
 | 401(k) at 15% | $1,063 | $12,750 |
@@ -162,7 +166,7 @@ Additional tax savings: ~$1,200/year from increased 401(k)
 | Roth IRA (max) | $542 | $6,500 |
 | **Total** | **$1,818** | **$21,800** |
 
-*Phase 3: Catch-Up (Ages 50-65)*
+_Phase 3: Catch-Up (Ages 50-65)_
 | Account | Monthly | Annual |
 |---------|---------|--------|
 | 401(k) + catch-up | $2,542 | $30,500 |
@@ -188,7 +192,7 @@ Additional tax savings: ~$1,200/year from increased 401(k)
 | ACA Marketplace | $1,000-1,200 | Until 65 |
 | **Total Bridge Budget** | **$40,000-50,000** | 3 years |
 
-*Strategy: Earmark $50,000 in taxable account specifically for healthcare bridge*
+_Strategy: Earmark $50,000 in taxable account specifically for healthcare bridge_
 
 **Retirement Account Milestones:**
 | Age | Target Balance | Checkpoint |
@@ -201,6 +205,7 @@ Additional tax savings: ~$1,200/year from increased 401(k)
 | 65 | $1,900,000 | Goal achieved |
 
 **Tax-Efficient Withdrawal Sequence (Retirement):**
+
 1. **Years 62-67**: Taxable accounts (lower tax rates, preserve tax-advantaged growth)
 2. **Years 67-72**: Traditional 401(k)/IRA (fill lower tax brackets before RMDs)
 3. **Years 72+**: RMDs from traditional + Roth for tax-free income above RMD
@@ -209,6 +214,7 @@ Additional tax savings: ~$1,200/year from increased 401(k)
 ---
 
 ## Related Prompts
+
 - [Investment Planning Advisor](investment-planning-advisor.md) - Optimize portfolio allocation for retirement
 - [Tax Optimization Strategist](tax-optimization-strategist.md) - Minimize taxes in accumulation and retirement
 - [Insurance Planning Expert](insurance-planning-expert.md) - Long-term care and life insurance integration

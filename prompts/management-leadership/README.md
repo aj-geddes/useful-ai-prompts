@@ -22,4 +22,4 @@ Leadership development and management excellence prompts for all levels of leade
 
 ---
 
-*Executive and management prompts for leadership excellence and organizational success.*
+_Executive and management prompts for leadership excellence and organizational success._

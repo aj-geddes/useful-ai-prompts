@@ -1,6 +1,7 @@
 # Technical Documentation Expert
 
 ## Metadata
+
 - **ID**: `technical-documentation-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Creates comprehensive technical documentation that helps developers, users, and 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating API documentation for internal or public REST/GraphQL APIs
 - Building developer portals with getting-started guides and tutorials
 - Documenting system architecture for engineering teams
@@ -25,6 +27,7 @@ Creates comprehensive technical documentation that helps developers, users, and 
 - Migrating documentation to modern docs-as-code platforms
 
 **Anti-patterns (when NOT to use):**
+
 - Marketing content or promotional materials
 - User manuals for non-technical end users
 - Legal, compliance, or regulatory documentation
@@ -149,7 +152,7 @@ Payment API Documentation
 
 **API Reference Template**
 
-```markdown
+````markdown
 ## Create Payment
 
 Creates a new payment transaction and initiates processing.
@@ -164,20 +167,20 @@ Requires Bearer token with `payments:write` scope.
 
 ### Headers
 
-| Header | Required | Description |
-|--------|----------|-------------|
-| Authorization | Yes | Bearer token: `Bearer sk_live_...` |
-| Idempotency-Key | Yes | Unique request identifier (UUID recommended) |
-| Content-Type | Yes | Must be `application/json` |
+| Header          | Required | Description                                  |
+| --------------- | -------- | -------------------------------------------- |
+| Authorization   | Yes      | Bearer token: `Bearer sk_live_...`           |
+| Idempotency-Key | Yes      | Unique request identifier (UUID recommended) |
+| Content-Type    | Yes      | Must be `application/json`                   |
 
 ### Request Body
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| amount | integer | Yes | Amount in smallest currency unit (cents for USD) |
-| currency | string | Yes | Three-letter ISO 4217 currency code |
-| customer_id | string | No | ID of existing customer |
-| metadata | object | No | Key-value pairs for your reference |
+| Parameter   | Type    | Required | Description                                      |
+| ----------- | ------- | -------- | ------------------------------------------------ |
+| amount      | integer | Yes      | Amount in smallest currency unit (cents for USD) |
+| currency    | string  | Yes      | Three-letter ISO 4217 currency code              |
+| customer_id | string  | No       | ID of existing customer                          |
+| metadata    | object  | No       | Key-value pairs for your reference               |
 
 ### Code Examples
 
@@ -193,7 +196,8 @@ curl -X POST https://api.payments.com/v1/payments \
     "currency": "usd",
     "customer_id": "cus_123"
   }'
-```
+````
+
 </tab>
 <tab title="Python">
 ```python
@@ -201,13 +205,14 @@ import payments
 
 client = payments.Client(api_key="sk_test_abc123")
 payment = client.payments.create(
-    amount=2000,
-    currency="usd",
-    customer_id="cus_123",
-    idempotency_key="unique-request-id"
+amount=2000,
+currency="usd",
+customer_id="cus_123",
+idempotency_key="unique-request-id"
 )
 print(f"Payment created: {payment.id}")
-```
+
+````
 </tab>
 <tab title="Node.js">
 ```javascript
@@ -221,7 +226,8 @@ const payment = await client.payments.create({
 }, {
   idempotencyKey: 'unique-request-id'
 });
-```
+````
+
 </tab>
 </tabs>
 
@@ -237,6 +243,7 @@ const payment = await client.payments.create({
   "created": 1703721600
 }
 ```
+
 ```
 
 **Maintenance Process**
@@ -257,3 +264,4 @@ Documentation lives in the same repository as API code, ensuring PRs that change
 - [API Design Expert](./api-design-expert.md) - Design APIs before documenting them
 - [System Architecture Design Expert](./system-architecture-design-expert.md) - Create architecture documentation
 - [DevOps Workflow Design Expert](./devops-workflow-design-expert.md) - Document deployment processes
+```

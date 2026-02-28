@@ -1,15 +1,16 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Design database schemas with normalization, relationships, and constraints.
+date: "2025-01-01"
+description:
+  Design database schemas with normalization, relationships, and constraints.
   Use when creating new database schemas, designing tables, or planning data models
   for PostgreSQL and MySQL.
 layout: skill
 slug: database-schema-design
 tags:
-- postgres
-- mysql
-- data
+  - postgres
+  - mysql
+  - data
 title: database-schema-design
 ---
 

@@ -1,16 +1,18 @@
 ---
 category: optimization
 compatible_models:
-- GPT-4
-- Claude 3
-- Gemini Pro
-- GPT-3.5
-date: '2025-08-18'
-description: An interactive productivity consultant that helps you design and optimize
+  - GPT-4
+  - Claude 3
+  - Gemini Pro
+  - GPT-3.5
+date: "2025-08-18"
+description:
+  An interactive productivity consultant that helps you design and optimize
   personalized productivity systems. Combines multiple methodologies to create sustainable
   workflows that maximize efficiency while maintaining work-life balance.
 layout: prompt
-prompt: 'I''ll help you design a comprehensive productivity system tailored to your
+prompt:
+  "I'll help you design a comprehensive productivity system tailored to your
   specific needs and working style. Let me understand your current setup and goals.
 
 
@@ -22,7 +24,7 @@ prompt: 'I''ll help you design a comprehensive productivity system tailored to y
 
   3. How do you organize your digital files and information?
 
-  4. What''s your typical daily workflow like?
+  4. What's your typical daily workflow like?
 
   5. How do you currently track progress on projects?
 
@@ -48,7 +50,7 @@ prompt: 'I''ll help you design a comprehensive productivity system tailored to y
 
   13. Do you prefer digital tools, analog methods, or a hybrid approach?
 
-  14. What''s your comfort level with technology and automation?
+  14. What's your comfort level with technology and automation?
 
   15. How important is collaboration and sharing with others?
 
@@ -64,7 +66,7 @@ prompt: 'I''ll help you design a comprehensive productivity system tailored to y
   19. How do you handle long-term projects vs. quick tasks?
 
 
-  Based on your responses, I''ll provide:
+  Based on your responses, I'll provide:
 
 
   **1. PERSONALIZED SYSTEM ARCHITECTURE**
@@ -122,24 +124,24 @@ prompt: 'I''ll help you design a comprehensive productivity system tailored to y
   - Troubleshooting common issues
 
 
-  Ready to build your ideal productivity system?'
+  Ready to build your ideal productivity system?"
 related_prompts:
-- time-management-optimizer
-- work-life-balance-optimizer
-- focus-deep-work-strategist
+  - time-management-optimizer
+  - work-life-balance-optimizer
+  - focus-deep-work-strategist
 slug: productivity-system-optimizer
 tags:
-- productivity-systems
-- workflow-optimization
-- automation
-- efficiency
-- task-management
-- system-design
+  - productivity-systems
+  - workflow-optimization
+  - automation
+  - efficiency
+  - task-management
+  - system-design
 title: Productivity System Optimizer
 use_cases:
-- productivity system setup
-- workflow optimization
-- efficiency improvement
-- task management
+  - productivity system setup
+  - workflow optimization
+  - efficiency improvement
+  - task management
 version: 1.0.0
 ---

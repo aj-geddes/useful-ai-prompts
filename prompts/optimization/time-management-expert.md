@@ -1,6 +1,7 @@
 # Time Management Expert
 
 ## Metadata
+
 - **ID**: `optimization-time-management`
 - **Version**: 1.0.0
 - **Category**: Optimization
@@ -18,6 +19,7 @@ Optimizes how time is spent to maximize productivity and maintain work-life bala
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Feeling overwhelmed or constantly behind on commitments
 - High effort with low output or impact
 - Work-life balance suffering despite long hours
@@ -25,6 +27,7 @@ Optimizes how time is spent to maximize productivity and maintain work-life bala
 - Transitioning to new role requiring different time allocation
 
 **Anti-Patterns (When NOT to Use):**
+
 - Team scheduling and resource allocation
 - Project management and timeline planning
 - Organizational productivity initiatives
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I spend about 60% of my time in meetings with little time left for strategic thinking. I manage a team of 8 people and also own several projects directly. I feel constantly reactive rather than proactive. I would like to carve out at least 2 hours daily for focused, uninterrupted work."
 
 ### Output
@@ -113,18 +117,21 @@ Avoid:
 **1. Time Audit**
 
 Current allocation (estimated):
+
 - Meetings: 60% (~24 hours/week)
 - Reactive work (email, Slack, interruptions): 20% (~8 hours)
 - Actual focused work: 15% (~6 hours)
 - Administrative: 5% (~2 hours)
 
 Problem analysis:
+
 - Meeting overload: 60% is high even for managers (benchmark: 40-50%)
 - Reactive mode: Constant interruptions prevent strategic thinking
 - Zero protected time for important-but-not-urgent work
 - Energy drain: Back-to-back meetings reduce effectiveness
 
 Reclaim opportunity:
+
 - Meeting audit: 20-30% of meetings can likely be eliminated or shortened
 - Async conversion: Some meetings can become written updates
 - Protection target: 2 hours daily = 10 hours weekly (25% of time)
@@ -132,17 +139,20 @@ Reclaim opportunity:
 **2. Prioritization Framework**
 
 Weekly priority system:
+
 - Monday morning: Identify 3 "must accomplish" items for the week
 - Daily: Select one "top priority" that gets first focus time
 - Everything else: Important but not critical
 
 Meeting triage criteria (apply to each recurring meeting):
+
 - Eliminate: Do not need to attend, no real contribution (15% of meetings)
 - Delegate: Send team member instead (10%)
 - Shorten: 30 minutes instead of 60 (30%)
 - Keep: Essential with current format (45%)
 
 Decision framework for new requests:
+
 - Does this advance my weekly priorities? If no, decline or defer
 - Can someone else handle this? If yes, delegate
 - Does it require real-time discussion? If no, make it async
@@ -150,11 +160,13 @@ Decision framework for new requests:
 **3. Scheduling System**
 
 Weekly structure:
+
 - Monday AM: Planning and priority setting (no meetings before 10am)
 - Tuesday-Thursday AM: Focus blocks (8-10am protected)
 - Friday: Catch-up, review, planning for next week
 
 Daily routine:
+
 - 7:30-8:00: Review priorities, plan day (before others come online)
 - 8:00-10:00: Focus block (most important strategic work)
 - 10:00-12:00: Available for meetings
@@ -164,12 +176,14 @@ Daily routine:
 - 4:30-5:00: Email processing and next-day preparation
 
 Meeting management:
+
 - Default duration: 25 minutes (not 30), 50 minutes (not 60)
 - Office hours: Set 2 blocks weekly for ad-hoc team questions
 - 1:1s: Protected, consistent, efficient with running agenda doc
 - Skip-level and external meetings: Schedule in afternoon only
 
 Communication boundaries:
+
 - Check email: 3 times daily (10am, 1pm, 4pm)
 - Slack: Respond within 2 hours, not instantly
 - Notifications: Off during focus blocks
@@ -178,24 +192,28 @@ Communication boundaries:
 **4. Implementation**
 
 Week 1: Audit and Prepare
+
 - Track actual time for 1 week as reality check
 - Audit all recurring meetings against triage criteria
 - Block 8-10am on calendar as "Focus Time"
 - Communicate boundaries to team
 
 Week 2: Implement Core Changes
+
 - Begin focus block routine
 - Decline or shorten identified meetings
 - Set up email and Slack boundaries
 - Introduce office hours concept to team
 
 Week 3-4: Adjust and Sustain
+
 - Review: Is focus time being protected?
 - Problem-solve: What is breaking through?
 - Adjust timing or approach as needed
 - Continue focus blocks as non-negotiable
 
 Expected outcomes:
+
 - Meetings: 60% to 45% of time (15% reduction)
 - Focus time: 6 hours to 12+ hours weekly
 - Strategic work: 2 hours daily achieved

@@ -1,6 +1,7 @@
 # Decision Making Expert
 
 ## Metadata
+
 - **ID**: `problem-solving-decision-making`
 - **Version**: 1.0.0
 - **Category**: Problem-Solving
@@ -18,6 +19,7 @@ A structured decision-making specialist that helps you evaluate options and make
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Making complex business or technical decisions with multiple viable options
 - Choosing between alternatives with significant consequences
 - Evaluating trade-offs that affect multiple stakeholders
@@ -25,6 +27,7 @@ A structured decision-making specialist that helps you evaluate options and make
 - Documenting decision rationale for future reference
 
 **Anti-Patterns (when not to use):**
+
 - Personal life decisions with emotional components (use personal-values-clarifier)
 - Ethical dilemmas requiring moral reasoning (consult ethics experts)
 - Legal judgments requiring legal expertise (consult legal counsel)
@@ -117,17 +120,18 @@ Decision: Should we build custom CRM software or buy a SaaS solution? Options: C
 
 **Decision Framework**
 
-*Success Criteria (Weighted by Importance)*
+_Success Criteria (Weighted by Importance)_
 
-| Criterion | Weight | Description |
-|-----------|--------|-------------|
-| Time to Operational | 30% | Solution working within 8 months (hard constraint) |
-| Total Cost of Ownership | 25% | 5-year total cost including hidden costs |
-| Integration Capability | 20% | Works seamlessly with existing ERP |
-| Scalability | 15% | Supports growth to 2500+ users |
-| Customization | 10% | Fits unique business processes |
+| Criterion               | Weight | Description                                        |
+| ----------------------- | ------ | -------------------------------------------------- |
+| Time to Operational     | 30%    | Solution working within 8 months (hard constraint) |
+| Total Cost of Ownership | 25%    | 5-year total cost including hidden costs           |
+| Integration Capability  | 20%    | Works seamlessly with existing ERP                 |
+| Scalability             | 15%    | Supports growth to 2500+ users                     |
+| Customization           | 10%    | Fits unique business processes                     |
 
-*Why These Weights*:
+_Why These Weights_:
+
 - Timeline is weighted highest because current system failure creates urgency
 - TCO matters but shouldn't sacrifice operational continuity
 - Integration is critical for data consistency across systems
@@ -135,60 +139,60 @@ Decision: Should we build custom CRM software or buy a SaaS solution? Options: C
 
 **Options Analysis**
 
-| Criterion (Weight) | Custom Build | SaaS Solution | Notes |
-|--------------------|--------------|---------------|-------|
-| Time to Value (30%) | 6-8 months | 2-3 months | Custom includes testing buffer |
-| 5-Year TCO (25%) | $450K | $250-300K | Custom: $200K build + $50K/year maint |
-| Integration (20%) | Full control | Pre-built + custom | SaaS has ERP connectors |
-| Scalability (15%) | Unlimited | Included | Both adequate for 2500 users |
-| Customization (10%) | Complete | Platform limits | SaaS covers 80% of typical needs |
+| Criterion (Weight)  | Custom Build | SaaS Solution      | Notes                                 |
+| ------------------- | ------------ | ------------------ | ------------------------------------- |
+| Time to Value (30%) | 6-8 months   | 2-3 months         | Custom includes testing buffer        |
+| 5-Year TCO (25%)    | $450K        | $250-300K          | Custom: $200K build + $50K/year maint |
+| Integration (20%)   | Full control | Pre-built + custom | SaaS has ERP connectors               |
+| Scalability (15%)   | Unlimited    | Included           | Both adequate for 2500 users          |
+| Customization (10%) | Complete     | Platform limits    | SaaS covers 80% of typical needs      |
 
-*Scoring (1-5 scale, 5 = best)*
+_Scoring (1-5 scale, 5 = best)_
 
-| Criterion | Custom | SaaS |
-|-----------|--------|------|
-| Time to Value | 2 | 5 |
-| TCO | 2 | 4 |
-| Integration | 4 | 3 |
-| Scalability | 5 | 4 |
-| Customization | 5 | 3 |
+| Criterion          | Custom   | SaaS     |
+| ------------------ | -------- | -------- |
+| Time to Value      | 2        | 5        |
+| TCO                | 2        | 4        |
+| Integration        | 4        | 3        |
+| Scalability        | 5        | 4        |
+| Customization      | 5        | 3        |
 | **Weighted Score** | **2.85** | **4.05** |
 
 **Risk Assessment**
 
-*Custom Build Risks*
+_Custom Build Risks_
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Development delays | 35% | High | Could miss 8-month deadline |
-| Scope creep | 40% | Medium | Requires strict PM discipline |
-| Key person dependency | 25% | High | Knowledge concentrated in small team |
-| Maintenance burden | 80% | Medium | Ongoing developer allocation required |
+| Risk                  | Probability | Impact | Mitigation                            |
+| --------------------- | ----------- | ------ | ------------------------------------- |
+| Development delays    | 35%         | High   | Could miss 8-month deadline           |
+| Scope creep           | 40%         | Medium | Requires strict PM discipline         |
+| Key person dependency | 25%         | High   | Knowledge concentrated in small team  |
+| Maintenance burden    | 80%         | Medium | Ongoing developer allocation required |
 
-*SaaS Risks*
+_SaaS Risks_
 
-| Risk | Probability | Impact | Mitigation |
-|------|-------------|--------|------------|
-| Vendor lock-in | 70% | Medium | Data portability clause in contract |
-| Feature limitations | 30% | Low | Most needs are standard; evaluate gaps |
-| Price increases | 40% | Medium | Multi-year contract, cap on increases |
-| Integration gaps | 20% | Medium | Evaluate ERP connector before signing |
+| Risk                | Probability | Impact | Mitigation                             |
+| ------------------- | ----------- | ------ | -------------------------------------- |
+| Vendor lock-in      | 70%         | Medium | Data portability clause in contract    |
+| Feature limitations | 30%         | Low    | Most needs are standard; evaluate gaps |
+| Price increases     | 40%         | Medium | Multi-year contract, cap on increases  |
+| Integration gaps    | 20%         | Medium | Evaluate ERP connector before signing  |
 
 **Stakeholder Impact**
 
-| Stakeholder | Custom Impact | SaaS Impact |
-|-------------|---------------|-------------|
-| Sales Team | Longer wait, perfect fit | Quick access, may need workarounds |
-| Engineering | Major project, new skills | Integration work, not ongoing |
-| Finance | Higher capital, uncertain | Predictable OPEX |
-| Customers | No change | No change |
-| Leadership | Higher risk, proprietary asset | Lower risk, standard tool |
+| Stakeholder | Custom Impact                  | SaaS Impact                        |
+| ----------- | ------------------------------ | ---------------------------------- |
+| Sales Team  | Longer wait, perfect fit       | Quick access, may need workarounds |
+| Engineering | Major project, new skills      | Integration work, not ongoing      |
+| Finance     | Higher capital, uncertain      | Predictable OPEX                   |
+| Customers   | No change                      | No change                          |
+| Leadership  | Higher risk, proprietary asset | Lower risk, standard tool          |
 
 **Recommendation: SaaS Solution**
 
-*Confidence Level*: High (80%)
+_Confidence Level_: High (80%)
 
-*Rationale*:
+_Rationale_:
 
 1. **Timeline is the deciding factor**: The 8-month constraint is non-negotiable and custom development has 35% probability of missing it. SaaS provides comfortable margin with 2-3 months to operational.
 
@@ -200,7 +204,8 @@ Decision: Should we build custom CRM software or buy a SaaS solution? Options: C
 
 5. **Reversibility**: SaaS is more reversible than custom. If it doesn't work, you can switch providers. Custom build creates switching costs and sunk cost psychology.
 
-*What Would Change This Recommendation*:
+_What Would Change This Recommendation_:
+
 - If timeline extended to 18+ months: Custom becomes viable
 - If you have unique CRM requirements that no vendor supports
 - If regulatory requirements prohibit cloud-based customer data
@@ -208,27 +213,32 @@ Decision: Should we build custom CRM software or buy a SaaS solution? Options: C
 
 **Implementation Approach**
 
-*Week 1: Vendor Evaluation*
+_Week 1: Vendor Evaluation_
+
 - Demo top 3 SaaS options (Salesforce, HubSpot, [industry-specific])
 - Validate ERP integration capabilities with technical POC
 - Assess customization options for unique workflows
 
-*Week 2: Decision and Negotiation*
+_Week 2: Decision and Negotiation_
+
 - Select vendor based on demos and integration validation
 - Negotiate contract terms (multi-year, price cap, exit clause)
 - Get legal review of contract
 
-*Month 1-2: Implementation*
+_Month 1-2: Implementation_
+
 - Core configuration and customization
 - ERP integration development and testing
 - Data migration planning and initial loads
 
-*Month 3: Testing and Training*
+_Month 3: Testing and Training_
+
 - User acceptance testing with pilot group
 - Training program development and delivery
 - Go-live preparation and cutover planning
 
-*Month 4: Go-Live*
+_Month 4: Go-Live_
+
 - Phased rollout by team/region
 - Intensive support period
 - Feedback collection and rapid iteration
@@ -236,6 +246,7 @@ Decision: Should we build custom CRM software or buy a SaaS solution? Options: C
 **Decision Review Triggers**
 
 Revisit this decision if:
+
 - SaaS vendor quotes exceed $75K/year
 - Critical feature gaps are discovered that require extensive workarounds
 - Business scales beyond 3000 users and SaaS pricing becomes prohibitive

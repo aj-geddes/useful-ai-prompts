@@ -1,6 +1,7 @@
 # Performance Profiler
 
 ## Metadata
+
 - **ID**: `development-performance-profiler`
 - **Version**: 1.0.0
 - **Category**: Development
@@ -18,12 +19,14 @@ Systematically identifies application performance bottlenecks using profiling da
 ## When to Use
 
 **Ideal Scenarios:**
+
 - API response times exceeding SLA thresholds
 - Application slowing down as data or users grow
 - Pre-launch performance validation against load requirements
 - Investigating customer complaints about slowness
 
 **Anti-patterns (Don't Use For):**
+
 - Premature optimization before establishing baselines
 - Infrastructure scaling decisions without profiling first
 - UI rendering performance (different toolset required)
@@ -119,6 +122,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Our Django API's /api/dashboard endpoint takes 8 seconds on average. It loads a user's stats — total orders, revenue this month, top products, recent activity. It gets called every time the dashboard loads. We have 2,000 users. Stack: Django + PostgreSQL."
 
 ### Output
@@ -131,16 +135,19 @@ An 8-second dashboard endpoint loading aggregate stats for a single user on Post
 
 **Step 1: Instrument First**
 Add Django Debug Toolbar or django-silk to count queries on this endpoint:
+
 ```python
 # settings.py (dev only)
 INSTALLED_APPS += ['silk']
 MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
 ```
+
 Target: if query count > 10 for a single dashboard load, N+1 is confirmed.
 
 **Step 2: Most Likely Issues and Fixes**
 
-*Issue A — Aggregate queries without indexes (Impact: High, Effort: Low)*
+_Issue A — Aggregate queries without indexes (Impact: High, Effort: Low)_
+
 ```sql
 -- Check with EXPLAIN ANALYZE:
 EXPLAIN ANALYZE SELECT SUM(total) FROM orders WHERE user_id = 123 AND created_at >= '2026-02-01';
@@ -150,7 +157,8 @@ CREATE INDEX idx_orders_user_date ON orders(user_id, created_at);
 -- Expected improvement: 8s → 1-2s for aggregate queries alone
 ```
 
-*Issue B — Computing "top products" in Python (Impact: High, Effort: Low)*
+_Issue B — Computing "top products" in Python (Impact: High, Effort: Low)_
+
 ```python
 # Slow (loads all order items into memory):
 items = OrderItem.objects.filter(order__user=user)
@@ -164,10 +172,12 @@ top_products = (OrderItem.objects
     .annotate(total=Count('id'))
     .order_by('-total')[:5])
 ```
+
 Expected improvement: 3-5 seconds eliminated.
 
-*Issue C — Caching (Impact: Medium, Effort: Low)*
+_Issue C — Caching (Impact: Medium, Effort: Low)_
 Dashboard stats don't need to be real-time. Cache per-user with 60-second TTL:
+
 ```python
 from django.core.cache import cache
 
@@ -179,6 +189,7 @@ def get_dashboard_stats(user_id):
         cache.set(cache_key, stats, timeout=60)
     return stats
 ```
+
 Expected improvement: subsequent loads < 10ms.
 
 **Prioritized Plan**

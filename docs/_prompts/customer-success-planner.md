@@ -3,21 +3,22 @@ title: Customer Success Planner
 slug: customer-success-planner
 category: customer service
 tags:
-- customer
-- success
-- onboarding
-- design
-- health
-- scoring
-- expansion
-- plays
-- B2B
-- retention
+  - customer
+  - success
+  - onboarding
+  - design
+  - health
+  - scoring
+  - expansion
+  - plays
+  - B2B
+  - retention
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt activates a customer success specialist who designs onboarding
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt activates a customer success specialist who designs onboarding
   journeys, health scoring models, and expansion plays for B2B customers. The planner
   builds the strategic and operational infrastructure for CS teams to proactively
   drive adoption, identify risk, and create expansion opportunities — shifting the
@@ -26,14 +27,14 @@ description: This prompt activates a customer success specialist who designs onb
   opportunity identification logic.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing or overhauling a B2B customer onboarding program with high early-stage
-  churn
-- Building a customer health scoring model to prioritize CS team attention across
-  a large book of business
-- Creating structured expansion playbooks for CSMs managing renewal and upsell conversations
-- Consumer (B2C) customer management at scale — health scoring and CSM-led plays require
-  B2B economics to be viable
+  - Ideal Scenarios:**
+  - Designing or overhauling a B2B customer onboarding program with high early-stage
+    churn
+  - Building a customer health scoring model to prioritize CS team attention across
+    a large book of business
+  - Creating structured expansion playbooks for CSMs managing renewal and upsell conversations
+  - Consumer (B2C) customer management at scale — health scoring and CSM-led plays require
+    B2B economics to be viable
 complexity: advanced
 interaction: multi-turn
 ---

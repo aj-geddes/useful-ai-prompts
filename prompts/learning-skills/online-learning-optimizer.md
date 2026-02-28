@@ -1,6 +1,7 @@
 # Online Learning Optimizer
 
 ## Metadata
+
 - **ID**: `learning-online-optimizer`
 - **Version**: 1.0.0
 - **Category**: Learning & Skills
@@ -12,10 +13,13 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Maximizes effectiveness of online education by creating personalized learning plans, optimizing retention, and designing sustainable study systems. Addresses common online learning challenges including course completion, engagement, and practical skill application.
 
 ## When to Use
+
 **Ideal scenarios:**
+
 - Starting a new online course or certification program
 - Struggling to complete online courses (the "course graveyard" problem)
 - Optimizing learning from MOOCs, bootcamps, or self-paced programs
@@ -23,6 +27,7 @@ Maximizes effectiveness of online education by creating personalized learning pl
 - Balancing online learning with full-time work
 
 **Anti-patterns (when NOT to use):**
+
 - In-person training design and facilitation
 - Academic degree planning and university coursework
 - Corporate LMS administration and design
@@ -107,12 +112,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "I'm taking the Google Data Analytics Certificate on Coursera for career transition into data analysis. Working full-time, can do 8 hours on weekends. Previously started 3 online courses and never finished any."
 
 ### Output
+
 **Online Learning Optimization Plan: Google Data Analytics Certificate**
 
 **1. Course Analysis**
+
 - Structure: 8 courses, ~200 hours total content at 1x speed
 - High-value modules: R programming (Course 7), SQL (Course 4), Capstone project (Course 8)
 - Potential skip/speed content: Some foundational material you may know (Excel basics, intro to data concepts)
@@ -120,6 +128,7 @@ Avoid:
 - Realistic timeline: 5 months at 8 hrs/weekend = 160 hours, sufficient for completion with active learning
 
 Your dropout pattern analysis:
+
 - Previous courses: Likely started strong, faded around week 3-4, never returned
 - Common triggers: Accumulated backlog feels insurmountable, content got hard without support, lost connection to "why"
 - Strategy: Prevent backlog accumulation, build external accountability, maintain application connection throughout
@@ -127,18 +136,21 @@ Your dropout pattern analysis:
 **2. Active Learning Techniques**
 
 Replace passive watching with engaged learning:
+
 - Pause-and-do rule: Every 10 minutes, pause video and do the described task yourself (not just watch)
 - Teach-back notes: Summarize each lesson in your own words as if explaining to a colleague who asked for help
 - Parallel project: Build a personal data project alongside course - analyze something you actually care about
 - Error log: Track mistakes and confusion points; these are your real learning edges
 
 For each module, follow this sequence:
+
 1. Watch at 1.25-1.5x speed with active note-taking (key concepts, terms, steps)
 2. Complete all hands-on labs immediately (do not skip or save for later)
 3. Create Anki flashcards for new functions and concepts (review daily)
 4. Apply the concept to your parallel project the same day while fresh
 
 Your parallel project idea (personalize to your interests):
+
 - Sports fan: Analyze team performance data from your favorite sport
 - Music lover: Analyze Spotify data or music trends
 - Personal finance: Analyze your own spending patterns
@@ -147,31 +159,37 @@ Your parallel project idea (personalize to your interests):
 **3. Completion Schedule (8 hrs/weekend, 5 months)**
 
 Month 1: Foundations (Courses 1-2)
+
 - Course 1: Foundations of Data, Data, Everywhere (Week 1-2)
 - Course 2: Ask Questions to Make Data-Driven Decisions (Week 3-4)
 - Parallel project: Define your project question, find your dataset
 
 Month 2: Core Technical Skills (Courses 3-4)
+
 - Course 3: Prepare Data for Exploration (Week 5-6)
 - Course 4: Process Data from Dirty to Clean with SQL (Week 7-8)
 - Parallel project: Import and clean your dataset, write first queries
 
 Month 3: Analysis & Visualization (Courses 5-6)
+
 - Course 5: Analyze Data to Answer Questions (Week 9-10)
 - Course 6: Share Data Through the Art of Visualization with Tableau (Week 11-12)
 - Parallel project: Analyze your data, create first visualizations
 
 Month 4: R Programming (Course 7)
+
 - Course 7: Data Analysis with R Programming (Week 13-16)
 - Give extra time: This is the most technical course, most common dropout point
 - Parallel project: Recreate your analysis in R
 
 Month 5: Capstone & Polish (Course 8)
+
 - Course 8: Google Data Analytics Capstone (Week 17-20)
 - Parallel project: Complete and document your portfolio project
 - Prepare: Update resume, LinkedIn, begin job applications
 
 Weekend structure:
+
 - Saturday AM (3 hrs): New video content + all labs
 - Saturday PM (1 hr): Personal project application
 - Sunday AM (3 hrs): Continue content + practice exercises
@@ -182,29 +200,35 @@ Weekend structure:
 Addressing your specific dropout pattern:
 
 Week 1 commitment:
+
 - Find accountability partner: r/GoogleDataAnalytics subreddit has active study group threads
 - Alternative: Recruit a friend who wants to learn together, or use Focusmate for body doubling
 
 Weekly public commitment:
+
 - Post progress update every Sunday to study group or social media
 - Share wins, struggles, and what you learned
 - Public commitment creates social pressure to continue
 
 Streak protection:
+
 - If you miss a weekend: Do 30 minutes minimum to maintain momentum
 - Never miss twice in a row - this is where courses die
 - Mark streaks on calendar with visible checkmarks
 
 Reward milestones:
+
 - Each course completion = predetermined celebration (dinner out, purchase, day off)
 - Define rewards now, write them down, make them real
 
 Anti-overwhelm rule:
+
 - If falling behind schedule: Reduce scope, not quit
 - Behind 2+ weeks: Schedule a "catch-up Saturday" with 4-hour focused session
 - Permanently behind: Adjust timeline, don't abandon
 
 Dropout point strategies:
+
 - Week 4 danger zone: Schedule call or coffee with accountability partner
 - Technical difficulty in R: Use course forums, Discord communities, Stack Overflow before giving up
 - Motivation dip: Re-read your "why" document you'll write in week 1
@@ -212,6 +236,7 @@ Dropout point strategies:
 **5. Application Framework**
 
 Build job-ready portfolio alongside course:
+
 - Project 1 (Month 2): Clean and analyze a public dataset in spreadsheets - publish writeup on Medium or LinkedIn
 - Project 2 (Month 3): SQL project using BigQuery public datasets - document queries and insights on GitHub
 - Project 3 (Month 4): Interactive Tableau dashboard - publish to Tableau Public
@@ -219,6 +244,7 @@ Build job-ready portfolio alongside course:
 - Capstone: Comprehensive project showcasing full data analysis pipeline
 
 Post-completion roadmap:
+
 - Week 17: Update LinkedIn with new skills and projects
 - Week 18: Create simple portfolio website (GitHub Pages)
 - Week 19: Begin job applications, target 5 applications per week
@@ -227,6 +253,7 @@ Post-completion roadmap:
 ---
 
 ## Related Prompts
+
 - [Skill Acquisition Accelerator](skill-acquisition-accelerator.md) - General skill development methodology
 - [Professional Certification Planner](professional-certification-planner.md) - Certification exam strategy
 - [Knowledge Retention Enhancer](knowledge-retention-enhancer.md) - Retaining course material

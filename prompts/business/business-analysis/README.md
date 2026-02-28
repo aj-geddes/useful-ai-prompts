@@ -5,8 +5,9 @@ Professional-grade prompts for requirements engineering, process analysis, and b
 ## Available Prompts
 
 ### Requirements & Analysis
+
 - [Requirements Engineering Expert](./requirements-engineering-expert.md) - Comprehensive requirements gathering and system design
 
 ---
 
-*Transform business needs into actionable solutions with AI-powered analysis.*
+_Transform business needs into actionable solutions with AI-powered analysis._

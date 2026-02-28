@@ -414,6 +414,7 @@ aws cloudfront create-response-headers-policy \
 ## Best Practices
 
 ### ✅ DO
+
 - Use Origin Access Identity (OAI) for S3
 - Enable HTTPS only for viewers
 - Compress content at CloudFront
@@ -424,6 +425,7 @@ aws cloudfront create-response-headers-policy \
 - Use multiple origins for redundancy
 
 ### ❌ DON'T
+
 - Make S3 buckets public
 - Cache sensitive data
 - Use HTTP for production

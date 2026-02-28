@@ -1,6 +1,7 @@
 # Bandit Security Analysis Expert
 
 ## Metadata
+
 - **ID**: `security-bandit-analysis`
 - **Version**: 1.0.0
 - **Category**: Security/Technical
@@ -18,12 +19,14 @@ Analyze Bandit security scan reports and implement comprehensive fixes for Pytho
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Analyzing Bandit security scan results
 - Remediating Python security vulnerabilities
 - Implementing secure coding patterns
 - Setting up automated security scanning pipelines
 
 **Anti-Patterns (Do Not Use For):**
+
 - Non-Python codebases
 - Runtime security monitoring
 - Penetration testing
@@ -104,6 +107,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```json
 {
   "results": [
@@ -130,6 +134,7 @@ Avoid:
 ```
 
 ### Output
+
 **Security Analysis Report**
 
 **Executive Summary**
@@ -143,13 +148,14 @@ Avoid:
 
 **High Priority: B602 - Command Injection Risk**
 
-*File: utils/runner.py, Line 45*
+_File: utils/runner.py, Line 45_
 
 **Vulnerability**: `subprocess.call()` with `shell=True` allows command injection if user input reaches the command string.
 
 **Risk Assessment**: Critical - Direct command execution with shell interpretation enables arbitrary code execution.
 
 **Before (Vulnerable)**
+
 ```python
 import subprocess
 
@@ -158,6 +164,7 @@ def run_command(cmd):
 ```
 
 **After (Secure)**
+
 ```python
 import subprocess
 import shlex
@@ -182,6 +189,7 @@ def run_command(cmd: str) -> subprocess.CompletedProcess:
 ```
 
 **Security Improvements**:
+
 - Removed shell interpretation (shell=False)
 - Added command allowlist validation
 - Proper argument parsing with shlex
@@ -191,11 +199,12 @@ def run_command(cmd: str) -> subprocess.CompletedProcess:
 
 **Medium Priority: B506 - Unsafe YAML Deserialization**
 
-*File: config/loader.py, Line 23*
+_File: config/loader.py, Line 23_
 
 **Vulnerability**: `yaml.load()` can execute arbitrary Python code during deserialization.
 
 **Before (Vulnerable)**
+
 ```python
 import yaml
 
@@ -205,6 +214,7 @@ def load_config(path):
 ```
 
 **After (Secure)**
+
 ```python
 import yaml
 
@@ -219,6 +229,7 @@ def load_config(path: str) -> dict:
 **CI/CD Integration**
 
 Add to `.github/workflows/security.yml`:
+
 ```yaml
 - name: Run Bandit Security Scan
   run: |
@@ -228,6 +239,7 @@ Add to `.github/workflows/security.yml`:
 ```
 
 Add to `pyproject.toml`:
+
 ```toml
 [tool.bandit]
 exclude_dirs = ["tests", "venv"]
@@ -239,6 +251,7 @@ skips = []  # Do not skip any checks
 ---
 
 ## Related Prompts
+
 - [Security Assessment Expert](../evaluation-assessment/security-assessment-expert.md)
 - [Code Review Expert](../evaluation-assessment/code-review-expert.md)
 - [ADR Generation](../research/adr-record-generation.md)

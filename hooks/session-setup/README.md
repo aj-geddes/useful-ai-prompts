@@ -276,14 +276,17 @@ Keep a README with environment setup:
 # Development Setup
 
 ## Prerequisites
+
 - Node.js 18+
 - PostgreSQL 14+
 - Redis 7+
 
 ## Environment Variables
+
 Copy `.env.example` to `.env` and fill in values.
 
 ## Database Setup
+
 npm run db:setup
 ```
 
@@ -499,6 +502,7 @@ interactive_setup() {
 ### Hook Not Running
 
 Check:
+
 1. Hook is in SessionStart section of settings.json
 2. Script is executable: `chmod +x hook.sh`
 3. Path is absolute and correct
@@ -507,6 +511,7 @@ Check:
 ### Environment Variables Not Loading
 
 Verify:
+
 1. .env file exists and has correct format
 2. ENV_FILE path is correct in .session-config
 3. No syntax errors in .env (no spaces around =)
@@ -514,6 +519,7 @@ Verify:
 ### Slow Initialization
 
 Optimize by:
+
 1. Disabling optional checks
 2. Caching results
 3. Running checks in parallel
@@ -522,6 +528,7 @@ Optimize by:
 ### Database Connection Fails
 
 Check:
+
 1. Database is running
 2. DATABASE_URL is correct
 3. Network connectivity

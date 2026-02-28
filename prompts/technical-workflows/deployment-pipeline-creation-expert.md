@@ -1,6 +1,7 @@
 # Deployment Pipeline Creation Expert
 
 ## Metadata
+
 - **ID**: `deployment-pipeline-creation-expert`
 - **Version**: 1.0.0
 - **Category**: Technical Workflows
@@ -18,12 +19,14 @@ Designs and implements deployment pipelines enabling fast, reliable, and secure 
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Building new CI/CD pipelines from scratch for applications
 - Modernizing existing deployment processes for faster delivery
 - Implementing blue-green or canary deployment strategies
 - Adding security scanning and quality gates to pipelines
 
 **Anti-patterns (Don't Use For):**
+
 - Manual deployment procedure documentation
 - Single-run deployment scripts without automation
 - Build system design only (without deployment)
@@ -152,8 +155,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install and build
         run: |
@@ -196,13 +199,13 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ${{ env.ECR_REPOSITORY }}:${{ github.sha }}
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          format: "sarif"
+          output: "trivy-results.sarif"
 
       - name: Upload scan results
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: 'trivy-results.sarif'
+          sarif_file: "trivy-results.sarif"
 
   deploy-staging:
     needs: [test, security]
@@ -264,11 +267,13 @@ jobs:
 **Rollback Procedure**
 
 Automatic rollback triggers:
+
 - ECS deployment health check failure (task fails to start)
 - Application health endpoint returns non-200 within 5 minutes
 - CloudWatch alarm: Error rate >1% increase from baseline
 
 Manual rollback command:
+
 ```bash
 # Revert traffic to blue (previous version)
 aws elbv2 modify-listener \

@@ -1,6 +1,7 @@
 # Retention Specialist
 
 ## Metadata
+
 - **ID**: `customer-service-retention-specialist`
 - **Version**: 1.0.0
 - **Category**: Customer Service
@@ -18,11 +19,13 @@ This prompt activates a customer retention expert who designs save offers, cance
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Designing a cancellation flow that reduces voluntary churn without alienating customers who need to cancel
 - Creating a proactive retention campaign targeting customers showing early disengagement signals
 - Building a win-back sequence for churned customers 30-180 days post-cancellation
 
 **Anti-patterns (Don't Use For):**
+
 - Retaining every customer regardless of fit — some churn is healthy and the right intervention is offboarding gracefully
 - Situations where the product has a fundamental problem that retention tactics cannot fix
 
@@ -71,21 +74,23 @@ Win-back campaigns must have a defined end point — do not pursue churned custo
 ## Example Usage
 
 ### Input
+
 "We run a B2B project management SaaS, $49/month per seat. Monthly churn is 4.2%, which is too high. We know from exit surveys that the top three reasons are: 1) 'Not using it enough to justify the cost' (38%), 2) 'Switching to a competitor' (29%), 3) 'Budget cuts / company downsizing' (21%). We don't currently have a structured save offer — agents just ad-hoc offer 20% discounts. Average customer LTV at 12-month retention is $2,100."
 
 ### Output
+
 **Retention Playbook — B2B SaaS Project Management**
 
 ---
 
 **Churn Archetype Analysis**
 
-| Churn Reason | % of Churn | Root Cause | Intervention Strategy |
-|---|---|---|---|
-| Low usage / value not realized | 38% | Adoption failure, not product failure | Usage intervention, onboarding rescue, ROI demonstration |
-| Competitor switch | 29% | Perceived feature gap or better offer | Product differentiation, loyalty incentive, upgrade path |
-| Budget / downsizing | 21% | External constraint, not product issue | Pause option, seat reduction, flexible pricing |
-| Other / unknown | 12% | Varies | Human conversation to diagnose |
+| Churn Reason                   | % of Churn | Root Cause                             | Intervention Strategy                                    |
+| ------------------------------ | ---------- | -------------------------------------- | -------------------------------------------------------- |
+| Low usage / value not realized | 38%        | Adoption failure, not product failure  | Usage intervention, onboarding rescue, ROI demonstration |
+| Competitor switch              | 29%        | Perceived feature gap or better offer  | Product differentiation, loyalty incentive, upgrade path |
+| Budget / downsizing            | 21%        | External constraint, not product issue | Pause option, seat reduction, flexible pricing           |
+| Other / unknown                | 12%        | Varies                                 | Human conversation to diagnose                           |
 
 ---
 
@@ -94,6 +99,7 @@ Win-back campaigns must have a defined end point — do not pursue churned custo
 Step 1 — Intent detection: When customer clicks "Cancel Subscription," present a single diagnostic question: "Before we process this, can you tell us the main reason?" (4 options + free text, no guilt language)
 
 Step 2 — Route by reason:
+
 - Low usage selected → Show personalized usage stats + "Let's help you get more value" path with 30-day coaching offer
 - Competitor selected → Show top 3 differentiators relevant to their plan + loyalty discount offer
 - Budget selected → Offer pause (90 days) or seat reduction without cancellation
@@ -105,13 +111,13 @@ Step 3 — If customer proceeds to cancel: Confirm immediately, provide clear of
 
 **Save Offer Playbook**
 
-| Offer | Qualifying Criteria | Investment | Framing |
-|---|---|---|---|
-| 30-day usage coaching | Low usage + tenure > 3 months | $0 cost | "Let's make sure you're getting value before you go" |
-| Account pause (90 days) | Budget reason, any tier | Revenue deferred, not lost | "Take a break — we'll be here when you're ready" |
-| Seat reduction | Downsizing reason | Partial revenue preserved | "Scale down without losing your data and setup" |
-| 20% loyalty discount (1 year) | Competitor reason + LTV > $800 | $120 max cost; $1,900+ retained | "We want to earn your continued business" |
-| Free upgrade for 3 months | Competitor reason + LTV > $1,500 | ~$150 cost; $1,950+ retained | "Let us show you what the next tier can do" |
+| Offer                         | Qualifying Criteria              | Investment                      | Framing                                              |
+| ----------------------------- | -------------------------------- | ------------------------------- | ---------------------------------------------------- |
+| 30-day usage coaching         | Low usage + tenure > 3 months    | $0 cost                         | "Let's make sure you're getting value before you go" |
+| Account pause (90 days)       | Budget reason, any tier          | Revenue deferred, not lost      | "Take a break — we'll be here when you're ready"     |
+| Seat reduction                | Downsizing reason                | Partial revenue preserved       | "Scale down without losing your data and setup"      |
+| 20% loyalty discount (1 year) | Competitor reason + LTV > $800   | $120 max cost; $1,900+ retained | "We want to earn your continued business"            |
+| Free upgrade for 3 months     | Competitor reason + LTV > $1,500 | ~$150 cost; $1,950+ retained    | "Let us show you what the next tier can do"          |
 
 Rule: Never offer a discount to customers citing budget/downsizing — they need flexibility, not a discount on a product they cannot use.
 
@@ -139,10 +145,12 @@ Content: Strongest offer (2 months free on annual plan). Clear expiry date. Fina
 ---
 
 ## Variations
+
 - **E-commerce Loyalty Mode**: Design a retention program for transactional buyers using purchase frequency signals and loyalty tiers instead of subscription cancellation flows
 - **High-Touch Enterprise Mode**: Build a human-led retention playbook for $50k+ ARR accounts where automated flows are inappropriate
 
 ## Related Prompts
+
 - [Customer Feedback Analyst](customer-feedback-analyst.md) - Using exit survey data to validate churn archetypes
 - [Customer Journey Mapper](customer-journey-mapper.md) - Identifying the journey stages where churn risk accumulates
 - [Customer Success Planner](customer-success-planner.md) - Proactive health scoring to prevent churn before it starts

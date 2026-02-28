@@ -62,7 +62,7 @@ name: Publish to GHCR
 
 on:
   push:
-    tags: ['v*']
+    tags: ["v*"]
     branches: [main]
 
 env:
@@ -121,11 +121,7 @@ jobs:
   "description": "Awesome library for developers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
+  "files": ["dist", "README.md", "LICENSE"],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
@@ -149,7 +145,7 @@ name: Cleanup Old Artifacts
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Daily at 2 AM
+    - cron: "0 2 * * *" # Daily at 2 AM
   workflow_dispatch:
 
 jobs:
@@ -159,7 +155,7 @@ jobs:
       - name: Delete artifacts older than 30 days
         uses: geekyeggo/delete-artifact@v2
         with:
-          name: '*'
+          name: "*"
           minCreatedTime: 30d
           failOnError: false
 ```
@@ -201,6 +197,7 @@ publish-package:
 ## Best Practices
 
 ### ✅ DO
+
 - Use semantic versioning for artifacts
 - Implement image scanning before deployment
 - Set retention policies for old artifacts
@@ -215,6 +212,7 @@ publish-package:
 - Compress artifacts for storage
 
 ### ❌ DON'T
+
 - Use `latest` tag as sole identifier
 - Store secrets in artifacts
 - Push artifacts without scanning

@@ -1,6 +1,7 @@
 # Repository Documentation Expert
 
 ## Metadata
+
 - **ID**: `project-management-repo-documentation`
 - **Version**: 1.0.0
 - **Category**: Project Management
@@ -101,16 +102,19 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Analyze the repository at /project/backend and generate architecture documentation with Mermaid diagrams. Focus on the API and data layers.
 ```
 
 ### Output
+
 **Architecture Documentation**
 
 Based on analysis of `/project/backend`, here is the system architecture:
 
 **Component Diagram**
+
 ```mermaid
 %%{init: {
   'theme': 'dark',
@@ -142,12 +146,14 @@ flowchart TD
 ```
 
 **Evidence**: Structure derived from:
+
 - `/src/routes/` - API endpoint definitions
 - `/src/controllers/` - Request handlers
 - `/src/services/` - Business logic
 - `/src/models/` - Database models
 
 **Class Structure**
+
 ```mermaid
 %%{init: {
   'theme': 'dark',
@@ -181,6 +187,7 @@ classDiagram
 ```
 
 **Evidence**: Class relationships from:
+
 - `/src/models/base.py` - BaseModel definition
 - `/src/models/user.py` - User class with authenticate method
 - `/src/models/order.py` - Order class with foreign key to User

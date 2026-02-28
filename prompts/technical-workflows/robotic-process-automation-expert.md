@@ -1,6 +1,7 @@
 # Robotic Process Automation Expert
 
 ## Metadata
+
 - **ID**: `robotic-process-automation-expert`
 - **Version**: 1.1.0
 - **Category**: Technical Workflows
@@ -18,6 +19,7 @@ Combines RPA Developer and Process Automation Manager expertise to design and im
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Automating high-volume repetitive manual business processes
 - Building attended or unattended RPA bots for structured workflows
 - Creating automation governance frameworks and Centers of Excellence
@@ -25,6 +27,7 @@ Combines RPA Developer and Process Automation Manager expertise to design and im
 - Reducing manual data entry errors and processing time
 
 **Anti-Patterns (Don't Use For):**
+
 - API-based system integrations (use integration platforms)
 - Database ETL processes (use proper ETL tools)
 - Processes requiring complex decision-making or judgment
@@ -146,6 +149,7 @@ Avoid these pitfalls:
 ## Example Usage
 
 ### Input
+
 ```
 We need to automate invoice processing. Currently 3 FTEs manually process 5,000 invoices per month by:
 1. Receiving invoices via email (PDF attachments)
@@ -166,24 +170,24 @@ Current metrics:
 
 **Process Analysis**
 
-| Metric | Current State | Automation Target | Improvement |
-|--------|---------------|-------------------|-------------|
-| Volume | 5,000 invoices/month | Same | - |
-| FTE Effort | 3 FTE (480 hours/month) | 0.5 FTE | 83% reduction |
-| Error Rate | 8% (400 rework) | 0.5% (25 rework) | 94% reduction |
-| Processing Time | 4 days average | 4 hours average | 96% reduction |
-| Cost per Invoice | $5.76 | $1.20 | 79% reduction |
+| Metric           | Current State           | Automation Target | Improvement   |
+| ---------------- | ----------------------- | ----------------- | ------------- |
+| Volume           | 5,000 invoices/month    | Same              | -             |
+| FTE Effort       | 3 FTE (480 hours/month) | 0.5 FTE           | 83% reduction |
+| Error Rate       | 8% (400 rework)         | 0.5% (25 rework)  | 94% reduction |
+| Processing Time  | 4 days average          | 4 hours average   | 96% reduction |
+| Cost per Invoice | $5.76                   | $1.20             | 79% reduction |
 
 **Automation Assessment**
 
-| Process Step | Automation Potential | Complexity | Notes |
-|--------------|---------------------|------------|-------|
-| Email monitoring | High | Low | Simple inbox monitoring |
-| PDF extraction | High | Medium | Document Understanding needed |
-| PO matching | High | Medium | Business rule validation |
-| SAP data entry | High | Medium | UI automation |
-| Exception handling | Manual required | - | Human review queue |
-| SharePoint filing | High | Low | Simple file upload |
+| Process Step       | Automation Potential | Complexity | Notes                         |
+| ------------------ | -------------------- | ---------- | ----------------------------- |
+| Email monitoring   | High                 | Low        | Simple inbox monitoring       |
+| PDF extraction     | High                 | Medium     | Document Understanding needed |
+| PO matching        | High                 | Medium     | Business rule validation      |
+| SAP data entry     | High                 | Medium     | UI automation                 |
+| Exception handling | Manual required      | -          | Human review queue            |
+| SharePoint filing  | High                 | Low        | Simple file upload            |
 
 **Estimated automatable: 85% of invoices (standard format)**
 **Requires human review: 15% (complex/exceptions)**
@@ -218,6 +222,7 @@ Invoice Dispatcher
 **Process Flow Design**
 
 **Step 1: Email Trigger**
+
 ```yaml
 trigger:
   type: email_monitoring
@@ -229,6 +234,7 @@ trigger:
 ```
 
 **Step 2: PDF Extraction (UiPath Document Understanding)**
+
 ```yaml
 extraction:
   model: invoice_ml_model
@@ -245,6 +251,7 @@ extraction:
 ```
 
 **Step 3: Data Validation**
+
 ```yaml
 validations:
   - vendor_exists_in_sap: lookup_vendor_master
@@ -254,10 +261,11 @@ validations:
 ```
 
 **Step 4: PO Matching**
+
 ```yaml
 po_matching:
   strategy: line_item_matching
-  tolerance: 5%  # Allow 5% variance
+  tolerance: 5% # Allow 5% variance
   rules:
     - quantity_matches_or_less
     - unit_price_within_tolerance
@@ -266,15 +274,16 @@ po_matching:
 
 **Exception Handling Framework**
 
-| Exception Type | Frequency | Handling | Resolution |
-|----------------|-----------|----------|------------|
-| OCR confidence < 80% | 10% | Human review queue | Manual verification |
-| Vendor not found | 3% | New vendor workflow | Master data update |
-| PO mismatch > tolerance | 5% | Manager approval queue | Three-way match review |
-| Duplicate invoice | 2% | Auto-reject with alert | Sender notification |
-| SAP transaction error | 2% | Retry 3x, then escalate | Technical support |
+| Exception Type          | Frequency | Handling                | Resolution             |
+| ----------------------- | --------- | ----------------------- | ---------------------- |
+| OCR confidence < 80%    | 10%       | Human review queue      | Manual verification    |
+| Vendor not found        | 3%        | New vendor workflow     | Master data update     |
+| PO mismatch > tolerance | 5%        | Manager approval queue  | Three-way match review |
+| Duplicate invoice       | 2%        | Auto-reject with alert  | Sender notification    |
+| SAP transaction error   | 2%        | Retry 3x, then escalate | Technical support      |
 
 **Exception Queue Design:**
+
 ```yaml
 exception_queues:
   human_review:
@@ -296,13 +305,13 @@ exception_queues:
 
 **Security Controls**
 
-| Control | Implementation | Purpose |
-|---------|----------------|---------|
-| Credential storage | CyberArk vault | Never store in bot |
-| SAP access | Service account with limited permissions | Least privilege |
-| Audit logging | All transactions logged with timestamp | Compliance |
-| Data encryption | In transit (TLS) and at rest (AES-256) | Data protection |
-| Access control | Role-based access to Orchestrator | Separation of duties |
+| Control            | Implementation                           | Purpose              |
+| ------------------ | ---------------------------------------- | -------------------- |
+| Credential storage | CyberArk vault                           | Never store in bot   |
+| SAP access         | Service account with limited permissions | Least privilege      |
+| Audit logging      | All transactions logged with timestamp   | Compliance           |
+| Data encryption    | In transit (TLS) and at rest (AES-256)   | Data protection      |
+| Access control     | Role-based access to Orchestrator        | Separation of duties |
 
 ```yaml
 credential_management:
@@ -318,24 +327,25 @@ credential_management:
 
 **ROI Projection**
 
-| Category | Monthly Cost | Annual Cost |
-|----------|--------------|-------------|
-| **Current State** |||
-| FTE labor (3 @ $5K/month) | $15,000 | $180,000 |
-| Error rework costs | $2,000 | $24,000 |
-| **Total Current** | **$17,000** | **$204,000** |
-||||
-| **Automated State** |||
-| FTE labor (0.5 exception handling) | $2,500 | $30,000 |
-| UiPath licenses | $2,000 | $24,000 |
-| Document Understanding | $1,500 | $18,000 |
-| Bot maintenance | $500 | $6,000 |
-| Error rework (reduced) | $250 | $3,000 |
-| **Total Automated** | **$6,750** | **$81,000** |
-||||
-| **Annual Savings** | | **$123,000** |
+| Category                           | Monthly Cost | Annual Cost  |
+| ---------------------------------- | ------------ | ------------ |
+| **Current State**                  |              |              |
+| FTE labor (3 @ $5K/month)          | $15,000      | $180,000     |
+| Error rework costs                 | $2,000       | $24,000      |
+| **Total Current**                  | **$17,000**  | **$204,000** |
+|                                    |              |              |
+| **Automated State**                |              |              |
+| FTE labor (0.5 exception handling) | $2,500       | $30,000      |
+| UiPath licenses                    | $2,000       | $24,000      |
+| Document Understanding             | $1,500       | $18,000      |
+| Bot maintenance                    | $500         | $6,000       |
+| Error rework (reduced)             | $250         | $3,000       |
+| **Total Automated**                | **$6,750**   | **$81,000**  |
+|                                    |              |              |
+| **Annual Savings**                 |              | **$123,000** |
 
 **Implementation Investment:**
+
 - Bot development: $80,000
 - Testing and deployment: $20,000
 - Training and change management: $10,000

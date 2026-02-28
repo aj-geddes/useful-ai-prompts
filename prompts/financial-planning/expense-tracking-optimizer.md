@@ -1,6 +1,7 @@
 # Expense Tracking Optimizer
 
 ## Metadata
+
 - **ID**: `financial-planning-expense-tracking`
 - **Version**: 2.0.0
 - **Category**: Financial Planning/Budgeting
@@ -18,6 +19,7 @@ Create sustainable expense tracking systems that provide financial clarity witho
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Starting a new expense tracking habit
 - Identifying where money is going each month
 - Finding spending reduction opportunities
@@ -25,6 +27,7 @@ Create sustainable expense tracking systems that provide financial clarity witho
 - Recovering from failed tracking attempts
 
 **Anti-Patterns (When NOT to Use):**
+
 - Investment portfolio tracking
 - Business expense reporting
 - Tax preparation and documentation
@@ -44,16 +47,18 @@ Many people fail at expense tracking because systems are too complex or time-con
 
 <input_handling>
 Required Inputs:
+
 - Current tracking method (if any)
 - Main financial challenges to solve
 - Time available for tracking activities
 
 Optional Inputs (Inferred if not provided):
+
 - Technology comfort level (match tool recommendations)
 - Detail level needed (start simple, add complexity as needed)
 - Integration with existing accounts (recommend if helpful)
 - Previous tracking failure patterns
-</input_handling>
+  </input_handling>
 
 <task>
 Create a personalized expense tracking system with tools, categories, and analysis framework.
@@ -69,6 +74,7 @@ Step 5: Define action triggers for spending adjustments
 Format: Expense Tracking System with routines
 Length: 600-900 words
 Structure:
+
 - Method Selection with rationale
 - Category Structure tables
 - Tracking Routine (daily, weekly, monthly)
@@ -76,21 +82,23 @@ Structure:
 - Action Triggers
 - Habit Formation Tips
 - First Month Plan
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Method matched to personality and lifestyle constraints
 - Simple enough to maintain long-term
 - Clear review and action processes
 - Builds toward sustainable habit formation
 
 Outputs must avoid:
+
 - Over-complicated systems that cause abandonment
 - Too many categories creating confusion
 - Missing the review and action components
 - One-size-fits-all recommendations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Start with minimum viable tracking complexity
@@ -104,6 +112,7 @@ Outputs must avoid:
 ## Example Usage
 
 ### Input
+
 "I've tried tracking before but always quit after a few weeks. Income $5,000/month but never sure where it goes. Feel like I should have more savings. Can spend 10-15 minutes per week on this max."
 
 ### Output
@@ -114,10 +123,11 @@ Outputs must avoid:
 
 Given your time constraints and past tracking struggles, I recommend a primarily automated approach with minimal manual effort:
 
-*Primary Tool*: Mint, YNAB, or Copilot (auto-connects to accounts)
-*Backup*: Simple spreadsheet for cash spending only
+_Primary Tool_: Mint, YNAB, or Copilot (auto-connects to accounts)
+_Backup_: Simple spreadsheet for cash spending only
 
-*Why This Works*
+_Why This Works_
+
 - Transactions import automatically (no daily logging)
 - Weekly review only (10-15 minutes)
 - Categories auto-assigned (you just verify)
@@ -125,7 +135,7 @@ Given your time constraints and past tracking struggles, I recommend a primarily
 
 **Category Structure (Keep It Simple)**
 
-*Essential Fixed (Predictable Monthly)*
+_Essential Fixed (Predictable Monthly)_
 | Category | Typical % |
 |----------|-----------|
 | Housing | 25-30% |
@@ -133,14 +143,14 @@ Given your time constraints and past tracking struggles, I recommend a primarily
 | Insurance | 5-10% |
 | Utilities | 5-8% |
 
-*Essential Variable (Necessary but Flexible)*
+_Essential Variable (Necessary but Flexible)_
 | Category | Target % |
 |----------|----------|
 | Groceries | 8-12% |
 | Healthcare | 3-5% |
 | Personal care | 2-3% |
 
-*Discretionary (Where Savings Hide)*
+_Discretionary (Where Savings Hide)_
 | Category | Danger Zone |
 |----------|-------------|
 | Dining out | Often underestimated |
@@ -148,7 +158,7 @@ Given your time constraints and past tracking struggles, I recommend a primarily
 | Shopping | Impulse purchases |
 | Miscellaneous | The "black hole" |
 
-*Savings/Debt (Pay Yourself First)*
+_Savings/Debt (Pay Yourself First)_
 | Category | Target % |
 |----------|----------|
 | Savings | 10-20% |
@@ -156,11 +166,13 @@ Given your time constraints and past tracking struggles, I recommend a primarily
 
 **Tracking Routine**
 
-*Daily (2 minutes)*
+_Daily (2 minutes)_
+
 - Log any cash spending in notes app
 - Nothing else required (automated tracking)
 
-*Weekly Review (15 minutes - Sunday evening)*
+_Weekly Review (15 minutes - Sunday evening)_
+
 ```
 Week __ Review Checklist:
 [ ] Open app, review transactions
@@ -170,7 +182,8 @@ Week __ Review Checklist:
 [ ] If overspending: Identify one thing to change this week
 ```
 
-*Monthly Summary (30 minutes - 1st of month)*
+_Monthly Summary (30 minutes - 1st of month)_
+
 ```
 Monthly Review:
 [ ] Total spent vs. income
@@ -182,18 +195,21 @@ Monthly Review:
 
 **Analysis Framework**
 
-*Traffic Light System*
+_Traffic Light System_
+
 - Green: Category at or below target
 - Yellow: 10-25% over target (watch it)
 - Red: 25%+ over target (action required)
 
-*Key Questions Each Month*
+_Key Questions Each Month_
+
 1. Did I save at least 10% of income?
 2. Which category surprised me most?
 3. What can I change without feeling deprived?
 4. Am I making progress toward goals?
 
-*Spending Trends to Watch*
+_Spending Trends to Watch_
+
 - Category creep: Gradually increasing month over month
 - Subscription bloat: Small charges that accumulate
 - Lifestyle inflation: Spending more as income grows
@@ -201,30 +217,35 @@ Monthly Review:
 
 **Action Triggers**
 
-*Immediate Action Required*
+_Immediate Action Required_
+
 - Savings rate below 5% for 2+ months
 - Any category 50%+ over target
 - Unexpected large expense
 
-*Review and Adjust*
+_Review and Adjust_
+
 - Savings rate 5-10% (should be higher)
 - Multiple yellow categories
 - Not meeting specific goals
 
-*Celebrate*
+_Celebrate_
+
 - Hit or exceed savings target
 - Reduce overspending category
 - Build tracking streak (4+ weeks)
 
 **Habit Formation Tips**
 
-*Why Past Tracking Failed*
+_Why Past Tracking Failed_
+
 - Too much manual work
 - Too many categories
 - No clear action from data
 - Perfectionism (missing days = giving up)
 
-*Success Strategies*
+_Success Strategies_
+
 - Imperfect tracking beats no tracking
 - One weekly review is enough
 - Focus on trends, not perfection
@@ -232,6 +253,7 @@ Monthly Review:
 - Start with just tracking, add budgeting later
 
 **First Month Plan**
+
 - Week 1: Set up automated tool, connect accounts
 - Week 2: Do first weekly review, learn categories
 - Week 3: Identify one spending surprise
@@ -239,6 +261,7 @@ Monthly Review:
 - Month 2+: Continue weekly reviews, refine targets
 
 **Success Metrics**
+
 - Weekly: Complete review (streak counter)
 - Monthly: Know where money went
 - Quarterly: Improved savings rate

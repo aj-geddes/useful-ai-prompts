@@ -1,6 +1,7 @@
 # Contract Review Expert
 
 ## Metadata
+
 - **ID**: `business-contract-review`
 - **Version**: 1.0.0
 - **Category**: Business/Legal
@@ -12,9 +13,11 @@
 - **Updated**: 2025-01-15
 
 ## Overview
+
 Analyzes legal contracts to identify risks, ensure compliance, and recommend modifications that protect business interests. Provides negotiation strategies with prioritized issues and fallback positions.
 
 ## When to Use
+
 - Reviewing vendor, customer, or partnership agreements
 - Preparing for contract negotiations
 - Identifying hidden risks in complex contracts
@@ -98,6 +101,7 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "Please review this software development agreement with a mid-size technology vendor for a custom platform build. Contract value is $2M over 3 years. This is a new vendor relationship, but they have good industry reputation. Our key objectives are: (1) full IP ownership of everything they develop, (2) strong quality assurance and performance guarantees, and (3) avoiding vendor lock-in. We have moderate risk tolerance. SOX compliance is required for our company. This is the second draft after initial negotiation. Timeline is 2 weeks to execution. Our main concerns are: the current liability provisions seem unlimited, IP ownership language is unclear, and there's no source code escrow provision."
 
 ### Output
@@ -116,28 +120,31 @@ Avoid:
 ## RISK PROFILE SUMMARY
 
 ### Legal Risks
-| Issue | Current State | Risk Level |
-|-------|---------------|------------|
-| Liability Exposure | Unlimited indemnification | **CRITICAL** |
-| IP Ownership | License language (not assignment) | **HIGH** |
-| Termination Rights | Limited cure periods | MEDIUM |
-| Dispute Resolution | No venue specified | LOW |
+
+| Issue              | Current State                     | Risk Level   |
+| ------------------ | --------------------------------- | ------------ |
+| Liability Exposure | Unlimited indemnification         | **CRITICAL** |
+| IP Ownership       | License language (not assignment) | **HIGH**     |
+| Termination Rights | Limited cure periods              | MEDIUM       |
+| Dispute Resolution | No venue specified                | LOW          |
 
 ### Financial Risks
-| Issue | Current State | Risk Level |
-|-------|---------------|------------|
-| Liability Cap | None specified | **CRITICAL** |
-| Payment Terms | 50% upfront, 50% on delivery | **HIGH** |
-| Change Orders | Silent on pricing | MEDIUM |
-| Warranty Coverage | 90 days only | MEDIUM |
+
+| Issue             | Current State                | Risk Level   |
+| ----------------- | ---------------------------- | ------------ |
+| Liability Cap     | None specified               | **CRITICAL** |
+| Payment Terms     | 50% upfront, 50% on delivery | **HIGH**     |
+| Change Orders     | Silent on pricing            | MEDIUM       |
+| Warranty Coverage | 90 days only                 | MEDIUM       |
 
 ### Operational Risks
-| Issue | Current State | Risk Level |
-|-------|---------------|------------|
-| Vendor Lock-In | No source code escrow | **HIGH** |
-| Knowledge Transfer | Not addressed | **HIGH** |
-| Key Person Risk | No key personnel clause | MEDIUM |
-| Support Transition | 30 days only | MEDIUM |
+
+| Issue              | Current State           | Risk Level |
+| ------------------ | ----------------------- | ---------- |
+| Vendor Lock-In     | No source code escrow   | **HIGH**   |
+| Knowledge Transfer | Not addressed           | **HIGH**   |
+| Key Person Risk    | No key personnel clause | MEDIUM     |
+| Support Transition | 30 days only            | MEDIUM     |
 
 ---
 
@@ -151,6 +158,7 @@ Avoid:
 **Problem:** No liability cap creates unlimited exposure. Includes consequential and indirect damages by implication. Disproportionate to contract value.
 
 **Recommended Replacement:**
+
 ```
 "Each party's total aggregate liability under this Agreement shall
 not exceed the total fees paid or payable under this Agreement
@@ -180,6 +188,7 @@ INCLUDING LOST PROFITS, EXCEPT FOR BREACHES OF SECTION [X]
 **Problem:** License is not ownership. "Non-exclusive" means vendor could reuse or sell to competitors. No work-for-hire designation. Pre-existing IP not clearly defined.
 
 **Recommended Replacement:**
+
 ```
 "WORK PRODUCT OWNERSHIP. All software, documentation, and other
 materials developed by Vendor specifically for Customer under this
@@ -211,6 +220,7 @@ use."
 **Current Language:** No source code escrow or transition provisions.
 
 **Recommended Addition:**
+
 ```
 "SOURCE CODE ESCROW. Within thirty (30) days of Agreement
 execution, Vendor shall deposit all source code, documentation,
@@ -237,6 +247,7 @@ documentation, and cooperation with successor vendors."
 **Problem:** Front-loaded payment with limited recourse if quality issues arise. No holdback for warranty period.
 
 **Recommended Replacement:**
+
 ```
 "PAYMENT SCHEDULE:
 - 20% upon Agreement execution
@@ -254,24 +265,28 @@ Deliverables meet acceptance criteria in Exhibit A."
 ## NEGOTIATION STRATEGY
 
 ### Must-Have (Deal Breakers)
+
 1. IP ownership via assignment (not license)
 2. Liability cap at contract value ($2M)
 3. Source code escrow with bankruptcy trigger
 4. SOX compliance warranty and audit rights
 
 ### Should-Have (Strong Preference)
+
 1. Performance guarantees with holdback (10-20%)
 2. Restructured payment tied to milestones
 3. 12-month warranty period (vs. 90 days)
 4. Transition assistance provision
 
 ### Trading Chips (Concessions Available)
+
 - Accept 6-month warranty if other terms met
 - Expedited payment for better liability terms
 - Reference/case study rights for discount
 - Extended term commitment for better rates
 
 ### Fallback Positions
+
 - Liability cap floor: 12 months of fees ($667K)
 - Accept escrow without acquisition trigger
 - Accept 80/20 payment split with acceptance milestone
@@ -281,12 +296,14 @@ Deliverables meet acceptance criteria in Exhibit A."
 ## COMPLIANCE VERIFICATION
 
 **SOX Compliance:**
+
 - [ ] Add audit cooperation clause (Section needed)
 - [ ] Require SOC 2 Type II report annually
 - [ ] Add data handling and retention requirements
 - [ ] Include access controls for Customer systems
 
 **Data Privacy:**
+
 - [ ] Add GDPR/CCPA compliance warranty
 - [ ] Include data processing addendum
 - [ ] Specify data retention and deletion requirements
@@ -295,17 +312,18 @@ Deliverables meet acceptance criteria in Exhibit A."
 
 ## EXECUTION TIMELINE
 
-| Action | Owner | Due Date | Status |
-|--------|-------|----------|--------|
-| Prepare redline with recommended changes | Customer Legal | Day 1 | Pending |
-| Send redline to Vendor | Procurement | Day 2 | Pending |
-| Negotiation call | Both parties | Day 5-7 | Schedule |
-| Revised draft exchange | Vendor | Day 9 | Pending |
-| Final review and approvals | Customer | Day 12 | Pending |
-| Execution | Both parties | Day 14 | Target |
+| Action                                   | Owner          | Due Date | Status   |
+| ---------------------------------------- | -------------- | -------- | -------- |
+| Prepare redline with recommended changes | Customer Legal | Day 1    | Pending  |
+| Send redline to Vendor                   | Procurement    | Day 2    | Pending  |
+| Negotiation call                         | Both parties   | Day 5-7  | Schedule |
+| Revised draft exchange                   | Vendor         | Day 9    | Pending  |
+| Final review and approvals               | Customer       | Day 12   | Pending  |
+| Execution                                | Both parties   | Day 14   | Target   |
 
 ---
 
 ## Related Prompts
+
 - [Compliance Officer Expert](compliance-officer-expert.md)
 - [Risk Assessment Expert](../project-management/comprehensive-risk-assessment.md)

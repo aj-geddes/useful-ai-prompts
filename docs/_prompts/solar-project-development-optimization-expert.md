@@ -3,32 +3,33 @@ title: Solar Project Development Optimization Expert
 slug: solar-project-development-optimization-expert
 category: renewable energy
 tags:
-- solar
-- development
-- project
-- management
-- renewable
-- energy
-- investment
-- analysis
-- development
-- optimization
+  - solar
+  - development
+  - project
+  - management
+  - renewable
+  - energy
+  - investment
+  - analysis
+  - development
+  - optimization
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-01'
-description: This prompt enables optimization of solar energy project development
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-01"
+description:
+  This prompt enables optimization of solar energy project development
   from site selection through commercial operation, combining project development
   expertise with investment analysis. It provides strategic guidance for utility-scale
   and distributed solar deployments, focusing on development process optimization,
   timeline acceleration, and risk mitigation to maximize project success.
 layout: prompt
 use_cases:
-- Ideal scenarios:**
-- Developing utility-scale solar projects (50+ MW)
-- Optimizing project development timelines and costs
-- Evaluating solar investment opportunities across portfolios
-- Managing complex permitting and interconnection processes
+  - Ideal scenarios:**
+  - Developing utility-scale solar projects (50+ MW)
+  - Optimizing project development timelines and costs
+  - Evaluating solar investment opportunities across portfolios
+  - Managing complex permitting and interconnection processes
 complexity: advanced
 interaction: multi-turn
 ---
@@ -43,16 +44,18 @@ Solar project development requires navigating complex regulatory environments, c
 
 <input_handling>
 **Required information:**
+
 - Project size and type (utility-scale, distributed)
 - Development stage (early, mid, late)
 - Key development challenges or objectives
 
 **Optional (will infer reasonable defaults):**
+
 - Technology: Single-axis tracking with bifacial modules
 - Timeline: 24-36 month development cycle
 - Structure: PPA-based with tax equity
 - Target: 12%+ IRR for investors
-</input_handling>
+  </input_handling>
 
 <task>
 Optimize solar project development:
@@ -68,18 +71,20 @@ Optimize solar project development:
 5. **Financing Approach**: Design capital structure and investor positioning
 
 6. **Risk Management**: Develop contingency plans and mitigation strategies for key development risks
-</task>
+   </task>
 
 <output_specification>
 **Project Development Optimization Plan**
+
 - Format: Development strategy with implementation roadmap
 - Length: 800-1500 words
 - Sections: Site assessment, permitting, interconnection, offtake, financing, risk mitigation
 - Must include: Timeline with milestones, decision gates, key risk mitigations
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 **Excellent outputs demonstrate:**
+
 - Realistic development timeline with appropriate contingencies
 - Clear risk identification and mitigation strategies
 - Optimized financial structure aligned with market conditions
@@ -87,12 +92,13 @@ Optimize solar project development:
 - Specific milestone and decision gate definitions
 
 **Avoid:**
+
 - Underestimating permitting complexity or timeline
 - Overly optimistic interconnection timelines
 - Missing key development risks
 - Generic strategies without project specificity
 - Ignoring competitive market dynamics
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Development timeline: 24-36 months for typical utility-scale project

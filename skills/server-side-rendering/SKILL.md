@@ -148,155 +148,159 @@ def create_post():
 <!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{{ app_name }}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     {% block extra_head %}{% endblock %}
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <h1>{{ app_name }}</h1>
-            <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                {% if current_user.is_authenticated %}
-                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
-                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                {% else %}
-                    <li><a href="{{ url_for('login') }}">Login</a></li>
-                    <li><a href="{{ url_for('register') }}">Register</a></li>
-                {% endif %}
-            </ul>
-        </div>
+      <div class="container">
+        <h1>{{ app_name }}</h1>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          {% if current_user.is_authenticated %}
+          <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+          <li><a href="{{ url_for('logout') }}">Logout</a></li>
+          {% else %}
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('register') }}">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
     </nav>
 
     <main class="container">
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                    <div class="alert alert-{{ category }}">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-
-        {% block content %}{% endblock %}
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock %}
     </main>
 
     <footer>
-        <p>&copy; {{ current_year }} {{ app_name }}. All rights reserved.</p>
+      <p>&copy; {{ current_year }} {{ app_name }}. All rights reserved.</p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block extra_scripts %}{% endblock %}
-</body>
+  </body>
 </html>
 
 <!-- dashboard.html -->
-{% extends "base.html" %}
-
-{% block title %}Dashboard - {{ app_name }}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}Dashboard - {{ app_name }}{% endblock
+%} {% block content %}
 <div class="dashboard">
-    <h1>Welcome, {{ current_user.first_name }}!</h1>
+  <h1>Welcome, {{ current_user.first_name }}!</h1>
 
-    <div class="stats-grid">
-        <div class="stat-card">
-            <h3>Total Posts</h3>
-            <p class="stat-value">{{ stats.total_posts }}</p>
-        </div>
-        <div class="stat-card">
-            <h3>Total Views</h3>
-            <p class="stat-value">{{ stats.total_views | default(0) }}</p>
-        </div>
-        <div class="stat-card">
-            <h3>Followers</h3>
-            <p class="stat-value">{{ stats.total_followers }}</p>
-        </div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Posts</h3>
+      <p class="stat-value">{{ stats.total_posts }}</p>
     </div>
+    <div class="stat-card">
+      <h3>Total Views</h3>
+      <p class="stat-value">{{ stats.total_views | default(0) }}</p>
+    </div>
+    <div class="stat-card">
+      <h3>Followers</h3>
+      <p class="stat-value">{{ stats.total_followers }}</p>
+    </div>
+  </div>
 
-    <section class="recent-activity">
-        <h2>Recent Activity</h2>
-        {% if activity %}
-            <ul class="activity-list">
-                {% for item in activity %}
-                    <li>
-                        <span class="activity-date">{{ item.created_at | date_format }}</span>
-                        <span class="activity-text">{{ item.description }}</span>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No recent activity.</p>
-        {% endif %}
-    </section>
+  <section class="recent-activity">
+    <h2>Recent Activity</h2>
+    {% if activity %}
+    <ul class="activity-list">
+      {% for item in activity %}
+      <li>
+        <span class="activity-date">{{ item.created_at | date_format }}</span>
+        <span class="activity-text">{{ item.description }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No recent activity.</p>
+    {% endif %}
+  </section>
 </div>
 {% endblock %}
 
 <!-- post.html -->
-{% extends "base.html" %}
-
-{% block title %}{{ post.title }} - {{ app_name }}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}{{ post.title }} - {{ app_name }}{%
+endblock %} {% block content %}
 <article class="post">
-    <header class="post-header">
-        <h1>{{ post.title }}</h1>
-        <div class="post-meta">
-            <span class="author">By {{ post.author.full_name }}</span>
-            <span class="date">{{ post.created_at | date_format }}</span>
-            <span class="category">
-                <a href="{{ url_for('view_category', slug=post.category.slug) }}">
-                    {{ post.category.name }}
-                </a>
-            </span>
-        </div>
-    </header>
-
-    <div class="post-content">
-        {{ post.content | safe }}
+  <header class="post-header">
+    <h1>{{ post.title }}</h1>
+    <div class="post-meta">
+      <span class="author">By {{ post.author.full_name }}</span>
+      <span class="date">{{ post.created_at | date_format }}</span>
+      <span class="category">
+        <a href="{{ url_for('view_category', slug=post.category.slug) }}">
+          {{ post.category.name }}
+        </a>
+      </span>
     </div>
+  </header>
 
-    {% if related_posts %}
-        <section class="related-posts">
-            <h3>Related Posts</h3>
-            <div class="posts-grid">
-                {% for related in related_posts %}
-                    <div class="post-card">
-                        <h4><a href="{{ url_for('view_post', slug=related.slug) }}">{{ related.title }}</a></h4>
-                        <p>{{ related.excerpt or related.content[:100] }}...</p>
-                        <a href="{{ url_for('view_post', slug=related.slug) }}" class="read-more">Read More</a>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
+  <div class="post-content">{{ post.content | safe }}</div>
+
+  {% if related_posts %}
+  <section class="related-posts">
+    <h3>Related Posts</h3>
+    <div class="posts-grid">
+      {% for related in related_posts %}
+      <div class="post-card">
+        <h4>
+          <a href="{{ url_for('view_post', slug=related.slug) }}"
+            >{{ related.title }}</a
+          >
+        </h4>
+        <p>{{ related.excerpt or related.content[:100] }}...</p>
+        <a
+          href="{{ url_for('view_post', slug=related.slug) }}"
+          class="read-more"
+          >Read More</a
+        >
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="comments">
+    <h3>Comments ({{ comments | length }})</h3>
+    {% if comments %}
+    <ul class="comment-list">
+      {% for comment in comments %}
+      <li class="comment">
+        <strong>{{ comment.author.full_name }}</strong>
+        <time>{{ comment.created_at | date_format }}</time>
+        <p>{{ comment.content }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No comments yet.</p>
+    {% endif %} {% if current_user.is_authenticated %}
+    <form
+      method="POST"
+      action="{{ url_for('add_comment', post_id=post.id) }}"
+      class="comment-form"
+    >
+      <textarea
+        name="content"
+        placeholder="Add a comment..."
+        required
+      ></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
     {% endif %}
-
-    <section class="comments">
-        <h3>Comments ({{ comments | length }})</h3>
-        {% if comments %}
-            <ul class="comment-list">
-                {% for comment in comments %}
-                    <li class="comment">
-                        <strong>{{ comment.author.full_name }}</strong>
-                        <time>{{ comment.created_at | date_format }}</time>
-                        <p>{{ comment.content }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No comments yet.</p>
-        {% endif %}
-
-        {% if current_user.is_authenticated %}
-            <form method="POST" action="{{ url_for('add_comment', post_id=post.id) }}" class="comment-form">
-                <textarea name="content" placeholder="Add a comment..." required></textarea>
-                <button type="submit">Post Comment</button>
-            </form>
-        {% endif %}
-    </section>
+  </section>
 </article>
 {% endblock %}
 ```
@@ -305,66 +309,66 @@ def create_post():
 
 ```javascript
 // app.js
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
 // Set template engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Local variables middleware
 app.use((req, res, next) => {
-    res.locals.currentUser = req.user || null;
-    res.locals.appName = 'My App';
-    res.locals.currentYear = new Date().getFullYear();
-    next();
+  res.locals.currentUser = req.user || null;
+  res.locals.appName = "My App";
+  res.locals.currentYear = new Date().getFullYear();
+  next();
 });
 
 // Routes
-app.get('/', (req, res) => {
-    const posts = [
-        { id: 1, title: 'Post 1', excerpt: 'First post', slug: 'post-1' },
-        { id: 2, title: 'Post 2', excerpt: 'Second post', slug: 'post-2' }
-    ];
+app.get("/", (req, res) => {
+  const posts = [
+    { id: 1, title: "Post 1", excerpt: "First post", slug: "post-1" },
+    { id: 2, title: "Post 2", excerpt: "Second post", slug: "post-2" },
+  ];
 
-    res.render('index', { posts });
+  res.render("index", { posts });
 });
 
-app.get('/posts/:slug', async (req, res) => {
-    const { slug } = req.params;
-    const post = await Post.findOne({ where: { slug } });
+app.get("/posts/:slug", async (req, res) => {
+  const { slug } = req.params;
+  const post = await Post.findOne({ where: { slug } });
 
-    if (!post) {
-        return res.status(404).render('404');
-    }
+  if (!post) {
+    return res.status(404).render("404");
+  }
 
-    const comments = await post.getComments();
-    const relatedPosts = await Post.findAll({
-        where: { categoryId: post.categoryId },
-        limit: 5
-    });
+  const comments = await post.getComments();
+  const relatedPosts = await Post.findAll({
+    where: { categoryId: post.categoryId },
+    limit: 5,
+  });
 
-    res.render('post', {
-        post,
-        comments,
-        relatedPosts
-    });
+  res.render("post", {
+    post,
+    comments,
+    relatedPosts,
+  });
 });
 
-app.get('/dashboard', requireAuth, (req, res) => {
-    const stats = {
-        totalPosts: req.user.posts.length,
-        totalViews: req.user.posts.reduce((sum, p) => sum + p.views, 0)
-    };
+app.get("/dashboard", requireAuth, (req, res) => {
+  const stats = {
+    totalPosts: req.user.posts.length,
+    totalViews: req.user.posts.reduce((sum, p) => sum + p.views, 0),
+  };
 
-    res.render('dashboard', { stats });
+  res.render("dashboard", { stats });
 });
 
 app.listen(3000);
@@ -376,65 +380,65 @@ app.listen(3000);
 <!-- views/layout.ejs -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title><%= typeof title != 'undefined' ? title + ' - ' : '' %><%= appName %></title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+  <head>
+    <title>
+      <%= typeof title != 'undefined' ? title + ' - ' : '' %><%= appName %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <%- include('partials/navbar') %>
 
-    <main class="container">
-        <%- body %>
-    </main>
+    <main class="container"><%- body %></main>
 
     <%- include('partials/footer') %>
 
     <script src="/js/main.js"></script>
-</body>
+  </body>
 </html>
 
 <!-- views/post.ejs -->
 <article class="post">
-    <h1><%= post.title %></h1>
-    <div class="post-meta">
-        <span>By <%= post.author.name %></span>
-        <span><%= new Date(post.createdAt).toLocaleDateString() %></span>
-    </div>
+  <h1><%= post.title %></h1>
+  <div class="post-meta">
+    <span>By <%= post.author.name %></span>
+    <span><%= new Date(post.createdAt).toLocaleDateString() %></span>
+  </div>
 
-    <div class="post-content">
-        <%- post.content %>
-    </div>
+  <div class="post-content"><%- post.content %></div>
 
-    <% if (relatedPosts && relatedPosts.length > 0) { %>
-        <section class="related-posts">
-            <h3>Related Posts</h3>
-            <% relatedPosts.forEach(related => { %>
-                <div class="post-card">
-                    <h4><a href="/posts/<%= related.slug %>"><%= related.title %></a></h4>
-                    <p><%= related.excerpt %></p>
-                </div>
-            <% }); %>
-        </section>
+  <% if (relatedPosts && relatedPosts.length > 0) { %>
+  <section class="related-posts">
+    <h3>Related Posts</h3>
+    <% relatedPosts.forEach(related => { %>
+    <div class="post-card">
+      <h4><a href="/posts/<%= related.slug %>"><%= related.title %></a></h4>
+      <p><%= related.excerpt %></p>
+    </div>
+    <% }); %>
+  </section>
+  <% } %>
+
+  <section class="comments">
+    <h3>Comments (<%= comments.length %>)</h3>
+
+    <% comments.forEach(comment => { %>
+    <div class="comment">
+      <strong><%= comment.author.name %></strong>
+      <time><%= new Date(comment.createdAt).toLocaleDateString() %></time>
+      <p><%= comment.content %></p>
+    </div>
+    <% }); %> <% if (currentUser) { %>
+    <form
+      method="POST"
+      action="/posts/<%= post.id %>/comments"
+      class="comment-form"
+    >
+      <textarea name="content" placeholder="Add comment..." required></textarea>
+      <button type="submit">Post</button>
+    </form>
     <% } %>
-
-    <section class="comments">
-        <h3>Comments (<%= comments.length %>)</h3>
-
-        <% comments.forEach(comment => { %>
-            <div class="comment">
-                <strong><%= comment.author.name %></strong>
-                <time><%= new Date(comment.createdAt).toLocaleDateString() %></time>
-                <p><%= comment.content %></p>
-            </div>
-        <% }); %>
-
-        <% if (currentUser) { %>
-            <form method="POST" action="/posts/<%= post.id %>/comments" class="comment-form">
-                <textarea name="content" placeholder="Add comment..." required></textarea>
-                <button type="submit">Post</button>
-            </form>
-        <% } %>
-    </section>
+  </section>
 </article>
 ```
 
@@ -521,61 +525,63 @@ class PostDetailView(DetailView):
 
 ```html
 <!-- blog/post_list.html -->
-{% extends "base.html" %}
-{% load custom_filters %}
-
-{% block title %}Blog - {{ app_name }}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load custom_filters %} {% block title %}Blog - {{
+app_name }}{% endblock %} {% block content %}
 <div class="blog-section">
-    <h1>Blog Posts</h1>
+  <h1>Blog Posts</h1>
 
-    {% if featured_posts %}
-        <section class="featured">
-            <h2>Featured Posts</h2>
-            <div class="posts-grid">
-                {% for post in featured_posts %}
-                    <article class="post-card">
-                        <h3><a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a></h3>
-                        <p>{{ post.excerpt }}</p>
-                        <a href="{% url 'post-detail' post.slug %}" class="read-more">Read More</a>
-                    </article>
-                {% endfor %}
-            </div>
-        </section>
+  {% if featured_posts %}
+  <section class="featured">
+    <h2>Featured Posts</h2>
+    <div class="posts-grid">
+      {% for post in featured_posts %}
+      <article class="post-card">
+        <h3>
+          <a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a>
+        </h3>
+        <p>{{ post.excerpt }}</p>
+        <a href="{% url 'post-detail' post.slug %}" class="read-more"
+          >Read More</a
+        >
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="posts">
+    <h2>All Posts</h2>
+    {% for post in posts %}
+    <article class="post-item">
+      <h3><a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a></h3>
+      <div class="meta">
+        <span>By {{ post.author.get_full_name }}</span>
+        <span>{{ post.created_at|date:"M d, Y" }}</span>
+      </div>
+      <p>{{ post.content|truncatewords:50 }}</p>
+    </article>
+    {% empty %}
+    <p>No posts yet.</p>
+    {% endfor %}
+  </section>
+
+  {% if is_paginated %}
+  <nav class="pagination">
+    {% if page_obj.has_previous %}
+    <a href="?page=1">First</a>
+    <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
     {% endif %}
 
-    <section class="posts">
-        <h2>All Posts</h2>
-        {% for post in posts %}
-            <article class="post-item">
-                <h3><a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a></h3>
-                <div class="meta">
-                    <span>By {{ post.author.get_full_name }}</span>
-                    <span>{{ post.created_at|date:"M d, Y" }}</span>
-                </div>
-                <p>{{ post.content|truncatewords:50 }}</p>
-            </article>
-        {% empty %}
-            <p>No posts yet.</p>
-        {% endfor %}
-    </section>
+    <span
+      >Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span
+    >
 
-    {% if is_paginated %}
-        <nav class="pagination">
-            {% if page_obj.has_previous %}
-                <a href="?page=1">First</a>
-                <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
-            {% endif %}
-
-            <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-
-            {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}">Next</a>
-                <a href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-            {% endif %}
-        </nav>
+    {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    <a href="?page={{ page_obj.paginator.num_pages }}">Last</a>
     {% endif %}
+  </nav>
+  {% endif %}
 </div>
 {% endblock %}
 ```
@@ -583,6 +589,7 @@ class PostDetailView(DetailView):
 ## Best Practices
 
 ### ✅ DO
+
 - Use template inheritance for DRY code
 - Implement caching for frequently rendered pages
 - Use template filters for formatting
@@ -595,6 +602,7 @@ class PostDetailView(DetailView):
 - Optimize template rendering
 
 ### ❌ DON'T
+
 - Put business logic in templates
 - Use unbounded loops in templates
 - Execute database queries in templates

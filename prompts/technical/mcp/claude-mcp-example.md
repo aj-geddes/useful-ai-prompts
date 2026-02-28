@@ -1,6 +1,7 @@
 # Claude Desktop MCP Configuration Expert
 
 ## Metadata
+
 - **ID**: `claude-desktop-mcp-configuration-expert`
 - **Version**: 1.0.0
 - **Category**: Technical/MCP
@@ -18,6 +19,7 @@ Provides comprehensive MCP server configuration templates for Claude Desktop wit
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Setting up Claude Desktop MCP integration for the first time
 - Configuring development tool servers (git, filesystem, memory)
 - Troubleshooting MCP server connection issues
@@ -25,6 +27,7 @@ Provides comprehensive MCP server configuration templates for Claude Desktop wit
 - Cross-platform configuration migration
 
 **Anti-patterns (Don't Use For):**
+
 - Building custom MCP servers from scratch
 - MCP protocol development or specification work
 - Non-Claude Desktop MCP applications
@@ -122,6 +125,7 @@ GitHub Token: Available (will provide)
 **Configuration File Location**
 
 On Windows, the Claude Desktop configuration file is located at:
+
 ```
 %APPDATA%\Claude\claude_desktop_config.json
 ```
@@ -136,32 +140,45 @@ Typical full path: `C:\Users\[USERNAME]\AppData\Roaming\Claude\claude_desktop_co
     "git": {
       "command": "docker",
       "args": [
-        "run", "--rm", "-i",
-        "--mount", "type=bind,src=C:\\Users\\developer\\projects,dst=/mnt/workspace",
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,src=C:\\Users\\developer\\projects,dst=/mnt/workspace",
         "mcp/git"
       ]
     },
     "filesystem": {
       "command": "docker",
       "args": [
-        "run", "-i", "--rm",
-        "-v", "C:\\Users\\developer\\projects:/mnt/workspace:rw",
-        "mcp/filesystem", "/mnt/workspace"
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "C:\\Users\\developer\\projects:/mnt/workspace:rw",
+        "mcp/filesystem",
+        "/mnt/workspace"
       ]
     },
     "memory": {
       "command": "docker",
       "args": [
-        "run", "-i", "--rm",
-        "-v", "claude-memory:/app/dist",
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "claude-memory:/app/dist",
         "mcp/memory"
       ]
     },
     "github": {
       "command": "docker",
       "args": [
-        "run", "-i", "--rm",
-        "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
         "ghcr.io/github/github-mcp-server"
       ],
       "env": {
@@ -184,6 +201,7 @@ Typical full path: `C:\Users\[USERNAME]\AppData\Roaming\Claude\claude_desktop_co
    - Verify workspace path matches your project directory
 
 3. **Pull Docker Images**
+
    ```bash
    docker pull mcp/git
    docker pull mcp/filesystem
@@ -201,21 +219,21 @@ Typical full path: `C:\Users\[USERNAME]\AppData\Roaming\Claude\claude_desktop_co
 
 **Server Capabilities**
 
-| Server | Tools Available | Use Cases |
-|--------|-----------------|-----------|
-| git | `git_status`, `git_log`, `git_diff`, `git_commit` | Repository operations, commit history, branch management |
-| filesystem | `read_file`, `write_file`, `list_directory` | File read/write, directory navigation, content editing |
-| memory | `create_entity`, `search_nodes`, `add_observation` | Persistent conversation memory, knowledge graph storage |
-| github | `create_issue`, `create_pull_request`, `list_repos` | Issue management, PR operations, repository access |
+| Server     | Tools Available                                     | Use Cases                                                |
+| ---------- | --------------------------------------------------- | -------------------------------------------------------- |
+| git        | `git_status`, `git_log`, `git_diff`, `git_commit`   | Repository operations, commit history, branch management |
+| filesystem | `read_file`, `write_file`, `list_directory`         | File read/write, directory navigation, content editing   |
+| memory     | `create_entity`, `search_nodes`, `add_observation`  | Persistent conversation memory, knowledge graph storage  |
+| github     | `create_issue`, `create_pull_request`, `list_repos` | Issue management, PR operations, repository access       |
 
 **Troubleshooting**
 
-| Issue | Solution |
-|-------|----------|
-| "Server not found" | Verify Docker is running, pull images again |
-| "Permission denied" | Check volume mount paths, run Docker as admin |
-| GitHub 401 errors | Regenerate token, verify scopes include `repo` |
-| Files not accessible | Ensure workspace path is correctly escaped |
+| Issue                | Solution                                       |
+| -------------------- | ---------------------------------------------- |
+| "Server not found"   | Verify Docker is running, pull images again    |
+| "Permission denied"  | Check volume mount paths, run Docker as admin  |
+| GitHub 401 errors    | Regenerate token, verify scopes include `repo` |
+| Files not accessible | Ensure workspace path is correctly escaped     |
 
 **Security Considerations**
 

@@ -3,27 +3,28 @@ title: Code Refactoring Expert
 slug: code-refactoring-expert
 category: technical workflows
 tags:
-- refactoring
-- code-quality
-- clean-code
-- technical-debt
-- solid
-- design-patterns
+  - refactoring
+  - code-quality
+  - clean-code
+  - technical-debt
+  - solid
+  - design-patterns
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2025-01-15'
-description: Transforms legacy or poorly structured code into clean, maintainable
+  - Claude 3+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Transforms legacy or poorly structured code into clean, maintainable
   implementations while preserving functionality and minimizing risk. Provides systematic
   refactoring strategies with comprehensive safety nets, validation criteria, and
   incremental execution plans.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Reducing code complexity and technical debt systematically
-- Improving code testability and maintainability
-- Modernizing legacy codebases incrementally without rewrites
-- Preparing code for new feature development by cleaning interfaces
+  - Ideal Scenarios:**
+  - Reducing code complexity and technical debt systematically
+  - Improving code testability and maintainability
+  - Modernizing legacy codebases incrementally without rewrites
+  - Preparing code for new feature development by cleaning interfaces
 complexity: intermediate
 interaction: multi-turn
 ---
@@ -38,15 +39,17 @@ Effective refactoring preserves external behavior while improving internal struc
 
 <input_handling>
 Required inputs:
+
 - Codebase type (language, framework, approximate size)
 - Main issues identified (duplication, complexity, performance, testability)
 - Refactoring drivers (new features blocked, maintenance burden, performance)
 
 Infer if not provided:
+
 - Test coverage: Assume low, prioritize coverage improvement first
 - Timeline: Incremental over multiple sprints (not big-bang)
 - API stability: Preserve all external interfaces by default
-</input_handling>
+  </input_handling>
 
 <task>
 Create a systematic refactoring plan with safety nets:
@@ -58,12 +61,13 @@ Create a systematic refactoring plan with safety nets:
 5. Define incremental refactoring steps with specific patterns to apply
 6. Create before/after validation criteria with measurable improvements
 7. Plan performance benchmarks and quality metrics to track progress
-</task>
+   </task>
 
 <output_specification>
 Format: Phased plan with specific code transformations and patterns
 Length: 1000-2000 words
 Structure:
+
 - Complexity Analysis (hotspots, metrics, root causes)
 - Dependency Mapping (coupling assessment, risk areas)
 - Prioritized Targets (ranked by impact and risk)
@@ -71,21 +75,23 @@ Structure:
 - Refactoring Steps (patterns, before/after examples)
 - Validation Criteria (metrics, regression checks)
 - Timeline and Milestones (sprint-aligned execution)
-</output_specification>
+  </output_specification>
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Specific refactoring patterns matched to identified issues
 - Test coverage requirements specified before major changes
 - Quantified complexity improvements (cyclomatic complexity, LOC, coupling)
 - Backward compatibility preserved for all external interfaces
 
 Avoid:
+
 - Big-bang refactoring without incremental, reversible steps
 - Refactoring without adequate test coverage safety net
 - Breaking external APIs or behavioral contracts
 - Over-engineering simple fixes with complex patterns
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - No refactoring step should take longer than 1 sprint to complete and validate

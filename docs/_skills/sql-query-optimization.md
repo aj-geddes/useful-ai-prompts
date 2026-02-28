@@ -1,14 +1,15 @@
 ---
 category: database-storage
-date: '2025-01-01'
-description: Analyze and optimize SQL queries for performance. Use when improving
+date: "2025-01-01"
+description:
+  Analyze and optimize SQL queries for performance. Use when improving
   slow queries, reducing execution time, or analyzing query performance in PostgreSQL
   and MySQL.
 layout: skill
 slug: sql-query-optimization
 tags:
-- postgres
-- mysql
+  - postgres
+  - mysql
 title: sql-query-optimization
 ---
 
@@ -202,7 +203,7 @@ ORDER BY start_time DESC LIMIT 10;
 - Use EXPLAIN/EXPLAIN ANALYZE before and after optimization
 - Add indexes to columns in WHERE, JOIN, and ORDER BY clauses
 - Use LIMIT when exploring large result sets
-- Avoid SELECT * when only specific columns needed
+- Avoid SELECT \* when only specific columns needed
 - Use database functions instead of application-level processing
 - Batch operations to reduce network round trips
 - Partition large tables for improved query performance

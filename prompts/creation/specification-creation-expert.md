@@ -1,6 +1,7 @@
 # Specification Creation Expert
 
 ## Metadata
+
 - **ID**: creation-specification-creation-expert
 - **Version**: 3.0.0
 - **Category**: Creation
@@ -18,6 +19,7 @@ A comprehensive technical specification assistant that creates clear, implementa
 ## When to Use
 
 **Ideal Scenarios:**
+
 - Creating software requirements specifications (SRS)
 - Designing RESTful or GraphQL API specifications
 - Developing hardware or system specifications
@@ -25,6 +27,7 @@ A comprehensive technical specification assistant that creates clear, implementa
 - Documenting technical standards and compliance requirements
 
 **Anti-Patterns (When Not to Use):**
+
 - High-level product requirements (use PRD prompts instead)
 - User stories and agile backlog items (use product management prompts)
 - Architecture decision records (use ADR prompts instead)
@@ -114,6 +117,7 @@ Requirements:
 ## Example Usage
 
 **User Input:**
+
 ```
 1. Specification type: RESTful API specification
 2. Product: Payment processing API for e-commerce platform
@@ -148,6 +152,7 @@ This specification defines the requirements for a RESTful payment processing API
 ### 1.2 Scope
 
 **In Scope:**
+
 - Payment authorization and capture
 - Refund processing
 - Payment method tokenization
@@ -156,18 +161,19 @@ This specification defines the requirements for a RESTful payment processing API
 - Multi-currency support
 
 **Out of Scope:**
+
 - Direct card data handling (delegated to PCI-compliant tokenization)
 - Cryptocurrency payments
 - Physical point-of-sale integration
 
 ### 1.3 Stakeholders
 
-| Stakeholder | Interest | Requirements |
-|-------------|----------|-------------|
-| Frontend Developers | Easy integration | Clear documentation, SDKs |
-| Mobile Teams | Optimized for mobile | Lightweight responses |
-| Third-party Partners | Reliable integration | Stable API, versioning |
-| Security Team | Compliance | PCI-DSS, data encryption |
+| Stakeholder          | Interest             | Requirements              |
+| -------------------- | -------------------- | ------------------------- |
+| Frontend Developers  | Easy integration     | Clear documentation, SDKs |
+| Mobile Teams         | Optimized for mobile | Lightweight responses     |
+| Third-party Partners | Reliable integration | Stable API, versioning    |
+| Security Team        | Compliance           | PCI-DSS, data encryption  |
 
 ## 2. DETAILED REQUIREMENTS
 
@@ -178,12 +184,14 @@ This specification defines the requirements for a RESTful payment processing API
 **Description:** The API shall process payment transactions securely.
 
 **Requirements:**
+
 - Support authorization and capture (single and two-step)
 - Handle multiple payment methods (cards, wallets, bank transfers)
 - Implement idempotency for all payment operations
 - Support partial captures and multiple captures
 
 **API Endpoints:**
+
 ```yaml
 POST /v1/payments
   request:
@@ -203,21 +211,23 @@ POST /v1/payments
 
 #### Performance Requirements
 
-| Metric | Requirement | Target |
-|--------|-------------|--------|
-| Response Time | 95th percentile | <100ms |
-| Throughput | Peak capacity | 10,000 TPS |
-| Availability | Uptime SLA | 99.99% |
+| Metric        | Requirement     | Target     |
+| ------------- | --------------- | ---------- |
+| Response Time | 95th percentile | <100ms     |
+| Throughput    | Peak capacity   | 10,000 TPS |
+| Availability  | Uptime SLA      | 99.99%     |
 
 #### Security Requirements
 
 **PCI-DSS Compliance:**
+
 - No raw card data storage
 - TLS 1.3 for all communications
 - AES-256 encryption at rest
 - Tokenization for sensitive data
 
 **Access Control:**
+
 - OAuth 2.0 authentication
 - API key + secret for service accounts
 - Rate limiting per client
@@ -262,11 +272,11 @@ CREATE TABLE payments (
 
 ### 4.1 Test Scenarios
 
-| Test ID | Scenario | Expected Result | Priority |
-|---------|----------|-----------------|----------|
-| PAY-001 | Process valid payment | Payment authorized | Critical |
-| PAY-002 | Insufficient funds | Decline with reason | Critical |
-| PAY-003 | Duplicate transaction | Idempotent response | High |
+| Test ID | Scenario              | Expected Result     | Priority |
+| ------- | --------------------- | ------------------- | -------- |
+| PAY-001 | Process valid payment | Payment authorized  | Critical |
+| PAY-002 | Insufficient funds    | Decline with reason | Critical |
+| PAY-003 | Duplicate transaction | Idempotent response | High     |
 
 ### 4.2 Performance Tests
 
@@ -279,16 +289,19 @@ CREATE TABLE payments (
 ### 5.1 Development Phases
 
 **Phase 1: Foundation (Month 1)**
+
 - Core payment endpoints
 - Basic authentication
 - Unit test coverage >80%
 
 **Phase 2: Integration (Month 2)**
+
 - Payment processor integration
 - Webhook implementation
 - Integration testing
 
 **Phase 3: Security (Month 3)**
+
 - PCI compliance implementation
 - Penetration testing
 - Audit logging
@@ -296,6 +309,7 @@ CREATE TABLE payments (
 ### 5.2 Best Practices
 
 **Idempotency Implementation:**
+
 ```python
 def process_payment(request):
     existing = cache.get(request.reference)

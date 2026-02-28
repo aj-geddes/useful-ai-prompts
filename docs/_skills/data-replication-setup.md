@@ -1,13 +1,14 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Set up database replication for high availability and disaster recovery.
+date: "2025-01-01"
+description:
+  Set up database replication for high availability and disaster recovery.
   Use when configuring master-slave replication, multi-master setups, or replication
   monitoring.
 layout: skill
 slug: data-replication-setup
 tags:
-- data
+  - data
 title: data-replication-setup
 ---
 

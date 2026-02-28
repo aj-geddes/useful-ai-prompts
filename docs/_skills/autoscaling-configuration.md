@@ -1,12 +1,13 @@
 ---
 category: software-development
-date: '2025-01-01'
-description: Configure autoscaling for Kubernetes, VMs, and serverless workloads based
+date: "2025-01-01"
+description:
+  Configure autoscaling for Kubernetes, VMs, and serverless workloads based
   on metrics, schedules, and custom indicators.
 layout: skill
 slug: autoscaling-configuration
 tags:
-- kubernetes
+  - kubernetes
 title: autoscaling-configuration
 ---
 
@@ -398,6 +399,7 @@ data:
 ## Best Practices
 
 ### ✅ DO
+
 - Set appropriate min/max replicas
 - Monitor metric aggregation window
 - Implement cooldown periods
@@ -408,6 +410,7 @@ data:
 - Implement fallback strategies
 
 ### ❌ DON'T
+
 - Set min replicas to 1
 - Scale too aggressively
 - Ignore cooldown periods

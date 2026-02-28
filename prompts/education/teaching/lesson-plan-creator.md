@@ -1,6 +1,7 @@
 # Lesson Plan Creator
 
 ## Metadata
+
 - **ID**: `education-lesson-plan-creator`
 - **Version**: 2.0.0
 - **Category**: Education/Teaching
@@ -18,6 +19,7 @@ Create comprehensive, engaging lesson plans that maximize student learning throu
 ## When to Use
 
 **Ideal scenarios:**
+
 - Planning individual lessons or unit sequences
 - Designing differentiated instruction for diverse classrooms
 - Creating assessments aligned with learning objectives
@@ -25,6 +27,7 @@ Create comprehensive, engaging lesson plans that maximize student learning throu
 - Preparing lessons that meet accessibility requirements
 
 **Anti-patterns (when not to use):**
+
 - Long-term curriculum development or scope and sequence
 - Standardized test preparation strategies
 - School-wide policy development
@@ -107,12 +110,15 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 "8th grade Algebra - Introduction to linear equations. 50-minute class, 26 students with mixed abilities (5 advanced, 16 on-level, 5 struggling, 2 with IEPs, 3 ELL). Students know basic algebraic operations. I want real-world connections and collaborative work."
 
 ### Output
+
 **Lesson Plan: Introduction to Linear Equations**
 
 **Learning Objectives**
+
 - Identify linear equations from a set of equations
 - Understand that linear equations have variables to the first power only
 - Solve basic one-step and two-step linear equations
@@ -124,47 +130,53 @@ Avoid:
 
 **Opening Hook (8 min)**
 
-*Balance Scale Mystery*
+_Balance Scale Mystery_
+
 - Display balance scale with hidden weights
 - Pose: "If 3 boxes + 5 = 11, what's in each box?"
 - Partner discussion (2 min), then demonstrate solution
 - Connect: "We just solved 3x + 5 = 11!"
 
-*Real-World Connection*: "Where might we use this? Restaurant bills, phone data, downloading songs..."
+_Real-World Connection_: "Where might we use this? Restaurant bills, phone data, downloading songs..."
 
 **Main Activities (30 min)**
 
-*Activity 1: Equation Sort (10 min) - Collaborative*
+_Activity 1: Equation Sort (10 min) - Collaborative_
+
 - Pairs sort cards into linear vs. non-linear
 - Set A: 2x + 3 = 7, y - 4 = 10 (linear)
 - Set B: x^2 = 9, 2/x = 4 (non-linear)
 - Differentiation: Advanced get 2(x+3)=10; Struggling get hint cards; ELL get visuals
 
-*Activity 2: Direct Instruction (10 min)*
+_Activity 2: Direct Instruction (10 min)_
+
 - Define linear equation characteristics
 - Variables with exponent of 1 only
 - No variables in denominators or under radicals
 - Visual examples with classification
 
-*Activity 3: Guided Practice (10 min)*
+_Activity 3: Guided Practice (10 min)_
+
 - Model balance method: 2x + 3 = 11
 - "What we do to one side, we do to the other"
 - Try together: 3x - 4 = 8 (whole class), x/2 + 5 = 9 (partners)
 
 **Differentiated Practice (7 min)**
 
-*Level 1 (Struggling)*: One-step with visual supports
-*Level 2 (On-level)*: Mix of one and two-step
-*Level 3 (Advanced)*: Multi-step with distribution
+_Level 1 (Struggling)_: One-step with visual supports
+_Level 2 (On-level)_: Mix of one and two-step
+_Level 3 (Advanced)_: Multi-step with distribution
 
 **Closure (5 min)**
 
-*Exit Ticket* (Differentiated by level)
+_Exit Ticket_ (Differentiated by level)
+
 - All: Circle the linear equations
 - Solve: Varies by level (x+6=10 to 3(x-2)=12)
 - Quick share: "One real-world linear equation situation?"
 
 **Differentiation Plan**
+
 - IEP: Extended time, step-by-step guide, individual check-ins
 - ELL: Vocabulary cards, sentence frames, visual dictionary
 - Advanced: Challenge word problems, peer tutoring option
@@ -173,5 +185,6 @@ Avoid:
 **Assessment**: Equation sort observation, thumbs up/down checks, exit ticket analysis.
 
 ## Related Prompts
+
 - [Performance Review Expert](../../evaluation-assessment/performance-review-expert.md)
 - [Document Review Expert](../../evaluation-assessment/document-review-expert.md)

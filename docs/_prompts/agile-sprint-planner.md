@@ -3,31 +3,32 @@ title: Agile Sprint Planner
 slug: agile-sprint-planner
 category: project management
 tags:
-- agile
-- sprint
-- planning
-- story
-- pointing
-- backlog
-- refinement
-- capacity
-- planning
-- scrum
+  - agile
+  - sprint
+  - planning
+  - story
+  - pointing
+  - backlog
+  - refinement
+  - capacity
+  - planning
+  - scrum
 compatible_models:
-- Claude 3+
-- GPT-4+
-date: '2026-02-28'
-description: This prompt supports Scrum Masters and Product Owners in facilitating
+  - Claude 3+
+  - GPT-4+
+date: "2026-02-28"
+description:
+  This prompt supports Scrum Masters and Product Owners in facilitating
   effective sprint planning sessions. It helps decompose epics into user stories,
   estimate effort through story pointing, plan team capacity, set a compelling sprint
   goal, and produce a refined sprint backlog ready for team commitment.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Preparing for an upcoming sprint planning ceremony with a backlog that needs refinement
-- Decomposing a large epic or feature into sprint-sized user stories
-- Diagnosing and improving a team's sprint planning process after failed sprints
-- Waterfall project scheduling with fixed-date deliverable sets
+  - Ideal Scenarios:**
+  - Preparing for an upcoming sprint planning ceremony with a backlog that needs refinement
+  - Decomposing a large epic or feature into sprint-sized user stories
+  - Diagnosing and improving a team's sprint planning process after failed sprints
+  - Waterfall project scheduling with fixed-date deliverable sets
 complexity: intermediate
 interaction: multi-turn
 ---

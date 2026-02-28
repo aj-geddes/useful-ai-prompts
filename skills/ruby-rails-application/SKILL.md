@@ -453,6 +453,7 @@ end
 ## Best Practices
 
 ### ✅ DO
+
 - Use conventions over configuration
 - Leverage Active Record associations
 - Implement proper scopes for queries
@@ -465,11 +466,12 @@ end
 - Use before_action filters appropriately
 
 ### ❌ DON'T
+
 - Use raw SQL without parameterization
 - Implement business logic in controllers
 - Trust user input without validation
 - Store secrets in code
-- Use select * without specifying columns
+- Use select \* without specifying columns
 - Forget N+1 query problems (use includes/joins)
 - Implement authentication in each controller
 - Use global variables

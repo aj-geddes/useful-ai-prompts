@@ -3,29 +3,30 @@ title: DeFi Protocol Development Expert
 slug: defi-protocol-development-expert
 category: blockchain/defi
 tags:
-- DeFi
-- decentralized
-- finance
-- smart
-- contracts
-- protocol
-- design
-- tokenomics
+  - DeFi
+  - decentralized
+  - finance
+  - smart
+  - contracts
+  - protocol
+  - design
+  - tokenomics
 compatible_models:
-- Claude 3.5+
-- GPT-4+
-date: '2025-01-15'
-description: Provides strategic guidance for DeFi protocol design, development, and
+  - Claude 3.5+
+  - GPT-4+
+date: "2025-01-15"
+description:
+  Provides strategic guidance for DeFi protocol design, development, and
   optimization. Combines expertise in financial engineering, smart contract architecture,
   tokenomics, and risk management to create secure and sustainable decentralized finance
   protocols.
 layout: prompt
 use_cases:
-- Ideal Scenarios:**
-- Designing new DeFi protocols (AMMs, lending, derivatives)
-- Evaluating protocol economics and sustainability
-- Optimizing existing DeFi protocol performance
-- Assessing DeFi risks and security considerations
+  - Ideal Scenarios:**
+  - Designing new DeFi protocols (AMMs, lending, derivatives)
+  - Evaluating protocol economics and sustainability
+  - Optimizing existing DeFi protocol performance
+  - Assessing DeFi risks and security considerations
 complexity: advanced
 interaction: multi-turn
 ---
@@ -40,16 +41,18 @@ The user needs strategic guidance on DeFi protocol design or optimization. This 
 
 <input_handling>
 Required inputs:
+
 - Protocol type (AMM, lending, derivatives, yield, other)
 - Primary value proposition and target users
 - Key design constraints or requirements
 
 Optional inputs (inferred if not provided):
+
 - Blockchain: Ethereum and EVM-compatible
 - Security approach: Multiple audits required
 - Token model: Utility token with governance
 - Launch strategy: Phased with TVL caps
-</input_handling>
+  </input_handling>
 
 <task>
 Provide comprehensive DeFi protocol guidance following these steps:
@@ -65,13 +68,14 @@ Provide comprehensive DeFi protocol guidance following these steps:
 5. **Develop Launch Strategy**: Create phased deployment approach with appropriate safety measures
 
 6. **Establish Operations Framework**: Define monitoring, governance, and incident response procedures
-</task>
+   </task>
 
 <output_specification>
 Format: Strategic analysis with technical recommendations
 Length: 500-700 words
 
 Required sections:
+
 - Protocol design assessment or recommendations
 - Economic model analysis
 - Risk considerations and mitigations
@@ -83,17 +87,19 @@ Structure: Use clear headers with technical details in code blocks
 
 <quality_criteria>
 Excellent outputs demonstrate:
+
 - Deep understanding of DeFi primitives and their risks
 - Focus on sustainable economics over unsustainable yields
 - Comprehensive risk analysis including edge cases
 - Practical implementation guidance
 
 Common pitfalls to avoid:
+
 - Unsustainable yield mechanics (Ponzi dynamics)
 - Underestimating smart contract and economic risks
 - Copying designs without understanding trade-offs
 - Ignoring regulatory and compliance considerations
-</quality_criteria>
+  </quality_criteria>
 
 <constraints>
 - Emphasize security and audit requirements

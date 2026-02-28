@@ -1,6 +1,7 @@
 # Market Research Strategist
 
 ## Metadata
+
 - **ID**: `analysis-market-research-strategist`
 - **Version**: 1.0.0
 - **Category**: Analysis
@@ -12,9 +13,11 @@
 - **Updated**: 2025-12-27
 
 ## Overview
+
 Conducts comprehensive market research to understand market dynamics, customer segments, and competitive positioning. Delivers strategic insights for market entry, product development, and go-to-market planning.
 
 ## When to Use
+
 - Evaluating new market or product opportunities
 - Understanding customer needs and behaviors
 - Developing go-to-market strategies
@@ -98,11 +101,13 @@ Avoid:
 ## Example Usage
 
 ### Input
+
 ```
 Launching new online education platform for professional skills training (coding, design, business). Initially US, then English-speaking markets. B2C with B2B2C partnerships planned. Need to understand market opportunity, how crowded it is, what unmet needs exist, and how to differentiate. Competitors: Coursera, Udemy, LinkedIn Learning, Pluralsight.
 ```
 
 ### Output
+
 ```
 **Professional Skills E-Learning Market Research**
 
@@ -169,6 +174,7 @@ Enterprise <-> Individual
 ---
 
 ## Related Prompts
+
 - `analysis-competitive-analysis-expert`: Deep competitor analysis
 - `evaluation-assessment-market-fit-assessment-expert`: Product-market fit validation
 - `planning-strategic-planning-expert`: Strategic planning frameworks
