@@ -2,9 +2,9 @@
 layout: null
 ---
 // Service Worker for Performance Optimization
-// Version 1.0.0
+// Version 1.0.1
 
-const CACHE_NAME = 'useful-ai-prompts-v1.0.0';
+const CACHE_NAME = 'useful-ai-prompts-v1.0.1';
 const urlsToCache = [
   '{{ site.baseurl }}/',
   '{{ site.baseurl }}/assets/css/main.css',
