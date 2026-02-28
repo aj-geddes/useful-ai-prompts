@@ -1,0 +1,167 @@
+name: Validate Prompts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  format-check:
+    name: Format Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Check formatting with Prettier
+        run: npx prettier --check .
+
+  prompt-validate:
+    name: Prompt Schema Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate changed prompt files
+        run: |
+          python3 - <<'PYEOF'
+          import subprocess
+          import sys
+          import re
+          from pathlib import Path
+
+          REQUIRED_HEADERS = [
+              "## Metadata",
+              "## Overview",
+              "## When to Use",
+              "## Prompt",
+          ]
+
+          def validate_prompt(filepath):
+              errors = []
+              try:
+                  content = Path(filepath).read_text(encoding="utf-8")
+              except Exception as e:
+                  return [f"Cannot read file: {e}"]
+
+              for header in REQUIRED_HEADERS:
+                  if header not in content:
+                      errors.append(f"Missing section: {header}")
+
+              if not re.search(r"^#\s+\S", content, re.MULTILINE):
+                  errors.append("Missing H1 title")
+
+              return errors
+
+          # Get changed .md files in /prompts/
+          result = subprocess.run(
+              ["git", "diff", "--name-only", "HEAD~1", "HEAD"],
+              capture_output=True, text=True
+          )
+          changed = [
+              f for f in result.stdout.strip().split("\n")
+              if f.startswith("prompts/") and f.endswith(".md")
+              and not f.endswith("README.md")
+          ]
+
+          if not changed:
+              # Fall back to all prompts on initial run or when diff unavailable
+              changed = [
+                  str(p.relative_to(Path(".")))
+                  for p in Path("prompts").glob("**/*.md")
+                  if p.name.lower() != "readme.md"
+              ]
+
+          failed = 0
+          for filepath in changed:
+              if not Path(filepath).exists():
+                  continue
+              errors = validate_prompt(filepath)
+              if errors:
+                  print(f"FAIL: {filepath}")
+                  for err in errors:
+                      print(f"  - {err}")
+                  failed += 1
+              else:
+                  print(f"OK:   {filepath}")
+
+          if failed:
+              print(f"\n{failed} prompt(s) failed validation")
+              sys.exit(1)
+          else:
+              print(f"\nAll {len(changed)} prompt(s) passed validation")
+          PYEOF
+
+  jekyll-build-test:
+    name: Jekyll Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          working-directory: docs
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+        working-directory: docs
+        env:
+          JEKYLL_ENV: production
+
+  index-freshness:
+    name: Index Freshness Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check PROMPT-INDEX.json freshness
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          index_path = Path("PROMPT-INDEX.json")
+          if not index_path.exists():
+              print("WARNING: PROMPT-INDEX.json not found")
+              sys.exit(0)
+
+          with open(index_path) as f:
+              data = json.load(f)
+
+          last_updated_str = data.get("last_updated", "")
+          if not last_updated_str:
+              print("WARNING: PROMPT-INDEX.json has no last_updated field")
+              sys.exit(0)
+
+          try:
+              # Parse ISO timestamp
+              last_updated = datetime.fromisoformat(last_updated_str.replace("Z", "+00:00"))
+              now = datetime.now(timezone.utc)
+              age_days = (now - last_updated).days
+
+              print(f"PROMPT-INDEX.json last updated: {last_updated_str}")
+              print(f"Age: {age_days} days")
+              print(f"Total prompts indexed: {data.get('total_prompts', 'unknown')}")
+
+              if age_days > 30:
+                  print(f"\nWARNING: Index is {age_days} days old (>30 days).")
+                  print("Run: python update_prompt_index.py")
+                  # Warn but don't fail — index staleness is a soft warning
+              else:
+                  print(f"\nIndex is fresh ({age_days} days old).")
+          except Exception as e:
+              print(f"WARNING: Could not parse last_updated timestamp: {e}")
+          PYEOF

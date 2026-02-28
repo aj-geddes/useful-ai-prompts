@@ -92,10 +92,11 @@ lunr:
 github_username: aj-geddes
 
 # Analytics configuration
-google_analytics: "G-XXXXXXXXXX" # Replace with actual GA4 tracking ID
-google_search_console: "google-site-verification=XXXXXXXXXX" # Replace with actual GSC verification
-microsoft_clarity: "XXXXXXXXXX" # Replace with actual Clarity ID
-hotjar_id: "1234567" # Replace with actual Hotjar ID
+# TODO: Configure before launch
+# google_analytics: "G-XXXXXXXXXX"
+# google_search_console: "google-site-verification=XXXXXXXXXX"
+# microsoft_clarity: "XXXXXXXXXX"
+# hotjar_id: "1234567"
 
 # SEO Configuration
 twitter_username: usefulaiprompts # Your Twitter username for Twitter Cards
@@ -129,9 +130,9 @@ seo_defaults:
 
 # Site statistics
 stats:
-  total_prompts: 486
-  categories: 22
-  last_updated: "2025-11-23T12:00:00Z"  # Force rebuild timestamp
+  total_prompts: 679
+  categories: 47
+  last_updated: "2026-02-28T00:00:00Z"
   github_stars: 0  # This will be updated dynamically
   total_downloads: 0  # This will be updated dynamically
 
@@ -194,8 +195,9 @@ webmaster_verifications:
   
 # Enhanced SEO Tag Configuration
 tag_manager:
-  enabled: true
-  gtm_id: "GTM-XXXXXXX" # Replace with actual GTM ID
+  enabled: false
+  # TODO: Configure before launch
+  # gtm_id: "GTM-XXXXXXX"
   
 # Local Business Schema (if applicable)
 local_business:
