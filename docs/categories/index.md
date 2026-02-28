@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Browse AI Prompt Categories | 486 Prompts Across 22 Categories"
-description: "Browse 486 expert AI prompts organized across 22 professional categories. Find prompts for business, technical workflows, research, emerging technologies, and more."
+title: "Browse AI Prompt Categories | 679 Prompts Across 47 Categories"
+description: "Browse 679 expert AI prompts organized across 47 professional categories. Find prompts for development, security, finance, HR, healthcare, and more."
 ---
 
 <div class="categories-page">
@@ -10,7 +10,7 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
         <div class="page-header">
             <h1>Browse Prompt Categories</h1>
             <p class="page-subtitle">
-                486 expert prompts organized across 22 specialized categories for business, technical, and creative workflows.
+                679 expert prompts organized across 47 specialized categories for professional workflows across every major industry and function.
             </p>
         </div>
 
@@ -19,12 +19,16 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
             {% assign total_prompts = site.prompts | size %}
             {% assign categories_count = site.categories | size %}
             <div class="stat-item">
-                <span class="stat-number">{{ categories_count }}</span>
+                <span class="stat-number">47</span>
                 <span class="stat-label">Categories</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number">{{ total_prompts }}</span>
+                <span class="stat-number">679</span>
                 <span class="stat-label">Total Prompts</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">14</span>
+                <span class="stat-label">Professional Domains</span>
             </div>
             <div class="stat-item">
                 <span class="stat-number">100%</span>
@@ -32,12 +36,219 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
             </div>
         </div>
 
-        <!-- Categories Grid -->
+        <!-- Core Professional Categories -->
         <div class="categories-section">
+            <h2 class="section-heading">Core Professional Domains</h2>
+            <p class="section-subheading">Prompts organized by profession and industry, each covering a complete domain in depth.</p>
+            <div class="categories-grid core-grid">
+
+                <a href="{{ '/categories/development/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-code"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Development & Engineering</h3>
+                        <p class="category-description">Code review, API design, debugging, architecture, DevOps, and technical documentation for software engineers.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/security/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Cybersecurity</h3>
+                        <p class="category-description">Threat modeling, incident response, penetration testing, zero-trust architecture, and compliance analysis.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/finance/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Finance & Financial Analysis</h3>
+                        <p class="category-description">Financial modeling, investment research, M&A analysis, budgeting, and risk assessment for finance professionals.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/human-resources/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-users"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Human Resources</h3>
+                        <p class="category-description">Talent acquisition, performance management, compensation benchmarking, DEI strategy, and workforce planning.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/healthcare/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-heartbeat"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Healthcare</h3>
+                        <p class="category-description">Clinical documentation, quality improvement, patient education, compliance, and hospital operations.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/education/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="category-count">12 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Education & Teaching</h3>
+                        <p class="category-description">Lesson planning, assessment design, curriculum development, and differentiated instruction for educators.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/project-management/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <span class="category-count">15 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Project Management</h3>
+                        <p class="category-description">Project charters, risk registers, sprint planning, stakeholder communication, and retrospective facilitation.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/operations/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-cogs"></i></div>
+                        <span class="category-count">14 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Operations Management</h3>
+                        <p class="category-description">Process optimization, capacity planning, KPI dashboards, vendor management, and quality systems.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/engineering/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-drafting-compass"></i></div>
+                        <span class="category-count">15 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Engineering</h3>
+                        <p class="category-description">Failure analysis, FMEA, technical specifications, design review, reliability engineering, and materials selection.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/customer-service/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-headset"></i></div>
+                        <span class="category-count">15 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Customer Service</h3>
+                        <p class="category-description">Complaint resolution, customer journey mapping, knowledge base content, and service recovery design.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/creative/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-paint-brush"></i></div>
+                        <span class="category-count">12 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Creative & Marketing</h3>
+                        <p class="category-description">Brand storytelling, marketing campaigns, copywriting, content strategy, UX design, and creative briefs.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/research/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-search"></i></div>
+                        <span class="category-count">11 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Research & Analysis</h3>
+                        <p class="category-description">Primary research design, competitive intelligence, data synthesis, and hypothesis testing for analysts.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/administrative/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+                        <span class="category-count">15 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Administrative & Office</h3>
+                        <p class="category-description">SOPs, correspondence, meeting management, scheduling, vendor relations, and records management.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="{{ '/categories/academic/' | relative_url }}" class="category-card featured">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-university"></i></div>
+                        <span class="category-count">13 prompts</span>
+                    </div>
+                    <div class="category-body">
+                        <h3 class="category-title">Academic Research</h3>
+                        <p class="category-description">Literature reviews, research proposals, grant writing, academic writing, peer review, and dissertation support.</p>
+                    </div>
+                    <div class="category-footer">
+                        <span class="view-link">View Category <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- All Other Categories -->
+        <div class="categories-section">
+            <h2 class="section-heading">All Categories</h2>
+            <p class="section-subheading">The complete library organized alphabetically — including specialized, emerging, and cross-functional categories.</p>
             <div class="categories-grid">
                 {% assign sorted_categories = site.categories | sort: 'title' %}
                 {% for category in sorted_categories %}
-                    {% assign category_prompts = site.prompts | where: "category", category.category %}
+                    {% assign category_prompts = site.prompts | where: "category", category.slug %}
                     {% assign prompt_count = category_prompts | size %}
 
                     {% if prompt_count > 0 %}
@@ -66,37 +277,37 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
                                     {% when 'evaluation-assessment' %}
                                         <i class="fas fa-clipboard-check"></i>
                                     {% when 'financial-planning' %}
-                                        <i class="fas fa-chart-line"></i>
+                                        <i class="fas fa-piggy-bank"></i>
                                     {% when 'government-digital' %}
                                         <i class="fas fa-landmark"></i>
                                     {% when 'healthcare-digital' %}
-                                        <i class="fas fa-heartbeat"></i>
+                                        <i class="fas fa-hospital-symbol"></i>
                                     {% when 'learning-development' %}
-                                        <i class="fas fa-graduation-cap"></i>
+                                        <i class="fas fa-chalkboard-teacher"></i>
                                     {% when 'learning-skills' %}
                                         <i class="fas fa-book-reader"></i>
                                     {% when 'management-leadership' %}
-                                        <i class="fas fa-users"></i>
+                                        <i class="fas fa-sitemap"></i>
                                     {% when 'optimization' %}
                                         <i class="fas fa-tachometer-alt"></i>
                                     {% when 'personal-productivity' %}
                                         <i class="fas fa-tasks"></i>
                                     {% when 'planning' %}
-                                        <i class="fas fa-calendar-alt"></i>
+                                        <i class="fas fa-map"></i>
                                     {% when 'problem-solving' %}
-                                        <i class="fas fa-tools"></i>
+                                        <i class="fas fa-puzzle-piece"></i>
                                     {% when 'quantum-computing' %}
                                         <i class="fas fa-atom"></i>
                                     {% when 'renewable-energy' %}
                                         <i class="fas fa-solar-panel"></i>
                                     {% when 'research-workflows' %}
-                                        <i class="fas fa-search"></i>
+                                        <i class="fas fa-microscope"></i>
                                     {% when 'space-economy' %}
                                         <i class="fas fa-rocket"></i>
                                     {% when 'supply-chain' %}
                                         <i class="fas fa-truck"></i>
                                     {% when 'technical-workflows' %}
-                                        <i class="fas fa-code"></i>
+                                        <i class="fas fa-terminal"></i>
                                     {% when 'career-development' %}
                                         <i class="fas fa-briefcase"></i>
                                     {% when 'health-wellness' %}
@@ -140,12 +351,15 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
         <!-- Quick Actions -->
         <div class="quick-actions">
             <h2>Can't Find What You're Looking For?</h2>
-            <p>Use our search to find specific prompts or explore our complete library.</p>
+            <p>Browse by job role or use our search to find specific prompts across the full library.</p>
             <div class="action-buttons">
-                <a href="{{ '/' | relative_url }}" class="btn-primary">
+                <a href="{{ '/use-cases/' | relative_url }}" class="btn-primary">
+                    <i class="fas fa-user-tie"></i> Browse by Job Role
+                </a>
+                <a href="{{ '/' | relative_url }}" class="btn-secondary">
                     <i class="fas fa-search"></i> Search All Prompts
                 </a>
-                <a href="{{ site.github_url }}/issues/new" class="btn-secondary" target="_blank">
+                <a href="{{ site.github_url }}/issues/new" class="btn-secondary" target="_blank" rel="noopener">
                     <i class="fas fa-lightbulb"></i> Suggest a Category
                 </a>
             </div>
@@ -209,15 +423,33 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
     font-weight: 500;
 }
 
-/* Categories Grid */
+/* Section Headings */
 .categories-section {
     margin-bottom: 4rem;
 }
 
+.section-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.5rem;
+}
+
+.section-subheading {
+    font-size: 1rem;
+    color: #718096;
+    margin: 0 0 2rem;
+}
+
+/* Categories Grid */
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+}
+
+.core-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .category-card {
@@ -236,6 +468,16 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
     border-color: #cbd5e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transform: translateY(-2px);
+}
+
+.category-card.featured {
+    border-color: #bee3f8;
+    background: linear-gradient(135deg, #fff 0%, #ebf8ff 100%);
+}
+
+.category-card.featured:hover {
+    border-color: #90cdf4;
+    box-shadow: 0 4px 16px rgba(66, 153, 225, 0.1);
 }
 
 .category-header {
@@ -257,6 +499,11 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
     font-size: 1.5rem;
 }
 
+.category-card.featured .category-icon {
+    background: #bee3f8;
+    color: #2b6cb0;
+}
+
 .category-count {
     font-size: 0.875rem;
     color: #718096;
@@ -269,10 +516,14 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
 }
 
 .category-title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     color: #2d3748;
     margin: 0 0 0.75rem;
+}
+
+.category-card.featured .category-title {
+    font-size: 1.25rem;
 }
 
 .category-description {
@@ -380,6 +631,8 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
     background: #3182ce;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+    color: white;
+    text-decoration: none;
 }
 
 .btn-secondary {
@@ -391,11 +644,16 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
 .btn-secondary:hover {
     border-color: #cbd5e0;
     background: #f7fafc;
+    text-decoration: none;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .core-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -427,7 +685,8 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
         font-size: 2rem;
     }
 
-    .categories-grid {
+    .categories-grid,
+    .core-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
@@ -465,7 +724,11 @@ description: "Browse 486 expert AI prompts organized across 22 professional cate
     }
 
     .category-title {
-        font-size: 1.125rem;
+        font-size: 1rem;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
     }
 }
 </style>

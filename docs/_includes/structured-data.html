@@ -1,234 +1,81 @@
-<!-- Enhanced Schema Markup for Useful AI Prompts -->
+{% comment %}
+  Structured Data (Schema.org JSON-LD) — Useful AI Prompts
+  Emits page-type-appropriate schema on every page.
+
+  Page types handled:
+    homepage  → WebSite (with SearchAction) + CollectionPage
+    prompt    → HowTo + Article + BreadcrumbList
+    category  → CollectionPage + BreadcrumbList
+    all other → BreadcrumbList only (homepage also gets one inline)
+
+  Liquid variables used:
+    site.url          → "https://aj-geddes.github.io"
+    site.baseurl      → "/useful-ai-prompts"
+    site.stats.total_prompts  (set in _config.yml, currently 679)
+    page.url, page.title, page.description, page.category,
+    page.tags, page.prompt, page.date, page.slug
+{% endcomment %}
+
+{%- assign _base = site.url | append: site.baseurl -%}
+{%- assign _page_url = page.url | prepend: site.baseurl | prepend: site.url -%}
+{%- assign _total = site.stats.total_prompts | default: 679 -%}
+
+<!-- ── 1. WebSite schema (every page) ──────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Useful AI Prompts",
-  "description": "Professional AI prompts for every workflow. 278+ expert prompts across 18 specialized categories.",
-  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "name": "{{ site.title | escape }}",
+  "description": "{{ site.description | escape }}",
+  "url": "{{ _base }}/",
+  "inLanguage": "en-US",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "{{ site.url }}{{ site.baseurl }}/search/?q={search_term_string}"
+      "urlTemplate": "{{ _base }}/search/?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Useful AI Prompts",
-    "url": "{{ site.url }}{{ site.baseurl }}/"
-  },
-  "mainEntity": {
-    "@type": "CreativeWork",
-    "name": "AI Prompt Library",
-    "description": "Comprehensive collection of professional AI prompts for business workflows",
-    "genre": ["Artificial Intelligence", "Productivity", "Business Tools"],
-    "keywords": "AI prompts, ChatGPT prompts, AI tools, business prompts, professional prompts, prompt engineering, dual-persona prompts, workflow optimization",
-    "educationalLevel": "Professional",
-    "audience": {
-      "@type": "Audience",
-      "audienceType": "Business Professionals"
-    },
-    "creator": {
-      "@type": "Organization", 
-      "name": "Useful AI Prompts"
+    "name": "{{ site.title | escape }}",
+    "url": "{{ _base }}/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ _base }}/assets/images/og-default.svg",
+      "width": 1200,
+      "height": 630
     }
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "{{ site.url }}{{ site.baseurl }}/"
-      },
-      {
-        "@type": "ListItem", 
-        "position": 2,
-        "name": "Categories",
-        "item": "{{ site.url }}{{ site.baseurl }}/categories/"
-      }
-    ]
   }
 }
 </script>
 
-<!-- Additional Schema for Collection -->
+{%- if page.url == "/" %}
+<!-- ── 2a. Homepage — CollectionPage ────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Collection",
-  "name": "Professional AI Prompt Collection",
-  "description": "Curated collection of 278+ professional AI prompts organized by business workflow and industry sector",
-  "url": "{{ site.url }}{{ site.baseurl }}/",
-  "numberOfItems": "{{ site.prompts.size }}",
-  "collectionSize": "{{ site.prompts.size }}",
+  "@type": "CollectionPage",
+  "name": "{{ site.title | escape }}",
+  "description": "{{ site.description | escape }}",
+  "url": "{{ _base }}/",
+  "inLanguage": "en-US",
+  "numberOfItems": {{ _total }},
   "about": [
-    {
-      "@type": "Thing",
-      "name": "Artificial Intelligence"
-    },
-    {
-      "@type": "Thing", 
-      "name": "Business Productivity"
-    },
-    {
-      "@type": "Thing",
-      "name": "Professional Development"
-    },
-    {
-      "@type": "Thing",
-      "name": "Workflow Optimization"
-    }
+    { "@type": "Thing", "name": "Artificial Intelligence" },
+    { "@type": "Thing", "name": "Prompt Engineering" },
+    { "@type": "Thing", "name": "Business Productivity" }
   ],
-  "genre": ["Business Tools", "Productivity", "AI Tools"],
-  "audience": {
-    "@type": "Audience",
-    "audienceType": ["Business Professionals", "Consultants", "Managers", "Analysts", "Developers"]
-  },
   "isAccessibleForFree": true,
-  "license": "https://creativecommons.org/licenses/by/4.0/"
-}
-</script>
-
-<!-- FAQ Schema for Common Questions -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What makes these AI prompts different from other collections?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our prompts use a dual-persona architecture, combining multiple expert perspectives in each prompt for more comprehensive outputs. They're designed specifically for professional workflows rather than creative writing."
-      }
-    },
-    {
-      "@type": "Question", 
-      "name": "How many AI prompts are available?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The library contains 278+ professional AI prompts organized across 18 specialized categories including Management & Leadership, Technical Workflows, Analysis, Planning, and emerging sectors like Blockchain and Quantum Computing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are the prompts free to use?",
-      "acceptedAnswer": {
-        "@type": "Answer", 
-        "text": "Yes, all prompts are completely free to use. No signup or email required. The library is designed to be accessible to all professionals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is dual-persona architecture?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dual-persona architecture combines two complementary expert perspectives in each prompt (e.g., Strategic Consultant + Data Analyst) to provide more comprehensive and nuanced AI outputs than single-perspective prompts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I search and filter the prompts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, the library features instant search across all prompts with filtering by category, tags, and keywords. You can also copy prompts to your clipboard with one click."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Organization Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Useful AI Prompts",
-  "url": "{{ site.url }}{{ site.baseurl }}/",
-  "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
-  "description": "Professional AI prompt library with searchable collection of business-focused prompts",
-  "foundingDate": "2024",
-  "nonprofitStatus": "Informal",
-  "knowsAbout": [
-    "Artificial Intelligence",
-    "Prompt Engineering", 
-    "Business Productivity",
-    "Professional Development",
-    "Workflow Optimization",
-    "ChatGPT Prompts",
-    "AI Tools"
-  ],
-  "areaServed": "Worldwide",
-  "serviceType": "Educational Resource"
-}
-</script>
-
-{% if page.layout == 'prompt' %}
-<!-- Individual Prompt Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 300 }}",
-  "url": "{{ site.url }}{{ page.url }}",
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.date | date_to_xmlschema }}",
-  "author": {
-    "@type": "Organization",
-    "name": "Useful AI Prompts"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Useful AI Prompts",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png"
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ site.url }}{{ site.baseurl }}/assets/images/prompt-preview.png",
-    "width": 1200,
-    "height": 630
-  },
-  "articleSection": "{{ page.category | capitalize }}",
-  "keywords": "{% if page.tags %}{% for tag in page.tags %}{{ tag }}, {% endfor %}{% endif %}{{ page.category }}, AI prompt, professional prompts",
-  {% if page.tags %}
-  "about": [
-    {% for tag in page.tags %}
-    {
-      "@type": "Thing",
-      "name": "{{ tag | capitalize }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ],
-  {% endif %}
-  "genre": "Business Tools",
-  "educationalLevel": "Professional",
   "audience": {
     "@type": "Audience",
     "audienceType": "Business Professionals"
-  },
-  "isAccessibleForFree": true,
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "mainEntity": {
-    "@type": "CreativeWork",
-    "name": "{{ page.title }}",
-    "description": "{{ page.description | default: page.excerpt | strip_html }}",
-    "genre": "AI Prompt",
-    "educationalUse": "Professional Development",
-    "typicalAgeRange": "18-65"
   }
 }
 </script>
 
-<!-- Breadcrumb Schema for Prompts -->
+<!-- ── 2b. Homepage — BreadcrumbList ─────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -238,37 +85,26 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ site.url }}{{ site.baseurl }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Categories",
-      "item": "{{ site.url }}{{ site.baseurl }}/categories/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ page.category | capitalize }}",
-      "item": "{{ site.url }}{{ site.baseurl }}/categories/{{ page.category }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "{{ page.title }}",
-      "item": "{{ site.url }}{{ page.url }}"
+      "item": "{{ _base }}/"
     }
   ]
 }
 </script>
 
-<!-- HowTo Schema for AI Prompts -->
+{%- elsif page.layout == "prompt" %}
+
+{%- assign _prompt_desc = page.description | default: page.title | strip_html | strip_newlines | escape -%}
+{%- assign _category_label = page.category | replace: "-", " " | capitalize -%}
+{%- assign _category_url = _base | append: "/categories/" | append: page.category | append: "/" -%}
+
+<!-- ── 3a. Prompt page — HowTo ──────────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to Use: {{ page.title }}",
-  "description": "Step-by-step guide to implementing this professional AI prompt for {{ page.category }} workflows",
+  "name": "How to use: {{ page.title | escape }}",
+  "description": "{{ _prompt_desc }}",
+  "inLanguage": "en-US",
   "totalTime": "PT5M",
   "estimatedCost": {
     "@type": "MonetaryAmount",
@@ -278,48 +114,196 @@
   "supply": [
     {
       "@type": "HowToSupply",
-      "name": "AI Assistant (ChatGPT, Claude, or similar)"
-    },
-    {
-      "@type": "HowToSupply", 
-      "name": "The prompt text from this page"
+      "name": "AI assistant (ChatGPT, Claude, Gemini, or similar)"
     }
   ],
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "Copy the Prompt",
-      "text": "Copy the complete prompt text using the copy button",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step1-copy.png"
+      "name": "Copy the prompt",
+      "text": "Click the Copy Prompt button on this page to copy the full prompt text to your clipboard."
     },
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "Paste into AI Assistant",
-      "text": "Paste the prompt into your preferred AI assistant (ChatGPT, Claude, etc.)",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step2-paste.png"
+      "name": "Paste into your AI assistant",
+      "text": "Open ChatGPT, Claude, or your preferred AI tool and paste the prompt into the chat input."
     },
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "Customize with Your Details",
-      "text": "Replace any placeholders with your specific requirements and context",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step3-customize.png"
+      "name": "Provide your specific details",
+      "text": "Add any context, data, or requirements specific to your situation after the prompt text."
     },
     {
       "@type": "HowToStep",
       "position": 4,
-      "name": "Execute and Review",
-      "text": "Run the prompt and review the comprehensive output from the dual-persona framework",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/step4-execute.png"
+      "name": "Review and iterate",
+      "text": "Read the AI response, ask follow-up questions, and refine the output to meet your needs."
     }
-  ],
-  "result": {
-    "@type": "CreativeWork",
-    "name": "Professional {{ page.category }} Analysis",
-    "description": "Comprehensive output combining multiple expert perspectives"
+  ]
+}
+</script>
+
+<!-- ── 3b. Prompt page — Article ─────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ _prompt_desc }}",
+  "url": "{{ _page_url }}",
+  "inLanguage": "en-US",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ _base }}/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ _base }}/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ _base }}/assets/images/og-default.svg"
+    }
+  },
+  {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ _base }}/assets/images/prompt-preview.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "articleSection": "{{ _category_label }}",
+  "keywords": "{{ page.tags | join: ', ' }}, {{ _category_label | downcase }}, AI prompt, ChatGPT prompt, Claude prompt, prompt engineering",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ _page_url }}"
   }
 }
 </script>
-{% endif %}
+
+<!-- ── 3c. Prompt page — BreadcrumbList ──────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ _base }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Categories",
+      "item": "{{ _base }}/categories/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ _category_label }}",
+      "item": "{{ _category_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ _page_url }}"
+    }
+  ]
+}
+</script>
+
+{%- elsif page.layout == "category" %}
+
+{%- assign _cat_desc = page.description | default: page.title | strip_html | strip_newlines | escape -%}
+{%- assign _cat_label = page.title | escape -%}
+{%- assign _category_prompts = site.prompts | where: "category", page.slug -%}
+{%- assign _cat_count = _category_prompts.size -%}
+
+<!-- ── 4a. Category page — CollectionPage ───────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ _cat_label }} AI Prompts",
+  "description": "{{ _cat_desc }}",
+  "url": "{{ _page_url }}",
+  "inLanguage": "en-US",
+  "numberOfItems": {{ _cat_count }},
+  "isAccessibleForFree": true,
+  "about": {
+    "@type": "Thing",
+    "name": "{{ _cat_label }}"
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ _base }}/"
+  }
+}
+</script>
+
+<!-- ── 4b. Category page — BreadcrumbList ───────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ _base }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Categories",
+      "item": "{{ _base }}/categories/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ _cat_label }}",
+      "item": "{{ _page_url }}"
+    }
+  ]
+}
+</script>
+
+{%- else %}
+
+<!-- ── 5. All other pages — BreadcrumbList ───────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ _base }}/"
+    }
+    {% if page.title and page.url != "/" %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ _page_url }}"
+    }
+    {% endif %}
+  ]
+}
+</script>
+
+{%- endif %}

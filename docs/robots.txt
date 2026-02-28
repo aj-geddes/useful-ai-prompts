@@ -1,7 +1,19 @@
+# robots.txt — Useful AI Prompts
+# https://aj-geddes.github.io/useful-ai-prompts
+# Updated: 2026-02-28
+
+# ── Default: allow all well-behaved crawlers ─────────────────────────────────
 User-agent: *
 Allow: /
 
-# Specific bot optimizations
+# ── Paths that should not be indexed ─────────────────────────────────────────
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /_site/
+Disallow: /admin/
+
+# ── Major search engine bots ──────────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -18,7 +30,17 @@ User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 1
 
-# AI Training Bots - Allow but with delays
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# ── AI training / research crawlers ──────────────────────────────────────────
+# Allowed — we want AI training visibility for this prompt library.
+
 User-agent: GPTBot
 Allow: /
 Crawl-delay: 2
@@ -39,10 +61,24 @@ User-agent: ClaudeBot
 Allow: /
 Crawl-delay: 1
 
-# Block known bad bots
-User-agent: AhrefsBot
-Disallow: /
+User-agent: Diffbot
+Allow: /
+Crawl-delay: 3
 
+# ── Legitimate SEO tools (allowed — useful for monitoring) ───────────────────
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: MajesticBot
+Allow: /
+Crawl-delay: 5
+
+# ── Known abusive / scraper bots ─────────────────────────────────────────────
 User-agent: MJ12bot
 Disallow: /
 
@@ -52,28 +88,14 @@ Disallow: /
 User-agent: BLEXBot
 Disallow: /
 
-# Allow access to important files
-Allow: /sitemap*.xml
-Allow: /assets/
-Allow: /search/
-Allow: /*.css
-Allow: /*.js
-Allow: /*.json
+User-agent: SeznamBot
+Disallow: /
 
-# Disallow admin/development files
-Disallow: /admin/
-Disallow: /.git/
-Disallow: /node_modules/
-Disallow: /vendor/
-Disallow: /Gemfile*
-Disallow: /README*
-Disallow: /_site/
-Disallow: /*debug*
-Disallow: /*test*
+User-agent: PetalBot
+Disallow: /
 
-# Sitemaps
+User-agent: 008
+Disallow: /
+
+# ── Sitemap ───────────────────────────────────────────────────────────────────
 Sitemap: https://aj-geddes.github.io/useful-ai-prompts/sitemap.xml
-Sitemap: https://aj-geddes.github.io/useful-ai-prompts/sitemap-index.xml
-
-# Host directive for better crawling
-Host: aj-geddes.github.io

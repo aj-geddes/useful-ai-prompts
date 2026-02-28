@@ -188,10 +188,16 @@ seo:
   rich_snippets: true
   
 # Webmaster Tools Verification
+# To activate, replace the commented-out values with your real verification codes
+# and remove the leading "# " from each key line.
+#
+# Google Search Console → Settings → Ownership verification → HTML tag → content="..."
+# Bing Webmaster Tools  → Settings → Access → XML meta tag → content="..."
+# Yandex Webmaster      → Settings → Access rights → Meta tag → content="..."
 webmaster_verifications:
-  google: "your-google-verification-code"
-  bing: "your-bing-verification-code"
-  yandex: "your-yandex-verification-code"
+  # google: "your-google-verification-code"
+  # bing: "your-bing-verification-code"
+  # yandex: "your-yandex-verification-code"
   
 # Enhanced SEO Tag Configuration
 tag_manager:

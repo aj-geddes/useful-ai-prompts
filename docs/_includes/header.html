@@ -1,47 +1,127 @@
-<header class="site-header">
-    <div class="container">
-        <div class="header-content">
-            <div class="site-title">
-                <a href="{{ '/' | relative_url }}">
-                    <i class="fas fa-robot"></i>
-                    {{ site.title }}
-                </a>
-            </div>
-            
-            <nav class="main-nav">
-                <div class="nav-menu" id="navMenu">
-                    <a href="{{ '/search/' | relative_url }}" class="nav-link">
-                        <i class="fas fa-search"></i> Search
-                    </a>
-                    <a href="{{ '/categories/' | relative_url }}" class="nav-link">Categories</a>
-                    <a href="{{ '/skills/' | relative_url }}" class="nav-link">
-                        <span class="badge-new">New</span> Skills
-                    </a>
-                    <a href="{{ '/hooks/' | relative_url }}" class="nav-link">
-                        <span class="badge-new">New</span> Hooks
-                    </a>
-                    <a href="{{ site.github_url }}" class="nav-link" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-                
-                <div class="header-controls">
-                    <div class="theme-toggle">
-                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
-                            <i class="fas fa-moon dark-icon"></i>
-                            <i class="fas fa-sun light-icon"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="mobile-menu-toggle">
-                        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo / Site Name -->
+      <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.title }} home">
+        <svg class="logo-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.9"/>
+          <rect x="12" y="1" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.6"/>
+          <rect x="1" y="12" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.6"/>
+          <rect x="12" y="12" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.9"/>
+        </svg>
+        <span class="logo-text">Useful AI Prompts</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="{{ '/prompts/' | relative_url }}" class="nav-link">Browse Prompts</a>
+        <a href="{{ '/categories/' | relative_url }}" class="nav-link">Categories</a>
+        <a href="{{ '/skills/' | relative_url }}" class="nav-link">
+          Skills
+          <span class="nav-badge" aria-label="New">New</span>
+        </a>
+        <a href="{{ site.github_url }}" class="nav-link nav-link--github" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository (opens in new tab)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          GitHub
+        </a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-controls">
+
+        <!-- Search Icon Link -->
+        <a href="{{ '/search/' | relative_url }}" class="header-btn header-btn--search" aria-label="Search prompts">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </a>
+
+        <!-- Dark / Light Mode Toggle -->
+        <button class="header-btn header-btn--theme" id="themeToggle" aria-label="Toggle dark mode" type="button">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="theme-icon theme-icon--sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="theme-icon theme-icon--moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="header-btn header-btn--menu" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav" type="button">
+          <svg class="menu-icon menu-icon--open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg class="menu-icon menu-icon--close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
     </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="{{ '/prompts/' | relative_url }}" class="mobile-nav-link">Browse Prompts</a>
+      <a href="{{ '/categories/' | relative_url }}" class="mobile-nav-link">Categories</a>
+      <a href="{{ '/skills/' | relative_url }}" class="mobile-nav-link">Skills</a>
+      <a href="{{ '/search/' | relative_url }}" class="mobile-nav-link">Search</a>
+      <a href="{{ site.github_url }}" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </div>
 </header>
+
+<script>
+(function () {
+  // Theme toggle
+  var toggleBtn = document.getElementById('themeToggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var isDark = document.documentElement.classList.toggle('dark');
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+      try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+    });
+  }
+
+  // Mobile menu toggle
+  var menuBtn = document.getElementById('mobileMenuToggle');
+  var mobileNav = document.getElementById('mobileNav');
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener('click', function () {
+      var isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      mobileNav.hidden = isOpen;
+      document.body.classList.toggle('mobile-nav-open', !isOpen);
+    });
+
+    // Close on outside click
+    document.addEventListener('click', function (e) {
+      if (!menuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileNav.hidden = true;
+        document.body.classList.remove('mobile-nav-open');
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileNav.hidden = true;
+        document.body.classList.remove('mobile-nav-open');
+        menuBtn.focus();
+      }
+    });
+  }
+})();
+</script>
