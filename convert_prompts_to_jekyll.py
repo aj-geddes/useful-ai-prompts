@@ -199,6 +199,24 @@ def parse_prompt_file(filepath: Path) -> dict | None:
     }
 
 
+class _LiteralBlockDumper(yaml.Dumper):
+    """YAML Dumper that uses literal block scalars (|) for multi-line strings.
+    This ensures Ruby's Psych parser (used by Jekyll/GitHub Pages) can always
+    parse the prompt field correctly, regardless of content (quotes, XML tags, etc.).
+    """
+
+    pass
+
+
+def _literal_str_representer(dumper: yaml.Dumper, data: str) -> yaml.ScalarNode:
+    if "\n" in data:
+        return dumper.represent_scalar("tag:yaml.org,2002:str", data, style="|")
+    return dumper.represent_scalar("tag:yaml.org,2002:str", data)
+
+
+_LiteralBlockDumper.add_representer(str, _literal_str_representer)
+
+
 def build_jekyll_frontmatter(data: dict) -> str:
     """Build YAML frontmatter for Jekyll output."""
     fm = {
@@ -221,7 +239,7 @@ def build_jekyll_frontmatter(data: dict) -> str:
     if data.get("prompt"):
         fm["prompt"] = data["prompt"]
 
-    return yaml.dump(fm, default_flow_style=False, allow_unicode=True, sort_keys=False, width=float("inf"))
+    return yaml.dump(fm, Dumper=_LiteralBlockDumper, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 
 def build_jekyll_content(data: dict) -> str:
