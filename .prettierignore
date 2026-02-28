@@ -1,0 +1,14 @@
+# Jekyll-processed files with frontmatter that Prettier cannot parse
+docs/manifest.json
+docs/sw.js
+docs/browserconfig.xml
+
+# Generated files
+docs/_site/
+_site/
+node_modules/
+vendor/
+
+# Binary and lock files
+*.lock
+package-lock.json
