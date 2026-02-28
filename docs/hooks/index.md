@@ -81,6 +81,7 @@ description: "7 production-ready hooks for automated validation, testing, format
                         <pre><code>cp -r hooks/security-scan /path/to/project/.claude/hooks/
 
 cp -r hooks/test-runner /path/to/project/.claude/hooks/</code></pre>
+
 </div>
 </div>
 
@@ -101,6 +102,7 @@ cp -r hooks/test-runner /path/to/project/.claude/hooks/</code></pre>
 }]
 }
 }</code></pre>
+
 </div>
 </div>
 

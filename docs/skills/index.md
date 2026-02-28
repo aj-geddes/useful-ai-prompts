@@ -112,6 +112,7 @@ description: "259 specialized skills for Claude Code across 20 categories. Focus
             <pre><code>.claude/skills/your-skill-name/
 
 └── SKILL.md # YAML frontmatter + instructions</code></pre>
+
 </div>
 </div>
 

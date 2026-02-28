@@ -87,8 +87,8 @@ Project Duration: November 2024 – February 2026 | Final Budget: $845K
 
 The Field Technician Mobile Application project is hereby formally closed effective February 28, 2026. The project delivered a fully functional mobile application for field service technicians, successfully reducing paper-based work orders and job completion reporting time. While schedule and budget variances occurred, the core business outcomes were substantially achieved. All contractual deliverables have been accepted and the application has been transferred to IT Operations for ongoing support and enhancement.
 
-_Signed by Project Sponsor: ****\_\_**** Date: ****\_\_****_
-_Signed by Project Manager: ****\_\_**** Date: ****\_\_****_
+_Signed by Project Sponsor: \***\*\_\_\*\*** Date: \***\*\_\_\*\***_
+_Signed by Project Manager: \***\*\_\_\*\*** Date: \***\*\_\_\*\***_
 
 ---
 

@@ -178,11 +178,11 @@ The Executive Sponsor retains final decision authority on scope changes exceedin
 
 **Approval**
 
-| Role              | Name       | Signature  | Date   |
-| ----------------- | ---------- | ---------- | ------ |
-| Executive Sponsor | Sarah Chen | ****\_**** | **\_** |
-| IT Director       | ****\_**** | ****\_**** | **\_** |
-| Project Manager   | ****\_**** | ****\_**** | **\_** |
+| Role              | Name           | Signature      | Date   |
+| ----------------- | -------------- | -------------- | ------ |
+| Executive Sponsor | Sarah Chen     | \***\*\_\*\*** | **\_** |
+| IT Director       | \***\*\_\*\*** | \***\*\_\*\*** | **\_** |
+| Project Manager   | \***\*\_\*\*** | \***\*\_\*\*** | **\_** |
 
 ---
 

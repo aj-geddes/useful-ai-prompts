@@ -504,7 +504,7 @@ const code = "works too";
 
 ### Syntax Highlighting
 
-````markdown
+`````markdown
 Common languages:
 
 ````javascript
@@ -523,7 +523,9 @@ Common languages:
 ```graphql
 ```markdown
 ````
-````
+`````
+
+`````
 
 ### Badges
 
@@ -585,7 +587,7 @@ sequenceDiagram
     A->>B: Hello Bob!
     B->>A: Hello Alice!
 ```
-````
+`````
 
 ## Markdown Tools
 

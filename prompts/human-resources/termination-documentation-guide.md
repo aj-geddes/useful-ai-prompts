@@ -127,9 +127,9 @@ Failure to meet any of the success criteria above during the PIP period, or any 
 
 Employee signature indicates receipt and understanding of this plan, not necessarily agreement.
 
-Employee: ********\_******** Date: **\_\_\_**
-Manager: ********\_******** Date: **\_\_\_**
-HR Partner: ********\_******** Date: **\_\_\_**
+Employee: **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
+Manager: **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
+HR Partner: **\*\*\*\***\_**\*\*\*\*** Date: **\_\_\_**
 
 ---
 
