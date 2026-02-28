@@ -142,15 +142,6 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 /></noscript>
 
-<!-- Preload critical images -->
-{% if page.layout == 'default' or page.url == '/' %}
-<link
-  rel="preload"
-  as="image"
-  href="{{ '/assets/images/hero-bg.webp' | relative_url }}"
-/>
-{% endif %}
-
 <!-- Service Worker Registration for Caching -->
 <script>
   if ("serviceWorker" in navigator) {

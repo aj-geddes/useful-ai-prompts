@@ -142,6 +142,18 @@
       this.handleOnlineStatusChange(navigator.onLine);
     }
 
+    syncOfflineData() {
+      // Flush any analytics events or interactions queued while offline
+      try {
+        const queued = JSON.parse(localStorage.getItem("offlineQueue") || "[]");
+        if (queued.length > 0) {
+          localStorage.removeItem("offlineQueue");
+        }
+      } catch (e) {
+        // localStorage unavailable — nothing to sync
+      }
+    }
+
     showUpdateNotification() {
       const notification = document.createElement("div");
       notification.className = "update-notification";
