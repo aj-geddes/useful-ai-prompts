@@ -1,0 +1,37 @@
+{
+  "skill_name": "database-schema-documentation",
+  "skill_dir": "skills/database-schema-documentation",
+  "original_lines": 601,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "users.md",
+      "title": "users",
+      "line_count": 63
+    },
+    {
+      "filename": "products.md",
+      "title": "products",
+      "line_count": 68
+    },
+    {
+      "filename": "orders.md",
+      "title": "orders",
+      "line_count": 61
+    },
+    {
+      "filename": "orderitems.md",
+      "title": "order_items",
+      "line_count": 56
+    },
+    {
+      "filename": "enum-types.md",
+      "title": "Enum Types",
+      "line_count": 55
+    }
+  ],
+  "backup": "skills/database-schema-documentation/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

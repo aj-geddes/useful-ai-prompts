@@ -1,0 +1,32 @@
+{
+  "skill_name": "image-optimization",
+  "skill_dir": "skills/image-optimization",
+  "original_lines": 205,
+  "hub_lines": 88,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "image-compression-formats.md",
+      "title": "Image Compression & Formats",
+      "line_count": 54
+    },
+    {
+      "filename": "responsive-images.md",
+      "title": "Responsive Images",
+      "line_count": 30
+    },
+    {
+      "filename": "optimization-process.md",
+      "title": "Optimization Process",
+      "line_count": 55
+    },
+    {
+      "filename": "monitoring-best-practices.md",
+      "title": "Monitoring & Best Practices",
+      "line_count": 40
+    }
+  ],
+  "backup": "skills/image-optimization/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

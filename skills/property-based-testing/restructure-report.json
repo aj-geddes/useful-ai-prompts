@@ -1,0 +1,27 @@
+{
+  "skill_name": "property-based-testing",
+  "skill_dir": "skills/property-based-testing",
+  "original_lines": 545,
+  "hub_lines": 97,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "hypothesis-for-python.md",
+      "title": "Hypothesis for Python",
+      "line_count": 193
+    },
+    {
+      "filename": "fast-check-for-javascripttypescript.md",
+      "title": "fast-check for JavaScript/TypeScript",
+      "line_count": 157
+    },
+    {
+      "filename": "junit-quickcheck-for-java.md",
+      "title": "junit-quickcheck for Java",
+      "line_count": 117
+    }
+  ],
+  "backup": "skills/property-based-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

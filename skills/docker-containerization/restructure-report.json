@@ -1,0 +1,42 @@
+{
+  "skill_name": "docker-containerization",
+  "skill_dir": "skills/docker-containerization",
+  "original_lines": 324,
+  "hub_lines": 99,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "multi-stage-builds.md",
+      "title": "Multi-Stage Builds",
+      "line_count": 30
+    },
+    {
+      "filename": "optimization-techniques.md",
+      "title": "Optimization Techniques",
+      "line_count": 32
+    },
+    {
+      "filename": "security-best-practices.md",
+      "title": "Security Best Practices",
+      "line_count": 39
+    },
+    {
+      "filename": "docker-compose-for-multi-container.md",
+      "title": "Docker Compose for Multi-Container",
+      "line_count": 63
+    },
+    {
+      "filename": "dockerignore-file.md",
+      "title": ".dockerignore File",
+      "line_count": 23
+    },
+    {
+      "filename": "python.md",
+      "title": "Python",
+      "line_count": 51
+    }
+  ],
+  "backup": "skills/docker-containerization/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

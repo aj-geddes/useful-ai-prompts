@@ -1,0 +1,37 @@
+{
+  "skill_name": "api-changelog-versioning",
+  "skill_dir": "skills/api-changelog-versioning",
+  "original_lines": 591,
+  "hub_lines": 88,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "breaking-changes.md",
+      "title": "\ud83d\udea8 Breaking Changes",
+      "line_count": 93
+    },
+    {
+      "filename": "new-features.md",
+      "title": "\u2728 New Features",
+      "line_count": 139
+    },
+    {
+      "filename": "improvements.md",
+      "title": "\ud83d\udd27 Improvements",
+      "line_count": 77
+    },
+    {
+      "filename": "security.md",
+      "title": "\ud83d\udd12 Security",
+      "line_count": 54
+    },
+    {
+      "filename": "step-1-update-base-url.md",
+      "title": "Step 1: Update Base URL",
+      "line_count": 133
+    }
+  ],
+  "backup": "skills/api-changelog-versioning/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

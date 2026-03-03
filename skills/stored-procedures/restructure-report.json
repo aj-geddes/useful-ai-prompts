@@ -1,0 +1,42 @@
+{
+  "skill_name": "stored-procedures",
+  "skill_dir": "skills/stored-procedures",
+  "original_lines": 537,
+  "hub_lines": 86,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "simple-functions.md",
+      "title": "Simple Functions",
+      "line_count": 52
+    },
+    {
+      "filename": "stored-procedures.md",
+      "title": "Stored Procedures",
+      "line_count": 94
+    },
+    {
+      "filename": "simple-procedures.md",
+      "title": "Simple Procedures",
+      "line_count": 54
+    },
+    {
+      "filename": "complex-procedures-with-error-handling.md",
+      "title": "Complex Procedures with Error Handling",
+      "line_count": 58
+    },
+    {
+      "filename": "postgresql-triggers.md",
+      "title": "PostgreSQL Triggers",
+      "line_count": 87
+    },
+    {
+      "filename": "mysql-triggers.md",
+      "title": "MySQL Triggers",
+      "line_count": 45
+    }
+  ],
+  "backup": "skills/stored-procedures/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

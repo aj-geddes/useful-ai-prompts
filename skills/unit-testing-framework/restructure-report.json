@@ -1,0 +1,42 @@
+{
+  "skill_name": "unit-testing-framework",
+  "skill_dir": "skills/unit-testing-framework",
+  "original_lines": 528,
+  "hub_lines": 106,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "test-structure-aaa-pattern.md",
+      "title": "Test Structure (AAA Pattern)",
+      "line_count": 32
+    },
+    {
+      "filename": "test-cases-by-language.md",
+      "title": "Test Cases by Language",
+      "line_count": 161
+    },
+    {
+      "filename": "mocking-test-doubles.md",
+      "title": "Mocking & Test Doubles",
+      "line_count": 51
+    },
+    {
+      "filename": "testing-async-code.md",
+      "title": "Testing Async Code",
+      "line_count": 45
+    },
+    {
+      "filename": "testing-edge-cases.md",
+      "title": "Testing Edge Cases",
+      "line_count": 34
+    },
+    {
+      "filename": "example-complete-test-suite.md",
+      "title": "Example: Complete Test Suite",
+      "line_count": 105
+    }
+  ],
+  "backup": "skills/unit-testing-framework/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

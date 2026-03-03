@@ -1,0 +1,27 @@
+{
+  "skill_name": "database-sharding",
+  "skill_dir": "skills/database-sharding",
+  "original_lines": 370,
+  "hub_lines": 89,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "range-based-sharding.md",
+      "title": "Range-Based Sharding",
+      "line_count": 37
+    },
+    {
+      "filename": "hash-based-sharding.md",
+      "title": "Hash-Based Sharding",
+      "line_count": 77
+    },
+    {
+      "filename": "directory-based-sharding.md",
+      "title": "Directory-Based Sharding",
+      "line_count": 38
+    }
+  ],
+  "backup": "skills/database-sharding/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

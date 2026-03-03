@@ -1,0 +1,32 @@
+{
+  "skill_name": "load-balancer-setup",
+  "skill_dir": "skills/load-balancer-setup",
+  "original_lines": 418,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "haproxy-configuration.md",
+      "title": "HAProxy Configuration",
+      "line_count": 131
+    },
+    {
+      "filename": "aws-application-load-balancer-cloudformation.md",
+      "title": "AWS Application Load Balancer (CloudFormation)",
+      "line_count": 159
+    },
+    {
+      "filename": "load-balancer-health-check-script.md",
+      "title": "Load Balancer Health Check Script",
+      "line_count": 51
+    },
+    {
+      "filename": "load-balancer-monitoring.md",
+      "title": "Load Balancer Monitoring",
+      "line_count": 23
+    }
+  ],
+  "backup": "skills/load-balancer-setup/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

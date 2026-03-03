@@ -1,0 +1,32 @@
+{
+  "skill_name": "push-notification-setup",
+  "skill_dir": "skills/push-notification-setup",
+  "original_lines": 362,
+  "hub_lines": 103,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "firebase-cloud-messaging-setup.md",
+      "title": "Firebase Cloud Messaging Setup",
+      "line_count": 79
+    },
+    {
+      "filename": "ios-native-setup-with-swift.md",
+      "title": "iOS Native Setup with Swift",
+      "line_count": 101
+    },
+    {
+      "filename": "android-setup-with-kotlin.md",
+      "title": "Android Setup with Kotlin",
+      "line_count": 94
+    },
+    {
+      "filename": "flutter-implementation.md",
+      "title": "Flutter Implementation",
+      "line_count": 46
+    }
+  ],
+  "backup": "skills/push-notification-setup/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

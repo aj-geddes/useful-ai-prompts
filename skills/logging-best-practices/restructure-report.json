@@ -1,0 +1,52 @@
+{
+  "skill_name": "logging-best-practices",
+  "skill_dir": "skills/logging-best-practices",
+  "original_lines": 831,
+  "hub_lines": 114,
+  "reference_count": 8,
+  "references": [
+    {
+      "filename": "log-levels.md",
+      "title": "Log Levels",
+      "line_count": 84
+    },
+    {
+      "filename": "structured-logging-json.md",
+      "title": "Structured Logging (JSON)",
+      "line_count": 143
+    },
+    {
+      "filename": "contextual-logging.md",
+      "title": "Contextual Logging",
+      "line_count": 110
+    },
+    {
+      "filename": "pii-and-sensitive-data-handling.md",
+      "title": "PII and Sensitive Data Handling",
+      "line_count": 92
+    },
+    {
+      "filename": "performance-logging.md",
+      "title": "Performance Logging",
+      "line_count": 68
+    },
+    {
+      "filename": "centralized-logging.md",
+      "title": "Centralized Logging",
+      "line_count": 107
+    },
+    {
+      "filename": "distributed-tracing.md",
+      "title": "Distributed Tracing",
+      "line_count": 65
+    },
+    {
+      "filename": "log-sampling-high-volume-services.md",
+      "title": "Log Sampling (High-Volume Services)",
+      "line_count": 50
+    }
+  ],
+  "backup": "skills/logging-best-practices/SKILL.md.original",
+  "domain": "monitoring",
+  "status": "restructured"
+}

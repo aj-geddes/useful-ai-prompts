@@ -1,0 +1,32 @@
+{
+  "skill_name": "webhook-integration",
+  "skill_dir": "skills/webhook-integration",
+  "original_lines": 687,
+  "hub_lines": 106,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "webhook-sender-typescript.md",
+      "title": "Webhook Sender (TypeScript)",
+      "line_count": 171
+    },
+    {
+      "filename": "webhook-receiver-express.md",
+      "title": "Webhook Receiver (Express)",
+      "line_count": 175
+    },
+    {
+      "filename": "webhook-queue-with-bull.md",
+      "title": "Webhook Queue with Bull",
+      "line_count": 149
+    },
+    {
+      "filename": "webhook-testing-utilities.md",
+      "title": "Webhook Testing Utilities",
+      "line_count": 114
+    }
+  ],
+  "backup": "skills/webhook-integration/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

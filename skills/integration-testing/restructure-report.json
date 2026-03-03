@@ -1,0 +1,32 @@
+{
+  "skill_name": "integration-testing",
+  "skill_dir": "skills/integration-testing",
+  "original_lines": 487,
+  "hub_lines": 101,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "api-integration-testing.md",
+      "title": "API Integration Testing",
+      "line_count": 154
+    },
+    {
+      "filename": "database-integration-testing.md",
+      "title": "Database Integration Testing",
+      "line_count": 83
+    },
+    {
+      "filename": "external-service-integration.md",
+      "title": "External Service Integration",
+      "line_count": 57
+    },
+    {
+      "filename": "message-queue-integration.md",
+      "title": "Message Queue Integration",
+      "line_count": 65
+    }
+  ],
+  "backup": "skills/integration-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

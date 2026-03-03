@@ -1,0 +1,27 @@
+{
+  "skill_name": "security-audit-logging",
+  "skill_dir": "skills/security-audit-logging",
+  "original_lines": 586,
+  "hub_lines": 97,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "nodejs-audit-logger.md",
+      "title": "Node.js Audit Logger",
+      "line_count": 237
+    },
+    {
+      "filename": "python-audit-logging-system.md",
+      "title": "Python Audit Logging System",
+      "line_count": 166
+    },
+    {
+      "filename": "java-audit-logging.md",
+      "title": "Java Audit Logging",
+      "line_count": 122
+    }
+  ],
+  "backup": "skills/security-audit-logging/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

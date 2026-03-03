@@ -1,0 +1,37 @@
+{
+  "skill_name": "gitlab-cicd-pipeline",
+  "skill_dir": "skills/gitlab-cicd-pipeline",
+  "original_lines": 373,
+  "hub_lines": 103,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "complete-pipeline-configuration.md",
+      "title": "Complete Pipeline Configuration",
+      "line_count": 122
+    },
+    {
+      "filename": "gitlab-runner-configuration.md",
+      "title": "GitLab Runner Configuration",
+      "line_count": 26
+    },
+    {
+      "filename": "docker-layer-caching-optimization.md",
+      "title": "Docker Layer Caching Optimization",
+      "line_count": 39
+    },
+    {
+      "filename": "multi-project-pipeline.md",
+      "title": "Multi-Project Pipeline",
+      "line_count": 53
+    },
+    {
+      "filename": "kubernetes-deployment.md",
+      "title": "Kubernetes Deployment",
+      "line_count": 72
+    }
+  ],
+  "backup": "skills/gitlab-cicd-pipeline/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

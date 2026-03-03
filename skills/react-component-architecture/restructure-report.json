@@ -1,0 +1,37 @@
+{
+  "skill_name": "react-component-architecture",
+  "skill_dir": "skills/react-component-architecture",
+  "original_lines": 238,
+  "hub_lines": 90,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "functional-component-with-hooks.md",
+      "title": "Functional Component with Hooks",
+      "line_count": 47
+    },
+    {
+      "filename": "custom-hooks-pattern.md",
+      "title": "Custom Hooks Pattern",
+      "line_count": 59
+    },
+    {
+      "filename": "composition-pattern.md",
+      "title": "Composition Pattern",
+      "line_count": 41
+    },
+    {
+      "filename": "higher-order-component-hoc.md",
+      "title": "Higher-Order Component (HOC)",
+      "line_count": 29
+    },
+    {
+      "filename": "render-props-pattern.md",
+      "title": "Render Props Pattern",
+      "line_count": 35
+    }
+  ],
+  "backup": "skills/react-component-architecture/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

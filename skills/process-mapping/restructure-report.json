@@ -1,0 +1,32 @@
+{
+  "skill_name": "process-mapping",
+  "skill_dir": "skills/process-mapping",
+  "original_lines": 393,
+  "hub_lines": 105,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "process-documentation.md",
+      "title": "Process Documentation",
+      "line_count": 79
+    },
+    {
+      "filename": "current-state-analysis.md",
+      "title": "Current State Analysis",
+      "line_count": 76
+    },
+    {
+      "filename": "future-state-design.md",
+      "title": "Future State Design",
+      "line_count": 87
+    },
+    {
+      "filename": "process-improvement-metrics.md",
+      "title": "Process Improvement Metrics",
+      "line_count": 52
+    }
+  ],
+  "backup": "skills/process-mapping/SKILL.md.original",
+  "domain": "process",
+  "status": "restructured"
+}

@@ -1,0 +1,62 @@
+{
+  "skill_name": "dependency-management",
+  "skill_dir": "skills/dependency-management",
+  "original_lines": 542,
+  "hub_lines": 108,
+  "reference_count": 10,
+  "references": [
+    {
+      "filename": "package-manager-basics.md",
+      "title": "Package Manager Basics",
+      "line_count": 67
+    },
+    {
+      "filename": "semantic-versioning-semver.md",
+      "title": "Semantic Versioning (SemVer)",
+      "line_count": 27
+    },
+    {
+      "filename": "dependency-lock-files.md",
+      "title": "Dependency Lock Files",
+      "line_count": 49
+    },
+    {
+      "filename": "resolving-dependency-conflicts.md",
+      "title": "Resolving Dependency Conflicts",
+      "line_count": 47
+    },
+    {
+      "filename": "security-vulnerability-management.md",
+      "title": "Security Vulnerability Management",
+      "line_count": 55
+    },
+    {
+      "filename": "monorepo-dependency-management.md",
+      "title": "Monorepo Dependency Management",
+      "line_count": 46
+    },
+    {
+      "filename": "peer-dependencies.md",
+      "title": "Peer Dependencies",
+      "line_count": 27
+    },
+    {
+      "filename": "performance-optimization.md",
+      "title": "Performance Optimization",
+      "line_count": 37
+    },
+    {
+      "filename": "cicd-best-practices.md",
+      "title": "CI/CD Best Practices",
+      "line_count": 33
+    },
+    {
+      "filename": "dependency-update-strategies.md",
+      "title": "Dependency Update Strategies",
+      "line_count": 43
+    }
+  ],
+  "backup": "skills/dependency-management/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

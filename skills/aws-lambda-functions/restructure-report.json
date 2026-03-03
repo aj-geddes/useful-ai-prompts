@@ -1,0 +1,37 @@
+{
+  "skill_name": "aws-lambda-functions",
+  "skill_dir": "skills/aws-lambda-functions",
+  "original_lines": 363,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "basic-lambda-function-with-aws-cli.md",
+      "title": "Basic Lambda Function with AWS CLI",
+      "line_count": 41
+    },
+    {
+      "filename": "lambda-function-with-nodejs.md",
+      "title": "Lambda Function with Node.js",
+      "line_count": 52
+    },
+    {
+      "filename": "terraform-lambda-deployment.md",
+      "title": "Terraform Lambda Deployment",
+      "line_count": 100
+    },
+    {
+      "filename": "lambda-with-sam-serverless-application-model.md",
+      "title": "Lambda with SAM (Serverless Application Model)",
+      "line_count": 97
+    },
+    {
+      "filename": "lambda-layers-for-code-sharing.md",
+      "title": "Lambda Layers for Code Sharing",
+      "line_count": 23
+    }
+  ],
+  "backup": "skills/aws-lambda-functions/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "mocking-stubbing",
+  "skill_dir": "skills/mocking-stubbing",
+  "original_lines": 603,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "jest-mocking-javascripttypescript.md",
+      "title": "Jest Mocking (JavaScript/TypeScript)",
+      "line_count": 198
+    },
+    {
+      "filename": "python-mocking-with-unittestmock.md",
+      "title": "Python Mocking with unittest.mock",
+      "line_count": 148
+    },
+    {
+      "filename": "mockito-for-java.md",
+      "title": "Mockito for Java",
+      "line_count": 146
+    },
+    {
+      "filename": "advanced-mocking-patterns.md",
+      "title": "Advanced Mocking Patterns",
+      "line_count": 53
+    }
+  ],
+  "backup": "skills/mocking-stubbing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

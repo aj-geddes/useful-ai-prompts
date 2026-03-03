@@ -1,0 +1,32 @@
+{
+  "skill_name": "user-persona-creation",
+  "skill_dir": "skills/user-persona-creation",
+  "original_lines": 439,
+  "hub_lines": 104,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "research-data-collection.md",
+      "title": "Research & Data Collection",
+      "line_count": 75
+    },
+    {
+      "filename": "persona-template.md",
+      "title": "Persona Template",
+      "line_count": 9
+    },
+    {
+      "filename": "multiple-personas.md",
+      "title": "Multiple Personas",
+      "line_count": 76
+    },
+    {
+      "filename": "using-personas.md",
+      "title": "Using Personas",
+      "line_count": 9
+    }
+  ],
+  "backup": "skills/user-persona-creation/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

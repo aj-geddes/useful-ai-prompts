@@ -1,9 +1,19 @@
 ---
 name: image-optimization
-description: Optimize images for web to reduce file size without sacrificing quality. Use compression, modern formats, and responsive techniques for faster loading.
+description: >
+  Optimize images for web to reduce file size without sacrificing quality. Use
+  compression, modern formats, and responsive techniques for faster loading.
 ---
 
 # Image Optimization
+
+## Table of Contents
+
+- [Overview](#overview)
+- [When to Use](#when-to-use)
+- [Quick Start](#quick-start)
+- [Reference Guides](#reference-guides)
+- [Best Practices](#best-practices)
 
 ## Overview
 
@@ -17,9 +27,9 @@ Images typically comprise 50% of page weight. Optimization dramatically improves
 - Mobile experience enhancement
 - Before deployment
 
-## Instructions
+## Quick Start
 
-### 1. **Image Compression & Formats**
+Minimal working example:
 
 ```yaml
 Format Selection:
@@ -47,158 +57,31 @@ WebP:
 
 SVG:
   Best for: Icons, logos, simple graphics
-  Compression: Minify XML
-  Scalable: Works at any size
-  Tools: SVGO
-  Command: svgo image.svg --output optimized.svg
-
----
-Compression Levels:
-
-Conservative (95% quality):
-  JPEG: 85-90 quality
-  PNG: Lossless
-  Use: High-value images
-
-Moderate (90% quality):
-  JPEG: 75-80 quality
-  PNG: Quantized to 256 colors
-  Use: General images
-
-Aggressive (80% quality):
-  JPEG: 60-70 quality
-  PNG: Reduced colors
-  Use: Thumbnails, backgrounds
+// ... (see reference guides for full implementation)
 ```
 
-### 2. **Responsive Images**
+## Reference Guides
 
-```html
-<!-- Responsive image techniques -->
+Detailed implementations in the `references/` directory:
 
-<!-- srcset: Let browser choose -->
-<img
-  src="image.jpg"
-  srcset="small.jpg 480w, medium.jpg 768w, large.jpg 1200w"
-  sizes="
-    (max-width: 480px) 100vw,
-    (max-width: 768px) 90vw,
-    80vw
-  "
-  alt="Description"
-/>
+| Guide | Contents |
+|---|---|
+| [Image Compression & Formats](references/image-compression-formats.md) | Image Compression & Formats |
+| [Responsive Images](references/responsive-images.md) | Responsive Images |
+| [Optimization Process](references/optimization-process.md) | Optimization Process |
+| [Monitoring & Best Practices](references/monitoring-best-practices.md) | Monitoring & Best Practices |
 
-<!-- picture: Format selection -->
-<picture>
-  <source srcset="image.webp" type="image/webp" />
-  <source srcset="image.jpg" type="image/jpeg" />
-  <img src="image.jpg" alt="Description" />
-</picture>
+## Best Practices
 
-<!-- Lazy loading -->
-<img src="placeholder.jpg" loading="lazy" alt="Description" />
-```
+### ✅ DO
 
-### 3. **Optimization Process**
+- Follow established patterns and conventions
+- Write clean, maintainable code
+- Add appropriate documentation
+- Test thoroughly before deploying
 
-```yaml
-Workflow:
+### ❌ DON'T
 
-1. Preparation
-  - Export at correct size (don't scale in HTML)
-  - Use appropriate format
-  - Batch process similar images
-
-2. Compression
-  - Lossy: TinyJPEG/TinyPNG
-  - Lossless: ImageMagick
-  - Target: <100KB for main images
-  - Thumbnails: <20KB
-
-3. Format Conversion
-  - WebP with JPEG fallback
-  - Consider PNG for transparency
-  - SVG for scalable graphics
-
-4. Implementation
-  - Use srcset for responsive
-  - Lazy load below-fold
-  - Optimize critical images first
-  - Monitor file sizes in CI/CD
-
-5. Validation
-  - Check file sizes in DevTools
-  - Test on slow networks
-  - Verify quality acceptable
-  - Measure performance impact
-
----
-
-Quick Wins:
-
-Remove EXIF data (saves 20-50KB):
-  identify -verbose image.jpg | grep -i exif
-  convert image.jpg -strip image-clean.jpg
-
-Convert to WebP (25-35% smaller):
-  cwebp -q 75 *.jpg
-
-Batch compress with ImageMagick:
-  mogrify -quality 75 -resize 1920x1080 *.jpg
-
-Expected Results:
-  - Homepage: 850KB → 300KB images
-  - Performance: 3s → 1.5s load time
-  - Mobile: Significant improvement on 3G
-```
-
-### 4. **Monitoring & Best Practices**
-
-```yaml
-Performance Targets:
-
-Hero Image: <200KB
-Thumbnail: <30KB
-Icon: <5KB
-Total images: <500KB
-Target gzipped: <300KB
-
-Tools:
-  - ImageOptim (Mac)
-  - ImageMagick (CLI)
-  - TinyJPEG/TinyPNG (web)
-  - Squoosh (web)
-  - Lighthouse (audit)
-
-Checklist:
-  [ ] All images optimized
-  [ ] WebP with fallback
-  [ ] Responsive srcset
-  [ ] Lazy loading implemented
-  [ ] Correct format per image
-  [ ] File size <100KB each
-  [ ] Benchmarks established
-  [ ] Monitoring in place
-  [ ] Documented process
-
-Tips:
-  - Optimize before uploading
-  - Use CDN with image optimization
-  - Consider Image CDN (Imgix, Cloudinary)
-  - Batch process during build
-  - Monitor image additions
-  - Test real devices on 3G
-```
-
-## Key Points
-
-- JPEG for photos, PNG for graphics, SVG for icons
-- WebP saves 25-35% vs JPEG/PNG
-- Responsive images adapt to device
-- Lazy loading defers off-screen images
-- Remove EXIF and metadata
-- Batch optimize before deployment
-- Monitor image file sizes
-- Measure performance impact
-- Set strict targets per image type
-- Use image CDN for global optimization
+- Skip testing or validation
+- Ignore error handling
+- Hard-code configuration values

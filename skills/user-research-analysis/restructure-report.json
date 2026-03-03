@@ -1,0 +1,32 @@
+{
+  "skill_name": "user-research-analysis",
+  "skill_dir": "skills/user-research-analysis",
+  "original_lines": 244,
+  "hub_lines": 103,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "research-synthesis-methods.md",
+      "title": "Research Synthesis Methods",
+      "line_count": 52
+    },
+    {
+      "filename": "affinity-mapping.md",
+      "title": "Affinity Mapping",
+      "line_count": 47
+    },
+    {
+      "filename": "insight-documentation.md",
+      "title": "Insight Documentation",
+      "line_count": 67
+    },
+    {
+      "filename": "research-validation-matrix.md",
+      "title": "Research Validation Matrix",
+      "line_count": 28
+    }
+  ],
+  "backup": "skills/user-research-analysis/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

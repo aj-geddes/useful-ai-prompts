@@ -1,0 +1,32 @@
+{
+  "skill_name": "bundle-size-optimization",
+  "skill_dir": "skills/bundle-size-optimization",
+  "original_lines": 215,
+  "hub_lines": 89,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "bundle-analysis.md",
+      "title": "Bundle Analysis",
+      "line_count": 67
+    },
+    {
+      "filename": "optimization-techniques.md",
+      "title": "Optimization Techniques",
+      "line_count": 52
+    },
+    {
+      "filename": "implementation-strategy.md",
+      "title": "Implementation Strategy",
+      "line_count": 48
+    },
+    {
+      "filename": "best-practices.md",
+      "title": "Best Practices",
+      "line_count": 14
+    }
+  ],
+  "backup": "skills/bundle-size-optimization/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

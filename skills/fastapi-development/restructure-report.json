@@ -1,0 +1,42 @@
+{
+  "skill_name": "fastapi-development",
+  "skill_dir": "skills/fastapi-development",
+  "original_lines": 486,
+  "hub_lines": 105,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "fastapi-application-setup.md",
+      "title": "FastAPI Application Setup",
+      "line_count": 63
+    },
+    {
+      "filename": "pydantic-models-for-validation.md",
+      "title": "Pydantic Models for Validation",
+      "line_count": 77
+    },
+    {
+      "filename": "async-database-models-and-queries.md",
+      "title": "Async Database Models and Queries",
+      "line_count": 59
+    },
+    {
+      "filename": "security-and-jwt-authentication.md",
+      "title": "Security and JWT Authentication",
+      "line_count": 51
+    },
+    {
+      "filename": "service-layer-for-business-logic.md",
+      "title": "Service Layer for Business Logic",
+      "line_count": 90
+    },
+    {
+      "filename": "api-routes-with-async-endpoints.md",
+      "title": "API Routes with Async Endpoints",
+      "line_count": 80
+    }
+  ],
+  "backup": "skills/fastapi-development/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

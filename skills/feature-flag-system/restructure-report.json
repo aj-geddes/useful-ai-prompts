@@ -1,0 +1,37 @@
+{
+  "skill_name": "feature-flag-system",
+  "skill_dir": "skills/feature-flag-system",
+  "original_lines": 729,
+  "hub_lines": 103,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "feature-flag-service-typescript.md",
+      "title": "Feature Flag Service (TypeScript)",
+      "line_count": 292
+    },
+    {
+      "filename": "react-hook-for-feature-flags.md",
+      "title": "React Hook for Feature Flags",
+      "line_count": 93
+    },
+    {
+      "filename": "feature-flag-with-analytics.md",
+      "title": "Feature Flag with Analytics",
+      "line_count": 79
+    },
+    {
+      "filename": "launchdarkly-style-sdk.md",
+      "title": "LaunchDarkly-Style SDK",
+      "line_count": 145
+    },
+    {
+      "filename": "admin-ui-for-feature-flags.md",
+      "title": "Admin UI for Feature Flags",
+      "line_count": 74
+    }
+  ],
+  "backup": "skills/feature-flag-system/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

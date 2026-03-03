@@ -1,0 +1,42 @@
+{
+  "skill_name": "error-tracking",
+  "skill_dir": "skills/error-tracking",
+  "original_lines": 313,
+  "hub_lines": 76,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "sentry-setup.md",
+      "title": "Sentry Setup",
+      "line_count": 37
+    },
+    {
+      "filename": "express-middleware-integration.md",
+      "title": "Express Middleware Integration",
+      "line_count": 56
+    },
+    {
+      "filename": "python-sentry-integration.md",
+      "title": "Python Sentry Integration",
+      "line_count": 53
+    },
+    {
+      "filename": "source-maps-and-release-management.md",
+      "title": "Source Maps and Release Management",
+      "line_count": 42
+    },
+    {
+      "filename": "custom-error-context.md",
+      "title": "Custom Error Context",
+      "line_count": 53
+    },
+    {
+      "filename": "performance-monitoring.md",
+      "title": "Performance Monitoring",
+      "line_count": 32
+    }
+  ],
+  "backup": "skills/error-tracking/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

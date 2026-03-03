@@ -1,0 +1,32 @@
+{
+  "skill_name": "ansible-automation",
+  "skill_dir": "skills/ansible-automation",
+  "original_lines": 370,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "playbook-structure-and-best-practices.md",
+      "title": "Playbook Structure and Best Practices",
+      "line_count": 173
+    },
+    {
+      "filename": "inventory-and-variables.md",
+      "title": "Inventory and Variables",
+      "line_count": 33
+    },
+    {
+      "filename": "ansible-deployment-script.md",
+      "title": "Ansible Deployment Script",
+      "line_count": 62
+    },
+    {
+      "filename": "configuration-template.md",
+      "title": "Configuration Template",
+      "line_count": 34
+    }
+  ],
+  "backup": "skills/ansible-automation/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

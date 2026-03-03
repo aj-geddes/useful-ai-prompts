@@ -1,0 +1,37 @@
+{
+  "skill_name": "api-gateway-configuration",
+  "skill_dir": "skills/api-gateway-configuration",
+  "original_lines": 472,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "kong-configuration.md",
+      "title": "Kong Configuration",
+      "line_count": 81
+    },
+    {
+      "filename": "nginx-configuration.md",
+      "title": "Nginx Configuration",
+      "line_count": 105
+    },
+    {
+      "filename": "aws-api-gateway-configuration.md",
+      "title": "AWS API Gateway Configuration",
+      "line_count": 81
+    },
+    {
+      "filename": "traefik-configuration.md",
+      "title": "Traefik Configuration",
+      "line_count": 72
+    },
+    {
+      "filename": "nodejs-gateway-implementation.md",
+      "title": "Node.js Gateway Implementation",
+      "line_count": 66
+    }
+  ],
+  "backup": "skills/api-gateway-configuration/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

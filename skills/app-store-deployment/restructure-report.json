@@ -1,0 +1,37 @@
+{
+  "skill_name": "app-store-deployment",
+  "skill_dir": "skills/app-store-deployment",
+  "original_lines": 342,
+  "hub_lines": 106,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "ios-deployment-setup.md",
+      "title": "iOS Deployment Setup",
+      "line_count": 68
+    },
+    {
+      "filename": "android-deployment-setup.md",
+      "title": "Android Deployment Setup",
+      "line_count": 60
+    },
+    {
+      "filename": "version-management.md",
+      "title": "Version Management",
+      "line_count": 34
+    },
+    {
+      "filename": "automated-cicd-with-github-actions.md",
+      "title": "Automated CI/CD with GitHub Actions",
+      "line_count": 101
+    },
+    {
+      "filename": "pre-deployment-checklist.md",
+      "title": "Pre-Deployment Checklist",
+      "line_count": 36
+    }
+  ],
+  "backup": "skills/app-store-deployment/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

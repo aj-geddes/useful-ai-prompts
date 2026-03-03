@@ -1,0 +1,42 @@
+{
+  "skill_name": "user-guide-creation",
+  "skill_dir": "skills/user-guide-creation",
+  "original_lines": 504,
+  "hub_lines": 107,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "system-requirements.md",
+      "title": "System Requirements",
+      "line_count": 13
+    },
+    {
+      "filename": "installation.md",
+      "title": "Installation",
+      "line_count": 52
+    },
+    {
+      "filename": "initial-setup.md",
+      "title": "Initial Setup",
+      "line_count": 35
+    },
+    {
+      "filename": "task-1-creating-your-first-project.md",
+      "title": "Task 1: Creating Your First Project",
+      "line_count": 42
+    },
+    {
+      "filename": "task-2-importing-existing-data.md",
+      "title": "Task 2: Importing Existing Data",
+      "line_count": 48
+    },
+    {
+      "filename": "task-3-exporting-data.md",
+      "title": "Task 3: Exporting Data",
+      "line_count": 28
+    }
+  ],
+  "backup": "skills/user-guide-creation/SKILL.md.original",
+  "domain": "documentation",
+  "status": "restructured"
+}

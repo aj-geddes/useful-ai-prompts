@@ -1,0 +1,37 @@
+{
+  "skill_name": "responsive-web-design",
+  "skill_dir": "skills/responsive-web-design",
+  "original_lines": 385,
+  "hub_lines": 90,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "mobile-first-media-query-strategy.md",
+      "title": "Mobile-First Media Query Strategy",
+      "line_count": 72
+    },
+    {
+      "filename": "flexbox-responsive-navigation.md",
+      "title": "Flexbox Responsive Navigation",
+      "line_count": 80
+    },
+    {
+      "filename": "css-grid-responsive-layout.md",
+      "title": "CSS Grid Responsive Layout",
+      "line_count": 71
+    },
+    {
+      "filename": "responsive-typography.md",
+      "title": "Responsive Typography",
+      "line_count": 47
+    },
+    {
+      "filename": "responsive-cards-component.md",
+      "title": "Responsive Cards Component",
+      "line_count": 85
+    }
+  ],
+  "backup": "skills/responsive-web-design/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

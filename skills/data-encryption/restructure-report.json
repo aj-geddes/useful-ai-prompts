@@ -1,0 +1,32 @@
+{
+  "skill_name": "data-encryption",
+  "skill_dir": "skills/data-encryption",
+  "original_lines": 629,
+  "hub_lines": 99,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "nodejs-encryption-library.md",
+      "title": "Node.js Encryption Library",
+      "line_count": 268
+    },
+    {
+      "filename": "python-cryptography-implementation.md",
+      "title": "Python Cryptography Implementation",
+      "line_count": 195
+    },
+    {
+      "filename": "database-encryption-postgresql.md",
+      "title": "Database Encryption (PostgreSQL)",
+      "line_count": 59
+    },
+    {
+      "filename": "tlsssl-configuration.md",
+      "title": "TLS/SSL Configuration",
+      "line_count": 53
+    }
+  ],
+  "backup": "skills/data-encryption/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

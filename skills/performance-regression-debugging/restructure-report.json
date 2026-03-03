@@ -1,0 +1,32 @@
+{
+  "skill_name": "performance-regression-debugging",
+  "skill_dir": "skills/performance-regression-debugging",
+  "original_lines": 229,
+  "hub_lines": 89,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "detection-measurement.md",
+      "title": "Detection & Measurement",
+      "line_count": 46
+    },
+    {
+      "filename": "root-cause-identification.md",
+      "title": "Root Cause Identification",
+      "line_count": 73
+    },
+    {
+      "filename": "fixing-verification.md",
+      "title": "Fixing & Verification",
+      "line_count": 35
+    },
+    {
+      "filename": "prevention-measures.md",
+      "title": "Prevention Measures",
+      "line_count": 49
+    }
+  ],
+  "backup": "skills/performance-regression-debugging/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

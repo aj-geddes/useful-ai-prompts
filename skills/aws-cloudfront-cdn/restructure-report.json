@@ -1,0 +1,27 @@
+{
+  "skill_name": "aws-cloudfront-cdn",
+  "skill_dir": "skills/aws-cloudfront-cdn",
+  "original_lines": 449,
+  "hub_lines": 98,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "cloudfront-distribution-with-aws-cli.md",
+      "title": "CloudFront Distribution with AWS CLI",
+      "line_count": 77
+    },
+    {
+      "filename": "terraform-cloudfront-configuration.md",
+      "title": "Terraform CloudFront Configuration",
+      "line_count": 283
+    },
+    {
+      "filename": "custom-headers-and-security-configuration.md",
+      "title": "Custom Headers and Security Configuration",
+      "line_count": 35
+    }
+  ],
+  "backup": "skills/aws-cloudfront-cdn/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

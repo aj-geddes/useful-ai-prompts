@@ -1,0 +1,32 @@
+{
+  "skill_name": "react-native-app",
+  "skill_dir": "skills/react-native-app",
+  "original_lines": 272,
+  "hub_lines": 102,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "project-setup-navigation.md",
+      "title": "Project Setup & Navigation",
+      "line_count": 58
+    },
+    {
+      "filename": "state-management-with-redux.md",
+      "title": "State Management with Redux",
+      "line_count": 55
+    },
+    {
+      "filename": "api-integration-with-axios.md",
+      "title": "API Integration with Axios",
+      "line_count": 55
+    },
+    {
+      "filename": "functional-component-with-hooks.md",
+      "title": "Functional Component with Hooks",
+      "line_count": 63
+    }
+  ],
+  "backup": "skills/react-native-app/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

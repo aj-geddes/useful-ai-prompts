@@ -1,0 +1,32 @@
+{
+  "skill_name": "multi-cloud-strategy",
+  "skill_dir": "skills/multi-cloud-strategy",
+  "original_lines": 609,
+  "hub_lines": 98,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "multi-cloud-abstraction-layer.md",
+      "title": "Multi-Cloud Abstraction Layer",
+      "line_count": 136
+    },
+    {
+      "filename": "multi-cloud-kubernetes-deployment.md",
+      "title": "Multi-Cloud Kubernetes Deployment",
+      "line_count": 91
+    },
+    {
+      "filename": "terraform-multi-cloud-configuration.md",
+      "title": "Terraform Multi-Cloud Configuration",
+      "line_count": 184
+    },
+    {
+      "filename": "data-synchronization-across-clouds.md",
+      "title": "Data Synchronization across Clouds",
+      "line_count": 144
+    }
+  ],
+  "backup": "skills/multi-cloud-strategy/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

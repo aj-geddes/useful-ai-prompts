@@ -1,0 +1,27 @@
+{
+  "skill_name": "artifact-management",
+  "skill_dir": "skills/artifact-management",
+  "original_lines": 244,
+  "hub_lines": 103,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "docker-registry-configuration.md",
+      "title": "Docker Registry Configuration",
+      "line_count": 35
+    },
+    {
+      "filename": "github-container-registry-ghcr-push.md",
+      "title": "GitHub Container Registry (GHCR) Push",
+      "line_count": 60
+    },
+    {
+      "filename": "npm-package-publishing.md",
+      "title": "npm Package Publishing",
+      "line_count": 87
+    }
+  ],
+  "backup": "skills/artifact-management/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

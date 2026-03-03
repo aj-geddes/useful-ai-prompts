@@ -1,0 +1,32 @@
+{
+  "skill_name": "database-query-optimization",
+  "skill_dir": "skills/database-query-optimization",
+  "original_lines": 218,
+  "hub_lines": 82,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "query-analysis.md",
+      "title": "Query Analysis",
+      "line_count": 27
+    },
+    {
+      "filename": "indexing-strategy.md",
+      "title": "Indexing Strategy",
+      "line_count": 52
+    },
+    {
+      "filename": "query-optimization-techniques.md",
+      "title": "Query Optimization Techniques",
+      "line_count": 52
+    },
+    {
+      "filename": "optimization-checklist.md",
+      "title": "Optimization Checklist",
+      "line_count": 61
+    }
+  ],
+  "backup": "skills/database-query-optimization/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

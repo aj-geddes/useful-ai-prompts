@@ -1,0 +1,27 @@
+{
+  "skill_name": "oauth-implementation",
+  "skill_dir": "skills/oauth-implementation",
+  "original_lines": 584,
+  "hub_lines": 96,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "nodejs-oauth-20-server.md",
+      "title": "Node.js OAuth 2.0 Server",
+      "line_count": 303
+    },
+    {
+      "filename": "python-openid-connect-implementation.md",
+      "title": "Python OpenID Connect Implementation",
+      "line_count": 168
+    },
+    {
+      "filename": "java-spring-security-oauth.md",
+      "title": "Java Spring Security OAuth",
+      "line_count": 61
+    }
+  ],
+  "backup": "skills/oauth-implementation/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

@@ -1,0 +1,23 @@
+# Monitoring Dashboard Configuration
+# TODO: Customize for your monitoring platform (Grafana, Datadog, etc.)
+
+dashboard:
+  title: "Service Dashboard"
+  refresh: 30s
+
+panels:
+  - title: "Request Rate"
+    type: graph
+    # TODO: Add metric query
+
+  - title: "Error Rate"
+    type: graph
+    # TODO: Add metric query
+
+  - title: "Latency (p50/p95/p99)"
+    type: graph
+    # TODO: Add metric query
+
+alerts:
+  - name: "High Error Rate"
+    # TODO: Configure alert thresholds

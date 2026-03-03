@@ -1,0 +1,32 @@
+{
+  "skill_name": "cloud-migration-planning",
+  "skill_dir": "skills/cloud-migration-planning",
+  "original_lines": 569,
+  "hub_lines": 99,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "migration-assessment-and-planning.md",
+      "title": "Migration Assessment and Planning",
+      "line_count": 170
+    },
+    {
+      "filename": "database-migration-strategies.md",
+      "title": "Database Migration Strategies",
+      "line_count": 53
+    },
+    {
+      "filename": "terraform-migration-infrastructure.md",
+      "title": "Terraform Migration Infrastructure",
+      "line_count": 217
+    },
+    {
+      "filename": "cutover-validation-checklist.md",
+      "title": "Cutover Validation Checklist",
+      "line_count": 75
+    }
+  ],
+  "backup": "skills/cloud-migration-planning/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

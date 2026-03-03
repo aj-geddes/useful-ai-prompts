@@ -1,0 +1,37 @@
+{
+  "skill_name": "service-mesh-implementation",
+  "skill_dir": "skills/service-mesh-implementation",
+  "original_lines": 425,
+  "hub_lines": 101,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "istio-core-setup.md",
+      "title": "Istio Core Setup",
+      "line_count": 81
+    },
+    {
+      "filename": "virtual-service-and-destination-rule.md",
+      "title": "Virtual Service and Destination Rule",
+      "line_count": 98
+    },
+    {
+      "filename": "security-policies.md",
+      "title": "Security Policies",
+      "line_count": 57
+    },
+    {
+      "filename": "observability-configuration.md",
+      "title": "Observability Configuration",
+      "line_count": 75
+    },
+    {
+      "filename": "service-mesh-deployment-script.md",
+      "title": "Service Mesh Deployment Script",
+      "line_count": 53
+    }
+  ],
+  "backup": "skills/service-mesh-implementation/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

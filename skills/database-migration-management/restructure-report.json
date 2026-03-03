@@ -1,0 +1,37 @@
+{
+  "skill_name": "database-migration-management",
+  "skill_dir": "skills/database-migration-management",
+  "original_lines": 385,
+  "hub_lines": 92,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "adding-columns.md",
+      "title": "Adding Columns",
+      "line_count": 40
+    },
+    {
+      "filename": "renaming-columns.md",
+      "title": "Renaming Columns",
+      "line_count": 21
+    },
+    {
+      "filename": "creating-indexes-non-blocking.md",
+      "title": "Creating Indexes Non-blocking",
+      "line_count": 42
+    },
+    {
+      "filename": "data-transformations.md",
+      "title": "Data Transformations",
+      "line_count": 42
+    },
+    {
+      "filename": "table-structure-changes.md",
+      "title": "Table Structure Changes",
+      "line_count": 32
+    }
+  ],
+  "backup": "skills/database-migration-management/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

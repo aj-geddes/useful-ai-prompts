@@ -1,9 +1,20 @@
 ---
 name: ios-swift-development
-description: Develop native iOS apps with Swift. Covers MVVM architecture, SwiftUI, URLSession for networking, Combine for reactive programming, and Core Data persistence.
+description: >
+  Develop native iOS apps with Swift. Covers MVVM architecture, SwiftUI,
+  URLSession for networking, Combine for reactive programming, and Core Data
+  persistence.
 ---
 
 # iOS Swift Development
+
+## Table of Contents
+
+- [Overview](#overview)
+- [When to Use](#when-to-use)
+- [Quick Start](#quick-start)
+- [Reference Guides](#reference-guides)
+- [Best Practices](#best-practices)
 
 ## Overview
 
@@ -17,9 +28,9 @@ Build high-performance native iOS applications using Swift with modern framework
 - Using SwiftUI for declarative UI development
 - Implementing complex animations and transitions
 
-## Instructions
+## Quick Start
 
-### 1. **MVVM Architecture Setup**
+Minimal working example:
 
 ```swift
 import Foundation
@@ -47,245 +58,18 @@ class UserViewModel: ObservableObject {
     isLoading = true
     errorMessage = nil
 
-    do {
-      user = try await networkService.fetch(User.self, from: "/users/\(id)")
-    } catch {
-      errorMessage = error.localizedDescription
-    }
-
-    isLoading = false
-  }
-
-  @MainActor
-  func updateUser(_ userData: User) async {
-    guard let user = user else { return }
-
-    do {
-      self.user = try await networkService.put(
-        User.self,
-        to: "/users/\(user.id)",
-        body: userData
-      )
-    } catch {
-      errorMessage = "Failed to update user"
-    }
-  }
-
-  func logout() {
-    user = nil
-    errorMessage = nil
-  }
-}
+// ... (see reference guides for full implementation)
 ```
 
-### 2. **Network Service with URLSession**
+## Reference Guides
 
-```swift
-class NetworkService {
-  static let shared = NetworkService()
+Detailed implementations in the `references/` directory:
 
-  private let session: URLSession
-  private let baseURL: URL
-
-  init(
-    session: URLSession = .shared,
-    baseURL: URL = URL(string: "https://api.example.com")!
-  ) {
-    self.session = session
-    self.baseURL = baseURL
-  }
-
-  func fetch<T: Decodable>(
-    _: T.Type,
-    from endpoint: String
-  ) async throws -> T {
-    let url = baseURL.appendingPathComponent(endpoint)
-    var request = URLRequest(url: url)
-    request.addAuthHeader()
-
-    let (data, response) = try await session.data(for: request)
-    try validateResponse(response)
-
-    let decoder = JSONDecoder()
-    decoder.dateDecodingStrategy = .iso8601
-    return try decoder.decode(T.self, from: data)
-  }
-
-  func put<T: Decodable, Body: Encodable>(
-    _: T.Type,
-    to endpoint: String,
-    body: Body
-  ) async throws -> T {
-    let url = baseURL.appendingPathComponent(endpoint)
-    var request = URLRequest(url: url)
-    request.httpMethod = "PUT"
-    request.addAuthHeader()
-    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-    let encoder = JSONEncoder()
-    encoder.dateEncodingStrategy = .iso8601
-    request.httpBody = try encoder.encode(body)
-
-    let (data, response) = try await session.data(for: request)
-    try validateResponse(response)
-
-    let decoder = JSONDecoder()
-    return try decoder.decode(T.self, from: data)
-  }
-
-  private func validateResponse(_ response: URLResponse) throws {
-    guard let httpResponse = response as? HTTPURLResponse else {
-      throw NetworkError.invalidResponse
-    }
-
-    switch httpResponse.statusCode {
-    case 200...299:
-      return
-    case 401:
-      throw NetworkError.unauthorized
-    case 500...599:
-      throw NetworkError.serverError
-    default:
-      throw NetworkError.unknown
-    }
-  }
-}
-
-enum NetworkError: LocalizedError {
-  case invalidResponse
-  case unauthorized
-  case serverError
-  case unknown
-
-  var errorDescription: String? {
-    switch self {
-    case .invalidResponse: return "Invalid response"
-    case .unauthorized: return "Unauthorized"
-    case .serverError: return "Server error"
-    case .unknown: return "Unknown error"
-    }
-  }
-}
-
-extension URLRequest {
-  mutating func addAuthHeader() {
-    if let token = KeychainManager.shared.getToken() {
-      setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-    }
-  }
-}
-```
-
-### 3. **SwiftUI Views**
-
-```swift
-struct ContentView: View {
-  @StateObject var userViewModel = UserViewModel()
-
-  var body: some View {
-    TabView {
-      HomeView()
-        .tabItem { Label("Home", systemImage: "house") }
-
-      ProfileView(viewModel: userViewModel)
-        .tabItem { Label("Profile", systemImage: "person") }
-    }
-  }
-}
-
-struct HomeView: View {
-  @State var items: [Item] = []
-  @State var loading = true
-
-  var body: some View {
-    NavigationView {
-      ZStack {
-        if loading {
-          ProgressView()
-        } else {
-          List(items) { item in
-            NavigationLink(destination: ItemDetailView(item: item)) {
-              VStack(alignment: .leading) {
-                Text(item.title).font(.headline)
-                Text(item.description).font(.subheadline).foregroundColor(.gray)
-              }
-            }
-          }
-        }
-      }
-      .navigationTitle("Items")
-      .task {
-        await loadItems()
-      }
-    }
-  }
-
-  private func loadItems() async {
-    do {
-      items = try await NetworkService.shared.fetch([Item].self, from: "/items")
-    } catch {
-      print("Error: \(error)")
-    }
-    loading = false
-  }
-}
-
-struct ItemDetailView: View {
-  let item: Item
-  @Environment(\.dismiss) var dismiss
-
-  var body: some View {
-    ScrollView {
-      VStack(alignment: .leading, spacing: 16) {
-        Text(item.title).font(.title2).fontWeight(.bold)
-        Text(item.description).font(.body)
-        Text("Price: $\(String(format: "%.2f", item.price))")
-          .font(.headline).foregroundColor(.blue)
-        Spacer()
-      }
-      .padding()
-    }
-    .navigationBarTitleDisplayMode(.inline)
-  }
-}
-
-struct ProfileView: View {
-  @ObservedObject var viewModel: UserViewModel
-  @State var isLoading = true
-
-  var body: some View {
-    NavigationView {
-      ZStack {
-        if viewModel.isLoading {
-          ProgressView()
-        } else if let user = viewModel.user {
-          VStack(spacing: 20) {
-            Text(user.name).font(.title).fontWeight(.bold)
-            Text(user.email).font(.subheadline)
-            Button("Logout") { viewModel.logout() }
-              .foregroundColor(.red)
-            Spacer()
-          }
-          .padding()
-        } else {
-          Text("No profile data")
-        }
-      }
-      .navigationTitle("Profile")
-      .task {
-        await viewModel.fetchUser(id: UUID())
-      }
-    }
-  }
-}
-
-struct Item: Codable, Identifiable {
-  let id: String
-  let title: String
-  let description: String
-  let price: Double
-}
-```
+| Guide | Contents |
+|---|---|
+| [MVVM Architecture Setup](references/mvvm-architecture-setup.md) | MVVM Architecture Setup |
+| [Network Service with URLSession](references/network-service-with-urlsession.md) | Network Service with URLSession |
+| [SwiftUI Views](references/swiftui-views.md) | SwiftUI Views |
 
 ## Best Practices
 

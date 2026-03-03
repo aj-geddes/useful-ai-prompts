@@ -1,0 +1,32 @@
+{
+  "skill_name": "gcp-cloud-run",
+  "skill_dir": "skills/gcp-cloud-run",
+  "original_lines": 553,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "cloud-run-deployment-with-gcloud-cli.md",
+      "title": "Cloud Run Deployment with gcloud CLI",
+      "line_count": 45
+    },
+    {
+      "filename": "containerized-application-nodejs.md",
+      "title": "Containerized Application (Node.js)",
+      "line_count": 93
+    },
+    {
+      "filename": "terraform-cloud-run-configuration.md",
+      "title": "Terraform Cloud Run Configuration",
+      "line_count": 341
+    },
+    {
+      "filename": "docker-build-and-push.md",
+      "title": "Docker Build and Push",
+      "line_count": 21
+    }
+  ],
+  "backup": "skills/gcp-cloud-run/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

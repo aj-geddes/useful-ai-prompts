@@ -1,0 +1,37 @@
+{
+  "skill_name": "grafana-dashboard",
+  "skill_dir": "skills/grafana-dashboard",
+  "original_lines": 279,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "grafana-dashboard-json.md",
+      "title": "Grafana Dashboard JSON",
+      "line_count": 86
+    },
+    {
+      "filename": "grafana-provisioning-configuration.md",
+      "title": "Grafana Provisioning Configuration",
+      "line_count": 35
+    },
+    {
+      "filename": "grafana-alert-configuration.md",
+      "title": "Grafana Alert Configuration",
+      "line_count": 32
+    },
+    {
+      "filename": "grafana-api-client.md",
+      "title": "Grafana API Client",
+      "line_count": 47
+    },
+    {
+      "filename": "docker-compose-setup.md",
+      "title": "Docker Compose Setup",
+      "line_count": 34
+    }
+  ],
+  "backup": "skills/grafana-dashboard/SKILL.md.original",
+  "domain": "monitoring",
+  "status": "restructured"
+}

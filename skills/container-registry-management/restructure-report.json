@@ -1,0 +1,37 @@
+{
+  "skill_name": "container-registry-management",
+  "skill_dir": "skills/container-registry-management",
+  "original_lines": 525,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "aws-ecr-setup-and-management.md",
+      "title": "AWS ECR Setup and Management",
+      "line_count": 236
+    },
+    {
+      "filename": "container-image-build-and-push.md",
+      "title": "Container Image Build and Push",
+      "line_count": 53
+    },
+    {
+      "filename": "image-signing-with-notary.md",
+      "title": "Image Signing with Notary",
+      "line_count": 30
+    },
+    {
+      "filename": "registry-access-control.md",
+      "title": "Registry Access Control",
+      "line_count": 66
+    },
+    {
+      "filename": "registry-monitoring.md",
+      "title": "Registry Monitoring",
+      "line_count": 80
+    }
+  ],
+  "backup": "skills/container-registry-management/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

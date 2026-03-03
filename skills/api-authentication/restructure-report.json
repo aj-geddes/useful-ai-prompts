@@ -1,0 +1,32 @@
+{
+  "skill_name": "api-authentication",
+  "skill_dir": "skills/api-authentication",
+  "original_lines": 353,
+  "hub_lines": 102,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "jwt-authentication.md",
+      "title": "JWT Authentication",
+      "line_count": 129
+    },
+    {
+      "filename": "oauth-20-implementation.md",
+      "title": "OAuth 2.0 Implementation",
+      "line_count": 56
+    },
+    {
+      "filename": "api-key-authentication.md",
+      "title": "API Key Authentication",
+      "line_count": 54
+    },
+    {
+      "filename": "python-authentication-implementation.md",
+      "title": "Python Authentication Implementation",
+      "line_count": 58
+    }
+  ],
+  "backup": "skills/api-authentication/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

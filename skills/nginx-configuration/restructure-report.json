@@ -1,0 +1,32 @@
+{
+  "skill_name": "nginx-configuration",
+  "skill_dir": "skills/nginx-configuration",
+  "original_lines": 334,
+  "hub_lines": 101,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "production-nginx-configuration.md",
+      "title": "Production Nginx Configuration",
+      "line_count": 84
+    },
+    {
+      "filename": "https-server-with-load-balancing.md",
+      "title": "HTTPS Server with Load Balancing",
+      "line_count": 115
+    },
+    {
+      "filename": "nginx-configuration-script.md",
+      "title": "Nginx Configuration Script",
+      "line_count": 47
+    },
+    {
+      "filename": "nginx-monitoring-configuration.md",
+      "title": "Nginx Monitoring Configuration",
+      "line_count": 30
+    }
+  ],
+  "backup": "skills/nginx-configuration/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

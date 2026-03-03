@@ -1,0 +1,37 @@
+{
+  "skill_name": "requirements-gathering",
+  "skill_dir": "skills/requirements-gathering",
+  "original_lines": 385,
+  "hub_lines": 105,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "stakeholder-discovery.md",
+      "title": "Stakeholder Discovery",
+      "line_count": 59
+    },
+    {
+      "filename": "requirements-elicitation-techniques.md",
+      "title": "Requirements Elicitation Techniques",
+      "line_count": 80
+    },
+    {
+      "filename": "requirements-documentation.md",
+      "title": "Requirements Documentation",
+      "line_count": 101
+    },
+    {
+      "filename": "requirement-validation-sign-off.md",
+      "title": "Requirement Validation & Sign-Off",
+      "line_count": 53
+    },
+    {
+      "filename": "requirements-traceability-matrix.md",
+      "title": "Requirements Traceability Matrix",
+      "line_count": 43
+    }
+  ],
+  "backup": "skills/requirements-gathering/SKILL.md.original",
+  "domain": "process",
+  "status": "restructured"
+}

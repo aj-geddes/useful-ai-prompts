@@ -1,0 +1,47 @@
+{
+  "skill_name": "code-generation-template",
+  "skill_dir": "skills/code-generation-template",
+  "original_lines": 791,
+  "hub_lines": 103,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "template-engines.md",
+      "title": "Template Engines",
+      "line_count": 121
+    },
+    {
+      "filename": "ast-based-code-generation.md",
+      "title": "AST-Based Code Generation",
+      "line_count": 121
+    },
+    {
+      "filename": "project-scaffolding.md",
+      "title": "Project Scaffolding",
+      "line_count": 197
+    },
+    {
+      "filename": "openapi-client-generation.md",
+      "title": "OpenAPI Client Generation",
+      "line_count": 95
+    },
+    {
+      "filename": "database-model-generation.md",
+      "title": "Database Model Generation",
+      "line_count": 54
+    },
+    {
+      "filename": "graphql-code-generation.md",
+      "title": "GraphQL Code Generation",
+      "line_count": 33
+    },
+    {
+      "filename": "plopjs-generator.md",
+      "title": "Plop.js Generator",
+      "line_count": 81
+    }
+  ],
+  "backup": "skills/code-generation-template/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

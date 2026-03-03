@@ -1,0 +1,27 @@
+{
+  "skill_name": "information-architecture",
+  "skill_dir": "skills/information-architecture",
+  "original_lines": 279,
+  "hub_lines": 101,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "card-sorting-taxonomy.md",
+      "title": "Card Sorting & Taxonomy",
+      "line_count": 60
+    },
+    {
+      "filename": "sitemap-navigation-structure.md",
+      "title": "Sitemap & Navigation Structure",
+      "line_count": 47
+    },
+    {
+      "filename": "search-discovery.md",
+      "title": "Search & Discovery",
+      "line_count": 44
+    }
+  ],
+  "backup": "skills/information-architecture/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

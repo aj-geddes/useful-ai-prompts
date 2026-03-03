@@ -1,0 +1,32 @@
+{
+  "skill_name": "mobile-app-testing",
+  "skill_dir": "skills/mobile-app-testing",
+  "original_lines": 347,
+  "hub_lines": 102,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "react-native-testing-with-jest-detox.md",
+      "title": "React Native Testing with Jest & Detox",
+      "line_count": 85
+    },
+    {
+      "filename": "ios-testing-with-xctest.md",
+      "title": "iOS Testing with XCTest",
+      "line_count": 96
+    },
+    {
+      "filename": "android-testing-with-espresso.md",
+      "title": "Android Testing with Espresso",
+      "line_count": 85
+    },
+    {
+      "filename": "performance-testing.md",
+      "title": "Performance Testing",
+      "line_count": 40
+    }
+  ],
+  "backup": "skills/mobile-app-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

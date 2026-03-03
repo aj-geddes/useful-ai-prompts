@@ -1,0 +1,27 @@
+{
+  "skill_name": "release-planning",
+  "skill_dir": "skills/release-planning",
+  "original_lines": 479,
+  "hub_lines": 103,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "release-checklist.md",
+      "title": "Release Checklist",
+      "line_count": 104
+    },
+    {
+      "filename": "versioning-strategy.md",
+      "title": "Versioning Strategy",
+      "line_count": 33
+    },
+    {
+      "filename": "rollout-monitoring.md",
+      "title": "Rollout & Monitoring",
+      "line_count": 88
+    }
+  ],
+  "backup": "skills/release-planning/SKILL.md.original",
+  "domain": "process",
+  "status": "restructured"
+}

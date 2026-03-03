@@ -1,0 +1,37 @@
+{
+  "skill_name": "vue-application-structure",
+  "skill_dir": "skills/vue-application-structure",
+  "original_lines": 323,
+  "hub_lines": 90,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "vue-3-composition-api-component.md",
+      "title": "Vue 3 Composition API Component",
+      "line_count": 50
+    },
+    {
+      "filename": "async-data-fetching-composable.md",
+      "title": "Async Data Fetching Composable",
+      "line_count": 77
+    },
+    {
+      "filename": "component-organization-structure.md",
+      "title": "Component Organization Structure",
+      "line_count": 34
+    },
+    {
+      "filename": "form-handling-composable.md",
+      "title": "Form Handling Composable",
+      "line_count": 79
+    },
+    {
+      "filename": "pinia-store-state-management.md",
+      "title": "Pinia Store (State Management)",
+      "line_count": 56
+    }
+  ],
+  "backup": "skills/vue-application-structure/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

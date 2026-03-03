@@ -1,0 +1,42 @@
+{
+  "skill_name": "git-hooks-setup",
+  "skill_dir": "skills/git-hooks-setup",
+  "original_lines": 260,
+  "hub_lines": 94,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "husky-installation-and-configuration.md",
+      "title": "Husky Installation and Configuration",
+      "line_count": 27
+    },
+    {
+      "filename": "pre-commit-hook-nodejs.md",
+      "title": "Pre-commit Hook (Node.js)",
+      "line_count": 44
+    },
+    {
+      "filename": "commit-message-validation.md",
+      "title": "Commit Message Validation",
+      "line_count": 36
+    },
+    {
+      "filename": "commitlint-configuration.md",
+      "title": "Commitlint Configuration",
+      "line_count": 37
+    },
+    {
+      "filename": "pre-commit-framework-python.md",
+      "title": "Pre-commit Framework (Python)",
+      "line_count": 49
+    },
+    {
+      "filename": "secret-detection-hook.md",
+      "title": "Secret Detection Hook",
+      "line_count": 27
+    }
+  ],
+  "backup": "skills/git-hooks-setup/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

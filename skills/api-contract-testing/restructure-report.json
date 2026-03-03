@@ -1,0 +1,42 @@
+{
+  "skill_name": "api-contract-testing",
+  "skill_dir": "skills/api-contract-testing",
+  "original_lines": 622,
+  "hub_lines": 103,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "pact-for-consumer-driven-contracts.md",
+      "title": "Pact for Consumer-Driven Contracts",
+      "line_count": 220
+    },
+    {
+      "filename": "openapi-schema-validation.md",
+      "title": "OpenAPI Schema Validation",
+      "line_count": 49
+    },
+    {
+      "filename": "json-schema-validation.md",
+      "title": "JSON Schema Validation",
+      "line_count": 111
+    },
+    {
+      "filename": "rest-assured-for-java.md",
+      "title": "REST Assured for Java",
+      "line_count": 88
+    },
+    {
+      "filename": "contract-testing-with-postman.md",
+      "title": "Contract Testing with Postman",
+      "line_count": 47
+    },
+    {
+      "filename": "pact-broker-integration.md",
+      "title": "Pact Broker Integration",
+      "line_count": 47
+    }
+  ],
+  "backup": "skills/api-contract-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

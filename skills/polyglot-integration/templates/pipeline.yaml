@@ -1,0 +1,33 @@
+# CI/CD Pipeline Starter Template
+# TODO: Customize for your CI/CD platform (GitHub Actions, GitLab CI, Jenkins, etc.)
+
+name: CI/CD Pipeline
+
+# TODO: Configure triggers
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Add build steps
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Add test steps
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+      # TODO: Add deployment steps
+      - run: echo "Deploy to production"

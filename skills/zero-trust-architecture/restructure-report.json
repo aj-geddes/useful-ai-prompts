@@ -1,0 +1,27 @@
+{
+  "skill_name": "zero-trust-architecture",
+  "skill_dir": "skills/zero-trust-architecture",
+  "original_lines": 692,
+  "hub_lines": 96,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "zero-trust-gateway.md",
+      "title": "Zero Trust Gateway",
+      "line_count": 364
+    },
+    {
+      "filename": "service-mesh-microsegmentation.md",
+      "title": "Service Mesh - Microsegmentation",
+      "line_count": 113
+    },
+    {
+      "filename": "python-zero-trust-policy-engine.md",
+      "title": "Python Zero Trust Policy Engine",
+      "line_count": 146
+    }
+  ],
+  "backup": "skills/zero-trust-architecture/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

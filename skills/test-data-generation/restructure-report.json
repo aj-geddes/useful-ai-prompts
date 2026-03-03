@@ -1,0 +1,32 @@
+{
+  "skill_name": "test-data-generation",
+  "skill_dir": "skills/test-data-generation",
+  "original_lines": 634,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "factory-pattern-for-test-data.md",
+      "title": "Factory Pattern for Test Data",
+      "line_count": 197
+    },
+    {
+      "filename": "builder-pattern-for-complex-objects.md",
+      "title": "Builder Pattern for Complex Objects",
+      "line_count": 107
+    },
+    {
+      "filename": "fixtures-for-integration-tests.md",
+      "title": "Fixtures for Integration Tests",
+      "line_count": 150
+    },
+    {
+      "filename": "realistic-data-generation.md",
+      "title": "Realistic Data Generation",
+      "line_count": 73
+    }
+  ],
+  "backup": "skills/test-data-generation/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

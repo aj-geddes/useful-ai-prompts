@@ -1,0 +1,32 @@
+{
+  "skill_name": "deployment-documentation",
+  "skill_dir": "skills/deployment-documentation",
+  "original_lines": 663,
+  "hub_lines": 102,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "github-actions-workflow.md",
+      "title": "GitHub Actions Workflow",
+      "line_count": 97
+    },
+    {
+      "filename": "dockerfile.md",
+      "title": "Dockerfile",
+      "line_count": 50
+    },
+    {
+      "filename": "docker-composeyml.md",
+      "title": "docker-compose.yml",
+      "line_count": 48
+    },
+    {
+      "filename": "deployment-manifest.md",
+      "title": "Deployment Manifest",
+      "line_count": 117
+    }
+  ],
+  "backup": "skills/deployment-documentation/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

@@ -1,9 +1,19 @@
 ---
 name: information-architecture
-description: Organize and structure information for clarity and discoverability. Design navigation systems, hierarchies, and mental models that match user needs.
+description: >
+  Organize and structure information for clarity and discoverability. Design
+  navigation systems, hierarchies, and mental models that match user needs.
 ---
 
 # Information Architecture
+
+## Table of Contents
+
+- [Overview](#overview)
+- [When to Use](#when-to-use)
+- [Quick Start](#quick-start)
+- [Reference Guides](#reference-guides)
+- [Best Practices](#best-practices)
 
 ## Overview
 
@@ -18,9 +28,9 @@ Information Architecture creates logical structures that help users find and und
 - Search functionality design
 - User journey mapping
 
-## Instructions
+## Quick Start
 
-### 1. **IA Principles & Process**
+Minimal working example:
 
 ```yaml
 IA Process:
@@ -48,198 +58,18 @@ IA Process:
   - Tree testing (navigation only)
   - Iterate based on feedback
 
----
-
-## Organization Schemes:
-
-Hierarchical (Top-Down):
-  - Home → Categories → Subcategories → Products
-  - Clear parent-child relationships
-  - Good for browsing
-
-Faceted/Filtering:
-  - Products filtered by multiple attributes
-  - User can narrow down
-  - Flexible combinations
-
-Contextual:
-  - Related items grouped together
-  - Cross-links between sections
-  - Supports exploration
-
-Task-Based:
-  - Organize by user goals/tasks
-  - "How do I...?" approach
-  - Matches mental models
-
----
-
-## Navigation Types:
-
-Primary Navigation:
-  - Main categories
-  - Top of page or left sidebar
-  - Access from any page
-
-Secondary Navigation:
-  - Sub-categories
-  - Related topics
-  - Context-specific
-
-Breadcrumb Navigation:
-  - Shows user location in hierarchy
-  - Enables backward navigation
-
-Footer Navigation:
-  - Links to important pages
-  - Legal/company info
-  - Helps with SEO
+// ... (see reference guides for full implementation)
 ```
 
-### 2. **Card Sorting & Taxonomy**
+## Reference Guides
 
-```python
-# Organize content into logical groups
+Detailed implementations in the `references/` directory:
 
-class InformationArchitecture:
-    def conduct_card_sort(self, items):
-        """Uncover user mental models"""
-        return {
-            'method': 'Open card sort (users create own categories)',
-            'participants': 15,
-            'items_sorted': len(items),
-            'analysis': self.analyze_card_sort_results(items),
-            'dendrograms': 'Show similarity between user groupings',
-            'categories': self.identify_categories(items)
-        }
-
-    def identify_categories(self, items):
-        """Find natural groupings"""
-        categories = {}
-        frequency = {}
-
-        # Track how often items are grouped together
-        # Find dominant groupings
-
-        return {
-            'primary_categories': self.get_primary_categories(frequency),
-            'ambiguous_items': self.identify_ambiguous_items(frequency),
-            'user_created_labels': self.extract_labels()
-        }
-
-    def create_taxonomy(self, categories):
-        """Build hierarchical structure"""
-        return {
-            'level1': ['Products', 'Services', 'Support', 'Company'],
-            'level2_products': ['Electronics', 'Clothing', 'Books'],
-            'level3_electronics': ['Phones', 'Laptops', 'Accessories'],
-            'relationships': 'Define parent-child and related items',
-            'synonyms': 'Identify similar terms'
-        }
-
-    def validate_ia(self, structure):
-        """Test with users"""
-        return {
-            'testing_method': 'Tree testing',
-            'tasks': [
-                'Find product return policy',
-                'Locate shipping information',
-                'Access account settings'
-            ],
-            'success_metrics': {
-                'task_completion': '90% target',
-                'time_to_complete': '<3 minutes',
-                'satisfaction': '>4/5'
-            }
-        }
-```
-
-### 3. **Sitemap & Navigation Structure**
-
-```yaml
-Sitemap Example: E-commerce Site
-
-Home
-├── Products
-│   ├── Electronics
-│   │   ├── Phones
-│   │   ├── Laptops
-│   │   └── Accessories
-│   ├── Clothing
-│   │   ├── Men's
-│   │   ├── Women's
-│   │   └── Kids
-│   └── Books
-├── Services
-│   ├── Shipping & Returns
-│   ├── Extended Warranty
-│   └── Installation
-├── Support
-│   ├── FAQ
-│   ├── Contact Us
-│   ├── Live Chat
-│   └── Tickets
-├── Account
-│   ├── Orders
-│   ├── Wishlist
-│   ├── Returns
-│   └── Settings
-└── Company
-    ├── About Us
-    ├── Careers
-    ├── Blog
-    └── Affiliates
-
----
-
-Navigation Labels:
-  - Clear and predictable
-  - Avoid jargon
-  - Match user language
-  - Consistent across site
-```
-
-### 4. **Search & Discovery**
-
-```javascript
-// Enable multiple ways to find content
-
-class DiscoverabilityStrategy {
-  designSearchFunctionality() {
-    return {
-      search_box: {
-        location: "Header, prominent placement",
-        placeholder: "Clear example text",
-        autocomplete: true,
-        filters: ["Category", "Price", "Rating"],
-      },
-      search_results: {
-        ranking: "Relevance + popularity + freshness",
-        facets: "Allow filtering results",
-        snippets: "Show preview and highlights",
-      },
-      zero_results: {
-        suggestions: "Show did you mean, popular searches",
-        related: "Show related categories",
-      },
-    };
-  }
-
-  designBrowsing() {
-    return {
-      category_pages: {
-        structure: "Subcategories + featured items",
-        sorting: "By popularity, newest, price",
-        pagination: "Load more or paginate",
-      },
-      related_items: {
-        placement: "Product page, cart page",
-        logic: "Similar category, trending, recommended",
-      },
-    };
-  }
-}
-```
+| Guide | Contents |
+|---|---|
+| [Card Sorting & Taxonomy](references/card-sorting-taxonomy.md) | Card Sorting & Taxonomy |
+| [Sitemap & Navigation Structure](references/sitemap-navigation-structure.md) | Sitemap & Navigation Structure |
+| [Search & Discovery](references/search-discovery.md) | Search & Discovery |
 
 ## Best Practices
 
@@ -268,11 +98,3 @@ class DiscoverabilityStrategy {
 - Forget about edge cases
 - Ignore accessibility
 - Assume desktop-only navigation
-
-## IA Tips
-
-- Use clear, specific category names
-- Avoid nested menus when possible
-- Provide multiple paths to content
-- Show context within hierarchy (breadcrumbs)
-- Monitor analytics to improve structure

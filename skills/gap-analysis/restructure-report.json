@@ -1,0 +1,32 @@
+{
+  "skill_name": "gap-analysis",
+  "skill_dir": "skills/gap-analysis",
+  "original_lines": 492,
+  "hub_lines": 104,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "gap-identification-framework.md",
+      "title": "Gap Identification Framework",
+      "line_count": 93
+    },
+    {
+      "filename": "gap-analysis-template.md",
+      "title": "Gap Analysis Template",
+      "line_count": 29
+    },
+    {
+      "filename": "gap-closure-planning.md",
+      "title": "Gap Closure Planning",
+      "line_count": 122
+    },
+    {
+      "filename": "communication-tracking.md",
+      "title": "Communication & Tracking",
+      "line_count": 51
+    }
+  ],
+  "backup": "skills/gap-analysis/SKILL.md.original",
+  "domain": "data_science",
+  "status": "restructured"
+}

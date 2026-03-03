@@ -1,0 +1,37 @@
+{
+  "skill_name": "css-architecture",
+  "skill_dir": "skills/css-architecture",
+  "original_lines": 421,
+  "hub_lines": 89,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "bem-block-element-modifier-pattern.md",
+      "title": "BEM (Block Element Modifier) Pattern",
+      "line_count": 82
+    },
+    {
+      "filename": "smacss-scalable-and-modular-architecture-for-css.md",
+      "title": "SMACSS (Scalable and Modular Architecture for CSS)",
+      "line_count": 99
+    },
+    {
+      "filename": "css-in-js-with-styled-components.md",
+      "title": "CSS-in-JS with Styled Components",
+      "line_count": 57
+    },
+    {
+      "filename": "css-variables-custom-properties.md",
+      "title": "CSS Variables (Custom Properties)",
+      "line_count": 74
+    },
+    {
+      "filename": "utility-first-css-tailwind-pattern.md",
+      "title": "Utility-First CSS (Tailwind Pattern)",
+      "line_count": 79
+    }
+  ],
+  "backup": "skills/css-architecture/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "azure-app-service",
+  "skill_dir": "skills/azure-app-service",
+  "original_lines": 445,
+  "hub_lines": 99,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "app-service-creation-with-azure-cli.md",
+      "title": "App Service Creation with Azure CLI",
+      "line_count": 66
+    },
+    {
+      "filename": "terraform-app-service-configuration.md",
+      "title": "Terraform App Service Configuration",
+      "line_count": 260
+    },
+    {
+      "filename": "deployment-configuration.md",
+      "title": "Deployment Configuration",
+      "line_count": 51
+    },
+    {
+      "filename": "health-check-configuration.md",
+      "title": "Health Check Configuration",
+      "line_count": 16
+    }
+  ],
+  "backup": "skills/azure-app-service/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

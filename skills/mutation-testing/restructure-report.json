@@ -1,0 +1,32 @@
+{
+  "skill_name": "mutation-testing",
+  "skill_dir": "skills/mutation-testing",
+  "original_lines": 590,
+  "hub_lines": 80,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "stryker-for-javascripttypescript.md",
+      "title": "Stryker for JavaScript/TypeScript",
+      "line_count": 145
+    },
+    {
+      "filename": "pitest-for-java.md",
+      "title": "PITest for Java",
+      "line_count": 179
+    },
+    {
+      "filename": "mutmut-for-python.md",
+      "title": "mutmut for Python",
+      "line_count": 94
+    },
+    {
+      "filename": "mutation-testing-reports.md",
+      "title": "Mutation Testing Reports",
+      "line_count": 23
+    }
+  ],
+  "backup": "skills/mutation-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

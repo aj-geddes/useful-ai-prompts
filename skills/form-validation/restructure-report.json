@@ -1,0 +1,37 @@
+{
+  "skill_name": "form-validation",
+  "skill_dir": "skills/form-validation",
+  "original_lines": 429,
+  "hub_lines": 90,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "react-hook-form-with-typescript.md",
+      "title": "React Hook Form with TypeScript",
+      "line_count": 110
+    },
+    {
+      "filename": "formik-with-yup-validation.md",
+      "title": "Formik with Yup Validation",
+      "line_count": 116
+    },
+    {
+      "filename": "vue-vee-validate.md",
+      "title": "Vue Vee-Validate",
+      "line_count": 70
+    },
+    {
+      "filename": "custom-validator-hook.md",
+      "title": "Custom Validator Hook",
+      "line_count": 69
+    },
+    {
+      "filename": "server-side-validation-integration.md",
+      "title": "Server-Side Validation Integration",
+      "line_count": 33
+    }
+  ],
+  "backup": "skills/form-validation/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "cloud-storage-optimization",
+  "skill_dir": "skills/cloud-storage-optimization",
+  "original_lines": 430,
+  "hub_lines": 98,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "aws-s3-storage-optimization.md",
+      "title": "AWS S3 Storage Optimization",
+      "line_count": 54
+    },
+    {
+      "filename": "data-compression-and-partitioning-strategy.md",
+      "title": "Data Compression and Partitioning Strategy",
+      "line_count": 151
+    },
+    {
+      "filename": "terraform-multi-cloud-storage-configuration.md",
+      "title": "Terraform Multi-Cloud Storage Configuration",
+      "line_count": 132
+    },
+    {
+      "filename": "data-lake-partitioning-strategy.md",
+      "title": "Data Lake Partitioning Strategy",
+      "line_count": 40
+    }
+  ],
+  "backup": "skills/cloud-storage-optimization/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "deployment-automation",
+  "skill_dir": "skills/deployment-automation",
+  "original_lines": 240,
+  "hub_lines": 105,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "helm-deployment-chart.md",
+      "title": "Helm Deployment Chart",
+      "line_count": 35
+    },
+    {
+      "filename": "github-actions-deployment-workflow.md",
+      "title": "GitHub Actions Deployment Workflow",
+      "line_count": 78
+    },
+    {
+      "filename": "argocd-deployment.md",
+      "title": "ArgoCD Deployment",
+      "line_count": 42
+    },
+    {
+      "filename": "blue-green-deployment.md",
+      "title": "Blue-Green Deployment",
+      "line_count": 19
+    }
+  ],
+  "backup": "skills/deployment-automation/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

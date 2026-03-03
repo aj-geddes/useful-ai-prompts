@@ -1,0 +1,32 @@
+{
+  "skill_name": "dependency-tracking",
+  "skill_dir": "skills/dependency-tracking",
+  "original_lines": 356,
+  "hub_lines": 104,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "dependency-mapping.md",
+      "title": "Dependency Mapping",
+      "line_count": 108
+    },
+    {
+      "filename": "dependency-management-board.md",
+      "title": "Dependency Management Board",
+      "line_count": 75
+    },
+    {
+      "filename": "dependency-resolution.md",
+      "title": "Dependency Resolution",
+      "line_count": 89
+    },
+    {
+      "filename": "dependency-dashboard-metrics.md",
+      "title": "Dependency Dashboard Metrics",
+      "line_count": 33
+    }
+  ],
+  "backup": "skills/dependency-tracking/SKILL.md.original",
+  "domain": "process",
+  "status": "restructured"
+}

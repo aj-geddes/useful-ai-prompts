@@ -1,0 +1,42 @@
+{
+  "skill_name": "performance-testing",
+  "skill_dir": "skills/performance-testing",
+  "original_lines": 554,
+  "hub_lines": 103,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "k6-for-api-load-testing.md",
+      "title": "k6 for API Load Testing",
+      "line_count": 118
+    },
+    {
+      "filename": "apache-jmeter.md",
+      "title": "Apache JMeter",
+      "line_count": 53
+    },
+    {
+      "filename": "pytest-benchmark-for-python.md",
+      "title": "pytest-benchmark for Python",
+      "line_count": 73
+    },
+    {
+      "filename": "jmh-for-java-benchmarking.md",
+      "title": "JMH for Java Benchmarking",
+      "line_count": 82
+    },
+    {
+      "filename": "database-query-performance.md",
+      "title": "Database Query Performance",
+      "line_count": 73
+    },
+    {
+      "filename": "real-time-monitoring.md",
+      "title": "Real-Time Monitoring",
+      "line_count": 75
+    }
+  ],
+  "backup": "skills/performance-testing/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

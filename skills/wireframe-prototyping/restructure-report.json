@@ -1,0 +1,27 @@
+{
+  "skill_name": "wireframe-prototyping",
+  "skill_dir": "skills/wireframe-prototyping",
+  "original_lines": 272,
+  "hub_lines": 103,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "prototyping-tools-techniques.md",
+      "title": "Prototyping Tools & Techniques",
+      "line_count": 82
+    },
+    {
+      "filename": "wireframe-examples.md",
+      "title": "Wireframe Examples",
+      "line_count": 26
+    },
+    {
+      "filename": "prototype-testing.md",
+      "title": "Prototype Testing",
+      "line_count": 40
+    }
+  ],
+  "backup": "skills/wireframe-prototyping/SKILL.md.original",
+  "domain": "frontend",
+  "status": "restructured"
+}

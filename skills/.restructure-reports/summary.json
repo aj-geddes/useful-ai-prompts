@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-03-03T04:44:38-06:00",
+  "total_skills": 259,
+  "already_restructured": 1,
+  "processed": 258,
+  "restructured": 227,
+  "skipped": 31,
+  "validation": {
+    "pass": 202,
+    "warn": 25,
+    "fail": 31,
+    "pass_rate": 87
+  },
+  "size_distribution": {
+    "large": 81,
+    "medium": 176,
+    "small": 1
+  },
+  "agent_prompt_batches": 23
+}

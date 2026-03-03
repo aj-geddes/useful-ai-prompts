@@ -1,0 +1,47 @@
+{
+  "skill_name": "transaction-management",
+  "skill_dir": "skills/transaction-management",
+  "original_lines": 532,
+  "hub_lines": 79,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "postgresql-transactions.md",
+      "title": "PostgreSQL Transactions",
+      "line_count": 40
+    },
+    {
+      "filename": "mysql-transactions.md",
+      "title": "MySQL Transactions",
+      "line_count": 42
+    },
+    {
+      "filename": "postgresql-isolation-levels.md",
+      "title": "PostgreSQL Isolation Levels",
+      "line_count": 62
+    },
+    {
+      "filename": "mysql-isolation-levels.md",
+      "title": "MySQL Isolation Levels",
+      "line_count": 39
+    },
+    {
+      "filename": "postgresql-explicit-locking.md",
+      "title": "PostgreSQL Explicit Locking",
+      "line_count": 44
+    },
+    {
+      "filename": "mysql-locking.md",
+      "title": "MySQL Locking",
+      "line_count": 38
+    },
+    {
+      "filename": "deadlock-prevention.md",
+      "title": "Deadlock Prevention",
+      "line_count": 85
+    }
+  ],
+  "backup": "skills/transaction-management/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

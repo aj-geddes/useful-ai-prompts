@@ -1,0 +1,32 @@
+{
+  "skill_name": "sql-query-optimization",
+  "skill_dir": "skills/sql-query-optimization",
+  "original_lines": 222,
+  "hub_lines": 76,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "analyze-current-performance.md",
+      "title": "Analyze Current Performance",
+      "line_count": 36
+    },
+    {
+      "filename": "common-optimization-patterns.md",
+      "title": "Common Optimization Patterns",
+      "line_count": 39
+    },
+    {
+      "filename": "query-rewriting-techniques.md",
+      "title": "Query Rewriting Techniques",
+      "line_count": 42
+    },
+    {
+      "filename": "batch-operations.md",
+      "title": "Batch Operations",
+      "line_count": 30
+    }
+  ],
+  "backup": "skills/sql-query-optimization/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

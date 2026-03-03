@@ -1,0 +1,32 @@
+{
+  "skill_name": "network-debugging",
+  "skill_dir": "skills/network-debugging",
+  "original_lines": 287,
+  "hub_lines": 89,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "browser-network-tools.md",
+      "title": "Browser Network Tools",
+      "line_count": 65
+    },
+    {
+      "filename": "common-network-issues.md",
+      "title": "Common Network Issues",
+      "line_count": 87
+    },
+    {
+      "filename": "debugging-tools-techniques.md",
+      "title": "Debugging Tools & Techniques",
+      "line_count": 66
+    },
+    {
+      "filename": "checklist.md",
+      "title": "Checklist",
+      "line_count": 42
+    }
+  ],
+  "backup": "skills/network-debugging/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

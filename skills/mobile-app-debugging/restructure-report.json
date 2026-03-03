@@ -1,0 +1,32 @@
+{
+  "skill_name": "mobile-app-debugging",
+  "skill_dir": "skills/mobile-app-debugging",
+  "original_lines": 248,
+  "hub_lines": 88,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "ios-debugging.md",
+      "title": "iOS Debugging",
+      "line_count": 46
+    },
+    {
+      "filename": "android-debugging.md",
+      "title": "Android Debugging",
+      "line_count": 46
+    },
+    {
+      "filename": "cross-platform-issues.md",
+      "title": "Cross-Platform Issues",
+      "line_count": 63
+    },
+    {
+      "filename": "mobile-testing-debugging-checklist.md",
+      "title": "Mobile Testing & Debugging Checklist",
+      "line_count": 67
+    }
+  ],
+  "backup": "skills/mobile-app-debugging/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

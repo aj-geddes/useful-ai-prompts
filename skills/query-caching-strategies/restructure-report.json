@@ -1,0 +1,42 @@
+{
+  "skill_name": "query-caching-strategies",
+  "skill_dir": "skills/query-caching-strategies",
+  "original_lines": 423,
+  "hub_lines": 93,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "redis-caching-with-postgresql.md",
+      "title": "Redis Caching with PostgreSQL",
+      "line_count": 76
+    },
+    {
+      "filename": "memcached-caching.md",
+      "title": "Memcached Caching",
+      "line_count": 38
+    },
+    {
+      "filename": "postgresql-query-cache.md",
+      "title": "PostgreSQL Query Cache",
+      "line_count": 42
+    },
+    {
+      "filename": "mysql-query-cache.md",
+      "title": "MySQL Query Cache",
+      "line_count": 25
+    },
+    {
+      "filename": "event-based-invalidation.md",
+      "title": "Event-Based Invalidation",
+      "line_count": 58
+    },
+    {
+      "filename": "time-based-invalidation.md",
+      "title": "Time-Based Invalidation",
+      "line_count": 44
+    }
+  ],
+  "backup": "skills/query-caching-strategies/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

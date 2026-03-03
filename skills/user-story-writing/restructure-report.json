@@ -1,0 +1,32 @@
+{
+  "skill_name": "user-story-writing",
+  "skill_dir": "skills/user-story-writing",
+  "original_lines": 394,
+  "hub_lines": 103,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "story-refinement-process.md",
+      "title": "Story Refinement Process",
+      "line_count": 95
+    },
+    {
+      "filename": "acceptance-criteria-examples.md",
+      "title": "Acceptance Criteria Examples",
+      "line_count": 57
+    },
+    {
+      "filename": "story-splitting.md",
+      "title": "Story Splitting",
+      "line_count": 70
+    },
+    {
+      "filename": "story-estimation.md",
+      "title": "Story Estimation",
+      "line_count": 53
+    }
+  ],
+  "backup": "skills/user-story-writing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

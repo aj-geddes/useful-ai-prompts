@@ -1,0 +1,37 @@
+{
+  "skill_name": "autoscaling-configuration",
+  "skill_dir": "skills/autoscaling-configuration",
+  "original_lines": 429,
+  "hub_lines": 100,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "kubernetes-horizontal-pod-autoscaler.md",
+      "title": "Kubernetes Horizontal Pod Autoscaler",
+      "line_count": 88
+    },
+    {
+      "filename": "aws-auto-scaling.md",
+      "title": "AWS Auto Scaling",
+      "line_count": 114
+    },
+    {
+      "filename": "custom-metrics-autoscaling.md",
+      "title": "Custom Metrics Autoscaling",
+      "line_count": 63
+    },
+    {
+      "filename": "autoscaling-script.md",
+      "title": "Autoscaling Script",
+      "line_count": 64
+    },
+    {
+      "filename": "monitoring-autoscaling.md",
+      "title": "Monitoring Autoscaling",
+      "line_count": 48
+    }
+  ],
+  "backup": "skills/autoscaling-configuration/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

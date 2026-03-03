@@ -1,0 +1,37 @@
+{
+  "skill_name": "background-job-processing",
+  "skill_dir": "skills/background-job-processing",
+  "original_lines": 566,
+  "hub_lines": 105,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "python-with-celery-and-redis.md",
+      "title": "Python with Celery and Redis",
+      "line_count": 184
+    },
+    {
+      "filename": "nodejs-with-bull-queue.md",
+      "title": "Node.js with Bull Queue",
+      "line_count": 156
+    },
+    {
+      "filename": "ruby-with-sidekiq.md",
+      "title": "Ruby with Sidekiq",
+      "line_count": 92
+    },
+    {
+      "filename": "job-retry-and-error-handling.md",
+      "title": "Job Retry and Error Handling",
+      "line_count": 41
+    },
+    {
+      "filename": "monitoring-and-observability.md",
+      "title": "Monitoring and Observability",
+      "line_count": 38
+    }
+  ],
+  "backup": "skills/background-job-processing/SKILL.md.original",
+  "domain": "monitoring",
+  "status": "restructured"
+}

@@ -1,0 +1,47 @@
+{
+  "skill_name": "monorepo-management",
+  "skill_dir": "skills/monorepo-management",
+  "original_lines": 335,
+  "hub_lines": 94,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "npm-workspaces-configuration.md",
+      "title": "Npm Workspaces Configuration",
+      "line_count": 97
+    },
+    {
+      "filename": "monorepo-directory-structure.md",
+      "title": "Monorepo Directory Structure",
+      "line_count": 43
+    },
+    {
+      "filename": "workspace-dependencies.md",
+      "title": "Workspace Dependencies",
+      "line_count": 19
+    },
+    {
+      "filename": "lerna-commands.md",
+      "title": "Lerna Commands",
+      "line_count": 33
+    },
+    {
+      "filename": "turborepo-commands.md",
+      "title": "Turborepo Commands",
+      "line_count": 27
+    },
+    {
+      "filename": "cicd-for-monorepo.md",
+      "title": "CI/CD for Monorepo",
+      "line_count": 42
+    },
+    {
+      "filename": "version-management-across-packages.md",
+      "title": "Version Management Across Packages",
+      "line_count": 22
+    }
+  ],
+  "backup": "skills/monorepo-management/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

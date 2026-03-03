@@ -1,0 +1,37 @@
+{
+  "skill_name": "security-headers-configuration",
+  "skill_dir": "skills/security-headers-configuration",
+  "original_lines": 469,
+  "hub_lines": 96,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "nodejsexpress-security-headers.md",
+      "title": "Node.js/Express Security Headers",
+      "line_count": 114
+    },
+    {
+      "filename": "nginx-security-headers-configuration.md",
+      "title": "Nginx Security Headers Configuration",
+      "line_count": 67
+    },
+    {
+      "filename": "python-flask-security-headers.md",
+      "title": "Python Flask Security Headers",
+      "line_count": 101
+    },
+    {
+      "filename": "apache-htaccess-configuration.md",
+      "title": "Apache .htaccess Configuration",
+      "line_count": 44
+    },
+    {
+      "filename": "security-headers-testing-script.md",
+      "title": "Security Headers Testing Script",
+      "line_count": 85
+    }
+  ],
+  "backup": "skills/security-headers-configuration/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

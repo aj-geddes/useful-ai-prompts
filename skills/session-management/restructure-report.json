@@ -1,0 +1,47 @@
+{
+  "skill_name": "session-management",
+  "skill_dir": "skills/session-management",
+  "original_lines": 577,
+  "hub_lines": 107,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "jwt-token-generation-and-validation.md",
+      "title": "JWT Token Generation and Validation",
+      "line_count": 79
+    },
+    {
+      "filename": "nodejsexpress-jwt-implementation.md",
+      "title": "Node.js/Express JWT Implementation",
+      "line_count": 125
+    },
+    {
+      "filename": "session-storage-with-redis.md",
+      "title": "Session Storage with Redis",
+      "line_count": 100
+    },
+    {
+      "filename": "csrf-protection.md",
+      "title": "CSRF Protection",
+      "line_count": 42
+    },
+    {
+      "filename": "session-middleware-chain.md",
+      "title": "Session Middleware Chain",
+      "line_count": 74
+    },
+    {
+      "filename": "token-refresh-endpoint.md",
+      "title": "Token Refresh Endpoint",
+      "line_count": 35
+    },
+    {
+      "filename": "session-cleanup-and-maintenance.md",
+      "title": "Session Cleanup and Maintenance",
+      "line_count": 51
+    }
+  ],
+  "backup": "skills/session-management/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

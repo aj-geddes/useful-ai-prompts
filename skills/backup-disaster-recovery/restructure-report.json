@@ -1,0 +1,32 @@
+{
+  "skill_name": "backup-disaster-recovery",
+  "skill_dir": "skills/backup-disaster-recovery",
+  "original_lines": 474,
+  "hub_lines": 100,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "database-backup-configuration.md",
+      "title": "Database Backup Configuration",
+      "line_count": 118
+    },
+    {
+      "filename": "disaster-recovery-plan-template.md",
+      "title": "Disaster Recovery Plan Template",
+      "line_count": 71
+    },
+    {
+      "filename": "backup-and-restore-script.md",
+      "title": "Backup and Restore Script",
+      "line_count": 162
+    },
+    {
+      "filename": "cross-region-failover.md",
+      "title": "Cross-Region Failover",
+      "line_count": 76
+    }
+  ],
+  "backup": "skills/backup-disaster-recovery/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

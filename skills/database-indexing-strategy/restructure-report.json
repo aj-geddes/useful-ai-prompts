@@ -1,0 +1,27 @@
+{
+  "skill_name": "database-indexing-strategy",
+  "skill_dir": "skills/database-indexing-strategy",
+  "original_lines": 324,
+  "hub_lines": 71,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "postgresql-index-types.md",
+      "title": "PostgreSQL Index Types",
+      "line_count": 50
+    },
+    {
+      "filename": "mysql-index-types.md",
+      "title": "MySQL Index Types",
+      "line_count": 37
+    },
+    {
+      "filename": "single-column-indexes.md",
+      "title": "Single Column Indexes",
+      "line_count": 98
+    }
+  ],
+  "backup": "skills/database-indexing-strategy/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

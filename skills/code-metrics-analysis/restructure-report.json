@@ -1,0 +1,32 @@
+{
+  "skill_name": "code-metrics-analysis",
+  "skill_dir": "skills/code-metrics-analysis",
+  "original_lines": 492,
+  "hub_lines": 97,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "typescript-complexity-analyzer.md",
+      "title": "TypeScript Complexity Analyzer",
+      "line_count": 199
+    },
+    {
+      "filename": "python-code-metrics-using-radon.md",
+      "title": "Python Code Metrics (using radon)",
+      "line_count": 139
+    },
+    {
+      "filename": "eslint-plugin-for-complexity.md",
+      "title": "ESLint Plugin for Complexity",
+      "line_count": 50
+    },
+    {
+      "filename": "cicd-quality-gates.md",
+      "title": "CI/CD Quality Gates",
+      "line_count": 43
+    }
+  ],
+  "backup": "skills/code-metrics-analysis/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}

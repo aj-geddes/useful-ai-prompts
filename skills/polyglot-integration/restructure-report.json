@@ -1,0 +1,37 @@
+{
+  "skill_name": "polyglot-integration",
+  "skill_dir": "skills/polyglot-integration",
+  "original_lines": 312,
+  "hub_lines": 93,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "nodejs-native-addons-c.md",
+      "title": "Node.js Native Addons (C++)",
+      "line_count": 54
+    },
+    {
+      "filename": "python-from-nodejs.md",
+      "title": "Python from Node.js",
+      "line_count": 58
+    },
+    {
+      "filename": "rust-from-python-pyo3.md",
+      "title": "Rust from Python (PyO3)",
+      "line_count": 47
+    },
+    {
+      "filename": "grpc-polyglot-communication.md",
+      "title": "gRPC Polyglot Communication",
+      "line_count": 70
+    },
+    {
+      "filename": "java-from-python-py4j.md",
+      "title": "Java from Python (Py4J)",
+      "line_count": 37
+    }
+  ],
+  "backup": "skills/polyglot-integration/SKILL.md.original",
+  "domain": "cicd",
+  "status": "restructured"
+}

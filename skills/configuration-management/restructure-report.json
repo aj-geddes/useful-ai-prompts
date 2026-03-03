@@ -1,0 +1,47 @@
+{
+  "skill_name": "configuration-management",
+  "skill_dir": "skills/configuration-management",
+  "original_lines": 875,
+  "hub_lines": 106,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "environment-variables.md",
+      "title": "Environment Variables",
+      "line_count": 126
+    },
+    {
+      "filename": "configuration-hierarchies.md",
+      "title": "Configuration Hierarchies",
+      "line_count": 135
+    },
+    {
+      "filename": "secret-management.md",
+      "title": "Secret Management",
+      "line_count": 164
+    },
+    {
+      "filename": "feature-flags.md",
+      "title": "Feature Flags",
+      "line_count": 156
+    },
+    {
+      "filename": "12-factor-app-configuration.md",
+      "title": "12-Factor App Configuration",
+      "line_count": 81
+    },
+    {
+      "filename": "configuration-validation.md",
+      "title": "Configuration Validation",
+      "line_count": 47
+    },
+    {
+      "filename": "dynamic-configuration-remote-config.md",
+      "title": "Dynamic Configuration (Remote Config)",
+      "line_count": 66
+    }
+  ],
+  "backup": "skills/configuration-management/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

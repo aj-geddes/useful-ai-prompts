@@ -1,0 +1,42 @@
+{
+  "skill_name": "data-migration-scripts",
+  "skill_dir": "skills/data-migration-scripts",
+  "original_lines": 613,
+  "hub_lines": 110,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "knexjs-migrations-nodejs.md",
+      "title": "Knex.js Migrations (Node.js)",
+      "line_count": 92
+    },
+    {
+      "filename": "alembic-migrations-pythonsqlalchemy.md",
+      "title": "Alembic Migrations (Python/SQLAlchemy)",
+      "line_count": 72
+    },
+    {
+      "filename": "large-data-migration-with-batching.md",
+      "title": "Large Data Migration with Batching",
+      "line_count": 116
+    },
+    {
+      "filename": "zero-downtime-migration-pattern.md",
+      "title": "Zero-Downtime Migration Pattern",
+      "line_count": 63
+    },
+    {
+      "filename": "migration-validation.md",
+      "title": "Migration Validation",
+      "line_count": 120
+    },
+    {
+      "filename": "cross-database-migration.md",
+      "title": "Cross-Database Migration",
+      "line_count": 77
+    }
+  ],
+  "backup": "skills/data-migration-scripts/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

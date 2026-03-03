@@ -1,0 +1,27 @@
+{
+  "skill_name": "terraform-infrastructure",
+  "skill_dir": "skills/terraform-infrastructure",
+  "original_lines": 397,
+  "hub_lines": 98,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "aws-infrastructure-module.md",
+      "title": "AWS Infrastructure Module",
+      "line_count": 199
+    },
+    {
+      "filename": "variables-and-outputs.md",
+      "title": "Variables and Outputs",
+      "line_count": 76
+    },
+    {
+      "filename": "terraform-deployment-script.md",
+      "title": "Terraform Deployment Script",
+      "line_count": 63
+    }
+  ],
+  "backup": "skills/terraform-infrastructure/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

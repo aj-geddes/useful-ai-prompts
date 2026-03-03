@@ -1,0 +1,37 @@
+{
+  "skill_name": "caching-strategy",
+  "skill_dir": "skills/caching-strategy",
+  "original_lines": 677,
+  "hub_lines": 104,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "redis-cache-implementation-nodejs.md",
+      "title": "Redis Cache Implementation (Node.js)",
+      "line_count": 236
+    },
+    {
+      "filename": "cache-decorator-python.md",
+      "title": "Cache Decorator (Python)",
+      "line_count": 90
+    },
+    {
+      "filename": "multi-level-cache.md",
+      "title": "Multi-Level Cache",
+      "line_count": 103
+    },
+    {
+      "filename": "cache-invalidation-strategies.md",
+      "title": "Cache Invalidation Strategies",
+      "line_count": 81
+    },
+    {
+      "filename": "http-caching-headers.md",
+      "title": "HTTP Caching Headers",
+      "line_count": 95
+    }
+  ],
+  "backup": "skills/caching-strategy/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

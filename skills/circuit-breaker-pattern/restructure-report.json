@@ -1,0 +1,37 @@
+{
+  "skill_name": "circuit-breaker-pattern",
+  "skill_dir": "skills/circuit-breaker-pattern",
+  "original_lines": 572,
+  "hub_lines": 102,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "typescript-circuit-breaker.md",
+      "title": "TypeScript Circuit Breaker",
+      "line_count": 171
+    },
+    {
+      "filename": "circuit-breaker-with-monitoring.md",
+      "title": "Circuit Breaker with Monitoring",
+      "line_count": 74
+    },
+    {
+      "filename": "opossum-style-circuit-breaker-nodejs.md",
+      "title": "Opossum-Style Circuit Breaker (Node.js)",
+      "line_count": 67
+    },
+    {
+      "filename": "python-circuit-breaker.md",
+      "title": "Python Circuit Breaker",
+      "line_count": 134
+    },
+    {
+      "filename": "resilience4j-style-java.md",
+      "title": "Resilience4j-Style (Java)",
+      "line_count": 61
+    }
+  ],
+  "backup": "skills/circuit-breaker-pattern/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

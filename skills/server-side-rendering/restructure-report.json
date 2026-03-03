@@ -1,0 +1,47 @@
+{
+  "skill_name": "server-side-rendering",
+  "skill_dir": "skills/server-side-rendering",
+  "original_lines": 627,
+  "hub_lines": 106,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "flask-with-jinja2-templates.md",
+      "title": "Flask with Jinja2 Templates",
+      "line_count": 124
+    },
+    {
+      "filename": "jinja2-template-examples.md",
+      "title": "Jinja2 Template Examples",
+      "line_count": 165
+    },
+    {
+      "filename": "nodejsexpress-with-ejs-templates.md",
+      "title": "Node.js/Express with EJS Templates",
+      "line_count": 71
+    },
+    {
+      "filename": "ejs-template-examples.md",
+      "title": "EJS Template Examples",
+      "line_count": 70
+    },
+    {
+      "filename": "caching-and-performance.md",
+      "title": "Caching and Performance",
+      "line_count": 40
+    },
+    {
+      "filename": "django-template-examples.md",
+      "title": "Django Template Examples",
+      "line_count": 43
+    },
+    {
+      "filename": "django-templates.md",
+      "title": "Django Templates",
+      "line_count": 67
+    }
+  ],
+  "backup": "skills/server-side-rendering/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

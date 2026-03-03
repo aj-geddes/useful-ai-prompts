@@ -1,0 +1,57 @@
+{
+  "skill_name": "architecture-diagrams",
+  "skill_dir": "skills/architecture-diagrams",
+  "original_lines": 473,
+  "hub_lines": 111,
+  "reference_count": 9,
+  "references": [
+    {
+      "filename": "system-architecture-diagram.md",
+      "title": "System Architecture Diagram",
+      "line_count": 66
+    },
+    {
+      "filename": "sequence-diagram.md",
+      "title": "Sequence Diagram",
+      "line_count": 38
+    },
+    {
+      "filename": "c4-context-diagram.md",
+      "title": "C4 Context Diagram",
+      "line_count": 31
+    },
+    {
+      "filename": "component-diagram.md",
+      "title": "Component Diagram",
+      "line_count": 61
+    },
+    {
+      "filename": "deployment-diagram.md",
+      "title": "Deployment Diagram",
+      "line_count": 57
+    },
+    {
+      "filename": "data-flow-diagram.md",
+      "title": "Data Flow Diagram",
+      "line_count": 23
+    },
+    {
+      "filename": "class-diagram.md",
+      "title": "Class Diagram",
+      "line_count": 50
+    },
+    {
+      "filename": "component-diagram-2.md",
+      "title": "Component Diagram",
+      "line_count": 52
+    },
+    {
+      "filename": "deployment-diagram-2.md",
+      "title": "Deployment Diagram",
+      "line_count": 50
+    }
+  ],
+  "backup": "skills/architecture-diagrams/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

@@ -1,0 +1,47 @@
+{
+  "skill_name": "database-monitoring",
+  "skill_dir": "skills/database-monitoring",
+  "original_lines": 541,
+  "hub_lines": 93,
+  "reference_count": 7,
+  "references": [
+    {
+      "filename": "connection-monitoring.md",
+      "title": "Connection Monitoring",
+      "line_count": 60
+    },
+    {
+      "filename": "query-performance-monitoring.md",
+      "title": "Query Performance Monitoring",
+      "line_count": 59
+    },
+    {
+      "filename": "table-index-monitoring.md",
+      "title": "Table & Index Monitoring",
+      "line_count": 68
+    },
+    {
+      "filename": "performance-schema.md",
+      "title": "Performance Schema",
+      "line_count": 60
+    },
+    {
+      "filename": "innodb-monitoring.md",
+      "title": "InnoDB Monitoring",
+      "line_count": 50
+    },
+    {
+      "filename": "postgresql-monitoring-setup.md",
+      "title": "PostgreSQL Monitoring Setup",
+      "line_count": 52
+    },
+    {
+      "filename": "automated-monitoring-dashboard.md",
+      "title": "Automated Monitoring Dashboard",
+      "line_count": 46
+    }
+  ],
+  "backup": "skills/database-monitoring/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

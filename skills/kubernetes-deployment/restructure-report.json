@@ -1,0 +1,27 @@
+{
+  "skill_name": "kubernetes-deployment",
+  "skill_dir": "skills/kubernetes-deployment",
+  "original_lines": 368,
+  "hub_lines": 98,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "complete-deployment-with-resource-management.md",
+      "title": "Complete Deployment with Resource Management",
+      "line_count": 222
+    },
+    {
+      "filename": "deployment-script.md",
+      "title": "Deployment Script",
+      "line_count": 39
+    },
+    {
+      "filename": "service-account-and-rbac.md",
+      "title": "Service Account and RBAC",
+      "line_count": 41
+    }
+  ],
+  "backup": "skills/kubernetes-deployment/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

@@ -1,0 +1,37 @@
+{
+  "skill_name": "security-documentation",
+  "skill_dir": "skills/security-documentation",
+  "original_lines": 571,
+  "hub_lines": 103,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "1-password-requirements.md",
+      "title": "1 Password Requirements",
+      "line_count": 38
+    },
+    {
+      "filename": "2-multi-factor-authentication-mfa.md",
+      "title": "2 Multi-Factor Authentication (MFA)",
+      "line_count": 46
+    },
+    {
+      "filename": "3-role-based-access-control-rbac.md",
+      "title": "3 Role-Based Access Control (RBAC)",
+      "line_count": 47
+    },
+    {
+      "filename": "1-secure-coding-practices.md",
+      "title": "1 Secure Coding Practices",
+      "line_count": 59
+    },
+    {
+      "filename": "2-security-headers.md",
+      "title": "2 Security Headers",
+      "line_count": 48
+    }
+  ],
+  "backup": "skills/security-documentation/SKILL.md.original",
+  "domain": "security",
+  "status": "restructured"
+}

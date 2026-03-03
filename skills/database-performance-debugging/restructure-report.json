@@ -1,0 +1,32 @@
+{
+  "skill_name": "database-performance-debugging",
+  "skill_dir": "skills/database-performance-debugging",
+  "original_lines": 249,
+  "hub_lines": 88,
+  "reference_count": 4,
+  "references": [
+    {
+      "filename": "identify-slow-queries.md",
+      "title": "Identify Slow Queries",
+      "line_count": 34
+    },
+    {
+      "filename": "common-issues-solutions.md",
+      "title": "Common Issues & Solutions",
+      "line_count": 72
+    },
+    {
+      "filename": "execution-plan-analysis.md",
+      "title": "Execution Plan Analysis",
+      "line_count": 55
+    },
+    {
+      "filename": "debugging-process.md",
+      "title": "Debugging Process",
+      "line_count": 62
+    }
+  ],
+  "backup": "skills/database-performance-debugging/SKILL.md.original",
+  "domain": "database",
+  "status": "restructured"
+}

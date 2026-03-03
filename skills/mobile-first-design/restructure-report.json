@@ -1,0 +1,27 @@
+{
+  "skill_name": "mobile-first-design",
+  "skill_dir": "skills/mobile-first-design",
+  "original_lines": 305,
+  "hub_lines": 101,
+  "reference_count": 3,
+  "references": [
+    {
+      "filename": "responsive-design-implementation.md",
+      "title": "Responsive Design Implementation",
+      "line_count": 75
+    },
+    {
+      "filename": "mobile-performance.md",
+      "title": "Mobile Performance",
+      "line_count": 51
+    },
+    {
+      "filename": "progressive-enhancement.md",
+      "title": "Progressive Enhancement",
+      "line_count": 52
+    }
+  ],
+  "backup": "skills/mobile-first-design/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

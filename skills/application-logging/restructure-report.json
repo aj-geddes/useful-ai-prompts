@@ -1,0 +1,42 @@
+{
+  "skill_name": "application-logging",
+  "skill_dir": "skills/application-logging",
+  "original_lines": 282,
+  "hub_lines": 99,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "nodejs-structured-logging-with-winston.md",
+      "title": "Node.js Structured Logging with Winston",
+      "line_count": 41
+    },
+    {
+      "filename": "express-http-request-logging.md",
+      "title": "Express HTTP Request Logging",
+      "line_count": 48
+    },
+    {
+      "filename": "python-structured-logging.md",
+      "title": "Python Structured Logging",
+      "line_count": 32
+    },
+    {
+      "filename": "flask-integration.md",
+      "title": "Flask Integration",
+      "line_count": 49
+    },
+    {
+      "filename": "elk-stack-setup.md",
+      "title": "ELK Stack Setup",
+      "line_count": 41
+    },
+    {
+      "filename": "logstash-configuration.md",
+      "title": "Logstash Configuration",
+      "line_count": 32
+    }
+  ],
+  "backup": "skills/application-logging/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

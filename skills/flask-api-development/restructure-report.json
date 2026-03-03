@@ -1,0 +1,42 @@
+{
+  "skill_name": "flask-api-development",
+  "skill_dir": "skills/flask-api-development",
+  "original_lines": 455,
+  "hub_lines": 103,
+  "reference_count": 6,
+  "references": [
+    {
+      "filename": "flask-application-setup.md",
+      "title": "Flask Application Setup",
+      "line_count": 56
+    },
+    {
+      "filename": "database-models-with-sqlalchemy.md",
+      "title": "Database Models with SQLAlchemy",
+      "line_count": 72
+    },
+    {
+      "filename": "authentication-and-jwt.md",
+      "title": "Authentication and JWT",
+      "line_count": 81
+    },
+    {
+      "filename": "blueprints-for-modular-api-design.md",
+      "title": "Blueprints for Modular API Design",
+      "line_count": 77
+    },
+    {
+      "filename": "request-validation.md",
+      "title": "Request Validation",
+      "line_count": 44
+    },
+    {
+      "filename": "application-factory-and-configuration.md",
+      "title": "Application Factory and Configuration",
+      "line_count": 54
+    }
+  ],
+  "backup": "skills/flask-api-development/SKILL.md.original",
+  "domain": "api",
+  "status": "restructured"
+}

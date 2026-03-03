@@ -1,0 +1,37 @@
+{
+  "skill_name": "secrets-management",
+  "skill_dir": "skills/secrets-management",
+  "original_lines": 502,
+  "hub_lines": 91,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "hashicorp-vault-setup.md",
+      "title": "HashiCorp Vault Setup",
+      "line_count": 23
+    },
+    {
+      "filename": "vault-kubernetes-integration.md",
+      "title": "Vault Kubernetes Integration",
+      "line_count": 146
+    },
+    {
+      "filename": "vault-secret-configuration.md",
+      "title": "Vault Secret Configuration",
+      "line_count": 62
+    },
+    {
+      "filename": "aws-secrets-manager-configuration.md",
+      "title": "AWS Secrets Manager Configuration",
+      "line_count": 115
+    },
+    {
+      "filename": "kubernetes-secrets.md",
+      "title": "Kubernetes Secrets",
+      "line_count": 111
+    }
+  ],
+  "backup": "skills/secrets-management/SKILL.md.original",
+  "domain": "infrastructure",
+  "status": "restructured"
+}

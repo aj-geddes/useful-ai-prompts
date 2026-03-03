@@ -1,0 +1,37 @@
+{
+  "skill_name": "frontend-testing",
+  "skill_dir": "skills/frontend-testing",
+  "original_lines": 416,
+  "hub_lines": 91,
+  "reference_count": 5,
+  "references": [
+    {
+      "filename": "jest-unit-testing-react.md",
+      "title": "Jest Unit Testing (React)",
+      "line_count": 85
+    },
+    {
+      "filename": "react-testing-library-integration-tests.md",
+      "title": "React Testing Library Integration Tests",
+      "line_count": 107
+    },
+    {
+      "filename": "vitest-for-vue-testing.md",
+      "title": "Vitest for Vue Testing",
+      "line_count": 59
+    },
+    {
+      "filename": "cypress-e2e-testing.md",
+      "title": "Cypress E2E Testing",
+      "line_count": 82
+    },
+    {
+      "filename": "test-coverage-configuration.md",
+      "title": "Test Coverage Configuration",
+      "line_count": 50
+    }
+  ],
+  "backup": "skills/frontend-testing/SKILL.md.original",
+  "domain": "testing",
+  "status": "restructured"
+}
