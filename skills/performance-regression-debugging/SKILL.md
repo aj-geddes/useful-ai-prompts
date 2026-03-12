@@ -2,7 +2,8 @@
 name: performance-regression-debugging
 description: >
   Identify and debug performance regressions from code changes. Use comparison
-  and profiling to locate what degraded performance and restore baseline
+  and profiling to locate what degraded performance and restore baseline.
+  Use when after deployment performance degrades, metrics show negative trend, user complaints about slowness, or a/b testing shows variance.
   metrics.
 ---
 
@@ -76,13 +77,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Maintain recorded baseline metrics (response time, TTFB, LCP, memory, bundle size) and compare against them after every deployment
+- Use `git bisect` with an automated performance test to pinpoint the exact commit that introduced the regression
+- Profile the hot path with flame graphs or CPU profilers rather than guessing which function is slower
+- Run performance tests in a stable, isolated environment to avoid noisy-neighbor variance skewing results
+- Set CI gates that fail the build when key metrics regress beyond a defined threshold (e.g., p95 latency +10%)
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Rely on a single metric — a regression in response time might actually be caused by increased memory pressure or GC pauses
+- Compare production metrics across different traffic volumes without normalizing for load
+- Apply a fix without verifying the improvement with the same benchmark that detected the regression
+- Ignore regressions in bundle size or asset count — they compound over time and directly impact load performance

@@ -80,13 +80,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Establish performance baselines during normal traffic before setting alert thresholds
+- Monitor connection pool utilization and idle-in-transaction sessions continuously
+- Track replication lag, WAL growth, and disk I/O alongside query-level metrics
+- Set up alerts for table bloat, long-running transactions, and lock wait times
+- Use pg_stat_statements or Performance Schema to identify top queries by total time
+- Retain historical metrics for capacity planning and trend analysis
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Set alert thresholds so low they cause alert fatigue — tune for actionable signals only
+- Monitor only CPU and memory while ignoring disk IOPS and query plan regressions
+- Query system catalogs (pg_stat_activity, information_schema) at high frequency on production without rate-limiting
+- Rely solely on application-level latency without correlating to database-level wait events

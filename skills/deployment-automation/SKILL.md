@@ -2,6 +2,7 @@
 name: deployment-automation
 description: >
   Automate deployments across environments using Helm, Terraform, and ArgoCD.
+  Use when continuous deployment to kubernetes, infrastructure as code deployment, multi-environment promotion, or blue-green deployment strategies.
   Implement blue-green deployments, canary releases, and rollback strategies.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: ML Pipeline Automation
+name: ml-pipeline-automation
 description: Build end-to-end ML pipelines with automated data processing, training, validation, and deployment using Airflow, Kubeflow, and Jenkins
 ---
 

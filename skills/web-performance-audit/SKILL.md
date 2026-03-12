@@ -1,7 +1,8 @@
 ---
 name: web-performance-audit
 description: >
-  Conduct comprehensive web performance audits. Measure page speed, identify
+  Conduct comprehensive web performance audits. Measure page speed, identify.
+  Use when regular performance monitoring, after major changes, user complaints about slowness, or seo optimization.
   bottlenecks, and recommend optimizations to improve user experience and SEO.
 ---
 

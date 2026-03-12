@@ -2,7 +2,8 @@
 name: visual-regression-testing
 description: >
   Detect unintended visual changes in UI by comparing screenshots across
-  versions. Use for visual regression, screenshot diff, Percy, Chromatic, UI
+  versions. Use for visual regression, screenshot diff, Percy, Chromatic, UI.
+  Use when detecting css regression bugs, validating responsive design across viewports, testing across different browsers, or verifying component visual consistency.
   testing, and visual validation.
 ---
 

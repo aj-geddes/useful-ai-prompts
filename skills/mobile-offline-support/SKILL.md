@@ -2,7 +2,8 @@
 name: mobile-offline-support
 description: >
   Implement offline-first mobile apps with local storage, sync strategies, and
-  conflict resolution. Covers AsyncStorage, Realm, SQLite, and background sync
+  conflict resolution. Covers AsyncStorage, Realm, SQLite, and background sync.
+  Use when building apps that work without internet connection, implementing seamless sync when connectivity returns, handling data conflicts between device and server, or reducing server load with intelligent caching.
   patterns.
 ---
 

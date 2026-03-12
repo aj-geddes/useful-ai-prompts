@@ -2,7 +2,8 @@
 name: jenkins-pipeline
 description: >
   Build Jenkins declarative and scripted pipelines with stages, agents,
-  parameters, and plugins. Implement multi-branch pipelines and deployment
+  parameters, and plugins. Implement multi-branch pipelines and deployment.
+  Use when enterprise ci/cd infrastructure, complex multi-stage builds, on-premise deployment automation, or parameterized builds.
   automation.
 ---
 

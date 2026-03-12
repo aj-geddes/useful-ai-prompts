@@ -1,7 +1,8 @@
 ---
 name: gcp-cloud-functions
 description: >
-  Deploy serverless functions on Google Cloud Platform with triggers, IAM roles,
+  Deploy serverless functions on Google Cloud Platform with triggers, IAM roles,.
+  Use when http apis and webhooks, pub/sub message processing, storage bucket events, or firestore database triggers.
   environment variables, and monitoring. Use for event-driven computing on GCP.
 ---
 

@@ -1,6 +1,8 @@
 ---
-name: Time Series Analysis
-description: Analyze temporal data patterns including trends, seasonality, autocorrelation, and forecasting for time series decomposition, trend analysis, and forecasting models
+name: time-series-analysis
+description: >
+  Analyze temporal data patterns including trends, seasonality, autocorrelation, and forecasting for time series decomposition, trend analysis, and forecasting models.
+  Use when forecasting future values based on historical trends, detecting seasonality and cyclical patterns in data, analyzing trends over time in sales, stock prices, or website traffic, or understanding autocorrelation and temporal dependencies.
 ---
 
 # Time Series Analysis

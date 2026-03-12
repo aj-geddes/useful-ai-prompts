@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Validate on both client and server — client-side validation is a UX convenience, not a security boundary
+- Show inline error messages next to the field that failed, not just a summary at the top
+- Use schema-based validation (Zod, Yup) to share validation rules between frontend and backend
+- Debounce async validators (e.g., username availability checks) to avoid excessive API calls
+- Associate error messages with fields via aria-describedby for screen reader accessibility
+- Preserve user input on validation failure — never clear the form on error
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Validate on blur alone — combine with on-submit validation so users see all errors before submitting
+- Write custom regex for emails — use the validation library's built-in email validator or type="email"
+- Block form submission silently — always surface a visible, specific error message
+- Rely on HTML5 required/pattern attributes as the sole validation — they vary across browsers

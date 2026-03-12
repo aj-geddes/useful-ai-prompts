@@ -1,7 +1,8 @@
 ---
 name: api-response-optimization
 description: >
-  Optimize API response times through caching, compression, and efficient
+  Optimize API response times through caching, compression, and efficient.
+  Use when slow api response times, high server cpu/memory usage, large response payloads, or performance degradation.
   payloads. Improve backend performance and reduce network traffic.
 ---
 
@@ -75,13 +76,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Return only the fields the client needs — use sparse fieldsets or a projection layer
+- Enable gzip/brotli compression for all JSON responses over 1 KB
+- Set appropriate `Cache-Control` and `ETag` headers for cacheable endpoints
+- Paginate list endpoints and include `total`, `limit`, and `offset` in the response
+- Use HTTP 304 (Not Modified) to avoid re-sending unchanged resources
+- Profile slow queries with `EXPLAIN ANALYZE` and add indexes before caching around them
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Expose internal or sensitive fields (`password_hash`, `ssn`, internal IDs) in API responses
+- Nest related resources deeply — prefer flat payloads or links for associations
+- Cache authenticated or user-specific responses in shared/public caches
+- Rely solely on application-level caching without setting HTTP cache headers

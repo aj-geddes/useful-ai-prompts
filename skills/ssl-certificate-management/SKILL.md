@@ -1,7 +1,8 @@
 ---
 name: ssl-certificate-management
 description: >
-  Manage SSL/TLS certificates with automated provisioning, renewal, and
+  Manage SSL/TLS certificates with automated provisioning, renewal, and.
+  Use when https/tls enablement, certificate renewal automation, multi-domain certificate management, or wildcard certificate handling.
   monitoring using Let's Encrypt, ACM, or Vault.
 ---
 

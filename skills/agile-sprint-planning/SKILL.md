@@ -2,7 +2,8 @@
 name: agile-sprint-planning
 description: >
   Plan and execute effective sprints using Agile methodologies. Define sprint
-  goals, estimate user stories, manage sprint backlog, and facilitate daily
+  goals, estimate user stories, manage sprint backlog, and facilitate daily.
+  Use when starting a new sprint cycle, defining sprint goals and objectives, estimating user stories and tasks, or managing sprint backlog prioritization.
   standups to maximize team productivity and deliver value incrementally.
 ---
 

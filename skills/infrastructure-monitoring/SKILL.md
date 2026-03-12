@@ -1,7 +1,8 @@
 ---
 name: infrastructure-monitoring
 description: >
-  Set up comprehensive infrastructure monitoring with Prometheus, Grafana, and
+  Set up comprehensive infrastructure monitoring with Prometheus, Grafana, and.
+  Use when real-time performance monitoring, capacity planning and trends, incident detection and alerting, or service health tracking.
   alerting systems for metrics, health checks, and performance tracking.
 ---
 
@@ -79,13 +80,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Define alerts on symptoms (error rate, latency, saturation) rather than causes — let dashboards show the cause
+- Use the USE method (Utilization, Saturation, Errors) for infrastructure and RED method (Rate, Errors, Duration) for services
+- Set retention policies that balance cost with the need for historical trend analysis and capacity planning
+- Include runbook links in every alert so on-call responders know the immediate next steps
+- Monitor the monitoring stack itself — a silent alerting pipeline is worse than no alerting at all
+- Label metrics consistently with service, environment, and instance dimensions for easy filtering
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Alert on every metric threshold — this creates alert fatigue and trains teams to ignore pages
+- Set static thresholds without accounting for normal variance (use anomaly detection or dynamic thresholds where possible)
+- Rely solely on pull-based scraping for ephemeral workloads — use push gateways or service mesh telemetry for short-lived jobs
+- Store high-cardinality labels (user IDs, request IDs) in Prometheus metrics — use logs or traces for that data

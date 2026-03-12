@@ -2,7 +2,8 @@
 name: mutation-testing
 description: >
   Evaluate test suite quality by introducing code mutations and verifying tests
-  catch them. Use for mutation testing, test quality, mutant detection, Stryker,
+  catch them. Use for mutation testing, test quality, mutant detection, Stryker,.
+  Use when evaluating test suite effectiveness, finding untested code paths, improving test quality metrics, or validating critical business logic is well-tested.
   PITest, and test effectiveness analysis.
 ---
 

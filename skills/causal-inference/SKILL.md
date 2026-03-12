@@ -1,6 +1,8 @@
 ---
-name: Causal Inference
-description: Determine cause-and-effect relationships using propensity scoring, instrumental variables, and causal graphs for policy evaluation and treatment effects
+name: causal-inference
+description: >
+  Determine cause-and-effect relationships using propensity scoring, instrumental variables, and causal graphs for policy evaluation and treatment effects.
+  Use when evaluating the impact of policy interventions or business decisions, estimating treatment effects when randomized experiments aren't feasible, controlling for confounding variables in observational data, or determining if a marketing campaign or product change caused an outcome.
 ---
 
 # Causal Inference

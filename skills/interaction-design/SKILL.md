@@ -2,7 +2,8 @@
 name: interaction-design
 description: >
   Design meaningful interactions and microinteractions. Create delightful user
-  experiences through thoughtful animation, feedback, and responsive interface
+  experiences through thoughtful animation, feedback, and responsive interface.
+  Use when designing user flows and touchpoints, creating animations and transitions, defining error and loading states, or building microinteractions.
   design.
 ---
 

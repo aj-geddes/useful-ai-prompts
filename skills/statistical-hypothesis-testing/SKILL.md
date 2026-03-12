@@ -1,5 +1,5 @@
 ---
-name: Statistical Hypothesis Testing
+name: statistical-hypothesis-testing
 description: Conduct statistical tests including t-tests, chi-square, ANOVA, and p-value analysis for statistical significance, hypothesis validation, and A/B testing
 ---
 

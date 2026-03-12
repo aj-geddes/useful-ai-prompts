@@ -1,7 +1,8 @@
 ---
 name: database-performance-debugging
 description: >
-  Debug database performance issues through query analysis, index optimization,
+  Debug database performance issues through query analysis, index optimization,.
+  Use when slow application response times, high database cpu, slow queries identified, or performance regression.
   and execution plan review. Identify and fix slow queries.
 ---
 
@@ -75,13 +76,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Start with EXPLAIN (ANALYZE, BUFFERS) to compare estimated vs actual rows and identify seq scans
+- Check pg_stat_statements or slow query log for top offenders by total execution time, not just single-call latency
+- Correlate query regressions with recent schema changes, data growth, or autovacuum activity
+- Profile under realistic load — single-query EXPLAIN misses contention and lock-wait issues
+- Look at actual buffer hits vs disk reads to distinguish CPU-bound from I/O-bound queries
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Optimize queries in isolation without considering how they behave under concurrent load
+- Add indexes as a reflex without confirming the planner will use them (check with EXPLAIN)
+- Ignore table bloat and dead tuples — they cause full-table scans even with valid indexes
+- Tune database parameters (work_mem, shared_buffers) without measuring the effect with benchmarks

@@ -63,13 +63,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Run `EXPLAIN ANALYZE` before and after changes to measure actual improvement, not just estimated cost
+- Add indexes on columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses for high-traffic queries
+- Use `EXISTS` instead of `IN` for correlated subqueries against large tables
+- Prefer batch operations (`INSERT ... SELECT`, bulk updates) over row-by-row processing
+- Keep statistics up to date with `ANALYZE` (PostgreSQL) or `ANALYZE TABLE` (MySQL) after large data changes
+- Limit result sets with pagination or `LIMIT` to avoid fetching unnecessary rows
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use `SELECT *` in production queries — fetch only the columns you need
+- Wrap indexed columns in functions (e.g., `WHERE UPPER(name) = ...`) which prevents index usage
+- Add indexes blindly — each index slows writes and consumes storage; profile first
+- Optimize queries against development data and assume they will perform the same on production volumes

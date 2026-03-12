@@ -2,7 +2,8 @@
 name: gcp-cloud-run
 description: >
   Deploy containerized applications on Google Cloud Run with automatic scaling,
-  traffic management, and service mesh integration. Use for container-based
+  traffic management, and service mesh integration. Use for container-based.
+  Use when microservices and apis, web applications and backends, batch processing jobs, or long-running background workers.
   serverless computing.
 ---
 

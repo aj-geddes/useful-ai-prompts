@@ -2,7 +2,8 @@
 name: terraform-infrastructure
 description: >
   Infrastructure as Code using Terraform with modular components, state
-  management, and multi-cloud deployments. Use for provisioning and managing
+  management, and multi-cloud deployments. Use for provisioning and managing.
+  Use when cloud infrastructure provisioning, multi-environment management (dev, staging, prod), infrastructure versioning and code review, or cost tracking and resource optimization.
   cloud resources.
 ---
 

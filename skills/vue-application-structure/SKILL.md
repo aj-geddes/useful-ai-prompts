@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use the Composition API with `<script setup>` for concise, type-safe component definitions
+- Extract shared reactive logic into composables (`use*.ts`) and keep them independent of component state
+- Organize by feature (e.g., `features/auth/`, `features/dashboard/`) rather than by file type for large apps
+- Use Pinia for global state and `provide`/`inject` for scoped dependency injection within component trees
+- Define explicit TypeScript interfaces for props, emits, and composable return types
+- Use `defineProps` and `defineEmits` compiler macros for compile-time prop and event validation
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use the Options API in new Vue 3 code — it fragments logic across `data`, `methods`, `computed`, and `watch`
+- Mutate props directly — emit events to let the parent own the state
+- Put business logic in components; move it to composables or stores for testability
+- Over-use global state (Pinia) for data that only one component subtree needs

@@ -1,7 +1,8 @@
 ---
 name: container-registry-management
 description: >
-  Manage container registries (Docker Hub, ECR, GCR) with image scanning,
+  Manage container registries (Docker Hub, ECR, GCR) with image scanning,.
+  Use when container image storage and distribution, security scanning and compliance, image retention and cleanup, or registry access control.
   retention policies, and access control.
 ---
 

@@ -1,6 +1,8 @@
 ---
-name: Clustering Analysis
-description: Identify groups and patterns in data using k-means, hierarchical clustering, and DBSCAN for cluster discovery, customer segmentation, and unsupervised learning
+name: clustering-analysis
+description: >
+  Identify groups and patterns in data using k-means, hierarchical clustering, and DBSCAN for cluster discovery, customer segmentation, and unsupervised learning.
+  Use when segmenting customers based on purchasing behavior or demographics, discovering natural groupings in data without prior knowledge of categories, identifying market segments for targeted marketing campaigns, or organizing large datasets into meaningful categories for further analysis.
 ---
 
 # Clustering Analysis

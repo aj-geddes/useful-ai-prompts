@@ -1,7 +1,8 @@
 ---
 name: app-store-deployment
 description: >
-  Deploy iOS and Android apps to App Store and Google Play. Covers signing,
+  Deploy iOS and Android apps to App Store and Google Play. Covers signing,.
+  Use when publishing apps to app store and google play, managing app versions and releases, configuring signing certificates and provisioning profiles, or automating build and deployment processes.
   versioning, build configuration, submission process, and release management.
 ---
 

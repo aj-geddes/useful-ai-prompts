@@ -1,6 +1,8 @@
 ---
-name: Correlation Analysis
-description: Measure relationships between variables using correlation coefficients, correlation matrices, and association tests for correlation measurement, relationship analysis, and multicollinearity detection
+name: correlation-analysis
+description: >
+  Measure relationships between variables using correlation coefficients, correlation matrices, and association tests for correlation measurement, relationship analysis, and multicollinearity detection.
+  Use when identifying relationships between numerical variables, detecting multicollinearity before regression modeling, exploratory data analysis to understand feature dependencies, or feature selection and dimensionality reduction.
 ---
 
 # Correlation Analysis

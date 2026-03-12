@@ -1,5 +1,5 @@
 ---
-name: Survival Analysis
+name: survival-analysis
 description: Analyze time-to-event data, calculate survival probabilities, and compare groups using Kaplan-Meier and Cox proportional hazards models
 ---
 

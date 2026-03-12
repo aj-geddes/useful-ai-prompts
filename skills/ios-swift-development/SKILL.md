@@ -2,7 +2,8 @@
 name: ios-swift-development
 description: >
   Develop native iOS apps with Swift. Covers MVVM architecture, SwiftUI,
-  URLSession for networking, Combine for reactive programming, and Core Data
+  URLSession for networking, Combine for reactive programming, and Core Data.
+  Use when creating native ios applications with optimal performance, leveraging ios-specific features and apis, building apps that require tight hardware integration, or using swiftui for declarative ui development.
   persistence.
 ---
 

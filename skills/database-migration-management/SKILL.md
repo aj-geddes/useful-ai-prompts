@@ -79,13 +79,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Write every migration with a matching rollback (down) script tested before deploying
+- Use non-locking operations (e.g., CREATE INDEX CONCURRENTLY, ADD COLUMN without DEFAULT on older PG)
+- Deploy schema changes separately from data backfills to keep transactions short
+- Record checksums for each migration file to detect accidental modifications
+- Test migrations against a production-size dataset copy, not just an empty schema
+- Add column with NULL first, backfill, then add NOT NULL constraint in a separate migration
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Run destructive DDL (DROP COLUMN, DROP TABLE) without a verified backup and rollback plan
+- Combine multiple unrelated schema changes in a single migration file
+- Rename columns in-place on high-traffic tables — use an expand-contract pattern instead
+- Assume migrations that pass on an empty database will succeed on production data

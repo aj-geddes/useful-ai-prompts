@@ -1,7 +1,8 @@
 ---
 name: git-hooks-setup
 description: >
-  Implement Git hooks using Husky, pre-commit, and custom scripts. Enforce code
+  Implement Git hooks using Husky, pre-commit, and custom scripts. Enforce code.
+  Use when pre-commit code quality checks, commit message validation, preventing secrets in commits, or running tests before push.
   quality, linting, and testing before commits and pushes.
 ---
 

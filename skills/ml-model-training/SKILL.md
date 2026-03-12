@@ -1,5 +1,5 @@
 ---
-name: ML Model Training
+name: ml-model-training
 description: Build and train machine learning models using scikit-learn, PyTorch, and TensorFlow for classification, regression, and clustering tasks
 ---
 

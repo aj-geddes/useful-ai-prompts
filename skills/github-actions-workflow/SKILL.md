@@ -1,7 +1,8 @@
 ---
 name: github-actions-workflow
 description: >
-  Build comprehensive GitHub Actions workflows for CI/CD, testing, security, and
+  Build comprehensive GitHub Actions workflows for CI/CD, testing, security, and.
+  Use when continuous integration and testing, build automation, security scanning and analysis, or dependency updates.
   deployment. Master workflows, jobs, steps, and conditional execution.
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: artifact-management
 description: >
-  Manage build artifacts, Docker images, and package registries. Configure
+  Manage build artifacts, Docker images, and package registries. Configure.
+  Use when docker image registry management, package publication and versioning, build artifact storage and retrieval, or container image optimization.
   artifact repositories, versioning, and distribution strategies.
 ---
 

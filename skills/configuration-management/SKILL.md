@@ -3,7 +3,8 @@ name: configuration-management
 description: >
   Manage application configuration including environment variables, settings
   management, configuration hierarchies, secret management, feature flags, and
-  12-factor app principles. Use for config, environment setup, or settings
+  12-factor app principles. Use for config, environment setup, or settings.
+  Use when setting up configuration for different environments, managing secrets and credentials, implementing feature flags, or creating configuration hierarchies.
   management.
 ---
 

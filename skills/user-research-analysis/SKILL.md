@@ -2,7 +2,8 @@
 name: user-research-analysis
 description: >
   Analyze user research data to uncover insights, identify patterns, and inform
-  design decisions. Synthesize qualitative and quantitative research into
+  design decisions. Synthesize qualitative and quantitative research into.
+  Use when synthesis of user interviews and surveys, identifying patterns and themes, validating design assumptions, or prioritizing user needs.
   actionable recommendations.
 ---
 

@@ -2,7 +2,8 @@
 name: continuous-testing
 description: >
   Integrate automated testing into CI/CD pipelines for continuous quality
-  feedback. Use for continuous testing, CI testing, automated testing pipelines,
+  feedback. Use for continuous testing, CI testing, automated testing pipelines,.
+  Use when setting up ci/cd pipelines, automating test execution on commits, implementing shift-left testing, or running tests in parallel.
   test orchestration, and DevOps quality practices.
 ---
 

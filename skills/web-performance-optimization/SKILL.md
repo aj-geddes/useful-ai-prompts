@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Measure Core Web Vitals (LCP, FID/INP, CLS) before and after every optimization to confirm impact
+- Code-split routes and heavy components with dynamic `import()` to reduce initial bundle size
+- Serve images in modern formats (WebP/AVIF) with proper `width`/`height` attributes to prevent layout shift
+- Enable gzip or Brotli compression for text-based assets and set long-lived `Cache-Control` headers for static files
+- Use `<link rel="preload">` for critical fonts and above-the-fold images; use `<link rel="preconnect">` for third-party origins
+- Lazy-load below-the-fold images and iframes with `loading="lazy"` or Intersection Observer
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Load third-party scripts synchronously in the `<head>` — use `async` or `defer` attributes
+- Optimize based on Lighthouse scores alone without checking real-user metrics (RUM data)
+- Inline large CSS or JS blocks that defeat caching — extract them into cacheable files
+- Ignore Cumulative Layout Shift caused by ads, dynamically injected content, or web fonts without `font-display`

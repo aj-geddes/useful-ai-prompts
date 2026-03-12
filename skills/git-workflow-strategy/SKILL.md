@@ -2,7 +2,8 @@
 name: git-workflow-strategy
 description: >
   Master Git workflows including GitFlow, GitHub Flow, Trunk-Based Development.
-  Configure branches, merge strategies, and collaboration patterns for team
+  Configure branches, merge strategies, and collaboration patterns for team.
+  Use when team collaboration setup, release management, feature development coordination, or hotfix procedures.
   environments.
 ---
 

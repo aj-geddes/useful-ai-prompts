@@ -4,6 +4,7 @@ description: >
   Implement internationalization (i18n) and localization including message
   extraction, translation catalogs, pluralization rules, date/time/number
   formatting, RTL language support, and i18n libraries like i18next and gettext.
+  Use when building multi-language applications, supporting international users, implementing language switching, or formatting dates, times, and numbers for different locales.
   Use for multi-language, translation, or localization needs.
 ---
 

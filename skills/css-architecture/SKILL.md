@@ -76,13 +76,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Pick one naming methodology (BEM, SMACSS, or utility-first) and enforce it consistently across the project
+- Use CSS custom properties (variables) for colors, spacing, and typography to enable theming
+- Scope styles to components to prevent unintended cascade side-effects
+- Organize stylesheets in layers: reset/base, layout, components, utilities — imported in that order
+- Use a design token system so values stay in sync between design tools and code
+- Audit specificity regularly; keep selectors as flat as possible (ideally single-class)
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use `!important` to fix specificity wars — refactor the selectors instead
+- Nest selectors more than 2-3 levels deep in preprocessors; it produces fragile, high-specificity output
+- Mix naming conventions (e.g., BEM in some files, ad-hoc in others) within the same project
+- Duplicate style values as magic numbers — extract them into variables or tokens

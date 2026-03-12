@@ -1,7 +1,8 @@
 ---
 name: image-optimization
 description: >
-  Optimize images for web to reduce file size without sacrificing quality. Use
+  Optimize images for web to reduce file size without sacrificing quality. Use.
+  Use when website optimization, responsive image implementation, performance improvement, or mobile experience enhancement.
   compression, modern formats, and responsive techniques for faster loading.
 ---
 
@@ -75,13 +76,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Serve WebP/AVIF with `<picture>` fallbacks to JPEG/PNG for older browsers
+- Use responsive `srcset` and `sizes` attributes so devices download only the resolution they need
+- Lazy-load below-the-fold images with `loading="lazy"` or Intersection Observer
+- Automate compression in the build pipeline (e.g., sharp, imagemin) so optimized assets are never skipped
+- Set explicit `width` and `height` attributes or use CSS `aspect-ratio` to prevent Cumulative Layout Shift
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Serve uncompressed originals directly from a CMS or upload directory
+- Use PNG for photographic content — JPEG or WebP will be a fraction of the size at comparable quality
+- Resize images in CSS while delivering full-resolution files over the network
+- Strip all EXIF metadata blindly — preserve copyright and orientation data when legally required

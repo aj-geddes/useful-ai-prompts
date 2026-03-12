@@ -1,7 +1,8 @@
 ---
 name: cloud-storage-optimization
 description: >
-  Optimize cloud storage across AWS S3, Azure Blob, and GCP Cloud Storage with
+  Optimize cloud storage across AWS S3, Azure Blob, and GCP Cloud Storage with.
+  Use when reducing storage costs, optimizing data access patterns, implementing tiered storage strategies, or archiving historical data.
   compression, partitioning, lifecycle policies, and cost management.
 ---
 

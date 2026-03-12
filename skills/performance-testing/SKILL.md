@@ -2,7 +2,8 @@
 name: performance-testing
 description: >
   Design and execute performance tests to measure response times, throughput,
-  and resource utilization. Use for performance test, load test, JMeter, k6,
+  and resource utilization. Use for performance test, load test, JMeter, k6,.
+  Use when validating response time requirements, measuring api throughput and latency, testing database query performance, or identifying performance bottlenecks.
   benchmark, latency testing, and scalability analysis.
 ---
 

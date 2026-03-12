@@ -1,7 +1,8 @@
 ---
 name: cloud-security-configuration
 description: >
-  Implement comprehensive cloud security across AWS, Azure, and GCP with IAM,
+  Implement comprehensive cloud security across AWS, Azure, and GCP with IAM,.
+  Use when protecting sensitive data in cloud, compliance with regulations (gdpr, hipaa, pci-dss), implementing zero-trust security, or securing multi-cloud environments.
   encryption, network security, compliance, and threat detection.
 ---
 

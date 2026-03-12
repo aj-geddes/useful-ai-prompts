@@ -1,6 +1,8 @@
 ---
-name: Model Monitoring
-description: Monitor model performance, detect data drift, concept drift, and anomalies in production using Prometheus, Grafana, and MLflow
+name: model-monitoring
+description: >
+  Monitor model performance, detect data drift, concept drift, and anomalies in production using Prometheus, Grafana, and MLflow.
+  Use when when models are deployed in production environments serving real users, when detecting data drift or concept drift in input features, when tracking model performance metrics over time, or when ensuring model reliability, accuracy, and operational health.
 ---
 
 # Model Monitoring

@@ -66,13 +66,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Keep transactions as short as possible to minimize lock contention and reduce deadlock risk
+- Always acquire locks in a consistent order across all code paths to prevent deadlocks
+- Use the lowest isolation level that meets your consistency requirements (`READ COMMITTED` is often sufficient)
+- Implement retry logic with backoff for transactions that fail due to serialization errors or deadlocks
+- Use savepoints for partial rollbacks within complex multi-step transactions
+- Set explicit transaction timeouts to prevent runaway transactions from holding locks indefinitely
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Perform network calls, file I/O, or user-facing waits inside an open transaction
+- Use `SERIALIZABLE` isolation by default — it introduces significant overhead; justify the need first
+- Rely on implicit transactions for multi-statement operations where atomicity matters
+- Ignore `ROLLBACK` in error paths — leaked uncommitted transactions hold locks and block other sessions

@@ -1,6 +1,8 @@
 ---
-name: Cohort Analysis
-description: Track and analyze user cohorts over time, calculate retention rates, and identify behavioral patterns for customer lifecycle and retention analysis
+name: cohort-analysis
+description: >
+  Track and analyze user cohorts over time, calculate retention rates, and identify behavioral patterns for customer lifecycle and retention analysis.
+  Use when measuring user retention rates and identifying when users churn, analyzing customer lifetime value (ltv) and payback periods, comparing performance across different user acquisition channels or campaigns, or understanding how product changes affect different user groups over time.
 ---
 
 # Cohort Analysis

@@ -1,6 +1,8 @@
 ---
-name: Classification Modeling
-description: Build binary and multiclass classification models using logistic regression, decision trees, and ensemble methods for categorical prediction and classification
+name: classification-modeling
+description: >
+  Build binary and multiclass classification models using logistic regression, decision trees, and ensemble methods for categorical prediction and classification.
+  Use when predicting binary outcomes like customer churn, loan default, or email spam, classifying items into multiple categories such as product types or sentiment, building credit scoring models or risk assessment systems, or identifying disease diagnosis or medical condition from patient data.
 ---
 
 # Classification Modeling

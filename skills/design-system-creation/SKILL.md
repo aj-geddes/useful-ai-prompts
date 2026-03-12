@@ -2,7 +2,8 @@
 name: design-system-creation
 description: >
   Build comprehensive design systems with components, patterns, and guidelines.
-  Enable consistent design, faster development, and better collaboration across
+  Enable consistent design, faster development, and better collaboration across.
+  Use when multiple product interfaces or teams, scaling design consistency, reducing redundant component development, or improving design-to-dev handoff.
   teams.
 ---
 

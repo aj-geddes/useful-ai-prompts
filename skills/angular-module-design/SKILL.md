@@ -66,13 +66,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use feature modules to encapsulate related components, services, and routes
+- Lazy-load feature modules via `loadChildren` to reduce initial bundle size
+- Provide services at the appropriate injector level (`providedIn: 'root'` for singletons, module-level for scoped)
+- Separate smart (container) components from presentational (dumb) components
+- Use a `SharedModule` for common pipes, directives, and components re-exported across features
+- Barrel-export (`index.ts`) each feature module's public API to control encapsulation
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Import `BrowserModule` in feature modules — use `CommonModule` instead
+- Declare the same component in multiple modules (move it to a shared module)
+- Put all services in `AppModule` — scope them to the feature that owns the domain
+- Use eager imports for large feature modules that aren't needed at startup

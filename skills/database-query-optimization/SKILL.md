@@ -1,7 +1,8 @@
 ---
 name: database-query-optimization
 description: >
-  Improve database query performance through indexing, query optimization, and
+  Improve database query performance through indexing, query optimization, and.
+  Use when slow response times, high database cpu usage, performance regression, or new feature deployment.
   execution plan analysis. Reduce response times and database load.
 ---
 
@@ -69,13 +70,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Rewrite SELECT * to select only the columns needed — reduces I/O and enables index-only scans
+- Use EXPLAIN ANALYZE to verify index usage and check for unexpected seq scans or sort spills
+- Push filtering into WHERE clauses and JOINs rather than filtering in application code
+- Batch bulk operations (INSERT, UPDATE) to reduce round-trips and lock duration
+- Use CTEs or subqueries strategically — in PostgreSQL 12+, CTEs are inlined unless marked MATERIALIZED
+- Add covering indexes for frequently run queries to enable index-only scans
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use OR across different columns in WHERE clauses without rewriting as UNION ALL
+- Wrap indexed columns in functions (e.g., WHERE LOWER(email) = ...) without a matching expression index
+- Use OFFSET for deep pagination — use keyset (cursor-based) pagination instead
+- Rely on query plan caching without periodically re-checking plans after significant data changes

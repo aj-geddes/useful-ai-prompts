@@ -1,7 +1,8 @@
 ---
 name: gitlab-cicd-pipeline
 description: >
-  Design and implement GitLab CI/CD pipelines with stages, jobs, artifacts, and
+  Design and implement GitLab CI/CD pipelines with stages, jobs, artifacts, and.
+  Use when gitlab repository ci/cd setup, multi-stage build pipelines, docker registry integration, or kubernetes deployment.
   caching. Configure runners, Docker integration, and deployment strategies.
 ---
 

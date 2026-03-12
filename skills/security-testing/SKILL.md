@@ -2,7 +2,8 @@
 name: security-testing
 description: >
   Identify security vulnerabilities through SAST, DAST, penetration testing, and
-  dependency scanning. Use for security test, vulnerability scanning, OWASP, SQL
+  dependency scanning. Use for security test, vulnerability scanning, OWASP, SQL.
+  Use when testing for owasp top 10 vulnerabilities, scanning dependencies for known vulnerabilities, testing authentication and authorization, or validating input sanitization.
   injection, XSS, CSRF, and penetration testing.
 ---
 

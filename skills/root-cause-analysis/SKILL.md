@@ -1,7 +1,8 @@
 ---
 name: root-cause-analysis
 description: >
-  Conduct systematic root cause analysis to identify underlying problems. Use
+  Conduct systematic root cause analysis to identify underlying problems. Use.
+  Use when production incidents, customer-impacting issues, repeated problems, or unexpected failures.
   structured methodologies to prevent recurring issues and drive improvements.
 ---
 
@@ -74,13 +75,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Ask "why" at least five times before settling on a root cause — stop only when you reach a systemic factor
+- Gather timeline data, logs, and metrics before forming hypotheses to avoid confirmation bias
+- Distinguish between contributing factors and the actual root cause in your final report
+- Assign concrete, measurable corrective actions with owners and deadlines
+- Conduct the analysis blameless — focus on process and system failures, not individuals
+- Validate the proposed root cause by confirming it explains all observed symptoms
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Stop at the first plausible explanation without verifying it against all evidence
+- Conflate symptoms (e.g., "server crashed") with root causes (e.g., "no memory limits configured")
+- Skip documenting the RCA — undocumented findings get lost and the same issue recurs
+- Propose only detective controls; always include at least one preventive action

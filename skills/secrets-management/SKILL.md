@@ -1,7 +1,8 @@
 ---
 name: secrets-management
 description: >
-  Implement secrets management with HashiCorp Vault, AWS Secrets Manager, or
+  Implement secrets management with HashiCorp Vault, AWS Secrets Manager, or.
+  Use when database credentials management, api key and token storage, certificate management, or ssh key distribution.
   Kubernetes Secrets for secure credential storage and rotation.
 ---
 

@@ -2,7 +2,8 @@
 name: bundle-size-optimization
 description: >
   Reduce JavaScript and CSS bundle sizes through code splitting, tree shaking,
-  and optimization techniques. Improve load times and overall application
+  and optimization techniques. Improve load times and overall application.
+  Use when build process optimization, bundle analysis before deployment, performance baseline improvement, or mobile performance focus.
   performance.
 ---
 
@@ -76,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Run `webpack-bundle-analyzer` or `source-map-explorer` before and after changes to measure impact
+- Use dynamic `import()` for routes and heavy components to enable code splitting
+- Prefer tree-shakeable ESM imports (`import { debounce } from 'lodash-es'`) over default/namespace imports
+- Replace large libraries with lighter alternatives (e.g., `date-fns` instead of `moment.js`)
+- Set a bundle size budget in CI and fail the build when it's exceeded
+- Enable scope hoisting and minification in production builds
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Import entire libraries when you only use a few functions (`import _ from 'lodash'`)
+- Add polyfills for APIs already supported by your browser target matrix
+- Include development-only code (source maps, verbose logging) in production bundles
+- Optimize blindly — always measure first to focus effort on the largest chunks

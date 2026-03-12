@@ -2,7 +2,8 @@
 name: release-planning
 description: >
   Plan, coordinate, and execute software releases across environments. Manage
-  versioning, rollout strategies, rollback procedures, and stakeholder
+  versioning, rollout strategies, rollback procedures, and stakeholder.
+  Use when planning major feature releases, coordinating multi-system deployments, managing database migrations, or rolling out infrastructure changes.
   communication for smooth deployments.
 ---
 

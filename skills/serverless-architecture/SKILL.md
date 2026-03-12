@@ -2,7 +2,8 @@
 name: serverless-architecture
 description: >
   Design and implement serverless applications using AWS Lambda, Azure
-  Functions, and GCP Cloud Functions with event-driven patterns and
+  Functions, and GCP Cloud Functions with event-driven patterns and.
+  Use when event-driven applications, api backends and microservices, real-time data processing, or batch jobs and scheduled tasks.
   orchestration.
 ---
 

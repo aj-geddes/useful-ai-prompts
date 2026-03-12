@@ -1,7 +1,8 @@
 ---
 name: multi-cloud-strategy
 description: >
-  Design and implement multi-cloud strategies spanning AWS, Azure, and GCP with
+  Design and implement multi-cloud strategies spanning AWS, Azure, and GCP with.
+  Use when reducing vendor lock-in risk, optimizing costs across providers, geographic distribution requirements, or compliance with regional data laws.
   vendor lock-in avoidance, hybrid deployments, and federation.
 ---
 

@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Keep components small and single-purpose — split when a component handles more than one concern
+- Define explicit TypeScript interfaces for all props, including `children` typing
+- Extract reusable logic into custom hooks rather than duplicating state management across components
+- Use composition (children, render props, slots) over deep prop drilling or inheritance
+- Memoize expensive computations with `useMemo` and stable callback references with `useCallback`
+- Co-locate component styles, tests, and types in the same directory for discoverability
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Mutate state directly or derive state from props without `useMemo` (causes stale renders)
+- Use `useEffect` for derived state that can be computed during render
+- Create deeply nested component hierarchies — flatten with context or composition instead
+- Export internal implementation components that consumers should not use directly

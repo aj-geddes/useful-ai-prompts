@@ -1,7 +1,8 @@
 ---
 name: information-architecture
 description: >
-  Organize and structure information for clarity and discoverability. Design
+  Organize and structure information for clarity and discoverability. Design.
+  Use when website or app redesign, large information spaces (documentation, e-commerce), navigation structure planning, or taxonomy and categorization.
   navigation systems, hierarchies, and mental models that match user needs.
 ---
 

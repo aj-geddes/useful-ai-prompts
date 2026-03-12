@@ -1,7 +1,8 @@
 ---
 name: network-security-groups
 description: >
-  Configure network security groups and firewall rules to control
+  Configure network security groups and firewall rules to control.
+  Use when inbound traffic control, outbound traffic filtering, network segmentation, or zero-trust networking.
   inbound/outbound traffic and implement network segmentation.
 ---
 

@@ -1,6 +1,8 @@
 ---
-name: Computer Vision
-description: Implement computer vision tasks including image classification, object detection, segmentation, and pose estimation using PyTorch and TensorFlow
+name: computer-vision
+description: >
+  Implement computer vision tasks including image classification, object detection, segmentation, and pose estimation using PyTorch and TensorFlow.
+  Use when image classification and object recognition tasks, object detection and localization in images, semantic or instance segmentation projects, or pose estimation and human activity recognition.
 ---
 
 # Computer Vision

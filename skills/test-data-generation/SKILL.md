@@ -2,7 +2,8 @@
 name: test-data-generation
 description: >
   Generate realistic, consistent test data using factories, fixtures, and fake
-  data libraries. Use for test data, fixtures, mock data, faker, test builders,
+  data libraries. Use for test data, fixtures, mock data, faker, test builders,.
+  Use when creating fixtures for integration tests, generating fake data for development databases, building test data with complex relationships, or creating realistic user inputs for testing.
   and seed data generation.
 ---
 

@@ -80,13 +80,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Set explicit TTLs on every cached entry based on how frequently the underlying data changes
+- Use consistent, predictable cache key naming conventions (e.g., `entity:id:field`) across the codebase
+- Invalidate cache entries on write operations to prevent serving stale data
+- Implement cache warming for high-traffic queries during deployment or startup
+- Monitor cache hit ratios and eviction rates to tune TTLs and capacity
+- Use multi-level caching (in-process -> distributed -> database) for latency-sensitive paths
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Cache user-specific or sensitive data in shared cache layers without proper scoping
+- Let cache failures cascade into application errors — always fall through to the source of truth
+- Use unbounded caches without an eviction policy (LRU, LFU, or TTL-based)
+- Cache query results that include non-deterministic values (e.g., `NOW()`, `RANDOM()`)

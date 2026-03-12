@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Design mobile-first: write base styles for small screens and layer on complexity with `min-width` media queries
+- Use relative units (`rem`, `em`, `%`, `vw`) instead of fixed pixel values for sizing and spacing
+- Set the viewport meta tag (`<meta name="viewport" content="width=device-width, initial-scale=1">`) on every page
+- Use CSS Grid and Flexbox for layout rather than floats or absolute positioning hacks
+- Test on real devices and screen readers, not just browser DevTools resizing
+- Use `srcset` and `<picture>` elements to serve appropriately sized images per viewport
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use `max-width` media queries as the primary breakpoint strategy (inverts mobile-first)
+- Set fixed widths on containers that prevent content from reflowing on narrow screens
+- Hide critical content on mobile with `display: none` — restructure the layout instead
+- Rely solely on hover states for interactive elements, since touch devices lack hover

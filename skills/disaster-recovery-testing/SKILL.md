@@ -1,7 +1,8 @@
 ---
 name: disaster-recovery-testing
 description: >
-  Execute comprehensive disaster recovery tests, validate recovery procedures,
+  Execute comprehensive disaster recovery tests, validate recovery procedures,.
+  Use when annual dr exercises, infrastructure changes, new service deployments, or compliance requirements.
   and document lessons learned from DR exercises.
 ---
 

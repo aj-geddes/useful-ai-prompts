@@ -2,7 +2,8 @@
 name: accessibility-testing
 description: >
   Test web applications for WCAG compliance and ensure usability for users with
-  disabilities. Use for accessibility test, a11y, axe, ARIA, keyboard
+  disabilities. Use for accessibility test, a11y, axe, ARIA, keyboard.
+  Use when validating wcag 2.1/2.2 compliance, testing keyboard navigation, verifying screen reader compatibility, or testing color contrast ratios.
   navigation, screen reader compatibility, and WCAG validation.
 ---
 

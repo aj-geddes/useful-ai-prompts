@@ -2,7 +2,8 @@
 name: gap-analysis
 description: >
   Identify differences between current state and desired future state. Analyze
-  gaps in capabilities, processes, skills, and technology to plan improvements
+  gaps in capabilities, processes, skills, and technology to plan improvements.
+  Use when strategic planning and goal setting, technology modernization assessment, process improvement initiatives, or skills and training planning.
   and investments.
 ---
 

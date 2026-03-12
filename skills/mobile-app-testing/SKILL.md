@@ -2,7 +2,8 @@
 name: mobile-app-testing
 description: >
   Comprehensive mobile app testing strategies for iOS and Android. Covers unit
-  tests, UI tests, integration tests, performance testing, and test automation
+  tests, UI tests, integration tests, performance testing, and test automation.
+  Use when creating reliable mobile applications with test coverage, automating ui testing across ios and android, performance testing and optimization, or integration testing with backend services.
   with Detox, Appium, and XCTest.
 ---
 

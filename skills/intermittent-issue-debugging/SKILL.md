@@ -1,7 +1,8 @@
 ---
 name: intermittent-issue-debugging
 description: >
-  Debug issues that occur sporadically and are hard to reproduce. Use monitoring
+  Debug issues that occur sporadically and are hard to reproduce. Use monitoring.
+  Use when sporadic errors in logs, users report occasional issues, flaky tests, or race conditions suspected.
   and systematic investigation to identify root causes of flaky behavior.
 ---
 
@@ -76,13 +77,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Attach correlation IDs to every request so you can trace a single occurrence across services and logs
+- Increase logging verbosity temporarily around the suspected area and capture timestamps, thread IDs, and resource state
+- Reproduce timing-dependent bugs with stress tests, chaos engineering, or artificially injected delays
+- Use statistical analysis on occurrence patterns (time of day, load level, specific inputs) to narrow the search space
+- Write a deterministic regression test that reliably triggers the root cause before declaring the fix complete
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Dismiss a sporadic failure as a "fluke" without investigating — intermittent issues tend to worsen under load
+- Change multiple variables at once when testing a hypothesis; isolate one factor at a time
+- Remove enhanced logging immediately after a fix — keep it long enough to confirm the issue is truly resolved in production
+- Assume the issue is environment-specific without checking for shared dependencies like DNS, NTP, or connection pool limits

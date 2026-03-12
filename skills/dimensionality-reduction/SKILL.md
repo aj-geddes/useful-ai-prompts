@@ -1,6 +1,8 @@
 ---
-name: Dimensionality Reduction
-description: Reduce feature dimensionality using PCA, t-SNE, and feature selection for feature reduction, visualization, and computational efficiency
+name: dimensionality-reduction
+description: >
+  Reduce feature dimensionality using PCA, t-SNE, and feature selection for feature reduction, visualization, and computational efficiency.
+  Use when high-dimensional datasets with many features, visualizing complex datasets in 2d or 3d, reducing computational complexity and training time, or removing redundant or highly correlated features.
 ---
 
 # Dimensionality Reduction

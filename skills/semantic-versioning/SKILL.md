@@ -1,7 +1,8 @@
 ---
 name: semantic-versioning
 description: >
-  Implement semantic versioning (SemVer) with automated release management. Use
+  Implement semantic versioning (SemVer) with automated release management. Use.
+  Use when package and library releases, api versioning, version bumping automation, or release note generation.
   conventional commits, semantic-release, and version bumping strategies.
 ---
 

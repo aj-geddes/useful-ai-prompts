@@ -2,7 +2,8 @@
 name: data-replication-setup
 description: >
   Set up database replication for high availability and disaster recovery. Use
-  when configuring master-slave replication, multi-master setups, or replication
+  when configuring master-slave replication, multi-master setups, or replication.
+  Use when high availability setup, disaster recovery planning, read replica configuration, or multi-region replication.
   monitoring.
 ---
 
@@ -65,13 +66,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Monitor replication lag continuously and alert when it exceeds your RPO threshold
+- Test failover and promotion procedures regularly in a staging environment
+- Use dedicated replication users with minimal privileges (REPLICATION role only)
+- Configure WAL archiving or binary log retention alongside streaming replication for point-in-time recovery
+- Document the promotion runbook so any on-call engineer can execute it under pressure
+- Encrypt replication traffic with TLS, especially across regions or untrusted networks
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Write to replica databases — enforce read-only mode to prevent split-brain data corruption
+- Use the same credentials for application access and replication connections
+- Ignore replication slot or binary log disk usage — uncleared slots can fill the primary's disk
+- Assume automatic failover works without testing it; validate the entire promotion path end-to-end

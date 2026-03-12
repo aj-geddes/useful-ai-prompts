@@ -73,13 +73,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Normalize to 3NF by default, then selectively denormalize with clear justification for read performance
+- Define explicit foreign keys with appropriate ON DELETE/ON UPDATE actions for every relationship
+- Use the narrowest appropriate data type (e.g., INTEGER vs BIGINT, VARCHAR(n) vs TEXT where limits are known)
+- Add NOT NULL constraints by default and only allow NULL when the business domain requires it
+- Include created_at and updated_at timestamps on all mutable tables for auditability
+- Use UUID or BIGSERIAL primary keys consistently — avoid natural keys that may change
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Store comma-separated values or JSON arrays when a proper join table should be used
+- Create tables without primary keys or with composite natural keys that complicate joins
+- Skip CHECK constraints for domain-specific validation (e.g., positive prices, valid status enums)
+- Design schemas without considering the query patterns — schema and index strategy go together

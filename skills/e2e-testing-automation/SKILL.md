@@ -2,7 +2,8 @@
 name: e2e-testing-automation
 description: >
   Build end-to-end automated tests that simulate real user interactions across
-  the full application stack. Use for E2E test, Selenium, Cypress, Playwright,
+  the full application stack. Use for E2E test, Selenium, Cypress, Playwright,.
+  Use when testing critical user journeys (signup, checkout, login), validating multi-step workflows, testing across different browsers and devices, or regression testing for ui changes.
   browser automation, and user journey testing.
 ---
 
