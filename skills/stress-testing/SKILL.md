@@ -2,7 +2,8 @@
 name: stress-testing
 description: >
   Test system behavior under extreme load conditions to identify breaking
-  points, capacity limits, and failure modes. Use for stress test, capacity
+  points, capacity limits, and failure modes. Use for stress test, capacity.
+  Use when finding system capacity limits, identifying breaking points, testing auto-scaling behavior, or validating error handling under load.
   testing, breaking point analysis, spike test, and system limits validation.
 ---
 

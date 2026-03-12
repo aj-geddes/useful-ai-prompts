@@ -2,7 +2,8 @@
 name: memory-optimization
 description: >
   Profile and optimize application memory usage. Identify memory leaks, reduce
-  memory footprint, and improve efficiency for better performance and
+  memory footprint, and improve efficiency for better performance and.
+  Use when high memory usage, memory leaks suspected, slow performance, or out of memory crashes.
   reliability.
 ---
 
@@ -76,13 +77,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Profile with heap snapshots before and after suspected operations to measure actual retained memory, not just allocations
+- Use WeakRef and WeakMap for caches and observers that should not prevent garbage collection
+- Pool and reuse expensive objects (buffers, database connections) instead of allocating and discarding per request
+- Set memory budgets in CI (e.g., `--max-old-space-size` assertions) to catch regressions before they reach production
+- Clean up event listeners, timers, and subscriptions in component teardown or `finally` blocks
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Load entire datasets into memory when streaming or pagination would keep the working set bounded
+- Hold references to detached DOM nodes — this is the most common source of browser memory leaks
+- Rely on the garbage collector to compensate for unbounded growth in caches or queues — set explicit eviction policies
+- Optimize memory in micro-benchmarks without verifying the improvement under realistic, sustained load

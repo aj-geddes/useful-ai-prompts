@@ -1,6 +1,8 @@
 ---
-name: Model Hyperparameter Tuning
-description: Optimize hyperparameters using grid search, random search, Bayesian optimization, and automated ML frameworks like Optuna and Hyperopt
+name: model-hyperparameter-tuning
+description: >
+  Optimize hyperparameters using grid search, random search, Bayesian optimization, and automated ML frameworks like Optuna and Hyperopt.
+  Use when when optimizing model performance beyond baseline configurations, when comparing different parameter combinations systematically, when fine-tuning complex models with many hyperparameters, or when seeking the best trade-off between bias, variance, and training time.
 ---
 
 # Model Hyperparameter Tuning

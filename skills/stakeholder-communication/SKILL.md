@@ -2,7 +2,8 @@
 name: stakeholder-communication
 description: >
   Manage stakeholder expectations and engagement through targeted communication,
-  regular updates, and relationship building. Tailor messaging for different
+  regular updates, and relationship building. Tailor messaging for different.
+  Use when project kickoff and initiation, weekly/monthly status updates, major milestone achievements, or changes to scope, timeline, or budget.
   stakeholder groups and priorities.
 ---
 

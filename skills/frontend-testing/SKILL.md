@@ -78,13 +78,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Query elements by accessible roles and labels (`getByRole`, `getByLabelText`) rather than CSS selectors or test IDs
+- Test user-visible behavior and outcomes, not internal component state or implementation details
+- Use `waitFor` and `findBy` queries for async UI updates instead of arbitrary timeouts
+- Isolate unit tests with mocked API responses and test integration paths separately with MSW or similar
+- Write E2E tests for critical user journeys (login, checkout, form submission) that cover the full stack
+- Keep tests deterministic by resetting state between runs and avoiding shared mutable fixtures
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Snapshot-test large component trees — they produce brittle, low-signal diffs that get blindly updated
+- Couple tests to DOM structure (e.g., `div > span:nth-child(2)`) — refactors will break them without any real regression
+- Mix unit and E2E concerns in the same test file; keep the test pyramid layers distinct
+- Fire events directly on DOM nodes when `userEvent` from Testing Library provides more realistic interaction simulation

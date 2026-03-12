@@ -1,6 +1,8 @@
 ---
-name: Data Visualization
-description: Create effective visualizations using matplotlib and seaborn for exploratory analysis, presenting insights, and communicating findings with business stakeholders
+name: data-visualization
+description: >
+  Create effective visualizations using matplotlib and seaborn for exploratory analysis, presenting insights, and communicating findings with business stakeholders.
+  Use when exploratory data analysis and pattern discovery, communicating insights to stakeholders, comparing distributions and relationships, or presenting findings in reports and dashboards.
 ---
 
 # Data Visualization

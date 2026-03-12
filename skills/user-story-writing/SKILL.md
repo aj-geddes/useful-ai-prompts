@@ -2,7 +2,8 @@
 name: user-story-writing
 description: >
   Write effective user stories that capture requirements from the user's
-  perspective. Create clear stories with detailed acceptance criteria to guide
+  perspective. Create clear stories with detailed acceptance criteria to guide.
+  Use when breaking down requirements into development tasks, product backlog creation and refinement, agile sprint planning, or communicating features to development team.
   development and define done.
 ---
 

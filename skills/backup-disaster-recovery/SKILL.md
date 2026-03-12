@@ -1,7 +1,8 @@
 ---
 name: backup-disaster-recovery
 description: >
-  Implement backup strategies, disaster recovery plans, and data restoration
+  Implement backup strategies, disaster recovery plans, and data restoration.
+  Use when data protection and compliance, business continuity planning, disaster recovery planning, or point-in-time recovery.
   procedures for protecting critical infrastructure and data.
 ---
 

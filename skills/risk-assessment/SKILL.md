@@ -2,7 +2,8 @@
 name: risk-assessment
 description: >
   Identify, analyze, and prioritize project risks using qualitative and
-  quantitative methods. Develop mitigation strategies to minimize impact and
+  quantitative methods. Develop mitigation strategies to minimize impact and.
+  Use when project initiation and planning phases, before major milestones or decisions, when introducing new technologies, or third-party dependencies or integration.
   maximize project success probability.
 ---
 

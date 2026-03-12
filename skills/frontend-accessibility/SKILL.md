@@ -76,13 +76,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use semantic HTML elements (nav, main, article, button) before reaching for ARIA roles
+- Ensure all interactive elements are keyboard-operable with visible focus indicators
+- Maintain a minimum 4.5:1 color contrast ratio for normal text (WCAG AA)
+- Provide text alternatives for all non-decorative images and meaningful icons
+- Test with a screen reader (VoiceOver, NVDA) and keyboard-only navigation on every major feature
+- Use aria-live regions to announce dynamic content changes to assistive technology
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Use div or span with onClick handlers instead of button or anchor elements
+- Remove or hide the browser's default focus outline without providing a custom visible focus style
+- Rely on color alone to convey meaning (e.g., red for error) — add text or icons as well
+- Add aria-label or aria-describedby that duplicates already-visible text — it creates redundant announcements

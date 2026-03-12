@@ -2,7 +2,8 @@
 name: technical-roadmap-planning
 description: >
   Create comprehensive technical roadmaps aligned with business goals. Plan
-  technology investments, architecture evolution, and infrastructure
+  technology investments, architecture evolution, and infrastructure.
+  Use when multi-year technology planning, architecture modernization initiatives, platform scaling and reliability improvements, or legacy system migration planning.
   improvements over quarters and years.
 ---
 

@@ -3,7 +3,8 @@ name: graceful-shutdown
 description: >
   Implement graceful shutdown procedures to handle SIGTERM signals, drain
   connections, complete in-flight requests, and clean up resources properly. Use
-  when deploying containerized applications, handling server restarts, or
+  when deploying containerized applications, handling server restarts, or.
+  Use when kubernetes/docker deployments, rolling updates and deployments, server restarts, or load balancer drain periods.
   ensuring zero-downtime deployments.
 ---
 

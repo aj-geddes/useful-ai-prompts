@@ -1,7 +1,8 @@
 ---
 name: container-debugging
 description: >
-  Debug Docker containers and containerized applications. Diagnose deployment
+  Debug Docker containers and containerized applications. Diagnose deployment.
+  Use when container won't start, application crashes in container, resource limits exceeded, or network connectivity issues.
   issues, container lifecycle problems, and resource constraints.
 ---
 
@@ -75,13 +76,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Check `docker logs` and container exit codes first — most issues are visible in the output
+- Use `docker exec` to inspect a running container's filesystem, environment, and network state
+- Compare `docker inspect` output against the expected config (mounts, env vars, network, resource limits)
+- Use ephemeral debug containers (`kubectl debug` or `docker run --rm`) to avoid polluting production images with debug tools
+- Verify DNS resolution and port connectivity from inside the container's network namespace
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Install debug tools (curl, strace, tcpdump) directly into production images — use sidecar or ephemeral containers
+- Ignore OOMKilled signals; increase memory limits or fix the memory leak before restarting
+- Assume the host filesystem matches the container's view — always verify mounts and volume paths
+- Run containers as root in production just to work around permission errors

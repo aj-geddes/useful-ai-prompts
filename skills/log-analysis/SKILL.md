@@ -2,7 +2,8 @@
 name: log-analysis
 description: >
   Analyze application and system logs to identify errors, patterns, and root
-  causes. Use log aggregation tools and structured logging for effective
+  causes. Use log aggregation tools and structured logging for effective.
+  Use when troubleshooting errors, performance investigation, security incident analysis, or auditing user actions.
   debugging.
 ---
 
@@ -76,13 +77,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use structured logging (JSON) with consistent fields: timestamp, level, service, trace_id, and message
+- Include contextual data (user ID, request ID, duration) in every log entry so queries don't require cross-referencing
+- Set appropriate log levels — DEBUG for development, INFO for normal operations, WARN/ERROR for actionable conditions
+- Centralize logs in an aggregation platform (ELK, Loki, Datadog) with index lifecycle policies to manage storage costs
+- Define saved queries and dashboards for common investigations (top errors, slow endpoints, auth failures)
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Log sensitive data (passwords, tokens, PII) — redact or mask before writing to any log sink
+- Use unstructured string interpolation (`"User " + id + " failed"`) — it makes parsing and filtering nearly impossible at scale
+- Set everything to DEBUG in production — the noise will bury real signals and inflate storage costs
+- Rely solely on `grep` against raw log files when your system produces more than a few GB per day

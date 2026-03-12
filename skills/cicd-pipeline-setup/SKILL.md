@@ -1,7 +1,8 @@
 ---
 name: cicd-pipeline-setup
 description: >
-  Design and implement CI/CD pipelines with GitHub Actions, GitLab CI, Jenkins,
+  Design and implement CI/CD pipelines with GitHub Actions, GitLab CI, Jenkins,.
+  Use when automated code testing and quality checks, containerized application builds, multi-environment deployments, or release management and versioning.
   or CircleCI. Use for automated testing, building, and deployment workflows.
 ---
 

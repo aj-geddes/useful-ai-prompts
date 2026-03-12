@@ -1,6 +1,8 @@
 ---
-name: Anomaly Detection
-description: Identify unusual patterns, outliers, and anomalies in data using statistical methods, isolation forests, and autoencoders for fraud detection and quality monitoring
+name: anomaly-detection
+description: >
+  Identify unusual patterns, outliers, and anomalies in data using statistical methods, isolation forests, and autoencoders for fraud detection and quality monitoring.
+  Use when detecting fraudulent transactions or suspicious activity in financial data, identifying system failures, network intrusions, or security breaches, monitoring manufacturing quality and identifying defective products, or finding unusual patterns in healthcare data or patient vital signs.
 ---
 
 # Anomaly Detection

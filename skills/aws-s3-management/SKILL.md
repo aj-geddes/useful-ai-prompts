@@ -2,7 +2,8 @@
 name: aws-s3-management
 description: >
   Manage S3 buckets with versioning, encryption, access control, lifecycle
-  policies, and replication. Use for object storage, static sites, and data
+  policies, and replication. Use for object storage, static sites, and data.
+  Use when static website hosting, data backup and archival, media library and cdn origin, or data lake and analytics.
   lakes.
 ---
 

@@ -2,7 +2,8 @@
 name: api-contract-testing
 description: >
   Verify API contracts between services to ensure compatibility and prevent
-  breaking changes. Use for contract testing, Pact, API contract validation,
+  breaking changes. Use for contract testing, Pact, API contract validation,.
+  Use when testing microservices communication, preventing breaking api changes, validating api versioning, or testing consumer-provider contracts.
   schema validation, and consumer-driven contracts.
 ---
 

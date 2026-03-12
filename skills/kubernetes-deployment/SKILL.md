@@ -2,7 +2,8 @@
 name: kubernetes-deployment
 description: >
   Deploy, manage, and scale containerized applications on Kubernetes clusters
-  with best practices for production workloads, resource management, and rolling
+  with best practices for production workloads, resource management, and rolling.
+  Use when container orchestration and management, multi-environment deployments (dev, staging, prod), auto-scaling microservices, or rolling updates and blue-green deployments.
   updates.
 ---
 

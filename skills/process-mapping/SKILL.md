@@ -2,7 +2,8 @@
 name: process-mapping
 description: >
   Visualize and document current and future business processes. Identify
-  inefficiencies, dependencies, and improvement opportunities through detailed
+  inefficiencies, dependencies, and improvement opportunities through detailed.
+  Use when documenting existing workflows, identifying process improvements, onboarding new team members, or discovering inefficiencies and bottlenecks.
   process mapping and analysis.
 ---
 

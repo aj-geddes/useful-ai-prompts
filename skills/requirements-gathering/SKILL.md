@@ -2,7 +2,8 @@
 name: requirements-gathering
 description: >
   Systematically collect, document, and validate requirements from stakeholders.
-  Ensure clarity, completeness, and agreement before development begins to
+  Ensure clarity, completeness, and agreement before development begins to.
+  Use when project kickoff and planning, feature development initiation, product roadmap planning, or system modernization projects.
   reduce scope creep and rework.
 ---
 

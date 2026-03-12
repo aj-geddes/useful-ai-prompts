@@ -2,7 +2,8 @@
 name: test-automation-framework
 description: >
   Design and implement scalable test automation frameworks with Page Object
-  Model, fixtures, and reporting. Use for test framework, page object pattern,
+  Model, fixtures, and reporting. Use for test framework, page object pattern,.
+  Use when setting up new test automation, scaling existing test suites, standardizing test practices across teams, or reducing test maintenance burden.
   test architecture, test organization, and automation infrastructure.
 ---
 

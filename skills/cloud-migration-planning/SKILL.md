@@ -1,7 +1,8 @@
 ---
 name: cloud-migration-planning
 description: >
-  Plan and execute cloud migrations with assessment, database migration,
+  Plan and execute cloud migrations with assessment, database migration,.
+  Use when moving from on-premises to cloud, cloud platform consolidation, legacy system modernization, or reducing data center costs.
   application refactoring, and cutover strategies across AWS, Azure, and GCP.
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: blue-green-deployment
 description: >
-  Implement blue-green deployment strategies for zero-downtime releases with
+  Implement blue-green deployment strategies for zero-downtime releases with.
+  Use when zero-downtime releases, high-risk deployments, complex application migrations, or database schema changes.
   instant rollback capability and traffic switching between environments.
 ---
 
@@ -76,13 +77,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Run a full health-check and smoke-test suite against the idle environment before switching traffic
+- Keep both environments identical in infrastructure, config, and dependencies
+- Use database migration strategies that are backward-compatible with both blue and green versions
+- Automate the traffic switch and rollback via a single idempotent script
+- Monitor error rates, latency, and saturation for at least 10 minutes after the switch before decommissioning the old environment
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Switch traffic without verifying the idle environment passes health checks
+- Run destructive database migrations that break the currently-live version (prevents instant rollback)
+- Tear down the previous environment immediately — keep it warm until the new deployment is confirmed stable
+- Assume DNS-based switching is instant; account for TTL propagation delays

@@ -1,6 +1,8 @@
 ---
-name: A/B Test Analysis
-description: Design and analyze A/B tests, calculate statistical significance, and determine sample sizes for conversion optimization and experiment validation
+name: ab-test-analysis
+description: >
+  Design and analyze A/B tests, calculate statistical significance, and determine sample sizes for conversion optimization and experiment validation.
+  Use when comparing two versions of a product feature, webpage, or marketing campaign, optimizing conversion rates, click-through rates, or user engagement metrics, making data-driven decisions with statistical confidence about changes, or determining sample size requirements for experiment validity.
 ---
 
 # A/B Test Analysis

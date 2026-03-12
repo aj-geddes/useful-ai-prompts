@@ -75,13 +75,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Co-locate state as close to the consuming component as possible — lift only when shared
+- Separate server-cache state (React Query, SWR) from client UI state (Zustand, Redux)
+- Use selectors to derive computed values rather than storing redundant data in the store
+- Keep reducers and actions pure — side effects belong in middleware or effect hooks
+- Normalize nested data structures to avoid deep cloning and stale reference bugs
+- Use TypeScript to type your store slices, actions, and selectors for compile-time safety
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Put every piece of state in a global store — form input, hover state, and animation state should stay local
+- Mutate state directly — always produce a new reference (Redux Toolkit's Immer handles this, raw Redux does not)
+- Use Context API for frequently-updating values — it re-renders all consumers on every change
+- Create actions that do too much — keep them granular so time-travel debugging stays useful

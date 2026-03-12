@@ -2,7 +2,8 @@
 name: flutter-development
 description: >
   Build beautiful cross-platform mobile apps with Flutter and Dart. Covers
-  widgets, state management with Provider/BLoC, navigation, API integration, and
+  widgets, state management with Provider/BLoC, navigation, API integration, and.
+  Use when building ios and android apps with native performance, designing custom uis with flutter's widget system, implementing complex animations and visual effects, or rapid app development with hot reload.
   material design.
 ---
 

@@ -2,7 +2,8 @@
 name: project-estimation
 description: >
   Estimate project scope, timeline, and resource requirements using multiple
-  estimation techniques including bottom-up, top-down, and analogous estimation
+  estimation techniques including bottom-up, top-down, and analogous estimation.
+  Use when defining project scope and deliverables, creating project budgets and timelines, allocating team resources, or managing stakeholder expectations.
   methods for accurate project planning.
 ---
 

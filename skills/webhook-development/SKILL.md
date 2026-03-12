@@ -74,13 +74,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Verify webhook signatures (HMAC-SHA256) on every incoming request before processing the payload
+- Implement idempotency using the event ID so duplicate deliveries don't cause duplicate side effects
+- Respond with a 2xx status quickly and process the payload asynchronously via a queue
+- Use exponential backoff with jitter for retry delivery on failed webhook sends
+- Log every delivery attempt, response code, and latency for debugging delivery issues
+- Route failed deliveries to a dead-letter queue with alerting for manual review
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Trust webhook payloads without signature verification — treat them as untrusted external input
+- Perform long-running work synchronously in the webhook handler (it will cause timeouts and retries)
+- Expose internal error details (stack traces, DB errors) in webhook response bodies
+- Retry indefinitely without a maximum attempt count or circuit breaker

@@ -1,7 +1,8 @@
 ---
 name: canary-deployment
 description: >
-  Implement canary deployment strategies to gradually roll out new versions to
+  Implement canary deployment strategies to gradually roll out new versions to.
+  Use when low-risk gradual rollouts, real-world testing with live traffic, automatic rollback on errors, or user impact minimization.
   subset of users with automatic rollback based on metrics.
 ---
 
@@ -77,13 +78,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Start with a small traffic percentage (1-5%) and increase incrementally based on metric thresholds
+- Define clear success criteria (error rate, latency p99, saturation) before beginning the rollout
+- Automate rollback triggers so the canary is pulled back within seconds when thresholds are breached
+- Use consistent request routing (sticky sessions or header-based) so individual users don't flip between versions mid-session
+- Compare canary metrics against a baseline from the stable version, not just absolute thresholds
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Skip the bake time — let each traffic increment run long enough to surface slow-burn regressions
+- Route all traffic to the canary at once; that defeats the purpose of gradual rollout
+- Ignore infrastructure metrics (CPU, memory, GC pauses) and focus only on HTTP error rates
+- Deploy canary changes that include backward-incompatible database migrations

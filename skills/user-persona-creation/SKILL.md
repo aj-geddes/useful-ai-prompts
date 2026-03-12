@@ -2,7 +2,8 @@
 name: user-persona-creation
 description: >
   Create detailed user personas based on research and data. Develop realistic
-  representations of target users to guide product decisions and ensure
+  representations of target users to guide product decisions and ensure.
+  Use when starting product design, feature prioritization, marketing messaging, or user research synthesis.
   user-centered design.
 ---
 

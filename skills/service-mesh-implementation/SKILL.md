@@ -1,7 +1,8 @@
 ---
 name: service-mesh-implementation
 description: >
-  Implement service mesh (Istio, Linkerd) for service-to-service communication,
+  Implement service mesh (Istio, Linkerd) for service-to-service communication,.
+  Use when microservice communication management, cross-cutting security policies, traffic splitting and canary deployments, or service-to-service authentication.
   traffic management, security, and observability.
 ---
 

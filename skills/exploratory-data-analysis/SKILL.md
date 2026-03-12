@@ -1,6 +1,8 @@
 ---
-name: Exploratory Data Analysis
-description: Discover patterns, distributions, and relationships in data through visualization, summary statistics, and hypothesis generation for exploratory data analysis, data profiling, and initial insights
+name: exploratory-data-analysis
+description: >
+  Discover patterns, distributions, and relationships in data through visualization, summary statistics, and hypothesis generation for exploratory data analysis, data profiling, and initial insights.
+  Use when starting a new dataset analysis, understanding data before modeling, identifying data quality issues, or generating hypotheses for testing.
 ---
 
 # Exploratory Data Analysis (EDA)

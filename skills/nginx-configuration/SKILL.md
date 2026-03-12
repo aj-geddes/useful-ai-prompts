@@ -1,7 +1,8 @@
 ---
 name: nginx-configuration
 description: >
-  Configure Nginx web server for high-performance reverse proxy, load balancing,
+  Configure Nginx web server for high-performance reverse proxy, load balancing,.
+  Use when reverse proxy setup, load balancing between backend services, ssl/tls termination, or http/2 and grpc support.
   SSL/TLS, caching, and API gateway functionality.
 ---
 

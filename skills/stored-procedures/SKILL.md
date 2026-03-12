@@ -73,13 +73,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use explicit parameter types and validate inputs at the start of each procedure
+- Wrap multi-statement procedures in transactions with proper `EXCEPTION` / error handling blocks
+- Mark functions as `IMMUTABLE`, `STABLE`, or `VOLATILE` correctly so the planner can optimize calls
+- Version or namespace procedures (e.g., `v2_calculate_total`) when making breaking signature changes
+- Use `RAISE NOTICE` / `SIGNAL` for debugging and `RAISE EXCEPTION` / `SIGNAL SQLSTATE` for actual errors
+- Keep procedures focused on data operations — push presentation logic to the application layer
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Build dynamic SQL with string concatenation of user input — use parameterized queries or `EXECUTE ... USING`
+- Create deeply nested procedure call chains that make debugging and profiling difficult
+- Use cursors for operations that can be expressed as set-based SQL statements
+- Silently swallow exceptions with empty `EXCEPTION WHEN OTHERS` blocks

@@ -58,13 +58,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use composite indexes with columns ordered by selectivity (most selective first)
+- Prefer partial indexes to reduce index size when queries filter on a known subset
+- Run EXPLAIN ANALYZE before and after adding indexes to verify they are used
+- Use CONCURRENTLY for index creation on production tables to avoid locking
+- Match index type to access pattern: B-tree for ranges, GIN for full-text/JSONB, BRIN for time-series
+- Monitor index usage via pg_stat_user_indexes and drop unused indexes regularly
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Index every column blindly — each index adds write overhead and storage cost
+- Create redundant indexes that are left-prefixes of existing composite indexes
+- Use indexes on low-cardinality columns (e.g., boolean flags) without a partial index filter
+- Forget to ANALYZE tables after bulk data loads so the planner has current statistics

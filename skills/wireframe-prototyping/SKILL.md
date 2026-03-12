@@ -2,7 +2,8 @@
 name: wireframe-prototyping
 description: >
   Create wireframes and interactive prototypes to visualize user interfaces and
-  gather feedback early. Use tools and techniques to communicate design ideas
+  gather feedback early. Use tools and techniques to communicate design ideas.
+  Use when early concept validation, stakeholder alignment, user testing and feedback, or developer handoff.
   before development.
 ---
 

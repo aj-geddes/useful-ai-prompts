@@ -2,7 +2,8 @@
 name: azure-functions
 description: >
   Create serverless functions on Azure with triggers, bindings, authentication,
-  and monitoring. Use for event-driven computing without managing
+  and monitoring. Use for event-driven computing without managing.
+  Use when http apis and webhooks, message-driven processing (service bus, event hub), scheduled jobs and cron expressions, or file and blob processing.
   infrastructure.
 ---
 

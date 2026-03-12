@@ -2,7 +2,8 @@
 name: aws-lambda-functions
 description: >
   Create and deploy serverless functions using AWS Lambda with event sources,
-  permissions, layers, and environment configuration. Use for event-driven
+  permissions, layers, and environment configuration. Use for event-driven.
+  Use when api endpoints and webhooks, scheduled batch jobs and data processing, real-time file processing (s3 uploads), or event-driven workflows (sns, sqs).
   computing without managing servers.
 ---
 

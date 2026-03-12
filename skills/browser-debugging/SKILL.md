@@ -1,7 +1,8 @@
 ---
 name: browser-debugging
 description: >
-  Debug client-side issues using browser developer tools. Identify JavaScript
+  Debug client-side issues using browser developer tools. Identify JavaScript.
+  Use when javascript errors, layout/styling issues, performance problems, or user interaction issues.
   errors, styling issues, and performance problems in the browser.
 ---
 
@@ -76,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Use conditional and logpoint breakpoints instead of littering code with `console.log`
+- Reproduce issues in an incognito window to rule out extension interference
+- Check the Network tab for failed requests, CORS errors, and unexpected response codes before debugging JS logic
+- Use the Performance panel's flame chart to pinpoint long tasks blocking the main thread
+- Inspect the Accessibility tree alongside the Elements panel when debugging layout for screen readers
+- Preserve logs across navigations when debugging redirect-related issues
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Leave `debugger` statements or verbose `console.log` calls in committed code
+- Ignore the Console warnings and deprecation notices — they often foreshadow breakage
+- Test only in one browser; verify across Chrome, Firefox, and Safari for cross-browser issues
+- Disable cache in DevTools and forget to re-enable it — this masks caching bugs in production

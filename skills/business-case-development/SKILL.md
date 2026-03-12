@@ -2,7 +2,8 @@
 name: business-case-development
 description: >
   Build compelling business cases to justify investments and secure funding.
-  Quantify benefits, assess costs, manage risks, and present compelling ROI
+  Quantify benefits, assess costs, manage risks, and present compelling ROI.
+  Use when requesting budget approval, justifying technology investments, planning major initiatives, or evaluating vendor solutions.
   arguments to leadership.
 ---
 

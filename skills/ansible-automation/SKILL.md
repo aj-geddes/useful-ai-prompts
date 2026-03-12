@@ -2,7 +2,8 @@
 name: ansible-automation
 description: >
   Infrastructure automation and configuration management using Ansible
-  playbooks, roles, and inventory. Use for deploying applications, patching, and
+  playbooks, roles, and inventory. Use for deploying applications, patching, and.
+  Use when configuration management, application deployment, infrastructure patching and updates, or multi-server orchestration.
   managing servers.
 ---
 

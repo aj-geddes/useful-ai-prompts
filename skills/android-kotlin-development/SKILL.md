@@ -2,7 +2,8 @@
 name: android-kotlin-development
 description: >
   Develop native Android apps with Kotlin. Covers MVVM with Jetpack, Compose for
-  modern UI, Retrofit for API calls, Room for local storage, and navigation
+  modern UI, Retrofit for API calls, Room for local storage, and navigation.
+  Use when creating native android applications with best practices, using kotlin for type-safe development, implementing mvvm architecture with jetpack, or building modern uis with jetpack compose.
   architecture.
 ---
 

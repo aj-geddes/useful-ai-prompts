@@ -2,7 +2,8 @@
 name: design-handoff
 description: >
   Prepare designs for development handoff. Document specifications,
-  interactions, and assets to enable efficient development and maintain design
+  interactions, and assets to enable efficient development and maintain design.
+  Use when before development starts, feature completion in design, component library updates, or design system changes.
   quality.
 ---
 

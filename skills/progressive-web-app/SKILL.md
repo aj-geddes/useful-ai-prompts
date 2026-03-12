@@ -76,13 +76,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Implement a cache-first strategy for static assets and network-first for API calls in your service worker
+- Provide a meaningful offline fallback page with cached content and clear messaging
+- Use `manifest.json` with all required fields (`name`, `short_name`, `start_url`, `display`, `icons`) to pass installability checks
+- Version your service worker cache names and clean up old caches in the `activate` event
+- Test the full install flow on real devices, including Add to Home Screen and offline behavior
+- Precache critical app shell resources during the service worker `install` event
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Cache API responses indefinitely without a TTL or invalidation strategy
+- Register a service worker that intercepts all requests without a proper routing strategy
+- Forget to handle service worker update conflicts (stale tabs vs. new worker)
+- Serve push notifications without user opt-in or a clear value proposition

@@ -2,7 +2,8 @@
 name: push-notification-setup
 description: >
   Implement push notifications for iOS and Android. Covers Firebase Cloud
-  Messaging, Apple Push Notification service, handling notifications, and
+  Messaging, Apple Push Notification service, handling notifications, and.
+  Use when sending real-time notifications to users, implementing user engagement features, deep linking from notifications to specific screens, or handling silent/background notifications.
   backend integration.
 ---
 

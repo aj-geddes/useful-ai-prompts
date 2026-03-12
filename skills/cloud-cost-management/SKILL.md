@@ -1,7 +1,8 @@
 ---
 name: cloud-cost-management
 description: >
-  Optimize and manage cloud costs across AWS, Azure, and GCP using reserved
+  Optimize and manage cloud costs across AWS, Azure, and GCP using reserved.
+  Use when reducing cloud infrastructure costs, optimizing compute spending, managing database costs, or storage optimization.
   instances, spot pricing, and cost monitoring tools.
 ---
 

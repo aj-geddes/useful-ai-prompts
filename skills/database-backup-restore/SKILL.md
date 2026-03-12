@@ -66,13 +66,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Test restore procedures regularly — an untested backup is not a backup
+- Store backups in a separate region or account from the primary database
+- Use `pg_dump -Fc` (custom format) or `pg_basebackup` for large databases to enable parallel restore
+- Define and document RTO (Recovery Time Objective) and RPO (Recovery Point Objective) targets
+- Encrypt backups at rest and in transit, and restrict access with IAM or OS-level permissions
+- Automate backup schedules with cron or a managed service and monitor for failures
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Keep backups only on the same disk or server as the database
+- Skip verifying backup integrity — periodically restore to a test instance and validate data
+- Store database credentials in plain text inside backup scripts
+- Rely solely on full backups for large databases; combine with incremental/WAL archiving to meet RPO

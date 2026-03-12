@@ -2,7 +2,8 @@
 name: aws-cloudfront-cdn
 description: >
   Distribute content globally using CloudFront with caching, security headers,
-  WAF integration, and origin configuration. Use for low-latency content
+  WAF integration, and origin configuration. Use for low-latency content.
+  Use when static website hosting and assets, api acceleration and dynamic content, video and media streaming, or mobile application content.
   delivery.
 ---
 

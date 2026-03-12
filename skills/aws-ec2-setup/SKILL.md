@@ -1,7 +1,8 @@
 ---
 name: aws-ec2-setup
 description: >
-  Launch and configure EC2 instances with security groups, IAM roles, key pairs,
+  Launch and configure EC2 instances with security groups, IAM roles, key pairs,.
+  Use when web application servers, application backends and apis, batch processing and compute jobs, or development and testing environments.
   AMIs, and auto-scaling. Use for virtual servers and managed infrastructure.
 ---
 

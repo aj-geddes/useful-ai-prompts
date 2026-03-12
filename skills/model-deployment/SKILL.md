@@ -1,6 +1,8 @@
 ---
-name: Model Deployment
-description: Deploy machine learning models to production using Flask, FastAPI, Docker, cloud platforms (AWS, GCP, Azure), and model serving frameworks
+name: model-deployment
+description: >
+  Deploy machine learning models to production using Flask, FastAPI, Docker, cloud platforms (AWS, GCP, Azure), and model serving frameworks.
+  Use when when productionizing trained models for real-world inference and predictions, when building rest apis or web services for model serving, when scaling predictions to serve multiple users or applications, or when deploying models to cloud platforms, edge devices, or containers.
 ---
 
 # Model Deployment

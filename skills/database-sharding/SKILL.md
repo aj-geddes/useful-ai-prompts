@@ -76,13 +76,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Choose a shard key with high cardinality and even distribution to prevent hotspots
+- Use consistent hashing to minimize data movement when adding or removing shards
+- Design the schema so the most common queries can be served from a single shard
+- Plan a rebalancing strategy before you need it — shard splits are painful under load
+- Keep a shard routing directory or mapping table and version it with every topology change
+- Test cross-shard queries and transactions explicitly — they are the primary source of latency
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Shard prematurely — exhaust vertical scaling and read replicas before adding sharding complexity
+- Use a shard key that changes over time (e.g., status fields) or has low cardinality (e.g., country code)
+- Assume auto-increment IDs are globally unique across shards without a distributed ID strategy
+- Ignore the operational cost: backups, migrations, and schema changes multiply by shard count

@@ -77,13 +77,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Lazy-load route components with React.lazy or dynamic imports to reduce initial bundle size
+- Implement route-level error boundaries so a crash in one route doesn't break the whole app
+- Use a centralized route config (array or object) rather than scattering Route declarations
+- Protect authenticated routes with a guard component that redirects before rendering
+- Preserve scroll position on back navigation and reset it on forward navigation
+- Reflect meaningful application state in the URL so users can bookmark and share deep links
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Store transient UI state (modals, toasts) in the URL — route params are for navigable state only
+- Use nested wildcard routes without a catch-all 404 page at the end
+- Fetch data inside the route component without a loading state — use loader functions or Suspense
+- Hard-code route paths as strings throughout the app — define them as constants in one place

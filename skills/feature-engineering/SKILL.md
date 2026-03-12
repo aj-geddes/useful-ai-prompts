@@ -1,6 +1,8 @@
 ---
-name: Feature Engineering
-description: Create and transform features using encoding, scaling, polynomial features, and domain-specific transformations for improved model performance and interpretability
+name: feature-engineering
+description: >
+  Create and transform features using encoding, scaling, polynomial features, and domain-specific transformations for improved model performance and interpretability.
+  Use when when you need to improve model performance beyond using raw features, when dealing with categorical variables that need encoding for ml algorithms, when features have different scales and require normalization, or when creating domain-specific features based on business knowledge.
 ---
 
 # Feature Engineering

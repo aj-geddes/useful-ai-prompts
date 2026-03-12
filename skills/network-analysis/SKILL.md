@@ -1,6 +1,8 @@
 ---
-name: Network Analysis
-description: Analyze network structures, identify communities, measure centrality, and visualize relationships for social networks and organizational structures
+name: network-analysis
+description: >
+  Analyze network structures, identify communities, measure centrality, and visualize relationships for social networks and organizational structures.
+  Use when analyzing social networks to identify influential users and community structures, mapping organizational hierarchies and identifying key connectors or bottlenecks, studying citation networks to find impactful research papers and collaboration patterns, or building recommendation systems based on network relationships and similarities.
 ---
 
 # Network Analysis

@@ -1,7 +1,8 @@
 ---
 name: mobile-first-design
 description: >
-  Design for mobile devices first, then scale up to larger screens. Create
+  Design for mobile devices first, then scale up to larger screens. Create.
+  Use when web application design, responsive website creation, feature prioritization, or performance optimization.
   responsive interfaces that work seamlessly across all device sizes.
 ---
 

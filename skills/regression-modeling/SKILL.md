@@ -1,6 +1,8 @@
 ---
-name: Regression Modeling
-description: Build predictive models using linear regression, polynomial regression, and regularized regression for continuous prediction, trend forecasting, and relationship quantification
+name: regression-modeling
+description: >
+  Build predictive models using linear regression, polynomial regression, and regularized regression for continuous prediction, trend forecasting, and relationship quantification.
+  Use when predicting sales, prices, or other continuous numerical outcomes, understanding relationships between independent and dependent variables, forecasting trends based on historical data, or quantifying the impact of features on a target variable.
 ---
 
 # Regression Modeling

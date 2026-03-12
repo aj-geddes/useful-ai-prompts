@@ -1,7 +1,8 @@
 ---
 name: mobile-app-debugging
 description: >
-  Debug issues specific to mobile applications including platform-specific
+  Debug issues specific to mobile applications including platform-specific.
+  Use when app crashes on mobile, performance issues on device, platform-specific bugs, or network connectivity issues.
   problems, device constraints, and connectivity issues.
 ---
 
@@ -75,13 +76,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Test on real devices across OS versions — simulators miss GPU, memory, and thermal throttling behavior
+- Use platform-specific profilers (Xcode Instruments, Android Studio Profiler) to measure CPU, memory, and energy impact
+- Reproduce crashes by symbolizing crash logs and matching to the exact build version and device model
+- Test under degraded network conditions (airplane mode toggle, 3G throttling, high latency) to catch connectivity edge cases
+- Check for retain cycles (iOS) and Activity/Context leaks (Android) as a routine part of debugging memory issues
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Assume behavior on one OS version applies to all — API deprecations and permission changes break across versions
+- Block the main/UI thread with synchronous network calls, heavy computation, or large database reads
+- Ignore low-memory warnings (`didReceiveMemoryWarning`, `onTrimMemory`) — the OS will terminate unresponsive apps
+- Test only on high-end devices — budget devices with limited RAM and slower CPUs expose real-world performance issues

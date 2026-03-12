@@ -2,7 +2,8 @@
 name: competitor-analysis
 description: >
   Analyze competitive landscape to identify strengths, weaknesses,
-  opportunities, and threats. Inform product strategy and positioning based on
+  opportunities, and threats. Inform product strategy and positioning based on.
+  Use when product strategy development, market entry planning, pricing strategy, or feature prioritization.
   market insights.
 ---
 

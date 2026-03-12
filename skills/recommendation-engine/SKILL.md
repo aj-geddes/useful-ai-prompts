@@ -1,6 +1,8 @@
 ---
-name: Recommendation Engine
-description: Build recommendation systems using collaborative filtering, content-based filtering, matrix factorization, and neural network approaches
+name: recommendation-engine
+description: >
+  Build recommendation systems using collaborative filtering, content-based filtering, matrix factorization, and neural network approaches.
+  Use when building personalized product recommendations for e-commerce platforms, creating content recommendation systems for streaming services, news platforms, or social media, implementing user-user or item-item collaborative filtering based on interaction patterns, or addressing cold start problems for new users or items with limited interaction history.
 ---
 
 # Recommendation Engine

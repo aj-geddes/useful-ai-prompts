@@ -2,7 +2,8 @@
 name: logging-best-practices
 description: >
   Implement structured logging with JSON formats, log levels (DEBUG, INFO, WARN,
-  ERROR), contextual logging, PII handling, and centralized logging. Use for
+  ERROR), contextual logging, PII handling, and centralized logging. Use for.
+  Use when setting up application logging infrastructure, implementing structured logging, configuring log levels for different environments, or managing sensitive data in logs.
   logging, observability, log levels, structured logs, or debugging.
 ---
 

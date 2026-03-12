@@ -1,6 +1,8 @@
 ---
-name: Neural Network Design
-description: Design and architect neural networks with various architectures including CNNs, RNNs, Transformers, and attention mechanisms using PyTorch and TensorFlow
+name: neural-network-design
+description: >
+  Design and architect neural networks with various architectures including CNNs, RNNs, Transformers, and attention mechanisms using PyTorch and TensorFlow.
+  Use when designing custom neural network architectures for computer vision tasks like image classification or object detection, building sequence models for time series forecasting, natural language processing, or video analysis, implementing transformer-based models for language understanding or generation tasks, or creating hybrid architectures that combine cnns, rnns, and attention mechanisms.
 ---
 
 # Neural Network Design

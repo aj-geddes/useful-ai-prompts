@@ -1,7 +1,8 @@
 ---
 name: retrospective-facilitation
 description: >
-  Facilitate effective retrospectives to capture lessons learned, celebrate
+  Facilitate effective retrospectives to capture lessons learned, celebrate.
+  Use when end of sprint (regular cadence), major milestone completion, project closure, or after significant events or incidents.
   successes, and identify actionable improvements for future iterations.
 ---
 

@@ -1,6 +1,8 @@
 ---
-name: Data Cleaning Pipeline
-description: Build robust processes for data cleaning, missing value imputation, outlier handling, and data transformation for data preprocessing, data quality, and data pipeline automation
+name: data-cleaning-pipeline
+description: >
+  Build robust processes for data cleaning, missing value imputation, outlier handling, and data transformation for data preprocessing, data quality, and data pipeline automation.
+  Use when preparing raw datasets for analysis or modeling, handling missing values and data quality issues, removing duplicates and standardizing formats, or detecting and treating outliers.
 ---
 
 # Data Cleaning Pipeline

@@ -1,5 +1,5 @@
 ---
-name: ML Model Explanation
+name: ml-model-explanation
 description: Interpret machine learning models using SHAP, LIME, feature importance, partial dependence, and attention visualization for explainability
 ---
 

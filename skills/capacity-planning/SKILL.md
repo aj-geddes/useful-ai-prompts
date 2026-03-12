@@ -2,7 +2,8 @@
 name: capacity-planning
 description: >
   Analyze team capacity, plan resource allocation, and balance workload across
-  projects. Forecast staffing needs and optimize team utilization while
+  projects. Forecast staffing needs and optimize team utilization while.
+  Use when annual or quarterly planning cycles, allocating people to projects, adjusting team size, or planning for holidays and absences.
   maintaining sustainable pace.
 ---
 

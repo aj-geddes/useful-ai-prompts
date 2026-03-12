@@ -3,7 +3,8 @@ name: refactor-legacy-code
 description: >
   Modernize and improve legacy codebases while maintaining functionality. Use
   when you need to refactor old code, reduce technical debt, modernize
-  deprecated patterns, or improve code maintainability without breaking existing
+  deprecated patterns, or improve code maintainability without breaking existing.
+  Use when modernizing outdated code patterns or deprecated apis, reducing technical debt in existing codebases, improving code readability and maintainability, or extracting reusable components from monolithic code.
   behavior.
 ---
 

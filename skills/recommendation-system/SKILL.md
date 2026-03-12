@@ -1,6 +1,8 @@
 ---
-name: Recommendation System
-description: Build collaborative and content-based recommendation engines for product recommendations, personalization, and improving user engagement
+name: recommendation-system
+description: >
+  Build collaborative and content-based recommendation engines for product recommendations, personalization, and improving user engagement.
+  Use when developing recommendation features to improve user engagement and retention, implementing personalized product suggestions to increase sales and conversion rates, building hybrid recommendation systems that combine collaborative and content-based approaches, or analyzing and optimizing recommendation coverage, diversity, and accuracy.
 ---
 
 # Recommendation System

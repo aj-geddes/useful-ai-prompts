@@ -2,7 +2,8 @@
 name: kpi-dashboard-design
 description: >
   Design and build dashboards that track key performance indicators. Select
-  relevant metrics, visualize data effectively, and communicate insights to
+  relevant metrics, visualize data effectively, and communicate insights to.
+  Use when creating performance measurement systems, leadership reporting and visibility, operational monitoring, or project progress tracking.
   stakeholders.
 ---
 

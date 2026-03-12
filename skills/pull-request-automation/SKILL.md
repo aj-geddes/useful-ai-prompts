@@ -1,7 +1,8 @@
 ---
 name: pull-request-automation
 description: >
-  Automate pull request workflows with templates, checklists, auto-merge rules,
+  Automate pull request workflows with templates, checklists, auto-merge rules,.
+  Use when code review standardization, quality gate enforcement, contributor guidance, or review assignment automation.
   and review assignments. Reduce manual overhead and improve consistency.
 ---
 

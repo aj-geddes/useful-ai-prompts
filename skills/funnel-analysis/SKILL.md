@@ -1,6 +1,8 @@
 ---
-name: Funnel Analysis
-description: Analyze user conversion funnels, identify drop-off points, and optimize conversion rates for conversion optimization and user flow analysis
+name: funnel-analysis
+description: >
+  Analyze user conversion funnels, identify drop-off points, and optimize conversion rates for conversion optimization and user flow analysis.
+  Use when when optimizing user conversion paths and improving conversion rates, when identifying bottlenecks and drop-off points in user flows, when comparing performance across different segments or traffic sources, or when measuring product feature adoption or onboarding effectiveness.
 ---
 
 # Funnel Analysis

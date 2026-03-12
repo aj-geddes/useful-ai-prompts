@@ -80,13 +80,16 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Design schemas around query access patterns first — in NoSQL, the data model serves the queries, not the other way around
+- Embed related data that is read together into a single document to minimize round-trips (e.g., order with its line items)
+- Use compound partition keys and sort keys in DynamoDB to support multiple query patterns on a single table
+- Set schema validation rules (MongoDB `$jsonSchema`, DynamoDB attribute constraints) to catch malformed documents at write time
+- Plan for document growth — use the bucket pattern or reference pattern when embedded arrays can grow unbounded
+- Create indexes that cover your most frequent queries and monitor index usage to remove unused ones
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Normalize data into many small collections/tables the way you would in a relational database — this forces expensive joins or multiple queries
+- Use unbounded arrays in embedded documents — MongoDB has a 16 MB document limit and large arrays degrade write performance
+- Design DynamoDB tables with a single hot partition key — distribute writes evenly to avoid throttling
+- Skip capacity planning for GSIs in DynamoDB — each GSI consumes its own read/write throughput independently

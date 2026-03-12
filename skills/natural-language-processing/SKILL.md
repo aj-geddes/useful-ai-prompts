@@ -1,6 +1,8 @@
 ---
-name: Natural Language Processing
-description: Build NLP applications using transformers library, BERT, GPT, text classification, named entity recognition, and sentiment analysis
+name: natural-language-processing
+description: >
+  Build NLP applications using transformers library, BERT, GPT, text classification, named entity recognition, and sentiment analysis.
+  Use when building text classification systems for sentiment analysis, topic categorization, or intent detection, extracting named entities (people, places, organizations) from unstructured text, implementing machine translation, text summarization, or question answering systems, or processing and analyzing large volumes of textual data for insights.
 ---
 
 # Natural Language Processing

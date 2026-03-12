@@ -1,7 +1,8 @@
 ---
 name: cpu-profiling
 description: >
-  Profile CPU usage to identify hot spots and bottlenecks. Optimize code paths
+  Profile CPU usage to identify hot spots and bottlenecks. Optimize code paths.
+  Use when high cpu usage, slow execution, performance regression, or before optimization.
   consuming most CPU time for better performance and resource efficiency.
 ---
 
@@ -75,13 +76,15 @@ Detailed implementations in the `references/` directory:
 
 ### ✅ DO
 
-- Follow established patterns and conventions
-- Write clean, maintainable code
-- Add appropriate documentation
-- Test thoroughly before deploying
+- Profile under realistic workloads — synthetic micro-benchmarks hide real-world hot paths
+- Distinguish between "self time" and "total time" in flame charts to find the actual bottleneck
+- Take multiple profile samples and compare to rule out noise from GC pauses or OS scheduling
+- Establish a performance baseline before optimizing so you can measure the actual improvement
+- Profile in production-like environments; dev-mode overhead (source maps, HMR) skews results
 
 ### ❌ DON'T
 
-- Skip testing or validation
-- Ignore error handling
-- Hard-code configuration values
+- Optimize functions that account for less than 1% of total CPU time — focus on the hot path
+- Profile with browser DevTools extensions enabled; they add overhead and distort measurements
+- Assume a slow function is CPU-bound without checking for I/O waits, lock contention, or GC pressure
+- Commit performance changes without before/after profiling data to validate the improvement

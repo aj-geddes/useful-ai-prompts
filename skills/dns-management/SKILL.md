@@ -1,7 +1,8 @@
 ---
 name: dns-management
 description: >
-  Manage DNS records, routing policies, and failover configurations for high
+  Manage DNS records, routing policies, and failover configurations for high.
+  Use when domain management and routing, failover and disaster recovery, geographic load balancing, or multi-region deployments.
   availability and disaster recovery.
 ---
 

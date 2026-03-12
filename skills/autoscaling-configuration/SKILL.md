@@ -1,7 +1,8 @@
 ---
 name: autoscaling-configuration
 description: >
-  Configure autoscaling for Kubernetes, VMs, and serverless workloads based on
+  Configure autoscaling for Kubernetes, VMs, and serverless workloads based on.
+  Use when traffic-driven workload scaling, time-based scheduled scaling, resource utilization optimization, or cost reduction.
   metrics, schedules, and custom indicators.
 ---
 
